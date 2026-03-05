@@ -60,3 +60,126 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+
+
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Numba JIT cache
+.numba_cache/
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+env/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Generated output files (FX signals, backtests, screeners)
+fx_all.csv
+fx_all.json
+fx_signals.csv
+fx_signals.json
+backtest_report.csv
+screener_results.csv
+screener_results_backtest.csv
+top100_screener_results.csv
+
+# Generated plots and visualizations
+src/data/plots/*.png
+src/data/plots/kalman_validation/*.png
+
+# Data cache and metadata
+src/data/options/meta/
+*.backup
+
+# Quant script caches (prices and screener data)
+src/data/prices/
+src/data/top100/
+src/data/failed/
+src/data/calibration/
+src/data/tune/
+src/data/currencies/
+src/data/debt/
+src/data/options/stock_prices/
+src/data/plots/
+src/data/russell/
+
+# High conviction signals (regenerated each run, keep README and .gitkeep)
+src/data/high_conviction/buy/*.json
+src/data/high_conviction/sell/*.json
+!src/data/high_conviction/README.md
+!src/data/high_conviction/buy/.gitkeep
+!src/data/high_conviction/sell/.gitkeep
+
+# Kalman tuning cache - per-asset files (git-friendly, commit individual files as needed)
+# Legacy single-file cache (deprecated, use per-asset)
+src/data/kalman_q_cache.json
+# Per-asset cache files (ignored by default, but you can commit specific important ones)
+# Uncomment to track all per-asset cache files:
+!src/data/tune/*.json
+# Or keep them ignored (default) for local-only cache:
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Logs
+*.log
+/src/backtesting/equity_curves/
+/src/data/tune-bak2/
+/src/data/tune-bak/
+/src/data/tune-latest/
+/src/data/tune2/
+/src/data/tune-old/
+/src/data/online_update/
+/src/data/option_tune/
+/src/data/options_signals/
+/src/data/old_options/
+/src/data/options_data/
+# Arena data files (results and downloaded data, not code)
+/src/data/arena/
+/src/arena/data/
+/src/arena/disabled/
+/src/arena/backtest_tuned_params/
+/test_unified_pit_baseline.json
+/src/data/calibration_records/
+
