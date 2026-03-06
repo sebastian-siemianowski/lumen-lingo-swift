@@ -18,6 +18,8 @@ struct QuantumFlowView: View {
                 drawAurora(context: context, size: size, elapsed: elapsed)
             }
             .blur(radius: isDarkMode ? 2 : 3)
+            .contrast(isDarkMode ? 1.12 : 1.0)
+            .saturation(isDarkMode ? 1.18 : 1.0)
             .blendMode(isDarkMode ? .plusLighter : .normal)
         }
         .allowsHitTesting(false)
@@ -81,10 +83,12 @@ struct QuantumFlowView: View {
         let step: CGFloat = 14
         var path = Path()
 
-        // Calculate wave points
+        // Calculate wave points for bezier smoothing
         let bottomY = size.height * yBase + height
         path.move(to: CGPoint(x: 0, y: bottomY))
 
+        // Collect wave sample points first
+        var wavePoints: [CGPoint] = []
         var x: CGFloat = 0
         while x <= size.width {
             // Primary wave + two harmonics
@@ -93,8 +97,24 @@ struct QuantumFlowView: View {
             let harmonic2 = sin(Double(x) * frequency * 1.7 * 2 * .pi + elapsed * 1.3 + phase * 0.7) * height * 0.1
 
             let waveY = size.height * yBase + primary + harmonic1 + harmonic2
-            path.addLine(to: CGPoint(x: x, y: waveY))
+            wavePoints.append(CGPoint(x: x, y: waveY))
             x += step
+        }
+
+        // Draw smooth bezier curves through wave points
+        if let first = wavePoints.first {
+            path.addLine(to: first)
+        }
+        for i in 1..<wavePoints.count {
+            let prev = wavePoints[i - 1]
+            let curr = wavePoints[i]
+            let midX = (prev.x + curr.x) / 2
+            let midY = (prev.y + curr.y) / 2
+            // Use previous point as control for smooth quadratic curve
+            path.addQuadCurve(to: CGPoint(x: midX, y: midY), control: prev)
+            if i == wavePoints.count - 1 {
+                path.addQuadCurve(to: curr, control: CGPoint(x: midX, y: midY))
+            }
         }
 
         // Close path
@@ -136,7 +156,7 @@ struct QuantumFlowView: View {
     // MARK: - Scene Colors
 
     private func sceneColors(for scene: QuantumFlowScene) -> [Color] {
-        scene.colors
+        isDarkMode ? scene.colors : scene.lightColors
     }
 }
 

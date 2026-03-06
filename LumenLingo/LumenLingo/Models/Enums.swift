@@ -223,65 +223,223 @@ enum MembershipTier: String, CaseIterable, Identifiable {
 
 // MARK: - Breathing Orb Color Scheme
 
+/// Matches React's 6 orb color schemes (rawValues = React localStorage IDs).
 enum BreathingOrbScheme: String, CaseIterable, Identifiable {
-    case barcelonaNights = "barcelona_nights"
-    case madridSunrise = "madrid_sunrise"
-    case lisboaGoldenHour = "lisboa_golden_hour"
-    case warsawTwilight = "warsaw_twilight"
-    case prahaAmethyst = "praha_amethyst"
-    case krakowLuminescence = "krakow_luminescence"
+    case barcelonaNights = "default"
+    case shanghaiShimmeringNexus = "ocean"
+    case tokyoSunset = "sunset"
+    case newYorkMysticalGardens = "forest"
+    case parisEclatNocturne = "aurora"
+    case krakowLuminescence = "miami"
 
     var id: String { rawValue }
 
     var displayName: String {
         switch self {
         case .barcelonaNights: return "Barcelona Nights"
-        case .madridSunrise: return "Madrid Sunrise"
-        case .lisboaGoldenHour: return "Lisboa Golden Hour"
-        case .warsawTwilight: return "Warsaw Twilight"
-        case .prahaAmethyst: return "Praha Amethyst"
+        case .shanghaiShimmeringNexus: return "Shanghai Shimmering Nexus"
+        case .tokyoSunset: return "Tokyo Sunset"
+        case .newYorkMysticalGardens: return "New York Mystical Gardens"
+        case .parisEclatNocturne: return "Paris Éclat Nocturne"
         case .krakowLuminescence: return "Krakow Luminescence"
         }
+    }
+
+    var description: String {
+        switch self {
+        case .barcelonaNights:
+            return "Twilight breathes Gaudí's forms, woven from mosaic, Mediterranean mystery."
+        case .shanghaiShimmeringNexus:
+            return "A port where starlight docks, reflecting cosmic wonders in its depths"
+        case .tokyoSunset:
+            return "Mono no aware sunset, cherry-hued clouds dissolve, city's neon pulse awakens."
+        case .newYorkMysticalGardens:
+            return "Skyline's tender kiss to emerald depths; New York's unmatched allure, love at first glance."
+        case .parisEclatNocturne:
+            return "Otherworldly brilliance descends nightly, where dreams entwine with light-coded verses falling like rain."
+        case .krakowLuminescence:
+            return "Ancient stones glow sapphire, echoing Wawel's dragon and royal legends. Serenity awaits kissed by spiritual light, sacred past"
+        }
+    }
+
+    /// Dark mode orb colors (5 orbs per scheme)
+    var darkColors: [[Color]] {
+        switch self {
+        case .barcelonaNights: return [
+            [Color(red: 99/255, green: 102/255, blue: 241/255)],   // Indigo
+            [Color(red: 236/255, green: 72/255, blue: 153/255)],   // Pink
+            [Color(red: 251/255, green: 191/255, blue: 36/255)],   // Amber
+            [Color(red: 20/255, green: 184/255, blue: 166/255)],   // Teal
+            [Color(red: 168/255, green: 85/255, blue: 247/255)],   // Purple
+        ]
+        case .shanghaiShimmeringNexus: return [
+            [Color(red: 14/255, green: 165/255, blue: 233/255)],   // Sky
+            [Color(red: 6/255, green: 182/255, blue: 212/255)],    // Cyan
+            [Color(red: 59/255, green: 130/255, blue: 246/255)],   // Blue
+            [Color(red: 99/255, green: 102/255, blue: 241/255)],   // Indigo
+            [Color(red: 56/255, green: 189/255, blue: 248/255)],   // Light blue
+        ]
+        case .tokyoSunset: return [
+            [Color(red: 239/255, green: 68/255, blue: 68/255)],    // Red
+            [Color(red: 245/255, green: 158/255, blue: 11/255)],   // Amber
+            [Color(red: 236/255, green: 72/255, blue: 153/255)],   // Pink
+            [Color(red: 249/255, green: 115/255, blue: 22/255)],   // Orange
+            [Color(red: 220/255, green: 38/255, blue: 38/255)],    // Deep red
+        ]
+        case .newYorkMysticalGardens: return [
+            [Color(red: 34/255, green: 197/255, blue: 94/255)],    // Green
+            [Color(red: 16/255, green: 185/255, blue: 129/255)],   // Emerald
+            [Color(red: 52/255, green: 211/255, blue: 153/255)],   // Mint
+            [Color(red: 5/255, green: 150/255, blue: 105/255)],    // Green
+            [Color(red: 74/255, green: 222/255, blue: 128/255)],   // Light green
+        ]
+        case .parisEclatNocturne: return [
+            [Color(red: 236/255, green: 72/255, blue: 153/255)],   // Pink
+            [Color(red: 168/255, green: 85/255, blue: 247/255)],   // Purple
+            [Color(red: 139/255, green: 92/255, blue: 246/255)],   // Violet
+            [Color(red: 244/255, green: 63/255, blue: 94/255)],    // Rose
+            [Color(red: 192/255, green: 38/255, blue: 211/255)],   // Fuchsia
+        ]
+        case .krakowLuminescence: return [
+            [Color(red: 6/255, green: 182/255, blue: 212/255)],    // Cyan
+            [Color(red: 139/255, green: 92/255, blue: 246/255)],   // Violet
+            [Color(red: 14/255, green: 165/255, blue: 233/255)],   // Sky
+            [Color(red: 168/255, green: 85/255, blue: 247/255)],   // Purple
+            [Color(red: 56/255, green: 189/255, blue: 248/255)],   // Light sky
+        ]
+        }
+    }
+
+    /// Light mode orb colors (5 orbs per scheme)
+    var lightColors: [[Color]] {
+        switch self {
+        case .barcelonaNights: return [
+            [Color(red: 129/255, green: 140/255, blue: 248/255)],
+            [Color(red: 244/255, green: 114/255, blue: 182/255)],
+            [Color(red: 252/255, green: 211/255, blue: 77/255)],
+            [Color(red: 45/255, green: 212/255, blue: 191/255)],
+            [Color(red: 192/255, green: 132/255, blue: 252/255)],
+        ]
+        case .shanghaiShimmeringNexus: return [
+            [Color(red: 125/255, green: 211/255, blue: 252/255)],
+            [Color(red: 103/255, green: 232/255, blue: 249/255)],
+            [Color(red: 147/255, green: 197/255, blue: 253/255)],
+            [Color(red: 165/255, green: 180/255, blue: 252/255)],
+            [Color(red: 186/255, green: 230/255, blue: 253/255)],
+        ]
+        case .tokyoSunset: return [
+            [Color(red: 252/255, green: 165/255, blue: 165/255)],
+            [Color(red: 253/255, green: 230/255, blue: 138/255)],
+            [Color(red: 244/255, green: 114/255, blue: 182/255)],
+            [Color(red: 253/255, green: 186/255, blue: 116/255)],
+            [Color(red: 252/255, green: 165/255, blue: 165/255)],
+        ]
+        case .newYorkMysticalGardens: return [
+            [Color(red: 134/255, green: 239/255, blue: 172/255)],
+            [Color(red: 110/255, green: 231/255, blue: 183/255)],
+            [Color(red: 167/255, green: 243/255, blue: 208/255)],
+            [Color(red: 52/255, green: 211/255, blue: 153/255)],
+            [Color(red: 134/255, green: 239/255, blue: 172/255)],
+        ]
+        case .parisEclatNocturne: return [
+            [Color(red: 244/255, green: 114/255, blue: 182/255)],
+            [Color(red: 192/255, green: 132/255, blue: 252/255)],
+            [Color(red: 167/255, green: 139/255, blue: 250/255)],
+            [Color(red: 251/255, green: 113/255, blue: 133/255)],
+            [Color(red: 232/255, green: 121/255, blue: 249/255)],
+        ]
+        case .krakowLuminescence: return [
+            [Color(red: 103/255, green: 232/255, blue: 249/255)],
+            [Color(red: 196/255, green: 181/255, blue: 253/255)],
+            [Color(red: 125/255, green: 211/255, blue: 252/255)],
+            [Color(red: 216/255, green: 180/255, blue: 254/255)],
+            [Color(red: 186/255, green: 230/255, blue: 253/255)],
+        ]
+        }
+    }
+
+    /// 3-color preview gradient for scheme cards
+    var previewColors: [Color] {
+        let cols = darkColors
+        guard cols.count >= 3 else { return [.purple, .indigo, .cyan] }
+        return [cols[0][0], cols[1][0], cols[2][0]]
     }
 }
 
 // MARK: - Quantum Flow Scene
 
+/// Matches React's 6 quantum flow scenes (rawValues = React localStorage IDs).
 enum QuantumFlowScene: String, CaseIterable, Identifiable {
-    case auroraBorealis = "aurora_borealis"
-    case deepOcean = "deep_ocean"
-    case cosmicDust = "cosmic_dust"
-    case electricStorm = "electric_storm"
-    case solarWind = "solar_wind"
-    case nebulaCore = "nebula_core"
+    case dubaiCelestialMirage = "dubai"
+    case kyotoSacredTwilight = "kyoto"
+    case buenosAiresTangoFlame = "buenos_aires"
+    case hongKongHarbourDreams = "hong_kong"
+    case marrakechSpiceReverie = "marrakech"
+    case viennaImperialWaltz = "vienna"
 
     var id: String { rawValue }
 
     var displayName: String {
         switch self {
-        case .auroraBorealis: return "Aurora Borealis"
-        case .deepOcean: return "Deep Ocean"
-        case .cosmicDust: return "Cosmic Dust"
-        case .electricStorm: return "Electric Storm"
-        case .solarWind: return "Solar Wind"
-        case .nebulaCore: return "Nebula Core"
+        case .dubaiCelestialMirage: return "Dubai Celestial Mirage"
+        case .kyotoSacredTwilight: return "Kyoto Sacred Twilight"
+        case .buenosAiresTangoFlame: return "Buenos Aires Tango Flame"
+        case .hongKongHarbourDreams: return "Hong Kong Harbour Dreams"
+        case .marrakechSpiceReverie: return "Marrakech Spice Reverie"
+        case .viennaImperialWaltz: return "Vienna Imperial Waltz"
         }
     }
 
+    var description: String {
+        switch self {
+        case .dubaiCelestialMirage:
+            return "Desert stars kiss glass towers, where golden sands meet infinite azure dreams"
+        case .kyotoSacredTwilight:
+            return "Temple bells echo through silk mist, bamboo forests breathe ancient wisdom's gentle kiss"
+        case .buenosAiresTangoFlame:
+            return "Passion ignites cobblestone nights, souls entwine where music paints eternal light"
+        case .hongKongHarbourDreams:
+            return "Victoria Peak kisses crimson dawn, where East meets West in a symphony reborn"
+        case .marrakechSpiceReverie:
+            return "Lanterns float through jasmine air, silk bazaars shimmer with treasures beyond compare"
+        case .viennaImperialWaltz:
+            return "Symphony cascades through palace halls, where elegance and wonder eternally enthralls"
+        }
+    }
+
+    /// Dark mode curtain colors (4 colors per scene)
     var colors: [Color] {
         switch self {
-        case .auroraBorealis: return [Color(hex: "22C55E"), Color(hex: "06B6D4"), Color(hex: "8B5CF6"), Color(hex: "EC4899")]
-        case .deepOcean: return [Color(hex: "0EA5E9"), Color(hex: "3B82F6"), Color(hex: "6366F1"), Color(hex: "8B5CF6")]
-        case .cosmicDust: return [Color(hex: "F59E0B"), Color(hex: "EF4444"), Color(hex: "8B5CF6"), Color(hex: "EC4899")]
-        case .electricStorm: return [Color(hex: "EC4899"), Color(hex: "8B5CF6"), Color(hex: "06B6D4"), Color(hex: "F59E0B")]
-        case .solarWind: return [Color(hex: "F59E0B"), Color(hex: "EF4444"), Color(hex: "10B981"), Color(hex: "06B6D4")]
-        case .nebulaCore: return [Color(hex: "A78BFA"), Color(hex: "60A5FA"), Color(hex: "34D399"), Color(hex: "F472B6")]
+        case .dubaiCelestialMirage: return [Color(hex: "F59E0B"), Color(hex: "06B6D4"), Color(hex: "8B5CF6"), Color(hex: "EC4899")]
+        case .kyotoSacredTwilight: return [Color(hex: "8B5CF6"), Color(hex: "EC4899"), Color(hex: "14B8A6"), Color(hex: "C084FC")]
+        case .buenosAiresTangoFlame: return [Color(hex: "EC4899"), Color(hex: "F59E0B"), Color(hex: "8B5CF6"), Color(hex: "FB923C")]
+        case .hongKongHarbourDreams: return [Color(hex: "EC4899"), Color(hex: "06B6D4"), Color(hex: "8B5CF6"), Color(hex: "14B8A6")]
+        case .marrakechSpiceReverie: return [Color(hex: "FB923C"), Color(hex: "EC4899"), Color(hex: "8B5CF6"), Color(hex: "F59E0B")]
+        case .viennaImperialWaltz: return [Color(hex: "C026D3"), Color(hex: "8B5CF6"), Color(hex: "60A5FA"), Color(hex: "EC4899")]
         }
+    }
+
+    /// Light mode curtain colors
+    var lightColors: [Color] {
+        switch self {
+        case .dubaiCelestialMirage: return [Color(hex: "8BC34A"), Color(hex: "26C6DA"), Color(hex: "42A5F5"), Color(hex: "7E57C2")]
+        case .kyotoSacredTwilight: return [Color(hex: "9462E7"), Color(hex: "C75C9C"), Color(hex: "B04DAC"), Color(hex: "4CA79B")]
+        case .buenosAiresTangoFlame: return [Color(hex: "FF8FA3"), Color(hex: "FFB088"), Color(hex: "FF9F6E"), Color(hex: "D291BC")]
+        case .hongKongHarbourDreams: return [Color(hex: "D946A0"), Color(hex: "B84FA8"), Color(hex: "3B9AE0"), Color(hex: "2AA89B")]
+        case .marrakechSpiceReverie: return [Color(hex: "FFB088"), Color(hex: "FF8FA3"), Color(hex: "C291D4"), Color(hex: "D291BC")]
+        case .viennaImperialWaltz: return [Color(hex: "A044D9"), Color(hex: "8E4EE2"), Color(hex: "815DEB"), Color(hex: "7770EE")]
+        }
+    }
+
+    /// 3-color preview gradient for scheme cards
+    var previewColors: [Color] {
+        return [colors[0], colors[1], colors[2]]
     }
 }
 
 // MARK: - Nebula Preset
 
+/// Matches React's 6 nebula/galaxy presets (rawValues = React localStorage IDs).
 enum NebulaPreset: String, CaseIterable, Identifiable {
     case lagoonNebula = "lagoon_nebula"
     case celestialLagoon = "celestial_lagoon"
@@ -298,8 +456,48 @@ enum NebulaPreset: String, CaseIterable, Identifiable {
         case .celestialLagoon: return "Celestial Lagoon"
         case .edgeOfAndromeda: return "Edge of Andromeda"
         case .solarAurora: return "Solar Aurora"
-        case .spiralHaloGalaxy: return "Spiral Halo Galaxy"
+        case .spiralHaloGalaxy: return "Spiral Halo"
         case .starburstRing: return "Starburst Ring"
+        }
+    }
+
+    var description: String {
+        switch self {
+        case .lagoonNebula:
+            return "Ethereal cosmic clouds where newborn stars ignite"
+        case .celestialLagoon:
+            return "Infinite turquoise ocean of luminous serenity"
+        case .edgeOfAndromeda:
+            return "A trillion suns suspended in eternal dance"
+        case .solarAurora:
+            return "Golden ribbons dancing across the cosmic void"
+        case .spiralHaloGalaxy:
+            return "A hundred billion stars in cosmic harmony"
+        case .starburstRing:
+            return "Brilliant ring of star formation in radiance"
+        }
+    }
+
+    var iconName: String {
+        switch self {
+        case .lagoonNebula: return "cloud.fog.fill"
+        case .celestialLagoon: return "water.waves"
+        case .solarAurora: return "cloud.fog.fill"
+        case .spiralHaloGalaxy: return "circle.dashed"
+        case .edgeOfAndromeda: return "star.fill"
+        case .starburstRing: return "circle.dashed"
+        }
+    }
+
+    /// 3-color preview gradient for preset cards
+    var previewColors: [Color] {
+        switch self {
+        case .lagoonNebula: return [Color(hex: "EC4899"), Color(hex: "8B5CF6"), Color(hex: "6366F1")]
+        case .celestialLagoon: return [Color(hex: "06B6D4"), Color(hex: "14B8A6"), Color(hex: "8B5CF6")]
+        case .solarAurora: return [Color(hex: "F59E0B"), Color(hex: "EC4899"), Color(hex: "8B5CF6")]
+        case .spiralHaloGalaxy: return [Color(hex: "6366F1"), Color(hex: "8B5CF6"), Color(hex: "C084FC")]
+        case .edgeOfAndromeda: return [Color(hex: "F59E0B"), Color(hex: "A855F7"), Color(hex: "6366F1")]
+        case .starburstRing: return [Color(hex: "5A2EFF").opacity(1), Color(hex: "FF3BEA"), Color(hex: "5CC9FF")]
         }
     }
 }

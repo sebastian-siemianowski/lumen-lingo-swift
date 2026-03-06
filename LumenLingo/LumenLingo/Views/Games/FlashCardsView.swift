@@ -1,5 +1,6 @@
 import SwiftUI
 import SwiftData
+import Foundation
 
 // MARK: - FlashCards Game View
 
@@ -32,6 +33,8 @@ struct FlashCardsView: View {
     @State private var cardTransitionId: UUID = UUID()
     @State private var isLoading: Bool = true
     @State private var categoryName: String = ""
+    @State private var successAura: Bool = false
+    @State private var wrongFlash: Bool = false
 
     private var currentWord: FlashcardWord? {
         guard currentIndex < words.count else { return nil }
@@ -55,7 +58,7 @@ struct FlashCardsView: View {
                 emptyStateView
             }
         }
-        .cosmicBackground(preset: .celestialLagoon, orbScheme: .madridSunrise)
+        .cosmicBackground()
         .navigationBarBackButtonHidden()
         .toolbar(.hidden, for: .navigationBar)
         .onAppear {
@@ -83,30 +86,104 @@ struct FlashCardsView: View {
     // MARK: - Gameplay
 
     private func gameplayView(word: FlashcardWord) -> some View {
-        VStack(spacing: 0) {
-            // Exercise header
-            exerciseHeader
+        ZStack {
+            VStack(spacing: 0) {
+                // Exercise header
+                exerciseHeader
 
-            Spacer()
+                Spacer()
 
-            // Flashcard
-            flashcard(word: word)
-                .id(cardTransitionId)
-                .transition(.asymmetric(
-                    insertion: .scale(scale: 0.9).combined(with: .opacity),
-                    removal: .scale(scale: 0.95).combined(with: .opacity)
-                ))
-                .animation(.spring(response: 0.5, dampingFraction: 0.8), value: cardTransitionId)
+                // Flashcard
+                flashcard(word: word)
+                    .id(cardTransitionId)
+                    .transition(.asymmetric(
+                        insertion: .scale(scale: 0.9).combined(with: .opacity),
+                        removal: .scale(scale: 0.95).combined(with: .opacity)
+                    ))
+                    .animation(.spring(response: 0.5, dampingFraction: 0.8), value: cardTransitionId)
 
-            // Action buttons (appear after flip)
-            if showButtons {
-                actionButtons
-                    .transition(.move(edge: .bottom).combined(with: .opacity))
+                // Action buttons (appear after flip)
+                if showButtons {
+                    actionButtons
+                        .transition(.move(edge: .bottom).combined(with: .opacity))
+                }
+
+                Spacer()
+            }
+            .padding(.horizontal, 20)
+
+            // Success aura overlay
+            if successAura {
+                successAuraOverlay
+                    .transition(.opacity)
+                    .allowsHitTesting(false)
             }
 
-            Spacer()
+            // Wrong flash overlay
+            if wrongFlash {
+                wrongFlashOverlay
+                    .transition(.opacity)
+                    .allowsHitTesting(false)
+            }
         }
-        .padding(.horizontal, 20)
+    }
+
+    // MARK: - Success Aura Overlay
+
+    private var successAuraOverlay: some View {
+        ZStack {
+            // Outer radial green/gold glow
+            RadialGradient(
+                colors: [
+                    .green.opacity(0.25),
+                    Color(hex: "#22c55e").opacity(0.12),
+                    .yellow.opacity(0.06),
+                    .clear
+                ],
+                center: .center,
+                startRadius: 40,
+                endRadius: UIScreen.main.bounds.width * 0.7
+            )
+            .ignoresSafeArea()
+
+            // Inner golden ring
+            Circle()
+                .strokeBorder(
+                    AngularGradient(
+                        colors: [.green, .yellow, .green.opacity(0.5), .yellow, .green],
+                        center: .center
+                    ),
+                    lineWidth: 3
+                )
+                .frame(width: 260, height: 260)
+                .opacity(0.4)
+                .scaleEffect(successAura ? 1.3 : 0.5)
+
+            // Sparkle particles
+            ForEach(0..<8, id: \.self) { i in
+                Circle()
+                    .fill(.yellow)
+                    .frame(width: 4, height: 4)
+                    .offset(y: -130)
+                    .rotationEffect(.degrees(Double(i) * 45))
+                    .opacity(successAura ? 0 : 0.8)
+                    .scaleEffect(successAura ? 2 : 0.5)
+            }
+        }
+    }
+
+    // MARK: - Wrong Flash Overlay
+
+    private var wrongFlashOverlay: some View {
+        RoundedRectangle(cornerRadius: 28)
+            .fill(.red.opacity(0.08))
+            .overlay(
+                RoundedRectangle(cornerRadius: 28)
+                    .strokeBorder(.red.opacity(0.2), lineWidth: 2)
+            )
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .padding(20)
+            .ignoresSafeArea()
     }
 
     // MARK: - Exercise Header
@@ -147,23 +224,11 @@ struct FlashCardsView: View {
             }
 
             // Progress bar
-            GeometryReader { geo in
-                ZStack(alignment: .leading) {
-                    Capsule()
-                        .fill(.white.opacity(0.1))
-                    Capsule()
-                        .fill(
-                            LinearGradient(
-                                colors: [Color(hex: "#667eea"), Color(hex: "#06b6d4")],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                        .frame(width: geo.size.width * progress)
-                        .animation(.spring(response: 0.4), value: progress)
-                }
-            }
-            .frame(height: 4)
+            AnimatedProgressBar(
+                progress: progress * 100,
+                height: 4,
+                gradient: [Color(hex: "#667eea"), Color(hex: "#06b6d4"), Color(hex: "#0d9488")]
+            )
 
             // Stats badges
             HStack(spacing: 16) {
@@ -197,8 +262,33 @@ struct FlashCardsView: View {
 
     // MARK: - Flashcard
 
+    @State private var floatPhase: CGFloat = 0
+    @State private var rippleScale: CGFloat = 0
+    @State private var showRipple: Bool = false
+
     private func flashcard(word: FlashcardWord) -> some View {
         ZStack {
+            // Ripple effect on flip
+            if showRipple {
+                Circle()
+                    .fill(
+                        RadialGradient(
+                            colors: [
+                                Color(hex: "#c084fc").opacity(0.4),
+                                Color(hex: "#8b5cf6").opacity(0.2),
+                                .clear
+                            ],
+                            center: .center,
+                            startRadius: 0,
+                            endRadius: 175
+                        )
+                    )
+                    .scaleEffect(rippleScale)
+                    .opacity(1 - rippleScale)
+                    .blur(radius: 35 * (1 - rippleScale))
+                    .allowsHitTesting(false)
+            }
+
             if !isFlipped {
                 cardFront(word: word)
                     .rotation3DEffect(.degrees(0), axis: (x: 0, y: 1, z: 0))
@@ -208,6 +298,8 @@ struct FlashCardsView: View {
             }
         }
         .frame(maxWidth: 500, minHeight: 340)
+        // Subtle floating animation (React: y: [0, -3, 0])
+        .offset(y: Foundation.sin(Double(floatPhase)) * 3)
         .onTapGesture {
             flipCard()
         }
@@ -217,151 +309,241 @@ struct FlashCardsView: View {
             perspective: 0.4
         )
         .animation(.spring(response: 0.7, dampingFraction: 0.75), value: isFlipped)
+        .onAppear {
+            withAnimation(.easeInOut(duration: 4).repeatForever(autoreverses: true)) {
+                floatPhase = .pi * 2
+            }
+        }
     }
 
     private func cardFront(word: FlashcardWord) -> some View {
-        VStack(spacing: 20) {
-            Spacer()
+        ZStack {
+            // Chromatic edge glows — living glass (from React)
+            RoundedRectangle(cornerRadius: 32)
+                .fill(.clear)
+                .shadow(color: Color(hex: "#8b5cf6").opacity(0.12), radius: 8, x: 0, y: 1)
+                .shadow(color: Color(hex: "#6366f1").opacity(0.10), radius: 8, x: 1, y: 0)
+                .shadow(color: Color(hex: "#c084fc").opacity(0.08), radius: 8, x: -1, y: 0)
+                .allowsHitTesting(false)
 
-            // Decorative icon
-            Image(systemName: "sparkles")
-                .font(.title3)
-                .foregroundStyle(.white.opacity(0.3))
-                .symbolEffect(.pulse, options: .repeating.speed(0.3))
+            VStack(spacing: 20) {
+                Spacer()
 
-            // Main word
-            Text(word.front)
-                .font(.system(size: dynamicFontSize(for: word.front), weight: .bold))
-                .foregroundStyle(.white)
-                .multilineTextAlignment(.center)
-                .shadow(color: Color(hex: "#667eea").opacity(0.3), radius: 10)
+                // Decorative sparkles icon with subtle glow
+                Image(systemName: "sparkles")
+                    .font(.title3)
+                    .foregroundStyle(.white.opacity(0.35))
+                    .shadow(color: Color(hex: "#a855f7").opacity(0.25), radius: 8)
+                    .symbolEffect(.pulse, options: .repeating.speed(0.3))
 
-            // Example
-            if let example = word.exampleTranslation, !example.isEmpty {
-                Text(example)
-                    .font(.subheadline)
-                    .foregroundStyle(.white.opacity(0.5))
-                    .italic()
+                // Main word
+                Text(word.front)
+                    .font(.system(size: dynamicFontSize(for: word.front), weight: .bold))
+                    .foregroundStyle(.white)
                     .multilineTextAlignment(.center)
-                    .padding(.horizontal, 20)
-            }
+                    .shadow(color: Color(hex: "#667eea").opacity(0.4), radius: 15)
 
-            Spacer()
+                // Example translation
+                if let example = word.exampleTranslation, !example.isEmpty {
+                    Text(example)
+                        .font(.subheadline)
+                        .foregroundStyle(.white.opacity(0.55))
+                        .italic()
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 20)
+                }
 
-            // Tap prompt
-            HStack(spacing: 6) {
-                Image(systemName: "hand.tap.fill")
-                    .symbolEffect(.pulse, options: .repeating.speed(0.4))
-                Text("Tap to see meaning")
+                Spacer()
+
+                // Tap prompt with breathing animation
+                HStack(spacing: 6) {
+                    Image(systemName: "hand.tap.fill")
+                        .symbolEffect(.pulse, options: .repeating.speed(0.4))
+                    Text("Tap to see meaning")
+                }
+                .font(.caption)
+                .foregroundStyle(.white.opacity(0.4))
+                .padding(.bottom, 16)
             }
-            .font(.caption)
-            .foregroundStyle(.white.opacity(0.4))
-            .padding(.bottom, 16)
+            .padding(24)
         }
-        .padding(24)
         .frame(maxWidth: .infinity, minHeight: 340)
         .background(
-            RoundedRectangle(cornerRadius: 32)
-                .fill(.ultraThinMaterial)
-                .overlay(
+            ZStack {
+                RoundedRectangle(cornerRadius: 32)
+                    .fill(.ultraThinMaterial)
+
+                RoundedRectangle(cornerRadius: 32)
+                    .fill(
+                        LinearGradient(
+                            colors: [Color(hex: "#1e1e28").opacity(0.65), Color(hex: "#14141e").opacity(0.55)],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    )
+
+                // Glass refraction line at top (from React)
+                VStack {
+                    Rectangle()
+                        .fill(.white.opacity(0.12))
+                        .frame(height: 0.5)
+                    Spacer()
+                }
+                .clipShape(RoundedRectangle(cornerRadius: 32))
+
+                // Top-left ambient glow (from React radial gradient)
+                Circle()
+                    .fill(Color(hex: "#6366f1").opacity(0.08))
+                    .frame(width: 200, height: 200)
+                    .blur(radius: 60)
+                    .offset(x: -80, y: -60)
+                    .clipShape(RoundedRectangle(cornerRadius: 32))
+
+                // Inner highlight border
+                RoundedRectangle(cornerRadius: 32)
+                    .strokeBorder(.white.opacity(0.12), lineWidth: 1)
+
+                // Inset top highlight glow
+                VStack {
                     RoundedRectangle(cornerRadius: 32)
                         .fill(
                             LinearGradient(
-                                colors: colorScheme == .dark
-                                    ? [Color(hex: "#667eea").opacity(0.1), Color(hex: "#764ba2").opacity(0.05)]
-                                    : [.white.opacity(0.3), Color(hex: "#667eea").opacity(0.05)],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
+                                colors: [.white.opacity(0.20), .clear],
+                                startPoint: .top,
+                                endPoint: .center
                             )
                         )
-                )
-                .overlay(
-                    RoundedRectangle(cornerRadius: 32)
-                        .strokeBorder(.white.opacity(0.12), lineWidth: 1)
-                )
+                        .frame(height: 3)
+                        .blur(radius: 1.5)
+                    Spacer()
+                }
+                .clipShape(RoundedRectangle(cornerRadius: 32))
+            }
         )
-        .shadow(color: Color(hex: "#667eea").opacity(0.15), radius: 30, y: 10)
+        .shadow(color: Color(hex: "#a855f7").opacity(0.08), radius: 30)
+        .shadow(color: Color(hex: "#667eea").opacity(0.12), radius: 30, y: 10)
     }
 
     private func cardBack(word: FlashcardWord) -> some View {
-        VStack(spacing: 16) {
-            Spacer()
+        ZStack {
+            // Chromatic edge glows — answer side (teal/green)
+            RoundedRectangle(cornerRadius: 32)
+                .fill(.clear)
+                .shadow(color: Color(hex: "#10b981").opacity(0.12), radius: 8, x: 0, y: 1)
+                .shadow(color: Color(hex: "#0d9488").opacity(0.10), radius: 8, x: 1, y: 0)
+                .allowsHitTesting(false)
 
-            // Star decoration
-            Image(systemName: "star.fill")
-                .font(.title3)
-                .foregroundStyle(.yellow.opacity(0.5))
+            VStack(spacing: 16) {
+                Spacer()
 
-            // Target word (answer)
-            Text(word.back)
-                .font(.system(size: dynamicFontSize(for: word.back), weight: .bold))
-                .foregroundStyle(.white)
-                .multilineTextAlignment(.center)
-                .shadow(color: Color(hex: "#10b981").opacity(0.3), radius: 10)
+                // Star decoration with glow
+                Image(systemName: "star.fill")
+                    .font(.title3)
+                    .foregroundStyle(.yellow.opacity(0.6))
+                    .shadow(color: .yellow.opacity(0.3), radius: 8)
 
-            // Divider
-            Rectangle()
-                .fill(.white.opacity(0.1))
-                .frame(width: 60, height: 1)
-
-            // Example sentence
-            if let example = word.example, !example.isEmpty {
-                Text(example)
-                    .font(.subheadline)
-                    .foregroundStyle(.white.opacity(0.7))
-                    .italic()
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal, 20)
-            }
-
-            // Translation
-            if let translation = word.exampleTranslation, !translation.isEmpty {
-                Text(translation)
-                    .font(.caption)
-                    .foregroundStyle(.white.opacity(0.4))
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal, 20)
-            }
-
-            Spacer()
-
-            // Word pair footer
-            HStack {
-                Text(word.front)
-                    .font(.caption)
-                    .foregroundStyle(.white.opacity(0.4))
-                Image(systemName: "arrow.right")
-                    .font(.caption2)
-                    .foregroundStyle(.white.opacity(0.3))
+                // Target word (answer)
                 Text(word.back)
-                    .font(.caption.bold())
-                    .foregroundStyle(.white.opacity(0.6))
+                    .font(.system(size: dynamicFontSize(for: word.back), weight: .bold))
+                    .foregroundStyle(.white)
+                    .multilineTextAlignment(.center)
+                    .shadow(color: Color(hex: "#10b981").opacity(0.4), radius: 15)
+
+                // Glass divider
+                GlassDivider(color: .white, opacity: 0.12)
+                    .frame(width: 80)
+
+                // Example sentence
+                if let example = word.example, !example.isEmpty {
+                    Text(example)
+                        .font(.subheadline)
+                        .foregroundStyle(.white.opacity(0.7))
+                        .italic()
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 20)
+                }
+
+                // Translation
+                if let translation = word.exampleTranslation, !translation.isEmpty {
+                    Text(translation)
+                        .font(.caption)
+                        .foregroundStyle(.white.opacity(0.45))
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 20)
+                }
+
+                Spacer()
+
+                // Word pair footer
+                HStack(spacing: 8) {
+                    Text(word.front)
+                        .font(.caption)
+                        .foregroundStyle(.white.opacity(0.4))
+                    Image(systemName: "arrow.right")
+                        .font(.caption2)
+                        .foregroundStyle(.white.opacity(0.3))
+                    Text(word.back)
+                        .font(.caption.bold())
+                        .foregroundStyle(Color(hex: "#10b981").opacity(0.7))
+                }
+                .padding(.bottom, 12)
             }
-            .padding(.bottom, 12)
+            .padding(24)
         }
-        .padding(24)
         .frame(maxWidth: .infinity, minHeight: 340)
         .background(
-            RoundedRectangle(cornerRadius: 32)
-                .fill(.ultraThinMaterial)
-                .overlay(
+            ZStack {
+                RoundedRectangle(cornerRadius: 32)
+                    .fill(.ultraThinMaterial)
+
+                RoundedRectangle(cornerRadius: 32)
+                    .fill(
+                        LinearGradient(
+                            colors: [Color(hex: "#10b981").opacity(0.1), Color(hex: "#0d9488").opacity(0.05)],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    )
+
+                // Glass refraction line at top
+                VStack {
+                    Rectangle()
+                        .fill(.white.opacity(0.12))
+                        .frame(height: 0.5)
+                    Spacer()
+                }
+                .clipShape(RoundedRectangle(cornerRadius: 32))
+
+                // Top-left ambient glow (teal)
+                Circle()
+                    .fill(Color(hex: "#0d9488").opacity(0.08))
+                    .frame(width: 200, height: 200)
+                    .blur(radius: 60)
+                    .offset(x: -80, y: -60)
+                    .clipShape(RoundedRectangle(cornerRadius: 32))
+
+                RoundedRectangle(cornerRadius: 32)
+                    .strokeBorder(.white.opacity(0.12), lineWidth: 1)
+
+                // Inset top highlight
+                VStack {
                     RoundedRectangle(cornerRadius: 32)
                         .fill(
                             LinearGradient(
-                                colors: colorScheme == .dark
-                                    ? [Color(hex: "#10b981").opacity(0.1), Color(hex: "#0d9488").opacity(0.05)]
-                                    : [.white.opacity(0.3), Color(hex: "#10b981").opacity(0.08)],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
+                                colors: [.white.opacity(0.20), .clear],
+                                startPoint: .top,
+                                endPoint: .center
                             )
                         )
-                )
-                .overlay(
-                    RoundedRectangle(cornerRadius: 32)
-                        .strokeBorder(.white.opacity(0.12), lineWidth: 1)
-                )
+                        .frame(height: 3)
+                        .blur(radius: 1.5)
+                    Spacer()
+                }
+                .clipShape(RoundedRectangle(cornerRadius: 32))
+            }
         )
-        .shadow(color: Color(hex: "#10b981").opacity(0.15), radius: 30, y: 10)
+        .shadow(color: Color(hex: "#10b981").opacity(0.08), radius: 30)
+        .shadow(color: Color(hex: "#10b981").opacity(0.12), radius: 30, y: 10)
         .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
     }
 
@@ -378,7 +560,14 @@ struct FlashCardsView: View {
                         .font(.system(size: 16, weight: .semibold))
                         .foregroundStyle(.orange)
                         .frame(width: 36, height: 36)
-                        .background(Circle().fill(.orange.opacity(0.15)))
+                        .background(
+                            Circle()
+                                .fill(.orange.opacity(0.15))
+                                .overlay(
+                                    Circle()
+                                        .strokeBorder(.orange.opacity(0.2), lineWidth: 1)
+                                )
+                        )
 
                     Text("Still Learning")
                         .font(.subheadline.bold())
@@ -388,15 +577,16 @@ struct FlashCardsView: View {
                 .padding(.vertical, 14)
                 .frame(maxWidth: .infinity)
                 .background(
-                    RoundedRectangle(cornerRadius: 28)
-                        .fill(.ultraThinMaterial)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 28)
-                                .strokeBorder(.orange.opacity(0.2), lineWidth: 1)
-                        )
+                    GlassCardBackground(
+                        cornerRadius: 28,
+                        borderColor: .orange,
+                        borderOpacity: 0.2,
+                        tintColor: .orange
+                    )
                 )
+                .clipShape(RoundedRectangle(cornerRadius: 28))
             }
-            .buttonStyle(.plain)
+            .buttonStyle(ScaleButtonStyle())
 
             // Got It
             Button {
@@ -407,7 +597,14 @@ struct FlashCardsView: View {
                         .font(.system(size: 16, weight: .semibold))
                         .foregroundStyle(.green)
                         .frame(width: 36, height: 36)
-                        .background(Circle().fill(.green.opacity(0.15)))
+                        .background(
+                            Circle()
+                                .fill(.green.opacity(0.15))
+                                .overlay(
+                                    Circle()
+                                        .strokeBorder(.green.opacity(0.2), lineWidth: 1)
+                                )
+                        )
 
                     Text("Got It")
                         .font(.subheadline.bold())
@@ -417,15 +614,16 @@ struct FlashCardsView: View {
                 .padding(.vertical, 14)
                 .frame(maxWidth: .infinity)
                 .background(
-                    RoundedRectangle(cornerRadius: 28)
-                        .fill(.ultraThinMaterial)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 28)
-                                .strokeBorder(.green.opacity(0.2), lineWidth: 1)
-                        )
+                    GlassCardBackground(
+                        cornerRadius: 28,
+                        borderColor: .green,
+                        borderOpacity: 0.2,
+                        tintColor: .green
+                    )
                 )
+                .clipShape(RoundedRectangle(cornerRadius: 28))
             }
-            .buttonStyle(.plain)
+            .buttonStyle(ScaleButtonStyle())
         }
         .padding(.top, 20)
     }
@@ -486,6 +684,16 @@ struct FlashCardsView: View {
         audioService.playPlink()
         hapticsService.lightImpact()
 
+        // Trigger ripple
+        showRipple = true
+        withAnimation(.easeOut(duration: 0.38)) {
+            rippleScale = 1.0
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+            showRipple = false
+            rippleScale = 0
+        }
+
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
             withAnimation(.spring(response: 0.4)) {
                 showButtons = true
@@ -500,6 +708,16 @@ struct FlashCardsView: View {
             streak += 1
             audioService.playWarmPulse()
             hapticsService.success()
+
+            // Trigger success aura
+            withAnimation(.easeOut(duration: 0.3)) {
+                successAura = true
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+                withAnimation(.easeIn(duration: 0.3)) {
+                    successAura = false
+                }
+            }
 
             // Mark mastered
             if let word = currentWord {
@@ -518,6 +736,16 @@ struct FlashCardsView: View {
             streak = 0
             audioService.playSoftNudge()
             hapticsService.warning()
+
+            // Trigger wrong flash
+            withAnimation(.easeOut(duration: 0.15)) {
+                wrongFlash = true
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                withAnimation(.easeIn(duration: 0.2)) {
+                    wrongFlash = false
+                }
+            }
         }
 
         // Advance after delay
@@ -627,11 +855,18 @@ struct GameCompleteView: View {
                     Circle()
                         .fill(performanceTier.color.opacity(0.15))
                         .frame(width: 100, height: 100)
-                        .shadow(color: performanceTier.color.opacity(0.3), radius: 30)
+                        .shadow(color: performanceTier.color.opacity(0.4), radius: 30)
+
+                    // Pulsing outer glow
+                    Circle()
+                        .fill(performanceTier.color.opacity(0.08))
+                        .frame(width: 120, height: 120)
+                        .blur(radius: 15)
 
                     Image(systemName: performanceTier.icon)
                         .font(.system(size: 44))
                         .foregroundStyle(performanceTier.color)
+                        .shadow(color: performanceTier.color.opacity(0.5), radius: 10)
                         .symbolEffect(.bounce, options: .repeating.speed(0.2))
                 }
 
@@ -677,8 +912,9 @@ struct GameCompleteView: View {
                                     )
                                 )
                         )
+                        .shadow(color: Color(hex: "#667eea").opacity(0.4), radius: 15)
                     }
-                    .buttonStyle(.plain)
+                    .buttonStyle(ScaleButtonStyle())
 
                     Button {
                         onDismiss()
@@ -692,15 +928,15 @@ struct GameCompleteView: View {
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 16)
                         .background(
-                            RoundedRectangle(cornerRadius: 20)
-                                .fill(.ultraThinMaterial)
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 20)
-                                        .strokeBorder(.white.opacity(0.1), lineWidth: 1)
-                                )
+                            GlassCardBackground(
+                                cornerRadius: 20,
+                                borderColor: .white,
+                                borderOpacity: 0.1
+                            )
                         )
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
                     }
-                    .buttonStyle(.plain)
+                    .buttonStyle(ScaleButtonStyle())
                 }
                 .padding(.horizontal, 20)
 
@@ -714,6 +950,7 @@ struct GameCompleteView: View {
             Image(systemName: icon)
                 .font(.title2)
                 .foregroundStyle(color)
+                .shadow(color: color.opacity(0.4), radius: 8)
 
             Text(value)
                 .font(.title.bold())
@@ -726,13 +963,14 @@ struct GameCompleteView: View {
         .frame(maxWidth: .infinity)
         .padding(16)
         .background(
-            RoundedRectangle(cornerRadius: 18)
-                .fill(.ultraThinMaterial)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 18)
-                        .strokeBorder(color.opacity(0.15), lineWidth: 1)
-                )
+            GlassCardBackground(
+                cornerRadius: 18,
+                borderColor: color,
+                borderOpacity: 0.15,
+                tintColor: color
+            )
         )
+        .clipShape(RoundedRectangle(cornerRadius: 18))
     }
 }
 

@@ -1,0 +1,161 @@
+import SwiftUI
+
+// MARK: - Scheme Card
+
+/// Reusable preset/scheme selection card matching React's SchemeCard component.
+/// Shows a gradient preview, name, description, and selected checkmark.
+struct SchemeCardView: View {
+    let name: String
+    let description: String
+    let previewColors: [Color]
+    let isSelected: Bool
+    let previewHeight: CGFloat
+    let onSelect: () -> Void
+
+    @Environment(\.colorScheme) private var colorScheme
+    @State private var isPressed = false
+
+    init(
+        name: String,
+        description: String = "",
+        previewColors: [Color],
+        isSelected: Bool,
+        previewHeight: CGFloat = 80,
+        onSelect: @escaping () -> Void
+    ) {
+        self.name = name
+        self.description = description
+        self.previewColors = previewColors
+        self.isSelected = isSelected
+        self.previewHeight = previewHeight
+        self.onSelect = onSelect
+    }
+
+    private var isDark: Bool { colorScheme == .dark }
+
+    var body: some View {
+        Button(action: onSelect) {
+            VStack(spacing: 0) {
+                // Gradient preview area
+                previewSection
+
+                // Name + description
+                infoSection
+            }
+            .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+            .overlay(
+                RoundedRectangle(cornerRadius: 18, style: .continuous)
+                    .strokeBorder(
+                        isSelected
+                            ? LinearGradient(colors: [.purple.opacity(0.8), .indigo.opacity(0.6)], startPoint: .topLeading, endPoint: .bottomTrailing)
+                            : LinearGradient(colors: [Color.white.opacity(isDark ? 0.12 : 0.25)], startPoint: .top, endPoint: .bottom),
+                        lineWidth: isSelected ? 2 : 1
+                    )
+            )
+            .shadow(color: isSelected ? .purple.opacity(0.35) : .clear, radius: 12, y: 4)
+            .scaleEffect(isPressed ? 0.96 : (isSelected ? 1.02 : 1.0))
+            .animation(.spring(response: 0.35, dampingFraction: 0.7), value: isSelected)
+            .animation(.spring(response: 0.2, dampingFraction: 0.8), value: isPressed)
+        }
+        .buttonStyle(.plain)
+        .simultaneousGesture(
+            DragGesture(minimumDistance: 0)
+                .onChanged { _ in isPressed = true }
+                .onEnded { _ in isPressed = false }
+        )
+    }
+
+    // MARK: - Preview Section
+
+    private var previewSection: some View {
+        ZStack(alignment: .topTrailing) {
+            // Gradient preview
+            LinearGradient(
+                colors: previewColors,
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+            .frame(height: previewHeight)
+            .overlay(
+                // Shimmer overlay on hover
+                LinearGradient(
+                    colors: [.clear, .white.opacity(0.08), .clear],
+                    startPoint: .leading,
+                    endPoint: .trailing
+                )
+            )
+
+            // Selected checkmark
+            if isSelected {
+                Circle()
+                    .fill(.white)
+                    .frame(width: 28, height: 28)
+                    .overlay(
+                        Image(systemName: "checkmark.circle.fill")
+                            .font(.system(size: 24))
+                            .foregroundStyle(.purple)
+                    )
+                    .shadow(color: .purple.opacity(0.4), radius: 6)
+                    .padding(8)
+                    .transition(.scale.combined(with: .opacity))
+            }
+        }
+    }
+
+    // MARK: - Info Section
+
+    private var infoSection: some View {
+        VStack(spacing: 4) {
+            Text(name)
+                .font(.system(size: 13, weight: .bold))
+                .foregroundStyle(isSelected
+                    ? (isDark ? .white : .primary)
+                    : (isDark ? .white.opacity(0.7) : .secondary)
+                )
+                .lineLimit(1)
+
+            if !description.isEmpty {
+                Text(description)
+                    .font(.system(size: 10))
+                    .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                    .lineLimit(2)
+                    .multilineTextAlignment(.center)
+            }
+        }
+        .padding(.horizontal, 8)
+        .padding(.vertical, 10)
+        .frame(maxWidth: .infinity)
+        .background(
+            isDark
+                ? Color.white.opacity(isSelected ? 0.08 : 0.04)
+                : Color.white.opacity(isSelected ? 0.6 : 0.3)
+        )
+    }
+}
+
+// MARK: - Preview
+
+#Preview {
+    HStack(spacing: 12) {
+        SchemeCardView(
+            name: "Barcelona Nights",
+            description: "Twilight breathes Gaudí's forms",
+            previewColors: [.indigo, .pink, .amber],
+            isSelected: true
+        ) {}
+
+        SchemeCardView(
+            name: "Tokyo Sunset",
+            description: "Cherry-hued clouds dissolve",
+            previewColors: [.red, .orange, .pink],
+            isSelected: false
+        ) {}
+    }
+    .padding()
+    .background(Color.black)
+}
+
+// Amber color helper
+private extension Color {
+    static let amber = Color(red: 251/255, green: 191/255, blue: 36/255)
+}

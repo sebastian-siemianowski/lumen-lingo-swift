@@ -1,13 +1,15 @@
 import SwiftUI
 import SwiftData
 
-// MARK: - Profile View
+// MARK: - Profile View (React-Parity Overhaul)
 
-/// User profile screen with avatar, stats overview, preferences,
-/// visual settings (background/orb/quantum selection), and account info.
+/// Full React-parity profile screen with 5 top-level tabs
+/// (Appearance, Sound, Beta, Sync, Sign Out) and 4 appearance sub-tabs
+/// (Dark/Light, Breathing Orbs, Quantum Flow, Nebula Drift).
 struct ProfileView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(ThemeManager.self) private var themeManager
 
     @Query private var profiles: [UserProfile]
     @Query private var languagePrefs: [LanguagePreference]
@@ -17,349 +19,502 @@ struct ProfileView: View {
     private var profile: UserProfile? { profiles.first }
     private var user: AppUser { .mock }
 
+    @State private var activeTab: ProfileTab = .appearance
+    @State private var activeAppearanceSubTab: AppearanceSubTab = .darkLight
     @State private var showLanguageSelector = false
-    @State private var selectedNebulaPreset: NebulaPreset = .lagoonNebula
-    @State private var selectedOrbScheme: BreathingOrbScheme = .barcelonaNights
-    @State private var selectedQuantumScene: QuantumFlowScene = .auroraBorealis
+
+    private var isDark: Bool { colorScheme == .dark }
+
+    // Entry animation state
+    @State private var headerAppeared = false
+    // Tab transition direction
+    @State private var tabDirection: Int = 0
+    @State private var subTabDirection: Int = 0
+    @Namespace private var tabIndicator
+    @Namespace private var subTabIndicator
+
+    enum ProfileTab: String, CaseIterable {
+        case appearance = "Appearance"
+        case sound = "Sound"
+        case beta = "Beta"
+        case sync = "Sync"
+        case signOut = "Sign Out"
+    }
+
+    enum AppearanceSubTab: String, CaseIterable {
+        case darkLight = "Dark/Light"
+        case breathingOrbs = "Orbs"
+        case quantumFlow = "Quantum"
+        case nebulaDrift = "Nebula"
+    }
 
     var body: some View {
-        ScrollView {
-            VStack(spacing: 24) {
-                // Avatar section
-                avatarSection
+        ScrollView(showsIndicators: false) {
+            VStack(spacing: 0) {
+                // Profile header inside GlassPanelWrapper
+                profileHeader
+                    .padding(.horizontal, 16)
+                    .padding(.top, 12)
+                    .opacity(headerAppeared ? 1 : 0)
+                    .offset(y: headerAppeared ? 0 : 20)
 
-                // Account info
-                accountSection
+                // Top-level settings tabs
+                settingsTabBar
+                    .padding(.top, 20)
+                    .opacity(headerAppeared ? 1 : 0)
 
-                // Learning stats
-                statsSection
+                // Tab content
+                settingsContent
+                    .padding(.horizontal, 16)
+                    .padding(.top, 16)
+                    .transition(.asymmetric(
+                        insertion: .opacity.combined(with: .offset(x: CGFloat(tabDirection * 30))),
+                        removal: .opacity.combined(with: .offset(x: CGFloat(-tabDirection * 30)))
+                    ))
+                    .id(activeTab)
 
-                // Visual settings
-                visualSettingsSection
-
-                // Language pair
-                languageSection
-
-                // App info
+                // App footer
                 appInfoSection
+                    .padding(.top, 24)
 
-                Spacer(minLength: 80)
+                Spacer(minLength: 100)
             }
-            .padding(.horizontal, 16)
-            .padding(.top, 12)
         }
-        .cosmicBackground(
-            preset: selectedNebulaPreset,
-            orbScheme: selectedOrbScheme,
-            quantumScene: selectedQuantumScene
-        )
-        .navigationTitle("Profile")
-        .navigationBarTitleDisplayMode(.large)
-        .toolbarColorScheme(.dark, for: .navigationBar)
-        .onAppear { loadSettings() }
+        .cosmicBackground()
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbarColorScheme(isDark ? .dark : .light, for: .navigationBar)
+        .onAppear {
+            withAnimation(.easeOut(duration: 0.6).delay(0.15)) {
+                headerAppeared = true
+            }
+        }
         .sheet(isPresented: $showLanguageSelector) {
             LanguageSelectionView()
         }
     }
 
-    // MARK: - Avatar
+    // MARK: - Profile Header
 
-    private var avatarSection: some View {
-        VStack(spacing: 12) {
-            ZStack {
-                Circle()
-                    .fill(
-                        LinearGradient(
-                            colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
+    private var profileHeader: some View {
+        GlassPanelWrapper {
+            VStack(spacing: 16) {
+                // Avatar with breathing glow + identity presence halo
+                ZStack {
+                    // Identity presence halo (outermost)
+                    Circle()
+                        .fill(
+                            RadialGradient(
+                                colors: [
+                                    Color(hex: "#667eea").opacity(0.12),
+                                    Color(hex: "#764ba2").opacity(0.06),
+                                    .clear
+                                ],
+                                center: .center,
+                                startRadius: 40,
+                                endRadius: 80
+                            )
                         )
-                    )
-                    .frame(width: 88, height: 88)
-                    .shadow(color: Color(hex: "#764ba2").opacity(0.4), radius: 20)
+                        .frame(width: 140, height: 140)
+                        .blur(radius: 8)
 
-                Image(systemName: "person.fill")
-                    .font(.system(size: 36))
-                    .foregroundStyle(.white)
+                    // Outer glow rings
+                    Circle()
+                        .fill(
+                            RadialGradient(
+                                colors: [
+                                    Color(hex: "#667eea").opacity(0.3),
+                                    Color(hex: "#764ba2").opacity(0.15),
+                                    .clear
+                                ],
+                                center: .center,
+                                startRadius: 35,
+                                endRadius: 65
+                            )
+                        )
+                        .frame(width: 110, height: 110)
+
+                    Circle()
+                        .fill(
+                            LinearGradient(
+                                colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
+                        )
+                        .frame(width: 80, height: 80)
+                        .shadow(color: Color(hex: "#764ba2").opacity(0.5), radius: 20)
+
+                    Image(systemName: "person.fill")
+                        .font(.system(size: 32, weight: .medium))
+                        .foregroundStyle(.white)
+                }
+                .pulsingGlow(color: Color(hex: "#764ba2"), radius: 8, speed: 3.0)
+
+                // Name & level
+                VStack(spacing: 4) {
+                    Text(user.name)
+                        .font(.title2.bold())
+                        .foregroundStyle(isDark ? .white : Color(red: 30/255, green: 25/255, blue: 60/255))
+
+                    HStack(spacing: 6) {
+                        Image(systemName: "star.fill")
+                            .font(.caption2)
+                            .foregroundStyle(.yellow)
+                        Text("Level \(profile?.currentLevel ?? 1) Learner")
+                            .font(.subheadline)
+                            .foregroundStyle(isDark ? .white.opacity(0.6) : .secondary)
+                    }
+                }
+
+                // Quick stats row
+                HStack(spacing: 0) {
+                    quickStat(value: "\(profile?.totalXP ?? 0)", label: "XP", icon: "bolt.fill", color: .cyan)
+                    quickStatDivider
+                    quickStat(value: "\(profile?.streakDays ?? 0)", label: "Streak", icon: "flame.fill", color: .orange)
+                    quickStatDivider
+                    quickStat(value: "\(allProgress.count)", label: "Sessions", icon: "play.circle.fill", color: .green)
+                }
+                .padding(.top, 4)
             }
-
-            Text(user.name)
-                .font(.title2.bold())
-                .foregroundStyle(.white)
-
-            Text("Level \(profile?.currentLevel ?? 1) Learner")
-                .font(.subheadline)
-                .foregroundStyle(.white.opacity(0.6))
         }
-        .padding(.top, 10)
     }
 
-    // MARK: - Account
-
-    private var accountSection: some View {
-        VStack(spacing: 12) {
-            Text("Account")
-                .font(.headline)
-                .foregroundStyle(.white)
-                .frame(maxWidth: .infinity, alignment: .leading)
-
-            profileRow(icon: "envelope.fill", color: .cyan, title: "Email", value: user.email)
-            profileRow(icon: "person.fill", color: .purple, title: "Name", value: user.name)
-            profileRow(icon: "crown.fill", color: .yellow, title: "Membership", value: "Free Tier")
-        }
-        .padding(18)
-        .background(glassCard)
-    }
-
-    // MARK: - Stats
-
-    private var statsSection: some View {
-        VStack(spacing: 12) {
-            Text("Statistics")
-                .font(.headline)
-                .foregroundStyle(.white)
-                .frame(maxWidth: .infinity, alignment: .leading)
-
-            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
-                miniStat(icon: "star.fill", value: "\(profile?.currentLevel ?? 1)", label: "Level", color: .yellow)
-                miniStat(icon: "bolt.fill", value: "\(profile?.totalXP ?? 0)", label: "Total XP", color: .cyan)
-                miniStat(icon: "flame.fill", value: "\(profile?.streakDays ?? 0)", label: "Streak", color: .orange)
-                miniStat(icon: "play.circle.fill", value: "\(allProgress.count)", label: "Sessions", color: .green)
-            }
-        }
-        .padding(18)
-        .background(glassCard)
-    }
-
-    private func miniStat(icon: String, value: String, label: String, color: Color) -> some View {
-        VStack(spacing: 6) {
+    private func quickStat(value: String, label: String, icon: String, color: Color) -> some View {
+        VStack(spacing: 4) {
             Image(systemName: icon)
+                .font(.system(size: 14))
                 .foregroundStyle(color)
             Text(value)
-                .font(.headline)
-                .foregroundStyle(.white)
+                .font(.system(size: 16, weight: .bold, design: .rounded))
+                .foregroundStyle(isDark ? .white : .primary)
             Text(label)
                 .font(.caption2)
-                .foregroundStyle(.white.opacity(0.5))
+                .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
         }
         .frame(maxWidth: .infinity)
-        .padding(10)
-        .background(
-            RoundedRectangle(cornerRadius: 14)
-                .fill(color.opacity(0.06))
-        )
     }
 
-    // MARK: - Visual Settings
-
-    private var visualSettingsSection: some View {
-        VStack(spacing: 14) {
-            Text("Visual Theme")
-                .font(.headline)
-                .foregroundStyle(.white)
-                .frame(maxWidth: .infinity, alignment: .leading)
-
-            // Nebula preset
-            VStack(alignment: .leading, spacing: 8) {
-                Text("Nebula Background")
-                    .font(.subheadline)
-                    .foregroundStyle(.white.opacity(0.7))
-
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 10) {
-                        ForEach(NebulaPreset.allCases, id: \.self) { preset in
-                            presetChip(
-                                title: preset.displayName,
-                                isSelected: selectedNebulaPreset == preset
-                            ) {
-                                withAnimation { selectedNebulaPreset = preset }
-                                saveVisualSettings()
-                            }
-                        }
-                    }
-                }
-            }
-
-            // Orb scheme
-            VStack(alignment: .leading, spacing: 8) {
-                Text("Breathing Orbs")
-                    .font(.subheadline)
-                    .foregroundStyle(.white.opacity(0.7))
-
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 10) {
-                        ForEach(BreathingOrbScheme.allCases, id: \.self) { scheme in
-                            presetChip(
-                                title: scheme.displayName,
-                                isSelected: selectedOrbScheme == scheme
-                            ) {
-                                withAnimation { selectedOrbScheme = scheme }
-                                saveVisualSettings()
-                            }
-                        }
-                    }
-                }
-            }
-
-            // Quantum scene
-            VStack(alignment: .leading, spacing: 8) {
-                Text("Quantum Flow")
-                    .font(.subheadline)
-                    .foregroundStyle(.white.opacity(0.7))
-
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 10) {
-                        ForEach(QuantumFlowScene.allCases, id: \.self) { scene in
-                            presetChip(
-                                title: scene.displayName,
-                                isSelected: selectedQuantumScene == scene
-                            ) {
-                                withAnimation { selectedQuantumScene = scene }
-                                saveVisualSettings()
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .padding(18)
-        .background(glassCard)
+    private var quickStatDivider: some View {
+        Rectangle()
+            .fill(isDark ? .white.opacity(0.08) : .black.opacity(0.06))
+            .frame(width: 1, height: 40)
     }
 
-    private func presetChip(title: String, isSelected: Bool, action: @escaping () -> Void) -> some View {
-        Button(action: action) {
-            Text(title)
-                .font(.caption.bold())
-                .foregroundStyle(isSelected ? .white : .white.opacity(0.6))
-                .padding(.horizontal, 12)
-                .padding(.vertical, 7)
-                .background(
-                    Capsule()
-                        .fill(isSelected
-                            ? AnyShapeStyle(LinearGradient(
-                                colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
-                                startPoint: .leading, endPoint: .trailing
-                            ))
-                            : AnyShapeStyle(.white.opacity(0.08))
+    // MARK: - Settings Tab Bar
+
+    private var settingsTabBar: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 3) {
+                ForEach(ProfileTab.allCases, id: \.self) { tab in
+                    Button {
+                        let oldIndex = ProfileTab.allCases.firstIndex(of: activeTab) ?? 0
+                        let newIndex = ProfileTab.allCases.firstIndex(of: tab) ?? 0
+                        tabDirection = newIndex > oldIndex ? 1 : -1
+                        withAnimation(.spring(response: 0.3, dampingFraction: 0.8)) {
+                            activeTab = tab
+                        }
+                    } label: {
+                        HStack(spacing: 5) {
+                            Image(systemName: tabIcon(for: tab))
+                                .font(.system(size: 11))
+                            Text(tab.rawValue)
+                                .font(.system(size: 12, weight: .semibold))
+                        }
+                        .foregroundStyle(
+                            activeTab == tab
+                                ? (isDark ? .white : Color(hex: "#667eea"))
+                                : (isDark ? .white.opacity(0.45) : .secondary)
                         )
-                )
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 8)
+                        .background {
+                            if activeTab == tab {
+                                Capsule()
+                                    .fill(
+                                        isDark
+                                            ? AnyShapeStyle(LinearGradient(
+                                                colors: [Color(hex: "#667eea").opacity(0.25), Color(hex: "#764ba2").opacity(0.15)],
+                                                startPoint: .leading,
+                                                endPoint: .trailing
+                                            ))
+                                            : AnyShapeStyle(Color(hex: "#667eea").opacity(0.10))
+                                    )
+                                    .overlay(
+                                        Capsule().strokeBorder(isDark ? .white.opacity(0.12) : Color(hex: "#667eea").opacity(0.20), lineWidth: 1)
+                                    )
+                                    .matchedGeometryEffect(id: "tabIndicator", in: tabIndicator)
+                            }
+                        }
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+            .padding(4)
+            .background(
+                Capsule()
+                    .fill(isDark ? .white.opacity(0.06) : .black.opacity(0.04))
+            )
         }
-        .buttonStyle(.plain)
     }
 
-    // MARK: - Language
+    private func tabIcon(for tab: ProfileTab) -> String {
+        switch tab {
+        case .appearance: return "paintbrush.fill"
+        case .sound: return "speaker.wave.2.fill"
+        case .beta: return "flask.fill"
+        case .sync: return "arrow.triangle.2.circlepath"
+        case .signOut: return "rectangle.portrait.and.arrow.right"
+        }
+    }
 
-    private var languageSection: some View {
-        VStack(spacing: 12) {
-            Text("Language")
-                .font(.headline)
-                .foregroundStyle(.white)
-                .frame(maxWidth: .infinity, alignment: .leading)
+    // MARK: - Settings Content
 
-            let langPref = languagePrefs.first
-            Button {
-                showLanguageSelector = true
-            } label: {
-                HStack {
-                    Image(systemName: "globe")
-                        .foregroundStyle(.cyan)
+    @ViewBuilder
+    private var settingsContent: some View {
+        switch activeTab {
+        case .appearance:
+            appearanceSettings
+        case .sound:
+            soundTab
+        case .beta:
+            betaTab
+        case .sync:
+            syncTab
+        case .signOut:
+            signOutTab
+        }
+    }
 
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text("Current Pair")
-                            .font(.caption)
-                            .foregroundStyle(.white.opacity(0.5))
-                        Text("\(langPref?.sourceLanguageEnum.displayName ?? "English") → \(langPref?.targetLanguageEnum.displayName ?? "Spanish")")
-                            .font(.subheadline.bold())
-                            .foregroundStyle(.white)
+    // MARK: - Appearance Tab (4 Sub-Tabs)
+
+    private var appearanceSettings: some View {
+        VStack(spacing: 16) {
+            // Sub-tab bar
+            appearanceSubTabBar
+
+            // Sub-tab content in glass card
+            settingsCard {
+                Group {
+                    switch activeAppearanceSubTab {
+                    case .darkLight:
+                        darkLightSettings
+                    case .breathingOrbs:
+                        BreathingOrbsSettingsView()
+                    case .quantumFlow:
+                        QuantumFlowSettingsView()
+                    case .nebulaDrift:
+                        NebulaDriftSettingsView()
                     }
+                }
+                .transition(.asymmetric(
+                    insertion: .opacity.combined(with: .offset(x: CGFloat(subTabDirection * 20))),
+                    removal: .opacity.combined(with: .offset(x: CGFloat(-subTabDirection * 20)))
+                ))
+                .id(activeAppearanceSubTab)
+            }
+        }
+    }
 
-                    Spacer()
+    private var appearanceSubTabBar: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 3) {
+                ForEach(AppearanceSubTab.allCases, id: \.self) { subTab in
+                    Button {
+                        let oldIndex = AppearanceSubTab.allCases.firstIndex(of: activeAppearanceSubTab) ?? 0
+                        let newIndex = AppearanceSubTab.allCases.firstIndex(of: subTab) ?? 0
+                        subTabDirection = newIndex > oldIndex ? 1 : -1
+                        withAnimation(.spring(response: 0.3, dampingFraction: 0.8)) {
+                            activeAppearanceSubTab = subTab
+                        }
+                    } label: {
+                        HStack(spacing: 4) {
+                            Image(systemName: subTabIcon(for: subTab))
+                                .font(.system(size: 10))
+                            Text(subTab.rawValue)
+                                .font(.system(size: 11, weight: .medium))
+                        }
+                        .foregroundStyle(
+                            activeAppearanceSubTab == subTab
+                                ? (isDark ? .white : Color(hex: "#8b5cf6"))
+                                : (isDark ? .white.opacity(0.4) : .secondary)
+                        )
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 6)
+                        .background {
+                            if activeAppearanceSubTab == subTab {
+                                Capsule()
+                                    .fill(
+                                        isDark
+                                            ? AnyShapeStyle(Color(hex: "#8b5cf6").opacity(0.15))
+                                            : AnyShapeStyle(Color(hex: "#8b5cf6").opacity(0.08))
+                                    )
+                                    .overlay(
+                                        Capsule().strokeBorder(
+                                            isDark ? Color(hex: "#8b5cf6").opacity(0.25) : Color(hex: "#8b5cf6").opacity(0.15),
+                                            lineWidth: 1
+                                        )
+                                    )
+                                    .matchedGeometryEffect(id: "subTabIndicator", in: subTabIndicator)
+                            }
+                        }
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+            .padding(3)
+            .background(
+                Capsule()
+                    .fill(isDark ? .white.opacity(0.04) : .black.opacity(0.03))
+            )
+        }
+    }
 
+    private func subTabIcon(for subTab: AppearanceSubTab) -> String {
+        switch subTab {
+        case .darkLight: return "moon.fill"
+        case .breathingOrbs: return "scope"
+        case .quantumFlow: return "waveform.path.ecg"
+        case .nebulaDrift: return "cloud.fog.fill"
+        }
+    }
+
+    // MARK: - Dark/Light Sub-Tab
+
+    private var darkLightSettings: some View {
+        VStack(spacing: 16) {
+            // Dark mode toggle
+            HStack(spacing: 12) {
+                Image(systemName: isDark ? "moon.fill" : "sun.max.fill")
+                    .font(.system(size: 20))
+                    .foregroundStyle(Color(hex: "#8b5cf6"))
+                    .contentTransition(.symbolEffect(.replace))
+
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Dark Mode")
+                        .font(.system(size: 17, weight: .semibold))
+                        .foregroundStyle(isDark ? .white : .primary)
+                    Text(isDark ? "Cosmic dark theme active" : "Light mode active")
+                        .font(.system(size: 13))
+                        .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                }
+
+                Spacer()
+
+                PremiumToggle(
+                    isOn: themeManager.isDarkMode,
+                    enabledColor: Color(hex: "#8b5cf6"),
+                    enabledIcon: "moon.fill",
+                    disabledIcon: "sun.max.fill"
+                ) {
+                    themeManager.toggleDarkMode(profile: profile)
+                }
+            }
+
+            Divider()
+                .overlay(isDark ? Color.white.opacity(0.06) : Color.black.opacity(0.06))
+
+            // Animation speed slider
+            SettingsSliderView(
+                label: "Animation Speed",
+                iconName: "gauge.with.dots.needle.67percent",
+                value: Binding(
+                    get: { profile?.animationSpeed ?? 1.0 },
+                    set: { profile?.animationSpeed = $0 }
+                ),
+                range: 0.2...2.0,
+                step: 0.1,
+                presets: [
+                    (0.5, "Slow", "tortoise"),
+                    (1.0, "Normal", "gauge.medium"),
+                    (1.5, "Fast", "hare"),
+                ]
+            )
+
+            // Language pair quick-change
+            HStack(spacing: 12) {
+                Image(systemName: "globe")
+                    .font(.system(size: 16))
+                    .foregroundStyle(.cyan)
+
+                let langPref = languagePrefs.first
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Language Pair")
+                        .font(.system(size: 15, weight: .medium))
+                        .foregroundStyle(isDark ? .white : .primary)
+                    Text("\(langPref?.sourceLanguageEnum.displayName ?? "English") → \(langPref?.targetLanguageEnum.displayName ?? "Spanish")")
+                        .font(.system(size: 12))
+                        .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                }
+
+                Spacer()
+
+                Button {
+                    showLanguageSelector = true
+                } label: {
                     Image(systemName: "chevron.right")
-                        .foregroundStyle(.white.opacity(0.4))
+                        .font(.system(size: 12, weight: .bold))
+                        .foregroundStyle(isDark ? .white.opacity(0.3) : .secondary)
                 }
-                .padding(14)
-                .background(
-                    RoundedRectangle(cornerRadius: 16)
-                        .fill(.white.opacity(0.06))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 16)
-                                .strokeBorder(.white.opacity(0.06), lineWidth: 1)
-                        )
-                )
+                .buttonStyle(.plain)
             }
-            .buttonStyle(.plain)
+            .contentShape(Rectangle())
+            .onTapGesture { showLanguageSelector = true }
         }
-        .padding(18)
-        .background(glassCard)
     }
 
-    // MARK: - App Info
+    // MARK: - Sound Tab (Delegated)
+
+    private var soundTab: some View {
+        settingsCard {
+            SoundSettingsView()
+        }
+    }
+
+    // MARK: - Beta Tab (Delegated)
+
+    private var betaTab: some View {
+        settingsCard {
+            BetaLanguagesView()
+        }
+    }
+
+    // MARK: - Sync Tab (Delegated)
+
+    private var syncTab: some View {
+        settingsCard {
+            SyncStatusView()
+        }
+    }
+
+    // MARK: - Sign Out Tab (Delegated)
+
+    private var signOutTab: some View {
+        settingsCard {
+            SignOutView()
+        }
+    }
+
+    // MARK: - App Info Footer
 
     private var appInfoSection: some View {
-        VStack(spacing: 8) {
+        VStack(spacing: 6) {
             Text("LumenLingo")
                 .font(.headline)
-                .foregroundStyle(.white.opacity(0.5))
+                .foregroundStyle(isDark ? .white.opacity(0.4) : .secondary)
             Text("Version 1.0.0")
                 .font(.caption)
-                .foregroundStyle(.white.opacity(0.3))
+                .foregroundStyle(isDark ? .white.opacity(0.25) : .gray.opacity(0.5))
             Text("Made with ❤️ for language learners")
                 .font(.caption)
-                .foregroundStyle(.white.opacity(0.3))
-        }
-        .padding(16)
-    }
-
-    // MARK: - Helpers
-
-    private func profileRow(icon: String, color: Color, title: String, value: String) -> some View {
-        HStack(spacing: 12) {
-            Image(systemName: icon)
-                .foregroundStyle(color)
-                .frame(width: 24)
-
-            VStack(alignment: .leading, spacing: 2) {
-                Text(title)
-                    .font(.caption)
-                    .foregroundStyle(.white.opacity(0.5))
-                Text(value)
-                    .font(.subheadline)
-                    .foregroundStyle(.white)
-            }
-
-            Spacer()
-        }
-        .padding(12)
-        .background(
-            RoundedRectangle(cornerRadius: 14)
-                .fill(.white.opacity(0.04))
-        )
-    }
-
-    private var glassCard: some View {
-        RoundedRectangle(cornerRadius: 22)
-            .fill(.ultraThinMaterial)
-            .overlay(
-                RoundedRectangle(cornerRadius: 22)
-                    .strokeBorder(.white.opacity(colorScheme == .dark ? 0.08 : 0.15), lineWidth: 1)
-            )
-            .shadow(color: .black.opacity(0.1), radius: 15, y: 5)
-    }
-
-    private func loadSettings() {
-        if let p = profile {
-            selectedNebulaPreset = p.nebulaPresetEnum
-            selectedOrbScheme = p.orbScheme
-            selectedQuantumScene = p.quantumScene
+                .foregroundStyle(isDark ? .white.opacity(0.25) : .gray.opacity(0.5))
         }
     }
 
-    private func saveVisualSettings() {
-        if let p = profile {
-            p.nebulaPresetEnum = selectedNebulaPreset
-            p.orbScheme = selectedOrbScheme
-            p.quantumScene = selectedQuantumScene
-        }
+    // MARK: - Shared Components
+
+    private func settingsCard<Content: View>(@ViewBuilder content: () -> Content) -> some View {
+        content()
+            .padding(16)
+            .background(GlassCardBackground(cornerRadius: 18))
     }
 }

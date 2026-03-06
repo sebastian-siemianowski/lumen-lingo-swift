@@ -16,6 +16,9 @@ struct StarburstRingView: View {
             // Ring galaxy canvas
             ringGalaxyCanvas
 
+            // Gas & dust particle canvas
+            gasParticleCanvas
+
             // Central elliptical core
             centralCore
 
@@ -34,7 +37,7 @@ struct StarburstRingView: View {
     }
 
     private var ringGalaxyCanvas: some View {
-        TimelineView(.animation(minimumInterval: 1.0 / 20.0)) { timeline in
+        TimelineView(.animation(minimumInterval: 1.0 / 25.0)) { timeline in
             Canvas { context, size in
                 let elapsed = timeline.date.timeIntervalSinceReferenceDate * 0.1 * speed
                 drawRingStars(context: context, size: size, elapsed: elapsed)
@@ -149,6 +152,88 @@ struct StarburstRingView: View {
                     center: CGPoint(x: x, y: y), startRadius: 0, endRadius: coreSize
                 )
             )
+        }
+    }
+
+    // MARK: - Gas & Dust Particles
+
+    /// 120 gas/dust particles: 80 sinusoidal drift in the ring region + 40 accretion disk orbitals
+    private var gasParticleCanvas: some View {
+        TimelineView(.animation(minimumInterval: 1.0 / 25.0)) { timeline in
+            Canvas { context, size in
+                let elapsed = timeline.date.timeIntervalSinceReferenceDate * 0.15 * speed
+                let cx = Double(size.width) / 2
+                let cy = Double(size.height) / 2
+                let ringR = min(size.width, size.height) * 0.32
+                let ringWidth: Double = 50
+
+                // Sinusoidal drift gas particles in ring region
+                for i in 0..<80 {
+                    let baseAngle = seededRandom(200, i * 6) * .pi * 2
+                    let rOffset = (seededRandom(200, i * 6 + 1) - 0.5) * 2 * ringWidth
+                    let r = ringR + rOffset
+
+                    // Slow orbit + sinusoidal radial drift
+                    let orbitSpeed = 0.015 + seededRandom(200, i * 6 + 2) * 0.02
+                    let driftAmp = 5 + seededRandom(200, i * 6 + 3) * 15
+                    let driftFreq = 0.3 + seededRandom(200, i * 6 + 4) * 0.6
+
+                    let angle = baseAngle + elapsed * orbitSpeed
+                    let drift = sin(elapsed * driftFreq + Double(i) * 1.3) * driftAmp
+
+                    let px = cx + cos(angle) * (r + drift)
+                    let py = cy + sin(angle) * (r + drift) * 0.85
+
+                    let particleSize = 2 + seededRandom(200, i * 6 + 5) * 6
+                    let breathe = sin(elapsed * 0.4 + Double(i) * 0.7) * 0.3 + 0.7
+                    let alpha = 0.015 * breathe * intensity
+
+                    // Gas color: pink/blue emission
+                    let gasColor = i % 3 == 0
+                        ? Color(red: 255/255, green: 120/255, blue: 160/255) // HII pink
+                        : i % 3 == 1
+                            ? Color(red: 130/255, green: 170/255, blue: 255/255) // reflection blue
+                            : Color(red: 200/255, green: 160/255, blue: 255/255) // purple
+
+                    context.fill(
+                        Circle().path(in: CGRect(x: px - particleSize, y: py - particleSize,
+                                                 width: particleSize * 2, height: particleSize * 2)),
+                        with: .radialGradient(
+                            Gradient(colors: [gasColor.opacity(alpha), .clear]),
+                            center: CGPoint(x: px, y: py),
+                            startRadius: 0,
+                            endRadius: particleSize
+                        )
+                    )
+                }
+
+                // Accretion disk orbital particles (faster, inner edge)
+                for j in 0..<40 {
+                    let baseAngle = seededRandom(210, j * 4) * .pi * 2
+                    let innerR = ringR - ringWidth * 0.8
+                    let rr = innerR + seededRandom(210, j * 4 + 1) * ringWidth * 0.5
+
+                    let orbSpeed = 0.04 + seededRandom(210, j * 4 + 2) * 0.03
+                    let angle = baseAngle + elapsed * orbSpeed
+
+                    let ax = cx + cos(angle) * rr
+                    let ay = cy + sin(angle) * rr * 0.85
+
+                    let pSize = 1.0 + seededRandom(210, j * 4 + 3) * 2.0
+                    let alpha = 0.08 * intensity
+
+                    // Hot accretion: white/yellow
+                    let accColor = j % 2 == 0
+                        ? Color(red: 255/255, green: 240/255, blue: 200/255)
+                        : Color(red: 255/255, green: 200/255, blue: 150/255)
+
+                    context.fill(
+                        Circle().path(in: CGRect(x: ax - pSize, y: ay - pSize, width: pSize * 2, height: pSize * 2)),
+                        with: .color(accColor.opacity(alpha))
+                    )
+                }
+            }
+            .blendMode(.screen)
         }
     }
 

@@ -1,20 +1,58 @@
 import SwiftUI
+import SwiftData
 
 // MARK: - Layout Background View
 
 /// Orchestrates the full background stack: base color → breathing orbs →
-/// quantum flow → cosmic nebula → overlays. Mirrors the React LayoutBackground
-/// component with all layers composited.
+/// quantum flow → cosmic nebula → overlays. Reads user preferences from
+/// SwiftData globally, matching React's localStorage-driven approach.
 struct LayoutBackgroundView: View {
     @Environment(\.colorScheme) private var colorScheme
+    @Query private var profiles: [UserProfile]
 
-    var nebulaPreset: NebulaPreset = .lagoonNebula
-    var orbScheme: BreathingOrbScheme = .barcelonaNights
-    var quantumScene: QuantumFlowScene = .auroraBorealis
-    var showQuantumFlow: Bool = true
-    var showCosmic: Bool = true
-    var cosmicIntensity: Double = 1.0
-    var speed: Double = 1.0
+    /// Optional overrides for preview / testing contexts
+    var previewPreset: NebulaPreset?
+    var previewOrbScheme: BreathingOrbScheme?
+    var previewQuantumScene: QuantumFlowScene?
+
+    private var profile: UserProfile? { profiles.first }
+
+    private var nebulaPreset: NebulaPreset {
+        previewPreset ?? profile?.nebulaPresetEnum ?? .lagoonNebula
+    }
+    private var orbScheme: BreathingOrbScheme {
+        previewOrbScheme ?? profile?.orbScheme ?? .barcelonaNights
+    }
+    private var quantumScene: QuantumFlowScene {
+        previewQuantumScene ?? profile?.quantumScene ?? .dubaiCelestialMirage
+    }
+    private var showOrbs: Bool {
+        profile?.breathingOrbsEnabled ?? true
+    }
+    private var showQuantumFlow: Bool {
+        profile?.quantumFlowEnabled ?? true
+    }
+    private var showCosmic: Bool {
+        profile?.nebulaDriftEnabled ?? true
+    }
+    private var orbIntensity: Double {
+        profile?.orbIntensity ?? 1.0
+    }
+    private var orbSpeed: Double {
+        profile?.orbSpeed ?? 1.0
+    }
+    private var quantumIntensity: Double {
+        profile?.quantumIntensity ?? 1.0
+    }
+    private var quantumSpeed: Double {
+        profile?.quantumSpeed ?? 1.0
+    }
+    private var cosmicIntensity: Double {
+        profile?.nebulaDriftIntensity ?? 1.0
+    }
+    private var cosmicSpeed: Double {
+        profile?.nebulaDriftSpeed ?? 1.0
+    }
 
     var body: some View {
         GeometryReader { geometry in
@@ -22,22 +60,24 @@ struct LayoutBackgroundView: View {
                 // Layer 0: Base gradient
                 baseGradient
 
-                // Layer 1: Breathing orbs (always present)
-                BreathingOrbsView(isDarkMode: colorScheme == .dark, scheme: orbScheme, intensity: 1.0, speed: speed)
-                    .opacity(colorScheme == .dark ? 0.7 : 0.4)
+                // Layer 1: Breathing orbs (respects user toggle)
+                if showOrbs {
+                    BreathingOrbsView(isDarkMode: colorScheme == .dark, scheme: orbScheme, intensity: orbIntensity, speed: orbSpeed)
+                        .opacity(colorScheme == .dark ? 0.7 : 0.4)
+                }
 
-                // Layer 2: Quantum flow (optional — aurora curtains)
+                // Layer 2: Quantum flow (respects user toggle)
                 if showQuantumFlow {
-                    QuantumFlowView(scene: quantumScene, intensity: 1.0, speed: speed, isDarkMode: colorScheme == .dark)
+                    QuantumFlowView(scene: quantumScene, intensity: quantumIntensity, speed: quantumSpeed, isDarkMode: colorScheme == .dark)
                         .opacity(colorScheme == .dark ? 0.5 : 0.25)
                 }
 
-                // Layer 3: Cosmic nebula/galaxy scene (optional)
+                // Layer 3: Cosmic nebula/galaxy scene (respects user toggle, dark only in React but we allow dimmed in light)
                 if showCosmic {
                     CosmicBackgroundView(
                         preset: nebulaPreset,
                         intensity: cosmicIntensity * (colorScheme == .dark ? 1.0 : 0.5),
-                        speed: speed
+                        speed: cosmicSpeed
                     )
                     .opacity(colorScheme == .dark ? 0.8 : 0.35)
                 }
@@ -94,24 +134,24 @@ struct LayoutBackgroundView: View {
 
 extension View {
     /// Applies the cosmic layout background behind any content.
+    /// Reads all preferences from SwiftData — no parameters needed.
+    func cosmicBackground() -> some View {
+        self.background {
+            LayoutBackgroundView()
+        }
+    }
+
+    /// Preview-only variant with explicit overrides.
     func cosmicBackground(
-        preset: NebulaPreset = .lagoonNebula,
+        preset: NebulaPreset,
         orbScheme: BreathingOrbScheme = .barcelonaNights,
-        quantumScene: QuantumFlowScene = .auroraBorealis,
-        showQuantumFlow: Bool = true,
-        showCosmic: Bool = true,
-        cosmicIntensity: Double = 1.0,
-        speed: Double = 1.0
+        quantumScene: QuantumFlowScene = .dubaiCelestialMirage
     ) -> some View {
         self.background {
             LayoutBackgroundView(
-                nebulaPreset: preset,
-                orbScheme: orbScheme,
-                quantumScene: quantumScene,
-                showQuantumFlow: showQuantumFlow,
-                showCosmic: showCosmic,
-                cosmicIntensity: cosmicIntensity,
-                speed: speed
+                previewPreset: preset,
+                previewOrbScheme: orbScheme,
+                previewQuantumScene: quantumScene
             )
         }
     }

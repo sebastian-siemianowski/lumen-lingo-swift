@@ -24,6 +24,24 @@ final class UserProfile {
     var animationIntensity: Double
     var animationSpeed: Double
 
+    // Per-system intensity/speed (React parity)
+    var orbIntensity: Double
+    var orbSpeed: Double
+    var orbRaveMode: Bool
+    var quantumIntensity: Double
+    var quantumSpeed: Double
+    var nebulaDriftIntensity: Double
+    var nebulaDriftSpeed: Double
+
+    // Per-category sound toggles (React parity)
+    var gamesSoundsEnabled: Bool
+    var flashcardsSoundsEnabled: Bool
+    var grammarSoundsEnabled: Bool
+    var wordBuilderSoundsEnabled: Bool
+    var uiSoundsEnabled: Bool
+    var achievementSoundsEnabled: Bool
+    var ambientSoundsEnabled: Bool
+
     var currentLevel: Int {
         (totalXP / 100) + 1
     }
@@ -60,7 +78,7 @@ final class UserProfile {
 
     /// Typed accessor for quantum flow scene
     var quantumScene: QuantumFlowScene {
-        get { QuantumFlowScene(rawValue: quantumFlowScene) ?? .auroraBorealis }
+        get { QuantumFlowScene(rawValue: quantumFlowScene) ?? .dubaiCelestialMirage }
         set { quantumFlowScene = newValue.rawValue }
     }
 
@@ -76,11 +94,25 @@ final class UserProfile {
         breathingOrbsEnabled: Bool = true,
         breathingOrbScheme: String = BreathingOrbScheme.barcelonaNights.rawValue,
         quantumFlowEnabled: Bool = true,
-        quantumFlowScene: String = QuantumFlowScene.auroraBorealis.rawValue,
+        quantumFlowScene: String = QuantumFlowScene.dubaiCelestialMirage.rawValue,
         nebulaDriftEnabled: Bool = true,
         nebulaPreset: String = NebulaPreset.lagoonNebula.rawValue,
         animationIntensity: Double = 0.8,
-        animationSpeed: Double = 1.0
+        animationSpeed: Double = 1.0,
+        orbIntensity: Double = 1.0,
+        orbSpeed: Double = 1.0,
+        orbRaveMode: Bool = false,
+        quantumIntensity: Double = 1.0,
+        quantumSpeed: Double = 1.0,
+        nebulaDriftIntensity: Double = 1.0,
+        nebulaDriftSpeed: Double = 1.0,
+        gamesSoundsEnabled: Bool = true,
+        flashcardsSoundsEnabled: Bool = true,
+        grammarSoundsEnabled: Bool = true,
+        wordBuilderSoundsEnabled: Bool = true,
+        uiSoundsEnabled: Bool = true,
+        achievementSoundsEnabled: Bool = true,
+        ambientSoundsEnabled: Bool = false
     ) {
         self.totalXP = totalXP
         self.dailyStreak = dailyStreak
@@ -98,6 +130,20 @@ final class UserProfile {
         self.nebulaPreset = nebulaPreset
         self.animationIntensity = animationIntensity
         self.animationSpeed = animationSpeed
+        self.orbIntensity = orbIntensity
+        self.orbSpeed = orbSpeed
+        self.orbRaveMode = orbRaveMode
+        self.quantumIntensity = quantumIntensity
+        self.quantumSpeed = quantumSpeed
+        self.nebulaDriftIntensity = nebulaDriftIntensity
+        self.nebulaDriftSpeed = nebulaDriftSpeed
+        self.gamesSoundsEnabled = gamesSoundsEnabled
+        self.flashcardsSoundsEnabled = flashcardsSoundsEnabled
+        self.grammarSoundsEnabled = grammarSoundsEnabled
+        self.wordBuilderSoundsEnabled = wordBuilderSoundsEnabled
+        self.uiSoundsEnabled = uiSoundsEnabled
+        self.achievementSoundsEnabled = achievementSoundsEnabled
+        self.ambientSoundsEnabled = ambientSoundsEnabled
     }
 }
 

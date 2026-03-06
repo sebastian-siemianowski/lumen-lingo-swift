@@ -76,10 +76,7 @@ struct CategoriesView: View {
                 }
             }
         }
-        .cosmicBackground(
-            preset: backgroundPreset,
-            orbScheme: orbScheme
-        )
+        .cosmicBackground()
         .navigationBarBackButtonHidden()
         .toolbar(.hidden, for: .navigationBar)
         .onAppear { loadCategories() }
@@ -178,112 +175,162 @@ struct CategoriesView: View {
 
     private func categoryCard(_ item: CategoryDisplayItem) -> some View {
         Button {
+            HapticsService.light()
             navigateToGame(categoryId: item.id)
         } label: {
-            VStack(alignment: .leading, spacing: 10) {
-                // Top row: icon + favorite
-                HStack {
-                    // Icon
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 12)
-                            .fill(
-                                LinearGradient(
-                                    colors: categoryGradient(item),
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
-                                )
+            ZStack {
+                // Glass curvature highlight — top reflection band (React: h-[22%] bg-white/10)
+                VStack {
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(
+                            LinearGradient(
+                                colors: [.white.opacity(0.12), .white.opacity(0.04), .clear],
+                                startPoint: .top,
+                                endPoint: .center
                             )
-                            .frame(width: 44, height: 44)
-
-                        Image(systemName: categoryIcon(item))
-                            .font(.system(size: 18))
-                            .foregroundStyle(.white)
-                    }
-
+                        )
+                        .frame(height: 60)
                     Spacer()
-
-                    // Favorite button
-                    Button {
-                        toggleFavorite(item.id)
-                    } label: {
-                        Image(systemName: isFavorite(item.id) ? "heart.fill" : "heart")
-                            .font(.body)
-                            .foregroundStyle(isFavorite(item.id) ? .pink : .white.opacity(0.4))
-                    }
-                    .buttonStyle(.plain)
                 }
+                .clipShape(RoundedRectangle(cornerRadius: 20))
 
-                // Name
-                Text(item.name)
-                    .font(.subheadline.bold())
-                    .foregroundStyle(.white)
-                    .lineLimit(2)
+                // Grounding shadow — bottom fade (React: h-[18%] bg-black/5)
+                VStack {
+                    Spacer()
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(
+                            LinearGradient(
+                                colors: [.clear, .black.opacity(0.05)],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                        .frame(height: 50)
+                }
+                .clipShape(RoundedRectangle(cornerRadius: 20))
 
-                // Description
-                Text(item.description)
-                    .font(.caption)
-                    .foregroundStyle(.white.opacity(0.5))
-                    .lineLimit(2)
-
-                // Difficulty badge
-                difficultyBadge(item.difficulty)
-
-                // Progress bar
-                VStack(alignment: .leading, spacing: 4) {
-                    GeometryReader { geo in
-                        ZStack(alignment: .leading) {
-                            Capsule()
-                                .fill(.white.opacity(0.08))
-                            Capsule()
+                // Card content
+                VStack(alignment: .leading, spacing: 10) {
+                    // Top row: icon + favorite
+                    HStack(alignment: .top) {
+                        // Icon with shimmer sweep
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 14)
                                 .fill(
                                     LinearGradient(
-                                        colors: [Color(hex: "#fbbf24"), Color(hex: "#f59e0b"), Color(hex: "#ea580c")],
-                                        startPoint: .leading,
-                                        endPoint: .trailing
+                                        colors: categoryGradient(item),
+                                        startPoint: .topLeading,
+                                        endPoint: .bottomTrailing
                                     )
                                 )
-                                .frame(width: geo.size.width * (item.progress.percentage / 100.0))
+                                .frame(width: isGridView ? 48 : 56, height: isGridView ? 48 : 56)
+                                .shadow(color: categoryGradient(item).first?.opacity(0.35) ?? .clear, radius: 10)
+                                .overlay(
+                                    // Inner glow highlight
+                                    RoundedRectangle(cornerRadius: 14)
+                                        .fill(
+                                            LinearGradient(
+                                                colors: [.white.opacity(0.25), .clear],
+                                                startPoint: .top,
+                                                endPoint: .center
+                                            )
+                                        )
+                                )
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 14)
+                                        .strokeBorder(.white.opacity(0.2), lineWidth: 1)
+                                )
+
+                            Image(systemName: categoryIcon(item))
+                                .font(.system(size: isGridView ? 20 : 24))
+                                .foregroundStyle(.white)
+                                .shadow(color: .white.opacity(0.3), radius: 2)
+                        }
+                        .shimmer(isActive: true, duration: 4.0)
+
+                        Spacer()
+
+                        // Favorite button
+                        Button {
+                            HapticsService.light()
+                            toggleFavorite(item.id)
+                        } label: {
+                            Image(systemName: isFavorite(item.id) ? "heart.fill" : "heart")
+                                .font(.body)
+                                .foregroundStyle(isFavorite(item.id) ? .pink : .white.opacity(0.4))
+                                .shadow(color: isFavorite(item.id) ? .pink.opacity(0.4) : .clear, radius: 6)
+                        }
+                        .buttonStyle(.plain)
+                    }
+
+                    // Name
+                    Text(item.name)
+                        .font(isGridView ? .subheadline.bold() : .headline.bold())
+                        .foregroundStyle(.white)
+                        .lineLimit(2)
+
+                    // Description — opacity 0.7 (was 0.5)
+                    Text(item.description)
+                        .font(isGridView ? .caption : .subheadline)
+                        .foregroundStyle(.white.opacity(0.7))
+                        .lineLimit(isGridView ? 2 : 3)
+
+                    // Difficulty badge
+                    difficultyBadge(item.difficulty)
+
+                    // Premium glass progress bar (AnimatedProgressBar)
+                    VStack(alignment: .leading, spacing: 4) {
+                        AnimatedProgressBar(
+                            progress: item.progress.percentage,
+                            height: isGridView ? 5 : 6,
+                            gradient: progressGradient
+                        )
+
+                        HStack {
+                            Text("\(item.progress.mastered)/\(item.progress.total) mastered")
+                                .font(.caption2)
+                                .foregroundStyle(.white.opacity(0.5))
+                            Spacer()
+                            Text("\(Int(item.progress.percentage))%")
+                                .font(.caption2.bold())
+                                .foregroundStyle(.white.opacity(0.7))
                         }
                     }
-                    .frame(height: 5)
 
-                    HStack {
-                        Text("\(item.progress.mastered)/\(item.progress.total) mastered")
-                            .font(.caption2)
-                            .foregroundStyle(.white.opacity(0.4))
-                        Spacer()
-                        Text("\(Int(item.progress.percentage))%")
-                            .font(.caption2.bold())
-                            .foregroundStyle(.white.opacity(0.5))
+                    // Completed badge
+                    if item.progress.percentage >= 100.0 {
+                        HStack(spacing: 4) {
+                            Image(systemName: "checkmark.circle.fill")
+                                .font(.caption2)
+                            Text("Completed")
+                                .font(.caption2.bold())
+                        }
+                        .foregroundStyle(.green)
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 3)
+                        .background(
+                            Capsule()
+                                .fill(.green.opacity(0.15))
+                                .overlay(
+                                    Capsule()
+                                        .strokeBorder(.green.opacity(0.3), lineWidth: 1)
+                                )
+                        )
                     }
                 }
-
-                // Completed badge
-                if item.progress.percentage >= 100.0 {
-                    HStack(spacing: 4) {
-                        Image(systemName: "checkmark.circle.fill")
-                            .font(.caption2)
-                        Text("Completed")
-                            .font(.caption2.bold())
-                    }
-                    .foregroundStyle(.green)
-                    .padding(.horizontal, 8)
-                    .padding(.vertical, 3)
-                    .background(Capsule().fill(.green.opacity(0.1)))
-                }
+                .padding(isGridView ? 14 : 16)
             }
-            .padding(14)
             .background(
-                RoundedRectangle(cornerRadius: 20)
-                    .fill(.ultraThinMaterial)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 20)
-                            .strokeBorder(.white.opacity(colorScheme == .dark ? 0.08 : 0.15), lineWidth: 1)
-                    )
+                GlassCardBackground(
+                    cornerRadius: 20,
+                    borderColor: categoryGradient(item).first ?? .white,
+                    borderOpacity: 0.12,
+                    tintColor: categoryGradient(item).first ?? .white
+                )
             )
-            .shadow(color: .black.opacity(0.1), radius: 15, y: 5)
+            .clipShape(RoundedRectangle(cornerRadius: 20))
         }
-        .buttonStyle(.plain)
+        .buttonStyle(GameCardButtonStyle())
     }
 
     private func difficultyBadge(_ difficulty: Difficulty) -> some View {
@@ -422,25 +469,18 @@ struct CategoriesView: View {
         }
     }
 
+    private var progressGradient: [Color] {
+        switch gameType {
+        case .flashCards: [Color(hex: "#667eea"), Color(hex: "#06b6d4"), Color(hex: "#0d9488")]
+        case .grammar: [Color(hex: "#f093fb"), Color(hex: "#f5576c"), Color(hex: "#e11d48")]
+        case .wordBuilder: [Color(hex: "#fbbf24"), Color(hex: "#f59e0b"), Color(hex: "#ea580c")]
+        }
+    }
+
     private func categoryIcon(_ item: CategoryDisplayItem) -> String {
         SFSymbolMapping.icon(for: item.icon)
     }
 
-    private var backgroundPreset: NebulaPreset {
-        switch gameType {
-        case .flashCards: .celestialLagoon
-        case .grammar: .solarAurora
-        case .wordBuilder: .starburstRing
-        }
-    }
-
-    private var orbScheme: BreathingOrbScheme {
-        switch gameType {
-        case .flashCards: .madridSunrise
-        case .grammar: .warsawTwilight
-        case .wordBuilder: .lisboaGoldenHour
-        }
-    }
 }
 
 // MARK: - Difficulty Helpers

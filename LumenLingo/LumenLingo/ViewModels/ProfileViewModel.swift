@@ -66,7 +66,7 @@ final class ProfileViewModel {
     }
 
     var selectedQuantumScene: QuantumFlowScene {
-        get { QuantumFlowScene(rawValue: userProfile?.quantumFlowScene ?? "") ?? .auroraBorealis }
+        get { QuantumFlowScene(rawValue: userProfile?.quantumFlowScene ?? "") ?? .dubaiCelestialMirage }
         set { userProfile?.quantumFlowScene = newValue.rawValue; save() }
     }
 

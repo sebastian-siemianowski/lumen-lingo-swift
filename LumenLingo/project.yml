@@ -21,7 +21,7 @@ targets:
         excludes:
           - "**/.DS_Store"
     resources:
-      - path: LumenLingo/Resources
+      - path: LumenLingo/Resources/Assets.xcassets
         buildPhase: resources
     settings:
       base:

@@ -3,8 +3,15 @@ import Foundation
 
 // MARK: - Audio Service
 
-/// Synthesized audio feedback using AVAudioEngine.
-/// Port of React's useAudioFeedback.jsx — all sounds generated programmatically.
+/// Crash-proof synthesized audio feedback using in-memory WAV generation + AVAudioPlayer.
+///
+/// Previous implementation used AVAudioEngine which crashes on certain simulator
+/// configurations (iPad Pro M5, iOS 26.2) with:
+///   `'required condition is false: inputNode != nullptr || outputNode != nullptr'`
+///
+/// This version generates WAV buffers programmatically and plays them via AVAudioPlayer,
+/// completely avoiding AVAudioEngine and its problematic I/O node access.
+/// Phase accumulation ensures click-free frequency sweeps.
 @Observable
 final class AudioService {
     static let shared = AudioService()
@@ -13,34 +20,48 @@ final class AudioService {
     var uiSoundsEnabled: Bool = true
     var gameSoundsEnabled: Bool = true
     var achievementSoundsEnabled: Bool = true
+    var ambientSoundsEnabled: Bool = false
     var masterVolume: Float = 0.08
 
-    private var audioEngine: AVAudioEngine?
-    private var isInitialized = false
+    /// Active players kept alive during playback
+    private var activePlayers: [AVAudioPlayer] = []
+    private var isSessionConfigured = false
 
     private init() {}
 
-    // MARK: - Initialization
+    // MARK: - Sync from UserProfile
 
-    private func ensureInitialized() {
-        guard !isInitialized else { return }
+    /// Read all sound preferences from a SwiftData `UserProfile` so the
+    /// AudioService's guard checks match what the user configured in Settings.
+    func syncFromProfile(_ profile: UserProfile) {
+        isEnabled = profile.soundEnabled
+        gameSoundsEnabled = profile.gamesSoundsEnabled
+            && profile.flashcardsSoundsEnabled
+            && profile.grammarSoundsEnabled
+            && profile.wordBuilderSoundsEnabled
+        uiSoundsEnabled = profile.uiSoundsEnabled
+        achievementSoundsEnabled = profile.achievementSoundsEnabled
+        ambientSoundsEnabled = profile.ambientSoundsEnabled
+    }
+
+    // MARK: - Audio Session
+
+    private func configureSessionIfNeeded() {
+        guard !isSessionConfigured else { return }
         do {
-            let engine = AVAudioEngine()
-            self.audioEngine = engine
-
-            try AVAudioSession.sharedInstance().setCategory(.ambient, mode: .default)
+            try AVAudioSession.sharedInstance().setCategory(
+                .ambient, mode: .default, options: [.mixWithOthers]
+            )
             try AVAudioSession.sharedInstance().setActive(true)
-
-            try engine.start()
-            isInitialized = true
+            isSessionConfigured = true
         } catch {
-            print("⚠️ AudioService initialization failed: \(error)")
+            print("⚠️ Audio session config failed: \(error)")
         }
     }
 
     // MARK: - Sound Effects
 
-    /// Card flip sound — two sine tones descending
+    /// Card flip sound — descending sine sweep
     func playPlink() {
         guard isEnabled, gameSoundsEnabled else { return }
         playTone(frequency: 2200, endFrequency: 1600, duration: 0.12, volume: masterVolume * 0.6)
@@ -67,7 +88,7 @@ final class AudioService {
         playTone(frequency: 180, endFrequency: 120, duration: 0.12, volume: masterVolume * 0.4, waveform: .triangle)
     }
 
-    /// Navigation transition — noise burst with tonal accent
+    /// Navigation transition — falling tone accent
     func playWhoosh() {
         guard isEnabled, uiSoundsEnabled else { return }
         playTone(frequency: 600, endFrequency: 200, duration: 0.15, volume: masterVolume * 0.3)
@@ -154,7 +175,7 @@ final class AudioService {
         playTone(frequency: 2637.02, duration: 0.25, volume: masterVolume * 0.3) // E7
     }
 
-    // MARK: - Tone Generation
+    // MARK: - Core Tone Synthesis
 
     private enum Waveform {
         case sine
@@ -168,61 +189,138 @@ final class AudioService {
         volume: Float = 0.05,
         waveform: Waveform = .sine
     ) {
-        ensureInitialized()
-        guard let engine = audioEngine, engine.isRunning else { return }
+        configureSessionIfNeeded()
+        guard isSessionConfigured else { return }
 
-        let sampleRate = Float(engine.outputNode.outputFormat(forBus: 0).sampleRate)
-        let frameCount = AVAudioFrameCount(sampleRate * Float(duration))
-        guard frameCount > 0 else { return }
+        let wavData = generateWAVData(
+            frequency: frequency,
+            endFrequency: endFrequency,
+            duration: duration,
+            volume: volume,
+            waveform: waveform
+        )
 
-        let format = engine.outputNode.outputFormat(forBus: 0)
-        guard let buffer = AVAudioPCMBuffer(pcmFormat: format, frameCapacity: frameCount) else { return }
-        buffer.frameLength = frameCount
+        do {
+            let player = try AVAudioPlayer(data: wavData)
+            player.prepareToPlay()
+            player.play()
+            activePlayers.append(player)
 
-        guard let channelData = buffer.floatChannelData else { return }
-        let channelCount = Int(format.channelCount)
+            // Clean up reference after playback finishes
+            let cleanupDelay = duration + 0.15
+            DispatchQueue.main.asyncAfter(deadline: .now() + cleanupDelay) { [weak self] in
+                self?.activePlayers.removeAll { $0 === player }
+            }
+        } catch {
+            print("⚠️ Tone playback error: \(error)")
+        }
+    }
+
+    // MARK: - WAV Data Generation
+
+    private let sampleRate: Int = 44100
+
+    private func generateWAVData(
+        frequency: Float,
+        endFrequency: Float?,
+        duration: TimeInterval,
+        volume: Float,
+        waveform: Waveform
+    ) -> Data {
+        let numSamples = Int(Double(sampleRate) * duration)
+        guard numSamples > 0 else { return Data() }
 
         let startFreq = frequency
         let endFreq = endFrequency ?? frequency
 
-        for frame in 0..<Int(frameCount) {
-            let t = Float(frame) / Float(frameCount)
-            let currentFreq = startFreq + (endFreq - startFreq) * t
-            let phase = 2.0 * Float.pi * currentFreq * Float(frame) / sampleRate
+        // Generate 16-bit mono PCM samples with proper phase accumulation
+        var samples = [Int16](repeating: 0, count: numSamples)
+        var phase: Float = 0
 
-            // Envelope: attack 10%, sustain 60%, release 30%
+        for i in 0..<numSamples {
+            let t = Float(i) / Float(numSamples)
+            let currentFreq = startFreq + (endFreq - startFreq) * t
+
+            // Phase accumulation prevents discontinuities during frequency sweeps
+            phase += 2.0 * Float.pi * currentFreq / Float(sampleRate)
+            if phase > 2.0 * Float.pi { phase -= 2.0 * Float.pi }
+
+            // Envelope: 5% attack, 55% sustain with gentle decay, 40% quadratic release
             let envelope: Float
-            if t < 0.1 {
-                envelope = t / 0.1
-            } else if t < 0.7 {
-                envelope = 1.0
+            if t < 0.05 {
+                envelope = t / 0.05
+            } else if t < 0.6 {
+                let decayT = (t - 0.05) / 0.55
+                envelope = 1.0 - decayT * 0.08 // gentle 8% decay during sustain
             } else {
-                envelope = (1.0 - t) / 0.3
+                let releaseT = (t - 0.6) / 0.4
+                envelope = 0.92 * (1.0 - releaseT) * (1.0 - releaseT) // quadratic release
             }
 
-            let sample: Float
+            let raw: Float
             switch waveform {
             case .sine:
-                sample = sin(phase) * volume * envelope
+                raw = sin(phase)
             case .triangle:
-                let normalized = phase.truncatingRemainder(dividingBy: 2 * Float.pi) / (2 * Float.pi)
-                sample = (2.0 * abs(2.0 * normalized - 1.0) - 1.0) * volume * envelope
+                let norm = phase / (2 * Float.pi)
+                raw = 2.0 * abs(2.0 * norm - 1.0) - 1.0
             }
 
-            for channel in 0..<channelCount {
-                channelData[channel][frame] = sample
-            }
+            let value = raw * volume * envelope * 32767.0
+            samples[i] = Int16(clamping: Int(value))
         }
 
-        let playerNode = AVAudioPlayerNode()
-        engine.attach(playerNode)
-        engine.connect(playerNode, to: engine.mainMixerNode, format: format)
-        playerNode.play()
-        playerNode.scheduleBuffer(buffer) {
-            DispatchQueue.main.async {
-                playerNode.stop()
-                engine.detach(playerNode)
-            }
+        return buildWAVData(samples: samples)
+    }
+
+    private func buildWAVData(samples: [Int16]) -> Data {
+        let numChannels: UInt16 = 1
+        let bitsPerSample: UInt16 = 16
+        let dataSize = UInt32(samples.count * Int(numChannels) * Int(bitsPerSample / 8))
+        let fileSize = 36 + dataSize
+
+        var data = Data(capacity: Int(44 + dataSize))
+
+        // RIFF header
+        data.append(contentsOf: "RIFF".utf8)
+        appendUInt32(&data, fileSize)
+        data.append(contentsOf: "WAVE".utf8)
+
+        // fmt sub-chunk
+        data.append(contentsOf: "fmt ".utf8)
+        appendUInt32(&data, 16)              // sub-chunk size
+        appendUInt16(&data, 1)               // PCM format
+        appendUInt16(&data, numChannels)
+        appendUInt32(&data, UInt32(sampleRate))
+        let byteRate = UInt32(sampleRate) * UInt32(numChannels) * UInt32(bitsPerSample / 8)
+        appendUInt32(&data, byteRate)
+        let blockAlign = numChannels * (bitsPerSample / 8)
+        appendUInt16(&data, blockAlign)
+        appendUInt16(&data, bitsPerSample)
+
+        // data sub-chunk
+        data.append(contentsOf: "data".utf8)
+        appendUInt32(&data, dataSize)
+
+        // PCM samples
+        for sample in samples {
+            appendInt16(&data, sample)
         }
+
+        return data
+    }
+
+    // MARK: - Binary Helpers
+
+    private func appendUInt32(_ data: inout Data, _ value: UInt32) {
+        withUnsafeBytes(of: value.littleEndian) { data.append(contentsOf: $0) }
+    }
+
+    private func appendUInt16(_ data: inout Data, _ value: UInt16) {
+        withUnsafeBytes(of: value.littleEndian) { data.append(contentsOf: $0) }
+    }
+
+    private func appendInt16(_ data: inout Data, _ value: Int16) {
+        withUnsafeBytes(of: value.littleEndian) { data.append(contentsOf: $0) }
     }
 }

@@ -14,19 +14,23 @@ struct JourneyView: View {
     private var allProgress: [GameProgressRecord]
 
     private var profile: UserProfile? { profiles.first }
+    private var isDark: Bool { colorScheme == .dark }
 
     private var randomQuote: WisdomQuote {
         WisdomQuote.allQuotes.randomElement() ?? WisdomQuote.allQuotes[0]
     }
 
     var body: some View {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
             VStack(spacing: 24) {
                 // Header
                 journeyHeader
 
-                // Overall stats
-                overallStats
+                // Milestones timeline
+                milestonesSection
+
+                // Overall stats inside GlassPanelWrapper
+                overallStatsPanel
 
                 // Game type breakdown
                 gameTypeBreakdown
@@ -42,14 +46,9 @@ struct JourneyView: View {
             .padding(.horizontal, 16)
             .padding(.top, 12)
         }
-        .cosmicBackground(
-            preset: .spiralHaloGalaxy,
-            orbScheme: .prahaAmethyst,
-            quantumScene: .deepOcean
-        )
-        .navigationTitle("Journey")
-        .navigationBarTitleDisplayMode(.large)
-        .toolbarColorScheme(.dark, for: .navigationBar)
+        .cosmicBackground()
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbarColorScheme(isDark ? .dark : .light, for: .navigationBar)
     }
 
     // MARK: - Header
@@ -69,23 +68,106 @@ struct JourneyView: View {
 
             Text("Your Learning Journey")
                 .font(.title2.bold())
-                .foregroundStyle(.white)
+                .foregroundStyle(isDark ? .white : Color(red: 30/255, green: 25/255, blue: 60/255))
 
             Text("Track your progress and celebrate achievements")
                 .font(.subheadline)
-                .foregroundStyle(.white.opacity(0.6))
+                .foregroundStyle(isDark ? .white.opacity(0.6) : .secondary)
                 .multilineTextAlignment(.center)
         }
         .padding(.top, 10)
     }
 
+    // MARK: - Milestones Timeline
+
+    private var milestonesSection: some View {
+        GlassPanelWrapper {
+            VStack(alignment: .leading, spacing: 0) {
+                HStack(spacing: 8) {
+                    Image(systemName: "flag.checkered")
+                        .foregroundStyle(Color(hex: "#667eea"))
+                    Text("Milestones")
+                        .font(.headline)
+                        .foregroundStyle(isDark ? .white : .primary)
+                }
+                .padding(.bottom, 16)
+
+                ForEach(Array(milestones.enumerated()), id: \.element.title) { index, milestone in
+                    milestoneRow(milestone, isLast: index == milestones.count - 1)
+                }
+            }
+        }
+    }
+
+    private struct Milestone {
+        let title: String
+        let icon: String
+        let color: Color
+        let xpRequired: Int
+    }
+
+    private var milestones: [Milestone] {
+        [
+            Milestone(title: "First Steps", icon: "shoe.fill", color: .green, xpRequired: 0),
+            Milestone(title: "Getting Started", icon: "star.fill", color: .cyan, xpRequired: 50),
+            Milestone(title: "Dedicated Learner", icon: "book.fill", color: Color(hex: "#667eea"), xpRequired: 200),
+            Milestone(title: "Word Warrior", icon: "shield.fill", color: Color(hex: "#8b5cf6"), xpRequired: 500),
+            Milestone(title: "Language Master", icon: "crown.fill", color: .yellow, xpRequired: 1000),
+            Milestone(title: "Polyglot Legend", icon: "globe", color: Color(hex: "#ec4899"), xpRequired: 2500),
+        ]
+    }
+
+    private func milestoneRow(_ milestone: Milestone, isLast: Bool) -> some View {
+        let currentXP = profile?.totalXP ?? 0
+        let isUnlocked = currentXP >= milestone.xpRequired
+
+        return HStack(spacing: 14) {
+            // Timeline column
+            VStack(spacing: 0) {
+                Circle()
+                    .fill(isUnlocked ? milestone.color : .gray.opacity(0.3))
+                    .frame(width: 32, height: 32)
+                    .overlay {
+                        Image(systemName: milestone.icon)
+                            .font(.system(size: 13))
+                            .foregroundStyle(isUnlocked ? .white : .gray)
+                    }
+                    .shadow(color: isUnlocked ? milestone.color.opacity(0.4) : .clear, radius: 6)
+
+                if !isLast {
+                    Rectangle()
+                        .fill(isUnlocked ? milestone.color.opacity(0.3) : .gray.opacity(0.15))
+                        .frame(width: 2, height: 30)
+                }
+            }
+
+            // Content
+            VStack(alignment: .leading, spacing: 2) {
+                Text(milestone.title)
+                    .font(.subheadline.bold())
+                    .foregroundStyle(isDark ? .white.opacity(isUnlocked ? 1 : 0.4) : (isUnlocked ? .primary : .secondary))
+
+                Text("\(milestone.xpRequired) XP required")
+                    .font(.caption)
+                    .foregroundStyle(isDark ? .white.opacity(0.4) : .secondary)
+            }
+
+            Spacer()
+
+            if isUnlocked {
+                Image(systemName: "checkmark.circle.fill")
+                    .foregroundStyle(.green)
+            }
+        }
+    }
+
     // MARK: - Overall Stats
 
-    private var overallStats: some View {
+    private var overallStatsPanel: some View {
         VStack(spacing: 14) {
             Text("Overview")
                 .font(.headline)
-                .foregroundStyle(.white)
+                .foregroundStyle(isDark ? .white : .primary)
                 .frame(maxWidth: .infinity, alignment: .leading)
 
             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 12) {
@@ -96,7 +178,7 @@ struct JourneyView: View {
             }
         }
         .padding(18)
-        .background(glassCard)
+        .background(GlassCardBackground())
     }
 
     private func journeyStat(title: String, value: String, icon: String, color: Color) -> some View {
@@ -108,11 +190,11 @@ struct JourneyView: View {
 
             Text(value)
                 .font(.title3.bold())
-                .foregroundStyle(.white)
+                .foregroundStyle(isDark ? .white : .primary)
 
             Text(title)
                 .font(.caption)
-                .foregroundStyle(.white.opacity(0.5))
+                .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
         }
         .frame(maxWidth: .infinity)
         .padding(12)
@@ -132,7 +214,7 @@ struct JourneyView: View {
         VStack(spacing: 14) {
             Text("Game Performance")
                 .font(.headline)
-                .foregroundStyle(.white)
+                .foregroundStyle(isDark ? .white : .primary)
                 .frame(maxWidth: .infinity, alignment: .leading)
 
             ForEach(GameType.allCases, id: \.self) { type in
@@ -140,7 +222,7 @@ struct JourneyView: View {
             }
         }
         .padding(18)
-        .background(glassCard)
+        .background(GlassCardBackground())
     }
 
     private func gameTypeRow(_ type: GameType) -> some View {
@@ -174,7 +256,7 @@ struct JourneyView: View {
             VStack(alignment: .leading, spacing: 4) {
                 Text(type.displayName)
                     .font(.subheadline.bold())
-                    .foregroundStyle(.white)
+                    .foregroundStyle(isDark ? .white : .primary)
 
                 HStack(spacing: 8) {
                     Text("\(records.count) sessions")
@@ -184,7 +266,7 @@ struct JourneyView: View {
                     Text("\(Int(accuracy))% accuracy")
                 }
                 .font(.caption)
-                .foregroundStyle(.white.opacity(0.5))
+                .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
             }
 
             Spacer()
@@ -192,10 +274,10 @@ struct JourneyView: View {
         .padding(12)
         .background(
             RoundedRectangle(cornerRadius: 16)
-                .fill(.white.opacity(0.04))
+                .fill(isDark ? .white.opacity(0.04) : .black.opacity(0.03))
                 .overlay(
                     RoundedRectangle(cornerRadius: 16)
-                        .strokeBorder(.white.opacity(0.06), lineWidth: 1)
+                        .strokeBorder(isDark ? .white.opacity(0.06) : .black.opacity(0.06), lineWidth: 1)
                 )
         )
     }
@@ -210,7 +292,7 @@ struct JourneyView: View {
                     .symbolEffect(.pulse, options: .repeating.speed(0.3))
                 Text("Current Streak")
                     .font(.headline)
-                    .foregroundStyle(.white)
+                    .foregroundStyle(isDark ? .white : .primary)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
 
@@ -226,17 +308,17 @@ struct JourneyView: View {
                     )
                 Text("days")
                     .font(.title3)
-                    .foregroundStyle(.white.opacity(0.6))
+                    .foregroundStyle(isDark ? .white.opacity(0.6) : .secondary)
                     .padding(.top, 16)
             }
 
             Text("Keep learning every day to maintain your streak!")
                 .font(.caption)
-                .foregroundStyle(.white.opacity(0.4))
+                .foregroundStyle(isDark ? .white.opacity(0.4) : .secondary)
                 .multilineTextAlignment(.center)
         }
         .padding(18)
-        .background(glassCard)
+        .background(GlassCardBackground())
     }
 
     // MARK: - Wisdom Quote
@@ -245,32 +327,20 @@ struct JourneyView: View {
         VStack(spacing: 12) {
             Image(systemName: "quote.opening")
                 .font(.title2)
-                .foregroundStyle(.white.opacity(0.3))
+                .foregroundStyle(isDark ? .white.opacity(0.3) : .secondary)
 
             Text(randomQuote.text)
                 .font(.subheadline)
-                .foregroundStyle(.white.opacity(0.8))
+                .foregroundStyle(isDark ? .white.opacity(0.8) : .primary)
                 .italic()
                 .multilineTextAlignment(.center)
 
             Text("— \(randomQuote.author)")
                 .font(.caption)
-                .foregroundStyle(.white.opacity(0.5))
+                .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
         }
         .padding(20)
-        .background(glassCard)
-    }
-
-    // MARK: - Helpers
-
-    private var glassCard: some View {
-        RoundedRectangle(cornerRadius: 22)
-            .fill(.ultraThinMaterial)
-            .overlay(
-                RoundedRectangle(cornerRadius: 22)
-                    .strokeBorder(.white.opacity(colorScheme == .dark ? 0.08 : 0.15), lineWidth: 1)
-            )
-            .shadow(color: .black.opacity(0.1), radius: 15, y: 5)
+        .background(GlassCardBackground())
     }
 
     private func gameTypeIcon(_ type: GameType) -> String {

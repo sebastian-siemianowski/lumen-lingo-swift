@@ -33,6 +33,11 @@ struct GrammarView: View {
     @State private var isLoading: Bool = true
     @State private var categoryName: String = ""
 
+    // Idle hint
+    @State private var idleTimer: Timer? = nil
+    @State private var hintGlowAnswer: String? = nil
+    @State private var hintGlowOpacity: Double = 0
+
     private var currentQuestion: GrammarQuestion? {
         guard currentIndex < questions.count else { return nil }
         return questions[currentIndex]
@@ -66,7 +71,7 @@ struct GrammarView: View {
                 emptyStateView
             }
         }
-        .cosmicBackground(preset: .solarAurora, orbScheme: .warsawTwilight)
+        .cosmicBackground()
         .navigationBarBackButtonHidden()
         .toolbar(.hidden, for: .navigationBar)
         .onAppear {
@@ -112,6 +117,9 @@ struct GrammarView: View {
             .padding(.horizontal, 20)
             .padding(.top, 8)
         }
+        .onAppear { resetGrammarIdleTimer() }
+        .onChange(of: questionTransitionId) { resetGrammarIdleTimer() }
+        .onDisappear { idleTimer?.invalidate() }
     }
 
     // MARK: - Exercise Header
@@ -149,22 +157,11 @@ struct GrammarView: View {
             }
 
             // Progress bar
-            GeometryReader { geo in
-                ZStack(alignment: .leading) {
-                    Capsule().fill(.white.opacity(0.1))
-                    Capsule()
-                        .fill(
-                            LinearGradient(
-                                colors: [Color(hex: "#f093fb"), Color(hex: "#f5576c")],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                        .frame(width: geo.size.width * progress)
-                        .animation(.spring(response: 0.4), value: progress)
-                }
-            }
-            .frame(height: 4)
+            AnimatedProgressBar(
+                progress: progress * 100,
+                height: 4,
+                gradient: [Color(hex: "#f093fb"), Color(hex: "#f5576c"), Color(hex: "#e11d48")]
+            )
 
             HStack(spacing: 16) {
                 statPill(icon: "checkmark", value: "\(correctCount)", color: .green)
@@ -218,42 +215,47 @@ struct GrammarView: View {
         }
         .padding(20)
         .background(
-            RoundedRectangle(cornerRadius: 28)
-                .fill(.ultraThinMaterial)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 28)
-                        .fill(moodGradient)
+            ZStack {
+                GlassCardBackground(
+                    cornerRadius: 28,
+                    borderColor: moodColor,
+                    borderOpacity: 0.1,
+                    tintColor: moodColor
                 )
-                .overlay(
+
+                // Glass curvature highlight at top
+                VStack {
                     RoundedRectangle(cornerRadius: 28)
-                        .strokeBorder(.white.opacity(0.08), lineWidth: 1)
-                )
+                        .fill(
+                            LinearGradient(
+                                colors: [.white.opacity(0.10), .clear],
+                                startPoint: .top,
+                                endPoint: .center
+                            )
+                        )
+                        .frame(height: 50)
+                    Spacer()
+                }
+                .clipShape(RoundedRectangle(cornerRadius: 28))
+            }
         )
-        .shadow(color: .black.opacity(0.15), radius: 25, y: 10)
+        .clipShape(RoundedRectangle(cornerRadius: 28))
+        .shadow(color: moodColor.opacity(0.08), radius: 25, y: 10)
     }
 
-    private var moodGradient: some ShapeStyle {
-        LinearGradient(
-            colors: {
-                switch performanceMood {
-                case .warm: return [Color(hex: "#f093fb").opacity(0.05), Color(hex: "#fbbf24").opacity(0.03)]
-                case .cool: return [Color(hex: "#a78bfa").opacity(0.05), Color(hex: "#818cf8").opacity(0.03)]
-                case .neutral: return [Color(hex: "#667eea").opacity(0.04), Color(hex: "#764ba2").opacity(0.02)]
-                }
-            }(),
-            startPoint: .topLeading,
-            endPoint: .bottomTrailing
-        )
+    private var moodColor: Color {
+        switch performanceMood {
+        case .warm: Color(hex: "#f093fb")
+        case .cool: Color(hex: "#818cf8")
+        case .neutral: Color(hex: "#764ba2")
+        }
     }
 
     private func questionTextPanel(question: GrammarQuestion) -> some View {
         VStack(spacing: 12) {
             if isAnswered {
-                // Show question with correct answer filled in
-                Text(filledQuestion(question))
-                    .font(.title3.bold())
-                    .foregroundStyle(.white)
-                    .multilineTextAlignment(.center)
+                // Show question with glowing green answer filled in
+                filledQuestionText(question)
             } else {
                 Text(question.question)
                     .font(.title3.bold())
@@ -264,7 +266,7 @@ struct GrammarView: View {
             if let translation = question.translation, !translation.isEmpty {
                 Text(translation)
                     .font(.subheadline)
-                    .foregroundStyle(.white.opacity(0.5))
+                    .foregroundStyle(.white.opacity(0.55))
                     .italic()
             }
         }
@@ -275,20 +277,51 @@ struct GrammarView: View {
                 .fill(
                     LinearGradient(
                         colors: isAnswered
-                            ? [Color(hex: "#10b981").opacity(0.1), Color(hex: "#0d9488").opacity(0.05)]
-                            : [Color(hex: "#764ba2").opacity(0.1), Color(hex: "#667eea").opacity(0.05)],
+                            ? [Color(hex: "#10b981").opacity(0.12), Color(hex: "#0d9488").opacity(0.06)]
+                            : [Color(hex: "#764ba2").opacity(0.12), Color(hex: "#667eea").opacity(0.06)],
                         startPoint: .topLeading,
                         endPoint: .bottomTrailing
                     )
                 )
+                .overlay(
+                    RoundedRectangle(cornerRadius: 20)
+                        .strokeBorder(
+                            isAnswered ? Color(hex: "#10b981").opacity(0.15) : .white.opacity(0.06),
+                            lineWidth: 1
+                        )
+                )
         )
     }
 
-    private func filledQuestion(_ question: GrammarQuestion) -> String {
+    /// Renders the question with the correct answer highlighted in glowing green
+    /// instead of plain brackets.
+    @ViewBuilder
+    private func filledQuestionText(_ question: GrammarQuestion) -> some View {
         let correct = question.correctAnswer
-        return question.question
-            .replacingOccurrences(of: "___", with: "[\(correct)]")
-            .replacingOccurrences(of: "...", with: "[\(correct)]")
+        let text = question.question
+        let placeholder = text.contains("___") ? "___" : (text.contains("...") ? "..." : nil)
+
+        if let placeholder, let range = text.range(of: placeholder) {
+            let before = String(text[text.startIndex..<range.lowerBound])
+            let after = String(text[range.upperBound..<text.endIndex])
+
+            (Text(before)
+                .font(.title3.bold())
+                .foregroundColor(.white)
+            + Text(correct)
+                .font(.title3.bold())
+                .foregroundColor(Color(hex: "#10b981"))
+            + Text(after)
+                .font(.title3.bold())
+                .foregroundColor(.white))
+                .multilineTextAlignment(.center)
+                .shadow(color: Color(hex: "#10b981").opacity(0.4), radius: 8)
+        } else {
+            Text(text)
+                .font(.title3.bold())
+                .foregroundStyle(.white)
+                .multilineTextAlignment(.center)
+        }
     }
 
     // MARK: - Answer Grid
@@ -314,9 +347,11 @@ struct GrammarView: View {
     ) -> some View {
         let isSelected = selectedAnswer == option
         let showResult = isAnswered
+        let isHinted = hintGlowAnswer == option && !isAnswered
 
         return Button {
             guard !isAnswered else { return }
+            clearGrammarIdleHint()
             selectAnswer(option, isCorrect: isCorrect)
         } label: {
             HStack(spacing: 10) {
@@ -364,9 +399,14 @@ struct GrammarView: View {
             )
             .scaleEffect(showResult && isSelected && !isCorrect ? 1.0 : (showResult && !isSelected && !isCorrect ? 0.98 : 1.0))
             .opacity(showResult && !isSelected && !isCorrect ? 0.5 : 1.0)
+            .shadow(color: isHinted ? Color(hex: "#a78bfa").opacity(hintGlowOpacity * 0.4) : .clear, radius: isHinted ? 12 : 0)
+            .overlay(
+                RoundedRectangle(cornerRadius: 16)
+                    .strokeBorder(Color(hex: "#a78bfa").opacity(isHinted ? hintGlowOpacity * 0.5 : 0), lineWidth: 2)
+            )
             .animation(.spring(response: 0.3), value: isAnswered)
         }
-        .buttonStyle(.plain)
+        .buttonStyle(ScaleButtonStyle())
         .disabled(isAnswered)
     }
 
@@ -435,15 +475,15 @@ struct GrammarView: View {
                 Capsule()
                     .fill(
                         LinearGradient(
-                            colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                            colors: [Color(hex: "#a855f7"), Color(hex: "#ec4899")],
                             startPoint: .leading,
                             endPoint: .trailing
                         )
                     )
             )
-            .shadow(color: Color(hex: "#667eea").opacity(0.3), radius: 15)
+            .shadow(color: Color(hex: "#a855f7").opacity(0.4), radius: 15)
         }
-        .buttonStyle(.plain)
+        .buttonStyle(ScaleButtonStyle())
         .frame(maxWidth: .infinity, alignment: selectedAnswer == currentQuestion?.correctAnswer ? .trailing : .center)
     }
 
@@ -562,5 +602,30 @@ struct GrammarView: View {
         showExplanation = false
         isGameComplete = false
         questionTransitionId = UUID()
+    }
+
+    // MARK: - Idle Hint System
+
+    private func resetGrammarIdleTimer() {
+        clearGrammarIdleHint()
+        idleTimer?.invalidate()
+        idleTimer = Timer.scheduledTimer(withTimeInterval: 7.0, repeats: false) { _ in
+            DispatchQueue.main.async {
+                showGrammarIdleHint()
+            }
+        }
+    }
+
+    private func showGrammarIdleHint() {
+        guard !isAnswered, let question = currentQuestion else { return }
+        hintGlowAnswer = question.correctAnswer
+        withAnimation(.easeInOut(duration: 1.2).repeatForever(autoreverses: true)) {
+            hintGlowOpacity = 0.9
+        }
+    }
+
+    private func clearGrammarIdleHint() {
+        hintGlowAnswer = nil
+        hintGlowOpacity = 0
     }
 }

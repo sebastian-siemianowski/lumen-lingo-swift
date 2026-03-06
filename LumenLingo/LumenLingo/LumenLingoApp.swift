@@ -5,9 +5,13 @@ import SwiftData
 
 @main
 struct LumenLingoApp: App {
+    @State private var themeManager = ThemeManager()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(themeManager)
+                .preferredColorScheme(themeManager.colorScheme)
         }
         .modelContainer(for: [
             UserProfile.self,

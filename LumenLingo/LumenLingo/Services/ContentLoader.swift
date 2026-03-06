@@ -65,11 +65,21 @@ final class ContentLoader {
     // MARK: - Private
 
     private func loadFromBundle<T: Codable>(languagePair: String, fileName: String) -> [ContentCategory<T>] {
-        guard let url = Bundle.main.url(
-            forResource: fileName,
-            withExtension: "json",
-            subdirectory: "Content/\(languagePair)"
-        ) else {
+        // Try folder-reference path first (type: folder in project.yml)
+        let url: URL? =
+            Bundle.main.url(
+                forResource: fileName,
+                withExtension: "json",
+                subdirectory: "Content/\(languagePair)"
+            )
+            // Fallback: look inside Content.bundle produced by folder reference
+            ?? Bundle.main.url(forResource: "Content", withExtension: nil)
+                .flatMap { Bundle(url: $0) }?
+                .url(forResource: fileName, withExtension: "json", subdirectory: languagePair)
+            // Fallback: flat copy (PBXGroup)
+            ?? Bundle.main.url(forResource: fileName, withExtension: "json")
+
+        guard let url else {
             print("⚠️ Content file not found: Content/\(languagePair)/\(fileName).json")
             return []
         }
