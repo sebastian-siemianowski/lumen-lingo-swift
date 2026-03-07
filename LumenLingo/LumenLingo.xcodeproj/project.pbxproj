@@ -40,6 +40,7 @@
 		9A088AC44F03937FC1939412 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A2278E3B176354236AF109 /* DashboardView.swift */; };
 		9B62C71FC47783DF6BB80D30 /* MetalCosmicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38147CE75141E1292FF464C1 /* MetalCosmicView.swift */; };
 		9B95136E0053CB309F0470A0 /* WordBuilderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE743C6D3380728D60B135A6 /* WordBuilderView.swift */; };
+		A597B5030071EAC72D59777A /* SolarAuroraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E0E826DB4B9AC7450DB492 /* SolarAuroraView.swift */; };
 		A71CCAEA069D1304C4EFFF39 /* CosmicBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEB257B68C610CCEA553916 /* CosmicBackgroundView.swift */; };
 		AAB3EBD187F4B304EF2A471B /* BreathingOrbsSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C84297D92B80DD22BB1E11C /* BreathingOrbsSettingsView.swift */; };
 		B08B367E63734C6253D76A0D /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3982631873ABBAD71CBA185 /* CategoryViewModel.swift */; };
@@ -124,6 +125,7 @@
 		8D7E271F15AB922B3AF19043 /* NebulaDriftSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebulaDriftSettingsView.swift; sourceTree = "<group>"; };
 		8EE1A87C9FE959A341B5B7EF /* TranslationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationService.swift; sourceTree = "<group>"; };
 		927863E6ECF97AE41A78326D /* MembershipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembershipView.swift; sourceTree = "<group>"; };
+		97E0E826DB4B9AC7450DB492 /* SolarAuroraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarAuroraView.swift; sourceTree = "<group>"; };
 		9DD06C49CE0742785FB126D2 /* EdgeOfAndromedaPreset.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = EdgeOfAndromedaPreset.metal; sourceTree = "<group>"; };
 		9DEB257B68C610CCEA553916 /* CosmicBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmicBackgroundView.swift; sourceTree = "<group>"; };
 		9F049FEAB56C3145BCF41D5A /* GrammarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarViewModel.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				62BB8A676728B666DFB159B8 /* MetalCosmicRenderer.swift */,
 				38147CE75141E1292FF464C1 /* MetalCosmicView.swift */,
 				59EF54CA4B0E1ECB5159EE96 /* QuantumFlowView.swift */,
+				97E0E826DB4B9AC7450DB492 /* SolarAuroraView.swift */,
 				C7A63D5EEB0001AEFA02084A /* StarFieldGenerator.swift */,
 			);
 			path = Background;
@@ -540,6 +543,7 @@
 				8EDBE1142ECA02BB7746D49D /* SettingsSliderView.swift in Sources */,
 				C0996CF3C7F52457D0FC851C /* SignOutView.swift in Sources */,
 				078F0B02324FE9D3A556A23A /* SolarAuroraPreset.metal in Sources */,
+				A597B5030071EAC72D59777A /* SolarAuroraView.swift in Sources */,
 				01500500A4FD056AB4F66B62 /* SoundSettingsView.swift in Sources */,
 				943EECD12689FFF2888436EA /* SpiralHaloPreset.metal in Sources */,
 				E04CF3B9BEE5E6E32567269F /* StarFieldGenerator.swift in Sources */,

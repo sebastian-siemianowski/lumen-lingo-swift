@@ -148,7 +148,8 @@ vertex StarVertexOut cosmicStarVertex(
     float2 normPos = screenPos / uniforms.resolution;
     float edgeFade = smoothstep(0.0, 0.05, min(min(normPos.x, 1.0 - normPos.x),
                                                  min(normPos.y, 1.0 - normPos.y)));
-    out.finalAlpha = twinkle * uniforms.intensity * edgeFade;
+    // star.color.a encodes per-star baseAlpha (React: 0.3–1.0 brightness variation)
+    out.finalAlpha = twinkle * uniforms.intensity * edgeFade * star.color.a;
     
     return out;
 }
@@ -172,19 +173,19 @@ fragment float4 cosmicStarFragment(StarVertexOut in [[stage_in]]) {
         // Pass 1: Atmospheric diffusion (very soft, large radius)
         float diffusion = 1.0 - smoothstep(0.0, 1.0, dist);
         diffusion = diffusion * diffusion; // quadratic falloff
-        float diffAlpha = diffusion * alpha * 0.06;
+        float diffAlpha = diffusion * alpha * 0.10;
         
         // Pass 2: Glow (medium radius)
         float glowDist = dist * (6.0 / 2.8); // scale to glow radius
         float glow = 1.0 - smoothstep(0.0, 1.0, glowDist);
         glow = glow * glow;
-        float glowAlpha = glow * alpha * 0.25;
+        float glowAlpha = glow * alpha * 0.40;
         
         // Pass 3: Core (sharp center, white-hot)
         float coreDist = dist * (6.0 / 1.1); // scale to core radius
         float core = 1.0 - smoothstep(0.0, 1.0, coreDist);
         core = core * core * core; // cubic sharp falloff
-        float coreAlpha = core * alpha * 0.9;
+        float coreAlpha = core * alpha * 1.0;
         
         // Composite: diffusion (star color) + glow (star color) + core (white blend)
         float3 coreColor = mix(float3(1.0), in.starColor.rgb, 0.3);
