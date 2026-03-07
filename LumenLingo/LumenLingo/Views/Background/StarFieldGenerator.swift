@@ -675,70 +675,82 @@ enum StarFieldGenerator {
     }
     
     // ============================================================
-    // MARK: - Spiral Halo Galaxy (800 + 100 deep = 900 stars)
-    // Continuous z-depth, rich spectral colours, spiral arm positioning
+    // MARK: - Spiral Halo Galaxy (1400 + 200 deep = 1600 stars)
+    // True galactic rotation via rotationFactor (Keplerian).
+    // Zones: 20% field, 15% core, 55% arm (4-arm log spiral), 10% halo
     // ============================================================
     
     static func spiralHaloStars() -> [StarData] {
         var stars: [StarData] = []
         
-        // ============================================================
-        // Main stellar population — 800 stars
-        //
-        // Spatial zones for galaxy structure:
-        //   Background (20%): uniform random
-        //   Core (15%): Gaussian σ=0.06
-        //   Spiral arms (55%): 4-arm logarithmic spiral
-        //   Outer halo (10%): annular r=0.3..0.5
-        //
-        // Continuous z-depth via pow(rand, 0.55)
-        // 30+ depth-dependent colours: far=cool/faint, near=vivid
-        // Hero/mystical distribution, depth-dependent everything
-        // ============================================================
-        let starCount = 800
+        let starCount = 1400
         let armCount = 4
         let tightness: Float = 0.5
         
         for i in 0..<starCount {
-            func rand(_ n: Int) -> Float { sRand(i * 137, n) }
+            func rand(_ n: Int) -> Float { sRand(i * 7, n) }
             
             // Continuous z-depth
             let z = pow(rand(1), 0.55)
             
-            // Spatial zone assignment
+            // Spatial zone assignment (React ratios: 20/15/55/10)
             let zoneRoll = rand(30)
             var rx: Float
             var ry: Float
             var isArm = false
+            var distFromCenter: Float = 0
+            var rotFactor: Float = 0.2 // default = field
             
             if zoneRoll < 0.20 {
-                // Background — uniform with subtle perturbation
+                // ── FIELD (20%) — uniform background ──
                 rx = rand(2) + sin(Float(i) * 0.37) * 0.05
                 ry = abs(rand(3) + cos(Float(i) * 0.29) * 0.05)
                 rx = rx.truncatingRemainder(dividingBy: 1.0)
                 ry = ry.truncatingRemainder(dividingBy: 1.0)
+                distFromCenter = sqrt(pow(rx - 0.5, 2) + pow(ry - 0.5, 2))
+                rotFactor = 0.2
+                
             } else if zoneRoll < 0.35 {
-                // Core — concentrated Gaussian
-                let gx = gaussianRand(i * 137, 2, sigma: 0.06)
-                let gy = gaussianRand(i * 137, 4, sigma: 0.06)
+                // ── CORE (15%) — tight Gaussian cluster ──
+                let gx = gaussianRand(i * 7, 2, sigma: 0.06)
+                let gy = gaussianRand(i * 7, 4, sigma: 0.06)
                 rx = 0.5 + gx
                 ry = 0.5 + gy
+                distFromCenter = sqrt(gx * gx + gy * gy)
+                rotFactor = 1.5 // fastest rotation (inner)
+                
             } else if zoneRoll < 0.90 {
-                // Spiral arms — log spiral with spread
+                // ── SPIRAL ARMS (55%) — 4-arm log spiral ──
                 isArm = true
-                let armIdx = i % armCount
-                let armOffset = Float(armIdx) * .pi * 0.5
-                let dist: Float = 0.12 + rand(2) * 0.25
-                let spreadAngle = (rand(3) - 0.5) * 0.16
-                let spiralAngle = log(dist / 0.05) / tightness + armOffset + spreadAngle
-                rx = 0.5 + cos(spiralAngle) * dist
-                ry = 0.5 + sin(spiralAngle) * dist
+                let armIdx = Int(rand(31) * Float(armCount))
+                let armBaseAngle = Float(armIdx) / Float(armCount) * .pi * 2
+                
+                // Distance: Gaussian-biased toward middle (0.12..0.37)
+                let distRand = rand(2)
+                let dist: Float = 0.12 + abs(distRand - 0.5) * 0.50
+                
+                // Logarithmic spiral: angle = base + dist * tightness * 18
+                let spiralAngle = armBaseAngle + dist * tightness * 18.0
+                
+                // Spread perpendicular to arm
+                let spreadAngle = spiralAngle + (rand(3) - 0.5) * 0.16
+                let spreadDist = dist + (rand(4) - 0.5) * 0.04
+                
+                rx = 0.5 + cos(spreadAngle) * spreadDist
+                ry = 0.5 + sin(spreadAngle) * spreadDist
+                distFromCenter = spreadDist
+                
+                // Keplerian: inner arms spin faster
+                rotFactor = max(0.3, 1.2 - distFromCenter * 3.0)
+                
             } else {
-                // Outer halo — annular
+                // ── HALO (10%) — outer annular ring ──
                 let angle = rand(2) * .pi * 2
-                let r: Float = 0.3 + rand(3) * 0.2
+                let r: Float = 0.3 + pow(rand(3), 0.5) * 0.2
                 rx = 0.5 + cos(angle) * r
                 ry = 0.5 + sin(angle) * r
+                distFromCenter = r
+                rotFactor = 0.3
             }
             
             // ── Depth-dependent colour selection ──
@@ -763,56 +775,70 @@ enum StarFieldGenerator {
                     baseColor = SIMD4(245.0/255, 245.0/255, 255.0/255, 1)
                 }
             } else if z < 0.50 {
-                // Mid-field — standard spectral palette + accents
-                if colorRoll < 0.14 {
-                    baseColor = SIMD4(185.0/255, 206.0/255, 255.0/255, 1) // B-type
-                } else if colorRoll < 0.26 {
-                    baseColor = SIMD4(248.0/255, 248.0/255, 255.0/255, 1) // A-type
-                } else if colorRoll < 0.36 {
-                    baseColor = SIMD4(255.0/255, 252.0/255, 240.0/255, 1) // F-type
-                } else if colorRoll < 0.46 {
-                    baseColor = SIMD4(255.0/255, 244.0/255, 214.0/255, 1) // G-type
-                } else if colorRoll < 0.55 {
-                    baseColor = SIMD4(155.0/255, 176.0/255, 255.0/255, 1) // O-type
-                } else if colorRoll < 0.63 {
-                    baseColor = SIMD4(255.0/255, 220.0/255, 180.0/255, 1) // K-type
-                } else if colorRoll < 0.72 {
-                    baseColor = SIMD4(215.0/255, 200.0/255, 255.0/255, 1) // Violet
-                } else if colorRoll < 0.80 {
-                    baseColor = SIMD4(200.0/255, 235.0/255, 255.0/255, 1) // Electric blue
-                } else if colorRoll < 0.88 {
-                    baseColor = SIMD4(255.0/255, 230.0/255, 200.0/255, 1) // Warm gold
-                } else if colorRoll < 0.94 {
-                    baseColor = SIMD4(230.0/255, 220.0/255, 255.0/255, 1) // Nebula violet
+                // Mid-field — mixed populations, arm stars get more blue
+                let isYoung = isArm && rand(20) < 0.40
+                if isYoung {
+                    // Young blue stars in spiral arms
+                    if colorRoll < 0.20 {
+                        baseColor = SIMD4(155.0/255, 176.0/255, 255.0/255, 1) // O-type
+                    } else if colorRoll < 0.50 {
+                        baseColor = SIMD4(185.0/255, 206.0/255, 255.0/255, 1) // B-type
+                    } else if colorRoll < 0.80 {
+                        baseColor = SIMD4(248.0/255, 248.0/255, 255.0/255, 1) // A-type
+                    } else {
+                        baseColor = SIMD4(255.0/255, 252.0/255, 240.0/255, 1) // F-type
+                    }
                 } else {
-                    baseColor = SIMD4(255.0/255, 190.0/255, 150.0/255, 1) // M-type
+                    if colorRoll < 0.14 {
+                        baseColor = SIMD4(185.0/255, 206.0/255, 255.0/255, 1) // B-type
+                    } else if colorRoll < 0.26 {
+                        baseColor = SIMD4(248.0/255, 248.0/255, 255.0/255, 1) // A-type
+                    } else if colorRoll < 0.36 {
+                        baseColor = SIMD4(255.0/255, 252.0/255, 240.0/255, 1) // F-type
+                    } else if colorRoll < 0.46 {
+                        baseColor = SIMD4(255.0/255, 244.0/255, 214.0/255, 1) // G-type
+                    } else if colorRoll < 0.55 {
+                        baseColor = SIMD4(155.0/255, 176.0/255, 255.0/255, 1) // O-type
+                    } else if colorRoll < 0.63 {
+                        baseColor = SIMD4(255.0/255, 220.0/255, 180.0/255, 1) // K-type
+                    } else if colorRoll < 0.72 {
+                        baseColor = SIMD4(215.0/255, 200.0/255, 255.0/255, 1) // Violet
+                    } else if colorRoll < 0.80 {
+                        baseColor = SIMD4(200.0/255, 235.0/255, 255.0/255, 1) // Electric blue
+                    } else if colorRoll < 0.88 {
+                        baseColor = SIMD4(255.0/255, 230.0/255, 200.0/255, 1) // Warm gold
+                    } else if colorRoll < 0.94 {
+                        baseColor = SIMD4(230.0/255, 220.0/255, 255.0/255, 1) // Nebula violet
+                    } else {
+                        baseColor = SIMD4(255.0/255, 190.0/255, 150.0/255, 1) // M-type
+                    }
                 }
             } else {
                 // Foreground — vivid, full spectral range
                 if colorRoll < 0.12 {
-                    baseColor = SIMD4(170.0/255, 191.0/255, 255.0/255, 1) // Bright O
+                    baseColor = SIMD4(170.0/255, 191.0/255, 255.0/255, 1)
                 } else if colorRoll < 0.22 {
-                    baseColor = SIMD4(200.0/255, 220.0/255, 255.0/255, 1) // B bright
+                    baseColor = SIMD4(200.0/255, 220.0/255, 255.0/255, 1)
                 } else if colorRoll < 0.32 {
-                    baseColor = SIMD4(255.0/255, 255.0/255, 255.0/255, 1) // Pure white
+                    baseColor = SIMD4(255.0/255, 255.0/255, 255.0/255, 1)
                 } else if colorRoll < 0.40 {
-                    baseColor = SIMD4(255.0/255, 250.0/255, 235.0/255, 1) // F warm
+                    baseColor = SIMD4(255.0/255, 250.0/255, 235.0/255, 1)
                 } else if colorRoll < 0.48 {
-                    baseColor = SIMD4(255.0/255, 235.0/255, 185.0/255, 1) // G vivid
+                    baseColor = SIMD4(255.0/255, 235.0/255, 185.0/255, 1)
                 } else if colorRoll < 0.56 {
-                    baseColor = SIMD4(255.0/255, 200.0/255, 145.0/255, 1) // K deep
+                    baseColor = SIMD4(255.0/255, 200.0/255, 145.0/255, 1)
                 } else if colorRoll < 0.64 {
-                    baseColor = SIMD4(255.0/255, 170.0/255, 130.0/255, 1) // M red
+                    baseColor = SIMD4(255.0/255, 170.0/255, 130.0/255, 1)
                 } else if colorRoll < 0.72 {
-                    baseColor = SIMD4(210.0/255, 190.0/255, 255.0/255, 1) // Bright violet
+                    baseColor = SIMD4(210.0/255, 190.0/255, 255.0/255, 1)
                 } else if colorRoll < 0.80 {
-                    baseColor = SIMD4(180.0/255, 230.0/255, 255.0/255, 1) // Cyan blue
+                    baseColor = SIMD4(180.0/255, 230.0/255, 255.0/255, 1)
                 } else if colorRoll < 0.88 {
-                    baseColor = SIMD4(255.0/255, 220.0/255, 240.0/255, 1) // Pink nebula
+                    baseColor = SIMD4(255.0/255, 220.0/255, 240.0/255, 1)
                 } else if colorRoll < 0.94 {
-                    baseColor = SIMD4(240.0/255, 250.0/255, 255.0/255, 1) // Electric white
+                    baseColor = SIMD4(240.0/255, 250.0/255, 255.0/255, 1)
                 } else {
-                    baseColor = SIMD4(255.0/255, 195.0/255, 210.0/255, 1) // Rose accent
+                    baseColor = SIMD4(255.0/255, 195.0/255, 210.0/255, 1)
                 }
             }
             
@@ -826,7 +852,7 @@ enum StarFieldGenerator {
                 baseSize = (0.5 + pow(rand(9), 1.8) * 1.8) * (1.4 - z * 0.3) * 1.6
             }
             
-            // ── Star type — hero and mystical distribution ──
+            // ── Star type — hero and mystical ──
             let isHero = isArm && z < 0.4 && rand(10) > 0.94
             let mysticalChance: Float = z < 0.20 ? 0.10 : (z < 0.50 ? 0.30 : 0.45)
             let isMystical = !isHero && rand(18) < mysticalChance
@@ -861,17 +887,17 @@ enum StarFieldGenerator {
                 driftAngle: rand(12) * .pi * 2,
                 driftSpeed: (0.005 + rand(13) * 0.02) * (1.0 - z * 0.5) * 50.0,
                 motionParams: SIMD2(rand(14) * .pi * 2, 0.2 + rand(15) * 0.4),
-                rotationFactor: 0,
+                rotationFactor: rotFactor,
                 zoneTintStrength: tintStrength,
                 zoneTintColor: tintColor
             ))
         }
         
         // ============================================================
-        // Deep Parallax Stars — 100 faint spectral dust
+        // Deep Parallax Stars — 200 faint spectral dust
         // ============================================================
-        for i in 0..<100 {
-            let seed = 800 + i * 3
+        for i in 0..<200 {
+            let seed = 1400 + i * 3
             let rx = sRand(seed, 1)
             let ry = sRand(seed, 2)
             let size: Float = 0.3 + sRand(seed, 3) * 1.0
@@ -901,7 +927,7 @@ enum StarFieldGenerator {
                 driftAngle: sRand(seed, 8) * .pi * 2,
                 driftSpeed: 0.03 + sRand(seed, 9) * 0.08,
                 motionParams: SIMD2(0, 0.1 + sRand(seed, 10) * 0.15),
-                rotationFactor: 0,
+                rotationFactor: 0.15,
                 zoneTintStrength: 0,
                 zoneTintColor: SIMD4(0, 0, 0, 0)
             ))

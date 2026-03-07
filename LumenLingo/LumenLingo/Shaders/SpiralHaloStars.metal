@@ -5,15 +5,17 @@ using namespace metal;
 // ============================================================
 // Spiral Halo Stars — orbital galactic stellar field
 //
-// 5 distinct motion classes based on depth:
+// TRUE GALACTIC ROTATION via rotationFactor:
+//   Each star orbits the galaxy centre (0.5, 0.5) at a speed
+//   proportional to rotationFactor (Keplerian: inner=faster).
+//   This creates a visible winding spiral.
+//
+// 5 additional local-motion classes based on depth:
 //   Far bg      (z < 0.15): glacial drift
-//   Deep mid    (0.15–0.35): slow orbital wander around center
+//   Deep mid    (0.15–0.35): slow orbital wander
 //   Mid-field   (0.35–0.55): tangential spiral flow + waves
 //   Near-mid    (0.55–0.75): elliptical orbital + tangential drift
 //   Foreground  (z > 0.75): fast orbital + parallax + jitter
-//
-// NO uniform breathing, NO differential rotation.
-// Smooth, orbital, galactic.
 // ============================================================
 
 vertex StarVertexOut spiralHaloStarVertex(
@@ -29,6 +31,23 @@ vertex StarVertexOut spiralHaloStarVertex(
 
     float twinkle = computeTwinkle(t, star.twinkleSpeed, star.twinkleAmp, phase);
     float sizePulse = computeSizePulse(t, star.twinkleSpeed, phase);
+
+    // ═══════════════════════════════════════════════════════════
+    // DIFFERENTIAL GALACTIC ROTATION
+    // Rotate star position around centre (0.5, 0.5).
+    // rotationFactor encodes Keplerian speed per star:
+    //   core ~1.5, inner arm ~1.0, outer arm ~0.5, halo ~0.3, field ~0.2
+    // Base rate -0.015 = clockwise ~0.86°/s — matches React.
+    // ═══════════════════════════════════════════════════════════
+    float2 starPos = star.position;
+    {
+        float galacticAngle = t * -0.015 * star.rotationFactor;
+        float2 centered = starPos - float2(0.5, 0.5);
+        float cosA = cos(galacticAngle);
+        float sinA = sin(galacticAngle);
+        starPos = float2(0.5 + centered.x * cosA - centered.y * sinA,
+                         0.5 + centered.x * sinA + centered.y * cosA);
+    }
 
     float depthFactor = 0.08 + z * 0.92;
     float2 camMotion = uniforms.cameraDrift * depthFactor;
@@ -114,8 +133,8 @@ vertex StarVertexOut spiralHaloStarVertex(
         motionY += cos(t * 1.8 + phase * 2.9) * jitterAmt;
     }
 
-    // Compose final screen position — NO breathing scale
-    float2 screenPos = star.position * uniforms.resolution;
+    // Compose final screen position — using rotated position
+    float2 screenPos = starPos * uniforms.resolution;
     screenPos += camMotion;
     screenPos.x += motionX;
     screenPos.y += motionY;

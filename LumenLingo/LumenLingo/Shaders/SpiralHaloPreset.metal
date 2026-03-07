@@ -262,18 +262,22 @@ fragment float4 spiralHaloBgFragment(
     }
 
     // ================================================================
-    // 4.  WARM CENTRAL CORE — multi-layer glow
+    // 4.  CENTRAL CORE — compact warm-gold glow (no white blob)
     // ================================================================
     {
         float emVar = 0.88 + 0.12 * sin(t * 0.14);
-        float hotGlow = gaussian2D(uv, float2(0.5, 0.5), float2(0.025, 0.025));
-        col = additiveBlend(col, rgb(255, 250, 235), hotGlow * 0.10 * emVar * intensity);
 
-        float goldGlow = gaussian2D(uv, float2(0.5, 0.5), float2(0.05, 0.05));
-        col = screenBlend(col, rgb(255, 235, 200), goldGlow * 0.08 * intensity);
+        // Tight hot point — warm gold, NOT white
+        float hotGlow = gaussian2D(uv, float2(0.5, 0.5), float2(0.012, 0.012));
+        col = additiveBlend(col, rgb(255, 235, 190), hotGlow * 0.06 * emVar * intensity);
 
-        float hazeGlow = gaussian2D(uv, float2(0.5, 0.5), float2(0.09, 0.09));
-        col = screenBlend(col, rgb(255, 240, 215), hazeGlow * 0.05 * intensity);
+        // Warm secondary — small and golden
+        float goldGlow = gaussian2D(uv, float2(0.5, 0.5), float2(0.028, 0.028));
+        col = screenBlend(col, rgb(255, 225, 170), goldGlow * 0.04 * intensity);
+
+        // Broad subtle amber haze — barely visible
+        float hazeGlow = gaussian2D(uv, float2(0.5, 0.5), float2(0.055, 0.055));
+        col = screenBlend(col, rgb(240, 220, 180), hazeGlow * 0.025 * intensity);
     }
 
     // ================================================================
