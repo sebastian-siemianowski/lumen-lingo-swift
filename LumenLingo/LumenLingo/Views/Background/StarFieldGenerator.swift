@@ -60,20 +60,30 @@ enum StarFieldGenerator {
     
     static func lagoonStars() -> [StarData] {
         var stars: [StarData] = []
-        let starCount = 700
+        
+        // ============================================================
+        // MARK: Main stellar population — 800 stars with rich diversity
+        //
+        // 5 depth zones for visual variety:
+        //   Far bg    (z < 0.15): tiny pinpricks, warm dust colours
+        //   Deep mid  (0.15–0.35): small, cool-shifted, lazy figure-8
+        //   Mid-field (0.35–0.55): medium mix, nebula current flow
+        //   Near-mid  (0.55–0.75): brighter, diverse, orbital drift
+        //   Foreground(z > 0.75): large hero-eligible, vivid colours
+        // ============================================================
+        let starCount = 800
         
         for i in 0..<starCount {
-            // Per-star seed matching React: seededRandom(i * 137, n)
             func rand(_ n: Int) -> Float { sRand(i * 137, n) }
             
-            // Z-depth: pow(rand, 0.6) biases towards foreground
-            let z = pow(rand(1), 0.6)
+            // Z-depth: pow(rand, 0.55) — slightly more foreground bias
+            let z = pow(rand(1), 0.55)
             
             // Position
             var rx = rand(2)
             var ry = rand(3)
             
-            // Clustering: ~45% in diagonal band (React: rand(4) > 0.55)
+            // Clustering: ~45% in diagonal band
             let isCluster = rand(4) > 0.55
             if isCluster {
                 let theta = rand(5) * Float.pi * 2
@@ -84,49 +94,107 @@ enum StarFieldGenerator {
                 ry = cy + sin(theta) * radius * 1.6
             }
             
-            // 8 JWST stellar color types (exact React distribution)
+            // ── Depth-dependent colour selection ──
+            // Far stars: warmer/dimmer. Near stars: wider palette, more vivid.
             let colorRoll = rand(7)
             var baseColor: SIMD4<Float>
-            if colorRoll < 0.25 {
-                baseColor = SIMD4(255.0/255, 220.0/255, 180.0/255, 1) // GOLDEN_STAR
-            } else if colorRoll < 0.45 {
-                baseColor = SIMD4(255.0/255, 180.0/255, 120.0/255, 1) // AMBER_GLOW
-            } else if colorRoll < 0.60 {
-                baseColor = SIMD4(255.0/255, 248.0/255, 240.0/255, 1) // WARM_WHITE
-            } else if colorRoll < 0.72 {
-                baseColor = SIMD4(255.0/255, 140.0/255, 80.0/255, 1)  // DEEP_ORANGE
-            } else if colorRoll < 0.82 {
-                baseColor = SIMD4(200.0/255, 230.0/255, 255.0/255, 1) // HOT_BLUE
-            } else if colorRoll < 0.90 {
-                baseColor = SIMD4(180.0/255, 230.0/255, 255.0/255, 1) // CYAN_BLUE
-            } else if colorRoll < 0.96 {
-                baseColor = SIMD4(255.0/255, 100.0/255, 100.0/255, 1) // RUBY_RED
+            
+            if z < 0.20 {
+                // Far background — warm dust tones only
+                if colorRoll < 0.40 {
+                    baseColor = SIMD4(255.0/255, 200.0/255, 150.0/255, 1) // Warm gold
+                } else if colorRoll < 0.70 {
+                    baseColor = SIMD4(240.0/255, 170.0/255, 110.0/255, 1) // Soft amber
+                } else if colorRoll < 0.90 {
+                    baseColor = SIMD4(220.0/255, 150.0/255, 90.0/255, 1)  // Dusty orange
+                } else {
+                    baseColor = SIMD4(200.0/255, 140.0/255, 100.0/255, 1) // Faint rust
+                }
+            } else if z < 0.50 {
+                // Mid-field — standard JWST 8-colour palette
+                if colorRoll < 0.22 {
+                    baseColor = SIMD4(255.0/255, 220.0/255, 180.0/255, 1) // GOLDEN_STAR
+                } else if colorRoll < 0.40 {
+                    baseColor = SIMD4(255.0/255, 180.0/255, 120.0/255, 1) // AMBER_GLOW
+                } else if colorRoll < 0.55 {
+                    baseColor = SIMD4(255.0/255, 248.0/255, 240.0/255, 1) // WARM_WHITE
+                } else if colorRoll < 0.67 {
+                    baseColor = SIMD4(255.0/255, 140.0/255, 80.0/255, 1)  // DEEP_ORANGE
+                } else if colorRoll < 0.78 {
+                    baseColor = SIMD4(200.0/255, 230.0/255, 255.0/255, 1) // HOT_BLUE
+                } else if colorRoll < 0.88 {
+                    baseColor = SIMD4(180.0/255, 230.0/255, 255.0/255, 1) // CYAN_BLUE
+                } else if colorRoll < 0.95 {
+                    baseColor = SIMD4(255.0/255, 100.0/255, 100.0/255, 1) // RUBY_RED
+                } else {
+                    baseColor = SIMD4(240.0/255, 250.0/255, 255.0/255, 1) // ELECTRIC_WHITE
+                }
             } else {
-                baseColor = SIMD4(240.0/255, 250.0/255, 255.0/255, 1) // ELECTRIC_WHITE
+                // Foreground — vivid, more blues & electric whites
+                if colorRoll < 0.18 {
+                    baseColor = SIMD4(255.0/255, 225.0/255, 190.0/255, 1) // Bright gold
+                } else if colorRoll < 0.32 {
+                    baseColor = SIMD4(255.0/255, 185.0/255, 130.0/255, 1) // Amber
+                } else if colorRoll < 0.44 {
+                    baseColor = SIMD4(255.0/255, 252.0/255, 248.0/255, 1) // Pure white
+                } else if colorRoll < 0.54 {
+                    baseColor = SIMD4(255.0/255, 150.0/255, 90.0/255, 1)  // Deep orange
+                } else if colorRoll < 0.67 {
+                    baseColor = SIMD4(190.0/255, 225.0/255, 255.0/255, 1) // Hot blue
+                } else if colorRoll < 0.78 {
+                    baseColor = SIMD4(170.0/255, 220.0/255, 255.0/255, 1) // Cyan blue
+                } else if colorRoll < 0.86 {
+                    baseColor = SIMD4(255.0/255, 120.0/255, 120.0/255, 1) // Ruby red
+                } else if colorRoll < 0.93 {
+                    baseColor = SIMD4(235.0/255, 248.0/255, 255.0/255, 1) // Electric white
+                } else {
+                    baseColor = SIMD4(220.0/255, 200.0/255, 255.0/255, 1) // Lavender protostar
+                }
             }
             
-            // Size — React mobile formula
-            let baseSize: Float = (0.4 + pow(rand(9), 2.2) * 1.4) * (1.3 - z * 0.5) * 1.5
+            // ── Depth-dependent size ──
+            // Far stars: tiny. Near stars: much wider range.
+            let baseSize: Float
+            if z < 0.20 {
+                // Far: small, uniform
+                baseSize = (0.3 + rand(9) * 0.5) * 1.2
+            } else if z < 0.50 {
+                // Mid: moderate range
+                baseSize = (0.4 + pow(rand(9), 2.0) * 1.2) * (1.2 - z * 0.4) * 1.4
+            } else {
+                // Near: wide range, some very bright
+                baseSize = (0.5 + pow(rand(9), 1.8) * 1.8) * (1.4 - z * 0.3) * 1.6
+            }
             
-            // Hero & mystical (React logic)
+            // ── Star type — hero and mystical distribution ──
+            // Hero: only foreground clustered stars
+            // Mystical: depth-dependent probability (more in mid/near)
             let isHero = isCluster && z < 0.4 && rand(10) > 0.94
-            let isMystical = !isHero && rand(18) < 0.35
+            let mysticalChance: Float = z < 0.20 ? 0.10 : (z < 0.50 ? 0.30 : 0.45)
+            let isMystical = !isHero && rand(18) < mysticalChance
             
-            // Per-star brightness from React: (0.65 + rand * 0.55) * (1 - zDepth * 0.35)
-            // Encoded in color.a — vertex shader multiplies finalAlpha by this
-            let baseAlpha: Float = (0.65 + rand(11) * 0.55) * (1.0 - z * 0.35)
+            // Brightness: depth-scaled + individual variation
+            let baseAlpha: Float = (0.60 + rand(11) * 0.55) * (1.0 - z * 0.35)
             baseColor.w = min(baseAlpha, 1.0)
             
             let starType: Int32 = isHero ? 1 : (isMystical ? 2 : 0)
+            
+            // ── Depth-dependent twinkle speed ──
+            // Far stars: very slow twinkle. Near: faster shimmer.
+            let twinkleSpeed: Float = z < 0.20
+                ? 0.10 + rand(16) * 0.20  // far: slow
+                : (z < 0.50
+                   ? 0.20 + rand(16) * 0.35 // mid: moderate
+                   : 0.30 + rand(16) * 0.50) // near: varied
             
             stars.append(StarData(
                 position: SIMD2(rx, ry),
                 baseSize: baseSize * (isHero ? 3.5 : 1.0),
                 zDepth: z,
                 color: baseColor,
-                twinkleSpeed: 0.25 + rand(16) * 0.5,
+                twinkleSpeed: twinkleSpeed,
                 twinklePhase: rand(17) * .pi * 2,
-                twinkleAmp: 0.15,  // React range 0.85±0.15 – gentle shimmer
+                twinkleAmp: 0.15,  // Gentle shimmer
                 starType: starType,
                 driftAngle: rand(12) * .pi * 2,
                 driftSpeed: (0.005 + rand(13) * 0.02) * (1.0 - z * 0.5) * 50.0,
@@ -137,30 +205,41 @@ enum StarFieldGenerator {
             ))
         }
         
-        // 80 Deep Parallax Stars — warm dusty background (React DeepParallaxCanvas)
-        for i in 0..<80 {
+        // ============================================================
+        // MARK: Deep Parallax Stars — 100 warm dusty background points
+        // Very far, very small, slow drift. Creates depth backdrop.
+        // ============================================================
+        for i in 0..<100 {
             let seed = 500 + i * 3
             let rx = sRand(seed, 1)
             let ry = sRand(seed, 2)
-            let size: Float = 0.5 + sRand(seed, 3) * 1.5
-            let opacity: Float = 0.1 + sRand(seed, 4) * 0.3
-            let isGolden = sRand(seed, 5) > 0.5
-            // Deep parallax stars use opacity as baseAlpha in color.a
-            let color: SIMD4<Float> = isGolden
-                ? SIMD4(255.0/255, 180.0/255, 80.0/255, opacity)
-                : SIMD4(180.0/255, 60.0/255, 40.0/255, opacity)
+            let size: Float = 0.3 + sRand(seed, 3) * 1.0
+            let opacity: Float = 0.08 + sRand(seed, 4) * 0.22
+            
+            // Wider colour variety for background dust
+            let dustRoll = sRand(seed, 5)
+            let color: SIMD4<Float>
+            if dustRoll < 0.35 {
+                color = SIMD4(255.0/255, 190.0/255, 100.0/255, opacity) // Gold
+            } else if dustRoll < 0.60 {
+                color = SIMD4(200.0/255, 120.0/255, 70.0/255, opacity)  // Amber
+            } else if dustRoll < 0.80 {
+                color = SIMD4(180.0/255, 80.0/255, 50.0/255, opacity)   // Deep red
+            } else {
+                color = SIMD4(160.0/255, 170.0/255, 200.0/255, opacity) // Cool blue dust
+            }
             
             stars.append(StarData(
                 position: SIMD2(rx, ry),
                 baseSize: size,
-                zDepth: 0.9 + sRand(seed, 6) * 0.1,
+                zDepth: 0.90 + sRand(seed, 6) * 0.10, // very far back
                 color: color,
-                twinkleSpeed: 0.1 + sRand(seed, 6) * 0.2,
+                twinkleSpeed: 0.08 + sRand(seed, 6) * 0.15,
                 twinklePhase: sRand(seed, 7) * .pi * 2,
-                twinkleAmp: 0.12,  // very subtle for background dust
+                twinkleAmp: 0.10,
                 starType: 0,
-                driftAngle: sRand(seed, 8) * .pi * 2, // random direction
-                driftSpeed: 0.05 + sRand(seed, 9) * 0.1, // very slow
+                driftAngle: sRand(seed, 8) * .pi * 2,
+                driftSpeed: 0.03 + sRand(seed, 9) * 0.08,
                 motionParams: SIMD2(0, 0.1 + sRand(seed, 10) * 0.15),
                 rotationFactor: 0,
                 zoneTintStrength: 0,
@@ -178,153 +257,198 @@ enum StarFieldGenerator {
     
     static func celestialLagoonStars() -> [StarData] {
         var stars: [StarData] = []
-        let seed = 99
         
-        // Layer C — 600 far background stars (icy/aquamarine palette)
-        // Enhanced: wider color variety, some mystical types
-        for i in 0..<600 {
-            let colorRoll = sRand(seed, i * 11 + 7)
-            var baseColor: SIMD4<Float>
-            if colorRoll > 0.80 {
-                baseColor = SIMD4(210.0/255, 240.0/255, 250.0/255, 1) // Pale icy blue
-            } else if colorRoll > 0.60 {
-                baseColor = SIMD4(200.0/255, 245.0/255, 245.0/255, 1) // Faint turquoise
-            } else if colorRoll > 0.40 {
-                baseColor = SIMD4(220.0/255, 245.0/255, 255.0/255, 1) // Soft aquamarine
-            } else if colorRoll > 0.25 {
-                baseColor = SIMD4(190.0/255, 255.0/255, 240.0/255, 1) // Seafoam
-            } else if colorRoll > 0.12 {
-                baseColor = SIMD4(180.0/255, 235.0/255, 255.0/255, 1) // Azure
-            } else {
-                baseColor = SIMD4(235.0/255, 245.0/255, 250.0/255, 1) // Nearly white
+        // ============================================================
+        // MARK: Main stellar population — 800 stars with rich diversity
+        //
+        // 5 depth zones (matching Lagoon's architecture):
+        //   Far bg    (z < 0.15): tiny pinpricks, faint cool tones
+        //   Deep mid  (0.15–0.35): small, Lissajous figure-8
+        //   Mid-field (0.35–0.55): medium, current flow + wave
+        //   Near-mid  (0.55–0.75): brighter, diverse, orbital drift
+        //   Foreground(z > 0.75): large hero-eligible, vivid colours
+        //
+        // Colours: aqua/cyan/teal core palette + pink, lavender,
+        // peach, mint, violet, electric cyan accents for diversity.
+        // ============================================================
+        let starCount = 800
+        
+        for i in 0..<starCount {
+            func rand(_ n: Int) -> Float { sRand(i * 137, n) }
+            
+            // Z-depth: pow(rand, 0.55) — slightly more foreground bias
+            let z = pow(rand(1), 0.55)
+            
+            // Position
+            var rx = rand(2)
+            var ry = rand(3)
+            
+            // Clustering: ~40% concentrated near nebula core for natural groupings
+            let isCluster = rand(4) > 0.60
+            if isCluster {
+                let theta = rand(5) * Float.pi * 2
+                let radius = rand(6) * 0.38
+                let cx: Float = 0.48 + rand(20) * 0.12
+                let cy: Float = 0.46 + rand(21) * 0.10
+                rx = cx + cos(theta) * radius
+                ry = cy + sin(theta) * radius * 1.5
             }
             
-            let size: Float = 0.2 + sRand(seed, i * 7 + 2) * 0.4
-            let baseAlpha: Float = 0.12 + sRand(seed, i * 7 + 4) * 0.28
-            baseColor.w = baseAlpha
+            // ── Depth-dependent colour selection ──
+            let colorRoll = rand(7)
+            var baseColor: SIMD4<Float>
             
-            // 8% mystical stars in background — color-shifting
-            let isMystical = sRand(seed, i * 23 + 5) > 0.92
+            if z < 0.20 {
+                // Far background — faint cool dust tones
+                if colorRoll < 0.25 {
+                    baseColor = SIMD4(210.0/255, 240.0/255, 250.0/255, 1) // Pale icy blue
+                } else if colorRoll < 0.45 {
+                    baseColor = SIMD4(200.0/255, 245.0/255, 245.0/255, 1) // Faint turquoise
+                } else if colorRoll < 0.60 {
+                    baseColor = SIMD4(235.0/255, 245.0/255, 250.0/255, 1) // Nearly white
+                } else if colorRoll < 0.75 {
+                    baseColor = SIMD4(225.0/255, 205.0/255, 255.0/255, 1) // Lavender dust
+                } else if colorRoll < 0.88 {
+                    baseColor = SIMD4(180.0/255, 235.0/255, 255.0/255, 1) // Azure
+                } else {
+                    baseColor = SIMD4(190.0/255, 255.0/255, 240.0/255, 1) // Seafoam
+                }
+            } else if z < 0.50 {
+                // Mid-field — wider palette with accent colours
+                if colorRoll < 0.15 {
+                    baseColor = SIMD4(185.0/255, 235.0/255, 245.0/255, 1) // Soft turquoise
+                } else if colorRoll < 0.28 {
+                    baseColor = SIMD4(170.0/255, 245.0/255, 255.0/255, 1) // Cyan supergiant
+                } else if colorRoll < 0.38 {
+                    baseColor = SIMD4(200.0/255, 255.0/255, 225.0/255, 1) // Mint green
+                } else if colorRoll < 0.48 {
+                    baseColor = SIMD4(160.0/255, 255.0/255, 255.0/255, 1) // Electric cyan
+                } else if colorRoll < 0.56 {
+                    baseColor = SIMD4(255.0/255, 195.0/255, 225.0/255, 1) // Pink nebula
+                } else if colorRoll < 0.64 {
+                    baseColor = SIMD4(225.0/255, 205.0/255, 255.0/255, 1) // Lavender
+                } else if colorRoll < 0.72 {
+                    baseColor = SIMD4(255.0/255, 225.0/255, 200.0/255, 1) // Warm peach
+                } else if colorRoll < 0.80 {
+                    baseColor = SIMD4(215.0/255, 195.0/255, 255.0/255, 1) // Violet tint
+                } else if colorRoll < 0.88 {
+                    baseColor = SIMD4(255.0/255, 248.0/255, 235.0/255, 1) // Solar yellow
+                } else if colorRoll < 0.94 {
+                    baseColor = SIMD4(240.0/255, 250.0/255, 255.0/255, 1) // A-type white
+                } else {
+                    baseColor = SIMD4(185.0/255, 255.0/255, 250.0/255, 1) // Aqua giant
+                }
+            } else {
+                // Foreground — vivid, full palette, more exotic
+                if colorRoll < 0.12 {
+                    baseColor = SIMD4(170.0/255, 230.0/255, 245.0/255, 1) // Bright turquoise
+                } else if colorRoll < 0.22 {
+                    baseColor = SIMD4(185.0/255, 255.0/255, 250.0/255, 1) // Aqua giant
+                } else if colorRoll < 0.30 {
+                    baseColor = SIMD4(175.0/255, 255.0/255, 245.0/255, 1) // Turquoise
+                } else if colorRoll < 0.38 {
+                    baseColor = SIMD4(160.0/255, 255.0/255, 255.0/255, 1) // Electric cyan
+                } else if colorRoll < 0.46 {
+                    baseColor = SIMD4(255.0/255, 195.0/255, 225.0/255, 1) // Pink nebula
+                } else if colorRoll < 0.54 {
+                    baseColor = SIMD4(225.0/255, 205.0/255, 255.0/255, 1) // Lavender
+                } else if colorRoll < 0.62 {
+                    baseColor = SIMD4(255.0/255, 225.0/255, 200.0/255, 1) // Peach
+                } else if colorRoll < 0.70 {
+                    baseColor = SIMD4(240.0/255, 250.0/255, 255.0/255, 1) // Pure white
+                } else if colorRoll < 0.78 {
+                    baseColor = SIMD4(195.0/255, 235.0/255, 255.0/255, 1) // O-type blue
+                } else if colorRoll < 0.86 {
+                    baseColor = SIMD4(180.0/255, 255.0/255, 235.0/255, 1) // Teal bright
+                } else if colorRoll < 0.93 {
+                    baseColor = SIMD4(215.0/255, 195.0/255, 255.0/255, 1) // Violet tint
+                } else {
+                    baseColor = SIMD4(255.0/255, 248.0/255, 235.0/255, 1) // Warm yellow
+                }
+            }
+            
+            // ── Depth-dependent size ──
+            let baseSize: Float
+            if z < 0.20 {
+                baseSize = (0.3 + rand(9) * 0.5) * 1.2
+            } else if z < 0.50 {
+                baseSize = (0.4 + pow(rand(9), 2.0) * 1.2) * (1.2 - z * 0.4) * 1.4
+            } else {
+                baseSize = (0.5 + pow(rand(9), 1.8) * 1.8) * (1.4 - z * 0.3) * 1.6
+            }
+            
+            // ── Star type — hero and mystical distribution ──
+            let isHero = isCluster && z < 0.4 && rand(10) > 0.94
+            let mysticalChance: Float = z < 0.20 ? 0.10 : (z < 0.50 ? 0.30 : 0.45)
+            let isMystical = !isHero && rand(18) < mysticalChance
+            
+            // Brightness: depth-scaled + individual variation
+            let baseAlpha: Float = (0.60 + rand(11) * 0.55) * (1.0 - z * 0.35)
+            baseColor.w = min(baseAlpha, 1.0)
+            
+            let starType: Int32 = isHero ? 1 : (isMystical ? 2 : 0)
+            
+            // ── Depth-dependent twinkle speed ──
+            let twinkleSpeed: Float = z < 0.20
+                ? 0.10 + rand(16) * 0.20
+                : (z < 0.50
+                   ? 0.20 + rand(16) * 0.35
+                   : 0.30 + rand(16) * 0.50)
             
             stars.append(StarData(
-                position: SIMD2(sRand(seed, i * 7), sRand(seed, i * 7 + 1)),
-                baseSize: size,
-                zDepth: 0.05 + sRand(seed, i * 7 + 3) * 0.25,
+                position: SIMD2(rx, ry),
+                baseSize: baseSize * (isHero ? 3.5 : 1.0),
+                zDepth: z,
                 color: baseColor,
-                twinkleSpeed: 0.15 + sRand(seed, i * 13) * 0.4,
-                twinklePhase: sRand(seed, i * 11) * .pi * 2,
-                twinkleAmp: 0.40,
-                starType: isMystical ? 2 : 0,
-                driftAngle: sRand(seed, i * 19) * .pi * 2,
-                driftSpeed: 0.08,
-                motionParams: SIMD2(1.0, sRand(seed, i * 17 + 3) * 0.5),
+                twinkleSpeed: twinkleSpeed,
+                twinklePhase: rand(17) * .pi * 2,
+                twinkleAmp: 0.15,  // Gentle shimmer
+                starType: starType,
+                driftAngle: rand(12) * .pi * 2,
+                driftSpeed: (0.005 + rand(13) * 0.02) * (1.0 - z * 0.5) * 50.0,
+                motionParams: SIMD2(rand(14) * .pi * 2, 0.2 + rand(15) * 0.4),
                 rotationFactor: 0,
                 zoneTintStrength: 0,
                 zoneTintColor: SIMD4(0, 0, 0, 0)
             ))
         }
         
-        // Layer B — 600 mid stars (cyan/turquoise palette)
-        // Enhanced: more color variety, zone tinting near nebula core
-        for i in 0..<600 {
-            let idx = 600 + i
-            let colorRoll = sRand(seed, idx * 11 + 7)
-            var baseColor: SIMD4<Float>
-            if colorRoll > 0.78 {
-                baseColor = SIMD4(185.0/255, 235.0/255, 245.0/255, 1) // Soft turquoise
-            } else if colorRoll > 0.58 {
-                baseColor = SIMD4(195.0/255, 240.0/255, 250.0/255, 1) // Pale cyan
-            } else if colorRoll > 0.40 {
-                baseColor = SIMD4(210.0/255, 245.0/255, 255.0/255, 1) // Ice blue
-            } else if colorRoll > 0.25 {
-                baseColor = SIMD4(160.0/255, 255.0/255, 255.0/255, 1) // Electric cyan
-            } else if colorRoll > 0.12 {
-                baseColor = SIMD4(200.0/255, 255.0/255, 225.0/255, 1) // Mint green
+        // ============================================================
+        // MARK: Deep Parallax Stars — 100 cool-toned background points
+        // Very far, very small, slow drift. Creates depth backdrop.
+        // ============================================================
+        for i in 0..<100 {
+            let seed = 600 + i * 3
+            let rx = sRand(seed, 1)
+            let ry = sRand(seed, 2)
+            let size: Float = 0.3 + sRand(seed, 3) * 1.0
+            let opacity: Float = 0.08 + sRand(seed, 4) * 0.22
+            
+            // Cool dust colour variety for underwater feel
+            let dustRoll = sRand(seed, 5)
+            let color: SIMD4<Float>
+            if dustRoll < 0.30 {
+                color = SIMD4(180.0/255, 220.0/255, 240.0/255, opacity) // Steel blue
+            } else if dustRoll < 0.55 {
+                color = SIMD4(160.0/255, 200.0/255, 230.0/255, opacity) // Faint teal
+            } else if dustRoll < 0.75 {
+                color = SIMD4(200.0/255, 190.0/255, 230.0/255, opacity) // Lavender dust
             } else {
-                baseColor = SIMD4(225.0/255, 250.0/255, 255.0/255, 1) // Faint white-blue
+                color = SIMD4(190.0/255, 235.0/255, 225.0/255, opacity) // Cool mint dust
             }
             
-            let size: Float = 0.35 + sRand(seed, idx * 7 + 2) * 0.70
-            let baseAlpha: Float = 0.28 + sRand(seed, idx * 7 + 4) * 0.45
-            baseColor.w = baseAlpha
-            
-            // 12% mystical in mid-layer
-            let isMystical = sRand(seed, idx * 23 + 5) > 0.88
-            
-            // Zone tinting — stars near nebula centre pick up aqua tint
-            let px = sRand(seed, idx * 7)
-            let py = sRand(seed, idx * 7 + 1)
-            let distToCore = sqrt((px - 0.45) * (px - 0.45) + (py - 0.48) * (py - 0.48))
-            let zoneTint: Float = distToCore < 0.3 ? (0.3 - distToCore) * 0.4 : 0
-            
             stars.append(StarData(
-                position: SIMD2(px, py),
+                position: SIMD2(rx, ry),
                 baseSize: size,
-                zDepth: 0.3 + sRand(seed, idx * 7 + 3) * 0.3,
-                color: baseColor,
-                twinkleSpeed: 0.25 + sRand(seed, idx * 13) * 0.7,
-                twinklePhase: sRand(seed, idx * 11) * .pi * 2,
-                twinkleAmp: 0.45,
-                starType: isMystical ? 2 : 0,
-                driftAngle: sRand(seed, idx * 19) * .pi * 2,
-                driftSpeed: 0.18,
-                motionParams: SIMD2(0.5, sRand(seed, idx * 17 + 3) * 0.6),
-                rotationFactor: 0,
-                zoneTintStrength: zoneTint,
-                zoneTintColor: SIMD4(120.0/255, 240.0/255, 235.0/255, 1)
-            ))
-        }
-        
-        // Layer A — 130 foreground stars (bright aqua palette, hero + mystical)
-        // Enhanced: anamorphic heroes, more color variety, stronger motion
-        for i in 0..<130 {
-            let idx = 1200 + i
-            let colorRoll = sRand(seed, idx * 11 + 7)
-            var baseColor: SIMD4<Float>
-            if colorRoll > 0.75 {
-                baseColor = SIMD4(170.0/255, 230.0/255, 245.0/255, 1) // Bright turquoise
-            } else if colorRoll > 0.55 {
-                baseColor = SIMD4(185.0/255, 240.0/255, 250.0/255, 1) // Aqua
-            } else if colorRoll > 0.35 {
-                baseColor = SIMD4(200.0/255, 245.0/255, 255.0/255, 1) // Cyan-white
-            } else if colorRoll > 0.18 {
-                baseColor = SIMD4(175.0/255, 255.0/255, 245.0/255, 1) // Turquoise bright
-            } else if colorRoll > 0.08 {
-                baseColor = SIMD4(185.0/255, 255.0/255, 250.0/255, 1) // Aqua giant
-            } else {
-                baseColor = SIMD4(215.0/255, 250.0/255, 255.0/255, 1) // Bright ice
-            }
-            
-            let size: Float = 0.7 + sRand(seed, idx * 7 + 2) * 1.2
-            let baseAlpha: Float = 0.55 + sRand(seed, idx * 7 + 3) * 0.4
-            baseColor.w = baseAlpha
-            
-            // Hero stars: JWST diffraction for brightest, anamorphic for very large
-            let isVeryBright = baseAlpha > 0.75 && size > 1.5
-            let isBright = baseAlpha > 0.6 && size > 1.3
-            let starType: Int32
-            if isVeryBright {
-                starType = 3 // heroAnamorphic — spectacular
-            } else if isBright {
-                starType = 1 // hero JWST 6-point
-            } else if sRand(seed, idx * 29) > 0.7 {
-                starType = 2 // mystical color-shifting
-            } else {
-                starType = 0 // normal
-            }
-            
-            stars.append(StarData(
-                position: SIMD2(sRand(seed, idx * 7), sRand(seed, idx * 7 + 1)),
-                baseSize: size * (starType == 1 || starType == 3 ? 2.0 : 1.0),
-                zDepth: 0.7 + sRand(seed, idx * 7 + 4) * 0.3,
-                color: baseColor,
-                twinkleSpeed: 0.25 + sRand(seed, idx * 13) * 0.7,
-                twinklePhase: sRand(seed, idx * 11) * .pi * 2,
-                twinkleAmp: 0.50,
-                starType: starType,
-                driftAngle: sRand(seed, idx * 19) * .pi * 2,
-                driftSpeed: 0.35,
-                motionParams: SIMD2(sRand(seed, idx * 31), sRand(seed, idx * 17 + 3) * 0.8),
+                zDepth: 0.90 + sRand(seed, 6) * 0.10, // very far back
+                color: color,
+                twinkleSpeed: 0.08 + sRand(seed, 6) * 0.15,
+                twinklePhase: sRand(seed, 7) * .pi * 2,
+                twinkleAmp: 0.10,
+                starType: 0,
+                driftAngle: sRand(seed, 8) * .pi * 2,
+                driftSpeed: 0.03 + sRand(seed, 9) * 0.08,
+                motionParams: SIMD2(0, 0.1 + sRand(seed, 10) * 0.15),
                 rotationFactor: 0,
                 zoneTintStrength: 0,
                 zoneTintColor: SIMD4(0, 0, 0, 0)

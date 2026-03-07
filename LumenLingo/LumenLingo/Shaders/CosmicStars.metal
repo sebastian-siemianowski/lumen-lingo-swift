@@ -14,7 +14,6 @@ fragment float4 cosmicStarFragment(StarVertexOut in [[stage_in]]) {
     
     float4 color = float4(0.0);
     float alpha = in.finalAlpha;
-    float size = in.starSize;
     
     if (in.starType == 0 || in.starType == 2) {
         // ---- Normal / Mystical Star ----

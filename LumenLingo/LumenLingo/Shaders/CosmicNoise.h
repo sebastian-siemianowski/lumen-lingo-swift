@@ -14,25 +14,6 @@ static float seededRandom(int seed, int n) {
     return fract(x);
 }
 
-// Hash-based random for continuous coordinates
-static float hash21(float2 p) {
-    float3 p3 = fract(float3(p.xyx) * 0.1031);
-    p3 += dot(p3, p3.yzx + 33.33);
-    return fract((p3.x + p3.y) * p3.z);
-}
-
-static float2 hash22(float2 p) {
-    float3 p3 = fract(float3(p.xyx) * float3(0.1031, 0.1030, 0.0973));
-    p3 += dot(p3, p3.yzx + 33.33);
-    return fract((p3.xx + p3.yz) * p3.zy);
-}
-
-// Smooth interpolation helpers
-static float smootherstep(float edge0, float edge1, float x) {
-    float t = clamp((x - edge0) / (edge1 - edge0), 0.0, 1.0);
-    return t * t * t * (t * (t * 6.0 - 15.0) + 10.0);
-}
-
 // ============================================================
 // MARK: - 3D Simplex Noise (Ashima / Stefan Gustavson)
 // ============================================================
@@ -150,23 +131,10 @@ static float warpedFBM(float3 p, float time, int octaves) {
 // MARK: - Gradient Helpers
 // ============================================================
 
-// Compute radial gradient: 0 at center, 1 at edge
-static float radialGrad(float2 uv, float2 center, float innerR, float outerR) {
-    float d = length(uv - center);
-    return smoothstep(innerR, outerR, d);
-}
-
 // Inverse radial: 1 at center, 0 at edge
 static float radialGlow(float2 uv, float2 center, float radius) {
     float d = length(uv - center);
     return 1.0 - smoothstep(0.0, radius, d);
-}
-
-// Elliptical glow
-static float ellipticalGlow(float2 uv, float2 center, float2 radii) {
-    float2 d = (uv - center) / radii;
-    float dist = length(d);
-    return 1.0 - smoothstep(0.0, 1.0, dist);
 }
 
 // Gaussian distribution
@@ -202,10 +170,6 @@ static float3 multiplyBlend(float3 base, float3 overlay, float opacity) {
 // Color from RGB bytes
 static float3 rgb(float r, float g, float b) {
     return float3(r / 255.0, g / 255.0, b / 255.0);
-}
-
-static float4 rgba(float r, float g, float b, float a) {
-    return float4(r / 255.0, g / 255.0, b / 255.0, a);
 }
 
 // ============================================================
