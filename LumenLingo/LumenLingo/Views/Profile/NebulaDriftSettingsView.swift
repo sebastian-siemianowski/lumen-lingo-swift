@@ -8,6 +8,7 @@ import SwiftData
 struct NebulaDriftSettingsView: View {
     @Query private var profiles: [UserProfile]
     @Environment(\.colorScheme) private var colorScheme
+    @State private var previewingPreset: NebulaPreset? = nil
 
     private var profile: UserProfile? { profiles.first }
     private var isDark: Bool { colorScheme == .dark }
@@ -21,7 +22,10 @@ struct NebulaDriftSettingsView: View {
                 darkModeOnlyBadge
             }
 
-            if profile?.nebulaDriftEnabled == true {
+            // Controls always visible (React: <Collapse isOpen={true}>)
+            // The toggle only controls whether LayoutBackgroundView renders the nebula layer.
+            // In light mode, controls are dimmed + non-interactive (matching React behavior).
+            VStack(spacing: 20) {
                 // Preset selector
                 presetSelectorSection
 
@@ -34,8 +38,13 @@ struct NebulaDriftSettingsView: View {
                 // Status description
                 statusDescription
             }
+            .opacity(!isDark ? 0.5 : 1.0)
+            .allowsHitTesting(isDark)
         }
         .animation(.easeInOut(duration: 0.3), value: profile?.nebulaDriftEnabled)
+        .fullScreenCover(item: $previewingPreset) { preset in
+            nebulaFullscreenPreview(preset: preset)
+        }
     }
 
     // MARK: - Header
@@ -127,6 +136,28 @@ struct NebulaDriftSettingsView: View {
                             profile?.nebulaPresetEnum = preset
                         }
                     }
+                    .overlay(alignment: .topTrailing) {
+                        // Fullscreen preview button (React: Maximize2 icon)
+                        Button {
+                            previewingPreset = preset
+                        } label: {
+                            Image(systemName: "arrow.up.left.and.arrow.down.right")
+                                .font(.system(size: 11, weight: .semibold))
+                                .foregroundStyle(.white.opacity(0.8))
+                                .frame(width: 28, height: 28)
+                                .background(
+                                    Circle()
+                                        .fill(.ultraThinMaterial)
+                                        .shadow(color: .black.opacity(0.3), radius: 4, y: 2)
+                                )
+                                .overlay(
+                                    Circle()
+                                        .strokeBorder(.white.opacity(0.2), lineWidth: 0.5)
+                                )
+                        }
+                        .buttonStyle(.plain)
+                        .padding(6)
+                    }
                 }
             }
         }
@@ -170,10 +201,21 @@ struct NebulaDriftSettingsView: View {
         )
     }
 
+    // MARK: - Fullscreen Preview
+
+    private func nebulaFullscreenPreview(preset: NebulaPreset) -> some View {
+        FullscreenNebulaPreview(
+            initialPreset: preset,
+            intensity: profile?.nebulaDriftIntensity ?? 1.0,
+            speed: profile?.nebulaDriftSpeed ?? 1.0,
+            onDismiss: { previewingPreset = nil }
+        )
+    }
+
     // MARK: - Status
 
     private var statusDescription: some View {
-        let preset = profile?.nebulaPresetEnum ?? .celestialLagoon
+        let preset = profile?.nebulaPresetEnum ?? .lagoonNebula
         let speed = profile?.nebulaDriftSpeed ?? 1.0
 
         let (icon, text): (String, String) = {
@@ -206,6 +248,178 @@ struct NebulaDriftSettingsView: View {
                     RoundedRectangle(cornerRadius: 12, style: .continuous)
                         .strokeBorder(.white.opacity(isDark ? 0.06 : 0.12), lineWidth: 0.5)
                 )
+        )
+    }
+}
+
+// MARK: - Fullscreen Nebula Preview (with L/R Navigation)
+
+/// Fullscreen preview with left/right chevron buttons and swipe gesture
+/// to cycle through all nebula presets. iOS enhancement beyond React.
+struct FullscreenNebulaPreview: View {
+    let initialPreset: NebulaPreset
+    let intensity: Double
+    let speed: Double
+    let onDismiss: () -> Void
+
+    @State private var currentIndex: Int = 0
+
+    private let allPresets = NebulaPreset.allCases
+
+    init(initialPreset: NebulaPreset, intensity: Double, speed: Double, onDismiss: @escaping () -> Void) {
+        self.initialPreset = initialPreset
+        self.intensity = intensity
+        self.speed = speed
+        self.onDismiss = onDismiss
+        _currentIndex = State(initialValue: NebulaPreset.allCases.firstIndex(of: initialPreset) ?? 0)
+    }
+
+    private var currentPreset: NebulaPreset {
+        allPresets[currentIndex]
+    }
+
+    private var canGoLeft: Bool { currentIndex > 0 }
+    private var canGoRight: Bool { currentIndex < allPresets.count - 1 }
+
+    var body: some View {
+        ZStack {
+            // Deep void base
+            Color(red: 6/255, green: 5/255, blue: 20/255)
+                .ignoresSafeArea()
+
+            // Live cosmic background — updateUIView handles preset changes
+            CosmicBackgroundView(
+                preset: currentPreset,
+                intensity: intensity,
+                speed: speed
+            )
+            .ignoresSafeArea()
+
+            // Navigation overlay
+            VStack {
+                // Preset name + counter at top
+                HStack {
+                    Spacer()
+                    VStack(spacing: 4) {
+                        Text(currentPreset.displayName)
+                            .font(.system(size: 15, weight: .semibold))
+                            .foregroundStyle(.white.opacity(0.85))
+
+                        Text("\(currentIndex + 1) / \(allPresets.count)")
+                            .font(.system(size: 12, weight: .medium).monospacedDigit())
+                            .foregroundStyle(.white.opacity(0.45))
+                    }
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 10)
+                    .background(
+                        Capsule()
+                            .fill(.ultraThinMaterial)
+                            .overlay(
+                                Capsule()
+                                    .strokeBorder(.white.opacity(0.15), lineWidth: 0.5)
+                            )
+                    )
+                    Spacer()
+                }
+                .padding(.top, 60)
+
+                Spacer()
+
+                // Bottom controls: left chevron, exit, right chevron
+                HStack(spacing: 16) {
+                    // Left chevron
+                    Button {
+                        withAnimation(.easeInOut(duration: 0.3)) {
+                            if canGoLeft { currentIndex -= 1 }
+                        }
+                    } label: {
+                        Image(systemName: "chevron.left")
+                            .font(.system(size: 16, weight: .semibold))
+                            .foregroundStyle(.white.opacity(canGoLeft ? 0.9 : 0.25))
+                            .frame(width: 44, height: 44)
+                            .background(
+                                Circle()
+                                    .fill(.ultraThinMaterial)
+                                    .overlay(
+                                        Circle()
+                                            .strokeBorder(.white.opacity(canGoLeft ? 0.2 : 0.08), lineWidth: 0.5)
+                                    )
+                            )
+                    }
+                    .buttonStyle(.plain)
+                    .disabled(!canGoLeft)
+
+                    // Exit button
+                    Button {
+                        onDismiss()
+                    } label: {
+                        HStack(spacing: 8) {
+                            Image(systemName: "chevron.down")
+                                .font(.system(size: 14, weight: .semibold))
+                            Text("Exit Preview")
+                                .font(.system(size: 15, weight: .semibold))
+                        }
+                        .foregroundStyle(.white)
+                        .padding(.horizontal, 24)
+                        .padding(.vertical, 12)
+                        .background(
+                            Capsule()
+                                .fill(.ultraThinMaterial)
+                                .overlay(
+                                    Capsule()
+                                        .strokeBorder(
+                                            LinearGradient(
+                                                colors: [
+                                                    .white.opacity(0.25),
+                                                    .white.opacity(0.10)
+                                                ],
+                                                startPoint: .top,
+                                                endPoint: .bottom
+                                            ),
+                                            lineWidth: 1
+                                        )
+                                )
+                                .shadow(color: .purple.opacity(0.3), radius: 12)
+                                .shadow(color: .black.opacity(0.4), radius: 20, y: 8)
+                        )
+                    }
+                    .buttonStyle(.plain)
+
+                    // Right chevron
+                    Button {
+                        withAnimation(.easeInOut(duration: 0.3)) {
+                            if canGoRight { currentIndex += 1 }
+                        }
+                    } label: {
+                        Image(systemName: "chevron.right")
+                            .font(.system(size: 16, weight: .semibold))
+                            .foregroundStyle(.white.opacity(canGoRight ? 0.9 : 0.25))
+                            .frame(width: 44, height: 44)
+                            .background(
+                                Circle()
+                                    .fill(.ultraThinMaterial)
+                                    .overlay(
+                                        Circle()
+                                            .strokeBorder(.white.opacity(canGoRight ? 0.2 : 0.08), lineWidth: 0.5)
+                                    )
+                            )
+                    }
+                    .buttonStyle(.plain)
+                    .disabled(!canGoRight)
+                }
+                .padding(.bottom, 50)
+            }
+        }
+        .gesture(
+            DragGesture(minimumDistance: 50)
+                .onEnded { gesture in
+                    let horizontal = gesture.translation.width
+                    if horizontal < -50 && canGoRight {
+                        withAnimation(.easeInOut(duration: 0.3)) { currentIndex += 1 }
+                    } else if horizontal > 50 && canGoLeft {
+                        withAnimation(.easeInOut(duration: 0.3)) { currentIndex -= 1 }
+                    }
+                }
         )
     }
 }

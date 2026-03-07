@@ -47,12 +47,28 @@ struct SchemeCardView: View {
                 RoundedRectangle(cornerRadius: 18, style: .continuous)
                     .strokeBorder(
                         isSelected
-                            ? LinearGradient(colors: [.purple.opacity(0.8), .indigo.opacity(0.6)], startPoint: .topLeading, endPoint: .bottomTrailing)
-                            : LinearGradient(colors: [Color.white.opacity(isDark ? 0.12 : 0.25)], startPoint: .top, endPoint: .bottom),
+                            ? LinearGradient(
+                                colors: [
+                                    .purple.opacity(0.9),
+                                    .indigo.opacity(0.6),
+                                    .purple.opacity(0.4)
+                                ],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                              )
+                            : LinearGradient(
+                                colors: [
+                                    Color.white.opacity(isDark ? 0.14 : 0.30),
+                                    Color.white.opacity(isDark ? 0.06 : 0.15)
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                              ),
                         lineWidth: isSelected ? 2 : 1
                     )
             )
-            .shadow(color: isSelected ? .purple.opacity(0.35) : .clear, radius: 12, y: 4)
+            .shadow(color: isSelected ? .purple.opacity(isDark ? 0.45 : 0.25) : .black.opacity(0.06), radius: 12, y: 4)
+            .shadow(color: isSelected ? .purple.opacity(0.20) : .clear, radius: 6, y: 2)
             .scaleEffect(isPressed ? 0.96 : (isSelected ? 1.02 : 1.0))
             .animation(.spring(response: 0.35, dampingFraction: 0.7), value: isSelected)
             .animation(.spring(response: 0.2, dampingFraction: 0.8), value: isPressed)
@@ -77,27 +93,35 @@ struct SchemeCardView: View {
             )
             .frame(height: previewHeight)
             .overlay(
-                // Shimmer overlay on hover
+                // Subtle inner top glow
                 LinearGradient(
-                    colors: [.clear, .white.opacity(0.08), .clear],
-                    startPoint: .leading,
-                    endPoint: .trailing
+                    colors: [.white.opacity(0.15), .clear],
+                    startPoint: .top,
+                    endPoint: .center
                 )
             )
 
             // Selected checkmark
             if isSelected {
-                Circle()
-                    .fill(.white)
-                    .frame(width: 28, height: 28)
-                    .overlay(
-                        Image(systemName: "checkmark.circle.fill")
-                            .font(.system(size: 24))
-                            .foregroundStyle(.purple)
-                    )
-                    .shadow(color: .purple.opacity(0.4), radius: 6)
-                    .padding(8)
-                    .transition(.scale.combined(with: .opacity))
+                ZStack {
+                    // Glow behind checkmark
+                    Circle()
+                        .fill(.purple.opacity(0.3))
+                        .frame(width: 36, height: 36)
+                        .blur(radius: 6)
+
+                    Circle()
+                        .fill(.white)
+                        .frame(width: 28, height: 28)
+                        .overlay(
+                            Image(systemName: "checkmark.circle.fill")
+                                .font(.system(size: 24))
+                                .foregroundStyle(.purple)
+                        )
+                        .shadow(color: .purple.opacity(0.5), radius: 8)
+                }
+                .padding(8)
+                .transition(.scale.combined(with: .opacity))
             }
         }
     }
@@ -112,6 +136,8 @@ struct SchemeCardView: View {
                     ? (isDark ? .white : .primary)
                     : (isDark ? .white.opacity(0.7) : .secondary)
                 )
+                // Neon glow on selected name
+                .shadow(color: isSelected && isDark ? .purple.opacity(0.5) : .clear, radius: 4)
                 .lineLimit(1)
 
             if !description.isEmpty {
@@ -125,11 +151,48 @@ struct SchemeCardView: View {
         .padding(.horizontal, 8)
         .padding(.vertical, 10)
         .frame(maxWidth: .infinity)
-        .background(
-            isDark
-                ? Color.white.opacity(isSelected ? 0.08 : 0.04)
-                : Color.white.opacity(isSelected ? 0.6 : 0.3)
-        )
+        .background {
+            ZStack {
+                // Glass material base
+                Rectangle()
+                    .fill(.ultraThinMaterial)
+
+                // Purple tint overlay
+                Rectangle()
+                    .fill(
+                        LinearGradient(
+                            colors: [
+                                Color.purple.opacity(isSelected ? (isDark ? 0.12 : 0.06) : (isDark ? 0.04 : 0.02)),
+                                Color.indigo.opacity(isSelected ? (isDark ? 0.08 : 0.04) : (isDark ? 0.02 : 0.01))
+                            ],
+                            startPoint: .top,
+                            endPoint: .bottom
+                        )
+                    )
+
+                // Inner shadow (top edge inset)
+                VStack {
+                    LinearGradient(
+                        colors: [.black.opacity(isDark ? 0.10 : 0.04), .clear],
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                    .frame(height: 6)
+                    Spacer()
+                }
+
+                // Bottom inner glow
+                VStack {
+                    Spacer()
+                    LinearGradient(
+                        colors: [.clear, .white.opacity(isDark ? 0.04 : 0.08)],
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                    .frame(height: 8)
+                }
+            }
+        }
     }
 }
 

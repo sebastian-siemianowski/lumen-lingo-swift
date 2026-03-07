@@ -364,9 +364,15 @@ struct GlassCardBackground: View {
 struct GlassPanelWrapper<Content: View>: View {
     @Environment(\.colorScheme) private var colorScheme
     var cornerRadius: CGFloat = 24
+    var tintColor: Color? = nil
     @ViewBuilder var content: () -> Content
 
     private var isDark: Bool { colorScheme == .dark }
+
+    // Resolved tint: use provided color or default purple
+    private var resolvedTint: Color {
+        tintColor ?? Color(red: 140/255, green: 100/255, blue: 220/255)
+    }
 
     var body: some View {
         ZStack {
@@ -384,11 +390,11 @@ struct GlassPanelWrapper<Content: View>: View {
                     .blur(radius: 16)
                     .padding(-20)
 
-                // LAYER 2: Mid foggy glow (purple tones)
+                // LAYER 2: Mid foggy glow (tint-aware)
                 RoundedRectangle(cornerRadius: cornerRadius + 14)
                     .fill(
                         .radialGradient(
-                            colors: [Color(red: 140/255, green: 100/255, blue: 220/255).opacity(0.28), .clear],
+                            colors: [resolvedTint.opacity(0.28), .clear],
                             center: .top,
                             startRadius: 0,
                             endRadius: 180
@@ -436,18 +442,26 @@ struct GlassPanelWrapper<Content: View>: View {
                 winterMistOverlay
             }
 
-            // BASE: Frosted glass material
+            // BASE: Frosted glass material — reduced opacity so cosmic background bleeds through
+            // React uses rgba(20, 14, 38, 0.7) + backdrop-filter: blur(24px)
             RoundedRectangle(cornerRadius: cornerRadius)
                 .fill(.ultraThinMaterial)
+                .opacity(isDark ? 0.55 : 1.0)
+
+            // Semi-transparent dark tint matching React's rgba(20, 14, 38, 0.7)
+            if isDark {
+                RoundedRectangle(cornerRadius: cornerRadius)
+                    .fill(Color(red: 20/255, green: 14/255, blue: 38/255).opacity(0.45))
+            }
 
             if isDark {
-                // Subtle purple color tint
+                // Subtle color tint (tint-aware)
                 RoundedRectangle(cornerRadius: cornerRadius)
                     .fill(
                         LinearGradient(
                             colors: [
-                                Color(red: 90/255, green: 60/255, blue: 150/255).opacity(0.08),
-                                Color(red: 60/255, green: 40/255, blue: 120/255).opacity(0.06)
+                                resolvedTint.opacity(0.10),
+                                resolvedTint.opacity(0.06)
                             ],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
@@ -684,7 +698,7 @@ struct PremiumToggle: View {
 // MARK: - Glass Slider
 
 /// Custom glassmorphic slider matching React's liquid glass slider design.
-/// Features a gradient fill track, quantum orb thumb with glow, and glass track background.
+/// Features bloom halo, trailing light, 3D inset track, and pill capsule thumb.
 struct GlassSlider: View {
     @Environment(\.colorScheme) private var colorScheme
     @Binding var value: Double
@@ -695,6 +709,7 @@ struct GlassSlider: View {
 
     private var isDark: Bool { colorScheme == .dark }
     @State private var breathePhase: CGFloat = 0
+    @State private var isDragging = false
 
     private var fraction: Double {
         (value - range.lowerBound) / (range.upperBound - range.lowerBound)
@@ -706,80 +721,149 @@ struct GlassSlider: View {
             let thumbX = trackWidth * fraction
 
             ZStack(alignment: .leading) {
-                // Track background (glass)
+                // 3D Track background (liquid glass inset)
                 Capsule()
-                    .fill(isDark ? .white.opacity(0.08) : .black.opacity(0.06))
-                    .frame(height: 8)
+                    .fill(isDark ? .white.opacity(0.06) : .black.opacity(0.04))
+                    .frame(height: 10)
                     .overlay(
+                        // Top inset shadow for 3D depth
                         Capsule()
-                            .strokeBorder(isDark ? .white.opacity(0.06) : .black.opacity(0.04), lineWidth: 1)
+                            .fill(
+                                LinearGradient(
+                                    colors: [
+                                        .black.opacity(isDark ? 0.20 : 0.10),
+                                        .clear,
+                                        .white.opacity(isDark ? 0.08 : 0.12)
+                                    ],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                )
+                            )
+                    )
+                    .overlay(
+                        // Inner edge highlight
+                        Capsule()
+                            .strokeBorder(
+                                LinearGradient(
+                                    colors: [
+                                        .black.opacity(isDark ? 0.15 : 0.06),
+                                        .white.opacity(isDark ? 0.06 : 0.10),
+                                        .white.opacity(isDark ? 0.10 : 0.18)
+                                    ],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                ),
+                                lineWidth: 1
+                            )
                     )
 
-                // Fill gradient
+                // Fill gradient with inner glass highlight
                 Capsule()
                     .fill(
                         LinearGradient(
-                            colors: [accentColor.opacity(0.6), accentColor, accentColor.opacity(0.8)],
+                            colors: [accentColor.opacity(0.5), accentColor, accentColor.opacity(0.75)],
                             startPoint: .leading,
                             endPoint: .trailing
                         )
                     )
-                    .frame(width: max(8, thumbX), height: 8)
-                    .shadow(color: accentColor.opacity(0.3), radius: 6, y: 0)
-
-                // Thumb
-                ZStack {
-                    // Outer glow
-                    Circle()
-                        .fill(accentColor.opacity(
-                            0.25 + 0.10 * Foundation.sin(Double(breathePhase))
-                        ))
-                        .frame(width: 32, height: 32)
-                        .blur(radius: 6)
-
-                    // Glass orb
-                    Circle()
-                        .fill(
-                            RadialGradient(
-                                colors: [
-                                    .white,
-                                    accentColor.opacity(0.15),
-                                    accentColor.opacity(0.05)
-                                ],
-                                center: UnitPoint(x: 0.4, y: 0.35),
-                                startRadius: 0,
-                                endRadius: 14
+                    .frame(width: max(10, thumbX), height: 10)
+                    .overlay(
+                        // Liquid glass highlight on fill
+                        Capsule()
+                            .fill(
+                                LinearGradient(
+                                    colors: [.white.opacity(0.35), .clear, .white.opacity(0.10)],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                )
                             )
+                    )
+                    .shadow(color: accentColor.opacity(isDark ? 0.4 : 0.25), radius: 8, y: 0)
+
+                // Bloom halo behind thumb (breathing)
+                Circle()
+                    .fill(
+                        RadialGradient(
+                            colors: [
+                                accentColor.opacity(
+                                    (isDark ? 0.25 : 0.15) + 0.08 * Foundation.sin(Double(breathePhase))
+                                ),
+                                accentColor.opacity(0.05),
+                                .clear
+                            ],
+                            center: .center,
+                            startRadius: 0,
+                            endRadius: isDragging ? 24 : 18
                         )
-                        .frame(width: 24, height: 24)
-                        .shadow(color: accentColor.opacity(0.35), radius: 8, y: 0)
+                    )
+                    .frame(width: isDragging ? 48 : 36, height: isDragging ? 48 : 36)
+                    .blur(radius: 4)
+                    .offset(x: thumbX - (isDragging ? 24 : 18))
+                    .animation(.spring(response: 0.3, dampingFraction: 0.7), value: isDragging)
+
+                // Capsule pill thumb
+                ZStack {
+                    // Glass pill body
+                    RoundedRectangle(cornerRadius: 8, style: .continuous)
+                        .fill(.ultraThinMaterial)
+                        .frame(width: 22, height: 28)
+                        .overlay(
+                            // Top specular highlight
+                            RoundedRectangle(cornerRadius: 8, style: .continuous)
+                                .fill(
+                                    LinearGradient(
+                                        colors: [
+                                            .white.opacity(isDark ? 0.45 : 0.60),
+                                            .clear,
+                                            .white.opacity(isDark ? 0.08 : 0.15)
+                                        ],
+                                        startPoint: .top,
+                                        endPoint: .bottom
+                                    )
+                                )
+                        )
+                        .overlay(
+                            // Thin border
+                            RoundedRectangle(cornerRadius: 8, style: .continuous)
+                                .strokeBorder(
+                                    LinearGradient(
+                                        colors: [
+                                            .white.opacity(isDark ? 0.35 : 0.50),
+                                            .white.opacity(isDark ? 0.10 : 0.20)
+                                        ],
+                                        startPoint: .top,
+                                        endPoint: .bottom
+                                    ),
+                                    lineWidth: 0.75
+                                )
+                        )
+                        .shadow(color: accentColor.opacity(isDark ? 0.35 : 0.20), radius: 8, y: 0)
                         .shadow(color: .black.opacity(0.12), radius: 3, y: 2)
 
-                    // Inner highlight
-                    Circle()
-                        .fill(
-                            LinearGradient(
-                                colors: [.white.opacity(0.6), .clear],
-                                startPoint: .top,
-                                endPoint: .center
-                            )
-                        )
-                        .frame(width: 20, height: 20)
-                        .offset(y: -2)
+                    // Inner grip line (subtle indent)
+                    RoundedRectangle(cornerRadius: 1, style: .continuous)
+                        .fill(.white.opacity(isDark ? 0.15 : 0.25))
+                        .frame(width: 8, height: 2)
                 }
-                .offset(x: thumbX - 12)
+                .offset(x: thumbX - 11)
+                .scaleEffect(isDragging ? 1.08 : 1.0)
+                .animation(.spring(response: 0.25, dampingFraction: 0.65), value: isDragging)
                 .gesture(
                     DragGesture(minimumDistance: 0)
                         .onChanged { drag in
+                            isDragging = true
                             let newFraction = max(0, min(1, drag.location.x / trackWidth))
                             let raw = range.lowerBound + newFraction * (range.upperBound - range.lowerBound)
                             let stepped = (raw / step).rounded() * step
                             value = max(range.lowerBound, min(range.upperBound, stepped))
                         }
+                        .onEnded { _ in
+                            isDragging = false
+                        }
                 )
             }
         }
-        .frame(height: 32)
+        .frame(height: 36)
         .onAppear {
             withAnimation(.easeInOut(duration: 2.5).repeatForever(autoreverses: true)) {
                 breathePhase = .pi * 2

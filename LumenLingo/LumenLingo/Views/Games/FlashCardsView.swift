@@ -36,6 +36,41 @@ struct FlashCardsView: View {
     @State private var successAura: Bool = false
     @State private var wrongFlash: Bool = false
 
+    // Animated floating icon states
+    @State private var frontGlowPhase: CGFloat = 0
+    @State private var frontGlowPhase2: CGFloat = 0
+    @State private var sparkleRotation: Double = 0
+    @State private var sparkleScale: CGFloat = 1.0
+    @State private var sparkleOpacity: Double = 0.55
+    @State private var bulbScale: CGFloat = 1.0
+    @State private var bulbOpacity: Double = 0.5
+    @State private var cloudOffset: CGFloat = 0
+    @State private var cloudOpacity: Double = 0.4
+    @State private var moonOffset: CGFloat = 0
+    @State private var moonOpacity: Double = 0.45
+    @State private var moonRotation: Double = 0
+    @State private var windOffset: CGFloat = 0
+    @State private var windOpacity: Double = 0.35
+    // Back side animated states
+    @State private var backGlowPhase: CGFloat = 0
+    @State private var backGlowPhase2: CGFloat = 0
+    @State private var starRotation: Double = 0
+    @State private var starScale: CGFloat = 1.0
+    @State private var starOpacity: Double = 0.6
+    @State private var heartScale: CGFloat = 1.0
+    @State private var heartOpacity: Double = 0.55
+    @State private var flowerRotation: Double = 0
+    @State private var flowerScale: CGFloat = 1.0
+    @State private var flowerOffset: CGFloat = 0
+    @State private var flowerOpacity: Double = 0.6
+    @State private var backSparkleRotation: Double = 0
+    @State private var backSparkleScale: CGFloat = 1.0
+    @State private var backSparkleOffset: CGFloat = 0
+    @State private var backSparkleOpacity: Double = 0.55
+    @State private var boltScale: CGFloat = 1.0
+    @State private var boltRotation: Double = 0
+    @State private var boltOpacity: Double = 0.55
+
     private var currentWord: FlashcardWord? {
         guard currentIndex < words.count else { return nil }
         return words[currentIndex]
@@ -318,30 +353,118 @@ struct FlashCardsView: View {
 
     private func cardFront(word: FlashcardWord) -> some View {
         ZStack {
-            // Chromatic edge glows — living glass (from React)
+            // Chromatic edge glows — living glass (4-direction inset shadows from React)
             RoundedRectangle(cornerRadius: 32)
                 .fill(.clear)
                 .shadow(color: Color(hex: "#8b5cf6").opacity(0.12), radius: 8, x: 0, y: 1)
+                .shadow(color: Color(hex: "#a855f7").opacity(0.10), radius: 8, x: 0, y: -1)
                 .shadow(color: Color(hex: "#6366f1").opacity(0.10), radius: 8, x: 1, y: 0)
                 .shadow(color: Color(hex: "#c084fc").opacity(0.08), radius: 8, x: -1, y: 0)
                 .allowsHitTesting(false)
 
+            // Animated breathing radial glow — top-left indigo
+            Circle()
+                .fill(Color(hex: "#6366f1").opacity(0.08))
+                .frame(width: 200, height: 200)
+                .blur(radius: 60)
+                .offset(x: -80, y: -60)
+                .opacity(0.4 + frontGlowPhase * 0.2)
+                .clipShape(RoundedRectangle(cornerRadius: 32))
+                .allowsHitTesting(false)
+
+            // Animated breathing radial glow — bottom-right purple
+            Circle()
+                .fill(Color(hex: "#a855f7").opacity(0.07))
+                .frame(width: 200, height: 200)
+                .blur(radius: 60)
+                .offset(x: 80, y: 60)
+                .opacity(0.3 + frontGlowPhase2 * 0.25)
+                .clipShape(RoundedRectangle(cornerRadius: 32))
+                .allowsHitTesting(false)
+
+            // Floating decorative icons
+            // Top-left: Sparkles — rotating continuously with golden glow
+            Image(systemName: "sparkles")
+                .font(.system(size: 24, weight: .medium))
+                .foregroundStyle(Color(hex: "#fde047").opacity(0.85))
+                .shadow(color: Color(hex: "#fbbf24").opacity(0.7), radius: 12)
+                .shadow(color: Color(hex: "#fde047").opacity(0.5), radius: 24)
+                .shadow(color: Color(hex: "#fb923c").opacity(0.3), radius: 36)
+                .rotationEffect(.degrees(sparkleRotation))
+                .scaleEffect(sparkleScale)
+                .opacity(sparkleOpacity)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                .padding(.top, 28)
+                .padding(.leading, 28)
+                .allowsHitTesting(false)
+
+            // Bottom-right: Lightbulb — breathing with golden glow
+            Image(systemName: "lightbulb.fill")
+                .font(.system(size: 22, weight: .medium))
+                .foregroundStyle(Color(hex: "#fde68a").opacity(0.85))
+                .shadow(color: Color(hex: "#fde047").opacity(0.5), radius: 10)
+                .shadow(color: Color(hex: "#fbbf24").opacity(0.3), radius: 20)
+                .scaleEffect(bulbScale)
+                .opacity(bulbOpacity)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
+                .padding(.bottom, 28)
+                .padding(.trailing, 28)
+                .allowsHitTesting(false)
+
+            // Dark mode only: Cloud, Moon, Wind floating icons
+            if colorScheme == .dark {
+                // Top-right: Cloud with purple glow
+                Image(systemName: "cloud.fill")
+                    .font(.system(size: 28, weight: .light))
+                    .foregroundStyle(.white.opacity(0.8))
+                    .shadow(color: Color(hex: "#8b5cf6").opacity(0.6), radius: 12)
+                    .shadow(color: Color(hex: "#a855f7").opacity(0.4), radius: 24)
+                    .offset(y: cloudOffset)
+                    .opacity(cloudOpacity)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+                    .padding(.top, 40)
+                    .padding(.trailing, 48)
+                    .allowsHitTesting(false)
+
+                // Bottom-left: Moon with purple glow
+                Image(systemName: "moon.fill")
+                    .font(.system(size: 24, weight: .medium))
+                    .foregroundStyle(.white.opacity(0.85))
+                    .shadow(color: Color(hex: "#c084fc").opacity(0.7), radius: 14)
+                    .shadow(color: Color(hex: "#a855f7").opacity(0.5), radius: 28)
+                    .shadow(color: Color(hex: "#8b5cf6").opacity(0.3), radius: 42)
+                    .offset(y: moonOffset)
+                    .rotationEffect(.degrees(moonRotation))
+                    .opacity(moonOpacity)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
+                    .padding(.bottom, 48)
+                    .padding(.leading, 40)
+                    .allowsHitTesting(false)
+
+                // Mid-left: Wind with purple glow
+                Image(systemName: "wind")
+                    .font(.system(size: 22, weight: .light))
+                    .foregroundStyle(.white.opacity(0.8))
+                    .shadow(color: Color(hex: "#8b5cf6").opacity(0.5), radius: 14)
+                    .shadow(color: Color(hex: "#a855f7").opacity(0.3), radius: 28)
+                    .offset(x: windOffset)
+                    .opacity(windOpacity)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+                    .padding(.leading, 32)
+                    .allowsHitTesting(false)
+            }
+
             VStack(spacing: 20) {
                 Spacer()
-
-                // Decorative sparkles icon with subtle glow
-                Image(systemName: "sparkles")
-                    .font(.title3)
-                    .foregroundStyle(.white.opacity(0.35))
-                    .shadow(color: Color(hex: "#a855f7").opacity(0.25), radius: 8)
-                    .symbolEffect(.pulse, options: .repeating.speed(0.3))
 
                 // Main word
                 Text(word.front)
                     .font(.system(size: dynamicFontSize(for: word.front), weight: .bold))
                     .foregroundStyle(.white)
                     .multilineTextAlignment(.center)
+                    .shadow(color: .black.opacity(0.8), radius: 4, y: 2)
                     .shadow(color: Color(hex: "#667eea").opacity(0.4), radius: 15)
+                    .shadow(color: Color(hex: "#8b5cf6").opacity(0.4), radius: 12)
 
                 // Example translation
                 if let example = word.exampleTranslation, !example.isEmpty {
@@ -351,14 +474,16 @@ struct FlashCardsView: View {
                         .italic()
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 20)
+                        .shadow(color: .black.opacity(0.6), radius: 10)
+                        .shadow(color: Color(hex: "#8b5cf6").opacity(0.3), radius: 20)
                 }
 
                 Spacer()
 
                 // Tap prompt with breathing animation
                 HStack(spacing: 6) {
-                    Image(systemName: "hand.tap.fill")
-                        .symbolEffect(.pulse, options: .repeating.speed(0.4))
+                    Image(systemName: "arrow.counterclockwise")
+                        .shadow(color: .white.opacity(0.4), radius: 4)
                     Text("Tap to see meaning")
                 }
                 .font(.caption)
@@ -391,14 +516,6 @@ struct FlashCardsView: View {
                 }
                 .clipShape(RoundedRectangle(cornerRadius: 32))
 
-                // Top-left ambient glow (from React radial gradient)
-                Circle()
-                    .fill(Color(hex: "#6366f1").opacity(0.08))
-                    .frame(width: 200, height: 200)
-                    .blur(radius: 60)
-                    .offset(x: -80, y: -60)
-                    .clipShape(RoundedRectangle(cornerRadius: 32))
-
                 // Inner highlight border
                 RoundedRectangle(cornerRadius: 32)
                     .strokeBorder(.white.opacity(0.12), lineWidth: 1)
@@ -422,54 +539,157 @@ struct FlashCardsView: View {
         )
         .shadow(color: Color(hex: "#a855f7").opacity(0.08), radius: 30)
         .shadow(color: Color(hex: "#667eea").opacity(0.12), radius: 30, y: 10)
+        .onAppear { startFrontAnimations() }
     }
 
     private func cardBack(word: FlashcardWord) -> some View {
         ZStack {
-            // Chromatic edge glows — answer side (teal/green)
+            // Chromatic edge glows — answer side (4-direction: emerald + amber)
             RoundedRectangle(cornerRadius: 32)
                 .fill(.clear)
-                .shadow(color: Color(hex: "#10b981").opacity(0.12), radius: 8, x: 0, y: 1)
-                .shadow(color: Color(hex: "#0d9488").opacity(0.10), radius: 8, x: 1, y: 0)
+                .shadow(color: Color(hex: "#34d399").opacity(0.12), radius: 8, x: 0, y: 1)
+                .shadow(color: Color(hex: "#fb923c").opacity(0.10), radius: 8, x: 0, y: -1)
+                .shadow(color: Color(hex: "#10b981").opacity(0.10), radius: 8, x: 1, y: 0)
+                .shadow(color: Color(hex: "#fde047").opacity(0.08), radius: 8, x: -1, y: 0)
                 .allowsHitTesting(false)
+
+            // Animated breathing radial glow — top-left emerald
+            Circle()
+                .fill(Color(hex: "#10b981").opacity(0.12))
+                .frame(width: 200, height: 200)
+                .blur(radius: 60)
+                .offset(x: -60, y: -50)
+                .opacity(0.5 + backGlowPhase * 0.3)
+                .clipShape(RoundedRectangle(cornerRadius: 32))
+                .allowsHitTesting(false)
+
+            // Animated breathing radial glow — bottom-right amber
+            Circle()
+                .fill(Color(hex: "#f59e0b").opacity(0.06))
+                .frame(width: 200, height: 200)
+                .blur(radius: 60)
+                .offset(x: 60, y: 50)
+                .opacity(0.4 + backGlowPhase2 * 0.3)
+                .clipShape(RoundedRectangle(cornerRadius: 32))
+                .allowsHitTesting(false)
+
+            // Top-left: Star — rotating continuously with emerald glow
+            Image(systemName: "star.fill")
+                .font(.system(size: 20, weight: .medium))
+                .foregroundStyle(.white.opacity(0.9))
+                .shadow(color: Color(hex: "#34d399").opacity(0.6), radius: 12)
+                .shadow(color: Color(hex: "#10b981").opacity(0.4), radius: 24)
+                .rotationEffect(.degrees(starRotation))
+                .scaleEffect(starScale)
+                .opacity(starOpacity)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                .padding(.top, 28)
+                .padding(.leading, 28)
+                .allowsHitTesting(false)
+
+            // Bottom-right: Heart — breathing with amber glow
+            Image(systemName: "heart.fill")
+                .font(.system(size: 18, weight: .medium))
+                .foregroundStyle(Color(hex: "#fde68a").opacity(0.85))
+                .shadow(color: Color(hex: "#f59e0b").opacity(0.5), radius: 10)
+                .shadow(color: Color(hex: "#fbbf24").opacity(0.3), radius: 20)
+                .scaleEffect(heartScale)
+                .opacity(heartOpacity)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
+                .padding(.bottom, 28)
+                .padding(.trailing, 28)
+                .allowsHitTesting(false)
+
+            // Dark mode only: Flower, Sparkles, Bolt
+            if colorScheme == .dark {
+                // Top-right: Leaf/Flower with emerald glow
+                Image(systemName: "leaf.fill")
+                    .font(.system(size: 26, weight: .medium))
+                    .foregroundStyle(.white.opacity(0.9))
+                    .shadow(color: Color(hex: "#10b981").opacity(0.6), radius: 15)
+                    .shadow(color: Color(hex: "#34d399").opacity(0.4), radius: 30)
+                    .rotationEffect(.degrees(flowerRotation))
+                    .scaleEffect(flowerScale)
+                    .offset(y: flowerOffset)
+                    .opacity(flowerOpacity)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+                    .padding(.top, 48)
+                    .padding(.trailing, 40)
+                    .allowsHitTesting(false)
+
+                // Bottom-left: Sparkles with emerald glow
+                Image(systemName: "sparkles")
+                    .font(.system(size: 22, weight: .medium))
+                    .foregroundStyle(.white.opacity(0.85))
+                    .shadow(color: Color(hex: "#34d399").opacity(0.5), radius: 12)
+                    .shadow(color: Color(hex: "#a7f3d0").opacity(0.35), radius: 24)
+                    .rotationEffect(.degrees(backSparkleRotation))
+                    .scaleEffect(backSparkleScale)
+                    .offset(y: backSparkleOffset)
+                    .opacity(backSparkleOpacity)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
+                    .padding(.bottom, 40)
+                    .padding(.leading, 48)
+                    .allowsHitTesting(false)
+
+                // Mid-right: Bolt with amber glow
+                Image(systemName: "bolt.fill")
+                    .font(.system(size: 20, weight: .medium))
+                    .foregroundStyle(Color(hex: "#fde68a"))
+                    .shadow(color: Color(hex: "#f59e0b").opacity(0.5), radius: 10)
+                    .shadow(color: Color(hex: "#fbbf24").opacity(0.35), radius: 20)
+                    .scaleEffect(boltScale)
+                    .rotationEffect(.degrees(boltRotation))
+                    .opacity(boltOpacity)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .trailing)
+                    .padding(.trailing, 32)
+                    .allowsHitTesting(false)
+            }
 
             VStack(spacing: 16) {
                 Spacer()
 
-                // Star decoration with glow
-                Image(systemName: "star.fill")
-                    .font(.title3)
-                    .foregroundStyle(.yellow.opacity(0.6))
-                    .shadow(color: .yellow.opacity(0.3), radius: 8)
-
-                // Target word (answer)
+                // Target word (answer) — dramatic reveal
                 Text(word.back)
                     .font(.system(size: dynamicFontSize(for: word.back), weight: .bold))
                     .foregroundStyle(.white)
                     .multilineTextAlignment(.center)
+                    .shadow(color: .black.opacity(0.8), radius: 4, y: 2)
+                    .shadow(color: Color(hex: "#34d399").opacity(0.4), radius: 12)
                     .shadow(color: Color(hex: "#10b981").opacity(0.4), radius: 15)
 
-                // Glass divider
-                GlassDivider(color: .white, opacity: 0.12)
-                    .frame(width: 80)
+                // Emerald divider
+                Rectangle()
+                    .fill(
+                        LinearGradient(
+                            colors: [.clear, Color(hex: "#34d399").opacity(0.5), .clear],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+                    .frame(width: 96, height: 2)
+                    .shadow(color: Color(hex: "#34d399").opacity(0.3), radius: 20)
 
                 // Example sentence
                 if let example = word.example, !example.isEmpty {
-                    Text(example)
-                        .font(.subheadline)
-                        .foregroundStyle(.white.opacity(0.7))
+                    Text("\"\(example)\"")
+                        .font(.subheadline.weight(.medium))
+                        .foregroundStyle(.white.opacity(0.95))
                         .italic()
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 20)
+                        .shadow(color: .black.opacity(0.6), radius: 10)
+                        .shadow(color: Color(hex: "#34d399").opacity(0.25), radius: 20)
                 }
 
                 // Translation
                 if let translation = word.exampleTranslation, !translation.isEmpty {
-                    Text(translation)
-                        .font(.caption)
-                        .foregroundStyle(.white.opacity(0.45))
+                    Text("(\(translation))")
+                        .font(.caption.weight(.medium))
+                        .foregroundStyle(.white.opacity(0.80))
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 20)
+                        .shadow(color: .black.opacity(0.5), radius: 8)
                 }
 
                 Spacer()
@@ -477,15 +697,16 @@ struct FlashCardsView: View {
                 // Word pair footer
                 HStack(spacing: 8) {
                     Text(word.front)
-                        .font(.caption)
-                        .foregroundStyle(.white.opacity(0.4))
+                        .font(.caption.weight(.medium))
+                        .foregroundStyle(.white.opacity(0.85))
                     Image(systemName: "arrow.right")
                         .font(.caption2)
-                        .foregroundStyle(.white.opacity(0.3))
+                        .foregroundStyle(.white.opacity(0.5))
                     Text(word.back)
                         .font(.caption.bold())
-                        .foregroundStyle(Color(hex: "#10b981").opacity(0.7))
+                        .foregroundStyle(Color(hex: "#34d399").opacity(0.9))
                 }
+                .shadow(color: .black.opacity(0.5), radius: 8)
                 .padding(.bottom, 12)
             }
             .padding(24)
@@ -496,10 +717,14 @@ struct FlashCardsView: View {
                 RoundedRectangle(cornerRadius: 32)
                     .fill(.ultraThinMaterial)
 
+                // Stronger emerald glass tint (React: rgba(6, 78, 59, 0.65))
                 RoundedRectangle(cornerRadius: 32)
                     .fill(
                         LinearGradient(
-                            colors: [Color(hex: "#10b981").opacity(0.1), Color(hex: "#0d9488").opacity(0.05)],
+                            colors: [
+                                Color(red: 6/255, green: 78/255, blue: 59/255).opacity(0.65),
+                                Color(red: 2/255, green: 44/255, blue: 34/255).opacity(0.55)
+                            ],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )
@@ -514,16 +739,19 @@ struct FlashCardsView: View {
                 }
                 .clipShape(RoundedRectangle(cornerRadius: 32))
 
-                // Top-left ambient glow (teal)
-                Circle()
-                    .fill(Color(hex: "#0d9488").opacity(0.08))
-                    .frame(width: 200, height: 200)
-                    .blur(radius: 60)
-                    .offset(x: -80, y: -60)
-                    .clipShape(RoundedRectangle(cornerRadius: 32))
-
+                // Inner highlight border — emerald tint
                 RoundedRectangle(cornerRadius: 32)
-                    .strokeBorder(.white.opacity(0.12), lineWidth: 1)
+                    .strokeBorder(
+                        LinearGradient(
+                            colors: [
+                                Color(hex: "#34d399").opacity(0.25),
+                                .white.opacity(0.12)
+                            ],
+                            startPoint: .top,
+                            endPoint: .bottom
+                        ),
+                        lineWidth: 1
+                    )
 
                 // Inset top highlight
                 VStack {
@@ -542,9 +770,10 @@ struct FlashCardsView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 32))
             }
         )
-        .shadow(color: Color(hex: "#10b981").opacity(0.08), radius: 30)
+        .shadow(color: Color(hex: "#34d399").opacity(0.10), radius: 30)
         .shadow(color: Color(hex: "#10b981").opacity(0.12), radius: 30, y: 10)
         .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
+        .onAppear { startBackAnimations() }
     }
 
     // MARK: - Action Buttons
@@ -814,6 +1043,105 @@ struct FlashCardsView: View {
         if length <= 15 { return 30 }
         if length <= 20 { return 26 }
         return 22
+    }
+
+    // MARK: - Floating Icon Animations
+
+    private func startFrontAnimations() {
+        // Breathing radial glow — top-left (7s cycle)
+        withAnimation(.easeInOut(duration: 7).repeatForever(autoreverses: true)) {
+            frontGlowPhase = 1.0
+        }
+        // Breathing radial glow — bottom-right (8s cycle, delayed)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            withAnimation(.easeInOut(duration: 8).repeatForever(autoreverses: true)) {
+                frontGlowPhase2 = 1.0
+            }
+        }
+        // Sparkles: continuous rotation (20s)
+        withAnimation(.linear(duration: 20).repeatForever(autoreverses: false)) {
+            sparkleRotation = 360
+        }
+        // Sparkles: pulsing scale + opacity (12s)
+        withAnimation(.easeInOut(duration: 12).repeatForever(autoreverses: true)) {
+            sparkleScale = 1.08
+            sparkleOpacity = 0.75
+        }
+        // Lightbulb: breathing scale + opacity (10s)
+        withAnimation(.easeInOut(duration: 10).repeatForever(autoreverses: true)) {
+            bulbScale = 1.08
+            bulbOpacity = 0.75
+        }
+        // Cloud: floating y (15s)
+        withAnimation(.easeInOut(duration: 15).repeatForever(autoreverses: true)) {
+            cloudOffset = -6
+            cloudOpacity = 0.6
+        }
+        // Moon: floating y + gentle rotation (18s)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            withAnimation(.easeInOut(duration: 18).repeatForever(autoreverses: true)) {
+                moonOffset = -4
+                moonOpacity = 0.65
+                moonRotation = 5
+            }
+        }
+        // Wind: floating x (16s)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            withAnimation(.easeInOut(duration: 16).repeatForever(autoreverses: true)) {
+                windOffset = 8
+                windOpacity = 0.55
+            }
+        }
+    }
+
+    private func startBackAnimations() {
+        // Breathing radial glow — top-left emerald (6s)
+        withAnimation(.easeInOut(duration: 6).repeatForever(autoreverses: true)) {
+            backGlowPhase = 1.0
+        }
+        // Breathing radial glow — bottom-right amber (7s, delayed)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            withAnimation(.easeInOut(duration: 7).repeatForever(autoreverses: true)) {
+                backGlowPhase2 = 1.0
+            }
+        }
+        // Star: continuous rotation (8s) + pulsing scale (3s)
+        withAnimation(.linear(duration: 8).repeatForever(autoreverses: false)) {
+            starRotation = 360
+        }
+        withAnimation(.easeInOut(duration: 3).repeatForever(autoreverses: true)) {
+            starScale = 1.2
+            starOpacity = 0.85
+        }
+        // Heart: breathing scale (2.5s)
+        withAnimation(.easeInOut(duration: 2.5).repeatForever(autoreverses: true)) {
+            heartScale = 1.25
+            heartOpacity = 0.8
+        }
+        // Flower/Leaf: rotating + floating (5s)
+        withAnimation(.easeInOut(duration: 5).repeatForever(autoreverses: true)) {
+            flowerRotation = 15
+            flowerScale = 1.15
+            flowerOffset = -6
+            flowerOpacity = 0.85
+        }
+        // Back sparkles: rotating + floating (4.5s, delayed)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            withAnimation(.easeInOut(duration: 4.5).repeatForever(autoreverses: true)) {
+                backSparkleRotation = -18
+                backSparkleScale = 1.2
+                backSparkleOffset = -5
+                backSparkleOpacity = 0.8
+            }
+        }
+        // Bolt: pulsing scale + rotation (4s)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            withAnimation(.easeInOut(duration: 4).repeatForever(autoreverses: true)) {
+                boltScale = 1.15
+                boltRotation = 12
+                boltOpacity = 0.8
+            }
+        }
     }
 }
 

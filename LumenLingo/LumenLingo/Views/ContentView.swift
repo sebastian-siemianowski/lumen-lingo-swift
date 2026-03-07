@@ -132,7 +132,12 @@ struct ContentView: View {
 
     private func setupServices() {
         if progressService == nil {
-            progressService = ProgressService(modelContext: modelContext)
+            let service = ProgressService(modelContext: modelContext)
+            progressService = service
+            // Ensure a UserProfile record exists in SwiftData before any
+            // settings view reads @Query profiles — without this, every
+            // profile?.xxx.toggle() silently no-ops on nil.
+            _ = service.getOrCreateProfile()
         }
     }
 

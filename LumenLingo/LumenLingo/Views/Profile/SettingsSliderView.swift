@@ -74,6 +74,8 @@ struct SettingsSliderView: View {
 
     // MARK: - Preset Button
 
+    @State private var presetGlowPhase: CGFloat = 0
+
     private func presetButton(_ preset: (value: Double, label: String, iconName: String)) -> some View {
         let isActive = abs(value - preset.value) < step * 0.5
 
@@ -86,34 +88,77 @@ struct SettingsSliderView: View {
                 Image(systemName: preset.iconName)
                     .font(.system(size: 11))
                 Text(preset.label)
-                    .font(.system(size: 11, weight: .medium))
+                    .font(.system(size: 11, weight: .semibold))
             }
             .foregroundStyle(
                 isActive
                     ? (isDark ? .white : .purple)
                     : (isDark ? .white.opacity(0.5) : .secondary)
             )
+            // Neon text glow when active
+            .shadow(color: isActive && isDark ? accentColor.opacity(0.6) : .clear, radius: 4)
+            .shadow(color: isActive && isDark ? accentColor.opacity(0.3) : .clear, radius: 8)
             .padding(.horizontal, 12)
             .padding(.vertical, 8)
             .frame(maxWidth: .infinity)
-            .background(
-                RoundedRectangle(cornerRadius: 10, style: .continuous)
-                    .fill(isActive
-                        ? (isDark ? .white.opacity(0.1) : .purple.opacity(0.08))
-                        : (isDark ? .white.opacity(0.04) : .white.opacity(0.3))
-                    )
-                    .overlay(
+            .background {
+                ZStack {
+                    // Pulsing radiant aura (active only, dark mode)
+                    if isActive && isDark {
                         RoundedRectangle(cornerRadius: 10, style: .continuous)
-                            .strokeBorder(
-                                isActive ? .purple.opacity(0.5) : .white.opacity(isDark ? 0.08 : 0.15),
-                                lineWidth: 1
+                            .fill(accentColor.opacity(0.15 + 0.08 * Foundation.sin(Double(presetGlowPhase))))
+                            .blur(radius: 6)
+                            .padding(-4)
+                    }
+
+                    // Glass background
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(.ultraThinMaterial)
+
+                    // Inner gradient highlight
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    .white.opacity(isActive ? (isDark ? 0.14 : 0.30) : (isDark ? 0.06 : 0.15)),
+                                    .clear,
+                                    .white.opacity(isActive ? (isDark ? 0.06 : 0.12) : (isDark ? 0.02 : 0.06))
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
                             )
-                    )
-            )
-            .shadow(color: isActive ? .purple.opacity(0.2) : .clear, radius: 6)
+                        )
+
+                    // Color tint when active
+                    if isActive {
+                        RoundedRectangle(cornerRadius: 10, style: .continuous)
+                            .fill(accentColor.opacity(isDark ? 0.10 : 0.06))
+                    }
+
+                    // Multi-layer inset shadows
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: isActive
+                                    ? [accentColor.opacity(isDark ? 0.6 : 0.4), accentColor.opacity(isDark ? 0.3 : 0.2)]
+                                    : [.white.opacity(isDark ? 0.10 : 0.20), .white.opacity(isDark ? 0.04 : 0.08)],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            ),
+                            lineWidth: 1
+                        )
+                }
+            }
+            .shadow(color: isActive ? accentColor.opacity(isDark ? 0.30 : 0.15) : .clear, radius: 8)
+            .shadow(color: isActive ? accentColor.opacity(0.15) : .clear, radius: 4, y: 2)
         }
         .buttonStyle(.plain)
         .disabled(disabled)
+        .onAppear {
+            withAnimation(.easeInOut(duration: 2.0).repeatForever(autoreverses: true)) {
+                presetGlowPhase = .pi * 2
+            }
+        }
     }
 }
 

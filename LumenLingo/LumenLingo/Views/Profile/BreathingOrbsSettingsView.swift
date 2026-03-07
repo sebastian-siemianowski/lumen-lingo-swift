@@ -17,22 +17,23 @@ struct BreathingOrbsSettingsView: View {
             // Header with toggle
             headerRow
 
-            if profile?.breathingOrbsEnabled == true {
-                // Rave mode toggle
-                raveModeToggle
+            // Controls always visible (React: <Collapse isOpen={true} noAnimation={true}>)
+            // The toggle only controls whether LayoutBackgroundView renders the orb layer.
 
-                // Color scheme selector
-                schemeSelectorSection
+            // Rave mode toggle
+            raveModeToggle
 
-                // Intensity slider
-                intensitySlider
+            // Color scheme selector
+            schemeSelectorSection
 
-                // Speed slider
-                speedSlider
+            // Intensity slider
+            intensitySlider
 
-                // Status description
-                statusDescription
-            }
+            // Speed slider
+            speedSlider
+
+            // Status description
+            statusDescription
         }
         .animation(.easeInOut(duration: 0.3), value: profile?.breathingOrbsEnabled)
     }

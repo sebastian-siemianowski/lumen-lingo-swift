@@ -293,7 +293,7 @@ struct ProfileView: View {
             appearanceSubTabBar
 
             // Sub-tab content in glass card
-            settingsCard {
+            settingsCard(tint: appearanceSubTabTint) {
                 Group {
                     switch activeAppearanceSubTab {
                     case .darkLight:
@@ -380,6 +380,16 @@ struct ProfileView: View {
 
     // MARK: - Dark/Light Sub-Tab
 
+    /// Per-sub-tab accent tint for the glass panel
+    private var appearanceSubTabTint: Color {
+        switch activeAppearanceSubTab {
+        case .darkLight: return Color(hex: "#8b5cf6")
+        case .breathingOrbs: return .purple
+        case .quantumFlow: return .cyan
+        case .nebulaDrift: return .indigo
+        }
+    }
+
     private var darkLightSettings: some View {
         VStack(spacing: 16) {
             // Dark mode toggle
@@ -465,7 +475,7 @@ struct ProfileView: View {
     // MARK: - Sound Tab (Delegated)
 
     private var soundTab: some View {
-        settingsCard {
+        settingsCard(tint: Color(hex: "#ec4899")) {
             SoundSettingsView()
         }
     }
@@ -473,7 +483,7 @@ struct ProfileView: View {
     // MARK: - Beta Tab (Delegated)
 
     private var betaTab: some View {
-        settingsCard {
+        settingsCard(tint: .cyan) {
             BetaLanguagesView()
         }
     }
@@ -481,7 +491,7 @@ struct ProfileView: View {
     // MARK: - Sync Tab (Delegated)
 
     private var syncTab: some View {
-        settingsCard {
+        settingsCard(tint: .teal) {
             SyncStatusView()
         }
     }
@@ -489,7 +499,7 @@ struct ProfileView: View {
     // MARK: - Sign Out Tab (Delegated)
 
     private var signOutTab: some View {
-        settingsCard {
+        settingsCard(tint: .red.opacity(0.6)) {
             SignOutView()
         }
     }
@@ -512,9 +522,12 @@ struct ProfileView: View {
 
     // MARK: - Shared Components
 
-    private func settingsCard<Content: View>(@ViewBuilder content: () -> Content) -> some View {
-        content()
-            .padding(16)
-            .background(GlassCardBackground(cornerRadius: 18))
+    private func settingsCard<Content: View>(
+        tint: Color? = nil,
+        @ViewBuilder content: @escaping () -> Content
+    ) -> some View {
+        GlassPanelWrapper(cornerRadius: 18, tintColor: tint) {
+            content()
+        }
     }
 }

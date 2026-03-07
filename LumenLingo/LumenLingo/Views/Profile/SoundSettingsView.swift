@@ -18,44 +18,45 @@ struct SoundSettingsView: View {
             // Master toggle
             masterToggle
 
-            if profile?.soundEnabled == true {
-                // Games parent toggle
-                gamesSoundSection
+            // Controls always visible (React parity)
+            // The master toggle only controls actual audio playback state.
 
-                Divider()
-                    .overlay(isDark ? Color.white.opacity(0.06) : Color.black.opacity(0.06))
-                    .padding(.horizontal, 8)
+            // Games parent toggle
+            gamesSoundSection
 
-                // Standalone toggles
-                standaloneSoundToggle(
-                    icon: "hand.tap.fill",
-                    color: .cyan,
-                    title: "UI Interactions",
-                    subtitle: "Button taps & navigation sounds",
-                    isOn: profile?.uiSoundsEnabled ?? true
-                ) {
-                    profile?.uiSoundsEnabled.toggle()
-                }
+            Divider()
+                .overlay(isDark ? Color.white.opacity(0.06) : Color.black.opacity(0.06))
+                .padding(.horizontal, 8)
 
-                standaloneSoundToggle(
-                    icon: "trophy.fill",
-                    color: .yellow,
-                    title: "Achievements",
-                    subtitle: "Level-up fanfares & streak bonuses",
-                    isOn: profile?.achievementSoundsEnabled ?? true
-                ) {
-                    profile?.achievementSoundsEnabled.toggle()
-                }
+            // Standalone toggles
+            standaloneSoundToggle(
+                icon: "hand.tap.fill",
+                color: .cyan,
+                title: "UI Interactions",
+                subtitle: "Button taps & navigation sounds",
+                isOn: profile?.uiSoundsEnabled ?? true
+            ) {
+                profile?.uiSoundsEnabled.toggle()
+            }
 
-                standaloneSoundToggle(
-                    icon: "waveform",
-                    color: .indigo,
-                    title: "Ambient Audio",
-                    subtitle: "Background atmospheric sounds",
-                    isOn: profile?.ambientSoundsEnabled ?? false
-                ) {
-                    profile?.ambientSoundsEnabled.toggle()
-                }
+            standaloneSoundToggle(
+                icon: "trophy.fill",
+                color: .yellow,
+                title: "Achievements",
+                subtitle: "Level-up fanfares & streak bonuses",
+                isOn: profile?.achievementSoundsEnabled ?? true
+            ) {
+                profile?.achievementSoundsEnabled.toggle()
+            }
+
+            standaloneSoundToggle(
+                icon: "waveform",
+                color: .indigo,
+                title: "Ambient Audio",
+                subtitle: "Background atmospheric sounds",
+                isOn: profile?.ambientSoundsEnabled ?? false
+            ) {
+                profile?.ambientSoundsEnabled.toggle()
             }
         }
         .animation(.easeInOut(duration: 0.3), value: profile?.soundEnabled)

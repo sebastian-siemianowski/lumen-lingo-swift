@@ -17,19 +17,20 @@ struct QuantumFlowSettingsView: View {
             // Header with toggle
             headerRow
 
-            if profile?.quantumFlowEnabled == true {
-                // Scene selector
-                sceneSelectorSection
+            // Controls always visible (React: <Collapse isOpen={true}>)
+            // The toggle only controls whether LayoutBackgroundView renders the quantum layer.
 
-                // Intensity slider
-                intensitySlider
+            // Scene selector
+            sceneSelectorSection
 
-                // Speed slider
-                speedSlider
+            // Intensity slider
+            intensitySlider
 
-                // Info message
-                infoMessage
-            }
+            // Speed slider
+            speedSlider
+
+            // Info message
+            infoMessage
         }
         .animation(.easeInOut(duration: 0.3), value: profile?.quantumFlowEnabled)
     }
