@@ -26,6 +26,11 @@ struct MetalCosmicView: UIViewRepresentable {
         view.clearColor = MTLClearColor(red: 0.008, green: 0.004, blue: 0.02, alpha: 1)
         view.colorPixelFormat = .bgra8Unorm
         
+        // Cap at 2× scale — nebula/stars are soft enough that 3× is wasteful.
+        // Reduces pixel count by ~56% on 3× displays for a large perf win.
+        let maxScale = min(UIScreen.main.scale, 2.0)
+        view.contentScaleFactor = maxScale
+        
         // Disable user interaction — passthrough to SwiftUI
         view.isUserInteractionEnabled = false
         

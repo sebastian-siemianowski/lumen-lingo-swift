@@ -184,4 +184,29 @@ struct CosmicUniforms {
     int presetIndex; // 0=lagoon, 1=celestial, 2=solarAurora, 3=spiralHalo, 4=edgeAndromeda, 5=starburstRing
 };
 
+// ============================================================
+// MARK: - Pre-computed Gas Cloud Particle Data
+// Used by SpiralHaloPreset to avoid per-pixel seededRandom calls.
+// Filled once on CPU, passed as buffer to fragment shader.
+// ============================================================
+
+struct GasCloudData {
+    float basePosX;      // For non-arm: final X. For arm: spread offset X
+    float basePosY;      // For non-arm: final Y. For arm: spread offset Y
+    float depth;         // Parallax depth 0..1
+    float sizePx;        // Size in reference pixels
+    float colorR;        // RGB color
+    float colorG;
+    float colorB;
+    float baseAlpha;     // Base opacity
+    float phase;         // Animation phase
+    float flowFreq;      // Flow oscillation frequency
+    float flowBaseMul;   // Flow amplitude base (pre refWidth division)
+    float pulseFreq;     // Pulse breathing frequency
+    float pulsePhase;    // Pulse phase offset
+    float spiralDist;    // >0 for arm particles needing rotation
+    float spiralTheta;   // Spiral arm angle (for rotation reconstruction)
+    float _pad0;         // Padding to 64 bytes (16 floats)
+};
+
 #endif /* CosmicNoise_h */

@@ -23,6 +23,30 @@ struct StarData {
 }
 
 // ============================================================
+// MARK: - Gas Cloud Data (GPU Buffer Layout)
+// Must match Metal GasCloudData struct exactly (16 floats = 64 bytes)
+// ============================================================
+
+struct GasCloudData {
+    var basePosX: Float      // For non-arm: final X. For arm: spread offset X
+    var basePosY: Float      // For non-arm: final Y. For arm: spread offset Y
+    var depth: Float         // Parallax depth 0..1
+    var sizePx: Float        // Size in reference pixels
+    var colorR: Float        // RGB color
+    var colorG: Float
+    var colorB: Float
+    var baseAlpha: Float     // Base opacity
+    var phase: Float         // Animation phase
+    var flowFreq: Float      // Flow oscillation frequency
+    var flowBaseMul: Float   // Flow amplitude base
+    var pulseFreq: Float     // Pulse breathing frequency
+    var pulsePhase: Float    // Pulse phase offset
+    var spiralDist: Float    // >0 for arm particles needing rotation
+    var spiralTheta: Float   // Spiral arm angle (for rotation reconstruction)
+    var _pad0: Float = 0     // Padding to 64 bytes
+}
+
+// ============================================================
 // MARK: - Star Field Generator
 // Generates per-preset star arrays matching React distributions
 // ============================================================
@@ -1459,6 +1483,101 @@ enum StarFieldGenerator {
     // MARK: - Factory
     // ============================================================
     
+    // ============================================================
+    // MARK: - Spiral Halo Gas Cloud Particles (pre-computed for GPU)
+    // Matches the seededRandom-based particle placement that was
+    // previously computed per-pixel in SpiralHaloPreset.metal.
+    // ============================================================
+
+    static func spiralHaloGasClouds() -> [GasCloudData] {
+        var clouds: [GasCloudData] = []
+
+        for i in 0..<40 {
+            var rx = sRand(i * 53, 1)
+            var ry = sRand(i * 53, 2)
+            let armRoll = sRand(i * 53, 8)
+
+            var spiralDist: Float = 0
+            var spiralTheta: Float = 0
+            var isArm = false
+
+            // First 8: center-concentrated (Gaussian σ≈0.06)
+            if i < 8 {
+                let cr1 = sRand(i * 53, 20)
+                let cr2 = sRand(i * 53, 21)
+                let mag = sqrt(-2.0 * log(max(0.0001, cr1))) * 0.06
+                let ca = cr2 * Float.pi * 2.0
+                rx = 0.5 + cos(ca) * mag
+                ry = 0.5 + sin(ca) * mag
+            }
+            // ~60% along spiral arms (time-dependent rotation handled in shader)
+            else if armRoll < 0.60 {
+                let arm = Int(armRoll / 0.15)
+                let sDist = 0.08 + sRand(i * 53, 9) * 0.28
+                let armAngle = Float(arm) * Float.pi * 0.5
+                let theta = log(sDist / 0.05) / 0.5 + armAngle
+                let spread = (sRand(i * 53, 10) - 0.5) * 0.12
+
+                // Store spread offset relative to center; shader adds rotation
+                rx = cos(theta + Float.pi * 0.5) * spread
+                ry = sin(theta + Float.pi * 0.5) * spread
+                spiralDist = sDist
+                spiralTheta = theta
+                isArm = true
+            }
+
+            let pDepth = sRand(i * 53, 3)
+            let cc = sRand(i * 53, 4)
+
+            // Compute ridgeDist using the static position (rotation=0 for arm particles)
+            let staticRx = isArm ? (0.5 + rx + cos(spiralTheta) * spiralDist) : rx
+            let staticRy = isArm ? (0.5 + ry + sin(spiralTheta) * spiralDist) : ry
+            let ridgeDist = sqrt((staticRx - 0.5) * (staticRx - 0.5) + (staticRy - 0.5) * (staticRy - 0.5))
+
+            var colorR: Float, colorG: Float, colorB: Float
+            var sizePx: Float
+            var alpha: Float
+
+            if ridgeDist < 0.10 {
+                if cc > 0.6      { colorR = 120.0/255; colorG = 110.0/255; colorB = 200.0/255 }
+                else if cc > 0.3 { colorR = 100.0/255; colorG = 95.0/255;  colorB = 180.0/255 }
+                else             { colorR = 130.0/255; colorG = 120.0/255; colorB = 190.0/255 }
+                sizePx = 60.0 + sRand(i * 53, 5) * 100.0
+                alpha  = 0.05 + sRand(i * 53, 6) * 0.06
+            } else if ridgeDist < 0.25 {
+                if cc > 0.6      { colorR = 130.0/255; colorG = 160.0/255; colorB = 240.0/255 }
+                else if cc > 0.3 { colorR = 110.0/255; colorG = 130.0/255; colorB = 220.0/255 }
+                else             { colorR = 120.0/255; colorG = 100.0/255; colorB = 210.0/255 }
+                sizePx = 140.0 + sRand(i * 53, 5) * 280.0
+                alpha  = 0.05 + sRand(i * 53, 6) * 0.09
+            } else {
+                if cc > 0.5 { colorR = 100.0/255; colorG = 130.0/255; colorB = 210.0/255 }
+                else        { colorR = 80.0/255;  colorG = 100.0/255; colorB = 180.0/255 }
+                sizePx = 110.0 + sRand(i * 53, 5) * 220.0
+                alpha  = 0.04 + sRand(i * 53, 6) * 0.06
+            }
+
+            let phase     = sRand(i * 53, 7) * 6.283185
+            let flowFreq  = 0.15 + sRand(i * 53, 11) * 0.30
+            let flowBase  = 40.0 + sRand(i * 53, 12) * 30.0
+            let pulseFreq = Float(0.12) + sRand(i * 53, 15) * 0.22
+            let pulsePhase = phase + sRand(i * 53, 16) * 6.283
+
+            clouds.append(GasCloudData(
+                basePosX: rx, basePosY: ry,
+                depth: pDepth, sizePx: sizePx,
+                colorR: colorR, colorG: colorG, colorB: colorB,
+                baseAlpha: alpha,
+                phase: phase,
+                flowFreq: flowFreq, flowBaseMul: flowBase,
+                pulseFreq: pulseFreq, pulsePhase: pulsePhase,
+                spiralDist: spiralDist, spiralTheta: spiralTheta
+            ))
+        }
+
+        return clouds
+    }
+
     static func generateStars(for preset: NebulaPreset) -> [StarData] {
         switch preset {
         case .lagoonNebula: return lagoonStars()

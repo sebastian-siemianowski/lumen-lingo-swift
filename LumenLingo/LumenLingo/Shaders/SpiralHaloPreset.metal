@@ -8,7 +8,7 @@ using namespace metal;
 // Lagoon-inspired volumetric approach adapted for spiral galaxy:
 //   1. Deep void with breathing warm/cool tint
 //   2. 4 atmospheric arm colour regions (independent drift)
-//   3. 45 animated gas cloud particles following spiral structure
+//   3. 40 animated gas cloud particles following spiral structure
 //   4. Warm central core with multiple glow layers
 //   5. Inner indigo halo + arm wisps
 //   6. Warped FBM volumetric texture
@@ -25,7 +25,8 @@ vertex float4 spiralHaloBgVertex(uint vid [[vertex_id]]) {
 
 fragment float4 spiralHaloBgFragment(
     float4 position [[position]],
-    constant CosmicUniforms& u [[buffer(0)]]
+    constant CosmicUniforms& u [[buffer(0)]],
+    constant GasCloudData* gasClouds [[buffer(1)]]
 ) {
     float2 uv = position.xy / u.resolution;
     float2 centered = uv - 0.5;
@@ -148,10 +149,9 @@ fragment float4 spiralHaloBgFragment(
     }
 
     // ================================================================
-    // 3.  GAS CLOUD PARTICLES (45 — the MAIN nebula visual)
-    //     Positioned along spiral arm structure with deep parallax.
-    //     Multi-harmonic liquid flow, turbulence.
-    //     (Lagoon-quality particle system adapted for spiral galaxy)
+    // 3.  GAS CLOUD PARTICLES (40 — from pre-computed buffer)
+    //     All seededRandom-derived properties pre-computed on CPU.
+    //     Only time-dependent transforms computed per-pixel.
     // ================================================================
     {
         float refWidth = 1170.0;
@@ -165,98 +165,50 @@ fragment float4 spiralHaloBgFragment(
 
         float4 gasCanvas = float4(0.0);
 
-        for (int i = 0; i < 55; i++) {
-            float rx = seededRandom(i * 53, 1);
-            float ry = seededRandom(i * 53, 2);
-            float armRoll = seededRandom(i * 53, 8);
+        for (int i = 0; i < 40; i++) {
+            GasCloudData p = gasClouds[i];
 
-            // First 12 particles: concentrated at center (Gaussian σ≈0.06)
-            if (i < 12) {
-                float cr1 = seededRandom(i * 53, 20);
-                float cr2 = seededRandom(i * 53, 21);
-                float mag = sqrt(-2.0 * log(max(0.0001, cr1))) * 0.06;
-                float ca = cr2 * M_PI_F * 2.0;
-                rx = 0.5 + cos(ca) * mag;
-                ry = 0.5 + sin(ca) * mag;
-            }
-            // Next ~60% along spiral arms
-            else if (armRoll < 0.60) {
-                int arm = int(armRoll / 0.15);
-                float spiralDist = 0.08 + seededRandom(i * 53, 9) * 0.28;
-                float armAngle = float(arm) * M_PI_F * 0.5;
-                float theta = log(spiralDist / 0.05) / 0.5 + armAngle;
-                float spread = (seededRandom(i * 53, 10) - 0.5) * 0.12;
-                rx = 0.5 + cos(theta + rotation) * spiralDist
-                   + cos(theta + M_PI_F * 0.5) * spread;
-                ry = 0.5 + sin(theta + rotation) * spiralDist
-                   + sin(theta + M_PI_F * 0.5) * spread;
-            }
-
-            float pDepth = seededRandom(i * 53, 3);
-            float ridgeDist = length(float2(rx - 0.5, ry - 0.5));
-            float3 pColor;
-            float pSizePx;
-            float pAlpha;
-            float cc = seededRandom(i * 53, 4);
-
-            if (ridgeDist < 0.10) {
-                // Core gas — blue-violet galactic core, NOT white/warm
-                if (cc > 0.6)      pColor = rgb(120, 110, 200);
-                else if (cc > 0.3) pColor = rgb(100, 95, 180);
-                else               pColor = rgb(130, 120, 190);
-                pSizePx = 60.0 + seededRandom(i * 53, 5) * 100.0;
-                pAlpha = 0.05 + seededRandom(i * 53, 6) * 0.06;
-            } else if (ridgeDist < 0.25) {
-                if (cc > 0.6)      pColor = rgb(130, 160, 240);
-                else if (cc > 0.3) pColor = rgb(110, 130, 220);
-                else               pColor = rgb(120, 100, 210);
-                pSizePx = 140.0 + seededRandom(i * 53, 5) * 280.0;
-                pAlpha = 0.05 + seededRandom(i * 53, 6) * 0.09;
+            // Reconstruct position — arm particles rotate, others are static
+            float rx, ry;
+            if (p.spiralDist > 0.001) {
+                float rotTheta = p.spiralTheta + rotation;
+                rx = 0.5 + p.basePosX + cos(rotTheta) * p.spiralDist;
+                ry = 0.5 + p.basePosY + sin(rotTheta) * p.spiralDist;
             } else {
-                pColor = cc > 0.5 ? rgb(100, 130, 210) : rgb(80, 100, 180);
-                pSizePx = 110.0 + seededRandom(i * 53, 5) * 220.0;
-                pAlpha = 0.04 + seededRandom(i * 53, 6) * 0.06;
+                rx = p.basePosX;
+                ry = p.basePosY;
             }
 
-            float pSize = (pSizePx / refWidth) * sizeScale;
-            float phase = seededRandom(i * 53, 7) * 6.283185;
-            float parallaxMul = 0.25 + pDepth * 0.75;
+            float pSize = (p.sizePx / refWidth) * sizeScale;
+            float parallaxMul = 0.25 + p.depth * 0.75;
+
+            // Tight early-out based on actual particle size
+            {
+                float2 bwc = float2(rx + camDX * parallaxMul, ry + camDY * parallaxMul);
+                float2 bd = uv - bwc;
+                bd -= round(bd);
+                if (length(bd) > pSize + 0.08) continue;
+            }
 
             float gdX = camDX * parallaxMul;
             float gdY = camDY * parallaxMul;
 
-            float flowFreq = 0.15 + seededRandom(i * 53, 11) * 0.30;
-            float flowTime = t * flowFreq + phase;
-            float flowBase = (40.0 + seededRandom(i * 53, 12) * 30.0)
-                           / refWidth * sizeScale * parallaxMul * speedAmp;
-            float flowX = sin(flowTime) * flowBase
-                        + sin(flowTime * 1.5 + 1.2) * flowBase * 0.18;
-            float flowY = cos(flowTime * 0.6) * flowBase * 0.75
-                        + cos(flowTime * 1.1 + 2.3) * flowBase * 0.13;
+            float flowTime = t * p.flowFreq + p.phase;
+            float flowBase = p.flowBaseMul / refWidth * sizeScale * parallaxMul * speedAmp;
+            float flowX = sin(flowTime) * flowBase;
+            float flowY = cos(flowTime * 0.6) * flowBase * 0.75;
 
             float turbAmp = 45.0 / refWidth * sizeScale * parallaxMul * speedAmp;
-            float noiseX = sin(t * 0.13 + ry * 3.5 + phase) * turbAmp
-                         + sin(t * 0.35 + ry * 2.0 + phase * 1.6) * turbAmp * 0.18;
-            float noiseY = cos(t * 0.10 + rx * 3.5 + phase * 1.2) * turbAmp
-                         + cos(t * 0.28 + rx * 2.3 + phase * 2.0) * turbAmp * 0.15;
+            float noiseX = sin(t * 0.13 + ry * 3.5 + p.phase) * turbAmp;
+            float noiseY = cos(t * 0.10 + rx * 3.5 + p.phase * 1.2) * turbAmp;
 
-            // Bounded velocity — sinusoidal, never linear * t
-            float velAmp = 3.5 / refWidth * sizeScale;
-            float velPhaseX = seededRandom(i * 53, 13) * 6.283;
-            float velPhaseY = seededRandom(i * 53, 14) * 6.283;
-            float velFreq = 0.03 + seededRandom(i * 53, 22) * 0.04;
-            float vx = sin(t * velFreq + velPhaseX) * velAmp;
-            float vy = cos(t * velFreq * 0.8 + velPhaseY) * velAmp;
-
-            float pulseFreq = 0.12 + seededRandom(i * 53, 15) * 0.22;
-            float pulsePhase = phase + seededRandom(i * 53, 16) * 6.283;
-            float pulse = sin(t * pulseFreq + pulsePhase);
+            float pulse = sin(t * p.pulseFreq + p.pulsePhase);
             float intBoost = 0.7 + intensity * 0.6;
             float sz    = pSize * (1.0 + pulse * 0.10);
-            float alpha = pAlpha * intBoost * (1.0 + pulse * 0.15);
+            float alpha = p.baseAlpha * intBoost * (1.0 + pulse * 0.15);
 
-            float2 pos = float2(rx + gdX + flowX + noiseX + vx,
-                                ry + gdY + flowY + noiseY + vy);
+            float2 pos = float2(rx + gdX + flowX + noiseX,
+                                ry + gdY + flowY + noiseY);
             float2 diff = uv - pos;
             diff = diff - round(diff);
             float d = length(diff) / sz;
@@ -268,6 +220,7 @@ fragment float4 spiralHaloBgFragment(
                 else              gradAlpha = mix(0.1f, 0.0f, (d - 0.7f) / 0.3f);
                 gradAlpha *= alpha;
 
+                float3 pColor = float3(p.colorR, p.colorG, p.colorB);
                 float3 srcPremult = pColor * gradAlpha;
                 gasCanvas.rgb = srcPremult + gasCanvas.rgb * (1.0 - gradAlpha);
                 gasCanvas.a   = gradAlpha  + gasCanvas.a   * (1.0 - gradAlpha);
@@ -297,7 +250,7 @@ fragment float4 spiralHaloBgFragment(
     // ================================================================
     {
         float3 gasP = float3(centered * 4.0, t * 0.04);
-        float gasNoise = warpedFBM(gasP, t * 0.6, 5);
+        float gasNoise = fbm(gasP, 2, 2.0, 0.5);
         float gasDensity = pow(gasNoise * 0.5 + 0.5, 2.0);
 
         // Core-concentrated FBM — subtle texture at center, faded at very center
