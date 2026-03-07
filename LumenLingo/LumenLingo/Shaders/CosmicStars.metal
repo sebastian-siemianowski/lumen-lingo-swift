@@ -79,9 +79,21 @@ vertex StarVertexOut cosmicStarVertex(
     // Global breathing for galaxy presets
     float breathing = uniforms.globalBreathing;
     
-    // Drift animation
-    float driftX = sin(t * 0.1 + star.driftAngle) * star.driftSpeed * 5.0;
-    float driftY = cos(t * 0.08 + star.driftAngle * 1.3) * star.driftSpeed * 3.5;
+    // Depth-dependent parallax factor (near stars move more)
+    // zDepth: 0=far, 1=near  →  parallax: 0.15..1.0
+    float parallaxFactor = 0.15 + star.zDepth * 0.85;
+    
+    // Drift animation — amplified and depth-dependent
+    float driftX = sin(t * 0.1 + star.driftAngle) * star.driftSpeed * 12.0 * parallaxFactor;
+    float driftY = cos(t * 0.08 + star.driftAngle * 1.3) * star.driftSpeed * 9.0 * parallaxFactor;
+    
+    // Liquid flow undulation (per-star unique sinusoidal movement)
+    // React: flowFreq=0.2+rand*0.4, amp=8*(1-zDepth) px
+    float flowFreq = 0.2 + star.motionParams.y * 0.4; // .y encodes flow param
+    float flowTime = t * flowFreq + phase;
+    float flowAmp = 8.0 * parallaxFactor;
+    float flowX = sin(flowTime) * flowAmp;
+    float flowY = cos(flowTime * 0.7) * flowAmp * 0.75;
     
     // Differential rotation (for galaxy presets)
     float rotAngle = uniforms.globalRotation * star.rotationFactor;
@@ -91,11 +103,11 @@ vertex StarVertexOut cosmicStarVertex(
     rotatedPos.y = pos.x * sin(rotAngle) + pos.y * cos(rotAngle);
     rotatedPos += 0.5; // back to 0..1
     
-    // Apply camera drift
+    // Apply camera drift with parallax (near stars drift more)
     float2 screenPos = rotatedPos * uniforms.resolution;
-    screenPos += uniforms.cameraDrift;
-    screenPos.x += driftX;
-    screenPos.y += driftY;
+    screenPos += uniforms.cameraDrift * parallaxFactor;
+    screenPos.x += driftX + flowX;
+    screenPos.y += driftY + flowY;
     screenPos *= (1.0 + breathing);
     
     // Determine quad size — hero stars need larger quads for spikes

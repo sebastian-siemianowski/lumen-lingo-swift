@@ -208,8 +208,8 @@ final class MetalCosmicRenderer: NSObject, MTKViewDelegate {
                 speed: speed,
                 resolution: resolution,
                 cameraDrift: cameraOffset(time: elapsed, preset: preset),
-                globalRotation: elapsed * 0.001,
-                globalBreathing: sin(elapsed * 0.15) * 0.02,
+                globalRotation: elapsed * speed * 0.001,
+                globalBreathing: sin(elapsed * speed * 0.15) * 0.02,
                 presetIndex: Int32(presetIdx)
             )
             
@@ -241,19 +241,23 @@ final class MetalCosmicRenderer: NSObject, MTKViewDelegate {
     // MARK: - Camera Drift (per-preset)
     
     private func cameraOffset(time t: Float, preset: NebulaPreset) -> SIMD2<Float> {
+        // React uses CSS pixels on retina → multiply by ~3 for real pixel equivalence.
+        // Lagoon React: camX = sin(elapsed*0.03)*15, camY = cos(elapsed*0.025)*12
+        // On 3× display → 45px, 36px. Use speed-scaled time for responsiveness.
+        let st = t * speed  // speed-responsive
         switch preset {
         case .lagoonNebula:
-            return SIMD2(sin(t * 0.03) * 15, cos(t * 0.025) * 12)
+            return SIMD2(sin(st * 0.03) * 45, cos(st * 0.025) * 36)
         case .celestialLagoon:
-            return SIMD2(sin(t * 0.02) * 12, cos(t * 0.018) * 10)
+            return SIMD2(sin(st * 0.02) * 36, cos(st * 0.018) * 30)
         case .solarAurora:
-            return SIMD2(sin(t * 0.025) * 18, cos(t * 0.03) * 8)
+            return SIMD2(sin(st * 0.025) * 54, cos(st * 0.03) * 24)
         case .spiralHaloGalaxy:
-            return SIMD2(sin(t * 0.015) * 10, cos(t * 0.02) * 10)
+            return SIMD2(sin(st * 0.015) * 30, cos(st * 0.02) * 30)
         case .edgeOfAndromeda:
-            return SIMD2(sin(t * 0.02) * 14, cos(t * 0.015) * 6)
+            return SIMD2(sin(st * 0.02) * 42, cos(st * 0.015) * 18)
         case .starburstRing:
-            return SIMD2(sin(t * 0.018) * 12, cos(t * 0.022) * 12)
+            return SIMD2(sin(st * 0.018) * 36, cos(st * 0.022) * 36)
         }
     }
 }

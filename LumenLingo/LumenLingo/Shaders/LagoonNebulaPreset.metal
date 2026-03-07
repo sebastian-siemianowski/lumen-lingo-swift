@@ -155,17 +155,19 @@ fragment float4 lagoonBgFragment(
     // ================================================================
     // 3.  GAS CLOUD PARTICLES  (45 animated — the MAIN nebula visual)
     //
-    //     Discrete blurred particles — no procedural noise.
-    //     This is what React draws in JWSTGasCanvas.
+    //     Discrete blurred particles with dynamic 3D movement.
+    //     Each particle has unique drift angle, flow undulation,
+    //     and depth-dependent parallax — matching React's "liquid
+    //     drift physics" system.
     //     Source-over compositing within canvas, then screen blend.
-    //     React: filter: blur(3px), mixBlendMode: screen, opacity: 0.9
-    //
-    //     Particles animate via drift + noise + velocity + pulse.
-    //     This creates the visible "3D cloud movement" the user sees.
     // ================================================================
     {
         float refWidth = 1170.0;
         float sizeScale = clamp(refWidth / u.resolution.x, 0.35, 1.0);
+
+        // Global camera drift for gas clouds (parallax base)
+        float camDriftX = sin(t * 0.05) * 30.0 / refWidth * sizeScale;
+        float camDriftY = cos(t * 0.04) * 22.0 / refWidth * sizeScale;
 
         float4 gasCanvas = float4(0.0);
 
@@ -178,19 +180,22 @@ fragment float4 lagoonBgFragment(
             float  pSizePx;
             float  pAlpha;
 
+            // Per-particle depth: 0=far, 1=near (affects parallax)
+            float pDepth = seededRandom(i * 49, 9);
+
             if (ridgePos < 0.8) {
                 // DUST ZONE — golden / burnt-orange / deep-rust
                 float cc = seededRandom(i * 49, 3);
-                pColor = cc > 0.6 ? rgb(255, 180, 80)    // golden dust
-                       : cc > 0.3 ? rgb(220, 100, 50)    // burnt orange
-                                  : rgb(180, 60, 40);    // deep rust
+                pColor = cc > 0.6 ? rgb(255, 180, 80)
+                       : cc > 0.3 ? rgb(220, 100, 50)
+                                  : rgb(180, 60, 40);
                 pSizePx = 180.0 + seededRandom(i * 49, 4) * 350.0;
                 pAlpha  = 0.06 + seededRandom(i * 49, 5) * 0.09;
             } else if (ridgePos > 1.2) {
                 // IONIZED ZONE — electric cyan / deep teal
                 float cc = seededRandom(i * 49, 3);
-                pColor = cc > 0.5 ? rgb(100, 220, 255)   // electric cyan
-                                  : rgb(20, 100, 120);   // deep teal
+                pColor = cc > 0.5 ? rgb(100, 220, 255)
+                                  : rgb(20, 100, 120);
                 pSizePx = 130.0 + seededRandom(i * 49, 4) * 240.0;
                 pAlpha  = 0.05 + seededRandom(i * 49, 5) * 0.07;
             } else {
@@ -202,44 +207,45 @@ fragment float4 lagoonBgFragment(
 
             float pSize = (pSizePx / refWidth) * sizeScale;
 
-            // Animation — drift, noise, velocity, pulse
-            // All values match React exactly:
-            //   driftX = sin(elapsed * 0.05) * 20
-            //   driftY = cos(elapsed * 0.04) * 15
-            //   noiseX = sin(elapsed*0.1 + p.y*0.002) * 20
-            //   noiseY = cos(elapsed*0.1 + p.x*0.002) * 20
-            //   velocity = (rand-0.5)*0.2 * elapsed * 20
-            //   pulse = sin(elapsed*0.2 + phase)
+            // --- Dynamic 3D Movement System ---
             float phase  = seededRandom(i * 49, 8) * 6.283185;
 
-            float driftUV = 20.0 / refWidth * sizeScale;
-            float gdX    = sin(t * 0.05) * driftUV;
-            float gdY    = cos(t * 0.04) * driftUV * 0.75;
+            // A. Depth-dependent parallax (near clouds move more)
+            float parallaxMul = 0.3 + pDepth * 0.7; // 0.3..1.0
+            float gdX = camDriftX * parallaxMul;
+            float gdY = camDriftY * parallaxMul;
 
-            float noiseUV = 20.0 / refWidth * sizeScale;
-            float noiseX = sin(t * 0.1 + ry * 1.7) * noiseUV;
-            float noiseY = cos(t * 0.1 + rx * 1.7) * noiseUV;
+            // B. Per-particle liquid flow (unique angle & frequency)
+            float flowFreq = 0.15 + seededRandom(i * 49, 10) * 0.35;
+            float flowTime = t * flowFreq + phase;
+            float flowAmplitude = (15.0 + seededRandom(i * 49, 11) * 12.0)
+                                / refWidth * sizeScale * parallaxMul;
+            float flowX = sin(flowTime) * flowAmplitude;
+            float flowY = cos(flowTime * 0.7) * flowAmplitude * 0.8;
 
-            float velScale = 4.0 / refWidth * sizeScale;
+            // C. Position-dependent turbulence
+            float noiseUV = 25.0 / refWidth * sizeScale;
+            float noiseX = sin(t * 0.1 + ry * 3.5 + phase) * noiseUV * parallaxMul;
+            float noiseY = cos(t * 0.08 + rx * 3.5 + phase * 1.3) * noiseUV * parallaxMul;
+
+            // D. Constant velocity drift
+            float velScale = 5.0 / refWidth * sizeScale;
             float vx = (seededRandom(i * 49, 6) - 0.5) * velScale * t;
             float vy = (seededRandom(i * 49, 7) - 0.5) * velScale * t;
 
+            // E. Size & alpha pulsation
             float pulse = sin(t * 0.2 + phase);
-            float sz    = pSize * (1.0 + pulse * 0.15);
-            float alpha = pAlpha * u.intensity * (1.0 + pulse * 0.2);
+            float sz    = pSize * (1.0 + pulse * 0.18);
+            float alpha = pAlpha * u.intensity * (1.0 + pulse * 0.25);
 
-            float2 pos  = float2(rx + gdX + noiseX + vx,
-                                 ry + gdY + noiseY + vy);
+            float2 pos  = float2(rx + gdX + flowX + noiseX + vx,
+                                 ry + gdY + flowY + noiseY + vy);
             float2 diff = uv - pos;
             diff = diff - round(diff);  // toroidal wrapping
             float d = length(diff) / sz;
 
             if (d < 1.0) {
-                // React 4-stop radial gradient:
-                //   0%:   rgba(r,g,b, alpha)
-                //   40%:  rgba(r,g,b, alpha * 0.4)
-                //   70%:  rgba(r,g,b, alpha * 0.1)
-                //   100%: rgba(r,g,b, 0)
+                // 4-stop radial gradient
                 float gradAlpha;
                 if      (d < 0.4) gradAlpha = mix(1.0f, 0.4f, d / 0.4f);
                 else if (d < 0.7) gradAlpha = mix(0.4f, 0.1f, (d - 0.4f) / 0.3f);
@@ -253,7 +259,7 @@ fragment float4 lagoonBgFragment(
             }
         }
 
-        // React: canvas with mixBlendMode='screen', opacity=0.9
+        // Screen blend gas canvas onto background
         if (gasCanvas.a > 0.001) {
             float3 gasColor   = gasCanvas.rgb / max(gasCanvas.a, 0.001);
             float  gasOpacity = gasCanvas.a * 0.9;
@@ -262,18 +268,13 @@ fragment float4 lagoonBgFragment(
     }
 
     // ================================================================
-    // 4.  BOK GLOBULES  (dark dust lanes — simple multiply darkening)
-    //     React: radial-gradient + elliptical gradient, multiply blend,
-    //     filter: blur(40px).  Creates dark "negative space".
-    //     NO noise modulation — just smooth CSS-like gradients.
+    // 4.  BOK GLOBULES  (dark dust lanes — multiply darkening)
     // ================================================================
     {
-        // React: radial-gradient(circle at 40%,40%, transparent 0%, transparent 40%, rgba(0,0,0,0.3) 100%)
         float d1 = length(uv - float2(0.40, 0.40));
-        float bok1 = smoothstep(0.35, 1.0, d1);   // transparent→dark from centre
+        float bok1 = smoothstep(0.35, 1.0, d1);
         col *= 1.0 - bok1 * 0.25;
 
-        // React: radial-gradient(ellipse 30%×10% at 50%,50%, rgba(0,0,0,0.4) 0%, transparent 60%)
         float2 lane = (uv - float2(0.50, 0.50)) / float2(0.30, 0.10);
         float bok2 = exp(-dot(lane, lane) * 1.5);
         col *= 1.0 - bok2 * 0.30;
