@@ -1144,27 +1144,35 @@ enum StarFieldGenerator {
         return stars
     }
     
+    
     // ============================================================
-    // MARK: - Starburst Ring Galaxy (800 + 100 deep = 900 stars)
-    // Continuous z-depth, rich colours, radial ring positioning
+    // MARK: - Starburst Ring Galaxy (1600 + 200 deep = 1800 stars)
+    // Cosmic eye: dense ring edges, concentrated core, halo type stars
+    // Matches React's layered complexity with ring bias distribution
     // ============================================================
     
     static func starburstRingStars() -> [StarData] {
         var stars: [StarData] = []
         
         // ============================================================
-        // Main stellar population — 800 stars
+        // Main stellar population — 1600 stars
         //
-        // Spatial zones for ring galaxy:
-        //   Core (4%): Gaussian r<0.1
-        //   Ring (58%): annular 0.24..0.52
+        // Spatial zones (matching React ratios):
+        //   Core (4%): beta distribution r<0.1 (concentrated)
+        //   Ring (58%): annular 0.24..0.52 with inner/outer bias
         //   Halo (20%): annular 0.52..0.75
         //   Field (18%): uniform random
         //
-        // Colour: weighted 10-colour system + depth-dependent shifts
-        // Continuous z-depth, hero/mystical, depth-dependent everything
+        // Star types matching React:
+        //   1.5% massive super-giants (hero, size 2.5)
+        //   3.5% large bright (hero, size 1.5) 
+        //   10%  medium normal (size 1.0)
+        //   20%  mid-size halo/mystical (size 1.5, soft diffuse)
+        //   65%  small normal (size 0.5)
+        //
+        // Weighted 10-colour system, continuous z-depth
         // ============================================================
-        let starCount = 800
+        let starCount = 1600
         
         // Weighted color selection from React (10 colors)
         let weightedColors: [(SIMD4<Float>, Float)] = [
@@ -1189,13 +1197,16 @@ enum StarFieldGenerator {
             return weightedColors[0].0
         }
         
+        let ringInner: Float = 0.24
+        let ringOuter: Float = 0.52
+        
         for i in 0..<starCount {
-            func rand(_ n: Int) -> Float { sRand(i * 137, n) }
+            func rand(_ n: Int) -> Float { sRand(i * 7, n) }
             
             // Continuous z-depth
             let z = pow(rand(1), 0.55)
             
-            // Spatial zone assignment (matches React ratios)
+            // ── Spatial zone (matching React ratios) ──
             let zoneRoll = rand(30)
             let zone: Int // 0=core, 1=ring, 2=halo, 3=field
             var rx: Float
@@ -1204,26 +1215,25 @@ enum StarFieldGenerator {
             
             if zoneRoll < 0.04 {
                 zone = 0
-                // Core — concentrated Gaussian
+                // Core — beta distribution (rand*rand concentrates near zero)
                 let angle = rand(2) * .pi * 2
-                let r = rand(3) * 0.1
+                let r = rand(3) * rand(4) * 0.1 // product of two randoms
                 rx = 0.5 + cos(angle) * r
                 ry = 0.5 + sin(angle) * r
             } else if zoneRoll < 0.62 {
                 zone = 1
                 isRing = true
-                // Ring — radius 0.24..0.52
+                // Ring with inner/outer bias (creates "cosmic eye" structure)
                 let angle = rand(2) * .pi * 2
-                let innerR: Float = 0.24
-                let outerR: Float = 0.52
-                let r = innerR + rand(3) * (outerR - innerR)
+                let bias: Float = zoneRoll < 0.42 ? 0.3 : 0.8
+                let r = ringInner + (ringOuter - ringInner) * (rand(3) * 0.4 + bias * 0.6)
                 rx = 0.5 + cos(angle) * r
                 ry = 0.5 + sin(angle) * r
             } else if zoneRoll < 0.82 {
                 zone = 2
-                // Halo — 0.52..0.75
+                // Halo — beyond ring
                 let angle = rand(2) * .pi * 2
-                let r: Float = 0.52 + rand(3) * 0.23
+                let r: Float = ringOuter + rand(3) * 0.23
                 rx = 0.5 + cos(angle) * r
                 ry = 0.5 + sin(angle) * r
             } else {
@@ -1233,12 +1243,42 @@ enum StarFieldGenerator {
                 ry = rand(3)
             }
             
-            // ── Depth-dependent colour — base from weighted system + depth shifts ──
-            let colorRoll = rand(7)
+            let dist = sqrt((rx - 0.5) * (rx - 0.5) + (ry - 0.5) * (ry - 0.5))
+            let ringAngle = atan2(ry - 0.5, rx - 0.5)
+            
+            // ── Size & Type — matching React distribution exactly ──
+            let sr = rand(4)
+            var sizeClass: Float
+            var starType: Int32
+            
+            if sr > 0.985 {
+                // Massive Super-Giants (1.5%) — very rare
+                sizeClass = 2.5
+                starType = 1 // hero
+            } else if sr > 0.95 {
+                // Large Bright Stars (3.5%)
+                sizeClass = 1.5
+                starType = 1 // hero
+            } else if sr > 0.85 {
+                // Medium normal (10%)
+                sizeClass = 1.0
+                starType = 0
+            } else if sr > 0.65 {
+                // Mid-Size Halo/Mystical (20%) — soft diffuse
+                sizeClass = 1.5
+                starType = 2 // mystical/halo
+            } else {
+                // Small normal (65%)
+                sizeClass = 0.5
+                starType = 0
+            }
+            
+            // ── Colour — weighted system + depth-dependent shifts ──
+            let colorRoll = rand(6)
             var baseColor: SIMD4<Float>
             
             if z < 0.20 {
-                // Far — faint, muted versions
+                // Far — faint, muted
                 if colorRoll < 0.30 {
                     baseColor = SIMD4(235.0/255, 240.0/255, 250.0/255, 1) // Pale white
                 } else if colorRoll < 0.50 {
@@ -1253,21 +1293,25 @@ enum StarFieldGenerator {
                     baseColor = SIMD4(210.0/255, 235.0/255, 255.0/255, 1) // Ice blue
                 }
             } else if z < 0.50 {
-                // Mid — weighted colour system + violet/pink accents
+                // Mid — weighted colour system + ring accent colours
                 baseColor = pickWeightedColor(colorRoll)
-                // Add depth accent shift for ring stars
-                if isRing && rand(31) < 0.3 {
+                // Ring accent shift — violet/pink/blue tinting for ring stars
+                if isRing && rand(31) < 0.35 {
                     let accentRoll = rand(32)
-                    if accentRoll < 0.35 {
-                        baseColor = SIMD4(200.0/255, 180.0/255, 255.0/255, 1) // Violet
-                    } else if accentRoll < 0.60 {
+                    if accentRoll < 0.30 {
+                        baseColor = SIMD4(200.0/255, 180.0/255, 255.0/255, 1) // Soft violet
+                    } else if accentRoll < 0.50 {
                         baseColor = SIMD4(255.0/255, 200.0/255, 230.0/255, 1) // Pink
+                    } else if accentRoll < 0.70 {
+                        baseColor = SIMD4(180.0/255, 220.0/255, 255.0/255, 1) // Cool blue
+                    } else if accentRoll < 0.85 {
+                        baseColor = SIMD4(246.0/255, 201.0/255, 255.0/255, 1) // Soft magenta
                     } else {
-                        baseColor = SIMD4(180.0/255, 220.0/255, 255.0/255, 1) // Blue
+                        baseColor = SIMD4(200.0/255, 255.0/255, 245.0/255, 1) // Teal
                     }
                 }
             } else {
-                // Foreground — vivid weighted + exotic accents
+                // Foreground — vivid weighted + exotic accent palette
                 if colorRoll < 0.10 {
                     baseColor = SIMD4(200.0/255, 170.0/255, 255.0/255, 1) // Bright violet
                 } else if colorRoll < 0.18 {
@@ -1295,55 +1339,45 @@ enum StarFieldGenerator {
                 }
             }
             
-            // ── Depth-dependent size ──
-            let baseSize: Float
-            if z < 0.20 {
-                baseSize = (0.3 + rand(9) * 0.5) * 1.2
-            } else if z < 0.50 {
-                baseSize = (0.4 + pow(rand(9), 2.0) * 1.2) * (1.2 - z * 0.4) * 1.4
-            } else {
-                baseSize = (0.5 + pow(rand(9), 1.8) * 1.8) * (1.4 - z * 0.3) * 1.6
-            }
-            
-            // ── Star type — hero and mystical distribution ──
-            let isHero = isRing && z < 0.4 && rand(10) > 0.94
-            let mysticalChance: Float = z < 0.20 ? 0.10 : (z < 0.50 ? 0.30 : 0.45)
-            let isMystical = !isHero && rand(18) < mysticalChance
-            
-            let baseAlpha: Float = (0.60 + rand(11) * 0.55) * (1.0 - z * 0.35)
+            // ── Alpha — opacity from React: 0.1 + rand * 0.7 ──
+            let baseAlpha: Float = (0.10 + rand(7) * 0.70) * (1.0 - z * 0.25)
             baseColor.w = min(baseAlpha, 1.0)
             
-            let starType: Int32 = isHero ? 1 : (isMystical ? 2 : 0)
+            // ── Twinkle — slower for elegance ──
+            let twinkleSpeed: Float = 0.10 + rand(11) * 0.50
             
-            // ── Depth-dependent twinkle speed ──
-            let twinkleSpeed: Float = z < 0.20
-                ? 0.10 + rand(16) * 0.20
-                : (z < 0.50
-                   ? 0.20 + rand(16) * 0.35
-                   : 0.30 + rand(16) * 0.50)
+            // ── Orbital motion — Keplerian for core/ring/halo ──
+            let isOrbital = zone < 3 // core, ring, halo orbit; field doesn't
+            let orbitalSpeed: Float = isOrbital
+                ? (0.01 + rand(9) * 0.02) * (0.3 / (dist + 0.1))
+                : 0.0
             
-            // Ring angle for drift
-            let ringAngle = atan2(ry - 0.5, rx - 0.5)
-            let distFromCenter = sqrt((rx - 0.5) * (rx - 0.5) + (ry - 0.5) * (ry - 0.5))
-            
-            // Zone tint — ring regions get violet tint
-            let tintStrength: Float = isRing ? (0.06 + z * 0.06) : 0
-            let tintColor: SIMD4<Float> = isRing
-                ? SIMD4(154.0/255, 86.0/255, 255.0/255, 1)
-                : SIMD4(0, 0, 0, 0)
+            // Zone tint — ring and core get violet/magenta tint
+            let tintStrength: Float
+            let tintColor: SIMD4<Float>
+            if isRing {
+                tintStrength = 0.08 + z * 0.06
+                tintColor = SIMD4(154.0/255, 86.0/255, 255.0/255, 1)
+            } else if zone == 0 {
+                tintStrength = 0.10 + z * 0.05
+                tintColor = SIMD4(217.0/255, 196.0/255, 255.0/255, 1)
+            } else {
+                tintStrength = 0
+                tintColor = SIMD4(0, 0, 0, 0)
+            }
             
             stars.append(StarData(
                 position: SIMD2(rx, ry),
-                baseSize: baseSize * (isHero ? 3.5 : 1.0),
+                baseSize: sizeClass,
                 zDepth: z,
                 color: baseColor,
                 twinkleSpeed: twinkleSpeed,
-                twinklePhase: rand(17) * .pi * 2,
+                twinklePhase: rand(10) * .pi * 2,
                 twinkleAmp: 0.15,
                 starType: starType,
                 driftAngle: ringAngle,
-                driftSpeed: (0.005 + rand(13) * 0.02) * (1.0 - z * 0.5) * 50.0,
-                motionParams: SIMD2(Float(zone), distFromCenter),
+                driftSpeed: orbitalSpeed * 50.0,
+                motionParams: SIMD2(Float(zone), dist),
                 rotationFactor: 0,
                 zoneTintStrength: tintStrength,
                 zoneTintColor: tintColor
@@ -1351,25 +1385,27 @@ enum StarFieldGenerator {
         }
         
         // ============================================================
-        // Deep Parallax Stars — 100 faint ring dust
+        // Deep Parallax Stars — 200 faint ring dust (increased)
         // ============================================================
-        for i in 0..<100 {
-            let seed = 1000 + i * 3
+        for i in 0..<200 {
+            let seed = 2000 + i * 3
             let rx = sRand(seed, 1)
             let ry = sRand(seed, 2)
-            let size: Float = 0.3 + sRand(seed, 3) * 1.0
-            let opacity: Float = 0.08 + sRand(seed, 4) * 0.22
+            let size: Float = 0.25 + sRand(seed, 3) * 0.8
+            let opacity: Float = 0.06 + sRand(seed, 4) * 0.18
             
             let dustRoll = sRand(seed, 5)
             let color: SIMD4<Float>
-            if dustRoll < 0.30 {
+            if dustRoll < 0.25 {
                 color = SIMD4(220.0/255, 215.0/255, 245.0/255, opacity) // Faint violet
-            } else if dustRoll < 0.55 {
+            } else if dustRoll < 0.50 {
                 color = SIMD4(230.0/255, 235.0/255, 250.0/255, opacity) // Cool blue
-            } else if dustRoll < 0.75 {
+            } else if dustRoll < 0.70 {
                 color = SIMD4(240.0/255, 235.0/255, 225.0/255, opacity) // Warm white
-            } else {
+            } else if dustRoll < 0.85 {
                 color = SIMD4(210.0/255, 225.0/255, 250.0/255, opacity) // Steel blue
+            } else {
+                color = SIMD4(246.0/255, 201.0/255, 255.0/255, opacity) // Soft magenta
             }
             
             stars.append(StarData(
