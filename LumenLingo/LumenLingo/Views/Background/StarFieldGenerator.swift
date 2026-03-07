@@ -126,7 +126,7 @@ enum StarFieldGenerator {
                 color: baseColor,
                 twinkleSpeed: 0.25 + rand(16) * 0.5,
                 twinklePhase: rand(17) * .pi * 2,
-                twinkleAmp: 0.25,  // React range 0.70–1.00 breathing
+                twinkleAmp: 0.15,  // React range 0.85±0.15 – gentle shimmer
                 starType: starType,
                 driftAngle: rand(12) * .pi * 2,
                 driftSpeed: (0.005 + rand(13) * 0.02) * (1.0 - z * 0.5) * 50.0,
@@ -157,11 +157,11 @@ enum StarFieldGenerator {
                 color: color,
                 twinkleSpeed: 0.1 + sRand(seed, 6) * 0.2,
                 twinklePhase: sRand(seed, 7) * .pi * 2,
-                twinkleAmp: 0.3,
+                twinkleAmp: 0.12,  // very subtle for background dust
                 starType: 0,
-                driftAngle: 0,
-                driftSpeed: 0.1,
-                motionParams: SIMD2(0, 0),
+                driftAngle: sRand(seed, 8) * .pi * 2, // random direction
+                driftSpeed: 0.05 + sRand(seed, 9) * 0.1, // very slow
+                motionParams: SIMD2(0, 0.1 + sRand(seed, 10) * 0.15),
                 rotationFactor: 0,
                 zoneTintStrength: 0,
                 zoneTintColor: SIMD4(0, 0, 0, 0)

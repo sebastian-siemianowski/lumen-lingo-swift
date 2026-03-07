@@ -42,32 +42,34 @@ fragment float4 lagoonBgFragment(
     float speedAmp = 1.0 + max(u.speed - 1.0, 0.0) * 0.4;
 
     // ================================================================
-    // 1.  DEEP VOID BASE — breathing warm/cool diagonal tint
+    // 1.  DEEP VOID BASE — complex multi-axis drift (NO breathing)
     // ================================================================
     float3 col = rgb(2, 1, 3);
     {
-        float bx = sin(t * 0.12) * 0.03;
-        float by = cos(t * 0.10) * 0.02;
+        // Lissajous figure drift instead of symmetric breathing
+        float bx = sin(t * 0.06) * 0.04 + sin(t * 0.17) * 0.012;
+        float by = cos(t * 0.05) * 0.03 + cos(t * 0.13) * 0.010;
 
         float warmD = length(uv - float2(0.20 + bx, 0.80 - by));
         col += rgb(30, 10, 5) * exp(-warmD * warmD * 1.4) * 0.28 * intensity;
 
-        float coolD = length(uv - float2(0.80 - bx, 0.20 + by));
+        float coolD = length(uv - float2(0.80 - bx * 0.8, 0.20 + by * 1.2));
         col += rgb(10, 20, 40) * exp(-coolD * coolD * 1.4) * 0.32 * intensity;
     }
 
     // ================================================================
-    // 2.  ATMOSPHERIC COLOUR REGIONS (breathing + colour temperature)
-    //     Centers gently drift; colours shift warm↔cool over time.
+    // 2.  ATMOSPHERIC COLOUR REGIONS (independent multi-axis drift)
+    //     Each region drifts on its own Lissajous path + color shift.
+    //     No uniform breathing — each moves independently for 3D depth.
     // ================================================================
     {
-        float breathe  = sin(t * 0.15) * 0.025;
-        float breathe2 = cos(t * 0.11) * 0.020;
         float tempCycle = sin(t * 0.06) * 0.5 + 0.5; // 0..1 warm↔cool
 
-        // A. RUST/ORANGE DUST BANK — upper-left
+        // A. RUST/ORANGE DUST BANK — upper-left (slow figure-8)
         {
-            float2 center = float2(0.25 + breathe, 0.25 - breathe2);
+            float2 drift = float2(sin(t * 0.07) * 0.03 + sin(t * 0.19) * 0.008,
+                                  cos(t * 0.06) * 0.025 + cos(t * 0.15) * 0.007);
+            float2 center = float2(0.25 + drift.x, 0.25 - drift.y);
             float2 nd = (uv - center) / float2(0.55, 0.45);
             float  d  = length(nd);
             float  g  = exp(-d * d * 0.6);
@@ -86,9 +88,11 @@ fragment float4 lagoonBgFragment(
             col = screenBlend(col, c, g * a * 0.70 * intensity);
         }
 
-        // B. GOLDEN ILLUMINATED FRONTIER — centre diagonal
+        // B. GOLDEN ILLUMINATED FRONTIER — centre diagonal (elliptical orbit)
         {
-            float2 center = float2(0.38 - breathe2, 0.40 + breathe * 0.7);
+            float2 drift = float2(cos(t * 0.05) * 0.028 + sin(t * 0.14) * 0.009,
+                                  sin(t * 0.045) * 0.022 + cos(t * 0.12) * 0.007);
+            float2 center = float2(0.38 - drift.x, 0.40 + drift.y);
             float2 nd = (uv - center) / float2(0.48, 0.42);
             float  d  = length(nd);
             float  g  = exp(-d * d * 0.75);
@@ -106,9 +110,11 @@ fragment float4 lagoonBgFragment(
             col = screenBlend(col, c, g * a * 0.72 * intensity);
         }
 
-        // C. ELECTRIC CYAN IONIZATION — lower-right
+        // C. ELECTRIC CYAN IONIZATION — lower-right (gentle arc)
         {
-            float2 center = float2(0.75 - breathe, 0.75 + breathe2);
+            float2 drift = float2(sin(t * 0.055) * 0.032 + cos(t * 0.16) * 0.010,
+                                  cos(t * 0.048) * 0.026 + sin(t * 0.13) * 0.008);
+            float2 center = float2(0.75 - drift.x, 0.75 + drift.y);
             float2 nd = (uv - center) / float2(0.62, 0.52);
             float  d  = length(nd);
             float  g  = exp(-d * d * 0.45);
@@ -126,9 +132,11 @@ fragment float4 lagoonBgFragment(
             col = screenBlend(col, c, g * a * 0.70 * intensity);
         }
 
-        // D. DEEP TEAL ACCENT — centre-right
+        // D. DEEP TEAL ACCENT — centre-right (lazy pendulum)
         {
-            float2 center = float2(0.58 + breathe2, 0.52 - breathe);
+            float2 drift = float2(cos(t * 0.065) * 0.024 + sin(t * 0.18) * 0.007,
+                                  sin(t * 0.055) * 0.020 + cos(t * 0.14) * 0.006);
+            float2 center = float2(0.58 + drift.x, 0.52 - drift.y);
             float2 nd = (uv - center) / float2(0.42, 0.38);
             float  d  = length(nd);
             float  g  = exp(-d * d * 0.9);
@@ -221,11 +229,14 @@ fragment float4 lagoonBgFragment(
             float vx = (seededRandom(i * 49, 6) - 0.5) * velScale * t;
             float vy = (seededRandom(i * 49, 7) - 0.5) * velScale * t;
 
-            // E. Size & alpha pulsation — intensity-responsive
-            float pulse = sin(t * 0.3 + phase);
+            // E. Size & alpha modulation — phase-staggered (NOT uniform breathing)
+            //    Each particle pulses at its own rate/phase so they don't sync
+            float pulseFreq = 0.15 + seededRandom(i * 49, 12) * 0.25; // 0.15–0.40 (varied)
+            float pulsePhase = phase + seededRandom(i * 49, 13) * 6.283;
+            float pulse = sin(t * pulseFreq + pulsePhase);
             float intBoost = 0.7 + intensity * 0.6;
-            float sz    = pSize * (1.0 + pulse * 0.2);
-            float alpha = pAlpha * intBoost * (1.0 + pulse * 0.3);
+            float sz    = pSize * (1.0 + pulse * 0.10);  // ±10% size (was ±20%)
+            float alpha = pAlpha * intBoost * (1.0 + pulse * 0.15); // ±15% alpha (was ±30%)
 
             float2 pos  = float2(rx + gdX + flowX + noiseX + vx,
                                  ry + gdY + flowY + noiseY + vy);
@@ -254,27 +265,31 @@ fragment float4 lagoonBgFragment(
     }
 
     // ================================================================
-    // 5.  STELLAR NURSERY EMISSION (pulsing radiance from star-forming core)
+    // 5.  STELLAR NURSERY EMISSION (slow radiance with subtle variation)
     //     Warm inner glow + secondary emission knot. Intensity-responsive.
+    //     Uses very slow, desynchronized modulations — no visible breathing.
     // ================================================================
     {
-        float emPulse = 0.6 + 0.4 * sin(t * 0.3);
+        // Very slow, gentle luminance variation (period ~40s at speed=1)
+        float emVar = 0.85 + 0.15 * sin(t * 0.16);
 
         // Primary nursery — broad warm radiance
         float2 nursery = float2(0.42, 0.45);
         float nd = length(uv - nursery);
         float outerGlow = exp(-nd * nd * 6.0);
-        col = additiveBlend(col, rgb(255, 190, 130), outerGlow * 0.05 * emPulse * intensity);
+        col = additiveBlend(col, rgb(255, 190, 130), outerGlow * 0.05 * emVar * intensity);
 
-        // Hot inner core
+        // Hot inner core — even slower variation
+        float coreVar = 0.90 + 0.10 * sin(t * 0.11 + 1.7);
         float coreGlow = exp(-nd * nd * 35.0);
-        col = additiveBlend(col, rgb(255, 240, 210), coreGlow * 0.04 * (0.7 + emPulse * 0.3) * intensity);
+        col = additiveBlend(col, rgb(255, 240, 210), coreGlow * 0.04 * coreVar * intensity);
 
-        // Secondary emission knot (off-centre — adds asymmetry)
+        // Secondary emission knot — offset phase
         float2 knot2 = float2(0.56, 0.37);
         float kd = length(uv - knot2);
         float kGlow = exp(-kd * kd * 14.0);
-        col = additiveBlend(col, rgb(200, 160, 255), kGlow * 0.03 * emPulse * intensity);
+        float kVar = 0.80 + 0.20 * sin(t * 0.13 + 3.1);
+        col = additiveBlend(col, rgb(200, 160, 255), kGlow * 0.03 * kVar * intensity);
     }
 
     // ================================================================
