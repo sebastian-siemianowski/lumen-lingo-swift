@@ -83,17 +83,23 @@ vertex StarVertexOut cosmicStarVertex(
     // zDepth: 0=far, 1=near  →  parallax: 0.15..1.0
     float parallaxFactor = 0.15 + star.zDepth * 0.85;
     
-    // Drift animation — amplified and depth-dependent
-    float driftX = sin(t * 0.1 + star.driftAngle) * star.driftSpeed * 12.0 * parallaxFactor;
-    float driftY = cos(t * 0.08 + star.driftAngle * 1.3) * star.driftSpeed * 9.0 * parallaxFactor;
+    // Multi-harmonic drift — complex, organic 3D motion paths
+    // Primary: slow sweeping arcs; Secondary: faster ripples
+    float da = star.driftAngle;
+    float ds = star.driftSpeed;
+    float driftX = sin(t * 0.35 + da)       * ds * 35.0 * parallaxFactor
+                 + sin(t * 0.85 + da * 2.1) * ds * 14.0 * parallaxFactor;
+    float driftY = cos(t * 0.28 + da * 1.3) * ds * 28.0 * parallaxFactor
+                 + cos(t * 0.70 + da * 1.7) * ds * 11.0 * parallaxFactor;
     
-    // Liquid flow undulation (per-star unique sinusoidal movement)
-    // React: flowFreq=0.2+rand*0.4, amp=8*(1-zDepth) px
-    float flowFreq = 0.2 + star.motionParams.y * 0.4; // .y encodes flow param
+    // Liquid flow undulation — multi-harmonic for organic, living feel
+    float flowFreq = 0.3 + star.motionParams.y * 0.5;
     float flowTime = t * flowFreq + phase;
-    float flowAmp = 8.0 * parallaxFactor;
-    float flowX = sin(flowTime) * flowAmp;
-    float flowY = cos(flowTime * 0.7) * flowAmp * 0.75;
+    float flowAmp = 24.0 * parallaxFactor;
+    float flowX = sin(flowTime) * flowAmp
+                + sin(flowTime * 1.8 + 1.5) * flowAmp * 0.3;
+    float flowY = cos(flowTime * 0.7) * flowAmp * 0.75
+                + cos(flowTime * 1.4 + 2.1) * flowAmp * 0.2;
     
     // Differential rotation (for galaxy presets)
     float rotAngle = uniforms.globalRotation * star.rotationFactor;

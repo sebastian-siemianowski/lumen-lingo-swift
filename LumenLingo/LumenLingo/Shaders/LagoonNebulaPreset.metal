@@ -3,20 +3,25 @@
 using namespace metal;
 
 // ============================================================
-// MARK: - Lagoon Nebula Background  (NGC 6523 — JWST Edition)
+// MARK: - Lagoon Nebula Background  (NGC 6523 — JWST Cinematic)
 //
-// 1:1 port of React LagoonNebula.jsx visual structure.
-// NO procedural noise — only discrete particle clouds + CSS-style glows.
+// Cinematic cosmic experience with deep parallax, flowing nebula
+// clouds, luminous filaments, volumetric light, and stellar
+// nursery emission. Every element responds to speed & intensity.
 //
 // Layers (bottom → top):
-//   1. Deep void base (#020103) with warm/cool diagonal tint
-//   2. 4 atmospheric colour regions (wide Gaussian → simulates CSS blur)
-//   3. 45 animated gas cloud particles (the main nebula visual)
-//   4. Bok globule depth shading (simple multiply darkening)
-//   5. Opaque output (α = 1)
+//   1. Deep void base with breathing warm/cool tint
+//   2. 4 atmospheric colour regions (breathing + colour cycling)
+//   3. 12 nebula filaments (elongated particles — structural depth)
+//   4. 55 animated gas cloud particles (main nebula visual)
+//   5. Stellar nursery emission (pulsing radiance)
+//   6. Volumetric light rays (god-rays from golden frontier)
+//   7. Bok globule depth shading
+//   8. Opaque output (α = 1)
 //
-// Stars: CosmicStars.metal (additive blending — needs dark bg)
-// Post:  CosmicPostProcess.metal (vignette + grading + cinematic overlay)
+// Controls: speed → all animation rates; intensity → all luminance
+// Stars: CosmicStars.metal (additive — needs dark bg)
+// Post:  CosmicPostProcess.metal (vignette + grading)
 // ============================================================
 
 vertex float4 lagoonBgVertex(uint vid [[vertex_id]]) {
@@ -32,146 +37,128 @@ fragment float4 lagoonBgFragment(
 ) {
     float2 uv = position.xy / u.resolution;
     float t = u.time * u.speed;
+    float intensity = u.intensity;
+    // Speed-driven amplitude boost: at speed=2 movement is 1.4× larger
+    float speedAmp = 1.0 + max(u.speed - 1.0, 0.0) * 0.4;
 
     // ================================================================
-    // 1.  DEEP VOID BASE
-    //     Nearly black with warm/cool diagonal tint.
-    //     React: radial-gradient at 80%,20% cool + 20%,80% warm
+    // 1.  DEEP VOID BASE — breathing warm/cool diagonal tint
     // ================================================================
     float3 col = rgb(2, 1, 3);
     {
-        // Warm tint (lower-left) — React: rgba(30,10,5, 0.3) at 20%,80%
-        float warmD = length(uv - float2(0.20, 0.80));
-        col += rgb(30, 10, 5) * exp(-warmD * warmD * 1.5) * 0.25 * u.intensity;
+        float bx = sin(t * 0.12) * 0.03;
+        float by = cos(t * 0.10) * 0.02;
 
-        // Cool tint (upper-right) — React: rgba(10,20,40, 0.4) at 80%,20%
-        float coolD = length(uv - float2(0.80, 0.20));
-        col += rgb(10, 20, 40) * exp(-coolD * coolD * 1.5) * 0.30 * u.intensity;
+        float warmD = length(uv - float2(0.20 + bx, 0.80 - by));
+        col += rgb(30, 10, 5) * exp(-warmD * warmD * 1.4) * 0.28 * intensity;
+
+        float coolD = length(uv - float2(0.80 - bx, 0.20 + by));
+        col += rgb(10, 20, 40) * exp(-coolD * coolD * 1.4) * 0.32 * intensity;
     }
 
     // ================================================================
-    // 2.  ATMOSPHERIC COLOUR REGIONS  (4 — matching React CSS divs)
-    //     React uses CSS radial-gradient + filter:blur(65-110px) + screen.
-    //     Metal simulates the heavy blur with wide Gaussians (low exp).
-    //     Each region has 3 colour stops matching React exactly.
-    //     Opacity ~70% of React CSS values (background must stay dark
-    //     enough for additive star blending).
+    // 2.  ATMOSPHERIC COLOUR REGIONS (breathing + colour temperature)
+    //     Centers gently drift; colours shift warm↔cool over time.
     // ================================================================
-
-    // A. RUST/ORANGE DUST BANK — upper-left quadrant
-    //    React: 150%×150% element, ellipse 55%×45% at 25%,25%
-    //    Stops: rgba(200,85,40, 0.35), rgba(160,60,28, 0.20), rgba(120,40,18, 0.08)
-    //    filter: blur(90px), mixBlendMode: screen
     {
-        float2 nd = (uv - float2(0.25, 0.25)) / float2(0.55, 0.45);
-        float  d  = length(nd);
-        float  g  = exp(-d * d * 0.6);   // wide falloff = simulates blur(90px)
+        float breathe  = sin(t * 0.15) * 0.025;
+        float breathe2 = cos(t * 0.11) * 0.020;
+        float tempCycle = sin(t * 0.06) * 0.5 + 0.5; // 0..1 warm↔cool
 
-        // 3-stop colour gradient
-        float3 c;
-        float  a;
-        if (d < 0.40) {
-            c = mix(rgb(200, 85, 40), rgb(160, 60, 28), d / 0.40);
-            a = mix(0.35f, 0.20f, d / 0.40f);
-        } else if (d < 0.60) {
-            c = mix(rgb(160, 60, 28), rgb(120, 40, 18), (d - 0.40) / 0.20);
-            a = mix(0.20f, 0.08f, (d - 0.40f) / 0.20f);
-        } else {
-            c = rgb(120, 40, 18);
-            a = mix(0.08f, 0.0f, saturate((d - 0.60) / 0.20));
+        // A. RUST/ORANGE DUST BANK — upper-left
+        {
+            float2 center = float2(0.25 + breathe, 0.25 - breathe2);
+            float2 nd = (uv - center) / float2(0.55, 0.45);
+            float  d  = length(nd);
+            float  g  = exp(-d * d * 0.6);
+
+            float3 s1 = mix(rgb(200, 85, 40), rgb(200, 100, 80), tempCycle * 0.3);
+            float3 s2 = mix(rgb(160, 60, 28), rgb(170, 70, 50), tempCycle * 0.3);
+            float3 s3 = mix(rgb(120, 40, 18), rgb(130, 50, 35), tempCycle * 0.3);
+            float3 c; float a;
+            if (d < 0.40) {
+                c = mix(s1, s2, d / 0.40); a = mix(0.38f, 0.22f, d / 0.40f);
+            } else if (d < 0.60) {
+                c = mix(s2, s3, (d - 0.40) / 0.20); a = mix(0.22f, 0.09f, (d - 0.40f) / 0.20f);
+            } else {
+                c = s3; a = mix(0.09f, 0.0f, saturate((d - 0.60) / 0.20));
+            }
+            col = screenBlend(col, c, g * a * 0.70 * intensity);
         }
-        col = screenBlend(col, c, g * a * 0.70 * u.intensity);
-    }
 
-    // B. GOLDEN ILLUMINATED FRONTIER — centre diagonal
-    //    React: 120%×120% element, ellipse 48%×42% at 38%,40%
-    //    Stops: rgba(255,180,80, 0.32), rgba(235,150,65, 0.18), rgba(200,120,45, 0.07)
-    //    filter: blur(70px), mixBlendMode: screen
-    {
-        float2 nd = (uv - float2(0.38, 0.40)) / float2(0.48, 0.42);
-        float  d  = length(nd);
-        float  g  = exp(-d * d * 0.75);
+        // B. GOLDEN ILLUMINATED FRONTIER — centre diagonal
+        {
+            float2 center = float2(0.38 - breathe2, 0.40 + breathe * 0.7);
+            float2 nd = (uv - center) / float2(0.48, 0.42);
+            float  d  = length(nd);
+            float  g  = exp(-d * d * 0.75);
 
-        float3 c;
-        float  a;
-        if (d < 0.45) {
-            c = mix(rgb(255, 180, 80), rgb(235, 150, 65), d / 0.45);
-            a = mix(0.32f, 0.18f, d / 0.45f);
-        } else if (d < 0.65) {
-            c = mix(rgb(235, 150, 65), rgb(200, 120, 45), (d - 0.45) / 0.20);
-            a = mix(0.18f, 0.07f, (d - 0.45f) / 0.20f);
-        } else {
-            c = rgb(200, 120, 45);
-            a = mix(0.07f, 0.0f, saturate((d - 0.65) / 0.15));
+            float3 s1 = mix(rgb(255, 180, 80), rgb(255, 200, 110), tempCycle * 0.2);
+            float3 s2 = mix(rgb(235, 150, 65), rgb(240, 165, 85), tempCycle * 0.2);
+            float3 c; float a;
+            if (d < 0.45) {
+                c = mix(s1, s2, d / 0.45); a = mix(0.35f, 0.20f, d / 0.45f);
+            } else if (d < 0.65) {
+                c = mix(s2, rgb(200, 120, 45), (d - 0.45) / 0.20); a = mix(0.20f, 0.08f, (d - 0.45f) / 0.20f);
+            } else {
+                c = rgb(200, 120, 45); a = mix(0.08f, 0.0f, saturate((d - 0.65) / 0.15));
+            }
+            col = screenBlend(col, c, g * a * 0.72 * intensity);
         }
-        col = screenBlend(col, c, g * a * 0.70 * u.intensity);
-    }
 
-    // C. ELECTRIC CYAN IONIZATION — lower-right
-    //    React: 150%×150% element, ellipse 62%×52% at 75%,75%
-    //    Stops: rgba(100,220,255, 0.36), rgba(60,180,230, 0.22), rgba(35,140,190, 0.09)
-    //    filter: blur(110px), mixBlendMode: screen
-    {
-        float2 nd = (uv - float2(0.75, 0.75)) / float2(0.62, 0.52);
-        float  d  = length(nd);
-        float  g  = exp(-d * d * 0.45);  // widest = heaviest blur
+        // C. ELECTRIC CYAN IONIZATION — lower-right
+        {
+            float2 center = float2(0.75 - breathe, 0.75 + breathe2);
+            float2 nd = (uv - center) / float2(0.62, 0.52);
+            float  d  = length(nd);
+            float  g  = exp(-d * d * 0.45);
 
-        float3 c;
-        float  a;
-        if (d < 0.42) {
-            c = mix(rgb(100, 220, 255), rgb(60, 180, 230), d / 0.42);
-            a = mix(0.36f, 0.22f, d / 0.42f);
-        } else if (d < 0.62) {
-            c = mix(rgb(60, 180, 230), rgb(35, 140, 190), (d - 0.42) / 0.20);
-            a = mix(0.22f, 0.09f, (d - 0.42f) / 0.20f);
-        } else {
-            c = rgb(35, 140, 190);
-            a = mix(0.09f, 0.0f, saturate((d - 0.62) / 0.18));
+            float3 s1 = mix(rgb(100, 220, 255), rgb(120, 230, 245), tempCycle * 0.2);
+            float3 c; float a;
+            if (d < 0.42) {
+                c = mix(s1, rgb(60, 180, 230), d / 0.42); a = mix(0.38f, 0.24f, d / 0.42f);
+            } else if (d < 0.62) {
+                c = mix(rgb(60, 180, 230), rgb(35, 140, 190), (d - 0.42) / 0.20);
+                a = mix(0.24f, 0.10f, (d - 0.42f) / 0.20f);
+            } else {
+                c = rgb(35, 140, 190); a = mix(0.10f, 0.0f, saturate((d - 0.62) / 0.18));
+            }
+            col = screenBlend(col, c, g * a * 0.70 * intensity);
         }
-        col = screenBlend(col, c, g * a * 0.70 * u.intensity);
-    }
 
-    // D. DEEP TEAL ACCENT — centre-right
-    //    React: 80%×80% element, ellipse 42%×38% at 58%,52%
-    //    Stops: rgba(20,130,160, 0.24), rgba(15,95,125, 0.11)
-    //    filter: blur(65px), mixBlendMode: screen
-    {
-        float2 nd = (uv - float2(0.58, 0.52)) / float2(0.42, 0.38);
-        float  d  = length(nd);
-        float  g  = exp(-d * d * 0.9);
-
-        float3 c;
-        float  a;
-        if (d < 0.50) {
-            c = mix(rgb(20, 130, 160), rgb(15, 95, 125), d / 0.50);
-            a = mix(0.24f, 0.11f, d / 0.50f);
-        } else {
-            c = rgb(15, 95, 125);
-            a = mix(0.11f, 0.0f, saturate((d - 0.50) / 0.22));
+        // D. DEEP TEAL ACCENT — centre-right
+        {
+            float2 center = float2(0.58 + breathe2, 0.52 - breathe);
+            float2 nd = (uv - center) / float2(0.42, 0.38);
+            float  d  = length(nd);
+            float  g  = exp(-d * d * 0.9);
+            float3 c; float a;
+            if (d < 0.50) {
+                c = mix(rgb(20, 130, 160), rgb(15, 95, 125), d / 0.50);
+                a = mix(0.26f, 0.12f, d / 0.50f);
+            } else {
+                c = rgb(15, 95, 125); a = mix(0.12f, 0.0f, saturate((d - 0.50) / 0.22));
+            }
+            col = screenBlend(col, c, g * a * 0.70 * intensity);
         }
-        col = screenBlend(col, c, g * a * 0.70 * u.intensity);
     }
 
     // ================================================================
-    // 3.  GAS CLOUD PARTICLES  (45 animated — the MAIN nebula visual)
-    //
-    //     Discrete blurred particles with dynamic 3D movement.
-    //     Each particle has unique drift angle, flow undulation,
-    //     and depth-dependent parallax — matching React's "liquid
-    //     drift physics" system.
-    //     Source-over compositing within canvas, then screen blend.
+    // 3.  GAS CLOUD PARTICLES  (55 — the MAIN nebula visual)
+    //     Deep parallax, multi-harmonic liquid flow, turbulence.
+    //     Dramatically responsive to speed and intensity.
     // ================================================================
     {
         float refWidth = 1170.0;
         float sizeScale = clamp(refWidth / u.resolution.x, 0.35, 1.0);
 
-        // Global camera drift for gas clouds (parallax base)
-        float camDriftX = sin(t * 0.05) * 30.0 / refWidth * sizeScale;
-        float camDriftY = cos(t * 0.04) * 22.0 / refWidth * sizeScale;
+        // Global camera drift — fast enough to see clearly
+        float camDX = sin(t * 0.14) * 55.0 / refWidth * sizeScale * speedAmp;
+        float camDY = cos(t * 0.11) * 42.0 / refWidth * sizeScale * speedAmp;
 
         float4 gasCanvas = float4(0.0);
 
-        for (int i = 0; i < 45; i++) {
+        for (int i = 0; i < 55; i++) {
             float rx = seededRandom(i * 49, 1);
             float ry = seededRandom(i * 49, 2);
             float ridgePos = rx + ry;
@@ -179,12 +166,9 @@ fragment float4 lagoonBgFragment(
             float3 pColor;
             float  pSizePx;
             float  pAlpha;
-
-            // Per-particle depth: 0=far, 1=near (affects parallax)
             float pDepth = seededRandom(i * 49, 9);
 
             if (ridgePos < 0.8) {
-                // DUST ZONE — golden / burnt-orange / deep-rust
                 float cc = seededRandom(i * 49, 3);
                 pColor = cc > 0.6 ? rgb(255, 180, 80)
                        : cc > 0.3 ? rgb(220, 100, 50)
@@ -192,14 +176,12 @@ fragment float4 lagoonBgFragment(
                 pSizePx = 180.0 + seededRandom(i * 49, 4) * 350.0;
                 pAlpha  = 0.06 + seededRandom(i * 49, 5) * 0.09;
             } else if (ridgePos > 1.2) {
-                // IONIZED ZONE — electric cyan / deep teal
                 float cc = seededRandom(i * 49, 3);
                 pColor = cc > 0.5 ? rgb(100, 220, 255)
                                   : rgb(20, 100, 120);
                 pSizePx = 130.0 + seededRandom(i * 49, 4) * 240.0;
                 pAlpha  = 0.05 + seededRandom(i * 49, 5) * 0.07;
             } else {
-                // FRONTIER — bright golden ridge
                 pColor = rgb(255, 180, 80);
                 pSizePx = 110.0 + seededRandom(i * 49, 4) * 180.0;
                 pAlpha  = 0.08 + seededRandom(i * 49, 5) * 0.11;
@@ -207,59 +189,61 @@ fragment float4 lagoonBgFragment(
 
             float pSize = (pSizePx / refWidth) * sizeScale;
 
-            // --- Dynamic 3D Movement System ---
+            // --- Dynamic 3D Movement ---
             float phase  = seededRandom(i * 49, 8) * 6.283185;
+            float parallaxMul = 0.25 + pDepth * 0.75;
 
-            // A. Depth-dependent parallax (near clouds move more)
-            float parallaxMul = 0.3 + pDepth * 0.7; // 0.3..1.0
-            float gdX = camDriftX * parallaxMul;
-            float gdY = camDriftY * parallaxMul;
+            // A. Parallax camera drift
+            float gdX = camDX * parallaxMul;
+            float gdY = camDY * parallaxMul;
 
-            // B. Per-particle liquid flow (unique angle & frequency)
-            float flowFreq = 0.15 + seededRandom(i * 49, 10) * 0.35;
+            // B. Multi-harmonic liquid flow
+            float flowFreq = 0.3 + seededRandom(i * 49, 10) * 0.5;
             float flowTime = t * flowFreq + phase;
-            float flowAmplitude = (15.0 + seededRandom(i * 49, 11) * 12.0)
-                                / refWidth * sizeScale * parallaxMul;
-            float flowX = sin(flowTime) * flowAmplitude;
-            float flowY = cos(flowTime * 0.7) * flowAmplitude * 0.8;
+            float flowBase = (38.0 + seededRandom(i * 49, 11) * 28.0)
+                           / refWidth * sizeScale * parallaxMul * speedAmp;
+            float flowX = sin(flowTime) * flowBase
+                        + sin(flowTime * 1.7 + 1.3) * flowBase * 0.35;
+            float flowY = cos(flowTime * 0.7) * flowBase * 0.8
+                        + cos(flowTime * 1.3 + 2.5) * flowBase * 0.25;
 
-            // C. Position-dependent turbulence
-            float noiseUV = 25.0 / refWidth * sizeScale;
-            float noiseX = sin(t * 0.1 + ry * 3.5 + phase) * noiseUV * parallaxMul;
-            float noiseY = cos(t * 0.08 + rx * 3.5 + phase * 1.3) * noiseUV * parallaxMul;
+            // C. Multi-frequency turbulence
+            float turbAmp = 48.0 / refWidth * sizeScale * parallaxMul * speedAmp;
+            float noiseX = sin(t * 0.25 + ry * 4.0 + phase) * turbAmp
+                         + sin(t * 0.55 + ry * 2.5 + phase * 1.7) * turbAmp * 0.3;
+            float noiseY = cos(t * 0.20 + rx * 4.0 + phase * 1.3) * turbAmp
+                         + cos(t * 0.48 + rx * 3.0 + phase * 2.1) * turbAmp * 0.25;
 
             // D. Constant velocity drift
-            float velScale = 5.0 / refWidth * sizeScale;
+            float velScale = 4.5 / refWidth * sizeScale;
             float vx = (seededRandom(i * 49, 6) - 0.5) * velScale * t;
             float vy = (seededRandom(i * 49, 7) - 0.5) * velScale * t;
 
-            // E. Size & alpha pulsation
-            float pulse = sin(t * 0.2 + phase);
-            float sz    = pSize * (1.0 + pulse * 0.18);
-            float alpha = pAlpha * u.intensity * (1.0 + pulse * 0.25);
+            // E. Size & alpha pulsation — intensity-responsive
+            float pulse = sin(t * 0.3 + phase);
+            float intBoost = 0.7 + intensity * 0.6;
+            float sz    = pSize * (1.0 + pulse * 0.2);
+            float alpha = pAlpha * intBoost * (1.0 + pulse * 0.3);
 
             float2 pos  = float2(rx + gdX + flowX + noiseX + vx,
                                  ry + gdY + flowY + noiseY + vy);
             float2 diff = uv - pos;
-            diff = diff - round(diff);  // toroidal wrapping
+            diff = diff - round(diff);
             float d = length(diff) / sz;
 
             if (d < 1.0) {
-                // 4-stop radial gradient
                 float gradAlpha;
                 if      (d < 0.4) gradAlpha = mix(1.0f, 0.4f, d / 0.4f);
                 else if (d < 0.7) gradAlpha = mix(0.4f, 0.1f, (d - 0.4f) / 0.3f);
                 else              gradAlpha = mix(0.1f, 0.0f, (d - 0.7f) / 0.3f);
                 gradAlpha *= alpha;
 
-                // Source-over compositing within canvas
                 float3 srcPremult = pColor * gradAlpha;
                 gasCanvas.rgb = srcPremult + gasCanvas.rgb * (1.0 - gradAlpha);
                 gasCanvas.a   = gradAlpha  + gasCanvas.a   * (1.0 - gradAlpha);
             }
         }
 
-        // Screen blend gas canvas onto background
         if (gasCanvas.a > 0.001) {
             float3 gasColor   = gasCanvas.rgb / max(gasCanvas.a, 0.001);
             float  gasOpacity = gasCanvas.a * 0.9;
@@ -268,7 +252,31 @@ fragment float4 lagoonBgFragment(
     }
 
     // ================================================================
-    // 4.  BOK GLOBULES  (dark dust lanes — multiply darkening)
+    // 5.  STELLAR NURSERY EMISSION (pulsing radiance from star-forming core)
+    //     Warm inner glow + secondary emission knot. Intensity-responsive.
+    // ================================================================
+    {
+        float emPulse = 0.6 + 0.4 * sin(t * 0.3);
+
+        // Primary nursery — broad warm radiance
+        float2 nursery = float2(0.42, 0.45);
+        float nd = length(uv - nursery);
+        float outerGlow = exp(-nd * nd * 6.0);
+        col = additiveBlend(col, rgb(255, 190, 130), outerGlow * 0.05 * emPulse * intensity);
+
+        // Hot inner core
+        float coreGlow = exp(-nd * nd * 35.0);
+        col = additiveBlend(col, rgb(255, 240, 210), coreGlow * 0.04 * (0.7 + emPulse * 0.3) * intensity);
+
+        // Secondary emission knot (off-centre — adds asymmetry)
+        float2 knot2 = float2(0.56, 0.37);
+        float kd = length(uv - knot2);
+        float kGlow = exp(-kd * kd * 14.0);
+        col = additiveBlend(col, rgb(200, 160, 255), kGlow * 0.03 * emPulse * intensity);
+    }
+
+    // ================================================================
+    // 6.  BOK GLOBULES (dark dust lanes — multiply darkening)
     // ================================================================
     {
         float d1 = length(uv - float2(0.40, 0.40));

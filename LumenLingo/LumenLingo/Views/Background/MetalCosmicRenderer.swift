@@ -247,17 +247,17 @@ final class MetalCosmicRenderer: NSObject, MTKViewDelegate {
         let st = t * speed  // speed-responsive
         switch preset {
         case .lagoonNebula:
-            return SIMD2(sin(st * 0.03) * 45, cos(st * 0.025) * 36)
+            return SIMD2(sin(st * 0.08) * 85, cos(st * 0.06) * 65)
         case .celestialLagoon:
-            return SIMD2(sin(st * 0.02) * 36, cos(st * 0.018) * 30)
+            return SIMD2(sin(st * 0.06) * 70, cos(st * 0.05) * 55)
         case .solarAurora:
-            return SIMD2(sin(st * 0.025) * 54, cos(st * 0.03) * 24)
+            return SIMD2(sin(st * 0.07) * 100, cos(st * 0.08) * 45)
         case .spiralHaloGalaxy:
-            return SIMD2(sin(st * 0.015) * 30, cos(st * 0.02) * 30)
+            return SIMD2(sin(st * 0.045) * 55, cos(st * 0.055) * 55)
         case .edgeOfAndromeda:
-            return SIMD2(sin(st * 0.02) * 42, cos(st * 0.015) * 18)
+            return SIMD2(sin(st * 0.06) * 80, cos(st * 0.045) * 35)
         case .starburstRing:
-            return SIMD2(sin(st * 0.018) * 36, cos(st * 0.022) * 36)
+            return SIMD2(sin(st * 0.05) * 65, cos(st * 0.06) * 65)
         }
     }
 }
