@@ -693,7 +693,7 @@ enum StarFieldGenerator {
             // Continuous z-depth
             let z = pow(rand(1), 0.55)
             
-            // Spatial zone assignment (React ratios: 20/15/55/10)
+            // Spatial zone assignment (10% field, 25% core, 55% arm, 10% halo)
             let zoneRoll = rand(30)
             var rx: Float
             var ry: Float
@@ -701,8 +701,8 @@ enum StarFieldGenerator {
             var distFromCenter: Float = 0
             var rotFactor: Float = 0.2 // default = field
             
-            if zoneRoll < 0.20 {
-                // ── FIELD (20%) — uniform background ──
+            if zoneRoll < 0.10 {
+                // ── FIELD (10%) — uniform background ──
                 rx = rand(2) + sin(Float(i) * 0.37) * 0.05
                 ry = abs(rand(3) + cos(Float(i) * 0.29) * 0.05)
                 rx = rx.truncatingRemainder(dividingBy: 1.0)
@@ -711,7 +711,7 @@ enum StarFieldGenerator {
                 rotFactor = 0.2
                 
             } else if zoneRoll < 0.35 {
-                // ── CORE (15%) — tight Gaussian cluster ──
+                // ── CORE (25%) — tight Gaussian cluster ──
                 let gx = gaussianRand(i * 7, 2, sigma: 0.06)
                 let gy = gaussianRand(i * 7, 4, sigma: 0.06)
                 rx = 0.5 + gx

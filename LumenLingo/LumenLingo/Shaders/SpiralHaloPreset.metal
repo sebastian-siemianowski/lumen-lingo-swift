@@ -54,11 +54,15 @@ fragment float4 spiralHaloBgFragment(
     // 2.  ATMOSPHERIC ARM COLOUR REGIONS (4 spiral arm zones)
     //     Each region drifts independently for 3D depth.
     //     Positioned along spiral arm paths, rotate with galaxy.
+    //     Masked out near center to prevent bright overlap blob.
     // ================================================================
     {
         float rotation = t * 0.035;
         float ca = cos(rotation);
         float sa = sin(rotation);
+
+        // Center cutout — arms fade to zero within r<0.08
+        float centerCut = smoothstep(0.06, 0.14, dist);
 
         // A. ARM 1 — Steel blue nebulosity (upper-right arc)
         {
@@ -75,7 +79,7 @@ fragment float4 spiralHaloBgFragment(
             float3 c = mix(s1, s2, saturate(d / 0.45));
             float a = d < 0.45 ? mix(0.28f, 0.14f, d / 0.45f)
                                 : mix(0.14f, 0.0f, saturate((d - 0.45) / 0.25));
-            col = screenBlend(col, c, g * a * 0.55 * intensity);
+            col = screenBlend(col, c, g * a * 0.55 * intensity * centerCut);
         }
 
         // B. ARM 2 — Violet-blue nebulosity (lower-left arc)
@@ -93,7 +97,7 @@ fragment float4 spiralHaloBgFragment(
             float3 c = mix(s1, s2, saturate(d / 0.42));
             float a = d < 0.42 ? mix(0.25f, 0.12f, d / 0.42f)
                                 : mix(0.12f, 0.0f, saturate((d - 0.42) / 0.22));
-            col = screenBlend(col, c, g * a * 0.50 * intensity);
+            col = screenBlend(col, c, g * a * 0.50 * intensity * centerCut);
         }
 
         // C. ARM 3 — Pale cyan nebulosity (upper-left arc)
@@ -111,7 +115,7 @@ fragment float4 spiralHaloBgFragment(
             float3 c = mix(s1, s2, saturate(d / 0.40));
             float a = d < 0.40 ? mix(0.22f, 0.10f, d / 0.40f)
                                 : mix(0.10f, 0.0f, saturate((d - 0.40) / 0.20));
-            col = screenBlend(col, c, g * a * 0.48 * intensity);
+            col = screenBlend(col, c, g * a * 0.48 * intensity * centerCut);
         }
 
         // D. ARM 4 — Warm indigo nebulosity (lower-right arc)
@@ -129,7 +133,7 @@ fragment float4 spiralHaloBgFragment(
             float3 c = mix(s1, s2, saturate(d / 0.38));
             float a = d < 0.38 ? mix(0.20f, 0.09f, d / 0.38f)
                                 : mix(0.09f, 0.0f, saturate((d - 0.38) / 0.20));
-            col = screenBlend(col, c, g * a * 0.45 * intensity);
+            col = screenBlend(col, c, g * a * 0.45 * intensity * centerCut);
         }
 
         // E. INTER-ARM WISPS — faint connections between arms
@@ -139,7 +143,7 @@ fragment float4 spiralHaloBgFragment(
             float2 nd = (uv - wc) / float2(0.50, 0.50);
             float d = length(nd);
             float g = exp(-d * d * 0.4);
-            col = screenBlend(col, rgb(100, 110, 190), g * 0.04 * intensity);
+            col = screenBlend(col, rgb(100, 110, 190), g * 0.04 * intensity * centerCut);
         }
     }
 
@@ -161,13 +165,22 @@ fragment float4 spiralHaloBgFragment(
 
         float4 gasCanvas = float4(0.0);
 
-        for (int i = 0; i < 45; i++) {
+        for (int i = 0; i < 55; i++) {
             float rx = seededRandom(i * 53, 1);
             float ry = seededRandom(i * 53, 2);
             float armRoll = seededRandom(i * 53, 8);
 
-            // Place ~60% of particles along spiral arms
-            if (armRoll < 0.60) {
+            // First 12 particles: concentrated at center (Gaussian σ≈0.06)
+            if (i < 12) {
+                float cr1 = seededRandom(i * 53, 20);
+                float cr2 = seededRandom(i * 53, 21);
+                float mag = sqrt(-2.0 * log(max(0.0001, cr1))) * 0.06;
+                float ca = cr2 * M_PI_F * 2.0;
+                rx = 0.5 + cos(ca) * mag;
+                ry = 0.5 + sin(ca) * mag;
+            }
+            // Next ~60% along spiral arms
+            else if (armRoll < 0.60) {
                 int arm = int(armRoll / 0.15);
                 float spiralDist = 0.08 + seededRandom(i * 53, 9) * 0.28;
                 float armAngle = float(arm) * M_PI_F * 0.5;
@@ -187,9 +200,12 @@ fragment float4 spiralHaloBgFragment(
             float cc = seededRandom(i * 53, 4);
 
             if (ridgeDist < 0.10) {
-                pColor = cc > 0.5 ? rgb(255, 245, 220) : rgb(240, 225, 200);
-                pSizePx = 100.0 + seededRandom(i * 53, 5) * 200.0;
-                pAlpha = 0.06 + seededRandom(i * 53, 6) * 0.08;
+                // Core gas — blue-violet galactic core, NOT white/warm
+                if (cc > 0.6)      pColor = rgb(120, 110, 200);
+                else if (cc > 0.3) pColor = rgb(100, 95, 180);
+                else               pColor = rgb(130, 120, 190);
+                pSizePx = 60.0 + seededRandom(i * 53, 5) * 100.0;
+                pAlpha = 0.05 + seededRandom(i * 53, 6) * 0.06;
             } else if (ridgeDist < 0.25) {
                 if (cc > 0.6)      pColor = rgb(130, 160, 240);
                 else if (cc > 0.3) pColor = rgb(110, 130, 220);
@@ -224,9 +240,13 @@ fragment float4 spiralHaloBgFragment(
             float noiseY = cos(t * 0.10 + rx * 3.5 + phase * 1.2) * turbAmp
                          + cos(t * 0.28 + rx * 2.3 + phase * 2.0) * turbAmp * 0.15;
 
-            float velScale = 3.5 / refWidth * sizeScale;
-            float vx = (seededRandom(i * 53, 13) - 0.5) * velScale * t;
-            float vy = (seededRandom(i * 53, 14) - 0.5) * velScale * t;
+            // Bounded velocity — sinusoidal, never linear * t
+            float velAmp = 3.5 / refWidth * sizeScale;
+            float velPhaseX = seededRandom(i * 53, 13) * 6.283;
+            float velPhaseY = seededRandom(i * 53, 14) * 6.283;
+            float velFreq = 0.03 + seededRandom(i * 53, 22) * 0.04;
+            float vx = sin(t * velFreq + velPhaseX) * velAmp;
+            float vy = cos(t * velFreq * 0.8 + velPhaseY) * velAmp;
 
             float pulseFreq = 0.12 + seededRandom(i * 53, 15) * 0.22;
             float pulsePhase = phase + seededRandom(i * 53, 16) * 6.283;
@@ -256,40 +276,21 @@ fragment float4 spiralHaloBgFragment(
 
         if (gasCanvas.a > 0.001) {
             float3 gasCol = gasCanvas.rgb / max(gasCanvas.a, 0.001);
-            float  gasOp  = gasCanvas.a * 0.85;
+            // Fade gas opacity near center to prevent accumulated blob
+            float gasCenterFade = smoothstep(0.03, 0.10, dist);
+            float  gasOp  = gasCanvas.a * 0.70 * mix(0.35, 1.0, gasCenterFade);
             col = screenBlend(col, gasCol, gasOp);
         }
     }
 
     // ================================================================
-    // 4.  CENTRAL CORE — compact warm-gold glow (no white blob)
+    // 4.  CORE — subtle FBM texture only, NO gaussian glow
     // ================================================================
-    {
-        float emVar = 0.88 + 0.12 * sin(t * 0.14);
-
-        // Tight hot point — warm gold, NOT white
-        float hotGlow = gaussian2D(uv, float2(0.5, 0.5), float2(0.012, 0.012));
-        col = additiveBlend(col, rgb(255, 235, 190), hotGlow * 0.06 * emVar * intensity);
-
-        // Warm secondary — small and golden
-        float goldGlow = gaussian2D(uv, float2(0.5, 0.5), float2(0.028, 0.028));
-        col = screenBlend(col, rgb(255, 225, 170), goldGlow * 0.04 * intensity);
-
-        // Broad subtle amber haze — barely visible
-        float hazeGlow = gaussian2D(uv, float2(0.5, 0.5), float2(0.055, 0.055));
-        col = screenBlend(col, rgb(240, 220, 180), hazeGlow * 0.025 * intensity);
-    }
+    // (core visual comes from concentrated gas particles + FBM below)
 
     // ================================================================
-    // 5.  INNER INDIGO HALO — broad purple ring
+    // 5.  (removed — no centered gaussian glow)
     // ================================================================
-    {
-        float haloGlow = gaussian2D(uv, float2(0.5, 0.5), float2(0.14, 0.14));
-        col = screenBlend(col, rgb(90, 70, 180), haloGlow * 0.09 * intensity);
-
-        float outerGlow = gaussian2D(uv, float2(0.5, 0.5), float2(0.22, 0.22));
-        col = screenBlend(col, rgb(60, 50, 140), outerGlow * 0.04 * intensity);
-    }
 
     // ================================================================
     // 6.  WARPED FBM — volumetric texture across galaxy
@@ -299,12 +300,16 @@ fragment float4 spiralHaloBgFragment(
         float gasNoise = warpedFBM(gasP, t * 0.6, 5);
         float gasDensity = pow(gasNoise * 0.5 + 0.5, 2.0);
 
-        float armMask = 1.0 - smoothstep(0.05, 0.35, dist);
-        col = screenBlend(col, rgb(120, 130, 210), gasDensity * armMask * 0.08 * intensity);
+        // Core-concentrated FBM — subtle texture at center, faded at very center
+        float coreMask = smoothstep(0.0, 0.06, dist) * (1.0 - smoothstep(0.06, 0.20, dist));
+        col = screenBlend(col, rgb(70, 65, 140), gasDensity * coreMask * 0.03 * intensity);
+
+        float armMask = smoothstep(0.05, 0.12, dist) * (1.0 - smoothstep(0.12, 0.35, dist));
+        col = screenBlend(col, rgb(120, 130, 210), gasDensity * armMask * 0.07 * intensity);
 
         float outerDensity = pow(gasNoise * 0.5 + 0.5, 3.0);
         float outerMask = smoothstep(0.15, 0.40, dist) * (1.0 - smoothstep(0.40, 0.55, dist));
-        col = screenBlend(col, rgb(100, 115, 195), outerDensity * outerMask * 0.05 * intensity);
+        col = screenBlend(col, rgb(100, 115, 195), outerDensity * outerMask * 0.04 * intensity);
     }
 
     // ================================================================
