@@ -152,9 +152,11 @@ fragment float4 lagoonBgFragment(
         float refWidth = 1170.0;
         float sizeScale = clamp(refWidth / u.resolution.x, 0.35, 1.0);
 
-        // Global camera drift — fast enough to see clearly
-        float camDX = sin(t * 0.14) * 55.0 / refWidth * sizeScale * speedAmp;
-        float camDY = cos(t * 0.11) * 42.0 / refWidth * sizeScale * speedAmp;
+        // Global camera drift — large, smooth cinematic sweeps
+        float camDX = sin(t * 0.08) * 70.0 / refWidth * sizeScale * speedAmp
+                    + sin(t * 0.21) * 15.0 / refWidth * sizeScale * speedAmp;
+        float camDY = cos(t * 0.06) * 55.0 / refWidth * sizeScale * speedAmp
+                    + cos(t * 0.17) * 12.0 / refWidth * sizeScale * speedAmp;
 
         float4 gasCanvas = float4(0.0);
 
@@ -197,22 +199,22 @@ fragment float4 lagoonBgFragment(
             float gdX = camDX * parallaxMul;
             float gdY = camDY * parallaxMul;
 
-            // B. Multi-harmonic liquid flow
-            float flowFreq = 0.3 + seededRandom(i * 49, 10) * 0.5;
+            // B. Multi-harmonic liquid flow (smooth, organic)
+            float flowFreq = 0.18 + seededRandom(i * 49, 10) * 0.35;
             float flowTime = t * flowFreq + phase;
-            float flowBase = (38.0 + seededRandom(i * 49, 11) * 28.0)
+            float flowBase = (45.0 + seededRandom(i * 49, 11) * 35.0)
                            / refWidth * sizeScale * parallaxMul * speedAmp;
             float flowX = sin(flowTime) * flowBase
-                        + sin(flowTime * 1.7 + 1.3) * flowBase * 0.35;
-            float flowY = cos(flowTime * 0.7) * flowBase * 0.8
-                        + cos(flowTime * 1.3 + 2.5) * flowBase * 0.25;
+                        + sin(flowTime * 1.6 + 1.3) * flowBase * 0.2;
+            float flowY = cos(flowTime * 0.65) * flowBase * 0.8
+                        + cos(flowTime * 1.2 + 2.5) * flowBase * 0.15;
 
-            // C. Multi-frequency turbulence
-            float turbAmp = 48.0 / refWidth * sizeScale * parallaxMul * speedAmp;
-            float noiseX = sin(t * 0.25 + ry * 4.0 + phase) * turbAmp
-                         + sin(t * 0.55 + ry * 2.5 + phase * 1.7) * turbAmp * 0.3;
-            float noiseY = cos(t * 0.20 + rx * 4.0 + phase * 1.3) * turbAmp
-                         + cos(t * 0.48 + rx * 3.0 + phase * 2.1) * turbAmp * 0.25;
+            // C. Smooth turbulence (gentle, natural)
+            float turbAmp = 55.0 / refWidth * sizeScale * parallaxMul * speedAmp;
+            float noiseX = sin(t * 0.15 + ry * 4.0 + phase) * turbAmp
+                         + sin(t * 0.38 + ry * 2.5 + phase * 1.7) * turbAmp * 0.2;
+            float noiseY = cos(t * 0.12 + rx * 4.0 + phase * 1.3) * turbAmp
+                         + cos(t * 0.32 + rx * 2.8 + phase * 2.1) * turbAmp * 0.18;
 
             // D. Constant velocity drift
             float velScale = 4.5 / refWidth * sizeScale;

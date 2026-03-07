@@ -181,36 +181,43 @@ enum StarFieldGenerator {
         let seed = 99
         
         // Layer C — 600 far background stars (icy/aquamarine palette)
+        // Enhanced: wider color variety, some mystical types
         for i in 0..<600 {
             let colorRoll = sRand(seed, i * 11 + 7)
             var baseColor: SIMD4<Float>
-            if colorRoll > 0.7 {
+            if colorRoll > 0.80 {
                 baseColor = SIMD4(210.0/255, 240.0/255, 250.0/255, 1) // Pale icy blue
-            } else if colorRoll > 0.45 {
+            } else if colorRoll > 0.60 {
                 baseColor = SIMD4(200.0/255, 245.0/255, 245.0/255, 1) // Faint turquoise
-            } else if colorRoll > 0.25 {
+            } else if colorRoll > 0.40 {
                 baseColor = SIMD4(220.0/255, 245.0/255, 255.0/255, 1) // Soft aquamarine
+            } else if colorRoll > 0.25 {
+                baseColor = SIMD4(190.0/255, 255.0/255, 240.0/255, 1) // Seafoam
+            } else if colorRoll > 0.12 {
+                baseColor = SIMD4(180.0/255, 235.0/255, 255.0/255, 1) // Azure
             } else {
                 baseColor = SIMD4(235.0/255, 245.0/255, 250.0/255, 1) // Nearly white
             }
             
             let size: Float = 0.2 + sRand(seed, i * 7 + 2) * 0.4
-            // Per-star baseAlpha from React: 0.12 + rand * 0.28, range [0.12, 0.40]
             let baseAlpha: Float = 0.12 + sRand(seed, i * 7 + 4) * 0.28
             baseColor.w = baseAlpha
+            
+            // 8% mystical stars in background — color-shifting
+            let isMystical = sRand(seed, i * 23 + 5) > 0.92
             
             stars.append(StarData(
                 position: SIMD2(sRand(seed, i * 7), sRand(seed, i * 7 + 1)),
                 baseSize: size,
-                zDepth: 0.1 + sRand(seed, i * 7 + 3) * 0.2,
+                zDepth: 0.05 + sRand(seed, i * 7 + 3) * 0.25,
                 color: baseColor,
                 twinkleSpeed: 0.15 + sRand(seed, i * 13) * 0.4,
                 twinklePhase: sRand(seed, i * 11) * .pi * 2,
                 twinkleAmp: 0.40,
-                starType: 0,
+                starType: isMystical ? 2 : 0,
                 driftAngle: sRand(seed, i * 19) * .pi * 2,
-                driftSpeed: 0.05,
-                motionParams: SIMD2(1.0, 0),
+                driftSpeed: 0.08,
+                motionParams: SIMD2(1.0, sRand(seed, i * 17 + 3) * 0.5),
                 rotationFactor: 0,
                 zoneTintStrength: 0,
                 zoneTintColor: SIMD4(0, 0, 0, 0)
@@ -218,78 +225,106 @@ enum StarFieldGenerator {
         }
         
         // Layer B — 600 mid stars (cyan/turquoise palette)
+        // Enhanced: more color variety, zone tinting near nebula core
         for i in 0..<600 {
             let idx = 600 + i
             let colorRoll = sRand(seed, idx * 11 + 7)
             var baseColor: SIMD4<Float>
-            if colorRoll > 0.75 {
+            if colorRoll > 0.78 {
                 baseColor = SIMD4(185.0/255, 235.0/255, 245.0/255, 1) // Soft turquoise
-            } else if colorRoll > 0.5 {
+            } else if colorRoll > 0.58 {
                 baseColor = SIMD4(195.0/255, 240.0/255, 250.0/255, 1) // Pale cyan
-            } else if colorRoll > 0.3 {
+            } else if colorRoll > 0.40 {
                 baseColor = SIMD4(210.0/255, 245.0/255, 255.0/255, 1) // Ice blue
+            } else if colorRoll > 0.25 {
+                baseColor = SIMD4(160.0/255, 255.0/255, 255.0/255, 1) // Electric cyan
+            } else if colorRoll > 0.12 {
+                baseColor = SIMD4(200.0/255, 255.0/255, 225.0/255, 1) // Mint green
             } else {
                 baseColor = SIMD4(225.0/255, 250.0/255, 255.0/255, 1) // Faint white-blue
             }
             
             let size: Float = 0.35 + sRand(seed, idx * 7 + 2) * 0.70
-            // Per-star baseAlpha from React: 0.28 + rand * 0.45, range [0.28, 0.73]
             let baseAlpha: Float = 0.28 + sRand(seed, idx * 7 + 4) * 0.45
             baseColor.w = baseAlpha
             
+            // 12% mystical in mid-layer
+            let isMystical = sRand(seed, idx * 23 + 5) > 0.88
+            
+            // Zone tinting — stars near nebula centre pick up aqua tint
+            let px = sRand(seed, idx * 7)
+            let py = sRand(seed, idx * 7 + 1)
+            let distToCore = sqrt((px - 0.45) * (px - 0.45) + (py - 0.48) * (py - 0.48))
+            let zoneTint: Float = distToCore < 0.3 ? (0.3 - distToCore) * 0.4 : 0
+            
             stars.append(StarData(
-                position: SIMD2(sRand(seed, idx * 7), sRand(seed, idx * 7 + 1)),
+                position: SIMD2(px, py),
                 baseSize: size,
                 zDepth: 0.3 + sRand(seed, idx * 7 + 3) * 0.3,
                 color: baseColor,
                 twinkleSpeed: 0.25 + sRand(seed, idx * 13) * 0.7,
                 twinklePhase: sRand(seed, idx * 11) * .pi * 2,
                 twinkleAmp: 0.45,
-                starType: 0,
+                starType: isMystical ? 2 : 0,
                 driftAngle: sRand(seed, idx * 19) * .pi * 2,
-                driftSpeed: 0.15,
-                motionParams: SIMD2(0.5, 0),
+                driftSpeed: 0.18,
+                motionParams: SIMD2(0.5, sRand(seed, idx * 17 + 3) * 0.6),
                 rotationFactor: 0,
-                zoneTintStrength: 0,
-                zoneTintColor: SIMD4(0, 0, 0, 0)
+                zoneTintStrength: zoneTint,
+                zoneTintColor: SIMD4(120.0/255, 240.0/255, 235.0/255, 1)
             ))
         }
         
-        // Layer A — 130 foreground stars (bright aqua palette, cross-diffraction)
+        // Layer A — 130 foreground stars (bright aqua palette, hero + mystical)
+        // Enhanced: anamorphic heroes, more color variety, stronger motion
         for i in 0..<130 {
             let idx = 1200 + i
             let colorRoll = sRand(seed, idx * 11 + 7)
             var baseColor: SIMD4<Float>
-            if colorRoll > 0.7 {
+            if colorRoll > 0.75 {
                 baseColor = SIMD4(170.0/255, 230.0/255, 245.0/255, 1) // Bright turquoise
-            } else if colorRoll > 0.45 {
+            } else if colorRoll > 0.55 {
                 baseColor = SIMD4(185.0/255, 240.0/255, 250.0/255, 1) // Aqua
-            } else if colorRoll > 0.25 {
+            } else if colorRoll > 0.35 {
                 baseColor = SIMD4(200.0/255, 245.0/255, 255.0/255, 1) // Cyan-white
+            } else if colorRoll > 0.18 {
+                baseColor = SIMD4(175.0/255, 255.0/255, 245.0/255, 1) // Turquoise bright
+            } else if colorRoll > 0.08 {
+                baseColor = SIMD4(185.0/255, 255.0/255, 250.0/255, 1) // Aqua giant
             } else {
                 baseColor = SIMD4(215.0/255, 250.0/255, 255.0/255, 1) // Bright ice
             }
             
             let size: Float = 0.7 + sRand(seed, idx * 7 + 2) * 1.2
-            // Per-star baseAlpha from React: 0.55 + rand * 0.4, range [0.55, 0.95]
             let baseAlpha: Float = 0.55 + sRand(seed, idx * 7 + 3) * 0.4
             baseColor.w = baseAlpha
             
-            // Cross-diffraction on bright large stars (React threshold)
-            let isHero = baseAlpha > 0.6 && size > 1.3
+            // Hero stars: JWST diffraction for brightest, anamorphic for very large
+            let isVeryBright = baseAlpha > 0.75 && size > 1.5
+            let isBright = baseAlpha > 0.6 && size > 1.3
+            let starType: Int32
+            if isVeryBright {
+                starType = 3 // heroAnamorphic — spectacular
+            } else if isBright {
+                starType = 1 // hero JWST 6-point
+            } else if sRand(seed, idx * 29) > 0.7 {
+                starType = 2 // mystical color-shifting
+            } else {
+                starType = 0 // normal
+            }
             
             stars.append(StarData(
                 position: SIMD2(sRand(seed, idx * 7), sRand(seed, idx * 7 + 1)),
-                baseSize: size * (isHero ? 2.0 : 1.0),
+                baseSize: size * (starType == 1 || starType == 3 ? 2.0 : 1.0),
                 zDepth: 0.7 + sRand(seed, idx * 7 + 4) * 0.3,
                 color: baseColor,
                 twinkleSpeed: 0.25 + sRand(seed, idx * 13) * 0.7,
                 twinklePhase: sRand(seed, idx * 11) * .pi * 2,
                 twinkleAmp: 0.50,
-                starType: isHero ? 1 : 0,
+                starType: starType,
                 driftAngle: sRand(seed, idx * 19) * .pi * 2,
-                driftSpeed: 0.3,
-                motionParams: SIMD2(0, 0),
+                driftSpeed: 0.35,
+                motionParams: SIMD2(sRand(seed, idx * 31), sRand(seed, idx * 17 + 3) * 0.8),
                 rotationFactor: 0,
                 zoneTintStrength: 0,
                 zoneTintColor: SIMD4(0, 0, 0, 0)

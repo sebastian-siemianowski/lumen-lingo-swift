@@ -17,25 +17,23 @@ final class MetalCosmicRenderer: NSObject, MTKViewDelegate {
     
     // Pipeline states — all write to the same drawable in one render encoder
     private var bgPipelines: [Int: MTLRenderPipelineState] = [:]
-    private var starPipeline: MTLRenderPipelineState?
+    private var starPipelines: [Int: MTLRenderPipelineState] = [:]
     private var postPipeline: MTLRenderPipelineState?
     
-    // Star buffer
-    private var starBuffer: MTLBuffer?
-    private var starCount: Int = 0
+    // Per-preset star systems — each preset has its own independent buffer & timing
+    private struct StarSystem {
+        var buffer: MTLBuffer?
+        var count: Int = 0
+        var birthTime: Double  // independent timeline per preset
+    }
+    private var starSystems: [Int: StarSystem] = [:]
     
     // Timing
     private let startTime = CACurrentMediaTime()
     
     // MARK: - Uniforms (driven by SwiftUI)
     
-    var preset: NebulaPreset = .lagoonNebula {
-        didSet {
-            if oldValue != preset {
-                rebuildStars()
-            }
-        }
-    }
+    var preset: NebulaPreset = .lagoonNebula
     var intensity: Float = 1.0
     var speed: Float = 1.0
     
@@ -49,6 +47,16 @@ final class MetalCosmicRenderer: NSObject, MTKViewDelegate {
         ("starburstBgVertex",   "starburstBgFragment"),    // 5 starburst
     ]
     
+    // Per-preset star vertex shader names (each file has its own vertex function)
+    private static let starVertexNames: [String] = [
+        "lagoonStarVertex",       // 0 lagoon
+        "celestialStarVertex",    // 1 celestial
+        "solarAuroraStarVertex",  // 2 solar aurora
+        "spiralHaloStarVertex",   // 3 spiral halo
+        "andromedaStarVertex",    // 4 andromeda
+        "starburstStarVertex",    // 5 starburst ring
+    ]
+    
     // MARK: - Init
     
     init(device: MTLDevice) {
@@ -60,7 +68,7 @@ final class MetalCosmicRenderer: NSObject, MTKViewDelegate {
         super.init()
         
         buildPipelines()
-        rebuildStars()
+        buildAllStarSystems()
     }
     
     // MARK: - Pipeline Construction
@@ -92,12 +100,19 @@ final class MetalCosmicRenderer: NSObject, MTKViewDelegate {
             }
         }
         
-        // Star pipeline (instanced, fully additive — stars output premultiplied alpha)
-        if let sv = library.makeFunction(name: "cosmicStarVertex"),
-           let sf = library.makeFunction(name: "cosmicStarFragment") {
+        // Build per-preset star pipelines (each preset has its own vertex shader)
+        guard let starFrag = library.makeFunction(name: "cosmicStarFragment") else {
+            print("[MetalCosmicRenderer] Missing cosmicStarFragment shader")
+            return
+        }
+        for (index, vertexName) in Self.starVertexNames.enumerated() {
+            guard let starVert = library.makeFunction(name: vertexName) else {
+                print("[MetalCosmicRenderer] Missing star vertex shader: \(vertexName)")
+                continue
+            }
             let desc = MTLRenderPipelineDescriptor()
-            desc.vertexFunction = sv
-            desc.fragmentFunction = sf
+            desc.vertexFunction = starVert
+            desc.fragmentFunction = starFrag
             desc.colorAttachments[0].pixelFormat = .bgra8Unorm
             desc.colorAttachments[0].isBlendingEnabled = true
             desc.colorAttachments[0].rgbBlendOperation = .add
@@ -108,9 +123,9 @@ final class MetalCosmicRenderer: NSObject, MTKViewDelegate {
             desc.colorAttachments[0].destinationAlphaBlendFactor = .one
             
             do {
-                starPipeline = try device.makeRenderPipelineState(descriptor: desc)
+                starPipelines[index] = try device.makeRenderPipelineState(descriptor: desc)
             } catch {
-                print("[MetalCosmicRenderer] star pipeline error: \(error)")
+                print("[MetalCosmicRenderer] star pipeline[\(index)] error: \(error)")
             }
         }
         
@@ -140,19 +155,24 @@ final class MetalCosmicRenderer: NSObject, MTKViewDelegate {
         }
     }
     
-    // MARK: - Star Buffer
+    // MARK: - Star Systems (one per preset, all independent)
     
-    private func rebuildStars() {
-        let stars = StarFieldGenerator.generateStars(for: preset)
-        starCount = stars.count
-        
-        guard starCount > 0 else { return }
-        
-        starBuffer = device.makeBuffer(
-            bytes: stars,
-            length: MemoryLayout<StarData>.stride * starCount,
-            options: .storageModeShared
-        )
+    private func buildAllStarSystems() {
+        let now = CACurrentMediaTime()
+        for p in NebulaPreset.allCases {
+            let idx = p.metalIndex
+            let stars = StarFieldGenerator.generateStars(for: p)
+            var system = StarSystem(birthTime: now)
+            system.count = stars.count
+            if stars.count > 0 {
+                system.buffer = device.makeBuffer(
+                    bytes: stars,
+                    length: MemoryLayout<StarData>.stride * stars.count,
+                    options: .storageModeShared
+                )
+            }
+            starSystems[idx] = system
+        }
     }
     
     // MARK: - MTKViewDelegate
@@ -168,6 +188,8 @@ final class MetalCosmicRenderer: NSObject, MTKViewDelegate {
         let resolution = SIMD2<Float>(Float(size.width), Float(size.height))
         let elapsed = Float(CACurrentMediaTime() - startTime)
         let presetIdx = preset.metalIndex
+        let starSystem = starSystems[presetIdx]
+        let starElapsed = Float(CACurrentMediaTime() - (starSystem?.birthTime ?? startTime))
         
         guard let commandBuffer = commandQueue.makeCommandBuffer() else { return }
         
@@ -199,24 +221,25 @@ final class MetalCosmicRenderer: NSObject, MTKViewDelegate {
         }
         
         // ---- Phase 1: Stars (additive instanced quads) ----
-        if let starPipe = starPipeline,
-           let starBuf = starBuffer,
-           starCount > 0 {
+        if let starPipe = starPipelines[presetIdx],
+           let system = starSystem,
+           let starBuf = system.buffer,
+           system.count > 0 {
             var starUniforms = StarUniforms(
-                time: elapsed,
+                time: starElapsed,
                 intensity: intensity,
                 speed: speed,
                 resolution: resolution,
-                cameraDrift: cameraOffset(time: elapsed, preset: preset),
-                globalRotation: elapsed * speed * 0.001,
-                globalBreathing: sin(elapsed * speed * 0.15) * 0.02,
+                cameraDrift: cameraOffset(time: starElapsed, preset: preset),
+                globalRotation: starElapsed * speed * 0.003,
+                globalBreathing: sin(starElapsed * speed * 0.3) * 0.025,
                 presetIndex: Int32(presetIdx)
             )
             
             encoder.setRenderPipelineState(starPipe)
             encoder.setVertexBuffer(starBuf, offset: 0, index: 0)
             encoder.setVertexBytes(&starUniforms, length: MemoryLayout<StarUniforms>.stride, index: 1)
-            encoder.drawPrimitives(type: .triangle, vertexStart: 0, vertexCount: 6, instanceCount: starCount)
+            encoder.drawPrimitives(type: .triangle, vertexStart: 0, vertexCount: 6, instanceCount: system.count)
         }
         
         // ---- Phase 2: Post-process (premultiplied alpha overlay) ----
@@ -247,17 +270,23 @@ final class MetalCosmicRenderer: NSObject, MTKViewDelegate {
         let st = t * speed  // speed-responsive
         switch preset {
         case .lagoonNebula:
-            return SIMD2(sin(st * 0.08) * 85, cos(st * 0.06) * 65)
+            return SIMD2(sin(st * 0.05) * 110 + sin(st * 0.14) * 20,
+                         cos(st * 0.04) *  85 + cos(st * 0.11) * 15)
         case .celestialLagoon:
-            return SIMD2(sin(st * 0.06) * 70, cos(st * 0.05) * 55)
+            return SIMD2(sin(st * 0.04) *  90 + sin(st * 0.11) * 16,
+                         cos(st * 0.035) * 70 + cos(st * 0.10) * 12)
         case .solarAurora:
-            return SIMD2(sin(st * 0.07) * 100, cos(st * 0.08) * 45)
+            return SIMD2(sin(st * 0.045) * 120 + sin(st * 0.13) * 22,
+                         cos(st * 0.05)  *  55 + cos(st * 0.14) * 12)
         case .spiralHaloGalaxy:
-            return SIMD2(sin(st * 0.045) * 55, cos(st * 0.055) * 55)
+            return SIMD2(sin(st * 0.03) *  70 + sin(st * 0.09) * 14,
+                         cos(st * 0.035) * 70 + cos(st * 0.10) * 14)
         case .edgeOfAndromeda:
-            return SIMD2(sin(st * 0.06) * 80, cos(st * 0.045) * 35)
+            return SIMD2(sin(st * 0.04) * 100 + sin(st * 0.12) * 18,
+                         cos(st * 0.03) *  45 + cos(st * 0.09) * 10)
         case .starburstRing:
-            return SIMD2(sin(st * 0.05) * 65, cos(st * 0.06) * 65)
+            return SIMD2(sin(st * 0.035) * 80 + sin(st * 0.10) * 16,
+                         cos(st * 0.04)  * 80 + cos(st * 0.11) * 16)
         }
     }
 }
