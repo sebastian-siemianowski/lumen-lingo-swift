@@ -35,6 +35,9 @@ struct FlashCardsView: View {
     @State private var categoryName: String = ""
     @State private var successAura: Bool = false
     @State private var wrongFlash: Bool = false
+    @State private var answerGlow: Color = .clear
+    @State private var answerGlowOpacity: Double = 0
+    @State private var flipProgress: Double = 0  // 0 = front, 1 = back
 
     // Animated floating icon states
     @State private var frontGlowPhase: CGFloat = 0
@@ -147,79 +150,25 @@ struct FlashCardsView: View {
             }
             .padding(.horizontal, 20)
 
-            // Success aura overlay
-            if successAura {
-                successAuraOverlay
-                    .transition(.opacity)
-                    .allowsHitTesting(false)
-            }
-
-            // Wrong flash overlay
-            if wrongFlash {
-                wrongFlashOverlay
-                    .transition(.opacity)
-                    .allowsHitTesting(false)
-            }
-        }
-    }
-
-    // MARK: - Success Aura Overlay
-
-    private var successAuraOverlay: some View {
-        ZStack {
-            // Outer radial green/gold glow
-            RadialGradient(
-                colors: [
-                    .green.opacity(0.25),
-                    Color(hex: "#22c55e").opacity(0.12),
-                    .yellow.opacity(0.06),
-                    .clear
-                ],
-                center: .center,
-                startRadius: 40,
-                endRadius: UIScreen.main.bounds.width * 0.7
-            )
-            .ignoresSafeArea()
-
-            // Inner golden ring
-            Circle()
-                .strokeBorder(
-                    AngularGradient(
-                        colors: [.green, .yellow, .green.opacity(0.5), .yellow, .green],
-                        center: .center
-                    ),
-                    lineWidth: 3
+            // Answer feedback glow — hugs the card area
+            RoundedRectangle(cornerRadius: 32)
+                .fill(
+                    RadialGradient(
+                        colors: [answerGlow.opacity(0.35), answerGlow.opacity(0.08), .clear],
+                        center: .center,
+                        startRadius: 20,
+                        endRadius: 220
+                    )
                 )
-                .frame(width: 260, height: 260)
-                .opacity(0.4)
-                .scaleEffect(successAura ? 1.3 : 0.5)
-
-            // Sparkle particles
-            ForEach(0..<8, id: \.self) { i in
-                Circle()
-                    .fill(.yellow)
-                    .frame(width: 4, height: 4)
-                    .offset(y: -130)
-                    .rotationEffect(.degrees(Double(i) * 45))
-                    .opacity(successAura ? 0 : 0.8)
-                    .scaleEffect(successAura ? 2 : 0.5)
-            }
+                .frame(width: 380, height: 420)
+                .blur(radius: 30)
+                .opacity(answerGlowOpacity)
+                .allowsHitTesting(false)
+                .animation(.easeOut(duration: 0.35), value: answerGlowOpacity)
         }
     }
 
-    // MARK: - Wrong Flash Overlay
-
-    private var wrongFlashOverlay: some View {
-        RoundedRectangle(cornerRadius: 28)
-            .fill(.red.opacity(0.08))
-            .overlay(
-                RoundedRectangle(cornerRadius: 28)
-                    .strokeBorder(.red.opacity(0.2), lineWidth: 2)
-            )
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .padding(20)
-            .ignoresSafeArea()
-    }
+    // (Success/wrong overlays removed — replaced with card-centric glow)
 
     // MARK: - Exercise Header
 
@@ -324,15 +273,16 @@ struct FlashCardsView: View {
                     .allowsHitTesting(false)
             }
 
-            // Both card faces always present — individual 3D rotations
-            // so there is never a black flash during the flip.
+            // Both card faces always present.
+            // Opacity uses a sharp threshold so only one face is visible
+            // at any time — prevents doubled transparent layers mid-flip.
             cardBack(word: word)
                 .rotation3DEffect(
                     .degrees(isFlipped ? 0 : 180),
                     axis: (x: 0, y: 1, z: 0),
                     perspective: 0.4
                 )
-                .opacity(isFlipped ? 1 : 0)
+                .opacity(flipProgress > 0.5 ? 1 : 0)
                 .allowsHitTesting(isFlipped)
 
             cardFront(word: word)
@@ -341,7 +291,7 @@ struct FlashCardsView: View {
                     axis: (x: 0, y: 1, z: 0),
                     perspective: 0.4
                 )
-                .opacity(isFlipped ? 0 : 1)
+                .opacity(flipProgress <= 0.5 ? 1 : 0)
                 .allowsHitTesting(!isFlipped)
         }
         .frame(maxWidth: 500)
@@ -650,11 +600,19 @@ struct FlashCardsView: View {
 
     private func flipCard() {
         guard !isFlipped else { return }
-        withAnimation {
-            isFlipped = true
-        }
+
         audioService.playPlink()
         hapticsService.lightImpact()
+
+        // Animate the 3D rotation
+        withAnimation(.spring(response: 0.7, dampingFraction: 0.75)) {
+            isFlipped = true
+        }
+
+        // Drive the sharp opacity swap at the midpoint
+        withAnimation(.easeInOut(duration: 0.35)) {
+            flipProgress = 1.0
+        }
 
         // Trigger ripple
         showRipple = true
@@ -666,7 +624,7 @@ struct FlashCardsView: View {
             rippleScale = 0
         }
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
             withAnimation(.spring(response: 0.4)) {
                 showButtons = true
             }
@@ -681,13 +639,12 @@ struct FlashCardsView: View {
             audioService.playWarmPulse()
             hapticsService.success()
 
-            // Trigger success aura
-            withAnimation(.easeOut(duration: 0.3)) {
-                successAura = true
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
-                withAnimation(.easeIn(duration: 0.3)) {
-                    successAura = false
+            // Green glow around the card
+            answerGlow = .green
+            answerGlowOpacity = 1.0
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
+                withAnimation(.easeOut(duration: 0.4)) {
+                    answerGlowOpacity = 0
                 }
             }
 
@@ -709,19 +666,18 @@ struct FlashCardsView: View {
             audioService.playSoftNudge()
             hapticsService.warning()
 
-            // Trigger wrong flash
-            withAnimation(.easeOut(duration: 0.15)) {
-                wrongFlash = true
-            }
+            // Orange glow around the card
+            answerGlow = .orange
+            answerGlowOpacity = 1.0
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                withAnimation(.easeIn(duration: 0.2)) {
-                    wrongFlash = false
+                withAnimation(.easeOut(duration: 0.3)) {
+                    answerGlowOpacity = 0
                 }
             }
         }
 
-        // Advance after delay
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.1) {
+        // Advance after brief pause
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) {
             advanceCard()
         }
     }
@@ -731,6 +687,8 @@ struct FlashCardsView: View {
             showButtons = false
             isFlipped = false
         }
+        // Reset flip progress instantly (card is already front-facing by animation)
+        flipProgress = 0
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
             if currentIndex + 1 >= words.count {
