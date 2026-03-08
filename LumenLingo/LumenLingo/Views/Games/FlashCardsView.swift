@@ -427,63 +427,87 @@ struct FlashCardsView: View {
             .frame(height: 360)
             .background {
                 ZStack {
-                    // Ultra-thin frosted glass — more see-through to show cosmic background
+                    // Crystal-clear frosted glass — cosmic background shines through
                     RoundedRectangle(cornerRadius: 32)
                         .fill(.ultraThinMaterial)
-                        .opacity(0.30)
+                        .opacity(0.18)
 
-                    // Subtle colour wash
+                    // Inner light refraction — soft prismatic glow
                     RoundedRectangle(cornerRadius: 32)
                         .fill(
                             LinearGradient(
                                 colors: [
-                                    Color(hex: "#818cf8").opacity(0.06),
-                                    Color(hex: "#c084fc").opacity(0.04),
-                                    Color(hex: "#818cf8").opacity(0.03)
+                                    Color.white.opacity(0.06),
+                                    Color.clear,
+                                    Color.white.opacity(0.03),
                                 ],
                                 startPoint: .topLeading,
                                 endPoint: .bottomTrailing
                             )
                         )
 
-                    // Iridescent border
+                    // Iridescent border — thicker for premium feel
                     RoundedRectangle(cornerRadius: 32)
                         .strokeBorder(
                             AngularGradient(
                                 stops: [
-                                    .init(color: Color.white.opacity(0.50), location: 0.00),
-                                    .init(color: Color(hex: "#a5f3fc").opacity(0.35), location: 0.15),
-                                    .init(color: Color(hex: "#818cf8").opacity(0.40), location: 0.30),
-                                    .init(color: Color(hex: "#f9a8d4").opacity(0.30), location: 0.45),
-                                    .init(color: Color.white.opacity(0.50), location: 0.55),
-                                    .init(color: Color(hex: "#fde68a").opacity(0.30), location: 0.70),
-                                    .init(color: Color(hex: "#6ee7b7").opacity(0.35), location: 0.85),
-                                    .init(color: Color.white.opacity(0.50), location: 1.00),
+                                    .init(color: Color.white.opacity(0.55), location: 0.00),
+                                    .init(color: Color(hex: "#a5f3fc").opacity(0.45), location: 0.12),
+                                    .init(color: Color(hex: "#818cf8").opacity(0.50), location: 0.28),
+                                    .init(color: Color(hex: "#f9a8d4").opacity(0.40), location: 0.42),
+                                    .init(color: Color.white.opacity(0.60), location: 0.55),
+                                    .init(color: Color(hex: "#fde68a").opacity(0.40), location: 0.68),
+                                    .init(color: Color(hex: "#6ee7b7").opacity(0.45), location: 0.82),
+                                    .init(color: Color.white.opacity(0.55), location: 1.00),
                                 ],
                                 center: .center
                             ),
-                            lineWidth: 0.5
+                            lineWidth: 1.0
                         )
 
-                    // Top rim highlight
+                    // Secondary inner border for depth
+                    RoundedRectangle(cornerRadius: 31)
+                        .strokeBorder(
+                            Color.white.opacity(0.08),
+                            lineWidth: 0.5
+                        )
+                        .padding(1)
+
+                    // Top rim specular highlight
                     VStack {
                         Capsule()
                             .fill(
                                 LinearGradient(
-                                    colors: [.clear, .white.opacity(0.45), .white.opacity(0.45), .clear],
+                                    colors: [.clear, .white.opacity(0.55), .white.opacity(0.55), .clear],
                                     startPoint: .leading,
                                     endPoint: .trailing
                                 )
                             )
-                            .frame(height: 0.8)
-                            .padding(.horizontal, 36)
+                            .frame(height: 1)
+                            .padding(.horizontal, 32)
                         Spacer()
+                    }
+
+                    // Bottom edge subtle highlight
+                    VStack {
+                        Spacer()
+                        Capsule()
+                            .fill(
+                                LinearGradient(
+                                    colors: [.clear, .white.opacity(0.12), .clear],
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                )
+                            )
+                            .frame(height: 0.5)
+                            .padding(.horizontal, 48)
                     }
                 }
             }
             .clipShape(RoundedRectangle(cornerRadius: 32))
-            .shadow(color: .black.opacity(0.20), radius: 30, x: 0, y: 14)
-            .shadow(color: Color(hex: "#818cf8").opacity(0.08), radius: 24, x: 0, y: 8)
+            .shadow(color: .black.opacity(0.25), radius: 35, x: 0, y: 16)
+            .shadow(color: Color(hex: "#818cf8").opacity(0.12), radius: 30, x: 0, y: 8)
+            .shadow(color: Color.white.opacity(0.04), radius: 1, x: 0, y: -1)
     }
 
     // MARK: - Action Buttons
