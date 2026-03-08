@@ -169,7 +169,11 @@ struct LiquidGlassPagination: View {
                 .font(.system(size: 13, weight: .bold))
                 .foregroundStyle(.white.opacity(isEnabled ? 0.75 : 0.2))
                 .frame(width: 34, height: 34)
-                .glassEffect(isEnabled ? .regular.interactive() : .regular, in: .circle)
+                .background(
+                    Circle()
+                        .fill(.white.opacity(isEnabled ? 0.10 : 0.04))
+                )
+                .contentShape(Circle())
         }
         .buttonStyle(.plain)
         .disabled(!isEnabled)
