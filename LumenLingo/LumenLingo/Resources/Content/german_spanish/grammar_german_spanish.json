@@ -771,7 +771,7 @@
         "translation": null,
         "options": [
           "la",
-          "la",
+          "un",
           "los",
           "las"
         ],
@@ -1502,7 +1502,7 @@
           "empecemos",
           "empezamos",
           "empezaremos",
-          "empezamos"
+          "empezemos"
         ],
         "correct": "empecemos",
         "explanation": "Nach 'es necesario que' (es ist notwendig, dass) brauchen wir SUBJUNTIVO: 'que empecemos'. Diese Struktur drückt Notwendigkeit aus, die noch nicht erfüllt ist. Der Konjunktiv zeigt, dass die Handlung noch bevorsteht und als wichtige Anforderung gesehen wird."
@@ -1632,7 +1632,7 @@
           "salgamos",
           "salimos",
           "saldremos",
-          "salimos"
+          "salamos"
         ],
         "correct": "salgamos",
         "explanation": "Nach 'sugerir que' (vorschlagen, dass) kommt SUBJUNTIVO: 'que salgamos'. Vorschläge und Empfehlungen nutzen Konjunktiv. Dieser praktische Vorschlag, früher zu fahren, wird als Möglichkeit präsentiert, die zur Diskussion steht, nicht als feststehender Plan."
@@ -3604,7 +3604,7 @@
           "compraríamos",
           "compramos",
           "comprábamos",
-          "compramos"
+          "compremos"
         ],
         "correct": "compraríamos",
         "explanation": "Condicional für HYPOTHESE: 'compraríamos' (wir würden kaufen). Bedingung ist 'mit mehr Geld'. Diese Träumerei über größeres Haus mit mehr Ressourcen ist verständliche Aspiration für bessere Wohnbedingungen."
@@ -3847,7 +3847,7 @@
         "options": [
           "hemos decidido",
           "decidimos",
-          "decidimos",
+          "decidamos",
           "decidiremos"
         ],
         "correct": "hemos decidido",
@@ -6164,7 +6164,7 @@
         "options": [
           "me despierto",
           "me desperto",
-          "me despierto",
+          "me despierta",
           "despierto"
         ],
         "correct": "me despierto",
@@ -6177,7 +6177,7 @@
         "options": [
           "duermes",
           "dormes",
-          "duermes",
+          "duermas",
           "dormir"
         ],
         "correct": "duermes",
@@ -6203,7 +6203,7 @@
         "options": [
           "empieza",
           "empiesa",
-          "empieza",
+          "empieze",
           "empezar"
         ],
         "correct": "empieza",
@@ -6216,7 +6216,7 @@
         "options": [
           "invierto",
           "inverto",
-          "invierto",
+          "invierta",
           "invertir"
         ],
         "correct": "invierto",
@@ -6229,7 +6229,7 @@
         "options": [
           "piensa",
           "pensa",
-          "piensa",
+          "piense",
           "pensar"
         ],
         "correct": "piensa",
@@ -6255,7 +6255,7 @@
         "options": [
           "cuestan",
           "costan",
-          "cuestan",
+          "cuesten",
           "costar"
         ],
         "correct": "cuestan",
@@ -6268,7 +6268,7 @@
         "options": [
           "pierdo",
           "perdo",
-          "pierdo",
+          "pierda",
           "perder"
         ],
         "correct": "pierdo",
@@ -6345,7 +6345,7 @@
         "translation": "Brauchst du gerade jetzt Hilfe mit diesem schweren Mathematikproblem?",
         "options": [
           "Necesitas",
-          "Necesitas",
+          "Necesites",
           "Necesitamos",
           "Necesitar"
         ],
@@ -7755,7 +7755,7 @@
         "options": [
           "habíamos sufrido",
           "sufrimos",
-          "sufrimos",
+          "suframos",
           "sufriremos"
         ],
         "correct": "habíamos sufrido",
@@ -9252,7 +9252,7 @@
           "juego",
           "jugo",
           "jueco",
-          "jugo"
+          "juga"
         ],
         "correct": "juego",
         "explanation": "Verben auf '-gar' ändern G→GU vor 'e': 'jugar' wird zu 'juego' in 1. Person Präsens ist regulär, aber 'jugué' im Pretérito. Diese Sonntagsfußball-Tradition ist wöchentliche Freizeitaktivität."
@@ -12160,7 +12160,7 @@
         "options": [
           "estén",
           "están",
-          "estén",
+          "peleéis",
           "estar"
         ],
         "correct": "estén",
@@ -12313,7 +12313,7 @@
         "options": [
           "escribíamos",
           "escribimos",
-          "escribíamos",
+          "escribíemos",
           "escribían"
         ],
         "correct": "escribíamos",

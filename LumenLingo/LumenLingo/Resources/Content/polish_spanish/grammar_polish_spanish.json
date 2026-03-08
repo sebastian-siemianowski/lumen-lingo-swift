@@ -5755,7 +5755,7 @@
           "nos quedamos",
           "nos quedemos",
           "nos quedimos",
-          "nos quedimos"
+          "nos quedís"
         ],
         "correct": "nos quedamos",
         "explanation": "'Quedarse' NIE zmienia się w 'nosotros'! Zmiany są tylko w 'yo', 'tú', 'él', 'ellos'. My i wy są regularne - łatwe! Deszczowe dni to czas rodzinny! 🏠"
@@ -5872,7 +5872,7 @@
           "quieren",
           "queren",
           "quioren",
-          "quieren"
+          "quiert"
         ],
         "correct": "quieren",
         "explanation": "'Querer' e→ie w trzeciej osobie mnogiej! 'Quieren' to oni chcą. Nostalgia za domem jest silnym uczuciem. Korzenie nas wzywają! 🏡"
@@ -6203,7 +6203,7 @@
         "options": [
           "oye",
           "escucha",
-          "oye",
+          "oyst",
           "oiga"
         ],
         "correct": "oye",
@@ -7203,7 +7203,7 @@
           "vivíamos",
           "vivimos",
           "hemos vivido",
-          "vivíamos"
+          "vivíemos"
         ],
         "correct": "vivíamos",
         "explanation": "'Antes' sygnalizuje imperfecto! To opis przeszłej sytuacji, która trwała. Nie wiemy kiedy dokładnie się zmieniło - to proces życia, nie moment!"
@@ -8189,7 +8189,7 @@
           "habían",
           "han",
           "hubieron",
-          "habían"
+          "habíen"
         ],
         "correct": "habían",
         "explanation": "'Habían + participio' to czas zaprzeszły! Akcja zakończona PRZED inną akcją w przeszłości. Oni wyszli PRZED twoim przyjściem. To jak schodki w czasie - jedno po drugim! ⏰"
@@ -10151,7 +10151,7 @@
           "oímos",
           "oíamos",
           "hemos oído",
-          "oímos"
+          "oíemos"
         ],
         "correct": "oímos",
         "explanation": "'De repente oímos' to nagłe wydarzenie! Pretérito dla szoku i akcji. 'Corrimos' też pretérito. Seria akcji używa pretérito - jak dominujące kostki! 👂"
@@ -17722,7 +17722,7 @@
         "options": [
           "considere",
           "consideres",
-          "considere",
+          "considerst",
           "consideréis"
         ],
         "correct": "considere",
@@ -17774,7 +17774,7 @@
         "options": [
           "permanezcan",
           "permanezcáis",
-          "permanezcan",
+          "permanezcen",
           "permaneced"
         ],
         "correct": "permanezcan",
@@ -19924,7 +19924,7 @@
         "translation": "(Jest bardzo ważne, żebyś przyszedł punktualnie na rozmowę kwalifikacyjną, szef bardzo ceni punktualność zawsze)",
         "options": [
           "importante",
-          "importante",
+          "importantst",
           "importanto",
           "importantoso"
         ],

@@ -450,7 +450,7 @@
         "options": [
           "estudiamos",
           "estudiábamos",
-          "estudiamos",
+          "estudiemos",
           "estudiaremos"
         ],
         "correct": "estudiamos",
@@ -515,7 +515,7 @@
         "options": [
           "visitamos",
           "visitábamos",
-          "visitamos",
+          "visitemos",
           "visitaremos"
         ],
         "correct": "visitamos",
@@ -861,7 +861,7 @@
           "estudiaremos",
           "estudiamos",
           "estudiábamos",
-          "estudiamos"
+          "estudiemos"
         ],
         "correct": "estudiaremos",
         "explanation": "First person plural: infinitive + -emos. 'Estudiar' + emos = 'estudiaremos'. The -emos ending is unique to future first person plural. Spanish future endings come from the Latin verb 'haber' (to have), explaining their similarity to present tense of haber. This historical connection makes the system logical. The future literally evolved from 'I have to study' becoming 'I will study'."
@@ -939,7 +939,7 @@
           "llegaremos",
           "llegamos",
           "llegábamos",
-          "llegamos"
+          "llegemos"
         ],
         "correct": "llegaremos",
         "explanation": "Regular future: 'llegar' + emos = 'llegaremos'. The formation is straightforward. First person plural future is recognizable by -emos ending. This parallels the -amos present ending but with different vowel. The accent falls naturally on -e- without needing written accent. 'Llegaremos tarde' is a simple statement of future lateness. The future tense carries a sense of certainty about this lateness."
@@ -6882,7 +6882,7 @@
         "translation": "(I drink a lot of water)",
         "options": [
           "Bebo",
-          "Bebo",
+          "Beba",
           "Tomo",
           "Bebir"
         ],
@@ -6934,7 +6934,7 @@
         "translation": "(I speak Spanish and English)",
         "options": [
           "Hablo",
-          "Hablo",
+          "Habla",
           "Digo",
           "Hablar"
         ],
@@ -11752,7 +11752,7 @@
           "recibamos",
           "recibimos",
           "recibiremos",
-          "recibimos"
+          "recibemos"
         ],
         "correct": "recibamos",
         "explanation": "'Hasta que' (until) with pending action requires subjunctive. Decision-making depends on uncertain future receipt."
@@ -12292,7 +12292,7 @@
           "salgamos",
           "salimos",
           "saldremos",
-          "salimos"
+          "salamos"
         ],
         "correct": "salgamos",
         "explanation": "Future recommendation about present action uses present subjunctive. 'Será mejor que' triggers subjunctive regardless of tense."
