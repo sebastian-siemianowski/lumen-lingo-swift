@@ -71,7 +71,6 @@ struct DashboardView: View {
         .cosmicBackground()
         .navigationBarTitleDisplayMode(.inline)
         .toolbar(.hidden, for: .navigationBar)
-        .toolbarBackground(.hidden, for: .tabBar)
         .sheet(isPresented: $showLanguageSheet) {
             LanguageSelectionView()
         }
@@ -488,36 +487,6 @@ struct DashboardView: View {
             }
 
             Spacer()
-
-            // Bottom fog overlay (animated breathing)
-            ZStack {
-                LinearGradient(
-                    colors: isDark
-                        ? [
-                            Color(red: 6/255, green: 5/255, blue: 20/255).opacity(0),
-                            Color(red: 6/255, green: 5/255, blue: 20/255).opacity(0.5 + 0.15 * Double(fogBreath)),
-                            Color(red: 6/255, green: 5/255, blue: 20/255).opacity(0.9 + 0.05 * Double(fogBreath))
-                        ]
-                        : [
-                            Color(red: 245/255, green: 247/255, blue: 252/255).opacity(0),
-                            Color(red: 245/255, green: 247/255, blue: 252/255).opacity(0.5),
-                            Color(red: 245/255, green: 247/255, blue: 252/255).opacity(0.85)
-                        ],
-                    startPoint: .top,
-                    endPoint: .bottom
-                )
-                .frame(height: 90)
-
-                // Subtle fog wisps
-                if isDark {
-                    Ellipse()
-                        .fill(Color(hex: "#667eea").opacity(0.04 + 0.02 * Double(fogBreath)))
-                        .frame(width: 200, height: 40)
-                        .blur(radius: 20)
-                        .offset(x: -40, y: -20)
-                }
-            }
-            .allowsHitTesting(false)
         }
         .onAppear {
             withAnimation(.easeInOut(duration: 4.0).repeatForever(autoreverses: true)) {

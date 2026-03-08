@@ -23,6 +23,18 @@ struct ContentView: View {
     @State private var audioService: AudioService = AudioService.shared
     @State private var hapticsService: HapticsService = HapticsService.shared
 
+    /// Background color for the root VStack. Clear on Dashboard so the cosmic
+    /// background shows through the transparent tab bar. Solid on other tabs.
+    private var vstackBackground: Color {
+        if selectedTab == .dashboard {
+            return Color.clear
+        } else if themeManager.isDarkMode {
+            return Color(red: 6/255, green: 5/255, blue: 20/255)
+        } else {
+            return Color(red: 245/255, green: 247/255, blue: 252/255)
+        }
+    }
+
     var body: some View {
         VStack(spacing: 0) {
             // Branded top bar (hidden during games)
@@ -79,20 +91,22 @@ struct ContentView: View {
             }
             .tint(Color.cosmicAccent)
             .toolbar(hideTabBar ? .hidden : .visible, for: .tabBar)
-            .toolbarBackground(selectedTab == .dashboard ? .hidden : .visible, for: .tabBar)
         }
-        .background(themeManager.isDarkMode
-            ? Color(red: 6/255, green: 5/255, blue: 20/255)
-            : Color(red: 245/255, green: 247/255, blue: 252/255)
-        )
+        .background(vstackBackground)
         .onAppear {
             setupServices()
             themeManager.syncFromProfile(profile)
             if let profile { audioService.syncFromProfile(profile) }
-            configureTabBarAppearance()
+            // Delay to ensure UITabBar exists in the hierarchy
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                applyTabBarAppearance(transparent: selectedTab == .dashboard)
+            }
+        }
+        .onChange(of: selectedTab) { _, newTab in
+            applyTabBarAppearance(transparent: newTab == .dashboard)
         }
         .onChange(of: themeManager.isDarkMode) { _, _ in
-            configureTabBarAppearance()
+            applyTabBarAppearance(transparent: selectedTab == .dashboard)
         }
         .onChange(of: profile?.soundEnabled) { _, _ in
             if let profile { audioService.syncFromProfile(profile) }
@@ -146,34 +160,91 @@ struct ContentView: View {
         }
     }
 
-    private func configureTabBarAppearance() {
-        let appearance = UITabBarAppearance()
-        appearance.configureWithDefaultBackground()
+    // MARK: - Tab Bar Appearance (Direct Instance)
 
-        if themeManager.isDarkMode {
-            appearance.backgroundColor = UIColor(Color(red: 10/255, green: 8/255, blue: 20/255).opacity(0.95))
-            appearance.shadowColor = UIColor(white: 1.0, alpha: 0.06)
-            appearance.stackedLayoutAppearance.normal.iconColor = UIColor(white: 0.45, alpha: 1)
-            appearance.stackedLayoutAppearance.normal.titleTextAttributes = [
-                .foregroundColor: UIColor(white: 0.45, alpha: 1),
-            ]
+    /// Directly finds the actual UITabBar in the window hierarchy and
+    /// sets its appearance. Bypasses UITabBar.appearance() proxy which
+    /// doesn't reliably interact with SwiftUI's TabView.
+    private func applyTabBarAppearance(transparent: Bool) {
+        let appearance = UITabBarAppearance()
+
+        if transparent {
+            appearance.configureWithTransparentBackground()
+            appearance.backgroundColor = .clear
+            appearance.shadowColor = .clear
+            appearance.backgroundEffect = nil
+            appearance.backgroundImage = nil
         } else {
-            appearance.backgroundColor = UIColor(Color(red: 250/255, green: 251/255, blue: 254/255).opacity(0.95))
-            appearance.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.08)
-            appearance.stackedLayoutAppearance.normal.iconColor = UIColor(white: 0.5, alpha: 1)
-            appearance.stackedLayoutAppearance.normal.titleTextAttributes = [
-                .foregroundColor: UIColor(white: 0.5, alpha: 1),
-            ]
+            appearance.configureWithDefaultBackground()
+            if themeManager.isDarkMode {
+                appearance.backgroundColor = UIColor(Color(red: 10/255, green: 8/255, blue: 20/255).opacity(0.95))
+                appearance.shadowColor = UIColor(white: 1.0, alpha: 0.06)
+            } else {
+                appearance.backgroundColor = UIColor(Color(red: 250/255, green: 251/255, blue: 254/255).opacity(0.95))
+                appearance.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.08)
+            }
         }
 
+        // Icon / text colors (shared)
+        let normalColor: UIColor = themeManager.isDarkMode || transparent
+            ? UIColor(white: 0.45, alpha: 1)
+            : UIColor(white: 0.5, alpha: 1)
+        appearance.stackedLayoutAppearance.normal.iconColor = normalColor
+        appearance.stackedLayoutAppearance.normal.titleTextAttributes = [
+            .foregroundColor: normalColor,
+        ]
         appearance.stackedLayoutAppearance.selected.iconColor = UIColor(Color.cosmicAccent)
         appearance.stackedLayoutAppearance.selected.titleTextAttributes = [
             .foregroundColor: UIColor(Color.cosmicAccent),
         ]
 
-        UITabBar.appearance().standardAppearance = appearance
-        // NOTE: Do NOT set scrollEdgeAppearance here — let SwiftUI's
-        // .toolbarBackground(.hidden) on DashboardView control it.
+        // Apply to the actual UITabBar instance (not the proxy)
+        if let tabBar = Self.findTabBar() {
+            tabBar.standardAppearance = appearance
+            tabBar.scrollEdgeAppearance = appearance
+
+            if transparent {
+                // Nuclear option: directly clear any UIKit background layers
+                tabBar.backgroundImage = UIImage()
+                tabBar.shadowImage = UIImage()
+                tabBar.backgroundColor = .clear
+                tabBar.isTranslucent = true
+                tabBar.barTintColor = .clear
+
+                // Remove the _UIBarBackground view that UIKit injects
+                for subview in tabBar.subviews {
+                    if String(describing: type(of: subview)).contains("Background") {
+                        subview.isHidden = true
+                    }
+                }
+            } else {
+                // Restore background subviews
+                for subview in tabBar.subviews {
+                    if String(describing: type(of: subview)).contains("Background") {
+                        subview.isHidden = false
+                    }
+                }
+            }
+        } else {
+            // Fallback to proxy if the instance isn't found yet
+            UITabBar.appearance().standardAppearance = appearance
+            UITabBar.appearance().scrollEdgeAppearance = appearance
+        }
+    }
+
+    /// Traverses the view hierarchy to find the actual UITabBar instance.
+    private static func findTabBar() -> UITabBar? {
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+              let window = windowScene.windows.first else { return nil }
+        return findTabBar(in: window)
+    }
+
+    private static func findTabBar(in view: UIView) -> UITabBar? {
+        if let tabBar = view as? UITabBar { return tabBar }
+        for subview in view.subviews {
+            if let found = findTabBar(in: subview) { return found }
+        }
+        return nil
     }
 }
 
