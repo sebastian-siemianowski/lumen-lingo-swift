@@ -255,7 +255,7 @@ struct FlashCardsView: View {
                 }
                 .padding(.horizontal, 10)
                 .padding(.vertical, 5)
-                .background(Capsule().fill(.white.opacity(0.1)))
+                .glassEffect(.regular.tint(.yellow.opacity(0.1)), in: .capsule)
             }
 
             // Progress bar
@@ -292,7 +292,7 @@ struct FlashCardsView: View {
         }
         .padding(.horizontal, 8)
         .padding(.vertical, 3)
-        .background(Capsule().fill(color.opacity(0.15)))
+        .glassEffect(.regular.tint(color.opacity(0.2)), in: .capsule)
     }
 
     // MARK: - Flashcard
@@ -324,28 +324,35 @@ struct FlashCardsView: View {
                     .allowsHitTesting(false)
             }
 
-            if !isFlipped {
-                cardFront(word: word)
-                    .rotation3DEffect(.degrees(0), axis: (x: 0, y: 1, z: 0))
-            } else {
-                cardBack(word: word)
-                    .rotation3DEffect(.degrees(0), axis: (x: 0, y: 1, z: 0))
-            }
+            // Both card faces always present — individual 3D rotations
+            // so there is never a black flash during the flip.
+            cardBack(word: word)
+                .rotation3DEffect(
+                    .degrees(isFlipped ? 0 : 180),
+                    axis: (x: 0, y: 1, z: 0),
+                    perspective: 0.4
+                )
+                .opacity(isFlipped ? 1 : 0)
+                .allowsHitTesting(isFlipped)
+
+            cardFront(word: word)
+                .rotation3DEffect(
+                    .degrees(isFlipped ? -180 : 0),
+                    axis: (x: 0, y: 1, z: 0),
+                    perspective: 0.4
+                )
+                .opacity(isFlipped ? 0 : 1)
+                .allowsHitTesting(!isFlipped)
         }
         .frame(maxWidth: 500)
         .frame(height: 360)
-        .clipped()
-        // Subtle floating animation (React: y: [0, -3, 0])
+        .contentShape(Rectangle())
+        // Subtle floating animation
         .offset(y: Foundation.sin(Double(floatPhase)) * 3)
+        .animation(.spring(response: 0.7, dampingFraction: 0.75), value: isFlipped)
         .onTapGesture {
             flipCard()
         }
-        .rotation3DEffect(
-            .degrees(isFlipped ? 180 : 0),
-            axis: (x: 0, y: 1, z: 0),
-            perspective: 0.4
-        )
-        .animation(.spring(response: 0.7, dampingFraction: 0.75), value: isFlipped)
         .onAppear {
             withAnimation(.easeInOut(duration: 4).repeatForever(autoreverses: true)) {
                 floatPhase = .pi * 2
@@ -452,123 +459,74 @@ struct FlashCardsView: View {
                 .padding(.bottom, 24)
             }
         }
-        .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
         .onAppear { startBackAnimations() }
     }
 
-    // MARK: - Core Liquid Glass Shell
+    // MARK: - Transparent Glass Card
 
     private func liquidGlassCard<Content: View>(@ViewBuilder content: () -> Content) -> some View {
-        ZStack {
-            // ── GLASS SHELL ──────────────────────────────────────────────
-            liquidGlassShell()
+        content()
+            .frame(maxWidth: .infinity)
+            .frame(height: 360)
+            .background {
+                ZStack {
+                    // Ultra-thin frosted glass — lets the cosmic background shine through
+                    RoundedRectangle(cornerRadius: 32)
+                        .fill(.ultraThinMaterial)
+                        .opacity(0.55)
 
-            // ── CONTENT ──────────────────────────────────────────────────
-            content()
-        }
-        .frame(maxWidth: .infinity)
-        .frame(height: 360)
-        // Elevation: deep soft shadow + coloured ambient lift
-        .shadow(color: .black.opacity(0.55), radius: 56, x: 0, y: 28)
-        .shadow(color: .black.opacity(0.22), radius: 16, x: 0, y: 8)
-        .shadow(color: Color(hex: "#818cf8").opacity(0.18), radius: 40, x: 0, y: 16)
-    }
-
-    @ViewBuilder
-    private func liquidGlassShell() -> some View {
-        GeometryReader { geo in
-            let w = geo.size.width
-            let h = geo.size.height
-
-            ZStack {
-                // ── LAYER 1: pure transparent base ────────────────────
-                // No material blur — a fixed semi-transparent fill so it
-                // always looks transparent, never frosted.
-                RoundedRectangle(cornerRadius: 36)
-                    .fill(
-                        colorScheme == .dark
-                            ? Color.white.opacity(0.07)
-                            : Color.white.opacity(0.22)
-                    )
-
-                // ── LAYER 2: dark tint skin (barely there) ─────────────
-                // Apple glass is almost clear; only a whisper of dark in dark mode
-                RoundedRectangle(cornerRadius: 36)
-                    .fill(Color.black.opacity(colorScheme == .dark ? 0.08 : 0.00))
-
-                // ── LAYER 3: BOTTOM EDGE INNER GLOW ───────────────────
-                // Glass picks up a faint secondary reflection at the lower rim.
-                Ellipse()
-                    .fill(Color.white.opacity(colorScheme == .dark ? 0.08 : 0.15))
-                    .frame(width: w * 0.60, height: h * 0.08)
-                    .blur(radius: 14)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
-                    .padding(.bottom, 14)
-                    .allowsHitTesting(false)
-
-                // ── LAYER 6: IRIDESCENT BORDER ────────────────────────
-                // Thin-film interference — the soap-bubble rainbow shimmer.
-                // AngularGradient sweeps the full hue spectrum around the perimeter.
-                RoundedRectangle(cornerRadius: 36)
-                    .strokeBorder(
-                        AngularGradient(
-                            stops: [
-                                .init(color: Color.white.opacity(0.90),         location: 0.00),
-                                .init(color: Color(hex: "#a5f3fc").opacity(0.80), location: 0.15),
-                                .init(color: Color(hex: "#818cf8").opacity(0.85), location: 0.30),
-                                .init(color: Color(hex: "#f9a8d4").opacity(0.75), location: 0.45),
-                                .init(color: Color.white.opacity(0.90),          location: 0.55),
-                                .init(color: Color(hex: "#fde68a").opacity(0.70), location: 0.70),
-                                .init(color: Color(hex: "#6ee7b7").opacity(0.80), location: 0.85),
-                                .init(color: Color.white.opacity(0.90),          location: 1.00),
-                            ],
-                            center: .center
-                        ),
-                        lineWidth: 1.0
-                    )
-
-                // ── LAYER 7: TOP RIM CATCH-LIGHT ──────────────────────
-                // The brightest, sharpest highlight — a 1.5pt line right at
-                // the very top edge. This alone reads as "glass" instantly.
-                Capsule()
-                    .fill(
-                        LinearGradient(
-                            colors: [
-                                .clear,
-                                Color.white.opacity(colorScheme == .dark ? 0.90 : 1.00),
-                                Color.white.opacity(colorScheme == .dark ? 0.90 : 1.00),
-                                .clear
-                            ],
-                            startPoint: .leading,
-                            endPoint: .trailing
+                    // Subtle colour wash
+                    RoundedRectangle(cornerRadius: 32)
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    Color(hex: "#818cf8").opacity(0.06),
+                                    Color(hex: "#c084fc").opacity(0.04),
+                                    Color(hex: "#818cf8").opacity(0.03)
+                                ],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
                         )
-                    )
-                    .frame(width: w - 60, height: 1.5)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-                    .padding(.top, 0)
-                    .allowsHitTesting(false)
 
-                // ── LAYER 8: LEFT RIM SIDE LIGHT ──────────────────────
-                // Glass also catches light on the left edge — subtler.
-                Capsule()
-                    .fill(
-                        LinearGradient(
-                            colors: [
-                                .clear,
-                                Color.white.opacity(colorScheme == .dark ? 0.45 : 0.60),
-                                .clear
-                            ],
-                            startPoint: .top,
-                            endPoint: .bottom
+                    // Iridescent border
+                    RoundedRectangle(cornerRadius: 32)
+                        .strokeBorder(
+                            AngularGradient(
+                                stops: [
+                                    .init(color: Color.white.opacity(0.50), location: 0.00),
+                                    .init(color: Color(hex: "#a5f3fc").opacity(0.35), location: 0.15),
+                                    .init(color: Color(hex: "#818cf8").opacity(0.40), location: 0.30),
+                                    .init(color: Color(hex: "#f9a8d4").opacity(0.30), location: 0.45),
+                                    .init(color: Color.white.opacity(0.50), location: 0.55),
+                                    .init(color: Color(hex: "#fde68a").opacity(0.30), location: 0.70),
+                                    .init(color: Color(hex: "#6ee7b7").opacity(0.35), location: 0.85),
+                                    .init(color: Color.white.opacity(0.50), location: 1.00),
+                                ],
+                                center: .center
+                            ),
+                            lineWidth: 0.5
                         )
-                    )
-                    .frame(width: 1.5, height: h * 0.50)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-                    .padding(.top, h * 0.08)
-                    .allowsHitTesting(false)
+
+                    // Top rim highlight
+                    VStack {
+                        Capsule()
+                            .fill(
+                                LinearGradient(
+                                    colors: [.clear, .white.opacity(0.45), .white.opacity(0.45), .clear],
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                )
+                            )
+                            .frame(height: 0.8)
+                            .padding(.horizontal, 36)
+                        Spacer()
+                    }
+                }
             }
-        }
-        .clipShape(RoundedRectangle(cornerRadius: 36))
+            .clipShape(RoundedRectangle(cornerRadius: 32))
+            .shadow(color: .black.opacity(0.20), radius: 30, x: 0, y: 14)
+            .shadow(color: Color(hex: "#818cf8").opacity(0.08), radius: 24, x: 0, y: 8)
     }
 
     // MARK: - Action Buttons
@@ -600,15 +558,10 @@ struct FlashCardsView: View {
                 .padding(.horizontal, 20)
                 .padding(.vertical, 14)
                 .frame(maxWidth: .infinity)
-                .background(
-                    GlassCardBackground(
-                        cornerRadius: 28,
-                        borderColor: .orange,
-                        borderOpacity: 0.2,
-                        tintColor: .orange
-                    )
+                .glassEffect(
+                    .regular.tint(.orange.opacity(0.1)),
+                    in: .rect(cornerRadius: 28)
                 )
-                .clipShape(RoundedRectangle(cornerRadius: 28))
             }
             .buttonStyle(ScaleButtonStyle())
 
@@ -637,15 +590,10 @@ struct FlashCardsView: View {
                 .padding(.horizontal, 20)
                 .padding(.vertical, 14)
                 .frame(maxWidth: .infinity)
-                .background(
-                    GlassCardBackground(
-                        cornerRadius: 28,
-                        borderColor: .green,
-                        borderOpacity: 0.2,
-                        tintColor: .green
-                    )
+                .glassEffect(
+                    .regular.tint(.green.opacity(0.1)),
+                    in: .rect(cornerRadius: 28)
                 )
-                .clipShape(RoundedRectangle(cornerRadius: 28))
             }
             .buttonStyle(ScaleButtonStyle())
         }
@@ -1025,17 +973,11 @@ struct GameCompleteView: View {
                         .foregroundStyle(.white)
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 16)
-                        .background(
-                            RoundedRectangle(cornerRadius: 20)
-                                .fill(
-                                    LinearGradient(
-                                        colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
-                                        startPoint: .leading,
-                                        endPoint: .trailing
-                                    )
-                                )
+                        .glassEffect(
+                            .regular.tint(Color(hex: "#667eea").opacity(0.2)),
+                            in: .rect(cornerRadius: 20)
                         )
-                        .shadow(color: Color(hex: "#667eea").opacity(0.4), radius: 15)
+                        .shadow(color: Color(hex: "#667eea").opacity(0.25), radius: 15)
                     }
                     .buttonStyle(ScaleButtonStyle())
 
@@ -1050,14 +992,10 @@ struct GameCompleteView: View {
                         .foregroundStyle(.white.opacity(0.7))
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 16)
-                        .background(
-                            GlassCardBackground(
-                                cornerRadius: 20,
-                                borderColor: .white,
-                                borderOpacity: 0.1
-                            )
+                        .glassEffect(
+                            .regular.tint(.white.opacity(0.05)),
+                            in: .rect(cornerRadius: 20)
                         )
-                        .clipShape(RoundedRectangle(cornerRadius: 20))
                     }
                     .buttonStyle(ScaleButtonStyle())
                 }
@@ -1085,15 +1023,10 @@ struct GameCompleteView: View {
         }
         .frame(maxWidth: .infinity)
         .padding(16)
-        .background(
-            GlassCardBackground(
-                cornerRadius: 18,
-                borderColor: color,
-                borderOpacity: 0.15,
-                tintColor: color
-            )
+        .glassEffect(
+            .regular.tint(color.opacity(0.12)),
+            in: .rect(cornerRadius: 18)
         )
-        .clipShape(RoundedRectangle(cornerRadius: 18))
     }
 }
 
