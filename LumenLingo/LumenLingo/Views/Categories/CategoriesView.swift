@@ -234,44 +234,62 @@ struct CategoriesView: View {
             : [GridItem(.flexible())]
 
         return LazyVGrid(columns: columns, spacing: 14) {
-            ForEach(paginatedCategories, id: \.id) { category in
+            ForEach(Array(paginatedCategories.enumerated()), id: \.element.id) { index, category in
                 categoryCard(category)
                     .transition(.asymmetric(
-                        insertion: .opacity.combined(with: .scale(scale: 0.95)),
-                        removal: .opacity.combined(with: .scale(scale: 0.95))
+                        insertion: .opacity.combined(with: .move(edge: .trailing)).combined(with: .scale(scale: 0.92)),
+                        removal: .opacity.combined(with: .move(edge: .leading)).combined(with: .scale(scale: 0.92))
                     ))
+                    .animation(
+                        .spring(response: 0.4, dampingFraction: 0.78).delay(Double(index) * 0.05),
+                        value: currentPage
+                    )
             }
         }
-        .animation(.spring(response: 0.35, dampingFraction: 0.8), value: currentPage)
     }
 
     private func categoryCard(_ item: CategoryDisplayItem) -> some View {
         let colors = categoryGradient(item)
+        let fav = isFavorite(item.id)
+        let pct = item.progress.percentage
+        let completed = pct >= 100.0
 
         return Button {
             HapticsService.light()
             navigateToGame(categoryId: item.id)
         } label: {
-            VStack(alignment: .leading, spacing: 10) {
-                // Top row: icon + favorite
-                HStack(alignment: .top) {
+            VStack(alignment: .leading, spacing: isGridView ? 8 : 10) {
+                // Top row: icon + item count + favorite
+                HStack(alignment: .top, spacing: 8) {
                     LiquidGlassIconContainer(
                         systemName: categoryIcon(item),
                         gradient: colors,
-                        size: isGridView ? 44 : 52
+                        size: isGridView ? 40 : 48
                     )
+
+                    // Item count pill
+                    Text("\(item.itemCount) items")
+                        .font(.system(size: 10, weight: .semibold, design: .rounded))
+                        .foregroundStyle(.white.opacity(0.55))
+                        .padding(.horizontal, 7)
+                        .padding(.vertical, 3)
+                        .background(Capsule().fill(.white.opacity(0.08)))
 
                     Spacer()
 
                     // Favorite button
                     Button {
-                        HapticsService.light()
-                        toggleFavorite(item.id)
+                        withAnimation(.spring(response: 0.35, dampingFraction: 0.5)) {
+                            HapticsService.light()
+                            toggleFavorite(item.id)
+                        }
                     } label: {
-                        Image(systemName: isFavorite(item.id) ? "heart.fill" : "heart")
-                            .font(.system(size: 16, weight: .medium))
-                            .foregroundStyle(isFavorite(item.id) ? .pink : .white.opacity(0.35))
-                            .shadow(color: isFavorite(item.id) ? .pink.opacity(0.4) : .clear, radius: 6)
+                        Image(systemName: fav ? "heart.fill" : "heart")
+                            .font(.system(size: 15, weight: .medium))
+                            .foregroundStyle(fav ? .pink : .white.opacity(0.35))
+                            .scaleEffect(fav ? 1.15 : 1.0)
+                            .frame(width: 32, height: 32)
+                            .contentShape(Circle())
                     }
                     .buttonStyle(.plain)
                 }
@@ -285,67 +303,118 @@ struct CategoriesView: View {
                 // Description
                 Text(item.description)
                     .font(isGridView ? .caption : .subheadline)
-                    .foregroundStyle(.white.opacity(0.6))
+                    .foregroundStyle(.white.opacity(0.55))
                     .lineLimit(isGridView ? 2 : 3)
                     .frame(maxHeight: .infinity, alignment: .top)
 
-                // Difficulty badge
-                difficultyBadge(item.difficulty)
+                // Bottom row: difficulty + progress
+                HStack(alignment: .center, spacing: 8) {
+                    difficultyBadge(item.difficulty)
 
-                // Progress bar
-                VStack(alignment: .leading, spacing: 4) {
-                    LiquidProgressBar(
-                        progress: item.progress.percentage,
-                        height: isGridView ? 5 : 6,
-                        gradient: progressGradient
-                    )
+                    Spacer()
 
-                    HStack {
-                        Text("\(item.progress.mastered)/\(item.progress.total)")
-                            .font(.caption2)
-                            .foregroundStyle(.white.opacity(0.4))
-                        Spacer()
-                        if item.progress.percentage >= 100.0 {
-                            HStack(spacing: 3) {
-                                Image(systemName: "checkmark.seal.fill")
-                                    .font(.system(size: 9))
-                                Text("Done")
-                                    .font(.caption2.bold())
-                            }
-                            .foregroundStyle(.green)
-                        } else {
-                            Text("\(Int(item.progress.percentage))%")
-                                .font(.caption2.bold())
-                                .foregroundStyle(.white.opacity(0.65))
+                    if isGridView {
+                        // Compact circular progress ring for grid
+                        circularProgress(pct: pct, completed: completed, colors: colors)
+                    } else {
+                        // Full linear progress for list
+                        VStack(alignment: .trailing, spacing: 3) {
+                            LiquidProgressBar(
+                                progress: pct,
+                                height: 5,
+                                gradient: progressGradient
+                            )
+                            .frame(width: 120)
+
+                            progressLabel(pct: pct, mastered: item.progress.mastered, total: item.progress.total, completed: completed)
                         }
                     }
                 }
             }
             .padding(isGridView ? 14 : 16)
-            .frame(minHeight: isGridView ? 220 : 0)
+            .frame(minHeight: isGridView ? 200 : 0)
             .liquidGlassCard(
                 cornerRadius: 22,
                 accentColor: colors.first ?? .blue
             )
         }
         .buttonStyle(LiquidCardButtonStyle(accentColor: colors.first ?? .white))
+        .accessibilityLabel("\(item.name), \(item.difficulty.rawValue), \(Int(pct))% complete")
+        .accessibilityHint("Double tap to start")
+    }
+
+    // MARK: - Circular Progress (Grid Cards)
+
+    private func circularProgress(pct: Double, completed: Bool, colors: [Color]) -> some View {
+        ZStack {
+            // Track
+            Circle()
+                .stroke(.white.opacity(0.08), lineWidth: 3)
+
+            // Fill arc
+            Circle()
+                .trim(from: 0, to: min(pct / 100.0, 1.0))
+                .stroke(
+                    completed
+                        ? AnyShapeStyle(.green)
+                        : AnyShapeStyle(LinearGradient(colors: colors, startPoint: .topLeading, endPoint: .bottomTrailing)),
+                    style: StrokeStyle(lineWidth: 3, lineCap: .round)
+                )
+                .rotationEffect(.degrees(-90))
+
+            // Centre label
+            if completed {
+                Image(systemName: "checkmark")
+                    .font(.system(size: 10, weight: .bold))
+                    .foregroundStyle(.green)
+            } else {
+                Text("\(Int(pct))")
+                    .font(.system(size: 9, weight: .bold, design: .rounded))
+                    .foregroundStyle(.white.opacity(0.7))
+            }
+        }
+        .frame(width: 34, height: 34)
+    }
+
+    // MARK: - Progress Label (List Cards)
+
+    private func progressLabel(pct: Double, mastered: Int, total: Int, completed: Bool) -> some View {
+        HStack(spacing: 4) {
+            if completed {
+                Image(systemName: "checkmark.seal.fill")
+                    .font(.system(size: 9))
+                Text("Complete")
+                    .font(.caption2.bold())
+            } else {
+                Text("\(mastered)/\(total)")
+                    .font(.caption2)
+                    .foregroundStyle(.white.opacity(0.4))
+                Text("·")
+                    .foregroundStyle(.white.opacity(0.25))
+                Text("\(Int(pct))%")
+                    .font(.caption2.bold())
+            }
+        }
+        .foregroundStyle(completed ? .green : .white.opacity(0.6))
     }
 
     private func difficultyBadge(_ difficulty: Difficulty) -> some View {
-        HStack(spacing: 4) {
-            Image(systemName: difficulty.icon)
-                .font(.system(size: 10))
-            Text(difficulty.rawValue.capitalized)
-                .font(.caption2.bold())
+        HStack(spacing: 3) {
             ForEach(0..<difficulty.starCount, id: \.self) { _ in
                 Image(systemName: "star.fill")
                     .font(.system(size: 7))
             }
+            Text(difficulty.rawValue.capitalized)
+                .font(.system(size: 10, weight: .semibold, design: .rounded))
         }
         .foregroundStyle(difficulty.color)
         .padding(.horizontal, 8)
-        .padding(.vertical, 3)
-        .background(Capsule().fill(difficulty.color.opacity(0.1)))
+        .padding(.vertical, 4)
+        .background(
+            Capsule()
+                .fill(difficulty.color.opacity(0.12))
+                .overlay(Capsule().strokeBorder(difficulty.color.opacity(0.15), lineWidth: 0.5))
+        )
     }
 
     // MARK: - Empty State

@@ -134,8 +134,13 @@ struct LiquidCardButtonStyle: ButtonStyle {
 
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .scaleEffect(configuration.isPressed ? 0.965 : 1.0)
-            .brightness(configuration.isPressed ? -0.02 : 0)
-            .animation(.spring(response: 0.3, dampingFraction: 0.6), value: configuration.isPressed)
+            .scaleEffect(configuration.isPressed ? 0.96 : 1.0)
+            .brightness(configuration.isPressed ? -0.03 : 0)
+            .shadow(
+                color: configuration.isPressed ? accentColor.opacity(0.15) : .clear,
+                radius: configuration.isPressed ? 12 : 0,
+                y: configuration.isPressed ? 4 : 0
+            )
+            .animation(.spring(response: 0.25, dampingFraction: 0.65), value: configuration.isPressed)
     }
 }
