@@ -23,17 +23,31 @@ struct CategoriesView: View {
     @State private var isLoading: Bool = true
     @State private var searchText: String = ""
     @State private var showCompletedFilter: Bool = false
+    @State private var showFavoritesOnly: Bool = false
     @State private var isGridView: Bool = true
     @State private var currentPage: Int = 0
 
+    /// Pre-computed set of favorite category IDs for O(1) lookups.
+    private var favoriteIds: Set<String> {
+        let gameTypeRaw = gameType.rawValue
+        return Set(favorites.filter { $0.gameType == gameTypeRaw }.map { $0.categoryKey })
+    }
+
     private var filteredCategories: [CategoryDisplayItem] {
+        let favIds = favoriteIds
         var items = categories
+
+        // Favorites-only filter
+        if showFavoritesOnly {
+            items = items.filter { favIds.contains($0.id) }
+        }
 
         // Search filter
         if !searchText.isEmpty {
+            let query = searchText.lowercased()
             items = items.filter {
-                $0.name.localizedCaseInsensitiveContains(searchText) ||
-                $0.description.localizedCaseInsensitiveContains(searchText)
+                $0.name.lowercased().contains(query) ||
+                $0.description.lowercased().contains(query)
             }
         }
 
@@ -44,8 +58,8 @@ struct CategoriesView: View {
 
         // Sort: favorites first, then by order
         items.sort { a, b in
-            let aFav = isFavorite(a.id)
-            let bFav = isFavorite(b.id)
+            let aFav = favIds.contains(a.id)
+            let bFav = favIds.contains(b.id)
             if aFav != bFav { return aFav }
             return a.order < b.order
         }
@@ -122,10 +136,13 @@ struct CategoriesView: View {
             withAnimation { currentPage = 0 }
         }
         .onChange(of: showCompletedFilter) { _, _ in
-            withAnimation { currentPage = 0 }
+            withAnimation(.smooth(duration: 0.3)) { currentPage = 0 }
+        }
+        .onChange(of: showFavoritesOnly) { _, _ in
+            withAnimation(.smooth(duration: 0.3)) { currentPage = 0 }
         }
         .onChange(of: isGridView) { _, _ in
-            withAnimation { currentPage = 0 }
+            withAnimation(.smooth(duration: 0.3)) { currentPage = 0 }
         }
         .simultaneousGesture(
             DragGesture(minimumDistance: 40, coordinateSpace: .local)
@@ -202,13 +219,28 @@ struct CategoriesView: View {
                     }
                 }
 
+                // Filter: favorites only
+                Button {
+                    withAnimation(.smooth(duration: 0.35)) {
+                        showFavoritesOnly.toggle()
+                    }
+                } label: {
+                    Image(systemName: showFavoritesOnly ? "heart.fill" : "heart")
+                        .font(.subheadline)
+                        .foregroundStyle(showFavoritesOnly ? .pink : .white.opacity(0.4))
+                        .contentTransition(.symbolEffect(.replace))
+                }
+
                 // Filter completed toggle
                 Button {
-                    withAnimation { showCompletedFilter.toggle() }
+                    withAnimation(.smooth(duration: 0.35)) {
+                        showCompletedFilter.toggle()
+                    }
                 } label: {
                     Image(systemName: showCompletedFilter ? "eye.slash.fill" : "eye.fill")
                         .font(.subheadline)
                         .foregroundStyle(showCompletedFilter ? .yellow : .white.opacity(0.4))
+                        .contentTransition(.symbolEffect(.replace))
                 }
             }
             .padding(12)
@@ -228,6 +260,9 @@ struct CategoriesView: View {
 
     // MARK: - Category Grid
 
+    /// Stable identity for tracking which items are visible, driving add/remove animation.
+    private var filteredIds: [String] { paginatedCategories.map { $0.id } }
+
     private var categoryGrid: some View {
         let columns = isGridView
             ? [GridItem(.flexible(), spacing: 14), GridItem(.flexible(), spacing: 14)]
@@ -236,16 +271,19 @@ struct CategoriesView: View {
         return LazyVGrid(columns: columns, spacing: 14) {
             ForEach(Array(paginatedCategories.enumerated()), id: \.element.id) { index, category in
                 categoryCard(category)
-                    .transition(.asymmetric(
-                        insertion: .opacity.combined(with: .move(edge: .trailing)).combined(with: .scale(scale: 0.92)),
-                        removal: .opacity.combined(with: .move(edge: .leading)).combined(with: .scale(scale: 0.92))
-                    ))
-                    .animation(
-                        .spring(response: 0.4, dampingFraction: 0.78).delay(Double(index) * 0.05),
-                        value: currentPage
+                    .transition(
+                        .asymmetric(
+                            insertion: .opacity.combined(with: .scale(scale: 0.92)).combined(with: .offset(y: 12)),
+                            removal: .opacity.combined(with: .scale(scale: 0.94))
+                        )
                     )
             }
         }
+        .animation(.smooth(duration: 0.4), value: filteredIds)
+        .animation(
+            .spring(response: 0.4, dampingFraction: 0.78),
+            value: currentPage
+        )
     }
 
     private func categoryCard(_ item: CategoryDisplayItem) -> some View {
@@ -513,8 +551,7 @@ struct CategoriesView: View {
     }
 
     private func isFavorite(_ categoryId: String) -> Bool {
-        let gameTypeRaw = gameType.rawValue
-        return favorites.contains { $0.categoryKey == categoryId && $0.gameType == gameTypeRaw }
+        favoriteIds.contains(categoryId)
     }
 
     private func toggleFavorite(_ categoryId: String) {
