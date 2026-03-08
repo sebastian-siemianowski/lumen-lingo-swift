@@ -1,6 +1,21 @@
 import SwiftUI
 import SwiftData
 
+// MARK: - Background Active Environment Key
+
+/// Controls whether expensive background layers (Metal, orbs, aurora) render.
+/// Set to `false` for off-screen tabs to eliminate GPU/CPU waste.
+private struct BackgroundActiveKey: EnvironmentKey {
+    static let defaultValue: Bool = true
+}
+
+extension EnvironmentValues {
+    var backgroundActive: Bool {
+        get { self[BackgroundActiveKey.self] }
+        set { self[BackgroundActiveKey.self] = newValue }
+    }
+}
+
 // MARK: - Layout Background View
 
 /// Orchestrates the full background stack: base color → breathing orbs →
@@ -8,6 +23,7 @@ import SwiftData
 /// SwiftData globally, matching React's localStorage-driven approach.
 struct LayoutBackgroundView: View {
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.backgroundActive) private var isActive
     @Query private var profiles: [UserProfile]
 
     /// Optional overrides for preview / testing contexts
@@ -60,20 +76,20 @@ struct LayoutBackgroundView: View {
                 // Layer 0: Base gradient
                 baseGradient
 
-                // Layer 1: Breathing orbs (respects user toggle)
-                if showOrbs {
+                // Layer 1: Breathing orbs (respects user toggle + active state)
+                if showOrbs && isActive {
                     BreathingOrbsView(isDarkMode: colorScheme == .dark, scheme: orbScheme, intensity: orbIntensity, speed: orbSpeed)
                         .opacity(colorScheme == .dark ? 0.7 : 0.4)
                 }
 
-                // Layer 2: Quantum flow (respects user toggle)
-                if showQuantumFlow {
+                // Layer 2: Quantum flow (respects user toggle + active state)
+                if showQuantumFlow && isActive {
                     QuantumFlowView(scene: quantumScene, intensity: quantumIntensity, speed: quantumSpeed, isDarkMode: colorScheme == .dark)
                         .opacity(colorScheme == .dark ? 0.5 : 0.25)
                 }
 
-                // Layer 3: Cosmic nebula/galaxy scene (respects user toggle, dark only in React but we allow dimmed in light)
-                if showCosmic {
+                // Layer 3: Cosmic nebula (respects user toggle + active state)
+                if showCosmic && isActive {
                     CosmicBackgroundView(
                         preset: nebulaPreset,
                         intensity: cosmicIntensity * (colorScheme == .dark ? 1.0 : 0.5),

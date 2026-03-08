@@ -41,6 +41,7 @@ struct ContentView: View {
                         routeDestination(for: route)
                     }
                 }
+                .environment(\.backgroundActive, selectedTab == .dashboard)
                 .tabItem {
                     Label("Home", systemImage: "house.fill")
                 }
@@ -50,6 +51,7 @@ struct ContentView: View {
                 NavigationStack {
                     JourneyView()
                 }
+                .environment(\.backgroundActive, selectedTab == .journey)
                 .tabItem {
                     Label("Stats", systemImage: "chart.line.uptrend.xyaxis")
                 }
@@ -59,6 +61,7 @@ struct ContentView: View {
                 NavigationStack {
                     MembershipView()
                 }
+                .environment(\.backgroundActive, selectedTab == .membership)
                 .tabItem {
                     Label("Premium", systemImage: "crown.fill")
                 }
@@ -68,6 +71,7 @@ struct ContentView: View {
                 NavigationStack {
                     ProfileView()
                 }
+                .environment(\.backgroundActive, selectedTab == .profile)
                 .tabItem {
                     Label("Profile", systemImage: "person.fill")
                 }
