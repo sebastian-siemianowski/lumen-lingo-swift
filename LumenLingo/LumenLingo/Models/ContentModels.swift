@@ -262,6 +262,7 @@ struct WisdomQuote: Identifiable {
 // MARK: - SF Symbol Mapping
 
 enum SFSymbolMapping {
+    /// Maps React Lucide icon names (PascalCase) to SF Symbol names.
     private static let iconMap: [String: String] = [
         "Coffee": "cup.and.saucer.fill",
         "Utensils": "fork.knife",
@@ -370,10 +371,50 @@ enum SFSymbolMapping {
         "Compass": "safari.fill",
         "Anchor": "anchor.circle.fill",
         "Award": "rosette",
+        "Hash": "number",
+        "Airplane": "airplane",
     ]
 
+    /// Case-insensitive lookup built once from `iconMap`.
+    private static let lowercasedMap: [String: String] = {
+        Dictionary(iconMap.map { (key: $0.key.lowercased(), value: $0.value) },
+                   uniquingKeysWith: { first, _ in first })
+    }()
+
+    /// Resolves a React/Lucide icon name **or** an already-valid SF Symbol name
+    /// to the best SF Symbol string. Lookup is case-insensitive, so "heart",
+    /// "Heart", and "HEART" all resolve to "heart.fill".
+    /// If the name contains a dot (e.g. "cloud.sun", "text.book.closed") it is
+    /// assumed to already be an SF Symbol and returned as-is.
     static func map(_ reactIconName: String) -> String {
-        iconMap[reactIconName] ?? "questionmark.diamond"
+        // 1. Direct case-insensitive lookup in the Lucide → SF Symbol table
+        if let mapped = lowercasedMap[reactIconName.lowercased()] {
+            return mapped
+        }
+
+        // 2. If the name looks like an SF Symbol already (contains a dot or
+        //    is a known bare SF Symbol), pass it through directly.
+        if reactIconName.contains(".") {
+            return reactIconName
+        }
+
+        // 3. Many JSON entries are already bare SF Symbol names (e.g. "leaf",
+        //    "carrot", "pawprint"). Return with ".fill" variant when reasonable.
+        let bare = reactIconName.lowercased()
+        let knownBare: [String: String] = [
+            "leaf": "leaf.fill",
+            "carrot": "carrot.fill",
+            "pawprint": "pawprint.fill",
+            "airplane": "airplane",
+            "paintpalette": "paintpalette.fill",
+        ]
+        if let known = knownBare[bare] {
+            return known
+        }
+
+        // 4. Last resort: return the raw name (it may still be a valid
+        //    SF Symbol), falling back to a question mark only if truly unknown.
+        return reactIconName.isEmpty ? "questionmark.diamond" : reactIconName
     }
 
     /// Alias used by some views

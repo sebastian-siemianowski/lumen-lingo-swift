@@ -351,429 +351,221 @@ struct FlashCardsView: View {
         }
     }
 
+    // MARK: - Liquid Glass Card (front)
+
     private func cardFront(word: FlashcardWord) -> some View {
-        ZStack {
-            // Chromatic edge glows — living glass (4-direction inset shadows from React)
-            RoundedRectangle(cornerRadius: 32)
-                .fill(.clear)
-                .shadow(color: Color(hex: "#8b5cf6").opacity(0.12), radius: 8, x: 0, y: 1)
-                .shadow(color: Color(hex: "#a855f7").opacity(0.10), radius: 8, x: 0, y: -1)
-                .shadow(color: Color(hex: "#6366f1").opacity(0.10), radius: 8, x: 1, y: 0)
-                .shadow(color: Color(hex: "#c084fc").opacity(0.08), radius: 8, x: -1, y: 0)
-                .allowsHitTesting(false)
-
-            // Animated breathing radial glow — top-left indigo
-            Circle()
-                .fill(Color(hex: "#6366f1").opacity(0.08))
-                .frame(width: 200, height: 200)
-                .blur(radius: 60)
-                .offset(x: -80, y: -60)
-                .opacity(0.4 + frontGlowPhase * 0.2)
-                .clipShape(RoundedRectangle(cornerRadius: 32))
-                .allowsHitTesting(false)
-
-            // Animated breathing radial glow — bottom-right purple
-            Circle()
-                .fill(Color(hex: "#a855f7").opacity(0.07))
-                .frame(width: 200, height: 200)
-                .blur(radius: 60)
-                .offset(x: 80, y: 60)
-                .opacity(0.3 + frontGlowPhase2 * 0.25)
-                .clipShape(RoundedRectangle(cornerRadius: 32))
-                .allowsHitTesting(false)
-
-            // Floating decorative icons
-            // Top-left: Sparkles — rotating continuously with golden glow
-            Image(systemName: "sparkles")
-                .font(.system(size: 24, weight: .medium))
-                .foregroundStyle(Color(hex: "#fde047").opacity(0.85))
-                .shadow(color: Color(hex: "#fbbf24").opacity(0.7), radius: 12)
-                .shadow(color: Color(hex: "#fde047").opacity(0.5), radius: 24)
-                .shadow(color: Color(hex: "#fb923c").opacity(0.3), radius: 36)
-                .rotationEffect(.degrees(sparkleRotation))
-                .scaleEffect(sparkleScale)
-                .opacity(sparkleOpacity)
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-                .padding(.top, 28)
-                .padding(.leading, 28)
-                .allowsHitTesting(false)
-
-            // Bottom-right: Lightbulb — breathing with golden glow
-            Image(systemName: "lightbulb.fill")
-                .font(.system(size: 22, weight: .medium))
-                .foregroundStyle(Color(hex: "#fde68a").opacity(0.85))
-                .shadow(color: Color(hex: "#fde047").opacity(0.5), radius: 10)
-                .shadow(color: Color(hex: "#fbbf24").opacity(0.3), radius: 20)
-                .scaleEffect(bulbScale)
-                .opacity(bulbOpacity)
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
-                .padding(.bottom, 28)
-                .padding(.trailing, 28)
-                .allowsHitTesting(false)
-
-            // Dark mode only: Cloud, Moon, Wind floating icons
-            if colorScheme == .dark {
-                // Top-right: Cloud with purple glow
-                Image(systemName: "cloud.fill")
-                    .font(.system(size: 28, weight: .light))
-                    .foregroundStyle(.white.opacity(0.8))
-                    .shadow(color: Color(hex: "#8b5cf6").opacity(0.6), radius: 12)
-                    .shadow(color: Color(hex: "#a855f7").opacity(0.4), radius: 24)
-                    .offset(y: cloudOffset)
-                    .opacity(cloudOpacity)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
-                    .padding(.top, 40)
-                    .padding(.trailing, 48)
-                    .allowsHitTesting(false)
-
-                // Bottom-left: Moon with purple glow
-                Image(systemName: "moon.fill")
-                    .font(.system(size: 24, weight: .medium))
-                    .foregroundStyle(.white.opacity(0.85))
-                    .shadow(color: Color(hex: "#c084fc").opacity(0.7), radius: 14)
-                    .shadow(color: Color(hex: "#a855f7").opacity(0.5), radius: 28)
-                    .shadow(color: Color(hex: "#8b5cf6").opacity(0.3), radius: 42)
-                    .offset(y: moonOffset)
-                    .rotationEffect(.degrees(moonRotation))
-                    .opacity(moonOpacity)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
-                    .padding(.bottom, 48)
-                    .padding(.leading, 40)
-                    .allowsHitTesting(false)
-
-                // Mid-left: Wind with purple glow
-                Image(systemName: "wind")
-                    .font(.system(size: 22, weight: .light))
-                    .foregroundStyle(.white.opacity(0.8))
-                    .shadow(color: Color(hex: "#8b5cf6").opacity(0.5), radius: 14)
-                    .shadow(color: Color(hex: "#a855f7").opacity(0.3), radius: 28)
-                    .offset(x: windOffset)
-                    .opacity(windOpacity)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
-                    .padding(.leading, 32)
-                    .allowsHitTesting(false)
-            }
-
-            VStack(spacing: 20) {
+        liquidGlassCard {
+            VStack(spacing: 0) {
                 Spacer()
 
-                // Main word
                 Text(word.front)
-                    .font(.system(size: dynamicFontSize(for: word.front), weight: .bold))
+                    .font(.system(size: dynamicFontSize(for: word.front), weight: .semibold))
                     .foregroundStyle(.white)
                     .multilineTextAlignment(.center)
-                    .shadow(color: .black.opacity(0.8), radius: 4, y: 2)
-                    .shadow(color: Color(hex: "#667eea").opacity(0.4), radius: 15)
-                    .shadow(color: Color(hex: "#8b5cf6").opacity(0.4), radius: 12)
+                    .padding(.horizontal, 32)
 
-                // Example translation
                 if let example = word.exampleTranslation, !example.isEmpty {
                     Text(example)
                         .font(.subheadline)
                         .foregroundStyle(.white.opacity(0.55))
                         .italic()
                         .multilineTextAlignment(.center)
-                        .padding(.horizontal, 20)
-                        .shadow(color: .black.opacity(0.6), radius: 10)
-                        .shadow(color: Color(hex: "#8b5cf6").opacity(0.3), radius: 20)
+                        .padding(.horizontal, 32)
+                        .padding(.top, 14)
                 }
 
                 Spacer()
 
-                // Tap prompt with breathing animation
                 HStack(spacing: 6) {
                     Image(systemName: "arrow.counterclockwise")
-                        .shadow(color: .white.opacity(0.4), radius: 4)
-                    Text("Tap to see meaning")
+                    Text("Tap to reveal")
                 }
                 .font(.caption)
-                .foregroundStyle(.white.opacity(0.4))
-                .padding(.bottom, 16)
+                .foregroundStyle(.white.opacity(0.40))
+                .padding(.bottom, 28)
             }
-            .padding(24)
         }
-        .frame(maxWidth: .infinity, minHeight: 340)
-        .background(
-            ZStack {
-                RoundedRectangle(cornerRadius: 32)
-                    .fill(.ultraThinMaterial)
-
-                RoundedRectangle(cornerRadius: 32)
-                    .fill(
-                        LinearGradient(
-                            colors: [Color(hex: "#1e1e28").opacity(0.65), Color(hex: "#14141e").opacity(0.55)],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        )
-                    )
-
-                // Glass refraction line at top (from React)
-                VStack {
-                    Rectangle()
-                        .fill(.white.opacity(0.12))
-                        .frame(height: 0.5)
-                    Spacer()
-                }
-                .clipShape(RoundedRectangle(cornerRadius: 32))
-
-                // Inner highlight border
-                RoundedRectangle(cornerRadius: 32)
-                    .strokeBorder(.white.opacity(0.12), lineWidth: 1)
-
-                // Inset top highlight glow
-                VStack {
-                    RoundedRectangle(cornerRadius: 32)
-                        .fill(
-                            LinearGradient(
-                                colors: [.white.opacity(0.20), .clear],
-                                startPoint: .top,
-                                endPoint: .center
-                            )
-                        )
-                        .frame(height: 3)
-                        .blur(radius: 1.5)
-                    Spacer()
-                }
-                .clipShape(RoundedRectangle(cornerRadius: 32))
-            }
-        )
-        .shadow(color: Color(hex: "#a855f7").opacity(0.08), radius: 30)
-        .shadow(color: Color(hex: "#667eea").opacity(0.12), radius: 30, y: 10)
         .onAppear { startFrontAnimations() }
     }
 
+    // MARK: - Liquid Glass Card (back)
+
     private func cardBack(word: FlashcardWord) -> some View {
-        ZStack {
-            // Chromatic edge glows — answer side (4-direction: emerald + amber)
-            RoundedRectangle(cornerRadius: 32)
-                .fill(.clear)
-                .shadow(color: Color(hex: "#34d399").opacity(0.12), radius: 8, x: 0, y: 1)
-                .shadow(color: Color(hex: "#fb923c").opacity(0.10), radius: 8, x: 0, y: -1)
-                .shadow(color: Color(hex: "#10b981").opacity(0.10), radius: 8, x: 1, y: 0)
-                .shadow(color: Color(hex: "#fde047").opacity(0.08), radius: 8, x: -1, y: 0)
-                .allowsHitTesting(false)
-
-            // Animated breathing radial glow — top-left emerald
-            Circle()
-                .fill(Color(hex: "#10b981").opacity(0.12))
-                .frame(width: 200, height: 200)
-                .blur(radius: 60)
-                .offset(x: -60, y: -50)
-                .opacity(0.5 + backGlowPhase * 0.3)
-                .clipShape(RoundedRectangle(cornerRadius: 32))
-                .allowsHitTesting(false)
-
-            // Animated breathing radial glow — bottom-right amber
-            Circle()
-                .fill(Color(hex: "#f59e0b").opacity(0.06))
-                .frame(width: 200, height: 200)
-                .blur(radius: 60)
-                .offset(x: 60, y: 50)
-                .opacity(0.4 + backGlowPhase2 * 0.3)
-                .clipShape(RoundedRectangle(cornerRadius: 32))
-                .allowsHitTesting(false)
-
-            // Top-left: Star — rotating continuously with emerald glow
-            Image(systemName: "star.fill")
-                .font(.system(size: 20, weight: .medium))
-                .foregroundStyle(.white.opacity(0.9))
-                .shadow(color: Color(hex: "#34d399").opacity(0.6), radius: 12)
-                .shadow(color: Color(hex: "#10b981").opacity(0.4), radius: 24)
-                .rotationEffect(.degrees(starRotation))
-                .scaleEffect(starScale)
-                .opacity(starOpacity)
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-                .padding(.top, 28)
-                .padding(.leading, 28)
-                .allowsHitTesting(false)
-
-            // Bottom-right: Heart — breathing with amber glow
-            Image(systemName: "heart.fill")
-                .font(.system(size: 18, weight: .medium))
-                .foregroundStyle(Color(hex: "#fde68a").opacity(0.85))
-                .shadow(color: Color(hex: "#f59e0b").opacity(0.5), radius: 10)
-                .shadow(color: Color(hex: "#fbbf24").opacity(0.3), radius: 20)
-                .scaleEffect(heartScale)
-                .opacity(heartOpacity)
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
-                .padding(.bottom, 28)
-                .padding(.trailing, 28)
-                .allowsHitTesting(false)
-
-            // Dark mode only: Flower, Sparkles, Bolt
-            if colorScheme == .dark {
-                // Top-right: Leaf/Flower with emerald glow
-                Image(systemName: "leaf.fill")
-                    .font(.system(size: 26, weight: .medium))
-                    .foregroundStyle(.white.opacity(0.9))
-                    .shadow(color: Color(hex: "#10b981").opacity(0.6), radius: 15)
-                    .shadow(color: Color(hex: "#34d399").opacity(0.4), radius: 30)
-                    .rotationEffect(.degrees(flowerRotation))
-                    .scaleEffect(flowerScale)
-                    .offset(y: flowerOffset)
-                    .opacity(flowerOpacity)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
-                    .padding(.top, 48)
-                    .padding(.trailing, 40)
-                    .allowsHitTesting(false)
-
-                // Bottom-left: Sparkles with emerald glow
-                Image(systemName: "sparkles")
-                    .font(.system(size: 22, weight: .medium))
-                    .foregroundStyle(.white.opacity(0.85))
-                    .shadow(color: Color(hex: "#34d399").opacity(0.5), radius: 12)
-                    .shadow(color: Color(hex: "#a7f3d0").opacity(0.35), radius: 24)
-                    .rotationEffect(.degrees(backSparkleRotation))
-                    .scaleEffect(backSparkleScale)
-                    .offset(y: backSparkleOffset)
-                    .opacity(backSparkleOpacity)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
-                    .padding(.bottom, 40)
-                    .padding(.leading, 48)
-                    .allowsHitTesting(false)
-
-                // Mid-right: Bolt with amber glow
-                Image(systemName: "bolt.fill")
-                    .font(.system(size: 20, weight: .medium))
-                    .foregroundStyle(Color(hex: "#fde68a"))
-                    .shadow(color: Color(hex: "#f59e0b").opacity(0.5), radius: 10)
-                    .shadow(color: Color(hex: "#fbbf24").opacity(0.35), radius: 20)
-                    .scaleEffect(boltScale)
-                    .rotationEffect(.degrees(boltRotation))
-                    .opacity(boltOpacity)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .trailing)
-                    .padding(.trailing, 32)
-                    .allowsHitTesting(false)
-            }
-
-            VStack(spacing: 16) {
+        liquidGlassCard {
+            VStack(spacing: 0) {
                 Spacer()
 
-                // Target word (answer) — dramatic reveal
                 Text(word.back)
-                    .font(.system(size: dynamicFontSize(for: word.back), weight: .bold))
+                    .font(.system(size: dynamicFontSize(for: word.back), weight: .semibold))
                     .foregroundStyle(.white)
                     .multilineTextAlignment(.center)
-                    .shadow(color: .black.opacity(0.8), radius: 4, y: 2)
-                    .shadow(color: Color(hex: "#34d399").opacity(0.4), radius: 12)
-                    .shadow(color: Color(hex: "#10b981").opacity(0.4), radius: 15)
+                    .padding(.horizontal, 32)
 
-                // Emerald divider
-                Rectangle()
+                // Thin glowing divider
+                Capsule()
                     .fill(
                         LinearGradient(
-                            colors: [.clear, Color(hex: "#34d399").opacity(0.5), .clear],
+                            colors: [.clear, .white.opacity(0.35), .clear],
+                            startPoint: .leading, endPoint: .trailing
+                        )
+                    )
+                    .frame(width: 80, height: 1)
+                    .padding(.top, 18)
+
+                if let example = word.example, !example.isEmpty {
+                    Text("\"\(example)\"")
+                        .font(.subheadline)
+                        .foregroundStyle(.white.opacity(0.65))
+                        .italic()
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 32)
+                        .padding(.top, 14)
+                }
+
+                if let translation = word.exampleTranslation, !translation.isEmpty {
+                    Text(translation)
+                        .font(.caption)
+                        .foregroundStyle(.white.opacity(0.40))
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 32)
+                        .padding(.top, 6)
+                }
+
+                Spacer()
+
+                // Word pair footer pill
+                HStack(spacing: 6) {
+                    Text(word.front)
+                        .foregroundStyle(.white.opacity(0.55))
+                    Image(systemName: "arrow.right")
+                        .foregroundStyle(.white.opacity(0.30))
+                    Text(word.back)
+                        .foregroundStyle(.white.opacity(0.80))
+                }
+                .font(.caption.weight(.medium))
+                .padding(.horizontal, 14)
+                .padding(.vertical, 7)
+                .background(Capsule().fill(.white.opacity(0.08)))
+                .overlay(Capsule().strokeBorder(.white.opacity(0.15), lineWidth: 0.5))
+                .padding(.bottom, 24)
+            }
+        }
+        .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
+        .onAppear { startBackAnimations() }
+    }
+
+    // MARK: - Core Liquid Glass Shell
+
+    private func liquidGlassCard<Content: View>(@ViewBuilder content: () -> Content) -> some View {
+        ZStack {
+            // ── GLASS SHELL ──────────────────────────────────────────────
+            liquidGlassShell()
+
+            // ── CONTENT ──────────────────────────────────────────────────
+            content()
+        }
+        .frame(maxWidth: .infinity, minHeight: 360)
+        // Elevation: deep soft shadow + coloured ambient lift
+        .shadow(color: .black.opacity(0.55), radius: 56, x: 0, y: 28)
+        .shadow(color: .black.opacity(0.22), radius: 16, x: 0, y: 8)
+        .shadow(color: Color(hex: "#818cf8").opacity(0.18), radius: 40, x: 0, y: 16)
+    }
+
+    @ViewBuilder
+    private func liquidGlassShell() -> some View {
+        GeometryReader { geo in
+            let w = geo.size.width
+            let h = geo.size.height
+
+            ZStack {
+                // ── LAYER 1: pure transparent base ────────────────────
+                // No material blur — a fixed semi-transparent fill so it
+                // always looks transparent, never frosted.
+                RoundedRectangle(cornerRadius: 36)
+                    .fill(
+                        colorScheme == .dark
+                            ? Color.white.opacity(0.07)
+                            : Color.white.opacity(0.22)
+                    )
+
+                // ── LAYER 2: dark tint skin (barely there) ─────────────
+                // Apple glass is almost clear; only a whisper of dark in dark mode
+                RoundedRectangle(cornerRadius: 36)
+                    .fill(Color.black.opacity(colorScheme == .dark ? 0.08 : 0.00))
+
+                // ── LAYER 3: BOTTOM EDGE INNER GLOW ───────────────────
+                // Glass picks up a faint secondary reflection at the lower rim.
+                Ellipse()
+                    .fill(Color.white.opacity(colorScheme == .dark ? 0.08 : 0.15))
+                    .frame(width: w * 0.60, height: h * 0.08)
+                    .blur(radius: 14)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+                    .padding(.bottom, 14)
+                    .allowsHitTesting(false)
+
+                // ── LAYER 6: IRIDESCENT BORDER ────────────────────────
+                // Thin-film interference — the soap-bubble rainbow shimmer.
+                // AngularGradient sweeps the full hue spectrum around the perimeter.
+                RoundedRectangle(cornerRadius: 36)
+                    .strokeBorder(
+                        AngularGradient(
+                            stops: [
+                                .init(color: Color.white.opacity(0.90),         location: 0.00),
+                                .init(color: Color(hex: "#a5f3fc").opacity(0.80), location: 0.15),
+                                .init(color: Color(hex: "#818cf8").opacity(0.85), location: 0.30),
+                                .init(color: Color(hex: "#f9a8d4").opacity(0.75), location: 0.45),
+                                .init(color: Color.white.opacity(0.90),          location: 0.55),
+                                .init(color: Color(hex: "#fde68a").opacity(0.70), location: 0.70),
+                                .init(color: Color(hex: "#6ee7b7").opacity(0.80), location: 0.85),
+                                .init(color: Color.white.opacity(0.90),          location: 1.00),
+                            ],
+                            center: .center
+                        ),
+                        lineWidth: 1.0
+                    )
+
+                // ── LAYER 7: TOP RIM CATCH-LIGHT ──────────────────────
+                // The brightest, sharpest highlight — a 1.5pt line right at
+                // the very top edge. This alone reads as "glass" instantly.
+                Capsule()
+                    .fill(
+                        LinearGradient(
+                            colors: [
+                                .clear,
+                                Color.white.opacity(colorScheme == .dark ? 0.90 : 1.00),
+                                Color.white.opacity(colorScheme == .dark ? 0.90 : 1.00),
+                                .clear
+                            ],
                             startPoint: .leading,
                             endPoint: .trailing
                         )
                     )
-                    .frame(width: 96, height: 2)
-                    .shadow(color: Color(hex: "#34d399").opacity(0.3), radius: 20)
+                    .frame(width: w - 60, height: 1.5)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+                    .padding(.top, 0)
+                    .allowsHitTesting(false)
 
-                // Example sentence
-                if let example = word.example, !example.isEmpty {
-                    Text("\"\(example)\"")
-                        .font(.subheadline.weight(.medium))
-                        .foregroundStyle(.white.opacity(0.95))
-                        .italic()
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 20)
-                        .shadow(color: .black.opacity(0.6), radius: 10)
-                        .shadow(color: Color(hex: "#34d399").opacity(0.25), radius: 20)
-                }
-
-                // Translation
-                if let translation = word.exampleTranslation, !translation.isEmpty {
-                    Text("(\(translation))")
-                        .font(.caption.weight(.medium))
-                        .foregroundStyle(.white.opacity(0.80))
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 20)
-                        .shadow(color: .black.opacity(0.5), radius: 8)
-                }
-
-                Spacer()
-
-                // Word pair footer
-                HStack(spacing: 8) {
-                    Text(word.front)
-                        .font(.caption.weight(.medium))
-                        .foregroundStyle(.white.opacity(0.85))
-                    Image(systemName: "arrow.right")
-                        .font(.caption2)
-                        .foregroundStyle(.white.opacity(0.5))
-                    Text(word.back)
-                        .font(.caption.bold())
-                        .foregroundStyle(Color(hex: "#34d399").opacity(0.9))
-                }
-                .shadow(color: .black.opacity(0.5), radius: 8)
-                .padding(.bottom, 12)
-            }
-            .padding(24)
-        }
-        .frame(maxWidth: .infinity, minHeight: 340)
-        .background(
-            ZStack {
-                RoundedRectangle(cornerRadius: 32)
-                    .fill(.ultraThinMaterial)
-
-                // Stronger emerald glass tint (React: rgba(6, 78, 59, 0.65))
-                RoundedRectangle(cornerRadius: 32)
+                // ── LAYER 8: LEFT RIM SIDE LIGHT ──────────────────────
+                // Glass also catches light on the left edge — subtler.
+                Capsule()
                     .fill(
                         LinearGradient(
                             colors: [
-                                Color(red: 6/255, green: 78/255, blue: 59/255).opacity(0.65),
-                                Color(red: 2/255, green: 44/255, blue: 34/255).opacity(0.55)
-                            ],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        )
-                    )
-
-                // Glass refraction line at top
-                VStack {
-                    Rectangle()
-                        .fill(.white.opacity(0.12))
-                        .frame(height: 0.5)
-                    Spacer()
-                }
-                .clipShape(RoundedRectangle(cornerRadius: 32))
-
-                // Inner highlight border — emerald tint
-                RoundedRectangle(cornerRadius: 32)
-                    .strokeBorder(
-                        LinearGradient(
-                            colors: [
-                                Color(hex: "#34d399").opacity(0.25),
-                                .white.opacity(0.12)
+                                .clear,
+                                Color.white.opacity(colorScheme == .dark ? 0.45 : 0.60),
+                                .clear
                             ],
                             startPoint: .top,
                             endPoint: .bottom
-                        ),
-                        lineWidth: 1
-                    )
-
-                // Inset top highlight
-                VStack {
-                    RoundedRectangle(cornerRadius: 32)
-                        .fill(
-                            LinearGradient(
-                                colors: [.white.opacity(0.20), .clear],
-                                startPoint: .top,
-                                endPoint: .center
-                            )
                         )
-                        .frame(height: 3)
-                        .blur(radius: 1.5)
-                    Spacer()
-                }
-                .clipShape(RoundedRectangle(cornerRadius: 32))
+                    )
+                    .frame(width: 1.5, height: h * 0.50)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                    .padding(.top, h * 0.08)
+                    .allowsHitTesting(false)
             }
-        )
-        .shadow(color: Color(hex: "#34d399").opacity(0.10), radius: 30)
-        .shadow(color: Color(hex: "#10b981").opacity(0.12), radius: 30, y: 10)
-        .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
-        .onAppear { startBackAnimations() }
+        }
+        .clipShape(RoundedRectangle(cornerRadius: 36))
     }
 
     // MARK: - Action Buttons

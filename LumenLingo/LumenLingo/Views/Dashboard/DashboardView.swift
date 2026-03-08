@@ -71,9 +71,7 @@ struct DashboardView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar(.hidden, for: .navigationBar)
         .sheet(isPresented: $showLanguageSheet) {
-            NavigationStack {
-                LanguageSelectionView()
-            }
+            LanguageSelectionView()
         }
     }
 
@@ -299,10 +297,10 @@ struct DashboardView: View {
                         .frame(width: 36, height: 36)
                         .shadow(color: Color(hex: "#d946ef").opacity(0.3), radius: 8)
 
-                    Image(systemName: "safari.fill")
-                        .font(.system(size: 16))
+                    Image(systemName: "wand.and.stars")
+                        .font(.system(size: 18, weight: .medium))
                         .foregroundStyle(.white)
-                        .symbolEffect(.pulse, options: .repeating.speed(0.3))
+                        .symbolEffect(.variableColor.iterative, options: .repeating.speed(0.4))
                 }
                 .shimmer(isActive: true, duration: 3.5)
 
