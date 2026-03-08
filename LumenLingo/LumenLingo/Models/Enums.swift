@@ -116,22 +116,33 @@ enum SupportedLanguage: String, Codable, CaseIterable, Identifiable {
         }
     }
 
-    var flag: String {
+    /// ISO 3166-1 alpha-2 country code used to generate flag emoji at runtime.
+    /// Using country codes avoids source-file encoding issues with emoji literals.
+    var countryCode: String {
         switch self {
-        case .english: return "🇬🇧"
-        case .spanish: return "🇪🇸"
-        case .french: return "🇫🇷"
-        case .german: return "🇩🇪"
-        case .italian: return "🇮🇹"
-        case .portuguese: return "🇵🇹"
-        case .polish: return "🇵🇱"
-        case .czech: return "🇨🇿"
-        case .catalan: return "🏴"
-        case .arabic: return "🇸🇦"
-        case .chinese: return "🇨🇳"
-        case .japanese: return "🇯🇵"
-        case .ukrainian: return "🇺🇦"
+        case .english: return "GB"
+        case .spanish: return "ES"
+        case .french: return "FR"
+        case .german: return "DE"
+        case .italian: return "IT"
+        case .portuguese: return "PT"
+        case .polish: return "PL"
+        case .czech: return "CZ"
+        case .catalan: return "AD"
+        case .arabic: return "SA"
+        case .chinese: return "CN"
+        case .japanese: return "JP"
+        case .ukrainian: return "UA"
         }
+    }
+
+    /// Flag emoji generated from the country code at runtime.
+    var flag: String {
+        countryCode
+            .unicodeScalars
+            .compactMap { Unicode.Scalar(127397 + $0.value) }
+            .map { String($0) }
+            .joined()
     }
 
     var englishName: String {
@@ -166,7 +177,7 @@ struct LanguagePair: Equatable, Hashable, Codable {
     var key: String { "\(source.rawValue)_\(target.rawValue)" }
 
     var displayName: String {
-        "\(source.flag) \(source.displayName) → \(target.flag) \(target.displayName)"
+        "\(source.displayName) \u{2192} \(target.displayName)"
     }
 
     /// Built-in (non-beta) language pairs that have content data
