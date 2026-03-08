@@ -37,7 +37,6 @@ struct FlashCardsView: View {
     @State private var wrongFlash: Bool = false
     @State private var answerGlow: Color = .clear
     @State private var answerGlowOpacity: Double = 0
-    @State private var flipProgress: Double = 0  // 0 = front, 1 = back
 
     // Animated floating icon states
     @State private var frontGlowPhase: CGFloat = 0
@@ -249,61 +248,79 @@ struct FlashCardsView: View {
     @State private var floatPhase: CGFloat = 0
     @State private var rippleScale: CGFloat = 0
     @State private var showRipple: Bool = false
+    @State private var cardWidth: CGFloat = 400
 
     private func flashcard(word: FlashcardWord) -> some View {
         ZStack {
-            // Ripple effect on flip
-            if showRipple {
-                Circle()
-                    .fill(
-                        RadialGradient(
-                            colors: [
-                                Color(hex: "#c084fc").opacity(0.4),
-                                Color(hex: "#8b5cf6").opacity(0.2),
-                                .clear
-                            ],
-                            center: .center,
-                            startRadius: 0,
-                            endRadius: 175
-                        )
+            // Ripple effect on flip — always present, driven by opacity
+            Circle()
+                .fill(
+                    RadialGradient(
+                        colors: [
+                            Color(hex: "#c084fc").opacity(0.4),
+                            Color(hex: "#8b5cf6").opacity(0.2),
+                            .clear
+                        ],
+                        center: .center,
+                        startRadius: 0,
+                        endRadius: 175
                     )
-                    .scaleEffect(rippleScale)
-                    .opacity(1 - rippleScale)
-                    .blur(radius: 35 * (1 - rippleScale))
-                    .allowsHitTesting(false)
-            }
+                )
+                .scaleEffect(rippleScale)
+                .opacity(showRipple ? (1 - rippleScale) : 0)
+                .blur(radius: 35 * max(0, 1 - rippleScale))
+                .allowsHitTesting(false)
 
             // Single glass card — one transparent layer throughout the flip.
-            // .drawingGroup() rasterizes the material before 3D rotation,
-            // preserving the beautiful transparency mid-flip.
             liquidGlassCard {
                 ZStack {
                     // Front content
                     frontContent(word: word)
-                        .opacity(flipProgress <= 0.5 ? 1 : 0)
+                        .opacity(isFlipped ? 0 : 1)
+                        .animation(.easeInOut(duration: 0.01).delay(0.28), value: isFlipped)
 
                     // Back content — counter-rotated so text reads correctly when card is flipped
                     backContent(word: word)
                         .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
-                        .opacity(flipProgress > 0.5 ? 1 : 0)
+                        .opacity(isFlipped ? 1 : 0)
+                        .animation(.easeInOut(duration: 0.01).delay(0.28), value: isFlipped)
                 }
             }
-            .drawingGroup(opaque: false)
             .rotation3DEffect(
                 .degrees(isFlipped ? 180 : 0),
                 axis: (x: 0, y: 1, z: 0),
                 perspective: 0.4
             )
+            .animation(.easeInOut(duration: 0.55), value: isFlipped)
         }
         .frame(maxWidth: 500)
         .frame(height: 360)
         .contentShape(Rectangle())
+        .background(
+            GeometryReader { geo in
+                Color.clear.onAppear { cardWidth = geo.size.width }
+            }
+        )
         // Subtle floating animation
         .offset(y: Foundation.sin(Double(floatPhase)) * 3)
-        .animation(.spring(response: 0.7, dampingFraction: 0.75), value: isFlipped)
-        .onTapGesture {
-            flipCard()
-        }
+        .gesture(
+            SpatialTapGesture()
+                .onEnded { value in
+                    if !isFlipped {
+                        flipCard()
+                    } else if showButtons {
+                        let tapX = value.location.x
+                        let mid = cardWidth / 2
+                        if tapX > mid {
+                            // Right side → Got It
+                            handleAnswer(correct: true)
+                        } else {
+                            // Left side → Still Learning
+                            handleAnswer(correct: false)
+                        }
+                    }
+                }
+        )
         .onAppear {
             withAnimation(.easeInOut(duration: 4).repeatForever(autoreverses: true)) {
                 floatPhase = .pi * 2
@@ -635,28 +652,21 @@ struct FlashCardsView: View {
         audioService.playPlink()
         hapticsService.lightImpact()
 
-        // Animate the 3D rotation
-        withAnimation(.spring(response: 0.7, dampingFraction: 0.75)) {
-            isFlipped = true
-        }
-
-        // Drive the sharp opacity swap at the midpoint
-        withAnimation(.easeInOut(duration: 0.35)) {
-            flipProgress = 1.0
-        }
+        // Single animation drives both rotation + content swap
+        isFlipped = true
 
         // Trigger ripple
         showRipple = true
-        withAnimation(.easeOut(duration: 0.38)) {
+        withAnimation(.easeOut(duration: 0.45)) {
             rippleScale = 1.0
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             showRipple = false
             rippleScale = 0
         }
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
-            withAnimation(.spring(response: 0.4)) {
+            withAnimation(.easeOut(duration: 0.35)) {
                 showButtons = true
             }
         }
@@ -714,18 +724,16 @@ struct FlashCardsView: View {
     }
 
     private func advanceCard() {
-        withAnimation(.spring(response: 0.5)) {
+        withAnimation(.easeInOut(duration: 0.45)) {
             showButtons = false
             isFlipped = false
         }
-        // Reset flip progress instantly (card is already front-facing by animation)
-        flipProgress = 0
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
             if currentIndex + 1 >= words.count {
                 completeGame()
             } else {
-                withAnimation {
+                withAnimation(.easeInOut(duration: 0.3)) {
                     currentIndex += 1
                     cardTransitionId = UUID()
                 }
