@@ -33,10 +33,17 @@ struct FlashCardsView: View {
     @State private var cardTransitionId: UUID = UUID()
     @State private var isLoading: Bool = true
     @State private var categoryName: String = ""
+    @State private var isProcessingAnswer: Bool = false
     @State private var successAura: Bool = false
     @State private var wrongFlash: Bool = false
     @State private var answerGlow: Color = .clear
     @State private var answerGlowOpacity: Double = 0
+
+    // Dopamine particles
+    @State private var luminousMotes: [LuminousMote] = []
+    @State private var streakPulse: CGFloat = 1.0
+    @State private var borderBreathPhase: CGFloat = 0
+    @State private var displayedScore: Int = 0
 
     // Animated floating icon states
     @State private var frontGlowPhase: CGFloat = 0
@@ -164,6 +171,24 @@ struct FlashCardsView: View {
                 .opacity(answerGlowOpacity)
                 .allowsHitTesting(false)
                 .animation(.easeOut(duration: 0.35), value: answerGlowOpacity)
+
+            // Luminous motes — drift upward on correct answers
+            ForEach(luminousMotes) { mote in
+                Circle()
+                    .fill(
+                        RadialGradient(
+                            colors: [mote.color.opacity(0.8), mote.color.opacity(0.2), .clear],
+                            center: .center,
+                            startRadius: 0,
+                            endRadius: mote.size
+                        )
+                    )
+                    .frame(width: mote.size * 2, height: mote.size * 2)
+                    .position(x: mote.x, y: mote.y)
+                    .opacity(mote.opacity)
+                    .blur(radius: mote.size * 0.3)
+                    .allowsHitTesting(false)
+            }
         }
     }
 
@@ -197,9 +222,10 @@ struct FlashCardsView: View {
                 HStack(spacing: 4) {
                     Image(systemName: "bolt.fill")
                         .foregroundStyle(.yellow)
-                    Text("\(score)")
+                    Text("\(displayedScore)")
                         .font(.subheadline.bold())
                         .foregroundStyle(.white)
+                        .contentTransition(.numericText())
                 }
                 .padding(.horizontal, 10)
                 .padding(.vertical, 5)
@@ -218,7 +244,26 @@ struct FlashCardsView: View {
                 statPill(icon: "checkmark", value: "\(correctCount)", color: .green)
                 statPill(icon: "xmark", value: "\(wrongCount)", color: .orange)
                 if streak > 0 {
-                    statPill(icon: "flame.fill", value: "\(streak)", color: .yellow)
+                    HStack(spacing: 3) {
+                        Image(systemName: "flame.fill")
+                            .font(.system(size: 10, weight: .bold))
+                            .foregroundStyle(
+                                streak >= 5 ? .red :
+                                streak >= 3 ? .orange : .yellow
+                            )
+                        Text("\(streak)")
+                            .font(.caption2.bold())
+                            .foregroundStyle(.white.opacity(0.8))
+                    }
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 3)
+                    .glassEffect(
+                        .regular.tint(
+                            (streak >= 5 ? Color.red : streak >= 3 ? .orange : .yellow).opacity(0.2)
+                        ),
+                        in: .capsule
+                    )
+                    .scaleEffect(streakPulse)
                 }
                 Spacer()
                 Text("\(currentIndex + 1)/\(words.count)")
@@ -342,6 +387,9 @@ struct FlashCardsView: View {
         .onAppear {
             withAnimation(.easeInOut(duration: 4).repeatForever(autoreverses: true)) {
                 floatPhase = .pi * 2
+            }
+            withAnimation(.easeInOut(duration: 3).repeatForever(autoreverses: true)) {
+                borderBreathPhase = .pi * 2
             }
         }
     }
@@ -481,7 +529,7 @@ struct FlashCardsView: View {
                             )
                         )
 
-                    // Iridescent border — thicker for premium feel
+                    // Iridescent border — breathes gently
                     RoundedRectangle(cornerRadius: 32)
                         .strokeBorder(
                             AngularGradient(
@@ -497,8 +545,9 @@ struct FlashCardsView: View {
                                 ],
                                 center: .center
                             ),
-                            lineWidth: 1.0
+                            lineWidth: 1.0 + 0.3 * Foundation.sin(Double(borderBreathPhase))
                         )
+                        .opacity(0.7 + 0.3 * Foundation.sin(Double(borderBreathPhase)))
 
                     // Secondary inner border for depth
                     RoundedRectangle(cornerRadius: 31)
@@ -724,12 +773,36 @@ struct FlashCardsView: View {
     }
 
     private func handleAnswer(correct: Bool) {
+        guard !isProcessingAnswer else { return }
+        isProcessingAnswer = true
+
         if correct {
             correctCount += 1
             score += 10
             streak += 1
             audioService.playWarmPulse()
-            hapticsService.success()
+
+            // Varied haptics based on streak
+            if streak >= 5 && streak % 5 == 0 {
+                hapticsService.success()
+            } else {
+                hapticsService.lightImpact()
+            }
+
+            // Animate score counter
+            animateScoreUp(by: 10)
+
+            // Streak pulse — gentle glow on milestones
+            if streak >= 3 {
+                withAnimation(.easeOut(duration: 0.2)) {
+                    streakPulse = 1.15
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                    withAnimation(.easeOut(duration: 0.6)) {
+                        streakPulse = 1.0
+                    }
+                }
+            }
 
             // Green glow around the card
             answerGlow = .green
@@ -739,6 +812,9 @@ struct FlashCardsView: View {
                     answerGlowOpacity = 0
                 }
             }
+
+            // Spawn luminous motes
+            spawnMotes(count: streak >= 5 ? 6 : streak >= 3 ? 4 : 3, color: .green)
 
             // Mark mastered
             if let word = currentWord {
@@ -756,7 +832,7 @@ struct FlashCardsView: View {
             wrongCount += 1
             streak = 0
             audioService.playSoftNudge()
-            hapticsService.warning()
+            hapticsService.lightImpact()
 
             // Orange glow around the card
             answerGlow = .orange
@@ -788,6 +864,69 @@ struct FlashCardsView: View {
                     currentIndex += 1
                     cardTransitionId = UUID()
                 }
+            }
+            isProcessingAnswer = false
+        }
+    }
+
+    // MARK: - Dopamine Helpers
+
+    private func spawnMotes(count: Int, color: Color) {
+        let screenWidth = UIScreen.main.bounds.width
+        let centerY = UIScreen.main.bounds.height * 0.45
+
+        for i in 0..<count {
+            let delay = Double(i) * 0.08
+            let moteColor: Color = [
+                color,
+                color.opacity(0.8),
+                .white
+            ].randomElement() ?? color
+
+            var mote = LuminousMote(
+                x: screenWidth * CGFloat.random(in: 0.2...0.8),
+                y: centerY + CGFloat.random(in: -40...40),
+                size: CGFloat.random(in: 3...7),
+                opacity: 0,
+                color: moteColor
+            )
+
+            DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+                luminousMotes.append(mote)
+                let moteId = mote.id
+
+                // Fade in
+                withAnimation(.easeOut(duration: 0.3)) {
+                    if let idx = luminousMotes.firstIndex(where: { $0.id == moteId }) {
+                        luminousMotes[idx].opacity = Double.random(in: 0.4...0.8)
+                    }
+                }
+
+                // Drift upward and fade out
+                withAnimation(.easeOut(duration: Double.random(in: 1.5...2.5))) {
+                    if let idx = luminousMotes.firstIndex(where: { $0.id == moteId }) {
+                        luminousMotes[idx].y -= CGFloat.random(in: 120...220)
+                        luminousMotes[idx].x += CGFloat.random(in: -30...30)
+                        luminousMotes[idx].opacity = 0
+                        luminousMotes[idx].size *= 0.3
+                    }
+                }
+
+                // Clean up
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                    luminousMotes.removeAll { $0.id == moteId }
+                }
+            }
+        }
+    }
+
+    private func animateScoreUp(by amount: Int) {
+        let target = score
+        let start = target - amount
+        let steps = 8
+        for i in 1...steps {
+            DispatchQueue.main.asyncAfter(deadline: .now() + Double(i) * 0.04) {
+                displayedScore = start + (amount * i / steps)
             }
         }
     }
@@ -1118,4 +1257,15 @@ private enum PerformanceTier {
         case .keepGoing: .orange
         }
     }
+}
+
+// MARK: - Luminous Mote
+
+struct LuminousMote: Identifiable {
+    let id = UUID()
+    var x: CGFloat
+    var y: CGFloat
+    var size: CGFloat
+    var opacity: Double
+    var color: Color
 }
