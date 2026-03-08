@@ -1091,6 +1091,16 @@ struct GameCompleteView: View {
 
     @Environment(\.colorScheme) private var colorScheme
 
+    // Entrance animations
+    @State private var showIcon = false
+    @State private var showTitle = false
+    @State private var showStats = false
+    @State private var showButtons = false
+    @State private var glowBreath: CGFloat = 0
+    @State private var ringRotation: Double = 0
+    @State private var displayedScore: Int = 0
+    @State private var displayedAccuracy: Int = 0
+
     private var accuracy: Double {
         guard totalQuestions > 0 else { return 0 }
         return Double(correctAnswers) / Double(totalQuestions) * 100
@@ -1104,116 +1114,306 @@ struct GameCompleteView: View {
     }
 
     var body: some View {
-        ScrollView {
-            VStack(spacing: 28) {
-                Spacer(minLength: 40)
+        ScrollView(showsIndicators: false) {
+            VStack(spacing: 0) {
+                Spacer(minLength: 60)
 
-                // Trophy / performance icon
+                // MARK: — Hero Icon
                 ZStack {
+                    // Soft radial aura
                     Circle()
-                        .fill(performanceTier.color.opacity(0.15))
-                        .frame(width: 100, height: 100)
-                        .shadow(color: performanceTier.color.opacity(0.4), radius: 30)
+                        .fill(
+                            RadialGradient(
+                                colors: [
+                                    performanceTier.color.opacity(0.15),
+                                    performanceTier.color.opacity(0.04),
+                                    .clear
+                                ],
+                                center: .center,
+                                startRadius: 30,
+                                endRadius: 120
+                            )
+                        )
+                        .frame(width: 240, height: 240)
+                        .blur(radius: 20)
+                        .opacity(0.6 + 0.4 * Foundation.sin(Double(glowBreath)))
 
-                    // Pulsing outer glow
+                    // Orbital ring
                     Circle()
-                        .fill(performanceTier.color.opacity(0.08))
-                        .frame(width: 120, height: 120)
-                        .blur(radius: 15)
+                        .strokeBorder(
+                            AngularGradient(
+                                colors: [
+                                    performanceTier.color.opacity(0.4),
+                                    .clear,
+                                    performanceTier.color.opacity(0.2),
+                                    .clear,
+                                    performanceTier.color.opacity(0.3),
+                                    .clear,
+                                ],
+                                center: .center
+                            ),
+                            lineWidth: 1
+                        )
+                        .frame(width: 130, height: 130)
+                        .rotationEffect(.degrees(ringRotation))
+
+                    // Glass icon container
+                    Circle()
+                        .fill(.ultraThinMaterial)
+                        .opacity(0.2)
+                        .frame(width: 100, height: 100)
+                        .overlay(
+                            Circle()
+                                .strokeBorder(
+                                    LinearGradient(
+                                        colors: [
+                                            .white.opacity(0.35),
+                                            performanceTier.color.opacity(0.25),
+                                            .white.opacity(0.15)
+                                        ],
+                                        startPoint: .topLeading,
+                                        endPoint: .bottomTrailing
+                                    ),
+                                    lineWidth: 1
+                                )
+                        )
 
                     Image(systemName: performanceTier.icon)
-                        .font(.system(size: 44))
-                        .foregroundStyle(performanceTier.color)
-                        .shadow(color: performanceTier.color.opacity(0.5), radius: 10)
-                        .symbolEffect(.bounce, options: .repeating.speed(0.2))
+                        .font(.system(size: 40, weight: .light))
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [performanceTier.color, performanceTier.color.opacity(0.7)],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                        .shadow(color: performanceTier.color.opacity(0.4), radius: 12)
                 }
+                .scaleEffect(showIcon ? 1 : 0.6)
+                .opacity(showIcon ? 1 : 0)
+                .padding(.bottom, 32)
 
-                // Title
-                Text(performanceTier.title)
-                    .font(.largeTitle.bold())
-                    .foregroundStyle(.white)
+                // MARK: — Title & Subtitle
+                VStack(spacing: 10) {
+                    Text(performanceTier.title)
+                        .font(.system(size: 32, weight: .bold, design: .rounded))
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [.white, .white.opacity(0.85)],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                        .shadow(color: .black.opacity(0.3), radius: 4, y: 2)
 
-                Text(performanceTier.subtitle)
-                    .font(.subheadline)
-                    .foregroundStyle(.white.opacity(0.7))
-                    .multilineTextAlignment(.center)
-
-                // Stats grid
-                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
-                    completeStat(title: "Score", value: "\(score)", icon: "bolt.fill", color: .yellow)
-                    completeStat(title: "Accuracy", value: "\(Int(accuracy))%", icon: "target", color: performanceTier.color)
-                    completeStat(title: "Correct", value: "\(correctAnswers)", icon: "checkmark.circle.fill", color: .green)
-                    completeStat(title: "Wrong", value: "\(wrongAnswers)", icon: "xmark.circle.fill", color: .orange)
+                    Text(performanceTier.subtitle)
+                        .font(.subheadline)
+                        .foregroundStyle(.white.opacity(0.55))
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 40)
                 }
-                .padding(.horizontal, 20)
+                .scaleEffect(showTitle ? 1 : 0.95)
+                .opacity(showTitle ? 1 : 0)
+                .padding(.bottom, 36)
 
-                // Action buttons
-                VStack(spacing: 12) {
+                // MARK: — Score Highlight
+                VStack(spacing: 6) {
+                    Text("\(displayedScore)")
+                        .font(.system(size: 56, weight: .bold, design: .rounded))
+                        .foregroundStyle(.white)
+                        .contentTransition(.numericText())
+                        .shadow(color: performanceTier.color.opacity(0.3), radius: 16)
+
+                    Text("points")
+                        .font(.caption.weight(.medium))
+                        .foregroundStyle(.white.opacity(0.4))
+                        .textCase(.uppercase)
+                        .tracking(2)
+                }
+                .opacity(showStats ? 1 : 0)
+                .padding(.bottom, 28)
+
+                // MARK: — Stats Row
+                HStack(spacing: 0) {
+                    statColumn(
+                        value: "\(displayedAccuracy)%",
+                        label: "Accuracy",
+                        color: performanceTier.color
+                    )
+
+                    // Divider
+                    Capsule()
+                        .fill(.white.opacity(0.1))
+                        .frame(width: 1, height: 36)
+
+                    statColumn(
+                        value: "\(correctAnswers)",
+                        label: "Correct",
+                        color: .green
+                    )
+
+                    Capsule()
+                        .fill(.white.opacity(0.1))
+                        .frame(width: 1, height: 36)
+
+                    statColumn(
+                        value: "\(wrongAnswers)",
+                        label: "To Review",
+                        color: .orange
+                    )
+                }
+                .padding(.vertical, 20)
+                .padding(.horizontal, 8)
+                .background {
+                    RoundedRectangle(cornerRadius: 24)
+                        .fill(.ultraThinMaterial)
+                        .opacity(0.15)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 24)
+                                .strokeBorder(
+                                    LinearGradient(
+                                        colors: [.white.opacity(0.2), .white.opacity(0.05)],
+                                        startPoint: .topLeading,
+                                        endPoint: .bottomTrailing
+                                    ),
+                                    lineWidth: 0.5
+                                )
+                        )
+                }
+                .padding(.horizontal, 28)
+                .opacity(showStats ? 1 : 0)
+                .offset(y: showStats ? 0 : 12)
+                .padding(.bottom, 40)
+
+                // MARK: — Action Buttons
+                VStack(spacing: 14) {
                     Button {
                         onPlayAgain()
                     } label: {
-                        HStack {
+                        HStack(spacing: 10) {
                             Image(systemName: "arrow.counterclockwise")
+                                .font(.system(size: 15, weight: .semibold))
                             Text("Play Again")
+                                .font(.system(size: 16, weight: .semibold))
                         }
-                        .font(.headline)
                         .foregroundStyle(.white)
                         .frame(maxWidth: .infinity)
-                        .padding(.vertical, 16)
-                        .glassEffect(
-                            .regular.tint(Color(hex: "#667eea").opacity(0.2)),
-                            in: .rect(cornerRadius: 20)
-                        )
-                        .shadow(color: Color(hex: "#667eea").opacity(0.25), radius: 15)
+                        .padding(.vertical, 18)
+                        .background {
+                            RoundedRectangle(cornerRadius: 22)
+                                .fill(
+                                    LinearGradient(
+                                        colors: [
+                                            Color(hex: "#667eea").opacity(0.4),
+                                            Color(hex: "#764ba2").opacity(0.25)
+                                        ],
+                                        startPoint: .topLeading,
+                                        endPoint: .bottomTrailing
+                                    )
+                                )
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 22)
+                                        .strokeBorder(
+                                            LinearGradient(
+                                                colors: [.white.opacity(0.3), .white.opacity(0.08)],
+                                                startPoint: .topLeading,
+                                                endPoint: .bottomTrailing
+                                            ),
+                                            lineWidth: 0.5
+                                        )
+                                )
+                        }
+                        .shadow(color: Color(hex: "#667eea").opacity(0.2), radius: 20, y: 8)
                     }
                     .buttonStyle(ScaleButtonStyle())
 
                     Button {
                         onDismiss()
                     } label: {
-                        HStack {
-                            Image(systemName: "house.fill")
-                            Text("Dashboard")
+                        HStack(spacing: 8) {
+                            Image(systemName: "chevron.left")
+                                .font(.system(size: 13, weight: .medium))
+                            Text("Back to Categories")
+                                .font(.system(size: 15, weight: .medium))
                         }
-                        .font(.headline)
-                        .foregroundStyle(.white.opacity(0.7))
+                        .foregroundStyle(.white.opacity(0.5))
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 16)
-                        .glassEffect(
-                            .regular.tint(.white.opacity(0.05)),
-                            in: .rect(cornerRadius: 20)
-                        )
                     }
                     .buttonStyle(ScaleButtonStyle())
                 }
-                .padding(.horizontal, 20)
+                .padding(.horizontal, 28)
+                .opacity(showButtons ? 1 : 0)
+                .offset(y: showButtons ? 0 : 10)
 
-                Spacer(minLength: 60)
+                Spacer(minLength: 80)
             }
         }
+        .onAppear { startEntranceSequence() }
     }
 
-    private func completeStat(title: String, value: String, icon: String, color: Color) -> some View {
-        VStack(spacing: 8) {
-            Image(systemName: icon)
-                .font(.title2)
-                .foregroundStyle(color)
-                .shadow(color: color.opacity(0.4), radius: 8)
+    // MARK: — Stats Column
 
+    private func statColumn(value: String, label: String, color: Color) -> some View {
+        VStack(spacing: 6) {
             Text(value)
-                .font(.title.bold())
+                .font(.system(size: 22, weight: .bold, design: .rounded))
                 .foregroundStyle(.white)
+                .contentTransition(.numericText())
 
-            Text(title)
-                .font(.caption)
-                .foregroundStyle(.white.opacity(0.6))
+            Text(label)
+                .font(.system(size: 11, weight: .medium))
+                .foregroundStyle(.white.opacity(0.4))
+                .textCase(.uppercase)
+                .tracking(1)
         }
         .frame(maxWidth: .infinity)
-        .padding(16)
-        .glassEffect(
-            .regular.tint(color.opacity(0.12)),
-            in: .rect(cornerRadius: 18)
-        )
+    }
+
+    // MARK: — Entrance Sequence
+
+    private func startEntranceSequence() {
+        // Staggered reveals
+        withAnimation(.easeOut(duration: 0.8)) {
+            showIcon = true
+        }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            withAnimation(.easeOut(duration: 0.7)) {
+                showTitle = true
+            }
+        }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+            withAnimation(.easeOut(duration: 0.7)) {
+                showStats = true
+            }
+        }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) {
+            withAnimation(.easeOut(duration: 0.6)) {
+                showButtons = true
+            }
+        }
+
+        // Animate score counting up
+        let scoreTarget = score
+        let accuracyTarget = Int(accuracy)
+        let steps = 20
+        for i in 1...steps {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.6 + Double(i) * 0.04) {
+                displayedScore = scoreTarget * i / steps
+                displayedAccuracy = accuracyTarget * i / steps
+            }
+        }
+
+        // Start ambient animations
+        withAnimation(.easeInOut(duration: 3).repeatForever(autoreverses: true)) {
+            glowBreath = .pi * 2
+        }
+        withAnimation(.linear(duration: 20).repeatForever(autoreverses: false)) {
+            ringRotation = 360
+        }
     }
 }
 
