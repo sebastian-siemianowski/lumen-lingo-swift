@@ -250,6 +250,11 @@ struct FlashCardsView: View {
     @State private var showRipple: Bool = false
     @State private var cardWidth: CGFloat = 400
 
+    // Tranquil micro-feedback
+    @State private var microScale: CGFloat = 1.0
+    @State private var borderGlowColor: Color = .clear
+    @State private var borderGlowOpacity: Double = 0
+
     private func flashcard(word: FlashcardWord) -> some View {
         ZStack {
             // Ripple effect on flip — always present, driven by opacity
@@ -292,6 +297,18 @@ struct FlashCardsView: View {
                 perspective: 0.4
             )
             .animation(.easeInOut(duration: 0.55), value: isFlipped)
+
+            // Soft border glow on answer — hugs card edges
+            RoundedRectangle(cornerRadius: 32)
+                .strokeBorder(borderGlowColor, lineWidth: 2)
+                .opacity(borderGlowOpacity)
+                .blur(radius: 6)
+                .allowsHitTesting(false)
+
+            RoundedRectangle(cornerRadius: 32)
+                .strokeBorder(borderGlowColor, lineWidth: 1)
+                .opacity(borderGlowOpacity * 0.6)
+                .allowsHitTesting(false)
         }
         .frame(maxWidth: 500)
         .frame(height: 360)
@@ -301,7 +318,8 @@ struct FlashCardsView: View {
                 Color.clear.onAppear { cardWidth = geo.size.width }
             }
         )
-        // Subtle floating animation
+        // Tranquil scale breathe
+        .scaleEffect(microScale)
         .offset(y: Foundation.sin(Double(floatPhase)) * 3)
         .gesture(
             SpatialTapGesture()
@@ -312,10 +330,10 @@ struct FlashCardsView: View {
                         let tapX = value.location.x
                         let mid = cardWidth / 2
                         if tapX > mid {
-                            // Right side → Got It
+                            triggerMicroFeedback(color: .green)
                             handleAnswer(correct: true)
                         } else {
-                            // Left side → Still Learning
+                            triggerMicroFeedback(color: .orange)
                             handleAnswer(correct: false)
                         }
                     }
@@ -652,6 +670,16 @@ struct FlashCardsView: View {
         audioService.playPlink()
         hapticsService.lightImpact()
 
+        // Gentle press-in
+        withAnimation(.easeOut(duration: 0.1)) {
+            microScale = 0.985
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            withAnimation(.easeOut(duration: 0.5)) {
+                microScale = 1.0
+            }
+        }
+
         // Single animation drives both rotation + content swap
         isFlipped = true
 
@@ -668,6 +696,29 @@ struct FlashCardsView: View {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
             withAnimation(.easeOut(duration: 0.35)) {
                 showButtons = true
+            }
+        }
+    }
+
+    private func triggerMicroFeedback(color: Color) {
+        // Soft press
+        withAnimation(.easeOut(duration: 0.1)) {
+            microScale = 0.99
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            withAnimation(.easeOut(duration: 0.6)) {
+                microScale = 1.0
+            }
+        }
+
+        // Soft border glow pulse
+        borderGlowColor = color
+        withAnimation(.easeOut(duration: 0.15)) {
+            borderGlowOpacity = 1.0
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+            withAnimation(.easeOut(duration: 0.5)) {
+                borderGlowOpacity = 0
             }
         }
     }
