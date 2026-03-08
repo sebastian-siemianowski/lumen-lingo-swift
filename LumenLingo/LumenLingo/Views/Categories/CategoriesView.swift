@@ -24,6 +24,7 @@ struct CategoriesView: View {
     @State private var searchText: String = ""
     @State private var showCompletedFilter: Bool = false
     @State private var isGridView: Bool = true
+    @State private var currentPage: Int = 0
 
     private var filteredCategories: [CategoryDisplayItem] {
         var items = categories
@@ -52,34 +53,97 @@ struct CategoriesView: View {
         return items
     }
 
-    var body: some View {
-        VStack(spacing: 0) {
-            // Header
-            categoryHeader
+    /// Items per page: 6 for grid (2 columns × 3 rows), 4 for list.
+    private var itemsPerPage: Int { isGridView ? 6 : 4 }
 
-            if isLoading {
-                Spacer()
-                ProgressView()
-                    .scaleEffect(1.5)
-                    .tint(.white)
-                Spacer()
-            } else if filteredCategories.isEmpty {
-                Spacer()
-                emptyState
-                Spacer()
-            } else {
-                ScrollView {
-                    categoryGrid
-                        .padding(.horizontal, 16)
-                        .padding(.top, 12)
-                        .padding(.bottom, 100)
+    private var totalPages: Int {
+        max(1, Int(ceil(Double(filteredCategories.count) / Double(itemsPerPage))))
+    }
+
+    private var paginatedCategories: [CategoryDisplayItem] {
+        let start = currentPage * itemsPerPage
+        guard start < filteredCategories.count else { return [] }
+        let end = min(start + itemsPerPage, filteredCategories.count)
+        return Array(filteredCategories[start..<end])
+    }
+
+    private var paginationAccentColors: [Color] {
+        switch gameType {
+        case .flashCards: [Color(hex: "#667eea"), Color(hex: "#06b6d4")]
+        case .grammar: [Color(hex: "#f093fb"), Color(hex: "#f5576c")]
+        case .wordBuilder: [Color(hex: "#fbbf24"), Color(hex: "#f97316")]
+        }
+    }
+
+    var body: some View {
+        ZStack(alignment: .bottom) {
+            VStack(spacing: 0) {
+                // Header
+                categoryHeader
+
+                if isLoading {
+                    Spacer()
+                    ProgressView()
+                        .scaleEffect(1.5)
+                        .tint(.white)
+                    Spacer()
+                } else if filteredCategories.isEmpty {
+                    Spacer()
+                    emptyState
+                    Spacer()
+                } else {
+                    ScrollView {
+                        categoryGrid
+                            .padding(.horizontal, 16)
+                            .padding(.top, 12)
+                            .padding(.bottom, 130)
+                    }
                 }
             }
+
+            // Floating liquid glass pagination panel
+            LiquidGlassPagination(
+                currentPage: currentPage,
+                totalPages: totalPages,
+                accentColors: paginationAccentColors
+            ) { newPage in
+                withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
+                    currentPage = newPage
+                }
+            }
+            .padding(.bottom, 16)
         }
         .cosmicBackground()
         .navigationBarBackButtonHidden()
         .toolbar(.hidden, for: .navigationBar)
+        .toolbar(.hidden, for: .tabBar)
         .onAppear { loadCategories() }
+        .onChange(of: searchText) { _, _ in
+            withAnimation { currentPage = 0 }
+        }
+        .onChange(of: showCompletedFilter) { _, _ in
+            withAnimation { currentPage = 0 }
+        }
+        .onChange(of: isGridView) { _, _ in
+            withAnimation { currentPage = 0 }
+        }
+        .gesture(
+            DragGesture(minimumDistance: 50)
+                .onEnded { value in
+                    let horizontal = value.translation.width
+                    if horizontal < -50, currentPage < totalPages - 1 {
+                        withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
+                            currentPage += 1
+                        }
+                        HapticsService.light()
+                    } else if horizontal > 50, currentPage > 0 {
+                        withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
+                            currentPage -= 1
+                        }
+                        HapticsService.light()
+                    }
+                }
+        )
     }
 
     // MARK: - Header
@@ -167,10 +231,15 @@ struct CategoriesView: View {
             : [GridItem(.flexible())]
 
         return LazyVGrid(columns: columns, spacing: 14) {
-            ForEach(filteredCategories, id: \.id) { category in
+            ForEach(paginatedCategories, id: \.id) { category in
                 categoryCard(category)
+                    .transition(.asymmetric(
+                        insertion: .opacity.combined(with: .scale(scale: 0.95)),
+                        removal: .opacity.combined(with: .scale(scale: 0.95))
+                    ))
             }
         }
+        .animation(.spring(response: 0.35, dampingFraction: 0.8), value: currentPage)
     }
 
     private func categoryCard(_ item: CategoryDisplayItem) -> some View {

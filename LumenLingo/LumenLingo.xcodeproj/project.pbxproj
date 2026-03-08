@@ -30,6 +30,7 @@
 		3ADCCD186B86AF4E7ED8230B /* QuantumFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EF54CA4B0E1ECB5159EE96 /* QuantumFlowView.swift */; };
 		3C83D6934D1A9F0C1D007D89 /* CosmicPostProcess.metal in Sources */ = {isa = PBXBuildFile; fileRef = C71ECFF5B79F4F2875BBAB02 /* CosmicPostProcess.metal */; };
 		3C903D4D3E0D7E30AF1A0FF2 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6BC346843C39C8CEC01294 /* AudioService.swift */; };
+		43BC39433248FE27AA9CB536 /* LiquidGlassPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6894E9DF06377B29632C3002 /* LiquidGlassPagination.swift */; };
 		44A0B7C6B75720CA91968CA6 /* flashcards_polish_french.json in Resources */ = {isa = PBXBuildFile; fileRef = 4198AE62B582238D9214B56E /* flashcards_polish_french.json */; };
 		46377BB86BC3645FA32D6062 /* flashcards_german_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 179F24862354560BCC12AB27 /* flashcards_german_english.json */; };
 		4BE7B3BEC3A8F44C9926CC3A /* grammar_english_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 8260535396006EA63405CA68 /* grammar_english_spanish.json */; };
@@ -160,6 +161,7 @@
 		5D9369578E51867FB1E3FF86 /* LumenLingoTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LumenLingoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62BB8A676728B666DFB159B8 /* MetalCosmicRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalCosmicRenderer.swift; sourceTree = "<group>"; };
 		62C3678F93D1D997024205E2 /* ContentLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentLoader.swift; sourceTree = "<group>"; };
+		6894E9DF06377B29632C3002 /* LiquidGlassPagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassPagination.swift; sourceTree = "<group>"; };
 		6A5378AC5EFC25C439C4A702 /* SettingsSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSliderView.swift; sourceTree = "<group>"; };
 		7013FEB67D3F0AB101B4EF0A /* SchemeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeCardView.swift; sourceTree = "<group>"; };
 		72117EE3770443D8D6B3895E /* ProgressServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressServiceTests.swift; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 			children = (
 				C7EC466E954463C21BDA8D3C /* GlassDivider.swift */,
 				B70A4CC223AB0F0CBD300360 /* LiquidGlassCard.swift */,
+				6894E9DF06377B29632C3002 /* LiquidGlassPagination.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -725,7 +728,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					E5866F4B11D47F4E9F81CE4F = {
 						DevelopmentTeam = "";
@@ -843,6 +846,7 @@
 				661A719FB70972A35AD6E977 /* LanguageSelectionView.swift in Sources */,
 				74435F6A6EC5F4E3D5C6EA1C /* LayoutBackgroundView.swift in Sources */,
 				03403985A831D6F970331DF5 /* LiquidGlassCard.swift in Sources */,
+				43BC39433248FE27AA9CB536 /* LiquidGlassPagination.swift in Sources */,
 				B77CAF0468C0B5BE9AE655B5 /* LumenLingoApp.swift in Sources */,
 				DF2BC01B8E34CB130AB3B7B6 /* MembershipView.swift in Sources */,
 				158A5B1BCC24775744979354 /* MetalCosmicRenderer.swift in Sources */,
@@ -955,7 +959,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1058,7 +1062,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
