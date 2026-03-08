@@ -69,6 +69,9 @@ struct LayoutBackgroundView: View {
     private var cosmicSpeed: Double {
         profile?.nebulaDriftSpeed ?? 1.0
     }
+    private var orbRaveMode: Bool {
+        profile?.orbRaveMode ?? false
+    }
 
     var body: some View {
         GeometryReader { geometry in
@@ -78,7 +81,7 @@ struct LayoutBackgroundView: View {
 
                 // Layer 1: Breathing orbs (respects user toggle + active state)
                 if showOrbs && isActive {
-                    BreathingOrbsView(isDarkMode: colorScheme == .dark, scheme: orbScheme, intensity: orbIntensity, speed: orbSpeed)
+                    BreathingOrbsView(isDarkMode: colorScheme == .dark, scheme: orbScheme, intensity: orbIntensity, speed: orbSpeed, raveMode: orbRaveMode)
                         .opacity(colorScheme == .dark ? 0.7 : 0.4)
                 }
 

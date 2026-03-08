@@ -43,6 +43,7 @@ struct BreathingOrbsSettingsView: View {
                 isDarkMode: isDark,
                 intensity: profile?.orbIntensity ?? 1.0,
                 speed: profile?.orbSpeed ?? 1.0,
+                raveMode: profile?.orbRaveMode ?? false,
                 onDismiss: { previewingScheme = nil }
             )
         }
@@ -230,17 +231,19 @@ struct FullscreenOrbsPreview: View {
     let isDarkMode: Bool
     let intensity: Double
     let speed: Double
+    var raveMode: Bool = false
     let onDismiss: () -> Void
 
     @State private var currentIndex: Int = 0
 
     private let allSchemes = BreathingOrbScheme.allCases
 
-    init(initialScheme: BreathingOrbScheme, isDarkMode: Bool, intensity: Double, speed: Double, onDismiss: @escaping () -> Void) {
+    init(initialScheme: BreathingOrbScheme, isDarkMode: Bool, intensity: Double, speed: Double, raveMode: Bool = false, onDismiss: @escaping () -> Void) {
         self.initialScheme = initialScheme
         self.isDarkMode = isDarkMode
         self.intensity = intensity
         self.speed = speed
+        self.raveMode = raveMode
         self.onDismiss = onDismiss
         _currentIndex = State(initialValue: BreathingOrbScheme.allCases.firstIndex(of: initialScheme) ?? 0)
     }
@@ -258,7 +261,8 @@ struct FullscreenOrbsPreview: View {
                 isDarkMode: isDarkMode,
                 scheme: currentScheme,
                 intensity: intensity,
-                speed: speed
+                speed: speed,
+                raveMode: raveMode
             )
             .ignoresSafeArea()
 

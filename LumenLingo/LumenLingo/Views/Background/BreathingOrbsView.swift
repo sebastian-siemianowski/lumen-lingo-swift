@@ -4,13 +4,34 @@ import SwiftUI
 
 /// Full-quality port of React's BreathingOrbs.jsx.
 /// Large blurred radial gradient orbs with keyframe scale/opacity/translation animations.
+/// Rave mode: each orb cycles through hue rotation angles matching React's getHueRotationRanges.
 struct BreathingOrbsView: View {
     let isDarkMode: Bool
     let scheme: BreathingOrbScheme
     let intensity: Double
     let speed: Double
+    var raveMode: Bool = false
 
     @State private var animationPhase: Double = 0
+
+    /// Per-scheme hue rotation ranges (degrees) for each orb in rave mode.
+    /// Matches React: gradientSchemes.jsx → getHueRotationRanges()
+    private var hueRanges: [[Double]] {
+        switch scheme {
+        case .barcelonaNights:         // "default"
+            return [[0, 30, 60, 30, 0], [0, -45, -90, -45, 0], [0, 90, 180, 90, 0], [0, 60, 120, 60, 0], [0, -60, -120, -60, 0]]
+        case .shanghaiShimmeringNexus: // "ocean"
+            return [[0, 25, 50, 25, 0], [0, -30, -60, -30, 0], [0, 35, 70, 35, 0], [0, 40, 80, 40, 0], [0, -45, -90, -45, 0]]
+        case .tokyoSunset:             // "sunset"
+            return [[0, -8, -16, -8, 0], [0, 10, 20, 10, 0], [0, -12, -24, -12, 0], [0, 8, 16, 8, 0], [0, -10, -20, -10, 0]]
+        case .newYorkMysticalGardens:  // "forest"
+            return [[0, 35, 70, 35, 0], [0, 40, 80, 40, 0], [0, 50, 100, 50, 0], [0, 45, 90, 45, 0], [0, -50, -100, -50, 0]]
+        case .parisEclatNocturne:      // "aurora"
+            return [[0, -40, -80, -40, 0], [0, 50, 100, 50, 0], [0, -35, -70, -35, 0], [0, 45, 90, 45, 0], [0, -55, -110, -55, 0]]
+        case .krakowLuminescence:      // "miami"
+            return [[0, -30, -60, -30, 0], [0, 35, 70, 35, 0], [0, -40, -80, -40, 0], [0, 40, 80, 40, 0], [0, -45, -90, -45, 0]]
+        }
+    }
 
     private var orbConfigs: [OrbConfig] {
         let colors = colorScheme(for: scheme, isDark: isDarkMode)
@@ -57,7 +78,8 @@ struct BreathingOrbsView: View {
         GeometryReader { geometry in
             ZStack {
                 ForEach(Array(orbConfigs.enumerated()), id: \.offset) { index, config in
-                    BreathingOrb(config: config, phase: animationPhase)
+                    let orbHueRanges = hueRanges[index % hueRanges.count]
+                    BreathingOrb(config: config, phase: animationPhase, raveMode: raveMode, hueKeyframes: orbHueRanges)
                         .position(
                             x: geometry.size.width * config.position.x + config.size / 2,
                             y: geometry.size.height * config.position.y + config.size / 2
@@ -85,6 +107,8 @@ struct BreathingOrbsView: View {
 private struct BreathingOrb: View {
     let config: OrbConfig
     let phase: Double
+    let raveMode: Bool
+    let hueKeyframes: [Double]
 
     var body: some View {
         TimelineView(.animation(minimumInterval: 1.0 / 30.0)) { timeline in
@@ -94,12 +118,17 @@ private struct BreathingOrb: View {
 
             // Interpolate scale from keyframes
             let scale = interpolateKeyframes(config.scaleKeyframes, at: keyframeT)
-            let opacity = config.baseOpacity + sin(t * .pi * 2) * 0.04
+            let opacity = config.baseOpacity + Foundation.sin(t * .pi * 2) * 0.04
 
             // Subtle translation
-            let tx = sin(t * .pi * 2 * 0.7 + Double(config.delay)) * 15
-            let ty = cos(t * .pi * 2 * 0.5 + Double(config.delay) * 1.3) * 12
-            let rotation = sin(t * .pi * 2 * 0.3) * 2
+            let tx = Foundation.sin(t * .pi * 2 * 0.7 + Double(config.delay)) * 15
+            let ty = Foundation.cos(t * .pi * 2 * 0.5 + Double(config.delay) * 1.3) * 12
+            let rotation = Foundation.sin(t * .pi * 2 * 0.3) * 2
+
+            // Rave hue rotation — interpolate keyframes to get current hue shift
+            let hueAngle: Angle = raveMode
+                ? .degrees(interpolateKeyframes(hueKeyframes, at: keyframeT))
+                : .zero
 
             let color = config.colors.first ?? .purple
 
@@ -122,6 +151,7 @@ private struct BreathingOrb: View {
                 .offset(x: tx, y: ty)
                 .rotationEffect(.degrees(rotation))
                 .blur(radius: config.blur)
+                .hueRotation(hueAngle)
         }
     }
 

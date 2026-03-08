@@ -138,10 +138,10 @@ struct FlashCardsView: View {
                     .animation(.spring(response: 0.5, dampingFraction: 0.8), value: cardTransitionId)
 
                 // Action buttons (appear after flip)
-                if showButtons {
-                    actionButtons
-                        .transition(.move(edge: .bottom).combined(with: .opacity))
-                }
+                actionButtons
+                    .opacity(showButtons ? 1 : 0)
+                    .allowsHitTesting(showButtons)
+                    .animation(.easeInOut(duration: 0.35), value: showButtons)
 
                 Spacer()
             }
@@ -332,7 +332,9 @@ struct FlashCardsView: View {
                     .rotation3DEffect(.degrees(0), axis: (x: 0, y: 1, z: 0))
             }
         }
-        .frame(maxWidth: 500, minHeight: 340)
+        .frame(maxWidth: 500)
+        .frame(height: 360)
+        .clipped()
         // Subtle floating animation (React: y: [0, -3, 0])
         .offset(y: Foundation.sin(Double(floatPhase)) * 3)
         .onTapGesture {
@@ -464,7 +466,8 @@ struct FlashCardsView: View {
             // ── CONTENT ──────────────────────────────────────────────────
             content()
         }
-        .frame(maxWidth: .infinity, minHeight: 360)
+        .frame(maxWidth: .infinity)
+        .frame(height: 360)
         // Elevation: deep soft shadow + coloured ambient lift
         .shadow(color: .black.opacity(0.55), radius: 56, x: 0, y: 28)
         .shadow(color: .black.opacity(0.22), radius: 16, x: 0, y: 8)
