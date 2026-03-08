@@ -1,0 +1,1437 @@
+[
+  {
+    "key": "present_tense",
+    "name": "Present Tense Verbs",
+    "description": "Arabic present tense conjugation",
+    "iconName": "clock",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ea_pres1",
+        "question": "I write",
+        "translation": "(أكتب)",
+        "options": [
+          "أكتب",
+          "تكتب",
+          "يكتب",
+          "نكتب"
+        ],
+        "correct": "أكتب",
+        "explanation": "Welcome to the beautiful world of Arabic verbs. In Arabic, the verb changes its form to show who is performing the action. For 'I', we use the prefix 'أ' (a-). The verb 'to write' is 'كتب', and in present tense for 'I' it becomes 'أكتب' (aktub). Unlike English where 'I write' is two words, Arabic combines the subject and verb into one flowing word. This elegant efficiency is one of Arabic's charms."
+      },
+      {
+        "id": "ea_pres2",
+        "question": "You write (masculine)",
+        "translation": "(تكتب)",
+        "options": [
+          "أكتب",
+          "تكتب",
+          "يكتب",
+          "نكتب"
+        ],
+        "correct": "تكتب",
+        "explanation": "For 'you' in Arabic, we use the prefix 'ت' (ta-). The form 'تكتب' (taktub) means 'you write' when speaking to a male. Arabic distinguishes between masculine and feminine forms, which adds precision to communication. This gender awareness in the language reflects the importance of respect and proper address in Arabic culture. The prefix system makes conjugation logical and predictable once you grasp the pattern."
+      },
+      {
+        "id": "ea_pres3",
+        "question": "He writes",
+        "translation": "(يكتب)",
+        "options": [
+          "أكتب",
+          "تكتب",
+          "يكتب",
+          "نكتب"
+        ],
+        "correct": "يكتب",
+        "explanation": "For 'he', Arabic uses the prefix 'ي' (ya-). The form 'يكتب' (yaktub) means 'he writes'. Notice how the root 'كتب' (k-t-b) relating to writing remains constant, while the prefixes change to show the subject. This three-letter root system is fundamental to Arabic - most words derive from three-consonant roots. Understanding this pattern helps you recognize related words and builds your vocabulary naturally."
+      },
+      {
+        "id": "ea_pres4",
+        "question": "We write",
+        "translation": "(نكتب)",
+        "options": [
+          "أكتب",
+          "تكتب",
+          "يكتب",
+          "نكتب"
+        ],
+        "correct": "نكتب",
+        "explanation": "For 'we', Arabic uses the prefix 'ن' (na-). The form 'نكتب' (naktub) expresses collective action. The 'we' form in Arabic often appears in formal or literary contexts, as well as in everyday conversation when speaking about group activities. This form has a sense of unity and togetherness, reflecting the communal nature of Arab culture where family and community bonds are deeply valued."
+      },
+      {
+        "id": "ea_pres5",
+        "question": "She writes",
+        "translation": "(تكتب)",
+        "options": [
+          "تكتب",
+          "يكتب",
+          "أكتب",
+          "نكتب"
+        ],
+        "correct": "تكتب",
+        "explanation": "For 'she', Arabic uses 'تكتب' (taktub), which looks identical to 'you write (masculine)' but the context makes the meaning clear. In spoken Arabic, pronunciation and context help distinguish between these forms. This is similar to how in English 'you' can mean one person or many people, but we understand from context. Arabic listeners naturally grasp the intended meaning from the conversation flow."
+      },
+      {
+        "id": "ea_pres6",
+        "question": "They write (masculine)",
+        "translation": "(يكتبون)",
+        "options": [
+          "يكتبون",
+          "يكتبن",
+          "تكتبون",
+          "نكتب"
+        ],
+        "correct": "يكتبون",
+        "explanation": "For 'they' (masculine or mixed group), Arabic uses 'يكتبون' (yaktubuun). Notice the ending 'ون' (uun) which marks plural. This is added to the base form 'يكتب'. When a group includes both males and females, the masculine plural is used, following the grammatical convention. The flowing sound of this form, with its extended vowel, gives Arabic its musical quality."
+      },
+      {
+        "id": "ea_pres7",
+        "question": "I eat",
+        "translation": "(آكل)",
+        "options": [
+          "آكل",
+          "تأكل",
+          "يأكل",
+          "نأكل"
+        ],
+        "correct": "آكل",
+        "explanation": "The verb 'to eat' is 'أكل' (a-k-l). For 'I eat', it becomes 'آكل' (aakul). Notice the long 'aa' sound at the beginning. Food and hospitality are central to Arab culture, so you'll use this verb often. Sharing meals is a cherished social activity, and knowing how to discuss food helps you connect with Arabic speakers on a cultural level."
+      },
+      {
+        "id": "ea_pres8",
+        "question": "You drink (feminine)",
+        "translation": "(تشربين)",
+        "options": [
+          "تشرب",
+          "تشربين",
+          "يشرب",
+          "أشرب"
+        ],
+        "correct": "تشربين",
+        "explanation": "For 'you' speaking to a female, Arabic adds the ending 'ين' (iin). The form 'تشربين' (tashrabiin) means 'you drink' to a woman. This feminine form shows respect and acknowledgment. In Arabic culture, using the correct form when addressing someone is a sign of courtesy and attentiveness. The verb 'to drink' (شرب) is commonly used, especially when offering the traditional Arabic coffee or tea."
+      },
+      {
+        "id": "ea_pres9",
+        "question": "He studies",
+        "translation": "(يدرس)",
+        "options": [
+          "يدرس",
+          "تدرس",
+          "أدرس",
+          "ندرس"
+        ],
+        "correct": "يدرس",
+        "explanation": "The verb 'to study' is 'درس' (d-r-s). For 'he studies', it becomes 'يدرس' (yadrus). Education is highly valued in Arab culture, with a rich history of scholarship and learning. From the ancient libraries of Baghdad to modern universities, the pursuit of knowledge has always been celebrated. This verb will serve you well in academic settings and when discussing learning."
+      },
+      {
+        "id": "ea_pres10",
+        "question": "We live",
+        "translation": "(نعيش)",
+        "options": [
+          "نعيش",
+          "أعيش",
+          "تعيش",
+          "يعيش"
+        ],
+        "correct": "نعيش",
+        "explanation": "The verb 'to live' is 'عاش' (a-a-sh). For 'we live', it becomes 'نعيش' (na'iish). This verb helps you talk about where you live and how you live. When Arabs ask 'أين تعيش؟' (where do you live), they're often opening the door to deeper conversation about your life, family, and experiences. It's a gesture of interest and friendship."
+      },
+      {
+        "id": "ea_pres11",
+        "question": "They go (feminine)",
+        "translation": "(يذهبن)",
+        "options": [
+          "يذهبون",
+          "يذهبن",
+          "تذهبون",
+          "نذهب"
+        ],
+        "correct": "يذهبن",
+        "explanation": "For 'they' (exclusively feminine), Arabic uses the ending 'ن' (na). The form 'يذهبن' (yadhhabna) refers to a group of women. This distinct feminine plural form reflects the precision of Arabic grammar. The verb 'to go' (ذهب) is extremely common and versatile, used for physical movement and metaphorical journeys alike."
+      },
+      {
+        "id": "ea_pres12",
+        "question": "You work (masculine plural)",
+        "translation": "(تعملون)",
+        "options": [
+          "تعملون",
+          "تعملن",
+          "يعملون",
+          "أعمل"
+        ],
+        "correct": "تعملون",
+        "explanation": "For 'you all' (speaking to a masculine or mixed group), Arabic uses 'تعملون' (ta'maluun). The prefix 'ت' shows 'you', and the ending 'ون' shows plural. The verb 'to work' (عمل) carries connotations of effort, action, and contribution. In Arabic culture, honest work is deeply respected, and this verb appears frequently in discussions about professional life and daily activities."
+      },
+      {
+        "id": "ea_pres13",
+        "question": "She speaks",
+        "translation": "(تتكلم)",
+        "options": [
+          "تتكلم",
+          "يتكلم",
+          "أتكلم",
+          "نتكلم"
+        ],
+        "correct": "تتكلم",
+        "explanation": "The verb 'to speak' is 'تكلم' (t-k-l-m). For 'she speaks', it becomes 'تتكلم' (tatakallam). Notice this verb has four letters in its root (not the usual three), making it slightly irregular. Speaking is an art form in Arabic culture, where eloquence and poetry have been treasured for centuries. Beautiful speech is admired and celebrated."
+      },
+      {
+        "id": "ea_pres14",
+        "question": "I know",
+        "translation": "(أعرف)",
+        "options": [
+          "أعرف",
+          "تعرف",
+          "يعرف",
+          "نعرف"
+        ],
+        "correct": "أعرف",
+        "explanation": "The verb 'to know' is 'عرف' (a-r-f). For 'I know', it becomes 'أعرف' (a'rif). This verb is used for knowing people, places, or having acquaintance with something. There's another verb for knowing facts (علم), showing Arabic's nuanced approach to different types of knowledge. This reflects the culture's deep philosophical tradition of distinguishing between different forms of understanding."
+      },
+      {
+        "id": "ea_pres15",
+        "question": "They read (masculine)",
+        "translation": "(يقرأون)",
+        "options": [
+          "يقرأون",
+          "يقرأن",
+          "تقرأون",
+          "نقرأ"
+        ],
+        "correct": "يقرأون",
+        "explanation": "The verb 'to read' is 'قرأ' (q-r-a). For 'they read' (masculine/mixed), it becomes 'يقرأون' (yaqra'uun). Reading holds a sacred place in Arab culture, as the first word revealed in the Quran was 'إقرأ' (iqra - read). Literacy and scholarship have been central to Arab civilization for over a thousand years, producing countless contributions to science, mathematics, and literature."
+      }
+    ]
+  },
+  {
+    "key": "definite_article",
+    "name": "The Definite Article (ال)",
+    "description": "Master the Arabic definite article",
+    "iconName": "book",
+    "color": "#c084fc",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ea_art1",
+        "question": "The book",
+        "translation": "(الكتاب)",
+        "options": [
+          "كتاب",
+          "الكتاب",
+          "كتابي",
+          "كتابك"
+        ],
+        "correct": "الكتاب",
+        "explanation": "In Arabic, the definite article is 'ال' (al-), which means 'the'. You simply add it before the noun: 'كتاب' (book) becomes 'الكتاب' (the book). Unlike English where 'the' is a separate word, Arabic attaches it directly to the noun. This creates a smooth, unified word. The definite article is one of the most frequently used elements in Arabic, appearing in virtually every sentence."
+      },
+      {
+        "id": "ea_art2",
+        "question": "The house",
+        "translation": "(البيت)",
+        "options": [
+          "بيت",
+          "البيت",
+          "بيتي",
+          "بيتك"
+        ],
+        "correct": "البيت",
+        "explanation": "Adding 'ال' before 'بيت' (house) gives us 'البيت' (the house). The home holds deep significance in Arab culture as a place of hospitality, family gathering, and refuge. When someone invites you to 'البيت', they're extending a warm welcome into their private space, which is considered an honor and a sign of friendship."
+      },
+      {
+        "id": "ea_art3",
+        "question": "The sun",
+        "translation": "(الشمس)",
+        "options": [
+          "شمس",
+          "الشمس",
+          "شمسي",
+          "شمسك"
+        ],
+        "correct": "الشمس",
+        "explanation": "The word becomes 'الشمس' (ash-shams). Notice something special here: when you pronounce it, the 'L' in 'ال' disappears and the 'sh' sound is emphasized. This happens with 'sun letters' - certain consonants that assimilate the 'L' sound. It makes pronunciation smoother and more natural. The sun has been a powerful symbol in Arab poetry and culture for millennia."
+      },
+      {
+        "id": "ea_art4",
+        "question": "The teacher",
+        "translation": "(المعلم)",
+        "options": [
+          "معلم",
+          "المعلم",
+          "معلمي",
+          "معلمك"
+        ],
+        "correct": "المعلم",
+        "explanation": "The word 'معلم' (teacher) with 'ال' becomes 'المعلم' (the teacher). Teachers are highly respected in Arab culture, viewed as keepers and transmitters of knowledge. The relationship between student and teacher has traditionally been one of deep respect and gratitude. This cultural value stems from the long tradition of Islamic scholarship and oral learning traditions."
+      },
+      {
+        "id": "ea_art5",
+        "question": "The door",
+        "translation": "(الباب)",
+        "options": [
+          "باب",
+          "الباب",
+          "بابي",
+          "بابك"
+        ],
+        "correct": "الباب",
+        "explanation": "Adding 'ال' to 'باب' (door) creates 'الباب' (the door). Doors hold symbolic meaning in Arabic literature and culture - representing opportunities, transitions, and the boundary between private and public space. The famous saying 'من كان له بيت من زجاج، لا يرمي الناس بالحجارة' (those who live in glass houses shouldn't throw stones) uses door imagery to discuss character."
+      },
+      {
+        "id": "ea_art6",
+        "question": "The moon",
+        "translation": "(القمر)",
+        "options": [
+          "قمر",
+          "القمر",
+          "قمري",
+          "قمرك"
+        ],
+        "correct": "القمر",
+        "explanation": "The word 'قمر' (moon) with 'ال' becomes 'القمر' (al-qamar). The 'Q' is a moon letter, so we pronounce the 'L' clearly. The moon holds romantic and poetic significance in Arab culture, frequently appearing in classical poetry as a symbol of beauty. The Islamic calendar follows lunar cycles, making the moon culturally and religiously important."
+      },
+      {
+        "id": "ea_art7",
+        "question": "The car",
+        "translation": "(السيارة)",
+        "options": [
+          "سيارة",
+          "السيارة",
+          "سيارتي",
+          "سيارتك"
+        ],
+        "correct": "السيارة",
+        "explanation": "The word 'سيارة' (car) becomes 'السيارة' (as-sayyaarah). The 'S' is a sun letter, so the 'L' sound assimilates. Modern Arabic has adapted beautifully to contemporary life, incorporating words for new technologies while maintaining its classical structure. The definite article system works seamlessly with both ancient and modern vocabulary."
+      },
+      {
+        "id": "ea_art8",
+        "question": "The water",
+        "translation": "(الماء)",
+        "options": [
+          "ماء",
+          "الماء",
+          "مائي",
+          "ماؤك"
+        ],
+        "correct": "الماء",
+        "explanation": "The word 'ماء' (water) with 'ال' becomes 'الماء' (al-maa'). Water has profound significance in Arab culture, especially in desert regions where it represents life itself. Arabic literature is filled with references to water as a blessing and gift. Hospitality often begins with offering water to a guest, a tradition rooted in the harsh desert environment."
+      },
+      {
+        "id": "ea_art9",
+        "question": "The school",
+        "translation": "(المدرسة)",
+        "options": [
+          "مدرسة",
+          "المدرسة",
+          "مدرستي",
+          "مدرستك"
+        ],
+        "correct": "المدرسة",
+        "explanation": "Adding 'ال' to 'مدرسة' (school) gives us 'المدرسة' (al-madrasa). Interestingly, this word shares its root with 'دَرَسَ' (to study). The connection between the place and the action shows how Arabic's root system creates families of related words. Medieval Islamic madrasas were centers of learning that preserved and advanced human knowledge during Europe's Middle Ages."
+      },
+      {
+        "id": "ea_art10",
+        "question": "The city",
+        "translation": "(المدينة)",
+        "options": [
+          "مدينة",
+          "المدينة",
+          "مدينتي",
+          "مدينتك"
+        ],
+        "correct": "المدينة",
+        "explanation": "The word 'مدينة' (city) becomes 'المدينة' (al-madiina). This word also means 'Medina', the second holiest city in Islam. Cities in Arab history have been centers of culture, trade, and learning. From Baghdad to Damascus to Cairo, Arab cities have shaped human civilization through their contributions to science, art, and philosophy."
+      },
+      {
+        "id": "ea_art11",
+        "question": "The night",
+        "translation": "(الليل)",
+        "options": [
+          "ليل",
+          "الليل",
+          "ليلي",
+          "ليلك"
+        ],
+        "correct": "الليل",
+        "explanation": "Adding 'ال' to 'ليل' (night) creates 'الليل' (al-layl). The night holds a special place in Arab culture and literature. Evening gatherings, storytelling under the stars, and the coolness after hot days make night a time for socializing. The famous 'One Thousand and One Nights' (ألف ليلة وليلة) captures this cultural appreciation of nighttime as magical and full of possibility."
+      },
+      {
+        "id": "ea_art12",
+        "question": "The day",
+        "translation": "(اليوم)",
+        "options": [
+          "يوم",
+          "اليوم",
+          "يومي",
+          "يومك"
+        ],
+        "correct": "اليوم",
+        "explanation": "The word 'يوم' (day) with 'ال' becomes 'اليوم' (al-yawm). This same word can mean 'today' depending on context, showing how Arabic often conveys meaning through context rather than separate words. The phrase 'يوماً بعد يوم' (day after day) appears frequently in Arabic speech, emphasizing continuity and persistence."
+      },
+      {
+        "id": "ea_art13",
+        "question": "The friend",
+        "translation": "(الصديق)",
+        "options": [
+          "صديق",
+          "الصديق",
+          "صديقي",
+          "صديقك"
+        ],
+        "correct": "الصديق",
+        "explanation": "Adding 'ال' to 'صديق' (friend) gives us 'الصديق' (as-sadiiq). The 'S' is a sun letter, so we emphasize it in pronunciation. Friendship holds sacred value in Arab culture, with deep loyalty expected between friends. The classical saying 'الصديق وقت الضيق' (a friend in need is a friend indeed) captures this cultural emphasis on true friendship."
+      },
+      {
+        "id": "ea_art14",
+        "question": "The sea",
+        "translation": "(البحر)",
+        "options": [
+          "بحر",
+          "البحر",
+          "بحري",
+          "بحرك"
+        ],
+        "correct": "البحر",
+        "explanation": "The word 'بحر' (sea) becomes 'البحر' (al-bahr). Arab maritime history is rich, with Arab sailors making significant contributions to navigation and sea trade. The word 'بحر' also metaphorically means a vast amount or depth, often used to describe someone with deep knowledge: 'إنه بحر من العلم' (he is a sea of knowledge)."
+      },
+      {
+        "id": "ea_art15",
+        "question": "The coffee",
+        "translation": "(القهوة)",
+        "options": [
+          "قهوة",
+          "القهوة",
+          "قهوتي",
+          "قهوتك"
+        ],
+        "correct": "القهوة",
+        "explanation": "Adding 'ال' to 'قهوة' (coffee) creates 'القهوة' (al-qahwa). Coffee originated in the Arab world and remains central to Arab social life. Offering coffee to a guest is a ritual of hospitality. The preparation and serving of Arabic coffee, with its distinct taste and small cups, is an art form that facilitates conversation and connection. Coffee houses have historically been centers of intellectual discussion and social gathering."
+      }
+    ]
+  },
+  {
+    "key": "pronouns",
+    "name": "Personal Pronouns",
+    "description": "Arabic subject pronouns",
+    "iconName": "person.2",
+    "color": "#4ade80",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ea_pron1",
+        "question": "I",
+        "translation": "(أنا)",
+        "options": [
+          "أنا",
+          "أنتَ",
+          "هو",
+          "نحن"
+        ],
+        "correct": "أنا",
+        "explanation": "The pronoun 'I' in Arabic is 'أنا' (ana). Unlike English, Arabic pronouns are often optional in sentences because the verb conjugation already shows who is acting. However, using the pronoun adds emphasis or clarity. When you want to stress 'I specifically', you use 'أنا'. This gives Arabic speakers a tool for subtle emphasis that feels natural in conversation."
+      },
+      {
+        "id": "ea_pron2",
+        "question": "You (masculine singular)",
+        "translation": "(أنتَ)",
+        "options": [
+          "أنا",
+          "أنتَ",
+          "أنتِ",
+          "هو"
+        ],
+        "correct": "أنتَ",
+        "explanation": "For 'you' addressing a male, Arabic uses 'أنتَ' (anta). Notice the small mark above the final letter - this is 'fatha', indicating an 'a' sound. Arabic has separate pronouns for masculine and feminine, reflecting the language's attention to gender. Using the correct form shows respect and cultural awareness. In formal situations, this distinction is particularly important."
+      },
+      {
+        "id": "ea_pron3",
+        "question": "You (feminine singular)",
+        "translation": "(أنتِ)",
+        "options": [
+          "أنتَ",
+          "أنتِ",
+          "هو",
+          "هي"
+        ],
+        "correct": "أنتِ",
+        "explanation": "For 'you' addressing a female, use 'أنتِ' (anti). The ending mark (kasra) shows an 'i' sound. This gender distinction in pronouns allows Arabic to be very precise about whom you're addressing. In conversation, using the appropriate form demonstrates courtesy and attentiveness. The gender system in Arabic is grammatical, affecting adjectives, verbs, and pronouns throughout the sentence."
+      },
+      {
+        "id": "ea_pron4",
+        "question": "He",
+        "translation": "(هو)",
+        "options": [
+          "هو",
+          "هي",
+          "أنتَ",
+          "نحن"
+        ],
+        "correct": "هو",
+        "explanation": "The pronoun 'he' is 'هو' (huwa). This simple two-letter word is used frequently when discussing absent third parties. In storytelling and news reports, you'll hear it constantly. Arabic grammar treats 'he' and 'she' differently in verb conjugation and agreement, making the gender clear throughout the sentence. This prevents ambiguity in longer passages."
+      },
+      {
+        "id": "ea_pron5",
+        "question": "She",
+        "translation": "(هي)",
+        "options": [
+          "هو",
+          "هي",
+          "أنتِ",
+          "نحن"
+        ],
+        "correct": "هي",
+        "explanation": "The pronoun 'she' is 'هي' (hiya). Like 'he', this appears frequently in narratives and descriptions. The feminine form ensures clarity when discussing women. Arabic literature and poetry often celebrate feminine figures using this pronoun with beautiful descriptions and metaphors. The language's built-in gender system makes gender relationships in sentences crystal clear."
+      },
+      {
+        "id": "ea_pron6",
+        "question": "We",
+        "translation": "(نحن)",
+        "options": [
+          "نحن",
+          "أنتم",
+          "هم",
+          "أنا"
+        ],
+        "correct": "نحن",
+        "explanation": "The pronoun 'we' is 'نحن' (nahnu). This pronoun conveys collective identity and action. In Arab culture, where family and community bonds are strong, the 'we' perspective is very common. Decisions and activities are often discussed in terms of the group rather than the individual. This linguistic feature reflects deeper cultural values of solidarity and collective responsibility."
+      },
+      {
+        "id": "ea_pron7",
+        "question": "You (masculine plural)",
+        "translation": "(أنتم)",
+        "options": [
+          "أنتم",
+          "أنتن",
+          "هم",
+          "نحن"
+        ],
+        "correct": "أنتم",
+        "explanation": "For 'you' addressing a masculine or mixed group, use 'أنتم' (antum). When a group contains both males and females, Arabic uses the masculine plural as the default. This pronoun would be used when addressing a family, a mixed-gender class, or any group that isn't exclusively female. The ending 'م' marks the masculine plural across many grammatical forms."
+      },
+      {
+        "id": "ea_pron8",
+        "question": "You (feminine plural)",
+        "translation": "(أنتن)",
+        "options": [
+          "أنتم",
+          "أنتن",
+          "هن",
+          "نحن"
+        ],
+        "correct": "أنتن",
+        "explanation": "For 'you' addressing an exclusively female group, use 'أنتن' (antunna). This form is used when speaking to multiple women or girls. In contexts like women's gatherings, female classrooms, or when addressing mothers, this specific pronoun shows grammatical precision. The feminine plural forms reflect Arabic's detailed attention to gender throughout its structure."
+      },
+      {
+        "id": "ea_pron9",
+        "question": "They (masculine plural)",
+        "translation": "(هم)",
+        "options": [
+          "هم",
+          "هن",
+          "أنتم",
+          "نحن"
+        ],
+        "correct": "هم",
+        "explanation": "For 'they' referring to males or a mixed group, use 'هم' (hum). This is one of the most common pronouns in formal writing and news reporting. When discussing groups of people, companies, organizations, or any plural entity that isn't exclusively feminine, 'هم' is your go-to pronoun. Its brevity makes it easy to use frequently."
+      },
+      {
+        "id": "ea_pron10",
+        "question": "They (feminine plural)",
+        "translation": "(هن)",
+        "options": [
+          "هم",
+          "هن",
+          "أنتن",
+          "نحن"
+        ],
+        "correct": "هن",
+        "explanation": "For 'they' referring exclusively to females, use 'هن' (hunna). This pronoun appears when discussing groups of women, feminine objects, or feminine abstract concepts. Arabic's grammatical gender extends beyond living beings to all nouns, so even inanimate feminine plural nouns use this pronoun. This consistency throughout the language creates elegant agreement patterns."
+      },
+      {
+        "id": "ea_pron11",
+        "question": "You both (masculine)",
+        "translation": "(أنتما)",
+        "options": [
+          "أنتما",
+          "هما",
+          "أنتم",
+          "نحن"
+        ],
+        "correct": "أنتما",
+        "explanation": "Arabic has a special dual form for 'you two' (masculine or mixed): 'أنتما' (antuma). This exists because Arabic has three number categories: singular, dual, and plural. The dual is used for exactly two of something. This precision is unique to Arabic among major world languages. It creates beautiful symmetry in the grammar and reflects the language's attention to specific quantities."
+      },
+      {
+        "id": "ea_pron12",
+        "question": "They both (masculine)",
+        "translation": "(هما)",
+        "options": [
+          "هما",
+          "هم",
+          "أنتما",
+          "نحن"
+        ],
+        "correct": "هما",
+        "explanation": "For 'they two' (masculine or mixed), use 'هما' (huma). This dual form appears when referring to pairs: two brothers, two friends, two eyes, two hands. Arabic poetry often uses dual forms to discuss paired concepts. The dual's existence shows Arabic's mathematical precision and its origins in a culture that valued exact description and clear communication."
+      },
+      {
+        "id": "ea_pron13",
+        "question": "You both (feminine)",
+        "translation": "(أنتما)",
+        "options": [
+          "أنتما",
+          "هما",
+          "أنتن",
+          "نحن"
+        ],
+        "correct": "أنتما",
+        "explanation": "Interestingly, the dual 'you two' form is the same for masculine and feminine: 'أنتما' (antuma). This is one of the few places where Arabic doesn't distinguish gender in the dual form. This shared form makes the dual somewhat easier to learn. When addressing two women, you use the same pronoun as addressing two men or a mixed pair."
+      },
+      {
+        "id": "ea_pron14",
+        "question": "They both (feminine)",
+        "translation": "(هما)",
+        "options": [
+          "هما",
+          "هن",
+          "أنتما",
+          "نحن"
+        ],
+        "correct": "هما",
+        "explanation": "Like the 'you two' form, 'they two' is also the same for both genders: 'هما' (huma). Whether referring to two women, two men, or one of each, you use 'هما'. The context and the gender of accompanying verbs and adjectives clarify the gender when needed. This demonstrates how Arabic balances complexity with practical simplicity in certain areas."
+      },
+      {
+        "id": "ea_pron15",
+        "question": "We both",
+        "translation": "(نحن)",
+        "options": [
+          "نحن",
+          "أنتما",
+          "هما",
+          "أنا"
+        ],
+        "correct": "نحن",
+        "explanation": "Arabic doesn't have a separate dual form for 'we' - it uses 'نحن' (nahnu) for both 'we two' and 'we' (more than two). The dual exists for second and third person but not first person. When context requires clarifying that you mean exactly two people, you can add 'اثنان' (two) for emphasis. This practical simplification makes sense because the speaker usually knows whether they mean two or more."
+      }
+    ]
+  },
+  {
+    "key": "sentence_structure",
+    "name": "Basic Sentence Structure",
+    "description": "Building simple Arabic sentences",
+    "iconName": "rectangle.split.3x1",
+    "color": "#fbbf24",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ea_ss1",
+        "question": "The boy is tall",
+        "translation": "(الولد طويل)",
+        "options": [
+          "الولد طويل",
+          "الولد هو طويل",
+          "طويل الولد",
+          "هو الولد طويل"
+        ],
+        "correct": "الولد طويل",
+        "explanation": "Arabic has two main sentence types: verbal (starting with a verb) and nominal (starting with a noun). For simple descriptions like 'the boy is tall', Arabic uses a nominal sentence: subject + predicate. Notice there's no verb 'is' - Arabic doesn't need it in the present tense for descriptions. You simply say 'الولد طويل' (the-boy tall). This elegance creates concise, flowing sentences."
+      },
+      {
+        "id": "ea_ss2",
+        "question": "I am a student",
+        "translation": "(أنا طالب)",
+        "options": [
+          "أنا طالب",
+          "أكون طالب",
+          "طالب أنا",
+          "أنا أكون طالب"
+        ],
+        "correct": "أنا طالب",
+        "explanation": "To say 'I am a student', simply use the pronoun and noun: 'أنا طالب' (I student). No verb needed. This nominal sentence pattern is fundamental to Arabic. The absence of the verb 'to be' in present tense makes Arabic descriptions feel more direct and immediate. The copula (linking verb) is understood but not spoken, creating economy of expression."
+      },
+      {
+        "id": "ea_ss3",
+        "question": "She is beautiful",
+        "translation": "(هي جميلة)",
+        "options": [
+          "هي جميلة",
+          "هي تكون جميلة",
+          "جميلة هي",
+          "هي هي جميلة"
+        ],
+        "correct": "هي جميلة",
+        "explanation": "The sentence 'she is beautiful' is simply 'هي جميلة' (she beautiful). The adjective 'جميلة' is feminine, matching the feminine subject. This gender agreement between subject and adjective is automatic in Arabic. The pattern remains consistent: pronoun or noun + adjective or description. No verb 'is' needed. This creates a rhythm that becomes natural with practice."
+      },
+      {
+        "id": "ea_ss4",
+        "question": "The house is big",
+        "translation": "(البيت كبير)",
+        "options": [
+          "البيت كبير",
+          "البيت هو كبير",
+          "كبير البيت",
+          "هو البيت كبير"
+        ],
+        "correct": "البيت كبير",
+        "explanation": "Following the same pattern: 'البيت كبير' (the-house big). The adjective follows the noun, and no verb connects them. This word order (noun + adjective) is standard in Arabic, opposite to some English constructions where adjectives precede nouns. Once you internalize this pattern, building descriptive sentences becomes natural and intuitive."
+      },
+      {
+        "id": "ea_ss5",
+        "question": "He writes a letter",
+        "translation": "(يكتب رسالة)",
+        "options": [
+          "يكتب رسالة",
+          "هو يكتب رسالة",
+          "رسالة يكتب",
+          "يكتب هو رسالة"
+        ],
+        "correct": "يكتب رسالة",
+        "explanation": "For action sentences, Arabic typically uses verb-first order: 'يكتب رسالة' (writes letter). The subject is built into the verb conjugation. While you can add the pronoun 'هو' (he) for emphasis, it's usually omitted. This VSO (Verb-Subject-Object) order is classical and common in formal Arabic. It creates a different rhythm from English, emphasizing the action first."
+      },
+      {
+        "id": "ea_ss6",
+        "question": "The students are studying",
+        "translation": "(الطلاب يدرسون)",
+        "options": [
+          "الطلاب يدرسون",
+          "يدرسون الطلاب",
+          "الطلاب هم يدرسون",
+          "هم الطلاب يدرسون"
+        ],
+        "correct": "الطلاب يدرسون",
+        "explanation": "When the subject is a definite noun (with ال), it can come first: 'الطلاب يدرسون' (the-students they-study). This SVO (Subject-Verb-Object) order is common in modern Arabic and feels more natural to English speakers. Both word orders (VSO and SVO) are correct, with VSO being more classical and SVO more modern. This flexibility allows for stylistic variation."
+      },
+      {
+        "id": "ea_ss7",
+        "question": "There is a book",
+        "translation": "(هناك كتاب)",
+        "options": [
+          "هناك كتاب",
+          "يوجد كتاب",
+          "كتاب هناك",
+          "هو كتاب"
+        ],
+        "correct": "هناك كتاب",
+        "explanation": "To express existence ('there is/are'), Arabic uses 'هناك' (hunaaka). This word literally means 'there' but functions like 'there is/are'. You can also use 'يوجد' (exists), but 'هناك' is simpler and more common in everyday speech. This construction helps you point out the existence or presence of something in a location."
+      },
+      {
+        "id": "ea_ss8",
+        "question": "My name is Ahmad",
+        "translation": "(اسمي أحمد)",
+        "options": [
+          "اسمي أحمد",
+          "أنا اسمي أحمد",
+          "اسمي هو أحمد",
+          "أحمد اسمي"
+        ],
+        "correct": "اسمي أحمد",
+        "explanation": "To introduce yourself, say 'اسمي أحمد' (name-my Ahmad). The possessive suffix 'ي' (my) attaches directly to the noun. No verb needed. This construction is your first line in meeting people. The attached possessive creates a smooth, connected sound. Arabic attaches these possessive pronouns rather than using separate words, creating elegant concision."
+      },
+      {
+        "id": "ea_ss9",
+        "question": "Where is the book",
+        "translation": "(أين الكتاب)",
+        "options": [
+          "أين الكتاب",
+          "الكتاب أين",
+          "أين هو الكتاب",
+          "هو أين الكتاب"
+        ],
+        "correct": "أين الكتاب",
+        "explanation": "Questions about location use 'أين' (where) followed by the subject: 'أين الكتاب' (where the-book). Arabic question words typically come first, similar to English. The simplicity of this pattern makes asking questions straightforward. You can use this structure to ask about anything's location: أين المطعم (where is the restaurant), أين البيت (where is the house)."
+      },
+      {
+        "id": "ea_ss10",
+        "question": "What is this",
+        "translation": "(ما هذا)",
+        "options": [
+          "ما هذا",
+          "هذا ما",
+          "ما هو هذا",
+          "هذا هو ما"
+        ],
+        "correct": "ما هذا",
+        "explanation": "To ask 'what is this', use 'ما هذا' (ma hadha). The question word 'ما' (what) comes first, followed by 'هذا' (this). This is one of the most useful questions for learners. When you don't know a word, point and ask 'ما هذا'. Arabic speakers appreciate when foreigners make an effort to learn, and this question opens doors to vocabulary expansion."
+      },
+      {
+        "id": "ea_ss11",
+        "question": "I want water",
+        "translation": "(أريد ماء)",
+        "options": [
+          "أريد ماء",
+          "أنا أريد ماء",
+          "ماء أريد",
+          "أريد أنا ماء"
+        ],
+        "correct": "أريد ماء",
+        "explanation": "To express want or need, use 'أريد' (I want) followed by what you want: 'أريد ماء' (I-want water). The pronoun 'أنا' is optional since the verb conjugation shows the subject. This simple structure helps you request things politely. Adding 'من فضلك' (please) makes it even more courteous: 'أريد ماء من فضلك'."
+      },
+      {
+        "id": "ea_ss12",
+        "question": "She has a car",
+        "translation": "(عندها سيارة)",
+        "options": [
+          "عندها سيارة",
+          "هي عندها سيارة",
+          "سيارة عندها",
+          "لديها سيارة"
+        ],
+        "correct": "عندها سيارة",
+        "explanation": "Arabic expresses possession using 'عند' (at/with) plus possessive suffix: 'عندها سيارة' (at-her car / she-has car). There's no verb 'to have' as in English. Instead, you say something exists 'with' or 'at' someone. Another option is 'لديها' (with-her). Both constructions are common. This reflects a different conceptualization of possession."
+      },
+      {
+        "id": "ea_ss13",
+        "question": "The food is delicious",
+        "translation": "(الطعام لذيذ)",
+        "options": [
+          "الطعام لذيذ",
+          "الطعام هو لذيذ",
+          "لذيذ الطعام",
+          "هو الطعام لذيذ"
+        ],
+        "correct": "الطعام لذيذ",
+        "explanation": "Following the nominal sentence pattern: 'الطعام لذيذ' (the-food delicious). When complimenting food, this phrase shows appreciation for hospitality. Food and sharing meals are central to Arab culture. Praising the food is a way of honoring your host. Adding 'جداً' (very) gives emphasis: 'الطعام لذيذ جداً' (the food is very delicious)."
+      },
+      {
+        "id": "ea_ss14",
+        "question": "I am from America",
+        "translation": "(أنا من أمريكا)",
+        "options": [
+          "أنا من أمريكا",
+          "من أمريكا أنا",
+          "أنا أكون من أمريكا",
+          "من أنا أمريكا"
+        ],
+        "correct": "أنا من أمريكا",
+        "explanation": "To state origin, use the pronoun + 'من' (from) + place: 'أنا من أمريكا' (I from America). When meeting Arabic speakers, they'll often ask 'من أين أنت' (from where you). Your answer helps establish connection and context. People love hearing about different places and cultures, and this opens conversations about travel, differences, and shared experiences."
+      },
+      {
+        "id": "ea_ss15",
+        "question": "We are friends",
+        "translation": "(نحن أصدقاء)",
+        "options": [
+          "نحن أصدقاء",
+          "أصدقاء نحن",
+          "نحن نكون أصدقاء",
+          "نكون نحن أصدقاء"
+        ],
+        "correct": "نحن أصدقاء",
+        "explanation": "Simple nominal sentence: 'نحن أصدقاء' (we friends). The word 'أصدقاء' is the plural of 'صديق' (friend). Friendship is deeply valued in Arab culture, and stating this creates a bond. Arabs distinguish between acquaintances and true friends. Calling someone 'صديقي' (my friend) is meaningful, indicating genuine connection and loyalty. This reflects cultural values of loyalty and long-term relationships."
+      }
+    ]
+  },
+  {
+    "key": "possessives",
+    "name": "Possessive Pronouns",
+    "description": "Express ownership in Arabic",
+    "iconName": "heart",
+    "color": "#fb7185",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ea_poss1",
+        "question": "My book",
+        "translation": "(كتابي)",
+        "options": [
+          "كتابي",
+          "كتابك",
+          "كتابه",
+          "كتابنا"
+        ],
+        "correct": "كتابي",
+        "explanation": "Arabic creates possessives by attaching suffixes to nouns. 'My' is 'ي' (ii), so 'book' (كتاب) becomes 'my book' (كتابي). This creates a single, unified word. Unlike English which uses separate words ('my book'), Arabic weaves the possession directly into the noun. This creates rhythmic, flowing speech. The suffix system works with any noun, making it very systematic."
+      },
+      {
+        "id": "ea_poss2",
+        "question": "Your book (masculine)",
+        "translation": "(كتابك)",
+        "options": [
+          "كتابي",
+          "كتابك",
+          "كتابكِ",
+          "كتابه"
+        ],
+        "correct": "كتابك",
+        "explanation": "For 'your' (masculine singular), attach 'ك' (ka): 'كتابك' (your-book). This suffix works the same way as 'my', creating one word. When addressing a man, whether friend or stranger, this is the form you use. The system is wonderfully consistent - once you learn the suffixes, you can apply them to any noun you know."
+      },
+      {
+        "id": "ea_poss3",
+        "question": "Your book (feminine)",
+        "translation": "(كتابكِ)",
+        "options": [
+          "كتابك",
+          "كتابكِ",
+          "كتابه",
+          "كتابها"
+        ],
+        "correct": "كتابكِ",
+        "explanation": "For 'your' (feminine singular), use 'كِ' (ki): 'كتابكِ'. Notice the small mark under the ك - this kasra indicates the 'i' sound that marks feminine. When speaking to a woman, this form shows respect and proper address. The gender distinction in possessives, like throughout Arabic, adds precision to communication."
+      },
+      {
+        "id": "ea_poss4",
+        "question": "His book",
+        "translation": "(كتابه)",
+        "options": [
+          "كتابي",
+          "كتابك",
+          "كتابه",
+          "كتابها"
+        ],
+        "correct": "كتابه",
+        "explanation": "For 'his', attach 'ه' (hu): 'كتابه' (his-book). When discussing someone's possessions in conversation or storytelling, this suffix appears constantly. Arabic's attachment of possessives creates very economical expression - conveying in two syllables what English expresses in three words. This efficiency is one of Arabic's elegant features."
+      },
+      {
+        "id": "ea_poss5",
+        "question": "Her book",
+        "translation": "(كتابها)",
+        "options": [
+          "كتابه",
+          "كتابها",
+          "كتابهم",
+          "كتابكِ"
+        ],
+        "correct": "كتابها",
+        "explanation": "For 'her', use 'ها' (ha): 'كتابها' (her-book). The feminine possessive distinguishes clearly from the masculine. In narratives and descriptions, this clarity prevents confusion about ownership. The suffix 'ها' is one of the most melodious in Arabic, contributing to the language's musical quality in poetry and speech."
+      },
+      {
+        "id": "ea_poss6",
+        "question": "Our book",
+        "translation": "(كتابنا)",
+        "options": [
+          "كتابنا",
+          "كتابكم",
+          "كتابهم",
+          "كتابي"
+        ],
+        "correct": "كتابنا",
+        "explanation": "For 'our', attach 'نا' (na): 'كتابنا' (our-book). This possessive is used when speaking about shared ownership or collective belonging. In Arab culture, where family and community ties are strong, the 'our' possessive appears frequently. It reflects the communal nature of life where many things are shared among family members or community."
+      },
+      {
+        "id": "ea_poss7",
+        "question": "Your book (masculine plural)",
+        "translation": "(كتابكم)",
+        "options": [
+          "كتابك",
+          "كتابكِ",
+          "كتابكم",
+          "كتابكن"
+        ],
+        "correct": "كتابكم",
+        "explanation": "For 'your' (masculine/mixed plural), use 'كم' (kum): 'كتابكم'. When addressing a group of men or a mixed group, this form applies. In classroom settings, religious contexts, or formal addresses to groups, you'll hear this frequently. The suffix system extends to plural with the same consistency as singular forms."
+      },
+      {
+        "id": "ea_poss8",
+        "question": "Your book (feminine plural)",
+        "translation": "(كتابكن)",
+        "options": [
+          "كتابكم",
+          "كتابكن",
+          "كتابهن",
+          "كتابنا"
+        ],
+        "correct": "كتابكن",
+        "explanation": "For 'your' (feminine plural), use 'كن' (kunna): 'كتابكن'. This addresses groups of women exclusively. In women's gatherings, girls' schools, or when addressing mothers, this specific form applies. Arabic's attention to plural feminine forms shows the language's comprehensive approach to gender agreement."
+      },
+      {
+        "id": "ea_poss9",
+        "question": "Their book (masculine plural)",
+        "translation": "(كتابهم)",
+        "options": [
+          "كتابه",
+          "كتابها",
+          "كتابهم",
+          "كتابهن"
+        ],
+        "correct": "كتابهم",
+        "explanation": "For 'their' (masculine/mixed plural), attach 'هم' (hum): 'كتابهم' (their-book). When discussing possessions of groups, companies, or multiple people, this suffix is your tool. News reports and formal writing use it constantly. The suffix mirrors the pronoun 'هم', making it easy to remember once you know the pronoun system."
+      },
+      {
+        "id": "ea_poss10",
+        "question": "Their book (feminine plural)",
+        "translation": "(كتابهن)",
+        "options": [
+          "كتابهم",
+          "كتابهن",
+          "كتابكن",
+          "كتابنا"
+        ],
+        "correct": "كتابهن",
+        "explanation": "For 'their' (feminine plural), use 'هن' (hunna): 'كتابهن'. This refers to possessions of groups of women or feminine plural nouns. Arabic's consistent gender marking throughout the grammar ensures clarity about whom you're discussing. This precision eliminates ambiguity that sometimes occurs in English pronouns."
+      },
+      {
+        "id": "ea_poss11",
+        "question": "My house",
+        "translation": "(بيتي)",
+        "options": [
+          "بيتي",
+          "بيتك",
+          "بيته",
+          "بيتنا"
+        ],
+        "correct": "بيتي",
+        "explanation": "Applying the pattern: 'بيت' (house) + 'ي' (my) = 'بيتي' (my-house). The possessive system works identically with every noun. Your house, whether humble or grand, represents your private sanctuary in Arab culture. Inviting someone to 'بيتي' is extending warm hospitality and showing trust."
+      },
+      {
+        "id": "ea_poss12",
+        "question": "His name",
+        "translation": "(اسمه)",
+        "options": [
+          "اسمي",
+          "اسمك",
+          "اسمه",
+          "اسمها"
+        ],
+        "correct": "اسمه",
+        "explanation": "The word 'اسم' (name) with suffix 'ه' becomes 'اسمه' (his-name). Names carry great significance in Arab culture, often reflecting family heritage, religious meaning, or hoped-for qualities. Asking 'ما اسمك' (what your-name) is usually the first question in any introduction, beginning the process of building relationship."
+      },
+      {
+        "id": "ea_poss13",
+        "question": "Her family",
+        "translation": "(عائلتها)",
+        "options": [
+          "عائلتي",
+          "عائلتك",
+          "عائلته",
+          "عائلتها"
+        ],
+        "correct": "عائلتها",
+        "explanation": "The word 'عائلة' (family) with suffix 'ها' gives 'عائلتها' (her-family). Family is the cornerstone of Arab society. Extended families often live close together, share responsibilities, and maintain strong bonds across generations. Discussing 'عائلتها' acknowledges these important connections. Respecting family ties is fundamental to Arab cultural values."
+      },
+      {
+        "id": "ea_poss14",
+        "question": "Our country",
+        "translation": "(بلدنا)",
+        "options": [
+          "بلدي",
+          "بلدك",
+          "بلده",
+          "بلدنا"
+        ],
+        "correct": "بلدنا",
+        "explanation": "The word 'بلد' (country) with suffix 'نا' becomes 'بلدنا' (our-country). National identity and love of homeland run deep in Arab culture. The phrase 'بلدنا' carries emotional weight, expressing belonging and pride. Whether discussing politics, culture, or daily life, reference to one's country appears frequently in conversation, showing the importance of place and origin."
+      },
+      {
+        "id": "ea_poss15",
+        "question": "Your phone (masculine)",
+        "translation": "(هاتفك)",
+        "options": [
+          "هاتفي",
+          "هاتفك",
+          "هاتفكِ",
+          "هاتفه"
+        ],
+        "correct": "هاتفك",
+        "explanation": "The word 'هاتف' (phone) with suffix 'ك' gives 'هاتفك' (your-phone). Modern technology has been seamlessly integrated into Arabic vocabulary. The possessive suffix system works just as well with contemporary words as with ancient ones. Asking 'ما رقم هاتفك' (what your-phone number) is a common way to stay in touch."
+      }
+    ]
+  },
+  {
+    "key": "questions",
+    "name": "Question Words",
+    "description": "Essential Arabic question forms",
+    "iconName": "questionmark.circle",
+    "color": "#22d3ee",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ea_q1",
+        "question": "What",
+        "translation": "(ما / ماذا)",
+        "options": [
+          "ما",
+          "من",
+          "أين",
+          "كيف"
+        ],
+        "correct": "ما",
+        "explanation": "The question word 'what' is 'ما' (ma) or 'ماذا' (madha). Both are used interchangeably, with 'ماذا' being slightly more formal. This is one of your most useful words for learning. When you don't understand or want to know something, 'ما' opens the door to information. Point to something and ask 'ما هذا' (what this) to learn new vocabulary continuously."
+      },
+      {
+        "id": "ea_q2",
+        "question": "Who",
+        "translation": "(من)",
+        "options": [
+          "ما",
+          "من",
+          "متى",
+          "أين"
+        ],
+        "correct": "من",
+        "explanation": "The question word 'who' is 'من' (man). This single letter carries great power in conversation. Use it to ask about people: 'من هذا' (who is this), 'من أنت' (who are you). In Arab culture, establishing identity and lineage is important, so 'من' helps you navigate social situations properly. Knowing someone's background helps you understand them better."
+      },
+      {
+        "id": "ea_q3",
+        "question": "Where",
+        "translation": "(أين)",
+        "options": [
+          "ما",
+          "من",
+          "أين",
+          "كيف"
+        ],
+        "correct": "أين",
+        "explanation": "The question word 'where' is 'أين' (ayna). This helps you find places, ask directions, and locate things. 'أين الحمام' (where is the bathroom) is essential for travelers. 'أين أنت' (where are you) appears in phone conversations. The word's usefulness in daily life makes it one of the first question words learners master."
+      },
+      {
+        "id": "ea_q4",
+        "question": "When",
+        "translation": "(متى)",
+        "options": [
+          "متى",
+          "من",
+          "ما",
+          "أين"
+        ],
+        "correct": "متى",
+        "explanation": "The question word 'when' is 'متى' (mata). Use this to ask about time and scheduling: 'متى الاجتماع' (when is the meeting), 'متى تأتي' (when are you coming). Time concepts in Arab culture can be more flexible than in Western cultures, where schedules are suggestions rather than strict requirements. Understanding this cultural context helps you navigate social situations."
+      },
+      {
+        "id": "ea_q5",
+        "question": "Why",
+        "translation": "(لماذا / لِمَ)",
+        "options": [
+          "لماذا",
+          "كيف",
+          "من",
+          "ما"
+        ],
+        "correct": "لماذا",
+        "explanation": "The question word 'why' is 'لماذا' (limadha) or the shorter 'لِمَ' (lima). This asks for reasons and explanations. In philosophical discussions, religious contexts, or simple daily questions, 'لماذا' helps you understand motivations. Arab culture values explanation and understanding the reasoning behind actions, making this an important question word."
+      },
+      {
+        "id": "ea_q6",
+        "question": "How",
+        "translation": "(كيف)",
+        "options": [
+          "كيف",
+          "ما",
+          "من",
+          "أين"
+        ],
+        "correct": "كيف",
+        "explanation": "The question word 'how' is 'كيف' (kayfa). The most common use is 'كيف حالك' (how is your condition/how are you), a greeting you'll use daily. 'كيف' also asks about methods and processes: 'كيف تفعل هذا' (how do you do this). This word helps you learn procedures and understand processes."
+      },
+      {
+        "id": "ea_q7",
+        "question": "How much/many",
+        "translation": "(كم)",
+        "options": [
+          "كم",
+          "ما",
+          "كيف",
+          "أين"
+        ],
+        "correct": "كم",
+        "explanation": "The question word for quantity is 'كم' (kam). Essential for shopping, this asks prices: 'كم الثمن' or 'بكم هذا' (how much is this). In restaurants, shops, markets, 'كم' helps you navigate transactions. Learning to negotiate prices is part of market culture in many Arab countries, and 'كم' starts that conversation."
+      },
+      {
+        "id": "ea_q8",
+        "question": "Which",
+        "translation": "(أي)",
+        "options": [
+          "أي",
+          "ما",
+          "من",
+          "كم"
+        ],
+        "correct": "أي",
+        "explanation": "The question word 'which' is 'أي' (ayy). Use this when choosing between options: 'أي كتاب تريد' (which book do you want), 'أي واحد' (which one). This helps narrow down choices and express preferences. The word works with both masculine and feminine nouns, though it takes feminine form 'أية' when referring to feminine nouns in formal Arabic."
+      },
+      {
+        "id": "ea_q9",
+        "question": "Is/Do (question particle)",
+        "translation": "(هل)",
+        "options": [
+          "هل",
+          "ما",
+          "من",
+          "كيف"
+        ],
+        "correct": "هل",
+        "explanation": "The particle 'هل' (hal) turns statements into yes/no questions. Place it at the beginning: 'هل تتكلم عربي' (do you speak Arabic), 'هل هذا صحيح' (is this correct). This single word transforms any statement into a question, making it incredibly useful. In conversation, intonation alone can make questions, but 'هل' makes the question explicit and clear."
+      },
+      {
+        "id": "ea_q10",
+        "question": "From where",
+        "translation": "(من أين)",
+        "options": [
+          "من أين",
+          "إلى أين",
+          "في أين",
+          "على أين"
+        ],
+        "correct": "من أين",
+        "explanation": "Combining 'من' (from) with 'أين' (where) creates 'من أين' (from where). This asks about origin: 'من أين أنت' (from where are you / where are you from). This is one of the first questions people ask when meeting, as origin helps establish identity and common ground. Your answer opens conversations about culture, food, and shared experiences."
+      },
+      {
+        "id": "ea_q11",
+        "question": "To where",
+        "translation": "(إلى أين)",
+        "options": [
+          "من أين",
+          "إلى أين",
+          "في أين",
+          "على أين"
+        ],
+        "correct": "إلى أين",
+        "explanation": "Combining 'إلى' (to) with 'أين' (where) gives 'إلى أين' (to where). This asks about destination: 'إلى أين تذهب' (to where are you going / where are you going). In travel contexts or daily errands, this question helps you discuss plans and destinations. The combination of preposition plus question word is common in Arabic."
+      },
+      {
+        "id": "ea_q12",
+        "question": "How are you",
+        "translation": "(كيف حالك)",
+        "options": [
+          "كيف حالك",
+          "ما اسمك",
+          "من أنت",
+          "أين أنت"
+        ],
+        "correct": "كيف حالك",
+        "explanation": "This essential greeting asks 'كيف حالك' (how is your condition). For males, use 'كيف حالك' (kayfa haaluk), for females 'كيف حالكِ' (kayfa haaluki). This greeting shows interest in someone's wellbeing. The response usually follows a formula: 'الحمد لله، بخير' (praise to God, I'm well). This phrase structure is your gateway to every conversation."
+      },
+      {
+        "id": "ea_q13",
+        "question": "What is your name",
+        "translation": "(ما اسمك)",
+        "options": [
+          "ما اسمك",
+          "كيف حالك",
+          "من أنت",
+          "أين أنت"
+        ],
+        "correct": "ما اسمك",
+        "explanation": "To ask someone's name, use 'ما اسمك' (ma ismuka - masculine) or 'ما اسمكِ' (ma ismuki - feminine). This combines 'ما' (what) with 'اسمك' (your-name). Names are important in Arab culture, often carrying meaning related to qualities, prophets, or family heritage. Asking and remembering names shows respect and interest in building relationship."
+      },
+      {
+        "id": "ea_q14",
+        "question": "Do you speak English",
+        "translation": "(هل تتكلم انجليزي)",
+        "options": [
+          "هل تتكلم انجليزي",
+          "ما اسمك",
+          "من أين أنت",
+          "كيف حالك"
+        ],
+        "correct": "هل تتكلم انجليزي",
+        "explanation": "This crucial question 'هل تتكلم انجليزي' (hal tatakallam ingleezii) asks if someone speaks English. As a learner, this can be a lifeline in difficult situations. However, trying to use Arabic first, even imperfectly, is appreciated. Arabs generally show great patience with learners and often delight in helping you practice and improve your Arabic skills."
+      },
+      {
+        "id": "ea_q15",
+        "question": "What time is it",
+        "translation": "(كم الساعة)",
+        "options": [
+          "كم الساعة",
+          "متى الساعة",
+          "أين الساعة",
+          "ما الساعة"
+        ],
+        "correct": "كم الساعة",
+        "explanation": "To ask the time, say 'كم الساعة' (kam as-saa'a - literally 'how much the hour'). Another option is 'ما الوقت' (what is the time). Time concepts in Arab culture traditionally focused on prayer times, which divided the day into meaningful segments. Modern life uses standard hours, but the cultural connection to prayer times remains, giving time a spiritual dimension beyond mere scheduling."
+      }
+    ]
+  },
+  {
+    "key": "common_expressions",
+    "name": "Common Expressions",
+    "description": "Essential phrases for daily use",
+    "iconName": "bubble.left",
+    "color": "#c084fc",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ea_expr1",
+        "question": "Thank you",
+        "translation": "(شكراً)",
+        "options": [
+          "شكراً",
+          "عفواً",
+          "أهلاً",
+          "مع السلامة"
+        ],
+        "correct": "شكراً",
+        "explanation": "The word 'شكراً' (shukran) means 'thank you'. It comes from the root 'شكر' meaning gratitude. You can intensify it with 'جزيلاً' (a lot): 'شكراً جزيلاً' (thank you very much). Gratitude is highly valued in Arab culture, and expressing thanks appropriately builds positive relationships. A simple 'شكراً' goes a long way in daily interactions."
+      },
+      {
+        "id": "ea_expr2",
+        "question": "You're welcome",
+        "translation": "(عفواً / العفو)",
+        "options": [
+          "شكراً",
+          "عفواً",
+          "أهلاً",
+          "مع السلامة"
+        ],
+        "correct": "عفواً",
+        "explanation": "The response to thanks is 'عفواً' (afwan) or 'العفو' (al-afw), meaning 'pardon' or 'it's nothing'. This humble response reflects cultural values of generosity and downplaying one's good deeds. Another common response is 'لا شكر على واجب' (no thanks for duty), suggesting helping others is simply one's duty, not something requiring thanks."
+      },
+      {
+        "id": "ea_expr3",
+        "question": "Please",
+        "translation": "(من فضلك / لو سمحت)",
+        "options": [
+          "من فضلك",
+          "شكراً",
+          "عفواً",
+          "أهلاً"
+        ],
+        "correct": "من فضلك",
+        "explanation": "For 'please', use 'من فضلك' (min fadlak - masculine) or 'من فضلكِ' (min fadliki - feminine), literally 'from your favor'. Another option is 'لو سمحت' (if you permit). Both express politeness and respect. Arab culture places high value on courteous interaction, and using these phrases shows proper upbringing and respect for others."
+      },
+      {
+        "id": "ea_expr4",
+        "question": "Excuse me / Sorry",
+        "translation": "(عفواً / آسف)",
+        "options": [
+          "عفواً",
+          "شكراً",
+          "أهلاً",
+          "مع السلامة"
+        ],
+        "correct": "عفواً",
+        "explanation": "To get someone's attention or apologize lightly, use 'عفواً' (afwan - excuse me). For a stronger apology, use 'آسف' (aasif - masculine) or 'آسفة' (aasifa - feminine), meaning 'sorry'. The choice depends on situation severity. Arab culture values harmony, so apologizing when appropriate helps maintain good relationships and shows humility."
+      },
+      {
+        "id": "ea_expr5",
+        "question": "Welcome",
+        "translation": "(أهلاً / أهلاً وسهلاً)",
+        "options": [
+          "أهلاً",
+          "شكراً",
+          "عفواً",
+          "مع السلامة"
+        ],
+        "correct": "أهلاً",
+        "explanation": "The welcoming phrase is 'أهلاً' (ahlan) or more fully 'أهلاً وسهلاً' (ahlan wa sahlan). This literally means 'family and ease', suggesting the guest is among family in a comfortable place. Hospitality is fundamental to Arab culture. When someone says 'أهلاً', they're extending warmth and welcome. The response is often to repeat the phrase back."
+      },
+      {
+        "id": "ea_expr6",
+        "question": "Goodbye",
+        "translation": "(مع السلامة)",
+        "options": [
+          "مع السلامة",
+          "أهلاً",
+          "شكراً",
+          "صباح الخير"
+        ],
+        "correct": "مع السلامة",
+        "explanation": "To say goodbye, use 'مع السلامة' (ma'a as-salaama), literally 'with safety/peace'. This wishes the departing person safety on their journey. Another option is 'إلى اللقاء' (until we meet). The emphasis on safety reflects the cultural value of wishing others well. Farewells in Arab culture are often elaborate, showing the importance placed on relationships."
+      },
+      {
+        "id": "ea_expr7",
+        "question": "Good morning",
+        "translation": "(صباح الخير)",
+        "options": [
+          "صباح الخير",
+          "مساء الخير",
+          "تصبح على خير",
+          "أهلاً"
+        ],
+        "correct": "صباح الخير",
+        "explanation": "The morning greeting is 'صباح الخير' (sabaah al-khayr - morning of goodness). The response is 'صباح النور' (sabaah an-nuur - morning of light). This poetic exchange sets a positive tone for the day. Greetings in Arabic often come in pairs - one person says something, the other responds with a complementary phrase. This creates social harmony."
+      },
+      {
+        "id": "ea_expr8",
+        "question": "Good evening",
+        "translation": "(مساء الخير)",
+        "options": [
+          "صباح الخير",
+          "مساء الخير",
+          "تصبح على خير",
+          "مع السلامة"
+        ],
+        "correct": "مساء الخير",
+        "explanation": "The evening greeting is 'مساء الخير' (masaa' al-khayr - evening of goodness). The response is 'مساء النور' (masaa' an-nuur - evening of light). Evening is a social time in Arab culture, when temperatures cool and people gather. This greeting acknowledges the special quality of evening hours when family and friends come together."
+      },
+      {
+        "id": "ea_expr9",
+        "question": "Good night",
+        "translation": "(تصبح على خير)",
+        "options": [
+          "صباح الخير",
+          "مساء الخير",
+          "تصبح على خير",
+          "مع السلامة"
+        ],
+        "correct": "تصبح على خير",
+        "explanation": "Before sleeping, say 'تصبح على خير' (tusbih ala khayr - may you wake upon goodness). This wishes someone a good night and safe awakening. The response is similar: 'وأنت من أهل الخير' (and you among people of goodness). These elaborate goodnight wishes show care for loved ones and the cultural importance of blessing others."
+      },
+      {
+        "id": "ea_expr10",
+        "question": "Praise be to God",
+        "translation": "(الحمد لله)",
+        "options": [
+          "الحمد لله",
+          "إن شاء الله",
+          "ما شاء الله",
+          "بارك الله فيك"
+        ],
+        "correct": "الحمد لله",
+        "explanation": "The phrase 'الحمد لله' (alhamdu lillah - praise be to God) is ubiquitous in Arabic speech. Used to express gratitude, acknowledge blessings, or accept difficulties with patience, it reflects the centrality of faith in daily life. When asked how you are, responding 'الحمد لله' expresses contentment and thankfulness, regardless of circumstances. This phrase embodies a philosophical approach to life."
+      },
+      {
+        "id": "ea_expr11",
+        "question": "God willing",
+        "translation": "(إن شاء الله)",
+        "options": [
+          "الحمد لله",
+          "إن شاء الله",
+          "ما شاء الله",
+          "بارك الله فيك"
+        ],
+        "correct": "إن شاء الله",
+        "explanation": "The phrase 'إن شاء الله' (in sha' Allah - if God wills) accompanies any statement about the future. This acknowledges that humans plan but outcomes rest with God. When you promise to do something or discuss future events, adding 'إن شاء الله' shows humility and faith. Non-Arabs sometimes misunderstand this as uncertainty, but it's actually an expression of piety and recognition of human limits."
+      },
+      {
+        "id": "ea_expr12",
+        "question": "What God wills",
+        "translation": "(ما شاء الله)",
+        "options": [
+          "الحمد لله",
+          "إن شاء الله",
+          "ما شاء الله",
+          "بارك الله فيك"
+        ],
+        "correct": "ما شاء الله",
+        "explanation": "The phrase 'ما شاء الله' (ma sha' Allah - what God has willed) is said when admiring something or someone, to ward off envy and acknowledge God's role in all good things. When complimenting a child, possession, or achievement, adding 'ما شاء الله' shows the blessing is from God. This reflects the belief that expressing pure admiration without acknowledging God might bring misfortune."
+      },
+      {
+        "id": "ea_expr13",
+        "question": "May God bless you",
+        "translation": "(بارك الله فيك)",
+        "options": [
+          "الحمد لله",
+          "إن شاء الله",
+          "ما شاء الله",
+          "بارك الله فيك"
+        ],
+        "correct": "بارك الله فيك",
+        "explanation": "To bless someone, say 'بارك الله فيك' (barak Allahu fik - may God bless you). This expresses appreciation or wishes blessings upon someone. The response is often 'وفيك بارك الله' (and in you may God bless). These reciprocal blessings create positive social interactions and reinforce community bonds through shared faith expressions."
+      },
+      {
+        "id": "ea_expr14",
+        "question": "I don't understand",
+        "translation": "(لا أفهم)",
+        "options": [
+          "لا أفهم",
+          "أفهم",
+          "أعرف",
+          "لا أعرف"
+        ],
+        "correct": "لا أفهم",
+        "explanation": "When you don't understand, say 'لا أفهم' (la afham - I don't understand). This honest admission helps others adjust their speech. You might add 'أعد من فضلك' (repeat please) or 'ببطء من فضلك' (slowly please). Arabs generally show great patience with learners, often slowing down and simplifying their speech to help you understand and improve."
+      },
+      {
+        "id": "ea_expr15",
+        "question": "Congratulations",
+        "translation": "(مبروك)",
+        "options": [
+          "مبروك",
+          "شكراً",
+          "أهلاً",
+          "مع السلامة"
+        ],
+        "correct": "مبروك",
+        "explanation": "To congratulate someone, say 'مبروك' (mabruuk - blessed/congratulations). The response is 'الله يبارك فيك' (God bless you). This is used for happy occasions: weddings, births, new homes, promotions. Sharing joy is important in Arab culture, and 'مبروك' helps you participate in celebrations and show happiness for others' good fortune. The word comes from the root meaning blessing."
+      }
+    ]
+  }
+]

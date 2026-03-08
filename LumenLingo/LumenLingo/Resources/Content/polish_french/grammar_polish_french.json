@@ -1,0 +1,1232 @@
+[
+  {
+    "key": "present_tense",
+    "name": "Présent de l'indicatif",
+    "description": "Czas teraźniejszy w języku francuskim",
+    "iconName": "clock",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pf_p1",
+        "question": "Je _____ français.",
+        "translation": "(Uczę się francuskiego)",
+        "options": [
+          "apprends",
+          "apprend",
+          "apprenons",
+          "apprendre"
+        ],
+        "correct": "apprends",
+        "explanation": "Witaj w świecie francuskich czasowników. W języku francuskim czasowniki zmieniają się według osoby - podobnie jak w polskim. 'Je' (ja) wymaga końcówki -s dla większości czasowników. 'J'apprends le français' znaczy 'uczę się francuskiego'. Francuski ma piękną muzyczność - każda forma czasownika brzmi inaczej. W przeciwieństwie do angielskiego, gdzie większość form jest identyczna, francuski dba o szczegóły."
+      },
+      {
+        "id": "pf_p2",
+        "question": "Tu _____ un café.",
+        "translation": "(Pijesz kawę)",
+        "options": [
+          "bois",
+          "boit",
+          "boire",
+          "boivent"
+        ],
+        "correct": "bois",
+        "explanation": "'Tu' (ty) to druga osoba liczby pojedynczej. Czasownik 'boire' (pić) jest nieregularny, ale częsty. 'Tu bois un café' = pijesz kawę. Zauważ, że końcówka -s jest cicha w wymowie. Francuski uwielbia ciche końcówki - piszemy je, ale nie wymawiamy. To część uroku tego języka. Kawa to święty rytuał we Francji - 'un café' to coś więcej niż napój."
+      },
+      {
+        "id": "pf_p3",
+        "question": "Elle _____ à Paris.",
+        "translation": "(Ona mieszka w Paryżu)",
+        "options": [
+          "habite",
+          "habites",
+          "habitons",
+          "habiter"
+        ],
+        "correct": "habite",
+        "explanation": "Trzecia osoba pojedyncza (il/elle/on) bierze końcówkę -e dla czasowników z grupy -er. 'Elle habite à Paris' = ona mieszka w Paryżu. Czasowniki na -er to najczęstsza grupa - około 90% wszystkich francuskich czasowników. Gdy opanujesz ten wzorzec, otworzysz drzwi do tysięcy słów. Paryż jako miejsce zamieszkania brzmi romantycznie w każdym języku."
+      },
+      {
+        "id": "pf_p4",
+        "question": "Nous _____ ensemble.",
+        "translation": "(Pracujemy razem)",
+        "options": [
+          "travaillons",
+          "travaille",
+          "travaillez",
+          "travailler"
+        ],
+        "correct": "travaillons",
+        "explanation": "'Nous' (my) zawsze ma końcówkę -ons. To jedna z najłatwiejszych reguł francuskiego. 'Nous travaillons ensemble' = pracujemy razem. Końcówka -ons jest wyraźna w wymowie, w przeciwieństwie do wielu innych końcówek. 'Ensemble' (razem) dodaje piękny wymiar współpracy. Francuski lubi podkreślać związki między ludźmi."
+      },
+      {
+        "id": "pf_p5",
+        "question": "Vous _____ français.",
+        "translation": "(Mówicie po francusku)",
+        "options": [
+          "parlez",
+          "parle",
+          "parlons",
+          "parler"
+        ],
+        "correct": "parlez",
+        "explanation": "'Vous' może być formą grzecznościową (Pan/Pani) lub drugą osobą liczby mnogiej (wy). Zawsze kończy się na -ez. 'Vous parlez français' = mówicie po francusku (lub Pan/Pani mówi). Ta sama forma dla obu znaczeń - kontekst wyjaśnia wszystko. 'Parler' (mówić) to fundamentalny czasownik dla uczących się języka."
+      },
+      {
+        "id": "pf_p6",
+        "question": "Ils _____ au cinéma.",
+        "translation": "(Oni idą do kina)",
+        "options": [
+          "vont",
+          "va",
+          "aller",
+          "allons"
+        ],
+        "correct": "vont",
+        "explanation": "'Aller' (iść) jest bardzo nieregularny, ale niezwykle potrzebny. 'Ils vont au cinéma' = oni idą do kina. Trzecia osoba mnoga to 'vont' - całkiem odmienna od innych form. Kino po francusku to 'cinéma' - słowo, które podróżuje przez języki. Nieregularne czasowniki są jak specjalne gwiazdy - warto je poznać osobno."
+      },
+      {
+        "id": "pf_p7",
+        "question": "Je _____ content.",
+        "translation": "(Jestem zadowolony)",
+        "options": [
+          "suis",
+          "es",
+          "est",
+          "être"
+        ],
+        "correct": "suis",
+        "explanation": "'Être' (być) to najważniejszy czasownik francuski - tak jak w polskim 'być'. 'Je suis content' = jestem zadowolony. 'Être' jest totalnie nieregularny, ale używany w każdym zdaniu. Warto nauczyć się go na pamięć. To fundament języka francuskiego. Bez 'être' nie da się zbudować większości zdań."
+      },
+      {
+        "id": "pf_p8",
+        "question": "Tu _____ raison.",
+        "translation": "(Masz rację)",
+        "options": [
+          "as",
+          "a",
+          "avoir",
+          "avons"
+        ],
+        "correct": "as",
+        "explanation": "'Avoir' (mieć) to drugi najważniejszy czasownik. 'Tu as raison' = masz rację (dosłownie: masz rację). Po francusku wiele wyrażeń używa 'avoir' tam, gdzie polski używa 'być': avoir faim (być głodnym), avoir froid (być zmarzniętym). To fascynująca różnica między językami. 'As' wymawia się jak 'a' - ciche -s."
+      },
+      {
+        "id": "pf_p9",
+        "question": "Nous _____ les vacances.",
+        "translation": "(Kochamy wakacje)",
+        "options": [
+          "aimons",
+          "aime",
+          "aimez",
+          "aimer"
+        ],
+        "correct": "aimons",
+        "explanation": "'Aimer' (kochać, lubić) z końcówką -ons dla 'nous'. 'Nous aimons les vacances' = kochamy wakacje. Uniwersalne uczucie. 'Aimer' to czasownik z sercem - wyraża uczucia, preferencje, miłość. Wakacje po francusku to 'les vacances' - zawsze liczba mnoga. Francuski ma swoje małe dziwactwa, które dodają mu uroku."
+      },
+      {
+        "id": "pf_p10",
+        "question": "Elle _____ du piano.",
+        "translation": "(Ona gra na pianinie)",
+        "options": [
+          "joue",
+          "joues",
+          "jouons",
+          "jouer"
+        ],
+        "correct": "joue",
+        "explanation": "'Jouer' (grać) dla trzeciej osoby pojedynczej. 'Elle joue du piano' = ona gra na pianinie. Uwaga: 'jouer DE' używa się dla instrumentów (jouer du piano, du violon), ale 'jouer À' dla gier (jouer au tennis, aux échecs). Ta różnica przyimków jest typowo francuska - język precyzji i niuansów."
+      },
+      {
+        "id": "pf_p11",
+        "question": "Vous _____ une maison.",
+        "translation": "(Macie dom)",
+        "options": [
+          "avez",
+          "a",
+          "avoir",
+          "ont"
+        ],
+        "correct": "avez",
+        "explanation": "'Avoir' z 'vous' daje 'avez'. 'Vous avez une maison' = macie dom (lub Pan/Pani ma). 'Une maison' (dom) - każde francuskie rzeczownikowe ma rodzaj. Ten dostanie się przyzwyczaić. 'Une' to rodzaj żeński, 'un' męski. Uczenie się rodzajów to jak poznawanie osobowości każdego słowa."
+      },
+      {
+        "id": "pf_p12",
+        "question": "Ils _____ faim.",
+        "translation": "(Oni są głodni)",
+        "options": [
+          "ont",
+          "a",
+          "avoir",
+          "avons"
+        ],
+        "correct": "ont",
+        "explanation": "'Avoir faim' = być głodnym (dosłownie: mieć głód). 'Ils ont faim' = oni są głodni. To typowe francuskie wyrażenie z 'avoir'. Podobnie: avoir soif (być spragnionym), avoir sommeil (być śpiącym), avoir peur (bać się). Francuski preferuje 'mieć' tam, gdzie polski używa 'być'. Przyjmij tę logikę z otwartym sercem."
+      },
+      {
+        "id": "pf_p13",
+        "question": "Je _____ un livre.",
+        "translation": "(Czytam książkę)",
+        "options": [
+          "lis",
+          "lit",
+          "lire",
+          "lisons"
+        ],
+        "correct": "lis",
+        "explanation": "'Lire' (czytać) jest nieregularny. 'Je lis un livre' = czytam książkę. Końcówka -s jest cicha. Czytanie książki to najpiękniejszy sposób na poznanie języka i kultury. 'Un livre' = książka. Francuski jest językiem literatury - tysiące wspaniałych dzieł czeka na odkrycie."
+      },
+      {
+        "id": "pf_p14",
+        "question": "Tu _____ bien.",
+        "translation": "(Śpisz dobrze)",
+        "options": [
+          "dors",
+          "dort",
+          "dormir",
+          "dormons"
+        ],
+        "correct": "dors",
+        "explanation": "'Dormir' (spać) dla 'tu' to 'dors'. 'Tu dors bien' = śpisz dobrze. Życzenie dobrego snu to 'bonne nuit' - piękne wyrażenie. Sen jest ważny dla uczenia się języków - mózg porządkuje wiedzę podczas snu. 'Bien' (dobrze) to słowo, które dodaje pozytywności do każdego zdania."
+      },
+      {
+        "id": "pf_p15",
+        "question": "Nous _____ en France.",
+        "translation": "(Jesteśmy we Francji)",
+        "options": [
+          "sommes",
+          "suis",
+          "être",
+          "sont"
+        ],
+        "correct": "sommes",
+        "explanation": "'Être' dla 'nous' to 'sommes'. 'Nous sommes en France' = jesteśmy we Francji. Dla krajów żeńskich używamy 'en' (en France, en Pologne, en Italie). Dla męskich 'au' (au Portugal, au Japon). Francja jako miejsce pobytu to coś szczególnego - język, kultura, historia. Każda podróż linguistyczna to także podróż kulturowa."
+      }
+    ]
+  },
+  {
+    "key": "articles",
+    "name": "Articles",
+    "description": "Rodzajniki w języku francuskim",
+    "iconName": "doc.text",
+    "color": "#c084fc",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pf_a1",
+        "question": "_____ livre",
+        "translation": "(książka)",
+        "options": [
+          "Le",
+          "La",
+          "Les",
+          "L'"
+        ],
+        "correct": "Le",
+        "explanation": "Rodzajniki określone w francuskim to le (męski), la (żeński), les (mnogi). 'Livre' (książka) jest męski, więc 'le livre'. W polskim nie mamy rodzajników, ale to jak dodawać 'ten' lub 'ta' do każdego rzeczownika. Rodzajniki nadają rzeczownikom tożsamość. Uczenie się rodzajów wymaga praktyki, ale z czasem staje się intuicyjne."
+      },
+      {
+        "id": "pf_a2",
+        "question": "_____ pomme",
+        "translation": "(jabłko)",
+        "options": [
+          "La",
+          "Le",
+          "Les",
+          "L'"
+        ],
+        "correct": "La",
+        "explanation": "'Pomme' (jabłko) jest żeńskiego rodzaju, więc 'la pomme'. Większość rzeczowników kończących się na -e są żeńskie (choć nie zawsze). To pomocna wskazówka. Jabłka są zdrowe i po francusku pięknie brzmią. Każdy rodzaj ma swoją melodię - la jest miękka, le bardziej stanowcze."
+      },
+      {
+        "id": "pf_a3",
+        "question": "_____ enfants",
+        "translation": "(dzieci)",
+        "options": [
+          "Les",
+          "Le",
+          "La",
+          "L'"
+        ],
+        "correct": "Les",
+        "explanation": "'Les' to rodzajnik mnogi dla obu rodzajów. 'Les enfants' = dzieci. Proste - bez względu na rodzaj w pojedynczej, w mnogiej zawsze 'les'. To ułatwia życie. Dzieci są uniwersalne - 'les enfants' to częste słowo w rodzinnych rozmowach. Mnoga forma rodzajnika jednoczy wszystkie rzeczowniki."
+      },
+      {
+        "id": "pf_a4",
+        "question": "_____ eau",
+        "translation": "(woda)",
+        "options": [
+          "L'",
+          "Le",
+          "La",
+          "Les"
+        ],
+        "correct": "L'",
+        "explanation": "Przed samogłoskami le i la skracają się do l'. 'Eau' zaczyna się od samogłoski, więc 'l'eau'. Ta elizja (skrócenie) sprawia, że francuski płynie płynnie. 'Eau' jest żeńskie, ale trudno to usłyszeć przez l'. Woda jest życiem - 'l'eau' to fundamentalne słowo. Elizja to część muzyczności francuskiego."
+      },
+      {
+        "id": "pf_a5",
+        "question": "_____ maison",
+        "translation": "(dom)",
+        "options": [
+          "La",
+          "Le",
+          "Les",
+          "L'"
+        ],
+        "correct": "La",
+        "explanation": "'Maison' (dom) jest żeńska - 'la maison'. Dom to miejsce serca, ciepła, rodziny. Po francusku brzmi szczególnie przytulnie. Większość budynków i miejsc ma swoje rodzaje - trzeba je poznawać pojedynczo. Dom jest żeński we francuskim, ale w innych językach może być inaczej. Każdy język patrzy na świat po swojemu."
+      },
+      {
+        "id": "pf_a6",
+        "question": "_____ voiture",
+        "translation": "(samochód)",
+        "options": [
+          "La",
+          "Le",
+          "Les",
+          "L'"
+        ],
+        "correct": "La",
+        "explanation": "'Voiture' (samochód) jest żeńska - 'la voiture'. Samochody we francuskim są żeńskie - ciekawostka kulturowa. W polskim 'samochód' jest męski. Rodzaje nie są logiczne między językami - to arbitralna konwencja każdego języka. 'Voiture' od łacińskiego słowa oznaczającego 'coś co niesie'."
+      },
+      {
+        "id": "pf_a7",
+        "question": "_____ université",
+        "translation": "(uniwersytet)",
+        "options": [
+          "L'",
+          "Le",
+          "La",
+          "Les"
+        ],
+        "correct": "L'",
+        "explanation": "'Université' zaczyna się od samogłoski i jest żeńska - 'l'université'. Miejsca edukacji mają swój prestiż we francuskim. Uniwersytet to brama do wiedzy i kultury. Francuskie uniwersytety mają długą, szacowną historię. Każde słowo niesie ze sobą kulturowe skojarzenia."
+      },
+      {
+        "id": "pf_a8",
+        "question": "_____ fromage",
+        "translation": "(ser)",
+        "options": [
+          "Le",
+          "La",
+          "Les",
+          "L'"
+        ],
+        "correct": "Le",
+        "explanation": "'Fromage' (ser) jest męski - 'le fromage'. Ser to francuska duma narodowa - setki odmian. Kultura serowa jest bogata i złożona. Męski rodzajnik pasuje do tego solidnego produktu. Francuska kuchnia i język są nierozerwalnie związane - uczenie się słów to też odkrywanie smaków."
+      },
+      {
+        "id": "pf_a9",
+        "question": "_____ table",
+        "translation": "(stół)",
+        "options": [
+          "La",
+          "Le",
+          "Les",
+          "L'"
+        ],
+        "correct": "La",
+        "explanation": "'Table' (stół) jest żeńska - 'la table'. Stół to miejsce spotkań, posiłków, rozmów. We francuskim to żeński symbol jedności rodzinnej. Większość mebli ma przypisane rodzaje - każdy z własną historią. 'À table' to zaproszenie do jedzenia - piękne wyrażenie kulturowe."
+      },
+      {
+        "id": "pf_a10",
+        "question": "_____ café",
+        "translation": "(kawiarnia/kawa)",
+        "options": [
+          "Le",
+          "La",
+          "Les",
+          "L'"
+        ],
+        "correct": "Le",
+        "explanation": "'Café' może znaczyć kawiarnia lub kawa - oba męskie. 'Le café' to instytucja we Francji. Kawiarnie to miejsca spotkań, rozmów, obserwowania życia. Kawa jako napój to rytuał dzienny. Jedno słowo, wiele znaczeń - kontekst wyjaśnia wszystko. To elegancja francuskiego."
+      },
+      {
+        "id": "pf_a11",
+        "question": "_____ amis",
+        "translation": "(przyjaciele)",
+        "options": [
+          "Les",
+          "Le",
+          "La",
+          "L'"
+        ],
+        "correct": "Les",
+        "explanation": "'Amis' (przyjaciele) to liczba mnoga - 'les amis'. Przyjaźń jest cenna w każdej kulturze. 'Les' jednoczy wszystkie rodzaje w mnogiej. Przyjaciele to skarb - 'les amis' brzmi ciepło i serdecznie. Mnoga forma jest demokratyczna - nie ma różnicy rodzajowej."
+      },
+      {
+        "id": "pf_a12",
+        "question": "_____ ville",
+        "translation": "(miasto)",
+        "options": [
+          "La",
+          "Le",
+          "Les",
+          "L'"
+        ],
+        "correct": "La",
+        "explanation": "'Ville' (miasto) jest żeńska - 'la ville'. Miasta jako żeńskie to częste w językach romańskich. Może to sugerować piękno, życie, dynamikę. Każde miasto ma swoją duszę, swoją historię. 'La ville' to organizm żywy, pulsujący energią."
+      },
+      {
+        "id": "pf_a13",
+        "question": "_____ soleil",
+        "translation": "(słońce)",
+        "options": [
+          "Le",
+          "La",
+          "Les",
+          "L'"
+        ],
+        "correct": "Le",
+        "explanation": "'Soleil' (słońce) jest męski - 'le soleil'. Ciekawe, że w niemieckim jest żeńskie (die Sonne), we francuskim męskie. Każdy język personifikuje naturę inaczej. Słońce daje życie, światło, ciepło. 'Le soleil brille' (słońce świeci) to poetyckie wyrażenie."
+      },
+      {
+        "id": "pf_a14",
+        "question": "_____ fleur",
+        "translation": "(kwiat)",
+        "options": [
+          "La",
+          "Le",
+          "Les",
+          "L'"
+        ],
+        "correct": "La",
+        "explanation": "'Fleur' (kwiat) jest żeńska - 'la fleur'. Kwiaty jako żeńskie pasuje do ich delikatności i piękna. Francja słynie z ogrodów i kwiatów. 'La fleur' to symbol natury, wiosny, odnowy. Każdy rodzaj niesie ze sobą subtelne konotacje kulturowe."
+      },
+      {
+        "id": "pf_a15",
+        "question": "_____ école",
+        "translation": "(szkoła)",
+        "options": [
+          "L'",
+          "Le",
+          "La",
+          "Les"
+        ],
+        "correct": "L'",
+        "explanation": "'École' zaczyna się od samogłoski i jest żeńska - 'l'école'. Szkoła to miejsce nauki, rozwoju, przyjaźni. Francuskie szkoły mają swoje tradycje i charakterystyczny styl. Edukacja jest ceniona we francuskiej kulturze. 'L'école' to fundament społeczeństwa."
+      }
+    ]
+  },
+  {
+    "key": "passe_compose",
+    "name": "Passé Composé",
+    "description": "Czas przeszły złożony",
+    "iconName": "clock.arrow.circlepath",
+    "color": "#fbbf24",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pf_pc1",
+        "question": "J'_____ mangé.",
+        "translation": "(Zjadłem)",
+        "options": [
+          "ai",
+          "suis",
+          "a",
+          "es"
+        ],
+        "correct": "ai",
+        "explanation": "Passé Composé to francuski czas przeszły złożony - składa się z dwóch części, jak polski czas przeszły dokonany. Większość czasowników używa 'avoir' (mieć) jako pomocnika. 'J'ai mangé' = zjadłem. Strukturę można porównać do angielskiego 'have eaten'. 'Ai' to forma 'avoir' dla 'je'. Imiesłów 'mangé' pochodzi od 'manger'. To elegancka konstrukcja, która łączy przeszłość z teraźniejszością."
+      },
+      {
+        "id": "pf_pc2",
+        "question": "Tu _____ allé.",
+        "translation": "(Poszedłeś)",
+        "options": [
+          "es",
+          "as",
+          "suis",
+          "est"
+        ],
+        "correct": "es",
+        "explanation": "Czasowniki ruchu używają 'être' (być) zamiast 'avoir'. 'Tu es allé' = poszedłeś. To jak w polskim - czasem używamy 'być' z imiesłowem (jestem poszedł). Lista czasowników z 'être' to około 16 najczęstszych czasowników ruchu: aller, venir, partir, arriver, entrer, sortir, etc. Warto je zapamiętać - tworzą logiczną rodzinę."
+      },
+      {
+        "id": "pf_pc3",
+        "question": "Elle _____ venue.",
+        "translation": "(Ona przyszła)",
+        "options": [
+          "est",
+          "a",
+          "es",
+          "suis"
+        ],
+        "correct": "est",
+        "explanation": "'Venir' (przychodzić) używa 'être'. 'Elle est venue' = ona przyszła. Zauważ dodatkowe -e na końcu 'venue' - imiesłowy z 'être' zgadzają się z podmiotem w rodzaju i liczbie. To jak w polskim przymiotniki. Elle (ona) = żeński, więc +e. Ils (oni) = mnogi, więc +s. Ta zgoda jest piękną szczegółowością francuskiego."
+      },
+      {
+        "id": "pf_pc4",
+        "question": "Nous _____ parlé.",
+        "translation": "(Rozmawialiśmy)",
+        "options": [
+          "avons",
+          "sommes",
+          "ont",
+          "sont"
+        ],
+        "correct": "avons",
+        "explanation": "'Parler' używa 'avoir'. 'Nous avons parlé' = rozmawialiśmy. 'Avons' to forma 'avoir' dla 'nous'. Rozmowa to wymiana idei, serca komunikacji. Czasowniki mentalne i akcji zazwyczaj biorą 'avoir'. To logiczne - 'mieć' implikuje kontrolę nad akcją. Français est une langue de précision."
+      },
+      {
+        "id": "pf_pc5",
+        "question": "Vous _____ fini.",
+        "translation": "(Skończyliście)",
+        "options": [
+          "avez",
+          "êtes",
+          "ont",
+          "sont"
+        ],
+        "correct": "avez",
+        "explanation": "'Finir' (kończyć) używa 'avoir'. 'Vous avez fini' = skończyliście. Czasowniki na -ir często mają imiesłów na -i. 'Fini' brzmi definitywnie - zakończone, kompletne. To słowo używane jest też jako przymiotnik w 'c'est fini' (to koniec). Kończyć to ważny czasownik - oznacza zamknięcie rozdziału."
+      },
+      {
+        "id": "pf_pc6",
+        "question": "Ils _____ partis.",
+        "translation": "(Oni wyjechali)",
+        "options": [
+          "sont",
+          "ont",
+          "sommes",
+          "avons"
+        ],
+        "correct": "sont",
+        "explanation": "'Partir' (wyjeżdżać) używa 'être'. 'Ils sont partis' = oni wyjechali. Mnogi męski dodaje -s do imiesłowu: parti → partis. Wyjazd to ruch, zmiana miejsca - naturalne dla 'être'. Czasowniki ruchu i zmiany stanu preferują 'être'. To poetycka logika - 'być' dla stanów, 'mieć' dla akcji."
+      },
+      {
+        "id": "pf_pc7",
+        "question": "J'_____ resté.",
+        "translation": "(Zostałem)",
+        "options": [
+          "suis",
+          "ai",
+          "es",
+          "est"
+        ],
+        "correct": "suis",
+        "explanation": "'Rester' (zostawać) używa 'être'. 'Je suis resté' = zostałem. Choć nie ma ruchu, 'rester' jest stanem bycia gdzieś - stąd 'être'. To niuans francuski - nawet brak ruchu jest stanem. 'Resté' bez końcówki dla męskiego 'je'. Zostawanie to też rodzaj wyboru, decyzji."
+      },
+      {
+        "id": "pf_pc8",
+        "question": "Tu _____ vu le film.",
+        "translation": "(Zobaczyłeś film)",
+        "options": [
+          "as",
+          "es",
+          "a",
+          "suis"
+        ],
+        "correct": "as",
+        "explanation": "'Voir' (widzieć) używa 'avoir'. 'Tu as vu le film' = zobaczyłeś film. 'Vu' to nieregularny imiesłów od 'voir'. Czasowniki percepcji (voir, entendre) używają 'avoir' - doświadczenia zmysłowe jako posiadanie. Oglądanie filmu to uniwersalne doświadczenie kulturowe."
+      },
+      {
+        "id": "pf_pc9",
+        "question": "Elle _____ écrit.",
+        "translation": "(Ona napisała)",
+        "options": [
+          "a",
+          "est",
+          "as",
+          "suis"
+        ],
+        "correct": "a",
+        "explanation": "'Écrire' (pisać) używa 'avoir'. 'Elle a écrit' = ona napisała. 'Écrit' to imiesłów nieregularny. Pisanie to tworzenie, akcja umysłu i ręki. 'Avoir' dla wszystkich czasowników twórczych. Pióro jest potężniejsze niż miecz - 'écrire' to potężny czasownik."
+      },
+      {
+        "id": "pf_pc10",
+        "question": "Nous _____ arrivés.",
+        "translation": "(Przybyliśmy)",
+        "options": [
+          "sommes",
+          "avons",
+          "sont",
+          "ont"
+        ],
+        "correct": "sommes",
+        "explanation": "'Arriver' (przybywać) używa 'être'. 'Nous sommes arrivés' = przybyliśmy. Mnogi dodaje -s: arrivé → arrivés. Przybycie to zmiana stanu - byłeś tam, teraz jesteś tu. 'Être' dla tych transformacji. Przybywanie niesie ze sobą nowe możliwości, nowe początki."
+      },
+      {
+        "id": "pf_pc11",
+        "question": "Vous _____ compris.",
+        "translation": "(Zrozumieliście)",
+        "options": [
+          "avez",
+          "êtes",
+          "ont",
+          "sont"
+        ],
+        "correct": "avez",
+        "explanation": "'Comprendre' (rozumieć) używa 'avoir'. 'Vous avez compris' = zrozumieliście. Zrozumienie to mentalne 'posiadanie' wiedzy - stąd 'avoir'. 'Compris' to uczucie triumfu - światło w tunelu. Rozumienie języka to proces piękny i satysfakcjonujący."
+      },
+      {
+        "id": "pf_pc12",
+        "question": "Ils _____ pris le train.",
+        "translation": "(Oni wzięli pociąg)",
+        "options": [
+          "ont",
+          "sont",
+          "avons",
+          "sommes"
+        ],
+        "correct": "ont",
+        "explanation": "'Prendre' (brać) używa 'avoir'. 'Ils ont pris le train' = oni wzięli pociąg. 'Pris' to nieregularny imiesłów. Branie pociągu to pospolite, ale ważne doświadczenie podróży. Transport łączy ludzi, miejsca, kultury. 'Prendre' jest wszechstronny - używany w setkach wyrażeń."
+      },
+      {
+        "id": "pf_pc13",
+        "question": "J'_____ né en Pologne.",
+        "translation": "(Urodziłem się w Polsce)",
+        "options": [
+          "suis",
+          "ai",
+          "es",
+          "est"
+        ],
+        "correct": "suis",
+        "explanation": "'Naître' (rodzić się) używa 'être'. 'Je suis né en Pologne' = urodziłem się w Polsce. Narodziny to ostateczna zmiana stanu - z niebytu do bycia. Stąd 'être'. To piękna filozofia ukryta w gramatyce. Miejsce urodzenia to część tożsamości, korzeni."
+      },
+      {
+        "id": "pf_pc14",
+        "question": "Tu _____ fait tes devoirs.",
+        "translation": "(Zrobiłeś zadania)",
+        "options": [
+          "as",
+          "es",
+          "a",
+          "suis"
+        ],
+        "correct": "as",
+        "explanation": "'Faire' (robić) używa 'avoir'. 'Tu as fait tes devoirs' = zrobiłeś zadania. 'Fait' to imiesłów od 'faire' - jeden z najczęstszych czasowników. Robienie zadań to obowiązek, ale też droga do wiedzy. 'Faire' jest jak 'robić' w polskim - uniwersalny i wszechstronny."
+      },
+      {
+        "id": "pf_pc15",
+        "question": "Elle _____ morte.",
+        "translation": "(Ona umarła)",
+        "options": [
+          "est",
+          "a",
+          "es",
+          "suis"
+        ],
+        "correct": "est",
+        "explanation": "'Mourir' (umierać) używa 'être'. 'Elle est morte' = ona umarła. Dodatkowe -e dla żeńskiego: mort → morte. Śmierć to ostateczna zmiana stanu - koniec bycia. 'Être' jest głęboko właściwe. To delikatny temat, ale ważny czasownik. Życie i śmierć to część egzystencji."
+      }
+    ]
+  },
+  {
+    "key": "pronouns",
+    "name": "Pronoms personnels",
+    "description": "Zaimki osobowe",
+    "iconName": "person.2",
+    "color": "#4ade80",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pf_pr1",
+        "question": "_____ parle français.",
+        "translation": "(Ja mówię po francusku)",
+        "options": [
+          "Je",
+          "Tu",
+          "Il",
+          "Nous"
+        ],
+        "correct": "Je",
+        "explanation": "'Je' to zaimek pierwszej osoby - 'ja'. W zdaniu 'Je parle français', 'je' jest podmiotem. Przed samogłoskami 'je' zmienia się w j': j'habite, j'aime. Ta elizja sprawia, że francuski płynie melodyjnie. Zaimki podmiotowe są podstawą każdego zdania - fundamentem konstrukcji językowej."
+      },
+      {
+        "id": "pf_pr2",
+        "question": "_____ aimes le chocolat.",
+        "translation": "(Ty lubisz czekoladę)",
+        "options": [
+          "Tu",
+          "Je",
+          "Il",
+          "Vous"
+        ],
+        "correct": "Tu",
+        "explanation": "'Tu' to forma nieformalna dla 'ty'. Używana z rodziną, przyjaciółmi, dziećmi, zwierzętami. 'Tu aimes le chocolat' = ty lubisz czekoladę. Wybór między 'tu' i 'vous' niesie ze sobą ważne znaczenie społeczne. 'Tu' tworzy bliskość, ciepło, zaufanie. To piękna subtelność języka."
+      },
+      {
+        "id": "pf_pr3",
+        "question": "_____ est content.",
+        "translation": "(On jest zadowolony)",
+        "options": [
+          "Il",
+          "Je",
+          "Tu",
+          "Nous"
+        ],
+        "correct": "Il",
+        "explanation": "'Il' to 'on' (męski). 'Il est content' = on jest zadowolony. Używane dla osób męskich i rzeczy męskich. Francuski przypisuje rodzaj wszystkiemu - stołom, książkom, pomysłom. 'Il' reprezentuje cały świat męskich rzeczowników. To część logiki językowej."
+      },
+      {
+        "id": "pf_pr4",
+        "question": "_____ habite à Paris.",
+        "translation": "(Ona mieszka w Paryżu)",
+        "options": [
+          "Elle",
+          "Il",
+          "Nous",
+          "Vous"
+        ],
+        "correct": "Elle",
+        "explanation": "'Elle' to 'ona' (żeński). 'Elle habite à Paris' = ona mieszka w Paryżu. Dla osób żeńskich i rzeczy żeńskich. Paryż jako miejsce zamieszkania brzmi romantycznie. 'Elle' ma miękkość w brzmieniu - langue et mélodie. Każdy zaimek ma swoją muzyczność."
+      },
+      {
+        "id": "pf_pr5",
+        "question": "_____ mangeons ensemble.",
+        "translation": "(My jemy razem)",
+        "options": [
+          "Nous",
+          "Je",
+          "Vous",
+          "Ils"
+        ],
+        "correct": "Nous",
+        "explanation": "'Nous' to 'my' - pierwsza osoba mnoga. 'Nous mangeons ensemble' = my jemy razem. Wspólne posiłki to ważny element kultury francuskiej. 'Nous' tworzy wspólnotę, łączy ludzi. Jest w tym sile i przynależności. Jedzenie razem buduje więzi."
+      },
+      {
+        "id": "pf_pr6",
+        "question": "_____ êtes gentils.",
+        "translation": "(Wy jesteście mili)",
+        "options": [
+          "Vous",
+          "Nous",
+          "Ils",
+          "Tu"
+        ],
+        "correct": "Vous",
+        "explanation": "'Vous' może być 'wy' (mnogi) lub grzecznościowe 'Pan/Pani'. 'Vous êtes gentils' = wy jesteście mili. 'Vous' jako forma szacunku jest bardzo francuska. Tworzy dystans społeczny, ale też szacunek. Przejście z 'vous' do 'tu' (tutoiement) to ważny moment w relacji."
+      },
+      {
+        "id": "pf_pr7",
+        "question": "_____ parlent français.",
+        "translation": "(Oni mówią po francusku)",
+        "options": [
+          "Ils",
+          "Elles",
+          "Nous",
+          "Vous"
+        ],
+        "correct": "Ils",
+        "explanation": "'Ils' to 'oni' - trzecia osoba mnoga męska lub mieszana. 'Ils parlent français' = oni mówią po francusku. Jeśli grupa ma choć jednego mężczyznę, używamy 'ils'. To gramatyczna zasada, choć współcześnie dyskutowana. 'Ils' dominuje liczebnie w użyciu."
+      },
+      {
+        "id": "pf_pr8",
+        "question": "_____ sont belles.",
+        "translation": "(One są piękne)",
+        "options": [
+          "Elles",
+          "Ils",
+          "Nous",
+          "Vous"
+        ],
+        "correct": "Elles",
+        "explanation": "'Elles' to 'one' - trzecia osoba mnoga wyłącznie żeńska. 'Elles sont belles' = one są piękne. Używane tylko gdy wszystkie osoby/rzeczy są żeńskie. 'Elles' ma płynność i elegancję w brzmieniu. Piękno jest wszędzie - w językach, w słowach, w dźwiękach."
+      },
+      {
+        "id": "pf_pr9",
+        "question": "_____ adore la musique.",
+        "translation": "(Ja uwielbiam muzykę)",
+        "options": [
+          "J'",
+          "Tu",
+          "Il",
+          "Nous"
+        ],
+        "correct": "J'",
+        "explanation": "'J'' to skrócone 'je' przed samogłoskami. 'J'adore la musique' = ja uwielbiam muzykę. Muzyka jest uniwersalnym językiem. Ta elizja (j' zamiast je) pokazuje elegancję francuskiego - unikanie awkwardnych dźwięków. Płynność wymowy jest priorytetem."
+      },
+      {
+        "id": "pf_pr10",
+        "question": "_____ on y va.",
+        "translation": "(Więc idziemy)",
+        "options": [
+          "Alors",
+          "Je",
+          "Tu",
+          "Il"
+        ],
+        "correct": "Alors",
+        "explanation": "To pytanie o słowo łączące, nie zaimek - 'alors' (więc, zatem). 'Alors on y va' = więc idziemy. 'On' jest specjalnym zaimkiem - nieformalnym 'my'. Bardzo częsty w mowie. 'On y va' to typowe wyrażenie codzienne - propozycja działania. Francuskość w pigułce."
+      },
+      {
+        "id": "pf_pr11",
+        "question": "_____ travailles beaucoup.",
+        "translation": "(Ty pracujesz dużo)",
+        "options": [
+          "Tu",
+          "Vous",
+          "Il",
+          "Je"
+        ],
+        "correct": "Tu",
+        "explanation": "'Tu travailles beaucoup' = ty pracujesz dużo. 'Tu' dla bliskich osób. Praca jest ważna, ale równowaga też. 'Beaucoup' (dużo) to słowo częste - intensyfikator. Francuski ceni umiar, ale też docenia ciężką pracę. L'équilibre est important."
+      },
+      {
+        "id": "pf_pr12",
+        "question": "_____ comprend bien.",
+        "translation": "(On dobrze rozumie)",
+        "options": [
+          "Il",
+          "Je",
+          "Tu",
+          "Nous"
+        ],
+        "correct": "Il",
+        "explanation": "'Il comprend bien' = on dobrze rozumie. 'Il' dla osoby męskiej lub rzeczy. Rozumienie to fundament komunikacji. 'Bien' (dobrze) dodaje pozytywnej nuty. Dobra komunikacja tworzy mosty między ludźmi i kulturami."
+      },
+      {
+        "id": "pf_pr13",
+        "question": "_____ chantons une chanson.",
+        "translation": "(Śpiewamy piosenkę)",
+        "options": [
+          "Nous",
+          "Vous",
+          "Ils",
+          "Je"
+        ],
+        "correct": "Nous",
+        "explanation": "'Nous chantons une chanson' = śpiewamy piosenkę. Śpiewanie łączy ludzi - radość wspólnego wyrazu. 'Chanson' to piękne słowo - muzyka i słowa razem. Francuskie chanson to gatunek muzyczny z długą tradycją. Kultura w każdym słowie."
+      },
+      {
+        "id": "pf_pr14",
+        "question": "_____ lisez un livre.",
+        "translation": "(Czytacie książkę)",
+        "options": [
+          "Vous",
+          "Nous",
+          "Ils",
+          "Tu"
+        ],
+        "correct": "Vous",
+        "explanation": "'Vous lisez un livre' = czytacie książkę. Czytanie otwiera światy - wyobraźni, wiedzy, empatii. 'Vous' może być mnogi lub grzecznościowy. Książki są uniwersalnym skarbem. Literatura francuska jest bogata - od Molière do Camus."
+      },
+      {
+        "id": "pf_pr15",
+        "question": "_____ attendent le bus.",
+        "translation": "(Czekają na autobus)",
+        "options": [
+          "Ils",
+          "Il",
+          "Nous",
+          "Vous"
+        ],
+        "correct": "Ils",
+        "explanation": "'Ils attendent le bus' = czekają na autobus. Czekanie to część życia - moment refleksji, cierpliwości. Transport publiczny łączy społeczeństwo. 'Attendre' (czekać) to czasownik codzienności. Proste chwile mają swoją poetyczność."
+      }
+    ]
+  },
+  {
+    "key": "futur_simple",
+    "name": "Futur Simple",
+    "description": "Czas przyszły prosty",
+    "iconName": "bolt",
+    "color": "#c084fc",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pf_f1",
+        "question": "Je _____ demain.",
+        "translation": "(Zadzwonię jutro)",
+        "options": [
+          "appellerai",
+          "appelle",
+          "appeler",
+          "appelé"
+        ],
+        "correct": "appellerai",
+        "explanation": "Futur Simple to elegancki czas przyszły francuski. Tworzy się dodając końcówki do bezokolicznika: je -ai, tu -as, il -a, nous -ons, vous -ez, ils -ont. 'J'appellerai demain' = zadzwonię jutro. Końcówki pochodzą od czasownika 'avoir' - ciekawostka historyczna. Ten czas wyraża przyszłość pewną, obietnicę, przewidywanie. Prostota i elegancja w jednym."
+      },
+      {
+        "id": "pf_f2",
+        "question": "Tu _____ en France.",
+        "translation": "(Pojedziesz do Francji)",
+        "options": [
+          "iras",
+          "vas",
+          "aller",
+          "allé"
+        ],
+        "correct": "iras",
+        "explanation": "'Aller' ma nieregularny temat w przyszłości: ir-. 'Tu iras en France' = pojedziesz do Francji. Dodaj końcówki do 'ir': irai, iras, ira, irons, irez, iront. Francja jako cel podróży to marzenie wielu. Przyszłość niesie ze sobą możliwości, plany, nadzieje. Nieregularne czasowniki warto zapamiętać osobno."
+      },
+      {
+        "id": "pf_f3",
+        "question": "Elle _____ un livre.",
+        "translation": "(Przeczyta książkę)",
+        "options": [
+          "lira",
+          "lit",
+          "lire",
+          "lu"
+        ],
+        "correct": "lira",
+        "explanation": "'Lire' ma temat li- w przyszłości. 'Elle lira un livre' = przeczyta książkę. Czasowniki na -re tracą końcowe -e przed dodaniem końcówek: lire → lir- + końcówka. Czytanie w przyszłości to obietnica wiedzy i przyjemności. Literatura otwiera nowe horyzonty."
+      },
+      {
+        "id": "pf_f4",
+        "question": "Nous _____ ensemble.",
+        "translation": "(Będziemy pracować razem)",
+        "options": [
+          "travaillerons",
+          "travaillons",
+          "travailler",
+          "travaillé"
+        ],
+        "correct": "travaillerons",
+        "explanation": "'Travailler' + -ons dla 'nous'. 'Nous travaillerons ensemble' = będziemy pracować razem. Czasowniki na -er są regularne w przyszłości - bezokolicznik + końcówka. Praca zespołowa to piękna współpraca, synergia talentów. 'Ensemble' (razem) dodaje wymiaru ludzkiego."
+      },
+      {
+        "id": "pf_f5",
+        "question": "Vous _____ bientôt.",
+        "translation": "(Przyjdziecie wkrótce)",
+        "options": [
+          "viendrez",
+          "venez",
+          "venir",
+          "venu"
+        ],
+        "correct": "viendrez",
+        "explanation": "'Venir' jest nieregularny: viendr-. 'Vous viendrez bientôt' = przyjdziecie wkrótce. 'Bientôt' (wkrótce) dodaje poczucia bliskości przyszłości. Przyjście kogoś to zawsze radość - spotkanie, połączenie. Nieregularnych czasowników jest kilkanaście - warto je znać."
+      },
+      {
+        "id": "pf_f6",
+        "question": "Ils _____ leurs devoirs.",
+        "translation": "(Zrobią swoje zadania)",
+        "options": [
+          "feront",
+          "font",
+          "faire",
+          "fait"
+        ],
+        "correct": "feront",
+        "explanation": "'Faire' ma nieregularny temat fer-. 'Ils feront leurs devoirs' = zrobią swoje zadania. 'Faire' to jeden z najczęstszych czasowników - używany w setkach wyrażeń. Odrabianie lekcji to droga do wiedzy. Przyszłość wymaga przygotowania w teraźniejszości."
+      },
+      {
+        "id": "pf_f7",
+        "question": "Je _____ médecin.",
+        "translation": "(Będę lekarzem)",
+        "options": [
+          "serai",
+          "suis",
+          "être",
+          "été"
+        ],
+        "correct": "serai",
+        "explanation": "'Être' ma temat ser- w przyszłości. 'Je serai médecin' = będę lekarzem. Profesja w przyszłości to aspiracja, marzenie. 'Être' jako najważniejszy czasownik ma swoje specjalne formy. Bycie kimś to proces stawania się - transformacja."
+      },
+      {
+        "id": "pf_f8",
+        "question": "Tu _____ raison.",
+        "translation": "(Będziesz mieć rację)",
+        "options": [
+          "auras",
+          "as",
+          "avoir",
+          "eu"
+        ],
+        "correct": "auras",
+        "explanation": "'Avoir' ma temat aur- w przyszłości. 'Tu auras raison' = będziesz mieć rację. Przyszłe potwierdzenie prawdy. 'Avoir raison' (mieć rację) to typowe francuskie wyrażenie. Czas pokaże, kto miał rację - la patience est une vertu."
+      },
+      {
+        "id": "pf_f9",
+        "question": "Elle _____ demain.",
+        "translation": "(Przyjdzie jutro)",
+        "options": [
+          "viendra",
+          "vient",
+          "venir",
+          "venu"
+        ],
+        "correct": "viendra",
+        "explanation": "'Venir' dla trzeciej osoby: viendra. 'Elle viendra demain' = przyjdzie jutro. 'Demain' (jutro) to obietnica nowego dnia. Przychodzenie to ruch ku czemuś, ku komuś. Język wyraża relacje przestrzenne z subtelnością."
+      },
+      {
+        "id": "pf_f10",
+        "question": "Nous _____ contents.",
+        "translation": "(Będziemy szczęśliwi)",
+        "options": [
+          "serons",
+          "sommes",
+          "être",
+          "été"
+        ],
+        "correct": "serons",
+        "explanation": "'Être' dla 'nous': serons. 'Nous serons contents' = będziemy szczęśliwi. Szczęście w przyszłości to optymizm, nadzieja. 'Content' (szczęśliwy, zadowolony) to przyjemne słowo. Pozytywne nastawienie do przyszłości buduje lepsze jutro."
+      },
+      {
+        "id": "pf_f11",
+        "question": "Vous _____ du français.",
+        "translation": "(Będziecie mówić po francusku)",
+        "options": [
+          "parlerez",
+          "parlez",
+          "parler",
+          "parlé"
+        ],
+        "correct": "parlerez",
+        "explanation": "'Parler' + -ez dla 'vous'. 'Vous parlerez du français' = będziecie mówić po francusku. To piękna wizja - opanowanie języka w przyszłości. Nauka języków to inwestycja w siebie. 'Parler' otwiera drzwi do nowych kultur i ludzi."
+      },
+      {
+        "id": "pf_f12",
+        "question": "Ils _____ tard.",
+        "translation": "(Przyjdą późno)",
+        "options": [
+          "arriveront",
+          "arrivent",
+          "arriver",
+          "arrivé"
+        ],
+        "correct": "arriveront",
+        "explanation": "'Arriver' + -ont dla 'ils'. 'Ils arriveront tard' = przyjdą późno. 'Tard' (późno) to kwestia relatywna. Przybywanie w przyszłości to pewność planu. Punktualność jest różnie ceniona w różnych kulturach - czasem elastyczność jest cnotą."
+      },
+      {
+        "id": "pf_f13",
+        "question": "Je _____ la vérité.",
+        "translation": "(Powiem prawdę)",
+        "options": [
+          "dirai",
+          "dis",
+          "dire",
+          "dit"
+        ],
+        "correct": "dirai",
+        "explanation": "'Dire' (powiedzieć) ma temat dir- w przyszłości. 'Je dirai la vérité' = powiem prawdę. Prawda jest fundamentem zaufania. 'La vérité' (prawda) to potężne słowo. Obietnica szczerości w przyszłości buduje uczciwość."
+      },
+      {
+        "id": "pf_f14",
+        "question": "Tu _____ ton ami.",
+        "translation": "(Zobaczysz swojego przyjaciela)",
+        "options": [
+          "verras",
+          "vois",
+          "voir",
+          "vu"
+        ],
+        "correct": "verras",
+        "explanation": "'Voir' ma temat verr- w przyszłości. 'Tu verras ton ami' = zobaczysz swojego przyjaciela. Spotkanie z przyjacielem to radość. Widzenie w przyszłości to antycypacja, oczekiwanie. Przyjaźń jest skarbem w każdej kulturze."
+      },
+      {
+        "id": "pf_f15",
+        "question": "Elle _____ beaucoup.",
+        "translation": "(Będzie uczyć się dużo)",
+        "options": [
+          "apprendra",
+          "apprend",
+          "apprendre",
+          "appris"
+        ],
+        "correct": "apprendra",
+        "explanation": "'Apprendre' dla trzeciej osoby: apprendra. 'Elle apprendra beaucoup' = będzie uczyć się dużo. Nauka to inwestycja w przyszłość. 'Beaucoup' (dużo) pokazuje determinację. Wiedza to klucz do możliwości i wolności."
+      }
+    ]
+  },
+  {
+    "key": "questions",
+    "name": "Questions",
+    "description": "Pytania w języku francuskim",
+    "iconName": "questionmark.circle",
+    "color": "#fb923c",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pf_q1",
+        "question": "_____ parles-tu?",
+        "translation": "(Co mówisz?)",
+        "options": [
+          "Que",
+          "Qui",
+          "Où",
+          "Quand"
+        ],
+        "correct": "Que",
+        "explanation": "Pytania we francuskim można tworzyć na trzy sposoby: intonacją, z 'est-ce que', lub inwersją. 'Que parles-tu?' (formalnie: Que dis-tu?) = Co mówisz? 'Que' to 'co'. Inwersja (czasownik-podmiot) brzmi elegancko. W codziennej mowie częściej 'tu dis quoi?' lub 'qu'est-ce que tu dis?'. Formalność zależy od kontekstu."
+      },
+      {
+        "id": "pf_q2",
+        "question": "_____ habites-tu?",
+        "translation": "(Gdzie mieszkasz?)",
+        "options": [
+          "Où",
+          "Que",
+          "Qui",
+          "Quand"
+        ],
+        "correct": "Où",
+        "explanation": "'Où' (gdzie) pyta o miejsce. 'Où habites-tu?' = Gdzie mieszkasz? Inwersja tu-habites → habites-tu. To klasyczna forma pytania francuskiego. Miejsce zamieszkania to część tożsamości. 'Où' otwiera geograficzne rozmowy."
+      },
+      {
+        "id": "pf_q3",
+        "question": "_____ est ton nom?",
+        "translation": "(Jakie jest twoje imię?)",
+        "options": [
+          "Quel",
+          "Qui",
+          "Que",
+          "Où"
+        ],
+        "correct": "Quel",
+        "explanation": "'Quel' (jaki/jaka/jakie) zgadza się z rzeczownikiem w rodzaju i liczbie. 'Quel est ton nom?' = Jakie jest twoje imię? 'Quel' ma formy: quel (męski), quelle (żeński), quels (mnogi męski), quelles (mnogi żeński). Imię to nasza pierwsza identyfikacja - ważne pytanie."
+      },
+      {
+        "id": "pf_q4",
+        "question": "_____ vient avec nous?",
+        "translation": "(Kto przychodzi z nami?)",
+        "options": [
+          "Qui",
+          "Que",
+          "Où",
+          "Quand"
+        ],
+        "correct": "Qui",
+        "explanation": "'Qui' (kto) pyta o osoby. 'Qui vient avec nous?' = Kto przychodzi z nami? 'Qui' jako podmiot nie wymaga inwersji. To prostsze niż z innymi słowami pytającymi. Zaproszenie kogoś to budowanie wspólnoty."
+      },
+      {
+        "id": "pf_q5",
+        "question": "_____ arrives-tu?",
+        "translation": "(Kiedy przyjedziesz?)",
+        "options": [
+          "Quand",
+          "Où",
+          "Qui",
+          "Que"
+        ],
+        "correct": "Quand",
+        "explanation": "'Quand' (kiedy) pyta o czas. 'Quand arrives-tu?' = Kiedy przyjedziesz? Czas przybycia to praktyczna informacja. 'Quand' organizuje nasze życie w timeline. Punktualność i planowanie są kulturowo ważne."
+      },
+      {
+        "id": "pf_q6",
+        "question": "_____ tu aimes le chocolat?",
+        "translation": "(Czy lubisz czekoladę?)",
+        "options": [
+          "Est-ce que",
+          "Qui",
+          "Où",
+          "Que"
+        ],
+        "correct": "Est-ce que",
+        "explanation": "'Est-ce que' to uniwersalny sposób tworzenia pytań - dodaj na początku zdania. 'Est-ce que tu aimes le chocolat?' = Czy lubisz czekoladę? Nie wymaga inwersji - prosty i popularny w mowie. 'Est-ce que' to jak polski 'czy'. Czekolada to uniwersalne uczucie."
+      },
+      {
+        "id": "pf_q7",
+        "question": "_____ fait-il?",
+        "translation": "(Co on robi?)",
+        "options": [
+          "Que",
+          "Qui",
+          "Où",
+          "Quand"
+        ],
+        "correct": "Que",
+        "explanation": "'Que fait-il?' = Co on robi? Inwersja il-fait → fait-il. Dodajemy -t- między samogłoskami dla eufonii: fait-il, a-t-il, va-t-elle. To detale, które czynią francuski muzycznym. Ciekawość o czyjeś działania to naturalny element komunikacji."
+      },
+      {
+        "id": "pf_q8",
+        "question": "_____ est-ce?",
+        "translation": "(Co to jest?)",
+        "options": [
+          "Qu'",
+          "Qui",
+          "Où",
+          "Quand"
+        ],
+        "correct": "Qu'",
+        "explanation": "'Qu'est-ce?' = Co to? 'Que' skraca się do 'qu'' przed 'est-ce'. Pełna forma: 'Qu'est-ce que c'est?'. To podstawowe pytanie identyfikacji. Poznawanie nazw rzeczy to fundament uczenia się języka."
+      },
+      {
+        "id": "pf_q9",
+        "question": "_____ temps fait-il?",
+        "translation": "(Jaka jest pogoda?)",
+        "options": [
+          "Quel",
+          "Qui",
+          "Où",
+          "Que"
+        ],
+        "correct": "Quel",
+        "explanation": "'Quel temps fait-il?' = Jaka jest pogoda? (dosłownie: jaką pogodę robi?). 'Temps' jest męski, więc 'quel'. Pogoda to uniwersalny temat rozmów - bezpieczny starter konwersacji. Każda kultura ma swoje pogodowe obsesje."
+      },
+      {
+        "id": "pf_q10",
+        "question": "_____ veux-tu manger?",
+        "translation": "(Co chcesz zjeść?)",
+        "options": [
+          "Que",
+          "Qui",
+          "Où",
+          "Quand"
+        ],
+        "correct": "Que",
+        "explanation": "'Que veux-tu manger?' = Co chcesz zjeść? Inwersja tu-veux → veux-tu. Pytanie o preferencje żywieniowe to codzienna interakcja. Jedzenie łączy ludzi - wybory kulinarne mówią o nas wiele. Francuski jest językiem gastronomii."
+      },
+      {
+        "id": "pf_q11",
+        "question": "_____ avez-vous?",
+        "translation": "(Ile macie?)",
+        "options": [
+          "Combien",
+          "Où",
+          "Qui",
+          "Que"
+        ],
+        "correct": "Combien",
+        "explanation": "'Combien' (ile/jak dużo) pyta o ilość. 'Combien avez-vous?' = Ile macie? Może być o pieniądzach, czasie, rzeczach. 'Combien' z 'de': combien de temps (ile czasu), combien d'argent (ile pieniędzy). Ilości są ważne w praktycznym życiu."
+      },
+      {
+        "id": "pf_q12",
+        "question": "_____ habitez-vous?",
+        "translation": "(Gdzie mieszkacie?)",
+        "options": [
+          "Où",
+          "Que",
+          "Qui",
+          "Quand"
+        ],
+        "correct": "Où",
+        "explanation": "'Où habitez-vous?' = Gdzie mieszkacie? Formalna inwersja. W nieformalnej mowie: 'Vous habitez où?' - prostsze. Pytanie o miejsce zamieszkania to grzeczny sposób poznania kogoś. Geografia łączy i dzieli ludzi."
+      },
+      {
+        "id": "pf_q13",
+        "question": "_____ est ton anniversaire?",
+        "translation": "(Kiedy są twoje urodziny?)",
+        "options": [
+          "Quand",
+          "Où",
+          "Qui",
+          "Que"
+        ],
+        "correct": "Quand",
+        "explanation": "'Quand est ton anniversaire?' = Kiedy są twoje urodziny? Urodziny to osobiste święto - celebracja życia. 'Anniversaire' to piękne słowo francuskie. Pamiętanie urodzin pokazuje troskę o drugą osobę."
+      },
+      {
+        "id": "pf_q14",
+        "question": "_____ tu t'appelles?",
+        "translation": "(Jak się nazywasz?)",
+        "options": [
+          "Comment",
+          "Qui",
+          "Où",
+          "Que"
+        ],
+        "correct": "Comment",
+        "explanation": "'Comment' (jak) pyta o sposób. 'Comment tu t'appelles?' = Jak się nazywasz? (dosłownie: jak się nazywasz?). To pierwsze pytanie w znajomości. 'S'appeler' (nazywać się) to czasownik zwrotny. Imiona tworzą więź personalną."
+      },
+      {
+        "id": "pf_q15",
+        "question": "_____ ça va?",
+        "translation": "(Jak się masz?)",
+        "options": [
+          "Comment",
+          "Qui",
+          "Où",
+          "Que"
+        ],
+        "correct": "Comment",
+        "explanation": "'Comment ça va?' = Jak się masz? Najpopularniejsze pytanie francuskie. 'Ça va' to nieformalne 'to idzie'. Odpowiedź: 'Ça va bien' (dobrze) lub po prostu 'Ça va'. To rytuał społeczny - pokazanie troski o samopoczucie drugiej osoby."
+      }
+    ]
+  }
+]

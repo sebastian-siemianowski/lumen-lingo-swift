@@ -294,26 +294,35 @@ struct GrammarView: View {
     }
 
     /// Renders the question with the correct answer highlighted in glowing green
-    /// instead of plain brackets.
+    /// instead of plain brackets. Handles multiple blanks and various separators.
     @ViewBuilder
     private func filledQuestionText(_ question: GrammarQuestion) -> some View {
         let correct = question.correctAnswer
         let text = question.question
-        let placeholder = text.contains("___") ? "___" : (text.contains("...") ? "..." : nil)
 
-        if let placeholder, let range = text.range(of: placeholder) {
-            let before = String(text[text.startIndex..<range.lowerBound])
-            let after = String(text[range.upperBound..<text.endIndex])
+        // Split the question on any run of underscores (3+)
+        let segments = Self.splitOnBlanks(text)
+        let blankCount = segments.count - 1
 
-            (Text(before)
-                .font(.title3.bold())
-                .foregroundColor(.white)
-            + Text(correct)
-                .font(.title3.bold())
-                .foregroundColor(Color(hex: "#10b981"))
-            + Text(after)
-                .font(.title3.bold())
-                .foregroundColor(.white))
+        if blankCount > 0 {
+            // Determine answer parts for each blank
+            let answerParts = Self.splitAnswer(correct, into: blankCount)
+
+            // Build attributed text: segment0 + answer0 + segment1 + answer1 + ...
+            let composed = segments.enumerated().reduce(Text("")) { result, pair in
+                let (i, segment) = pair
+                var built = result + Text(segment)
+                    .font(.title3.bold())
+                    .foregroundColor(.white)
+                if i < answerParts.count {
+                    built = built + Text(answerParts[i])
+                        .font(.title3.bold())
+                        .foregroundColor(Color(hex: "#10b981"))
+                }
+                return built
+            }
+
+            composed
                 .multilineTextAlignment(.center)
                 .shadow(color: Color(hex: "#10b981").opacity(0.4), radius: 8)
         } else {
@@ -322,6 +331,47 @@ struct GrammarView: View {
                 .foregroundStyle(.white)
                 .multilineTextAlignment(.center)
         }
+    }
+
+    /// Splits `text` on runs of underscores (3+).
+    private static func splitOnBlanks(_ text: String) -> [String] {
+        let pattern = try? NSRegularExpression(pattern: "_{3,}")
+        guard let pattern else { return [text] }
+        let nsText = text as NSString
+        let matches = pattern.matches(in: text, range: NSRange(location: 0, length: nsText.length))
+        guard !matches.isEmpty else { return [text] }
+
+        var segments: [String] = []
+        var lastEnd = 0
+        for match in matches {
+            let start = match.range.location
+            segments.append(nsText.substring(with: NSRange(location: lastEnd, length: start - lastEnd)))
+            lastEnd = start + match.range.length
+        }
+        segments.append(nsText.substring(from: lastEnd))
+        return segments
+    }
+
+    /// Splits an answer string into parts to fill multiple blanks.
+    /// Tries " / " separator, then "..." separator, then fills all blanks
+    /// with the full answer.
+    private static func splitAnswer(_ answer: String, into count: Int) -> [String] {
+        guard count > 1 else { return [answer] }
+
+        // Try " / " separator (e.g. "tengo / llamaré")
+        let slashParts = answer.components(separatedBy: " / ")
+        if slashParts.count == count { return slashParts }
+
+        // Try "..." separator (e.g. "ne...pas")
+        let dotParts = answer.components(separatedBy: "...")
+        if dotParts.count == count { return dotParts }
+
+        // Try ", " separator
+        let commaParts = answer.components(separatedBy: ", ")
+        if commaParts.count == count { return commaParts }
+
+        // Fallback: put full answer in first blank, empty for rest
+        return [answer] + Array(repeating: "", count: count - 1)
     }
 
     // MARK: - Answer Grid

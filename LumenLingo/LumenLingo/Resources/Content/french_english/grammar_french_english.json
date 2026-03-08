@@ -1,0 +1,1232 @@
+[
+  {
+    "key": "present_simple",
+    "name": "Present Simple",
+    "description": "Le présent simple en anglais",
+    "iconName": "clock",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "fe_ps1",
+        "question": "I _____ English.",
+        "translation": "(Je parle anglais)",
+        "options": [
+          "speak",
+          "speaks",
+          "speaking",
+          "am speaking"
+        ],
+        "correct": "speak",
+        "explanation": "Bienvenue dans le monde des verbes anglais. Avec 'I' (je), on utilise la forme de base sans ajout. 'I speak' = je parle. C'est beaucoup plus simple qu'en français. En français on a 'je parle, tu parles, il parle' avec des terminaisons différentes, mais en anglais c'est presque pareil partout. Seulement he/she/it prend un -S. Le Present Simple est pour les habitudes, les faits, les vérités générales. 'Every day' (chaque jour) indique une routine, donc Present Simple."
+      },
+      {
+        "id": "fe_ps2",
+        "question": "She _____ in London.",
+        "translation": "(Elle habite à Londres)",
+        "options": [
+          "lives",
+          "live",
+          "living",
+          "is living"
+        ],
+        "correct": "lives",
+        "explanation": "Avec he/she/it, on DOIT ajouter -S. 'She lives' = elle habite. C'est la règle d'or du Present Simple : I/you/we/they utilisent la forme de base, mais he/she/it prend -S. C'est l'unique terminaison en anglais - beaucoup plus simple que les six formes françaises. Si le verbe finit par -s, -sh, -ch, -x, -o, on ajoute -ES : goes, washes. Londres est magnifique - 'she lives in London' évoque culture et histoire."
+      },
+      {
+        "id": "fe_ps3",
+        "question": "They _____ football.",
+        "translation": "(Ils jouent au football)",
+        "options": [
+          "play",
+          "plays",
+          "playing",
+          "are playing"
+        ],
+        "correct": "play",
+        "explanation": "Avec 'they', forme de base sans -S. 'They play' = ils jouent. En français, le pluriel 'ils jouent' a sa propre terminaison (-ent), mais en anglais le pluriel ressemble au singulier (I, you, we, they - tous identiques). Cela simplifie énormément. Le Present Simple décrit les habitudes : 'they play football' suggère qu'ils jouent régulièrement, pas juste maintenant. C'est leur routine, leur passion."
+      },
+      {
+        "id": "fe_ps4",
+        "question": "He _____ coffee every morning.",
+        "translation": "(Il boit du café chaque matin)",
+        "options": [
+          "drinks",
+          "drink",
+          "drinking",
+          "is drinking"
+        ],
+        "correct": "drinks",
+        "explanation": "He/she/it + -S. 'He drinks' = il boit. Les mots comme 'every morning' (chaque matin), 'always', 'usually', 'often' sont des indicateurs du Present Simple. Ils montrent des habitudes, des actions répétées. En français 'il boit' peut être maintenant ou habituel, mais en anglais on distingue : 'he drinks' (habitude) vs 'he IS drinking' (maintenant). Cette précision est très utile."
+      },
+      {
+        "id": "fe_ps5",
+        "question": "We _____ to school by bus.",
+        "translation": "(Nous allons à l'école en bus)",
+        "options": [
+          "go",
+          "goes",
+          "going",
+          "are going"
+        ],
+        "correct": "go",
+        "explanation": "Avec 'we', forme de base. 'We go' = nous allons. Le verbe 'go' est extrêmement versatile en anglais - on peut aller à pied, en bus, n'importe comment. 'Go by bus' = en bus, 'go by train' = en train, 'go on foot' = à pied. Le Present Simple pour le trajet quotidien vers l'école - c'est une routine. L'anglais adore les verbes simples et flexibles."
+      },
+      {
+        "id": "fe_ps6",
+        "question": "The cat _____ on the sofa.",
+        "translation": "(Le chat dort sur le canapé)",
+        "options": [
+          "sleeps",
+          "sleep",
+          "sleeping",
+          "is sleeping"
+        ],
+        "correct": "sleeps",
+        "explanation": "'The cat' = 'it' (troisième personne singulier), donc -S. En anglais, tous les animaux et objets sont 'it' - pas de distinction masculin/féminin comme en français. Votre chat adoré est grammaticalement 'it', même si émotionnellement c'est 'he' ou 'she' pour vous. Cette simplicité est rafraîchissante après le genre français. Le -S est automatique pour 'it'."
+      },
+      {
+        "id": "fe_ps7",
+        "question": "You _____ beautiful songs.",
+        "translation": "(Tu chantes de belles chansons)",
+        "options": [
+          "sing",
+          "sings",
+          "singing",
+          "are singing"
+        ],
+        "correct": "sing",
+        "explanation": "'You' utilise toujours la forme de base, jamais de -S. 'You sing' = tu chantes. En français on distingue 'tu chantes' et 'vous chantez', mais en anglais les deux sont 'you sing'. Le contexte montre si c'est singulier ou pluriel. Cette ambiguïté n'est jamais un problème en pratique. Pour clarifier un groupe : 'you all' ou 'you guys' (informel)."
+      },
+      {
+        "id": "fe_ps8",
+        "question": "My parents _____ in a hospital.",
+        "translation": "(Mes parents travaillent dans un hôpital)",
+        "options": [
+          "work",
+          "works",
+          "working",
+          "are working"
+        ],
+        "correct": "work",
+        "explanation": "'My parents' est pluriel = 'they', donc forme de base. 'They work' = ils travaillent. Notez la préposition : 'work IN a hospital' (travailler DANS un hôpital). Les prépositions anglaises sont souvent différentes du français. Avec les bâtiments : 'in' (in a school, in an office). Avec les entreprises : 'for' (work for Google). Chaque verbe a ses prépositions préférées."
+      },
+      {
+        "id": "fe_ps9",
+        "question": "It _____ a lot in autumn.",
+        "translation": "(Il pleut beaucoup en automne)",
+        "options": [
+          "rains",
+          "rain",
+          "raining",
+          "is raining"
+        ],
+        "correct": "rains",
+        "explanation": "'It' pour la météo toujours. 'It rains' = il pleut. La météo en anglais utilise toujours 'it' : it rains (il pleut), it snows (il neige), it's cold (il fait froid). En français on dit simplement 'il pleut' (sujet impersonnel), en anglais pareil avec 'it'. Le Present Simple pour les patterns météo : 'it rains a lot in autumn' (pattern saisonnier). Pour la pluie en ce moment : 'it IS raining'."
+      },
+      {
+        "id": "fe_ps10",
+        "question": "I _____ chocolate.",
+        "translation": "(J'aime le chocolat)",
+        "options": [
+          "like",
+          "likes",
+          "liking",
+          "am liking"
+        ],
+        "correct": "like",
+        "explanation": "Avec 'I', forme de base. 'I like' = j'aime. Les verbes d'état (like, love, hate, know, believe) utilisent presque toujours le Simple, même pour maintenant. On ne dit PAS 'I am liking' - ça sonne bizarre. Ces verbes décrivent des états, pas des actions. Le chocolat est universel - 'I like chocolate' est une vérité personnelle permanente. Les goûts utilisent le Simple."
+      },
+      {
+        "id": "fe_ps11",
+        "question": "She _____ three languages.",
+        "translation": "(Elle parle trois langues)",
+        "options": [
+          "speaks",
+          "speak",
+          "speaking",
+          "is speaking"
+        ],
+        "correct": "speaks",
+        "explanation": "He/she/it + -S. 'She speaks' = elle parle. Parler des langues est une capacité permanente, donc Present Simple. 'She speaks three languages' montre une compétence, pas une action en cours. C'est impressionnant. Les compétences et capacités utilisent toujours le Simple. L'anglais fait cette distinction clairement."
+      },
+      {
+        "id": "fe_ps12",
+        "question": "We _____ pizza for dinner.",
+        "translation": "(Nous avons de la pizza pour dîner)",
+        "options": [
+          "have",
+          "has",
+          "having",
+          "are having"
+        ],
+        "correct": "have",
+        "explanation": "Avec 'we', forme de base. 'We have' = nous avons. 'Have' est un verbe magique en anglais - il exprime possession, consommation, et bien d'autres choses. 'Have pizza' = manger de la pizza. Pas besoin de 'eat'. En français 'avoir de la pizza', en anglais plus flexible. Le Simple pour les faits : c'est notre dîner ce soir (décision/plan)."
+      },
+      {
+        "id": "fe_ps13",
+        "question": "The sun _____ in the east.",
+        "translation": "(Le soleil se lève à l'est)",
+        "options": [
+          "rises",
+          "rise",
+          "rising",
+          "is rising"
+        ],
+        "correct": "rises",
+        "explanation": "'The sun' = 'it', donc -S. 'The sun rises' = le soleil se lève. Les vérités universelles, faits scientifiques utilisent toujours le Present Simple. Le soleil se lève à l'est - vérité permanente. On n'utilise pas le Continuous pour les faits établis. Cette règle simplifie beaucoup : fait général = Simple, action temporaire = Continuous."
+      },
+      {
+        "id": "fe_ps14",
+        "question": "You _____ amazing work.",
+        "translation": "(Tu fais un travail formidable)",
+        "options": [
+          "do",
+          "does",
+          "doing",
+          "are doing"
+        ],
+        "correct": "do",
+        "explanation": "'You' = forme de base. 'You do' = tu fais. Compliment chaleureux. 'Do' est ultra-fréquent en anglais - do work, do homework, do exercise. En français on utilise 'faire', en anglais 'do' est encore plus versatile. Le Simple pour une évaluation générale de votre travail - c'est votre qualité constante, pas juste aujourd'hui. Les compliments au Simple sont plus forts."
+      },
+      {
+        "id": "fe_ps15",
+        "question": "Dogs _____ cats.",
+        "translation": "(Les chiens chassent les chats)",
+        "options": [
+          "chase",
+          "chases",
+          "chasing",
+          "are chasing"
+        ],
+        "correct": "chase",
+        "explanation": "'Dogs' est pluriel, donc forme de base. 'Dogs chase cats' = les chiens chassent les chats. Vérité générale sur le comportement des chiens. Pas tous les chiens, pas maintenant spécifiquement, mais c'est une tendance naturelle. Le Simple exprime ces vérités comportementales. C'est poétique et concis - l'anglais adore les énoncés simples et universels."
+      }
+    ]
+  },
+  {
+    "key": "present_continuous",
+    "name": "Present Continuous",
+    "description": "Le présent progressif en anglais",
+    "iconName": "waveform.path.ecg",
+    "color": "#c084fc",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "fe_pc1",
+        "question": "I _____ English now.",
+        "translation": "(J'apprends l'anglais maintenant)",
+        "options": [
+          "am learning",
+          "learn",
+          "learning",
+          "learns"
+        ],
+        "correct": "am learning",
+        "explanation": "Present Continuous = BE + -ING. 'I am learning' = je suis en train d'apprendre. Cette forme exprime une action EN COURS en ce moment. C'est l'équivalent de 'en train de' en français. Structure : am/is/are + verbe-ING. Les mots comme 'now' (maintenant), 'at the moment', 'currently' indiquent le Continuous. C'est très visuel - vous pouvez presque voir l'action se dérouler."
+      },
+      {
+        "id": "fe_pc2",
+        "question": "She _____ a book.",
+        "translation": "(Elle lit un livre)",
+        "options": [
+          "is reading",
+          "read",
+          "reads",
+          "reading"
+        ],
+        "correct": "is reading",
+        "explanation": "Avec he/she/it, utilisez IS + -ING. 'She is reading' = elle est en train de lire. Le Continuous montre que l'action se passe MAINTENANT, en ce moment précis. Pas hier, pas demain - maintenant. C'est comme une photo instantanée de l'action. La lecture est absorbante - 'she is reading' suggère qu'elle est concentrée, immergée dans le livre en ce moment."
+      },
+      {
+        "id": "fe_pc3",
+        "question": "They _____ football.",
+        "translation": "(Ils jouent au football)",
+        "options": [
+          "are playing",
+          "play",
+          "plays",
+          "playing"
+        ],
+        "correct": "are playing",
+        "explanation": "Avec they/we/you, utilisez ARE + -ING. 'They are playing' = ils sont en train de jouer. Le Continuous crée une image mentale : vous les voyez sur le terrain maintenant. Compare avec 'they play football' (habitude) - 'they ARE playing' signifie en ce moment. L'anglais aime cette précision temporelle. Le Continuous rend tout vivant et immédiat."
+      },
+      {
+        "id": "fe_pc4",
+        "question": "We _____ dinner.",
+        "translation": "(Nous cuisinons le dîner)",
+        "options": [
+          "are making",
+          "make",
+          "makes",
+          "making"
+        ],
+        "correct": "are making",
+        "explanation": "We/you/they = ARE + -ING. 'We are making dinner' = nous sommes en train de faire le dîner. Action en cours. La cuisine est un processus - le Continuous capture cela parfaitement. Vous pouvez imaginer quelqu'un dans la cuisine, coupant des légumes, remuant une casserole. Le Continuous est cinématographique - il filme la vie en temps réel."
+      },
+      {
+        "id": "fe_pc5",
+        "question": "He _____ to music.",
+        "translation": "(Il écoute de la musique)",
+        "options": [
+          "is listening",
+          "listen",
+          "listens",
+          "listening"
+        ],
+        "correct": "is listening",
+        "explanation": "He/she/it = IS + -ING. 'He is listening' = il écoute (maintenant). Peut-être avec des écouteurs, concentré, profitant de la musique en ce moment. Le Continuous donne vie à la scène. Notez : 'listen TO' music (écouter DE la musique en français, mais TO en anglais). Les prépositions diffèrent souvent. Le Continuous + 'to music' évoque une atmosphère paisible."
+      },
+      {
+        "id": "fe_pc6",
+        "question": "You _____ too fast.",
+        "translation": "(Tu parles trop vite)",
+        "options": [
+          "are speaking",
+          "speak",
+          "speaks",
+          "speaking"
+        ],
+        "correct": "are speaking",
+        "explanation": "You = ARE + -ING. 'You are speaking too fast' = tu parles trop vite (maintenant, en ce moment). C'est une observation sur votre parole actuelle. Le Continuous peut exprimer une critique douce ou une observation temporaire. 'Too fast' (trop vite) - les adverbes ajoutent de la couleur. Ce feedback en temps réel est très anglais."
+      },
+      {
+        "id": "fe_pc7",
+        "question": "It _____ outside.",
+        "translation": "(Il pleut dehors)",
+        "options": [
+          "is raining",
+          "rain",
+          "rains",
+          "raining"
+        ],
+        "correct": "is raining",
+        "explanation": "It = IS + -ING. 'It is raining' = il pleut (maintenant). La pluie tombe en ce moment précis. Compare : 'it rains a lot' (habitude) vs 'it IS raining' (maintenant). Le Continuous pour la météo actuelle est très courant. 'Outside' (dehors) ajoute du contexte - vous êtes à l'intérieur, regardant la pluie. Très British d'ailleurs - parler de pluie."
+      },
+      {
+        "id": "fe_pc8",
+        "question": "I _____ TV.",
+        "translation": "(Je regarde la télé)",
+        "options": [
+          "am watching",
+          "watch",
+          "watches",
+          "watching"
+        ],
+        "correct": "am watching",
+        "explanation": "I = AM + -ING. 'I am watching TV' = je regarde la télé (maintenant). Vous êtes affalé sur le canapé, écran devant vous, action en cours. Le Continuous capture ces moments du quotidien. 'Watch TV' (regarder LA télé) - l'article défini est standard en anglais. Cette forme progressive rend tout si visuel et immédiat."
+      },
+      {
+        "id": "fe_pc9",
+        "question": "She _____ an email.",
+        "translation": "(Elle écrit un email)",
+        "options": [
+          "is writing",
+          "write",
+          "writes",
+          "writing"
+        ],
+        "correct": "is writing",
+        "explanation": "She = IS + -ING. 'She is writing an email' = elle écrit un email (maintenant). Vous la voyez tapant sur son clavier, concentrée. Le Continuous pour les actions en cours est parfait. Notez : verbes finissant en -E muet : on enlève le E avant -ING. Write → writing (pas writeing). Cette petite règle orthographique aide la prononciation."
+      },
+      {
+        "id": "fe_pc10",
+        "question": "They _____ for the bus.",
+        "translation": "(Ils attendent le bus)",
+        "options": [
+          "are waiting",
+          "wait",
+          "waits",
+          "waiting"
+        ],
+        "correct": "are waiting",
+        "explanation": "They = ARE + -ING. 'They are waiting for the bus' = ils attendent le bus (maintenant). La scène est claire : debout à l'arrêt, guettant le bus. 'Wait FOR' (attendre en français, mais FOR en anglais). Les prépositions anglaises doivent être mémorisées - elles diffèrent souvent. Le Continuous rend l'attente tangible et actuelle."
+      },
+      {
+        "id": "fe_pc11",
+        "question": "We _____ a good time.",
+        "translation": "(Nous passons du bon temps)",
+        "options": [
+          "are having",
+          "have",
+          "has",
+          "having"
+        ],
+        "correct": "are having",
+        "explanation": "We = ARE + -ING. 'We are having a good time' = nous passons du bon temps (maintenant). Expression idiomatique magnifique. 'Have a good time' = s'amuser, profiter. Même 'have' (habituellement verbe d'état) peut prendre le Continuous dans certaines expressions. 'Are having' suggère que la fête/l'événement est EN COURS. Joyeux et vivant."
+      },
+      {
+        "id": "fe_pc12",
+        "question": "He _____ for an exam.",
+        "translation": "(Il étudie pour un examen)",
+        "options": [
+          "is studying",
+          "study",
+          "studies",
+          "studying"
+        ],
+        "correct": "is studying",
+        "explanation": "He = IS + -ING. 'He is studying for an exam' = il étudie pour un examen (maintenant). Peut-être avec des livres ouverts, surligneurs en main. Le Continuous capture cette session d'étude actuelle. Verbes en -Y : on garde le Y et ajoute -ING. Study → studying (facile). 'Study FOR' (étudier POUR) - prépositions importantes."
+      },
+      {
+        "id": "fe_pc13",
+        "question": "You _____ a mistake.",
+        "translation": "(Tu fais une erreur)",
+        "options": [
+          "are making",
+          "make",
+          "makes",
+          "making"
+        ],
+        "correct": "are making",
+        "explanation": "You = ARE + -ING. 'You are making a mistake' = tu fais une erreur (en ce moment). Avertissement urgent. Le Continuous pour une action en cours qu'on veut arrêter. C'est plus urgent que 'you make mistakes' (habitude). Le Continuous ajoute de l'urgence, de l'immédiateté. C'est un conseil bienveillant en temps réel."
+      },
+      {
+        "id": "fe_pc14",
+        "question": "I _____ about you.",
+        "translation": "(Je pense à toi)",
+        "options": [
+          "am thinking",
+          "think",
+          "thinks",
+          "thinking"
+        ],
+        "correct": "am thinking",
+        "explanation": "I = AM + -ING. 'I am thinking about you' = je pense à toi (maintenant). Touchant. Même 'think' (verbe d'état) peut prendre le Continuous quand il signifie 'réfléchir activement'. 'Think' a deux sens : état mental (Simple) et processus actif (Continuous). 'About you' (à TOI) - les prépositions de sentiment varient en anglais."
+      },
+      {
+        "id": "fe_pc15",
+        "question": "The baby _____.",
+        "translation": "(Le bébé pleure)",
+        "options": [
+          "is crying",
+          "cry",
+          "cries",
+          "crying"
+        ],
+        "correct": "is crying",
+        "explanation": "The baby = it = IS + -ING. 'The baby is crying' = le bébé pleure (maintenant). Action immédiate et urgente. Les pleurs sont temporaires (espérons), donc parfait pour le Continuous. Verbes en -Y après consonne : on garde le Y. Cry → crying. Le Continuous crée une urgence, une nécessité d'action. Très efficace pour les situations d'urgence."
+      }
+    ]
+  },
+  {
+    "key": "past_simple",
+    "name": "Past Simple",
+    "description": "Le passé simple en anglais",
+    "iconName": "clock.arrow.circlepath",
+    "color": "#fbbf24",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "fe_past1",
+        "question": "I _____ to Paris last year.",
+        "translation": "(Je suis allé à Paris l'année dernière)",
+        "options": [
+          "went",
+          "go",
+          "gone",
+          "going"
+        ],
+        "correct": "went",
+        "explanation": "Bienvenue au Past Simple anglais - beaucoup plus simple que le passé composé français. Un seul mot suffit : 'went' (forme irrégulière de 'go'). Pas besoin d'auxiliaire comme 'avoir' ou 'être'. Le Past Simple exprime des actions complètes dans le passé. 'Last year' (l'année dernière) est votre marqueur temporel. En français on dirait 'je suis allé' (auxiliaire + participe), en anglais juste 'I went'. Cette simplicité est rafraîchissante."
+      },
+      {
+        "id": "fe_past2",
+        "question": "She _____ a book yesterday.",
+        "translation": "(Elle a lu un livre hier)",
+        "options": [
+          "read",
+          "reads",
+          "reading",
+          "readed"
+        ],
+        "correct": "read",
+        "explanation": "'Read' au passé s'écrit pareil mais se prononce différemment (red, comme la couleur). C'est un verbe irrégulier. 'She read a book yesterday' = elle a lu un livre hier. Notez qu'en anglais, PAS de différence entre 'she read' (elle lisait) et 'she read' (elle a lu) - le contexte indique. Le Past Simple pour une action ponctuelle hier. Simple et efficace."
+      },
+      {
+        "id": "fe_past3",
+        "question": "They _____ football last weekend.",
+        "translation": "(Ils ont joué au football le weekend dernier)",
+        "options": [
+          "played",
+          "play",
+          "playing",
+          "plaied"
+        ],
+        "correct": "played",
+        "explanation": "Les verbes réguliers prennent simplement -ED au passé. 'Play' devient 'played'. C'est votre pattern de base : verbe + ED. Prononcé 'play-d'. Pas de conjugaison - même forme pour I/you/he/she/it/we/they. 'Last weekend' (le weekend dernier) situe l'action. En français 'ils ont joué' (auxiliaire + participe), en anglais juste 'they played'. Une seule forme à apprendre."
+      },
+      {
+        "id": "fe_past4",
+        "question": "He _____ coffee this morning.",
+        "translation": "(Il a bu du café ce matin)",
+        "options": [
+          "drank",
+          "drink",
+          "drunk",
+          "drinking"
+        ],
+        "correct": "drank",
+        "explanation": "'Drink' est irrégulier : drink (présent) vers drank (passé) vers drunk (participe passé). Au Past Simple, utilisez 'drank'. 'He drank coffee this morning' = il a bu du café ce matin. Les verbes irréguliers doivent être mémorisés, mais ils sont si fréquents qu'ils deviennent automatiques. 'This morning' (ce matin) crée le contexte passé."
+      },
+      {
+        "id": "fe_past5",
+        "question": "We _____ at home all day.",
+        "translation": "(Nous sommes restés à la maison toute la journée)",
+        "options": [
+          "stayed",
+          "stay",
+          "staying",
+          "staied"
+        ],
+        "correct": "stayed",
+        "explanation": "Verbe régulier : stay + ED = stayed. 'We stayed at home all day' = nous sommes restés à la maison toute la journée. Même avec des verbes de mouvement, l'anglais n'a qu'une forme - pas d'auxiliaire 'être'. C'est uniforme et simple. 'All day' (toute la journée) indique la durée. Le -ED est votre ami pour les verbes réguliers."
+      },
+      {
+        "id": "fe_past6",
+        "question": "You _____ a great meal.",
+        "translation": "(Tu as cuisiné un excellent repas)",
+        "options": [
+          "cooked",
+          "cook",
+          "cooking",
+          "cookked"
+        ],
+        "correct": "cooked",
+        "explanation": "Cook + ED = cooked (prononcé 'cookt'). 'You cooked a great meal' = tu as cuisiné un excellent repas. Les verbes se terminant en -k prennent juste -ED. La prononciation du -ED varie : après les sons sourds (k, p, s, etc.) il sonne comme 'T'. C'est une règle phonétique naturelle. Cuisiner est un art - 'you cooked' capture cette création passée."
+      },
+      {
+        "id": "fe_past7",
+        "question": "She _____ to the store.",
+        "translation": "(Elle est allée au magasin)",
+        "options": [
+          "went",
+          "go",
+          "gone",
+          "going"
+        ],
+        "correct": "went",
+        "explanation": "'Go' est très irrégulier : go vers went vers gone. Au Past Simple : 'went'. 'She went to the store' = elle est allée au magasin. En français on utilise 'être' (elle est allée), en anglais juste le verbe seul. Cette uniformité simplifie énormément. 'Went' est un des verbes les plus utilisés - le mémoriser ouvre des portes linguistiques."
+      },
+      {
+        "id": "fe_past8",
+        "question": "I _____ my keys.",
+        "translation": "(J'ai perdu mes clés)",
+        "options": [
+          "lost",
+          "lose",
+          "losed",
+          "losing"
+        ],
+        "correct": "lost",
+        "explanation": "'Lose' est irrégulier : lose vers lost vers lost. 'I lost my keys' = j'ai perdu mes clés. Expérience universelle frustrante. Le Past Simple pour exprimer cette perte ponctuelle. Pas d'auxiliaire nécessaire - juste 'lost'. Cette simplicité permet de s'exprimer rapidement, surtout dans des situations stressantes."
+      },
+      {
+        "id": "fe_past9",
+        "question": "They _____ the film.",
+        "translation": "(Ils ont regardé le film)",
+        "options": [
+          "watched",
+          "watch",
+          "watching",
+          "watchhed"
+        ],
+        "correct": "watched",
+        "explanation": "Watch + ED = watched. 'They watched the film' = ils ont regardé le film. Les verbes en -ch prennent simplement -ED. Le cinéma est un plaisir partagé. Le Past Simple pour décrire l'expérience complète. 'Watched' se prononce 'wotch-t' - le -ED après ch sonne comme T. Cette prononciation est naturelle et fluide."
+      },
+      {
+        "id": "fe_past10",
+        "question": "We _____ about the news.",
+        "translation": "(Nous avons parlé des nouvelles)",
+        "options": [
+          "talked",
+          "talk",
+          "talking",
+          "talkked"
+        ],
+        "correct": "talked",
+        "explanation": "Talk + ED = talked. 'We talked about the news' = nous avons parlé des nouvelles. Les conversations passées se racontent au Past Simple. 'About' (de, au sujet de) introduit le sujet. En français 'nous avons parlé', en anglais juste 'we talked'. Cette économie de structure facilite la communication naturelle."
+      },
+      {
+        "id": "fe_past11",
+        "question": "He _____ very tired.",
+        "translation": "(Il était très fatigué)",
+        "options": [
+          "was",
+          "were",
+          "is",
+          "be"
+        ],
+        "correct": "was",
+        "explanation": "'Be' au passé se divise : was (pour I/he/she/it) et were (pour you/we/they). 'He was tired' = il était fatigué. Le verbe 'be' est le seul qui garde des formes différentes selon la personne au passé. Cette distinction entre was/were est unique. La fatigue est un état - le Past Simple capture ces états passés simplement."
+      },
+      {
+        "id": "fe_past12",
+        "question": "You _____ at the party.",
+        "translation": "(Tu étais à la fête)",
+        "options": [
+          "were",
+          "was",
+          "is",
+          "be"
+        ],
+        "correct": "were",
+        "explanation": "Pour 'you' au passé, utilisez 'were'. 'You were at the party' = tu étais à la fête. Même au singulier, 'you' prend 'were' (pas 'was'). C'est une particularité de l'anglais. La fête est finie, mais le souvenir reste. Le Past Simple pour ces états et présences passés."
+      },
+      {
+        "id": "fe_past13",
+        "question": "I _____ a letter.",
+        "translation": "(J'ai écrit une lettre)",
+        "options": [
+          "wrote",
+          "write",
+          "writing",
+          "writed"
+        ],
+        "correct": "wrote",
+        "explanation": "'Write' est irrégulier : write vers wrote vers written. Au Past Simple : 'wrote'. 'I wrote a letter' = j'ai écrit une lettre. Écrire des lettres devient rare à l'ère numérique, mais reste un geste personnel. Le Past Simple capture cet acte d'écriture accompli. 'Wrote' est simple et définitif."
+      },
+      {
+        "id": "fe_past14",
+        "question": "She _____ happy.",
+        "translation": "(Elle était heureuse)",
+        "options": [
+          "was",
+          "were",
+          "is",
+          "be"
+        ],
+        "correct": "was",
+        "explanation": "He/she/it au passé = 'was'. 'She was happy' = elle était heureuse. Le bonheur est un état - le Past Simple pour ces états émotionnels passés. En français 'elle était' (imparfait), en anglais 'she was' (Past Simple). L'anglais ne distingue pas imparfait et passé composé comme le français - le contexte fait tout."
+      },
+      {
+        "id": "fe_past15",
+        "question": "They _____ late.",
+        "translation": "(Ils sont arrivés en retard)",
+        "options": [
+          "arrived",
+          "arrive",
+          "arriving",
+          "arrivved"
+        ],
+        "correct": "arrived",
+        "explanation": "Arrive + D = arrived (quand le verbe finit en -e, on ajoute juste -D). 'They arrived late' = ils sont arrivés en retard. Arriver en retard est une expérience universelle. Le Past Simple pour ces événements ponctuels. 'Late' (en retard) ajoute le contexte. La simplicité du -D final facilite la conjugaison."
+      }
+    ]
+  },
+  {
+    "key": "future_simple",
+    "name": "Future Simple",
+    "description": "Le futur simple en anglais",
+    "iconName": "chart.line.uptrend.xyaxis",
+    "color": "#4ade80",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "fe_fut1",
+        "question": "I _____ tomorrow.",
+        "translation": "(Je voyagerai demain)",
+        "options": [
+          "will travel",
+          "travel",
+          "traveled",
+          "am traveling"
+        ],
+        "correct": "will travel",
+        "explanation": "Le futur anglais est d'une simplicité magnifique : WILL + verbe de base. 'I will travel' = je voyagerai. Pas de conjugaison - même structure pour toutes les personnes. 'Will' exprime volonté, prédiction, promesse. 'Tomorrow' (demain) situe dans le futur. En français on conjugue le verbe (voyagerai), en anglais on ajoute juste 'will'. Cette uniformité est libératrice."
+      },
+      {
+        "id": "fe_fut2",
+        "question": "She _____ French.",
+        "translation": "(Elle parlera français)",
+        "options": [
+          "will speak",
+          "speaks",
+          "spoke",
+          "speaking"
+        ],
+        "correct": "will speak",
+        "explanation": "Will + verbe de base. 'She will speak French' = elle parlera français. Pas de 'will speaks' - le verbe reste à l'infinitif sans 'to'. Cette structure reste identique pour toutes les personnes. Apprendre le français est un voyage - 'will speak' exprime cette promesse future. La simplicité du futur anglais facilite les prédictions et plans."
+      },
+      {
+        "id": "fe_fut3",
+        "question": "They _____ at 8 PM.",
+        "translation": "(Ils arriveront à 20h)",
+        "options": [
+          "will arrive",
+          "arrive",
+          "arrived",
+          "arriving"
+        ],
+        "correct": "will arrive",
+        "explanation": "Will + arrive. 'They will arrive at 8 PM' = ils arriveront à 20h. Les horaires précis se combinent naturellement avec 'will'. Cette structure exprime plans et promesses. 'At 8 PM' (à 20h) donne la précision temporelle. En français on conjugue (arriveront), en anglais on utilise l'auxiliaire 'will'. Simple et efficace."
+      },
+      {
+        "id": "fe_fut4",
+        "question": "He _____ the exam.",
+        "translation": "(Il passera l'examen)",
+        "options": [
+          "will take",
+          "takes",
+          "took",
+          "taking"
+        ],
+        "correct": "will take",
+        "explanation": "Will + take. 'He will take the exam' = il passera l'examen. 'Take an exam' est l'expression idiomatique (pas 'pass'). Passer un examen crée du stress et de l'anticipation - 'will take' capture ce moment futur. La structure simple permet de se concentrer sur le contenu plutôt que la grammaire."
+      },
+      {
+        "id": "fe_fut5",
+        "question": "We _____ together.",
+        "translation": "(Nous travaillerons ensemble)",
+        "options": [
+          "will work",
+          "work",
+          "worked",
+          "working"
+        ],
+        "correct": "will work",
+        "explanation": "Will + work. 'We will work together' = nous travaillerons ensemble. 'Together' (ensemble) ajoute la dimension collaborative. Le futur exprime intention et plan. En français 'nous travaillerons' (conjugaison complexe), en anglais 'we will work' (structure simple). Cette uniformité est précieuse."
+      },
+      {
+        "id": "fe_fut6",
+        "question": "You _____ better soon.",
+        "translation": "(Tu te sentiras mieux bientôt)",
+        "options": [
+          "will feel",
+          "feel",
+          "felt",
+          "feeling"
+        ],
+        "correct": "will feel",
+        "explanation": "Will + feel. 'You will feel better soon' = tu te sentiras mieux bientôt. C'est un message d'espoir et de réconfort. 'Soon' (bientôt) suggère un futur proche. Le verbe 'feel' (sentir) pour les états physiques et émotionnels. 'Will feel' crée de l'optimisme - le futur sera meilleur."
+      },
+      {
+        "id": "fe_fut7",
+        "question": "I _____ a doctor.",
+        "translation": "(Je serai médecin)",
+        "options": [
+          "will be",
+          "am",
+          "was",
+          "being"
+        ],
+        "correct": "will be",
+        "explanation": "Will + be. 'I will be a doctor' = je serai médecin. Même 'be' (le plus irrégulier des verbes) suit la règle simple : will + forme de base. Devenir médecin est une aspiration noble. Le futur exprime ambitions et rêves. 'Will be' pour les professions futures, identités, états."
+      },
+      {
+        "id": "fe_fut8",
+        "question": "She _____ the book.",
+        "translation": "(Elle lira le livre)",
+        "options": [
+          "will read",
+          "reads",
+          "read",
+          "reading"
+        ],
+        "correct": "will read",
+        "explanation": "Will + read. 'She will read the book' = elle lira le livre. La lecture est un plaisir à venir. Le futur pour les plans et intentions. 'Will read' est simple et clair - pas de conjugaison complexe. Cette structure permet de parler naturellement de projets futurs."
+      },
+      {
+        "id": "fe_fut9",
+        "question": "They _____ the truth.",
+        "translation": "(Ils sauront la vérité)",
+        "options": [
+          "will know",
+          "know",
+          "knew",
+          "knowing"
+        ],
+        "correct": "will know",
+        "explanation": "Will + know. 'They will know the truth' = ils sauront la vérité. Connaître la vérité implique découverte future. Le futur crée anticipation. 'Will know' pour les connaissances à venir, les révélations. En français 'ils sauront' (conjugaison), en anglais 'they will know' (auxiliaire + base)."
+      },
+      {
+        "id": "fe_fut10",
+        "question": "We _____ happy.",
+        "translation": "(Nous serons heureux)",
+        "options": [
+          "will be",
+          "are",
+          "were",
+          "being"
+        ],
+        "correct": "will be",
+        "explanation": "Will + be. 'We will be happy' = nous serons heureux. Le bonheur futur est une belle perspective. 'Will be' pour les états émotionnels à venir. Cette structure simple exprime espoir et optimisme. En français 'nous serons' (conjugaison), en anglais 'we will be' (auxiliaire + be)."
+      },
+      {
+        "id": "fe_fut11",
+        "question": "You _____ this weekend.",
+        "translation": "(Tu viendras ce weekend)",
+        "options": [
+          "will come",
+          "come",
+          "came",
+          "coming"
+        ],
+        "correct": "will come",
+        "explanation": "Will + come. 'You will come this weekend' = tu viendras ce weekend. Invitation et plan. 'This weekend' (ce weekend) situe le moment. Venir implique mouvement vers le locuteur. 'Will come' exprime l'attente et la promesse de présence."
+      },
+      {
+        "id": "fe_fut12",
+        "question": "He _____ the door.",
+        "translation": "(Il ouvrira la porte)",
+        "options": [
+          "will open",
+          "opens",
+          "opened",
+          "opening"
+        ],
+        "correct": "will open",
+        "explanation": "Will + open. 'He will open the door' = il ouvrira la porte. Action future simple. Ouvrir une porte est à la fois littéral et métaphorique - ouvrir des possibilités. 'Will open' pour ces actions futures. La structure reste uniformément simple."
+      },
+      {
+        "id": "fe_fut13",
+        "question": "I _____ my homework.",
+        "translation": "(Je ferai mes devoirs)",
+        "options": [
+          "will do",
+          "do",
+          "did",
+          "doing"
+        ],
+        "correct": "will do",
+        "explanation": "Will + do. 'I will do my homework' = je ferai mes devoirs. Promesse ou plan. Les devoirs sont une responsabilité - 'will do' montre l'intention. 'Do homework' est l'expression fixe. La structure simple facilite ces engagements quotidiens."
+      },
+      {
+        "id": "fe_fut14",
+        "question": "She _____ to France.",
+        "translation": "(Elle ira en France)",
+        "options": [
+          "will go",
+          "goes",
+          "went",
+          "going"
+        ],
+        "correct": "will go",
+        "explanation": "Will + go. 'She will go to France' = elle ira en France. Projet de voyage. La France comme destination évoque culture, beauté, découverte. 'Will go' exprime ce projet futur. En français 'elle ira' (irrégulier), en anglais 'she will go' (régulier)."
+      },
+      {
+        "id": "fe_fut15",
+        "question": "They _____ us tomorrow.",
+        "translation": "(Ils nous appelleront demain)",
+        "options": [
+          "will call",
+          "call",
+          "called",
+          "calling"
+        ],
+        "correct": "will call",
+        "explanation": "Will + call. 'They will call us tomorrow' = ils nous appelleront demain. Communication future. 'Tomorrow' (demain) donne le moment. Les appels téléphoniques connectent les gens. 'Will call' pour ces connexions futures. La structure simple permet de se concentrer sur la relation plutôt que la grammaire."
+      }
+    ]
+  },
+  {
+    "key": "questions",
+    "name": "Questions",
+    "description": "Former des questions en anglais",
+    "iconName": "questionmark.circle",
+    "color": "#22d3ee",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "fe_q1",
+        "question": "_____ you speak English?",
+        "translation": "(Parlez-vous anglais?)",
+        "options": [
+          "Do",
+          "Does",
+          "Are",
+          "Is"
+        ],
+        "correct": "Do",
+        "explanation": "Bienvenue aux questions anglaises. Pour les verbes d'action au présent, utilisez DO ou DOES. Avec you/we/they : DO. 'Do you speak English?' = Parlez-vous anglais? L'anglais inverse sujet et auxiliaire pour former des questions. En français on peut simplement ajouter l'intonation ('Tu parles anglais?') ou inverser ('Parles-tu anglais?'), mais l'anglais nécessite presque toujours DO/DOES pour les questions au présent."
+      },
+      {
+        "id": "fe_q2",
+        "question": "_____ she like coffee?",
+        "translation": "(Aime-t-elle le café?)",
+        "options": [
+          "Does",
+          "Do",
+          "Is",
+          "Are"
+        ],
+        "correct": "Does",
+        "explanation": "Avec he/she/it, utilisez DOES (pas DO). 'Does she like coffee?' = Aime-t-elle le café? Notez que le verbe principal reste à la forme de base : 'like' (pas 'likes'). DOES porte déjà le -S, donc le verbe n'en prend pas. Cette règle peut sembler étrange au début, mais elle devient automatique : DOES + forme de base."
+      },
+      {
+        "id": "fe_q3",
+        "question": "_____ they working?",
+        "translation": "(Travaillent-ils?)",
+        "options": [
+          "Are",
+          "Do",
+          "Is",
+          "Does"
+        ],
+        "correct": "Are",
+        "explanation": "Pour les questions au Present Continuous (BE + -ING), inversez simplement BE et le sujet. 'Are they working?' = Travaillent-ils? Pas besoin de DO/DOES avec BE. La structure BE-ING garde BE comme auxiliaire : are they working, is she reading, am I going. Cette inversion directe est simple et élégante."
+      },
+      {
+        "id": "fe_q4",
+        "question": "_____ he at home?",
+        "translation": "(Est-il à la maison?)",
+        "options": [
+          "Is",
+          "Does",
+          "Do",
+          "Are"
+        ],
+        "correct": "Is",
+        "explanation": "Avec BE (am/is/are), pas besoin de DO/DOES. Inversez simplement. 'Is he at home?' = Est-il à la maison? BE est son propre auxiliaire. Cette règle s'applique toujours : Is she happy? Are you ready? Am I late? L'inversion directe de BE est plus simple que DO/DOES."
+      },
+      {
+        "id": "fe_q5",
+        "question": "_____ did you go yesterday?",
+        "translation": "(Où es-tu allé hier?)",
+        "options": [
+          "Where",
+          "What",
+          "When",
+          "Who"
+        ],
+        "correct": "Where",
+        "explanation": "Les mots interrogatifs (where, what, when, who, why, how) commencent la question. 'Where did you go yesterday?' = Où es-tu allé hier? WHERE pour les lieux. La structure : WH-word + auxiliaire + sujet + verbe. Au passé, utilisez DID (pas DO/DOES). Le verbe revient à la forme de base : 'go' (pas 'went')."
+      },
+      {
+        "id": "fe_q6",
+        "question": "_____ time is it?",
+        "translation": "(Quelle heure est-il?)",
+        "options": [
+          "What",
+          "Which",
+          "When",
+          "Where"
+        ],
+        "correct": "What",
+        "explanation": "'What time is it?' = Quelle heure est-il? WHAT pour demander des informations générales. Cette expression idiomatique utilise 'what time' ensemble. Notez l'inversion : 'is it' (pas 'it is'). Pour l'heure, cette question est essentielle. WHAT est le plus versatile des mots interrogatifs."
+      },
+      {
+        "id": "fe_q7",
+        "question": "_____ you tired?",
+        "translation": "(Es-tu fatigué?)",
+        "options": [
+          "Are",
+          "Do",
+          "Is",
+          "Does"
+        ],
+        "correct": "Are",
+        "explanation": "Avec BE au présent, inversez pour questionner. 'Are you tired?' = Es-tu fatigué? Simple et direct. Pas de DO nécessaire. BE se suffit à lui-même. Cette question montre de l'empathie - vous vous souciez de l'état de l'autre. L'inversion 'are you' est automatique avec BE."
+      },
+      {
+        "id": "fe_q8",
+        "question": "_____ does she live?",
+        "translation": "(Où habite-t-elle?)",
+        "options": [
+          "Where",
+          "When",
+          "What",
+          "Who"
+        ],
+        "correct": "Where",
+        "explanation": "'Where does she live?' = Où habite-telle? WHERE pour les lieux (où). La structure : Where + DOES + sujet + forme de base. Le verbe 'live' reste simple (pas 'lives'). Cette question est courante pour connaître les gens. WHERE ouvre des conversations géographiques."
+      },
+      {
+        "id": "fe_q9",
+        "question": "_____ is your name?",
+        "translation": "(Quel est ton nom?)",
+        "options": [
+          "What",
+          "Which",
+          "Who",
+          "Where"
+        ],
+        "correct": "What",
+        "explanation": "'What is your name?' = Quel est ton nom? Question fondamentale pour se présenter. WHAT demande des informations. Notez l'inversion : 'is your name' (pas 'your name is'). Cette question ouvre toute relation sociale. WHAT + BE + sujet est une structure très commune."
+      },
+      {
+        "id": "fe_q10",
+        "question": "_____ they come tomorrow?",
+        "translation": "(Viendront-ils demain?)",
+        "options": [
+          "Will",
+          "Do",
+          "Are",
+          "Does"
+        ],
+        "correct": "Will",
+        "explanation": "Au futur, WILL devient l'auxiliaire. 'Will they come tomorrow?' = Viendront-ils demain? Inversez WILL et le sujet. Le verbe reste à la forme de base : 'come'. Cette structure est simple et uniforme. WILL porte toute la charge grammaticale, le verbe se relaxe."
+      },
+      {
+        "id": "fe_q11",
+        "question": "_____ you see him yesterday?",
+        "translation": "(L'as-tu vu hier?)",
+        "options": [
+          "Did",
+          "Do",
+          "Does",
+          "Are"
+        ],
+        "correct": "Did",
+        "explanation": "Au passé, DID est l'auxiliaire pour tous les sujets. 'Did you see him yesterday?' = L'as-tu vu hier? Le verbe revient à la forme de base : 'see' (pas 'saw'). DID porte le passé, donc le verbe n'a pas besoin d'être au passé. Cette règle est cohérente et logique."
+      },
+      {
+        "id": "fe_q12",
+        "question": "_____ is that?",
+        "translation": "(Qui est-ce?)",
+        "options": [
+          "Who",
+          "What",
+          "Where",
+          "When"
+        ],
+        "correct": "Who",
+        "explanation": "'Who is that?' = Qui est-ce? WHO pour les personnes. Cette question identifie quelqu'un. Notez l'inversion : 'is that' (pas 'that is'). WHO est essentiel pour connaître les gens. La réponse donnera un nom, une relation, une identité."
+      },
+      {
+        "id": "fe_q13",
+        "question": "_____ you like tea or coffee?",
+        "translation": "(Préfères-tu le thé ou le café?)",
+        "options": [
+          "Do",
+          "Does",
+          "Are",
+          "Is"
+        ],
+        "correct": "Do",
+        "explanation": "'Do you like tea or coffee?' = Préfères-tu le thé ou le café? Questions avec OR (ou) offrent des choix. DO avec 'you' au présent. Le verbe 'like' reste simple. Cette question binaire simplifie les décisions. OR crée une alternative claire et facile."
+      },
+      {
+        "id": "fe_q14",
+        "question": "_____ long does it take?",
+        "translation": "(Combien de temps cela prend-il?)",
+        "options": [
+          "How",
+          "What",
+          "When",
+          "Where"
+        ],
+        "correct": "How",
+        "explanation": "'How long does it take?' = Combien de temps cela prend-il? HOW + adjectif/adverbe pose des questions de degré. 'How long' = combien de temps. 'How much' = combien (quantité), 'How many' = combien (nombre). HOW est extrêmement versatile - how old, how far, how often, how tall."
+      },
+      {
+        "id": "fe_q15",
+        "question": "_____ was the party?",
+        "translation": "(Comment était la fête?)",
+        "options": [
+          "How",
+          "What",
+          "Where",
+          "When"
+        ],
+        "correct": "How",
+        "explanation": "'How was the party?' = Comment était la fête? HOW demande l'évaluation, la qualité. Au passé, WAS s'inverse directement (pas de DID). Cette question montre de l'intérêt pour l'expérience de l'autre. HOW + BE évalue situations, états, expériences."
+      }
+    ]
+  },
+  {
+    "key": "negation",
+    "name": "Negation",
+    "description": "Phrases négatives en anglais",
+    "iconName": "nosign",
+    "color": "#f87171",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "fe_neg1",
+        "question": "I _____ speak French.",
+        "translation": "(Je ne parle pas français)",
+        "options": [
+          "don't",
+          "doesn't",
+          "am not",
+          "isn't"
+        ],
+        "correct": "don't",
+        "explanation": "Pour la négation avec les verbes d'action, utilisez DON'T ou DOESN'T. Avec I/you/we/they : DON'T (do not). 'I don't speak French' = Je ne parle pas français. L'anglais place NOT après l'auxiliaire DO. En français 'ne...pas' entoure le verbe, en anglais DON'T vient avant. Cette structure est simple et uniforme."
+      },
+      {
+        "id": "fe_neg2",
+        "question": "She _____ like coffee.",
+        "translation": "(Elle n'aime pas le café)",
+        "options": [
+          "doesn't",
+          "don't",
+          "isn't",
+          "aren't"
+        ],
+        "correct": "doesn't",
+        "explanation": "Avec he/she/it, utilisez DOESN'T (does not). 'She doesn't like coffee' = Elle n'aime pas le café. Le verbe principal reste à la forme de base : 'like' (pas 'likes'). DOESN'T porte déjà le -S. Cette règle est cohérente : DOESN'T + forme de base."
+      },
+      {
+        "id": "fe_neg3",
+        "question": "They _____ working.",
+        "translation": "(Ils ne travaillent pas)",
+        "options": [
+          "aren't",
+          "don't",
+          "isn't",
+          "doesn't"
+        ],
+        "correct": "aren't",
+        "explanation": "Pour la négation du Present Continuous (BE + -ING), ajoutez NOT après BE. 'They aren't working' = Ils ne travaillent pas. AREN'T est la contraction de 'are not'. Pas besoin de DO/DOES avec BE. La négation de BE est directe et simple : am not, isn't (is not), aren't (are not)."
+      },
+      {
+        "id": "fe_neg4",
+        "question": "He _____ at home.",
+        "translation": "(Il n'est pas à la maison)",
+        "options": [
+          "isn't",
+          "doesn't",
+          "don't",
+          "aren't"
+        ],
+        "correct": "isn't",
+        "explanation": "Pour nier BE, ajoutez NOT après. 'He isn't at home' = Il n'est pas à la maison. ISN'T est la contraction de 'is not'. BE se nie lui-même - pas besoin de DO. Cette négation directe est plus simple que DO/DOES. ISN'T, AREN'T, AM NOT sont vos formes de négation de BE."
+      },
+      {
+        "id": "fe_neg5",
+        "question": "I _____ go yesterday.",
+        "translation": "(Je ne suis pas allé hier)",
+        "options": [
+          "didn't",
+          "don't",
+          "doesn't",
+          "wasn't"
+        ],
+        "correct": "didn't",
+        "explanation": "Au passé, la négation utilise DIDN'T (did not) pour tous les sujets. 'I didn't go yesterday' = Je ne suis pas allé hier. Le verbe revient à la forme de base : 'go' (pas 'went'). DIDN'T porte le passé et la négation. Cette uniformité simplifie énormément - même négation pour toutes les personnes."
+      },
+      {
+        "id": "fe_neg6",
+        "question": "We _____ have time.",
+        "translation": "(Nous n'avons pas le temps)",
+        "options": [
+          "don't",
+          "doesn't",
+          "aren't",
+          "isn't"
+        ],
+        "correct": "don't",
+        "explanation": "Avec we/you/they, utilisez DON'T. 'We don't have time' = Nous n'avons pas le temps. Le manque de temps est une réalité universelle. La négation avec DON'T est directe. Le verbe 'have' reste simple. Cette structure exprime l'impossibilité avec économie de mots."
+      },
+      {
+        "id": "fe_neg7",
+        "question": "You _____ need to worry.",
+        "translation": "(Tu n'as pas besoin de t'inquiéter)",
+        "options": [
+          "don't",
+          "doesn't",
+          "aren't",
+          "isn't"
+        ],
+        "correct": "don't",
+        "explanation": "'You don't need to worry' = Tu n'as pas besoin de t'inquiéter. Message rassurant. DON'T + need to = pas besoin de. 'Need to' exprime la nécessité, DON'T la supprime. Cette phrase offre du réconfort et de l'assurance. La négation peut être libératrice."
+      },
+      {
+        "id": "fe_neg8",
+        "question": "She _____ coming today.",
+        "translation": "(Elle ne vient pas aujourd'hui)",
+        "options": [
+          "isn't",
+          "doesn't",
+          "don't",
+          "aren't"
+        ],
+        "correct": "isn't",
+        "explanation": "Pour nier le Present Continuous, ajoutez NOT après BE. 'She isn't coming today' = Elle ne vient pas aujourd'hui. ISN'T + verbe-ING. Cette structure nie une action prévue ou en cours. L'absence future exprimée au présent. La négation du Continuous suit BE."
+      },
+      {
+        "id": "fe_neg9",
+        "question": "I _____ understand.",
+        "translation": "(Je ne comprends pas)",
+        "options": [
+          "don't",
+          "doesn't",
+          "am not",
+          "isn't"
+        ],
+        "correct": "don't",
+        "explanation": "'I don't understand' = Je ne comprends pas. Phrase essentielle en apprentissage linguistique. Avouer l'incompréhension est le premier pas vers la clarté. DON'T + understand est simple et honnête. Cette phrase ouvre la porte à l'explication et à l'aide."
+      },
+      {
+        "id": "fe_neg10",
+        "question": "They _____ ready yet.",
+        "translation": "(Ils ne sont pas encore prêts)",
+        "options": [
+          "aren't",
+          "don't",
+          "doesn't",
+          "isn't"
+        ],
+        "correct": "aren't",
+        "explanation": "'They aren't ready yet' = Ils ne sont pas encore prêts. AREN'T nie BE. 'Yet' (encore) ajoute la dimension temporelle - pas maintenant, mais peut-être bientôt. Cette combinaison aren't...yet exprime un état temporaire. La négation + yet suggère un changement futur."
+      },
+      {
+        "id": "fe_neg11",
+        "question": "He _____ want to go.",
+        "translation": "(Il ne veut pas aller)",
+        "options": [
+          "doesn't",
+          "don't",
+          "isn't",
+          "aren't"
+        ],
+        "correct": "doesn't",
+        "explanation": "'He doesn't want to go' = Il ne veut pas aller. DOESN'T avec he/she/it. Le verbe 'want' reste simple. Cette phrase exprime un refus ou une préférence négative. La négation de volonté est importante dans l'expression de liberté et de choix."
+      },
+      {
+        "id": "fe_neg12",
+        "question": "We _____ there yesterday.",
+        "translation": "(Nous n'étions pas là hier)",
+        "options": [
+          "weren't",
+          "didn't",
+          "don't",
+          "isn't"
+        ],
+        "correct": "weren't",
+        "explanation": "'We weren't there yesterday' = Nous n'étions pas là hier. Au passé, BE devient WAS/WERE. La négation : WASN'T, WEREN'T. Pas besoin de DIDN'T avec BE. Cette structure nie un état ou une présence passée. L'absence expliquée simplement."
+      },
+      {
+        "id": "fe_neg13",
+        "question": "You _____ believe this.",
+        "translation": "(Tu ne croiras pas ça)",
+        "options": [
+          "won't",
+          "don't",
+          "doesn't",
+          "aren't"
+        ],
+        "correct": "won't",
+        "explanation": "'You won't believe this' = Tu ne croiras pas ça. Au futur, la négation est WILL NOT = WON'T. Cette phrase précède souvent une révélation surprenante. WON'T + verbe de base. La négation future exprime impossibilité, refus, ou prédiction négative."
+      },
+      {
+        "id": "fe_neg14",
+        "question": "She _____ be late.",
+        "translation": "(Elle ne sera pas en retard)",
+        "options": [
+          "won't",
+          "doesn't",
+          "isn't",
+          "don't"
+        ],
+        "correct": "won't",
+        "explanation": "'She won't be late' = Elle ne sera pas en retard. WON'T + BE. Promesse ou assurance. La négation future avec WON'T crée de la certitude. Même BE (infinitif) suit WILL/WON'T. Cette structure exprime engagement et fiabilité."
+      },
+      {
+        "id": "fe_neg15",
+        "question": "I _____ seen him.",
+        "translation": "(Je ne l'ai pas vu)",
+        "options": [
+          "haven't",
+          "don't",
+          "didn't",
+          "am not"
+        ],
+        "correct": "haven't",
+        "explanation": "'I haven't seen him' = Je ne l'ai pas vu. Au Present Perfect (HAVE + participe passé), la négation est HAVEN'T/HASN'T. 'Haven't seen' connecte passé et présent - jusqu'à maintenant, je ne l'ai pas vu. Cette négation du Perfect crée une ouverture : pas encore vu, mais peut-être bientôt."
+      }
+    ]
+  }
+]

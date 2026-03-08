@@ -1,0 +1,1437 @@
+[
+  {
+    "key": "particles_basic",
+    "name": "Basic Particles",
+    "description": "Essential Japanese particles",
+    "iconName": "location.north",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ej_part1",
+        "question": "I _____ a student.",
+        "translation": "(私は学生です)",
+        "options": [
+          "は",
+          "が",
+          "を",
+          "に"
+        ],
+        "correct": "は",
+        "explanation": "Welcome to Japanese particles, the elegant connectors that give Japanese its distinctive flow. The particle は (wa) marks the topic of your sentence. Think of it as spotlighting what you're talking about. 'I am a student' becomes 私は学生です (watashi wa gakusei desu). The は tells listeners 'I'm about to tell you something about me'. Unlike English where word order shows relationships, Japanese uses these particles as signposts, creating a logical and beautiful system."
+      },
+      {
+        "id": "ej_part2",
+        "question": "Who _____ there?",
+        "translation": "(誰がいますか)",
+        "options": [
+          "が",
+          "は",
+          "を",
+          "に"
+        ],
+        "correct": "が",
+        "explanation": "The particle が (ga) marks the subject, especially for new information or emphasis. In questions like 'Who is there?', you need が because you're asking about the subject itself. 誰がいますか (dare ga imasu ka). While は marks topics you already know about, が introduces something new or emphasizes the doer. This distinction doesn't exist in English, making it one of Japanese's unique features that adds precision to expression."
+      },
+      {
+        "id": "ej_part3",
+        "question": "I eat sushi _____.",
+        "translation": "(私は寿司を食べます)",
+        "options": [
+          "を",
+          "が",
+          "は",
+          "に"
+        ],
+        "correct": "を",
+        "explanation": "The particle を (o/wo) marks the direct object - what receives the action. 'I eat sushi' becomes 私は寿司を食べます (watashi wa sushi o tabemasu). This particle always follows what's being acted upon. English shows objects through word order (verb then object), but Japanese uses を to mark it explicitly, allowing more flexible word order. This particle is like an arrow pointing to what's receiving the action."
+      },
+      {
+        "id": "ej_part4",
+        "question": "I go _____ Tokyo.",
+        "translation": "(私は東京に行きます)",
+        "options": [
+          "に",
+          "を",
+          "が",
+          "は"
+        ],
+        "correct": "に",
+        "explanation": "The particle に (ni) marks direction and destination. 'I go to Tokyo' becomes 私は東京に行きます (watashi wa tōkyō ni ikimasu). The に is like English 'to', showing where you're heading. This particle has many uses - destination, time, purpose - making it one of Japanese's most versatile. Each use shares the sense of a target or goal, helping you understand its various applications through this common thread."
+      },
+      {
+        "id": "ej_part5",
+        "question": "I meet _____ a friend.",
+        "translation": "(私は友達に会います)",
+        "options": [
+          "に",
+          "を",
+          "と",
+          "で"
+        ],
+        "correct": "に",
+        "explanation": "The particle に (ni) also marks the person you meet or contact. 'I meet a friend' becomes 私は友達に会います (watashi wa tomodachi ni aimasu). While を marks objects, に marks people you interact with for certain verbs. This reflects Japanese's sensitivity to social relationships - meeting someone isn't quite the same as acting on an object, so the grammar distinguishes them. This subtle awareness appears throughout Japanese."
+      },
+      {
+        "id": "ej_part6",
+        "question": "I go _____ a friend.",
+        "translation": "(私は友達と行きます)",
+        "options": [
+          "と",
+          "に",
+          "を",
+          "が"
+        ],
+        "correct": "と",
+        "explanation": "The particle と (to) means 'with' for accompaniment. 'I go with a friend' becomes 私は友達と行きます (watashi wa tomodachi to ikimasu). This particle marks who accompanies you. Japanese particles map relationships precisely - に for destination, と for companion, で for means. Each particle adds a specific meaning, building rich sentences from simple elements. This modular approach makes Japanese logical once you grasp each particle's role."
+      },
+      {
+        "id": "ej_part7",
+        "question": "I study _____ the library.",
+        "translation": "(私は図書館で勉強します)",
+        "options": [
+          "で",
+          "に",
+          "を",
+          "が"
+        ],
+        "correct": "で",
+        "explanation": "The particle で (de) marks where actions happen. 'I study at the library' becomes 私は図書館で勉強します (watashi wa toshokan de benkyō shimasu). While に marks static location (being somewhere), で marks active location (doing something somewhere). This distinction matters in Japanese - で is for dynamic activities, に for existence or arrival. Understanding this difference helps you choose correctly."
+      },
+      {
+        "id": "ej_part8",
+        "question": "The book _____ on the table.",
+        "translation": "(本は机の上にあります)",
+        "options": [
+          "に",
+          "で",
+          "を",
+          "が"
+        ],
+        "correct": "に",
+        "explanation": "For existence or location state, use に (ni). 'The book is on the table' becomes 本は机の上にあります (hon wa tsukue no ue ni arimasu). Static location takes に, not で. This reflects Japanese's focus on whether something exists somewhere (に) versus an action happening somewhere (で). The particle choice reveals whether you're describing state or action, adding depth to your expression."
+      },
+      {
+        "id": "ej_part9",
+        "question": "I go _____ bus.",
+        "translation": "(私はバスで行きます)",
+        "options": [
+          "で",
+          "に",
+          "を",
+          "と"
+        ],
+        "correct": "で",
+        "explanation": "The particle で (de) also marks means or method. 'I go by bus' becomes 私はバスで行きます (watashi wa basu de ikimasu). The で shows how you do something. English uses 'by', but Japanese uses the same particle で for both location of action and means of action. Both share the sense of 'in the context of', helping you see the particle's unity across its uses."
+      },
+      {
+        "id": "ej_part10",
+        "question": "Tokyo _____ Osaka _____ closer.",
+        "translation": "(東京は大阪に近いです)",
+        "options": [
+          "は, に",
+          "が, を",
+          "を, で",
+          "に, が"
+        ],
+        "correct": "は, に",
+        "explanation": "This sentence needs two particles: は (wa) marks Tokyo as the topic, and に (ni) marks Osaka as the reference point. 東京は大阪に近いです (Tōkyō wa Ōsaka ni chikai desu) means 'Tokyo is close to Osaka'. The に shows what Tokyo is close to. Japanese explicitly marks these relationships with particles, while English uses word order and prepositions. Each particle adds a layer of meaning."
+      },
+      {
+        "id": "ej_part11",
+        "question": "I like _____ music.",
+        "translation": "(私は音楽が好きです)",
+        "options": [
+          "が",
+          "を",
+          "に",
+          "は"
+        ],
+        "correct": "が",
+        "explanation": "With adjectives of preference like 好き (suki, like), use が (ga) before the object. 私は音楽が好きです (watashi wa ongaku ga suki desu) means 'I like music'. Literally, it's more like 'As for me, music is pleasing'. Japanese treats preferences differently than English - the thing you like is the grammatical subject marked with が. This reveals how Japanese sees liking as something being pleasing to you, rather than you acting on it."
+      },
+      {
+        "id": "ej_part12",
+        "question": "This _____ a pen.",
+        "translation": "(これはペンです)",
+        "options": [
+          "は",
+          "が",
+          "を",
+          "に"
+        ],
+        "correct": "は",
+        "explanation": "For identification sentences, use は (wa). これはペンです (kore wa pen desu) means 'This is a pen'. The は marks 'this' as what you're talking about. Japanese doesn't need a verb equivalent to 'is/am/are' for nouns - just particle + noun + です. The です (desu) is a copula that adds politeness, not quite the same as English 'to be'. This simplicity makes basic Japanese sentences elegantly concise."
+      },
+      {
+        "id": "ej_part13",
+        "question": "I read _____ Japanese.",
+        "translation": "(私は日本語で読みます)",
+        "options": [
+          "で",
+          "に",
+          "を",
+          "が"
+        ],
+        "correct": "で",
+        "explanation": "For language used, the particle is で (de). 私は日本語で読みます (watashi wa nihongo de yomimasu) means 'I read in Japanese'. The で marks the language as the means or medium. Japanese consistently uses で for methods, whether transportation, language, or tools. This unified function makes で easier to master - look for 'how' or 'by what means' and you likely need で."
+      },
+      {
+        "id": "ej_part14",
+        "question": "Rain _____ falling.",
+        "translation": "(雨が降っています)",
+        "options": [
+          "が",
+          "は",
+          "を",
+          "に"
+        ],
+        "correct": "が",
+        "explanation": "Natural phenomena and events use が (ga) rather than は. 雨が降っています (ame ga futte imasu) means 'Rain is falling'. The が emphasizes the event itself. Japanese uses が when introducing new information or describing natural occurrences. This particle choice subtly shapes how the event feels - が makes it immediate and present, while は would be more like stating a fact about rain in general."
+      },
+      {
+        "id": "ej_part15",
+        "question": "I give _____ my friend.",
+        "translation": "(私は友達にあげます)",
+        "options": [
+          "に",
+          "を",
+          "と",
+          "で"
+        ],
+        "correct": "に",
+        "explanation": "For giving or receiving, に (ni) marks the recipient. 私は友達にあげます (watashi wa tomodachi ni agemasu) means 'I give to my friend'. The に shows who receives. Japanese has elaborate giving/receiving verbs that change based on social relationships, and に always marks the recipient. This grammatical precision mirrors Japanese culture's attention to social dynamics and relationships."
+      }
+    ]
+  },
+  {
+    "key": "word_order",
+    "name": "Word Order (SOV)",
+    "description": "Japanese sentence structure",
+    "iconName": "list.bullet",
+    "color": "#c084fc",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ej_wo1",
+        "question": "I eat rice",
+        "translation": "(私はご飯を食べます)",
+        "options": [
+          "私はご飯を食べます",
+          "食べます私はご飯を",
+          "ご飯を私は食べます",
+          "私は食べますご飯を"
+        ],
+        "correct": "私はご飯を食べます",
+        "explanation": "Japanese follows Subject-Object-Verb order, different from English's Subject-Verb-Object. 'I eat rice' becomes 私はご飯を食べます (watashi wa gohan o tabemasu). The verb always comes last. Think of it as building toward the action - you set the scene with subject and object, then reveal what happens. This may feel backwards at first, but it creates a logical flow where context builds before the crucial verb arrives."
+      },
+      {
+        "id": "ej_wo2",
+        "question": "I am a student",
+        "translation": "(私は学生です)",
+        "options": [
+          "私は学生です",
+          "学生です私は",
+          "です私は学生",
+          "私は です学生"
+        ],
+        "correct": "私は学生です",
+        "explanation": "For noun sentences, the pattern is: Topic は Noun です. 私は学生です (watashi wa gakusei desu). The です (desu) works like a polite 'be' verb but always comes at the end. Japanese builds meaning from left to right, ending with the grammatical marker. This final position for grammatical elements is consistent throughout Japanese, creating a predictable pattern once you adjust to the ending focus."
+      },
+      {
+        "id": "ej_wo3",
+        "question": "This book is interesting",
+        "translation": "(この本は面白いです)",
+        "options": [
+          "この本は面白いです",
+          "面白いですこの本は",
+          "この本は です面白い",
+          "です この本は面白い"
+        ],
+        "correct": "この本は面白いです",
+        "explanation": "For adjectives, the pattern is: Topic は Adjective です. この本は面白いです (kono hon wa omoshiroi desu). Japanese adjectives come before です, which adds politeness. Unlike English where adjectives often go before nouns, Japanese puts them in predicate position when describing something. The です at the end wraps up the sentence politely, though it's grammatically optional with adjectives."
+      },
+      {
+        "id": "ej_wo4",
+        "question": "I go to Tokyo",
+        "translation": "(私は東京に行きます)",
+        "options": [
+          "私は東京に行きます",
+          "行きます私は東京に",
+          "東京に私は行きます",
+          "私は行きます東京に"
+        ],
+        "correct": "私は東京に行きます",
+        "explanation": "Subject, destination with に, then verb: 私は東京に行きます (watashi wa tōkyō ni ikimasu). All modifiers and marked elements come before the verb. Japanese stacks information before revealing the action, creating suspense in a way. The verb-final position means listeners wait for the action word, making it emphatic when it arrives. This structure stays consistent even as sentences grow complex."
+      },
+      {
+        "id": "ej_wo5",
+        "question": "I study Japanese at school",
+        "translation": "(私は学校で日本語を勉強します)",
+        "options": [
+          "私は学校で日本語を勉強します",
+          "勉強します私は学校で日本語を",
+          "私は勉強します学校で日本語を",
+          "私は日本語を学校で勉強します"
+        ],
+        "correct": "私は学校で日本語を勉強します",
+        "explanation": "With multiple elements, typical order is: Subject は Location で Object を Verb. 私は学校で日本語を勉強します (watashi wa gakkō de nihongo o benkyō shimasu). Place often comes before object, but Japanese word order is flexible as long as particles mark relationships and verb stays final. The particles let you rearrange elements for emphasis while maintaining clarity - a beautiful feature of Japanese grammar."
+      },
+      {
+        "id": "ej_wo6",
+        "question": "I ate lunch with friends yesterday",
+        "translation": "(私は昨日友達と昼ご飯を食べました)",
+        "options": [
+          "私は昨日友達と昼ご飯を食べました",
+          "食べました私は昨日友達と昼ご飯を",
+          "私は昼ご飯を昨日友達と食べました",
+          "昨日私は友達と食べました昼ご飯を"
+        ],
+        "correct": "私は昨日友達と昼ご飯を食べました",
+        "explanation": "Time usually comes early after the topic: 私は昨日友達と昼ご飯を食べました (watashi wa kinō tomodachi to hirugohan o tabemashita). Temporal expressions often follow the topic particle は. Then companions (と), then objects (を), finally the verb. This time-first approach sets the temporal stage before describing what happened within that time frame. The consistent verb-final position anchors the whole structure."
+      },
+      {
+        "id": "ej_wo7",
+        "question": "I want to go to Japan",
+        "translation": "(私は日本に行きたいです)",
+        "options": [
+          "私は日本に行きたいです",
+          "行きたいです私は日本に",
+          "日本に私は行きたいです",
+          "私は行きたいです日本に"
+        ],
+        "correct": "私は日本に行きたいです",
+        "explanation": "Desire expressions use たい (tai) attached to the verb stem: 私は日本に行きたいです (watashi wa nihon ni ikitai desu). The pattern stays Subject は Destination に Verb-tai です. Even with たい, the verb-related element stays at the end. Japanese builds complex meanings by attaching elements to verbs while keeping that verb-final structure sacred. This consistency helps you navigate even complicated sentences."
+      },
+      {
+        "id": "ej_wo8",
+        "question": "Tomorrow I will meet a friend",
+        "translation": "(明日私は友達に会います)",
+        "options": [
+          "明日私は友達に会います",
+          "会います明日私は友達に",
+          "私は明日友達に会います",
+          "明日友達に私は会います"
+        ],
+        "correct": "明日私は友達に会います",
+        "explanation": "Time expressions can start sentences for emphasis: 明日私は友達に会います (ashita watashi wa tomodachi ni aimasu). You can also say 私は明日友達に会います. Starting with time emphasizes when, while starting with subject emphasizes who. This flexibility lets you shape focus. Japanese word order, while having general patterns, allows variation for nuance. The particle system keeps relationships clear despite reordering."
+      },
+      {
+        "id": "ej_wo9",
+        "question": "I can speak Japanese",
+        "translation": "(私は日本語を話せます)",
+        "options": [
+          "私は日本語を話せます",
+          "話せます私は日本語を",
+          "日本語を私は話せます",
+          "私は話せます日本語を"
+        ],
+        "correct": "私は日本語を話せます",
+        "explanation": "Ability uses られる (rareru) or shorter potential forms: 私は日本語を話せます (watashi wa nihongo o hanasemasu). The object marked with を comes before the potential verb. Japanese treats ability as a verb conjugation rather than a separate modal like English 'can'. This integration keeps the verb-final pattern while expressing modality through verb form changes - elegant and consistent."
+      },
+      {
+        "id": "ej_wo10",
+        "question": "That movie was interesting",
+        "translation": "(あの映画は面白かったです)",
+        "options": [
+          "あの映画は面白かったです",
+          "面白かったですあの映画は",
+          "あの映画は です面白かった",
+          "です面白かったあの映画は"
+        ],
+        "correct": "あの映画は面白かったです",
+        "explanation": "Past tense adjectives: あの映画は面白かったです (ano eiga wa omoshirokatta desu). The adjective conjugates to past かった, then です adds politeness. Japanese adjectives conjugate directly for tense, unlike English where we use 'was/were'. The sentence structure remains Topic は Adjective-past です. This independence of adjectives - conjugating on their own - is uniquely Japanese and wonderfully efficient."
+      },
+      {
+        "id": "ej_wo11",
+        "question": "I don't eat meat",
+        "translation": "(私は肉を食べません)",
+        "options": [
+          "私は肉を食べません",
+          "食べません私は肉を",
+          "肉を私は食べません",
+          "私は食べません肉を"
+        ],
+        "correct": "私は肉を食べません",
+        "explanation": "Negative verbs end in ません (masen): 私は肉を食べません (watashi wa niku o tabemasen). The structure stays the same - only the verb form changes. Japanese marks negation through verb conjugation rather than separate words like English 'not'. This keeps the verb-final position stable whether affirmative or negative. The whole sentence structure remains predictable regardless of tense or polarity."
+      },
+      {
+        "id": "ej_wo12",
+        "question": "Please eat",
+        "translation": "(食べてください)",
+        "options": [
+          "食べてください",
+          "ください食べて",
+          "食べて ください",
+          "てください食べ"
+        ],
+        "correct": "食べてください",
+        "explanation": "Requests use て-form + ください: 食べてください (tabete kudasai). The verb converts to て-form, then ください adds politeness to the request. In requests, the subject is often dropped as it's understood to be 'you'. Japanese frequently omits obvious information, relying on context. This economy of expression - saying only what's necessary - makes Japanese efficient and requires listeners to actively engage with context."
+      },
+      {
+        "id": "ej_wo13",
+        "question": "I am eating now",
+        "translation": "(私は今食べています)",
+        "options": [
+          "私は今食べています",
+          "食べています私は今",
+          "今私は食べています",
+          "私は食べています今"
+        ],
+        "correct": "私は今食べています",
+        "explanation": "Progressive form uses ている (te iru): 私は今食べています (watashi wa ima tabete imasu). Time word 今 (now) can go after は or before the verb. The ている shows ongoing action, similar to English '-ing'. Japanese builds this through て-form + いる (to be/exist), literally expressing 'is in the state of eating'. This compositional approach - building complex meanings from simple elements - characterizes Japanese grammar beautifully."
+      },
+      {
+        "id": "ej_wo14",
+        "question": "I have been to Tokyo",
+        "translation": "(私は東京に行ったことがあります)",
+        "options": [
+          "私は東京に行ったことがあります",
+          "行ったことがあります私は東京に",
+          "私は行ったことがあります東京に",
+          "東京に私は行ったことがあります"
+        ],
+        "correct": "私は東京に行ったことがあります",
+        "explanation": "Experience uses past form + ことがある: 私は東京に行ったことがあります (watashi wa tōkyō ni itta koto ga arimasu). Literally 'the thing of having gone exists'. Japanese often expresses concepts through こと (thing/fact), creating abstract nominalizations. This construction stays verb-final with がある at the end. The complexity builds through stacking elements while maintaining the fundamental structure."
+      },
+      {
+        "id": "ej_wo15",
+        "question": "If it rains tomorrow, I won't go",
+        "translation": "(明日雨が降ったら、私は行きません)",
+        "options": [
+          "明日雨が降ったら、私は行きません",
+          "私は行きません明日雨が降ったら",
+          "明日私は行きません雨が降ったら",
+          "雨が降ったら明日私は行きません"
+        ],
+        "correct": "明日雨が降ったら、私は行きません",
+        "explanation": "Conditional clauses come before main clauses: 明日雨が降ったら、私は行きません (ashita ame ga futtara, watashi wa ikimasen). The condition is stated first with たら (tara), then the result. Both clauses maintain verb-final order. Japanese builds from condition to consequence, creating logical flow. Complex sentences extend this building-block approach - each clause maintains its structure while combining into larger meanings."
+      }
+    ]
+  },
+  {
+    "key": "present_tense",
+    "name": "Present Tense",
+    "description": "Present and habitual actions",
+    "iconName": "clock",
+    "color": "#60a5fa",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ej_pres1",
+        "question": "私は毎日___",
+        "translation": "(I eat every day)",
+        "options": [
+          "食べます",
+          "食べました",
+          "食べる",
+          "食べて"
+        ],
+        "correct": "食べます",
+        "explanation": "Welcome to Japanese present tense. The polite present form ends in ます (masu). 食べます (tabemasu) means eat or eats in the present. Unlike English, Japanese does not change the verb for different subjects. This consistency is one of the kindest features for learners. The ます form is respectful and appropriate in most situations, making it your go-to form for everyday conversations."
+      },
+      {
+        "id": "ej_pres2",
+        "question": "彼女は学校に___",
+        "translation": "(She goes to school)",
+        "options": [
+          "行きます",
+          "行きました",
+          "行く",
+          "行って"
+        ],
+        "correct": "行きます",
+        "explanation": "行きます (ikimasu) is the present tense of go. Notice how the verb ending stays the same regardless of who is going. Japanese verbs do not conjugate for person or number, which simplifies things greatly. Focus your energy on learning one form well rather than multiple variations. School is a place of growth and learning."
+      },
+      {
+        "id": "ej_pres3",
+        "question": "私たちは日本語を___",
+        "translation": "(We study Japanese)",
+        "options": [
+          "勉強します",
+          "勉強しました",
+          "勉強する",
+          "勉強して"
+        ],
+        "correct": "勉強します",
+        "explanation": "勉強します (benkyō shimasu) means study. This is a する verb - a category where you attach する (do) to a noun. Many activities work this way. Learning a language opens doors to new cultures and ways of thinking. Each study session brings you closer to understanding Japanese."
+      },
+      {
+        "id": "ej_pres4",
+        "question": "私は水を___",
+        "translation": "(I drink water)",
+        "options": [
+          "飲みます",
+          "飲みました",
+          "飲む",
+          "飲んで"
+        ],
+        "correct": "飲みます",
+        "explanation": "飲みます (nomimasu) is the polite present form of drink. Water is essential for life, keeping both body and mind refreshed. The を particle marks the object being drunk. Japanese systematically marks grammatical relationships with these particles, creating clarity."
+      },
+      {
+        "id": "ej_pres5",
+        "question": "彼は本を___",
+        "translation": "(He reads books)",
+        "options": [
+          "読みます",
+          "読みました",
+          "読む",
+          "読んで"
+        ],
+        "correct": "読みます",
+        "explanation": "読みます (yomimasu) means read in present tense. Books transport us to different worlds, times, and minds. Reading Japanese books is a beautiful goal for language learners. The を particle marks what is being read. This Subject-Object-Verb order becomes natural with practice."
+      },
+      {
+        "id": "ej_pres6",
+        "question": "私は音楽を___",
+        "translation": "(I listen to music)",
+        "options": [
+          "聞きます",
+          "聞きました",
+          "聞く",
+          "聞いて"
+        ],
+        "correct": "聞きます",
+        "explanation": "聞きます (kikimasu) means listen or hear. Music is a universal language that transcends words. Japanese music offers beautiful melodies and interesting lyrical structures that can enhance your language learning. The present tense with ます is your reliable friend for describing habits and routines."
+      },
+      {
+        "id": "ej_pres7",
+        "question": "私たちは映画を___",
+        "translation": "(We watch movies)",
+        "options": [
+          "見ます",
+          "見ました",
+          "見る",
+          "見て"
+        ],
+        "correct": "見ます",
+        "explanation": "見ます (mimasu) means see or watch. Movies are windows into culture, showing how people live, think, and interact. Japanese cinema has a rich tradition worth exploring. The present tense describes both what you do right now and what you do habitually."
+      },
+      {
+        "id": "ej_pres8",
+        "question": "彼女は手紙を___",
+        "translation": "(She writes letters)",
+        "options": [
+          "書きます",
+          "書きました",
+          "書く",
+          "書いて"
+        ],
+        "correct": "書きます",
+        "explanation": "書きます (kakimasu) means write. In our digital age, handwritten letters carry special warmth and personal touch. Writing helps clarify thoughts and express feelings precisely. The ます ending adds politeness to all these verbs, making your speech respectful."
+      },
+      {
+        "id": "ej_pres9",
+        "question": "私は友達と___",
+        "translation": "(I talk with friends)",
+        "options": [
+          "話します",
+          "話しました",
+          "話す",
+          "話して"
+        ],
+        "correct": "話します",
+        "explanation": "話します (hanashimasu) means talk or speak. The particle と marks accompaniment - with friends. Conversations with friends enrich life, sharing joys and supporting through challenges. Practicing Japanese conversation builds both language skills and confidence."
+      },
+      {
+        "id": "ej_pres10",
+        "question": "彼は車を___",
+        "translation": "(He buys a car)",
+        "options": [
+          "買います",
+          "買いました",
+          "買う",
+          "買って"
+        ],
+        "correct": "買います",
+        "explanation": "買います (kaimasu) means buy. Major purchases like cars are significant decisions. The present tense can indicate habitual action or planned future action depending on context. Japanese often uses present forms for planned future events."
+      },
+      {
+        "id": "ej_pres11",
+        "question": "私は朝ご飯を___",
+        "translation": "(I eat breakfast)",
+        "options": [
+          "食べます",
+          "食べました",
+          "食べる",
+          "食べて"
+        ],
+        "correct": "食べます",
+        "explanation": "食べます (tabemasu) again, this time with breakfast. 朝ご飯 (asagohan) literally means morning rice, showing rice's central role in Japanese meals. Breakfast provides energy for the day ahead. The consistency of the ます form means once you learn it, you can use it broadly."
+      },
+      {
+        "id": "ej_pres12",
+        "question": "彼女は猫が___",
+        "translation": "(She likes cats)",
+        "options": [
+          "好きです",
+          "好きでした",
+          "好き",
+          "好きな"
+        ],
+        "correct": "好きです",
+        "explanation": "好きです (suki desu) expresses liking. Note that 好き is an adjective-like word, not a verb, so it takes です rather than ます. The subject of liking uses が rather than を. Cats have been part of Japanese culture for centuries, appearing in art, literature, and daily life."
+      },
+      {
+        "id": "ej_pres13",
+        "question": "私は公園を___",
+        "translation": "(I walk in the park)",
+        "options": [
+          "歩きます",
+          "歩きました",
+          "歩く",
+          "歩いて"
+        ],
+        "correct": "歩きます",
+        "explanation": "歩きます (arukimasu) means walk. Walking in parks provides exercise and peace, connecting us with nature. The を particle here marks the path of movement through the park. Understanding these nuances deepens your comprehension of how Japanese structures meaning."
+      },
+      {
+        "id": "ej_pres14",
+        "question": "彼は早く___",
+        "translation": "(He gets up early)",
+        "options": [
+          "起きます",
+          "起きました",
+          "起きる",
+          "起きて"
+        ],
+        "correct": "起きます",
+        "explanation": "起きます (okimasu) means get up or wake up. 早く (hayaku) is an adverb meaning early. Early risers often feel they gain extra time in their day. This simple sentence shows how Japanese builds meaning through combining elements efficiently."
+      },
+      {
+        "id": "ej_pres15",
+        "question": "私は日本に___",
+        "translation": "(I live in Japan)",
+        "options": [
+          "住んでいます",
+          "住みます",
+          "住む",
+          "住んで"
+        ],
+        "correct": "住んでいます",
+        "explanation": "住んでいます (sunde imasu) means am living or live. This uses the て-form plus います to show an ongoing state. Living somewhere is a continuous state, not a single action. This pattern appears frequently for ongoing states and is essential for natural Japanese."
+      }
+    ]
+  },
+  {
+    "key": "past_tense",
+    "name": "Past Tense",
+    "description": "Completed actions in the past",
+    "iconName": "arrow.clockwise",
+    "color": "#c084fc",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ej_past1",
+        "question": "私は昨日___",
+        "translation": "(I ate yesterday)",
+        "options": [
+          "食べました",
+          "食べます",
+          "食べる",
+          "食べて"
+        ],
+        "correct": "食べました",
+        "explanation": "Past tense in Japanese is formed by changing ます to ました. 食べました (tabemashita) means ate. The transformation is consistent across all verbs - simply replace ます with ました. This regularity makes past tense easier to master than in many languages."
+      },
+      {
+        "id": "ej_past2",
+        "question": "彼女は学校に___",
+        "translation": "(She went to school)",
+        "options": [
+          "行きました",
+          "行きます",
+          "行く",
+          "行って"
+        ],
+        "correct": "行きました",
+        "explanation": "行きました (ikimashita) is past tense of go. The pattern holds: 行きます becomes 行きました. No irregularities to worry about. School days create memories and friendships that last lifetimes. Each day of learning builds toward future opportunities."
+      },
+      {
+        "id": "ej_past3",
+        "question": "私たちは日本語を___",
+        "translation": "(We studied Japanese)",
+        "options": [
+          "勉強しました",
+          "勉強します",
+          "勉強する",
+          "勉強して"
+        ],
+        "correct": "勉強しました",
+        "explanation": "勉強しました (benkyō shimashita) means studied. する verbs follow the same pattern: します becomes しました. Your past study efforts accumulate, building toward fluency. Each study session contributed to your current knowledge."
+      },
+      {
+        "id": "ej_past4",
+        "question": "私は水を___",
+        "translation": "(I drank water)",
+        "options": [
+          "飲みました",
+          "飲みます",
+          "飲む",
+          "飲んで"
+        ],
+        "correct": "飲みました",
+        "explanation": "飲みました (nomimashita) is past tense of drink. Staying hydrated throughout the day supports physical and mental performance. The past tense allows you to report completed actions, share experiences, and tell stories."
+      },
+      {
+        "id": "ej_past5",
+        "question": "彼は本を___",
+        "translation": "(He read a book)",
+        "options": [
+          "読みました",
+          "読みます",
+          "読む",
+          "読んで"
+        ],
+        "correct": "読みました",
+        "explanation": "読みました (yomimashita) means read in past tense. Completing a book brings satisfaction. Each book read adds to your understanding and vocabulary. The reliable ます to ました transformation works across all verb groups."
+      },
+      {
+        "id": "ej_past6",
+        "question": "私は音楽を___",
+        "translation": "(I listened to music)",
+        "options": [
+          "聞きました",
+          "聞きます",
+          "聞く",
+          "聞いて"
+        ],
+        "correct": "聞きました",
+        "explanation": "聞きました (kikimashita) means listened. Music can shift moods, evoke memories, and provide comfort. Sharing what music you listened to is a way of sharing part of yourself. The past tense lets you recount experiences."
+      },
+      {
+        "id": "ej_past7",
+        "question": "私たちは映画を___",
+        "translation": "(We watched a movie)",
+        "options": [
+          "見ました",
+          "見ます",
+          "見る",
+          "見て"
+        ],
+        "correct": "見ました",
+        "explanation": "見ました (mimashita) means watched or saw. Movies create shared experiences. Discussing films you have watched helps practice past tense naturally. The ました form is polite and appropriate for all social situations."
+      },
+      {
+        "id": "ej_past8",
+        "question": "彼女は手紙を___",
+        "translation": "(She wrote a letter)",
+        "options": [
+          "書きました",
+          "書きます",
+          "書く",
+          "書いて"
+        ],
+        "correct": "書きました",
+        "explanation": "書きました (kakimashita) means wrote. Letters capture moments in time, preserving thoughts and feelings. The past tense helps you share completed actions and accomplishments. Each ました verb form carries the same respectful tone."
+      },
+      {
+        "id": "ej_past9",
+        "question": "私は友達と___",
+        "translation": "(I talked with a friend)",
+        "options": [
+          "話しました",
+          "話します",
+          "話す",
+          "話して"
+        ],
+        "correct": "話しました",
+        "explanation": "話しました (hanashimashita) means talked or spoke. Conversations with friends enrich our social lives. The past tense lets you recount these interactions when sharing your day with others. Storytelling through past tense builds narrative skills."
+      },
+      {
+        "id": "ej_past10",
+        "question": "彼は車を___",
+        "translation": "(He bought a car)",
+        "options": [
+          "買いました",
+          "買います",
+          "買う",
+          "買って"
+        ],
+        "correct": "買いました",
+        "explanation": "買いました (kaimasu) means bought. Major purchases are milestones worth discussing. The past tense helps share news about completed events. The consistent transformation from ます to ました means you never have to wonder how to form past tense."
+      },
+      {
+        "id": "ej_past11",
+        "question": "私は朝ご飯を___",
+        "translation": "(I ate breakfast)",
+        "options": [
+          "食べました",
+          "食べます",
+          "食べる",
+          "食べて"
+        ],
+        "correct": "食べました",
+        "explanation": "食べました (tabemashita) for completed breakfast. Starting the day with breakfast provides energy. Recounting daily routines in past tense is common in conversation. The reliability of ました endings makes these everyday narratives easy to construct."
+      },
+      {
+        "id": "ej_past12",
+        "question": "彼女は猫が___",
+        "translation": "(She liked cats)",
+        "options": [
+          "好きでした",
+          "好きです",
+          "好き",
+          "好きな"
+        ],
+        "correct": "好きでした",
+        "explanation": "好きでした (suki deshita) is past tense. For な-adjectives and nouns with です, change です to でした. Perhaps she liked cats before but has different preferences now. The でした form handles past states and conditions gracefully."
+      },
+      {
+        "id": "ej_past13",
+        "question": "私は公園を___",
+        "translation": "(I walked in the park)",
+        "options": [
+          "歩きました",
+          "歩きます",
+          "歩く",
+          "歩いて"
+        ],
+        "correct": "歩きました",
+        "explanation": "歩きました (arukimashita) means walked. Walking in parks offers quiet time for reflection. Past tense helps you share these peaceful moments with others. The consistent pattern across all these verbs means your confidence grows with each correctly formed sentence."
+      },
+      {
+        "id": "ej_past14",
+        "question": "彼は早く___",
+        "translation": "(He got up early)",
+        "options": [
+          "起きました",
+          "起きます",
+          "起きる",
+          "起きて"
+        ],
+        "correct": "起きます",
+        "explanation": "起きました (okimashita) means got up or woke up. Early rising can be productive or peaceful depending on the day. The past tense reports what happened, allowing you to explain schedules and routines."
+      },
+      {
+        "id": "ej_past15",
+        "question": "私は日本に___",
+        "translation": "(I lived in Japan)",
+        "options": [
+          "住んでいました",
+          "住みました",
+          "住む",
+          "住んで"
+        ],
+        "correct": "住んでいました",
+        "explanation": "住んでいました (sunde imashita) is past continuous state. The ています form becomes ていました in past tense. This describes a past ongoing state - you were living there over a period. The construction maintains the nuance that living somewhere is a continuous condition."
+      }
+    ]
+  },
+  {
+    "key": "polite_forms",
+    "name": "Polite Speech (Keigo)",
+    "description": "Respectful and honorific language",
+    "iconName": "person.2",
+    "color": "#818cf8",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ej_pol1",
+        "question": "先生は___",
+        "translation": "(The teacher is)",
+        "options": [
+          "いらっしゃいます",
+          "います",
+          "いる",
+          "おります"
+        ],
+        "correct": "いらっしゃいます",
+        "explanation": "Welcome to keigo, the beautiful system of respect in Japanese. いらっしゃいます (irasshaimasu) is the honorific form of います (to be or exist for people). Use it when referring to someone of higher status with respect. Teachers hold a revered position in Japanese culture, guiding students toward knowledge and growth."
+      },
+      {
+        "id": "ej_pol2",
+        "question": "社長は___",
+        "translation": "(The president eats)",
+        "options": [
+          "召し上がります",
+          "食べます",
+          "食べる",
+          "いただきます"
+        ],
+        "correct": "召し上がります",
+        "explanation": "召し上がります (meshiagarimasu) is the honorific form of 食べます (eat). For people of higher status, elevate their actions with honorific verbs. いただきます is humble form (for your own actions), while 召し上がります is honorific (for others' actions). This distinction shows the nuanced respect system."
+      },
+      {
+        "id": "ej_pol3",
+        "question": "私が___",
+        "translation": "(I will do it)",
+        "options": [
+          "いたします",
+          "します",
+          "する",
+          "なさいます"
+        ],
+        "correct": "いたします",
+        "explanation": "いたします (itashimasu) is the humble form of します (do). When speaking to someone of higher status, lower your own actions with humble forms. This shows modesty and respect. The keigo system balances elevating others while maintaining modesty about yourself."
+      },
+      {
+        "id": "ej_pol4",
+        "question": "お客様は___",
+        "translation": "(The customer is)",
+        "options": [
+          "いらっしゃいます",
+          "います",
+          "いる",
+          "おります"
+        ],
+        "correct": "いらっしゃいます",
+        "explanation": "お客様 (customer or guest) receives honorific treatment with いらっしゃいます. In Japanese business culture, customers are highly respected. The honorific language reflects this respect tangibly. Service with respect creates pleasant experiences for all."
+      },
+      {
+        "id": "ej_pol5",
+        "question": "部長は___",
+        "translation": "(The department head says)",
+        "options": [
+          "おっしゃいます",
+          "言います",
+          "言う",
+          "申します"
+        ],
+        "correct": "おっしゃいます",
+        "explanation": "おっしゃいます (osshaimasu) is honorific for 言います (say). Department heads and superiors have their speech elevated linguistically. This verb trio shows the system clearly: humble for yourself, plain for equals, honorific for superiors."
+      },
+      {
+        "id": "ej_pol6",
+        "question": "私が___",
+        "translation": "(I will go)",
+        "options": [
+          "参ります",
+          "行きます",
+          "行く",
+          "いらっしゃいます"
+        ],
+        "correct": "参ります",
+        "explanation": "参ります (mairimasu) is the humble form of 行きます (go). Lowering your own actions shows respect to your listener or the person you are going to meet. This modesty is valued in Japanese culture. The keigo system makes respect a structural part of the language."
+      },
+      {
+        "id": "ej_pol7",
+        "question": "先生は___",
+        "translation": "(The teacher comes)",
+        "options": [
+          "いらっしゃいます",
+          "来ます",
+          "来る",
+          "参ります"
+        ],
+        "correct": "いらっしゃいます",
+        "explanation": "いらっしゃいます serves as honorific for both います (be) and 来ます (come). Context determines which meaning applies. For teachers and respected figures, this honorific form is natural. It shows that their presence is valued and respected."
+      },
+      {
+        "id": "ej_pol8",
+        "question": "私が___",
+        "translation": "(I say or am called)",
+        "options": [
+          "申します",
+          "言います",
+          "言う",
+          "おっしゃいます"
+        ],
+        "correct": "申します",
+        "explanation": "申します (mōshimasu) is humble form of 言います. When introducing yourself formally, you might say 私は田中と申します (I am called Tanaka). This humble self-reference is standard in business and formal settings."
+      },
+      {
+        "id": "ej_pol9",
+        "question": "お客様が___",
+        "translation": "(The customer comes)",
+        "options": [
+          "いらっしゃいます",
+          "来ます",
+          "来る",
+          "参ります"
+        ],
+        "correct": "いらっしゃいます",
+        "explanation": "Again, いらっしゃいます as honorific for 来ます (come). Customer service in Japan is renowned for its politeness and respect. This linguistic respect is part of that culture. Treating customers with honorific language acknowledges their importance."
+      },
+      {
+        "id": "ej_pol10",
+        "question": "私が___",
+        "translation": "(I am)",
+        "options": [
+          "おります",
+          "います",
+          "いる",
+          "いらっしゃいます"
+        ],
+        "correct": "おります",
+        "explanation": "おります (orimasu) is humble form of います (be or exist). In formal situations, you might lower yourself linguistically while speaking about being somewhere. This humility is about showing respect through modesty. The system creates social harmony through linguistic choices."
+      },
+      {
+        "id": "ej_pol11",
+        "question": "社長は___",
+        "translation": "(The president knows)",
+        "options": [
+          "ご存じです",
+          "知っています",
+          "知ってます",
+          "存じています"
+        ],
+        "correct": "ご存じです",
+        "explanation": "ご存じです (gozonji desu) is honorific for 知っています (know). Elevating someone's knowledge shows respect for their wisdom and experience. These parallel forms let you adjust respect levels naturally in conversation."
+      },
+      {
+        "id": "ej_pol12",
+        "question": "私が___",
+        "translation": "(I see or meet)",
+        "options": [
+          "お目にかかります",
+          "会います",
+          "会う",
+          "お会いになります"
+        ],
+        "correct": "お目にかかります",
+        "explanation": "お目にかかります (ome ni kakarimasu) is an extremely humble way to say meet, literally meaning I humbly receive the honor of seeing you. This deep humility is appropriate when meeting very important people or in very formal situations."
+      },
+      {
+        "id": "ej_pol13",
+        "question": "先生が___",
+        "translation": "(The teacher reads)",
+        "options": [
+          "お読みになります",
+          "読みます",
+          "読む",
+          "読ませていただきます"
+        ],
+        "correct": "お読みになります",
+        "explanation": "お読みになります is the honorific pattern: お plus verb stem plus になります. This pattern works for many verbs, giving you a formula for showing respect. This pattern is productive, meaning you can apply it to new verbs once you learn the structure."
+      },
+      {
+        "id": "ej_pol14",
+        "question": "私が___",
+        "translation": "(I humbly ask)",
+        "options": [
+          "伺います",
+          "聞きます",
+          "聞く",
+          "お聞きになります"
+        ],
+        "correct": "伺います",
+        "explanation": "伺います (ukagaimasu) is humble for 聞きます (hear or ask). It can also mean humbly visit. Asking questions with humble forms shows respect to the person you are asking. This encourages open communication by softening your request linguistically."
+      },
+      {
+        "id": "ej_pol15",
+        "question": "お客様が___",
+        "translation": "(The customer uses)",
+        "options": [
+          "お使いになります",
+          "使います",
+          "使う",
+          "使わせていただきます"
+        ],
+        "correct": "お使いになります",
+        "explanation": "お使いになります elevates the customer's action of using something. In retail and service industries, this respectful language is standard. It makes customers feel valued and welcome. The consistent use of honorifics contributes to excellent service."
+      }
+    ]
+  },
+  {
+    "key": "adjectives",
+    "name": "Adjectives (い & な)",
+    "description": "Descriptive words in Japanese",
+    "iconName": "face.smiling",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ej_adj1",
+        "question": "この本は___",
+        "translation": "(This book is interesting)",
+        "options": [
+          "面白いです",
+          "面白いな",
+          "面白く",
+          "面白かった"
+        ],
+        "correct": "面白いです",
+        "explanation": "Japanese has two types of adjectives: い-adjectives and な-adjectives. 面白い (omoshiroi) is an い-adjective, ending in い. These adjectives conjugate like verbs. To make them polite, simply add です. Books can transport us to new worlds, and interesting books make that journey especially rewarding."
+      },
+      {
+        "id": "ej_adj2",
+        "question": "彼女は___人です",
+        "translation": "(She is a kind person)",
+        "options": [
+          "親切な",
+          "親切",
+          "親切に",
+          "親切の"
+        ],
+        "correct": "親切な",
+        "explanation": "親切 (shinsetsu) is a な-adjective. When modifying nouns directly, な-adjectives need な between them and the noun. So 親切な人 (kind person). Without the noun, you say 親切です (is kind). Kindness makes the world warmer."
+      },
+      {
+        "id": "ej_adj3",
+        "question": "今日は___",
+        "translation": "(Today is hot)",
+        "options": [
+          "暑いです",
+          "暑いな",
+          "暑く",
+          "暑かった"
+        ],
+        "correct": "暑いです",
+        "explanation": "暑い (atsui) is an い-adjective meaning hot (for weather). The い-adjective plus です pattern creates polite present tense. Weather affects our moods and activities, making weather descriptions common in conversation."
+      },
+      {
+        "id": "ej_adj4",
+        "question": "この部屋は___",
+        "translation": "(This room is quiet)",
+        "options": [
+          "静かです",
+          "静かな",
+          "静かに",
+          "静かの"
+        ],
+        "correct": "静かです",
+        "explanation": "静か (shizuka) is a な-adjective meaning quiet. When used as predicate (at sentence end), な-adjectives take です directly: 静かです. No な is needed at sentence end. Quiet spaces allow for rest, concentration, and peace."
+      },
+      {
+        "id": "ej_adj5",
+        "question": "この車は___",
+        "translation": "(This car is old)",
+        "options": [
+          "古いです",
+          "古いな",
+          "古く",
+          "古かった"
+        ],
+        "correct": "古いです",
+        "explanation": "古い (furui) is an い-adjective meaning old. Again, the い-adjective plus です pattern. Old things can carry history and character. In Japanese culture, well-maintained old objects are often valued for their patina and story."
+      },
+      {
+        "id": "ej_adj6",
+        "question": "彼は___学生です",
+        "translation": "(He is a serious student)",
+        "options": [
+          "真面目な",
+          "真面目",
+          "真面目に",
+          "真面目の"
+        ],
+        "correct": "真面目な",
+        "explanation": "真面目 (majime) is a な-adjective meaning serious or earnest. Modifying 学生 (student) requires な. Being serious about studies shows dedication and respect for learning. Japanese culture values diligence and earnest effort in education."
+      },
+      {
+        "id": "ej_adj7",
+        "question": "昨日は___",
+        "translation": "(Yesterday was cold)",
+        "options": [
+          "寒かったです",
+          "寒いです",
+          "寒くです",
+          "寒いでした"
+        ],
+        "correct": "寒かったです",
+        "explanation": "For past tense, い-adjectives change い to かった. 寒い (samui means cold) becomes 寒かった in past. Then add です for politeness: 寒かったです. This conjugation is regular for all い-adjectives. Cold days make warm spaces more appreciated."
+      },
+      {
+        "id": "ej_adj8",
+        "question": "この町は___",
+        "translation": "(This town is lively)",
+        "options": [
+          "にぎやかです",
+          "にぎやかな",
+          "にぎやかに",
+          "にぎやかの"
+        ],
+        "correct": "にぎやかです",
+        "explanation": "にぎやか (nigiyaka) is a な-adjective meaning lively or bustling. As a predicate, use にぎやかです. Lively towns have energy and activity. Different people prefer different levels of activity in their environment."
+      },
+      {
+        "id": "ej_adj9",
+        "question": "この店は___",
+        "translation": "(This shop is expensive)",
+        "options": [
+          "高いです",
+          "高いな",
+          "高く",
+          "高かった"
+        ],
+        "correct": "高いです",
+        "explanation": "高い (takai) is an い-adjective meaning high or expensive. Price comparisons are part of shopping decisions. While expensive shops may offer quality, affordable options have their own appeal. Understanding prices helps you make informed choices."
+      },
+      {
+        "id": "ej_adj10",
+        "question": "彼女は___先生です",
+        "translation": "(She is a famous teacher)",
+        "options": [
+          "有名な",
+          "有名",
+          "有名に",
+          "有名の"
+        ],
+        "correct": "有名な",
+        "explanation": "有名 (yūmei) is a な-adjective meaning famous. Modifying 先生 requires な. Famous teachers may have reputations for excellence or unique teaching methods. Fame in education often comes from positive impact on many students."
+      },
+      {
+        "id": "ej_adj11",
+        "question": "昨日は___",
+        "translation": "(Yesterday was fun)",
+        "options": [
+          "楽しかったです",
+          "楽しいです",
+          "楽しくです",
+          "楽しいでした"
+        ],
+        "correct": "楽しかったです",
+        "explanation": "楽しい (tanoshii) is an い-adjective meaning fun or enjoyable. Past tense: 楽しかった plus です. Fun days create happy memories. Enjoying life's moments, big and small, contributes to overall happiness and wellbeing."
+      },
+      {
+        "id": "ej_adj12",
+        "question": "この料理は___",
+        "translation": "(This dish is delicious)",
+        "options": [
+          "おいしいです",
+          "おいしいな",
+          "おいしく",
+          "おいしかった"
+        ],
+        "correct": "おいしいです",
+        "explanation": "おいしい (oishii) is an い-adjective meaning delicious. Food brings people together, and discussing food is a universal pleasure. Complimenting food shows appreciation for the cook's effort. Japanese cuisine is known for its beauty and flavor."
+      },
+      {
+        "id": "ej_adj13",
+        "question": "彼は___人です",
+        "translation": "(He is a healthy person)",
+        "options": [
+          "元気な",
+          "元気",
+          "元気に",
+          "元気の"
+        ],
+        "correct": "元気な",
+        "explanation": "元気 (genki) is a な-adjective meaning healthy, energetic, or spirited. Modifying 人 requires な. Health is foundational to living well. Being 元気 encompasses physical health and positive spirit. Wishing someone 元気 shows you care about their wellbeing."
+      },
+      {
+        "id": "ej_adj14",
+        "question": "このかばんは___",
+        "translation": "(This bag is light)",
+        "options": [
+          "軽いです",
+          "軽いな",
+          "軽く",
+          "軽かった"
+        ],
+        "correct": "軽いです",
+        "explanation": "軽い (karui) is an い-adjective meaning light (in weight). Heavy bags can strain shoulders, so light bags are appreciated for daily use. Physical comfort affects how we move through our day. Describing weight helps explain practical aspects of objects."
+      },
+      {
+        "id": "ej_adj15",
+        "question": "この映画は___",
+        "translation": "(This movie was boring)",
+        "options": [
+          "つまらなかったです",
+          "つまらないです",
+          "つまらなくです",
+          "つまらないでした"
+        ],
+        "correct": "つまらなかったです",
+        "explanation": "つまらない (tsumaranai) is an い-adjective meaning boring. Past tense: つまらなかった plus です. Not every movie captivates every viewer. Different stories appeal to different people. Being able to express disappointment honestly helps friends recommend better matches."
+      }
+    ]
+  },
+  {
+    "key": "counters",
+    "name": "Counters (助数詞)",
+    "description": "Counting words for different objects",
+    "iconName": "number",
+    "color": "#fb923c",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ej_cnt1",
+        "question": "りんごを___買います",
+        "translation": "(I buy three apples)",
+        "options": [
+          "三つ",
+          "三人",
+          "三本",
+          "三枚"
+        ],
+        "correct": "三つ",
+        "explanation": "Japanese uses different counters depending on what you are counting. For general small objects, use つ: 一つ、二つ、三つ (hitotsu, futatsu, mittsu). This native Japanese counting system works up to ten and is safe when you do not know the specific counter. The つ counter is your reliable backup."
+      },
+      {
+        "id": "ej_cnt2",
+        "question": "友達が___います",
+        "translation": "(I have two friends)",
+        "options": [
+          "二人",
+          "二つ",
+          "二本",
+          "二枚"
+        ],
+        "correct": "二人",
+        "explanation": "For counting people, use 人 (nin): 一人 (hitori), 二人 (futari), 三人 (san-nin). Notice the irregular readings for one and two. Friendships enrich life immeasurably. Counting people acknowledges individuals, each with their own personality and story."
+      },
+      {
+        "id": "ej_cnt3",
+        "question": "ペンを___持っています",
+        "translation": "(I have one pen)",
+        "options": [
+          "一本",
+          "一つ",
+          "一枚",
+          "一人"
+        ],
+        "correct": "一本",
+        "explanation": "For long, cylindrical objects like pens, pencils, bottles, use 本 (hon): 一本 (ippon), 二本 (ni-hon), 三本 (san-bon). Notice sound changes depending on the number. Pens are tools of expression and learning. The 本 counter applies to many everyday items."
+      },
+      {
+        "id": "ej_cnt4",
+        "question": "紙を___ください",
+        "translation": "(Please give me two sheets of paper)",
+        "options": [
+          "二枚",
+          "二本",
+          "二つ",
+          "二人"
+        ],
+        "correct": "二枚",
+        "explanation": "For flat, thin objects like paper, stamps, plates, use 枚 (mai): 一枚 (ichi-mai), 二枚 (ni-mai), 三枚 (san-mai). Paper serves countless purposes - writing, printing, art. The flatness of these items defines which counter to use."
+      },
+      {
+        "id": "ej_cnt5",
+        "question": "本を___読みました",
+        "translation": "(I read five books)",
+        "options": [
+          "五冊",
+          "五つ",
+          "五本",
+          "五枚"
+        ],
+        "correct": "五冊",
+        "explanation": "For bound items like books and magazines, use 冊 (satsu): 一冊 (issatsu), 二冊 (ni-satsu), 三冊 (san-satsu). Books are treasures of knowledge and imagination. Each book counted represents hours of reading and worlds explored."
+      },
+      {
+        "id": "ej_cnt6",
+        "question": "車が___あります",
+        "translation": "(There are four cars)",
+        "options": [
+          "四台",
+          "四つ",
+          "四本",
+          "四人"
+        ],
+        "correct": "四台",
+        "explanation": "For machines and vehicles, use 台 (dai): 一台 (ichi-dai), 二台 (ni-dai), 三台 (san-dai). Cars, computers, televisions - mechanical things share this counter. Modern life depends on various machines."
+      },
+      {
+        "id": "ej_cnt7",
+        "question": "猫を___飼っています",
+        "translation": "(I have two cats)",
+        "options": [
+          "二匹",
+          "二人",
+          "二つ",
+          "二本"
+        ],
+        "correct": "二匹",
+        "explanation": "For small animals and insects, use 匹 (hiki): 一匹 (ippiki), 二匹 (ni-hiki), 三匹 (san-biki). Cats, dogs, fish, birds - living creatures get their own counter. Pets become family members, bringing joy and companionship."
+      },
+      {
+        "id": "ej_cnt8",
+        "question": "映画を___見ました",
+        "translation": "(I watched three movies)",
+        "options": [
+          "三本",
+          "三つ",
+          "三枚",
+          "三人"
+        ],
+        "correct": "三本",
+        "explanation": "Films and movies use 本 (hon), same as cylindrical objects. Historically, this comes from films being on reels. Movies offer entertainment, education, and emotional experiences. Counting movies helps discuss your viewing habits and recommendations."
+      },
+      {
+        "id": "ej_cnt9",
+        "question": "靴を___買いました",
+        "translation": "(I bought one pair of shoes)",
+        "options": [
+          "一足",
+          "一つ",
+          "一本",
+          "一枚"
+        ],
+        "correct": "一足",
+        "explanation": "For pairs of footwear (shoes, socks), use 足 (soku): 一足 (issoku), 二足 (ni-soku), 三足 (san-soku). The character 足 also means foot or leg, connecting the counter to what you wear on feet. The counter acknowledges they come in pairs."
+      },
+      {
+        "id": "ej_cnt10",
+        "question": "お茶を___飲みました",
+        "translation": "(I drank two cups of tea)",
+        "options": [
+          "二杯",
+          "二つ",
+          "二本",
+          "二枚"
+        ],
+        "correct": "二杯",
+        "explanation": "For cups, bowls, glasses (containers with contents), use 杯 (hai): 一杯 (ippai), 二杯 (ni-hai), 三杯 (san-bai). Tea ceremonies show Japanese reverence for tea. Each cup represents a moment of refreshment and mindfulness."
+      },
+      {
+        "id": "ej_cnt11",
+        "question": "階段を___上がります",
+        "translation": "(I climb three floors)",
+        "options": [
+          "三階",
+          "三つ",
+          "三本",
+          "三人"
+        ],
+        "correct": "三階",
+        "explanation": "For floors of buildings, use 階 (kai): 一階 (ikkai), 二階 (ni-kai), 三階 (san-gai). Buildings organize vertical space, and floor numbers help us navigate. The counter marks levels of human-built spaces."
+      },
+      {
+        "id": "ej_cnt12",
+        "question": "りんごを___食べました",
+        "translation": "(I ate five apples)",
+        "options": [
+          "五個",
+          "五つ",
+          "五本",
+          "五人"
+        ],
+        "correct": "五個",
+        "explanation": "An alternative to つ is using 個 (ko), especially for round objects and food items: 一個 (ikko), 二個 (ni-ko), 三個 (san-ko). This works for apples, oranges, eggs. Apples provide natural sweetness and nutrition."
+      },
+      {
+        "id": "ej_cnt13",
+        "question": "授業が___あります",
+        "translation": "(There are four classes)",
+        "options": [
+          "四回",
+          "四つ",
+          "四本",
+          "四人"
+        ],
+        "correct": "四回",
+        "explanation": "For occurrences or times doing something, use 回 (kai): 一回 (ikkai), 二回 (ni-kai), 三回 (san-kai). Classes, meetings, attempts - things that happen in instances. This counter focuses on frequency rather than physical objects."
+      },
+      {
+        "id": "ej_cnt14",
+        "question": "犬を___散歩させます",
+        "translation": "(I walk one dog)",
+        "options": [
+          "一匹",
+          "一人",
+          "一つ",
+          "一本"
+        ],
+        "correct": "一匹",
+        "explanation": "Dogs, like cats, use 匹 (hiki). Larger animals sometimes use 頭 (tō) instead, but 匹 is safe for most animals. Dogs are loyal companions, deserving care and exercise. Walking dogs benefits both human and animal."
+      },
+      {
+        "id": "ej_cnt15",
+        "question": "歌を___歌いました",
+        "translation": "(I sang two songs)",
+        "options": [
+          "二曲",
+          "二つ",
+          "二本",
+          "二枚"
+        ],
+        "correct": "二曲",
+        "explanation": "For songs and musical pieces, use 曲 (kyoku): 一曲 (ikkyoku), 二曲 (ni-kyoku), 三曲 (san-kyoku). Music transcends language, conveying emotions directly. Each song is a complete artistic work. This counter honors music's special place in culture."
+      }
+    ]
+  }
+]
