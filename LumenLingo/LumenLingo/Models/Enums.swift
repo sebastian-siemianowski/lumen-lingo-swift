@@ -431,6 +431,18 @@ enum QuantumFlowScene: String, CaseIterable, Identifiable {
         }
     }
 
+    /// Per-scheme blend factors matching React's SCHEMES
+    var blendFactor: (dark: Double, light: Double) {
+        switch self {
+        case .dubaiCelestialMirage:      return (0.85, 0.78)
+        case .kyotoSacredTwilight:       return (0.96, 0.94)
+        case .buenosAiresTangoFlame:     return (0.82, 0.76)
+        case .hongKongHarbourDreams:     return (0.86, 0.79)
+        case .marrakechSpiceReverie:     return (0.84, 0.77)
+        case .viennaImperialWaltz:       return (0.87, 0.81)
+        }
+    }
+
     /// 3-color preview gradient for scheme cards
     var previewColors: [Color] {
         return [colors[0], colors[1], colors[2]]

@@ -85,7 +85,7 @@ struct LayoutBackgroundView: View {
                 // Layer 2: Quantum flow (respects user toggle + active state)
                 if showQuantumFlow && isActive {
                     QuantumFlowView(scene: quantumScene, intensity: quantumIntensity, speed: quantumSpeed, isDarkMode: colorScheme == .dark)
-                        .opacity(colorScheme == .dark ? 0.5 : 0.25)
+                        .opacity(colorScheme == .dark ? 0.85 : 0.5)
                 }
 
                 // Layer 3: Cosmic nebula (respects user toggle + active state)

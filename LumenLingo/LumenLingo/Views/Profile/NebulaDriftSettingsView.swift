@@ -135,28 +135,8 @@ struct NebulaDriftSettingsView: View {
                         withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
                             profile?.nebulaPresetEnum = preset
                         }
-                    }
-                    .overlay(alignment: .topTrailing) {
-                        // Fullscreen preview button (React: Maximize2 icon)
-                        Button {
-                            previewingPreset = preset
-                        } label: {
-                            Image(systemName: "arrow.up.left.and.arrow.down.right")
-                                .font(.system(size: 11, weight: .semibold))
-                                .foregroundStyle(.white.opacity(0.8))
-                                .frame(width: 28, height: 28)
-                                .background(
-                                    Circle()
-                                        .fill(.ultraThinMaterial)
-                                        .shadow(color: .black.opacity(0.3), radius: 4, y: 2)
-                                )
-                                .overlay(
-                                    Circle()
-                                        .strokeBorder(.white.opacity(0.2), lineWidth: 0.5)
-                                )
-                        }
-                        .buttonStyle(.plain)
-                        .padding(6)
+                    } onFullscreen: {
+                        previewingPreset = preset
                     }
                 }
             }

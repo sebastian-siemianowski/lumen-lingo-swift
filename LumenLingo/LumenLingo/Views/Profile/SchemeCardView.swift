@@ -11,6 +11,7 @@ struct SchemeCardView: View {
     let isSelected: Bool
     let previewHeight: CGFloat
     let onSelect: () -> Void
+    var onFullscreen: (() -> Void)? = nil
 
     @Environment(\.colorScheme) private var colorScheme
     @State private var isPressed = false
@@ -21,7 +22,8 @@ struct SchemeCardView: View {
         previewColors: [Color],
         isSelected: Bool,
         previewHeight: CGFloat = 80,
-        onSelect: @escaping () -> Void
+        onSelect: @escaping () -> Void,
+        onFullscreen: (() -> Void)? = nil
     ) {
         self.name = name
         self.description = description
@@ -29,6 +31,7 @@ struct SchemeCardView: View {
         self.isSelected = isSelected
         self.previewHeight = previewHeight
         self.onSelect = onSelect
+        self.onFullscreen = onFullscreen
     }
 
     private var isDark: Bool { colorScheme == .dark }
@@ -84,7 +87,7 @@ struct SchemeCardView: View {
     // MARK: - Preview Section
 
     private var previewSection: some View {
-        ZStack(alignment: .topTrailing) {
+        ZStack {
             // Gradient preview
             LinearGradient(
                 colors: previewColors,
@@ -101,27 +104,61 @@ struct SchemeCardView: View {
                 )
             )
 
-            // Selected checkmark
-            if isSelected {
-                ZStack {
-                    // Glow behind checkmark
-                    Circle()
-                        .fill(.purple.opacity(0.3))
-                        .frame(width: 36, height: 36)
-                        .blur(radius: 6)
+            // Top row: fullscreen button (leading) + checkmark (trailing)
+            VStack {
+                HStack {
+                    // Fullscreen preview button (only when onFullscreen is provided)
+                    if let fullscreen = onFullscreen {
+                        Button {
+                            fullscreen()
+                        } label: {
+                            Image(systemName: "arrow.up.left.and.arrow.down.right")
+                                .font(.system(size: 10, weight: .bold))
+                                .foregroundStyle(.white)
+                                .frame(width: 26, height: 26)
+                                .background(
+                                    Circle()
+                                        .fill(.black.opacity(0.35))
+                                        .background(
+                                            Circle()
+                                                .fill(.ultraThinMaterial)
+                                        )
+                                        .clipShape(Circle())
+                                )
+                                .overlay(
+                                    Circle()
+                                        .strokeBorder(.white.opacity(0.25), lineWidth: 0.5)
+                                )
+                        }
+                        .buttonStyle(.plain)
+                    }
 
-                    Circle()
-                        .fill(.white)
-                        .frame(width: 28, height: 28)
-                        .overlay(
-                            Image(systemName: "checkmark.circle.fill")
-                                .font(.system(size: 24))
-                                .foregroundStyle(.purple)
-                        )
-                        .shadow(color: .purple.opacity(0.5), radius: 8)
+                    Spacer()
+
+                    // Selected checkmark
+                    if isSelected {
+                        ZStack {
+                            Circle()
+                                .fill(.purple.opacity(0.3))
+                                .frame(width: 32, height: 32)
+                                .blur(radius: 5)
+
+                            Circle()
+                                .fill(.white)
+                                .frame(width: 24, height: 24)
+                                .overlay(
+                                    Image(systemName: "checkmark")
+                                        .font(.system(size: 12, weight: .bold))
+                                        .foregroundStyle(.purple)
+                                )
+                                .shadow(color: .purple.opacity(0.5), radius: 6)
+                        }
+                        .transition(.scale.combined(with: .opacity))
+                    }
                 }
                 .padding(8)
-                .transition(.scale.combined(with: .opacity))
+
+                Spacer()
             }
         }
     }
