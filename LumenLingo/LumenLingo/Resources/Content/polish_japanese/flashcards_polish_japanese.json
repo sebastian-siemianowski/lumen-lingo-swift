@@ -1,0 +1,1892 @@
+[
+  {
+    "key": "greetings",
+    "name": "Powitania",
+    "description": "Podstawowe powitania",
+    "iconName": "Hand",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_greet_1",
+        "front": "Cześć",
+        "back": "こんにちは",
+        "difficulty": "medium",
+        "example": "こんにちは、元気ですか？",
+        "exampleTranslation": "Cześć, jak się masz?"
+      },
+      {
+        "id": "pj_greet_2",
+        "front": "Dzień dobry (rano)",
+        "back": "おはよう",
+        "difficulty": "medium",
+        "example": "おはようございます、先生",
+        "exampleTranslation": "Dzień dobry, panie"
+      },
+      {
+        "id": "pj_greet_3",
+        "front": "Dobry wieczór",
+        "back": "こんばんは",
+        "difficulty": "medium",
+        "example": "こんばんは、元気ですか？",
+        "exampleTranslation": "Dobry wieczór, jak się masz?"
+      },
+      {
+        "id": "pj_greet_4",
+        "front": "Dobranoc",
+        "back": "おやすみ",
+        "difficulty": "medium",
+        "example": "おやすみなさい、ぐっすり寝てね",
+        "exampleTranslation": "Dobranoc, śpij dobrze"
+      },
+      {
+        "id": "pj_greet_5",
+        "front": "Do widzenia",
+        "back": "さようなら",
+        "difficulty": "medium",
+        "example": "さようなら、また後で",
+        "exampleTranslation": "Do widzenia, do zobaczenia"
+      },
+      {
+        "id": "pj_greet_6",
+        "front": "Dziękuję",
+        "back": "ありがとう",
+        "difficulty": "medium",
+        "example": "ありがとうございます、助けてくれて",
+        "exampleTranslation": "Dziękuję za pomoc"
+      },
+      {
+        "id": "pj_greet_7",
+        "front": "Proszę",
+        "back": "お願いします",
+        "difficulty": "medium",
+        "example": "お願いします、手伝ってください",
+        "exampleTranslation": "Proszę, pomóż mi"
+      },
+      {
+        "id": "pj_greet_8",
+        "front": "Przepraszam",
+        "back": "ごめんなさい",
+        "difficulty": "medium",
+        "example": "ごめんなさい、遅れました",
+        "exampleTranslation": "Przepraszam, spóźniłem się"
+      },
+      {
+        "id": "pj_greet_9",
+        "front": "Tak",
+        "back": "はい",
+        "difficulty": "medium",
+        "example": "はい、同意します",
+        "exampleTranslation": "Tak, zgadzam się"
+      },
+      {
+        "id": "pj_greet_10",
+        "front": "Nie",
+        "back": "いいえ",
+        "difficulty": "medium",
+        "example": "いいえ、欲しくないです",
+        "exampleTranslation": "Nie, nie chcę"
+      }
+    ]
+  },
+  {
+    "key": "family",
+    "name": "Rodzina",
+    "description": "Członkowie rodziny",
+    "iconName": "Users",
+    "color": "#f472b6",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_fam_1",
+        "front": "Ojciec",
+        "back": "父",
+        "difficulty": "medium",
+        "example": "父はたくさん働きます",
+        "exampleTranslation": "Mój ojciec dużo pracuje"
+      },
+      {
+        "id": "pj_fam_2",
+        "front": "Matka",
+        "back": "母",
+        "difficulty": "medium",
+        "example": "母は料理が上手です",
+        "exampleTranslation": "Moja matka dobrze gotuje"
+      },
+      {
+        "id": "pj_fam_3",
+        "front": "Brat",
+        "back": "兄弟",
+        "difficulty": "medium",
+        "example": "兄は医学を勉強しています",
+        "exampleTranslation": "Mój brat studiuje medycynę"
+      },
+      {
+        "id": "pj_fam_4",
+        "front": "Siostra",
+        "back": "姉妹",
+        "difficulty": "medium",
+        "example": "姉は先生です",
+        "exampleTranslation": "Moja siostra jest nauczycielką"
+      },
+      {
+        "id": "pj_fam_5",
+        "front": "Syn",
+        "back": "息子",
+        "difficulty": "medium",
+        "example": "息子は十歳です",
+        "exampleTranslation": "Mój syn ma dziesięć lat"
+      },
+      {
+        "id": "pj_fam_6",
+        "front": "Córka",
+        "back": "娘",
+        "difficulty": "medium",
+        "example": "娘は大学に行きます",
+        "exampleTranslation": "Moja córka chodzi na uniwersytet"
+      },
+      {
+        "id": "pj_fam_7",
+        "front": "Dziadek",
+        "back": "祖父",
+        "difficulty": "medium",
+        "example": "祖父はとても賢いです",
+        "exampleTranslation": "Mój dziadek jest bardzo mądry"
+      },
+      {
+        "id": "pj_fam_8",
+        "front": "Babcia",
+        "back": "祖母",
+        "difficulty": "medium",
+        "example": "祖母はケーキを作ります",
+        "exampleTranslation": "Moja babcia robi ciasta"
+      },
+      {
+        "id": "pj_fam_9",
+        "front": "Wujek",
+        "back": "叔父",
+        "difficulty": "medium",
+        "example": "叔父は東京に住んでいます",
+        "exampleTranslation": "Mój wujek mieszka w Tokio"
+      },
+      {
+        "id": "pj_fam_10",
+        "front": "Ciocia",
+        "back": "叔母",
+        "difficulty": "medium",
+        "example": "叔母はとても親切です",
+        "exampleTranslation": "Moja ciocia jest bardzo miła"
+      }
+    ]
+  },
+  {
+    "key": "numbers",
+    "name": "Liczby",
+    "description": "Podstawowe liczby",
+    "iconName": "Hash",
+    "color": "#c084fc",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_num_1",
+        "front": "Jeden",
+        "back": "一",
+        "difficulty": "medium",
+        "example": "兄が一人います",
+        "exampleTranslation": "Mam jednego brata"
+      },
+      {
+        "id": "pj_num_2",
+        "front": "Dwa",
+        "back": "二",
+        "difficulty": "medium",
+        "example": "猫が二匹います",
+        "exampleTranslation": "Są dwa koty"
+      },
+      {
+        "id": "pj_num_3",
+        "front": "Trzy",
+        "back": "三",
+        "difficulty": "medium",
+        "example": "三時です",
+        "exampleTranslation": "Jest trzecia"
+      },
+      {
+        "id": "pj_num_4",
+        "front": "Cztery",
+        "back": "四",
+        "difficulty": "medium",
+        "example": "四季",
+        "exampleTranslation": "Cztery pory roku"
+      },
+      {
+        "id": "pj_num_5",
+        "front": "Pięć",
+        "back": "五",
+        "difficulty": "medium",
+        "example": "手には五本の指があります",
+        "exampleTranslation": "Pięć palców na ręce"
+      },
+      {
+        "id": "pj_num_6",
+        "front": "Sześć",
+        "back": "六",
+        "difficulty": "medium",
+        "example": "息子は六歳です",
+        "exampleTranslation": "Mój syn ma sześć lat"
+      },
+      {
+        "id": "pj_num_7",
+        "front": "Siedem",
+        "back": "七",
+        "difficulty": "medium",
+        "example": "一週間は七日です",
+        "exampleTranslation": "Siedem dni tygodnia"
+      },
+      {
+        "id": "pj_num_8",
+        "front": "Osiem",
+        "back": "八",
+        "difficulty": "medium",
+        "example": "八時間働きます",
+        "exampleTranslation": "Pracuję osiem godzin"
+      },
+      {
+        "id": "pj_num_9",
+        "front": "Dziewięć",
+        "back": "九",
+        "difficulty": "medium",
+        "example": "朝の九時です",
+        "exampleTranslation": "Dziewiąta rano"
+      },
+      {
+        "id": "pj_num_10",
+        "front": "Dziesięć",
+        "back": "十",
+        "difficulty": "medium",
+        "example": "十ユーロお願いします",
+        "exampleTranslation": "Dziesięć euro, proszę"
+      }
+    ]
+  },
+  {
+    "key": "colors",
+    "name": "Kolory",
+    "description": "Podstawowe kolory",
+    "iconName": "Palette",
+    "color": "#f87171",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_col_1",
+        "front": "Czerwony",
+        "back": "赤",
+        "difficulty": "medium",
+        "example": "車は赤いです",
+        "exampleTranslation": "Samochód jest czerwony"
+      },
+      {
+        "id": "pj_col_2",
+        "front": "Niebieski",
+        "back": "青",
+        "difficulty": "medium",
+        "example": "空は青いです",
+        "exampleTranslation": "Niebo jest niebieskie"
+      },
+      {
+        "id": "pj_col_3",
+        "front": "Zielony",
+        "back": "緑",
+        "difficulty": "medium",
+        "example": "草は緑です",
+        "exampleTranslation": "Trawa jest zielona"
+      },
+      {
+        "id": "pj_col_4",
+        "front": "Żółty",
+        "back": "黄色",
+        "difficulty": "medium",
+        "example": "太陽は黄色いです",
+        "exampleTranslation": "Słońce jest żółte"
+      },
+      {
+        "id": "pj_col_5",
+        "front": "Czarny",
+        "back": "黒",
+        "difficulty": "medium",
+        "example": "私の猫は黒いです",
+        "exampleTranslation": "Mój kot jest czarny"
+      },
+      {
+        "id": "pj_col_6",
+        "front": "Biały",
+        "back": "白",
+        "difficulty": "medium",
+        "example": "雪は白いです",
+        "exampleTranslation": "Śnieg jest biały"
+      },
+      {
+        "id": "pj_col_7",
+        "front": "Pomarańczowy",
+        "back": "オレンジ",
+        "difficulty": "medium",
+        "example": "オレンジはオレンジ色です",
+        "exampleTranslation": "Pomarańcza jest pomarańczowa"
+      },
+      {
+        "id": "pj_col_8",
+        "front": "Różowy",
+        "back": "ピンク",
+        "difficulty": "medium",
+        "example": "ドレスはピンクです",
+        "exampleTranslation": "Sukienka jest różowa"
+      },
+      {
+        "id": "pj_col_9",
+        "front": "Brązowy",
+        "back": "茶色",
+        "difficulty": "medium",
+        "example": "熊は茶色です",
+        "exampleTranslation": "Niedźwiedź jest brązowy"
+      },
+      {
+        "id": "pj_col_10",
+        "front": "Szary",
+        "back": "灰色",
+        "difficulty": "medium",
+        "example": "象は灰色です",
+        "exampleTranslation": "Słoń jest szary"
+      }
+    ]
+  },
+  {
+    "key": "food",
+    "name": "Jedzenie",
+    "description": "Podstawowe jedzenie",
+    "iconName": "UtensilsCrossed",
+    "color": "#4ade80",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_food_1",
+        "front": "Chleb",
+        "back": "パン",
+        "difficulty": "medium",
+        "example": "パンは新鮮です",
+        "exampleTranslation": "Chleb jest świeży"
+      },
+      {
+        "id": "pj_food_2",
+        "front": "Woda",
+        "back": "水",
+        "difficulty": "medium",
+        "example": "水を一杯お願いします",
+        "exampleTranslation": "Szklankę wody, proszę"
+      },
+      {
+        "id": "pj_food_3",
+        "front": "Kawa",
+        "back": "コーヒー",
+        "difficulty": "medium",
+        "example": "コーヒーが好きです",
+        "exampleTranslation": "Lubię kawę"
+      },
+      {
+        "id": "pj_food_4",
+        "front": "Mleko",
+        "back": "牛乳",
+        "difficulty": "medium",
+        "example": "牛乳は新鮮です",
+        "exampleTranslation": "Mleko jest świeże"
+      },
+      {
+        "id": "pj_food_5",
+        "front": "Mięso",
+        "back": "肉",
+        "difficulty": "medium",
+        "example": "肉は美味しいです",
+        "exampleTranslation": "Mięso jest pyszne"
+      },
+      {
+        "id": "pj_food_6",
+        "front": "Ryba",
+        "back": "魚",
+        "difficulty": "medium",
+        "example": "魚はとても健康的です",
+        "exampleTranslation": "Ryba jest bardzo zdrowa"
+      },
+      {
+        "id": "pj_food_7",
+        "front": "Owoce",
+        "back": "果物",
+        "difficulty": "medium",
+        "example": "毎日果物を食べます",
+        "exampleTranslation": "Jem owoce codziennie"
+      },
+      {
+        "id": "pj_food_8",
+        "front": "Warzywa",
+        "back": "野菜",
+        "difficulty": "medium",
+        "example": "野菜は大切です",
+        "exampleTranslation": "Warzywa są ważne"
+      },
+      {
+        "id": "pj_food_9",
+        "front": "Ser",
+        "back": "チーズ",
+        "difficulty": "medium",
+        "example": "日本のチーズは美味しいです",
+        "exampleTranslation": "Japoński ser jest pyszny"
+      },
+      {
+        "id": "pj_food_10",
+        "front": "Jajko",
+        "back": "卵",
+        "difficulty": "medium",
+        "example": "朝食に卵を食べます",
+        "exampleTranslation": "Jem jajka na śniadanie"
+      }
+    ]
+  },
+  {
+    "key": "house",
+    "name": "Dom",
+    "description": "Przedmioty domowe",
+    "iconName": "Home",
+    "color": "#fb923c",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_house_1",
+        "front": "Dom",
+        "back": "家",
+        "difficulty": "medium",
+        "example": "私の家は大きいです",
+        "exampleTranslation": "Mój dom jest duży"
+      },
+      {
+        "id": "pj_house_2",
+        "front": "Pokój",
+        "back": "部屋",
+        "difficulty": "medium",
+        "example": "部屋はきれいです",
+        "exampleTranslation": "Pokój jest czysty"
+      },
+      {
+        "id": "pj_house_3",
+        "front": "Kuchnia",
+        "back": "台所",
+        "difficulty": "medium",
+        "example": "台所で料理します",
+        "exampleTranslation": "Gotuję w kuchni"
+      },
+      {
+        "id": "pj_house_4",
+        "front": "Łazienka",
+        "back": "浴室",
+        "difficulty": "medium",
+        "example": "浴室は新しいです",
+        "exampleTranslation": "Łazienka jest nowa"
+      },
+      {
+        "id": "pj_house_5",
+        "front": "Sypialnia",
+        "back": "寝室",
+        "difficulty": "medium",
+        "example": "私の寝室は快適です",
+        "exampleTranslation": "Moja sypialnia jest wygodna"
+      },
+      {
+        "id": "pj_house_6",
+        "front": "Drzwi",
+        "back": "ドア",
+        "difficulty": "medium",
+        "example": "ドアを閉めて",
+        "exampleTranslation": "Zamknij drzwi"
+      },
+      {
+        "id": "pj_house_7",
+        "front": "Okno",
+        "back": "窓",
+        "difficulty": "medium",
+        "example": "窓を開けて",
+        "exampleTranslation": "Otwórz okno"
+      },
+      {
+        "id": "pj_house_8",
+        "front": "Stół",
+        "back": "テーブル",
+        "difficulty": "medium",
+        "example": "テーブルは木製です",
+        "exampleTranslation": "Stół jest drewniany"
+      },
+      {
+        "id": "pj_house_9",
+        "front": "Krzesło",
+        "back": "椅子",
+        "difficulty": "medium",
+        "example": "椅子は快適です",
+        "exampleTranslation": "Krzesło jest wygodne"
+      },
+      {
+        "id": "pj_house_10",
+        "front": "Łóżko",
+        "back": "ベッド",
+        "difficulty": "medium",
+        "example": "ベッドは柔らかいです",
+        "exampleTranslation": "Łóżko jest miękkie"
+      }
+    ]
+  },
+  {
+    "key": "places",
+    "name": "Miejsca",
+    "description": "Lokalizacje",
+    "iconName": "MapPin",
+    "color": "#2dd4bf",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_place_1",
+        "front": "Sklep",
+        "back": "店",
+        "difficulty": "medium",
+        "example": "店は開いています",
+        "exampleTranslation": "Sklep jest otwarty"
+      },
+      {
+        "id": "pj_place_2",
+        "front": "Szkoła",
+        "back": "学校",
+        "difficulty": "medium",
+        "example": "学校に行きます",
+        "exampleTranslation": "Idę do szkoły"
+      },
+      {
+        "id": "pj_place_3",
+        "front": "Szpital",
+        "back": "病院",
+        "difficulty": "medium",
+        "example": "病院は近いです",
+        "exampleTranslation": "Szpital jest blisko"
+      },
+      {
+        "id": "pj_place_4",
+        "front": "Park",
+        "back": "公園",
+        "difficulty": "medium",
+        "example": "子供たちは公園で遊びます",
+        "exampleTranslation": "Dzieci bawią się w parku"
+      },
+      {
+        "id": "pj_place_5",
+        "front": "Restauracja",
+        "back": "レストラン",
+        "difficulty": "medium",
+        "example": "レストランで食べます",
+        "exampleTranslation": "Jemy w restauracji"
+      },
+      {
+        "id": "pj_place_6",
+        "front": "Hotel",
+        "back": "ホテル",
+        "difficulty": "medium",
+        "example": "ホテルはとても大きいです",
+        "exampleTranslation": "Hotel jest bardzo duży"
+      },
+      {
+        "id": "pj_place_7",
+        "front": "Bank",
+        "back": "銀行",
+        "difficulty": "medium",
+        "example": "銀行に行きます",
+        "exampleTranslation": "Idę do banku"
+      },
+      {
+        "id": "pj_place_8",
+        "front": "Lotnisko",
+        "back": "空港",
+        "difficulty": "medium",
+        "example": "空港にいます",
+        "exampleTranslation": "Jestem na lotnisku"
+      },
+      {
+        "id": "pj_place_9",
+        "front": "Dworzec kolejowy",
+        "back": "駅",
+        "difficulty": "medium",
+        "example": "駅",
+        "exampleTranslation": "Dworzec kolejowy"
+      },
+      {
+        "id": "pj_place_10",
+        "front": "Muzeum",
+        "back": "博物館",
+        "difficulty": "medium",
+        "example": "博物館は面白いです",
+        "exampleTranslation": "Muzeum jest interesujące"
+      }
+    ]
+  },
+  {
+    "key": "clothing",
+    "name": "Ubrania",
+    "description": "Odzież",
+    "iconName": "Shirt",
+    "color": "#a78bfa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_cloth_1",
+        "front": "Koszula",
+        "back": "シャツ",
+        "difficulty": "medium",
+        "example": "あなたのシャツが好きです",
+        "exampleTranslation": "Lubię twoją koszulę"
+      },
+      {
+        "id": "pj_cloth_2",
+        "front": "Spodnie",
+        "back": "ズボン",
+        "difficulty": "medium",
+        "example": "新しいズボンが必要です",
+        "exampleTranslation": "Potrzebuję nowych spodni"
+      },
+      {
+        "id": "pj_cloth_3",
+        "front": "Buty",
+        "back": "靴",
+        "difficulty": "medium",
+        "example": "黒い靴を買いました",
+        "exampleTranslation": "Kupiłem czarne buty"
+      },
+      {
+        "id": "pj_cloth_4",
+        "front": "Sukienka",
+        "back": "ドレス",
+        "difficulty": "medium",
+        "example": "ドレスは美しいです",
+        "exampleTranslation": "Sukienka jest piękna"
+      },
+      {
+        "id": "pj_cloth_5",
+        "front": "Kurtka",
+        "back": "ジャケット",
+        "difficulty": "medium",
+        "example": "ジャケットが必要です",
+        "exampleTranslation": "Potrzebuję kurtki"
+      },
+      {
+        "id": "pj_cloth_6",
+        "front": "Kapelusz",
+        "back": "帽子",
+        "difficulty": "medium",
+        "example": "帽子をかぶって",
+        "exampleTranslation": "Włóż kapelusz"
+      },
+      {
+        "id": "pj_cloth_7",
+        "front": "Skarpetki",
+        "back": "靴下",
+        "difficulty": "medium",
+        "example": "私の靴下はきれいです",
+        "exampleTranslation": "Moje skarpetki są czyste"
+      },
+      {
+        "id": "pj_cloth_8",
+        "front": "Rękawiczki",
+        "back": "手袋",
+        "difficulty": "medium",
+        "example": "冬に手袋をします",
+        "exampleTranslation": "Noszę rękawiczki zimą"
+      },
+      {
+        "id": "pj_cloth_9",
+        "front": "Szalik",
+        "back": "スカーフ",
+        "difficulty": "medium",
+        "example": "スカーフは柔らかいです",
+        "exampleTranslation": "Szalik jest miękki"
+      },
+      {
+        "id": "pj_cloth_10",
+        "front": "Płaszcz",
+        "back": "コート",
+        "difficulty": "medium",
+        "example": "コートは暖かいです",
+        "exampleTranslation": "Płaszcz jest ciepły"
+      }
+    ]
+  },
+  {
+    "key": "work",
+    "name": "Praca",
+    "description": "Zawody",
+    "iconName": "Briefcase",
+    "color": "#818cf8",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_work_1",
+        "front": "Praca",
+        "back": "仕事",
+        "difficulty": "medium",
+        "example": "仕事に行きます",
+        "exampleTranslation": "Idę do pracy"
+      },
+      {
+        "id": "pj_work_2",
+        "front": "Lekarz",
+        "back": "医者",
+        "difficulty": "medium",
+        "example": "彼は医者です",
+        "exampleTranslation": "On jest lekarzem"
+      },
+      {
+        "id": "pj_work_3",
+        "front": "Nauczyciel",
+        "back": "教師",
+        "difficulty": "medium",
+        "example": "私の教師は素晴らしいです",
+        "exampleTranslation": "Mój nauczyciel jest doskonały"
+      },
+      {
+        "id": "pj_work_4",
+        "front": "Inżynier",
+        "back": "エンジニア",
+        "difficulty": "medium",
+        "example": "私はエンジニアです",
+        "exampleTranslation": "Jestem inżynierem"
+      },
+      {
+        "id": "pj_work_5",
+        "front": "Prawnik",
+        "back": "弁護士",
+        "difficulty": "medium",
+        "example": "彼女は弁護士です",
+        "exampleTranslation": "Ona jest prawnikiem"
+      },
+      {
+        "id": "pj_work_6",
+        "front": "Kucharz",
+        "back": "料理人",
+        "difficulty": "medium",
+        "example": "料理人は食事を準備します",
+        "exampleTranslation": "Kucharz przygotowuje posiłek"
+      },
+      {
+        "id": "pj_work_7",
+        "front": "Kelner",
+        "back": "ウェイター",
+        "difficulty": "medium",
+        "example": "ウェイターは親切です",
+        "exampleTranslation": "Kelner jest miły"
+      },
+      {
+        "id": "pj_work_8",
+        "front": "Sprzedawca",
+        "back": "販売員",
+        "difficulty": "medium",
+        "example": "販売員は客を助けます",
+        "exampleTranslation": "Sprzedawca pomaga klientowi"
+      },
+      {
+        "id": "pj_work_9",
+        "front": "Policjant",
+        "back": "警察官",
+        "difficulty": "medium",
+        "example": "警察官は街を守ります",
+        "exampleTranslation": "Policjant chroni miasto"
+      },
+      {
+        "id": "pj_work_10",
+        "front": "Mechanik",
+        "back": "整備士",
+        "difficulty": "medium",
+        "example": "整備士は車を修理します",
+        "exampleTranslation": "Mechanik naprawia samochody"
+      }
+    ]
+  },
+  {
+    "key": "transport",
+    "name": "Transport",
+    "description": "Środki transportu",
+    "iconName": "Car",
+    "color": "#facc15",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_trans_1",
+        "front": "Samochód",
+        "back": "車",
+        "difficulty": "medium",
+        "example": "新しい車があります",
+        "exampleTranslation": "Mam nowy samochód"
+      },
+      {
+        "id": "pj_trans_2",
+        "front": "Autobus",
+        "back": "バス",
+        "difficulty": "medium",
+        "example": "バスで行きます",
+        "exampleTranslation": "Jadę autobusem"
+      },
+      {
+        "id": "pj_trans_3",
+        "front": "Pociąg",
+        "back": "電車",
+        "difficulty": "medium",
+        "example": "電車は速いです",
+        "exampleTranslation": "Pociąg jest szybki"
+      },
+      {
+        "id": "pj_trans_4",
+        "front": "Samolot",
+        "back": "飛行機",
+        "difficulty": "medium",
+        "example": "飛行機で旅行します",
+        "exampleTranslation": "Podróżuję samolotem"
+      },
+      {
+        "id": "pj_trans_5",
+        "front": "Rower",
+        "back": "自転車",
+        "difficulty": "medium",
+        "example": "自転車に乗ります",
+        "exampleTranslation": "Jeżdżę na rowerze"
+      },
+      {
+        "id": "pj_trans_6",
+        "front": "Taksówka",
+        "back": "タクシー",
+        "difficulty": "medium",
+        "example": "タクシーを呼びます",
+        "exampleTranslation": "Wzywam taksówkę"
+      },
+      {
+        "id": "pj_trans_7",
+        "front": "Metro",
+        "back": "地下鉄",
+        "difficulty": "medium",
+        "example": "地下鉄を使います",
+        "exampleTranslation": "Korzystam z metra"
+      },
+      {
+        "id": "pj_trans_8",
+        "front": "Motocykl",
+        "back": "バイク",
+        "difficulty": "medium",
+        "example": "私のバイクは赤いです",
+        "exampleTranslation": "Mój motocykl jest czerwony"
+      },
+      {
+        "id": "pj_trans_9",
+        "front": "Łódź",
+        "back": "船",
+        "difficulty": "medium",
+        "example": "船で航海します",
+        "exampleTranslation": "Płyniemy łodzią"
+      },
+      {
+        "id": "pj_trans_10",
+        "front": "Bilet",
+        "back": "切符",
+        "difficulty": "medium",
+        "example": "切符を買います",
+        "exampleTranslation": "Kupuję bilet"
+      }
+    ]
+  },
+  {
+    "key": "education",
+    "name": "Edukacja",
+    "description": "Szkoła",
+    "iconName": "School",
+    "color": "#818cf8",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_edu_1",
+        "front": "Uczeń",
+        "back": "学生",
+        "difficulty": "medium",
+        "example": "私は学生です",
+        "exampleTranslation": "Jestem uczniem"
+      },
+      {
+        "id": "pj_edu_2",
+        "front": "Nauczyciel",
+        "back": "先生",
+        "difficulty": "medium",
+        "example": "先生はよく教えます",
+        "exampleTranslation": "Nauczyciel dobrze uczy"
+      },
+      {
+        "id": "pj_edu_3",
+        "front": "Książka",
+        "back": "本",
+        "difficulty": "medium",
+        "example": "本を読みます",
+        "exampleTranslation": "Czytam książkę"
+      },
+      {
+        "id": "pj_edu_4",
+        "front": "Ołówek",
+        "back": "鉛筆",
+        "difficulty": "medium",
+        "example": "鉛筆を持っていますか？",
+        "exampleTranslation": "Czy masz ołówek?"
+      },
+      {
+        "id": "pj_edu_5",
+        "front": "Zeszyt",
+        "back": "ノート",
+        "difficulty": "medium",
+        "example": "ノートが必要です",
+        "exampleTranslation": "Potrzebuję zeszytu"
+      },
+      {
+        "id": "pj_edu_6",
+        "front": "Egzamin",
+        "back": "試験",
+        "difficulty": "medium",
+        "example": "試験は明日です",
+        "exampleTranslation": "Egzamin jest jutro"
+      },
+      {
+        "id": "pj_edu_7",
+        "front": "Praca domowa",
+        "back": "宿題",
+        "difficulty": "medium",
+        "example": "宿題がたくさんあります",
+        "exampleTranslation": "Mam dużo pracy domowej"
+      },
+      {
+        "id": "pj_edu_8",
+        "front": "Lekcja",
+        "back": "授業",
+        "difficulty": "medium",
+        "example": "授業は九時に始まります",
+        "exampleTranslation": "Lekcja zaczyna się o dziewiątej"
+      },
+      {
+        "id": "pj_edu_9",
+        "front": "Biblioteka",
+        "back": "図書館",
+        "difficulty": "medium",
+        "example": "図書館で勉強します",
+        "exampleTranslation": "Uczę się w bibliotece"
+      },
+      {
+        "id": "pj_edu_10",
+        "front": "Plecak",
+        "back": "リュックサック",
+        "difficulty": "medium",
+        "example": "私のリュックサックは重いです",
+        "exampleTranslation": "Mój plecak jest ciężki"
+      }
+    ]
+  },
+  {
+    "key": "nature",
+    "name": "Natura",
+    "description": "Przyroda",
+    "iconName": "TreePine",
+    "color": "#4ade80",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_nature_1",
+        "front": "Drzewo",
+        "back": "木",
+        "difficulty": "medium",
+        "example": "木は高いです",
+        "exampleTranslation": "Drzewo jest wysokie"
+      },
+      {
+        "id": "pj_nature_2",
+        "front": "Kwiat",
+        "back": "花",
+        "difficulty": "medium",
+        "example": "花は美しいです",
+        "exampleTranslation": "Kwiat jest piękny"
+      },
+      {
+        "id": "pj_nature_3",
+        "front": "Góra",
+        "back": "山",
+        "difficulty": "medium",
+        "example": "山は高いです",
+        "exampleTranslation": "Góra jest wysoka"
+      },
+      {
+        "id": "pj_nature_4",
+        "front": "Rzeka",
+        "back": "川",
+        "difficulty": "medium",
+        "example": "川は長いです",
+        "exampleTranslation": "Rzeka jest długa"
+      },
+      {
+        "id": "pj_nature_5",
+        "front": "Morze",
+        "back": "海",
+        "difficulty": "medium",
+        "example": "海は青いです",
+        "exampleTranslation": "Morze jest niebieskie"
+      },
+      {
+        "id": "pj_nature_6",
+        "front": "Las",
+        "back": "森",
+        "difficulty": "medium",
+        "example": "森を歩きます",
+        "exampleTranslation": "Przechodzimy przez las"
+      },
+      {
+        "id": "pj_nature_7",
+        "front": "Jezioro",
+        "back": "湖",
+        "difficulty": "medium",
+        "example": "湖は静かです",
+        "exampleTranslation": "Jezioro jest spokojne"
+      },
+      {
+        "id": "pj_nature_8",
+        "front": "Niebo",
+        "back": "空",
+        "difficulty": "medium",
+        "example": "空は青いです",
+        "exampleTranslation": "Niebo jest niebieskie"
+      },
+      {
+        "id": "pj_nature_9",
+        "front": "Gwiazda",
+        "back": "星",
+        "difficulty": "medium",
+        "example": "星が輝いています",
+        "exampleTranslation": "Gwiazdy świecą"
+      },
+      {
+        "id": "pj_nature_10",
+        "front": "Księżyc",
+        "back": "月",
+        "difficulty": "medium",
+        "example": "月は満ちています",
+        "exampleTranslation": "Księżyc jest w pełni"
+      }
+    ]
+  },
+  {
+    "key": "emotions",
+    "name": "Emocje",
+    "description": "Uczucia",
+    "iconName": "Heart",
+    "color": "#f87171",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_emo_1",
+        "front": "Szczęśliwy",
+        "back": "幸せ",
+        "difficulty": "medium",
+        "example": "私は幸せです",
+        "exampleTranslation": "Jestem szczęśliwy"
+      },
+      {
+        "id": "pj_emo_2",
+        "front": "Smutny",
+        "back": "悲しい",
+        "difficulty": "medium",
+        "example": "彼は悲しいです",
+        "exampleTranslation": "On jest smutny"
+      },
+      {
+        "id": "pj_emo_3",
+        "front": "Zły",
+        "back": "怒っている",
+        "difficulty": "medium",
+        "example": "彼女は怒っています",
+        "exampleTranslation": "Ona jest zła"
+      },
+      {
+        "id": "pj_emo_4",
+        "front": "Zmęczony",
+        "back": "疲れた",
+        "difficulty": "medium",
+        "example": "私は疲れています",
+        "exampleTranslation": "Jestem zmęczony"
+      },
+      {
+        "id": "pj_emo_5",
+        "front": "Podekscytowany",
+        "back": "興奮した",
+        "difficulty": "medium",
+        "example": "私たちは興奮しています",
+        "exampleTranslation": "Jesteśmy podekscytowani"
+      },
+      {
+        "id": "pj_emo_6",
+        "front": "Zdenerwowany",
+        "back": "緊張した",
+        "difficulty": "medium",
+        "example": "彼は緊張しています",
+        "exampleTranslation": "On jest zdenerwowany"
+      },
+      {
+        "id": "pj_emo_7",
+        "front": "Spokojny",
+        "back": "落ち着いた",
+        "difficulty": "medium",
+        "example": "彼女は落ち着いています",
+        "exampleTranslation": "Ona jest spokojna"
+      },
+      {
+        "id": "pj_emo_8",
+        "front": "Zaskoczony",
+        "back": "驚いた",
+        "difficulty": "medium",
+        "example": "私は驚きました",
+        "exampleTranslation": "Jestem zaskoczony"
+      },
+      {
+        "id": "pj_emo_9",
+        "front": "Przestraszony",
+        "back": "怖い",
+        "difficulty": "medium",
+        "example": "子供は怖がっています",
+        "exampleTranslation": "Dziecko jest przestraszone"
+      },
+      {
+        "id": "pj_emo_10",
+        "front": "Znudzony",
+        "back": "退屈",
+        "difficulty": "medium",
+        "example": "彼らは退屈しています",
+        "exampleTranslation": "Oni są znudzeni"
+      }
+    ]
+  },
+  {
+    "key": "time",
+    "name": "Czas",
+    "description": "Wyrażenia czasowe",
+    "iconName": "Clock",
+    "color": "#22d3ee",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_time_1",
+        "front": "Dzisiaj",
+        "back": "今日",
+        "difficulty": "medium",
+        "example": "今日は月曜日です",
+        "exampleTranslation": "Dzisiaj jest poniedziałek"
+      },
+      {
+        "id": "pj_time_2",
+        "front": "Wczoraj",
+        "back": "昨日",
+        "difficulty": "medium",
+        "example": "昨日は日曜日でした",
+        "exampleTranslation": "Wczoraj była niedziela"
+      },
+      {
+        "id": "pj_time_3",
+        "front": "Jutro",
+        "back": "明日",
+        "difficulty": "medium",
+        "example": "明日は火曜日です",
+        "exampleTranslation": "Jutro jest wtorek"
+      },
+      {
+        "id": "pj_time_4",
+        "front": "Teraz",
+        "back": "今",
+        "difficulty": "medium",
+        "example": "今働いています",
+        "exampleTranslation": "Teraz pracuję"
+      },
+      {
+        "id": "pj_time_5",
+        "front": "Później",
+        "back": "後で",
+        "difficulty": "medium",
+        "example": "後でします",
+        "exampleTranslation": "Zrobię to później"
+      },
+      {
+        "id": "pj_time_6",
+        "front": "Rano",
+        "back": "朝",
+        "difficulty": "medium",
+        "example": "おはようございます",
+        "exampleTranslation": "Dzień dobry"
+      },
+      {
+        "id": "pj_time_7",
+        "front": "Południe",
+        "back": "正午",
+        "difficulty": "medium",
+        "example": "正午です",
+        "exampleTranslation": "Jest południe"
+      },
+      {
+        "id": "pj_time_8",
+        "front": "Wieczór",
+        "back": "夕方",
+        "difficulty": "medium",
+        "example": "こんばんは",
+        "exampleTranslation": "Dobry wieczór"
+      },
+      {
+        "id": "pj_time_9",
+        "front": "Noc",
+        "back": "夜",
+        "difficulty": "medium",
+        "example": "おやすみなさい",
+        "exampleTranslation": "Dobranoc"
+      },
+      {
+        "id": "pj_time_10",
+        "front": "Tydzień",
+        "back": "週",
+        "difficulty": "medium",
+        "example": "来週",
+        "exampleTranslation": "Następny tydzień"
+      }
+    ]
+  },
+  {
+    "key": "weather",
+    "name": "Pogoda",
+    "description": "Warunki pogodowe",
+    "iconName": "Cloud",
+    "color": "#38bdf8",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_weather_1",
+        "front": "Słońce",
+        "back": "太陽",
+        "difficulty": "medium",
+        "example": "太陽が輝いています",
+        "exampleTranslation": "Słońce świeci"
+      },
+      {
+        "id": "pj_weather_2",
+        "front": "Deszcz",
+        "back": "雨",
+        "difficulty": "medium",
+        "example": "雨が降っています",
+        "exampleTranslation": "Pada deszcz"
+      },
+      {
+        "id": "pj_weather_3",
+        "front": "Śnieg",
+        "back": "雪",
+        "difficulty": "medium",
+        "example": "雪が降っています",
+        "exampleTranslation": "Pada śnieg"
+      },
+      {
+        "id": "pj_weather_4",
+        "front": "Wiatr",
+        "back": "風",
+        "difficulty": "medium",
+        "example": "風が吹いています",
+        "exampleTranslation": "Wieje wiatr"
+      },
+      {
+        "id": "pj_weather_5",
+        "front": "Chmura",
+        "back": "雲",
+        "difficulty": "medium",
+        "example": "空に雲があります",
+        "exampleTranslation": "Na niebie są chmury"
+      },
+      {
+        "id": "pj_weather_6",
+        "front": "Burza",
+        "back": "嵐",
+        "difficulty": "medium",
+        "example": "嵐が来ています",
+        "exampleTranslation": "Nadchodzi burza"
+      },
+      {
+        "id": "pj_weather_7",
+        "front": "Gorąco",
+        "back": "暑い",
+        "difficulty": "medium",
+        "example": "とても暑いです",
+        "exampleTranslation": "Jest bardzo gorąco"
+      },
+      {
+        "id": "pj_weather_8",
+        "front": "Zimno",
+        "back": "寒い",
+        "difficulty": "medium",
+        "example": "冬は寒いです",
+        "exampleTranslation": "Zimą jest zimno"
+      },
+      {
+        "id": "pj_weather_9",
+        "front": "Błyskawica",
+        "back": "稲妻",
+        "difficulty": "medium",
+        "example": "稲妻を見ました",
+        "exampleTranslation": "Widziałem błyskawicę"
+      },
+      {
+        "id": "pj_weather_10",
+        "front": "Grzmot",
+        "back": "雷",
+        "difficulty": "medium",
+        "example": "雷が聞こえます",
+        "exampleTranslation": "Słyszysz grzmot"
+      }
+    ]
+  },
+  {
+    "key": "body",
+    "name": "Ciało",
+    "description": "Części ciała",
+    "iconName": "Hand",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_body_1",
+        "front": "Głowa",
+        "back": "頭",
+        "difficulty": "medium",
+        "example": "頭が痛いです",
+        "exampleTranslation": "Boli mnie głowa"
+      },
+      {
+        "id": "pj_body_2",
+        "front": "Oko",
+        "back": "目",
+        "difficulty": "medium",
+        "example": "青い目をしています",
+        "exampleTranslation": "Mam niebieskie oczy"
+      },
+      {
+        "id": "pj_body_3",
+        "front": "Nos",
+        "back": "鼻",
+        "difficulty": "medium",
+        "example": "私の鼻は冷たいです",
+        "exampleTranslation": "Mój nos jest zimny"
+      },
+      {
+        "id": "pj_body_4",
+        "front": "Usta",
+        "back": "口",
+        "difficulty": "medium",
+        "example": "口を開けて",
+        "exampleTranslation": "Otwórz usta"
+      },
+      {
+        "id": "pj_body_5",
+        "front": "Ucho",
+        "back": "耳",
+        "difficulty": "medium",
+        "example": "私の耳は大きいです",
+        "exampleTranslation": "Moje uszy są duże"
+      },
+      {
+        "id": "pj_body_6",
+        "front": "Ręka",
+        "back": "手",
+        "difficulty": "medium",
+        "example": "手を貸して",
+        "exampleTranslation": "Daj mi rękę"
+      },
+      {
+        "id": "pj_body_7",
+        "front": "Stopa",
+        "back": "足",
+        "difficulty": "medium",
+        "example": "足が痛いです",
+        "exampleTranslation": "Boli mnie stopa"
+      },
+      {
+        "id": "pj_body_8",
+        "front": "Ramię",
+        "back": "腕",
+        "difficulty": "medium",
+        "example": "腕を上げて",
+        "exampleTranslation": "Podnieś ramię"
+      },
+      {
+        "id": "pj_body_9",
+        "front": "Noga",
+        "back": "脚",
+        "difficulty": "medium",
+        "example": "私の脚は疲れています",
+        "exampleTranslation": "Moje nogi są zmęczone"
+      },
+      {
+        "id": "pj_body_10",
+        "front": "Serce",
+        "back": "心臓",
+        "difficulty": "medium",
+        "example": "私の心臓は速く鼓動しています",
+        "exampleTranslation": "Moje serce bije szybko"
+      }
+    ]
+  },
+  {
+    "key": "activities",
+    "name": "Aktywności",
+    "description": "Codzienne czynności",
+    "iconName": "Lightbulb",
+    "color": "#fbbf24",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_act_1",
+        "front": "Jeść",
+        "back": "食べる",
+        "difficulty": "medium",
+        "example": "食べます",
+        "exampleTranslation": "Będę jeść"
+      },
+      {
+        "id": "pj_act_2",
+        "front": "Pić",
+        "back": "飲む",
+        "difficulty": "medium",
+        "example": "水を飲みます",
+        "exampleTranslation": "Piję wodę"
+      },
+      {
+        "id": "pj_act_3",
+        "front": "Spać",
+        "back": "寝る",
+        "difficulty": "medium",
+        "example": "寝る必要があります",
+        "exampleTranslation": "Muszę spać"
+      },
+      {
+        "id": "pj_act_4",
+        "front": "Biegać",
+        "back": "走る",
+        "difficulty": "medium",
+        "example": "朝走ります",
+        "exampleTranslation": "Biegam rano"
+      },
+      {
+        "id": "pj_act_5",
+        "front": "Czytać",
+        "back": "読む",
+        "difficulty": "medium",
+        "example": "本を読みます",
+        "exampleTranslation": "Czytam książkę"
+      },
+      {
+        "id": "pj_act_6",
+        "front": "Pisać",
+        "back": "書く",
+        "difficulty": "medium",
+        "example": "手紙を書きます",
+        "exampleTranslation": "Piszę list"
+      },
+      {
+        "id": "pj_act_7",
+        "front": "Mówić",
+        "back": "話す",
+        "difficulty": "medium",
+        "example": "日本語を話します",
+        "exampleTranslation": "Mówię po japońsku"
+      },
+      {
+        "id": "pj_act_8",
+        "front": "Słuchać",
+        "back": "聞く",
+        "difficulty": "medium",
+        "example": "音楽を聞きます",
+        "exampleTranslation": "Słucham muzyki"
+      },
+      {
+        "id": "pj_act_9",
+        "front": "Oglądać",
+        "back": "見る",
+        "difficulty": "medium",
+        "example": "テレビを見ます",
+        "exampleTranslation": "Oglądam telewizję"
+      },
+      {
+        "id": "pj_act_10",
+        "front": "Myśleć",
+        "back": "考える",
+        "difficulty": "medium",
+        "example": "あなたのことを考えています",
+        "exampleTranslation": "Myślę o tobie"
+      }
+    ]
+  },
+  {
+    "key": "learning",
+    "name": "Nauka",
+    "description": "Działania edukacyjne",
+    "iconName": "BookOpen",
+    "color": "#818cf8",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pj_learn_1",
+        "front": "Uczyć się",
+        "back": "学ぶ",
+        "difficulty": "medium",
+        "example": "日本語を学びます",
+        "exampleTranslation": "Uczę się japońskiego"
+      },
+      {
+        "id": "pj_learn_2",
+        "front": "Studiować",
+        "back": "勉強する",
+        "difficulty": "medium",
+        "example": "大学で勉強します",
+        "exampleTranslation": "Studiuję na uniwersytecie"
+      },
+      {
+        "id": "pj_learn_3",
+        "front": "Uczyć",
+        "back": "教える",
+        "difficulty": "medium",
+        "example": "英語を教えます",
+        "exampleTranslation": "Uczę angielskiego"
+      },
+      {
+        "id": "pj_learn_4",
+        "front": "Rozumieć",
+        "back": "理解する",
+        "difficulty": "medium",
+        "example": "レッスンを理解します",
+        "exampleTranslation": "Rozumiem tę lekcję"
+      },
+      {
+        "id": "pj_learn_5",
+        "front": "Ćwiczyć",
+        "back": "練習する",
+        "difficulty": "medium",
+        "example": "毎日練習します",
+        "exampleTranslation": "Ćwiczę codziennie"
+      },
+      {
+        "id": "pj_learn_6",
+        "front": "Powtarzać",
+        "back": "繰り返す",
+        "difficulty": "medium",
+        "example": "単語を繰り返して",
+        "exampleTranslation": "Powtórz to słowo"
+      },
+      {
+        "id": "pj_learn_7",
+        "front": "Wyjaśniać",
+        "back": "説明する",
+        "difficulty": "medium",
+        "example": "先生はよく説明します",
+        "exampleTranslation": "Nauczyciel dobrze wyjaśnia"
+      },
+      {
+        "id": "pj_learn_8",
+        "front": "Pytać",
+        "back": "質問する",
+        "difficulty": "medium",
+        "example": "先生に質問します",
+        "exampleTranslation": "Pytam nauczyciela"
+      },
+      {
+        "id": "pj_learn_9",
+        "front": "Odpowiadać",
+        "back": "答える",
+        "difficulty": "medium",
+        "example": "質問に答えます",
+        "exampleTranslation": "Odpowiadam na pytanie"
+      },
+      {
+        "id": "pj_learn_10",
+        "front": "Pamiętać",
+        "back": "覚える",
+        "difficulty": "medium",
+        "example": "レッスンを覚えています",
+        "exampleTranslation": "Pamiętam tę lekcję"
+      }
+    ]
+  },
+  {
+    "key": "sports",
+    "name": "Sport",
+    "description": "Sporty",
+    "iconName": "Dumbbell",
+    "color": "#818cf8",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_sport_1",
+        "front": "Piłka nożna",
+        "back": "サッカー",
+        "difficulty": "medium",
+        "example": "サッカーをします",
+        "exampleTranslation": "Gram w piłkę nożną"
+      },
+      {
+        "id": "pj_sport_2",
+        "front": "Koszykówka",
+        "back": "バスケットボール",
+        "difficulty": "medium",
+        "example": "バスケットボールが好きです",
+        "exampleTranslation": "Lubię koszykówkę"
+      },
+      {
+        "id": "pj_sport_3",
+        "front": "Tenis",
+        "back": "テニス",
+        "difficulty": "medium",
+        "example": "テニスをします",
+        "exampleTranslation": "Gram w tenisa"
+      },
+      {
+        "id": "pj_sport_4",
+        "front": "Pływanie",
+        "back": "水泳",
+        "difficulty": "medium",
+        "example": "水泳は健康的です",
+        "exampleTranslation": "Pływanie jest zdrowe"
+      },
+      {
+        "id": "pj_sport_5",
+        "front": "Bieganie",
+        "back": "ランニング",
+        "difficulty": "medium",
+        "example": "朝ランニングします",
+        "exampleTranslation": "Biegam rano"
+      },
+      {
+        "id": "pj_sport_6",
+        "front": "Jazda na rowerze",
+        "back": "サイクリング",
+        "difficulty": "medium",
+        "example": "サイクリングが好きです",
+        "exampleTranslation": "Lubię jeździć na rowerze"
+      },
+      {
+        "id": "pj_sport_7",
+        "front": "Siłownia",
+        "back": "ジム",
+        "difficulty": "medium",
+        "example": "ジムに行きます",
+        "exampleTranslation": "Chodzę na siłownię"
+      },
+      {
+        "id": "pj_sport_8",
+        "front": "Trening",
+        "back": "トレーニング",
+        "difficulty": "medium",
+        "example": "今日トレーニングがあります",
+        "exampleTranslation": "Dziś mam trening"
+      },
+      {
+        "id": "pj_sport_9",
+        "front": "Drużyna",
+        "back": "チーム",
+        "difficulty": "medium",
+        "example": "チームに入っています",
+        "exampleTranslation": "Jestem w drużynie"
+      },
+      {
+        "id": "pj_sport_10",
+        "front": "Trener",
+        "back": "コーチ",
+        "difficulty": "medium",
+        "example": "私たちのコーチは素晴らしいです",
+        "exampleTranslation": "Nasz trener jest doskonały"
+      }
+    ]
+  },
+  {
+    "key": "travel",
+    "name": "Podróże",
+    "description": "Turystyka",
+    "iconName": "Plane",
+    "color": "#60a5fa",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pj_travel_1",
+        "front": "Podróż",
+        "back": "旅行",
+        "difficulty": "medium",
+        "example": "旅行に行きます",
+        "exampleTranslation": "Jadę w podróż"
+      },
+      {
+        "id": "pj_travel_2",
+        "front": "Walizka",
+        "back": "スーツケース",
+        "difficulty": "medium",
+        "example": "私のスーツケースは重いです",
+        "exampleTranslation": "Moja walizka jest ciężka"
+      },
+      {
+        "id": "pj_travel_3",
+        "front": "Paszport",
+        "back": "パスポート",
+        "difficulty": "medium",
+        "example": "パスポートが必要です",
+        "exampleTranslation": "Potrzebuję paszportu"
+      },
+      {
+        "id": "pj_travel_4",
+        "front": "Hotel",
+        "back": "ホテル",
+        "difficulty": "medium",
+        "example": "ホテルは快適です",
+        "exampleTranslation": "Hotel jest wygodny"
+      },
+      {
+        "id": "pj_travel_5",
+        "front": "Rezerwacja",
+        "back": "予約",
+        "difficulty": "medium",
+        "example": "予約があります",
+        "exampleTranslation": "Mam rezerwację"
+      },
+      {
+        "id": "pj_travel_6",
+        "front": "Turysta",
+        "back": "観光客",
+        "difficulty": "medium",
+        "example": "私は観光客です",
+        "exampleTranslation": "Jestem turystą"
+      },
+      {
+        "id": "pj_travel_7",
+        "front": "Wakacje",
+        "back": "休暇",
+        "difficulty": "medium",
+        "example": "休暇中です",
+        "exampleTranslation": "Jestem na wakacjach"
+      },
+      {
+        "id": "pj_travel_8",
+        "front": "Zwiedzanie",
+        "back": "観光",
+        "difficulty": "medium",
+        "example": "観光をしています",
+        "exampleTranslation": "Zwiedzamy"
+      },
+      {
+        "id": "pj_travel_9",
+        "front": "Przewodnik",
+        "back": "ガイド",
+        "difficulty": "medium",
+        "example": "ガイドは役に立ちます",
+        "exampleTranslation": "Przewodnik jest pomocny"
+      },
+      {
+        "id": "pj_travel_10",
+        "front": "Pamiątka",
+        "back": "お土産",
+        "difficulty": "medium",
+        "example": "お土産を買います",
+        "exampleTranslation": "Kupuję pamiątkę"
+      }
+    ]
+  },
+  {
+    "key": "entertainment",
+    "name": "Rozrywka",
+    "description": "Czas wolny",
+    "iconName": "Music",
+    "color": "#e879f9",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pj_ent_1",
+        "front": "Muzyka",
+        "back": "音楽",
+        "difficulty": "medium",
+        "example": "音楽を聞きます",
+        "exampleTranslation": "Słucham muzyki"
+      },
+      {
+        "id": "pj_ent_2",
+        "front": "Film",
+        "back": "映画",
+        "difficulty": "medium",
+        "example": "映画を見ます",
+        "exampleTranslation": "Oglądam film"
+      },
+      {
+        "id": "pj_ent_3",
+        "front": "Koncert",
+        "back": "コンサート",
+        "difficulty": "medium",
+        "example": "コンサートに行きます",
+        "exampleTranslation": "Idę na koncert"
+      },
+      {
+        "id": "pj_ent_4",
+        "front": "Teatr",
+        "back": "劇場",
+        "difficulty": "medium",
+        "example": "劇場に行きます",
+        "exampleTranslation": "Idę do teatru"
+      },
+      {
+        "id": "pj_ent_5",
+        "front": "Taniec",
+        "back": "ダンス",
+        "difficulty": "medium",
+        "example": "ダンスが好きです",
+        "exampleTranslation": "Lubię tańczyć"
+      },
+      {
+        "id": "pj_ent_6",
+        "front": "Śpiewać",
+        "back": "歌う",
+        "difficulty": "medium",
+        "example": "歌うのが好きです",
+        "exampleTranslation": "Lubię śpiewać"
+      },
+      {
+        "id": "pj_ent_7",
+        "front": "Gitara",
+        "back": "ギター",
+        "difficulty": "medium",
+        "example": "ギターを弾きます",
+        "exampleTranslation": "Gram na gitarze"
+      },
+      {
+        "id": "pj_ent_8",
+        "front": "Gry",
+        "back": "ゲーム",
+        "difficulty": "medium",
+        "example": "ビデオゲームをします",
+        "exampleTranslation": "Gram w gry wideo"
+      },
+      {
+        "id": "pj_ent_9",
+        "front": "Fotografia",
+        "back": "写真",
+        "difficulty": "medium",
+        "example": "写真に興味があります",
+        "exampleTranslation": "Interesuję się fotografią"
+      },
+      {
+        "id": "pj_ent_10",
+        "front": "Czytanie",
+        "back": "読書",
+        "difficulty": "medium",
+        "example": "読書は私の趣味です",
+        "exampleTranslation": "Czytanie to moje hobby"
+      }
+    ]
+  }
+]

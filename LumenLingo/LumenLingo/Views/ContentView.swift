@@ -79,6 +79,7 @@ struct ContentView: View {
             }
             .tint(Color.cosmicAccent)
             .toolbar(hideTabBar ? .hidden : .visible, for: .tabBar)
+            .toolbarBackground(selectedTab == .dashboard ? .hidden : .visible, for: .tabBar)
         }
         .background(themeManager.isDarkMode
             ? Color(red: 6/255, green: 5/255, blue: 20/255)
@@ -171,7 +172,8 @@ struct ContentView: View {
         ]
 
         UITabBar.appearance().standardAppearance = appearance
-        UITabBar.appearance().scrollEdgeAppearance = appearance
+        // NOTE: Do NOT set scrollEdgeAppearance here — let SwiftUI's
+        // .toolbarBackground(.hidden) on DashboardView control it.
     }
 }
 

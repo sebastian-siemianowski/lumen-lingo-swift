@@ -1,0 +1,1892 @@
+[
+  {
+    "key": "greetings",
+    "name": "Begrüßungen",
+    "description": "Grundlegende Grüße",
+    "iconName": "Hand",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "gp_greet_1",
+        "front": "Hallo",
+        "back": "Cześć",
+        "difficulty": "medium",
+        "example": "Cześć, jak się masz?",
+        "exampleTranslation": "Hallo, wie geht's?"
+      },
+      {
+        "id": "gp_greet_2",
+        "front": "Guten Morgen",
+        "back": "Dzień dobry",
+        "difficulty": "medium",
+        "example": "Dzień dobry, panie",
+        "exampleTranslation": "Guten Morgen, mein Herr"
+      },
+      {
+        "id": "gp_greet_3",
+        "front": "Guten Abend",
+        "back": "Dobry wieczór",
+        "difficulty": "medium",
+        "example": "Dobry wieczór, jak się Pan ma?",
+        "exampleTranslation": "Guten Abend, wie geht es Ihnen?"
+      },
+      {
+        "id": "gp_greet_4",
+        "front": "Gute Nacht",
+        "back": "Dobranoc",
+        "difficulty": "medium",
+        "example": "Dobranoc, śpij dobrze",
+        "exampleTranslation": "Gute Nacht, schlaf gut"
+      },
+      {
+        "id": "gp_greet_5",
+        "front": "Auf Wiedersehen",
+        "back": "Do widzenia",
+        "difficulty": "medium",
+        "example": "Do widzenia, do zobaczenia",
+        "exampleTranslation": "Auf Wiedersehen, bis später"
+      },
+      {
+        "id": "gp_greet_6",
+        "front": "Danke",
+        "back": "Dziękuję",
+        "difficulty": "medium",
+        "example": "Dziękuję za pomoc",
+        "exampleTranslation": "Danke für die Hilfe"
+      },
+      {
+        "id": "gp_greet_7",
+        "front": "Bitte",
+        "back": "Proszę",
+        "difficulty": "medium",
+        "example": "Proszę, pomóż mi",
+        "exampleTranslation": "Bitte, hilf mir"
+      },
+      {
+        "id": "gp_greet_8",
+        "front": "Entschuldigung",
+        "back": "Przepraszam",
+        "difficulty": "medium",
+        "example": "Przepraszam, spóźniłem się",
+        "exampleTranslation": "Entschuldigung, ich bin zu spät"
+      },
+      {
+        "id": "gp_greet_9",
+        "front": "Ja",
+        "back": "Tak",
+        "difficulty": "medium",
+        "example": "Tak, zgadzam się",
+        "exampleTranslation": "Ja, ich stimme zu"
+      },
+      {
+        "id": "gp_greet_10",
+        "front": "Nein",
+        "back": "Nie",
+        "difficulty": "medium",
+        "example": "Nie, nie chcę",
+        "exampleTranslation": "Nein, ich will nicht"
+      }
+    ]
+  },
+  {
+    "key": "family",
+    "name": "Familie",
+    "description": "Familienmitglieder",
+    "iconName": "Users",
+    "color": "#f472b6",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "gp_fam_1",
+        "front": "Vater",
+        "back": "Ojciec",
+        "difficulty": "medium",
+        "example": "Mój ojciec pracuje dużo",
+        "exampleTranslation": "Mein Vater arbeitet viel"
+      },
+      {
+        "id": "gp_fam_2",
+        "front": "Mutter",
+        "back": "Matka",
+        "difficulty": "medium",
+        "example": "Moja matka dobrze gotuje",
+        "exampleTranslation": "Meine Mutter kocht gut"
+      },
+      {
+        "id": "gp_fam_3",
+        "front": "Bruder",
+        "back": "Brat",
+        "difficulty": "medium",
+        "example": "Mój brat studiuje medycynę",
+        "exampleTranslation": "Mein Bruder studiert Medizin"
+      },
+      {
+        "id": "gp_fam_4",
+        "front": "Schwester",
+        "back": "Siostra",
+        "difficulty": "medium",
+        "example": "Moja siostra jest nauczycielką",
+        "exampleTranslation": "Meine Schwester ist Lehrerin"
+      },
+      {
+        "id": "gp_fam_5",
+        "front": "Sohn",
+        "back": "Syn",
+        "difficulty": "medium",
+        "example": "Mój syn ma dziesięć lat",
+        "exampleTranslation": "Mein Sohn ist zehn Jahre alt"
+      },
+      {
+        "id": "gp_fam_6",
+        "front": "Tochter",
+        "back": "Córka",
+        "difficulty": "medium",
+        "example": "Moja córka chodzi na uniwersytet",
+        "exampleTranslation": "Meine Tochter geht zur Universität"
+      },
+      {
+        "id": "gp_fam_7",
+        "front": "Großvater",
+        "back": "Dziadek",
+        "difficulty": "medium",
+        "example": "Mój dziadek jest bardzo mądry",
+        "exampleTranslation": "Mein Großvater ist sehr weise"
+      },
+      {
+        "id": "gp_fam_8",
+        "front": "Großmutter",
+        "back": "Babcia",
+        "difficulty": "medium",
+        "example": "Moja babcia piecze ciasta",
+        "exampleTranslation": "Meine Großmutter backt Kuchen"
+      },
+      {
+        "id": "gp_fam_9",
+        "front": "Onkel",
+        "back": "Wujek",
+        "difficulty": "medium",
+        "example": "Mój wujek mieszka w Warszawie",
+        "exampleTranslation": "Mein Onkel lebt in Warschau"
+      },
+      {
+        "id": "gp_fam_10",
+        "front": "Tante",
+        "back": "Ciocia",
+        "difficulty": "medium",
+        "example": "Moja ciocia jest bardzo miła",
+        "exampleTranslation": "Meine Tante ist sehr freundlich"
+      }
+    ]
+  },
+  {
+    "key": "numbers",
+    "name": "Zahlen",
+    "description": "Grundzahlen",
+    "iconName": "Hash",
+    "color": "#c084fc",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "gp_num_1",
+        "front": "Eins",
+        "back": "Jeden",
+        "difficulty": "medium",
+        "example": "Mam jednego brata",
+        "exampleTranslation": "Ich habe einen Bruder"
+      },
+      {
+        "id": "gp_num_2",
+        "front": "Zwei",
+        "back": "Dwa",
+        "difficulty": "medium",
+        "example": "Są dwa koty",
+        "exampleTranslation": "Es gibt zwei Katzen"
+      },
+      {
+        "id": "gp_num_3",
+        "front": "Drei",
+        "back": "Trzy",
+        "difficulty": "medium",
+        "example": "Jest trzecia godzina",
+        "exampleTranslation": "Es ist drei Uhr"
+      },
+      {
+        "id": "gp_num_4",
+        "front": "Vier",
+        "back": "Cztery",
+        "difficulty": "medium",
+        "example": "Cztery pory roku",
+        "exampleTranslation": "Vier Jahreszeiten"
+      },
+      {
+        "id": "gp_num_5",
+        "front": "Fünf",
+        "back": "Pięć",
+        "difficulty": "medium",
+        "example": "Pięć palców u ręki",
+        "exampleTranslation": "Fünf Finger an der Hand"
+      },
+      {
+        "id": "gp_num_6",
+        "front": "Sechs",
+        "back": "Sześć",
+        "difficulty": "medium",
+        "example": "Mój syn ma sześć lat",
+        "exampleTranslation": "Mein Sohn ist sechs Jahre alt"
+      },
+      {
+        "id": "gp_num_7",
+        "front": "Sieben",
+        "back": "Siedem",
+        "difficulty": "medium",
+        "example": "Siedem dni tygodnia",
+        "exampleTranslation": "Sieben Tage der Woche"
+      },
+      {
+        "id": "gp_num_8",
+        "front": "Acht",
+        "back": "Osiem",
+        "difficulty": "medium",
+        "example": "Pracuję osiem godzin",
+        "exampleTranslation": "Ich arbeite acht Stunden"
+      },
+      {
+        "id": "gp_num_9",
+        "front": "Neun",
+        "back": "Dziewięć",
+        "difficulty": "medium",
+        "example": "Jest dziewiąta rano",
+        "exampleTranslation": "Es ist neun Uhr morgens"
+      },
+      {
+        "id": "gp_num_10",
+        "front": "Zehn",
+        "back": "Dziesięć",
+        "difficulty": "medium",
+        "example": "Dziesięć euro, proszę",
+        "exampleTranslation": "Zehn Euro, bitte"
+      }
+    ]
+  },
+  {
+    "key": "colors",
+    "name": "Farben",
+    "description": "Grundfarben",
+    "iconName": "Palette",
+    "color": "#f87171",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "gp_col_1",
+        "front": "Rot",
+        "back": "Czerwony",
+        "difficulty": "medium",
+        "example": "Samochód jest czerwony",
+        "exampleTranslation": "Das Auto ist rot"
+      },
+      {
+        "id": "gp_col_2",
+        "front": "Blau",
+        "back": "Niebieski",
+        "difficulty": "medium",
+        "example": "Niebo jest niebieskie",
+        "exampleTranslation": "Der Himmel ist blau"
+      },
+      {
+        "id": "gp_col_3",
+        "front": "Grün",
+        "back": "Zielony",
+        "difficulty": "medium",
+        "example": "Trawa jest zielona",
+        "exampleTranslation": "Das Gras ist grün"
+      },
+      {
+        "id": "gp_col_4",
+        "front": "Gelb",
+        "back": "Żółty",
+        "difficulty": "medium",
+        "example": "Słońce jest żółte",
+        "exampleTranslation": "Die Sonne ist gelb"
+      },
+      {
+        "id": "gp_col_5",
+        "front": "Schwarz",
+        "back": "Czarny",
+        "difficulty": "medium",
+        "example": "Mój kot jest czarny",
+        "exampleTranslation": "Meine Katze ist schwarz"
+      },
+      {
+        "id": "gp_col_6",
+        "front": "Weiß",
+        "back": "Biały",
+        "difficulty": "medium",
+        "example": "Śnieg jest biały",
+        "exampleTranslation": "Der Schnee ist weiß"
+      },
+      {
+        "id": "gp_col_7",
+        "front": "Orange",
+        "back": "Pomarańczowy",
+        "difficulty": "medium",
+        "example": "Pomarańcza jest pomarańczowa",
+        "exampleTranslation": "Die Orange ist orange"
+      },
+      {
+        "id": "gp_col_8",
+        "front": "Rosa",
+        "back": "Różowy",
+        "difficulty": "medium",
+        "example": "Sukienka jest różowa",
+        "exampleTranslation": "Das Kleid ist rosa"
+      },
+      {
+        "id": "gp_col_9",
+        "front": "Braun",
+        "back": "Brązowy",
+        "difficulty": "medium",
+        "example": "Niedźwiedź jest brązowy",
+        "exampleTranslation": "Der Bär ist braun"
+      },
+      {
+        "id": "gp_col_10",
+        "front": "Grau",
+        "back": "Szary",
+        "difficulty": "medium",
+        "example": "Słoń jest szary",
+        "exampleTranslation": "Der Elefant ist grau"
+      }
+    ]
+  },
+  {
+    "key": "food",
+    "name": "Essen",
+    "description": "Lebensmittel",
+    "iconName": "UtensilsCrossed",
+    "color": "#4ade80",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "gp_food_1",
+        "front": "Brot",
+        "back": "Chleb",
+        "difficulty": "medium",
+        "example": "Chleb jest świeży",
+        "exampleTranslation": "Das Brot ist frisch"
+      },
+      {
+        "id": "gp_food_2",
+        "front": "Wasser",
+        "back": "Woda",
+        "difficulty": "medium",
+        "example": "Szklanka wody, proszę",
+        "exampleTranslation": "Ein Glas Wasser, bitte"
+      },
+      {
+        "id": "gp_food_3",
+        "front": "Kaffee",
+        "back": "Kawa",
+        "difficulty": "medium",
+        "example": "Lubię kawę",
+        "exampleTranslation": "Ich mag Kaffee"
+      },
+      {
+        "id": "gp_food_4",
+        "front": "Milch",
+        "back": "Mleko",
+        "difficulty": "medium",
+        "example": "Mleko jest świeże",
+        "exampleTranslation": "Die Milch ist frisch"
+      },
+      {
+        "id": "gp_food_5",
+        "front": "Fleisch",
+        "back": "Mięso",
+        "difficulty": "medium",
+        "example": "Mięso jest pyszne",
+        "exampleTranslation": "Das Fleisch ist köstlich"
+      },
+      {
+        "id": "gp_food_6",
+        "front": "Fisch",
+        "back": "Ryba",
+        "difficulty": "medium",
+        "example": "Ryba jest bardzo zdrowa",
+        "exampleTranslation": "Fisch ist sehr gesund"
+      },
+      {
+        "id": "gp_food_7",
+        "front": "Obst",
+        "back": "Owoce",
+        "difficulty": "medium",
+        "example": "Jem owoce codziennie",
+        "exampleTranslation": "Ich esse jeden Tag Obst"
+      },
+      {
+        "id": "gp_food_8",
+        "front": "Gemüse",
+        "back": "Warzywa",
+        "difficulty": "medium",
+        "example": "Warzywa są ważne",
+        "exampleTranslation": "Gemüse ist wichtig"
+      },
+      {
+        "id": "gp_food_9",
+        "front": "Käse",
+        "back": "Ser",
+        "difficulty": "medium",
+        "example": "Niemiecki ser jest pyszny",
+        "exampleTranslation": "Deutscher Käse ist köstlich"
+      },
+      {
+        "id": "gp_food_10",
+        "front": "Ei",
+        "back": "Jajko",
+        "difficulty": "medium",
+        "example": "Jem jajka na śniadanie",
+        "exampleTranslation": "Ich esse Eier zum Frühstück"
+      }
+    ]
+  },
+  {
+    "key": "places",
+    "name": "Orte",
+    "description": "Standorte",
+    "iconName": "MapPin",
+    "color": "#2dd4bf",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "gp_place_1",
+        "front": "Geschäft",
+        "back": "Sklep",
+        "difficulty": "medium",
+        "example": "Sklep jest otwarty",
+        "exampleTranslation": "Das Geschäft ist offen"
+      },
+      {
+        "id": "gp_place_2",
+        "front": "Schule",
+        "back": "Szkoła",
+        "difficulty": "medium",
+        "example": "Idę do szkoły",
+        "exampleTranslation": "Ich gehe zur Schule"
+      },
+      {
+        "id": "gp_place_3",
+        "front": "Krankenhaus",
+        "back": "Szpital",
+        "difficulty": "medium",
+        "example": "Szpital jest blisko",
+        "exampleTranslation": "Das Krankenhaus ist in der Nähe"
+      },
+      {
+        "id": "gp_place_4",
+        "front": "Park",
+        "back": "Park",
+        "difficulty": "medium",
+        "example": "Dzieci bawią się w parku",
+        "exampleTranslation": "Kinder spielen im Park"
+      },
+      {
+        "id": "gp_place_5",
+        "front": "Restaurant",
+        "back": "Restauracja",
+        "difficulty": "medium",
+        "example": "Jemy w restauracji",
+        "exampleTranslation": "Wir essen im Restaurant"
+      },
+      {
+        "id": "gp_place_6",
+        "front": "Hotel",
+        "back": "Hotel",
+        "difficulty": "medium",
+        "example": "Hotel jest bardzo duży",
+        "exampleTranslation": "Das Hotel ist sehr groß"
+      },
+      {
+        "id": "gp_place_7",
+        "front": "Bank",
+        "back": "Bank",
+        "difficulty": "medium",
+        "example": "Idę do banku",
+        "exampleTranslation": "Ich gehe zur Bank"
+      },
+      {
+        "id": "gp_place_8",
+        "front": "Flughafen",
+        "back": "Lotnisko",
+        "difficulty": "medium",
+        "example": "Jestem na lotnisku",
+        "exampleTranslation": "Ich bin am Flughafen"
+      },
+      {
+        "id": "gp_place_9",
+        "front": "Bahnhof",
+        "back": "Dworzec",
+        "difficulty": "medium",
+        "example": "Dworzec kolejowy",
+        "exampleTranslation": "Der Bahnhof"
+      },
+      {
+        "id": "gp_place_10",
+        "front": "Museum",
+        "back": "Muzeum",
+        "difficulty": "medium",
+        "example": "Muzeum jest interesujące",
+        "exampleTranslation": "Das Museum ist interessant"
+      }
+    ]
+  },
+  {
+    "key": "clothing",
+    "name": "Kleidung",
+    "description": "Kleidungsstücke",
+    "iconName": "Shirt",
+    "color": "#a78bfa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "gp_cloth_1",
+        "front": "Hemd",
+        "back": "Koszula",
+        "difficulty": "medium",
+        "example": "Podoba mi się twoja koszula",
+        "exampleTranslation": "Ich mag dein Hemd"
+      },
+      {
+        "id": "gp_cloth_2",
+        "front": "Hose",
+        "back": "Spodnie",
+        "difficulty": "medium",
+        "example": "Potrzebuję nowych spodni",
+        "exampleTranslation": "Ich brauche neue Hosen"
+      },
+      {
+        "id": "gp_cloth_3",
+        "front": "Schuhe",
+        "back": "Buty",
+        "difficulty": "medium",
+        "example": "Kupiłem czarne buty",
+        "exampleTranslation": "Ich kaufte schwarze Schuhe"
+      },
+      {
+        "id": "gp_cloth_4",
+        "front": "Kleid",
+        "back": "Sukienka",
+        "difficulty": "medium",
+        "example": "Sukienka jest piękna",
+        "exampleTranslation": "Das Kleid ist schön"
+      },
+      {
+        "id": "gp_cloth_5",
+        "front": "Jacke",
+        "back": "Kurtka",
+        "difficulty": "medium",
+        "example": "Potrzebuję kurtki",
+        "exampleTranslation": "Ich brauche eine Jacke"
+      },
+      {
+        "id": "gp_cloth_6",
+        "front": "Hut",
+        "back": "Kapelusz",
+        "difficulty": "medium",
+        "example": "Załóż kapelusz",
+        "exampleTranslation": "Setz den Hut auf"
+      },
+      {
+        "id": "gp_cloth_7",
+        "front": "Socken",
+        "back": "Skarpetki",
+        "difficulty": "medium",
+        "example": "Moje skarpetki są czyste",
+        "exampleTranslation": "Meine Socken sind sauber"
+      },
+      {
+        "id": "gp_cloth_8",
+        "front": "Handschuhe",
+        "back": "Rękawiczki",
+        "difficulty": "medium",
+        "example": "Noszę rękawiczki zimą",
+        "exampleTranslation": "Ich trage im Winter Handschuhe"
+      },
+      {
+        "id": "gp_cloth_9",
+        "front": "Schal",
+        "back": "Szalik",
+        "difficulty": "medium",
+        "example": "Szalik jest miękki",
+        "exampleTranslation": "Der Schal ist weich"
+      },
+      {
+        "id": "gp_cloth_10",
+        "front": "Mantel",
+        "back": "Płaszcz",
+        "difficulty": "medium",
+        "example": "Płaszcz jest ciepły",
+        "exampleTranslation": "Der Mantel ist warm"
+      }
+    ]
+  },
+  {
+    "key": "house",
+    "name": "Haus",
+    "description": "Haushaltsgegenstände",
+    "iconName": "Home",
+    "color": "#fb923c",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "gp_house_1",
+        "front": "Haus",
+        "back": "Dom",
+        "difficulty": "medium",
+        "example": "Mój dom jest duży",
+        "exampleTranslation": "Mein Haus ist groß"
+      },
+      {
+        "id": "gp_house_2",
+        "front": "Zimmer",
+        "back": "Pokój",
+        "difficulty": "medium",
+        "example": "Pokój jest czysty",
+        "exampleTranslation": "Das Zimmer ist sauber"
+      },
+      {
+        "id": "gp_house_3",
+        "front": "Küche",
+        "back": "Kuchnia",
+        "difficulty": "medium",
+        "example": "Gotuję w kuchni",
+        "exampleTranslation": "Ich koche in der Küche"
+      },
+      {
+        "id": "gp_house_4",
+        "front": "Badezimmer",
+        "back": "Łazienka",
+        "difficulty": "medium",
+        "example": "Łazienka jest nowa",
+        "exampleTranslation": "Das Badezimmer ist neu"
+      },
+      {
+        "id": "gp_house_5",
+        "front": "Schlafzimmer",
+        "back": "Sypialnia",
+        "difficulty": "medium",
+        "example": "Moja sypialnia jest wygodna",
+        "exampleTranslation": "Mein Schlafzimmer ist gemütlich"
+      },
+      {
+        "id": "gp_house_6",
+        "front": "Tür",
+        "back": "Drzwi",
+        "difficulty": "medium",
+        "example": "Zamknij drzwi",
+        "exampleTranslation": "Schließ die Tür"
+      },
+      {
+        "id": "gp_house_7",
+        "front": "Fenster",
+        "back": "Okno",
+        "difficulty": "medium",
+        "example": "Otwórz okno",
+        "exampleTranslation": "Öffne das Fenster"
+      },
+      {
+        "id": "gp_house_8",
+        "front": "Tisch",
+        "back": "Stół",
+        "difficulty": "medium",
+        "example": "Stół jest drewniany",
+        "exampleTranslation": "Der Tisch ist aus Holz"
+      },
+      {
+        "id": "gp_house_9",
+        "front": "Stuhl",
+        "back": "Krzesło",
+        "difficulty": "medium",
+        "example": "Krzesło jest wygodne",
+        "exampleTranslation": "Der Stuhl ist bequem"
+      },
+      {
+        "id": "gp_house_10",
+        "front": "Bett",
+        "back": "Łóżko",
+        "difficulty": "medium",
+        "example": "Łóżko jest miękkie",
+        "exampleTranslation": "Das Bett ist weich"
+      }
+    ]
+  },
+  {
+    "key": "work",
+    "name": "Arbeit",
+    "description": "Berufe",
+    "iconName": "Briefcase",
+    "color": "#818cf8",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "gp_work_1",
+        "front": "Arbeit",
+        "back": "Praca",
+        "difficulty": "medium",
+        "example": "Idę do pracy",
+        "exampleTranslation": "Ich gehe zur Arbeit"
+      },
+      {
+        "id": "gp_work_2",
+        "front": "Arzt",
+        "back": "Lekarz",
+        "difficulty": "medium",
+        "example": "On jest lekarzem",
+        "exampleTranslation": "Er ist Arzt"
+      },
+      {
+        "id": "gp_work_3",
+        "front": "Lehrer",
+        "back": "Nauczyciel",
+        "difficulty": "medium",
+        "example": "Mój nauczyciel jest świetny",
+        "exampleTranslation": "Mein Lehrer ist ausgezeichnet"
+      },
+      {
+        "id": "gp_work_4",
+        "front": "Ingenieur",
+        "back": "Inżynier",
+        "difficulty": "medium",
+        "example": "Jestem inżynierem",
+        "exampleTranslation": "Ich bin Ingenieur"
+      },
+      {
+        "id": "gp_work_5",
+        "front": "Anwalt",
+        "back": "Prawnik",
+        "difficulty": "medium",
+        "example": "Ona jest prawnikiem",
+        "exampleTranslation": "Sie ist Anwältin"
+      },
+      {
+        "id": "gp_work_6",
+        "front": "Koch",
+        "back": "Kucharz",
+        "difficulty": "medium",
+        "example": "Kucharz przygotowuje jedzenie",
+        "exampleTranslation": "Der Koch bereitet das Essen zu"
+      },
+      {
+        "id": "gp_work_7",
+        "front": "Kellner",
+        "back": "Kelner",
+        "difficulty": "medium",
+        "example": "Kelner jest miły",
+        "exampleTranslation": "Der Kellner ist freundlich"
+      },
+      {
+        "id": "gp_work_8",
+        "front": "Verkäufer",
+        "back": "Sprzedawca",
+        "difficulty": "medium",
+        "example": "Sprzedawca pomaga klientowi",
+        "exampleTranslation": "Der Verkäufer hilft dem Kunden"
+      },
+      {
+        "id": "gp_work_9",
+        "front": "Polizist",
+        "back": "Policjant",
+        "difficulty": "medium",
+        "example": "Policjant chroni miasto",
+        "exampleTranslation": "Der Polizist schützt die Stadt"
+      },
+      {
+        "id": "gp_work_10",
+        "front": "Mechaniker",
+        "back": "Mechanik",
+        "difficulty": "medium",
+        "example": "Mechanik naprawia samochody",
+        "exampleTranslation": "Der Mechaniker repariert Autos"
+      }
+    ]
+  },
+  {
+    "key": "transport",
+    "name": "Transport",
+    "description": "Transportmittel",
+    "iconName": "Car",
+    "color": "#facc15",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "gp_trans_1",
+        "front": "Auto",
+        "back": "Samochód",
+        "difficulty": "medium",
+        "example": "Mam nowy samochód",
+        "exampleTranslation": "Ich habe ein neues Auto"
+      },
+      {
+        "id": "gp_trans_2",
+        "front": "Bus",
+        "back": "Autobus",
+        "difficulty": "medium",
+        "example": "Jadę autobusem",
+        "exampleTranslation": "Ich fahre mit dem Bus"
+      },
+      {
+        "id": "gp_trans_3",
+        "front": "Zug",
+        "back": "Pociąg",
+        "difficulty": "medium",
+        "example": "Pociąg jest szybki",
+        "exampleTranslation": "Der Zug ist schnell"
+      },
+      {
+        "id": "gp_trans_4",
+        "front": "Flugzeug",
+        "back": "Samolot",
+        "difficulty": "medium",
+        "example": "Podróżuję samolotem",
+        "exampleTranslation": "Ich fliege mit dem Flugzeug"
+      },
+      {
+        "id": "gp_trans_5",
+        "front": "Fahrrad",
+        "back": "Rower",
+        "difficulty": "medium",
+        "example": "Jeżdżę na rowerze",
+        "exampleTranslation": "Ich fahre Fahrrad"
+      },
+      {
+        "id": "gp_trans_6",
+        "front": "Taxi",
+        "back": "Taksówka",
+        "difficulty": "medium",
+        "example": "Wzywam taksówkę",
+        "exampleTranslation": "Ich rufe ein Taxi"
+      },
+      {
+        "id": "gp_trans_7",
+        "front": "U-Bahn",
+        "back": "Metro",
+        "difficulty": "medium",
+        "example": "Korzystam z metra",
+        "exampleTranslation": "Ich benutze die U-Bahn"
+      },
+      {
+        "id": "gp_trans_8",
+        "front": "Motorrad",
+        "back": "Motocykl",
+        "difficulty": "medium",
+        "example": "Mój motocykl jest czerwony",
+        "exampleTranslation": "Mein Motorrad ist rot"
+      },
+      {
+        "id": "gp_trans_9",
+        "front": "Boot",
+        "back": "Łódź",
+        "difficulty": "medium",
+        "example": "Pływamy łodzią",
+        "exampleTranslation": "Wir fahren mit dem Boot"
+      },
+      {
+        "id": "gp_trans_10",
+        "front": "Fahrkarte",
+        "back": "Bilet",
+        "difficulty": "medium",
+        "example": "Kupuję bilet",
+        "exampleTranslation": "Ich kaufe eine Fahrkarte"
+      }
+    ]
+  },
+  {
+    "key": "education",
+    "name": "Bildung",
+    "description": "Schule",
+    "iconName": "School",
+    "color": "#818cf8",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "gp_edu_1",
+        "front": "Schüler",
+        "back": "Uczeń",
+        "difficulty": "medium",
+        "example": "Jestem uczniem",
+        "exampleTranslation": "Ich bin Schüler"
+      },
+      {
+        "id": "gp_edu_2",
+        "front": "Lehrer",
+        "back": "Nauczyciel",
+        "difficulty": "medium",
+        "example": "Nauczyciel uczy dobrze",
+        "exampleTranslation": "Der Lehrer unterrichtet gut"
+      },
+      {
+        "id": "gp_edu_3",
+        "front": "Buch",
+        "back": "Książka",
+        "difficulty": "medium",
+        "example": "Czytam książkę",
+        "exampleTranslation": "Ich lese ein Buch"
+      },
+      {
+        "id": "gp_edu_4",
+        "front": "Bleistift",
+        "back": "Ołówek",
+        "difficulty": "medium",
+        "example": "Masz ołówek?",
+        "exampleTranslation": "Hast du einen Bleistift?"
+      },
+      {
+        "id": "gp_edu_5",
+        "front": "Heft",
+        "back": "Zeszyt",
+        "difficulty": "medium",
+        "example": "Potrzebuję zeszytu",
+        "exampleTranslation": "Ich brauche ein Heft"
+      },
+      {
+        "id": "gp_edu_6",
+        "front": "Prüfung",
+        "back": "Egzamin",
+        "difficulty": "medium",
+        "example": "Egzamin jest jutro",
+        "exampleTranslation": "Die Prüfung ist morgen"
+      },
+      {
+        "id": "gp_edu_7",
+        "front": "Hausaufgaben",
+        "back": "Praca domowa",
+        "difficulty": "medium",
+        "example": "Mam dużo pracy domowej",
+        "exampleTranslation": "Ich habe viele Hausaufgaben"
+      },
+      {
+        "id": "gp_edu_8",
+        "front": "Unterricht",
+        "back": "Lekcja",
+        "difficulty": "medium",
+        "example": "Lekcja zaczyna się o dziewiątej",
+        "exampleTranslation": "Der Unterricht beginnt um neun"
+      },
+      {
+        "id": "gp_edu_9",
+        "front": "Bibliothek",
+        "back": "Biblioteka",
+        "difficulty": "medium",
+        "example": "Uczę się w bibliotece",
+        "exampleTranslation": "Ich lerne in der Bibliothek"
+      },
+      {
+        "id": "gp_edu_10",
+        "front": "Rucksack",
+        "back": "Plecak",
+        "difficulty": "medium",
+        "example": "Mój plecak jest ciężki",
+        "exampleTranslation": "Mein Rucksack ist schwer"
+      }
+    ]
+  },
+  {
+    "key": "nature",
+    "name": "Natur",
+    "description": "Natur",
+    "iconName": "TreePine",
+    "color": "#4ade80",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "gp_nature_1",
+        "front": "Baum",
+        "back": "Drzewo",
+        "difficulty": "medium",
+        "example": "Drzewo jest wysokie",
+        "exampleTranslation": "Der Baum ist hoch"
+      },
+      {
+        "id": "gp_nature_2",
+        "front": "Blume",
+        "back": "Kwiat",
+        "difficulty": "medium",
+        "example": "Kwiat jest piękny",
+        "exampleTranslation": "Die Blume ist schön"
+      },
+      {
+        "id": "gp_nature_3",
+        "front": "Berg",
+        "back": "Góra",
+        "difficulty": "medium",
+        "example": "Góra jest wysoka",
+        "exampleTranslation": "Der Berg ist hoch"
+      },
+      {
+        "id": "gp_nature_4",
+        "front": "Fluss",
+        "back": "Rzeka",
+        "difficulty": "medium",
+        "example": "Rzeka jest długa",
+        "exampleTranslation": "Der Fluss ist lang"
+      },
+      {
+        "id": "gp_nature_5",
+        "front": "Meer",
+        "back": "Morze",
+        "difficulty": "medium",
+        "example": "Morze jest niebieskie",
+        "exampleTranslation": "Das Meer ist blau"
+      },
+      {
+        "id": "gp_nature_6",
+        "front": "Wald",
+        "back": "Las",
+        "difficulty": "medium",
+        "example": "Chodzimy po lesie",
+        "exampleTranslation": "Wir gehen durch den Wald"
+      },
+      {
+        "id": "gp_nature_7",
+        "front": "See",
+        "back": "Jezioro",
+        "difficulty": "medium",
+        "example": "Jezioro jest spokojne",
+        "exampleTranslation": "Der See ist ruhig"
+      },
+      {
+        "id": "gp_nature_8",
+        "front": "Himmel",
+        "back": "Niebo",
+        "difficulty": "medium",
+        "example": "Niebo jest niebieskie",
+        "exampleTranslation": "Der Himmel ist blau"
+      },
+      {
+        "id": "gp_nature_9",
+        "front": "Stern",
+        "back": "Gwiazda",
+        "difficulty": "medium",
+        "example": "Gwiazdy świecą",
+        "exampleTranslation": "Die Sterne leuchten"
+      },
+      {
+        "id": "gp_nature_10",
+        "front": "Mond",
+        "back": "Księżyc",
+        "difficulty": "medium",
+        "example": "Księżyc jest w pełni",
+        "exampleTranslation": "Der Mond ist voll"
+      }
+    ]
+  },
+  {
+    "key": "emotions",
+    "name": "Emotionen",
+    "description": "Gefühle",
+    "iconName": "Heart",
+    "color": "#f87171",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "gp_emo_1",
+        "front": "Glücklich",
+        "back": "Szczęśliwy",
+        "difficulty": "medium",
+        "example": "Jestem szczęśliwy",
+        "exampleTranslation": "Ich bin glücklich"
+      },
+      {
+        "id": "gp_emo_2",
+        "front": "Traurig",
+        "back": "Smutny",
+        "difficulty": "medium",
+        "example": "On jest smutny",
+        "exampleTranslation": "Er ist traurig"
+      },
+      {
+        "id": "gp_emo_3",
+        "front": "Wütend",
+        "back": "Zły",
+        "difficulty": "medium",
+        "example": "Ona jest zła",
+        "exampleTranslation": "Sie ist wütend"
+      },
+      {
+        "id": "gp_emo_4",
+        "front": "Müde",
+        "back": "Zmęczony",
+        "difficulty": "medium",
+        "example": "Jestem zmęczony",
+        "exampleTranslation": "Ich bin müde"
+      },
+      {
+        "id": "gp_emo_5",
+        "front": "Aufgeregt",
+        "back": "Podekscytowany",
+        "difficulty": "medium",
+        "example": "Jesteśmy podekscytowani",
+        "exampleTranslation": "Wir sind aufgeregt"
+      },
+      {
+        "id": "gp_emo_6",
+        "front": "Nervös",
+        "back": "Zdenerwowany",
+        "difficulty": "medium",
+        "example": "On jest zdenerwowany",
+        "exampleTranslation": "Er ist nervös"
+      },
+      {
+        "id": "gp_emo_7",
+        "front": "Ruhig",
+        "back": "Spokojny",
+        "difficulty": "medium",
+        "example": "Ona jest spokojna",
+        "exampleTranslation": "Sie ist ruhig"
+      },
+      {
+        "id": "gp_emo_8",
+        "front": "Überrascht",
+        "back": "Zaskoczony",
+        "difficulty": "medium",
+        "example": "Jestem zaskoczony",
+        "exampleTranslation": "Ich bin überrascht"
+      },
+      {
+        "id": "gp_emo_9",
+        "front": "Ängstlich",
+        "back": "Przestraszony",
+        "difficulty": "medium",
+        "example": "Dziecko jest przestraszone",
+        "exampleTranslation": "Das Kind hat Angst"
+      },
+      {
+        "id": "gp_emo_10",
+        "front": "Gelangweilt",
+        "back": "Znudzony",
+        "difficulty": "medium",
+        "example": "Są znudzeni",
+        "exampleTranslation": "Sie sind gelangweilt"
+      }
+    ]
+  },
+  {
+    "key": "time",
+    "name": "Zeit",
+    "description": "Zeitausdrücke",
+    "iconName": "Clock",
+    "color": "#22d3ee",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "gp_time_1",
+        "front": "Heute",
+        "back": "Dziś",
+        "difficulty": "medium",
+        "example": "Dziś jest poniedziałek",
+        "exampleTranslation": "Heute ist Montag"
+      },
+      {
+        "id": "gp_time_2",
+        "front": "Gestern",
+        "back": "Wczoraj",
+        "difficulty": "medium",
+        "example": "Wczoraj była niedziela",
+        "exampleTranslation": "Gestern war Sonntag"
+      },
+      {
+        "id": "gp_time_3",
+        "front": "Morgen",
+        "back": "Jutro",
+        "difficulty": "medium",
+        "example": "Jutro jest wtorek",
+        "exampleTranslation": "Morgen ist Dienstag"
+      },
+      {
+        "id": "gp_time_4",
+        "front": "Jetzt",
+        "back": "Teraz",
+        "difficulty": "medium",
+        "example": "Pracuję teraz",
+        "exampleTranslation": "Ich arbeite jetzt"
+      },
+      {
+        "id": "gp_time_5",
+        "front": "Später",
+        "back": "Później",
+        "difficulty": "medium",
+        "example": "Zrobię to później",
+        "exampleTranslation": "Ich mache es später"
+      },
+      {
+        "id": "gp_time_6",
+        "front": "Morgen",
+        "back": "Rano",
+        "difficulty": "medium",
+        "example": "Dzień dobry",
+        "exampleTranslation": "Guten Morgen"
+      },
+      {
+        "id": "gp_time_7",
+        "front": "Mittag",
+        "back": "Południe",
+        "difficulty": "medium",
+        "example": "Jest południe",
+        "exampleTranslation": "Es ist Mittag"
+      },
+      {
+        "id": "gp_time_8",
+        "front": "Abend",
+        "back": "Wieczór",
+        "difficulty": "medium",
+        "example": "Dobry wieczór",
+        "exampleTranslation": "Guten Abend"
+      },
+      {
+        "id": "gp_time_9",
+        "front": "Nacht",
+        "back": "Noc",
+        "difficulty": "medium",
+        "example": "Dobranoc",
+        "exampleTranslation": "Gute Nacht"
+      },
+      {
+        "id": "gp_time_10",
+        "front": "Woche",
+        "back": "Tydzień",
+        "difficulty": "medium",
+        "example": "Następny tydzień",
+        "exampleTranslation": "Nächste Woche"
+      }
+    ]
+  },
+  {
+    "key": "weather",
+    "name": "Wetter",
+    "description": "Wetter",
+    "iconName": "Cloud",
+    "color": "#38bdf8",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "gp_weather_1",
+        "front": "Sonne",
+        "back": "Słońce",
+        "difficulty": "medium",
+        "example": "Słońce świeci",
+        "exampleTranslation": "Die Sonne scheint"
+      },
+      {
+        "id": "gp_weather_2",
+        "front": "Regen",
+        "back": "Deszcz",
+        "difficulty": "medium",
+        "example": "Pada deszcz",
+        "exampleTranslation": "Es regnet"
+      },
+      {
+        "id": "gp_weather_3",
+        "front": "Schnee",
+        "back": "Śnieg",
+        "difficulty": "medium",
+        "example": "Pada śnieg",
+        "exampleTranslation": "Es schneit"
+      },
+      {
+        "id": "gp_weather_4",
+        "front": "Wind",
+        "back": "Wiatr",
+        "difficulty": "medium",
+        "example": "Wieje wiatr",
+        "exampleTranslation": "Es ist windig"
+      },
+      {
+        "id": "gp_weather_5",
+        "front": "Wolke",
+        "back": "Chmura",
+        "difficulty": "medium",
+        "example": "Na niebie są chmury",
+        "exampleTranslation": "Es gibt Wolken am Himmel"
+      },
+      {
+        "id": "gp_weather_6",
+        "front": "Gewitter",
+        "back": "Burza",
+        "difficulty": "medium",
+        "example": "Nadchodzi burza",
+        "exampleTranslation": "Ein Gewitter kommt"
+      },
+      {
+        "id": "gp_weather_7",
+        "front": "Heiß",
+        "back": "Gorąco",
+        "difficulty": "medium",
+        "example": "Jest bardzo gorąco",
+        "exampleTranslation": "Es ist sehr heiß"
+      },
+      {
+        "id": "gp_weather_8",
+        "front": "Kalt",
+        "back": "Zimno",
+        "difficulty": "medium",
+        "example": "Zimą jest zimno",
+        "exampleTranslation": "Im Winter ist es kalt"
+      },
+      {
+        "id": "gp_weather_9",
+        "front": "Blitz",
+        "back": "Błyskawica",
+        "difficulty": "medium",
+        "example": "Widziałem błyskawicę",
+        "exampleTranslation": "Ich sah einen Blitz"
+      },
+      {
+        "id": "gp_weather_10",
+        "front": "Donner",
+        "back": "Grzmot",
+        "difficulty": "medium",
+        "example": "Słychać grzmot",
+        "exampleTranslation": "Man hört den Donner"
+      }
+    ]
+  },
+  {
+    "key": "body",
+    "name": "Körper",
+    "description": "Körperteile",
+    "iconName": "Hand",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "gp_body_1",
+        "front": "Kopf",
+        "back": "Głowa",
+        "difficulty": "medium",
+        "example": "Boli mnie głowa",
+        "exampleTranslation": "Mein Kopf tut weh"
+      },
+      {
+        "id": "gp_body_2",
+        "front": "Auge",
+        "back": "Oko",
+        "difficulty": "medium",
+        "example": "Mam niebieskie oczy",
+        "exampleTranslation": "Ich habe blaue Augen"
+      },
+      {
+        "id": "gp_body_3",
+        "front": "Nase",
+        "back": "Nos",
+        "difficulty": "medium",
+        "example": "Mój nos jest zimny",
+        "exampleTranslation": "Meine Nase ist kalt"
+      },
+      {
+        "id": "gp_body_4",
+        "front": "Mund",
+        "back": "Usta",
+        "difficulty": "medium",
+        "example": "Otwórz usta",
+        "exampleTranslation": "Öffne den Mund"
+      },
+      {
+        "id": "gp_body_5",
+        "front": "Ohr",
+        "back": "Ucho",
+        "difficulty": "medium",
+        "example": "Moje uszy są duże",
+        "exampleTranslation": "Meine Ohren sind groß"
+      },
+      {
+        "id": "gp_body_6",
+        "front": "Hand",
+        "back": "Ręka",
+        "difficulty": "medium",
+        "example": "Daj mi rękę",
+        "exampleTranslation": "Gib mir die Hand"
+      },
+      {
+        "id": "gp_body_7",
+        "front": "Fuß",
+        "back": "Stopa",
+        "difficulty": "medium",
+        "example": "Boli mnie stopa",
+        "exampleTranslation": "Mein Fuß tut weh"
+      },
+      {
+        "id": "gp_body_8",
+        "front": "Arm",
+        "back": "Ramię",
+        "difficulty": "medium",
+        "example": "Podnieś ramię",
+        "exampleTranslation": "Hebe den Arm"
+      },
+      {
+        "id": "gp_body_9",
+        "front": "Bein",
+        "back": "Noga",
+        "difficulty": "medium",
+        "example": "Moje nogi są zmęczone",
+        "exampleTranslation": "Meine Beine sind müde"
+      },
+      {
+        "id": "gp_body_10",
+        "front": "Herz",
+        "back": "Serce",
+        "difficulty": "medium",
+        "example": "Moje serce bije szybko",
+        "exampleTranslation": "Mein Herz schlägt schnell"
+      }
+    ]
+  },
+  {
+    "key": "activities",
+    "name": "Aktivitäten",
+    "description": "Tägliche Aktivitäten",
+    "iconName": "Lightbulb",
+    "color": "#fbbf24",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "gp_act_1",
+        "front": "Essen",
+        "back": "Jeść",
+        "difficulty": "medium",
+        "example": "Będę jeść",
+        "exampleTranslation": "Ich werde essen"
+      },
+      {
+        "id": "gp_act_2",
+        "front": "Trinken",
+        "back": "Pić",
+        "difficulty": "medium",
+        "example": "Piję wodę",
+        "exampleTranslation": "Ich trinke Wasser"
+      },
+      {
+        "id": "gp_act_3",
+        "front": "Schlafen",
+        "back": "Spać",
+        "difficulty": "medium",
+        "example": "Muszę spać",
+        "exampleTranslation": "Ich muss schlafen"
+      },
+      {
+        "id": "gp_act_4",
+        "front": "Laufen",
+        "back": "Biegać",
+        "difficulty": "medium",
+        "example": "Biegam rano",
+        "exampleTranslation": "Ich laufe morgens"
+      },
+      {
+        "id": "gp_act_5",
+        "front": "Lesen",
+        "back": "Czytać",
+        "difficulty": "medium",
+        "example": "Czytam książkę",
+        "exampleTranslation": "Ich lese ein Buch"
+      },
+      {
+        "id": "gp_act_6",
+        "front": "Schreiben",
+        "back": "Pisać",
+        "difficulty": "medium",
+        "example": "Piszę list",
+        "exampleTranslation": "Ich schreibe einen Brief"
+      },
+      {
+        "id": "gp_act_7",
+        "front": "Sprechen",
+        "back": "Mówić",
+        "difficulty": "medium",
+        "example": "Mówię po polsku",
+        "exampleTranslation": "Ich spreche Polnisch"
+      },
+      {
+        "id": "gp_act_8",
+        "front": "Hören",
+        "back": "Słuchać",
+        "difficulty": "medium",
+        "example": "Słucham muzyki",
+        "exampleTranslation": "Ich höre Musik"
+      },
+      {
+        "id": "gp_act_9",
+        "front": "Sehen",
+        "back": "Patrzeć",
+        "difficulty": "medium",
+        "example": "Oglądam telewizję",
+        "exampleTranslation": "Ich sehe fern"
+      },
+      {
+        "id": "gp_act_10",
+        "front": "Denken",
+        "back": "Myśleć",
+        "difficulty": "medium",
+        "example": "Myślę o tobie",
+        "exampleTranslation": "Ich denke an dich"
+      }
+    ]
+  },
+  {
+    "key": "learning",
+    "name": "Lernen",
+    "description": "Lernaktivitäten",
+    "iconName": "BookOpen",
+    "color": "#818cf8",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "gp_learn_1",
+        "front": "Lernen",
+        "back": "Uczyć się",
+        "difficulty": "medium",
+        "example": "Uczę się polskiego",
+        "exampleTranslation": "Ich lerne Polnisch"
+      },
+      {
+        "id": "gp_learn_2",
+        "front": "Studieren",
+        "back": "Studiować",
+        "difficulty": "medium",
+        "example": "Studiuję na uniwersytecie",
+        "exampleTranslation": "Ich studiere an der Universität"
+      },
+      {
+        "id": "gp_learn_3",
+        "front": "Lehren",
+        "back": "Uczyć",
+        "difficulty": "medium",
+        "example": "Uczę niemieckiego",
+        "exampleTranslation": "Ich unterrichte Deutsch"
+      },
+      {
+        "id": "gp_learn_4",
+        "front": "Verstehen",
+        "back": "Rozumieć",
+        "difficulty": "medium",
+        "example": "Rozumiem lekcję",
+        "exampleTranslation": "Ich verstehe die Lektion"
+      },
+      {
+        "id": "gp_learn_5",
+        "front": "Üben",
+        "back": "Ćwiczyć",
+        "difficulty": "medium",
+        "example": "Ćwiczę codziennie",
+        "exampleTranslation": "Ich übe jeden Tag"
+      },
+      {
+        "id": "gp_learn_6",
+        "front": "Wiederholen",
+        "back": "Powtarzać",
+        "difficulty": "medium",
+        "example": "Powtórz słowo",
+        "exampleTranslation": "Wiederhole das Wort"
+      },
+      {
+        "id": "gp_learn_7",
+        "front": "Erklären",
+        "back": "Wyjaśniać",
+        "difficulty": "medium",
+        "example": "Nauczyciel dobrze wyjaśnia",
+        "exampleTranslation": "Der Lehrer erklärt gut"
+      },
+      {
+        "id": "gp_learn_8",
+        "front": "Fragen",
+        "back": "Pytać",
+        "difficulty": "medium",
+        "example": "Pytam nauczyciela",
+        "exampleTranslation": "Ich frage den Lehrer"
+      },
+      {
+        "id": "gp_learn_9",
+        "front": "Antworten",
+        "back": "Odpowiadać",
+        "difficulty": "medium",
+        "example": "Odpowiadam na pytanie",
+        "exampleTranslation": "Ich beantworte die Frage"
+      },
+      {
+        "id": "gp_learn_10",
+        "front": "Merken",
+        "back": "Zapamiętać",
+        "difficulty": "medium",
+        "example": "Zapamiętałem lekcję",
+        "exampleTranslation": "Ich erinnere mich an die Lektion"
+      }
+    ]
+  },
+  {
+    "key": "sports",
+    "name": "Sport",
+    "description": "Sportarten",
+    "iconName": "Dumbbell",
+    "color": "#818cf8",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "gp_sport_1",
+        "front": "Fußball",
+        "back": "Piłka nożna",
+        "difficulty": "medium",
+        "example": "Gram w piłkę nożną",
+        "exampleTranslation": "Ich spiele Fußball"
+      },
+      {
+        "id": "gp_sport_2",
+        "front": "Basketball",
+        "back": "Koszykówka",
+        "difficulty": "medium",
+        "example": "Lubię koszykówkę",
+        "exampleTranslation": "Ich mag Basketball"
+      },
+      {
+        "id": "gp_sport_3",
+        "front": "Tennis",
+        "back": "Tenis",
+        "difficulty": "medium",
+        "example": "Gram w tenisa",
+        "exampleTranslation": "Ich spiele Tennis"
+      },
+      {
+        "id": "gp_sport_4",
+        "front": "Schwimmen",
+        "back": "Pływanie",
+        "difficulty": "medium",
+        "example": "Pływanie jest zdrowe",
+        "exampleTranslation": "Schwimmen ist gesund"
+      },
+      {
+        "id": "gp_sport_5",
+        "front": "Laufen",
+        "back": "Bieganie",
+        "difficulty": "medium",
+        "example": "Biegam rano",
+        "exampleTranslation": "Ich laufe morgens"
+      },
+      {
+        "id": "gp_sport_6",
+        "front": "Radfahren",
+        "back": "Kolarstwo",
+        "difficulty": "medium",
+        "example": "Lubię kolarstwo",
+        "exampleTranslation": "Ich mag Radfahren"
+      },
+      {
+        "id": "gp_sport_7",
+        "front": "Fitnessstudio",
+        "back": "Siłownia",
+        "difficulty": "medium",
+        "example": "Chodzę na siłownię",
+        "exampleTranslation": "Ich gehe ins Fitnessstudio"
+      },
+      {
+        "id": "gp_sport_8",
+        "front": "Training",
+        "back": "Trening",
+        "difficulty": "medium",
+        "example": "Mam dzisiaj trening",
+        "exampleTranslation": "Ich habe heute Training"
+      },
+      {
+        "id": "gp_sport_9",
+        "front": "Mannschaft",
+        "back": "Drużyna",
+        "difficulty": "medium",
+        "example": "Jestem w drużynie",
+        "exampleTranslation": "Ich bin in einer Mannschaft"
+      },
+      {
+        "id": "gp_sport_10",
+        "front": "Trainer",
+        "back": "Trener",
+        "difficulty": "medium",
+        "example": "Nasz trener jest świetny",
+        "exampleTranslation": "Unser Trainer ist ausgezeichnet"
+      }
+    ]
+  },
+  {
+    "key": "travel",
+    "name": "Reisen",
+    "description": "Tourismus",
+    "iconName": "Plane",
+    "color": "#60a5fa",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "gp_travel_1",
+        "front": "Reise",
+        "back": "Podróż",
+        "difficulty": "medium",
+        "example": "Jadę w podróż",
+        "exampleTranslation": "Ich mache eine Reise"
+      },
+      {
+        "id": "gp_travel_2",
+        "front": "Koffer",
+        "back": "Walizka",
+        "difficulty": "medium",
+        "example": "Moja walizka jest ciężka",
+        "exampleTranslation": "Mein Koffer ist schwer"
+      },
+      {
+        "id": "gp_travel_3",
+        "front": "Reisepass",
+        "back": "Paszport",
+        "difficulty": "medium",
+        "example": "Potrzebuję paszportu",
+        "exampleTranslation": "Ich brauche meinen Reisepass"
+      },
+      {
+        "id": "gp_travel_4",
+        "front": "Hotel",
+        "back": "Hotel",
+        "difficulty": "medium",
+        "example": "Hotel jest wygodny",
+        "exampleTranslation": "Das Hotel ist komfortabel"
+      },
+      {
+        "id": "gp_travel_5",
+        "front": "Reservierung",
+        "back": "Rezerwacja",
+        "difficulty": "medium",
+        "example": "Mam rezerwację",
+        "exampleTranslation": "Ich habe eine Reservierung"
+      },
+      {
+        "id": "gp_travel_6",
+        "front": "Tourist",
+        "back": "Turysta",
+        "difficulty": "medium",
+        "example": "Jestem turystą",
+        "exampleTranslation": "Ich bin Tourist"
+      },
+      {
+        "id": "gp_travel_7",
+        "front": "Urlaub",
+        "back": "Wakacje",
+        "difficulty": "medium",
+        "example": "Jestem na wakacjach",
+        "exampleTranslation": "Ich bin im Urlaub"
+      },
+      {
+        "id": "gp_travel_8",
+        "front": "Besichtigung",
+        "back": "Zwiedzanie",
+        "difficulty": "medium",
+        "example": "Robimy zwiedzanie",
+        "exampleTranslation": "Wir machen eine Besichtigung"
+      },
+      {
+        "id": "gp_travel_9",
+        "front": "Reiseführer",
+        "back": "Przewodnik",
+        "difficulty": "medium",
+        "example": "Przewodnik jest pouczający",
+        "exampleTranslation": "Der Reiseführer ist informativ"
+      },
+      {
+        "id": "gp_travel_10",
+        "front": "Souvenir",
+        "back": "Pamiątka",
+        "difficulty": "medium",
+        "example": "Kupuję pamiątkę",
+        "exampleTranslation": "Ich kaufe ein Souvenir"
+      }
+    ]
+  },
+  {
+    "key": "entertainment",
+    "name": "Unterhaltung",
+    "description": "Freizeit",
+    "iconName": "Music",
+    "color": "#e879f9",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "gp_ent_1",
+        "front": "Musik",
+        "back": "Muzyka",
+        "difficulty": "medium",
+        "example": "Słucham muzyki",
+        "exampleTranslation": "Ich höre Musik"
+      },
+      {
+        "id": "gp_ent_2",
+        "front": "Film",
+        "back": "Film",
+        "difficulty": "medium",
+        "example": "Oglądam film",
+        "exampleTranslation": "Ich sehe einen Film"
+      },
+      {
+        "id": "gp_ent_3",
+        "front": "Konzert",
+        "back": "Koncert",
+        "difficulty": "medium",
+        "example": "Idę na koncert",
+        "exampleTranslation": "Ich gehe zu einem Konzert"
+      },
+      {
+        "id": "gp_ent_4",
+        "front": "Theater",
+        "back": "Teatr",
+        "difficulty": "medium",
+        "example": "Idę do teatru",
+        "exampleTranslation": "Ich gehe ins Theater"
+      },
+      {
+        "id": "gp_ent_5",
+        "front": "Tanzen",
+        "back": "Tańczyć",
+        "difficulty": "medium",
+        "example": "Lubię tańczyć",
+        "exampleTranslation": "Ich tanze gern"
+      },
+      {
+        "id": "gp_ent_6",
+        "front": "Singen",
+        "back": "Śpiewać",
+        "difficulty": "medium",
+        "example": "Lubię śpiewać",
+        "exampleTranslation": "Ich singe gern"
+      },
+      {
+        "id": "gp_ent_7",
+        "front": "Gitarre",
+        "back": "Gitara",
+        "difficulty": "medium",
+        "example": "Gram na gitarze",
+        "exampleTranslation": "Ich spiele Gitarre"
+      },
+      {
+        "id": "gp_ent_8",
+        "front": "Spiele",
+        "back": "Gry",
+        "difficulty": "medium",
+        "example": "Gram w gry wideo",
+        "exampleTranslation": "Ich spiele Videospiele"
+      },
+      {
+        "id": "gp_ent_9",
+        "front": "Fotografie",
+        "back": "Fotografia",
+        "difficulty": "medium",
+        "example": "Interesuję się fotografią",
+        "exampleTranslation": "Ich interessiere mich für Fotografie"
+      },
+      {
+        "id": "gp_ent_10",
+        "front": "Lesen",
+        "back": "Czytanie",
+        "difficulty": "medium",
+        "example": "Czytanie jest moim hobby",
+        "exampleTranslation": "Lesen ist mein Hobby"
+      }
+    ]
+  }
+]

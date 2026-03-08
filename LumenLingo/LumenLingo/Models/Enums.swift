@@ -91,6 +91,10 @@ enum SupportedLanguage: String, Codable, CaseIterable, Identifiable {
     case polish
     case czech
     case catalan
+    case arabic
+    case chinese
+    case japanese
+    case ukrainian
 
     var id: String { rawValue }
 
@@ -105,6 +109,10 @@ enum SupportedLanguage: String, Codable, CaseIterable, Identifiable {
         case .polish: return "Polski"
         case .czech: return "Čeština"
         case .catalan: return "Català"
+        case .arabic: return "العربية"
+        case .chinese: return "中文"
+        case .japanese: return "日本語"
+        case .ukrainian: return "Українська"
         }
     }
 
@@ -119,6 +127,10 @@ enum SupportedLanguage: String, Codable, CaseIterable, Identifiable {
         case .polish: return "🇵🇱"
         case .czech: return "🇨🇿"
         case .catalan: return "🏴"
+        case .arabic: return "🇸🇦"
+        case .chinese: return "🇨🇳"
+        case .japanese: return "🇯🇵"
+        case .ukrainian: return "🇺🇦"
         }
     }
 
@@ -133,11 +145,15 @@ enum SupportedLanguage: String, Codable, CaseIterable, Identifiable {
         case .polish: return "Polish"
         case .czech: return "Czech"
         case .catalan: return "Catalan"
+        case .arabic: return "Arabic"
+        case .chinese: return "Chinese"
+        case .japanese: return "Japanese"
+        case .ukrainian: return "Ukrainian"
         }
     }
 
     var isRTL: Bool {
-        false
+        self == .arabic
     }
 }
 
@@ -153,15 +169,42 @@ struct LanguagePair: Equatable, Hashable, Codable {
         "\(source.flag) \(source.displayName) → \(target.flag) \(target.displayName)"
     }
 
-    /// The 7 built-in (non-beta) language pairs
+    /// Built-in (non-beta) language pairs that have content data
     static let builtIn: [LanguagePair] = [
+        // English pairs
         .init(source: .english, target: .spanish),
+        .init(source: .english, target: .french),
+        .init(source: .english, target: .german),
+        .init(source: .english, target: .polish),
+        .init(source: .english, target: .arabic),
+        .init(source: .english, target: .chinese),
+        .init(source: .english, target: .japanese),
+        // Spanish pairs
         .init(source: .spanish, target: .english),
+        // French pairs
+        .init(source: .french, target: .english),
+        // German pairs
+        .init(source: .german, target: .english),
+        .init(source: .german, target: .spanish),
+        .init(source: .german, target: .polish),
+        // Polish pairs
         .init(source: .polish, target: .english),
         .init(source: .polish, target: .spanish),
         .init(source: .polish, target: .german),
-        .init(source: .german, target: .english),
-        .init(source: .french, target: .english),
+        .init(source: .polish, target: .french),
+        .init(source: .polish, target: .arabic),
+        .init(source: .polish, target: .chinese),
+        .init(source: .polish, target: .japanese),
+        .init(source: .polish, target: .ukrainian),
+        // Arabic pairs
+        .init(source: .arabic, target: .english),
+        // Chinese pairs
+        .init(source: .chinese, target: .english),
+        // Japanese pairs
+        .init(source: .japanese, target: .english),
+        // Ukrainian pairs
+        .init(source: .ukrainian, target: .english),
+        .init(source: .ukrainian, target: .polish),
     ]
 
     /// Check if a pair is built-in by key

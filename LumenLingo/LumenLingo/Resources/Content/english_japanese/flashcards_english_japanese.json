@@ -1,0 +1,1892 @@
+[
+  {
+    "key": "greetings",
+    "name": "Greetings",
+    "description": "Basic greetings",
+    "iconName": "Hand",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ej_greet_1",
+        "front": "Hello",
+        "back": "こんにちは",
+        "difficulty": "medium",
+        "example": "こんにちは、お元気ですか？",
+        "exampleTranslation": "Hello, how are you?"
+      },
+      {
+        "id": "ej_greet_2",
+        "front": "Good morning",
+        "back": "おはようございます",
+        "difficulty": "medium",
+        "example": "おはようございます、先生",
+        "exampleTranslation": "Good morning, sir"
+      },
+      {
+        "id": "ej_greet_3",
+        "front": "Good evening",
+        "back": "こんばんは",
+        "difficulty": "medium",
+        "example": "こんばんは、お元気ですか？",
+        "exampleTranslation": "Good evening, how are you?"
+      },
+      {
+        "id": "ej_greet_4",
+        "front": "Good night",
+        "back": "おやすみなさい",
+        "difficulty": "medium",
+        "example": "おやすみなさい、よく眠れますように",
+        "exampleTranslation": "Good night, sleep well"
+      },
+      {
+        "id": "ej_greet_5",
+        "front": "Goodbye",
+        "back": "さようなら",
+        "difficulty": "medium",
+        "example": "さようなら、また後で",
+        "exampleTranslation": "Goodbye, see you later"
+      },
+      {
+        "id": "ej_greet_6",
+        "front": "Thank you",
+        "back": "ありがとうございます",
+        "difficulty": "medium",
+        "example": "ご協力ありがとうございます",
+        "exampleTranslation": "Thank you for your help"
+      },
+      {
+        "id": "ej_greet_7",
+        "front": "Please",
+        "back": "お願いします",
+        "difficulty": "medium",
+        "example": "お願いします、助けてください",
+        "exampleTranslation": "Please, help me"
+      },
+      {
+        "id": "ej_greet_8",
+        "front": "Excuse me",
+        "back": "すみません",
+        "difficulty": "medium",
+        "example": "すみません、遅れました",
+        "exampleTranslation": "Excuse me, I'm late"
+      },
+      {
+        "id": "ej_greet_9",
+        "front": "Yes",
+        "back": "はい",
+        "difficulty": "medium",
+        "example": "はい、賛成です",
+        "exampleTranslation": "Yes, I agree"
+      },
+      {
+        "id": "ej_greet_10",
+        "front": "No",
+        "back": "いいえ",
+        "difficulty": "medium",
+        "example": "いいえ、欲しくないです",
+        "exampleTranslation": "No, I don't want"
+      }
+    ]
+  },
+  {
+    "key": "family",
+    "name": "Family",
+    "description": "Family members",
+    "iconName": "Users",
+    "color": "#c084fc",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ej_fam_1",
+        "front": "Father",
+        "back": "父",
+        "difficulty": "medium",
+        "example": "父はたくさん働きます",
+        "exampleTranslation": "My father works a lot"
+      },
+      {
+        "id": "ej_fam_2",
+        "front": "Mother",
+        "back": "母",
+        "difficulty": "medium",
+        "example": "母は料理が上手です",
+        "exampleTranslation": "My mother cooks well"
+      },
+      {
+        "id": "ej_fam_3",
+        "front": "Brother",
+        "back": "兄",
+        "difficulty": "medium",
+        "example": "兄は医学を勉強しています",
+        "exampleTranslation": "My brother studies medicine"
+      },
+      {
+        "id": "ej_fam_4",
+        "front": "Sister",
+        "back": "姉",
+        "difficulty": "medium",
+        "example": "姉は先生です",
+        "exampleTranslation": "My sister is a teacher"
+      },
+      {
+        "id": "ej_fam_5",
+        "front": "Son",
+        "back": "息子",
+        "difficulty": "medium",
+        "example": "息子は10歳です",
+        "exampleTranslation": "My son is ten years old"
+      },
+      {
+        "id": "ej_fam_6",
+        "front": "Daughter",
+        "back": "娘",
+        "difficulty": "medium",
+        "example": "娘は大学に通っています",
+        "exampleTranslation": "My daughter goes to university"
+      },
+      {
+        "id": "ej_fam_7",
+        "front": "Grandfather",
+        "back": "祖父",
+        "difficulty": "medium",
+        "example": "祖父はとても賢いです",
+        "exampleTranslation": "My grandfather is very wise"
+      },
+      {
+        "id": "ej_fam_8",
+        "front": "Grandmother",
+        "back": "祖母",
+        "difficulty": "medium",
+        "example": "祖母はケーキを作ります",
+        "exampleTranslation": "My grandmother makes cakes"
+      },
+      {
+        "id": "ej_fam_9",
+        "front": "Uncle",
+        "back": "叔父",
+        "difficulty": "medium",
+        "example": "叔父は東京に住んでいます",
+        "exampleTranslation": "My uncle lives in Tokyo"
+      },
+      {
+        "id": "ej_fam_10",
+        "front": "Aunt",
+        "back": "叔母",
+        "difficulty": "medium",
+        "example": "叔母はとても優しいです",
+        "exampleTranslation": "My aunt is very kind"
+      }
+    ]
+  },
+  {
+    "key": "numbers",
+    "name": "Numbers",
+    "description": "Basic numbers",
+    "iconName": "Hash",
+    "color": "#4ade80",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ej_num_1",
+        "front": "One",
+        "back": "一",
+        "difficulty": "medium",
+        "example": "私には兄が一人います",
+        "exampleTranslation": "I have one brother"
+      },
+      {
+        "id": "ej_num_2",
+        "front": "Two",
+        "back": "二",
+        "difficulty": "medium",
+        "example": "猫が二匹います",
+        "exampleTranslation": "There are two cats"
+      },
+      {
+        "id": "ej_num_3",
+        "front": "Three",
+        "back": "三",
+        "difficulty": "medium",
+        "example": "3時です",
+        "exampleTranslation": "It's three o'clock"
+      },
+      {
+        "id": "ej_num_4",
+        "front": "Four",
+        "back": "四",
+        "difficulty": "medium",
+        "example": "四季",
+        "exampleTranslation": "Four seasons"
+      },
+      {
+        "id": "ej_num_5",
+        "front": "Five",
+        "back": "五",
+        "difficulty": "medium",
+        "example": "手には5本の指があります",
+        "exampleTranslation": "Five fingers on the hand"
+      },
+      {
+        "id": "ej_num_6",
+        "front": "Six",
+        "back": "六",
+        "difficulty": "medium",
+        "example": "息子は6歳です",
+        "exampleTranslation": "My son is six years old"
+      },
+      {
+        "id": "ej_num_7",
+        "front": "Seven",
+        "back": "七",
+        "difficulty": "medium",
+        "example": "一週間は7日です",
+        "exampleTranslation": "Seven days of the week"
+      },
+      {
+        "id": "ej_num_8",
+        "front": "Eight",
+        "back": "八",
+        "difficulty": "medium",
+        "example": "私は8時間働きます",
+        "exampleTranslation": "I work eight hours"
+      },
+      {
+        "id": "ej_num_9",
+        "front": "Nine",
+        "back": "九",
+        "difficulty": "medium",
+        "example": "朝の9時です",
+        "exampleTranslation": "It's nine o'clock in the morning"
+      },
+      {
+        "id": "ej_num_10",
+        "front": "Ten",
+        "back": "十",
+        "difficulty": "medium",
+        "example": "10ユーロお願いします",
+        "exampleTranslation": "Ten euros, please"
+      }
+    ]
+  },
+  {
+    "key": "colors",
+    "name": "Colors",
+    "description": "Basic colors",
+    "iconName": "Palette",
+    "color": "#f472b6",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ej_col_1",
+        "front": "Red",
+        "back": "赤",
+        "difficulty": "medium",
+        "example": "車は赤いです",
+        "exampleTranslation": "The car is red"
+      },
+      {
+        "id": "ej_col_2",
+        "front": "Blue",
+        "back": "青",
+        "difficulty": "medium",
+        "example": "空は青いです",
+        "exampleTranslation": "The sky is blue"
+      },
+      {
+        "id": "ej_col_3",
+        "front": "Green",
+        "back": "緑",
+        "difficulty": "medium",
+        "example": "草は緑です",
+        "exampleTranslation": "The grass is green"
+      },
+      {
+        "id": "ej_col_4",
+        "front": "Yellow",
+        "back": "黄色",
+        "difficulty": "medium",
+        "example": "太陽は黄色いです",
+        "exampleTranslation": "The sun is yellow"
+      },
+      {
+        "id": "ej_col_5",
+        "front": "Black",
+        "back": "黒",
+        "difficulty": "medium",
+        "example": "私の猫は黒いです",
+        "exampleTranslation": "My cat is black"
+      },
+      {
+        "id": "ej_col_6",
+        "front": "White",
+        "back": "白",
+        "difficulty": "medium",
+        "example": "雪は白いです",
+        "exampleTranslation": "The snow is white"
+      },
+      {
+        "id": "ej_col_7",
+        "front": "Orange",
+        "back": "オレンジ",
+        "difficulty": "medium",
+        "example": "オレンジはオレンジ色です",
+        "exampleTranslation": "The orange is orange"
+      },
+      {
+        "id": "ej_col_8",
+        "front": "Pink",
+        "back": "ピンク",
+        "difficulty": "medium",
+        "example": "ドレスはピンクです",
+        "exampleTranslation": "The dress is pink"
+      },
+      {
+        "id": "ej_col_9",
+        "front": "Brown",
+        "back": "茶色",
+        "difficulty": "medium",
+        "example": "熊は茶色です",
+        "exampleTranslation": "The bear is brown"
+      },
+      {
+        "id": "ej_col_10",
+        "front": "Gray",
+        "back": "灰色",
+        "difficulty": "medium",
+        "example": "象は灰色です",
+        "exampleTranslation": "The elephant is gray"
+      }
+    ]
+  },
+  {
+    "key": "food",
+    "name": "Food",
+    "description": "Basic foods",
+    "iconName": "UtensilsCrossed",
+    "color": "#fb923c",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ej_food_1",
+        "front": "Bread",
+        "back": "パン",
+        "difficulty": "medium",
+        "example": "パンは新鮮です",
+        "exampleTranslation": "The bread is fresh"
+      },
+      {
+        "id": "ej_food_2",
+        "front": "Water",
+        "back": "水",
+        "difficulty": "medium",
+        "example": "水を一杯お願いします",
+        "exampleTranslation": "A glass of water, please"
+      },
+      {
+        "id": "ej_food_3",
+        "front": "Coffee",
+        "back": "コーヒー",
+        "difficulty": "medium",
+        "example": "私はコーヒーが好きです",
+        "exampleTranslation": "I like coffee"
+      },
+      {
+        "id": "ej_food_4",
+        "front": "Milk",
+        "back": "牛乳",
+        "difficulty": "medium",
+        "example": "牛乳は新鮮です",
+        "exampleTranslation": "The milk is fresh"
+      },
+      {
+        "id": "ej_food_5",
+        "front": "Meat",
+        "back": "肉",
+        "difficulty": "medium",
+        "example": "肉は美味しいです",
+        "exampleTranslation": "The meat is delicious"
+      },
+      {
+        "id": "ej_food_6",
+        "front": "Fish",
+        "back": "魚",
+        "difficulty": "medium",
+        "example": "魚はとても健康的です",
+        "exampleTranslation": "Fish is very healthy"
+      },
+      {
+        "id": "ej_food_7",
+        "front": "Fruit",
+        "back": "果物",
+        "difficulty": "medium",
+        "example": "私は毎日果物を食べます",
+        "exampleTranslation": "I eat fruit every day"
+      },
+      {
+        "id": "ej_food_8",
+        "front": "Vegetables",
+        "back": "野菜",
+        "difficulty": "medium",
+        "example": "野菜は重要です",
+        "exampleTranslation": "Vegetables are important"
+      },
+      {
+        "id": "ej_food_9",
+        "front": "Cheese",
+        "back": "チーズ",
+        "difficulty": "medium",
+        "example": "日本のチーズは美味しいです",
+        "exampleTranslation": "Japanese cheese is delicious"
+      },
+      {
+        "id": "ej_food_10",
+        "front": "Egg",
+        "back": "卵",
+        "difficulty": "medium",
+        "example": "私は朝食に卵を食べます",
+        "exampleTranslation": "I eat eggs for breakfast"
+      }
+    ]
+  },
+  {
+    "key": "house",
+    "name": "House",
+    "description": "Household items",
+    "iconName": "Home",
+    "color": "#facc15",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ej_house_1",
+        "front": "House",
+        "back": "家",
+        "difficulty": "medium",
+        "example": "私の家は大きいです",
+        "exampleTranslation": "My house is big"
+      },
+      {
+        "id": "ej_house_2",
+        "front": "Room",
+        "back": "部屋",
+        "difficulty": "medium",
+        "example": "部屋はきれいです",
+        "exampleTranslation": "The room is clean"
+      },
+      {
+        "id": "ej_house_3",
+        "front": "Kitchen",
+        "back": "台所",
+        "difficulty": "medium",
+        "example": "私は台所で料理します",
+        "exampleTranslation": "I cook in the kitchen"
+      },
+      {
+        "id": "ej_house_4",
+        "front": "Bathroom",
+        "back": "浴室",
+        "difficulty": "medium",
+        "example": "浴室は新しいです",
+        "exampleTranslation": "The bathroom is new"
+      },
+      {
+        "id": "ej_house_5",
+        "front": "Bedroom",
+        "back": "寝室",
+        "difficulty": "medium",
+        "example": "私の寝室は快適です",
+        "exampleTranslation": "My bedroom is comfortable"
+      },
+      {
+        "id": "ej_house_6",
+        "front": "Door",
+        "back": "ドア",
+        "difficulty": "medium",
+        "example": "ドアを閉めてください",
+        "exampleTranslation": "Close the door"
+      },
+      {
+        "id": "ej_house_7",
+        "front": "Window",
+        "back": "窓",
+        "difficulty": "medium",
+        "example": "窓を開けてください",
+        "exampleTranslation": "Open the window"
+      },
+      {
+        "id": "ej_house_8",
+        "front": "Table",
+        "back": "テーブル",
+        "difficulty": "medium",
+        "example": "テーブルは木製です",
+        "exampleTranslation": "The table is wooden"
+      },
+      {
+        "id": "ej_house_9",
+        "front": "Chair",
+        "back": "椅子",
+        "difficulty": "medium",
+        "example": "椅子は快適です",
+        "exampleTranslation": "The chair is comfortable"
+      },
+      {
+        "id": "ej_house_10",
+        "front": "Bed",
+        "back": "ベッド",
+        "difficulty": "medium",
+        "example": "ベッドは柔らかいです",
+        "exampleTranslation": "The bed is soft"
+      }
+    ]
+  },
+  {
+    "key": "places",
+    "name": "Places",
+    "description": "Locations",
+    "iconName": "MapPin",
+    "color": "#f87171",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ej_place_1",
+        "front": "Store",
+        "back": "店",
+        "difficulty": "medium",
+        "example": "店は開いています",
+        "exampleTranslation": "The store is open"
+      },
+      {
+        "id": "ej_place_2",
+        "front": "School",
+        "back": "学校",
+        "difficulty": "medium",
+        "example": "私は学校に行きます",
+        "exampleTranslation": "I go to school"
+      },
+      {
+        "id": "ej_place_3",
+        "front": "Hospital",
+        "back": "病院",
+        "difficulty": "medium",
+        "example": "病院は近いです",
+        "exampleTranslation": "The hospital is close"
+      },
+      {
+        "id": "ej_place_4",
+        "front": "Park",
+        "back": "公園",
+        "difficulty": "medium",
+        "example": "子供たちは公園で遊びます",
+        "exampleTranslation": "Children play in the park"
+      },
+      {
+        "id": "ej_place_5",
+        "front": "Restaurant",
+        "back": "レストラン",
+        "difficulty": "medium",
+        "example": "私たちはレストランで食べます",
+        "exampleTranslation": "We eat at the restaurant"
+      },
+      {
+        "id": "ej_place_6",
+        "front": "Hotel",
+        "back": "ホテル",
+        "difficulty": "medium",
+        "example": "ホテルはとても大きいです",
+        "exampleTranslation": "The hotel is very big"
+      },
+      {
+        "id": "ej_place_7",
+        "front": "Bank",
+        "back": "銀行",
+        "difficulty": "medium",
+        "example": "私は銀行に行きます",
+        "exampleTranslation": "I go to the bank"
+      },
+      {
+        "id": "ej_place_8",
+        "front": "Airport",
+        "back": "空港",
+        "difficulty": "medium",
+        "example": "私は空港にいます",
+        "exampleTranslation": "I'm at the airport"
+      },
+      {
+        "id": "ej_place_9",
+        "front": "Train station",
+        "back": "駅",
+        "difficulty": "medium",
+        "example": "駅",
+        "exampleTranslation": "The train station"
+      },
+      {
+        "id": "ej_place_10",
+        "front": "Museum",
+        "back": "博物館",
+        "difficulty": "medium",
+        "example": "博物館は面白いです",
+        "exampleTranslation": "The museum is interesting"
+      }
+    ]
+  },
+  {
+    "key": "clothing",
+    "name": "Clothing",
+    "description": "Clothes",
+    "iconName": "Shirt",
+    "color": "#818cf8",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ej_cloth_1",
+        "front": "Shirt",
+        "back": "シャツ",
+        "difficulty": "medium",
+        "example": "あなたのシャツが好きです",
+        "exampleTranslation": "I like your shirt"
+      },
+      {
+        "id": "ej_cloth_2",
+        "front": "Pants",
+        "back": "ズボン",
+        "difficulty": "medium",
+        "example": "新しいズボンが必要です",
+        "exampleTranslation": "I need new pants"
+      },
+      {
+        "id": "ej_cloth_3",
+        "front": "Shoes",
+        "back": "靴",
+        "difficulty": "medium",
+        "example": "黒い靴を買いました",
+        "exampleTranslation": "I bought black shoes"
+      },
+      {
+        "id": "ej_cloth_4",
+        "front": "Dress",
+        "back": "ドレス",
+        "difficulty": "medium",
+        "example": "ドレスは美しいです",
+        "exampleTranslation": "The dress is beautiful"
+      },
+      {
+        "id": "ej_cloth_5",
+        "front": "Jacket",
+        "back": "ジャケット",
+        "difficulty": "medium",
+        "example": "ジャケットが必要です",
+        "exampleTranslation": "I need a jacket"
+      },
+      {
+        "id": "ej_cloth_6",
+        "front": "Hat",
+        "back": "帽子",
+        "difficulty": "medium",
+        "example": "帽子をかぶってください",
+        "exampleTranslation": "Put on the hat"
+      },
+      {
+        "id": "ej_cloth_7",
+        "front": "Socks",
+        "back": "靴下",
+        "difficulty": "medium",
+        "example": "私の靴下はきれいです",
+        "exampleTranslation": "My socks are clean"
+      },
+      {
+        "id": "ej_cloth_8",
+        "front": "Gloves",
+        "back": "手袋",
+        "difficulty": "medium",
+        "example": "冬は手袋をします",
+        "exampleTranslation": "I wear gloves in winter"
+      },
+      {
+        "id": "ej_cloth_9",
+        "front": "Scarf",
+        "back": "スカーフ",
+        "difficulty": "medium",
+        "example": "スカーフは柔らかいです",
+        "exampleTranslation": "The scarf is soft"
+      },
+      {
+        "id": "ej_cloth_10",
+        "front": "Coat",
+        "back": "コート",
+        "difficulty": "medium",
+        "example": "コートは暖かいです",
+        "exampleTranslation": "The coat is warm"
+      }
+    ]
+  },
+  {
+    "key": "work",
+    "name": "Work",
+    "description": "Professions",
+    "iconName": "Briefcase",
+    "color": "#22d3ee",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ej_work_1",
+        "front": "Work",
+        "back": "仕事",
+        "difficulty": "medium",
+        "example": "私は仕事に行きます",
+        "exampleTranslation": "I go to work"
+      },
+      {
+        "id": "ej_work_2",
+        "front": "Doctor",
+        "back": "医者",
+        "difficulty": "medium",
+        "example": "彼は医者です",
+        "exampleTranslation": "He is a doctor"
+      },
+      {
+        "id": "ej_work_3",
+        "front": "Teacher",
+        "back": "先生",
+        "difficulty": "medium",
+        "example": "私の先生は素晴らしいです",
+        "exampleTranslation": "My teacher is excellent"
+      },
+      {
+        "id": "ej_work_4",
+        "front": "Engineer",
+        "back": "エンジニア",
+        "difficulty": "medium",
+        "example": "私はエンジニアです",
+        "exampleTranslation": "I am an engineer"
+      },
+      {
+        "id": "ej_work_5",
+        "front": "Lawyer",
+        "back": "弁護士",
+        "difficulty": "medium",
+        "example": "彼女は弁護士です",
+        "exampleTranslation": "She is a lawyer"
+      },
+      {
+        "id": "ej_work_6",
+        "front": "Cook",
+        "back": "料理人",
+        "difficulty": "medium",
+        "example": "料理人が食事を準備します",
+        "exampleTranslation": "The cook prepares the meal"
+      },
+      {
+        "id": "ej_work_7",
+        "front": "Waiter",
+        "back": "ウェイター",
+        "difficulty": "medium",
+        "example": "ウェイターは親切です",
+        "exampleTranslation": "The waiter is kind"
+      },
+      {
+        "id": "ej_work_8",
+        "front": "Salesperson",
+        "back": "販売員",
+        "difficulty": "medium",
+        "example": "販売員が顧客を助けます",
+        "exampleTranslation": "The salesperson helps the customer"
+      },
+      {
+        "id": "ej_work_9",
+        "front": "Police officer",
+        "back": "警察官",
+        "difficulty": "medium",
+        "example": "警察官が街を守ります",
+        "exampleTranslation": "The police officer protects the city"
+      },
+      {
+        "id": "ej_work_10",
+        "front": "Mechanic",
+        "back": "整備士",
+        "difficulty": "medium",
+        "example": "整備士が車を修理します",
+        "exampleTranslation": "The mechanic repairs cars"
+      }
+    ]
+  },
+  {
+    "key": "transport",
+    "name": "Transport",
+    "description": "Transportation",
+    "iconName": "Car",
+    "color": "#2dd4bf",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ej_trans_1",
+        "front": "Car",
+        "back": "車",
+        "difficulty": "medium",
+        "example": "私は新しい車を持っています",
+        "exampleTranslation": "I have a new car"
+      },
+      {
+        "id": "ej_trans_2",
+        "front": "Bus",
+        "back": "バス",
+        "difficulty": "medium",
+        "example": "私はバスで行きます",
+        "exampleTranslation": "I go by bus"
+      },
+      {
+        "id": "ej_trans_3",
+        "front": "Train",
+        "back": "電車",
+        "difficulty": "medium",
+        "example": "電車は速いです",
+        "exampleTranslation": "The train is fast"
+      },
+      {
+        "id": "ej_trans_4",
+        "front": "Airplane",
+        "back": "飛行機",
+        "difficulty": "medium",
+        "example": "私は飛行機で旅行します",
+        "exampleTranslation": "I travel by plane"
+      },
+      {
+        "id": "ej_trans_5",
+        "front": "Bicycle",
+        "back": "自転車",
+        "difficulty": "medium",
+        "example": "私は自転車に乗ります",
+        "exampleTranslation": "I ride a bicycle"
+      },
+      {
+        "id": "ej_trans_6",
+        "front": "Taxi",
+        "back": "タクシー",
+        "difficulty": "medium",
+        "example": "私はタクシーを呼びます",
+        "exampleTranslation": "I call a taxi"
+      },
+      {
+        "id": "ej_trans_7",
+        "front": "Metro",
+        "back": "地下鉄",
+        "difficulty": "medium",
+        "example": "私は地下鉄を使います",
+        "exampleTranslation": "I use the metro"
+      },
+      {
+        "id": "ej_trans_8",
+        "front": "Motorcycle",
+        "back": "バイク",
+        "difficulty": "medium",
+        "example": "私のバイクは赤いです",
+        "exampleTranslation": "My motorcycle is red"
+      },
+      {
+        "id": "ej_trans_9",
+        "front": "Boat",
+        "back": "ボート",
+        "difficulty": "medium",
+        "example": "私たちはボートで航海します",
+        "exampleTranslation": "We sail by boat"
+      },
+      {
+        "id": "ej_trans_10",
+        "front": "Ticket",
+        "back": "切符",
+        "difficulty": "medium",
+        "example": "私は切符を買います",
+        "exampleTranslation": "I buy a ticket"
+      }
+    ]
+  },
+  {
+    "key": "education",
+    "name": "Education",
+    "description": "School",
+    "iconName": "School",
+    "color": "#3b82f6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ej_edu_1",
+        "front": "Student",
+        "back": "学生",
+        "difficulty": "medium",
+        "example": "私は学生です",
+        "exampleTranslation": "I am a student"
+      },
+      {
+        "id": "ej_edu_2",
+        "front": "Teacher",
+        "back": "先生",
+        "difficulty": "medium",
+        "example": "先生はよく教えます",
+        "exampleTranslation": "The teacher teaches well"
+      },
+      {
+        "id": "ej_edu_3",
+        "front": "Book",
+        "back": "本",
+        "difficulty": "medium",
+        "example": "私は本を読みます",
+        "exampleTranslation": "I read a book"
+      },
+      {
+        "id": "ej_edu_4",
+        "front": "Pencil",
+        "back": "鉛筆",
+        "difficulty": "medium",
+        "example": "鉛筆を持っていますか？",
+        "exampleTranslation": "Do you have a pencil?"
+      },
+      {
+        "id": "ej_edu_5",
+        "front": "Notebook",
+        "back": "ノート",
+        "difficulty": "medium",
+        "example": "ノートが必要です",
+        "exampleTranslation": "I need a notebook"
+      },
+      {
+        "id": "ej_edu_6",
+        "front": "Exam",
+        "back": "試験",
+        "difficulty": "medium",
+        "example": "試験は明日です",
+        "exampleTranslation": "The exam is tomorrow"
+      },
+      {
+        "id": "ej_edu_7",
+        "front": "Homework",
+        "back": "宿題",
+        "difficulty": "medium",
+        "example": "宿題がたくさんあります",
+        "exampleTranslation": "I have a lot of homework"
+      },
+      {
+        "id": "ej_edu_8",
+        "front": "Class",
+        "back": "授業",
+        "difficulty": "medium",
+        "example": "授業は9時に始まります",
+        "exampleTranslation": "The class starts at nine"
+      },
+      {
+        "id": "ej_edu_9",
+        "front": "Library",
+        "back": "図書館",
+        "difficulty": "medium",
+        "example": "私は図書館で勉強します",
+        "exampleTranslation": "I study at the library"
+      },
+      {
+        "id": "ej_edu_10",
+        "front": "Backpack",
+        "back": "リュックサック",
+        "difficulty": "medium",
+        "example": "私のリュックサックは重いです",
+        "exampleTranslation": "My backpack is heavy"
+      }
+    ]
+  },
+  {
+    "key": "nature",
+    "name": "Nature",
+    "description": "Nature",
+    "iconName": "TreePine",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ej_nature_1",
+        "front": "Tree",
+        "back": "木",
+        "difficulty": "medium",
+        "example": "木は高いです",
+        "exampleTranslation": "The tree is tall"
+      },
+      {
+        "id": "ej_nature_2",
+        "front": "Flower",
+        "back": "花",
+        "difficulty": "medium",
+        "example": "花は美しいです",
+        "exampleTranslation": "The flower is beautiful"
+      },
+      {
+        "id": "ej_nature_3",
+        "front": "Mountain",
+        "back": "山",
+        "difficulty": "medium",
+        "example": "山は高いです",
+        "exampleTranslation": "The mountain is high"
+      },
+      {
+        "id": "ej_nature_4",
+        "front": "River",
+        "back": "川",
+        "difficulty": "medium",
+        "example": "川は長いです",
+        "exampleTranslation": "The river is long"
+      },
+      {
+        "id": "ej_nature_5",
+        "front": "Sea",
+        "back": "海",
+        "difficulty": "medium",
+        "example": "海は青いです",
+        "exampleTranslation": "The sea is blue"
+      },
+      {
+        "id": "ej_nature_6",
+        "front": "Forest",
+        "back": "森",
+        "difficulty": "medium",
+        "example": "私たちは森を歩きます",
+        "exampleTranslation": "We walk through the forest"
+      },
+      {
+        "id": "ej_nature_7",
+        "front": "Lake",
+        "back": "湖",
+        "difficulty": "medium",
+        "example": "湖は穏やかです",
+        "exampleTranslation": "The lake is calm"
+      },
+      {
+        "id": "ej_nature_8",
+        "front": "Sky",
+        "back": "空",
+        "difficulty": "medium",
+        "example": "空は青いです",
+        "exampleTranslation": "The sky is blue"
+      },
+      {
+        "id": "ej_nature_9",
+        "front": "Star",
+        "back": "星",
+        "difficulty": "medium",
+        "example": "星が輝いています",
+        "exampleTranslation": "The stars shine"
+      },
+      {
+        "id": "ej_nature_10",
+        "front": "Moon",
+        "back": "月",
+        "difficulty": "medium",
+        "example": "月は満月です",
+        "exampleTranslation": "The moon is full"
+      }
+    ]
+  },
+  {
+    "key": "emotions",
+    "name": "Emotions",
+    "description": "Feelings",
+    "iconName": "Heart",
+    "color": "#fb7185",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ej_emo_1",
+        "front": "Happy",
+        "back": "嬉しい",
+        "difficulty": "medium",
+        "example": "私は嬉しいです",
+        "exampleTranslation": "I am happy"
+      },
+      {
+        "id": "ej_emo_2",
+        "front": "Sad",
+        "back": "悲しい",
+        "difficulty": "medium",
+        "example": "彼は悲しいです",
+        "exampleTranslation": "He is sad"
+      },
+      {
+        "id": "ej_emo_3",
+        "front": "Angry",
+        "back": "怒っている",
+        "difficulty": "medium",
+        "example": "彼女は怒っています",
+        "exampleTranslation": "She is angry"
+      },
+      {
+        "id": "ej_emo_4",
+        "front": "Tired",
+        "back": "疲れた",
+        "difficulty": "medium",
+        "example": "私は疲れています",
+        "exampleTranslation": "I am tired"
+      },
+      {
+        "id": "ej_emo_5",
+        "front": "Excited",
+        "back": "興奮している",
+        "difficulty": "medium",
+        "example": "私たちは興奮しています",
+        "exampleTranslation": "We are excited"
+      },
+      {
+        "id": "ej_emo_6",
+        "front": "Nervous",
+        "back": "緊張している",
+        "difficulty": "medium",
+        "example": "彼は緊張しています",
+        "exampleTranslation": "He is nervous"
+      },
+      {
+        "id": "ej_emo_7",
+        "front": "Calm",
+        "back": "落ち着いている",
+        "difficulty": "medium",
+        "example": "彼女は落ち着いています",
+        "exampleTranslation": "She is calm"
+      },
+      {
+        "id": "ej_emo_8",
+        "front": "Surprised",
+        "back": "驚いた",
+        "difficulty": "medium",
+        "example": "私は驚きました",
+        "exampleTranslation": "I am surprised"
+      },
+      {
+        "id": "ej_emo_9",
+        "front": "Scared",
+        "back": "怖い",
+        "difficulty": "medium",
+        "example": "子供は怖がっています",
+        "exampleTranslation": "The child is scared"
+      },
+      {
+        "id": "ej_emo_10",
+        "front": "Bored",
+        "back": "退屈",
+        "difficulty": "medium",
+        "example": "彼らは退屈しています",
+        "exampleTranslation": "They are bored"
+      }
+    ]
+  },
+  {
+    "key": "time",
+    "name": "Time",
+    "description": "Time expressions",
+    "iconName": "Clock",
+    "color": "#fbbf24",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ej_time_1",
+        "front": "Today",
+        "back": "今日",
+        "difficulty": "medium",
+        "example": "今日は月曜日です",
+        "exampleTranslation": "Today is Monday"
+      },
+      {
+        "id": "ej_time_2",
+        "front": "Yesterday",
+        "back": "昨日",
+        "difficulty": "medium",
+        "example": "昨日は日曜日でした",
+        "exampleTranslation": "Yesterday was Sunday"
+      },
+      {
+        "id": "ej_time_3",
+        "front": "Tomorrow",
+        "back": "明日",
+        "difficulty": "medium",
+        "example": "明日は火曜日です",
+        "exampleTranslation": "Tomorrow is Tuesday"
+      },
+      {
+        "id": "ej_time_4",
+        "front": "Now",
+        "back": "今",
+        "difficulty": "medium",
+        "example": "私は今働いています",
+        "exampleTranslation": "I'm working now"
+      },
+      {
+        "id": "ej_time_5",
+        "front": "Later",
+        "back": "後で",
+        "difficulty": "medium",
+        "example": "後でやります",
+        "exampleTranslation": "I'll do it later"
+      },
+      {
+        "id": "ej_time_6",
+        "front": "Morning",
+        "back": "朝",
+        "difficulty": "medium",
+        "example": "おはようございます",
+        "exampleTranslation": "Good morning"
+      },
+      {
+        "id": "ej_time_7",
+        "front": "Noon",
+        "back": "昼",
+        "difficulty": "medium",
+        "example": "昼です",
+        "exampleTranslation": "It's noon"
+      },
+      {
+        "id": "ej_time_8",
+        "front": "Evening",
+        "back": "夕方",
+        "difficulty": "medium",
+        "example": "こんばんは",
+        "exampleTranslation": "Good evening"
+      },
+      {
+        "id": "ej_time_9",
+        "front": "Night",
+        "back": "夜",
+        "difficulty": "medium",
+        "example": "おやすみなさい",
+        "exampleTranslation": "Good night"
+      },
+      {
+        "id": "ej_time_10",
+        "front": "Week",
+        "back": "週",
+        "difficulty": "medium",
+        "example": "来週",
+        "exampleTranslation": "Next week"
+      }
+    ]
+  },
+  {
+    "key": "weather",
+    "name": "Weather",
+    "description": "Weather conditions",
+    "iconName": "Cloud",
+    "color": "#38bdf8",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ej_weather_1",
+        "front": "Sun",
+        "back": "太陽",
+        "difficulty": "medium",
+        "example": "太陽が輝いています",
+        "exampleTranslation": "The sun shines"
+      },
+      {
+        "id": "ej_weather_2",
+        "front": "Rain",
+        "back": "雨",
+        "difficulty": "medium",
+        "example": "雨が降っています",
+        "exampleTranslation": "It's raining"
+      },
+      {
+        "id": "ej_weather_3",
+        "front": "Snow",
+        "back": "雪",
+        "difficulty": "medium",
+        "example": "雪が降っています",
+        "exampleTranslation": "It's snowing"
+      },
+      {
+        "id": "ej_weather_4",
+        "front": "Wind",
+        "back": "風",
+        "difficulty": "medium",
+        "example": "風が吹いています",
+        "exampleTranslation": "It's windy"
+      },
+      {
+        "id": "ej_weather_5",
+        "front": "Cloud",
+        "back": "雲",
+        "difficulty": "medium",
+        "example": "空に雲があります",
+        "exampleTranslation": "There are clouds in the sky"
+      },
+      {
+        "id": "ej_weather_6",
+        "front": "Storm",
+        "back": "嵐",
+        "difficulty": "medium",
+        "example": "嵐が来ています",
+        "exampleTranslation": "A storm is coming"
+      },
+      {
+        "id": "ej_weather_7",
+        "front": "Hot",
+        "back": "暑い",
+        "difficulty": "medium",
+        "example": "とても暑いです",
+        "exampleTranslation": "It's very hot"
+      },
+      {
+        "id": "ej_weather_8",
+        "front": "Cold",
+        "back": "寒い",
+        "difficulty": "medium",
+        "example": "冬は寒いです",
+        "exampleTranslation": "It's cold in winter"
+      },
+      {
+        "id": "ej_weather_9",
+        "front": "Lightning",
+        "back": "雷",
+        "difficulty": "medium",
+        "example": "雷を見ました",
+        "exampleTranslation": "I saw lightning"
+      },
+      {
+        "id": "ej_weather_10",
+        "front": "Thunder",
+        "back": "雷鳴",
+        "difficulty": "medium",
+        "example": "雷鳴が聞こえます",
+        "exampleTranslation": "You can hear thunder"
+      }
+    ]
+  },
+  {
+    "key": "body",
+    "name": "Body",
+    "description": "Body parts",
+    "iconName": "Hand",
+    "color": "#a78bfa",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ej_body_1",
+        "front": "Head",
+        "back": "頭",
+        "difficulty": "medium",
+        "example": "頭が痛いです",
+        "exampleTranslation": "My head hurts"
+      },
+      {
+        "id": "ej_body_2",
+        "front": "Eye",
+        "back": "目",
+        "difficulty": "medium",
+        "example": "私は青い目をしています",
+        "exampleTranslation": "I have blue eyes"
+      },
+      {
+        "id": "ej_body_3",
+        "front": "Nose",
+        "back": "鼻",
+        "difficulty": "medium",
+        "example": "鼻が冷たいです",
+        "exampleTranslation": "My nose is cold"
+      },
+      {
+        "id": "ej_body_4",
+        "front": "Mouth",
+        "back": "口",
+        "difficulty": "medium",
+        "example": "口を開けてください",
+        "exampleTranslation": "Open your mouth"
+      },
+      {
+        "id": "ej_body_5",
+        "front": "Ear",
+        "back": "耳",
+        "difficulty": "medium",
+        "example": "私の耳は大きいです",
+        "exampleTranslation": "My ears are big"
+      },
+      {
+        "id": "ej_body_6",
+        "front": "Hand",
+        "back": "手",
+        "difficulty": "medium",
+        "example": "手を出してください",
+        "exampleTranslation": "Give me your hand"
+      },
+      {
+        "id": "ej_body_7",
+        "front": "Foot",
+        "back": "足",
+        "difficulty": "medium",
+        "example": "足が痛いです",
+        "exampleTranslation": "My foot hurts"
+      },
+      {
+        "id": "ej_body_8",
+        "front": "Arm",
+        "back": "腕",
+        "difficulty": "medium",
+        "example": "腕を上げてください",
+        "exampleTranslation": "Raise your arm"
+      },
+      {
+        "id": "ej_body_9",
+        "front": "Leg",
+        "back": "脚",
+        "difficulty": "medium",
+        "example": "脚が疲れています",
+        "exampleTranslation": "My legs are tired"
+      },
+      {
+        "id": "ej_body_10",
+        "front": "Heart",
+        "back": "心臓",
+        "difficulty": "medium",
+        "example": "心臓が速く鼓動しています",
+        "exampleTranslation": "My heart beats fast"
+      }
+    ]
+  },
+  {
+    "key": "activities",
+    "name": "Activities",
+    "description": "Daily activities",
+    "iconName": "Lightbulb",
+    "color": "#e879f9",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ej_act_1",
+        "front": "Eat",
+        "back": "食べる",
+        "difficulty": "medium",
+        "example": "私は食べます",
+        "exampleTranslation": "I'm going to eat"
+      },
+      {
+        "id": "ej_act_2",
+        "front": "Drink",
+        "back": "飲む",
+        "difficulty": "medium",
+        "example": "私は水を飲みます",
+        "exampleTranslation": "I drink water"
+      },
+      {
+        "id": "ej_act_3",
+        "front": "Sleep",
+        "back": "寝る",
+        "difficulty": "medium",
+        "example": "私は眠る必要があります",
+        "exampleTranslation": "I need to sleep"
+      },
+      {
+        "id": "ej_act_4",
+        "front": "Run",
+        "back": "走る",
+        "difficulty": "medium",
+        "example": "私は朝走ります",
+        "exampleTranslation": "I run in the morning"
+      },
+      {
+        "id": "ej_act_5",
+        "front": "Read",
+        "back": "読む",
+        "difficulty": "medium",
+        "example": "私は本を読みます",
+        "exampleTranslation": "I read a book"
+      },
+      {
+        "id": "ej_act_6",
+        "front": "Write",
+        "back": "書く",
+        "difficulty": "medium",
+        "example": "私は手紙を書きます",
+        "exampleTranslation": "I write a letter"
+      },
+      {
+        "id": "ej_act_7",
+        "front": "Speak",
+        "back": "話す",
+        "difficulty": "medium",
+        "example": "私は日本語を話します",
+        "exampleTranslation": "I speak Japanese"
+      },
+      {
+        "id": "ej_act_8",
+        "front": "Listen",
+        "back": "聞く",
+        "difficulty": "medium",
+        "example": "私は音楽を聴きます",
+        "exampleTranslation": "I listen to music"
+      },
+      {
+        "id": "ej_act_9",
+        "front": "Watch",
+        "back": "見る",
+        "difficulty": "medium",
+        "example": "私はテレビを見ます",
+        "exampleTranslation": "I watch television"
+      },
+      {
+        "id": "ej_act_10",
+        "front": "Think",
+        "back": "考える",
+        "difficulty": "medium",
+        "example": "あなたのことを考えています",
+        "exampleTranslation": "I think of you"
+      }
+    ]
+  },
+  {
+    "key": "learning",
+    "name": "Learning",
+    "description": "Learning activities",
+    "iconName": "BookOpen",
+    "color": "#34d399",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ej_learn_1",
+        "front": "Learn",
+        "back": "学ぶ",
+        "difficulty": "medium",
+        "example": "私は日本語を学びます",
+        "exampleTranslation": "I learn Japanese"
+      },
+      {
+        "id": "ej_learn_2",
+        "front": "Study",
+        "back": "勉強する",
+        "difficulty": "medium",
+        "example": "私は大学で勉強します",
+        "exampleTranslation": "I study at university"
+      },
+      {
+        "id": "ej_learn_3",
+        "front": "Teach",
+        "back": "教える",
+        "difficulty": "medium",
+        "example": "私は英語を教えます",
+        "exampleTranslation": "I teach English"
+      },
+      {
+        "id": "ej_learn_4",
+        "front": "Understand",
+        "back": "理解する",
+        "difficulty": "medium",
+        "example": "レッスンを理解しています",
+        "exampleTranslation": "I understand the lesson"
+      },
+      {
+        "id": "ej_learn_5",
+        "front": "Practice",
+        "back": "練習する",
+        "difficulty": "medium",
+        "example": "私は毎日練習します",
+        "exampleTranslation": "I practice every day"
+      },
+      {
+        "id": "ej_learn_6",
+        "front": "Repeat",
+        "back": "繰り返す",
+        "difficulty": "medium",
+        "example": "その言葉を繰り返してください",
+        "exampleTranslation": "Repeat the word"
+      },
+      {
+        "id": "ej_learn_7",
+        "front": "Explain",
+        "back": "説明する",
+        "difficulty": "medium",
+        "example": "先生はよく説明します",
+        "exampleTranslation": "The teacher explains well"
+      },
+      {
+        "id": "ej_learn_8",
+        "front": "Ask",
+        "back": "質問する",
+        "difficulty": "medium",
+        "example": "私は先生に質問します",
+        "exampleTranslation": "I ask the teacher"
+      },
+      {
+        "id": "ej_learn_9",
+        "front": "Answer",
+        "back": "答える",
+        "difficulty": "medium",
+        "example": "私は質問に答えます",
+        "exampleTranslation": "I answer the question"
+      },
+      {
+        "id": "ej_learn_10",
+        "front": "Remember",
+        "back": "覚える",
+        "difficulty": "medium",
+        "example": "レッスンを覚えています",
+        "exampleTranslation": "I remember the lesson"
+      }
+    ]
+  },
+  {
+    "key": "sports",
+    "name": "Sports",
+    "description": "Sports",
+    "iconName": "Dumbbell",
+    "color": "#a3e635",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ej_sport_1",
+        "front": "Football",
+        "back": "サッカー",
+        "difficulty": "medium",
+        "example": "私はサッカーをします",
+        "exampleTranslation": "I play football"
+      },
+      {
+        "id": "ej_sport_2",
+        "front": "Basketball",
+        "back": "バスケットボール",
+        "difficulty": "medium",
+        "example": "私はバスケットボールが好きです",
+        "exampleTranslation": "I like basketball"
+      },
+      {
+        "id": "ej_sport_3",
+        "front": "Tennis",
+        "back": "テニス",
+        "difficulty": "medium",
+        "example": "私はテニスをします",
+        "exampleTranslation": "I play tennis"
+      },
+      {
+        "id": "ej_sport_4",
+        "front": "Swimming",
+        "back": "水泳",
+        "difficulty": "medium",
+        "example": "水泳は健康的です",
+        "exampleTranslation": "Swimming is healthy"
+      },
+      {
+        "id": "ej_sport_5",
+        "front": "Running",
+        "back": "ランニング",
+        "difficulty": "medium",
+        "example": "私は朝走ります",
+        "exampleTranslation": "I run in the morning"
+      },
+      {
+        "id": "ej_sport_6",
+        "front": "Cycling",
+        "back": "サイクリング",
+        "difficulty": "medium",
+        "example": "私はサイクリングが好きです",
+        "exampleTranslation": "I like cycling"
+      },
+      {
+        "id": "ej_sport_7",
+        "front": "Gym",
+        "back": "ジム",
+        "difficulty": "medium",
+        "example": "私はジムに行きます",
+        "exampleTranslation": "I go to the gym"
+      },
+      {
+        "id": "ej_sport_8",
+        "front": "Training",
+        "back": "トレーニング",
+        "difficulty": "medium",
+        "example": "今日はトレーニングがあります",
+        "exampleTranslation": "I have training today"
+      },
+      {
+        "id": "ej_sport_9",
+        "front": "Team",
+        "back": "チーム",
+        "difficulty": "medium",
+        "example": "私はチームに所属しています",
+        "exampleTranslation": "I'm on a team"
+      },
+      {
+        "id": "ej_sport_10",
+        "front": "Coach",
+        "back": "コーチ",
+        "difficulty": "medium",
+        "example": "私たちのコーチは素晴らしいです",
+        "exampleTranslation": "Our coach is excellent"
+      }
+    ]
+  },
+  {
+    "key": "travel",
+    "name": "Travel",
+    "description": "Tourism",
+    "iconName": "Plane",
+    "color": "#2563eb",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ej_travel_1",
+        "front": "Travel",
+        "back": "旅行",
+        "difficulty": "medium",
+        "example": "私は旅行に行きます",
+        "exampleTranslation": "I'm going on a trip"
+      },
+      {
+        "id": "ej_travel_2",
+        "front": "Suitcase",
+        "back": "スーツケース",
+        "difficulty": "medium",
+        "example": "私のスーツケースは重いです",
+        "exampleTranslation": "My suitcase is heavy"
+      },
+      {
+        "id": "ej_travel_3",
+        "front": "Passport",
+        "back": "パスポート",
+        "difficulty": "medium",
+        "example": "パスポートが必要です",
+        "exampleTranslation": "I need my passport"
+      },
+      {
+        "id": "ej_travel_4",
+        "front": "Hotel",
+        "back": "ホテル",
+        "difficulty": "medium",
+        "example": "ホテルは快適です",
+        "exampleTranslation": "The hotel is comfortable"
+      },
+      {
+        "id": "ej_travel_5",
+        "front": "Reservation",
+        "back": "予約",
+        "difficulty": "medium",
+        "example": "予約があります",
+        "exampleTranslation": "I have a reservation"
+      },
+      {
+        "id": "ej_travel_6",
+        "front": "Tourist",
+        "back": "観光客",
+        "difficulty": "medium",
+        "example": "私は観光客です",
+        "exampleTranslation": "I am a tourist"
+      },
+      {
+        "id": "ej_travel_7",
+        "front": "Vacation",
+        "back": "休暇",
+        "difficulty": "medium",
+        "example": "私は休暇中です",
+        "exampleTranslation": "I'm on vacation"
+      },
+      {
+        "id": "ej_travel_8",
+        "front": "Sightseeing",
+        "back": "観光",
+        "difficulty": "medium",
+        "example": "私たちは観光しています",
+        "exampleTranslation": "We're doing sightseeing"
+      },
+      {
+        "id": "ej_travel_9",
+        "front": "Guide",
+        "back": "ガイド",
+        "difficulty": "medium",
+        "example": "ガイドは有益です",
+        "exampleTranslation": "The guide is informative"
+      },
+      {
+        "id": "ej_travel_10",
+        "front": "Souvenir",
+        "back": "お土産",
+        "difficulty": "medium",
+        "example": "お土産を買っています",
+        "exampleTranslation": "I'm buying a souvenir"
+      }
+    ]
+  },
+  {
+    "key": "entertainment",
+    "name": "Entertainment",
+    "description": "Leisure",
+    "iconName": "Music",
+    "color": "#a855f7",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ej_ent_1",
+        "front": "Music",
+        "back": "音楽",
+        "difficulty": "medium",
+        "example": "私は音楽を聴きます",
+        "exampleTranslation": "I listen to music"
+      },
+      {
+        "id": "ej_ent_2",
+        "front": "Movie",
+        "back": "映画",
+        "difficulty": "medium",
+        "example": "私は映画を見ます",
+        "exampleTranslation": "I watch a movie"
+      },
+      {
+        "id": "ej_ent_3",
+        "front": "Concert",
+        "back": "コンサート",
+        "difficulty": "medium",
+        "example": "私はコンサートに行きます",
+        "exampleTranslation": "I go to a concert"
+      },
+      {
+        "id": "ej_ent_4",
+        "front": "Theater",
+        "back": "劇場",
+        "difficulty": "medium",
+        "example": "私は劇場に行きます",
+        "exampleTranslation": "I go to the theater"
+      },
+      {
+        "id": "ej_ent_5",
+        "front": "Dance",
+        "back": "ダンス",
+        "difficulty": "medium",
+        "example": "私はダンスが好きです",
+        "exampleTranslation": "I like to dance"
+      },
+      {
+        "id": "ej_ent_6",
+        "front": "Sing",
+        "back": "歌う",
+        "difficulty": "medium",
+        "example": "私は歌うのが好きです",
+        "exampleTranslation": "I like to sing"
+      },
+      {
+        "id": "ej_ent_7",
+        "front": "Guitar",
+        "back": "ギター",
+        "difficulty": "medium",
+        "example": "私はギターを弾きます",
+        "exampleTranslation": "I play guitar"
+      },
+      {
+        "id": "ej_ent_8",
+        "front": "Games",
+        "back": "ゲーム",
+        "difficulty": "medium",
+        "example": "私はビデオゲームをします",
+        "exampleTranslation": "I play video games"
+      },
+      {
+        "id": "ej_ent_9",
+        "front": "Photography",
+        "back": "写真撮影",
+        "difficulty": "medium",
+        "example": "私は写真撮影に興味があります",
+        "exampleTranslation": "I'm interested in photography"
+      },
+      {
+        "id": "ej_ent_10",
+        "front": "Reading",
+        "back": "読書",
+        "difficulty": "medium",
+        "example": "読書は私の趣味です",
+        "exampleTranslation": "Reading is my hobby"
+      }
+    ]
+  }
+]

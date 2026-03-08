@@ -71,6 +71,7 @@ struct DashboardView: View {
         .cosmicBackground()
         .navigationBarTitleDisplayMode(.inline)
         .toolbar(.hidden, for: .navigationBar)
+        .toolbarBackground(.hidden, for: .tabBar)
         .sheet(isPresented: $showLanguageSheet) {
             LanguageSelectionView()
         }

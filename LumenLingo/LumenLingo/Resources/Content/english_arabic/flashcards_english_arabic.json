@@ -1,0 +1,1892 @@
+[
+  {
+    "key": "greetings",
+    "name": "Greetings",
+    "description": "Basic greetings",
+    "iconName": "Hand",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ea_greet_1",
+        "front": "Hello",
+        "back": "مرحباً",
+        "difficulty": "medium",
+        "example": "مرحباً، كيف حالك؟",
+        "exampleTranslation": "Hello, how are you?"
+      },
+      {
+        "id": "ea_greet_2",
+        "front": "Good morning",
+        "back": "صباح الخير",
+        "difficulty": "medium",
+        "example": "صباح الخير، يا سيدي",
+        "exampleTranslation": "Good morning, sir"
+      },
+      {
+        "id": "ea_greet_3",
+        "front": "Good evening",
+        "back": "مساء الخير",
+        "difficulty": "medium",
+        "example": "مساء الخير، كيف حالك؟",
+        "exampleTranslation": "Good evening, how are you?"
+      },
+      {
+        "id": "ea_greet_4",
+        "front": "Good night",
+        "back": "تصبح على خير",
+        "difficulty": "medium",
+        "example": "تصبح على خير، نم جيداً",
+        "exampleTranslation": "Good night, sleep well"
+      },
+      {
+        "id": "ea_greet_5",
+        "front": "Goodbye",
+        "back": "وداعاً",
+        "difficulty": "medium",
+        "example": "وداعاً، أراك لاحقاً",
+        "exampleTranslation": "Goodbye, see you later"
+      },
+      {
+        "id": "ea_greet_6",
+        "front": "Thank you",
+        "back": "شكراً",
+        "difficulty": "medium",
+        "example": "شكراً لمساعدتك",
+        "exampleTranslation": "Thank you for your help"
+      },
+      {
+        "id": "ea_greet_7",
+        "front": "Please",
+        "back": "من فضلك",
+        "difficulty": "medium",
+        "example": "من فضلك، ساعدني",
+        "exampleTranslation": "Please, help me"
+      },
+      {
+        "id": "ea_greet_8",
+        "front": "Excuse me",
+        "back": "عفواً",
+        "difficulty": "medium",
+        "example": "عفواً، أنا متأخر",
+        "exampleTranslation": "Excuse me, I'm late"
+      },
+      {
+        "id": "ea_greet_9",
+        "front": "Yes",
+        "back": "نعم",
+        "difficulty": "medium",
+        "example": "نعم، أنا موافق",
+        "exampleTranslation": "Yes, I agree"
+      },
+      {
+        "id": "ea_greet_10",
+        "front": "No",
+        "back": "لا",
+        "difficulty": "medium",
+        "example": "لا، لا أريد",
+        "exampleTranslation": "No, I don't want"
+      }
+    ]
+  },
+  {
+    "key": "family",
+    "name": "Family",
+    "description": "Family members",
+    "iconName": "Users",
+    "color": "#c084fc",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ea_fam_1",
+        "front": "Father",
+        "back": "أب",
+        "difficulty": "medium",
+        "example": "أبي يعمل كثيراً",
+        "exampleTranslation": "My father works a lot"
+      },
+      {
+        "id": "ea_fam_2",
+        "front": "Mother",
+        "back": "أم",
+        "difficulty": "medium",
+        "example": "أمي تطبخ جيداً",
+        "exampleTranslation": "My mother cooks well"
+      },
+      {
+        "id": "ea_fam_3",
+        "front": "Brother",
+        "back": "أخ",
+        "difficulty": "medium",
+        "example": "أخي يدرس الطب",
+        "exampleTranslation": "My brother studies medicine"
+      },
+      {
+        "id": "ea_fam_4",
+        "front": "Sister",
+        "back": "أخت",
+        "difficulty": "medium",
+        "example": "أختي معلمة",
+        "exampleTranslation": "My sister is a teacher"
+      },
+      {
+        "id": "ea_fam_5",
+        "front": "Son",
+        "back": "ابن",
+        "difficulty": "medium",
+        "example": "ابني عمره عشر سنوات",
+        "exampleTranslation": "My son is ten years old"
+      },
+      {
+        "id": "ea_fam_6",
+        "front": "Daughter",
+        "back": "ابنة",
+        "difficulty": "medium",
+        "example": "ابنتي تذهب إلى الجامعة",
+        "exampleTranslation": "My daughter goes to university"
+      },
+      {
+        "id": "ea_fam_7",
+        "front": "Grandfather",
+        "back": "جد",
+        "difficulty": "medium",
+        "example": "جدي حكيم جداً",
+        "exampleTranslation": "My grandfather is very wise"
+      },
+      {
+        "id": "ea_fam_8",
+        "front": "Grandmother",
+        "back": "جدة",
+        "difficulty": "medium",
+        "example": "جدتي تصنع الكعك",
+        "exampleTranslation": "My grandmother makes cakes"
+      },
+      {
+        "id": "ea_fam_9",
+        "front": "Uncle",
+        "back": "عم",
+        "difficulty": "medium",
+        "example": "عمي يعيش في القاهرة",
+        "exampleTranslation": "My uncle lives in Cairo"
+      },
+      {
+        "id": "ea_fam_10",
+        "front": "Aunt",
+        "back": "عمة",
+        "difficulty": "medium",
+        "example": "عمتي لطيفة جداً",
+        "exampleTranslation": "My aunt is very kind"
+      }
+    ]
+  },
+  {
+    "key": "numbers",
+    "name": "Numbers",
+    "description": "Basic numbers",
+    "iconName": "Hash",
+    "color": "#22d3ee",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ea_num_1",
+        "front": "One",
+        "back": "واحد",
+        "difficulty": "medium",
+        "example": "عندي أخ واحد",
+        "exampleTranslation": "I have one brother"
+      },
+      {
+        "id": "ea_num_2",
+        "front": "Two",
+        "back": "اثنان",
+        "difficulty": "medium",
+        "example": "يوجد قطتان",
+        "exampleTranslation": "There are two cats"
+      },
+      {
+        "id": "ea_num_3",
+        "front": "Three",
+        "back": "ثلاثة",
+        "difficulty": "medium",
+        "example": "الساعة الثالثة",
+        "exampleTranslation": "It's three o'clock"
+      },
+      {
+        "id": "ea_num_4",
+        "front": "Four",
+        "back": "أربعة",
+        "difficulty": "medium",
+        "example": "أربعة فصول",
+        "exampleTranslation": "Four seasons"
+      },
+      {
+        "id": "ea_num_5",
+        "front": "Five",
+        "back": "خمسة",
+        "difficulty": "medium",
+        "example": "خمسة أصابع في اليد",
+        "exampleTranslation": "Five fingers on the hand"
+      },
+      {
+        "id": "ea_num_6",
+        "front": "Six",
+        "back": "ستة",
+        "difficulty": "medium",
+        "example": "ابني عمره ست سنوات",
+        "exampleTranslation": "My son is six years old"
+      },
+      {
+        "id": "ea_num_7",
+        "front": "Seven",
+        "back": "سبعة",
+        "difficulty": "medium",
+        "example": "سبعة أيام في الأسبوع",
+        "exampleTranslation": "Seven days of the week"
+      },
+      {
+        "id": "ea_num_8",
+        "front": "Eight",
+        "back": "ثمانية",
+        "difficulty": "medium",
+        "example": "أعمل ثماني ساعات",
+        "exampleTranslation": "I work eight hours"
+      },
+      {
+        "id": "ea_num_9",
+        "front": "Nine",
+        "back": "تسعة",
+        "difficulty": "medium",
+        "example": "الساعة التاسعة صباحاً",
+        "exampleTranslation": "It's nine o'clock in the morning"
+      },
+      {
+        "id": "ea_num_10",
+        "front": "Ten",
+        "back": "عشرة",
+        "difficulty": "medium",
+        "example": "عشرة يورو، من فضلك",
+        "exampleTranslation": "Ten euros, please"
+      }
+    ]
+  },
+  {
+    "key": "colors",
+    "name": "Colors",
+    "description": "Basic colors",
+    "iconName": "Palette",
+    "color": "#f472b6",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ea_col_1",
+        "front": "Red",
+        "back": "أحمر",
+        "difficulty": "medium",
+        "example": "السيارة حمراء",
+        "exampleTranslation": "The car is red"
+      },
+      {
+        "id": "ea_col_2",
+        "front": "Blue",
+        "back": "أزرق",
+        "difficulty": "medium",
+        "example": "السماء زرقاء",
+        "exampleTranslation": "The sky is blue"
+      },
+      {
+        "id": "ea_col_3",
+        "front": "Green",
+        "back": "أخضر",
+        "difficulty": "medium",
+        "example": "العشب أخضر",
+        "exampleTranslation": "The grass is green"
+      },
+      {
+        "id": "ea_col_4",
+        "front": "Yellow",
+        "back": "أصفر",
+        "difficulty": "medium",
+        "example": "الشمس صفراء",
+        "exampleTranslation": "The sun is yellow"
+      },
+      {
+        "id": "ea_col_5",
+        "front": "Black",
+        "back": "أسود",
+        "difficulty": "medium",
+        "example": "قطتي سوداء",
+        "exampleTranslation": "My cat is black"
+      },
+      {
+        "id": "ea_col_6",
+        "front": "White",
+        "back": "أبيض",
+        "difficulty": "medium",
+        "example": "الثلج أبيض",
+        "exampleTranslation": "The snow is white"
+      },
+      {
+        "id": "ea_col_7",
+        "front": "Orange",
+        "back": "برتقالي",
+        "difficulty": "medium",
+        "example": "البرتقالة برتقالية",
+        "exampleTranslation": "The orange is orange"
+      },
+      {
+        "id": "ea_col_8",
+        "front": "Pink",
+        "back": "وردي",
+        "difficulty": "medium",
+        "example": "الفستان وردي",
+        "exampleTranslation": "The dress is pink"
+      },
+      {
+        "id": "ea_col_9",
+        "front": "Brown",
+        "back": "بني",
+        "difficulty": "medium",
+        "example": "الدب بني",
+        "exampleTranslation": "The bear is brown"
+      },
+      {
+        "id": "ea_col_10",
+        "front": "Gray",
+        "back": "رمادي",
+        "difficulty": "medium",
+        "example": "الفيل رمادي",
+        "exampleTranslation": "The elephant is gray"
+      }
+    ]
+  },
+  {
+    "key": "food",
+    "name": "Food",
+    "description": "Basic foods",
+    "iconName": "UtensilsCrossed",
+    "color": "#fb923c",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ea_food_1",
+        "front": "Bread",
+        "back": "خبز",
+        "difficulty": "medium",
+        "example": "الخبز طازج",
+        "exampleTranslation": "The bread is fresh"
+      },
+      {
+        "id": "ea_food_2",
+        "front": "Water",
+        "back": "ماء",
+        "difficulty": "medium",
+        "example": "كأس من الماء، من فضلك",
+        "exampleTranslation": "A glass of water, please"
+      },
+      {
+        "id": "ea_food_3",
+        "front": "Coffee",
+        "back": "قهوة",
+        "difficulty": "medium",
+        "example": "أحب القهوة",
+        "exampleTranslation": "I like coffee"
+      },
+      {
+        "id": "ea_food_4",
+        "front": "Milk",
+        "back": "حليب",
+        "difficulty": "medium",
+        "example": "الحليب طازج",
+        "exampleTranslation": "The milk is fresh"
+      },
+      {
+        "id": "ea_food_5",
+        "front": "Meat",
+        "back": "لحم",
+        "difficulty": "medium",
+        "example": "اللحم لذيذ",
+        "exampleTranslation": "The meat is delicious"
+      },
+      {
+        "id": "ea_food_6",
+        "front": "Fish",
+        "back": "سمك",
+        "difficulty": "medium",
+        "example": "السمك صحي جداً",
+        "exampleTranslation": "Fish is very healthy"
+      },
+      {
+        "id": "ea_food_7",
+        "front": "Fruit",
+        "back": "فاكهة",
+        "difficulty": "medium",
+        "example": "آكل الفاكهة كل يوم",
+        "exampleTranslation": "I eat fruit every day"
+      },
+      {
+        "id": "ea_food_8",
+        "front": "Vegetables",
+        "back": "خضروات",
+        "difficulty": "medium",
+        "example": "الخضروات مهمة",
+        "exampleTranslation": "Vegetables are important"
+      },
+      {
+        "id": "ea_food_9",
+        "front": "Cheese",
+        "back": "جبن",
+        "difficulty": "medium",
+        "example": "الجبن العربي لذيذ",
+        "exampleTranslation": "Arabic cheese is delicious"
+      },
+      {
+        "id": "ea_food_10",
+        "front": "Egg",
+        "back": "بيض",
+        "difficulty": "medium",
+        "example": "آكل البيض على الفطور",
+        "exampleTranslation": "I eat eggs for breakfast"
+      }
+    ]
+  },
+  {
+    "key": "house",
+    "name": "House",
+    "description": "Household items",
+    "iconName": "Home",
+    "color": "#facc15",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ea_house_1",
+        "front": "House",
+        "back": "بيت",
+        "difficulty": "medium",
+        "example": "بيتي كبير",
+        "exampleTranslation": "My house is big"
+      },
+      {
+        "id": "ea_house_2",
+        "front": "Room",
+        "back": "غرفة",
+        "difficulty": "medium",
+        "example": "الغرفة نظيفة",
+        "exampleTranslation": "The room is clean"
+      },
+      {
+        "id": "ea_house_3",
+        "front": "Kitchen",
+        "back": "مطبخ",
+        "difficulty": "medium",
+        "example": "أطبخ في المطبخ",
+        "exampleTranslation": "I cook in the kitchen"
+      },
+      {
+        "id": "ea_house_4",
+        "front": "Bathroom",
+        "back": "حمام",
+        "difficulty": "medium",
+        "example": "الحمام جديد",
+        "exampleTranslation": "The bathroom is new"
+      },
+      {
+        "id": "ea_house_5",
+        "front": "Bedroom",
+        "back": "غرفة نوم",
+        "difficulty": "medium",
+        "example": "غرفة نومي مريحة",
+        "exampleTranslation": "My bedroom is comfortable"
+      },
+      {
+        "id": "ea_house_6",
+        "front": "Door",
+        "back": "باب",
+        "difficulty": "medium",
+        "example": "أغلق الباب",
+        "exampleTranslation": "Close the door"
+      },
+      {
+        "id": "ea_house_7",
+        "front": "Window",
+        "back": "نافذة",
+        "difficulty": "medium",
+        "example": "افتح النافذة",
+        "exampleTranslation": "Open the window"
+      },
+      {
+        "id": "ea_house_8",
+        "front": "Table",
+        "back": "طاولة",
+        "difficulty": "medium",
+        "example": "الطاولة خشبية",
+        "exampleTranslation": "The table is wooden"
+      },
+      {
+        "id": "ea_house_9",
+        "front": "Chair",
+        "back": "كرسي",
+        "difficulty": "medium",
+        "example": "الكرسي مريح",
+        "exampleTranslation": "The chair is comfortable"
+      },
+      {
+        "id": "ea_house_10",
+        "front": "Bed",
+        "back": "سرير",
+        "difficulty": "medium",
+        "example": "السرير ناعم",
+        "exampleTranslation": "The bed is soft"
+      }
+    ]
+  },
+  {
+    "key": "places",
+    "name": "Places",
+    "description": "Locations",
+    "iconName": "MapPin",
+    "color": "#4ade80",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ea_place_1",
+        "front": "Store",
+        "back": "متجر",
+        "difficulty": "medium",
+        "example": "المتجر مفتوح",
+        "exampleTranslation": "The store is open"
+      },
+      {
+        "id": "ea_place_2",
+        "front": "School",
+        "back": "مدرسة",
+        "difficulty": "medium",
+        "example": "أذهب إلى المدرسة",
+        "exampleTranslation": "I go to school"
+      },
+      {
+        "id": "ea_place_3",
+        "front": "Hospital",
+        "back": "مستشفى",
+        "difficulty": "medium",
+        "example": "المستشفى قريب",
+        "exampleTranslation": "The hospital is close"
+      },
+      {
+        "id": "ea_place_4",
+        "front": "Park",
+        "back": "حديقة",
+        "difficulty": "medium",
+        "example": "الأطفال يلعبون في الحديقة",
+        "exampleTranslation": "Children play in the park"
+      },
+      {
+        "id": "ea_place_5",
+        "front": "Restaurant",
+        "back": "مطعم",
+        "difficulty": "medium",
+        "example": "نأكل في المطعم",
+        "exampleTranslation": "We eat at the restaurant"
+      },
+      {
+        "id": "ea_place_6",
+        "front": "Hotel",
+        "back": "فندق",
+        "difficulty": "medium",
+        "example": "الفندق كبير جداً",
+        "exampleTranslation": "The hotel is very big"
+      },
+      {
+        "id": "ea_place_7",
+        "front": "Bank",
+        "back": "بنك",
+        "difficulty": "medium",
+        "example": "أذهب إلى البنك",
+        "exampleTranslation": "I go to the bank"
+      },
+      {
+        "id": "ea_place_8",
+        "front": "Airport",
+        "back": "مطار",
+        "difficulty": "medium",
+        "example": "أنا في المطار",
+        "exampleTranslation": "I'm at the airport"
+      },
+      {
+        "id": "ea_place_9",
+        "front": "Train station",
+        "back": "محطة قطار",
+        "difficulty": "medium",
+        "example": "محطة القطار",
+        "exampleTranslation": "The train station"
+      },
+      {
+        "id": "ea_place_10",
+        "front": "Museum",
+        "back": "متحف",
+        "difficulty": "medium",
+        "example": "المتحف ممتع",
+        "exampleTranslation": "The museum is interesting"
+      }
+    ]
+  },
+  {
+    "key": "clothing",
+    "name": "Clothing",
+    "description": "Clothes",
+    "iconName": "Shirt",
+    "color": "#a78bfa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ea_cloth_1",
+        "front": "Shirt",
+        "back": "قميص",
+        "difficulty": "medium",
+        "example": "أحب قميصك",
+        "exampleTranslation": "I like your shirt"
+      },
+      {
+        "id": "ea_cloth_2",
+        "front": "Pants",
+        "back": "بنطال",
+        "difficulty": "medium",
+        "example": "أحتاج بنطالاً جديداً",
+        "exampleTranslation": "I need new pants"
+      },
+      {
+        "id": "ea_cloth_3",
+        "front": "Shoes",
+        "back": "أحذية",
+        "difficulty": "medium",
+        "example": "اشتريت أحذية سوداء",
+        "exampleTranslation": "I bought black shoes"
+      },
+      {
+        "id": "ea_cloth_4",
+        "front": "Dress",
+        "back": "فستان",
+        "difficulty": "medium",
+        "example": "الفستان جميل",
+        "exampleTranslation": "The dress is beautiful"
+      },
+      {
+        "id": "ea_cloth_5",
+        "front": "Jacket",
+        "back": "سترة",
+        "difficulty": "medium",
+        "example": "أحتاج سترة",
+        "exampleTranslation": "I need a jacket"
+      },
+      {
+        "id": "ea_cloth_6",
+        "front": "Hat",
+        "back": "قبعة",
+        "difficulty": "medium",
+        "example": "ضع القبعة",
+        "exampleTranslation": "Put on the hat"
+      },
+      {
+        "id": "ea_cloth_7",
+        "front": "Socks",
+        "back": "جوارب",
+        "difficulty": "medium",
+        "example": "جواربي نظيفة",
+        "exampleTranslation": "My socks are clean"
+      },
+      {
+        "id": "ea_cloth_8",
+        "front": "Gloves",
+        "back": "قفازات",
+        "difficulty": "medium",
+        "example": "أرتدي القفازات في الشتاء",
+        "exampleTranslation": "I wear gloves in winter"
+      },
+      {
+        "id": "ea_cloth_9",
+        "front": "Scarf",
+        "back": "وشاح",
+        "difficulty": "medium",
+        "example": "الوشاح ناعم",
+        "exampleTranslation": "The scarf is soft"
+      },
+      {
+        "id": "ea_cloth_10",
+        "front": "Coat",
+        "back": "معطف",
+        "difficulty": "medium",
+        "example": "المعطف دافئ",
+        "exampleTranslation": "The coat is warm"
+      }
+    ]
+  },
+  {
+    "key": "work",
+    "name": "Work",
+    "description": "Professions",
+    "iconName": "Briefcase",
+    "color": "#818cf8",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ea_work_1",
+        "front": "Work",
+        "back": "عمل",
+        "difficulty": "medium",
+        "example": "أذهب إلى العمل",
+        "exampleTranslation": "I go to work"
+      },
+      {
+        "id": "ea_work_2",
+        "front": "Doctor",
+        "back": "طبيب",
+        "difficulty": "medium",
+        "example": "هو طبيب",
+        "exampleTranslation": "He is a doctor"
+      },
+      {
+        "id": "ea_work_3",
+        "front": "Teacher",
+        "back": "معلم",
+        "difficulty": "medium",
+        "example": "معلمي ممتاز",
+        "exampleTranslation": "My teacher is excellent"
+      },
+      {
+        "id": "ea_work_4",
+        "front": "Engineer",
+        "back": "مهندس",
+        "difficulty": "medium",
+        "example": "أنا مهندس",
+        "exampleTranslation": "I am an engineer"
+      },
+      {
+        "id": "ea_work_5",
+        "front": "Lawyer",
+        "back": "محامي",
+        "difficulty": "medium",
+        "example": "هي محامية",
+        "exampleTranslation": "She is a lawyer"
+      },
+      {
+        "id": "ea_work_6",
+        "front": "Cook",
+        "back": "طباخ",
+        "difficulty": "medium",
+        "example": "الطباخ يحضر الطعام",
+        "exampleTranslation": "The cook prepares the meal"
+      },
+      {
+        "id": "ea_work_7",
+        "front": "Waiter",
+        "back": "نادل",
+        "difficulty": "medium",
+        "example": "النادل لطيف",
+        "exampleTranslation": "The waiter is kind"
+      },
+      {
+        "id": "ea_work_8",
+        "front": "Salesperson",
+        "back": "بائع",
+        "difficulty": "medium",
+        "example": "البائع يساعد الزبون",
+        "exampleTranslation": "The salesperson helps the customer"
+      },
+      {
+        "id": "ea_work_9",
+        "front": "Police officer",
+        "back": "شرطي",
+        "difficulty": "medium",
+        "example": "الشرطي يحمي المدينة",
+        "exampleTranslation": "The police officer protects the city"
+      },
+      {
+        "id": "ea_work_10",
+        "front": "Mechanic",
+        "back": "ميكانيكي",
+        "difficulty": "medium",
+        "example": "الميكانيكي يصلح السيارات",
+        "exampleTranslation": "The mechanic repairs cars"
+      }
+    ]
+  },
+  {
+    "key": "transport",
+    "name": "Transport",
+    "description": "Transportation",
+    "iconName": "Car",
+    "color": "#22d3ee",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ea_trans_1",
+        "front": "Car",
+        "back": "سيارة",
+        "difficulty": "medium",
+        "example": "عندي سيارة جديدة",
+        "exampleTranslation": "I have a new car"
+      },
+      {
+        "id": "ea_trans_2",
+        "front": "Bus",
+        "back": "حافلة",
+        "difficulty": "medium",
+        "example": "أذهب بالحافلة",
+        "exampleTranslation": "I go by bus"
+      },
+      {
+        "id": "ea_trans_3",
+        "front": "Train",
+        "back": "قطار",
+        "difficulty": "medium",
+        "example": "القطار سريع",
+        "exampleTranslation": "The train is fast"
+      },
+      {
+        "id": "ea_trans_4",
+        "front": "Airplane",
+        "back": "طائرة",
+        "difficulty": "medium",
+        "example": "أسافر بالطائرة",
+        "exampleTranslation": "I travel by plane"
+      },
+      {
+        "id": "ea_trans_5",
+        "front": "Bicycle",
+        "back": "دراجة",
+        "difficulty": "medium",
+        "example": "أركب الدراجة",
+        "exampleTranslation": "I ride a bicycle"
+      },
+      {
+        "id": "ea_trans_6",
+        "front": "Taxi",
+        "back": "تاكسي",
+        "difficulty": "medium",
+        "example": "أطلب تاكسي",
+        "exampleTranslation": "I call a taxi"
+      },
+      {
+        "id": "ea_trans_7",
+        "front": "Metro",
+        "back": "مترو",
+        "difficulty": "medium",
+        "example": "أستخدم المترو",
+        "exampleTranslation": "I use the metro"
+      },
+      {
+        "id": "ea_trans_8",
+        "front": "Motorcycle",
+        "back": "دراجة نارية",
+        "difficulty": "medium",
+        "example": "دراجتي النارية حمراء",
+        "exampleTranslation": "My motorcycle is red"
+      },
+      {
+        "id": "ea_trans_9",
+        "front": "Boat",
+        "back": "قارب",
+        "difficulty": "medium",
+        "example": "نبحر بالقارب",
+        "exampleTranslation": "We sail by boat"
+      },
+      {
+        "id": "ea_trans_10",
+        "front": "Ticket",
+        "back": "تذكرة",
+        "difficulty": "medium",
+        "example": "أشتري تذكرة",
+        "exampleTranslation": "I buy a ticket"
+      }
+    ]
+  },
+  {
+    "key": "education",
+    "name": "Education",
+    "description": "School",
+    "iconName": "School",
+    "color": "#4ade80",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ea_edu_1",
+        "front": "Student",
+        "back": "طالب",
+        "difficulty": "medium",
+        "example": "أنا طالب",
+        "exampleTranslation": "I am a student"
+      },
+      {
+        "id": "ea_edu_2",
+        "front": "Teacher",
+        "back": "معلم",
+        "difficulty": "medium",
+        "example": "المعلم يدرس جيداً",
+        "exampleTranslation": "The teacher teaches well"
+      },
+      {
+        "id": "ea_edu_3",
+        "front": "Book",
+        "back": "كتاب",
+        "difficulty": "medium",
+        "example": "أقرأ كتاباً",
+        "exampleTranslation": "I read a book"
+      },
+      {
+        "id": "ea_edu_4",
+        "front": "Pencil",
+        "back": "قلم رصاص",
+        "difficulty": "medium",
+        "example": "هل عندك قلم رصاص؟",
+        "exampleTranslation": "Do you have a pencil?"
+      },
+      {
+        "id": "ea_edu_5",
+        "front": "Notebook",
+        "back": "دفتر",
+        "difficulty": "medium",
+        "example": "أحتاج دفتراً",
+        "exampleTranslation": "I need a notebook"
+      },
+      {
+        "id": "ea_edu_6",
+        "front": "Exam",
+        "back": "امتحان",
+        "difficulty": "medium",
+        "example": "الامتحان غداً",
+        "exampleTranslation": "The exam is tomorrow"
+      },
+      {
+        "id": "ea_edu_7",
+        "front": "Homework",
+        "back": "واجب منزلي",
+        "difficulty": "medium",
+        "example": "عندي واجب منزلي كثير",
+        "exampleTranslation": "I have a lot of homework"
+      },
+      {
+        "id": "ea_edu_8",
+        "front": "Class",
+        "back": "صف",
+        "difficulty": "medium",
+        "example": "الصف يبدأ في التاسعة",
+        "exampleTranslation": "The class starts at nine"
+      },
+      {
+        "id": "ea_edu_9",
+        "front": "Library",
+        "back": "مكتبة",
+        "difficulty": "medium",
+        "example": "أدرس في المكتبة",
+        "exampleTranslation": "I study at the library"
+      },
+      {
+        "id": "ea_edu_10",
+        "front": "Backpack",
+        "back": "حقيبة ظهر",
+        "difficulty": "medium",
+        "example": "حقيبتي ثقيلة",
+        "exampleTranslation": "My backpack is heavy"
+      }
+    ]
+  },
+  {
+    "key": "nature",
+    "name": "Nature",
+    "description": "Nature",
+    "iconName": "TreePine",
+    "color": "#4ade80",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ea_nature_1",
+        "front": "Tree",
+        "back": "شجرة",
+        "difficulty": "medium",
+        "example": "الشجرة عالية",
+        "exampleTranslation": "The tree is tall"
+      },
+      {
+        "id": "ea_nature_2",
+        "front": "Flower",
+        "back": "زهرة",
+        "difficulty": "medium",
+        "example": "الزهرة جميلة",
+        "exampleTranslation": "The flower is beautiful"
+      },
+      {
+        "id": "ea_nature_3",
+        "front": "Mountain",
+        "back": "جبل",
+        "difficulty": "medium",
+        "example": "الجبل عالي",
+        "exampleTranslation": "The mountain is high"
+      },
+      {
+        "id": "ea_nature_4",
+        "front": "River",
+        "back": "نهر",
+        "difficulty": "medium",
+        "example": "النهر طويل",
+        "exampleTranslation": "The river is long"
+      },
+      {
+        "id": "ea_nature_5",
+        "front": "Sea",
+        "back": "بحر",
+        "difficulty": "medium",
+        "example": "البحر أزرق",
+        "exampleTranslation": "The sea is blue"
+      },
+      {
+        "id": "ea_nature_6",
+        "front": "Forest",
+        "back": "غابة",
+        "difficulty": "medium",
+        "example": "نمشي في الغابة",
+        "exampleTranslation": "We walk through the forest"
+      },
+      {
+        "id": "ea_nature_7",
+        "front": "Lake",
+        "back": "بحيرة",
+        "difficulty": "medium",
+        "example": "البحيرة هادئة",
+        "exampleTranslation": "The lake is calm"
+      },
+      {
+        "id": "ea_nature_8",
+        "front": "Sky",
+        "back": "سماء",
+        "difficulty": "medium",
+        "example": "السماء زرقاء",
+        "exampleTranslation": "The sky is blue"
+      },
+      {
+        "id": "ea_nature_9",
+        "front": "Star",
+        "back": "نجمة",
+        "difficulty": "medium",
+        "example": "النجوم تلمع",
+        "exampleTranslation": "The stars shine"
+      },
+      {
+        "id": "ea_nature_10",
+        "front": "Moon",
+        "back": "قمر",
+        "difficulty": "medium",
+        "example": "القمر مكتمل",
+        "exampleTranslation": "The moon is full"
+      }
+    ]
+  },
+  {
+    "key": "emotions",
+    "name": "Emotions",
+    "description": "Feelings",
+    "iconName": "Heart",
+    "color": "#facc15",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ea_emo_1",
+        "front": "Happy",
+        "back": "سعيد",
+        "difficulty": "medium",
+        "example": "أنا سعيد",
+        "exampleTranslation": "I am happy"
+      },
+      {
+        "id": "ea_emo_2",
+        "front": "Sad",
+        "back": "حزين",
+        "difficulty": "medium",
+        "example": "هو حزين",
+        "exampleTranslation": "He is sad"
+      },
+      {
+        "id": "ea_emo_3",
+        "front": "Angry",
+        "back": "غاضب",
+        "difficulty": "medium",
+        "example": "هي غاضبة",
+        "exampleTranslation": "She is angry"
+      },
+      {
+        "id": "ea_emo_4",
+        "front": "Tired",
+        "back": "متعب",
+        "difficulty": "medium",
+        "example": "أنا متعب",
+        "exampleTranslation": "I am tired"
+      },
+      {
+        "id": "ea_emo_5",
+        "front": "Excited",
+        "back": "متحمس",
+        "difficulty": "medium",
+        "example": "نحن متحمسون",
+        "exampleTranslation": "We are excited"
+      },
+      {
+        "id": "ea_emo_6",
+        "front": "Nervous",
+        "back": "عصبي",
+        "difficulty": "medium",
+        "example": "هو عصبي",
+        "exampleTranslation": "He is nervous"
+      },
+      {
+        "id": "ea_emo_7",
+        "front": "Calm",
+        "back": "هادئ",
+        "difficulty": "medium",
+        "example": "هي هادئة",
+        "exampleTranslation": "She is calm"
+      },
+      {
+        "id": "ea_emo_8",
+        "front": "Surprised",
+        "back": "مندهش",
+        "difficulty": "medium",
+        "example": "أنا مندهش",
+        "exampleTranslation": "I am surprised"
+      },
+      {
+        "id": "ea_emo_9",
+        "front": "Scared",
+        "back": "خائف",
+        "difficulty": "medium",
+        "example": "الطفل خائف",
+        "exampleTranslation": "The child is scared"
+      },
+      {
+        "id": "ea_emo_10",
+        "front": "Bored",
+        "back": "ملول",
+        "difficulty": "medium",
+        "example": "هم ملولون",
+        "exampleTranslation": "They are bored"
+      }
+    ]
+  },
+  {
+    "key": "time",
+    "name": "Time",
+    "description": "Time expressions",
+    "iconName": "Clock",
+    "color": "#c084fc",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ea_time_1",
+        "front": "Today",
+        "back": "اليوم",
+        "difficulty": "medium",
+        "example": "اليوم الاثنين",
+        "exampleTranslation": "Today is Monday"
+      },
+      {
+        "id": "ea_time_2",
+        "front": "Yesterday",
+        "back": "أمس",
+        "difficulty": "medium",
+        "example": "أمس كان الأحد",
+        "exampleTranslation": "Yesterday was Sunday"
+      },
+      {
+        "id": "ea_time_3",
+        "front": "Tomorrow",
+        "back": "غداً",
+        "difficulty": "medium",
+        "example": "غداً الثلاثاء",
+        "exampleTranslation": "Tomorrow is Tuesday"
+      },
+      {
+        "id": "ea_time_4",
+        "front": "Now",
+        "back": "الآن",
+        "difficulty": "medium",
+        "example": "أعمل الآن",
+        "exampleTranslation": "I'm working now"
+      },
+      {
+        "id": "ea_time_5",
+        "front": "Later",
+        "back": "لاحقاً",
+        "difficulty": "medium",
+        "example": "سأفعله لاحقاً",
+        "exampleTranslation": "I'll do it later"
+      },
+      {
+        "id": "ea_time_6",
+        "front": "Morning",
+        "back": "صباح",
+        "difficulty": "medium",
+        "example": "صباح الخير",
+        "exampleTranslation": "Good morning"
+      },
+      {
+        "id": "ea_time_7",
+        "front": "Noon",
+        "back": "ظهر",
+        "difficulty": "medium",
+        "example": "الآن الظهر",
+        "exampleTranslation": "It's noon"
+      },
+      {
+        "id": "ea_time_8",
+        "front": "Evening",
+        "back": "مساء",
+        "difficulty": "medium",
+        "example": "مساء الخير",
+        "exampleTranslation": "Good evening"
+      },
+      {
+        "id": "ea_time_9",
+        "front": "Night",
+        "back": "ليل",
+        "difficulty": "medium",
+        "example": "تصبح على خير",
+        "exampleTranslation": "Good night"
+      },
+      {
+        "id": "ea_time_10",
+        "front": "Week",
+        "back": "أسبوع",
+        "difficulty": "medium",
+        "example": "الأسبوع القادم",
+        "exampleTranslation": "Next week"
+      }
+    ]
+  },
+  {
+    "key": "weather",
+    "name": "Weather",
+    "description": "Weather conditions",
+    "iconName": "Cloud",
+    "color": "#38bdf8",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ea_weather_1",
+        "front": "Sun",
+        "back": "شمس",
+        "difficulty": "medium",
+        "example": "الشمس تشرق",
+        "exampleTranslation": "The sun shines"
+      },
+      {
+        "id": "ea_weather_2",
+        "front": "Rain",
+        "back": "مطر",
+        "difficulty": "medium",
+        "example": "تمطر",
+        "exampleTranslation": "It's raining"
+      },
+      {
+        "id": "ea_weather_3",
+        "front": "Snow",
+        "back": "ثلج",
+        "difficulty": "medium",
+        "example": "تثلج",
+        "exampleTranslation": "It's snowing"
+      },
+      {
+        "id": "ea_weather_4",
+        "front": "Wind",
+        "back": "رياح",
+        "difficulty": "medium",
+        "example": "الجو عاصف",
+        "exampleTranslation": "It's windy"
+      },
+      {
+        "id": "ea_weather_5",
+        "front": "Cloud",
+        "back": "سحابة",
+        "difficulty": "medium",
+        "example": "توجد سحب في السماء",
+        "exampleTranslation": "There are clouds in the sky"
+      },
+      {
+        "id": "ea_weather_6",
+        "front": "Storm",
+        "back": "عاصفة",
+        "difficulty": "medium",
+        "example": "عاصفة قادمة",
+        "exampleTranslation": "A storm is coming"
+      },
+      {
+        "id": "ea_weather_7",
+        "front": "Hot",
+        "back": "حار",
+        "difficulty": "medium",
+        "example": "الجو حار جداً",
+        "exampleTranslation": "It's very hot"
+      },
+      {
+        "id": "ea_weather_8",
+        "front": "Cold",
+        "back": "بارد",
+        "difficulty": "medium",
+        "example": "الجو بارد في الشتاء",
+        "exampleTranslation": "It's cold in winter"
+      },
+      {
+        "id": "ea_weather_9",
+        "front": "Lightning",
+        "back": "برق",
+        "difficulty": "medium",
+        "example": "رأيت برقاً",
+        "exampleTranslation": "I saw lightning"
+      },
+      {
+        "id": "ea_weather_10",
+        "front": "Thunder",
+        "back": "رعد",
+        "difficulty": "medium",
+        "example": "يمكنك سماع الرعد",
+        "exampleTranslation": "You can hear thunder"
+      }
+    ]
+  },
+  {
+    "key": "body",
+    "name": "Body",
+    "description": "Body parts",
+    "iconName": "Hand",
+    "color": "#fb7185",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ea_body_1",
+        "front": "Head",
+        "back": "رأس",
+        "difficulty": "medium",
+        "example": "رأسي يؤلمني",
+        "exampleTranslation": "My head hurts"
+      },
+      {
+        "id": "ea_body_2",
+        "front": "Eye",
+        "back": "عين",
+        "difficulty": "medium",
+        "example": "عيوني زرقاء",
+        "exampleTranslation": "I have blue eyes"
+      },
+      {
+        "id": "ea_body_3",
+        "front": "Nose",
+        "back": "أنف",
+        "difficulty": "medium",
+        "example": "أنفي بارد",
+        "exampleTranslation": "My nose is cold"
+      },
+      {
+        "id": "ea_body_4",
+        "front": "Mouth",
+        "back": "فم",
+        "difficulty": "medium",
+        "example": "افتح فمك",
+        "exampleTranslation": "Open your mouth"
+      },
+      {
+        "id": "ea_body_5",
+        "front": "Ear",
+        "back": "أذن",
+        "difficulty": "medium",
+        "example": "أذناي كبيرتان",
+        "exampleTranslation": "My ears are big"
+      },
+      {
+        "id": "ea_body_6",
+        "front": "Hand",
+        "back": "يد",
+        "difficulty": "medium",
+        "example": "أعطني يدك",
+        "exampleTranslation": "Give me your hand"
+      },
+      {
+        "id": "ea_body_7",
+        "front": "Foot",
+        "back": "قدم",
+        "difficulty": "medium",
+        "example": "قدمي تؤلمني",
+        "exampleTranslation": "My foot hurts"
+      },
+      {
+        "id": "ea_body_8",
+        "front": "Arm",
+        "back": "ذراع",
+        "difficulty": "medium",
+        "example": "ارفع ذراعك",
+        "exampleTranslation": "Raise your arm"
+      },
+      {
+        "id": "ea_body_9",
+        "front": "Leg",
+        "back": "ساق",
+        "difficulty": "medium",
+        "example": "ساقاي متعبتان",
+        "exampleTranslation": "My legs are tired"
+      },
+      {
+        "id": "ea_body_10",
+        "front": "Heart",
+        "back": "قلب",
+        "difficulty": "medium",
+        "example": "قلبي ينبض بسرعة",
+        "exampleTranslation": "My heart beats fast"
+      }
+    ]
+  },
+  {
+    "key": "activities",
+    "name": "Activities",
+    "description": "Daily activities",
+    "iconName": "Lightbulb",
+    "color": "#fcd34d",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ea_act_1",
+        "front": "Eat",
+        "back": "يأكل",
+        "difficulty": "medium",
+        "example": "سآكل",
+        "exampleTranslation": "I'm going to eat"
+      },
+      {
+        "id": "ea_act_2",
+        "front": "Drink",
+        "back": "يشرب",
+        "difficulty": "medium",
+        "example": "أشرب الماء",
+        "exampleTranslation": "I drink water"
+      },
+      {
+        "id": "ea_act_3",
+        "front": "Sleep",
+        "back": "ينام",
+        "difficulty": "medium",
+        "example": "يجب أن أنام",
+        "exampleTranslation": "I need to sleep"
+      },
+      {
+        "id": "ea_act_4",
+        "front": "Run",
+        "back": "يجري",
+        "difficulty": "medium",
+        "example": "أجري في الصباح",
+        "exampleTranslation": "I run in the morning"
+      },
+      {
+        "id": "ea_act_5",
+        "front": "Read",
+        "back": "يقرأ",
+        "difficulty": "medium",
+        "example": "أقرأ كتاباً",
+        "exampleTranslation": "I read a book"
+      },
+      {
+        "id": "ea_act_6",
+        "front": "Write",
+        "back": "يكتب",
+        "difficulty": "medium",
+        "example": "أكتب رسالة",
+        "exampleTranslation": "I write a letter"
+      },
+      {
+        "id": "ea_act_7",
+        "front": "Speak",
+        "back": "يتكلم",
+        "difficulty": "medium",
+        "example": "أتكلم العربية",
+        "exampleTranslation": "I speak Arabic"
+      },
+      {
+        "id": "ea_act_8",
+        "front": "Listen",
+        "back": "يستمع",
+        "difficulty": "medium",
+        "example": "أستمع للموسيقى",
+        "exampleTranslation": "I listen to music"
+      },
+      {
+        "id": "ea_act_9",
+        "front": "Watch",
+        "back": "يشاهد",
+        "difficulty": "medium",
+        "example": "أشاهد التلفزيون",
+        "exampleTranslation": "I watch television"
+      },
+      {
+        "id": "ea_act_10",
+        "front": "Think",
+        "back": "يفكر",
+        "difficulty": "medium",
+        "example": "أفكر فيك",
+        "exampleTranslation": "I think of you"
+      }
+    ]
+  },
+  {
+    "key": "learning",
+    "name": "Learning",
+    "description": "Learning activities",
+    "iconName": "BookOpen",
+    "color": "#3b82f6",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ea_learn_1",
+        "front": "Learn",
+        "back": "يتعلم",
+        "difficulty": "medium",
+        "example": "أتعلم العربية",
+        "exampleTranslation": "I learn Arabic"
+      },
+      {
+        "id": "ea_learn_2",
+        "front": "Study",
+        "back": "يدرس",
+        "difficulty": "medium",
+        "example": "أدرس في الجامعة",
+        "exampleTranslation": "I study at university"
+      },
+      {
+        "id": "ea_learn_3",
+        "front": "Teach",
+        "back": "يعلم",
+        "difficulty": "medium",
+        "example": "أعلم الإنجليزية",
+        "exampleTranslation": "I teach English"
+      },
+      {
+        "id": "ea_learn_4",
+        "front": "Understand",
+        "back": "يفهم",
+        "difficulty": "medium",
+        "example": "أفهم الدرس",
+        "exampleTranslation": "I understand the lesson"
+      },
+      {
+        "id": "ea_learn_5",
+        "front": "Practice",
+        "back": "يمارس",
+        "difficulty": "medium",
+        "example": "أمارس كل يوم",
+        "exampleTranslation": "I practice every day"
+      },
+      {
+        "id": "ea_learn_6",
+        "front": "Repeat",
+        "back": "يكرر",
+        "difficulty": "medium",
+        "example": "كرر الكلمة",
+        "exampleTranslation": "Repeat the word"
+      },
+      {
+        "id": "ea_learn_7",
+        "front": "Explain",
+        "back": "يشرح",
+        "difficulty": "medium",
+        "example": "المعلم يشرح جيداً",
+        "exampleTranslation": "The teacher explains well"
+      },
+      {
+        "id": "ea_learn_8",
+        "front": "Ask",
+        "back": "يسأل",
+        "difficulty": "medium",
+        "example": "أسأل المعلم",
+        "exampleTranslation": "I ask the teacher"
+      },
+      {
+        "id": "ea_learn_9",
+        "front": "Answer",
+        "back": "يجيب",
+        "difficulty": "medium",
+        "example": "أجيب على السؤال",
+        "exampleTranslation": "I answer the question"
+      },
+      {
+        "id": "ea_learn_10",
+        "front": "Remember",
+        "back": "يتذكر",
+        "difficulty": "medium",
+        "example": "أتذكر الدرس",
+        "exampleTranslation": "I remember the lesson"
+      }
+    ]
+  },
+  {
+    "key": "sports",
+    "name": "Sports",
+    "description": "Sports",
+    "iconName": "Dumbbell",
+    "color": "#60a5fa",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ea_sport_1",
+        "front": "Football",
+        "back": "كرة القدم",
+        "difficulty": "medium",
+        "example": "ألعب كرة القدم",
+        "exampleTranslation": "I play football"
+      },
+      {
+        "id": "ea_sport_2",
+        "front": "Basketball",
+        "back": "كرة السلة",
+        "difficulty": "medium",
+        "example": "أحب كرة السلة",
+        "exampleTranslation": "I like basketball"
+      },
+      {
+        "id": "ea_sport_3",
+        "front": "Tennis",
+        "back": "تنس",
+        "difficulty": "medium",
+        "example": "ألعب التنس",
+        "exampleTranslation": "I play tennis"
+      },
+      {
+        "id": "ea_sport_4",
+        "front": "Swimming",
+        "back": "سباحة",
+        "difficulty": "medium",
+        "example": "السباحة صحية",
+        "exampleTranslation": "Swimming is healthy"
+      },
+      {
+        "id": "ea_sport_5",
+        "front": "Running",
+        "back": "جري",
+        "difficulty": "medium",
+        "example": "أجري في الصباح",
+        "exampleTranslation": "I run in the morning"
+      },
+      {
+        "id": "ea_sport_6",
+        "front": "Cycling",
+        "back": "ركوب الدراجات",
+        "difficulty": "medium",
+        "example": "أحب ركوب الدراجات",
+        "exampleTranslation": "I like cycling"
+      },
+      {
+        "id": "ea_sport_7",
+        "front": "Gym",
+        "back": "صالة رياضية",
+        "difficulty": "medium",
+        "example": "أذهب إلى الصالة الرياضية",
+        "exampleTranslation": "I go to the gym"
+      },
+      {
+        "id": "ea_sport_8",
+        "front": "Training",
+        "back": "تدريب",
+        "difficulty": "medium",
+        "example": "عندي تدريب اليوم",
+        "exampleTranslation": "I have training today"
+      },
+      {
+        "id": "ea_sport_9",
+        "front": "Team",
+        "back": "فريق",
+        "difficulty": "medium",
+        "example": "أنا في فريق",
+        "exampleTranslation": "I'm on a team"
+      },
+      {
+        "id": "ea_sport_10",
+        "front": "Coach",
+        "back": "مدرب",
+        "difficulty": "medium",
+        "example": "مدربنا ممتاز",
+        "exampleTranslation": "Our coach is excellent"
+      }
+    ]
+  },
+  {
+    "key": "travel",
+    "name": "Travel",
+    "description": "Tourism",
+    "iconName": "Plane",
+    "color": "#a855f7",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ea_travel_1",
+        "front": "Travel",
+        "back": "سفر",
+        "difficulty": "medium",
+        "example": "أذهب في رحلة",
+        "exampleTranslation": "I'm going on a trip"
+      },
+      {
+        "id": "ea_travel_2",
+        "front": "Suitcase",
+        "back": "حقيبة سفر",
+        "difficulty": "medium",
+        "example": "حقيبتي ثقيلة",
+        "exampleTranslation": "My suitcase is heavy"
+      },
+      {
+        "id": "ea_travel_3",
+        "front": "Passport",
+        "back": "جواز سفر",
+        "difficulty": "medium",
+        "example": "أحتاج جواز سفري",
+        "exampleTranslation": "I need my passport"
+      },
+      {
+        "id": "ea_travel_4",
+        "front": "Hotel",
+        "back": "فندق",
+        "difficulty": "medium",
+        "example": "الفندق مريح",
+        "exampleTranslation": "The hotel is comfortable"
+      },
+      {
+        "id": "ea_travel_5",
+        "front": "Reservation",
+        "back": "حجز",
+        "difficulty": "medium",
+        "example": "عندي حجز",
+        "exampleTranslation": "I have a reservation"
+      },
+      {
+        "id": "ea_travel_6",
+        "front": "Tourist",
+        "back": "سائح",
+        "difficulty": "medium",
+        "example": "أنا سائح",
+        "exampleTranslation": "I am a tourist"
+      },
+      {
+        "id": "ea_travel_7",
+        "front": "Vacation",
+        "back": "إجازة",
+        "difficulty": "medium",
+        "example": "أنا في إجازة",
+        "exampleTranslation": "I'm on vacation"
+      },
+      {
+        "id": "ea_travel_8",
+        "front": "Sightseeing",
+        "back": "جولة سياحية",
+        "difficulty": "medium",
+        "example": "نقوم بجولة سياحية",
+        "exampleTranslation": "We're doing sightseeing"
+      },
+      {
+        "id": "ea_travel_9",
+        "front": "Guide",
+        "back": "مرشد",
+        "difficulty": "medium",
+        "example": "المرشد مفيد",
+        "exampleTranslation": "The guide is informative"
+      },
+      {
+        "id": "ea_travel_10",
+        "front": "Souvenir",
+        "back": "تذكار",
+        "difficulty": "medium",
+        "example": "أشتري تذكاراً",
+        "exampleTranslation": "I'm buying a souvenir"
+      }
+    ]
+  },
+  {
+    "key": "entertainment",
+    "name": "Entertainment",
+    "description": "Leisure",
+    "iconName": "Music",
+    "color": "#ec4899",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ea_ent_1",
+        "front": "Music",
+        "back": "موسيقى",
+        "difficulty": "medium",
+        "example": "أستمع للموسيقى",
+        "exampleTranslation": "I listen to music"
+      },
+      {
+        "id": "ea_ent_2",
+        "front": "Movie",
+        "back": "فيلم",
+        "difficulty": "medium",
+        "example": "أشاهد فيلماً",
+        "exampleTranslation": "I watch a movie"
+      },
+      {
+        "id": "ea_ent_3",
+        "front": "Concert",
+        "back": "حفلة موسيقية",
+        "difficulty": "medium",
+        "example": "أذهب إلى حفلة موسيقية",
+        "exampleTranslation": "I go to a concert"
+      },
+      {
+        "id": "ea_ent_4",
+        "front": "Theater",
+        "back": "مسرح",
+        "difficulty": "medium",
+        "example": "أذهب إلى المسرح",
+        "exampleTranslation": "I go to the theater"
+      },
+      {
+        "id": "ea_ent_5",
+        "front": "Dance",
+        "back": "رقص",
+        "difficulty": "medium",
+        "example": "أحب الرقص",
+        "exampleTranslation": "I like to dance"
+      },
+      {
+        "id": "ea_ent_6",
+        "front": "Sing",
+        "back": "غناء",
+        "difficulty": "medium",
+        "example": "أحب الغناء",
+        "exampleTranslation": "I like to sing"
+      },
+      {
+        "id": "ea_ent_7",
+        "front": "Guitar",
+        "back": "جيتار",
+        "difficulty": "medium",
+        "example": "ألعب الجيتار",
+        "exampleTranslation": "I play guitar"
+      },
+      {
+        "id": "ea_ent_8",
+        "front": "Games",
+        "back": "ألعاب",
+        "difficulty": "medium",
+        "example": "ألعب ألعاب الفيديو",
+        "exampleTranslation": "I play video games"
+      },
+      {
+        "id": "ea_ent_9",
+        "front": "Photography",
+        "back": "تصوير",
+        "difficulty": "medium",
+        "example": "أهتم بالتصوير",
+        "exampleTranslation": "I'm interested in photography"
+      },
+      {
+        "id": "ea_ent_10",
+        "front": "Reading",
+        "back": "قراءة",
+        "difficulty": "medium",
+        "example": "القراءة هوايتي",
+        "exampleTranslation": "Reading is my hobby"
+      }
+    ]
+  }
+]
