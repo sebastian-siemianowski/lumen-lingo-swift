@@ -318,15 +318,18 @@ struct FlashCardsView: View {
             Spacer()
 
             Text(word.front)
-                .font(.system(size: dynamicFontSize(for: word.front), weight: .semibold))
+                .font(.system(size: dynamicFontSize(for: word.front), weight: .bold))
                 .foregroundStyle(.white)
+                .shadow(color: .black.opacity(0.6), radius: 4, x: 0, y: 2)
+                .shadow(color: .black.opacity(0.3), radius: 12, x: 0, y: 4)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 32)
 
             if let example = word.exampleTranslation, !example.isEmpty {
                 Text(example)
-                    .font(.subheadline)
-                    .foregroundStyle(.white.opacity(0.55))
+                    .font(.subheadline.weight(.medium))
+                    .foregroundStyle(.white.opacity(0.70))
+                    .shadow(color: .black.opacity(0.5), radius: 3, x: 0, y: 1)
                     .italic()
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 32)
@@ -339,8 +342,9 @@ struct FlashCardsView: View {
                 Image(systemName: "arrow.counterclockwise")
                 Text("Tap to reveal")
             }
-            .font(.caption)
-            .foregroundStyle(.white.opacity(0.40))
+            .font(.caption.weight(.medium))
+            .foregroundStyle(.white.opacity(0.55))
+            .shadow(color: .black.opacity(0.4), radius: 3, x: 0, y: 1)
             .padding(.bottom, 28)
         }
         .onAppear { startFrontAnimations() }
@@ -353,8 +357,10 @@ struct FlashCardsView: View {
             Spacer()
 
             Text(word.back)
-                .font(.system(size: dynamicFontSize(for: word.back), weight: .semibold))
+                .font(.system(size: dynamicFontSize(for: word.back), weight: .bold))
                 .foregroundStyle(.white)
+                .shadow(color: .black.opacity(0.6), radius: 4, x: 0, y: 2)
+                .shadow(color: .black.opacity(0.3), radius: 12, x: 0, y: 4)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 32)
 
@@ -362,17 +368,19 @@ struct FlashCardsView: View {
             Capsule()
                 .fill(
                     LinearGradient(
-                        colors: [.clear, .white.opacity(0.35), .clear],
+                        colors: [.clear, .white.opacity(0.45), .clear],
                         startPoint: .leading, endPoint: .trailing
                     )
                 )
                 .frame(width: 80, height: 1)
+                .shadow(color: .white.opacity(0.3), radius: 4)
                 .padding(.top, 18)
 
             if let example = word.example, !example.isEmpty {
                 Text("\"\(example)\"")
-                    .font(.subheadline)
-                    .foregroundStyle(.white.opacity(0.65))
+                    .font(.subheadline.weight(.medium))
+                    .foregroundStyle(.white.opacity(0.80))
+                    .shadow(color: .black.opacity(0.5), radius: 3, x: 0, y: 1)
                     .italic()
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 32)
@@ -381,8 +389,9 @@ struct FlashCardsView: View {
 
             if let translation = word.exampleTranslation, !translation.isEmpty {
                 Text(translation)
-                    .font(.caption)
-                    .foregroundStyle(.white.opacity(0.40))
+                    .font(.caption.weight(.medium))
+                    .foregroundStyle(.white.opacity(0.55))
+                    .shadow(color: .black.opacity(0.4), radius: 3, x: 0, y: 1)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 32)
                     .padding(.top, 6)
@@ -393,17 +402,18 @@ struct FlashCardsView: View {
             // Word pair footer pill
             HStack(spacing: 6) {
                 Text(word.front)
-                    .foregroundStyle(.white.opacity(0.55))
+                    .foregroundStyle(.white.opacity(0.65))
                 Image(systemName: "arrow.right")
-                    .foregroundStyle(.white.opacity(0.30))
+                    .foregroundStyle(.white.opacity(0.40))
                 Text(word.back)
-                    .foregroundStyle(.white.opacity(0.80))
+                    .foregroundStyle(.white.opacity(0.90))
             }
             .font(.caption.weight(.medium))
+            .shadow(color: .black.opacity(0.4), radius: 3, x: 0, y: 1)
             .padding(.horizontal, 14)
             .padding(.vertical, 7)
-            .background(Capsule().fill(.white.opacity(0.08)))
-            .overlay(Capsule().strokeBorder(.white.opacity(0.15), lineWidth: 0.5))
+            .background(Capsule().fill(.white.opacity(0.12)))
+            .overlay(Capsule().strokeBorder(.white.opacity(0.20), lineWidth: 0.5))
             .padding(.bottom, 24)
         }
         .onAppear { startBackAnimations() }
@@ -417,10 +427,10 @@ struct FlashCardsView: View {
             .frame(height: 360)
             .background {
                 ZStack {
-                    // Ultra-thin frosted glass — the beautiful transparency
+                    // Ultra-thin frosted glass — more see-through to show cosmic background
                     RoundedRectangle(cornerRadius: 32)
                         .fill(.ultraThinMaterial)
-                        .opacity(0.55)
+                        .opacity(0.30)
 
                     // Subtle colour wash
                     RoundedRectangle(cornerRadius: 32)
