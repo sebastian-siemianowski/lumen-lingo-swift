@@ -697,8 +697,8 @@ struct PremiumToggle: View {
 
 // MARK: - Glass Slider
 
-/// Custom glassmorphic slider matching React's liquid glass slider design.
-/// Features bloom halo, trailing light, 3D inset track, and pill capsule thumb.
+/// Slider that uses the native iOS 26 liquid glass rendering when available,
+/// falling back to a custom glassmorphic implementation on older OS versions.
 struct GlassSlider: View {
     @Environment(\.colorScheme) private var colorScheme
     @Binding var value: Double
@@ -706,6 +706,25 @@ struct GlassSlider: View {
     var step: Double = 0.1
     var accentColor: Color = .orange
     var label: String? = nil
+
+    var body: some View {
+        if #available(iOS 26.0, *) {
+            Slider(value: $value, in: range, step: step)
+                .tint(accentColor)
+                .frame(height: 36)
+        } else {
+            LegacyGlassSlider(value: $value, range: range, step: step, accentColor: accentColor)
+        }
+    }
+}
+
+/// Custom glassmorphic slider for iOS < 26.
+private struct LegacyGlassSlider: View {
+    @Environment(\.colorScheme) private var colorScheme
+    @Binding var value: Double
+    var range: ClosedRange<Double> = 0...1
+    var step: Double = 0.1
+    var accentColor: Color = .orange
 
     private var isDark: Bool { colorScheme == .dark }
     @State private var breathePhase: CGFloat = 0
