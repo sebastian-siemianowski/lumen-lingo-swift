@@ -323,14 +323,10 @@ struct CategoriesView: View {
             }
             .padding(isGridView ? 14 : 16)
             .frame(minHeight: isGridView ? 220 : 0)
-            .background(
-                LiquidGlassCardBackground(
-                    cornerRadius: 22,
-                    accentColors: colors,
-                    borderOpacity: 0.15
-                )
+            .liquidGlassCard(
+                cornerRadius: 22,
+                accentColor: colors.first ?? .blue
             )
-            .clipShape(RoundedRectangle(cornerRadius: 22))
         }
         .buttonStyle(LiquidCardButtonStyle(accentColor: colors.first ?? .white))
     }
