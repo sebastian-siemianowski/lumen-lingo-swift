@@ -273,26 +273,27 @@ struct FlashCardsView: View {
                     .allowsHitTesting(false)
             }
 
-            // Both card faces always present.
-            // Opacity uses a sharp threshold so only one face is visible
-            // at any time — prevents doubled transparent layers mid-flip.
-            cardBack(word: word)
-                .rotation3DEffect(
-                    .degrees(isFlipped ? 0 : 180),
-                    axis: (x: 0, y: 1, z: 0),
-                    perspective: 0.4
-                )
-                .opacity(flipProgress > 0.5 ? 1 : 0)
-                .allowsHitTesting(isFlipped)
+            // Single glass card — one transparent layer throughout the flip.
+            // .drawingGroup() rasterizes the material before 3D rotation,
+            // preserving the beautiful transparency mid-flip.
+            liquidGlassCard {
+                ZStack {
+                    // Front content
+                    frontContent(word: word)
+                        .opacity(flipProgress <= 0.5 ? 1 : 0)
 
-            cardFront(word: word)
-                .rotation3DEffect(
-                    .degrees(isFlipped ? -180 : 0),
-                    axis: (x: 0, y: 1, z: 0),
-                    perspective: 0.4
-                )
-                .opacity(flipProgress <= 0.5 ? 1 : 0)
-                .allowsHitTesting(!isFlipped)
+                    // Back content — counter-rotated so text reads correctly when card is flipped
+                    backContent(word: word)
+                        .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
+                        .opacity(flipProgress > 0.5 ? 1 : 0)
+                }
+            }
+            .drawingGroup(opaque: false)
+            .rotation3DEffect(
+                .degrees(isFlipped ? 180 : 0),
+                axis: (x: 0, y: 1, z: 0),
+                perspective: 0.4
+            )
         }
         .frame(maxWidth: 500)
         .frame(height: 360)
@@ -310,104 +311,100 @@ struct FlashCardsView: View {
         }
     }
 
-    // MARK: - Liquid Glass Card (front)
+    // MARK: - Card Front Content (text only, no glass)
 
-    private func cardFront(word: FlashcardWord) -> some View {
-        liquidGlassCard {
-            VStack(spacing: 0) {
-                Spacer()
+    private func frontContent(word: FlashcardWord) -> some View {
+        VStack(spacing: 0) {
+            Spacer()
 
-                Text(word.front)
-                    .font(.system(size: dynamicFontSize(for: word.front), weight: .semibold))
-                    .foregroundStyle(.white)
+            Text(word.front)
+                .font(.system(size: dynamicFontSize(for: word.front), weight: .semibold))
+                .foregroundStyle(.white)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 32)
+
+            if let example = word.exampleTranslation, !example.isEmpty {
+                Text(example)
+                    .font(.subheadline)
+                    .foregroundStyle(.white.opacity(0.55))
+                    .italic()
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 32)
-
-                if let example = word.exampleTranslation, !example.isEmpty {
-                    Text(example)
-                        .font(.subheadline)
-                        .foregroundStyle(.white.opacity(0.55))
-                        .italic()
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 32)
-                        .padding(.top, 14)
-                }
-
-                Spacer()
-
-                HStack(spacing: 6) {
-                    Image(systemName: "arrow.counterclockwise")
-                    Text("Tap to reveal")
-                }
-                .font(.caption)
-                .foregroundStyle(.white.opacity(0.40))
-                .padding(.bottom, 28)
+                    .padding(.top, 14)
             }
+
+            Spacer()
+
+            HStack(spacing: 6) {
+                Image(systemName: "arrow.counterclockwise")
+                Text("Tap to reveal")
+            }
+            .font(.caption)
+            .foregroundStyle(.white.opacity(0.40))
+            .padding(.bottom, 28)
         }
         .onAppear { startFrontAnimations() }
     }
 
-    // MARK: - Liquid Glass Card (back)
+    // MARK: - Card Back Content (text only, no glass)
 
-    private func cardBack(word: FlashcardWord) -> some View {
-        liquidGlassCard {
-            VStack(spacing: 0) {
-                Spacer()
+    private func backContent(word: FlashcardWord) -> some View {
+        VStack(spacing: 0) {
+            Spacer()
 
-                Text(word.back)
-                    .font(.system(size: dynamicFontSize(for: word.back), weight: .semibold))
-                    .foregroundStyle(.white)
+            Text(word.back)
+                .font(.system(size: dynamicFontSize(for: word.back), weight: .semibold))
+                .foregroundStyle(.white)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 32)
+
+            // Thin glowing divider
+            Capsule()
+                .fill(
+                    LinearGradient(
+                        colors: [.clear, .white.opacity(0.35), .clear],
+                        startPoint: .leading, endPoint: .trailing
+                    )
+                )
+                .frame(width: 80, height: 1)
+                .padding(.top, 18)
+
+            if let example = word.example, !example.isEmpty {
+                Text("\"\(example)\"")
+                    .font(.subheadline)
+                    .foregroundStyle(.white.opacity(0.65))
+                    .italic()
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 32)
-
-                // Thin glowing divider
-                Capsule()
-                    .fill(
-                        LinearGradient(
-                            colors: [.clear, .white.opacity(0.35), .clear],
-                            startPoint: .leading, endPoint: .trailing
-                        )
-                    )
-                    .frame(width: 80, height: 1)
-                    .padding(.top, 18)
-
-                if let example = word.example, !example.isEmpty {
-                    Text("\"\(example)\"")
-                        .font(.subheadline)
-                        .foregroundStyle(.white.opacity(0.65))
-                        .italic()
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 32)
-                        .padding(.top, 14)
-                }
-
-                if let translation = word.exampleTranslation, !translation.isEmpty {
-                    Text(translation)
-                        .font(.caption)
-                        .foregroundStyle(.white.opacity(0.40))
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 32)
-                        .padding(.top, 6)
-                }
-
-                Spacer()
-
-                // Word pair footer pill
-                HStack(spacing: 6) {
-                    Text(word.front)
-                        .foregroundStyle(.white.opacity(0.55))
-                    Image(systemName: "arrow.right")
-                        .foregroundStyle(.white.opacity(0.30))
-                    Text(word.back)
-                        .foregroundStyle(.white.opacity(0.80))
-                }
-                .font(.caption.weight(.medium))
-                .padding(.horizontal, 14)
-                .padding(.vertical, 7)
-                .background(Capsule().fill(.white.opacity(0.08)))
-                .overlay(Capsule().strokeBorder(.white.opacity(0.15), lineWidth: 0.5))
-                .padding(.bottom, 24)
+                    .padding(.top, 14)
             }
+
+            if let translation = word.exampleTranslation, !translation.isEmpty {
+                Text(translation)
+                    .font(.caption)
+                    .foregroundStyle(.white.opacity(0.40))
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 32)
+                    .padding(.top, 6)
+            }
+
+            Spacer()
+
+            // Word pair footer pill
+            HStack(spacing: 6) {
+                Text(word.front)
+                    .foregroundStyle(.white.opacity(0.55))
+                Image(systemName: "arrow.right")
+                    .foregroundStyle(.white.opacity(0.30))
+                Text(word.back)
+                    .foregroundStyle(.white.opacity(0.80))
+            }
+            .font(.caption.weight(.medium))
+            .padding(.horizontal, 14)
+            .padding(.vertical, 7)
+            .background(Capsule().fill(.white.opacity(0.08)))
+            .overlay(Capsule().strokeBorder(.white.opacity(0.15), lineWidth: 0.5))
+            .padding(.bottom, 24)
         }
         .onAppear { startBackAnimations() }
     }
@@ -420,7 +417,7 @@ struct FlashCardsView: View {
             .frame(height: 360)
             .background {
                 ZStack {
-                    // Ultra-thin frosted glass — lets the cosmic background shine through
+                    // Ultra-thin frosted glass — the beautiful transparency
                     RoundedRectangle(cornerRadius: 32)
                         .fill(.ultraThinMaterial)
                         .opacity(0.55)
