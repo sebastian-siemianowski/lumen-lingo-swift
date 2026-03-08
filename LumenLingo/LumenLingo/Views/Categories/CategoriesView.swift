@@ -26,6 +26,13 @@ struct CategoriesView: View {
     @State private var showFavoritesOnly: Bool = false
     @State private var isGridView: Bool = true
     @State private var currentPage: Int = 0
+    @State private var emptyPulse: Bool = false
+
+    // Frozen empty-state content — updated only when transitioning INTO empty
+    @State private var frozenEmptyIcon: String = "tray"
+    @State private var frozenEmptyTitle: String = "No Categories"
+    @State private var frozenEmptySubtitle: String = ""
+    @State private var frozenShowClearButton: Bool = false
 
     /// Pre-computed set of favorite category IDs for O(1) lookups.
     private var favoriteIds: Set<String> {
@@ -90,29 +97,43 @@ struct CategoriesView: View {
     }
 
     var body: some View {
+        let isEmpty = !isLoading && filteredCategories.isEmpty
+        let hasContent = !isLoading && !filteredCategories.isEmpty
+
         ZStack(alignment: .bottom) {
             VStack(spacing: 0) {
                 // Header
                 categoryHeader
 
-                if isLoading {
-                    Spacer()
-                    ProgressView()
-                        .scaleEffect(1.5)
-                        .tint(.white)
-                    Spacer()
-                } else if filteredCategories.isEmpty {
-                    Spacer()
+                ZStack {
+                    // Loading
+                    if isLoading {
+                        ProgressView()
+                            .scaleEffect(1.5)
+                            .tint(.white)
+                            .transition(.blurReplace)
+                    }
+
+                    // Empty state — always in tree, driven by opacity
                     emptyState
-                    Spacer()
-                } else {
+                        .opacity(isEmpty ? 1 : 0)
+                        .scaleEffect(isEmpty ? 1 : 0.92)
+                        .blur(radius: isEmpty ? 0 : 6)
+                        .allowsHitTesting(isEmpty)
+
+                    // Content grid
                     ScrollView {
                         categoryGrid
                             .padding(.horizontal, 16)
                             .padding(.top, 12)
                             .padding(.bottom, 130)
                     }
+                    .opacity(hasContent ? 1 : 0)
+                    .blur(radius: hasContent ? 0 : 4)
+                    .allowsHitTesting(hasContent)
                 }
+                .frame(maxHeight: .infinity)
+                .animation(.smooth(duration: 0.45), value: isEmpty)
             }
 
             // Floating liquid glass pagination panel
@@ -126,6 +147,9 @@ struct CategoriesView: View {
                 }
             }
             .padding(.bottom, 16)
+            .opacity(hasContent ? 1 : 0)
+            .offset(y: hasContent ? 0 : 20)
+            .animation(.smooth(duration: 0.35), value: hasContent)
         }
         .cosmicBackground()
         .navigationBarBackButtonHidden()
@@ -134,12 +158,15 @@ struct CategoriesView: View {
         .onAppear { loadCategories() }
         .onChange(of: searchText) { _, _ in
             withAnimation { currentPage = 0 }
+            freezeEmptyContentIfNeeded()
         }
         .onChange(of: showCompletedFilter) { _, _ in
             withAnimation(.smooth(duration: 0.3)) { currentPage = 0 }
+            freezeEmptyContentIfNeeded()
         }
         .onChange(of: showFavoritesOnly) { _, _ in
             withAnimation(.smooth(duration: 0.3)) { currentPage = 0 }
+            freezeEmptyContentIfNeeded()
         }
         .onChange(of: isGridView) { _, _ in
             withAnimation(.smooth(duration: 0.3)) { currentPage = 0 }
@@ -458,19 +485,109 @@ struct CategoriesView: View {
     // MARK: - Empty State
 
     private var emptyState: some View {
-        VStack(spacing: 16) {
-            Image(systemName: "tray")
-                .font(.system(size: 48))
-                .foregroundStyle(.white.opacity(0.3))
-            Text("No categories found")
-                .font(.headline)
-                .foregroundStyle(.white.opacity(0.6))
-            if !searchText.isEmpty {
-                Text("Try a different search term")
+        VStack(spacing: 20) {
+            // Animated icon
+            ZStack {
+                Circle()
+                    .fill(
+                        RadialGradient(
+                            colors: [paginationAccentColors[0].opacity(0.12), .clear],
+                            center: .center,
+                            startRadius: 0,
+                            endRadius: 50
+                        )
+                    )
+                    .frame(width: 100, height: 100)
+                    .scaleEffect(emptyPulse ? 1.15 : 0.95)
+
+                Image(systemName: frozenEmptyIcon)
+                    .font(.system(size: 38, weight: .light))
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: paginationAccentColors,
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    )
+                    .contentTransition(.symbolEffect(.replace))
+                    .offset(y: emptyPulse ? -2 : 2)
+            }
+
+            VStack(spacing: 8) {
+                Text(frozenEmptyTitle)
+                    .font(.title3.bold())
+                    .foregroundStyle(.white.opacity(0.75))
+                    .contentTransition(.interpolate)
+
+                Text(frozenEmptySubtitle)
                     .font(.subheadline)
                     .foregroundStyle(.white.opacity(0.4))
+                    .multilineTextAlignment(.center)
+                    .frame(maxWidth: 260)
+                    .contentTransition(.interpolate)
+            }
+
+            // Action hint
+            if frozenShowClearButton {
+                Button {
+                    withAnimation(.smooth(duration: 0.35)) {
+                        showFavoritesOnly = false
+                        showCompletedFilter = false
+                    }
+                } label: {
+                    Label("Clear Filters", systemImage: "xmark.circle")
+                        .font(.subheadline.weight(.medium))
+                        .foregroundStyle(paginationAccentColors[0])
+                        .padding(.horizontal, 16)
+                        .padding(.vertical, 8)
+                        .background(
+                            Capsule()
+                                .fill(paginationAccentColors[0].opacity(0.1))
+                                .overlay(Capsule().strokeBorder(paginationAccentColors[0].opacity(0.15), lineWidth: 0.5))
+                        )
+                }
+                .buttonStyle(.plain)
+                .transition(.opacity.combined(with: .scale(scale: 0.9)))
             }
         }
+        .onAppear {
+            withAnimation(.easeInOut(duration: 2.5).repeatForever(autoreverses: true)) {
+                emptyPulse = true
+            }
+        }
+    }
+
+    /// Snapshot the empty-state content BEFORE the animation runs
+    /// so it stays stable during the fade-out/fade-in transition.
+    private func freezeEmptyContentIfNeeded() {
+        let willBeEmpty = filteredCategories.isEmpty
+        guard willBeEmpty else { return }
+
+        frozenEmptyIcon = emptyIconForCurrentFilters
+        frozenEmptyTitle = emptyTitleForCurrentFilters
+        frozenEmptySubtitle = emptySubtitleForCurrentFilters
+        frozenShowClearButton = showFavoritesOnly || showCompletedFilter
+    }
+
+    private var emptyIconForCurrentFilters: String {
+        if showFavoritesOnly { return "heart.slash" }
+        if showCompletedFilter { return "checkmark.circle" }
+        if !searchText.isEmpty { return "magnifyingglass" }
+        return "tray"
+    }
+
+    private var emptyTitleForCurrentFilters: String {
+        if showFavoritesOnly { return "No Favourites Yet" }
+        if showCompletedFilter { return "All Complete!" }
+        if !searchText.isEmpty { return "No Results" }
+        return "No Categories"
+    }
+
+    private var emptySubtitleForCurrentFilters: String {
+        if showFavoritesOnly { return "Tap the heart on any category to save it here" }
+        if showCompletedFilter { return "You've finished everything — nice work!" }
+        if !searchText.isEmpty { return "Try a different search term" }
+        return "Categories will appear once content is loaded"
     }
 
     // MARK: - Logic
