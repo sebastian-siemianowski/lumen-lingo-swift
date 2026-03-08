@@ -233,6 +233,13 @@ struct LanguageSelectionView: View {
 
     private var currentPref: LanguagePreference? { languagePrefs.first }
 
+    /// Only show languages that appear as a source in at least one built-in pair.
+    private var availableSources: [SupportedLanguage] {
+        SupportedLanguage.allCases.filter { lang in
+            LanguagePair.builtIn.contains { $0.source == lang }
+        }
+    }
+
     // Determine available targets for the selected source
     private var availableTargets: [SupportedLanguage] {
         SupportedLanguage.allCases.filter { target in
@@ -241,7 +248,13 @@ struct LanguageSelectionView: View {
             let pairReverse = LanguagePair(source: target, target: selectedSource)
             let isBuiltIn = pair.isBuiltIn || pairReverse.isBuiltIn
             if isBuiltIn { return true }
-            if showBeta { return true }
+            // Beta: only show if content exists on disk (bundle has the JSON)
+            if showBeta {
+                let hasContent = Bundle.main.url(forResource: "flashcards_\(pair.key)", withExtension: "json") != nil
+                    || Bundle.main.url(forResource: "grammar_\(pair.key)", withExtension: "json") != nil
+                    || Bundle.main.url(forResource: "flashcards_\(pair.key)", withExtension: "json", subdirectory: "Content/\(pair.key)") != nil
+                if hasContent { return true }
+            }
             return betaPairs.contains {
                 $0.sourceLanguage == selectedSource.rawValue && $0.targetLanguage == target.rawValue
             }
@@ -250,7 +263,11 @@ struct LanguageSelectionView: View {
 
     private var filteredTargets: [SupportedLanguage] {
         if searchText.isEmpty { return availableTargets }
-        return availableTargets.filter { $0.displayName.localizedCaseInsensitiveContains(searchText) }
+        return availableTargets.filter {
+            $0.name(in: selectedSource).localizedCaseInsensitiveContains(searchText)
+            || $0.displayName.localizedCaseInsensitiveContains(searchText)
+            || $0.englishName.localizedCaseInsensitiveContains(searchText)
+        }
     }
 
     var body: some View {
@@ -324,7 +341,7 @@ struct LanguageSelectionView: View {
                 .foregroundStyle(.white)
 
             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
-                ForEach(SupportedLanguage.allCases, id: \.self) { lang in
+                ForEach(availableSources, id: \.self) { lang in
                     languageCard(lang, isSelected: lang == selectedSource) {
                         withAnimation(.spring(response: 0.35)) {
                             selectedSource = lang
@@ -373,7 +390,7 @@ struct LanguageSelectionView: View {
             } else {
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
                     ForEach(filteredTargets, id: \.self) { lang in
-                        languageCard(lang, isSelected: lang == selectedTarget) {
+                        languageCard(lang, isSelected: lang == selectedTarget, translatedIn: selectedSource) {
                             withAnimation(.spring(response: 0.35)) {
                                 selectedTarget = lang
                             }
@@ -444,11 +461,12 @@ struct LanguageSelectionView: View {
 
     // MARK: - Language Card
 
-    private func languageCard(_ lang: SupportedLanguage, isSelected: Bool, action: @escaping () -> Void) -> some View {
-        Button(action: action) {
+    private func languageCard(_ lang: SupportedLanguage, isSelected: Bool, translatedIn contextLang: SupportedLanguage? = nil, action: @escaping () -> Void) -> some View {
+        let label = contextLang.map { lang.name(in: $0) } ?? lang.displayName
+        return Button(action: action) {
             HStack(spacing: 8) {
                 CountryFlagView(countryCode: lang.countryCode, size: 18)
-                Text(lang.displayName)
+                Text(label)
                     .font(.subheadline.bold())
                     .foregroundStyle(isSelected ? .white : .white.opacity(0.7))
                     .lineLimit(1)

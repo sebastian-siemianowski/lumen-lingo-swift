@@ -145,21 +145,221 @@ enum SupportedLanguage: String, Codable, CaseIterable, Identifiable {
             .joined()
     }
 
-    var englishName: String {
-        switch self {
-        case .english: return "English"
-        case .spanish: return "Spanish"
-        case .french: return "French"
-        case .german: return "German"
-        case .italian: return "Italian"
-        case .portuguese: return "Portuguese"
-        case .polish: return "Polish"
-        case .czech: return "Czech"
-        case .catalan: return "Catalan"
-        case .arabic: return "Arabic"
-        case .chinese: return "Chinese"
-        case .japanese: return "Japanese"
-        case .ukrainian: return "Ukrainian"
+    var englishName: String { name(in: .english) }
+
+    /// Returns this language's name translated into the given language.
+    /// e.g. `SupportedLanguage.spanish.name(in: .english)` → "Spanish"
+    ///      `SupportedLanguage.spanish.name(in: .polish)` → "Hiszpański"
+    func name(in language: SupportedLanguage) -> String {
+        switch language {
+        case .english:
+            switch self {
+            case .english:    return "English"
+            case .spanish:    return "Spanish"
+            case .french:     return "French"
+            case .german:     return "German"
+            case .italian:    return "Italian"
+            case .portuguese: return "Portuguese"
+            case .polish:     return "Polish"
+            case .czech:      return "Czech"
+            case .catalan:    return "Catalan"
+            case .arabic:     return "Arabic"
+            case .chinese:    return "Chinese"
+            case .japanese:   return "Japanese"
+            case .ukrainian:  return "Ukrainian"
+            }
+        case .spanish:
+            switch self {
+            case .english:    return "Inglés"
+            case .spanish:    return "Español"
+            case .french:     return "Francés"
+            case .german:     return "Alemán"
+            case .italian:    return "Italiano"
+            case .portuguese: return "Portugués"
+            case .polish:     return "Polaco"
+            case .czech:      return "Checo"
+            case .catalan:    return "Catalán"
+            case .arabic:     return "Árabe"
+            case .chinese:    return "Chino"
+            case .japanese:   return "Japonés"
+            case .ukrainian:  return "Ucraniano"
+            }
+        case .french:
+            switch self {
+            case .english:    return "Anglais"
+            case .spanish:    return "Espagnol"
+            case .french:     return "Français"
+            case .german:     return "Allemand"
+            case .italian:    return "Italien"
+            case .portuguese: return "Portugais"
+            case .polish:     return "Polonais"
+            case .czech:      return "Tchèque"
+            case .catalan:    return "Catalan"
+            case .arabic:     return "Arabe"
+            case .chinese:    return "Chinois"
+            case .japanese:   return "Japonais"
+            case .ukrainian:  return "Ukrainien"
+            }
+        case .german:
+            switch self {
+            case .english:    return "Englisch"
+            case .spanish:    return "Spanisch"
+            case .french:     return "Französisch"
+            case .german:     return "Deutsch"
+            case .italian:    return "Italienisch"
+            case .portuguese: return "Portugiesisch"
+            case .polish:     return "Polnisch"
+            case .czech:      return "Tschechisch"
+            case .catalan:    return "Katalanisch"
+            case .arabic:     return "Arabisch"
+            case .chinese:    return "Chinesisch"
+            case .japanese:   return "Japanisch"
+            case .ukrainian:  return "Ukrainisch"
+            }
+        case .polish:
+            switch self {
+            case .english:    return "Angielski"
+            case .spanish:    return "Hiszpański"
+            case .french:     return "Francuski"
+            case .german:     return "Niemiecki"
+            case .italian:    return "Włoski"
+            case .portuguese: return "Portugalski"
+            case .polish:     return "Polski"
+            case .czech:      return "Czeski"
+            case .catalan:    return "Kataloński"
+            case .arabic:     return "Arabski"
+            case .chinese:    return "Chiński"
+            case .japanese:   return "Japoński"
+            case .ukrainian:  return "Ukraiński"
+            }
+        case .arabic:
+            switch self {
+            case .english:    return "الإنجليزية"
+            case .spanish:    return "الإسبانية"
+            case .french:     return "الفرنسية"
+            case .german:     return "الألمانية"
+            case .italian:    return "الإيطالية"
+            case .portuguese: return "البرتغالية"
+            case .polish:     return "البولندية"
+            case .czech:      return "التشيكية"
+            case .catalan:    return "الكتالونية"
+            case .arabic:     return "العربية"
+            case .chinese:    return "الصينية"
+            case .japanese:   return "اليابانية"
+            case .ukrainian:  return "الأوكرانية"
+            }
+        case .chinese:
+            switch self {
+            case .english:    return "英语"
+            case .spanish:    return "西班牙语"
+            case .french:     return "法语"
+            case .german:     return "德语"
+            case .italian:    return "意大利语"
+            case .portuguese: return "葡萄牙语"
+            case .polish:     return "波兰语"
+            case .czech:      return "捷克语"
+            case .catalan:    return "加泰罗尼亚语"
+            case .arabic:     return "阿拉伯语"
+            case .chinese:    return "中文"
+            case .japanese:   return "日语"
+            case .ukrainian:  return "乌克兰语"
+            }
+        case .japanese:
+            switch self {
+            case .english:    return "英語"
+            case .spanish:    return "スペイン語"
+            case .french:     return "フランス語"
+            case .german:     return "ドイツ語"
+            case .italian:    return "イタリア語"
+            case .portuguese: return "ポルトガル語"
+            case .polish:     return "ポーランド語"
+            case .czech:      return "チェコ語"
+            case .catalan:    return "カタルーニャ語"
+            case .arabic:     return "アラビア語"
+            case .chinese:    return "中国語"
+            case .japanese:   return "日本語"
+            case .ukrainian:  return "ウクライナ語"
+            }
+        case .ukrainian:
+            switch self {
+            case .english:    return "Англійська"
+            case .spanish:    return "Іспанська"
+            case .french:     return "Французька"
+            case .german:     return "Німецька"
+            case .italian:    return "Італійська"
+            case .portuguese: return "Португальська"
+            case .polish:     return "Польська"
+            case .czech:      return "Чеська"
+            case .catalan:    return "Каталонська"
+            case .arabic:     return "Арабська"
+            case .chinese:    return "Китайська"
+            case .japanese:   return "Японська"
+            case .ukrainian:  return "Українська"
+            }
+        case .italian:
+            switch self {
+            case .english:    return "Inglese"
+            case .spanish:    return "Spagnolo"
+            case .french:     return "Francese"
+            case .german:     return "Tedesco"
+            case .italian:    return "Italiano"
+            case .portuguese: return "Portoghese"
+            case .polish:     return "Polacco"
+            case .czech:      return "Ceco"
+            case .catalan:    return "Catalano"
+            case .arabic:     return "Arabo"
+            case .chinese:    return "Cinese"
+            case .japanese:   return "Giapponese"
+            case .ukrainian:  return "Ucraino"
+            }
+        case .portuguese:
+            switch self {
+            case .english:    return "Inglês"
+            case .spanish:    return "Espanhol"
+            case .french:     return "Francês"
+            case .german:     return "Alemão"
+            case .italian:    return "Italiano"
+            case .portuguese: return "Português"
+            case .polish:     return "Polonês"
+            case .czech:      return "Tcheco"
+            case .catalan:    return "Catalão"
+            case .arabic:     return "Árabe"
+            case .chinese:    return "Chinês"
+            case .japanese:   return "Japonês"
+            case .ukrainian:  return "Ucraniano"
+            }
+        case .czech:
+            switch self {
+            case .english:    return "Angličtina"
+            case .spanish:    return "Španělština"
+            case .french:     return "Francouzština"
+            case .german:     return "Němčina"
+            case .italian:    return "Italština"
+            case .portuguese: return "Portugalština"
+            case .polish:     return "Polština"
+            case .czech:      return "Čeština"
+            case .catalan:    return "Katalánština"
+            case .arabic:     return "Arabština"
+            case .chinese:    return "Čínština"
+            case .japanese:   return "Japonština"
+            case .ukrainian:  return "Ukrajinština"
+            }
+        case .catalan:
+            switch self {
+            case .english:    return "Anglès"
+            case .spanish:    return "Espanyol"
+            case .french:     return "Francès"
+            case .german:     return "Alemany"
+            case .italian:    return "Italià"
+            case .portuguese: return "Portuguès"
+            case .polish:     return "Polonès"
+            case .czech:      return "Txec"
+            case .catalan:    return "Català"
+            case .arabic:     return "Àrab"
+            case .chinese:    return "Xinès"
+            case .japanese:   return "Japonès"
+            case .ukrainian:  return "Ucraïnès"
+            }
         }
     }
 

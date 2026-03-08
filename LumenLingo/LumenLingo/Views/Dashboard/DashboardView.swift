@@ -30,8 +30,10 @@ struct DashboardView: View {
 
     private var currentLanguagePair: String {
         guard let pref = languagePrefs.first else { return "English → Spanish" }
-        let src = SupportedLanguage(rawValue: pref.sourceLanguage)?.displayName ?? pref.sourceLanguage.capitalized
-        let tgt = SupportedLanguage(rawValue: pref.targetLanguage)?.displayName ?? pref.targetLanguage.capitalized
+        let srcLang = SupportedLanguage(rawValue: pref.sourceLanguage)
+        let tgtLang = SupportedLanguage(rawValue: pref.targetLanguage)
+        let src = srcLang?.displayName ?? pref.sourceLanguage.capitalized
+        let tgt = srcLang.flatMap { s in tgtLang.map { $0.name(in: s) } } ?? pref.targetLanguage.capitalized
         return "\(src) → \(tgt)"
     }
 

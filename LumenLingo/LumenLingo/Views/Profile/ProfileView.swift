@@ -431,11 +431,13 @@ struct ProfileView: View {
                     .foregroundStyle(.cyan)
 
                 let langPref = languagePrefs.first
+                let srcLang = langPref?.sourceLanguageEnum ?? .english
+                let tgtLang = langPref?.targetLanguageEnum ?? .spanish
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Language Pair")
                         .font(.system(size: 15, weight: .medium))
                         .foregroundStyle(isDark ? .white : .primary)
-                    Text("\(langPref?.sourceLanguageEnum.displayName ?? "English") → \(langPref?.targetLanguageEnum.displayName ?? "Spanish")")
+                    Text("\(srcLang.displayName) → \(tgtLang.name(in: srcLang))")
                         .font(.system(size: 12))
                         .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
                 }
