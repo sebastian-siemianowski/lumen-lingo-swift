@@ -152,46 +152,22 @@ struct SchemeCardView: View {
         .padding(.vertical, 10)
         .frame(maxWidth: .infinity)
         .background {
-            ZStack {
-                // Glass material base
-                Rectangle()
-                    .fill(.ultraThinMaterial)
-
-                // Purple tint overlay
-                Rectangle()
-                    .fill(
-                        LinearGradient(
-                            colors: [
-                                Color.purple.opacity(isSelected ? (isDark ? 0.12 : 0.06) : (isDark ? 0.04 : 0.02)),
-                                Color.indigo.opacity(isSelected ? (isDark ? 0.08 : 0.04) : (isDark ? 0.02 : 0.01))
-                            ],
-                            startPoint: .top,
-                            endPoint: .bottom
-                        )
-                    )
-
-                // Inner shadow (top edge inset)
-                VStack {
+            // Solid fill replacing ultraThinMaterial for performance
+            Rectangle()
+                .fill(
                     LinearGradient(
-                        colors: [.black.opacity(isDark ? 0.10 : 0.04), .clear],
+                        colors: [
+                            isDark
+                                ? Color(red: 30/255, green: 25/255, blue: 50/255).opacity(isSelected ? 0.95 : 0.85)
+                                : Color(red: 245/255, green: 242/255, blue: 250/255).opacity(isSelected ? 0.95 : 0.90),
+                            isDark
+                                ? Color(red: 25/255, green: 20/255, blue: 45/255).opacity(isSelected ? 0.90 : 0.80)
+                                : Color(red: 240/255, green: 238/255, blue: 248/255).opacity(isSelected ? 0.90 : 0.85)
+                        ],
                         startPoint: .top,
                         endPoint: .bottom
                     )
-                    .frame(height: 6)
-                    Spacer()
-                }
-
-                // Bottom inner glow
-                VStack {
-                    Spacer()
-                    LinearGradient(
-                        colors: [.clear, .white.opacity(isDark ? 0.04 : 0.08)],
-                        startPoint: .top,
-                        endPoint: .bottom
-                    )
-                    .frame(height: 8)
-                }
-            }
+                )
         }
     }
 }

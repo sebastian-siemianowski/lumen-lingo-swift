@@ -22,6 +22,7 @@ struct DashboardView: View {
     @State private var isHeaderCollapsed = false
     @State private var showLanguageSheet = false
     @State private var fogBreath: CGFloat = 0
+    @State private var adventureIconPulse: CGFloat = 0
 
     private var profile: UserProfile? { profiles.first }
     private var user: AppUser { .mock }
@@ -279,10 +280,25 @@ struct DashboardView: View {
 
     private var gamesSection: some View {
         VStack(spacing: 16) {
-            // Section header with compass icon
-            HStack(spacing: 10) {
+            // Section header with premium icon
+            HStack(spacing: 14) {
                 ZStack {
-                    RoundedRectangle(cornerRadius: 12)
+                    // Pulsing glow background orbs
+                    Circle()
+                        .fill(Color(hex: "#d946ef").opacity(0.15))
+                        .frame(width: 56, height: 56)
+                        .scaleEffect(1.0 + adventureIconPulse * 0.15)
+                        .blur(radius: 8)
+
+                    Circle()
+                        .fill(Color(hex: "#8b5cf6").opacity(0.1))
+                        .frame(width: 48, height: 48)
+                        .scaleEffect(1.0 + adventureIconPulse * 0.1)
+                        .blur(radius: 6)
+                        .offset(x: 4, y: 4)
+
+                    // Icon container
+                    RoundedRectangle(cornerRadius: 14)
                         .fill(
                             LinearGradient(
                                 colors: [
@@ -294,15 +310,35 @@ struct DashboardView: View {
                                 endPoint: .bottomTrailing
                             )
                         )
-                        .frame(width: 36, height: 36)
-                        .shadow(color: Color(hex: "#d946ef").opacity(0.3), radius: 8)
+                        .frame(width: 48, height: 48)
+                        .overlay(
+                            // Inner glow highlight
+                            RoundedRectangle(cornerRadius: 14)
+                                .fill(
+                                    LinearGradient(
+                                        colors: [.white.opacity(0.25), .clear],
+                                        startPoint: .top,
+                                        endPoint: .center
+                                    )
+                                )
+                        )
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 14)
+                                .strokeBorder(.white.opacity(0.2), lineWidth: 1)
+                        )
+                        .shadow(color: Color(hex: "#d946ef").opacity(0.4 + adventureIconPulse * 0.2), radius: 12)
 
+                    // Icon symbol
                     Image(systemName: "wand.and.stars")
-                        .font(.system(size: 18, weight: .medium))
+                        .font(.system(size: 22, weight: .medium))
                         .foregroundStyle(.white)
-                        .symbolEffect(.variableColor.iterative, options: .repeating.speed(0.4))
+                        .shadow(color: .white.opacity(0.3), radius: 2)
                 }
-                .shimmer(isActive: true, duration: 3.5)
+                .onAppear {
+                    withAnimation(.easeInOut(duration: 2.5).repeatForever(autoreverses: true)) {
+                        adventureIconPulse = 1
+                    }
+                }
 
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Choose Your Adventure")

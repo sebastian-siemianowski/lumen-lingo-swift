@@ -174,163 +174,93 @@ struct CategoriesView: View {
     }
 
     private func categoryCard(_ item: CategoryDisplayItem) -> some View {
-        Button {
+        let colors = categoryGradient(item)
+
+        return Button {
             HapticsService.light()
             navigateToGame(categoryId: item.id)
         } label: {
-            ZStack {
-                // Glass curvature highlight — top reflection band (React: h-[22%] bg-white/10)
-                VStack {
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(
-                            LinearGradient(
-                                colors: [.white.opacity(0.12), .white.opacity(0.04), .clear],
-                                startPoint: .top,
-                                endPoint: .center
-                            )
-                        )
-                        .frame(height: 60)
+            VStack(alignment: .leading, spacing: 10) {
+                // Top row: icon + favorite
+                HStack(alignment: .top) {
+                    LiquidGlassIconContainer(
+                        systemName: categoryIcon(item),
+                        gradient: colors,
+                        size: isGridView ? 44 : 52
+                    )
+
                     Spacer()
-                }
-                .clipShape(RoundedRectangle(cornerRadius: 20))
 
-                // Grounding shadow — bottom fade (React: h-[18%] bg-black/5)
-                VStack {
-                    Spacer()
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(
-                            LinearGradient(
-                                colors: [.clear, .black.opacity(0.05)],
-                                startPoint: .top,
-                                endPoint: .bottom
-                            )
-                        )
-                        .frame(height: 50)
-                }
-                .clipShape(RoundedRectangle(cornerRadius: 20))
-
-                // Card content
-                VStack(alignment: .leading, spacing: 10) {
-                    // Top row: icon + favorite
-                    HStack(alignment: .top) {
-                        // Icon with shimmer sweep
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 14)
-                                .fill(
-                                    LinearGradient(
-                                        colors: categoryGradient(item),
-                                        startPoint: .topLeading,
-                                        endPoint: .bottomTrailing
-                                    )
-                                )
-                                .frame(width: isGridView ? 48 : 56, height: isGridView ? 48 : 56)
-                                .shadow(color: categoryGradient(item).first?.opacity(0.35) ?? .clear, radius: 10)
-                                .overlay(
-                                    // Inner glow highlight
-                                    RoundedRectangle(cornerRadius: 14)
-                                        .fill(
-                                            LinearGradient(
-                                                colors: [.white.opacity(0.25), .clear],
-                                                startPoint: .top,
-                                                endPoint: .center
-                                            )
-                                        )
-                                )
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 14)
-                                        .strokeBorder(.white.opacity(0.2), lineWidth: 1)
-                                )
-
-                            Image(systemName: categoryIcon(item))
-                                .font(.system(size: isGridView ? 20 : 24))
-                                .foregroundStyle(.white)
-                                .shadow(color: .white.opacity(0.3), radius: 2)
-                        }
-                        .shimmer(isActive: true, duration: 4.0)
-
-                        Spacer()
-
-                        // Favorite button
-                        Button {
-                            HapticsService.light()
-                            toggleFavorite(item.id)
-                        } label: {
-                            Image(systemName: isFavorite(item.id) ? "heart.fill" : "heart")
-                                .font(.body)
-                                .foregroundStyle(isFavorite(item.id) ? .pink : .white.opacity(0.4))
-                                .shadow(color: isFavorite(item.id) ? .pink.opacity(0.4) : .clear, radius: 6)
-                        }
-                        .buttonStyle(.plain)
+                    // Favorite button
+                    Button {
+                        HapticsService.light()
+                        toggleFavorite(item.id)
+                    } label: {
+                        Image(systemName: isFavorite(item.id) ? "heart.fill" : "heart")
+                            .font(.system(size: 16, weight: .medium))
+                            .foregroundStyle(isFavorite(item.id) ? .pink : .white.opacity(0.35))
+                            .shadow(color: isFavorite(item.id) ? .pink.opacity(0.4) : .clear, radius: 6)
                     }
+                    .buttonStyle(.plain)
+                }
 
-                    // Name
-                    Text(item.name)
-                        .font(isGridView ? .subheadline.bold() : .headline.bold())
-                        .foregroundStyle(.white)
-                        .lineLimit(2)
+                // Category name
+                Text(item.name)
+                    .font(isGridView ? .subheadline.bold() : .headline.bold())
+                    .foregroundStyle(.white)
+                    .lineLimit(isGridView ? 1 : 2)
 
-                    // Description — opacity 0.7 (was 0.5)
-                    Text(item.description)
-                        .font(isGridView ? .caption : .subheadline)
-                        .foregroundStyle(.white.opacity(0.7))
-                        .lineLimit(isGridView ? 2 : 3)
+                // Description
+                Text(item.description)
+                    .font(isGridView ? .caption : .subheadline)
+                    .foregroundStyle(.white.opacity(0.6))
+                    .lineLimit(isGridView ? 2 : 3)
+                    .frame(maxHeight: .infinity, alignment: .top)
 
-                    // Difficulty badge
-                    difficultyBadge(item.difficulty)
+                // Difficulty badge
+                difficultyBadge(item.difficulty)
 
-                    // Premium glass progress bar (AnimatedProgressBar)
-                    VStack(alignment: .leading, spacing: 4) {
-                        AnimatedProgressBar(
-                            progress: item.progress.percentage,
-                            height: isGridView ? 5 : 6,
-                            gradient: progressGradient
-                        )
+                // Progress bar
+                VStack(alignment: .leading, spacing: 4) {
+                    LiquidProgressBar(
+                        progress: item.progress.percentage,
+                        height: isGridView ? 5 : 6,
+                        gradient: progressGradient
+                    )
 
-                        HStack {
-                            Text("\(item.progress.mastered)/\(item.progress.total) mastered")
-                                .font(.caption2)
-                                .foregroundStyle(.white.opacity(0.5))
-                            Spacer()
+                    HStack {
+                        Text("\(item.progress.mastered)/\(item.progress.total)")
+                            .font(.caption2)
+                            .foregroundStyle(.white.opacity(0.4))
+                        Spacer()
+                        if item.progress.percentage >= 100.0 {
+                            HStack(spacing: 3) {
+                                Image(systemName: "checkmark.seal.fill")
+                                    .font(.system(size: 9))
+                                Text("Done")
+                                    .font(.caption2.bold())
+                            }
+                            .foregroundStyle(.green)
+                        } else {
                             Text("\(Int(item.progress.percentage))%")
                                 .font(.caption2.bold())
-                                .foregroundStyle(.white.opacity(0.7))
+                                .foregroundStyle(.white.opacity(0.65))
                         }
-                    }
-
-                    // Completed badge
-                    if item.progress.percentage >= 100.0 {
-                        HStack(spacing: 4) {
-                            Image(systemName: "checkmark.circle.fill")
-                                .font(.caption2)
-                            Text("Completed")
-                                .font(.caption2.bold())
-                        }
-                        .foregroundStyle(.green)
-                        .padding(.horizontal, 8)
-                        .padding(.vertical, 3)
-                        .background(
-                            Capsule()
-                                .fill(.green.opacity(0.15))
-                                .overlay(
-                                    Capsule()
-                                        .strokeBorder(.green.opacity(0.3), lineWidth: 1)
-                                )
-                        )
                     }
                 }
-                .padding(isGridView ? 14 : 16)
             }
+            .padding(isGridView ? 14 : 16)
+            .frame(minHeight: isGridView ? 220 : 0)
             .background(
-                GlassCardBackground(
-                    cornerRadius: 20,
-                    borderColor: categoryGradient(item).first ?? .white,
-                    borderOpacity: 0.12,
-                    tintColor: categoryGradient(item).first ?? .white
+                LiquidGlassCardBackground(
+                    cornerRadius: 22,
+                    accentColors: colors,
+                    borderOpacity: 0.15
                 )
             )
-            .clipShape(RoundedRectangle(cornerRadius: 20))
+            .clipShape(RoundedRectangle(cornerRadius: 22))
         }
-        .buttonStyle(GameCardButtonStyle())
+        .buttonStyle(LiquidCardButtonStyle(accentColor: colors.first ?? .white))
     }
 
     private func difficultyBadge(_ difficulty: Difficulty) -> some View {

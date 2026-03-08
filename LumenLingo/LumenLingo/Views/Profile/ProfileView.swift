@@ -98,40 +98,23 @@ struct ProfileView: View {
     private var profileHeader: some View {
         GlassPanelWrapper {
             VStack(spacing: 16) {
-                // Avatar with breathing glow + identity presence halo
+                // Avatar with glow rings
                 ZStack {
-                    // Identity presence halo (outermost)
-                    Circle()
-                        .fill(
-                            RadialGradient(
-                                colors: [
-                                    Color(hex: "#667eea").opacity(0.12),
-                                    Color(hex: "#764ba2").opacity(0.06),
-                                    .clear
-                                ],
-                                center: .center,
-                                startRadius: 40,
-                                endRadius: 80
-                            )
-                        )
-                        .frame(width: 140, height: 140)
-                        .blur(radius: 8)
-
-                    // Outer glow rings
+                    // Outer glow rings (combined halo + ring into one layer)
                     Circle()
                         .fill(
                             RadialGradient(
                                 colors: [
                                     Color(hex: "#667eea").opacity(0.3),
-                                    Color(hex: "#764ba2").opacity(0.15),
+                                    Color(hex: "#764ba2").opacity(0.12),
                                     .clear
                                 ],
                                 center: .center,
-                                startRadius: 35,
-                                endRadius: 65
+                                startRadius: 30,
+                                endRadius: 70
                             )
                         )
-                        .frame(width: 110, height: 110)
+                        .frame(width: 120, height: 120)
 
                     Circle()
                         .fill(
@@ -148,6 +131,7 @@ struct ProfileView: View {
                         .font(.system(size: 32, weight: .medium))
                         .foregroundStyle(.white)
                 }
+                .drawingGroup()
                 .pulsingGlow(color: Color(hex: "#764ba2"), radius: 8, speed: 3.0)
 
                 // Name & level

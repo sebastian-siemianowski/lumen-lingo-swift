@@ -289,17 +289,10 @@ struct PulsingGlowModifier: ViewModifier {
     var radius: CGFloat = 12
     var speed: Double = 2.0
 
-    @State private var glowPhase: CGFloat = 0
-
     func body(content: Content) -> some View {
         content
-            .shadow(color: color.opacity(0.4 + 0.2 * Foundation.sin(Double(glowPhase))), radius: radius)
-            .shadow(color: color.opacity(0.2 + 0.1 * Foundation.sin(Double(glowPhase) * 1.3)), radius: radius * 1.5)
-            .onAppear {
-                withAnimation(.easeInOut(duration: speed).repeatForever(autoreverses: true)) {
-                    glowPhase = .pi * 2
-                }
-            }
+            .shadow(color: color.opacity(0.5), radius: radius)
+            .shadow(color: color.opacity(0.25), radius: radius * 1.5)
     }
 }
 
@@ -377,50 +370,24 @@ struct GlassPanelWrapper<Content: View>: View {
     var body: some View {
         ZStack {
             if isDark {
-                // LAYER 1: Outermost foggy aura
-                RoundedRectangle(cornerRadius: cornerRadius + 20)
-                    .fill(
-                        .radialGradient(
-                            colors: [Color(red: 70/255, green: 200/255, blue: 220/255).opacity(0.18), .clear],
-                            center: .top,
-                            startRadius: 0,
-                            endRadius: 200
-                        )
-                    )
-                    .blur(radius: 16)
-                    .padding(-20)
-
-                // LAYER 2: Mid foggy glow (tint-aware)
+                // Combined foggy aura (consolidated from 3 separate blur layers)
                 RoundedRectangle(cornerRadius: cornerRadius + 14)
                     .fill(
                         .radialGradient(
-                            colors: [resolvedTint.opacity(0.28), .clear],
-                            center: .top,
-                            startRadius: 0,
-                            endRadius: 180
-                        )
-                    )
-                    .blur(radius: 12)
-                    .padding(-14)
-
-                // LAYER 3: Inner luminous edge glow
-                RoundedRectangle(cornerRadius: cornerRadius + 8)
-                    .fill(
-                        .radialGradient(
                             colors: [
-                                Color(red: 90/255, green: 190/255, blue: 230/255).opacity(0.30),
-                                Color(red: 140/255, green: 110/255, blue: 210/255).opacity(0.18),
+                                resolvedTint.opacity(0.28),
+                                Color(red: 70/255, green: 200/255, blue: 220/255).opacity(0.14),
                                 .clear
                             ],
                             center: .top,
                             startRadius: 0,
-                            endRadius: 160
+                            endRadius: 190
                         )
                     )
-                    .blur(radius: 10)
-                    .padding(-6)
+                    .blur(radius: 14)
+                    .padding(-16)
 
-                // LAYER 4: Crisp edge highlight (border glow)
+                // Crisp edge highlight (border glow)
                 RoundedRectangle(cornerRadius: cornerRadius + 1)
                     .strokeBorder(
                         LinearGradient(
@@ -455,40 +422,22 @@ struct GlassPanelWrapper<Content: View>: View {
             }
 
             if isDark {
-                // Subtle color tint (tint-aware)
+                // Combined color tint + inner shadow (consolidated)
                 RoundedRectangle(cornerRadius: cornerRadius)
                     .fill(
                         LinearGradient(
                             colors: [
                                 resolvedTint.opacity(0.10),
+                                .clear,
                                 resolvedTint.opacity(0.06)
                             ],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )
                     )
-
-                // Inner top luminance
-                VStack {
-                    RoundedRectangle(cornerRadius: cornerRadius)
-                        .fill(
-                            .radialGradient(
-                                colors: [
-                                    Color(red: 80/255, green: 170/255, blue: 210/255).opacity(0.05),
-                                    .clear
-                                ],
-                                center: .top,
-                                startRadius: 0,
-                                endRadius: 120
-                            )
-                        )
-                        .frame(height: 100)
-                    Spacer()
-                }
-                .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
             }
 
-            // Inner shadow simulation
+            // Inner highlight
             RoundedRectangle(cornerRadius: cornerRadius)
                 .fill(
                     LinearGradient(
@@ -537,49 +486,23 @@ struct GlassPanelWrapper<Content: View>: View {
 
     @ViewBuilder
     private var winterMistOverlay: some View {
-        // Outer cold aura
+        // Simplified cold aura (consolidated from 6 shapes to 2)
         ZStack {
-            // Top frost
+            // Top-center frost
             Ellipse()
-                .fill(Color(red: 96/255, green: 165/255, blue: 250/255).opacity(0.16))
-                .frame(width: 300, height: 120)
+                .fill(Color(red: 86/255, green: 165/255, blue: 248/255).opacity(0.14))
+                .frame(width: 300, height: 140)
                 .blur(radius: 16)
-                .offset(y: -60)
-
-            // Left cold edge
-            Ellipse()
-                .fill(Color(red: 59/255, green: 130/255, blue: 246/255).opacity(0.12))
-                .frame(width: 100, height: 200)
-                .blur(radius: 14)
-                .offset(x: -120)
-
-            // Right cold edge
-            Ellipse()
-                .fill(Color(red: 56/255, green: 189/255, blue: 248/255).opacity(0.12))
-                .frame(width: 100, height: 200)
-                .blur(radius: 14)
-                .offset(x: 120)
+                .offset(y: -50)
 
             // Bottom blue haze
             Ellipse()
-                .fill(Color(red: 56/255, green: 189/255, blue: 248/255).opacity(0.10))
-                .frame(width: 250, height: 80)
+                .fill(Color(red: 56/255, green: 170/255, blue: 248/255).opacity(0.10))
+                .frame(width: 260, height: 100)
                 .blur(radius: 14)
-                .offset(y: 80)
-
-            // Corner crystalline tints
-            Circle()
-                .fill(Color(red: 147/255, green: 197/255, blue: 253/255).opacity(0.10))
-                .frame(width: 100)
-                .blur(radius: 12)
-                .offset(x: -100, y: -60)
-
-            Circle()
-                .fill(Color(red: 96/255, green: 165/255, blue: 250/255).opacity(0.10))
-                .frame(width: 110)
-                .blur(radius: 12)
-                .offset(x: 100, y: 60)
+                .offset(y: 70)
         }
+        .drawingGroup()
         .allowsHitTesting(false)
     }
 }
@@ -597,39 +520,20 @@ struct PremiumToggle: View {
     let onToggle: () -> Void
 
     private var isDark: Bool { colorScheme == .dark }
-    @State private var breathePhase: CGFloat = 0
-    @State private var rippleScale: CGFloat = 1
-    @State private var rippleOpacity: CGFloat = 0
 
     var body: some View {
         Button {
-            // Ripple pulse on tap
-            rippleScale = 0.8
-            rippleOpacity = 0.5
-            withAnimation(.easeOut(duration: 0.4)) {
-                rippleScale = 1.6
-                rippleOpacity = 0
-            }
             onToggle()
         } label: {
             ZStack {
-                // Breathing glow halo (layer 1)
+                // Static glow halo (layer 1)
                 if isOn {
                     Capsule()
-                        .fill(enabledColor.opacity(
-                            (isDark ? 0.30 : 0.18) + 0.08 * Foundation.sin(Double(breathePhase))
-                        ))
-                        .blur(radius: 8 + 2 * Foundation.sin(Double(breathePhase) * 1.3))
+                        .fill(enabledColor.opacity(isDark ? 0.34 : 0.22))
                         .padding(-4)
                 }
 
-                // Ripple effect (layer 2)
-                Capsule()
-                    .fill(enabledColor.opacity(rippleOpacity))
-                    .scaleEffect(rippleScale)
-                    .blur(radius: 4)
-
-                // Track gradient (layer 3)
+                // Track gradient (layer 2)
                 Capsule()
                     .fill(
                         isOn
@@ -653,7 +557,7 @@ struct PremiumToggle: View {
                     )
                     .frame(width: 52, height: 30)
 
-                // Track inner highlight (layer 4)
+                // Track inner highlight (layer 3)
                 if isOn {
                     Capsule()
                         .fill(
@@ -666,7 +570,7 @@ struct PremiumToggle: View {
                         .frame(width: 52, height: 30)
                 }
 
-                // Thumb with shadow stack (layer 5)
+                // Thumb with shadow stack (layer 4)
                 Circle()
                     .fill(.white)
                     .shadow(color: enabledColor.opacity(isOn ? 0.3 : 0), radius: 6, y: 0)
@@ -687,11 +591,6 @@ struct PremiumToggle: View {
             .frame(width: 52, height: 30)
         }
         .buttonStyle(.plain)
-        .onAppear {
-            withAnimation(.easeInOut(duration: 2.0).repeatForever(autoreverses: true)) {
-                breathePhase = .pi * 2
-            }
-        }
     }
 }
 
@@ -727,7 +626,6 @@ private struct LegacyGlassSlider: View {
     var accentColor: Color = .orange
 
     private var isDark: Bool { colorScheme == .dark }
-    @State private var breathePhase: CGFloat = 0
     @State private var isDragging = false
 
     private var fraction: Double {
@@ -799,14 +697,12 @@ private struct LegacyGlassSlider: View {
                     )
                     .shadow(color: accentColor.opacity(isDark ? 0.4 : 0.25), radius: 8, y: 0)
 
-                // Bloom halo behind thumb (breathing)
+                // Static bloom halo behind thumb
                 Circle()
                     .fill(
                         RadialGradient(
                             colors: [
-                                accentColor.opacity(
-                                    (isDark ? 0.25 : 0.15) + 0.08 * Foundation.sin(Double(breathePhase))
-                                ),
+                                accentColor.opacity(isDark ? 0.29 : 0.19),
                                 accentColor.opacity(0.05),
                                 .clear
                             ],
@@ -816,7 +712,6 @@ private struct LegacyGlassSlider: View {
                         )
                     )
                     .frame(width: isDragging ? 48 : 36, height: isDragging ? 48 : 36)
-                    .blur(radius: 4)
                     .offset(x: thumbX - (isDragging ? 24 : 18))
                     .animation(.spring(response: 0.3, dampingFraction: 0.7), value: isDragging)
 
@@ -883,10 +778,5 @@ private struct LegacyGlassSlider: View {
             }
         }
         .frame(height: 36)
-        .onAppear {
-            withAnimation(.easeInOut(duration: 2.5).repeatForever(autoreverses: true)) {
-                breathePhase = .pi * 2
-            }
-        }
     }
 }

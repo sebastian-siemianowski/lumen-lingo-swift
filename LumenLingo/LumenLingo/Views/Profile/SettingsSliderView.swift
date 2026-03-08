@@ -74,8 +74,6 @@ struct SettingsSliderView: View {
 
     // MARK: - Preset Button
 
-    @State private var presetGlowPhase: CGFloat = 0
-
     private func presetButton(_ preset: (value: Double, label: String, iconName: String)) -> some View {
         let isActive = abs(value - preset.value) < step * 0.5
 
@@ -103,10 +101,10 @@ struct SettingsSliderView: View {
             .frame(maxWidth: .infinity)
             .background {
                 ZStack {
-                    // Pulsing radiant aura (active only, dark mode)
+                    // Static radiant aura (active only, dark mode)
                     if isActive && isDark {
                         RoundedRectangle(cornerRadius: 10, style: .continuous)
-                            .fill(accentColor.opacity(0.15 + 0.08 * Foundation.sin(Double(presetGlowPhase))))
+                            .fill(accentColor.opacity(0.19))
                             .blur(radius: 6)
                             .padding(-4)
                     }
@@ -154,11 +152,6 @@ struct SettingsSliderView: View {
         }
         .buttonStyle(.plain)
         .disabled(disabled)
-        .onAppear {
-            withAnimation(.easeInOut(duration: 2.0).repeatForever(autoreverses: true)) {
-                presetGlowPhase = .pi * 2
-            }
-        }
     }
 }
 

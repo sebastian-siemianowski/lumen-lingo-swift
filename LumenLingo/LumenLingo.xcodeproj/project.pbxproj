@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		013C7DB3471169827FFF58CB /* EdgeOfAndromedaPreset.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9DD06C49CE0742785FB126D2 /* EdgeOfAndromedaPreset.metal */; };
 		01500500A4FD056AB4F66B62 /* SoundSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AC10073EF860BE9CC25D85 /* SoundSettingsView.swift */; };
+		03403985A831D6F970331DF5 /* LiquidGlassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A4CC223AB0F0CBD300360 /* LiquidGlassCard.swift */; };
 		05583C201BA78CB88DD84E43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7498E6A6E32D2EC5499420EA /* Assets.xcassets */; };
 		078F0B02324FE9D3A556A23A /* SolarAuroraPreset.metal in Sources */ = {isa = PBXBuildFile; fileRef = 5C2A55F4B66ED7EDC12D625C /* SolarAuroraPreset.metal */; };
 		07B712391A300AD45EF1E676 /* ProgressServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72117EE3770443D8D6B3895E /* ProgressServiceTests.swift */; };
@@ -146,6 +147,7 @@
 		AA8853A00938061AC818C42D /* LayoutBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutBackgroundView.swift; sourceTree = "<group>"; };
 		ACB2AC46688AFD50BFAE024B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		B3982631873ABBAD71CBA185 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		B70A4CC223AB0F0CBD300360 /* LiquidGlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassCard.swift; sourceTree = "<group>"; };
 		C71ECFF5B79F4F2875BBAB02 /* CosmicPostProcess.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CosmicPostProcess.metal; sourceTree = "<group>"; };
 		C7A63D5EEB0001AEFA02084A /* StarFieldGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarFieldGenerator.swift; sourceTree = "<group>"; };
 		C7EC466E954463C21BDA8D3C /* GlassDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassDivider.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				C7EC466E954463C21BDA8D3C /* GlassDivider.swift */,
+				B70A4CC223AB0F0CBD300360 /* LiquidGlassCard.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -551,6 +554,7 @@
 				EB3CBFD5BF6CCC0F3FE21A0C /* LagoonStars.metal in Sources */,
 				661A719FB70972A35AD6E977 /* LanguageSelectionView.swift in Sources */,
 				74435F6A6EC5F4E3D5C6EA1C /* LayoutBackgroundView.swift in Sources */,
+				03403985A831D6F970331DF5 /* LiquidGlassCard.swift in Sources */,
 				B77CAF0468C0B5BE9AE655B5 /* LumenLingoApp.swift in Sources */,
 				DF2BC01B8E34CB130AB3B7B6 /* MembershipView.swift in Sources */,
 				158A5B1BCC24775744979354 /* MetalCosmicRenderer.swift in Sources */,
