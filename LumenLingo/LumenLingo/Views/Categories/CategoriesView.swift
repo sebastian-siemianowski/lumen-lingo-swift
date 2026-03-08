@@ -127,16 +127,19 @@ struct CategoriesView: View {
         .onChange(of: isGridView) { _, _ in
             withAnimation { currentPage = 0 }
         }
-        .gesture(
-            DragGesture(minimumDistance: 50)
+        .simultaneousGesture(
+            DragGesture(minimumDistance: 40, coordinateSpace: .local)
                 .onEnded { value in
                     let horizontal = value.translation.width
-                    if horizontal < -50, currentPage < totalPages - 1 {
+                    let vertical = abs(value.translation.height)
+                    // Only paginate on predominantly horizontal swipes
+                    guard abs(horizontal) > vertical * 1.5 else { return }
+                    if horizontal < -40, currentPage < totalPages - 1 {
                         withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
                             currentPage += 1
                         }
                         HapticsService.light()
-                    } else if horizontal > 50, currentPage > 0 {
+                    } else if horizontal > 40, currentPage > 0 {
                         withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
                             currentPage -= 1
                         }
