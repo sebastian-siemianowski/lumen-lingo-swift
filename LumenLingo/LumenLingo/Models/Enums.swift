@@ -70,6 +70,27 @@ enum Difficulty: String, Codable, CaseIterable, Identifiable {
         case .advanced: return Color(hex: "#DC2626")     // red-600
         }
     }
+
+    /// Premium gradient colors for stunning difficulty capsule pills
+    var gradientColors: [Color] {
+        switch self {
+        case .beginner:
+            return [Color(hex: "#10b981"), Color(hex: "#06b6d4")]      // emerald → cyan
+        case .intermediate:
+            return [Color(hex: "#f59e0b"), Color(hex: "#f43f5e")]      // amber → rose
+        case .advanced:
+            return [Color(hex: "#a855f7"), Color(hex: "#ec4899")]      // purple → pink
+        }
+    }
+
+    /// Shadow accent color for the difficulty pill
+    var pillShadowColor: Color {
+        switch self {
+        case .beginner:    return Color(hex: "#10b981")
+        case .intermediate: return Color(hex: "#f59e0b")
+        case .advanced:    return Color(hex: "#a855f7")
+        }
+    }
 }
 
 // MARK: - Performance Mood (Grammar game)

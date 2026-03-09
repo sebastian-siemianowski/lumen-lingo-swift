@@ -506,31 +506,56 @@ struct CategoriesView: View {
     }
 
     private func difficultyBadge(_ difficulty: Difficulty) -> some View {
-        let pillColor = isDark ? difficulty.color : difficulty.lightModeColor
-        return HStack(spacing: 3) {
-            ForEach(0..<difficulty.starCount, id: \.self) { _ in
-                Image(systemName: "star.fill")
-                    .font(.system(size: 7))
-            }
+        let gradient = difficulty.gradientColors
+        return HStack(spacing: 4) {
+            // Difficulty icon
+            Image(systemName: difficulty.icon)
+                .font(.system(size: 9, weight: .bold))
+
             Text(difficulty.rawValue.capitalized)
-                .font(.system(size: 10, weight: .semibold, design: .rounded))
+                .font(.system(size: 10, weight: .bold, design: .rounded))
+                .lineLimit(1)
+                .fixedSize(horizontal: true, vertical: false)
+
+            // Star cluster
+            HStack(spacing: 2) {
+                ForEach(0..<difficulty.starCount, id: \.self) { _ in
+                    Image(systemName: "star.fill")
+                        .font(.system(size: 6))
+                }
+            }
         }
-        // Dark mode: colored text on translucent tinted pill
-        // Light mode: white text on solid opaque colored pill — maximum contrast on Caribbean gradient
-        .foregroundStyle(isDark ? pillColor : .white)
-        .padding(.horizontal, 8)
-        .padding(.vertical, 4)
+        .foregroundStyle(.white)
+        .fixedSize()
+        .padding(.horizontal, 12)
+        .padding(.vertical, 5)
         .background(
             Capsule()
-                .fill(isDark ? pillColor.opacity(0.12) : pillColor)
-                .overlay(
-                    Capsule().strokeBorder(
-                        isDark ? pillColor.opacity(0.15) : .white.opacity(0.30),
-                        lineWidth: 0.5
+                .fill(
+                    LinearGradient(
+                        colors: gradient,
+                        startPoint: .leading,
+                        endPoint: .trailing
                     )
                 )
+                .overlay(
+                    // Inner glow highlight — top-to-bottom white wash
+                    Capsule()
+                        .fill(
+                            LinearGradient(
+                                colors: [.white.opacity(0.30), .clear],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                )
+                .overlay(
+                    // Crisp border stroke
+                    Capsule()
+                        .strokeBorder(.white.opacity(0.25), lineWidth: 0.75)
+                )
         )
-        .shadow(color: isDark ? .clear : pillColor.opacity(0.35), radius: 4, x: 0, y: 2)
+        .shadow(color: difficulty.pillShadowColor.opacity(0.40), radius: 8, x: 0, y: 3)
     }
 
     // MARK: - Empty State

@@ -407,8 +407,16 @@ struct FlashCardsView: View {
 
             Text(word.front)
                 .font(.system(size: dynamicFontSize(for: word.front), weight: .bold))
-                .foregroundStyle(isDark ? .white : .caribbeanInk)
-                .shadow(color: isDark ? .black.opacity(0.6) : .clear, radius: 4, x: 0, y: 2)
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: isDark
+                            ? [Color(hex: "#60a5fa"), Color(hex: "#a78bfa"), Color(hex: "#c084fc")]
+                            : [Color(hex: "#6366f1"), Color(hex: "#a855f7"), Color(hex: "#ec4899")],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .shadow(color: isDark ? .black.opacity(0.6) : Color(hex: "#a855f7").opacity(0.15), radius: 4, x: 0, y: 2)
                 .shadow(color: isDark ? .black.opacity(0.3) : .clear, radius: 12, x: 0, y: 4)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 32)
@@ -446,8 +454,16 @@ struct FlashCardsView: View {
 
             Text(word.back)
                 .font(.system(size: dynamicFontSize(for: word.back), weight: .bold))
-                .foregroundStyle(isDark ? .white : .caribbeanInk)
-                .shadow(color: isDark ? .black.opacity(0.6) : .clear, radius: 4, x: 0, y: 2)
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: isDark
+                            ? [Color(hex: "#34d399"), Color(hex: "#22d3ee"), Color(hex: "#60a5fa")]
+                            : [Color(hex: "#059669"), Color(hex: "#0891b2"), Color(hex: "#7c3aed")],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .shadow(color: isDark ? .black.opacity(0.6) : Color(hex: "#0891b2").opacity(0.15), radius: 4, x: 0, y: 2)
                 .shadow(color: isDark ? .black.opacity(0.3) : .clear, radius: 12, x: 0, y: 4)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 32)
