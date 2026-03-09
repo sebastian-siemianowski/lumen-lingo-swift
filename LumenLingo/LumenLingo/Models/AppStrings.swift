@@ -33,6 +33,10 @@ struct AppStrings {
     let wordBuilderDescription: String
     let craftAndDiscover: String
     let recentActivity: String
+    let resetProgress: String
+    let resetProgressMessage: String
+    let progressReset: String
+    let startFreshDescription: String
 
     // MARK: - Language Selection
     let languages: String

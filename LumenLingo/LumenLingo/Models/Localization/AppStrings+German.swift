@@ -30,6 +30,10 @@ extension AppStrings {
         wordBuilderDescription: "Baue Wörter Buchstabe für Buchstabe aus durcheinander gewürfelten Hinweisen zusammen",
         craftAndDiscover: "Bauen & Entdecken",
         recentActivity: "Letzte Aktivität",
+        resetProgress: "Fortschritt zurücksetzen",
+        resetProgressMessage: "Dies löscht alle XP, Level, Streaks, Spielverlauf und gemeisterte Inhalte. Diese Aktion kann nicht rückgängig gemacht werden.",
+        progressReset: "Fortschritt wurde zurückgesetzt",
+        startFreshDescription: "Lösche deinen gesamten Fortschritt, XP, Streaks und Spielverlauf, um deine Lernreise von vorne zu beginnen.",
 
         // Language Selection
         languages: "Sprachen",

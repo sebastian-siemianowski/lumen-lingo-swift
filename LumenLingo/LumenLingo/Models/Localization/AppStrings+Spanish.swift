@@ -30,6 +30,10 @@ extension AppStrings {
         wordBuilderDescription: "Construye palabras letra por letra a partir de pistas y sugerencias",
         craftAndDiscover: "Crea y Descubre",
         recentActivity: "Actividad Reciente",
+        resetProgress: "Restablecer progreso",
+        resetProgressMessage: "Esto borrará todos tus XP, niveles, rachas, historial de juegos y contenido dominado. Esta acción no se puede deshacer.",
+        progressReset: "El progreso ha sido restablecido",
+        startFreshDescription: "Borra todo tu progreso, XP, rachas e historial de juegos para comenzar tu aprendizaje desde cero.",
 
         // Language Selection
         languages: "Idiomas",

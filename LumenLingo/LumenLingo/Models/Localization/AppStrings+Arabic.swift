@@ -30,6 +30,10 @@ extension AppStrings {
         wordBuilderDescription: "ركّب الكلمات حرفًا بحرف من تلميحات مبعثرة",
         craftAndDiscover: "ركّب واكتشف",
         recentActivity: "النشاط الأخير",
+        resetProgress: "إعادة تعيين التقدم",
+        resetProgressMessage: "سيؤدي هذا إلى مسح جميع نقاط الخبرة والمستويات والسلاسل وسجل الألعاب والمحتوى المتقن. لا يمكن التراجع عن هذا الإجراء.",
+        progressReset: "تم إعادة تعيين التقدم",
+        startFreshDescription: "امسح كل تقدمك ونقاط الخبرة والسلاسل وسجل الألعاب لبدء رحلة التعلم من الصفر.",
 
         // Language Selection
         languages: "اللغات",

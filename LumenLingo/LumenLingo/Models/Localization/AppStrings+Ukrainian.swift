@@ -30,6 +30,10 @@ extension AppStrings {
         wordBuilderDescription: "Складайте слова літера за літерою з перемішаних підказок",
         craftAndDiscover: "Створюйте та відкривайте",
         recentActivity: "Остання активність",
+        resetProgress: "Скинути прогрес",
+        resetProgressMessage: "Це видалить усі XP, рівні, серії, історію ігор та засвоєний контент. Цю дію неможливо скасувати.",
+        progressReset: "Прогрес було скинуто",
+        startFreshDescription: "Очистіть увесь прогрес, XP, серії та історію ігор, щоб почати навчання з нуля.",
 
         // Language Selection
         languages: "Мови",

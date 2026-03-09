@@ -25,6 +25,7 @@ struct JourneyView: View {
     @State private var quoteScale: CGFloat = 1.0
     @State private var quoteGlowIntensity: CGFloat = 0.0
     @State private var quoteIconRotation: Double = 0
+    @State private var showResetAlert = false
 
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -44,6 +45,9 @@ struct JourneyView: View {
                 // Streak section
                 streakSection
 
+                // Reset progress
+                resetProgressButton
+
                 // Wisdom quote
                 quoteCard
 
@@ -55,6 +59,15 @@ struct JourneyView: View {
         .cosmicBackground()
         .navigationBarTitleDisplayMode(.inline)
         .toolbarColorScheme(isDark ? .dark : .light, for: .navigationBar)
+        .alert(L.areYouSure, isPresented: $showResetAlert) {
+            Button(L.cancel, role: .cancel) {}
+            Button(L.resetProgress, role: .destructive) {
+                let service = ProgressService(modelContext: modelContext)
+                service.resetAllProgress()
+            }
+        } message: {
+            Text(L.resetProgressMessage)
+        }
     }
 
     // MARK: - Header
@@ -351,6 +364,64 @@ struct JourneyView: View {
                 .font(.caption)
                 .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
                 .multilineTextAlignment(.center)
+        }
+        .padding(18)
+        .background(GlassCardBackground())
+    }
+
+    // MARK: - Reset Progress
+
+    private var resetProgressButton: some View {
+        VStack(spacing: 14) {
+            // Section header
+            HStack(spacing: 8) {
+                Image(systemName: "arrow.triangle.2.circlepath")
+                    .foregroundStyle(.red.opacity(0.8))
+                Text(L.resetProgress)
+                    .font(.headline)
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [.red.opacity(0.9), .red.opacity(0.6)],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+
+            Text(L.startFreshDescription)
+                .font(.caption)
+                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
+                .frame(maxWidth: .infinity, alignment: .leading)
+
+            Button {
+                showResetAlert = true
+            } label: {
+                HStack(spacing: 8) {
+                    Image(systemName: "arrow.counterclockwise")
+                        .font(.system(size: 14, weight: .semibold))
+                    Text(L.resetProgress)
+                        .font(.system(size: 14, weight: .semibold))
+                }
+                .foregroundStyle(.white)
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 12)
+                .background(
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(
+                            LinearGradient(
+                                colors: [.red.opacity(0.7), .red.opacity(0.5)],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 12)
+                                .strokeBorder(.white.opacity(0.15), lineWidth: 1)
+                        )
+                )
+            }
+            .buttonStyle(LumenPressStyle(weight: .soft))
         }
         .padding(18)
         .background(GlassCardBackground())

@@ -30,6 +30,10 @@ extension AppStrings {
         wordBuilderDescription: "根据打乱的线索和提示逐字母构建单词",
         craftAndDiscover: "构建与发现",
         recentActivity: "最近活动",
+        resetProgress: "重置进度",
+        resetProgressMessage: "这将清除您所有的经验值、等级、连续记录、游戏历史和已掌握内容。此操作无法撤销。",
+        progressReset: "进度已重置",
+        startFreshDescription: "清除您所有的进度、经验值、连续记录和游戏历史，从头开始您的学习之旅。",
 
         // Language Selection
         languages: "语言",

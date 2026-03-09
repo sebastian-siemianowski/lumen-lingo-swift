@@ -30,6 +30,10 @@ extension AppStrings {
         wordBuilderDescription: "スクランブルされたヒントから一文字ずつ単語を組み立てよう",
         craftAndDiscover: "組み立てて発見",
         recentActivity: "最近のアクティビティ",
+        resetProgress: "進捗をリセット",
+        resetProgressMessage: "すべてのXP、レベル、連続記録、ゲーム履歴、習得済みコンテンツが削除されます。この操作は元に戻せません。",
+        progressReset: "進捗がリセットされました",
+        startFreshDescription: "すべての進捗、XP、連続記録、ゲーム履歴をクリアして、学習を最初からやり直しましょう。",
 
         // Language Selection
         languages: "言語",

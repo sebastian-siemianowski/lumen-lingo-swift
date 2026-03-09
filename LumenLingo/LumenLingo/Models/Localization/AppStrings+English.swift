@@ -30,6 +30,10 @@ extension AppStrings {
         wordBuilderDescription: "Construct words letter by letter from scrambled clues and hints",
         craftAndDiscover: "Craft & Discover",
         recentActivity: "Recent Activity",
+        resetProgress: "Reset Progress",
+        resetProgressMessage: "This will erase all your XP, levels, streaks, game history, and mastered content. This action cannot be undone.",
+        progressReset: "Progress has been reset",
+        startFreshDescription: "Clear all your progress, XP, streaks, and game history to start your learning journey from scratch.",
 
         // Language Selection
         languages: "Languages",
