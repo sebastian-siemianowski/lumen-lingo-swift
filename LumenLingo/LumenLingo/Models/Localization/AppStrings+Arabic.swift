@@ -245,7 +245,7 @@ extension AppStrings {
         plansAndPricing: "الخطط والأسعار",
         investInYour: "استثمر في",
         languageMastery: "إتقانك للغات",
-        membershipSubtitle: "انضم إلى الآلاف الذين يتعلّمون بذكاء وليس بجهد أكبر.\nضمان استرداد خلال 30 يومًا \u{00B7} إلغاء في أي وقت",
+        membershipSubtitle: "انضم إلى الآلاف الذين يتعلّمون بذكاء وليس بجهد أكبر.",
         monthly: "شهري",
         yearlyDiscount: "سنوي  -17%",
         featureComparison: "مقارنة الميزات",

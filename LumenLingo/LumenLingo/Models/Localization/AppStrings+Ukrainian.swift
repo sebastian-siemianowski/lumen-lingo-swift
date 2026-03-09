@@ -245,7 +245,7 @@ extension AppStrings {
         plansAndPricing: "Плани та ціни",
         investInYour: "Інвестуйте у своє",
         languageMastery: "Володіння мовою",
-        membershipSubtitle: "Приєднуйтесь до тисяч людей, які навчаються розумніше, а не важче.\n30-денна гарантія повернення коштів \u{00B7} Скасування будь-коли",
+        membershipSubtitle: "Приєднуйтесь до тисяч людей, які навчаються розумніше, а не важче.",
         monthly: "Щомісяця",
         yearlyDiscount: "Щорічно  -17%",
         featureComparison: "Порівняння можливостей",

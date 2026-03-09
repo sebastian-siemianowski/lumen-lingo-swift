@@ -245,7 +245,7 @@ extension AppStrings {
         plansAndPricing: "Pläne & Preise",
         investInYour: "Investiere in deine",
         languageMastery: "Sprachbeherrschung",
-        membershipSubtitle: "Schließe dich Tausenden an, die klüger lernen, nicht härter.\n30-Tage-Geld-zurück-Garantie \u{00B7} Jederzeit kündbar",
+        membershipSubtitle: "Schließe dich Tausenden an, die klüger lernen, nicht härter.",
         monthly: "Monatlich",
         yearlyDiscount: "Jährlich  -17%",
         featureComparison: "Funktionsvergleich",

@@ -245,7 +245,7 @@ extension AppStrings {
         plansAndPricing: "プランと料金",
         investInYour: "あなたの",
         languageMastery: "語学力に投資",
-        membershipSubtitle: "よりスマートに学ぶ仲間に加わろう。\n30日間返金保証 \u{00B7} いつでもキャンセル可能",
+        membershipSubtitle: "よりスマートに学ぶ仲間に加わろう。",
         monthly: "月額",
         yearlyDiscount: "年額  -17%",
         featureComparison: "機能比較",

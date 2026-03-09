@@ -245,7 +245,7 @@ extension AppStrings {
         plansAndPricing: "Forfaits et tarifs",
         investInYour: "Investissez dans votre",
         languageMastery: "maîtrise des langues",
-        membershipSubtitle: "Rejoignez des milliers de personnes qui apprennent plus efficacement.\nGarantie de remboursement de 30 jours \u{00B7} Annulation à tout moment",
+        membershipSubtitle: "Rejoignez des milliers de personnes qui apprennent plus efficacement.",
         monthly: "Mensuel",
         yearlyDiscount: "Annuel  -17%",
         featureComparison: "Comparaison des fonctionnalités",

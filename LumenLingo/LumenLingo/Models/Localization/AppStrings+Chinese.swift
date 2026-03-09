@@ -245,7 +245,7 @@ extension AppStrings {
         plansAndPricing: "套餐与价格",
         investInYour: "投资你的",
         languageMastery: "语言精通之路",
-        membershipSubtitle: "加入数千名更聪明学习的伙伴。\n30天退款保证 \u{00B7} 随时取消",
+        membershipSubtitle: "加入数千名更聪明学习的伙伴。",
         monthly: "月付",
         yearlyDiscount: "年付  -17%",
         featureComparison: "功能对比",
