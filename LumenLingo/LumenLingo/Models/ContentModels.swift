@@ -470,7 +470,7 @@ enum SFSymbolMapping {
         "Lightbulb": "lightbulb.fill",
         "Luggage": "suitcase.fill",
         "Tent": "tent.fill",
-        "Microscope": "microscope",
+        "Microscope": "atom",
         "Mountain": "mountain.2.fill",
         "Waves": "water.waves",
         "Snowflake": "snowflake",
