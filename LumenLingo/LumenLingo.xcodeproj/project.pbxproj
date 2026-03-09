@@ -42,6 +42,7 @@
 		4BE7B3BEC3A8F44C9926CC3A /* grammar_english_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 8260535396006EA63405CA68 /* grammar_english_spanish.json */; };
 		4DEBDE799DFF66C3AF2E75A8 /* AppStrings+Polish.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB9411DB022EF3C046C2B75 /* AppStrings+Polish.swift */; };
 		4ED6EDA846EB2DC1FC902B42 /* flashcards_english_japanese.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C8D4D41E794AAF840BF37C9 /* flashcards_english_japanese.json */; };
+		4F2F8873556D56DC57B10789 /* MetalQuantumRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1077027B7A356931601F0248 /* MetalQuantumRenderer.swift */; };
 		51F37E91BA985E1B866F4DBB /* flashcards_polish_english.json in Resources */ = {isa = PBXBuildFile; fileRef = A09DE5B1813E2A548A69FE53 /* flashcards_polish_english.json */; };
 		51F8F1F25214F416831EDB21 /* grammar_polish_japanese.json in Resources */ = {isa = PBXBuildFile; fileRef = 86217728B7FFADD692A67832 /* grammar_polish_japanese.json */; };
 		5410ECB257F95DD11603527F /* flashcards_polish_arabic.json in Resources */ = {isa = PBXBuildFile; fileRef = 2426F02F8E3AB9B6634761D6 /* flashcards_polish_arabic.json */; };
@@ -113,6 +114,7 @@
 		CE535ED079A9AFF89EB06028 /* SpiralHaloStars.metal in Sources */ = {isa = PBXBuildFile; fileRef = E78D46284A32A5BAEDE26A2A /* SpiralHaloStars.metal */; };
 		D00AB6E60F7E92B4B1868126 /* JourneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00238DB4631FF527FE002203 /* JourneyView.swift */; };
 		D0806A3443CF384745B8EC43 /* grammar_spanish_english.json in Resources */ = {isa = PBXBuildFile; fileRef = D41E1DDF3573205870644CDF /* grammar_spanish_english.json */; };
+		D2CB9DACCE1C173522A816D0 /* QuantumFlowPreset.metal in Sources */ = {isa = PBXBuildFile; fileRef = 5B38FAED4DFE3C66C33071BE /* QuantumFlowPreset.metal */; };
 		D6C1FF69FC5BCBFCE19E86D4 /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3766F4844525AE0B8F693647 /* LocalizationManager.swift */; };
 		D944A99D79DAE4DB61D4A0CA /* AndromedaStars.metal in Sources */ = {isa = PBXBuildFile; fileRef = 16CBC7FA67305C12DB95778D /* AndromedaStars.metal */; };
 		D967A286882D8393059BCD01 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178728D2894F28CD3D7CA335 /* ExtensionsTests.swift */; };
@@ -133,6 +135,7 @@
 		F23589F39FA41E6D3F04ED22 /* flashcards_polish_ukrainian.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E8D26ACC3A64927138AB641 /* flashcards_polish_ukrainian.json */; };
 		F5439D82BFE2910F8A446299 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D84080B3E5FBF4012D412B /* ContentView.swift */; };
 		F5B050BBD9675556C37EF44F /* grammar_french_english.json in Resources */ = {isa = PBXBuildFile; fileRef = EE209D9EF404AA5D75D6D840 /* grammar_french_english.json */; };
+		F6F7A30CD0594D8726E59FA2 /* MetalQuantumFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D714A552DAA2C0B4C1F0B8 /* MetalQuantumFlowView.swift */; };
 		FED1EF451B08FBEF1081AC4D /* grammar_polish_german.json in Resources */ = {isa = PBXBuildFile; fileRef = 1529F75859B9520B053C7083 /* grammar_polish_german.json */; };
 		FEDBB41A11D82843DDC00888 /* AppStrings+French.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869CE2159CF9460A51BA2008 /* AppStrings+French.swift */; };
 		FFEB34E94BF794DB93C7F83E /* CelestialLagoonPreset.metal in Sources */ = {isa = PBXBuildFile; fileRef = D982946FA08A7CB301870D9F /* CelestialLagoonPreset.metal */; };
@@ -158,6 +161,7 @@
 		0C84297D92B80DD22BB1E11C /* BreathingOrbsSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingOrbsSettingsView.swift; sourceTree = "<group>"; };
 		0E8D26ACC3A64927138AB641 /* flashcards_polish_ukrainian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_polish_ukrainian.json; sourceTree = "<group>"; };
 		0F07D558A1E5F26403A7997C /* flashcards_ukrainian_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_ukrainian_english.json; sourceTree = "<group>"; };
+		1077027B7A356931601F0248 /* MetalQuantumRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalQuantumRenderer.swift; sourceTree = "<group>"; };
 		11F2243A3F5171B5E1D1731A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		12F5A0006F1BE35C07723FF8 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		1529F75859B9520B053C7083 /* grammar_polish_german.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_polish_german.json; sourceTree = "<group>"; };
@@ -202,6 +206,7 @@
 		59A8193CDA27C5F43BF910C5 /* LanguageSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectionView.swift; sourceTree = "<group>"; };
 		59EF54CA4B0E1ECB5159EE96 /* QuantumFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantumFlowView.swift; sourceTree = "<group>"; };
 		5A2C56C7AF40780974F08272 /* flashcards_english_arabic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_english_arabic.json; sourceTree = "<group>"; };
+		5B38FAED4DFE3C66C33071BE /* QuantumFlowPreset.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = QuantumFlowPreset.metal; sourceTree = "<group>"; };
 		5C2A55F4B66ED7EDC12D625C /* SolarAuroraPreset.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SolarAuroraPreset.metal; sourceTree = "<group>"; };
 		5D9369578E51867FB1E3FF86 /* LumenLingoTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LumenLingoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62BB8A676728B666DFB159B8 /* MetalCosmicRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalCosmicRenderer.swift; sourceTree = "<group>"; };
@@ -270,6 +275,7 @@
 		E56328BCC55D6C38A861C0F9 /* grammar_polish_ukrainian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_polish_ukrainian.json; sourceTree = "<group>"; };
 		E667ED645B5F750955DEA3B5 /* LumenLingoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumenLingoApp.swift; sourceTree = "<group>"; };
 		E78D46284A32A5BAEDE26A2A /* SpiralHaloStars.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SpiralHaloStars.metal; sourceTree = "<group>"; };
+		E8D714A552DAA2C0B4C1F0B8 /* MetalQuantumFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalQuantumFlowView.swift; sourceTree = "<group>"; };
 		E92B42CA6AE8D2A591A3D217 /* flashcards_spanish_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_spanish_english.json; sourceTree = "<group>"; };
 		EB5EA1D2487A9E973C303FE8 /* SolarAuroraStars.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SolarAuroraStars.metal; sourceTree = "<group>"; };
 		EBB9411DB022EF3C046C2B75 /* AppStrings+Polish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStrings+Polish.swift"; sourceTree = "<group>"; };
@@ -317,6 +323,8 @@
 				AA8853A00938061AC818C42D /* LayoutBackgroundView.swift */,
 				62BB8A676728B666DFB159B8 /* MetalCosmicRenderer.swift */,
 				38147CE75141E1292FF464C1 /* MetalCosmicView.swift */,
+				E8D714A552DAA2C0B4C1F0B8 /* MetalQuantumFlowView.swift */,
+				1077027B7A356931601F0248 /* MetalQuantumRenderer.swift */,
 				59EF54CA4B0E1ECB5159EE96 /* QuantumFlowView.swift */,
 				97E0E826DB4B9AC7450DB492 /* SolarAuroraView.swift */,
 				C7A63D5EEB0001AEFA02084A /* StarFieldGenerator.swift */,
@@ -337,6 +345,7 @@
 				9DD06C49CE0742785FB126D2 /* EdgeOfAndromedaPreset.metal */,
 				A46D9B996CC8601EBBCCB4AA /* LagoonNebulaPreset.metal */,
 				4DCFB0CC96C4AA4F7E7FC737 /* LagoonStars.metal */,
+				5B38FAED4DFE3C66C33071BE /* QuantumFlowPreset.metal */,
 				5C2A55F4B66ED7EDC12D625C /* SolarAuroraPreset.metal */,
 				EB5EA1D2487A9E973C303FE8 /* SolarAuroraStars.metal */,
 				DB8D135B47E89CA45DF67B97 /* SpiralHaloPreset.metal */,
@@ -995,11 +1004,14 @@
 				DF2BC01B8E34CB130AB3B7B6 /* MembershipView.swift in Sources */,
 				158A5B1BCC24775744979354 /* MetalCosmicRenderer.swift in Sources */,
 				9B62C71FC47783DF6BB80D30 /* MetalCosmicView.swift in Sources */,
+				F6F7A30CD0594D8726E59FA2 /* MetalQuantumFlowView.swift in Sources */,
+				4F2F8873556D56DC57B10789 /* MetalQuantumRenderer.swift in Sources */,
 				5F8D5BC0E027A8B5E7340923 /* NebulaDriftSettingsView.swift in Sources */,
 				E5C95676BF77324EABAACEC0 /* ProfileView.swift in Sources */,
 				B58EF9602E893600A943B8A6 /* ProfileViewModel.swift in Sources */,
 				343AD391FC75380A01F03858 /* ProgressService.swift in Sources */,
 				BBB021509E641F28D020C46E /* ProgressViewModel.swift in Sources */,
+				D2CB9DACCE1C173522A816D0 /* QuantumFlowPreset.metal in Sources */,
 				98C810678A94878277E25C89 /* QuantumFlowSettingsView.swift in Sources */,
 				3ADCCD186B86AF4E7ED8230B /* QuantumFlowView.swift in Sources */,
 				DA7EACF50CDA6F892FAE9972 /* SchemeCardView.swift in Sources */,

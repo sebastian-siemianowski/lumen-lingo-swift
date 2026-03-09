@@ -85,9 +85,9 @@ struct LayoutBackgroundView: View {
                         .opacity(colorScheme == .dark ? 0.7 : 0.4)
                 }
 
-                // Layer 2: Quantum flow (respects user toggle + active state)
+                // Layer 2: Quantum flow — Metal GPU aurora (respects user toggle + active state)
                 if showQuantumFlow && isActive {
-                    QuantumFlowView(scene: quantumScene, intensity: quantumIntensity, speed: quantumSpeed, isDarkMode: colorScheme == .dark)
+                    MetalQuantumFlowView(scene: quantumScene, intensity: quantumIntensity, speed: quantumSpeed, isDarkMode: colorScheme == .dark)
                         .opacity(colorScheme == .dark ? 0.85 : 0.5)
                 }
 

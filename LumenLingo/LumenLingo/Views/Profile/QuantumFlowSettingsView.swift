@@ -224,7 +224,7 @@ struct FullscreenQuantumFlowPreview: View {
             Color(red: 6/255, green: 5/255, blue: 20/255)
                 .ignoresSafeArea()
 
-            QuantumFlowView(
+            MetalQuantumFlowView(
                 scene: currentScene,
                 intensity: intensity,
                 speed: speed,
