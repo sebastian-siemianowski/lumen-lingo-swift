@@ -92,7 +92,7 @@ struct ContentView: View {
                 }
                 .tag(AppTab.profile)
             }
-            .tint(Color.cosmicAccent)
+            .tint(Color(hex: themeManager.isDarkMode ? "#a855f7" : "#7c3aed"))
             .toolbar(hideTabBar ? .hidden : .visible, for: .tabBar)
             .toolbarBackground(.visible, for: .tabBar)
             .toolbarBackground(
@@ -211,11 +211,11 @@ struct ContentView: View {
 
         if themeManager.isDarkMode {
             normalColor = UIColor(white: 0.45, alpha: 1)
-            selectedColor = UIColor(Color.cosmicAccent)
+            selectedColor = UIColor(Color(hex: "#a855f7"))
         } else {
-            // Light mode: pure black for unselected tabs
+            // Light mode: rich purple for selected tab
             normalColor = UIColor(white: 0.0, alpha: 0.45)
-            selectedColor = UIColor(Color.cosmicAccent)
+            selectedColor = UIColor(Color(hex: "#7c3aed"))
         }
 
         appearance.stackedLayoutAppearance.normal.iconColor = normalColor

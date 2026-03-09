@@ -555,8 +555,8 @@ struct GameCardColorScheme {
     let topBarGradient: [Color]
 
     static let flashCards = GameCardColorScheme(
-        primary: Color(hex: "#22d3ee"),     // cyan-400
-        secondary: Color(hex: "#3b82f6"),   // blue-500
+        primary: Color(hex: "#3b82f6"),     // blue-500
+        secondary: Color(hex: "#6366f1"),   // indigo-500
         tertiary: Color(hex: "#0d9488"),    // teal-600
         gradient: [Color(hex: "#3b82f6"), Color(hex: "#06b6d4"), Color(hex: "#14b8a6")],
         tintColor: Color(hex: "#22d3ee"),
@@ -573,8 +573,8 @@ struct GameCardColorScheme {
     )
 
     static let wordBuilder = GameCardColorScheme(
-        primary: Color(hex: "#fb923c"),     // orange-400
-        secondary: Color(hex: "#f59e0b"),   // amber-500
+        primary: Color(hex: "#f97316"),     // orange-500
+        secondary: Color(hex: "#ef4444"),   // red-500
         tertiary: Color(hex: "#ef4444"),    // red-500
         gradient: [Color(hex: "#f59e0b"), Color(hex: "#f97316"), Color(hex: "#ef4444")],
         tintColor: Color(hex: "#fb923c"),

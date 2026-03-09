@@ -296,7 +296,7 @@ struct LanguageSelectionView: View {
                 .font(.title3.bold())
                 .foregroundStyle(
                     LinearGradient(
-                        colors: [.cyan, .purple],
+                        colors: [Color(hex: "#6366f1"), Color(hex: "#a855f7")],
                         startPoint: .leading,
                         endPoint: .trailing
                     )
@@ -314,7 +314,13 @@ struct LanguageSelectionView: View {
         VStack(alignment: .leading, spacing: 12) {
             Label(L.iSpeak, systemImage: "person.wave.2.fill")
                 .font(.headline)
-                .foregroundStyle(isDark ? .white : .caribbeanInk)
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: [Color(hex: "#6366f1"), Color(hex: "#8b5cf6")],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
 
             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
                 ForEach(availableSources, id: \.self) { lang in
@@ -355,7 +361,13 @@ struct LanguageSelectionView: View {
         VStack(alignment: .leading, spacing: 12) {
             Label(L.imLearning, systemImage: "book.fill")
                 .font(.headline)
-                .foregroundStyle(isDark ? .white : .caribbeanInk)
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: [Color(hex: "#a855f7"), Color(hex: "#d946ef")],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
 
             if filteredTargets.isEmpty {
                 Text(L.noLanguagesAvailable)

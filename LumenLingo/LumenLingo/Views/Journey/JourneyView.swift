@@ -96,7 +96,13 @@ struct JourneyView: View {
                         .foregroundStyle(Color(hex: "#667eea"))
                     Text(L.milestones)
                         .font(.headline)
-                        .foregroundStyle(isDark ? .white : .caribbeanInk)
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [Color(hex: "#667eea"), Color(hex: "#06b6d4")],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
                 }
                 .padding(.bottom, 16)
 
@@ -175,7 +181,13 @@ struct JourneyView: View {
         VStack(spacing: 14) {
             Text(L.overview)
                 .font(.headline)
-                .foregroundStyle(isDark ? .white : .caribbeanInk)
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
                 .frame(maxWidth: .infinity, alignment: .leading)
 
             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 12) {
@@ -222,7 +234,13 @@ struct JourneyView: View {
         VStack(spacing: 14) {
             Text(L.gamePerformance)
                 .font(.headline)
-                .foregroundStyle(isDark ? .white : .caribbeanInk)
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: [Color(hex: "#a855f7"), Color(hex: "#ec4899")],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
                 .frame(maxWidth: .infinity, alignment: .leading)
 
             ForEach(GameType.allCases, id: \.self) { type in
@@ -300,7 +318,13 @@ struct JourneyView: View {
                     .symbolEffect(.pulse, options: .repeating.speed(0.3))
                 Text(L.currentStreak)
                     .font(.headline)
-                    .foregroundStyle(isDark ? .white : .caribbeanInk)
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [.orange, Color(hex: "#ef4444")],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
             }
             .frame(maxWidth: .infinity, alignment: .leading)
 

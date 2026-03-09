@@ -488,7 +488,13 @@ struct TierCardView: View {
                 VStack(alignment: .leading, spacing: 2) {
                     Text(tier.name)
                         .font(.headline)
-                        .foregroundStyle(isDark ? .white : .caribbeanInk)
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: tier.gradientColors,
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
                     Text(tier.tagline)
                         .font(.caption)
                         .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
@@ -520,11 +526,23 @@ struct TierCardView: View {
                 if price == 0 {
                     Text(L.free)
                         .font(.system(size: 28, weight: .black))
-                        .foregroundStyle(isDark ? .white : .caribbeanInk)
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: tier.gradientColors,
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
                 } else {
                     Text("$\(String(format: "%.2f", price))")
                         .font(.system(size: 28, weight: .black))
-                        .foregroundStyle(isDark ? .white : .caribbeanInk)
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: tier.gradientColors,
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
                     Text("/\(billingCycle == .monthly ? L.perMonth : L.perYear)")
                         .font(.subheadline)
                         .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
