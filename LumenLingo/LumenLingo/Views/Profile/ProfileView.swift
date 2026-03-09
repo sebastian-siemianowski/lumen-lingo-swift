@@ -107,22 +107,39 @@ struct ProfileView: View {
             VStack(spacing: 16) {
                 // Avatar with glow rings
                 ZStack {
-                    // Outer glow rings (combined halo + ring into one layer)
+                    // Outer ambient glow
                     Circle()
                         .fill(
                             RadialGradient(
                                 colors: [
-                                    Color(hex: "#667eea").opacity(0.3),
-                                    Color(hex: "#764ba2").opacity(0.12),
+                                    Color(hex: "#667eea").opacity(0.25),
+                                    Color(hex: "#764ba2").opacity(0.10),
                                     .clear
                                 ],
                                 center: .center,
-                                startRadius: 30,
-                                endRadius: 70
+                                startRadius: 28,
+                                endRadius: 65
                             )
                         )
                         .frame(width: 120, height: 120)
 
+                    // Gradient border ring
+                    Circle()
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: [
+                                    Color(hex: "#667eea").opacity(0.6),
+                                    Color(hex: "#764ba2").opacity(0.3),
+                                    Color(hex: "#667eea").opacity(0.15)
+                                ],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            ),
+                            lineWidth: 2.5
+                        )
+                        .frame(width: 86, height: 86)
+
+                    // Main avatar circle
                     Circle()
                         .fill(
                             LinearGradient(
@@ -132,14 +149,24 @@ struct ProfileView: View {
                             )
                         )
                         .frame(width: 80, height: 80)
-                        .shadow(color: Color(hex: "#764ba2").opacity(0.5), radius: 20)
+                        .shadow(color: Color(hex: "#764ba2").opacity(0.4), radius: 16, y: 4)
 
-                    Image(systemName: "person.fill")
-                        .font(.system(size: 32, weight: .medium))
-                        .foregroundStyle(.white)
+                    // Person icon — clipped to circle to avoid bust rectangle
+                    Image(systemName: "person.crop.circle.fill")
+                        .font(.system(size: 72, weight: .thin))
+                        .symbolRenderingMode(.palette)
+                        .foregroundStyle(
+                            .white,
+                            LinearGradient(
+                                colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
+                        )
+                        .frame(width: 80, height: 80)
+                        .clipShape(Circle())
                 }
-                .drawingGroup()
-                .pulsingGlow(color: Color(hex: "#764ba2"), radius: 8, speed: 3.0)
+                .shadow(color: Color(hex: "#764ba2").opacity(0.3), radius: 12, y: 2)
 
                 // Name & level
                 VStack(spacing: 4) {
@@ -534,10 +561,30 @@ struct ProfileView: View {
             Text(L.version)
                 .font(.caption)
                 .foregroundStyle(isDark ? .white.opacity(0.25) : .caribbeanMist.opacity(0.7))
-            Text(L.madeWithLove)
-                .font(.caption)
-                .foregroundStyle(isDark ? .white.opacity(0.25) : .caribbeanMist.opacity(0.7))
+
+            // "Made with ❤️ for language learners" — heart as SF Symbol
+            // so it renders reliably (emoji can be invisible with foregroundStyle)
+            madeWithLoveLabel
         }
+    }
+
+    private var madeWithLoveLabel: some View {
+        let parts = L.madeWithLove.components(separatedBy: "\u{2764}\u{FE0F}")
+        let tint: Color = isDark ? .white.opacity(0.25) : .caribbeanMist.opacity(0.7)
+
+        return HStack(spacing: 0) {
+            if let before = parts.first {
+                Text(before)
+            }
+            Image(systemName: "heart.fill")
+                .font(.system(size: 10))
+                .foregroundStyle(.pink)
+            if parts.count > 1 {
+                Text(parts[1])
+            }
+        }
+        .font(.caption)
+        .foregroundStyle(tint)
     }
 
     // MARK: - Shared Components
