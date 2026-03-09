@@ -822,6 +822,8 @@ struct GlassPanelWrapper<Content: View>: View {
                 .blur(radius: 14)
                 .offset(y: 70)
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
         .drawingGroup()
         .allowsHitTesting(false)
     }
