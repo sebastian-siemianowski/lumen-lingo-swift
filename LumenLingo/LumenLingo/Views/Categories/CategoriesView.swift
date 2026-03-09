@@ -403,11 +403,9 @@ struct CategoriesView: View {
             .padding(isGridView ? 14 : 16)
             .frame(minHeight: isGridView ? 200 : 0)
             .background(
-                GlassCardBackground(
+                PremiumTransparentCardBackground(
                     cornerRadius: 22,
-                    borderColor: isDark ? .white : Color(hex: "#C494FC"),
-                    borderOpacity: isDark ? 0.1 : 0.2,
-                    tintColor: colors.first ?? .blue
+                    accentColor: colors.first ?? .blue
                 )
             )
             .clipShape(RoundedRectangle(cornerRadius: 22))
