@@ -28,6 +28,10 @@ struct ProfileView: View {
 
     private var isDark: Bool { colorScheme == .dark }
 
+    private var availableAppearanceSubTabs: [AppearanceSubTab] {
+        AppearanceSubTab.allCases.filter { isDark || $0 != .nebulaDrift }
+    }
+
     // Entry animation state
     @State private var headerAppeared = false
     // Tab transition direction
@@ -209,8 +213,8 @@ struct ProfileView: View {
                         }
                         .foregroundStyle(
                             activeTab == tab
-                                ? (isDark ? .white : Color(hex: "#667eea"))
-                                : (isDark ? .white.opacity(0.45) : .caribbeanMist)
+                                ? (isDark ? .white : Color(hex: "#3730a3"))
+                                : (isDark ? .white.opacity(0.45) : .caribbeanInk.opacity(0.7))
                         )
                         .padding(.horizontal, 10)
                         .padding(.vertical, 8)
@@ -224,10 +228,10 @@ struct ProfileView: View {
                                                 startPoint: .leading,
                                                 endPoint: .trailing
                                             ))
-                                            : AnyShapeStyle(Color(hex: "#667eea").opacity(0.10))
+                                            : AnyShapeStyle(Color(hex: "#4338ca").opacity(0.15))
                                     )
                                     .overlay(
-                                        Capsule().strokeBorder(isDark ? .white.opacity(0.12) : Color(hex: "#667eea").opacity(0.20), lineWidth: 1)
+                                        Capsule().strokeBorder(isDark ? .white.opacity(0.12) : Color(hex: "#4338ca").opacity(0.30), lineWidth: 1)
                                     )
                                     .matchedGeometryEffect(id: "tabIndicator", in: tabIndicator)
                             }
@@ -239,7 +243,7 @@ struct ProfileView: View {
             .padding(4)
             .background(
                 Capsule()
-                    .fill(isDark ? .white.opacity(0.06) : .black.opacity(0.04))
+                    .fill(isDark ? .white.opacity(0.06) : Color(hex: "#4338ca").opacity(0.08))
             )
         }
     }
@@ -315,10 +319,10 @@ struct ProfileView: View {
     private var appearanceSubTabBar: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 3) {
-                ForEach(AppearanceSubTab.allCases, id: \.self) { subTab in
+                ForEach(availableAppearanceSubTabs, id: \.self) { subTab in
                     Button {
-                        let oldIndex = AppearanceSubTab.allCases.firstIndex(of: activeAppearanceSubTab) ?? 0
-                        let newIndex = AppearanceSubTab.allCases.firstIndex(of: subTab) ?? 0
+                        let oldIndex = availableAppearanceSubTabs.firstIndex(of: activeAppearanceSubTab) ?? 0
+                        let newIndex = availableAppearanceSubTabs.firstIndex(of: subTab) ?? 0
                         subTabDirection = newIndex > oldIndex ? 1 : -1
                         withAnimation(.spring(response: 0.3, dampingFraction: 0.8)) {
                             activeAppearanceSubTab = subTab
@@ -332,8 +336,8 @@ struct ProfileView: View {
                         }
                         .foregroundStyle(
                             activeAppearanceSubTab == subTab
-                                ? (isDark ? .white : Color(hex: "#8b5cf6"))
-                                : (isDark ? .white.opacity(0.4) : .caribbeanMist)
+                                ? (isDark ? .white : Color(hex: "#4c1d95"))
+                                : (isDark ? .white.opacity(0.4) : .caribbeanInk.opacity(0.65))
                         )
                         .padding(.horizontal, 10)
                         .padding(.vertical, 6)
@@ -343,11 +347,11 @@ struct ProfileView: View {
                                     .fill(
                                         isDark
                                             ? AnyShapeStyle(Color(hex: "#8b5cf6").opacity(0.15))
-                                            : AnyShapeStyle(Color(hex: "#8b5cf6").opacity(0.08))
+                                            : AnyShapeStyle(Color(hex: "#6d28d9").opacity(0.14))
                                     )
                                     .overlay(
                                         Capsule().strokeBorder(
-                                            isDark ? Color(hex: "#8b5cf6").opacity(0.25) : Color(hex: "#8b5cf6").opacity(0.15),
+                                            isDark ? Color(hex: "#8b5cf6").opacity(0.25) : Color(hex: "#6d28d9").opacity(0.30),
                                             lineWidth: 1
                                         )
                                     )
@@ -361,8 +365,13 @@ struct ProfileView: View {
             .padding(3)
             .background(
                 Capsule()
-                    .fill(isDark ? .white.opacity(0.04) : .black.opacity(0.03))
+                    .fill(isDark ? .white.opacity(0.04) : Color(hex: "#6d28d9").opacity(0.07))
             )
+        }
+        .onChange(of: isDark) { _, newIsDark in
+            if !newIsDark && activeAppearanceSubTab == .nebulaDrift {
+                activeAppearanceSubTab = .darkLight
+            }
         }
     }
 

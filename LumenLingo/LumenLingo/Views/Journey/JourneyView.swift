@@ -67,7 +67,6 @@ struct JourneyView: View {
                         endPoint: .bottomTrailing
                     )
                 )
-                .symbolEffect(.bounce, options: .repeating.speed(0.15))
 
             Text(L.yourLearningJourney)
                 .font(.title2.bold())

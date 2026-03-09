@@ -34,7 +34,7 @@ struct ContentView: View {
         } else if themeManager.isDarkMode {
             return Color(red: 6/255, green: 5/255, blue: 20/255)
         } else {
-            return Color(red: 245/255, green: 247/255, blue: 252/255)
+            return Color(red: 248/255, green: 245/255, blue: 253/255)
         }
     }
 
@@ -94,6 +94,14 @@ struct ContentView: View {
             }
             .tint(Color.cosmicAccent)
             .toolbar(hideTabBar ? .hidden : .visible, for: .tabBar)
+            .toolbarBackground(.visible, for: .tabBar)
+            .toolbarBackground(
+                themeManager.isDarkMode
+                    ? Color(red: 10/255, green: 8/255, blue: 20/255).opacity(0.95)
+                    : Color(red: 248/255, green: 245/255, blue: 253/255),
+                for: .tabBar
+            )
+            .toolbarColorScheme(themeManager.isDarkMode ? .dark : .light, for: .tabBar)
         }
         .background(vstackBackground)
         .onAppear {
@@ -103,14 +111,17 @@ struct ContentView: View {
             if let profile { audioService.syncFromProfile(profile) }
             // Delay to ensure UITabBar exists in the hierarchy
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                applyTabBarAppearance(transparent: selectedTab == .dashboard)
+                let wantTransparent = selectedTab == .dashboard && themeManager.isDarkMode
+                applyTabBarAppearance(transparent: wantTransparent)
             }
         }
         .onChange(of: selectedTab) { _, newTab in
-            applyTabBarAppearance(transparent: newTab == .dashboard)
+            let wantTransparent = newTab == .dashboard && themeManager.isDarkMode
+            applyTabBarAppearance(transparent: wantTransparent)
         }
         .onChange(of: themeManager.isDarkMode) { _, _ in
-            applyTabBarAppearance(transparent: selectedTab == .dashboard)
+            let wantTransparent = selectedTab == .dashboard && themeManager.isDarkMode
+            applyTabBarAppearance(transparent: wantTransparent)
         }
         .onChange(of: profile?.soundEnabled) { _, _ in
             if let profile { audioService.syncFromProfile(profile) }
@@ -187,28 +198,51 @@ struct ContentView: View {
                 appearance.backgroundColor = UIColor(Color(red: 10/255, green: 8/255, blue: 20/255).opacity(0.95))
                 appearance.shadowColor = UIColor(white: 1.0, alpha: 0.06)
             } else {
-                appearance.backgroundColor = UIColor(Color(red: 250/255, green: 251/255, blue: 254/255).opacity(0.95))
-                appearance.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.08)
+                // Light mode: lavender-frost white — harmonises with Caribbean gradient,
+                // fully opaque so no warm bleed-through that reads as "brownish"
+                appearance.backgroundColor = UIColor(Color(red: 248/255, green: 245/255, blue: 253/255))
+                appearance.shadowColor = UIColor(red: 0.45, green: 0.22, blue: 0.62, alpha: 0.08)
             }
         }
 
         // Icon / text colors (shared)
-        let normalColor: UIColor = themeManager.isDarkMode || transparent
-            ? UIColor(white: 0.45, alpha: 1)
-            : UIColor(white: 0.5, alpha: 1)
+        let normalColor: UIColor
+        let selectedColor: UIColor
+
+        if themeManager.isDarkMode {
+            normalColor = UIColor(white: 0.45, alpha: 1)
+            selectedColor = UIColor(Color.cosmicAccent)
+        } else {
+            // Light mode: pure black for unselected tabs
+            normalColor = UIColor(white: 0.0, alpha: 0.45)
+            selectedColor = UIColor(Color.cosmicAccent)
+        }
+
         appearance.stackedLayoutAppearance.normal.iconColor = normalColor
         appearance.stackedLayoutAppearance.normal.titleTextAttributes = [
             .foregroundColor: normalColor,
         ]
-        appearance.stackedLayoutAppearance.selected.iconColor = UIColor(Color.cosmicAccent)
+        appearance.stackedLayoutAppearance.selected.iconColor = selectedColor
         appearance.stackedLayoutAppearance.selected.titleTextAttributes = [
-            .foregroundColor: UIColor(Color.cosmicAccent),
+            .foregroundColor: selectedColor,
         ]
+        // Mirror for all layout variants so rotation / compact modes match
+        appearance.inlineLayoutAppearance.normal.iconColor = normalColor
+        appearance.inlineLayoutAppearance.normal.titleTextAttributes = [.foregroundColor: normalColor]
+        appearance.inlineLayoutAppearance.selected.iconColor = selectedColor
+        appearance.inlineLayoutAppearance.selected.titleTextAttributes = [.foregroundColor: selectedColor]
+        appearance.compactInlineLayoutAppearance.normal.iconColor = normalColor
+        appearance.compactInlineLayoutAppearance.normal.titleTextAttributes = [.foregroundColor: normalColor]
+        appearance.compactInlineLayoutAppearance.selected.iconColor = selectedColor
+        appearance.compactInlineLayoutAppearance.selected.titleTextAttributes = [.foregroundColor: selectedColor]
 
         // Apply to the actual UITabBar instance (not the proxy)
         if let tabBar = Self.findTabBar() {
             tabBar.standardAppearance = appearance
             tabBar.scrollEdgeAppearance = appearance
+            // Force unselected/selected tint directly on the instance
+            tabBar.unselectedItemTintColor = normalColor
+            tabBar.tintColor = selectedColor
 
             if transparent {
                 // Nuclear option: directly clear any UIKit background layers
@@ -237,6 +271,13 @@ struct ContentView: View {
             UITabBar.appearance().standardAppearance = appearance
             UITabBar.appearance().scrollEdgeAppearance = appearance
         }
+
+        // Always set the proxy too — covers edge cases where UIKit
+        // re-creates the tab bar or applies defaults after our instance set
+        UITabBar.appearance().standardAppearance = appearance
+        UITabBar.appearance().scrollEdgeAppearance = appearance
+        UITabBar.appearance().unselectedItemTintColor = normalColor
+        UITabBar.appearance().tintColor = selectedColor
     }
 
     /// Traverses the view hierarchy to find the actual UITabBar instance.
@@ -314,15 +355,15 @@ struct LumenLingoNavBar: View {
         .background(
             isDark
                 ? AnyShapeStyle(Color(red: 6/255, green: 5/255, blue: 20/255).opacity(0.9))
-                : AnyShapeStyle(Color(red: 250/255, green: 251/255, blue: 254/255).opacity(0.95))
+                : AnyShapeStyle(Color(red: 248/255, green: 245/255, blue: 253/255))
         )
         .overlay(
             Rectangle()
-                .fill(isDark ? .white.opacity(0.05) : .black.opacity(0.03))
+                .fill(isDark ? .white.opacity(0.05) : Color(red: 0.45, green: 0.22, blue: 0.62).opacity(0.02))
         )
         .overlay(alignment: .bottom) {
             Rectangle()
-                .fill(isDark ? .white.opacity(0.06) : .black.opacity(0.06))
+                .fill(isDark ? .white.opacity(0.06) : Color(red: 0.45, green: 0.22, blue: 0.62).opacity(0.06))
                 .frame(height: 0.5)
         }
         .onAppear {

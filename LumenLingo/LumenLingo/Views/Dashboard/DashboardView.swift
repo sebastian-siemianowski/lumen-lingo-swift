@@ -10,9 +10,6 @@ import SwiftData
 struct DashboardView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.colorScheme) private var colorScheme
-    @Environment(\.localization) private var localization
-
-    private var L: AppStrings { localization.strings }
 
     @Query private var profiles: [UserProfile]
     @Query private var languagePrefs: [LanguagePreference]
@@ -33,10 +30,8 @@ struct DashboardView: View {
 
     private var currentLanguagePair: String {
         guard let pref = languagePrefs.first else { return "English → Spanish" }
-        let srcLang = SupportedLanguage(rawValue: pref.sourceLanguage)
-        let tgtLang = SupportedLanguage(rawValue: pref.targetLanguage)
-        let src = srcLang?.displayName ?? pref.sourceLanguage.capitalized
-        let tgt = srcLang.flatMap { s in tgtLang.map { $0.name(in: s) } } ?? pref.targetLanguage.capitalized
+        let src = SupportedLanguage(rawValue: pref.sourceLanguage)?.displayName ?? pref.sourceLanguage.capitalized
+        let tgt = SupportedLanguage(rawValue: pref.targetLanguage)?.displayName ?? pref.targetLanguage.capitalized
         return "\(src) → \(tgt)"
     }
 
@@ -94,11 +89,11 @@ struct DashboardView: View {
 
                 Text(currentLanguagePair)
                     .font(.system(size: 13, weight: .semibold))
-                    .foregroundStyle(isDark ? .white.opacity(0.85) : .caribbeanInk)
+                    .foregroundStyle(.white.opacity(0.85))
 
                 Image(systemName: "chevron.down")
                     .font(.system(size: 10, weight: .bold))
-                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
+                    .foregroundStyle(.white.opacity(0.4))
             }
             .padding(.horizontal, 14)
             .padding(.vertical, 8)
@@ -140,13 +135,13 @@ struct DashboardView: View {
                 }
 
                 VStack(alignment: .leading, spacing: 4) {
-                    Text(L.greeting(user.firstName))
+                    Text("Hello, \(user.firstName)!")
                         .font(.title2.bold())
-                        .foregroundStyle(isDark ? .white : .caribbeanInk)
+                        .foregroundStyle(.white)
 
-                    Text(L.readyForAdventure)
+                    Text("Ready for a new adventure?")
                         .font(.subheadline)
-                        .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
+                        .foregroundStyle(.white.opacity(0.7))
                 }
 
                 Spacer()
@@ -159,9 +154,9 @@ struct DashboardView: View {
                     } label: {
                         Image(systemName: "chevron.up")
                             .font(.caption.bold())
-                            .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
+                            .foregroundStyle(.white.opacity(0.5))
                             .padding(8)
-                            .background(Circle().fill(isDark ? .white.opacity(0.1) : Color(hex: "#C494FC").opacity(0.15)))
+                            .background(Circle().fill(.white.opacity(0.1)))
                     }
                 }
             }
@@ -189,7 +184,7 @@ struct DashboardView: View {
     private var statsRow: some View {
         HStack(spacing: 12) {
             statCard(
-                title: L.level,
+                title: "Level",
                 value: "\(profile?.currentLevel ?? 1)",
                 icon: "star.fill",
                 iconColor: .yellow,
@@ -198,7 +193,7 @@ struct DashboardView: View {
             )
 
             statCard(
-                title: L.totalXP,
+                title: "Total XP",
                 value: "\(profile?.totalXP ?? 0)",
                 icon: "bolt.fill",
                 iconColor: .cyan,
@@ -206,7 +201,7 @@ struct DashboardView: View {
             )
 
             statCard(
-                title: L.activeDays,
+                title: "Active Days",
                 value: "\(profile?.streakDays ?? 0)",
                 icon: "trophy.fill",
                 iconColor: .orange,
@@ -231,12 +226,12 @@ struct DashboardView: View {
                     .shadow(color: iconColor.opacity(0.5), radius: 4)
                 Text(value)
                     .font(.title3.bold())
-                    .foregroundStyle(isDark ? .white : .caribbeanInk)
+                    .foregroundStyle(.white)
             }
 
             Text(title)
                 .font(.caption)
-                .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
+                .foregroundStyle(.white.opacity(0.6))
 
             if let progress {
                 AnimatedProgressBar(
@@ -251,10 +246,10 @@ struct DashboardView: View {
         .padding(12)
         .background(
             RoundedRectangle(cornerRadius: 14)
-                .fill(isDark ? .white.opacity(0.06) : Color(hex: "#C494FC").opacity(0.12))
+                .fill(.white.opacity(colorScheme == .dark ? 0.06 : 0.12))
                 .overlay(
                     RoundedRectangle(cornerRadius: 14)
-                        .strokeBorder(isDark ? .white.opacity(0.08) : Color(hex: "#C494FC").opacity(0.18), lineWidth: 0.5)
+                        .strokeBorder(.white.opacity(0.08), lineWidth: 1)
                 )
         )
     }
@@ -274,11 +269,11 @@ struct DashboardView: View {
                 .foregroundStyle(color)
             Text(value)
                 .font(.caption.bold())
-                .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanInk)
+                .foregroundStyle(.white.opacity(0.8))
         }
         .padding(.horizontal, 8)
         .padding(.vertical, 4)
-        .background(Capsule().fill(isDark ? .white.opacity(0.08) : Color(hex: "#C494FC").opacity(0.14)))
+        .background(Capsule().fill(.white.opacity(0.08)))
     }
 
     // MARK: - Games Section
@@ -346,13 +341,13 @@ struct DashboardView: View {
                 }
 
                 VStack(alignment: .leading, spacing: 2) {
-                    Text(L.chooseYourAdventure)
+                    Text("Choose Your Adventure")
                         .font(.system(size: 19, weight: .bold))
-                        .foregroundStyle(isDark ? .white : .caribbeanInk)
+                        .foregroundStyle(.white)
 
-                    Text(L.startGameToBoost)
+                    Text("Start a game to boost your skills")
                         .font(.system(size: 13))
-                        .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
+                        .foregroundStyle(.white.opacity(0.6))
                 }
 
                 Spacer()
@@ -362,30 +357,30 @@ struct DashboardView: View {
             // Game cards — full-width glassmorphic standalone cards
             VStack(spacing: 16) {
                 DashboardGameCard(
-                    title: L.flashCards,
-                    description: L.flashCardsDescription,
+                    title: "Flash Cards",
+                    description: "Master new vocabulary with interactive flip cards and spaced repetition",
                     icon: "rectangle.on.rectangle.angled",
-                    cta: L.masterNewWords,
+                    cta: "Master New Words",
                     colorScheme: .flashCards,
                     route: .flashcardsCategories,
                     navigationPath: $navigationPath
                 )
 
                 DashboardGameCard(
-                    title: L.grammarChallenge,
-                    description: L.grammarDescription,
+                    title: "Grammar Challenge",
+                    description: "Test your knowledge with challenging questions and grammar rules",
                     icon: "text.book.closed.fill",
-                    cta: L.testYourSkills,
+                    cta: "Test Your Skills",
                     colorScheme: .grammar,
                     route: .grammarCategories,
                     navigationPath: $navigationPath
                 )
 
                 DashboardGameCard(
-                    title: L.wordConstructor,
-                    description: L.wordBuilderDescription,
+                    title: "Word Constructor",
+                    description: "Construct words letter by letter from scrambled clues and hints",
                     icon: "textformat.abc",
-                    cta: L.craftAndDiscover,
+                    cta: "Craft & Discover",
                     colorScheme: .wordBuilder,
                     route: .wordBuilderCategories,
                     navigationPath: $navigationPath
@@ -403,7 +398,7 @@ struct DashboardView: View {
             if !activities.isEmpty {
                 VStack(spacing: 12) {
                     HStack {
-                        Text(L.recentActivity)
+                        Text("Recent Activity")
                             .font(.system(size: 19, weight: .bold))
                             .foregroundStyle(
                                 LinearGradient(
@@ -452,19 +447,19 @@ struct DashboardView: View {
             VStack(alignment: .leading, spacing: 2) {
                 Text("\(type.displayName) · \(record.categoryName)")
                     .font(.subheadline.bold())
-                    .foregroundStyle(isDark ? .white : .caribbeanInk)
+                    .foregroundStyle(.white)
                     .lineLimit(1)
 
-                Text("+\(record.score) \(L.xp) · \(record.correctAnswers)/\(record.totalQuestions) \(L.correct.lowercased()) · \(record.completedAt.timeAgoDisplay)")
+                Text("+\(record.score) XP · \(record.correctAnswers)/\(record.totalQuestions) correct · \(record.completedAt.timeAgoDisplay)")
                     .font(.caption)
-                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
+                    .foregroundStyle(.white.opacity(0.5))
             }
 
             Spacer()
 
             Image(systemName: "chevron.right")
                 .font(.caption)
-                .foregroundStyle(isDark ? .white.opacity(0.3) : .caribbeanMist)
+                .foregroundStyle(.white.opacity(0.3))
         }
         .padding(.vertical, 6)
     }
@@ -492,6 +487,32 @@ struct DashboardView: View {
             }
 
             Spacer()
+
+            // Bottom fog overlay (animated breathing)
+            ZStack {
+                if isDark {
+                    LinearGradient(
+                        colors: [
+                            Color(red: 6/255, green: 5/255, blue: 20/255).opacity(0),
+                            Color(red: 6/255, green: 5/255, blue: 20/255).opacity(0.5 + 0.15 * Double(fogBreath)),
+                            Color(red: 6/255, green: 5/255, blue: 20/255).opacity(0.9 + 0.05 * Double(fogBreath))
+                        ],
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                    .frame(height: 90)
+                }
+
+                // Subtle fog wisps
+                if isDark {
+                    Ellipse()
+                        .fill(Color(hex: "#667eea").opacity(0.04 + 0.02 * Double(fogBreath)))
+                        .frame(width: 200, height: 40)
+                        .blur(radius: 20)
+                        .offset(x: -40, y: -20)
+                }
+            }
+            .allowsHitTesting(false)
         }
         .onAppear {
             withAnimation(.easeInOut(duration: 4.0).repeatForever(autoreverses: true)) {
@@ -571,13 +592,10 @@ struct DashboardGameCard: View {
     let route: AppRoute
     @Binding var navigationPath: NavigationPath
 
-    @Environment(\.colorScheme) private var envColorScheme
     @Environment(\.self) private var env
     @State private var appeared = false
     @State private var isPressed = false
     @State private var iconPulse: CGFloat = 0
-
-    private var isDark: Bool { envColorScheme == .dark }
 
     var body: some View {
         Button {
@@ -599,11 +617,11 @@ struct DashboardGameCard: View {
                         VStack(alignment: .leading, spacing: 6) {
                             Text(title)
                                 .font(.system(size: 19, weight: .bold))
-                                .foregroundStyle(isDark ? .white : .caribbeanInk)
+                                .foregroundStyle(.white)
 
                             Text(description)
                                 .font(.system(size: 14, weight: .medium))
-                                .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
+                                .foregroundStyle(.white.opacity(0.7))
                                 .lineLimit(3)
                                 .fixedSize(horizontal: false, vertical: true)
                         }
@@ -611,16 +629,43 @@ struct DashboardGameCard: View {
                     .padding(.top, 24)
                     .padding(.horizontal, 20)
 
-                    // CTA row
+                    // CTA row — premium gradient capsule
                     HStack {
                         Spacer()
-                        HStack(spacing: 6) {
+                        HStack(spacing: 8) {
                             Text(cta)
                                 .font(.system(size: 13, weight: .bold))
                             Image(systemName: "arrow.right")
-                                .font(.system(size: 12, weight: .bold))
+                                .font(.system(size: 11, weight: .bold))
                         }
-                        .foregroundStyle(colorScheme.primary)
+                        .foregroundStyle(.white)
+                        .padding(.horizontal, 16)
+                        .padding(.vertical, 9)
+                        .background(
+                            Capsule()
+                                .fill(
+                                    LinearGradient(
+                                        colors: colorScheme.gradient,
+                                        startPoint: .leading,
+                                        endPoint: .trailing
+                                    )
+                                )
+                                .overlay(
+                                    Capsule()
+                                        .fill(
+                                            LinearGradient(
+                                                colors: [.white.opacity(0.25), .clear],
+                                                startPoint: .top,
+                                                endPoint: .bottom
+                                            )
+                                        )
+                                )
+                                .overlay(
+                                    Capsule()
+                                        .strokeBorder(.white.opacity(0.25), lineWidth: 1)
+                                )
+                        )
+                        .shadow(color: colorScheme.primary.opacity(0.35), radius: 10, y: 3)
                     }
                     .padding(.top, 14)
                     .padding(.trailing, 20)
