@@ -106,7 +106,7 @@ struct DashboardView: View {
                     )
             )
         }
-        .buttonStyle(LumenPressStyle(weight: .soft))
+        .buttonStyle(LumenPressStyle(weight: .medium))
         .frame(maxWidth: .infinity, alignment: .leading)
     }
 
@@ -164,6 +164,7 @@ struct DashboardView: View {
                             .padding(8)
                             .background(Circle().fill(isDark ? .white.opacity(0.1) : Color.caribbeanMist.opacity(0.12)))
                     }
+                    .buttonStyle(LumenPressStyle(weight: .soft))
                 }
             }
 
@@ -424,12 +425,14 @@ struct DashboardView: View {
 
                     VStack(spacing: 8) {
                         ForEach(activities) { activity in
-                            Button {
-                                navigateToGame(for: activity)
-                            } label: {
-                                activityRow(activity)
-                            }
-                            .buttonStyle(LumenPressStyle(weight: .soft))
+                            activityRow(activity)
+                                .contentShape(Rectangle())
+                                .dashboardPress(
+                                    accentColor: GameCardColorScheme.forType(activity.gameTypeEnum ?? .flashCards).primary,
+                                    scale: 0.965
+                                ) {
+                                    navigateToGame(for: activity)
+                                }
                         }
                     }
                     .padding(16)
@@ -625,104 +628,101 @@ struct DashboardGameCard: View {
     @Environment(\.self) private var env
     @Environment(\.colorScheme) private var sysColorScheme
     @State private var appeared = false
-    @State private var isPressed = false
     @State private var iconPulse: CGFloat = 0
 
     private var isDark: Bool { sysColorScheme == .dark }
 
     var body: some View {
-        Button {
-            HapticsService.light()
-            navigationPath.append(route)
-        } label: {
-            ZStack(alignment: .top) {
-                // Top highlight bar — 5pt gradient at top
-                topHighlightBar
+        ZStack(alignment: .top) {
+            // Top highlight bar — 5pt gradient at top
+            topHighlightBar
 
-                // Card content
-                VStack(alignment: .leading, spacing: 0) {
-                    // Icon + Title + Description
-                    HStack(alignment: .top, spacing: 14) {
-                        // Gradient icon container with pulsing glow
-                        iconView
+            // Card content
+            VStack(alignment: .leading, spacing: 0) {
+                // Icon + Title + Description
+                HStack(alignment: .top, spacing: 14) {
+                    // Gradient icon container with pulsing glow
+                    iconView
 
-                        // Title + Description
-                        VStack(alignment: .leading, spacing: 6) {
-                            Text(title)
-                                .font(.system(size: 19, weight: .bold))
-                                .foregroundStyle(
-                                    LinearGradient(
-                                        colors: [colorScheme.primary, colorScheme.secondary],
-                                        startPoint: .leading,
-                                        endPoint: .trailing
-                                    )
+                    // Title + Description
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text(title)
+                            .font(.system(size: 19, weight: .bold))
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: [colorScheme.primary, colorScheme.secondary],
+                                    startPoint: .leading,
+                                    endPoint: .trailing
                                 )
+                            )
 
-                            Text(description)
-                                .font(.system(size: 14, weight: .medium))
-                                .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
-                                .lineLimit(3)
-                                .fixedSize(horizontal: false, vertical: true)
-                        }
+                        Text(description)
+                            .font(.system(size: 14, weight: .medium))
+                            .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
+                            .lineLimit(3)
+                            .fixedSize(horizontal: false, vertical: true)
                     }
-                    .padding(.top, 24)
-                    .padding(.horizontal, 20)
-
-                    // CTA row — premium gradient capsule
-                    HStack {
-                        Spacer()
-                        HStack(spacing: 8) {
-                            Text(cta)
-                                .font(.system(size: 13, weight: .bold))
-                            Image(systemName: "arrow.right")
-                                .font(.system(size: 11, weight: .bold))
-                        }
-                        .foregroundStyle(.white)
-                        .padding(.horizontal, 16)
-                        .padding(.vertical, 9)
-                        .background(
-                            Capsule()
-                                .fill(
-                                    LinearGradient(
-                                        colors: colorScheme.gradient,
-                                        startPoint: .leading,
-                                        endPoint: .trailing
-                                    )
-                                )
-                                .overlay(
-                                    Capsule()
-                                        .fill(
-                                            LinearGradient(
-                                                colors: [.white.opacity(0.25), .clear],
-                                                startPoint: .top,
-                                                endPoint: .bottom
-                                            )
-                                        )
-                                )
-                                .overlay(
-                                    Capsule()
-                                        .strokeBorder(.white.opacity(0.25), lineWidth: 1)
-                                )
-                        )
-                        .shadow(color: colorScheme.primary.opacity(0.35), radius: 10, y: 3)
-                    }
-                    .padding(.top, 14)
-                    .padding(.trailing, 20)
-                    .padding(.bottom, 20)
                 }
+                .padding(.top, 24)
+                .padding(.horizontal, 20)
+
+                // CTA row — premium gradient capsule
+                HStack {
+                    Spacer()
+                    HStack(spacing: 8) {
+                        Text(cta)
+                            .font(.system(size: 13, weight: .bold))
+                        Image(systemName: "arrow.right")
+                            .font(.system(size: 11, weight: .bold))
+                    }
+                    .foregroundStyle(.white)
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 9)
+                    .background(
+                        Capsule()
+                            .fill(
+                                LinearGradient(
+                                    colors: colorScheme.gradient,
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                )
+                            )
+                            .overlay(
+                                Capsule()
+                                    .fill(
+                                        LinearGradient(
+                                            colors: [.white.opacity(0.25), .clear],
+                                            startPoint: .top,
+                                            endPoint: .bottom
+                                        )
+                                    )
+                            )
+                            .overlay(
+                                Capsule()
+                                    .strokeBorder(.white.opacity(0.25), lineWidth: 1)
+                            )
+                    )
+                    .shadow(color: colorScheme.primary.opacity(0.35), radius: 10, y: 3)
+                }
+                .padding(.top, 14)
+                .padding(.trailing, 20)
+                .padding(.bottom, 20)
             }
-            .background(
-                // Glass card with color tint
-                GlassCardBackground(
-                    cornerRadius: 22,
-                    borderColor: colorScheme.primary,
-                    borderOpacity: 0.15,
-                    tintColor: colorScheme.tintColor
-                )
-            )
-            .clipShape(RoundedRectangle(cornerRadius: 22))
         }
-        .buttonStyle(GameCardButtonStyle())
+        .background(
+            // Glass card with color tint
+            GlassCardBackground(
+                cornerRadius: 22,
+                borderColor: colorScheme.primary,
+                borderOpacity: 0.15,
+                tintColor: colorScheme.tintColor
+            )
+        )
+        .clipShape(RoundedRectangle(cornerRadius: 22))
+        .contentShape(RoundedRectangle(cornerRadius: 22))
+        .dashboardPress(accentColor: colorScheme.primary, scale: 0.955) {
+            navigationPath.append(route)
+        }
         .opacity(appeared ? 1 : 0)
         .offset(y: appeared ? 0 : 20)
         .onAppear {
@@ -803,37 +803,81 @@ struct DashboardGameCard: View {
     }
 }
 
-/// Button style for game cards — delegates to premium LumenCardPressStyle.
-struct GameCardButtonStyle: ButtonStyle {
-    var accentColor: Color = .white
+// MARK: - Dashboard Press Modifier
 
-    func makeBody(configuration: Configuration) -> some View {
-        let pressed = configuration.isPressed
+/// A press-and-navigate modifier that lets the user SEE and FEEL the full press cycle
+/// before navigation fires. Uses a custom gesture instead of Button so timing is controlled.
+///
+/// Lifecycle: finger down → scale + dim + glow + haptic → finger up → spring bounce-back → navigate after bounce
+struct DashboardPressModifier: ViewModifier {
+    let accentColor: Color
+    let scaleAmount: CGFloat
+    let action: () -> Void
 
-        configuration.label
-            .scaleEffect(pressed ? 0.965 : 1.0)
-            .brightness(pressed ? -0.04 : 0)
+    @State private var isPressed = false
+    @GestureState private var isTouching = false
+
+    func body(content: Content) -> some View {
+        content
+            // Visual micro-expressions
+            .scaleEffect(isPressed ? scaleAmount : 1.0)
+            .brightness(isPressed ? -0.045 : 0)
             .shadow(
-                color: accentColor.opacity(pressed ? 0.25 : 0),
-                radius: pressed ? 14 : 0,
-                y: pressed ? 3 : 0
+                color: accentColor.opacity(isPressed ? 0.30 : 0),
+                radius: isPressed ? 16 : 0,
+                y: isPressed ? 3 : 0
             )
             .shadow(
-                color: .black.opacity(pressed ? 0.08 : 0.15),
-                radius: pressed ? 4 : 12,
-                y: pressed ? 1 : 6
+                color: .black.opacity(isPressed ? 0.06 : 0.12),
+                radius: isPressed ? 3 : 10,
+                y: isPressed ? 1 : 5
             )
-            .saturation(pressed ? 1.06 : 1.0)
-            .animation(
-                .spring(response: 0.30, dampingFraction: 0.62, blendDuration: 0),
-                value: pressed
+            .saturation(isPressed ? 1.08 : 1.0)
+            .animation(.spring(response: 0.25, dampingFraction: 0.65), value: isPressed)
+            // Gesture: tracks finger down/up with full control
+            .gesture(
+                DragGesture(minimumDistance: 0)
+                    .updating($isTouching) { _, state, _ in
+                        state = true
+                    }
+                    .onEnded { value in
+                        // Only navigate if finger didn't drag far (it's a tap, not a scroll)
+                        guard abs(value.translation.width) < 30,
+                              abs(value.translation.height) < 30 else { return }
+
+                        // Spring bounce-back animation, then navigate after it completes
+                        withAnimation(.spring(response: 0.25, dampingFraction: 0.65)) {
+                            isPressed = false
+                        }
+
+                        // Navigate after the spring-back animation has played
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.28) {
+                            action()
+                        }
+                    }
             )
-            .onChange(of: pressed) { _, isDown in
-                if isDown {
+            .onChange(of: isTouching) { _, touching in
+                if touching {
+                    // Finger down — depress immediately with haptic
+                    withAnimation(.spring(response: 0.20, dampingFraction: 0.70)) {
+                        isPressed = true
+                    }
                     let g = UIImpactFeedbackGenerator(style: .soft)
-                    g.impactOccurred(intensity: 0.6)
+                    g.impactOccurred(intensity: 0.7)
+                } else if isPressed {
+                    // Finger lifted without onEnded (e.g. scroll started) — snap back
+                    withAnimation(.spring(response: 0.25, dampingFraction: 0.65)) {
+                        isPressed = false
+                    }
                 }
             }
+    }
+}
+
+extension View {
+    /// Adds a delightful press-to-navigate interaction with full press cycle visibility.
+    func dashboardPress(accentColor: Color = .white, scale: CGFloat = 0.955, action: @escaping () -> Void) -> some View {
+        modifier(DashboardPressModifier(accentColor: accentColor, scaleAmount: scale, action: action))
     }
 }
 

@@ -334,7 +334,9 @@ struct CategoriesView: View {
 
         return Button {
             HapticsService.light()
-            navigateToGame(categoryId: item.id)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.18) {
+                navigateToGame(categoryId: item.id)
+            }
         } label: {
             VStack(alignment: .leading, spacing: isGridView ? 8 : 10) {
                 // Top row: icon + favorite
