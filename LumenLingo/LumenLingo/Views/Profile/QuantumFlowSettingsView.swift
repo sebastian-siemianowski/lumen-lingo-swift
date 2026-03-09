@@ -305,9 +305,12 @@ struct FullscreenQuantumFlowPreview: View {
                 .padding(.bottom, 50)
             }
         }
-        .gesture(
+        .simultaneousGesture(
             DragGesture(minimumDistance: 50)
                 .onEnded { gesture in
+                    let horizontal = abs(gesture.translation.width)
+                    let vertical = abs(gesture.translation.height)
+                    guard horizontal > vertical else { return }
                     if gesture.translation.width < -50 && canGoRight {
                         withAnimation(.easeInOut(duration: 0.3)) { currentIndex += 1 }
                     } else if gesture.translation.width > 50 && canGoLeft {

@@ -395,13 +395,16 @@ struct FullscreenNebulaPreview: View {
                 .padding(.bottom, 50)
             }
         }
-        .gesture(
+        .simultaneousGesture(
             DragGesture(minimumDistance: 50)
                 .onEnded { gesture in
-                    let horizontal = gesture.translation.width
-                    if horizontal < -50 && canGoRight {
+                    let horizontal = abs(gesture.translation.width)
+                    let vertical = abs(gesture.translation.height)
+                    guard horizontal > vertical else { return }
+                    if horizontal < 50 { return }
+                    if gesture.translation.width < 0 && canGoRight {
                         withAnimation(.easeInOut(duration: 0.3)) { currentIndex += 1 }
-                    } else if horizontal > 50 && canGoLeft {
+                    } else if gesture.translation.width > 0 && canGoLeft {
                         withAnimation(.easeInOut(duration: 0.3)) { currentIndex -= 1 }
                     }
                 }

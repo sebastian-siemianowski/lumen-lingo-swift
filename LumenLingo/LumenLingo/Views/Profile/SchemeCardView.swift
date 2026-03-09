@@ -14,7 +14,6 @@ struct SchemeCardView: View {
     var onFullscreen: (() -> Void)? = nil
 
     @Environment(\.colorScheme) private var colorScheme
-    @State private var isPressed = false
 
     init(
         name: String,
@@ -72,24 +71,10 @@ struct SchemeCardView: View {
             )
             .shadow(color: isSelected ? .purple.opacity(isDark ? 0.45 : 0.25) : .black.opacity(0.06), radius: 12, y: 4)
             .shadow(color: isSelected ? .purple.opacity(0.20) : .clear, radius: 6, y: 2)
-            .scaleEffect(isPressed ? 0.96 : (isSelected ? 1.02 : 1.0))
-            .brightness(isPressed ? -0.03 : 0)
-            .saturation(isPressed ? 1.06 : 1.0)
+            .scaleEffect(isSelected ? 1.02 : 1.0)
             .animation(.spring(response: 0.35, dampingFraction: 0.7), value: isSelected)
-            .animation(.spring(response: 0.25, dampingFraction: 0.65), value: isPressed)
         }
-        .buttonStyle(.plain)
-        .simultaneousGesture(
-            DragGesture(minimumDistance: 0)
-                .onChanged { _ in
-                    if !isPressed {
-                        let g = UIImpactFeedbackGenerator(style: .soft)
-                        g.impactOccurred(intensity: 0.5)
-                    }
-                    isPressed = true
-                }
-                .onEnded { _ in isPressed = false }
-        )
+        .buttonStyle(SchemeCardButtonStyle())
     }
 
     // MARK: - Preview Section
@@ -237,6 +222,25 @@ struct SchemeCardView: View {
     }
     .padding()
     .background(Color.black)
+}
+
+// MARK: - Scheme Card Button Style
+
+/// Custom button style that provides press feedback without blocking scroll gestures.
+/// Uses SwiftUI's built-in isPressed which cooperates with ScrollView.
+private struct SchemeCardButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .scaleEffect(configuration.isPressed ? 0.96 : 1.0)
+            .brightness(configuration.isPressed ? -0.03 : 0)
+            .animation(.spring(response: 0.25, dampingFraction: 0.65), value: configuration.isPressed)
+            .onChange(of: configuration.isPressed) { _, pressed in
+                if pressed {
+                    let g = UIImpactFeedbackGenerator(style: .soft)
+                    g.impactOccurred(intensity: 0.5)
+                }
+            }
+    }
 }
 
 // Amber color helper
