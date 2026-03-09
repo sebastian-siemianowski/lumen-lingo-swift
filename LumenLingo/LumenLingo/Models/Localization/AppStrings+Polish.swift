@@ -81,6 +81,7 @@ extension AppStrings {
         undo: "Cofnij",
         clear: "Wyczyść",
         check: "Sprawdź",
+        hint: "Podpowiedź",
         noWordsAvailable: "Brak dostępnych słów",
 
         // Game Complete

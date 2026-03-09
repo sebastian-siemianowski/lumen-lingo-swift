@@ -81,6 +81,7 @@ extension AppStrings {
         undo: "تراجع",
         clear: "مسح",
         check: "تحقّق",
+        hint: "تلميح",
         noWordsAvailable: "لا تتوفر كلمات",
 
         // Game Complete

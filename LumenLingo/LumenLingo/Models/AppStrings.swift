@@ -84,6 +84,7 @@ struct AppStrings {
     let undo: String
     let clear: String
     let check: String
+    let hint: String
     let noWordsAvailable: String
 
     // MARK: - Game Complete

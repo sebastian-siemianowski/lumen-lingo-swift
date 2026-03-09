@@ -247,6 +247,9 @@ struct DashboardView: View {
                     gradient: gradient,
                     showGlow: false
                 )
+            } else {
+                // Invisible spacer matching progress bar height for alignment
+                Color.clear.frame(height: 4)
             }
         }
         .frame(maxWidth: .infinity)

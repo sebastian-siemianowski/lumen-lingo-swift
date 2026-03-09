@@ -81,6 +81,7 @@ extension AppStrings {
         undo: "撤销",
         clear: "清除",
         check: "检查",
+        hint: "提示",
         noWordsAvailable: "暂无可用单词",
 
         // Game Complete

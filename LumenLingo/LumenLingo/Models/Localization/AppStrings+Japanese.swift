@@ -81,6 +81,7 @@ extension AppStrings {
         undo: "元に戻す",
         clear: "クリア",
         check: "チェック",
+        hint: "ヒント",
         noWordsAvailable: "利用可能な単語がありません",
 
         // Game Complete

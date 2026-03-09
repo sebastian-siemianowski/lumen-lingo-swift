@@ -81,6 +81,7 @@ extension AppStrings {
         undo: "Deshacer",
         clear: "Borrar",
         check: "Comprobar",
+        hint: "Pista",
         noWordsAvailable: "No hay palabras disponibles",
 
         // Game Complete

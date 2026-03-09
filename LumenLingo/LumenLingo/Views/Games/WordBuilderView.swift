@@ -48,9 +48,6 @@ struct WordBuilderView: View {
     @State private var hintGlowIndex: Int? = nil
     @State private var hintGlowOpacity: Double = 0
 
-    // Lumen Bar confidence
-    @State private var lumenSegments: Int = 4  // starts at middle (0-7)
-
     private var currentWord: WordBuilderWord? {
         guard currentIndex < words.count else { return nil }
         return words[currentIndex]
@@ -114,9 +111,6 @@ struct WordBuilderView: View {
         VStack(spacing: 0) {
             exerciseHeader
 
-            // Lumen Bar
-            lumenBar
-
             ScrollView {
                 VStack(spacing: 24) {
                     // Hint / Clue
@@ -148,37 +142,6 @@ struct WordBuilderView: View {
             resetIdleTimer()
         }
         .onDisappear { idleTimer?.invalidate() }
-    }
-
-    // MARK: - Lumen Bar (7-segment confidence meter)
-
-    private var lumenBar: some View {
-        HStack(spacing: 3) {
-            ForEach(0..<7, id: \.self) { seg in
-                RoundedRectangle(cornerRadius: 3)
-                    .fill(seg < lumenSegments ? lumenColor(for: seg) : .white.opacity(0.08))
-                    .frame(height: 6)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 3)
-                            .fill(seg < lumenSegments ? lumenColor(for: seg).opacity(0.5) : .clear)
-                            .blur(radius: 4)
-                    )
-            }
-        }
-        .padding(.horizontal, 20)
-        .padding(.vertical, 8)
-        .animation(.spring(response: 0.4), value: lumenSegments)
-    }
-
-    private func lumenColor(for segment: Int) -> Color {
-        switch segment {
-        case 0, 1: return .red
-        case 2, 3: return .orange
-        case 4: return .yellow
-        case 5: return Color(hex: "#22c55e")
-        case 6: return .cyan
-        default: return .gray
-        }
     }
 
     // MARK: - Exercise Header
@@ -495,31 +458,55 @@ struct WordBuilderView: View {
         return slotIndex
     }
 
+    // MARK: - Hint
+
+    private var hasAvailableLetters: Bool {
+        scrambledLetters.contains { !$0.isPlaced }
+    }
+
+    private func useHint() {
+        guard let word = currentWord else { return }
+        let wordChars = Array(word.word)
+        guard let slotIndex = placedLetters.firstIndex(where: { $0 == nil }),
+              slotIndex < wordChars.count else { return }
+
+        let correctChar = wordChars[slotIndex]
+        guard let letterToPlace = scrambledLetters.first(where: {
+            !$0.isPlaced && $0.character == correctChar
+        }) else { return }
+
+        placeLetter(letterToPlace)
+        audioService.playHintSparkle()
+        hapticsService.medium()
+    }
+
     // MARK: - Action Buttons
 
     private var actionButtons: some View {
-        HStack(spacing: 12) {
+        HStack(spacing: 8) {
             // Undo button
             Button {
                 undoLastLetter()
             } label: {
-                HStack(spacing: 6) {
+                HStack(spacing: 4) {
                     Image(systemName: "arrow.uturn.backward")
                     Text(L.undo)
                 }
-                .font(.subheadline.bold())
+                .font(.system(size: 13, weight: .semibold))
+                .lineLimit(1)
+                .minimumScaleFactor(0.75)
                 .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
-                .padding(.horizontal, 16)
-                .padding(.vertical, 12)
+                .padding(.horizontal, 10)
+                .padding(.vertical, 10)
                 .background(
                     GlassCardBackground(
-                        cornerRadius: 16,
+                        cornerRadius: 14,
                         borderColor: .cyan,
                         borderOpacity: 0.15,
                         tintColor: .cyan
                     )
                 )
-                .clipShape(RoundedRectangle(cornerRadius: 16))
+                .clipShape(RoundedRectangle(cornerRadius: 14))
             }
             .buttonStyle(LumenPressStyle(weight: .soft, accentColor: .cyan))
             .disabled(undoStack.isEmpty || isChecking)
@@ -529,26 +516,56 @@ struct WordBuilderView: View {
             Button {
                 clearAllLetters()
             } label: {
-                HStack(spacing: 6) {
+                HStack(spacing: 4) {
                     Image(systemName: "trash")
                     Text(L.clear)
                 }
-                .font(.subheadline.bold())
+                .font(.system(size: 13, weight: .semibold))
+                .lineLimit(1)
+                .minimumScaleFactor(0.75)
                 .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
-                .padding(.horizontal, 16)
-                .padding(.vertical, 12)
+                .padding(.horizontal, 10)
+                .padding(.vertical, 10)
                 .background(
                     GlassCardBackground(
-                        cornerRadius: 16,
+                        cornerRadius: 14,
                         borderColor: .red,
                         borderOpacity: 0.15,
                         tintColor: .red
                     )
                 )
-                .clipShape(RoundedRectangle(cornerRadius: 16))
+                .clipShape(RoundedRectangle(cornerRadius: 14))
             }
             .buttonStyle(LumenPressStyle(weight: .soft, accentColor: .red))
             .disabled(placedLetters.allSatisfy { $0 == nil })
+
+            // Hint button
+            Button {
+                useHint()
+            } label: {
+                HStack(spacing: 4) {
+                    Image(systemName: "lightbulb.fill")
+                    Text(L.hint)
+                }
+                .font(.system(size: 13, weight: .semibold))
+                .lineLimit(1)
+                .minimumScaleFactor(0.75)
+                .foregroundStyle(isDark ? .white.opacity(0.85) : .caribbeanPlum)
+                .padding(.horizontal, 10)
+                .padding(.vertical, 10)
+                .background(
+                    GlassCardBackground(
+                        cornerRadius: 14,
+                        borderColor: .purple,
+                        borderOpacity: 0.2,
+                        tintColor: .purple
+                    )
+                )
+                .clipShape(RoundedRectangle(cornerRadius: 14))
+            }
+            .buttonStyle(LumenPressStyle(weight: .soft, accentColor: .purple))
+            .disabled(!hasAvailableLetters || isChecking || isCorrect != nil)
+            .opacity(!hasAvailableLetters ? 0.4 : 1.0)
 
             Spacer()
 
@@ -556,16 +573,18 @@ struct WordBuilderView: View {
             Button {
                 checkAnswer()
             } label: {
-                HStack(spacing: 6) {
+                HStack(spacing: 4) {
                     Image(systemName: "checkmark")
                     Text(L.check)
                 }
-                .font(.subheadline.bold())
+                .font(.system(size: 13, weight: .semibold))
+                .lineLimit(1)
+                .minimumScaleFactor(0.75)
                 .foregroundStyle(.white)
-                .padding(.horizontal, 24)
-                .padding(.vertical, 12)
+                .padding(.horizontal, 14)
+                .padding(.vertical, 10)
                 .background(
-                    RoundedRectangle(cornerRadius: 16)
+                    RoundedRectangle(cornerRadius: 14)
                         .fill(
                             allSlotsFilled
                                 ? AnyShapeStyle(LinearGradient(
@@ -575,7 +594,7 @@ struct WordBuilderView: View {
                                 : AnyShapeStyle(.white.opacity(0.08))
                         )
                         .overlay(
-                            RoundedRectangle(cornerRadius: 16)
+                            RoundedRectangle(cornerRadius: 14)
                                 .strokeBorder(
                                     allSlotsFilled ? Color(hex: "#10b981").opacity(0.3) : .white.opacity(0.06),
                                     lineWidth: 1
@@ -735,7 +754,6 @@ struct WordBuilderView: View {
             correctCount += 1
             score += 15
             streak += 1
-            lumenSegments = min(7, lumenSegments + 1)
 
             if streak >= 3 {
                 audioService.playStreakBonus()
@@ -762,7 +780,6 @@ struct WordBuilderView: View {
         } else {
             wrongCount += 1
             streak = 0
-            lumenSegments = max(0, lumenSegments - 1)
             audioService.playSoftNudge()
             hapticsService.error()
 

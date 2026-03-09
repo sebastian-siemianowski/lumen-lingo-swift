@@ -81,6 +81,7 @@ extension AppStrings {
         undo: "Annuler",
         clear: "Effacer",
         check: "Vérifier",
+        hint: "Indice",
         noWordsAvailable: "Aucun mot disponible",
 
         // Game Complete

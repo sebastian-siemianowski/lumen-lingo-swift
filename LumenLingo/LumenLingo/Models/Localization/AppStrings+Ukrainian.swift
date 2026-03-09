@@ -81,6 +81,7 @@ extension AppStrings {
         undo: "Скасувати",
         clear: "Очистити",
         check: "Перевірити",
+        hint: "Підказка",
         noWordsAvailable: "Немає доступних слів",
 
         // Game Complete
