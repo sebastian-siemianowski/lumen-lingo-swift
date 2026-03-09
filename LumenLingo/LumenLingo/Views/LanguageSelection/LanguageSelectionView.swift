@@ -27,11 +27,7 @@ struct CountryFlagView: View {
         case "ES": triStripe(.red, Color(hex: "#FFC400"), .red, ratios: [1, 2, 1])
         case "FR": vStripe(Color(hex: "#002395"), .white, Color(hex: "#ED2939"))
         case "DE": triStripe(.black, Color(hex: "#DD0000"), Color(hex: "#FFCC00"))
-        case "IT": vStripe(Color(hex: "#009246"), .white, Color(hex: "#CE2B37"))
-        case "PT": ptFlag
         case "PL": biStripe(.white, Color(hex: "#DC143C"))
-        case "CZ": czFlag
-        case "AD": vStripe(Color(hex: "#0032A0"), Color(hex: "#FEDF00"), Color(hex: "#D1001F"))
         case "SA": saFlag
         case "CN": cnFlag
         case "JP": jpFlag
@@ -117,46 +113,6 @@ struct CountryFlagView: View {
                 p.closeSubpath()
             }
             .fill(color)
-        }
-    }
-
-    // MARK: - PT — Green/red with yellow circle emblem hint
-
-    private var ptFlag: some View {
-        GeometryReader { geo in
-            HStack(spacing: 0) {
-                Color(hex: "#006600")
-                    .frame(width: geo.size.width * 0.4)
-                Color(hex: "#FF0000")
-            }
-            .overlay(
-                Circle()
-                    .fill(Color(hex: "#FFCC00"))
-                    .frame(width: geo.size.height * 0.4, height: geo.size.height * 0.4)
-                    .position(x: geo.size.width * 0.4, y: geo.size.height * 0.5)
-            )
-        }
-    }
-
-    // MARK: - CZ — White/red with blue triangle
-
-    private var czFlag: some View {
-        GeometryReader { geo in
-            let w = geo.size.width
-            let h = geo.size.height
-            ZStack {
-                VStack(spacing: 0) {
-                    Color.white
-                    Color(hex: "#D7141A")
-                }
-                Path { p in
-                    p.move(to: .zero)
-                    p.addLine(to: CGPoint(x: w * 0.5, y: h * 0.5))
-                    p.addLine(to: CGPoint(x: 0, y: h))
-                    p.closeSubpath()
-                }
-                .fill(Color(hex: "#11457E"))
-            }
         }
     }
 

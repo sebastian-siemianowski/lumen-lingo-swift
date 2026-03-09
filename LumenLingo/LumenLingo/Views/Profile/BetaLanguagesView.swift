@@ -3,8 +3,8 @@ import SwiftData
 
 // MARK: - Beta Languages View
 
-/// React-parity Beta Languages tab.
-/// Shows core (top, always-active) and experimental (toggleable) language pairs.
+/// Beta Languages tab — groups all language pairs by source language.
+/// Core pairs (always-on) are marked with a seal; experimental pairs are toggleable.
 /// Pairs persist via SwiftData `EnabledBetaPair`.
 struct BetaLanguagesView: View {
     @Environment(\.modelContext) private var modelContext
@@ -12,14 +12,12 @@ struct BetaLanguagesView: View {
     @Environment(\.localization) private var localization
     @Query private var enabledPairs: [EnabledBetaPair]
 
+    /// Tracks which source-language groups are expanded
+    @State private var expandedSources: Set<SupportedLanguage> = []
+    @State private var hasInitialized = false
+
     private var L: AppStrings { localization.strings }
-
     private var isDark: Bool { colorScheme == .dark }
-
-    // Single-column for comfortable text display
-    private let columns = [
-        GridItem(.flexible())
-    ]
 
     // Core pairs — React's TOP_LANGUAGE_PAIRS (always on)
     private let corePairs: [LanguagePair] = [
@@ -32,26 +30,69 @@ struct BetaLanguagesView: View {
         .init(source: .german, target: .spanish),
     ]
 
-    // Experimental pairs — all remaining combos (toggleable)
-    private var experimentalPairs: [LanguagePair] {
-        LanguagePair.allAvailable.filter { pair in
-            !corePairs.contains(pair)
+    // MARK: - Data
+
+    /// All pairs grouped by source, sorted: core/builtIn first within each group
+    private var groupedPairs: [(source: SupportedLanguage, pairs: [LanguagePair])] {
+        let allPairs = LanguagePair.allAvailable
+        let grouped = Dictionary(grouping: allPairs) { $0.source }
+        return SupportedLanguage.allCases.compactMap { lang in
+            guard let pairs = grouped[lang], !pairs.isEmpty else { return nil }
+            let sorted = pairs.sorted { a, b in
+                let aCore = corePairs.contains(a)
+                let bCore = corePairs.contains(b)
+                if aCore != bCore { return aCore }
+                let aBuilt = a.isBuiltIn
+                let bBuilt = b.isBuiltIn
+                if aBuilt != bBuilt { return aBuilt }
+                return a.target.name(in: localization.sourceLanguage)
+                    < b.target.name(in: localization.sourceLanguage)
+            }
+            return (source: lang, pairs: sorted)
         }
     }
 
-    var body: some View {
-        VStack(spacing: 20) {
-            // Header
-            headerSection
+    /// Sources that have at least one active (core or enabled) pair — auto-expand on first load
+    private var sourcesWithActivePairs: Set<SupportedLanguage> {
+        var result = Set<SupportedLanguage>()
+        for pair in corePairs { result.insert(pair.source) }
+        for ep in enabledPairs {
+            if let lang = SupportedLanguage(rawValue: ep.sourceLanguage) {
+                result.insert(lang)
+            }
+        }
+        return result
+    }
 
-            // Beta disclaimer
+    private func isCorePair(_ pair: LanguagePair) -> Bool {
+        corePairs.contains(pair)
+    }
+
+    private func isPairEnabled(_ pair: LanguagePair) -> Bool {
+        enabledPairs.contains {
+            $0.sourceLanguage == pair.source.rawValue && $0.targetLanguage == pair.target.rawValue
+        }
+    }
+
+    // MARK: - Body
+
+    var body: some View {
+        VStack(spacing: 24) {
+            headerSection
             betaDisclaimer
 
-            // Core languages section (always on)
-            coreLanguagesSection
-
-            // Experimental languages section (toggleable)
-            experimentalLanguagesSection
+            // Language groups
+            VStack(spacing: 16) {
+                ForEach(groupedPairs, id: \.source) { group in
+                    sourceLanguageSection(group.source, pairs: group.pairs)
+                }
+            }
+        }
+        .onAppear {
+            if !hasInitialized {
+                expandedSources = sourcesWithActivePairs
+                hasInitialized = true
+            }
         }
     }
 
@@ -59,7 +100,6 @@ struct BetaLanguagesView: View {
 
     private var headerSection: some View {
         HStack(spacing: 12) {
-            // Icon container matching React's 44x44 rounded box
             ZStack {
                 RoundedRectangle(cornerRadius: 14, style: .continuous)
                     .fill(
@@ -139,203 +179,175 @@ struct BetaLanguagesView: View {
         )
     }
 
-    // MARK: - Core Languages Section
+    // MARK: - Source Language Section (Collapsible)
 
-    private var coreLanguagesSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            // Section header
-            HStack(spacing: 8) {
-                Image(systemName: "star.fill")
-                    .font(.system(size: 14))
-                    .foregroundStyle(isDark ? .yellow : .white)
+    private func sourceLanguageSection(_ source: SupportedLanguage, pairs: [LanguagePair]) -> some View {
+        let isExpanded = expandedSources.contains(source)
+        let coreCount = pairs.filter { isCorePair($0) }.count
+        let enabledCount = pairs.filter { isPairEnabled($0) }.count
+        let activeCount = coreCount + enabledCount
+        let hasActive = activeCount > 0
 
-                Text(L.coreLanguages)
-                    .font(.system(size: 14, weight: .bold))
-                    .foregroundStyle(.white)
+        return VStack(alignment: .leading, spacing: 0) {
+            // Section header — tap to expand/collapse
+            Button {
+                withAnimation(.easeInOut(duration: 0.3)) {
+                    if expandedSources.contains(source) {
+                        expandedSources.remove(source)
+                    } else {
+                        expandedSources.insert(source)
+                    }
+                }
+            } label: {
+                HStack(spacing: 12) {
+                    // Source flag
+                    CountryFlagView(countryCode: source.countryCode, size: 22)
 
-                // "Always on" badge
-                Text(L.alwaysOn)
-                    .font(.system(size: 10, weight: .bold))
-                    .foregroundStyle(isDark ? Color.green.opacity(0.9) : .white)
-                    .padding(.horizontal, 8)
-                    .padding(.vertical, 3)
-                    .background(
-                        Capsule()
-                            .fill(
-                                isDark
-                                    ? LinearGradient(
-                                        colors: [Color.green.opacity(0.2), Color.teal.opacity(0.2)],
-                                        startPoint: .leading,
-                                        endPoint: .trailing
-                                      )
-                                    : LinearGradient(
-                                        colors: [Color.white.opacity(0.25)],
-                                        startPoint: .leading,
-                                        endPoint: .trailing
-                                      )
-                            )
-                            .overlay(
+                    // Source language name
+                    Text(source.name(in: localization.sourceLanguage))
+                        .font(.system(size: 15, weight: .bold))
+                        .foregroundStyle(.white)
+
+                    Spacer()
+
+                    // Active count pill
+                    if hasActive {
+                        Text("\(activeCount) \(L.active.lowercased())")
+                            .font(.system(size: 10, weight: .bold, design: .rounded))
+                            .foregroundStyle(isDark ? .green.opacity(0.9) : .white.opacity(0.85))
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 3)
+                            .background(
                                 Capsule()
-                                    .strokeBorder(
-                                        isDark ? Color.green.opacity(0.3) : .white.opacity(0.35),
-                                        lineWidth: 1
+                                    .fill(isDark ? .green.opacity(0.12) : .white.opacity(0.15))
+                                    .overlay(
+                                        Capsule()
+                                            .strokeBorder(isDark ? .green.opacity(0.2) : .white.opacity(0.2), lineWidth: 0.5)
                                     )
                             )
-                    )
+                    }
 
-                Spacer()
+                    // Total count
+                    Text("\(pairs.count)")
+                        .font(.system(size: 11, weight: .semibold, design: .rounded))
+                        .foregroundStyle(.white.opacity(0.35))
+
+                    // Disclosure chevron
+                    Image(systemName: "chevron.right")
+                        .font(.system(size: 11, weight: .bold))
+                        .foregroundStyle(.white.opacity(0.3))
+                        .rotationEffect(.degrees(isExpanded ? 90 : 0))
+                }
+                .padding(.horizontal, 16)
+                .padding(.vertical, 14)
             }
+            .buttonStyle(.plain)
 
-            // 2-column grid of core pair cards
-            LazyVGrid(columns: columns, spacing: 10) {
-                ForEach(Array(corePairs.enumerated()), id: \.element.key) { index, pair in
-                    corePairCard(pair, index: index)
+            // Expanded content — height-clipped for smooth collapse
+            VStack(spacing: 4) {
+                ForEach(pairs, id: \.key) { pair in
+                    targetCard(pair)
                 }
             }
+            .padding(.top, 6)
+            .padding(.leading, 8)
+            .frame(maxHeight: isExpanded ? .infinity : 0, alignment: .top)
+            .clipped()
+            .opacity(isExpanded ? 1 : 0)
         }
-    }
-
-    // MARK: - Core Pair Card (Non-Toggleable)
-
-    private func corePairCard(_ pair: LanguagePair, index: Int) -> some View {
-        HStack(spacing: 14) {
-            // Country flags
-            HStack(spacing: 4) {
-                CountryFlagView(countryCode: pair.source.countryCode, size: 20)
-                Image(systemName: "arrow.right")
-                    .font(.system(size: 10, weight: .bold))
-                    .foregroundStyle(isDark ? .green.opacity(0.6) : .white.opacity(0.5))
-                CountryFlagView(countryCode: pair.target.countryCode, size: 20)
-            }
-
-            // Pair label — translated into user's source language
-            Text("\(pair.source.name(in: localization.sourceLanguage)) → \(pair.target.name(in: localization.sourceLanguage))")
-                .font(.system(size: 14, weight: .semibold))
-                .foregroundStyle(isDark ? Color(red: 0.86, green: 0.99, blue: 0.91) : .white)
-                .lineLimit(2)
-                .minimumScaleFactor(0.75)
-
-            Spacer(minLength: 4)
-
-            // Active indicator
-            Image(systemName: "checkmark.seal.fill")
-                .font(.system(size: 20))
-                .foregroundStyle(isDark ? .green : .white.opacity(0.9))
-        }
-        .padding(.horizontal, 16)
-        .padding(.vertical, 14)
+        .padding(.vertical, 2)
         .background(
             RoundedRectangle(cornerRadius: 16, style: .continuous)
                 .fill(
-                    isDark
-                        ? Color.white.opacity(index % 2 == 0 ? 0.04 : 0.06)
-                        : Color.white.opacity(index % 2 == 0 ? 0.06 : 0.1)
+                    hasActive
+                        ? (isDark ? Color.white.opacity(0.05) : Color.white.opacity(0.07))
+                        : (isDark ? Color.white.opacity(0.025) : Color.white.opacity(0.04))
                 )
                 .overlay(
                     RoundedRectangle(cornerRadius: 16, style: .continuous)
                         .strokeBorder(
-                            isDark ? Color.green.opacity(0.2) : .white.opacity(0.15),
+                            hasActive
+                                ? (isDark ? Color.white.opacity(0.07) : .white.opacity(0.1))
+                                : (isDark ? Color.white.opacity(0.03) : .white.opacity(0.06)),
                             lineWidth: 0.5
                         )
                 )
         )
     }
 
-    // MARK: - Experimental Languages Section
+    // MARK: - Target Card (Unified)
 
-    private var experimentalLanguagesSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            // Section header
-            HStack(spacing: 8) {
-                Image(systemName: "flask.fill")
-                    .font(.system(size: 14))
-                    .foregroundStyle(isDark ? .cyan : .white)
+    private func targetCard(_ pair: LanguagePair) -> some View {
+        let core = isCorePair(pair)
+        let enabled = isPairEnabled(pair)
+        let active = core || enabled
 
-                Text(L.experimentalLanguagesSection)
-                    .font(.system(size: 14, weight: .bold))
-                    .foregroundStyle(isDark ? Color(red: 0.65, green: 0.95, blue: 0.99) : .white)
+        let labelColor: Color = active
+            ? (isDark ? .white.opacity(0.9) : .white)
+            : (isDark ? .white.opacity(0.45) : .white.opacity(0.5))
 
-                Spacer()
-            }
+        return HStack(spacing: 12) {
+            // Target flag
+            CountryFlagView(countryCode: pair.target.countryCode, size: 18)
 
-            // 2-column grid of experimental pair cards
-            LazyVGrid(columns: columns, spacing: 10) {
-                ForEach(Array(experimentalPairs.enumerated()), id: \.element.key) { index, pair in
-                    experimentalPairCard(pair, index: index)
-                }
-            }
-        }
-    }
-
-    // MARK: - Experimental Pair Card (Toggleable)
-
-    private func experimentalPairCard(_ pair: LanguagePair, index: Int) -> some View {
-        let isEnabled = enabledPairs.contains {
-            $0.sourceLanguage == pair.source.rawValue && $0.targetLanguage == pair.target.rawValue
-        }
-
-        let labelColor: Color = isEnabled
-            ? (isDark ? Color(red: 0.95, green: 0.91, blue: 1.0) : .white)
-            : (isDark ? Color.white.opacity(0.75) : .white.opacity(0.7))
-
-        let toggleColor: Color = isEnabled
-            ? (isDark ? .purple : .white)
-            : (isDark ? Color(red: 0.81, green: 0.79, blue: 0.84) : .white.opacity(0.6))
-
-        let cardBorderColor: Color = isEnabled
-            ? (isDark ? Color.purple.opacity(0.4) : .white.opacity(0.35))
-            : (isDark ? Color.purple.opacity(0.35) : .white.opacity(0.15))
-
-        let cardContent = HStack(spacing: 14) {
-            // Country flags
-            HStack(spacing: 4) {
-                CountryFlagView(countryCode: pair.source.countryCode, size: 20)
-                Image(systemName: "arrow.right")
-                    .font(.system(size: 10, weight: .bold))
-                    .foregroundStyle(isEnabled
-                        ? (isDark ? Color.purple.opacity(0.5) : .white.opacity(0.5))
-                        : (isDark ? Color.white.opacity(0.2) : .white.opacity(0.3)))
-                CountryFlagView(countryCode: pair.target.countryCode, size: 20)
-            }
-
-            // Pair label — translated
-            Text("\(pair.source.name(in: localization.sourceLanguage)) → \(pair.target.name(in: localization.sourceLanguage))")
-                .font(.system(size: 14, weight: .semibold))
+            // Target name
+            Text(pair.target.name(in: localization.sourceLanguage))
+                .font(.system(size: 14, weight: active ? .semibold : .regular))
                 .foregroundStyle(labelColor)
-                .lineLimit(2)
-                .minimumScaleFactor(0.75)
+
+            // Core badge
+            if core {
+                Text(L.alwaysOn)
+                    .font(.system(size: 9, weight: .bold))
+                    .foregroundStyle(isDark ? .green.opacity(0.8) : .white.opacity(0.8))
+                    .padding(.horizontal, 6)
+                    .padding(.vertical, 2)
+                    .background(
+                        Capsule()
+                            .fill(isDark ? .green.opacity(0.12) : .white.opacity(0.12))
+                    )
+            } else if pair.isBuiltIn && !enabled {
+                // Subtle "available" indicator for built-in pairs
+                Circle()
+                    .fill(isDark ? .cyan.opacity(0.3) : .white.opacity(0.3))
+                    .frame(width: 5, height: 5)
+            }
 
             Spacer(minLength: 4)
 
-            // Toggle indicator
-            Image(systemName: isEnabled ? "checkmark.circle.fill" : "circle")
-                .font(.system(size: 22))
-                .foregroundStyle(toggleColor)
+            // Status icon
+            if core {
+                Image(systemName: "checkmark.seal.fill")
+                    .font(.system(size: 16))
+                    .foregroundStyle(isDark ? .green.opacity(0.8) : .white.opacity(0.85))
+            } else {
+                Image(systemName: enabled ? "checkmark.circle.fill" : "circle")
+                    .font(.system(size: 18))
+                    .foregroundStyle(
+                        enabled
+                            ? (isDark ? .purple.opacity(0.9) : .white.opacity(0.9))
+                            : (isDark ? .white.opacity(0.15) : .white.opacity(0.25))
+                    )
+            }
         }
-        .padding(.horizontal, 16)
-        .padding(.vertical, 14)
-
-        let cardBackground = RoundedRectangle(cornerRadius: 16, style: .continuous)
-            .fill(
-                isEnabled
-                    ? (isDark ? Color.white.opacity(0.1) : Color.white.opacity(0.12))
-                    : (isDark
-                        ? Color.white.opacity(index % 2 == 0 ? 0.04 : 0.06)
-                        : Color.white.opacity(index % 2 == 0 ? 0.06 : 0.1))
-            )
-            .overlay(
-                RoundedRectangle(cornerRadius: 16, style: .continuous)
-                    .strokeBorder(cardBorderColor, lineWidth: 0.5)
-            )
-
-        return cardContent
-            .background(cardBackground)
-            .contentShape(Rectangle())
-            .onTapGesture {
-                withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
+        .padding(.horizontal, 14)
+        .padding(.vertical, 10)
+        .background(
+            RoundedRectangle(cornerRadius: 10, style: .continuous)
+                .fill(
+                    active
+                        ? (isDark ? Color.white.opacity(0.04) : Color.white.opacity(0.07))
+                        : Color.clear
+                )
+        )
+        .contentShape(Rectangle())
+        .onTapGesture {
+            if !core {
+                withAnimation(.spring(response: 0.3, dampingFraction: 0.75)) {
                     togglePair(pair)
                 }
             }
+        }
     }
 
     // MARK: - Toggle Logic

@@ -418,7 +418,7 @@ struct MembershipView: View {
         ),
         .init(
             question: "Which languages are available?",
-            answer: "We support 9 languages (English, Spanish, French, German, Italian, Portuguese, Polish, Czech, Catalan) with 7 built-in pairs and additional beta pairs for higher tiers."
+            answer: "We support 9 languages (English, Spanish, French, German, Polish, Arabic, Chinese, Japanese, Ukrainian) with 7 built-in pairs and additional beta pairs for higher tiers."
         ),
         .init(
             question: "Can I switch plans?",
