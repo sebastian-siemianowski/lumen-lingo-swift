@@ -212,14 +212,14 @@ fragment float4 quantumFlowFragment(
             }
             
             // Opacity factor: base layer full, others fade
-            float opacityFactor = isBase ? 1.0 : (0.8 - float(layer) * 0.2);
-            float baseAlpha = dark ? 0.21 : 0.32;
+            float opacityFactor = isBase ? 1.0 : (0.88 - float(layer) * 0.18);
+            float baseAlpha = dark ? 0.28 : 0.42;
             float alpha = min(baseAlpha * scaledIntensity * opacityFactor * blendFac,
-                              dark ? 0.88 : 0.85);
+                              dark ? 0.95 : 0.92);
             
             float intensityBoost = dark
-                ? min(1.0 + scaledIntensity * 0.2, 1.3)
-                : min(1.0 + scaledIntensity * 0.18, 1.22);
+                ? min(1.0 + scaledIntensity * 0.3, 1.5)
+                : min(1.0 + scaledIntensity * 0.25, 1.4);
             
             float curtainAlpha = alpha * curtainShape * intensityBoost;
             
@@ -240,13 +240,13 @@ fragment float4 quantumFlowFragment(
                 float glowSpread = curtainHeight * 0.6;
                 float glowT = exp(-(uv.y - glowCenterY) * (uv.y - glowCenterY) / (2.0 * glowSpread * glowSpread));
                 float glowAlpha = dark
-                    ? min(alpha * 0.45, 0.3) * glowT * scaledIntensity
-                    : min(alpha * 0.30, 0.2) * glowT * scaledIntensity;
+                    ? min(alpha * 0.58, 0.4) * glowT * scaledIntensity
+                    : min(alpha * 0.40, 0.28) * glowT * scaledIntensity;
                 
                 if (dark) {
-                    col += curtainColor * glowAlpha * 0.6;
+                    col += curtainColor * glowAlpha * 0.78;
                 } else {
-                    col = mix(col, curtainColor, glowAlpha * 0.5);
+                    col = mix(col, curtainColor, glowAlpha * 0.65);
                 }
             }
         }
