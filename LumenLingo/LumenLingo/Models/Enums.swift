@@ -61,6 +61,15 @@ enum Difficulty: String, Codable, CaseIterable, Identifiable {
         case .advanced: return .red
         }
     }
+
+    /// Richer, deeper colours that pop against the Caribbean gradient in light mode
+    var lightModeColor: Color {
+        switch self {
+        case .beginner: return Color(hex: "#059669")     // emerald-600
+        case .intermediate: return Color(hex: "#D97706") // amber-600
+        case .advanced: return Color(hex: "#DC2626")     // red-600
+        }
+    }
 }
 
 // MARK: - Performance Mood (Grammar game)

@@ -153,10 +153,9 @@ struct LiquidCardButtonStyle: ButtonStyle {
 
 // MARK: - Premium Transparent Card Background
 
-/// A stunning multi-layer transparent glass card background that mirrors
-/// the premium flashcard aesthetic — iridescent border, prismatic inner glow,
-/// specular highlights, and triple shadow depth. Adapted for smaller card use
-/// (category grids, dashboard cards) without per-card animation overhead.
+/// A 10-layer transparent crystal card — iridescent border, prismatic inner glow,
+/// glass-curvature highlights, accent bloom, and quad shadow depth.
+/// Designed to feel like a physical collectible holographic card.
 struct PremiumTransparentCardBackground: View {
     @Environment(\.colorScheme) private var colorScheme
 
@@ -167,111 +166,163 @@ struct PremiumTransparentCardBackground: View {
 
     var body: some View {
         ZStack {
-            // Layer 1: Crystal-clear frosted glass — background shines through
+            // Layer 1: Crystal substrate — ultra-thin material, very transparent
             RoundedRectangle(cornerRadius: cornerRadius)
                 .fill(.ultraThinMaterial)
-                .opacity(isDark ? 0.20 : 0.35)
+                .opacity(isDark ? 0.18 : 0.40)
 
-            // Layer 2: Prismatic inner refraction glow
+            // Layer 2: Glass curvature highlight band — convex lens refraction at top
+            VStack(spacing: 0) {
+                RoundedRectangle(cornerRadius: cornerRadius)
+                    .fill(
+                        LinearGradient(
+                            colors: isDark
+                                ? [.white.opacity(0.14), .white.opacity(0.04), .clear]
+                                : [.white.opacity(0.40), .white.opacity(0.10), .clear],
+                            startPoint: .top,
+                            endPoint: .center
+                        )
+                    )
+                    .frame(height: 60)
+                Spacer()
+            }
+            .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+
+            // Layer 3: Prismatic refraction — diagonal sweep
             RoundedRectangle(cornerRadius: cornerRadius)
                 .fill(
                     LinearGradient(
                         colors: isDark
                             ? [
-                                Color.white.opacity(0.06),
+                                Color.white.opacity(0.05),
+                                Color.clear,
+                                Color(hex: "#818cf8").opacity(0.04),
                                 Color.clear,
                                 Color.white.opacity(0.03),
                               ]
                             : [
-                                Color(hex: "#C494FC").opacity(0.12),
+                                Color(hex: "#C494FC").opacity(0.10),
                                 Color.clear,
                                 Color(hex: "#F472B6").opacity(0.06),
+                                Color.clear,
+                                Color(hex: "#FB923C").opacity(0.05),
                               ],
                         startPoint: .topLeading,
                         endPoint: .bottomTrailing
                     )
                 )
 
-            // Layer 3: Accent colour tint — very subtle category identity
+            // Layer 4: Accent colour identity bloom — radial from icon corner
             RoundedRectangle(cornerRadius: cornerRadius)
-                .fill(accentColor.opacity(isDark ? 0.06 : 0.08))
+                .fill(
+                    RadialGradient(
+                        colors: [
+                            accentColor.opacity(isDark ? 0.10 : 0.12),
+                            accentColor.opacity(isDark ? 0.03 : 0.04),
+                            Color.clear,
+                        ],
+                        center: .topLeading,
+                        startRadius: 0,
+                        endRadius: 200
+                    )
+                )
 
-            // Layer 4: Iridescent angular gradient border
+            // Layer 5: Iridescent angular gradient border — holographic edge
             RoundedRectangle(cornerRadius: cornerRadius)
                 .strokeBorder(
                     AngularGradient(
                         stops: isDark
                             ? [
-                                .init(color: Color.white.opacity(0.40), location: 0.00),
-                                .init(color: Color(hex: "#a5f3fc").opacity(0.30), location: 0.12),
-                                .init(color: Color(hex: "#818cf8").opacity(0.35), location: 0.28),
-                                .init(color: Color(hex: "#f9a8d4").opacity(0.25), location: 0.42),
-                                .init(color: Color.white.opacity(0.45), location: 0.55),
-                                .init(color: Color(hex: "#fde68a").opacity(0.25), location: 0.68),
-                                .init(color: Color(hex: "#6ee7b7").opacity(0.30), location: 0.82),
-                                .init(color: Color.white.opacity(0.40), location: 1.00),
+                                .init(color: Color.white.opacity(0.45), location: 0.00),
+                                .init(color: Color(hex: "#a5f3fc").opacity(0.35), location: 0.10),
+                                .init(color: Color(hex: "#818cf8").opacity(0.40), location: 0.25),
+                                .init(color: Color(hex: "#f9a8d4").opacity(0.30), location: 0.38),
+                                .init(color: Color.white.opacity(0.50), location: 0.50),
+                                .init(color: Color(hex: "#fde68a").opacity(0.30), location: 0.62),
+                                .init(color: Color(hex: "#6ee7b7").opacity(0.35), location: 0.75),
+                                .init(color: Color(hex: "#c084fc").opacity(0.30), location: 0.88),
+                                .init(color: Color.white.opacity(0.45), location: 1.00),
                               ]
                             : [
-                                .init(color: Color.white.opacity(0.65), location: 0.00),
-                                .init(color: Color(hex: "#C494FC").opacity(0.55), location: 0.12),
-                                .init(color: Color(hex: "#818cf8").opacity(0.45), location: 0.28),
-                                .init(color: Color(hex: "#F472B6").opacity(0.40), location: 0.42),
-                                .init(color: Color.white.opacity(0.70), location: 0.55),
-                                .init(color: Color(hex: "#FB923C").opacity(0.35), location: 0.68),
-                                .init(color: Color(hex: "#6ee7b7").opacity(0.40), location: 0.82),
-                                .init(color: Color.white.opacity(0.65), location: 1.00),
+                                .init(color: Color.white.opacity(0.75), location: 0.00),
+                                .init(color: Color(hex: "#C494FC").opacity(0.60), location: 0.10),
+                                .init(color: Color(hex: "#818cf8").opacity(0.50), location: 0.25),
+                                .init(color: Color(hex: "#F472B6").opacity(0.45), location: 0.38),
+                                .init(color: Color.white.opacity(0.80), location: 0.50),
+                                .init(color: Color(hex: "#FB923C").opacity(0.40), location: 0.62),
+                                .init(color: Color(hex: "#6ee7b7").opacity(0.45), location: 0.75),
+                                .init(color: Color(hex: "#c084fc").opacity(0.50), location: 0.88),
+                                .init(color: Color.white.opacity(0.75), location: 1.00),
                               ],
                         center: .center
                     ),
                     lineWidth: isDark ? 1.0 : 0.8
                 )
-                .opacity(isDark ? 0.6 : 0.75)
+                .opacity(isDark ? 0.65 : 0.80)
 
-            // Layer 5: Secondary inner border for depth
+            // Layer 6: Secondary inner border — depth illusion
             RoundedRectangle(cornerRadius: cornerRadius - 1)
                 .strokeBorder(
                     isDark
                         ? Color.white.opacity(0.06)
-                        : Color.white.opacity(0.20),
+                        : Color.white.opacity(0.25),
                     lineWidth: 0.5
                 )
                 .padding(1)
 
-            // Layer 6: Top rim specular highlight
+            // Layer 7: Top rim specular capsule — bright catch-light
             VStack {
                 Capsule()
                     .fill(
                         LinearGradient(
                             colors: isDark
-                                ? [.clear, .white.opacity(0.40), .white.opacity(0.40), .clear]
-                                : [.clear, .white.opacity(0.55), .white.opacity(0.55), .clear],
+                                ? [.clear, .white.opacity(0.45), .white.opacity(0.45), .clear]
+                                : [.clear, .white.opacity(0.65), .white.opacity(0.65), .clear],
                             startPoint: .leading,
                             endPoint: .trailing
                         )
                     )
                     .frame(height: isDark ? 0.8 : 0.6)
-                    .padding(.horizontal, 24)
+                    .padding(.horizontal, 20)
                 Spacer()
             }
 
-            // Layer 7: Bottom edge subtle glow
+            // Layer 8: Bottom grounding shadow-fade
+            VStack {
+                Spacer()
+                RoundedRectangle(cornerRadius: cornerRadius)
+                    .fill(
+                        LinearGradient(
+                            colors: isDark
+                                ? [.clear, .black.opacity(0.06)]
+                                : [.clear, Color(hex: "#2D163E").opacity(0.04)],
+                            startPoint: .center,
+                            endPoint: .bottom
+                        )
+                    )
+                    .frame(height: 40)
+            }
+            .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+
+            // Layer 9: Bottom edge specular line
             VStack {
                 Spacer()
                 Capsule()
                     .fill(
                         LinearGradient(
-                            colors: [.clear, .white.opacity(isDark ? 0.08 : 0.15), .clear],
+                            colors: [.clear, .white.opacity(isDark ? 0.10 : 0.20), .clear],
                             startPoint: .leading,
                             endPoint: .trailing
                         )
                     )
                     .frame(height: 0.5)
-                    .padding(.horizontal, 36)
+                    .padding(.horizontal, 32)
             }
         }
-        // Triple shadow stack for depth
-        .shadow(color: isDark ? .black.opacity(0.20) : Color(hex: "#C494FC").opacity(0.15), radius: 25, x: 0, y: 12)
-        .shadow(color: isDark ? accentColor.opacity(0.08) : Color(hex: "#F472B6").opacity(0.08), radius: 20, x: 0, y: 6)
-        .shadow(color: Color.white.opacity(isDark ? 0.02 : 0.04), radius: 1, x: 0, y: -1)
+        // Quad shadow stack — deep ambient, accent bloom, coloured lift, rim light
+        .shadow(color: isDark ? .black.opacity(0.22) : Color(hex: "#2D163E").opacity(0.12), radius: 28, x: 0, y: 14)
+        .shadow(color: accentColor.opacity(isDark ? 0.06 : 0.10), radius: 24, x: 0, y: 8)
+        .shadow(color: isDark ? .clear : Color(hex: "#F472B6").opacity(0.06), radius: 16, x: 0, y: 4)
+        .shadow(color: Color.white.opacity(isDark ? 0.02 : 0.05), radius: 1, x: 0, y: -1)
     }
 }

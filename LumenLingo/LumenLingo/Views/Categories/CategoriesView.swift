@@ -328,21 +328,13 @@ struct CategoriesView: View {
             navigateToGame(categoryId: item.id)
         } label: {
             VStack(alignment: .leading, spacing: isGridView ? 8 : 10) {
-                // Top row: icon + item count + favorite
+                // Top row: icon + favorite
                 HStack(alignment: .top, spacing: 8) {
                     LiquidGlassIconContainer(
                         systemName: categoryIcon(item),
                         gradient: colors,
                         size: isGridView ? 40 : 48
                     )
-
-                    // Item count pill
-                    Text("\(item.itemCount) \(L.items)")
-                        .font(.system(size: 10, weight: .semibold, design: .rounded))
-                        .foregroundStyle(isDark ? .white.opacity(0.55) : .caribbeanPlum)
-                        .padding(.horizontal, 7)
-                        .padding(.vertical, 3)
-                        .background(Capsule().fill(isDark ? .white.opacity(0.08) : Color(hex: "#C494FC").opacity(0.14)))
 
                     Spacer()
 
@@ -418,60 +410,95 @@ struct CategoriesView: View {
     // MARK: - Circular Progress (Grid Cards)
 
     private func circularProgress(pct: Double, completed: Bool, colors: [Color]) -> some View {
-        ZStack {
-            // Track
-            Circle()
-                .stroke(isDark ? .white.opacity(0.08) : Color(hex: "#C494FC").opacity(0.15), lineWidth: 3)
-
-            // Fill arc
-            Circle()
-                .trim(from: 0, to: min(pct / 100.0, 1.0))
-                .stroke(
-                    completed
-                        ? AnyShapeStyle(.green)
-                        : AnyShapeStyle(LinearGradient(colors: colors, startPoint: .topLeading, endPoint: .bottomTrailing)),
-                    style: StrokeStyle(lineWidth: 3, lineCap: .round)
-                )
-                .rotationEffect(.degrees(-90))
-
-            // Centre label
-            if completed {
+        let completedGreen: Color = isDark ? .green : Color(hex: "#059669")
+        return ZStack {
+            if completed && !isDark {
+                // Light mode completed: solid emerald circle with white checkmark
+                Circle()
+                    .fill(completedGreen)
+                Image(systemName: "checkmark")
+                    .font(.system(size: 12, weight: .bold))
+                    .foregroundStyle(.white)
+            } else if completed {
+                // Dark mode completed: ring + green checkmark
+                Circle()
+                    .stroke(.white.opacity(0.08), lineWidth: 3)
+                Circle()
+                    .trim(from: 0, to: 1.0)
+                    .stroke(completedGreen, style: StrokeStyle(lineWidth: 3, lineCap: .round))
+                    .rotationEffect(.degrees(-90))
                 Image(systemName: "checkmark")
                     .font(.system(size: 10, weight: .bold))
-                    .foregroundStyle(.green)
+                    .foregroundStyle(completedGreen)
             } else {
+                // In-progress: track + gradient arc + percentage
+                Circle()
+                    .stroke(isDark ? .white.opacity(0.08) : Color(hex: "#C494FC").opacity(0.15), lineWidth: 3)
+                Circle()
+                    .trim(from: 0, to: min(pct / 100.0, 1.0))
+                    .stroke(
+                        LinearGradient(colors: colors, startPoint: .topLeading, endPoint: .bottomTrailing),
+                        style: StrokeStyle(lineWidth: 3, lineCap: .round)
+                    )
+                    .rotationEffect(.degrees(-90))
                 Text("\(Int(pct))")
                     .font(.system(size: 9, weight: .bold, design: .rounded))
                     .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
             }
         }
         .frame(width: 34, height: 34)
+        .shadow(color: completed && !isDark ? completedGreen.opacity(0.35) : .clear, radius: 4, x: 0, y: 2)
     }
 
     // MARK: - Progress Label (List Cards)
 
     private func progressLabel(pct: Double, mastered: Int, total: Int, completed: Bool) -> some View {
-        HStack(spacing: 4) {
-            if completed {
-                Image(systemName: "checkmark.seal.fill")
-                    .font(.system(size: 9))
-                Text(L.complete)
-                    .font(.caption2.bold())
+        let completedGreen: Color = isDark ? .green : Color(hex: "#059669")
+        return Group {
+            if completed && !isDark {
+                // Light mode completed: solid emerald pill with white text
+                HStack(spacing: 4) {
+                    Image(systemName: "checkmark.seal.fill")
+                        .font(.system(size: 9))
+                    Text(L.complete)
+                        .font(.caption2.bold())
+                }
+                .foregroundStyle(.white)
+                .padding(.horizontal, 8)
+                .padding(.vertical, 3)
+                .background(
+                    Capsule().fill(completedGreen)
+                        .overlay(Capsule().strokeBorder(.white.opacity(0.25), lineWidth: 0.5))
+                )
+                .shadow(color: completedGreen.opacity(0.35), radius: 4, x: 0, y: 2)
+            } else if completed {
+                // Dark mode completed
+                HStack(spacing: 4) {
+                    Image(systemName: "checkmark.seal.fill")
+                        .font(.system(size: 9))
+                    Text(L.complete)
+                        .font(.caption2.bold())
+                }
+                .foregroundStyle(completedGreen)
             } else {
-                Text("\(mastered)/\(total)")
-                    .font(.caption2)
-                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
-                Text("·")
-                    .foregroundStyle(isDark ? .white.opacity(0.25) : .caribbeanMist)
-                Text("\(Int(pct))%")
-                    .font(.caption2.bold())
+                // In-progress
+                HStack(spacing: 4) {
+                    Text("\(mastered)/\(total)")
+                        .font(.caption2)
+                        .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
+                    Text("·")
+                        .foregroundStyle(isDark ? .white.opacity(0.25) : .caribbeanMist)
+                    Text("\(Int(pct))%")
+                        .font(.caption2.bold())
+                }
+                .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
             }
         }
-        .foregroundStyle(completed ? .green : (isDark ? .white.opacity(0.6) : .caribbeanPlum))
     }
 
     private func difficultyBadge(_ difficulty: Difficulty) -> some View {
-        HStack(spacing: 3) {
+        let pillColor = isDark ? difficulty.color : difficulty.lightModeColor
+        return HStack(spacing: 3) {
             ForEach(0..<difficulty.starCount, id: \.self) { _ in
                 Image(systemName: "star.fill")
                     .font(.system(size: 7))
@@ -479,14 +506,22 @@ struct CategoriesView: View {
             Text(difficulty.rawValue.capitalized)
                 .font(.system(size: 10, weight: .semibold, design: .rounded))
         }
-        .foregroundStyle(difficulty.color)
+        // Dark mode: colored text on translucent tinted pill
+        // Light mode: white text on solid opaque colored pill — maximum contrast on Caribbean gradient
+        .foregroundStyle(isDark ? pillColor : .white)
         .padding(.horizontal, 8)
         .padding(.vertical, 4)
         .background(
             Capsule()
-                .fill(difficulty.color.opacity(0.12))
-                .overlay(Capsule().strokeBorder(difficulty.color.opacity(0.15), lineWidth: 0.5))
+                .fill(isDark ? pillColor.opacity(0.12) : pillColor)
+                .overlay(
+                    Capsule().strokeBorder(
+                        isDark ? pillColor.opacity(0.15) : .white.opacity(0.30),
+                        lineWidth: 0.5
+                    )
+                )
         )
+        .shadow(color: isDark ? .clear : pillColor.opacity(0.35), radius: 4, x: 0, y: 2)
     }
 
     // MARK: - Empty State
