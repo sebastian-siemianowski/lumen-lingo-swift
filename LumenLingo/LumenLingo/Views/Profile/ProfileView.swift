@@ -481,17 +481,14 @@ struct ProfileView: View {
 
                 Spacer()
 
-                Button {
-                    showLanguageSelector = true
-                } label: {
-                    Image(systemName: "chevron.right")
-                        .font(.system(size: 12, weight: .bold))
-                        .foregroundStyle(isDark ? .white.opacity(0.3) : .caribbeanMist)
-                }
-                .buttonStyle(LumenPressStyle(weight: .soft))
+                Image(systemName: "chevron.right")
+                    .font(.system(size: 12, weight: .bold))
+                    .foregroundStyle(isDark ? .white.opacity(0.3) : .caribbeanMist)
             }
             .contentShape(Rectangle())
-            .onTapGesture { showLanguageSelector = true }
+            .lumenNavigationPress(accentColor: .cyan, scale: 0.97) {
+                showLanguageSelector = true
+            }
         }
     }
 

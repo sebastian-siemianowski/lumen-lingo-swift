@@ -126,7 +126,7 @@ struct MembershipView: View {
                     .overlay(Capsule().strokeBorder(.white.opacity(0.06), lineWidth: 1))
             )
         }
-        .buttonStyle(.plain)
+        .buttonStyle(LumenPressStyle(weight: .medium))
     }
 
     // MARK: - Comparison Table
@@ -297,6 +297,7 @@ struct TierCardView: View {
     let index: Int
 
     @State private var isHovered = false
+    @State private var ctaPressed = false
 
     private var price: Double {
         tier.priceMonthly
@@ -394,30 +395,50 @@ struct TierCardView: View {
             }
 
             // CTA button
-            Button {
-                // Mock — no IAP
-            } label: {
-                Text(tier.cta)
-                    .font(.subheadline.bold())
-                    .foregroundStyle(.white)
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 12)
-                    .background(
-                        Capsule()
-                            .fill(
-                                tier.isCurrent
-                                    ? AnyShapeStyle(.white.opacity(0.08))
-                                    : AnyShapeStyle(
-                                        LinearGradient(
-                                            colors: tier.gradientColors,
-                                            startPoint: .leading, endPoint: .trailing
-                                        )
+            Text(tier.cta)
+                .font(.subheadline.bold())
+                .foregroundStyle(.white)
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 12)
+                .background(
+                    Capsule()
+                        .fill(
+                            tier.isCurrent
+                                ? AnyShapeStyle(.white.opacity(0.08))
+                                : AnyShapeStyle(
+                                    LinearGradient(
+                                        colors: tier.gradientColors,
+                                        startPoint: .leading, endPoint: .trailing
                                     )
-                            )
-                    )
-            }
-            .buttonStyle(.plain)
-            .disabled(tier.isCurrent)
+                                )
+                        )
+                )
+                .scaleEffect(ctaPressed ? 0.93 : 1.0)
+                .brightness(ctaPressed ? -0.06 : 0)
+                .shadow(
+                    color: (tier.gradientColors.first ?? .purple).opacity(ctaPressed ? 0.50 : 0.15),
+                    radius: ctaPressed ? 22 : 8,
+                    y: ctaPressed ? 2 : 4
+                )
+                .saturation(ctaPressed ? 1.12 : 1.0)
+                .animation(.spring(response: 0.25, dampingFraction: 0.55), value: ctaPressed)
+                .contentShape(Capsule())
+                .onTapGesture {
+                    guard !tier.isCurrent else { return }
+                    // Press-in
+                    withAnimation(.spring(response: 0.08, dampingFraction: 0.80)) {
+                        ctaPressed = true
+                    }
+                    let g = UIImpactFeedbackGenerator(style: .medium)
+                    g.impactOccurred()
+                    // Spring-back
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.10) {
+                        withAnimation(.spring(response: 0.30, dampingFraction: 0.50)) {
+                            ctaPressed = false
+                        }
+                    }
+                }
+                .opacity(tier.isCurrent ? 0.5 : 1.0)
         }
         .padding(18)
         .background(

@@ -31,6 +31,7 @@ struct CategoriesView: View {
     @State private var isGridView: Bool = true
     @State private var currentPage: Int = 0
     @State private var emptyPulse: Bool = false
+    @State private var pressedCardId: String? = nil
 
     // Frozen empty-state content — updated only when transitioning INTO empty
     @State private var frozenEmptyIcon: String = "tray"
@@ -210,6 +211,7 @@ struct CategoriesView: View {
                     .font(.subheadline)
                     .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
                 }
+                .buttonStyle(LumenPressStyle(weight: .soft))
 
                 Spacer()
 
@@ -238,6 +240,7 @@ struct CategoriesView: View {
                         .font(.body)
                         .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
                 }
+                .buttonStyle(LumenPressStyle(weight: .soft))
             }
 
             // Search bar
@@ -257,6 +260,7 @@ struct CategoriesView: View {
                         Image(systemName: "xmark.circle.fill")
                             .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
                     }
+                    .buttonStyle(LumenPressStyle(weight: .soft))
                 }
 
                 // Filter: favorites only
@@ -270,6 +274,7 @@ struct CategoriesView: View {
                         .foregroundStyle(showFavoritesOnly ? .pink : (isDark ? .white.opacity(0.4) : .caribbeanMist))
                         .contentTransition(.symbolEffect(.replace))
                 }
+                .buttonStyle(LumenPressStyle(weight: .soft, accentColor: .pink))
 
                 // Filter completed toggle
                 Button {
@@ -282,6 +287,7 @@ struct CategoriesView: View {
                         .foregroundStyle(showCompletedFilter ? .yellow : (isDark ? .white.opacity(0.4) : .caribbeanMist))
                         .contentTransition(.symbolEffect(.replace))
                 }
+                .buttonStyle(LumenPressStyle(weight: .soft, accentColor: .yellow))
             }
             .padding(12)
             .background(
@@ -332,88 +338,113 @@ struct CategoriesView: View {
         let pct = item.progress.percentage
         let completed = pct >= 100.0
 
-        return Button {
-            HapticsService.light()
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.18) {
-                navigateToGame(categoryId: item.id)
-            }
-        } label: {
-            VStack(alignment: .leading, spacing: isGridView ? 8 : 10) {
-                // Top row: icon + favorite
-                HStack(alignment: .top, spacing: 8) {
-                    LiquidGlassIconContainer(
-                        systemName: categoryIcon(item),
-                        gradient: colors,
-                        size: isGridView ? 40 : 48
+        let isPressed = pressedCardId == item.id
+        let accentColor = colors.first ?? .white
+
+        return ZStack(alignment: .topTrailing) {
+            // Main card button — covers entire area, reliable tap in LazyVGrid
+            Button {
+                // 1) Instant press-in
+                withAnimation(.spring(response: 0.08, dampingFraction: 0.80)) {
+                    pressedCardId = item.id
+                }
+                HapticsService.light()
+                // 2) Bouncy spring-back after 120ms
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.12) {
+                    withAnimation(.spring(response: 0.30, dampingFraction: 0.50)) {
+                        pressedCardId = nil
+                    }
+                }
+                // 3) Navigate after animation plays
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.40) {
+                    navigateToGame(categoryId: item.id)
+                }
+            } label: {
+                VStack(alignment: .leading, spacing: isGridView ? 8 : 10) {
+                    // Top row: icon (heart is overlaid separately)
+                    HStack(alignment: .top, spacing: 8) {
+                        LiquidGlassIconContainer(
+                            systemName: categoryIcon(item),
+                            gradient: colors,
+                            size: isGridView ? 40 : 48
+                        )
+                        Spacer()
+                        // Invisible spacer matching heart size to preserve layout
+                        Color.clear.frame(width: 32, height: 32)
+                    }
+
+                    // Category name
+                    Text(item.name)
+                        .font(isGridView ? .subheadline.bold() : .headline.bold())
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
+                        .lineLimit(isGridView ? 1 : 2)
+
+                    // Description
+                    Text(item.description)
+                        .font(isGridView ? .caption : .subheadline)
+                        .foregroundStyle(isDark ? .white.opacity(0.55) : .caribbeanPlum)
+                        .lineLimit(isGridView ? 2 : 3)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+
+                    Spacer(minLength: 0)
+
+                    // Bottom row: difficulty + progress
+                    HStack(alignment: .center, spacing: 8) {
+                        difficultyBadge(item.difficulty)
+
+                        Spacer()
+
+                        if isGridView {
+                            circularProgress(pct: pct, completed: completed, colors: colors)
+                        } else {
+                            VStack(alignment: .trailing, spacing: 3) {
+                                LiquidProgressBar(
+                                    progress: pct,
+                                    height: 5,
+                                    gradient: progressGradient
+                                )
+                                .frame(width: 120)
+
+                                progressLabel(pct: pct, mastered: item.progress.mastered, total: item.progress.total, completed: completed)
+                            }
+                        }
+                    }
+                }
+                .padding(isGridView ? 14 : 16)
+                .frame(height: isGridView ? 220 : nil)
+                .background(
+                    PremiumTransparentCardBackground(
+                        cornerRadius: 22,
+                        accentColor: colors.first ?? .blue
                     )
-
-                    Spacer()
-
-                    // Favorite button
-                    Button {
-                        withAnimation(.spring(response: 0.35, dampingFraction: 0.5)) {
-                            HapticsService.light()
-                            toggleFavorite(item.id)
-                        }
-                    } label: {
-                        Image(systemName: fav ? "heart.fill" : "heart")
-                            .font(.system(size: 15, weight: .medium))
-                            .foregroundStyle(fav ? .pink : (isDark ? .white.opacity(0.35) : .caribbeanMist))
-                            .scaleEffect(fav ? 1.15 : 1.0)
-                            .frame(width: 32, height: 32)
-                            .contentShape(Circle())
-                    }
-                    .buttonStyle(LumenPressStyle(weight: .soft, accentColor: .pink))
-                }
-
-                // Category name
-                Text(item.name)
-                    .font(isGridView ? .subheadline.bold() : .headline.bold())
-                    .foregroundStyle(isDark ? .white : .caribbeanInk)
-                    .lineLimit(isGridView ? 1 : 2)
-
-                // Description
-                Text(item.description)
-                    .font(isGridView ? .caption : .subheadline)
-                    .foregroundStyle(isDark ? .white.opacity(0.55) : .caribbeanPlum)
-                    .lineLimit(isGridView ? 2 : 3)
-                    .frame(maxHeight: .infinity, alignment: .top)
-
-                // Bottom row: difficulty + progress
-                HStack(alignment: .center, spacing: 8) {
-                    difficultyBadge(item.difficulty)
-
-                    Spacer()
-
-                    if isGridView {
-                        // Compact circular progress ring for grid
-                        circularProgress(pct: pct, completed: completed, colors: colors)
-                    } else {
-                        // Full linear progress for list
-                        VStack(alignment: .trailing, spacing: 3) {
-                            LiquidProgressBar(
-                                progress: pct,
-                                height: 5,
-                                gradient: progressGradient
-                            )
-                            .frame(width: 120)
-
-                            progressLabel(pct: pct, mastered: item.progress.mastered, total: item.progress.total, completed: completed)
-                        }
-                    }
-                }
-            }
-            .padding(isGridView ? 14 : 16)
-            .frame(minHeight: isGridView ? 200 : 0)
-            .background(
-                PremiumTransparentCardBackground(
-                    cornerRadius: 22,
-                    accentColor: colors.first ?? .blue
                 )
-            )
-            .clipShape(RoundedRectangle(cornerRadius: 22))
+                .clipShape(RoundedRectangle(cornerRadius: 22))
+            }
+            .buttonStyle(.plain)
+
+            // Heart overlay — sits on top, gets tap priority in its 44×44 area
+            Button {
+                withAnimation(.spring(response: 0.35, dampingFraction: 0.5)) {
+                    HapticsService.light()
+                    toggleFavorite(item.id)
+                }
+            } label: {
+                Image(systemName: fav ? "heart.fill" : "heart")
+                    .font(.system(size: 15, weight: .medium))
+                    .foregroundStyle(fav ? .pink : (isDark ? .white.opacity(0.35) : .caribbeanMist))
+                    .scaleEffect(fav ? 1.15 : 1.0)
+                    .frame(width: 44, height: 44)
+                    .contentShape(Circle())
+            }
+            .buttonStyle(LumenPressStyle(weight: .soft, accentColor: .pink))
+            .padding(.top, 8)
+            .padding(.trailing, 8)
         }
-        .buttonStyle(LiquidCardButtonStyle(accentColor: colors.first ?? .white))
+        .scaleEffect(isPressed ? 0.94 : 1.0)
+        .brightness(isPressed ? -0.05 : 0)
+        .shadow(color: accentColor.opacity(isPressed ? 0.35 : 0), radius: 12, y: 6)
+        .saturation(isPressed ? 1.10 : 1.0)
+        .animation(.spring(response: 0.20, dampingFraction: 0.50), value: isPressed)
         .accessibilityLabel("\(item.name), \(item.difficulty.rawValue), \(Int(pct))% \(L.complete.lowercased())")
         .accessibilityHint(L.doubleTapToStart)
     }

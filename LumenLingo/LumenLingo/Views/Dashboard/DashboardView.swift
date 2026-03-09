@@ -803,81 +803,12 @@ struct DashboardGameCard: View {
     }
 }
 
-// MARK: - Dashboard Press Modifier
-
-/// A press-and-navigate modifier that lets the user SEE and FEEL the full press cycle
-/// before navigation fires. Uses a custom gesture instead of Button so timing is controlled.
-///
-/// Lifecycle: finger down → scale + dim + glow + haptic → finger up → spring bounce-back → navigate after bounce
-struct DashboardPressModifier: ViewModifier {
-    let accentColor: Color
-    let scaleAmount: CGFloat
-    let action: () -> Void
-
-    @State private var isPressed = false
-    @GestureState private var isTouching = false
-
-    func body(content: Content) -> some View {
-        content
-            // Visual micro-expressions
-            .scaleEffect(isPressed ? scaleAmount : 1.0)
-            .brightness(isPressed ? -0.045 : 0)
-            .shadow(
-                color: accentColor.opacity(isPressed ? 0.30 : 0),
-                radius: isPressed ? 16 : 0,
-                y: isPressed ? 3 : 0
-            )
-            .shadow(
-                color: .black.opacity(isPressed ? 0.06 : 0.12),
-                radius: isPressed ? 3 : 10,
-                y: isPressed ? 1 : 5
-            )
-            .saturation(isPressed ? 1.08 : 1.0)
-            .animation(.spring(response: 0.25, dampingFraction: 0.65), value: isPressed)
-            // Gesture: tracks finger down/up with full control
-            .gesture(
-                DragGesture(minimumDistance: 0)
-                    .updating($isTouching) { _, state, _ in
-                        state = true
-                    }
-                    .onEnded { value in
-                        // Only navigate if finger didn't drag far (it's a tap, not a scroll)
-                        guard abs(value.translation.width) < 30,
-                              abs(value.translation.height) < 30 else { return }
-
-                        // Spring bounce-back animation, then navigate after it completes
-                        withAnimation(.spring(response: 0.25, dampingFraction: 0.65)) {
-                            isPressed = false
-                        }
-
-                        // Navigate after the spring-back animation has played
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.28) {
-                            action()
-                        }
-                    }
-            )
-            .onChange(of: isTouching) { _, touching in
-                if touching {
-                    // Finger down — depress immediately with haptic
-                    withAnimation(.spring(response: 0.20, dampingFraction: 0.70)) {
-                        isPressed = true
-                    }
-                    let g = UIImpactFeedbackGenerator(style: .soft)
-                    g.impactOccurred(intensity: 0.7)
-                } else if isPressed {
-                    // Finger lifted without onEnded (e.g. scroll started) — snap back
-                    withAnimation(.spring(response: 0.25, dampingFraction: 0.65)) {
-                        isPressed = false
-                    }
-                }
-            }
-    }
-}
+// MARK: - Dashboard Press (uses shared LumenNavigationPressModifier)
 
 extension View {
-    /// Adds a delightful press-to-navigate interaction with full press cycle visibility.
+    /// Dashboard convenience alias for lumenNavigationPress.
     func dashboardPress(accentColor: Color = .white, scale: CGFloat = 0.955, action: @escaping () -> Void) -> some View {
-        modifier(DashboardPressModifier(accentColor: accentColor, scaleAmount: scale, action: action))
+        lumenNavigationPress(accentColor: accentColor, scale: scale, action: action)
     }
 }
 

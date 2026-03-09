@@ -334,6 +334,104 @@ struct LumenCTAPressStyle: ButtonStyle {
     }
 }
 
+// MARK: - Navigation Card Press Style
+
+/// ButtonStyle for cards that navigate on tap. Uses a bouncy spring (damping 0.50)
+/// so the overshoot continues animating after `isPressed` goes false — this makes
+/// the press animation clearly visible even with ScrollView's brief isPressed window.
+/// Works with nested Buttons (heart/favorite) because SwiftUI disambiguates automatically.
+struct LumenNavigationCardStyle: ButtonStyle {
+    var accentColor: Color = .white
+
+    func makeBody(configuration: Configuration) -> some View {
+        let pressed = configuration.isPressed
+
+        configuration.label
+            .scaleEffect(pressed ? 0.94 : 1.0)
+            .brightness(pressed ? -0.05 : 0)
+            .shadow(
+                color: accentColor.opacity(pressed ? 0.35 : 0),
+                radius: pressed ? 18 : 0,
+                y: pressed ? 3 : 0
+            )
+            .shadow(
+                color: .black.opacity(pressed ? 0.06 : 0.12),
+                radius: pressed ? 3 : 10,
+                y: pressed ? 1 : 5
+            )
+            .saturation(pressed ? 1.10 : 1.0)
+            // Bouncy spring — low damping means visible overshoot on release
+            .animation(.spring(response: 0.20, dampingFraction: 0.50), value: pressed)
+            .onChange(of: pressed) { _, isDown in
+                if isDown {
+                    let g = UIImpactFeedbackGenerator(style: .soft)
+                    g.impactOccurred(intensity: 0.7)
+                }
+            }
+    }
+}
+
+// MARK: - Navigation Press Modifier
+
+/// A press-and-navigate modifier using `onTapGesture` — guaranteed to coexist with
+/// ScrollView drag. On tap, shows a visible press-in → bouncy spring-back → navigate
+/// pulse that takes ~380ms. Drag/scroll is never blocked.
+///
+/// Lifecycle: tap → instant press-in + haptic → 100ms hold → bouncy spring-back → navigate
+struct LumenNavigationPressModifier: ViewModifier {
+    let accentColor: Color
+    let scaleAmount: CGFloat
+    let action: () -> Void
+
+    @State private var isPressed = false
+
+    func body(content: Content) -> some View {
+        content
+            .scaleEffect(isPressed ? scaleAmount : 1.0)
+            .brightness(isPressed ? -0.05 : 0)
+            .shadow(
+                color: accentColor.opacity(isPressed ? 0.35 : 0),
+                radius: isPressed ? 18 : 0,
+                y: isPressed ? 3 : 0
+            )
+            .shadow(
+                color: .black.opacity(isPressed ? 0.06 : 0.12),
+                radius: isPressed ? 3 : 10,
+                y: isPressed ? 1 : 5
+            )
+            .saturation(isPressed ? 1.10 : 1.0)
+            .animation(.spring(response: 0.25, dampingFraction: 0.65), value: isPressed)
+            .contentShape(Rectangle())
+            .onTapGesture {
+                // 1) Instant press-in
+                withAnimation(.spring(response: 0.08, dampingFraction: 0.80)) {
+                    isPressed = true
+                }
+                let g = UIImpactFeedbackGenerator(style: .soft)
+                g.impactOccurred(intensity: 0.7)
+
+                // 2) Bouncy spring-back after brief hold
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.10) {
+                    withAnimation(.spring(response: 0.30, dampingFraction: 0.50)) {
+                        isPressed = false
+                    }
+                }
+
+                // 3) Navigate after full pulse animation
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.38) {
+                    action()
+                }
+            }
+    }
+}
+
+extension View {
+    /// Adds a delightful press-to-navigate interaction with scroll-safe tap pulse.
+    func lumenNavigationPress(accentColor: Color = .white, scale: CGFloat = 0.955, action: @escaping () -> Void) -> some View {
+        modifier(LumenNavigationPressModifier(accentColor: accentColor, scaleAmount: scale, action: action))
+    }
+}
+
 // MARK: - Particle Effect
 
 /// Lightweight particle system for celebratory effects (correct answers, achievements).
