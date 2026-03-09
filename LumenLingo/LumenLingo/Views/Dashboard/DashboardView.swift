@@ -138,15 +138,11 @@ struct DashboardView: View {
                     Text("Hello, \(user.firstName)!")
                         .font(.title2.bold())
                         .foregroundStyle(
-                            isDark
-                                ? AnyShapeStyle(.white)
-                                : AnyShapeStyle(
-                                    LinearGradient(
-                                        colors: [Color(hex: "#667eea"), Color(hex: "#764ba2"), Color(hex: "#d946ef")],
-                                        startPoint: .leading,
-                                        endPoint: .trailing
-                                    )
-                                )
+                            LinearGradient(
+                                colors: [Color(hex: "#667eea"), Color(hex: "#764ba2"), Color(hex: "#d946ef")],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
                         )
 
                     Text("Ready for a new adventure?")
@@ -354,15 +350,11 @@ struct DashboardView: View {
                     Text("Choose Your Adventure")
                         .font(.system(size: 19, weight: .bold))
                         .foregroundStyle(
-                            isDark
-                                ? AnyShapeStyle(.white)
-                                : AnyShapeStyle(
-                                    LinearGradient(
-                                        colors: [Color(hex: "#8b5cf6"), Color(hex: "#d946ef")],
-                                        startPoint: .leading,
-                                        endPoint: .trailing
-                                    )
-                                )
+                            LinearGradient(
+                                colors: [Color(hex: "#8b5cf6"), Color(hex: "#d946ef")],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
                         )
 
                     Text("Start a game to boost your skills")
@@ -640,7 +632,13 @@ struct DashboardGameCard: View {
                         VStack(alignment: .leading, spacing: 6) {
                             Text(title)
                                 .font(.system(size: 19, weight: .bold))
-                                .foregroundStyle(isDark ? .white : .caribbeanInk)
+                                .foregroundStyle(
+                                    LinearGradient(
+                                        colors: [colorScheme.primary, colorScheme.secondary],
+                                        startPoint: .leading,
+                                        endPoint: .trailing
+                                    )
+                                )
 
                             Text(description)
                                 .font(.system(size: 14, weight: .medium))

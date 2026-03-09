@@ -70,7 +70,13 @@ struct JourneyView: View {
 
             Text(L.yourLearningJourney)
                 .font(.title2.bold())
-                .foregroundStyle(isDark ? .white : .caribbeanInk)
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
 
             Text(L.trackYourProgress)
                 .font(.subheadline)

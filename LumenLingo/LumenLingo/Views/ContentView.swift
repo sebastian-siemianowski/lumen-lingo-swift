@@ -341,7 +341,13 @@ struct LumenLingoNavBar: View {
             VStack(alignment: .leading, spacing: 1) {
                 Text("LumenLingo")
                     .font(.system(size: 20, weight: .bold, design: .rounded))
-                    .foregroundStyle(isDark ? .white : .caribbeanInk)
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [Color(hex: "#ec4899"), Color(hex: "#d946ef"), Color(hex: "#a855f7")],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
 
                 Text(L.languageMasteryEngine)
                     .font(.system(size: 10, weight: .medium))

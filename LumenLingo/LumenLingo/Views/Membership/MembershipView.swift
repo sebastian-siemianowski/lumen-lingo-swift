@@ -76,7 +76,13 @@ struct MembershipView: View {
             VStack(spacing: 4) {
                 Text(L.investInYour)
                     .font(.system(size: 36, weight: .black))
-                    .foregroundStyle(isDark ? .white : .caribbeanInk)
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [.purple, .pink],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
                 Text(L.languageMastery)
                     .font(.system(size: 36, weight: .black))
                     .foregroundStyle(

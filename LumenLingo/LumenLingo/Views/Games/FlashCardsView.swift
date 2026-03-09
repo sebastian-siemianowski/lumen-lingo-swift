@@ -1208,9 +1208,11 @@ struct GameCompleteView: View {
                     Text(performanceTier.title(L))
                         .font(.system(size: 32, weight: .bold, design: .rounded))
                         .foregroundStyle(
-                            isDark
-                            ? LinearGradient(colors: [.white, .white.opacity(0.85)], startPoint: .top, endPoint: .bottom)
-                            : LinearGradient(colors: [.caribbeanInk, .caribbeanInk.opacity(0.85)], startPoint: .top, endPoint: .bottom)
+                            LinearGradient(
+                                colors: [performanceTier.color, performanceTier.color.opacity(0.7)],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
                         )
                         .shadow(color: isDark ? .black.opacity(0.3) : .clear, radius: 4, y: 2)
 
@@ -1228,7 +1230,13 @@ struct GameCompleteView: View {
                 VStack(spacing: 6) {
                     Text("\(displayedScore)")
                         .font(.system(size: 56, weight: .bold, design: .rounded))
-                        .foregroundStyle(isDark ? .white : .caribbeanInk)
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [performanceTier.color, performanceTier.color.opacity(0.6)],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
                         .contentTransition(.numericText())
                         .shadow(color: performanceTier.color.opacity(0.3), radius: 16)
 

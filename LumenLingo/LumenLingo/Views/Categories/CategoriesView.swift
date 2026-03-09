@@ -215,7 +215,16 @@ struct CategoriesView: View {
 
                 Text(gameType.displayName)
                     .font(.title3.bold())
-                    .foregroundStyle(isDark ? .white : .caribbeanInk)
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: {
+                                let cs = GameCardColorScheme.forType(gameType)
+                                return [cs.primary, cs.secondary]
+                            }(),
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
 
                 Spacer()
 

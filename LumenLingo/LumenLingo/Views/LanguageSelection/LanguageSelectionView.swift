@@ -294,7 +294,13 @@ struct LanguageSelectionView: View {
                 )
             Text(L.chooseYourLanguages)
                 .font(.title3.bold())
-                .foregroundStyle(isDark ? .white : .caribbeanInk)
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: [.cyan, .purple],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
             Text(L.selectWhatYouKnow)
                 .font(.subheadline)
                 .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
