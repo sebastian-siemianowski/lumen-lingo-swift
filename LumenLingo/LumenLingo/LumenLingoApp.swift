@@ -6,11 +6,13 @@ import SwiftData
 @main
 struct LumenLingoApp: App {
     @State private var themeManager = ThemeManager()
+    @State private var localizationManager = LocalizationManager()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environment(themeManager)
+                .environment(\.localization, localizationManager)
                 .preferredColorScheme(themeManager.colorScheme)
         }
         .modelContainer(for: [

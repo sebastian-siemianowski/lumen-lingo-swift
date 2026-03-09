@@ -8,6 +8,9 @@ import SwiftData
 struct JourneyView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.localization) private var localization
+
+    private var L: AppStrings { localization.strings }
 
     @Query private var profiles: [UserProfile]
     @Query(sort: \GameProgressRecord.createdDate, order: .reverse)
@@ -66,11 +69,11 @@ struct JourneyView: View {
                 )
                 .symbolEffect(.bounce, options: .repeating.speed(0.15))
 
-            Text("Your Learning Journey")
+            Text(L.yourLearningJourney)
                 .font(.title2.bold())
                 .foregroundStyle(isDark ? .white : Color(red: 30/255, green: 25/255, blue: 60/255))
 
-            Text("Track your progress and celebrate achievements")
+            Text(L.trackYourProgress)
                 .font(.subheadline)
                 .foregroundStyle(isDark ? .white.opacity(0.6) : .secondary)
                 .multilineTextAlignment(.center)
@@ -86,7 +89,7 @@ struct JourneyView: View {
                 HStack(spacing: 8) {
                     Image(systemName: "flag.checkered")
                         .foregroundStyle(Color(hex: "#667eea"))
-                    Text("Milestones")
+                    Text(L.milestones)
                         .font(.headline)
                         .foregroundStyle(isDark ? .white : .primary)
                 }
@@ -108,12 +111,12 @@ struct JourneyView: View {
 
     private var milestones: [Milestone] {
         [
-            Milestone(title: "First Steps", icon: "shoe.fill", color: .green, xpRequired: 0),
-            Milestone(title: "Getting Started", icon: "star.fill", color: .cyan, xpRequired: 50),
-            Milestone(title: "Dedicated Learner", icon: "book.fill", color: Color(hex: "#667eea"), xpRequired: 200),
-            Milestone(title: "Word Warrior", icon: "shield.fill", color: Color(hex: "#8b5cf6"), xpRequired: 500),
-            Milestone(title: "Language Master", icon: "crown.fill", color: .yellow, xpRequired: 1000),
-            Milestone(title: "Polyglot Legend", icon: "globe", color: Color(hex: "#ec4899"), xpRequired: 2500),
+            Milestone(title: L.firstSteps, icon: "shoe.fill", color: .green, xpRequired: 0),
+            Milestone(title: L.gettingStarted, icon: "star.fill", color: .cyan, xpRequired: 50),
+            Milestone(title: L.dedicatedLearner, icon: "book.fill", color: Color(hex: "#667eea"), xpRequired: 200),
+            Milestone(title: L.wordWarrior, icon: "shield.fill", color: Color(hex: "#8b5cf6"), xpRequired: 500),
+            Milestone(title: L.languageMaster, icon: "crown.fill", color: .yellow, xpRequired: 1000),
+            Milestone(title: L.polyglotLegend, icon: "globe", color: Color(hex: "#ec4899"), xpRequired: 2500),
         ]
     }
 
@@ -147,7 +150,7 @@ struct JourneyView: View {
                     .font(.subheadline.bold())
                     .foregroundStyle(isDark ? .white.opacity(isUnlocked ? 1 : 0.4) : (isUnlocked ? .primary : .secondary))
 
-                Text("\(milestone.xpRequired) XP required")
+                Text("\(milestone.xpRequired) \(L.xpRequired)")
                     .font(.caption)
                     .foregroundStyle(isDark ? .white.opacity(0.4) : .secondary)
             }
@@ -165,16 +168,16 @@ struct JourneyView: View {
 
     private var overallStatsPanel: some View {
         VStack(spacing: 14) {
-            Text("Overview")
+            Text(L.overview)
                 .font(.headline)
                 .foregroundStyle(isDark ? .white : .primary)
                 .frame(maxWidth: .infinity, alignment: .leading)
 
             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 12) {
-                journeyStat(title: "Level", value: "\(profile?.currentLevel ?? 1)", icon: "star.fill", color: .yellow)
-                journeyStat(title: "Total XP", value: "\(profile?.totalXP ?? 0)", icon: "bolt.fill", color: .cyan)
-                journeyStat(title: "Sessions", value: "\(allProgress.count)", icon: "play.circle.fill", color: .green)
-                journeyStat(title: "Streak", value: "\(profile?.streakDays ?? 0) days", icon: "flame.fill", color: .orange)
+                journeyStat(title: L.level, value: "\(profile?.currentLevel ?? 1)", icon: "star.fill", color: .yellow)
+                journeyStat(title: L.totalXP, value: "\(profile?.totalXP ?? 0)", icon: "bolt.fill", color: .cyan)
+                journeyStat(title: L.sessions, value: "\(allProgress.count)", icon: "play.circle.fill", color: .green)
+                journeyStat(title: L.streak, value: "\(profile?.streakDays ?? 0) \(L.days)", icon: "flame.fill", color: .orange)
             }
         }
         .padding(18)
@@ -212,7 +215,7 @@ struct JourneyView: View {
 
     private var gameTypeBreakdown: some View {
         VStack(spacing: 14) {
-            Text("Game Performance")
+            Text(L.gamePerformance)
                 .font(.headline)
                 .foregroundStyle(isDark ? .white : .primary)
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -259,11 +262,11 @@ struct JourneyView: View {
                     .foregroundStyle(isDark ? .white : .primary)
 
                 HStack(spacing: 8) {
-                    Text("\(records.count) sessions")
+                    Text("\(records.count) \(L.sessions.lowercased())")
                     Text("·")
-                    Text("\(totalScore) XP")
+                    Text("\(totalScore) \(L.xp)")
                     Text("·")
-                    Text("\(Int(accuracy))% accuracy")
+                    Text("\(Int(accuracy))% \(L.accuracy.lowercased())")
                 }
                 .font(.caption)
                 .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
@@ -290,7 +293,7 @@ struct JourneyView: View {
                 Image(systemName: "flame.fill")
                     .foregroundStyle(.orange)
                     .symbolEffect(.pulse, options: .repeating.speed(0.3))
-                Text("Current Streak")
+                Text(L.currentStreak)
                     .font(.headline)
                     .foregroundStyle(isDark ? .white : .primary)
             }
@@ -306,13 +309,13 @@ struct JourneyView: View {
                             endPoint: .bottom
                         )
                     )
-                Text("days")
+                Text(L.days)
                     .font(.title3)
                     .foregroundStyle(isDark ? .white.opacity(0.6) : .secondary)
                     .padding(.top, 16)
             }
 
-            Text("Keep learning every day to maintain your streak!")
+            Text(L.keepLearningEveryDay)
                 .font(.caption)
                 .foregroundStyle(isDark ? .white.opacity(0.4) : .secondary)
                 .multilineTextAlignment(.center)

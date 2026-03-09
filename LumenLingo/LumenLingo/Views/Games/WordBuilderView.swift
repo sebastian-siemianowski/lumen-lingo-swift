@@ -14,6 +14,9 @@ struct WordBuilderView: View {
     @Environment(AudioService.self) private var audioService
     @Environment(HapticsService.self) private var hapticsService
     @Environment(ContentLoader.self) private var contentLoader
+    @Environment(\.localization) private var localization
+
+    private var L: AppStrings { localization.strings }
 
     @Binding var hideTabBar: Bool
 
@@ -97,7 +100,7 @@ struct WordBuilderView: View {
             ProgressView()
                 .scaleEffect(1.5)
                 .tint(.white)
-            Text("Loading words...")
+            Text(L.loadingWords)
                 .font(.headline)
                 .foregroundStyle(.white.opacity(0.7))
         }
@@ -184,7 +187,7 @@ struct WordBuilderView: View {
                 Button { dismiss() } label: {
                     HStack(spacing: 6) {
                         Image(systemName: "chevron.left")
-                        Text("Back")
+                        Text(L.back)
                     }
                     .font(.subheadline)
                     .foregroundStyle(.white.opacity(0.7))
@@ -262,7 +265,7 @@ struct WordBuilderView: View {
                 )
                 .symbolEffect(.pulse, options: .repeating.speed(0.3))
 
-            Text("Build the word")
+            Text(L.buildTheWord)
                 .font(.caption.bold())
                 .foregroundStyle(.white.opacity(0.5))
                 .textCase(.uppercase)
@@ -404,7 +407,7 @@ struct WordBuilderView: View {
         )
 
         return VStack(spacing: 8) {
-            Text("Available Letters")
+            Text(L.availableLetters)
                 .font(.caption)
                 .foregroundStyle(.white.opacity(0.4))
 
@@ -500,7 +503,7 @@ struct WordBuilderView: View {
             } label: {
                 HStack(spacing: 6) {
                     Image(systemName: "arrow.uturn.backward")
-                    Text("Undo")
+                    Text(L.undo)
                 }
                 .font(.subheadline.bold())
                 .foregroundStyle(.white.opacity(0.7))
@@ -526,7 +529,7 @@ struct WordBuilderView: View {
             } label: {
                 HStack(spacing: 6) {
                     Image(systemName: "trash")
-                    Text("Clear")
+                    Text(L.clear)
                 }
                 .font(.subheadline.bold())
                 .foregroundStyle(.white.opacity(0.7))
@@ -553,7 +556,7 @@ struct WordBuilderView: View {
             } label: {
                 HStack(spacing: 6) {
                     Image(systemName: "checkmark")
-                    Text("Check")
+                    Text(L.check)
                 }
                 .font(.subheadline.bold())
                 .foregroundStyle(.white)
@@ -604,10 +607,10 @@ struct WordBuilderView: View {
             Image(systemName: "tray")
                 .font(.system(size: 48))
                 .foregroundStyle(.white.opacity(0.4))
-            Text("No words available")
+            Text(L.noWordsAvailable)
                 .font(.headline)
                 .foregroundStyle(.white.opacity(0.7))
-            Button("Go Back") { dismiss() }
+            Button(L.goBack) { dismiss() }
                 .buttonStyle(.bordered)
                 .tint(.white)
         }

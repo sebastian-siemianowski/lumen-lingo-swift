@@ -7,6 +7,9 @@ import Network
 /// Shows network status, pending sync warning, and sign-out flow with confirmation.
 struct SignOutView: View {
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.localization) private var localization
+
+    private var L: AppStrings { localization.strings }
 
     @State private var isOnline = true
     @State private var isLoggingOut = false
@@ -51,14 +54,14 @@ struct SignOutView: View {
                 .font(.system(size: 14))
                 .foregroundStyle(isOnline ? .green : .red)
 
-            Text(isOnline ? "Connected" : "Offline")
+            Text(isOnline ? L.connected : L.offline)
                 .font(.system(size: 13, weight: .medium))
                 .foregroundStyle(isOnline ? .green : .red)
 
             Spacer()
 
             if !isOnline {
-                Text("Sign out requires internet")
+                Text(L.signOutRequiresInternet)
                     .font(.system(size: 11))
                     .foregroundStyle(.red.opacity(0.8))
             }
@@ -78,17 +81,17 @@ struct SignOutView: View {
 
     private var accountInfoSection: some View {
         VStack(spacing: 12) {
-            accountRow(icon: "envelope.fill", color: .cyan, title: "Email", value: AppUser.mock.email)
+            accountRow(icon: "envelope.fill", color: .cyan, title: L.email, value: AppUser.mock.email)
 
             Divider()
                 .overlay(isDark ? Color.white.opacity(0.06) : Color.black.opacity(0.06))
 
-            accountRow(icon: "person.fill", color: Color(hex: "#8b5cf6"), title: "Name", value: AppUser.mock.name)
+            accountRow(icon: "person.fill", color: Color(hex: "#8b5cf6"), title: L.name, value: AppUser.mock.name)
 
             Divider()
                 .overlay(isDark ? Color.white.opacity(0.06) : Color.black.opacity(0.06))
 
-            accountRow(icon: "crown.fill", color: .yellow, title: "Membership", value: "Free Tier")
+            accountRow(icon: "crown.fill", color: .yellow, title: L.membership, value: L.freeTier)
         }
     }
 
@@ -127,7 +130,7 @@ struct SignOutView: View {
             HStack(spacing: 8) {
                 Image(systemName: "rectangle.portrait.and.arrow.right")
                     .font(.body.bold())
-                Text("Sign Out")
+                Text(L.signOut)
                     .font(.body.bold())
             }
             .foregroundStyle(.red.opacity(0.85))
@@ -154,12 +157,12 @@ struct SignOutView: View {
             HStack(spacing: 8) {
                 Image(systemName: "exclamationmark.triangle.fill")
                     .foregroundStyle(.orange)
-                Text("Are you sure?")
+                Text(L.areYouSure)
                     .font(.system(size: 15, weight: .semibold))
                     .foregroundStyle(isDark ? .white : .primary)
             }
 
-            Text("Your progress will be saved before signing out.")
+            Text(L.progressWillBeSaved)
                 .font(.system(size: 13))
                 .foregroundStyle(isDark ? .white.opacity(0.6) : .secondary)
                 .multilineTextAlignment(.center)
@@ -168,7 +171,7 @@ struct SignOutView: View {
                 Button {
                     withAnimation { showConfirmation = false }
                 } label: {
-                    Text("Cancel")
+                    Text(L.cancel)
                         .font(.system(size: 14, weight: .semibold))
                         .foregroundStyle(isDark ? .white : .primary)
                         .frame(maxWidth: .infinity)
@@ -183,7 +186,7 @@ struct SignOutView: View {
                 Button {
                     executeSignOut()
                 } label: {
-                    Text("Sign Out")
+                    Text(L.signOut)
                         .font(.system(size: 14, weight: .semibold))
                         .foregroundStyle(.white)
                         .frame(maxWidth: .infinity)
@@ -232,13 +235,13 @@ struct SignOutView: View {
         isLoggingOut = true
 
         Task {
-            logoutStep = "Saving progress..."
+            logoutStep = L.savingProgress
             try? await Task.sleep(for: .milliseconds(800))
 
-            await MainActor.run { logoutStep = "Clearing local data..." }
+            await MainActor.run { logoutStep = L.clearingLocalData }
             try? await Task.sleep(for: .milliseconds(500))
 
-            await MainActor.run { logoutStep = "Signing out..." }
+            await MainActor.run { logoutStep = L.signingOut }
             try? await Task.sleep(for: .milliseconds(400))
 
             await MainActor.run {

@@ -16,14 +16,14 @@ final class DashboardViewModel {
         self.progressService = progressService
     }
 
-    var greeting: String {
+    func greeting(using strings: AppStrings) -> String {
         let hour = Calendar.current.component(.hour, from: .now)
         let timeGreeting: String
         switch hour {
-        case 5..<12: timeGreeting = "Good morning"
-        case 12..<17: timeGreeting = "Good afternoon"
-        case 17..<22: timeGreeting = "Good evening"
-        default: timeGreeting = "Good night"
+        case 5..<12: timeGreeting = strings.goodMorning
+        case 12..<17: timeGreeting = strings.goodAfternoon
+        case 17..<22: timeGreeting = strings.goodEvening
+        default: timeGreeting = strings.goodNight
         }
         return "\(timeGreeting), Sebastian!"
     }

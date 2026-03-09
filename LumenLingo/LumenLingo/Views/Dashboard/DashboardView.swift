@@ -10,6 +10,9 @@ import SwiftData
 struct DashboardView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.localization) private var localization
+
+    private var L: AppStrings { localization.strings }
 
     @Query private var profiles: [UserProfile]
     @Query private var languagePrefs: [LanguagePreference]
@@ -137,11 +140,11 @@ struct DashboardView: View {
                 }
 
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("Hello, \(user.firstName)!")
+                    Text(L.greeting(user.firstName))
                         .font(.title2.bold())
                         .foregroundStyle(.white)
 
-                    Text("Ready for a new adventure?")
+                    Text(L.readyForAdventure)
                         .font(.subheadline)
                         .foregroundStyle(.white.opacity(0.7))
                 }
@@ -186,7 +189,7 @@ struct DashboardView: View {
     private var statsRow: some View {
         HStack(spacing: 12) {
             statCard(
-                title: "Level",
+                title: L.level,
                 value: "\(profile?.currentLevel ?? 1)",
                 icon: "star.fill",
                 iconColor: .yellow,
@@ -195,7 +198,7 @@ struct DashboardView: View {
             )
 
             statCard(
-                title: "Total XP",
+                title: L.totalXP,
                 value: "\(profile?.totalXP ?? 0)",
                 icon: "bolt.fill",
                 iconColor: .cyan,
@@ -203,7 +206,7 @@ struct DashboardView: View {
             )
 
             statCard(
-                title: "Active Days",
+                title: L.activeDays,
                 value: "\(profile?.streakDays ?? 0)",
                 icon: "trophy.fill",
                 iconColor: .orange,
@@ -343,11 +346,11 @@ struct DashboardView: View {
                 }
 
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("Choose Your Adventure")
+                    Text(L.chooseYourAdventure)
                         .font(.system(size: 19, weight: .bold))
                         .foregroundStyle(.white)
 
-                    Text("Start a game to boost your skills")
+                    Text(L.startGameToBoost)
                         .font(.system(size: 13))
                         .foregroundStyle(.white.opacity(0.6))
                 }
@@ -359,30 +362,30 @@ struct DashboardView: View {
             // Game cards — full-width glassmorphic standalone cards
             VStack(spacing: 16) {
                 DashboardGameCard(
-                    title: "Flash Cards",
-                    description: "Master new vocabulary with interactive flip cards and spaced repetition",
+                    title: L.flashCards,
+                    description: L.flashCardsDescription,
                     icon: "rectangle.on.rectangle.angled",
-                    cta: "Master New Words",
+                    cta: L.masterNewWords,
                     colorScheme: .flashCards,
                     route: .flashcardsCategories,
                     navigationPath: $navigationPath
                 )
 
                 DashboardGameCard(
-                    title: "Grammar Challenge",
-                    description: "Test your knowledge with challenging questions and grammar rules",
+                    title: L.grammarChallenge,
+                    description: L.grammarDescription,
                     icon: "text.book.closed.fill",
-                    cta: "Test Your Skills",
+                    cta: L.testYourSkills,
                     colorScheme: .grammar,
                     route: .grammarCategories,
                     navigationPath: $navigationPath
                 )
 
                 DashboardGameCard(
-                    title: "Word Constructor",
-                    description: "Construct words letter by letter from scrambled clues and hints",
+                    title: L.wordConstructor,
+                    description: L.wordBuilderDescription,
                     icon: "textformat.abc",
-                    cta: "Craft & Discover",
+                    cta: L.craftAndDiscover,
                     colorScheme: .wordBuilder,
                     route: .wordBuilderCategories,
                     navigationPath: $navigationPath
@@ -400,7 +403,7 @@ struct DashboardView: View {
             if !activities.isEmpty {
                 VStack(spacing: 12) {
                     HStack {
-                        Text("Recent Activity")
+                        Text(L.recentActivity)
                             .font(.system(size: 19, weight: .bold))
                             .foregroundStyle(
                                 LinearGradient(
@@ -452,7 +455,7 @@ struct DashboardView: View {
                     .foregroundStyle(.white)
                     .lineLimit(1)
 
-                Text("+\(record.score) XP · \(record.correctAnswers)/\(record.totalQuestions) correct · \(record.completedAt.timeAgoDisplay)")
+                Text("+\(record.score) \(L.xp) · \(record.correctAnswers)/\(record.totalQuestions) \(L.correct.lowercased()) · \(record.completedAt.timeAgoDisplay)")
                     .font(.caption)
                     .foregroundStyle(.white.opacity(0.5))
             }

@@ -12,6 +12,9 @@ struct CategoriesView: View {
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.dismiss) private var dismiss
     @Environment(ContentLoader.self) private var contentLoader
+    @Environment(\.localization) private var localization
+
+    private var L: AppStrings { localization.strings }
 
     @Binding var navigationPath: NavigationPath
 
@@ -201,7 +204,7 @@ struct CategoriesView: View {
                 Button { dismiss() } label: {
                     HStack(spacing: 6) {
                         Image(systemName: "chevron.left")
-                        Text("Back")
+                        Text(L.back)
                     }
                     .font(.subheadline)
                     .foregroundStyle(.white.opacity(0.7))
@@ -232,7 +235,7 @@ struct CategoriesView: View {
                 Image(systemName: "magnifyingglass")
                     .foregroundStyle(.white.opacity(0.4))
 
-                TextField("Search categories", text: $searchText)
+                TextField(L.searchCategories, text: $searchText)
                     .font(.subheadline)
                     .foregroundStyle(.white)
                     .autocorrectionDisabled()
@@ -333,7 +336,7 @@ struct CategoriesView: View {
                     )
 
                     // Item count pill
-                    Text("\(item.itemCount) items")
+                    Text("\(item.itemCount) \(L.items)")
                         .font(.system(size: 10, weight: .semibold, design: .rounded))
                         .foregroundStyle(.white.opacity(0.55))
                         .padding(.horizontal, 7)
@@ -404,8 +407,8 @@ struct CategoriesView: View {
             )
         }
         .buttonStyle(LiquidCardButtonStyle(accentColor: colors.first ?? .white))
-        .accessibilityLabel("\(item.name), \(item.difficulty.rawValue), \(Int(pct))% complete")
-        .accessibilityHint("Double tap to start")
+        .accessibilityLabel("\(item.name), \(item.difficulty.rawValue), \(Int(pct))% \(L.complete.lowercased())")
+        .accessibilityHint(L.doubleTapToStart)
     }
 
     // MARK: - Circular Progress (Grid Cards)
@@ -448,7 +451,7 @@ struct CategoriesView: View {
             if completed {
                 Image(systemName: "checkmark.seal.fill")
                     .font(.system(size: 9))
-                Text("Complete")
+                Text(L.complete)
                     .font(.caption2.bold())
             } else {
                 Text("\(mastered)/\(total)")
@@ -535,7 +538,7 @@ struct CategoriesView: View {
                         showCompletedFilter = false
                     }
                 } label: {
-                    Label("Clear Filters", systemImage: "xmark.circle")
+                    Label(L.clearFilters, systemImage: "xmark.circle")
                         .font(.subheadline.weight(.medium))
                         .foregroundStyle(paginationAccentColors[0])
                         .padding(.horizontal, 16)
@@ -577,17 +580,17 @@ struct CategoriesView: View {
     }
 
     private var emptyTitleForCurrentFilters: String {
-        if showFavoritesOnly { return "No Favourites Yet" }
-        if showCompletedFilter { return "All Complete!" }
-        if !searchText.isEmpty { return "No Results" }
-        return "No Categories"
+        if showFavoritesOnly { return L.noFavouritesYet }
+        if showCompletedFilter { return L.allComplete }
+        if !searchText.isEmpty { return L.noResults }
+        return L.noCategories
     }
 
     private var emptySubtitleForCurrentFilters: String {
-        if showFavoritesOnly { return "Tap the heart on any category to save it here" }
-        if showCompletedFilter { return "You've finished everything — nice work!" }
-        if !searchText.isEmpty { return "Try a different search term" }
-        return "Categories will appear once content is loaded"
+        if showFavoritesOnly { return L.tapHeartToSave }
+        if showCompletedFilter { return L.youveFinishedEverything }
+        if !searchText.isEmpty { return L.tryDifferentSearch }
+        return L.categoriesWillAppear
     }
 
     // MARK: - Logic

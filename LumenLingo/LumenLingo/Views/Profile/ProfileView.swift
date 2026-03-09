@@ -10,6 +10,9 @@ struct ProfileView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.colorScheme) private var colorScheme
     @Environment(ThemeManager.self) private var themeManager
+    @Environment(\.localization) private var localization
+
+    private var L: AppStrings { localization.strings }
 
     @Query private var profiles: [UserProfile]
     @Query private var languagePrefs: [LanguagePreference]
@@ -144,7 +147,7 @@ struct ProfileView: View {
                         Image(systemName: "star.fill")
                             .font(.caption2)
                             .foregroundStyle(.yellow)
-                        Text("Level \(profile?.currentLevel ?? 1) Learner")
+                        Text("\(L.level) \(profile?.currentLevel ?? 1) \(L.learner)")
                             .font(.subheadline)
                             .foregroundStyle(isDark ? .white.opacity(0.6) : .secondary)
                     }
@@ -152,11 +155,11 @@ struct ProfileView: View {
 
                 // Quick stats row
                 HStack(spacing: 0) {
-                    quickStat(value: "\(profile?.totalXP ?? 0)", label: "XP", icon: "bolt.fill", color: .cyan)
+                    quickStat(value: "\(profile?.totalXP ?? 0)", label: L.xp, icon: "bolt.fill", color: .cyan)
                     quickStatDivider
-                    quickStat(value: "\(profile?.streakDays ?? 0)", label: "Streak", icon: "flame.fill", color: .orange)
+                    quickStat(value: "\(profile?.streakDays ?? 0)", label: L.streak, icon: "flame.fill", color: .orange)
                     quickStatDivider
-                    quickStat(value: "\(allProgress.count)", label: "Sessions", icon: "play.circle.fill", color: .green)
+                    quickStat(value: "\(allProgress.count)", label: L.sessions, icon: "play.circle.fill", color: .green)
                 }
                 .padding(.top, 4)
             }
@@ -201,7 +204,7 @@ struct ProfileView: View {
                         HStack(spacing: 5) {
                             Image(systemName: tabIcon(for: tab))
                                 .font(.system(size: 11))
-                            Text(tab.rawValue)
+                            Text(localizedTabName(tab))
                                 .font(.system(size: 12, weight: .semibold))
                         }
                         .foregroundStyle(
@@ -248,6 +251,16 @@ struct ProfileView: View {
         case .beta: return "flask.fill"
         case .sync: return "arrow.triangle.2.circlepath"
         case .signOut: return "rectangle.portrait.and.arrow.right"
+        }
+    }
+
+    private func localizedTabName(_ tab: ProfileTab) -> String {
+        switch tab {
+        case .appearance: return L.appearance
+        case .sound: return L.sound
+        case .beta: return L.beta
+        case .sync: return L.sync
+        case .signOut: return L.signOut
         }
     }
 
@@ -314,7 +327,7 @@ struct ProfileView: View {
                         HStack(spacing: 4) {
                             Image(systemName: subTabIcon(for: subTab))
                                 .font(.system(size: 10))
-                            Text(subTab.rawValue)
+                            Text(localizedSubTabName(subTab))
                                 .font(.system(size: 11, weight: .medium))
                         }
                         .foregroundStyle(
@@ -362,6 +375,15 @@ struct ProfileView: View {
         }
     }
 
+    private func localizedSubTabName(_ subTab: AppearanceSubTab) -> String {
+        switch subTab {
+        case .darkLight: return L.darkLight
+        case .breathingOrbs: return L.orbs
+        case .quantumFlow: return L.quantum
+        case .nebulaDrift: return L.nebula
+        }
+    }
+
     // MARK: - Dark/Light Sub-Tab
 
     /// Per-sub-tab accent tint for the glass panel
@@ -384,10 +406,10 @@ struct ProfileView: View {
                     .contentTransition(.symbolEffect(.replace))
 
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("Dark Mode")
+                    Text(L.darkMode)
                         .font(.system(size: 17, weight: .semibold))
                         .foregroundStyle(isDark ? .white : .primary)
-                    Text(isDark ? "Cosmic dark theme active" : "Light mode active")
+                    Text(isDark ? L.cosmicDarkTheme : L.lightModeActive)
                         .font(.system(size: 13))
                         .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
                 }
@@ -409,7 +431,7 @@ struct ProfileView: View {
 
             // Animation speed slider
             SettingsSliderView(
-                label: "Animation Speed",
+                label: L.animationSpeed,
                 iconName: "gauge.with.dots.needle.67percent",
                 value: Binding(
                     get: { profile?.animationSpeed ?? 1.0 },
@@ -418,9 +440,9 @@ struct ProfileView: View {
                 range: 0.2...2.0,
                 step: 0.1,
                 presets: [
-                    (0.5, "Slow", "tortoise"),
-                    (1.0, "Normal", "gauge.medium"),
-                    (1.5, "Fast", "hare"),
+                    (0.5, L.slow, "tortoise"),
+                    (1.0, L.normal, "gauge.medium"),
+                    (1.5, L.fast, "hare"),
                 ]
             )
 
@@ -434,7 +456,7 @@ struct ProfileView: View {
                 let srcLang = langPref?.sourceLanguageEnum ?? .english
                 let tgtLang = langPref?.targetLanguageEnum ?? .spanish
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("Language Pair")
+                    Text(L.languagePair)
                         .font(.system(size: 15, weight: .medium))
                         .foregroundStyle(isDark ? .white : .primary)
                     Text("\(srcLang.displayName) → \(tgtLang.name(in: srcLang))")
@@ -497,10 +519,10 @@ struct ProfileView: View {
             Text("LumenLingo")
                 .font(.headline)
                 .foregroundStyle(isDark ? .white.opacity(0.4) : .secondary)
-            Text("Version 1.0.0")
+            Text(L.version)
                 .font(.caption)
                 .foregroundStyle(isDark ? .white.opacity(0.25) : .gray.opacity(0.5))
-            Text("Made with ❤️ for language learners")
+            Text(L.madeWithLove)
                 .font(.caption)
                 .foregroundStyle(isDark ? .white.opacity(0.25) : .gray.opacity(0.5))
         }

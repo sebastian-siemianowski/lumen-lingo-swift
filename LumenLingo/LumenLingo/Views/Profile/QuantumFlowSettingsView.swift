@@ -8,8 +8,10 @@ import SwiftData
 struct QuantumFlowSettingsView: View {
     @Query private var profiles: [UserProfile]
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.localization) private var localization
     @State private var previewingScene: QuantumFlowScene? = nil
 
+    private var L: AppStrings { localization.strings }
     private var profile: UserProfile? { profiles.first }
     private var isDark: Bool { colorScheme == .dark }
 
@@ -57,10 +59,10 @@ struct QuantumFlowSettingsView: View {
                 .animation(.easeInOut(duration: 1.5).repeatForever(autoreverses: true), value: profile?.quantumFlowEnabled)
 
             VStack(alignment: .leading, spacing: 2) {
-                Text("Quantum Flow")
+                Text(L.quantumFlow)
                     .font(.system(size: 17, weight: .semibold))
                     .foregroundStyle(isDark ? .white : .primary)
-                Text("Dynamic particle animation layer")
+                Text(L.dynamicParticleAnimation)
                     .font(.system(size: 13))
                     .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
             }
@@ -84,7 +86,7 @@ struct QuantumFlowSettingsView: View {
                 Image(systemName: "sparkles")
                     .font(.system(size: 14))
                     .foregroundStyle(isDark ? .white.opacity(0.7) : .secondary)
-                Text("Scene")
+                Text(L.scene)
                     .font(.system(size: 14, weight: .semibold))
                     .foregroundStyle(isDark ? .white : .primary)
             }
@@ -116,7 +118,7 @@ struct QuantumFlowSettingsView: View {
 
     private var intensitySlider: some View {
         SettingsSliderView(
-            label: "Particle Density",
+            label: L.particleDensity,
             iconName: "circle.grid.3x3",
             value: Binding(
                 get: { profile?.quantumIntensity ?? 1.0 },
@@ -125,16 +127,16 @@ struct QuantumFlowSettingsView: View {
             range: 0.1...1.5,
             step: 0.1,
             presets: [
-                (0.3, "Sparse", "circle.dotted"),
-                (0.7, "Balanced", "circle.grid.2x2"),
-                (1.2, "Dense", "circle.grid.3x3.fill"),
+                (0.3, L.sparse, "circle.dotted"),
+                (0.7, L.balanced, "circle.grid.2x2"),
+                (1.2, L.dense, "circle.grid.3x3.fill"),
             ]
         )
     }
 
     private var speedSlider: some View {
         SettingsSliderView(
-            label: "Flow Speed",
+            label: L.flowSpeed,
             iconName: "gauge.with.needle",
             value: Binding(
                 get: { profile?.quantumSpeed ?? 1.0 },
@@ -143,9 +145,9 @@ struct QuantumFlowSettingsView: View {
             range: 0.3...1.5,
             step: 0.1,
             presets: [
-                (0.4, "Serene", "tortoise"),
-                (0.8, "Rhythmic", "metronome"),
-                (1.3, "Energetic", "hare"),
+                (0.4, L.serene, "tortoise"),
+                (0.8, L.rhythmic, "metronome"),
+                (1.3, L.energetic, "hare"),
             ]
         )
     }
@@ -191,6 +193,9 @@ struct QuantumFlowSettingsView: View {
 // MARK: - Fullscreen Quantum Flow Preview
 
 struct FullscreenQuantumFlowPreview: View {
+    @Environment(\.localization) private var localization
+    private var L: AppStrings { localization.strings }
+
     let initialScene: QuantumFlowScene
     let intensity: Double
     let speed: Double
@@ -269,7 +274,7 @@ struct FullscreenQuantumFlowPreview: View {
                         HStack(spacing: 8) {
                             Image(systemName: "chevron.down")
                                 .font(.system(size: 14, weight: .semibold))
-                            Text("Exit Preview")
+                            Text(L.exitPreview)
                                 .font(.system(size: 15, weight: .semibold))
                         }
                         .foregroundStyle(.white)

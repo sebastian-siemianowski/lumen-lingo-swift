@@ -9,6 +9,9 @@ import SwiftData
 struct SoundSettingsView: View {
     @Query private var profiles: [UserProfile]
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.localization) private var localization
+
+    private var L: AppStrings { localization.strings }
 
     private var profile: UserProfile? { profiles.first }
     private var isDark: Bool { colorScheme == .dark }
@@ -32,8 +35,8 @@ struct SoundSettingsView: View {
             standaloneSoundToggle(
                 icon: "hand.tap.fill",
                 color: .cyan,
-                title: "UI Interactions",
-                subtitle: "Button taps & navigation sounds",
+                title: L.uiInteractions,
+                subtitle: L.buttonTapsNavigation,
                 isOn: profile?.uiSoundsEnabled ?? true
             ) {
                 profile?.uiSoundsEnabled.toggle()
@@ -42,8 +45,8 @@ struct SoundSettingsView: View {
             standaloneSoundToggle(
                 icon: "trophy.fill",
                 color: .yellow,
-                title: "Achievements",
-                subtitle: "Level-up fanfares & streak bonuses",
+                title: L.achievements,
+                subtitle: L.levelUpFanfares,
                 isOn: profile?.achievementSoundsEnabled ?? true
             ) {
                 profile?.achievementSoundsEnabled.toggle()
@@ -52,8 +55,8 @@ struct SoundSettingsView: View {
             standaloneSoundToggle(
                 icon: "waveform",
                 color: .indigo,
-                title: "Ambient Audio",
-                subtitle: "Background atmospheric sounds",
+                title: L.ambientAudio,
+                subtitle: L.backgroundAtmospheric,
                 isOn: profile?.ambientSoundsEnabled ?? false
             ) {
                 profile?.ambientSoundsEnabled.toggle()
@@ -78,10 +81,10 @@ struct SoundSettingsView: View {
                 .contentTransition(.symbolEffect(.replace))
 
             VStack(alignment: .leading, spacing: 2) {
-                Text("Master Sound")
+                Text(L.masterSound)
                     .font(.system(size: 17, weight: .semibold))
                     .foregroundStyle(isDark ? .white : .primary)
-                Text(profile?.soundEnabled == true ? "All sounds enabled" : "All sounds muted")
+                Text(profile?.soundEnabled == true ? L.allSoundsEnabled : L.allSoundsMuted)
                     .font(.system(size: 13))
                     .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
             }
@@ -139,10 +142,10 @@ struct SoundSettingsView: View {
                     .foregroundStyle(.green)
 
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("All Games")
+                    Text(L.allGames)
                         .font(.system(size: 15, weight: .semibold))
                         .foregroundStyle(isDark ? .white : .primary)
-                    Text("Toggle all game category sounds")
+                    Text(L.toggleAllGameSounds)
                         .font(.system(size: 12))
                         .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
                 }
@@ -162,7 +165,7 @@ struct SoundSettingsView: View {
                 childSoundToggle(
                     icon: "rectangle.portrait.on.rectangle.portrait.fill",
                     color: .cyan,
-                    title: "Flashcards",
+                    title: L.flashcardsSound,
                     isOn: profile?.flashcardsSoundsEnabled ?? true
                 ) {
                     profile?.flashcardsSoundsEnabled.toggle()
@@ -172,7 +175,7 @@ struct SoundSettingsView: View {
                 childSoundToggle(
                     icon: "text.book.closed.fill",
                     color: .orange,
-                    title: "Grammar",
+                    title: L.grammarSound,
                     isOn: profile?.grammarSoundsEnabled ?? true
                 ) {
                     profile?.grammarSoundsEnabled.toggle()
@@ -182,7 +185,7 @@ struct SoundSettingsView: View {
                 childSoundToggle(
                     icon: "character.textbox",
                     color: .purple,
-                    title: "Word Builder",
+                    title: L.wordBuilderSound,
                     isOn: profile?.wordBuilderSoundsEnabled ?? true
                 ) {
                     profile?.wordBuilderSoundsEnabled.toggle()

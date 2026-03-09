@@ -33,10 +33,14 @@
 		3ADCCD186B86AF4E7ED8230B /* QuantumFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EF54CA4B0E1ECB5159EE96 /* QuantumFlowView.swift */; };
 		3C83D6934D1A9F0C1D007D89 /* CosmicPostProcess.metal in Sources */ = {isa = PBXBuildFile; fileRef = C71ECFF5B79F4F2875BBAB02 /* CosmicPostProcess.metal */; };
 		3C903D4D3E0D7E30AF1A0FF2 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6BC346843C39C8CEC01294 /* AudioService.swift */; };
+		4080213C15C0C4FF8A920663 /* AppStrings+Spanish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1FE9FEB595A6DB1EF724B9 /* AppStrings+Spanish.swift */; };
 		43BC39433248FE27AA9CB536 /* LiquidGlassPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6894E9DF06377B29632C3002 /* LiquidGlassPagination.swift */; };
 		44A0B7C6B75720CA91968CA6 /* flashcards_polish_french.json in Resources */ = {isa = PBXBuildFile; fileRef = 4198AE62B582238D9214B56E /* flashcards_polish_french.json */; };
 		46377BB86BC3645FA32D6062 /* flashcards_german_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 179F24862354560BCC12AB27 /* flashcards_german_english.json */; };
+		47DF8C954EF56CC76450F79D /* AppStrings+Chinese.swift in Sources */ = {isa = PBXBuildFile; fileRef = A760A0D7B77D217CF9A7173F /* AppStrings+Chinese.swift */; };
+		48C3F46354D69FC50A03B221 /* AppStrings+Arabic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489FCF457D3A3F60F75B983 /* AppStrings+Arabic.swift */; };
 		4BE7B3BEC3A8F44C9926CC3A /* grammar_english_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 8260535396006EA63405CA68 /* grammar_english_spanish.json */; };
+		4DEBDE799DFF66C3AF2E75A8 /* AppStrings+Polish.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB9411DB022EF3C046C2B75 /* AppStrings+Polish.swift */; };
 		4ED6EDA846EB2DC1FC902B42 /* flashcards_english_japanese.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C8D4D41E794AAF840BF37C9 /* flashcards_english_japanese.json */; };
 		51F37E91BA985E1B866F4DBB /* flashcards_polish_english.json in Resources */ = {isa = PBXBuildFile; fileRef = A09DE5B1813E2A548A69FE53 /* flashcards_polish_english.json */; };
 		51F8F1F25214F416831EDB21 /* grammar_polish_japanese.json in Resources */ = {isa = PBXBuildFile; fileRef = 86217728B7FFADD692A67832 /* grammar_polish_japanese.json */; };
@@ -45,6 +49,7 @@
 		572A2C73F39ADFE7E1AD1583 /* flashcards_german_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 1CD9C429C1C49ACDEF66DB34 /* flashcards_german_spanish.json */; };
 		572BB4F60AFAF80471033286 /* grammar_german_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DF4AC8CA444C17E9975F76B /* grammar_german_spanish.json */; };
 		5DC776954B7538B3745A70EA /* HapticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894DD05B6C1F9A54FFFA697A /* HapticsService.swift */; };
+		5E2440DE8DE657DD58820192 /* AppStrings+English.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1043A7A28122A7496303992 /* AppStrings+English.swift */; };
 		5F8D5BC0E027A8B5E7340923 /* NebulaDriftSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E271F15AB922B3AF19043 /* NebulaDriftSettingsView.swift */; };
 		5FB26168DC3D5D7E4F31A7E2 /* grammar_german_english.json in Resources */ = {isa = PBXBuildFile; fileRef = D508F16BB89B3B9C89C1BCD7 /* grammar_german_english.json */; };
 		60F70FD0BAD33EBA757BFCAA /* StarburstRingPreset.metal in Sources */ = {isa = PBXBuildFile; fileRef = CB8C0791AB4D515F992AC1E7 /* StarburstRingPreset.metal */; };
@@ -63,6 +68,7 @@
 		7D3E00173527F078F1B16EAC /* grammar_polish_arabic.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C637EFA05F05EEE861FA130 /* grammar_polish_arabic.json */; };
 		7DAA6B7270C82DB77C328FAD /* grammar_german_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 6822F2E4E589FD329251ABF1 /* grammar_german_polish.json */; };
 		8037523F05A7FB2AB42816D9 /* grammar_english_french.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D6FE4BD7584212604B3B839 /* grammar_english_french.json */; };
+		845F96740BB1219565F758AB /* AppStrings+Japanese.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7A93ED414D0470C87039F9 /* AppStrings+Japanese.swift */; };
 		85173516305E3F46D20A615C /* flashcards_french_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 72DC7028C7F8CC902DD56A80 /* flashcards_french_english.json */; };
 		854C496AA558DC855EBF27DC /* grammar_english_japanese.json in Resources */ = {isa = PBXBuildFile; fileRef = FCAA7717377E15C1E4F98955 /* grammar_english_japanese.json */; };
 		86AE2EA2C07C7B04D3C1AF95 /* flashcards_ukrainian_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = A55C2F133F96E1EF1211904B /* flashcards_ukrainian_polish.json */; };
@@ -78,6 +84,7 @@
 		A597B5030071EAC72D59777A /* SolarAuroraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E0E826DB4B9AC7450DB492 /* SolarAuroraView.swift */; };
 		A71CCAEA069D1304C4EFFF39 /* CosmicBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEB257B68C610CCEA553916 /* CosmicBackgroundView.swift */; };
 		A96ECB64AECD533AD9CE4200 /* flashcards_arabic_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 253ACC5CC16E7092400D4079 /* flashcards_arabic_english.json */; };
+		A9B6CE17AF11302C2F071C8D /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D84646F3760F4E9CCAE6B6 /* AppStrings.swift */; };
 		A9DF7EC0313E9EC8BEEDAA12 /* SolarAuroraStars.metal in Sources */ = {isa = PBXBuildFile; fileRef = EB5EA1D2487A9E973C303FE8 /* SolarAuroraStars.metal */; };
 		AAB3EBD187F4B304EF2A471B /* BreathingOrbsSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C84297D92B80DD22BB1E11C /* BreathingOrbsSettingsView.swift */; };
 		B08B367E63734C6253D76A0D /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3982631873ABBAD71CBA185 /* CategoryViewModel.swift */; };
@@ -100,14 +107,17 @@
 		C145B25DA96901C3C3577A97 /* SyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFF01D34AAF3901078DA05B /* SyncService.swift */; };
 		C22897E4F70EE3C7ED6D25F8 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E3C7A79DB8469686B2712B /* DashboardViewModel.swift */; };
 		C63BF657373F805F4F205644 /* CelestialStars.metal in Sources */ = {isa = PBXBuildFile; fileRef = 57E4B1517FF079FD28CE5508 /* CelestialStars.metal */; };
+		C74569CE67466710CB768703 /* AppStrings+Ukrainian.swift in Sources */ = {isa = PBXBuildFile; fileRef = B976B6034B6375FEF0CFE513 /* AppStrings+Ukrainian.swift */; };
 		CA9716E4DFC9D4FA0B1821BA /* GrammarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F049FEAB56C3145BCF41D5A /* GrammarViewModel.swift */; };
 		CB01B2380A84E9C75B37B547 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2243A3F5171B5E1D1731A /* Extensions.swift */; };
 		CE535ED079A9AFF89EB06028 /* SpiralHaloStars.metal in Sources */ = {isa = PBXBuildFile; fileRef = E78D46284A32A5BAEDE26A2A /* SpiralHaloStars.metal */; };
 		D00AB6E60F7E92B4B1868126 /* JourneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00238DB4631FF527FE002203 /* JourneyView.swift */; };
 		D0806A3443CF384745B8EC43 /* grammar_spanish_english.json in Resources */ = {isa = PBXBuildFile; fileRef = D41E1DDF3573205870644CDF /* grammar_spanish_english.json */; };
+		D6C1FF69FC5BCBFCE19E86D4 /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3766F4844525AE0B8F693647 /* LocalizationManager.swift */; };
 		D944A99D79DAE4DB61D4A0CA /* AndromedaStars.metal in Sources */ = {isa = PBXBuildFile; fileRef = 16CBC7FA67305C12DB95778D /* AndromedaStars.metal */; };
 		D967A286882D8393059BCD01 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178728D2894F28CD3D7CA335 /* ExtensionsTests.swift */; };
 		DA7EACF50CDA6F892FAE9972 /* SchemeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013FEB67D3F0AB101B4EF0A /* SchemeCardView.swift */; };
+		DB65812358EE3AD37B86CC9A /* AppStrings+German.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AF276C24F43C677FE4579A /* AppStrings+German.swift */; };
 		DD489C4BF4E066DA2A33B94E /* grammar_ukrainian_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = F0AE02E5AA944BBF9A1E7BB2 /* grammar_ukrainian_polish.json */; };
 		DF2BC01B8E34CB130AB3B7B6 /* MembershipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927863E6ECF97AE41A78326D /* MembershipView.swift */; };
 		E04CF3B9BEE5E6E32567269F /* StarFieldGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A63D5EEB0001AEFA02084A /* StarFieldGenerator.swift */; };
@@ -124,6 +134,7 @@
 		F5439D82BFE2910F8A446299 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D84080B3E5FBF4012D412B /* ContentView.swift */; };
 		F5B050BBD9675556C37EF44F /* grammar_french_english.json in Resources */ = {isa = PBXBuildFile; fileRef = EE209D9EF404AA5D75D6D840 /* grammar_french_english.json */; };
 		FED1EF451B08FBEF1081AC4D /* grammar_polish_german.json in Resources */ = {isa = PBXBuildFile; fileRef = 1529F75859B9520B053C7083 /* grammar_polish_german.json */; };
+		FEDBB41A11D82843DDC00888 /* AppStrings+French.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869CE2159CF9460A51BA2008 /* AppStrings+French.swift */; };
 		FFEB34E94BF794DB93C7F83E /* CelestialLagoonPreset.metal in Sources */ = {isa = PBXBuildFile; fileRef = D982946FA08A7CB301870D9F /* CelestialLagoonPreset.metal */; };
 /* End PBXBuildFile section */
 
@@ -159,6 +170,7 @@
 		1FC0C0DB194CFC6D81344A4F /* grammar_polish_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_polish_english.json; sourceTree = "<group>"; };
 		2378260414FE146694223E05 /* flashcards_english_spanish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_english_spanish.json; sourceTree = "<group>"; };
 		2426F02F8E3AB9B6634761D6 /* flashcards_polish_arabic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_polish_arabic.json; sourceTree = "<group>"; };
+		2489FCF457D3A3F60F75B983 /* AppStrings+Arabic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStrings+Arabic.swift"; sourceTree = "<group>"; };
 		253ACC5CC16E7092400D4079 /* flashcards_arabic_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_arabic_english.json; sourceTree = "<group>"; };
 		2A37D0B6CA9D686E2F337F28 /* StarburstStars.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = StarburstStars.metal; sourceTree = "<group>"; };
 		2B7E4874F32867EAD578F46A /* FlashCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardsView.swift; sourceTree = "<group>"; };
@@ -168,10 +180,12 @@
 		310DB5BD274A6F504FBCFFC1 /* ProgressService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressService.swift; sourceTree = "<group>"; };
 		354EAD059D0A762F62E2B0AF /* grammar_chinese_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_chinese_english.json; sourceTree = "<group>"; };
 		35E3C7A79DB8469686B2712B /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		3766F4844525AE0B8F693647 /* LocalizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
 		38147CE75141E1292FF464C1 /* MetalCosmicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalCosmicView.swift; sourceTree = "<group>"; };
 		3815318D8DCB4AC7CE373CE6 /* flashcards_polish_chinese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_polish_chinese.json; sourceTree = "<group>"; };
 		39CDFBF6DCB5ECB7689CE6C6 /* grammar_english_chinese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_english_chinese.json; sourceTree = "<group>"; };
 		3C8D4D41E794AAF840BF37C9 /* flashcards_english_japanese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_english_japanese.json; sourceTree = "<group>"; };
+		3F7A93ED414D0470C87039F9 /* AppStrings+Japanese.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStrings+Japanese.swift"; sourceTree = "<group>"; };
 		3FAA135975F4BAFABE14B7C3 /* CosmicNoise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CosmicNoise.h; sourceTree = "<group>"; };
 		4198AE62B582238D9214B56E /* flashcards_polish_french.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_polish_french.json; sourceTree = "<group>"; };
 		44222FA157B1496887D5F6BD /* flashcards_polish_german.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_polish_german.json; sourceTree = "<group>"; };
@@ -202,12 +216,14 @@
 		730CF948B26949986924320A /* ContentModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModels.swift; sourceTree = "<group>"; };
 		7498E6A6E32D2EC5499420EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7798F321317CB763B6FA0DDD /* grammar_polish_chinese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_polish_chinese.json; sourceTree = "<group>"; };
+		77AF276C24F43C677FE4579A /* AppStrings+German.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStrings+German.swift"; sourceTree = "<group>"; };
 		7C9888AA5863A661728358B1 /* flashcards_german_polish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_german_polish.json; sourceTree = "<group>"; };
 		802BDCE7BA03C328A26964AF /* SignOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutView.swift; sourceTree = "<group>"; };
 		81D84080B3E5FBF4012D412B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8260535396006EA63405CA68 /* grammar_english_spanish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_english_spanish.json; sourceTree = "<group>"; };
 		82D97CC31B49DFEB27CC9F16 /* ContentModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModelsTests.swift; sourceTree = "<group>"; };
 		86217728B7FFADD692A67832 /* grammar_polish_japanese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_polish_japanese.json; sourceTree = "<group>"; };
+		869CE2159CF9460A51BA2008 /* AppStrings+French.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStrings+French.swift"; sourceTree = "<group>"; };
 		881BEF19BF6BC1C0A955764B /* flashcards_japanese_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_japanese_english.json; sourceTree = "<group>"; };
 		894DD05B6C1F9A54FFFA697A /* HapticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsService.swift; sourceTree = "<group>"; };
 		8C9082790B59A90F1EFFED6F /* flashcards_polish_spanish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_polish_spanish.json; sourceTree = "<group>"; };
@@ -220,12 +236,15 @@
 		9ABE46716764CD468292614F /* CosmicStarTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CosmicStarTypes.h; sourceTree = "<group>"; };
 		9DD06C49CE0742785FB126D2 /* EdgeOfAndromedaPreset.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = EdgeOfAndromedaPreset.metal; sourceTree = "<group>"; };
 		9DEB257B68C610CCEA553916 /* CosmicBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmicBackgroundView.swift; sourceTree = "<group>"; };
+		9E1FE9FEB595A6DB1EF724B9 /* AppStrings+Spanish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStrings+Spanish.swift"; sourceTree = "<group>"; };
 		9F049FEAB56C3145BCF41D5A /* GrammarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarViewModel.swift; sourceTree = "<group>"; };
 		A02AB5B911E71E7D7B839369 /* grammar_arabic_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_arabic_english.json; sourceTree = "<group>"; };
 		A09DE5B1813E2A548A69FE53 /* flashcards_polish_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_polish_english.json; sourceTree = "<group>"; };
+		A1043A7A28122A7496303992 /* AppStrings+English.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStrings+English.swift"; sourceTree = "<group>"; };
 		A258E34605BA4E0F602DFD6A /* CosmicStars.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CosmicStars.metal; sourceTree = "<group>"; };
 		A46D9B996CC8601EBBCCB4AA /* LagoonNebulaPreset.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LagoonNebulaPreset.metal; sourceTree = "<group>"; };
 		A55C2F133F96E1EF1211904B /* flashcards_ukrainian_polish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_ukrainian_polish.json; sourceTree = "<group>"; };
+		A760A0D7B77D217CF9A7173F /* AppStrings+Chinese.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStrings+Chinese.swift"; sourceTree = "<group>"; };
 		A900EAC3D8E68D78ADF09620 /* WordBuilderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordBuilderViewModel.swift; sourceTree = "<group>"; };
 		AA8853A00938061AC818C42D /* LayoutBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutBackgroundView.swift; sourceTree = "<group>"; };
 		ACB2AC46688AFD50BFAE024B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -233,6 +252,7 @@
 		B1CD6316B947998E54ACB4AF /* flashcards_polish_japanese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_polish_japanese.json; sourceTree = "<group>"; };
 		B3982631873ABBAD71CBA185 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		B70A4CC223AB0F0CBD300360 /* LiquidGlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassCard.swift; sourceTree = "<group>"; };
+		B976B6034B6375FEF0CFE513 /* AppStrings+Ukrainian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStrings+Ukrainian.swift"; sourceTree = "<group>"; };
 		C2522C1400407731C720E317 /* grammar_japanese_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_japanese_english.json; sourceTree = "<group>"; };
 		C71ECFF5B79F4F2875BBAB02 /* CosmicPostProcess.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CosmicPostProcess.metal; sourceTree = "<group>"; };
 		C7A63D5EEB0001AEFA02084A /* StarFieldGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarFieldGenerator.swift; sourceTree = "<group>"; };
@@ -252,12 +272,14 @@
 		E78D46284A32A5BAEDE26A2A /* SpiralHaloStars.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SpiralHaloStars.metal; sourceTree = "<group>"; };
 		E92B42CA6AE8D2A591A3D217 /* flashcards_spanish_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_spanish_english.json; sourceTree = "<group>"; };
 		EB5EA1D2487A9E973C303FE8 /* SolarAuroraStars.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SolarAuroraStars.metal; sourceTree = "<group>"; };
+		EBB9411DB022EF3C046C2B75 /* AppStrings+Polish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStrings+Polish.swift"; sourceTree = "<group>"; };
 		EE209D9EF404AA5D75D6D840 /* grammar_french_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_french_english.json; sourceTree = "<group>"; };
 		EFE521ADD54E6635CA76C3A1 /* wordbuilder_english_spanish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_english_spanish.json; sourceTree = "<group>"; };
 		F0AE02E5AA944BBF9A1E7BB2 /* grammar_ukrainian_polish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_ukrainian_polish.json; sourceTree = "<group>"; };
 		F1079AD7C7C0B803C74DDCC7 /* SyncStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncStatusView.swift; sourceTree = "<group>"; };
 		F2A5EB7427BAE3106C94D4ED /* FlashcardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardsViewModel.swift; sourceTree = "<group>"; };
 		F829FC2D29C631AC681A340D /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		F9D84646F3760F4E9CCAE6B6 /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
 		FA6C857CACD14B5F9D11A9BE /* flashcards_english_french.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_english_french.json; sourceTree = "<group>"; };
 		FCAA7717377E15C1E4F98955 /* grammar_english_japanese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_english_japanese.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -508,6 +530,22 @@
 			path = ukrainian_polish;
 			sourceTree = "<group>";
 		};
+		679C3F0B7354BB606A34350F /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				2489FCF457D3A3F60F75B983 /* AppStrings+Arabic.swift */,
+				A760A0D7B77D217CF9A7173F /* AppStrings+Chinese.swift */,
+				A1043A7A28122A7496303992 /* AppStrings+English.swift */,
+				869CE2159CF9460A51BA2008 /* AppStrings+French.swift */,
+				77AF276C24F43C677FE4579A /* AppStrings+German.swift */,
+				3F7A93ED414D0470C87039F9 /* AppStrings+Japanese.swift */,
+				EBB9411DB022EF3C046C2B75 /* AppStrings+Polish.swift */,
+				9E1FE9FEB595A6DB1EF724B9 /* AppStrings+Spanish.swift */,
+				B976B6034B6375FEF0CFE513 /* AppStrings+Ukrainian.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		67CE8EAAA53D5CF64A46E3FB /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -612,6 +650,7 @@
 				ACB2AC46688AFD50BFAE024B /* AuthService.swift */,
 				62C3678F93D1D997024205E2 /* ContentLoader.swift */,
 				894DD05B6C1F9A54FFFA697A /* HapticsService.swift */,
+				3766F4844525AE0B8F693647 /* LocalizationManager.swift */,
 				310DB5BD274A6F504FBCFFC1 /* ProgressService.swift */,
 				4DFF01D34AAF3901078DA05B /* SyncService.swift */,
 				12F5A0006F1BE35C07723FF8 /* ThemeManager.swift */,
@@ -623,9 +662,11 @@
 		AA5EB74A9C96AEB80BAA2339 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F9D84646F3760F4E9CCAE6B6 /* AppStrings.swift */,
 				730CF948B26949986924320A /* ContentModels.swift */,
 				082370545F169B205DEB7118 /* DataModels.swift */,
 				F829FC2D29C631AC681A340D /* Enums.swift */,
+				679C3F0B7354BB606A34350F /* Localization */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -905,6 +946,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D944A99D79DAE4DB61D4A0CA /* AndromedaStars.metal in Sources */,
+				48C3F46354D69FC50A03B221 /* AppStrings+Arabic.swift in Sources */,
+				47DF8C954EF56CC76450F79D /* AppStrings+Chinese.swift in Sources */,
+				5E2440DE8DE657DD58820192 /* AppStrings+English.swift in Sources */,
+				FEDBB41A11D82843DDC00888 /* AppStrings+French.swift in Sources */,
+				DB65812358EE3AD37B86CC9A /* AppStrings+German.swift in Sources */,
+				845F96740BB1219565F758AB /* AppStrings+Japanese.swift in Sources */,
+				4DEBDE799DFF66C3AF2E75A8 /* AppStrings+Polish.swift in Sources */,
+				4080213C15C0C4FF8A920663 /* AppStrings+Spanish.swift in Sources */,
+				C74569CE67466710CB768703 /* AppStrings+Ukrainian.swift in Sources */,
+				A9B6CE17AF11302C2F071C8D /* AppStrings.swift in Sources */,
 				3C903D4D3E0D7E30AF1A0FF2 /* AudioService.swift in Sources */,
 				B4CF6C8C81966375535DF27F /* AuthService.swift in Sources */,
 				B09FE36ECF69449ADCA3E8B1 /* BetaLanguagesView.swift in Sources */,
@@ -939,6 +990,7 @@
 				74435F6A6EC5F4E3D5C6EA1C /* LayoutBackgroundView.swift in Sources */,
 				03403985A831D6F970331DF5 /* LiquidGlassCard.swift in Sources */,
 				43BC39433248FE27AA9CB536 /* LiquidGlassPagination.swift in Sources */,
+				D6C1FF69FC5BCBFCE19E86D4 /* LocalizationManager.swift in Sources */,
 				B77CAF0468C0B5BE9AE655B5 /* LumenLingoApp.swift in Sources */,
 				DF2BC01B8E34CB130AB3B7B6 /* MembershipView.swift in Sources */,
 				158A5B1BCC24775744979354 /* MetalCosmicRenderer.swift in Sources */,

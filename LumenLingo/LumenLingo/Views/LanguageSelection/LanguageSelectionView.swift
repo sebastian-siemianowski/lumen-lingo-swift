@@ -222,6 +222,9 @@ struct LanguageSelectionView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var modelContext
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.localization) private var localization
+
+    private var L: AppStrings { localization.strings }
 
     @Query private var languagePrefs: [LanguagePreference]
     @Query private var betaPairs: [EnabledBetaPair]
@@ -295,16 +298,16 @@ struct LanguageSelectionView: View {
                     .padding(.top, 12)
                 }
             }
-            .navigationTitle("Languages")
+            .navigationTitle(L.languages)
             .navigationBarTitleDisplayMode(.inline)
             .toolbarColorScheme(.dark, for: .navigationBar)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel") { dismiss() }
+                    Button(L.cancel) { dismiss() }
                         .foregroundStyle(.white.opacity(0.7))
                 }
             }
-            .searchable(text: $searchText, prompt: "Search languages\u{2026}")
+            .searchable(text: $searchText, prompt: L.searchLanguages)
             .onAppear { loadCurrent() }
         }
     }
@@ -322,10 +325,10 @@ struct LanguageSelectionView: View {
                         endPoint: .bottomTrailing
                     )
                 )
-            Text("Choose Your Languages")
+            Text(L.chooseYourLanguages)
                 .font(.title3.bold())
                 .foregroundStyle(.white)
-            Text("Select what you know and what you're learning")
+            Text(L.selectWhatYouKnow)
                 .font(.subheadline)
                 .foregroundStyle(.white.opacity(0.5))
         }
@@ -336,7 +339,7 @@ struct LanguageSelectionView: View {
 
     private var sourceLanguageSection: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Label("I speak", systemImage: "person.wave.2.fill")
+            Label(L.iSpeak, systemImage: "person.wave.2.fill")
                 .font(.headline)
                 .foregroundStyle(.white)
 
@@ -377,12 +380,12 @@ struct LanguageSelectionView: View {
 
     private var targetLanguageSection: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Label("I'm learning", systemImage: "book.fill")
+            Label(L.imLearning, systemImage: "book.fill")
                 .font(.headline)
                 .foregroundStyle(.white)
 
             if filteredTargets.isEmpty {
-                Text("No languages available for this source.")
+                Text(L.noLanguagesAvailable)
                     .font(.subheadline)
                     .foregroundStyle(.white.opacity(0.4))
                     .frame(maxWidth: .infinity, alignment: .center)
@@ -411,10 +414,10 @@ struct LanguageSelectionView: View {
                 Image(systemName: "flask.fill")
                     .foregroundStyle(.orange)
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("Beta Language Pairs")
+                    Text(L.betaLanguagePairs)
                         .font(.subheadline.bold())
                         .foregroundStyle(.white)
-                    Text("Show experimental pairs with limited content")
+                    Text(L.showExperimentalPairs)
                         .font(.caption2)
                         .foregroundStyle(.white.opacity(0.4))
                 }
@@ -434,7 +437,7 @@ struct LanguageSelectionView: View {
         } label: {
             HStack(spacing: 8) {
                 Image(systemName: "checkmark.circle.fill")
-                Text("Confirm:")
+                Text(L.confirm)
                     .fontWeight(.semibold)
                 CountryFlagView(countryCode: selectedSource.countryCode, size: 16)
                 Image(systemName: "arrow.right")

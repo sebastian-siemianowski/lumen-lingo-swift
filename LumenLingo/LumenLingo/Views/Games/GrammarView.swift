@@ -14,6 +14,9 @@ struct GrammarView: View {
     @Environment(AudioService.self) private var audioService
     @Environment(HapticsService.self) private var hapticsService
     @Environment(ContentLoader.self) private var contentLoader
+    @Environment(\.localization) private var localization
+
+    private var L: AppStrings { localization.strings }
 
     @Binding var hideTabBar: Bool
 
@@ -90,7 +93,7 @@ struct GrammarView: View {
             ProgressView()
                 .scaleEffect(1.5)
                 .tint(.white)
-            Text("Loading questions...")
+            Text(L.loadingQuestions)
                 .font(.headline)
                 .foregroundStyle(.white.opacity(0.7))
         }
@@ -130,7 +133,7 @@ struct GrammarView: View {
                 Button { dismiss() } label: {
                     HStack(spacing: 6) {
                         Image(systemName: "chevron.left")
-                        Text("Back")
+                        Text(L.back)
                     }
                     .font(.subheadline)
                     .foregroundStyle(.white.opacity(0.7))
@@ -490,7 +493,7 @@ struct GrammarView: View {
             HStack(spacing: 8) {
                 Image(systemName: "lightbulb.fill")
                     .foregroundStyle(.yellow)
-                Text("Grammar Tip")
+                Text(L.grammarTip)
                     .font(.subheadline.bold())
                     .foregroundStyle(.white)
             }
@@ -514,7 +517,7 @@ struct GrammarView: View {
             advanceQuestion()
         } label: {
             HStack(spacing: 8) {
-                Text("Next")
+                Text(L.next)
                     .font(.headline)
                 Image(systemName: "arrow.right")
             }
@@ -557,10 +560,10 @@ struct GrammarView: View {
             Image(systemName: "tray")
                 .font(.system(size: 48))
                 .foregroundStyle(.white.opacity(0.4))
-            Text("No questions available")
+            Text(L.noQuestionsAvailable)
                 .font(.headline)
                 .foregroundStyle(.white.opacity(0.7))
-            Button("Go Back") { dismiss() }
+            Button(L.goBack) { dismiss() }
                 .buttonStyle(.bordered)
                 .tint(.white)
         }

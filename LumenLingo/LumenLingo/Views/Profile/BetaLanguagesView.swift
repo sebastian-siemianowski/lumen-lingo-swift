@@ -9,14 +9,16 @@ import SwiftData
 struct BetaLanguagesView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.localization) private var localization
     @Query private var enabledPairs: [EnabledBetaPair]
+
+    private var L: AppStrings { localization.strings }
 
     private var isDark: Bool { colorScheme == .dark }
 
-    // Two-column adaptive grid
+    // Single-column for comfortable text display
     private let columns = [
-        GridItem(.flexible(), spacing: 10),
-        GridItem(.flexible(), spacing: 10)
+        GridItem(.flexible())
     ]
 
     // Core pairs — React's TOP_LANGUAGE_PAIRS (always on)
@@ -85,10 +87,10 @@ struct BetaLanguagesView: View {
             }
 
             VStack(alignment: .leading, spacing: 4) {
-                Text("Beta Languages")
+                Text(L.betaLanguages)
                     .font(.system(size: 17, weight: .bold))
                     .foregroundStyle(.white)
-                Text("Experimental language pairs")
+                Text(L.experimentalLanguagePairs)
                     .font(.system(size: 13))
                     .foregroundStyle(isDark ? .white.opacity(0.5) : .white.opacity(0.6))
             }
@@ -106,10 +108,10 @@ struct BetaLanguagesView: View {
                 .foregroundStyle(.yellow)
 
             VStack(alignment: .leading, spacing: 4) {
-                Text("Experimental Features")
+                Text(L.experimentalFeatures)
                     .font(.system(size: 14, weight: .bold))
                     .foregroundStyle(isDark ? Color(red: 0.996, green: 0.941, blue: 0.541) : .white)
-                Text("Beta languages may have limited content or occasional translation quirks.")
+                Text(L.betaLimitedContent)
                     .font(.system(size: 12))
                     .foregroundStyle(isDark ? Color(red: 0.996, green: 0.941, blue: 0.541).opacity(0.7) : .white.opacity(0.9))
             }
@@ -147,12 +149,12 @@ struct BetaLanguagesView: View {
                     .font(.system(size: 14))
                     .foregroundStyle(isDark ? .yellow : .white)
 
-                Text("Core Languages")
+                Text(L.coreLanguages)
                     .font(.system(size: 14, weight: .bold))
                     .foregroundStyle(.white)
 
                 // "Always on" badge
-                Text("Always on")
+                Text(L.alwaysOn)
                     .font(.system(size: 10, weight: .bold))
                     .foregroundStyle(isDark ? Color.green.opacity(0.9) : .white)
                     .padding(.horizontal, 8)
@@ -196,71 +198,44 @@ struct BetaLanguagesView: View {
     // MARK: - Core Pair Card (Non-Toggleable)
 
     private func corePairCard(_ pair: LanguagePair, index: Int) -> some View {
-        HStack(spacing: 10) {
-            // Globe icon container
-            ZStack {
-                RoundedRectangle(cornerRadius: 10, style: .continuous)
-                    .fill(
-                        isDark
-                            ? LinearGradient(
-                                colors: [Color.green.opacity(0.2), Color.teal.opacity(0.15)],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                              )
-                            : LinearGradient(
-                                colors: [Color.white.opacity(0.25)],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                              )
-                    )
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 10, style: .continuous)
-                            .strokeBorder(
-                                isDark ? Color.green.opacity(0.3) : .white.opacity(0.45),
-                                lineWidth: 1
-                            )
-                    )
-                    .frame(width: 36, height: 36)
-
-                Image(systemName: "globe")
-                    .font(.system(size: 16, weight: .semibold))
-                    .foregroundStyle(isDark ? .green.opacity(0.8) : .white)
+        HStack(spacing: 14) {
+            // Country flags
+            HStack(spacing: 4) {
+                CountryFlagView(countryCode: pair.source.countryCode, size: 20)
+                Image(systemName: "arrow.right")
+                    .font(.system(size: 10, weight: .bold))
+                    .foregroundStyle(isDark ? .green.opacity(0.6) : .white.opacity(0.5))
+                CountryFlagView(countryCode: pair.target.countryCode, size: 20)
             }
 
-            // Pair label
-            Text("\(pair.source.englishName) → \(pair.target.englishName)")
-                .font(.system(size: 13, weight: .semibold))
+            // Pair label — translated into user's source language
+            Text("\(pair.source.name(in: localization.sourceLanguage)) → \(pair.target.name(in: localization.sourceLanguage))")
+                .font(.system(size: 14, weight: .semibold))
                 .foregroundStyle(isDark ? Color(red: 0.86, green: 0.99, blue: 0.91) : .white)
-                .lineLimit(1)
-                .minimumScaleFactor(0.8)
+                .lineLimit(2)
+                .minimumScaleFactor(0.75)
 
             Spacer(minLength: 4)
 
             // Active indicator
-            VStack(spacing: 2) {
-                Image(systemName: "checkmark.circle.fill")
-                    .font(.system(size: 18))
-                    .foregroundStyle(isDark ? .green : .white)
-
-                Text("Active")
-                    .font(.system(size: 9, weight: .bold))
-                    .foregroundStyle(isDark ? Color.green.opacity(0.8) : .white)
-            }
+            Image(systemName: "checkmark.seal.fill")
+                .font(.system(size: 20))
+                .foregroundStyle(isDark ? .green : .white.opacity(0.9))
         }
-        .padding(.horizontal, 14)
-        .padding(.vertical, 12)
+        .padding(.horizontal, 16)
+        .padding(.vertical, 14)
         .background(
-            RoundedRectangle(cornerRadius: 18, style: .continuous)
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
                 .fill(
                     isDark
-                        ? (index % 2 == 0 ? Color.white.opacity(0.05) : Color.white.opacity(0.08))
-                        : (index % 2 == 0 ? Color.white.opacity(0.06) : Color.white.opacity(0.1))
+                        ? Color.white.opacity(index % 2 == 0 ? 0.04 : 0.06)
+                        : Color.white.opacity(index % 2 == 0 ? 0.06 : 0.1)
                 )
                 .overlay(
-                    RoundedRectangle(cornerRadius: 18, style: .continuous)
+                    RoundedRectangle(cornerRadius: 16, style: .continuous)
                         .strokeBorder(
-                            isDark ? Color.green.opacity(0.35) : .white.opacity(0.2),
-                            lineWidth: 1
+                            isDark ? Color.green.opacity(0.2) : .white.opacity(0.15),
+                            lineWidth: 0.5
                         )
                 )
         )
@@ -276,7 +251,7 @@ struct BetaLanguagesView: View {
                     .font(.system(size: 14))
                     .foregroundStyle(isDark ? .cyan : .white)
 
-                Text("Experimental Languages")
+                Text(L.experimentalLanguagesSection)
                     .font(.system(size: 14, weight: .bold))
                     .foregroundStyle(isDark ? Color(red: 0.65, green: 0.95, blue: 0.99) : .white)
 
@@ -294,40 +269,10 @@ struct BetaLanguagesView: View {
 
     // MARK: - Experimental Pair Card (Toggleable)
 
-    private func iconGradient(isEnabled: Bool) -> LinearGradient {
-        if isEnabled {
-            return isDark
-                ? LinearGradient(colors: [Color.purple.opacity(0.25), Color.purple.opacity(0.2)], startPoint: .topLeading, endPoint: .bottomTrailing)
-                : LinearGradient(colors: [Color.white.opacity(0.3)], startPoint: .topLeading, endPoint: .bottomTrailing)
-        } else {
-            return isDark
-                ? LinearGradient(colors: [Color.white.opacity(0.03)], startPoint: .topLeading, endPoint: .bottomTrailing)
-                : LinearGradient(colors: [Color.white.opacity(0.12)], startPoint: .topLeading, endPoint: .bottomTrailing)
-        }
-    }
-
-    private func cardFillColor(isEnabled: Bool, index: Int) -> Color {
-        if isEnabled {
-            return isDark ? Color.white.opacity(0.1) : Color.white.opacity(0.12)
-        } else if isDark {
-            return index % 2 == 0 ? Color.white.opacity(0.05) : Color.white.opacity(0.08)
-        } else {
-            return index % 2 == 0 ? Color.white.opacity(0.06) : Color.white.opacity(0.1)
-        }
-    }
-
     private func experimentalPairCard(_ pair: LanguagePair, index: Int) -> some View {
         let isEnabled = enabledPairs.contains {
             $0.sourceLanguage == pair.source.rawValue && $0.targetLanguage == pair.target.rawValue
         }
-
-        let iconBorderColor: Color = isEnabled
-            ? (isDark ? Color.purple.opacity(0.4) : .white.opacity(0.5))
-            : (isDark ? Color.white.opacity(0.08) : .white.opacity(0.3))
-
-        let globeColor: Color = isEnabled
-            ? (isDark ? Color.purple.opacity(0.8) : .white)
-            : (isDark ? Color(red: 0.81, green: 0.79, blue: 0.84) : .white.opacity(0.6))
 
         let labelColor: Color = isEnabled
             ? (isDark ? Color(red: 0.95, green: 0.91, blue: 1.0) : .white)
@@ -337,46 +282,50 @@ struct BetaLanguagesView: View {
             ? (isDark ? .purple : .white)
             : (isDark ? Color(red: 0.81, green: 0.79, blue: 0.84) : .white.opacity(0.6))
 
-        let toggleLabelColor: Color = isEnabled
-            ? (isDark ? Color.purple.opacity(0.85) : .white)
-            : (isDark ? Color.white.opacity(0.75) : .white.opacity(0.7))
-
         let cardBorderColor: Color = isEnabled
             ? (isDark ? Color.purple.opacity(0.4) : .white.opacity(0.35))
             : (isDark ? Color.purple.opacity(0.35) : .white.opacity(0.15))
 
-        let cardContent = HStack(spacing: 10) {
-            // Globe icon container
-            pairGlobeIcon(
-                isEnabled: isEnabled,
-                borderColor: iconBorderColor,
-                globeColor: globeColor
-            )
+        let cardContent = HStack(spacing: 14) {
+            // Country flags
+            HStack(spacing: 4) {
+                CountryFlagView(countryCode: pair.source.countryCode, size: 20)
+                Image(systemName: "arrow.right")
+                    .font(.system(size: 10, weight: .bold))
+                    .foregroundStyle(isEnabled
+                        ? (isDark ? Color.purple.opacity(0.5) : .white.opacity(0.5))
+                        : (isDark ? Color.white.opacity(0.2) : .white.opacity(0.3)))
+                CountryFlagView(countryCode: pair.target.countryCode, size: 20)
+            }
 
-            // Pair label
-            Text("\(pair.source.englishName) → \(pair.target.englishName)")
-                .font(.system(size: 13, weight: .semibold))
+            // Pair label — translated
+            Text("\(pair.source.name(in: localization.sourceLanguage)) → \(pair.target.name(in: localization.sourceLanguage))")
+                .font(.system(size: 14, weight: .semibold))
                 .foregroundStyle(labelColor)
-                .lineLimit(1)
-                .minimumScaleFactor(0.8)
+                .lineLimit(2)
+                .minimumScaleFactor(0.75)
 
             Spacer(minLength: 4)
 
             // Toggle indicator
-            pairToggleIndicator(
-                isEnabled: isEnabled,
-                toggleColor: toggleColor,
-                labelColor: toggleLabelColor
-            )
+            Image(systemName: isEnabled ? "checkmark.circle.fill" : "circle")
+                .font(.system(size: 22))
+                .foregroundStyle(toggleColor)
         }
-        .padding(.horizontal, 14)
-        .padding(.vertical, 12)
+        .padding(.horizontal, 16)
+        .padding(.vertical, 14)
 
-        let cardBackground = RoundedRectangle(cornerRadius: 18, style: .continuous)
-            .fill(cardFillColor(isEnabled: isEnabled, index: index))
+        let cardBackground = RoundedRectangle(cornerRadius: 16, style: .continuous)
+            .fill(
+                isEnabled
+                    ? (isDark ? Color.white.opacity(0.1) : Color.white.opacity(0.12))
+                    : (isDark
+                        ? Color.white.opacity(index % 2 == 0 ? 0.04 : 0.06)
+                        : Color.white.opacity(index % 2 == 0 ? 0.06 : 0.1))
+            )
             .overlay(
-                RoundedRectangle(cornerRadius: 18, style: .continuous)
-                    .strokeBorder(cardBorderColor, lineWidth: 1)
+                RoundedRectangle(cornerRadius: 16, style: .continuous)
+                    .strokeBorder(cardBorderColor, lineWidth: 0.5)
             )
 
         return cardContent
@@ -387,34 +336,6 @@ struct BetaLanguagesView: View {
                     togglePair(pair)
                 }
             }
-    }
-
-    private func pairGlobeIcon(isEnabled: Bool, borderColor: Color, globeColor: Color) -> some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 10, style: .continuous)
-                .fill(iconGradient(isEnabled: isEnabled))
-                .overlay(
-                    RoundedRectangle(cornerRadius: 10, style: .continuous)
-                        .strokeBorder(borderColor, lineWidth: 1)
-                )
-                .frame(width: 36, height: 36)
-
-            Image(systemName: "globe")
-                .font(.system(size: 16, weight: .semibold))
-                .foregroundStyle(globeColor)
-        }
-    }
-
-    private func pairToggleIndicator(isEnabled: Bool, toggleColor: Color, labelColor: Color) -> some View {
-        VStack(spacing: 2) {
-            Image(systemName: isEnabled ? "checkmark.circle.fill" : "xmark.circle")
-                .font(.system(size: 18))
-                .foregroundStyle(toggleColor)
-
-            Text(isEnabled ? "On" : "Off")
-                .font(.system(size: 9, weight: .bold))
-                .foregroundStyle(labelColor)
-        }
     }
 
     // MARK: - Toggle Logic

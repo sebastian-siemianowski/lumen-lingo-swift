@@ -6,9 +6,12 @@ import SwiftUI
 /// This is a mock UI — no actual IAP. Matches the React component's layout and visual richness.
 struct MembershipView: View {
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.localization) private var localization
     @State private var billingCycle: BillingCycle = .monthly
     @State private var expandedFaq: Int? = nil
     @State private var showComparison = false
+
+    private var L: AppStrings { localization.strings }
 
     enum BillingCycle { case monthly, yearly }
 
@@ -37,7 +40,7 @@ struct MembershipView: View {
             )
             .ignoresSafeArea()
         )
-        .navigationTitle("Membership")
+        .navigationTitle(L.membership)
         .navigationBarTitleDisplayMode(.large)
         .toolbarColorScheme(.dark, for: .navigationBar)
     }
@@ -46,7 +49,7 @@ struct MembershipView: View {
 
     private var heroSection: some View {
         VStack(spacing: 12) {
-            Text("Plans & Pricing")
+            Text(L.plansAndPricing)
                 .font(.caption.bold())
                 .tracking(1.5)
                 .textCase(.uppercase)
@@ -60,10 +63,10 @@ struct MembershipView: View {
                 )
 
             VStack(spacing: 4) {
-                Text("Invest in Your")
+                Text(L.investInYour)
                     .font(.system(size: 36, weight: .black))
                     .foregroundStyle(.white)
-                Text("Language Mastery")
+                Text(L.languageMastery)
                     .font(.system(size: 36, weight: .black))
                     .foregroundStyle(
                         LinearGradient(
@@ -73,7 +76,7 @@ struct MembershipView: View {
                     )
             }
 
-            Text("Join thousands who are learning smarter, not harder.\n30-day money-back guarantee · Cancel anytime")
+            Text(L.membershipSubtitle)
                 .multilineTextAlignment(.center)
                 .font(.subheadline)
                 .foregroundStyle(.white.opacity(0.65))
@@ -85,10 +88,10 @@ struct MembershipView: View {
 
     private var billingToggle: some View {
         HStack(spacing: 0) {
-            toggleButton("Monthly", isSelected: billingCycle == .monthly) {
+            toggleButton(L.monthly, isSelected: billingCycle == .monthly) {
                 withAnimation(.spring(response: 0.35)) { billingCycle = .monthly }
             }
-            toggleButton("Yearly  -17%", isSelected: billingCycle == .yearly) {
+            toggleButton(L.yearlyDiscount, isSelected: billingCycle == .yearly) {
                 withAnimation(.spring(response: 0.35)) { billingCycle = .yearly }
             }
         }
@@ -123,7 +126,7 @@ struct MembershipView: View {
 
     private var tiersSection: some View {
         VStack(spacing: 14) {
-            ForEach(Array(Self.tiers.enumerated()), id: \.element.id) { index, tier in
+            ForEach(Array(tiers.enumerated()), id: \.element.id) { index, tier in
                 TierCardView(
                     tier: tier,
                     billingCycle: billingCycle,
@@ -140,7 +143,7 @@ struct MembershipView: View {
             withAnimation(.spring(response: 0.4)) { showComparison.toggle() }
         } label: {
             HStack {
-                Text("Feature Comparison")
+                Text(L.featureComparison)
                     .font(.subheadline.bold())
                     .foregroundStyle(.white.opacity(0.7))
                 Image(systemName: showComparison ? "chevron.up" : "chevron.down")
@@ -162,11 +165,11 @@ struct MembershipView: View {
         VStack(spacing: 0) {
             // Header row
             HStack(spacing: 0) {
-                Text("Feature")
+                Text(L.feature)
                     .font(.caption2.bold())
                     .foregroundStyle(.white.opacity(0.5))
                     .frame(maxWidth: .infinity, alignment: .leading)
-                ForEach(["Free", "Pro", "Elite", "Royal"], id: \.self) { name in
+                ForEach([L.free, L.pro, L.elite, L.royal], id: \.self) { name in
                     Text(name)
                         .font(.caption2.bold())
                         .foregroundStyle(.white.opacity(0.6))
@@ -227,7 +230,7 @@ struct MembershipView: View {
             HStack(spacing: 6) {
                 Image(systemName: "questionmark.circle.fill")
                     .foregroundStyle(.purple)
-                Text("Frequently Asked Questions")
+                Text(L.faq)
                     .font(.headline)
                     .foregroundStyle(.white)
             }
@@ -288,12 +291,12 @@ struct MembershipView: View {
     private var trustIndicators: some View {
         VStack(spacing: 10) {
             HStack(spacing: 16) {
-                trustBadge(icon: "lock.fill", text: "Secure")
-                trustBadge(icon: "arrow.uturn.backward.circle.fill", text: "30-day refund")
-                trustBadge(icon: "xmark.circle.fill", text: "Cancel anytime")
+                trustBadge(icon: "lock.fill", text: L.secure)
+                trustBadge(icon: "arrow.uturn.backward.circle.fill", text: L.dayRefund)
+                trustBadge(icon: "xmark.circle.fill", text: L.cancelAnytime)
             }
 
-            Text("Prices shown in USD. Taxes may apply.")
+            Text(L.pricesShownUSD)
                 .font(.caption2)
                 .foregroundStyle(.white.opacity(0.3))
         }
@@ -327,62 +330,64 @@ struct MembershipView: View {
         let isHighlighted: Bool
     }
 
-    static let tiers: [TierData] = [
-        TierData(
-            id: "free", name: "Starter", icon: "globe",
-            gradientColors: [Color(hex: "#94a3b8"), Color(hex: "#64748b")],
-            priceMonthly: 0, priceYearly: 0,
-            tagline: "Begin your journey",
-            benefits: [
-                ("3 language pairs", "core"),
-                ("All game modes", "core"),
-                ("30 min/day practice", "limited"),
-                ("Basic analytics", "limited")
-            ],
-            cta: "Current Plan", isCurrent: true, isHighlighted: false
-        ),
-        TierData(
-            id: "pro", name: "Pro", icon: "bolt.fill",
-            gradientColors: [Color(hex: "#a855f7"), Color(hex: "#d946ef"), Color(hex: "#ec4899")],
-            priceMonthly: 9.99, priceYearly: 99.99,
-            tagline: "Master languages faster",
-            benefits: [
-                ("7 language pairs", "premium"),
-                ("Unlimited practice", "premium"),
-                ("Advanced analytics", "premium"),
-                ("3 Breathing Orbs", "delight"),
-                ("Offline access", "premium")
-            ],
-            cta: "Start Pro", isCurrent: false, isHighlighted: false
-        ),
-        TierData(
-            id: "elite", name: "Elite", icon: "sparkles",
-            gradientColors: [Color(hex: "#7c3aed"), Color(hex: "#9333ea"), Color(hex: "#a21caf")],
-            priceMonthly: 19.99, priceYearly: 199.99,
-            tagline: "Unlock your full potential",
-            benefits: [
-                ("Everything in Pro", "inherit"),
-                ("25+ language pairs", "exclusive"),
-                ("4 Quantum scenes", "exclusive"),
-                ("4 Nebula presets", "exclusive"),
-                ("Early feature access", "exclusive")
-            ],
-            cta: "Upgrade to Elite", isCurrent: false, isHighlighted: true
-        ),
-        TierData(
-            id: "royal", name: "Royal", icon: "crown.fill",
-            gradientColors: [Color(hex: "#fbbf24"), Color(hex: "#f97316"), Color(hex: "#f43f5e")],
-            priceMonthly: 99.99, priceYearly: 999.99,
-            tagline: "The ultimate experience",
-            benefits: [
-                ("Everything in Elite", "inherit"),
-                ("6 Breathing Orbs (all)", "ultimate"),
-                ("6 Quantum scenes", "ultimate"),
-                ("6 Nebula presets", "ultimate")
-            ],
-            cta: "Ascend to Royal", isCurrent: false, isHighlighted: false
-        )
-    ]
+    private var tiers: [TierData] {
+        [
+            TierData(
+                id: "free", name: L.starter, icon: "globe",
+                gradientColors: [Color(hex: "#94a3b8"), Color(hex: "#64748b")],
+                priceMonthly: 0, priceYearly: 0,
+                tagline: L.beginYourJourney,
+                benefits: [
+                    ("3 language pairs", "core"),
+                    ("All game modes", "core"),
+                    ("30 min/day practice", "limited"),
+                    ("Basic analytics", "limited")
+                ],
+                cta: L.currentPlan, isCurrent: true, isHighlighted: false
+            ),
+            TierData(
+                id: "pro", name: L.pro, icon: "bolt.fill",
+                gradientColors: [Color(hex: "#a855f7"), Color(hex: "#d946ef"), Color(hex: "#ec4899")],
+                priceMonthly: 9.99, priceYearly: 99.99,
+                tagline: L.masterLanguagesFaster,
+                benefits: [
+                    ("7 language pairs", "premium"),
+                    ("Unlimited practice", "premium"),
+                    ("Advanced analytics", "premium"),
+                    ("3 Breathing Orbs", "delight"),
+                    ("Offline access", "premium")
+                ],
+                cta: L.startPro, isCurrent: false, isHighlighted: false
+            ),
+            TierData(
+                id: "elite", name: L.elite, icon: "sparkles",
+                gradientColors: [Color(hex: "#7c3aed"), Color(hex: "#9333ea"), Color(hex: "#a21caf")],
+                priceMonthly: 19.99, priceYearly: 199.99,
+                tagline: L.unlockFullPotential,
+                benefits: [
+                    ("Everything in Pro", "inherit"),
+                    ("25+ language pairs", "exclusive"),
+                    ("4 Quantum scenes", "exclusive"),
+                    ("4 Nebula presets", "exclusive"),
+                    ("Early feature access", "exclusive")
+                ],
+                cta: L.upgradeToElite, isCurrent: false, isHighlighted: true
+            ),
+            TierData(
+                id: "royal", name: L.royal, icon: "crown.fill",
+                gradientColors: [Color(hex: "#fbbf24"), Color(hex: "#f97316"), Color(hex: "#f43f5e")],
+                priceMonthly: 99.99, priceYearly: 999.99,
+                tagline: L.ultimateExperience,
+                benefits: [
+                    ("Everything in Elite", "inherit"),
+                    ("6 Breathing Orbs (all)", "ultimate"),
+                    ("6 Quantum scenes", "ultimate"),
+                    ("6 Nebula presets", "ultimate")
+                ],
+                cta: L.ascendToRoyal, isCurrent: false, isHighlighted: false
+            )
+        ]
+    }
 
     struct ComparisonFeature {
         let name: String
@@ -429,6 +434,9 @@ struct MembershipView: View {
 // MARK: - Tier Card
 
 struct TierCardView: View {
+    @Environment(\.localization) private var localization
+    private var L: AppStrings { localization.strings }
+
     let tier: MembershipView.TierData
     let billingCycle: MembershipView.BillingCycle
     let index: Int
@@ -470,7 +478,7 @@ struct TierCardView: View {
                 Spacer()
 
                 if tier.isHighlighted {
-                    Text("POPULAR")
+                    Text(L.popular)
                         .font(.system(size: 9, weight: .heavy))
                         .tracking(1)
                         .foregroundStyle(.white)
@@ -491,14 +499,14 @@ struct TierCardView: View {
             // Price
             HStack(alignment: .firstTextBaseline, spacing: 4) {
                 if price == 0 {
-                    Text("Free")
+                    Text(L.free)
                         .font(.system(size: 28, weight: .black))
                         .foregroundStyle(.white)
                 } else {
                     Text("$\(String(format: "%.2f", price))")
                         .font(.system(size: 28, weight: .black))
                         .foregroundStyle(.white)
-                    Text("/\(billingCycle == .monthly ? "mo" : "yr")")
+                    Text("/\(billingCycle == .monthly ? L.perMonth : L.perYear)")
                         .font(.subheadline)
                         .foregroundStyle(.white.opacity(0.4))
                 }
@@ -506,7 +514,7 @@ struct TierCardView: View {
                 Spacer()
 
                 if billingCycle == .yearly && tier.priceYearly > 0 {
-                    Text("$\(String(format: "%.2f", monthlyEquiv))/mo")
+                    Text("$\(String(format: "%.2f", monthlyEquiv))/\(L.perMonth)")
                         .font(.caption2)
                         .foregroundStyle(.white.opacity(0.4))
                 }

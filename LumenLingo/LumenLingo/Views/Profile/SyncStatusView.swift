@@ -7,6 +7,9 @@ import SwiftUI
 /// Uses MockSyncService until a real cloud backend is wired.
 struct SyncStatusView: View {
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.localization) private var localization
+
+    private var L: AppStrings { localization.strings }
 
     // In a real app these would be injected via @Environment.
     // For now we use local state matching the mock service behavior.
@@ -58,10 +61,10 @@ struct SyncStatusView: View {
                 .animation(isSyncing ? .linear(duration: 1.5).repeatForever(autoreverses: false) : .default, value: isSyncing)
 
             VStack(alignment: .leading, spacing: 2) {
-                Text("Cloud Sync")
+                Text(L.cloudSync)
                     .font(.system(size: 17, weight: .semibold))
                     .foregroundStyle(isDark ? .white : .primary)
-                Text("Backup & restore your progress")
+                Text(L.backupRestore)
                     .font(.system(size: 13))
                     .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
             }
@@ -122,14 +125,14 @@ struct SyncStatusView: View {
                 .font(.system(size: 14))
                 .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
 
-            Text("Last synced: \(formatLastSync(lastSyncDate))")
+            Text("\(L.lastSynced) \(formatLastSync(lastSyncDate))")
                 .font(.system(size: 13))
                 .foregroundStyle(isDark ? .white.opacity(0.6) : .secondary)
 
             Spacer()
 
             if hasPendingChanges {
-                Text("Changes pending")
+                Text(L.changesPending)
                     .font(.system(size: 11, weight: .medium))
                     .foregroundStyle(.orange)
                     .padding(.horizontal, 8)
@@ -158,7 +161,7 @@ struct SyncStatusView: View {
                     } else {
                         Image(systemName: "icloud.and.arrow.up")
                     }
-                    Text("Upload")
+                    Text(L.upload)
                         .font(.system(size: 14, weight: .semibold))
                 }
                 .foregroundStyle(.white)
@@ -190,7 +193,7 @@ struct SyncStatusView: View {
                     } else {
                         Image(systemName: "icloud.and.arrow.down")
                     }
-                    Text("Download")
+                    Text(L.download)
                         .font(.system(size: 14, weight: .semibold))
                 }
                 .foregroundStyle(isDark ? .white : .teal)
@@ -217,7 +220,7 @@ struct SyncStatusView: View {
             Image(systemName: "info.circle")
                 .font(.system(size: 13))
                 .foregroundStyle(isDark ? .white.opacity(0.35) : .secondary)
-            Text("Your data is stored securely. Sync requires an internet connection.")
+            Text(L.syncSecurityNote)
                 .font(.system(size: 12))
                 .foregroundStyle(isDark ? .white.opacity(0.4) : .secondary)
         }
@@ -227,12 +230,12 @@ struct SyncStatusView: View {
     // MARK: - Helpers
 
     private func formatLastSync(_ date: Date?) -> String {
-        guard let date else { return "Never" }
+        guard let date else { return L.never }
         let diff = Date.now.timeIntervalSince(date)
-        if diff < 60 { return "Just now" }
-        if diff < 3600 { return "\(Int(diff / 60)) min ago" }
-        if diff < 86400 { return "\(Int(diff / 3600)) hours ago" }
-        return "\(Int(diff / 86400)) days ago"
+        if diff < 60 { return L.justNow }
+        if diff < 3600 { return "\(Int(diff / 60)) \(L.minAgo)" }
+        if diff < 86400 { return "\(Int(diff / 3600)) \(L.hoursAgo)" }
+        return "\(Int(diff / 86400)) \(L.daysAgo)"
     }
 
     private func performUpload() {
@@ -245,7 +248,7 @@ struct SyncStatusView: View {
                 isSyncing = false
                 lastSyncDate = .now
                 hasPendingChanges = false
-                syncStatus = .success("Data uploaded successfully")
+                syncStatus = .success(L.dataUploaded)
             }
             // Clear status after 3s
             try? await Task.sleep(for: .seconds(3))
@@ -261,7 +264,7 @@ struct SyncStatusView: View {
             await MainActor.run {
                 isSyncing = false
                 lastSyncDate = .now
-                syncStatus = .success("Data downloaded successfully")
+                syncStatus = .success(L.dataDownloaded)
             }
             try? await Task.sleep(for: .seconds(3))
             await MainActor.run { syncStatus = nil }

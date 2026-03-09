@@ -15,6 +15,9 @@ struct FlashCardsView: View {
     @Environment(AudioService.self) private var audioService
     @Environment(HapticsService.self) private var hapticsService
     @Environment(ContentLoader.self) private var contentLoader
+    @Environment(\.localization) private var localization
+
+    private var L: AppStrings { localization.strings }
 
     @Binding var hideTabBar: Bool
 
@@ -121,7 +124,7 @@ struct FlashCardsView: View {
             ProgressView()
                 .scaleEffect(1.5)
                 .tint(.white)
-            Text("Loading cards...")
+            Text(L.loadingCards)
                 .font(.headline)
                 .foregroundStyle(.white.opacity(0.7))
         }
@@ -204,7 +207,7 @@ struct FlashCardsView: View {
                 } label: {
                     HStack(spacing: 6) {
                         Image(systemName: "chevron.left")
-                        Text("Back")
+                        Text(L.back)
                     }
                     .font(.subheadline)
                     .foregroundStyle(.white.opacity(0.7))
@@ -423,7 +426,7 @@ struct FlashCardsView: View {
 
             HStack(spacing: 6) {
                 Image(systemName: "arrow.counterclockwise")
-                Text("Tap to reveal")
+                Text(L.tapToReveal)
             }
             .font(.caption.weight(.medium))
             .foregroundStyle(.white.opacity(0.55))
@@ -616,7 +619,7 @@ struct FlashCardsView: View {
                                 )
                         )
 
-                    Text("Still Learning")
+                    Text(L.stillLearning)
                         .font(.subheadline.bold())
                         .foregroundStyle(.white)
                 }
@@ -648,7 +651,7 @@ struct FlashCardsView: View {
                                 )
                         )
 
-                    Text("Got It")
+                    Text(L.gotIt)
                         .font(.subheadline.bold())
                         .foregroundStyle(.white)
                 }
@@ -687,10 +690,10 @@ struct FlashCardsView: View {
             Image(systemName: "tray")
                 .font(.system(size: 48))
                 .foregroundStyle(.white.opacity(0.4))
-            Text("No cards available")
+            Text(L.noCardsAvailable)
                 .font(.headline)
                 .foregroundStyle(.white.opacity(0.7))
-            Button("Go Back") { dismiss() }
+            Button(L.goBack) { dismiss() }
                 .buttonStyle(.bordered)
                 .tint(.white)
         }
@@ -1090,6 +1093,9 @@ struct GameCompleteView: View {
     let onDismiss: () -> Void
 
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.localization) private var localization
+
+    private var L: AppStrings { localization.strings }
 
     // Entrance animations
     @State private var showIcon = false
@@ -1195,7 +1201,7 @@ struct GameCompleteView: View {
 
                 // MARK: — Title & Subtitle
                 VStack(spacing: 10) {
-                    Text(performanceTier.title)
+                    Text(performanceTier.title(L))
                         .font(.system(size: 32, weight: .bold, design: .rounded))
                         .foregroundStyle(
                             LinearGradient(
@@ -1206,7 +1212,7 @@ struct GameCompleteView: View {
                         )
                         .shadow(color: .black.opacity(0.3), radius: 4, y: 2)
 
-                    Text(performanceTier.subtitle)
+                    Text(performanceTier.subtitle(L))
                         .font(.subheadline)
                         .foregroundStyle(.white.opacity(0.55))
                         .multilineTextAlignment(.center)
@@ -1224,7 +1230,7 @@ struct GameCompleteView: View {
                         .contentTransition(.numericText())
                         .shadow(color: performanceTier.color.opacity(0.3), radius: 16)
 
-                    Text("points")
+                    Text(L.points)
                         .font(.caption.weight(.medium))
                         .foregroundStyle(.white.opacity(0.4))
                         .textCase(.uppercase)
@@ -1237,7 +1243,7 @@ struct GameCompleteView: View {
                 HStack(spacing: 0) {
                     statColumn(
                         value: "\(displayedAccuracy)%",
-                        label: "Accuracy",
+                        label: L.accuracy,
                         color: performanceTier.color
                     )
 
@@ -1248,7 +1254,7 @@ struct GameCompleteView: View {
 
                     statColumn(
                         value: "\(correctAnswers)",
-                        label: "Correct",
+                        label: L.correct,
                         color: .green
                     )
 
@@ -1258,7 +1264,7 @@ struct GameCompleteView: View {
 
                     statColumn(
                         value: "\(wrongAnswers)",
-                        label: "To Review",
+                        label: L.toReview,
                         color: .orange
                     )
                 }
@@ -1293,7 +1299,7 @@ struct GameCompleteView: View {
                         HStack(spacing: 10) {
                             Image(systemName: "arrow.counterclockwise")
                                 .font(.system(size: 15, weight: .semibold))
-                            Text("Play Again")
+                            Text(L.playAgain)
                                 .font(.system(size: 16, weight: .semibold))
                         }
                         .foregroundStyle(.white)
@@ -1333,7 +1339,7 @@ struct GameCompleteView: View {
                         HStack(spacing: 8) {
                             Image(systemName: "chevron.left")
                                 .font(.system(size: 13, weight: .medium))
-                            Text("Back to Categories")
+                            Text(L.backToCategories)
                                 .font(.system(size: 15, weight: .medium))
                         }
                         .foregroundStyle(.white.opacity(0.5))
@@ -1422,21 +1428,21 @@ struct GameCompleteView: View {
 private enum PerformanceTier {
     case excellent, great, good, keepGoing
 
-    var title: String {
+    func title(_ L: AppStrings) -> String {
         switch self {
-        case .excellent: "Excellent!"
-        case .great: "Great Job!"
-        case .good: "Good Work!"
-        case .keepGoing: "Keep Going!"
+        case .excellent: L.excellent
+        case .great: L.greatJob
+        case .good: L.goodWork
+        case .keepGoing: L.keepGoing
         }
     }
 
-    var subtitle: String {
+    func subtitle(_ L: AppStrings) -> String {
         switch self {
-        case .excellent: "Outstanding performance! You're a natural!"
-        case .great: "Impressive work! Keep up the momentum!"
-        case .good: "Solid effort! Practice makes perfect!"
-        case .keepGoing: "Every session makes you better. Don't give up!"
+        case .excellent: L.excellentSubtitle
+        case .great: L.greatJobSubtitle
+        case .good: L.goodWorkSubtitle
+        case .keepGoing: L.keepGoingSubtitle
         }
     }
 

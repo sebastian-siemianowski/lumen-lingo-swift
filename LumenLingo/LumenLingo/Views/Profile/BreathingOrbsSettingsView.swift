@@ -8,8 +8,10 @@ import SwiftData
 struct BreathingOrbsSettingsView: View {
     @Query private var profiles: [UserProfile]
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.localization) private var localization
     @State private var previewingScheme: BreathingOrbScheme? = nil
 
+    private var L: AppStrings { localization.strings }
     private var profile: UserProfile? { profiles.first }
     private var isDark: Bool { colorScheme == .dark }
 
@@ -62,10 +64,10 @@ struct BreathingOrbsSettingsView: View {
                 .animation(.easeInOut(duration: 2).repeatForever(autoreverses: true), value: profile?.breathingOrbsEnabled)
 
             VStack(alignment: .leading, spacing: 2) {
-                Text("Breathing Orbs")
+                Text(L.breathingOrbs)
                     .font(.system(size: 17, weight: .semibold))
                     .foregroundStyle(isDark ? .white : .primary)
-                Text("Ambient background animation")
+                Text(L.ambientBackgroundAnimation)
                     .font(.system(size: 13))
                     .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
             }
@@ -90,10 +92,10 @@ struct BreathingOrbsSettingsView: View {
                 .foregroundStyle(.pink)
 
             VStack(alignment: .leading, spacing: 2) {
-                Text("Rave Mode")
+                Text(L.raveMode)
                     .font(.system(size: 15, weight: .medium))
                     .foregroundStyle(isDark ? .white : .primary)
-                Text("Rapid color cycling through all schemes")
+                Text(L.rapidColorCycling)
                     .font(.system(size: 12))
                     .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
             }
@@ -118,7 +120,7 @@ struct BreathingOrbsSettingsView: View {
                 Image(systemName: "lightbulb.fill")
                     .font(.system(size: 14))
                     .foregroundStyle(isDark ? .white.opacity(0.7) : .secondary)
-                Text("Color Scheme")
+                Text(L.colorScheme)
                     .font(.system(size: 14, weight: .semibold))
                     .foregroundStyle(isDark ? .white : .primary)
             }
@@ -150,7 +152,7 @@ struct BreathingOrbsSettingsView: View {
 
     private var intensitySlider: some View {
         SettingsSliderView(
-            label: "Intensity",
+            label: L.intensity,
             iconName: "gauge.medium",
             value: Binding(
                 get: { profile?.orbIntensity ?? 1.0 },
@@ -159,16 +161,16 @@ struct BreathingOrbsSettingsView: View {
             range: 0...2,
             step: 0.1,
             presets: [
-                (0.5, "Subtle", "drop"),
-                (1.0, "Balanced", "water.waves"),
-                (1.5, "Celestial", "flame"),
+                (0.5, L.subtle, "drop"),
+                (1.0, L.balanced, "water.waves"),
+                (1.5, L.celestial, "flame"),
             ]
         )
     }
 
     private var speedSlider: some View {
         SettingsSliderView(
-            label: "Speed",
+            label: L.speed,
             iconName: "timer",
             value: Binding(
                 get: { profile?.orbSpeed ?? 1.0 },
@@ -177,9 +179,9 @@ struct BreathingOrbsSettingsView: View {
             range: 0...2,
             step: 0.1,
             presets: [
-                (0.5, "Calm", "leaf"),
-                (1.0, "Flowing", "wind"),
-                (1.5, "Swift", "bolt"),
+                (0.5, L.calm, "leaf"),
+                (1.0, L.flowing, "wind"),
+                (1.5, L.swift_, "bolt"),
             ]
         )
     }
@@ -192,13 +194,13 @@ struct BreathingOrbsSettingsView: View {
 
         let (icon, text): (String, String) = {
             if intensity == 0 {
-                return ("leaf", "Perfect stillness")
+                return ("leaf", L.perfectStillness)
             } else if speed < 0.8 {
-                return ("leaf", "Gentle and peaceful")
+                return ("leaf", L.gentleAndPeaceful)
             } else if speed < 1.2 {
-                return ("water.waves", "Balanced rhythm")
+                return ("water.waves", L.balancedRhythm)
             } else {
-                return ("bolt", "Quick and energetic")
+                return ("bolt", L.quickAndEnergetic)
             }
         }()
 
@@ -227,6 +229,9 @@ struct BreathingOrbsSettingsView: View {
 // MARK: - Fullscreen Orbs Preview
 
 struct FullscreenOrbsPreview: View {
+    @Environment(\.localization) private var localization
+    private var L: AppStrings { localization.strings }
+
     let initialScheme: BreathingOrbScheme
     let isDarkMode: Bool
     let intensity: Double
@@ -308,7 +313,7 @@ struct FullscreenOrbsPreview: View {
                         HStack(spacing: 8) {
                             Image(systemName: "chevron.down")
                                 .font(.system(size: 14, weight: .semibold))
-                            Text("Exit Preview")
+                            Text(L.exitPreview)
                                 .font(.system(size: 15, weight: .semibold))
                         }
                         .foregroundStyle(.white)

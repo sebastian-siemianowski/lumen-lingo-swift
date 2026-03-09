@@ -8,8 +8,10 @@ import SwiftData
 struct NebulaDriftSettingsView: View {
     @Query private var profiles: [UserProfile]
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.localization) private var localization
     @State private var previewingPreset: NebulaPreset? = nil
 
+    private var L: AppStrings { localization.strings }
     private var profile: UserProfile? { profiles.first }
     private var isDark: Bool { colorScheme == .dark }
 
@@ -64,10 +66,10 @@ struct NebulaDriftSettingsView: View {
                 .opacity(profile?.nebulaDriftEnabled == true ? 1.0 : 0.5)
 
             VStack(alignment: .leading, spacing: 2) {
-                Text("Nebula Drift")
+                Text(L.nebulaDrift)
                     .font(.system(size: 17, weight: .semibold))
                     .foregroundStyle(isDark ? .white : .primary)
-                Text("Cosmic nebula background layer")
+                Text(L.cosmicNebulaBackground)
                     .font(.system(size: 13))
                     .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
             }
@@ -91,7 +93,7 @@ struct NebulaDriftSettingsView: View {
                 .font(.system(size: 14))
                 .foregroundStyle(.indigo)
 
-            Text("Nebula Drift is optimized for Dark Mode")
+            Text(L.nebulaOptimizedDarkMode)
                 .font(.system(size: 13, weight: .medium))
                 .foregroundStyle(.indigo)
         }
@@ -115,7 +117,7 @@ struct NebulaDriftSettingsView: View {
                 Image(systemName: "sparkles")
                     .font(.system(size: 14))
                     .foregroundStyle(isDark ? .white.opacity(0.7) : .secondary)
-                Text("Nebula Preset")
+                Text(L.nebulaPreset)
                     .font(.system(size: 14, weight: .semibold))
                     .foregroundStyle(isDark ? .white : .primary)
             }
@@ -147,7 +149,7 @@ struct NebulaDriftSettingsView: View {
 
     private var intensitySlider: some View {
         SettingsSliderView(
-            label: "Nebula Intensity",
+            label: L.nebulaIntensity,
             iconName: "aqi.medium",
             value: Binding(
                 get: { profile?.nebulaDriftIntensity ?? 1.0 },
@@ -156,16 +158,16 @@ struct NebulaDriftSettingsView: View {
             range: 0.3...1.5,
             step: 0.1,
             presets: [
-                (0.4, "Subtle", "smoke"),
-                (0.8, "Balanced", "cloud"),
-                (1.3, "Vivid", "cloud.bolt"),
+                (0.4, L.subtle, "smoke"),
+                (0.8, L.balanced, "cloud"),
+                (1.3, L.vivid, "cloud.bolt"),
             ]
         )
     }
 
     private var driftSpeedSlider: some View {
         SettingsSliderView(
-            label: "Drift Speed",
+            label: L.driftSpeed,
             iconName: "wind",
             value: Binding(
                 get: { profile?.nebulaDriftSpeed ?? 1.0 },
@@ -174,9 +176,9 @@ struct NebulaDriftSettingsView: View {
             range: 0...2,
             step: 0.1,
             presets: [
-                (0.0, "Frozen", "snowflake"),
-                (0.8, "Flowing", "wind"),
-                (1.6, "Swift", "tornado"),
+                (0.0, L.frozen, "snowflake"),
+                (0.8, L.flowing, "wind"),
+                (1.6, L.swift_, "tornado"),
             ]
         )
     }
@@ -237,6 +239,9 @@ struct NebulaDriftSettingsView: View {
 /// Fullscreen preview with left/right chevron buttons and swipe gesture
 /// to cycle through all nebula presets. iOS enhancement beyond React.
 struct FullscreenNebulaPreview: View {
+    @Environment(\.localization) private var localization
+    private var L: AppStrings { localization.strings }
+
     let initialPreset: NebulaPreset
     let intensity: Double
     let speed: Double
@@ -336,7 +341,7 @@ struct FullscreenNebulaPreview: View {
                         HStack(spacing: 8) {
                             Image(systemName: "chevron.down")
                                 .font(.system(size: 14, weight: .semibold))
-                            Text("Exit Preview")
+                            Text(L.exitPreview)
                                 .font(.system(size: 15, weight: .semibold))
                         }
                         .foregroundStyle(.white)

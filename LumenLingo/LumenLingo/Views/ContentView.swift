@@ -9,9 +9,12 @@ import SwiftData
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(ThemeManager.self) private var themeManager
+    @Environment(\.localization) private var localization
 
     @Query private var profiles: [UserProfile]
+    @Query private var languagePrefs: [LanguagePreference]
     private var profile: UserProfile? { profiles.first }
+    private var L: AppStrings { localization.strings }
 
     @State private var selectedTab: AppTab = .dashboard
     @State private var hideTabBar: Bool = false
@@ -55,7 +58,7 @@ struct ContentView: View {
                 }
                 .environment(\.backgroundActive, selectedTab == .dashboard)
                 .tabItem {
-                    Label("Home", systemImage: "house.fill")
+                    Label(L.tabHome, systemImage: "house.fill")
                 }
                 .tag(AppTab.dashboard)
 
@@ -65,7 +68,7 @@ struct ContentView: View {
                 }
                 .environment(\.backgroundActive, selectedTab == .journey)
                 .tabItem {
-                    Label("Stats", systemImage: "chart.line.uptrend.xyaxis")
+                    Label(L.tabStats, systemImage: "chart.line.uptrend.xyaxis")
                 }
                 .tag(AppTab.journey)
 
@@ -75,7 +78,7 @@ struct ContentView: View {
                 }
                 .environment(\.backgroundActive, selectedTab == .membership)
                 .tabItem {
-                    Label("Premium", systemImage: "crown.fill")
+                    Label(L.tabPremium, systemImage: "crown.fill")
                 }
                 .tag(AppTab.membership)
 
@@ -85,7 +88,7 @@ struct ContentView: View {
                 }
                 .environment(\.backgroundActive, selectedTab == .profile)
                 .tabItem {
-                    Label("Profile", systemImage: "person.fill")
+                    Label(L.tabProfile, systemImage: "person.fill")
                 }
                 .tag(AppTab.profile)
             }
@@ -95,6 +98,7 @@ struct ContentView: View {
         .background(vstackBackground)
         .onAppear {
             setupServices()
+            localization.update(from: languagePrefs)
             themeManager.syncFromProfile(profile)
             if let profile { audioService.syncFromProfile(profile) }
             // Delay to ensure UITabBar exists in the hierarchy
@@ -119,6 +123,9 @@ struct ContentView: View {
         }
         .onChange(of: profile?.achievementSoundsEnabled) { _, _ in
             if let profile { audioService.syncFromProfile(profile) }
+        }
+        .onChange(of: languagePrefs.first?.sourceLanguage) { _, _ in
+            localization.update(from: languagePrefs)
         }
         .environment(audioService)
         .environment(hapticsService)
@@ -255,6 +262,9 @@ struct ContentView: View {
 struct LumenLingoNavBar: View {
     @Environment(\.colorScheme) private var colorScheme
     @Environment(ThemeManager.self) private var themeManager
+    @Environment(\.localization) private var localization
+
+    private var L: AppStrings { localization.strings }
 
     @State private var wobble: Double = 0
 
@@ -292,7 +302,7 @@ struct LumenLingoNavBar: View {
                     .font(.system(size: 20, weight: .bold, design: .rounded))
                     .foregroundStyle(isDark ? .white : Color(red: 30/255, green: 25/255, blue: 60/255))
 
-                Text("Language Mastery Engine")
+                Text(L.languageMasteryEngine)
                     .font(.system(size: 10, weight: .medium))
                     .foregroundStyle(isDark ? .white.opacity(0.5) : Color(red: 100/255, green: 100/255, blue: 130/255))
             }
