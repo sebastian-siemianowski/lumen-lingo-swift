@@ -7,27 +7,20 @@ import SwiftUI
 struct MembershipView: View {
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.localization) private var localization
-    @State private var billingCycle: BillingCycle = .monthly
-    @State private var expandedFaq: Int? = nil
     @State private var showComparison = false
 
     private var L: AppStrings { localization.strings }
     private var isDark: Bool { colorScheme == .dark }
 
-    enum BillingCycle { case monthly, yearly }
-
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(spacing: 32) {
                 heroSection
-                billingToggle
                 tiersSection
 
                 comparisonToggle
                 if showComparison { comparisonTable }
 
-                faqSection
-                trustIndicators
                 Spacer(minLength: 80)
             }
             .padding(.horizontal, 16)
@@ -51,8 +44,7 @@ struct MembershipView: View {
             }
             .ignoresSafeArea()
         )
-        .navigationTitle(L.membership)
-        .navigationBarTitleDisplayMode(.large)
+        .navigationBarTitleDisplayMode(.inline)
         .toolbarColorScheme(isDark ? .dark : .light, for: .navigationBar)
     }
 
@@ -101,44 +93,6 @@ struct MembershipView: View {
         }
     }
 
-    // MARK: - Billing Toggle
-
-    private var billingToggle: some View {
-        HStack(spacing: 0) {
-            toggleButton(L.monthly, isSelected: billingCycle == .monthly) {
-                withAnimation(.spring(response: 0.35)) { billingCycle = .monthly }
-            }
-            toggleButton(L.yearlyDiscount, isSelected: billingCycle == .yearly) {
-                withAnimation(.spring(response: 0.35)) { billingCycle = .yearly }
-            }
-        }
-        .padding(3)
-        .background(
-            Capsule().fill(.white.opacity(0.06))
-        )
-    }
-
-    private func toggleButton(_ label: String, isSelected: Bool, action: @escaping () -> Void) -> some View {
-        Button(action: action) {
-            Text(label)
-                .font(.subheadline.bold())
-                .foregroundStyle(isSelected ? .white : (isDark ? .white.opacity(0.5) : .caribbeanPlum))
-                .padding(.horizontal, 20)
-                .padding(.vertical, 8)
-                .background(
-                    Capsule()
-                        .fill(isSelected
-                            ? AnyShapeStyle(LinearGradient(
-                                colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
-                                startPoint: .leading, endPoint: .trailing
-                            ))
-                            : AnyShapeStyle(.clear)
-                        )
-                )
-        }
-        .buttonStyle(.plain)
-    }
-
     // MARK: - Tiers
 
     private var tiersSection: some View {
@@ -146,7 +100,6 @@ struct MembershipView: View {
             ForEach(Array(tiers.enumerated()), id: \.element.id) { index, tier in
                 TierCardView(
                     tier: tier,
-                    billingCycle: billingCycle,
                     index: index
                 )
             }
@@ -240,97 +193,6 @@ struct MembershipView: View {
         .transition(.opacity.combined(with: .move(edge: .top)))
     }
 
-    // MARK: - FAQ
-
-    private var faqSection: some View {
-        VStack(alignment: .leading, spacing: 14) {
-            HStack(spacing: 6) {
-                Image(systemName: "questionmark.circle.fill")
-                    .foregroundStyle(.purple)
-                Text(L.faq)
-                    .font(.headline)
-                    .foregroundStyle(isDark ? .white : .caribbeanInk)
-            }
-
-            ForEach(Array(Self.faqs.enumerated()), id: \.offset) { idx, faq in
-                VStack(alignment: .leading, spacing: 0) {
-                    Button {
-                        withAnimation(.spring(response: 0.35)) {
-                            expandedFaq = expandedFaq == idx ? nil : idx
-                        }
-                    } label: {
-                        HStack {
-                            Text(faq.question)
-                                .font(.subheadline.bold())
-                                .foregroundStyle(isDark ? .white : .caribbeanInk)
-                                .multilineTextAlignment(.leading)
-                            Spacer()
-                            Image(systemName: expandedFaq == idx ? "chevron.up" : "chevron.down")
-                                .font(.caption)
-                                .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
-                        }
-                        .padding(14)
-                    }
-                    .buttonStyle(.plain)
-
-                    if expandedFaq == idx {
-                        Text(faq.answer)
-                            .font(.caption)
-                            .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
-                            .padding(.horizontal, 14)
-                            .padding(.bottom, 14)
-                            .transition(.opacity.combined(with: .move(edge: .top)))
-                    }
-                }
-                .background(
-                    RoundedRectangle(cornerRadius: 14)
-                        .fill(.white.opacity(0.04))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 14)
-                                .strokeBorder(.white.opacity(0.04), lineWidth: 1)
-                        )
-                )
-            }
-        }
-        .padding(18)
-        .background(
-            RoundedRectangle(cornerRadius: 22)
-                .fill(.ultraThinMaterial)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 22)
-                        .strokeBorder(.white.opacity(0.06), lineWidth: 1)
-                )
-        )
-    }
-
-    // MARK: - Trust
-
-    private var trustIndicators: some View {
-        VStack(spacing: 10) {
-            HStack(spacing: 16) {
-                trustBadge(icon: "lock.fill", text: L.secure)
-                trustBadge(icon: "arrow.uturn.backward.circle.fill", text: L.dayRefund)
-                trustBadge(icon: "xmark.circle.fill", text: L.cancelAnytime)
-            }
-
-            Text(L.pricesShownUSD)
-                .font(.caption2)
-                .foregroundStyle(isDark ? .white.opacity(0.3) : .caribbeanMist)
-        }
-        .padding(.vertical, 8)
-    }
-
-    private func trustBadge(icon: String, text: String) -> some View {
-        VStack(spacing: 4) {
-            Image(systemName: icon)
-                .font(.caption)
-                .foregroundStyle(.green.opacity(0.7))
-            Text(text)
-                .font(.caption2)
-                .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
-        }
-    }
-
     // MARK: - Data
 
     struct TierData: Identifiable {
@@ -339,7 +201,6 @@ struct MembershipView: View {
         let icon: String
         let gradientColors: [Color]
         let priceMonthly: Double
-        let priceYearly: Double
         let tagline: String
         let benefits: [(text: String, impact: String)]
         let cta: String
@@ -352,7 +213,7 @@ struct MembershipView: View {
             TierData(
                 id: "free", name: L.starter, icon: "globe",
                 gradientColors: [Color(hex: "#94a3b8"), Color(hex: "#64748b")],
-                priceMonthly: 0, priceYearly: 0,
+                priceMonthly: 0,
                 tagline: L.beginYourJourney,
                 benefits: [
                     ("3 language pairs", "core"),
@@ -365,7 +226,7 @@ struct MembershipView: View {
             TierData(
                 id: "pro", name: L.pro, icon: "bolt.fill",
                 gradientColors: [Color(hex: "#a855f7"), Color(hex: "#d946ef"), Color(hex: "#ec4899")],
-                priceMonthly: 9.99, priceYearly: 99.99,
+                priceMonthly: 9.99,
                 tagline: L.masterLanguagesFaster,
                 benefits: [
                     ("7 language pairs", "premium"),
@@ -379,7 +240,7 @@ struct MembershipView: View {
             TierData(
                 id: "elite", name: L.elite, icon: "sparkles",
                 gradientColors: [Color(hex: "#7c3aed"), Color(hex: "#9333ea"), Color(hex: "#a21caf")],
-                priceMonthly: 19.99, priceYearly: 199.99,
+                priceMonthly: 19.99,
                 tagline: L.unlockFullPotential,
                 benefits: [
                     ("Everything in Pro", "inherit"),
@@ -393,7 +254,7 @@ struct MembershipView: View {
             TierData(
                 id: "royal", name: L.royal, icon: "crown.fill",
                 gradientColors: [Color(hex: "#fbbf24"), Color(hex: "#f97316"), Color(hex: "#f43f5e")],
-                priceMonthly: 99.99, priceYearly: 999.99,
+                priceMonthly: 99.99,
                 tagline: L.ultimateExperience,
                 benefits: [
                     ("Everything in Elite", "inherit"),
@@ -422,30 +283,6 @@ struct MembershipView: View {
         .init(name: "Animation Controls", values: ["—", "—", "Full", "Full"]),
         .init(name: "Offline Mode", values: ["—", "✓", "✓", "✓"]),
     ]
-
-    struct FaqItem {
-        let question: String
-        let answer: String
-    }
-
-    static let faqs: [FaqItem] = [
-        .init(
-            question: "Can I cancel anytime?",
-            answer: "Yes! You can cancel your subscription at any time from your profile settings. Your access continues until the end of the billing period."
-        ),
-        .init(
-            question: "Which languages are available?",
-            answer: "We support 9 languages (English, Spanish, French, German, Polish, Arabic, Chinese, Japanese, Ukrainian) with 7 built-in pairs and additional beta pairs for higher tiers."
-        ),
-        .init(
-            question: "Can I switch plans?",
-            answer: "Absolutely. You can upgrade or downgrade at any time. When upgrading, you'll be charged the prorated difference. When downgrading, changes apply at the next billing cycle."
-        ),
-        .init(
-            question: "What's your refund policy?",
-            answer: "We offer a 30-day money-back guarantee on all paid plans. If you're not satisfied, contact us for a full refund — no questions asked."
-        )
-    ]
 }
 
 // MARK: - Tier Card
@@ -457,19 +294,12 @@ struct TierCardView: View {
     private var isDark: Bool { colorScheme == .dark }
 
     let tier: MembershipView.TierData
-    let billingCycle: MembershipView.BillingCycle
     let index: Int
 
     @State private var isHovered = false
 
     private var price: Double {
-        billingCycle == .monthly ? tier.priceMonthly : tier.priceYearly
-    }
-
-    private var monthlyEquiv: Double {
-        billingCycle == .yearly && tier.priceYearly > 0
-            ? tier.priceYearly / 12.0
-            : tier.priceMonthly
+        tier.priceMonthly
     }
 
     var body: some View {
@@ -534,7 +364,7 @@ struct TierCardView: View {
                             )
                         )
                 } else {
-                    Text("$\(String(format: "%.2f", price))")
+                    Text("£\(String(format: "%.2f", price))")
                         .font(.system(size: 28, weight: .black))
                         .foregroundStyle(
                             LinearGradient(
@@ -543,16 +373,8 @@ struct TierCardView: View {
                                 endPoint: .trailing
                             )
                         )
-                    Text("/\(billingCycle == .monthly ? L.perMonth : L.perYear)")
+                    Text("/\(L.perMonth)")
                         .font(.subheadline)
-                        .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
-                }
-
-                Spacer()
-
-                if billingCycle == .yearly && tier.priceYearly > 0 {
-                    Text("$\(String(format: "%.2f", monthlyEquiv))/\(L.perMonth)")
-                        .font(.caption2)
                         .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
                 }
             }

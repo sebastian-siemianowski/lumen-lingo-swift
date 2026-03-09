@@ -618,36 +618,57 @@ struct FlashCardsView: View {
     // MARK: - Action Buttons
 
     private var actionButtons: some View {
-        HStack(spacing: 16) {
+        HStack(spacing: 14) {
             // Still Learning
             Button {
                 handleAnswer(correct: false)
             } label: {
                 HStack(spacing: 10) {
                     Image(systemName: "arrow.counterclockwise")
-                        .font(.system(size: 16, weight: .semibold))
-                        .foregroundStyle(.orange)
-                        .frame(width: 36, height: 36)
+                        .font(.system(size: 14, weight: .bold))
+                        .foregroundStyle(.white)
+                        .frame(width: 32, height: 32)
                         .background(
                             Circle()
-                                .fill(.orange.opacity(0.15))
+                                .fill(.white.opacity(0.20))
                                 .overlay(
                                     Circle()
-                                        .strokeBorder(.orange.opacity(0.2), lineWidth: 1)
+                                        .strokeBorder(.white.opacity(0.30), lineWidth: 0.75)
                                 )
                         )
 
                     Text(L.stillLearning)
                         .font(.subheadline.bold())
-                        .foregroundStyle(isDark ? .white : .caribbeanInk)
+                        .foregroundStyle(.white)
                 }
                 .padding(.horizontal, 20)
                 .padding(.vertical, 14)
                 .frame(maxWidth: .infinity)
-                .glassEffect(
-                    .regular.tint(.orange.opacity(0.1)),
-                    in: .rect(cornerRadius: 28)
+                .background(
+                    RoundedRectangle(cornerRadius: 28)
+                        .fill(
+                            LinearGradient(
+                                colors: [Color(hex: "#f59e0b"), Color(hex: "#f43f5e")],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 28)
+                                .fill(
+                                    LinearGradient(
+                                        colors: [.white.opacity(0.25), .clear],
+                                        startPoint: .top,
+                                        endPoint: .bottom
+                                    )
+                                )
+                        )
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 28)
+                                .strokeBorder(.white.opacity(0.25), lineWidth: 0.75)
+                        )
                 )
+                .shadow(color: Color(hex: "#f43f5e").opacity(0.35), radius: 12, x: 0, y: 4)
             }
             .buttonStyle(ScaleButtonStyle())
 
@@ -657,29 +678,50 @@ struct FlashCardsView: View {
             } label: {
                 HStack(spacing: 10) {
                     Image(systemName: "checkmark")
-                        .font(.system(size: 16, weight: .semibold))
-                        .foregroundStyle(.green)
-                        .frame(width: 36, height: 36)
+                        .font(.system(size: 14, weight: .bold))
+                        .foregroundStyle(.white)
+                        .frame(width: 32, height: 32)
                         .background(
                             Circle()
-                                .fill(.green.opacity(0.15))
+                                .fill(.white.opacity(0.20))
                                 .overlay(
                                     Circle()
-                                        .strokeBorder(.green.opacity(0.2), lineWidth: 1)
+                                        .strokeBorder(.white.opacity(0.30), lineWidth: 0.75)
                                 )
                         )
 
                     Text(L.gotIt)
                         .font(.subheadline.bold())
-                        .foregroundStyle(isDark ? .white : .caribbeanInk)
+                        .foregroundStyle(.white)
                 }
                 .padding(.horizontal, 20)
                 .padding(.vertical, 14)
                 .frame(maxWidth: .infinity)
-                .glassEffect(
-                    .regular.tint(.green.opacity(0.1)),
-                    in: .rect(cornerRadius: 28)
+                .background(
+                    RoundedRectangle(cornerRadius: 28)
+                        .fill(
+                            LinearGradient(
+                                colors: [Color(hex: "#10b981"), Color(hex: "#06b6d4")],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 28)
+                                .fill(
+                                    LinearGradient(
+                                        colors: [.white.opacity(0.25), .clear],
+                                        startPoint: .top,
+                                        endPoint: .bottom
+                                    )
+                                )
+                        )
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 28)
+                                .strokeBorder(.white.opacity(0.25), lineWidth: 0.75)
+                        )
                 )
+                .shadow(color: Color(hex: "#10b981").opacity(0.35), radius: 12, x: 0, y: 4)
             }
             .buttonStyle(ScaleButtonStyle())
         }
