@@ -314,7 +314,7 @@ struct CategoriesView: View {
             ? [GridItem(.flexible(), spacing: 14), GridItem(.flexible(), spacing: 14)]
             : [GridItem(.flexible())]
 
-        return LazyVGrid(columns: columns, spacing: 14) {
+        return LazyVGrid(columns: columns, spacing: 18) {
             ForEach(Array(paginatedCategories.enumerated()), id: \.element.id) { index, category in
                 categoryCard(category)
                     .transition(
@@ -337,26 +337,28 @@ struct CategoriesView: View {
         let fav = isFavorite(item.id)
         let pct = item.progress.percentage
         let completed = pct >= 100.0
-
-        let isPressed = pressedCardId == item.id
         let accentColor = colors.first ?? .white
 
         return ZStack(alignment: .topTrailing) {
             // Main card button — covers entire area, reliable tap in LazyVGrid
             Button {
-                // 1) Instant press-in
-                withAnimation(.spring(response: 0.08, dampingFraction: 0.80)) {
-                    pressedCardId = item.id
-                }
-                HapticsService.light()
-                // 2) Bouncy spring-back after 120ms
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.12) {
-                    withAnimation(.spring(response: 0.30, dampingFraction: 0.50)) {
+                // Phase 1: Seamless handoff — keep card visually pressed
+                // after system isPressed goes false
+                pressedCardId = item.id
+
+                // Haptic — soft, premium feel
+                let g = UIImpactFeedbackGenerator(style: .soft)
+                g.impactOccurred(intensity: 0.7)
+
+                // Phase 2: Bouncy spring-back after held 140ms
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.14) {
+                    withAnimation(.spring(response: 0.35, dampingFraction: 0.55)) {
                         pressedCardId = nil
                     }
                 }
-                // 3) Navigate after animation plays
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.40) {
+
+                // Phase 3: Navigate after full bounce plays
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.48) {
                     navigateToGame(categoryId: item.id)
                 }
             } label: {
@@ -369,8 +371,8 @@ struct CategoriesView: View {
                             size: isGridView ? 40 : 48
                         )
                         Spacer()
-                        // Invisible spacer matching heart size to preserve layout
-                        Color.clear.frame(width: 32, height: 32)
+                        // Invisible spacer matching overlay size to preserve layout
+                        Color.clear.frame(width: isGridView ? 80 : 44, height: 36)
                     }
 
                     // Category name
@@ -394,9 +396,7 @@ struct CategoriesView: View {
 
                         Spacer()
 
-                        if isGridView {
-                            circularProgress(pct: pct, completed: completed, colors: colors)
-                        } else {
+                        if !isGridView {
                             VStack(alignment: .trailing, spacing: 3) {
                                 LiquidProgressBar(
                                     progress: pct,
@@ -420,31 +420,36 @@ struct CategoriesView: View {
                 )
                 .clipShape(RoundedRectangle(cornerRadius: 22))
             }
-            .buttonStyle(.plain)
+            .buttonStyle(LumenCategoryCardStyle(
+                accentColor: accentColor,
+                isExternallyPressed: pressedCardId == item.id
+            ))
 
-            // Heart overlay — sits on top, gets tap priority in its 44×44 area
-            Button {
-                withAnimation(.spring(response: 0.35, dampingFraction: 0.5)) {
-                    HapticsService.light()
-                    toggleFavorite(item.id)
+            // Top-right overlay: progress + heart
+            HStack(spacing: 6) {
+                if isGridView {
+                    circularProgress(pct: pct, completed: completed, colors: colors)
                 }
-            } label: {
-                Image(systemName: fav ? "heart.fill" : "heart")
-                    .font(.system(size: 15, weight: .medium))
-                    .foregroundStyle(fav ? .pink : (isDark ? .white.opacity(0.35) : .caribbeanMist))
-                    .scaleEffect(fav ? 1.15 : 1.0)
-                    .frame(width: 44, height: 44)
-                    .contentShape(Circle())
+
+                // Heart / favorite button
+                Button {
+                    withAnimation(.spring(response: 0.35, dampingFraction: 0.5)) {
+                        HapticsService.light()
+                        toggleFavorite(item.id)
+                    }
+                } label: {
+                    Image(systemName: fav ? "heart.fill" : "heart")
+                        .font(.system(size: 15, weight: .medium))
+                        .foregroundStyle(fav ? .pink : (isDark ? .white.opacity(0.35) : .caribbeanMist))
+                        .scaleEffect(fav ? 1.15 : 1.0)
+                        .frame(width: 36, height: 36)
+                        .contentShape(Circle())
+                }
+                .buttonStyle(LumenPressStyle(weight: .soft, accentColor: .pink))
             }
-            .buttonStyle(LumenPressStyle(weight: .soft, accentColor: .pink))
-            .padding(.top, 8)
-            .padding(.trailing, 8)
+            .padding(.top, 10)
+            .padding(.trailing, 10)
         }
-        .scaleEffect(isPressed ? 0.94 : 1.0)
-        .brightness(isPressed ? -0.05 : 0)
-        .shadow(color: accentColor.opacity(isPressed ? 0.35 : 0), radius: 12, y: 6)
-        .saturation(isPressed ? 1.10 : 1.0)
-        .animation(.spring(response: 0.20, dampingFraction: 0.50), value: isPressed)
         .accessibilityLabel("\(item.name), \(item.difficulty.rawValue), \(Int(pct))% \(L.complete.lowercased())")
         .accessibilityHint(L.doubleTapToStart)
     }
@@ -452,44 +457,27 @@ struct CategoriesView: View {
     // MARK: - Circular Progress (Grid Cards)
 
     private func circularProgress(pct: Double, completed: Bool, colors: [Color]) -> some View {
-        let completedGreen: Color = isDark ? .green : Color(hex: "#059669")
+        let effectiveColors = completed
+            ? [isDark ? Color.green : Color(hex: "#059669"), isDark ? Color.green : Color(hex: "#059669")]
+            : colors
         return ZStack {
-            if completed && !isDark {
-                // Light mode completed: solid emerald circle with white checkmark
-                Circle()
-                    .fill(completedGreen)
-                Image(systemName: "checkmark")
-                    .font(.system(size: 12, weight: .bold))
-                    .foregroundStyle(.white)
-            } else if completed {
-                // Dark mode completed: ring + green checkmark
-                Circle()
-                    .stroke(.white.opacity(0.08), lineWidth: 3)
-                Circle()
-                    .trim(from: 0, to: 1.0)
-                    .stroke(completedGreen, style: StrokeStyle(lineWidth: 3, lineCap: .round))
-                    .rotationEffect(.degrees(-90))
-                Image(systemName: "checkmark")
-                    .font(.system(size: 10, weight: .bold))
-                    .foregroundStyle(completedGreen)
-            } else {
-                // In-progress: track + gradient arc + percentage
-                Circle()
-                    .stroke(isDark ? .white.opacity(0.08) : Color(hex: "#C494FC").opacity(0.15), lineWidth: 3)
-                Circle()
-                    .trim(from: 0, to: min(pct / 100.0, 1.0))
-                    .stroke(
-                        LinearGradient(colors: colors, startPoint: .topLeading, endPoint: .bottomTrailing),
-                        style: StrokeStyle(lineWidth: 3, lineCap: .round)
-                    )
-                    .rotationEffect(.degrees(-90))
-                Text("\(Int(pct))")
-                    .font(.system(size: 9, weight: .bold, design: .rounded))
-                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
-            }
+            // Track ring
+            Circle()
+                .stroke(isDark ? .white.opacity(0.08) : Color(hex: "#C494FC").opacity(0.15), lineWidth: 3)
+            // Progress arc
+            Circle()
+                .trim(from: 0, to: min(pct / 100.0, 1.0))
+                .stroke(
+                    LinearGradient(colors: effectiveColors, startPoint: .topLeading, endPoint: .bottomTrailing),
+                    style: StrokeStyle(lineWidth: 3, lineCap: .round)
+                )
+                .rotationEffect(.degrees(-90))
+            // Percentage label
+            Text("\(Int(pct))")
+                .font(.system(size: 9, weight: .bold, design: .rounded))
+                .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
         }
         .frame(width: 34, height: 34)
-        .shadow(color: completed && !isDark ? completedGreen.opacity(0.35) : .clear, radius: 4, x: 0, y: 2)
     }
 
     // MARK: - Progress Label (List Cards)

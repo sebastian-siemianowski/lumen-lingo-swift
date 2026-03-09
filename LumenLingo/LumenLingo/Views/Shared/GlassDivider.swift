@@ -334,40 +334,54 @@ struct LumenCTAPressStyle: ButtonStyle {
     }
 }
 
-// MARK: - Navigation Card Press Style
+// MARK: - Category Card Press Style
 
-/// ButtonStyle for cards that navigate on tap. Uses a bouncy spring (damping 0.50)
-/// so the overshoot continues animating after `isPressed` goes false — this makes
-/// the press animation clearly visible even with ScrollView's brief isPressed window.
-/// Works with nested Buttons (heart/favorite) because SwiftUI disambiguates automatically.
-struct LumenNavigationCardStyle: ButtonStyle {
-    var accentColor: Color = .white
+/// Premium ButtonStyle for category cards combining system `isPressed` (instant
+/// touch-down feedback) with an external `@State`-driven animation (controlled
+/// bouncy release). The external state takes over seamlessly when the finger
+/// lifts, preventing any visual gap between system press → manual animation
+/// → satisfying springy return.
+///
+/// Touch-down: instant scale + dim + accent glow ring + dual shadows.
+/// Release: held 140ms → bouncy spring overshoot → settle → navigate.
+struct LumenCategoryCardStyle: ButtonStyle {
+    let accentColor: Color
+    let isExternallyPressed: Bool
 
     func makeBody(configuration: Configuration) -> some View {
-        let pressed = configuration.isPressed
+        // Either system press OR manual animation keeps the pressed visual
+        let active = configuration.isPressed || isExternallyPressed
 
         configuration.label
-            .scaleEffect(pressed ? 0.94 : 1.0)
-            .brightness(pressed ? -0.05 : 0)
+            .scaleEffect(active ? 0.96 : 1.0)
+            .brightness(active ? -0.03 : 0)
+            // Layer 1: accent color glow
             .shadow(
-                color: accentColor.opacity(pressed ? 0.35 : 0),
-                radius: pressed ? 18 : 0,
-                y: pressed ? 3 : 0
+                color: accentColor.opacity(active ? 0.4 : 0),
+                radius: active ? 20 : 0,
+                y: active ? 4 : 0
             )
+            // Layer 2: depth shadow shift
             .shadow(
-                color: .black.opacity(pressed ? 0.06 : 0.12),
-                radius: pressed ? 3 : 10,
-                y: pressed ? 1 : 5
+                color: .black.opacity(active ? 0.06 : 0.10),
+                radius: active ? 3 : 8,
+                y: active ? 1 : 4
             )
-            .saturation(pressed ? 1.10 : 1.0)
-            // Bouncy spring — low damping means visible overshoot on release
-            .animation(.spring(response: 0.20, dampingFraction: 0.50), value: pressed)
-            .onChange(of: pressed) { _, isDown in
-                if isDown {
-                    let g = UIImpactFeedbackGenerator(style: .soft)
-                    g.impactOccurred(intensity: 0.7)
-                }
-            }
+            .saturation(active ? 1.08 : 1.0)
+            // Accent glow ring on press
+            .overlay(
+                RoundedRectangle(cornerRadius: 22)
+                    .strokeBorder(
+                        LinearGradient(
+                            colors: [accentColor.opacity(0.5), accentColor.opacity(0.15)],
+                            startPoint: .top,
+                            endPoint: .bottom
+                        ),
+                        lineWidth: 1.5
+                    )
+                    .opacity(active ? 1 : 0)
+            )
+            .animation(.spring(response: 0.25, dampingFraction: 0.65), value: active)
     }
 }
 
