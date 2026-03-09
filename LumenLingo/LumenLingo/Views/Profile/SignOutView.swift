@@ -109,10 +109,10 @@ struct SignOutView: View {
             VStack(alignment: .leading, spacing: 2) {
                 Text(title)
                     .font(.caption)
-                    .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
                 Text(value)
                     .font(.subheadline)
-                    .foregroundStyle(isDark ? .white : .primary)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
             }
 
             Spacer()
@@ -159,12 +159,12 @@ struct SignOutView: View {
                     .foregroundStyle(.orange)
                 Text(L.areYouSure)
                     .font(.system(size: 15, weight: .semibold))
-                    .foregroundStyle(isDark ? .white : .primary)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
             }
 
             Text(L.progressWillBeSaved)
                 .font(.system(size: 13))
-                .foregroundStyle(isDark ? .white.opacity(0.6) : .secondary)
+                .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
                 .multilineTextAlignment(.center)
 
             HStack(spacing: 12) {
@@ -173,7 +173,7 @@ struct SignOutView: View {
                 } label: {
                     Text(L.cancel)
                         .font(.system(size: 14, weight: .semibold))
-                        .foregroundStyle(isDark ? .white : .primary)
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 10)
                         .background(
@@ -217,11 +217,11 @@ struct SignOutView: View {
         HStack(spacing: 10) {
             ProgressView()
                 .scaleEffect(0.8)
-                .tint(isDark ? .white : .primary)
+                .tint(isDark ? .white : .caribbeanInk)
 
             Text(logoutStep)
                 .font(.system(size: 13))
-                .foregroundStyle(isDark ? .white.opacity(0.7) : .secondary)
+                .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 10)

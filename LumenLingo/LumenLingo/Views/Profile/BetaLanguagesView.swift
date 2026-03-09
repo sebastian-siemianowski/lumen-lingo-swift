@@ -129,10 +129,10 @@ struct BetaLanguagesView: View {
             VStack(alignment: .leading, spacing: 4) {
                 Text(L.betaLanguages)
                     .font(.system(size: 17, weight: .bold))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
                 Text(L.experimentalLanguagePairs)
                     .font(.system(size: 13))
-                    .foregroundStyle(isDark ? .white.opacity(0.5) : .white.opacity(0.6))
+                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
             }
 
             Spacer()
@@ -150,10 +150,10 @@ struct BetaLanguagesView: View {
             VStack(alignment: .leading, spacing: 4) {
                 Text(L.experimentalFeatures)
                     .font(.system(size: 14, weight: .bold))
-                    .foregroundStyle(isDark ? Color(red: 0.996, green: 0.941, blue: 0.541) : .white)
+                    .foregroundStyle(isDark ? Color(red: 0.996, green: 0.941, blue: 0.541) : .caribbeanInk)
                 Text(L.betaLimitedContent)
                     .font(.system(size: 12))
-                    .foregroundStyle(isDark ? Color(red: 0.996, green: 0.941, blue: 0.541).opacity(0.7) : .white.opacity(0.9))
+                    .foregroundStyle(isDark ? Color(red: 0.996, green: 0.941, blue: 0.541).opacity(0.7) : .caribbeanPlum)
             }
         }
         .padding(16)
@@ -206,7 +206,7 @@ struct BetaLanguagesView: View {
                     // Source language name
                     Text(source.name(in: localization.sourceLanguage))
                         .font(.system(size: 15, weight: .bold))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
 
                     Spacer()
 
@@ -230,12 +230,12 @@ struct BetaLanguagesView: View {
                     // Total count
                     Text("\(pairs.count)")
                         .font(.system(size: 11, weight: .semibold, design: .rounded))
-                        .foregroundStyle(.white.opacity(0.35))
+                        .foregroundStyle(isDark ? .white.opacity(0.35) : .caribbeanMist)
 
                     // Disclosure chevron
                     Image(systemName: "chevron.right")
                         .font(.system(size: 11, weight: .bold))
-                        .foregroundStyle(.white.opacity(0.3))
+                        .foregroundStyle(isDark ? .white.opacity(0.3) : .caribbeanMist)
                         .rotationEffect(.degrees(isExpanded ? 90 : 0))
                 }
                 .padding(.horizontal, 16)
@@ -283,8 +283,8 @@ struct BetaLanguagesView: View {
         let active = core || enabled
 
         let labelColor: Color = active
-            ? (isDark ? .white.opacity(0.9) : .white)
-            : (isDark ? .white.opacity(0.45) : .white.opacity(0.5))
+            ? (isDark ? .white.opacity(0.9) : .caribbeanInk)
+            : (isDark ? .white.opacity(0.45) : .caribbeanMist)
 
         return HStack(spacing: 12) {
             // Target flag

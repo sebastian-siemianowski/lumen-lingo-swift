@@ -11,7 +11,10 @@ struct LiquidGlassPagination: View {
     let accentColors: [Color]
     let onPageChange: (Int) -> Void
 
+    @Environment(\.colorScheme) private var colorScheme
     @Namespace private var dotNamespace
+
+    private var isDark: Bool { colorScheme == .dark }
 
     /// Maximum number of dot indicators visible at once
     private let maxVisibleDots = 7
@@ -38,7 +41,7 @@ struct LiquidGlassPagination: View {
             }
             .padding(.horizontal, 20)
             .padding(.vertical, 12)
-            .glassEffect(.regular.tint(accentColors[0].opacity(0.15)), in: .rect(cornerRadius: 22))
+            .glassEffect(.regular.tint(accentColors[0].opacity(isDark ? 0.15 : 0.35)), in: .rect(cornerRadius: 22))
             .padding(.horizontal, 24)
         }
     }
@@ -55,10 +58,10 @@ struct LiquidGlassPagination: View {
             ZStack(alignment: .leading) {
                 // Track background
                 Capsule()
-                    .fill(.white.opacity(0.06))
+                    .fill(isDark ? .white.opacity(0.06) : Color(hex: "#C494FC").opacity(0.12))
                     .overlay(
                         Capsule()
-                            .strokeBorder(.white.opacity(0.04), lineWidth: 0.5)
+                            .strokeBorder(isDark ? .white.opacity(0.04) : Color(hex: "#C494FC").opacity(0.15), lineWidth: 0.5)
                     )
 
                 // Fill
@@ -142,12 +145,13 @@ struct LiquidGlassPagination: View {
                 } else {
                     // Inactive: small translucent circle
                     Circle()
-                        .fill(.white.opacity(0.2))
+                        .fill(isDark ? .white.opacity(0.2) : .white.opacity(0.55))
                         .frame(width: 8, height: 8)
                         .overlay(
                             Circle()
-                                .strokeBorder(.white.opacity(0.08), lineWidth: 0.5)
+                                .strokeBorder(isDark ? .white.opacity(0.08) : Color(hex: "#C494FC").opacity(0.2), lineWidth: 0.5)
                         )
+                        .shadow(color: .black.opacity(isDark ? 0 : 0.1), radius: 1, y: 1)
                 }
             }
         }
@@ -167,11 +171,11 @@ struct LiquidGlassPagination: View {
         } label: {
             Image(systemName: direction == .backward ? "chevron.left" : "chevron.right")
                 .font(.system(size: 13, weight: .bold))
-                .foregroundStyle(.white.opacity(isEnabled ? 0.75 : 0.2))
+                .foregroundStyle(isEnabled ? (isDark ? .white.opacity(0.75) : .caribbeanInk) : (isDark ? .white.opacity(0.2) : .caribbeanMist.opacity(0.5)))
                 .frame(width: 34, height: 34)
                 .background(
                     Circle()
-                        .fill(.white.opacity(isEnabled ? 0.10 : 0.04))
+                        .fill(isDark ? .white.opacity(isEnabled ? 0.10 : 0.04) : Color(hex: "#C494FC").opacity(isEnabled ? 0.15 : 0.06))
                 )
                 .contentShape(Circle())
         }
@@ -184,7 +188,7 @@ struct LiquidGlassPagination: View {
     private var pageCounter: some View {
         Text("\(currentPage + 1) / \(totalPages)")
             .font(.system(size: 11, weight: .semibold, design: .rounded))
-            .foregroundStyle(.white.opacity(0.45))
+            .foregroundStyle(isDark ? .white.opacity(0.45) : .caribbeanPlum)
             .contentTransition(.numericText())
     }
 

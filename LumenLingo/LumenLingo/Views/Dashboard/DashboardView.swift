@@ -94,11 +94,11 @@ struct DashboardView: View {
 
                 Text(currentLanguagePair)
                     .font(.system(size: 13, weight: .semibold))
-                    .foregroundStyle(.white.opacity(0.85))
+                    .foregroundStyle(isDark ? .white.opacity(0.85) : .caribbeanInk)
 
                 Image(systemName: "chevron.down")
                     .font(.system(size: 10, weight: .bold))
-                    .foregroundStyle(.white.opacity(0.4))
+                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
             }
             .padding(.horizontal, 14)
             .padding(.vertical, 8)
@@ -142,11 +142,11 @@ struct DashboardView: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text(L.greeting(user.firstName))
                         .font(.title2.bold())
-                        .foregroundStyle(.white)
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
 
                     Text(L.readyForAdventure)
                         .font(.subheadline)
-                        .foregroundStyle(.white.opacity(0.7))
+                        .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
                 }
 
                 Spacer()
@@ -159,9 +159,9 @@ struct DashboardView: View {
                     } label: {
                         Image(systemName: "chevron.up")
                             .font(.caption.bold())
-                            .foregroundStyle(.white.opacity(0.5))
+                            .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
                             .padding(8)
-                            .background(Circle().fill(.white.opacity(0.1)))
+                            .background(Circle().fill(isDark ? .white.opacity(0.1) : Color(hex: "#C494FC").opacity(0.15)))
                     }
                 }
             }
@@ -231,12 +231,12 @@ struct DashboardView: View {
                     .shadow(color: iconColor.opacity(0.5), radius: 4)
                 Text(value)
                     .font(.title3.bold())
-                    .foregroundStyle(.white)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
             }
 
             Text(title)
                 .font(.caption)
-                .foregroundStyle(.white.opacity(0.6))
+                .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
 
             if let progress {
                 AnimatedProgressBar(
@@ -251,10 +251,10 @@ struct DashboardView: View {
         .padding(12)
         .background(
             RoundedRectangle(cornerRadius: 14)
-                .fill(.white.opacity(colorScheme == .dark ? 0.06 : 0.12))
+                .fill(isDark ? .white.opacity(0.06) : Color(hex: "#C494FC").opacity(0.12))
                 .overlay(
                     RoundedRectangle(cornerRadius: 14)
-                        .strokeBorder(.white.opacity(0.08), lineWidth: 1)
+                        .strokeBorder(isDark ? .white.opacity(0.08) : Color(hex: "#C494FC").opacity(0.18), lineWidth: 0.5)
                 )
         )
     }
@@ -274,11 +274,11 @@ struct DashboardView: View {
                 .foregroundStyle(color)
             Text(value)
                 .font(.caption.bold())
-                .foregroundStyle(.white.opacity(0.8))
+                .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanInk)
         }
         .padding(.horizontal, 8)
         .padding(.vertical, 4)
-        .background(Capsule().fill(.white.opacity(0.08)))
+        .background(Capsule().fill(isDark ? .white.opacity(0.08) : Color(hex: "#C494FC").opacity(0.14)))
     }
 
     // MARK: - Games Section
@@ -348,11 +348,11 @@ struct DashboardView: View {
                 VStack(alignment: .leading, spacing: 2) {
                     Text(L.chooseYourAdventure)
                         .font(.system(size: 19, weight: .bold))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
 
                     Text(L.startGameToBoost)
                         .font(.system(size: 13))
-                        .foregroundStyle(.white.opacity(0.6))
+                        .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
                 }
 
                 Spacer()
@@ -452,19 +452,19 @@ struct DashboardView: View {
             VStack(alignment: .leading, spacing: 2) {
                 Text("\(type.displayName) · \(record.categoryName)")
                     .font(.subheadline.bold())
-                    .foregroundStyle(.white)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
                     .lineLimit(1)
 
                 Text("+\(record.score) \(L.xp) · \(record.correctAnswers)/\(record.totalQuestions) \(L.correct.lowercased()) · \(record.completedAt.timeAgoDisplay)")
                     .font(.caption)
-                    .foregroundStyle(.white.opacity(0.5))
+                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
             }
 
             Spacer()
 
             Image(systemName: "chevron.right")
                 .font(.caption)
-                .foregroundStyle(.white.opacity(0.3))
+                .foregroundStyle(isDark ? .white.opacity(0.3) : .caribbeanMist)
         }
         .padding(.vertical, 6)
     }
@@ -571,10 +571,13 @@ struct DashboardGameCard: View {
     let route: AppRoute
     @Binding var navigationPath: NavigationPath
 
+    @Environment(\.colorScheme) private var envColorScheme
     @Environment(\.self) private var env
     @State private var appeared = false
     @State private var isPressed = false
     @State private var iconPulse: CGFloat = 0
+
+    private var isDark: Bool { envColorScheme == .dark }
 
     var body: some View {
         Button {
@@ -596,11 +599,11 @@ struct DashboardGameCard: View {
                         VStack(alignment: .leading, spacing: 6) {
                             Text(title)
                                 .font(.system(size: 19, weight: .bold))
-                                .foregroundStyle(.white)
+                                .foregroundStyle(isDark ? .white : .caribbeanInk)
 
                             Text(description)
                                 .font(.system(size: 14, weight: .medium))
-                                .foregroundStyle(.white.opacity(0.7))
+                                .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
                                 .lineLimit(3)
                                 .fixedSize(horizontal: false, vertical: true)
                         }

@@ -141,7 +141,7 @@ struct ProfileView: View {
                 VStack(spacing: 4) {
                     Text(user.name)
                         .font(.title2.bold())
-                        .foregroundStyle(isDark ? .white : Color(red: 30/255, green: 25/255, blue: 60/255))
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
 
                     HStack(spacing: 6) {
                         Image(systemName: "star.fill")
@@ -149,7 +149,7 @@ struct ProfileView: View {
                             .foregroundStyle(.yellow)
                         Text("\(L.level) \(profile?.currentLevel ?? 1) \(L.learner)")
                             .font(.subheadline)
-                            .foregroundStyle(isDark ? .white.opacity(0.6) : .secondary)
+                            .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
                     }
                 }
 
@@ -173,10 +173,10 @@ struct ProfileView: View {
                 .foregroundStyle(color)
             Text(value)
                 .font(.system(size: 16, weight: .bold, design: .rounded))
-                .foregroundStyle(isDark ? .white : .primary)
+                .foregroundStyle(isDark ? .white : .caribbeanInk)
             Text(label)
                 .font(.caption2)
-                .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
         }
         .frame(maxWidth: .infinity)
     }
@@ -210,7 +210,7 @@ struct ProfileView: View {
                         .foregroundStyle(
                             activeTab == tab
                                 ? (isDark ? .white : Color(hex: "#667eea"))
-                                : (isDark ? .white.opacity(0.45) : .secondary)
+                                : (isDark ? .white.opacity(0.45) : .caribbeanMist)
                         )
                         .padding(.horizontal, 10)
                         .padding(.vertical, 8)
@@ -333,7 +333,7 @@ struct ProfileView: View {
                         .foregroundStyle(
                             activeAppearanceSubTab == subTab
                                 ? (isDark ? .white : Color(hex: "#8b5cf6"))
-                                : (isDark ? .white.opacity(0.4) : .secondary)
+                                : (isDark ? .white.opacity(0.4) : .caribbeanMist)
                         )
                         .padding(.horizontal, 10)
                         .padding(.vertical, 6)
@@ -408,10 +408,10 @@ struct ProfileView: View {
                 VStack(alignment: .leading, spacing: 2) {
                     Text(L.darkMode)
                         .font(.system(size: 17, weight: .semibold))
-                        .foregroundStyle(isDark ? .white : .primary)
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
                     Text(isDark ? L.cosmicDarkTheme : L.lightModeActive)
                         .font(.system(size: 13))
-                        .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                        .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
                 }
 
                 Spacer()
@@ -458,10 +458,10 @@ struct ProfileView: View {
                 VStack(alignment: .leading, spacing: 2) {
                     Text(L.languagePair)
                         .font(.system(size: 15, weight: .medium))
-                        .foregroundStyle(isDark ? .white : .primary)
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
                     Text("\(srcLang.displayName) → \(tgtLang.name(in: srcLang))")
                         .font(.system(size: 12))
-                        .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                        .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
                 }
 
                 Spacer()
@@ -471,7 +471,7 @@ struct ProfileView: View {
                 } label: {
                     Image(systemName: "chevron.right")
                         .font(.system(size: 12, weight: .bold))
-                        .foregroundStyle(isDark ? .white.opacity(0.3) : .secondary)
+                        .foregroundStyle(isDark ? .white.opacity(0.3) : .caribbeanMist)
                 }
                 .buttonStyle(.plain)
             }
@@ -518,13 +518,13 @@ struct ProfileView: View {
         VStack(spacing: 6) {
             Text("LumenLingo")
                 .font(.headline)
-                .foregroundStyle(isDark ? .white.opacity(0.4) : .secondary)
+                .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
             Text(L.version)
                 .font(.caption)
-                .foregroundStyle(isDark ? .white.opacity(0.25) : .gray.opacity(0.5))
+                .foregroundStyle(isDark ? .white.opacity(0.25) : .caribbeanMist.opacity(0.7))
             Text(L.madeWithLove)
                 .font(.caption)
-                .foregroundStyle(isDark ? .white.opacity(0.25) : .gray.opacity(0.5))
+                .foregroundStyle(isDark ? .white.opacity(0.25) : .caribbeanMist.opacity(0.7))
         }
     }
 

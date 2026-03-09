@@ -36,6 +36,20 @@ extension Color {
     static let deepSpace = Color(red: 30/255, green: 10/255, blue: 60/255)
     static let cosmicBloom = Color(red: 143/255, green: 110/255, blue: 255/255)
     static let cosmicAccent = Color(hex: "#667eea")
+
+    // MARK: - Caribbean Light Mode Typography
+    //
+    // Premium text colours for the Caribbean sunset gradient (lavender → pink → orange).
+    // Deep aubergine primaries, warm plum mid-tones, dusty orchid tertiaries.
+
+    /// Deep aubergine — headings, titles, key values.
+    static let caribbeanInk = Color(red: 45/255, green: 22/255, blue: 62/255)
+
+    /// Warm plum — subtitles, descriptions, secondary labels.
+    static let caribbeanPlum = Color(red: 100/255, green: 58/255, blue: 100/255)
+
+    /// Dusty orchid — hints, timestamps, counters, tertiary text.
+    static let caribbeanMist = Color(red: 140/255, green: 96/255, blue: 136/255)
 }
 
 // MARK: - View Extensions

@@ -300,11 +300,11 @@ struct LumenLingoNavBar: View {
             VStack(alignment: .leading, spacing: 1) {
                 Text("LumenLingo")
                     .font(.system(size: 20, weight: .bold, design: .rounded))
-                    .foregroundStyle(isDark ? .white : Color(red: 30/255, green: 25/255, blue: 60/255))
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
 
                 Text(L.languageMasteryEngine)
                     .font(.system(size: 10, weight: .medium))
-                    .foregroundStyle(isDark ? .white.opacity(0.5) : Color(red: 100/255, green: 100/255, blue: 130/255))
+                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
             }
 
             Spacer()

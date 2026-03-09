@@ -61,10 +61,10 @@ struct QuantumFlowSettingsView: View {
             VStack(alignment: .leading, spacing: 2) {
                 Text(L.quantumFlow)
                     .font(.system(size: 17, weight: .semibold))
-                    .foregroundStyle(isDark ? .white : .primary)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
                 Text(L.dynamicParticleAnimation)
                     .font(.system(size: 13))
-                    .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
             }
 
             Spacer()
@@ -85,10 +85,10 @@ struct QuantumFlowSettingsView: View {
             HStack(spacing: 6) {
                 Image(systemName: "sparkles")
                     .font(.system(size: 14))
-                    .foregroundStyle(isDark ? .white.opacity(0.7) : .secondary)
+                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanMist)
                 Text(L.scene)
                     .font(.system(size: 14, weight: .semibold))
-                    .foregroundStyle(isDark ? .white : .primary)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
             }
 
             LazyVGrid(columns: [
@@ -175,7 +175,7 @@ struct QuantumFlowSettingsView: View {
             Text(text)
                 .font(.system(size: 13))
                 .italic()
-                .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 10)

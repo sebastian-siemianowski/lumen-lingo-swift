@@ -170,8 +170,8 @@ struct SchemeCardView: View {
             Text(name)
                 .font(.system(size: 13, weight: .bold))
                 .foregroundStyle(isSelected
-                    ? (isDark ? .white : .primary)
-                    : (isDark ? .white.opacity(0.7) : .secondary)
+                    ? (isDark ? .white : .caribbeanInk)
+                    : (isDark ? .white.opacity(0.7) : .caribbeanMist)
                 )
                 // Neon glow on selected name
                 .shadow(color: isSelected && isDark ? .purple.opacity(0.5) : .clear, radius: 4)
@@ -180,7 +180,7 @@ struct SchemeCardView: View {
             if !description.isEmpty {
                 Text(description)
                     .font(.system(size: 10))
-                    .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
                     .lineLimit(2)
                     .multilineTextAlignment(.center)
             }

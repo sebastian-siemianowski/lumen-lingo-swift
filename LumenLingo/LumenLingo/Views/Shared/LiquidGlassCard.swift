@@ -5,13 +5,16 @@ import SwiftUI
 /// View modifier that applies the native iOS 26 liquid glass effect
 /// with an accent colour tint to a view.
 struct LiquidGlassCardModifier: ViewModifier {
+    @Environment(\.colorScheme) private var colorScheme
     var cornerRadius: CGFloat = 22
     var accentColor: Color = .blue
+
+    private var isDark: Bool { colorScheme == .dark }
 
     func body(content: Content) -> some View {
         content
             .glassEffect(
-                .regular.tint(accentColor.opacity(0.12)),
+                .regular.tint(accentColor.opacity(isDark ? 0.12 : 0.28)),
                 in: .rect(cornerRadius: cornerRadius)
             )
     }
@@ -64,7 +67,10 @@ struct LiquidProgressBar: View {
     var height: CGFloat = 6
     var gradient: [Color] = [Color(hex: "#667eea"), Color(hex: "#06b6d4")]
 
+    @Environment(\.colorScheme) private var colorScheme
     @State private var shimmerPhase: CGFloat = -1.0
+
+    private var isDark: Bool { colorScheme == .dark }
 
     var body: some View {
         GeometryReader { geo in
@@ -73,10 +79,10 @@ struct LiquidProgressBar: View {
             ZStack(alignment: .leading) {
                 // Track
                 Capsule()
-                    .fill(.white.opacity(0.06))
+                    .fill(isDark ? .white.opacity(0.06) : Color(hex: "#C494FC").opacity(0.12))
                     .overlay(
                         Capsule()
-                            .strokeBorder(.white.opacity(0.04), lineWidth: 0.5)
+                            .strokeBorder(isDark ? .white.opacity(0.04) : Color(hex: "#C494FC").opacity(0.15), lineWidth: 0.5)
                     )
 
                 // Fill bar

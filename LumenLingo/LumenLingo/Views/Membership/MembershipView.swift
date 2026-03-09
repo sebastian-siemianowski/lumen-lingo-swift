@@ -12,6 +12,7 @@ struct MembershipView: View {
     @State private var showComparison = false
 
     private var L: AppStrings { localization.strings }
+    private var isDark: Bool { colorScheme == .dark }
 
     enum BillingCycle { case monthly, yearly }
 
@@ -33,16 +34,26 @@ struct MembershipView: View {
             .padding(.top, 12)
         }
         .background(
-            LinearGradient(
-                colors: [Color(hex: "#0a0a1a"), Color(hex: "#0d1530"), Color(hex: "#0a0a1a")],
-                startPoint: .top,
-                endPoint: .bottom
-            )
+            Group {
+                if isDark {
+                    LinearGradient(
+                        colors: [Color(hex: "#0a0a1a"), Color(hex: "#0d1530"), Color(hex: "#0a0a1a")],
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                } else {
+                    LinearGradient(
+                        colors: [Color(hex: "#C494FC"), Color(hex: "#F472B6"), Color(hex: "#FB923C")],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                }
+            }
             .ignoresSafeArea()
         )
         .navigationTitle(L.membership)
         .navigationBarTitleDisplayMode(.large)
-        .toolbarColorScheme(.dark, for: .navigationBar)
+        .toolbarColorScheme(isDark ? .dark : .light, for: .navigationBar)
     }
 
     // MARK: - Hero
@@ -65,7 +76,7 @@ struct MembershipView: View {
             VStack(spacing: 4) {
                 Text(L.investInYour)
                     .font(.system(size: 36, weight: .black))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
                 Text(L.languageMastery)
                     .font(.system(size: 36, weight: .black))
                     .foregroundStyle(
@@ -79,7 +90,7 @@ struct MembershipView: View {
             Text(L.membershipSubtitle)
                 .multilineTextAlignment(.center)
                 .font(.subheadline)
-                .foregroundStyle(.white.opacity(0.65))
+                .foregroundStyle(isDark ? .white.opacity(0.65) : .caribbeanPlum)
                 .padding(.top, 4)
         }
     }
@@ -105,7 +116,7 @@ struct MembershipView: View {
         Button(action: action) {
             Text(label)
                 .font(.subheadline.bold())
-                .foregroundStyle(isSelected ? .white : .white.opacity(0.5))
+                .foregroundStyle(isSelected ? .white : (isDark ? .white.opacity(0.5) : .caribbeanPlum))
                 .padding(.horizontal, 20)
                 .padding(.vertical, 8)
                 .background(
@@ -145,9 +156,9 @@ struct MembershipView: View {
             HStack {
                 Text(L.featureComparison)
                     .font(.subheadline.bold())
-                    .foregroundStyle(.white.opacity(0.7))
+                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanInk)
                 Image(systemName: showComparison ? "chevron.up" : "chevron.down")
-                    .foregroundStyle(.white.opacity(0.5))
+                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
             }
             .padding(.vertical, 10)
             .padding(.horizontal, 20)
@@ -167,12 +178,12 @@ struct MembershipView: View {
             HStack(spacing: 0) {
                 Text(L.feature)
                     .font(.caption2.bold())
-                    .foregroundStyle(.white.opacity(0.5))
+                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 ForEach([L.free, L.pro, L.elite, L.royal], id: \.self) { name in
                     Text(name)
                         .font(.caption2.bold())
-                        .foregroundStyle(.white.opacity(0.6))
+                        .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
                         .frame(maxWidth: .infinity)
                 }
             }
@@ -185,7 +196,7 @@ struct MembershipView: View {
                 HStack(spacing: 0) {
                     Text(feature.name)
                         .font(.caption2)
-                        .foregroundStyle(.white.opacity(0.7))
+                        .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanInk)
                         .frame(maxWidth: .infinity, alignment: .leading)
 
                     ForEach(feature.values, id: \.self) { val in
@@ -197,11 +208,11 @@ struct MembershipView: View {
                             } else if val == "—" {
                                 Text("—")
                                     .font(.caption2)
-                                    .foregroundStyle(.white.opacity(0.2))
+                                    .foregroundStyle(isDark ? .white.opacity(0.2) : .caribbeanMist.opacity(0.5))
                             } else {
                                 Text(val)
                                     .font(.caption2)
-                                    .foregroundStyle(.white.opacity(0.6))
+                                    .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
                             }
                         }
                         .frame(maxWidth: .infinity)
@@ -232,7 +243,7 @@ struct MembershipView: View {
                     .foregroundStyle(.purple)
                 Text(L.faq)
                     .font(.headline)
-                    .foregroundStyle(.white)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
             }
 
             ForEach(Array(Self.faqs.enumerated()), id: \.offset) { idx, faq in
@@ -245,12 +256,12 @@ struct MembershipView: View {
                         HStack {
                             Text(faq.question)
                                 .font(.subheadline.bold())
-                                .foregroundStyle(.white)
+                                .foregroundStyle(isDark ? .white : .caribbeanInk)
                                 .multilineTextAlignment(.leading)
                             Spacer()
                             Image(systemName: expandedFaq == idx ? "chevron.up" : "chevron.down")
                                 .font(.caption)
-                                .foregroundStyle(.white.opacity(0.4))
+                                .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
                         }
                         .padding(14)
                     }
@@ -259,7 +270,7 @@ struct MembershipView: View {
                     if expandedFaq == idx {
                         Text(faq.answer)
                             .font(.caption)
-                            .foregroundStyle(.white.opacity(0.6))
+                            .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
                             .padding(.horizontal, 14)
                             .padding(.bottom, 14)
                             .transition(.opacity.combined(with: .move(edge: .top)))
@@ -298,7 +309,7 @@ struct MembershipView: View {
 
             Text(L.pricesShownUSD)
                 .font(.caption2)
-                .foregroundStyle(.white.opacity(0.3))
+                .foregroundStyle(isDark ? .white.opacity(0.3) : .caribbeanMist)
         }
         .padding(.vertical, 8)
     }
@@ -310,7 +321,7 @@ struct MembershipView: View {
                 .foregroundStyle(.green.opacity(0.7))
             Text(text)
                 .font(.caption2)
-                .foregroundStyle(.white.opacity(0.4))
+                .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
         }
     }
 
@@ -434,8 +445,10 @@ struct MembershipView: View {
 // MARK: - Tier Card
 
 struct TierCardView: View {
+    @Environment(\.colorScheme) private var colorScheme
     @Environment(\.localization) private var localization
     private var L: AppStrings { localization.strings }
+    private var isDark: Bool { colorScheme == .dark }
 
     let tier: MembershipView.TierData
     let billingCycle: MembershipView.BillingCycle
@@ -469,10 +482,10 @@ struct TierCardView: View {
                 VStack(alignment: .leading, spacing: 2) {
                     Text(tier.name)
                         .font(.headline)
-                        .foregroundStyle(.white)
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
                     Text(tier.tagline)
                         .font(.caption)
-                        .foregroundStyle(.white.opacity(0.5))
+                        .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
                 }
 
                 Spacer()
@@ -501,14 +514,14 @@ struct TierCardView: View {
                 if price == 0 {
                     Text(L.free)
                         .font(.system(size: 28, weight: .black))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
                 } else {
                     Text("$\(String(format: "%.2f", price))")
                         .font(.system(size: 28, weight: .black))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
                     Text("/\(billingCycle == .monthly ? L.perMonth : L.perYear)")
                         .font(.subheadline)
-                        .foregroundStyle(.white.opacity(0.4))
+                        .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
                 }
 
                 Spacer()
@@ -516,7 +529,7 @@ struct TierCardView: View {
                 if billingCycle == .yearly && tier.priceYearly > 0 {
                     Text("$\(String(format: "%.2f", monthlyEquiv))/\(L.perMonth)")
                         .font(.caption2)
-                        .foregroundStyle(.white.opacity(0.4))
+                        .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
                 }
             }
 
@@ -529,7 +542,7 @@ struct TierCardView: View {
                             .foregroundStyle(benefitColor(benefit.impact))
                         Text(benefit.text)
                             .font(.subheadline)
-                            .foregroundStyle(.white.opacity(0.8))
+                            .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanInk)
                     }
                 }
             }

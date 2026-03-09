@@ -33,17 +33,17 @@ struct SettingsSliderView: View {
                 HStack(spacing: 6) {
                     Image(systemName: iconName)
                         .font(.system(size: 14))
-                        .foregroundStyle(isDark ? .white.opacity(0.7) : .secondary)
+                        .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanMist)
                     Text(label)
                         .font(.system(size: 14, weight: .semibold))
-                        .foregroundStyle(isDark ? .white : .primary)
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
                 }
 
                 Spacer()
 
                 Text(formattedValue)
                     .font(.system(size: 12, weight: .medium, design: .monospaced))
-                    .foregroundStyle(isDark ? .white.opacity(0.9) : .primary)
+                    .foregroundStyle(isDark ? .white.opacity(0.9) : .caribbeanInk)
                     .padding(.horizontal, 10)
                     .padding(.vertical, 5)
                     .background(
@@ -91,7 +91,7 @@ struct SettingsSliderView: View {
             .foregroundStyle(
                 isActive
                     ? (isDark ? .white : .purple)
-                    : (isDark ? .white.opacity(0.5) : .secondary)
+                    : (isDark ? .white.opacity(0.5) : .caribbeanMist)
             )
             // Neon text glow when active
             .shadow(color: isActive && isDark ? accentColor.opacity(0.6) : .clear, radius: 4)

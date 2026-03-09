@@ -15,6 +15,7 @@ struct CategoriesView: View {
     @Environment(\.localization) private var localization
 
     private var L: AppStrings { localization.strings }
+    private var isDark: Bool { colorScheme == .dark }
 
     @Binding var navigationPath: NavigationPath
 
@@ -207,14 +208,14 @@ struct CategoriesView: View {
                         Text(L.back)
                     }
                     .font(.subheadline)
-                    .foregroundStyle(.white.opacity(0.7))
+                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
                 }
 
                 Spacer()
 
                 Text(gameType.displayName)
                     .font(.title3.bold())
-                    .foregroundStyle(.white)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
 
                 Spacer()
 
@@ -226,18 +227,18 @@ struct CategoriesView: View {
                 } label: {
                     Image(systemName: isGridView ? "square.grid.2x2.fill" : "list.bullet")
                         .font(.body)
-                        .foregroundStyle(.white.opacity(0.6))
+                        .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
                 }
             }
 
             // Search bar
             HStack(spacing: 10) {
                 Image(systemName: "magnifyingglass")
-                    .foregroundStyle(.white.opacity(0.4))
+                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
 
                 TextField(L.searchCategories, text: $searchText)
                     .font(.subheadline)
-                    .foregroundStyle(.white)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
                     .autocorrectionDisabled()
 
                 if !searchText.isEmpty {
@@ -245,7 +246,7 @@ struct CategoriesView: View {
                         searchText = ""
                     } label: {
                         Image(systemName: "xmark.circle.fill")
-                            .foregroundStyle(.white.opacity(0.4))
+                            .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
                     }
                 }
 
@@ -257,7 +258,7 @@ struct CategoriesView: View {
                 } label: {
                     Image(systemName: showFavoritesOnly ? "heart.fill" : "heart")
                         .font(.subheadline)
-                        .foregroundStyle(showFavoritesOnly ? .pink : .white.opacity(0.4))
+                        .foregroundStyle(showFavoritesOnly ? .pink : (isDark ? .white.opacity(0.4) : .caribbeanMist))
                         .contentTransition(.symbolEffect(.replace))
                 }
 
@@ -269,17 +270,17 @@ struct CategoriesView: View {
                 } label: {
                     Image(systemName: showCompletedFilter ? "eye.slash.fill" : "eye.fill")
                         .font(.subheadline)
-                        .foregroundStyle(showCompletedFilter ? .yellow : .white.opacity(0.4))
+                        .foregroundStyle(showCompletedFilter ? .yellow : (isDark ? .white.opacity(0.4) : .caribbeanMist))
                         .contentTransition(.symbolEffect(.replace))
                 }
             }
             .padding(12)
             .background(
                 RoundedRectangle(cornerRadius: 14)
-                    .fill(.white.opacity(0.06))
+                    .fill(isDark ? .white.opacity(0.06) : Color(hex: "#C494FC").opacity(0.12))
                     .overlay(
                         RoundedRectangle(cornerRadius: 14)
-                            .strokeBorder(.white.opacity(0.06), lineWidth: 1)
+                            .strokeBorder(isDark ? .white.opacity(0.06) : Color(hex: "#C494FC").opacity(0.18), lineWidth: 0.5)
                     )
             )
         }
@@ -338,10 +339,10 @@ struct CategoriesView: View {
                     // Item count pill
                     Text("\(item.itemCount) \(L.items)")
                         .font(.system(size: 10, weight: .semibold, design: .rounded))
-                        .foregroundStyle(.white.opacity(0.55))
+                        .foregroundStyle(isDark ? .white.opacity(0.55) : .caribbeanPlum)
                         .padding(.horizontal, 7)
                         .padding(.vertical, 3)
-                        .background(Capsule().fill(.white.opacity(0.08)))
+                        .background(Capsule().fill(isDark ? .white.opacity(0.08) : Color(hex: "#C494FC").opacity(0.14)))
 
                     Spacer()
 
@@ -354,7 +355,7 @@ struct CategoriesView: View {
                     } label: {
                         Image(systemName: fav ? "heart.fill" : "heart")
                             .font(.system(size: 15, weight: .medium))
-                            .foregroundStyle(fav ? .pink : .white.opacity(0.35))
+                            .foregroundStyle(fav ? .pink : (isDark ? .white.opacity(0.35) : .caribbeanMist))
                             .scaleEffect(fav ? 1.15 : 1.0)
                             .frame(width: 32, height: 32)
                             .contentShape(Circle())
@@ -365,13 +366,13 @@ struct CategoriesView: View {
                 // Category name
                 Text(item.name)
                     .font(isGridView ? .subheadline.bold() : .headline.bold())
-                    .foregroundStyle(.white)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
                     .lineLimit(isGridView ? 1 : 2)
 
                 // Description
                 Text(item.description)
                     .font(isGridView ? .caption : .subheadline)
-                    .foregroundStyle(.white.opacity(0.55))
+                    .foregroundStyle(isDark ? .white.opacity(0.55) : .caribbeanPlum)
                     .lineLimit(isGridView ? 2 : 3)
                     .frame(maxHeight: .infinity, alignment: .top)
 
@@ -401,10 +402,15 @@ struct CategoriesView: View {
             }
             .padding(isGridView ? 14 : 16)
             .frame(minHeight: isGridView ? 200 : 0)
-            .liquidGlassCard(
-                cornerRadius: 22,
-                accentColor: colors.first ?? .blue
+            .background(
+                GlassCardBackground(
+                    cornerRadius: 22,
+                    borderColor: isDark ? .white : Color(hex: "#C494FC"),
+                    borderOpacity: isDark ? 0.1 : 0.2,
+                    tintColor: colors.first ?? .blue
+                )
             )
+            .clipShape(RoundedRectangle(cornerRadius: 22))
         }
         .buttonStyle(LiquidCardButtonStyle(accentColor: colors.first ?? .white))
         .accessibilityLabel("\(item.name), \(item.difficulty.rawValue), \(Int(pct))% \(L.complete.lowercased())")
@@ -417,7 +423,7 @@ struct CategoriesView: View {
         ZStack {
             // Track
             Circle()
-                .stroke(.white.opacity(0.08), lineWidth: 3)
+                .stroke(isDark ? .white.opacity(0.08) : Color(hex: "#C494FC").opacity(0.15), lineWidth: 3)
 
             // Fill arc
             Circle()
@@ -438,7 +444,7 @@ struct CategoriesView: View {
             } else {
                 Text("\(Int(pct))")
                     .font(.system(size: 9, weight: .bold, design: .rounded))
-                    .foregroundStyle(.white.opacity(0.7))
+                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
             }
         }
         .frame(width: 34, height: 34)
@@ -456,14 +462,14 @@ struct CategoriesView: View {
             } else {
                 Text("\(mastered)/\(total)")
                     .font(.caption2)
-                    .foregroundStyle(.white.opacity(0.4))
+                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
                 Text("·")
-                    .foregroundStyle(.white.opacity(0.25))
+                    .foregroundStyle(isDark ? .white.opacity(0.25) : .caribbeanMist)
                 Text("\(Int(pct))%")
                     .font(.caption2.bold())
             }
         }
-        .foregroundStyle(completed ? .green : .white.opacity(0.6))
+        .foregroundStyle(completed ? .green : (isDark ? .white.opacity(0.6) : .caribbeanPlum))
     }
 
     private func difficultyBadge(_ difficulty: Difficulty) -> some View {
@@ -519,12 +525,12 @@ struct CategoriesView: View {
             VStack(spacing: 8) {
                 Text(frozenEmptyTitle)
                     .font(.title3.bold())
-                    .foregroundStyle(.white.opacity(0.75))
+                    .foregroundStyle(isDark ? .white.opacity(0.75) : .caribbeanInk)
                     .contentTransition(.interpolate)
 
                 Text(frozenEmptySubtitle)
                     .font(.subheadline)
-                    .foregroundStyle(.white.opacity(0.4))
+                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanPlum)
                     .multilineTextAlignment(.center)
                     .frame(maxWidth: 260)
                     .contentTransition(.interpolate)

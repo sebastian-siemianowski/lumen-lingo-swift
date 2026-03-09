@@ -83,10 +83,10 @@ struct SoundSettingsView: View {
             VStack(alignment: .leading, spacing: 2) {
                 Text(L.masterSound)
                     .font(.system(size: 17, weight: .semibold))
-                    .foregroundStyle(isDark ? .white : .primary)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
                 Text(profile?.soundEnabled == true ? L.allSoundsEnabled : L.allSoundsMuted)
                     .font(.system(size: 13))
-                    .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
             }
 
             Spacer()
@@ -144,10 +144,10 @@ struct SoundSettingsView: View {
                 VStack(alignment: .leading, spacing: 2) {
                     Text(L.allGames)
                         .font(.system(size: 15, weight: .semibold))
-                        .foregroundStyle(isDark ? .white : .primary)
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
                     Text(L.toggleAllGameSounds)
                         .font(.system(size: 12))
-                        .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                        .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
                 }
 
                 Spacer()
@@ -235,7 +235,7 @@ struct SoundSettingsView: View {
 
             Text(title)
                 .font(.system(size: 14, weight: .medium))
-                .foregroundStyle(isDark ? .white.opacity(isOn ? 0.9 : 0.4) : (isOn ? .primary : .secondary))
+                .foregroundStyle(isDark ? .white.opacity(isOn ? 0.9 : 0.4) : (isOn ? .caribbeanInk : .caribbeanMist))
 
             Spacer()
 
@@ -264,10 +264,10 @@ struct SoundSettingsView: View {
             VStack(alignment: .leading, spacing: 2) {
                 Text(title)
                     .font(.system(size: 15, weight: .medium))
-                    .foregroundStyle(isDark ? .white.opacity(isOn ? 1.0 : 0.5) : (isOn ? .primary : .secondary))
+                    .foregroundStyle(isDark ? .white.opacity(isOn ? 1.0 : 0.5) : (isOn ? .caribbeanInk : .caribbeanMist))
                 Text(subtitle)
                     .font(.system(size: 12))
-                    .foregroundStyle(isDark ? .white.opacity(0.4) : .secondary)
+                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
             }
 
             Spacer()

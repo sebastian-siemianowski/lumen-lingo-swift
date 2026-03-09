@@ -71,11 +71,11 @@ struct JourneyView: View {
 
             Text(L.yourLearningJourney)
                 .font(.title2.bold())
-                .foregroundStyle(isDark ? .white : Color(red: 30/255, green: 25/255, blue: 60/255))
+                .foregroundStyle(isDark ? .white : .caribbeanInk)
 
             Text(L.trackYourProgress)
                 .font(.subheadline)
-                .foregroundStyle(isDark ? .white.opacity(0.6) : .secondary)
+                .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
                 .multilineTextAlignment(.center)
         }
         .padding(.top, 10)
@@ -91,7 +91,7 @@ struct JourneyView: View {
                         .foregroundStyle(Color(hex: "#667eea"))
                     Text(L.milestones)
                         .font(.headline)
-                        .foregroundStyle(isDark ? .white : .primary)
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
                 }
                 .padding(.bottom, 16)
 
@@ -148,11 +148,11 @@ struct JourneyView: View {
             VStack(alignment: .leading, spacing: 2) {
                 Text(milestone.title)
                     .font(.subheadline.bold())
-                    .foregroundStyle(isDark ? .white.opacity(isUnlocked ? 1 : 0.4) : (isUnlocked ? .primary : .secondary))
+                    .foregroundStyle(isDark ? .white.opacity(isUnlocked ? 1 : 0.4) : (isUnlocked ? .caribbeanInk : .caribbeanMist))
 
                 Text("\(milestone.xpRequired) \(L.xpRequired)")
                     .font(.caption)
-                    .foregroundStyle(isDark ? .white.opacity(0.4) : .secondary)
+                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
             }
 
             Spacer()
@@ -170,7 +170,7 @@ struct JourneyView: View {
         VStack(spacing: 14) {
             Text(L.overview)
                 .font(.headline)
-                .foregroundStyle(isDark ? .white : .primary)
+                .foregroundStyle(isDark ? .white : .caribbeanInk)
                 .frame(maxWidth: .infinity, alignment: .leading)
 
             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 12) {
@@ -193,11 +193,11 @@ struct JourneyView: View {
 
             Text(value)
                 .font(.title3.bold())
-                .foregroundStyle(isDark ? .white : .primary)
+                .foregroundStyle(isDark ? .white : .caribbeanInk)
 
             Text(title)
                 .font(.caption)
-                .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
         }
         .frame(maxWidth: .infinity)
         .padding(12)
@@ -217,7 +217,7 @@ struct JourneyView: View {
         VStack(spacing: 14) {
             Text(L.gamePerformance)
                 .font(.headline)
-                .foregroundStyle(isDark ? .white : .primary)
+                .foregroundStyle(isDark ? .white : .caribbeanInk)
                 .frame(maxWidth: .infinity, alignment: .leading)
 
             ForEach(GameType.allCases, id: \.self) { type in
@@ -259,7 +259,7 @@ struct JourneyView: View {
             VStack(alignment: .leading, spacing: 4) {
                 Text(type.displayName)
                     .font(.subheadline.bold())
-                    .foregroundStyle(isDark ? .white : .primary)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
 
                 HStack(spacing: 8) {
                     Text("\(records.count) \(L.sessions.lowercased())")
@@ -269,7 +269,7 @@ struct JourneyView: View {
                     Text("\(Int(accuracy))% \(L.accuracy.lowercased())")
                 }
                 .font(.caption)
-                .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
             }
 
             Spacer()
@@ -295,7 +295,7 @@ struct JourneyView: View {
                     .symbolEffect(.pulse, options: .repeating.speed(0.3))
                 Text(L.currentStreak)
                     .font(.headline)
-                    .foregroundStyle(isDark ? .white : .primary)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
 
@@ -311,13 +311,13 @@ struct JourneyView: View {
                     )
                 Text(L.days)
                     .font(.title3)
-                    .foregroundStyle(isDark ? .white.opacity(0.6) : .secondary)
+                    .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
                     .padding(.top, 16)
             }
 
             Text(L.keepLearningEveryDay)
                 .font(.caption)
-                .foregroundStyle(isDark ? .white.opacity(0.4) : .secondary)
+                .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
                 .multilineTextAlignment(.center)
         }
         .padding(18)
@@ -330,17 +330,17 @@ struct JourneyView: View {
         VStack(spacing: 12) {
             Image(systemName: "quote.opening")
                 .font(.title2)
-                .foregroundStyle(isDark ? .white.opacity(0.3) : .secondary)
+                .foregroundStyle(isDark ? .white.opacity(0.3) : .caribbeanMist)
 
             Text(randomQuote.text)
                 .font(.subheadline)
-                .foregroundStyle(isDark ? .white.opacity(0.8) : .primary)
+                .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanInk)
                 .italic()
                 .multilineTextAlignment(.center)
 
             Text("— \(randomQuote.author)")
                 .font(.caption)
-                .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
         }
         .padding(20)
         .background(GlassCardBackground())

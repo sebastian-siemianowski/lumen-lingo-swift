@@ -313,15 +313,42 @@ struct GlassCardBackground: View {
     var borderOpacity: Double? = nil
     var tintColor: Color? = nil
 
+    private var isDark: Bool { colorScheme == .dark }
+
+    // Caribbean warm tint for light mode panels
+    private let caribbeanWarm = Color(red: 140/255, green: 80/255, blue: 180/255) // warm purple
+
     var body: some View {
         RoundedRectangle(cornerRadius: cornerRadius)
             .fill(.ultraThinMaterial)
+            .opacity(isDark ? 1.0 : 0.55)
             .overlay(
-                // Frosted glass inner highlight
+                // Light mode: warm Caribbean tint to reduce harshness
+                Group {
+                    if !isDark {
+                        RoundedRectangle(cornerRadius: cornerRadius)
+                            .fill(
+                                LinearGradient(
+                                    colors: [
+                                        Color(hex: "#C494FC").opacity(0.18), // lavender
+                                        Color(hex: "#F472B6").opacity(0.12), // pink
+                                        Color(hex: "#FB923C").opacity(0.10)  // warm orange
+                                    ],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                )
+                            )
+                    }
+                }
+            )
+            .overlay(
+                // Frosted glass inner highlight — subtler in light mode
                 RoundedRectangle(cornerRadius: cornerRadius)
                     .fill(
                         LinearGradient(
-                            colors: [.white.opacity(0.12), .clear, .white.opacity(0.04)],
+                            colors: isDark
+                                ? [.white.opacity(0.12), .clear, .white.opacity(0.04)]
+                                : [.white.opacity(0.25), .clear, .white.opacity(0.06)],
                             startPoint: .top,
                             endPoint: .bottom
                         )
@@ -332,20 +359,22 @@ struct GlassCardBackground: View {
                 Group {
                     if let tintColor {
                         RoundedRectangle(cornerRadius: cornerRadius)
-                            .fill(tintColor.opacity(0.06))
+                            .fill(tintColor.opacity(isDark ? 0.06 : 0.10))
                     }
                 }
             )
             .overlay(
-                // Border
+                // Border — warm-tinted in light mode
                 RoundedRectangle(cornerRadius: cornerRadius)
                     .strokeBorder(
-                        borderColor.opacity(borderOpacity ?? (colorScheme == .dark ? 0.1 : 0.18)),
-                        lineWidth: 1
+                        isDark
+                            ? borderColor.opacity(borderOpacity ?? 0.1)
+                            : Color(hex: "#C494FC").opacity(borderOpacity ?? 0.25),
+                        lineWidth: isDark ? 1 : 0.5
                     )
             )
-            .shadow(color: .black.opacity(0.08), radius: 20, y: 8)
-            .shadow(color: .black.opacity(0.04), radius: 6, y: 3)
+            .shadow(color: isDark ? .black.opacity(0.08) : Color(hex: "#C494FC").opacity(0.12), radius: 20, y: 8)
+            .shadow(color: isDark ? .black.opacity(0.04) : Color(hex: "#F472B6").opacity(0.06), radius: 6, y: 3)
     }
 }
 

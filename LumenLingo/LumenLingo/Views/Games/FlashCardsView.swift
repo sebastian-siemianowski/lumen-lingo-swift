@@ -88,6 +88,8 @@ struct FlashCardsView: View {
         return words[currentIndex]
     }
 
+    private var isDark: Bool { colorScheme == .dark }
+
     private var progress: Double {
         guard !words.isEmpty else { return 0 }
         return Double(currentIndex) / Double(words.count)
@@ -126,7 +128,7 @@ struct FlashCardsView: View {
                 .tint(.white)
             Text(L.loadingCards)
                 .font(.headline)
-                .foregroundStyle(.white.opacity(0.7))
+                .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
         }
     }
 
@@ -210,14 +212,14 @@ struct FlashCardsView: View {
                         Text(L.back)
                     }
                     .font(.subheadline)
-                    .foregroundStyle(.white.opacity(0.7))
+                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
                 }
 
                 Spacer()
 
                 Text(categoryName)
                     .font(.subheadline.bold())
-                    .foregroundStyle(.white)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
 
                 Spacer()
 
@@ -227,7 +229,7 @@ struct FlashCardsView: View {
                         .foregroundStyle(.yellow)
                     Text("\(displayedScore)")
                         .font(.subheadline.bold())
-                        .foregroundStyle(.white)
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
                         .contentTransition(.numericText())
                 }
                 .padding(.horizontal, 10)
@@ -256,7 +258,7 @@ struct FlashCardsView: View {
                             )
                         Text("\(streak)")
                             .font(.caption2.bold())
-                            .foregroundStyle(.white.opacity(0.8))
+                            .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanInk)
                     }
                     .padding(.horizontal, 8)
                     .padding(.vertical, 3)
@@ -271,7 +273,7 @@ struct FlashCardsView: View {
                 Spacer()
                 Text("\(currentIndex + 1)/\(words.count)")
                     .font(.caption)
-                    .foregroundStyle(.white.opacity(0.5))
+                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
             }
         }
         .padding(.top, 8)
@@ -284,7 +286,7 @@ struct FlashCardsView: View {
                 .foregroundStyle(color)
             Text(value)
                 .font(.caption2.bold())
-                .foregroundStyle(.white.opacity(0.8))
+                .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanInk)
         }
         .padding(.horizontal, 8)
         .padding(.vertical, 3)
@@ -405,17 +407,17 @@ struct FlashCardsView: View {
 
             Text(word.front)
                 .font(.system(size: dynamicFontSize(for: word.front), weight: .bold))
-                .foregroundStyle(.white)
-                .shadow(color: .black.opacity(0.6), radius: 4, x: 0, y: 2)
-                .shadow(color: .black.opacity(0.3), radius: 12, x: 0, y: 4)
+                .foregroundStyle(isDark ? .white : .caribbeanInk)
+                .shadow(color: isDark ? .black.opacity(0.6) : .clear, radius: 4, x: 0, y: 2)
+                .shadow(color: isDark ? .black.opacity(0.3) : .clear, radius: 12, x: 0, y: 4)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 32)
 
             if let example = word.exampleTranslation, !example.isEmpty {
                 Text(example)
                     .font(.subheadline.weight(.medium))
-                    .foregroundStyle(.white.opacity(0.70))
-                    .shadow(color: .black.opacity(0.5), radius: 3, x: 0, y: 1)
+                    .foregroundStyle(isDark ? .white.opacity(0.70) : .caribbeanPlum)
+                    .shadow(color: isDark ? .black.opacity(0.5) : .clear, radius: 3, x: 0, y: 1)
                     .italic()
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 32)
@@ -429,8 +431,8 @@ struct FlashCardsView: View {
                 Text(L.tapToReveal)
             }
             .font(.caption.weight(.medium))
-            .foregroundStyle(.white.opacity(0.55))
-            .shadow(color: .black.opacity(0.4), radius: 3, x: 0, y: 1)
+            .foregroundStyle(isDark ? .white.opacity(0.55) : .caribbeanMist)
+            .shadow(color: isDark ? .black.opacity(0.4) : .clear, radius: 3, x: 0, y: 1)
             .padding(.bottom, 28)
         }
         .onAppear { startFrontAnimations() }
@@ -444,9 +446,9 @@ struct FlashCardsView: View {
 
             Text(word.back)
                 .font(.system(size: dynamicFontSize(for: word.back), weight: .bold))
-                .foregroundStyle(.white)
-                .shadow(color: .black.opacity(0.6), radius: 4, x: 0, y: 2)
-                .shadow(color: .black.opacity(0.3), radius: 12, x: 0, y: 4)
+                .foregroundStyle(isDark ? .white : .caribbeanInk)
+                .shadow(color: isDark ? .black.opacity(0.6) : .clear, radius: 4, x: 0, y: 2)
+                .shadow(color: isDark ? .black.opacity(0.3) : .clear, radius: 12, x: 0, y: 4)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 32)
 
@@ -465,8 +467,8 @@ struct FlashCardsView: View {
             if let example = word.example, !example.isEmpty {
                 Text("\"\(example)\"")
                     .font(.subheadline.weight(.medium))
-                    .foregroundStyle(.white.opacity(0.80))
-                    .shadow(color: .black.opacity(0.5), radius: 3, x: 0, y: 1)
+                    .foregroundStyle(isDark ? .white.opacity(0.80) : .caribbeanPlum)
+                    .shadow(color: isDark ? .black.opacity(0.5) : .clear, radius: 3, x: 0, y: 1)
                     .italic()
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 32)
@@ -476,8 +478,8 @@ struct FlashCardsView: View {
             if let translation = word.exampleTranslation, !translation.isEmpty {
                 Text(translation)
                     .font(.caption.weight(.medium))
-                    .foregroundStyle(.white.opacity(0.55))
-                    .shadow(color: .black.opacity(0.4), radius: 3, x: 0, y: 1)
+                    .foregroundStyle(isDark ? .white.opacity(0.55) : .caribbeanMist)
+                    .shadow(color: isDark ? .black.opacity(0.4) : .clear, radius: 3, x: 0, y: 1)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 32)
                     .padding(.top, 6)
@@ -488,14 +490,14 @@ struct FlashCardsView: View {
             // Word pair footer pill
             HStack(spacing: 6) {
                 Text(word.front)
-                    .foregroundStyle(.white.opacity(0.65))
+                    .foregroundStyle(isDark ? .white.opacity(0.65) : .caribbeanPlum)
                 Image(systemName: "arrow.right")
-                    .foregroundStyle(.white.opacity(0.40))
+                    .foregroundStyle(isDark ? .white.opacity(0.40) : .caribbeanMist)
                 Text(word.back)
-                    .foregroundStyle(.white.opacity(0.90))
+                    .foregroundStyle(isDark ? .white.opacity(0.90) : .caribbeanInk)
             }
             .font(.caption.weight(.medium))
-            .shadow(color: .black.opacity(0.4), radius: 3, x: 0, y: 1)
+            .shadow(color: isDark ? .black.opacity(0.4) : .clear, radius: 3, x: 0, y: 1)
             .padding(.horizontal, 14)
             .padding(.vertical, 7)
             .background(Capsule().fill(.white.opacity(0.12)))
@@ -621,7 +623,7 @@ struct FlashCardsView: View {
 
                     Text(L.stillLearning)
                         .font(.subheadline.bold())
-                        .foregroundStyle(.white)
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
                 }
                 .padding(.horizontal, 20)
                 .padding(.vertical, 14)
@@ -653,7 +655,7 @@ struct FlashCardsView: View {
 
                     Text(L.gotIt)
                         .font(.subheadline.bold())
-                        .foregroundStyle(.white)
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
                 }
                 .padding(.horizontal, 20)
                 .padding(.vertical, 14)
@@ -689,13 +691,13 @@ struct FlashCardsView: View {
         VStack(spacing: 16) {
             Image(systemName: "tray")
                 .font(.system(size: 48))
-                .foregroundStyle(.white.opacity(0.4))
+                .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
             Text(L.noCardsAvailable)
                 .font(.headline)
-                .foregroundStyle(.white.opacity(0.7))
+                .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
             Button(L.goBack) { dismiss() }
                 .buttonStyle(.bordered)
-                .tint(.white)
+                .tint(isDark ? .white : .caribbeanInk)
         }
     }
 
@@ -1107,6 +1109,8 @@ struct GameCompleteView: View {
     @State private var displayedScore: Int = 0
     @State private var displayedAccuracy: Int = 0
 
+    private var isDark: Bool { colorScheme == .dark }
+
     private var accuracy: Double {
         guard totalQuestions > 0 else { return 0 }
         return Double(correctAnswers) / Double(totalQuestions) * 100
@@ -1204,17 +1208,15 @@ struct GameCompleteView: View {
                     Text(performanceTier.title(L))
                         .font(.system(size: 32, weight: .bold, design: .rounded))
                         .foregroundStyle(
-                            LinearGradient(
-                                colors: [.white, .white.opacity(0.85)],
-                                startPoint: .top,
-                                endPoint: .bottom
-                            )
+                            isDark
+                            ? LinearGradient(colors: [.white, .white.opacity(0.85)], startPoint: .top, endPoint: .bottom)
+                            : LinearGradient(colors: [.caribbeanInk, .caribbeanInk.opacity(0.85)], startPoint: .top, endPoint: .bottom)
                         )
-                        .shadow(color: .black.opacity(0.3), radius: 4, y: 2)
+                        .shadow(color: isDark ? .black.opacity(0.3) : .clear, radius: 4, y: 2)
 
                     Text(performanceTier.subtitle(L))
                         .font(.subheadline)
-                        .foregroundStyle(.white.opacity(0.55))
+                        .foregroundStyle(isDark ? .white.opacity(0.55) : .caribbeanPlum)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 40)
                 }
@@ -1226,13 +1228,13 @@ struct GameCompleteView: View {
                 VStack(spacing: 6) {
                     Text("\(displayedScore)")
                         .font(.system(size: 56, weight: .bold, design: .rounded))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
                         .contentTransition(.numericText())
                         .shadow(color: performanceTier.color.opacity(0.3), radius: 16)
 
                     Text(L.points)
                         .font(.caption.weight(.medium))
-                        .foregroundStyle(.white.opacity(0.4))
+                        .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
                         .textCase(.uppercase)
                         .tracking(2)
                 }
@@ -1342,7 +1344,7 @@ struct GameCompleteView: View {
                             Text(L.backToCategories)
                                 .font(.system(size: 15, weight: .medium))
                         }
-                        .foregroundStyle(.white.opacity(0.5))
+                        .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 16)
                     }
@@ -1364,12 +1366,12 @@ struct GameCompleteView: View {
         VStack(spacing: 6) {
             Text(value)
                 .font(.system(size: 22, weight: .bold, design: .rounded))
-                .foregroundStyle(.white)
+                .foregroundStyle(isDark ? .white : .caribbeanInk)
                 .contentTransition(.numericText())
 
             Text(label)
                 .font(.system(size: 11, weight: .medium))
-                .foregroundStyle(.white.opacity(0.4))
+                .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
                 .textCase(.uppercase)
                 .tracking(1)
         }

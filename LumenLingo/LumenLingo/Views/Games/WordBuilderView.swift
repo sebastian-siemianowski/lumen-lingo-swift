@@ -56,6 +56,8 @@ struct WordBuilderView: View {
         return words[currentIndex]
     }
 
+    private var isDark: Bool { colorScheme == .dark }
+
     private var progress: Double {
         guard !words.isEmpty else { return 0 }
         return Double(currentIndex) / Double(words.count)
@@ -99,10 +101,10 @@ struct WordBuilderView: View {
         VStack(spacing: 20) {
             ProgressView()
                 .scaleEffect(1.5)
-                .tint(.white)
+                .tint(isDark ? .white : .caribbeanInk)
             Text(L.loadingWords)
                 .font(.headline)
-                .foregroundStyle(.white.opacity(0.7))
+                .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
         }
     }
 
@@ -190,14 +192,14 @@ struct WordBuilderView: View {
                         Text(L.back)
                     }
                     .font(.subheadline)
-                    .foregroundStyle(.white.opacity(0.7))
+                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
                 }
 
                 Spacer()
 
                 Text(categoryName)
                     .font(.subheadline.bold())
-                    .foregroundStyle(.white)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
 
                 Spacer()
 
@@ -206,7 +208,7 @@ struct WordBuilderView: View {
                         .foregroundStyle(.yellow)
                     Text("\(score)")
                         .font(.subheadline.bold())
-                        .foregroundStyle(.white)
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
                 }
                 .padding(.horizontal, 10)
                 .padding(.vertical, 5)
@@ -228,7 +230,7 @@ struct WordBuilderView: View {
                 Spacer()
                 Text("\(currentIndex + 1)/\(words.count)")
                     .font(.caption)
-                    .foregroundStyle(.white.opacity(0.5))
+                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
             }
         }
         .padding(.horizontal, 20)
@@ -242,7 +244,7 @@ struct WordBuilderView: View {
                 .foregroundStyle(color)
             Text(value)
                 .font(.caption2.bold())
-                .foregroundStyle(.white.opacity(0.8))
+                .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanInk)
         }
         .padding(.horizontal, 8)
         .padding(.vertical, 3)
@@ -267,7 +269,7 @@ struct WordBuilderView: View {
 
             Text(L.buildTheWord)
                 .font(.caption.bold())
-                .foregroundStyle(.white.opacity(0.5))
+                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
                 .textCase(.uppercase)
                 .tracking(1.5)
 
@@ -383,7 +385,7 @@ struct WordBuilderView: View {
                 if let letter {
                     Text(String(letter.character).uppercased())
                         .font(.system(size: 22, weight: .bold, design: .rounded))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
                         .transition(.scale.combined(with: .opacity))
                 }
             }
@@ -409,7 +411,7 @@ struct WordBuilderView: View {
         return VStack(spacing: 8) {
             Text(L.availableLetters)
                 .font(.caption)
-                .foregroundStyle(.white.opacity(0.4))
+                .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
 
             LazyVGrid(columns: columns, spacing: 8) {
                 ForEach(scrambledLetters) { letter in
@@ -469,8 +471,8 @@ struct WordBuilderView: View {
 
                 Text(String(letter.character).uppercased())
                     .font(.system(size: 22, weight: .bold, design: .rounded))
-                    .foregroundStyle(.white)
-                    .shadow(color: .white.opacity(0.15), radius: 2)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
+                    .shadow(color: isDark ? .white.opacity(0.15) : .clear, radius: 2)
             }
             .frame(height: 50)
             .shadow(
@@ -506,7 +508,7 @@ struct WordBuilderView: View {
                     Text(L.undo)
                 }
                 .font(.subheadline.bold())
-                .foregroundStyle(.white.opacity(0.7))
+                .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
                 .padding(.horizontal, 16)
                 .padding(.vertical, 12)
                 .background(
@@ -532,7 +534,7 @@ struct WordBuilderView: View {
                     Text(L.clear)
                 }
                 .font(.subheadline.bold())
-                .foregroundStyle(.white.opacity(0.7))
+                .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
                 .padding(.horizontal, 16)
                 .padding(.vertical, 12)
                 .background(
@@ -606,13 +608,13 @@ struct WordBuilderView: View {
         VStack(spacing: 16) {
             Image(systemName: "tray")
                 .font(.system(size: 48))
-                .foregroundStyle(.white.opacity(0.4))
+                .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
             Text(L.noWordsAvailable)
                 .font(.headline)
-                .foregroundStyle(.white.opacity(0.7))
+                .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
             Button(L.goBack) { dismiss() }
                 .buttonStyle(.bordered)
-                .tint(.white)
+                .tint(isDark ? .white : .caribbeanInk)
         }
     }
 

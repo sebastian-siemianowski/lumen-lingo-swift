@@ -66,10 +66,10 @@ struct BreathingOrbsSettingsView: View {
             VStack(alignment: .leading, spacing: 2) {
                 Text(L.breathingOrbs)
                     .font(.system(size: 17, weight: .semibold))
-                    .foregroundStyle(isDark ? .white : .primary)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
                 Text(L.ambientBackgroundAnimation)
                     .font(.system(size: 13))
-                    .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
             }
 
             Spacer()
@@ -94,10 +94,10 @@ struct BreathingOrbsSettingsView: View {
             VStack(alignment: .leading, spacing: 2) {
                 Text(L.raveMode)
                     .font(.system(size: 15, weight: .medium))
-                    .foregroundStyle(isDark ? .white : .primary)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
                 Text(L.rapidColorCycling)
                     .font(.system(size: 12))
-                    .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
             }
 
             Spacer()
@@ -119,10 +119,10 @@ struct BreathingOrbsSettingsView: View {
             HStack(spacing: 6) {
                 Image(systemName: "lightbulb.fill")
                     .font(.system(size: 14))
-                    .foregroundStyle(isDark ? .white.opacity(0.7) : .secondary)
+                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanMist)
                 Text(L.colorScheme)
                     .font(.system(size: 14, weight: .semibold))
-                    .foregroundStyle(isDark ? .white : .primary)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
             }
 
             LazyVGrid(columns: [
@@ -211,7 +211,7 @@ struct BreathingOrbsSettingsView: View {
             Text(text)
                 .font(.system(size: 13))
                 .italic()
-                .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 10)

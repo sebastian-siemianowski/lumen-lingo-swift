@@ -63,10 +63,10 @@ struct SyncStatusView: View {
             VStack(alignment: .leading, spacing: 2) {
                 Text(L.cloudSync)
                     .font(.system(size: 17, weight: .semibold))
-                    .foregroundStyle(isDark ? .white : .primary)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
                 Text(L.backupRestore)
                     .font(.system(size: 13))
-                    .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
             }
 
             Spacer()
@@ -123,11 +123,11 @@ struct SyncStatusView: View {
         HStack(spacing: 8) {
             Image(systemName: "clock")
                 .font(.system(size: 14))
-                .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
 
             Text("\(L.lastSynced) \(formatLastSync(lastSyncDate))")
                 .font(.system(size: 13))
-                .foregroundStyle(isDark ? .white.opacity(0.6) : .secondary)
+                .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
 
             Spacer()
 
@@ -219,10 +219,10 @@ struct SyncStatusView: View {
         HStack(spacing: 8) {
             Image(systemName: "info.circle")
                 .font(.system(size: 13))
-                .foregroundStyle(isDark ? .white.opacity(0.35) : .secondary)
+                .foregroundStyle(isDark ? .white.opacity(0.35) : .caribbeanMist)
             Text(L.syncSecurityNote)
                 .font(.system(size: 12))
-                .foregroundStyle(isDark ? .white.opacity(0.4) : .secondary)
+                .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
     }

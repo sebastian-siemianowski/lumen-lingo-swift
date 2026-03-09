@@ -46,6 +46,8 @@ struct GrammarView: View {
         return questions[currentIndex]
     }
 
+    private var isDark: Bool { colorScheme == .dark }
+
     private var progress: Double {
         guard !questions.isEmpty else { return 0 }
         return Double(currentIndex) / Double(questions.count)
@@ -92,10 +94,10 @@ struct GrammarView: View {
         VStack(spacing: 20) {
             ProgressView()
                 .scaleEffect(1.5)
-                .tint(.white)
+                .tint(isDark ? .white : .caribbeanInk)
             Text(L.loadingQuestions)
                 .font(.headline)
-                .foregroundStyle(.white.opacity(0.7))
+                .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
         }
     }
 
@@ -136,14 +138,14 @@ struct GrammarView: View {
                         Text(L.back)
                     }
                     .font(.subheadline)
-                    .foregroundStyle(.white.opacity(0.7))
+                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
                 }
 
                 Spacer()
 
                 Text(categoryName)
                     .font(.subheadline.bold())
-                    .foregroundStyle(.white)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
 
                 Spacer()
 
@@ -152,7 +154,7 @@ struct GrammarView: View {
                         .foregroundStyle(.yellow)
                     Text("\(score)")
                         .font(.subheadline.bold())
-                        .foregroundStyle(.white)
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
                 }
                 .padding(.horizontal, 10)
                 .padding(.vertical, 5)
@@ -175,7 +177,7 @@ struct GrammarView: View {
                 Spacer()
                 Text("\(currentIndex + 1)/\(questions.count)")
                     .font(.caption)
-                    .foregroundStyle(.white.opacity(0.5))
+                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
             }
         }
     }
@@ -187,7 +189,7 @@ struct GrammarView: View {
                 .foregroundStyle(color)
             Text(value)
                 .font(.caption2.bold())
-                .foregroundStyle(.white.opacity(0.8))
+                .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanInk)
         }
         .padding(.horizontal, 8)
         .padding(.vertical, 3)
@@ -262,14 +264,14 @@ struct GrammarView: View {
             } else {
                 Text(question.question)
                     .font(.title3.bold())
-                    .foregroundStyle(.white)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
                     .multilineTextAlignment(.center)
             }
 
             if let translation = question.translation, !translation.isEmpty {
                 Text(translation)
                     .font(.subheadline)
-                    .foregroundStyle(.white.opacity(0.55))
+                    .foregroundStyle(isDark ? .white.opacity(0.55) : .caribbeanPlum)
                     .italic()
             }
         }
@@ -316,7 +318,7 @@ struct GrammarView: View {
                 let (i, segment) = pair
                 var built = result + Text(segment)
                     .font(.title3.bold())
-                    .foregroundColor(.white)
+                    .foregroundColor(isDark ? .white : .caribbeanInk)
                 if i < answerParts.count {
                     built = built + Text(answerParts[i])
                         .font(.title3.bold())
@@ -331,7 +333,7 @@ struct GrammarView: View {
         } else {
             Text(text)
                 .font(.title3.bold())
-                .foregroundStyle(.white)
+                .foregroundStyle(isDark ? .white : .caribbeanInk)
                 .multilineTextAlignment(.center)
         }
     }
@@ -411,7 +413,7 @@ struct GrammarView: View {
                 // Letter badge
                 Text(label)
                     .font(.caption.bold())
-                    .foregroundStyle(.white.opacity(0.7))
+                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanMist)
                     .frame(width: 28, height: 28)
                     .background(
                         RoundedRectangle(cornerRadius: 8)
@@ -420,7 +422,7 @@ struct GrammarView: View {
 
                 Text(option)
                     .font(.subheadline.bold())
-                    .foregroundStyle(.white)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
                     .lineLimit(2)
                     .minimumScaleFactor(0.7)
 
@@ -487,7 +489,7 @@ struct GrammarView: View {
         DisclosureGroup(isExpanded: $showExplanation) {
             Text(text)
                 .font(.subheadline)
-                .foregroundStyle(.white.opacity(0.8))
+                .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanPlum)
                 .padding(.top, 8)
         } label: {
             HStack(spacing: 8) {
@@ -495,10 +497,10 @@ struct GrammarView: View {
                     .foregroundStyle(.yellow)
                 Text(L.grammarTip)
                     .font(.subheadline.bold())
-                    .foregroundStyle(.white)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
             }
         }
-        .tint(.white.opacity(0.6))
+        .tint(isDark ? .white.opacity(0.6) : .caribbeanMist)
         .padding(14)
         .background(
             RoundedRectangle(cornerRadius: 16)
@@ -559,13 +561,13 @@ struct GrammarView: View {
         VStack(spacing: 16) {
             Image(systemName: "tray")
                 .font(.system(size: 48))
-                .foregroundStyle(.white.opacity(0.4))
+                .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
             Text(L.noQuestionsAvailable)
                 .font(.headline)
-                .foregroundStyle(.white.opacity(0.7))
+                .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
             Button(L.goBack) { dismiss() }
                 .buttonStyle(.bordered)
-                .tint(.white)
+                .tint(isDark ? .white : .caribbeanInk)
         }
     }
 

@@ -191,6 +191,7 @@ struct LanguageSelectionView: View {
     @State private var searchText = ""
 
     private var currentPref: LanguagePreference? { languagePrefs.first }
+    private var isDark: Bool { colorScheme == .dark }
 
     /// Only show languages that appear as a source in at least one built-in pair.
     private var availableSources: [SupportedLanguage] {
@@ -233,11 +234,21 @@ struct LanguageSelectionView: View {
         NavigationStack {
             ZStack {
                 // Background
-                LinearGradient(
-                    colors: [Color(hex: "#0a0a1a"), Color(hex: "#0d1530"), Color(hex: "#0a0a1a")],
-                    startPoint: .top,
-                    endPoint: .bottom
-                )
+                Group {
+                    if isDark {
+                        LinearGradient(
+                            colors: [Color(hex: "#0a0a1a"), Color(hex: "#0d1530"), Color(hex: "#0a0a1a")],
+                            startPoint: .top,
+                            endPoint: .bottom
+                        )
+                    } else {
+                        LinearGradient(
+                            colors: [Color(hex: "#C494FC"), Color(hex: "#F472B6"), Color(hex: "#FB923C")],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    }
+                }
                 .ignoresSafeArea()
 
                 ScrollView {
@@ -256,11 +267,11 @@ struct LanguageSelectionView: View {
             }
             .navigationTitle(L.languages)
             .navigationBarTitleDisplayMode(.inline)
-            .toolbarColorScheme(.dark, for: .navigationBar)
+            .toolbarColorScheme(isDark ? .dark : .light, for: .navigationBar)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button(L.cancel) { dismiss() }
-                        .foregroundStyle(.white.opacity(0.7))
+                        .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
                 }
             }
             .searchable(text: $searchText, prompt: L.searchLanguages)
@@ -283,10 +294,10 @@ struct LanguageSelectionView: View {
                 )
             Text(L.chooseYourLanguages)
                 .font(.title3.bold())
-                .foregroundStyle(.white)
+                .foregroundStyle(isDark ? .white : .caribbeanInk)
             Text(L.selectWhatYouKnow)
                 .font(.subheadline)
-                .foregroundStyle(.white.opacity(0.5))
+                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
         }
         .padding(.top, 8)
     }
@@ -297,7 +308,7 @@ struct LanguageSelectionView: View {
         VStack(alignment: .leading, spacing: 12) {
             Label(L.iSpeak, systemImage: "person.wave.2.fill")
                 .font(.headline)
-                .foregroundStyle(.white)
+                .foregroundStyle(isDark ? .white : .caribbeanInk)
 
             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
                 ForEach(availableSources, id: \.self) { lang in
@@ -338,12 +349,12 @@ struct LanguageSelectionView: View {
         VStack(alignment: .leading, spacing: 12) {
             Label(L.imLearning, systemImage: "book.fill")
                 .font(.headline)
-                .foregroundStyle(.white)
+                .foregroundStyle(isDark ? .white : .caribbeanInk)
 
             if filteredTargets.isEmpty {
                 Text(L.noLanguagesAvailable)
                     .font(.subheadline)
-                    .foregroundStyle(.white.opacity(0.4))
+                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
                     .frame(maxWidth: .infinity, alignment: .center)
                     .padding(20)
             } else {
@@ -372,10 +383,10 @@ struct LanguageSelectionView: View {
                 VStack(alignment: .leading, spacing: 2) {
                     Text(L.betaLanguagePairs)
                         .font(.subheadline.bold())
-                        .foregroundStyle(.white)
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
                     Text(L.showExperimentalPairs)
                         .font(.caption2)
-                        .foregroundStyle(.white.opacity(0.4))
+                        .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
                 }
             }
         }
@@ -427,7 +438,7 @@ struct LanguageSelectionView: View {
                 CountryFlagView(countryCode: lang.countryCode, size: 18)
                 Text(label)
                     .font(.subheadline.bold())
-                    .foregroundStyle(isSelected ? .white : .white.opacity(0.7))
+                    .foregroundStyle(isSelected ? .white : (colorScheme == .dark ? .white.opacity(0.7) : .caribbeanInk))
                     .lineLimit(1)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
