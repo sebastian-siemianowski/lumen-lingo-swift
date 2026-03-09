@@ -461,7 +461,7 @@ struct GrammarView: View {
             )
             .animation(.spring(response: 0.3), value: isAnswered)
         }
-        .buttonStyle(ScaleButtonStyle())
+        .buttonStyle(LumenPressStyle(weight: .medium, accentColor: Color(hex: "#a78bfa")))
         .disabled(isAnswered)
     }
 
@@ -538,7 +538,7 @@ struct GrammarView: View {
             )
             .shadow(color: Color(hex: "#a855f7").opacity(0.4), radius: 15)
         }
-        .buttonStyle(ScaleButtonStyle())
+        .buttonStyle(LumenCTAPressStyle(glowColor: Color(hex: "#a855f7")))
         .frame(maxWidth: .infinity, alignment: selectedAnswer == currentQuestion?.correctAnswer ? .trailing : .center)
     }
 

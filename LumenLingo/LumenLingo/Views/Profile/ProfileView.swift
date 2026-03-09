@@ -243,7 +243,7 @@ struct ProfileView: View {
                             }
                         }
                     }
-                    .buttonStyle(.plain)
+                    .buttonStyle(LumenPressStyle(weight: .soft))
                 }
             }
             .padding(4)
@@ -365,7 +365,7 @@ struct ProfileView: View {
                             }
                         }
                     }
-                    .buttonStyle(.plain)
+                    .buttonStyle(LumenPressStyle(weight: .soft))
                 }
             }
             .padding(3)
@@ -488,7 +488,7 @@ struct ProfileView: View {
                         .font(.system(size: 12, weight: .bold))
                         .foregroundStyle(isDark ? .white.opacity(0.3) : .caribbeanMist)
                 }
-                .buttonStyle(.plain)
+                .buttonStyle(LumenPressStyle(weight: .soft))
             }
             .contentShape(Rectangle())
             .onTapGesture { showLanguageSelector = true }

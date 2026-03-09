@@ -155,7 +155,7 @@ struct LiquidGlassPagination: View {
                 }
             }
         }
-        .buttonStyle(.plain)
+        .buttonStyle(LumenPressStyle(weight: .soft))
     }
 
     // MARK: - Arrows
@@ -179,7 +179,7 @@ struct LiquidGlassPagination: View {
                 )
                 .contentShape(Circle())
         }
-        .buttonStyle(.plain)
+        .buttonStyle(LumenPressStyle(weight: .soft))
         .disabled(!isEnabled)
     }
 

@@ -106,7 +106,7 @@ struct DashboardView: View {
                     )
             )
         }
-        .buttonStyle(ScaleButtonStyle())
+        .buttonStyle(LumenPressStyle(weight: .soft))
         .frame(maxWidth: .infinity, alignment: .leading)
     }
 
@@ -424,7 +424,12 @@ struct DashboardView: View {
 
                     VStack(spacing: 8) {
                         ForEach(activities) { activity in
-                            activityRow(activity)
+                            Button {
+                                navigateToGame(for: activity)
+                            } label: {
+                                activityRow(activity)
+                            }
+                            .buttonStyle(LumenPressStyle(weight: .soft))
                         }
                     }
                     .padding(16)
@@ -540,6 +545,19 @@ struct DashboardView: View {
         case .flashCards: "rectangle.on.rectangle.angled"
         case .grammar: "text.book.closed.fill"
         case .wordBuilder: "textformat.abc"
+        }
+    }
+
+    private func navigateToGame(for record: GameProgressRecord) {
+        let type = record.gameTypeEnum ?? .flashCards
+        let categoryId = record.categoryKey
+        switch type {
+        case .flashCards:
+            navigationPath.append(AppRoute.flashcardsGame(categoryId: categoryId))
+        case .grammar:
+            navigationPath.append(AppRoute.grammarGame(categoryId: categoryId))
+        case .wordBuilder:
+            navigationPath.append(AppRoute.wordBuilderGame(categoryId: categoryId))
         }
     }
 }
@@ -785,12 +803,37 @@ struct DashboardGameCard: View {
     }
 }
 
-/// Button style for game cards — scale + spring on press.
+/// Button style for game cards — delegates to premium LumenCardPressStyle.
 struct GameCardButtonStyle: ButtonStyle {
+    var accentColor: Color = .white
+
     func makeBody(configuration: Configuration) -> some View {
+        let pressed = configuration.isPressed
+
         configuration.label
-            .scaleEffect(configuration.isPressed ? 0.97 : 1.0)
-            .animation(.spring(response: 0.25, dampingFraction: 0.6), value: configuration.isPressed)
+            .scaleEffect(pressed ? 0.965 : 1.0)
+            .brightness(pressed ? -0.04 : 0)
+            .shadow(
+                color: accentColor.opacity(pressed ? 0.25 : 0),
+                radius: pressed ? 14 : 0,
+                y: pressed ? 3 : 0
+            )
+            .shadow(
+                color: .black.opacity(pressed ? 0.08 : 0.15),
+                radius: pressed ? 4 : 12,
+                y: pressed ? 1 : 6
+            )
+            .saturation(pressed ? 1.06 : 1.0)
+            .animation(
+                .spring(response: 0.30, dampingFraction: 0.62, blendDuration: 0),
+                value: pressed
+            )
+            .onChange(of: pressed) { _, isDown in
+                if isDown {
+                    let g = UIImpactFeedbackGenerator(style: .soft)
+                    g.impactOccurred(intensity: 0.6)
+                }
+            }
     }
 }
 

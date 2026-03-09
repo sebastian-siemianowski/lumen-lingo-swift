@@ -331,7 +331,7 @@ struct FullscreenNebulaPreview: View {
                                     )
                             )
                     }
-                    .buttonStyle(.plain)
+                    .buttonStyle(LumenPressStyle(weight: .soft))
                     .disabled(!canGoLeft)
 
                     // Exit button
@@ -368,7 +368,7 @@ struct FullscreenNebulaPreview: View {
                                 .shadow(color: .black.opacity(0.4), radius: 20, y: 8)
                         )
                     }
-                    .buttonStyle(.plain)
+                    .buttonStyle(LumenPressStyle(weight: .medium, accentColor: .purple))
 
                     // Right chevron
                     Button {
@@ -389,7 +389,7 @@ struct FullscreenNebulaPreview: View {
                                     )
                             )
                     }
-                    .buttonStyle(.plain)
+                    .buttonStyle(LumenPressStyle(weight: .soft))
                     .disabled(!canGoRight)
                 }
                 .padding(.bottom, 50)

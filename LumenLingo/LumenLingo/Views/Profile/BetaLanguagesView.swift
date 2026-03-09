@@ -241,7 +241,7 @@ struct BetaLanguagesView: View {
                 .padding(.horizontal, 16)
                 .padding(.vertical, 14)
             }
-            .buttonStyle(.plain)
+            .buttonStyle(LumenPressStyle(weight: .soft))
 
             // Expanded content — height-clipped for smooth collapse
             VStack(spacing: 4) {

@@ -483,7 +483,7 @@ struct LanguageSelectionView: View {
             )
             .scaleEffect(isSelected ? 1.02 : 1.0)
         }
-        .buttonStyle(.plain)
+        .buttonStyle(LumenCardPressStyle(accentColor: isSelected ? .purple : .white))
     }
 
     // MARK: - Helpers

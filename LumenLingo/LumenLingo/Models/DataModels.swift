@@ -193,8 +193,17 @@ final class GameProgressRecord {
         set { createdDate = newValue }
     }
 
-    /// Alias for category name — maps to level (which stores categoryKey)
+    /// Human-friendly category name — transforms raw key (e.g. "greetings_basics" → "Greetings Basics")
     var categoryName: String {
+        level
+            .replacingOccurrences(of: "_", with: " ")
+            .split(separator: " ")
+            .map { $0.prefix(1).uppercased() + $0.dropFirst() }
+            .joined(separator: " ")
+    }
+
+    /// The raw category key stored in level, used for navigation
+    var categoryKey: String {
         level
     }
 

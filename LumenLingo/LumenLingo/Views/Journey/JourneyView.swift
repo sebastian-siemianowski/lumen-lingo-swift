@@ -22,6 +22,9 @@ struct JourneyView: View {
     @State private var currentQuote: WisdomQuote = WisdomQuote.allQuotes.randomElement() ?? WisdomQuote.allQuotes[0]
     @State private var shownQuoteIndices: Set<Int> = []
     @State private var quoteOpacity: Double = 1.0
+    @State private var quoteScale: CGFloat = 1.0
+    @State private var quoteGlowIntensity: CGFloat = 0.0
+    @State private var quoteIconRotation: Double = 0
 
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -356,24 +359,102 @@ struct JourneyView: View {
     // MARK: - Wisdom Quote
 
     private var quoteCard: some View {
-        VStack(spacing: 12) {
-            Image(systemName: "quote.opening")
-                .font(.title2)
-                .foregroundStyle(isDark ? .white.opacity(0.3) : .caribbeanMist)
+        VStack(spacing: 16) {
+            // Quote icon with rotation on tap
+            Image(systemName: "sparkles")
+                .font(.system(size: 22, weight: .medium))
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: isDark
+                            ? [Color(hex: "#e0c3fc"), Color(hex: "#fbc2eb")]
+                            : [Color(hex: "#8b5cf6"), Color(hex: "#d946ef")],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                )
+                .rotationEffect(.degrees(quoteIconRotation))
+                .shadow(color: Color(hex: "#c084fc").opacity(quoteGlowIntensity * 0.6), radius: 12)
 
+            // Quote text — warm luminous gradient
             Text(currentQuote.text)
-                .font(.subheadline)
-                .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanInk)
-                .italic()
+                .font(.system(size: 15, weight: .regular, design: .rounded))
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: isDark
+                            ? [Color(hex: "#e9d5ff"), Color(hex: "#fbcfe8"), Color(hex: "#bae6fd")]
+                            : [Color(hex: "#581c87"), Color(hex: "#9d174d"), Color(hex: "#1e40af")],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                )
                 .multilineTextAlignment(.center)
+                .lineSpacing(5)
+                .fixedSize(horizontal: false, vertical: true)
 
+            // Thin luminous divider
+            Capsule()
+                .fill(
+                    LinearGradient(
+                        colors: isDark
+                            ? [.clear, Color(hex: "#c084fc").opacity(0.4), Color(hex: "#f0abfc").opacity(0.3), .clear]
+                            : [.clear, Color(hex: "#a855f7").opacity(0.35), Color(hex: "#ec4899").opacity(0.25), .clear],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .frame(width: 60, height: 1.5)
+
+            // Author — refined gradient
             Text("— \(currentQuote.author)")
-                .font(.caption)
-                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
+                .font(.system(size: 13, weight: .semibold, design: .rounded))
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: isDark
+                            ? [Color(hex: "#c4b5fd"), Color(hex: "#f0abfc")]
+                            : [Color(hex: "#6d28d9"), Color(hex: "#a21caf")],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .tracking(1.0)
+
+            // Subtle hint
+            HStack(spacing: 4) {
+                Image(systemName: "hand.tap")
+                    .font(.system(size: 9))
+                Text("tap for wisdom")
+                    .font(.system(size: 9, weight: .medium, design: .rounded))
+                    .tracking(0.5)
+            }
+            .foregroundStyle(isDark ? .white.opacity(0.18) : .caribbeanMist.opacity(0.45))
+            .padding(.top, 4)
         }
         .opacity(quoteOpacity)
-        .padding(20)
-        .background(GlassCardBackground())
+        .scaleEffect(quoteScale)
+        .frame(maxWidth: .infinity)
+        .frame(height: 220)
+        .padding(.horizontal, 26)
+        .padding(.vertical, 26)
+        .background(
+            ZStack {
+                GlassCardBackground()
+
+                // Glow pulse on tap
+                RoundedRectangle(cornerRadius: 22)
+                    .fill(
+                        RadialGradient(
+                            colors: [
+                                Color(hex: "#c084fc").opacity(quoteGlowIntensity * 0.15),
+                                Color(hex: "#f0abfc").opacity(quoteGlowIntensity * 0.06),
+                                .clear
+                            ],
+                            center: .center,
+                            startRadius: 0,
+                            endRadius: 200
+                        )
+                    )
+            }
+        )
         .onTapGesture { cycleQuote() }
     }
 
@@ -389,7 +470,6 @@ struct JourneyView: View {
         // If all shown, reset the cycle
         if shownQuoteIndices.count >= allQuotes.count {
             shownQuoteIndices.removeAll()
-            // Keep current one marked so we don't immediately repeat it
             if let currentIdx = allQuotes.firstIndex(where: { $0.text == currentQuote.text }) {
                 shownQuoteIndices.insert(currentIdx)
             }
@@ -399,17 +479,31 @@ struct JourneyView: View {
         let available = allQuotes.indices.filter { !shownQuoteIndices.contains($0) }
         guard let nextIdx = available.randomElement() else { return }
 
-        // Animate out, swap, animate in
+        // Haptic — soft impact for that satisfying feel
+        HapticsService.light()
+
+        // Phase 1: Press in + glow burst + fade out
+        withAnimation(.spring(response: 0.18, dampingFraction: 0.6)) {
+            quoteScale = 0.94
+            quoteGlowIntensity = 1.0
+        }
         withAnimation(.easeOut(duration: 0.15)) {
             quoteOpacity = 0
+            quoteIconRotation += 180
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+
+        // Phase 2: Swap content + spring back in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.18) {
             currentQuote = allQuotes[nextIdx]
-            withAnimation(.easeIn(duration: 0.2)) {
+
+            withAnimation(.spring(response: 0.45, dampingFraction: 0.65)) {
                 quoteOpacity = 1
+                quoteScale = 1.0
+            }
+            withAnimation(.easeOut(duration: 0.6)) {
+                quoteGlowIntensity = 0
             }
         }
-        HapticsService.light()
     }
 
     private func gameTypeIcon(_ type: GameType) -> String {

@@ -142,7 +142,7 @@ struct GradientButton: View {
                     )
             )
         }
-        .buttonStyle(ScaleButtonStyle())
+        .buttonStyle(LumenCTAPressStyle())
     }
 }
 
@@ -152,6 +152,185 @@ struct ScaleButtonStyle: ButtonStyle {
         configuration.label
             .scaleEffect(configuration.isPressed ? 0.97 : 1.0)
             .animation(.spring(response: 0.2, dampingFraction: 0.7), value: configuration.isPressed)
+    }
+}
+
+// MARK: - Lumen Press Styles
+
+/// Apple-quality micro-expression button press with layered feedback:
+/// haptic pulse, depth scale, luminance shift, shadow recession, elastic spring release.
+/// Three tiers: `.soft` for list rows, `.medium` for standard buttons, `.prominent` for CTAs.
+struct LumenPressStyle: ButtonStyle {
+    enum Weight {
+        case soft       // List rows, secondary actions — whisper touch
+        case medium     // Standard buttons — confident tap
+        case prominent  // CTAs, primary actions — assertive press
+    }
+
+    var weight: Weight = .medium
+    var accentColor: Color = .white
+
+    // Per-weight tuning
+    private var scalePressed: CGFloat {
+        switch weight {
+        case .soft:       0.985
+        case .medium:     0.965
+        case .prominent:  0.945
+        }
+    }
+
+    private var brightnessShift: Double {
+        switch weight {
+        case .soft:       -0.015
+        case .medium:     -0.035
+        case .prominent:  -0.05
+        }
+    }
+
+    private var shadowRadius: CGFloat {
+        switch weight {
+        case .soft:       4
+        case .medium:     10
+        case .prominent:  16
+        }
+    }
+
+    private var spring: Animation {
+        switch weight {
+        case .soft:
+            .spring(response: 0.22, dampingFraction: 0.82, blendDuration: 0)
+        case .medium:
+            .spring(response: 0.28, dampingFraction: 0.68, blendDuration: 0)
+        case .prominent:
+            .spring(response: 0.32, dampingFraction: 0.58, blendDuration: 0)
+        }
+    }
+
+    private var hapticStyle: UIImpactFeedbackGenerator.FeedbackStyle {
+        switch weight {
+        case .soft:       .soft
+        case .medium:     .light
+        case .prominent:  .medium
+        }
+    }
+
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            // 1. Depth scale — simulate physical depression
+            .scaleEffect(configuration.isPressed ? scalePressed : 1.0)
+
+            // 2. Luminance shift — pressed surface absorbs light
+            .brightness(configuration.isPressed ? brightnessShift : 0)
+
+            // 3. Shadow recession — depth illusion, shadow shrinks when pressed "into" surface
+            .shadow(
+                color: accentColor.opacity(configuration.isPressed ? 0.20 : 0),
+                radius: configuration.isPressed ? shadowRadius : 0,
+                y: configuration.isPressed ? 2 : 0
+            )
+
+            // 4. Subtle saturation boost on press — colors feel richer during interaction
+            .saturation(configuration.isPressed ? 1.08 : 1.0)
+
+            // 5. Physics-accurate spring with overshoot on release
+            .animation(spring, value: configuration.isPressed)
+
+            // 6. Haptic punctuation — immediate tactile acknowledgment
+            .onChange(of: configuration.isPressed) { _, isPressed in
+                if isPressed {
+                    let generator = UIImpactFeedbackGenerator(style: hapticStyle)
+                    generator.impactOccurred()
+                }
+            }
+    }
+}
+
+/// Premium card press — multi-layered depth illusion for glass/card surfaces.
+/// Combines inward scale, inner glow bloom, shadow depth recession, and specular shift.
+struct LumenCardPressStyle: ButtonStyle {
+    var accentColor: Color = .white
+
+    func makeBody(configuration: Configuration) -> some View {
+        let pressed = configuration.isPressed
+
+        configuration.label
+            // Smooth inward scale — card depresses into surface
+            .scaleEffect(pressed ? 0.965 : 1.0)
+
+            // Brightness dims slightly — simulates shadow on pressed surface
+            .brightness(pressed ? -0.04 : 0)
+
+            // Inner accent glow blooms on press — like light refracting through pressed glass
+            .shadow(
+                color: accentColor.opacity(pressed ? 0.25 : 0),
+                radius: pressed ? 14 : 0,
+                y: pressed ? 3 : 0
+            )
+
+            // Outer depth shadow recedes — card moves closer to the surface
+            .shadow(
+                color: .black.opacity(pressed ? 0.08 : 0.15),
+                radius: pressed ? 4 : 12,
+                y: pressed ? 1 : 6
+            )
+
+            // Saturation micro-boost — colors feel alive during interaction
+            .saturation(pressed ? 1.06 : 1.0)
+
+            // Elastic spring with pleasant overshoot on release
+            .animation(
+                .spring(response: 0.30, dampingFraction: 0.62, blendDuration: 0),
+                value: pressed
+            )
+
+            // Soft haptic on touch-down
+            .onChange(of: pressed) { _, isDown in
+                if isDown {
+                    let g = UIImpactFeedbackGenerator(style: .soft)
+                    g.impactOccurred(intensity: 0.6)
+                }
+            }
+    }
+}
+
+/// CTA / Primary action press — bold, assertive feedback with glow pulse.
+/// Feels like pressing a lit button on premium hardware.
+struct LumenCTAPressStyle: ButtonStyle {
+    var glowColor: Color = Color(hex: "#667eea")
+
+    func makeBody(configuration: Configuration) -> some View {
+        let pressed = configuration.isPressed
+
+        configuration.label
+            // Deeper scale for assertive feel
+            .scaleEffect(pressed ? 0.94 : 1.0)
+
+            // Brightness dip — pressed into surface
+            .brightness(pressed ? -0.06 : 0)
+
+            // Glow bloom — accent light pulses outward on press
+            .shadow(
+                color: glowColor.opacity(pressed ? 0.45 : 0.15),
+                radius: pressed ? 20 : 8,
+                y: pressed ? 2 : 4
+            )
+
+            // Saturation punch on press
+            .saturation(pressed ? 1.12 : 1.0)
+
+            // Bouncy spring — playful, confident release
+            .animation(
+                .spring(response: 0.35, dampingFraction: 0.55, blendDuration: 0),
+                value: pressed
+            )
+
+            // Medium haptic — assertive acknowledgment
+            .onChange(of: pressed) { _, isDown in
+                if isDown {
+                    let g = UIImpactFeedbackGenerator(style: .medium)
+                    g.impactOccurred()
+                }
+            }
     }
 }
 
@@ -619,7 +798,7 @@ struct PremiumToggle: View {
             }
             .frame(width: 52, height: 30)
         }
-        .buttonStyle(.plain)
+        .buttonStyle(LumenPressStyle(weight: .soft))
     }
 }
 

@@ -150,7 +150,7 @@ struct SettingsSliderView: View {
             .shadow(color: isActive ? accentColor.opacity(isDark ? 0.30 : 0.15) : .clear, radius: 8)
             .shadow(color: isActive ? accentColor.opacity(0.15) : .clear, radius: 4, y: 2)
         }
-        .buttonStyle(.plain)
+        .buttonStyle(LumenPressStyle(weight: .soft, accentColor: accentColor))
         .disabled(disabled)
     }
 }

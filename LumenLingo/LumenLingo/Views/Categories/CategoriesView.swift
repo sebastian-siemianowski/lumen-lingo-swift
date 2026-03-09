@@ -361,7 +361,7 @@ struct CategoriesView: View {
                             .frame(width: 32, height: 32)
                             .contentShape(Circle())
                     }
-                    .buttonStyle(.plain)
+                    .buttonStyle(LumenPressStyle(weight: .soft, accentColor: .pink))
                 }
 
                 // Category name
@@ -622,7 +622,7 @@ struct CategoriesView: View {
                                 .overlay(Capsule().strokeBorder(paginationAccentColors[0].opacity(0.15), lineWidth: 0.5))
                         )
                 }
-                .buttonStyle(.plain)
+                .buttonStyle(LumenPressStyle(weight: .medium))
                 .transition(.opacity.combined(with: .scale(scale: 0.9)))
             }
         }

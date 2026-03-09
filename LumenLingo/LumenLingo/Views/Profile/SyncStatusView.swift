@@ -179,7 +179,7 @@ struct SyncStatusView: View {
                 )
             }
             .disabled(isSyncing)
-            .buttonStyle(.plain)
+            .buttonStyle(LumenPressStyle(weight: .medium, accentColor: .indigo))
 
             // Download
             Button {
@@ -209,7 +209,7 @@ struct SyncStatusView: View {
                 )
             }
             .disabled(isSyncing)
-            .buttonStyle(.plain)
+            .buttonStyle(LumenPressStyle(weight: .medium, accentColor: .teal))
         }
     }
 

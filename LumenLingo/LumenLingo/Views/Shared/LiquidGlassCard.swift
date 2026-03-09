@@ -134,20 +134,44 @@ struct LiquidProgressBar: View {
 
 // MARK: - Premium Card Press Style
 
-/// Button style with satisfying press feedback for premium cards.
+/// Premium card press — depth illusion with glow bloom, shadow recession, haptic pulse.
 struct LiquidCardButtonStyle: ButtonStyle {
     var accentColor: Color = .white
 
     func makeBody(configuration: Configuration) -> some View {
+        let pressed = configuration.isPressed
+
         configuration.label
-            .scaleEffect(configuration.isPressed ? 0.96 : 1.0)
-            .brightness(configuration.isPressed ? -0.03 : 0)
+            // Smooth inward depression
+            .scaleEffect(pressed ? 0.965 : 1.0)
+            // Surface darkens under pressure
+            .brightness(pressed ? -0.04 : 0)
+            // Inner accent glow blooms
             .shadow(
-                color: configuration.isPressed ? accentColor.opacity(0.15) : .clear,
-                radius: configuration.isPressed ? 12 : 0,
-                y: configuration.isPressed ? 4 : 0
+                color: accentColor.opacity(pressed ? 0.25 : 0),
+                radius: pressed ? 14 : 0,
+                y: pressed ? 3 : 0
             )
-            .animation(.spring(response: 0.25, dampingFraction: 0.65), value: configuration.isPressed)
+            // Outer shadow recedes — card presses into surface
+            .shadow(
+                color: .black.opacity(pressed ? 0.08 : 0.15),
+                radius: pressed ? 4 : 12,
+                y: pressed ? 1 : 6
+            )
+            // Micro saturation boost
+            .saturation(pressed ? 1.06 : 1.0)
+            // Elastic spring with overshoot
+            .animation(
+                .spring(response: 0.30, dampingFraction: 0.62, blendDuration: 0),
+                value: pressed
+            )
+            // Soft haptic on touch-down
+            .onChange(of: pressed) { _, isDown in
+                if isDown {
+                    let g = UIImpactFeedbackGenerator(style: .soft)
+                    g.impactOccurred(intensity: 0.6)
+                }
+            }
     }
 }
 

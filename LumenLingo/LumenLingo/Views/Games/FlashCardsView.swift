@@ -670,7 +670,7 @@ struct FlashCardsView: View {
                 )
                 .shadow(color: Color(hex: "#f43f5e").opacity(0.35), radius: 12, x: 0, y: 4)
             }
-            .buttonStyle(ScaleButtonStyle())
+            .buttonStyle(LumenPressStyle(weight: .medium, accentColor: Color(hex: "#f43f5e")))
 
             // Got It
             Button {
@@ -723,7 +723,7 @@ struct FlashCardsView: View {
                 )
                 .shadow(color: Color(hex: "#10b981").opacity(0.35), radius: 12, x: 0, y: 4)
             }
-            .buttonStyle(ScaleButtonStyle())
+            .buttonStyle(LumenPressStyle(weight: .medium, accentColor: Color(hex: "#10b981")))
         }
         .padding(.top, 20)
     }
@@ -1399,7 +1399,7 @@ struct GameCompleteView: View {
                         }
                         .shadow(color: Color(hex: "#667eea").opacity(0.2), radius: 20, y: 8)
                     }
-                    .buttonStyle(ScaleButtonStyle())
+                    .buttonStyle(LumenCTAPressStyle(glowColor: Color(hex: "#667eea")))
 
                     Button {
                         onDismiss()
@@ -1414,7 +1414,7 @@ struct GameCompleteView: View {
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 16)
                     }
-                    .buttonStyle(ScaleButtonStyle())
+                    .buttonStyle(LumenPressStyle(weight: .medium))
                 }
                 .padding(.horizontal, 28)
                 .opacity(showButtons ? 1 : 0)

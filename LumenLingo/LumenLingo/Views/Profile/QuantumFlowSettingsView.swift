@@ -267,7 +267,7 @@ struct FullscreenQuantumFlowPreview: View {
                             .frame(width: 44, height: 44)
                             .background(Circle().fill(.ultraThinMaterial).overlay(Circle().strokeBorder(.white.opacity(canGoLeft ? 0.2 : 0.08), lineWidth: 0.5)))
                     }
-                    .buttonStyle(.plain)
+                    .buttonStyle(LumenPressStyle(weight: .soft))
                     .disabled(!canGoLeft)
 
                     Button { onDismiss() } label: {
@@ -288,7 +288,7 @@ struct FullscreenQuantumFlowPreview: View {
                                 .shadow(color: .black.opacity(0.4), radius: 20, y: 8)
                         )
                     }
-                    .buttonStyle(.plain)
+                    .buttonStyle(LumenPressStyle(weight: .medium, accentColor: .cyan))
 
                     Button {
                         withAnimation(.easeInOut(duration: 0.3)) { if canGoRight { currentIndex += 1 } }
@@ -299,7 +299,7 @@ struct FullscreenQuantumFlowPreview: View {
                             .frame(width: 44, height: 44)
                             .background(Circle().fill(.ultraThinMaterial).overlay(Circle().strokeBorder(.white.opacity(canGoRight ? 0.2 : 0.08), lineWidth: 0.5)))
                     }
-                    .buttonStyle(.plain)
+                    .buttonStyle(LumenPressStyle(weight: .soft))
                     .disabled(!canGoRight)
                 }
                 .padding(.bottom, 50)

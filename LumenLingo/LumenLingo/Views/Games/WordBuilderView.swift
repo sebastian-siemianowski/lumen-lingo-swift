@@ -395,7 +395,7 @@ struct WordBuilderView: View {
                 radius: isActive ? 8 : 0
             )
         }
-        .buttonStyle(.plain)
+        .buttonStyle(LumenPressStyle(weight: .medium, accentColor: Color(hex: "#52bdff")))
         .disabled(letter == nil)
     }
 
@@ -480,7 +480,7 @@ struct WordBuilderView: View {
                 radius: isHinted ? 12 : 6
             )
         }
-        .buttonStyle(ScaleButtonStyle())
+        .buttonStyle(LumenPressStyle(weight: .medium, accentColor: Color(hex: "#fb923c")))
         .transition(.scale)
         .disabled(isChecking)
     }
@@ -521,7 +521,7 @@ struct WordBuilderView: View {
                 )
                 .clipShape(RoundedRectangle(cornerRadius: 16))
             }
-            .buttonStyle(ScaleButtonStyle())
+            .buttonStyle(LumenPressStyle(weight: .soft, accentColor: .cyan))
             .disabled(undoStack.isEmpty || isChecking)
             .opacity(undoStack.isEmpty ? 0.4 : 1.0)
 
@@ -547,7 +547,7 @@ struct WordBuilderView: View {
                 )
                 .clipShape(RoundedRectangle(cornerRadius: 16))
             }
-            .buttonStyle(ScaleButtonStyle())
+            .buttonStyle(LumenPressStyle(weight: .soft, accentColor: .red))
             .disabled(placedLetters.allSatisfy { $0 == nil })
 
             Spacer()
@@ -584,7 +584,7 @@ struct WordBuilderView: View {
                 )
                 .shadow(color: allSlotsFilled ? Color(hex: "#10b981").opacity(0.35) : .clear, radius: 12)
             }
-            .buttonStyle(ScaleButtonStyle())
+            .buttonStyle(LumenCTAPressStyle(glowColor: Color(hex: "#10b981")))
             .disabled(!allSlotsFilled || isChecking)
         }
     }

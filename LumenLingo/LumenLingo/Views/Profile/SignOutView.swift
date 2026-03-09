@@ -147,7 +147,7 @@ struct SignOutView: View {
         }
         .disabled(!isOnline || isLoggingOut)
         .opacity(isOnline ? 1.0 : 0.5)
-        .buttonStyle(ScaleButtonStyle())
+        .buttonStyle(LumenCTAPressStyle(glowColor: .red))
     }
 
     // MARK: - Confirmation
@@ -181,7 +181,7 @@ struct SignOutView: View {
                                 .fill(isDark ? .white.opacity(0.06) : .black.opacity(0.04))
                         )
                 }
-                .buttonStyle(.plain)
+                .buttonStyle(LumenPressStyle(weight: .medium))
 
                 Button {
                     executeSignOut()
@@ -196,7 +196,7 @@ struct SignOutView: View {
                                 .fill(.red)
                         )
                 }
-                .buttonStyle(.plain)
+                .buttonStyle(LumenPressStyle(weight: .prominent, accentColor: .red))
             }
         }
         .padding(16)
