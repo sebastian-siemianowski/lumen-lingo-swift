@@ -65,12 +65,23 @@ final class ContentLoader {
     // MARK: - Private
 
     private func loadFromBundle<T: Codable>(languagePair: String, fileName: String) -> [ContentCategory<T>] {
-        guard let url = Bundle.main.url(
-            forResource: fileName,
-            withExtension: "json",
-            subdirectory: "Content/\(languagePair)"
-        ) else {
-            print("⚠️ Content file not found: Content/\(languagePair)/\(fileName).json")
+        // Primary: flat file named <type>_<source>_<target>.json (e.g. flashcards_english_spanish.json)
+        let flatName = "\(fileName)_\(languagePair)"
+        let url: URL? =
+            Bundle.main.url(forResource: flatName, withExtension: "json")
+            // Fallback: folder-reference path (Content/<pair>/<type>.json)
+            ?? Bundle.main.url(
+                forResource: fileName,
+                withExtension: "json",
+                subdirectory: "Content/\(languagePair)"
+            )
+            // Fallback: Content.bundle produced by folder reference
+            ?? Bundle.main.url(forResource: "Content", withExtension: nil)
+                .flatMap { Bundle(url: $0) }?
+                .url(forResource: fileName, withExtension: "json", subdirectory: languagePair)
+
+        guard let url else {
+            print("⚠️ Content file not found: \(flatName).json")
             return []
         }
 
@@ -80,7 +91,7 @@ final class ContentLoader {
             let categories = try decoder.decode([ContentCategory<T>].self, from: data)
             return categories
         } catch {
-            print("⚠️ Failed to decode \(fileName).json for \(languagePair): \(error)")
+            print("⚠️ Failed to decode \(flatName).json: \(error)")
             return []
         }
     }

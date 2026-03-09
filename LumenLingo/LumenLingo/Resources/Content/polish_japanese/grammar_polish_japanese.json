@@ -1,0 +1,1232 @@
+[
+  {
+    "key": "particles",
+    "name": "Partykuły japońskie",
+    "description": "助詞",
+    "iconName": "sparkles",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_part1",
+        "question": "私___学生です。",
+        "translation": "(Ja jestem studentem)",
+        "options": [
+          "は",
+          "を",
+          "に",
+          "で"
+        ],
+        "correct": "は",
+        "explanation": "Witaj w fascynującym świecie japońskich partykuł. Partykuła は (wa) oznacza temat zdania. Polski używa przypadków, japoński używa partykuł. Watashi wa gakusei desu oznacza jestem studentem. Partykuła wa pojawia się po podmiocie, pokazując o czym mówisz. To jak sygnał jeśli chodzi o mnie. Wymawia się wa, choć pisze się ha. Ta partykuła jest jedną z najważniejszych w japońskim. Zapamiętaj: po temacie zdania zawsze wa. To twój przewodnik po strukturze japońskiego zdania."
+      },
+      {
+        "id": "pj_part2",
+        "question": "りんご___食べます。",
+        "translation": "(Jem jabłko)",
+        "options": [
+          "は",
+          "を",
+          "に",
+          "で"
+        ],
+        "correct": "を",
+        "explanation": "Partykuła を (wo lub o) oznacza dopełnienie bliższe. Polski używa biernika, japoński partykuły wo. Ringo wo tabemasu to jem jabłko. Wymawia się o, choć pisze się wo. Ta partykuła pokazuje co jest obiektem działania. W polskim jabłko ma formę biernika, w japońskim dodajesz wo po słowie. System jest logiczny: podmiot plus wa, obiekt plus wo, czasownik. Partykuła wo to twój klucz do wyrażania tego, na co skierowane jest działanie. Używaj jej po rzeczowniku, który jest celem czasownika."
+      },
+      {
+        "id": "pj_part3",
+        "question": "学校___行きます。",
+        "translation": "(Idę do szkoły)",
+        "options": [
+          "は",
+          "を",
+          "に",
+          "で"
+        ],
+        "correct": "に",
+        "explanation": "Partykuła に (ni) oznacza kierunek lub cel ruchu. Polski używa dopełniacza z do, japoński partykuły ni. Gakkou ni ikimasu to idę do szkoły. Partykuła ni pokazuje dokąd zmierzasz. To jak polska konstrukcja do plus dopełniacz, ale prościej. Po miejscu docelowym zawsze ni z czasownikami ruchu. Ta partykuła też wyraża czas (o trzeciej - san-ji ni) i położenie statycznych obiektów. System ni jest wszechstronny, ale logiczny. Gdy pytasz dokąd, odpowiedź używa ni. Gdy coś jest gdzieś (nie działanie), też ni."
+      },
+      {
+        "id": "pj_part4",
+        "question": "図書館___勉強します。",
+        "translation": "(Uczę się w bibliotece)",
+        "options": [
+          "は",
+          "を",
+          "に",
+          "で"
+        ],
+        "correct": "で",
+        "explanation": "Partykuła で (de) oznacza miejsce czynności. Polski używa miejscownika, japoński partykuły de. Toshokan de benkyou shimasu znaczy uczę się w bibliotece. Różnica między ni i de: ni dla położenia (gdzie coś jest), de dla miejsca działania (gdzie coś robisz). Biblioteka ni aru (biblioteka się znajduje) kontra biblioteka de benkyou (w bibliotece uczę się). Ta subtelność jest kluczowa. Partykuła de też oznacza środek (autobusem - basu de). System jest elegancki: miejsce plus de plus czasownik działania. Zapamiętaj: dynamiczne działania używają de."
+      },
+      {
+        "id": "pj_part5",
+        "question": "私の___です。",
+        "translation": "(To jest moja książka)",
+        "options": [
+          "本",
+          "を本",
+          "に本",
+          "で本"
+        ],
+        "correct": "本",
+        "explanation": "Partykuła の (no) łączy rzeczowniki, pokazując przynależność. Polski używa dopełniacza, japoński no. Watashi no hon to moja książka (dosłownie: ja no książka). System jest prosty: posiadacz plus no plus rzecz. Sensei no kuruma (samochód nauczyciela), Nihon no bunka (kultura Japonii). Ta partykuła też tworzy przymiotniki z rzeczowników. No jest jak polski dopełniacz, ale zawsze taki sam. Nie odmienia się przez przypadki czy rodzaj. Ta prostota jest piękna. Raz nauczysz się no, używasz go wszędzie do wyrażania posiadania i relacji."
+      },
+      {
+        "id": "pj_part6",
+        "question": "明日___東京に行きます。",
+        "translation": "(Jutro jadę do Tokio)",
+        "options": [
+          "は",
+          "を",
+          "に",
+          "で"
+        ],
+        "correct": "は",
+        "explanation": "Wyrażenia czasowe mogą brać wa dla kontrastu lub emfazy. Ashita wa Tokyo ni ikimasu podkreśla jutro (w przeciwieństwie do innych dni). Polski używa intonacji, japoński wa dla kontrastu. Możesz też powiedzieć bez wa: ashita Tokyo ni ikimasu. Z wa akcentujesz czas. Ta partykuła jest wszechstronna: pokazuje temat, kontrast, emfazę. Gdy chcesz podkreślić element, użyj wa. System wa kontra ga jest subtelny. Wa dla znanych tematów i kontrastów, ga dla nowych informacji. Zaczynając, używaj wa po podmiotach głównych."
+      },
+      {
+        "id": "pj_part7",
+        "question": "友達___会いました。",
+        "translation": "(Spotkałem się z przyjacielem)",
+        "options": [
+          "に",
+          "を",
+          "は",
+          "で"
+        ],
+        "correct": "に",
+        "explanation": "Czasownik au (spotkać się) używa partykuły ni dla osoby spotkanej. Polski używa biernika z z, japoński ni. Tomodachi ni aimashita to spotkałem przyjaciela. Niektóre czasowniki mają specyficzne wymagania partykuł. Au zawsze bierze ni, nie wo. To trzeba zapamiętać. Podobnie oshieru (uczyć kogoś) używa ni: gakusei ni oshiemasu (uczę studenta). System partykuł zależy od czasownika. Każdy czasownik ma swoje preferencje. Uczenie się czasowników z ich partykułami pomaga uniknąć błędów. Ni częściej niż myślisz."
+      },
+      {
+        "id": "pj_part8",
+        "question": "東京___大阪___行きます。",
+        "translation": "(Jadę z Tokio do Osaki)",
+        "options": [
+          "から / まで",
+          "に / を",
+          "で / に",
+          "は / が"
+        ],
+        "correct": "から / まで",
+        "explanation": "Partykuły から (kara, od) i まで (made, do) wyrażają punkty początkowy i końcowy. Polski z...do, japoński kara...made. Tokyo kara Osaka made ikimasu znaczy jadę z Tokio do Osaki. System jest symetryczny i jasny. Kara dla początku (czasowego lub przestrzennego), made dla końca. Ku-ji kara go-ji made (od dziewiątej do piątej). Ta para partykuł wyznacza granice. Możesz użyć tylko jednej: Tokyo kara (z Tokio) lub Osaka made (do Osaki). Elastyczność przy zachowaniu jasności. System jest logiczny i przewidywalny."
+      },
+      {
+        "id": "pj_part9",
+        "question": "ペン___書きます。",
+        "translation": "(Piszę długopisem)",
+        "options": [
+          "で",
+          "に",
+          "を",
+          "は"
+        ],
+        "correct": "で",
+        "explanation": "Partykuła de też oznacza narzędzie lub środek. Polski używa narzędnika, japoński de. Pen de kakimasu to piszę długopisem. Ta sama partykuła de dla miejsca działania i narzędzia. Kontekst wyjaśnia które. Basu de ikimasu (jadę autobusem - środek transportu), hashi de tabemasu (jem pałeczkami - narzędzie). System de jest wszechstronny: miejsce plus czynność, narzędzie, sposób. Ta wielofunkcyjność może mylić początkowo, ale staje się naturalna. Pytaj się czym lub jak - odpowiedź używa de. Polski narzędnik i japoński de mają podobną funkcję."
+      },
+      {
+        "id": "pj_part10",
+        "question": "駅___近いです。",
+        "translation": "(Jest blisko stacji)",
+        "options": [
+          "に",
+          "で",
+          "を",
+          "は"
+        ],
+        "correct": "に",
+        "explanation": "Przymiotniki odległości używają ni dla punktu odniesienia. Eki ni chikai to blisko stacji. Polski dopełniacz (blisko stacji), japoński ni. Ta partykuła wyraża punkt względem którego coś jest bliskie lub dalekie. Uchi ni tooi (daleko od domu). System ni dla relacji przestrzennych jest konsekwentny. Gdy opisujesz położenie względem czegoś, używasz ni. Ta sama partykuła dla celów ruchu i punktów odniesienia. Wielofunkcyjność ni czyni ją jedną z najważniejszych partykuł. Opanowanie ni otwiera drzwi do wyrażania relacji przestrzennych i czasowych."
+      },
+      {
+        "id": "pj_part11",
+        "question": "日本語___話せますか。",
+        "translation": "(Czy potrafisz mówić po japońsku?)",
+        "options": [
+          "が",
+          "を",
+          "は",
+          "に"
+        ],
+        "correct": "が",
+        "explanation": "Czasowniki potencjalne (móc coś zrobić) używają ga zamiast wo dla obiektu. Nihongo ga hanasemasu to potrafię mówić po japońsku. Polski biernik, japoński ga. Ta zmiana z wo na ga pokazuje że to umiejętność, nie działanie. Nihongo wo hanashimasu (mówię po japońsku - działanie) kontra Nihongo ga hanasemasu (potrafię mówić - umiejętność). Subtelna ale ważna różnica. Czasowniki potencjalne przekształcają konstrukcję. System jest logiczny: gdy wyrażasz zdolność, obiekt staje się tematem zdolności, więc ga. Ta zmiana partykuły sygnalizuje zmianę perspektywy."
+      },
+      {
+        "id": "pj_part12",
+        "question": "これ___ください。",
+        "translation": "(Poproszę to)",
+        "options": [
+          "を",
+          "が",
+          "に",
+          "で"
+        ],
+        "correct": "を",
+        "explanation": "Prośby używają wo z kudasai. Kore wo kudasai to poproszę to. Polski biernik, japoński wo. Ta konstrukcja jest standardowa dla próśb w sklepach i restauracjach. Mizu wo kudasai (poproszę wodę). System jest prosty i grzeczny. Kudasai pochodzi od kudasaru (dać - forma honoryfikatywna), więc to dosłownie proszę dać mi to. Partykuła wo pokazuje co prosisz dać. Ta forma jest bezpieczna i uprzejma we wszystkich sytuacjach. Opanuj wo kudasai jako pierwszy schemat próśb. Dodaj onegaishimasu dla jeszcze większej grzeczności."
+      },
+      {
+        "id": "pj_part13",
+        "question": "誰___来ますか。",
+        "translation": "(Kto przyjdzie?)",
+        "options": [
+          "が",
+          "を",
+          "は",
+          "に"
+        ],
+        "correct": "が",
+        "explanation": "Pytania kto i co używają ga, nie wa. Dare ga kimasu ka to kto przyjdzie. Polski mianownik w pytaniach, japoński ga. Partykuła wa w pytaniach tworzyłaby temat, ale pytasz o nieznaną osobę. Nowe informacje używają ga. Nani ga arimasu ka (co jest lub jest dostępne). System ga kontra wa: ga dla nowych informacji, szczególnie w pytaniach o nieznane. Wa dla znanych tematów. W pytaniach pytających o podmiot, zawsze ga. Ta reguła jest konsekwentna i pomaga zrozumieć różnicę między tymi partykułami. Ga wprowadza nowe, wa nawiązuje do znanego."
+      },
+      {
+        "id": "pj_part14",
+        "question": "雨___降っています。",
+        "translation": "(Pada deszcz)",
+        "options": [
+          "が",
+          "を",
+          "は",
+          "に"
+        ],
+        "correct": "が",
+        "explanation": "Zjawiska naturalne używają ga jako podmiotu. Ame ga futte imasu to pada deszcz. Polski mianownik, japoński ga. Pogoda i zjawiska naturalne preferują ga: yuki ga furimasu (pada śnieg), kaze ga fukimasu (wieje wiatr). Te zdania wprowadzają zjawisko jako nową informację lub opis stanu. Ga sygnalizuje że to główna treść zdania. System jest naturalny: gdy opisujesz co się dzieje (nie o czym mówisz), używasz ga. Różnica między wa (o deszczu mogę powiedzieć...) i ga (deszcz pada) jest subtelna ale realna. Ga dla bezpośredniego opisu zjawisk."
+      },
+      {
+        "id": "pj_part15",
+        "question": "田中さん___会社員です。",
+        "translation": "(Pan Tanaka jest pracownikiem biurowym)",
+        "options": [
+          "は",
+          "が",
+          "を",
+          "に"
+        ],
+        "correct": "は",
+        "explanation": "Dla podstawowych stwierdzeń tożsamości używaj wa. Tanaka-san wa kaishain desu to pan Tanaka jest pracownikiem. Polski mianownik, japoński wa. Ta konstrukcja (X wa Y desu) to podstawa japońskiego. Używasz jej do przedstawiania, definiowania, opisywania. Watashi wa gakusei desu (jestem studentem). System jest prosty i przewidywalny. Wa ustanawia temat, potem podajesz informację o tym temacie. Ta struktura jest fundamentalna. Opanuj X wa Y desu jako pierwszy wzorzec zdania. Większość opisów i definicji używa tej formy. Wa to twój przyjaciel przy przedstawianiu i opisywaniu."
+      }
+    ]
+  },
+  {
+    "key": "verb_forms",
+    "name": "Formy czasowników",
+    "description": "動詞の形",
+    "iconName": "clock",
+    "color": "#4ade80",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_verb1",
+        "question": "私は日本語を___。",
+        "translation": "(Ja uczę się japońskiego)",
+        "options": [
+          "勉強します",
+          "勉強する",
+          "勉強した",
+          "勉強して"
+        ],
+        "correct": "勉強します",
+        "explanation": "Forma grzecznościowa (masu-forma) to podstawa rozmów. Benkyou shimasu to uczę się. Polski odmienia przez osoby (uczę, uczysz, uczy), japoński używa tej samej formy dla wszystkich. Watashi mo, anata mo, kare mo benkyou shimasu - dla ja, ty, on ta sama forma. To ogromne uproszczenie. Forma masu jest grzeczna i bezpieczna we wszystkich sytuacjach. Dodaj masu do rdzenia czasownika. Taberu staje się tabemasu, nomu staje się nomimasu. Ta forma to twój fundament japońskiego. Używaj jej w rozmowach z obcymi, kolegami, w oficjalnych sytuacjach. Gdy nie wiesz jak być grzeczny, masu jest odpowiedzią."
+      },
+      {
+        "id": "pj_verb2",
+        "question": "昨日、映画を___。",
+        "translation": "(Wczoraj obejrzałem film)",
+        "options": [
+          "見ました",
+          "見ます",
+          "見る",
+          "見て"
+        ],
+        "correct": "見ました",
+        "explanation": "Przeszła forma grzecznościowa to mashita. Mimashita znaczy obejrzałem. Polski rozróżnia rodzaj (obejrzałem lub obejrzałam), japoński jedna forma. Mimashita dla wszystkich osób i rodzajów. System jest prosty: masu dla teraźniejszości, mashita dla przeszłości. Tabemasu (jem) staje się tabemashita (jadłem), nomimasu (piję) staje się nomimashita (piłem). Ta regularność jest piękna. Raz nauczysz się zmiany, stosujesz ją wszędzie. Przeszłość w japońskim jest prostsza niż w polskim z jego aspektami dokonanym i niedokonanym. Mashita pokrywa oba."
+      },
+      {
+        "id": "pj_verb3",
+        "question": "明日、学校に___。",
+        "translation": "(Jutro pójdę do szkoły)",
+        "options": [
+          "行きます",
+          "行きました",
+          "行く",
+          "行って"
+        ],
+        "correct": "行합니다",
+        "explanation": "Przyszłość w japońskim używa tej samej formy co teraźniejszość. Ikimasu znaczy idę lub pójdę. Kontekst (ashita - jutro) wyjaśnia czas. Polski ma przyszły czas (pójdę), japoński używa teraźniejszego z oznaczeniem czasu. To uproszczenie może mylić początkowo. Ashita ikimasu (jutro pójdę), kyou ikimasu (dziś idę), mainichi ikimasu (codziennie chodzę). Ta sama forma obsługuje teraźniejszość, przyszłość i nawyki. Wskaźniki czasowe są kluczowe. System jest prosty: jedna forma, kontekst określa kiedy. Japończycy nie potrzebują osobnego czasu przyszłego. Teraźniejszy wystarcza."
+      },
+      {
+        "id": "pj_verb4",
+        "question": "毎日、コーヒーを___。",
+        "translation": "(Codziennie piję kawę)",
+        "options": [
+          "飲みます",
+          "飲みました",
+          "飲む",
+          "飲んで"
+        ],
+        "correct": "飲みます",
+        "explanation": "Nawyki wyrażasz formą teraźniejszą. Nomimasu z mainichi (codziennie) znaczy piję codziennie. Polski też używa teraźniejszego dla nawyków. Japoński jest spójny: teraźniejszy dla teraz, przyszłości, nawyków. Mainichi benkyou shimasu (codziennie się uczę), yoku tabemasu (często jem). Forma pozostaje taka sama, częstotliwość się zmienia. Ta wszechstronność formy teraźniejszej czyni ją niezwykle użyteczną. Większość zdań w rozmowie używa masu. Opanuj tę formę, a możesz wyrażać większość czasów i aspektów. Dodaj słowa czasowe dla precyzji."
+      },
+      {
+        "id": "pj_verb5",
+        "question": "友達に___。",
+        "translation": "(Spotykam się z przyjacielem)",
+        "options": [
+          "会います",
+          "会いました",
+          "会う",
+          "会って"
+        ],
+        "correct": "会います",
+        "explanation": "Czasowniki typu I (godan) zmieniają ostatnią sylabę. Au (spotykać) staje się aimasu. Rdzeń to ai-, forma grzecznościowa aimasu. Polski ma trzy koniugacje, japoński dwa typy czasowników. Typ I (godan) ma pięć możliwych końcówek korespondujących z pięcioma samogłoskami. Au zmienia u na i przed masu: ai-masu. Ta regularność powtarza się. Kaku (pisać) staje się kakimasu, nomu (pić) staje się nomimasu. System jest logiczny. Ostatnia samogłoska zmienia się na i, dodajesz masu. Większość czasowników to typ I. Nauka tego wzoru otwiera dostęp do tysięcy czasowników."
+      },
+      {
+        "id": "pj_verb6",
+        "question": "テレビを___。",
+        "translation": "(Oglądam telewizję)",
+        "options": [
+          "見ます",
+          "見ました",
+          "見る",
+          "見て"
+        ],
+        "correct": "見ます",
+        "explanation": "Czasowniki typu II (ichidan) usuwają ostatnie ru i dodają masu. Miru (widzieć lub oglądać) staje się mimasu. Rdzeń to mi-, forma grzecznościowa mimasu. Polski nie ma tego podziału, japoński rozróżnia dwa typy. Typ II jest prostszy: zobacz ru na końcu, usuń, dodaj masu. Taberu (jeść) staje się tabemasu, neru (spać) staje się nemasu. Wyzwanie: nie wszystkie czasowniki na ru to typ II. Kaeru (wracać) to typ I: kaerimasu. Trzeba uczyć się który typ. Na szczęście typ II ma wskaźniki: czasowniki na eru lub iru często to typ II. System staje się intuicyjny z praktyką."
+      },
+      {
+        "id": "pj_verb7",
+        "question": "ご飯を___。",
+        "translation": "(Jem posiłek)",
+        "options": [
+          "食べます",
+          "食べました",
+          "食べる",
+          "食べて"
+        ],
+        "correct": "食べます",
+        "explanation": "Taberu (jeść) to klasyczny czasownik typu II. Tabemasu to forma grzecznościowa. Polski jem, jesz, je się odmienia, japoński tabemasu dla wszystkich. Ta konsekwencja jest wygodna. Nie musisz pamiętać sześciu form jak w polskim. Jedna forma obsługuje wszystkie osoby. Watashi wa tabemasu, anata mo tabemasu, kanojo mo tabemasu - wszyscy tabemasu. System partykuł i zaimków wyjaśnia kto. Czasownik pozostaje prosty. Ta elegancja japońskiego eliminuje złożoność odmiany osobowej. Uczysz się czasownika raz, używasz go wszędzie tak samo."
+      },
+      {
+        "id": "pj_verb8",
+        "question": "駅に___。",
+        "translation": "(Przybywam na stację)",
+        "options": [
+          "着きます",
+          "着きました",
+          "着く",
+          "着いて"
+        ],
+        "correct": "着きます",
+        "explanation": "Tsuku (przybywać) to czasownik typu I. Tsukimasu to forma grzeczna. Zmiana u na i plus masu. Polski przybywam ma zakończenie osobowe, japoński zmienia tylko formę grzeczności. System masu jest neutralny osobowo. Ta sama forma niezależnie kto przybywa. Densha ga tsukimasu (pociąg przybywa), watashi ga tsukimasu (przybywam). Podmiot zmienia się, czasownik nie. Ta prostota pozwala skupić się na znaczeniu, nie na formie. Gdy opanujesz tworzenie formy masu (zmiana końcówki, dodanie masu), możesz sprzęgać setki czasowników automatycznie."
+      },
+      {
+        "id": "pj_verb9",
+        "question": "本を___。",
+        "translation": "(Czytam książkę)",
+        "options": [
+          "読みます",
+          "読みました",
+          "読む",
+          "読んで"
+        ],
+        "correct": "読みます",
+        "explanation": "Yomu (czytać) to czasownik typu I. Yomimasu to forma grzeczna. U zmienia się na i: yomi-masu. Polski odmienia przez osoby (czytam, czytasz, czyta), japoński jedna forma. Ten wzór powtarza się we wszystkich czasownikach typu I. Kaku staje się kakimasu, hanasu staje się hanashimasu. Końcówka u zawsze zmienia się na i- przed masu. Ta regularność jest pomocna. Raz zrozumiesz wzór, możesz przewidzieć formę grzecznościową większości czasowników. System jest logiczny i przewidywalny. Japoński ceni spójność nad wyjątki."
+      },
+      {
+        "id": "pj_verb10",
+        "question": "音楽を___。",
+        "translation": "(Słucham muzyki)",
+        "options": [
+          "聞きます",
+          "聞きました",
+          "聞く",
+          "聞いて"
+        ],
+        "correct": "聞きます",
+        "explanation": "Kiku (słuchać) to czasownik typu I. Kikimasu to forma grzeczna. Zmiana standardowa: u do i. Polski słucham ma zakończenie pierwszej osoby, japoński kikimasu jest uniwersalny. Ta neutralność osobowa wymaga kontekstu lub zaimków dla jasności. Watashi wa kikimasu (ja słucham), kare wa kikimasu (on słucha). Czasownik identyczny, podmiot różny. System jest spójny z filozofią japońskiego: kontekst i partykuły niosą informację, czasownik pozostaje prosty. Ta dystrybucja funkcji między elementy zdania tworzy elegancki system. Każda część ma swoją rolę."
+      },
+      {
+        "id": "pj_verb11",
+        "question": "日本に___。",
+        "translation": "(Mieszkam w Japonii)",
+        "options": [
+          "住んでいます",
+          "住みます",
+          "住んだ",
+          "住んで"
+        ],
+        "correct": "住んでいます",
+        "explanation": "Dla stanu trwałego używasz formy te iru. Sunde imasu znaczy mieszkam (stan trwały). Polski używa teraźniejszego, japoński dodaje te iru dla podkreślenia trwałości. Sumimasu to pojedyncze działanie mieszkania, sunde imasu to stan bycia mieszkańcem. Ta subtelność jest ważna. Te iru wyraża stany rezultatywne i trwające. Shitte imasu (wiem - stan), motte imasu (mam - posiadanie). System te iru jest jak polski aspekt niedokonany z trwaniem. Raz nauczysz się formy te, możesz tworzyć konstrukcje trwające. To klucz do wyrażania stanów."
+      },
+      {
+        "id": "pj_verb12",
+        "question": "日本語を___。",
+        "translation": "(Studiuję japoński)",
+        "options": [
+          "勉強しています",
+          "勉強します",
+          "勉強した",
+          "勉強して"
+        ],
+        "correct": "勉強しています",
+        "explanation": "Dla działania trwającego używasz te iru. Benkyou shite imasu to studiuję (w sensie jestem w trakcie studiowania). Polski teraźniejszy ciągły, japoński te iru. Ta forma pokazuje że proces trwa. Ima benkyou shite imasu (teraz się uczę - właśnie w tym momencie). Różnica między benkyou shimasu (uczę się jako nawyk) i benkyou shite imasu (jestem w trakcie uczenia się). Ta dystynkcja między nawykiem a trwającą czynnością jest subtelna ale ważna. Te iru to twoje narzędzie do wyrażania tego co właśnie robisz lub trwających stanów. Analogia do polskiego jestem plus imiesłów."
+      },
+      {
+        "id": "pj_verb13",
+        "question": "もう___。",
+        "translation": "(Już zjadłem)",
+        "options": [
+          "食べました",
+          "食べます",
+          "食べる",
+          "食べている"
+        ],
+        "correct": "食べました",
+        "explanation": "Przeszła forma z mou (już) wyraża zakończenie. Mou tabemashita to już zjadłem. Polski aspekt dokonany (zjadłem), japoński przeszły z kontekstem. Mou sygnalizuje kompletność. Różnica między tabemashita (jadłem) i mou tabemashita (już zjadłem). Słówko mou dodaje sens zakończenia. Mada (jeszcze nie) tworzy przeciwieństwo: mada tabemasen (jeszcze nie jadłem). System jest logiczny: przeszły czas plus kontekstowe słowa dla niuansów. Japoński używa adverbiów tam gdzie polski używa aspektów. Prostsza koniugacja, bogatsza leksyka temporalna."
+      },
+      {
+        "id": "pj_verb14",
+        "question": "明日、___つもりです。",
+        "translation": "(Zamierzam iść jutro)",
+        "options": [
+          "行く",
+          "行きます",
+          "行った",
+          "行って"
+        ],
+        "correct": "行く",
+        "explanation": "Intencje wyrażasz formą słownikową plus tsumori desu. Iku tsumori desu to zamierzam iść. Polski przyszły lub zamierzam plus bezokolicznik, japoński forma słownikowa plus tsumori. Ta konstrukcja wyraża plany i intencje. Benkyou suru tsumori desu (zamierzam się uczyć). System jest regularny: czasownik w formie słownikowej plus tsumori desu. To jeden ze sposobów wyrażania przyszłości z naciskiem na zamiar. Inne: yotei desu (w planach), hazu desu (powinno). Każda konstrukcja ma niuanse. Tsumori to osobista intencja, podmiotowy plan."
+      },
+      {
+        "id": "pj_verb15",
+        "question": "泳げ___。",
+        "translation": "(Potrafię pływać)",
+        "options": [
+          "ます",
+          "ました",
+          "る",
+          "て"
+        ],
+        "correct": "ます",
+        "explanation": "Forma potencjalna wyraża zdolność. Oyogemasu to potrafię pływać. Polski osobna forma (potrafię), japoński zmienia czasownik. Oyogu (pływać) staje się oyogeru (móc pływać) staje się oyogemasu (grzeczna forma potencjalna). Ta transformacja dodaje znaczenie możliwości do czasownika. Każdy czasownik ma formę potencjalną. Typ I zmienia końcową samogłoskę na e: kaku staje się kakeru (móc pisać). Typ II dodaje rareru: taberu staje się taberareru (móc jeść). System jest regularny w ramach każdego typu. Formy potencjalne używają partykuły ga zamiast wo. Nihongo ga hanasemasu (potrafię mówić po japońsku). Ta zmiana gramatyczna sygnalizuje zmianę perspektywy na zdolność."
+      }
+    ]
+  },
+  {
+    "key": "adjectives",
+    "name": "Przymiotniki japońskie",
+    "description": "い-przymiotniki i な-przymiotniki",
+    "iconName": "star",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_adj1",
+        "question": "この本は___です。",
+        "translation": "(Ta książka jest interesująca)",
+        "options": [
+          "面白い",
+          "面白いな",
+          "面白く",
+          "面白かった"
+        ],
+        "correct": "面白い",
+        "explanation": "Witaj w świecie japońskich przymiotników. Japoński ma dwa typy przymiotników: い-przymiotniki i な-przymiotniki. 面白い (omoshiroi) to い-przymiotnik, który kończy się na い. Te przymiotniki odmieniają się jak czasowniki. Aby zrobić je grzeczne, po prostu dodajesz です. Książki mogą przenosić nas do nowych światów, a ciekawe książki sprawiają, że ta podróż jest jeszcze bardziej satysfakcjonująca."
+      },
+      {
+        "id": "pj_adj2",
+        "question": "彼女は___人です。",
+        "translation": "(Ona jest miłą osobą)",
+        "options": [
+          "親切な",
+          "親切",
+          "親切に",
+          "親切の"
+        ],
+        "correct": "親切な",
+        "explanation": "親切 (shinsetsu) to な-przymiotnik. Gdy bezpośrednio modyfikuje rzeczownik, な-przymiotniki potrzebują な między sobą a rzeczownikiem. Więc 親切な人 (miła osoba). Bez rzeczownika mówisz 親切です (jest miła). な działa jako łącznik. Życzliwość sprawia, że świat staje się cieplejszy, a japoński ma wiele słów na różne rodzaje uprzejmości."
+      },
+      {
+        "id": "pj_adj3",
+        "question": "今日は___です。",
+        "translation": "(Dzisiaj jest gorąco)",
+        "options": [
+          "暑い",
+          "暑いな",
+          "暑く",
+          "暑かった"
+        ],
+        "correct": "暑い",
+        "explanation": "暑い (atsui) to い-przymiotnik oznaczający gorący (o pogodzie). Wzór い-przymiotnik plus です tworzy grzeczną formę czasu teraźniejszego. Pogoda wpływa na nasze nastroje i aktywności, dlatego opisy pogody są częste w rozmowach. Zrozumienie słów dotyczących temperatury pomaga dyskutować o komforcie i planować odpowiednio."
+      },
+      {
+        "id": "pj_adj4",
+        "question": "この部屋は___です。",
+        "translation": "(Ten pokój jest cichy)",
+        "options": [
+          "静か",
+          "静かな",
+          "静かに",
+          "静かの"
+        ],
+        "correct": "静か",
+        "explanation": "静か (shizuka) to な-przymiotnik oznaczający cichy. Gdy jest używany jako orzeczenie (na końcu zdania), な-przymiotniki biorą です bezpośrednio: 静かです. Nie potrzeba な na końcu zdania. Ciche przestrzenie pozwalają na odpoczynek, koncentrację i spokój. Umiejętność opisywania środowiska pomaga wyrażać preferencje i potrzeby."
+      },
+      {
+        "id": "pj_adj5",
+        "question": "この車は___です。",
+        "translation": "(Ten samochód jest stary)",
+        "options": [
+          "古い",
+          "古いな",
+          "古く",
+          "古かった"
+        ],
+        "correct": "古い",
+        "explanation": "古い (furui) to い-przymiotnik oznaczający stary. Ponownie wzór い-przymiotnik plus です. Stare rzeczy mogą nieść historię i charakter. W japońskiej kulturze dobrze utrzymane stare przedmioty są często cenione za swoją patynę i historię. Wiek przynosi własne piękno."
+      },
+      {
+        "id": "pj_adj6",
+        "question": "彼は___学生です。",
+        "translation": "(On jest poważnym studentem)",
+        "options": [
+          "真面目な",
+          "真面目",
+          "真面目に",
+          "真面目の"
+        ],
+        "correct": "真面目な",
+        "explanation": "真面目 (majime) to な-przymiotnik oznaczający poważny lub szczery. Modyfikowanie 学生 (student) wymaga な. Bycie poważnym wobec studiów pokazuje oddanie i szacunek dla nauki. Japońska kultura ceni pracowitość i szczere wysiłki w edukacji."
+      },
+      {
+        "id": "pj_adj7",
+        "question": "昨日は___です。",
+        "translation": "(Wczoraj było zimno)",
+        "options": [
+          "寒かった",
+          "寒い",
+          "寒く",
+          "寒いでした"
+        ],
+        "correct": "寒かった",
+        "explanation": "W czasie przeszłym い-przymiotniki zmieniają い na かった. 寒い (samui, zimny) staje się 寒かった w przeszłości. Potem dodaj です dla grzeczności: 寒かったです. Ta odmiana jest regularna dla wszystkich い-przymiotników. Zimne dni sprawiają, że ciepłe miejsca są bardziej doceniane. Zmiany pogody uczą nas cenić każdą porę roku."
+      },
+      {
+        "id": "pj_adj8",
+        "question": "この町は___です。",
+        "translation": "(To miasto jest tętniące życiem)",
+        "options": [
+          "にぎやか",
+          "にぎやかな",
+          "にぎやかに",
+          "にぎやかの"
+        ],
+        "correct": "にぎやか",
+        "explanation": "にぎやか (nigiyaka) to な-przymiotnik oznaczający tętniący życiem lub ruchliwy. Jako orzeczenie używaj にぎやかです. Tętniące życiem miasta mają energię i aktywność. Krzątanina ludzi zajmujących się swoimi sprawami tworzy żywą atmosferę. Różni ludzie preferują różne poziomy aktywności w swoim środowisku."
+      },
+      {
+        "id": "pj_adj9",
+        "question": "この店は___です。",
+        "translation": "(Ten sklep jest drogi)",
+        "options": [
+          "高い",
+          "高いな",
+          "高く",
+          "高かった"
+        ],
+        "correct": "高い",
+        "explanation": "高い (takai) to い-przymiotnik oznaczający wysoki lub drogi. Porównania cenowe są częścią decyzji zakupowych. Podczas gdy drogie sklepy mogą oferować jakość, przystępne cenowo opcje mają swój własny urok. Zrozumienie cen pomaga podejmować świadome wybory i odpowiednio gospodarować budżetem."
+      },
+      {
+        "id": "pj_adj10",
+        "question": "彼女は___先生です。",
+        "translation": "(Ona jest znaną nauczycielką)",
+        "options": [
+          "有名な",
+          "有名",
+          "有名に",
+          "有名の"
+        ],
+        "correct": "有名な",
+        "explanation": "有名 (yūmei) to な-przymiotnik oznaczający słynny. Modyfikowanie 先生 wymaga な. Znani nauczyciele mogą mieć reputację doskonałości lub unikalnych metod nauczania. Sława w edukacji często pochodzi z pozytywnego wpływu na wielu uczniów przez lata."
+      },
+      {
+        "id": "pj_adj11",
+        "question": "昨日は___です。",
+        "translation": "(Wczoraj było wesoło)",
+        "options": [
+          "楽しかった",
+          "楽しい",
+          "楽しく",
+          "楽しいでした"
+        ],
+        "correct": "楽しかった",
+        "explanation": "楽しい (tanoshii) to い-przymiotnik oznaczający zabawny lub przyjemny. Czas przeszły: 楽しかった plus です. Wesołe dni tworzą szczęśliwe wspomnienia. Czerpanie radości z chwil życia, dużych i małych, przyczynia się do ogólnego szczęścia i dobrego samopoczucia. Umiejętność wyrażania radości z doświadczeń pomaga łączyć się z innymi poprzez wspólne szczęście."
+      },
+      {
+        "id": "pj_adj12",
+        "question": "この料理は___です。",
+        "translation": "(To danie jest pyszne)",
+        "options": [
+          "おいしい",
+          "おいしいな",
+          "おいしく",
+          "おいしかった"
+        ],
+        "correct": "おいしい",
+        "explanation": "おいしい (oishii) to い-przymiotnik oznaczający pyszny. Jedzenie łączy ludzi, a dyskusje o jedzeniu są uniwersalną przyjemnością. Komplementowanie jedzenia pokazuje uznanie dla wysiłku kucharza. Japońska kuchnia jest znana ze swojego piękna i smaku, co sprawia, że rozmowy o jedzeniu są bogate i przyjemne."
+      },
+      {
+        "id": "pj_adj13",
+        "question": "彼は___人です。",
+        "translation": "(On jest zdrową osobą)",
+        "options": [
+          "元気な",
+          "元気",
+          "元気に",
+          "元気の"
+        ],
+        "correct": "元気な",
+        "explanation": "元気 (genki) to な-przymiotnik oznaczający zdrowy, energiczny lub żywiołowy. Modyfikowanie 人 wymaga な. Zdrowie jest podstawą dobrego życia. Bycie 元気 obejmuje zdrowie fizyczne i pozytywnego ducha. Życzenie komuś 元気 pokazuje, że dbasz o jego dobro."
+      },
+      {
+        "id": "pj_adj14",
+        "question": "このかばんは___です。",
+        "translation": "(Ta torba jest lekka)",
+        "options": [
+          "軽い",
+          "軽いな",
+          "軽く",
+          "軽かった"
+        ],
+        "correct": "軽い",
+        "explanation": "軽い (karui) to い-przymiotnik oznaczający lekki (pod względem wagi). Ciężkie torby mogą obciążać ramiona, więc lekkie torby są doceniane w codziennym użytkowaniu. Komfort fizyczny wpływa na to, jak poruszamy się przez dzień. Opisywanie wagi pomaga wyjaśniać praktyczne aspekty przedmiotów."
+      },
+      {
+        "id": "pj_adj15",
+        "question": "この映画は___です。",
+        "translation": "(Ten film był nudny)",
+        "options": [
+          "つまらなかった",
+          "つまらない",
+          "つまらなく",
+          "つまらないでした"
+        ],
+        "correct": "つまらなかった",
+        "explanation": "つまらない (tsumaranai) to い-przymiotnik oznaczający nudny. Czas przeszły: つまらなかった plus です. Nie każdy film fascynuje każdego widza. Różne historie przemawiają do różnych ludzi. Umiejętność wyrażania rozczarowania szczerze pomaga przyjaciołom polecać lepsze dopasowania do twojego gustu."
+      }
+    ]
+  },
+  {
+    "key": "negation",
+    "name": "Przeczenia",
+    "description": "Tworzenie form przeczących",
+    "iconName": "xmark",
+    "color": "#f87171",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_neg1",
+        "question": "私は学生___です。",
+        "translation": "(Nie jestem studentem)",
+        "options": [
+          "じゃない",
+          "ではない",
+          "じゃありません",
+          "ません"
+        ],
+        "correct": "じゃありません",
+        "explanation": "Witaj w japońskich przeczeniach. Aby zanegować です, używasz じゃありません w grzecznej mowie. 私は学生じゃありません oznacza nie jestem studentem. じゃない jest bardziej potoczne, じゃありません jest grzeczne. System zaprzeczeń w japońskim jest logiczny i konsekwentny. Umiejętność mówienia, czym nie jesteś, jest równie ważna jak mówienie, kim jesteś."
+      },
+      {
+        "id": "pj_neg2",
+        "question": "食べ___。",
+        "translation": "(Nie jem)",
+        "options": [
+          "ません",
+          "ないです",
+          "なかった",
+          "ないでした"
+        ],
+        "correct": "ません",
+        "explanation": "Czasowniki zaprzeczamy, zmieniając ます na ません. 食べます (jem) staje się 食べません (nie jem). To przekształcenie jest regularne dla wszystkich czasowników ます. Odmowa jedzenia może być kwestią preferencji, diety lub pełności. System zaprzeczeń jest prosty - jedna zmiana działa dla wszystkich czasowników."
+      },
+      {
+        "id": "pj_neg3",
+        "question": "これは面白く___です。",
+        "translation": "(To nie jest interesujące)",
+        "options": [
+          "ない",
+          "ありません",
+          "ません",
+          "ないでした"
+        ],
+        "correct": "ない",
+        "explanation": "い-przymiotniki zaprzeczamy, zmieniając końcowe い na くない. 面白い (interesujący) staje się 面白くない (nieinteresujący). Potem dodaj です dla grzeczności: 面白くないです. Nie wszystko musi być interesujące dla wszystkich. Różnorodność gustów jest naturalna. Odmiana い-przymiotników w zaprzeczeniu jest konsekwentna."
+      },
+      {
+        "id": "pj_neg4",
+        "question": "彼は親切___です。",
+        "translation": "(On nie jest miły)",
+        "options": [
+          "じゃない",
+          "ではない",
+          "くない",
+          "ません"
+        ],
+        "correct": "じゃない",
+        "explanation": "な-przymiotniki zaprzeczamy jak です: 親切です staje się 親切じゃないです. W grzecznej mowie: 親切じゃありません. System jest taki sam jak dla rzeczowników z です. Nie każdy jest uprzejmy w każdej sytuacji, co jest rzeczywistością ludzkiego zachowania. Rozumienie zaprzeczeń pomaga wyrażać pełny zakres doświadczeń."
+      },
+      {
+        "id": "pj_neg5",
+        "question": "昨日は暑く___です。",
+        "translation": "(Wczoraj nie było gorąco)",
+        "options": [
+          "なかった",
+          "ない",
+          "ありませんでした",
+          "ませんでした"
+        ],
+        "correct": "なかった",
+        "explanation": "Przeszła forma przecząca い-przymiotników: zmień い na くなかった. 暑い (gorący) staje się 暑くなかった (nie było gorąco). Potem dodaj です: 暑くなかったです. Pogoda bywa nieprzewidywalna. Opisywanie przeszłych warunków pogodowych w zaprzeczeniu jest częste w rozmowach."
+      },
+      {
+        "id": "pj_neg6",
+        "question": "行き___でした。",
+        "translation": "(Nie poszedłem)",
+        "options": [
+          "ませんでした",
+          "ないでした",
+          "くなかった",
+          "じゃなかった"
+        ],
+        "correct": "ませんでした",
+        "explanation": "Przeszła forma przecząca czasowników: ます staje się ませんでした. 行きます (idę) staje się 行きませんでした (nie poszedłem). To regularna transformacja dla wszystkich czasowników. Czasami decydujemy się nie iść gdzieś, co jest częścią normalnego życia. Przeszłe zaprzeczenia pomagają wyjaśniać, co się nie wydarzyło."
+      },
+      {
+        "id": "pj_neg7",
+        "question": "このかばんは軽く___です。",
+        "translation": "(Ta torba nie jest lekka)",
+        "options": [
+          "ない",
+          "ありません",
+          "ません",
+          "じゃない"
+        ],
+        "correct": "ない",
+        "explanation": "Ponownie, い-przymiotniki: 軽い staje się 軽くない. Ciężkie torby mogą być niewygodne, ale czasami są konieczne do noszenia tego, czego potrzebujemy. Opisywanie braku cechy pomaga wyrażać ograniczenia i wyzwania."
+      },
+      {
+        "id": "pj_neg8",
+        "question": "彼女は学生___です。",
+        "translation": "(Ona nie jest studentką)",
+        "options": [
+          "じゃありません",
+          "くありません",
+          "ません",
+          "なかった"
+        ],
+        "correct": "じゃありません",
+        "explanation": "Zaprzeczenie です w grzecznej formie: じゃありません. 学生じゃありません oznacza nie jest studentką. Ludzie mają różne role w życiu, nie wszyscy są studentami. Jasne zaprzeczenia pomagają unikać nieporozumień."
+      },
+      {
+        "id": "pj_neg9",
+        "question": "昨日は楽しく___です。",
+        "translation": "(Wczoraj nie było wesoło)",
+        "options": [
+          "なかった",
+          "ない",
+          "ありませんでした",
+          "ませんでした"
+        ],
+        "correct": "なかった",
+        "explanation": "Przeszła forma przecząca: 楽しい staje się 楽しくなかった. Nie każdy dzień jest szczęśliwy, co jest normalną częścią życia. Wyrażanie, kiedy coś nie było przyjemne, pomaga w komunikacji i zrozumieniu. Akceptowanie różnych rodzajów dni jest częścią równowagi emocjonalnej."
+      },
+      {
+        "id": "pj_neg10",
+        "question": "食べ___でした。",
+        "translation": "(Nie jadłem)",
+        "options": [
+          "ませんでした",
+          "ないでした",
+          "くなかった",
+          "じゃなかった"
+        ],
+        "correct": "ませんでした",
+        "explanation": "Przeszła forma przecząca czasownika: 食べませんでした. Czasami pomijamy posiłki z różnych powodów. Przeszłe zaprzeczenia czasowników używają ませんでした konsekwentnie. Ta regularność sprawia, że system jest łatwy do nauki."
+      },
+      {
+        "id": "pj_neg11",
+        "question": "この部屋は静か___です。",
+        "translation": "(Ten pokój nie jest cichy)",
+        "options": [
+          "じゃない",
+          "くない",
+          "ません",
+          "なかった"
+        ],
+        "correct": "じゃない",
+        "explanation": "な-przymiotniki zaprzeczamy jak です: 静かです staje się 静かじゃないです. Hałaśliwe otoczenia mogą być trudne do koncentracji. Opisywanie braku ciszy pomaga wyrazić potrzebę zmiany środowiska."
+      },
+      {
+        "id": "pj_neg12",
+        "question": "読み___。",
+        "translation": "(Nie czytam)",
+        "options": [
+          "ません",
+          "ないです",
+          "くない",
+          "じゃない"
+        ],
+        "correct": "ません",
+        "explanation": "Czasownik zaprzeczamy: 読みます staje się 読みません. Nie wszyscy czytają regularnie, co jest kwestią osobistych wyborów. Zaprzeczenia czasowników w japońskim są proste - jedna zmiana dla wszystkich czasowników."
+      },
+      {
+        "id": "pj_neg13",
+        "question": "これは新しく___です。",
+        "translation": "(To nie jest nowe)",
+        "options": [
+          "ない",
+          "ありません",
+          "ません",
+          "じゃない"
+        ],
+        "correct": "ない",
+        "explanation": "い-przymiotnik 新しい (nowy) staje się 新しくない (nienowy). Rzeczy używane mają swoją własną wartość i historię. Nie wszystko musi być nowe, aby było wartościowe. Zaprzeczenia przymiotników pomagają opisywać stan rzeczy dokładnie."
+      },
+      {
+        "id": "pj_neg14",
+        "question": "見___でした。",
+        "translation": "(Nie widziałem)",
+        "options": [
+          "ませんでした",
+          "ないでした",
+          "くなかった",
+          "じゃなかった"
+        ],
+        "correct": "ませんでした",
+        "explanation": "Przeszła forma przecząca: 見ませんでした. Czasami pomijamy zobaczenie czegoś, celowo lub przypadkowo. Przeszłe zaprzeczenia pomagają wyjaśniać pominięte doświadczenia. System pozostaje konsekwentny niezależnie od czasownika."
+      },
+      {
+        "id": "pj_neg15",
+        "question": "昨日は寒く___です。",
+        "translation": "(Wczoraj nie było zimno)",
+        "options": [
+          "なかった",
+          "ない",
+          "ありませんでした",
+          "ませんでした"
+        ],
+        "correct": "なかった",
+        "explanation": "Przeszła forma przecząca: 寒い staje się 寒くなかった. Łagodna pogoda może być ulgą. Opisywanie braku zimna w przeszłości pomaga w rozmowach o pogodzie. Odmiana い-przymiotników w zaprzeczeniu przeszłym jest regularna i przewidywalna."
+      }
+    ]
+  },
+  {
+    "key": "questions",
+    "name": "Pytania",
+    "description": "Tworzenie pytań po japońsku",
+    "iconName": "questionmark.circle",
+    "color": "#60a5fa",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_q1",
+        "question": "これは___ですか。",
+        "translation": "(Co to jest?)",
+        "options": [
+          "何",
+          "誰",
+          "どこ",
+          "いつ"
+        ],
+        "correct": "何",
+        "explanation": "Witaj w świecie japońskich pytań. 何 (nani/nan) oznacza co. Aby zadać pytanie, dodaj か na końcu zdania. これは何ですか znaczy co to jest. Japońskie pytania są proste - dodanie か czyni każde stwierdzenie pytaniem. Ciekawość prowadzi do uczenia się. Zadawanie pytań to sposób na poznawanie świata."
+      },
+      {
+        "id": "pj_q2",
+        "question": "___が来ますか。",
+        "translation": "(Kto przyjdzie?)",
+        "options": [
+          "誰",
+          "何",
+          "どこ",
+          "いつ"
+        ],
+        "correct": "誰",
+        "explanation": "誰 (dare) oznacza kto. W pytaniach o osoby używamy 誰. 誰が来ますか znaczy kto przyjdzie. Partykuła が (nie は) pojawia się w pytaniach o podmiot. Wiedza o tym, kto uczestniczy w wydarzeniach, pomaga w planowaniu. Pytania o ludzi są fundamentem społecznych interakcji."
+      },
+      {
+        "id": "pj_q3",
+        "question": "___に行きますか。",
+        "translation": "(Dokąd idziesz?)",
+        "options": [
+          "どこ",
+          "何",
+          "誰",
+          "いつ"
+        ],
+        "correct": "どこ",
+        "explanation": "どこ (doko) oznacza gdzie. どこに行きますか znaczy dokąd idziesz. Partykuła に wskazuje kierunek. Pytania o miejsce pomagają koordynować spotkania i plany. Orientacja przestrzenna jest kluczowa w komunikacji. Japońskie słowa pytające są konsekwentne i łatwe do użycia."
+      },
+      {
+        "id": "pj_q4",
+        "question": "___来ますか。",
+        "translation": "(Kiedy przyjdziesz?)",
+        "options": [
+          "いつ",
+          "何",
+          "誰",
+          "どこ"
+        ],
+        "correct": "いつ",
+        "explanation": "いつ (itsu) oznacza kiedy. いつ来ますか znaczy kiedy przyjdziesz. いつ nie potrzebuje partykuły czasowej. Pytania o czas są istotne dla planowania i synchronizacji. Czas łączy ludzi przez wspólne doświadczenia. Zrozumienie pytań o czas pomaga zarządzać codziennym życiem."
+      },
+      {
+        "id": "pj_q5",
+        "question": "___を食べますか。",
+        "translation": "(Co jesz?)",
+        "options": [
+          "何",
+          "誰",
+          "どこ",
+          "いつ"
+        ],
+        "correct": "何",
+        "explanation": "何 (nani) z partykułą を: 何を食べますか znaczy co jesz. Pytania o jedzenie są częste w rozmowach. Dzielenie się informacjami o posiłkach tworzy połączenia. Jedzenie jest uniwersalnym tematem, który łączy kultury. Zadawanie pytań o wybory jedzeniowe pokazuje zainteresowanie innymi."
+      },
+      {
+        "id": "pj_q6",
+        "question": "___時に起きますか。",
+        "translation": "(O której wstajesz?)",
+        "options": [
+          "何",
+          "誰",
+          "どこ",
+          "いつ"
+        ],
+        "correct": "何",
+        "explanation": "何時 (nan-ji) oznacza która godzina. 何時に起きますか znaczy o której wstajesz. 時 (ji) to licznik dla godzin. Pytania o godzinę są praktyczne i częste. Rutyny poranne różnią się u każdego. Zrozumienie harmonogramów innych pomaga w planowaniu wspólnego czasu."
+      },
+      {
+        "id": "pj_q7",
+        "question": "___が好きですか。",
+        "translation": "(Co lubisz?)",
+        "options": [
+          "何",
+          "誰",
+          "どこ",
+          "いつ"
+        ],
+        "correct": "何",
+        "explanation": "何が好きですか znaczy co lubisz. Pytania o preferencje pomagają poznać osobowość. 好き (suki) bierze が, nie を. Dzielenie się tym, co lubimy, buduje więzi. Zainteresowania definiują kim jesteśmy. Pytanie o upodobania pokazuje, że chcesz poznać kogoś lepiej."
+      },
+      {
+        "id": "pj_q8",
+        "question": "___人ですか。",
+        "translation": "(Ile osób?)",
+        "options": [
+          "何",
+          "誰",
+          "どこ",
+          "いつ"
+        ],
+        "correct": "何",
+        "explanation": "何人 (nan-nin) oznacza ile osób. 何人ですか to pytanie o liczbę ludzi. Liczniki w japońskim są specyficzne dla tego, co liczysz. Pytania o ilość pomagają w przygotowaniach. Wiedza o liczbie uczestników jest praktyczna dla planowania. System liczników pokazuje japońską precyzję w języku."
+      },
+      {
+        "id": "pj_q9",
+        "question": "___ですか。",
+        "translation": "(Czyj to jest?)",
+        "options": [
+          "誰の",
+          "何の",
+          "どこの",
+          "いつの"
+        ],
+        "correct": "誰の",
+        "explanation": "誰の (dare no) oznacza czyj. の wskazuje posiadanie. 誰のですか znaczy czyj to jest. Pytania o posiadanie pomagają identyfikować rzeczy. Szanowanie własności jest ważne w społeczeństwie. Jasne pytania o przynależność zapobiegają nieporozumieniom."
+      },
+      {
+        "id": "pj_q10",
+        "question": "___で行きますか。",
+        "translation": "(Czym jedziesz?)",
+        "options": [
+          "何",
+          "誰",
+          "どこ",
+          "いつ"
+        ],
+        "correct": "何",
+        "explanation": "何で (nani de) oznacza czym (środkiem transportu). 何で行きますか znaczy czym jedziesz. Partykuła で wskazuje środek lub narzędzie. Pytania o transport są praktyczne. Różne środki transportu mają swoje zalety. Zrozumienie opcji podróży pomaga w planowaniu trasy."
+      },
+      {
+        "id": "pj_q11",
+        "question": "___をしますか。",
+        "translation": "(Co robisz?)",
+        "options": [
+          "何",
+          "誰",
+          "どこ",
+          "いつ"
+        ],
+        "correct": "何",
+        "explanation": "何をしますか to ogólne pytanie co robisz. する (suru) to czasownik robić. To pytanie jest wszechstronne i częste. Ciekawość o działania innych otwiera rozmowy. Aktywności definiują jak spędzamy czas. Pytanie o plany lub obecne działania jest naturalnym sposobem na rozpoczęcie dialogu."
+      },
+      {
+        "id": "pj_q12",
+        "question": "___を飲みますか。",
+        "translation": "(Co pijesz?)",
+        "options": [
+          "何",
+          "誰",
+          "どこ",
+          "いつ"
+        ],
+        "correct": "何",
+        "explanation": "何を飲みますか znaczy co pijesz. Pytania o napoje są częste w sytuacjach społecznych. Oferowanie napojów to gest gościnności. Preferencje dotyczące napojów są osobiste i różnorodne. Zadawanie tego pytania pokazuje troskę o komfort innych."
+      },
+      {
+        "id": "pj_q13",
+        "question": "___曜日ですか。",
+        "translation": "(Który dzień tygodnia?)",
+        "options": [
+          "何",
+          "誰",
+          "どこ",
+          "いつ"
+        ],
+        "correct": "何",
+        "explanation": "何曜日 (nan-yōbi) oznacza który dzień tygodnia. 何曜日ですか pyta o dzień. 曜日 (yōbi) to dzień tygodnia. Pytania o dni pomagają w planowaniu spotkań. Struktura tygodnia organizuje nasze życie. Zrozumienie dni tygodnia po japońsku jest podstawowe dla planowania."
+      },
+      {
+        "id": "pj_q14",
+        "question": "___歳ですか。",
+        "translation": "(Ile masz lat?)",
+        "options": [
+          "何",
+          "誰",
+          "どこ",
+          "いつ"
+        ],
+        "correct": "何",
+        "explanation": "何歳 (nan-sai) oznacza ile lat. 何歳ですか to pytanie o wiek. 歳 (sai) to licznik dla wieku. W japońskiej kulturze pytanie o wiek może być bardziej bezpośrednie niż w niektórych innych kulturach. Wiek może wpływać na poziom grzeczności w mowie. Zrozumienie kontekstu kulturowego pomaga w odpowiednim komunikowaniu się."
+      },
+      {
+        "id": "pj_q15",
+        "question": "___番ですか。",
+        "translation": "(Który numer?)",
+        "options": [
+          "何",
+          "誰",
+          "どこ",
+          "いつ"
+        ],
+        "correct": "何",
+        "explanation": "何番 (nan-ban) oznacza który numer. 何番ですか pyta o numer. 番 (ban) to licznik dla numerów porządkowych. Pytania o numery są praktyczne w wielu sytuacjach - numery autobusów, numeracja miejsc, numery telefonów. Numery organizują nasz uporządkowany świat. System pytań w japońskim jest logiczny i konsekwentny."
+      }
+    ]
+  },
+  {
+    "key": "politeness",
+    "name": "Poziomy grzeczności",
+    "description": "Keigo - grzeczna mowa",
+    "iconName": "person.2",
+    "color": "#c084fc",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pj_pol1",
+        "question": "先生は___。",
+        "translation": "(Nauczyciel jest tutaj)",
+        "options": [
+          "いらっしゃいます",
+          "います",
+          "いる",
+          "おります"
+        ],
+        "correct": "いらっしゃいます",
+        "explanation": "Witaj w keigo - pięknym systemie szacunku w japońskim. いらっしゃいます (irasshaimasu) to forma honoryfikatywna います (być dla osób). Używaj jej odnosząc się do osób wyższego statusu z szacunkiem. 先生 (nauczyciel) zasługuje na to honoryfikatywne traktowanie w japońskiej kulturze. Nauczyciele zajmują szanowaną pozycję, prowadząc uczniów ku wiedzy. Zrozumienie keigo pomaga poruszać się w sytuacjach społecznych z odpowiednim szacunkiem."
+      },
+      {
+        "id": "pj_pol2",
+        "question": "社長は___。",
+        "translation": "(Prezes je)",
+        "options": [
+          "召し上がります",
+          "食べます",
+          "食べる",
+          "いただきます"
+        ],
+        "correct": "召し上がります",
+        "explanation": "召し上がります (meshiagarimasu) to forma honoryfikatywna 食べます (jeść). Dla osób wyższego statusu podnosimy ich działania honoryfikatywnymi czasownikami. いただきます to forma skromna (dla twoich własnych działań), podczas gdy 召し上がります to honoryfikatywna (dla działań innych). To rozróżnienie pokazuje niuansowany system szacunku w japońskim."
+      },
+      {
+        "id": "pj_pol3",
+        "question": "私が___。",
+        "translation": "(Ja to zrobię)",
+        "options": [
+          "いたします",
+          "します",
+          "する",
+          "なさいます"
+        ],
+        "correct": "いたします",
+        "explanation": "いたします (itashimasu) to forma skromna します (robić). Mówiąc do kogoś o wyższym statusie, obniżasz własne działania formami skromnymi. To pokazuje skromność i szacunek. なさいます byłoby honoryfikatywne (dla ich działań). System keigo równoważy podnoszenie innych przy zachowaniu skromności wobec siebie. To odzwierciedla japońskie wartości harmonii i hierarchii."
+      },
+      {
+        "id": "pj_pol4",
+        "question": "お客様は___。",
+        "translation": "(Klient jest tutaj)",
+        "options": [
+          "いらっしゃいます",
+          "います",
+          "いる",
+          "おります"
+        ],
+        "correct": "いらっしゃいます",
+        "explanation": "お客様 (klient lub gość) otrzymuje honoryfikatywne traktowanie z いらっしゃいます. W japońskiej kulturze biznesowej klienci są wysoko szanowani. Honoryfikatywny język odzwierciedla ten szacunek namacalnie. Nawet w zwykłych sklepach możesz usłyszeć ten uprzejmy język. Obsługa z szacunkiem tworzy przyjemne doświadczenia dla wszystkich."
+      },
+      {
+        "id": "pj_pol5",
+        "question": "部長は___。",
+        "translation": "(Kierownik działu mówi)",
+        "options": [
+          "おっしゃいます",
+          "言います",
+          "言う",
+          "申します"
+        ],
+        "correct": "おっしゃいます",
+        "explanation": "おっしゃいます (osshaimasu) to honoryfikatywna forma 言います (mówić). Kierownicy działów i przełożeni mają swoją mowę podnoszoną językowo. 申します byłoby formą skromną (dla twojej własnej mowy). To trio czasowników jasno pokazuje system: skromna dla siebie, zwykła dla równych, honoryfikatywna dla przełożonych. Nauka tych zestawów pomaga komunikować się odpowiednio."
+      },
+      {
+        "id": "pj_pol6",
+        "question": "私が___。",
+        "translation": "(Ja pójdę)",
+        "options": [
+          "参ります",
+          "行きます",
+          "行く",
+          "いらっしゃいます"
+        ],
+        "correct": "参ります",
+        "explanation": "参ります (mairimasu) to forma skromna 行きます (iść). Obniżanie własnych działań pokazuje szacunek do słuchacza lub osoby, do której idziesz. Ta skromność jest ceniona w japońskiej kulturze. System keigo koduje relacje społeczne gramatycznie, czyniąc szacunek strukturalną częścią samego języka."
+      },
+      {
+        "id": "pj_pol7",
+        "question": "先生は___。",
+        "translation": "(Nauczyciel przychodzi)",
+        "options": [
+          "いらっしゃいます",
+          "来ます",
+          "来る",
+          "参ります"
+        ],
+        "correct": "いらっしゃいます",
+        "explanation": "いらっしゃいます służy jako honoryfikatywna forma zarówno dla います (być) jak i 来ます (przychodzić). Kontekst określa które znaczenie. Dla nauczycieli i szanowanych osób ta honoryfikatywna forma jest naturalna. Pokazuje, że ich obecność jest ceniona i szanowana. Wybory językowe odzwierciedlają i wzmacniają relacje społeczne."
+      },
+      {
+        "id": "pj_pol8",
+        "question": "私が___。",
+        "translation": "(Nazywam się / Mówię)",
+        "options": [
+          "申します",
+          "言います",
+          "言う",
+          "おっしゃいます"
+        ],
+        "correct": "申します",
+        "explanation": "申します (mōshimasu) to forma skromna 言います. Przedstawiając się formalnie, możesz powiedzieć 私は田中と申します (nazywam się Tanaka). To skromne odniesienie do siebie jest standardem w biznesie i formalnych sytuacjach. Opanowanie tych form pomaga robić dobre pierwsze wrażenie w profesjonalnych kontekstach."
+      },
+      {
+        "id": "pj_pol9",
+        "question": "お客様が___。",
+        "translation": "(Klient przychodzi)",
+        "options": [
+          "いらっしゃいます",
+          "来ます",
+          "来る",
+          "参ります"
+        ],
+        "correct": "いらっしゃいます",
+        "explanation": "Ponownie, いらっしゃいます jako honoryfikatywna dla 来ます (przychodzić). Obsługa klienta w Japonii słynie z uprzejmości i szacunku. Ten językowy szacunek jest częścią tej kultury. Traktowanie klientów honoryfikatywnym językiem uznaje ich znaczenie i tworzy pozytywne relacje."
+      },
+      {
+        "id": "pj_pol10",
+        "question": "私が___。",
+        "translation": "(Ja jestem tutaj)",
+        "options": [
+          "おります",
+          "います",
+          "いる",
+          "いらっしゃいます"
+        ],
+        "correct": "おります",
+        "explanation": "おります (orimasu) to forma skromna います (być lub istnieć). W formalnych sytuacjach możesz obniżyć się językowo mówiąc o przebywaniu gdzieś. Ta pokora nie dotyczy niskiej samooceny, ale pokazywania szacunku przez skromność. System tworzy harmonię społeczną poprzez wybory językowe."
+      },
+      {
+        "id": "pj_pol11",
+        "question": "社長は___。",
+        "translation": "(Prezes wie)",
+        "options": [
+          "ご存じです",
+          "知っています",
+          "知ってます",
+          "存じています"
+        ],
+        "correct": "ご存じです",
+        "explanation": "ご存じです (gozonji desu) to honoryfikatywna dla 知っています (wiedzieć). Podnoszenie czyjejś wiedzy pokazuje szacunek dla ich mądrości i doświadczenia. 存じています byłoby formą skromną (dla twojej własnej wiedzy). Te równoległe formy pozwalają naturalnie dostosowywać poziomy szacunku w rozmowie."
+      },
+      {
+        "id": "pj_pol12",
+        "question": "私が___。",
+        "translation": "(Spotkam się / Zobaczę)",
+        "options": [
+          "お目にかかります",
+          "会います",
+          "会う",
+          "お会いになります"
+        ],
+        "correct": "お目にかかります",
+        "explanation": "お目にかかります (ome ni kakarimasu) to niezwykle skromny sposób mówienia spotkać się, dosłownie znaczący pokornie otrzymuję zaszczyt zobaczenia cię. Ta głęboka pokora jest odpowiednia przy spotkaniu bardzo ważnych osób lub w bardzo formalnych sytuacjach. お会いになります byłoby honoryfikatywne (oni spotykają się). Głębokość pokory może się różnić w zależności od sytuacji."
+      },
+      {
+        "id": "pj_pol13",
+        "question": "先生が___。",
+        "translation": "(Nauczyciel czyta)",
+        "options": [
+          "お読みになります",
+          "読みます",
+          "読む",
+          "読ませていただきます"
+        ],
+        "correct": "お読みになります",
+        "explanation": "お読みになります to wzór honoryfikatywny: お plus rdzeń czasownika plus になります. Ten wzór działa dla wielu czasowników, dając ci formułę pokazywania szacunku. Działanie nauczyciela czytania jest podnoszone językowo. Ten wzór jest produktywny, co oznacza, że możesz go stosować do nowych czasowników, gdy poznasz strukturę."
+      },
+      {
+        "id": "pj_pol14",
+        "question": "私が___。",
+        "translation": "(Pokornie zapytam / odwiedzę)",
+        "options": [
+          "伺います",
+          "聞きます",
+          "聞く",
+          "お聞きになります"
+        ],
+        "correct": "伺います",
+        "explanation": "伺います (ukagaimasu) to skromna forma 聞きます (słyszeć lub pytać). Może też znaczyć pokornie odwiedzić. Zadawanie pytań formami skromnymi pokazuje szacunek do osoby, którą pytasz. To zachęca do otwartej komunikacji przez łagodzenie twojej prośby językowo. Pełne szacunku pytania zapraszają do pełnych szacunku odpowiedzi."
+      },
+      {
+        "id": "pj_pol15",
+        "question": "お客様が___。",
+        "translation": "(Klient używa)",
+        "options": [
+          "お使いになります",
+          "使います",
+          "使う",
+          "使わせていただきます"
+        ],
+        "correct": "お使いになります",
+        "explanation": "お使いになります podnosi działanie klienta używania czegoś. W handlu detalicznym i branżach usługowych ten pełen szacunku język jest standardem. Sprawia, że klienci czują się docenieni i mile widziani. Konsekwentne używanie honoryfikatywów w obsłudze klienta przyczynia się do japońskiej reputacji doskonałej obsługi. Językowy szacunek staje się behawioralnym szacunkiem."
+      }
+    ]
+  }
+]

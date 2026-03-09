@@ -1,0 +1,1232 @@
+[
+  {
+    "key": "present_simple",
+    "name": "Present Simple",
+    "description": "一般现在时",
+    "iconName": "clock",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ce_ps1",
+        "question": "I _____ English.",
+        "translation": "(我说英语)",
+        "options": [
+          "speak",
+          "speaks",
+          "speaking",
+          "am speaking"
+        ],
+        "correct": "speak",
+        "explanation": "欢迎来到英语动词形式的世界。在中文里，\"说\"对所有主语都保持不变，但英语会有细微变化。用'I'时，使用动词原形：'I speak'。这类似于\"我说\"，但英语要求主语代词'I'。你不能像中文那样省略它。好消息是大多数主语（I, you, we, they）都使用这个简单的原形。只有he/she/it会改变，我们很快就会看到。"
+      },
+      {
+        "id": "ce_ps2",
+        "question": "She _____ in Beijing.",
+        "translation": "(她住在北京)",
+        "options": [
+          "lives",
+          "live",
+          "living",
+          "is living"
+        ],
+        "correct": "lives",
+        "explanation": "这是需要记住的一个变化：用he/she/it时，给动词加-s。所以\"她住\"变成'she lives'。这个-s词尾在英语中很重要。虽然中文不改变动词形式，但英语需要这个标记来表示第三人称单数。把它看作一个小信号，表明你在谈论另一个人或事物。一旦掌握这个模式，其余的就很简单了。"
+      },
+      {
+        "id": "ce_ps3",
+        "question": "They _____ tea.",
+        "translation": "(他们喝茶)",
+        "options": [
+          "drink",
+          "drinks",
+          "drinking",
+          "are drinking"
+        ],
+        "correct": "drink",
+        "explanation": "用'they'时，回到不加-s的原形。所以\"他们喝\"变成'they drink'。英语对复数主语很简单 - 没有特殊词尾。这在很多方面与中文相似。动词保持基本形式。模式是：I/you/we/they用原形，只有he/she/it加-s。一旦掌握基本规则，这种一致性使学习变得更容易。"
+      },
+      {
+        "id": "ce_ps4",
+        "question": "He _____ coffee every morning.",
+        "translation": "(他每天早上喝咖啡)",
+        "options": [
+          "drinks",
+          "drink",
+          "drinking",
+          "is drinking"
+        ],
+        "correct": "drinks",
+        "explanation": "再次，用'he'时加-s：\"他喝\"变成'he drinks'。像'every morning'这样的时间表达表示习惯，使用一般现在时。这类似于中文的\"每天\"表示常规动作。英语和中文都对习惯使用简单形式，尽管英语对主语的标记不同。这个模式是可靠和可预测的。"
+      },
+      {
+        "id": "ce_ps5",
+        "question": "We _____ to school by bus.",
+        "translation": "(我们坐公交车去学校)",
+        "options": [
+          "go",
+          "goes",
+          "going",
+          "are going"
+        ],
+        "correct": "go",
+        "explanation": "用'we'时，使用原形：\"我们去\"变成'we go'。注意英语根本不改变'we'的动词。这种简单性帮助你专注于意义而不是形式。挑战在于记住要加主语代词（we, they等），而中文经常省略。英语要求这些代词明确。"
+      },
+      {
+        "id": "ce_ps6",
+        "question": "The cat _____ on the sofa.",
+        "translation": "(猫在沙发上睡觉)",
+        "options": [
+          "sleeps",
+          "sleep",
+          "sleeping",
+          "is sleeping"
+        ],
+        "correct": "sleeps",
+        "explanation": "动物在英语中被视为'it'，所以加-s：\"猫睡\"变成'the cat sleeps'。在中文里，你可能对动物使用特定的量词，但英语简单地将所有动物视为'it'。这简化了事情。无论是猫、狗还是鸟，都使用he/she/it动词形式。通过练习，-s词尾会变得自动。"
+      },
+      {
+        "id": "ce_ps7",
+        "question": "I _____ you.",
+        "translation": "(我喜欢你)",
+        "options": [
+          "like",
+          "likes",
+          "liking",
+          "am liking"
+        ],
+        "correct": "like",
+        "explanation": "状态动词使用一般现在时：'I like you'。中文的\"喜欢\"可以直接表达持续的感觉。英语对状态和感情使用简单现在时。like, love, want, know这样的动词表示状态，不是动作。即使它们表达现在的感觉，也使用现在时。这与用现在进行时表示现在动作的动作动词（I am eating）不同。"
+      },
+      {
+        "id": "ce_ps8",
+        "question": "She _____ Chinese.",
+        "translation": "(她懂中文)",
+        "options": [
+          "knows",
+          "know",
+          "knowing",
+          "is knowing"
+        ],
+        "correct": "knows",
+        "explanation": "知识动词是状态动词：'She knows Chinese'。在中文里你说\"她懂中文\"，英语使用'knows'加-s表示she。know, understand, remember这样的动词描述心理状态，不是进行中的行为。它们保持一般现在时，即使谈论现在的知识。英语区分状态（现在时）和行动（进行时）。"
+      },
+      {
+        "id": "ce_ps9",
+        "question": "We _____ rice.",
+        "translation": "(我们吃米饭)",
+        "options": [
+          "eat",
+          "eats",
+          "eating",
+          "are eating"
+        ],
+        "correct": "eat",
+        "explanation": "用'we'的原形：\"我们吃\"变成'we eat'。当作为一般习惯或事实陈述时，英语使用现在时。中文在谈论一般习惯时可能使用类似的简单形式。关键是记住英语需要明确的主语代词，而中文经常根据上下文省略它们。"
+      },
+      {
+        "id": "ce_ps10",
+        "question": "It _____ cold in winter.",
+        "translation": "(冬天很冷)",
+        "options": [
+          "is",
+          "are",
+          "am",
+          "be"
+        ],
+        "correct": "is",
+        "explanation": "动词'to be'是特殊的：'It is cold in winter'。在中文里，你可以说\"冬天冷\"不用动词。英语需要'be'动词（am/is/are）来连接主语和描述。'it'用于天气和季节，总是带'is'。这个be动词是英语中必不可少的，虽然中文通常不需要等效的词。"
+      },
+      {
+        "id": "ce_ps11",
+        "question": "Do you _____ milk?",
+        "translation": "(你喜欢牛奶吗)",
+        "options": [
+          "like",
+          "likes",
+          "liking",
+          "liked"
+        ],
+        "correct": "like",
+        "explanation": "疑问句在'do/does'后使用原形：'Do you like milk?'。在中文里，\"你喜欢牛奶吗\"保持动词不变，只加\"吗\"。英语使用助动词'do'加原形。对于he/she/it使用'does'，但仍然是原形动词：'Does he like?'。助动词承载时态和一致标记，所以主动词保持原形。这个结构对所有一般现在时疑问句都是必不可少的。"
+      },
+      {
+        "id": "ce_ps12",
+        "question": "He doesn't _____ coffee.",
+        "translation": "(他不喜欢咖啡)",
+        "options": [
+          "like",
+          "likes",
+          "liking",
+          "liked"
+        ],
+        "correct": "like",
+        "explanation": "否定句使用'don't/doesn't'加原形：'He doesn't like coffee'。中文的\"不喜欢\"直接否定动词。英语使用助动词'doesn't'（he/she/it）或'don't'（I/you/we/they）加原形。助动词承载否定和一致，所以主动词保持简单。这个助动词系统简化了否定 - 不需要为每个动词学习否定形式。"
+      },
+      {
+        "id": "ce_ps13",
+        "question": "They _____ in Tokyo.",
+        "translation": "(他们在东京工作)",
+        "options": [
+          "work",
+          "works",
+          "working",
+          "worked"
+        ],
+        "correct": "work",
+        "explanation": "复数主语用原形：'They work in Tokyo'。中文的\"他们工作\"也保持动词不变。英语对复数保持一致性 - 像I/you一样，'they'使用不加-s的原形。这种模式贯穿所有复数主语和'you'，使其相对简单。只有单数第三人称（he/she/it）是特殊的。"
+      },
+      {
+        "id": "ce_ps14",
+        "question": "My brother _____ basketball.",
+        "translation": "(我哥哥打篮球)",
+        "options": [
+          "plays",
+          "play",
+          "playing",
+          "played"
+        ],
+        "correct": "plays",
+        "explanation": "单数名词作为'he'：'My brother plays basketball'。在中文里，\"我哥哥打篮球\"保持动词简单。英语将'my brother'视为'he'，所以加-s。任何单数的人或物（除了I和you）都遵循这个he/she/it规则。一旦认识到单数名词的行为像he/she/it，模式就变得清晰了。"
+      },
+      {
+        "id": "ce_ps15",
+        "question": "Water _____ at 100 degrees.",
+        "translation": "(水在100度沸腾)",
+        "options": [
+          "boils",
+          "boil",
+          "boiling",
+          "boiled"
+        ],
+        "correct": "boils",
+        "explanation": "科学事实使用一般现在时：'Water boils at 100 degrees'。主语'water'是'it'，所以需要-s。中文可能对一般事实说\"水沸腾\"或\"水会沸腾\"。英语一致地对普遍真理使用现在时，无论何时发生。这个时态处理永恒的事实，对描述自然规律、科学过程和世界如何运作的一般真理至关重要。"
+      }
+    ]
+  },
+  {
+    "key": "articles",
+    "name": "Articles (a/an/the)",
+    "description": "冠词",
+    "iconName": "doc.text",
+    "color": "#818cf8",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ce_art1",
+        "question": "I have _____ book.",
+        "translation": "(我有一本书)",
+        "options": [
+          "a",
+          "an",
+          "the",
+          "no article"
+        ],
+        "correct": "a",
+        "explanation": "欢迎来到英语冠词的世界，中文中不存在的概念。在辅音音前使用'a'：'a book'。这意味着一本书，任何一本书，不是特定的那本。在中文里，你说\"我有书\"或\"我有一本书\"，不指定是一本特定的书还是任何书。英语要求你每次都用a/an（不定冠词）或the（定冠词）做出这种区分。把'a'想象成类似\"一个\"但使用范围更广。"
+      },
+      {
+        "id": "ce_art2",
+        "question": "I see _____ apple.",
+        "translation": "(我看到一个苹果)",
+        "options": [
+          "an",
+          "a",
+          "the",
+          "no article"
+        ],
+        "correct": "an",
+        "explanation": "在元音音前使用'an'：'an apple'。'a'变成'an'是为了发音流畅。听音不看拼写 - 'an hour'（h不发音）但'a house'（h发音）。中文没有这个概念，但英语对每个第一次提到的可数单数名词都需要它。a/an的区别纯粹是语音的，使口语流动更自然。"
+      },
+      {
+        "id": "ce_art3",
+        "question": "_____ book is on the table.",
+        "translation": "(那本书在桌子上)",
+        "options": [
+          "The",
+          "A",
+          "An",
+          "no article"
+        ],
+        "correct": "The",
+        "explanation": "对双方都知道的特定物品使用'the'：'The book is on the table'。这是明确的 - 我们在谈论一本特定的书。中文使用\"那本\"或上下文来显示特定性，但英语在语法上要求'the'。当你之前提到过某物，或者当你指的是哪一个很清楚时（如\"桌子上的书\"），使用'the'。这告诉听众你指的是他们可以识别的特定物品。"
+      },
+      {
+        "id": "ce_art4",
+        "question": "I go to _____ school.",
+        "translation": "(我去上学)",
+        "options": [
+          "no article",
+          "a",
+          "an",
+          "the"
+        ],
+        "correct": "no article",
+        "explanation": "某些表达不使用冠词：'go to school'、'go to work'、'go to bed'。这些指的是活动而不是建筑。当你说\"去上学\"时，你在谈论上学这个活动。英语通过省略冠词来表达这一点。但如果你说'I go to the school'，你指的是那座建筑物。这种微妙的区别出现在许多固定表达中。"
+      },
+      {
+        "id": "ce_art5",
+        "question": "_____ sun is bright.",
+        "translation": "(太阳很亮)",
+        "options": [
+          "The",
+          "A",
+          "An",
+          "no article"
+        ],
+        "correct": "The",
+        "explanation": "独一无二的事物用'the'：'the sun'、'the moon'、'the earth'。只有一个太阳（在我们的语境中），所以它总是明确的。中文说\"太阳\"不加标记，因为唯一性是显而易见的。英语用'the'明确标记确定性。这适用于独特的地理特征、天体和著名地标 - 所有这些都用'the'，因为它们是独一无二的。"
+      },
+      {
+        "id": "ce_art6",
+        "question": "I like _____ music.",
+        "translation": "(我喜欢音乐)",
+        "options": [
+          "no article",
+          "a",
+          "an",
+          "the"
+        ],
+        "correct": "no article",
+        "explanation": "抽象概念和一般类别不使用冠词：'I like music'。当你谈论一般的音乐时，不需要冠词。但如果你说'the music at the party was good'，你在谈论特定的音乐，所以使用'the'。中文在语法上不做这种区分，但英语要求你考虑你指的是所有音乐还是特定的音乐。"
+      },
+      {
+        "id": "ce_art7",
+        "question": "He is _____ teacher.",
+        "translation": "(他是老师)",
+        "options": [
+          "a",
+          "an",
+          "the",
+          "no article"
+        ],
+        "correct": "a",
+        "explanation": "单数职业名词需要'a/an'：'He is a teacher'。中文说\"他是老师\"不加标记。英语需要'a'，因为teacher是可数名词。你在说他属于教师这个类别。没有'a'，英语使用者会觉得句子不完整。这是不定冠词最常见的用法之一 - 识别职业或角色时。"
+      },
+      {
+        "id": "ce_art8",
+        "question": "_____ water is important.",
+        "translation": "(水很重要)",
+        "options": [
+          "no article",
+          "A",
+          "An",
+          "The"
+        ],
+        "correct": "no article",
+        "explanation": "一般的不可数名词不使用冠词：'Water is important'。当谈论作为一般物质的水时，不需要冠词。如果你说'the water in this bottle'，你在指定哪种水，所以使用'the'。中文对\"水\"的处理是相同的，无论是一般的还是特定的，依靠上下文。英语通过冠词在语法上区分这一点。"
+      },
+      {
+        "id": "ce_art9",
+        "question": "I saw _____ movie yesterday.",
+        "translation": "(我昨天看了一部电影)",
+        "options": [
+          "a",
+          "an",
+          "the",
+          "no article"
+        ],
+        "correct": "a",
+        "explanation": "第一次提到的可数名词需要'a/an'：'I saw a movie'。你在将这部电影引入对话。中文说\"看了电影\"不表明确定或不确定。英语需要'a'来进行这个初始引入。如果你继续谈论它，你会说'the movie was good'，切换到'the'因为现在说话者和听众都知道是哪部电影。"
+      },
+      {
+        "id": "ce_art10",
+        "question": "_____ movie was good.",
+        "translation": "(那部电影很好)",
+        "options": [
+          "The",
+          "A",
+          "An",
+          "no article"
+        ],
+        "correct": "The",
+        "explanation": "第二次提到使用'the'：'The movie was good'。用'a'引入后，后续提到切换到'the'。这表明说话者和听众都知道是哪部电影。中文使用\"那部\"或上下文。英语的冠词系统明确跟踪信息是新的（a/an）还是已知的（the）。这种信息流的标记内置于英语语法中。"
+      },
+      {
+        "id": "ce_art11",
+        "question": "I play _____ piano.",
+        "translation": "(我弹钢琴)",
+        "options": [
+          "the",
+          "a",
+          "an",
+          "no article"
+        ],
+        "correct": "the",
+        "explanation": "乐器使用'the'：'play the piano'。这是英语的固定模式。即使你拥有一架钢琴，当谈论演奏时，你说'the piano'而不是'a piano'。中文说\"弹钢琴\"不加标记。英语的乐器惯例是习惯性的 - 演奏任何乐器时都用'the'：the guitar、the violin、the drums。"
+      },
+      {
+        "id": "ce_art12",
+        "question": "_____ dogs are animals.",
+        "translation": "(狗是动物)",
+        "options": [
+          "no article",
+          "The",
+          "A",
+          "An"
+        ],
+        "correct": "no article",
+        "explanation": "一般的复数名词不使用冠词：'Dogs are animals'。当陈述关于所有狗的事情时，使用复数不加冠词。如果你说'the dogs'，你在谈论特定的狗。这就是英语如何区分一个类别的所有成员与特定成员。中文对一般和特定使用类似的方法，依靠上下文和像\"那些\"这样的词。"
+      },
+      {
+        "id": "ce_art13",
+        "question": "I need _____ help.",
+        "translation": "(我需要帮助)",
+        "options": [
+          "no article",
+          "a",
+          "an",
+          "the"
+        ],
+        "correct": "no article",
+        "explanation": "抽象名词通常不用冠词：'I need help'。中文也类似地说\"需要帮助\"。当help是一般概念时，英语省略冠词。但在特定情况下 - 'the help you gave me' - 使用'the'。这种灵活性让你区分一般概念和特定实例，这是英语冠词系统的核心特征。"
+      },
+      {
+        "id": "ce_art14",
+        "question": "She lives in _____ United States.",
+        "translation": "(她住在美国)",
+        "options": [
+          "the",
+          "a",
+          "an",
+          "no article"
+        ],
+        "correct": "the",
+        "explanation": "国家名称包含复数词或'union/kingdom'等词时使用'the'：'the United States'、'the Philippines'、'the United Kingdom'。中文通常说\"美国\"不加冠词。英语对这些国家名称有特定的惯例。大多数国家不用冠词（China、Japan、France），但复数或特定类型的名称需要'the'。"
+      },
+      {
+        "id": "ce_art15",
+        "question": "I eat _____ breakfast at 7.",
+        "translation": "(我7点吃早餐)",
+        "options": [
+          "no article",
+          "a",
+          "an",
+          "the"
+        ],
+        "correct": "no article",
+        "explanation": "餐食名称通常不用冠词：'eat breakfast'、'have lunch'、'eat dinner'。中文也类似地说\"吃早餐\"。英语将餐食视为日常活动而不是物品，所以省略冠词。但如果你说'the breakfast was delicious'，你在谈论特定的一餐，所以使用'the'。这反映了活动与特定实例之间的区别。"
+      }
+    ]
+  },
+  {
+    "key": "past_simple",
+    "name": "Past Simple",
+    "description": "一般过去时",
+    "iconName": "clock.arrow.circlepath",
+    "color": "#fbbf24",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ce_past1",
+        "question": "I _____ to school yesterday.",
+        "translation": "(我昨天去了学校)",
+        "options": [
+          "went",
+          "go",
+          "going",
+          "goes"
+        ],
+        "correct": "went",
+        "explanation": "欢迎来到英语过去时的世界。中文用'了'或时间词表示过去，英语则改变动词形式。'go'的过去式是'went'（不规则变化）。I went = 我去了。英语过去时对所有人称使用同一形式，这点比中文简单 - 不用担心主语是谁，过去式就是went。Yesterday（昨天）这样的时间词帮助明确时态。虽然需要记忆不规则动词，但它们都是常用词，通过练习会变得自然。"
+      },
+      {
+        "id": "ce_past2",
+        "question": "She _____ a book last night.",
+        "translation": "(她昨晚看了一本书)",
+        "options": [
+          "read",
+          "reads",
+          "reading",
+          "readed"
+        ],
+        "correct": "read",
+        "explanation": "'read'是个特别的动词 - 过去式拼写和现在时一样，但发音不同（过去式读作/red/）。She read = 她看了。Last night（昨晚）表明是过去。阅读是美好的习惯，让我们在书中旅行。英语有些不规则动词保持相同拼写，只改变发音。这些小特点使英语有趣。记住常用动词的过去式，就能自如地讲述过去的故事了。"
+      },
+      {
+        "id": "ce_past3",
+        "question": "They _____ football yesterday.",
+        "translation": "(他们昨天踢了足球)",
+        "options": [
+          "played",
+          "play",
+          "playing",
+          "plaied"
+        ],
+        "correct": "played",
+        "explanation": "规则动词的过去式只需加-ed。Play + ed = played。规则动词占大多数，这是好消息。They played = 他们踢了。足球是全球热爱的运动，团队合作和运动精神在其中闪耀。英语的-ed结尾很有规律，掌握了这个规则，就能轻松转换大部分动词。记住规则模式，不规则动词单独记忆，你就能流畅表达过去的事情。"
+      },
+      {
+        "id": "ce_past4",
+        "question": "He _____ coffee this morning.",
+        "translation": "(他今天早上喝了咖啡)",
+        "options": [
+          "drank",
+          "drink",
+          "drunk",
+          "drinking"
+        ],
+        "correct": "drank",
+        "explanation": "'drink'的变化：drink（现在）→ drank（过去）→ drunk（完成时）。He drank = 他喝了。This morning（今天早上）指定时间。咖啡是许多人的晨间仪式，提神醒脑。不规则动词有自己的变化模式，虽然需要记忆，但它们是最常用的词，在日常交流中经常出现，多用自然就记住了。"
+      },
+      {
+        "id": "ce_past5",
+        "question": "We _____ at home all day.",
+        "translation": "(我们一整天都在家)",
+        "options": [
+          "stayed",
+          "stay",
+          "staying",
+          "staied"
+        ],
+        "correct": "stayed",
+        "explanation": "Stay + ed = stayed（规则变化）。We stayed = 我们待在。All day（一整天）说明时长。在家的时光可以是休息、学习或家庭团聚的好机会。规则动词加-ed的模式简单可靠。注意拼写：以y结尾但前面是元音时直接加-ed（stayed），前面是辅音时改y为i再加-ed（如study → studied）。这些小规则帮助正确拼写。"
+      },
+      {
+        "id": "ce_past6",
+        "question": "You _____ a great meal.",
+        "translation": "(你做了一顿很棒的饭)",
+        "options": [
+          "cooked",
+          "cook",
+          "cooking",
+          "cookked"
+        ],
+        "correct": "cooked",
+        "explanation": "Cook + ed = cooked。You cooked = 你做了。烹饪是展现爱与创意的方式，美食连接人心。以k结尾的动词直接加-ed，不用双写（cook → cooked，不是cookked）。这个拼写规则很重要。做饭给别人是表达关怀的美好方式。掌握规则动词的拼写规律，你的英语写作会更加准确流畅。"
+      },
+      {
+        "id": "ce_past7",
+        "question": "She _____ to the store.",
+        "translation": "(她去了商店)",
+        "options": [
+          "went",
+          "go",
+          "gone",
+          "going"
+        ],
+        "correct": "went",
+        "explanation": "Go的过去式went是常用不规则形式。She went = 她去了。To the store（去商店）说明目的地。购物是日常必需，也是了解新产品和社交的机会。Went使用频率极高，很快就会记住。虽然是不规则的，但正因为常用，大家都很熟悉。多听多说，这些不规则形式会自然融入你的语言习惯。"
+      },
+      {
+        "id": "ce_past8",
+        "question": "I _____ my keys.",
+        "translation": "(我丢了钥匙)",
+        "options": [
+          "lost",
+          "lose",
+          "losed",
+          "losing"
+        ],
+        "correct": "lost",
+        "explanation": "Lose → lost（不规则变化）。I lost = 我丢了。丢东西是每个人都经历过的小烦恼。Lost也可以表示迷路（I'm lost = 我迷路了）。这个词在生活中很实用。不规则动词虽然需要记忆，但它们的使用频率高，在对话和阅读中反复出现，自然就记住了。耐心和练习是学习语言的好朋友。"
+      },
+      {
+        "id": "ce_past9",
+        "question": "They _____ the film.",
+        "translation": "(他们看了那部电影)",
+        "options": [
+          "watched",
+          "watch",
+          "watching",
+          "watchhed"
+        ],
+        "correct": "watched",
+        "explanation": "Watch + ed = watched。They watched = 他们看了。看电影是流行的娱乐方式，电影讲述故事，激发情感。以ch结尾的动词直接加-ed（watch → watched）。注意不要双写字母。规则动词的拼写有迹可循，掌握基本规则后，大部分动词都能正确变化。电影是学习语言和文化的好工具。"
+      },
+      {
+        "id": "ce_past10",
+        "question": "We _____ about the news.",
+        "translation": "(我们谈论了新闻)",
+        "options": [
+          "talked",
+          "talk",
+          "talking",
+          "talkked"
+        ],
+        "correct": "talked",
+        "explanation": "Talk + ed = talked。We talked = 我们谈论了。讨论新闻帮助我们了解世界大事。About（关于）引出话题。谈话是人际交流的核心，分享观点和感受加深理解。以k结尾直接加-ed，不双写（talk → talked）。记住这些拼写规则，你的书面英语会更准确。对话练习是提高语言能力的有效方法。"
+      },
+      {
+        "id": "ce_past11",
+        "question": "He _____ very tired.",
+        "translation": "(他非常累)",
+        "options": [
+          "was",
+          "were",
+          "is",
+          "be"
+        ],
+        "correct": "was",
+        "explanation": "Be动词的过去式比较特别：was用于I/he/she/it，were用于you/we/they。He was = 他是（过去）。Very tired = 非常累。疲劳是自然的，休息和睡眠能恢复精力。Be动词虽然不规则，但因为太常用，很容易掌握。Was和were的区别主要看主语。理解这个，过去时的be动词就不难了。照顾好身体很重要。"
+      },
+      {
+        "id": "ce_past12",
+        "question": "You _____ at the party.",
+        "translation": "(你在聚会上)",
+        "options": [
+          "were",
+          "was",
+          "is",
+          "be"
+        ],
+        "correct": "were",
+        "explanation": "You总是用were，即使是单数的你。You were = 你在/你是（过去）。At the party（在聚会上）说明地点。聚会是社交和庆祝的时刻，与朋友相聚带来快乐回忆。英语的you不区分单复数，都用were。这个规则一旦记住就很简单。Be动词是英语基础，掌握好它能帮助构建正确的句子。"
+      },
+      {
+        "id": "ce_past13",
+        "question": "I _____ a letter.",
+        "translation": "(我写了一封信)",
+        "options": [
+          "wrote",
+          "write",
+          "writing",
+          "writed"
+        ],
+        "correct": "wrote",
+        "explanation": "Write → wrote（不规则）。I wrote = 我写了。在数字时代，手写信显得格外珍贵和用心。信件承载着情感和思想。Wrote是常用过去式，通过阅读和写作练习会自然记住。写作是整理思维和表达自我的好方式。每个不规则动词都有自己的故事，慢慢积累，词汇量会稳步增长。"
+      },
+      {
+        "id": "ce_past14",
+        "question": "She _____ happy.",
+        "translation": "(她很开心)",
+        "options": [
+          "was",
+          "were",
+          "is",
+          "be"
+        ],
+        "correct": "was",
+        "explanation": "She was happy = 她（那时）很开心。Was用于第三人称单数（he/she/it）的过去。快乐是美好的情绪，值得珍惜和分享。回忆快乐时光让人温暖。英语用be动词表达状态和情绪，过去的情绪用was/were。掌握be动词的变化是英语学习的重要基础，它出现在各种句型中。"
+      },
+      {
+        "id": "ce_past15",
+        "question": "They _____ late.",
+        "translation": "(他们迟到了)",
+        "options": [
+          "arrived",
+          "arrive",
+          "arriving",
+          "arrivved"
+        ],
+        "correct": "arrived",
+        "explanation": "Arrive以e结尾，加d即可（arrive + d = arrived）。They arrived late = 他们迟到了。迟到有时难以避免，理解和宽容很重要。Late可以是形容词或副词。以e结尾的动词加d而不是ed，这是拼写规则的一部分。掌握这些细节让你的英语更加精确。守时是美德，但偶尔的迟到也需要相互理解。"
+      }
+    ]
+  },
+  {
+    "key": "present_continuous",
+    "name": "Present Continuous",
+    "description": "现在进行时",
+    "iconName": "waveform.path.ecg",
+    "color": "#60a5fa",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ce_cont1",
+        "question": "I _____ studying now.",
+        "translation": "(我现在正在学习)",
+        "options": [
+          "am",
+          "is",
+          "are",
+          "be"
+        ],
+        "correct": "am",
+        "explanation": "现在进行时表示此刻正在进行的动作。结构：am/is/are + 动词-ing。I用am，所以是I am studying。Now（现在）强调当前时刻。学习需要专注和安静的环境。这个时态在英语中使用频繁，表达正在发生的事。掌握am/is/are的选择（I am, you are, he/she/it is）和-ing的形式，就能灵活运用这个时态描述眼前的动作。"
+      },
+      {
+        "id": "ce_cont2",
+        "question": "She _____ reading a book.",
+        "translation": "(她正在看书)",
+        "options": [
+          "is",
+          "am",
+          "are",
+          "be"
+        ],
+        "correct": "is",
+        "explanation": "He/she/it用is。She is reading = 她正在读。阅读开启想象和知识的大门，每本书都是一次旅程。Reading = read + ing（去e加ing）。现在进行时让描述生动，仿佛动作就在眼前发生。Is配合第三人称单数，这个规律很稳定。多练习，配对主语和be动词会成为自然反应。"
+      },
+      {
+        "id": "ce_cont3",
+        "question": "They _____ playing football.",
+        "translation": "(他们正在踢足球)",
+        "options": [
+          "are",
+          "is",
+          "am",
+          "be"
+        ],
+        "correct": "are",
+        "explanation": "You/we/they用are。They are playing = 他们正在踢。足球培养团队精神和身体健康。Playing = play + ing（直接加）。现在进行时描绘动态场景，让语言充满活力。Are的使用范围广（你、我们、他们），记住这个，大部分复数和第二人称的进行时就没问题了。运动有益身心健康。"
+      },
+      {
+        "id": "ce_cont4",
+        "question": "He _____ watching TV.",
+        "translation": "(他正在看电视)",
+        "options": [
+          "is",
+          "am",
+          "are",
+          "be"
+        ],
+        "correct": "is",
+        "explanation": "He is watching = 他正在看。看电视是常见的放松方式，节目提供信息和娱乐。Watching = watch + ing。现在进行时让我们描述此刻的活动。Is用于he/she/it，这是固定搭配。适度的电视时间可以是放松和学习的结合。平衡各种活动让生活更丰富。"
+      },
+      {
+        "id": "ce_cont5",
+        "question": "We _____ eating dinner.",
+        "translation": "(我们正在吃晚饭)",
+        "options": [
+          "are",
+          "is",
+          "am",
+          "be"
+        ],
+        "correct": "are",
+        "explanation": "We are eating = 我们正在吃。晚餐是家人团聚、分享一天经历的时光。Eating = eat + ing（去e加ing，双写t不需要）。注意：eat不双写t，直接加ing。家庭用餐增进感情和沟通。现在进行时捕捉当下瞬间，让表达更具体生动。慢慢享受食物，用心交流，让每餐都有意义。"
+      },
+      {
+        "id": "ce_cont6",
+        "question": "You _____ working hard.",
+        "translation": "(你正在努力工作)",
+        "options": [
+          "are",
+          "is",
+          "am",
+          "be"
+        ],
+        "correct": "are",
+        "explanation": "You are working hard = 你正在努力工作。勤奋是成功的基石，但也要记得休息。Working = work + ing。用进行时夸奖别人的努力，表达及时的认可和鼓励。You配are，无论单复数。平衡工作和休息对身心健康很重要。认可他人的付出能激励人心。"
+      },
+      {
+        "id": "ce_cont7",
+        "question": "I _____ listening to music.",
+        "translation": "(我正在听音乐)",
+        "options": [
+          "am",
+          "is",
+          "are",
+          "be"
+        ],
+        "correct": "am",
+        "explanation": "I am listening = 我正在听。音乐是世界语言，表达情感，安抚心灵。Listening = listen + ing。音乐能改善心情，陪伴我们度过各种时刻。现在进行时强调动作正在进行，与简单现在时（习惯）不同。I搭配am，形成'I am + -ing'的固定格式。音乐的力量跨越语言和文化。"
+      },
+      {
+        "id": "ce_cont8",
+        "question": "She _____ cooking lunch.",
+        "translation": "(她正在做午饭)",
+        "options": [
+          "is",
+          "am",
+          "are",
+          "be"
+        ],
+        "correct": "is",
+        "explanation": "She is cooking = 她正在做。烹饪是技能也是艺术，香气弥漫，温暖人心。Cooking = cook + ing。准备食物是爱的表达。进行时描述正在进行的过程，你能想象她在厨房忙碌的场景。She配is，这个搭配要牢记。烹饪技能让人受益终身。"
+      },
+      {
+        "id": "ce_cont9",
+        "question": "They _____ running in the park.",
+        "translation": "(他们正在公园里跑步)",
+        "options": [
+          "are",
+          "is",
+          "am",
+          "be"
+        ],
+        "correct": "are",
+        "explanation": "They are running = 他们正在跑。跑步增强心肺，公园的自然环境让运动更愉快。Running = run + ning（双写n）。短元音+单辅音结尾要双写再加ing（run → running, swim → swimming）。户外运动亲近自然，有益健康。They配are。运动让身体和心情都更好。"
+      },
+      {
+        "id": "ce_cont10",
+        "question": "He _____ sleeping.",
+        "translation": "(他正在睡觉)",
+        "options": [
+          "is",
+          "am",
+          "are",
+          "be"
+        ],
+        "correct": "is",
+        "explanation": "He is sleeping = 他正在睡。睡眠对健康至关重要，修复身体，整理记忆。Sleeping = sleep + ing。充足睡眠提升专注力和心情。用进行时说明他此刻在睡觉，轻声点，别打扰。He配is。良好睡眠是健康生活的基础。尊重他人的休息时间很重要。"
+      },
+      {
+        "id": "ce_cont11",
+        "question": "We _____ learning English.",
+        "translation": "(我们正在学英语)",
+        "options": [
+          "are",
+          "is",
+          "am",
+          "be"
+        ],
+        "correct": "are",
+        "explanation": "We are learning = 我们正在学。学习语言打开新世界，连接不同文化。Learning = learn + ing。每节课都是进步，每个单词都是成就。We配are。进行时也可表示一段时期的持续动作（我们这段时间在学英语）。语言学习需要耐心和坚持，每一步都有意义。"
+      },
+      {
+        "id": "ce_cont12",
+        "question": "You _____ writing a letter.",
+        "translation": "(你正在写信)",
+        "options": [
+          "are",
+          "is",
+          "am",
+          "be"
+        ],
+        "correct": "are",
+        "explanation": "You are writing = 你正在写。写信是深思熟虑的沟通方式，手写更显真诚。Writing = write + ing（去e加ing）。文字能跨越距离传递情感。You配are。写作整理思绪，表达心意。现在进行时描绘书写的过程。在快节奏时代，静心写字是珍贵的时刻。"
+      },
+      {
+        "id": "ce_cont13",
+        "question": "I _____ drinking water.",
+        "translation": "(我正在喝水)",
+        "options": [
+          "am",
+          "is",
+          "are",
+          "be"
+        ],
+        "correct": "am",
+        "explanation": "I am drinking = 我正在喝。水是生命之源，保持水分让身体和大脑运作良好。Drinking = drink + ing。水是最好的饮料，无糖无卡路里。I配am。现在进行时聚焦当下动作。规律喝水是健康习惯。简单的动作，重要的习惯。"
+      },
+      {
+        "id": "ce_cont14",
+        "question": "She _____ dancing.",
+        "translation": "(她正在跳舞)",
+        "options": [
+          "is",
+          "am",
+          "are",
+          "be"
+        ],
+        "correct": "is",
+        "explanation": "She is dancing = 她正在跳舞。舞蹈是身体语言，随音乐释放情感和能量。Dancing = dance + ing（去e加ing）。每种文化都有独特的舞蹈。She配is。舞蹈带来快乐和自由。进行时让我们看到她优雅的动作。跳舞是美好的表达方式。"
+      },
+      {
+        "id": "ce_cont15",
+        "question": "They _____ talking.",
+        "translation": "(他们正在交谈)",
+        "options": [
+          "are",
+          "is",
+          "am",
+          "be"
+        ],
+        "correct": "are",
+        "explanation": "They are talking = 他们正在交谈。对话是人际交往的核心，交流想法，建立关系。Talking = talk + ing。良好的倾听和表达构成有效对话。They配are。进行时描绘对话正在进行。交谈连接人心，分享彼此的世界。沟通是理解的桥梁。"
+      }
+    ]
+  },
+  {
+    "key": "future_simple",
+    "name": "Future Simple",
+    "description": "一般将来时",
+    "iconName": "bolt",
+    "color": "#c084fc",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ce_fut1",
+        "question": "I _____ tomorrow.",
+        "translation": "(我明天会去)",
+        "options": [
+          "will go",
+          "go",
+          "went",
+          "going"
+        ],
+        "correct": "will go",
+        "explanation": "英语将来时非常简单优雅：will + 动词原形。I will go = 我将会去。所有人称都用will，不需要变化，这比中文的'会'、'将'更统一。Tomorrow（明天）标明未来。Will表达意愿、预测和承诺。这个结构简单可靠，掌握后你就能自如地谈论未来的计划和梦想。将来时打开想象的大门。"
+      },
+      {
+        "id": "ce_fut2",
+        "question": "She _____ French.",
+        "translation": "(她会说法语)",
+        "options": [
+          "will speak",
+          "speaks",
+          "spoke",
+          "speaking"
+        ],
+        "correct": "will speak",
+        "explanation": "Will + speak。She will speak French = 她将会说法语。学习新语言是对未来的投资，法语优雅动听。Will后面的动词永远是原形（speak，不是speaks）。这个规则很固定，简化了将来时的学习。语言能力开启新的文化视野。每掌握一门语言，就多一个看世界的角度。"
+      },
+      {
+        "id": "ce_fut3",
+        "question": "They _____ at 8 PM.",
+        "translation": "(他们晚上8点会到)",
+        "options": [
+          "will arrive",
+          "arrive",
+          "arrived",
+          "arriving"
+        ],
+        "correct": "will arrive",
+        "explanation": "Will + arrive。They will arrive at 8 PM = 他们将在晚8点到达。At 8 PM指定具体时间。准时很重要，知道到达时间方便安排。Will对所有主语都一样，这种一致性让将来时易学易用。期待和规划是人类特有的能力。将来时帮助我们表达这些对未来的设想。"
+      },
+      {
+        "id": "ce_fut4",
+        "question": "He _____ the exam.",
+        "translation": "(他会参加考试)",
+        "options": [
+          "will take",
+          "takes",
+          "took",
+          "taking"
+        ],
+        "correct": "will take",
+        "explanation": "Will + take。He will take the exam = 他将参加考试。Take an exam是固定搭配。考试检验学习成果，准备充分能减少紧张。Will表达对未来的计划和决心。每次考试都是成长的机会。掌握will + 动词原形这个简单公式，你就能轻松谈论未来的各种事情。"
+      },
+      {
+        "id": "ce_fut5",
+        "question": "We _____ together.",
+        "translation": "(我们会一起工作)",
+        "options": [
+          "will work",
+          "work",
+          "worked",
+          "working"
+        ],
+        "correct": "will work",
+        "explanation": "Will + work。We will work together = 我们将一起工作。Together（一起）强调合作。团队协作能完成个人难以完成的事。Will的一致性让将来时成为英语中最简单的时态之一。合作需要沟通和相互理解。未来充满可能，良好的合作关系能让这些可能变为现实。"
+      },
+      {
+        "id": "ce_fut6",
+        "question": "You _____ better soon.",
+        "translation": "(你很快会好起来)",
+        "options": [
+          "will feel",
+          "feel",
+          "felt",
+          "feeling"
+        ],
+        "correct": "will feel",
+        "explanation": "Will + feel。You will feel better soon = 你很快会感觉好些。这是鼓励和安慰的话。Soon（很快）给予希望。身体不适时，这样的话语温暖人心。Will在这里表达对未来好转的信心。积极的期待有助于康复。关心他人的健康体现人性的温暖。"
+      },
+      {
+        "id": "ce_fut7",
+        "question": "I _____ a doctor.",
+        "translation": "(我会成为医生)",
+        "options": [
+          "will be",
+          "am",
+          "was",
+          "being"
+        ],
+        "correct": "will be",
+        "explanation": "Will + be。I will be a doctor = 我将成为医生。即使是最不规则的be动词，在将来时也简单遵循will + 原形。医生是崇高的职业，救死扶伤。职业梦想需要规划和努力。将来时帮我们表达志向和目标。每个梦想都值得尊重，每个为梦想努力的人都值得鼓励。"
+      },
+      {
+        "id": "ce_fut8",
+        "question": "She _____ the book.",
+        "translation": "(她会读那本书)",
+        "options": [
+          "will read",
+          "reads",
+          "read",
+          "reading"
+        ],
+        "correct": "will read",
+        "explanation": "Will + read。She will read the book = 她将读那本书。阅读未来的书是对知识的承诺。书籍承载智慧和故事。Will + 动词原形的简单结构适用于所有情况。计划阅读是好习惯，每本书都是一次心灵之旅。为未来安排阅读时间是对自己的投资。"
+      },
+      {
+        "id": "ce_fut9",
+        "question": "They _____ the truth.",
+        "translation": "(他们会知道真相)",
+        "options": [
+          "will know",
+          "know",
+          "knew",
+          "knowing"
+        ],
+        "correct": "will know",
+        "explanation": "Will + know。They will know the truth = 他们将知道真相。真相终会浮现。The truth（真相）是重要的概念。知识和真相带来理解和公正。Will在这里表达确定性。时间会揭示一切。真诚和诚实是人际关系的基石。未来会带来答案和清晰。"
+      },
+      {
+        "id": "ce_fut10",
+        "question": "We _____ happy.",
+        "translation": "(我们会很开心)",
+        "options": [
+          "will be",
+          "are",
+          "were",
+          "being"
+        ],
+        "correct": "will be",
+        "explanation": "Will + be。We will be happy = 我们将会快乐。对幸福未来的期望给人力量。Be动词在将来时遵循同样简单的规则。快乐是人生追求，积极的态度创造美好未来。Will be可以描述未来的状态和感受。希望和乐观让我们继续前行。建设幸福未来从今天的行动开始。"
+      },
+      {
+        "id": "ce_fut11",
+        "question": "You _____ this weekend.",
+        "translation": "(你这周末会来)",
+        "options": [
+          "will come",
+          "come",
+          "came",
+          "coming"
+        ],
+        "correct": "will come",
+        "explanation": "Will + come。You will come this weekend = 你这周末会来。This weekend指定近期时间。相聚的期待让人心情愉悦。Will表达对见面的期望。周末是休息和社交的好时光。朋友间的约定用将来时表达。计划聚会需要协调时间，将来时帮助做出承诺。"
+      },
+      {
+        "id": "ce_fut12",
+        "question": "He _____ the door.",
+        "translation": "(他会开门)",
+        "options": [
+          "will open",
+          "opens",
+          "opened",
+          "opening"
+        ],
+        "correct": "will open",
+        "explanation": "Will + open。He will open the door = 他将开门。开门是简单动作，也象征着欢迎和机会。Will表达即将发生的动作。Door（门）在语言中常有象征意义。每扇开启的门都可能通向新的可能。小小的礼貌举动体现关怀。将来时描述即将到来的行动。"
+      },
+      {
+        "id": "ce_fut13",
+        "question": "I _____ my homework.",
+        "translation": "(我会做作业)",
+        "options": [
+          "will do",
+          "do",
+          "did",
+          "doing"
+        ],
+        "correct": "will do",
+        "explanation": "Will + do。I will do my homework = 我将做作业。这是对责任的承诺。Do homework是固定搭配。作业巩固学习，培养自律。Will表达完成任务的决心。及时完成作业减轻压力，提高学习效果。对未来的规划包括这些日常责任。良好的学习习惯塑造未来。"
+      },
+      {
+        "id": "ce_fut14",
+        "question": "She _____ to France.",
+        "translation": "(她会去法国)",
+        "options": [
+          "will go",
+          "goes",
+          "went",
+          "going"
+        ],
+        "correct": "will go",
+        "explanation": "Will + go。She will go to France = 她将去法国。旅行梦想令人兴奋，法国有丰富的文化和历史。Will表达未来的旅行计划。每个国家都有独特的魅力。旅行开阔视野，创造回忆。将来时帮助我们谈论期待的旅程。梦想和计划让生活充满期待。"
+      },
+      {
+        "id": "ce_fut15",
+        "question": "They _____ us tomorrow.",
+        "translation": "(他们明天会打电话给我们)",
+        "options": [
+          "will call",
+          "call",
+          "called",
+          "calling"
+        ],
+        "correct": "will call",
+        "explanation": "Will + call。They will call us tomorrow = 他们明天会给我们打电话。Call表示电话联系。Tomorrow指定时间。期待朋友的电话让人开心。Will表达未来的沟通计划。保持联系维护关系。现代技术让跨越距离的沟通变得容易。将来时表达这些即将到来的联系。"
+      }
+    ]
+  },
+  {
+    "key": "modal_verbs",
+    "name": "Modal Verbs",
+    "description": "情态动词",
+    "iconName": "shield",
+    "color": "#4ade80",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ce_mod1",
+        "question": "I _____ swim.",
+        "translation": "(我会游泳)",
+        "options": [
+          "can",
+          "must",
+          "should",
+          "will"
+        ],
+        "correct": "can",
+        "explanation": "情态动词是英语的特色，给动词增添意义。Can表示能力和可能性。I can swim = 我会游泳。Can后面接动词原形（不加to）。游泳是实用技能，也是好运动。Can的用法广泛，表达能做某事。掌握情态动词让表达更丰富准确。每个情态动词都有独特的含义和用法。"
+      },
+      {
+        "id": "ce_mod2",
+        "question": "You _____ study harder.",
+        "translation": "(你应该更努力学习)",
+        "options": [
+          "should",
+          "can",
+          "will",
+          "may"
+        ],
+        "correct": "should",
+        "explanation": "Should给出建议或推荐。You should study harder = 你应该更努力学习。这是善意的建议。Should比must温和，是建议而非命令。努力学习带来好结果。Should表达说话人的看法和关心。给予建议是关心他人的方式。适度的建议帮助他人成长。"
+      },
+      {
+        "id": "ce_mod3",
+        "question": "She _____ speak English well.",
+        "translation": "(她能说好英语)",
+        "options": [
+          "can",
+          "must",
+          "should",
+          "would"
+        ],
+        "correct": "can",
+        "explanation": "Can表能力。She can speak English well = 她能说好英语。Well（好）描述程度。流利的语言能力是成就。Can用于描述已有的技能。每个语言学习者都向这个目标努力。能力通过练习获得。Can表达对某人技能的认可。语言能力开启沟通之门。"
+      },
+      {
+        "id": "ce_mod4",
+        "question": "We _____ go now.",
+        "translation": "(我们必须现在走)",
+        "options": [
+          "must",
+          "can",
+          "may",
+          "should"
+        ],
+        "correct": "must",
+        "explanation": "Must表达强烈的必要性或义务。We must go now = 我们必须现在走。Must比should更强，是必须而非建议。有时情况要求我们立即行动。Must表达紧迫性。遵守必要的事情体现责任。理解must和should的区别帮助正确表达程度。时间有时是刚性的。"
+      },
+      {
+        "id": "ce_mod5",
+        "question": "He _____ be at home.",
+        "translation": "(他可能在家)",
+        "options": [
+          "might",
+          "must",
+          "can",
+          "will"
+        ],
+        "correct": "might",
+        "explanation": "Might表示较弱的可能性。He might be at home = 他可能在家。不确定，但有可能。Might比may的可能性更低。生活中很多事情不确定。Might表达这种不确定性。灵活的思维接受多种可能。对未知保持开放态度很重要。情态动词的细微差别增加表达的精确性。"
+      },
+      {
+        "id": "ce_mod6",
+        "question": "You _____ wear a coat.",
+        "translation": "(你应该穿外套)",
+        "options": [
+          "should",
+          "can",
+          "must",
+          "may"
+        ],
+        "correct": "should",
+        "explanation": "Should给建议。You should wear a coat = 你应该穿外套。关心他人健康的建议。Should表达对他人福祉的关心。天冷穿外套预防感冒。实用的建议出于关怀。适当的衣着保护身体。Should的建议性质让接受者有选择权。关心体现在细节中。"
+      },
+      {
+        "id": "ce_mod7",
+        "question": "They _____ arrive soon.",
+        "translation": "(他们会很快到)",
+        "options": [
+          "will",
+          "can",
+          "must",
+          "may"
+        ],
+        "correct": "will",
+        "explanation": "虽然will主要表将来，也常和情态动词归为一类。They will arrive soon = 他们会很快到。Soon（很快）给时间框架。期待到来让人愉快。Will表达确定性较高的未来事件。等待的时间因期待而美好。Will是表达未来最常用的方式。到达意味着团聚。"
+      },
+      {
+        "id": "ce_mod8",
+        "question": "I _____ like some tea.",
+        "translation": "(我想要些茶)",
+        "options": [
+          "would",
+          "can",
+          "must",
+          "will"
+        ],
+        "correct": "would",
+        "explanation": "Would用于礼貌请求或表达愿望。I would like some tea = 我想要些茶。比I want更礼貌。Would like是礼貌表达的标准方式。茶是舒适的饮品。礼貌的语言表达尊重。Would在提出请求时软化语气。文明的交流让人舒适。礼貌是社交的润滑剂。"
+      },
+      {
+        "id": "ce_mod9",
+        "question": "She _____ play the piano.",
+        "translation": "(她会弹钢琴)",
+        "options": [
+          "can",
+          "must",
+          "should",
+          "would"
+        ],
+        "correct": "can",
+        "explanation": "Can表能力。She can play the piano = 她会弹钢琴。音乐才能是美好的天赋。Piano（钢琴）是优雅的乐器。Can描述已掌握的技能。音乐表达情感和艺术。每种才能都值得欣赏。Can让我们谈论自己和他人的能力。艺术丰富人生。"
+      },
+      {
+        "id": "ce_mod10",
+        "question": "We _____ leave early.",
+        "translation": "(我们必须早走)",
+        "options": [
+          "must",
+          "can",
+          "may",
+          "would"
+        ],
+        "correct": "must",
+        "explanation": "Must表必要。We must leave early = 我们必须早走。Early（早）给足够时间。有时需要提前以避免迟到。Must表达不可商量的必要性。时间管理是重要技能。Must帮助强调严肃性。准时体现尊重和责任。提前规划避免匆忙。"
+      },
+      {
+        "id": "ce_mod11",
+        "question": "You _____ smoke here.",
+        "translation": "(你不能在这里吸烟)",
+        "options": [
+          "cannot",
+          "must",
+          "should",
+          "will"
+        ],
+        "correct": "cannot",
+        "explanation": "Cannot（can't）表禁止或不可能。You cannot smoke here = 你不能在这里吸烟。公共场所的规定保护健康。Cannot否定can，表达不允许。吸烟有害健康。尊重规则维护公共利益。Cannot清楚表达限制。健康意识在提高。遵守规定是公民素质。"
+      },
+      {
+        "id": "ce_mod12",
+        "question": "He _____ be tired.",
+        "translation": "(他一定很累)",
+        "options": [
+          "must",
+          "can",
+          "may",
+          "will"
+        ],
+        "correct": "must",
+        "explanation": "Must也用于强烈推断。He must be tired = 他一定很累。基于观察的逻辑推断。Must表达说话人的确信。疲劳是正常的身体信号。理解他人的状态体现同理心。Must的推断用法很常见。观察和推理是理解的基础。关心他人需要敏锐观察。"
+      },
+      {
+        "id": "ce_mod13",
+        "question": "They _____ come to the party.",
+        "translation": "(他们可能会来聚会)",
+        "options": [
+          "may",
+          "must",
+          "will",
+          "can"
+        ],
+        "correct": "may",
+        "explanation": "May表中等可能性。They may come to the party = 他们可能会来。不确定但有希望。May比might的可能性稍高。聚会因朋友而有趣。May表达不确定的未来。灵活的计划适应变化。May的概率在can和might之间。期待但不强求让心态平和。"
+      },
+      {
+        "id": "ce_mod14",
+        "question": "I _____ help you.",
+        "translation": "(我会帮助你)",
+        "options": [
+          "will",
+          "must",
+          "should",
+          "may"
+        ],
+        "correct": "will",
+        "explanation": "Will表承诺或意愿。I will help you = 我会帮助你。承诺帮助建立信任。Will表达坚定的决心。帮助他人是美德。Will使承诺明确。互助让社会温暖。Will的承诺性用法表达责任感。真诚的帮助不求回报。"
+      },
+      {
+        "id": "ce_mod15",
+        "question": "You _____ try this food.",
+        "translation": "(你应该尝尝这个食物)",
+        "options": [
+          "should",
+          "can",
+          "must",
+          "will"
+        ],
+        "correct": "should",
+        "explanation": "Should建议尝试。You should try this food = 你应该尝尝这个食物。友好的推荐。Should邀请但不强迫。尝试新食物拓展味觉。Should的建议性质尊重选择。美食是文化的一部分。Should表达分享好体验的愿望。开放的心态让生活丰富。"
+      }
+    ]
+  }
+]

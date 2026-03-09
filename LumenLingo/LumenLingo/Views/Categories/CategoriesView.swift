@@ -12,6 +12,10 @@ struct CategoriesView: View {
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.dismiss) private var dismiss
     @Environment(ContentLoader.self) private var contentLoader
+    @Environment(\.localization) private var localization
+
+    private var L: AppStrings { localization.strings }
+    private var isDark: Bool { colorScheme == .dark }
 
     @Binding var navigationPath: NavigationPath
 
@@ -23,16 +27,39 @@ struct CategoriesView: View {
     @State private var isLoading: Bool = true
     @State private var searchText: String = ""
     @State private var showCompletedFilter: Bool = false
+    @State private var showFavoritesOnly: Bool = false
     @State private var isGridView: Bool = true
+    @State private var currentPage: Int = 0
+    @State private var emptyPulse: Bool = false
+    @State private var pressedCardId: String? = nil
+
+    // Frozen empty-state content — updated only when transitioning INTO empty
+    @State private var frozenEmptyIcon: String = "tray"
+    @State private var frozenEmptyTitle: String = "No Categories"
+    @State private var frozenEmptySubtitle: String = ""
+    @State private var frozenShowClearButton: Bool = false
+
+    /// Pre-computed set of favorite category IDs for O(1) lookups.
+    private var favoriteIds: Set<String> {
+        let gameTypeRaw = gameType.rawValue
+        return Set(favorites.filter { $0.gameType == gameTypeRaw }.map { $0.categoryKey })
+    }
 
     private var filteredCategories: [CategoryDisplayItem] {
+        let favIds = favoriteIds
         var items = categories
+
+        // Favorites-only filter
+        if showFavoritesOnly {
+            items = items.filter { favIds.contains($0.id) }
+        }
 
         // Search filter
         if !searchText.isEmpty {
+            let query = searchText.lowercased()
             items = items.filter {
-                $0.name.localizedCaseInsensitiveContains(searchText) ||
-                $0.description.localizedCaseInsensitiveContains(searchText)
+                $0.name.lowercased().contains(query) ||
+                $0.description.lowercased().contains(query)
             }
         }
 
@@ -43,8 +70,8 @@ struct CategoriesView: View {
 
         // Sort: favorites first, then by order
         items.sort { a, b in
-            let aFav = isFavorite(a.id)
-            let bFav = isFavorite(b.id)
+            let aFav = favIds.contains(a.id)
+            let bFav = favIds.contains(b.id)
             if aFav != bFav { return aFav }
             return a.order < b.order
         }
@@ -52,37 +79,123 @@ struct CategoriesView: View {
         return items
     }
 
-    var body: some View {
-        VStack(spacing: 0) {
-            // Header
-            categoryHeader
+    /// Items per page: 6 for grid (2 columns × 3 rows), 4 for list.
+    private var itemsPerPage: Int { isGridView ? 6 : 4 }
 
-            if isLoading {
-                Spacer()
-                ProgressView()
-                    .scaleEffect(1.5)
-                    .tint(.white)
-                Spacer()
-            } else if filteredCategories.isEmpty {
-                Spacer()
-                emptyState
-                Spacer()
-            } else {
-                ScrollView {
-                    categoryGrid
-                        .padding(.horizontal, 16)
-                        .padding(.top, 12)
-                        .padding(.bottom, 100)
+    private var totalPages: Int {
+        max(1, Int(ceil(Double(filteredCategories.count) / Double(itemsPerPage))))
+    }
+
+    private var paginatedCategories: [CategoryDisplayItem] {
+        let start = currentPage * itemsPerPage
+        guard start < filteredCategories.count else { return [] }
+        let end = min(start + itemsPerPage, filteredCategories.count)
+        return Array(filteredCategories[start..<end])
+    }
+
+    private var paginationAccentColors: [Color] {
+        switch gameType {
+        case .flashCards: [Color(hex: "#667eea"), Color(hex: "#06b6d4")]
+        case .grammar: [Color(hex: "#f093fb"), Color(hex: "#f5576c")]
+        case .wordBuilder: [Color(hex: "#fbbf24"), Color(hex: "#f97316")]
+        }
+    }
+
+    var body: some View {
+        let isEmpty = !isLoading && filteredCategories.isEmpty
+        let hasContent = !isLoading && !filteredCategories.isEmpty
+
+        ZStack(alignment: .bottom) {
+            VStack(spacing: 0) {
+                // Header
+                categoryHeader
+
+                ZStack {
+                    // Loading
+                    if isLoading {
+                        ProgressView()
+                            .scaleEffect(1.5)
+                            .tint(.white)
+                            .transition(.blurReplace)
+                    }
+
+                    // Empty state — always in tree, driven by opacity
+                    emptyState
+                        .opacity(isEmpty ? 1 : 0)
+                        .scaleEffect(isEmpty ? 1 : 0.92)
+                        .blur(radius: isEmpty ? 0 : 6)
+                        .allowsHitTesting(isEmpty)
+
+                    // Content grid
+                    ScrollView {
+                        categoryGrid
+                            .padding(.horizontal, 16)
+                            .padding(.top, 12)
+                            .padding(.bottom, 130)
+                    }
+                    .opacity(hasContent ? 1 : 0)
+                    .blur(radius: hasContent ? 0 : 4)
+                    .allowsHitTesting(hasContent)
+                }
+                .frame(maxHeight: .infinity)
+                .animation(.smooth(duration: 0.45), value: isEmpty)
+            }
+
+            // Floating liquid glass pagination panel
+            LiquidGlassPagination(
+                currentPage: currentPage,
+                totalPages: totalPages,
+                accentColors: paginationAccentColors
+            ) { newPage in
+                withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
+                    currentPage = newPage
                 }
             }
+            .padding(.bottom, 16)
+            .opacity(hasContent ? 1 : 0)
+            .offset(y: hasContent ? 0 : 20)
+            .animation(.smooth(duration: 0.35), value: hasContent)
         }
-        .cosmicBackground(
-            preset: backgroundPreset,
-            orbScheme: orbScheme
-        )
+        .cosmicBackground()
         .navigationBarBackButtonHidden()
         .toolbar(.hidden, for: .navigationBar)
+        .toolbar(.hidden, for: .tabBar)
         .onAppear { loadCategories() }
+        .onChange(of: searchText) { _, _ in
+            withAnimation { currentPage = 0 }
+            freezeEmptyContentIfNeeded()
+        }
+        .onChange(of: showCompletedFilter) { _, _ in
+            withAnimation(.smooth(duration: 0.3)) { currentPage = 0 }
+            freezeEmptyContentIfNeeded()
+        }
+        .onChange(of: showFavoritesOnly) { _, _ in
+            withAnimation(.smooth(duration: 0.3)) { currentPage = 0 }
+            freezeEmptyContentIfNeeded()
+        }
+        .onChange(of: isGridView) { _, _ in
+            withAnimation(.smooth(duration: 0.3)) { currentPage = 0 }
+        }
+        .simultaneousGesture(
+            DragGesture(minimumDistance: 40, coordinateSpace: .local)
+                .onEnded { value in
+                    let horizontal = value.translation.width
+                    let vertical = abs(value.translation.height)
+                    // Only paginate on predominantly horizontal swipes
+                    guard abs(horizontal) > vertical * 1.5 else { return }
+                    if horizontal < -40, currentPage < totalPages - 1 {
+                        withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
+                            currentPage += 1
+                        }
+                        HapticsService.light()
+                    } else if horizontal > 40, currentPage > 0 {
+                        withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
+                            currentPage -= 1
+                        }
+                        HapticsService.light()
+                    }
+                }
+        )
     }
 
     // MARK: - Header
@@ -93,17 +206,27 @@ struct CategoriesView: View {
                 Button { dismiss() } label: {
                     HStack(spacing: 6) {
                         Image(systemName: "chevron.left")
-                        Text("Back")
+                        Text(L.back)
                     }
                     .font(.subheadline)
-                    .foregroundStyle(.white.opacity(0.7))
+                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
                 }
+                .buttonStyle(LumenPressStyle(weight: .soft))
 
                 Spacer()
 
                 Text(gameType.displayName)
                     .font(.title3.bold())
-                    .foregroundStyle(.white)
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: {
+                                let cs = GameCardColorScheme.forType(gameType)
+                                return [cs.primary, cs.secondary]
+                            }(),
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
 
                 Spacer()
 
@@ -115,18 +238,19 @@ struct CategoriesView: View {
                 } label: {
                     Image(systemName: isGridView ? "square.grid.2x2.fill" : "list.bullet")
                         .font(.body)
-                        .foregroundStyle(.white.opacity(0.6))
+                        .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
                 }
+                .buttonStyle(LumenPressStyle(weight: .soft))
             }
 
             // Search bar
             HStack(spacing: 10) {
                 Image(systemName: "magnifyingglass")
-                    .foregroundStyle(.white.opacity(0.4))
+                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
 
-                TextField("Search categories", text: $searchText)
+                TextField(L.searchCategories, text: $searchText)
                     .font(.subheadline)
-                    .foregroundStyle(.white)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
                     .autocorrectionDisabled()
 
                 if !searchText.isEmpty {
@@ -134,26 +258,44 @@ struct CategoriesView: View {
                         searchText = ""
                     } label: {
                         Image(systemName: "xmark.circle.fill")
-                            .foregroundStyle(.white.opacity(0.4))
+                            .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
                     }
+                    .buttonStyle(LumenPressStyle(weight: .soft))
                 }
+
+                // Filter: favorites only
+                Button {
+                    withAnimation(.smooth(duration: 0.35)) {
+                        showFavoritesOnly.toggle()
+                    }
+                } label: {
+                    Image(systemName: showFavoritesOnly ? "heart.fill" : "heart")
+                        .font(.subheadline)
+                        .foregroundStyle(showFavoritesOnly ? .pink : (isDark ? .white.opacity(0.4) : .caribbeanMist))
+                        .contentTransition(.symbolEffect(.replace))
+                }
+                .buttonStyle(LumenPressStyle(weight: .soft, accentColor: .pink))
 
                 // Filter completed toggle
                 Button {
-                    withAnimation { showCompletedFilter.toggle() }
+                    withAnimation(.smooth(duration: 0.35)) {
+                        showCompletedFilter.toggle()
+                    }
                 } label: {
                     Image(systemName: showCompletedFilter ? "eye.slash.fill" : "eye.fill")
                         .font(.subheadline)
-                        .foregroundStyle(showCompletedFilter ? .yellow : .white.opacity(0.4))
+                        .foregroundStyle(showCompletedFilter ? .yellow : (isDark ? .white.opacity(0.4) : .caribbeanMist))
+                        .contentTransition(.symbolEffect(.replace))
                 }
+                .buttonStyle(LumenPressStyle(weight: .soft, accentColor: .yellow))
             }
             .padding(12)
             .background(
                 RoundedRectangle(cornerRadius: 14)
-                    .fill(.white.opacity(0.06))
+                    .fill(isDark ? .white.opacity(0.06) : Color(hex: "#C494FC").opacity(0.12))
                     .overlay(
                         RoundedRectangle(cornerRadius: 14)
-                            .strokeBorder(.white.opacity(0.06), lineWidth: 1)
+                            .strokeBorder(isDark ? .white.opacity(0.06) : Color(hex: "#C494FC").opacity(0.18), lineWidth: 0.5)
                     )
             )
         }
@@ -164,161 +306,385 @@ struct CategoriesView: View {
 
     // MARK: - Category Grid
 
+    /// Stable identity for tracking which items are visible, driving add/remove animation.
+    private var filteredIds: [String] { paginatedCategories.map { $0.id } }
+
     private var categoryGrid: some View {
         let columns = isGridView
             ? [GridItem(.flexible(), spacing: 14), GridItem(.flexible(), spacing: 14)]
             : [GridItem(.flexible())]
 
-        return LazyVGrid(columns: columns, spacing: 14) {
-            ForEach(filteredCategories, id: \.id) { category in
+        return LazyVGrid(columns: columns, spacing: 18) {
+            ForEach(Array(paginatedCategories.enumerated()), id: \.element.id) { index, category in
                 categoryCard(category)
+                    .transition(
+                        .asymmetric(
+                            insertion: .opacity.combined(with: .scale(scale: 0.92)).combined(with: .offset(y: 12)),
+                            removal: .opacity.combined(with: .scale(scale: 0.94))
+                        )
+                    )
             }
         }
+        .animation(.smooth(duration: 0.4), value: filteredIds)
+        .animation(
+            .spring(response: 0.4, dampingFraction: 0.78),
+            value: currentPage
+        )
     }
 
     private func categoryCard(_ item: CategoryDisplayItem) -> some View {
-        Button {
-            navigateToGame(categoryId: item.id)
-        } label: {
-            VStack(alignment: .leading, spacing: 10) {
-                // Top row: icon + favorite
-                HStack {
-                    // Icon
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 12)
-                            .fill(
-                                LinearGradient(
-                                    colors: categoryGradient(item),
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
-                                )
-                            )
-                            .frame(width: 44, height: 44)
+        let colors = categoryGradient(item)
+        let fav = isFavorite(item.id)
+        let pct = item.progress.percentage
+        let completed = pct >= 100.0
+        let accentColor = colors.first ?? .white
 
-                        Image(systemName: categoryIcon(item))
-                            .font(.system(size: 18))
-                            .foregroundStyle(.white)
+        return ZStack(alignment: .topTrailing) {
+            // Main card button — covers entire area, reliable tap in LazyVGrid
+            Button {
+                // Phase 1: Seamless handoff — keep card visually pressed
+                // after system isPressed goes false
+                pressedCardId = item.id
+
+                // Haptic — soft, premium feel
+                let g = UIImpactFeedbackGenerator(style: .soft)
+                g.impactOccurred(intensity: 0.7)
+
+                // Phase 2: Bouncy spring-back after held 140ms
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.14) {
+                    withAnimation(.spring(response: 0.35, dampingFraction: 0.55)) {
+                        pressedCardId = nil
                     }
-
-                    Spacer()
-
-                    // Favorite button
-                    Button {
-                        toggleFavorite(item.id)
-                    } label: {
-                        Image(systemName: isFavorite(item.id) ? "heart.fill" : "heart")
-                            .font(.body)
-                            .foregroundStyle(isFavorite(item.id) ? .pink : .white.opacity(0.4))
-                    }
-                    .buttonStyle(.plain)
                 }
 
-                // Name
-                Text(item.name)
-                    .font(.subheadline.bold())
-                    .foregroundStyle(.white)
-                    .lineLimit(2)
+                // Phase 3: Navigate after full bounce plays
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.48) {
+                    navigateToGame(categoryId: item.id)
+                }
+            } label: {
+                VStack(alignment: .leading, spacing: isGridView ? 8 : 10) {
+                    // Top row: icon (heart is overlaid separately)
+                    HStack(alignment: .top, spacing: 8) {
+                        LiquidGlassIconContainer(
+                            systemName: categoryIcon(item),
+                            gradient: colors,
+                            size: isGridView ? 40 : 48
+                        )
+                        Spacer()
+                        // Invisible spacer matching overlay size to preserve layout
+                        Color.clear.frame(width: isGridView ? 80 : 44, height: 36)
+                    }
 
-                // Description
-                Text(item.description)
-                    .font(.caption)
-                    .foregroundStyle(.white.opacity(0.5))
-                    .lineLimit(2)
+                    // Category name
+                    Text(item.name)
+                        .font(isGridView ? .subheadline.bold() : .headline.bold())
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
+                        .lineLimit(isGridView ? 1 : 2)
 
-                // Difficulty badge
-                difficultyBadge(item.difficulty)
+                    // Description
+                    Text(item.description)
+                        .font(isGridView ? .caption : .subheadline)
+                        .foregroundStyle(isDark ? .white.opacity(0.55) : .caribbeanPlum)
+                        .lineLimit(isGridView ? 2 : 3)
+                        .frame(maxWidth: .infinity, alignment: .leading)
 
-                // Progress bar
-                VStack(alignment: .leading, spacing: 4) {
-                    GeometryReader { geo in
-                        ZStack(alignment: .leading) {
-                            Capsule()
-                                .fill(.white.opacity(0.08))
-                            Capsule()
-                                .fill(
-                                    LinearGradient(
-                                        colors: [Color(hex: "#fbbf24"), Color(hex: "#f59e0b"), Color(hex: "#ea580c")],
-                                        startPoint: .leading,
-                                        endPoint: .trailing
-                                    )
+                    Spacer(minLength: 0)
+
+                    // Bottom row: difficulty + progress
+                    HStack(alignment: .center, spacing: 8) {
+                        difficultyBadge(item.difficulty)
+
+                        Spacer()
+
+                        if !isGridView {
+                            VStack(alignment: .trailing, spacing: 3) {
+                                LiquidProgressBar(
+                                    progress: pct,
+                                    height: 5,
+                                    gradient: progressGradient
                                 )
-                                .frame(width: geo.size.width * (item.progress.percentage / 100.0))
+                                .frame(width: 120)
+
+                                progressLabel(pct: pct, mastered: item.progress.mastered, total: item.progress.total, completed: completed)
+                            }
                         }
                     }
-                    .frame(height: 5)
-
-                    HStack {
-                        Text("\(item.progress.mastered)/\(item.progress.total) mastered")
-                            .font(.caption2)
-                            .foregroundStyle(.white.opacity(0.4))
-                        Spacer()
-                        Text("\(Int(item.progress.percentage))%")
-                            .font(.caption2.bold())
-                            .foregroundStyle(.white.opacity(0.5))
-                    }
                 }
-
-                // Completed badge
-                if item.progress.percentage >= 100.0 {
-                    HStack(spacing: 4) {
-                        Image(systemName: "checkmark.circle.fill")
-                            .font(.caption2)
-                        Text("Completed")
-                            .font(.caption2.bold())
-                    }
-                    .foregroundStyle(.green)
-                    .padding(.horizontal, 8)
-                    .padding(.vertical, 3)
-                    .background(Capsule().fill(.green.opacity(0.1)))
-                }
-            }
-            .padding(14)
-            .background(
-                RoundedRectangle(cornerRadius: 20)
-                    .fill(.ultraThinMaterial)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 20)
-                            .strokeBorder(.white.opacity(colorScheme == .dark ? 0.08 : 0.15), lineWidth: 1)
+                .padding(isGridView ? 14 : 16)
+                .frame(height: isGridView ? 220 : nil)
+                .background(
+                    PremiumTransparentCardBackground(
+                        cornerRadius: 22,
+                        accentColor: colors.first ?? .blue
                     )
-            )
-            .shadow(color: .black.opacity(0.1), radius: 15, y: 5)
+                )
+                .clipShape(RoundedRectangle(cornerRadius: 22))
+            }
+            .buttonStyle(LumenCategoryCardStyle(
+                accentColor: accentColor,
+                isExternallyPressed: pressedCardId == item.id
+            ))
+
+            // Top-right overlay: progress + heart
+            HStack(spacing: 6) {
+                if isGridView {
+                    circularProgress(pct: pct, completed: completed, colors: colors)
+                }
+
+                // Heart / favorite button
+                Button {
+                    withAnimation(.spring(response: 0.35, dampingFraction: 0.5)) {
+                        HapticsService.light()
+                        toggleFavorite(item.id)
+                    }
+                } label: {
+                    Image(systemName: fav ? "heart.fill" : "heart")
+                        .font(.system(size: 15, weight: .medium))
+                        .foregroundStyle(fav ? .pink : (isDark ? .white.opacity(0.35) : .caribbeanMist))
+                        .scaleEffect(fav ? 1.15 : 1.0)
+                        .frame(width: 36, height: 36)
+                        .contentShape(Circle())
+                }
+                .buttonStyle(LumenPressStyle(weight: .soft, accentColor: .pink))
+            }
+            .padding(.top, 10)
+            .padding(.trailing, 10)
         }
-        .buttonStyle(.plain)
+        .accessibilityLabel("\(item.name), \(item.difficulty.rawValue), \(Int(pct))% \(L.complete.lowercased())")
+        .accessibilityHint(L.doubleTapToStart)
+    }
+
+    // MARK: - Circular Progress (Grid Cards)
+
+    private func circularProgress(pct: Double, completed: Bool, colors: [Color]) -> some View {
+        let effectiveColors = completed
+            ? [isDark ? Color.green : Color(hex: "#059669"), isDark ? Color.green : Color(hex: "#059669")]
+            : colors
+        return ZStack {
+            // Track ring
+            Circle()
+                .stroke(isDark ? .white.opacity(0.08) : Color(hex: "#C494FC").opacity(0.15), lineWidth: 3)
+            // Progress arc
+            Circle()
+                .trim(from: 0, to: min(pct / 100.0, 1.0))
+                .stroke(
+                    LinearGradient(colors: effectiveColors, startPoint: .topLeading, endPoint: .bottomTrailing),
+                    style: StrokeStyle(lineWidth: 3, lineCap: .round)
+                )
+                .rotationEffect(.degrees(-90))
+            // Percentage label
+            Text("\(Int(pct))")
+                .font(.system(size: 9, weight: .bold, design: .rounded))
+                .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
+        }
+        .frame(width: 34, height: 34)
+    }
+
+    // MARK: - Progress Label (List Cards)
+
+    private func progressLabel(pct: Double, mastered: Int, total: Int, completed: Bool) -> some View {
+        let completedGreen: Color = isDark ? .green : Color(hex: "#059669")
+        return Group {
+            if completed && !isDark {
+                // Light mode completed: solid emerald pill with white text
+                HStack(spacing: 4) {
+                    Image(systemName: "checkmark.seal.fill")
+                        .font(.system(size: 9))
+                    Text(L.complete)
+                        .font(.caption2.bold())
+                }
+                .foregroundStyle(.white)
+                .padding(.horizontal, 8)
+                .padding(.vertical, 3)
+                .background(
+                    Capsule().fill(completedGreen)
+                        .overlay(Capsule().strokeBorder(.white.opacity(0.25), lineWidth: 0.5))
+                )
+                .shadow(color: completedGreen.opacity(0.35), radius: 4, x: 0, y: 2)
+            } else if completed {
+                // Dark mode completed
+                HStack(spacing: 4) {
+                    Image(systemName: "checkmark.seal.fill")
+                        .font(.system(size: 9))
+                    Text(L.complete)
+                        .font(.caption2.bold())
+                }
+                .foregroundStyle(completedGreen)
+            } else {
+                // In-progress
+                HStack(spacing: 4) {
+                    Text("\(mastered)/\(total)")
+                        .font(.caption2)
+                        .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
+                    Text("·")
+                        .foregroundStyle(isDark ? .white.opacity(0.25) : .caribbeanMist)
+                    Text("\(Int(pct))%")
+                        .font(.caption2.bold())
+                }
+                .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
+            }
+        }
     }
 
     private func difficultyBadge(_ difficulty: Difficulty) -> some View {
-        HStack(spacing: 4) {
+        let gradient = difficulty.gradientColors
+        return HStack(spacing: 4) {
+            // Difficulty icon
             Image(systemName: difficulty.icon)
-                .font(.system(size: 10))
+                .font(.system(size: 9, weight: .bold))
+
             Text(difficulty.rawValue.capitalized)
-                .font(.caption2.bold())
-            ForEach(0..<difficulty.starCount, id: \.self) { _ in
-                Image(systemName: "star.fill")
-                    .font(.system(size: 7))
+                .font(.system(size: 10, weight: .bold, design: .rounded))
+                .lineLimit(1)
+                .fixedSize(horizontal: true, vertical: false)
+
+            // Star cluster
+            HStack(spacing: 2) {
+                ForEach(0..<difficulty.starCount, id: \.self) { _ in
+                    Image(systemName: "star.fill")
+                        .font(.system(size: 6))
+                }
             }
         }
-        .foregroundStyle(difficulty.color)
-        .padding(.horizontal, 8)
-        .padding(.vertical, 3)
-        .background(Capsule().fill(difficulty.color.opacity(0.1)))
+        .foregroundStyle(.white)
+        .fixedSize()
+        .padding(.horizontal, 12)
+        .padding(.vertical, 5)
+        .background(
+            Capsule()
+                .fill(
+                    LinearGradient(
+                        colors: gradient,
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .overlay(
+                    // Inner glow highlight — top-to-bottom white wash
+                    Capsule()
+                        .fill(
+                            LinearGradient(
+                                colors: [.white.opacity(0.30), .clear],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                )
+                .overlay(
+                    // Crisp border stroke
+                    Capsule()
+                        .strokeBorder(.white.opacity(0.25), lineWidth: 0.75)
+                )
+        )
+        .shadow(color: difficulty.pillShadowColor.opacity(0.40), radius: 8, x: 0, y: 3)
     }
 
     // MARK: - Empty State
 
     private var emptyState: some View {
-        VStack(spacing: 16) {
-            Image(systemName: "tray")
-                .font(.system(size: 48))
-                .foregroundStyle(.white.opacity(0.3))
-            Text("No categories found")
-                .font(.headline)
-                .foregroundStyle(.white.opacity(0.6))
-            if !searchText.isEmpty {
-                Text("Try a different search term")
+        VStack(spacing: 20) {
+            // Animated icon
+            ZStack {
+                Circle()
+                    .fill(
+                        RadialGradient(
+                            colors: [paginationAccentColors[0].opacity(0.12), .clear],
+                            center: .center,
+                            startRadius: 0,
+                            endRadius: 50
+                        )
+                    )
+                    .frame(width: 100, height: 100)
+                    .scaleEffect(emptyPulse ? 1.15 : 0.95)
+
+                Image(systemName: frozenEmptyIcon)
+                    .font(.system(size: 38, weight: .light))
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: paginationAccentColors,
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    )
+                    .contentTransition(.symbolEffect(.replace))
+                    .offset(y: emptyPulse ? -2 : 2)
+            }
+
+            VStack(spacing: 8) {
+                Text(frozenEmptyTitle)
+                    .font(.title3.bold())
+                    .foregroundStyle(isDark ? .white.opacity(0.75) : .caribbeanInk)
+                    .contentTransition(.interpolate)
+
+                Text(frozenEmptySubtitle)
                     .font(.subheadline)
-                    .foregroundStyle(.white.opacity(0.4))
+                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanPlum)
+                    .multilineTextAlignment(.center)
+                    .frame(maxWidth: 260)
+                    .contentTransition(.interpolate)
+            }
+
+            // Action hint
+            if frozenShowClearButton {
+                Button {
+                    withAnimation(.smooth(duration: 0.35)) {
+                        showFavoritesOnly = false
+                        showCompletedFilter = false
+                    }
+                } label: {
+                    Label(L.clearFilters, systemImage: "xmark.circle")
+                        .font(.subheadline.weight(.medium))
+                        .foregroundStyle(paginationAccentColors[0])
+                        .padding(.horizontal, 16)
+                        .padding(.vertical, 8)
+                        .background(
+                            Capsule()
+                                .fill(paginationAccentColors[0].opacity(0.1))
+                                .overlay(Capsule().strokeBorder(paginationAccentColors[0].opacity(0.15), lineWidth: 0.5))
+                        )
+                }
+                .buttonStyle(LumenPressStyle(weight: .medium))
+                .transition(.opacity.combined(with: .scale(scale: 0.9)))
             }
         }
+        .onAppear {
+            withAnimation(.easeInOut(duration: 2.5).repeatForever(autoreverses: true)) {
+                emptyPulse = true
+            }
+        }
+    }
+
+    /// Snapshot the empty-state content BEFORE the animation runs
+    /// so it stays stable during the fade-out/fade-in transition.
+    private func freezeEmptyContentIfNeeded() {
+        let willBeEmpty = filteredCategories.isEmpty
+        guard willBeEmpty else { return }
+
+        frozenEmptyIcon = emptyIconForCurrentFilters
+        frozenEmptyTitle = emptyTitleForCurrentFilters
+        frozenEmptySubtitle = emptySubtitleForCurrentFilters
+        frozenShowClearButton = showFavoritesOnly || showCompletedFilter
+    }
+
+    private var emptyIconForCurrentFilters: String {
+        if showFavoritesOnly { return "heart.slash" }
+        if showCompletedFilter { return "checkmark.circle" }
+        if !searchText.isEmpty { return "magnifyingglass" }
+        return "tray"
+    }
+
+    private var emptyTitleForCurrentFilters: String {
+        if showFavoritesOnly { return L.noFavouritesYet }
+        if showCompletedFilter { return L.allComplete }
+        if !searchText.isEmpty { return L.noResults }
+        return L.noCategories
+    }
+
+    private var emptySubtitleForCurrentFilters: String {
+        if showFavoritesOnly { return L.tapHeartToSave }
+        if showCompletedFilter { return L.youveFinishedEverything }
+        if !searchText.isEmpty { return L.tryDifferentSearch }
+        return L.categoriesWillAppear
     }
 
     // MARK: - Logic
@@ -399,8 +765,7 @@ struct CategoriesView: View {
     }
 
     private func isFavorite(_ categoryId: String) -> Bool {
-        let gameTypeRaw = gameType.rawValue
-        return favorites.contains { $0.categoryKey == categoryId && $0.gameType == gameTypeRaw }
+        favoriteIds.contains(categoryId)
     }
 
     private func toggleFavorite(_ categoryId: String) {
@@ -422,25 +787,18 @@ struct CategoriesView: View {
         }
     }
 
+    private var progressGradient: [Color] {
+        switch gameType {
+        case .flashCards: [Color(hex: "#667eea"), Color(hex: "#06b6d4"), Color(hex: "#0d9488")]
+        case .grammar: [Color(hex: "#f093fb"), Color(hex: "#f5576c"), Color(hex: "#e11d48")]
+        case .wordBuilder: [Color(hex: "#fbbf24"), Color(hex: "#f59e0b"), Color(hex: "#ea580c")]
+        }
+    }
+
     private func categoryIcon(_ item: CategoryDisplayItem) -> String {
         SFSymbolMapping.icon(for: item.icon)
     }
 
-    private var backgroundPreset: NebulaPreset {
-        switch gameType {
-        case .flashCards: .celestialLagoon
-        case .grammar: .solarAurora
-        case .wordBuilder: .starburstRing
-        }
-    }
-
-    private var orbScheme: BreathingOrbScheme {
-        switch gameType {
-        case .flashCards: .madridSunrise
-        case .grammar: .warsawTwilight
-        case .wordBuilder: .lisboaGoldenHour
-        }
-    }
 }
 
 // MARK: - Difficulty Helpers

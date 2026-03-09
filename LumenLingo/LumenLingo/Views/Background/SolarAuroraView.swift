@@ -65,7 +65,7 @@ struct SolarAuroraView: View {
     }
 
     private var auroraRibbons: some View {
-        TimelineView(.animation(minimumInterval: 1.0 / 20.0)) { timeline in
+        TimelineView(.animation(minimumInterval: 1.0 / 30.0)) { timeline in
             Canvas { context, size in
                 let elapsed = timeline.date.timeIntervalSinceReferenceDate * 0.35 * speed
                 drawAuroraRibbons(context: context, size: size, elapsed: elapsed)
@@ -99,15 +99,48 @@ struct SolarAuroraView: View {
             let breathe = sin(elapsed * 0.15 + Double(r) * 0.8) * 0.3 + 0.7
             let alpha = 0.04 * breathe * intensity
 
-            // Draw ribbon as a series of vertical gradient strips
-            let segmentCount = 40
+            // Geometry type based on ribbon index for visual variety
+            let geometryType = r % 6
+
+            // Higher segment count for smoother ribbons
+            let segmentCount = 200
             let segmentWidth = Double(size.width) / Double(segmentCount)
 
             for s in 0..<segmentCount {
                 let x = Double(s) * segmentWidth
-                let wave = sin(x * frequency * 1000 + phaseOffset) * amplitude
-                let wave2 = cos(x * frequency * 700 + phaseOffset * 1.3) * amplitude * 0.4
-                let y = baseY + wave + wave2
+                let normalizedX = x / Double(size.width)
+
+                let wave: Double
+                switch geometryType {
+                case 0: // Sinusoidal (original)
+                    let w1 = sin(x * frequency * 1000 + phaseOffset) * amplitude
+                    let w2 = cos(x * frequency * 700 + phaseOffset * 1.3) * amplitude * 0.4
+                    wave = w1 + w2
+                case 1: // Fold: sharp peaks from abs(sin)
+                    let base = sin(x * frequency * 900 + phaseOffset) * amplitude
+                    wave = abs(base) * 1.5 - amplitude * 0.4
+                case 2: // Spiral: rotating phase offset
+                    let spiralPhase = phaseOffset + normalizedX * .pi * 2
+                    wave = sin(x * frequency * 800 + spiralPhase) * amplitude * (0.5 + normalizedX * 0.8)
+                case 3: // S-curve: cubic distortion
+                    let raw = sin(x * frequency * 1000 + phaseOffset)
+                    let cubic = raw * raw * raw
+                    wave = cubic * amplitude * 1.2
+                case 4: // Drape: hanging catenary-like curves
+                    let segment = (normalizedX * 4).truncatingRemainder(dividingBy: 1.0)
+                    let catenary = cosh((segment - 0.5) * 3) - 1
+                    let drift = sin(phaseOffset + normalizedX * .pi * 3) * 0.5
+                    wave = (catenary * amplitude * 0.6 + drift * amplitude * 0.3)
+                case 5: // Ripple: concentric wave interference
+                    let r1 = sin(x * frequency * 1200 + phaseOffset) * amplitude * 0.6
+                    let r2 = sin(x * frequency * 600 + phaseOffset * 1.7) * amplitude * 0.4
+                    let r3 = cos(x * frequency * 1800 + phaseOffset * 0.6) * amplitude * 0.2
+                    wave = r1 + r2 + r3
+                default:
+                    wave = sin(x * frequency * 1000 + phaseOffset) * amplitude
+                }
+
+                let y = baseY + wave
 
                 // Vertical curtain from ribbon center
                 let topY = y - ribbonWidth * 0.3
@@ -132,6 +165,11 @@ struct SolarAuroraView: View {
                 )
             }
         }
+    }
+
+    /// Hyperbolic cosine for catenary drape geometry
+    private func cosh(_ x: Double) -> Double {
+        (exp(x) + exp(-x)) / 2
     }
 
     private var solarProminences: some View {
@@ -179,7 +217,7 @@ struct SolarAuroraView: View {
     }
 
     private var coronalRain: some View {
-        TimelineView(.animation(minimumInterval: 1.0 / 20.0)) { timeline in
+        TimelineView(.animation(minimumInterval: 1.0 / 25.0)) { timeline in
             Canvas { context, size in
                 let elapsed = timeline.date.timeIntervalSinceReferenceDate * speed
 
@@ -260,7 +298,7 @@ struct SolarAuroraView: View {
     }
 
     private var solarWindCanvas: some View {
-        TimelineView(.animation(minimumInterval: 1.0 / 20.0)) { timeline in
+        TimelineView(.animation(minimumInterval: 1.0 / 25.0)) { timeline in
             Canvas { context, size in
                 let elapsed = timeline.date.timeIntervalSinceReferenceDate * speed
 

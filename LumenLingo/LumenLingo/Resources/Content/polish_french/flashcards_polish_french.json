@@ -1,0 +1,1892 @@
+[
+  {
+    "key": "greetings",
+    "name": "Powitania",
+    "description": "Podstawowe powitania",
+    "iconName": "Hand",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pf_greet_1",
+        "front": "Cześć",
+        "back": "Bonjour",
+        "difficulty": "medium",
+        "example": "Bonjour, comment allez-vous?",
+        "exampleTranslation": "Cześć, jak się masz?"
+      },
+      {
+        "id": "pf_greet_2",
+        "front": "Dzień dobry",
+        "back": "Bon matin",
+        "difficulty": "medium",
+        "example": "Bon matin, monsieur",
+        "exampleTranslation": "Dzień dobry, panie"
+      },
+      {
+        "id": "pf_greet_3",
+        "front": "Dobry wieczór",
+        "back": "Bonsoir",
+        "difficulty": "medium",
+        "example": "Bonsoir, comment ça va?",
+        "exampleTranslation": "Dobry wieczór, jak się Pan ma?"
+      },
+      {
+        "id": "pf_greet_4",
+        "front": "Dobranoc",
+        "back": "Bonne nuit",
+        "difficulty": "medium",
+        "example": "Bonne nuit, dors bien",
+        "exampleTranslation": "Dobranoc, śpij dobrze"
+      },
+      {
+        "id": "pf_greet_5",
+        "front": "Do widzenia",
+        "back": "Au revoir",
+        "difficulty": "medium",
+        "example": "Au revoir, à plus tard",
+        "exampleTranslation": "Do widzenia, do zobaczenia"
+      },
+      {
+        "id": "pf_greet_6",
+        "front": "Dziękuję",
+        "back": "Merci",
+        "difficulty": "medium",
+        "example": "Merci pour ton aide",
+        "exampleTranslation": "Dziękuję za pomoc"
+      },
+      {
+        "id": "pf_greet_7",
+        "front": "Proszę",
+        "back": "S'il vous plaît",
+        "difficulty": "medium",
+        "example": "S'il vous plaît, aidez-moi",
+        "exampleTranslation": "Proszę, pomóż mi"
+      },
+      {
+        "id": "pf_greet_8",
+        "front": "Przepraszam",
+        "back": "Excusez-moi",
+        "difficulty": "medium",
+        "example": "Excusez-moi, je suis en retard",
+        "exampleTranslation": "Przepraszam, spóźniłem się"
+      },
+      {
+        "id": "pf_greet_9",
+        "front": "Tak",
+        "back": "Oui",
+        "difficulty": "medium",
+        "example": "Oui, je suis d'accord",
+        "exampleTranslation": "Tak, zgadzam się"
+      },
+      {
+        "id": "pf_greet_10",
+        "front": "Nie",
+        "back": "Non",
+        "difficulty": "medium",
+        "example": "Non, je ne veux pas",
+        "exampleTranslation": "Nie, nie chcę"
+      }
+    ]
+  },
+  {
+    "key": "family",
+    "name": "Rodzina",
+    "description": "Członkowie rodziny",
+    "iconName": "Users",
+    "color": "#f472b6",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pf_fam_1",
+        "front": "Ojciec",
+        "back": "Père",
+        "difficulty": "medium",
+        "example": "Mon père travaille beaucoup",
+        "exampleTranslation": "Mój ojciec pracuje dużo"
+      },
+      {
+        "id": "pf_fam_2",
+        "front": "Matka",
+        "back": "Mère",
+        "difficulty": "medium",
+        "example": "Ma mère cuisine bien",
+        "exampleTranslation": "Moja matka dobrze gotuje"
+      },
+      {
+        "id": "pf_fam_3",
+        "front": "Brat",
+        "back": "Frère",
+        "difficulty": "medium",
+        "example": "Mon frère étudie la médecine",
+        "exampleTranslation": "Mój brat studiuje medycynę"
+      },
+      {
+        "id": "pf_fam_4",
+        "front": "Siostra",
+        "back": "Sœur",
+        "difficulty": "medium",
+        "example": "Ma sœur est professeure",
+        "exampleTranslation": "Moja siostra jest nauczycielką"
+      },
+      {
+        "id": "pf_fam_5",
+        "front": "Syn",
+        "back": "Fils",
+        "difficulty": "medium",
+        "example": "Mon fils a dix ans",
+        "exampleTranslation": "Mój syn ma dziesięć lat"
+      },
+      {
+        "id": "pf_fam_6",
+        "front": "Córka",
+        "back": "Fille",
+        "difficulty": "medium",
+        "example": "Ma fille va à l'université",
+        "exampleTranslation": "Moja córka chodzi na uniwersytet"
+      },
+      {
+        "id": "pf_fam_7",
+        "front": "Dziadek",
+        "back": "Grand-père",
+        "difficulty": "medium",
+        "example": "Mon grand-père est très sage",
+        "exampleTranslation": "Mój dziadek jest bardzo mądry"
+      },
+      {
+        "id": "pf_fam_8",
+        "front": "Babcia",
+        "back": "Grand-mère",
+        "difficulty": "medium",
+        "example": "Ma grand-mère fait des gâteaux",
+        "exampleTranslation": "Moja babcia piecze ciasta"
+      },
+      {
+        "id": "pf_fam_9",
+        "front": "Wujek",
+        "back": "Oncle",
+        "difficulty": "medium",
+        "example": "Mon oncle habite à Paris",
+        "exampleTranslation": "Mój wujek mieszka w Paryżu"
+      },
+      {
+        "id": "pf_fam_10",
+        "front": "Ciocia",
+        "back": "Tante",
+        "difficulty": "medium",
+        "example": "Ma tante est très gentille",
+        "exampleTranslation": "Moja ciocia jest bardzo miła"
+      }
+    ]
+  },
+  {
+    "key": "numbers",
+    "name": "Liczby",
+    "description": "Podstawowe liczby",
+    "iconName": "Hash",
+    "color": "#c084fc",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pf_num_1",
+        "front": "Jeden",
+        "back": "Un",
+        "difficulty": "medium",
+        "example": "J'ai un frère",
+        "exampleTranslation": "Mam jednego brata"
+      },
+      {
+        "id": "pf_num_2",
+        "front": "Dwa",
+        "back": "Deux",
+        "difficulty": "medium",
+        "example": "Il y a deux chats",
+        "exampleTranslation": "Są dwa koty"
+      },
+      {
+        "id": "pf_num_3",
+        "front": "Trzy",
+        "back": "Trois",
+        "difficulty": "medium",
+        "example": "Il est trois heures",
+        "exampleTranslation": "Jest trzecia godzina"
+      },
+      {
+        "id": "pf_num_4",
+        "front": "Cztery",
+        "back": "Quatre",
+        "difficulty": "medium",
+        "example": "Quatre saisons",
+        "exampleTranslation": "Cztery pory roku"
+      },
+      {
+        "id": "pf_num_5",
+        "front": "Pięć",
+        "back": "Cinq",
+        "difficulty": "medium",
+        "example": "Cinq doigts sur la main",
+        "exampleTranslation": "Pięć palców u ręki"
+      },
+      {
+        "id": "pf_num_6",
+        "front": "Sześć",
+        "back": "Six",
+        "difficulty": "medium",
+        "example": "Mon fils a six ans",
+        "exampleTranslation": "Mój syn ma sześć lat"
+      },
+      {
+        "id": "pf_num_7",
+        "front": "Siedem",
+        "back": "Sept",
+        "difficulty": "medium",
+        "example": "Sept jours de la semaine",
+        "exampleTranslation": "Siedem dni tygodnia"
+      },
+      {
+        "id": "pf_num_8",
+        "front": "Osiem",
+        "back": "Huit",
+        "difficulty": "medium",
+        "example": "Je travaille huit heures",
+        "exampleTranslation": "Pracuję osiem godzin"
+      },
+      {
+        "id": "pf_num_9",
+        "front": "Dziewięć",
+        "back": "Neuf",
+        "difficulty": "medium",
+        "example": "Il est neuf heures du matin",
+        "exampleTranslation": "Jest dziewiąta rano"
+      },
+      {
+        "id": "pf_num_10",
+        "front": "Dziesięć",
+        "back": "Dix",
+        "difficulty": "medium",
+        "example": "Dix euros, s'il vous plaît",
+        "exampleTranslation": "Dziesięć euro, proszę"
+      }
+    ]
+  },
+  {
+    "key": "colors",
+    "name": "Kolory",
+    "description": "Podstawowe kolory",
+    "iconName": "Palette",
+    "color": "#f87171",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pf_col_1",
+        "front": "Czerwony",
+        "back": "Rouge",
+        "difficulty": "medium",
+        "example": "La voiture est rouge",
+        "exampleTranslation": "Samochód jest czerwony"
+      },
+      {
+        "id": "pf_col_2",
+        "front": "Niebieski",
+        "back": "Bleu",
+        "difficulty": "medium",
+        "example": "Le ciel est bleu",
+        "exampleTranslation": "Niebo jest niebieskie"
+      },
+      {
+        "id": "pf_col_3",
+        "front": "Zielony",
+        "back": "Vert",
+        "difficulty": "medium",
+        "example": "L'herbe est verte",
+        "exampleTranslation": "Trawa jest zielona"
+      },
+      {
+        "id": "pf_col_4",
+        "front": "Żółty",
+        "back": "Jaune",
+        "difficulty": "medium",
+        "example": "Le soleil est jaune",
+        "exampleTranslation": "Słońce jest żółte"
+      },
+      {
+        "id": "pf_col_5",
+        "front": "Czarny",
+        "back": "Noir",
+        "difficulty": "medium",
+        "example": "Mon chat est noir",
+        "exampleTranslation": "Mój kot jest czarny"
+      },
+      {
+        "id": "pf_col_6",
+        "front": "Biały",
+        "back": "Blanc",
+        "difficulty": "medium",
+        "example": "La neige est blanche",
+        "exampleTranslation": "Śnieg jest biały"
+      },
+      {
+        "id": "pf_col_7",
+        "front": "Pomarańczowy",
+        "back": "Orange",
+        "difficulty": "medium",
+        "example": "L'orange est orange",
+        "exampleTranslation": "Pomarańcza jest pomarańczowa"
+      },
+      {
+        "id": "pf_col_8",
+        "front": "Różowy",
+        "back": "Rose",
+        "difficulty": "medium",
+        "example": "La robe est rose",
+        "exampleTranslation": "Sukienka jest różowa"
+      },
+      {
+        "id": "pf_col_9",
+        "front": "Brązowy",
+        "back": "Marron",
+        "difficulty": "medium",
+        "example": "L'ours est marron",
+        "exampleTranslation": "Niedźwiedź jest brązowy"
+      },
+      {
+        "id": "pf_col_10",
+        "front": "Szary",
+        "back": "Gris",
+        "difficulty": "medium",
+        "example": "L'éléphant est gris",
+        "exampleTranslation": "Słoń jest szary"
+      }
+    ]
+  },
+  {
+    "key": "food",
+    "name": "Jedzenie",
+    "description": "Podstawowe jedzenie",
+    "iconName": "UtensilsCrossed",
+    "color": "#4ade80",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pf_food_1",
+        "front": "Chleb",
+        "back": "Pain",
+        "difficulty": "medium",
+        "example": "Le pain est frais",
+        "exampleTranslation": "Chleb jest świeży"
+      },
+      {
+        "id": "pf_food_2",
+        "front": "Woda",
+        "back": "Eau",
+        "difficulty": "medium",
+        "example": "Un verre d'eau, s'il vous plaît",
+        "exampleTranslation": "Szklanka wody, proszę"
+      },
+      {
+        "id": "pf_food_3",
+        "front": "Kawa",
+        "back": "Café",
+        "difficulty": "medium",
+        "example": "J'aime le café",
+        "exampleTranslation": "Lubię kawę"
+      },
+      {
+        "id": "pf_food_4",
+        "front": "Mleko",
+        "back": "Lait",
+        "difficulty": "medium",
+        "example": "Le lait est frais",
+        "exampleTranslation": "Mleko jest świeże"
+      },
+      {
+        "id": "pf_food_5",
+        "front": "Mięso",
+        "back": "Viande",
+        "difficulty": "medium",
+        "example": "La viande est délicieuse",
+        "exampleTranslation": "Mięso jest pyszne"
+      },
+      {
+        "id": "pf_food_6",
+        "front": "Ryba",
+        "back": "Poisson",
+        "difficulty": "medium",
+        "example": "Le poisson est très sain",
+        "exampleTranslation": "Ryba jest bardzo zdrowa"
+      },
+      {
+        "id": "pf_food_7",
+        "front": "Owoce",
+        "back": "Fruit",
+        "difficulty": "medium",
+        "example": "Je mange des fruits tous les jours",
+        "exampleTranslation": "Jem owoce codziennie"
+      },
+      {
+        "id": "pf_food_8",
+        "front": "Warzywa",
+        "back": "Légumes",
+        "difficulty": "medium",
+        "example": "Les légumes sont importants",
+        "exampleTranslation": "Warzywa są ważne"
+      },
+      {
+        "id": "pf_food_9",
+        "front": "Ser",
+        "back": "Fromage",
+        "difficulty": "medium",
+        "example": "Le fromage français est délicieux",
+        "exampleTranslation": "Francuski ser jest pyszny"
+      },
+      {
+        "id": "pf_food_10",
+        "front": "Jajko",
+        "back": "Œuf",
+        "difficulty": "medium",
+        "example": "Je mange des œufs au petit déjeuner",
+        "exampleTranslation": "Jem jajka na śniadanie"
+      }
+    ]
+  },
+  {
+    "key": "house",
+    "name": "Dom",
+    "description": "Przedmioty domowe",
+    "iconName": "Home",
+    "color": "#fb923c",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pf_house_1",
+        "front": "Dom",
+        "back": "Maison",
+        "difficulty": "medium",
+        "example": "Ma maison est grande",
+        "exampleTranslation": "Mój dom jest duży"
+      },
+      {
+        "id": "pf_house_2",
+        "front": "Pokój",
+        "back": "Chambre",
+        "difficulty": "medium",
+        "example": "La chambre est propre",
+        "exampleTranslation": "Pokój jest czysty"
+      },
+      {
+        "id": "pf_house_3",
+        "front": "Kuchnia",
+        "back": "Cuisine",
+        "difficulty": "medium",
+        "example": "Je cuisine dans la cuisine",
+        "exampleTranslation": "Gotuję w kuchni"
+      },
+      {
+        "id": "pf_house_4",
+        "front": "Łazienka",
+        "back": "Salle de bain",
+        "difficulty": "medium",
+        "example": "La salle de bain est neuve",
+        "exampleTranslation": "Łazienka jest nowa"
+      },
+      {
+        "id": "pf_house_5",
+        "front": "Sypialnia",
+        "back": "Chambre à coucher",
+        "difficulty": "medium",
+        "example": "Ma chambre à coucher est confortable",
+        "exampleTranslation": "Moja sypialnia jest wygodna"
+      },
+      {
+        "id": "pf_house_6",
+        "front": "Drzwi",
+        "back": "Porte",
+        "difficulty": "medium",
+        "example": "Ferme la porte",
+        "exampleTranslation": "Zamknij drzwi"
+      },
+      {
+        "id": "pf_house_7",
+        "front": "Okno",
+        "back": "Fenêtre",
+        "difficulty": "medium",
+        "example": "Ouvre la fenêtre",
+        "exampleTranslation": "Otwórz okno"
+      },
+      {
+        "id": "pf_house_8",
+        "front": "Stół",
+        "back": "Table",
+        "difficulty": "medium",
+        "example": "La table est en bois",
+        "exampleTranslation": "Stół jest drewniany"
+      },
+      {
+        "id": "pf_house_9",
+        "front": "Krzesło",
+        "back": "Chaise",
+        "difficulty": "medium",
+        "example": "La chaise est confortable",
+        "exampleTranslation": "Krzesło jest wygodne"
+      },
+      {
+        "id": "pf_house_10",
+        "front": "Łóżko",
+        "back": "Lit",
+        "difficulty": "medium",
+        "example": "Le lit est doux",
+        "exampleTranslation": "Łóżko jest miękkie"
+      }
+    ]
+  },
+  {
+    "key": "places",
+    "name": "Miejsca",
+    "description": "Lokalizacje",
+    "iconName": "MapPin",
+    "color": "#2dd4bf",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pf_place_1",
+        "front": "Sklep",
+        "back": "Magasin",
+        "difficulty": "medium",
+        "example": "Le magasin est ouvert",
+        "exampleTranslation": "Sklep jest otwarty"
+      },
+      {
+        "id": "pf_place_2",
+        "front": "Szkoła",
+        "back": "École",
+        "difficulty": "medium",
+        "example": "Je vais à l'école",
+        "exampleTranslation": "Idę do szkoły"
+      },
+      {
+        "id": "pf_place_3",
+        "front": "Szpital",
+        "back": "Hôpital",
+        "difficulty": "medium",
+        "example": "L'hôpital est proche",
+        "exampleTranslation": "Szpital jest blisko"
+      },
+      {
+        "id": "pf_place_4",
+        "front": "Park",
+        "back": "Parc",
+        "difficulty": "medium",
+        "example": "Les enfants jouent dans le parc",
+        "exampleTranslation": "Dzieci bawią się w parku"
+      },
+      {
+        "id": "pf_place_5",
+        "front": "Restauracja",
+        "back": "Restaurant",
+        "difficulty": "medium",
+        "example": "Nous mangeons au restaurant",
+        "exampleTranslation": "Jemy w restauracji"
+      },
+      {
+        "id": "pf_place_6",
+        "front": "Hotel",
+        "back": "Hôtel",
+        "difficulty": "medium",
+        "example": "L'hôtel est très grand",
+        "exampleTranslation": "Hotel jest bardzo duży"
+      },
+      {
+        "id": "pf_place_7",
+        "front": "Bank",
+        "back": "Banque",
+        "difficulty": "medium",
+        "example": "Je vais à la banque",
+        "exampleTranslation": "Idę do banku"
+      },
+      {
+        "id": "pf_place_8",
+        "front": "Lotnisko",
+        "back": "Aéroport",
+        "difficulty": "medium",
+        "example": "Je suis à l'aéroport",
+        "exampleTranslation": "Jestem na lotnisku"
+      },
+      {
+        "id": "pf_place_9",
+        "front": "Dworzec",
+        "back": "Gare",
+        "difficulty": "medium",
+        "example": "La gare ferroviaire",
+        "exampleTranslation": "Dworzec kolejowy"
+      },
+      {
+        "id": "pf_place_10",
+        "front": "Muzeum",
+        "back": "Musée",
+        "difficulty": "medium",
+        "example": "Le musée est intéressant",
+        "exampleTranslation": "Muzeum jest interesujące"
+      }
+    ]
+  },
+  {
+    "key": "clothing",
+    "name": "Ubrania",
+    "description": "Odzież",
+    "iconName": "Shirt",
+    "color": "#a78bfa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pf_cloth_1",
+        "front": "Koszula",
+        "back": "Chemise",
+        "difficulty": "medium",
+        "example": "J'aime ta chemise",
+        "exampleTranslation": "Podoba mi się twoja koszula"
+      },
+      {
+        "id": "pf_cloth_2",
+        "front": "Spodnie",
+        "back": "Pantalon",
+        "difficulty": "medium",
+        "example": "J'ai besoin d'un nouveau pantalon",
+        "exampleTranslation": "Potrzebuję nowych spodni"
+      },
+      {
+        "id": "pf_cloth_3",
+        "front": "Buty",
+        "back": "Chaussures",
+        "difficulty": "medium",
+        "example": "J'ai acheté des chaussures noires",
+        "exampleTranslation": "Kupiłem czarne buty"
+      },
+      {
+        "id": "pf_cloth_4",
+        "front": "Sukienka",
+        "back": "Robe",
+        "difficulty": "medium",
+        "example": "La robe est belle",
+        "exampleTranslation": "Sukienka jest piękna"
+      },
+      {
+        "id": "pf_cloth_5",
+        "front": "Kurtka",
+        "back": "Veste",
+        "difficulty": "medium",
+        "example": "J'ai besoin d'une veste",
+        "exampleTranslation": "Potrzebuję kurtki"
+      },
+      {
+        "id": "pf_cloth_6",
+        "front": "Kapelusz",
+        "back": "Chapeau",
+        "difficulty": "medium",
+        "example": "Mets le chapeau",
+        "exampleTranslation": "Załóż kapelusz"
+      },
+      {
+        "id": "pf_cloth_7",
+        "front": "Skarpetki",
+        "back": "Chaussettes",
+        "difficulty": "medium",
+        "example": "Mes chaussettes sont propres",
+        "exampleTranslation": "Moje skarpetki są czyste"
+      },
+      {
+        "id": "pf_cloth_8",
+        "front": "Rękawiczki",
+        "back": "Gants",
+        "difficulty": "medium",
+        "example": "Je porte des gants en hiver",
+        "exampleTranslation": "Noszę rękawiczki zimą"
+      },
+      {
+        "id": "pf_cloth_9",
+        "front": "Szalik",
+        "back": "Écharpe",
+        "difficulty": "medium",
+        "example": "L'écharpe est douce",
+        "exampleTranslation": "Szalik jest miękki"
+      },
+      {
+        "id": "pf_cloth_10",
+        "front": "Płaszcz",
+        "back": "Manteau",
+        "difficulty": "medium",
+        "example": "Le manteau est chaud",
+        "exampleTranslation": "Płaszcz jest ciepły"
+      }
+    ]
+  },
+  {
+    "key": "work",
+    "name": "Praca",
+    "description": "Zawody",
+    "iconName": "Briefcase",
+    "color": "#818cf8",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pf_work_1",
+        "front": "Praca",
+        "back": "Travail",
+        "difficulty": "medium",
+        "example": "Je vais au travail",
+        "exampleTranslation": "Idę do pracy"
+      },
+      {
+        "id": "pf_work_2",
+        "front": "Lekarz",
+        "back": "Médecin",
+        "difficulty": "medium",
+        "example": "Il est médecin",
+        "exampleTranslation": "On jest lekarzem"
+      },
+      {
+        "id": "pf_work_3",
+        "front": "Nauczyciel",
+        "back": "Professeur",
+        "difficulty": "medium",
+        "example": "Mon professeur est excellent",
+        "exampleTranslation": "Mój nauczyciel jest świetny"
+      },
+      {
+        "id": "pf_work_4",
+        "front": "Inżynier",
+        "back": "Ingénieur",
+        "difficulty": "medium",
+        "example": "Je suis ingénieur",
+        "exampleTranslation": "Jestem inżynierem"
+      },
+      {
+        "id": "pf_work_5",
+        "front": "Prawnik",
+        "back": "Avocat",
+        "difficulty": "medium",
+        "example": "Elle est avocate",
+        "exampleTranslation": "Ona jest prawnikiem"
+      },
+      {
+        "id": "pf_work_6",
+        "front": "Kucharz",
+        "back": "Cuisinier",
+        "difficulty": "medium",
+        "example": "Le cuisinier prépare le repas",
+        "exampleTranslation": "Kucharz przygotowuje jedzenie"
+      },
+      {
+        "id": "pf_work_7",
+        "front": "Kelner",
+        "back": "Serveur",
+        "difficulty": "medium",
+        "example": "Le serveur est gentil",
+        "exampleTranslation": "Kelner jest miły"
+      },
+      {
+        "id": "pf_work_8",
+        "front": "Sprzedawca",
+        "back": "Vendeur",
+        "difficulty": "medium",
+        "example": "Le vendeur aide le client",
+        "exampleTranslation": "Sprzedawca pomaga klientowi"
+      },
+      {
+        "id": "pf_work_9",
+        "front": "Policjant",
+        "back": "Policier",
+        "difficulty": "medium",
+        "example": "Le policier protège la ville",
+        "exampleTranslation": "Policjant chroni miasto"
+      },
+      {
+        "id": "pf_work_10",
+        "front": "Mechanik",
+        "back": "Mécanicien",
+        "difficulty": "medium",
+        "example": "Le mécanicien répare les voitures",
+        "exampleTranslation": "Mechanik naprawia samochody"
+      }
+    ]
+  },
+  {
+    "key": "transport",
+    "name": "Transport",
+    "description": "Transport",
+    "iconName": "Car",
+    "color": "#facc15",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pf_trans_1",
+        "front": "Samochód",
+        "back": "Voiture",
+        "difficulty": "medium",
+        "example": "J'ai une nouvelle voiture",
+        "exampleTranslation": "Mam nowy samochód"
+      },
+      {
+        "id": "pf_trans_2",
+        "front": "Autobus",
+        "back": "Bus",
+        "difficulty": "medium",
+        "example": "Je vais en bus",
+        "exampleTranslation": "Jadę autobusem"
+      },
+      {
+        "id": "pf_trans_3",
+        "front": "Pociąg",
+        "back": "Train",
+        "difficulty": "medium",
+        "example": "Le train est rapide",
+        "exampleTranslation": "Pociąg jest szybki"
+      },
+      {
+        "id": "pf_trans_4",
+        "front": "Samolot",
+        "back": "Avion",
+        "difficulty": "medium",
+        "example": "Je voyage en avion",
+        "exampleTranslation": "Podróżuję samolotem"
+      },
+      {
+        "id": "pf_trans_5",
+        "front": "Rower",
+        "back": "Vélo",
+        "difficulty": "medium",
+        "example": "Je fais du vélo",
+        "exampleTranslation": "Jeżdżę na rowerze"
+      },
+      {
+        "id": "pf_trans_6",
+        "front": "Taksówka",
+        "back": "Taxi",
+        "difficulty": "medium",
+        "example": "J'appelle un taxi",
+        "exampleTranslation": "Wzywam taksówkę"
+      },
+      {
+        "id": "pf_trans_7",
+        "front": "Metro",
+        "back": "Métro",
+        "difficulty": "medium",
+        "example": "J'utilise le métro",
+        "exampleTranslation": "Korzystam z metra"
+      },
+      {
+        "id": "pf_trans_8",
+        "front": "Motocykl",
+        "back": "Moto",
+        "difficulty": "medium",
+        "example": "Ma moto est rouge",
+        "exampleTranslation": "Mój motocykl jest czerwony"
+      },
+      {
+        "id": "pf_trans_9",
+        "front": "Łódź",
+        "back": "Bateau",
+        "difficulty": "medium",
+        "example": "Nous naviguons en bateau",
+        "exampleTranslation": "Pływamy łodzią"
+      },
+      {
+        "id": "pf_trans_10",
+        "front": "Bilet",
+        "back": "Billet",
+        "difficulty": "medium",
+        "example": "J'achète un billet",
+        "exampleTranslation": "Kupuję bilet"
+      }
+    ]
+  },
+  {
+    "key": "education",
+    "name": "Edukacja",
+    "description": "Szkoła",
+    "iconName": "School",
+    "color": "#60a5fa",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pf_edu_1",
+        "front": "Uczeń",
+        "back": "Étudiant",
+        "difficulty": "medium",
+        "example": "Je suis étudiant",
+        "exampleTranslation": "Jestem uczniem"
+      },
+      {
+        "id": "pf_edu_2",
+        "front": "Nauczyciel",
+        "back": "Enseignant",
+        "difficulty": "medium",
+        "example": "L'enseignant enseigne bien",
+        "exampleTranslation": "Nauczyciel uczy dobrze"
+      },
+      {
+        "id": "pf_edu_3",
+        "front": "Książka",
+        "back": "Livre",
+        "difficulty": "medium",
+        "example": "Je lis un livre",
+        "exampleTranslation": "Czytam książkę"
+      },
+      {
+        "id": "pf_edu_4",
+        "front": "Ołówek",
+        "back": "Crayon",
+        "difficulty": "medium",
+        "example": "As-tu un crayon?",
+        "exampleTranslation": "Masz ołówek?"
+      },
+      {
+        "id": "pf_edu_5",
+        "front": "Zeszyt",
+        "back": "Cahier",
+        "difficulty": "medium",
+        "example": "J'ai besoin d'un cahier",
+        "exampleTranslation": "Potrzebuję zeszytu"
+      },
+      {
+        "id": "pf_edu_6",
+        "front": "Egzamin",
+        "back": "Examen",
+        "difficulty": "medium",
+        "example": "L'examen est demain",
+        "exampleTranslation": "Egzamin jest jutro"
+      },
+      {
+        "id": "pf_edu_7",
+        "front": "Praca domowa",
+        "back": "Devoirs",
+        "difficulty": "medium",
+        "example": "J'ai beaucoup de devoirs",
+        "exampleTranslation": "Mam dużo pracy domowej"
+      },
+      {
+        "id": "pf_edu_8",
+        "front": "Lekcja",
+        "back": "Cours",
+        "difficulty": "medium",
+        "example": "Le cours commence à neuf heures",
+        "exampleTranslation": "Lekcja zaczyna się o dziewiątej"
+      },
+      {
+        "id": "pf_edu_9",
+        "front": "Biblioteka",
+        "back": "Bibliothèque",
+        "difficulty": "medium",
+        "example": "J'étudie à la bibliothèque",
+        "exampleTranslation": "Uczę się w bibliotece"
+      },
+      {
+        "id": "pf_edu_10",
+        "front": "Plecak",
+        "back": "Sac à dos",
+        "difficulty": "medium",
+        "example": "Mon sac à dos est lourd",
+        "exampleTranslation": "Mój plecak jest ciężki"
+      }
+    ]
+  },
+  {
+    "key": "nature",
+    "name": "Natura",
+    "description": "Natura",
+    "iconName": "TreePine",
+    "color": "#4ade80",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pf_nature_1",
+        "front": "Drzewo",
+        "back": "Arbre",
+        "difficulty": "medium",
+        "example": "L'arbre est grand",
+        "exampleTranslation": "Drzewo jest wysokie"
+      },
+      {
+        "id": "pf_nature_2",
+        "front": "Kwiat",
+        "back": "Fleur",
+        "difficulty": "medium",
+        "example": "La fleur est belle",
+        "exampleTranslation": "Kwiat jest piękny"
+      },
+      {
+        "id": "pf_nature_3",
+        "front": "Góra",
+        "back": "Montagne",
+        "difficulty": "medium",
+        "example": "La montagne est haute",
+        "exampleTranslation": "Góra jest wysoka"
+      },
+      {
+        "id": "pf_nature_4",
+        "front": "Rzeka",
+        "back": "Rivière",
+        "difficulty": "medium",
+        "example": "La rivière est longue",
+        "exampleTranslation": "Rzeka jest długa"
+      },
+      {
+        "id": "pf_nature_5",
+        "front": "Morze",
+        "back": "Mer",
+        "difficulty": "medium",
+        "example": "La mer est bleue",
+        "exampleTranslation": "Morze jest niebieskie"
+      },
+      {
+        "id": "pf_nature_6",
+        "front": "Las",
+        "back": "Forêt",
+        "difficulty": "medium",
+        "example": "Nous marchons dans la forêt",
+        "exampleTranslation": "Chodzimy po lesie"
+      },
+      {
+        "id": "pf_nature_7",
+        "front": "Jezioro",
+        "back": "Lac",
+        "difficulty": "medium",
+        "example": "Le lac est calme",
+        "exampleTranslation": "Jezioro jest spokojne"
+      },
+      {
+        "id": "pf_nature_8",
+        "front": "Niebo",
+        "back": "Ciel",
+        "difficulty": "medium",
+        "example": "Le ciel est bleu",
+        "exampleTranslation": "Niebo jest niebieskie"
+      },
+      {
+        "id": "pf_nature_9",
+        "front": "Gwiazda",
+        "back": "Étoile",
+        "difficulty": "medium",
+        "example": "Les étoiles brillent",
+        "exampleTranslation": "Gwiazdy świecą"
+      },
+      {
+        "id": "pf_nature_10",
+        "front": "Księżyc",
+        "back": "Lune",
+        "difficulty": "medium",
+        "example": "La lune est pleine",
+        "exampleTranslation": "Księżyc jest w pełni"
+      }
+    ]
+  },
+  {
+    "key": "emotions",
+    "name": "Emocje",
+    "description": "Uczucia",
+    "iconName": "Heart",
+    "color": "#f87171",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pf_emo_1",
+        "front": "Szczęśliwy",
+        "back": "Heureux",
+        "difficulty": "medium",
+        "example": "Je suis heureux",
+        "exampleTranslation": "Jestem szczęśliwy"
+      },
+      {
+        "id": "pf_emo_2",
+        "front": "Smutny",
+        "back": "Triste",
+        "difficulty": "medium",
+        "example": "Il est triste",
+        "exampleTranslation": "On jest smutny"
+      },
+      {
+        "id": "pf_emo_3",
+        "front": "Zły",
+        "back": "En colère",
+        "difficulty": "medium",
+        "example": "Elle est en colère",
+        "exampleTranslation": "Ona jest zła"
+      },
+      {
+        "id": "pf_emo_4",
+        "front": "Zmęczony",
+        "back": "Fatigué",
+        "difficulty": "medium",
+        "example": "Je suis fatigué",
+        "exampleTranslation": "Jestem zmęczony"
+      },
+      {
+        "id": "pf_emo_5",
+        "front": "Podekscytowany",
+        "back": "Excité",
+        "difficulty": "medium",
+        "example": "Nous sommes excités",
+        "exampleTranslation": "Jesteśmy podekscytowani"
+      },
+      {
+        "id": "pf_emo_6",
+        "front": "Zdenerwowany",
+        "back": "Nerveux",
+        "difficulty": "medium",
+        "example": "Il est nerveux",
+        "exampleTranslation": "On jest zdenerwowany"
+      },
+      {
+        "id": "pf_emo_7",
+        "front": "Spokojny",
+        "back": "Calme",
+        "difficulty": "medium",
+        "example": "Elle est calme",
+        "exampleTranslation": "Ona jest spokojna"
+      },
+      {
+        "id": "pf_emo_8",
+        "front": "Zaskoczony",
+        "back": "Surpris",
+        "difficulty": "medium",
+        "example": "Je suis surpris",
+        "exampleTranslation": "Jestem zaskoczony"
+      },
+      {
+        "id": "pf_emo_9",
+        "front": "Przestraszony",
+        "back": "Effrayé",
+        "difficulty": "medium",
+        "example": "L'enfant est effrayé",
+        "exampleTranslation": "Dziecko jest przestraszone"
+      },
+      {
+        "id": "pf_emo_10",
+        "front": "Znudzony",
+        "back": "Ennuyé",
+        "difficulty": "medium",
+        "example": "Ils sont ennuyés",
+        "exampleTranslation": "Są znudzeni"
+      }
+    ]
+  },
+  {
+    "key": "time",
+    "name": "Czas",
+    "description": "Wyrażenia czasowe",
+    "iconName": "Clock",
+    "color": "#22d3ee",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pf_time_1",
+        "front": "Dziś",
+        "back": "Aujourd'hui",
+        "difficulty": "medium",
+        "example": "Aujourd'hui c'est lundi",
+        "exampleTranslation": "Dziś jest poniedziałek"
+      },
+      {
+        "id": "pf_time_2",
+        "front": "Wczoraj",
+        "back": "Hier",
+        "difficulty": "medium",
+        "example": "Hier c'était dimanche",
+        "exampleTranslation": "Wczoraj była niedziela"
+      },
+      {
+        "id": "pf_time_3",
+        "front": "Jutro",
+        "back": "Demain",
+        "difficulty": "medium",
+        "example": "Demain c'est mardi",
+        "exampleTranslation": "Jutro jest wtorek"
+      },
+      {
+        "id": "pf_time_4",
+        "front": "Teraz",
+        "back": "Maintenant",
+        "difficulty": "medium",
+        "example": "Je travaille maintenant",
+        "exampleTranslation": "Pracuję teraz"
+      },
+      {
+        "id": "pf_time_5",
+        "front": "Później",
+        "back": "Plus tard",
+        "difficulty": "medium",
+        "example": "Je le ferai plus tard",
+        "exampleTranslation": "Zrobię to później"
+      },
+      {
+        "id": "pf_time_6",
+        "front": "Rano",
+        "back": "Matin",
+        "difficulty": "medium",
+        "example": "Bonjour",
+        "exampleTranslation": "Dzień dobry"
+      },
+      {
+        "id": "pf_time_7",
+        "front": "Południe",
+        "back": "Midi",
+        "difficulty": "medium",
+        "example": "Il est midi",
+        "exampleTranslation": "Jest południe"
+      },
+      {
+        "id": "pf_time_8",
+        "front": "Wieczór",
+        "back": "Soir",
+        "difficulty": "medium",
+        "example": "Bonsoir",
+        "exampleTranslation": "Dobry wieczór"
+      },
+      {
+        "id": "pf_time_9",
+        "front": "Noc",
+        "back": "Nuit",
+        "difficulty": "medium",
+        "example": "Bonne nuit",
+        "exampleTranslation": "Dobranoc"
+      },
+      {
+        "id": "pf_time_10",
+        "front": "Tydzień",
+        "back": "Semaine",
+        "difficulty": "medium",
+        "example": "La semaine prochaine",
+        "exampleTranslation": "Następny tydzień"
+      }
+    ]
+  },
+  {
+    "key": "weather",
+    "name": "Pogoda",
+    "description": "Warunki pogodowe",
+    "iconName": "Cloud",
+    "color": "#38bdf8",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pf_weather_1",
+        "front": "Słońce",
+        "back": "Soleil",
+        "difficulty": "medium",
+        "example": "Le soleil brille",
+        "exampleTranslation": "Słońce świeci"
+      },
+      {
+        "id": "pf_weather_2",
+        "front": "Deszcz",
+        "back": "Pluie",
+        "difficulty": "medium",
+        "example": "Il pleut",
+        "exampleTranslation": "Pada deszcz"
+      },
+      {
+        "id": "pf_weather_3",
+        "front": "Śnieg",
+        "back": "Neige",
+        "difficulty": "medium",
+        "example": "Il neige",
+        "exampleTranslation": "Pada śnieg"
+      },
+      {
+        "id": "pf_weather_4",
+        "front": "Wiatr",
+        "back": "Vent",
+        "difficulty": "medium",
+        "example": "Il y a du vent",
+        "exampleTranslation": "Wieje wiatr"
+      },
+      {
+        "id": "pf_weather_5",
+        "front": "Chmura",
+        "back": "Nuage",
+        "difficulty": "medium",
+        "example": "Il y a des nuages dans le ciel",
+        "exampleTranslation": "Na niebie są chmury"
+      },
+      {
+        "id": "pf_weather_6",
+        "front": "Burza",
+        "back": "Tempête",
+        "difficulty": "medium",
+        "example": "Une tempête arrive",
+        "exampleTranslation": "Nadchodzi burza"
+      },
+      {
+        "id": "pf_weather_7",
+        "front": "Gorąco",
+        "back": "Chaud",
+        "difficulty": "medium",
+        "example": "Il fait très chaud",
+        "exampleTranslation": "Jest bardzo gorąco"
+      },
+      {
+        "id": "pf_weather_8",
+        "front": "Zimno",
+        "back": "Froid",
+        "difficulty": "medium",
+        "example": "Il fait froid en hiver",
+        "exampleTranslation": "Zimą jest zimno"
+      },
+      {
+        "id": "pf_weather_9",
+        "front": "Błyskawica",
+        "back": "Éclair",
+        "difficulty": "medium",
+        "example": "J'ai vu un éclair",
+        "exampleTranslation": "Widziałem błyskawicę"
+      },
+      {
+        "id": "pf_weather_10",
+        "front": "Grzmot",
+        "back": "Tonnerre",
+        "difficulty": "medium",
+        "example": "On entend le tonnerre",
+        "exampleTranslation": "Słychać grzmot"
+      }
+    ]
+  },
+  {
+    "key": "body",
+    "name": "Ciało",
+    "description": "Części ciała",
+    "iconName": "Hand",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pf_body_1",
+        "front": "Głowa",
+        "back": "Tête",
+        "difficulty": "medium",
+        "example": "J'ai mal à la tête",
+        "exampleTranslation": "Boli mnie głowa"
+      },
+      {
+        "id": "pf_body_2",
+        "front": "Oko",
+        "back": "Œil",
+        "difficulty": "medium",
+        "example": "J'ai les yeux bleus",
+        "exampleTranslation": "Mam niebieskie oczy"
+      },
+      {
+        "id": "pf_body_3",
+        "front": "Nos",
+        "back": "Nez",
+        "difficulty": "medium",
+        "example": "Mon nez est froid",
+        "exampleTranslation": "Mój nos jest zimny"
+      },
+      {
+        "id": "pf_body_4",
+        "front": "Usta",
+        "back": "Bouche",
+        "difficulty": "medium",
+        "example": "Ouvre la bouche",
+        "exampleTranslation": "Otwórz usta"
+      },
+      {
+        "id": "pf_body_5",
+        "front": "Ucho",
+        "back": "Oreille",
+        "difficulty": "medium",
+        "example": "Mes oreilles sont grandes",
+        "exampleTranslation": "Moje uszy są duże"
+      },
+      {
+        "id": "pf_body_6",
+        "front": "Ręka",
+        "back": "Main",
+        "difficulty": "medium",
+        "example": "Donne-moi la main",
+        "exampleTranslation": "Daj mi rękę"
+      },
+      {
+        "id": "pf_body_7",
+        "front": "Stopa",
+        "back": "Pied",
+        "difficulty": "medium",
+        "example": "J'ai mal au pied",
+        "exampleTranslation": "Boli mnie stopa"
+      },
+      {
+        "id": "pf_body_8",
+        "front": "Ramię",
+        "back": "Bras",
+        "difficulty": "medium",
+        "example": "Lève le bras",
+        "exampleTranslation": "Podnieś ramię"
+      },
+      {
+        "id": "pf_body_9",
+        "front": "Noga",
+        "back": "Jambe",
+        "difficulty": "medium",
+        "example": "Mes jambes sont fatiguées",
+        "exampleTranslation": "Moje nogi są zmęczone"
+      },
+      {
+        "id": "pf_body_10",
+        "front": "Serce",
+        "back": "Cœur",
+        "difficulty": "medium",
+        "example": "Mon cœur bat vite",
+        "exampleTranslation": "Moje serce bije szybko"
+      }
+    ]
+  },
+  {
+    "key": "activities",
+    "name": "Czynności",
+    "description": "Codzienne czynności",
+    "iconName": "Lightbulb",
+    "color": "#fbbf24",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pf_act_1",
+        "front": "Jeść",
+        "back": "Manger",
+        "difficulty": "medium",
+        "example": "Je vais manger",
+        "exampleTranslation": "Będę jeść"
+      },
+      {
+        "id": "pf_act_2",
+        "front": "Pić",
+        "back": "Boire",
+        "difficulty": "medium",
+        "example": "Je bois de l'eau",
+        "exampleTranslation": "Piję wodę"
+      },
+      {
+        "id": "pf_act_3",
+        "front": "Spać",
+        "back": "Dormir",
+        "difficulty": "medium",
+        "example": "Je dois dormir",
+        "exampleTranslation": "Muszę spać"
+      },
+      {
+        "id": "pf_act_4",
+        "front": "Biegać",
+        "back": "Courir",
+        "difficulty": "medium",
+        "example": "Je cours le matin",
+        "exampleTranslation": "Biegam rano"
+      },
+      {
+        "id": "pf_act_5",
+        "front": "Czytać",
+        "back": "Lire",
+        "difficulty": "medium",
+        "example": "Je lis un livre",
+        "exampleTranslation": "Czytam książkę"
+      },
+      {
+        "id": "pf_act_6",
+        "front": "Pisać",
+        "back": "Écrire",
+        "difficulty": "medium",
+        "example": "J'écris une lettre",
+        "exampleTranslation": "Piszę list"
+      },
+      {
+        "id": "pf_act_7",
+        "front": "Mówić",
+        "back": "Parler",
+        "difficulty": "medium",
+        "example": "Je parle français",
+        "exampleTranslation": "Mówię po francusku"
+      },
+      {
+        "id": "pf_act_8",
+        "front": "Słuchać",
+        "back": "Écouter",
+        "difficulty": "medium",
+        "example": "J'écoute de la musique",
+        "exampleTranslation": "Słucham muzyki"
+      },
+      {
+        "id": "pf_act_9",
+        "front": "Patrzeć",
+        "back": "Regarder",
+        "difficulty": "medium",
+        "example": "Je regarde la télévision",
+        "exampleTranslation": "Oglądam telewizję"
+      },
+      {
+        "id": "pf_act_10",
+        "front": "Myśleć",
+        "back": "Penser",
+        "difficulty": "medium",
+        "example": "Je pense à toi",
+        "exampleTranslation": "Myślę o tobie"
+      }
+    ]
+  },
+  {
+    "key": "learning",
+    "name": "Nauka",
+    "description": "Czynności związane z nauką",
+    "iconName": "BookOpen",
+    "color": "#818cf8",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pf_learn_1",
+        "front": "Uczyć się",
+        "back": "Apprendre",
+        "difficulty": "medium",
+        "example": "J'apprends le français",
+        "exampleTranslation": "Uczę się francuskiego"
+      },
+      {
+        "id": "pf_learn_2",
+        "front": "Studiować",
+        "back": "Étudier",
+        "difficulty": "medium",
+        "example": "J'étudie à l'université",
+        "exampleTranslation": "Studiuję na uniwersytecie"
+      },
+      {
+        "id": "pf_learn_3",
+        "front": "Uczyć",
+        "back": "Enseigner",
+        "difficulty": "medium",
+        "example": "J'enseigne l'anglais",
+        "exampleTranslation": "Uczę angielskiego"
+      },
+      {
+        "id": "pf_learn_4",
+        "front": "Rozumieć",
+        "back": "Comprendre",
+        "difficulty": "medium",
+        "example": "Je comprends la leçon",
+        "exampleTranslation": "Rozumiem lekcję"
+      },
+      {
+        "id": "pf_learn_5",
+        "front": "Ćwiczyć",
+        "back": "Pratiquer",
+        "difficulty": "medium",
+        "example": "Je pratique tous les jours",
+        "exampleTranslation": "Ćwiczę codziennie"
+      },
+      {
+        "id": "pf_learn_6",
+        "front": "Powtarzać",
+        "back": "Répéter",
+        "difficulty": "medium",
+        "example": "Répète le mot",
+        "exampleTranslation": "Powtórz słowo"
+      },
+      {
+        "id": "pf_learn_7",
+        "front": "Wyjaśniać",
+        "back": "Expliquer",
+        "difficulty": "medium",
+        "example": "Le professeur explique bien",
+        "exampleTranslation": "Nauczyciel dobrze wyjaśnia"
+      },
+      {
+        "id": "pf_learn_8",
+        "front": "Pytać",
+        "back": "Demander",
+        "difficulty": "medium",
+        "example": "Je demande au professeur",
+        "exampleTranslation": "Pytam nauczyciela"
+      },
+      {
+        "id": "pf_learn_9",
+        "front": "Odpowiadać",
+        "back": "Répondre",
+        "difficulty": "medium",
+        "example": "Je réponds à la question",
+        "exampleTranslation": "Odpowiadam na pytanie"
+      },
+      {
+        "id": "pf_learn_10",
+        "front": "Zapamiętać",
+        "back": "Se souvenir",
+        "difficulty": "medium",
+        "example": "Je me souviens de la leçon",
+        "exampleTranslation": "Zapamiętałem lekcję"
+      }
+    ]
+  },
+  {
+    "key": "sports",
+    "name": "Sport",
+    "description": "Sporty",
+    "iconName": "Dumbbell",
+    "color": "#a3e635",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pf_sport_1",
+        "front": "Piłka nożna",
+        "back": "Football",
+        "difficulty": "medium",
+        "example": "Je joue au football",
+        "exampleTranslation": "Gram w piłkę nożną"
+      },
+      {
+        "id": "pf_sport_2",
+        "front": "Koszykówka",
+        "back": "Basketball",
+        "difficulty": "medium",
+        "example": "J'aime le basketball",
+        "exampleTranslation": "Lubię koszykówkę"
+      },
+      {
+        "id": "pf_sport_3",
+        "front": "Tenis",
+        "back": "Tennis",
+        "difficulty": "medium",
+        "example": "Je joue au tennis",
+        "exampleTranslation": "Gram w tenisa"
+      },
+      {
+        "id": "pf_sport_4",
+        "front": "Pływanie",
+        "back": "Natation",
+        "difficulty": "medium",
+        "example": "La natation est saine",
+        "exampleTranslation": "Pływanie jest zdrowe"
+      },
+      {
+        "id": "pf_sport_5",
+        "front": "Bieganie",
+        "back": "Course",
+        "difficulty": "medium",
+        "example": "Je cours le matin",
+        "exampleTranslation": "Biegam rano"
+      },
+      {
+        "id": "pf_sport_6",
+        "front": "Kolarstwo",
+        "back": "Cyclisme",
+        "difficulty": "medium",
+        "example": "J'aime le cyclisme",
+        "exampleTranslation": "Lubię kolarstwo"
+      },
+      {
+        "id": "pf_sport_7",
+        "front": "Siłownia",
+        "back": "Salle de sport",
+        "difficulty": "medium",
+        "example": "Je vais à la salle de sport",
+        "exampleTranslation": "Chodzę na siłownię"
+      },
+      {
+        "id": "pf_sport_8",
+        "front": "Trening",
+        "back": "Entraînement",
+        "difficulty": "medium",
+        "example": "J'ai un entraînement aujourd'hui",
+        "exampleTranslation": "Mam dzisiaj trening"
+      },
+      {
+        "id": "pf_sport_9",
+        "front": "Drużyna",
+        "back": "Équipe",
+        "difficulty": "medium",
+        "example": "Je suis dans une équipe",
+        "exampleTranslation": "Jestem w drużynie"
+      },
+      {
+        "id": "pf_sport_10",
+        "front": "Trener",
+        "back": "Entraîneur",
+        "difficulty": "medium",
+        "example": "Notre entraîneur est excellent",
+        "exampleTranslation": "Nasz trener jest świetny"
+      }
+    ]
+  },
+  {
+    "key": "travel",
+    "name": "Podróże",
+    "description": "Turystyka",
+    "iconName": "Plane",
+    "color": "#60a5fa",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pf_travel_1",
+        "front": "Podróż",
+        "back": "Voyage",
+        "difficulty": "medium",
+        "example": "Je fais un voyage",
+        "exampleTranslation": "Jadę w podróż"
+      },
+      {
+        "id": "pf_travel_2",
+        "front": "Walizka",
+        "back": "Valise",
+        "difficulty": "medium",
+        "example": "Ma valise est lourde",
+        "exampleTranslation": "Moja walizka jest ciężka"
+      },
+      {
+        "id": "pf_travel_3",
+        "front": "Paszport",
+        "back": "Passeport",
+        "difficulty": "medium",
+        "example": "J'ai besoin de mon passeport",
+        "exampleTranslation": "Potrzebuję paszportu"
+      },
+      {
+        "id": "pf_travel_4",
+        "front": "Hotel",
+        "back": "Hôtel",
+        "difficulty": "medium",
+        "example": "L'hôtel est confortable",
+        "exampleTranslation": "Hotel jest wygodny"
+      },
+      {
+        "id": "pf_travel_5",
+        "front": "Rezerwacja",
+        "back": "Réservation",
+        "difficulty": "medium",
+        "example": "J'ai une réservation",
+        "exampleTranslation": "Mam rezerwację"
+      },
+      {
+        "id": "pf_travel_6",
+        "front": "Turysta",
+        "back": "Touriste",
+        "difficulty": "medium",
+        "example": "Je suis touriste",
+        "exampleTranslation": "Jestem turystą"
+      },
+      {
+        "id": "pf_travel_7",
+        "front": "Wakacje",
+        "back": "Vacances",
+        "difficulty": "medium",
+        "example": "Je suis en vacances",
+        "exampleTranslation": "Jestem na wakacjach"
+      },
+      {
+        "id": "pf_travel_8",
+        "front": "Zwiedzanie",
+        "back": "Visite touristique",
+        "difficulty": "medium",
+        "example": "Nous faisons une visite touristique",
+        "exampleTranslation": "Robimy zwiedzanie"
+      },
+      {
+        "id": "pf_travel_9",
+        "front": "Przewodnik",
+        "back": "Guide",
+        "difficulty": "medium",
+        "example": "Le guide est informatif",
+        "exampleTranslation": "Przewodnik jest pouczający"
+      },
+      {
+        "id": "pf_travel_10",
+        "front": "Pamiątka",
+        "back": "Souvenir",
+        "difficulty": "medium",
+        "example": "J'achète un souvenir",
+        "exampleTranslation": "Kupuję pamiątkę"
+      }
+    ]
+  },
+  {
+    "key": "entertainment",
+    "name": "Rozrywka",
+    "description": "Czas wolny",
+    "iconName": "Music",
+    "color": "#e879f9",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pf_ent_1",
+        "front": "Muzyka",
+        "back": "Musique",
+        "difficulty": "medium",
+        "example": "J'écoute de la musique",
+        "exampleTranslation": "Słucham muzyki"
+      },
+      {
+        "id": "pf_ent_2",
+        "front": "Film",
+        "back": "Film",
+        "difficulty": "medium",
+        "example": "Je regarde un film",
+        "exampleTranslation": "Oglądam film"
+      },
+      {
+        "id": "pf_ent_3",
+        "front": "Koncert",
+        "back": "Concert",
+        "difficulty": "medium",
+        "example": "Je vais à un concert",
+        "exampleTranslation": "Idę na koncert"
+      },
+      {
+        "id": "pf_ent_4",
+        "front": "Teatr",
+        "back": "Théâtre",
+        "difficulty": "medium",
+        "example": "Je vais au théâtre",
+        "exampleTranslation": "Idę do teatru"
+      },
+      {
+        "id": "pf_ent_5",
+        "front": "Tańczyć",
+        "back": "Danse",
+        "difficulty": "medium",
+        "example": "J'aime danser",
+        "exampleTranslation": "Lubię tańczyć"
+      },
+      {
+        "id": "pf_ent_6",
+        "front": "Śpiewać",
+        "back": "Chanter",
+        "difficulty": "medium",
+        "example": "J'aime chanter",
+        "exampleTranslation": "Lubię śpiewać"
+      },
+      {
+        "id": "pf_ent_7",
+        "front": "Gitara",
+        "back": "Guitare",
+        "difficulty": "medium",
+        "example": "Je joue de la guitare",
+        "exampleTranslation": "Gram na gitarze"
+      },
+      {
+        "id": "pf_ent_8",
+        "front": "Gry",
+        "back": "Jeux",
+        "difficulty": "medium",
+        "example": "Je joue à des jeux vidéo",
+        "exampleTranslation": "Gram w gry wideo"
+      },
+      {
+        "id": "pf_ent_9",
+        "front": "Fotografia",
+        "back": "Photographie",
+        "difficulty": "medium",
+        "example": "Je m'intéresse à la photographie",
+        "exampleTranslation": "Interesuję się fotografią"
+      },
+      {
+        "id": "pf_ent_10",
+        "front": "Czytanie",
+        "back": "Lecture",
+        "difficulty": "medium",
+        "example": "La lecture est mon passe-temps",
+        "exampleTranslation": "Czytanie jest moim hobby"
+      }
+    ]
+  }
+]

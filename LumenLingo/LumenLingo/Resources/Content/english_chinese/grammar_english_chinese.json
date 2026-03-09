@@ -1,0 +1,1437 @@
+[
+  {
+    "key": "word_order",
+    "name": "Word Order",
+    "description": "Basic Chinese sentence structure",
+    "iconName": "list.bullet",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ec_wo1",
+        "question": "我___饭",
+        "translation": "(I eat rice)",
+        "options": [
+          "吃",
+          "吃我",
+          "饭吃",
+          "我吃"
+        ],
+        "correct": "吃",
+        "explanation": "Welcome to Chinese sentence structure. The basic pattern is delightfully simple: Subject + Verb + Object (SVO), just like English. 我 (wǒ) = I, 吃 (chī) = eat, 饭 (fàn) = rice/meal. So 我吃饭 follows the same order as English. This similarity makes your first steps in Chinese comfortable and familiar. Chinese word order is actually quite logical and consistent. Once you grasp the basic pattern, you can build countless sentences with confidence."
+      },
+      {
+        "id": "ec_wo2",
+        "question": "她___水",
+        "translation": "(She drinks water)",
+        "options": [
+          "喝",
+          "喝她",
+          "水喝",
+          "她喝"
+        ],
+        "correct": "喝",
+        "explanation": "Again, Subject-Verb-Object: 她 (tā) = she, 喝 (hē) = drink, 水 (shuǐ) = water. The pattern repeats beautifully: 她喝水. Notice how Chinese doesn't change verb forms - 'drinks' becomes simply 喝, the same as for any subject. This simplicity is one of Chinese's most learner-friendly features. No conjugation tables to memorize. The verb stays the same whether it's I, you, he, she, we, or they."
+      },
+      {
+        "id": "ec_wo3",
+        "question": "他___书",
+        "translation": "(He reads books)",
+        "options": [
+          "看",
+          "看他",
+          "书看",
+          "他看"
+        ],
+        "correct": "看",
+        "explanation": "Following the same comfortable pattern: 他 (tā) = he, 看 (kàn) = read/look, 书 (shū) = book. So 他看书 = he reads books. The word 看 is versatile - it means both 'look' and 'read', depending on what follows it. Context makes meaning clear. Reading books opens doorways to new worlds and ideas. Chinese literature has thousands of years of beautiful stories waiting to be discovered."
+      },
+      {
+        "id": "ec_wo4",
+        "question": "我们___中文",
+        "translation": "(We study Chinese)",
+        "options": [
+          "学",
+          "学我们",
+          "中文学",
+          "我们学"
+        ],
+        "correct": "学",
+        "explanation": "我们 (wǒmen) = we, 学 (xué) = study/learn, 中文 (Zhōngwén) = Chinese language. The pattern holds steady: 我们学中文. Learning Chinese is a rewarding journey that connects you to one of the world's oldest continuous cultures. Each character you learn carries history and meaning. The structure remains consistent, giving you a reliable foundation to build upon."
+      },
+      {
+        "id": "ec_wo5",
+        "question": "他们___茶",
+        "translation": "(They like tea)",
+        "options": [
+          "喜欢",
+          "喜欢他们",
+          "茶喜欢",
+          "他们喜欢"
+        ],
+        "correct": "喜欢",
+        "explanation": "他们 (tāmen) = they, 喜欢 (xǐhuan) = like, 茶 (chá) = tea. The structure continues: 他们喜欢茶. Tea culture runs deep in Chinese tradition - it's more than a beverage, it's an art form and a social ritual. Notice how 喜欢 is a two-character verb expressing 'to like'. Many Chinese verbs are compound words, built from meaningful parts that hint at their meaning."
+      },
+      {
+        "id": "ec_wo6",
+        "question": "我___早饭",
+        "translation": "(I eat breakfast)",
+        "options": [
+          "吃",
+          "吃我",
+          "早饭吃",
+          "我吃"
+        ],
+        "correct": "吃",
+        "explanation": "我吃早饭 = I eat breakfast. 早饭 (zǎofàn) breaks down beautifully: 早 (zǎo) = early/morning + 饭 (fàn) = meal. So 'early meal' = breakfast. This compounding principle is everywhere in Chinese - words are built like little logical puzzles. Breakfast is the most important meal, giving energy for the day ahead. The consistent word order makes constructing sentences feel natural and predictable."
+      },
+      {
+        "id": "ec_wo7",
+        "question": "她___英语",
+        "translation": "(She speaks English)",
+        "options": [
+          "说",
+          "说她",
+          "英语说",
+          "她说"
+        ],
+        "correct": "说",
+        "explanation": "她说英语: 说 (shuō) = speak, 英语 (Yīngyǔ) = English language. The 'yǔ' (语) in both 英语 and 中文's alternate form 汉语 means 'language'. Recognizing these building blocks helps you decode new vocabulary. Speaking multiple languages opens doors to different ways of thinking and expressing ideas. Each language carries its culture's unique perspective on the world."
+      },
+      {
+        "id": "ec_wo8",
+        "question": "他___咖啡",
+        "translation": "(He wants coffee)",
+        "options": [
+          "要",
+          "要他",
+          "咖啡要",
+          "他要"
+        ],
+        "correct": "要",
+        "explanation": "他要咖啡: 要 (yào) = want/need, 咖啡 (kāfēi) = coffee. The pattern remains steady and reliable. 咖啡 is a phonetic borrowing - it sounds like 'coffee' in English. Chinese has absorbed words from many languages while maintaining its own character. Coffee culture has become popular in modern Chinese cities, blending with traditional tea culture."
+      },
+      {
+        "id": "ec_wo9",
+        "question": "我___你",
+        "translation": "(I love you)",
+        "options": [
+          "爱",
+          "爱我",
+          "你爱",
+          "我爱"
+        ],
+        "correct": "爱",
+        "explanation": "我爱你 (wǒ ài nǐ): 爱 (ài) = love, 你 (nǐ) = you. Three characters that carry profound meaning. Subject-Verb-Object, simple and direct. In Chinese culture, expressing emotions directly is less common than in Western cultures, making these words especially meaningful when spoken. Love in any language warms the heart and strengthens bonds between people."
+      },
+      {
+        "id": "ec_wo10",
+        "question": "我们___晚饭",
+        "translation": "(We eat dinner)",
+        "options": [
+          "吃",
+          "吃我们",
+          "晚饭吃",
+          "我们吃"
+        ],
+        "correct": "吃",
+        "explanation": "我们吃晚饭: 晚饭 (wǎnfàn) = dinner, literally 'late meal' (晚 = late/evening). The word order stays consistent, which is reassuring as you learn. Dinner is often the main family meal in Chinese culture - a time for gathering, sharing food, and connecting. Family meals strengthen relationships and create lasting memories."
+      },
+      {
+        "id": "ec_wo11",
+        "question": "他们___电影",
+        "translation": "(They watch movies)",
+        "options": [
+          "看",
+          "看他们",
+          "电影看",
+          "他们看"
+        ],
+        "correct": "看",
+        "explanation": "他们看电影: 电影 (diànyǐng) = movie, literally 'electric shadow'. This poetic compound shows Chinese's creative way of naming modern concepts. 电 (diàn) = electricity, 影 (yǐng) = shadow/reflection. Movies do cast moving shadows of light. The reliable word order lets you focus on learning these beautiful compound words."
+      },
+      {
+        "id": "ec_wo12",
+        "question": "你___牛奶",
+        "translation": "(You drink milk)",
+        "options": [
+          "喝",
+          "喝你",
+          "牛奶喝",
+          "你喝"
+        ],
+        "correct": "喝",
+        "explanation": "你喝牛奶: 牛奶 (niúnǎi) = milk, literally 'cow milk' (牛 = cow). Direct and descriptive. Chinese often names things by what they are or where they come from. This logical approach makes vocabulary easier to remember. Milk is nutritious and strengthening for growing bodies. The consistent structure lets you express these everyday activities naturally."
+      },
+      {
+        "id": "ec_wo13",
+        "question": "她___水果",
+        "translation": "(She eats fruit)",
+        "options": [
+          "吃",
+          "吃她",
+          "水果吃",
+          "她吃"
+        ],
+        "correct": "吃",
+        "explanation": "她吃水果: 水果 (shuǐguǒ) = fruit, literally 'water fruit'. Many fruits have high water content, so this compound makes sense. Chinese builds vocabulary through these meaningful combinations. Eating fruit provides vitamins and natural sweetness. The predictable sentence pattern allows you to express simple, healthy choices with ease."
+      },
+      {
+        "id": "ec_wo14",
+        "question": "我___信",
+        "translation": "(I write letters)",
+        "options": [
+          "写",
+          "写我",
+          "信写",
+          "我写"
+        ],
+        "correct": "写",
+        "explanation": "我写信: 写 (xiě) = write, 信 (xìn) = letter. In the digital age, handwritten letters carry special meaning - they show time and care. The character 信 also means 'trust' or 'believe', linking written communication with trustworthiness. The word order remains your steady guide as you explore more vocabulary."
+      },
+      {
+        "id": "ec_wo15",
+        "question": "他___中文",
+        "translation": "(He teaches Chinese)",
+        "options": [
+          "教",
+          "教他",
+          "中文教",
+          "他教"
+        ],
+        "correct": "教",
+        "explanation": "他教中文: 教 (jiāo) = teach. Teachers pass on knowledge and wisdom to the next generation. Teaching is a respected profession in Chinese culture, honored through the ages. The consistent Subject-Verb-Object pattern means you can now construct many sentences confidently. This solid foundation supports your continued learning journey."
+      }
+    ]
+  },
+  {
+    "key": "measure_words",
+    "name": "Measure Words",
+    "description": "Chinese classifiers for counting",
+    "iconName": "scalemass",
+    "color": "#4ade80",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ec_mw1",
+        "question": "___人",
+        "translation": "(One person)",
+        "options": [
+          "一个",
+          "一",
+          "个一",
+          "人一"
+        ],
+        "correct": "一个",
+        "explanation": "Chinese has a fascinating feature: measure words (also called classifiers). When counting, you need: Number + Measure Word + Noun. 一个人 = one person. 个 (gè) is the most common measure word - think of it as a general counter. 一 (yī) = one, 人 (rén) = person. This system groups things by their nature - round things, flat things, long things, animals, people, and so on. It's like saying 'one piece of paper' or 'one head of cattle' in English, but Chinese does this for everything."
+      },
+      {
+        "id": "ec_mw2",
+        "question": "___书",
+        "translation": "(Two books)",
+        "options": [
+          "两本",
+          "两",
+          "本两",
+          "书两"
+        ],
+        "correct": "两本",
+        "explanation": "两本书: 两 (liǎng) = two (used with measure words), 本 (běn) = measure word for books and bound items, 书 (shū) = book. Books use 本 because they're bound volumes. This measure word system reflects how Chinese speakers categorize the world. Each measure word tells you something about the object's nature. Books are gateways to knowledge - each one a world waiting to be explored."
+      },
+      {
+        "id": "ec_mw3",
+        "question": "三___水",
+        "translation": "(Three cups of water)",
+        "options": [
+          "杯",
+          "个",
+          "杯子",
+          "水杯"
+        ],
+        "correct": "杯",
+        "explanation": "三杯水: 三 (sān) = three, 杯 (bēi) = measure word for cups/glasses (also means the cup itself). Sometimes the measure word and noun are the same character. When counting containers with their contents, Chinese often uses just the container measure word. Three cups of water. Staying hydrated keeps the body and mind fresh."
+      },
+      {
+        "id": "ec_mw4",
+        "question": "___车",
+        "translation": "(One car)",
+        "options": [
+          "一辆",
+          "一个",
+          "辆一",
+          "车一"
+        ],
+        "correct": "一辆",
+        "explanation": "一辆车: 辆 (liàng) = measure word for vehicles, 车 (chē) = car/vehicle. Vehicles get their own special counter because they're significant objects with wheels and purpose. Different types of objects require different measure words - this categorization is core to Chinese thinking. Cars provide freedom and convenience, connecting places and people."
+      },
+      {
+        "id": "ec_mw5",
+        "question": "四___苹果",
+        "translation": "(Four apples)",
+        "options": [
+          "个",
+          "只",
+          "本",
+          "辆"
+        ],
+        "correct": "个",
+        "explanation": "四个苹果: 四 (sì) = four, 个 (gè) = general measure word, 苹果 (píngguǒ) = apple. When unsure which measure word to use, 个 often works. It's the default, the safety net. Apples are healthy, crisp, and sweet - enjoyed across cultures. The measure word system seems complex at first, but patterns emerge with practice."
+      },
+      {
+        "id": "ec_mw6",
+        "question": "___狗",
+        "translation": "(One dog)",
+        "options": [
+          "一只",
+          "一个",
+          "只一",
+          "狗一"
+        ],
+        "correct": "一只",
+        "explanation": "一只狗: 只 (zhī) = measure word for animals (especially smaller ones and birds), 狗 (gǒu) = dog. Animals have their own measure word because they're living beings with special status. Dogs are loyal companions, bringing joy and protection to families. Learning measure words deepens your understanding of how Chinese speakers see and categorize their world."
+      },
+      {
+        "id": "ec_mw7",
+        "question": "两___笔",
+        "translation": "(Two pencils)",
+        "options": [
+          "支",
+          "个",
+          "本",
+          "只"
+        ],
+        "correct": "支",
+        "explanation": "两支笔: 支 (zhī) = measure word for long, thin objects like pens, pencils, and sticks, 笔 (bǐ) = pen/pencil. Long, thin objects share a measure word because of their shape. This shape-based categorization is logical and helps organize vocabulary. Pencils and pens are tools of learning and expression, letting us capture thoughts on paper."
+      },
+      {
+        "id": "ec_mw8",
+        "question": "三___人",
+        "translation": "(Three people)",
+        "options": [
+          "个",
+          "只",
+          "位",
+          "支"
+        ],
+        "correct": "个",
+        "explanation": "三个人: People use 个, the general measure word. In casual speech, you might hear 三人, dropping the measure word, especially in compound words like 三人行 (three people walking together). But the standard, polite form includes 个. People are our most important connection in life - family, friends, community. Respecting proper grammar shows respect for people."
+      },
+      {
+        "id": "ec_mw9",
+        "question": "___猫",
+        "translation": "(One cat)",
+        "options": [
+          "一只",
+          "一个",
+          "只一",
+          "猫一"
+        ],
+        "correct": "一只",
+        "explanation": "一只猫: 只 for animals, 猫 (māo) = cat. Cats are elegant, independent creatures that have lived alongside humans for millennia. In Chinese culture, as in many others, cats are appreciated for their grace and pest-control abilities. The measure word 只 acknowledges their living, breathing nature as animals."
+      },
+      {
+        "id": "ec_mw10",
+        "question": "两___纸",
+        "translation": "(Two sheets of paper)",
+        "options": [
+          "张",
+          "个",
+          "本",
+          "只"
+        ],
+        "correct": "张",
+        "explanation": "两张纸: 张 (zhāng) = measure word for flat objects like paper, tables, beds, maps, 纸 (zhǐ) = paper. Flat things share 张. This makes sense - they're similar in form. Paper revolutionized human communication and record-keeping. Each sheet holds potential - for writing, drawing, creating. The measure word system teaches you to see objects through new categories."
+      },
+      {
+        "id": "ec_mw11",
+        "question": "___歌",
+        "translation": "(One song)",
+        "options": [
+          "一首",
+          "一个",
+          "首一",
+          "歌一"
+        ],
+        "correct": "一首",
+        "explanation": "一首歌: 首 (shǒu) = measure word for poems and songs, 歌 (gē) = song. Poetry and music share a measure word because they're both forms of rhythmic, emotional expression. Songs touch the heart and lift the spirit. Music is a universal language that transcends borders. This special measure word honors the artistic nature of songs and poems."
+      },
+      {
+        "id": "ec_mw12",
+        "question": "三___花",
+        "translation": "(Three flowers)",
+        "options": [
+          "朵",
+          "个",
+          "支",
+          "只"
+        ],
+        "correct": "朵",
+        "explanation": "三朵花: 朵 (duǒ) = measure word for flowers and clouds, 花 (huā) = flower. Flowers and clouds are both soft, beautiful, natural forms that bloom or drift. This poetic pairing shows Chinese's aesthetic sensibility. Flowers brighten spaces and moods with their colors and fragrance. Each bloom is a small gift from nature."
+      },
+      {
+        "id": "ec_mw13",
+        "question": "___电影",
+        "translation": "(One movie)",
+        "options": [
+          "一部",
+          "一个",
+          "部一",
+          "电影一"
+        ],
+        "correct": "一部",
+        "explanation": "一部电影: 部 (bù) = measure word for films, machines, books (especially longer works), novels, 电影 = movie. 部 is used for substantial works and complex machines. Movies are complete works of art, involving many people and much effort. Each film tells a story and creates an experience. The measure word acknowledges this completeness and significance."
+      },
+      {
+        "id": "ec_mw14",
+        "question": "两___马",
+        "translation": "(Two horses)",
+        "options": [
+          "匹",
+          "只",
+          "个",
+          "辆"
+        ],
+        "correct": "匹",
+        "explanation": "两匹马: 匹 (pǐ) = measure word specifically for horses (and bolts of cloth), 马 (mǎ) = horse. Horses are special - large, majestic animals that have served humans in agriculture, transportation, and war. They deserve their own measure word. This specificity shows the importance of horses in Chinese history and culture. Each measure word teaches you something about cultural values."
+      },
+      {
+        "id": "ec_mw15",
+        "question": "___信",
+        "translation": "(One letter)",
+        "options": [
+          "一封",
+          "一个",
+          "封一",
+          "信一"
+        ],
+        "correct": "一封",
+        "explanation": "一封信: 封 (fēng) = measure word for letters and sealed documents, 信 = letter. 封 also means 'to seal', connecting to how letters are sealed in envelopes. This dual meaning makes the measure word memorable and logical. Letters carry personal messages across distances, connecting hearts. Each letter sealed is a thought sent with care. Measure words often have these meaningful connections to what they count."
+      }
+    ]
+  },
+  {
+    "key": "time_expressions",
+    "name": "Time Expressions",
+    "description": "Expressing when things happen",
+    "iconName": "clock",
+    "color": "#fbbf24",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ec_time1",
+        "question": "我___吃",
+        "translation": "(I eat yesterday)",
+        "options": [
+          "昨天",
+          "明天",
+          "现在",
+          "以前"
+        ],
+        "correct": "昨天",
+        "explanation": "Time expressions come after the subject but before the verb in Chinese: 我 (I) 昨天 (yesterday) 吃 (eat). Notice the verb doesn't change to show past tense like English 'ate'. Chinese indicates time through time words, not verb conjugation. This placement rule is consistent, making it easier to form sentences once you grasp this pattern. Front-loading time information is a key feature of Chinese structure."
+      },
+      {
+        "id": "ec_time2",
+        "question": "他___来",
+        "translation": "(He tomorrow come)",
+        "options": [
+          "明天",
+          "昨天",
+          "现在",
+          "以前"
+        ],
+        "correct": "明天",
+        "explanation": "Again, time after subject, before verb: 他 (he) 明天 (tomorrow) 来 (come). The verb 来 stays the same whether it means 'comes', 'came', or 'will come'. Time words like 明天 make the meaning clear. This system feels liberating once you adjust - no conjugation tables to memorize. Just learn time words and place them consistently."
+      },
+      {
+        "id": "ec_time3",
+        "question": "我们___学习",
+        "translation": "(We now study)",
+        "options": [
+          "现在",
+          "昨天",
+          "明天",
+          "以前"
+        ],
+        "correct": "现在",
+        "explanation": "Present time expressions follow the same pattern: 我们 (we) 现在 (now) 学习 (study). Whether you're talking about past, present, or future, the position remains consistent. 现在 (xiànzài) means 'now/currently'. This regularity makes Chinese time expressions predictable. Once you know the pattern, you can construct any time-related sentence with confidence."
+      },
+      {
+        "id": "ec_time4",
+        "question": "他们___看书",
+        "translation": "(They every day read)",
+        "options": [
+          "每天",
+          "昨天",
+          "明天",
+          "现在"
+        ],
+        "correct": "每天",
+        "explanation": "Frequency expressions work the same way: 他们 (they) 每天 (every day) 看书 (read). The phrase 每天 indicates habitual action. Chinese builds time into sentence structure early, giving context before action. This helps listeners process information efficiently. Understanding this priority in information ordering helps you think more naturally in Chinese."
+      },
+      {
+        "id": "ec_time5",
+        "question": "我___去中国",
+        "translation": "(I last year go China)",
+        "options": [
+          "去年",
+          "今年",
+          "明年",
+          "现在"
+        ],
+        "correct": "去年",
+        "explanation": "Time phrase after subject: 我 (I) 去年 (last year) 去 (go) 中国 (China). The longer time phrase 去年 works just like single-word time markers. Whether it's one word or a phrase, the position stays consistent. This reliability is one of Chinese grammar's strengths. Learn the pattern once, apply it universally."
+      },
+      {
+        "id": "ec_time6",
+        "question": "她___喝茶",
+        "translation": "(She afternoon drink tea)",
+        "options": [
+          "下午",
+          "早上",
+          "晚上",
+          "现在"
+        ],
+        "correct": "下午",
+        "explanation": "Time of day follows the pattern: 她 (she) 下午 (afternoon) 喝茶 (drink tea). Chinese has specific words for morning (早上/上午), afternoon (下午), and evening (晚上). These time divisions are precise and commonly used. Using them naturally makes your Chinese sound more fluent and culturally authentic."
+      },
+      {
+        "id": "ec_time7",
+        "question": "我___完成",
+        "translation": "(I soon finish)",
+        "options": [
+          "马上",
+          "以前",
+          "昨天",
+          "去年"
+        ],
+        "correct": "马上",
+        "explanation": "Near future time words work the same: 我 (I) 马上 (soon/immediately) 完成 (finish). The word 马上 literally means 'on horseback', suggesting something that happens right away, as fast as riding a horse. These etymological connections make Chinese vocabulary memorable and colorful. Understanding word origins enriches your relationship with the language."
+      },
+      {
+        "id": "ec_time8",
+        "question": "我们___在家吃饭",
+        "translation": "(We usually eat home)",
+        "options": [
+          "平常",
+          "昨天",
+          "明天",
+          "现在"
+        ],
+        "correct": "平常",
+        "explanation": "Time and place combine: 我们 (we) 平常 (usually) 在家 (at home) 吃饭 (eat). Notice the order: subject-time-place-verb. Chinese stacks information layers systematically: first establish who, then when, then where, finally what action. This hierarchical organization reflects Chinese thought patterns. Mastering this ordering is key to natural-sounding Chinese."
+      },
+      {
+        "id": "ec_time9",
+        "question": "他___走了",
+        "translation": "(He already leave)",
+        "options": [
+          "已经",
+          "马上",
+          "以前",
+          "现在"
+        ],
+        "correct": "已经",
+        "explanation": "Aspect marker 已经 (already) comes before the verb: 他 (he) 已经 (already) 走 (leave) 了 (completion marker). The particle 了 at the end indicates completed action. These particles add nuance without verb conjugation. Together, 已经...了 emphasizes that something has definitely been completed. Learning to use these markers naturally takes practice."
+      },
+      {
+        "id": "ec_time10",
+        "question": "我___去健身房",
+        "translation": "(I sometimes go gym)",
+        "options": [
+          "有时候",
+          "每天",
+          "从不",
+          "总是"
+        ],
+        "correct": "有时候",
+        "explanation": "Frequency adverb placement: 我 (I) 有时候 (sometimes) 去 (go) 健身房 (gym). The phrase 有时候 literally means 'have times', expressing occasional occurrence. These multi-syllable time expressions follow the same placement rules as single words. The consistency across word lengths makes the system easy to apply."
+      },
+      {
+        "id": "ec_time11",
+        "question": "他们___去滑雪",
+        "translation": "(They winter go skiing)",
+        "options": [
+          "冬天",
+          "夏天",
+          "春天",
+          "秋天"
+        ],
+        "correct": "冬天",
+        "explanation": "Seasonal time expressions: 他们 (they) 冬天 (winter) 去 (go) 滑雪 (skiing). Seasons function as time markers following standard placement. China has four distinct seasons, each with rich cultural associations. Using seasonal references naturally connects you to Chinese cultural rhythms and the traditional importance of seasonal cycles."
+      },
+      {
+        "id": "ec_time12",
+        "question": "她___跑步",
+        "translation": "(She early morning run)",
+        "options": [
+          "早上",
+          "下午",
+          "晚上",
+          "中午"
+        ],
+        "correct": "早上",
+        "explanation": "Time of day: 她 (she) 早上 (morning) 跑步 (run). The word 跑步 literally means 'run steps', showing how Chinese often builds compound words from simple components. This compositionality helps you understand new words. Breaking down compounds reveals meaning and makes vocabulary more memorable."
+      },
+      {
+        "id": "ec_time13",
+        "question": "我们___吃水果",
+        "translation": "(We before eat fruit)",
+        "options": [
+          "以前",
+          "现在",
+          "马上",
+          "刚才"
+        ],
+        "correct": "以前",
+        "explanation": "Past time reference: 我们 (we) 以前 (before/in the past) 吃 (eat) 水果 (fruit). The phrase 以前 indicates general past time. Chinese has various ways to express temporal distance, each with subtle differences. 以前 suggests an unspecified time in the past, perhaps contrasting with present habits."
+      },
+      {
+        "id": "ec_time14",
+        "question": "我___去市场",
+        "translation": "(I afterwards go market)",
+        "options": [
+          "后来",
+          "以前",
+          "现在",
+          "马上"
+        ],
+        "correct": "后来",
+        "explanation": "Sequential time marker: 我 (I) 后来 (afterwards/later) 去 (go) 市场 (market). The phrase 后来 indicates what happened next in a sequence of events. These connective time words help you narrate stories and explain sequences. They're essential for moving beyond simple isolated sentences to connected discourse."
+      },
+      {
+        "id": "ec_time15",
+        "question": "他___到",
+        "translation": "(He just arrive)",
+        "options": [
+          "刚",
+          "已经",
+          "马上",
+          "以前"
+        ],
+        "correct": "刚",
+        "explanation": "Recent past marker 刚 (just): 他 (he) 刚 (just) 到 (arrive). This indicates very recent completion, like English 'just' or 'just now'. Chinese has nuanced ways to indicate how recently something happened. These temporal precision tools let you convey exactly when something occurred, adding sophistication to your expression."
+      }
+    ]
+  },
+  {
+    "key": "aspect_markers",
+    "name": "Aspect Particles (了, 着, 过)",
+    "description": "Showing action completion and duration",
+    "iconName": "sparkles",
+    "color": "#4ade80",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ec_asp1",
+        "question": "我吃___",
+        "translation": "(I ate)",
+        "options": [
+          "了",
+          "着",
+          "过",
+          "的"
+        ],
+        "correct": "了",
+        "explanation": "The particle 了 (le) indicates completed action: 我吃了 (I ate/have eaten). Unlike English past tense, 了 marks that an action reached completion or a new situation arose. It's not strictly about past time. You can use 了 for future completed actions too. Understanding 了 as completion rather than past tense is crucial. This aspectual thinking is central to Chinese grammar."
+      },
+      {
+        "id": "ec_asp2",
+        "question": "他戴___眼镜",
+        "translation": "(He is wearing glasses)",
+        "options": [
+          "着",
+          "了",
+          "过",
+          "的"
+        ],
+        "correct": "着",
+        "explanation": "The particle 着 (zhe) indicates ongoing state: 他戴着眼镜 (he is wearing glasses). Unlike 了 which marks completion, 着 shows something is currently in a state or ongoing. Think of it as freezing a moment - he has his glasses on right now. This particle helps describe static situations and ongoing states with precision."
+      },
+      {
+        "id": "ec_asp3",
+        "question": "我去___中国",
+        "translation": "(I have been to China)",
+        "options": [
+          "过",
+          "了",
+          "着",
+          "的"
+        ],
+        "correct": "过",
+        "explanation": "The particle 过 (guo) indicates past experience: 我去过中国 (I have been to China). This is like English 'have done' expressing life experience. The difference between 了 and 过 is subtle: 了 marks simple completion, 过 emphasizes having had the experience. Both are valuable, each with distinct uses that add layers of meaning."
+      },
+      {
+        "id": "ec_asp4",
+        "question": "她买___书",
+        "translation": "(She bought a book)",
+        "options": [
+          "了",
+          "着",
+          "过",
+          "的"
+        ],
+        "correct": "了",
+        "explanation": "Completed purchase: 她买了书 (she bought a book). The 了 indicates the transaction is complete. This sentence focuses on the completion of buying, not on her current state of having the book. Chinese aspect particles let you highlight different facets of the same basic action, adding expressiveness without verb conjugation."
+      },
+      {
+        "id": "ec_asp5",
+        "question": "门开___",
+        "translation": "(The door is open)",
+        "options": [
+          "着",
+          "了",
+          "过",
+          "的"
+        ],
+        "correct": "着",
+        "explanation": "Current state: 门开着 (the door is open). The 着 shows the door is in an open state. This doesn't focus on who opened it or when, just that it's open now. 着 is perfect for describing the current situation or condition of things. It captures static moments in time beautifully."
+      },
+      {
+        "id": "ec_asp6",
+        "question": "我吃___那个菜",
+        "translation": "(I have tried that dish)",
+        "options": [
+          "过",
+          "了",
+          "着",
+          "的"
+        ],
+        "correct": "过",
+        "explanation": "Past experience: 我吃过那个菜 (I have tried that dish). Using 过 emphasizes you have this experience in your history. If someone asks 'have you tried this dish', answering with 过 is natural. This experiential aspect is very useful in conversation for talking about things you've done or places you've been."
+      },
+      {
+        "id": "ec_asp7",
+        "question": "下雨___",
+        "translation": "(It rained / It's raining)",
+        "options": [
+          "了",
+          "着",
+          "过",
+          "的"
+        ],
+        "correct": "了",
+        "explanation": "Change of situation: 下雨了 (it rained/it's raining). When 了 appears at sentence end, it often indicates a new situation has begun. The rain started, which is a change from the previous state. This use of 了 is extremely common for reporting changes or new developments. It keeps your listener updated on how situations evolve."
+      },
+      {
+        "id": "ec_asp8",
+        "question": "他坐___",
+        "translation": "(He is sitting)",
+        "options": [
+          "着",
+          "了",
+          "过",
+          "的"
+        ],
+        "correct": "着",
+        "explanation": "Ongoing posture: 他坐着 (he is sitting). The 着 describes his current position. For postures and positions, 着 is natural. It paints a picture of the scene as it is right now. Combined with verbs like 站 (stand), 躺 (lie), 坐 (sit), 着 helps you describe physical scenes vividly."
+      },
+      {
+        "id": "ec_asp9",
+        "question": "我们看___那个电影",
+        "translation": "(We have seen that movie)",
+        "options": [
+          "过",
+          "了",
+          "着",
+          "的"
+        ],
+        "correct": "过",
+        "explanation": "Past experience: 我们看过那个电影 (we have seen that movie). The 过 indicates this is part of your collective experience. It's about whether you have this experience, not about a specific past moment. This distinction helps in conversations where you're comparing experiences or recommending things based on what you've tried."
+      },
+      {
+        "id": "ec_asp10",
+        "question": "灯开___",
+        "translation": "(The light is on)",
+        "options": [
+          "着",
+          "了",
+          "过",
+          "的"
+        ],
+        "correct": "着",
+        "explanation": "Current state: 灯开着 (the light is on). The 着 shows the ongoing state of the light being on. This is useful for describing scenes: what's on, what's open, who's wearing what. These details bring your Chinese descriptions to life with clarity and precision."
+      },
+      {
+        "id": "ec_asp11",
+        "question": "我学___中文",
+        "translation": "(I studied Chinese / have studied Chinese)",
+        "options": [
+          "了",
+          "着",
+          "过",
+          "的"
+        ],
+        "correct": "了",
+        "explanation": "Completed learning action: 我学了中文 (I studied Chinese/have studied Chinese). With 了, this might mean you took a class or completed a period of study. The focus is on the action being done. If you wanted to say you've had experience learning Chinese (maybe years ago), you'd use 过. These nuances matter in natural conversation."
+      },
+      {
+        "id": "ec_asp12",
+        "question": "下雪___",
+        "translation": "(It snowed / It's snowing)",
+        "options": [
+          "了",
+          "着",
+          "过",
+          "的"
+        ],
+        "correct": "了",
+        "explanation": "Change of state: 下雪了 (it snowed/it's snowing). The 了 announces that snow has started falling, a change from before. Chinese speakers often use 了 to share news or updates about changes in situation. This makes 了 essential for keeping people informed about what's happening around you."
+      },
+      {
+        "id": "ec_asp13",
+        "question": "他住___北京",
+        "translation": "(He has lived in Beijing)",
+        "options": [
+          "过",
+          "了",
+          "着",
+          "的"
+        ],
+        "correct": "过",
+        "explanation": "Past living experience: 他住过北京 (he has lived in Beijing). The 过 emphasizes he has this experience of living there, perhaps before but not now. This doesn't specify when or for how long, just that he has this in his history. For talking about where people have lived or worked, 过 is natural."
+      },
+      {
+        "id": "ec_asp14",
+        "question": "宝宝睡___",
+        "translation": "(Baby is sleeping)",
+        "options": [
+          "着",
+          "了",
+          "过",
+          "的"
+        ],
+        "correct": "着",
+        "explanation": "Ongoing state of sleep: 宝宝睡着 (the baby is sleeping). Note that 着 here attaches to 睡, creating 睡着 which means 'be in a state of sleep'. This is different from just 睡了 (fell asleep/slept). The distinction helps you describe whether someone is currently asleep versus having completed the action of going to sleep."
+      },
+      {
+        "id": "ec_asp15",
+        "question": "我去___",
+        "translation": "(I went / I'm going)",
+        "options": [
+          "了",
+          "着",
+          "过",
+          "的"
+        ],
+        "correct": "了",
+        "explanation": "Completed going action: 我去了 (I went/I'm going/I'll go). The 了 marks completion of the action. Interestingly, this could mean you already went, or that you've committed to going (future completion). Context determines which. This flexibility makes 了 very powerful. Understanding this requires thinking in terms of completed action rather than strict time periods."
+      }
+    ]
+  },
+  {
+    "key": "questions",
+    "name": "Questions",
+    "description": "Forming questions in Chinese",
+    "iconName": "questionmark.circle",
+    "color": "#c084fc",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ec_q1",
+        "question": "你忙___?",
+        "translation": "(Are you busy?)",
+        "options": [
+          "吗",
+          "呢",
+          "吧",
+          "啊"
+        ],
+        "correct": "吗",
+        "explanation": "Chinese yes/no questions are elegantly simple: just add 吗 (ma) to the end of a statement. 你忙 = you're busy (statement). 你忙吗? = Are you busy? (question). That's it. No word order change, no auxiliary verbs needed. 吗 is a question particle that transforms statements into questions. It's pronounced with a neutral tone, light and friendly. This simplicity makes asking questions natural and easy from day one."
+      },
+      {
+        "id": "ec_q2",
+        "question": "你喜欢茶___?",
+        "translation": "(Do you like tea?)",
+        "options": [
+          "吗",
+          "呢",
+          "吧",
+          "啊"
+        ],
+        "correct": "吗",
+        "explanation": "你喜欢茶吗?: Again, statement + 吗. The pattern repeats beautifully. 你喜欢茶 = you like tea. Add 吗, and you're asking. Tea is central to Chinese culture - it's more than a beverage, it's a way of life, an art, a meditation. Asking about tea preferences often opens conversations and builds connections. The consistency of adding 吗 lets you form countless questions with confidence."
+      },
+      {
+        "id": "ec_q3",
+        "question": "她是老师___?",
+        "translation": "(Is she a teacher?)",
+        "options": [
+          "吗",
+          "呢",
+          "吧",
+          "啊"
+        ],
+        "correct": "吗",
+        "explanation": "她是老师吗?: 她是老师 (she is a teacher) + 吗 = question. 老师 (lǎoshī) = teacher. Teaching is a highly respected profession in Chinese culture, carrying centuries of honor and responsibility. Teachers shape minds and futures. The simple addition of 吗 turns any statement about professions, identities, or states into a gentle question."
+      },
+      {
+        "id": "ec_q4",
+        "question": "你叫___名字?",
+        "translation": "(What's your name?)",
+        "options": [
+          "什么",
+          "哪",
+          "谁",
+          "怎么"
+        ],
+        "correct": "什么",
+        "explanation": "什么 (shénme) = what. For 'what' questions, the question word goes where the answer would go. You'd answer: 我叫李明 (I'm called Li Ming). So you ask: 你叫什么名字? (You're called what name?). 叫 (jiào) = called, 名字 (míngzi) = name. Names carry significance - often chosen for their meanings and auspicious sounds. Asking someone's name is the first step in building a relationship."
+      },
+      {
+        "id": "ec_q5",
+        "question": "你住在___?",
+        "translation": "(Where do you live?)",
+        "options": [
+          "哪里",
+          "什么",
+          "谁",
+          "怎么"
+        ],
+        "correct": "哪里",
+        "explanation": "哪里 (nǎlǐ) = where. 住 (zhù) = live, 在 (zài) = at/in. The question word replaces where the answer would be: 我住在北京 (I live in Beijing) → 你住在哪里? (You live at where?). The word order stays the same - you just replace the location with 哪里. This logical approach makes forming questions intuitive. Where we live shapes our experiences and identity."
+      },
+      {
+        "id": "ec_q6",
+        "question": "你___来?",
+        "translation": "(When will you come?)",
+        "options": [
+          "什么时候",
+          "哪里",
+          "谁",
+          "怎么"
+        ],
+        "correct": "什么时候",
+        "explanation": "什么时候 (shénme shíhou) = when (literally 'what time'). 来 (lái) = come. Time expressions in Chinese go before the verb, so 什么时候 sits between subject and verb. Planning when to meet is part of maintaining friendships. Time questions help coordinate our busy lives. The phrase 什么时候 can refer to past, present, or future - context clarifies which."
+      },
+      {
+        "id": "ec_q7",
+        "question": "他是___?",
+        "translation": "(Who is he?)",
+        "options": [
+          "谁",
+          "什么",
+          "哪里",
+          "怎么"
+        ],
+        "correct": "谁",
+        "explanation": "谁 (shéi/shuí) = who. 他是谁? follows the pattern: subject + verb + question word. You'd answer: 他是我朋友 (he's my friend). So 谁 takes the place of the identity. Getting to know people's identities and relationships helps navigate social situations. Chinese culture places great importance on understanding relationships and social connections."
+      },
+      {
+        "id": "ec_q8",
+        "question": "这个___钱?",
+        "translation": "(How much is this?)",
+        "options": [
+          "多少",
+          "什么",
+          "哪个",
+          "怎么"
+        ],
+        "correct": "多少",
+        "explanation": "多少 (duōshao) = how much/how many. 钱 (qián) = money. 这个 (zhège) = this. Price questions are essential for daily life - shopping, bargaining, budgeting. 多少钱? (how much money?) is one of the most useful phrases for travelers. Markets and shops welcome friendly negotiations. Money questions help ensure fair transactions."
+      },
+      {
+        "id": "ec_q9",
+        "question": "你___迟到?",
+        "translation": "(Why are you late?)",
+        "options": [
+          "为什么",
+          "什么时候",
+          "哪里",
+          "怎么"
+        ],
+        "correct": "为什么",
+        "explanation": "为什么 (wèishénme) = why (literally 'for what reason'). 迟到 (chídào) = late/tardy. 'Why' questions seek understanding and explanations. The question word typically goes after the subject but before the verb. Life happens - traffic, oversleeping, unexpected delays. Understanding reasons builds empathy. Asking 'why' opens doors to deeper conversation."
+      },
+      {
+        "id": "ec_q10",
+        "question": "你好___?",
+        "translation": "(How are you?)",
+        "options": [
+          "吗",
+          "呢",
+          "啊",
+          "吧"
+        ],
+        "correct": "吗",
+        "explanation": "你好吗? adds 吗 to 你好 (hello). It's a genuine inquiry about wellbeing. In Chinese culture, asking 'how are you' shows real care and interest. Traditionally, you might hear 你吃了吗? (have you eaten?) as a greeting, reflecting the cultural importance of food and care. These simple questions maintain relationships and show consideration."
+      },
+      {
+        "id": "ec_q11",
+        "question": "你要___?",
+        "translation": "(Which one do you want?)",
+        "options": [
+          "哪个",
+          "什么",
+          "谁",
+          "怎么"
+        ],
+        "correct": "哪个",
+        "explanation": "哪 (nǎ) = which, 个 = measure word. 哪个 = which one. 要 (yào) = want. Making choices is part of daily life - which food, which path, which option. The question word 哪 can combine with different measure words depending on what you're asking about: 哪本书? (which book?), 哪辆车? (which car?). This flexibility makes it widely useful."
+      },
+      {
+        "id": "ec_q12",
+        "question": "你___说中文吗?",
+        "translation": "(Can you speak Chinese?)",
+        "options": [
+          "会",
+          "能",
+          "可以",
+          "要"
+        ],
+        "correct": "会",
+        "explanation": "会 (huì) = can/able to (for learned skills). 说中文 = speak Chinese. 你会说中文吗? uses both 会 and 吗 to ask about ability. When you add 会, you're asking about learned capability, not just possibility. Being able to speak Chinese opens doors to communication with over a billion people. Each new phrase you learn is a step toward fluency."
+      },
+      {
+        "id": "ec_q13",
+        "question": "___人?",
+        "translation": "(How many people?)",
+        "options": [
+          "几个",
+          "多少",
+          "什么",
+          "哪个"
+        ],
+        "correct": "几个",
+        "explanation": "几 (jǐ) = how many (usually for numbers under 10). For people, you can say 几个人? (how many people?) or 多少人? (how many people?). 几 expects a smaller number and always requires a measure word. Planning group activities means knowing how many people to expect. Headcounts help with reservations, preparations, and coordination."
+      },
+      {
+        "id": "ec_q14",
+        "question": "这是___书?",
+        "translation": "(Whose book is this?)",
+        "options": [
+          "谁的",
+          "什么",
+          "哪里",
+          "怎么"
+        ],
+        "correct": "谁的",
+        "explanation": "谁的 (shéi de) = whose. 的 (de) is the possessive particle. This book belongs to whom? = 这是谁的书? Understanding ownership and responsibility is important in communal living. Books often carry personal meaning - returning a borrowed book shows respect. Asking whose something is helps return lost items to their owners."
+      },
+      {
+        "id": "ec_q15",
+        "question": "你___去学校?",
+        "translation": "(How do you go to school?)",
+        "options": [
+          "怎么",
+          "什么时候",
+          "为什么",
+          "哪里"
+        ],
+        "correct": "怎么",
+        "explanation": "怎么 (zěnme) = how. 去 (qù) = go, 学校 (xuéxiào) = school. Asking 'how' seeks method or manner. 怎么 goes between subject and verb, showing the way something is done. Different transportation methods - walking, biking, bus, car - each have their own character. The daily journey to school becomes routine, sometimes offering quiet time for thought."
+      }
+    ]
+  },
+  {
+    "key": "negation",
+    "name": "Negation",
+    "description": "Making negative sentences",
+    "iconName": "xmark",
+    "color": "#f87171",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ec_n1",
+        "question": "我___吃肉",
+        "translation": "(I don't eat meat)",
+        "options": [
+          "不",
+          "没",
+          "别",
+          "未"
+        ],
+        "correct": "不",
+        "explanation": "Negation in Chinese is beautifully simple: place 不 (bù) directly before the verb. 我不吃肉: 不 negates 吃. That's it. No auxiliary verbs, no conjugations. 肉 (ròu) = meat. Dietary choices vary widely - vegetarians, vegans, and those with restrictions. 不 is your basic negation tool for actions, states, and preferences. It works consistently across most verbs."
+      },
+      {
+        "id": "ec_n2",
+        "question": "她___是老师",
+        "translation": "(She is not a teacher)",
+        "options": [
+          "不",
+          "没",
+          "别",
+          "未"
+        ],
+        "correct": "不",
+        "explanation": "她不是老师: 不 goes before 是 (shì = to be). For identity and classification, 不是 means 'is not'. Clear and direct. Everyone has different roles and professions. Clarifying what someone is not helps identify what they are. The simplicity of placing 不 before the verb makes negation straightforward to learn and use."
+      },
+      {
+        "id": "ec_n3",
+        "question": "我___去",
+        "translation": "(I didn't go)",
+        "options": [
+          "没",
+          "不",
+          "别",
+          "未"
+        ],
+        "correct": "没",
+        "explanation": "For past actions, use 没 (méi) instead of 不. 我没去 = I didn't go. 没 negates completed actions. It tells us something didn't happen. There's no auxiliary 'did' needed - 没 handles it. Sometimes plans change, circumstances prevent us from going places. 没 is your past negation tool, while 不 handles present and future."
+      },
+      {
+        "id": "ec_n4",
+        "question": "他___喜欢咖啡",
+        "translation": "(He doesn't like coffee)",
+        "options": [
+          "不",
+          "没",
+          "别",
+          "未"
+        ],
+        "correct": "不",
+        "explanation": "他不喜欢咖啡: 不 before 喜欢 negates liking. Preferences differ from person to person. Some prefer tea, some coffee, some neither. Respecting different preferences builds harmony. 不喜欢 = don't like. Understanding what others don't like helps avoid misunderstandings and shows consideration."
+      },
+      {
+        "id": "ec_n5",
+        "question": "我们___忙",
+        "translation": "(We are not busy)",
+        "options": [
+          "不",
+          "没",
+          "别",
+          "未"
+        ],
+        "correct": "不",
+        "explanation": "我们不忙: 不 negates 忙 (máng = busy). Having free time is precious in our busy world. 不忙 = not busy, having leisure. Balance between work and rest is essential for wellbeing. Being not busy means having time for relationships, hobbies, and rest. The simple placement of 不 makes expressing this straightforward."
+      },
+      {
+        "id": "ec_n6",
+        "question": "我___有钱",
+        "translation": "(I don't have money)",
+        "options": [
+          "没",
+          "不",
+          "别",
+          "未"
+        ],
+        "correct": "没",
+        "explanation": "我没有钱: Use 没有 (méiyǒu) to negate 有 (yǒu = have). 有 is special - it must be negated with 没, not 不. 我没有钱 = I don't have money. Financial situations vary. Sometimes expressing lack honestly is important. 没有 can negate possession of objects, money, time, or even abstract things."
+      },
+      {
+        "id": "ec_n7",
+        "question": "她___说英语",
+        "translation": "(She doesn't speak English)",
+        "options": [
+          "不",
+          "没",
+          "别",
+          "未"
+        ],
+        "correct": "不",
+        "explanation": "她不说英语: 不 before 说 negates speaking. Language abilities differ. Not everyone speaks every language, which is perfectly natural. Learning languages takes time and opportunity. 不说 = doesn't speak. Clear communication about language abilities helps avoid confusion and allows for translation or alternative communication methods."
+      },
+      {
+        "id": "ec_n8",
+        "question": "他们___吃",
+        "translation": "(They didn't eat)",
+        "options": [
+          "没",
+          "不",
+          "别",
+          "未"
+        ],
+        "correct": "没",
+        "explanation": "他们没吃: 没 negates past eating action. Perhaps they were too busy, not hungry, or waiting for others. 没吃 = didn't eat. Meals are important for health and social bonding. Missing a meal occasionally happens in busy lives. Knowing who hasn't eaten helps us offer food and care."
+      },
+      {
+        "id": "ec_n9",
+        "question": "我___累",
+        "translation": "(I am not tired)",
+        "options": [
+          "不",
+          "没",
+          "别",
+          "未"
+        ],
+        "correct": "不",
+        "explanation": "我不累: 不 negates 累 (lèi = tired). Feeling energetic and refreshed is wonderful. 不累 = not tired. Energy levels vary throughout the day and depend on rest, nutrition, and health. Expressing that you're not tired might mean you're ready to continue activities or help others. Simple negation with 不 handles these state descriptions elegantly."
+      },
+      {
+        "id": "ec_n10",
+        "question": "他___会游泳",
+        "translation": "(He cannot swim)",
+        "options": [
+          "不",
+          "没",
+          "别",
+          "未"
+        ],
+        "correct": "不",
+        "explanation": "他不会游泳: 不 negates 会 (huì = can/able to). 游泳 (yóuyǒng) = swim. 不会 = cannot (doesn't know how to). This differs from 不能 (cannot, due to circumstances). 不会 means lacking the skill or knowledge. Not everyone learns to swim, though it's a valuable safety skill. Being honest about abilities keeps us safe."
+      },
+      {
+        "id": "ec_n11",
+        "question": "我___要这个",
+        "translation": "(I don't want this)",
+        "options": [
+          "不",
+          "没",
+          "别",
+          "未"
+        ],
+        "correct": "不",
+        "explanation": "我不要这个: 不 negates 要 (yào = want). 不要 = don't want. Clear refusal or preference. It's okay to decline things we don't need or want. 这个 (zhège) = this. Being clear about what we don't want prevents misunderstandings and helps others understand our preferences."
+      },
+      {
+        "id": "ec_n12",
+        "question": "她___高兴",
+        "translation": "(She is not happy)",
+        "options": [
+          "不",
+          "没",
+          "别",
+          "未"
+        ],
+        "correct": "不",
+        "explanation": "她不高兴: 不 negates 高兴 (gāoxìng = happy). Everyone has ups and downs. 不高兴 = not happy, unhappy. Understanding someone's emotional state helps us respond with empathy. Sometimes people need space, sometimes comfort. Emotions are natural and valid. The direct negation makes expressing emotional states clear."
+      },
+      {
+        "id": "ec_n13",
+        "question": "我们___看见他",
+        "translation": "(We didn't see him)",
+        "options": [
+          "没",
+          "不",
+          "别",
+          "未"
+        ],
+        "correct": "没",
+        "explanation": "我们没看见他: 没 negates past action of seeing. 看见 (kànjiàn) = see (verb + result complement). 没看见 = didn't see. Perhaps he wasn't there, or we looked elsewhere. Paths don't always cross. 没 effectively negates the completed action of seeing. Result complements add richness to verbs."
+      },
+      {
+        "id": "ec_n14",
+        "question": "我___懂",
+        "translation": "(I don't understand)",
+        "options": [
+          "不",
+          "没",
+          "别",
+          "未"
+        ],
+        "correct": "不",
+        "explanation": "我不懂: 不 negates 懂 (dǒng = understand). 不懂 = don't understand. It's okay not to understand - asking questions leads to learning. Being honest about confusion is the first step to clarity. 我不懂 invites explanation and teaching. Understanding grows through patient communication and willingness to learn."
+      },
+      {
+        "id": "ec_n15",
+        "question": "他们___住这里",
+        "translation": "(They don't live here)",
+        "options": [
+          "不",
+          "没",
+          "别",
+          "未"
+        ],
+        "correct": "不",
+        "explanation": "他们不住这里: 不 negates 住 (zhù = live/reside). 这里 (zhèlǐ) = here. People live in many different places. 不住这里 = don't live here. Knowing where people live and don't live helps with directions and connections. The consistent pattern of 不 + verb makes these statements easy to construct."
+      }
+    ]
+  },
+  {
+    "key": "comparisons",
+    "name": "Comparisons",
+    "description": "Comparing things in Chinese",
+    "iconName": "chart.line.uptrend.xyaxis",
+    "color": "#fb923c",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ec_c1",
+        "question": "他___我高",
+        "translation": "(He is taller than me)",
+        "options": [
+          "比",
+          "跟",
+          "和",
+          "从"
+        ],
+        "correct": "比",
+        "explanation": "Chinese comparisons use 比 (bǐ): A 比 B + adjective. 他比我高 = he compared-to me tall = he's taller than me. 高 (gāo) = tall/high. No need for '-er' or 'more'. Just: A 比 B + adjective. Simple and direct. Physical attributes vary naturally. Comparisons help describe relative differences. The 比 structure is consistent across all comparisons."
+      },
+      {
+        "id": "ec_c2",
+        "question": "这个___那个贵",
+        "translation": "(This is more expensive than that)",
+        "options": [
+          "比",
+          "跟",
+          "和",
+          "从"
+        ],
+        "correct": "比",
+        "explanation": "这个比那个贵: 这个 (zhège) = this, 那个 (nàge) = that, 贵 (guì) = expensive. Shopping requires comparing prices. Understanding relative cost helps make informed decisions. The 比 structure makes price comparisons straightforward. 贵 can mean expensive or valuable - context determines which. Wise spending balances quality and cost."
+      },
+      {
+        "id": "ec_c3",
+        "question": "她跑得___他快",
+        "translation": "(She runs faster than him)",
+        "options": [
+          "比",
+          "跟",
+          "和",
+          "从"
+        ],
+        "correct": "比",
+        "explanation": "For comparing how actions are performed, use: Verb + 得 (de) + 比 + comparison + adjective. 她跑得比他快: she runs compared-to him fast. 跑 (pǎo) = run, 快 (kuài) = fast. 得 links verb to degree/result. Running ability varies. Some are naturally fast, others build speed through practice. The 得 structure adds nuance to comparisons."
+      },
+      {
+        "id": "ec_c4",
+        "question": "今天___昨天热",
+        "translation": "(Today is hotter than yesterday)",
+        "options": [
+          "比",
+          "跟",
+          "和",
+          "从"
+        ],
+        "correct": "比",
+        "explanation": "今天比昨天热: 今天 (jīntiān) = today, 昨天 (zuótiān) = yesterday, 热 (rè) = hot. Weather comparisons are common conversation topics. Temperature fluctuations affect our daily activities and mood. The reliable 比 structure makes these observations easy to express. Weather connects us through shared experience."
+      },
+      {
+        "id": "ec_c5",
+        "question": "中文___英文容易",
+        "translation": "(Chinese is easier than English)",
+        "options": [
+          "比",
+          "跟",
+          "和",
+          "从"
+        ],
+        "correct": "比",
+        "explanation": "中文比英文容易: 容易 (róngyì) = easy. Language difficulty is subjective - it depends on your native language and learning style. What's easy for one might be challenging for another. Chinese grammar can be simpler than English in some ways (no tenses, no plurals). Each language has its own logic and beauty. The 比 structure expresses these comparisons neutrally."
+      },
+      {
+        "id": "ec_c6",
+        "question": "我___你大",
+        "translation": "(I am older than you)",
+        "options": [
+          "比",
+          "跟",
+          "和",
+          "从"
+        ],
+        "correct": "比",
+        "explanation": "我比你大: In Chinese, 大 (dà) = big/old (for age). For age comparison, 比 + 大 means older, 比 + 小 means younger. Age brings experience and perspective. In Chinese culture, age is respected. Older siblings or friends often mentor younger ones. The relationship between generations shapes society. Simple comparisons convey these relationships clearly."
+      },
+      {
+        "id": "ec_c7",
+        "question": "这本书___那本书厚",
+        "translation": "(This book is thicker than that one)",
+        "options": [
+          "比",
+          "跟",
+          "和",
+          "从"
+        ],
+        "correct": "比",
+        "explanation": "这本书比那本书厚: 厚 (hòu) = thick. Books vary in thickness - some are light reads, others weighty tomes. Physical attributes like thickness tell us something about content and commitment required. Thick books might contain deeper content or longer stories. The measure word 本 for books appears in both compared items. Comparisons help us choose what to read based on time and interest."
+      },
+      {
+        "id": "ec_c8",
+        "question": "他学习___我努力",
+        "translation": "(He studies harder than me)",
+        "options": [
+          "比",
+          "跟",
+          "和",
+          "从"
+        ],
+        "correct": "比",
+        "explanation": "他学习比我努力: 学习 (xuéxí) = study, 努力 (nǔlì) = hardworking/diligent. This compares degree of effort. Some students are more dedicated, spending more time and focus. Diligence often leads to better results. Acknowledging others' hard work shows respect. We can learn from those who study harder, perhaps adopting their methods or discipline."
+      },
+      {
+        "id": "ec_c9",
+        "question": "夏天___春天热",
+        "translation": "(Summer is hotter than spring)",
+        "options": [
+          "比",
+          "跟",
+          "和",
+          "从"
+        ],
+        "correct": "比",
+        "explanation": "夏天比春天热: 夏天 (xiàtiān) = summer, 春天 (chūntiān) = spring. Seasonal changes are predictable yet always worth noting. Summer's heat follows spring's mildness. Each season has its character and beauty. These natural cycles connect us to Earth's rhythms. Comparing seasons helps us prepare and appreciate each one's unique gifts."
+      },
+      {
+        "id": "ec_c10",
+        "question": "北京___上海大",
+        "translation": "(Beijing is bigger than Shanghai)",
+        "options": [
+          "比",
+          "跟",
+          "和",
+          "从"
+        ],
+        "correct": "比",
+        "explanation": "北京比上海大: 北京 (Běijīng) = Beijing, 上海 (Shànghǎi) = Shanghai. Actually, Shanghai has more people, but Beijing has more land area - so this depends on how you measure 'big'. Both are magnificent cities with their own character. Geographic comparisons help us understand scale and distances. Each city offers unique history, culture, and opportunities."
+      },
+      {
+        "id": "ec_c11",
+        "question": "我___喜欢茶",
+        "translation": "(I prefer tea / I like tea more)",
+        "options": [
+          "比较",
+          "比",
+          "跟",
+          "和"
+        ],
+        "correct": "比较",
+        "explanation": "我比较喜欢茶: 比较 (bǐjiào) here means 'relatively/comparatively'. This is another comparison pattern - using 比较 as an adverb. It softens the statement: 'I relatively prefer tea' = I prefer tea (compared to other drinks). Personal preferences in beverages reflect taste and culture. Tea and coffee both have devoted fans. Expressing preferences politely maintains harmony."
+      },
+      {
+        "id": "ec_c12",
+        "question": "这个___那个好",
+        "translation": "(This is better than that)",
+        "options": [
+          "比",
+          "跟",
+          "和",
+          "从"
+        ],
+        "correct": "比",
+        "explanation": "这个比那个好: 好 (hǎo) = good. Comparing quality or desirability. 'Better' in Chinese is just 比 + 好. What makes something better varies by purpose and preference. Quality judgments help decision-making. Sometimes 'better' is objective (more durable, more efficient), sometimes subjective (more beautiful, more comfortable). The simple comparison allows both."
+      },
+      {
+        "id": "ec_c13",
+        "question": "她说得___他慢",
+        "translation": "(She speaks more slowly than him)",
+        "options": [
+          "比",
+          "跟",
+          "和",
+          "从"
+        ],
+        "correct": "比",
+        "explanation": "她说得比他慢: 说 + 得 + 比 + 他 + 慢 (màn = slow). Speaking slowly can be good - it aids clarity and understanding. Rapid speech can be hard to follow. Speed of speech varies by personality and situation. When learning languages, slower speech helps comprehension. Patience with different speaking speeds shows understanding."
+      },
+      {
+        "id": "ec_c14",
+        "question": "狗___猫聪明",
+        "translation": "(Dogs are smarter than cats)",
+        "options": [
+          "比",
+          "跟",
+          "和",
+          "从"
+        ],
+        "correct": "比",
+        "explanation": "狗比猫聪明: 狗 (gǒu) = dog, 猫 (māo) = cat, 聪明 (cōngming) = smart/intelligent. This comparison is subjective and debatable - both dogs and cats have different types of intelligence. Dog lovers and cat lovers each have their reasons. Both animals bring joy as companions. The 比 structure lets us express these playful comparisons."
+      },
+      {
+        "id": "ec_c15",
+        "question": "我___以前忙",
+        "translation": "(I am busier than before)",
+        "options": [
+          "比",
+          "跟",
+          "和",
+          "从"
+        ],
+        "correct": "比",
+        "explanation": "我比以前忙: 以前 (yǐqián) = before/previously. Comparing oneself across time. Life changes - responsibilities grow, opportunities expand. Being busier can mean progress or overwhelm. 比以前 compares present to past. Self-comparison helps track personal growth. Understanding how we've changed gives perspective on our journey."
+      }
+    ]
+  }
+]

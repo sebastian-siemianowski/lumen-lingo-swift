@@ -2,14 +2,14 @@ name: LumenLingo
 options:
   bundleIdPrefix: com.sebastiansiemianowski
   deploymentTarget:
-    iOS: "17.0"
-  xcodeVersion: "15.0"
+    iOS: "26.0"
+  xcodeVersion: "26.0"
   createIntermediateGroups: true
 
 settings:
   base:
     SWIFT_VERSION: "5.9"
-    IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+    IPHONEOS_DEPLOYMENT_TARGET: "26.0"
     DEVELOPMENT_TEAM: ""
 
 targets:
@@ -21,7 +21,7 @@ targets:
         excludes:
           - "**/.DS_Store"
     resources:
-      - path: LumenLingo/Resources
+      - path: LumenLingo/Resources/Assets.xcassets
         buildPhase: resources
     settings:
       base:

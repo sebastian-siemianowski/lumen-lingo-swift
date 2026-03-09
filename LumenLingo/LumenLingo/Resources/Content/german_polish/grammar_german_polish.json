@@ -1,0 +1,1437 @@
+[
+  {
+    "key": "present_tense",
+    "name": "Czas teraźniejszy",
+    "description": "Gegenwart auf Polnisch",
+    "iconName": "clock",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "gp_pres1",
+        "question": "Ja _____ książkę.",
+        "translation": "(Ich lese ein Buch)",
+        "options": [
+          "czytam",
+          "czytasz",
+          "czyta",
+          "czytają"
+        ],
+        "correct": "czytam",
+        "explanation": "Willkommen im Polnischen! Mit 'ja' (ich) endet das Verb auf -M. 'Czytać' wird zu 'czytam'. Im Deutschen haben wir 'ich lese' mit dem '-e', im Polnischen 'czytam' mit '-m'. Das ist Ihr persönlicher Marker! Die gute Nachricht: Polnische Verben folgen klaren Mustern. Für -AĆ Verben (wie lesen, sprechen, arbeiten) sind die Endungen vorhersehbar. Das -M ist Ihr Begleiter für 'ich'!"
+      },
+      {
+        "id": "gp_pres2",
+        "question": "Ty _____ w Warszawie.",
+        "translation": "(Du wohnst in Warschau)",
+        "options": [
+          "mieszkasz",
+          "mieszkam",
+          "mieszka",
+          "mieszkają"
+        ],
+        "correct": "mieszkasz",
+        "explanation": "Mit 'ty' (du) kommt die Endung -SZ. 'Mieszkać' wird zu 'mieszkasz'. Das -SZ klingt wie 'sch' - ein charakteristischer polnischer Laut! Im Deutschen haben wir 'du wohnst' mit '-st', im Polnischen '-sz'. Beide zeigen die zweite Person, nur anders! Warschau ist eine wunderschöne, lebendige Stadt - wiederaufgebaut nach dem Krieg mit beeindruckender Altstadt. Die -SZ Endung werden Sie oft hören!"
+      },
+      {
+        "id": "gp_pres3",
+        "question": "On _____ do pracy.",
+        "translation": "(Er geht zur Arbeit)",
+        "options": [
+          "idzie",
+          "idę",
+          "idziesz",
+          "idą"
+        ],
+        "correct": "idzie",
+        "explanation": "'Iść' (gehen) ist unregelmäßig - eines der wichtigsten Verben! Für 'on' (er): 'idzie'. Obwohl unregelmäßig, ähnelt es dem Deutschen 'er geht' in der Funktion. 'Do pracy' (zur Arbeit) zeigt einen wichtigen Unterschied: Polnisch nutzt Fälle! 'Do' + Genitiv. Das klingt kompliziert, wird aber mit der Zeit natürlich. Bewegungsverben sind zentral im Polnischen - 'idzie' werden Sie ständig nutzen!"
+      },
+      {
+        "id": "gp_pres4",
+        "question": "My _____ kawę.",
+        "translation": "(Wir trinken Kaffee)",
+        "options": [
+          "pijemy",
+          "piję",
+          "pijesz",
+          "piją"
+        ],
+        "correct": "pijemy",
+        "explanation": "Mit 'my' (wir) kommt -MY. 'Pić' wird zu 'pijemy'. Das ist ähnlich wie im Deutschen 'wir trinken' - die Gemeinschaftsform! Beachten Sie die Veränderung: 'pi-' wird zu 'pij-' (ein kleiner Stammwechsel). Polen liebt Kaffee und Tee - Kaffeehäuser haben lange Tradition! Die -MY Endung schafft ein Wir-Gefühl, Gemeinschaft. Das ist warm und einladend!"
+      },
+      {
+        "id": "gp_pres5",
+        "question": "Wy _____ polski.",
+        "translation": "(Ihr lernt Polnisch)",
+        "options": [
+          "uczycie się",
+          "uczę się",
+          "uczysz się",
+          "uczą się"
+        ],
+        "correct": "uczycie się",
+        "explanation": "Mit 'wy' (ihr) kommt -CIE. 'Uczyć się' wird zu 'uczycie się'. Das 'się' ist wie das deutsche 'sich' - ein Reflexivpronomen! Aber im Polnischen kommt es NACH dem Verb. Das ist elegant - 'ihr lernt euch' wörtlich. Die -CIE Endung ist Ihr Plural-Marker für 'ihr'. Polnisch zu lernen ist eine wunderbare Reise - gratuliere, dass Sie dabei sind!"
+      },
+      {
+        "id": "gp_pres6",
+        "question": "Oni _____ obiad.",
+        "translation": "(Sie essen Mittagessen)",
+        "options": [
+          "jedzą",
+          "jem",
+          "jesz",
+          "je"
+        ],
+        "correct": "jedzą",
+        "explanation": "Mit 'oni' (sie) kommt -Ą. 'Jeść' wird zu 'jedzą'. Das -Ą ist eine Nasalvokal - einzigartig für Polnisch! Es klingt wie 'on' oder 'om'. Diese Nasalvokale (ą und ę) gibt es im Deutschen nicht - sie machen Polnisch besonders! 'Obiad' (Mittagessen) ist die Hauptmahlzeit in Polen - oft warm und reichhaltig. Die -Ą Endung ist Ihr Mehrzahl-Marker!"
+      },
+      {
+        "id": "gp_pres7",
+        "question": "Ja _____ muzykę.",
+        "translation": "(Ich höre Musik)",
+        "options": [
+          "słucham",
+          "słuchasz",
+          "słucha",
+          "słuchają"
+        ],
+        "correct": "słucham",
+        "explanation": "Wieder 'ja' + -M! 'Słuchać' wird zu 'słucham'. Beachten Sie 'ł' - ein besonderer Buchstabe, klingt wie englisches 'w'! Im Deutschen haben wir diesen Laut nicht. Polen hat eine reiche Musikkultur - Chopin ist der Nationalstolz! Die -M Endung ist konsistent und zuverlässig. Sobald Sie die Muster kennen, wird das Konjugieren einfach!"
+      },
+      {
+        "id": "gp_pres8",
+        "question": "Ty _____ po polsku.",
+        "translation": "(Du sprichst Polnisch)",
+        "options": [
+          "mówisz",
+          "mówię",
+          "mówi",
+          "mówią"
+        ],
+        "correct": "mówisz",
+        "explanation": "Mit 'ty' kommt -SZ (manchmal mit einem Vokal davor: -isz, -asz). 'Mówić' wird zu 'mówisz'. 'Po polsku' (auf Polnisch) ist ein fester Ausdruck - wörtlich 'nach Polnisch'. Das ist anders als Deutsch 'auf Polnisch'! Diese kleinen Unterschiede machen Sprachen charmant. 'Mówić' (sprechen) ist essentiell - üben Sie es oft!"
+      },
+      {
+        "id": "gp_pres9",
+        "question": "Ona _____ w szkole.",
+        "translation": "(Sie arbeitet in der Schule)",
+        "options": [
+          "pracuje",
+          "pracuję",
+          "pracujesz",
+          "pracują"
+        ],
+        "correct": "pracuje",
+        "explanation": "Für 'ona' (sie) endet das Verb auf -E. 'Pracować' wird zu 'pracuje'. Die dritte Person Singular ist oft die kürzeste Form! 'W szkole' (in der Schule) - 'w' + Lokativ (ein Fall). Polen hat ein gutes Bildungssystem mit engagierten Lehrern. Die -E Endung ist sanft und natürlich - leicht auszusprechen!"
+      },
+      {
+        "id": "gp_pres10",
+        "question": "My _____ film.",
+        "translation": "(Wir schauen einen Film)",
+        "options": [
+          "oglądamy",
+          "oglądam",
+          "oglądasz",
+          "oglądają"
+        ],
+        "correct": "oglądamy",
+        "explanation": "Mit 'my' kommt -MY! 'Oglądać' wird zu 'oglądamy'. Das Verb hat ein 'ą' - wieder der Nasalvokal! Er ist Teil des Wortes, nicht nur der Endung. Polnisches Kino ist ausgezeichnet - Wajda, Kieślowski sind weltberühmt! Filme auf Polnisch sind großartig zum Lernen. Die -MY Form lädt zur Gemeinschaft ein - lasst uns zusammen schauen!"
+      },
+      {
+        "id": "gp_pres11",
+        "question": "Wy _____ sport.",
+        "translation": "(Ihr treibt Sport)",
+        "options": [
+          "uprawiacie",
+          "uprawiam",
+          "uprawiasz",
+          "uprawiają"
+        ],
+        "correct": "uprawiacie",
+        "explanation": "Mit 'wy' kommt -CIE! 'Uprawiać' wird zu 'uprawiacie'. 'Uprawiać sport' ist der idiomatische Ausdruck - nicht einfach 'robić sport'. Polnisch liebt spezifische Verben! Polen ist sportbegeistert - Volleyball, Fußball, Ski jumping sind beliebt. Die -CIE Endung ist charakteristisch für die Mehrzahl 'ihr' - einzigartig polnisch!"
+      },
+      {
+        "id": "gp_pres12",
+        "question": "Oni _____ w Polsce.",
+        "translation": "(Sie wohnen in Polen)",
+        "options": [
+          "mieszkają",
+          "mieszkam",
+          "mieszkasz",
+          "mieszka"
+        ],
+        "correct": "mieszkają",
+        "explanation": "Mit 'oni' kommt -Ą! 'Mieszkać' wird zu 'mieszkają'. Polen ist ein wunderschönes Land - von der Ostsee bis zu den Tatra-Bergen! Die Landschaft ist vielfältig, die Städte charmant, die Menschen herzlich. 'Mieszkają w Polsce' - ein schöner Satz für ein schönes Land. Die -Ą Endung mit dem Nasalvokal macht Polnisch melodisch!"
+      },
+      {
+        "id": "gp_pres13",
+        "question": "Ja _____ po angielsku.",
+        "translation": "(Ich spreche Englisch)",
+        "options": [
+          "mówię",
+          "mówisz",
+          "mówi",
+          "mówią"
+        ],
+        "correct": "mówię",
+        "explanation": "Mit 'ja' kommt -Ę (hier mit -ię)! 'Mówić' wird zu 'mówię'. Das -ę ist wieder ein Nasalvokal - klingt wie 'en'. Viele Polen sprechen sehr gut Englisch, besonders jüngere Generationen! Sprachen lernen hat in Polen hohen Stellenwert. Die Kombination von -m (oft) oder -ę (manchmal) für 'ja' werden Sie schnell meistern!"
+      },
+      {
+        "id": "gp_pres14",
+        "question": "Ty _____ gazetę.",
+        "translation": "(Du liest die Zeitung)",
+        "options": [
+          "czytasz",
+          "czytam",
+          "czyta",
+          "czytają"
+        ],
+        "correct": "czytasz",
+        "explanation": "Mit 'ty' kommt -SZ! 'Czytać' wird zu 'czytasz'. 'Gazetę' ist Akkusativ (noch ein Fall!) - zeigt das direkte Objekt. Polnische Zeitungen sind vielfältig - von seriös bis boulevardesk. Lesen auf Polnisch ist großartig zum Lernen! Die -SZ Endung ist so charakteristisch - sobald Sie sie hören, wissen Sie: das ist 'ty'!"
+      },
+      {
+        "id": "gp_pres15",
+        "question": "Ona _____ mi.",
+        "translation": "(Sie hilft mir)",
+        "options": [
+          "pomaga",
+          "pomagam",
+          "pomagasz",
+          "pomagają"
+        ],
+        "correct": "pomaga",
+        "explanation": "Für 'ona' kommt -A. 'Pomagać' wird zu 'pomaga'. 'Pomagać' + Dativ (mi = mir) - das Verb verlangt Dativ! Polen sind hilfsbereit und gastfreundlich - Nachbarschaftshilfe ist stark. Diese kulturelle Warmherzigkeit spiegelt sich in der Sprache. Die -A Endung für sie/er ist kurz und klar - sehr praktisch!"
+      }
+    ]
+  },
+  {
+    "key": "cases_intro",
+    "name": "Przypadki - Wprowadzenie",
+    "description": "Einführung in die Fälle",
+    "iconName": "square.3.layers.3d",
+    "color": "#c084fc",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "gp_case1",
+        "question": "To jest _____. (Buch)",
+        "translation": "(Das ist ein Buch)",
+        "options": [
+          "książka",
+          "książki",
+          "książkę",
+          "książką"
+        ],
+        "correct": "książka",
+        "explanation": "Willkommen bei den polnischen Fällen! Im Nominativ (Wer/Was?) bleibt das Wort in der Grundform. 'Książka' ist Nominativ - das Subjekt des Satzes. Im Deutschen auch 'das Buch' (Nominativ). Polnisch hat 7 Fälle (Deutsch hat 4), aber keine Panik! Nominativ ist der einfachste - die Wörterbuchform. Sie nutzen ihn für das Subjekt: 'To jest książka' (Das ist ein Buch)."
+      },
+      {
+        "id": "gp_case2",
+        "question": "Widzę _____. (Buch)",
+        "translation": "(Ich sehe ein Buch)",
+        "options": [
+          "książkę",
+          "książka",
+          "książki",
+          "książką"
+        ],
+        "correct": "książkę",
+        "explanation": "Akkusativ (Wen/Was?) für direkte Objekte! 'Książkę' ist Akkusativ von 'książka'. Im Deutschen sagen wir auch Akkusativ: 'das Buch' (Nominativ) wird zu 'das Buch' (Akkusativ - gleich!). Polnisch zeigt den Unterschied deutlicher: książka → książkę. Das -ę am Ende signalisiert Akkusativ bei femininen Substantiven. Mit der Zeit wird das Muster klar!"
+      },
+      {
+        "id": "gp_case3",
+        "question": "Nie ma _____. (Buch)",
+        "translation": "(Es gibt kein Buch)",
+        "options": [
+          "książki",
+          "książka",
+          "książkę",
+          "książką"
+        ],
+        "correct": "książki",
+        "explanation": "Genitiv (Wessen?) wird nach Negation verwendet! 'Nie ma' (es gibt nicht) verlangt Genitiv. 'Książki' ist Genitiv von 'książka'. Das ist ein Unterschied zum Deutschen - wir sagen 'es gibt kein Buch' (Akkusativ), Polnisch nutzt Genitiv nach Negation. Diese Regel ist konsistent und hilfreich. Genitiv zeigt oft Abwesenheit, Negation, Besitz!"
+      },
+      {
+        "id": "gp_case4",
+        "question": "Czytam _____. (Buch)",
+        "translation": "(Ich lese ein Buch)",
+        "options": [
+          "książkę",
+          "książka",
+          "książki",
+          "książką"
+        ],
+        "correct": "książkę",
+        "explanation": "Wieder Akkusativ! 'Czytam książkę' - ich lese ein Buch (direktes Objekt). Akkusativ ist der Fall für das, was direkt beeinflusst wird. Im Deutschen 'das Buch' (das -s zeigt nicht viel), im Polnischen 'książkę' (das -ę zeigt klar Akkusativ). Diese Klarheit hilft beim Verstehen! Akkusativ ist nach vielen Verben: sehen, lesen, haben, essen."
+      },
+      {
+        "id": "gp_case5",
+        "question": "Piszę długopisem. (Kugelschreiber)",
+        "translation": "(Ich schreibe mit einem Kugelschreiber)",
+        "options": [
+          "długopisem",
+          "długopis",
+          "długopisu",
+          "długopisowi"
+        ],
+        "correct": "długopisem",
+        "explanation": "Instrumental (Womit?) zeigt das Werkzeug! 'Długopisem' ist Instrumental von 'długopis'. Im Deutschen nutzen wir 'mit' + Dativ, Polnisch hat einen eigenen Fall - Instrumental! Das -em/-ą Ending zeigt 'womit'. Das ist elegant - ohne Präposition zeigt der Fall die Funktion. Instrumental ist für Werkzeuge, Begleitung, Identifikation!"
+      },
+      {
+        "id": "gp_case6",
+        "question": "Idę do _____. (Schule)",
+        "translation": "(Ich gehe zur Schule)",
+        "options": [
+          "szkoły",
+          "szkoła",
+          "szkołę",
+          "szkołą"
+        ],
+        "correct": "szkoły",
+        "explanation": "Genitiv nach 'do' (zu/nach)! 'Do szkoły' - zur Schule. Präpositionen regieren Fälle im Polnischen! 'Do' verlangt immer Genitiv. Im Deutschen 'zur Schule' (Dativ), im Polnischen 'do szkoły' (Genitiv). Jede Präposition hat ihren Fall - das lernt man mit der Zeit. Genitiv ist der häufigste Fall nach Präpositionen!"
+      },
+      {
+        "id": "gp_case7",
+        "question": "Jestem w _____. (Schule)",
+        "translation": "(Ich bin in der Schule)",
+        "options": [
+          "szkole",
+          "szkoła",
+          "szkoły",
+          "szkołą"
+        ],
+        "correct": "szkole",
+        "explanation": "Lokativ (Wo?) nach 'w' (in)! 'W szkole' - in der Schule. Lokativ wird NUR mit Präpositionen verwendet! Er zeigt Ort, Position. Im Deutschen 'in der Schule' (Dativ), im Polnischen 'w szkole' (Lokativ). Das -e Ending ist typisch für feminine Lokativ. Lokativ ist der 'Wo?'-Fall - immer für Orte mit Präpositionen!"
+      },
+      {
+        "id": "gp_case8",
+        "question": "Dam _____. (Bruder)",
+        "translation": "(Ich gebe dem Bruder)",
+        "options": [
+          "bratu",
+          "brat",
+          "brata",
+          "bratem"
+        ],
+        "correct": "bratu",
+        "explanation": "Dativ (Wem?) für indirekte Objekte! 'Bratu' ist Dativ von 'brat'. Im Deutschen auch Dativ: 'dem Bruder'. Das -u/-owi Ending zeigt maskulinen Dativ. Polnisch und Deutsch teilen diese Funktion - der Empfänger bekommt Dativ! Das ist eine Parallele zwischen den Sprachen. Dativ beantwortet 'wem?'!"
+      },
+      {
+        "id": "gp_case9",
+        "question": "Mówię o _____. (Film)",
+        "translation": "(Ich spreche über einen Film)",
+        "options": [
+          "filmie",
+          "film",
+          "filmu",
+          "filmem"
+        ],
+        "correct": "filmie",
+        "explanation": "Lokativ nach 'o' (über/von)! 'O filmie' - über einen Film. 'O' verlangt Lokativ. Im Deutschen 'über einen Film' (Akkusativ), Polnisch nutzt Lokativ. Das -e Ending zeigt maskulinen Lokativ. Lokativ ist nicht nur für Orte - auch für Themen, Gedanken, Gespräche über etwas. Vielseitig!"
+      },
+      {
+        "id": "gp_case10",
+        "question": "Lubię _____. (Kaffee)",
+        "translation": "(Ich mag Kaffee)",
+        "options": [
+          "kawę",
+          "kawa",
+          "kawy",
+          "kawą"
+        ],
+        "correct": "kawę",
+        "explanation": "Akkusativ nach 'lubić' (mögen)! 'Kawę' ist Akkusativ von 'kawa'. Viele Verben verlangen Akkusativ für das Objekt. Polen liebt Kaffee - 'kawa' ist Teil des Alltags! Kaffeehäuser sind gesellige Treffpunkte. Die -ę Endung (fem. Akkusativ) werden Sie oft sehen - sie ist sehr produktiv!"
+      },
+      {
+        "id": "gp_case11",
+        "question": "Dziękuję _____. (Frau)",
+        "translation": "(Ich danke der Frau)",
+        "options": [
+          "kobiecie",
+          "kobieta",
+          "kobiety",
+          "kobietą"
+        ],
+        "correct": "kobiecie",
+        "explanation": "Dativ nach 'dziękować' (danken)! 'Kobiecie' ist Dativ von 'kobieta'. Im Deutschen auch Dativ: 'ich danke der Frau'. Manche Verben verlangen spezifische Fälle - 'dziękować' nimmt Dativ. Das ist logisch - Sie danken JEMANDEM (wem?). Die -e/-cie Endung zeigt femininen Dativ. Höflichkeit ist wichtig in Polen!"
+      },
+      {
+        "id": "gp_case12",
+        "question": "Myślę o _____. (du)",
+        "translation": "(Ich denke an dich)",
+        "options": [
+          "tobie",
+          "ty",
+          "ciebie",
+          "tobą"
+        ],
+        "correct": "tobie",
+        "explanation": "Lokativ von Pronomen nach 'o'! 'Myśleć o' (denken an) verlangt Lokativ. 'Tobie' ist Lokativ von 'ty'. Pronomen ändern sich stark in den Fällen - fast wie neue Wörter! Das ist ähnlich wie im Deutschen (ich, mich, mir, meiner). Mit der Zeit werden diese Formen natürlich. Lokativ für Gedanken ist poetisch!"
+      },
+      {
+        "id": "gp_case13",
+        "question": "Bez _____. (Zucker)",
+        "translation": "(Ohne Zucker)",
+        "options": [
+          "cukru",
+          "cukier",
+          "cukrowi",
+          "cukrem"
+        ],
+        "correct": "cukru",
+        "explanation": "Genitiv nach 'bez' (ohne)! 'Bez cukru' - ohne Zucker. Viele Präpositionen nehmen Genitiv: bez (ohne), do (zu), od (von), dla (für). Das -u Ending zeigt maskulinen Genitiv. 'Kawa bez cukru' (Kaffee ohne Zucker) - eine häufige Bestellung! Genitiv zeigt oft Abwesenheit - logisch für 'ohne'!"
+      },
+      {
+        "id": "gp_case14",
+        "question": "Z _____. (Freund)",
+        "translation": "(Mit einem Freund)",
+        "options": [
+          "przyjacielem",
+          "przyjaciel",
+          "przyjaciela",
+          "przyjacielowi"
+        ],
+        "correct": "przyjacielem",
+        "explanation": "Instrumental nach 'z' (mit)! 'Z przyjacielem' - mit einem Freund. 'Z' + Instrumental zeigt Begleitung. Im Deutschen 'mit' + Dativ, im Polnischen 'z' + Instrumental. Das -em Ending ist maskuliner Instrumental. Freundschaft ist wichtig in Polen - 'przyjaciel' ist ein warmes Wort. Instrumental verbindet!"
+      },
+      {
+        "id": "gp_case15",
+        "question": "Dla _____. (Mutter)",
+        "translation": "(Für die Mutter)",
+        "options": [
+          "matki",
+          "matka",
+          "matkę",
+          "matką"
+        ],
+        "correct": "matki",
+        "explanation": "Genitiv nach 'dla' (für)! 'Dla matki' - für die Mutter. 'Dla' ist eine wichtige Präposition - sie zeigt den Nutznießer. Das -i Endung zeigt femininen Genitiv (nach k, g wechselt -y zu -i). Familie ist zentral in der polnischen Kultur - 'matka' (Mutter) ist besonders geehrt. Der Genitiv mit 'dla' ist sehr häufig!"
+      }
+    ]
+  },
+  {
+    "key": "past_tense",
+    "name": "Czas przeszły",
+    "description": "Vergangenheit auf Polnisch",
+    "iconName": "clock.arrow.circlepath",
+    "color": "#fbbf24",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "gp_past1",
+        "question": "Ja _____ książkę. (lesen - männlich)",
+        "translation": "(Ich las ein Buch)",
+        "options": [
+          "czytałem",
+          "czytałam",
+          "czytałeś",
+          "czytali"
+        ],
+        "correct": "czytałem",
+        "explanation": "Polnische Vergangenheit zeigt Geschlecht! Für 'ja' (männlich): '-łem'. 'Czytałem' = ich las (Mann spricht). Das ist anders als Deutsch, wo 'ich las' geschlechtsneutral ist! Für Frauen: 'czytałam'. Diese Unterscheidung ist charmant - die Grammatik zeigt, wer spricht. Das -ł- ist der Vergangenheitsmarker, dann kommt die Personalendung."
+      },
+      {
+        "id": "gp_past2",
+        "question": "Ja _____ kawę. (trinken - weiblich)",
+        "translation": "(Ich trank Kaffee)",
+        "options": [
+          "piłam",
+          "piłem",
+          "piłaś",
+          "pili"
+        ],
+        "correct": "piłam",
+        "explanation": "Für 'ja' (weiblich): '-łam'. 'Piłam' = ich trank (Frau spricht). Das -ł- zeigt Vergangenheit, -am zeigt 'ich weiblich'. Im Deutschen neutral 'ich trank', Polnisch unterscheidet! Diese Gender-Markierung macht Polnisch expressiv. Sie kommuniziert automatisch Information über den Sprecher."
+      },
+      {
+        "id": "gp_past3",
+        "question": "Ty _____ film. (schauen - männlich)",
+        "translation": "(Du hast einen Film geschaut)",
+        "options": [
+          "oglądałeś",
+          "oglądałaś",
+          "oglądałem",
+          "oglądali"
+        ],
+        "correct": "oglądałeś",
+        "explanation": "Für 'ty' (männlich): '-łeś'. Das ist wie ein Muster: -ł- (Vergangenheit) + -eś (du männlich). Im Deutschen 'du schautest' ohne Geschlecht. Diese polnische Eigenschaft ist anfangs ungewohnt, aber logisch - sie gibt mehr Information! Mit der Zeit wird es natürlich."
+      },
+      {
+        "id": "gp_past4",
+        "question": "Ona _____ w szkole.",
+        "translation": "(Sie arbeitete in der Schule)",
+        "options": [
+          "pracowała",
+          "pracował",
+          "pracowali",
+          "pracowałam"
+        ],
+        "correct": "pracowała",
+        "explanation": "Für 'ona' (sie): '-ła'. 'Pracowała' = sie arbeitete. Das ist einfacher - nur -ła für sie! Keine zusätzliche Endung wie bei 'ja' oder 'ty'. Das -a am Ende macht es sanft und melodisch. Diese Form ist eine der häufigsten in Erzählungen über andere Menschen."
+      },
+      {
+        "id": "gp_past5",
+        "question": "My _____ obiad. (essen - männlich oder gemischt)",
+        "translation": "(Wir aßen Mittagessen)",
+        "options": [
+          "jedliśmy",
+          "jadłyśmy",
+          "jadłem",
+          "jedli"
+        ],
+        "correct": "jedliśmy",
+        "explanation": "Für 'my' (männlich/gemischt): '-liśmy'. 'Jedliśmy' = wir aßen (Männer oder gemischte Gruppe). Das -śmy zeigt 'wir'. Bei rein weiblicher Gruppe: 'jadłyśmy' (mit -y-). Diese Unterscheidung ist subtil aber wichtig! Im Deutschen einfach 'wir aßen', Polnisch differenziert nach Gender der Gruppe."
+      },
+      {
+        "id": "gp_past6",
+        "question": "Wy _____ polski. (lernen - gemischt)",
+        "translation": "(Ihr habt Polnisch gelernt)",
+        "options": [
+          "uczyliście się",
+          "uczyłyście się",
+          "uczyłem się",
+          "uczyli się"
+        ],
+        "correct": "uczyliście się",
+        "explanation": "Für 'wy' (gemischt): '-liście się'. Das -ście zeigt 'ihr', -li- zeigt männlich/gemischt. Für rein weiblich: '-łyście'. Das Reflexivpronomen 'się' bleibt am Ende. Diese Form klingt musikalisch - 'u-czy-li-ście się'! Es ist wie eine kleine Melodie der Vergangenheit."
+      },
+      {
+        "id": "gp_past7",
+        "question": "Oni _____ w parku.",
+        "translation": "(Sie gingen im Park spazieren)",
+        "options": [
+          "spacerowali",
+          "spacerowały",
+          "spacerował",
+          "spacerowałam"
+        ],
+        "correct": "spacerowali",
+        "explanation": "Für 'oni' (sie männlich/gemischt): '-li'. 'Spacerowali' = sie gingen spazieren. Das -li ist die Mehrzahl männlich/gemischt. Für 'one' (sie weiblich): 'spacerowały' (mit -ły). Polen liebt Spaziergänge - besonders in Parks! Diese Endung -li ist sehr häufig in Geschichten und Erzählungen."
+      },
+      {
+        "id": "gp_past8",
+        "question": "On _____ po polsku.",
+        "translation": "(Er sprach Polnisch)",
+        "options": [
+          "mówił",
+          "mówiła",
+          "mówili",
+          "mówiłem"
+        ],
+        "correct": "mówił",
+        "explanation": "Für 'on' (er): '-ł'. 'Mówił' = er sprach. Das ist die einfachste männliche Form - nur -ł! Im Deutschen 'er sprach', im Polnischen 'mówił'. Diese Form ist elegant und kurz. Sie werden sie ständig in polnischer Literatur und Konversation sehen."
+      },
+      {
+        "id": "gp_past9",
+        "question": "Ty _____ gazetę. (lesen - weiblich)",
+        "translation": "(Du hast die Zeitung gelesen)",
+        "options": [
+          "czytałaś",
+          "czytałeś",
+          "czytałam",
+          "czytali"
+        ],
+        "correct": "czytałaś",
+        "explanation": "Für 'ty' (weiblich): '-łaś'. Das -a- zeigt weiblich (vs. -e- für männlich). 'Czytałaś' = du last (Frau). Diese Unterscheidung macht Polnisch präzise - man weiß sofort, ob Mann oder Frau angesprochen wird. Das ist eine schöne Eigenschaft der Sprache!"
+      },
+      {
+        "id": "gp_past10",
+        "question": "One _____ w restauracji. (essen - nur Frauen)",
+        "translation": "(Sie aßen im Restaurant)",
+        "options": [
+          "jadły",
+          "jedli",
+          "jadła",
+          "jadłam"
+        ],
+        "correct": "jadły",
+        "explanation": "Für 'one' (sie weiblich): '-ły'. 'Jadły' = sie aßen (nur Frauen). Das -ły zeigt weibliche Mehrzahl. Für gemischte Gruppe: 'jedli' (männlich dominiert). Diese Regel ist interessant - eine Frau + ein Mann = jedli (männlich). Nur rein weibliche Gruppen bekommen -ły."
+      },
+      {
+        "id": "gp_past11",
+        "question": "My _____ muzykę. (hören - nur Frauen)",
+        "translation": "(Wir hörten Musik)",
+        "options": [
+          "słuchałyśmy",
+          "słuchaliśmy",
+          "słuchałam",
+          "słuchali"
+        ],
+        "correct": "słuchałyśmy",
+        "explanation": "Für 'my' (rein weiblich): '-łyśmy'. 'Słuchałyśmy' = wir hörten (nur Frauen). Das -y- zeigt weiblich, -śmy zeigt 'wir'. Für Männer/gemischt: 'słuchaliśmy'. Diese Differenzierung ist Teil der polnischen Expressivität - die Sprache sagt viel!"
+      },
+      {
+        "id": "gp_past12",
+        "question": "Ja _____ ci. (helfen - männlich)",
+        "translation": "(Ich half dir)",
+        "options": [
+          "pomogłem",
+          "pomogłam",
+          "pomógł",
+          "pomogli"
+        ],
+        "correct": "pomogłem",
+        "explanation": "Für 'ja' (männlich): '-łem'. 'Pomogłem' = ich half (Mann). Das Verb 'pomóc' (helfen) ist perfektiv - zeigt abgeschlossene Handlung. Polen sind hilfsbereit - 'pomóc' ist ein wichtiges Wort! Das -ł- + -em Muster ist konsistent und zuverlässig."
+      },
+      {
+        "id": "gp_past13",
+        "question": "Wy _____ sport. (treiben - nur Frauen)",
+        "translation": "(Ihr habt Sport getrieben)",
+        "options": [
+          "uprawiałyście",
+          "uprawialiście",
+          "uprawiałam",
+          "uprawiali"
+        ],
+        "correct": "uprawiałyście",
+        "explanation": "Für 'wy' (rein weiblich): '-łyście'. Das -y- zeigt weiblich, -ście zeigt 'ihr'. Für gemischte Gruppe: '-liście'. Sport ist in Polen beliebt - diese Form würde man bei Gesprächen im Sportverein hören. Die Endung ist lang aber rhythmisch!"
+      },
+      {
+        "id": "gp_past14",
+        "question": "Oni _____ dom.",
+        "translation": "(Sie kauften ein Haus)",
+        "options": [
+          "kupili",
+          "kupiły",
+          "kupił",
+          "kupiłem"
+        ],
+        "correct": "kupili",
+        "explanation": "Für 'oni' (männlich/gemischt): '-li'. 'Kupili' = sie kauften. Das Verb 'kupić' ist perfektiv - zeigt abgeschlossenen Kauf. Ein Haus zu kaufen ist ein großer Moment - 'kupili dom'! Die -li Endung für männliche Mehrzahl ist sehr produktiv."
+      },
+      {
+        "id": "gp_past15",
+        "question": "Ona _____ mi.",
+        "translation": "(Sie dankte mir)",
+        "options": [
+          "podziękowała",
+          "podziękował",
+          "podziękowali",
+          "podziękowałam"
+        ],
+        "correct": "podziękowała",
+        "explanation": "Für 'ona': '-ła'. 'Podziękowała' = sie dankte. Das Präfix 'po-' macht es perfektiv - eine abgeschlossene Danksagung. Höflichkeit ist wichtig in Polen - 'dziękować' und 'podziękować' sind zentral! Die -ła Endung für sie ist sanft und elegant."
+      }
+    ]
+  },
+  {
+    "key": "aspect",
+    "name": "Aspekt (perfektiv/imperfektiv)",
+    "description": "Aspekt im Polnischen",
+    "iconName": "repeat",
+    "color": "#4ade80",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "gp_asp1",
+        "question": "Ja _____ książkę cały dzień. (lesen - Prozess)",
+        "translation": "(Ich las den ganzen Tag ein Buch)",
+        "options": [
+          "czytałem",
+          "przeczytałem",
+          "czytam",
+          "przeczytam"
+        ],
+        "correct": "czytałem",
+        "explanation": "Für einen Prozess, eine Dauer: IMPERFEKTIV! 'Czytałem' (ohne Präfix) = ich las (andauernd). Das zeigt die Aktivität selbst, nicht das Ende. Im Deutschen ähnlich: 'ich las' (Prozess) vs. 'ich hatte gelesen' (abgeschlossen). Aber Polnisch unterscheidet dies systematisch durch Aspekt - ein Schlüsselkonzept!"
+      },
+      {
+        "id": "gp_asp2",
+        "question": "On _____ całą książkę. (lesen - fertig)",
+        "translation": "(Er las das ganze Buch zu Ende)",
+        "options": [
+          "przeczytał",
+          "czytał",
+          "czyta",
+          "przeczyta"
+        ],
+        "correct": "przeczytał",
+        "explanation": "Für eine abgeschlossene Handlung: PERFEKTIV! 'Przeczytał' (mit Präfix prze-) = er las zu Ende. Das betont das Resultat, die Vollendung. Das Präfix 'prze-' fügt die Bedeutung 'durch, zu Ende' hinzu. Aspekt ist zentral im Polnischen - jedes Verb hat zwei Formen!"
+      },
+      {
+        "id": "gp_asp3",
+        "question": "Jutro _____ ten film. (schauen - einmalig)",
+        "translation": "(Morgen werde ich diesen Film schauen)",
+        "options": [
+          "obejrzę",
+          "oglądam",
+          "oglądałem",
+          "oglądać"
+        ],
+        "correct": "obejrzę",
+        "explanation": "Für Zukunft mit einmaliger, abgeschlossener Handlung: PERFEKTIV! 'Obejrzę' = ich werde schauen (und fertig werden). Das Präfix 'o-' oder 'ob-' macht es perfektiv. Im Polnischen braucht man kein 'werden' - die perfektive Form selbst zeigt Zukunft! Das ist elegant und einfach."
+      },
+      {
+        "id": "gp_asp4",
+        "question": "Często _____ kawę rano. (trinken - Gewohnheit)",
+        "translation": "(Ich trinke oft morgens Kaffee)",
+        "options": [
+          "piję",
+          "wypiję",
+          "piłem",
+          "wypić"
+        ],
+        "correct": "piję",
+        "explanation": "Für Gewohnheiten, wiederholte Handlungen: IMPERFEKTIV! 'Piję' = ich trinke (regelmäßig). 'Często' (oft) ist ein Signal für imperfektiv. Perfektiv wäre für einmalige Handlung: 'wypiję' (ich werde austrinken). Gewohnheiten, Prozesse, wiederholte Aktionen → immer imperfektiv!"
+      },
+      {
+        "id": "gp_asp5",
+        "question": "Ona _____ list. (schreiben - fertig geschrieben)",
+        "translation": "(Sie schrieb den Brief fertig)",
+        "options": [
+          "napisała",
+          "pisała",
+          "pisze",
+          "napisać"
+        ],
+        "correct": "napisała",
+        "explanation": "PERFEKTIV für abgeschlossen! 'Napisała' (mit Präfix na-) = sie schrieb fertig. Das betont: der Brief ist jetzt fertig! Imperfektiv 'pisała' wäre: sie schrieb (war dabei). Das Präfix 'na-' fügt oft Bedeutung 'auf, fertig' hinzu. Aspekt ändert die Bedeutung subtil aber wichtig!"
+      },
+      {
+        "id": "gp_asp6",
+        "question": "Co _____ wczoraj? (machen - Was tatst du?)",
+        "translation": "(Was hast du gestern gemacht?)",
+        "options": [
+          "robiłeś",
+          "zrobiłeś",
+          "robisz",
+          "zrobić"
+        ],
+        "correct": "robiłeś",
+        "explanation": "Für 'Was tatst du?' (Prozess, Beschreibung): IMPERFEKTIV! 'Robiłeś' = du tatest (Beschreibung der Aktivität). Wenn man fragt 'Co robiłeś?', interessiert der Prozess, nicht Resultate. Für Resultat: 'Co zrobiłeś?' (Was hast du erreicht/vollendet?). Subtiler aber wichtiger Unterschied!"
+      },
+      {
+        "id": "gp_asp7",
+        "question": "_____ zadanie domowe! (machen - Imperativ, mach es fertig!)",
+        "translation": "(Mach die Hausaufgaben fertig!)",
+        "options": [
+          "Zrób",
+          "Rób",
+          "Robisz",
+          "Zrobić"
+        ],
+        "correct": "Zrób",
+        "explanation": "Für Befehle mit erwünschtem Resultat: PERFEKTIV! 'Zrób!' = Mach fertig! Das betont: ich will, dass du es abschließt. Imperfektiv 'Rób!' wäre: Mach (als Prozess, ohne Zeitdruck). Bei Befehlen: perfektiv = Resultat erwartet, imperfektiv = Prozess/Gewohnheit. Wichtige Nuance!"
+      },
+      {
+        "id": "gp_asp8",
+        "question": "Ona _____ po polsku. (lernen - im Prozess)",
+        "translation": "(Sie lernte Polnisch)",
+        "options": [
+          "uczyła się",
+          "nauczyła się",
+          "uczy się",
+          "nauczyć się"
+        ],
+        "correct": "uczyła się",
+        "explanation": "IMPERFEKTIV für Prozess! 'Uczyła się' = sie lernte (war dabei zu lernen). Das beschreibt die Aktivität, nicht den Erfolg. Perfektiv 'nauczyła się' wäre: sie hat gelernt (erfolgreich, kann es jetzt). Das Präfix 'na-' macht es perfektiv und bedeutet oft 'erfolgreich zu Ende'."
+      },
+      {
+        "id": "gp_asp9",
+        "question": "Dziecko _____ chodzić. (lernen - erfolgreich gelernt)",
+        "translation": "(Das Kind lernte zu laufen)",
+        "options": [
+          "nauczyło się",
+          "uczyło się",
+          "uczy się",
+          "uczyć się"
+        ],
+        "correct": "nauczyło się",
+        "explanation": "PERFEKTIV für erfolgreichen Abschluss! 'Nauczyło się' = es lernte (erfolgreich, kann es jetzt). Das betont das Resultat: das Kind kann jetzt laufen! Imperfektiv wäre nur der Lernprozess. Bei Lernerfolgen nutzt man oft perfektiv - es zeigt Erreichen des Ziels!"
+      },
+      {
+        "id": "gp_asp10",
+        "question": "_____ mi pomóc? (können Sie helfen - Bitte)",
+        "translation": "(Können Sie mir helfen?)",
+        "options": [
+          "Może Pan pomóc",
+          "Może Pan pomagać",
+          "Pomaga Pan",
+          "Pomagał Pan"
+        ],
+        "correct": "Może Pan pomóc",
+        "explanation": "Für Bitten/Angebote: meist PERFEKTIV! 'Pomóc' (perfektiv) = helfen (einmalig, jetzt). Man bittet um eine spezifische Hilfe, nicht um dauernde Hilfe. 'Może Pan?' ist höflich (können Sie?). Bei Bitten um einmalige Handlung → perfektiv. Das ist die natürliche, höfliche Form!"
+      },
+      {
+        "id": "gp_asp11",
+        "question": "Długo _____ na ciebie. (warten - lange Dauer)",
+        "translation": "(Ich wartete lange auf dich)",
+        "options": [
+          "czekałem",
+          "poczekałem",
+          "czekam",
+          "poczekać"
+        ],
+        "correct": "czekałem",
+        "explanation": "IMPERFEKTIV für Dauer! 'Czekałem' = ich wartete (andauernd). 'Długo' (lange) signalisiert Dauer → imperfektiv! Perfektiv 'poczekałem' wäre: ich wartete (kurz, dann ging ich). Bei Zeitausdrücken wie 'długo', 'cały czas': fast immer imperfektiv. Dauer = imperfektiv!"
+      },
+      {
+        "id": "gp_asp12",
+        "question": "Ona zawsze _____ prawdę. (sagen - immer, Gewohnheit)",
+        "translation": "(Sie sagte immer die Wahrheit)",
+        "options": [
+          "mówiła",
+          "powiedziała",
+          "mówi",
+          "powiedzieć"
+        ],
+        "correct": "mówiła",
+        "explanation": "IMPERFEKTIV für Gewohnheit! 'Mówiła' = sie sagte (gewöhnlich). 'Zawsze' (immer) ist Schlüsselwort → imperfektiv! Perfektiv 'powiedziała' wäre einmalig: sie sagte (einmal). Adverbien wie 'zawsze', 'często', 'czasami' → imperfektiv. Das ist eine wichtige Regel!"
+      },
+      {
+        "id": "gp_asp13",
+        "question": "_____ okno, proszę. (öffnen - Bitte jetzt)",
+        "translation": "(Öffnen Sie bitte das Fenster)",
+        "options": [
+          "Proszę otworzyć",
+          "Proszę otwierać",
+          "Otwiera Pan",
+          "Otwierał Pan"
+        ],
+        "correct": "Proszę otworzyć",
+        "explanation": "PERFEKTIV für höfliche Bitte! 'Otworzyć' (perfektiv) = öffnen (einmalig, jetzt). Man bittet um spezifische Handlung. 'Proszę' + Infinitiv ist höfliche Form. Bei konkreten Bitten: perfektiv zeigt, dass Sie eine abgeschlossene Handlung wünschen. Das ist die natürliche Ausdrucksweise!"
+      },
+      {
+        "id": "gp_asp14",
+        "question": "Przez godzinę _____ zadanie. (lösen - eine Stunde lang)",
+        "translation": "(Ich löste eine Stunde lang die Aufgabe)",
+        "options": [
+          "rozwiązywałem",
+          "rozwiązałem",
+          "rozwiązuję",
+          "rozwiązać"
+        ],
+        "correct": "rozwiązywałem",
+        "explanation": "IMPERFEKTIV für Dauer! 'Rozwiązywałem' = ich löste (war dabei). 'Przez godzinę' (eine Stunde lang) = Dauer → imperfektiv! Das beschreibt den Prozess. Perfektiv 'rozwiązałem' wäre: ich löste (erfolgreich, fertig). Bei Zeitangaben mit 'durch X Zeit': imperfektiv für Prozess!"
+      },
+      {
+        "id": "gp_asp15",
+        "question": "W końcu _____ problem. (lösen - endlich geschafft!)",
+        "translation": "(Endlich löste ich das Problem)",
+        "options": [
+          "rozwiązałem",
+          "rozwiązywałem",
+          "rozwiązuję",
+          "rozwiązywać"
+        ],
+        "correct": "rozwiązałem",
+        "explanation": "PERFEKTIV für Erfolg! 'Rozwiązałem' = ich löste (erfolgreich!). 'W końcu' (endlich) signalisiert Abschluss → perfektiv! Das betont: nach Mühe, Erfolg! Imperfektiv wäre nur Beschreibung des Versuchs. Bei Ausdrücken wie 'w końcu', 'nareszcie' (endlich): perfektiv für den erreichten Erfolg!"
+      }
+    ]
+  },
+  {
+    "key": "future_tense",
+    "name": "Czas przyszły",
+    "description": "Zukunft auf Polnisch",
+    "iconName": "calendar",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "gp_fut1",
+        "question": "Jutro _____ książkę. (lesen - werde lesen)",
+        "translation": "(Morgen werde ich ein Buch lesen)",
+        "options": [
+          "będę czytać",
+          "czytam",
+          "przeczytam",
+          "czytałem"
+        ],
+        "correct": "będę czytać",
+        "explanation": "Zukunft mit 'być' (sein) + Infinitiv! 'Będę czytać' = ich werde lesen. Das ist wie Deutsch 'ich werde lesen' - analytische Zukunft! 'Być' konjugiert: będę, będziesz, będzie, będziemy, będziecie, będą. Diese Form betont den Prozess in der Zukunft. Alternativ: perfektives Verb allein ('przeczytam') für einmalige zukünftige Handlung!"
+      },
+      {
+        "id": "gp_fut2",
+        "question": "On _____ po polsku. (sprechen - wird sprechen)",
+        "translation": "(Er wird Polnisch sprechen)",
+        "options": [
+          "będzie mówił",
+          "mówi",
+          "powie",
+          "mówił"
+        ],
+        "correct": "będzie mówił",
+        "explanation": "'Będzie mówił' = er wird sprechen. 'Będzie' (er wird sein) + Vergangenheitsform! Das klingt seltsam, ist aber korrekt: 'er wird war-sprechend'! Diese Konstruktion zeigt fortdauernde Handlung in Zukunft. Für einmalig: 'powie' (er wird sagen). Die Wahl hängt ab: Prozess vs. einmalige Handlung. Polnisch ist präzise!"
+      },
+      {
+        "id": "gp_fut3",
+        "question": "My _____ w parku. (spazieren - werden spazieren)",
+        "translation": "(Wir werden im Park spazieren gehen)",
+        "options": [
+          "będziemy spacerować",
+          "spacerujemy",
+          "iść",
+          "spacerowaliśmy"
+        ],
+        "correct": "będziemy spacerować",
+        "explanation": "'Będziemy spacerować' = wir werden spazieren. Das ist die produktive Zukunftsform - funktioniert mit jedem imperfektiven Verb! 'Będziemy' + Infinitiv. Diese Form ist einfach und klar. Sie beschreibt geplante, andauernde zukünftige Aktivitäten. Polen plant gerne Spaziergänge - Natur ist wichtig!"
+      },
+      {
+        "id": "gp_fut4",
+        "question": "Przeczytam tę książkę. Perfektiv zeigt _____.",
+        "translation": null,
+        "options": [
+          "Zukunft automatisch",
+          "Vergangenheit",
+          "Gegenwart",
+          "nichts Besonderes"
+        ],
+        "correct": "Zukunft automatisch",
+        "explanation": "Perfektive Verben zeigen AUTOMATISCH Zukunft im Präsens! 'Przeczytam' (Präsensform von perfektiv 'przeczytać') = ich werde lesen. Keine Hilfsverben nötig! Das ist elegant: die Aspektform selbst trägt Zeitbedeutung. Imperfektiv im Präsens = Gegenwart/Gewohnheit. Perfektiv im Präsens = Zukunft. Einfach und logisch!"
+      },
+      {
+        "id": "gp_fut5",
+        "question": "Ona _____ do pracy. (gehen - wird gehen)",
+        "translation": "(Sie wird zur Arbeit gehen)",
+        "options": [
+          "pójdzie",
+          "idzie",
+          "poszła",
+          "iść"
+        ],
+        "correct": "pójdzie",
+        "explanation": "'Pójdzie' = sie wird gehen. Das ist perfektiv von 'iść' im Präsens → automatisch Zukunft! Kein 'będzie' nötig. Das Präfix 'po-' macht 'iść' perfektiv. Diese Form ist natürlich und häufig. Für 'sie wird gehen (andauernd)': 'będzie szła'. Unterschied: einmalig vs. Prozess!"
+      },
+      {
+        "id": "gp_fut6",
+        "question": "Wy _____ film. (schauen - werdet schauen)",
+        "translation": "(Ihr werdet einen Film schauen)",
+        "options": [
+          "będziecie oglądać",
+          "oglądacie",
+          "obejrzycie",
+          "oglądaliście"
+        ],
+        "correct": "będziecie oglądać",
+        "explanation": "'Będziecie oglądać' = ihr werdet schauen (Prozess). Das beschreibt die Aktivität selbst. Alternativ: 'obejrzycie' (perfektiv) = ihr werdet schauen (und fertig werden). Die Wahl zeigt Nuance: Prozess (będziecie oglądać) vs. Abschluss (obejrzycie). Beide sind Zukunft, aber verschiedene Aspekte!"
+      },
+      {
+        "id": "gp_fut7",
+        "question": "Zrobię to jutro.",
+        "translation": "Dieser Satz bedeutet:",
+        "options": [
+          "Ich werde es morgen machen",
+          "Ich mache es jetzt",
+          "Ich machte es gestern",
+          "Ich möchte es machen"
+        ],
+        "correct": "Ich werde es morgen machen",
+        "explanation": "'Zrobię' ist perfektiv im Präsens → automatisch Zukunft! 'Zrobię to jutro' = Ich werde es morgen machen. Keine Hilfsverben! Das ist die elegante polnische Zukunft mit perfektiven Verben. 'Jutro' bestätigt die Zukunftsbedeutung. Diese Konstruktion ist sehr häufig und natürlich!"
+      },
+      {
+        "id": "gp_fut8",
+        "question": "Oni _____ kawę. (trinken - werden trinken)",
+        "translation": "(Sie werden Kaffee trinken)",
+        "options": [
+          "będą pić",
+          "piją",
+          "wypiją",
+          "pili"
+        ],
+        "correct": "będą pić",
+        "explanation": "'Będą pić' = sie werden trinken (Prozess). Das beschreibt die Aktivität. Alternativ: 'wypiją' (perfektiv) = sie werden austrinken (fertig). 'Będą' ist Mehrzahl von 'być'. Diese analytische Zukunft ist klar und ausdrucksstark. Sie eignet sich besonders für längere, andauernde zukünftige Handlungen!"
+      },
+      {
+        "id": "gp_fut9",
+        "question": "Ja _____ ci. (helfen - werde helfen)",
+        "translation": "(Ich werde dir helfen)",
+        "options": [
+          "pomogę",
+          "pomagam",
+          "pomagałem",
+          "pomagać"
+        ],
+        "correct": "pomogę",
+        "explanation": "'Pomogę' (perfektiv) = ich werde helfen. Automatische Zukunft! 'Pomóc' ist perfektiv, also Präsensform = Zukunft. Das ist ein Versprechen: ich werde helfen! Diese Form ist direkt und kraftvoll. Bei Versprechen, festen Plänen: perfektive Zukunft ist natürlich und ausdrucksstark!"
+      },
+      {
+        "id": "gp_fut10",
+        "question": "Ty _____ polski. (lernen - wirst lernen)",
+        "translation": "(Du wirst Polnisch lernen)",
+        "options": [
+          "będziesz uczyć się",
+          "uczysz się",
+          "nauczysz się",
+          "uczyłeś się"
+        ],
+        "correct": "będziesz uczyć się",
+        "explanation": "'Będziesz uczyć się' = du wirst lernen (Prozess). Das beschreibt die zukünftige Lernaktivität. Alternativ: 'nauczysz się' (perfektiv) = du wirst lernen (erfolgreich, es können). 'Będziesz' ist zweite Person von 'być'. Diese Form ist ermutigend: du wirst lernen, du bist auf dem Weg!"
+      },
+      {
+        "id": "gp_fut11",
+        "question": "Kupię samochód.",
+        "translation": "Dieser Satz bedeutet:",
+        "options": [
+          "Ich werde ein Auto kaufen",
+          "Ich kaufe ein Auto",
+          "Ich kaufte ein Auto",
+          "Ich möchte ein Auto kaufen"
+        ],
+        "correct": "Ich werde ein Auto kaufen",
+        "explanation": "'Kupię' (perfektiv) = ich werde kaufen. Fester zukünftiger Plan! Diese Form drückt Entschlossenheit aus. 'Kupię samochód' klingt entschlossen: ich werde es tun! Perfektive Zukunft ist direkt und klar - ideal für Ankündigungen, Pläne, Versprechen. Das ist die kraftvolle polnische Zukunft!"
+      },
+      {
+        "id": "gp_fut12",
+        "question": "Ona _____ obiad. (kochen - wird kochen)",
+        "translation": "(Sie wird Mittagessen kochen)",
+        "options": [
+          "będzie gotować",
+          "gotuje",
+          "ugotuje",
+          "gotowała"
+        ],
+        "correct": "będzie gotować",
+        "explanation": "'Będzie gotować' = sie wird kochen (Prozess). Das beschreibt die Aktivität des Kochens. Alternativ: 'ugotuje' (perfektiv) = sie wird kochen (fertig machen). Die Wahl zeigt Perspektive: Prozess (będzie) vs. Resultat (ugotuje). Beide sind korrekt, aber subtil verschieden!"
+      },
+      {
+        "id": "gp_fut13",
+        "question": "My _____ do domu. (zurückkehren - werden zurückkehren)",
+        "translation": "(Wir werden nach Hause zurückkehren)",
+        "options": [
+          "wrócimy",
+          "wracamy",
+          "wróciliśmy",
+          "wracać"
+        ],
+        "correct": "wrócimy",
+        "explanation": "'Wrócimy' (perfektiv) = wir werden zurückkehren. Automatische Zukunft! 'Wrócić' ist perfektiv → Präsens = Zukunft. Das ist ein fester Plan: wir kehren zurück! Diese Form ist natürlich für konkrete zukünftige Pläne. Nach Hause zurückkehren ist warm und einladend!"
+      },
+      {
+        "id": "gp_fut14",
+        "question": "Wy _____ sukces. (haben - werdet Erfolg haben)",
+        "translation": "(Ihr werdet Erfolg haben)",
+        "options": [
+          "będziecie mieć",
+          "macie",
+          "mieliście",
+          "mieć"
+        ],
+        "correct": "będziecie mieć",
+        "explanation": "'Będziecie mieć' = ihr werdet haben. 'Mieć' (haben) ist meist imperfektiv, daher braucht es 'być' für Zukunft. 'Będziecie mieć sukces' ist ermutigend: ihr werdet Erfolg haben! Diese Form ist hoffnungsvoll und motivierend. Perfekt für Ermutigung und gute Wünsche!"
+      },
+      {
+        "id": "gp_fut15",
+        "question": "Zadzwonię do ciebie.",
+        "translation": "Dieser Satz bedeutet:",
+        "options": [
+          "Ich werde dich anrufen",
+          "Ich rufe dich an",
+          "Ich rief dich an",
+          "Ich möchte dich anrufen"
+        ],
+        "correct": "Ich werde dich anrufen",
+        "explanation": "'Zadzwonię' (perfektiv) = ich werde anrufen. Das ist ein Versprechen! 'Zadzwonię do ciebie' - ich werde dich anrufen. Das klingt verbindlich und freundlich. Bei sozialen Versprechen: perfektive Zukunft ist natürlich. Sie drückt Absicht und Zuverlässigkeit aus. Ein warmer, freundlicher Satz!"
+      }
+    ]
+  },
+  {
+    "key": "conditional",
+    "name": "Tryb warunkowy",
+    "description": "Konditional im Polnischen",
+    "iconName": "sparkles",
+    "color": "#818cf8",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "gp_cond1",
+        "question": "Ja _____ to zrobić. (würde machen - männlich)",
+        "translation": "(Ich würde das machen)",
+        "options": [
+          "zrobiłbym",
+          "zrobię",
+          "zrobiłem",
+          "robię"
+        ],
+        "correct": "zrobiłbym",
+        "explanation": "Konditional = Vergangenheitsform + 'by' + Personalendung! 'Zrobiłbym' = ich würde machen (Mann). Das ist wie Deutsch 'würde'. Die Konstruktion: zrobi-ł (Vergangenheit) + by + m (ich). Das 'by' ist der Konditionalmarker. Für Frauen: 'zrobiłabym'. Diese Form ist höflich und hypothetisch!"
+      },
+      {
+        "id": "gp_cond2",
+        "question": "Ona _____ pomóc. (würde helfen)",
+        "translation": "(Sie würde helfen)",
+        "options": [
+          "pomogłaby",
+          "pomoże",
+          "pomogła",
+          "pomaga"
+        ],
+        "correct": "pomogłaby",
+        "explanation": "'Pomogłaby' = sie würde helfen. Die Struktur: pomog-ł-a (sie Vergangenheit) + by. Das 'by' verschmilzt mit der Endung. Diese Form ist sanft und höflich - perfekt für Angebote! 'Ona pomogłaby' zeigt Bereitschaft ohne Druck. Das ist die charmante polnische Höflichkeit!"
+      },
+      {
+        "id": "gp_cond3",
+        "question": "Gdybym _____ czas... (wenn ich hätte - männlich)",
+        "translation": "(Wenn ich Zeit hätte...)",
+        "options": [
+          "miał",
+          "mam",
+          "miałem",
+          "będę mieć"
+        ],
+        "correct": "miał",
+        "explanation": "'Gdybym miał' = wenn ich hätte. 'Gdyby' (wenn) + Konditional! Das 'by' ist hier in 'gdybym' integriert. 'Miał' ist die reine Vergangenheitsform. Zusammen: hypothetische Bedingung. Diese Konstruktion ist elegant: 'Gdybym miał czas, pomógłbym' (Wenn ich Zeit hätte, würde ich helfen). Klassischer Konditional!"
+      },
+      {
+        "id": "gp_cond4",
+        "question": "Ty _____ to kupić. (würdest kaufen - männlich)",
+        "translation": "(Du würdest das kaufen)",
+        "options": [
+          "kupiłbyś",
+          "kupisz",
+          "kupiłeś",
+          "kupujesz"
+        ],
+        "correct": "kupiłbyś",
+        "explanation": "'Kupiłbyś' = du würdest kaufen (Mann). Struktur: kupi-ł-eś + by → kupiłbyś. Das 'by' integriert sich. Für Frauen: 'kupiłabyś'. Diese Form ist hypothetisch - 'Czy kupiłbyś to?' (Würdest du das kaufen?). Perfekt für Fragen, Spekulationen, höfliche Vorschläge!"
+      },
+      {
+        "id": "gp_cond5",
+        "question": "My _____ pojechać. (würden fahren - gemischt)",
+        "translation": "(Wir würden fahren)",
+        "options": [
+          "pojechalibyśmy",
+          "pojedziemy",
+          "pojechaliśmy",
+          "jedziemy"
+        ],
+        "correct": "pojechalibyśmy",
+        "explanation": "'Pojechalibyśmy' = wir würden fahren. Struktur: pojecha-li-śmy + by → pojechalibyśmy. Für nur Frauen: 'pojechałybyśmy'. Diese Form drückt hypothetische Absicht aus: 'My pojechalibyśmy na wakacje' (Wir würden in den Urlaub fahren). Das ist träumerisch und hoffnungsvoll!"
+      },
+      {
+        "id": "gp_cond6",
+        "question": "Wy _____ to zrozumieć. (würdet verstehen - gemischt)",
+        "translation": "(Ihr würdet das verstehen)",
+        "options": [
+          "zrozumielibyście",
+          "zrozumiecie",
+          "zrozumieliście",
+          "rozumiecie"
+        ],
+        "correct": "zrozumielibyście",
+        "explanation": "'Zrozumielibyście' = ihr würdet verstehen. Struktur: zrozumie-li-ście + by → zrozumielibyście. Das ist empathisch: 'Wy zrozumielibyście' (Ihr würdet verstehen). Diese Form zeigt Verständnis, Einfühlung. Sie ist warm und verbindend - typisch für die polnische Art zu kommunizieren!"
+      },
+      {
+        "id": "gp_cond7",
+        "question": "Oni _____ przyjść. (würden kommen)",
+        "translation": "(Sie würden kommen)",
+        "options": [
+          "przyszliby",
+          "przyjdą",
+          "przyszli",
+          "przychodzą"
+        ],
+        "correct": "przyszliby",
+        "explanation": "'Przyszliby' = sie würden kommen. Struktur: przysz-li + by → przyszliby. Das ist eine Zusage mit Vorbehalt: 'Oni przyszliby, gdyby mogli' (Sie würden kommen, wenn sie könnten). Diese Form ist höflich und flexibel. Sie lässt Raum für Umstände!"
+      },
+      {
+        "id": "gp_cond8",
+        "question": "Ja _____ tam być. (würde sein - weiblich)",
+        "translation": "(Ich würde dort sein)",
+        "options": [
+          "byłabym",
+          "będę",
+          "byłam",
+          "jestem"
+        ],
+        "correct": "byłabym",
+        "explanation": "'Byłabym' = ich würde sein (Frau). Das ist Konditional von 'być' (sein)! Struktur: by-ł-a (ich weiblich Vergangenheit) + by + m → byłabym. Für Männer: 'byłbym'. Diese Form ist existenziell: 'Ja byłabym tam' (Ich würde dort sein). Sie drückt Wunsch, Sehnsucht aus!"
+      },
+      {
+        "id": "gp_cond9",
+        "question": "On _____ to wiedzieć. (würde wissen)",
+        "translation": "(Er würde das wissen)",
+        "options": [
+          "wiedziałby",
+          "będzie wiedział",
+          "wiedział",
+          "wie"
+        ],
+        "correct": "wiedziałby",
+        "explanation": "'Wiedziałby' = er würde wissen. Struktur: wiedzia-ł + by → wiedziałby. Das ist spekulativ: 'On wiedziałby, gdyby pytał' (Er würde es wissen, wenn er fragen würde). Diese Form ist nachdenklich und reflektierend. Sie lädt zum Nachdenken ein!"
+      },
+      {
+        "id": "gp_cond10",
+        "question": "Gdybyś _____ czas... (wenn du hättest - männlich)",
+        "translation": "(Wenn du Zeit hättest...)",
+        "options": [
+          "miał",
+          "masz",
+          "miałeś",
+          "będziesz miał"
+        ],
+        "correct": "miał",
+        "explanation": "'Gdybyś miał' = wenn du hättest. 'Gdybyś' ist 'gdyby' (wenn) + 'by' für 'ty'. 'Miał' vervollständigt den Konditional. Diese Konstruktion ist einladend: 'Gdybyś miał czas, przyjdź' (Wenn du Zeit hättest, komm). Sie ist sanft und druckfrei - typisch polnische Höflichkeit!"
+      },
+      {
+        "id": "gp_cond11",
+        "question": "Ona _____ z tobą pójść. (würde mit dir gehen)",
+        "translation": "(Sie würde mit dir gehen)",
+        "options": [
+          "poszłaby",
+          "pójdzie",
+          "poszła",
+          "idzie"
+        ],
+        "correct": "poszłaby",
+        "explanation": "'Poszłaby' = sie würde gehen. Struktur: posz-ł-a + by → poszłaby. Das ist eine freundliche Zusage: 'Ona poszłaby z tobą' (Sie würde mit dir gehen). Diese Form zeigt Bereitschaft, Freundlichkeit. Sie ist warm und einladend - perfekt für soziale Einladungen!"
+      },
+      {
+        "id": "gp_cond12",
+        "question": "My _____ to przeczytać. (würden lesen - nur Frauen)",
+        "translation": "(Wir würden das lesen)",
+        "options": [
+          "przeczytałybyśmy",
+          "przeczytamy",
+          "przeczytałyśmy",
+          "czytamy"
+        ],
+        "correct": "przeczytałybyśmy",
+        "explanation": "'Przeczytałybyśmy' = wir würden lesen (nur Frauen). Struktur: przeczyta-ły-śmy + by → przeczytałybyśmy. Das -ły- zeigt weiblich. Für gemischt: 'przeczytalibyśmy'. Diese Form ist literarisch: 'My przeczytałybyśmy tę książkę' (Wir würden dieses Buch lesen). Perfekt für Buchclubs!"
+      },
+      {
+        "id": "gp_cond13",
+        "question": "Wy _____ to zjeść. (würdet essen - gemischt)",
+        "translation": "(Ihr würdet das essen)",
+        "options": [
+          "zjedlibyście",
+          "zjecie",
+          "zjedliście",
+          "jecie"
+        ],
+        "correct": "zjedlibyście",
+        "explanation": "'Zjedlibyście' = ihr würdet essen. Struktur: zjed-li-ście + by → zjedlibyście. Das ist kulinarisch: 'Wy zjedlibyście to?' (Würdet ihr das essen?). Diese Form ist freundlich fragend - perfekt für Einladungen zum Essen. Polen lieben Gastfreundschaft!"
+      },
+      {
+        "id": "gp_cond14",
+        "question": "Oni _____ to zapamiętać. (würden sich merken)",
+        "translation": "(Sie würden sich das merken)",
+        "options": [
+          "zapamiętaliby",
+          "zapamiętają",
+          "zapamiętali",
+          "pamiętają"
+        ],
+        "correct": "zapamiętaliby",
+        "explanation": "'Zapamiętaliby' = sie würden sich merken. Struktur: zapamiętali + by → zapamiętaliby. Das ist bedeutungsvoll: 'Oni zapamiętaliby ten moment' (Sie würden sich diesen Moment merken). Diese Form ist emotional und tiefgründig. Sie zeigt Wichtigkeit!"
+      },
+      {
+        "id": "gp_cond15",
+        "question": "Ja _____ szczęśliwy/a. (würde glücklich sein)",
+        "translation": "(Ich wäre glücklich)",
+        "options": [
+          "byłbym/byłabym szczęśliwy/a",
+          "jestem szczęśliwy/a",
+          "byłem/byłam szczęśliwy/a",
+          "będę szczęśliwy/a"
+        ],
+        "correct": "byłbym/byłabym szczęśliwy/a",
+        "explanation": "'Byłbym szczęśliwy' (Mann) oder 'byłabym szczęśliwa' (Frau) = ich wäre glücklich. Das ist der Konditional von 'być' + Adjektiv. Dieser Satz ist herzerwärmend: er drückt Wunsch, Hoffnung aus. 'Byłbym szczęśliwy, gdybym...' (Ich wäre glücklich, wenn ich...). Pure Emotion!"
+      }
+    ]
+  },
+  {
+    "key": "advanced",
+    "name": "Zaawansowane konstrukcje",
+    "description": "Fortgeschrittene Strukturen",
+    "iconName": "star",
+    "color": "#facc15",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "gp_adv1",
+        "question": "_____ mi się Polska. (gefällt mir)",
+        "translation": "(Polen gefällt mir)",
+        "options": [
+          "Podoba",
+          "Podoba się",
+          "Lubię",
+          "Kocham"
+        ],
+        "correct": "Podoba",
+        "explanation": "'Podoba mi się' = gefällt mir (wörtlich: es gefällt sich mir). Das ist wie Deutsch 'es gefällt mir'! Die Konstruktion: Subjekt (Polska) + 'podoba się' + Dativ (mi). Diese Form ist idiomatisch und wichtig. Sie drückt Geschmack, Vorliebe aus. Polen zu mögen ist ein schönes Kompliment!"
+      },
+      {
+        "id": "gp_adv2",
+        "question": "Udało _____ się to zrobić. (es gelang mir)",
+        "translation": "(Es gelang mir, das zu machen)",
+        "options": [
+          "mi",
+          "mnie",
+          "ja",
+          "moje"
+        ],
+        "correct": "mi",
+        "explanation": "'Udało mi się' = es gelang mir. Diese unpersönliche Konstruktion ist typisch polnisch! 'Udać się' (gelingen) + Dativ. Nicht 'ja zrobiłem', sondern 'es gelang mir'. Das ist bescheiden und elegant. Polen nutzen oft unpersönliche Formen - sie klingen sanfter!"
+      },
+      {
+        "id": "gp_adv3",
+        "question": "Chce _____ się jeść. (ich habe Hunger)",
+        "translation": "(wörtlich: es will sich mir essen)",
+        "options": [
+          "mi",
+          "mnie",
+          "ja",
+          "moje"
+        ],
+        "correct": "mi",
+        "explanation": "'Chce mi się jeść' = ich habe Hunger (wörtlich: es will sich mir essen). Diese Konstruktion ist charakteristisch polnisch! Nicht 'ich will essen', sondern 'es will sich mir essen'. Das ist poetisch und indirekt. Polen lieben solche idiomatischen Ausdrücke!"
+      },
+      {
+        "id": "gp_adv4",
+        "question": "Zimno _____. (mir ist kalt)",
+        "translation": "(Mir ist kalt)",
+        "options": [
+          "mi",
+          "mnie",
+          "ja jestem",
+          "będę"
+        ],
+        "correct": "mi",
+        "explanation": "'Zimno mi' = mir ist kalt. Keine Verben! Nur Adverb + Dativ. Das ist elegant: nicht 'ich bin kalt', sondern 'kalt mir'. Andere: 'gorąco mi' (mir ist heiß), 'dobrze mi' (mir geht's gut). Diese unpersönlichen Konstruktionen sind sehr polnisch und charmant!"
+      },
+      {
+        "id": "gp_adv5",
+        "question": "Nie ma _____. (es gibt kein Problem)",
+        "translation": "(Es gibt kein Problem)",
+        "options": [
+          "problemu",
+          "problem",
+          "problemem",
+          "problemowi"
+        ],
+        "correct": "problemu",
+        "explanation": "'Nie ma problemu' = kein Problem. 'Nie ma' + Genitiv! Diese Phrase ist super häufig und nützlich. Sie ist beruhigend und freundlich: 'Nie ma problemu!' (Kein Problem!). Die Genitiv-Konstruktion nach Negation ist fundamental für Polnisch. Unverzichtbar!"
+      },
+      {
+        "id": "gp_adv6",
+        "question": "Trzeba _____. (man muss arbeiten)",
+        "translation": "(Man muss arbeiten)",
+        "options": [
+          "pracować",
+          "pracuję",
+          "pracował",
+          "pracowałem"
+        ],
+        "correct": "pracować",
+        "explanation": "'Trzeba pracować' = man muss arbeiten. 'Trzeba' + Infinitiv! Das ist unpersönlich: nicht 'ich muss', sondern 'man muss, es ist nötig'. Diese Form ist objektiv und sanft. Sie drückt allgemeine Notwendigkeit aus ohne persönlichen Druck. Sehr höflich!"
+      },
+      {
+        "id": "gp_adv7",
+        "question": "Można _____? (darf man eintreten?)",
+        "translation": "(Darf man eintreten?)",
+        "options": [
+          "wejść",
+          "wchodzę",
+          "wszedłem",
+          "wchodziłem"
+        ],
+        "correct": "wejść",
+        "explanation": "'Można wejść?' = darf man eintreten? 'Można' + Infinitiv! Das ist höflicher als 'Czy mogę wejść?' (Darf ich?). Die unpersönliche Form ist sanfter, zurückhaltender. Polen schätzen solche Höflichkeit! Diese Phrase hört man oft an Türen."
+      },
+      {
+        "id": "gp_adv8",
+        "question": "Warto _____. (es lohnt sich zu sehen)",
+        "translation": "(Es lohnt sich zu sehen)",
+        "options": [
+          "zobaczyć",
+          "widzę",
+          "widziałem",
+          "zobaczę"
+        ],
+        "correct": "zobaczyć",
+        "explanation": "'Warto zobaczyć' = es lohnt sich zu sehen. 'Warto' + Infinitiv! Das ist eine Empfehlung: unpersönlich, objektiv. 'Warto zobaczyć Kraków' (Es lohnt sich, Krakau zu sehen). Diese Form ist freundlich ratsam ohne aufzudrängen. Perfekt für Tipps!"
+      },
+      {
+        "id": "gp_adv9",
+        "question": "Szkoda, że _____. (schade, dass du nicht kommst)",
+        "translation": "(Schade, dass...)",
+        "options": [
+          "nie przyjdziesz",
+          "nie przychodzisz",
+          "nie przyszedłeś",
+          "nie przychodzić"
+        ],
+        "correct": "nie przyjdziesz",
+        "explanation": "'Szkoda, że nie przyjdziesz' = schade, dass du nicht kommst. 'Szkoda, że' + Satz! Das drückt Bedauern aus. Diese Konstruktion ist emotional und warm: 'Szkoda' (schade) zeigt, dass man sich mehr gewünscht hätte. Sehr menschlich und herzlich!"
+      },
+      {
+        "id": "gp_adv10",
+        "question": "Lepiej _____ teraz. (besser jetzt gehen)",
+        "translation": "(Besser jetzt gehen)",
+        "options": [
+          "pójść",
+          "idę",
+          "poszedłem",
+          "iść"
+        ],
+        "correct": "pójść",
+        "explanation": "'Lepiej pójść' = besser gehen. 'Lepiej' + Infinitiv! Das ist ein sanfter Ratschlag: nicht 'du musst', sondern 'es wäre besser'. Diese Form ist diplomatisch und höflich. Sie lässt Entscheidungsfreiheit. Typisch polnische Feinfühligkeit!"
+      },
+      {
+        "id": "gp_adv11",
+        "question": "Podobno _____. (angeblich regnet es)",
+        "translation": "(Angeblich...)",
+        "options": [
+          "pada deszcz",
+          "pada",
+          "padał",
+          "będzie padać"
+        ],
+        "correct": "pada deszcz",
+        "explanation": "'Podobno pada deszcz' = angeblich regnet es. 'Podobno' (angeblich, man sagt) + Aussage! Das zeigt Distanz zur Information: nicht bestätigt. Diese Konstruktion ist journalistisch und vorsichtig. Sie zeigt, dass man Informationen weitergibt ohne sie zu garantieren. Klug!"
+      },
+      {
+        "id": "gp_adv12",
+        "question": "Brakuje _____ czasu. (mir fehlt Zeit)",
+        "translation": "(Mir fehlt Zeit)",
+        "options": [
+          "mi",
+          "mnie",
+          "ja",
+          "moje"
+        ],
+        "correct": "mi",
+        "explanation": "'Brakuje mi czasu' = mir fehlt Zeit. 'Brakować' + Dativ + Genitiv! Diese Konstruktion ist typisch: nicht 'ich habe nicht Zeit', sondern 'es fehlt mir Zeit'. Das ist eleganter und poetischer. Polen nutzen oft solche indirekten Ausdrücke. Sie klingen kultivierter!"
+      },
+      {
+        "id": "gp_adv13",
+        "question": "Boi _____ się psa. (er hat Angst vor dem Hund)",
+        "translation": "(Er hat Angst vor dem Hund)",
+        "options": [
+          "się",
+          "sobie",
+          "siebie",
+          "sobą"
+        ],
+        "correct": "się",
+        "explanation": "'Boi się psa' = er hat Angst vor dem Hund. 'Bać się' + Genitiv! Das Reflexivpronomen 'się' ist Teil des Verbs. Die Konstruktion: Subjekt + bać się + Genitiv (psa). Diese Form ist expressiv: Angst wird durch Genitiv ausgedrückt. Das ist grammatisch interessant!"
+      },
+      {
+        "id": "gp_adv14",
+        "question": "Śni _____ się Polska. (ich träume von Polen)",
+        "translation": "(Ich träume von Polen)",
+        "options": [
+          "mi",
+          "mnie",
+          "ja",
+          "moje"
+        ],
+        "correct": "mi",
+        "explanation": "'Śni mi się Polska' = ich träume von Polen (wörtlich: Polen träumt sich mir). Das ist poetisch! Nicht 'ich träume', sondern 'es träumt sich mir'. Diese unpersönliche Konstruktion ist wunderschön lyrisch. Polen ist eine Nation von Poeten - die Grammatik zeigt es!"
+      },
+      {
+        "id": "gp_adv15",
+        "question": "To _____ ładny dom. (das ist aber ein schönes Haus!)",
+        "translation": "(Das ist aber ein schönes Haus!)",
+        "options": [
+          "dopiero",
+          "bardzo",
+          "dość",
+          "trochę"
+        ],
+        "correct": "dopiero",
+        "explanation": "'To dopiero ładny dom!' = Das ist aber ein schönes Haus! 'Dopiero' als Verstärker! Wörtlich 'erst', aber hier Ausruf: 'Das ist wirklich ein...!'. Diese Nutzung ist idiomatisch und emotional. Sie drückt Überraschung, Bewunderung aus. Lernen Sie solche Wendungen - sie machen Sie authentisch!"
+      }
+    ]
+  }
+]

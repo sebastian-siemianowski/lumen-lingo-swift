@@ -66,7 +66,7 @@ final class ProfileViewModel {
     }
 
     var selectedQuantumScene: QuantumFlowScene {
-        get { QuantumFlowScene(rawValue: userProfile?.quantumFlowScene ?? "") ?? .auroraBorealis }
+        get { QuantumFlowScene(rawValue: userProfile?.quantumFlowScene ?? "") ?? .dubaiCelestialMirage }
         set { userProfile?.quantumFlowScene = newValue.rawValue; save() }
     }
 
@@ -172,15 +172,17 @@ final class MembershipViewModel {
         return "$\(monthly)/month"
     }
 
-    static let features: [MembershipFeature] = [
-        MembershipFeature(name: "Language Pairs", starter: "3", pro: "7", elite: "15", royal: "Unlimited"),
-        MembershipFeature(name: "Daily Practice", starter: "15 min", pro: "Unlimited", elite: "Unlimited", royal: "Unlimited"),
-        MembershipFeature(name: "Game Modes", starter: "All 3", pro: "All 3", elite: "All 3", royal: "All 3"),
-        MembershipFeature(name: "Breathing Orbs", starter: "1 scheme", pro: "3 schemes", elite: "All schemes", royal: "All schemes"),
-        MembershipFeature(name: "Quantum Flow", starter: "—", pro: "2 scenes", elite: "All scenes", royal: "All scenes"),
-        MembershipFeature(name: "Nebula Drift", starter: "—", pro: "—", elite: "3 presets", royal: "All presets"),
-        MembershipFeature(name: "Offline Mode", starter: "—", pro: "—", elite: "✓", royal: "✓"),
-        MembershipFeature(name: "Cloud Sync", starter: "—", pro: "✓", elite: "✓", royal: "✓"),
-        MembershipFeature(name: "Priority Support", starter: "—", pro: "—", elite: "—", royal: "✓"),
-    ]
+    static func features(_ L: AppStrings) -> [MembershipFeature] {
+        [
+            MembershipFeature(name: L.featureLanguagePairs, starter: "3", pro: "7", elite: "15", royal: "Unlimited"),
+            MembershipFeature(name: L.featureDailyPractice, starter: "15 min", pro: "Unlimited", elite: "Unlimited", royal: "Unlimited"),
+            MembershipFeature(name: L.featureGameModes, starter: "All 3", pro: "All 3", elite: "All 3", royal: "All 3"),
+            MembershipFeature(name: L.featureBreathingOrbs, starter: "1 scheme", pro: "3 schemes", elite: "All schemes", royal: "All schemes"),
+            MembershipFeature(name: L.featureQuantumFlow, starter: "—", pro: "2 scenes", elite: "All scenes", royal: "All scenes"),
+            MembershipFeature(name: L.featureNebulaDrift, starter: "—", pro: "—", elite: "3 presets", royal: "All presets"),
+            MembershipFeature(name: L.featureOfflineMode, starter: "—", pro: "—", elite: "✓", royal: "✓"),
+            MembershipFeature(name: L.featureCloudSync, starter: "—", pro: "✓", elite: "✓", royal: "✓"),
+            MembershipFeature(name: L.featurePrioritySupport, starter: "—", pro: "—", elite: "—", royal: "✓"),
+        ]
+    }
 }

@@ -14,6 +14,9 @@ struct WordBuilderView: View {
     @Environment(AudioService.self) private var audioService
     @Environment(HapticsService.self) private var hapticsService
     @Environment(ContentLoader.self) private var contentLoader
+    @Environment(\.localization) private var localization
+
+    private var L: AppStrings { localization.strings }
 
     @Binding var hideTabBar: Bool
 
@@ -37,10 +40,23 @@ struct WordBuilderView: View {
     @State private var isCorrect: Bool? = nil
     @State private var shakeOffset: CGFloat = 0
 
+    // Undo stack
+    @State private var undoStack: [Int] = []  // indices of placed slots in order
+
+    // Idle hint
+    @State private var idleTimer: Timer? = nil
+    @State private var hintGlowIndex: Int? = nil
+    @State private var hintGlowOpacity: Double = 0
+
+    // Lumen Bar confidence
+    @State private var lumenSegments: Int = 4  // starts at middle (0-7)
+
     private var currentWord: WordBuilderWord? {
         guard currentIndex < words.count else { return nil }
         return words[currentIndex]
     }
+
+    private var isDark: Bool { colorScheme == .dark }
 
     private var progress: Double {
         guard !words.isEmpty else { return 0 }
@@ -67,7 +83,7 @@ struct WordBuilderView: View {
                 emptyStateView
             }
         }
-        .cosmicBackground(preset: .starburstRing, orbScheme: .lisboaGoldenHour)
+        .cosmicBackground()
         .navigationBarBackButtonHidden()
         .toolbar(.hidden, for: .navigationBar)
         .onAppear {
@@ -85,10 +101,10 @@ struct WordBuilderView: View {
         VStack(spacing: 20) {
             ProgressView()
                 .scaleEffect(1.5)
-                .tint(.white)
-            Text("Loading words...")
+                .tint(isDark ? .white : .caribbeanInk)
+            Text(L.loadingWords)
                 .font(.headline)
-                .foregroundStyle(.white.opacity(0.7))
+                .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
         }
     }
 
@@ -97,6 +113,9 @@ struct WordBuilderView: View {
     private func gameplayView(word: WordBuilderWord) -> some View {
         VStack(spacing: 0) {
             exerciseHeader
+
+            // Lumen Bar
+            lumenBar
 
             ScrollView {
                 VStack(spacing: 24) {
@@ -112,7 +131,7 @@ struct WordBuilderView: View {
                     answerSlots(word: word)
                         .offset(x: shakeOffset)
 
-                    // Letter bank
+                    // Letter bank with idle hint
                     letterBank
 
                     // Action buttons
@@ -124,6 +143,42 @@ struct WordBuilderView: View {
                 .padding(.top, 16)
             }
         }
+        .onAppear { resetIdleTimer() }
+        .onChange(of: placedLetters.compactMap({ $0?.id })) {
+            resetIdleTimer()
+        }
+        .onDisappear { idleTimer?.invalidate() }
+    }
+
+    // MARK: - Lumen Bar (7-segment confidence meter)
+
+    private var lumenBar: some View {
+        HStack(spacing: 3) {
+            ForEach(0..<7, id: \.self) { seg in
+                RoundedRectangle(cornerRadius: 3)
+                    .fill(seg < lumenSegments ? lumenColor(for: seg) : .white.opacity(0.08))
+                    .frame(height: 6)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 3)
+                            .fill(seg < lumenSegments ? lumenColor(for: seg).opacity(0.5) : .clear)
+                            .blur(radius: 4)
+                    )
+            }
+        }
+        .padding(.horizontal, 20)
+        .padding(.vertical, 8)
+        .animation(.spring(response: 0.4), value: lumenSegments)
+    }
+
+    private func lumenColor(for segment: Int) -> Color {
+        switch segment {
+        case 0, 1: return .red
+        case 2, 3: return .orange
+        case 4: return .yellow
+        case 5: return Color(hex: "#22c55e")
+        case 6: return .cyan
+        default: return .gray
+        }
     }
 
     // MARK: - Exercise Header
@@ -134,17 +189,17 @@ struct WordBuilderView: View {
                 Button { dismiss() } label: {
                     HStack(spacing: 6) {
                         Image(systemName: "chevron.left")
-                        Text("Back")
+                        Text(L.back)
                     }
                     .font(.subheadline)
-                    .foregroundStyle(.white.opacity(0.7))
+                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
                 }
 
                 Spacer()
 
                 Text(categoryName)
                     .font(.subheadline.bold())
-                    .foregroundStyle(.white)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
 
                 Spacer()
 
@@ -153,29 +208,18 @@ struct WordBuilderView: View {
                         .foregroundStyle(.yellow)
                     Text("\(score)")
                         .font(.subheadline.bold())
-                        .foregroundStyle(.white)
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
                 }
                 .padding(.horizontal, 10)
                 .padding(.vertical, 5)
                 .background(Capsule().fill(.white.opacity(0.1)))
             }
 
-            GeometryReader { geo in
-                ZStack(alignment: .leading) {
-                    Capsule().fill(.white.opacity(0.1))
-                    Capsule()
-                        .fill(
-                            LinearGradient(
-                                colors: [Color(hex: "#fbbf24"), Color(hex: "#f97316")],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                        .frame(width: geo.size.width * progress)
-                        .animation(.spring(response: 0.4), value: progress)
-                }
-            }
-            .frame(height: 4)
+            AnimatedProgressBar(
+                progress: progress * 100,
+                height: 4,
+                gradient: [Color(hex: "#fbbf24"), Color(hex: "#f97316"), Color(hex: "#ef4444")]
+            )
 
             HStack(spacing: 16) {
                 statPill(icon: "checkmark", value: "\(correctCount)", color: .green)
@@ -186,7 +230,7 @@ struct WordBuilderView: View {
                 Spacer()
                 Text("\(currentIndex + 1)/\(words.count)")
                     .font(.caption)
-                    .foregroundStyle(.white.opacity(0.5))
+                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
             }
         }
         .padding(.horizontal, 20)
@@ -200,7 +244,7 @@ struct WordBuilderView: View {
                 .foregroundStyle(color)
             Text(value)
                 .font(.caption2.bold())
-                .foregroundStyle(.white.opacity(0.8))
+                .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanInk)
         }
         .padding(.horizontal, 8)
         .padding(.vertical, 3)
@@ -210,33 +254,65 @@ struct WordBuilderView: View {
     // MARK: - Clue Section
 
     private func clueSection(word: WordBuilderWord) -> some View {
-        VStack(spacing: 8) {
-            Text("Build the word")
-                .font(.caption)
-                .foregroundStyle(.white.opacity(0.5))
+        VStack(spacing: 10) {
+            // Decorative top icon
+            Image(systemName: "textformat.abc")
+                .font(.system(size: 16))
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: [Color(hex: "#fb923c"), Color(hex: "#f59e0b")],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .symbolEffect(.pulse, options: .repeating.speed(0.3))
+
+            Text(L.buildTheWord)
+                .font(.caption.bold())
+                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
+                .textCase(.uppercase)
+                .tracking(1.5)
 
             Text(word.hint)
                 .font(.title2.bold())
                 .foregroundStyle(
                     LinearGradient(
-                        colors: [Color(hex: "#10b981"), .white, Color(hex: "#a855f6")],
+                        colors: [Color(hex: "#fbbf24"), .white, Color(hex: "#fb923c")],
                         startPoint: .leading,
                         endPoint: .trailing
                     )
                 )
                 .multilineTextAlignment(.center)
-                .shadow(color: Color(hex: "#10b981").opacity(0.3), radius: 10)
+                .shadow(color: Color(hex: "#f59e0b").opacity(0.4), radius: 12)
         }
         .padding(20)
         .frame(maxWidth: .infinity)
         .background(
-            RoundedRectangle(cornerRadius: 24)
-                .fill(.ultraThinMaterial)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 24)
-                        .strokeBorder(.white.opacity(0.08), lineWidth: 1)
+            ZStack {
+                GlassCardBackground(
+                    cornerRadius: 24,
+                    borderColor: Color(hex: "#fb923c"),
+                    borderOpacity: 0.12,
+                    tintColor: Color(hex: "#fb923c")
                 )
+
+                // Top reflection band
+                VStack {
+                    RoundedRectangle(cornerRadius: 24)
+                        .fill(
+                            LinearGradient(
+                                colors: [.white.opacity(0.10), .clear],
+                                startPoint: .top,
+                                endPoint: .center
+                            )
+                        )
+                        .frame(height: 40)
+                    Spacer()
+                }
+                .clipShape(RoundedRectangle(cornerRadius: 24))
+            }
         )
+        .clipShape(RoundedRectangle(cornerRadius: 24))
     }
 
     // MARK: - Answer Slots
@@ -309,7 +385,7 @@ struct WordBuilderView: View {
                 if let letter {
                     Text(String(letter.character).uppercased())
                         .font(.system(size: 22, weight: .bold, design: .rounded))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
                         .transition(.scale.combined(with: .opacity))
                 }
             }
@@ -319,7 +395,7 @@ struct WordBuilderView: View {
                 radius: isActive ? 8 : 0
             )
         }
-        .buttonStyle(.plain)
+        .buttonStyle(LumenPressStyle(weight: .medium, accentColor: Color(hex: "#52bdff")))
         .disabled(letter == nil)
     }
 
@@ -333,9 +409,9 @@ struct WordBuilderView: View {
         )
 
         return VStack(spacing: 8) {
-            Text("Available Letters")
+            Text(L.availableLetters)
                 .font(.caption)
-                .foregroundStyle(.white.opacity(0.4))
+                .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
 
             LazyVGrid(columns: columns, spacing: 8) {
                 ForEach(scrambledLetters) { letter in
@@ -366,54 +442,112 @@ struct WordBuilderView: View {
     }
 
     private func letterTile(_ letter: ScrambledLetter) -> some View {
-        Button {
+        let isHinted = hintGlowIndex != nil && letter.originalIndex == nextCorrectLetterOriginalIndex
+
+        return Button {
             placeLetter(letter)
         } label: {
             ZStack {
                 RoundedRectangle(cornerRadius: 12)
                     .fill(.ultraThinMaterial)
                     .overlay(
+                        // Inner glow highlight
                         RoundedRectangle(cornerRadius: 12)
-                            .strokeBorder(.white.opacity(0.12), lineWidth: 1)
+                            .fill(
+                                LinearGradient(
+                                    colors: [.white.opacity(0.12), .clear],
+                                    startPoint: .top,
+                                    endPoint: .center
+                                )
+                            )
+                    )
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 12)
+                            .strokeBorder(
+                                isHinted ? Color(hex: "#fbbf24").opacity(hintGlowOpacity) : .white.opacity(0.15),
+                                lineWidth: isHinted ? 2 : 1
+                            )
                     )
 
                 Text(String(letter.character).uppercased())
                     .font(.system(size: 22, weight: .bold, design: .rounded))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
+                    .shadow(color: isDark ? .white.opacity(0.15) : .clear, radius: 2)
             }
             .frame(height: 50)
+            .shadow(
+                color: isHinted ? Color(hex: "#fbbf24").opacity(hintGlowOpacity * 0.5) : Color(hex: "#fb923c").opacity(0.15),
+                radius: isHinted ? 12 : 6
+            )
         }
-        .buttonStyle(.plain)
+        .buttonStyle(LumenPressStyle(weight: .medium, accentColor: Color(hex: "#fb923c")))
         .transition(.scale)
         .disabled(isChecking)
+    }
+
+    /// The original index of the next letter that should be placed
+    private var nextCorrectLetterOriginalIndex: Int? {
+        guard let word = currentWord else { return nil }
+        let wordChars = Array(word.word)
+        let slotIndex = placedLetters.firstIndex(where: { $0 == nil }) ?? placedLetters.count
+        guard slotIndex < wordChars.count else { return nil }
+        // Find the original index matching this position
+        return slotIndex
     }
 
     // MARK: - Action Buttons
 
     private var actionButtons: some View {
         HStack(spacing: 12) {
+            // Undo button
+            Button {
+                undoLastLetter()
+            } label: {
+                HStack(spacing: 6) {
+                    Image(systemName: "arrow.uturn.backward")
+                    Text(L.undo)
+                }
+                .font(.subheadline.bold())
+                .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
+                .padding(.horizontal, 16)
+                .padding(.vertical, 12)
+                .background(
+                    GlassCardBackground(
+                        cornerRadius: 16,
+                        borderColor: .cyan,
+                        borderOpacity: 0.15,
+                        tintColor: .cyan
+                    )
+                )
+                .clipShape(RoundedRectangle(cornerRadius: 16))
+            }
+            .buttonStyle(LumenPressStyle(weight: .soft, accentColor: .cyan))
+            .disabled(undoStack.isEmpty || isChecking)
+            .opacity(undoStack.isEmpty ? 0.4 : 1.0)
+
             // Clear button
             Button {
                 clearAllLetters()
             } label: {
                 HStack(spacing: 6) {
                     Image(systemName: "trash")
-                    Text("Clear")
+                    Text(L.clear)
                 }
                 .font(.subheadline.bold())
-                .foregroundStyle(.white.opacity(0.7))
-                .padding(.horizontal, 20)
+                .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
+                .padding(.horizontal, 16)
                 .padding(.vertical, 12)
                 .background(
-                    RoundedRectangle(cornerRadius: 16)
-                        .fill(.red.opacity(0.1))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 16)
-                                .strokeBorder(.red.opacity(0.15), lineWidth: 1)
-                        )
+                    GlassCardBackground(
+                        cornerRadius: 16,
+                        borderColor: .red,
+                        borderOpacity: 0.15,
+                        tintColor: .red
+                    )
                 )
+                .clipShape(RoundedRectangle(cornerRadius: 16))
             }
-            .buttonStyle(.plain)
+            .buttonStyle(LumenPressStyle(weight: .soft, accentColor: .red))
             .disabled(placedLetters.allSatisfy { $0 == nil })
 
             Spacer()
@@ -424,7 +558,7 @@ struct WordBuilderView: View {
             } label: {
                 HStack(spacing: 6) {
                     Image(systemName: "checkmark")
-                    Text("Check")
+                    Text(L.check)
                 }
                 .font(.subheadline.bold())
                 .foregroundStyle(.white)
@@ -440,10 +574,17 @@ struct WordBuilderView: View {
                                 ))
                                 : AnyShapeStyle(.white.opacity(0.08))
                         )
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 16)
+                                .strokeBorder(
+                                    allSlotsFilled ? Color(hex: "#10b981").opacity(0.3) : .white.opacity(0.06),
+                                    lineWidth: 1
+                                )
+                        )
                 )
-                .shadow(color: allSlotsFilled ? Color(hex: "#10b981").opacity(0.3) : .clear, radius: 10)
+                .shadow(color: allSlotsFilled ? Color(hex: "#10b981").opacity(0.35) : .clear, radius: 12)
             }
-            .buttonStyle(.plain)
+            .buttonStyle(LumenCTAPressStyle(glowColor: Color(hex: "#10b981")))
             .disabled(!allSlotsFilled || isChecking)
         }
     }
@@ -467,13 +608,13 @@ struct WordBuilderView: View {
         VStack(spacing: 16) {
             Image(systemName: "tray")
                 .font(.system(size: 48))
-                .foregroundStyle(.white.opacity(0.4))
-            Text("No words available")
+                .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
+            Text(L.noWordsAvailable)
                 .font(.headline)
-                .foregroundStyle(.white.opacity(0.7))
-            Button("Go Back") { dismiss() }
+                .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
+            Button(L.goBack) { dismiss() }
                 .buttonStyle(.bordered)
-                .tint(.white)
+                .tint(isDark ? .white : .caribbeanInk)
         }
     }
 
@@ -505,6 +646,8 @@ struct WordBuilderView: View {
         placedLetters = Array(repeating: nil, count: word.word.count)
         isCorrect = nil
         isChecking = false
+        undoStack.removeAll()
+        clearIdleHint()
     }
 
     private func placeLetter(_ letter: ScrambledLetter) {
@@ -516,6 +659,8 @@ struct WordBuilderView: View {
                 scrambledLetters[idx].isPlaced = true
             }
         }
+        undoStack.append(slotIndex)
+        clearIdleHint()
 
         audioService.playPlink()
         hapticsService.lightImpact()
@@ -528,7 +673,14 @@ struct WordBuilderView: View {
                 scrambledLetters[idx].isPlaced = false
             }
         }
+        undoStack.removeAll { $0 == index }
         hapticsService.lightImpact()
+    }
+
+    private func undoLastLetter() {
+        guard let lastSlot = undoStack.popLast(),
+              let letter = placedLetters[lastSlot] else { return }
+        removeLetter(at: lastSlot, letter: letter)
     }
 
     private func clearAllLetters() {
@@ -539,7 +691,33 @@ struct WordBuilderView: View {
             }
             isCorrect = nil
         }
+        undoStack.removeAll()
         hapticsService.lightImpact()
+    }
+
+    // MARK: - Idle Hint System
+
+    private func resetIdleTimer() {
+        clearIdleHint()
+        idleTimer?.invalidate()
+        idleTimer = Timer.scheduledTimer(withTimeInterval: 7.0, repeats: false) { _ in
+            DispatchQueue.main.async {
+                showIdleHint()
+            }
+        }
+    }
+
+    private func showIdleHint() {
+        guard let idx = nextCorrectLetterOriginalIndex else { return }
+        hintGlowIndex = idx
+        withAnimation(.easeInOut(duration: 1.0).repeatForever(autoreverses: true)) {
+            hintGlowOpacity = 0.8
+        }
+    }
+
+    private func clearIdleHint() {
+        hintGlowIndex = nil
+        hintGlowOpacity = 0
     }
 
     private func checkAnswer() {
@@ -557,6 +735,7 @@ struct WordBuilderView: View {
             correctCount += 1
             score += 15
             streak += 1
+            lumenSegments = min(7, lumenSegments + 1)
 
             if streak >= 3 {
                 audioService.playStreakBonus()
@@ -583,6 +762,7 @@ struct WordBuilderView: View {
         } else {
             wrongCount += 1
             streak = 0
+            lumenSegments = max(0, lumenSegments - 1)
             audioService.playSoftNudge()
             hapticsService.error()
 

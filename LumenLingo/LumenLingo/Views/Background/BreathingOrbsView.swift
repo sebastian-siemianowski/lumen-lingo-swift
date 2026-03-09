@@ -4,13 +4,34 @@ import SwiftUI
 
 /// Full-quality port of React's BreathingOrbs.jsx.
 /// Large blurred radial gradient orbs with keyframe scale/opacity/translation animations.
+/// Rave mode: each orb cycles through hue rotation angles matching React's getHueRotationRanges.
 struct BreathingOrbsView: View {
     let isDarkMode: Bool
     let scheme: BreathingOrbScheme
     let intensity: Double
     let speed: Double
+    var raveMode: Bool = false
 
     @State private var animationPhase: Double = 0
+
+    /// Per-scheme hue rotation ranges (degrees) for each orb in rave mode.
+    /// Matches React: gradientSchemes.jsx → getHueRotationRanges()
+    private var hueRanges: [[Double]] {
+        switch scheme {
+        case .barcelonaNights:         // "default"
+            return [[0, 30, 60, 30, 0], [0, -45, -90, -45, 0], [0, 90, 180, 90, 0], [0, 60, 120, 60, 0], [0, -60, -120, -60, 0]]
+        case .shanghaiShimmeringNexus: // "ocean"
+            return [[0, 25, 50, 25, 0], [0, -30, -60, -30, 0], [0, 35, 70, 35, 0], [0, 40, 80, 40, 0], [0, -45, -90, -45, 0]]
+        case .tokyoSunset:             // "sunset"
+            return [[0, -8, -16, -8, 0], [0, 10, 20, 10, 0], [0, -12, -24, -12, 0], [0, 8, 16, 8, 0], [0, -10, -20, -10, 0]]
+        case .newYorkMysticalGardens:  // "forest"
+            return [[0, 35, 70, 35, 0], [0, 40, 80, 40, 0], [0, 50, 100, 50, 0], [0, 45, 90, 45, 0], [0, -50, -100, -50, 0]]
+        case .parisEclatNocturne:      // "aurora"
+            return [[0, -40, -80, -40, 0], [0, 50, 100, 50, 0], [0, -35, -70, -35, 0], [0, 45, 90, 45, 0], [0, -55, -110, -55, 0]]
+        case .krakowLuminescence:      // "miami"
+            return [[0, -30, -60, -30, 0], [0, 35, 70, 35, 0], [0, -40, -80, -40, 0], [0, 40, 80, 40, 0], [0, -45, -90, -45, 0]]
+        }
+    }
 
     private var orbConfigs: [OrbConfig] {
         let colors = colorScheme(for: scheme, isDark: isDarkMode)
@@ -57,7 +78,8 @@ struct BreathingOrbsView: View {
         GeometryReader { geometry in
             ZStack {
                 ForEach(Array(orbConfigs.enumerated()), id: \.offset) { index, config in
-                    BreathingOrb(config: config, phase: animationPhase)
+                    let orbHueRanges = hueRanges[index % hueRanges.count]
+                    BreathingOrb(config: config, phase: animationPhase, raveMode: raveMode, hueKeyframes: orbHueRanges)
                         .position(
                             x: geometry.size.width * config.position.x + config.size / 2,
                             y: geometry.size.height * config.position.y + config.size / 2
@@ -76,92 +98,7 @@ struct BreathingOrbsView: View {
     // MARK: - Color Schemes
 
     private func colorScheme(for scheme: BreathingOrbScheme, isDark: Bool) -> [[Color]] {
-        switch scheme {
-        case .barcelonaNights:
-            return isDark ? [
-                [Color(red: 99/255, green: 102/255, blue: 241/255)],   // Indigo
-                [Color(red: 236/255, green: 72/255, blue: 153/255)],   // Pink
-                [Color(red: 251/255, green: 191/255, blue: 36/255)],   // Amber
-                [Color(red: 20/255, green: 184/255, blue: 166/255)],   // Teal
-                [Color(red: 168/255, green: 85/255, blue: 247/255)],   // Purple
-            ] : [
-                [Color(red: 129/255, green: 140/255, blue: 248/255)],
-                [Color(red: 244/255, green: 114/255, blue: 182/255)],
-                [Color(red: 252/255, green: 211/255, blue: 77/255)],
-                [Color(red: 45/255, green: 212/255, blue: 191/255)],
-                [Color(red: 192/255, green: 132/255, blue: 252/255)],
-            ]
-        case .madridSunrise:
-            return isDark ? [
-                [Color(red: 239/255, green: 68/255, blue: 68/255)],
-                [Color(red: 245/255, green: 158/255, blue: 11/255)],
-                [Color(red: 234/255, green: 179/255, blue: 8/255)],
-                [Color(red: 249/255, green: 115/255, blue: 22/255)],
-                [Color(red: 220/255, green: 38/255, blue: 38/255)],
-            ] : [
-                [Color(red: 252/255, green: 165/255, blue: 165/255)],
-                [Color(red: 253/255, green: 230/255, blue: 138/255)],
-                [Color(red: 254/255, green: 240/255, blue: 138/255)],
-                [Color(red: 253/255, green: 186/255, blue: 116/255)],
-                [Color(red: 252/255, green: 165/255, blue: 165/255)],
-            ]
-        case .lisboaGoldenHour:
-            return isDark ? [
-                [Color(red: 236/255, green: 72/255, blue: 153/255)],
-                [Color(red: 168/255, green: 85/255, blue: 247/255)],
-                [Color(red: 139/255, green: 92/255, blue: 246/255)],
-                [Color(red: 244/255, green: 63/255, blue: 94/255)],
-                [Color(red: 192/255, green: 38/255, blue: 211/255)],
-            ] : [
-                [Color(red: 244/255, green: 114/255, blue: 182/255)],
-                [Color(red: 192/255, green: 132/255, blue: 252/255)],
-                [Color(red: 167/255, green: 139/255, blue: 250/255)],
-                [Color(red: 251/255, green: 113/255, blue: 133/255)],
-                [Color(red: 232/255, green: 121/255, blue: 249/255)],
-            ]
-        case .warsawTwilight:
-            return isDark ? [
-                [Color(red: 34/255, green: 197/255, blue: 94/255)],
-                [Color(red: 16/255, green: 185/255, blue: 129/255)],
-                [Color(red: 52/255, green: 211/255, blue: 153/255)],
-                [Color(red: 5/255, green: 150/255, blue: 105/255)],
-                [Color(red: 74/255, green: 222/255, blue: 128/255)],
-            ] : [
-                [Color(red: 134/255, green: 239/255, blue: 172/255)],
-                [Color(red: 110/255, green: 231/255, blue: 183/255)],
-                [Color(red: 167/255, green: 243/255, blue: 208/255)],
-                [Color(red: 52/255, green: 211/255, blue: 153/255)],
-                [Color(red: 134/255, green: 239/255, blue: 172/255)],
-            ]
-        case .prahaAmethyst:
-            return isDark ? [
-                [Color(red: 99/255, green: 102/255, blue: 241/255)],
-                [Color(red: 79/255, green: 70/255, blue: 229/255)],
-                [Color(red: 129/255, green: 140/255, blue: 248/255)],
-                [Color(red: 67/255, green: 56/255, blue: 202/255)],
-                [Color(red: 139/255, green: 92/255, blue: 246/255)],
-            ] : [
-                [Color(red: 165/255, green: 180/255, blue: 252/255)],
-                [Color(red: 129/255, green: 140/255, blue: 248/255)],
-                [Color(red: 199/255, green: 210/255, blue: 254/255)],
-                [Color(red: 129/255, green: 140/255, blue: 248/255)],
-                [Color(red: 196/255, green: 181/255, blue: 253/255)],
-            ]
-        case .krakowLuminescence:
-            return isDark ? [
-                [Color(red: 6/255, green: 182/255, blue: 212/255)],
-                [Color(red: 139/255, green: 92/255, blue: 246/255)],
-                [Color(red: 14/255, green: 165/255, blue: 233/255)],
-                [Color(red: 168/255, green: 85/255, blue: 247/255)],
-                [Color(red: 56/255, green: 189/255, blue: 248/255)],
-            ] : [
-                [Color(red: 103/255, green: 232/255, blue: 249/255)],
-                [Color(red: 196/255, green: 181/255, blue: 253/255)],
-                [Color(red: 125/255, green: 211/255, blue: 252/255)],
-                [Color(red: 216/255, green: 180/255, blue: 254/255)],
-                [Color(red: 186/255, green: 230/255, blue: 253/255)],
-            ]
-        }
+        isDark ? scheme.darkColors : scheme.lightColors
     }
 }
 
@@ -170,6 +107,8 @@ struct BreathingOrbsView: View {
 private struct BreathingOrb: View {
     let config: OrbConfig
     let phase: Double
+    let raveMode: Bool
+    let hueKeyframes: [Double]
 
     var body: some View {
         TimelineView(.animation(minimumInterval: 1.0 / 30.0)) { timeline in
@@ -179,12 +118,17 @@ private struct BreathingOrb: View {
 
             // Interpolate scale from keyframes
             let scale = interpolateKeyframes(config.scaleKeyframes, at: keyframeT)
-            let opacity = config.baseOpacity + sin(t * .pi * 2) * 0.04
+            let opacity = config.baseOpacity + Foundation.sin(t * .pi * 2) * 0.04
 
             // Subtle translation
-            let tx = sin(t * .pi * 2 * 0.7 + Double(config.delay)) * 15
-            let ty = cos(t * .pi * 2 * 0.5 + Double(config.delay) * 1.3) * 12
-            let rotation = sin(t * .pi * 2 * 0.3) * 2
+            let tx = Foundation.sin(t * .pi * 2 * 0.7 + Double(config.delay)) * 15
+            let ty = Foundation.cos(t * .pi * 2 * 0.5 + Double(config.delay) * 1.3) * 12
+            let rotation = Foundation.sin(t * .pi * 2 * 0.3) * 2
+
+            // Rave hue rotation — interpolate keyframes to get current hue shift
+            let hueAngle: Angle = raveMode
+                ? .degrees(interpolateKeyframes(hueKeyframes, at: keyframeT))
+                : .zero
 
             let color = config.colors.first ?? .purple
 
@@ -207,6 +151,7 @@ private struct BreathingOrb: View {
                 .offset(x: tx, y: ty)
                 .rotationEffect(.degrees(rotation))
                 .blur(radius: config.blur)
+                .hueRotation(hueAngle)
         }
     }
 

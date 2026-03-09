@@ -1,0 +1,1232 @@
+[
+  {
+    "key": "present_tense",
+    "name": "Czas teraźniejszy",
+    "description": "现在时",
+    "iconName": "clock",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pc_pres1",
+        "question": "我 _____ 中文。",
+        "translation": "(Ja mówię po chińsku)",
+        "options": [
+          "说",
+          "说了",
+          "在说",
+          "会说"
+        ],
+        "correct": "说",
+        "explanation": "Witaj w fascynującym świecie chińskiego. Pierwsza niespodzianka: czasowniki w chińskim się nie odmieniają. '说' (shuō) to 'mówić' i używasz tej samej formy dla wszystkich osób. Polski 'mówię/mówisz/mówi' ma różne zakończenia, chiński zawsze '说'. To znacznie upraszcza gramatykę. '我说' (ja mówię), '你说' (ty mówisz), '他说' (on mówi) - czasownik pozostaje niezmieniony. Kontekst i zaimki osobowe wyjaśniają kto mówi. Ta prostota jest piękna - raz nauczysz się czasownika, używasz go wszędzie."
+      },
+      {
+        "id": "pc_pres2",
+        "question": "他 _____ 老师。",
+        "translation": "(On jest nauczycielem)",
+        "options": [
+          "是",
+          "在",
+          "有",
+          "会"
+        ],
+        "correct": "是",
+        "explanation": "Chiński ma specjalny czasownik 'być' dla równości: '是' (shì). Polski 'jest' łączy podmiot z orzecznikiem, chiński '是' robi to samo. '他是老师' (on jest nauczycielem) - '是' pokazuje identyfikację. Używasz '是' gdy definiujesz kim lub czym ktoś jest. '老师' (lǎoshī) to nauczyciel. Chiński nie rozróżnia rodzaju w zaimkach trzeciej osoby w piśmie fonetycznym - '他' (on), '她' (ona), '它' (ono) wszystkie wymawia się 'tā', ale różne znaki. System ton w chińskim jest kluczowy - ta w różnych tonach to różne słowa."
+      },
+      {
+        "id": "pc_pres3",
+        "question": "我们 _____ 学生。",
+        "translation": "(My jesteśmy studentami)",
+        "options": [
+          "是",
+          "在",
+          "有",
+          "会"
+        ],
+        "correct": "是",
+        "explanation": "Znów '是' dla identyfikacji: '我们是学生' (my jesteśmy studentami). Polski 'jesteśmy' się odmienia, chiński '是' pozostaje takie samo. '我们' (wǒmen) to 'my' - dodanie '们' do '我' tworzy liczbę mnogą. '学生' (xuésheng) to student. System jest prosty - '是' nie zmienia się przez osobę ani liczbę. To jak używanie infinitiwu wszędzie. Brak odmiany może wydawać się dziwny początkowo, ale szybko staje się naturalny. Chiński kompensuje prostotę czasowników przez precyzję w innych obszarach."
+      },
+      {
+        "id": "pc_pres4",
+        "question": "她 _____ 北京。",
+        "translation": "(Ona jest w Pekinie)",
+        "options": [
+          "在",
+          "是",
+          "有",
+          "会"
+        ],
+        "correct": "在",
+        "explanation": "Dla lokalizacji używasz innego czasownika: '在' (zài). Polski 'jest w' używa 'być' z przyimkiem, chiński ma specjalny czasownik lokalizacji. '她在北京' (ona jest w Pekinie) - '在' pokazuje gdzie ktoś lub coś się znajduje. '北京' (Běijīng) to Pekin. Różnica: '是' dla identyfikacji (kim jesteś), '在' dla lokalizacji (gdzie jesteś). '我是老师' (jestem nauczycielem) vs '我在学校' (jestem w szkole). Ta specjalizacja czasowników jest charakterystyczna dla chińskiego. Każdy czasownik ma wyraźną funkcję."
+      },
+      {
+        "id": "pc_pres5",
+        "question": "我 _____ 一本书。",
+        "translation": "(Mam książkę)",
+        "options": [
+          "有",
+          "是",
+          "在",
+          "会"
+        ],
+        "correct": "有",
+        "explanation": "Dla posiadania używasz '有' (yǒu). Polski 'mam/masz/ma' odmienia się, chiński '有' nie. '我有一本书' (mam książkę) - '有' wyraża posiadanie. '一本书' (yì běn shū) to 'jedna książka' - '本' (běn) to klasyfikator dla książek. Chiński używa klasyfikatorów między liczebnikiem a rzeczownikiem. To jak polski 'sztuka', 'kawałek', ale obowiązkowe i zróżnicowane. Każdy typ rzeczy ma swój klasyfikator. '有' też wyraża istnienie - 'jest/są'. '这里有很多人' (tutaj jest dużo ludzi). Uniwersalność '有' czyni go bardzo użytecznym."
+      },
+      {
+        "id": "pc_pres6",
+        "question": "你 _____ 吗？",
+        "translation": "(Czy ty rozumiesz?)",
+        "options": [
+          "懂",
+          "懂了",
+          "在懂",
+          "会懂"
+        ],
+        "correct": "懂",
+        "explanation": "Pytania tak/nie tworzy się dodając '吗' (ma) na końcu: '你懂吗？' (czy rozumiesz). Polski używa 'czy' na początku lub intonacji, chiński '吗' na końcu. '懂' (dǒng) to 'rozumieć'. Struktura jest prosta: normalne zdanie + 吗 = pytanie. Nie zmieniasz kolejności słów jak w polskim. '你懂' (rozumiesz) → '你懂吗？' (czy rozumiesz?). Ta konsekwencja ułatwia tworzenie pytań. '吗' jest neutralne - tylko pyta, nie sugeruje odpowiedzi. System pytań w chińskim jest logiczny i przewidywalny."
+      },
+      {
+        "id": "pc_pres7",
+        "question": "他不 _____ 。",
+        "translation": "(On nie wie)",
+        "options": [
+          "知道",
+          "知道了",
+          "在知道",
+          "会知道"
+        ],
+        "correct": "知道",
+        "explanation": "Negacja tworzy się przez '不' (bù) przed czasownikiem: '他不知道' (on nie wie). Polski 'nie wie' używa cząstki 'nie', chiński '不'. '知道' (zhīdào) to 'wiedzieć'. Pozycja negacji jest stała - zawsze przed czasownikiem. '我不喜欢' (nie lubię), '她不去' (ona nie idzie). '不' działa z czasownikami stanu i działania. To uniwersalna negacja dla teraźniejszości i przyszłości. System jest prosty - jeden partykuł, jedna pozycja. W przeszłości używa się '没' zamiast '不', ale o tym później. Prostota negacji kompensuje inne aspekty chińskiego."
+      },
+      {
+        "id": "pc_pres8",
+        "question": "我 _____ 喝咖啡。",
+        "translation": "(Lubię pić kawę)",
+        "options": [
+          "喜欢",
+          "喜欢了",
+          "在喜欢",
+          "会喜欢"
+        ],
+        "correct": "喜欢",
+        "explanation": "Czasowniki modalne przed głównym czasownikiem: '我喜欢喝咖啡' (lubię pić kawę). Polski 'lubię pić' używa odmienionych form, chiński stawia niezmienione czasowniki obok siebie. '喜欢' (xǐhuan) to 'lubić', '喝' (hē) to 'pić', '咖啡' (kāfēi) to 'kawa'. Struktura: podmiot + modalny + czasownik + dopełnienie. '喜欢' wyraża preferencję. Inne modalne: '想' (chcieć), '要' (potrzebować), '能' (móc - zdolność), '可以' (móc - pozwolenie). Chiński precyzyjnie rozróżnia typy możliwości i pragnienia przez różne czasowniki."
+      },
+      {
+        "id": "pc_pres9",
+        "question": "你 _____ 去吗？",
+        "translation": "(Czy chcesz iść?)",
+        "options": [
+          "想",
+          "想了",
+          "在想",
+          "会想"
+        ],
+        "correct": "想",
+        "explanation": "Czasownik modalny '想' (xiǎng) wyraża chęć: '你想去吗？' (czy chcesz iść?). Polski 'chcesz' odmienia się, chiński '想' nie. '去' (qù) to 'iść'. Kombinacja modalny + czasownik + 吗 tworzy pytanie o intencję. '想' jest miększe niż '要' (chcieć bardziej zdecydowanie). '我想学中文' (chcę uczyć się chińskiego) - naturalne wyrażenie pragnienia. System modalnych w chińskim jest bogaty - różne odcienie znaczenia przez różne czasowniki. To pozwala na subtelne wyrażanie intencji i możliwości."
+      },
+      {
+        "id": "pc_pres10",
+        "question": "她会 _____ 。",
+        "translation": "(Ona umie gotować)",
+        "options": [
+          "做饭",
+          "做饭了",
+          "在做饭",
+          "做了饭"
+        ],
+        "correct": "做饭",
+        "explanation": "Modalny '会' (huì) dla umiejętności: '她会做饭' (ona umie gotować). Polski 'umie' się odmienia, chiński '会' nie. '做饭' (zuòfàn) to 'gotować' (dosłownie: robić ryż). '会' wyraża nabytą umiejętność - coś czego się nauczyłeś. To różni się od '能' (móc - fizyczna zdolność). '我会说中文' (umiem mówić po chińsku - nauczyłem się) vs '我能跑' (mogę biegać - fizyczna zdolność). Ta precyzja w modalnych jest elegancka. Każdy ma swoją niszę semantyczną."
+      },
+      {
+        "id": "pc_pres11",
+        "question": "我们可以 _____ 吗？",
+        "translation": "(Czy możemy wejść?)",
+        "options": [
+          "进来",
+          "进来了",
+          "在进来",
+          "会进来"
+        ],
+        "correct": "进来",
+        "explanation": "Modalny '可以' (kěyǐ) dla pozwolenia: '我们可以进来吗？' (czy możemy wejść?). Polski 'możemy' może znaczyć zdolność lub pozwolenie, chiński rozróżnia: '能' (zdolność) vs '可以' (pozwolenie). '进来' (jìnlái) to 'wejść' - czasownik kierunkowy. '可以' pyta o zgodę lub możliwość społeczną. '可以吸烟吗？' (czy można palić?). System modalnych precyzyjnie koduje różne typy możliwości. To pomaga w jasnej komunikacji o ograniczeniach i pozwoleniach."
+      },
+      {
+        "id": "pc_pres12",
+        "question": "他 _____ 工作。",
+        "translation": "(On pracuje)",
+        "options": [
+          "工作",
+          "工作了",
+          "在工作",
+          "会工作"
+        ],
+        "correct": "工作",
+        "explanation": "Niektóre słowa są zarówno rzeczownikiem jak czasownikiem: '工作' (gōngzuò). Polski rozróżnia 'praca' (rzeczownik) i 'pracować' (czasownik), chiński używa tego samego słowa. '他工作' (on pracuje), '我的工作' (moja praca). Kontekst wyjaśnia funkcję. Ta elastyczność słów oszczędza uczenia się oddzielnych form. Wiele chińskich słów działa tak - '学习' (uczyć się/nauka), '帮助' (pomagać/pomoc), '休息' (odpoczywać/odpoczynek). System jest ekonomiczny - mniej słów do zapamiętania, więcej funkcji z jednego słowa."
+      },
+      {
+        "id": "pc_pres13",
+        "question": "你 _____ 中文吗？",
+        "translation": "(Czy uczysz się chińskiego?)",
+        "options": [
+          "学",
+          "学了",
+          "在学",
+          "会学"
+        ],
+        "correct": "学",
+        "explanation": "Czasownik '学' (xué) to 'uczyć się': '你学中文吗？' (czy uczysz się chińskiego?). Polski 'uczysz się' ma formę zwrotną, chiński prosty czasownik. '中文' (Zhōngwén) to 'język chiński'. Pytanie z '吗' jak nauczony. '学' często występuje z '习' jako '学习' dla podkreślenia procesu uczenia. Oba są poprawne - '学' krótsze i potoczne, '学习' bardziej formalne. Chiński ma wiele takich par synonimicznych - jednoznak vs dwuznak. Oba oznaczają to samo, różnią się rejestrem."
+      },
+      {
+        "id": "pc_pres14",
+        "question": "我们 _____ 朋友。",
+        "translation": "(Jesteśmy przyjaciółmi)",
+        "options": [
+          "是",
+          "在",
+          "有",
+          "会"
+        ],
+        "correct": "是",
+        "explanation": "Powrót do '是' dla relacji: '我们是朋友' (jesteśmy przyjaciółmi). Polski 'jesteśmy' odmienia się, chiński '是' nie. '朋友' (péngyou) to 'przyjaciel'. '是' używa się dla definiowania relacji, ról, identyfikacji. '他是我的老师' (on jest moim nauczycielem), '这是书' (to jest książka). '是' to kręgosłup chińskich zdań równościowych. Bez niego nie można wyrazić identyfikacji. Ta centralna rola '是' czyni go jednym z pierwszych słów do nauki. Prawie każde wprowadzenie używa '是'."
+      },
+      {
+        "id": "pc_pres15",
+        "question": "这 _____ 什么？",
+        "translation": "(Co to jest?)",
+        "options": [
+          "是",
+          "在",
+          "有",
+          "会"
+        ],
+        "correct": "是",
+        "explanation": "Pytania z '什么' (shénme - co): '这是什么？' (co to jest?). Polski 'co to jest?' używa szyk pytający, chiński stawia pytajnik w miejscu odpowiedzi. '这' (zhè) to 'to'. Struktura: to jest co? = co to jest? Pytajniki chińskie (谁 kto, 什么 co, 哪里 gdzie) idą tam, gdzie byłaby odpowiedź. '他是谁？' (on jest kto = kto to jest?), '你在哪里？' (ty jesteś gdzie = gdzie jesteś?). Ta logika jest konsekwentna i piękna. Nie musisz zmieniać szyku, tylko wstawiasz pytajnik. System jest elegancki w swojej prostocie."
+      }
+    ]
+  },
+  {
+    "key": "measure_words",
+    "name": "Klasyfikatory",
+    "description": "量词",
+    "iconName": "doc.text",
+    "color": "#818cf8",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pc_mw1",
+        "question": "一 _____ 书",
+        "translation": "(Jedna książka)",
+        "options": [
+          "本",
+          "个",
+          "只",
+          "张"
+        ],
+        "correct": "本",
+        "explanation": "Witaj w świecie klasyfikatorów chińskich. Polski używa rzeczownika bezpośrednio z liczebnikiem ('jedna książka'), chiński wymaga klasyfikatora między nimi. '一本书' (yì běn shū) - '本' (běn) to klasyfikator dla książek i podobnych oprawionych rzeczy. Klasyfikatory kategoryzują rzeczowniki przez kształt, funkcję lub typ. Polski ma ślady tego w 'sztuka', 'głowa' (bydła), ale chiński rozwinął to w kompleksowy system. Każdy rzeczownik ma przypisany klasyfikator. Na początku może to być trudne, ale wzory stają się widoczne."
+      },
+      {
+        "id": "pc_mw2",
+        "question": "一 _____ 人",
+        "translation": "(Jedna osoba)",
+        "options": [
+          "个",
+          "本",
+          "只",
+          "张"
+        ],
+        "correct": "个",
+        "explanation": "Uniwersalny klasyfikator '个' (gè) działa dla ludzi i wielu rzeczy: '一个人' (yí gè rén - jedna osoba). Polski 'jedna osoba' bez klasyfikatora, chiński '一个人'. '个' to twój przyjaciel - gdy nie znasz właściwego klasyfikatora, '个' często działa. To najbardziej powszechny klasyfikator. '两个苹果' (dwa jabłka), '三个问题' (trzy pytania). Choć specyficzne klasyfikatory są bardziej precyzyjne, '个' jest akceptowalny w większości sytuacji potocznych. To twoja siatka bezpieczeństwa w nauce chińskiego."
+      },
+      {
+        "id": "pc_mw3",
+        "question": "两 _____ 猫",
+        "translation": "(Dwa koty)",
+        "options": [
+          "只",
+          "个",
+          "本",
+          "张"
+        ],
+        "correct": "只",
+        "explanation": "Dla zwierząt używasz '只' (zhī): '两只猫' (liǎng zhī māo - dwa koty). Polski 'dwa koty' bezpośrednio, chiński wymaga '只'. Zauważ '两' (liǎng) zamiast '二' (èr) dla 'dwa' z klasyfikatorami - to osobliwość chińskiego. '只' dotyczy ptaków, małych zwierząt, jednego z pary. '一只鸟' (jeden ptak), '一只手' (jedna ręka). System klasyfikatorów dla zwierząt jest szczegółowy - różne dla małych vs dużych. To odzwierciedla sposób kategoryzacji świata przez język chiński. Każdy klasyfikator niesie subtelne znaczenia o charakterze rzeczy."
+      },
+      {
+        "id": "pc_mw4",
+        "question": "一 _____ 纸",
+        "translation": "(Jeden arkusz papieru)",
+        "options": [
+          "张",
+          "本",
+          "个",
+          "只"
+        ],
+        "correct": "张",
+        "explanation": "Dla płaskich rzeczy używasz '张' (zhāng): '一张纸' (yì zhāng zhǐ - jeden arkusz papieru). Polski 'arkusz papieru' ma opisowe słowo, chiński '张'. '张' to dla płaskich, rozciągniętych rzeczy: '一张桌子' (jeden stół), '一张床' (jedno łóżko), '一张票' (jeden bilet). Klasyfikator koduje wymiar fizyczny - płaskość. Polski używa różnych słów w różnych kontekstach, chiński konsekwentnie '张' dla płaskich obiektów. Ta regularność pomaga - gdy rozpoznajesz kategorię rzeczy, wiesz który klasyfikator."
+      },
+      {
+        "id": "pc_mw5",
+        "question": "三 _____ 车",
+        "translation": "(Trzy samochody)",
+        "options": [
+          "辆",
+          "个",
+          "张",
+          "本"
+        ],
+        "correct": "辆",
+        "explanation": "Dla pojazdów używasz '辆' (liàng): '三辆车' (sān liàng chē - trzy samochody). Polski 'trzy samochody' prosto, chiński '三辆车'. '辆' to specjalistyczny klasyfikator dla wszelkich pojazdów kołowych. '一辆自行车' (jeden rower), '两辆公共汽车' (dwa autobusy). Specyficzność klasyfikatorów pokazuje jak chiński kategoryzuje świat. Pojazdy jako kategoria mają swój marker. To różni się od '只' (zwierzęta) czy '张' (płaskie rzeczy). System jest logiczny gdy zrozumiesz zasady kategoryzacji."
+      },
+      {
+        "id": "pc_mw6",
+        "question": "五 _____ 学生",
+        "translation": "(Pięciu studentów)",
+        "options": [
+          "个",
+          "位",
+          "本",
+          "张"
+        ],
+        "correct": "个",
+        "explanation": "Dla osób zazwyczaj '个': '五个学生' (wǔ gè xuésheng - pięciu studentów). Polski 'pięciu studentów' odmienia liczebnik, chiński używa '个'. Choć istnieje grzecznościowy '位' (wèi) dla osób szanowanych ('三位老师' - trzej nauczyciele), '个' jest standardowy. '位' używasz dla dorosłych, osób starszych, profesjonalistów - pokazuje szacunek. Młodzi ludzie, dzieci, ogólne grupy biorą '个'. Ta dystynkcja odzwierciedla system grzecznościowy chiński. Wybór klasyfikatora może wyrażać postawę."
+      },
+      {
+        "id": "pc_mw7",
+        "question": "一 _____ 水",
+        "translation": "(Jedna szklanka wody)",
+        "options": [
+          "杯",
+          "瓶",
+          "个",
+          "碗"
+        ],
+        "correct": "杯",
+        "explanation": "Dla płynów używasz klasyfikatorów pojemników: '一杯水' (yì bēi shuǐ - jedna szklanka wody). Polski 'szklanka wody' nazywa pojemnik, chiński używa klasyfikatora '杯' (bēi - szklanka/kubek). '水' (shuǐ) to woda. Inne: '一瓶水' (jedna butelka wody - '瓶' píng), '一碗汤' (jedna miska zupy - '碗' wǎn). System klasyfikatorów dla płynów jest praktyczny - mierzysz przez pojemnik. Polski robi podobnie, ale chiński formalizuje to jako klasyfikatory. Ta regularność czyni opisywanie ilości płynów prostym."
+      },
+      {
+        "id": "pc_mw8",
+        "question": "两 _____ 裤子",
+        "translation": "(Dwie pary spodni)",
+        "options": [
+          "条",
+          "件",
+          "个",
+          "双"
+        ],
+        "correct": "条",
+        "explanation": "Dla długich, wąskich rzeczy używasz '条' (tiáo): '两条裤子' (liǎng tiáo kùzi - dwie pary spodni). Polski 'pary spodni' dodaje 'para', chiński używa '条'. '裤子' (kùzi) to spodnie. '条' też dla rzek ('一条河'), ulic ('一条路'), wiadomości ('一条消息'). Klasyfikator koduje kształt - długi i wąski lub ciągnący się. To abstrakcyjniejsze niż fizyczny kształt - idee też mogą być 'długie i ciągnące się'. System metaforyczny klasyfikatorów jest fascynujący."
+      },
+      {
+        "id": "pc_mw9",
+        "question": "一 _____ 衣服",
+        "translation": "(Jedna sztuka ubrania)",
+        "options": [
+          "件",
+          "条",
+          "个",
+          "套"
+        ],
+        "correct": "件",
+        "explanation": "Dla ubrań górnych używasz '件' (jiàn): '一件衣服' (yí jiàn yīfu - jedna sztuka ubrania). Polski 'jedna sztuka' czasem używa klasyfikatora, chiński zawsze '件'. '衣服' (yīfu) to ubranie. '件' dla kurtek, koszul, swetrów - rzeczy na górnej części ciała. Dolne biorą '条'. Ta anatomiczna kategoryzacja jest szczegółowa. '一件事' (jedna sprawa/rzecz) też używa '件' - abstrakcyjne rozszerzenie. Klasyfikatory niosą więcej niż tylko gramatykę - kulturową kategoryzację rzeczywistości."
+      },
+      {
+        "id": "pc_mw10",
+        "question": "一 _____ 手套",
+        "translation": "(Jedna para rękawiczek)",
+        "options": [
+          "双",
+          "只",
+          "个",
+          "件"
+        ],
+        "correct": "双",
+        "explanation": "Dla par używasz '双' (shuāng): '一双手套' (yì shuāng shǒutào - jedna para rękawiczek). Polski 'para rękawiczek' używa 'para', chiński '双'. '手套' (shǒutào) to rękawiczki. '双' dla rzeczy przychodzących w parach: '一双鞋' (para butów), '一双筷子' (para pałeczek). Logika jest jasna - gdy rzeczy funkcjonują w parze, używasz '双'. To elegancki sposób kodowania parności. Pojedyncza rękawiczka byłaby '一只' (jedna z pary). System precyzyjnie odróżnia całość od części."
+      },
+      {
+        "id": "pc_mw11",
+        "question": "三 _____ 电影",
+        "translation": "(Trzy filmy)",
+        "options": [
+          "部",
+          "本",
+          "个",
+          "张"
+        ],
+        "correct": "部",
+        "explanation": "Dla dzieł artystycznych i maszyn używasz '部' (bù): '三部电影' (sān bù diànyǐng - trzy filmy). Polski 'trzy filmy' prosto, chiński wymaga '部'. '电影' (diànyǐng) to film. '部' też dla '一部手机' (jeden telefon komórkowy), '一部小说' (jedna powieść). Klasyfikator łączy kompletne dzieła i złożone maszyny - rzeczy składające się z części. Ta metaforyczna kategoria pokazuje jak chiński myśli o świecie. Kompleksowe, funkcjonalne całości dzielą klasyfikator."
+      },
+      {
+        "id": "pc_mw12",
+        "question": "一 _____ 课",
+        "translation": "(Jedna lekcja)",
+        "options": [
+          "节",
+          "本",
+          "个",
+          "门"
+        ],
+        "correct": "节",
+        "explanation": "Dla jednostek zajęć używasz '节' (jié): '一节课' (yì jié kè - jedna lekcja). Polski 'jedna lekcja' używa czasem 'godzina lekcyjna', chiński '节'. '课' (kè) to lekcja. '节' dzieli długie rzeczy na segmenty - lekcje, sekcje bambusa, odcinki. To klasyfikator segmentacji. '两节车厢' (dwa wagony pociągu - segmenty). Metafora jest konsekwentna - rzeczy składające się z powtarzających się jednostek używają '节'. System jest poetycki w swojej logice."
+      },
+      {
+        "id": "pc_mw13",
+        "question": "四 _____ 问题",
+        "translation": "(Cztery pytania)",
+        "options": [
+          "个",
+          "本",
+          "张",
+          "只"
+        ],
+        "correct": "个",
+        "explanation": "Dla abstrakcyjnych rzeczy często '个': '四个问题' (sì gè wèntí - cztery pytania). Polski 'cztery pytania' bez klasyfikatora, chiński '四个'. '问题' (wèntí) to pytanie/problem. '个' jest uniwersalny dla abstrakcji - '一个想法' (jeden pomysł), '两个原因' (dwa powody). Gdy klasyfikator abstrakcyjny jest niejasny, '个' ratuje sytuację. To pokazuje elastyczność '个' - od konkretnych obiektów po abstrakcyjne pojęcia. Praktyczność tego klasyfikatora nie może być przeceniona dla uczących się."
+      },
+      {
+        "id": "pc_mw14",
+        "question": "一 _____ 面包",
+        "translation": "(Jeden bochenek chleba)",
+        "options": [
+          "个",
+          "块",
+          "片",
+          "条"
+        ],
+        "correct": "个",
+        "explanation": "Dla okrągłych rzeczy '个': '一个面包' (yí gè miànbāo - jeden chleb). Polski 'bochenek chleba' ma opisowe słowo, chiński '个'. '面包' (miànbāo) to chleb. Choć '块' (kuài - kawałek) też możliwe dla chleba pokrojonego, kompletny chleb bierze '个'. '一片面包' (jeden plasterek chleba) używa '片' (piàn - plaster). System klasyfikatorów rozróżnia całość od części, okrągłe od płaskiego. Ta precyzja w opisywaniu form jest charakterystyczna dla chińskiego."
+      },
+      {
+        "id": "pc_mw15",
+        "question": "一 _____ 音乐",
+        "translation": "(Jeden utwór muzyczny)",
+        "options": [
+          "首",
+          "个",
+          "本",
+          "张"
+        ],
+        "correct": "首",
+        "explanation": "Dla piosenek i wierszy używasz '首' (shǒu): '一首音乐' (yì shǒu yīnyuè - jeden utwór muzyczny). Polski 'utwór' dodaje opisowe słowo, chiński '首'. '音乐' (yīnyuè) to muzyka. '首' jest poetycki - dla dzieł artystycznych słowno-muzycznych. '一首歌' (jedna piosenka), '一首诗' (jeden wiersz). Ta specjalizacja klasyfikatora dla sztuki pokazuje kulturowe wartości. Dzieła artystyczne dostają swój własny marker, oddzielny od codziennych obiektów. System klasyfikatorów odzwierciedla światopogląd kulturowy."
+      }
+    ]
+  },
+  {
+    "key": "past_tense",
+    "name": "Czas przeszły",
+    "description": "过去时态",
+    "iconName": "clock.arrow.circlepath",
+    "color": "#fbbf24",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pc_past1",
+        "question": "我___了。",
+        "translation": "(Zjadłem)",
+        "options": [
+          "吃",
+          "吃了",
+          "在吃",
+          "会吃"
+        ],
+        "correct": "吃了",
+        "explanation": "Witaj w chińskim czasie przeszłym. Polski ma złożony system czasów przeszłych, chiński używa 了 (le) dla oznaczenia zakończenia. 吃了 (chī le) znaczy zjadłem - działanie zostało ukończone. Cała filozofia czasu w chińskim różni się od polskiej. Nie chodzi o kiedy, ale czy działanie się zakończyło. Polski aspekt dokonany (zjadłem) i niedokonany (jadłem) znajduje odbicie w użyciu lub braku 了. Ta partykuła to twój klucz do chińskiej przeszłości. Dodajesz ją po czasowniku, gdy chcesz pokazać że coś się stało i skończyło. 了 to marker kompletności."
+      },
+      {
+        "id": "pc_past2",
+        "question": "他___书。",
+        "translation": "(On przeczytał książkę)",
+        "options": [
+          "看了",
+          "看",
+          "在看",
+          "会看"
+        ],
+        "correct": "看了",
+        "explanation": "看了 (kàn le) to przeczytał. Polski używa czasu przeszłego dokonanego, chiński 了 po czasowniku. Ta partykuła nie jest czasem gramatycznym jak w polskim, to marker aspektu. Pokazuje że akcja została zakończona. 他看了书 znaczy on przeczytał książkę - działanie kompletne. Bez 了 byłoby to 看 (czytać w ogóle). System jest elegancki: czasownik pozostaje niezmieniony, 了 dodaje znaczenie zakończenia. To jak dodawanie znacznika do neutralnego czasownika. Chiński koduje aspekt, nie czas."
+      },
+      {
+        "id": "pc_past3",
+        "question": "我们___电影。",
+        "translation": "(Obejrzeliśmy film)",
+        "options": [
+          "看了",
+          "看",
+          "在看",
+          "会看"
+        ],
+        "correct": "看了",
+        "explanation": "看了 ponownie, tym razem z filmem. 我们看了电影 to obejrzeliśmy film. Polski odmienia czasownik przez osobę (obejrzeliśmy), chiński używa tej samej formy dla wszystkich. 了 pokazuje kompletność niezależnie kto to zrobił. Ta uniwersalność upraszcza system. 我看了, 你看了, 他看了 - wszyscy używają tej samej konstrukcji. Różnica polega tylko na zaimku osobowym. Czasownik plus 了 pozostaje stały. Ta konsekwencja czyni system łatwym do nauki raz nauczysz się wzorca."
+      },
+      {
+        "id": "pc_past4",
+        "question": "她___咖啡。",
+        "translation": "(Ona wypiła kawę)",
+        "options": [
+          "喝了",
+          "喝",
+          "在喝",
+          "会喝"
+        ],
+        "correct": "喝了",
+        "explanation": "喝了 (hē le) znaczy wypiła. Polski aspekt dokonany, chiński 了. 她喝了咖啡 to ona wypiła kawę - działanie zostało zakończone. Kawa została wypita. System 了 wyraża rezultatywność - coś się stało i teraz jest zrobione. To nie tylko przeszłość, to zakończenie. Polski może powiedzieć piła kawę (niedokonane) lub wypiła (dokonane). Chiński z 了 zawsze wyraża dokonaność. Ta precyzja pomaga jasno komunikować czy akcja została zakończona. 了 to marker rezultatu."
+      },
+      {
+        "id": "pc_past5",
+        "question": "我昨天___。",
+        "translation": "(Wczoraj pracowałem)",
+        "options": [
+          "工作了",
+          "工作",
+          "在工作",
+          "会工作"
+        ],
+        "correct": "工作了",
+        "explanation": "工作了 (gōngzuò le) z 昨天 (zuótiān, wczoraj). Polski używa czasu przeszłego, chiński 了 z wskaźnikiem czasowym. 我昨天工作了 to wczoraj pracowałem. Wskaźnik czasu (昨天) daje kontekst, 了 pokazuje że praca się odbyła i skończyła. Połączenie wskaźnika czasowego i 了 tworzy jasny obraz przeszłego zakończonego działania. System jest logiczny: czas plus 了 równa się przeszła kompletność. Polski koduje to w samym czasowniku, chiński w kombinacji elementów."
+      },
+      {
+        "id": "pc_past6",
+        "question": "他们___中文。",
+        "translation": "(Oni nauczyli się chińskiego)",
+        "options": [
+          "学了",
+          "学",
+          "在学",
+          "会学"
+        ],
+        "correct": "学了",
+        "explanation": "学了 (xué le) znaczy nauczyli się. 他们学了中文 to oni nauczyli się chińskiego. Nauka języka jest procesem, ale z 了 pokazujesz że osiągnęli pewien poziom - działanie zakończone. Ta subtelność jest ważna. 了 nie zawsze znaczy całkowitą kompletność (nikt nigdy nie kończy uczenia języka), ale oznacza zakończenie pewnego etapu lub sesji. Elastyczność 了 pozwala wyrażać różne stopnie zakończenia. Kontekst doprecyzowuje czy to całkowite zakończenie czy etap."
+      },
+      {
+        "id": "pc_past7",
+        "question": "我___音乐。",
+        "translation": "(Słuchałem muzyki)",
+        "options": [
+          "听了",
+          "听",
+          "在听",
+          "会听"
+        ],
+        "correct": "听了",
+        "explanation": "听了 (tīng le) to słuchałem (i skończyłem słuchać). 我听了音乐 znaczy słuchałem muzyki - sesja słuchania się zakończyła. Polski może używać niedokonanego (słuchałem) co odpowiadałoby 在听 (w trakcie słuchania). Ale 听了 to dokonane - posłuchałem i skończyłem. Ta dystynkcja między trwaniem a zakończeniem jest kluczowa w chińskim. System aspektowy chiński różni się od polskiego, ale oba języki mają bogate sposoby wyrażania tego jak działanie się odbywa."
+      },
+      {
+        "id": "pc_past8",
+        "question": "她___手机。",
+        "translation": "(Ona kupiła telefon)",
+        "options": [
+          "买了",
+          "买",
+          "在买",
+          "会买"
+        ],
+        "correct": "买了",
+        "explanation": "买了 (mǎi le) znaczy kupiła. 她买了手机 to ona kupiła telefon. Zakupy są klasycznym przykładem działania z wyraźnym zakończeniem - przed nie miała telefonu, po ma. 了 perfekcyjnie oddaje tę zmianę stanu. Polski dokonany (kupiła), chiński 了. System jest intuicyjny dla działań z jasnym rezultatem. Kupienie, zjedzenie, przeczytanie - wszystkie używają 了 naturalnie. Te działania zmieniają stan rzeczy, co 了 doskonale wyraża."
+      },
+      {
+        "id": "pc_past9",
+        "question": "他___朋友。",
+        "translation": "(On spotkał przyjaciela)",
+        "options": [
+          "见了",
+          "见",
+          "在见",
+          "会见"
+        ],
+        "correct": "见了",
+        "explanation": "见了 (jiàn le) to spotkał. 他见了朋友 znaczy on spotkał przyjaciela. Spotkanie ma wyraźny początek i koniec, więc 了 naturalnie wyraża że to się wydarzyło. Polski aspekt dokonany (spotkał), chiński 了. Interesujące: różnica między 见 (widzieć) i 看 (patrzeć). 见 to spotkać lub zobaczyć, bardziej o rezultacie. 看 to patrzeć, bardziej o działaniu. Chiński ma wiele czasowników percepcji z subtelnymi różnicami. 了 działa ze wszystkimi, dodając sens zakończenia."
+      },
+      {
+        "id": "pc_past10",
+        "question": "我们___饭。",
+        "translation": "(Zjedliśmy posiłek)",
+        "options": [
+          "吃了",
+          "吃",
+          "在吃",
+          "会吃"
+        ],
+        "correct": "吃了",
+        "explanation": "吃了 ponownie, tym razem z 饭 (fàn, gotowany ryż lub posiłek). 我们吃了饭 to zjedliśmy posiłek. Jedzenie posiłku ma naturalny początek i koniec, co 了 doskonale wyraża. W chińskiej kulturze 吃了饭 (zjadłeś już) to popularne pytanie pokazujące troskę. 了 tutaj sprawdza czy coś się stało. Polski używa czasu przeszłego, chiński 了 z implikacją zakończenia. System jest prosty: działanie plus 了 równa się zakończone działanie."
+      },
+      {
+        "id": "pc_past11",
+        "question": "他___日本。",
+        "translation": "(On pojechał do Japonii)",
+        "options": [
+          "去了",
+          "去",
+          "在去",
+          "会去"
+        ],
+        "correct": "去了",
+        "explanation": "去了 (qù le) znaczy pojechał. 他去了日本 to on pojechał do Japonii. Wyjazd to zakończone działanie - był tutaj, pojechał tam. 了 pokazuje że przemieszczenie się odbyło. Polski używa czasu przeszłego, chiński 了 z implikacją że teraz jest tam. System 了 często sugeruje nowy stan po działaniu. Nie tylko że pojechał (akcja), ale że teraz jest w Japonii (rezultat). Ta dwuznaczność 了 między akcją a stanem jest charakterystyczna."
+      },
+      {
+        "id": "pc_past12",
+        "question": "我___作业。",
+        "translation": "(Odrabiłem zadanie domowe)",
+        "options": [
+          "做了",
+          "做",
+          "在做",
+          "会做"
+        ],
+        "correct": "做了",
+        "explanation": "做了 (zuò le) to zrobiłem. 我做了作业 znaczy odrabiłem zadanie domowe. Zadanie domowe ma początek i koniec, więc 了 naturalnie wyraża kompletność. Polski dokonany (odrabiłem), chiński 了. System jest konsekwentny: działania z jasnym zakończeniem używają 了 dla wyrażenia że zostały wykonane. Ta regularność czyni system przewidywalnym. Raz zrozumiesz logikę 了, możesz stosować ją szeroko. To nie wymaga zapamiętywania wyjątków, tylko zrozumienia aspektu."
+      },
+      {
+        "id": "pc_past13",
+        "question": "她___信。",
+        "translation": "(Ona napisała list)",
+        "options": [
+          "写了",
+          "写",
+          "在写",
+          "会写"
+        ],
+        "correct": "写了",
+        "explanation": "写了 (xiě le) znaczy napisała. 她写了信 to ona napisała list. Pisanie listu to działanie twórcze z produktem końcowym - list istnieje jako rezultat. 了 doskonale wyraża tę kompletność. Polski używa czasu przeszłego dokonanego (napisała), chiński 了. System jest elegancki: czasownik opisuje działanie, 了 dodaje że zostało ukończone. Ta separacja funkcji czyni chiński ekspresywnym przy zachowaniu prostoty struktury."
+      },
+      {
+        "id": "pc_past14",
+        "question": "他们___学校。",
+        "translation": "(Oni przyszli do szkoły)",
+        "options": [
+          "来了",
+          "来",
+          "在来",
+          "会来"
+        ],
+        "correct": "来了",
+        "explanation": "来了 (lái le) znaczy przyszli. 他们来了学校 to oni przyszli do szkoły. Przyjście ma moment zakończenia - teraz są tutaj. 了 wyraża tę zmianę lokalizacji. Polski czas przeszły, chiński 了 z implikacją obecności. Interesujące: 来 (przyjść tu) kontra 去 (iść tam). Chiński rozróżnia kierunek względem mówiącego. Oba używają 了 dla przeszłości. System kierunkowości plus 了 tworzy precyzyjny obraz ruchu i rezultatu. Język koduje perspektywę przestrzenną."
+      },
+      {
+        "id": "pc_past15",
+        "question": "我___茶。",
+        "translation": "(Wypiłem herbatę)",
+        "options": [
+          "喝了",
+          "喝",
+          "在喝",
+          "会喝"
+        ],
+        "correct": "喝了",
+        "explanation": "喝了 ponownie, z herbatą. 我喝了茶 to wypiłem herbatę. Picie herbaty w kulturze chińskiej to często chwila spokoju i refleksji. Z 了 pokazujesz że ten moment się odbył i zakończył. Polski aspekt dokonany (wypiłem), chiński 了. Ten sam czasownik 喝 może być używany z 了 (wypiłem - zakończone) lub w innych konstrukcjach dla różnych aspektów. Elastyczność systemu pozwala na subtelne rozróżnienia. 了 to jeden z wielu markerów, które dodają niuanse do bazowego czasownika."
+      }
+    ]
+  },
+  {
+    "key": "aspect_markers",
+    "name": "Markery aspektu",
+    "description": "体标记",
+    "iconName": "clock",
+    "color": "#c084fc",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pc_asp1",
+        "question": "我___看书。",
+        "translation": "(Czytam książkę w tym momencie)",
+        "options": [
+          "在",
+          "了",
+          "过",
+          "着"
+        ],
+        "correct": "在",
+        "explanation": "Witaj w chińskich markierach aspektu. 在 (zài) wyraża działanie trwające w momencie mówienia. 我在看书 (wǒ zài kàn shū) znaczy czytam książkę teraz. Polski czas teraźniejszy ciągły, chiński 在. Ta partykuła przed czasownikiem sygnalizuje że coś się dzieje właśnie w tym momencie. Różnica między 我看书 (czytam książki w ogóle) a 我在看书 (czytam teraz, nie przeszkadzaj). 在 to twój sposób na wyrażenie teraźniejszości ciągłej. Koncepcyjnie podobne do polskiego jestem w trakcie czytania."
+      },
+      {
+        "id": "pc_asp2",
+        "question": "他___工作。",
+        "translation": "(On pracuje teraz)",
+        "options": [
+          "在",
+          "了",
+          "过",
+          "着"
+        ],
+        "correct": "在",
+        "explanation": "在 ponownie. 他在工作 (tā zài gōngzuò) to on pracuje teraz. System jest konsekwentny: 在 przed czasownikiem dla działania w toku. Polski może używać teraźniejszego (pracuje) ale 在 precyzuje że to dzieje się obecnie. Ta precyzja temporalna jest użyteczna. Bez 在, 他工作 mogłoby znaczyć on pracuje (ogólnie), z 在 to on pracuje teraz (w tym momencie). Subtelna ale ważna różnica. 在 to marker natychmiastowości, rzeczy dziejącej się tu i teraz."
+      },
+      {
+        "id": "pc_asp3",
+        "question": "我___去过北京。",
+        "translation": "(Byłem w Pekinie)",
+        "options": [
+          "去过",
+          "去了",
+          "在去",
+          "去着"
+        ],
+        "correct": "去过",
+        "explanation": "过 (guo) wyraża doświadczenie. 我去过北京 znaczy byłem w Pekinie (miałem to doświadczenie). Polski użyłby czasu przeszłego, chiński 过 po czasowniku. Ta partykuła nie mówi kiedy, tylko że doświadczenie miało miejsce. 去了 byłoby pojechałem (konkretna przeszła akcja), 去过 to doświadczyłem wyjazdu (kiedyś w życiu). System jest logiczny: 了 dla konkretnych akcji, 过 dla życiowych doświadczeń. Ta dystynkcja nie ma prostego odpowiednika w polskim."
+      },
+      {
+        "id": "pc_asp4",
+        "question": "他___吃过中国菜。",
+        "translation": "(On jadł chińskie jedzenie)",
+        "options": [
+          "吃过",
+          "吃了",
+          "在吃",
+          "吃着"
+        ],
+        "correct": "吃过",
+        "explanation": "过 dla doświadczenia jedzenia. 他吃过中国菜 znaczy on jadł chińskie jedzenie (ma to doświadczenie). Nie mówimy kiedy ani ile razy, tylko że się to zdarzyło. Polski czas przeszły (jadł), chiński 过. W pytaniach: 你吃过中国菜吗 (czy jadłeś kiedyś chińskie jedzenie) używa 过 dla pytania o doświadczenie życiowe. System 过 jest doskonały dla pytań czy ktoś coś robił w życiu. To nie o konkretnym czasie, ale o fakcie doświadczenia."
+      },
+      {
+        "id": "pc_asp5",
+        "question": "门___开着。",
+        "translation": "(Drzwi są otwarte)",
+        "options": [
+          "开着",
+          "开了",
+          "在开",
+          "开过"
+        ],
+        "correct": "开着",
+        "explanation": "着 (zhe) wyraża stan trwały będący rezultatem akcji. 门开着 (mén kāi zhe) znaczy drzwi są otwarte (ktoś je otworzył i są otwarte). Polski używa czasu teraźniejszego dla stanu, chiński 着 po czasowniku. 开了 byłoby otworzono (akcja), 开着 to są otwarte (stan). System 着 jest jak polski imiesłów przymiotnikowy - opisuje stan wynikły z akcji. 穿着 (być ubranym w), 坐着 (siedzieć jako stan). 着 dodaje znaczenie trwającego rezultatu. To nie działanie, ale stan będący jego efektem."
+      },
+      {
+        "id": "pc_asp6",
+        "question": "我___学过日语。",
+        "translation": "(Uczyłem się japońskiego)",
+        "options": [
+          "学过",
+          "学了",
+          "在学",
+          "学着"
+        ],
+        "correct": "学过",
+        "explanation": "过 dla doświadczenia uczenia. 我学过日语 znaczy uczyłem się japońskiego (miałem tę okazję). Może dalej się uczysz lub nie, 过 tylko potwierdza że doświadczenie miało miejsce. Polski czas przeszły, chiński 过. System jest użyteczny dla CV i prezentacji doświadczeń. Pytanie 你学过什么语言 (jakich języków się uczyłeś) używa 过 dla zbierania informacji o życiowych doświadczeniach. To nie o konkretnym czasie czy dokończeniu, ale o fakcie próbowania."
+      },
+      {
+        "id": "pc_asp7",
+        "question": "他___看书。",
+        "translation": "(On czyta książkę teraz)",
+        "options": [
+          "在",
+          "了",
+          "过",
+          "着"
+        ],
+        "correct": "在",
+        "explanation": "在 dla ciągłości. 他在看书 to on czyta teraz. Polski teraźniejszy, chiński 在 dla podkreślenia natychmiastowości. Ta konstrukcja odpowiada na pytanie co teraz robisz - 在 plus czasownik. Bez 在, czasownik mógłby znaczyć nawyk lub ogólną prawdę. Z 在 to zdecydowanie teraz, w tym momencie. Konstrukcja jest prosta i regularna: podmiot 在 czasownik dopełnienie. System 在 to twoje narzędzie dla wyrażania teraźniejszości ciągłej."
+      },
+      {
+        "id": "pc_asp8",
+        "question": "我___看过那个电影。",
+        "translation": "(Widziałem ten film)",
+        "options": [
+          "看过",
+          "看了",
+          "在看",
+          "看着"
+        ],
+        "correct": "看过",
+        "explanation": "过 dla doświadczenia oglądania. 我看过那个电影 znaczy widziałem ten film (mam to doświadczenie). To nie o konkretnej sesji kinowej, ale o fakcie że widziałeś. Polski czas przeszły, chiński 过. W konwersacji: A: 你看过这个电影吗 (widziałeś ten film), B: 看过 (widziałem). System 过 czyni takie wymiany prostymi. Pytanie i odpowiedź używają tej samej konstrukcji. Elegancja i konsekwencja."
+      },
+      {
+        "id": "pc_asp9",
+        "question": "她___穿着红色的衣服。",
+        "translation": "(Ona ma na sobie czerwone ubranie)",
+        "options": [
+          "穿着",
+          "穿了",
+          "在穿",
+          "穿过"
+        ],
+        "correct": "穿着",
+        "explanation": "着 dla stanu bycia ubranym. 她穿着红色的衣服 znaczy ona ma na sobie czerwone ubranie. 穿 to zakładać (działanie), 穿着 to nosić, być ubranym (stan). Polski używa różnych czasowników (zakładać kontra nosić), chiński używa 着 dla transformacji działania w stan. 穿了 byłoby założyła (akcja zakończona), 穿着 to nosi, jest ubrana (obecny stan). System 着 jest produktywny - możesz go użyć z wieloma czasownikami dla tworzenia stanów trwałych."
+      },
+      {
+        "id": "pc_asp10",
+        "question": "我___去中国。",
+        "translation": "(Jadę do Chin teraz)",
+        "options": [
+          "在",
+          "了",
+          "过",
+          "着"
+        ],
+        "correct": "在",
+        "explanation": "Uwaga: dla czasowników ruchu jak 去, 在 może brzmieć nienaturalnie. Lepiej powiedzieć 我要去中国 (zamierzam jechać) lub 我现在去 (idę teraz). Ale konstrukcja 在去 może pojawić się w niektórych kontekstach. System 在 działa najlepiej z czasownikami stanowymi lub działaniowymi, mniej naturalnie z momentalnymi. To pokazuje niuanse - nie każdy marker działa z każdym czasownikiem. Chiński ma subtelności w kombinacjach. 在 preferuje czasowniki opisujące trwające działania."
+      },
+      {
+        "id": "pc_asp11",
+        "question": "他___住过这里。",
+        "translation": "(On mieszkał tutaj)",
+        "options": [
+          "住过",
+          "住了",
+          "在住",
+          "住着"
+        ],
+        "correct": "住过",
+        "explanation": "过 dla doświadczenia mieszkania. 他住过这里 znaczy on mieszkał tutaj (w jakimś momencie życia). Nie mieszka już lub nie wiemy, 过 tylko potwierdza przeszłe doświadczenie. Polski czas przeszły, chiński 过. 住了 byłoby zamieszkał (akcja), 住过 to mieszkał kiedyś (doświadczenie). System rozróżnia konkretną akcję w przeszłości od życiowego doświadczenia. Ta dystynkcja jest użyteczna dla biografii i historii osobistych."
+      },
+      {
+        "id": "pc_asp12",
+        "question": "她___坐着。",
+        "translation": "(Ona siedzi)",
+        "options": [
+          "坐着",
+          "坐了",
+          "在坐",
+          "坐过"
+        ],
+        "correct": "坐着",
+        "explanation": "着 dla stanu siedzenia. 她坐着 znaczy ona siedzi (jest w pozycji siedzącej). 坐 to siadać (działanie), 坐着 to siedzieć (stan). Polski używa różnych czasowników, chiński 着. 坐了 byłoby usiadła (akcja zakończona), 坐着 to siedzi (trwający stan). System 着 transformuje dynamiczne czasowniki w statyczne opisy. To jak zamrożenie akcji w jej rezultacie. 着 to marker trwającego rezultatu akcji."
+      },
+      {
+        "id": "pc_asp13",
+        "question": "我___听过这首歌。",
+        "translation": "(Słyszałem tę piosenkę)",
+        "options": [
+          "听过",
+          "听了",
+          "在听",
+          "听着"
+        ],
+        "correct": "听过",
+        "explanation": "过 dla doświadczenia słyszenia. 我听过这首歌 znaczy słyszałem tę piosenkę (znam ją). Polski czas przeszły, chiński 过. W dyskusjach o muzyce: 你听过这个吗 (słyszałeś to) używa 过 dla pytania o znajomość. System 过 jest doskonały dla sprawdzania wspólnych doświadczeń. Pytanie 听过吗 (słyszałeś) to częsty sposób dzielenia się muzyką i kulturą. 过 łączy ludzi przez wspólne doświadczenia."
+      },
+      {
+        "id": "pc_asp14",
+        "question": "他___站着。",
+        "translation": "(On stoi)",
+        "options": [
+          "站着",
+          "站了",
+          "在站",
+          "站过"
+        ],
+        "correct": "站着",
+        "explanation": "着 dla stanu stania. 他站着 znaczy on stoi (jest w pozycji stojącej). Polski używa czasownika stać dla stanu, chiński 站着. 站 to wstać (działanie), 站着 to stać (stan). System 着 konsekwentnie transformuje akcje w stany. 站了 byłoby wstał (akcja), 站着 to stoi (obecny stan). Ta różnica między akcją a stanem jest fundamentalna w chińskim aspekcie. 着 jest twoim narzędziem dla opisywania statycznych pozycji i stanów."
+      },
+      {
+        "id": "pc_asp15",
+        "question": "我___吃过寿司。",
+        "translation": "(Jadłem sushi)",
+        "options": [
+          "吃过",
+          "吃了",
+          "在吃",
+          "吃着"
+        ],
+        "correct": "吃过",
+        "explanation": "过 dla doświadczenia jedzenia sushi. 我吃过寿司 znaczy jadłem sushi (próbowałem). To częste pytanie przy poznawaniu nowych ludzi - 你吃过寿司吗 (jadłeś kiedyś sushi). Polski czas przeszły, chiński 过. System 过 czyni rozmowy o doświadczeniach naturalnymi. Nie pytasz kiedy czy jak często, tylko czy w ogóle. Ta prostota zachęca do dzielenia się. 过 to most między ludźmi przez wspólne lub różne doświadczenia życiowe."
+      }
+    ]
+  },
+  {
+    "key": "modal_verbs",
+    "name": "Czasowniki modalne",
+    "description": "情态动词",
+    "iconName": "bolt",
+    "color": "#4ade80",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pc_mod1",
+        "question": "我___说中文。",
+        "translation": "(Potrafię mówić po chińsku)",
+        "options": [
+          "会",
+          "能",
+          "可以",
+          "要"
+        ],
+        "correct": "会",
+        "explanation": "Witaj w chińskich czasownikach modalnych. 会 (huì) wyraża nabytą umiejętność. 我会说中文 znaczy potrafię mówić po chińsku - nauczyłem się. Polski używa potrafić, chiński 会. To różni się od 能 (fizyczna zdolność) i 可以 (pozwolenie). 会 to dla umiejętności zdobytych przez naukę. 我会开车 (umiem prowadzić), 我会做饭 (umiem gotować). System jest precyzyjny - każdy modalny ma swoją niszę. Ta specjalizacja pozwala na subtelne wyrażanie różnych typów możliwości. 会 to twoja umiejętność nabyta przez praktykę."
+      },
+      {
+        "id": "pc_mod2",
+        "question": "我___搬这个箱子。",
+        "translation": "(Mogę podnieść to pudełko - mam siłę)",
+        "options": [
+          "能",
+          "会",
+          "可以",
+          "要"
+        ],
+        "correct": "能",
+        "explanation": "能 (néng) wyraża fizyczną zdolność lub możliwość. 我能搬这个箱子 znaczy mogę podnieść to pudełko (mam siłę). Polski używa móc, chiński precyzuje typ - 能 dla zdolności fizycznej lub okolicznościowej. To różni się od 会 (umiejętność) i 可以 (pozwolenie). 我能跑十公里 (mogę przebiec 10 km - fizyczna zdolność). System rozróżnia źródło możliwości. 能 to o twoich możliwościach fizycznych lub sytuacyjnych. Ta precyzja pomaga jasno komunikować różne typy mogę."
+      },
+      {
+        "id": "pc_mod3",
+        "question": "我___进来吗？",
+        "translation": "(Czy mogę wejść - czy mam pozwolenie)",
+        "options": [
+          "可以",
+          "会",
+          "能",
+          "要"
+        ],
+        "correct": "可以",
+        "explanation": "可以 (kěyǐ) wyraża pozwolenie lub dozwoloną możliwość. 我可以进来吗 znaczy czy mogę wejść (czy mam zgodę). Polski używa móc, chiński 可以 dla pozwoleń. To różni się od 能 (zdolność) i 会 (umiejętność). 可以吸烟吗 (czy można palić - społeczne pozwolenie). System jest logiczny: 会 to co umiesz, 能 to co możesz fizycznie, 可以 to co ci wolno. Ta troista dystynkcja nie ma prostego odpowiednika w polskim mogę. Każdy chiński modalny ma swoją funkcję."
+      },
+      {
+        "id": "pc_mod4",
+        "question": "我___去图书馆。",
+        "translation": "(Chcę iść do biblioteki)",
+        "options": [
+          "要",
+          "会",
+          "能",
+          "可以"
+        ],
+        "correct": "要",
+        "explanation": "要 (yào) wyraża chęć lub zamiar. 我要去图书馆 znaczy chcę iść do biblioteki. Polski używa chcieć, chiński 要. To także wyraża potrzebę lub konieczność w różnych kontekstach. 我要水 (chcę wodę), 我要学习 (muszę się uczyć). 要 jest wszechstronny - od miękkiej chęci po silną konieczność. Kontekst i intonacja precyzują siłę. System jest elastyczny: jeden modalny, wiele odcieni znaczenia. 要 to twoje podstawowe narzędzie dla wyrażania pragnień i zamiarów."
+      },
+      {
+        "id": "pc_mod5",
+        "question": "你___帮我吗？",
+        "translation": "(Czy możesz mi pomóc)",
+        "options": [
+          "能",
+          "会",
+          "可以",
+          "要"
+        ],
+        "correct": "能",
+        "explanation": "能 w pytaniu o możliwość pomocy. 你能帮我吗 znaczy czy możesz mi pomóc (czy jesteś w stanie). Polski używa móc, chiński 能 dla pytania o zdolność sytuacyjną. Można też użyć 可以 (czy zechciałbyś pomóc - bardziej o zgodzie). Wybór między 能 i 可以 zależy czy pytasz o możliwość czy o pozwolenie/chęć. Subtelna różnica. System pozwala wyrażać niuanse w prośbach. 能 to czy możesz (zdolność), 可以 to czy chcesz (zgoda)."
+      },
+      {
+        "id": "pc_mod6",
+        "question": "我___吃饭了。",
+        "translation": "(Muszę już jeść)",
+        "options": [
+          "要",
+          "得",
+          "会",
+          "能"
+        ],
+        "correct": "要",
+        "explanation": "要 dla konieczności. 我要吃饭了 znaczy muszę już jeść (czas posiłku). Polski używa musieć, chiński 要. Kombinacja 要...了 wyraża naglącą konieczność - coś musi się stać wkrótce. System 了 dodaje pilność do 要. 要下雨了 (zaraz będzie padać), 要走了 (muszę już iść). Ta kombinacja jest użyteczna dla wyrażania zbliżających się konieczności. 要 to twój modalny dla muszę."
+      },
+      {
+        "id": "pc_mod7",
+        "question": "你___会说英语。",
+        "translation": "(Powinieneś nauczyć się angielskiego)",
+        "options": [
+          "应该",
+          "会",
+          "能",
+          "可以"
+        ],
+        "correct": "应该",
+        "explanation": "应该 (yīnggāi) wyraża powinność lub radę. 你应该学英语 znaczy powinieneś uczyć się angielskiego. Polski używa powinien, chiński 应该. To dla moralnych obowiązków, rad, społecznych oczekiwań. Mniej silne niż 必须 (musieć), bardziej o słuszności. 你应该休息 (powinieneś odpocząć - rada). System ma spektrum od rady (应该) przez konieczność (要) do nakazu (必须). Każdy poziom ma swój modalny. 应该 to dla łagodnych powinności."
+      },
+      {
+        "id": "pc_mod8",
+        "question": "我___游泳。",
+        "translation": "(Umiem pływać)",
+        "options": [
+          "会",
+          "能",
+          "可以",
+          "要"
+        ],
+        "correct": "会",
+        "explanation": "会 ponownie dla umiejętności. 我会游泳 znaczy umiem pływać - nauczyłem się tej umiejętności. Polski używa umieć, chiński 会. Pływanie to nabyta umiejętność, perfekcyjny przykład użycia 会. Nie pytasz czy masz siłę (能) czy pozwolenie (可以), ale czy posiadasz umiejętność (会). System rozróżnia te aspekty. 会 to zawsze o umiejętnościach nabytych przez naukę lub praktykę. Ta precyzja pomaga jasno komunikować co potrafisz."
+      },
+      {
+        "id": "pc_mod9",
+        "question": "这里___抽烟。",
+        "translation": "(Tutaj nie można palić)",
+        "options": [
+          "不可以",
+          "不会",
+          "不能",
+          "不要"
+        ],
+        "correct": "不可以",
+        "explanation": "不可以 (bù kěyǐ) wyraża zakaz. 这里不可以抽烟 znaczy tutaj nie można palić (nie wolno). Polski używa nie można, chiński 不可以. To zaprzeczenie pozwolenia - społecznie lub prawnie zabronione. 不能 byłoby niemożność, 不可以 to zakaz. Różnica jest subtelna ale ważna. Zakazy używają 不可以, niemożliwości 不能. System jest logiczny: zaprzecz modalnemu dla negacji jego znaczenia. 不可以 to twoje nie wolno."
+      },
+      {
+        "id": "pc_mod10",
+        "question": "我___学习。",
+        "translation": "(Muszę się uczyć)",
+        "options": [
+          "得",
+          "会",
+          "能",
+          "可以"
+        ],
+        "correct": "得",
+        "explanation": "得 (děi) wyraża konieczność, często zewnętrzną. 我得学习 znaczy muszę się uczyć (zewnętrzne wymaganie). Polski używa musieć, chiński 得. To bardziej potoczne niż 必须, często dla praktycznych konieczności. 我得走了 (muszę już iść), 你得听我说 (musisz mnie wysłuchać). System ma wiele modalnych dla konieczności z różnymi odcieniami. 得 to praktyczna, często natychmiastowa konieczność. Potoczne i powszechne w codziennej mowie."
+      },
+      {
+        "id": "pc_mod11",
+        "question": "你___小心。",
+        "translation": "(Powinieneś być ostrożny)",
+        "options": [
+          "应该",
+          "会",
+          "能",
+          "可以"
+        ],
+        "correct": "应该",
+        "explanation": "应该 dla rady. 你应该小心 znaczy powinieneś być ostrożny. Polski używa powinien, chiński 应该. To moralna lub praktyczna rada, nie nakaz. 应该 wyraża co jest słuszne lub mądre, nie co jest wymagane. 你应该多喝水 (powinieneś pić więcej wody - rada zdrowotna). System pozwala dawać rady bez narzucania. 应该 to twój modalny dla łagodnych sugestii i powinności."
+      },
+      {
+        "id": "pc_mod12",
+        "question": "我___买这个。",
+        "translation": "(Chcę kupić to)",
+        "options": [
+          "想",
+          "会",
+          "能",
+          "可以"
+        ],
+        "correct": "想",
+        "explanation": "想 (xiǎng) wyraża chęć lub pragnienie. 我想买这个 znaczy chcę kupić to. Polski używa chcieć, chiński 想. To miększe niż 要 - bardziej o pragnieniu niż zamiarze. 想 dla marzeń i pragnień, 要 dla zamiarów i planów. 我想去中国 (chciałbym pojechać do Chin - marzenie), 我要去中国 (zamierzam pojechać - plan). System rozróżnia intensywność i realność pragnień. 想 to dla twoich życzeń i marzeń."
+      },
+      {
+        "id": "pc_mod13",
+        "question": "这个问题很___解决。",
+        "translation": "(Ten problem jest łatwy do rozwiązania)",
+        "options": [
+          "容易",
+          "会",
+          "能",
+          "可以"
+        ],
+        "correct": "容易",
+        "explanation": "容易 (róngyì) to łatwy, ale działa jak modalny w konstrukcjach. 这个问题很容易解决 znaczy ten problem jest łatwy do rozwiązania. Polski używa przymiotnika łatwy z bezokolicznikiem, chiński 容易 z czasownikiem. System jest elastyczny: wiele słów może funkcjonować modalnie. 容易 opisuje właściwość działania - łatwość wykonania. To pokazuje jak chiński łączy przymiotniki i czasowniki. Granice kategorii są płynne."
+      },
+      {
+        "id": "pc_mod14",
+        "question": "我___记住。",
+        "translation": "(Potrafię zapamiętać)",
+        "options": [
+          "能",
+          "会",
+          "可以",
+          "要"
+        ],
+        "correct": "能",
+        "explanation": "能 dla zdolności mentalnej. 我能记住 znaczy potrafię zapamiętać (mam zdolność). Polski używa potrafić, chiński 能. Choć 会 też możliwe, 能 podkreśla obecną zdolność do działania. 会 byłoby bardziej o nabytej umiejętności, 能 o obecnej możliwości. Subtelna różnica. System pozwala na niuanse. Wybór między 会 i 能 zależy czy mówisz o umiejętności czy zdolności. Kontekst często doprecyzowuje."
+      },
+      {
+        "id": "pc_mod15",
+        "question": "我们___出发了。",
+        "translation": "(Musimy już wyruszać)",
+        "options": [
+          "要",
+          "会",
+          "能",
+          "可以"
+        ],
+        "correct": "要",
+        "explanation": "要...了 dla naglącej konieczności. 我们要出发了 znaczy musimy już wyruszać (czas ruszyć). Polski używa musieć z już, chiński 要...了. Ta konstrukcja wyraża że coś zaraz się stanie lub musi się stać. 要 dla zamiaru, 了 dla zmiany lub bliskości. Razem tworzą pilność. 要下课了 (zaraz koniec lekcji), 要睡觉了 (czas spać). System używa kombinacji dla wyrażania niuansów temporalnych. 要...了 to twoje zaraz musi się stać."
+      }
+    ]
+  },
+  {
+    "key": "sentence_particles",
+    "name": "Partykuły zdaniowe",
+    "description": "语气助词",
+    "iconName": "bubble.left",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pc_par1",
+        "question": "你好___",
+        "translation": "(Cześć - przyjazne)",
+        "options": [
+          "啊",
+          "吗",
+          "呢",
+          "吧"
+        ],
+        "correct": "啊",
+        "explanation": "Witaj w chińskich partykułach zdaniowych. 啊 (a) dodaje ciepła i emocji. 你好啊 brzmi cieplej niż samo 你好. Polski używa intonacji, chiński partykuł na końcu. Te małe słówka dodają ton emocjonalny i społeczny. 啊 wyraża ciepło, zaskoczenie, realizację. 好啊 (w porządku - entuzjastycznie). System partykuł końcowych jest jak przyprawy do jedzenia - podstawa jest ta sama, ale smak się zmienia. 啊 to twoje narzędzie dla dodawania ciepła do wypowiedzi."
+      },
+      {
+        "id": "pc_par2",
+        "question": "你吃了___",
+        "translation": "(Zjadłeś już?)",
+        "options": [
+          "吗",
+          "啊",
+          "呢",
+          "吧"
+        ],
+        "correct": "吗",
+        "explanation": "吗 (ma) tworzy pytania tak/nie. 你吃了吗 znaczy zjadłeś już. Polski używa intonacji lub czy, chiński 吗 na końcu. To najprostsza forma pytania - stwierdzenie plus 吗. 你好吗 (jak się masz), 你去吗 (czy idziesz). System jest elegancki: normalne zdanie, dodaj 吗, masz pytanie. Nie zmieniasz szyku słów jak w polskim. 吗 to twój uniwersalny znacznik pytania. Używaj go swobodnie dla każdego pytania tak/nie."
+      },
+      {
+        "id": "pc_par3",
+        "question": "你___",
+        "translation": "(A ty? Co z tobą?)",
+        "options": [
+          "呢",
+          "吗",
+          "啊",
+          "吧"
+        ],
+        "correct": "呢",
+        "explanation": "呢 (ne) tworzy pytania uzupełniające lub kontrastowe. 你呢 znaczy a ty. Polski używa a ty, chiński samo 呢. Ta partykuła sugeruje że pytasz o to samo w kontekście. A: 我很好 (mam się dobrze), B: 你呢 (a ty). System jest ekonomiczny: kontekst daje pytanie, 呢 tylko je sygnalizuje. 他在哪儿呢 (gdzie on jest - pytanie retoryczne lub intensyfikacja). 呢 dodaje niuanse pytań. To twoje a co z..."
+      },
+      {
+        "id": "pc_par4",
+        "question": "我们走___",
+        "translation": "(Chodźmy)",
+        "options": [
+          "吧",
+          "吗",
+          "啊",
+          "呢"
+        ],
+        "correct": "吧",
+        "explanation": "吧 (ba) wyraża propozycję lub sugestię. 我们走吧 znaczy chodźmy. Polski używa trybu rozkazującego pierwszej osoby, chiński 吧. Ta partykuła zmiękcza stwierdzenie w propozycję. 吃吧 (jedz - zachęta), 好吧 (w porządku - zgoda niechętna). System 吧 tworzy atmosferę współpracy i sugestii. Nie rozkazujesz, proponujesz. 吧 to twoje chodźmy, zróbmy, może. Dodaje ciepła i zaproszenia do wypowiedzi."
+      },
+      {
+        "id": "pc_par5",
+        "question": "真好___",
+        "translation": "(Naprawdę dobre - z emocją)",
+        "options": [
+          "啊",
+          "吗",
+          "呢",
+          "吧"
+        ],
+        "correct": "啊",
+        "explanation": "啊 ponownie dla emocji. 真好啊 znaczy naprawdę dobre (z uczuciem). Polski używa intonacji i wykrzyknika, chiński 啊. Ta partykuła dodaje emocjonalne zaangażowanie. Bez 啊: 真好 (suche stwierdzenie), z 啊: 真好啊 (ciepłe uznanie). System partykuł pozwala wyrażać emocje strukturalnie. 啊 może wyrażać radość, zaskoczenie, podziw - kontekst określa które. To twoje wykrzyknik w chińskim, ale zintegrowane gramatycznie."
+      },
+      {
+        "id": "pc_par6",
+        "question": "对不对___",
+        "translation": "(Prawda? Zgadza się?)",
+        "options": [
+          "呢",
+          "吗",
+          "啊",
+          "吧"
+        ],
+        "correct": "呢",
+        "explanation": "呢 dla pytań tagowych. 对不对呢 to prawda, czy nie. Polski używa prawda na końcu, chiński 呢. Ta partykuła dodaje pytajność do już pytającego wyrażenia, intensyfikując lub zmiękczając. System 呢 jest elastyczny - dodaje różne niuanse w zależności od kontekstu. 怎么办呢 (co robić - retoryczne), 是谁呢 (kto to jest - ciekawość). 呢 to twoje czy nie, prawda, uniwersalny znacznik pytań wtórnych."
+      },
+      {
+        "id": "pc_par7",
+        "question": "真的___",
+        "translation": "(Naprawdę?)",
+        "options": [
+          "吗",
+          "啊",
+          "呢",
+          "吧"
+        ],
+        "correct": "吗",
+        "explanation": "吗 dla pytań potwierdzających. 真的吗 znaczy naprawdę (pytanie). Polski używa intonacji, chiński 吗. To samo stwierdzenie 真的 (naprawdę - stwierdzenie) staje się pytaniem z 吗. System jest prosty: dodaj 吗, masz pytanie. Nie potrzebujesz zmieniać nic więcej. Ta ekonomia środków jest elegancka. 吗 to twój uniwersalny transformator stwierdzeń w pytania. Jedna partykuła, nieskończone możliwości pytań."
+      },
+      {
+        "id": "pc_par8",
+        "question": "可能___",
+        "translation": "(Może - zgadywanie)",
+        "options": [
+          "吧",
+          "吗",
+          "啊",
+          "呢"
+        ],
+        "correct": "吧",
+        "explanation": "吧 dla niepewności i zgadywania. 可能吧 znaczy może, chyba. Polski używa może, chyba, chiński 吧. Ta partykuła wyraża brak pewności. 是吧 (prawda? - szukanie potwierdzenia), 算了吧 (daj spokój - rezygnacja). System 吧 jest wszechstronny: od propozycji (走吧) przez niepewność (可能吧) do rezygnacji (算了吧). Kontekst określa które. 吧 dodaje różne odcienie modalności. To twój może być, chyba."
+      },
+      {
+        "id": "pc_par9",
+        "question": "好美___",
+        "translation": "(Jakże piękne - podziw)",
+        "options": [
+          "啊",
+          "吗",
+          "呢",
+          "吧"
+        ],
+        "correct": "啊",
+        "explanation": "啊 dla wyrażania podziwu. 好美啊 znaczy jakże piękne (z uczuciem). Polski wykrzyknik, chiński 啊. Ta partykuła intensyfikuje emocję podziwu lub zachwytu. System 啊 dodaje warstwę emocjonalną do opisów. 好吃啊 (pyszne - z entuzjazmem), 好玩啊 (zabawne - radośnie). 啊 to twój sposób na pokazywanie że coś cię porusza. Nie tylko mówisz co myślisz, ale jak się czujesz. Emocja staje się częścią gramatyki."
+      },
+      {
+        "id": "pc_par10",
+        "question": "他来不来___",
+        "translation": "(Czy on przyjdzie czy nie?)",
+        "options": [
+          "呢",
+          "吗",
+          "啊",
+          "吧"
+        ],
+        "correct": "呢",
+        "explanation": "呢 z pytaniami alternatywnymi. 他来不来呢 znaczy czy przyjdzie czy nie (zastanowienie). Polski używa czy...czy nie, chiński konstrukcja A-not-A plus 呢. Ta partykuła dodaje ton rozważania. System A-not-A (来不来, 好不好) tworzy pytania o wybór, 呢 dodaje refleksyjność. 去不去呢 (iść czy nie - rozważanie). 呢 intensyfikuje pytajność i dodaje niuans rozważania opcji. To twoje czy też, może jednak."
+      },
+      {
+        "id": "pc_par11",
+        "question": "休息一下___",
+        "translation": "(Odpocznij trochę - sugestia)",
+        "options": [
+          "吧",
+          "吗",
+          "啊",
+          "呢"
+        ],
+        "correct": "吧",
+        "explanation": "吧 dla łagodnych sugestii. 休息一下吧 znaczy odpocznij trochę (zachęta). Polski używa trybu rozkazującego lub może, chiński 吧. Ta partykuła zmienia rozkaz w przyjazną radę. 喝水吧 (napij się - troska), 睡觉吧 (śpij już - rodzicielska zachęta). System 吧 tworzy ciepłą atmosferę. Nie rozkazujesz, proponujesz z troską. 吧 to twoje może byś, lepiej. Dodaje troski i życzliwości do sugestii."
+      },
+      {
+        "id": "pc_par12",
+        "question": "太贵了___",
+        "translation": "(Za drogie - skarżenie się)",
+        "options": [
+          "啊",
+          "吗",
+          "呢",
+          "吧"
+        ],
+        "correct": "啊",
+        "explanation": "啊 dla narzekania lub skarżenia. 太贵了啊 znaczy za drogie (narzekanie). Polski używa intonacji, chiński 啊. Ta partykuła dodaje emocjonalnego podtekstu - frustracji, skargi, rozczarowania. System 啊 jest ekspresywny. 太难了啊 (za trudne - narzekanie), 太热了啊 (za gorąco - dyskomfort). 啊 to twój sposób na wyrażanie że coś przekracza granicę komfortu. Emocja staje się widoczna strukturalnie."
+      },
+      {
+        "id": "pc_par13",
+        "question": "算了___",
+        "translation": "(Nieważne, daj spokój)",
+        "options": [
+          "吧",
+          "吗",
+          "啊",
+          "呢"
+        ],
+        "correct": "吧",
+        "explanation": "吧 dla rezygnacji. 算了吧 znaczy daj spokój, nieważne. Polski używa różnych wyrażeń, chiński 吧. Ta partykuła zmienia kategoryczne 算了 w łagodniejszą rezygnację. System 吧 wyraża akceptację sytuacji. 不要了吧 (nie trzeba już - rezygnacja), 忘了吧 (zapomnij - akceptacja). 吧 dodaje ton pogodzenia z sytuacją. To twoje trudno, niech będzie. Wyraża akceptację nawet w rozczarowaniu."
+      },
+      {
+        "id": "pc_par14",
+        "question": "你知道___",
+        "translation": "(Wiesz... - rozpoczynanie tematu)",
+        "options": [
+          "吗",
+          "啊",
+          "呢",
+          "吧"
+        ],
+        "correct": "吗",
+        "explanation": "吗 dla pytań o wiedzę. 你知道吗 znaczy wiesz (pytanie). Polski używa czy wiesz, chiński 吗. To standardowy sposób na wprowadzanie informacji - pytasz czy wiedzą, potem opowiadasz. 你知道吗 to klasyczny opener konwersacji. System jest prosty: stwierdzenie plus 吗 tworzy pytanie. 你听说过吗 (słyszałeś o - wprowadzanie tematu). 吗 to twój czy wiesz, słyszałeś. Otwiera drzwi do dzielenia się informacją."
+      },
+      {
+        "id": "pc_par15",
+        "question": "好冷___",
+        "translation": "(Jakże zimno - uczucie dyskomfortu)",
+        "options": [
+          "啊",
+          "吗",
+          "呢",
+          "吧"
+        ],
+        "correct": "啊",
+        "explanation": "啊 dla wyrażania fizycznych uczuć. 好冷啊 znaczy jakże zimno (czuję to). Polski wykrzyknik, chiński 啊. Ta partykuła intensyfikuje opisywanie wrażeń. 好累啊 (jakże zmęczony - wyczerpanie), 好饿啊 (głodny - potrzeba jedzenia). System 啊 czyni doznania bardziej realnymi i natychmiastymi. Nie tylko opisujesz stan, ale wyrażasz doświadczenie. 啊 to twój sposób na pokazywanie że coś czujesz intensywnie. Doznanie staje się komunikatem."
+      }
+    ]
+  }
+]

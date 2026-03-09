@@ -1,0 +1,1232 @@
+[
+  {
+    "key": "articles",
+    "name": "Articles (a/an/the)",
+    "description": "英語の冠詞",
+    "iconName": "doc.text",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "je_art1",
+        "question": "I have _____ book.",
+        "translation": "(私は本を持っています)",
+        "options": [
+          "a",
+          "an",
+          "the",
+          "no article"
+        ],
+        "correct": "a",
+        "explanation": "英語の冠詞の世界へようこそ。日本語には存在しないものです。子音の前では'a'を使います：'a book'。これは「一冊の本、何か特定されていない本」を意味します。日本語では「本を持っています」と言いますが、それが特定の本なのか、ただの本なのかを明示しません。英語では毎回、a/an（不定冠詞）または the（定冠詞）でこの区別をする必要があります。'a'は「一つの」に似ていますが、もっと広く使われます。"
+      },
+      {
+        "id": "je_art2",
+        "question": "I have _____ apple.",
+        "translation": "(私はりんごを持っています)",
+        "options": [
+          "an",
+          "a",
+          "the",
+          "no article"
+        ],
+        "correct": "an",
+        "explanation": "母音の前では'an'を使います：'an apple'。発音をスムーズにするために'a'が'an'に変わります。スペルではなく音に注目してください - 'an hour'（hは無音）、でも'a house'（hは発音される）。日本語にはこの概念がありませんが、英語では初めて言及する可算名詞にはこれが必要です。a/anの区別は純粋に音声的なもので、話し言葉の流れを自然にします。"
+      },
+      {
+        "id": "je_art3",
+        "question": "_____ book I bought is good.",
+        "translation": "(私が買った本は良いです)",
+        "options": [
+          "The",
+          "A",
+          "An",
+          "no article"
+        ],
+        "correct": "The",
+        "explanation": "'the'は両者が知っている特定のものに使います：'The book I bought'。これは確定的です - 特定の一冊の本について話しています。日本語では「その」や文脈で特定性を示しますが、英語では文法的に'the'が必要です。すでに言及したもの、または「私が買った本」のようにどれを指しているか明確な場合は'the'を使います。これは聞き手が特定できる項目を指していることを伝えます。"
+      },
+      {
+        "id": "je_art4",
+        "question": "I go to _____ school.",
+        "translation": "(私は学校に行きます)",
+        "options": [
+          "no article",
+          "a",
+          "an",
+          "the"
+        ],
+        "correct": "no article",
+        "explanation": "一部の表現では冠詞を使いません：'go to school'、'go to work'、'go to bed'。これらは建物ではなく活動を指します。「学校に行く」と言うとき、学校に通うという活動について話しています。英語では冠詞を省略することでこれを表現します。でも'I go to the school'と言えば、物理的な建物を意味します。この微妙な区別は多くの定型表現に現れます。"
+      },
+      {
+        "id": "je_art5",
+        "question": "_____ sun is bright.",
+        "translation": "(太陽が明るいです)",
+        "options": [
+          "The",
+          "A",
+          "An",
+          "no article"
+        ],
+        "correct": "The",
+        "explanation": "唯一のものには'the'を使います：'the sun'、'the moon'、'the earth'。太陽は（私たちの文脈では）一つしかないので、常に確定的です。日本語では「太陽」と言うだけで、唯一性が明白だからマーカーは不要です。英語では'the'で明示的に確定性を示します。これは唯一の地理的特徴、天体、有名なランドマークにも適用されます - すべて'the'を取ります。"
+      },
+      {
+        "id": "je_art6",
+        "question": "I like _____ music.",
+        "translation": "(私は音楽が好きです)",
+        "options": [
+          "no article",
+          "a",
+          "an",
+          "the"
+        ],
+        "correct": "no article",
+        "explanation": "抽象的な概念や一般的なカテゴリーには冠詞を使いません：'I like music'。一般的な音楽について話すとき、冠詞は不要です。でも'the music at the party was good'と言えば、特定の音楽について話しているので'the'を使います。日本語では文法的にこの区別をしませんが、英語では全ての音楽を意味するのか特定の音楽を意味するのかを考える必要があります。"
+      },
+      {
+        "id": "je_art7",
+        "question": "He is _____ teacher.",
+        "translation": "(彼は先生です)",
+        "options": [
+          "a",
+          "an",
+          "the",
+          "no article"
+        ],
+        "correct": "a",
+        "explanation": "単数名詞の職業には'a/an'が必要です：'He is a teacher'。日本語では「彼は先生です」とマーカーなしで言います。英語では'a'が必要です。なぜならteacherは可算名詞だからです。彼が教師というカテゴリーに属すると言っているのです。'a'がないと、英語話者には文が不完全に感じられます。これは不定冠詞の最も一般的な用法の一つです - 職業や役割を識別する時です。"
+      },
+      {
+        "id": "je_art8",
+        "question": "_____ water is important.",
+        "translation": "(水は重要です)",
+        "options": [
+          "no article",
+          "A",
+          "An",
+          "The"
+        ],
+        "correct": "no article",
+        "explanation": "一般的な不可算名詞には冠詞を使いません：'Water is important'。一般的な物質としての水について話すとき、冠詞は不要です。'the water in this bottle'と言えば、どの水かを特定しているので'the'を使います。日本語では「水」を一般的か特定かに関わらず同じように扱い、文脈に依存します。英語では冠詞を通じて文法的にこれを区別します。"
+      },
+      {
+        "id": "je_art9",
+        "question": "I saw _____ movie yesterday.",
+        "translation": "(私は昨日映画を見ました)",
+        "options": [
+          "a",
+          "an",
+          "the",
+          "no article"
+        ],
+        "correct": "a",
+        "explanation": "可算名詞の初出には'a/an'が必要です：'I saw a movie'。この映画を会話に導入しています。日本語では「映画を見ました」と確定か不確定かを示さずに言います。英語ではこの最初の導入に'a'が必要です。その後も話を続ける場合は'the movie was good'と言い、話し手と聞き手の両方がどの映画かを知っているので'the'に切り替えます。"
+      },
+      {
+        "id": "je_art10",
+        "question": "_____ movie was interesting.",
+        "translation": "(その映画は面白かったです)",
+        "options": [
+          "The",
+          "A",
+          "An",
+          "no article"
+        ],
+        "correct": "The",
+        "explanation": "二度目の言及には'the'を使います：'The movie was interesting'。'a'で導入した後、その後の言及では'the'に切り替えます。これは話し手と聞き手の両方がどの映画かを知っていることを示します。日本語では「その」や文脈を使います。英語の冠詞システムは、情報が新しい（a/an）か既知（the）かを明示的に追跡します。この情報の流れの標識は英語文法に組み込まれています。"
+      },
+      {
+        "id": "je_art11",
+        "question": "I play _____ piano.",
+        "translation": "(私はピアノを弾きます)",
+        "options": [
+          "the",
+          "a",
+          "an",
+          "no article"
+        ],
+        "correct": "the",
+        "explanation": "楽器には'the'を使います：'play the piano'。これは英語の固定パターンです。ピアノを所有していても、演奏について話すときは'a piano'ではなく'the piano'と言います。日本語では「ピアノを弾く」とマーカーなしで言います。英語の楽器に関する慣習は慣用的です - すべての楽器を演奏するときは'the'を取ります：the guitar、the violin、the drums。"
+      },
+      {
+        "id": "je_art12",
+        "question": "_____ dogs are animals.",
+        "translation": "(犬は動物です)",
+        "options": [
+          "no article",
+          "The",
+          "A",
+          "An"
+        ],
+        "correct": "no article",
+        "explanation": "一般的な複数名詞には冠詞を使いません：'Dogs are animals'。すべての犬について述べるとき、複数形で冠詞なしを使います。'the dogs'と言えば、特定の犬について話していることになります。これは英語がカテゴリーのすべてのメンバーと特定のメンバーの違いを示す一つの方法です。日本語では文脈や「犬たち」のような言葉を使いますが、文法的にこの区別を要求しません。"
+      },
+      {
+        "id": "je_art13",
+        "question": "I need _____ new computer.",
+        "translation": "(私は新しいコンピュータが必要です)",
+        "options": [
+          "a",
+          "an",
+          "the",
+          "no article"
+        ],
+        "correct": "a",
+        "explanation": "単数可算名詞には'a/an'が必要です：'I need a new computer'。まだ特定のコンピュータについて話していません、何か新しいコンピュータならいいのです。日本語では「新しいコンピュータが必要です」と確定性を示さずに言います。英語ではこの不確定な参照に'a'を使う必要があります。一つ選んだら、'I'll buy the new computer'（選んだ特定のもの）と言います。"
+      },
+      {
+        "id": "je_art14",
+        "question": "_____ English is difficult.",
+        "translation": "(英語は難しいです)",
+        "options": [
+          "no article",
+          "The",
+          "A",
+          "An"
+        ],
+        "correct": "no article",
+        "explanation": "言語には冠詞を使いません：'English is difficult'。言語全体について話すとき、冠詞は不要です。これは固定ルールです - すべての言語名は単独で使います。ただし、'the English language'と言う場合は、'language'が冠詞を必要とする名詞なので'the'を使います。これらの固定パターンを理解することで、冠詞が必要か任意か禁止かを知ることができます。"
+      },
+      {
+        "id": "je_art15",
+        "question": "I went to _____ hospital.",
+        "translation": "(私は病院に行きました)",
+        "options": [
+          "the",
+          "a",
+          "an",
+          "no article"
+        ],
+        "correct": "the",
+        "explanation": "アメリカ英語では通常、特定の場所に'the hospital'と言います：'I went to the hospital'。これは特定の病院、おそらく近くの病院またはみんなが知っている病院を意味します。イギリス英語では活動を指すときに'to hospital'（冠詞なし）と言うことがあります。日本語では「病院に行った」とこれを示しません。英語では通常、公共の場所にはその地域の特定のものを意味する場合'the'が必要です。"
+      }
+    ]
+  },
+  {
+    "key": "subject_pronouns",
+    "name": "Subject Pronouns",
+    "description": "主語の代名詞",
+    "iconName": "person",
+    "color": "#c084fc",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "je_subj1",
+        "question": "_____ am a student.",
+        "translation": "(私は学生です)",
+        "options": [
+          "I",
+          "Me",
+          "My",
+          "Mine"
+        ],
+        "correct": "I",
+        "explanation": "英語では主語代名詞を明示的に要求します：'I am a student'。日本語では「私は」を省略できることがありますが、英語では常に主語が必要です。'I'は主語形です - 動作を行う、または説明される側です。'me'を主語として使わないでください（よくある間違い）。主語は英語のすべての節に現れなければなりません。これは文を日本語よりも明示的にします。日本語では文脈から代名詞の必要性がなくなることがよくあります。"
+      },
+      {
+        "id": "je_subj2",
+        "question": "_____ is my friend.",
+        "translation": "(彼は私の友達です)",
+        "options": [
+          "He",
+          "Him",
+          "His",
+          "He's"
+        ],
+        "correct": "He",
+        "explanation": "男性の主語形：'He is my friend'。日本語では文脈から「彼は」を省略できますが、英語では常に主語が必要です。'He'は動作を行うか、存在の動作を受けます。'him'は目的格（I see him）と混同しないでください。英語は主語形と目的語形を厳密に区別し、文法的機能に基づいて正しく選択する必要があります。日本語では同じ言葉が両方の機能を果たし、助詞が役割を示します。"
+      },
+      {
+        "id": "je_subj3",
+        "question": "_____ are happy.",
+        "translation": "(私たちは幸せです)",
+        "options": [
+          "We",
+          "Us",
+          "Our",
+          "Ours"
+        ],
+        "correct": "We",
+        "explanation": "一人称複数の主語：'We are happy'。日本語では会話で「私たち」を省略できますが、英語では'we'が必要です。これは主語形です - 'us'は目的格です。英語はすべての代名詞で明確な主語-目的語の区別を維持します。英語がすべての文に明示的な主語を必要とすることを理解すると、それらを省略するという一般的な誤りを避けることができます。これは日本語話者には自然に感じられますが、英語では文法的に間違っています。"
+      },
+      {
+        "id": "je_subj4",
+        "question": "_____ is reading.",
+        "translation": "(彼女は読んでいます)",
+        "options": [
+          "She",
+          "Her",
+          "Hers",
+          "She's"
+        ],
+        "correct": "She",
+        "explanation": "女性の主語形：'She is reading'。日本語では文脈から「彼女は」を省略できますが、英語では常に必要です。'She'が読んでいるので、主語です。目的格は'her'（I see her）です。英語の性別代名詞は日本語とは異なります。日本語では「彼/彼女」はあまり一般的に使われず、文脈で十分なことが多いです。英語では代名詞で明示的な性別の標識を要求し、人への言及ごとにこの選択が必要になります。"
+      },
+      {
+        "id": "je_subj5",
+        "question": "_____ is on the table.",
+        "translation": "(それはテーブルの上にあります)",
+        "options": [
+          "It",
+          "Its",
+          "It's",
+          "They"
+        ],
+        "correct": "It",
+        "explanation": "物の主語形：'It is on the table'。日本語では主語なしで「あります」と言えますが、英語では'it'が必要です。この代名詞は物、動物、概念に使えます。'it'（代名詞）と'it's'（it is）や'its'（所有格）を混同しないでください。英語は物について話すときでも主語を必要とします。日本語では主題を文脈から理解できるのとは異なります。この明示的な参照は英語の文構造の基本です。"
+      },
+      {
+        "id": "je_subj6",
+        "question": "_____ are students.",
+        "translation": "(彼らは学生です)",
+        "options": [
+          "They",
+          "Them",
+          "Their",
+          "Theirs"
+        ],
+        "correct": "They",
+        "explanation": "三人称複数の主語：'They are students'。日本語では「彼らは」を省略できますが、英語では'they'が必要です。これは人でも物でも複数形で使えます。目的格は'them'（I see them）です。英語は複数の三人称参照で文法的に男性/女性/混合グループを区別しません - 'they'がすべての複数三人称参照をカバーし、代名詞使用のこの側面を簡素化します。"
+      },
+      {
+        "id": "je_subj7",
+        "question": "_____ am going home.",
+        "translation": "(私は家に帰っています)",
+        "options": [
+          "I",
+          "Me",
+          "My",
+          "Mine"
+        ],
+        "correct": "I",
+        "explanation": "動作を行う主語：'I am going home'。進行形でも、主語形は'I'のままです。日本語では明白な「私は」を省略できますが、英語ではできません。主語代名詞はすべての動詞の前に現れなければなりません。この明示的な主語の要求は日本語との最大の違いの一つです。最初は冗長に感じられるかもしれませんが、誰が動作を行っているかについての曖昧さを防ぎます。特に複雑な文では重要です。"
+      },
+      {
+        "id": "je_subj8",
+        "question": "_____ likes sushi.",
+        "translation": "(彼は寿司が好きです)",
+        "options": [
+          "He",
+          "Him",
+          "His",
+          "He's"
+        ],
+        "correct": "He",
+        "explanation": "動詞を伴う主語：'He likes sushi'。動詞が三人称単数で-sを追加することに注意してください。日本語の「彼は好き」は動詞形を変えません。英語では正しい主語代名詞と動詞の一致の両方が必要です。'He'は主語で、'likes'がそれに一致します。この二重の要求 - 正しい代名詞形と一致する動詞 - は正しい英語に不可欠です。動詞形が主語を確認し、文法的な結束を生み出します。"
+      },
+      {
+        "id": "je_subj9",
+        "question": "_____ and I are friends.",
+        "translation": "(彼と私は友達です)",
+        "options": [
+          "He",
+          "Him",
+          "His",
+          "He's"
+        ],
+        "correct": "He",
+        "explanation": "複合主語は主語形を使います：'He and I are friends'。'I'と組み合わせても、主語形を使います。よくある誤りは'him and I'や'me and him'です。ルール：複合主語を'we'に置き換えられる場合は、主語形を使います。日本語では「と」で単純に接続しますが、英語では主語形を維持する必要があります。これはすべての複合主語に適用されます - 常にI/he/she/we/theyを使い、主語の位置ではme/him/her/us/themを決して使いません。"
+      },
+      {
+        "id": "je_subj10",
+        "question": "_____ want pizza.",
+        "translation": "(私はピザが欲しいです)",
+        "options": [
+          "I",
+          "Me",
+          "My",
+          "Mine"
+        ],
+        "correct": "I",
+        "explanation": "欲求動詞を伴う主語：'I want pizza'。英語の'want'は主語を必要とする通常の動詞です。日本語の「欲しい」は形容詞で、異なる構造を作ります。英語は欲求、必要、好みを通常の動詞として扱い、すべて主語代名詞を必要とします。この文法的な違いは、日本語では文脈から「私は」が明白な場合でも省略できるのに対し、望みを表現するときに'I'を明示的に含めなければならないことを意味します。"
+      },
+      {
+        "id": "je_subj11",
+        "question": "_____ was tired.",
+        "translation": "(私は疲れていました)",
+        "options": [
+          "I",
+          "Me",
+          "My",
+          "Mine"
+        ],
+        "correct": "I",
+        "explanation": "過去形を伴う主語：'I was tired'。主語代名詞は英語で時制によって変わりません。日本語の「私は」も同じままですが、省略される可能性があります。英語では省略できません。主語代名詞は過去、現在、未来のすべての時制で一定です。この一貫性は、主語-目的語の区別を理解すれば代名詞の使用を簡素化します。時制のために動詞は変わりますが、代名詞はその主語形または目的語形で安定しています。"
+      },
+      {
+        "id": "je_subj12",
+        "question": "_____ can swim.",
+        "translation": "(彼女は泳げます)",
+        "options": [
+          "She",
+          "Her",
+          "Hers",
+          "She's"
+        ],
+        "correct": "She",
+        "explanation": "法助動詞を伴う主語：'She can swim'。法助動詞（can、will、should、must）でも主語が必要です。日本語の「彼女は泳げる」は主語を省略できますが、英語では必要です。法助動詞は活用しませんが、明示的な主語が必要です。このパターンはすべての助動詞と法助動詞に当てはまります - 英語のすべての動詞句には主語が必要で、言語をすべての動作に誰または何が関与しているかについて非常に明示的にします。"
+      },
+      {
+        "id": "je_subj13",
+        "question": "_____ were late.",
+        "translation": "(私たちは遅れました)",
+        "options": [
+          "We",
+          "Us",
+          "Our",
+          "Ours"
+        ],
+        "correct": "We",
+        "explanation": "過去形を伴う複数主語：'We were late'。英語は時制を超えて主語形を維持します。日本語の「私たちは遅れた」は文脈から暗示される可能性がありますが、英語には明示的な'we'が必要です。動詞'were'は'be'の複数過去形で、'we'と一致します。英語は一貫して主語-動詞の一致を要求します - 複数主語は複数動詞を取り、単数主語は単数動詞を取ります。この文法的な一致は日本語よりも厳格です。"
+      },
+      {
+        "id": "je_subj14",
+        "question": "_____ will study.",
+        "translation": "(彼は勉強するでしょう)",
+        "options": [
+          "He",
+          "Him",
+          "His",
+          "He's"
+        ],
+        "correct": "He",
+        "explanation": "未来形を伴う主語：'He will study'。未来形でも主語代名詞が必要です。日本語の「彼は勉強する」は主語を省略できますが、英語ではできません。'Will'は未来を示す法助動詞ですが、主語として'he'が必要です。英語のすべての動詞は、時制や法性に関係なく、明示的な主語を必要とします。これは英語をより冗長にしますが、動作実行者と行為者についても明示的にします。"
+      },
+      {
+        "id": "je_subj15",
+        "question": "_____ don't know.",
+        "translation": "(私は知りません)",
+        "options": [
+          "I",
+          "Me",
+          "My",
+          "Mine"
+        ],
+        "correct": "I",
+        "explanation": "否定形を伴う主語：'I don't know'。否定形でも主語形を使います。日本語の「私は知らない」は主語を省略できますが、英語には'I'が必要です。語順は：主語 + 助動詞（don't）+ 動詞（know）。英語の否定構造は常に主語-助動詞-動詞の順序を維持し、主語代名詞は構造に不可欠です。この三部構成は英語の基本で、質問と否定形に言語全体で現れます。"
+      }
+    ]
+  },
+  {
+    "key": "present_simple",
+    "name": "Present Simple",
+    "description": "現在形の基本",
+    "iconName": "clock",
+    "color": "#60a5fa",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_pres1",
+        "question": "I ___ to school.",
+        "translation": "(私は学校に行きます)",
+        "options": [
+          "go",
+          "goes",
+          "going",
+          "went"
+        ],
+        "correct": "go",
+        "explanation": "英語の現在形は日本語より単純です。主語がI/you/we/theyの時、動詞は原形のままです。「私は学校に行きます」はI goです。日本語の「行きます」は丁寧形ですが、英語では丁寧さは動詞の形では表しません。この基本パターンを理解すれば、多くの文が作れるようになります。毎日の習慣や一般的な事実を表現する時に使います。"
+      },
+      {
+        "id": "je_pres2",
+        "question": "She ___ English.",
+        "translation": "(彼女は英語を話します)",
+        "options": [
+          "speaks",
+          "speak",
+          "speaking",
+          "spoke"
+        ],
+        "correct": "speaks",
+        "explanation": "主語がhe/she/itの時、動詞に-sを付けます。「彼女は英語を話します」はShe speaksです。日本語では主語によって動詞は変わりませんが、英語では三人称単数だけ特別です。この-sは大切なルールで、忘れやすいですが、慣れれば自然になります。言語は人と人をつなぐ素晴らしい道具です。"
+      },
+      {
+        "id": "je_pres3",
+        "question": "They ___ books.",
+        "translation": "(彼らは本を読みます)",
+        "options": [
+          "read",
+          "reads",
+          "reading",
+          "readed"
+        ],
+        "correct": "read",
+        "explanation": "Theyは複数なので、動詞は原形のままです。「彼らは本を読みます」はThey readです。readという単語は現在形も過去形も同じスペルですが、発音が違います。本を読むことは知識を広げ、想像力を育てます。英語の規則的なパターンを覚えれば、多くの文が簡単に作れます。"
+      },
+      {
+        "id": "je_pres4",
+        "question": "He ___ coffee.",
+        "translation": "(彼はコーヒーを飲みます)",
+        "options": [
+          "drinks",
+          "drink",
+          "drinking",
+          "drank"
+        ],
+        "correct": "drinks",
+        "explanation": "Heは三人称単数なので、drinkにsを付けてdrinksになります。「彼はコーヒーを飲みます」はHe drinksです。コーヒーは世界中で愛される飲み物です。この-sの規則は英語の基本中の基本です。最初は意識的に付ける必要がありますが、練習すれば自動的になります。"
+      },
+      {
+        "id": "je_pres5",
+        "question": "We ___ music.",
+        "translation": "(私たちは音楽を聴きます)",
+        "options": [
+          "listen to",
+          "listens to",
+          "listening to",
+          "listened to"
+        ],
+        "correct": "listen to",
+        "explanation": "Weは複数なので動詞は原形です。「私たちは音楽を聴きます」はWe listen toです。英語では「聴く」はlisten toと言い、toが必要です。音楽は言葉を超えて心に響きます。このような句動詞（動詞＋前置詞）は英語によく出てきて、セットで覚えると便利です。"
+      },
+      {
+        "id": "je_pres6",
+        "question": "My sister ___ early.",
+        "translation": "(私の姉は早く起きます)",
+        "options": [
+          "gets up",
+          "get up",
+          "getting up",
+          "got up"
+        ],
+        "correct": "gets up",
+        "explanation": "My sisterは三人称単数なので、getにsを付けます。「私の姉は早く起きます」はMy sister gets upです。Get upは「起きる」という意味の句動詞です。早起きは一日を有効に使える良い習慣です。英語では多くの日常動作を句動詞で表現します。"
+      },
+      {
+        "id": "je_pres7",
+        "question": "I ___ Japanese food.",
+        "translation": "(私は和食が好きです)",
+        "options": [
+          "like",
+          "likes",
+          "liking",
+          "liked"
+        ],
+        "correct": "like",
+        "explanation": "主語がIなので、動詞は原形のlikeです。「私は和食が好きです」はI likeです。日本語の「好きです」は形容詞的ですが、英語のlikeは動詞です。この違いを理解することは大切です。好みを表現することは、自分を知ってもらう第一歩です。"
+      },
+      {
+        "id": "je_pres8",
+        "question": "The sun ___ in the east.",
+        "translation": "(太陽は東から昇ります)",
+        "options": [
+          "rises",
+          "rise",
+          "rising",
+          "rose"
+        ],
+        "correct": "rises",
+        "explanation": "The sunは三人称単数なので、riseにsを付けます。「太陽は東から昇ります」はThe sun risesです。これは一般的な真理を表す現在形の使い方です。自然の法則や普遍的な事実を述べる時、現在形を使います。太陽の動きは古代から人々を魅了してきました。"
+      },
+      {
+        "id": "je_pres9",
+        "question": "You ___ very well.",
+        "translation": "(あなたは上手に歌います)",
+        "options": [
+          "sing",
+          "sings",
+          "singing",
+          "sang"
+        ],
+        "correct": "sing",
+        "explanation": "Youの時は、単数でも複数でも動詞は原形です。「あなたは上手に歌います」はYou singです。日本語では「あなた」と「あなたたち」を区別しますが、英語のyouは両方に使えます。歌うことは感情を表現する美しい方法です。"
+      },
+      {
+        "id": "je_pres10",
+        "question": "Children ___ in the park.",
+        "translation": "(子供たちは公園で遊びます)",
+        "options": [
+          "play",
+          "plays",
+          "playing",
+          "played"
+        ],
+        "correct": "play",
+        "explanation": "Childrenは複数形なので、動詞は原形のplayです。「子供たちは公園で遊びます」はChildren playです。遊びは子供の成長に大切です。公園は子供たちが自由に走り回れる貴重な場所です。複数形の主語を見分けることが、正しい動詞の形を選ぶ鍵です。"
+      },
+      {
+        "id": "je_pres11",
+        "question": "My father ___ a car.",
+        "translation": "(私の父は車を運転します)",
+        "options": [
+          "drives",
+          "drive",
+          "driving",
+          "drove"
+        ],
+        "correct": "drives",
+        "explanation": "My fatherは三人称単数なので、driveにsを付けます。「私の父は車を運転します」はMy father drivesです。運転は便利な技能ですが、安全が何より大切です。家族の日常を英語で表現できるようになると、会話の幅が広がります。"
+      },
+      {
+        "id": "je_pres12",
+        "question": "We ___ in Tokyo.",
+        "translation": "(私たちは東京に住んでいます)",
+        "options": [
+          "live",
+          "lives",
+          "living",
+          "lived"
+        ],
+        "correct": "live",
+        "explanation": "Weは複数なので、動詞は原形のliveです。「私たちは東京に住んでいます」はWe liveです。住む場所は私たちのアイデンティティの一部です。東京は伝統と現代が共存する魅力的な都市です。現在形で継続的な状態を表現できます。"
+      },
+      {
+        "id": "je_pres13",
+        "question": "He ___ his homework.",
+        "translation": "(彼は宿題をします)",
+        "options": [
+          "does",
+          "do",
+          "doing",
+          "did"
+        ],
+        "correct": "does",
+        "explanation": "Heは三人称単数なので、doがdoesに変わります。「彼は宿題をします」はHe doesです。Doは不規則に変化する動詞で、doesという形になります。宿題は学んだことを定着させる大切な練習です。不規則動詞は少しずつ覚えていきましょう。"
+      },
+      {
+        "id": "je_pres14",
+        "question": "I ___ tea every morning.",
+        "translation": "(私は毎朝お茶を飲みます)",
+        "options": [
+          "drink",
+          "drinks",
+          "drinking",
+          "drank"
+        ],
+        "correct": "drink",
+        "explanation": "主語がIなので、動詞は原形のdrinkです。「私は毎朝お茶を飲みます」はI drinkです。Every morningのような時間表現は、習慣を表す現在形とよく使われます。朝のお茶は一日を静かに始める良い習慣です。"
+      },
+      {
+        "id": "je_pres15",
+        "question": "The store ___ at 9 AM.",
+        "translation": "(その店は午前9時に開きます)",
+        "options": [
+          "opens",
+          "open",
+          "opening",
+          "opened"
+        ],
+        "correct": "opens",
+        "explanation": "The storeは三人称単数なので、openにsを付けます。「その店は午前9時に開きます」はThe store opensです。営業時間のような決まったスケジュールも現在形で表現します。規則的な予定を述べる時、現在形が自然です。"
+      }
+    ]
+  },
+  {
+    "key": "past_simple",
+    "name": "Past Simple",
+    "description": "過去形の基本",
+    "iconName": "arrow.clockwise",
+    "color": "#c084fc",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_past1",
+        "question": "I ___ to school yesterday.",
+        "translation": "(私は昨日学校に行きました)",
+        "options": [
+          "went",
+          "go",
+          "goes",
+          "going"
+        ],
+        "correct": "went",
+        "explanation": "過去形では、主語に関わらず動詞の過去形を使います。「私は昨日学校に行きました」はI wentです。Goの過去形はwentという不規則な形です。日本語の「行きました」に対応します。過去の出来事を伝えることで、経験を共有できます。"
+      },
+      {
+        "id": "je_past2",
+        "question": "She ___ a book last night.",
+        "translation": "(彼女は昨夜本を読みました)",
+        "options": [
+          "read",
+          "reads",
+          "reading",
+          "readed"
+        ],
+        "correct": "read",
+        "explanation": "Readの過去形もreadですが、発音が違います（レッド）。「彼女は昨夜本を読みました」はShe readです。Last nightは過去を示す表現です。読書は心を豊かにし、知識を広げます。この不規則な変化に慣れることが大切です。"
+      },
+      {
+        "id": "je_past3",
+        "question": "They ___ soccer.",
+        "translation": "(彼らはサッカーをしました)",
+        "options": [
+          "played",
+          "play",
+          "plays",
+          "playing"
+        ],
+        "correct": "played",
+        "explanation": "Playは規則動詞なので、過去形は-edを付けてplayedになります。「彼らはサッカーをしました」はThey playedです。スポーツは健康と友情を育みます。規則動詞の過去形は-edを付けるだけなので、覚えやすいです。"
+      },
+      {
+        "id": "je_past4",
+        "question": "He ___ coffee this morning.",
+        "translation": "(彼は今朝コーヒーを飲みました)",
+        "options": [
+          "drank",
+          "drink",
+          "drinks",
+          "drinking"
+        ],
+        "correct": "drank",
+        "explanation": "Drinkの過去形はdrankです。「彼は今朝コーヒーを飲みました」はHe drankです。This morningは今日の朝のことなので、過去形を使います。朝のコーヒーは一日を始める儀式のようなものです。不規則動詞は少しずつ覚えていきましょう。"
+      },
+      {
+        "id": "je_past5",
+        "question": "We ___ to music.",
+        "translation": "(私たちは音楽を聴きました)",
+        "options": [
+          "listened",
+          "listen",
+          "listens",
+          "listening"
+        ],
+        "correct": "listened",
+        "explanation": "Listenは規則動詞なので、過去形は-edを付けてlistenedです。「私たちは音楽を聴きました」はWe listenedです。音楽を聴いた経験を過去形で表現できます。音楽は時間を超えて心に残ります。"
+      },
+      {
+        "id": "je_past6",
+        "question": "My sister ___ up early.",
+        "translation": "(私の姉は早く起きました)",
+        "options": [
+          "got",
+          "get",
+          "gets",
+          "getting"
+        ],
+        "correct": "got",
+        "explanation": "Getの過去形はgotです。「私の姉は早く起きました」はMy sister gotです。Get upは「起きる」という句動詞です。早起きした日の朝は、静かで清々しい時間です。過去の行動を述べることで、その日のことを思い出せます。"
+      },
+      {
+        "id": "je_past7",
+        "question": "I ___ Japanese food.",
+        "translation": "(私は和食を食べました)",
+        "options": [
+          "ate",
+          "eat",
+          "eats",
+          "eating"
+        ],
+        "correct": "ate",
+        "explanation": "Eatの過去形はateです。「私は和食を食べました」はI ateです。食事の経験は大切な思い出になります。和食は健康的で美しい料理です。不規則動詞の過去形は、使いながら覚えていくのが効果的です。"
+      },
+      {
+        "id": "je_past8",
+        "question": "The sun ___ at 6 AM.",
+        "translation": "(太陽は午前6時に昇りました)",
+        "options": [
+          "rose",
+          "rise",
+          "rises",
+          "rising"
+        ],
+        "correct": "rose",
+        "explanation": "Riseの過去形はroseです。「太陽は午前6時に昇りました」はThe sun roseです。日の出は新しい一日の始まりを告げます。自然現象の過去の記録も過去形で表現します。美しい朝日は心を清めてくれます。"
+      },
+      {
+        "id": "je_past9",
+        "question": "You ___ very well.",
+        "translation": "(あなたは上手に歌いました)",
+        "options": [
+          "sang",
+          "sing",
+          "sings",
+          "singing"
+        ],
+        "correct": "sang",
+        "explanation": "Singの過去形はsangです。「あなたは上手に歌いました」はYou sangです。過去の出来事を褒める時にも過去形を使います。歌声は人の心に残る美しいものです。過去形で感想を伝えることができます。"
+      },
+      {
+        "id": "je_past10",
+        "question": "Children ___ in the park.",
+        "translation": "(子供たちは公園で遊びました)",
+        "options": [
+          "played",
+          "play",
+          "plays",
+          "playing"
+        ],
+        "correct": "played",
+        "explanation": "Playの過去形はplayedです。「子供たちは公園で遊びました」はChildren playedです。子供の頃の遊びの思い出は一生の宝物です。過去の楽しかった時間を振り返ることは心を温めます。"
+      },
+      {
+        "id": "je_past11",
+        "question": "My father ___ a car.",
+        "translation": "(私の父は車を運転しました)",
+        "options": [
+          "drove",
+          "drive",
+          "drives",
+          "driving"
+        ],
+        "correct": "drove",
+        "explanation": "Driveの過去形はdroveです。「私の父は車を運転しました」はMy father droveです。家族との車での思い出は特別です。過去の出来事を語ることで、家族の絆を感じられます。"
+      },
+      {
+        "id": "je_past12",
+        "question": "We ___ in Tokyo.",
+        "translation": "(私たちは東京に住んでいました)",
+        "options": [
+          "lived",
+          "live",
+          "lives",
+          "living"
+        ],
+        "correct": "lived",
+        "explanation": "Liveの過去形はlivedです。「私たちは東京に住んでいました」はWe livedです。過去に住んでいた場所には特別な思い出があります。場所との思い出は心の中に残ります。過去形で以前の生活を語れます。"
+      },
+      {
+        "id": "je_past13",
+        "question": "He ___ his homework.",
+        "translation": "(彼は宿題をしました)",
+        "options": [
+          "did",
+          "do",
+          "does",
+          "doing"
+        ],
+        "correct": "did",
+        "explanation": "Doの過去形はdidです。「彼は宿題をしました」はHe didです。宿題を終えた時の達成感は良いものです。過去に完了したことを報告する時、過去形を使います。"
+      },
+      {
+        "id": "je_past14",
+        "question": "I ___ tea this morning.",
+        "translation": "(私は今朝お茶を飲みました)",
+        "options": [
+          "drank",
+          "drink",
+          "drinks",
+          "drinking"
+        ],
+        "correct": "drank",
+        "explanation": "Drinkの過去形はdrankです。「私は今朝お茶を飲みました」はI drankです。朝のお茶の時間は心を落ち着けます。今日の朝の出来事は過去形で表現します。"
+      },
+      {
+        "id": "je_past15",
+        "question": "The store ___ at 9 AM.",
+        "translation": "(その店は午前9時に開きました)",
+        "options": [
+          "opened",
+          "open",
+          "opens",
+          "opening"
+        ],
+        "correct": "opened",
+        "explanation": "Openの過去形はopenedです。「その店は午前9時に開きました」はThe store openedです。過去の特定の時間に起こったことを述べる時、過去形を使います。規則動詞の過去形は-edを付けるだけです。"
+      }
+    ]
+  },
+  {
+    "key": "future_tense",
+    "name": "Future with 'will'",
+    "description": "未来形（willの使い方）",
+    "iconName": "bolt",
+    "color": "#facc15",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_fut1",
+        "question": "I ___ go to school.",
+        "translation": "(私は学校に行くでしょう)",
+        "options": [
+          "will",
+          "would",
+          "shall",
+          "should"
+        ],
+        "correct": "will",
+        "explanation": "英語の未来形は簡単です。willを動詞の前に置くだけです。「私は学校に行くでしょう」はI will goです。日本語では「でしょう」「つもりです」などで未来を表しますが、英語ではwillが便利です。willの後の動詞は必ず原形です。未来の予定や意志を表現できます。"
+      },
+      {
+        "id": "je_fut2",
+        "question": "She ___ study English.",
+        "translation": "(彼女は英語を勉強するでしょう)",
+        "options": [
+          "will",
+          "would",
+          "shall",
+          "should"
+        ],
+        "correct": "will",
+        "explanation": "主語に関わらず、willは同じ形です。「彼女は英語を勉強するでしょう」はShe will studyです。現在形のように三人称単数でsを付ける必要はありません。これが未来形の便利なところです。学習の継続は成長につながります。"
+      },
+      {
+        "id": "je_fut3",
+        "question": "They ___ come tomorrow.",
+        "translation": "(彼らは明日来るでしょう)",
+        "options": [
+          "will",
+          "would",
+          "shall",
+          "should"
+        ],
+        "correct": "will",
+        "explanation": "Tomorrowは未来を示す言葉です。「彼らは明日来るでしょう」はThey will comeです。時間を表す言葉と一緒に未来形を使います。明日への期待は心を前向きにします。willは確実性の高い未来を表現します。"
+      },
+      {
+        "id": "je_fut4",
+        "question": "He ___ help you.",
+        "translation": "(彼はあなたを助けるでしょう)",
+        "options": [
+          "will",
+          "would",
+          "shall",
+          "should"
+        ],
+        "correct": "will",
+        "explanation": "「彼はあなたを助けるでしょう」はHe will helpです。Willは約束や申し出にも使えます。助け合いは人間関係の基本です。未来の行動を約束する時、willは力強い表現になります。"
+      },
+      {
+        "id": "je_fut5",
+        "question": "We ___ visit Japan.",
+        "translation": "(私たちは日本を訪れるでしょう)",
+        "options": [
+          "will",
+          "would",
+          "shall",
+          "should"
+        ],
+        "correct": "will",
+        "explanation": "「私たちは日本を訪れるでしょう」はWe will visitです。旅行の計画を立てる時、未来形を使います。日本は四季折々の美しさを持つ国です。将来の楽しみを語ることは心を豊かにします。"
+      },
+      {
+        "id": "je_fut6",
+        "question": "It ___ rain tonight.",
+        "translation": "(今夜は雨が降るでしょう)",
+        "options": [
+          "will",
+          "would",
+          "shall",
+          "should"
+        ],
+        "correct": "will",
+        "explanation": "天気予報でもwillを使います。「今夜は雨が降るでしょう」はIt will rainです。予測を述べる時、willは自然な選択です。雨は植物に命を与え、大地を潤します。"
+      },
+      {
+        "id": "je_fut7",
+        "question": "You ___ like this movie.",
+        "translation": "(あなたはこの映画が気に入るでしょう)",
+        "options": [
+          "will",
+          "would",
+          "shall",
+          "should"
+        ],
+        "correct": "will",
+        "explanation": "「あなたはこの映画が気に入るでしょう」はYou will likeです。予想や推測にもwillを使えます。映画は物語を通じて私たちの心を動かします。相手が何かを楽しむだろうと予測する優しい表現です。"
+      },
+      {
+        "id": "je_fut8",
+        "question": "The sun ___ rise at 6 AM.",
+        "translation": "(太陽は午前6時に昇るでしょう)",
+        "options": [
+          "will",
+          "would",
+          "shall",
+          "should"
+        ],
+        "correct": "will",
+        "explanation": "規則的な未来の出来事もwillで表現します。「太陽は午前6時に昇るでしょう」はThe sun will riseです。自然の法則は変わらない確実性を持っています。毎日の日の出は新しい始まりを告げます。"
+      },
+      {
+        "id": "je_fut9",
+        "question": "I ___ call you later.",
+        "translation": "(後であなたに電話します)",
+        "options": [
+          "will",
+          "would",
+          "shall",
+          "should"
+        ],
+        "correct": "will",
+        "explanation": "約束や意志を表す時にwillを使います。「後であなたに電話します」はI will callです。Laterは「後で」という意味です。連絡を取り合うことは関係を維持する大切な方法です。"
+      },
+      {
+        "id": "je_fut10",
+        "question": "They ___ be happy.",
+        "translation": "(彼らは幸せになるでしょう)",
+        "options": [
+          "will",
+          "would",
+          "shall",
+          "should"
+        ],
+        "correct": "will",
+        "explanation": "Be動詞の未来形もwillを使います。「彼らは幸せになるでしょう」はThey will beです。幸せを願う気持ちは普遍的です。未来への希望を込めた表現ができます。"
+      },
+      {
+        "id": "je_fut11",
+        "question": "She ___ arrive soon.",
+        "translation": "(彼女はまもなく到着するでしょう)",
+        "options": [
+          "will",
+          "would",
+          "shall",
+          "should"
+        ],
+        "correct": "will",
+        "explanation": "Soonは「まもなく」という意味です。「彼女はまもなく到着するでしょう」はShe will arriveです。近い未来の出来事を述べる時もwillを使います。誰かの到着を待つ時間には期待感があります。"
+      },
+      {
+        "id": "je_fut12",
+        "question": "We ___ remember this day.",
+        "translation": "(私たちはこの日を覚えているでしょう)",
+        "options": [
+          "will",
+          "would",
+          "shall",
+          "should"
+        ],
+        "correct": "will",
+        "explanation": "「私たちはこの日を覚えているでしょう」はWe will rememberです。特別な日の記憶は一生残ります。未来にわたって続く状態もwillで表現できます。"
+      },
+      {
+        "id": "je_fut13",
+        "question": "He ___ finish his work.",
+        "translation": "(彼は仕事を終えるでしょう)",
+        "options": [
+          "will",
+          "would",
+          "shall",
+          "should"
+        ],
+        "correct": "will",
+        "explanation": "「彼は仕事を終えるでしょう」はHe will finishです。仕事を完了する意志や予定を表します。達成感は努力の報酬です。未来の完了を見据えることは目標設定に役立ちます。"
+      },
+      {
+        "id": "je_fut14",
+        "question": "I ___ be there at 5 PM.",
+        "translation": "(私は午後5時にそこにいるでしょう)",
+        "options": [
+          "will",
+          "would",
+          "shall",
+          "should"
+        ],
+        "correct": "will",
+        "explanation": "特定の時刻での予定もwillで表現します。「私は午後5時にそこにいるでしょう」はI will beです。時間を守ることは信頼関係の基本です。明確な約束は相手を安心させます。"
+      },
+      {
+        "id": "je_fut15",
+        "question": "The store ___ open tomorrow.",
+        "translation": "(その店は明日開くでしょう)",
+        "options": [
+          "will",
+          "would",
+          "shall",
+          "should"
+        ],
+        "correct": "will",
+        "explanation": "営業予定もwillで表します。「その店は明日開くでしょう」はThe store will openです。予定されたスケジュールを伝える時、willは明確です。明日への準備は今日から始まります。"
+      }
+    ]
+  },
+  {
+    "key": "modal_verbs",
+    "name": "Modal Verbs (can, should, must)",
+    "description": "助動詞の使い方",
+    "iconName": "shield",
+    "color": "#4ade80",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_mod1",
+        "question": "I ___ swim.",
+        "translation": "(私は泳げます)",
+        "options": [
+          "can",
+          "should",
+          "must",
+          "would"
+        ],
+        "correct": "can",
+        "explanation": "Canは「できる」という能力を表します。「私は泳げます」はI canです。Canの後は必ず動詞の原形です。泳ぎは楽しく、健康的な活動です。能力を表現することは、自分の強みを知らせる方法です。"
+      },
+      {
+        "id": "je_mod2",
+        "question": "You ___ study hard.",
+        "translation": "(あなたは一生懸命勉強すべきです)",
+        "options": [
+          "should",
+          "can",
+          "must",
+          "would"
+        ],
+        "correct": "should",
+        "explanation": "Shouldは「すべき」というアドバイスや提案を表します。「あなたは一生懸命勉強すべきです」はYou shouldです。強制ではなく、優しい助言のニュアンスがあります。学習は自己成長の道です。"
+      },
+      {
+        "id": "je_mod3",
+        "question": "We ___ be quiet in the library.",
+        "translation": "(私たちは図書館では静かにしなければなりません)",
+        "options": [
+          "must",
+          "can",
+          "should",
+          "would"
+        ],
+        "correct": "must",
+        "explanation": "Mustは強い義務や必要性を表します。「私たちは図書館では静かにしなければなりません」はWe mustです。図書館は静かに学ぶ場所です。ルールを守ることは共同生活の基本です。"
+      },
+      {
+        "id": "je_mod4",
+        "question": "She ___ speak three languages.",
+        "translation": "(彼女は3つの言語を話せます)",
+        "options": [
+          "can",
+          "should",
+          "must",
+          "would"
+        ],
+        "correct": "can",
+        "explanation": "Canで複数の能力を表現できます。「彼女は3つの言語を話せます」はShe canです。多言語を話せることは素晴らしい能力です。言語は文化への扉を開きます。"
+      },
+      {
+        "id": "je_mod5",
+        "question": "He ___ wear a uniform.",
+        "translation": "(彼は制服を着なければなりません)",
+        "options": [
+          "must",
+          "can",
+          "should",
+          "would"
+        ],
+        "correct": "must",
+        "explanation": "Mustで規則やルールを表します。「彼は制服を着なければなりません」はHe mustです。制服は所属を示すものです。ドレスコードは社会的な規範の一つです。"
+      },
+      {
+        "id": "je_mod6",
+        "question": "You ___ eat more vegetables.",
+        "translation": "(あなたはもっと野菜を食べるべきです)",
+        "options": [
+          "should",
+          "can",
+          "must",
+          "would"
+        ],
+        "correct": "should",
+        "explanation": "健康的なアドバイスにshouldを使います。「あなたはもっと野菜を食べるべきです」はYou shouldです。野菜は体に良い栄養を与えます。優しい助言は相手を思いやる表現です。"
+      },
+      {
+        "id": "je_mod7",
+        "question": "I ___ play the piano.",
+        "translation": "(私はピアノを弾けます)",
+        "options": [
+          "can",
+          "should",
+          "must",
+          "would"
+        ],
+        "correct": "can",
+        "explanation": "楽器を演奏する能力もcanで表します。「私はピアノを弾けます」はI canです。音楽の才能は練習によって育ちます。ピアノの音色は心を癒します。"
+      },
+      {
+        "id": "je_mod8",
+        "question": "They ___ arrive on time.",
+        "translation": "(彼らは時間通りに到着しなければなりません)",
+        "options": [
+          "must",
+          "can",
+          "should",
+          "would"
+        ],
+        "correct": "must",
+        "explanation": "時間厳守の重要性をmustで表します。「彼らは時間通りに到着しなければなりません」はThey mustです。時間を守ることは相手への敬意です。"
+      },
+      {
+        "id": "je_mod9",
+        "question": "We ___ help each other.",
+        "translation": "(私たちは助け合うべきです)",
+        "options": [
+          "should",
+          "can",
+          "must",
+          "would"
+        ],
+        "correct": "should",
+        "explanation": "道徳的なアドバイスにshouldを使います。「私たちは助け合うべきです」はWe shouldです。助け合いは社会の基盤です。支え合うことで強くなれます。"
+      },
+      {
+        "id": "je_mod10",
+        "question": "She ___ drive a car.",
+        "translation": "(彼女は車を運転できます)",
+        "options": [
+          "can",
+          "should",
+          "must",
+          "would"
+        ],
+        "correct": "can",
+        "explanation": "運転の能力もcanで表現します。「彼女は車を運転できます」はShe canです。運転は便利な技能ですが、責任も伴います。能力の習得には努力が必要です。"
+      },
+      {
+        "id": "je_mod11",
+        "question": "You ___ be careful.",
+        "translation": "(あなたは注意すべきです)",
+        "options": [
+          "should",
+          "can",
+          "must",
+          "would"
+        ],
+        "correct": "should",
+        "explanation": "注意を促す時にshouldを使います。「あなたは注意すべきです」はYou shouldです。安全への配慮は大切です。相手を気遣う優しい表現です。"
+      },
+      {
+        "id": "je_mod12",
+        "question": "I ___ finish this today.",
+        "translation": "(私は今日これを終えなければなりません)",
+        "options": [
+          "must",
+          "can",
+          "should",
+          "would"
+        ],
+        "correct": "must",
+        "explanation": "締め切りなどの強い必要性をmustで表します。「私は今日これを終えなければなりません」はI mustです。責任感は信頼を築きます。完了への決意を示せます。"
+      },
+      {
+        "id": "je_mod13",
+        "question": "He ___ read without glasses.",
+        "translation": "(彼は眼鏡なしで読めます)",
+        "options": [
+          "can",
+          "should",
+          "must",
+          "would"
+        ],
+        "correct": "can",
+        "explanation": "視力の能力もcanで表現します。「彼は眼鏡なしで読めます」はHe canです。良い視力は恵まれたものです。能力には個人差があり、それぞれが尊重されます。"
+      },
+      {
+        "id": "je_mod14",
+        "question": "We ___ protect the environment.",
+        "translation": "(私たちは環境を守るべきです)",
+        "options": [
+          "should",
+          "can",
+          "must",
+          "would"
+        ],
+        "correct": "should",
+        "explanation": "環境保護の提案にshouldを使います。「私たちは環境を守るべきです」はWe shouldです。地球は私たちの大切な家です。未来のために今行動することが重要です。"
+      },
+      {
+        "id": "je_mod15",
+        "question": "You ___ follow the rules.",
+        "translation": "(あなたはルールに従わなければなりません)",
+        "options": [
+          "must",
+          "can",
+          "should",
+          "would"
+        ],
+        "correct": "must",
+        "explanation": "規則遵守の義務をmustで表します。「あなたはルールに従わなければなりません」はYou mustです。ルールは秩序を保つために存在します。社会生活には規律が必要です。"
+      }
+    ]
+  }
+]

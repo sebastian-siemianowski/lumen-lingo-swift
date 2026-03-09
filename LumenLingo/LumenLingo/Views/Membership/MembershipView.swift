@@ -6,47 +6,53 @@ import SwiftUI
 /// This is a mock UI — no actual IAP. Matches the React component's layout and visual richness.
 struct MembershipView: View {
     @Environment(\.colorScheme) private var colorScheme
-    @State private var billingCycle: BillingCycle = .monthly
-    @State private var expandedFaq: Int? = nil
+    @Environment(\.localization) private var localization
     @State private var showComparison = false
 
-    enum BillingCycle { case monthly, yearly }
+    private var L: AppStrings { localization.strings }
+    private var isDark: Bool { colorScheme == .dark }
 
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(spacing: 32) {
                 heroSection
-                billingToggle
                 tiersSection
 
                 comparisonToggle
                 if showComparison { comparisonTable }
 
-                faqSection
-                trustIndicators
                 Spacer(minLength: 80)
             }
             .padding(.horizontal, 16)
             .padding(.top, 12)
         }
         .background(
-            LinearGradient(
-                colors: [Color(hex: "#0a0a1a"), Color(hex: "#0d1530"), Color(hex: "#0a0a1a")],
-                startPoint: .top,
-                endPoint: .bottom
-            )
+            Group {
+                if isDark {
+                    LinearGradient(
+                        colors: [Color(hex: "#0a0a1a"), Color(hex: "#0d1530"), Color(hex: "#0a0a1a")],
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                } else {
+                    LinearGradient(
+                        colors: [Color(hex: "#C494FC"), Color(hex: "#F472B6"), Color(hex: "#FB923C")],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                }
+            }
             .ignoresSafeArea()
         )
-        .navigationTitle("Membership")
-        .navigationBarTitleDisplayMode(.large)
-        .toolbarColorScheme(.dark, for: .navigationBar)
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbarColorScheme(isDark ? .dark : .light, for: .navigationBar)
     }
 
     // MARK: - Hero
 
     private var heroSection: some View {
         VStack(spacing: 12) {
-            Text("Plans & Pricing")
+            Text(L.plansAndPricing)
                 .font(.caption.bold())
                 .tracking(1.5)
                 .textCase(.uppercase)
@@ -60,10 +66,16 @@ struct MembershipView: View {
                 )
 
             VStack(spacing: 4) {
-                Text("Invest in Your")
+                Text(L.investInYour)
                     .font(.system(size: 36, weight: .black))
-                    .foregroundStyle(.white)
-                Text("Language Mastery")
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [.purple, .pink],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+                Text(L.languageMastery)
                     .font(.system(size: 36, weight: .black))
                     .foregroundStyle(
                         LinearGradient(
@@ -73,60 +85,21 @@ struct MembershipView: View {
                     )
             }
 
-            Text("Join thousands who are learning smarter, not harder.\n30-day money-back guarantee · Cancel anytime")
+            Text(L.membershipSubtitle)
                 .multilineTextAlignment(.center)
                 .font(.subheadline)
-                .foregroundStyle(.white.opacity(0.65))
+                .foregroundStyle(isDark ? .white.opacity(0.65) : .caribbeanPlum)
                 .padding(.top, 4)
         }
-    }
-
-    // MARK: - Billing Toggle
-
-    private var billingToggle: some View {
-        HStack(spacing: 0) {
-            toggleButton("Monthly", isSelected: billingCycle == .monthly) {
-                withAnimation(.spring(response: 0.35)) { billingCycle = .monthly }
-            }
-            toggleButton("Yearly  -17%", isSelected: billingCycle == .yearly) {
-                withAnimation(.spring(response: 0.35)) { billingCycle = .yearly }
-            }
-        }
-        .padding(3)
-        .background(
-            Capsule().fill(.white.opacity(0.06))
-        )
-    }
-
-    private func toggleButton(_ label: String, isSelected: Bool, action: @escaping () -> Void) -> some View {
-        Button(action: action) {
-            Text(label)
-                .font(.subheadline.bold())
-                .foregroundStyle(isSelected ? .white : .white.opacity(0.5))
-                .padding(.horizontal, 20)
-                .padding(.vertical, 8)
-                .background(
-                    Capsule()
-                        .fill(isSelected
-                            ? AnyShapeStyle(LinearGradient(
-                                colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
-                                startPoint: .leading, endPoint: .trailing
-                            ))
-                            : AnyShapeStyle(.clear)
-                        )
-                )
-        }
-        .buttonStyle(.plain)
     }
 
     // MARK: - Tiers
 
     private var tiersSection: some View {
         VStack(spacing: 14) {
-            ForEach(Array(Self.tiers.enumerated()), id: \.element.id) { index, tier in
+            ForEach(Array(tiers.enumerated()), id: \.element.id) { index, tier in
                 TierCardView(
                     tier: tier,
-                    billingCycle: billingCycle,
                     index: index
                 )
             }
@@ -140,11 +113,11 @@ struct MembershipView: View {
             withAnimation(.spring(response: 0.4)) { showComparison.toggle() }
         } label: {
             HStack {
-                Text("Feature Comparison")
+                Text(L.featureComparison)
                     .font(.subheadline.bold())
-                    .foregroundStyle(.white.opacity(0.7))
+                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanInk)
                 Image(systemName: showComparison ? "chevron.up" : "chevron.down")
-                    .foregroundStyle(.white.opacity(0.5))
+                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
             }
             .padding(.vertical, 10)
             .padding(.horizontal, 20)
@@ -153,7 +126,7 @@ struct MembershipView: View {
                     .overlay(Capsule().strokeBorder(.white.opacity(0.06), lineWidth: 1))
             )
         }
-        .buttonStyle(.plain)
+        .buttonStyle(LumenPressStyle(weight: .medium))
     }
 
     // MARK: - Comparison Table
@@ -162,14 +135,14 @@ struct MembershipView: View {
         VStack(spacing: 0) {
             // Header row
             HStack(spacing: 0) {
-                Text("Feature")
+                Text(L.feature)
                     .font(.caption2.bold())
-                    .foregroundStyle(.white.opacity(0.5))
+                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                ForEach(["Free", "Pro", "Elite", "Royal"], id: \.self) { name in
+                ForEach([L.free, L.pro, L.elite, L.royal], id: \.self) { name in
                     Text(name)
                         .font(.caption2.bold())
-                        .foregroundStyle(.white.opacity(0.6))
+                        .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
                         .frame(maxWidth: .infinity)
                 }
             }
@@ -182,7 +155,7 @@ struct MembershipView: View {
                 HStack(spacing: 0) {
                     Text(feature.name)
                         .font(.caption2)
-                        .foregroundStyle(.white.opacity(0.7))
+                        .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanInk)
                         .frame(maxWidth: .infinity, alignment: .leading)
 
                     ForEach(feature.values, id: \.self) { val in
@@ -194,11 +167,11 @@ struct MembershipView: View {
                             } else if val == "—" {
                                 Text("—")
                                     .font(.caption2)
-                                    .foregroundStyle(.white.opacity(0.2))
+                                    .foregroundStyle(isDark ? .white.opacity(0.2) : .caribbeanMist.opacity(0.5))
                             } else {
                                 Text(val)
                                     .font(.caption2)
-                                    .foregroundStyle(.white.opacity(0.6))
+                                    .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
                             }
                         }
                         .frame(maxWidth: .infinity)
@@ -220,97 +193,6 @@ struct MembershipView: View {
         .transition(.opacity.combined(with: .move(edge: .top)))
     }
 
-    // MARK: - FAQ
-
-    private var faqSection: some View {
-        VStack(alignment: .leading, spacing: 14) {
-            HStack(spacing: 6) {
-                Image(systemName: "questionmark.circle.fill")
-                    .foregroundStyle(.purple)
-                Text("Frequently Asked Questions")
-                    .font(.headline)
-                    .foregroundStyle(.white)
-            }
-
-            ForEach(Array(Self.faqs.enumerated()), id: \.offset) { idx, faq in
-                VStack(alignment: .leading, spacing: 0) {
-                    Button {
-                        withAnimation(.spring(response: 0.35)) {
-                            expandedFaq = expandedFaq == idx ? nil : idx
-                        }
-                    } label: {
-                        HStack {
-                            Text(faq.question)
-                                .font(.subheadline.bold())
-                                .foregroundStyle(.white)
-                                .multilineTextAlignment(.leading)
-                            Spacer()
-                            Image(systemName: expandedFaq == idx ? "chevron.up" : "chevron.down")
-                                .font(.caption)
-                                .foregroundStyle(.white.opacity(0.4))
-                        }
-                        .padding(14)
-                    }
-                    .buttonStyle(.plain)
-
-                    if expandedFaq == idx {
-                        Text(faq.answer)
-                            .font(.caption)
-                            .foregroundStyle(.white.opacity(0.6))
-                            .padding(.horizontal, 14)
-                            .padding(.bottom, 14)
-                            .transition(.opacity.combined(with: .move(edge: .top)))
-                    }
-                }
-                .background(
-                    RoundedRectangle(cornerRadius: 14)
-                        .fill(.white.opacity(0.04))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 14)
-                                .strokeBorder(.white.opacity(0.04), lineWidth: 1)
-                        )
-                )
-            }
-        }
-        .padding(18)
-        .background(
-            RoundedRectangle(cornerRadius: 22)
-                .fill(.ultraThinMaterial)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 22)
-                        .strokeBorder(.white.opacity(0.06), lineWidth: 1)
-                )
-        )
-    }
-
-    // MARK: - Trust
-
-    private var trustIndicators: some View {
-        VStack(spacing: 10) {
-            HStack(spacing: 16) {
-                trustBadge(icon: "lock.fill", text: "Secure")
-                trustBadge(icon: "arrow.uturn.backward.circle.fill", text: "30-day refund")
-                trustBadge(icon: "xmark.circle.fill", text: "Cancel anytime")
-            }
-
-            Text("Prices shown in USD. Taxes may apply.")
-                .font(.caption2)
-                .foregroundStyle(.white.opacity(0.3))
-        }
-        .padding(.vertical, 8)
-    }
-
-    private func trustBadge(icon: String, text: String) -> some View {
-        VStack(spacing: 4) {
-            Image(systemName: icon)
-                .font(.caption)
-                .foregroundStyle(.green.opacity(0.7))
-            Text(text)
-                .font(.caption2)
-                .foregroundStyle(.white.opacity(0.4))
-        }
-    }
-
     // MARK: - Data
 
     struct TierData: Identifiable {
@@ -319,7 +201,6 @@ struct MembershipView: View {
         let icon: String
         let gradientColors: [Color]
         let priceMonthly: Double
-        let priceYearly: Double
         let tagline: String
         let benefits: [(text: String, impact: String)]
         let cta: String
@@ -327,62 +208,64 @@ struct MembershipView: View {
         let isHighlighted: Bool
     }
 
-    static let tiers: [TierData] = [
-        TierData(
-            id: "free", name: "Starter", icon: "globe",
-            gradientColors: [Color(hex: "#94a3b8"), Color(hex: "#64748b")],
-            priceMonthly: 0, priceYearly: 0,
-            tagline: "Begin your journey",
-            benefits: [
-                ("3 language pairs", "core"),
-                ("All game modes", "core"),
-                ("30 min/day practice", "limited"),
-                ("Basic analytics", "limited")
-            ],
-            cta: "Current Plan", isCurrent: true, isHighlighted: false
-        ),
-        TierData(
-            id: "pro", name: "Pro", icon: "bolt.fill",
-            gradientColors: [Color(hex: "#a855f7"), Color(hex: "#d946ef"), Color(hex: "#ec4899")],
-            priceMonthly: 9.99, priceYearly: 99.99,
-            tagline: "Master languages faster",
-            benefits: [
-                ("7 language pairs", "premium"),
-                ("Unlimited practice", "premium"),
-                ("Advanced analytics", "premium"),
-                ("3 Breathing Orbs", "delight"),
-                ("Offline access", "premium")
-            ],
-            cta: "Start Pro", isCurrent: false, isHighlighted: false
-        ),
-        TierData(
-            id: "elite", name: "Elite", icon: "sparkles",
-            gradientColors: [Color(hex: "#7c3aed"), Color(hex: "#9333ea"), Color(hex: "#a21caf")],
-            priceMonthly: 19.99, priceYearly: 199.99,
-            tagline: "Unlock your full potential",
-            benefits: [
-                ("Everything in Pro", "inherit"),
-                ("25+ language pairs", "exclusive"),
-                ("4 Quantum scenes", "exclusive"),
-                ("4 Nebula presets", "exclusive"),
-                ("Early feature access", "exclusive")
-            ],
-            cta: "Upgrade to Elite", isCurrent: false, isHighlighted: true
-        ),
-        TierData(
-            id: "royal", name: "Royal", icon: "crown.fill",
-            gradientColors: [Color(hex: "#fbbf24"), Color(hex: "#f97316"), Color(hex: "#f43f5e")],
-            priceMonthly: 99.99, priceYearly: 999.99,
-            tagline: "The ultimate experience",
-            benefits: [
-                ("Everything in Elite", "inherit"),
-                ("6 Breathing Orbs (all)", "ultimate"),
-                ("6 Quantum scenes", "ultimate"),
-                ("6 Nebula presets", "ultimate")
-            ],
-            cta: "Ascend to Royal", isCurrent: false, isHighlighted: false
-        )
-    ]
+    private var tiers: [TierData] {
+        [
+            TierData(
+                id: "free", name: L.starter, icon: "globe",
+                gradientColors: [Color(hex: "#94a3b8"), Color(hex: "#64748b")],
+                priceMonthly: 0,
+                tagline: L.beginYourJourney,
+                benefits: [
+                    ("3 language pairs", "core"),
+                    ("All game modes", "core"),
+                    ("30 min/day practice", "limited"),
+                    ("Basic analytics", "limited")
+                ],
+                cta: L.currentPlan, isCurrent: true, isHighlighted: false
+            ),
+            TierData(
+                id: "pro", name: L.pro, icon: "bolt.fill",
+                gradientColors: [Color(hex: "#a855f7"), Color(hex: "#d946ef"), Color(hex: "#ec4899")],
+                priceMonthly: 9.99,
+                tagline: L.masterLanguagesFaster,
+                benefits: [
+                    ("7 language pairs", "premium"),
+                    ("Unlimited practice", "premium"),
+                    ("Advanced analytics", "premium"),
+                    ("3 Breathing Orbs", "delight"),
+                    ("Offline access", "premium")
+                ],
+                cta: L.startPro, isCurrent: false, isHighlighted: false
+            ),
+            TierData(
+                id: "elite", name: L.elite, icon: "sparkles",
+                gradientColors: [Color(hex: "#7c3aed"), Color(hex: "#9333ea"), Color(hex: "#a21caf")],
+                priceMonthly: 19.99,
+                tagline: L.unlockFullPotential,
+                benefits: [
+                    ("Everything in Pro", "inherit"),
+                    ("25+ language pairs", "exclusive"),
+                    ("4 Quantum scenes", "exclusive"),
+                    ("4 Nebula presets", "exclusive"),
+                    ("Early feature access", "exclusive")
+                ],
+                cta: L.upgradeToElite, isCurrent: false, isHighlighted: true
+            ),
+            TierData(
+                id: "royal", name: L.royal, icon: "crown.fill",
+                gradientColors: [Color(hex: "#fbbf24"), Color(hex: "#f97316"), Color(hex: "#f43f5e")],
+                priceMonthly: 99.99,
+                tagline: L.ultimateExperience,
+                benefits: [
+                    ("Everything in Elite", "inherit"),
+                    ("6 Breathing Orbs (all)", "ultimate"),
+                    ("6 Quantum scenes", "ultimate"),
+                    ("6 Nebula presets", "ultimate")
+                ],
+                cta: L.ascendToRoyal, isCurrent: false, isHighlighted: false
+            )
+        ]
+    }
 
     struct ComparisonFeature {
         let name: String
@@ -400,49 +283,24 @@ struct MembershipView: View {
         .init(name: "Animation Controls", values: ["—", "—", "Full", "Full"]),
         .init(name: "Offline Mode", values: ["—", "✓", "✓", "✓"]),
     ]
-
-    struct FaqItem {
-        let question: String
-        let answer: String
-    }
-
-    static let faqs: [FaqItem] = [
-        .init(
-            question: "Can I cancel anytime?",
-            answer: "Yes! You can cancel your subscription at any time from your profile settings. Your access continues until the end of the billing period."
-        ),
-        .init(
-            question: "Which languages are available?",
-            answer: "We support 9 languages (English, Spanish, French, German, Italian, Portuguese, Polish, Czech, Catalan) with 7 built-in pairs and additional beta pairs for higher tiers."
-        ),
-        .init(
-            question: "Can I switch plans?",
-            answer: "Absolutely. You can upgrade or downgrade at any time. When upgrading, you'll be charged the prorated difference. When downgrading, changes apply at the next billing cycle."
-        ),
-        .init(
-            question: "What's your refund policy?",
-            answer: "We offer a 30-day money-back guarantee on all paid plans. If you're not satisfied, contact us for a full refund — no questions asked."
-        )
-    ]
 }
 
 // MARK: - Tier Card
 
 struct TierCardView: View {
+    @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.localization) private var localization
+    private var L: AppStrings { localization.strings }
+    private var isDark: Bool { colorScheme == .dark }
+
     let tier: MembershipView.TierData
-    let billingCycle: MembershipView.BillingCycle
     let index: Int
 
     @State private var isHovered = false
+    @State private var ctaPressed = false
 
     private var price: Double {
-        billingCycle == .monthly ? tier.priceMonthly : tier.priceYearly
-    }
-
-    private var monthlyEquiv: Double {
-        billingCycle == .yearly && tier.priceYearly > 0
-            ? tier.priceYearly / 12.0
-            : tier.priceMonthly
+        tier.priceMonthly
     }
 
     var body: some View {
@@ -461,16 +319,22 @@ struct TierCardView: View {
                 VStack(alignment: .leading, spacing: 2) {
                     Text(tier.name)
                         .font(.headline)
-                        .foregroundStyle(.white)
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: tier.gradientColors,
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
                     Text(tier.tagline)
                         .font(.caption)
-                        .foregroundStyle(.white.opacity(0.5))
+                        .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
                 }
 
                 Spacer()
 
                 if tier.isHighlighted {
-                    Text("POPULAR")
+                    Text(L.popular)
                         .font(.system(size: 9, weight: .heavy))
                         .tracking(1)
                         .foregroundStyle(.white)
@@ -491,24 +355,28 @@ struct TierCardView: View {
             // Price
             HStack(alignment: .firstTextBaseline, spacing: 4) {
                 if price == 0 {
-                    Text("Free")
+                    Text(L.free)
                         .font(.system(size: 28, weight: .black))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: tier.gradientColors,
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
                 } else {
-                    Text("$\(String(format: "%.2f", price))")
+                    Text("£\(String(format: "%.2f", price))")
                         .font(.system(size: 28, weight: .black))
-                        .foregroundStyle(.white)
-                    Text("/\(billingCycle == .monthly ? "mo" : "yr")")
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: tier.gradientColors,
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                    Text("/\(L.perMonth)")
                         .font(.subheadline)
-                        .foregroundStyle(.white.opacity(0.4))
-                }
-
-                Spacer()
-
-                if billingCycle == .yearly && tier.priceYearly > 0 {
-                    Text("$\(String(format: "%.2f", monthlyEquiv))/mo")
-                        .font(.caption2)
-                        .foregroundStyle(.white.opacity(0.4))
+                        .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
                 }
             }
 
@@ -521,36 +389,56 @@ struct TierCardView: View {
                             .foregroundStyle(benefitColor(benefit.impact))
                         Text(benefit.text)
                             .font(.subheadline)
-                            .foregroundStyle(.white.opacity(0.8))
+                            .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanInk)
                     }
                 }
             }
 
             // CTA button
-            Button {
-                // Mock — no IAP
-            } label: {
-                Text(tier.cta)
-                    .font(.subheadline.bold())
-                    .foregroundStyle(.white)
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 12)
-                    .background(
-                        Capsule()
-                            .fill(
-                                tier.isCurrent
-                                    ? AnyShapeStyle(.white.opacity(0.08))
-                                    : AnyShapeStyle(
-                                        LinearGradient(
-                                            colors: tier.gradientColors,
-                                            startPoint: .leading, endPoint: .trailing
-                                        )
+            Text(tier.cta)
+                .font(.subheadline.bold())
+                .foregroundStyle(.white)
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 12)
+                .background(
+                    Capsule()
+                        .fill(
+                            tier.isCurrent
+                                ? AnyShapeStyle(.white.opacity(0.08))
+                                : AnyShapeStyle(
+                                    LinearGradient(
+                                        colors: tier.gradientColors,
+                                        startPoint: .leading, endPoint: .trailing
                                     )
-                            )
-                    )
-            }
-            .buttonStyle(.plain)
-            .disabled(tier.isCurrent)
+                                )
+                        )
+                )
+                .scaleEffect(ctaPressed ? 0.93 : 1.0)
+                .brightness(ctaPressed ? -0.06 : 0)
+                .shadow(
+                    color: (tier.gradientColors.first ?? .purple).opacity(ctaPressed ? 0.50 : 0.15),
+                    radius: ctaPressed ? 22 : 8,
+                    y: ctaPressed ? 2 : 4
+                )
+                .saturation(ctaPressed ? 1.12 : 1.0)
+                .animation(.spring(response: 0.25, dampingFraction: 0.55), value: ctaPressed)
+                .contentShape(Capsule())
+                .onTapGesture {
+                    guard !tier.isCurrent else { return }
+                    // Press-in
+                    withAnimation(.spring(response: 0.08, dampingFraction: 0.80)) {
+                        ctaPressed = true
+                    }
+                    let g = UIImpactFeedbackGenerator(style: .medium)
+                    g.impactOccurred()
+                    // Spring-back
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.10) {
+                        withAnimation(.spring(response: 0.30, dampingFraction: 0.50)) {
+                            ctaPressed = false
+                        }
+                    }
+                }
+                .opacity(tier.isCurrent ? 0.5 : 1.0)
         }
         .padding(18)
         .background(

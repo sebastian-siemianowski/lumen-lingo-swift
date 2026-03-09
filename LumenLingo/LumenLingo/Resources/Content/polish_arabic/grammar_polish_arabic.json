@@ -1,0 +1,1232 @@
+[
+  {
+    "key": "present_tense",
+    "name": "Czas teraźniejszy",
+    "description": "المضارع",
+    "iconName": "clock",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_pres1",
+        "question": "أنا _____ اللغة العربية.",
+        "translation": "(Ja uczę się arabskiego)",
+        "options": [
+          "أتعلم",
+          "تتعلم",
+          "يتعلم",
+          "نتعلم"
+        ],
+        "correct": "أتعلم",
+        "explanation": "Witaj w fascynującym świecie arabskich czasowników. W polskim 'uczę się' ma zakończenie -ę pokazujące pierwszą osobę. Arabski używa prefiksów i czasami sufiksów. Dla 'ja' dodajesz prefiks أ (a-) do rdzenia: تعلم → أتعلم. To jak gdyby mówić 'a-uczę'. System jest logiczny - każda osoba ma swój prefiks. Arabski pisze się od prawej do lewej, co może być niezwykłe na początku. Czasownik zawiera informację o osobie przez prefiks, podobnie jak polski przez zakończenie. Oba języki wbudowują osobę w czasownik."
+      },
+      {
+        "id": "pa_pres2",
+        "question": "أنتَ _____ في القاهرة.",
+        "translation": "(Ty mieszkasz w Kairze - do mężczyzny)",
+        "options": [
+          "تسكن",
+          "أسكن",
+          "يسكن",
+          "تسكنين"
+        ],
+        "correct": "تسكن",
+        "explanation": "Arabski rozróżnia rodzaj w drugiej osobie. Dla 'ty' (mężczyzna) używasz prefiksu ت (ta-): سكن → تسكن. Polski 'mieszkasz' jest taki sam dla mężczyzn i kobiet, arabski ma osobne formy. تسكن to forma męska, تسكنين żeńska. Ta precyzja rodzajowa przypomina polskie formy przeszłe ('mieszkałeś/mieszkałaś'), ale arabski rozróżnia to we wszystkich czasach. Gdy mówisz do mężczyzny, zawsze używasz form męskich. System jest konsekwentny i przewidywalny."
+      },
+      {
+        "id": "pa_pres3",
+        "question": "هو _____ القهوة.",
+        "translation": "(On pije kawę)",
+        "options": [
+          "يشرب",
+          "تشرب",
+          "أشرب",
+          "نشرب"
+        ],
+        "correct": "يشرب",
+        "explanation": "Dla trzeciej osoby męskiej używasz prefiksu ي (ya-): شرب → يشرب. Polski 'pije' pokazuje osobę przez zakończenie, arabski przez prefiks. يشرب wymawia się 'yashrabu'. System prefiksów jest kluczem do arabskich czasowników - każdy prefiks natychmiast mówi ci o osobie mówiącej. Gdy widzisz ي na początku czasownika, wiesz że to 'on'. Ta wizualna jasność pomaga w czytaniu. Arabski konsekwentnie używa tych prefiksów we wszystkich czasownikach regularnych."
+      },
+      {
+        "id": "pa_pres4",
+        "question": "هي _____ الكتاب.",
+        "translation": "(Ona czyta książkę)",
+        "options": [
+          "تقرأ",
+          "يقرأ",
+          "أقرأ",
+          "نقرأ"
+        ],
+        "correct": "تقرأ",
+        "explanation": "Trzecia osoba żeńska też używa ت (ta-): قرأ → تقرأ. To ten sam prefiks co dla 'ty' (męski). Polski nie rozróżnia 'on czyta' i 'ona czyta', arabski używa różnych prefiksów: يقرأ (on) vs تقرأ (ona). Kontekst i podmiot wyjaśniają znaczenie. Ta wrażliwość na rodzaj jest głęboko wbudowana w język arabski. Każdy czasownik, przymiotnik i zaimek się odmienia przez rodzaj. Dla Polaka znajome z przeszłości, ale arabski robi to konsekwentnie we wszystkich czasach."
+      },
+      {
+        "id": "pa_pres5",
+        "question": "نحن _____ العربية.",
+        "translation": "(My mówimy po arabsku)",
+        "options": [
+          "نتكلم",
+          "أتكلم",
+          "تتكلم",
+          "يتكلم"
+        ],
+        "correct": "نتكلم",
+        "explanation": "Dla 'my' używasz prefiksu ن (na-): تكلم → نتكلم. Polski 'mówimy' ma zakończenie -my, arabski prefiks ن. Oba języki wyraźnie oznaczają pierwszą osobę mnogą. نتكلم wymawia się 'natakallamu'. Gdy widzisz ن na początku, wiesz że to 'my'. System jest elegancko prosty - jeden prefiks dla jednej osoby. Arabski nie rozróżnia rodzaju w pierwszej osobie mnogiej, podobnie jak polski 'mówimy' jest neutralne (choć w przeszłości polski rozróżnia: 'mówiliśmy/mówiłyśmy')."
+      },
+      {
+        "id": "pa_pres6",
+        "question": "أنتم _____ في المدرسة.",
+        "translation": "(Wy pracujecie w szkole - do mężczyzn)",
+        "options": [
+          "تعملون",
+          "تعملن",
+          "نعمل",
+          "يعملون"
+        ],
+        "correct": "تعملون",
+        "explanation": "Druga osoba mnoga męska używa ت plus zakończenie ون: عمل → تعملون. Polski 'pracujecie' ma -cie, arabski kombinuje prefiks i sufiks. تعملون to dla grupy mężczyzn lub mieszanej. Dla samych kobiet używasz تعملن (z ن zamiast ون). Ta podwójna oznaczenie osoby (prefiks + sufiks) czyni arabskie czasowniki bardzo wyraźnymi. System jest regularny - ون dla męskiego/mieszanego, ن dla żeńskiego w drugiej osobie mnogiej."
+      },
+      {
+        "id": "pa_pres7",
+        "question": "هم _____ كرة القدم.",
+        "translation": "(Oni grają w piłkę nożną)",
+        "options": [
+          "يلعبون",
+          "يلعبن",
+          "تلعبون",
+          "نلعب"
+        ],
+        "correct": "يلعبون",
+        "explanation": "Trzecia osoba mnoga męska: ي plus ون: لعب → يلعبون. Polski 'grają' nie rozróżnia rodzaju w formie 'oni', arabski używa يلعبون (męski) vs يلعبن (żeński). يلعبون to dla grupy mężczyzn lub mieszanej. Sufiks ون pokazuje liczbę mnogą męską. Ten system podwójnego oznaczenia (prefiks osoby + sufiks liczby i rodzaju) daje arabskiemu precyzję. Gdy widzisz ي...ون, natychmiast wiesz: trzecia osoba, mnoga, męska/mieszana. Wizualna jasność pomaga w nauce."
+      },
+      {
+        "id": "pa_pres8",
+        "question": "أنا _____ طالب.",
+        "translation": "(Ja jestem studentem)",
+        "options": [
+          "no verb",
+          "أكون",
+          "كان",
+          "يكون"
+        ],
+        "correct": "no verb",
+        "explanation": "Niespodzianka - arabski nie potrzebuje czasownika 'być' w czasie teraźniejszym. Polski wymaga 'jestem', arabski mówi po prostu أنا طالب (ja student). To jak powiedzieć 'ja student' bez 'jestem'. Ta elipsa czasownika 'być' jest cechą języków semickich. Wystarczy podmiot + orzecznik. W przeszłości i przyszłości arabski używa كان/يكون, ale teraz nie. To upraszcza zdania. Dla Polaka dziwne początkowo, ale szybko staje się naturalne. Kontekst zawsze wyjaśnia czas."
+      },
+      {
+        "id": "pa_pres9",
+        "question": "هو _____ معلم.",
+        "translation": "(On jest nauczycielem)",
+        "options": [
+          "no verb",
+          "يكون",
+          "كان",
+          "هو"
+        ],
+        "correct": "no verb",
+        "explanation": "Znów bez czasownika 'być': هو معلم (on nauczyciel). Polski 'jest' jest niezbędny, arabski go pomija. معلم to 'nauczyciel' - po prostu stawiasz podmiot i orzecznik obok siebie. Ta konstrukcja bez spójki jest elegancka i zwięzła. Arabski oszczędza słów tam gdzie polski wymaga ich więcej. هو معلم to kompletne zdanie, gramatycznie poprawne i jasne. System jest konsekwentny - żadne teraźniejsze zdanie 'być' nie potrzebuje czasownika."
+      },
+      {
+        "id": "pa_pres10",
+        "question": "نحن _____ جائعون.",
+        "translation": "(Jesteśmy głodni)",
+        "options": [
+          "no verb",
+          "نكون",
+          "كنا",
+          "يكونون"
+        ],
+        "correct": "no verb",
+        "explanation": "I dla liczby mnogiej bez czasownika: نحن جائعون (my głodni). Polski 'jesteśmy głodni' wymaga czasownika, arabski nie. جائعون to przymiotnik w liczbie mnogiej męskiej (zakończenie ون). Ta zgodność przymiotnika z podmiotem przypomina polską odmianę ('głodni' ma -i dla męskiego). Arabski odmienia przymiotniki przez rodzaj, liczbę i przypadek. System jest bogatszy niż polski, ale logiczny. نحن جائعون to kompletne, naturalne zdanie bez spójki."
+      },
+      {
+        "id": "pa_pres11",
+        "question": "أنتِ _____ جميلة.",
+        "translation": "(Ty jesteś piękna - do kobiety)",
+        "options": [
+          "no verb",
+          "تكونين",
+          "كنتِ",
+          "أنتِ"
+        ],
+        "correct": "no verb",
+        "explanation": "Zdanie bez spójki dla formy żeńskiej: أنتِ جميلة (ty piękna). Zauważ أنتِ (ty - żeńska) i جميلة (piękna). Oba formy żeńskie tworzą harmonię. Polski 'jesteś piękna' rozróżnia rodzaj tylko w przymiotniku, arabski w obu. Ta podwójna zgodność rodzajowa jest typowa dla arabskiego. جميلة ma taa marbouta (ة) na końcu - znak rodzaju żeńskiego. System jest przewidywalny - żeńskie formy często mają tę końcówkę."
+      },
+      {
+        "id": "pa_pres12",
+        "question": "هل _____ القهوة؟",
+        "translation": "(Czy lubisz kawę? - do mężczyzny)",
+        "options": [
+          "تحب",
+          "أحب",
+          "يحب",
+          "تحبين"
+        ],
+        "correct": "تحب",
+        "explanation": "Pytania z هل na początku: هل تحب (czy ty-lubisz). Polski używa 'czy' podobnie, ale arabski nie zmienia kolejności słów. هل + normalne zdanie = pytanie. تحب to forma męska dla 'ty'. Dla kobiety byłoby تحبين. System pytań jest prosty - dodaj هل bez zmiany struktury zdania. Polski czasem zmienia kolejność lub intonację, arabski tylko dodaje هل. Ta konsekwencja ułatwia tworzenie pytań. هل wymawia się 'hal', łatwe do zapamiętania."
+      },
+      {
+        "id": "pa_pres13",
+        "question": "ماذا _____ ؟",
+        "translation": "(Co robisz? - do mężczyzny)",
+        "options": [
+          "تفعل",
+          "أفعل",
+          "يفعل",
+          "تفعلين"
+        ],
+        "correct": "تفعل",
+        "explanation": "Pytania z 'co' używają ماذا: ماذا تفعل (co ty-robisz). Polski 'co robisz?' ma podobną strukturę. ماذا zawsze na początku pytania. تفعل to forma męska. Arabski konsekwentnie stawia pytajnik na początku, potem normalne zdanie. فعل to czasownik 'robić', bardzo regularny i użyteczny. ماذا wymawia się 'madha', używane dla pytań o rzeczy i działania. System jest przejrzysty - ماذا dla 'co', من dla 'kto'."
+      },
+      {
+        "id": "pa_pres14",
+        "question": "أين _____ ؟",
+        "translation": "(Gdzie mieszkasz? - do mężczyzny)",
+        "options": [
+          "تسكن",
+          "أسكن",
+          "يسكن",
+          "تسكنين"
+        ],
+        "correct": "تسكن",
+        "explanation": "Pytania z 'gdzie' używają أين: أين تسكن (gdzie ty-mieszkasz). Polski 'gdzie mieszkasz?' tłumaczy się bezpośrednio. أين to 'gdzie', zawsze na początku. تسكن forma męska. Arabskie słowa pytające są proste i bezpośrednie - أين (gdzie), من (kto), ماذا (co), متى (kiedy). Wszystkie idą na początku zdania. Ta przewidywalność ułatwia naukę. أين wymawia się 'ayna', krótkie i łatwe słowo."
+      },
+      {
+        "id": "pa_pres15",
+        "question": "من _____ هذا؟",
+        "translation": "(Kto to jest?)",
+        "options": [
+          "no verb",
+          "يكون",
+          "هو",
+          "كان"
+        ],
+        "correct": "no verb",
+        "explanation": "Pytania 'kto' też bez czasownika 'być': من هذا (kto to). Polski 'kto to jest' wymaga 'jest', arabski nie. من (kto) plus هذا (to) tworzą kompletne pytanie. Ta zwięzłość arabskiego jest elegancka. Brak spójki w czasie teraźniejszym konsekwentnie stosowany nawet w pytaniach. من wymawia się 'man', używane dla osób. Dla rzeczy używasz ماذا. System jest logiczny - różne słowa dla osób i rzeczy, podobnie jak polski 'kto/co'."
+      }
+    ]
+  },
+  {
+    "key": "articles_definiteness",
+    "name": "Przedimek określony",
+    "description": "أل التعريف",
+    "iconName": "doc.text",
+    "color": "#818cf8",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_art1",
+        "question": "_____ كتاب جديد.",
+        "translation": "(Książka jest nowa - określona)",
+        "options": [
+          "الكتاب",
+          "كتاب",
+          "كتابٌ",
+          "كتابُ"
+        ],
+        "correct": "الكتاب",
+        "explanation": "Witaj w systemie określoności arabskiej. Polski nie ma przedimków, arabski używa ال (al-) dla określoności. الكتاب to 'ta książka, książka', كتاب to 'jakaś książka'. Polski pokazuje to kontekstem lub zaimkami ('ta książka'), arabski przez prefix ال. To jak dodać 'ten/ta/to' do każdego rzeczownika. ال przykleja się do słowa, stając się jego częścią. الكتاب wymawia się 'al-kitaab'. System jest prostszy niż francuski czy niemiecki - jeden prefix dla wszystkich rodzajów i liczb."
+      },
+      {
+        "id": "pa_art2",
+        "question": "_____ جميلة.",
+        "translation": "(Dziewczyna jest piękna - określona)",
+        "options": [
+          "البنت",
+          "بنت",
+          "بنتٌ",
+          "بنتُ"
+        ],
+        "correct": "البنت",
+        "explanation": "ال działa dla wszystkich rzeczowników: البنت (ta dziewczyna). Polski by powiedział 'dziewczyna' z kontekstem lub 'ta dziewczyna', arabski zawsze używa ال dla określoności. بنت bez ال znaczy 'jakaś dziewczyna'. Ta precyzja pomaga w jasnej komunikacji. البنت wymawia się 'al-bint'. Zauważ że ال jest taki sam dla męskiego (الكتاب) i żeńskiego (البنت). Brak odmiany przez rodzaj upraszcza system. Jedna forma dla wszystkiego."
+      },
+      {
+        "id": "pa_art3",
+        "question": "_____ في الحقيبة.",
+        "translation": "(Książka jest w torbie - nieokreślona)",
+        "options": [
+          "كتاب",
+          "الكتاب",
+          "كتابٌ",
+          "كتابُ"
+        ],
+        "correct": "كتاب",
+        "explanation": "Rzeczownik bez ال jest nieokreślony: كتاب (jakaś książka). Polski 'książka' może być określona lub nie - zależy od kontekstu. Arabski wyraźnie rozróżnia: كتاب (a book) vs الكتاب (the book). Gdy wprowadzasz coś nowego do rozmowy, używasz formy bez ال. Polski często używa zaimków ('jakaś książka', 'pewna książka'), arabski po prostu pomija ال. Ta zasada przypomina angielski system a/the, ale arabski nie potrzebuje osobnego słowa - to prefix lub jego brak."
+      },
+      {
+        "id": "pa_art4",
+        "question": "هذا _____ .",
+        "translation": "(To jest dom - nieokreślony)",
+        "options": [
+          "بيت",
+          "البيت",
+          "بيتٌ",
+          "بيتُ"
+        ],
+        "correct": "بيت",
+        "explanation": "Po 'to jest' często używasz nieokreślonego: هذا بيت (to jest dom). Polski 'to jest dom' nie pokazuje określoności, arabski używa بيت bez ال dla nieokreśloności. Gdy identyfikujesz coś po raz pierwszy, forma nieokreślona jest naturalna. بيت wymawia się 'bayt'. Gdybyś mówił o konkretnym domu znanym z kontekstu, użyłbyś البيت. Ta elastyczność pozwala na precyzyjne wyrażanie znajomości obiektu."
+      },
+      {
+        "id": "pa_art5",
+        "question": "_____ كبير.",
+        "translation": "(Dom jest duży - określony)",
+        "options": [
+          "البيت",
+          "بيت",
+          "بيتٌ",
+          "بيتُ"
+        ],
+        "correct": "البيت",
+        "explanation": "Gdy mówisz o znanym domu, używasz ال: البيت كبير (dom jest duży). Polski 'dom jest duży' może oznaczać konkretny dom lub dom w ogóle - kontekst wyjaśnia. Arabski wyraźnie mówi البيت - ten konkretny dom, o którym mówimy. Ta jasność eliminuje wieloznaczność. Gdy chcesz powiedzieć 'dom jest duży' jako ogólną prawdę, też używasz ال w arabskim - البيت dla kategorii. Polski robi to samo bez przedimka, arabski zawsze z ال."
+      },
+      {
+        "id": "pa_art6",
+        "question": "أحب _____ .",
+        "translation": "(Lubię muzykę - w ogóle)",
+        "options": [
+          "الموسيقى",
+          "موسيقى",
+          "موسيقىً",
+          "موسيقىٰ"
+        ],
+        "correct": "الموسيقى",
+        "explanation": "Dla kategorii ogólnych używasz ال: أحب الموسيقى (lubię muzykę). Polski 'lubię muzykę' mówi o muzyce w ogóle bez przedimka. Arabski używa ال dla ogólnych kategorii, pokazując że mówisz o całej kategorii, nie o jakiejś konkretnej muzyce. To jak powiedzieć 'lubię tę muzykę' mając na myśli muzykę jako koncepcję. الموسيقى wymawia się 'al-musiqa'. Ta konwencja jest spójna - upodobania wyrażasz z ال."
+      },
+      {
+        "id": "pa_art7",
+        "question": "_____ في السماء.",
+        "translation": "(Słońce jest na niebie)",
+        "options": [
+          "الشمس",
+          "شمس",
+          "شمسٌ",
+          "شمسُ"
+        ],
+        "correct": "الشمس",
+        "explanation": "Unikalne rzeczy zawsze z ال: الشمس (słońce). Jest tylko jedno słońce, więc zawsze określone. Polski 'słońce' też odnosi się do unikalnego obiektu. Arabski wymaga ال dla takich rzeczy - الشمس (słońce), القمر (księżyc), الأرض (ziemia). Ta logika jest jasna - skoro jest tylko jedno, zawsze jest określone. الشمس wymawia się 'ash-shams'. Zauważ wymowę - 'al' zmienia się w 'ash' przed niektórymi literami. To nazywa się 'literami słonecznymi'."
+      },
+      {
+        "id": "pa_art8",
+        "question": "_____ على الطاولة.",
+        "translation": "(Książki są na stole - określone)",
+        "options": [
+          "الكتب",
+          "كتب",
+          "كتبٌ",
+          "كتبُ"
+        ],
+        "correct": "الكتب",
+        "explanation": "ال używa się też dla liczby mnogiej: الكتب (te książki). Polski 'książki' może być określony lub nie, arabski wyraźnie pokazuje określoność przez ال. كتب to 'jakieś książki', الكتب to 'te książki'. System jest konsekwentny - ال działa tak samo dla pojedynczych i mnogich rzeczowników. الكتب wymawia się 'al-kutub'. Liczba mnoga ma często inne samogłoski niż pojedyncza, ale ال pozostaje takie samo. Ta regularność upraszcza naukę."
+      },
+      {
+        "id": "pa_art9",
+        "question": "_____ في المكتب.",
+        "translation": "(Nauczyciel jest w biurze - określony)",
+        "options": [
+          "المعلم",
+          "معلم",
+          "معلمٌ",
+          "معلمُ"
+        ],
+        "correct": "المعلم",
+        "explanation": "Zawody z ال gdy mówisz o konkretnej osobie: المعلم (ten nauczyciel). Polski 'nauczyciel' używa kontekstu dla określoności, arabski używa ال. معلم bez ال to 'jakiś nauczyciel' lub nauczyciel jako zawód. المعلم to konkretna osoba. Ta różnica jest ważna w komunikacji. المعلم wymawia się 'al-muallim'. Gdy przedstawiasz kogoś ('to jest nauczyciel'), używasz معلم. Gdy mówisz o znanej osobie ('nauczyciel jest w biurze'), używasz المعلم."
+      },
+      {
+        "id": "pa_art10",
+        "question": "_____ طويلة.",
+        "translation": "(Droga jest długa - określona)",
+        "options": [
+          "الطريق",
+          "طريق",
+          "طريقٌ",
+          "طريقُ"
+        ],
+        "correct": "الطريق",
+        "explanation": "Dla konkretnej drogi używasz ال: الطريق (ta droga). Polski by użył 'ta droga' lub po prostu 'droga' z kontekstem. Arabski wymaga ال dla jasności. طريق może być męski lub żeński zależnie od dialektu, ale ال pozostaje takie samo. Ta neutralność ال przez rodzaj jest wygodna. الطريق wymawia się 'at-tariq' - znów wymowa zmienia 'al' na 'at' przed literą 't'. Te zmiany wymowy są naturalne i szybko stają się automatyczne."
+      },
+      {
+        "id": "pa_art11",
+        "question": "شربت _____ .",
+        "translation": "(Piłem wodę - nieokreśloną)",
+        "options": [
+          "ماء",
+          "الماء",
+          "ماءً",
+          "ماءٌ"
+        ],
+        "correct": "ماء",
+        "explanation": "Dla nieokreślonej ilości używasz formy bez ال: شربت ماء (piłem wodę). Polski 'piłem wodę' jest nieokreślony co do ilości. Arabski ماء (woda) bez ال wskazuje nieokreśloną ilość, 'trochę wody'. Gdybyś mówił o konkretnej wodzie ('tę wodę'), użyłbyś الماء. Ta elastyczność pozwala na precyzyjne wyrażanie tego, czy mówisz o konkretnej znanej rzeczy czy ogólnej ilości."
+      },
+      {
+        "id": "pa_art12",
+        "question": "أين _____ ؟",
+        "translation": "(Gdzie jest klucz? - określony)",
+        "options": [
+          "المفتاح",
+          "مفتاح",
+          "مفتاحٌ",
+          "مفتاحُ"
+        ],
+        "correct": "المفتاح",
+        "explanation": "W pytaniach o konkretne rzeczy używasz ال: أين المفتاح (gdzie jest klucz). Pytasz o konkretny znany klucz, więc المفتاح. Polski 'gdzie jest klucz?' używa kontekstu - może być 'jakiś klucz' lub 'ten klucz'. Arabski wyraźnie rozróżnia: أين مفتاح (gdzie jest jakiś klucz - ogólne pytanie) vs أين المفتاح (gdzie jest ten klucz - konkretny). Ta precyzja eliminuje wieloznaczność. المفتاح wymawia się 'al-miftaah'."
+      },
+      {
+        "id": "pa_art13",
+        "question": "هذا _____ الذي أريد.",
+        "translation": "(To jest ten książka, którą chcę)",
+        "options": [
+          "الكتاب",
+          "كتاب",
+          "كتابٌ",
+          "كتابُ"
+        ],
+        "correct": "الكتاب",
+        "explanation": "Przed zdaniami względnymi używasz ال: الكتاب الذي (książka która). Polski 'książka, którą chcę' może używać zaimka 'ta', arabski wymaga ال przed zdaniem względnym. الذي to 'który' - zawsze po określonym rzeczowniku. Konstrukcja: ال + rzeczownik + الذي + zdanie. Ta struktura jest regularna i przewidywalna. الكتاب الذي wymawia się 'al-kitaab alladhi'. Zdania względne w arabskim zawsze odnoszą się do określonych rzeczowników."
+      },
+      {
+        "id": "pa_art14",
+        "question": "_____ مهم.",
+        "translation": "(Czas jest ważny - pojęcie)",
+        "options": [
+          "الوقت",
+          "وقت",
+          "وقتٌ",
+          "وقتُ"
+        ],
+        "correct": "الوقت",
+        "explanation": "Pojęcia abstrakcyjne z ال: الوقت (czas). Polski 'czas jest ważny' używa rzeczownika bez przedimka dla pojęcia abstrakcyjnego. Arabski używa ال dla takich koncepcji - pokazuje że mówisz o 'czasie' jako idei, nie o konkretnym czasie. الوقت wymawia się 'al-waqt'. Ta konwencja obejmuje wszystkie abstrakcje - الحب (miłość), الحياة (życie), الحرية (wolność). Wszystkie z ال, podobnie jak arabski używa ال dla kategorii ogólnych."
+      },
+      {
+        "id": "pa_art15",
+        "question": "_____ لذيذ.",
+        "translation": "(Jedzenie jest smaczne - ogólnie)",
+        "options": [
+          "الطعام",
+          "طعام",
+          "طعامٌ",
+          "طعامُ"
+        ],
+        "correct": "الطعام",
+        "explanation": "Dla ogólnych stwierdzeń używasz ال: الطعام لذيذ (jedzenie jest smaczne). Mówisz o jedzeniu jako kategorii, nie o konkretnym daniu. Polski 'jedzenie jest smaczne' też odnosi się do jedzenia w ogóle. Arabski wyraża to przez ال, pokazując że robisz uogólnienie. الطعام wymawia się 'at-ta'aam' - znów zmiana 'al' na 'at' przed literą 't'. Ten wzór używania ال dla kategorii i ogólnych prawd jest fundamentalny w arabskim. Konsekwentnie stosowany we wszystkich kontekstach."
+      }
+    ]
+  },
+  {
+    "key": "past_tense",
+    "name": "Czas przeszły",
+    "description": "الماضي",
+    "iconName": "clock.arrow.circlepath",
+    "color": "#fbbf24",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pa_past1",
+        "question": "أنا _____ إلى المدرسة.",
+        "translation": "(Poszedłem do szkoły)",
+        "options": [
+          "ذهبتُ",
+          "تذهب",
+          "يذهب",
+          "ذهب"
+        ],
+        "correct": "ذهبتُ",
+        "explanation": "Witaj w arabskim czasie przeszłym. W przeciwieństwie do teraźniejszego, który używa prefiksów, przeszły dodaje sufiksy do rdzenia. 'ذهب' (dhahaba) to rdzeń 'iść'. Dla 'ja' dodajesz تُ (tu): ذهبتُ. To jak polski system - zakończenia pokazują osobę. Arabski czas przeszły jest bardzo regularny i przewidywalny. Każda osoba ma swoje zakończenie, które łatwo zapamiętać. System jest logiczny i spójny."
+      },
+      {
+        "id": "pa_past2",
+        "question": "أنتَ _____ القهوة.",
+        "translation": "(Piłeś kawę - do mężczyzny)",
+        "options": [
+          "شربتَ",
+          "شربتُ",
+          "شرب",
+          "تشرب"
+        ],
+        "correct": "شربتَ",
+        "explanation": "Dla 'ty' (mężczyzna) dodajesz تَ (ta) do rdzenia. 'شرب' to 'pić', więc شربتَ = piłeś. Arabski rozróżnia rodzaj w drugiej osobie - شربتَ dla mężczyzny, شربتِ dla kobiety. To podobne do polskiego 'piłeś/piłaś'. Ta precyzja rodzajowa jest głęboko wbudowana w arabski. Kawa w kulturze arabskiej to rytuał społeczny, symbol gościnności."
+      },
+      {
+        "id": "pa_past3",
+        "question": "هو _____ الكتاب.",
+        "translation": "(On przeczytał książkę)",
+        "options": [
+          "قرأ",
+          "قرأتُ",
+          "تقرأ",
+          "يقرأ"
+        ],
+        "correct": "قرأ",
+        "explanation": "Trzecia osoba męska to czysta forma rdzenia bez dodatkowych zakończeń. 'قرأ' (qara'a) = on przeczytał. To forma podstawowa, najkrótsza. Polski też ma prostą formę trzeciej osoby 'on czytał'. Arabski rdzeń sam w sobie wyraża trzecią osobę męską przeszłą. Ta prostota jest elegancka. Czytanie książek to okno do światów wiedzy i wyobrażeń."
+      },
+      {
+        "id": "pa_past4",
+        "question": "هي _____ الطعام.",
+        "translation": "(Ona zjadła jedzenie)",
+        "options": [
+          "أكلتْ",
+          "أكل",
+          "أكلتُ",
+          "تأكل"
+        ],
+        "correct": "أكلتْ",
+        "explanation": "Dla 'ona' dodajesz تْ (at) do rdzenia. 'أكل' to 'jeść', więc أكلتْ = ona zjadła. To تْ wymawia się bardzo krótko, prawie niesłyszalnie. Polski podobnie rozróżnia 'on zjadł' i 'ona zjadła'. Arabski konsekwentnie oznacza rodzaj we wszystkich czasach. Jedzenie łączy ludzi - wspólne posiłki to fundament kultury."
+      },
+      {
+        "id": "pa_past5",
+        "question": "نحن _____ العمل.",
+        "translation": "(Skończyliśmy pracę)",
+        "options": [
+          "أنهينا",
+          "أنهى",
+          "تنهي",
+          "ينهي"
+        ],
+        "correct": "أنهينا",
+        "explanation": "Dla 'my' dodajesz نا (na) do rdzenia. 'أنهى' to 'kończyć', więc أنهينا = skończyliśmy. Polski 'skończyliśmy' też ma wyraźne zakończenie -śmy. Arabski نا jest równie wyraźny. Zakończenie pracy to satysfakcjonujące uczucie - zadanie wykonane, cel osiągnięty. Współpraca czyni wielkie rzeczy możliwymi."
+      },
+      {
+        "id": "pa_past6",
+        "question": "أنتم _____ الدرس.",
+        "translation": "(Nauczyliście się lekcji - do mężczyzn)",
+        "options": [
+          "تعلمتم",
+          "تعلمنا",
+          "تعلم",
+          "يتعلم"
+        ],
+        "correct": "تعلمتم",
+        "explanation": "Dla 'wy' (mnogi męski) dodajesz تم (tum). 'تعلم' to 'uczyć się', więc تعلمتم = nauczyliście się. Polski 'nauczyliście się' ma -ście. Arabski تم dla grupy mężczyzn lub mieszanej. Dla samych kobiet użyjesz تنّ. Nauka to podróż przez całe życie - każda lekcja buduje zrozumienie."
+      },
+      {
+        "id": "pa_past7",
+        "question": "هم _____ اللعبة.",
+        "translation": "(Oni zagrali w grę)",
+        "options": [
+          "لعبوا",
+          "لعب",
+          "تلعب",
+          "يلعب"
+        ],
+        "correct": "لعبوا",
+        "explanation": "Dla 'oni' dodajesz وا (u). 'لعب' to 'grać', więc لعبوا = oni zagrali. Polski 'zagrali' to podobna forma mnoga. Arabski وا jest konsekwentny dla trzeciej osoby mnogiej męskiej. Gry łączą ludzi, uczą strategii i współpracy. Zabawa jest ważna w każdym wieku."
+      },
+      {
+        "id": "pa_past8",
+        "question": "أنا _____ المعلم.",
+        "translation": "(Byłem nauczycielem)",
+        "options": [
+          "كنتُ",
+          "كان",
+          "تكون",
+          "يكون"
+        ],
+        "correct": "كنتُ",
+        "explanation": "'كان' (kana) to 'być' w przeszłości - jeden z najważniejszych czasowników. Dla 'ja': كنتُ = byłem. 'Być' to fundament opisu stanów przeszłych. Nauczyciele kształtują przyszłość - ich wpływ trwa przez pokolenia. Bycie nauczycielem to zaszczytna rola w społeczeństwie."
+      },
+      {
+        "id": "pa_past9",
+        "question": "أنتِ _____ جميلة.",
+        "translation": "(Byłaś piękna - do kobiety)",
+        "options": [
+          "كنتِ",
+          "كنتُ",
+          "كان",
+          "كانت"
+        ],
+        "correct": "كنتِ",
+        "explanation": "Dla 'ty' (kobieta) w przeszłości: كنتِ. 'كان' + تِ dla drugiej osoby żeńskiej. Polski 'byłaś' też oznacza rodzaj. Piękno jest w oczach patrzącego - każda osoba ma swoją unikalną piękność. Komplementy budują pewność siebie i dobre relacje."
+      },
+      {
+        "id": "pa_past10",
+        "question": "هو _____ سعيداً.",
+        "translation": "(On był szczęśliwy)",
+        "options": [
+          "كان",
+          "كانت",
+          "كنتُ",
+          "يكون"
+        ],
+        "correct": "كان",
+        "explanation": "Trzecia osoba męska 'كان' to podstawowa forma. 'Był szczęśliwy' opisuje stan emocjonalny w przeszłości. Szczęście to ważne uczucie - wspomnienia szczęśliwych chwil rozgrzewają serce. Arabski konsekwentnie używa كان dla stanów przeszłych."
+      },
+      {
+        "id": "pa_past11",
+        "question": "هي _____ في البيت.",
+        "translation": "(Ona była w domu)",
+        "options": [
+          "كانت",
+          "كان",
+          "كنتُ",
+          "تكون"
+        ],
+        "correct": "كانت",
+        "explanation": "Dla 'ona' używasz كانت (kanat). Dodatkowe ت oznacza rodzaj żeński. Dom to miejsce bezpieczeństwa i ciepła. Być w domu to często oznacza odpoczynek i relaks. Arabski precyzyjnie oznacza rodzaj we wszystkich formach كان."
+      },
+      {
+        "id": "pa_past12",
+        "question": "نحن _____ أصدقاء.",
+        "translation": "(Byliśmy przyjaciółmi)",
+        "options": [
+          "كنّا",
+          "كان",
+          "كانوا",
+          "تكون"
+        ],
+        "correct": "كنّا",
+        "explanation": "Dla 'my': كنّا (kunna). Przyjaźń w przeszłości niesie wspomnienia wspólnych doświadczeń. Przyjaciele to skarb życia - wspierają nas w trudnych chwilach. Bycie przyjacielem to wzajemne zaufanie i troska."
+      },
+      {
+        "id": "pa_past13",
+        "question": "أنتم _____ طلاباً.",
+        "translation": "(Byliście studentami - do mężczyzn)",
+        "options": [
+          "كنتم",
+          "كنا",
+          "كان",
+          "كانوا"
+        ],
+        "correct": "كنتم",
+        "explanation": "Dla 'wy' (męski): كنتم. Bycie studentem to czas intensywnej nauki i rozwoju. Studentci to przyszłość społeczeństwa - ich wiedza i energia budują jutro. Edukacja otwiera drzwi do możliwości."
+      },
+      {
+        "id": "pa_past14",
+        "question": "هم _____ مشغولين.",
+        "translation": "(Oni byli zajęci)",
+        "options": [
+          "كانوا",
+          "كان",
+          "كنا",
+          "تكون"
+        ],
+        "correct": "كانوا",
+        "explanation": "Dla 'oni': كانوا (kanu). Zajętość to część współczesnego życia. Być zajętym może oznaczać produktywność, ale ważna jest też równowaga. Arabski وا dla trzeciej osoby mnogiej jest konsekwentny i przewidywalny."
+      },
+      {
+        "id": "pa_past15",
+        "question": "أنتنّ _____ معلمات.",
+        "translation": "(Byłyście nauczycielkami - do kobiet)",
+        "options": [
+          "كنتنّ",
+          "كنتم",
+          "كنا",
+          "كانوا"
+        ],
+        "correct": "كنتنّ",
+        "explanation": "Dla 'wy' (wyłącznie kobiety): كنتنّ. Ta forma jest używana gdy zwracasz się do grupy samych kobiet. Polski nie rozróżnia tego tak precyzyjnie. Nauczycielki mają ogromny wpływ na życie uczniów - inspirują, motywują, wspierają. Edukacja to dar przekazywany z pokolenia na pokolenie."
+      }
+    ]
+  },
+  {
+    "key": "pronouns",
+    "name": "Zaimki osobowe",
+    "description": "الضمائر الشخصية",
+    "iconName": "person.2",
+    "color": "#4ade80",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pa_pr1",
+        "question": "_____ طالب.",
+        "translation": "(Ja jestem studentem)",
+        "options": [
+          "أنا",
+          "أنتَ",
+          "هو",
+          "نحن"
+        ],
+        "correct": "أنا",
+        "explanation": "أنا (ana) to zaimek pierwszej osoby - 'ja'. W arabskim zaimki są używane dla podkreślenia, bo czasownik już wskazuje osobę. أنا طالب = ja jestem studentem. Zauważ brak czasownika 'być' w czasie teraźniejszym - arabski po prostu mówi 'ja student'. Ta ekonomia języka jest elegancka i prosta."
+      },
+      {
+        "id": "pa_pr2",
+        "question": "_____ معلم.",
+        "translation": "(Ty jesteś nauczycielem - do mężczyzny)",
+        "options": [
+          "أنتَ",
+          "أنا",
+          "هو",
+          "أنتِ"
+        ],
+        "correct": "أنتَ",
+        "explanation": "أنتَ (anta) to 'ty' dla mężczyzny. Arabski ma osobne zaimki dla ty-mężczyzna (أنتَ) i ty-kobieta (أنتِ). Ta precyzja rodzajowa jest typowa dla języków semickich. Nauczyciele są szanowani w kulturze arabskiej - ich wiedza i mądrość ceniona przez społeczeństwo."
+      },
+      {
+        "id": "pa_pr3",
+        "question": "_____ طبيبة.",
+        "translation": "(Ty jesteś lekarką - do kobiety)",
+        "options": [
+          "أنتِ",
+          "أنتَ",
+          "هي",
+          "أنا"
+        ],
+        "correct": "أنتِ",
+        "explanation": "أنتِ (anti) to 'ty' dla kobiety. Końcówka ة (ta marbuta) w طبيبة wskazuje zawód żeński. Lekarze ratują życia - ich praca wymaga wiedzy, empatii i oddania. Kobiety w medycynie wnoszą nieoceniony wkład w zdrowie społeczeństwa."
+      },
+      {
+        "id": "pa_pr4",
+        "question": "_____ صديقي.",
+        "translation": "(On jest moim przyjacielem)",
+        "options": [
+          "هو",
+          "هي",
+          "أنا",
+          "أنتَ"
+        ],
+        "correct": "هو",
+        "explanation": "هو (huwa) to 'on' - trzecia osoba męska. صديقي = mój przyjaciel (ي na końcu to 'mój'). Przyjaźń to cenna więź między ludźmi. Dobry przyjaciel wspiera, słucha, dzieli radości i smutki. هو jest używany też dla rzeczy męskich w arabskim."
+      },
+      {
+        "id": "pa_pr5",
+        "question": "_____ أختي.",
+        "translation": "(Ona jest moją siostrą)",
+        "options": [
+          "هي",
+          "هو",
+          "أنتِ",
+          "أنا"
+        ],
+        "correct": "هي",
+        "explanation": "هي (hiya) to 'ona' - trzecia osoba żeńska. أختي = moja siostra. Więzi rodzinne są fundamentem społeczeństwa arabskiego. Siostry dzielą specjalną więź - wspólne dzieciństwo, wspomnienia, wzajemne wsparcie. هي dla osób i rzeczy żeńskich."
+      },
+      {
+        "id": "pa_pr6",
+        "question": "_____ طلاب.",
+        "translation": "(My jesteśmy studentami)",
+        "options": [
+          "نحن",
+          "أنا",
+          "أنتم",
+          "هم"
+        ],
+        "correct": "نحن",
+        "explanation": "نحن (nahnu) to 'my' - pierwsza osoba mnoga. نحن طلاب = my jesteśmy studentami. 'My' tworzy wspólnotę, łączy ludzi w grupę. Studenci razem uczą się, wspierają, rozwijają. Bycie częścią grupy daje siłę i motywację."
+      },
+      {
+        "id": "pa_pr7",
+        "question": "_____ معلمون.",
+        "translation": "(Wy jesteście nauczycielami - do mężczyzn)",
+        "options": [
+          "أنتم",
+          "نحن",
+          "هم",
+          "أنتنّ"
+        ],
+        "correct": "أنتم",
+        "explanation": "أنتم (antum) to 'wy' dla grupy mężczyzn lub mieszanej. معلمون to mnoga forma męska 'nauczyciele'. Nauczyciele razem tworzą środowisko edukacyjne. Ich współpraca buduje lepszy system nauczania dla uczniów."
+      },
+      {
+        "id": "pa_pr8",
+        "question": "_____ طالبات.",
+        "translation": "(Wy jesteście studentkami - do kobiet)",
+        "options": [
+          "أنتنّ",
+          "أنتم",
+          "نحن",
+          "هنّ"
+        ],
+        "correct": "أنتنّ",
+        "explanation": "أنتنّ (antunna) to 'wy' dla grupy wyłącznie kobiet. طالبات to forma żeńska mnoga 'studentki' (końcówka ات). Ta precyzja rodzajowa w arabskim jest fascynująca. Kobiety w edukacji robią wielkie postępy - ich ambicje i zdolności inspirują."
+      },
+      {
+        "id": "pa_pr9",
+        "question": "_____ أطباء.",
+        "translation": "(Oni są lekarzami)",
+        "options": [
+          "هم",
+          "هنّ",
+          "نحن",
+          "أنتم"
+        ],
+        "correct": "هم",
+        "explanation": "هم (hum) to 'oni' - trzecia osoba mnoga męska. أطباء to forma nieregularna mnoga 'lekarze'. Arabski ma złożony system liczby mnogiej z formami regularnymi i nieregularnymi. Lekarze pracują zespołowo - każdy specjalista wnosi swoją wiedzę dla zdrowia pacjenta."
+      },
+      {
+        "id": "pa_pr10",
+        "question": "_____ معلمات.",
+        "translation": "(One są nauczycielkami)",
+        "options": [
+          "هنّ",
+          "هم",
+          "أنتنّ",
+          "نحن"
+        ],
+        "correct": "هنّ",
+        "explanation": "هنّ (hunna) to 'one' - trzecia osoba mnoga żeńska. معلمات to forma żeńska mnoga (końcówka ات). Ta forma używana wyłącznie dla grup kobiet. Nauczycielki mają ogromny wpływ na rozwój dzieci i młodzieży - kształtują charaktery i umysły."
+      },
+      {
+        "id": "pa_pr11",
+        "question": "_____ وأخي في المدرسة.",
+        "translation": "(Ja i mój brat jesteśmy w szkole)",
+        "options": [
+          "أنا",
+          "نحن",
+          "هو",
+          "أنتَ"
+        ],
+        "correct": "أنا",
+        "explanation": "أنا وأخي = ja i mój brat. و (wa) to 'i'. Łączenie osób przez 'i' to częsta konstrukcja. Szkoła to miejsce nauki i socjalizacji. Rodzeństwo razem w szkole często się wspiera - dzielą doświadczenia edukacyjne."
+      },
+      {
+        "id": "pa_pr12",
+        "question": "_____ في البيت.",
+        "translation": "(Oni są w domu)",
+        "options": [
+          "هم",
+          "نحن",
+          "أنتم",
+          "هنّ"
+        ],
+        "correct": "هم",
+        "explanation": "هم في البيت = oni są w domu. Dom to bezpieczna przystań - miejsce odpoczynku po dniu pracy czy szkoły. Być w domu z rodziną to przyjemność i komfort. Arabski dom tradycyjnie jest centrum życia rodzinnego."
+      },
+      {
+        "id": "pa_pr13",
+        "question": "_____ صديقاتي.",
+        "translation": "(One są moimi przyjaciółkami)",
+        "options": [
+          "هنّ",
+          "هم",
+          "نحن",
+          "أنتنّ"
+        ],
+        "correct": "هنّ",
+        "explanation": "هنّ صديقاتي = one są moimi przyjaciółkami. صديقات to forma żeńska mnoga 'przyjaciółki'. Przyjaźń między kobietami jest szczególna - dzielą sekrety, wspierają emocjonalnie, budują głębokie więzi zaufania."
+      },
+      {
+        "id": "pa_pr14",
+        "question": "_____ مهندس.",
+        "translation": "(On jest inżynierem)",
+        "options": [
+          "هو",
+          "أنتَ",
+          "أنا",
+          "نحن"
+        ],
+        "correct": "هو",
+        "explanation": "هو مهندس = on jest inżynierem. Inżynierowie projektują i budują - mosty, budynki, technologie. Ich praca kształtuje fizyczny świat wokół nas. Zawód wymaga precyzji matematycznej i kreatywności."
+      },
+      {
+        "id": "pa_pr15",
+        "question": "_____ جميلة.",
+        "translation": "(Ona jest piękna)",
+        "options": [
+          "هي",
+          "هو",
+          "أنتِ",
+          "أنا"
+        ],
+        "correct": "هي",
+        "explanation": "هي جميلة = ona jest piękna. جميلة to forma żeńska przymiotnika 'piękny' (dodatkowe ة). Piękno ma wiele form - wewnętrzne i zewnętrzne. Komplementy powinny doceniać całość osoby - jej charakter, dobroć, inteligencję, nie tylko wygląd."
+      }
+    ]
+  },
+  {
+    "key": "future_tense",
+    "name": "Czas przyszły",
+    "description": "المستقبل",
+    "iconName": "bolt",
+    "color": "#c084fc",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pa_fut1",
+        "question": "أنا _____ غداً.",
+        "translation": "(Będę studiować jutro)",
+        "options": [
+          "سأدرس",
+          "أدرس",
+          "درست",
+          "يدرس"
+        ],
+        "correct": "سأدرس",
+        "explanation": "Witaj w arabskim czasie przyszłym. Tworzy się go dodając prefiks سَ (sa-) lub słowo سوف (sawfa) przed czasownikiem teraźniejszym. سأدرس = سَ + أدرس (będę studiować). To jak dodać 'będę' przed czasownikiem. Polski ma oddzielne formy przyszłe, arabski używa prostego prefiksu. غداً (ghadan) to 'jutro' - słowo nadziei i nowych możliwości. Planowanie studiów to inwestycja w przyszłość."
+      },
+      {
+        "id": "pa_fut2",
+        "question": "أنتَ _____ إلى باريس.",
+        "translation": "(Pojedziesz do Paryża - do mężczyzny)",
+        "options": [
+          "ستذهب",
+          "تذهب",
+          "ذهبت",
+          "يذهب"
+        ],
+        "correct": "ستذهب",
+        "explanation": "ستذهب = سَ + تذهب (pojedziesz). Prefiks سَ dodany do formy teraźniejszej 'ty idiesz' tworzy przyszłość. Paryż jako cel podróży brzmi ekscytująco - miasto światła, sztuki, kultury. Podróże otwierają umysł na nowe doświadczenia i perspektywy. Arabski czas przyszły jest logiczny i przewidywalny."
+      },
+      {
+        "id": "pa_fut3",
+        "question": "هو _____ الكتاب.",
+        "translation": "(On przeczyta książkę)",
+        "options": [
+          "سيقرأ",
+          "يقرأ",
+          "قرأ",
+          "تقرأ"
+        ],
+        "correct": "سيقرأ",
+        "explanation": "سيقرأ = سَ + يقرأ (przeczyta). Czytanie w przyszłości to obietnica wiedzy i przyjemności. Książki przenoszą nas do innych światów, czasów, perspektyw. Każda przeczytana książka wzbogaca nasze zrozumienie świata. Arabski prefiks przyszłości jest elegancko prosty."
+      },
+      {
+        "id": "pa_fut4",
+        "question": "هي _____ الطعام.",
+        "translation": "(Ona ugotuje jedzenie)",
+        "options": [
+          "ستطبخ",
+          "تطبخ",
+          "طبخت",
+          "يطبخ"
+        ],
+        "correct": "ستطبخ",
+        "explanation": "ستطبخ = سَ + تطبخ (ugotuje). Gotowanie to forma sztuki i troski. Przygotowywanie posiłków dla innych wyraża miłość i gościnność. W kulturze arabskiej jedzenie ma głębokie znaczenie społeczne - łączy rodziny i przyjaciół. Wspólne posiłki budują więzi."
+      },
+      {
+        "id": "pa_fut5",
+        "question": "نحن _____ معاً.",
+        "translation": "(Będziemy pracować razem)",
+        "options": [
+          "سنعمل",
+          "نعمل",
+          "عملنا",
+          "يعمل"
+        ],
+        "correct": "سنعمل",
+        "explanation": "سنعمل = سَ + نعمل (będziemy pracować). معاً (ma'an) to 'razem' - piękne słowo współpracy. Praca zespołowa tworzy więcej niż suma indywidualnych wysiłków. Wspólne cele łączą ludzi i budują społeczności. Przyszłość jest lepsza gdy budujemy ją razem."
+      },
+      {
+        "id": "pa_fut6",
+        "question": "أنتم _____ الدرس.",
+        "translation": "(Nauczycie się lekcji - do mężczyzn)",
+        "options": [
+          "ستتعلمون",
+          "تتعلمon",
+          "تعلمتم",
+          "يتعلم"
+        ],
+        "correct": "ستتعلمon",
+        "explanation": "ستتعلمون = سَ + تتعلمون (nauczycie się). Nauka to podróż przez całe życie. Każda lekcja buduje na poprzedniej, tworząc piramidę wiedzy. Uczenie się razem jako grupa wzmacnia zrozumienie - można wymieniać pomysły i pomagać sobie nawzajem."
+      },
+      {
+        "id": "pa_fut7",
+        "question": "هم _____ الفيلم.",
+        "translation": "(Oni obejrzą film)",
+        "options": [
+          "سيشاهدون",
+          "يشاهدون",
+          "شاهدوا",
+          "تشاهد"
+        ],
+        "correct": "سيشاهدون",
+        "explanation": "سيشاهدون = سَ + يشاهدون (obejrzą). Oglądanie filmów to popularna forma rozrywki i relaksu. Filmy opowiadają historie, budzą emocje, uczą o różnych kulturach. Wspólne oglądanie filmu tworzy wspólne doświadczenie i temat do rozmowy."
+      },
+      {
+        "id": "pa_fut8",
+        "question": "أنا _____ معلماً.",
+        "translation": "(Będę nauczycielem)",
+        "options": [
+          "سأكون",
+          "أكون",
+          "كنت",
+          "يكون"
+        ],
+        "correct": "سأكون",
+        "explanation": "سأكون = سَ + أكون (będę). كون to czasownik 'być' w przyszłości. Bycie nauczycielem to szlachetne powołanie - kształtowanie młodych umysłów, inspirowanie ciekawości, przekazywanie wiedzy. Nauczyciele mają trwały wpływ na życie swoich uczniów."
+      },
+      {
+        "id": "pa_fut9",
+        "question": "أنتِ _____ سعيدة.",
+        "translation": "(Będziesz szczęśliwa - do kobiety)",
+        "options": [
+          "ستكونين",
+          "تكونين",
+          "كنتِ",
+          "يكون"
+        ],
+        "correct": "ستكونين",
+        "explanation": "ستكونين = سَ + تكونين (będziesz - żeńska). Szczęście w przyszłości to optymistyczna wizja. Każdy zasługuje na szczęście - to podstawowe ludzkie pragnienie. Budowanie szczęśliwej przyszłości wymaga pozytywnego nastawienia i cierpliwości."
+      },
+      {
+        "id": "pa_fut10",
+        "question": "هو _____ طبيباً.",
+        "translation": "(On będzie lekarzem)",
+        "options": [
+          "سيكون",
+          "يكون",
+          "كان",
+          "تكون"
+        ],
+        "correct": "سيكون",
+        "explanation": "سيكون = سَ + يكون (będzie). Marzenie o byciu lekarzem to szlachetna aspiracja. Lekarze pomagają ludziom, leczą choroby, ratują życia. To zawód wymagający wiedzy, empatii i poświęcenia. Przyszłość wymaga przygotowania w teraźniejszości."
+      },
+      {
+        "id": "pa_fut11",
+        "question": "هي _____ الحقيقة.",
+        "translation": "(Ona pozna prawdę)",
+        "options": [
+          "ستعرف",
+          "تعرف",
+          "عرفت",
+          "يعرف"
+        ],
+        "correct": "ستعرف",
+        "explanation": "ستعرف = سَ + تعرف (pozna). Poznanie prawdy to moment oświecenia. Prawda jest fundamentem zaufania i uczciwości. Czasem trudno ją zaakceptować, ale zawsze jest lepsza od ignorancji. Czas ujawnia wszystkie prawdy."
+      },
+      {
+        "id": "pa_fut12",
+        "question": "نحن _____ في المكتبة.",
+        "translation": "(Będziemy w bibliotece)",
+        "options": [
+          "سنكون",
+          "نكون",
+          "كنا",
+          "يكون"
+        ],
+        "correct": "سنكون",
+        "explanation": "سنكون = سَ + نكون (będziemy). Biblioteka to świątynia wiedzy - tysiące książek czeka na odkrycie. Bycie w bibliotece to spokojne, kontemplacyjne doświadczenie. Cisza sprzyja koncentracji i głębokiemu czytaniu. Biblioteki są skarbami społeczności."
+      },
+      {
+        "id": "pa_fut13",
+        "question": "أنتم _____ أصدقاء.",
+        "translation": "(Będziecie przyjaciółmi - do mężczyzn)",
+        "options": [
+          "ستكونون",
+          "تكونون",
+          "كنتم",
+          "يكون"
+        ],
+        "correct": "ستكونون",
+        "explanation": "ستكونون = سَ + تكونون (będziecie). Przyjaźń w przyszłości to obietnica trwałej więzi. Prawdziwa przyjaźń przetrwa próby czasu. Budowanie przyjaźni wymaga wzajemnego szacunku, zaufania i troski."
+      },
+      {
+        "id": "pa_fut14",
+        "question": "هم _____ ناجحين.",
+        "translation": "(Oni będą odnoszący sukcesy)",
+        "options": [
+          "سيكونون",
+          "يكونون",
+          "كانوا",
+          "تكون"
+        ],
+        "correct": "سيكونون",
+        "explanation": "سيكونون = سَ + يكونون (będą). Sukces ma wiele definicji - może być zawodowy, osobisty, duchowy. Każdy definiuje sukces inaczej. Ważne jest dążenie do własnych celów, nie porównywanie się z innymi. Sukces to podróż, nie cel."
+      },
+      {
+        "id": "pa_fut15",
+        "question": "أنتنّ _____ معلمات.",
+        "translation": "(Będziecie nauczycielkami - do kobiet)",
+        "options": [
+          "ستكنّ",
+          "تكنّ",
+          "كنتنّ",
+          "يكون"
+        ],
+        "correct": "ستكنّ",
+        "explanation": "ستكنّ = سَ + تكنّ (będziecie - żeńska forma mnoga). Nauczycielki mają ogromny wpływ na młode pokolenie. Ich cierpliwość, wiedza i troska kształtują przyszłość społeczeństwa. Edukacja to potężne narzędzie zmiany społecznej."
+      }
+    ]
+  },
+  {
+    "key": "dual_form",
+    "name": "Forma podwójna",
+    "description": "المثنى",
+    "iconName": "person.2",
+    "color": "#22d3ee",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pa_dual1",
+        "question": "هذان _____.",
+        "translation": "(To są dwaj studenci)",
+        "options": [
+          "طالبان",
+          "طالب",
+          "طلاب",
+          "طالبة"
+        ],
+        "correct": "طالبان",
+        "explanation": "Arabski ma specjalną formę dla pary rzeczy - nie pojedynczej, nie mnogiej, ale dokładnie dwóch. To się nazywa dual (المثنى). Dodaj ان (an) lub ين (ayn) do rzeczownika. طالب + ان = طالبان (dwaj studenci). Polski nie ma tego - używamy 'dwóch studentów'. Ta precyzja jest fascynującą cechą arabskiego. Pokazuje jak szczegółowy może być język."
+      },
+      {
+        "id": "pa_dual2",
+        "question": "رأيت _____.",
+        "translation": "(Widziałem dwoje dzieci)",
+        "options": [
+          "طفلين",
+          "طفل",
+          "أطفال",
+          "طفلة"
+        ],
+        "correct": "طفلين",
+        "explanation": "W przypadku dopełnienia dual używa ين zamiast ان. طفل + ين = طفلين (dwoje dzieci). To jak polski system przypadków - forma zmienia się zależnie od funkcji w zdaniu. Dzieci to radość życia - ich śmiech i energia rozświetlają świat. Para dzieci bawiących się razem to piękny widok."
+      },
+      {
+        "id": "pa_dual3",
+        "question": "هاتان _____.",
+        "translation": "(To są dwie książki)",
+        "options": [
+          "كتابان",
+          "كتاب",
+          "كتب",
+          "كتابة"
+        ],
+        "correct": "كتابان",
+        "explanation": "كتاب + ان = كتابان (dwie książki). Dual działa dla wszystkich rzeczowników. هاتان to żeńska forma 'te dwie'. Książki to okna do innych światów. Para książek może być początkkiem małej biblioteki domowej. Czytanie wzbogaca umysł i wyobraźnię."
+      },
+      {
+        "id": "pa_dual4",
+        "question": "عندي _____.",
+        "translation": "(Mam dwa długopisy)",
+        "options": [
+          "قلمان",
+          "قلم",
+          "أقلام",
+          "قلمة"
+        ],
+        "correct": "قلمان",
+        "explanation": "قلم + ان = قلمان (dwa długopisy). Dual dla podmiotowych konstrukcji. Długopisy to podstawowe narzędzia pisania. Mieć zapasowy długopis to zawsze dobry pomysł. Pisanie ręczne ma swój urok w erze cyfrowej."
+      },
+      {
+        "id": "pa_dual5",
+        "question": "سافرت مع _____.",
+        "translation": "(Podróżowałem z dwoma przyjaciółmi)",
+        "options": [
+          "صديقين",
+          "صديق",
+          "أصدقاء",
+          "صديقة"
+        ],
+        "correct": "صديقين",
+        "explanation": "صديق + ين = صديقين (dwóch przyjaciół). Po przyimkach używamy formy ين. Podróżowanie z przyjaciółmi tworzy wspaniałe wspomnienia. Dzielenie przygód wzmacnia więzi. Dwóch przyjaciół to idealna liczba - można rozmawiać i podejmować decyzje łatwo."
+      },
+      {
+        "id": "pa_dual6",
+        "question": "هما _____.",
+        "translation": "(Oni dwaj są nauczycielami)",
+        "options": [
+          "معلمان",
+          "معلم",
+          "معلمون",
+          "معلمة"
+        ],
+        "correct": "معلمان",
+        "explanation": "معلم + ان = معلمان (dwaj nauczyciele). هما to zaimek dual 'oni dwaj/one dwie'. Dwóch nauczycieli może prowadzić zajęcia razem, uzupełniając swoje mocne strony. Współpraca między nauczycielami wzbogaca doświadczenie edukacyjne uczniów."
+      },
+      {
+        "id": "pa_dual7",
+        "question": "أكلت _____.",
+        "translation": "(Zjadłem dwa jabłka)",
+        "options": [
+          "تفاحتين",
+          "تفاحة",
+          "تفاح",
+          "تفاحات"
+        ],
+        "correct": "تفاحتين",
+        "explanation": "تفاحة + ين = تفاحتين (dwa jabłka). Dla rzeczowników żeńskich ة zmienia się w ت przed dodaniem dual. Jabłka są zdrowe i smaczne. Jedzenie owoców dostarcza witamin i energii. Dwa jabłka dziennie to dobry nawyk."
+      },
+      {
+        "id": "pa_dual8",
+        "question": "في الغرفة _____.",
+        "translation": "(W pokoju są dwa łóżka)",
+        "options": [
+          "سريران",
+          "سرير",
+          "أسرّة",
+          "سريرة"
+        ],
+        "correct": "سريران",
+        "explanation": "سرير + ان = سريران (dwa łóżka). Dual dla mebli i przedmiotów. Dwa łóżka w pokoju sugerują gościnność lub rodzeństwo. Wspólny pokój uczy dzielenia się przestrzenią i szacunku dla prywatności innych."
+      },
+      {
+        "id": "pa_dual9",
+        "question": "قرأت _____.",
+        "translation": "(Przeczytałem dwie gazety)",
+        "options": [
+          "جريدتين",
+          "جريدة",
+          "جرائد",
+          "جريدات"
+        ],
+        "correct": "جريدتين",
+        "explanation": "جريدة + ين = جريدتين (dwie gazety). Czytanie gazet informuje o świecie. Porównywanie dwóch źródeł daje szerszą perspektywę. Krytyczne myślenie wymaga sprawdzania informacji z różnych źródeł."
+      },
+      {
+        "id": "pa_dual10",
+        "question": "عنده _____ جميلتان.",
+        "translation": "(On ma dwie piękne córki)",
+        "options": [
+          "ابنتان",
+          "ابنة",
+          "بنات",
+          "ابن"
+        ],
+        "correct": "ابنتan",
+        "explanation": "ابنة + ان = ابنتان (dwie córki). جميلتان to dual żeński przymiotnika. Córki to radość rodziców. Dwie córki mogą być bliskimi siostrami, wspierającymi się nawzajem. Rodzina jest fundamentem szczęścia."
+      },
+      {
+        "id": "pa_dual11",
+        "question": "شاهدت _____.",
+        "translation": "(Obejrzałem dwa filmy)",
+        "options": [
+          "فيلمين",
+          "فيلم",
+          "أفلام",
+          "فيلمة"
+        ],
+        "correct": "فيلمين",
+        "explanation": "فيلم + ين = فيلمين (dwa filmy). Maraton filmowy z dwoma filmami to przyjemny wieczór. Filmy opowiadają różne historie, budzą różne emocje. Wybór dwóch dobrych filmów może stworzyć tematyczny wieczór."
+      },
+      {
+        "id": "pa_dual12",
+        "question": "في الصف _____.",
+        "translation": "(W klasie są dwaj nauczyciele)",
+        "options": [
+          "معلمان",
+          "معلم",
+          "معلمون",
+          "معلمة"
+        ],
+        "correct": "معلمان",
+        "explanation": "معلم + ان = معلمان (dwaj nauczyciele). Dwóch nauczycieli w klasie może prowadzić lekcję bardziej dynamicznie. Jeden może wyjaśniać, drugi pomagać uczniom indywidualnie. Współpraca wzbogaca proces uczenia."
+      },
+      {
+        "id": "pa_dual13",
+        "question": "زرت _____.",
+        "translation": "(Odwiedziłem dwa muzea)",
+        "options": [
+          "متحفين",
+          "متحف",
+          "متاحف",
+          "متحفة"
+        ],
+        "correct": "متحفين",
+        "explanation": "متحف + ين = متحفين (dwa muzea). Wizyty w muzeach są edukacyjne i inspirujące. Każde muzeum opowiada różne historie, prezentuje różne okresy lub tematy. Dwa muzea w jeden dzień to ambitny, ale satysfakcjonujący plan."
+      },
+      {
+        "id": "pa_dual14",
+        "question": "اشتريت _____.",
+        "translation": "(Kupiłem dwie koszule)",
+        "options": [
+          "قميصين",
+          "قميص",
+          "قمصان",
+          "قميصة"
+        ],
+        "correct": "قميصين",
+        "explanation": "قميص + ين = قميصين (dwie koszule). Kupowanie ubrań to praktyczna konieczność i czasem przyjemność. Dwie koszule dają opcje stylizacji. Dobrze dobrana garderoba buduje pewność siebie."
+      },
+      {
+        "id": "pa_dual15",
+        "question": "عندها _____.",
+        "translation": "(Ona ma dwa koty)",
+        "options": [
+          "قطان",
+          "قط",
+          "قطط",
+          "قطة"
+        ],
+        "correct": "قطان",
+        "explanation": "قط + ان = قطان (dwa koty). Koty to popularne zwierzęta domowe. Dwa koty mogą się bawić razem, tworzyć towarzystwo sobie nawzajem. Zwierzęta uczą odpowiedzialności i empatii. Opieka nad zwierzętami przynosi radość i relaks."
+      }
+    ]
+  }
+]

@@ -1,0 +1,1232 @@
+[
+  {
+    "key": "present_tense",
+    "name": "Le Présent",
+    "description": "Present Tense",
+    "iconName": "clock",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ef_pres1",
+        "question": "Je _____ français.",
+        "translation": "(I speak French)",
+        "options": [
+          "parle",
+          "parles",
+          "parlons",
+          "parlent"
+        ],
+        "correct": "parle",
+        "explanation": "Welcome to French verbs, where each person has its own unique ending. With 'je' (I), regular -ER verbs like 'parler' end in -e. The beauty is that 'je parle' sounds like 'parle' - the final 'e' is silent. French pronunciation often differs from spelling, creating a melodic quality. While English says 'I speak' with an auxiliary, French elegantly conjugates the verb itself. This -e ending for 'je' is consistent across thousands of -ER verbs, making it wonderfully predictable once you learn the pattern."
+      },
+      {
+        "id": "ef_pres2",
+        "question": "Tu _____ à Paris.",
+        "translation": "(You live in Paris)",
+        "options": [
+          "habites",
+          "habite",
+          "habitons",
+          "habitent"
+        ],
+        "correct": "habites",
+        "explanation": "With 'tu' (informal you), -ER verbs take the ending -es. 'Habiter' becomes 'tu habites'. Though spelled with -es, it sounds identical to 'je habite' - another charming French quirk where spelling and sound diverge. French has two forms for 'you': tu (informal, with friends) and vous (formal or plural). Paris is the luminous heart of French culture, art, and cuisine. The -es ending is your trusty companion for all tu forms with regular -ER verbs."
+      },
+      {
+        "id": "ef_pres3",
+        "question": "Il _____ un livre.",
+        "translation": "(He reads a book)",
+        "options": [
+          "lit",
+          "lis",
+          "lisons",
+          "lisent"
+        ],
+        "correct": "lit",
+        "explanation": "For 'il/elle/on' (he/she/one), -IR verbs like 'lire' follow patterns. 'Lire' becomes 'il lit'. Notice how compact French is - no need for articles like 'a book' becomes simply 'un livre'. The third person singular often has distinctive forms that differ from first and second person. Reading (la lecture) is deeply cherished in French culture, with bookstores and libraries forming the soul of neighborhoods. The form 'lit' is pronounced 'lee' - elegant and concise."
+      },
+      {
+        "id": "ef_pres4",
+        "question": "Nous _____ le français.",
+        "translation": "(We learn French)",
+        "options": [
+          "apprenons",
+          "apprends",
+          "apprenez",
+          "apprennent"
+        ],
+        "correct": "apprenons",
+        "explanation": "With 'nous' (we), verbs take -ons. 'Apprendre' becomes 'nous apprenons'. This ending sounds exactly as written: ap-pre-NON. The -ons is your collective marker, expressing togetherness and shared action. Learning French opens doors to a rich world of literature, philosophy, cinema, and music. The nous form is wonderfully regular and appears in almost all verbs, making it one of the easier forms to master. It creates a sense of community - nous apprenons ensemble (we learn together)."
+      },
+      {
+        "id": "ef_pres5",
+        "question": "Vous _____ bien.",
+        "translation": "(You work well)",
+        "options": [
+          "travaillez",
+          "travaille",
+          "travaillons",
+          "travaillent"
+        ],
+        "correct": "travaillez",
+        "explanation": "With 'vous' (formal you or plural you), verbs end in -ez. 'Travailler' becomes 'vous travaillez', pronounced tra-va-YAY. The -ez sounds like the English 'ay' in 'day'. French uses 'vous' for respect (singular formal) or addressing groups. This dual function makes 'vous' versatile and essential. The -ez ending is remarkably consistent across conjugations. Work culture in France values balance - the famous 35-hour work week reflects this philosophy of living well."
+      },
+      {
+        "id": "ef_pres6",
+        "question": "Ils _____ au café.",
+        "translation": "(They eat at the café)",
+        "options": [
+          "mangent",
+          "mange",
+          "manges",
+          "mangeons"
+        ],
+        "correct": "mangent",
+        "explanation": "For 'ils/elles' (they), verbs end in -ent. 'Manger' becomes 'ils mangent', but here's French magic: though spelled -ent, it's pronounced 'MONJ' - the ending is silent. So 'mange', 'manges', and 'mangent' all sound identical. The café is central to French life - a place for coffee, conversation, and people-watching. The -ent ending is your plural marker for the third person, consistent across most verbs."
+      },
+      {
+        "id": "ef_pres7",
+        "question": "Je _____ à l'école.",
+        "translation": "(I go to school)",
+        "options": [
+          "vais",
+          "vas",
+          "va",
+          "allons"
+        ],
+        "correct": "vais",
+        "explanation": "'Aller' (to go) is irregular but essential - one of the most used verbs in French. 'Je vais' is your form, pronounced 'vay'. This verb doesn't follow patterns, so learning each form individually is worthwhile. 'À l'école' (to school) shows French contraction - 'à le' becomes 'à l''. The verb 'aller' also forms the near future: 'je vais parler' (I'm going to speak). This makes it doubly important to master."
+      },
+      {
+        "id": "ef_pres8",
+        "question": "Tu _____ du café.",
+        "translation": "(You drink coffee)",
+        "options": [
+          "bois",
+          "boit",
+          "buvons",
+          "boivent"
+        ],
+        "correct": "bois",
+        "explanation": "'Boire' (to drink) is irregular with stem changes. 'Tu bois' uses the 'boi-' stem. French pronunciation: 'bwa'. The verb changes its stem depending on person: boi- for je/tu, buv- for nous/vous/ils. These stem-changing verbs add character to French. Coffee culture in France is refined - from espresso to café au lait, each has its moment. The form 'bois' is compact and elegant, typical of French efficiency."
+      },
+      {
+        "id": "ef_pres9",
+        "question": "Elle _____ une chanson.",
+        "translation": "(She sings a song)",
+        "options": [
+          "chante",
+          "chantes",
+          "chantons",
+          "chantent"
+        ],
+        "correct": "chante",
+        "explanation": "For 'elle' (she), regular -ER verbs end in -e. 'Chanter' becomes 'elle chante', pronounced 'shont'. The final -e is silent, making it sound exactly like 'je chante'. French music tradition is rich - from chanson française to modern pop. The verb 'chanter' is beautifully regular and follows all the standard -ER patterns. Singing is embedded in French culture, from street performers to grand opera houses."
+      },
+      {
+        "id": "ef_pres10",
+        "question": "Nous _____ la télé.",
+        "translation": "(We watch TV)",
+        "options": [
+          "regardons",
+          "regarde",
+          "regardez",
+          "regardent"
+        ],
+        "correct": "regardons",
+        "explanation": "With 'nous', 'regarder' becomes 'regardons'. The -ons ending is clear and pronounced: re-gar-DON. French television offers excellent content for language learners - news, films, series. The verb 'regarder' means both 'to watch' and 'to look at', showing French economy of language. This nous form is your go-to collective action marker, regular and reliable across countless verbs."
+      },
+      {
+        "id": "ef_pres11",
+        "question": "Vous _____ français.",
+        "translation": "(You understand French)",
+        "options": [
+          "comprenez",
+          "comprends",
+          "comprenons",
+          "comprennent"
+        ],
+        "correct": "comprenez",
+        "explanation": "'Comprendre' (to understand) becomes 'vous comprenez'. The -ez ending gives it a polished sound: com-pre-NAY. Understanding develops gradually as you immerse yourself in the language. This verb is related to 'apprendre' (to learn) and 'prendre' (to take), all sharing the -prendre root. The vous form with -ez is wonderfully consistent and shows respect or addresses groups."
+      },
+      {
+        "id": "ef_pres12",
+        "question": "Ils _____ en France.",
+        "translation": "(They travel in France)",
+        "options": [
+          "voyagent",
+          "voyage",
+          "voyages",
+          "voyageons"
+        ],
+        "correct": "voyagent",
+        "explanation": "For 'ils', 'voyager' becomes 'voyagent', pronounced vwa-YAZH (silent -ent). France is a traveler's dream - from Alpine peaks to Mediterranean beaches, from Paris museums to Provence lavender fields. The verb 'voyager' is regular and follows all -ER patterns beautifully. Travel (le voyage) is cherished in French culture - the art of discovering new places and experiences."
+      },
+      {
+        "id": "ef_pres13",
+        "question": "Je _____ français.",
+        "translation": "(I am learning French)",
+        "options": [
+          "apprends",
+          "apprend",
+          "apprenons",
+          "apprennent"
+        ],
+        "correct": "apprends",
+        "explanation": "'Apprendre' (to learn) becomes 'j'apprends' (je contracts to j' before vowels). This verb has a stem change: appren- for most forms. The 'ds' at the end is silent, so it sounds like 'a-pron'. Learning French is a journey of discovery - each new word opens cultural doors. The form 'apprends' is the same for je and tu, differentiated only by the pronoun."
+      },
+      {
+        "id": "ef_pres14",
+        "question": "Elle _____ le piano.",
+        "translation": "(She plays the piano)",
+        "options": [
+          "joue",
+          "joues",
+          "jouons",
+          "jouent"
+        ],
+        "correct": "joue",
+        "explanation": "For 'elle', 'jouer' becomes 'joue', pronounced 'zhoo'. This regular -ER verb is essential for talking about music, sports, and games. 'Jouer du piano' (to play the piano) uses 'du' for instruments. French distinguishes: jouer à (for sports/games) vs jouer de (for instruments). This subtle preposition difference adds precision to expression. The verb 'jouer' opens conversations about hobbies and passions."
+      },
+      {
+        "id": "ef_pres15",
+        "question": "Nous _____ ensemble.",
+        "translation": "(We work together)",
+        "options": [
+          "travaillons",
+          "travaille",
+          "travaillez",
+          "travaillent"
+        ],
+        "correct": "travaillons",
+        "explanation": "'Travailler' becomes 'nous travaillons' with the reliable -ons ending. 'Ensemble' (together) is a beautiful word embodying cooperation and community. French work culture values collaboration and collective success. The double-L in 'travaillons' is pronounced as a 'y' sound (tra-va-YON), a phonetic feature that makes French melodious. This nous form creates unity - working together toward shared goals."
+      }
+    ]
+  },
+  {
+    "key": "articles",
+    "name": "Les Articles",
+    "description": "Articles (le, la, un, une)",
+    "iconName": "doc.text",
+    "color": "#c084fc",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ef_art1",
+        "question": "_____ livre est intéressant.",
+        "translation": "(The book is interesting)",
+        "options": [
+          "Le",
+          "La",
+          "L'",
+          "Les"
+        ],
+        "correct": "Le",
+        "explanation": "French nouns have grammatical gender - masculine or feminine. 'Le livre' (the book) is masculine. Unlike English where 'the' works for everything, French has 'le' (masculine) and 'la' (feminine). There's no logic to gender assignments - you simply learn each noun with its article. Books (les livres) are treasured in French culture. The word 'livre' comes from Latin 'liber'. Learning articles with nouns from the start builds proper habits."
+      },
+      {
+        "id": "ef_art2",
+        "question": "_____ table est grande.",
+        "translation": "(The table is big)",
+        "options": [
+          "La",
+          "Le",
+          "L'",
+          "Les"
+        ],
+        "correct": "La",
+        "explanation": "'La table' (the table) is feminine. While English needs no gender, French assigns one to every noun. Furniture vocabulary often appears feminine, but this isn't a rule - each word must be learned individually. The feminine article 'la' sounds softer than masculine 'le'. French tables are often gathering places for long meals with family and friends, central to the culture of 'vivre ensemble' (living together)."
+      },
+      {
+        "id": "ef_art3",
+        "question": "_____ école est fermée.",
+        "translation": "(The school is closed)",
+        "options": [
+          "L'",
+          "Le",
+          "La",
+          "Les"
+        ],
+        "correct": "L'",
+        "explanation": "Before vowels, 'le' and 'la' contract to 'l''. 'L'école' (the school) is feminine, but the gender isn't visible in the article. You'll need context or adjectives to determine it: 'l'école est fermée' (closed, feminine form). This contraction makes French flow smoothly, avoiding vowel clashes. Schools (les écoles) in France have a distinctive system with long lunch breaks and Wednesday afternoons often free."
+      },
+      {
+        "id": "ef_art4",
+        "question": "_____ enfants jouent.",
+        "translation": "(The children play)",
+        "options": [
+          "Les",
+          "Le",
+          "La",
+          "L'"
+        ],
+        "correct": "Les",
+        "explanation": "'Les' is the plural article for both genders. 'Les enfants' (the children) works whether masculine, feminine, or mixed. This simplifies plurals - just one article to remember. The 's' in 'les' creates liaison before vowels: 'les enfants' sounds like 'lay-zon-fon'. Children (les enfants) are cherished in French society, with excellent family support systems and education."
+      },
+      {
+        "id": "ef_art5",
+        "question": "J'ai _____ chat.",
+        "translation": "(I have a cat)",
+        "options": [
+          "un",
+          "une",
+          "le",
+          "la"
+        ],
+        "correct": "un",
+        "explanation": "'Un' is the indefinite article for masculine nouns. 'Un chat' (a cat) is masculine. Unlike definite articles (le/la = the specific one), indefinite articles (un/une = any one) introduce new or non-specific items. Cats are beloved pets in France. The pronunciation 'uhn' is nasal and distinctive. Learning when to use definite vs indefinite articles is key to natural French expression."
+      },
+      {
+        "id": "ef_art6",
+        "question": "C'est _____ maison.",
+        "translation": "(It's a house)",
+        "options": [
+          "une",
+          "un",
+          "la",
+          "le"
+        ],
+        "correct": "une",
+        "explanation": "'Une' is the indefinite article for feminine nouns. 'Une maison' (a house) is feminine. French houses vary from Parisian apartments to countryside cottages, each with character and history. The 'une' sounds like 'oon' - short and crisp. When introducing something for the first time, use un/une. When referring to something specific or previously mentioned, use le/la."
+      },
+      {
+        "id": "ef_art7",
+        "question": "_____ ami est sympa.",
+        "translation": "(The friend is nice)",
+        "options": [
+          "L'",
+          "Le",
+          "La",
+          "Les"
+        ],
+        "correct": "L'",
+        "explanation": "'L'ami' contracts from 'le ami' because 'ami' starts with a vowel. 'Ami' (friend) is masculine. Friendship (l'amitié) is deeply valued in French culture - friends gather regularly for meals, conversation, and shared experiences. The contraction to 'l'' creates smooth, flowing French. When writing, the apostrophe shows the contraction; when speaking, it's seamless."
+      },
+      {
+        "id": "ef_art8",
+        "question": "_____ voiture est rouge.",
+        "translation": "(The car is red)",
+        "options": [
+          "La",
+          "Le",
+          "L'",
+          "Les"
+        ],
+        "correct": "La",
+        "explanation": "'La voiture' (the car) is feminine. Vehicles can be any gender in French - 'la voiture' (car, feminine), 'le camion' (truck, masculine). Color descriptions follow the noun in French, unlike English. Red cars have style - France is home to iconic car designs. The feminine 'la' identifies the gender immediately, helping you use correct adjective agreements."
+      },
+      {
+        "id": "ef_art9",
+        "question": "J'aime _____ musique.",
+        "translation": "(I love music)",
+        "options": [
+          "la",
+          "le",
+          "une",
+          "un"
+        ],
+        "correct": "la",
+        "explanation": "For general concepts or things in general, French uses the definite article where English uses none. 'J'aime la musique' (I love music in general). This is a key difference: English says 'I love music', French says 'I love THE music'. 'La musique' is feminine. French musical tradition is rich - from classical to chanson to modern genres. This article usage takes practice but becomes natural."
+      },
+      {
+        "id": "ef_art10",
+        "question": "_____ pommes sont bonnes.",
+        "translation": "(The apples are good)",
+        "options": [
+          "Les",
+          "Le",
+          "La",
+          "L'"
+        ],
+        "correct": "Les",
+        "explanation": "'Les pommes' (the apples) uses the plural article 'les'. Apples (feminine singular: la pomme) become 'les pommes' in plural. The final 's' in 'pommes' is silent - French plurals are often written but not heard. French markets overflow with apple varieties in autumn. The article 'les' works for both genders in plural, simplifying the system."
+      },
+      {
+        "id": "ef_art11",
+        "question": "Il y a _____ chien.",
+        "translation": "(There is a dog)",
+        "options": [
+          "un",
+          "une",
+          "le",
+          "la"
+        ],
+        "correct": "un",
+        "explanation": "'Un chien' (a dog) is masculine and indefinite. 'Il y a' (there is/there are) always introduces something with un/une for singular, des for plural. Dogs are popular in France - you'll see them in cafés, restaurants, even shops. The expression 'il y a' is essential for describing what exists or is present. Use indefinite articles when introducing new elements into conversation."
+      },
+      {
+        "id": "ef_art12",
+        "question": "_____ eau est froide.",
+        "translation": "(The water is cold)",
+        "options": [
+          "L'",
+          "Le",
+          "La",
+          "Les"
+        ],
+        "correct": "L'",
+        "explanation": "'L'eau' (the water) is feminine, contracted from 'la eau'. Water is feminine in French - 'l'eau'. France is famous for its mineral waters - Évian, Perrier, Vittel. The contraction creates smooth pronunciation. Gender isn't always logical: water (feminine), wine (masculine), beer (feminine). Learning these with their articles from the start prevents mistakes later."
+      },
+      {
+        "id": "ef_art13",
+        "question": "C'est _____ belle ville.",
+        "translation": "(It's a beautiful city)",
+        "options": [
+          "une",
+          "un",
+          "la",
+          "le"
+        ],
+        "correct": "une",
+        "explanation": "'Une ville' (a city) is feminine. When adjectives come before the noun (like 'belle'), they agree in gender: 'une belle ville'. Cities (les villes) across France each have unique character - from bustling Paris to charming provincial towns. The indefinite article 'une' introduces a non-specific city. This structure 'c'est + article + adjective + noun' is common in descriptions."
+      },
+      {
+        "id": "ef_art14",
+        "question": "_____ soleil brille.",
+        "translation": "(The sun shines)",
+        "options": [
+          "Le",
+          "La",
+          "L'",
+          "Les"
+        ],
+        "correct": "Le",
+        "explanation": "'Le soleil' (the sun) is masculine. Celestial bodies have assigned genders in French: le soleil (sun, masculine), la lune (moon, feminine), les étoiles (stars, feminine). The sun shining is particularly appreciated in France, where outdoor café culture thrives in good weather. The masculine 'le' is your marker here, leading to masculine adjective agreements."
+      },
+      {
+        "id": "ef_art15",
+        "question": "J'achète _____ pain.",
+        "translation": "(I buy bread)",
+        "options": [
+          "du",
+          "de la",
+          "des",
+          "un"
+        ],
+        "correct": "du",
+        "explanation": "'Du pain' (some bread) uses the partitive article 'du' (de + le = du). Partitive articles express 'some' or unspecified quantities. Bread (le pain) is masculine, so we use 'du'. Bread is sacred in French culture - fresh baguettes daily are a tradition. The partitive is unique to French: du (masculine), de la (feminine), des (plural). It's essential for food, drinks, and abstract concepts."
+      }
+    ]
+  },
+  {
+    "key": "passe_compose",
+    "name": "Passé Composé",
+    "description": "Present Perfect / Past Tense",
+    "iconName": "clock.arrow.circlepath",
+    "color": "#fbbf24",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ef_pc1",
+        "question": "J'_____ mangé.",
+        "translation": "(I have eaten / I ate)",
+        "options": [
+          "ai",
+          "as",
+          "a",
+          "avons"
+        ],
+        "correct": "ai",
+        "explanation": "Welcome to the passé composé, the most common past tense in spoken French. It combines an auxiliary (avoir or être) with a past participle. Most verbs use 'avoir'. 'J'ai mangé' means both 'I have eaten' and 'I ate' - French doesn't distinguish like English does. The auxiliary 'avoir' conjugates: j'ai, tu as, il a, nous avons, vous avez, ils ont. The past participle 'mangé' stays the same. This compound structure may feel complex at first, but it becomes natural with practice."
+      },
+      {
+        "id": "ef_pc2",
+        "question": "Tu _____ fini.",
+        "translation": "(You have finished / You finished)",
+        "options": [
+          "as",
+          "ai",
+          "a",
+          "avez"
+        ],
+        "correct": "as",
+        "explanation": "With 'tu', we use 'as' from 'avoir'. 'Tu as fini' expresses completed action. For -IR verbs like 'finir', the past participle ends in -i: finir → fini. The pronunciation is 'tü a fee-nee'. This tense is perfect for talking about recent events, experiences, or any completed actions. The passé composé brings the past into conversation naturally - 'tu as fini' feels immediate and relevant, connecting past to present."
+      },
+      {
+        "id": "ef_pc3",
+        "question": "Il _____ parlé français.",
+        "translation": "(He has spoken / He spoke French)",
+        "options": [
+          "a",
+          "ai",
+          "as",
+          "avons"
+        ],
+        "correct": "a",
+        "explanation": "For il/elle/on, we use 'a' from 'avoir'. 'Il a parlé' shows a completed action. Regular -ER verbs form the past participle by changing -er to -é: parler → parlé. This -é ending is wonderfully consistent across thousands of verbs. The passé composé is your go-to for storytelling, describing experiences, and discussing what happened. French conversation flows naturally through this tense."
+      },
+      {
+        "id": "ef_pc4",
+        "question": "Nous _____ voyagé.",
+        "translation": "(We have traveled / We traveled)",
+        "options": [
+          "avons",
+          "ai",
+          "as",
+          "ont"
+        ],
+        "correct": "avons",
+        "explanation": "'Nous avons voyagé' expresses collective past action. The -ons in 'avons' creates that sense of togetherness. Travel experiences are often shared - 'nous avons voyagé en France' (we traveled in France). The past participle 'voyagé' comes from 'voyager' (removing -er, adding -é). This tense captures memories and experiences beautifully, making them part of present conversation."
+      },
+      {
+        "id": "ef_pc5",
+        "question": "Vous _____ compris.",
+        "translation": "(You have understood / You understood)",
+        "options": [
+          "avez",
+          "ai",
+          "as",
+          "ont"
+        ],
+        "correct": "avez",
+        "explanation": "'Vous avez compris' uses the formal/plural 'vous'. 'Comprendre' has an irregular past participle: compris. Many common verbs have irregular participles that must be memorized: prendre → pris, mettre → mis, faire → fait. These irregularities add character to French. Understanding (comprendre) develops gradually as you immerse in the language - 'vous avez compris' is a moment of achievement."
+      },
+      {
+        "id": "ef_pc6",
+        "question": "Ils _____ travaillé.",
+        "translation": "(They have worked / They worked)",
+        "options": [
+          "ont",
+          "ai",
+          "as",
+          "avons"
+        ],
+        "correct": "ont",
+        "explanation": "'Ils ont travaillé' expresses completed work. The 'ont' sounds like 'on' (nasalized). For ils/elles, 'ont' is your auxiliary. The past participle 'travaillé' is regular (-er → -é). This tense is perfect for describing what people did - at work, at home, in life. French work culture values results and completion, making this tense essential for professional contexts."
+      },
+      {
+        "id": "ef_pc7",
+        "question": "Je _____ allé à Paris.",
+        "translation": "(I have gone / I went to Paris - male)",
+        "options": [
+          "suis",
+          "ai",
+          "es",
+          "sommes"
+        ],
+        "correct": "suis",
+        "explanation": "Here's something special: movement verbs use 'être' (not 'avoir'). 'Je suis allé' means 'I went/have gone'. With 'être', the past participle agrees with the subject: allé (masculine), allée (feminine), allés (masculine plural), allées (feminine plural). The DR & MRS VANDERTRAMP acronym helps remember 'être' verbs: Devenir, Revenir, Monter, Rester, Sortir, Venir, Aller, Naître, Descendre, Entrer, Rentrer, Tomber, Retourner, Arriver, Mourir, Partir. Going to Paris is a dream for many language learners."
+      },
+      {
+        "id": "ef_pc8",
+        "question": "Elle _____ partie.",
+        "translation": "(She has left / She left)",
+        "options": [
+          "est",
+          "ai",
+          "es",
+          "sommes"
+        ],
+        "correct": "est",
+        "explanation": "'Elle est partie' uses 'être' because 'partir' is a movement verb. Notice 'partie' with -e (feminine agreement). The past participle agrees: parti (masculine), partie (feminine). This agreement is visual in writing but often silent in speech (both sound like 'par-tee'). Leaving (partir) implies movement away, hence 'être'. This tense captures the moment of departure beautifully."
+      },
+      {
+        "id": "ef_pc9",
+        "question": "Nous _____ arrivés.",
+        "translation": "(We have arrived / We arrived)",
+        "options": [
+          "sommes",
+          "ai",
+          "as",
+          "ont"
+        ],
+        "correct": "sommes",
+        "explanation": "'Nous sommes arrivés' uses 'être' (arrival is movement). 'Arrivés' takes -s for plural, and for masculine/mixed groups we use the masculine form. If it's all women, it would be 'arrivées'. Arriving (arriver) is the culmination of a journey. This verb appears constantly in travel contexts. The 'être' verbs with agreement might seem complex, but they become intuitive - the agreement helps clarify who's involved."
+      },
+      {
+        "id": "ef_pc10",
+        "question": "Tu _____ resté.",
+        "translation": "(You have stayed / You stayed - male)",
+        "options": [
+          "es",
+          "ai",
+          "as",
+          "est"
+        ],
+        "correct": "es",
+        "explanation": "'Tu es resté' uses 'être' because 'rester' (to stay) implies a state change. Even though staying seems static, grammatically it's considered movement/change in French logic. For a female, it would be 'tu es restée' (with -e). The verb 'rester' is essential for describing where you stayed, how long, and why. The passé composé brings past experiences into present conversation."
+      },
+      {
+        "id": "ef_pc11",
+        "question": "J'_____ lu ce livre.",
+        "translation": "(I have read / I read this book)",
+        "options": [
+          "ai",
+          "as",
+          "a",
+          "avons"
+        ],
+        "correct": "ai",
+        "explanation": "'J'ai lu' has an irregular past participle. 'Lire' becomes 'lu' (short and simple). Many common verbs have unique past participles: voir → vu, boire → bu, avoir → eu, être → été. These require memorization, but they're so frequently used that they become automatic. Reading (la lecture) is a cherished activity in French culture - discussing books is a common social activity."
+      },
+      {
+        "id": "ef_pc12",
+        "question": "Vous _____ venus.",
+        "translation": "(You have come / You came)",
+        "options": [
+          "êtes",
+          "ai",
+          "avez",
+          "ont"
+        ],
+        "correct": "êtes",
+        "explanation": "'Vous êtes venus' uses 'être' (coming is movement). 'Venir' has an irregular past participle: venu. The plural adds -s: venus (masculine/mixed), venues (all feminine). The verb 'venir' (to come) is essential and irregular throughout its conjugations. Coming together creates community - 'vous êtes venus' implies gathering, arrival, presence. This verb appears constantly in invitations and welcomes."
+      },
+      {
+        "id": "ef_pc13",
+        "question": "Elles _____ sorties.",
+        "translation": "(They have gone out / They went out - females)",
+        "options": [
+          "sont",
+          "ai",
+          "as",
+          "ont"
+        ],
+        "correct": "sont",
+        "explanation": "'Elles sont sorties' uses 'être' and shows feminine plural agreement (-es). 'Sortir' (to go out) is movement, hence 'être'. Going out (sortir) is central to French social life - for meals, entertainment, time with friends. The feminine plural agreement is visible in writing (sorties) and helps clarify the gender of the group. The passé composé captures these social moments perfectly."
+      },
+      {
+        "id": "ef_pc14",
+        "question": "Il _____ fait froid.",
+        "translation": "(It was cold / It has been cold)",
+        "options": [
+          "a",
+          "ai",
+          "as",
+          "avons"
+        ],
+        "correct": "a",
+        "explanation": "'Il a fait froid' uses 'faire' (to make/do) for weather expressions. 'Faire' has irregular past participle: fait. Weather descriptions with 'faire' are idiomatic: il fait chaud/froid/beau. The passé composé describes weather conditions in the past - 'il a fait froid hier' (it was cold yesterday). This impersonal 'il' doesn't refer to anyone specific, just to weather conditions."
+      },
+      {
+        "id": "ef_pc15",
+        "question": "Nous _____ bien dormi.",
+        "translation": "(We have slept well / We slept well)",
+        "options": [
+          "avons",
+          "ai",
+          "sommes",
+          "ont"
+        ],
+        "correct": "avons",
+        "explanation": "'Nous avons bien dormi' uses 'avoir' (sleeping isn't movement). 'Dormir' is an -IR verb with irregular past participle: dormi. Adding 'bien' (well) describes how you slept. Sleep quality matters in French culture - rest is valued. The past participle 'dormi' stays unchanged regardless of subject (no agreement with 'avoir' unless there's a preceding direct object). This structure expresses completed rest."
+      }
+    ]
+  },
+  {
+    "key": "future_tense",
+    "name": "Le Futur",
+    "description": "Future Tense",
+    "iconName": "chart.line.uptrend.xyaxis",
+    "color": "#4ade80",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ef_fut1",
+        "question": "Je _____ demain.",
+        "translation": "(I will travel tomorrow)",
+        "options": [
+          "voyagerai",
+          "voyageras",
+          "voyagera",
+          "voyagerons"
+        ],
+        "correct": "voyagerai",
+        "explanation": "The French future tense is elegantly simple - add endings to the infinitive. For 'voyager', we get 'je voyagerai'. The endings are: -ai, -as, -a, -ons, -ez, -ont (notice they come from 'avoir'). These endings attach to most infinitives. The future tense expresses what will happen - plans, predictions, promises. 'Demain' (tomorrow) is your temporal marker. The pronunciation emphasizes the ending: vwa-ya-zhə-RAY."
+      },
+      {
+        "id": "ef_fut2",
+        "question": "Tu _____ français.",
+        "translation": "(You will speak French)",
+        "options": [
+          "parleras",
+          "parlerai",
+          "parlera",
+          "parlerons"
+        ],
+        "correct": "parleras",
+        "explanation": "For 'tu', add -as to the infinitive. 'Parler' becomes 'tu parleras' - pronounced par-lə-RA. This future is definite - not 'might' or 'maybe', but 'will'. Learning a language is a journey with a destination. 'Tu parleras français' is both prediction and encouragement. The future tense creates optimism and forward momentum. It's commonly used for plans, intentions, and what's to come."
+      },
+      {
+        "id": "ef_fut3",
+        "question": "Il _____ à Paris.",
+        "translation": "(He will live in Paris)",
+        "options": [
+          "habitera",
+          "habiterai",
+          "habiteras",
+          "habiterons"
+        ],
+        "correct": "habitera",
+        "explanation": "For il/elle/on, add -a to the infinitive. 'Habiter' becomes 'il habitera' - pronounced a-bee-tə-RA. Living in Paris is a dream for many. The future tense makes it feel possible and real. This tense appears in promises ('je te promets, je le ferai'), predictions ('il pleuvra demain'), and plans ('nous irons au cinéma'). The -a ending is clean and decisive."
+      },
+      {
+        "id": "ef_fut4",
+        "question": "Nous _____ ensemble.",
+        "translation": "(We will work together)",
+        "options": [
+          "travaillerons",
+          "travaillerai",
+          "travailleras",
+          "travailleront"
+        ],
+        "correct": "travaillerons",
+        "explanation": "For 'nous', add -ons. 'Travailler' becomes 'nous travaillerons' - pronounced tra-va-yə-RON. Working together implies collaboration and shared goals. The future tense creates anticipation and commitment. The -ons ending maintains that collective feeling throughout all tenses. This form is regular and predictable - simply add -ons to the infinitive."
+      },
+      {
+        "id": "ef_fut5",
+        "question": "Vous _____ demain.",
+        "translation": "(You will arrive tomorrow)",
+        "options": [
+          "arriverez",
+          "arriverai",
+          "arriveras",
+          "arriveront"
+        ],
+        "correct": "arriverez",
+        "explanation": "For 'vous', add -ez. 'Arriver' becomes 'vous arriverez' - pronounced a-reev-RAY. Arrivals are moments of anticipation and welcome. The future tense makes plans concrete. 'Demain' (tomorrow) grounds it in time. The -ez ending sounds elegant and complete: -RAY. This tense works for both formal singular and plural, just like present tense 'vous'."
+      },
+      {
+        "id": "ef_fut6",
+        "question": "Ils _____ le film.",
+        "translation": "(They will watch the film)",
+        "options": [
+          "regarderont",
+          "regarderai",
+          "regarderas",
+          "regarderons"
+        ],
+        "correct": "regarderont",
+        "explanation": "For ils/elles, add -ont. 'Regarder' becomes 'ils regarderont' - pronounced rə-gar-də-RON. The -ont ending sounds complete and final. Cinema is integral to French culture - from the Lumière brothers to modern auteurs. The future tense sets up plans and creates anticipation. 'Ils regarderont le film ce soir' (they'll watch the film tonight) - specific and defined."
+      },
+      {
+        "id": "ef_fut7",
+        "question": "Je _____ à 8 heures.",
+        "translation": "(I will leave at 8 o'clock)",
+        "options": [
+          "partirai",
+          "partiras",
+          "partira",
+          "partirons"
+        ],
+        "correct": "partirai",
+        "explanation": "'Partir' loses its -ir and adds the endings: je partirai. Some -ir verbs drop the final i before adding endings: partir → partir-ai (though it sounds like partir-RAY). Departure times are precise in French culture - trains, meetings, dinners all have specific times. The future tense confirms plans and commitments. 'À 8 heures' provides the exact temporal reference."
+      },
+      {
+        "id": "ef_fut8",
+        "question": "Elle _____ un livre.",
+        "translation": "(She will read a book)",
+        "options": [
+          "lira",
+          "lirai",
+          "liras",
+          "lirons"
+        ],
+        "correct": "lira",
+        "explanation": "'Lire' has an irregular future stem: li- (not lire-). So 'elle lira' - pronounced lee-RA. Some verbs have irregular future stems that must be learned: être → ser-, avoir → aur-, faire → fer-, aller → ir-. These common verbs appear so frequently that their futures become automatic. Reading is a treasured activity, and planning to read creates anticipation."
+      },
+      {
+        "id": "ef_fut9",
+        "question": "Nous _____ la vérité.",
+        "translation": "(We will know the truth)",
+        "options": [
+          "saurons",
+          "saurai",
+          "sauras",
+          "sauront"
+        ],
+        "correct": "saurons",
+        "explanation": "'Savoir' has irregular future stem: saur-. 'Nous saurons' - pronounced so-RON. Knowing the truth implies discovery and revelation. The future tense creates anticipation. 'Savoir' (to know facts/how to) differs from 'connaître' (to be familiar with). The irregular future stems add character to French - they're markers of the most essential, frequently used verbs."
+      },
+      {
+        "id": "ef_fut10",
+        "question": "Tu _____ raison.",
+        "translation": "(You will be right)",
+        "options": [
+          "auras",
+          "aurai",
+          "aura",
+          "aurons"
+        ],
+        "correct": "auras",
+        "explanation": "'Avoir' has irregular stem aur-. 'Tu auras raison' - you'll be right. The expression 'avoir raison' (to be right, literally 'to have reason') is idiomatic. French uses 'avoir' for many states: avoir faim (be hungry), avoir froid (be cold), avoir peur (be afraid). The future 'auras' creates confidence - you will be right, proven correct. This verb's future is essential to master."
+      },
+      {
+        "id": "ef_fut11",
+        "question": "Il _____ content.",
+        "translation": "(He will be happy)",
+        "options": [
+          "sera",
+          "serai",
+          "seras",
+          "serons"
+        ],
+        "correct": "sera",
+        "explanation": "'Être' has irregular stem ser-. 'Il sera content' - he will be happy. Being happy (être content) is a state. The future tense anticipates positive feelings. 'Sera' comes from Latin future forms. Despite being irregular, 'être' is so fundamental that its future becomes second nature. Happiness and contentment are valued in French philosophy - 'être content' is a life goal."
+      },
+      {
+        "id": "ef_fut12",
+        "question": "Vous _____ ce weekend.",
+        "translation": "(You will come this weekend)",
+        "options": [
+          "viendrez",
+          "viendrai",
+          "viendras",
+          "viendront"
+        ],
+        "correct": "viendrez",
+        "explanation": "'Venir' has irregular stem viendr-. 'Vous viendrez' - pronounced vyen-DRAY. Coming for the weekend implies visiting, gathering, sharing time. The future makes it a plan and commitment. Weekend gatherings are cherished in French culture - time with family, friends, good food, conversation. The irregular stem 'viendr-' must be memorized but becomes automatic with use."
+      },
+      {
+        "id": "ef_fut13",
+        "question": "Ils _____ la porte.",
+        "translation": "(They will open the door)",
+        "options": [
+          "ouvriront",
+          "ouvrirai",
+          "ouvriras",
+          "ouvrirons"
+        ],
+        "correct": "ouvriront",
+        "explanation": "'Ouvrir' (to open) follows regular future formation: ouvrir → ouvriront. Opening a door is both literal and metaphorical - opening possibilities, welcoming others, creating access. The future tense creates anticipation of what's beyond. The -ont ending for ils/elles is consistent across most verbs, regular and irregular. This predictability helps in conjugation."
+      },
+      {
+        "id": "ef_fut14",
+        "question": "Je _____ mes devoirs.",
+        "translation": "(I will do my homework)",
+        "options": [
+          "ferai",
+          "feras",
+          "fera",
+          "ferons"
+        ],
+        "correct": "ferai",
+        "explanation": "'Faire' has irregular stem fer-. 'Je ferai' - pronounced fə-RAY. Homework (les devoirs) is part of learning. The future tense shows commitment and planning. 'Faire' is incredibly versatile - to do, to make, used in countless expressions. Its irregular future fer- comes from Latin. Despite irregularity, 'faire' is so common that 'ferai' flows naturally in speech."
+      },
+      {
+        "id": "ef_fut15",
+        "question": "Nous _____ en France.",
+        "translation": "(We will go to France)",
+        "options": [
+          "irons",
+          "irai",
+          "iras",
+          "iront"
+        ],
+        "correct": "irons",
+        "explanation": "'Aller' has highly irregular stem ir- (completely different from infinitive). 'Nous irons' - pronounced ee-RON. Going to France is a goal for many learners - to use the language in its native context. The future tense makes dreams into plans. Despite being irregular, 'aller' is so essential that its future forms become automatic. The trip to France represents both destination and journey."
+      }
+    ]
+  },
+  {
+    "key": "pronouns",
+    "name": "Les Pronoms",
+    "description": "Pronouns",
+    "iconName": "person.2",
+    "color": "#22d3ee",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ef_pron1",
+        "question": "Je _____ vois.",
+        "translation": "(I see you - informal)",
+        "options": [
+          "te",
+          "le",
+          "la",
+          "les"
+        ],
+        "correct": "te",
+        "explanation": "French direct object pronouns come BEFORE the verb. 'Je te vois' means 'I see you' (informal). The pronoun order differs from English. French has: me, te, le/la, nous, vous, les. These replace direct objects to avoid repetition. 'Te' is informal, for friends and family. In passé composé, pronouns still go before: 'je t'ai vu'. This word order takes practice but becomes fluid, creating elegant, concise French."
+      },
+      {
+        "id": "ef_pron2",
+        "question": "Elle _____ parle.",
+        "translation": "(She speaks to me)",
+        "options": [
+          "me",
+          "te",
+          "lui",
+          "leur"
+        ],
+        "correct": "me",
+        "explanation": "Indirect object pronouns also precede the verb. 'Elle me parle' (she speaks to me). These pronouns answer 'to whom': me, te, lui, nous, vous, leur. The 'me' indicates receiving the action. In conversation, these pronouns make French flow smoothly - no need to repeat 'à moi' constantly. Position before the verb is fixed, creating rhythmic sentence structure."
+      },
+      {
+        "id": "ef_pron3",
+        "question": "Nous _____ aimons.",
+        "translation": "(We love them)",
+        "options": [
+          "les",
+          "le",
+          "la",
+          "l'"
+        ],
+        "correct": "les",
+        "explanation": "'Nous les aimons' uses 'les' for plural direct object (them). Whether 'them' is masculine, feminine, or mixed, use 'les'. This simplifies plurals - one form for all genders. The pronoun precedes the conjugated verb always. Love (aimer) is a beautiful verb, and pronouns make expressing it concise. 'Les' creates efficiency in communication."
+      },
+      {
+        "id": "ef_pron4",
+        "question": "Je _____ donne le livre.",
+        "translation": "(I give him/her the book)",
+        "options": [
+          "lui",
+          "le",
+          "la",
+          "les"
+        ],
+        "correct": "lui",
+        "explanation": "'Lui' is the indirect object pronoun meaning 'to him/to her' (it's the same for both genders). 'Je lui donne' means 'I give to him/her'. This pronoun answers 'to whom'. Unlike English, you don't need 'to' - it's built into 'lui'. Position before verb is mandatory. Giving (donner) creates connection between people - 'lui' facilitates that elegantly."
+      },
+      {
+        "id": "ef_pron5",
+        "question": "Tu _____ regardes.",
+        "translation": "(You look at him/it - masculine)",
+        "options": [
+          "le",
+          "la",
+          "les",
+          "lui"
+        ],
+        "correct": "le",
+        "explanation": "'Le' replaces masculine singular direct objects. 'Tu le regardes' means 'you look at him/it'. For feminine, it would be 'la'; plural 'les'. These pronouns create economy - no need to repeat nouns. They're essential for natural conversation. In questions, they stay before the verb: 'le regardes-tu?'. Mastering pronoun placement is key to fluid French."
+      },
+      {
+        "id": "ef_pron6",
+        "question": "Vous _____ téléphonez.",
+        "translation": "(You phone them)",
+        "options": [
+          "leur",
+          "les",
+          "lui",
+          "eux"
+        ],
+        "correct": "leur",
+        "explanation": "'Leur' is the plural indirect object pronoun (to them). 'Vous leur téléphonez' means 'you phone to them'. Verbs like téléphoner, parler, donner take indirect objects in French. 'Leur' works for both masculine and feminine groups. Position before verb maintains sentence rhythm. Phone calls (téléphoner) connect people - 'leur' makes this connection grammatically efficient."
+      },
+      {
+        "id": "ef_pron7",
+        "question": "Elle _____ achète.",
+        "translation": "(She buys it - feminine)",
+        "options": [
+          "la",
+          "le",
+          "les",
+          "lui"
+        ],
+        "correct": "la",
+        "explanation": "'La' replaces feminine singular direct objects. 'Elle l'achète' (with contraction before vowel) means 'she buys it'. The feminine pronoun agrees with the object's gender. Shopping (acheter) is common in French life - markets, boutiques, boulangeries. The pronoun makes transactions smoother linguistically. Before vowels, 'la' contracts to 'l'', maintaining flow."
+      },
+      {
+        "id": "ef_pron8",
+        "question": "Ils _____ écoutent.",
+        "translation": "(They listen to us)",
+        "options": [
+          "nous",
+          "vous",
+          "les",
+          "leur"
+        ],
+        "correct": "nous",
+        "explanation": "'Nous' works as both subject (we) and object pronoun (us). 'Ils nous écoutent' means 'they listen to us'. The pronoun position before the verb is consistent. Listening (écouter) is a direct object verb in French (no 'to' needed like English). The pronoun 'nous' creates a sense of being heard and included. Communication flows through these pronouns."
+      },
+      {
+        "id": "ef_pron9",
+        "question": "Je _____ comprends bien.",
+        "translation": "(I understand you well - formal)",
+        "options": [
+          "vous",
+          "te",
+          "lui",
+          "leur"
+        ],
+        "correct": "vous",
+        "explanation": "'Vous' serves as both subject (you formal/plural) and object pronoun. 'Je vous comprends' means 'I understand you'. The formal register shows respect. Understanding (comprendre) others is crucial in communication. The adverb 'bien' (well) comes after the pronoun and verb. Position is fixed: subject + object pronoun + verb + adverb."
+      },
+      {
+        "id": "ef_pron10",
+        "question": "Tu _____ as vu hier.",
+        "translation": "(You saw him/it yesterday - masculine)",
+        "options": [
+          "l'",
+          "le",
+          "la",
+          "les"
+        ],
+        "correct": "l'",
+        "explanation": "In passé composé, pronouns go before the auxiliary. 'Tu l'as vu' means 'you saw him/it'. Before vowel sounds, 'le/la' contract to 'l''. The past participle sometimes agrees with preceding direct objects: 'tu l'as vue' (if feminine). This agreement is written but often silent. Yesterday (hier) marks the past timeframe. Pronoun placement before 'as' is fixed."
+      },
+      {
+        "id": "ef_pron11",
+        "question": "Nous _____ parlons souvent.",
+        "translation": "(We speak to her often)",
+        "options": [
+          "lui",
+          "la",
+          "elle",
+          "leur"
+        ],
+        "correct": "lui",
+        "explanation": "'Lui' means 'to him/to her' - the same form for both genders. 'Nous lui parlons' means 'we speak to her'. The verb 'parler à' (to speak to) takes indirect objects. Speaking often (souvent) implies ongoing relationship and communication. The indirect pronoun 'lui' makes this connection linguistically efficient. It's an essential pattern for many communication verbs."
+      },
+      {
+        "id": "ef_pron12",
+        "question": "Vous _____ connaissez.",
+        "translation": "(You know them - people)",
+        "options": [
+          "les",
+          "leur",
+          "eux",
+          "lui"
+        ],
+        "correct": "les",
+        "explanation": "'Les' replaces people as direct objects. 'Vous les connaissez' means 'you know them'. The verb 'connaître' (to know people/places) takes direct objects. Knowing people creates social networks. The pronoun 'les' makes references smooth and elegant. In French social culture, knowing people and connections matter deeply. The direct object pronoun captures these relationships."
+      },
+      {
+        "id": "ef_pron13",
+        "question": "Je _____ ai donné mon numéro.",
+        "translation": "(I gave them my number)",
+        "options": [
+          "leur",
+          "les",
+          "lui",
+          "eux"
+        ],
+        "correct": "leur",
+        "explanation": "'Leur' means 'to them'. 'Je leur ai donné' means 'I gave to them'. In passé composé, 'leur' goes before the auxiliary 'ai'. Giving phone numbers creates connection. The indirect pronoun 'leur' (plural) contrasts with 'lui' (singular). Both mean 'to' without needing the preposition separately. This efficiency is characteristic of French pronoun system."
+      },
+      {
+        "id": "ef_pron14",
+        "question": "Elle _____ attend devant le cinéma.",
+        "translation": "(She waits for us in front of the cinema)",
+        "options": [
+          "nous",
+          "vous",
+          "les",
+          "leur"
+        ],
+        "correct": "nous",
+        "explanation": "'Nous' as object means 'us'. 'Elle nous attend' means 'she waits for us'. The verb 'attendre' takes direct objects (no 'for' needed like English). Waiting at the cinema implies meeting friends - social anticipation. The pronoun 'nous' includes the speaker in the action. Position before verb creates natural French rhythm and flow."
+      },
+      {
+        "id": "ef_pron15",
+        "question": "Tu _____ as envoyé un message.",
+        "translation": "(You sent me a message)",
+        "options": [
+          "m'",
+          "me",
+          "te",
+          "lui"
+        ],
+        "correct": "m'",
+        "explanation": "'Me' contracts to 'm'' before vowels. 'Tu m'as envoyé' means 'you sent to me'. The indirect pronoun precedes the auxiliary in passé composé. Messages (les messages) connect people in modern life. The contraction 'm'' maintains smooth pronunciation - no vowel clash. This contracted form appears constantly: je m'appelle, tu m'aimes, il m'a dit. It's essential for fluid French."
+      }
+    ]
+  },
+  {
+    "key": "negation",
+    "name": "La Négation",
+    "description": "Negative Sentences",
+    "iconName": "nosign",
+    "color": "#f87171",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ef_neg1",
+        "question": "Je _____ parle _____ français.",
+        "translation": "(I don't speak French)",
+        "options": [
+          "ne...pas",
+          "ne...plus",
+          "ne...jamais",
+          "ne...rien"
+        ],
+        "correct": "ne...pas",
+        "explanation": "French negation wraps around the verb with 'ne...pas'. 'Je ne parle pas français' means 'I don't speak French'. The 'ne' goes before the verb, 'pas' after. This two-part structure is unique to French. In spoken French, 'ne' is often dropped: 'je parle pas'. However, in writing and formal speech, both parts are essential. This wraparound pattern creates a distinctive rhythm."
+      },
+      {
+        "id": "ef_neg2",
+        "question": "Tu _____ aimes _____ le café.",
+        "translation": "(You don't like coffee)",
+        "options": [
+          "ne...pas",
+          "ne...plus",
+          "ne...jamais",
+          "ne...rien"
+        ],
+        "correct": "ne...pas",
+        "explanation": "'Tu n'aimes pas le café' uses 'ne...pas' for basic negation. Before vowels, 'ne' contracts to 'n''. Not liking coffee is unusual in French culture where café is cherished. The negation wraps the verb perfectly. The article 'le' (the) stays - French keeps the article even in negation, unlike English. This structure appears in most negative sentences."
+      },
+      {
+        "id": "ef_neg3",
+        "question": "Il _____ travaille _____ aujourd'hui.",
+        "translation": "(He's not working today)",
+        "options": [
+          "ne...pas",
+          "ne...plus",
+          "ne...jamais",
+          "ne...rien"
+        ],
+        "correct": "ne...pas",
+        "explanation": "'Il ne travaille pas aujourd'hui' negates working. The 'aujourd'hui' (today) comes after the negation. Time expressions typically follow the negative structure. Not working today might mean a day off or holiday. French work culture values rest and balance. The ne...pas structure is your default negation - simple and consistent across most contexts."
+      },
+      {
+        "id": "ef_neg4",
+        "question": "Je _____ mange _____ de viande.",
+        "translation": "(I don't eat any meat)",
+        "options": [
+          "ne...pas",
+          "ne...plus",
+          "ne...jamais",
+          "ne...rien"
+        ],
+        "correct": "ne...pas",
+        "explanation": "'Je ne mange pas de viande' shows a special negation rule: after 'pas', 'un/une/des/du/de la' all become 'de' (or 'd''). This is called the negative article. So 'je mange de la viande' (I eat meat) becomes 'je ne mange pas de viande'. Not eating meat could indicate vegetarianism. The reduction to 'de' is automatic and consistent. This rule takes practice but becomes natural."
+      },
+      {
+        "id": "ef_neg5",
+        "question": "Nous _____ avons _____ d'argent.",
+        "translation": "(We don't have any money)",
+        "options": [
+          "ne...pas",
+          "ne...plus",
+          "ne...jamais",
+          "ne...rien"
+        ],
+        "correct": "ne...pas",
+        "explanation": "'Nous n'avons pas d'argent' follows the negative article rule. 'De l'argent' (some money) becomes 'd'argent' after 'pas'. Not having money is a universal experience. The contraction 'n'' before 'avons' maintains flow. Money (l'argent) is masculine. The negative structure wraps 'avons' cleanly. This pattern applies to all avoir expressions with quantities."
+      },
+      {
+        "id": "ef_neg6",
+        "question": "Elle _____ boit _____ d'alcool.",
+        "translation": "(She doesn't drink alcohol anymore)",
+        "options": [
+          "ne...plus",
+          "ne...pas",
+          "ne...jamais",
+          "ne...rien"
+        ],
+        "correct": "ne...plus",
+        "explanation": "'Ne...plus' means 'no longer/not anymore'. 'Elle ne boit plus d'alcool' implies she used to drink but stopped. This negation shows change over time. The 'plus' (pronounced 'plü') is distinct from 'pas'. After 'plus', articles also become 'de'. Not drinking anymore could reflect health choices. The ne...plus structure elegantly captures this temporal shift."
+      },
+      {
+        "id": "ef_neg7",
+        "question": "Je _____ vais _____ au cinéma.",
+        "translation": "(I never go to the cinema)",
+        "options": [
+          "ne...jamais",
+          "ne...pas",
+          "ne...plus",
+          "ne...rien"
+        ],
+        "correct": "ne...jamais",
+        "explanation": "'Ne...jamais' means 'never'. 'Je ne vais jamais au cinéma' is a strong negation. Unlike 'pas' (simple no), 'jamais' emphasizes zero frequency. Never going to cinema might indicate preference for other entertainment. The word order stays the same: ne + verb + jamais. French has precise negations for different nuances - jamais being the absolute negative of frequency."
+      },
+      {
+        "id": "ef_neg8",
+        "question": "Tu _____ comprends _____.",
+        "translation": "(You don't understand anything)",
+        "options": [
+          "ne...rien",
+          "ne...pas",
+          "ne...plus",
+          "ne...jamais"
+        ],
+        "correct": "ne...rien",
+        "explanation": "'Ne...rien' means 'nothing/not anything'. 'Tu ne comprends rien' is emphatic. Understanding nothing is frustrating in language learning. The 'rien' comes after the verb in simple tenses. In passé composé, it comes after the auxiliary: 'tu n'as rien compris'. This negation is strong and definitive. 'Rien' can also start sentences: 'Rien n'est impossible' (nothing is impossible)."
+      },
+      {
+        "id": "ef_neg9",
+        "question": "Il _____ a _____ mangé.",
+        "translation": "(He hasn't eaten)",
+        "options": [
+          "ne...pas",
+          "ne...plus",
+          "ne...jamais",
+          "ne...rien"
+        ],
+        "correct": "ne...pas",
+        "explanation": "In passé composé, negation wraps the auxiliary. 'Il n'a pas mangé' puts 'ne...pas' around 'a', not around 'mangé'. The past participle stays outside the negation. Not having eaten suggests hunger or skipped meals. This structure applies to all compound tenses. The negation always wraps the conjugated verb (auxiliary), leaving the past participle beyond the negation."
+      },
+      {
+        "id": "ef_neg10",
+        "question": "Nous _____ sommes _____ partis.",
+        "translation": "(We haven't left)",
+        "options": [
+          "ne...pas",
+          "ne...plus",
+          "ne...jamais",
+          "ne...rien"
+        ],
+        "correct": "ne...pas",
+        "explanation": "'Nous ne sommes pas partis' wraps 'ne...pas' around 'sommes'. The past participle 'partis' stays outside. Not having left means still present. With être verbs, the participle agrees: partis (masculine plural). The negation structure doesn't affect agreement - only position. This pattern is consistent across all passé composé forms with être."
+      },
+      {
+        "id": "ef_neg11",
+        "question": "Je _____ ai _____ vu.",
+        "translation": "(I've never seen)",
+        "options": [
+          "ne...jamais",
+          "ne...pas",
+          "ne...plus",
+          "ne...rien"
+        ],
+        "correct": "ne...jamais",
+        "explanation": "'Je n'ai jamais vu' means 'I've never seen'. The 'jamais' wraps with 'ne' around the auxiliary 'ai'. Never seeing something emphasizes complete absence of experience. The past participle 'vu' (from voir) stays outside. This structure: ne + auxiliary + jamais + past participle. It's emphatic and clear. Never is absolute and definitive."
+      },
+      {
+        "id": "ef_neg12",
+        "question": "Vous _____ êtes _____ venus.",
+        "translation": "(You haven't come anymore)",
+        "options": [
+          "ne...plus",
+          "ne...pas",
+          "ne...jamais",
+          "ne...rien"
+        ],
+        "correct": "ne...plus",
+        "explanation": "'Vous n'êtes plus venus' means you used to come but stopped. The 'ne...plus' wraps the auxiliary 'êtes'. The participle 'venus' (masculine plural) stays outside. Not coming anymore implies change in relationship or circumstances. The plus captures this temporal shift - from past presence to current absence. This structure works identically with all être verbs."
+      },
+      {
+        "id": "ef_neg13",
+        "question": "Elle _____ veut _____ partir.",
+        "translation": "(She doesn't want to leave)",
+        "options": [
+          "ne...pas",
+          "ne...plus",
+          "ne...jamais",
+          "ne...rien"
+        ],
+        "correct": "ne...pas",
+        "explanation": "With two verbs (modal + infinitive), negation wraps the first verb. 'Elle ne veut pas partir' - 'ne...pas' goes around 'veut', the infinitive 'partir' stays outside. Not wanting to leave suggests comfort or attachment. This structure applies to pouvoir, vouloir, devoir + infinitive. The negation never splits the infinitive from its modal. This pattern is consistent and logical."
+      },
+      {
+        "id": "ef_neg14",
+        "question": "Ils _____ peuvent _____ venir.",
+        "translation": "(They can't come)",
+        "options": [
+          "ne...pas",
+          "ne...plus",
+          "ne...jamais",
+          "ne...rien"
+        ],
+        "correct": "ne...pas",
+        "explanation": "'Ils ne peuvent pas venir' negates ability. The 'ne...pas' wraps 'peuvent', leaving 'venir' outside. Not being able to come might indicate conflicts or impossibility. The verb 'pouvoir' (can/to be able) is irregular but follows normal negation rules. This structure appears constantly with modal verbs. The separation between conjugated verb and infinitive stays clear."
+      },
+      {
+        "id": "ef_neg15",
+        "question": "Je _____ sais _____.",
+        "translation": "(I don't know anything)",
+        "options": [
+          "ne...rien",
+          "ne...pas",
+          "ne...plus",
+          "ne...jamais"
+        ],
+        "correct": "ne...rien",
+        "explanation": "'Je ne sais rien' means 'I know nothing'. The 'rien' comes after the verb 'sais'. Not knowing anything is honest acknowledgment of ignorance. The phrase 'je ne sais pas' (I don't know) is more common for specific questions. 'Je ne sais rien' is more emphatic and absolute. 'Rien' as negation is powerful - it emphasizes complete absence of knowledge."
+      }
+    ]
+  }
+]

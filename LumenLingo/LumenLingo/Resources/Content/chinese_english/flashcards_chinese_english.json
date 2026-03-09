@@ -1,0 +1,1892 @@
+[
+  {
+    "key": "greetings",
+    "name": "问候语",
+    "description": "基本问候",
+    "iconName": "Hand",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ce_greet_1",
+        "front": "你好",
+        "back": "Hello",
+        "difficulty": "medium",
+        "example": "Hello, how are you?",
+        "exampleTranslation": "你好，你好吗？"
+      },
+      {
+        "id": "ce_greet_2",
+        "front": "早上好",
+        "back": "Good morning",
+        "difficulty": "medium",
+        "example": "Good morning, sir",
+        "exampleTranslation": "早上好，先生"
+      },
+      {
+        "id": "ce_greet_3",
+        "front": "晚上好",
+        "back": "Good evening",
+        "difficulty": "medium",
+        "example": "Good evening, how are you?",
+        "exampleTranslation": "晚上好，你好吗？"
+      },
+      {
+        "id": "ce_greet_4",
+        "front": "晚安",
+        "back": "Good night",
+        "difficulty": "medium",
+        "example": "Good night, sleep well",
+        "exampleTranslation": "晚安，睡个好觉"
+      },
+      {
+        "id": "ce_greet_5",
+        "front": "再见",
+        "back": "Goodbye",
+        "difficulty": "medium",
+        "example": "Goodbye, see you later",
+        "exampleTranslation": "再见，回头见"
+      },
+      {
+        "id": "ce_greet_6",
+        "front": "谢谢",
+        "back": "Thank you",
+        "difficulty": "medium",
+        "example": "Thank you for your help",
+        "exampleTranslation": "谢谢你的帮助"
+      },
+      {
+        "id": "ce_greet_7",
+        "front": "请",
+        "back": "Please",
+        "difficulty": "medium",
+        "example": "Please, help me",
+        "exampleTranslation": "请帮助我"
+      },
+      {
+        "id": "ce_greet_8",
+        "front": "对不起",
+        "back": "Excuse me",
+        "difficulty": "medium",
+        "example": "Excuse me, I'm late",
+        "exampleTranslation": "对不起，我迟到了"
+      },
+      {
+        "id": "ce_greet_9",
+        "front": "是",
+        "back": "Yes",
+        "difficulty": "medium",
+        "example": "Yes, I agree",
+        "exampleTranslation": "是的，我同意"
+      },
+      {
+        "id": "ce_greet_10",
+        "front": "不",
+        "back": "No",
+        "difficulty": "medium",
+        "example": "No, I don't want",
+        "exampleTranslation": "不，我不想要"
+      }
+    ]
+  },
+  {
+    "key": "family",
+    "name": "家庭",
+    "description": "家庭成员",
+    "iconName": "Users",
+    "color": "#f472b6",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ce_fam_1",
+        "front": "父亲",
+        "back": "Father",
+        "difficulty": "medium",
+        "example": "My father works a lot",
+        "exampleTranslation": "我父亲工作很多"
+      },
+      {
+        "id": "ce_fam_2",
+        "front": "母亲",
+        "back": "Mother",
+        "difficulty": "medium",
+        "example": "My mother cooks well",
+        "exampleTranslation": "我母亲做饭很好"
+      },
+      {
+        "id": "ce_fam_3",
+        "front": "兄弟",
+        "back": "Brother",
+        "difficulty": "medium",
+        "example": "My brother studies medicine",
+        "exampleTranslation": "我哥哥学医"
+      },
+      {
+        "id": "ce_fam_4",
+        "front": "姐妹",
+        "back": "Sister",
+        "difficulty": "medium",
+        "example": "My sister is a teacher",
+        "exampleTranslation": "我姐姐是老师"
+      },
+      {
+        "id": "ce_fam_5",
+        "front": "儿子",
+        "back": "Son",
+        "difficulty": "medium",
+        "example": "My son is ten years old",
+        "exampleTranslation": "我儿子十岁了"
+      },
+      {
+        "id": "ce_fam_6",
+        "front": "女儿",
+        "back": "Daughter",
+        "difficulty": "medium",
+        "example": "My daughter goes to university",
+        "exampleTranslation": "我女儿上大学"
+      },
+      {
+        "id": "ce_fam_7",
+        "front": "爷爷",
+        "back": "Grandfather",
+        "difficulty": "medium",
+        "example": "My grandfather is very wise",
+        "exampleTranslation": "我爷爷很有智慧"
+      },
+      {
+        "id": "ce_fam_8",
+        "front": "奶奶",
+        "back": "Grandmother",
+        "difficulty": "medium",
+        "example": "My grandmother makes cakes",
+        "exampleTranslation": "我奶奶做蛋糕"
+      },
+      {
+        "id": "ce_fam_9",
+        "front": "叔叔",
+        "back": "Uncle",
+        "difficulty": "medium",
+        "example": "My uncle lives in Beijing",
+        "exampleTranslation": "我叔叔住在北京"
+      },
+      {
+        "id": "ce_fam_10",
+        "front": "阿姨",
+        "back": "Aunt",
+        "difficulty": "medium",
+        "example": "My aunt is very kind",
+        "exampleTranslation": "我阿姨很善良"
+      }
+    ]
+  },
+  {
+    "key": "numbers",
+    "name": "数字",
+    "description": "基本数字",
+    "iconName": "Hash",
+    "color": "#c084fc",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ce_num_1",
+        "front": "一",
+        "back": "One",
+        "difficulty": "medium",
+        "example": "I have one brother",
+        "exampleTranslation": "我有一个哥哥"
+      },
+      {
+        "id": "ce_num_2",
+        "front": "二",
+        "back": "Two",
+        "difficulty": "medium",
+        "example": "There are two cats",
+        "exampleTranslation": "有两只猫"
+      },
+      {
+        "id": "ce_num_3",
+        "front": "三",
+        "back": "Three",
+        "difficulty": "medium",
+        "example": "It's three o'clock",
+        "exampleTranslation": "三点钟"
+      },
+      {
+        "id": "ce_num_4",
+        "front": "四",
+        "back": "Four",
+        "difficulty": "medium",
+        "example": "Four seasons",
+        "exampleTranslation": "四季"
+      },
+      {
+        "id": "ce_num_5",
+        "front": "五",
+        "back": "Five",
+        "difficulty": "medium",
+        "example": "Five fingers on the hand",
+        "exampleTranslation": "手上有五根手指"
+      },
+      {
+        "id": "ce_num_6",
+        "front": "六",
+        "back": "Six",
+        "difficulty": "medium",
+        "example": "My son is six years old",
+        "exampleTranslation": "我儿子六岁了"
+      },
+      {
+        "id": "ce_num_7",
+        "front": "七",
+        "back": "Seven",
+        "difficulty": "medium",
+        "example": "Seven days of the week",
+        "exampleTranslation": "一周七天"
+      },
+      {
+        "id": "ce_num_8",
+        "front": "八",
+        "back": "Eight",
+        "difficulty": "medium",
+        "example": "I work eight hours",
+        "exampleTranslation": "我工作八小时"
+      },
+      {
+        "id": "ce_num_9",
+        "front": "九",
+        "back": "Nine",
+        "difficulty": "medium",
+        "example": "It's nine o'clock in the morning",
+        "exampleTranslation": "早上九点"
+      },
+      {
+        "id": "ce_num_10",
+        "front": "十",
+        "back": "Ten",
+        "difficulty": "medium",
+        "example": "Ten euros, please",
+        "exampleTranslation": "十欧元，请"
+      }
+    ]
+  },
+  {
+    "key": "colors",
+    "name": "颜色",
+    "description": "基本颜色",
+    "iconName": "Palette",
+    "color": "#f87171",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ce_col_1",
+        "front": "红色",
+        "back": "Red",
+        "difficulty": "medium",
+        "example": "The car is red",
+        "exampleTranslation": "车是红色的"
+      },
+      {
+        "id": "ce_col_2",
+        "front": "蓝色",
+        "back": "Blue",
+        "difficulty": "medium",
+        "example": "The sky is blue",
+        "exampleTranslation": "天空是蓝色的"
+      },
+      {
+        "id": "ce_col_3",
+        "front": "绿色",
+        "back": "Green",
+        "difficulty": "medium",
+        "example": "The grass is green",
+        "exampleTranslation": "草是绿色的"
+      },
+      {
+        "id": "ce_col_4",
+        "front": "黄色",
+        "back": "Yellow",
+        "difficulty": "medium",
+        "example": "The sun is yellow",
+        "exampleTranslation": "太阳是黄色的"
+      },
+      {
+        "id": "ce_col_5",
+        "front": "黑色",
+        "back": "Black",
+        "difficulty": "medium",
+        "example": "My cat is black",
+        "exampleTranslation": "我的猫是黑色的"
+      },
+      {
+        "id": "ce_col_6",
+        "front": "白色",
+        "back": "White",
+        "difficulty": "medium",
+        "example": "The snow is white",
+        "exampleTranslation": "雪是白色的"
+      },
+      {
+        "id": "ce_col_7",
+        "front": "橙色",
+        "back": "Orange",
+        "difficulty": "medium",
+        "example": "The orange is orange",
+        "exampleTranslation": "橙子是橙色的"
+      },
+      {
+        "id": "ce_col_8",
+        "front": "粉色",
+        "back": "Pink",
+        "difficulty": "medium",
+        "example": "The dress is pink",
+        "exampleTranslation": "裙子是粉色的"
+      },
+      {
+        "id": "ce_col_9",
+        "front": "棕色",
+        "back": "Brown",
+        "difficulty": "medium",
+        "example": "The bear is brown",
+        "exampleTranslation": "熊是棕色的"
+      },
+      {
+        "id": "ce_col_10",
+        "front": "灰色",
+        "back": "Gray",
+        "difficulty": "medium",
+        "example": "The elephant is gray",
+        "exampleTranslation": "大象是灰色的"
+      }
+    ]
+  },
+  {
+    "key": "food",
+    "name": "食物",
+    "description": "基本食物",
+    "iconName": "UtensilsCrossed",
+    "color": "#4ade80",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ce_food_1",
+        "front": "面包",
+        "back": "Bread",
+        "difficulty": "medium",
+        "example": "The bread is fresh",
+        "exampleTranslation": "面包很新鲜"
+      },
+      {
+        "id": "ce_food_2",
+        "front": "水",
+        "back": "Water",
+        "difficulty": "medium",
+        "example": "A glass of water, please",
+        "exampleTranslation": "一杯水，请"
+      },
+      {
+        "id": "ce_food_3",
+        "front": "咖啡",
+        "back": "Coffee",
+        "difficulty": "medium",
+        "example": "I like coffee",
+        "exampleTranslation": "我喜欢咖啡"
+      },
+      {
+        "id": "ce_food_4",
+        "front": "牛奶",
+        "back": "Milk",
+        "difficulty": "medium",
+        "example": "The milk is fresh",
+        "exampleTranslation": "牛奶很新鲜"
+      },
+      {
+        "id": "ce_food_5",
+        "front": "肉",
+        "back": "Meat",
+        "difficulty": "medium",
+        "example": "The meat is delicious",
+        "exampleTranslation": "肉很美味"
+      },
+      {
+        "id": "ce_food_6",
+        "front": "鱼",
+        "back": "Fish",
+        "difficulty": "medium",
+        "example": "Fish is very healthy",
+        "exampleTranslation": "鱼很健康"
+      },
+      {
+        "id": "ce_food_7",
+        "front": "水果",
+        "back": "Fruit",
+        "difficulty": "medium",
+        "example": "I eat fruit every day",
+        "exampleTranslation": "我每天吃水果"
+      },
+      {
+        "id": "ce_food_8",
+        "front": "蔬菜",
+        "back": "Vegetables",
+        "difficulty": "medium",
+        "example": "Vegetables are important",
+        "exampleTranslation": "蔬菜很重要"
+      },
+      {
+        "id": "ce_food_9",
+        "front": "奶酪",
+        "back": "Cheese",
+        "difficulty": "medium",
+        "example": "Chinese cheese is delicious",
+        "exampleTranslation": "中国奶酪很美味"
+      },
+      {
+        "id": "ce_food_10",
+        "front": "鸡蛋",
+        "back": "Egg",
+        "difficulty": "medium",
+        "example": "I eat eggs for breakfast",
+        "exampleTranslation": "我早餐吃鸡蛋"
+      }
+    ]
+  },
+  {
+    "key": "house",
+    "name": "房子",
+    "description": "家居用品",
+    "iconName": "Home",
+    "color": "#fb923c",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ce_house_1",
+        "front": "房子",
+        "back": "House",
+        "difficulty": "medium",
+        "example": "My house is big",
+        "exampleTranslation": "我的房子很大"
+      },
+      {
+        "id": "ce_house_2",
+        "front": "房间",
+        "back": "Room",
+        "difficulty": "medium",
+        "example": "The room is clean",
+        "exampleTranslation": "房间很干净"
+      },
+      {
+        "id": "ce_house_3",
+        "front": "厨房",
+        "back": "Kitchen",
+        "difficulty": "medium",
+        "example": "I cook in the kitchen",
+        "exampleTranslation": "我在厨房做饭"
+      },
+      {
+        "id": "ce_house_4",
+        "front": "浴室",
+        "back": "Bathroom",
+        "difficulty": "medium",
+        "example": "The bathroom is new",
+        "exampleTranslation": "浴室是新的"
+      },
+      {
+        "id": "ce_house_5",
+        "front": "卧室",
+        "back": "Bedroom",
+        "difficulty": "medium",
+        "example": "My bedroom is comfortable",
+        "exampleTranslation": "我的卧室很舒适"
+      },
+      {
+        "id": "ce_house_6",
+        "front": "门",
+        "back": "Door",
+        "difficulty": "medium",
+        "example": "Close the door",
+        "exampleTranslation": "关门"
+      },
+      {
+        "id": "ce_house_7",
+        "front": "窗户",
+        "back": "Window",
+        "difficulty": "medium",
+        "example": "Open the window",
+        "exampleTranslation": "开窗户"
+      },
+      {
+        "id": "ce_house_8",
+        "front": "桌子",
+        "back": "Table",
+        "difficulty": "medium",
+        "example": "The table is wooden",
+        "exampleTranslation": "桌子是木头的"
+      },
+      {
+        "id": "ce_house_9",
+        "front": "椅子",
+        "back": "Chair",
+        "difficulty": "medium",
+        "example": "The chair is comfortable",
+        "exampleTranslation": "椅子很舒服"
+      },
+      {
+        "id": "ce_house_10",
+        "front": "床",
+        "back": "Bed",
+        "difficulty": "medium",
+        "example": "The bed is soft",
+        "exampleTranslation": "床很软"
+      }
+    ]
+  },
+  {
+    "key": "places",
+    "name": "地点",
+    "description": "位置",
+    "iconName": "MapPin",
+    "color": "#2dd4bf",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ce_place_1",
+        "front": "商店",
+        "back": "Store",
+        "difficulty": "medium",
+        "example": "The store is open",
+        "exampleTranslation": "商店开着"
+      },
+      {
+        "id": "ce_place_2",
+        "front": "学校",
+        "back": "School",
+        "difficulty": "medium",
+        "example": "I go to school",
+        "exampleTranslation": "我去学校"
+      },
+      {
+        "id": "ce_place_3",
+        "front": "医院",
+        "back": "Hospital",
+        "difficulty": "medium",
+        "example": "The hospital is close",
+        "exampleTranslation": "医院很近"
+      },
+      {
+        "id": "ce_place_4",
+        "front": "公园",
+        "back": "Park",
+        "difficulty": "medium",
+        "example": "Children play in the park",
+        "exampleTranslation": "孩子们在公园玩"
+      },
+      {
+        "id": "ce_place_5",
+        "front": "餐厅",
+        "back": "Restaurant",
+        "difficulty": "medium",
+        "example": "We eat at the restaurant",
+        "exampleTranslation": "我们在餐厅吃饭"
+      },
+      {
+        "id": "ce_place_6",
+        "front": "酒店",
+        "back": "Hotel",
+        "difficulty": "medium",
+        "example": "The hotel is very big",
+        "exampleTranslation": "酒店很大"
+      },
+      {
+        "id": "ce_place_7",
+        "front": "银行",
+        "back": "Bank",
+        "difficulty": "medium",
+        "example": "I go to the bank",
+        "exampleTranslation": "我去银行"
+      },
+      {
+        "id": "ce_place_8",
+        "front": "机场",
+        "back": "Airport",
+        "difficulty": "medium",
+        "example": "I'm at the airport",
+        "exampleTranslation": "我在机场"
+      },
+      {
+        "id": "ce_place_9",
+        "front": "火车站",
+        "back": "Train station",
+        "difficulty": "medium",
+        "example": "The train station",
+        "exampleTranslation": "火车站"
+      },
+      {
+        "id": "ce_place_10",
+        "front": "博物馆",
+        "back": "Museum",
+        "difficulty": "medium",
+        "example": "The museum is interesting",
+        "exampleTranslation": "博物馆很有趣"
+      }
+    ]
+  },
+  {
+    "key": "clothing",
+    "name": "服装",
+    "description": "衣服",
+    "iconName": "Shirt",
+    "color": "#a78bfa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ce_cloth_1",
+        "front": "衬衫",
+        "back": "Shirt",
+        "difficulty": "medium",
+        "example": "I like your shirt",
+        "exampleTranslation": "我喜欢你的衬衫"
+      },
+      {
+        "id": "ce_cloth_2",
+        "front": "裤子",
+        "back": "Pants",
+        "difficulty": "medium",
+        "example": "I need new pants",
+        "exampleTranslation": "我需要新裤子"
+      },
+      {
+        "id": "ce_cloth_3",
+        "front": "鞋子",
+        "back": "Shoes",
+        "difficulty": "medium",
+        "example": "I bought black shoes",
+        "exampleTranslation": "我买了黑色的鞋"
+      },
+      {
+        "id": "ce_cloth_4",
+        "front": "连衣裙",
+        "back": "Dress",
+        "difficulty": "medium",
+        "example": "The dress is beautiful",
+        "exampleTranslation": "裙子很漂亮"
+      },
+      {
+        "id": "ce_cloth_5",
+        "front": "夹克",
+        "back": "Jacket",
+        "difficulty": "medium",
+        "example": "I need a jacket",
+        "exampleTranslation": "我需要一件夹克"
+      },
+      {
+        "id": "ce_cloth_6",
+        "front": "帽子",
+        "back": "Hat",
+        "difficulty": "medium",
+        "example": "Put on the hat",
+        "exampleTranslation": "戴上帽子"
+      },
+      {
+        "id": "ce_cloth_7",
+        "front": "袜子",
+        "back": "Socks",
+        "difficulty": "medium",
+        "example": "My socks are clean",
+        "exampleTranslation": "我的袜子很干净"
+      },
+      {
+        "id": "ce_cloth_8",
+        "front": "手套",
+        "back": "Gloves",
+        "difficulty": "medium",
+        "example": "I wear gloves in winter",
+        "exampleTranslation": "冬天我戴手套"
+      },
+      {
+        "id": "ce_cloth_9",
+        "front": "围巾",
+        "back": "Scarf",
+        "difficulty": "medium",
+        "example": "The scarf is soft",
+        "exampleTranslation": "围巾很软"
+      },
+      {
+        "id": "ce_cloth_10",
+        "front": "外套",
+        "back": "Coat",
+        "difficulty": "medium",
+        "example": "The coat is warm",
+        "exampleTranslation": "外套很暖和"
+      }
+    ]
+  },
+  {
+    "key": "work",
+    "name": "工作",
+    "description": "职业",
+    "iconName": "Briefcase",
+    "color": "#818cf8",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ce_work_1",
+        "front": "工作",
+        "back": "Work",
+        "difficulty": "medium",
+        "example": "I go to work",
+        "exampleTranslation": "我去上班"
+      },
+      {
+        "id": "ce_work_2",
+        "front": "医生",
+        "back": "Doctor",
+        "difficulty": "medium",
+        "example": "He is a doctor",
+        "exampleTranslation": "他是医生"
+      },
+      {
+        "id": "ce_work_3",
+        "front": "老师",
+        "back": "Teacher",
+        "difficulty": "medium",
+        "example": "My teacher is excellent",
+        "exampleTranslation": "我的老师很优秀"
+      },
+      {
+        "id": "ce_work_4",
+        "front": "工程师",
+        "back": "Engineer",
+        "difficulty": "medium",
+        "example": "I am an engineer",
+        "exampleTranslation": "我是工程师"
+      },
+      {
+        "id": "ce_work_5",
+        "front": "律师",
+        "back": "Lawyer",
+        "difficulty": "medium",
+        "example": "She is a lawyer",
+        "exampleTranslation": "她是律师"
+      },
+      {
+        "id": "ce_work_6",
+        "front": "厨师",
+        "back": "Cook",
+        "difficulty": "medium",
+        "example": "The cook prepares the meal",
+        "exampleTranslation": "厨师准备饭菜"
+      },
+      {
+        "id": "ce_work_7",
+        "front": "服务员",
+        "back": "Waiter",
+        "difficulty": "medium",
+        "example": "The waiter is kind",
+        "exampleTranslation": "服务员很友好"
+      },
+      {
+        "id": "ce_work_8",
+        "front": "销售员",
+        "back": "Salesperson",
+        "difficulty": "medium",
+        "example": "The salesperson helps the customer",
+        "exampleTranslation": "销售员帮助顾客"
+      },
+      {
+        "id": "ce_work_9",
+        "front": "警察",
+        "back": "Police officer",
+        "difficulty": "medium",
+        "example": "The police officer protects the city",
+        "exampleTranslation": "警察保护城市"
+      },
+      {
+        "id": "ce_work_10",
+        "front": "机械师",
+        "back": "Mechanic",
+        "difficulty": "medium",
+        "example": "The mechanic repairs cars",
+        "exampleTranslation": "机械师修理汽车"
+      }
+    ]
+  },
+  {
+    "key": "transport",
+    "name": "交通",
+    "description": "交通工具",
+    "iconName": "Car",
+    "color": "#facc15",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ce_trans_1",
+        "front": "汽车",
+        "back": "Car",
+        "difficulty": "medium",
+        "example": "I have a new car",
+        "exampleTranslation": "我有一辆新车"
+      },
+      {
+        "id": "ce_trans_2",
+        "front": "公共汽车",
+        "back": "Bus",
+        "difficulty": "medium",
+        "example": "I go by bus",
+        "exampleTranslation": "我坐公交车"
+      },
+      {
+        "id": "ce_trans_3",
+        "front": "火车",
+        "back": "Train",
+        "difficulty": "medium",
+        "example": "The train is fast",
+        "exampleTranslation": "火车很快"
+      },
+      {
+        "id": "ce_trans_4",
+        "front": "飞机",
+        "back": "Airplane",
+        "difficulty": "medium",
+        "example": "I travel by plane",
+        "exampleTranslation": "我坐飞机旅行"
+      },
+      {
+        "id": "ce_trans_5",
+        "front": "自行车",
+        "back": "Bicycle",
+        "difficulty": "medium",
+        "example": "I ride a bicycle",
+        "exampleTranslation": "我骑自行车"
+      },
+      {
+        "id": "ce_trans_6",
+        "front": "出租车",
+        "back": "Taxi",
+        "difficulty": "medium",
+        "example": "I call a taxi",
+        "exampleTranslation": "我叫出租车"
+      },
+      {
+        "id": "ce_trans_7",
+        "front": "地铁",
+        "back": "Metro",
+        "difficulty": "medium",
+        "example": "I use the metro",
+        "exampleTranslation": "我坐地铁"
+      },
+      {
+        "id": "ce_trans_8",
+        "front": "摩托车",
+        "back": "Motorcycle",
+        "difficulty": "medium",
+        "example": "My motorcycle is red",
+        "exampleTranslation": "我的摩托车是红色的"
+      },
+      {
+        "id": "ce_trans_9",
+        "front": "船",
+        "back": "Boat",
+        "difficulty": "medium",
+        "example": "We sail by boat",
+        "exampleTranslation": "我们坐船航行"
+      },
+      {
+        "id": "ce_trans_10",
+        "front": "票",
+        "back": "Ticket",
+        "difficulty": "medium",
+        "example": "I buy a ticket",
+        "exampleTranslation": "我买票"
+      }
+    ]
+  },
+  {
+    "key": "education",
+    "name": "教育",
+    "description": "学校",
+    "iconName": "School",
+    "color": "#818cf8",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ce_edu_1",
+        "front": "学生",
+        "back": "Student",
+        "difficulty": "medium",
+        "example": "I am a student",
+        "exampleTranslation": "我是学生"
+      },
+      {
+        "id": "ce_edu_2",
+        "front": "老师",
+        "back": "Teacher",
+        "difficulty": "medium",
+        "example": "The teacher teaches well",
+        "exampleTranslation": "老师教得很好"
+      },
+      {
+        "id": "ce_edu_3",
+        "front": "书",
+        "back": "Book",
+        "difficulty": "medium",
+        "example": "I read a book",
+        "exampleTranslation": "我读书"
+      },
+      {
+        "id": "ce_edu_4",
+        "front": "铅笔",
+        "back": "Pencil",
+        "difficulty": "medium",
+        "example": "Do you have a pencil?",
+        "exampleTranslation": "你有铅笔吗？"
+      },
+      {
+        "id": "ce_edu_5",
+        "front": "笔记本",
+        "back": "Notebook",
+        "difficulty": "medium",
+        "example": "I need a notebook",
+        "exampleTranslation": "我需要笔记本"
+      },
+      {
+        "id": "ce_edu_6",
+        "front": "考试",
+        "back": "Exam",
+        "difficulty": "medium",
+        "example": "The exam is tomorrow",
+        "exampleTranslation": "考试是明天"
+      },
+      {
+        "id": "ce_edu_7",
+        "front": "作业",
+        "back": "Homework",
+        "difficulty": "medium",
+        "example": "I have a lot of homework",
+        "exampleTranslation": "我有很多作业"
+      },
+      {
+        "id": "ce_edu_8",
+        "front": "课",
+        "back": "Class",
+        "difficulty": "medium",
+        "example": "The class starts at nine",
+        "exampleTranslation": "课九点开始"
+      },
+      {
+        "id": "ce_edu_9",
+        "front": "图书馆",
+        "back": "Library",
+        "difficulty": "medium",
+        "example": "I study at the library",
+        "exampleTranslation": "我在图书馆学习"
+      },
+      {
+        "id": "ce_edu_10",
+        "front": "背包",
+        "back": "Backpack",
+        "difficulty": "medium",
+        "example": "My backpack is heavy",
+        "exampleTranslation": "我的背包很重"
+      }
+    ]
+  },
+  {
+    "key": "nature",
+    "name": "自然",
+    "description": "大自然",
+    "iconName": "TreePine",
+    "color": "#4ade80",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ce_nature_1",
+        "front": "树",
+        "back": "Tree",
+        "difficulty": "medium",
+        "example": "The tree is tall",
+        "exampleTranslation": "树很高"
+      },
+      {
+        "id": "ce_nature_2",
+        "front": "花",
+        "back": "Flower",
+        "difficulty": "medium",
+        "example": "The flower is beautiful",
+        "exampleTranslation": "花很美"
+      },
+      {
+        "id": "ce_nature_3",
+        "front": "山",
+        "back": "Mountain",
+        "difficulty": "medium",
+        "example": "The mountain is high",
+        "exampleTranslation": "山很高"
+      },
+      {
+        "id": "ce_nature_4",
+        "front": "河",
+        "back": "River",
+        "difficulty": "medium",
+        "example": "The river is long",
+        "exampleTranslation": "河很长"
+      },
+      {
+        "id": "ce_nature_5",
+        "front": "海",
+        "back": "Sea",
+        "difficulty": "medium",
+        "example": "The sea is blue",
+        "exampleTranslation": "海是蓝色的"
+      },
+      {
+        "id": "ce_nature_6",
+        "front": "森林",
+        "back": "Forest",
+        "difficulty": "medium",
+        "example": "We walk through the forest",
+        "exampleTranslation": "我们走过森林"
+      },
+      {
+        "id": "ce_nature_7",
+        "front": "湖",
+        "back": "Lake",
+        "difficulty": "medium",
+        "example": "The lake is calm",
+        "exampleTranslation": "湖很平静"
+      },
+      {
+        "id": "ce_nature_8",
+        "front": "天空",
+        "back": "Sky",
+        "difficulty": "medium",
+        "example": "The sky is blue",
+        "exampleTranslation": "天空是蓝色的"
+      },
+      {
+        "id": "ce_nature_9",
+        "front": "星星",
+        "back": "Star",
+        "difficulty": "medium",
+        "example": "The stars shine",
+        "exampleTranslation": "星星闪耀"
+      },
+      {
+        "id": "ce_nature_10",
+        "front": "月亮",
+        "back": "Moon",
+        "difficulty": "medium",
+        "example": "The moon is full",
+        "exampleTranslation": "月亮是满的"
+      }
+    ]
+  },
+  {
+    "key": "emotions",
+    "name": "情绪",
+    "description": "感受",
+    "iconName": "Heart",
+    "color": "#f87171",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ce_emo_1",
+        "front": "快乐",
+        "back": "Happy",
+        "difficulty": "medium",
+        "example": "I am happy",
+        "exampleTranslation": "我很快乐"
+      },
+      {
+        "id": "ce_emo_2",
+        "front": "悲伤",
+        "back": "Sad",
+        "difficulty": "medium",
+        "example": "He is sad",
+        "exampleTranslation": "他很悲伤"
+      },
+      {
+        "id": "ce_emo_3",
+        "front": "生气",
+        "back": "Angry",
+        "difficulty": "medium",
+        "example": "She is angry",
+        "exampleTranslation": "她很生气"
+      },
+      {
+        "id": "ce_emo_4",
+        "front": "累",
+        "back": "Tired",
+        "difficulty": "medium",
+        "example": "I am tired",
+        "exampleTranslation": "我很累"
+      },
+      {
+        "id": "ce_emo_5",
+        "front": "兴奋",
+        "back": "Excited",
+        "difficulty": "medium",
+        "example": "We are excited",
+        "exampleTranslation": "我们很兴奋"
+      },
+      {
+        "id": "ce_emo_6",
+        "front": "紧张",
+        "back": "Nervous",
+        "difficulty": "medium",
+        "example": "He is nervous",
+        "exampleTranslation": "他很紧张"
+      },
+      {
+        "id": "ce_emo_7",
+        "front": "平静",
+        "back": "Calm",
+        "difficulty": "medium",
+        "example": "She is calm",
+        "exampleTranslation": "她很平静"
+      },
+      {
+        "id": "ce_emo_8",
+        "front": "惊讶",
+        "back": "Surprised",
+        "difficulty": "medium",
+        "example": "I am surprised",
+        "exampleTranslation": "我很惊讶"
+      },
+      {
+        "id": "ce_emo_9",
+        "front": "害怕",
+        "back": "Scared",
+        "difficulty": "medium",
+        "example": "The child is scared",
+        "exampleTranslation": "孩子很害怕"
+      },
+      {
+        "id": "ce_emo_10",
+        "front": "无聊",
+        "back": "Bored",
+        "difficulty": "medium",
+        "example": "They are bored",
+        "exampleTranslation": "他们很无聊"
+      }
+    ]
+  },
+  {
+    "key": "time",
+    "name": "时间",
+    "description": "时间表达",
+    "iconName": "Clock",
+    "color": "#22d3ee",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ce_time_1",
+        "front": "今天",
+        "back": "Today",
+        "difficulty": "medium",
+        "example": "Today is Monday",
+        "exampleTranslation": "今天是星期一"
+      },
+      {
+        "id": "ce_time_2",
+        "front": "昨天",
+        "back": "Yesterday",
+        "difficulty": "medium",
+        "example": "Yesterday was Sunday",
+        "exampleTranslation": "昨天是星期天"
+      },
+      {
+        "id": "ce_time_3",
+        "front": "明天",
+        "back": "Tomorrow",
+        "difficulty": "medium",
+        "example": "Tomorrow is Tuesday",
+        "exampleTranslation": "明天是星期二"
+      },
+      {
+        "id": "ce_time_4",
+        "front": "现在",
+        "back": "Now",
+        "difficulty": "medium",
+        "example": "I'm working now",
+        "exampleTranslation": "我现在在工作"
+      },
+      {
+        "id": "ce_time_5",
+        "front": "以后",
+        "back": "Later",
+        "difficulty": "medium",
+        "example": "I'll do it later",
+        "exampleTranslation": "我以后做"
+      },
+      {
+        "id": "ce_time_6",
+        "front": "早上",
+        "back": "Morning",
+        "difficulty": "medium",
+        "example": "Good morning",
+        "exampleTranslation": "早上好"
+      },
+      {
+        "id": "ce_time_7",
+        "front": "中午",
+        "back": "Noon",
+        "difficulty": "medium",
+        "example": "It's noon",
+        "exampleTranslation": "现在是中午"
+      },
+      {
+        "id": "ce_time_8",
+        "front": "晚上",
+        "back": "Evening",
+        "difficulty": "medium",
+        "example": "Good evening",
+        "exampleTranslation": "晚上好"
+      },
+      {
+        "id": "ce_time_9",
+        "front": "夜晚",
+        "back": "Night",
+        "difficulty": "medium",
+        "example": "Good night",
+        "exampleTranslation": "晚安"
+      },
+      {
+        "id": "ce_time_10",
+        "front": "星期",
+        "back": "Week",
+        "difficulty": "medium",
+        "example": "Next week",
+        "exampleTranslation": "下星期"
+      }
+    ]
+  },
+  {
+    "key": "weather",
+    "name": "天气",
+    "description": "天气状况",
+    "iconName": "Cloud",
+    "color": "#38bdf8",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ce_weather_1",
+        "front": "太阳",
+        "back": "Sun",
+        "difficulty": "medium",
+        "example": "The sun shines",
+        "exampleTranslation": "太阳照耀"
+      },
+      {
+        "id": "ce_weather_2",
+        "front": "雨",
+        "back": "Rain",
+        "difficulty": "medium",
+        "example": "It's raining",
+        "exampleTranslation": "下雨了"
+      },
+      {
+        "id": "ce_weather_3",
+        "front": "雪",
+        "back": "Snow",
+        "difficulty": "medium",
+        "example": "It's snowing",
+        "exampleTranslation": "下雪了"
+      },
+      {
+        "id": "ce_weather_4",
+        "front": "风",
+        "back": "Wind",
+        "difficulty": "medium",
+        "example": "It's windy",
+        "exampleTranslation": "刮风了"
+      },
+      {
+        "id": "ce_weather_5",
+        "front": "云",
+        "back": "Cloud",
+        "difficulty": "medium",
+        "example": "There are clouds in the sky",
+        "exampleTranslation": "天空有云"
+      },
+      {
+        "id": "ce_weather_6",
+        "front": "暴风雨",
+        "back": "Storm",
+        "difficulty": "medium",
+        "example": "A storm is coming",
+        "exampleTranslation": "暴风雨来了"
+      },
+      {
+        "id": "ce_weather_7",
+        "front": "热",
+        "back": "Hot",
+        "difficulty": "medium",
+        "example": "It's very hot",
+        "exampleTranslation": "天气很热"
+      },
+      {
+        "id": "ce_weather_8",
+        "front": "冷",
+        "back": "Cold",
+        "difficulty": "medium",
+        "example": "It's cold in winter",
+        "exampleTranslation": "冬天很冷"
+      },
+      {
+        "id": "ce_weather_9",
+        "front": "闪电",
+        "back": "Lightning",
+        "difficulty": "medium",
+        "example": "I saw lightning",
+        "exampleTranslation": "我看到闪电"
+      },
+      {
+        "id": "ce_weather_10",
+        "front": "雷",
+        "back": "Thunder",
+        "difficulty": "medium",
+        "example": "You can hear thunder",
+        "exampleTranslation": "你能听到雷声"
+      }
+    ]
+  },
+  {
+    "key": "body",
+    "name": "身体",
+    "description": "身体部位",
+    "iconName": "Hand",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ce_body_1",
+        "front": "头",
+        "back": "Head",
+        "difficulty": "medium",
+        "example": "My head hurts",
+        "exampleTranslation": "我头疼"
+      },
+      {
+        "id": "ce_body_2",
+        "front": "眼睛",
+        "back": "Eye",
+        "difficulty": "medium",
+        "example": "I have blue eyes",
+        "exampleTranslation": "我有蓝眼睛"
+      },
+      {
+        "id": "ce_body_3",
+        "front": "鼻子",
+        "back": "Nose",
+        "difficulty": "medium",
+        "example": "My nose is cold",
+        "exampleTranslation": "我的鼻子很冷"
+      },
+      {
+        "id": "ce_body_4",
+        "front": "嘴",
+        "back": "Mouth",
+        "difficulty": "medium",
+        "example": "Open your mouth",
+        "exampleTranslation": "张开嘴"
+      },
+      {
+        "id": "ce_body_5",
+        "front": "耳朵",
+        "back": "Ear",
+        "difficulty": "medium",
+        "example": "My ears are big",
+        "exampleTranslation": "我的耳朵很大"
+      },
+      {
+        "id": "ce_body_6",
+        "front": "手",
+        "back": "Hand",
+        "difficulty": "medium",
+        "example": "Give me your hand",
+        "exampleTranslation": "把手给我"
+      },
+      {
+        "id": "ce_body_7",
+        "front": "脚",
+        "back": "Foot",
+        "difficulty": "medium",
+        "example": "My foot hurts",
+        "exampleTranslation": "我脚疼"
+      },
+      {
+        "id": "ce_body_8",
+        "front": "胳膊",
+        "back": "Arm",
+        "difficulty": "medium",
+        "example": "Raise your arm",
+        "exampleTranslation": "举起你的胳膊"
+      },
+      {
+        "id": "ce_body_9",
+        "front": "腿",
+        "back": "Leg",
+        "difficulty": "medium",
+        "example": "My legs are tired",
+        "exampleTranslation": "我的腿很累"
+      },
+      {
+        "id": "ce_body_10",
+        "front": "心",
+        "back": "Heart",
+        "difficulty": "medium",
+        "example": "My heart beats fast",
+        "exampleTranslation": "我的心跳很快"
+      }
+    ]
+  },
+  {
+    "key": "activities",
+    "name": "活动",
+    "description": "日常活动",
+    "iconName": "Lightbulb",
+    "color": "#fbbf24",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ce_act_1",
+        "front": "吃",
+        "back": "Eat",
+        "difficulty": "medium",
+        "example": "I'm going to eat",
+        "exampleTranslation": "我要吃饭"
+      },
+      {
+        "id": "ce_act_2",
+        "front": "喝",
+        "back": "Drink",
+        "difficulty": "medium",
+        "example": "I drink water",
+        "exampleTranslation": "我喝水"
+      },
+      {
+        "id": "ce_act_3",
+        "front": "睡觉",
+        "back": "Sleep",
+        "difficulty": "medium",
+        "example": "I need to sleep",
+        "exampleTranslation": "我需要睡觉"
+      },
+      {
+        "id": "ce_act_4",
+        "front": "跑",
+        "back": "Run",
+        "difficulty": "medium",
+        "example": "I run in the morning",
+        "exampleTranslation": "我早上跑步"
+      },
+      {
+        "id": "ce_act_5",
+        "front": "读",
+        "back": "Read",
+        "difficulty": "medium",
+        "example": "I read a book",
+        "exampleTranslation": "我读书"
+      },
+      {
+        "id": "ce_act_6",
+        "front": "写",
+        "back": "Write",
+        "difficulty": "medium",
+        "example": "I write a letter",
+        "exampleTranslation": "我写信"
+      },
+      {
+        "id": "ce_act_7",
+        "front": "说",
+        "back": "Speak",
+        "difficulty": "medium",
+        "example": "I speak Chinese",
+        "exampleTranslation": "我说中文"
+      },
+      {
+        "id": "ce_act_8",
+        "front": "听",
+        "back": "Listen",
+        "difficulty": "medium",
+        "example": "I listen to music",
+        "exampleTranslation": "我听音乐"
+      },
+      {
+        "id": "ce_act_9",
+        "front": "看",
+        "back": "Watch",
+        "difficulty": "medium",
+        "example": "I watch television",
+        "exampleTranslation": "我看电视"
+      },
+      {
+        "id": "ce_act_10",
+        "front": "想",
+        "back": "Think",
+        "difficulty": "medium",
+        "example": "I think of you",
+        "exampleTranslation": "我想你"
+      }
+    ]
+  },
+  {
+    "key": "learning",
+    "name": "学习",
+    "description": "学习活动",
+    "iconName": "BookOpen",
+    "color": "#818cf8",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ce_learn_1",
+        "front": "学习",
+        "back": "Learn",
+        "difficulty": "medium",
+        "example": "I learn Chinese",
+        "exampleTranslation": "我学中文"
+      },
+      {
+        "id": "ce_learn_2",
+        "front": "学",
+        "back": "Study",
+        "difficulty": "medium",
+        "example": "I study at university",
+        "exampleTranslation": "我在大学学习"
+      },
+      {
+        "id": "ce_learn_3",
+        "front": "教",
+        "back": "Teach",
+        "difficulty": "medium",
+        "example": "I teach English",
+        "exampleTranslation": "我教英语"
+      },
+      {
+        "id": "ce_learn_4",
+        "front": "理解",
+        "back": "Understand",
+        "difficulty": "medium",
+        "example": "I understand the lesson",
+        "exampleTranslation": "我理解这课"
+      },
+      {
+        "id": "ce_learn_5",
+        "front": "练习",
+        "back": "Practice",
+        "difficulty": "medium",
+        "example": "I practice every day",
+        "exampleTranslation": "我每天练习"
+      },
+      {
+        "id": "ce_learn_6",
+        "front": "重复",
+        "back": "Repeat",
+        "difficulty": "medium",
+        "example": "Repeat the word",
+        "exampleTranslation": "重复这个词"
+      },
+      {
+        "id": "ce_learn_7",
+        "front": "解释",
+        "back": "Explain",
+        "difficulty": "medium",
+        "example": "The teacher explains well",
+        "exampleTranslation": "老师解释得很好"
+      },
+      {
+        "id": "ce_learn_8",
+        "front": "问",
+        "back": "Ask",
+        "difficulty": "medium",
+        "example": "I ask the teacher",
+        "exampleTranslation": "我问老师"
+      },
+      {
+        "id": "ce_learn_9",
+        "front": "回答",
+        "back": "Answer",
+        "difficulty": "medium",
+        "example": "I answer the question",
+        "exampleTranslation": "我回答问题"
+      },
+      {
+        "id": "ce_learn_10",
+        "front": "记得",
+        "back": "Remember",
+        "difficulty": "medium",
+        "example": "I remember the lesson",
+        "exampleTranslation": "我记得这课"
+      }
+    ]
+  },
+  {
+    "key": "sports",
+    "name": "体育",
+    "description": "运动",
+    "iconName": "Dumbbell",
+    "color": "#a3e635",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ce_sport_1",
+        "front": "足球",
+        "back": "Football",
+        "difficulty": "medium",
+        "example": "I play football",
+        "exampleTranslation": "我踢足球"
+      },
+      {
+        "id": "ce_sport_2",
+        "front": "篮球",
+        "back": "Basketball",
+        "difficulty": "medium",
+        "example": "I like basketball",
+        "exampleTranslation": "我喜欢篮球"
+      },
+      {
+        "id": "ce_sport_3",
+        "front": "网球",
+        "back": "Tennis",
+        "difficulty": "medium",
+        "example": "I play tennis",
+        "exampleTranslation": "我打网球"
+      },
+      {
+        "id": "ce_sport_4",
+        "front": "游泳",
+        "back": "Swimming",
+        "difficulty": "medium",
+        "example": "Swimming is healthy",
+        "exampleTranslation": "游泳很健康"
+      },
+      {
+        "id": "ce_sport_5",
+        "front": "跑步",
+        "back": "Running",
+        "difficulty": "medium",
+        "example": "I run in the morning",
+        "exampleTranslation": "我早上跑步"
+      },
+      {
+        "id": "ce_sport_6",
+        "front": "骑自行车",
+        "back": "Cycling",
+        "difficulty": "medium",
+        "example": "I like cycling",
+        "exampleTranslation": "我喜欢骑自行车"
+      },
+      {
+        "id": "ce_sport_7",
+        "front": "健身房",
+        "back": "Gym",
+        "difficulty": "medium",
+        "example": "I go to the gym",
+        "exampleTranslation": "我去健身房"
+      },
+      {
+        "id": "ce_sport_8",
+        "front": "训练",
+        "back": "Training",
+        "difficulty": "medium",
+        "example": "I have training today",
+        "exampleTranslation": "我今天有训练"
+      },
+      {
+        "id": "ce_sport_9",
+        "front": "队",
+        "back": "Team",
+        "difficulty": "medium",
+        "example": "I'm on a team",
+        "exampleTranslation": "我在一个队"
+      },
+      {
+        "id": "ce_sport_10",
+        "front": "教练",
+        "back": "Coach",
+        "difficulty": "medium",
+        "example": "Our coach is excellent",
+        "exampleTranslation": "我们的教练很优秀"
+      }
+    ]
+  },
+  {
+    "key": "travel",
+    "name": "旅行",
+    "description": "旅游",
+    "iconName": "Plane",
+    "color": "#60a5fa",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ce_travel_1",
+        "front": "旅行",
+        "back": "Travel",
+        "difficulty": "medium",
+        "example": "I'm going on a trip",
+        "exampleTranslation": "我去旅行"
+      },
+      {
+        "id": "ce_travel_2",
+        "front": "行李箱",
+        "back": "Suitcase",
+        "difficulty": "medium",
+        "example": "My suitcase is heavy",
+        "exampleTranslation": "我的行李箱很重"
+      },
+      {
+        "id": "ce_travel_3",
+        "front": "护照",
+        "back": "Passport",
+        "difficulty": "medium",
+        "example": "I need my passport",
+        "exampleTranslation": "我需要护照"
+      },
+      {
+        "id": "ce_travel_4",
+        "front": "酒店",
+        "back": "Hotel",
+        "difficulty": "medium",
+        "example": "The hotel is comfortable",
+        "exampleTranslation": "酒店很舒适"
+      },
+      {
+        "id": "ce_travel_5",
+        "front": "预订",
+        "back": "Reservation",
+        "difficulty": "medium",
+        "example": "I have a reservation",
+        "exampleTranslation": "我有预订"
+      },
+      {
+        "id": "ce_travel_6",
+        "front": "游客",
+        "back": "Tourist",
+        "difficulty": "medium",
+        "example": "I am a tourist",
+        "exampleTranslation": "我是游客"
+      },
+      {
+        "id": "ce_travel_7",
+        "front": "假期",
+        "back": "Vacation",
+        "difficulty": "medium",
+        "example": "I'm on vacation",
+        "exampleTranslation": "我在度假"
+      },
+      {
+        "id": "ce_travel_8",
+        "front": "观光",
+        "back": "Sightseeing",
+        "difficulty": "medium",
+        "example": "We're doing sightseeing",
+        "exampleTranslation": "我们在观光"
+      },
+      {
+        "id": "ce_travel_9",
+        "front": "导游",
+        "back": "Guide",
+        "difficulty": "medium",
+        "example": "The guide is informative",
+        "exampleTranslation": "导游很有用"
+      },
+      {
+        "id": "ce_travel_10",
+        "front": "纪念品",
+        "back": "Souvenir",
+        "difficulty": "medium",
+        "example": "I'm buying a souvenir",
+        "exampleTranslation": "我买纪念品"
+      }
+    ]
+  },
+  {
+    "key": "entertainment",
+    "name": "娱乐",
+    "description": "休闲",
+    "iconName": "Music",
+    "color": "#e879f9",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ce_ent_1",
+        "front": "音乐",
+        "back": "Music",
+        "difficulty": "medium",
+        "example": "I listen to music",
+        "exampleTranslation": "我听音乐"
+      },
+      {
+        "id": "ce_ent_2",
+        "front": "电影",
+        "back": "Movie",
+        "difficulty": "medium",
+        "example": "I watch a movie",
+        "exampleTranslation": "我看电影"
+      },
+      {
+        "id": "ce_ent_3",
+        "front": "音乐会",
+        "back": "Concert",
+        "difficulty": "medium",
+        "example": "I go to a concert",
+        "exampleTranslation": "我去音乐会"
+      },
+      {
+        "id": "ce_ent_4",
+        "front": "剧院",
+        "back": "Theater",
+        "difficulty": "medium",
+        "example": "I go to the theater",
+        "exampleTranslation": "我去剧院"
+      },
+      {
+        "id": "ce_ent_5",
+        "front": "跳舞",
+        "back": "Dance",
+        "difficulty": "medium",
+        "example": "I like to dance",
+        "exampleTranslation": "我喜欢跳舞"
+      },
+      {
+        "id": "ce_ent_6",
+        "front": "唱歌",
+        "back": "Sing",
+        "difficulty": "medium",
+        "example": "I like to sing",
+        "exampleTranslation": "我喜欢唱歌"
+      },
+      {
+        "id": "ce_ent_7",
+        "front": "吉他",
+        "back": "Guitar",
+        "difficulty": "medium",
+        "example": "I play guitar",
+        "exampleTranslation": "我弹吉他"
+      },
+      {
+        "id": "ce_ent_8",
+        "front": "游戏",
+        "back": "Games",
+        "difficulty": "medium",
+        "example": "I play video games",
+        "exampleTranslation": "我玩电子游戏"
+      },
+      {
+        "id": "ce_ent_9",
+        "front": "摄影",
+        "back": "Photography",
+        "difficulty": "medium",
+        "example": "I'm interested in photography",
+        "exampleTranslation": "我对摄影感兴趣"
+      },
+      {
+        "id": "ce_ent_10",
+        "front": "阅读",
+        "back": "Reading",
+        "difficulty": "medium",
+        "example": "Reading is my hobby",
+        "exampleTranslation": "阅读是我的爱好"
+      }
+    ]
+  }
+]

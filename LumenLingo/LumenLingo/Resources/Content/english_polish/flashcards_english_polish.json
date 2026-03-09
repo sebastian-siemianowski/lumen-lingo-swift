@@ -1,0 +1,1892 @@
+[
+  {
+    "key": "greetings",
+    "name": "Greetings",
+    "description": "Basic greetings",
+    "iconName": "Hand",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ep_greet_1",
+        "front": "Hello",
+        "back": "Cześć",
+        "difficulty": "medium",
+        "example": "Cześć, jak się masz?",
+        "exampleTranslation": "Hello, how are you?"
+      },
+      {
+        "id": "ep_greet_2",
+        "front": "Good morning",
+        "back": "Dzień dobry",
+        "difficulty": "medium",
+        "example": "Dzień dobry, panie",
+        "exampleTranslation": "Good morning, sir"
+      },
+      {
+        "id": "ep_greet_3",
+        "front": "Good evening",
+        "back": "Dobry wieczór",
+        "difficulty": "medium",
+        "example": "Dobry wieczór, jak się masz?",
+        "exampleTranslation": "Good evening, how are you?"
+      },
+      {
+        "id": "ep_greet_4",
+        "front": "Good night",
+        "back": "Dobranoc",
+        "difficulty": "medium",
+        "example": "Dobranoc, śpij dobrze",
+        "exampleTranslation": "Good night, sleep well"
+      },
+      {
+        "id": "ep_greet_5",
+        "front": "Goodbye",
+        "back": "Do widzenia",
+        "difficulty": "medium",
+        "example": "Do widzenia, do zobaczenia",
+        "exampleTranslation": "Goodbye, see you later"
+      },
+      {
+        "id": "ep_greet_6",
+        "front": "Thank you",
+        "back": "Dziękuję",
+        "difficulty": "medium",
+        "example": "Dziękuję za pomoc",
+        "exampleTranslation": "Thank you for your help"
+      },
+      {
+        "id": "ep_greet_7",
+        "front": "Please",
+        "back": "Proszę",
+        "difficulty": "medium",
+        "example": "Proszę, pomóż mi",
+        "exampleTranslation": "Please, help me"
+      },
+      {
+        "id": "ep_greet_8",
+        "front": "Excuse me",
+        "back": "Przepraszam",
+        "difficulty": "medium",
+        "example": "Przepraszam, spóźniłem się",
+        "exampleTranslation": "Excuse me, I'm late"
+      },
+      {
+        "id": "ep_greet_9",
+        "front": "Yes",
+        "back": "Tak",
+        "difficulty": "medium",
+        "example": "Tak, zgadzam się",
+        "exampleTranslation": "Yes, I agree"
+      },
+      {
+        "id": "ep_greet_10",
+        "front": "No",
+        "back": "Nie",
+        "difficulty": "medium",
+        "example": "Nie, nie chcę",
+        "exampleTranslation": "No, I don't want"
+      }
+    ]
+  },
+  {
+    "key": "family",
+    "name": "Family",
+    "description": "Family members",
+    "iconName": "Users",
+    "color": "#f472b6",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ep_fam_1",
+        "front": "Father",
+        "back": "Ojciec",
+        "difficulty": "medium",
+        "example": "Mój ojciec dużo pracuje",
+        "exampleTranslation": "My father works a lot"
+      },
+      {
+        "id": "ep_fam_2",
+        "front": "Mother",
+        "back": "Matka",
+        "difficulty": "medium",
+        "example": "Moja matka dobrze gotuje",
+        "exampleTranslation": "My mother cooks well"
+      },
+      {
+        "id": "ep_fam_3",
+        "front": "Brother",
+        "back": "Brat",
+        "difficulty": "medium",
+        "example": "Mój brat studiuje medycynę",
+        "exampleTranslation": "My brother studies medicine"
+      },
+      {
+        "id": "ep_fam_4",
+        "front": "Sister",
+        "back": "Siostra",
+        "difficulty": "medium",
+        "example": "Moja siostra jest nauczycielką",
+        "exampleTranslation": "My sister is a teacher"
+      },
+      {
+        "id": "ep_fam_5",
+        "front": "Son",
+        "back": "Syn",
+        "difficulty": "medium",
+        "example": "Mój syn ma dziesięć lat",
+        "exampleTranslation": "My son is ten years old"
+      },
+      {
+        "id": "ep_fam_6",
+        "front": "Daughter",
+        "back": "Córka",
+        "difficulty": "medium",
+        "example": "Moja córka chodzi na uniwersytet",
+        "exampleTranslation": "My daughter goes to university"
+      },
+      {
+        "id": "ep_fam_7",
+        "front": "Grandfather",
+        "back": "Dziadek",
+        "difficulty": "medium",
+        "example": "Mój dziadek jest bardzo mądry",
+        "exampleTranslation": "My grandfather is very wise"
+      },
+      {
+        "id": "ep_fam_8",
+        "front": "Grandmother",
+        "back": "Babcia",
+        "difficulty": "medium",
+        "example": "Moja babcia robi ciasta",
+        "exampleTranslation": "My grandmother makes cakes"
+      },
+      {
+        "id": "ep_fam_9",
+        "front": "Uncle",
+        "back": "Wujek",
+        "difficulty": "medium",
+        "example": "Mój wujek mieszka w Warszawie",
+        "exampleTranslation": "My uncle lives in Warsaw"
+      },
+      {
+        "id": "ep_fam_10",
+        "front": "Aunt",
+        "back": "Ciocia",
+        "difficulty": "medium",
+        "example": "Moja ciocia jest bardzo miła",
+        "exampleTranslation": "My aunt is very kind"
+      }
+    ]
+  },
+  {
+    "key": "numbers",
+    "name": "Numbers",
+    "description": "Basic numbers",
+    "iconName": "Hash",
+    "color": "#c084fc",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ep_num_1",
+        "front": "One",
+        "back": "Jeden",
+        "difficulty": "medium",
+        "example": "Mam jednego brata",
+        "exampleTranslation": "I have one brother"
+      },
+      {
+        "id": "ep_num_2",
+        "front": "Two",
+        "back": "Dwa",
+        "difficulty": "medium",
+        "example": "Są dwa koty",
+        "exampleTranslation": "There are two cats"
+      },
+      {
+        "id": "ep_num_3",
+        "front": "Three",
+        "back": "Trzy",
+        "difficulty": "medium",
+        "example": "Jest trzecia",
+        "exampleTranslation": "It's three o'clock"
+      },
+      {
+        "id": "ep_num_4",
+        "front": "Four",
+        "back": "Cztery",
+        "difficulty": "medium",
+        "example": "Cztery pory roku",
+        "exampleTranslation": "Four seasons"
+      },
+      {
+        "id": "ep_num_5",
+        "front": "Five",
+        "back": "Pięć",
+        "difficulty": "medium",
+        "example": "Pięć palców na ręce",
+        "exampleTranslation": "Five fingers on the hand"
+      },
+      {
+        "id": "ep_num_6",
+        "front": "Six",
+        "back": "Sześć",
+        "difficulty": "medium",
+        "example": "Mój syn ma sześć lat",
+        "exampleTranslation": "My son is six years old"
+      },
+      {
+        "id": "ep_num_7",
+        "front": "Seven",
+        "back": "Siedem",
+        "difficulty": "medium",
+        "example": "Siedem dni tygodnia",
+        "exampleTranslation": "Seven days of the week"
+      },
+      {
+        "id": "ep_num_8",
+        "front": "Eight",
+        "back": "Osiem",
+        "difficulty": "medium",
+        "example": "Pracuję osiem godzin",
+        "exampleTranslation": "I work eight hours"
+      },
+      {
+        "id": "ep_num_9",
+        "front": "Nine",
+        "back": "Dziewięć",
+        "difficulty": "medium",
+        "example": "Dziewiąta rano",
+        "exampleTranslation": "Nine o'clock in the morning"
+      },
+      {
+        "id": "ep_num_10",
+        "front": "Ten",
+        "back": "Dziesięć",
+        "difficulty": "medium",
+        "example": "Dziesięć euro, proszę",
+        "exampleTranslation": "Ten euros, please"
+      }
+    ]
+  },
+  {
+    "key": "colors",
+    "name": "Colors",
+    "description": "Basic colors",
+    "iconName": "Palette",
+    "color": "#fb923c",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ep_col_1",
+        "front": "Red",
+        "back": "Czerwony",
+        "difficulty": "medium",
+        "example": "Samochód jest czerwony",
+        "exampleTranslation": "The car is red"
+      },
+      {
+        "id": "ep_col_2",
+        "front": "Blue",
+        "back": "Niebieski",
+        "difficulty": "medium",
+        "example": "Niebo jest niebieskie",
+        "exampleTranslation": "The sky is blue"
+      },
+      {
+        "id": "ep_col_3",
+        "front": "Green",
+        "back": "Zielony",
+        "difficulty": "medium",
+        "example": "Trawa jest zielona",
+        "exampleTranslation": "The grass is green"
+      },
+      {
+        "id": "ep_col_4",
+        "front": "Yellow",
+        "back": "Żółty",
+        "difficulty": "medium",
+        "example": "Słońce jest żółte",
+        "exampleTranslation": "The sun is yellow"
+      },
+      {
+        "id": "ep_col_5",
+        "front": "Black",
+        "back": "Czarny",
+        "difficulty": "medium",
+        "example": "Mój kot jest czarny",
+        "exampleTranslation": "My cat is black"
+      },
+      {
+        "id": "ep_col_6",
+        "front": "White",
+        "back": "Biały",
+        "difficulty": "medium",
+        "example": "Śnieg jest biały",
+        "exampleTranslation": "The snow is white"
+      },
+      {
+        "id": "ep_col_7",
+        "front": "Orange",
+        "back": "Pomarańczowy",
+        "difficulty": "medium",
+        "example": "Pomarańcza jest pomarańczowa",
+        "exampleTranslation": "The orange is orange"
+      },
+      {
+        "id": "ep_col_8",
+        "front": "Pink",
+        "back": "Różowy",
+        "difficulty": "medium",
+        "example": "Sukienka jest różowa",
+        "exampleTranslation": "The dress is pink"
+      },
+      {
+        "id": "ep_col_9",
+        "front": "Brown",
+        "back": "Brązowy",
+        "difficulty": "medium",
+        "example": "Niedźwiedź jest brązowy",
+        "exampleTranslation": "The bear is brown"
+      },
+      {
+        "id": "ep_col_10",
+        "front": "Gray",
+        "back": "Szary",
+        "difficulty": "medium",
+        "example": "Słoń jest szary",
+        "exampleTranslation": "The elephant is gray"
+      }
+    ]
+  },
+  {
+    "key": "food",
+    "name": "Food",
+    "description": "Basic foods",
+    "iconName": "UtensilsCrossed",
+    "color": "#4ade80",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ep_food_1",
+        "front": "Bread",
+        "back": "Chleb",
+        "difficulty": "medium",
+        "example": "Chleb jest świeży",
+        "exampleTranslation": "The bread is fresh"
+      },
+      {
+        "id": "ep_food_2",
+        "front": "Water",
+        "back": "Woda",
+        "difficulty": "medium",
+        "example": "Szklankę wody, proszę",
+        "exampleTranslation": "A glass of water, please"
+      },
+      {
+        "id": "ep_food_3",
+        "front": "Coffee",
+        "back": "Kawa",
+        "difficulty": "medium",
+        "example": "Lubię kawę",
+        "exampleTranslation": "I like coffee"
+      },
+      {
+        "id": "ep_food_4",
+        "front": "Milk",
+        "back": "Mleko",
+        "difficulty": "medium",
+        "example": "Mleko jest świeże",
+        "exampleTranslation": "The milk is fresh"
+      },
+      {
+        "id": "ep_food_5",
+        "front": "Meat",
+        "back": "Mięso",
+        "difficulty": "medium",
+        "example": "Mięso jest pyszne",
+        "exampleTranslation": "The meat is delicious"
+      },
+      {
+        "id": "ep_food_6",
+        "front": "Fish",
+        "back": "Ryba",
+        "difficulty": "medium",
+        "example": "Ryba jest bardzo zdrowa",
+        "exampleTranslation": "Fish is very healthy"
+      },
+      {
+        "id": "ep_food_7",
+        "front": "Fruit",
+        "back": "Owoce",
+        "difficulty": "medium",
+        "example": "Jem owoce codziennie",
+        "exampleTranslation": "I eat fruit every day"
+      },
+      {
+        "id": "ep_food_8",
+        "front": "Vegetables",
+        "back": "Warzywa",
+        "difficulty": "medium",
+        "example": "Warzywa są ważne",
+        "exampleTranslation": "Vegetables are important"
+      },
+      {
+        "id": "ep_food_9",
+        "front": "Cheese",
+        "back": "Ser",
+        "difficulty": "medium",
+        "example": "Polski ser jest pyszny",
+        "exampleTranslation": "Polish cheese is delicious"
+      },
+      {
+        "id": "ep_food_10",
+        "front": "Egg",
+        "back": "Jajko",
+        "difficulty": "medium",
+        "example": "Jem jajka na śniadanie",
+        "exampleTranslation": "I eat eggs for breakfast"
+      }
+    ]
+  },
+  {
+    "key": "house",
+    "name": "House",
+    "description": "Household items",
+    "iconName": "Home",
+    "color": "#facc15",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ep_house_1",
+        "front": "House",
+        "back": "Dom",
+        "difficulty": "medium",
+        "example": "Mój dom jest duży",
+        "exampleTranslation": "My house is big"
+      },
+      {
+        "id": "ep_house_2",
+        "front": "Room",
+        "back": "Pokój",
+        "difficulty": "medium",
+        "example": "Pokój jest czysty",
+        "exampleTranslation": "The room is clean"
+      },
+      {
+        "id": "ep_house_3",
+        "front": "Kitchen",
+        "back": "Kuchnia",
+        "difficulty": "medium",
+        "example": "Gotuję w kuchni",
+        "exampleTranslation": "I cook in the kitchen"
+      },
+      {
+        "id": "ep_house_4",
+        "front": "Bathroom",
+        "back": "Łazienka",
+        "difficulty": "medium",
+        "example": "Łazienka jest nowa",
+        "exampleTranslation": "The bathroom is new"
+      },
+      {
+        "id": "ep_house_5",
+        "front": "Bedroom",
+        "back": "Sypialnia",
+        "difficulty": "medium",
+        "example": "Moja sypialnia jest wygodna",
+        "exampleTranslation": "My bedroom is comfortable"
+      },
+      {
+        "id": "ep_house_6",
+        "front": "Door",
+        "back": "Drzwi",
+        "difficulty": "medium",
+        "example": "Zamknij drzwi",
+        "exampleTranslation": "Close the door"
+      },
+      {
+        "id": "ep_house_7",
+        "front": "Window",
+        "back": "Okno",
+        "difficulty": "medium",
+        "example": "Otwórz okno",
+        "exampleTranslation": "Open the window"
+      },
+      {
+        "id": "ep_house_8",
+        "front": "Table",
+        "back": "Stół",
+        "difficulty": "medium",
+        "example": "Stół jest drewniany",
+        "exampleTranslation": "The table is wooden"
+      },
+      {
+        "id": "ep_house_9",
+        "front": "Chair",
+        "back": "Krzesło",
+        "difficulty": "medium",
+        "example": "Krzesło jest wygodne",
+        "exampleTranslation": "The chair is comfortable"
+      },
+      {
+        "id": "ep_house_10",
+        "front": "Bed",
+        "back": "Łóżko",
+        "difficulty": "medium",
+        "example": "Łóżko jest miękkie",
+        "exampleTranslation": "The bed is soft"
+      }
+    ]
+  },
+  {
+    "key": "places",
+    "name": "Places",
+    "description": "Locations",
+    "iconName": "MapPin",
+    "color": "#f87171",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ep_place_1",
+        "front": "Store",
+        "back": "Sklep",
+        "difficulty": "medium",
+        "example": "Sklep jest otwarty",
+        "exampleTranslation": "The store is open"
+      },
+      {
+        "id": "ep_place_2",
+        "front": "School",
+        "back": "Szkoła",
+        "difficulty": "medium",
+        "example": "Idę do szkoły",
+        "exampleTranslation": "I go to school"
+      },
+      {
+        "id": "ep_place_3",
+        "front": "Hospital",
+        "back": "Szpital",
+        "difficulty": "medium",
+        "example": "Szpital jest blisko",
+        "exampleTranslation": "The hospital is close"
+      },
+      {
+        "id": "ep_place_4",
+        "front": "Park",
+        "back": "Park",
+        "difficulty": "medium",
+        "example": "Dzieci bawią się w parku",
+        "exampleTranslation": "Children play in the park"
+      },
+      {
+        "id": "ep_place_5",
+        "front": "Restaurant",
+        "back": "Restauracja",
+        "difficulty": "medium",
+        "example": "Jemy w restauracji",
+        "exampleTranslation": "We eat at the restaurant"
+      },
+      {
+        "id": "ep_place_6",
+        "front": "Hotel",
+        "back": "Hotel",
+        "difficulty": "medium",
+        "example": "Hotel jest bardzo duży",
+        "exampleTranslation": "The hotel is very big"
+      },
+      {
+        "id": "ep_place_7",
+        "front": "Bank",
+        "back": "Bank",
+        "difficulty": "medium",
+        "example": "Idę do banku",
+        "exampleTranslation": "I go to the bank"
+      },
+      {
+        "id": "ep_place_8",
+        "front": "Airport",
+        "back": "Lotnisko",
+        "difficulty": "medium",
+        "example": "Jestem na lotnisku",
+        "exampleTranslation": "I'm at the airport"
+      },
+      {
+        "id": "ep_place_9",
+        "front": "Train station",
+        "back": "Dworzec",
+        "difficulty": "medium",
+        "example": "Dworzec kolejowy",
+        "exampleTranslation": "The train station"
+      },
+      {
+        "id": "ep_place_10",
+        "front": "Museum",
+        "back": "Muzeum",
+        "difficulty": "medium",
+        "example": "Muzeum jest interesujące",
+        "exampleTranslation": "The museum is interesting"
+      }
+    ]
+  },
+  {
+    "key": "clothing",
+    "name": "Clothing",
+    "description": "Clothes",
+    "iconName": "Shirt",
+    "color": "#818cf8",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ep_cloth_1",
+        "front": "Shirt",
+        "back": "Koszula",
+        "difficulty": "medium",
+        "example": "Lubię twoją koszulę",
+        "exampleTranslation": "I like your shirt"
+      },
+      {
+        "id": "ep_cloth_2",
+        "front": "Pants",
+        "back": "Spodnie",
+        "difficulty": "medium",
+        "example": "Potrzebuję nowych spodni",
+        "exampleTranslation": "I need new pants"
+      },
+      {
+        "id": "ep_cloth_3",
+        "front": "Shoes",
+        "back": "Buty",
+        "difficulty": "medium",
+        "example": "Kupiłem czarne buty",
+        "exampleTranslation": "I bought black shoes"
+      },
+      {
+        "id": "ep_cloth_4",
+        "front": "Dress",
+        "back": "Sukienka",
+        "difficulty": "medium",
+        "example": "Sukienka jest piękna",
+        "exampleTranslation": "The dress is beautiful"
+      },
+      {
+        "id": "ep_cloth_5",
+        "front": "Jacket",
+        "back": "Kurtka",
+        "difficulty": "medium",
+        "example": "Potrzebuję kurtki",
+        "exampleTranslation": "I need a jacket"
+      },
+      {
+        "id": "ep_cloth_6",
+        "front": "Hat",
+        "back": "Kapelusz",
+        "difficulty": "medium",
+        "example": "Włóż kapelusz",
+        "exampleTranslation": "Put on the hat"
+      },
+      {
+        "id": "ep_cloth_7",
+        "front": "Socks",
+        "back": "Skarpetki",
+        "difficulty": "medium",
+        "example": "Moje skarpetki są czyste",
+        "exampleTranslation": "My socks are clean"
+      },
+      {
+        "id": "ep_cloth_8",
+        "front": "Gloves",
+        "back": "Rękawiczki",
+        "difficulty": "medium",
+        "example": "Noszę rękawiczki zimą",
+        "exampleTranslation": "I wear gloves in winter"
+      },
+      {
+        "id": "ep_cloth_9",
+        "front": "Scarf",
+        "back": "Szalik",
+        "difficulty": "medium",
+        "example": "Szalik jest miękki",
+        "exampleTranslation": "The scarf is soft"
+      },
+      {
+        "id": "ep_cloth_10",
+        "front": "Coat",
+        "back": "Płaszcz",
+        "difficulty": "medium",
+        "example": "Płaszcz jest ciepły",
+        "exampleTranslation": "The coat is warm"
+      }
+    ]
+  },
+  {
+    "key": "work",
+    "name": "Work",
+    "description": "Professions",
+    "iconName": "Briefcase",
+    "color": "#60a5fa",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ep_work_1",
+        "front": "Work",
+        "back": "Praca",
+        "difficulty": "medium",
+        "example": "Idę do pracy",
+        "exampleTranslation": "I go to work"
+      },
+      {
+        "id": "ep_work_2",
+        "front": "Doctor",
+        "back": "Lekarz",
+        "difficulty": "medium",
+        "example": "On jest lekarzem",
+        "exampleTranslation": "He is a doctor"
+      },
+      {
+        "id": "ep_work_3",
+        "front": "Teacher",
+        "back": "Nauczyciel",
+        "difficulty": "medium",
+        "example": "Mój nauczyciel jest doskonały",
+        "exampleTranslation": "My teacher is excellent"
+      },
+      {
+        "id": "ep_work_4",
+        "front": "Engineer",
+        "back": "Inżynier",
+        "difficulty": "medium",
+        "example": "Jestem inżynierem",
+        "exampleTranslation": "I am an engineer"
+      },
+      {
+        "id": "ep_work_5",
+        "front": "Lawyer",
+        "back": "Prawnik",
+        "difficulty": "medium",
+        "example": "Ona jest prawnikiem",
+        "exampleTranslation": "She is a lawyer"
+      },
+      {
+        "id": "ep_work_6",
+        "front": "Cook",
+        "back": "Kucharz",
+        "difficulty": "medium",
+        "example": "Kucharz przygotowuje posiłek",
+        "exampleTranslation": "The cook prepares the meal"
+      },
+      {
+        "id": "ep_work_7",
+        "front": "Waiter",
+        "back": "Kelner",
+        "difficulty": "medium",
+        "example": "Kelner jest miły",
+        "exampleTranslation": "The waiter is kind"
+      },
+      {
+        "id": "ep_work_8",
+        "front": "Salesperson",
+        "back": "Sprzedawca",
+        "difficulty": "medium",
+        "example": "Sprzedawca pomaga klientowi",
+        "exampleTranslation": "The salesperson helps the customer"
+      },
+      {
+        "id": "ep_work_9",
+        "front": "Police officer",
+        "back": "Policjant",
+        "difficulty": "medium",
+        "example": "Policjant chroni miasto",
+        "exampleTranslation": "The police officer protects the city"
+      },
+      {
+        "id": "ep_work_10",
+        "front": "Mechanic",
+        "back": "Mechanik",
+        "difficulty": "medium",
+        "example": "Mechanik naprawia samochody",
+        "exampleTranslation": "The mechanic repairs cars"
+      }
+    ]
+  },
+  {
+    "key": "transport",
+    "name": "Transport",
+    "description": "Transportation",
+    "iconName": "Car",
+    "color": "#4ade80",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ep_trans_1",
+        "front": "Car",
+        "back": "Samochód",
+        "difficulty": "medium",
+        "example": "Mam nowy samochód",
+        "exampleTranslation": "I have a new car"
+      },
+      {
+        "id": "ep_trans_2",
+        "front": "Bus",
+        "back": "Autobus",
+        "difficulty": "medium",
+        "example": "Jadę autobusem",
+        "exampleTranslation": "I go by bus"
+      },
+      {
+        "id": "ep_trans_3",
+        "front": "Train",
+        "back": "Pociąg",
+        "difficulty": "medium",
+        "example": "Pociąg jest szybki",
+        "exampleTranslation": "The train is fast"
+      },
+      {
+        "id": "ep_trans_4",
+        "front": "Airplane",
+        "back": "Samolot",
+        "difficulty": "medium",
+        "example": "Podróżuję samolotem",
+        "exampleTranslation": "I travel by plane"
+      },
+      {
+        "id": "ep_trans_5",
+        "front": "Bicycle",
+        "back": "Rower",
+        "difficulty": "medium",
+        "example": "Jeżdżę na rowerze",
+        "exampleTranslation": "I ride a bicycle"
+      },
+      {
+        "id": "ep_trans_6",
+        "front": "Taxi",
+        "back": "Taksówka",
+        "difficulty": "medium",
+        "example": "Wzywam taksówkę",
+        "exampleTranslation": "I call a taxi"
+      },
+      {
+        "id": "ep_trans_7",
+        "front": "Metro",
+        "back": "Metro",
+        "difficulty": "medium",
+        "example": "Korzystam z metra",
+        "exampleTranslation": "I use the metro"
+      },
+      {
+        "id": "ep_trans_8",
+        "front": "Motorcycle",
+        "back": "Motocykl",
+        "difficulty": "medium",
+        "example": "Mój motocykl jest czerwony",
+        "exampleTranslation": "My motorcycle is red"
+      },
+      {
+        "id": "ep_trans_9",
+        "front": "Boat",
+        "back": "Łódź",
+        "difficulty": "medium",
+        "example": "Płyniemy łodzią",
+        "exampleTranslation": "We sail by boat"
+      },
+      {
+        "id": "ep_trans_10",
+        "front": "Ticket",
+        "back": "Bilet",
+        "difficulty": "medium",
+        "example": "Kupuję bilet",
+        "exampleTranslation": "I buy a ticket"
+      }
+    ]
+  },
+  {
+    "key": "education",
+    "name": "Education",
+    "description": "School",
+    "iconName": "School",
+    "color": "#c084fc",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ep_edu_1",
+        "front": "Student",
+        "back": "Uczeń",
+        "difficulty": "medium",
+        "example": "Jestem uczniem",
+        "exampleTranslation": "I am a student"
+      },
+      {
+        "id": "ep_edu_2",
+        "front": "Teacher",
+        "back": "Nauczyciel",
+        "difficulty": "medium",
+        "example": "Nauczyciel dobrze uczy",
+        "exampleTranslation": "The teacher teaches well"
+      },
+      {
+        "id": "ep_edu_3",
+        "front": "Book",
+        "back": "Książka",
+        "difficulty": "medium",
+        "example": "Czytam książkę",
+        "exampleTranslation": "I read a book"
+      },
+      {
+        "id": "ep_edu_4",
+        "front": "Pencil",
+        "back": "Ołówek",
+        "difficulty": "medium",
+        "example": "Czy masz ołówek?",
+        "exampleTranslation": "Do you have a pencil?"
+      },
+      {
+        "id": "ep_edu_5",
+        "front": "Notebook",
+        "back": "Zeszyt",
+        "difficulty": "medium",
+        "example": "Potrzebuję zeszytu",
+        "exampleTranslation": "I need a notebook"
+      },
+      {
+        "id": "ep_edu_6",
+        "front": "Exam",
+        "back": "Egzamin",
+        "difficulty": "medium",
+        "example": "Egzamin jest jutro",
+        "exampleTranslation": "The exam is tomorrow"
+      },
+      {
+        "id": "ep_edu_7",
+        "front": "Homework",
+        "back": "Praca domowa",
+        "difficulty": "medium",
+        "example": "Mam dużo pracy domowej",
+        "exampleTranslation": "I have a lot of homework"
+      },
+      {
+        "id": "ep_edu_8",
+        "front": "Class",
+        "back": "Lekcja",
+        "difficulty": "medium",
+        "example": "Lekcja zaczyna się o dziewiątej",
+        "exampleTranslation": "The class starts at nine"
+      },
+      {
+        "id": "ep_edu_9",
+        "front": "Library",
+        "back": "Biblioteka",
+        "difficulty": "medium",
+        "example": "Uczę się w bibliotece",
+        "exampleTranslation": "I study at the library"
+      },
+      {
+        "id": "ep_edu_10",
+        "front": "Backpack",
+        "back": "Plecak",
+        "difficulty": "medium",
+        "example": "Mój plecak jest ciężki",
+        "exampleTranslation": "My backpack is heavy"
+      }
+    ]
+  },
+  {
+    "key": "nature",
+    "name": "Nature",
+    "description": "Nature",
+    "iconName": "TreePine",
+    "color": "#4ade80",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ep_nature_1",
+        "front": "Tree",
+        "back": "Drzewo",
+        "difficulty": "medium",
+        "example": "Drzewo jest wysokie",
+        "exampleTranslation": "The tree is tall"
+      },
+      {
+        "id": "ep_nature_2",
+        "front": "Flower",
+        "back": "Kwiat",
+        "difficulty": "medium",
+        "example": "Kwiat jest piękny",
+        "exampleTranslation": "The flower is beautiful"
+      },
+      {
+        "id": "ep_nature_3",
+        "front": "Mountain",
+        "back": "Góra",
+        "difficulty": "medium",
+        "example": "Góra jest wysoka",
+        "exampleTranslation": "The mountain is high"
+      },
+      {
+        "id": "ep_nature_4",
+        "front": "River",
+        "back": "Rzeka",
+        "difficulty": "medium",
+        "example": "Rzeka jest długa",
+        "exampleTranslation": "The river is long"
+      },
+      {
+        "id": "ep_nature_5",
+        "front": "Sea",
+        "back": "Morze",
+        "difficulty": "medium",
+        "example": "Morze jest niebieskie",
+        "exampleTranslation": "The sea is blue"
+      },
+      {
+        "id": "ep_nature_6",
+        "front": "Forest",
+        "back": "Las",
+        "difficulty": "medium",
+        "example": "Przechodzimy przez las",
+        "exampleTranslation": "We walk through the forest"
+      },
+      {
+        "id": "ep_nature_7",
+        "front": "Lake",
+        "back": "Jezioro",
+        "difficulty": "medium",
+        "example": "Jezioro jest spokojne",
+        "exampleTranslation": "The lake is calm"
+      },
+      {
+        "id": "ep_nature_8",
+        "front": "Sky",
+        "back": "Niebo",
+        "difficulty": "medium",
+        "example": "Niebo jest niebieskie",
+        "exampleTranslation": "The sky is blue"
+      },
+      {
+        "id": "ep_nature_9",
+        "front": "Star",
+        "back": "Gwiazda",
+        "difficulty": "medium",
+        "example": "Gwiazdy świecą",
+        "exampleTranslation": "The stars shine"
+      },
+      {
+        "id": "ep_nature_10",
+        "front": "Moon",
+        "back": "Księżyc",
+        "difficulty": "medium",
+        "example": "Księżyc jest w pełni",
+        "exampleTranslation": "The moon is full"
+      }
+    ]
+  },
+  {
+    "key": "emotions",
+    "name": "Emotions",
+    "description": "Feelings",
+    "iconName": "Heart",
+    "color": "#f87171",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ep_emo_1",
+        "front": "Happy",
+        "back": "Szczęśliwy",
+        "difficulty": "medium",
+        "example": "Jestem szczęśliwy",
+        "exampleTranslation": "I am happy"
+      },
+      {
+        "id": "ep_emo_2",
+        "front": "Sad",
+        "back": "Smutny",
+        "difficulty": "medium",
+        "example": "On jest smutny",
+        "exampleTranslation": "He is sad"
+      },
+      {
+        "id": "ep_emo_3",
+        "front": "Angry",
+        "back": "Zły",
+        "difficulty": "medium",
+        "example": "Ona jest zła",
+        "exampleTranslation": "She is angry"
+      },
+      {
+        "id": "ep_emo_4",
+        "front": "Tired",
+        "back": "Zmęczony",
+        "difficulty": "medium",
+        "example": "Jestem zmęczony",
+        "exampleTranslation": "I am tired"
+      },
+      {
+        "id": "ep_emo_5",
+        "front": "Excited",
+        "back": "Podekscytowany",
+        "difficulty": "medium",
+        "example": "Jesteśmy podekscytowani",
+        "exampleTranslation": "We are excited"
+      },
+      {
+        "id": "ep_emo_6",
+        "front": "Nervous",
+        "back": "Zdenerwowany",
+        "difficulty": "medium",
+        "example": "On jest zdenerwowany",
+        "exampleTranslation": "He is nervous"
+      },
+      {
+        "id": "ep_emo_7",
+        "front": "Calm",
+        "back": "Spokojny",
+        "difficulty": "medium",
+        "example": "Ona jest spokojna",
+        "exampleTranslation": "She is calm"
+      },
+      {
+        "id": "ep_emo_8",
+        "front": "Surprised",
+        "back": "Zaskoczony",
+        "difficulty": "medium",
+        "example": "Jestem zaskoczony",
+        "exampleTranslation": "I am surprised"
+      },
+      {
+        "id": "ep_emo_9",
+        "front": "Scared",
+        "back": "Przestraszony",
+        "difficulty": "medium",
+        "example": "Dziecko jest przestraszone",
+        "exampleTranslation": "The child is scared"
+      },
+      {
+        "id": "ep_emo_10",
+        "front": "Bored",
+        "back": "Znudzony",
+        "difficulty": "medium",
+        "example": "Oni są znudzeni",
+        "exampleTranslation": "They are bored"
+      }
+    ]
+  },
+  {
+    "key": "time",
+    "name": "Time",
+    "description": "Time expressions",
+    "iconName": "Clock",
+    "color": "#22d3ee",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ep_time_1",
+        "front": "Today",
+        "back": "Dzisiaj",
+        "difficulty": "medium",
+        "example": "Dzisiaj jest poniedziałek",
+        "exampleTranslation": "Today is Monday"
+      },
+      {
+        "id": "ep_time_2",
+        "front": "Yesterday",
+        "back": "Wczoraj",
+        "difficulty": "medium",
+        "example": "Wczoraj była niedziela",
+        "exampleTranslation": "Yesterday was Sunday"
+      },
+      {
+        "id": "ep_time_3",
+        "front": "Tomorrow",
+        "back": "Jutro",
+        "difficulty": "medium",
+        "example": "Jutro jest wtorek",
+        "exampleTranslation": "Tomorrow is Tuesday"
+      },
+      {
+        "id": "ep_time_4",
+        "front": "Now",
+        "back": "Teraz",
+        "difficulty": "medium",
+        "example": "Teraz pracuję",
+        "exampleTranslation": "I'm working now"
+      },
+      {
+        "id": "ep_time_5",
+        "front": "Later",
+        "back": "Później",
+        "difficulty": "medium",
+        "example": "Zrobię to później",
+        "exampleTranslation": "I'll do it later"
+      },
+      {
+        "id": "ep_time_6",
+        "front": "Morning",
+        "back": "Rano",
+        "difficulty": "medium",
+        "example": "Dzień dobry",
+        "exampleTranslation": "Good morning"
+      },
+      {
+        "id": "ep_time_7",
+        "front": "Noon",
+        "back": "Południe",
+        "difficulty": "medium",
+        "example": "Jest południe",
+        "exampleTranslation": "It's noon"
+      },
+      {
+        "id": "ep_time_8",
+        "front": "Evening",
+        "back": "Wieczór",
+        "difficulty": "medium",
+        "example": "Dobry wieczór",
+        "exampleTranslation": "Good evening"
+      },
+      {
+        "id": "ep_time_9",
+        "front": "Night",
+        "back": "Noc",
+        "difficulty": "medium",
+        "example": "Dobranoc",
+        "exampleTranslation": "Good night"
+      },
+      {
+        "id": "ep_time_10",
+        "front": "Week",
+        "back": "Tydzień",
+        "difficulty": "medium",
+        "example": "Następny tydzień",
+        "exampleTranslation": "Next week"
+      }
+    ]
+  },
+  {
+    "key": "weather",
+    "name": "Weather",
+    "description": "Weather conditions",
+    "iconName": "Cloud",
+    "color": "#38bdf8",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ep_weather_1",
+        "front": "Sun",
+        "back": "Słońce",
+        "difficulty": "medium",
+        "example": "Słońce świeci",
+        "exampleTranslation": "The sun shines"
+      },
+      {
+        "id": "ep_weather_2",
+        "front": "Rain",
+        "back": "Deszcz",
+        "difficulty": "medium",
+        "example": "Pada deszcz",
+        "exampleTranslation": "It's raining"
+      },
+      {
+        "id": "ep_weather_3",
+        "front": "Snow",
+        "back": "Śnieg",
+        "difficulty": "medium",
+        "example": "Pada śnieg",
+        "exampleTranslation": "It's snowing"
+      },
+      {
+        "id": "ep_weather_4",
+        "front": "Wind",
+        "back": "Wiatr",
+        "difficulty": "medium",
+        "example": "Wieje wiatr",
+        "exampleTranslation": "It's windy"
+      },
+      {
+        "id": "ep_weather_5",
+        "front": "Cloud",
+        "back": "Chmura",
+        "difficulty": "medium",
+        "example": "Na niebie są chmury",
+        "exampleTranslation": "There are clouds in the sky"
+      },
+      {
+        "id": "ep_weather_6",
+        "front": "Storm",
+        "back": "Burza",
+        "difficulty": "medium",
+        "example": "Nadchodzi burza",
+        "exampleTranslation": "A storm is coming"
+      },
+      {
+        "id": "ep_weather_7",
+        "front": "Hot",
+        "back": "Gorąco",
+        "difficulty": "medium",
+        "example": "Jest bardzo gorąco",
+        "exampleTranslation": "It's very hot"
+      },
+      {
+        "id": "ep_weather_8",
+        "front": "Cold",
+        "back": "Zimno",
+        "difficulty": "medium",
+        "example": "Zimą jest zimno",
+        "exampleTranslation": "It's cold in winter"
+      },
+      {
+        "id": "ep_weather_9",
+        "front": "Lightning",
+        "back": "Błyskawica",
+        "difficulty": "medium",
+        "example": "Widziałem błyskawicę",
+        "exampleTranslation": "I saw lightning"
+      },
+      {
+        "id": "ep_weather_10",
+        "front": "Thunder",
+        "back": "Grzmot",
+        "difficulty": "medium",
+        "example": "Słyszysz grzmot",
+        "exampleTranslation": "You can hear thunder"
+      }
+    ]
+  },
+  {
+    "key": "body",
+    "name": "Body",
+    "description": "Body parts",
+    "iconName": "Hand",
+    "color": "#fb923c",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ep_body_1",
+        "front": "Head",
+        "back": "Głowa",
+        "difficulty": "medium",
+        "example": "Boli mnie głowa",
+        "exampleTranslation": "My head hurts"
+      },
+      {
+        "id": "ep_body_2",
+        "front": "Eye",
+        "back": "Oko",
+        "difficulty": "medium",
+        "example": "Mam niebieskie oczy",
+        "exampleTranslation": "I have blue eyes"
+      },
+      {
+        "id": "ep_body_3",
+        "front": "Nose",
+        "back": "Nos",
+        "difficulty": "medium",
+        "example": "Mój nos jest zimny",
+        "exampleTranslation": "My nose is cold"
+      },
+      {
+        "id": "ep_body_4",
+        "front": "Mouth",
+        "back": "Usta",
+        "difficulty": "medium",
+        "example": "Otwórz usta",
+        "exampleTranslation": "Open your mouth"
+      },
+      {
+        "id": "ep_body_5",
+        "front": "Ear",
+        "back": "Ucho",
+        "difficulty": "medium",
+        "example": "Moje uszy są duże",
+        "exampleTranslation": "My ears are big"
+      },
+      {
+        "id": "ep_body_6",
+        "front": "Hand",
+        "back": "Ręka",
+        "difficulty": "medium",
+        "example": "Daj mi rękę",
+        "exampleTranslation": "Give me your hand"
+      },
+      {
+        "id": "ep_body_7",
+        "front": "Foot",
+        "back": "Stopa",
+        "difficulty": "medium",
+        "example": "Boli mnie stopa",
+        "exampleTranslation": "My foot hurts"
+      },
+      {
+        "id": "ep_body_8",
+        "front": "Arm",
+        "back": "Ramię",
+        "difficulty": "medium",
+        "example": "Podnieś ramię",
+        "exampleTranslation": "Raise your arm"
+      },
+      {
+        "id": "ep_body_9",
+        "front": "Leg",
+        "back": "Noga",
+        "difficulty": "medium",
+        "example": "Moje nogi są zmęczone",
+        "exampleTranslation": "My legs are tired"
+      },
+      {
+        "id": "ep_body_10",
+        "front": "Heart",
+        "back": "Serce",
+        "difficulty": "medium",
+        "example": "Moje serce bije szybko",
+        "exampleTranslation": "My heart beats fast"
+      }
+    ]
+  },
+  {
+    "key": "activities",
+    "name": "Activities",
+    "description": "Daily activities",
+    "iconName": "Lightbulb",
+    "color": "#facc15",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ep_act_1",
+        "front": "Eat",
+        "back": "Jeść",
+        "difficulty": "medium",
+        "example": "Będę jeść",
+        "exampleTranslation": "I'm going to eat"
+      },
+      {
+        "id": "ep_act_2",
+        "front": "Drink",
+        "back": "Pić",
+        "difficulty": "medium",
+        "example": "Piję wodę",
+        "exampleTranslation": "I drink water"
+      },
+      {
+        "id": "ep_act_3",
+        "front": "Sleep",
+        "back": "Spać",
+        "difficulty": "medium",
+        "example": "Muszę spać",
+        "exampleTranslation": "I need to sleep"
+      },
+      {
+        "id": "ep_act_4",
+        "front": "Run",
+        "back": "Biegać",
+        "difficulty": "medium",
+        "example": "Biegam rano",
+        "exampleTranslation": "I run in the morning"
+      },
+      {
+        "id": "ep_act_5",
+        "front": "Read",
+        "back": "Czytać",
+        "difficulty": "medium",
+        "example": "Czytam książkę",
+        "exampleTranslation": "I read a book"
+      },
+      {
+        "id": "ep_act_6",
+        "front": "Write",
+        "back": "Pisać",
+        "difficulty": "medium",
+        "example": "Piszę list",
+        "exampleTranslation": "I write a letter"
+      },
+      {
+        "id": "ep_act_7",
+        "front": "Speak",
+        "back": "Mówić",
+        "difficulty": "medium",
+        "example": "Mówię po polsku",
+        "exampleTranslation": "I speak Polish"
+      },
+      {
+        "id": "ep_act_8",
+        "front": "Listen",
+        "back": "Słuchać",
+        "difficulty": "medium",
+        "example": "Słucham muzyki",
+        "exampleTranslation": "I listen to music"
+      },
+      {
+        "id": "ep_act_9",
+        "front": "Watch",
+        "back": "Oglądać",
+        "difficulty": "medium",
+        "example": "Oglądam telewizję",
+        "exampleTranslation": "I watch television"
+      },
+      {
+        "id": "ep_act_10",
+        "front": "Think",
+        "back": "Myśleć",
+        "difficulty": "medium",
+        "example": "Myślę o tobie",
+        "exampleTranslation": "I think of you"
+      }
+    ]
+  },
+  {
+    "key": "learning",
+    "name": "Learning",
+    "description": "Learning activities",
+    "iconName": "BookOpen",
+    "color": "#818cf8",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ep_learn_1",
+        "front": "Learn",
+        "back": "Uczyć się",
+        "difficulty": "medium",
+        "example": "Uczę się polskiego",
+        "exampleTranslation": "I learn Polish"
+      },
+      {
+        "id": "ep_learn_2",
+        "front": "Study",
+        "back": "Studiować",
+        "difficulty": "medium",
+        "example": "Studiuję na uniwersytecie",
+        "exampleTranslation": "I study at university"
+      },
+      {
+        "id": "ep_learn_3",
+        "front": "Teach",
+        "back": "Uczyć",
+        "difficulty": "medium",
+        "example": "Uczę angielskiego",
+        "exampleTranslation": "I teach English"
+      },
+      {
+        "id": "ep_learn_4",
+        "front": "Understand",
+        "back": "Rozumieć",
+        "difficulty": "medium",
+        "example": "Rozumiem tę lekcję",
+        "exampleTranslation": "I understand the lesson"
+      },
+      {
+        "id": "ep_learn_5",
+        "front": "Practice",
+        "back": "Ćwiczyć",
+        "difficulty": "medium",
+        "example": "Ćwiczę codziennie",
+        "exampleTranslation": "I practice every day"
+      },
+      {
+        "id": "ep_learn_6",
+        "front": "Repeat",
+        "back": "Powtarzać",
+        "difficulty": "medium",
+        "example": "Powtórz to słowo",
+        "exampleTranslation": "Repeat the word"
+      },
+      {
+        "id": "ep_learn_7",
+        "front": "Explain",
+        "back": "Wyjaśniać",
+        "difficulty": "medium",
+        "example": "Nauczyciel dobrze wyjaśnia",
+        "exampleTranslation": "The teacher explains well"
+      },
+      {
+        "id": "ep_learn_8",
+        "front": "Ask",
+        "back": "Pytać",
+        "difficulty": "medium",
+        "example": "Pytam nauczyciela",
+        "exampleTranslation": "I ask the teacher"
+      },
+      {
+        "id": "ep_learn_9",
+        "front": "Answer",
+        "back": "Odpowiadać",
+        "difficulty": "medium",
+        "example": "Odpowiadam na pytanie",
+        "exampleTranslation": "I answer the question"
+      },
+      {
+        "id": "ep_learn_10",
+        "front": "Remember",
+        "back": "Pamiętać",
+        "difficulty": "medium",
+        "example": "Pamiętam tę lekcję",
+        "exampleTranslation": "I remember the lesson"
+      }
+    ]
+  },
+  {
+    "key": "sports",
+    "name": "Sports",
+    "description": "Sports",
+    "iconName": "Dumbbell",
+    "color": "#4ade80",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ep_sport_1",
+        "front": "Football",
+        "back": "Piłka nożna",
+        "difficulty": "medium",
+        "example": "Gram w piłkę nożną",
+        "exampleTranslation": "I play football"
+      },
+      {
+        "id": "ep_sport_2",
+        "front": "Basketball",
+        "back": "Koszykówka",
+        "difficulty": "medium",
+        "example": "Lubię koszykówkę",
+        "exampleTranslation": "I like basketball"
+      },
+      {
+        "id": "ep_sport_3",
+        "front": "Tennis",
+        "back": "Tenis",
+        "difficulty": "medium",
+        "example": "Gram w tenisa",
+        "exampleTranslation": "I play tennis"
+      },
+      {
+        "id": "ep_sport_4",
+        "front": "Swimming",
+        "back": "Pływanie",
+        "difficulty": "medium",
+        "example": "Pływanie jest zdrowe",
+        "exampleTranslation": "Swimming is healthy"
+      },
+      {
+        "id": "ep_sport_5",
+        "front": "Running",
+        "back": "Bieganie",
+        "difficulty": "medium",
+        "example": "Biegam rano",
+        "exampleTranslation": "I run in the morning"
+      },
+      {
+        "id": "ep_sport_6",
+        "front": "Cycling",
+        "back": "Jazda na rowerze",
+        "difficulty": "medium",
+        "example": "Lubię jeździć na rowerze",
+        "exampleTranslation": "I like cycling"
+      },
+      {
+        "id": "ep_sport_7",
+        "front": "Gym",
+        "back": "Siłownia",
+        "difficulty": "medium",
+        "example": "Chodzę na siłownię",
+        "exampleTranslation": "I go to the gym"
+      },
+      {
+        "id": "ep_sport_8",
+        "front": "Training",
+        "back": "Trening",
+        "difficulty": "medium",
+        "example": "Dziś mam trening",
+        "exampleTranslation": "I have training today"
+      },
+      {
+        "id": "ep_sport_9",
+        "front": "Team",
+        "back": "Drużyna",
+        "difficulty": "medium",
+        "example": "Jestem w drużynie",
+        "exampleTranslation": "I'm on a team"
+      },
+      {
+        "id": "ep_sport_10",
+        "front": "Coach",
+        "back": "Trener",
+        "difficulty": "medium",
+        "example": "Nasz trener jest doskonały",
+        "exampleTranslation": "Our coach is excellent"
+      }
+    ]
+  },
+  {
+    "key": "travel",
+    "name": "Travel",
+    "description": "Tourism",
+    "iconName": "Plane",
+    "color": "#60a5fa",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ep_travel_1",
+        "front": "Travel",
+        "back": "Podróż",
+        "difficulty": "medium",
+        "example": "Jadę w podróż",
+        "exampleTranslation": "I'm going on a trip"
+      },
+      {
+        "id": "ep_travel_2",
+        "front": "Suitcase",
+        "back": "Walizka",
+        "difficulty": "medium",
+        "example": "Moja walizka jest ciężka",
+        "exampleTranslation": "My suitcase is heavy"
+      },
+      {
+        "id": "ep_travel_3",
+        "front": "Passport",
+        "back": "Paszport",
+        "difficulty": "medium",
+        "example": "Potrzebuję paszportu",
+        "exampleTranslation": "I need my passport"
+      },
+      {
+        "id": "ep_travel_4",
+        "front": "Hotel",
+        "back": "Hotel",
+        "difficulty": "medium",
+        "example": "Hotel jest wygodny",
+        "exampleTranslation": "The hotel is comfortable"
+      },
+      {
+        "id": "ep_travel_5",
+        "front": "Reservation",
+        "back": "Rezerwacja",
+        "difficulty": "medium",
+        "example": "Mam rezerwację",
+        "exampleTranslation": "I have a reservation"
+      },
+      {
+        "id": "ep_travel_6",
+        "front": "Tourist",
+        "back": "Turysta",
+        "difficulty": "medium",
+        "example": "Jestem turystą",
+        "exampleTranslation": "I am a tourist"
+      },
+      {
+        "id": "ep_travel_7",
+        "front": "Vacation",
+        "back": "Wakacje",
+        "difficulty": "medium",
+        "example": "Jestem na wakacjach",
+        "exampleTranslation": "I'm on vacation"
+      },
+      {
+        "id": "ep_travel_8",
+        "front": "Sightseeing",
+        "back": "Zwiedzanie",
+        "difficulty": "medium",
+        "example": "Zwiedzamy",
+        "exampleTranslation": "We're doing sightseeing"
+      },
+      {
+        "id": "ep_travel_9",
+        "front": "Guide",
+        "back": "Przewodnik",
+        "difficulty": "medium",
+        "example": "Przewodnik jest pomocny",
+        "exampleTranslation": "The guide is informative"
+      },
+      {
+        "id": "ep_travel_10",
+        "front": "Souvenir",
+        "back": "Pamiątka",
+        "difficulty": "medium",
+        "example": "Kupuję pamiątkę",
+        "exampleTranslation": "I'm buying a souvenir"
+      }
+    ]
+  },
+  {
+    "key": "entertainment",
+    "name": "Entertainment",
+    "description": "Leisure",
+    "iconName": "Music",
+    "color": "#f472b6",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ep_ent_1",
+        "front": "Music",
+        "back": "Muzyka",
+        "difficulty": "medium",
+        "example": "Słucham muzyki",
+        "exampleTranslation": "I listen to music"
+      },
+      {
+        "id": "ep_ent_2",
+        "front": "Movie",
+        "back": "Film",
+        "difficulty": "medium",
+        "example": "Oglądam film",
+        "exampleTranslation": "I watch a movie"
+      },
+      {
+        "id": "ep_ent_3",
+        "front": "Concert",
+        "back": "Koncert",
+        "difficulty": "medium",
+        "example": "Idę na koncert",
+        "exampleTranslation": "I go to a concert"
+      },
+      {
+        "id": "ep_ent_4",
+        "front": "Theater",
+        "back": "Teatr",
+        "difficulty": "medium",
+        "example": "Idę do teatru",
+        "exampleTranslation": "I go to the theater"
+      },
+      {
+        "id": "ep_ent_5",
+        "front": "Dance",
+        "back": "Taniec",
+        "difficulty": "medium",
+        "example": "Lubię tańczyć",
+        "exampleTranslation": "I like to dance"
+      },
+      {
+        "id": "ep_ent_6",
+        "front": "Sing",
+        "back": "Śpiewać",
+        "difficulty": "medium",
+        "example": "Lubię śpiewać",
+        "exampleTranslation": "I like to sing"
+      },
+      {
+        "id": "ep_ent_7",
+        "front": "Guitar",
+        "back": "Gitara",
+        "difficulty": "medium",
+        "example": "Gram na gitarze",
+        "exampleTranslation": "I play guitar"
+      },
+      {
+        "id": "ep_ent_8",
+        "front": "Games",
+        "back": "Gry",
+        "difficulty": "medium",
+        "example": "Gram w gry wideo",
+        "exampleTranslation": "I play video games"
+      },
+      {
+        "id": "ep_ent_9",
+        "front": "Photography",
+        "back": "Fotografia",
+        "difficulty": "medium",
+        "example": "Interesuję się fotografią",
+        "exampleTranslation": "I'm interested in photography"
+      },
+      {
+        "id": "ep_ent_10",
+        "front": "Reading",
+        "back": "Czytanie",
+        "difficulty": "medium",
+        "example": "Czytanie to moje hobby",
+        "exampleTranslation": "Reading is my hobby"
+      }
+    ]
+  }
+]

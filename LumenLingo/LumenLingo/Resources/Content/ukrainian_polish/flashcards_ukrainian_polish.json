@@ -1,0 +1,1802 @@
+[
+  {
+    "key": "greetings",
+    "name": "Вітання",
+    "description": "Базові вітання",
+    "iconName": "Hand",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "up_basics_1",
+        "front": "Привіт",
+        "back": "Cześć",
+        "difficulty": "medium",
+        "example": "Cześć, jak się masz?",
+        "exampleTranslation": "Привіт, як справи?"
+      },
+      {
+        "id": "up_basics_2",
+        "front": "Дякую",
+        "back": "Dziękuję",
+        "difficulty": "medium",
+        "example": "Dziękuję za pomoc",
+        "exampleTranslation": "Дякую за допомогу"
+      },
+      {
+        "id": "up_basics_3",
+        "front": "Так",
+        "back": "Tak",
+        "difficulty": "medium",
+        "example": "Tak, to prawda",
+        "exampleTranslation": "Так, це правда"
+      },
+      {
+        "id": "up_basics_4",
+        "front": "Ні",
+        "back": "Nie",
+        "difficulty": "medium",
+        "example": "Nie, nie chcę",
+        "exampleTranslation": "Ні, не хочу"
+      },
+      {
+        "id": "up_basics_5",
+        "front": "Будь ласка",
+        "back": "Proszę",
+        "difficulty": "medium",
+        "example": "Proszę, pomóż mi",
+        "exampleTranslation": "Будь ласка, допоможи мені"
+      },
+      {
+        "id": "up_basics_6",
+        "front": "Вибачте",
+        "back": "Przepraszam",
+        "difficulty": "medium",
+        "example": "Przepraszam, przykro mi",
+        "exampleTranslation": "Вибачте, мені шкода"
+      },
+      {
+        "id": "up_basics_7",
+        "front": "Добрий день",
+        "back": "Dzień dobry",
+        "difficulty": "medium",
+        "example": "Dzień dobry, panie",
+        "exampleTranslation": "Добрий день, пане"
+      },
+      {
+        "id": "up_basics_8",
+        "front": "До побачення",
+        "back": "Do widzenia",
+        "difficulty": "medium",
+        "example": "Do widzenia, do zobaczenia",
+        "exampleTranslation": "До побачення, побачимось"
+      },
+      {
+        "id": "up_basics_9",
+        "front": "Добраніч",
+        "back": "Dobranoc",
+        "difficulty": "medium",
+        "example": "Dobranoc wszystkim",
+        "exampleTranslation": "Добраніч усім"
+      },
+      {
+        "id": "up_basics_10",
+        "front": "Гарного дня",
+        "back": "Miłego dnia",
+        "difficulty": "medium",
+        "example": "Miłego dnia",
+        "exampleTranslation": "Гарного дня"
+      }
+    ]
+  },
+  {
+    "key": "family",
+    "name": "Родина",
+    "description": "Члени родини",
+    "iconName": "Users",
+    "color": "#f472b6",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "up_fam_1",
+        "front": "Батько",
+        "back": "Ojciec",
+        "difficulty": "medium",
+        "example": "Mój ojciec pracuje",
+        "exampleTranslation": "Мій батько працює"
+      },
+      {
+        "id": "up_fam_2",
+        "front": "Мати",
+        "back": "Matka",
+        "difficulty": "medium",
+        "example": "Moja matka gotuje",
+        "exampleTranslation": "Моя мати готує"
+      },
+      {
+        "id": "up_fam_3",
+        "front": "Брат",
+        "back": "Brat",
+        "difficulty": "medium",
+        "example": "Mój brat studiuje",
+        "exampleTranslation": "Мій брат навчається"
+      },
+      {
+        "id": "up_fam_4",
+        "front": "Сестра",
+        "back": "Siostra",
+        "difficulty": "medium",
+        "example": "Moja siostra śpiewa",
+        "exampleTranslation": "Моя сестра співає"
+      },
+      {
+        "id": "up_fam_5",
+        "front": "Син",
+        "back": "Syn",
+        "difficulty": "medium",
+        "example": "Mój syn gra",
+        "exampleTranslation": "Мій син грає"
+      },
+      {
+        "id": "up_fam_6",
+        "front": "Дочка",
+        "back": "Córka",
+        "difficulty": "medium",
+        "example": "Moja córka czyta",
+        "exampleTranslation": "Моя дочка читає"
+      },
+      {
+        "id": "up_fam_7",
+        "front": "Дідусь",
+        "back": "Dziadek",
+        "difficulty": "medium",
+        "example": "Mój dziadek jest stary",
+        "exampleTranslation": "Мій дідусь старий"
+      },
+      {
+        "id": "up_fam_8",
+        "front": "Бабуся",
+        "back": "Babcia",
+        "difficulty": "medium",
+        "example": "Moja babcia dobrze gotuje",
+        "exampleTranslation": "Моя бабуся добре готує"
+      },
+      {
+        "id": "up_fam_9",
+        "front": "Дядько",
+        "back": "Wujek",
+        "difficulty": "medium",
+        "example": "Mój wujek mieszka daleko",
+        "exampleTranslation": "Мій дядько живе далеко"
+      },
+      {
+        "id": "up_fam_10",
+        "front": "Тітка",
+        "back": "Ciocia",
+        "difficulty": "medium",
+        "example": "Moja ciocia jest miła",
+        "exampleTranslation": "Моя тітка добра"
+      }
+    ]
+  },
+  {
+    "key": "food",
+    "name": "Їжа",
+    "description": "Основні продукти",
+    "iconName": "UtensilsCrossed",
+    "color": "#4ade80",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "up_food_1",
+        "front": "Вода",
+        "back": "Woda",
+        "difficulty": "medium",
+        "example": "Szklanka wody, proszę",
+        "exampleTranslation": "Склянка води, будь ласка"
+      },
+      {
+        "id": "up_food_2",
+        "front": "Хліб",
+        "back": "Chleb",
+        "difficulty": "medium",
+        "example": "Świeży chleb",
+        "exampleTranslation": "Свіжий хліб"
+      },
+      {
+        "id": "up_food_3",
+        "front": "Кава",
+        "back": "Kawa",
+        "difficulty": "medium",
+        "example": "Filiżanka kawy",
+        "exampleTranslation": "Чашка кави"
+      },
+      {
+        "id": "up_food_4",
+        "front": "Чай",
+        "back": "Herbata",
+        "difficulty": "medium",
+        "example": "Lubię herbatę",
+        "exampleTranslation": "Я люблю чай"
+      },
+      {
+        "id": "up_food_5",
+        "front": "Молоко",
+        "back": "Mleko",
+        "difficulty": "medium",
+        "example": "Świeże mleko",
+        "exampleTranslation": "Свіже молоко"
+      },
+      {
+        "id": "up_food_6",
+        "front": "Яблуко",
+        "back": "Jabłko",
+        "difficulty": "medium",
+        "example": "Czerwone jabłko",
+        "exampleTranslation": "Червоне яблуко"
+      },
+      {
+        "id": "up_food_7",
+        "front": "М'ясо",
+        "back": "Mięso",
+        "difficulty": "medium",
+        "example": "Grillowane mięso",
+        "exampleTranslation": "М'ясо на грилі"
+      },
+      {
+        "id": "up_food_8",
+        "front": "Риба",
+        "back": "Ryba",
+        "difficulty": "medium",
+        "example": "Świeża ryba",
+        "exampleTranslation": "Свіжа риба"
+      },
+      {
+        "id": "up_food_9",
+        "front": "Сир",
+        "back": "Ser",
+        "difficulty": "medium",
+        "example": "Polski ser",
+        "exampleTranslation": "Польський сир"
+      },
+      {
+        "id": "up_food_10",
+        "front": "Вино",
+        "back": "Wino",
+        "difficulty": "medium",
+        "example": "Czerwone wino",
+        "exampleTranslation": "Червоне вино"
+      }
+    ]
+  },
+  {
+    "key": "places",
+    "name": "Місця",
+    "description": "Локації в місті",
+    "iconName": "MapPin",
+    "color": "#2dd4bf",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "up_place_1",
+        "front": "Магазин",
+        "back": "Sklep",
+        "difficulty": "medium",
+        "example": "Sklep jest otwarty",
+        "exampleTranslation": "Магазин відкритий"
+      },
+      {
+        "id": "up_place_2",
+        "front": "Школа",
+        "back": "Szkoła",
+        "difficulty": "medium",
+        "example": "Idę do szkoły",
+        "exampleTranslation": "Я йду до школи"
+      },
+      {
+        "id": "up_place_3",
+        "front": "Лікарня",
+        "back": "Szpital",
+        "difficulty": "medium",
+        "example": "Szpital jest blisko",
+        "exampleTranslation": "Лікарня близько"
+      },
+      {
+        "id": "up_place_4",
+        "front": "Парк",
+        "back": "Park",
+        "difficulty": "medium",
+        "example": "Dzieci bawią się w parku",
+        "exampleTranslation": "Діти граються в парку"
+      },
+      {
+        "id": "up_place_5",
+        "front": "Вокзал",
+        "back": "Dworzec",
+        "difficulty": "medium",
+        "example": "Dworzec kolejowy",
+        "exampleTranslation": "Залізничний вокзал"
+      },
+      {
+        "id": "up_place_6",
+        "front": "Аеропорт",
+        "back": "Lotnisko",
+        "difficulty": "medium",
+        "example": "Jestem na lotnisku",
+        "exampleTranslation": "Я в аеропорту"
+      },
+      {
+        "id": "up_place_7",
+        "front": "Ресторан",
+        "back": "Restauracja",
+        "difficulty": "medium",
+        "example": "Jemy w restauracji",
+        "exampleTranslation": "Ми їмо в ресторані"
+      },
+      {
+        "id": "up_place_8",
+        "front": "Готель",
+        "back": "Hotel",
+        "difficulty": "medium",
+        "example": "Hotel jest duży",
+        "exampleTranslation": "Готель великий"
+      },
+      {
+        "id": "up_place_9",
+        "front": "Банк",
+        "back": "Bank",
+        "difficulty": "medium",
+        "example": "Idę do banku",
+        "exampleTranslation": "Я йду до банку"
+      },
+      {
+        "id": "up_place_10",
+        "front": "Музей",
+        "back": "Muzeum",
+        "difficulty": "medium",
+        "example": "Muzeum jest ciekawe",
+        "exampleTranslation": "Музей цікавий"
+      }
+    ]
+  },
+  {
+    "key": "clothing",
+    "name": "Одяг",
+    "description": "Одяг",
+    "iconName": "Shirt",
+    "color": "#a78bfa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "up_cloth_1",
+        "front": "Сорочка",
+        "back": "Koszula",
+        "difficulty": "medium",
+        "example": "Lubię twoją koszulę",
+        "exampleTranslation": "Мені подобається твоя сорочка"
+      },
+      {
+        "id": "up_cloth_2",
+        "front": "Штани",
+        "back": "Spodnie",
+        "difficulty": "medium",
+        "example": "Potrzebuję nowych spodni",
+        "exampleTranslation": "Мені потрібні нові штани"
+      },
+      {
+        "id": "up_cloth_3",
+        "front": "Взуття",
+        "back": "Buty",
+        "difficulty": "medium",
+        "example": "Kupiłem czarne buty",
+        "exampleTranslation": "Я купив чорне взуття"
+      },
+      {
+        "id": "up_cloth_4",
+        "front": "Сукня",
+        "back": "Sukienka",
+        "difficulty": "medium",
+        "example": "Piękna sukienka",
+        "exampleTranslation": "Гарна сукня"
+      },
+      {
+        "id": "up_cloth_5",
+        "front": "Куртка",
+        "back": "Kurtka",
+        "difficulty": "medium",
+        "example": "Potrzebuję kurtki",
+        "exampleTranslation": "Мені потрібна куртка"
+      },
+      {
+        "id": "up_cloth_6",
+        "front": "Капелюх",
+        "back": "Kapelusz",
+        "difficulty": "medium",
+        "example": "Załóż kapelusz",
+        "exampleTranslation": "Одягни капелюх"
+      },
+      {
+        "id": "up_cloth_7",
+        "front": "Шкарпетки",
+        "back": "Skarpetki",
+        "difficulty": "medium",
+        "example": "Moje skarpetki są czyste",
+        "exampleTranslation": "Мої шкарпетки чисті"
+      },
+      {
+        "id": "up_cloth_8",
+        "front": "Рукавички",
+        "back": "Rękawiczki",
+        "difficulty": "medium",
+        "example": "Zimą nosisz rękawiczki",
+        "exampleTranslation": "Взимку носиш рукавички"
+      },
+      {
+        "id": "up_cloth_9",
+        "front": "Шарф",
+        "back": "Szalik",
+        "difficulty": "medium",
+        "example": "Szalik jest miękki",
+        "exampleTranslation": "Шарф м'який"
+      },
+      {
+        "id": "up_cloth_10",
+        "front": "Спідниця",
+        "back": "Spódnica",
+        "difficulty": "medium",
+        "example": "Spódnica jest ładna",
+        "exampleTranslation": "Спідниця гарна"
+      }
+    ]
+  },
+  {
+    "key": "house",
+    "name": "Дім",
+    "description": "Кімнати та меблі",
+    "iconName": "Home",
+    "color": "#fb923c",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "up_house_1",
+        "front": "Дім",
+        "back": "Dom",
+        "difficulty": "medium",
+        "example": "Mój dom jest duży",
+        "exampleTranslation": "Мій дім великий"
+      },
+      {
+        "id": "up_house_2",
+        "front": "Кімната",
+        "back": "Pokój",
+        "difficulty": "medium",
+        "example": "Pokój jest czysty",
+        "exampleTranslation": "Кімната чиста"
+      },
+      {
+        "id": "up_house_3",
+        "front": "Кухня",
+        "back": "Kuchnia",
+        "difficulty": "medium",
+        "example": "Gotuję w kuchni",
+        "exampleTranslation": "Я готую на кухні"
+      },
+      {
+        "id": "up_house_4",
+        "front": "Ванна",
+        "back": "Łazienka",
+        "difficulty": "medium",
+        "example": "Łazienka jest nowa",
+        "exampleTranslation": "Ванна нова"
+      },
+      {
+        "id": "up_house_5",
+        "front": "Спальня",
+        "back": "Sypialnia",
+        "difficulty": "medium",
+        "example": "Moja sypialnia jest wygodna",
+        "exampleTranslation": "Моя спальня зручна"
+      },
+      {
+        "id": "up_house_6",
+        "front": "Двері",
+        "back": "Drzwi",
+        "difficulty": "medium",
+        "example": "Zamknij drzwi",
+        "exampleTranslation": "Зачини двері"
+      },
+      {
+        "id": "up_house_7",
+        "front": "Вікно",
+        "back": "Okno",
+        "difficulty": "medium",
+        "example": "Otwórz okno",
+        "exampleTranslation": "Відкрий вікно"
+      },
+      {
+        "id": "up_house_8",
+        "front": "Стіл",
+        "back": "Stół",
+        "difficulty": "medium",
+        "example": "Stół jest drewniany",
+        "exampleTranslation": "Стіл дерев'яний"
+      },
+      {
+        "id": "up_house_9",
+        "front": "Стілець",
+        "back": "Krzesło",
+        "difficulty": "medium",
+        "example": "Krzesło jest wygodne",
+        "exampleTranslation": "Стілець зручний"
+      },
+      {
+        "id": "up_house_10",
+        "front": "Ліжко",
+        "back": "Łóżko",
+        "difficulty": "medium",
+        "example": "Łóżko jest miękkie",
+        "exampleTranslation": "Ліжко м'яке"
+      }
+    ]
+  },
+  {
+    "key": "work",
+    "name": "Робота",
+    "description": "Професії",
+    "iconName": "Briefcase",
+    "color": "#818cf8",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "up_work_1",
+        "front": "Робота",
+        "back": "Praca",
+        "difficulty": "medium",
+        "example": "Idę do pracy",
+        "exampleTranslation": "Я йду на роботу"
+      },
+      {
+        "id": "up_work_2",
+        "front": "Лікар",
+        "back": "Lekarz",
+        "difficulty": "medium",
+        "example": "On jest lekarzem",
+        "exampleTranslation": "Він лікар"
+      },
+      {
+        "id": "up_work_3",
+        "front": "Вчитель",
+        "back": "Nauczyciel",
+        "difficulty": "medium",
+        "example": "Mój nauczyciel jest świetny",
+        "exampleTranslation": "Мій вчитель чудовий"
+      },
+      {
+        "id": "up_work_4",
+        "front": "Інженер",
+        "back": "Inżynier",
+        "difficulty": "medium",
+        "example": "Jestem inżynierem",
+        "exampleTranslation": "Я інженер"
+      },
+      {
+        "id": "up_work_5",
+        "front": "Адвокат",
+        "back": "Adwokat",
+        "difficulty": "medium",
+        "example": "Ona jest adwokatem",
+        "exampleTranslation": "Вона адвокат"
+      },
+      {
+        "id": "up_work_6",
+        "front": "Менеджер",
+        "back": "Menedżer",
+        "difficulty": "medium",
+        "example": "Pracuję jako menedżer",
+        "exampleTranslation": "Я працюю менеджером"
+      },
+      {
+        "id": "up_work_7",
+        "front": "Офіс",
+        "back": "Biuro",
+        "difficulty": "medium",
+        "example": "Pracuję w biurze",
+        "exampleTranslation": "Я працюю в офісі"
+      },
+      {
+        "id": "up_work_8",
+        "front": "Зарплата",
+        "back": "Pensja",
+        "difficulty": "medium",
+        "example": "Moja pensja jest dobra",
+        "exampleTranslation": "Моя зарплата добра"
+      },
+      {
+        "id": "up_work_9",
+        "front": "Начальник",
+        "back": "Szef",
+        "difficulty": "medium",
+        "example": "Mój szef jest wymagający",
+        "exampleTranslation": "Мій начальник вимогливий"
+      },
+      {
+        "id": "up_work_10",
+        "front": "Колега",
+        "back": "Kolega",
+        "difficulty": "medium",
+        "example": "To mój kolega z pracy",
+        "exampleTranslation": "Це мій колега по роботі"
+      }
+    ]
+  },
+  {
+    "key": "travel",
+    "name": "Транспорт",
+    "description": "Засоби транспорту",
+    "iconName": "Car",
+    "color": "#facc15",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "up_travel_1",
+        "front": "Машина",
+        "back": "Samochód",
+        "difficulty": "medium",
+        "example": "Mam nowy samochód",
+        "exampleTranslation": "У мене нова машина"
+      },
+      {
+        "id": "up_travel_2",
+        "front": "Автобус",
+        "back": "Autobus",
+        "difficulty": "medium",
+        "example": "Jadę autobusem",
+        "exampleTranslation": "Я їду автобусом"
+      },
+      {
+        "id": "up_travel_3",
+        "front": "Поїзд",
+        "back": "Pociąg",
+        "difficulty": "medium",
+        "example": "Pociąg jest szybki",
+        "exampleTranslation": "Поїзд швидкий"
+      },
+      {
+        "id": "up_travel_4",
+        "front": "Літак",
+        "back": "Samolot",
+        "difficulty": "medium",
+        "example": "Lecę samolotem",
+        "exampleTranslation": "Я летю літаком"
+      },
+      {
+        "id": "up_travel_5",
+        "front": "Велосипед",
+        "back": "Rower",
+        "difficulty": "medium",
+        "example": "Jadę na rowerze",
+        "exampleTranslation": "Я їду на велосипеді"
+      },
+      {
+        "id": "up_travel_6",
+        "front": "Таксі",
+        "back": "Taksówka",
+        "difficulty": "medium",
+        "example": "Zamów taksówkę",
+        "exampleTranslation": "Замов таксі"
+      },
+      {
+        "id": "up_travel_7",
+        "front": "Метро",
+        "back": "Metro",
+        "difficulty": "medium",
+        "example": "Korzystam z metra",
+        "exampleTranslation": "Я користуюся метро"
+      },
+      {
+        "id": "up_travel_8",
+        "front": "Квиток",
+        "back": "Bilet",
+        "difficulty": "medium",
+        "example": "Kup bilet",
+        "exampleTranslation": "Купи квиток"
+      },
+      {
+        "id": "up_travel_9",
+        "front": "Подорож",
+        "back": "Podróż",
+        "difficulty": "medium",
+        "example": "Jadę w podróż",
+        "exampleTranslation": "Я їду в подорож"
+      },
+      {
+        "id": "up_travel_10",
+        "front": "Водій",
+        "back": "Kierowca",
+        "difficulty": "medium",
+        "example": "Kierowca jest ostrożny",
+        "exampleTranslation": "Водій обережний"
+      }
+    ]
+  },
+  {
+    "key": "school",
+    "name": "Школа",
+    "description": "Освіта",
+    "iconName": "School",
+    "color": "#818cf8",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "up_school_1",
+        "front": "Учень",
+        "back": "Uczeń",
+        "difficulty": "medium",
+        "example": "Jestem uczniem",
+        "exampleTranslation": "Я учень"
+      },
+      {
+        "id": "up_school_2",
+        "front": "Урок",
+        "back": "Lekcja",
+        "difficulty": "medium",
+        "example": "Mam lekcję o dziewiątej",
+        "exampleTranslation": "У мене урок о дев'ятій"
+      },
+      {
+        "id": "up_school_3",
+        "front": "Домашнє завдання",
+        "back": "Praca domowa",
+        "difficulty": "medium",
+        "example": "Mam dużo pracy domowej",
+        "exampleTranslation": "У мене багато домашнього завдання"
+      },
+      {
+        "id": "up_school_4",
+        "front": "Іспит",
+        "back": "Egzamin",
+        "difficulty": "medium",
+        "example": "Egzamin jest jutro",
+        "exampleTranslation": "Іспит завтра"
+      },
+      {
+        "id": "up_school_5",
+        "front": "Книга",
+        "back": "Książka",
+        "difficulty": "medium",
+        "example": "Przeczytaj tę książkę",
+        "exampleTranslation": "Прочитай цю книгу"
+      },
+      {
+        "id": "up_school_6",
+        "front": "Зошит",
+        "back": "Zeszyt",
+        "difficulty": "medium",
+        "example": "Potrzebuję nowego zeszytu",
+        "exampleTranslation": "Мені потрібний новий зошит"
+      },
+      {
+        "id": "up_school_7",
+        "front": "Олівець",
+        "back": "Ołówek",
+        "difficulty": "medium",
+        "example": "Masz ołówek?",
+        "exampleTranslation": "У тебе є олівець?"
+      },
+      {
+        "id": "up_school_8",
+        "front": "Ручка",
+        "back": "Długopis",
+        "difficulty": "medium",
+        "example": "Pożycz mi długopis",
+        "exampleTranslation": "Позич мені ручку"
+      },
+      {
+        "id": "up_school_9",
+        "front": "Рюкзак",
+        "back": "Plecak",
+        "difficulty": "medium",
+        "example": "Mój plecak jest ciężki",
+        "exampleTranslation": "Мій рюкзак важкий"
+      },
+      {
+        "id": "up_school_10",
+        "front": "Бібліотека",
+        "back": "Biblioteka",
+        "difficulty": "medium",
+        "example": "Studiuję w bibliotece",
+        "exampleTranslation": "Я навчаюся в бібліотеці"
+      }
+    ]
+  },
+  {
+    "key": "weather",
+    "name": "Погода",
+    "description": "Погодні умови",
+    "iconName": "Cloud",
+    "color": "#38bdf8",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "up_weather_1",
+        "front": "Сонце",
+        "back": "Słońce",
+        "difficulty": "medium",
+        "example": "Słońce świeci",
+        "exampleTranslation": "Сонце світить"
+      },
+      {
+        "id": "up_weather_2",
+        "front": "Дощ",
+        "back": "Deszcz",
+        "difficulty": "medium",
+        "example": "Pada deszcz",
+        "exampleTranslation": "Йде дощ"
+      },
+      {
+        "id": "up_weather_3",
+        "front": "Сніг",
+        "back": "Śnieg",
+        "difficulty": "medium",
+        "example": "Pada śnieg",
+        "exampleTranslation": "Йде сніг"
+      },
+      {
+        "id": "up_weather_4",
+        "front": "Вітер",
+        "back": "Wiatr",
+        "difficulty": "medium",
+        "example": "Jest wietrznie",
+        "exampleTranslation": "Вітряно"
+      },
+      {
+        "id": "up_weather_5",
+        "front": "Хмара",
+        "back": "Chmura",
+        "difficulty": "medium",
+        "example": "Na niebie są chmury",
+        "exampleTranslation": "На небі хмари"
+      },
+      {
+        "id": "up_weather_6",
+        "front": "Буря",
+        "back": "Burza",
+        "difficulty": "medium",
+        "example": "Nadchodzi burza",
+        "exampleTranslation": "Наближається буря"
+      },
+      {
+        "id": "up_weather_7",
+        "front": "Жарко",
+        "back": "Gorąco",
+        "difficulty": "medium",
+        "example": "Jest bardzo gorąco",
+        "exampleTranslation": "Дуже жарко"
+      },
+      {
+        "id": "up_weather_8",
+        "front": "Холодно",
+        "back": "Zimno",
+        "difficulty": "medium",
+        "example": "Zimą jest zimno",
+        "exampleTranslation": "Взимку холодно"
+      },
+      {
+        "id": "up_weather_9",
+        "front": "Блискавка",
+        "back": "Błyskawica",
+        "difficulty": "medium",
+        "example": "Widziałem błyskawicę",
+        "exampleTranslation": "Я бачив блискавку"
+      },
+      {
+        "id": "up_weather_10",
+        "front": "Грім",
+        "back": "Grzmot",
+        "difficulty": "medium",
+        "example": "Słychać grzmot",
+        "exampleTranslation": "Чути грім"
+      }
+    ]
+  },
+  {
+    "key": "nature",
+    "name": "Природа",
+    "description": "Природа",
+    "iconName": "TreePine",
+    "color": "#4ade80",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "up_nature_1",
+        "front": "Дерево",
+        "back": "Drzewo",
+        "difficulty": "medium",
+        "example": "Drzewo jest wysokie",
+        "exampleTranslation": "Дерево високе"
+      },
+      {
+        "id": "up_nature_2",
+        "front": "Квітка",
+        "back": "Kwiat",
+        "difficulty": "medium",
+        "example": "Kwiat jest piękny",
+        "exampleTranslation": "Квітка гарна"
+      },
+      {
+        "id": "up_nature_3",
+        "front": "Гора",
+        "back": "Góra",
+        "difficulty": "medium",
+        "example": "Góra jest wysoka",
+        "exampleTranslation": "Гора висока"
+      },
+      {
+        "id": "up_nature_4",
+        "front": "Річка",
+        "back": "Rzeka",
+        "difficulty": "medium",
+        "example": "Rzeka jest długa",
+        "exampleTranslation": "Річка довга"
+      },
+      {
+        "id": "up_nature_5",
+        "front": "Море",
+        "back": "Morze",
+        "difficulty": "medium",
+        "example": "Morze jest niebieskie",
+        "exampleTranslation": "Море синє"
+      },
+      {
+        "id": "up_nature_6",
+        "front": "Ліс",
+        "back": "Las",
+        "difficulty": "medium",
+        "example": "Spacerujemy po lesie",
+        "exampleTranslation": "Ми гуляємо лісом"
+      },
+      {
+        "id": "up_nature_7",
+        "front": "Озеро",
+        "back": "Jezioro",
+        "difficulty": "medium",
+        "example": "Jezioro jest spokojne",
+        "exampleTranslation": "Озеро спокійне"
+      },
+      {
+        "id": "up_nature_8",
+        "front": "Небо",
+        "back": "Niebo",
+        "difficulty": "medium",
+        "example": "Niebo jest błękitne",
+        "exampleTranslation": "Небо блакитне"
+      },
+      {
+        "id": "up_nature_9",
+        "front": "Зірка",
+        "back": "Gwiazda",
+        "difficulty": "medium",
+        "example": "Gwiazdy świecą",
+        "exampleTranslation": "Зірки світять"
+      },
+      {
+        "id": "up_nature_10",
+        "front": "Місяць",
+        "back": "Księżyc",
+        "difficulty": "medium",
+        "example": "Księżyc jest pełny",
+        "exampleTranslation": "Місяць повний"
+      }
+    ]
+  },
+  {
+    "key": "animals",
+    "name": "Тварини",
+    "description": "Назви тварин",
+    "iconName": "Dog",
+    "color": "#fbbf24",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "up_animal_1",
+        "front": "Собака",
+        "back": "Pies",
+        "difficulty": "medium",
+        "example": "Pies jest przyjazny",
+        "exampleTranslation": "Собака дружній"
+      },
+      {
+        "id": "up_animal_2",
+        "front": "Кіт",
+        "back": "Kot",
+        "difficulty": "medium",
+        "example": "Kot śpi",
+        "exampleTranslation": "Кіт спить"
+      },
+      {
+        "id": "up_animal_3",
+        "front": "Птах",
+        "back": "Ptak",
+        "difficulty": "medium",
+        "example": "Ptak śpiewa",
+        "exampleTranslation": "Птах співає"
+      },
+      {
+        "id": "up_animal_4",
+        "front": "Риба",
+        "back": "Ryba",
+        "difficulty": "medium",
+        "example": "Ryba pływa",
+        "exampleTranslation": "Риба пливе"
+      },
+      {
+        "id": "up_animal_5",
+        "front": "Кінь",
+        "back": "Koń",
+        "difficulty": "medium",
+        "example": "Koń biega szybko",
+        "exampleTranslation": "Кінь біжить швидко"
+      },
+      {
+        "id": "up_animal_6",
+        "front": "Корова",
+        "back": "Krowa",
+        "difficulty": "medium",
+        "example": "Krowa daje mleko",
+        "exampleTranslation": "Корова дає молоко"
+      },
+      {
+        "id": "up_animal_7",
+        "front": "Свиня",
+        "back": "Świnia",
+        "difficulty": "medium",
+        "example": "Świnia jest na farmie",
+        "exampleTranslation": "Свиня на фермі"
+      },
+      {
+        "id": "up_animal_8",
+        "front": "Курка",
+        "back": "Kurczak",
+        "difficulty": "medium",
+        "example": "Kurczak znosi jajka",
+        "exampleTranslation": "Курка несе яйця"
+      },
+      {
+        "id": "up_animal_9",
+        "front": "Кролик",
+        "back": "Królik",
+        "difficulty": "medium",
+        "example": "Królik skacze",
+        "exampleTranslation": "Кролик стрибає"
+      },
+      {
+        "id": "up_animal_10",
+        "front": "Миша",
+        "back": "Mysz",
+        "difficulty": "medium",
+        "example": "Mysz jest mała",
+        "exampleTranslation": "Миша маленька"
+      }
+    ]
+  },
+  {
+    "key": "time",
+    "name": "Час",
+    "description": "Часові вирази",
+    "iconName": "Clock",
+    "color": "#22d3ee",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "up_time_1",
+        "front": "Сьогодні",
+        "back": "Dzisiaj",
+        "difficulty": "medium",
+        "example": "Dzisiaj jest poniedziałek",
+        "exampleTranslation": "Сьогодні понеділок"
+      },
+      {
+        "id": "up_time_2",
+        "front": "Вчора",
+        "back": "Wczoraj",
+        "difficulty": "medium",
+        "example": "Wczoraj była niedziela",
+        "exampleTranslation": "Вчора була неділя"
+      },
+      {
+        "id": "up_time_3",
+        "front": "Завтра",
+        "back": "Jutro",
+        "difficulty": "medium",
+        "example": "Jutro jest wtorek",
+        "exampleTranslation": "Завтра вівторок"
+      },
+      {
+        "id": "up_time_4",
+        "front": "Зараз",
+        "back": "Teraz",
+        "difficulty": "medium",
+        "example": "Pracuję teraz",
+        "exampleTranslation": "Я працюю зараз"
+      },
+      {
+        "id": "up_time_5",
+        "front": "Пізніше",
+        "back": "Później",
+        "difficulty": "medium",
+        "example": "Zrobię to później",
+        "exampleTranslation": "Я зроблю це пізніше"
+      },
+      {
+        "id": "up_time_6",
+        "front": "Ранок",
+        "back": "Rano",
+        "difficulty": "medium",
+        "example": "Dzień dobry",
+        "exampleTranslation": "Добрий ранок"
+      },
+      {
+        "id": "up_time_7",
+        "front": "День",
+        "back": "Dzień",
+        "difficulty": "medium",
+        "example": "Dzień jest długi",
+        "exampleTranslation": "День довгий"
+      },
+      {
+        "id": "up_time_8",
+        "front": "Ніч",
+        "back": "Noc",
+        "difficulty": "medium",
+        "example": "Dobranoc",
+        "exampleTranslation": "Доб раніч"
+      },
+      {
+        "id": "up_time_9",
+        "front": "Тиждень",
+        "back": "Tydzień",
+        "difficulty": "medium",
+        "example": "Przyszły tydzień",
+        "exampleTranslation": "Наступний тиждень"
+      },
+      {
+        "id": "up_time_10",
+        "front": "Місяць",
+        "back": "Miesiąc",
+        "difficulty": "medium",
+        "example": "Ten miesiąc",
+        "exampleTranslation": "Цей місяць"
+      }
+    ]
+  },
+  {
+    "key": "events",
+    "name": "Події",
+    "description": "Свята",
+    "iconName": "Calendar",
+    "color": "#c084fc",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "up_event_1",
+        "front": "День народження",
+        "back": "Urodziny",
+        "difficulty": "medium",
+        "example": "Dziś mam urodziny",
+        "exampleTranslation": "Сьогодні у мене день народження"
+      },
+      {
+        "id": "up_event_2",
+        "front": "Свято",
+        "back": "Święto",
+        "difficulty": "medium",
+        "example": "Jest święto",
+        "exampleTranslation": "Це свято"
+      },
+      {
+        "id": "up_event_3",
+        "front": "Вечірка",
+        "back": "Impreza",
+        "difficulty": "medium",
+        "example": "Idę na imprezę",
+        "exampleTranslation": "Я йду на вечірку"
+      },
+      {
+        "id": "up_event_4",
+        "front": "Подарунок",
+        "back": "Prezent",
+        "difficulty": "medium",
+        "example": "Kupiłem prezent",
+        "exampleTranslation": "Я купив подарунок"
+      },
+      {
+        "id": "up_event_5",
+        "front": "Весілля",
+        "back": "Wesele",
+        "difficulty": "medium",
+        "example": "Idę na wesele",
+        "exampleTranslation": "Я йду на весілля"
+      },
+      {
+        "id": "up_event_6",
+        "front": "Концерт",
+        "back": "Koncert",
+        "difficulty": "medium",
+        "example": "Idę na koncert",
+        "exampleTranslation": "Я йду на концерт"
+      },
+      {
+        "id": "up_event_7",
+        "front": "Фестиваль",
+        "back": "Festiwal",
+        "difficulty": "medium",
+        "example": "Festiwal jest ciekawy",
+        "exampleTranslation": "Фестиваль цікавий"
+      },
+      {
+        "id": "up_event_8",
+        "front": "Виставка",
+        "back": "Wystawa",
+        "difficulty": "medium",
+        "example": "Odwiedzam wystawę",
+        "exampleTranslation": "Я відвідую виставку"
+      },
+      {
+        "id": "up_event_9",
+        "front": "Різдво",
+        "back": "Boże Narodzenie",
+        "difficulty": "medium",
+        "example": "Uwielbiam Boże Narodzenie",
+        "exampleTranslation": "Я люблю Різдво"
+      },
+      {
+        "id": "up_event_10",
+        "front": "Новий рік",
+        "back": "Nowy Rok",
+        "difficulty": "medium",
+        "example": "Szczęśliwego Nowego Roku",
+        "exampleTranslation": "Щасливого Нового року"
+      }
+    ]
+  },
+  {
+    "key": "emotions",
+    "name": "Емоції",
+    "description": "Почуття",
+    "iconName": "Heart",
+    "color": "#f87171",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "up_emo_1",
+        "front": "Щасливий",
+        "back": "Szczęśliwy",
+        "difficulty": "medium",
+        "example": "Jestem szczęśliwy",
+        "exampleTranslation": "Я щасливий"
+      },
+      {
+        "id": "up_emo_2",
+        "front": "Сумний",
+        "back": "Smutny",
+        "difficulty": "medium",
+        "example": "On jest smutny",
+        "exampleTranslation": "Він сумний"
+      },
+      {
+        "id": "up_emo_3",
+        "front": "Злий",
+        "back": "Zły",
+        "difficulty": "medium",
+        "example": "Ona jest zła",
+        "exampleTranslation": "Вона зла"
+      },
+      {
+        "id": "up_emo_4",
+        "front": "Втомлений",
+        "back": "Zmęczony",
+        "difficulty": "medium",
+        "example": "Jestem zmęczony",
+        "exampleTranslation": "Я втомлений"
+      },
+      {
+        "id": "up_emo_5",
+        "front": "Збуджений",
+        "back": "Podekscytowany",
+        "difficulty": "medium",
+        "example": "Jesteśmy podekscytowani",
+        "exampleTranslation": "Ми збуджені"
+      },
+      {
+        "id": "up_emo_6",
+        "front": "Нервовий",
+        "back": "Zdenerwowany",
+        "difficulty": "medium",
+        "example": "On jest zdenerwowany",
+        "exampleTranslation": "Він нервовий"
+      },
+      {
+        "id": "up_emo_7",
+        "front": "Спокійний",
+        "back": "Spokojny",
+        "difficulty": "medium",
+        "example": "Ona jest spokojna",
+        "exampleTranslation": "Вона спокійна"
+      },
+      {
+        "id": "up_emo_8",
+        "front": "Здивований",
+        "back": "Zaskoczony",
+        "difficulty": "medium",
+        "example": "Jestem zaskoczony",
+        "exampleTranslation": "Я здивований"
+      },
+      {
+        "id": "up_emo_9",
+        "front": "Наляканий",
+        "back": "Przestraszony",
+        "difficulty": "medium",
+        "example": "Dziecko jest przestraszone",
+        "exampleTranslation": "Дитина налякана"
+      },
+      {
+        "id": "up_emo_10",
+        "front": "Нудний",
+        "back": "Znudzony",
+        "difficulty": "medium",
+        "example": "Oni są znudzeni",
+        "exampleTranslation": "Їм нудно"
+      }
+    ]
+  },
+  {
+    "key": "sports",
+    "name": "Спорт",
+    "description": "Спортивні дисципліни",
+    "iconName": "Dumbbell",
+    "color": "#a3e635",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "up_sport_1",
+        "front": "Футбол",
+        "back": "Piłka nożna",
+        "difficulty": "medium",
+        "example": "Gram w piłkę nożną",
+        "exampleTranslation": "Я граю у футбол"
+      },
+      {
+        "id": "up_sport_2",
+        "front": "Баскетбол",
+        "back": "Koszykówka",
+        "difficulty": "medium",
+        "example": "Lubię koszykówkę",
+        "exampleTranslation": "Я люблю баскетбол"
+      },
+      {
+        "id": "up_sport_3",
+        "front": "Плавання",
+        "back": "Pływanie",
+        "difficulty": "medium",
+        "example": "Pływanie jest zdrowe",
+        "exampleTranslation": "Плавання корисне"
+      },
+      {
+        "id": "up_sport_4",
+        "front": "Біг",
+        "back": "Bieganie",
+        "difficulty": "medium",
+        "example": "Biegam rano",
+        "exampleTranslation": "Я бігаю вранці"
+      },
+      {
+        "id": "up_sport_5",
+        "front": "Теніс",
+        "back": "Tenis",
+        "difficulty": "medium",
+        "example": "Gram w tenisa",
+        "exampleTranslation": "Я граю в теніс"
+      },
+      {
+        "id": "up_sport_6",
+        "front": "Волейбол",
+        "back": "Siatkówka",
+        "difficulty": "medium",
+        "example": "Gram w siatkówkę",
+        "exampleTranslation": "Я граю у волейбол"
+      },
+      {
+        "id": "up_sport_7",
+        "front": "Спортзал",
+        "back": "Siłownia",
+        "difficulty": "medium",
+        "example": "Chodzę na siłownię",
+        "exampleTranslation": "Я ходжу до спортзалу"
+      },
+      {
+        "id": "up_sport_8",
+        "front": "Тренування",
+        "back": "Trening",
+        "difficulty": "medium",
+        "example": "Mam trening dzisiaj",
+        "exampleTranslation": "У мене тренування сьогодні"
+      },
+      {
+        "id": "up_sport_9",
+        "front": "Матч",
+        "back": "Mecz",
+        "difficulty": "medium",
+        "example": "Oglądamy mecz",
+        "exampleTranslation": "Ми дивимося матч"
+      },
+      {
+        "id": "up_sport_10",
+        "front": "Команда",
+        "back": "Drużyna",
+        "difficulty": "medium",
+        "example": "Jestem w drużynie",
+        "exampleTranslation": "Я в команді"
+      }
+    ]
+  },
+  {
+    "key": "health",
+    "name": "Здоров",
+    "description": "Медицина",
+    "iconName": "Activity",
+    "color": "#fb7185",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "up_health_1",
+        "front": "Лікар",
+        "back": "Lekarz",
+        "difficulty": "medium",
+        "example": "Muszę iść do lekarza",
+        "exampleTranslation": "Мені потрібно до лікаря"
+      },
+      {
+        "id": "up_health_2",
+        "front": "Ліки",
+        "back": "Lekarstwo",
+        "difficulty": "medium",
+        "example": "Weź swoje lekarstwo",
+        "exampleTranslation": "Візьми свої ліки"
+      },
+      {
+        "id": "up_health_3",
+        "front": "Біль",
+        "back": "Ból",
+        "difficulty": "medium",
+        "example": "Boli mnie głowa",
+        "exampleTranslation": "У мене болить голова"
+      },
+      {
+        "id": "up_health_4",
+        "front": "Температура",
+        "back": "Gorączka",
+        "difficulty": "medium",
+        "example": "Mam gorączkę",
+        "exampleTranslation": "У мене температура"
+      },
+      {
+        "id": "up_health_5",
+        "front": "Кашель",
+        "back": "Kaszel",
+        "difficulty": "medium",
+        "example": "Mam straszny kaszel",
+        "exampleTranslation": "У мене страшний кашель"
+      },
+      {
+        "id": "up_health_6",
+        "front": "Застуда",
+        "back": "Przeziębienie",
+        "difficulty": "medium",
+        "example": "Jestem przeziębiony",
+        "exampleTranslation": "Я застудився"
+      },
+      {
+        "id": "up_health_7",
+        "front": "Аптека",
+        "back": "Apteka",
+        "difficulty": "medium",
+        "example": "Idę do apteki",
+        "exampleTranslation": "Я йду до аптеки"
+      },
+      {
+        "id": "up_health_8",
+        "front": "Лікарня",
+        "back": "Szpital",
+        "difficulty": "medium",
+        "example": "Jest w szpitalu",
+        "exampleTranslation": "Він у лікарні"
+      },
+      {
+        "id": "up_health_9",
+        "front": "Медсестра",
+        "back": "Pielęgniarka",
+        "difficulty": "medium",
+        "example": "Pielęgniarka jest miła",
+        "exampleTranslation": "Медсестра мила"
+      },
+      {
+        "id": "up_health_10",
+        "front": "Здоров'я",
+        "back": "Zdrowie",
+        "difficulty": "medium",
+        "example": "Zdrowie jest ważne",
+        "exampleTranslation": "Здоров'я важливе"
+      }
+    ]
+  },
+  {
+    "key": "hobbies",
+    "name": "Хобі",
+    "description": "Інтереси",
+    "iconName": "BookOpen",
+    "color": "#818cf8",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "up_hobby_1",
+        "front": "Хобі",
+        "back": "Hobby",
+        "difficulty": "medium",
+        "example": "To moje hobby",
+        "exampleTranslation": "Це моє хобі"
+      },
+      {
+        "id": "up_hobby_2",
+        "front": "Читання",
+        "back": "Czytanie",
+        "difficulty": "medium",
+        "example": "Czytanie jest moim hobby",
+        "exampleTranslation": "Читання моє хобі"
+      },
+      {
+        "id": "up_hobby_3",
+        "front": "Музика",
+        "back": "Muzyka",
+        "difficulty": "medium",
+        "example": "Słucham muzyki",
+        "exampleTranslation": "Я слухаю музику"
+      },
+      {
+        "id": "up_hobby_4",
+        "front": "Кіно",
+        "back": "Film",
+        "difficulty": "medium",
+        "example": "Oglądam filmy",
+        "exampleTranslation": "Я дивлюся фільми"
+      },
+      {
+        "id": "up_hobby_5",
+        "front": "Фотографія",
+        "back": "Fotografia",
+        "difficulty": "medium",
+        "example": "Interesuję się fotografią",
+        "exampleTranslation": "Мене цікавить фотографія"
+      },
+      {
+        "id": "up_hobby_6",
+        "front": "Малювання",
+        "back": "Malowanie",
+        "difficulty": "medium",
+        "example": "Maluję w wolnym czasie",
+        "exampleTranslation": "Я малюю у вільний час"
+      },
+      {
+        "id": "up_hobby_7",
+        "front": "Кулінарія",
+        "back": "Gotowanie",
+        "difficulty": "medium",
+        "example": "Lubię gotować",
+        "exampleTranslation": "Я люблю готувати"
+      },
+      {
+        "id": "up_hobby_8",
+        "front": "Садівництво",
+        "back": "Ogrodnictwo",
+        "difficulty": "medium",
+        "example": "Ogrodnictwo jest relaksujące",
+        "exampleTranslation": "Садівництво розслаблює"
+      },
+      {
+        "id": "up_hobby_9",
+        "front": "Ігри",
+        "back": "Gry",
+        "difficulty": "medium",
+        "example": "Gram w gry komputerowe",
+        "exampleTranslation": "Я граю в комп'ютерні ігри"
+      },
+      {
+        "id": "up_hobby_10",
+        "front": "Подорожі",
+        "back": "Podróże",
+        "difficulty": "medium",
+        "example": "Uwielbiam podróże",
+        "exampleTranslation": "Я люблю подорожі"
+      }
+    ]
+  },
+  {
+    "key": "restaurant",
+    "name": "Ресторан",
+    "description": "Їжа в ресторані",
+    "iconName": "Coffee",
+    "color": "#fb923c",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "up_rest_1",
+        "front": "Ресторан",
+        "back": "Restauracja",
+        "difficulty": "medium",
+        "example": "Jemy w restauracji",
+        "exampleTranslation": "Ми їмо в ресторані"
+      },
+      {
+        "id": "up_rest_2",
+        "front": "Меню",
+        "back": "Menu",
+        "difficulty": "medium",
+        "example": "Proszę o menu",
+        "exampleTranslation": "Меню, будь ласка"
+      },
+      {
+        "id": "up_rest_3",
+        "front": "Офіціант",
+        "back": "Kelner",
+        "difficulty": "medium",
+        "example": "Kelner jest miły",
+        "exampleTranslation": "Офіціант милий"
+      },
+      {
+        "id": "up_rest_4",
+        "front": "Замовлення",
+        "back": "Zamówienie",
+        "difficulty": "medium",
+        "example": "Chcę złożyć zamówienie",
+        "exampleTranslation": "Я хочу зробити замовлення"
+      },
+      {
+        "id": "up_rest_5",
+        "front": "Рахунок",
+        "back": "Rachunek",
+        "difficulty": "medium",
+        "example": "Proszę o rachunek",
+        "exampleTranslation": "Рахунок, будь ласка"
+      },
+      {
+        "id": "up_rest_6",
+        "front": "Чайові",
+        "back": "Napiwek",
+        "difficulty": "medium",
+        "example": "Zostawiam napiwek",
+        "exampleTranslation": "Я залишаю чайові"
+      },
+      {
+        "id": "up_rest_7",
+        "front": "Смачний",
+        "back": "Smaczny",
+        "difficulty": "medium",
+        "example": "To jest smaczne",
+        "exampleTranslation": "Це смачно"
+      },
+      {
+        "id": "up_rest_8",
+        "front": "Голодний",
+        "back": "Głodny",
+        "difficulty": "medium",
+        "example": "Jestem głodny",
+        "exampleTranslation": "Я голодний"
+      },
+      {
+        "id": "up_rest_9",
+        "front": "Спраглий",
+        "back": "Spragniony",
+        "difficulty": "medium",
+        "example": "Jestem spragniony",
+        "exampleTranslation": "Я спрагний"
+      },
+      {
+        "id": "up_rest_10",
+        "front": "Столик",
+        "back": "Stolik",
+        "difficulty": "medium",
+        "example": "Rezerwuję stolik",
+        "exampleTranslation": "Я резервую столик"
+      }
+    ]
+  },
+  {
+    "key": "culture",
+    "name": "Культура",
+    "description": "Традиції",
+    "iconName": "Landmark",
+    "color": "#60a5fa",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "up_cult_1",
+        "front": "Культура",
+        "back": "Kultura",
+        "difficulty": "medium",
+        "example": "Interesuję się kulturą",
+        "exampleTranslation": "Мене цікавить культура"
+      },
+      {
+        "id": "up_cult_2",
+        "front": "Мистецтво",
+        "back": "Sztuka",
+        "difficulty": "medium",
+        "example": "Sztuka jest piękna",
+        "exampleTranslation": "Мистецтво прекрасне"
+      },
+      {
+        "id": "up_cult_3",
+        "front": "Театр",
+        "back": "Teatr",
+        "difficulty": "medium",
+        "example": "Idę do teatru",
+        "exampleTranslation": "Я йду до театру"
+      },
+      {
+        "id": "up_cult_4",
+        "front": "Музей",
+        "back": "Muzeum",
+        "difficulty": "medium",
+        "example": "Muzeum jest ciekawe",
+        "exampleTranslation": "Музей цікавий"
+      },
+      {
+        "id": "up_cult_5",
+        "front": "Історія",
+        "back": "Historia",
+        "difficulty": "medium",
+        "example": "Lubię historię",
+        "exampleTranslation": "Я люблю історію"
+      },
+      {
+        "id": "up_cult_6",
+        "front": "Традиція",
+        "back": "Tradycja",
+        "difficulty": "medium",
+        "example": "To nasza tradycja",
+        "exampleTranslation": "Це наша традиція"
+      },
+      {
+        "id": "up_cult_7",
+        "front": "Пам'ятник",
+        "back": "Pomnik",
+        "difficulty": "medium",
+        "example": "Odwiedzam pomnik",
+        "exampleTranslation": "Я відвідую пам'ятник"
+      },
+      {
+        "id": "up_cult_8",
+        "front": "Архітектура",
+        "back": "Architektura",
+        "difficulty": "medium",
+        "example": "Architektura jest piękna",
+        "exampleTranslation": "Архітектура прекрасна"
+      },
+      {
+        "id": "up_cult_9",
+        "front": "Галерея",
+        "back": "Galeria",
+        "difficulty": "medium",
+        "example": "Idę do galerii",
+        "exampleTranslation": "Я йду до галереї"
+      },
+      {
+        "id": "up_cult_10",
+        "front": "Виставка",
+        "back": "Wystawa",
+        "difficulty": "medium",
+        "example": "Wystawa jest interesująca",
+        "exampleTranslation": "Виставка цікава"
+      }
+    ]
+  }
+]

@@ -119,9 +119,24 @@ final class ContentModelsTests: XCTestCase {
     // MARK: - SF Symbol Mapping
 
     func testSFSymbolMapping() {
+        // Case-insensitive lookup of Lucide names
         XCTAssertEqual(SFSymbolMapping.map("heart"), "heart.fill")
+        XCTAssertEqual(SFSymbolMapping.map("Heart"), "heart.fill")
         XCTAssertEqual(SFSymbolMapping.map("globe"), "globe")
-        XCTAssertEqual(SFSymbolMapping.map("unknown_icon"), "questionmark.circle")
+        XCTAssertEqual(SFSymbolMapping.map("Globe"), "globe")
+        XCTAssertEqual(SFSymbolMapping.map("users"), "person.2.fill")
+        XCTAssertEqual(SFSymbolMapping.map("hash"), "number")
+
+        // Dotted SF Symbol names pass through
+        XCTAssertEqual(SFSymbolMapping.map("cloud.sun"), "cloud.sun")
+        XCTAssertEqual(SFSymbolMapping.map("text.book.closed"), "text.book.closed")
+
+        // Known bare SF Symbol names get .fill variant
+        XCTAssertEqual(SFSymbolMapping.map("leaf"), "leaf.fill")
+        XCTAssertEqual(SFSymbolMapping.map("pawprint"), "pawprint.fill")
+
+        // Unknown bare names pass through (may still be valid SF Symbols)
+        XCTAssertEqual(SFSymbolMapping.map("unknown_icon"), "unknown_icon")
     }
 
     // MARK: - AppUser Mock

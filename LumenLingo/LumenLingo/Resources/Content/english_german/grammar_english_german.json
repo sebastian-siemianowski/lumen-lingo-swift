@@ -1,0 +1,1232 @@
+[
+  {
+    "key": "present_tense",
+    "name": "Present Tense",
+    "description": "Präsens",
+    "iconName": "clock",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "eg_pres1",
+        "question": "Ich _____ Deutsch.",
+        "translation": "(I speak German)",
+        "options": [
+          "spreche",
+          "sprichst",
+          "spricht",
+          "sprechen"
+        ],
+        "correct": "spreche",
+        "explanation": "Welcome to German verb conjugation, where every person has its own unique ending. In English, you say 'I speak' with minimal change across persons. German transforms the verb for each person. 'Sprechen' (to speak) becomes 'spreche' for 'ich' (I). The -e ending signals first person singular, like a signature identifying who is speaking. Unlike English where 'I/you/we/they speak' looks the same, German gives each person its distinct form. This richness means you can often drop the pronoun in German - just 'spreche' tells everyone it's 'I'. The verb carries all the information English needs a pronoun for."
+      },
+      {
+        "id": "eg_pres2",
+        "question": "Du _____ in Berlin.",
+        "translation": "(You live in Berlin)",
+        "options": [
+          "wohnst",
+          "wohne",
+          "wohnt",
+          "wohnen"
+        ],
+        "correct": "wohnst",
+        "explanation": "For 'du' (informal you), German uses the -st ending. 'Wohnen' (to live) becomes 'wohnst'. English 'you live' is the same whether speaking to a friend or a stranger. German distinguishes: 'du' for casual relationships, 'Sie' for formal ones. The verb ending changes accordingly. 'Wohnst' immediately tells a German speaker this is informal conversation. The -st ending is your marker for second person singular informal. This formality distinction runs deep in German - it affects not just verbs but pronouns, possessives, and the entire tone of conversation. Choosing du versus Sie is a social decision, not just grammatical."
+      },
+      {
+        "id": "eg_pres3",
+        "question": "Sie _____ Kaffee.",
+        "translation": "(She drinks coffee)",
+        "options": [
+          "trinkt",
+          "trinke",
+          "trinkst",
+          "trinken"
+        ],
+        "correct": "trinkt",
+        "explanation": "Third person singular uses the -t ending. 'Trinken' (to drink) becomes 'trinkt' for er/sie/es (he/she/it). English adds -s to make 'drinks'. German uses -t as its third person marker. This -t ending serves for he, she, it, and formal you (Sie, when capitalized). Context and pronouns tell you which one. The beauty is in the precision - every ending maps to specific persons. 'Sie trinkt' (she drinks) versus 'Sie trinken' (they drink or formal you drink). The same pronoun 'Sie' but different verb endings. This might seem complex at first, but it allows for nuanced, precise communication."
+      },
+      {
+        "id": "eg_pres4",
+        "question": "Wir _____ Deutsch.",
+        "translation": "(We study German)",
+        "options": [
+          "lernen",
+          "lerne",
+          "lernst",
+          "lernt"
+        ],
+        "correct": "lernen",
+        "explanation": "First person plural takes the -en ending. 'Lernen' (to study/learn) stays as 'lernen' for 'wir'. English 'we study' uses the base form. German 'lernen' happens to look like the infinitive, but this is the conjugated first person plural form. For 'wir', 'sie' (they), and formal 'Sie', the ending is -en. This -en pattern appears across all regular verbs. The consistency helps - once you learn the pattern for one verb, you can apply it to hundreds. 'Wir' can be dropped in conversation because 'lernen' alone identifies the subject clearly through its ending."
+      },
+      {
+        "id": "eg_pres5",
+        "question": "Ihr _____ zu Hause.",
+        "translation": "(You all work at home)",
+        "options": [
+          "arbeitet",
+          "arbeite",
+          "arbeitest",
+          "arbeiten"
+        ],
+        "correct": "arbeitet",
+        "explanation": "Second person plural uses the -t ending. 'Arbeiten' (to work) becomes 'arbeitet' for 'ihr' (you all, informal plural). English 'you work' is the same for singular and plural. German distinguishes: du (one person), ihr (multiple people), Sie (formal, any number). The verb ending changes for each. 'Arbeitet' tells you immediately this is informal plural. German maintains this plural informal form that English lost centuries ago. It creates a warm, collective feeling when addressing a group of friends or family. This form is alive and well in modern German, unlike English's archaic 'ye'."
+      },
+      {
+        "id": "eg_pres6",
+        "question": "Sie _____ Fußball.",
+        "translation": "(They play football)",
+        "options": [
+          "spielen",
+          "spiele",
+          "spielst",
+          "spielt"
+        ],
+        "correct": "spielen",
+        "explanation": "Third person plural uses the -en ending. 'Spielen' (to play) stays as 'spielen' for 'sie' (they). The same ending works for formal 'Sie' (you, formal). English 'they play' is simple. German 'spielen' immediately signals multiple people or formal address. This -en ending is your marker for plural third person and formal second person. The pattern is consistent - 'wir/sie/Sie' all share -en. This consistency within plurality helps memory. Once you recognize -en as the plural/formal marker, you can decode and produce correct forms across hundreds of verbs."
+      },
+      {
+        "id": "eg_pres7",
+        "question": "Er _____ ein Buch.",
+        "translation": "(He reads a book)",
+        "options": [
+          "liest",
+          "lese",
+          "liet",
+          "lesen"
+        ],
+        "correct": "liest",
+        "explanation": "'Lesen' (to read) is irregular in present tense. The stem changes from 'les-' to 'lies-' for du/er/sie/es. 'Er liest' shows this vowel shift. English 'reads' just adds -s. German vowel changes are common in strong verbs. They make the language melodic but require memorization. The good news: these changes are predictable within verb families. Many verbs follow similar patterns. 'Lesen' becomes 'liest', 'sehen' (to see) becomes 'sieht'. The e→ie pattern repeats. Learning one helps you recognize others."
+      },
+      {
+        "id": "eg_pres8",
+        "question": "Ich _____ gern.",
+        "translation": "(I like to eat)",
+        "options": [
+          "esse",
+          "isst",
+          "esst",
+          "essen"
+        ],
+        "correct": "esse",
+        "explanation": "'Essen' (to eat) changes its stem in present tense. First person 'ich esse' keeps the -e ending but the stem shifts. English 'eat' stays regular. German strong verbs undergo vowel changes that make them more expressive. These changes have historical roots in Old German. While they complicate learning, they add character to the language. 'Essen' is one of the most common verbs, so its forms become automatic quickly. The irregularity is worth mastering for such a frequently used verb."
+      },
+      {
+        "id": "eg_pres9",
+        "question": "Du _____ nach Hause.",
+        "translation": "(You go home)",
+        "options": [
+          "gehst",
+          "gehe",
+          "geht",
+          "gehen"
+        ],
+        "correct": "gehst",
+        "explanation": "'Gehen' (to go) is regular but important. 'Du gehst' uses the standard -st ending. English 'you go' is straightforward. German 'gehst' embeds the person marker. Movement verbs like 'gehen', 'kommen', 'fahren' are fundamental in German. They combine with prefixes to create countless meanings. 'Gehen' is versatile and frequent. Master its conjugation and you unlock many expressions of movement and action."
+      },
+      {
+        "id": "eg_pres10",
+        "question": "Wir _____ Musik.",
+        "translation": "(We hear music)",
+        "options": [
+          "hören",
+          "höre",
+          "hörst",
+          "hört"
+        ],
+        "correct": "hören",
+        "explanation": "'Hören' (to hear/listen) uses standard first person plural -en. 'Wir hören' is straightforward. The umlaut (ö) is a distinct German feature. It changes the vowel sound and sometimes meaning. 'Hören' vs 'horen' would be different words if 'horen' existed. Umlauts are integral to German pronunciation and spelling. They're not decorative but functional. Learning to recognize and produce them is essential for clear German communication."
+      },
+      {
+        "id": "eg_pres11",
+        "question": "Sie _____ Englisch.",
+        "translation": "(You speak English - formal)",
+        "options": [
+          "sprechen",
+          "spreche",
+          "sprichst",
+          "spricht"
+        ],
+        "correct": "sprechen",
+        "explanation": "Formal 'Sie' uses the -en ending, same as 'wir' and plural 'sie'. 'Sie sprechen' could mean 'you speak' (formal) or 'they speak'. Context clarifies. Capitalized 'Sie' indicates formal you. This formality system is deeply embedded in German culture. Using 'Sie' shows respect for strangers, elders, and professional contexts. The verb form matches the respect shown in the pronoun choice. Formal address is not just polite but expected in many situations."
+      },
+      {
+        "id": "eg_pres12",
+        "question": "Es _____ kalt.",
+        "translation": "(It is cold)",
+        "options": [
+          "ist",
+          "bin",
+          "bist",
+          "sind"
+        ],
+        "correct": "ist",
+        "explanation": "'Sein' (to be) is highly irregular. 'Es ist' means 'it is'. English 'is' is also irregular but simpler. German 'sein' has completely different forms for each person: bin, bist, ist, sind, seid, sind. These must be memorized - no pattern helps. As the most fundamental verb, this irregularity is unavoidable. The good news: 'sein' is so frequent that its forms become automatic through exposure. Every German conversation uses it repeatedly."
+      },
+      {
+        "id": "eg_pres13",
+        "question": "Ihr _____ müde.",
+        "translation": "(You all are tired)",
+        "options": [
+          "seid",
+          "bin",
+          "bist",
+          "ist"
+        ],
+        "correct": "seid",
+        "explanation": "'Ihr seid' is the second person plural of 'sein'. English 'you are' is the same for singular and plural. German distinguishes with 'seid' specifically for 'ihr'. This form is unique to 'ihr' - no other verb has exactly this ending. The irregularity of 'sein' extends to all its forms. 'Seid' is phonetically distinct, making 'ihr' addresses clear. This form carries a warm, familiar tone when used with friends or family."
+      },
+      {
+        "id": "eg_pres14",
+        "question": "Du _____ ein Student.",
+        "translation": "(You are a student)",
+        "options": [
+          "bist",
+          "bin",
+          "ist",
+          "sind"
+        ],
+        "correct": "bist",
+        "explanation": "'Du bist' is second person singular of 'sein'. English 'you are' doesn't change. German 'bist' is distinct to 'du', signaling informal address. Professions in German often use indefinite articles where English might omit them. 'Ein Student' translates literally as 'a student'. Both languages align here. The 'sein' verb is fundamental for identity statements. Master its irregular forms and you can express who and what things are across all contexts."
+      },
+      {
+        "id": "eg_pres15",
+        "question": "Wir _____ Freunde.",
+        "translation": "(We are friends)",
+        "options": [
+          "sind",
+          "bin",
+          "bist",
+          "ist"
+        ],
+        "correct": "sind",
+        "explanation": "'Wir sind' uses the first person plural of 'sein'. English 'we are' is straightforward. German 'sind' also works for third person plural 'sie' and formal 'Sie'. This overlap might confuse at first, but context always clarifies. 'Freunde' is plural (friends), matching 'wir'. German grammar emphasizes agreement between subject and verb, subject and predicate. These agreements reinforce meaning and help comprehension. They're not obstacles but aids to clarity."
+      }
+    ]
+  },
+  {
+    "key": "articles",
+    "name": "Articles",
+    "description": "Artikel",
+    "iconName": "doc.text",
+    "color": "#c084fc",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "eg_art1",
+        "question": "_____ Mann ist groß.",
+        "translation": "(The man is tall)",
+        "options": [
+          "Der",
+          "Die",
+          "Das",
+          "Den"
+        ],
+        "correct": "Der",
+        "explanation": "German nouns have grammatical gender. 'Mann' (man) is masculine, taking 'der' in nominative case. English 'the' works for everything. German has three genders: masculine (der), feminine (die), neuter (das). Learning noun genders is essential - they affect articles, adjectives, and pronouns. There are patterns: -ung endings are feminine, -chen endings are neuter. But many nouns must be memorized with their gender. Think of gender as part of the noun itself. When learning 'Mann', learn 'der Mann' as one unit."
+      },
+      {
+        "id": "eg_art2",
+        "question": "_____ Frau ist nett.",
+        "translation": "(The woman is nice)",
+        "options": [
+          "Die",
+          "Der",
+          "Das",
+          "Den"
+        ],
+        "correct": "Die",
+        "explanation": "'Frau' (woman) is feminine, taking 'die'. English 'the' doesn't distinguish. German 'die' marks feminine nouns in nominative. Feminine nouns often (but not always) refer to female beings or have certain endings like -heit, -keit, -ung. 'Die' appears in all feminine nominative contexts. This gendered article system seems complex but becomes intuitive with exposure. Native speakers don't think about it - it sounds right. You'll develop this instinct too with practice."
+      },
+      {
+        "id": "eg_art3",
+        "question": "_____ Kind spielt.",
+        "translation": "(The child plays)",
+        "options": [
+          "Das",
+          "Der",
+          "Die",
+          "Den"
+        ],
+        "correct": "Das",
+        "explanation": "'Kind' (child) is neuter, taking 'das'. English 'the' is universal. German neuter is the third gender category. Many nouns referring to young beings are neuter: das Kind, das Baby, das Mädchen (girl). Diminutives with -chen or -lein are always neuter. 'Das' signals neuter gender in nominative. While it seems arbitrary that 'girl' (Mädchen) is neuter not feminine, these are grammatical categories, not biological. Grammatical gender is a classification system, not a statement about reality."
+      },
+      {
+        "id": "eg_art4",
+        "question": "Ich sehe _____ Mann.",
+        "translation": "(I see the man)",
+        "options": [
+          "den",
+          "der",
+          "die",
+          "das"
+        ],
+        "correct": "den",
+        "explanation": "Accusative case changes masculine articles. 'Der Mann' becomes 'den Mann' as direct object. English 'the' doesn't change. German articles decline based on case (function in sentence). Accusative marks direct objects. Masculine changes der→den, but feminine and neuter stay the same (die, das). This case system seems daunting but it clarifies meaning. Word order can flex in German because cases show grammatical function. Cases give German precision English achieves through word order."
+      },
+      {
+        "id": "eg_art5",
+        "question": "Ich gebe _____ Mann das Buch.",
+        "translation": "(I give the man the book)",
+        "options": [
+          "dem",
+          "den",
+          "der",
+          "das"
+        ],
+        "correct": "dem",
+        "explanation": "Dative case shows indirect objects. 'Dem Mann' means 'to the man'. English uses word order or 'to'. German uses dative: der→dem, die→der, das→dem. Dative appears with indirect objects and certain prepositions. It's the case of receiving or benefiting. Many verbs like 'helfen' (to help) take dative objects. The dative case embeds relationships between words. It shows who receives or benefits from actions. This precision helps when word order becomes flexible."
+      },
+      {
+        "id": "eg_art6",
+        "question": "Das ist _____ Buch des Mannes.",
+        "translation": "(That is the book of the man)",
+        "options": [
+          "das",
+          "der",
+          "dem",
+          "den"
+        ],
+        "correct": "das",
+        "explanation": "Genitive case shows possession. 'Des Mannes' means 'of the man'. English uses 'of' or possessive 's. German uses genitive: der→des, die→der, das→des. Nouns often add -s or -es in genitive. This case appears less in spoken German, replaced by 'von' + dative. But in formal writing, genitive is proper. Understanding it helps you read German literature and formal texts. Genitive adds sophistication and clarity to possessive relationships."
+      },
+      {
+        "id": "eg_art7",
+        "question": "Ich kaufe _____ Buch.",
+        "translation": "(I buy a book)",
+        "options": [
+          "ein",
+          "eine",
+          "einen",
+          "einem"
+        ],
+        "correct": "ein",
+        "explanation": "Indefinite articles also have gender. 'Ein Buch' uses neuter form. English 'a/an' doesn't change. German indefinite articles: ein (masc/neut), eine (fem). Like definite articles, they decline through cases. Accusative masculine becomes 'einen', but neuter stays 'ein'. Learning articles means learning four forms for definite (der/die/das + plurals) and three for indefinite (ein/eine, no plural form). This system provides grammatical information in every noun phrase."
+      },
+      {
+        "id": "eg_art8",
+        "question": "Das ist _____ Katze.",
+        "translation": "(That is a cat)",
+        "options": [
+          "eine",
+          "ein",
+          "einen",
+          "einem"
+        ],
+        "correct": "eine",
+        "explanation": "'Katze' (cat) is feminine, taking 'eine'. English 'a' doesn't distinguish gender. German indefinite feminine is always 'eine' in nominative/accusative. Animals have grammatical gender in German. 'Der Hund' (dog) is masculine, 'die Katze' is feminine, 'das Pferd' (horse) is neuter. These don't reflect animal biology - they're grammatical classifications. The gender affects all modifiers. Learning animal words means learning their genders."
+      },
+      {
+        "id": "eg_art9",
+        "question": "Ich habe _____ Frage.",
+        "translation": "(I have a question)",
+        "options": [
+          "eine",
+          "ein",
+          "einen",
+          "einem"
+        ],
+        "correct": "eine",
+        "explanation": "'Frage' (question) is feminine. Accusative feminine stays 'eine'. English 'a' doesn't change. Unlike masculine articles which change in accusative (ein→einen), feminine indefinite stays 'eine'. This consistency helps - one less form to remember. Feminine and neuter indefinite articles don't change in accusative. Only masculine transforms. This pattern reduces the memorization burden."
+      },
+      {
+        "id": "eg_art10",
+        "question": "_____ Bücher sind interessant.",
+        "translation": "(The books are interesting)",
+        "options": [
+          "Die",
+          "Der",
+          "Das",
+          "Den"
+        ],
+        "correct": "Die",
+        "explanation": "Plural articles are 'die' for all genders. English 'the' is the same. German simplifies in plural - all nouns take 'die' regardless of singular gender. Der Mann→die Männer, die Frau→die Frauen, das Kind→die Kinder. This unification in plural is a relief after tracking three genders in singular. Plural 'die' is your friend - one form covers everything. In plural, gender distinctions disappear."
+      },
+      {
+        "id": "eg_art11",
+        "question": "Ich mag _____ Musik.",
+        "translation": "(I like music)",
+        "options": [
+          "No article",
+          "die",
+          "eine",
+          "der"
+        ],
+        "correct": "die",
+        "explanation": "Abstract nouns often take definite articles in German. 'Die Musik' uses the article where English omits it. German treats abstractions as definite entities. 'Die Liebe' (love), 'das Leben' (life), 'die Freiheit' (freedom) - all use articles. This feels strange to English speakers who say 'I like music' not 'the music'. German's article usage is broader. When generalizing about a category, German includes the article. This is a key difference from English article patterns."
+      },
+      {
+        "id": "eg_art12",
+        "question": "Er spielt _____ Fußball.",
+        "translation": "(He plays football)",
+        "options": [
+          "No article",
+          "der",
+          "ein",
+          "das"
+        ],
+        "correct": "No article",
+        "explanation": "Sports and games omit articles. 'Fußball spielen' (to play football) uses no article. English also omits it. Both languages agree: sports don't need articles. 'Tennis spielen', 'Schach spielen' (play chess) - no articles. But instruments need them: 'Klavier spielen' (play piano) actually says 'play the piano' in German too. This parallel with English makes sports vocabulary easier to master. The pattern is intuitive for English speakers."
+      },
+      {
+        "id": "eg_art13",
+        "question": "Ich spreche _____ Deutsch.",
+        "translation": "(I speak German)",
+        "options": [
+          "No article",
+          "das",
+          "die",
+          "ein"
+        ],
+        "correct": "No article",
+        "explanation": "Languages as objects of 'sprechen' (speak) omit articles. 'Ich spreche Deutsch' matches English 'I speak German'. Neither uses articles with languages in this context. But when referring to the language as a subject: 'Das Deutsche ist schwer' (German [language] is difficult). Article patterns with languages depend on grammatical role. When speaking a language, no article. When discussing it as a thing, article appears. Context determines usage."
+      },
+      {
+        "id": "eg_art14",
+        "question": "_____ Sonne scheint.",
+        "translation": "(The sun shines)",
+        "options": [
+          "Die",
+          "Der",
+          "Das",
+          "Den"
+        ],
+        "correct": "Die",
+        "explanation": "Unique natural phenomena take definite articles. 'Die Sonne' (the sun), 'der Mond' (the moon), 'die Erde' (the Earth). English also uses articles with these. Both languages treat unique celestial bodies as definite. The gender must be learned: Sonne is feminine, Mond is masculine, Erde is feminine. These words are fundamental and worth memorizing with their genders. Natural phenomena are common in conversations about weather and nature."
+      },
+      {
+        "id": "eg_art15",
+        "question": "Ich gehe in _____ Schule.",
+        "translation": "(I go to school)",
+        "options": [
+          "die",
+          "der",
+          "den",
+          "das"
+        ],
+        "correct": "die",
+        "explanation": "'In die Schule' means 'to school'. The preposition 'in' with accusative (motion toward) uses 'die'. 'Schule' is feminine. Prepositions govern cases in German. 'In' takes accusative for motion toward, dative for location. 'Ich bin in der Schule' (I am in school - dative location) vs 'Ich gehe in die Schule' (I go to school - accusative motion). This distinction shows direction vs location. The case system embeds meaning into the grammar."
+      }
+    ]
+  },
+  {
+    "key": "past_tense",
+    "name": "Past Tense",
+    "description": "Vergangenheit",
+    "iconName": "clock",
+    "color": "#4ade80",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_past1",
+        "question": "Ich _____ ein Buch gelesen.",
+        "translation": "(I have read a book)",
+        "options": [
+          "habe",
+          "bin",
+          "hatte",
+          "war"
+        ],
+        "correct": "habe",
+        "explanation": "German present perfect uses haben/sein + past participle. 'Ich habe gelesen' translates as 'I have read' or 'I read' depending on context. German present perfect functions like English simple past for most contexts. Where English distinguishes 'I read' (past) from 'I have read' (present perfect), German uses 'ich habe gelesen' for both. This tense is preferred in conversation over simple past. The past participle 'gelesen' comes from 'lesen' (to read). Most past participles start with ge- and end in -t or -en."
+      },
+      {
+        "id": "eg_past2",
+        "question": "Sie _____ nach Hause gegangen.",
+        "translation": "(She has gone home)",
+        "options": [
+          "ist",
+          "hat",
+          "war",
+          "hatte"
+        ],
+        "correct": "ist",
+        "explanation": "Motion verbs use 'sein' instead of 'haben'. 'Sie ist gegangen' means 'she has gone' or 'she went'. English uses 'has/have' for all verbs. German splits: most verbs use 'haben', motion/change verbs use 'sein'. Common sein-verbs: gehen (go), kommen (come), fahren (drive), werden (become), sein (be), bleiben (stay). Learning which verbs take sein is crucial. The pattern: movement from A to B or change of state → sein. All other actions → haben."
+      },
+      {
+        "id": "eg_past3",
+        "question": "Wir _____ Deutsch gelernt.",
+        "translation": "(We have learned German)",
+        "options": [
+          "haben",
+          "sind",
+          "hatten",
+          "waren"
+        ],
+        "correct": "haben",
+        "explanation": "'Haben' is used for most transitive verbs. 'Wir haben gelernt' covers English 'we learned' or 'we have learned'. German collapses this distinction in conversation. The past participle 'gelernt' is regular: lernen → ge+lern+t. Regular verbs follow this pattern predictably. German present perfect is the conversational past - you'll hear it constantly. Simple past is more common in writing and formal narratives. But in daily speech, present perfect dominates."
+      },
+      {
+        "id": "eg_past4",
+        "question": "Er _____ gekommen.",
+        "translation": "(He has come)",
+        "options": [
+          "ist",
+          "hat",
+          "war",
+          "hatte"
+        ],
+        "correct": "ist",
+        "explanation": "'Kommen' uses sein as auxiliary. 'Er ist gekommen' means 'he came' or 'he has come'. This movement toward the speaker makes kommen a classic sein-verb. The past participle 'gekommen' is irregular - from kommen (to come). Many common verbs have irregular past participles. These must be memorized, but frequency makes them automatic. Sein-verbs represent a minority - most verbs use haben. The pattern is consistent once learned."
+      },
+      {
+        "id": "eg_past5",
+        "question": "Ich _____ jung.",
+        "translation": "(I was young)",
+        "options": [
+          "war",
+          "bin",
+          "hatte",
+          "habe"
+        ],
+        "correct": "war",
+        "explanation": "Simple past of 'sein' (to be) is commonly used even in conversation. 'Ich war' means 'I was'. Unlike other verbs, sein's simple past is preferred over present perfect. You'll hear 'war' more than 'bin gewesen'. The same goes for 'haben': 'hatte' (had) is more common than 'habe gehabt'. These high-frequency verbs break the general rule favoring present perfect. Their simple past forms are so ingrained in speech that present perfect sounds awkward."
+      },
+      {
+        "id": "eg_past6",
+        "question": "Sie _____ ein Auto.",
+        "translation": "(She had a car)",
+        "options": [
+          "hatte",
+          "war",
+          "hat",
+          "ist"
+        ],
+        "correct": "hatte",
+        "explanation": "Simple past of 'haben' is 'hatte'. 'Sie hatte' means 'she had'. Like sein, haben's simple past is preferred in speech. 'Hatte' is more natural than 'hat gehabt'. These auxiliary verbs are fundamental - you use them to build all perfect tenses. Their simple past forms are short and frequent, making them stick in memory. English 'had' parallels German 'hatte' closely in usage and frequency."
+      },
+      {
+        "id": "eg_past7",
+        "question": "Wir _____ nach Berlin gefahren.",
+        "translation": "(We drove to Berlin)",
+        "options": [
+          "sind",
+          "haben",
+          "waren",
+          "hatten"
+        ],
+        "correct": "sind",
+        "explanation": "'Fahren' (to drive/travel) uses sein. 'Wir sind gefahren' means 'we drove' or 'we have driven'. The motion from one place to another triggers sein. 'Gefahren' is the past participle of fahren. This strong verb changes its stem: fahren → fuhr → gefahren. Strong verbs have vowel changes that must be memorized. But patterns exist: many strong verbs follow similar paths. Learning one helps recognize others."
+      },
+      {
+        "id": "eg_past8",
+        "question": "Ihr _____ das gesehen.",
+        "translation": "(You all saw that)",
+        "options": [
+          "habt",
+          "seid",
+          "hattet",
+          "wart"
+        ],
+        "correct": "habt",
+        "explanation": "'Sehen' (to see) takes haben. 'Ihr habt gesehen' means 'you all saw' or 'you all have seen'. The past participle 'gesehen' is irregular - from sehen (to see). The ihr-form of haben is 'habt'. Each person needs its form: ich habe, du hast, er/sie/es hat, wir haben, ihr habt, sie/Sie haben. These forms must become automatic - they're used constantly in present perfect construction."
+      },
+      {
+        "id": "eg_past9",
+        "question": "Sie _____ Arzt geworden.",
+        "translation": "(He became a doctor)",
+        "options": [
+          "ist",
+          "hat",
+          "war",
+          "hatte"
+        ],
+        "correct": "ist",
+        "explanation": "'Werden' (to become) uses sein. 'Er ist geworden' means 'he became' or 'he has become'. Change of state verbs take sein. Becoming something is a change, so sein is required. The past participle 'geworden' drops the ge- when used as passive auxiliary, but keeps it in present perfect. This nuance matters in advanced German. For now: werden + sein for present perfect."
+      },
+      {
+        "id": "eg_past10",
+        "question": "Ich _____ das Buch gekauft.",
+        "translation": "(I bought the book)",
+        "options": [
+          "habe",
+          "bin",
+          "hatte",
+          "war"
+        ],
+        "correct": "habe",
+        "explanation": "'Kaufen' (to buy) uses haben. 'Ich habe gekauft' means 'I bought' or 'I have bought'. Regular past participle: kaufen → ge+kauf+t. Transitive verbs (taking direct objects) virtually always use haben. The pattern is reliable: if the verb can have an accusative object, it takes haben. This rule covers most verbs you'll encounter. Sein-verbs are the exception, not the norm."
+      },
+      {
+        "id": "eg_past11",
+        "question": "Du _____ spät aufgestanden.",
+        "translation": "(You got up late)",
+        "options": [
+          "bist",
+          "hast",
+          "warst",
+          "hattest"
+        ],
+        "correct": "bist",
+        "explanation": "'Aufstehen' (to get up) uses sein. 'Du bist aufgestanden' means 'you got up'. Separable prefix verbs place ge- between prefix and stem: auf-ge-stand-en. This construction looks odd at first but follows logical rules. The verb's core is 'stehen' (to stand) which can use sein (standing up is motion). The prefix 'auf' separates in present tense but reunites with past participle. Separable verbs require attention to where ge- lands."
+      },
+      {
+        "id": "eg_past12",
+        "question": "Wir _____ Fußball gespielt.",
+        "translation": "(We played football)",
+        "options": [
+          "haben",
+          "sind",
+          "hatten",
+          "waren"
+        ],
+        "correct": "haben",
+        "explanation": "'Spielen' (to play) uses haben. 'Wir haben gespielt' means 'we played'. Regular past participle follows the pattern: spielen → ge+spiel+t. Sports and games are activities, not motion, so haben is required. This distinction between activities (haben) and motion (sein) is key to mastering German past tenses. Once internalized, auxiliary selection becomes intuitive."
+      },
+      {
+        "id": "eg_past13",
+        "question": "Sie _____ zu Hause geblieben.",
+        "translation": "(She stayed home)",
+        "options": [
+          "ist",
+          "hat",
+          "war",
+          "hatte"
+        ],
+        "correct": "ist",
+        "explanation": "'Bleiben' (to stay/remain) uses sein despite not involving movement. 'Sie ist geblieben' means 'she stayed'. Bleiben is sein-verb because staying is a state change (from being elsewhere to being here). It's one of the exceptions that proves sein isn't only for physical motion. Change of condition also triggers sein. The past participle 'geblieben' is irregular - from bleiben (to stay)."
+      },
+      {
+        "id": "eg_past14",
+        "question": "Ihr _____ schnell gelaufen.",
+        "translation": "(You all ran fast)",
+        "options": [
+          "seid",
+          "habt",
+          "wart",
+          "hattet"
+        ],
+        "correct": "seid",
+        "explanation": "'Laufen' (to run) uses sein. 'Ihr seid gelaufen' means 'you all ran'. Running implies movement through space, triggering sein. The past participle 'gelaufen' is irregular - from laufen (to run). Strong verbs like laufen undergo vowel changes: laufen → lief → gelaufen. These changes follow historical patterns from Old German. While seemingly arbitrary, they're linguistically systematic."
+      },
+      {
+        "id": "eg_past15",
+        "question": "Ich _____ müde gewesen.",
+        "translation": "(I was tired)",
+        "options": [
+          "bin",
+          "habe",
+          "war",
+          "hatte"
+        ],
+        "correct": "bin",
+        "explanation": "'Sein' as main verb uses itself as auxiliary. 'Ich bin gewesen' means 'I was' or 'I have been'. However, simple past 'ich war' is more common in speech. Present perfect 'bin gewesen' sounds formal or emphatic. Both are grammatically correct. German gives you options for expressing past states. Simple past for sein and haben feels more natural in conversation. Present perfect for other verbs is conversational standard."
+      }
+    ]
+  },
+  {
+    "key": "word_order",
+    "name": "Word Order",
+    "description": "Wortstellung",
+    "iconName": "list.bullet",
+    "color": "#a855f7",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_order1",
+        "question": "Ich _____ heute ins Kino.",
+        "translation": "(I am going to the cinema today)",
+        "options": [
+          "gehe",
+          "heute gehe",
+          "ins Kino gehe",
+          "gehe heute"
+        ],
+        "correct": "gehe",
+        "explanation": "German main clauses follow V2 rule: verb is second element. 'Ich gehe heute ins Kino' places verb second. English fixes verb after subject. German allows flexibility but verb stays second. This means you can start with other elements: 'Heute gehe ich ins Kino' (today I'm going to cinema). Time or place can come first, but verb remains second element. V2 rule is fundamental to German sentence structure. It creates the characteristic rhythm of German speech."
+      },
+      {
+        "id": "eg_order2",
+        "question": "Gestern _____ ich ein Buch.",
+        "translation": "(Yesterday I read a book)",
+        "options": [
+          "las",
+          "ich las",
+          "ein Buch las",
+          "las ich"
+        ],
+        "correct": "las",
+        "explanation": "Time expressions can start sentences. 'Gestern las ich' inverts subject and verb because 'gestern' occupies first position. Verb must be second, so subject follows. This inversion is automatic in German when anything other than subject starts the sentence. English maintains subject-verb order regardless: 'Yesterday I read'. German's flexibility allows emphasis through word order. Starting with 'gestern' emphasizes time. V2 rule creates this characteristic inversion."
+      },
+      {
+        "id": "eg_order3",
+        "question": "Ich weiß, dass er _____ kommt.",
+        "translation": "(I know that he is coming)",
+        "options": [
+          "heute",
+          "kommt heute",
+          "heute kommt",
+          "ist"
+        ],
+        "correct": "heute",
+        "explanation": "Subordinate clauses send verb to end. 'Dass er heute kommt' places 'kommt' last. English keeps standard order: 'that he is coming'. German subordinate clause order is Subject-Modifiers-Verb. The conjunction 'dass' (that) triggers this reordering. All subordinate conjunctions (weil, wenn, obwohl, etc.) cause verb-final position. This is one of German's most distinctive features. The wait for the verb creates suspense in complex sentences."
+      },
+      {
+        "id": "eg_order4",
+        "question": "Wann _____ du nach Hause?",
+        "translation": "(When are you going home?)",
+        "options": [
+          "gehst",
+          "du gehst",
+          "nach Hause gehst",
+          "gehst du"
+        ],
+        "correct": "gehst",
+        "explanation": "Questions starting with question words invert subject-verb. 'Wann gehst du' places verb second, subject third. English also inverts but uses auxiliary: 'when are you going'. German main verb moves directly. Yes/no questions start with verb: 'Gehst du nach Hause?' (Are you going home?). W-questions (wann, wo, wie, etc.) place question word first, verb second. This inversion is automatic and similar to English patterns."
+      },
+      {
+        "id": "eg_order5",
+        "question": "Ich habe das Buch _____ gelesen.",
+        "translation": "(I read the book yesterday)",
+        "options": [
+          "gestern",
+          "gelesen gestern",
+          "gestern habe",
+          "habe gestern"
+        ],
+        "correct": "gestern",
+        "explanation": "In perfect tenses, auxiliary verb is second, past participle goes to end. 'Ich habe das Buch gestern gelesen' creates frame: haben...gelesen brackets the sentence. Time expressions fit between auxiliary and participle. This 'verbal bracket' (Satzklammer) is central to German syntax. Elements nest inside the frame formed by verb parts. German sentences build toward the final verb, creating anticipation. The structure is orderly once you grasp the pattern."
+      },
+      {
+        "id": "eg_order6",
+        "question": "Morgen _____ ich nach Berlin.",
+        "translation": "(Tomorrow I will go to Berlin)",
+        "options": [
+          "fahre",
+          "ich fahre",
+          "nach Berlin fahre",
+          "fahre ich"
+        ],
+        "correct": "fahre",
+        "explanation": "Time expressions starting sentences trigger inversion. 'Morgen fahre ich' maintains V2 rule. Verb second, subject third. This flexibility lets German emphasize different elements. Starting with time emphasizes when. Starting with place emphasizes where. Starting with subject emphasizes who. German word order is more flexible than English but follows strict rules. V2 rule governs main clauses absolutely. This rule is non-negotiable in declarative sentences."
+      },
+      {
+        "id": "eg_order7",
+        "question": "Ich kann nicht _____, weil ich krank bin.",
+        "translation": "(I cannot come because I am sick)",
+        "options": [
+          "kommen",
+          "komme",
+          "kann kommen",
+          "kommen kann"
+        ],
+        "correct": "kommen",
+        "explanation": "Modal verbs send infinitives to end of clause. 'Ich kann nicht kommen' places 'kommen' last. Modal (kann) is finite verb in second position. Infinitive goes to end. This creates another verbal bracket. In subordinate clause 'weil ich krank bin', verb 'bin' goes to end. German stacks verbs at clause ends systematically. This clustering is distinctive and must be mastered for fluency."
+      },
+      {
+        "id": "eg_order8",
+        "question": "_____ du mir das Buch?",
+        "translation": "(Will you give me the book?)",
+        "options": [
+          "Gibst",
+          "Du gibst",
+          "Mir gibst",
+          "Das Buch gibst"
+        ],
+        "correct": "Gibst",
+        "explanation": "Yes/no questions start with verb. 'Gibst du mir das Buch?' places verb first. English uses auxiliary: 'Will you give me the book?'. German main verb moves to first position directly. No auxiliary needed. This verb-first structure immediately signals a question. The intonation rises at the end. Verb-first order is unambiguous question marker. The pattern is simple and consistent."
+      },
+      {
+        "id": "eg_order9",
+        "question": "Ich möchte ins Kino _____, aber ich habe keine Zeit.",
+        "translation": "(I would like to go to the cinema, but I have no time)",
+        "options": [
+          "gehen",
+          "gehe",
+          "möchte gehen",
+          "gehen möchte"
+        ],
+        "correct": "gehen",
+        "explanation": "Modal + infinitive: infinitive to end. 'Möchte...gehen' brackets the clause. 'Aber' (but) starts new main clause, so normal V2 order resumes: 'ich habe keine Zeit'. Coordinating conjunctions (und, aber, oder, denn) don't affect word order. They simply link clauses. Subordinating conjunctions (dass, weil, wenn) send verb to end. This distinction between coordinating and subordinating is crucial for German syntax."
+      },
+      {
+        "id": "eg_order10",
+        "question": "Wenn es regnet, _____ ich zu Hause.",
+        "translation": "(If it rains, I stay home)",
+        "options": [
+          "bleibe",
+          "ich bleibe",
+          "zu Hause bleibe",
+          "bleibe ich"
+        ],
+        "correct": "bleibe",
+        "explanation": "Subordinate clause first inverts main clause. 'Wenn es regnet' is complete clause in first position. Main clause verb must be second element of overall sentence. So: 'bleibe ich'. The subordinate clause counts as first element. This creates verb-verb sequence: regnet, bleibe. It sounds odd but is correct. When subordinate clause leads, main clause inverts. This pattern is consistent and must be mastered."
+      },
+      {
+        "id": "eg_order11",
+        "question": "Ich glaube, dass das Buch _____ interessant ist.",
+        "translation": "(I believe that the book is very interesting)",
+        "options": [
+          "sehr",
+          "ist sehr",
+          "sehr ist",
+          "interessant sehr"
+        ],
+        "correct": "sehr",
+        "explanation": "Subordinate clause order: Subject-Modifiers-Predicate-Verb. 'Dass das Buch sehr interessant ist' places 'ist' last. Adjective 'interessant' with modifier 'sehr' precede verb. Everything piles up before final verb. This creates long sequences before you reach the verb. German speakers are accustomed to holding information in memory until the verb arrives. This patience is essential for comprehension. The payoff: German allows complex ideas in single subordinate clauses."
+      },
+      {
+        "id": "eg_order12",
+        "question": "_____ du das verstehst, ist gut.",
+        "translation": "(That you understand this is good)",
+        "options": [
+          "Dass",
+          "Wenn",
+          "Weil",
+          "Ob"
+        ],
+        "correct": "Dass",
+        "explanation": "'Dass' starts subordinate clause functioning as subject. 'Dass du das verstehst' is entire subject of 'ist gut'. This noun clause structure is common in German. The subordinate clause can be subject, object, or predicate. Word order in subordinate clause: verb final. Main clause verb is second: 'ist'. The subordinate clause counts as first element, so 'ist' is second. German syntax nests clauses with precision."
+      },
+      {
+        "id": "eg_order13",
+        "question": "Ich habe ihn _____ gesehen, als ich einkaufen war.",
+        "translation": "(I saw him when I was shopping)",
+        "options": [
+          "nicht",
+          "gesehen nicht",
+          "nicht habe",
+          "habe nicht"
+        ],
+        "correct": "nicht",
+        "explanation": "Negation 'nicht' usually comes before the element negated or before infinitive/participle. 'Habe ihn nicht gesehen' places nicht before gesehen. Time expression 'als ich einkaufen war' is subordinate clause with verb final. German negation placement is flexible but follows patterns. Nicht typically comes late in sentence, before verb cluster. This differs from English 'not' which comes early. German back-loads important information."
+      },
+      {
+        "id": "eg_order14",
+        "question": "Wir wollen heute Abend ins Restaurant _____.",
+        "translation": "(We want to go to the restaurant tonight)",
+        "options": [
+          "gehen",
+          "wollen gehen",
+          "gehen wollen",
+          "heute Abend gehen"
+        ],
+        "correct": "gehen",
+        "explanation": "Modal + infinitive: infinitive to end. 'Wollen...gehen' brackets the clause. Time 'heute Abend' and place 'ins Restaurant' fit between. German's verbal bracket creates clear sentence frame. Everything nests inside this frame. The bracket is so fundamental that German is called a 'bracket language' (Klammersprache). Understanding the bracket unlocks German sentence structure. It organizes all the flexibility German allows."
+      },
+      {
+        "id": "eg_order15",
+        "question": "Nachdem ich _____ hatte, ging ich schlafen.",
+        "translation": "(After I had eaten, I went to sleep)",
+        "options": [
+          "gegessen",
+          "essen",
+          "hatte gegessen",
+          "gegessen hatte"
+        ],
+        "correct": "gegessen",
+        "explanation": "Subordinate clause with past perfect: auxiliary to end in subordinate clause. 'Nachdem ich gegessen hatte' places 'hatte' last. Perfect tenses in subordinate clauses stack: participle before auxiliary at end. Main clause 'ging ich schlafen' uses simple past. This sentence shows multiple German word order rules interacting. Subordinate: verb-final. Main: V2 with inversion after subordinate clause. Past perfect in subordinate: participle-auxiliary. Mastering these patterns takes practice but becomes natural."
+      }
+    ]
+  },
+  {
+    "key": "cases",
+    "name": "Cases",
+    "description": "Fälle",
+    "iconName": "square.3.layers.3d",
+    "color": "#fb923c",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "eg_case1",
+        "question": "_____ Mann ist hier.",
+        "translation": "(The man is here)",
+        "options": [
+          "Der",
+          "Den",
+          "Dem",
+          "Des"
+        ],
+        "correct": "Der",
+        "explanation": "Nominative case marks the subject. 'Der Mann' is subject of 'ist'. English 'the' doesn't change by function. German articles reflect grammatical role through case. Nominative is the base form: der/die/das. It answers 'wer?' (who?) or 'was?' (what?). Every sentence has a nominative subject (unless impersonal). Recognizing nominative is first step in German grammar. It's the foundation from which other cases deviate."
+      },
+      {
+        "id": "eg_case2",
+        "question": "Ich sehe _____ Mann.",
+        "translation": "(I see the man)",
+        "options": [
+          "den",
+          "der",
+          "dem",
+          "des"
+        ],
+        "correct": "den",
+        "explanation": "Accusative marks direct objects. 'Den Mann' receives the action of 'sehen'. English 'the' doesn't change. German masculine article changes: der→den. Feminine and neuter stay same (die, das). Accusative answers 'wen?' (whom?) or 'was?' (what?). Most transitive verbs take accusative objects. This case is fundamental for expressing who/what receives action. Memorizing masculine accusative 'den' is essential."
+      },
+      {
+        "id": "eg_case3",
+        "question": "Ich helfe _____ Mann.",
+        "translation": "(I help the man)",
+        "options": [
+          "dem",
+          "den",
+          "der",
+          "des"
+        ],
+        "correct": "dem",
+        "explanation": "Dative marks indirect objects. 'Dem Mann' is recipient of help. English uses word order or 'to'. German uses dative: der→dem, die→der, das→dem. Dative answers 'wem?' (to whom?). Certain verbs always take dative: helfen, danken, folgen, gehören. Learning dative verbs is crucial. They break the pattern of accusative direct objects. Dative shows relationships of benefit, possession, or involvement."
+      },
+      {
+        "id": "eg_case4",
+        "question": "Das ist das Buch _____ Mannes.",
+        "translation": "(That is the book of the man/the man's book)",
+        "options": [
+          "des",
+          "dem",
+          "den",
+          "der"
+        ],
+        "correct": "des",
+        "explanation": "Genitive marks possession. 'Des Mannes' means 'of the man'. English uses 's or 'of'. German uses genitive: der→des, die→der, das→des. Masculine/neuter nouns often add -s/-es. Genitive answers 'wessen?' (whose?). While declining in casual speech (replaced by 'von'+dative), genitive remains standard in writing. It adds formality and precision. Understanding genitive helps read literature and formal texts."
+      },
+      {
+        "id": "eg_case5",
+        "question": "Ich gebe _____ Frau das Buch.",
+        "translation": "(I give the woman the book)",
+        "options": [
+          "der",
+          "die",
+          "den",
+          "des"
+        ],
+        "correct": "der",
+        "explanation": "Feminine dative is 'der'. 'Der Frau' is indirect object. Die→der in dative. This change can confuse because 'der' is also masculine nominative. Context clarifies: after 'geben', indirect object needs dative. 'Das Buch' is accusative direct object. German allows both objects in one sentence elegantly. Case endings make grammatical relationships clear regardless of word order."
+      },
+      {
+        "id": "eg_case6",
+        "question": "Ich kaufe _____ Auto.",
+        "translation": "(I buy a car)",
+        "options": [
+          "ein",
+          "einen",
+          "einem",
+          "eines"
+        ],
+        "correct": "ein",
+        "explanation": "Neuter accusative stays 'ein'. Unlike masculine (ein→einen), neuter indefinite doesn't change in accusative. 'Ein Auto' looks same as nominative. This simplification helps - one less form to memorize. Only masculine articles change in accusative. Feminine and neuter remain stable. This pattern reduces cognitive load once recognized."
+      },
+      {
+        "id": "eg_case7",
+        "question": "Das gehört _____ Kind.",
+        "translation": "(That belongs to the child)",
+        "options": [
+          "dem",
+          "das",
+          "den",
+          "des"
+        ],
+        "correct": "dem",
+        "explanation": "'Gehören' takes dative. 'Dem Kind' shows neuter dative. Das→dem in dative. Belonging expresses relationship best shown through dative. The case of possession/involvement. 'Gehören' is always dative - memorize this with the verb. Certain verbs have case requirements that don't follow logical patterns. These must be learned as properties of individual verbs."
+      },
+      {
+        "id": "eg_case8",
+        "question": "Ich sehe _____ Kinder.",
+        "translation": "(I see the children)",
+        "options": [
+          "die",
+          "den",
+          "der",
+          "des"
+        ],
+        "correct": "die",
+        "explanation": "Plural accusative is 'die' for all genders. 'Die Kinder' is plural accusative. Same as nominative plural. German simplifies in plural - articles don't change between nominative and accusative. Only dative plural adds -n to article (den Kindern). This consistency in plural is relief after tracking gender changes in singular. Plural 'die' is universal for nominative and accusative."
+      },
+      {
+        "id": "eg_case9",
+        "question": "Ich danke _____ Lehrerin.",
+        "translation": "(I thank the teacher - female)",
+        "options": [
+          "der",
+          "die",
+          "dem",
+          "des"
+        ],
+        "correct": "der",
+        "explanation": "'Danken' takes dative. 'Der Lehrerin' is feminine dative. Die→der for dative. Thanking someone expresses relationship shown through dative. English 'thank you' uses accusative logic, German 'danken' requires dative. These verb-case requirements must be memorized. They're not always intuitive but become automatic with exposure. Dative verbs are finite list worth learning."
+      },
+      {
+        "id": "eg_case10",
+        "question": "Das ist der Hund _____ Nachbarn.",
+        "translation": "(That is the neighbor's dog)",
+        "options": [
+          "des",
+          "dem",
+          "den",
+          "der"
+        ],
+        "correct": "des",
+        "explanation": "Genitive shows possession. 'Des Nachbarn' means 'of the neighbor'. Masculine genitive des + noun often adds -n or -en. 'Nachbar' becomes 'Nachbarn' in genitive. This noun ending with case is distinctive German feature. Not just articles decline - nouns do too, especially in genitive/dative. Genitive adds -s/-es to most masculines/neuters, sometimes -n/-en. These endings reinforce the possessive relationship."
+      },
+      {
+        "id": "eg_case11",
+        "question": "Ich schreibe _____ Brief.",
+        "translation": "(I write a letter)",
+        "options": [
+          "einen",
+          "ein",
+          "einem",
+          "eines"
+        ],
+        "correct": "einen",
+        "explanation": "Masculine accusative indefinite is 'einen'. 'Einen Brief' is direct object. Ein→einen for masculine accusative. This is the key masculine accusative marker. Brief is masculine (der Brief), so accusative needs 'einen'. Gender determines which articles change in accusative. Only masculine transforms. This pattern must become automatic for correct German."
+      },
+      {
+        "id": "eg_case12",
+        "question": "Das ist das Zimmer _____ Mädchens.",
+        "translation": "(That is the girl's room)",
+        "options": [
+          "des",
+          "dem",
+          "das",
+          "der"
+        ],
+        "correct": "des",
+        "explanation": "Neuter genitive is 'des'. 'Des Mädchens' shows possession. Das→des + noun adds -s. 'Mädchen' is neuter despite meaning girl. Diminutives (-chen, -lein) are always neuter. Genitive construction shows whose room. Alternative: 'das Zimmer von dem Mädchen' (from+dative). Modern German often prefers this, but genitive remains standard in writing."
+      },
+      {
+        "id": "eg_case13",
+        "question": "Ich vertraue _____ Freund.",
+        "translation": "(I trust the friend)",
+        "options": [
+          "dem",
+          "den",
+          "der",
+          "des"
+        ],
+        "correct": "dem",
+        "explanation": "'Vertrauen' takes dative. 'Dem Freund' is masculine dative. Der→dem for dative. Trust expresses relationship shown through dative. These dative-only verbs must be learned. They include: helfen, danken, gefallen, gehören, folgen, vertrauen, glauben. The pattern: verbs of benefit, possession, or relationship often take dative. This makes semantic sense once internalized."
+      },
+      {
+        "id": "eg_case14",
+        "question": "Ich frage _____ Studentin.",
+        "translation": "(I ask the student - female)",
+        "options": [
+          "die",
+          "der",
+          "den",
+          "des"
+        ],
+        "correct": "die",
+        "explanation": "'Fragen' takes accusative. 'Die Studentin' is direct object. Feminine accusative stays 'die'. Same as nominative. Feminine articles simplify case learning - die stays die in nominative and accusative. Only in dative does it change (der). This stability helps. When you see feminine article unchanged, it's either nominative or accusative. Context determines which."
+      },
+      {
+        "id": "eg_case15",
+        "question": "Das ist das Ende _____ Films.",
+        "translation": "(That is the end of the film)",
+        "options": [
+          "des",
+          "dem",
+          "den",
+          "das"
+        ],
+        "correct": "des",
+        "explanation": "Genitive possession. 'Des Films' means 'of the film'. Masculine genitive des + -s on noun. 'Film' is masculine (der Film), genitive is 'des Films'. This construction is formal. Casual German might say 'das Ende vom Film' (from+dative). But genitive is proper German, especially in writing. Mastering it shows sophistication. It's worth learning for reading comprehension and formal communication."
+      }
+    ]
+  },
+  {
+    "key": "prepositions",
+    "name": "Prepositions",
+    "description": "Präpositionen",
+    "iconName": "mappin",
+    "color": "#22d3ee",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "eg_prep1",
+        "question": "Ich gehe _____ Kino.",
+        "translation": "(I go to the cinema)",
+        "options": [
+          "ins",
+          "im",
+          "in",
+          "in das"
+        ],
+        "correct": "ins",
+        "explanation": "Two-way preposition 'in' with accusative shows motion. 'Ins Kino' (in+das contracted) means 'to the cinema'. Accusative shows direction/goal. Two-way prepositions (in, an, auf, über, unter, vor, hinter, neben, zwischen) take accusative for motion toward, dative for location. This accusative/dative distinction is crucial. 'Ins' contracts 'in das'. Such contractions are mandatory in German, not optional like English."
+      },
+      {
+        "id": "eg_prep2",
+        "question": "Ich bin _____ Kino.",
+        "translation": "(I am at/in the cinema)",
+        "options": [
+          "im",
+          "ins",
+          "in",
+          "in dem"
+        ],
+        "correct": "im",
+        "explanation": "'In' with dative shows location. 'Im Kino' (in+dem contracted) means 'at the cinema'. Dative indicates where you are. Same preposition, different case, different meaning. This dative usage answers 'wo?' (where?). Motion uses accusative (wohin? - where to?), location uses dative (wo? - where?). This distinction parallels English 'to' vs 'at' but is more systematic in German."
+      },
+      {
+        "id": "eg_prep3",
+        "question": "Das Buch liegt _____ Tisch.",
+        "translation": "(The book is lying on the table)",
+        "options": [
+          "auf dem",
+          "auf den",
+          "auf der",
+          "auf das"
+        ],
+        "correct": "auf dem",
+        "explanation": "'Auf' with dative shows location. 'Auf dem Tisch' means 'on the table' (where it is). Der Tisch (masculine) becomes 'dem Tisch' in dative. The book's position is static, so dative. If you put the book onto the table (motion), you'd use accusative: 'Ich lege das Buch auf den Tisch'. This motion/location distinction is systematic across all two-way prepositions."
+      },
+      {
+        "id": "eg_prep4",
+        "question": "Ich fahre _____ Deutschland.",
+        "translation": "(I am driving to Germany)",
+        "options": [
+          "nach",
+          "zu",
+          "in",
+          "an"
+        ],
+        "correct": "nach",
+        "explanation": "'Nach' takes dative and means 'to' for countries/cities without articles. 'Nach Deutschland' is standard. Countries used without articles (most of them) use 'nach'. Countries with articles (die Schweiz, die Türkei, die USA) use 'in die': 'in die Schweiz'. Geographic prepositions have specific rules. 'Nach' also means 'after' in time contexts. The preposition's meaning comes from context."
+      },
+      {
+        "id": "eg_prep5",
+        "question": "Das Geschenk ist _____ dich.",
+        "translation": "(The gift is for you)",
+        "options": [
+          "für",
+          "zu",
+          "mit",
+          "von"
+        ],
+        "correct": "für",
+        "explanation": "'Für' takes accusative and means 'for'. 'Für dich' is for you (informal). Accusative pronouns: mich, dich, ihn, sie, es, uns, euch, sie/Sie. 'Für' always takes accusative, regardless of context. Accusative-only prepositions (durch, für, gegen, ohne, um, entlang) always require accusative. These must be memorized as a group. They're called accusative prepositions or 'durch-für-gegen' group."
+      },
+      {
+        "id": "eg_prep6",
+        "question": "Ich komme _____ der Arbeit.",
+        "translation": "(I come from work)",
+        "options": [
+          "von",
+          "aus",
+          "bei",
+          "nach"
+        ],
+        "correct": "von",
+        "explanation": "'Von' takes dative and means 'from'. 'Von der Arbeit' means from work. Die Arbeit (feminine) becomes 'der Arbeit' in dative. 'Von' indicates origin or source. Dative-only prepositions (aus, bei, mit, nach, seit, von, zu, gegenüber) always require dative. These form the 'aus-bei-mit' group. Memorizing them as a set helps. They're fundamental prepositions used constantly."
+      },
+      {
+        "id": "eg_prep7",
+        "question": "Ich wohne _____ meinen Eltern.",
+        "translation": "(I live with my parents)",
+        "options": [
+          "bei",
+          "mit",
+          "von",
+          "zu"
+        ],
+        "correct": "bei",
+        "explanation": "'Bei' takes dative and means 'at/with' (location near someone). 'Bei meinen Eltern' means at my parents' place. 'Mit' also means 'with' but for accompaniment: 'Ich gehe mit meinen Eltern' (I go with my parents). 'Bei' is for location, 'mit' for accompaniment. This distinction is important. Both take dative but serve different functions. Context determines which preposition fits."
+      },
+      {
+        "id": "eg_prep8",
+        "question": "Das Bild hängt _____ Wand.",
+        "translation": "(The picture hangs on the wall)",
+        "options": [
+          "an der",
+          "an die",
+          "auf der",
+          "auf die"
+        ],
+        "correct": "an der",
+        "explanation": "'An' with dative shows location on vertical surface. 'An der Wand' means on the wall (where it is). Die Wand (feminine) becomes 'der Wand' in dative. Walls are vertical, so 'an' not 'auf'. 'Auf' is for horizontal surfaces. This verticality distinction is consistent in German. Pictures hang AN walls, books lie AUF tables. The preposition encodes spatial relationships precisely."
+      },
+      {
+        "id": "eg_prep9",
+        "question": "Ich gehe _____ Freund.",
+        "translation": "(I go to my friend)",
+        "options": [
+          "zu meinem",
+          "nach meinem",
+          "bei meinem",
+          "von meinem"
+        ],
+        "correct": "zu meinem",
+        "explanation": "'Zu' takes dative and means 'to' for people/specific places. 'Zu meinem Freund' means to my friend's place. Mein Freund (masculine) becomes 'meinem Freund' in dative after 'zu'. 'Zu' is for destinations involving people or specific establishments. 'Zum Arzt' (to the doctor), 'zur Schule' (to school). 'Nach' is for cities/countries, 'zu' for people/places. This distinction must be learned."
+      },
+      {
+        "id": "eg_prep10",
+        "question": "Ich komme _____ Italien.",
+        "translation": "(I come from Italy)",
+        "options": [
+          "aus",
+          "von",
+          "bei",
+          "nach"
+        ],
+        "correct": "aus",
+        "explanation": "'Aus' takes dative and means 'from' for inside/countries. 'Aus Italien' means from Italy. Use 'aus' for origin from inside something or from countries. 'Von' is from a source/person. 'Aus' is from within or geographic origin. 'Ich komme aus Deutschland' (from Germany), 'Ich komme vom Markt' (from the market). The distinction: aus for inside/origin, von for from a place/person. Both take dative."
+      },
+      {
+        "id": "eg_prep11",
+        "question": "Wir fahren _____ die Stadt.",
+        "translation": "(We drive through the city)",
+        "options": [
+          "durch",
+          "über",
+          "um",
+          "gegen"
+        ],
+        "correct": "durch",
+        "explanation": "'Durch' takes accusative and means 'through'. 'Durch die Stadt' means through the city. Die Stadt (feminine) stays 'die' in accusative. 'Durch' always uses accusative. Movement through something uses 'durch'. This preposition is straightforward - through in English, durch in German, both conceptually similar. Accusative marks the space traversed."
+      },
+      {
+        "id": "eg_prep12",
+        "question": "Das Café ist _____ Bahnhof.",
+        "translation": "(The café is opposite the train station)",
+        "options": [
+          "gegenüber dem",
+          "gegenüber den",
+          "gegen dem",
+          "gegen den"
+        ],
+        "correct": "gegenüber dem",
+        "explanation": "'Gegenüber' takes dative and means 'opposite'. 'Gegenüber dem Bahnhof' means opposite the station. Der Bahnhof (masculine) becomes 'dem Bahnhof' in dative. 'Gegenüber' can come before or after its object: 'dem Bahnhof gegenüber' is also correct. This flexibility is unusual - most prepositions strictly precede objects. 'Gegenüber' is unique in its positioning options."
+      },
+      {
+        "id": "eg_prep13",
+        "question": "Ich lerne Deutsch _____ drei Jahren.",
+        "translation": "(I have been learning German for three years)",
+        "options": [
+          "seit",
+          "vor",
+          "für",
+          "in"
+        ],
+        "correct": "seit",
+        "explanation": "'Seit' takes dative and means 'since/for' with time. 'Seit drei Jahren' means for three years (ongoing). English uses present perfect, German uses present tense with 'seit'. This is a key difference. 'Ich lerne seit drei Jahren' (I have been learning for three years). 'Seit' indicates duration from past into present. It takes dative always. Time expressions with 'seit' are very common."
+      },
+      {
+        "id": "eg_prep14",
+        "question": "Die Katze schläft _____ Sofa.",
+        "translation": "(The cat sleeps under the sofa)",
+        "options": [
+          "unter dem",
+          "unter das",
+          "auf dem",
+          "auf das"
+        ],
+        "correct": "unter dem",
+        "explanation": "'Unter' with dative shows location. 'Unter dem Sofa' means under the sofa (where it is). Das Sofa (neuter) becomes 'dem Sofa' in dative. Static location uses dative. If the cat crawls under (motion), you'd use accusative: 'Die Katze kriecht unter das Sofa'. This two-way preposition pattern repeats. Motion toward = accusative, location = dative. Systematic and logical."
+      },
+      {
+        "id": "eg_prep15",
+        "question": "Ich bin _____ achte Uhr hier.",
+        "translation": "(I am here until eight o'clock)",
+        "options": [
+          "bis",
+          "seit",
+          "um",
+          "nach"
+        ],
+        "correct": "bis",
+        "explanation": "'Bis' means 'until/to'. 'Bis acht Uhr' (until eight). 'Bis' typically doesn't show case because it often merges with another preposition: 'bis zum Bahnhof' (until/to the station). Here 'zu' + 'dem' contracts to 'zum', showing dative. 'Bis' alone with time expressions doesn't require article. Time prepositions have special rules. 'Bis' marks temporal endpoint. It's essential for expressing duration limits."
+      }
+    ]
+  }
+]
