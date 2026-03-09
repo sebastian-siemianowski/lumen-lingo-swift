@@ -19,9 +19,9 @@ struct JourneyView: View {
     private var profile: UserProfile? { profiles.first }
     private var isDark: Bool { colorScheme == .dark }
 
-    private var randomQuote: WisdomQuote {
-        WisdomQuote.allQuotes.randomElement() ?? WisdomQuote.allQuotes[0]
-    }
+    @State private var currentQuote: WisdomQuote = WisdomQuote.allQuotes.randomElement() ?? WisdomQuote.allQuotes[0]
+    @State private var shownQuoteIndices: Set<Int> = []
+    @State private var quoteOpacity: Double = 1.0
 
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -361,18 +361,55 @@ struct JourneyView: View {
                 .font(.title2)
                 .foregroundStyle(isDark ? .white.opacity(0.3) : .caribbeanMist)
 
-            Text(randomQuote.text)
+            Text(currentQuote.text)
                 .font(.subheadline)
                 .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanInk)
                 .italic()
                 .multilineTextAlignment(.center)
 
-            Text("— \(randomQuote.author)")
+            Text("— \(currentQuote.author)")
                 .font(.caption)
                 .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
         }
+        .opacity(quoteOpacity)
         .padding(20)
         .background(GlassCardBackground())
+        .onTapGesture { cycleQuote() }
+    }
+
+    private func cycleQuote() {
+        let allQuotes = WisdomQuote.allQuotes
+        guard allQuotes.count > 1 else { return }
+
+        // Mark current quote index as shown
+        if let currentIdx = allQuotes.firstIndex(where: { $0.text == currentQuote.text }) {
+            shownQuoteIndices.insert(currentIdx)
+        }
+
+        // If all shown, reset the cycle
+        if shownQuoteIndices.count >= allQuotes.count {
+            shownQuoteIndices.removeAll()
+            // Keep current one marked so we don't immediately repeat it
+            if let currentIdx = allQuotes.firstIndex(where: { $0.text == currentQuote.text }) {
+                shownQuoteIndices.insert(currentIdx)
+            }
+        }
+
+        // Pick a random unseen quote
+        let available = allQuotes.indices.filter { !shownQuoteIndices.contains($0) }
+        guard let nextIdx = available.randomElement() else { return }
+
+        // Animate out, swap, animate in
+        withAnimation(.easeOut(duration: 0.15)) {
+            quoteOpacity = 0
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+            currentQuote = allQuotes[nextIdx]
+            withAnimation(.easeIn(duration: 0.2)) {
+                quoteOpacity = 1
+            }
+        }
+        HapticsService.light()
     }
 
     private func gameTypeIcon(_ type: GameType) -> String {
