@@ -421,17 +421,17 @@ enum BreathingOrbScheme: String, CaseIterable, Identifiable {
     var description: String {
         switch self {
         case .barcelonaNights:
-            return "Twilight breathes Gaudí's forms, woven from mosaic, Mediterranean mystery."
+            return "Twilight breathes Gaudí's forms, woven from mosaic mystery"
         case .shanghaiShimmeringNexus:
-            return "A port where starlight docks, reflecting cosmic wonders in its depths"
+            return "Starlight docks at the port, reflecting cosmic wonders"
         case .tokyoSunset:
-            return "Mono no aware sunset, cherry-hued clouds dissolve, city's neon pulse awakens."
+            return "Cherry-hued clouds dissolve as the city's neon pulse awakens"
         case .newYorkMysticalGardens:
-            return "Skyline's tender kiss to emerald depths; New York's unmatched allure, love at first glance."
+            return "Skyline kisses emerald depths in unmatched urban allure"
         case .parisEclatNocturne:
-            return "Otherworldly brilliance descends nightly, where dreams entwine with light-coded verses falling like rain."
+            return "Brilliance descends nightly, dreams entwine with coded light"
         case .krakowLuminescence:
-            return "Ancient stones glow sapphire, echoing Wawel's dragon and royal legends. Serenity awaits kissed by spiritual light, sacred past"
+            return "Ancient stones glow sapphire, echoing royal legends"
         }
     }
 

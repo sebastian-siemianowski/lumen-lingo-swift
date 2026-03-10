@@ -44,6 +44,15 @@ struct SchemeCardView: View {
                 // Name + description
                 infoSection
             }
+            .background(
+                // Fill behind entire card to prevent corner color gaps
+                RoundedRectangle(cornerRadius: 18, style: .continuous)
+                    .fill(
+                        isDark
+                            ? Color(red: 25/255, green: 20/255, blue: 45/255)
+                            : Color(red: 240/255, green: 238/255, blue: 248/255)
+                    )
+            )
             .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
             .overlay(
                 RoundedRectangle(cornerRadius: 18, style: .continuous)
@@ -159,28 +168,30 @@ struct SchemeCardView: View {
     // MARK: - Info Section
 
     private var infoSection: some View {
-        VStack(spacing: 4) {
+        VStack(spacing: 3) {
             Text(name)
-                .font(.system(size: 13, weight: .bold))
+                .font(.system(size: 12, weight: .bold))
                 .foregroundStyle(isSelected
                     ? (isDark ? .white : .caribbeanInk)
                     : (isDark ? .white.opacity(0.7) : .caribbeanMist)
                 )
                 // Neon glow on selected name
                 .shadow(color: isSelected && isDark ? .purple.opacity(0.5) : .clear, radius: 4)
-                .lineLimit(1)
+                .lineLimit(2)
+                .minimumScaleFactor(0.85)
+                .multilineTextAlignment(.center)
 
             if !description.isEmpty {
                 Text(description)
                     .font(.system(size: 10))
                     .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
-                    .lineLimit(2)
+                    .lineLimit(4)
                     .multilineTextAlignment(.center)
             }
         }
-        .padding(.horizontal, 8)
-        .padding(.vertical, 10)
-        .frame(maxWidth: .infinity)
+        .padding(.horizontal, 10)
+        .padding(.vertical, 12)
+        .frame(maxWidth: .infinity, minHeight: 100, alignment: .top)
         .background {
             // Solid fill replacing ultraThinMaterial for performance
             Rectangle()
