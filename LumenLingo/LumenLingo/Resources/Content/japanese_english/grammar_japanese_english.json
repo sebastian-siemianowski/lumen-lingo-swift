@@ -1228,5 +1228,210 @@
         "explanation": "Must は規則遵守の義務を表します。You must follow the rules = ルールに従わなければなりません。Mustn't（〜してはいけない＝禁止）と don't have to（〜しなくてよい＝任意）の違いは重要：You mustn't run here.（走ってはいけない）vs You don't have to run.（走らなくてもよい）。日本語の「〜てはいけない」は mustn't、「〜なくてもいい」は don't have to に対応します。"
       }
     ]
+  },
+  {
+    "key": "present_perfect",
+    "name": "Present Perfect",
+    "description": "英語の現在完了形",
+    "iconName": "checkmark.circle",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_pp1",
+        "question": "I _____ to Paris three times.",
+        "translation": "(私はパリに3回行ったことがあります。)",
+        "options": [
+          "have been",
+          "was",
+          "went",
+          "am going"
+        ],
+        "correct": "have been",
+        "explanation": "現在完了形（have/has + 過去分詞）は経験を表します。「I have been to Paris」＝パリに行った経験がある。日本語の「〜したことがある」に対応します。過去形「I went to Paris」は特定の時点の出来事を述べるだけですが、現在完了は「今までの人生で」という視点です。時点を示す語（yesterday, last yearなど）がなければ現在完了を使います。"
+      },
+      {
+        "id": "je_pp2",
+        "question": "She _____ already _____ lunch.",
+        "translation": "(彼女はもう昼食を食べました。)",
+        "options": [
+          "has / eaten",
+          "did / eat",
+          "is / eating",
+          "was / eating"
+        ],
+        "correct": "has / eaten",
+        "explanation": "「already」（もう・すでに）は現在完了形と一緒に使います。「She has already eaten」＝もう食べ終わった（今の状態に影響）。語順：has + already + 過去分詞。日本語では「もう〜した」と過去形的に訳しますが、英語では現在完了で表します。「eat」の活用：eat → ate → eaten（不規則動詞）。"
+      },
+      {
+        "id": "je_pp3",
+        "question": "We _____ never _____ snow.",
+        "translation": "(私たちは雪を見たことがありません。)",
+        "options": [
+          "have / seen",
+          "did / see",
+          "do / see",
+          "are / seeing"
+        ],
+        "correct": "have / seen",
+        "explanation": "「never」（一度も〜ない）＋現在完了形で、経験の否定を表します。「We have never seen snow」＝人生で一度も雪を見たことがない。日本語の「〜したことがない」に対応。語順：have + never + 過去分詞（notは不要）。「see」の活用：see → saw → seen。neverはhaveと過去分詞の間に置きます。"
+      },
+      {
+        "id": "je_pp4",
+        "question": "_____ you ever _____ sushi in Japan?",
+        "translation": "(日本で寿司を食べたことがありますか？)",
+        "options": [
+          "Have / eaten",
+          "Did / eat",
+          "Do / eat",
+          "Are / eating"
+        ],
+        "correct": "Have / eaten",
+        "explanation": "経験を尋ねる疑問文：Have/Has + 主語 + ever + 過去分詞？「Have you ever eaten...?」＝今までに〜したことがありますか？「ever」は疑問文で「今までに」の意味。日本語の「〜したことがありますか」に対応。答え方：「Yes, I have.」/「No, I haven't.」（短い応答）。everは主語と過去分詞の間に置きます。"
+      },
+      {
+        "id": "je_pp5",
+        "question": "He _____ in Tokyo since 2020.",
+        "translation": "(彼は2020年から東京に住んでいます。)",
+        "options": [
+          "has lived",
+          "lived",
+          "lives",
+          "is living"
+        ],
+        "correct": "has lived",
+        "explanation": "「since」（〜以来）＋時点＝現在完了形。「He has lived in Tokyo since 2020」＝2020年から今まで住み続けている。重要：日本語では「住んでいます」と現在形ですが、英語では過去に始まり現在も続く動作は現在完了形です。「since」＝起点（2020年、Monday等）、「for」＝期間（3 years、5 months等）と区別しましょう。"
+      },
+      {
+        "id": "je_pp6",
+        "question": "They _____ friends for ten years.",
+        "translation": "(彼らは10年間友達です。)",
+        "options": [
+          "have been",
+          "are",
+          "were",
+          "had been"
+        ],
+        "correct": "have been",
+        "explanation": "「for」＋期間＝現在完了形（状態が続いている場合）。「They have been friends for ten years」＝10年間ずっと友達である。日本語では「10年間友達です」と現在形ですが、英語では「過去に始まり今も続く」ことを現在完了で表します。これは日本人が最もよく間違えるポイントの一つです。sinceは時点、forは期間を示します。"
+      },
+      {
+        "id": "je_pp7",
+        "question": "I _____ just _____ the door.",
+        "translation": "(私はちょうどドアを閉めたところです。)",
+        "options": [
+          "have / closed",
+          "did / close",
+          "am / closing",
+          "was / closing"
+        ],
+        "correct": "have / closed",
+        "explanation": "「just」（ちょうど・たった今）＝現在完了形で直前の完了を表します。「I have just closed the door」＝たった今閉めたところ。日本語の「〜したところだ」「〜したばかりだ」に対応。語順：have + just + 過去分詞。justはhaveと過去分詞の間に置きます。ごく最近の出来事を表し、その結果が今影響していることを示します。"
+      },
+      {
+        "id": "je_pp8",
+        "question": "The train _____ not _____ yet.",
+        "translation": "(電車はまだ到着していません。)",
+        "options": [
+          "has / arrived",
+          "did / arrive",
+          "does / arrive",
+          "is / arriving"
+        ],
+        "correct": "has / arrived",
+        "explanation": "「yet」（まだ・もう）は否定文・疑問文で現在完了と使います。否定：「hasn't arrived yet」＝まだ到着していない（が期待している）。疑問：「Has it arrived yet?」＝もう着いた？yetは文末に置きます。日本語の「まだ〜していない」に対応。否定文ではhave/has + not + 過去分詞 + yetの語順になります。"
+      },
+      {
+        "id": "je_pp9",
+        "question": "We _____ five meetings this week.",
+        "translation": "(今週は5回会議がありました。)",
+        "options": [
+          "have had",
+          "had",
+          "have",
+          "are having"
+        ],
+        "correct": "have had",
+        "explanation": "「this week」（今週）は未完了の期間→現在完了形。「We have had five meetings this week」＝今週ここまでで5回。today、this month、this yearなど、まだ終わっていない期間の出来事には現在完了を使います。比較：「We had five meetings last week」（先週＝完了した期間→過去形）。haveの活用：have → had → had。"
+      },
+      {
+        "id": "je_pp10",
+        "question": "I _____ my wallet. I can't find it.",
+        "translation": "(財布をなくしました。見つかりません。)",
+        "options": [
+          "have lost",
+          "lost",
+          "am losing",
+          "lose"
+        ],
+        "correct": "have lost",
+        "explanation": "過去の動作の結果が現在に影響＝現在完了形。「I have lost my wallet」＝なくした結果、今持っていない。現在完了の最も重要な用法：過去→現在の結果。「I lost my wallet yesterday」（過去形）は単なる過去の事実。日本語では両方「なくした」と言えますが、英語では今への影響があるかどうかで使い分けます。"
+      },
+      {
+        "id": "je_pp11",
+        "question": "How many books _____ you _____ this year?",
+        "translation": "(今年は何冊本を読みましたか？)",
+        "options": [
+          "have / read",
+          "did / read",
+          "do / read",
+          "are / reading"
+        ],
+        "correct": "have / read",
+        "explanation": "「How many + 名詞 + have you + 過去分詞？」で今までの累計を尋ねます。「How many books have you read this year?」＝今年ここまでで何冊？this yearはまだ終わっていない期間なので現在完了。readの過去分詞はreadと同じ形ですが、発音は/rɛd/です。比較：去年なら「did you read」（過去形）。"
+      },
+      {
+        "id": "je_pp12",
+        "question": "The price of gas _____ recently.",
+        "translation": "(最近ガソリンの価格が上がりました。)",
+        "options": [
+          "has increased",
+          "increased",
+          "increases",
+          "is increasing"
+        ],
+        "correct": "has increased",
+        "explanation": "「recently」（最近）は現在完了形とよく使います。「The price has increased recently」＝最近上がった（今もその影響がある）。「lately」（最近）も同様に現在完了を取ります。日本語では「最近〜した」と過去形的ですが、英語では近い過去で現在に関連がある場合、現在完了を使います。"
+      },
+      {
+        "id": "je_pp13",
+        "question": "I _____ this movie before. It's great.",
+        "translation": "(この映画は前に見たことがあります。素晴らしいです。)",
+        "options": [
+          "have seen",
+          "saw",
+          "see",
+          "am seeing"
+        ],
+        "correct": "have seen",
+        "explanation": "「before」（以前に）で経験を述べ、現在のコメントにつなげる用法。「I have seen this movie before」＝以前見たことがある→だから「素晴らしい」と今言える。経験＋現在の感想という組み合わせは現在完了の典型的な使い方です。日本語の「〜したことがある」に対応し、過去の経験が今の発言に関連しています。"
+      },
+      {
+        "id": "je_pp14",
+        "question": "How long _____ she _____ piano?",
+        "translation": "(彼女はどのくらいピアノを弾いていますか？)",
+        "options": [
+          "has / played",
+          "did / play",
+          "does / play",
+          "is / playing"
+        ],
+        "correct": "has / played",
+        "explanation": "「How long have/has + 主語 + 過去分詞？」＝どのくらいの期間〜していますか？「How long has she played piano?」＝始めてから今までどのくらい？答え：「For five years」（5年間）または「Since 2019」（2019年から）。日本語では「どのくらい弾いていますか」と現在形ですが、英語では過去から続く動作なので現在完了形です。"
+      },
+      {
+        "id": "je_pp15",
+        "question": "It's the most beautiful place I _____ ever _____.",
+        "translation": "(今まで訪れた中で最も美しい場所です。)",
+        "options": [
+          "have / visited",
+          "did / visit",
+          "am / visiting",
+          "was / visiting"
+        ],
+        "correct": "have / visited",
+        "explanation": "最上級＋現在完了＋ever：「the most beautiful place I have ever visited」＝今までの人生で訪れた中で最も美しい。定型パターン：the + 最上級 + 名詞 + 主語 + have/has + ever + 過去分詞。「ever」は「今までに」の意味で経験の全体を示します。日本語の「今まで〜した中で一番」に対応する英語の決まった表現です。"
+      }
+    ]
   }
 ]

@@ -1228,5 +1228,210 @@
         "explanation": "Przyimek 'в' (w) z miejscownikiem wyraża lokację wewnątrz. 'В лікарні' (w szpitalu). 'В' to wariant 'у' używany przed spółgłoskami. Reguła: po samogłosce 'у', po spółgłosce 'в' — dla eufon ii. Лікарня (szpital) w miejscowniku przyjmuje końcówkę -і. Jak polski 'w szpitalu'."
       }
     ]
+  },
+  {
+    "key": "verb_conjugation",
+    "name": "Koniugacja",
+    "description": "Odmiana czasowników w języku ukraińskim",
+    "iconName": "arrow.triangle.branch",
+    "color": "#60a5fa",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pu_vc1",
+        "question": "Я _____ каву щоранку. (Piję kawę każdego ranka.)",
+        "translation": "(Ja piję kawę każdego ranka.)",
+        "options": [
+          "п'ю",
+          "пити",
+          "п'єш",
+          "п'є"
+        ],
+        "correct": "п'ю",
+        "explanation": "Czasownik 'пити' (pić) w 1. osobie l. poj.: 'я п'ю' (ja piję). Odmiana: я п'ю, ти п'єш, він/вона п'є, ми п'ємо, ви п'єте, вони п'ють. Zauważ apostrof (') — w ukraińskim oznacza twardość spółgłoski przed jotowaną samogłoską. W polskim: piję, pijesz, pije... — wzorzec jest podobny (języki słowiańskie), ale końcówki się różnią. Ukraińskie '-ю' odpowiada polskiemu '-ję'."
+      },
+      {
+        "id": "pu_vc2",
+        "question": "Ти _____ українською? (Mówisz po ukraińsku?)",
+        "translation": "(Czy ty mówisz po ukraińsku?)",
+        "options": [
+          "розмовляєш",
+          "розмовляю",
+          "розмовляє",
+          "розмовляти"
+        ],
+        "correct": "розмовляєш",
+        "explanation": "Czasownik 'розмовляти' (rozmawiać/mówić) — I koniugacja. 'Ти розмовляєш' = ty mówisz. Końcówki I koniugacji: -ю, -єш, -є, -ємо, -єте, -ють. W polskim: 'rozmawiasz' — końcówka '-asz'. Ukraińskie '-єш' odpowiada polskiemu '-asz/-esz'. Oba języki tworzą pytanie intonacją (bez inwersji), więc 'Ти розмовляєш?' = Mówisz? — zupełnie jak w polskim."
+      },
+      {
+        "id": "pu_vc3",
+        "question": "Він _____ у лікарні. (On pracuje w szpitalu.)",
+        "translation": "(On pracuje w szpitalu.)",
+        "options": [
+          "працює",
+          "працюю",
+          "працюєш",
+          "працювати"
+        ],
+        "correct": "працює",
+        "explanation": "Czasownik 'працювати' (pracować) — 3. osoba l. poj.: 'він працює'. Końcówka '-є' dla 3. osoby I koniugacji. Porównaj z polskim: 'on pracuje' — forma prawie identyczna! To jeden z wielu przykładów bliskości polskiego i ukraińskiego. Rdzeń 'прац-' (ukr.) = 'pracuj-' (pol.). Ukraiński nie ma osobowego zaimka obowiązkowego — 'працює' samo może znaczyć 'on/ona pracuje'."
+      },
+      {
+        "id": "pu_vc4",
+        "question": "Ми _____ разом. (Uczymy się razem.)",
+        "translation": "(My uczymy się razem.)",
+        "options": [
+          "вчимося",
+          "вчимось",
+          "вчуся",
+          "вчиться"
+        ],
+        "correct": "вчимося",
+        "explanation": "Czasownik zwrotny 'вчитися' (uczyć się) — 'ми вчимося' = my uczymy się. W ukraińskim cząstka zwrotna '-ся'/'-сь' jest przyrostkiem (na końcu), tak jak w polskim 'się' jest oddzielnym słowem. Odmiana: я вчуся, ти вчишся, він вчиться, ми вчимося, ви вчитеся, вони вчаться. Po samogłosce często '-сь', po spółgłosce '-ся'. W polskim: uczę się, uczysz się... — 'się' jest osobnym wyrazem."
+      },
+      {
+        "id": "pu_vc5",
+        "question": "Вони _____ музику. (Oni słuchają muzyki.)",
+        "translation": "(Oni słuchają muzyki.)",
+        "options": [
+          "слухають",
+          "слухаю",
+          "слухає",
+          "слухати"
+        ],
+        "correct": "слухають",
+        "explanation": "Czasownik 'слухати' (słuchać) — 'вони слухають' = oni słuchają. Końcówka '-ють' dla 3. osoby l. mn. I koniugacji. Porównaj: polskie 'słuchają' — końcówka '-ają'. Rdzeń jest identyczny: 'слух-' = 'słuch-'. To I koniugacja (na -ати/-яти): końcówki z 'є' w pniu. Komentarz rządu: ukraiński 'слухати' wymaga dopełniacza 'музику' (biernik), tak jak polski 'słuchać muzyki' (dopełniacz)."
+      },
+      {
+        "id": "pu_vc6",
+        "question": "Я _____ цю книгу. (Lubię tę książkę.)",
+        "translation": "(Ja lubię tę książkę.)",
+        "options": [
+          "люблю",
+          "любиш",
+          "любить",
+          "любити"
+        ],
+        "correct": "люблю",
+        "explanation": "Czasownik 'любити' (lubić/kochać) — II koniugacja. 'Я люблю' = ja lubię. Odmiana II koniugacji: -лю, -иш, -ить, -имо, -ите, -лять. Uwaga na alternację: 'любити' → 'люблю' (б→бл w 1. os.) — to typowa zmiana w grupie spółgłoskowej. W polskim: 'lubię' (б→bi). Oba języki mają alternacje, ale wzorce różnią się. 'Цю книгу' = tę książkę — biernik żeński."
+      },
+      {
+        "id": "pu_vc7",
+        "question": "Ви _____ каву чи чай? (Pijacie kawę czy herbatę?)",
+        "translation": "(Czy wy pijecie kawę czy herbatę?)",
+        "options": [
+          "п'єте",
+          "п'єш",
+          "п'ємо",
+          "п'ють"
+        ],
+        "correct": "п'єте",
+        "explanation": "'Ви п'єте' = wy pijecie / pan(i) pije. 'Ви' w ukraińskim, jak polskie 'wy', pełni też funkcję formy grzecznościowej (jak 'Pan/Pani'). Końcówka '-єте' dla 2. os. l. mn. I koniugacji. W polskim: 'pijecie' (-cie). Pytanie z 'чи' (czy) — identyczna konstrukcja jak polskie 'czy... czy...'. 'Каву чи чай?' = kawę czy herbatę? — szyk i logika zdania są prawie identyczne."
+      },
+      {
+        "id": "pu_vc8",
+        "question": "Вона _____ дуже швидко. (Ona biegnie bardzo szybko.)",
+        "translation": "(Ona biegnie bardzo szybko.)",
+        "options": [
+          "біжить",
+          "бігти",
+          "біжу",
+          "біжиш"
+        ],
+        "correct": "біжить",
+        "explanation": "Czasownik 'бігти' (biec) — nieregularna odmiana. 'Вона біжить' = ona biegnie. Odmiana: я біжу, ти біжиш, він/вона біжить, ми біжимо, ви біжите, вони біжать. Alternacja г→ж (jak polskie g→ż: 'biegnę'→'bieżysz' w staropolskim). Rdzeń: ukr. 'біг-/біж-' = pol. 'bieg-/bież-'. Oba języki mają tę samą alternację spółgłoskową z prasłowiańskiego. 'Дуже' = bardzo (pol. 'duże' = inne znaczenie!)."
+      },
+      {
+        "id": "pu_vc9",
+        "question": "Я _____ листа бабусі. (Piszę list do babci.)",
+        "translation": "(Ja piszę list do babci.)",
+        "options": [
+          "пишу",
+          "писати",
+          "пишеш",
+          "пише"
+        ],
+        "correct": "пишу",
+        "explanation": "Czasownik 'писати' (pisać) — 'я пишу' = ja piszę. Alternacja с→ш w odmianie (jak polskie 'pisać'→'piszę'). Odmiana: я пишу, ти пишеш, він пише, ми пишемо, ви пишете, вони пишуть. Niemal identyczna z polską: piszę, piszesz, pisze, piszemy, piszecie, piszą. 'Бабуся' (babcia) = pol. 'babusia' — zdrobnienie typowe dla ukraińskiego. 'Бабусі' to celownik (komu?) = 'babci'."
+      },
+      {
+        "id": "pu_vc10",
+        "question": "Діти _____ у парку. (Dzieci bawią się w parku.)",
+        "translation": "(Dzieci bawią się w parku.)",
+        "options": [
+          "граються",
+          "граюся",
+          "грається",
+          "гратися"
+        ],
+        "correct": "граються",
+        "explanation": "Czasownik zwrotny 'гратися' (bawić się) — 'діти граються' = dzieci bawią się. 3. os. l. mn. + '-ся'. 'Діти' (dzieci) — porównaj polskie 'dzieci'. Odmiana: я граюся, ти граєшся, він грається, ми граємося, ви граєтеся, вони граються. Końcówka zwrotna '-ся'/'-сь' jest w ukraińskim nieodłączna od czasownika (przyrostek), w polskim 'się' jest ruchome ('bawią się' / 'się bawią')."
+      },
+      {
+        "id": "pu_vc11",
+        "question": "Ти _____ це? (Widzisz to?)",
+        "translation": "(Czy ty widzisz to?)",
+        "options": [
+          "бачиш",
+          "бачу",
+          "бачить",
+          "бачити"
+        ],
+        "correct": "бачиш",
+        "explanation": "Czasownik 'бачити' (widzieć) — II koniugacja. 'Ти бачиш' = ty widzisz. Końcówki II koniugacji: -у/-ю, -иш, -ить, -имо, -ите, -ать/-ять. Rdzeń 'бач-' nie ma bezpośredniego odpowiednika w polskim ('widzieć' to zupełnie inny rdzeń). To ważny przykład — mimo bliskości języków, niektóre podstawowe słowa się różnią. 'Це' = to (pol. 'це' nie istnieje, używamy 'to')."
+      },
+      {
+        "id": "pu_vc12",
+        "question": "Ми _____ піцу на вечерю. (Jemy pizzę na kolację.)",
+        "translation": "(My jemy pizzę na kolację.)",
+        "options": [
+          "їмо",
+          "їм",
+          "їсти",
+          "їси"
+        ],
+        "correct": "їмо",
+        "explanation": "Czasownik 'їсти' (jeść) — nieregularna odmiana. 'Ми їмо' = my jemy. Odmiana: я їм, ти їси, він їсть, ми їмо, ви їсте, вони їдять. Porównaj polskie: jem, jesz, je, jemy, jecie, jedzą. Rdzeń jest ten sam (prasłowiańskie *jěsti), ale formy się rozeszły. Uwaga na 'ї' — to specyficzna litera ukraińska, wymawiana jak /ji/. 'Вечеря' = kolacja (pol. 'wieczerza' — archaiczne)."
+      },
+      {
+        "id": "pu_vc13",
+        "question": "Він завжди _____ правду. (On zawsze mówi prawdę.)",
+        "translation": "(On zawsze mówi prawdę.)",
+        "options": [
+          "говорить",
+          "говорю",
+          "говориш",
+          "говорити"
+        ],
+        "correct": "говорить",
+        "explanation": "Czasownik 'говорити' (mówić) — II koniugacja. 'Він говорить' = on mówi. Odmiana: я говорю, ти говориш, він говорить, ми говоримо, ви говорите, вони говорять. Porównaj polskie 'mówić' — zupełnie inny rdzeń! Ale rosyjskie 'говорить' jest identyczne. To pokazuje, że ukraiński łączy cechy polskiego i rosyjskiego. 'Завжди' = zawsze (pol. 'zawsze') — tu rdzeń wspólny."
+      },
+      {
+        "id": "pu_vc14",
+        "question": "Вони _____ новий дім. (Oni budują nowy dom.)",
+        "translation": "(Oni budują nowy dom.)",
+        "options": [
+          "будують",
+          "будую",
+          "будує",
+          "будувати"
+        ],
+        "correct": "будують",
+        "explanation": "Czasownik 'будувати' (budować) — I koniugacja. 'Вони будують' = oni budują. Odmiana: я будую, ти будуєш, він будує, ми будуємо, ви будуєте, вони будують. Rdzeń 'буд-' = pol. 'bud-' (budować). Końcówki I koniugacji z 'у/є': -ую, -уєш, -ує, -уємо, -уєте, -ують. Porównaj polskie: buduję, budujesz... — wzorzec jest bardzo podobny. 'Дім' = dom (pol. 'dom') — prawie identyczne."
+      },
+      {
+        "id": "pu_vc15",
+        "question": "Я _____ тебе! (Kocham cię!)",
+        "translation": "(Ja kocham cię!)",
+        "options": [
+          "кохаю",
+          "кохаєш",
+          "кохає",
+          "кохати"
+        ],
+        "correct": "кохаю",
+        "explanation": "Czasownik 'кохати' (kochać) — I koniugacja. 'Я кохаю' = ja kocham. Rdzeń 'кох-' = pol. 'koch-' — identyczny! Odmiana: я кохаю, ти кохаєш, він кохає, ми кохаємо, ви кохаєте, вони кохають. Pol.: kocham, kochasz, kocha... — ta sama struktura. Różnica: ukraiński ma też 'любити' (lubić/kochać), a 'кохати' jest zarezerwowane dla miłości romantycznej. W polskim 'kochać' jest szersze znaczeniowo."
+      }
+    ]
   }
 ]

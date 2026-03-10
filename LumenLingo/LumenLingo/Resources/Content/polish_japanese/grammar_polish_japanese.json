@@ -1228,5 +1228,210 @@
         "explanation": "お使いになります podnosi działanie klienta używania czegoś. W handlu detalicznym i branżach usługowych ten pełen szacunku język jest standardem. Sprawia, że klienci czują się docenieni i mile widziani. Konsekwentne używanie honoryfikatywów w obsłudze klienta przyczynia się do japońskiej reputacji doskonałej obsługi. Językowy szacunek staje się behawioralnym szacunkiem."
       }
     ]
+  },
+  {
+    "key": "counting",
+    "name": "Liczebniki",
+    "description": "System liczenia w języku japońskim",
+    "iconName": "number",
+    "color": "#34d399",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_cnt1",
+        "question": "りんごが_____あります。(Są trzy jabłka.)",
+        "translation": "(Są trzy jabłka.)",
+        "options": [
+          "三つ",
+          "三個",
+          "三本",
+          "三枚"
+        ],
+        "correct": "三つ",
+        "explanation": "'三つ' (mittsu) = trzy (ogólny klasyfikator japoński). W japońskim nie można po prostu powiedzieć '三りんご' — trzeba użyć klasyfikatora. '〜つ' (tsu) to klasyfikator ogólny z japońskim systemem liczenia (hitotsu, futatsu, mittsu...). Działa dla większości przedmiotów bez specjalnego klasyfikatora. W polskim mówimy 'trzy jabłka' bez klasyfikatora. System '〜つ' działa tylko do 10 (とお). Powyżej 10 trzeba użyć konkretnego klasyfikatora."
+      },
+      {
+        "id": "pj_cnt2",
+        "question": "ペンが_____あります。(Jest pięć długopisów.)",
+        "translation": "(Jest pięć długopisów.)",
+        "options": [
+          "五本",
+          "五つ",
+          "五枚",
+          "五個"
+        ],
+        "correct": "五本",
+        "explanation": "'五本' (gohon) = pięć (sztuk długich, cienkich przedmiotów). Klasyfikator '本' (hon/bon/pon) używany jest do: długopisów, parasoli, butelek, drzew, filmów, połączeń telefonicznych. Wymowa zmienia się: 一本 (ippon), 二本 (nihon), 三本 (sanbon) — zmiany fonetyczne (rendaku i inne). W polskim mamy 'sztuk', ale nie jest obowiązkowe. W japońskim klasyfikator jest WYMAGANY w poprawnej mowie."
+      },
+      {
+        "id": "pj_cnt3",
+        "question": "猫が_____います。(Są dwa koty.)",
+        "translation": "(Są dwa koty.)",
+        "options": [
+          "二匹",
+          "二頭",
+          "二つ",
+          "二本"
+        ],
+        "correct": "二匹",
+        "explanation": "'二匹' (nihiki) = dwa (małe zwierzęta). Klasyfikator '匹' (hiki/biki/piki) służy do liczenia małych i średnich zwierząt: kotów, psów, owadów, ryb. Zmiany fonetyczne: 一匹 (ippiki), 二匹 (nihiki), 三匹 (sanbiki), 六匹 (roppiki). Duże zwierzęta (konie, słonie) używają '頭' (tō). W polskim liczymy 'dwa koty' bez rozróżniania rozmiaru zwierzęcia — japoński jest tu znacznie bardziej precyzyjny."
+      },
+      {
+        "id": "pj_cnt4",
+        "question": "紙が_____あります。(Jest dziesięć kartek papieru.)",
+        "translation": "(Jest dziesięć kartek papieru.)",
+        "options": [
+          "十枚",
+          "十本",
+          "十つ",
+          "十個"
+        ],
+        "correct": "十枚",
+        "explanation": "'十枚' (jūmai) = dziesięć (płaskich przedmiotów). Klasyfikator '枚' (mai) używany jest do: kartek, zdjęć, koszulek, talerzy, pizzy — wszystkiego płaskiego i cienkiego. Wymowa '枚' nie zmienia się fonetycznie (zawsze 'mai'), co czyni go jednym z łatwiejszych klasyfikatorów. W polskim: 'dziesięć kartek' — brak klasyfikatora. Klasyfikator '枚' jest jednym z pierwszych, których uczą się studenci japońskiego."
+      },
+      {
+        "id": "pj_cnt5",
+        "question": "水を_____ください。(Poproszę dwie szklanki wody.)",
+        "translation": "(Poproszę dwie [szklanki/kubki] wody.)",
+        "options": [
+          "二杯",
+          "二本",
+          "二個",
+          "二つ"
+        ],
+        "correct": "二杯",
+        "explanation": "'二杯' (nihai) = dwie (porcje napoju/naczynia). Klasyfikator '杯' (hai/bai/pai) służy do liczenia napojów w naczyniach: szklanki, kubki, miski. '一杯' (ippai), '二杯' (nihai), '三杯' (sanbai). '杯' (hai) to też kanji w słowie 'コーヒー一杯' = jedna kawa. W polskim: 'dwie szklanki' — rzeczownik pełni rolę klasyfikatora. W japońskim klasyfikator jest gramatycznie oddzielny od rzeczownika."
+      },
+      {
+        "id": "pj_cnt6",
+        "question": "人が_____います。(Jest czterech ludzi.)",
+        "translation": "(Jest czterech ludzi.)",
+        "options": [
+          "四人",
+          "四つ",
+          "四匹",
+          "四個"
+        ],
+        "correct": "四人",
+        "explanation": "'四人' (yonin) = czterech ludzi. Klasyfikator '人' (nin/ri) to specjalny klasyfikator do osób. UWAGA na wyjątki: '一人' = hitori (NIE 'ichinin'), '二人' = futari (NIE 'ninin'). Od trzech wzwyż regularnie: 三人 (sannin), 四人 (yonin), 五人 (gonin). '何人' (nannin) = ile osób? W polskim: 'czterech ludzi' / 'cztery osoby' — w japońskim zawsze '人' niezależnie od płci czy grupy."
+      },
+      {
+        "id": "pj_cnt7",
+        "question": "本を_____買いました。(Kupiłem trzy książki.)",
+        "translation": "(Kupiłem trzy książki.)",
+        "options": [
+          "三冊",
+          "三本",
+          "三枚",
+          "三つ"
+        ],
+        "correct": "三冊",
+        "explanation": "'三冊' (sansatsu) = trzy (książki/zeszyty). Klasyfikator '冊' (satsu) służy do tomów, książek, zeszytów, magazynów — przedmiotów oprawionych. Zmiany fonetyczne: 一冊 (issatsu), 二冊 (nisatsu), 三冊 (sansatsu). Uwaga: '本' (hon) to klasyfikator długich przedmiotów, NIE książek (mimo że kanji '本' oznacza też 'książkę'). To częsty błąd początkujących — trzeba użyć '冊', nie '本'."
+      },
+      {
+        "id": "pj_cnt8",
+        "question": "車が_____あります。(Jest sześć samochodów.)",
+        "translation": "(Jest sześć samochodów.)",
+        "options": [
+          "六台",
+          "六個",
+          "六本",
+          "六匹"
+        ],
+        "correct": "六台",
+        "explanation": "'六台' (rokudai) = sześć (maszyn/pojazdów). Klasyfikator '台' (dai) używany jest do: samochodów, komputerów, telewizorów, pralek — maszyn i urządzeń. '一台' (ichidai), '二台' (nidai), '三台' (sandai). W polskim: 'sześć samochodów' — bez klasyfikatora. Ciekawostka: rowery też liczą się przez '台', choć nie są maszynami. Motocykle naturalnie też używają '台'. System klasyfikatorów odzwierciedla kulturowe kategoryzowanie świata."
+      },
+      {
+        "id": "pj_cnt9",
+        "question": "_____月に日本に行きます。(Jadę do Japonii w lipcu.)",
+        "translation": "(Jadę do Japonii w siódmym miesiącu.)",
+        "options": [
+          "七",
+          "七つ",
+          "七本",
+          "七番"
+        ],
+        "correct": "七",
+        "explanation": "Miesiące w japońskim to po prostu numer + '月' (gatsu): 一月 (styczeń), 二月 (luty)... 七月 (shchigatsu) = lipiec. Nie ma klasyfikatora — sam numer. Porównaj: '七月' (shichigatsu) = lipiec (miesiąc) vs '七か月' (nanakagetsu) = siedem miesięcy (okres). W polskim miesiące mają własne nazwy, w japońskim są numerowane (jak w chińskim). Dni miesiąca mają specjalne odczytania do 10-go."
+      },
+      {
+        "id": "pj_cnt10",
+        "question": "教室に机が_____あります。(W klasie jest dwadzieścia biurek.)",
+        "translation": "(W klasie jest dwadzieścia biurek.)",
+        "options": [
+          "二十",
+          "二十個",
+          "二十つ",
+          "二十台"
+        ],
+        "correct": "二十",
+        "explanation": "Dla liczb powyżej 10 często pomija się klasyfikator w mowie potocznej, lub używa ogólnego. '二十' (nijū) = dwadzieścia. Biurka mogą używać '台' (dai) lub '脚' (kyaku), ale w potocznej mowie sam numer jest akceptowalny. System 〜つ działa tylko do 10 — powyżej trzeba znać konkretny klasyfikator lub użyć chińskiego systemu liczenia (ichi, ni, san...) bez klasyfikatora. W formalnym japońskim zawsze z klasyfikatorem."
+      },
+      {
+        "id": "pj_cnt11",
+        "question": "一_____にビールを飲みます。(Piję piwo raz dziennie.)",
+        "translation": "(Raz dziennie piję piwo.)",
+        "options": [
+          "日一回",
+          "回一日",
+          "日一度",
+          "度一日"
+        ],
+        "correct": "日一回",
+        "explanation": "'一日一回' (ichinichi ikkai) = raz dziennie. '回' (kai) to klasyfikator razy/częstotliwości: 一回 (ikkai) = raz, 二回 (nikai) = dwa razy, 三回 (sankai) = trzy razy. Alternatywa: '度' (do) — bardziej formalny: 一度 (ichido) = raz. Struktura: [okres] + [liczba + 回] + czasownik. W polskim: 'raz dziennie' — prostsza konstrukcja. '何回' (nankai) = ile razy?"
+      },
+      {
+        "id": "pj_cnt12",
+        "question": "ここから駅まで_____分かかります。(Stąd do stacji jest piętnaście minut.)",
+        "translation": "(Stąd do stacji zajmuje piętnaście minut.)",
+        "options": [
+          "十五",
+          "十五つ",
+          "十五個",
+          "十五本"
+        ],
+        "correct": "十五",
+        "explanation": "'十五分' (jūgofun) = piętnaście minut. '分' (fun/pun) to klasyfikator minut. Zmiany fonetyczne: 一分 (ippun), 二分 (nifun), 三分 (sanpun), 四分 (yonpun), 五分 (gofun), 六分 (roppun). Godziny: '時' (ji): 一時 (ichiji) = godzina 1:00. Sekundy: '秒' (byō). Struktura: ここから〜まで = stąd do... + [czas] + かかります = zajmuje. W polskim: 'piętnaście minut' — bez klasyfikatora."
+      },
+      {
+        "id": "pj_cnt13",
+        "question": "兄弟が_____います。(Mam dwóch braci.)",
+        "translation": "(Mam dwóch braci.)",
+        "options": [
+          "二人",
+          "二匹",
+          "二つ",
+          "二個"
+        ],
+        "correct": "二人",
+        "explanation": "'二人' (futari) = dwie osoby. Przypomnienie: '一人' (hitori) i '二人' (futari) to wyjątkowe odczytania japońskie. Od trzech: 三人 (sannin) — system chiński. '兄弟が二人います' = mam dwóch braci (dosłownie: bracia, dwóch, istnieją). Szyk: rzeczownik + が + klasyfikator + czasownik. W polskim: 'mam dwóch braci' — dopełnienie bliższe. W japońskim bardziej jak 'co do braci, dwóch jest'."
+      },
+      {
+        "id": "pj_cnt14",
+        "question": "切手を_____ください。(Poproszę pięć znaczków.)",
+        "translation": "(Poproszę pięć znaczków.)",
+        "options": [
+          "五枚",
+          "五個",
+          "五つ",
+          "五本"
+        ],
+        "correct": "五枚",
+        "explanation": "Znaczki (切手, kitte) są płaskie → klasyfikator '枚' (mai). '五枚' (gomai) = pięć sztuk (płaskich). Powtórzenie: '枚' używamy do: arkuszy papieru, znaczków, kart, zdjęć, koszulek, talerzy, naleśników — wszystkiego płaskiego. Struktura zakupowa: [rzecz]を[ilość]ください = poproszę [ilość] [rzeczy]. '〜ください' to grzeczna prośba. W polskim: 'poproszę pięć znaczków' — prostsza struktura."
+      },
+      {
+        "id": "pj_cnt15",
+        "question": "この部屋に窓が_____あります。(W tym pokoju są cztery okna.)",
+        "translation": "(W tym pokoju są cztery okna.)",
+        "options": [
+          "四つ",
+          "四枚",
+          "四個",
+          "四本"
+        ],
+        "correct": "四つ",
+        "explanation": "'四つ' (yottsu) = cztery (ogólny klasyfikator). Okna mogą być liczone przez '枚' (płaskie), ale '〜つ' jest powszechnie akceptowane w mowie codziennej. Przypomnienie systemu 〜つ: 一つ (hitotsu), 二つ (futatsu), 三つ (mittsu), 四つ (yottsu), 五つ (itsutsu), 六つ (muttsu), 七つ (nanatsu), 八つ (yattsu), 九つ (kokonotsu), 十 (tō). To oryginalne japońskie liczebniki — bezpieczny wybór gdy nie znasz konkretnego klasyfikatora."
+      }
+    ]
   }
 ]

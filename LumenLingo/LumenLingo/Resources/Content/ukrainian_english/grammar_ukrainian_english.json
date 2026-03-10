@@ -1228,5 +1228,210 @@
         "explanation": "Типова помилка: додавати 'to' після модальних дієслів. 'Can you to help' (неправильно), 'Can you help' (правильно). Після модальних (can, must, should, will, would, may, might) завжди інфінітив БЕЗ 'to'. Просто базова форма: can help, must go, should study. Українська використовує інфінітив 'можеш допомогти', але англійська без 'to' після модальних. Це правило послідовне для всіх модальних дієслів. Запам'ятайте: модальне + базова форма, без 'to'."
       }
     ]
+  },
+  {
+    "key": "present_perfect",
+    "name": "Present Perfect",
+    "description": "Теперішній завершений час в англійській мові",
+    "iconName": "checkmark.circle",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ue_pp1",
+        "question": "I _____ to Italy twice.",
+        "translation": "(Я був/була в Італії двічі.)",
+        "options": [
+          "have been",
+          "was",
+          "went",
+          "am going"
+        ],
+        "correct": "have been",
+        "explanation": "Present Perfect (have/has + Past Participle) використовується для досвіду без вказівки на конкретний час. 'I have been to Italy' = я маю досвід перебування в Італії. В українській мові ми б сказали 'я був в Італії' — простий минулий час. Але в англійській past simple та present perfect — це різні часи. Без вказівки на час (yesterday, last year) → present perfect."
+      },
+      {
+        "id": "ue_pp2",
+        "question": "She _____ already _____ dinner.",
+        "translation": "(Вона вже повечеряла.)",
+        "options": [
+          "has / had",
+          "did / have",
+          "is / having",
+          "was / having"
+        ],
+        "correct": "has / had",
+        "explanation": "'Already' (вже) вимагає present perfect. 'She has already had dinner' = вона вже повечеряла (і це впливає на зараз — наприклад, вона ситa). Порядок слів: has + already + past participle. В українській: 'вже повечеряла' — минулий час. В англійській 'already' сигналізує зв'язок з теперішнім моментом. 'Had' — це past participle від 'have' (have-had-had)."
+      },
+      {
+        "id": "ue_pp3",
+        "question": "We _____ never _____ Chinese food.",
+        "translation": "(Ми ніколи не пробували китайську їжу.)",
+        "options": [
+          "have / tried",
+          "did / try",
+          "do / try",
+          "are / trying"
+        ],
+        "correct": "have / tried",
+        "explanation": "'Never' (ніколи) + present perfect для заперечення досвіду. 'We have never tried' = ми ніколи не пробували (за все життя). В українській: 'ніколи не пробували' — подвійне заперечення (ніколи + не). В англійській лише одне заперечення: have + never + past participle (БЕЗ 'not'). Це типова помилка українців — додавати 'not' до 'never'. Неправильно: 'haven't never tried'."
+      },
+      {
+        "id": "ue_pp4",
+        "question": "_____ you ever _____ a dolphin?",
+        "translation": "(Ти коли-небудь бачив/бачила дельфіна?)",
+        "options": [
+          "Have / seen",
+          "Did / see",
+          "Do / see",
+          "Are / seeing"
+        ],
+        "correct": "Have / seen",
+        "explanation": "Питання про досвід: Have/Has + підмет + ever + past participle? 'Have you ever seen a dolphin?' = чи ти коли-небудь бачив дельфіна? 'Ever' у питаннях = коли-небудь. Коротка відповідь: 'Yes, I have' / 'No, I haven't'. 'Seen' — неправильне дієслово: see-saw-seen. В українській: 'Ти бачив дельфіна?' — простіша конструкція без аналога 'ever'."
+      },
+      {
+        "id": "ue_pp5",
+        "question": "He _____ here since September.",
+        "translation": "(Він живе тут з вересня.)",
+        "options": [
+          "has lived",
+          "lived",
+          "lives",
+          "is living"
+        ],
+        "correct": "has lived",
+        "explanation": "'Since' (з/від) + момент у часі = present perfect. 'He has lived here since September' = він живе тут з вересня (і досі). ПАСТКА для українців: в українській мові ми кажемо 'він живе тут з вересня' — ТЕПЕРІШНІЙ час! Але англійська вимагає present perfect, бо дія почалася в минулому і продовжується зараз. 'Since' = з (момент), 'for' = протягом (тривалість)."
+      },
+      {
+        "id": "ue_pp6",
+        "question": "They _____ married for 15 years.",
+        "translation": "(Вони одружені 15 років.)",
+        "options": [
+          "have been",
+          "are",
+          "were",
+          "had been"
+        ],
+        "correct": "have been",
+        "explanation": "'For' + тривалість = present perfect (якщо стан продовжується). 'They have been married for 15 years' = одружені вже 15 років (і досі). В українській: 'одружені 15 років' — теперішній час. Це одна з найтиповіших помилок українців — перекладати буквально і казати 'They are married for 15 years'. Правило: дія/стан почалася в минулому + досі тривати = present perfect."
+      },
+      {
+        "id": "ue_pp7",
+        "question": "I _____ just _____ the email.",
+        "translation": "(Я щойно відправив/ла лист.)",
+        "options": [
+          "have / sent",
+          "did / send",
+          "am / sending",
+          "was / sending"
+        ],
+        "correct": "have / sent",
+        "explanation": "'Just' (щойно) = present perfect для нещодавньої дії. 'I have just sent the email' = я щойно відправив. В українській: 'щойно відправив' — минулий час. В англійській: have + just + past participle. 'Just' стоїть між допоміжним дієсловом і past participle. 'Sent' — неправильне дієслово: send-sent-sent. Ця конструкція підкреслює, що дія сталася буквально тільки що."
+      },
+      {
+        "id": "ue_pp8",
+        "question": "He _____ not _____ the report yet.",
+        "translation": "(Він ще не закінчив звіт.)",
+        "options": [
+          "has / finished",
+          "did / finish",
+          "does / finish",
+          "is / finishing"
+        ],
+        "correct": "has / finished",
+        "explanation": "'Yet' (ще/вже) у заперечних і питальних реченнях = present perfect. Заперечення: 'hasn't finished yet' = ще не закінчив (але очікується). Питання: 'Has he finished yet?' = вже закінчив? 'Yet' стоїть наприкінці речення. В українській: 'ще не закінчив' — минулий час. Порядок: has/have + not + past participle + yet. Скорочення: hasn't = has not."
+      },
+      {
+        "id": "ue_pp9",
+        "question": "We _____ four exams this month.",
+        "translation": "(Цього місяця ми склали чотири іспити.)",
+        "options": [
+          "have passed",
+          "passed",
+          "pass",
+          "are passing"
+        ],
+        "correct": "have passed",
+        "explanation": "'This month' (цього місяця) = незавершений період → present perfect. 'We have passed four exams this month' = місяць ще не закінчився, і ми вже склали чотири. Маркери незавершених періодів: today, this week, this year, so far. АЛЕ: 'We passed four exams last month' (past simple) — 'last month' вже завершився. В українській: минулий час в обох випадках."
+      },
+      {
+        "id": "ue_pp10",
+        "question": "She _____ her phone. She can't call anyone.",
+        "translation": "(Вона загубила телефон. Не може нікому зателефонувати.)",
+        "options": [
+          "has lost",
+          "lost",
+          "is losing",
+          "loses"
+        ],
+        "correct": "has lost",
+        "explanation": "Минула дія з наслідком зараз = present perfect. 'She has lost her phone' = загубила і ДОСІ не має його (наслідок). Це основне вживання: минуле → результат у теперішньому. 'She lost her phone yesterday' (past simple) = просто факт із минулого. В українській: 'загубила' — однаковий час для обох ситуацій. Англійська розрізняє ці два випадки."
+      },
+      {
+        "id": "ue_pp11",
+        "question": "How many languages _____ you _____?",
+        "translation": "(Скільки мов ти вивчив/ла?)",
+        "options": [
+          "have / learned",
+          "did / learn",
+          "do / learn",
+          "are / learning"
+        ],
+        "correct": "have / learned",
+        "explanation": "'How many + іменник + have you + past participle?' для загальної кількості за все життя. 'How many languages have you learned?' = скільки мов ти вивчив за все життя? Порівняй: 'How many languages did you learn at school?' (past simple — конкретний період). Present perfect дивиться з минулого на зараз, past simple — на завершений момент у минулому."
+      },
+      {
+        "id": "ue_pp12",
+        "question": "Technology _____ a lot in recent years.",
+        "translation": "(Технології значно змінилися останніми роками.)",
+        "options": [
+          "has changed",
+          "changed",
+          "changes",
+          "is changing"
+        ],
+        "correct": "has changed",
+        "explanation": "'In recent years' (останніми роками) = present perfect, бо це нещодавнє минуле з впливом на зараз. 'Technology has changed' = технології змінилися (і ми бачимо це зараз). Зверніть увагу: 'technology' — однина в англійській (має has, не have), хоча в українській 'технології' — множина. Інші подібні маркери: recently, lately, in recent weeks."
+      },
+      {
+        "id": "ue_pp13",
+        "question": "I _____ this song before. I love it!",
+        "translation": "(Я чув/чула цю пісню раніше. Обожнюю її!)",
+        "options": [
+          "have heard",
+          "heard",
+          "hear",
+          "am hearing"
+        ],
+        "correct": "have heard",
+        "explanation": "Досвід + коментар у теперішньому = present perfect. 'I have heard this song before' + 'I love it' — минулий досвід пов'язаний із теперішньою думкою. 'Before' (раніше) часто вживається з present perfect для позначення попереднього досвіду. 'Heard' — неправильне дієслово: hear-heard-heard. В українській: 'чув раніше' — минулий час, без спеціального зв'язку з теперішнім."
+      },
+      {
+        "id": "ue_pp14",
+        "question": "How long _____ you _____ this car?",
+        "translation": "(Як довго ти маєш цю машину?)",
+        "options": [
+          "have / had",
+          "did / have",
+          "do / have",
+          "are / having"
+        ],
+        "correct": "have / had",
+        "explanation": "'How long have you...?' = як довго ти...? (дія продовжується). 'How long have you had this car?' = з якого часу ти маєш цю машину? Відповідь: 'For three years' або 'Since 2021'. УВАГА: в українській — 'Як довго ти МАЄШ?' — теперішній час! В англійській — present perfect, бо володіння почалося в минулому. 'Had' тут — past participle від 'have' (мати)."
+      },
+      {
+        "id": "ue_pp15",
+        "question": "It's the worst movie I _____ ever _____.",
+        "translation": "(Це найгірший фільм, який я коли-небудь бачив/ла.)",
+        "options": [
+          "have / watched",
+          "did / watch",
+          "am / watching",
+          "was / watching"
+        ],
+        "correct": "have / watched",
+        "explanation": "Найвищий ступінь + present perfect + 'ever': 'the worst movie I have ever watched' = найгірший фільм за весь мій досвід. Фіксований шаблон: the + найвищий ступінь + іменник + підмет + have/has + ever + past participle. 'Ever' тут = за все життя. В українській: 'найгірший, який бачив' — без спеціальної граматичної конструкції. Це один із найважливіших шаблонів present perfect."
+      }
+    ]
   }
 ]

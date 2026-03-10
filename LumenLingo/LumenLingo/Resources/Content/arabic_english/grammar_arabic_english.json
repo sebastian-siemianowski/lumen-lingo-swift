@@ -1228,5 +1228,210 @@
         "explanation": "'Should' للاقتراح والنصيحة. 'You should try this food' = يجب أن تجرب هذا الطعام. اقتراح ودي لتجربة شيء جديد. تجربة أطعمة جديدة تُوسع الآفاق الثقافية. كل طعام يحكي قصة ثقافته. الانفتاح على الجديد يُثري التجربة الإنسانية. النصيحة تأتي من رغبة مشاركة تجربة جيدة."
       }
     ]
+  },
+  {
+    "key": "present_perfect",
+    "name": "Present Perfect",
+    "description": "المضارع التام",
+    "iconName": "checkmark.circle",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ae_pp1",
+        "question": "I _____ to Paris twice.",
+        "translation": "(لقد ذهبت إلى باريس مرتين)",
+        "options": [
+          "have been",
+          "was",
+          "am going",
+          "went"
+        ],
+        "correct": "have been",
+        "explanation": "نستخدم المضارع التام (have/has + التصريف الثالث) للتجارب في الحياة دون تحديد متى حدثت. 'I have been to Paris' تعني أن لديك تجربة زيارة باريس في حياتك. في العربية نقول 'ذهبت إلى باريس' بالماضي، لكن الإنجليزية تميز بين الماضي البسيط (وقت محدد) والمضارع التام (تجربة عامة). كلمة 'twice' تدل على عدد المرات وليس الوقت."
+      },
+      {
+        "id": "ae_pp2",
+        "question": "She _____ her homework already.",
+        "translation": "(لقد أنهت واجبها بالفعل)",
+        "options": [
+          "has finished",
+          "finished",
+          "finishes",
+          "is finishing"
+        ],
+        "correct": "has finished",
+        "explanation": "'Already' كلمة مفتاحية للمضارع التام - تعني أن الفعل اكتمل قبل الوقت المتوقع. 'She has finished' = أنهت، والنتيجة مهمة الآن (الواجب مكتمل). في العربية نقول 'أنهت واجبها' مباشرة. الفرق: الإنجليزية تستخدم 'has' مع he/she/it و 'have' مع I/you/we/they. التصريف الثالث لـ finish هو finished (منتظم)."
+      },
+      {
+        "id": "ae_pp3",
+        "question": "We _____ never _____ sushi.",
+        "translation": "(لم نأكل السوشي أبداً)",
+        "options": [
+          "have / eaten",
+          "did / eat",
+          "are / eating",
+          "will / eat"
+        ],
+        "correct": "have / eaten",
+        "explanation": "'Never' تستخدم مع المضارع التام للتحدث عن تجربة لم تحدث أبداً في الحياة. 'We have never eaten sushi' = لم نجرب السوشي مطلقاً حتى الآن. ترتيب الكلمات: have + never + التصريف الثالث. 'Eaten' هو التصريف الثالث غير المنتظم لـ eat (eat-ate-eaten). العربية تستخدم 'لم' + المضارع المجزوم، الإنجليزية تستخدم have + never + past participle."
+      },
+      {
+        "id": "ae_pp4",
+        "question": "_____ you ever _____ a horse?",
+        "translation": "(هل ركبت حصاناً من قبل؟)",
+        "options": [
+          "Have / ridden",
+          "Did / ride",
+          "Are / riding",
+          "Do / ride"
+        ],
+        "correct": "Have / ridden",
+        "explanation": "لتكوين سؤال بالمضارع التام: Have/Has + الفاعل + ever + التصريف الثالث. 'Have you ever ridden?' = هل سبق لك أن ركبت؟ 'Ever' تعني 'في أي وقت في حياتك'. 'Ridden' هو التصريف الثالث لـ ride (ride-rode-ridden). هذا النمط شائع جداً في المحادثات لسؤال شخص عن تجاربه. في العربية نسأل 'هل ركبت...؟' بالماضي مباشرة."
+      },
+      {
+        "id": "ae_pp5",
+        "question": "He _____ here since 2020.",
+        "translation": "(هو يعيش هنا منذ 2020)",
+        "options": [
+          "has lived",
+          "lived",
+          "lives",
+          "is living"
+        ],
+        "correct": "has lived",
+        "explanation": "'Since' + نقطة زمنية محددة = المضارع التام. 'He has lived here since 2020' تعني أنه بدأ العيش هنا في 2020 ولا يزال. هذا فرق كبير عن العربية: الإنجليزية تستخدم المضارع التام لحالة بدأت في الماضي ومستمرة. العربية تستخدم المضارع: 'يعيش هنا منذ 2020'. 'Has lived' مع he/she/it (ليس 'have')."
+      },
+      {
+        "id": "ae_pp6",
+        "question": "They _____ in this city for ten years.",
+        "translation": "(يعيشون في هذه المدينة منذ عشر سنوات)",
+        "options": [
+          "have lived",
+          "lived",
+          "are living",
+          "live"
+        ],
+        "correct": "have lived",
+        "explanation": "'For' + مدة زمنية = المضارع التام عندما الفعل مستمر حتى الآن. 'For ten years' = لمدة عشر سنوات. الفرق: 'They lived here for ten years' (ماضي بسيط) = عاشوا وانتهوا. 'They have lived here for ten years' (مضارع تام) = بدأوا قبل عشر سنوات ولا يزالون. في العربية نستخدم 'منذ' لكلا الحالتين."
+      },
+      {
+        "id": "ae_pp7",
+        "question": "I _____ just _____ lunch.",
+        "translation": "(أكلت الغداء للتو)",
+        "options": [
+          "have / had",
+          "did / have",
+          "am / having",
+          "was / having"
+        ],
+        "correct": "have / had",
+        "explanation": "'Just' مع المضارع التام = حدث منذ لحظات قليلة. 'I have just had lunch' = أكلت الغداء الآن تقريباً. الترتيب: have + just + التصريف الثالث. 'Had' هنا التصريف الثالث لـ have بمعنى 'تناول'. هذا يعبر عن حدث حديث جداً مع تأثير على الحاضر. في العربية: 'للتو أكلت' - الإنجليزية تستخدم تركيباً خاصاً لهذا."
+      },
+      {
+        "id": "ae_pp8",
+        "question": "She _____ not _____ yet.",
+        "translation": "(لم تصل بعد)",
+        "options": [
+          "has / arrived",
+          "did / arrive",
+          "is / arriving",
+          "does / arrive"
+        ],
+        "correct": "has / arrived",
+        "explanation": "'Yet' في النفي = حتى الآن. 'She has not arrived yet' = لم تصل بعد (لكننا نتوقع وصولها). 'Yet' تأتي في نهاية الجملة المنفية أو السؤال. النفي: has/have + not + التصريف الثالث. يمكن اختصارها: hasn't arrived yet. الفرق عن العربية: 'لم تصل بعد' تستخدم الماضي المنفي، الإنجليزية تستخدم المضارع التام المنفي."
+      },
+      {
+        "id": "ae_pp9",
+        "question": "We _____ three books this month.",
+        "translation": "(قرأنا ثلاثة كتب هذا الشهر)",
+        "options": [
+          "have read",
+          "read",
+          "are reading",
+          "were reading"
+        ],
+        "correct": "have read",
+        "explanation": "'This month' = فترة لم تنته بعد، لذا نستخدم المضارع التام. 'We have read three books this month' = قرأنا ثلاثة كتب والشهر لم ينته بعد. كلمات مثل 'this week, this year, today' تشير لفترات مستمرة وتحتاج المضارع التام. 'Read' في التصريف الثالث تُنطق /red/ مثل الماضي. في العربية لا فرق في الزمن النحوي."
+      },
+      {
+        "id": "ae_pp10",
+        "question": "_____ he _____ the movie?",
+        "translation": "(هل شاهد الفيلم؟)",
+        "options": [
+          "Has / seen",
+          "Did / see",
+          "Is / seeing",
+          "Does / see"
+        ],
+        "correct": "Has / seen",
+        "explanation": "سؤال عن تجربة: Has + الفاعل + التصريف الثالث. 'Has he seen the movie?' = هل شاهد الفيلم (في أي وقت)؟ 'Seen' هو التصريف الثالث لـ see (see-saw-seen). بدون 'ever' السؤال يُفهم من السياق - إذا الفيلم جديد، السؤال عن مشاهدته مؤخراً. الإجابة: 'Yes, he has' أو 'No, he hasn't'. مقارنة: 'Did he see it?' = هل شاهده (وقت محدد)."
+      },
+      {
+        "id": "ae_pp11",
+        "question": "I _____ my keys. I can't find them.",
+        "translation": "(فقدت مفاتيحي. لا أجدها)",
+        "options": [
+          "have lost",
+          "lost",
+          "am losing",
+          "lose"
+        ],
+        "correct": "have lost",
+        "explanation": "المضارع التام للحدث الماضي ذي النتيجة الحالية: 'I have lost my keys' = فقدتها والنتيجة أنني لا أملكها الآن. هذا أهم استخدام: الربط بين الماضي والحاضر. 'I lost my keys' (ماضي بسيط) = مجرد حقيقة ماضية. 'I have lost' = الفقدان مؤثر الآن. في العربية الجملتان متطابقتان: 'فقدت مفاتيحي'."
+      },
+      {
+        "id": "ae_pp12",
+        "question": "The weather _____ a lot recently.",
+        "translation": "(تغير الطقس كثيراً مؤخراً)",
+        "options": [
+          "has changed",
+          "changed",
+          "changes",
+          "is changing"
+        ],
+        "correct": "has changed",
+        "explanation": "'Recently' = مؤخراً، كلمة مفتاحية للمضارع التام. 'The weather has changed recently' = حدث تغيير في الفترة الأخيرة ونرى نتائجه الآن. كلمات مشابهة: lately, in recent days, so far. كلها تربط الماضي القريب بالحاضر. 'Has changed' لأن weather مفرد (مثل he/she/it). في العربية: 'تغير الطقس مؤخراً' بصيغة واحدة."
+      },
+      {
+        "id": "ae_pp13",
+        "question": "She _____ to six different countries.",
+        "translation": "(سافرت إلى ستة بلدان مختلفة)",
+        "options": [
+          "has traveled",
+          "traveled",
+          "travels",
+          "is traveling"
+        ],
+        "correct": "has traveled",
+        "explanation": "تجربة حياتية بدون وقت محدد = المضارع التام. 'She has traveled to six countries' يصف إنجازاتها في الحياة حتى الآن. إذا أضفنا وقتاً: 'She traveled to Italy last year' (ماضي بسيط). القاعدة: مع when/yesterday/last year/in 2020 = ماضي بسيط. بدون وقت محدد = مضارع تام. 'Has traveled' مع she."
+      },
+      {
+        "id": "ae_pp14",
+        "question": "How long _____ you _____ English?",
+        "translation": "(منذ متى تتعلم الإنجليزية؟)",
+        "options": [
+          "have / studied",
+          "did / study",
+          "do / study",
+          "are / studying"
+        ],
+        "correct": "have / studied",
+        "explanation": "'How long have you...?' = منذ متى والفعل مستمر. 'How long have you studied English?' = كم مدة دراستك للإنجليزية (والدراسة مستمرة). هذا نمط شائع جداً مع 'for' و 'since' في الجواب: 'I have studied for three years' أو 'since 2023'. في العربية: 'منذ متى' + المضارع. الإنجليزية تستخدم المضارع التام لأن الفعل بدأ في الماضي ومستمر."
+      },
+      {
+        "id": "ae_pp15",
+        "question": "It is the best book I _____ ever _____.",
+        "translation": "(إنه أفضل كتاب قرأته على الإطلاق)",
+        "options": [
+          "have / read",
+          "did / read",
+          "am / reading",
+          "was / reading"
+        ],
+        "correct": "have / read",
+        "explanation": "مع أفعل التفضيل (the best, the most, the worst) نستخدم المضارع التام + ever. 'The best book I have ever read' = أفضل كتاب في تجربتي الكاملة. هذا النمط ثابت في الإنجليزية: the + صفة تفضيل + فاعل + have/has + ever + التصريف الثالث. 'Read' في التصريف الثالث تُنطق /red/. هذا التركيب لا مقابل له في العربية - نقول ببساطة 'أفضل كتاب قرأته'."
+      }
+    ]
   }
 ]

@@ -1228,5 +1228,210 @@
         "explanation": "'Comment ça va?' = Jak się masz? Najpopularniejsze pytanie francuskie. 'Ça va' to nieformalne 'to idzie'. Odpowiedź: 'Ça va bien' (dobrze) lub po prostu 'Ça va'. To rytuał społeczny - pokazanie troski o samopoczucie drugiej osoby."
       }
     ]
+  },
+  {
+    "key": "adjectives",
+    "name": "Przymiotniki",
+    "description": "Przymiotniki w języku francuskim",
+    "iconName": "paintbrush",
+    "color": "#a78bfa",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pf_adj1",
+        "question": "Elle est _____. (Ona jest wysoka.)",
+        "translation": "(Ona jest wysoka.)",
+        "options": [
+          "grande",
+          "grand",
+          "grands",
+          "grandes"
+        ],
+        "correct": "grande",
+        "explanation": "We francuskim przymiotniki odmieniają się przez rodzaj i liczbę. 'Grand' (wysoki) → 'grande' (wysoka, rodz. żeński). Reguła podstawowa: dodaj '-e' do formy męskiej, aby uzyskać żeńską. 'Elle est grande' = ona jest wysoka. 'Il est grand' = on jest wysoki. W polskim też odmieniamy przymiotniki (wysoki/wysoka), więc ta zasada jest intuicyjna. Uwaga: jeśli forma męska kończy się na '-e', żeńska jest identyczna."
+      },
+      {
+        "id": "pf_adj2",
+        "question": "C'est un _____ livre. (To jest dobra książka.)",
+        "translation": "(To jest dobra książka.)",
+        "options": [
+          "bon",
+          "bonne",
+          "bien",
+          "bons"
+        ],
+        "correct": "bon",
+        "explanation": "'Bon' (dobry) to przymiotnik stojący PRZED rzeczownikiem. 'Un bon livre' = dobra książka. Większość przymiotników francuskich stoi PO rzeczowniku (une voiture rouge = czerwony samochód), ale kilka krótkich i częstych stoi PRZED: bon (dobry), mauvais (zły), petit (mały), grand (duży), beau (piękny), joli (ładny), jeune (młody), vieux (stary), nouveau (nowy). W polskim przymiotnik zawsze przed rzeczownikiem — to duża różnica."
+      },
+      {
+        "id": "pf_adj3",
+        "question": "Les fleurs sont _____. (Kwiaty są piękne.)",
+        "translation": "(Kwiaty są piękne.)",
+        "options": [
+          "belles",
+          "beaux",
+          "beau",
+          "belle"
+        ],
+        "correct": "belles",
+        "explanation": "'Beau' (piękny) ma nieregularną odmianę: beau (m. poj.) → belle (ż. poj.) → beaux (m. mn.) → belles (ż. mn.). 'Les fleurs' (kwiaty) to rodzaj żeński liczby mnogiej → 'belles'. W polskim: piękny/piękna/piękne/piękni — też mamy odmianę, ale wzorce są inne. Bonus: przed samogłoską lub 'h' niemym: 'bel' (m. poj.): 'un bel homme' = przystojny mężczyzna."
+      },
+      {
+        "id": "pf_adj4",
+        "question": "Il porte une chemise _____. (On nosi niebieską koszulę.)",
+        "translation": "(On nosi niebieską koszulę.)",
+        "options": [
+          "bleue",
+          "bleu",
+          "bleus",
+          "bleues"
+        ],
+        "correct": "bleue",
+        "explanation": "Przymiotniki koloru stoją PO rzeczowniku: 'une chemise bleue' = koszula niebieska. 'Bleu' → 'bleue' (żeński: dodaj -e). W polskim: 'niebieska koszula' (przymiotnik PRZED). We francuskim kolory zawsze PO: voiture rouge (samochód czerwony), robe verte (sukienka zielona). WYJĄTEK: kolory pochodzące od rzeczowników nie odmieniają się: 'une robe orange' (nie 'orangée'), 'des chaussures marron' (nie 'marronnes')."
+      },
+      {
+        "id": "pf_adj5",
+        "question": "C'est un _____ homme. (To jest stary mężczyzna.)",
+        "translation": "(To jest stary mężczyzna.)",
+        "options": [
+          "vieil",
+          "vieux",
+          "vieille",
+          "vieilles"
+        ],
+        "correct": "vieil",
+        "explanation": "'Vieux' (stary) ma specjalną formę przed samogłoską lub 'h' niemym: 'vieil'. 'Un vieil homme' = stary mężczyzna (nie 'vieux homme'). Pełna odmiana: vieux (m. poj.) → vieil (m. poj. przed samogłoską) → vieille (ż. poj.) → vieux (m. mn.) → vieilles (ż. mn.). Podobnie: nouveau → nouvel, beau → bel. W polskim nie ma takiej zmiany przed samogłoską. To zjawisko fonetyczne typowe dla francuskiego."
+      },
+      {
+        "id": "pf_adj6",
+        "question": "Cette maison est très _____. (Ten dom jest bardzo duży.)",
+        "translation": "(Ten dom jest bardzo duży.)",
+        "options": [
+          "grande",
+          "grand",
+          "grands",
+          "grandes"
+        ],
+        "correct": "grande",
+        "explanation": "'Maison' (dom) jest rodzaju ŻEŃSKIEGO we francuskim! Dlatego 'grande' (nie 'grand'). To częsty błąd — rodzaj rzeczowników we francuskim i polskim nie zawsze się pokrywa. Dom w polskim = rodzaj męski, maison we francuskim = rodzaj żeński. Trzeba uczyć się rodzaju każdego rzeczownika. 'Cette' (ta) też wskazuje rodzaj żeński (ce/cet = m., cette = ż.). Przymiotnik ZAWSZE zgadza się z rzeczownikiem."
+      },
+      {
+        "id": "pf_adj7",
+        "question": "Mes parents sont _____. (Moi rodzice są szczęśliwi.)",
+        "translation": "(Moi rodzice są szczęśliwi.)",
+        "options": [
+          "heureux",
+          "heureuse",
+          "heureuses",
+          "heureux"
+        ],
+        "correct": "heureux",
+        "explanation": "'Heureux' (szczęśliwy) to przymiotnik, którego forma męska liczby pojedynczej i mnogiej jest identyczna: 'heureux'. Przymiotniki kończące się na '-x' nie zmieniają się w liczbie mnogiej męskiej. 'Parents' to rodzaj męski l. mn. → 'heureux'. Żeńska forma: 'heureuse' (poj.) / 'heureuses' (mn.): '-eux' → '-euse'. Inne przykłady: dangereux/dangereuse, sérieux/sérieuse. W polskim: szczęśliwy/szczęśliwi — też zmiana."
+      },
+      {
+        "id": "pf_adj8",
+        "question": "C'est une _____ idée. (To jest nowy pomysł.)",
+        "translation": "(To jest nowy pomysł.)",
+        "options": [
+          "nouvelle",
+          "nouveau",
+          "nouvel",
+          "nouveaux"
+        ],
+        "correct": "nouvelle",
+        "explanation": "'Idée' (pomysł/idea) jest rodzaju ŻEŃSKIEGO we francuskim → 'nouvelle' (nowa). 'Nouveau' (nowy) odmienia się jak 'beau': nouveau (m.) → nouvel (m. przed samogłoską) → nouvelle (ż.) → nouveaux (m. mn.) → nouvelles (ż. mn.). 'Une nouvelle idée' = nowy pomysł. W polskim 'pomysł' jest męski, ale fr. 'idée' jest żeński — znów niezgodność rodzajów. Przymiotnik 'nouveau' stoi PRZED rzeczownikiem."
+      },
+      {
+        "id": "pf_adj9",
+        "question": "Les enfants sont très _____. (Dzieci są bardzo małe.)",
+        "translation": "(Dzieci są bardzo małe.)",
+        "options": [
+          "petits",
+          "petit",
+          "petite",
+          "petites"
+        ],
+        "correct": "petits",
+        "explanation": "'Petit' (mały) → 'petits' (mali, m. mn.). 'Les enfants' (dzieci) = rodzaj męski l. mn. (mieszana grupa lub domyślnie męska). Reguła l. mn.: zazwyczaj dodaj '-s'. 'Très' (bardzo) stoi przed przymiotnikiem, jak po polsku. Istotna zasada francuska: gdy grupa zawiera choć jednego mężczyznę, cała grupa jest gramatycznie męska. W polskim jest podobnie: 'dzieci są małe' vs 'chłopcy są mali'."
+      },
+      {
+        "id": "pf_adj10",
+        "question": "Je suis _____ de te voir. (Cieszę się, że cię widzę.)",
+        "translation": "(Jestem szczęśliwy/a, że cię widzę.)",
+        "options": [
+          "content",
+          "contente",
+          "contents",
+          "contentes"
+        ],
+        "correct": "content",
+        "explanation": "'Content' (zadowolony) — tu domyślnie forma męska (mówiący = mężczyzna). Gdyby mówiła kobieta: 'Je suis contente'. We francuskim przymiotnik po 'être' (być) musi zgadzać się z podmiotem. W polskim tak samo: 'jestem zadowolony' (m.) / 'jestem zadowolona' (ż.). Wymowa: 'content' [kɔ̃tɑ̃] — końcowe '-t' jest nieme. 'Contente' [kɔ̃tɑ̃t] — '-te' jest wymawiane. Forma żeńska brzmi inaczej!"
+      },
+      {
+        "id": "pf_adj11",
+        "question": "C'est la _____ fois. (To jest pierwszy raz.)",
+        "translation": "(To jest pierwszy raz.)",
+        "options": [
+          "première",
+          "premier",
+          "premiers",
+          "premières"
+        ],
+        "correct": "première",
+        "explanation": "'Premier' (pierwszy) → 'première' (pierwsza). 'La fois' (raz/kolej) = rodzaj żeński → 'première'. Przymiotniki porządkowe we francuskim: premier/première, deuxième, troisième... Od drugiego wzwyż nie zmieniają formy dla rodzaju (dodaje się tylko '-s' w l. mn.). 'Premier/première' to wyjątek — ma odrębne formy. Stoi PRZED rzeczownikiem: 'la première fois', 'le premier jour'. W polskim: pierwszy/pierwsza — analogicznie."
+      },
+      {
+        "id": "pf_adj12",
+        "question": "Elle a les cheveux _____. (Ona ma długie włosy.)",
+        "translation": "(Ona ma długie włosy.)",
+        "options": [
+          "longs",
+          "long",
+          "longue",
+          "longues"
+        ],
+        "correct": "longs",
+        "explanation": "'Les cheveux' (włosy) = rodzaj MĘSKI, l. mn. → 'longs'. 'Long' (długi) → 'longue' (długa) → 'longs' (m. mn.) → 'longues' (ż. mn.). Ciekawostka: 'cheveux' jest męski we francuskim, choć w polskim 'włosy' nie mają wyraźnego rodzaju w l. mn. Wymowa: 'long' [lɔ̃] — 'g' jest nieme, 'longue' [lɔ̃g] — 'g' jest wymawiane. Forma żeńska 'odkrywa' spółgłoskę końcową."
+      },
+      {
+        "id": "pf_adj13",
+        "question": "Ce film est vraiment _____. (Ten film jest naprawdę nudny.)",
+        "translation": "(Ten film jest naprawdę nudny.)",
+        "options": [
+          "ennuyeux",
+          "ennuyeuse",
+          "ennuyeuses",
+          "ennuyante"
+        ],
+        "correct": "ennuyeux",
+        "explanation": "'Ennuyeux' (nudny) — przymiotnik na '-eux'. 'Ce film' = ten film (rodzaj męski) → 'ennuyeux'. Formy: ennuyeux (m. poj./mn.) → ennuyeuse (ż. poj.) → ennuyeuses (ż. mn.). Wzorzec '-eux'/'-euse' jest bardzo produktywny: curieux/curieuse (ciekawy), nerveux/nerveuse (nerwowy), joyeux/joyeuse (radosny). 'Vraiment' (naprawdę) = przysłówek, stoi przed przymiotnikiem jak 'très'. W polskim: nudny/nudna."
+      },
+      {
+        "id": "pf_adj14",
+        "question": "C'est une histoire _____. (To jest smutna historia.)",
+        "translation": "(To jest smutna historia.)",
+        "options": [
+          "triste",
+          "trist",
+          "tristes",
+          "tristesse"
+        ],
+        "correct": "triste",
+        "explanation": "'Triste' (smutny/smutna) — przymiotnik kończący się na '-e' ma IDENTYCZNĄ formę męską i żeńską. 'Un homme triste' = smutny mężczyzna, 'une histoire triste' = smutna historia. 'Histoire' (historia) to rodzaj żeński → ale 'triste' wygląda tak samo. Liczba mnoga: 'tristes' (dodaj '-s'). Inne takie przymiotniki: jeune (młody/a), rouge (czerwony/a), facile (łatwy/a), difficile (trudny/a). W polskim zawsze jest odmiana."
+      },
+      {
+        "id": "pf_adj15",
+        "question": "Il a une voix _____. (On ma miły głos.)",
+        "translation": "(On ma miły/przyjemny głos.)",
+        "options": [
+          "douce",
+          "doux",
+          "douces",
+          "doucement"
+        ],
+        "correct": "douce",
+        "explanation": "'Doux' (miły/łagodny) → 'douce' (miła/łagodna). 'La voix' (głos) = rodzaj ŻEŃSKI we francuskim! → 'douce'. To kolejny przykład niezgodności rodzajów: w polskim 'głos' jest męski. 'Doux' → 'douce' to zmiana nieregularna (nie tylko dodanie '-e'). Inne nieregularne: blanc/blanche (biały), sec/sèche (suchy), faux/fausse (fałszywy), fou/folle (szalony). Te formy trzeba zapamiętać indywidualnie."
+      }
+    ]
   }
 ]

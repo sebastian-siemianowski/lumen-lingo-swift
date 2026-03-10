@@ -1228,5 +1228,210 @@
         "explanation": "'Je ne sais rien' means 'I know nothing'. The 'rien' comes after the verb 'sais'. Not knowing anything is honest acknowledgment of ignorance. The phrase 'je ne sais pas' (I don't know) is more common for specific questions. 'Je ne sais rien' is more emphatic and absolute. 'Rien' as negation is powerful - it emphasizes complete absence of knowledge."
       }
     ]
+  },
+  {
+    "key": "adjectives",
+    "name": "Les Adjectifs",
+    "description": "French adjective agreement and placement",
+    "iconName": "paintbrush",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ef_adj1",
+        "question": "Elle est _____ (beautiful).",
+        "translation": "(She is beautiful.)",
+        "options": [
+          "belle",
+          "beau",
+          "bel",
+          "beaux"
+        ],
+        "correct": "belle",
+        "explanation": "'Beau' (beautiful) changes form by gender: masculine 'beau', feminine 'belle'. Since 'elle' is feminine, use 'belle'. This is unlike English where 'beautiful' never changes. The special form 'bel' is used before masculine nouns starting with a vowel: 'un bel homme'. French adjectives must always agree in gender AND number with the noun they describe."
+      },
+      {
+        "id": "ef_adj2",
+        "question": "Les fleurs sont _____. (red)",
+        "translation": "(The flowers are red.)",
+        "options": [
+          "rouges",
+          "rouge",
+          "rougé",
+          "rougement"
+        ],
+        "correct": "rouges",
+        "explanation": "'Rouge' (red) adds -s for plural: 'rouges'. 'Les fleurs' (flowers) is feminine plural. Most French adjectives add -s for plural, just like nouns. However, 'rouge' doesn't change for gender (it's the same for masculine and feminine) — only for number. Color adjectives like bleu/bleue, vert/verte DO change for gender. English 'red' never changes at all."
+      },
+      {
+        "id": "ef_adj3",
+        "question": "C'est une _____ maison. (big)",
+        "translation": "(It's a big house.)",
+        "options": [
+          "grande",
+          "grand",
+          "grands",
+          "grandes"
+        ],
+        "correct": "grande",
+        "explanation": "'Grand' (big) becomes 'grande' in feminine because 'maison' is feminine. Key rule: 'grand' is one of the BANGS adjectives (Beauty, Age, Number, Goodness, Size) that go BEFORE the noun. Most French adjectives go AFTER: 'une maison blanche' (a white house). But size/beauty/age go before: 'une grande maison'. English always puts adjectives before nouns."
+      },
+      {
+        "id": "ef_adj4",
+        "question": "Il a les yeux _____. (blue)",
+        "translation": "(He has blue eyes.)",
+        "options": [
+          "bleus",
+          "bleu",
+          "bleue",
+          "bleues"
+        ],
+        "correct": "bleus",
+        "explanation": "'Bleu' becomes 'bleus' (masculine plural) because 'yeux' (eyes) is masculine plural. Color adjectives go AFTER the noun in French: 'les yeux bleus', not 'les bleus yeux'. English puts colors before: 'blue eyes'. Gender agreement: bleu (m.sg), bleue (f.sg), bleus (m.pl), bleues (f.pl). Physical descriptions typically use 'avoir' (to have), not 'être' (to be)."
+      },
+      {
+        "id": "ef_adj5",
+        "question": "C'est un _____ homme. (old)",
+        "translation": "(He's an old man.)",
+        "options": [
+          "vieil",
+          "vieux",
+          "vieille",
+          "vieilles"
+        ],
+        "correct": "vieil",
+        "explanation": "'Vieux' (old) has a special form 'vieil' before masculine nouns starting with a vowel or silent h. 'Homme' starts with a silent h, so: 'un vieil homme'. The feminine is 'vieille': 'une vieille femme'. This pattern also applies to 'beau/bel/belle' and 'nouveau/nouvel/nouvelle'. These three adjectives have THREE forms each — a unique French feature with no English equivalent."
+      },
+      {
+        "id": "ef_adj6",
+        "question": "Elle porte une robe _____. (white)",
+        "translation": "(She's wearing a white dress.)",
+        "options": [
+          "blanche",
+          "blanc",
+          "blancs",
+          "blanches"
+        ],
+        "correct": "blanche",
+        "explanation": "'Blanc' → 'blanche' in feminine. 'Robe' (dress) is feminine. Many adjectives ending in a consonant add -e for feminine AND change pronunciation: 'blanc' /blɑ̃/ → 'blanche' /blɑ̃ʃ/. The final consonant becomes audible when -e is added. Other examples: 'gros/grosse', 'bon/bonne', 'long/longue'. Color adjectives go after the noun: 'une robe blanche'."
+      },
+      {
+        "id": "ef_adj7",
+        "question": "Ils sont très _____. (happy)",
+        "translation": "(They are very happy.)",
+        "options": [
+          "heureux",
+          "heureuse",
+          "heureuses",
+          "heureus"
+        ],
+        "correct": "heureux",
+        "explanation": "'Heureux' (happy) ends in -x, so masculine singular and plural are identical: 'il est heureux' = 'ils sont heureux'. Feminine: 'heureuse' (sg), 'heureuses' (pl). Adjectives ending in -x don't add -s for masculine plural. Same pattern: 'jaloux/jalouse', 'doux/douce'. This is different from English where 'happy' never changes regardless of who is happy."
+      },
+      {
+        "id": "ef_adj8",
+        "question": "C'est une _____ fille. (young)",
+        "translation": "(She's a young girl.)",
+        "options": [
+          "jeune",
+          "jeunes",
+          "jeuné",
+          "jeunne"
+        ],
+        "correct": "jeune",
+        "explanation": "'Jeune' (young) is one of those adjectives that don't change between masculine and feminine — the -e is already there. 'Un jeune garçon', 'une jeune fille'. Only adds -s for plural: 'des jeunes filles'. As an age adjective (BANGS), it goes BEFORE the noun. Other invariable adjectives: 'triste', 'calme', 'riche' — all already end in -e."
+      },
+      {
+        "id": "ef_adj9",
+        "question": "Mes parents sont très _____. (strict)",
+        "translation": "(My parents are very strict.)",
+        "options": [
+          "stricts",
+          "strict",
+          "stricte",
+          "strictes"
+        ],
+        "correct": "stricts",
+        "explanation": "'Strict' adds -s for masculine plural: 'stricts'. 'Parents' is masculine plural (mixed groups default to masculine in French). If it were only mothers: 'Mes mères sont strictes' (feminine plural). The rule: when a group includes at least one male, use masculine agreement. English 'strict' never changes. This gender-defaulting rule is essential for French adjective agreement."
+      },
+      {
+        "id": "ef_adj10",
+        "question": "C'est un _____ film. (new)",
+        "translation": "(It's a new movie.)",
+        "options": [
+          "nouveau",
+          "nouvelle",
+          "nouvel",
+          "nouveaux"
+        ],
+        "correct": "nouveau",
+        "explanation": "'Nouveau' (new) goes BEFORE the noun (BANGS - it implies novelty/age). 'Film' is masculine, so 'nouveau'. Before a masculine vowel-word: 'nouvel ami'. Feminine: 'nouvelle': 'une nouvelle idée'. This three-form pattern (nouveau/nouvel/nouvelle) mirrors beau/bel/belle and vieux/vieil/vieille. English 'new' always goes before the noun and never changes."
+      },
+      {
+        "id": "ef_adj11",
+        "question": "La soupe est _____. (hot)",
+        "translation": "(The soup is hot.)",
+        "options": [
+          "chaude",
+          "chaud",
+          "chauds",
+          "chaudes"
+        ],
+        "correct": "chaude",
+        "explanation": "'Chaud' → 'chaude' in feminine. 'Soupe' is feminine. Adding -e causes the final 'd' to be pronounced: 'chaud' /ʃo/ → 'chaude' /ʃod/. This pronunciation change is key — in masculine form the 'd' is silent, in feminine it's heard. Same pattern: 'froid/froide', 'grand/grande', 'petit/petite'. As a predicate adjective (after 'être'), position isn't an issue."
+      },
+      {
+        "id": "ef_adj12",
+        "question": "J'ai deux _____ chats. (small)",
+        "translation": "(I have two small cats.)",
+        "options": [
+          "petits",
+          "petit",
+          "petite",
+          "petites"
+        ],
+        "correct": "petits",
+        "explanation": "'Petit' → 'petits' (masculine plural) because 'chats' is masculine plural. 'Petit' is a BANGS adjective (Size), so it goes BEFORE the noun: 'petits chats', not 'chats petits'. Number agreement: add -s. If the cats were feminine: 'petites chattes'. English: 'small cats' — adjective never changes and always goes before the noun."
+      },
+      {
+        "id": "ef_adj13",
+        "question": "C'est une histoire _____. (interesting)",
+        "translation": "(It's an interesting story.)",
+        "options": [
+          "intéressante",
+          "intéressant",
+          "intéressants",
+          "intéressantes"
+        ],
+        "correct": "intéressante",
+        "explanation": "'Intéressant' → 'intéressante' (feminine) because 'histoire' is feminine. Long adjectives like 'intéressant', 'important', 'difficile' go AFTER the noun: 'une histoire intéressante'. Only short common adjectives (BANGS) go before. This is the opposite of English where ALL adjectives go before: 'an interesting story'. Position changes with some adjectives can change meaning."
+      },
+      {
+        "id": "ef_adj14",
+        "question": "Ma _____ amie s'appelle Sophie. (best)",
+        "translation": "(My best friend is named Sophie.)",
+        "options": [
+          "meilleure",
+          "meilleur",
+          "mieux",
+          "meilleurs"
+        ],
+        "correct": "meilleure",
+        "explanation": "'Meilleur' (better/best) is the irregular comparative/superlative of 'bon' (good). Feminine: 'meilleure'. 'Amie' is feminine, so 'meilleure amie'. DON'T confuse with 'mieux' which is the adverb form (modifies verbs, not nouns). 'Mon meilleur ami' (m.) vs 'ma meilleure amie' (f.). Note: 'ma' before a vowel becomes 'mon' for masculine, but stays 'ma' here since 'meilleure' starts with a consonant sound."
+      },
+      {
+        "id": "ef_adj15",
+        "question": "Les exercices sont _____. (difficult)",
+        "translation": "(The exercises are difficult.)",
+        "options": [
+          "difficiles",
+          "difficile",
+          "difficils",
+          "difficilent"
+        ],
+        "correct": "difficiles",
+        "explanation": "'Difficile' → 'difficiles' (plural). Since it already ends in -e, it doesn't change for gender (masculine = feminine). Only adds -s for plural. 'Exercices' is masculine plural. Adjectives ending in -e are gender-invariable: 'facile', 'calme', 'triste', 'riche', 'pauvre'. They only mark number (singular vs plural). English 'difficult' never changes at all."
+      }
+    ]
   }
 ]

@@ -1228,5 +1228,210 @@
         "explanation": "啊 dla wyrażania fizycznych uczuć. 好冷啊 znaczy jakże zimno (czuję to). Polski wykrzyknik, chiński 啊. Ta partykuła intensyfikuje opisywanie wrażeń. 好累啊 (jakże zmęczony - wyczerpanie), 好饿啊 (głodny - potrzeba jedzenia). System 啊 czyni doznania bardziej realnymi i natychmiastymi. Nie tylko opisujesz stan, ale wyrażasz doświadczenie. 啊 to twój sposób na pokazywanie że coś czujesz intensywnie. Doznanie staje się komunikatem."
       }
     ]
+  },
+  {
+    "key": "question_words",
+    "name": "Słowa pytające",
+    "description": "Zaimki pytające w języku chińskim",
+    "iconName": "questionmark.circle",
+    "color": "#818cf8",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pc_qw1",
+        "question": "你叫_____名字？(Jak masz na imię?)",
+        "translation": "(Jak masz na imię?)",
+        "options": [
+          "什么",
+          "谁",
+          "哪",
+          "几"
+        ],
+        "correct": "什么",
+        "explanation": "'什么' (shénme) oznacza 'co/jaki' — to najczęściej używane słowo pytające w chińskim. '你叫什么名字？' = dosłownie 'ty nazywasz się jakie imię?'. W polskim pytamy 'jak masz na imię?', ale chiński pyta 'jakie imię?'. Kluczowa różnica: w chińskim szyk zdania pytającego jest taki sam jak oznajmującego — słowo pytające stoi w miejscu odpowiedzi, nie na początku zdania jak w polskim."
+      },
+      {
+        "id": "pc_qw2",
+        "question": "_____是你的老师？(Kto jest twoim nauczycielem?)",
+        "translation": "(Kto jest twoim nauczycielem?)",
+        "options": [
+          "谁",
+          "什么",
+          "哪",
+          "怎么"
+        ],
+        "correct": "谁",
+        "explanation": "'谁' (shéi/shuí) oznacza 'kto'. '谁是你的老师？' = kto jest twoim nauczycielem? W chińskim '谁' stoi w miejscu podmiotu (na początku) lub dopełnienia (np. '你认识谁？' = kogo znasz?). Nie zmienia formy jak polskie 'kto/kogo/komu'. W chińskim nie ma deklinacji — '谁' zawsze wygląda tak samo, a jego funkcja wynika z pozycji w zdaniu. To duże uproszczenie w porównaniu z polskim."
+      },
+      {
+        "id": "pc_qw3",
+        "question": "你住在_____？(Gdzie mieszkasz?)",
+        "translation": "(Gdzie mieszkasz?)",
+        "options": [
+          "哪儿",
+          "什么",
+          "谁",
+          "几"
+        ],
+        "correct": "哪儿",
+        "explanation": "'哪儿' (nǎr) lub '哪里' (nǎlǐ) oznacza 'gdzie'. '你住在哪儿？' = ty mieszkasz w gdzie? Zauważ szyk: podmiot + czasownik + przyimek + słowo pytające. W polskim 'gdzie' stoi na początku, w chińskim na końcu (w miejscu odpowiedzi). '哪' (nǎ) samo oznacza 'który/która', a z sufiksem '儿' lub '里' tworzy 'gdzie'. W Pekinie częściej '哪儿', na południu '哪里'."
+      },
+      {
+        "id": "pc_qw4",
+        "question": "现在_____点？(Która jest godzina?)",
+        "translation": "(Która jest godzina?)",
+        "options": [
+          "几",
+          "什么",
+          "多少",
+          "怎么"
+        ],
+        "correct": "几",
+        "explanation": "'几' (jǐ) oznacza 'ile' dla małych liczb (do ok. 10). '现在几点？' = teraz ile godzina? = która jest godzina? '几' używamy, gdy oczekujemy małej liczby i odpowiedź wymaga klasyfikatora. Porównaj: '多少' (duōshao) = ile (dla większych lub nieograniczonych liczb, nie wymaga klasyfikatora). W polskim mamy jedno 'ile', chiński rozróżnia skalę. '几个人？' (ile osób? — mała grupa) vs '多少人？' (ile osób? — potencjalnie dużo)."
+      },
+      {
+        "id": "pc_qw5",
+        "question": "你_____去学校？(Jak idziesz do szkoły?)",
+        "translation": "(Jak dostajesz się do szkoły?)",
+        "options": [
+          "怎么",
+          "什么",
+          "哪",
+          "为什么"
+        ],
+        "correct": "怎么",
+        "explanation": "'怎么' (zěnme) oznacza 'jak' (sposób). '你怎么去学校？' = ty jak idziesz do szkoły? (autobusem? pieszo?). Szyk: podmiot + 怎么 + czasownik. '怎么' stoi PRZED czasownikiem, w polskim 'jak' stoi na początku. Drugie znaczenie '怎么': pytanie o przyczynę = 'dlaczego/jak to możliwe': '你怎么迟到了？' = jak to się stało, że się spóźniłeś? Kontekst decyduje o interpretacji."
+      },
+      {
+        "id": "pc_qw6",
+        "question": "你_____学中文？(Dlaczego uczysz się chińskiego?)",
+        "translation": "(Dlaczego uczysz się chińskiego?)",
+        "options": [
+          "为什么",
+          "怎么",
+          "什么",
+          "哪"
+        ],
+        "correct": "为什么",
+        "explanation": "'为什么' (wèishénme) oznacza 'dlaczego' (dosłownie: 'dla-co'). '你为什么学中文？' = ty dlaczego uczysz się chińskiego? '为' = dla/z powodu + '什么' = co = 'z jakiego powodu'. W zdaniu '为什么' stoi przed czasownikiem, podobnie jak polskie 'dlaczego' przed orzeczeniem. Odpowiedź: '因为...' (yīnwèi) = ponieważ. Para pytanie-odpowiedź: 为什么...? → 因为..."
+      },
+      {
+        "id": "pc_qw7",
+        "question": "这个_____钱？(Ile to kosztuje?)",
+        "translation": "(Ile to kosztuje?)",
+        "options": [
+          "多少",
+          "几",
+          "什么",
+          "怎么"
+        ],
+        "correct": "多少",
+        "explanation": "'多少' (duōshao) oznacza 'ile' dla większych lub nieznanych ilości. '这个多少钱？' = to-[kl.] ile pieniądze? = ile to kosztuje? Kluczowa różnica: '多少' nie wymaga klasyfikatora (多少人？), a '几' wymaga (几个人？). '多少' dosłownie znaczy 'dużo-mało' — pytamy o ilość na pełnej skali. W polskim oba tłumaczymy jako 'ile', ale chiński ma precyzyjne rozróżnienie."
+      },
+      {
+        "id": "pc_qw8",
+        "question": "你要_____一个？(Który chcesz?)",
+        "translation": "(Który jeden chcesz?)",
+        "options": [
+          "哪",
+          "什么",
+          "谁",
+          "几"
+        ],
+        "correct": "哪",
+        "explanation": "'哪' (nǎ) + klasyfikator = 'który'. '你要哪一个？' = ty chcesz który-jeden? Używamy '哪' do wyboru z grupy. '哪个' (który — ogólny), '哪本书' (która książka), '哪位老师' (który nauczyciel). Uwaga na ton: '哪' (nǎ, 3. ton) = który vs '那' (nà, 4. ton) = tamten. W piśmie wyglądają podobnie (różnią się jedną kreską w lewym radykale). W polskim 'który' nie zmienia się, w chińskim zależy od kontekstu."
+      },
+      {
+        "id": "pc_qw9",
+        "question": "你_____时候来？(Kiedy przyjdziesz?)",
+        "translation": "(Kiedy przyjdziesz?)",
+        "options": [
+          "什么",
+          "哪",
+          "几",
+          "怎么"
+        ],
+        "correct": "什么",
+        "explanation": "'什么时候' (shénme shíhou) = 'kiedy' (dosłownie: 'jaki-moment'). '你什么时候来？' = ty kiedy przyjdziesz? To złożone wyrażenie: '什么' (jaki) + '时候' (czas/moment). W chińskim nie ma jednego słowa na 'kiedy' — trzeba użyć dwóch. Szyk: podmiot + 什么时候 + czasownik. Porównaj z polskim 'kiedy przyjdziesz?' — chiński stawia pytanie w środku zdania, nie na początku."
+      },
+      {
+        "id": "pc_qw10",
+        "question": "你的手机号码是_____？(Jaki jest twój numer telefonu?)",
+        "translation": "(Jaki jest twój numer telefonu?)",
+        "options": [
+          "多少",
+          "几",
+          "什么",
+          "哪"
+        ],
+        "correct": "多少",
+        "explanation": "Dla numerów telefonu używamy '多少' (duōshao), nie '几'. '你的手机号码是多少？' = twój-numer-telefonu jest ile? Chociaż pytamy o konkretną liczbę, '多少' jest właściwe bo numer jest długi i nieograniczony. Reguła: '几' → oczekujemy małej liczby (1-10), '多少' → liczba duża, nieznana lub konkretna (numery, ceny, populacje). W polskim pytamy 'jaki jest numer' — chiński pyta 'ile jest numer'."
+      },
+      {
+        "id": "pc_qw11",
+        "question": "你觉得这本书_____样？(Jak ci się podoba ta książka?)",
+        "translation": "(Jak ci się podoba ta książka?)",
+        "options": [
+          "怎么",
+          "什么",
+          "多少",
+          "哪"
+        ],
+        "correct": "怎么",
+        "explanation": "'怎么样' (zěnmeyàng) = 'jak/jaki' — pytanie o opinię lub stan. '你觉得这本书怎么样？' = ty-uważasz-ta-książka jak? = co sądzisz o tej książce? '怎么样' to rozszerzenie '怎么' o '样' (wygląd/sposób). Używamy tego do pytania o opinię, ocenę, propozycję: '我们去看电影，怎么样？' = pójdźmy do kina, co ty na to? W polskim: 'jak ci się podoba?' lub 'co sądzisz?'."
+      },
+      {
+        "id": "pc_qw12",
+        "question": "从这儿到机场_____远？(Jak daleko stąd na lotnisko?)",
+        "translation": "(Jak daleko jest stąd na lotnisko?)",
+        "options": [
+          "多",
+          "几",
+          "什么",
+          "怎么"
+        ],
+        "correct": "多",
+        "explanation": "'多' (duō) + przymiotnik = 'jak bardzo [przymiotnik]'. '多远？' (duō yuǎn) = jak daleko? '多大？' = jak duży/ile lat? '多高？' = jak wysoki? '多长时间？' = jak długo? W polskim użylibyśmy 'jak' + przymiotnik, chiński używa '多' + przymiotnik. To bardzo produktywna konstrukcja — '多' może łączyć się z prawie każdym przymiotnikiem stopniowalnym. Odpowiedź podaje konkretną miarę: '大概二十公里' = około 20 km."
+      },
+      {
+        "id": "pc_qw13",
+        "question": "你喜欢_____颜色？(Jaki kolor lubisz?)",
+        "translation": "(Jaki kolor lubisz?)",
+        "options": [
+          "什么",
+          "哪",
+          "几",
+          "怎么"
+        ],
+        "correct": "什么",
+        "explanation": "'什么' + rzeczownik = 'jaki/który'. '你喜欢什么颜色？' = ty lubisz jaki kolor? Różnica: '什么' przed rzeczownikiem = 'jaki' (otwarty wybór), '哪个' + rzeczownik = 'który' (zamknięty wybór z grupy). '什么颜色？' = jaki kolor? (dowolny). '哪个颜色？' = który kolor? (z tych tu). W polskim 'jaki' vs 'który' to ta sama różnica. Chiński odzwierciedla ją w wyborze słowa pytającego."
+      },
+      {
+        "id": "pc_qw14",
+        "question": "今天星期_____？(Jaki dziś dzień tygodnia?)",
+        "translation": "(Jaki dziś dzień tygodnia?)",
+        "options": [
+          "几",
+          "什么",
+          "多少",
+          "哪"
+        ],
+        "correct": "几",
+        "explanation": "Dni tygodnia w chińskim to liczby: 星期一 (poniedziałek/1) do 星期六 (sobota/6), 星期天/日 (niedziela). '今天星期几？' = dziś tydzień-ile? = jaki dziś dzień? Używamy '几' bo oczekujemy małej liczby (1-7). Odpowiedź: '今天星期三' = dziś jest środa (3). W polskim dni mają własne nazwy, w chińskim są ponumerowane — to znacznie ułatwia naukę. Podobnie miesiące: 一月 (styczeń/1), 二月 (luty/2)..."
+      },
+      {
+        "id": "pc_qw15",
+        "question": "_____的书放在这儿了？(Czyja książka tu leży?)",
+        "translation": "(Czyja książka została tu położona?)",
+        "options": [
+          "谁",
+          "什么",
+          "哪",
+          "几"
+        ],
+        "correct": "谁",
+        "explanation": "'谁的' (shéi de) = 'czyj/czyja/czyje'. '谁的书放在这儿了？' = czyja książka leży tutaj? Konstrukcja: '谁的' + rzeczownik. Cząstka '的' (de) oznacza przynależność — '谁的' = kogo-[przynależność] = czyj. Porównaj: '我的' = mój, '你的' = twój, '谁的' = czyj. W polskim 'czyj' odmienia się (czyja, czyje, czyjego...), w chińskim '谁的' jest niezmienne. Szyk: 谁的 + rzeczownik + orzeczenie."
+      }
+    ]
   }
 ]

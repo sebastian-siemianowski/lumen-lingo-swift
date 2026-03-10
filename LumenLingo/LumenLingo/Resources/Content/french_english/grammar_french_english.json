@@ -1228,5 +1228,210 @@
         "explanation": "'I haven't seen him' = Je ne l'ai pas vu. Au Present Perfect (HAVE + participe passé), la négation est HAVEN'T/HASN'T. 'Haven't seen' connecte passé et présent - jusqu'à maintenant, je ne l'ai pas vu. Cette négation du Perfect crée une ouverture : pas encore vu, mais peut-être bientôt."
       }
     ]
+  },
+  {
+    "key": "present_perfect",
+    "name": "Present Perfect",
+    "description": "Le present perfect en anglais",
+    "iconName": "checkmark.circle",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "fe_pp1",
+        "question": "I _____ to London twice.",
+        "translation": "(Je suis allé(e) à Londres deux fois.)",
+        "options": [
+          "have been",
+          "was",
+          "went",
+          "am going"
+        ],
+        "correct": "have been",
+        "explanation": "Le present perfect (have/has + participe passé) s'utilise pour des expériences de vie sans préciser quand. 'I have been to London' = j'ai l'expérience d'être allé à Londres. En français, on utilise le passé composé ('je suis allé'), mais en anglais le present perfect et le past simple sont distincts. Sans mention de temps précis → present perfect. Avec 'yesterday/last year' → past simple."
+      },
+      {
+        "id": "fe_pp2",
+        "question": "She _____ already _____ the book.",
+        "translation": "(Elle a déjà lu le livre.)",
+        "options": [
+          "has / read",
+          "did / read",
+          "is / reading",
+          "was / reading"
+        ],
+        "correct": "has / read",
+        "explanation": "'Already' (déjà) déclenche le present perfect. 'She has already read' = elle a déjà lu (et le résultat est pertinent maintenant). Attention : 'read' au participe passé se prononce /rɛd/ comme 'red'. En français, 'déjà' peut s'utiliser avec le passé composé ou le présent, mais en anglais 'already' exige le present perfect. Ordre : has + already + participe passé."
+      },
+      {
+        "id": "fe_pp3",
+        "question": "We _____ never _____ sushi.",
+        "translation": "(Nous n'avons jamais mangé de sushi.)",
+        "options": [
+          "have / tried",
+          "did / try",
+          "do / try",
+          "are / trying"
+        ],
+        "correct": "have / tried",
+        "explanation": "'Never' (jamais) + present perfect pour une expérience qui n'a jamais eu lieu. 'We have never tried sushi' = nous n'avons jamais essayé le sushi dans notre vie. En français : 'ne...jamais' + passé composé. En anglais : have + never + participe passé (pas de négation 'not' avec 'never'). Position : 'never' se place entre 'have' et le participe passé."
+      },
+      {
+        "id": "fe_pp4",
+        "question": "_____ you ever _____ a horse?",
+        "translation": "(As-tu déjà monté à cheval ?)",
+        "options": [
+          "Have / ridden",
+          "Did / ride",
+          "Do / ride",
+          "Are / riding"
+        ],
+        "correct": "Have / ridden",
+        "explanation": "Question sur l'expérience de vie : Have/Has + sujet + ever + participe passé. 'Have you ever ridden?' = as-tu jamais monté ? 'Ever' (jamais/déjà) dans les questions. 'Ridden' est le participe passé irrégulier de 'ride' (ride-rode-ridden). En français, on dit 'est-ce que tu as déjà...' avec le passé composé. Réponse courte : 'Yes, I have' / 'No, I haven't'."
+      },
+      {
+        "id": "fe_pp5",
+        "question": "He _____ here since 2019.",
+        "translation": "(Il habite ici depuis 2019.)",
+        "options": [
+          "has lived",
+          "lived",
+          "lives",
+          "is living"
+        ],
+        "correct": "has lived",
+        "explanation": "'Since' + point dans le temps = present perfect. 'He has lived here since 2019' = il vit ici depuis 2019 (et il y vit toujours). PIÈGE pour les francophones : en français on dit 'il habite ici depuis 2019' au PRÉSENT, mais l'anglais exige le PRESENT PERFECT car l'action a commencé dans le passé et continue. 'Since' = depuis (point), 'for' = depuis/pendant (durée)."
+      },
+      {
+        "id": "fe_pp6",
+        "question": "They _____ married for 20 years.",
+        "translation": "(Ils sont mariés depuis 20 ans.)",
+        "options": [
+          "have been",
+          "are",
+          "were",
+          "had been"
+        ],
+        "correct": "have been",
+        "explanation": "'For' + durée = present perfect quand l'état continue. 'They have been married for 20 years' = ils sont mariés depuis 20 ans (et le sont toujours). En français : 'ils sont mariés depuis...' au PRÉSENT. C'est une erreur fréquente des francophones qui traduisent littéralement. Règle : action/état commencé dans le passé + toujours vrai maintenant = present perfect."
+      },
+      {
+        "id": "fe_pp7",
+        "question": "I _____ just _____ my homework.",
+        "translation": "(Je viens de finir mes devoirs.)",
+        "options": [
+          "have / finished",
+          "did / finish",
+          "am / finishing",
+          "was / finishing"
+        ],
+        "correct": "have / finished",
+        "explanation": "'Just' (juste/à l'instant) = present perfect pour une action très récente. 'I have just finished' = je viens de finir. En français, on utilise 'venir de' + infinitif, une structure très différente. En anglais : have + just + participe passé. 'Just' se place entre l'auxiliaire et le participe. Cette notion de passé récent est exprimée différemment dans chaque langue."
+      },
+      {
+        "id": "fe_pp8",
+        "question": "She _____ not _____ yet.",
+        "translation": "(Elle n'est pas encore arrivée.)",
+        "options": [
+          "has / arrived",
+          "did / arrive",
+          "does / arrive",
+          "is / arriving"
+        ],
+        "correct": "has / arrived",
+        "explanation": "'Yet' (encore/pas encore) en fin de phrase négative ou interrogative = present perfect. 'She hasn't arrived yet' = elle n'est pas encore arrivée (mais on l'attend). Négatif : has/have + not + participe passé + yet. Question : 'Has she arrived yet?' = est-elle déjà arrivée ? En français, 'encore' et 'pas encore' peuvent s'utiliser avec différents temps."
+      },
+      {
+        "id": "fe_pp9",
+        "question": "We _____ three films this week.",
+        "translation": "(Nous avons vu trois films cette semaine.)",
+        "options": [
+          "have seen",
+          "saw",
+          "see",
+          "are seeing"
+        ],
+        "correct": "have seen",
+        "explanation": "'This week' (cette semaine) = période non terminée → present perfect. 'We have seen three films this week' = la semaine n'est pas finie et nous en avons vu trois. Mots-clés de périodes non terminées : today, this month, this year, so far. MAIS : 'We saw three films last week' (past simple) car 'last week' est terminée. Le français utilise le passé composé dans les deux cas."
+      },
+      {
+        "id": "fe_pp10",
+        "question": "I _____ my keys. Can you help me?",
+        "translation": "(J'ai perdu mes clés. Peux-tu m'aider ?)",
+        "options": [
+          "have lost",
+          "lost",
+          "am losing",
+          "lose"
+        ],
+        "correct": "have lost",
+        "explanation": "Action passée avec résultat présent = present perfect. 'I have lost my keys' = je les ai perdues ET je ne les ai toujours pas (résultat actuel). C'est l'usage le plus important : passé → conséquence au présent. 'I lost my keys yesterday' (past simple) = simple fait passé. En français, 'j'ai perdu' peut exprimer les deux sens. L'anglais fait la distinction."
+      },
+      {
+        "id": "fe_pp11",
+        "question": "How many countries _____ you _____?",
+        "translation": "(Combien de pays as-tu visités ?)",
+        "options": [
+          "have / visited",
+          "did / visit",
+          "do / visit",
+          "are / visiting"
+        ],
+        "correct": "have / visited",
+        "explanation": "'How many...have you + participe passé ?' pour demander le total d'expériences dans une vie. 'How many countries have you visited?' = combien dans toute ta vie ? Compare : 'How many countries did you visit last year?' (past simple avec temps défini). Le present perfect regarde du passé vers le présent, le past simple regarde un moment passé terminé."
+      },
+      {
+        "id": "fe_pp12",
+        "question": "The weather _____ a lot recently.",
+        "translation": "(Le temps a beaucoup changé récemment.)",
+        "options": [
+          "has changed",
+          "changed",
+          "changes",
+          "is changing"
+        ],
+        "correct": "has changed",
+        "explanation": "'Recently' (récemment) = present perfect car on parle du passé proche avec un impact sur le présent. 'The weather has changed recently' = le temps a changé et on le constate maintenant. Autres marqueurs similaires : 'lately', 'in recent weeks'. En français, 'récemment' s'utilise avec le passé composé, ce qui est une bonne correspondance dans ce cas précis."
+      },
+      {
+        "id": "fe_pp13",
+        "question": "I _____ this film. It's excellent!",
+        "translation": "(J'ai vu ce film. Il est excellent !)",
+        "options": [
+          "have seen",
+          "saw",
+          "see",
+          "am seeing"
+        ],
+        "correct": "have seen",
+        "explanation": "Expérience + commentaire présent = present perfect. 'I have seen this film' + 'It's excellent' — l'expérience passée est connectée à l'opinion actuelle. Si on ajoutait un temps : 'I saw it yesterday' (past simple). Le present perfect fait le pont entre passé et présent. En français, le passé composé ('j'ai vu') couvre les deux cas, ce qui rend la distinction difficile."
+      },
+      {
+        "id": "fe_pp14",
+        "question": "How long _____ you _____ French?",
+        "translation": "(Depuis combien de temps apprends-tu le français ?)",
+        "options": [
+          "have / studied",
+          "did / study",
+          "do / study",
+          "are / studying"
+        ],
+        "correct": "have / studied",
+        "explanation": "'How long have you...?' = depuis combien de temps + action qui continue. 'How long have you studied French?' = l'apprentissage continue encore. Réponse : 'For three years' ou 'Since 2023'. ATTENTION : en français on dit 'depuis combien de temps étudies-tu' au PRÉSENT. L'anglais exige le present perfect car l'action a commencé dans le passé. C'est une erreur typique des francophones."
+      },
+      {
+        "id": "fe_pp15",
+        "question": "It's the best meal I _____ ever _____.",
+        "translation": "(C'est le meilleur repas que j'aie jamais mangé.)",
+        "options": [
+          "have / eaten",
+          "did / eat",
+          "am / eating",
+          "was / eating"
+        ],
+        "correct": "have / eaten",
+        "explanation": "Superlatif + present perfect + 'ever' : 'the best... I have ever eaten' = le meilleur dans toute mon expérience. Structure fixe : the + superlatif + sujet + have/has + ever + participe passé. 'Eaten' est le participe passé irrégulier de 'eat' (eat-ate-eaten). En français, on utilise le subjonctif : 'que j'aie mangé'. Chaque langue a sa propre manière d'exprimer cette idée."
+      }
+    ]
   }
 ]

@@ -1228,5 +1228,210 @@
         "explanation": "قط + ان = قطان (dwa koty). Koty to popularne zwierzęta domowe. Dwa koty mogą się bawić razem, tworzyć towarzystwo sobie nawzajem. Zwierzęta uczą odpowiedzialności i empatii. Opieka nad zwierzętami przynosi radość i relaks."
       }
     ]
+  },
+  {
+    "key": "negation",
+    "name": "Negacja",
+    "description": "Przeczenia w języku arabskim",
+    "iconName": "xmark.circle",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pa_neg1",
+        "question": "أنا _____ أعرف. (Nie wiem.)",
+        "translation": "(Ja nie wiem.)",
+        "options": [
+          "لا",
+          "ما",
+          "لن",
+          "ليس"
+        ],
+        "correct": "لا",
+        "explanation": "Partykuła 'لا' (la) jest najczęściej używanym zaprzeczeniem w języku arabskim. Stawia się ją bezpośrednio przed czasownikiem w czasie teraźniejszym, aby go zanegować: 'لا أعرف' (la a'rifu) = nie wiem. W przeciwieństwie do polskiego 'nie', w arabskim istnieje kilka różnych partykuł przeczących, każda z własnym użyciem. 'لا' jest odpowiednikiem polskiego 'nie' przy czasownikach w czasie teraźniejszym."
+      },
+      {
+        "id": "pa_neg2",
+        "question": "هو _____ طالبًا. (On nie jest studentem.)",
+        "translation": "(On nie jest studentem.)",
+        "options": [
+          "ليس",
+          "لا",
+          "لم",
+          "لن"
+        ],
+        "correct": "ليس",
+        "explanation": "Słowo 'ليس' (laysa) oznacza 'nie jest' — to specjalny czasownik przeczący używany do negowania zdań nominalnych (bez czasownika). 'هو ليس طالبًا' = on nie jest studentem. W języku arabskim zdania nominalne nie mają słowa 'jest', ale do ich zanegowania potrzebna jest forma 'ليس'. Odmienia się przez osoby: لست (ja nie jestem), لست (ty nie jesteś), ليس (on nie jest), ليست (ona nie jest)."
+      },
+      {
+        "id": "pa_neg3",
+        "question": "_____ أذهب أمس. (Nie poszedłem wczoraj.)",
+        "translation": "(Nie poszedłem wczoraj.)",
+        "options": [
+          "لم",
+          "لا",
+          "ليس",
+          "لن"
+        ],
+        "correct": "لم",
+        "explanation": "Partykuła 'لم' (lam) służy do negowania czasu przeszłego. Po 'لم' czasownik przyjmuje formę czasu teraźniejszego w trybie skróconym (مجزوم): 'لم أذهب' (lam adhab) = nie poszedłem. To ważna różnica — choć negujemy przeszłość, forma czasownika nie jest przeszła! W polskim po prostu dodajemy 'nie' przed czasownikiem w czasie przeszłym, ale arabski wymaga zmiany struktury."
+      },
+      {
+        "id": "pa_neg4",
+        "question": "_____ أسافر غدًا. (Nie pojadę jutro.)",
+        "translation": "(Nie pojadę jutro.)",
+        "options": [
+          "لن",
+          "لا",
+          "لم",
+          "ما"
+        ],
+        "correct": "لن",
+        "explanation": "Partykuła 'لن' (lan) neguje czas przyszły. Po 'لن' czasownik stoi w formie منصوب (z końcówką -a): 'لن أسافر' (lan usafira) = nie pojadę. Każdy czas w arabskim ma własną partykułę przeczącą: لا dla teraźniejszego, لم dla przeszłego, لن dla przyszłego. W polskim zawsze używamy 'nie' niezależnie od czasu — to duża różnica strukturalna między tymi językami."
+      },
+      {
+        "id": "pa_neg5",
+        "question": "_____ تقلق! (Nie martw się!)",
+        "translation": "(Nie martw się!)",
+        "options": [
+          "لا",
+          "لم",
+          "لن",
+          "ليس"
+        ],
+        "correct": "لا",
+        "explanation": "W trybie rozkazującym zanegowanym używamy 'لا' (la) + czasownik w formie مجزوم: 'لا تقلق' (la taqlaq) = nie martw się. To tzw. 'النهي' (an-nahy) — zakaz lub negatywna prośba. W polskim również używamy 'nie' + rozkaźnik ('nie martw się'). Forma arabska jest prosta: لا + czas teraźniejszy w 2. osobie w trybie skróconym. Akcent pada na partykułę لا."
+      },
+      {
+        "id": "pa_neg6",
+        "question": "هي _____ في البيت. (Jej nie ma w domu.)",
+        "translation": "(Jej nie ma w domu.)",
+        "options": [
+          "ليست",
+          "لا",
+          "لم",
+          "لن"
+        ],
+        "correct": "ليست",
+        "explanation": "'ليست' (laysat) to forma żeńska od 'ليس' (nie jest). 'هي ليست في البيت' = ona nie jest w domu. Odmiana 'ليس' przez osoby: لستُ (ja), لستَ (ty m.), لستِ (ty ż.), ليس (on), ليست (ona), لسنا (my), لستم (wy), ليسوا (oni). W polskim 'nie jest' nie zmienia formy ze względu na płeć, ale w arabskim каждая forma jest inna — to cecha języków semickich."
+      },
+      {
+        "id": "pa_neg7",
+        "question": "_____ شيء مستحيل. (Nic nie jest niemożliwe.)",
+        "translation": "(Nic nie jest niemożliwe.)",
+        "options": [
+          "لا",
+          "ليس",
+          "لم",
+          "لن"
+        ],
+        "correct": "لا",
+        "explanation": "'لا شيء' (la shay') = nic (dosłownie: nie-rzecz). 'لا' przed rzeczownikiem tworzy pełne zaprzeczenie (نفي الجنس). 'لا شيء مستحيل' = nic nie jest niemożliwe. Tę samą konstrukcję widzimy w 'لا إله إلا الله' — 'nie ma boga oprócz Boga'. W polskim 'nic' to osobny wyraz, w arabskim to połączenie partykuły przeczącej z rzeczownikiem. Struktura ta jest bardzo produktywna."
+      },
+      {
+        "id": "pa_neg8",
+        "question": "أنتَ _____ مخطئًا. (Nie mylisz się.)",
+        "translation": "(Ty się nie mylisz.)",
+        "options": [
+          "لستَ",
+          "لا",
+          "لم",
+          "ما"
+        ],
+        "correct": "لستَ",
+        "explanation": "'لستَ' (lasta) = 'ty nie jesteś' (do mężczyzny). To forma 2. osoby liczby pojedynczej rodzaju męskiego od 'ليس'. 'أنتَ لستَ مخطئًا' = ty nie jesteś w błędzie. W arabskim orzecznik po 'ليس' stoi w bierniku (منصوب): مخطئًا zamiast مخطئ. W polskim nie ma takiej zmiany przypadka przy przeczeniu. Końcówka -ً (tanwin fatha) sygnalizuje biernik nieokreślony."
+      },
+      {
+        "id": "pa_neg9",
+        "question": "_____ كتبتُ الرسالة. (Nie napisałem listu.)",
+        "translation": "(Nie napisałem listu.)",
+        "options": [
+          "ما",
+          "لا",
+          "ليس",
+          "لن"
+        ],
+        "correct": "ما",
+        "explanation": "Partykuła 'ما' (ma) to alternatywny sposób negowania przeszłości — stawiana przed czasownikiem w czasie przeszłym: 'ما كتبتُ' (ma katabtu) = nie napisałem. Różnica od 'لم': po 'لم' jest forma teraźniejsza skrócona, po 'ما' jest forma przeszła. Oba znaczą to samo, ale 'ما' jest częstsza w dialektach, a 'لم' w formalnym arabskim. W polskim zawsze: 'nie' + forma przeszła."
+      },
+      {
+        "id": "pa_neg10",
+        "question": "نحن _____ مشغولين. (Nie jesteśmy zajęci.)",
+        "translation": "(My nie jesteśmy zajęci.)",
+        "options": [
+          "لسنا",
+          "لا",
+          "لم",
+          "ما"
+        ],
+        "correct": "لسنا",
+        "explanation": "'لسنا' (lasna) = 'my nie jesteśmy' — forma 1. osoby liczby mnogiej od 'ليس'. 'نحن لسنا مشغولين' = my nie jesteśmy zajęci. Orzecznik 'مشغولين' jest w bierniku liczby mnief. Pełna odmiana ليس w liczbie mnogiej: لسنا (my), لستم (wy m.), لستنّ (wy ż.), ليسوا (oni), لسن (one). W polskim 'nie jesteśmy' jest jednolite bez względu na płeć."
+      },
+      {
+        "id": "pa_neg11",
+        "question": "_____ أحد يعرف. (Nikt nie wie.)",
+        "translation": "(Nikt nie wie.)",
+        "options": [
+          "لا",
+          "ما",
+          "ليس",
+          "لن"
+        ],
+        "correct": "لا",
+        "explanation": "'لا أحد' (la ahad) = nikt (dosłownie: nie-jeden). Podobnie jak 'لا شيء' (nic), 'لا' łączy się z rzeczownikiem tworząc pełne zaprzeczenie. 'لا أحد يعرف' = nikt nie wie. W polskim mamy podwójne przeczenie ('nikt NIE wie'), ale w arabskim wystarczy jedno 'لا'. To ważna różnica — arabski, podobnie jak angielski, unika podwójnego przeczenia w standardowej formie."
+      },
+      {
+        "id": "pa_neg12",
+        "question": "هذا _____ صحيحًا. (To nie jest prawda.)",
+        "translation": "(To nie jest prawdziwe.)",
+        "options": [
+          "ليس",
+          "لا",
+          "لم",
+          "لن"
+        ],
+        "correct": "ليس",
+        "explanation": "'هذا ليس صحيحًا' = to nie jest prawdziwe. 'ليس' neguje zdanie nominalne z zaimkiem wskazującym 'هذا' (to). Orzecznik 'صحيحًا' jest w bierniku (tanwin fatha). Pamiętaj: 'ليس' zachowuje się jak czasownik (odmienia się), mimo że znaczy 'nie jest'. W arabskim klasyfikuje się go jako jeden z 'أخوات كان' — czasowników modyfikujących zdanie nominalne."
+      },
+      {
+        "id": "pa_neg13",
+        "question": "_____ تتأخر عن الموعد! (Nie spóźnij się!)",
+        "translation": "(Nie spóźnij się na spotkanie!)",
+        "options": [
+          "لا",
+          "لم",
+          "ليس",
+          "ما"
+        ],
+        "correct": "لا",
+        "explanation": "Zakaz: 'لا' + czas teraźniejszy 2. osoby w trybie مجزوم. 'لا تتأخر' (la tata'akhkhar) = nie spóźnij się. To druga ważna funkcja 'لا' — po raz pierwszy widzieliśmy ją przy negowaniu teraźniejszości, tutaj tworzy zakaz. Różnica: 'لا يتأخر' (nie spóźnia się — opis) vs 'لا تتأخر' (nie spóźnij się — rozkaz). Kontekst i osoba decydują o znaczeniu."
+      },
+      {
+        "id": "pa_neg14",
+        "question": "_____ أستطيع أن أفهم. (Nie mogę zrozumieć.)",
+        "translation": "(Nie jestem w stanie zrozumieć.)",
+        "options": [
+          "لا",
+          "ليس",
+          "لم",
+          "ما"
+        ],
+        "correct": "لا",
+        "explanation": "'لا أستطيع' (la astati'u) = nie mogę. Przeczenie czasownika modalnego 'يستطيع' (móc/potrafić) w czasie teraźniejszym. Po nim następuje 'أن' + czasownik w trybie łączącym: 'أن أفهم' = że rozumiem/zrozumiem. W polskim: 'nie mogę zrozumieć' — prosta negacja. W arabskim: لا + czasownik modalny + أن + drugi czasownik. Konstrukcja أن + فعل jest odpowiednikiem polskiego bezokolicznika."
+      },
+      {
+        "id": "pa_neg15",
+        "question": "هم _____ هنا. (Ich tu nie ma.)",
+        "translation": "(Oni nie są tutaj.)",
+        "options": [
+          "ليسوا",
+          "لا",
+          "لم",
+          "لن"
+        ],
+        "correct": "ليسوا",
+        "explanation": "'ليسوا' (laysu) = 'oni nie są' — forma 3. osoby liczby mnogiej rodzaju męskiego od 'ليس'. 'هم ليسوا هنا' = oni nie są tutaj. Końcówka -وا wskazuje liczbę mnogą męską. Dla żeńskiej: 'هن لسن هنا' (one nie są tutaj). To podsumowanie odmian ليس: لستُ, لستَ, لستِ, ليس, ليست, لسنا, لستم, لستنّ, ليسوا, لسن — 10 form dla jednego 'nie jest'!"
+      }
+    ]
   }
 ]

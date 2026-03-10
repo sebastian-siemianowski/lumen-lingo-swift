@@ -1228,5 +1228,210 @@
         "explanation": "Should 用于推荐。You should try this food = 你应该尝尝这个食物。Should 有时可用 ought to 替换，意思相同但 ought to 更正式：You ought to try this food. 否定：shouldn't = 不应该。Should 常用于给个人意见和友善建议，完全对应中文的'应该'。注意 should 和 must 的区别：should 是可选建议，must 是强制要求。"
       }
     ]
+  },
+  {
+    "key": "present_perfect",
+    "name": "Present Perfect",
+    "description": "现在完成时",
+    "iconName": "checkmark.circle",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ce_pp1",
+        "question": "I _____ to Japan three times.",
+        "translation": "(我去过日本三次)",
+        "options": [
+          "have been",
+          "went",
+          "go",
+          "am going"
+        ],
+        "correct": "have been",
+        "explanation": "现在完成时用于人生经历（不指定具体时间）。'I have been to Japan' = 我有去日本的经历。中文用\"过\"表达类似含义：\"去过\"。结构：have/has + 过去分词。'Been'是be的过去分词。注意：'I went to Japan last year'（过去式）指具体时间。中文没有动词变形，但英语必须用不同时态区分。"
+      },
+      {
+        "id": "ce_pp2",
+        "question": "She _____ already _____ dinner.",
+        "translation": "(她已经做好了晚饭)",
+        "options": [
+          "has / cooked",
+          "did / cook",
+          "is / cooking",
+          "was / cooking"
+        ],
+        "correct": "has / cooked",
+        "explanation": "'Already'（已经）是现在完成时的标志词。'She has already cooked' = 她已经做好了（结果影响现在——晚饭准备好了）。中文的\"已经\"和英语的already功能相似。结构：has + already + 过去分词。注意he/she/it用has，I/you/we/they用have。过去分词cooked是规则变化（加-ed）。"
+      },
+      {
+        "id": "ce_pp3",
+        "question": "We _____ never _____ snow.",
+        "translation": "(我们从未见过雪)",
+        "options": [
+          "have / seen",
+          "did / see",
+          "are / seeing",
+          "do / see"
+        ],
+        "correct": "have / seen",
+        "explanation": "'Never'（从未）用于现在完成时表示人生中从未有过的经历。'We have never seen snow' = 在我们的人生中从未见过雪。位置：have + never + 过去分词。'Seen'是see的不规则过去分词（see-saw-seen）。中文用\"从没/从未...过\"：\"从没见过雪\"。英语必须用特定时态结构来表达。"
+      },
+      {
+        "id": "ce_pp4",
+        "question": "_____ you _____ this movie?",
+        "translation": "(你看过这部电影吗？)",
+        "options": [
+          "Have / seen",
+          "Did / see",
+          "Do / see",
+          "Are / seeing"
+        ],
+        "correct": "Have / seen",
+        "explanation": "现在完成时疑问句：Have/Has + 主语 + 过去分词。'Have you seen this movie?' = 你看过这部电影吗（人生中任何时候）？中文用\"...过...吗\"：\"看过这部电影吗？\" 回答：'Yes, I have.' 或 'No, I haven't.'（不需要重复动词）。如果加具体时间则用过去式：'Did you see it yesterday?'"
+      },
+      {
+        "id": "ce_pp5",
+        "question": "He _____ here since Monday.",
+        "translation": "(他从周一起就在这里)",
+        "options": [
+          "has been",
+          "was",
+          "is",
+          "will be"
+        ],
+        "correct": "has been",
+        "explanation": "'Since'（从...以来）+ 具体时间点 = 现在完成时。'He has been here since Monday' = 从周一开始一直到现在都在这里。这是中文和英语的重大差异：中文说\"从周一起就在这里\"用现在时态，英语必须用现在完成时表示\"过去开始、持续到现在\"的状态。'Since' vs 'for'：since + 时间点，for + 时间段。"
+      },
+      {
+        "id": "ce_pp6",
+        "question": "They _____ English for five years.",
+        "translation": "(他们学英语学了五年了)",
+        "options": [
+          "have studied",
+          "studied",
+          "study",
+          "are studying"
+        ],
+        "correct": "have studied",
+        "explanation": "'For'（持续）+ 时间段 = 现在完成时（动作延续到现在）。'They have studied for five years' = 学了五年且还在学。对比：'They studied for five years'（过去式）= 学了五年但已经停止。中文两种情况都说\"学了五年\"，英语通过时态区分。关键：动作是否延续到现在？是→现在完成时。"
+      },
+      {
+        "id": "ce_pp7",
+        "question": "I _____ just _____ breakfast.",
+        "translation": "(我刚吃完早饭)",
+        "options": [
+          "have / had",
+          "did / have",
+          "am / having",
+          "was / having"
+        ],
+        "correct": "have / had",
+        "explanation": "'Just'（刚刚）表示刚刚发生的事。'I have just had breakfast' = 刚吃完早饭（影响现在——我不饿）。位置：have + just + 过去分词。'Had'是have（吃/拥有）的过去分词。中文\"刚\"和英语just类似，但中文不需要改变动词形式。在英式英语中just几乎总是用现在完成时。"
+      },
+      {
+        "id": "ce_pp8",
+        "question": "She _____ not _____ him yet.",
+        "translation": "(她还没见到他)",
+        "options": [
+          "has / met",
+          "did / meet",
+          "does / meet",
+          "is / meeting"
+        ],
+        "correct": "has / met",
+        "explanation": "'Yet'（还/尚未）用在否定句和疑问句末尾，表示\"到目前为止还没有\"。'She has not met him yet' = 她到目前为止还没见到他（但预期会见到）。否定结构：has/have + not + 过去分词 + yet。可缩写：hasn't met yet。'Met'是meet的不规则过去分词（meet-met-met）。中文\"还没\"和yet功能相似。"
+      },
+      {
+        "id": "ce_pp9",
+        "question": "How many countries _____ you _____?",
+        "translation": "(你去过多少个国家？)",
+        "options": [
+          "have / visited",
+          "did / visit",
+          "do / visit",
+          "are / visiting"
+        ],
+        "correct": "have / visited",
+        "explanation": "'How many...have you + 过去分词？'是询问人生经历数量的常用句型。'How many countries have you visited?' = 你到目前为止去过几个国家？这是现在完成时因为在问整个人生的累积经历。如果问特定时间：'How many countries did you visit last year?'（过去式）。中文两者都用\"去过\"。"
+      },
+      {
+        "id": "ce_pp10",
+        "question": "I _____ my keys! Help!",
+        "translation": "(我把钥匙弄丢了！帮帮我！)",
+        "options": [
+          "have lost",
+          "lost",
+          "am losing",
+          "lose"
+        ],
+        "correct": "have lost",
+        "explanation": "过去事件的结果影响现在 = 现在完成时。'I have lost my keys' = 过去弄丢了，现在手上没有（需要帮助）。这是present perfect最核心的用法：过去 → 现在的影响。对比：'I lost my keys yesterday'（过去式）= 只是描述过去的事实。中文\"丢了\"不区分，英语必须根据是否强调当前影响来选择时态。"
+      },
+      {
+        "id": "ce_pp11",
+        "question": "The train _____ already _____.",
+        "translation": "(火车已经走了)",
+        "options": [
+          "has / left",
+          "did / leave",
+          "is / leaving",
+          "does / leave"
+        ],
+        "correct": "has / left",
+        "explanation": "结果影响现在：'The train has already left' = 火车已经走了（所以你现在坐不了）。'Already'强调\"比预期更早\"或\"已经完成\"。'Left'是leave的不规则过去分词（leave-left-left）。如果只是叙述：'The train left at 9 AM'（过去式）。中文\"已经走了\"的\"了\"兼有完成和变化的意义，英语用has + 过去分词明确表示。"
+      },
+      {
+        "id": "ce_pp12",
+        "question": "It _____ the best day of my life.",
+        "translation": "(这是我人生中最好的一天)",
+        "options": [
+          "has been",
+          "was",
+          "is being",
+          "will be"
+        ],
+        "correct": "has been",
+        "explanation": "最高级 + 现在完成时 = 人生中最...的。'It has been the best day' = 到目前为止最好的（评价持续到现在）。常见搭配：the best/worst/most + 名词 + I have ever + 过去分词。如果这一天已经结束：'It was the best day'（过去式）也可以。中文\"这是最好的一天\"不区分时态，英语靠时态表达是否仍在经历。"
+      },
+      {
+        "id": "ce_pp13",
+        "question": "We _____ a lot about grammar this year.",
+        "translation": "(今年我们学了很多语法)",
+        "options": [
+          "have learned",
+          "learned",
+          "learn",
+          "are learning"
+        ],
+        "correct": "have learned",
+        "explanation": "'This year'（今年）= 未结束的时间段 → 现在完成时。'We have learned a lot this year' = 今年到目前为止学了很多。类似词：this week, this month, today, so far。这些都表示\"从过去到现在\"的未完成时间段。如果时间段结束了：'We learned a lot last year'（过去式）。中文都用\"学了\"，英语通过时态区分。"
+      },
+      {
+        "id": "ce_pp14",
+        "question": "_____ it ever _____ in this city?",
+        "translation": "(这个城市下过雪吗？)",
+        "options": [
+          "Has / snowed",
+          "Did / snow",
+          "Does / snow",
+          "Is / snowing"
+        ],
+        "correct": "Has / snowed",
+        "explanation": "'Has it ever...?' = 有没有曾经...？用于询问某地是否发生过某事。'Has it ever snowed in this city?' = 这个城市有在任何时候下过雪吗？'Ever'表示\"在任何时候\"，增强经历的含义。'Snowed'是snow的规则过去分词。中文\"下过雪吗\"用\"过\"表达经历，英语用have/has + ever + 过去分词。两种语言都有经历标记。"
+      },
+      {
+        "id": "ce_pp15",
+        "question": "I _____ that restaurant. It's great!",
+        "translation": "(我去过那家餐厅。很棒！)",
+        "options": [
+          "have tried",
+          "tried",
+          "try",
+          "am trying"
+        ],
+        "correct": "have tried",
+        "explanation": "经历 + 当前评价 = 现在完成时。'I have tried that restaurant' = 我有去过那家餐厅的经历，然后给出现在的评价\"It's great\"。这正是现在完成时的精髓：把过去的经历和现在的知识/状态联系起来。对比：'I tried it last week'（过去式）只描述时间。中文\"去过\"和\"去了\"的区别类似，但英语的语法标记更明确。"
+      }
+    ]
   }
 ]

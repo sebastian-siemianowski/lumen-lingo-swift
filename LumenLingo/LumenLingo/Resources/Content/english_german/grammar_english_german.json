@@ -1228,5 +1228,210 @@
         "explanation": "'Bis' means 'until/to'. 'Bis acht Uhr' (until eight). 'Bis' typically doesn't show case because it often merges with another preposition: 'bis zum Bahnhof' (until/to the station). Here 'zu' + 'dem' contracts to 'zum', showing dative. 'Bis' alone with time expressions doesn't require article. Time prepositions have special rules. 'Bis' marks temporal endpoint. It's essential for expressing duration limits."
       }
     ]
+  },
+  {
+    "key": "modal_verbs",
+    "name": "Modalverben",
+    "description": "German modal verbs (können, müssen, dürfen, sollen, wollen, mögen)",
+    "iconName": "shield",
+    "color": "#4ade80",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_mod1",
+        "question": "Ich _____ Deutsch sprechen. (can)",
+        "translation": "(I can speak German.)",
+        "options": [
+          "kann",
+          "können",
+          "kannst",
+          "könnt"
+        ],
+        "correct": "kann",
+        "explanation": "'Können' (can/to be able to) conjugates irregularly: ich kann, du kannst, er/sie kann, wir können, ihr könnt, sie können. With 'ich', use 'kann'. KEY RULE: The main verb goes to the END in infinitive form: 'Ich kann Deutsch sprechen' — NOT 'Ich kann spreche Deutsch'. This infinitive-at-end structure is unique to German modals and doesn't exist in English."
+      },
+      {
+        "id": "eg_mod2",
+        "question": "Du _____ das nicht tun! (must not)",
+        "translation": "(You must not do that!)",
+        "options": [
+          "darfst",
+          "musst",
+          "kannst",
+          "sollst"
+        ],
+        "correct": "darfst",
+        "explanation": "CAREFUL: 'must not' = 'dürfen' (nicht), NOT 'müssen'. 'Du darfst das nicht tun' = you are not allowed/permitted. 'Dürfen' is about PERMISSION. 'Müssen' is about NECESSITY. This is a common trap: English 'must not' = prohibition, German 'nicht müssen' = no obligation (don't have to). 'Dürfen' conjugation: ich darf, du darfst, er darf."
+      },
+      {
+        "id": "eg_mod3",
+        "question": "Wir _____ morgen früh aufstehen. (must)",
+        "translation": "(We must get up early tomorrow.)",
+        "options": [
+          "müssen",
+          "möchten",
+          "dürfen",
+          "können"
+        ],
+        "correct": "müssen",
+        "explanation": "'Müssen' (must/have to) expresses necessity or obligation. 'Wir müssen' = we must. The infinitive 'aufstehen' (to get up) goes to the END of the sentence. With separable verbs like 'aufstehen', the prefix stays attached in infinitive form. Conjugation: ich muss, du musst, er muss, wir müssen. Note: no umlaut in singular forms (muss, not müss)."
+      },
+      {
+        "id": "eg_mod4",
+        "question": "Er _____ eine neue Jacke kaufen. (wants to)",
+        "translation": "(He wants to buy a new jacket.)",
+        "options": [
+          "will",
+          "möchte",
+          "soll",
+          "kann"
+        ],
+        "correct": "will",
+        "explanation": "FALSE FRIEND ALERT: German 'will' means 'wants to', NOT future tense! 'Er will kaufen' = he wants to buy. For future, German uses 'werden': 'Er wird kaufen'. 'Wollen' conjugation: ich will, du willst, er will, wir wollen. 'Möchte' (would like to) is the polite form of 'wollen'. This German-English 'will' confusion is one of the most common mistakes."
+      },
+      {
+        "id": "eg_mod5",
+        "question": "_____ ich hier rauchen? (may)",
+        "translation": "(May I smoke here?)",
+        "options": [
+          "Darf",
+          "Kann",
+          "Muss",
+          "Soll"
+        ],
+        "correct": "Darf",
+        "explanation": "'Dürfen' (may/to be permitted) is used for asking permission politely. 'Darf ich...?' = May I...? is the polite way to ask. While 'Kann ich...?' (Can I...?) works informally, 'Darf ich' is more proper. In questions, the modal verb comes first (verb-first word order). 'Rauchen' stays at the end as infinitive. Conjugation: ich darf, du darfst, er/sie darf."
+      },
+      {
+        "id": "eg_mod6",
+        "question": "Ihr _____ mehr Wasser trinken. (should)",
+        "translation": "(You all should drink more water.)",
+        "options": [
+          "sollt",
+          "müsst",
+          "könnt",
+          "wollt"
+        ],
+        "correct": "sollt",
+        "explanation": "'Sollen' (should/ought to) gives advice or expresses expectation. 'Ihr sollt' = you (plural) should. 'Sollen' is unique because it keeps its vowel unchanged: ich soll, du sollst, er soll, wir sollen, ihr sollt. No vowel change unlike können (kann) or müssen (muss). 'Sollen' can also mean 'is supposed to': 'Er soll nett sein' = he's supposed to be nice."
+      },
+      {
+        "id": "eg_mod7",
+        "question": "Sie _____ gerne Schokolade. (likes)",
+        "translation": "(She likes chocolate.)",
+        "options": [
+          "mag",
+          "möchte",
+          "will",
+          "kann"
+        ],
+        "correct": "mag",
+        "explanation": "'Mögen' (to like) is the sixth modal verb, often used without an infinitive: 'Sie mag Schokolade' (she likes chocolate). Conjugation: ich mag, du magst, er/sie mag, wir mögen. 'Möchte' (would like) comes from mögen but has become a separate modal of its own: 'Ich möchte Kaffee' = I'd like coffee. Difference: 'mag' = general preference, 'möchte' = specific current wish."
+      },
+      {
+        "id": "eg_mod8",
+        "question": "Die Kinder _____ nicht so spät ins Bett gehen. (should)",
+        "translation": "(The children shouldn't go to bed so late.)",
+        "options": [
+          "sollten",
+          "müssten",
+          "könnten",
+          "dürften"
+        ],
+        "correct": "sollten",
+        "explanation": "'Sollten' is the Konjunktiv II (subjunctive) of 'sollen' — it softens advice to a suggestion. 'Die Kinder sollten' = the children should (it would be advisable). All modals have subjunctive forms: könnte, müsste, dürfte, sollte, wollte, möchte. These are used for politeness, hypotheticals, and softened statements. English uses 'should/could/would' similarly."
+      },
+      {
+        "id": "eg_mod9",
+        "question": "Ich _____ als Kind gut schwimmen. (could)",
+        "translation": "(I could swim well as a child.)",
+        "options": [
+          "konnte",
+          "könnte",
+          "kann",
+          "können"
+        ],
+        "correct": "konnte",
+        "explanation": "'Konnte' is the PAST TENSE (Präteritum) of 'können'. 'Ich konnte schwimmen' = I was able to swim (fact). CAREFUL: 'könnte' (with umlaut) = COULD/would be able to (hypothetical). 'Konnte' vs 'könnte' is like English 'could' (past fact) vs 'could' (possibility). German makes this distinction clearer than English. Modal verbs typically use Präteritum (not Perfekt) in past."
+      },
+      {
+        "id": "eg_mod10",
+        "question": "_____ du mir bitte helfen? (could)",
+        "translation": "(Could you please help me?)",
+        "options": [
+          "Könntest",
+          "Kannst",
+          "Musst",
+          "Willst"
+        ],
+        "correct": "Könntest",
+        "explanation": "'Könntest' (could you) is Konjunktiv II of 'können' — used for polite requests. Much more polite than 'Kannst du?' (can you?). The umlaut marks subjunctive: können → könn-. Add subjunctive endings: ich könnte, du könntest, er könnte, wir könnten. 'Bitte' (please) adds extra politeness. This polite modal pattern is essential in German everyday communication."
+      },
+      {
+        "id": "eg_mod11",
+        "question": "Er _____ gestern nicht kommen. (was able to)",
+        "translation": "(He wasn't able to come yesterday.)",
+        "options": [
+          "konnte",
+          "könnte",
+          "kann",
+          "gekonnt"
+        ],
+        "correct": "konnte",
+        "explanation": "Past tense of modals: use Präteritum, not Perfekt. 'Er konnte nicht kommen' = he couldn't come. With Perfekt, modals use a special double infinitive: 'Er hat nicht kommen können' — but this is rare and mainly written. Präteritum forms: konnte, musste, durfte, sollte, wollte, mochte. These are the standard way to express modal past in spoken German."
+      },
+      {
+        "id": "eg_mod12",
+        "question": "Man _____ hier nicht parken. (is allowed to)",
+        "translation": "(One must not park here.)",
+        "options": [
+          "darf",
+          "muss",
+          "soll",
+          "kann"
+        ],
+        "correct": "darf",
+        "explanation": "'Man darf hier nicht parken' = parking is not allowed here. 'Man' (one/people in general) + 'darf nicht' = prohibition for everyone. Signs often use this: 'Hier darf man nicht rauchen' (no smoking). Remember: 'nicht dürfen' = prohibition (must not), 'nicht müssen' = no obligation (don't have to). The man + modal construction is very common for expressing general rules."
+      },
+      {
+        "id": "eg_mod13",
+        "question": "Ich _____ lieber zu Hause bleiben. (would)",
+        "translation": "(I would rather stay at home.)",
+        "options": [
+          "möchte",
+          "muss",
+          "darf",
+          "soll"
+        ],
+        "correct": "möchte",
+        "explanation": "'Möchte' (would like to) + 'lieber' (rather/preferably) = would prefer to. 'Ich möchte lieber bleiben' = I'd rather stay. 'Möchte' is technically Konjunktiv II of 'mögen' but functions as its own modal for polite wishes: 'Ich möchte einen Kaffee' = I'd like a coffee. Never say 'Ich will einen Kaffee' in a café — that's too direct. Möchte is the polite standard."
+      },
+      {
+        "id": "eg_mod14",
+        "question": "Das Kind _____ seine Hausaufgaben machen. (is supposed to)",
+        "translation": "(The child is supposed to do homework.)",
+        "options": [
+          "soll",
+          "will",
+          "darf",
+          "mag"
+        ],
+        "correct": "soll",
+        "explanation": "'Sollen' for external expectation: 'Das Kind soll' = someone expects the child to (parents, teachers). Compare: 'will' = the child itself wants to. 'Sollen' often implies someone else's instruction or wish: 'Der Arzt sagt, ich soll mehr Sport machen' = the doctor says I should exercise more. The source of obligation is key: sollen = external, müssen = necessity, wollen = internal."
+      },
+      {
+        "id": "eg_mod15",
+        "question": "Wir _____ nächstes Jahr nach Japan reisen. (want to)",
+        "translation": "(We want to travel to Japan next year.)",
+        "options": [
+          "wollen",
+          "werden",
+          "sollen",
+          "mögen"
+        ],
+        "correct": "wollen",
+        "explanation": "'Wollen' (want to) expresses strong intention: 'Wir wollen reisen' = we want to travel. DON'T confuse with 'werden' (will/shall for future): 'Wir werden reisen' = we will travel. 'Wollen' = desire, 'werden' = future tense auxiliary. 'Wir wollen' keeps the infinitive 'reisen' at the end. In subordinate clauses, the modal goes to the very end: 'Ich weiß, dass wir reisen wollen'."
+      }
+    ]
   }
 ]
