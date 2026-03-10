@@ -20,6 +20,9 @@ struct QuantumFlowSettingsView: View {
             // Header with toggle
             headerRow
 
+            // Rave mode
+            raveModeToggle
+
             // Controls always visible (React: <Collapse isOpen={true}>)
             // The toggle only controls whether LayoutBackgroundView renders the quantum layer.
 
@@ -42,6 +45,7 @@ struct QuantumFlowSettingsView: View {
                 intensity: profile?.quantumIntensity ?? 1.0,
                 speed: profile?.quantumSpeed ?? 1.0,
                 isDarkMode: isDark,
+                raveMode: profile?.quantumRaveMode ?? false,
                 onDismiss: { previewingScene = nil }
             )
         }
@@ -73,6 +77,34 @@ struct QuantumFlowSettingsView: View {
                 isOn: profile?.quantumFlowEnabled ?? true,
                 onToggle: {
                     withAnimation { profile?.quantumFlowEnabled.toggle() }
+                }
+            )
+        }
+    }
+
+    // MARK: - Rave Mode
+
+    private var raveModeToggle: some View {
+        HStack(spacing: 12) {
+            Image(systemName: "bolt.fill")
+                .font(.system(size: 20))
+                .foregroundStyle(.pink)
+
+            VStack(alignment: .leading, spacing: 2) {
+                Text(L.raveMode)
+                    .font(.system(size: 17, weight: .semibold))
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
+                Text("Flowing palette transitions")
+                    .font(.system(size: 13))
+                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
+            }
+
+            Spacer()
+
+            PremiumToggle(
+                isOn: profile?.quantumRaveMode ?? false,
+                onToggle: {
+                    withAnimation { profile?.quantumRaveMode.toggle() }
                 }
             )
         }
@@ -200,17 +232,19 @@ struct FullscreenQuantumFlowPreview: View {
     let intensity: Double
     let speed: Double
     let isDarkMode: Bool
+    let raveMode: Bool
     let onDismiss: () -> Void
 
     @State private var currentIndex: Int = 0
 
     private let allScenes = QuantumFlowScene.allCases
 
-    init(initialScene: QuantumFlowScene, intensity: Double, speed: Double, isDarkMode: Bool, onDismiss: @escaping () -> Void) {
+    init(initialScene: QuantumFlowScene, intensity: Double, speed: Double, isDarkMode: Bool, raveMode: Bool = false, onDismiss: @escaping () -> Void) {
         self.initialScene = initialScene
         self.intensity = intensity
         self.speed = speed
         self.isDarkMode = isDarkMode
+        self.raveMode = raveMode
         self.onDismiss = onDismiss
         _currentIndex = State(initialValue: QuantumFlowScene.allCases.firstIndex(of: initialScene) ?? 0)
     }
@@ -228,7 +262,8 @@ struct FullscreenQuantumFlowPreview: View {
                 scene: currentScene,
                 intensity: intensity,
                 speed: speed,
-                isDarkMode: isDarkMode
+                isDarkMode: isDarkMode,
+                raveMode: raveMode
             )
             .ignoresSafeArea()
 

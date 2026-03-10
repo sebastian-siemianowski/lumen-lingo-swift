@@ -72,6 +72,9 @@ struct LayoutBackgroundView: View {
     private var orbRaveMode: Bool {
         profile?.orbRaveMode ?? false
     }
+    private var quantumRaveMode: Bool {
+        profile?.quantumRaveMode ?? false
+    }
 
     var body: some View {
         let isDark = colorScheme == .dark
@@ -115,7 +118,7 @@ struct LayoutBackgroundView: View {
 
                 // Layer 2: Quantum flow — Metal GPU aurora (respects user toggle + active state)
                 if showQuantumFlow && isActive {
-                    MetalQuantumFlowView(scene: quantumScene, intensity: quantumIntensity, speed: quantumSpeed, isDarkMode: isDark)
+                    MetalQuantumFlowView(scene: quantumScene, intensity: quantumIntensity, speed: quantumSpeed, isDarkMode: isDark, raveMode: quantumRaveMode)
                         .opacity(isDark ? 0.85 : 0.7)
                 }
 

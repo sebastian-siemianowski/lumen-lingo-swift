@@ -88,15 +88,15 @@ struct BreathingOrbsSettingsView: View {
     private var raveModeToggle: some View {
         HStack(spacing: 12) {
             Image(systemName: "bolt.fill")
-                .font(.system(size: 16))
+                .font(.system(size: 20))
                 .foregroundStyle(.pink)
 
             VStack(alignment: .leading, spacing: 2) {
                 Text(L.raveMode)
-                    .font(.system(size: 15, weight: .medium))
+                    .font(.system(size: 17, weight: .semibold))
                     .foregroundStyle(isDark ? .white : .caribbeanInk)
-                Text(L.rapidColorCycling)
-                    .font(.system(size: 12))
+                Text("Vivid colour cycling across orbs")
+                    .font(.system(size: 13))
                     .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
             }
 
@@ -109,7 +109,6 @@ struct BreathingOrbsSettingsView: View {
                 }
             )
         }
-        .padding(.horizontal, 4)
     }
 
     // MARK: - Scheme Selector

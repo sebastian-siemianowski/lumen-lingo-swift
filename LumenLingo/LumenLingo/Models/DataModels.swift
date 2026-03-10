@@ -30,6 +30,7 @@ final class UserProfile {
     var orbRaveMode: Bool
     var quantumIntensity: Double
     var quantumSpeed: Double
+    var quantumRaveMode: Bool = false
     var nebulaDriftIntensity: Double
     var nebulaDriftSpeed: Double
 
@@ -104,6 +105,7 @@ final class UserProfile {
         orbRaveMode: Bool = false,
         quantumIntensity: Double = 1.0,
         quantumSpeed: Double = 1.0,
+        quantumRaveMode: Bool = false,
         nebulaDriftIntensity: Double = 1.0,
         nebulaDriftSpeed: Double = 1.0,
         gamesSoundsEnabled: Bool = true,
@@ -135,6 +137,7 @@ final class UserProfile {
         self.orbRaveMode = orbRaveMode
         self.quantumIntensity = quantumIntensity
         self.quantumSpeed = quantumSpeed
+        self.quantumRaveMode = quantumRaveMode
         self.nebulaDriftIntensity = nebulaDriftIntensity
         self.nebulaDriftSpeed = nebulaDriftSpeed
         self.gamesSoundsEnabled = gamesSoundsEnabled

@@ -21,6 +21,7 @@ struct QuantumFlowUniforms {
     float2 resolution;
     int sceneIndex;   // 0..5 matching QuantumFlowScene
     int isDarkMode;   // 0 or 1
+    int raveMode;     // 0 or 1 — rapid palette cycling
 };
 
 // ---- Constant palette (device-constant, not rebuilt per-pixel) ----
@@ -84,6 +85,7 @@ fragment half4 quantumFlowFragment(
 
     int scene   = u.sceneIndex;
     bool dark   = (u.isDarkMode != 0);
+    bool rave   = (u.raveMode != 0);
     float elapsed = u.time * u.speed;
 
     // ---- Per-frame constants (computed once, reused 12×) ----
@@ -94,6 +96,27 @@ fragment half4 quantumFlowFragment(
     float invResY = 1.0 / u.resolution.y;
     float resX    = u.resolution.x;
 
+    // ---- Rave Mode: smooth palette cycling on GPU ----
+    // Cycles through all 6 scene palettes continuously using time.
+    // Uses fractional index + mix() for silky-smooth transitions.
+    float ravePhase = 0.0;
+    float raveFrac  = 0.0;
+    int   raveIdxA  = 0;
+    int   raveIdxB  = 0;
+    if (rave) {
+        // ~8 seconds per scene transition — slow, tranquil palette drift
+        ravePhase = fract(u.time * 0.125);       // 0→1 over 8 seconds
+        float raveF = ravePhase * 6.0;            // 0→6, then wraps
+        raveIdxA = int(raveF) % 6;
+        raveIdxB = (raveIdxA + 1) % 6;
+        raveFrac = fract(raveF);                  // interpolation factor
+
+        // Use blended blend factors
+        float blA = dark ? kBlendDark[raveIdxA] : kBlendLight[raveIdxA];
+        float blB = dark ? kBlendDark[raveIdxB] : kBlendLight[raveIdxB];
+        blendFac = mix(blA, blB, raveFrac);
+    }
+
     half hScaledInt = half(scaledIntensity);
     half hBaseAlpha = dark ? 0.28h : 0.42h;
     half hAlphaCap  = dark ? 0.95h : 0.92h;
@@ -101,6 +124,9 @@ fragment half4 quantumFlowFragment(
     half hIntBoost  = half(dark ? min(1.0 + scaledIntensity * 0.3,  1.5)
                                 : min(1.0 + scaledIntensity * 0.25, 1.4));
     bool doGlow = (scaledIntensity > 0.6);
+
+    // Rave mode: always enable glow for extra vibrancy
+    if (rave) doGlow = true;
 
     // Branchless gradient shape parameters (dark / light selected once)
     float shR1 = dark ? 0.08 : 0.06;
@@ -111,10 +137,20 @@ fragment half4 quantumFlowFragment(
     float shP3 = dark ? 0.22 : 0.34;
 
     // Pre-fetch palette for this scene (4 colours, half-precision)
+    // In rave mode: blend two scene palettes smoothly
     int sc = clamp(scene, 0, 5);
     half3 palette[4];
-    for (int i = 0; i < 4; i++) {
-        palette[i] = dark ? kDarkPalette[sc][i] : kLightPalette[sc][i];
+    if (rave) {
+        half hFrac = half(raveFrac);
+        for (int i = 0; i < 4; i++) {
+            half3 colA = dark ? kDarkPalette[raveIdxA][i] : kLightPalette[raveIdxA][i];
+            half3 colB = dark ? kDarkPalette[raveIdxB][i] : kLightPalette[raveIdxB][i];
+            palette[i] = mix(colA, colB, hFrac);
+        }
+    } else {
+        for (int i = 0; i < 4; i++) {
+            palette[i] = dark ? kDarkPalette[sc][i] : kLightPalette[sc][i];
+        }
     }
 
     // ---- Accumulator ----
@@ -221,6 +257,19 @@ fragment half4 quantumFlowFragment(
         float aspect = u.resolution.x * invResY;
         half vig = 1.0h - half(smoothstep(0.3, 0.9, length((uv - 0.5) * float2(aspect, 1.0))));
         col *= mix(0.85h, 1.0h, vig);
+    }
+
+    // ---- Rave Mode: saturation boost + subtle pulse ----
+    // Increases colour vibrancy and adds a gentle brightness pulse
+    // synchronised to the palette cycling. Zero cost when rave is off.
+    if (rave) {
+        // Subtle saturation lift
+        half lum = dot(col, half3(0.2126h, 0.7152h, 0.0722h));
+        col = mix(half3(lum), col, 1.15h);  // 15% saturation boost
+
+        // Slow, gentle brightness breathing synced to palette drift
+        half pulse = half(1.0 + 0.04 * sin(u.time * 0.785));  // ~8s cycle
+        col *= pulse;
     }
 
     // ---- Output premultiplied alpha ----
