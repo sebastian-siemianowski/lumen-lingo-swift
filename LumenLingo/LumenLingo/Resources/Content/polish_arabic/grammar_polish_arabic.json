@@ -1433,5 +1433,2055 @@
         "explanation": "'ليسوا' (laysu) = 'oni nie są' — forma 3. osoby liczby mnogiej rodzaju męskiego od 'ليس'. 'هم ليسوا هنا' = oni nie są tutaj. Końcówka -وا wskazuje liczbę mnogą męską. Dla żeńskiej: 'هن لسن هنا' (one nie są tutaj). To podsumowanie odmian ليس: لستُ, لستَ, لستِ, ليس, ليست, لسنا, لستم, لستنّ, ليسوا, لسن — 10 form dla jednego 'nie jest'!"
       }
     ]
+  },
+  {
+    "key": "gender_agreement",
+    "name": "Rodzaj gramatyczny",
+    "description": "المذكر والمؤنث",
+    "iconName": "person.2.circle",
+    "color": "#f472b6",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_ga1",
+        "question": "الطالب _____.",
+        "translation": "(Student jest nowy – forma męska)",
+        "options": [
+          "جديد",
+          "جديدة",
+          "جدد",
+          "جديدان"
+        ],
+        "correct": "جديد",
+        "explanation": "W arabskim przymiotnik musi zgadzać się z rzeczownikiem w rodzaju. 'الطالب' (student) to rzeczownik rodzaju męskiego, więc przymiotnik 'nowy' przyjmuje formę męską 'جديد'. Gdyby to była studentka (الطالبة), przymiotnik miałby formę żeńską 'جديدة' z końcówką tā' marbūṭa (ة). Polski też ma rodzaj gramatyczny (nowy/nowa), ale arabski jest bardziej konsekwentny – niemal zawsze żeński kończy się na ة."
+      },
+      {
+        "id": "pa_ga2",
+        "question": "المعلمة _____.",
+        "translation": "(Nauczycielka jest miła)",
+        "options": [
+          "لطيفة",
+          "لطيف",
+          "لطفاء",
+          "لطيفان"
+        ],
+        "correct": "لطيفة",
+        "explanation": "Rzeczownik 'المعلمة' (nauczycielka) to forma żeńska od 'المعلم' (nauczyciel), rozpoznajemy to po końcówce ة (tā' marbūṭa). Przymiotnik 'miły' musi przyjąć formę żeńską 'لطيفة' zamiast męskiej 'لطيف'. Reguła jest prosta: jeśli rzeczownik jest żeński, przymiotnik też musi być żeński. W polskim mamy analogiczną zasadę: nauczycielka jest miła (nie miły). Arabski stosuje tę samą logikę zgody rodzajowej."
+      },
+      {
+        "id": "pa_ga3",
+        "question": "هذا _____ كبير.",
+        "translation": "(To jest duży dom)",
+        "options": [
+          "بيت",
+          "بيتة",
+          "بيوت",
+          "بيتان"
+        ],
+        "correct": "بيت",
+        "explanation": "Zaimek wskazujący 'هذا' (ten) jest formą męską, więc musi łączyć się z rzeczownikiem męskim. 'بيت' (dom) jest męski, a przymiotnik 'كبير' (duży) również w formie męskiej. Cały zwrot zachowuje zgodność rodzajową. Gdyby rzeczownik był żeński, użylibyśmy 'هذه' (ta) zamiast 'هذا' (ten). Polski ma trzy rodzaje (męski, żeński, nijaki), arabski tylko dwa – nie ma rodzaju nijakiego."
+      },
+      {
+        "id": "pa_ga4",
+        "question": "الشمس _____.",
+        "translation": "(Słońce jest piękne)",
+        "options": [
+          "جميلة",
+          "جميل",
+          "جميلان",
+          "جمال"
+        ],
+        "correct": "جميلة",
+        "explanation": "Słowo 'الشمس' (słońce) jest w arabskim rodzaju żeńskiego, mimo że nie kończy się na tā' marbūṭa (ة). To jeden z wyjątków – niektóre rzeczowniki są żeńskie z natury, np. nazwy par ciała (عين – oko, يد – ręka) i ciała niebieskie (الشمس – słońce). W polskim 'słońce' jest nijakie, ale w arabskim brak rodzaju nijakiego, więc jest żeńskie. Dlatego przymiotnik ma formę żeńską 'جميلة'."
+      },
+      {
+        "id": "pa_ga5",
+        "question": "الكتاب _____ على الطاولة.",
+        "translation": "(Książka jest nowa na stole)",
+        "options": [
+          "الجديد",
+          "الجديدة",
+          "جديدة",
+          "الجدد"
+        ],
+        "correct": "الجديد",
+        "explanation": "Kiedy przymiotnik opisuje rzeczownik z rodzajnikiem 'ال' (al-), przymiotnik też musi mieć rodzajnik. 'الكتاب' (książka) jest rodzaju męskiego z rodzajnikiem, więc przymiotnik to 'الجديد' (nowy) z rodzajnikiem, w formie męskiej. To podwójna zgoda: w rodzaju I w określoności. Porównaj z polskim: 'ta nowa książka' – też zgoda w rodzaju, ale bez odpowiednika arabskiego rodzajnika 'ال'."
+      },
+      {
+        "id": "pa_ga6",
+        "question": "_____ سيارة حمراء.",
+        "translation": "(To jest czerwony samochód)",
+        "options": [
+          "هذه",
+          "هذا",
+          "هؤلاء",
+          "ذلك"
+        ],
+        "correct": "هذه",
+        "explanation": "Słowo 'سيارة' (samochód) jest rodzaju żeńskiego – kończy się na tā' marbūṭa (ة). Dlatego zaimek wskazujący musi być w formie żeńskiej 'هذه' (ta), nie męskiej 'هذا' (ten). Co ciekawe, 'samochód' w polskim jest męski, ale arabski 'سيارة' jest żeński. Kolory w arabskim też mają formy rodzajowe: 'أحمر' (czerwony, m.) / 'حمراء' (czerwona, f.). Tutaj użyto formy żeńskiej 'حمراء'."
+      },
+      {
+        "id": "pa_ga7",
+        "question": "الولد _____ في المدرسة.",
+        "translation": "(Chłopiec jest obecny w szkole)",
+        "options": [
+          "موجود",
+          "موجودة",
+          "موجودون",
+          "موجودات"
+        ],
+        "correct": "موجود",
+        "explanation": "Rzeczownik 'الولد' (chłopiec) jest naturalnie męski, więc imiesłów 'موجود' (obecny/znajdujący się) przyjmuje formę męską. Forma żeńska 'موجودة' pasowałaby do 'البنت' (dziewczynka). Arabski imiesłów bierny (اسم المفعول) odmienia się jak przymiotnik – podlega tej samej regule zgody rodzajowej. W polskim 'obecny/obecna' też się zmienia, co ułatwia zrozumienie tej zasady."
+      },
+      {
+        "id": "pa_ga8",
+        "question": "المدينة _____.",
+        "translation": "(Miasto jest duże)",
+        "options": [
+          "كبيرة",
+          "كبير",
+          "كبيران",
+          "أكبر"
+        ],
+        "correct": "كبيرة",
+        "explanation": "Słowo 'المدينة' (miasto) jest rodzaju żeńskiego – końcówka ة to potwierdza. Przymiotnik 'duży' musi więc być w formie żeńskiej 'كبيرة'. Warto zapamiętać, że w polskim 'miasto' jest nijakie (duże), ale arabski nie ma rodzaju nijakiego. Większość słów kończących się na ة to żeńskie, choć istnieją wyjątki jak 'خليفة' (kalif) – męskie mimo końcówki ة."
+      },
+      {
+        "id": "pa_ga9",
+        "question": "الأستاذ _____ في الجامعة.",
+        "translation": "(Profesor pracuje na uniwersytecie)",
+        "options": [
+          "يعمل",
+          "تعمل",
+          "يعملون",
+          "نعمل"
+        ],
+        "correct": "يعمل",
+        "explanation": "Zgoda rodzajowa dotyczy też czasowników. 'الأستاذ' (profesor, m.) wymaga męskiej formy czasownika z prefiksem ي (ya-): 'يعمل' (pracuje). Gdyby podmiotem była 'الأستاذة' (profesor, f.), czasownik miałby prefiks ت (ta-): 'تعمل'. W polskim też mamy zgodę: profesor pracuje / profesorka pracuje (ale sam czasownik w czasie teraźniejszym nie zmienia formy). Arabski jest tu bardziej precyzyjny."
+      },
+      {
+        "id": "pa_ga10",
+        "question": "الممرضة _____ المريض.",
+        "translation": "(Pielęgniarka pomaga pacjentowi)",
+        "options": [
+          "تساعد",
+          "يساعد",
+          "نساعد",
+          "تساعدين"
+        ],
+        "correct": "تساعد",
+        "explanation": "Podmiot 'الممرضة' (pielęgniarka) jest żeński, więc czasownik wymaga żeńskiego prefiksu ت (ta-): 'تساعد' (pomaga). Uwaga: ten sam prefiks ت używa się dla 'ty' (m.) i 'ona', ale kontekst (podmiot w trzeciej osobie żeńskiej) wskazuje na 'ona'. To częste źródło pomyłek dla Polaków. W polskim czasownik teraźniejszy nie rozróżnia rodzaju: 'pomaga' jest identyczne dla niej i niego."
+      },
+      {
+        "id": "pa_ga11",
+        "question": "القطة _____ صغيرة.",
+        "translation": "(Kotka jest mała – wyraz orzekający)",
+        "options": [
+          "هي",
+          "هو",
+          "أنتِ",
+          "هم"
+        ],
+        "correct": "هي",
+        "explanation": "W zdaniu nominalnym (bez czasownika) możemy dodać zaimek osobowy jako łącznik. 'القطة' (kotka) jest żeńska, więc potrzebujemy zaimka 'هي' (ona). W polskim powiedzielibyśmy 'kotka jest mała' – z czasownikiem 'jest'. Arabski w czasie teraźniejszym pomija 'jest', ale może dodać zaimek dla podkreślenia. Formy: هو (on) dla męskich, هي (ona) dla żeńskich. To fundamentalna różnica między językami."
+      },
+      {
+        "id": "pa_ga12",
+        "question": "الرجل _____ طويل.",
+        "translation": "(Mężczyzna jest wysoki – forma zaimka)",
+        "options": [
+          "هو",
+          "هي",
+          "هم",
+          "أنت"
+        ],
+        "correct": "هو",
+        "explanation": "Zaimek osobowy 'هو' (on) odpowiada rzeczownikowi męskiemu 'الرجل' (mężczyzna). Przymiotnik 'طويل' (wysoki) też jest w formie męskiej – bez ة. Cały system zgody jest spójny: rzeczownik męski → zaimek męski → przymiotnik męski. W polskim: mężczyzna – on – wysoki. Widać analogię między oboma językami w zakresie zgody rodzajowej, co może ułatwić naukę."
+      },
+      {
+        "id": "pa_ga13",
+        "question": "_____ جميل.",
+        "translation": "(Pogoda jest piękna – ale 'dzień' jest męski)",
+        "options": [
+          "اليوم",
+          "الليلة",
+          "السنة",
+          "الساعة"
+        ],
+        "correct": "اليوم",
+        "explanation": "Przymiotnik 'جميل' (piękny) jest w formie męskiej (bez ة), więc potrzebujemy męskiego rzeczownika. 'اليوم' (dzień) jest męski. Pozostałe opcje: 'الليلة' (noc, f.), 'السنة' (rok, f.), 'الساعة' (godzina, f.) – wszystkie żeńskie, wymagałyby 'جميلة'. Ciekawe, że 'dzień' jest męski, a 'noc' żeńska w arabskim. W polskim też: dzień (m.) i noc (f.), to zbieżność między oboma językami."
+      },
+      {
+        "id": "pa_ga14",
+        "question": "هذه _____ مفيدة.",
+        "translation": "(Ta książka jest pożyteczna)",
+        "options": [
+          "مجلة",
+          "كتاب",
+          "قلم",
+          "حاسوب"
+        ],
+        "correct": "مجلة",
+        "explanation": "Zaimek 'هذه' (ta) jest żeński, a przymiotnik 'مفيدة' (pożyteczna) też ma formę żeńską. Potrzebujemy więc żeńskiego rzeczownika. 'مجلة' (czasopismo/magazyn) jest żeńskie (końcówka ة). Pozostałe: 'كتاب' (książka, m.), 'قلم' (długopis, m.), 'حاسوب' (komputer, m.) – nie pasują. Uwaga: polskie 'książka' jest żeńska, ale arabski 'كتاب' jest męski – to typowy fałszywy przyjaciel rodzajowy."
+      },
+      {
+        "id": "pa_ga15",
+        "question": "الطبيبة _____ ممتازة.",
+        "translation": "(Lekarka jest doskonała – cały zwrot żeński)",
+        "options": [
+          "صارت",
+          "صار",
+          "صاروا",
+          "صرنا"
+        ],
+        "correct": "صارت",
+        "explanation": "Czasownik 'صار' (stał się/został) w przeszłości żeńskiej dodaje sufiks ت: 'صارت'. Podmiot 'الطبيبة' (lekarka) jest żeński, więc czasownik musi mieć formę żeńską, a orzecznik 'ممتازة' (doskonała) też żeński. Potrójne potwierdzenie zgody: rzeczownik + czasownik + przymiotnik – wszystko żeńskie. W polskim: lekarka stała się doskonała – ta sama zasada trigody rodzajowej."
+      }
+    ]
+  },
+  {
+    "key": "nominal_sentences",
+    "name": "Zdania imienne",
+    "description": "الجملة الاسمية",
+    "iconName": "text.alignleft",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_ns1",
+        "question": "البيت _____.",
+        "translation": "(Dom jest duży)",
+        "options": [
+          "كبير",
+          "يكبر",
+          "كبّر",
+          "أكبر"
+        ],
+        "correct": "كبير",
+        "explanation": "W arabskim zdanie imienne (الجملة الاسمية) składa się z podmiotu (المبتدأ) i orzeczenia (الخبر) – bez czasownika 'jest'. Po polsku powiemy 'dom jest duży', ale po arabsku wystarczy 'البيت كبير' – dosłownie 'dom duży'. Brak czasownika 'być' w czasie teraźniejszym to jedna z największych różnic między arabskim a polskim. Orzeczenie 'كبير' jest nieokreślone (bez ال), co odróżnia je od przydawki."
+      },
+      {
+        "id": "pa_ns2",
+        "question": "الطقس _____ اليوم.",
+        "translation": "(Pogoda jest ładna dzisiaj)",
+        "options": [
+          "جميل",
+          "الجميل",
+          "يجمل",
+          "جمال"
+        ],
+        "correct": "جميل",
+        "explanation": "Orzeczenie w zdaniu imiennym jest zwykle nieokreślone (bez rodzajnika ال), podczas gdy podmiot jest określony (z ال). 'الطقس' (pogoda) ma rodzajnik, ale orzeczenie 'جميل' (piękny/ładny) jest bez niego. Gdybyśmy dodali ال do przymiotnika, zmienilibyśmy orzeczenie w przydawkę: 'الطقس الجميل' = 'ładna pogoda' (grupa nominalna, nie zdanie). Ta subtelna różnica jest kluczowa w arabskim."
+      },
+      {
+        "id": "pa_ns3",
+        "question": "_____ طالب.",
+        "translation": "(On jest studentem)",
+        "options": [
+          "هو",
+          "هي",
+          "هم",
+          "أنا"
+        ],
+        "correct": "هو",
+        "explanation": "Zaimek osobowy może być podmiotem zdania imiennego. 'هو' (on) to podmiot, 'طالب' (student) to orzeczenie. Po polsku potrzebujemy 'jest' – 'on jest studentem'. Po arabsku wystarczy 'هو طالب' – dosłownie 'on student'. Zaimki osobowe są z natury określone, więc orzeczenie (طالب) pozostaje bez rodzajnika. Ten wzor jest podstawą przedstawiania się: أنا محمد (jestem Muhammad)."
+      },
+      {
+        "id": "pa_ns4",
+        "question": "الأطفال _____ في الحديقة.",
+        "translation": "(Dzieci są w parku/ogrodzie)",
+        "options": [
+          "موجودون",
+          "موجود",
+          "موجودة",
+          "يوجد"
+        ],
+        "correct": "موجودون",
+        "explanation": "W zdaniu imiennym orzeczenie musi się zgadzać z podmiotem w liczbie i rodzaju. 'الأطفال' (dzieci) to liczba mnoga męskoosobowa, więc imiesłów 'موجود' (obecny) przyjmuje formę mnogi regularne męską 'موجودون' (z końcówką -ūna). W polskim: 'dzieci są' – czasownik 'są' w czasie teraźniejszym. W arabskim nie ma 'są' – po prostu 'dzieci obecne w parku'. Zwrot przyimkowy 'في الحديقة' może też pełnić rolę orzeczenia."
+      },
+      {
+        "id": "pa_ns5",
+        "question": "السماء _____.",
+        "translation": "(Niebo jest niebieskie)",
+        "options": [
+          "زرقاء",
+          "أزرق",
+          "زرقة",
+          "زُرق"
+        ],
+        "correct": "زرقاء",
+        "explanation": "Kolory w arabskim mają specjalny wzorzec: أفعل (m.) / فعلاء (f.). 'السماء' (niebo) jest żeńskie, więc kolor 'niebieski' przyjmuje żeńską formę 'زرقاء' (zarqā'), nie męską 'أزرق' (azraq). Kolory w arabskim nie zachowują się jak zwykłe przymiotniki – mają nieodmienny wzór. W polskim 'niebo jest niebieskie' – rodzaj nijaki, których w arabskim nie ma. Arabski kompensuje to bogactwem form kolorów."
+      },
+      {
+        "id": "pa_ns6",
+        "question": "محمد _____.",
+        "translation": "(Muhammad jest inżynierem)",
+        "options": [
+          "مهندس",
+          "المهندس",
+          "يهندس",
+          "مهندسة"
+        ],
+        "correct": "مهندس",
+        "explanation": "Imiona własne są z natury określone w arabskim, więc nie potrzebują ال. Orzeczenie 'مهندس' (inżynier) jest nieokreślone – to wyznacznik, że mamy do czynienia ze zdaniem imiennym, nie grupą nominalną. Gdybyśmy napisali 'محمد المهندس', byłoby to 'Muhammad-inżynier' (przydawka), nie 'Muhammad jest inżynierem'. Ta subtelność jest kluczowa dla zrozumienia arabskiej składni i komunikacji."
+      },
+      {
+        "id": "pa_ns7",
+        "question": "الماء _____ للحياة.",
+        "translation": "(Woda jest niezbędna dla życia)",
+        "options": [
+          "ضروري",
+          "ضرورية",
+          "الضروري",
+          "يضر"
+        ],
+        "correct": "ضروري",
+        "explanation": "Słowo 'الماء' (woda) jest gramatycznie rodzaju męskiego w arabskim, mimo że w polskim 'woda' jest żeńska. Dlatego przymiotnik-orzeczenie ma formę męską 'ضروري' (niezbędny), nie żeńską 'ضرورية'. To doskonały przykład różnic rodzajowych między językami. Zwrot 'للحياة' (dla życia) to przyimek ل (dla) + الحياة (życie). W zdaniu imiennym takie dopełnienia mogą swobodnie towarzyszyć orzeczeniu."
+      },
+      {
+        "id": "pa_ns8",
+        "question": "هذا الكتاب _____.",
+        "translation": "(Ta książka jest interesująca)",
+        "options": [
+          "ممتع",
+          "الممتع",
+          "يمتع",
+          "ممتعة"
+        ],
+        "correct": "ممتع",
+        "explanation": "Podmiot 'هذا الكتاب' (ta książka) jest określony dzięki zaimkowi wskazującemu هذا i rodzajnikowi ال. Orzeczenie 'ممتع' (interesujący) jest nieokreślone – to kluczowa zasada zdania imiennego. Zauważ, że 'كتاب' (książka) jest w arabskim męski, więc przymiotnik jest w formie męskiej mimo że polskie 'książka' jest żeńska. Polska 'interesująca' staje się arabskim 'ممتع' – pułapka fałszywego rodzajowego przyjaciela."
+      },
+      {
+        "id": "pa_ns9",
+        "question": "النجاح _____ صعب.",
+        "translation": "(Osiągnięcie sukcesu jest trudne)",
+        "options": [
+          "شيء",
+          "أشياء",
+          "الشيء",
+          "شيئاً"
+        ],
+        "correct": "شيء",
+        "explanation": "Tutaj mamy złożone orzeczenie. 'النجاح' (sukces) to podmiot. Orzeczenie to 'شيء صعب' (trudna rzecz). Słowo 'شيء' (rzecz) jest nieokreślone, co potwierdza, że to część orzeczenia. W polskim powiedzielibyśmy 'sukces jest trudną rzeczą' z czasownikiem 'jest'. Arabskie zdanie imienne może mieć orzeczenie złożone z rzeczownika i przymiotnika, tworząc bogatszą strukturę opisu."
+      },
+      {
+        "id": "pa_ns10",
+        "question": "_____ من مصر.",
+        "translation": "(Ja jestem z Egiptu)",
+        "options": [
+          "أنا",
+          "أنتَ",
+          "هو",
+          "نحن"
+        ],
+        "correct": "أنا",
+        "explanation": "Najprostsze zdanie imienne do przedstawiania się: zaimek + wyrażenie przyimkowe. 'أنا من مصر' – dosłownie 'ja z Egiptu'. W polskim potrzebujemy 'jestem': 'ja jestem z Egiptu'. Arabski w czasie teraźniejszym nie używa 'jest/jestem'. Wyrażenie przyimkowe 'من مصر' (z Egiptu) pełni rolę orzeczenia. Ten wzorzec jest niezwykle praktyczny: أنا من بولندا (jestem z Polski). Proste, eleganckie i natychmiast użyteczne."
+      },
+      {
+        "id": "pa_ns11",
+        "question": "الحياة _____ قصيرة.",
+        "translation": "(Życie jest krótkie – z zaimkiem łącznikowym)",
+        "options": [
+          "هي",
+          "هو",
+          "هم",
+          "أنتِ"
+        ],
+        "correct": "هي",
+        "explanation": "Między podmiotem a orzeczeniem można wstawić zaimek separacyjny (ضمير الفصل). 'الحياة' (życie) jest żeńskie, więc zaimek to 'هي'. Zdanie 'الحياة هي قصيرة' podkreśla orzeczenie. Bez zaimka: 'الحياة قصيرة' – neutralne stwierdzenie. Z zaimkiem: nacisk na 'właśnie krótkie'. W polskim użylibyśmy intonacji lub słowa 'to': 'życie to jest krótkie'. Arabski zaimek separacyjny pełni podobną funkcję emfatyczną."
+      },
+      {
+        "id": "pa_ns12",
+        "question": "المشكلة _____ أنّنا متأخرون.",
+        "translation": "(Problem polega na tym, że się spóźniamy)",
+        "options": [
+          "هي",
+          "هو",
+          "هم",
+          "أنتم"
+        ],
+        "correct": "هي",
+        "explanation": "Zdanie imienne może mieć jako orzeczenie całe zdanie podrzędne. 'المشكلة' (problem) jest żeńskie w arabskim, więc zaimek separacyjny to 'هي'. Orzeczeniem jest zdanie z 'أنّ' (że): 'أنّنا متأخرون' (że się spóźniamy). أنّ wymaga podmiotu w bierniku. W polskim: 'problem jest taki, że...' – potrzebujemy 'jest'. Arabski konstruuje to bez czasownika 'być', ale z zaimkiem separacyjnym dla jasności."
+      },
+      {
+        "id": "pa_ns13",
+        "question": "الجو _____ في الصيف.",
+        "translation": "(Jest gorąco latem – dosł. powietrze jest gorące)",
+        "options": [
+          "حار",
+          "حارة",
+          "الحار",
+          "يحر"
+        ],
+        "correct": "حار",
+        "explanation": "Słowo 'الجو' (pogoda/atmosfera) jest rodzaju męskiego, więc orzeczenie 'حار' (gorący) jest w formie męskiej. Wyrażenie 'في الصيف' (latem) to okolicznik czasu. W polskim 'jest gorąco' to konstrukcja bezosobowa. Arabski nie ma bezosobowości – musi mieć podmiot: 'الجو حار' (powietrze jest gorące). To typowa różnica – polski lubuje się w formach bezosobowych, arabski woli konkrety."
+      },
+      {
+        "id": "pa_ns14",
+        "question": "أنتَ _____ ذكي.",
+        "translation": "(Ty jesteś bardzo inteligentny)",
+        "options": [
+          "جداً",
+          "كثير",
+          "الأكثر",
+          "أكثر"
+        ],
+        "correct": "جداً",
+        "explanation": "Przysłówek 'جداً' (bardzo) stoi po przymiotniku w zdaniu imiennym: 'أنتَ ذكي جداً'. W polskim 'bardzo' stoi przed przymiotnikiem ('bardzo inteligentny'), ale w arabskim 'جداً' zawsze po. Zdanie imienne może zawierać modyfikatory orzeczenia. Zwróć uwagę na tanwīn – 'جداً' zawsze jest w formie biernikowej z tanwīnem. To okolicznik stopnia wbudowany w strukturę zdania imiennego."
+      },
+      {
+        "id": "pa_ns15",
+        "question": "الطلاب _____ في الفصل.",
+        "translation": "(Studenci są w sali lekcyjnej)",
+        "options": [
+          "هم",
+          "هو",
+          "هي",
+          "نحن"
+        ],
+        "correct": "هم",
+        "explanation": "Podmiot 'الطلاب' (studenci) to liczba mnoga, więc zaimek separacyjny to 'هم' (oni). Zdanie 'الطلاب هم في الفصل' podkreśla, że to właśnie w klasie się znajdują. Wyrażenie przyimkowe 'في الفصل' (w klasie) pełni funkcję orzeczenia. W polskim: 'studenci są w klasie' – z czasownikiem. Arabski zdanie imienne z wyrażeniem przyimkowym jako orzeczeniem to jedna z najczęstszych konstrukcji w codziennym użyciu."
+      }
+    ]
+  },
+  {
+    "key": "sun_moon_letters",
+    "name": "Litery słoneczne i księżycowe",
+    "description": "الحروف الشمسية والقمرية",
+    "iconName": "sun.max",
+    "color": "#fbbf24",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_sm1",
+        "question": "_____ شمس (aš-šams)",
+        "translation": "(Słońce – litera szin jest słoneczna)",
+        "options": [
+          "الشَّمس",
+          "الْشَمس",
+          "أشمس",
+          "شمسال"
+        ],
+        "correct": "الشَّمس",
+        "explanation": "Litera ش (szin) jest literą słoneczną. Gdy dodajemy rodzajnik ال (al-), litera ل (lām) nie jest wymawiana, a zamiast tego ش jest podwojona (z szaddą): الشَّمس (aš-šams), nie al-šams. Po polsku nie ma nic podobnego – rodzajnik zawsze brzmi tak samo. W arabskim 14 z 28 liter to litery słoneczne – asymilują ل rodzajnika. Zapisujemy ال, ale wymawiamy tylko podwojoną literę po nim."
+      },
+      {
+        "id": "pa_sm2",
+        "question": "_____ قمر (al-qamar)",
+        "translation": "(Księżyc – litera qāf jest księżycowa)",
+        "options": [
+          "القَمَر",
+          "الْقَّمر",
+          "أقمر",
+          "قمرال"
+        ],
+        "correct": "القَمَر",
+        "explanation": "Litera ق (qāf) jest literą księżycową. Rodzajnik ال jest wymawiany w pełni: al-qamar. Litera ل (lām) jest słyszalna. Pozostałe 14 liter arabskiego alfabetu to litery księżycowe – nie asymilują ل rodzajnika. Podział na litery słoneczne i księżycowe dotyczy tylko wymowy – pisownia ال jest zawsze taka sama. To jak gdyby polski miał dwa sposoby wymowy 'ten' w zależności od następnej głoski."
+      },
+      {
+        "id": "pa_sm3",
+        "question": "_____ تفاحة (at-tuffāḥa)",
+        "translation": "(Jabłko – litera tā' jest słoneczna)",
+        "options": [
+          "التُّفاحة",
+          "الْتُفاحة",
+          "أتفاحة",
+          "تفاحةال"
+        ],
+        "correct": "التُّفاحة",
+        "explanation": "Litera ت (tā') jest słoneczną – wymawiane at-tuffāḥa, nie al-tuffāḥa. Szadda nad ت oznacza podwojenie: التُّفاحة. Litery słoneczne to te wytwarzane czubkiem języka (przedzębie i dziąsła): ت ث د ذ ر ز س ش ص ض ط ظ ل ن. Ich artykulacja jest bliska ل, co powoduje asymilację. Porównaj z polskim: my też upraszczamy w wymowie, np. 'z szafki' → 'sz-szafki'."
+      },
+      {
+        "id": "pa_sm4",
+        "question": "_____ كتاب (al-kitāb)",
+        "translation": "(Książka – litera kāf jest księżycowa)",
+        "options": [
+          "الكِتاب",
+          "الْكِّتاب",
+          "أكتاب",
+          "كتابال"
+        ],
+        "correct": "الكِتاب",
+        "explanation": "Litera ك (kāf) jest księżycowa, więc rodzajnik zachowuje pełną wymowę: al-kitāb. Litera ل jest słyszalna. Nie ma podwojenia ك. Litery księżycowe to: ا ب ج ح خ ع غ ف ق ك م ه و ي. Są artykułowane dalej od ل, więc nie ma asymilacji. Zapamiętaj: jeśli wymówienie 'al-' przed literą jest łatwe, to pewnie księżycowa. Jeśli trudne – słoneczna."
+      },
+      {
+        "id": "pa_sm5",
+        "question": "_____ نهر (an-nahr)",
+        "translation": "(Rzeka – litera nūn jest słoneczna)",
+        "options": [
+          "النَّهر",
+          "الْنَهر",
+          "أنهر",
+          "نهرال"
+        ],
+        "correct": "النَّهر",
+        "explanation": "Litera ن (nūn) jest słoneczna: النَّهر wymawiane an-nahr. Szadda nad ن wskazuje podwojenie. Nūn jest artykułowana na dziąśle, blisko ل, co powoduje naturalną asymilację. W polskim mamy podobne zjawisko: 'on nie' wymawiane szybko brzmi jak 'onnie'. Arabski sformalizował tę naturalną tendencję fonetyczną w regułę. Pisownia ال jest stała, zmienia się tylko wymowa."
+      },
+      {
+        "id": "pa_sm6",
+        "question": "_____ باب (al-bāb)",
+        "translation": "(Drzwi – litera bā' jest księżycowa)",
+        "options": [
+          "الباب",
+          "البَّاب",
+          "أباب",
+          "بابال"
+        ],
+        "correct": "الباب",
+        "explanation": "Litera ب (bā') jest księżycowa – الباب wymawiane al-bāb z pełnym 'al-'. Nie ma szaddy nad ب. Interesujące jest, że ب jest wargowa (artykułowana wargami), daleko od dziąsłowego ل, więc asymilacja nie zachodzi. Ta fonetyczna logika ułatwia zapamiętanie podziału. W polskim nie mamy rodzajników, ale mamy fonetyczne upraszczenia w połączeniach spółgłoskowych – zasada jest uniwersalna."
+      },
+      {
+        "id": "pa_sm7",
+        "question": "_____ دار (ad-dār)",
+        "translation": "(Dom/siedziba – litera dāl jest słoneczna)",
+        "options": [
+          "الدَّار",
+          "الْدار",
+          "أدار",
+          "دارال"
+        ],
+        "correct": "الدَّار",
+        "explanation": "Litera د (dāl) jest słoneczna – الدَّار wymawiane ad-dār, z podwojonym د. Dāl to głoska zębowa, artykułowana w tym samym miejscu co ل, stąd asymilacja. Słowo 'دار' oznacza dom/siedzibę – to synonim 'بيت', ale bardziej literacki. Dla Polaków najtrudniejsze jest pamiętanie o podwojeniu w wymowie przy zachowaniu standardowej pisowni ال. Praktyka i słuchanie pomogą."
+      },
+      {
+        "id": "pa_sm8",
+        "question": "_____ ولد (al-walad)",
+        "translation": "(Chłopiec – litera wāw jest księżycowa)",
+        "options": [
+          "الوَلَد",
+          "الوَّلد",
+          "أولاد",
+          "ولدال"
+        ],
+        "correct": "الوَلَد",
+        "explanation": "Litera و (wāw) jest księżycowa – الوَلَد wymawiane al-walad. Wāw jest głoską dwuwargową/tylnojęzykową, artykułowaną daleko od ل. Dlatego rodzajnik zachowuje pełne 'al-'. Uwaga: nie mylić z liczbą mnogą 'أولاد' (chłopcy) – to inne słowo. Litery księżycowe tworzą łatwy do zapamiętania akronim w arabskim: ابغ حجك وخف عقيمه. Ta mnemotechnika jest popularna wśród nauczycieli arabskiego."
+      },
+      {
+        "id": "pa_sm9",
+        "question": "_____ رجل (ar-rajul)",
+        "translation": "(Mężczyzna – litera rā' jest słoneczna)",
+        "options": [
+          "الرَّجل",
+          "الْرَجل",
+          "أرجل",
+          "رجلال"
+        ],
+        "correct": "الرَّجل",
+        "explanation": "Litera ر (rā') jest słoneczna – الرَّجل wymawiane ar-rajul. Rā' jest dziąsłowa, jak ل, co powoduje asymilację. Szadda nad ر oznacza podwojenie spółgłoski. Porównaj: 'الرَّجل' (ar-rajul – mężczyzna) z 'القَمَر' (al-qamar – księżyc). W pierwszym ل zanika, w drugim jest słyszalne. Ta różnica w wymowie jest jednym z pierwszych wyzwań dla uczących się arabskiego."
+      },
+      {
+        "id": "pa_sm10",
+        "question": "_____ حديقة (al-ḥadīqa)",
+        "translation": "(Ogród/park – litera ḥā' jest księżycowa)",
+        "options": [
+          "الحديقة",
+          "الحَّديقة",
+          "أحديقة",
+          "حديقةال"
+        ],
+        "correct": "الحديقة",
+        "explanation": "Litera ح (ḥā') jest księżycowa – الحديقة wymawiane al-ḥadīqa. Ḥā' to głoska gardłowa (pharyngeal), daleko od dziąsłowego ل. Wszystkie głoski gardłowe (ح خ ع غ) i krtaniowe (ه ء) są księżycowe – ich odległa artykulacja od ل wyklucza asymilację. Dla Polaków ح jest trudna do wymowy – to 'szeptane h' z gardła. Ale sama reguła rodzajnika jest prosta: nie ma podwojenia."
+      },
+      {
+        "id": "pa_sm11",
+        "question": "_____ صباح (aṣ-ṣabāḥ)",
+        "translation": "(Poranek – litera ṣād jest słoneczna)",
+        "options": [
+          "الصَّباح",
+          "الْصَباح",
+          "أصباح",
+          "صباحال"
+        ],
+        "correct": "الصَّباح",
+        "explanation": "Litera ص (ṣād) jest słoneczna – الصَّباح wymawiane aṣ-ṣabāḥ. Ṣād to emfatyczna wersja س – artykułowana na dziąśle z cofniętym językiem. Zwrot 'الصَّباح' pojawia się w codziennym pozdrowieniu: صباح الخير (ṣabāḥ al-ḫayr – dzień dobry, dosł. poranek dobra). Tu widzimy kontrast: ص jest słoneczna w 'الصَّباح', ale خ jest księżycowa w 'الخير'. Praktyczne zastosowanie codzienne."
+      },
+      {
+        "id": "pa_sm12",
+        "question": "_____ يوم (al-yawm)",
+        "translation": "(Dzień – litera yā' jest księżycowa)",
+        "options": [
+          "اليَوم",
+          "اليَّوم",
+          "أيوام",
+          "يومال"
+        ],
+        "correct": "اليَوم",
+        "explanation": "Litera ي (yā') jest księżycowa – اليَوم wymawiane al-yawm. Yā' to półsamogłoska podniebienna, daleko od dziąsłowego ل. Słowo 'يوم' (dzień) jest jednym z najpopularniejszych w arabskim. W zwrocie 'اليوم' (dzisiaj) rodzajnik jest w pełni wymówiony. Porównaj z 'النَّهار' (an-nahār – dzień/światło dnia), gdzie ن jest słoneczna i ل zanika. Oba znaczą 'dzień', ale w różnych kontekstach."
+      },
+      {
+        "id": "pa_sm13",
+        "question": "_____ طالب (aṭ-ṭālib)",
+        "translation": "(Student – litera ṭā' jest słoneczna)",
+        "options": [
+          "الطَّالب",
+          "الْطالب",
+          "أطالب",
+          "طالبال"
+        ],
+        "correct": "الطَّالب",
+        "explanation": "Litera ط (ṭā') jest słoneczna – الطَّالب wymawiane aṭ-ṭālib. Ṭā' to emfatyczna wersja ت – obie są słoneczne, bo obie dziąsłowe. Emfatyczne spółgłoski (ط ظ ص ض) są wymawiane z cofniętym korzeniem języka, co nadaje im ciemne, 'grube' brzmienie. Dla Polaków ich rozróżnienie jest trudne, ale ważne – zmiana ت na ط może zmienić znaczenie słowa."
+      },
+      {
+        "id": "pa_sm14",
+        "question": "_____ غرفة (al-ġurfa)",
+        "translation": "(Pokój – litera ġajn jest księżycowa)",
+        "options": [
+          "الغرفة",
+          "الغَّرفة",
+          "أغرفة",
+          "غرفةال"
+        ],
+        "correct": "الغرفة",
+        "explanation": "Litera غ (ġajn) jest księżycowa – الغرفة wymawiane al-ġurfa. Ġajn to głoska tylnojęzykowa (uvularna), podobna do francuskiego 'r'. Jest daleko od ل, więc nie ma asymilacji. Ciekawy kontrast: غ (księżycowa) a ل (słoneczna sama do siebie!). Tak, ل jest literą słoneczną – w الليل (al-lajl → al-lajl) podwajamy ل. To jedyny przypadek, gdzie obie ل łączą się w jedną podwojoną."
+      },
+      {
+        "id": "pa_sm15",
+        "question": "_____ ذهب (aḏ-ḏahab)",
+        "translation": "(Złoto – litera ḏāl jest słoneczna)",
+        "options": [
+          "الذَّهب",
+          "الْذَهب",
+          "أذهب",
+          "ذهبال"
+        ],
+        "correct": "الذَّهب",
+        "explanation": "Litera ذ (ḏāl) jest słoneczna – الذَّهب wymawiane aḏ-ḏahab. Ḏāl to inter dentalna głoska (między zębami), artykułowana blisko ل. Słowo 'ذهب' ma dwa znaczenia: jako rzeczownik 'złoto', jako czasownik 'poszedł'. Kontekst rozstrzyga. Z rodzajnikiem ال to zawsze rzeczownik. Podsumowanie liter słonecznych: ت ث د ذ ر ز س ش ص ض ط ظ ل ن – wszystkie dziąsłowe lub zębowe."
+      }
+    ]
+  },
+  {
+    "key": "personal_pronouns_detailed",
+    "name": "Zaimki osobowe szczegółowo",
+    "description": "الضمائر الشخصية المنفصلة",
+    "iconName": "person.3",
+    "color": "#4ade80",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_ppd1",
+        "question": "_____ طبيب.",
+        "translation": "(Ja jestem lekarzem)",
+        "options": [
+          "أنا",
+          "أنتَ",
+          "هو",
+          "نحن"
+        ],
+        "correct": "أنا",
+        "explanation": "Zaimek 'أنا' (anā) oznacza 'ja' – jest wspólny dla obu rodzajów. W polskim 'ja' też nie zmienia się ze względu na rodzaj. Arabski ma 12 zaimków osobowych (polski 6), bo rozróżnia rodzaj w 2. i 3. osobie oraz ma liczbę podwójną. 'أنا طبيب' – zdanie imienne bez 'jestem'. Kobieta powiedziałaby 'أنا طبيبة' – zmienia się orzeczenie, nie zaimek."
+      },
+      {
+        "id": "pa_ppd2",
+        "question": "_____ من لبنان؟",
+        "translation": "(Czy ty jesteś z Libanu? – do mężczyzny)",
+        "options": [
+          "أنتَ",
+          "أنتِ",
+          "أنا",
+          "هو"
+        ],
+        "correct": "أنتَ",
+        "explanation": "Arabski ma dwie formy 'ty': أنتَ (anta) dla mężczyzny i أنتِ (anti) dla kobiety. To fundamentalna różnica z polskim, gdzie 'ty' jest jeden. Fatḥa nad ت (أنتَ) wskazuje męskość, kasra pod ت (أنتِ) – żeńskość. W piśmie bez samogłosek obie wyglądają identycznie (أنت), kontekst rozstrzyga. Ta dualność 'ty' pojawia się we wszystkich formach czasownika 2. osoby."
+      },
+      {
+        "id": "pa_ppd3",
+        "question": "_____ معلمة ممتازة.",
+        "translation": "(Ty jesteś doskonałą nauczycielką – do kobiety)",
+        "options": [
+          "أنتِ",
+          "أنتَ",
+          "هي",
+          "أنا"
+        ],
+        "correct": "أنتِ",
+        "explanation": "Zwracając się do kobiety, używamy 'أنتِ' (anti). Orzeczenie 'معلمة ممتازة' (doskonała nauczycielka) jest w formie żeńskiej, co potwierdza, że rozmawiamy z kobietą. W polskim: 'ty jesteś' – bez rozróżnienia. W arabskim: أنتَ (do mężczyzny) vs. أنتِ (do kobiety). Ta dystynkcja przenika cały  język – czasowniki, zaimki dzierżawcze, a nawet partykuły pytające zmienią formę w zależności od rodzaju rozmówcy."
+      },
+      {
+        "id": "pa_ppd4",
+        "question": "_____ يعمل في البنك.",
+        "translation": "(On pracuje w banku)",
+        "options": [
+          "هو",
+          "هي",
+          "هم",
+          "أنتَ"
+        ],
+        "correct": "هو",
+        "explanation": "Zaimek 'هو' (huwa) oznacza 'on'. Czasownik 'يعمل' (pracuje) ma prefiks ي wskazujący 3. osobę męską. W praktyce zaimek osobowy jest często pomijany, bo czasownik już zawiera informację o osobie. 'يعمل في البنك' wystarczyłoby. Dodanie 'هو' podkreśla podmiot, podobnie jak w polskim: 'pracuje w banku' vs. 'ON pracuje w banku'. Arabski i polski tu działają podobnie."
+      },
+      {
+        "id": "pa_ppd5",
+        "question": "_____ تدرس في الجامعة.",
+        "translation": "(Ona studiuje na uniwersytecie)",
+        "options": [
+          "هي",
+          "هو",
+          "أنتِ",
+          "هن"
+        ],
+        "correct": "هي",
+        "explanation": "Zaimek 'هي' (hiya) oznacza 'ona'. Czasownik 'تدرس' (studiuje) z prefiksem ت może oznaczać 'ona' lub 'ty (m.)' – kontekst i zaimek rozstrzygają. Tu zaimek 'هي' jednoznacznie wskazuje na 3. osobę żeńską. Polskie 'ona' jest jednoznaczne, ale arabski potrzebuje kontekstu, gdy czasownik jest dwuznaczny. Dlatego zaimki osobowe są ważniejsze w arabskim niż mogłoby się wydawać."
+      },
+      {
+        "id": "pa_ppd6",
+        "question": "_____ نحب السفر.",
+        "translation": "(My lubimy podróże)",
+        "options": [
+          "نحن",
+          "هم",
+          "أنتم",
+          "أنا"
+        ],
+        "correct": "نحن",
+        "explanation": "Zaimek 'نحن' (naḥnu) oznacza 'my' – nie rozróżnia rodzaju, jak polski 'my'. Czasownik 'نحب' (lubimy) ma prefiks ن wskazujący 1. osobę l. mn. 'السفر' (podróżowanie) to masdar (rzeczownik odczasownikowy) z rodzajnikiem. W polskim 'podróże' to po prostu liczba mnoga rzeczownika. Arabski woli masdary (formy gerundialnej) od polskich bezokoliczników."
+      },
+      {
+        "id": "pa_ppd7",
+        "question": "_____ تحبون القراءة.",
+        "translation": "(Wy lubicie czytanie – do grupy mężczyzn)",
+        "options": [
+          "أنتم",
+          "أنتن",
+          "هم",
+          "نحن"
+        ],
+        "correct": "أنتم",
+        "explanation": "Arabski ma dwie formy 'wy': أنتم (antum) dla grupy mężczyzn lub mieszanej, أنتن (antunna) wyłącznie dla grupy kobiet. W polskim 'wy' jest jedno. Końcówka czasownika '-ون' (-ūna) potwierdza l. mn. męską. Ta dystynkcja rodzajowa w 2. os. mn. jest unikalna – w polskim nie rozróżniamy 'wy' ze względu na rodzaj (tylko w formach przeszłych: 'lubiliście/lubiłyście')."
+      },
+      {
+        "id": "pa_ppd8",
+        "question": "_____ يذهبون إلى المدرسة.",
+        "translation": "(Oni chodzą do szkoły – grupa męska)",
+        "options": [
+          "هم",
+          "هن",
+          "أنتم",
+          "نحن"
+        ],
+        "correct": "هم",
+        "explanation": "Zaimek 'هم' (hum) oznacza 'oni' – dla grupy mężczyzn lub mieszanej. Końcówka '-ون' w 'يذهبون' potwierdza l. mn. męską. Zdanie arabskie z zaimkiem i czasownikiem jest redundantne (podwójna informacja o osobie), ale dozwolone dla emfazy. Grupa mieszana (mężczyźni + kobiety) zawsze traktowana jest gramatycznie jako męska – jak w polskim, gdzie 'oni poszli' obejmuje grupę mieszaną."
+      },
+      {
+        "id": "pa_ppd9",
+        "question": "_____ يدرسن في الخارج.",
+        "translation": "(One studiują za granicą – grupa kobieca)",
+        "options": [
+          "هن",
+          "هم",
+          "أنتن",
+          "هي"
+        ],
+        "correct": "هن",
+        "explanation": "Zaimek 'هن' (hunna) oznacza 'one' – wyłącznie dla grupy kobiet. Końcówka '-ن' w 'يدرسن' to marker 3. os. l. mn. żeńskiej. W polskim też mamy 'one' vs 'oni', ale tylko w mianowniku. Arabski konsekwentnie rozróżnia w zaimkach, czasownikach i przymiotnikach. 'الخارج' (zagranica) dosłownie 'to, co jest na zewnątrz' – rzeczownik z rodzajnikiem jako okolicznik miejsca."
+      },
+      {
+        "id": "pa_ppd10",
+        "question": "_____ تذهبان إلى السوق.",
+        "translation": "(Wy dwaj idziecie na targ – liczba podwójna)",
+        "options": [
+          "أنتما",
+          "أنتم",
+          "هما",
+          "نحن"
+        ],
+        "correct": "أنتما",
+        "explanation": "Arabski ma liczbę podwójną! 'أنتما' (antumā) oznacza 'wy dwaj/dwie' – nie rozróżnia rodzaju. Końcówka '-ان' w 'تذهبان' to marker l. podwójnej. Polski nie ma liczby podwójnej (miał w przeszłości). Arabski używa jej obowiązkowo, gdy mowa o dwóch osobach/rzeczach. System jest precyzyjny: 1 = liczba pojedyncza, 2 = podwójna, 3+ = mnoga. To trzystopniowy system zamiast polskiego dwustopniowego."
+      },
+      {
+        "id": "pa_ppd11",
+        "question": "_____ يسافران غداً.",
+        "translation": "(Oni dwaj podróżują jutro)",
+        "options": [
+          "هما",
+          "هم",
+          "أنتما",
+          "هن"
+        ],
+        "correct": "هما",
+        "explanation": "Zaimek 'هما' (humā) oznacza 'oni dwaj' lub 'one dwie'. Końcówka '-ان' w 'يسافران' potwierdza l. podwójną. 'غداً' (jutro) ma tanwīn (biernik) – to okolicznik czasu. Arabski może wyrażać przyszłość czasownikiem niedokonanym + okolicznikiem czasu, podobnie jak polski: 'podróżują jutro' – czas teraźniejszy w znaczeniu przyszłym. Nie zawsze potrzeba formy przyszłej."
+      },
+      {
+        "id": "pa_ppd12",
+        "question": "_____ تحبين الطبخ.",
+        "translation": "(Ty lubisz gotowanie – do kobiety)",
+        "options": [
+          "أنتِ",
+          "أنتَ",
+          "هي",
+          "أنا"
+        ],
+        "correct": "أنتِ",
+        "explanation": "Forma 'تحبين' (tuḥibbīna) z końcówką '-ين' to 2. os. l. poj. żeńska. Zaimek 'أنتِ' potwierdza, że zwracamy się do kobiety. Porównaj: أنتَ تحب (do mężczyzny) vs. أنتِ تحبين (do kobiety). Czasownik zmienia formę, a zaimek się zmienia. W polskim: 'ty lubisz' – identyczne dla obu rodzajów. Arabski jest pod tym względem precyzyjniejszy, co może być początkowo przytłaczające, ale z praktyką staje się naturalne."
+      },
+      {
+        "id": "pa_ppd13",
+        "question": "_____ أحب القهوة العربية.",
+        "translation": "(Ja lubię kawę arabską)",
+        "options": [
+          "أنا",
+          "نحن",
+          "هي",
+          "أنتَ"
+        ],
+        "correct": "أنا",
+        "explanation": "Choć zaimek 'أنا' jest opcjonalny (bo prefiks أ- w 'أحب' wskazuje 1. osobę), dodanie go jest naturalne w kontekście wyrażania preferencji. 'القهوة العربية' (kawa arabska) – przymiotnik 'العربية' jest żeński (bo 'القهوة' jest żeńska) i ma rodzajnik (bo jest przydawką, nie orzeczeniem). Kawa arabska (قهوة عربية) to ważny element kultury arabskiej – luźna, z kardamonem, podawana w małych filiżankach."
+      },
+      {
+        "id": "pa_ppd14",
+        "question": "_____ تحبون الرياضة؟",
+        "translation": "(Czy wy lubicie sport? – do grupy kobiet)",
+        "options": [
+          "أنتن",
+          "أنتم",
+          "هن",
+          "نحن"
+        ],
+        "correct": "أنتن",
+        "explanation": "Zwracając się do grupy wyłącznie kobiecej, używamy 'أنتن' (antunna). Uwaga: czasownik 'تحبون' powinien być 'تحببن' (tuḥbibnna), ale w potocznym arabskim forma męska bywa używana zamiennie. W standardowym MSA rozróżnienie jest obowiązkowe. 'الرياضة' (sport) to masdar od rdzenia ر-و-ض, dosłownie 'ćwiczenie/trening'. Forma jest żeńska (końcówka ة), jak wiele masdarów."
+      },
+      {
+        "id": "pa_ppd15",
+        "question": "هو طالب و_____ طالبة.",
+        "translation": "(On jest studentem, a ona jest studentką)",
+        "options": [
+          "هي",
+          "هو",
+          "أنا",
+          "أنتِ"
+        ],
+        "correct": "هي",
+        "explanation": "Kontrast: 'هو' (on) → 'طالب' (student, m.) vs. 'هي' (ona) → 'طالبة' (studentka, f.). Spójnik 'و' (wa) łączy dwa zdania imienne. Widzimy kompletny system: zaimek + orzeczenie, oba w tym samym rodzaju. W polskim: 'on jest studentem, a ona studentką' – też zgoda rodzajowa, ale z czasownikiem 'jest'. Arabski system jest bardziej ekonomiczny – dwa krótkie zdania bez żadnego czasownika."
+      }
+    ]
+  },
+  {
+    "key": "possessive_suffixes",
+    "name": "Sufiksy dzierżawcze",
+    "description": "الضمائر المتصلة للملكية",
+    "iconName": "hand.raised",
+    "color": "#818cf8",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_pos1",
+        "question": "كتاب_____ على الطاولة.",
+        "translation": "(Moja książka jest na stole)",
+        "options": [
+          "ي",
+          "كَ",
+          "هُ",
+          "نا"
+        ],
+        "correct": "ي",
+        "explanation": "Sufiks 'ي' (-ī) to zaimek dzierżawczy 1. osoby: 'mój/moja/moje'. Dodany do 'كتاب' (książka) tworzy 'كتابي' (moja książka). W polskim używamy osobnego słowa 'moja', w arabskim to sufiks przyłączany bezpośrednio. System jest elegancki: jeden sufiks zamiast odmienionego przymiotnika. Słowo z sufiksem dzierżawczym jest automatycznie określone – nie dodajemy ال. Nie można powiedzieć *الكتابي."
+      },
+      {
+        "id": "pa_pos2",
+        "question": "بيت_____ كبير.",
+        "translation": "(Twój dom jest duży – do mężczyzny)",
+        "options": [
+          "كَ",
+          "كِ",
+          "ي",
+          "هُ"
+        ],
+        "correct": "كَ",
+        "explanation": "Sufiks 'كَ' (-ka) to forma męska 'twój'. Do kobiety użylibyśmy 'كِ' (-ki). 'بيتكَ' (twój dom) – sufiks jest częścią słowa, nie oddzielnym wyrazem. W polskim 'twój' to osobny przymiotnik dzierżawczy. Arabski ma osobne sufiksy dla każdej osoby i rodzaju – system jest bardziej rozbudowany niż polski. Fatḥa (-ka) i kasra (-ki) to jedyna różnica między męskim a żeńskim."
+      },
+      {
+        "id": "pa_pos3",
+        "question": "سيارة_____ جديدة.",
+        "translation": "(Jej samochód jest nowy)",
+        "options": [
+          "ها",
+          "هُ",
+          "كِ",
+          "هم"
+        ],
+        "correct": "ها",
+        "explanation": "Sufiks 'ها' (-hā) oznacza 'jej': 'سيارتها' (jej samochód). Uwaga: gdy rzeczownik żeński kończy się na ة (tā' marbūṭa), przed sufiksem ة zmienia się w ت (tā' otwarte): سيارة → سيارتها. To automatyczna zmiana fonetyczna. W polskim: 'jej samochód' – osobne słowo. W arabskim to jedno połączone słowo. Przymiotnik 'جديدة' jest żeński, bo 'سيارة' jest żeńska, niezależnie od posiadaczki."
+      },
+      {
+        "id": "pa_pos4",
+        "question": "أصدقاء_____ لطيفون.",
+        "translation": "(Jego przyjaciele są mili)",
+        "options": [
+          "هُ",
+          "ها",
+          "كَ",
+          "ي"
+        ],
+        "correct": "هُ",
+        "explanation": "Sufiks 'هُ' (-hu) oznacza 'jego': 'أصدقاؤه' (jego przyjaciele). Rdzeń 'أصدقاء' (przyjaciele) to nieregularna l. mn. od 'صديق' (przyjaciel). Przymiotnik 'لطيفون' (mili) ma formę l. mn. męskoosobowej. W polskim: 'jego przyjaciele' – osobne słowo dzierżawcze. Arabski system sufiksów jest bardziej zwięzły. Kluczowe: sufiks odnosi się do posiadacza, nie do posiadanego – 'هُ' bo on posiada, nie bo przyjaciele są męscy."
+      },
+      {
+        "id": "pa_pos5",
+        "question": "مدرسة_____ قريبة.",
+        "translation": "(Nasza szkoła jest blisko)",
+        "options": [
+          "نا",
+          "ي",
+          "كم",
+          "هم"
+        ],
+        "correct": "نا",
+        "explanation": "Sufiks 'نا' (-nā) oznacza 'nasz': 'مدرستنا' (nasza szkoła). Uwaga na zamianę ة → ت przed sufiksem! 'مدرسة' → 'مدرستنا'. Sufiks 'نا' nie rozróżnia rodzaju – 'nasz' jest wspólny, jak w polskim (choć polski odmienia: nasz/nasza/nasze). Arabski 'نا' jest niezmienny. Przymiotnik 'قريبة' (bliska) jest żeński, bo 'مدرسة' jest żeńskie. System dzierżawczy jest prosty i regularny."
+      },
+      {
+        "id": "pa_pos6",
+        "question": "هاتف_____ جديد.",
+        "translation": "(Twój telefon jest nowy – do kobiety)",
+        "options": [
+          "كِ",
+          "كَ",
+          "ي",
+          "ها"
+        ],
+        "correct": "كِ",
+        "explanation": "Sufiks 'كِ' (-ki) to żeńska forma 'twój': 'هاتفكِ' (twój telefon – do kobiety). Porównaj: هاتفكَ (do mężczyzny) vs. هاتفكِ (do kobiety). Jedyna różnica to samogłoska: fatḥa vs. kasra. W piśmie bez diakrytyk oba wyglądają identycznie (هاتفك). Kontekst musi rozstrzygać. W polskim 'twój telefon' nie zmienia się w zależności od płci rozmówcy – tylko od rodzaju rzeczownika."
+      },
+      {
+        "id": "pa_pos7",
+        "question": "أولاد_____ في المدرسة.",
+        "translation": "(Wasze dzieci są w szkole – do grupy mężczyzn)",
+        "options": [
+          "كم",
+          "كن",
+          "هم",
+          "نا"
+        ],
+        "correct": "كم",
+        "explanation": "Sufiks 'كم' (-kum) oznacza 'wasz' (do grupy mężczyzn lub mieszanej): 'أولادكم' (wasze dzieci). Sufiks 'كن' (-kunna) byłby do grupy wyłącznie kobiet. 'أولاد' (dzieci/chłopcy) to l. mn. od 'ولد'. Arabski ma trzy warianty 'wasz': كما (do dwojga), كم (mn. męski/mieszany), كن (mn. żeński). To więcej form niż polski – system jest precyzyjny co do liczby i rodzaju adresatów."
+      },
+      {
+        "id": "pa_pos8",
+        "question": "عمل_____ مهم.",
+        "translation": "(Ich praca jest ważna – grupa męska)",
+        "options": [
+          "هم",
+          "هن",
+          "ها",
+          "نا"
+        ],
+        "correct": "هم",
+        "explanation": "Sufiks 'هم' (-hum) oznacza 'ich' (m./mieszany): 'عملهم' (ich praca). Sufiks 'هن' (-hunna) byłby wyłącznie dla kobiet. Rzeczownik 'عمل' (praca) jest męski, a przymiotnik 'مهم' (ważny) też męski. Ale sufiks 'هم' odnosi się do posiadaczy (oni), nie do rodzaju posiadanego. Kompletny system sufiksów 3. os.: ه/ها (l.poj.), هما (l.podw.), هم/هن (l.mn.). Dwanaście form w sumie."
+      },
+      {
+        "id": "pa_pos9",
+        "question": "أم_____ طبيبة.",
+        "translation": "(Moja mama jest lekarką)",
+        "options": [
+          "ي",
+          "كَ",
+          "هُ",
+          "نا"
+        ],
+        "correct": "ي",
+        "explanation": "Sufiks 'ي' (-ī) z 'أم' (mama) daje 'أمي' (moja mama). Słowo 'أم' nie kończy się na ة, więc nie ma zamiany. Zdanie imienne: 'أمي طبيبة' – dosłownie 'mama-moja lekarka'. Brak 'jest'. Orzeczenie 'طبيبة' (lekarka) jest żeńskie, bo opisuje kobietę. W polskim: 'moja mama jest lekarką'. Arabski jest tu bardziej zwięzły – dwa słowa zamiast czterech. Sufiks dzierżawczy oszczędza miejsce i czas."
+      },
+      {
+        "id": "pa_pos10",
+        "question": "أب_____ مهندس.",
+        "translation": "(Twój ojciec jest inżynierem – do mężczyzny)",
+        "options": [
+          "وكَ",
+          "ي",
+          "ها",
+          "نا"
+        ],
+        "correct": "وكَ",
+        "explanation": "Słowo 'أب' (ojciec) to jedno z 'pięciu rzeczowników' (الأسماء الخمسة), które odmieniają się długimi samogłoskami zamiast końcówek. W mianowniku: 'أبوكَ' (twój ojciec) z długim 'ū'. W bierniku: 'أباكَ', w dopełniaczu: 'أبيكَ'. Ten wzór dotyczy też: أخ (brat), حم (teść), فم (usta), ذو (posiadacz). To wyjątkowa grupa w arabskiej gramatyce, nie spotykana w polskim."
+      },
+      {
+        "id": "pa_pos11",
+        "question": "حقيبة_____ ثقيلة.",
+        "translation": "(Jej torba jest ciężka)",
+        "options": [
+          "ها",
+          "هُ",
+          "كِ",
+          "ي"
+        ],
+        "correct": "ها",
+        "explanation": "Sufiks 'ها' (-hā) daje 'حقيبتها' (jej torba). Znowu zamiana ة → ت. Przymiotnik 'ثقيلة' (ciężka) jest żeński, bo 'حقيبة' jest żeńska. Zwróć uwagę na rdzeń ث-ق-ل (ciężkość) – ten sam rdzeń w 'ثقيل' (ciężki, m.), 'ثقيلة' (ciężka, f.), 'ثِقَل' (ciężar). System rdzeni trójspółgłoskowych jest fascinujący – z jednego rdzenia powstaje cała rodzina słów. Polski nie ma tak systematycznego systemu."
+      },
+      {
+        "id": "pa_pos12",
+        "question": "مفاتيح_____ على المكتب.",
+        "translation": "(Nasze klucze są na biurku)",
+        "options": [
+          "نا",
+          "ي",
+          "هم",
+          "كم"
+        ],
+        "correct": "نا",
+        "explanation": "Sufiks 'نا' (-nā) daje 'مفاتيحنا' (nasze klucze). 'مفاتيح' to nieregularna l. mn. (جمع تكسير) od 'مفتاح' (klucz). Arabski ma wiele form nieregularnych – to jedno z najtrudniejszych zagadnień. 'المكتب' (biurko/biuro) od rdzenia ك-ت-ب (pisanie) – dosłownie 'miejsce pisania'. Wyrażenie przyimkowe 'على المكتب' (na biurku) jest orzeczeniem w tym zdaniu imiennym."
+      },
+      {
+        "id": "pa_pos13",
+        "question": "رأي_____ مهم.",
+        "translation": "(Wasz pogląd jest ważny – do grupy kobiet)",
+        "options": [
+          "كن",
+          "كم",
+          "هن",
+          "نا"
+        ],
+        "correct": "كن",
+        "explanation": "Sufiks 'كن' (-kunna) to 'wasz' kierowany wyłącznie do grupy kobiet: 'رأيكن' (wasz pogląd). W standardowym arabskim 'كم' (-kum) dla mężczyzn/mieszane, 'كن' (-kunna) tylko dla kobiet. 'رأي' (pogląd/opinia) od rdzenia ر-أ-ي (widzenie) – dosłownie 'to, co się widzi'. W polskim 'wasz' jest jeden bez względu na rodzaj adresatów. Arabski jest tu precyzyjniejszy."
+      },
+      {
+        "id": "pa_pos14",
+        "question": "بلد_____ جميل.",
+        "translation": "(Ich kraj jest piękny – o dwóch osobach)",
+        "options": [
+          "هما",
+          "هم",
+          "هن",
+          "كم"
+        ],
+        "correct": "هما",
+        "explanation": "Sufiks 'هما' (-humā) to forma l. podwójnej 'ich (dwóch)': 'بلدهما' (ich=tych dwojga kraj). Polskie 'ich' nie rozróżnia liczby – może dotyczyć dwóch lub dwustu osób. Arabski precyzyjnie rozróżnia: ه/ها (1 osoba), هما (2), هم/هن (3+). 'بلد' (kraj) jest męski, 'جميل' (piękny) też. Cały system podwójności w arabskim jest unikatowy – łączy precyzję z elegancją."
+      },
+      {
+        "id": "pa_pos15",
+        "question": "دروس_____ صعبة.",
+        "translation": "(Ich lekcje są trudne – grupa kobieca)",
+        "options": [
+          "هن",
+          "هم",
+          "كن",
+          "نا"
+        ],
+        "correct": "هن",
+        "explanation": "Sufiks 'هن' (-hunna) to 'ich' wyłącznie dla grupy kobiet: 'دروسهن' (ich lekcje). 'دروس' to l. mn. od 'درس' (lekcja). Przymiotnik 'صعبة' (trudna) jest w formie żeńskiej l. poj. – w arabskim l. mn. rzeczy (nieżywotnych) łączy się z przymiotnikiem w formie żeńskiej l. poj.! To ważna reguła: 'الدروس صعبة' (lekcje trudna), nie *'الدروس صعبات'. W polskim: 'lekcje są trudne' – l. mn."
+      }
+    ]
+  },
+  {
+    "key": "prepositions_basic_ar",
+    "name": "Przyimki podstawowe",
+    "description": "حروف الجر الأساسية",
+    "iconName": "arrow.right.circle",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_prep1",
+        "question": "أنا _____ البيت.",
+        "translation": "(Jestem w domu)",
+        "options": [
+          "في",
+          "على",
+          "من",
+          "إلى"
+        ],
+        "correct": "في",
+        "explanation": "Przyimek 'في' (fī) oznacza 'w/wewnątrz' i odpowiada polskiemu 'w' z miejscownikiem. Jest jednym z najczęściej używanych przyimków w arabskim. Występuje z rzeczownikami w dopełniaczu (مجرور). Np. 'في المدرسة' (w szkole), 'في السيارة' (w samochodzie). Nie mylić z 'على' (na) ani 'عند' (u/przy)."
+      },
+      {
+        "id": "pa_prep2",
+        "question": "الكتاب _____ الطاولة.",
+        "translation": "(Książka jest na stole)",
+        "options": [
+          "على",
+          "في",
+          "تحت",
+          "من"
+        ],
+        "correct": "على",
+        "explanation": "Przyimek 'على' (ʿalā) oznacza 'na/nad' — odpowiada polskiemu 'na' z miejscownikiem. Używany gdy coś jest NA powierzchni czegoś. 'على الطاولة' (na stole), 'على السرير' (na łóżku). Wymaga dopełniacza po sobie. Różni się od 'فوق' (ponad, bez kontaktu) i 'في' (wewnątrz)."
+      },
+      {
+        "id": "pa_prep3",
+        "question": "ذهبتُ _____ المدرسة.",
+        "translation": "(Poszedłem do szkoły)",
+        "options": [
+          "إلى",
+          "من",
+          "في",
+          "على"
+        ],
+        "correct": "إلى",
+        "explanation": "Przyimek 'إلى' (ilā) oznacza 'do/w kierunku' i wyraża ruch w stronę celu — odpowiada polskiemu 'do' z dopełniaczem. 'إلى المدرسة' (do szkoły), 'إلى البيت' (do domu). Jest głównym przyimkiem kierunku. Nie mylić z 'في' (w), które wskazuje na przebywanie w miejscu, nie ruch ku niemu."
+      },
+      {
+        "id": "pa_prep4",
+        "question": "خرجتُ _____ البيت.",
+        "translation": "(Wyszedłem z domu)",
+        "options": [
+          "من",
+          "إلى",
+          "في",
+          "عن"
+        ],
+        "correct": "من",
+        "explanation": "Przyimek 'من' (min) oznacza 'z/od' — odpowiada polskiemu 'z' z dopełniaczem. Wyraża punkt wyjścia lub pochodzenie: 'من البيت' (z domu), 'من مصر' (z Egiptu). Używany też w porównaniach jako 'niż': 'أكبر من' (większy od). To jeden z najpowszechniejszych przyimków arabskich o wielu znaczeniach."
+      },
+      {
+        "id": "pa_prep5",
+        "question": "جلستُ _____ صديقي.",
+        "translation": "(Usiadłem obok mojego przyjaciela)",
+        "options": [
+          "بجانب",
+          "على",
+          "في",
+          "من"
+        ],
+        "correct": "بجانب",
+        "explanation": "Wyrażenie przyimkowe 'بجانب' (bidżānib) oznacza 'obok/przy' — odpowiada polskiemu 'obok' z dopełniaczem. Jest złożone z przyimka 'بـ' (przy) i rzeczownika 'جانب' (strona, bok). Inne wyrażenia lokalne: 'أمام' (przed), 'وراء' (za), 'بين' (między). Wszystkie wymagają dopełniacza."
+      },
+      {
+        "id": "pa_prep6",
+        "question": "سافرتُ _____ القطار.",
+        "translation": "(Podróżowałem pociągiem)",
+        "options": [
+          "بـ",
+          "في",
+          "على",
+          "إلى"
+        ],
+        "correct": "بـ",
+        "explanation": "Przyimek 'بـ' (bi-) oznacza 'za pomocą/przez/czymś' — odpowiada polskiemu narzędnikowi ('pociągiem'). Jest przyimkiem jednolit. (klityczny), pisanym łącznie: 'بالقطار' (pociągiem), 'بالسيارة' (samochodem). Ma wiele znaczeń: narzędzie, środek transportu, towarzyszenie. Jest jednym z najkrótszych, ale najważniejszych przyimków."
+      },
+      {
+        "id": "pa_prep7",
+        "question": "هذا الدرس _____ الطلاب.",
+        "translation": "(Ta lekcja jest dla uczniów)",
+        "options": [
+          "لـ",
+          "من",
+          "على",
+          "في"
+        ],
+        "correct": "لـ",
+        "explanation": "Przyimek 'لـ' (li-) oznacza 'dla/do/ku' — odpowiada polskiemu 'dla' z dopełniaczem lub celownikowi. Jest klityczny (pisany łącznie): 'للطلاب' (dla uczniów). Używany do wyrażania: przynależności ('الكتاب لي' — książka jest moja), celu, przeznaczenia. Z zaimkami: 'لي' (dla mnie), 'لك' (dla ciebie)."
+      },
+      {
+        "id": "pa_prep8",
+        "question": "سألتُ _____ المعلم.",
+        "translation": "(Zapytałem o nauczyciela / Zapytałem nauczyciela)",
+        "options": [
+          "عن",
+          "من",
+          "في",
+          "على"
+        ],
+        "correct": "عن",
+        "explanation": "Przyimek 'عن' (ʿan) oznacza 'o/na temat/od' — odpowiada polskiemu 'o' z miejscownikiem. Używany z czasownikami mówienia i pytania: 'سأل عن' (pytać o), 'تحدّث عن' (mówić o). Jest kluczowy w wyrażaniu tematu wypowiedzi. Nie mylić z 'من' (od — punkt wyjścia fizyczny) ani 'على' (na)."
+      },
+      {
+        "id": "pa_prep9",
+        "question": "الكتاب _____ الطاولة.",
+        "translation": "(Książka jest pod stołem)",
+        "options": [
+          "تحت",
+          "فوق",
+          "على",
+          "في"
+        ],
+        "correct": "تحت",
+        "explanation": "Przyimek 'تحت' (taḥta) oznacza 'pod' — odpowiada polskiemu 'pod' z narzędnikiem. Przeciwieństwo 'فوق' (nad). Np. 'تحت السرير' (pod łóżkiem), 'تحت الماء' (pod wodą). Jest zarówno przyimkiem (ظرف مكان) jak i przysłówkiem miejsca. Wymaga po sobie dopełniacza."
+      },
+      {
+        "id": "pa_prep10",
+        "question": "الطائرة _____ المدينة.",
+        "translation": "(Samolot jest nad miastem)",
+        "options": [
+          "فوق",
+          "تحت",
+          "في",
+          "على"
+        ],
+        "correct": "فوق",
+        "explanation": "Przyimek 'فوق' (fawqa) oznacza 'nad/ponad' — odpowiada polskiemu 'nad' z narzędnikiem. Różni się od 'على' tym, że nie wymaga kontaktu z powierzchnią: 'فوق البيت' (nad domem), 'فوق السحاب' (ponad chmurami). Jest przysłówkiem miejsca (ظرف مكان) i wymaga dopełniacza po sobie."
+      },
+      {
+        "id": "pa_prep11",
+        "question": "المدرسة _____ البيت والمسجد.",
+        "translation": "(Szkoła jest między domem a meczetem)",
+        "options": [
+          "بين",
+          "أمام",
+          "وراء",
+          "بجانب"
+        ],
+        "correct": "بين",
+        "explanation": "Przyimek 'بين' (bayna) oznacza 'między/pomiędzy' — odpowiada polskiemu 'między' z narzędnikiem. 'بين البيت والمسجد' (między domem a meczetem). Łączy dwa elementy spójnikiem 'و' (i). Gdy łączy zaimki: 'بيننا' (między nami), 'بينكم' (między wami). Gramatycznie jest ظرف مكان wymagającym dopełniacza."
+      },
+      {
+        "id": "pa_prep12",
+        "question": "وقفتُ _____ الباب.",
+        "translation": "(Stanąłem przed drzwiami)",
+        "options": [
+          "أمام",
+          "وراء",
+          "بين",
+          "تحت"
+        ],
+        "correct": "أمام",
+        "explanation": "Przyimek 'أمام' (amāma) oznacza 'przed/naprzeciwko' — odpowiada polskiemu 'przed' z narzędnikiem (w sensie przestrzennym). 'أمام المدرسة' (przed szkołą), 'أمام المرآة' (przed lustrem). Przeciwieństwo: 'وراء/خلف' (za). Jest ظرف مكان (przysłówek miejsca) wymagającym dopełniacza po sobie."
+      },
+      {
+        "id": "pa_prep13",
+        "question": "اختبأتُ _____ الشجرة.",
+        "translation": "(Schowałem się za drzewem)",
+        "options": [
+          "وراء",
+          "أمام",
+          "بجانب",
+          "فوق"
+        ],
+        "correct": "وراء",
+        "explanation": "Przyimek 'وراء' (warāʾa) oznacza 'za/z tyłu' — odpowiada polskiemu 'za' z narzędnikiem. Synonim: 'خلف' (khalfa). 'وراء البيت' (za domem), 'وراء الباب' (za drzwiami). Używany też przenośnie: 'وراء النجاح' (za sukcesem = stojący za sukcesem). Wymaga dopełniacza po sobie."
+      },
+      {
+        "id": "pa_prep14",
+        "question": "وصلتُ _____ الموعد.",
+        "translation": "(Przybyłem przed terminem)",
+        "options": [
+          "قبل",
+          "بعد",
+          "منذ",
+          "حتى"
+        ],
+        "correct": "قبل",
+        "explanation": "Przyimek 'قبل' (qabla) oznacza 'przed' (w sensie czasowym) — odpowiada polskiemu 'przed' z narzędnikiem czasu. 'قبل الموعد' (przed terminem), 'قبل الظهر' (przed południem). Przeciwieństwo: 'بعد' (po). Jest ظرف زمان (przysłówek czasu) i wymaga dopełniacza. Nie mylić z 'أمام' (przed — przestrzennie)."
+      },
+      {
+        "id": "pa_prep15",
+        "question": "جئتُ _____ ساعة.",
+        "translation": "(Przyszedłem godzinę temu / od godziny)",
+        "options": [
+          "منذ",
+          "قبل",
+          "بعد",
+          "حتى"
+        ],
+        "correct": "منذ",
+        "explanation": "Przyimek 'منذ' (mundhu) oznacza 'od (czasu)/temu' — odpowiada polskiemu 'od' z dopełniaczem lub 'temu'. 'منذ ساعة' (od godziny/godzinę temu), 'منذ سنة' (od roku). Różni się od 'قبل' (przed) tym, że wyraża punkt początkowy trwania. Używany z czasem przeszłym i teraźniejszym."
+      }
+    ]
+  },
+  {
+    "key": "demonstratives_arabic",
+    "name": "Zaimki wskazujące",
+    "description": "أسماء الإشارة",
+    "iconName": "hand.point.right",
+    "color": "#fbbf24",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_dem1",
+        "question": "_____ كتاب جميل.",
+        "translation": "(To jest piękna książka [r.m.])",
+        "options": [
+          "هذا",
+          "هذه",
+          "ذلك",
+          "تلك"
+        ],
+        "correct": "هذا",
+        "explanation": "Zaimek wskazujący 'هذا' (hādhā) oznacza 'ten/to' i używany jest z rzeczownikami rodzaju męskiego w liczbie pojedynczej. 'كتاب' (książka) jest rodzaju męskiego, więc używamy 'هذا'. W polskim 'ten' też zmienia się wg rodzaju. W arabskim: هذا (ten, r.m.) / هذه (ta, r.ż.). Zaimek wskazujący stoi PRZED rzeczownikiem."
+      },
+      {
+        "id": "pa_dem2",
+        "question": "_____ سيارة جديدة.",
+        "translation": "(To jest nowy samochód [r.ż.])",
+        "options": [
+          "هذه",
+          "هذا",
+          "ذلك",
+          "تلك"
+        ],
+        "correct": "هذه",
+        "explanation": "Zaimek wskazujący 'هذه' (hādhihi) oznacza 'ta/to' i używany jest z rzeczownikami rodzaju żeńskiego. 'سيارة' (samochód) jest w arabskim rodzaju żeńskiego (końcówka ة). W polskim 'samochód' jest rodzaju męskiego — to pułapka! Rodzaje gramatyczne w arabskim i polskim często się nie pokrywają. Zawsze sprawdzaj rodzaj rzeczownika arabskiego."
+      },
+      {
+        "id": "pa_dem3",
+        "question": "_____ البيت بعيد.",
+        "translation": "(Tamten dom jest daleko)",
+        "options": [
+          "ذلك",
+          "هذا",
+          "هذه",
+          "تلك"
+        ],
+        "correct": "ذلك",
+        "explanation": "Zaimek 'ذلك' (dhālika) oznacza 'tamten/tamto' — wskazuje na coś dalekiego, r.m. W polskim mamy 'ten' (bliski) i 'tamten' (daleki). W arabskim to samo: 'هذا' (bliski) vs 'ذلك' (daleki). 'البيت' (dom) jest r.m., więc 'ذلك البيت' (tamten dom). Zauważ: z dodatkowym ال na rzeczowniku tworzymy pełne zdanie wskazujące."
+      },
+      {
+        "id": "pa_dem4",
+        "question": "_____ المدرسة كبيرة.",
+        "translation": "(Tamta szkoła jest duża)",
+        "options": [
+          "تلك",
+          "ذلك",
+          "هذا",
+          "هذه"
+        ],
+        "correct": "تلك",
+        "explanation": "Zaimek 'تلك' (tilka) oznacza 'tamta/tamto' — wskazuje na coś dalekiego, r.ż. 'المدرسة' (szkoła) jest rodzaju żeńskiego (końcówka ة), a jest daleko, więc: 'تلك المدرسة' (tamta szkoła). System czterech zaimków: هذا/هذه (bliski m/ż) + ذلك/تلك (daleki m/ż). To kompletny zestaw dla liczby pojedynczej."
+      },
+      {
+        "id": "pa_dem5",
+        "question": "_____ طلاب ممتازون.",
+        "translation": "(Ci uczniowie są doskonali)",
+        "options": [
+          "هؤلاء",
+          "أولئك",
+          "هذا",
+          "هذه"
+        ],
+        "correct": "هؤلاء",
+        "explanation": "Zaimek 'هؤلاء' (hāʾulāʾi) oznacza 'ci/te' — to forma mnoga bliskiego zaimka wskazującego dla osób. W polskim: 'ci' (r.m.os.) / 'te' (r.ż./r.nieos.). W arabskim jedna forma 'هؤلاء' dla obu rodzajów w l. mn. osób. Daleki odpowiednik: 'أولئك' (tamci/tamte). Uwaga: z rzeczami/zwierzętami w l. mn. używamy form żeńskich l.poj."
+      },
+      {
+        "id": "pa_dem6",
+        "question": "_____ المعلمات في الفصل.",
+        "translation": "(Tamte nauczycielki są w klasie)",
+        "options": [
+          "أولئك",
+          "هؤلاء",
+          "ذلك",
+          "تلك"
+        ],
+        "correct": "أولئك",
+        "explanation": "Zaimek 'أولئك' (ʾulāʾika) oznacza 'tamci/tamte' — to forma mnoga dalekiego zaimka wskazującego dla osób. 'المعلمات' (nauczycielki) to l. mn. żeńska osób, dlatego używamy formy mn. osobowej. Odległość jest większa, więc 'أولئك' zamiast 'هؤلاء'. System: bliski mn. = هؤلاء, daleki mn. = أولئك — obie formy wspólne dla obu rodzajów."
+      },
+      {
+        "id": "pa_dem7",
+        "question": "أحب _____ الأغنية.",
+        "translation": "(Lubię tę piosenkę)",
+        "options": [
+          "هذه",
+          "هذا",
+          "ذلك",
+          "تلك"
+        ],
+        "correct": "هذه",
+        "explanation": "Wyraz 'أغنية' (piosenka) jest rodzaju żeńskiego (końcówka ة), więc używamy 'هذه' (ta). W konstrukcji z przedimkiem ال: 'هذه الأغنية' (ta piosenka). Struktura: zaimek wskazujący + ال + rzeczownik. Ta konstrukcja jest odpowiednikiem polskiego 'ta piosenka' z rodzajnikiem. Bez ال mielibyśmy: 'هذه أغنية' (to jest piosenka)."
+      },
+      {
+        "id": "pa_dem8",
+        "question": "_____ هو المعلم الجديد.",
+        "translation": "(To jest nowy nauczyciel)",
+        "options": [
+          "هذا",
+          "هذه",
+          "هؤلاء",
+          "تلك"
+        ],
+        "correct": "هذا",
+        "explanation": "W zdaniach identyfikujących 'هذا' może stać samodzielnie jako podmiot: 'هذا هو المعلم' (to jest nauczyciel). Zaimek osobowy 'هو' (on) pełni tu funkcję łącznika (ضمير الفصل). W polskim: 'To jest nauczyciel' — 'to' też stoi samodzielnie. Różnica: w arabskim dodajemy zaimek osobowy między wskazującym a orzecznikiem dla podkreślenia."
+      },
+      {
+        "id": "pa_dem9",
+        "question": "في _____ اليوم كنتُ مريضًا.",
+        "translation": "(Tego dnia byłem chory)",
+        "options": [
+          "ذلك",
+          "هذا",
+          "تلك",
+          "هؤلاء"
+        ],
+        "correct": "ذلك",
+        "explanation": "Zaimek 'ذلك' (dhālika) używany jest z rzeczownikami r.m. wskazującymi na coś odległego w czasie. 'ذلك اليوم' (tamten/ten dzień) — 'يوم' (dzień) jest rodzaju męskiego. W polskim mówimy 'tego dnia', w arabskim 'ذلك اليوم' z ال na rzeczowniku. Zaimki wskazujące służą też do odnoszenia się do wcześniej wspomnianego w tekście."
+      },
+      {
+        "id": "pa_dem10",
+        "question": "_____ الكتب مفيدة.",
+        "translation": "(Te książki są pożyteczne)",
+        "options": [
+          "هذه",
+          "هؤلاء",
+          "هذا",
+          "ذلك"
+        ],
+        "correct": "هذه",
+        "explanation": "Dla rzeczy i zwierząt w liczbie mnogiej arabski używa formy żeńskiej l. poj. zaimka: 'هذه الكتب' (te książki), NIE 'هؤلاء'. Forma 'هؤلاء' jest zarezerwowana dla ludzi. To ważna zasada: l. mn. nierozumna (غير عاقل) traktowana jest gramatycznie jak l. poj. żeńska. Dlatego 'الكتب مفيدة' (nie: مفيدون). Dotyczy to przymiotników, czasowników i zaimków."
+      },
+      {
+        "id": "pa_dem11",
+        "question": "ما _____؟",
+        "translation": "(Co to jest? [r.m.])",
+        "options": [
+          "هذا",
+          "هذه",
+          "ذلك",
+          "هؤلاء"
+        ],
+        "correct": "هذا",
+        "explanation": "Pytanie 'ما هذا؟' (mā hādhā?) oznacza 'co to jest?' — używane, gdy wskazujemy na coś bliskiego, rodzaju męskiego lub gdy nie znamy rodzaju. Jest jednym z pierwszych pytań, jakie uczy się w arabskim. Odpowiedź: 'هذا قلم' (To jest długopis). 'ما' (co) to partykuła pytająca o rzeczy. Dla osób używamy 'مَن هذا؟' (kto to jest?)."
+      },
+      {
+        "id": "pa_dem12",
+        "question": "_____ الولدان مجتهدان.",
+        "translation": "(Ci dwaj chłopcy są pilni)",
+        "options": [
+          "هذان",
+          "هذا",
+          "هؤلاء",
+          "ذلك"
+        ],
+        "correct": "هذان",
+        "explanation": "Zaimek 'هذان' (hādhāni) to forma podwójna (المثنى) zaimka wskazującego dla r.m. Arabski ma specjalne formy dla DWÓCH: هذان (ci dwaj, r.m.) / هاتان (te dwie, r.ż.). W polskim nie ma osobnej formy — mówimy 'ci dwaj'. W arabskim: l.poj. هذا, l. podw. هذان, l. mn. هؤلاء. Forma podwójna to unikalna cecha arabskiego."
+      },
+      {
+        "id": "pa_dem13",
+        "question": "_____ الطالبتان ذكيتان.",
+        "translation": "(Te dwie studentki są inteligentne)",
+        "options": [
+          "هاتان",
+          "هذان",
+          "هؤلاء",
+          "هذه"
+        ],
+        "correct": "هاتان",
+        "explanation": "Zaimek 'هاتان' (hātāni) to forma podwójna (المثنى) zaimka wskazującego dla r.ż. 'الطالبتان' (dwie studentki) to l. podw. r.ż. — wymaga 'هاتان'. Pełny system form podwójnych: bliski m. هذان / ż. هاتان, daleki m. ذانك / ż. تانك. W polskim brak takich form — używamy 'te dwie'. To kluczowy element arabskiej deklinacji."
+      },
+      {
+        "id": "pa_prep14b",
+        "question": "اشتريتُ _____ القميص.",
+        "translation": "(Kupiłem tę koszulę [r.m.])",
+        "options": [
+          "هذا",
+          "هذه",
+          "ذلك",
+          "تلك"
+        ],
+        "correct": "هذا",
+        "explanation": "Wyraz 'قميص' (koszula) jest w arabskim rodzaju MĘSKIEGO — mimo że w polskim 'koszula' jest rodzaju żeńskiego! To klasyczny przykład różnic rodzajowych między językami. Rodzaj w arabskim zależy od formy słowa, nie od znaczenia. Słowa bez ة na końcu są zwykle męskie. Dlatego: 'هذا القميص' (ta/ten koszula), NIE 'هذه القميص'."
+      },
+      {
+        "id": "pa_dem15",
+        "question": "أخذتُ كلّ _____ الأشياء.",
+        "translation": "(Zabrałem wszystkie te rzeczy)",
+        "options": [
+          "هذه",
+          "هذا",
+          "هؤلاء",
+          "أولئك"
+        ],
+        "correct": "هذه",
+        "explanation": "W wyrażeniu 'كلّ هذه الأشياء' (wszystkie te rzeczy) zaimek wskazujący 'هذه' stoi między 'كلّ' a rzeczownikiem. 'الأشياء' (rzeczy) to l. mn. nierozumna — traktowana jak r.ż. l. poj. Szyk: كلّ + zaimek wskazujący + rzeczownik z ال. To ważna konstrukcja w formalnym i nieformalnym arabskim. Analogicznie: 'بعض هذه الكتب' (niektóre z tych książek)."
+      }
+    ]
+  },
+  {
+    "key": "numbers_1_10",
+    "name": "Liczebniki 1-10",
+    "description": "الأعداد من ١ إلى ١٠",
+    "iconName": "number.circle",
+    "color": "#4ade80",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_num1",
+        "question": "عندي _____ كتاب.",
+        "translation": "(Mam jedną książkę [r.m.])",
+        "options": [
+          "واحد",
+          "اثنان",
+          "واحدة",
+          "ثلاثة"
+        ],
+        "correct": "واحد",
+        "explanation": "Liczebnik 'واحد' (wāḥid) oznacza '1' w rodzaju męskim. W arabskim 1 i 2 ZGADZAJĄ się z rodzajem rzeczownika: واحد (m.) / واحدة (ż.). 'كتاب' jest r.m., więc 'كتاب واحد'. Uwaga: 1 i 2 stoją PO rzeczowniku (jako przydawki), nie przed nim. To odwrotnie niż liczebniki 3-10, które stoją PRZED rzeczownikiem."
+      },
+      {
+        "id": "pa_num2",
+        "question": "عندي _____ سيارتان.",
+        "translation": "(Mam dwa samochody)",
+        "options": [
+          "اثنتان",
+          "اثنان",
+          "واحدة",
+          "ثلاث"
+        ],
+        "correct": "اثنتان",
+        "explanation": "Liczebnik 'اثنتان' (ithnatāni) to '2' w rodzaju żeńskim. 'سيارة' (samochód) jest w arabskim r.ż., więc podwójna forma: 'سيارتان' + 'اثنتان'. Formy: اثنان (m.) / اثنتان (ż.). Tak jak 1, liczebnik 2 stoi PO rzeczowniku i zgadza się z jego rodzajem. Rzeczownik jest w formie podwójnej (المثنى), co samo w sobie wyraża liczbę 2."
+      },
+      {
+        "id": "pa_num3",
+        "question": "في الصف _____ طلاب.",
+        "translation": "(W klasie jest trzech uczniów)",
+        "options": [
+          "ثلاثة",
+          "ثلاث",
+          "ثالث",
+          "واحد"
+        ],
+        "correct": "ثلاثة",
+        "explanation": "Od 3 do 10 arabski ma ODWROTNĄ ZGODNOŚĆ rodzajową (المخالفة)! Jeśli rzeczownik jest r.m., liczebnik ma formę żeńską (z ة), i odwrotnie. 'طلاب' (uczniowie) jest r.m., więc 'ثلاثة' (z ة). To jedna z najtrudniejszych zasad arabskiego! Polskie liczebniki nie mają tej cechy. Rzeczownik po 3-10 stoi w DOPEŁNIACZU l. mn."
+      },
+      {
+        "id": "pa_num4",
+        "question": "اشتريتُ _____ ساعات.",
+        "translation": "(Kupiłem cztery zegarki)",
+        "options": [
+          "أربع",
+          "أربعة",
+          "رابع",
+          "أربعون"
+        ],
+        "correct": "أربع",
+        "explanation": "Liczebnik 'أربع' (arbaʿ) to '4' w formie BEZ ة — dla rzeczowników r.ż. 'ساعات' (zegarki) jest r.ż. (ساعة), więc liczebnik jest BEZ ة: 'أربع ساعات'. Zasada odwrotnej zgodności: r.ż. rzeczownika → liczebnik BEZ ة. W polskim: 'cztery zegarki' — bez zmiany formy. Rzeczownik po 3-10 w arabskim jest w dopełniaczu l.mn."
+      },
+      {
+        "id": "pa_num5",
+        "question": "في الحقيبة _____ كتب.",
+        "translation": "(W torbie jest pięć książek)",
+        "options": [
+          "خمسة",
+          "خمس",
+          "خامس",
+          "خمسون"
+        ],
+        "correct": "خمسة",
+        "explanation": "Liczebnik 'خمسة' (khamsa) — '5' z ة, bo 'كتب' (książki, l. mn. od كتاب) jest r.m. Zasada odwrotnej zgodności: r.m. rzeczownika → liczebnik Z ة. 'خمسة كتب' (pięć książek). Rzeczownik 'كتب' jest w dopełniaczu l. mn. (مجرور/مضاف إليه), bo tworzy z liczebnikiem konstrukcję إضافة (dopełniacz przynależności)."
+      },
+      {
+        "id": "pa_num6",
+        "question": "عندها _____ بنات.",
+        "translation": "(Ona ma sześć córek)",
+        "options": [
+          "ست",
+          "ستة",
+          "سادس",
+          "ستون"
+        ],
+        "correct": "ست",
+        "explanation": "Liczebnik 'ست' (sitt) — '6' BEZ ة, bo 'بنات' (córki, l. mn. od بنت) jest r.ż. Zasada: r.ż. → bez ة. 'ست بنات' (sześć córek). Uwaga na wymowę: 'ستة' (sitta, m.) vs 'ست' (sitt, ż.) — krótka różnica, duże znaczenie. Końcówka ة pojawia się lub znika zależnie od rodzaju liczonego rzeczownika."
+      },
+      {
+        "id": "pa_num7",
+        "question": "قرأتُ _____ صفحات.",
+        "translation": "(Przeczytałem siedem stron)",
+        "options": [
+          "سبع",
+          "سبعة",
+          "سابع",
+          "سبعون"
+        ],
+        "correct": "سبع",
+        "explanation": "Liczebnik 'سبع' (sabʿ) — '7' BEZ ة, bo 'صفحات' (strony, l. mn. od صفحة) jest r.ż. 'سبع صفحات' (siedem stron). Kontrola: صفحة ma ة na końcu → r.ż. → liczebnik BEZ ة. To logika odwrotna do intuicji: widzisz ة na rzeczowniku → USUWASZ ة z liczebnika. Polskiemu uczniowi pomaga ta 'sztuczka odwrócenia'."
+      },
+      {
+        "id": "pa_num8",
+        "question": "في الأسبوع _____ أيام.",
+        "translation": "(W tygodniu jest siedem dni)",
+        "options": [
+          "سبعة",
+          "سبع",
+          "سابع",
+          "سبعين"
+        ],
+        "correct": "سبعة",
+        "explanation": "Liczebnik 'سبعة' (sabʿa) — '7' Z ة, bo 'أيام' (dni, l. mn. od يوم) jest r.m. 'يوم' nie ma ة → r.m. → liczebnik Z ة. 'سبعة أيام' (siedem dni). Porównaj: 'سبع ساعات' (siedem godzin, r.ż.) vs 'سبعة أيام' (siedem dni, r.m.). Ta para doskonale ilustruje zasadę odwrotnej zgodności."
+      },
+      {
+        "id": "pa_num9",
+        "question": "اشتريتُ _____ أقلام.",
+        "translation": "(Kupiłem osiem długopisów)",
+        "options": [
+          "ثمانية",
+          "ثماني",
+          "ثامن",
+          "ثمانون"
+        ],
+        "correct": "ثمانية",
+        "explanation": "Liczebnik 'ثمانية' (thamāniya) — '8' Z ة, bo 'أقلام' (długopisy, l. mn. od قلم) jest r.m. 'ثمانية أقلام' (osiem długopisów). Uwaga: '8' ma specjalną formę żeńską: 'ثماني' (thamānī) zamiast zwykłego usunięcia ة. Jest to jedyny liczebnik 3-10, który trochę zmienia formę, nie tylko dodaje/usuwa ة."
+      },
+      {
+        "id": "pa_num10",
+        "question": "حفظتُ _____ سور.",
+        "translation": "(Nauczyłem się na pamięć dziewięciu sur)",
+        "options": [
+          "تسع",
+          "تسعة",
+          "تاسع",
+          "تسعون"
+        ],
+        "correct": "تسع",
+        "explanation": "Liczebnik 'تسع' (tisʿ) — '9' BEZ ة, bo 'سور' (sury, l. mn. od سورة) jest r.ż. 'تسع سور' (dziewięć sur). Wyrazy 'سورة' (sura — rozdział Koranu) mają ة na końcu = r.ż. → liczebnik BEZ ة. System odwrotnej zgodności jest konsekwentny w całym zakresie 3-10."
+      },
+      {
+        "id": "pa_num11",
+        "question": "في الفريق _____ لاعبين.",
+        "translation": "(W drużynie jest dziesięciu zawodników)",
+        "options": [
+          "عشرة",
+          "عشر",
+          "عاشر",
+          "عشرون"
+        ],
+        "correct": "عشرة",
+        "explanation": "Liczebnik 'عشرة' (ʿashara) — '10' Z ة, bo 'لاعبين' (zawodnicy) jest r.m. 'عشرة لاعبين' (dziesięciu zawodników). Uwaga: po liczebnikach 3-10 rzeczownik jest w DOPEŁNIACZU L. MN. (جمع مجرور). Widać to w końcówce '-ين' zamiast '-ون'. To ważna reguła składniowa odróżniająca arabski od polskiego."
+      },
+      {
+        "id": "pa_num12",
+        "question": "عدد الأصابع _____.",
+        "translation": "(Liczba palców to dziesięć)",
+        "options": [
+          "عشرة",
+          "عشر",
+          "عاشرة",
+          "عشرون"
+        ],
+        "correct": "عشرة",
+        "explanation": "Gdy liczebnik jest użyty samodzielnie (bez rzeczownika) w znaczeniu abstrakcyjnym lub gdy liczymy palce ('أصابع' jest r.m. — إصبع jest r.m. mimo końcówki), stosujemy 'عشرة'. Jednak w kontekście samodzielnym używa się formy domyślnej. 'عدد الأصابع عشرة' (liczba palców to dziesięć). Liczebnik jako orzecznik zgadza się z podmiotem."
+      },
+      {
+        "id": "pa_num13",
+        "question": "أكلتُ _____ تفاحات.",
+        "translation": "(Zjadłem trzy jabłka)",
+        "options": [
+          "ثلاث",
+          "ثلاثة",
+          "ثالثة",
+          "ثلاثون"
+        ],
+        "correct": "ثلاث",
+        "explanation": "Liczebnik 'ثلاث' (thalāth) — '3' BEZ ة, bo 'تفاحات' (jabłka, l. mn. od تفاحة) jest r.ż. 'تفاحة' ma ة → r.ż. → liczebnik bez ة. 'ثلاث تفاحات' (trzy jabłka). W polskim: 'trzy jabłka' — brak zmian w formie liczby. W arabskim musimy zawsze sprawdzić rodzaj liczonego rzeczownika i zastosować odwrotną zgodność."
+      },
+      {
+        "id": "pa_num14",
+        "question": "وصل _____ ضيوف.",
+        "translation": "(Przybyło pięciu gości)",
+        "options": [
+          "خمسة",
+          "خمس",
+          "خامس",
+          "خمسون"
+        ],
+        "correct": "خمسة",
+        "explanation": "Liczebnik 'خمسة' (khamsa) — '5' Z ة, bo 'ضيوف' (goście, l. mn. od ضيف) jest r.m. 'ضيف' nie ma ة → r.m. → liczebnik Z ة. 'خمسة ضيوف'. Szyk: liczebnik + rzeczownik w dopełniaczu l. mn. Pamiętaj: liczebniki 3-10 stoją PRZED rzeczownikiem, w odróżnieniu od 1-2, które stoją PO rzeczowniku."
+      },
+      {
+        "id": "pa_num15",
+        "question": "زرتُ _____ مدن.",
+        "translation": "(Odwiedziłem sześć miast)",
+        "options": [
+          "ست",
+          "ستة",
+          "سادسة",
+          "ستين"
+        ],
+        "correct": "ست",
+        "explanation": "Liczebnik 'ست' (sitt) — '6' BEZ ة, bo 'مدن' (miasta, l. mn. od مدينة) jest r.ż. 'مدينة' ma ة → r.ż. → liczebnik bez ة. 'ست مدن' (sześć miast). Uwaga na formę dopełniacza l. mn.: مُدُن (mudun) — nie مدينات. Jest to tzw. 'liczba mnoga łamana' (جمع تكسير), bardzo częsta w arabskim."
+      }
+    ]
+  },
+  {
+    "key": "adjective_agreement",
+    "name": "Zgodność przymiotników",
+    "description": "مطابقة الصفات",
+    "iconName": "textformat.abc",
+    "color": "#c084fc",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_adja1",
+        "question": "الولد _____.",
+        "translation": "(Chłopiec jest mądry)",
+        "options": [
+          "ذكيّ",
+          "ذكيّة",
+          "أذكياء",
+          "ذكيّات"
+        ],
+        "correct": "ذكيّ",
+        "explanation": "Przymiotnik 'ذكيّ' (dhakiyy) jest w formie męskiej l. poj, bo 'الولد' (chłopiec) jest r.m. l. poj. W arabskim przymiotnik MUSI się zgadzać z rzeczownikiem w: rodzaju, liczbie, przypadku i określoności. To jak w polskim ('mądry chłopiec'), ale arabski ma 4 wymiary zgodności. Orzecznik (خبر) jest nieokreślony, nawet gdy podmiot ma ال."
+      },
+      {
+        "id": "pa_adja2",
+        "question": "البنت _____.",
+        "translation": "(Dziewczyna jest mądra)",
+        "options": [
+          "ذكيّة",
+          "ذكيّ",
+          "أذكياء",
+          "ذكيّات"
+        ],
+        "correct": "ذكيّة",
+        "explanation": "Przymiotnik 'ذكيّة' (dhakiyya) jest w formie żeńskiej l. poj. — dodajemy ة do formy męskiej. 'البنت' (dziewczyna) jest r.ż. → przymiotnik odzwierciedla ten rodzaj. W polskim: 'mądra' vs 'mądry'. Zasada jest identyczna, ale w arabskim stosowana konsekwentniej — nawet przymiotniki w funkcji orzecznika muszą się zgadzać (w polskim też: 'jest mądra')."
+      },
+      {
+        "id": "pa_adja3",
+        "question": "قرأتُ كتابًا _____.",
+        "translation": "(Przeczytałem nową książkę)",
+        "options": [
+          "جديدًا",
+          "جديدةً",
+          "جُدُد",
+          "جديد"
+        ],
+        "correct": "جديدًا",
+        "explanation": "Przymiotnik 'جديدًا' (jadīdan) jest w biernikowym (منصوب) z tanwinem — bo 'كتابًا' jest nieokreślony i w bierniku (مفعول به). Przymiotnik jako przydawka (نعت) musi zgadzać się TAKŻE w przypadku i określoności. 'كتابًا جديدًا' — oba w bierniku, oba nieokreślone. To jak polskie 'nową książkę' (biernik). Tanwin ً wskazuje nieokreśloność."
+      },
+      {
+        "id": "pa_adja4",
+        "question": "هذا البيت _____.",
+        "translation": "(Ten dom jest duży)",
+        "options": [
+          "كبير",
+          "كبيرة",
+          "الكبير",
+          "كبار"
+        ],
+        "correct": "كبير",
+        "explanation": "Przymiotnik 'كبير' (kabīr) jako orzecznik (خبر) jest NIEOKREŚLONY, mimo że podmiot 'البيت' jest określony (z ال). To kluczowa różnica: przydawka (نعت) kopioWAŁABY określoność ('البيت الكبير' — ten duży dom), ale orzecznik NIE kopuje. 'البيت كبير' (dom jest duży) vs 'البيت الكبير' (duży dom). Ta różnica decyduje o strukturze zdania."
+      },
+      {
+        "id": "pa_adja5",
+        "question": "هذا _____ الكبير.",
+        "translation": "(To jest ten duży dom)",
+        "options": [
+          "البيت",
+          "بيت",
+          "بيتًا",
+          "بيوت"
+        ],
+        "correct": "البيت",
+        "explanation": "W konstrukcji przydawkowej (نعت + منعوت) przymiotnik MUSI mieć tę samą określoność co rzeczownik. 'البيت الكبير' — oba z ال (ten duży dom). Gdyby przymiotnik był bez ال: 'البيت كبير' — to byłoby ZDANIE (dom jest duży). Obecność lub brak ال na przymiotniku zmienia funkcję z przydawki na orzecznik. To fundamentalna zasada arabskiej składni."
+      },
+      {
+        "id": "pa_adja6",
+        "question": "الأولاد _____.",
+        "translation": "(Chłopcy są mali)",
+        "options": [
+          "صغار",
+          "صغيرون",
+          "صغيرة",
+          "صغير"
+        ],
+        "correct": "صغار",
+        "explanation": "Przymiotnik 'صغار' (ṣighār) to l. mn. łamana od 'صغير' (mały). Dla l. mn. rozumnej (عاقل) męskiej, przymiotnik powinien być w l. mn. Tu 'صغار' jest preferowaną formą mn. łamaną. W polskim: 'mali' (l. mn. męskoosobowa). Arabski ma mn. regularną ('صغيرون') i łamaną ('صغار') — obie poprawne, ale mn. łamana często preferowana stylistycznie."
+      },
+      {
+        "id": "pa_adja7",
+        "question": "المعلمات _____.",
+        "translation": "(Nauczycielki są nowe)",
+        "options": [
+          "جديدات",
+          "جُدُد",
+          "جديدة",
+          "جديد"
+        ],
+        "correct": "جديدات",
+        "explanation": "Przymiotnik 'جديدات' (jadīdāt) to l. mn. żeńska regularna — odpowiada 'المعلمات' (nauczycielki, l. mn. ż. regularna). Końcówka '-ات' w obu wyrazach. Zasada: l. mn. żeńska regularna rzeczownika → l. mn. żeńska regularna przymiotnika. To prostsza reguła niż dla l. mn. łamanych. W polskim: 'nowe nauczycielki' — przymiotnik też w l. mn."
+      },
+      {
+        "id": "pa_adja8",
+        "question": "الكتب _____.",
+        "translation": "(Książki są nowe)",
+        "options": [
+          "جديدة",
+          "جُدُد",
+          "جديدات",
+          "جديد"
+        ],
+        "correct": "جديدة",
+        "explanation": "L. mn. nierozumna (rzeczy, zwierzęta) jest traktowana gramatycznie jak r.ż. l. poj.! 'الكتب' (książki) to l. mn. nierozumna → przymiotnik w r.ż. l. POJ.: 'جديدة'. NIE 'جديدات' ani 'جُدُد'. To zasada عاقل/غير عاقل: ludzie → mn. prawdziwa, rzeczy → traktuj jak ż. l. poj. Jest to jedna z najważniejszych reguł arabskiej gramatyki."
+      },
+      {
+        "id": "pa_adja9",
+        "question": "رأيتُ رجلًا _____.",
+        "translation": "(Zobaczyłem wysokiego mężczyznę)",
+        "options": [
+          "طويلًا",
+          "طويلةً",
+          "طِوال",
+          "الطويل"
+        ],
+        "correct": "طويلًا",
+        "explanation": "Przymiotnik 'طويلًا' (ṭawīlan) zgadza się z 'رجلًا' w: rodzaj (m.), liczba (poj.), przypadek (biernik — tanwin fatḥa ً), określoność (nieokreślony — bez ال). Cztery wymiary idealnej zgodności. W polskim: 'wysokiego mężczyznę' — przymiotnik w bierniku (dopełniacz formy w pol.). Tanwin ً = nieokreśloność + biernik jednocześnie."
+      },
+      {
+        "id": "pa_adja10",
+        "question": "جلستُ في غرفةٍ _____.",
+        "translation": "(Usiadłem w dużym pokoju)",
+        "options": [
+          "كبيرةٍ",
+          "كبيرٍ",
+          "كبيرةً",
+          "الكبيرة"
+        ],
+        "correct": "كبيرةٍ",
+        "explanation": "Przymiotnik 'كبيرةٍ' (kabīratin) zgadza się z 'غرفةٍ' (pokój, r.ż.): rodzaj (ż. — z ة), przypadek (dopełniacz — po في, tanwin kasra ٍ), określoność (nieokreślony). 'غرفة' jest r.ż., więc 'كبيرة'. Jest w dopełniaczu po przyimku, więc 'كبيرةٍ'. Każdy wymiar zgodności musi być prawidłowy — to jak puzzle gramatyczne."
+      },
+      {
+        "id": "pa_adja11",
+        "question": "هؤلاء طلاب _____.",
+        "translation": "(Ci uczniowie są pilni)",
+        "options": [
+          "مجتهدون",
+          "مجتهدات",
+          "مجتهدة",
+          "مجتهد"
+        ],
+        "correct": "مجتهدون",
+        "explanation": "Przymiotnik 'مجتهدون' (mudżtahidūna) to l. mn. m. regularna (جمع مذكر سالم) — końcówka '-ون'. 'طلاب' (uczniowie) to l. mn. rozumna męska → przymiotnik w l. mn. m. Jako orzecznik jest w mianowniku (مرفوع), stąd '-ون', nie '-ين'. W polskim: 'pilni' (l. mn. męskoosobowa). Porównaj z 'الكتب جديدة' (rzeczy → ż. l. poj.)."
+      },
+      {
+        "id": "pa_adja12",
+        "question": "المدينة _____ جميلة.",
+        "translation": "(Stare miasto jest piękne)",
+        "options": [
+          "القديمة",
+          "القديم",
+          "قديمة",
+          "قديم"
+        ],
+        "correct": "القديمة",
+        "explanation": "Przymiotnik 'القديمة' (al-qadīma) jest przydawką (نعت) do 'المدينة' — musi mieć ال (określoność) + ة (r.ż.). 'المدينة القديمة جميلة' = Stare miasto jest piękne. Dwa przymiotniki: 'القديمة' to przydawka (z ال), 'جميلة' to orzecznik (bez ال). Ta sama pozycja zmienia funkcję zależnie od ال. Kluczowa reguła arabskiej składni!"
+      },
+      {
+        "id": "pa_adja13",
+        "question": "هذا طالب _____ ومجتهد.",
+        "translation": "(To jest zdolny i pilny uczeń)",
+        "options": [
+          "ذكيّ",
+          "ذكيّة",
+          "الذكيّ",
+          "أذكياء"
+        ],
+        "correct": "ذكيّ",
+        "explanation": "Gdy rzeczownik jest nieokreślony ('طالب' bez ال), przymiotniki przydawkowe też muszą być nieokreślone: 'طالب ذكيّ ومجتهد'. Oba przymiotniki w r.m. l. poj. (bo 'طالب' jest r.m. l. poj.) i bez ال. Spójnik 'و' (i) łączy dwa przymiotniki. W polskim: 'zdolny i pilny uczeń' — ta sama logika łączenia przymiotników."
+      },
+      {
+        "id": "pa_adja14",
+        "question": "السيارات _____.",
+        "translation": "(Samochody są szybkie)",
+        "options": [
+          "سريعة",
+          "سريعات",
+          "سريع",
+          "سراع"
+        ],
+        "correct": "سريعة",
+        "explanation": "L. mn. nierozumna 'السيارات' (samochody) → przymiotnik w r.ż. l. POJ.: 'سريعة'. NIE 'سريعات'. Powtórzenie kluczowej zasady: 'عاقل vs غير عاقل' — rzeczy w l. mn. traktujemy jak r.ż. l. poj. To dotyczy przymiotników, zaimków, czasowników. 'السيارات سريعة' nie 'السيارات سريعات'. W polskim: 'samochody są szybkie' — l. mn. nieosobowa."
+      },
+      {
+        "id": "pa_adja15",
+        "question": "مررتُ بالطلاب _____.",
+        "translation": "(Przeszedłem obok nowych uczniów)",
+        "options": [
+          "الجُدُد",
+          "الجديدين",
+          "الجديدة",
+          "جديد"
+        ],
+        "correct": "الجُدُد",
+        "explanation": "Przymiotnik 'الجُدُد' (al-judud) to l. mn. łamana od 'جديد', z ال (bo 'الطلاب' jest określony). Przyimek 'بـ' wymaga dopełniacza: 'بالطلاب' → 'الجُدُد' w dopełniaczu. Alternatywnie poprawne: 'الجُدُد' lub 'الجديدين' (mn. regularna w dopełniaczu z '-ين'). L. mn. łamana jest stylistycznie bardziej naturalna w wielu kontekstach."
+      }
+    ]
+  },
+  {
+    "key": "broken_plurals_basic",
+    "name": "Liczba mnoga łamana",
+    "description": "جمع التكسير الأساسي",
+    "iconName": "square.grid.3x3",
+    "color": "#22d3ee",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pa_bp1",
+        "question": "كتاب → _____",
+        "translation": "(książka → książki)",
+        "options": [
+          "كُتُب",
+          "كتابات",
+          "كتابون",
+          "كتابان"
+        ],
+        "correct": "كُتُب",
+        "explanation": "Wyraz 'كتاب' (kitāb) → 'كُتُب' (kutub) = książki. To wzorzec فُعُل (fuʿul), jeden z najpowszechniejszych wzorców l. mn. łamanej. L. mn. łamana (جمع التكسير) zmienia wewnętrzną strukturę słowa — w odróżnieniu od l. mn. regularnej, która dodaje końcówkę (-ون/-ات). Polskim odpowiednikiem jest nieregularna odmiana: 'dziecko → dzieci'. Trzeba zapamiętywać wzorce."
+      },
+      {
+        "id": "pa_bp2",
+        "question": "قلم → _____",
+        "translation": "(długopis → długopisy)",
+        "options": [
+          "أقلام",
+          "قلمون",
+          "قلمات",
+          "قلمان"
+        ],
+        "correct": "أقلام",
+        "explanation": "Wyraz 'قلم' (qalam) → 'أقلام' (aqlām) = długopisy. Wzorzec أفعال (afʿāl) jest bardzo powszechny dla rzeczowników trójspółgłoskowych. Dodaje 'أ' na początku i 'ا' po drugiej spółgłosce. Inne przykłady: ولد → أولاد (chłopcy), يوم → أيام (dni). To jeden z pierwszych wzorców do zapamiętania, bo obejmuje wiele codziennych słów."
+      },
+      {
+        "id": "pa_bp3",
+        "question": "رجل → _____",
+        "translation": "(mężczyzna → mężczyźni)",
+        "options": [
+          "رِجال",
+          "رجلون",
+          "رجلات",
+          "رجلان"
+        ],
+        "correct": "رِجال",
+        "explanation": "Wyraz 'رجل' (radżul) → 'رجال' (ridżāl) = mężczyźni. Wzorzec فِعال (fiʿāl). Inne przykłady: جبل → جِبال (góry), جمل → جِمال (wielbłądy). W polskim mamy nieregularne pluralia: 'człowiek → ludzie' (zmiana cała!). Arabska l. mn. łamana zmienia samogłoski, ale zachowuje spółgłoski rdzenia — łatwiej rozpoznać źródło."
+      },
+      {
+        "id": "pa_bp4",
+        "question": "بيت → _____",
+        "translation": "(dom → domy)",
+        "options": [
+          "بُيوت",
+          "بيتون",
+          "بيتات",
+          "أبيات"
+        ],
+        "correct": "بُيوت",
+        "explanation": "Wyraz 'بيت' (bayt) → 'بُيوت' (buyūt) = domy. Wzorzec فُعول (fuʿūl) — popularny dla rzecozwników typu فَعل z 'ي' lub 'و'. Inne przykłady: عين → عُيون (oczy), شيخ → شُيوخ (szejkowie). Zauważ: samogłoski krótkie zmieniają się, ale trzy spółgłoski rdzenia (ب-ي-ت) pozostają. To klucz do rozumienia systemu!"
+      },
+      {
+        "id": "pa_bp5",
+        "question": "مدرسة → _____",
+        "translation": "(szkoła → szkoły)",
+        "options": [
+          "مدارس",
+          "مدرسون",
+          "مدرسات",
+          "مدرستان"
+        ],
+        "correct": "مدارس",
+        "explanation": "Wyraz 'مدرسة' (madrasa) → 'مدارس' (madāris) = szkoły. Wzorzec مَفاعِل (mafāʿil) stosowany dla rzeczowników cztero+ literowych. Inne: مكتب → مكاتب (biura), مسجد → مساجد (meczety). Końcówka ة znika w l. mn.! To ważne: mimo że 'مدرسة' jest ż. z ة, jej l. mn. 'مدارس' nie ma ة. L. mn. łamana to nowa forma, nie modyfikacja."
+      },
+      {
+        "id": "pa_bp6",
+        "question": "طالب → _____",
+        "translation": "(student → studenci)",
+        "options": [
+          "طُلّاب",
+          "طالبون",
+          "طالبات",
+          "طلبة"
+        ],
+        "correct": "طُلّاب",
+        "explanation": "Wyraz 'طالب' (ṭālib) → 'طُلّاب' (ṭullāb) = studenci. Wzorzec فُعّال (fuʿʿāl) z podwojeniem drugiej spółgłoski. Uwaga: istnieje też forma 'طلبة' (ṭalaba) — obie poprawne! Wiele słów ma KILKA form l. mn. łamanej. 'طالبات' (ṭālibāt) to l. mn. regularna żeńska — dla studentek. Jedno słowo, trzy formy l. mn.! W polskim: 'student → studenci' (jedna forma)."
+      },
+      {
+        "id": "pa_bp7",
+        "question": "صديق → _____",
+        "translation": "(przyjaciel → przyjaciele)",
+        "options": [
+          "أصدقاء",
+          "صديقون",
+          "صديقات",
+          "صداقات"
+        ],
+        "correct": "أصدقاء",
+        "explanation": "Wyraz 'صديق' (ṣadīq) → 'أصدقاء' (aṣdiqāʾ) = przyjaciele. Wzorzec أفعِلاء (afʿilāʾ). Inne: طبيب → أطِبّاء (lekarze), غنيّ → أغنياء (bogaci). Ten wzorzec jest powszechny dla przymiotników i rzeczowników odnoszących się do osób. Końcówka '-اء' jest charakterystyczna. W polskim: 'przyjaciel → przyjaciele' (regularna zmiana)."
+      },
+      {
+        "id": "pa_bp8",
+        "question": "ولد → _____",
+        "translation": "(chłopiec → chłopcy)",
+        "options": [
+          "أولاد",
+          "ولدون",
+          "ولدات",
+          "ولدان"
+        ],
+        "correct": "أولاد",
+        "explanation": "Wyraz 'ولد' (walad) → 'أولاد' (awlād) = chłopcy/dzieci. Wzorzec أفعال (afʿāl) — ten sam co قلم → أقلام. 'ولد' ma rdzeń و-ل-د, a 'أولاد' zachowuje te spółgłoski. To jedno z pierwszych słów, które dziecko arabskie mawiać w l. mn. Jest niezwykle powszechne. Porównaj z polskim: 'chłopiec → chłopcy' (regularna zmiana przez dodanie '-y')."
+      },
+      {
+        "id": "pa_bp9",
+        "question": "مدينة → _____",
+        "translation": "(miasto → miasta)",
+        "options": [
+          "مُدُن",
+          "مدينات",
+          "مدينون",
+          "مدائن"
+        ],
+        "correct": "مُدُن",
+        "explanation": "Wyraz 'مدينة' (madīna) → 'مُدُن' (mudun) = miasta. Wzorzec فُعُل (fuʿul). Alternatywna forma: 'مدائن' (madāʾin). Znowu ة znika w l. mn. łamanej. 'مُدُن' to krótsza forma od oryginału — l. mn. łamana może być krótsza LUB dłuższa od l. poj. W polskim: 'miasto → miasta' — prosta zmiana końcówki. W arabskim: zmiana wewnętrzna."
+      },
+      {
+        "id": "pa_bp10",
+        "question": "باب → _____",
+        "translation": "(drzwi → drzwi [l.mn.])",
+        "options": [
+          "أبواب",
+          "بابون",
+          "بابات",
+          "بيبان"
+        ],
+        "correct": "أبواب",
+        "explanation": "Wyraz 'باب' (bāb) → 'أبواب' (abwāb) = drzwi (l.mn.). Wzorzec أفعال (afʿāl). Ciekawe: w polskim 'drzwi' nie ma l. poj. — jest plurale tantum. W arabskim l. poj. to 'باب' (jedne drzwi), a l. mn. 'أبواب' (wiele drzwi). Rdzeń ب-و-ب jest zachowany w obu formach. Ten wzorzec mnogi jest jednym z najczęstszych."
+      },
+      {
+        "id": "pa_bp11",
+        "question": "عين → _____",
+        "translation": "(oko → oczy)",
+        "options": [
+          "عُيون",
+          "أعين",
+          "عينات",
+          "عينون"
+        ],
+        "correct": "عُيون",
+        "explanation": "Wyraz 'عين' (ʿayn) → 'عُيون' (ʿuyūn) = oczy. Wzorzec فُعول (fuʿūl), ten sam co بيت → بيوت. Alternatywna forma: 'أعيُن' (aʿyun). W arabskim wiele słów ma dwa lub więcej wzorców l. mn. łamanej. 'عيون' jest bardziej powszechna. W polskim: 'oko → oczy' — też zmiana wewnętrzna! To jeden z niewielu polskich odpowiedników arabskiego jamʿ takṣīr."
+      },
+      {
+        "id": "pa_bp12",
+        "question": "شارع → _____",
+        "translation": "(ulica → ulice)",
+        "options": [
+          "شوارع",
+          "شارعون",
+          "شارعات",
+          "شوراع"
+        ],
+        "correct": "شوارع",
+        "explanation": "Wyraz 'شارع' (shāriʿ) → 'شوارع' (shawāriʿ) = ulice. Wzorzec فَواعِل (fawāʿil) — dla rzeczowników na wzór فاعِل. Inne: شارع → شوارع, جامع → جوامع (meczety piątkowe). Spółgłoska długa 'ا' zamienia się na 'و' w l. mn. To transformacja charakterystyczna dla tego wzorca. W polskim: 'ulica → ulice' (prosta zmiana końcówki)."
+      },
+      {
+        "id": "pa_bp13",
+        "question": "لون → _____",
+        "translation": "(kolor → kolory)",
+        "options": [
+          "ألوان",
+          "لونون",
+          "لونات",
+          "لوائن"
+        ],
+        "correct": "ألوان",
+        "explanation": "Wyraz 'لون' (lawn) → 'ألوان' (alwān) = kolory. Wzorzec أفعال (afʿāl). Rdzeń ل-و-ن. Ten sam wzorzec co: وقت → أوقات (czasy), نوع → أنواع (rodzaje). Zauważ regularność: jednosylabowe rzeczowniki typu فَعل często tworzą l. mn. wg أفعال. To ułatwia zapamiętywanie — szukaj wzorców w pozornym chaosie l. mn. łamanych."
+      },
+      {
+        "id": "pa_bp14",
+        "question": "صورة → _____",
+        "translation": "(zdjęcie → zdjęcia)",
+        "options": [
+          "صُوَر",
+          "صورون",
+          "صورات",
+          "أصوار"
+        ],
+        "correct": "صُوَر",
+        "explanation": "Wyraz 'صورة' (ṣūra) → 'صُوَر' (ṣuwar) = zdjęcia. Wzorzec فُعَل (fuʿal) — krótki wzorzec dla słów z ة. Inne: غرفة → غُرَف (pokoje), لعبة → لُعَب (zabawki). Końcówka ة znika, a słowo skraca się. To wzorzec typowy dla rzeczowników żeńskich dwusylabowych na wzór فُعلة. Krótka forma, ale częsta i ważna."
+      },
+      {
+        "id": "pa_bp15",
+        "question": "دَرس → _____",
+        "translation": "(lekcja → lekcje)",
+        "options": [
+          "دُروس",
+          "درسون",
+          "درسات",
+          "أدراس"
+        ],
+        "correct": "دُروس",
+        "explanation": "Wyraz 'دَرس' (dars) → 'دُروس' (durūs) = lekcje. Wzorzec فُعول (fuʿūl) — ten sam co بيت → بيوت i عين → عيون. To bardzo produktywny wzorzec (wiele słów go używa). Inne: فَنّ → فُنون (sztuki), نَصّ → نُصوص (teksty). Jednosylabowe rzeczowniki typu فَعل → często فُعول w l. mn. Znajomość 5-6 głównych wzorców pokrywa większość słownictwa."
+      }
+    ]
   }
 ]

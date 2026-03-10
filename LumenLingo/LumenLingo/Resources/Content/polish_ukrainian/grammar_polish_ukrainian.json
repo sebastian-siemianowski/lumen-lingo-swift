@@ -1433,5 +1433,1030 @@
         "explanation": "Czasownik 'кохати' (kochać) — I koniugacja. 'Я кохаю' = ja kocham. Rdzeń 'кох-' = pol. 'koch-' — identyczny! Odmiana: я кохаю, ти кохаєш, він кохає, ми кохаємо, ви кохаєте, вони кохають. Pol.: kocham, kochasz, kocha... — ta sama struktura. Różnica: ukraiński ma też 'любити' (lubić/kochać), a 'кохати' jest zarezerwowane dla miłości romantycznej. W polskim 'kochać' jest szersze znaczeniowo."
       }
     ]
+  },
+  {
+    "key": "personal_pronouns",
+    "name": "Особові займенники",
+    "description": "Zaimki osobowe",
+    "iconName": "person.2",
+    "color": "#f472b6",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pu_pp1",
+        "question": "_____ живу в Україні.",
+        "translation": "(Mieszkam na Ukrainie)",
+        "options": [
+          "Я",
+          "Ти",
+          "Він",
+          "Ми"
+        ],
+        "correct": "Я",
+        "explanation": "Ukraiński zaimek 'Я' odpowiada polskiemu 'ja'. W przeciwieństwie do polskiego, w ukraińskim zaimek osobowy jest często potrzebny, choć w mowie potocznej może być opuszczany, gdy kontekst jest jasny. 'Я' pisze się wielką literą tylko na początku zdania — to różnica wobec angielskiego 'I'. Wymowa ukraińskiego 'Я' [ja] jest identyczna z polskim 'ja', co sprawia, że to jeden z najłatwiejszych elementów do zapamiętania. Zaimki osobowe w ukraińskim odmieniają się przez przypadki podobnie jak w polskim."
+      },
+      {
+        "id": "pu_pp2",
+        "question": "_____ говориш дуже швидко.",
+        "translation": "(Mówisz bardzo szybko)",
+        "options": [
+          "Ти",
+          "Я",
+          "Вони",
+          "Він"
+        ],
+        "correct": "Ти",
+        "explanation": "Zaimek 'Ти' to nieformalne 'ty', używane w rozmowach z przyjaciółmi, rodziną i rówieśnikami. W ukraińskim rozróżnienie między 'ти' (ty) a 'Ви' (Pan/Pani) jest równie ważne jak w polskim. Pisownia 'Ви' wielką literą w korespondencji wyraża szacunek — to konwencja znana także w polskiej tradycji epistolarnej. 'Ти' wymawia się identycznie jak polskie 'ty', z tą różnicą, że ukraińskie 'и' brzmi jak polskie 'y'. To ułatwia zapamiętanie tego zaimka."
+      },
+      {
+        "id": "pu_pp3",
+        "question": "_____ працює в лікарні.",
+        "translation": "(On pracuje w szpitalu)",
+        "options": [
+          "Він",
+          "Вона",
+          "Вони",
+          "Ми"
+        ],
+        "correct": "Він",
+        "explanation": "Zaimek 'Він' oznacza 'on' i łączy się z czasownikami w trzeciej osobie liczby pojedynczej. Ukraiński, podobnie jak polski, ma trzy rodzaje gramatyczne: męski (він), żeński (вона) i nijaki (воно). Końcówka czasownika 'працює' (-є) wskazuje trzecią osobę. W polskim 'on pracuje' — końcówka -uje. Obie formy wyglądają i brzmią podobnie, co wynika ze wspólnych słowiańskich korzeni. 'Лікарня' (szpital) pochodzi od 'лікар' (lekarz) — logiczna ukraińska derywacja."
+      },
+      {
+        "id": "pu_pp4",
+        "question": "_____ читає книжку.",
+        "translation": "(Ona czyta książkę)",
+        "options": [
+          "Вона",
+          "Він",
+          "Воно",
+          "Ви"
+        ],
+        "correct": "Вона",
+        "explanation": "Zaimek 'Вона' oznacza 'ona' i wskazuje na osobę rodzaju żeńskiego. W ukraińskim rodzaj żeński jest oznaczany tak samo konsekwentnie jak w polskim — zarówno w zaimkach, jak i w końcówkach czasowników i przymiotników. 'Читає' to forma trzeciej osoby od 'читати' (czytać) — porównaj z polskim 'czyta'. Słowo 'книжка' (książka) to klasyczny przykład wspólnego słowiańskiego dziedzictwa — oba języki zachowały ten rdzeń. Reguła jest prosta: вона + końcówka -є dla czasowników I koniugacji."
+      },
+      {
+        "id": "pu_pp5",
+        "question": "_____ дуже гарне.",
+        "translation": "(Ono jest bardzo ładne)",
+        "options": [
+          "Воно",
+          "Вона",
+          "Він",
+          "Вони"
+        ],
+        "correct": "Воно",
+        "explanation": "Zaimek 'Воно' to rodzaj nijaki — odpowiednik polskiego 'ono'. Używa się go dla rzeczowników nijakich: 'місто' (miasto), 'село' (wieś), 'вікно' (okno). W ukraińskim, jak i w polskim, rodzaj nijaki jest mniej powszechny niż męski czy żeński. Przymiotnik 'гарне' ma końcówkę -е, typową dla rodzaju nijakiego. Porównaj: polskie 'ładne' (ono jest ładne) — ta sama końcówka -e! Ten paralelizm między polskim a ukraińskim to ogromne ułatwienie w nauce."
+      },
+      {
+        "id": "pu_pp6",
+        "question": "_____ вивчаємо українську мову.",
+        "translation": "(Uczymy się języka ukraińskiego)",
+        "options": [
+          "Ми",
+          "Ви",
+          "Вони",
+          "Я"
+        ],
+        "correct": "Ми",
+        "explanation": "Zaimek 'Ми' odpowiada polskiemu 'my'. Końcówka czasownika '-ємо' jasno sygnalizuje pierwszą osobę liczby mnogiej. W polskim mamy końcówkę '-my' (uczymy się), w ukraińskim '-ємо' lub '-імо'. Ukraińskie 'ми' brzmi niemal identycznie jak polskie 'my'. 'Вивчаємо' pochodzi od 'вивчати' (uczyć się, studiować) — prefiks 'ви-' wzmacnia znaczenie. Zwróć uwagę, że 'українську мову' jest w bierniku — przymiotnik i rzeczownik odmieniają się razem."
+      },
+      {
+        "id": "pu_pp7",
+        "question": "_____ знаєте цю людину?",
+        "translation": "(Czy Państwo znacie tę osobę?)",
+        "options": [
+          "Ви",
+          "Ти",
+          "Ми",
+          "Вони"
+        ],
+        "correct": "Ви",
+        "explanation": "Zaimek 'Ви' pełni podwójną funkcję: to zarówno 'wy' (liczba mnoga), jak i forma grzecznościowa 'Pan/Pani'. W kontekście formalnym pisze się wielką literą: 'Ви'. Końcówka '-єте' wskazuje drugą osobę liczby mnogiej. System grzecznościowy jest tu bardzo zbliżony do polskiego — 'Ви знаєте' to dokładny odpowiednik 'Pan/Pani wie/zna'. 'Людина' (osoba, człowiek) to piękne ukraińskie słowo, odpowiadające polskiemu 'człowiek' w neutralnym kontekście."
+      },
+      {
+        "id": "pu_pp8",
+        "question": "_____ часто подорожують.",
+        "translation": "(Oni często podróżują)",
+        "options": [
+          "Вони",
+          "Ми",
+          "Ви",
+          "Він"
+        ],
+        "correct": "Вони",
+        "explanation": "Zaimek 'Вони' to 'oni/one' — w ukraińskim jedna forma obejmuje wszystkie rodzaje w liczbie mnogiej, w odróżnieniu od polskiego, który rozróżnia 'oni' (męskoosobowy) i 'one' (niemęskoosobowy). Końcówka '-ують' to typowa końcówka trzeciej osoby liczby mnogiej. 'Подорожують' od 'подорожувати' (podróżować) — porównaj z polskim 'podróżują'. Uproszczenie ukraińskie (brak rozróżnienia oni/one) jest łatwiejsze niż skomplikowany polski system rodzajowy w liczbie mnogiej."
+      },
+      {
+        "id": "pu_pp9",
+        "question": "Я бачу _____.",
+        "translation": "(Widzę go)",
+        "options": [
+          "його",
+          "йому",
+          "він",
+          "його"
+        ],
+        "correct": "його",
+        "explanation": "W bierniku 'він' zmienia się na 'його'. To odpowiednik polskiego 'go' (widzę go). Ukraińskie zaimki odmieniają się przez przypadki podobnie jak polskie: він → його (biernik), йому (celownik), ним (narzędnik). 'Бачу' (widzę) to bliski krewniak polskiego 'baczę' (zwracam uwagę). Oba języki wymagają zaimka w odpowiednim przypadku po czasowniku przechodnim. Forma 'його' brzmi [joho] — 'г' w ukraińskim wymawia się jak gardłowe 'h'."
+      },
+      {
+        "id": "pu_pp10",
+        "question": "Я дзвоню _____.",
+        "translation": "(Dzwonię do niej)",
+        "options": [
+          "їй",
+          "її",
+          "вона",
+          "ній"
+        ],
+        "correct": "їй",
+        "explanation": "W celowniku 'вона' przybiera formę 'їй'. W polskim: 'dzwonię do niej' lub 'dzwonię jej'. Ukraiński 'дзвонити' wymaga celownika bezpośrednio (bez przyimka), podobnie jak polskie 'dzwonić komuś'. Zaimek 'їй' [jij] jest prosty do zapamiętania. Porównaj formy: вона → її (dopełniacz/biernik), їй (celownik), нею (narzędnik). System przypadkowy jest tu wiernym odbiciem polskiego, co znacząco ułatwia naukę ukraińskich zaimków osobowych."
+      },
+      {
+        "id": "pu_pp11",
+        "question": "Він розмовляє з _____.",
+        "translation": "(On rozmawia ze mną)",
+        "options": [
+          "мною",
+          "мені",
+          "мене",
+          "я"
+        ],
+        "correct": "мною",
+        "explanation": "W narzędniku 'я' przybiera formę 'мною'. Przyimek 'з' (z) wymaga narzędnika — identycznie jak w polskim 'ze mną'. Ta reguła jest niemal identyczna w obu językach. Porównaj: polskie 'ze mną' i ukraińskie 'зі мною' — niemal identyczne! Pełna deklinacja: я → мене (dopełniacz), мені (celownik), мене (biernik), мною (narzędnik), мені (miejscownik). Zbieżność form polskich i ukraińskich w narzędniku to wielkie ułatwienie."
+      },
+      {
+        "id": "pu_pp12",
+        "question": "Це подарунок для _____.",
+        "translation": "(To prezent dla ciebie)",
+        "options": [
+          "тебе",
+          "тобі",
+          "ти",
+          "тобою"
+        ],
+        "correct": "тебе",
+        "explanation": "W dopełniaczu 'ти' zmienia się na 'тебе'. Przyimek 'для' (dla) rządzi dopełniaczem, dokładnie jak w polskim 'dla ciebie'. Ukraińskie 'тебе' brzmi prawie identycznie jak polskie 'ciebie'. Pełna deklinacja: ти → тебе (dopełniacz), тобі (celownik), тебе (biernik), тобою (narzędnik), тобі (miejscownik). 'Подарунок' (prezent) to typowo ukraińskie słowo z prefiksem 'по-' i rdzeniem 'дарунок' (dar). W polskim mamy 'podarunek' — kolejny wspólny wyraz."
+      },
+      {
+        "id": "pu_pp13",
+        "question": "Ми запрошуємо _____ на вечерю.",
+        "translation": "(Zapraszamy was na kolację)",
+        "options": [
+          "вас",
+          "вам",
+          "ви",
+          "вами"
+        ],
+        "correct": "вас",
+        "explanation": "W bierniku 'ви' przybiera formę 'вас'. 'Запрошувати' (zapraszać) to czasownik przechodni wymagający biernika. Porównaj: polskie 'zapraszamy was' — forma 'was' jest identyczna w obu językach! To jeden z najpiękniejszych przykładów bliskości polsko-ukraińskiej. 'Вечеря' (kolacja) odpowiada polskiej 'wieczerzy' — oba słowa mają wspólne słowiańskie korzenie. Deklinacja: ви → вас (dopełniacz/biernik), вам (celownik), вами (narzędnik)."
+      },
+      {
+        "id": "pu_pp14",
+        "question": "Я хочу поговорити з _____.",
+        "translation": "(Chcę porozmawiać z nimi)",
+        "options": [
+          "ними",
+          "них",
+          "їм",
+          "вони"
+        ],
+        "correct": "ними",
+        "explanation": "W narzędniku 'вони' zmienia się na 'ними'. Konstrukcja 'з ними' (z nimi) jest identyczna strukturalnie z polskim 'z nimi'. Porównaj formy: polskie 'nimi' i ukraińskie 'ними' — prawie ta sama wymowa! 'Поговорити' to dokonana forma od 'говорити' (mówić), z prefiksem 'по-' oznaczającym krótką rozmowę. W polskim analogicznie: 'porozmawiać' od 'rozmawiać'. Ta symetria prefiksów aspektowych to cecha wspólna obu języków słowiańskich."
+      },
+      {
+        "id": "pu_pp15",
+        "question": "Він думає про _____.",
+        "translation": "(On myśli o sobie)",
+        "options": [
+          "себе",
+          "його",
+          "мене",
+          "нього"
+        ],
+        "correct": "себе",
+        "explanation": "Zaimek zwrotny 'себе' odpowiada polskiemu 'siebie/się'. W ukraińskim 'себе' jest uniwersalny — odnosi się do podmiotu niezależnie od osoby i liczby. 'Думати про' (myśleć o) wymaga biernika — tutaj 'себе'. Porównaj: polskie 'o sobie' (miejscownik) vs ukraińskie 'про себе' (biernik) — tu widzimy różnicę w rządzeniu przyimków mimo podobnego znaczenia. 'Себе' nie ma formy mianownika, podobnie jak polskie 'się/siebie'. To wspólna cecha słowiańska."
+      }
+    ]
+  },
+  {
+    "key": "possessive_pronouns",
+    "name": "Присвійні займенники",
+    "description": "Zaimki dzierżawcze",
+    "iconName": "hand.raised",
+    "color": "#a78bfa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pu_pos1",
+        "question": "_____ будинок дуже великий.",
+        "translation": "(Mój dom jest bardzo duży)",
+        "options": [
+          "Мій",
+          "Твій",
+          "Наш",
+          "Їхній"
+        ],
+        "correct": "Мій",
+        "explanation": "Zaimek dzierżawczy 'мій' oznacza 'mój' i odnosi się do rzeczowników rodzaju męskiego. W ukraińskim zaimki dzierżawcze odmieniają się przez rodzaje, liczby i przypadki — identycznie jak w polskim. 'Мій' dla rodzaju męskiego, 'моя' dla żeńskiego, 'моє' dla nijakiego, 'мої' dla liczby mnogiej. Porównaj: polskie 'mój/moja/moje/moi'. 'Будинок' (dom, budynek) ma wspólny rdzeń z polskim 'budynek'. Końcówki są klucz do ukraińskich zaimków dzierżawczych."
+      },
+      {
+        "id": "pu_pos2",
+        "question": "_____ сестра живе у Львові.",
+        "translation": "(Twoja siostra mieszka we Lwowie)",
+        "options": [
+          "Твоя",
+          "Моя",
+          "Його",
+          "Її"
+        ],
+        "correct": "Твоя",
+        "explanation": "Zaimek 'твоя' to forma żeńska od 'твій' (twój). Rzeczownik 'сестра' jest rodzaju żeńskiego, więc zaimek musi się zgadzać — 'твоя сестра'. W polskim analogicznie: 'twoja siostra'. 'Сестра' i 'siostra' to kolejny piękny przykład wspólnego słowiańskiego dziedzictwa leksykalnego. Lwów (Львів) to miasto o ogromnym znaczeniu historycznym zarówno dla Polaków, jak i Ukraińców. Formy: твій (m.), твоя (f.), твоє (n.), твої (pl.)."
+      },
+      {
+        "id": "pu_pos3",
+        "question": "_____ місто дуже красиве.",
+        "translation": "(Nasze miasto jest bardzo piękne)",
+        "options": [
+          "Наше",
+          "Моє",
+          "Ваше",
+          "Їхнє"
+        ],
+        "correct": "Наше",
+        "explanation": "Zaimek 'наше' to forma nijaka od 'наш' (nasz). 'Місто' (miasto) jest rodzaju nijakiego, więc potrzebujemy formy nijakiej — 'наше'. Porównaj z polskim: 'nasze miasto' — formy są niemal identyczne! 'Красиве' (piękne) to przymiotnik nijaki — po polsku 'piękne' z tą samą końcówką -e. Formy 'наш': наш (m.), наша (f.), наше (n.), наші (pl.). Ta regularność odmiany czyni ukraińskie zaimki dzierżawcze bardzo przewidywalnymi dla polskiego użytkownika."
+      },
+      {
+        "id": "pu_pos4",
+        "question": "_____ батьки живуть у Варшаві.",
+        "translation": "(Wasi rodzice mieszkają w Warszawie)",
+        "options": [
+          "Ваші",
+          "Наші",
+          "Мої",
+          "Твої"
+        ],
+        "correct": "Ваші",
+        "explanation": "Zaimek 'ваші' to forma liczby mnogiej od 'ваш' (wasz). 'Батьки' (rodzice) to liczba mnoga, stąd 'ваші'. W polskim: 'wasi rodzice' — 'wasi' to forma męskoosobowa. Ukraiński nie rozróżnia form męskoosobowych — 'ваші' obejmuje wszystkie rodzaje w liczbie mnogiej. 'Батьки' od 'батько' (ojciec) — 'rodzice' to dosłownie 'ojcowie' w szerokim sensie. Formy: ваш (m.), ваша (f.), ваше (n.), ваші (pl.). Warszawa po ukraińsku to 'Варшава' — niemal identycznie."
+      },
+      {
+        "id": "pu_pos5",
+        "question": "_____ машина стоїть біля дому.",
+        "translation": "(Jego samochód stoi koło domu)",
+        "options": [
+          "Його",
+          "Її",
+          "Мій",
+          "Наш"
+        ],
+        "correct": "Його",
+        "explanation": "Zaimek 'його' (jego) jest nieodmienny — nie zmienia formy w zależności od rodzaju czy przypadku rzeczownika, który określa. To duża różnica wobec polskiego, gdzie 'jego' też jest nieodmienne. 'Його машина' = 'jego samochód'. Uwaga: 'його' może oznaczać też 'go' (biernik od 'він'). Kontekst rozstrzyga: przed rzeczownikiem = dzierżawczy, po czasowniku = osobowy. 'Машина' (samochód) i 'біля' (koło, obok) to ukraińskie słowa, które łatwo zapamiętać dzięki prostej budowie."
+      },
+      {
+        "id": "pu_pos6",
+        "question": "_____ донька вчиться у школі.",
+        "translation": "(Jej córka uczy się w szkole)",
+        "options": [
+          "Її",
+          "Його",
+          "Твоя",
+          "Наша"
+        ],
+        "correct": "Її",
+        "explanation": "Zaimek 'її' (jej) jest nieodmienny, podobnie jak 'його'. Nie zmienia formy niezależnie od rodzaju i przypadku. 'Її донька' = 'jej córka'. 'Донька' to piękne ukraińskie słowo na 'córkę' (w polskim 'dońka' nie istnieje, ale rdzeń pokrewny). 'Вчиться' to czasownik zwrotny od 'вчити' (uczyć) — polska 'uczy się'. Przyrostek '-ся/-сь' w ukraińskim odpowiada polskiemu 'się'. Zapamiętaj: його (jego), її (jej), їхній (ich) — to trzy nieodmienne zaimki trzeciej osoby."
+      },
+      {
+        "id": "pu_pos7",
+        "question": "_____ кімната дуже затишна.",
+        "translation": "(Mój pokój jest bardzo przytulny)",
+        "options": [
+          "Моя",
+          "Моє",
+          "Мій",
+          "Мої"
+        ],
+        "correct": "Моя",
+        "explanation": "Zaimek 'моя' to forma żeńska od 'мій'. 'Кімната' (pokój, komnata) jest rodzaju żeńskiego (końcówka -а), więc potrzebujemy 'моя'. Polskie 'komnata' ma ten sam rdzeń. 'Затишна' (przytulna) to piękny ukraiński przymiotnik od 'затишок' (przytulność, ustronie). W polskim mamy 'zaciszna' od 'zacisze' — niemal identyczne słowa! Reguła doboru formy: sprawdź rodzaj rzeczownika i dopasuj końcówkę zaimka. Rodzaj żeński: -а/-я w mianowniku → моя, твоя, наша, ваша."
+      },
+      {
+        "id": "pu_pos8",
+        "question": "_____ діти грають у парку.",
+        "translation": "(Ich dzieci bawią się w parku)",
+        "options": [
+          "Їхні",
+          "Наші",
+          "Ваші",
+          "Мої"
+        ],
+        "correct": "Їхні",
+        "explanation": "Zaimek 'їхні' to forma liczby mnogiej od 'їхній' (ich). W przeciwieństwie do 'його' i 'її', zaimek 'їхній' odmienia się przez rodzaje: їхній (m.), їхня (f.), їхнє (n.), їхні (pl.). W polskim 'ich' jest nieodmienne. 'Діти' (dzieci) to liczba mnoga od 'дитина' (dziecko). Porównaj: polskie 'dzieci' — te same korzenie. 'Грають' od 'грати' (grać, bawić się) — polskie 'grają'. Ukraiński 'парк' brzmi identycznie jak polski 'park'."
+      },
+      {
+        "id": "pu_pos9",
+        "question": "Я забув _____ парасольку.",
+        "translation": "(Zapomniałem swoją parasolkę)",
+        "options": [
+          "свою",
+          "мою",
+          "твою",
+          "вашу"
+        ],
+        "correct": "свою",
+        "explanation": "Zaimek zwrotno-dzierżawczy 'свій' (swój) odnosi się do podmiotu zdania. 'Свою' to biernik rodzaju żeńskiego. W polskim 'swój' działa identycznie: 'zapomniałem swoją parasolkę'. Można też powiedzieć 'мою парасольку', ale 'свою' jest bardziej naturalnym wyborem, gdy mówimy o czymś należącym do podmiotu. 'Парасолька' (parasolka) — niemal identyczna z polskim słowem! Formy 'свій': свій (m.), своя (f.), своє (n.), свої (pl.) — odmienia się identycznie jak 'мій'."
+      },
+      {
+        "id": "pu_pos10",
+        "question": "Ми любимо _____ країну.",
+        "translation": "(Kochamy nasz kraj)",
+        "options": [
+          "свою",
+          "нашу",
+          "вашу",
+          "їхню"
+        ],
+        "correct": "свою",
+        "explanation": "Gdy podmiot mówi o czymś swoim, naturalniejsze jest użycie 'свій' niż 'наш'. 'Свою' to biernik żeński od 'свій'. 'Країна' (kraj) jest rodzaju żeńskiego. W polskim: 'kochamy swój kraj' lub 'nasz kraj' — obie formy poprawne, ale 'swój' precyzyjniejsze. Użycie 'свій' eliminuje dwuznaczność: 'ми любимо нашу країну' mogłoby sugerować, że chodzi o kraj kogoś innego z naszej grupy. 'Свій' jednoznacznie wskazuje na podmiot. Ta subtelność istnieje w obu językach."
+      },
+      {
+        "id": "pu_pos11",
+        "question": "_____ завдання було складним.",
+        "translation": "(Twoje zadanie było trudne)",
+        "options": [
+          "Твоє",
+          "Моє",
+          "Його",
+          "Наше"
+        ],
+        "correct": "Твоє",
+        "explanation": "Zaimek 'твоє' to forma nijaka od 'твій'. 'Завдання' (zadanie) jest rodzaju nijakiego (końcówka -ння) — po polsku 'zadanie' też nijaki! 'Складне' (trudne, skomplikowane) — od 'складний'. Orzeczenie 'було' to czas przeszły od 'бути' (być), nijakie. W polskim: 'twoje zadanie było trudne' — struktura identyczna. Formy 'твій' w mianowniku: твій (m.), твоя (f.), твоє (n.), твої (pl.). Końcówka -є dla nijakiego jest łatwa do zapamiętania."
+      },
+      {
+        "id": "pu_pos12",
+        "question": "Де _____ ключі?",
+        "translation": "(Gdzie twoje klucze?)",
+        "options": [
+          "твої",
+          "мої",
+          "наші",
+          "ваші"
+        ],
+        "correct": "твої",
+        "explanation": "Zaimek 'твої' to forma liczby mnogiej od 'твій'. 'Ключі' (klucze) to liczba mnoga — wymaga formy 'твої'. W polskim: 'gdzie twoje klucze?' — identyczna struktura. Pytajnik 'де' (gdzie) jest jednym z najczęściej używanych słów pytających w ukraińskim. Porównaj: polskie 'gdzie' — obie formy jednosylabowe, choć brzmieniowo różne. Formy liczby mnogiej wszystkich zaimków dzierżawczych kończą się na -ї: мої, твої, наші, ваші, їхні — łatwy wzorzec!"
+      },
+      {
+        "id": "pu_pos13",
+        "question": "_____ думка дуже цікава.",
+        "translation": "(Wasza opinia jest bardzo interesująca)",
+        "options": [
+          "Ваша",
+          "Наша",
+          "Моя",
+          "Їхня"
+        ],
+        "correct": "Ваша",
+        "explanation": "Zaimek 'ваша' to forma żeńska od 'ваш'. 'Думка' (opinia, myśl) jest rodzaju żeńskiego. W polskim: 'wasza opinia' — taka sama struktura. Ukraińskie 'думка' pochodzi od 'думати' (myśleć, dumać) — polskie 'dumka' to znane pojęcie muzyczne! 'Цікава' (interesująca, ciekawa) — porównaj z polskim 'ciekawa'. Te leksykalne podobieństwa sprawiają, że nauka ukraińskiego jest dla Polaków wyjątkowo satysfakcjonująca. Formy 'ваш': ваш (m.), ваша (f.), ваше (n.), ваші (pl.)."
+      },
+      {
+        "id": "pu_pos14",
+        "question": "Він поїхав на _____ автомобілі.",
+        "translation": "(Pojechał swoim samochodem)",
+        "options": [
+          "своєму",
+          "його",
+          "моєму",
+          "нашому"
+        ],
+        "correct": "своєму",
+        "explanation": "Forma 'своєму' to miejscownik rodzaju męskiego od 'свій'. Przyimek 'на' z narzędzikiem — 'на своєму автомобілі' (swoim samochodem). W polskim: 'swoim samochodem' — narzędnik. Ukraiński tutaj używa miejscownika z 'на'. To jedna z subtelnych różnic w rządzeniu przyimków między językami. 'Автомобіль' (samochód) to zapożyczenie wspólne dla wielu języków europejskich. Deklinacja 'свій' w miejscowniku: своєму (m./n.), своїй (f.), своїх (pl.)."
+      },
+      {
+        "id": "pu_pos15",
+        "question": "_____ брат старший за мене.",
+        "translation": "(Jej brat jest starszy ode mnie)",
+        "options": [
+          "Її",
+          "Його",
+          "Твій",
+          "Мій"
+        ],
+        "correct": "Її",
+        "explanation": "Zaimek 'її' (jej) jest nieodmienny i nie zmienia formy w zależności od przypadku czy rodzaju. 'Брат' (brat) to klasyczny przykład wspólnego słowiańskiego słownictwa — identyczne w polskim i ukraińskim. 'Старший' (starszy) — porównaj z polskim 'starszy'. Konstrukcja 'старший за мене' (starszy ode mnie) używa przyimka 'за' + biernik, podczas gdy w polskim mamy 'od' + dopełniacz. To istotna różnica konstrukcyjna w wyrażaniu porównań między tymi dwoma bliskimi językami."
+      }
+    ]
+  },
+  {
+    "key": "demonstrative_pronouns",
+    "name": "Вказівні займенники",
+    "description": "Zaimki wskazujące",
+    "iconName": "hand.point.right",
+    "color": "#34d399",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pu_dem1",
+        "question": "_____ книжка дуже цікава.",
+        "translation": "(Ta książka jest bardzo interesująca)",
+        "options": [
+          "Ця",
+          "Та",
+          "Цей",
+          "Це"
+        ],
+        "correct": "Ця",
+        "explanation": "Zaimek wskazujący 'ця' oznacza 'ta' (blisko) dla rodzaju żeńskiego. 'Книжка' jest rodzaju żeńskiego, więc potrzebujemy 'ця'. W ukraińskim rozróżniamy: 'цей/ця/це' (ten/ta/to — blisko) i 'той/та/те' (tamten/tamta/tamto — daleko). Polski ma analogiczne rozróżnienie 'ten/tamten'. 'Цікава' (interesująca, ciekawa) — bliskie polskiemu 'ciekawa'. Zaimki wskazujące są kluczowe w codziennej komunikacji i pomagają wskazywać konkretne przedmioty w przestrzeni."
+      },
+      {
+        "id": "pu_dem2",
+        "question": "_____ чоловік — мій сусід.",
+        "translation": "(Ten mężczyzna to mój sąsiad)",
+        "options": [
+          "Цей",
+          "Ця",
+          "Це",
+          "Ці"
+        ],
+        "correct": "Цей",
+        "explanation": "Zaimek 'цей' to forma męska od 'це' — oznacza 'ten' (blisko). 'Чоловік' (mężczyzna, mąż) jest rodzaju męskiego. W polskim: 'ten mężczyzna'. 'Сусід' (sąsiad) — niemal identyczne z polskim 'sąsiad'. Ukraińskie 'чоловік' ma podwójne znaczenie: 'mężczyzna' i 'mąż' — kontekst rozstrzyga. Pełne formy bliskie: цей (m.), ця (f.), це (n.), ці (pl.). Odmiana przez przypadki: цього (dopełniacz m.), цієї (dopełniacz f.), цих (dopełniacz pl.)."
+      },
+      {
+        "id": "pu_dem3",
+        "question": "_____ вікно відчинене.",
+        "translation": "(To okno jest otwarte)",
+        "options": [
+          "Це",
+          "Цей",
+          "Ця",
+          "Ці"
+        ],
+        "correct": "Це",
+        "explanation": "Zaimek 'це' to forma nijaka — oznacza 'to' (blisko). 'Вікно' (okno) jest rodzaju nijakiego. W polskim: 'to okno'. Uwaga: 'це' pełni też funkcję konstrukcji wskazującej: 'це книжка' = 'to jest książka'. 'Відчинене' (otwarte) od 'відчиняти' (otwierać) — porównaj z polskim 'otworzone/otwarte'. Forma nijaka 'це' jest jedną z najczęściej używanych form w ukraińskim, bo służy zarówno jako zaimek wskazujący, jak i jako łącznik w zdaniach orzekających."
+      },
+      {
+        "id": "pu_dem4",
+        "question": "_____ квіти дуже гарні.",
+        "translation": "(Te kwiaty są bardzo ładne)",
+        "options": [
+          "Ці",
+          "Ті",
+          "Цей",
+          "Це"
+        ],
+        "correct": "Ці",
+        "explanation": "Zaimek 'ці' to forma liczby mnogiej — oznacza 'te' (blisko). 'Квіти' (kwiaty) to liczba mnoga od 'квітка' (kwiatek). Porównaj: polskie 'kwiaty' od 'kwiat'. 'Гарні' (ładne) — forma mnoga od 'гарний'. Ukraiński 'гарний' jest bardzo popularnym przymiotnikiem oznaczającym 'ładny, piękny, dobry'. Formy bliskie w liczbie mnogiej: ці (mianownik), цих (dopełniacz), цим (celownik), ці/цих (biernik), цими (narzędnik), цих (miejscownik)."
+      },
+      {
+        "id": "pu_dem5",
+        "question": "_____ будинок стоїть на горі.",
+        "translation": "(Tamten budynek stoi na wzgórzu)",
+        "options": [
+          "Той",
+          "Цей",
+          "Та",
+          "Те"
+        ],
+        "correct": "Той",
+        "explanation": "Zaimek 'той' oznacza 'tamten' — wskazuje na coś dalekiego. 'Будинок' (budynek) jest rodzaju męskiego. W polskim: 'tamten budynek'. Formy dalekie: той (m.), та (f.), те (n.), ті (pl.). 'Гора' (góra, wzgórze) — identyczne z polskim 'góra'. Ukraiński 'стоїть' (stoi) — polskie 'stoi'. Rozróżnienie między 'цей' (bliski) a 'той' (daleki) jest fundamentalne w opisywaniu przestrzeni i wskazywaniu przedmiotów — to jeden z pierwszych elementów, które opanowuje każdy uczeń."
+      },
+      {
+        "id": "pu_dem6",
+        "question": "_____ дівчина — моя подруга.",
+        "translation": "(Tamta dziewczyna to moja przyjaciółka)",
+        "options": [
+          "Та",
+          "Ця",
+          "Ті",
+          "Те"
+        ],
+        "correct": "Та",
+        "explanation": "Zaimek 'та' to forma żeńska od 'той' — oznacza 'tamta'. 'Дівчина' (dziewczyna) jest rodzaju żeńskiego. W polskim: 'tamta dziewczyna'. Ukraińskie 'дівчина' ma szersze znaczenie niż polskie 'dziewczyna' — może oznaczać też 'dziewczynę' w sensie romantycznym. 'Подруга' (przyjaciółka) — porównaj z polskim 'podróżniczka'... nie, tu raczej z 'druha/drużka'. Polskie 'przyjaciółka' to inny rdzeń. 'Подруга' od 'друг' (przyjaciel) — logiczna ukraińska derywacja."
+      },
+      {
+        "id": "pu_dem7",
+        "question": "_____ озеро називається Світязь.",
+        "translation": "(Tamto jezioro nazywa się Świtaź)",
+        "options": [
+          "Те",
+          "Це",
+          "Та",
+          "Той"
+        ],
+        "correct": "Те",
+        "explanation": "Zaimek 'те' to forma nijaka od 'той' — oznacza 'tamto'. 'Озеро' (jezioro) jest rodzaju nijakiego. Jezioro Świtaź (Світязь) to jedno z najgłębszych jezior Ukrainy, położone na Wołyniu. Interesujące, że Polska ma też Jezioro Świtaź (Szuwary). 'Називається' (nazywa się) od 'називати' — polskie 'nazywa się'. Formy dalekie nijakie: те (mianownik), того (dopełniacz), тому (celownik), те (biernik), тим (narzędnik), тому (miejscownik). Porównaj z polskim: tamto/tamtego/tamtemu."
+      },
+      {
+        "id": "pu_dem8",
+        "question": "_____ люди дуже привітні.",
+        "translation": "(Tamci ludzie są bardzo przyjaźni)",
+        "options": [
+          "Ті",
+          "Ці",
+          "Той",
+          "Та"
+        ],
+        "correct": "Ті",
+        "explanation": "Zaimek 'ті' to forma mnoga od 'той' — oznacza 'tamci/tamte'. 'Люди' (ludzie) to forma mnoga. W polskim: 'tamci ludzie'. 'Привітні' (przyjaźni, gościnni) to typowo ukraiński przymiotnik od 'привіт' (powitanie, cześć). W polskim mamy 'powitanie' od tego samego rdzenia. Ukraińska gościnność jest znana — 'привітність' (gościnność) to wartość głęboko zakorzeniona w ukraińskiej kulturze. Formy mnogie dalekie: ті (mianownik), тих (dopełniacz), тим (celownik)."
+      },
+      {
+        "id": "pu_dem9",
+        "question": "Я хочу купити _____ сукню.",
+        "translation": "(Chcę kupić tę sukienkę)",
+        "options": [
+          "цю",
+          "цей",
+          "ту",
+          "цих"
+        ],
+        "correct": "цю",
+        "explanation": "Forma 'цю' to biernik żeński od 'ця'. 'Сукня' (sukienka) w bierniku wymaga formy 'цю сукню'. W polskim: 'tę sukienkę' — również biernik. Odmiana 'ця' przez przypadki: ця (mianownik), цієї (dopełniacz), цій (celownik), цю (biernik), цією (narzędnik), цій (miejscownik). 'Купити' (kupić) — porównaj z polskim 'kupić'. 'Сукня' to elegantsze słowo niż 'плаття' (też sukienka) — oba poprawne. Biernik żeński zawsze kończy się na -у/-ю w ukraińskim."
+      },
+      {
+        "id": "pu_dem10",
+        "question": "Я бачив _____ фільм вчора.",
+        "translation": "(Widziałem ten film wczoraj)",
+        "options": [
+          "цей",
+          "ця",
+          "це",
+          "ці"
+        ],
+        "correct": "цей",
+        "explanation": "W bierniku 'цей' nie zmienia formy dla rzeczowników nieżywotnych rodzaju męskiego — 'цей фільм'. W polskim: 'ten film' (biernik = mianownik dla nieżywotnych). Ale uwaga: dla żywotnych biernik = dopełniacz: 'цього чоловіка' (tego mężczyzny) — identyczna reguła jak w polskim! 'Фільм' (film) — identyczne w obu językach. 'Вчора' (wczoraj) — polskie 'wczoraj'. Ta reguła żywotności w bierniku to jedna z fundamentalnych zasad wspólnych dla polskiego i ukraińskiego."
+      },
+      {
+        "id": "pu_dem11",
+        "question": "У _____ магазині є все.",
+        "translation": "(W tym sklepie jest wszystko)",
+        "options": [
+          "цьому",
+          "цій",
+          "цих",
+          "цим"
+        ],
+        "correct": "цьому",
+        "explanation": "Forma 'цьому' to miejscownik rodzaju męskiego od 'цей'. Przyimek 'у/в' wymaga miejscownika. W polskim: 'w tym sklepie' — też miejscownik! 'Магазин' (sklep) — znane zapożyczenie z francuskiego. 'Все' (wszystko) — porównaj z polskim 'wszystko/wsze-'. Miejscownik jest jednym z najtrudniejszych przypadków w obu językach, ale tu podobieństwa pomagają: polskie 'tym' i ukraińskie 'цьому' pełnią identyczną funkcję. Miękki znak (ь) w 'цьому' zmiękcza 'ц'."
+      },
+      {
+        "id": "pu_dem12",
+        "question": "Він розповів про _____ подію.",
+        "translation": "(Opowiedział o tym wydarzeniu)",
+        "options": [
+          "ту",
+          "цю",
+          "ці",
+          "те"
+        ],
+        "correct": "ту",
+        "explanation": "Forma 'ту' to biernik żeński od 'та'. 'Подія' (wydarzenie) jest rodzaju żeńskiego. Przyimek 'про' wymaga biernika: 'про ту подію'. W polskim: 'o tym wydarzeniu' — używamy miejscownika z 'o'. To ważna różnica: ukraiński 'про' + biernik vs polski 'o' + miejscownik. 'Розповів' (opowiedział) od 'розповідати' (opowiadać). 'Подія' jest bliskie polskiemu 'zdarzenie/wydarzenie', ale rdzeń 'дія' (działanie) łączy się z polskim 'działanie'. Przyimek 'про' jest jednym z najczęstszych w ukraińskim."
+      },
+      {
+        "id": "pu_dem13",
+        "question": "_____ — мій найкращий друг.",
+        "translation": "(To jest mój najlepszy przyjaciel)",
+        "options": [
+          "Це",
+          "Цей",
+          "Ця",
+          "Той"
+        ],
+        "correct": "Це",
+        "explanation": "Konstrukcja 'це' jako łącznik w zdaniu orzekającym — 'Це мій друг' (to jest mój przyjaciel). W tej funkcji 'це' jest nieodmienne i nie zależy od rodzaju! Nawet mówiąc o kobiecie: 'Це моя подруга'. W polskim: 'to jest...' — identyczna funkcja. 'Найкращий' (najlepszy) — stopień najwyższy od 'кращий' (lepszy), z prefiksem 'най-'. W polskim: 'najlepszy'. 'Друг' (przyjaciel) — wspólny słowiański rdzeń. Ta konstrukcja ze wskazującym 'це' jest fundamentalna w ukraińskim."
+      },
+      {
+        "id": "pu_dem14",
+        "question": "Мені подобається _____ пісня.",
+        "translation": "(Podoba mi się ta piosenka)",
+        "options": [
+          "ця",
+          "цей",
+          "це",
+          "та"
+        ],
+        "correct": "ця",
+        "explanation": "Zaimek 'ця' w mianowniku żeńskim — 'ця пісня' (ta piosenka). Konstrukcja 'мені подобається' (podoba mi się) jest kalką polskiego 'podoba mi się' — celownik + czasownik. 'Пісня' (piosenka) — porównaj z polskim 'pieśń'. Ukraińska muzyka i tradycja pieśniarska to niesamowicie bogata część kultury — od kozackich dum po współczesny pop. 'Подобається' od 'подобатися' — polskie 'podobać się'. Te konstrukcje są identyczne w obu językach, co czyni naukę intuicyjną."
+      },
+      {
+        "id": "pu_dem15",
+        "question": "Я згоден з _____ рішенням.",
+        "translation": "(Zgadzam się z tą decyzją)",
+        "options": [
+          "цим",
+          "цією",
+          "цьому",
+          "цих"
+        ],
+        "correct": "цим",
+        "explanation": "Forma 'цим' to narzędnik rodzaju nijakiego od 'це'. 'Рішення' (decyzja, rozwiązanie) jest rodzaju nijakiego. Przyimek 'з' wymaga narzędnika: 'з цим рішенням'. W polskim: 'z tą decyzją' (narzędnik). Uwaga: 'рішення' kończy się na -ння, co jest typowe dla rzeczowników nijakich odczasownikowych w ukraińskim. 'Згоден' (zgodny) — polskie 'zgodny'. Narzędnik nijakiego i męskiego ma identyczną formę 'цим', co upraszcza naukę. Formy narzędnika: цим (m./n.), цією (f.), цими (pl.)."
+      }
+    ]
+  },
+  {
+    "key": "negation",
+    "name": "Заперечення",
+    "description": "Przeczenie",
+    "iconName": "xmark.circle",
+    "color": "#f87171",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pu_neg1",
+        "question": "Я _____ розумію цього слова.",
+        "translation": "(Nie rozumiem tego słowa)",
+        "options": [
+          "не",
+          "ні",
+          "ані",
+          "без"
+        ],
+        "correct": "не",
+        "explanation": "Partykuła 'не' to podstawowy sposób przeczenia w ukraińskim — stawia się ją bezpośrednio przed czasownikiem. 'Не розумію' = 'nie rozumiem'. W polskim identycznie: 'nie' + czasownik. Ważna różnica: w ukraińskim dopełnienie po przeczeniu zmienia się na dopełniacz — 'цього слова' (tego słowa) zamiast 'це слово'. W polskim też: 'nie rozumiem tego słowa' (dopełniacz). Ta wspólna reguła to ogromne ułatwienie! 'Слово' (słowo) — identyczne w obu językach."
+      },
+      {
+        "id": "pu_neg2",
+        "question": "Вона _____ прийшла на зустріч.",
+        "translation": "(Ona nie przyszła na spotkanie)",
+        "options": [
+          "не",
+          "ні",
+          "без",
+          "жодної"
+        ],
+        "correct": "не",
+        "explanation": "Przeczenie w czasie przeszłym: 'не' przed czasownikiem — 'не прийшла'. W polskim: 'nie przyszła'. Struktura identyczna. 'Прийшла' (przyszła) od 'прийти' (przyjść) — porównaj z polskim 'przyjść/przyszła'. 'Зустріч' (spotkanie) — polskie 'spotkanie', ale rdzeń ukraiński bliższy polskiemu 'spotkać'. W ukraińskim 'не' nigdy nie łączy się z czasownikiem w jedno słowo (w przeciwieństwie do rosyjskiego). To ułatwia naukę — 'не' zawsze jest odrębnym wyrazem przed czasownikiem."
+      },
+      {
+        "id": "pu_neg3",
+        "question": "У мене _____ часу.",
+        "translation": "(Nie mam czasu)",
+        "options": [
+          "немає",
+          "не",
+          "ні",
+          "нема"
+        ],
+        "correct": "немає",
+        "explanation": "Konstrukcja 'немає' oznacza 'nie ma' i wyraża brak czegoś. 'У мене немає часу' = dosłownie 'u mnie nie ma czasu'. W polskim: 'nie mam czasu'. Ukraiński używa konstrukcji bezosobowej z 'немає' + dopełniacz, podczas gdy polski używa czasownika 'mieć' w formie osobowej. Forma potoczna 'нема' też jest poprawna. Pełna forma 'не має' (nie ma) ściągnęła się w 'немає'. 'Часу' to dopełniacz od 'час' (czas) — polskie 'czas/czasu'. Ta konstrukcja jest jedną z najważniejszych w ukraińskim."
+      },
+      {
+        "id": "pu_neg4",
+        "question": "Він _____ знає нікого тут.",
+        "translation": "(On nikogo tu nie zna)",
+        "options": [
+          "не",
+          "ні",
+          "немає",
+          "без"
+        ],
+        "correct": "не",
+        "explanation": "Podwójne przeczenie w ukraińskim jest obowiązkowe: 'не знає нікого' — 'не' przed czasownikiem plus zaimek przeczący 'нікого' (nikogo). W polskim identycznie: 'nie zna nikogo'. Oba języki wymagają podwójnego przeczenia — to ich wspólna cecha! Angielski zabrania podwójnego przeczenia, ale polski i ukraiński traktują je jako normę. 'Нікого' od 'ніхто' (nikt) — porównaj z polskim 'nikogo' od 'nikt'. Zaimki przeczące: ніхто (nikt), ніщо (nic), ніде (nigdzie), ніколи (nigdy)."
+      },
+      {
+        "id": "pu_neg5",
+        "question": "Тут _____ нічого цікавого.",
+        "translation": "(Tutaj nie ma nic ciekawego)",
+        "options": [
+          "немає",
+          "не",
+          "ні",
+          "жодного"
+        ],
+        "correct": "немає",
+        "explanation": "Ponownie podwójne przeczenie: 'немає нічого' — 'nie ma nic'. 'Нічого' (nic) to dopełniacz od 'ніщо'. W polskim: 'nie ma nic ciekawego' — ta sama struktura podwójnego przeczenia. 'Цікавого' (ciekawego) — dopełniacz od 'цікавий' (ciekawy). Porównaj z polskim 'ciekawego/ciekawy'. W ukraińskim po 'немає' zawsze stoi dopełniacz. Konstrukcja 'немає + dopełniacz' jest jedną z najczęstszych w codziennym ukraińskim i warto ją opanować na samym początku nauki."
+      },
+      {
+        "id": "pu_neg6",
+        "question": "Ми _____ хочемо їсти.",
+        "translation": "(Nie chcemy jeść)",
+        "options": [
+          "не",
+          "ні",
+          "немає",
+          "без"
+        ],
+        "correct": "не",
+        "explanation": "Standardowe przeczenie: 'не' przed czasownikiem. 'Не хочемо' = 'nie chcemy'. Struktura identyczna jak w polskim: partykuła + czasownik. 'Їсти' (jeść) — bezokolicznik, odpowiednik polskiego 'jeść'. Ukraińskie 'їсти' brzmi podobnie do polskiego 'jeść', choć pisownia cyrylicą wygląda egzotycznie. 'Хочемо' od 'хотіти' (chcieć) — porównaj z polskim 'chcemy'. Końcówka '-емо' dla pierwszej osoby liczby mnogiej jest regularnym wzorcem. Partykuła 'не' jest uniwersalna i łatwa do opanowania."
+      },
+      {
+        "id": "pu_neg7",
+        "question": "Це _____ правда.",
+        "translation": "(To nie jest prawda)",
+        "options": [
+          "не",
+          "ні",
+          "жодна",
+          "немає"
+        ],
+        "correct": "не",
+        "explanation": "W zdaniach z orzecznikiem: 'Це не правда' (to nie prawda). W ukraińskim czasownik 'бути' (być) jest opuszczany w czasie teraźniejszym, ale 'не' pozostaje. W polskim: 'to nie jest prawda' lub potocznie 'to nieprawda'. 'Правда' (prawda) — identyczne w obu językach! To jedno z wielu wspólnych słów, które ułatwiają polsko-ukraińską komunikację. Uwaga: 'неправда' (kłamstwo) to jeden wyraz — przymiotnik. Ale w zdaniu 'це не правда' — 'не' jest odrębne jako partykuła przecząca."
+      },
+      {
+        "id": "pu_neg8",
+        "question": "Я _____ був там ніколи.",
+        "translation": "(Nigdy tam nie byłem)",
+        "options": [
+          "не",
+          "ні",
+          "немає",
+          "без"
+        ],
+        "correct": "не",
+        "explanation": "Podwójne przeczenie z przysłówkiem: 'не був ніколи' (nigdy nie byłem). 'Ніколи' (nigdy) — polskie 'nigdy'. W obu językach zaimek przeczący wzmacnia przeczenie, które jest obowiązkowe. 'Був' (byłem) — czas przeszły od 'бути' (być), rodzaj męski. Porównaj: polskie 'byłem'. Szyk zdania może być elastyczny: 'я ніколи не був там' lub 'я не був там ніколи' — oba poprawne. W polskim analogicznie: 'nigdy tam nie byłem' lub 'nie byłem tam nigdy'. Ta elastyczność jest wspólna."
+      },
+      {
+        "id": "pu_neg9",
+        "question": "Вони _____ можуть прийти завтра.",
+        "translation": "(Oni nie mogą przyjść jutro)",
+        "options": [
+          "не",
+          "ні",
+          "немає",
+          "жодний"
+        ],
+        "correct": "не",
+        "explanation": "Przeczenie z czasownikiem modalnym: 'не можуть' (nie mogą). W polskim: 'nie mogą' — identyczna struktura. 'Можуть' od 'могти' (móc) — polskie 'mogą' od 'móc'. Porównaj rdzenie: мог-/мож- i mog-/moż-. 'Прийти' (przyjść) i 'завтра' (jutro) to kolejne wspólne słowiańskie słowa. 'Завтра' — polskie 'jutro' (inne słowo, ale ukraińskie 'завтра' jest bliskie rosyjskiemu). Partykuła 'не' stoi zawsze bezpośrednio przed czasownikiem, który neguje — nigdy po nim."
+      },
+      {
+        "id": "pu_neg10",
+        "question": "У цьому місті _____ метро.",
+        "translation": "(W tym mieście nie ma metra)",
+        "options": [
+          "немає",
+          "не",
+          "нема",
+          "без"
+        ],
+        "correct": "немає",
+        "explanation": "Konstrukcja 'немає' + dopełniacz wyraża brak. 'Немає метро' = 'nie ma metra'. 'Метро' to słowo nieodmienne w obu językach — zapożyczenie z francuskiego. W polskim: 'w tym mieście nie ma metra' — identyczna struktura. 'Місто' (miasto) w miejscowniku z przyimkiem 'у' = 'у місті'. Porównaj z polskim: 'w mieście'. Formy potoczne: 'нема' zamiast 'немає' — obie akceptowalne. W pytaniach: 'Чи є метро?' (Czy jest metro?) — 'є' to forma 'бути' w czasie teraźniejszym."
+      },
+      {
+        "id": "pu_neg11",
+        "question": "Вона _____ любить каву.",
+        "translation": "(Ona nie lubi kawy)",
+        "options": [
+          "не",
+          "ні",
+          "немає",
+          "без"
+        ],
+        "correct": "не",
+        "explanation": "Przeczenie z 'не' + czasownik: 'не любить' (nie lubi). 'Любити' (lubić, kochać) — polskie 'lubić'. Uwaga: po 'не любить' dopełnienie przechodzi w dopełniacz: 'не любить кави' (nie lubi kawy). W polskim identycznie: 'nie lubi kawy' (dopełniacz). Bez przeczenia byłoby: 'любить каву' (lubi kawę — biernik). Ta zmiana przypadka po przeczeniu to ważna reguła wspólna dla polskiego i ukraińskiego. 'Кава' (kawa) — identyczne w obu językach. Reguła ta nie jest bezwzględna — w potocznym ukraińskim biernik po 'не' też się pojawia."
+      },
+      {
+        "id": "pu_neg12",
+        "question": "_____ хвилюйся, все буде добре.",
+        "translation": "(Nie martw się, wszystko będzie dobrze)",
+        "options": [
+          "Не",
+          "Ні",
+          "Без",
+          "Немає"
+        ],
+        "correct": "Не",
+        "explanation": "Przeczenie z trybem rozkazującym: 'не хвилюйся' (nie martw się). W polskim: 'nie martw się'. Ukraiński tryb rozkazujący przeczący tworzy się identycznie jak w polskim: 'не' + forma rozkazująca. 'Хвилюватися' (martwić się) — od 'хвиля' (fala) — dosłownie 'falować, miotać się'. 'Все буде добре' (wszystko będzie dobrze) — kultowe ukraińskie powiedzenie. 'Добре' (dobrze) — polskie 'dobrze'. Ta fraza stała się swoistym ukraińskim mottem w czasach wyzwań. Partykuła 'не' stoi zawsze przed formą rozkazującą."
+      },
+      {
+        "id": "pu_neg13",
+        "question": "У нас _____ жодних проблем.",
+        "translation": "(Nie mamy żadnych problemów)",
+        "options": [
+          "немає",
+          "не",
+          "ні",
+          "без"
+        ],
+        "correct": "немає",
+        "explanation": "Wzmocnione przeczenie z 'жодний' (żaden): 'немає жодних проблем'. 'Жодний' odpowiada polskiemu 'żaden'. Ponowne podwójne przeczenie: 'немає' + 'жодних'. W polskim: 'nie mamy żadnych problemów' — ta sama struktura. 'Проблема' (problem) — identyczne w obu językach. 'Жодний' odmienia się jak przymiotnik: жодний (m.), жодна (f.), жодне (n.), жодні (pl.). Po 'немає' potrzebujemy dopełniacza: 'жодних проблем'. Ta emfatyczna forma przeczenia jest naturalna i powszechna."
+      },
+      {
+        "id": "pu_neg14",
+        "question": "Це _____ можливо.",
+        "translation": "(To niemożliwe)",
+        "options": [
+          "не",
+          "ні",
+          "немає",
+          "без"
+        ],
+        "correct": "не",
+        "explanation": "Przeczenie z przymiotnikiem/przysłówkiem: 'не можливо' (niemożliwe). W polskim: 'niemożliwe' pisze się łącznie, ale w ukraińskim 'не' przed 'можливо' jest pisane oddzielnie. To ważna reguła ortograficzna! 'Можливо' (możliwe, możliwie) — polskie 'możliwe'. W ukraińskim 'не' z przymiotnikami i przysłówkami zwykle pisze się oddzielnie, gdy jest wyraźne przeczenie. Ale jako przymiotnik — 'неможливий' (niemożliwy) — łącznie! Kontekst decyduje. Tu 'не можливо' = 'to jest nie-możliwe' (przysłówek)."
+      },
+      {
+        "id": "pu_neg15",
+        "question": "Він _____ нічого _____ сказав.",
+        "translation": "(On nic nie powiedział)",
+        "options": [
+          "не",
+          "ні",
+          "без",
+          "немає"
+        ],
+        "correct": "не",
+        "explanation": "Pełna konstrukcja podwójnego przeczenia: 'не сказав нічого' lub 'нічого не сказав'. W tym zdaniu brakuje 'не' — uzupełniamy: 'він нічого не сказав'. Polskie: 'nic nie powiedział'. W ukraińskim szyk jest elastyczny: zarówno 'нічого не сказав', jak i 'не сказав нічого' są poprawne. 'Сказав' (powiedział) od 'сказати' (powiedzieć) — polskie 'skazać' ma inne znaczenie, ale rdzeń 'каз-' jest wspólny (ukraiński 'казати' = mówić). To klasyczny przykład podwójnego przeczenia wymaganego w obu językach."
+      }
+    ]
+  },
+  {
+    "key": "questions",
+    "name": "Питальні речення",
+    "description": "Zdania pytające",
+    "iconName": "questionmark.circle",
+    "color": "#fbbf24",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pu_qt1",
+        "question": "_____ ти живеш?",
+        "translation": "(Gdzie mieszkasz?)",
+        "options": [
+          "Де",
+          "Що",
+          "Хто",
+          "Коли"
+        ],
+        "correct": "Де",
+        "explanation": "Pytajnik 'де' oznacza 'gdzie' i jest jednym z najczęściej używanych słów pytających. 'Де ти живеш?' = 'Gdzie mieszkasz?'. W polskim i ukraińskim szyk pytania jest identyczny: pytajnik + podmiot + orzeczenie. 'Де' nie wymaga inwersji ani dodatkowych słów pomocniczych (jak angielskie 'do'). 'Живеш' od 'жити' (żyć, mieszkać) — polskie 'żyjesz'. Ukraińskie pytania z 'де' pokrywają wiele sytuacji: 'де ти?', 'де це?', 'де знаходиться...?' — kluczowe dla orientacji w przestrzeni."
+      },
+      {
+        "id": "pu_qt2",
+        "question": "_____ це коштує?",
+        "translation": "(Ile to kosztuje?)",
+        "options": [
+          "Скільки",
+          "Що",
+          "Як",
+          "Де"
+        ],
+        "correct": "Скільки",
+        "explanation": "Pytajnik 'скільки' oznacza 'ile'. 'Скільки це коштує?' = 'Ile to kosztuje?'. Polskie 'ile' ma inną formę, ale w polskim gwarowym istnieje 'kilka' od tego samego rdzenia. 'Коштувати' (kosztować) — identyczne z polskim 'kosztować'. To jedno z najbardziej praktycznych pytań na co dzień — w sklepie, na targu, w restauracji. 'Скільки' używa się też z rzeczownikami: 'скільки людей?' (ile ludzi?), 'скільки часу?' (ile czasu?). Po 'скільки' stoi dopełniacz, jak po polskim 'ile'."
+      },
+      {
+        "id": "pu_qt3",
+        "question": "_____ ти робиш?",
+        "translation": "(Co robisz?)",
+        "options": [
+          "Що",
+          "Хто",
+          "Де",
+          "Коли"
+        ],
+        "correct": "Що",
+        "explanation": "Pytajnik 'що' oznacza 'co'. 'Що ти робиш?' = 'Co robisz?'. W polskim: 'co' — oba jednosylabowe pytajniki. 'Робити' (robić) — niemal identyczne z polskim 'robić'. To podstawowe pytanie do nawiązania rozmowy. 'Що' odmienia się przez przypadki: що (mianownik/biernik), чого (dopełniacz), чому (celownik), чим (narzędnik), на чому (miejscownik). Porównaj z polskim: co/czego/czemu/czym/o czym. Odmiana jest bardzo podobna! 'Що' to jedno z pierwszych słów do opanowania."
+      },
+      {
+        "id": "pu_qt4",
+        "question": "_____ прийшов до тебе?",
+        "translation": "(Kto do ciebie przyszedł?)",
+        "options": [
+          "Хто",
+          "Що",
+          "Де",
+          "Як"
+        ],
+        "correct": "Хто",
+        "explanation": "Pytajnik 'хто' oznacza 'kto'. 'Хто прийшов?' = 'Kto przyszedł?'. Polskie 'kto' brzmi niemal identycznie! 'Хто' odmienia się: хто, кого, кому, кого, ким, на кому. Porównaj z polskim: kto, kogo, komu, kogo, kim, o kim. Formy są bliźniaczo podobne! 'Прийшов' (przyszedł) — polskie 'przyszedł'. 'До тебе' (do ciebie) — identyczne z polskim 'do ciebie'. Ten pytajnik jest fundamentalny w codziennych rozmowach i jest jednym z najłatwiejszych ukraińskich słów pytających dla polskiego ucznia."
+      },
+      {
+        "id": "pu_qt5",
+        "question": "_____ ти вчишся?",
+        "translation": "(Dlaczego się uczysz?)",
+        "options": [
+          "Чому",
+          "Що",
+          "Як",
+          "Де"
+        ],
+        "correct": "Чому",
+        "explanation": "Pytajnik 'чому' oznacza 'dlaczego'. 'Чому ти вчишся?' = 'Dlaczego się uczysz?'. W polskim: 'dlaczego' — zupełnie inna forma. Ale 'чому' jest bliskie polskiemu 'czemu' (potoczne 'czemu'). W staropolskim 'czemu' było standardowe. 'Вчишся' od 'вчитися' (uczyć się) — polskie 'uczysz się'. Zwróć uwagę: ukraiński '-ся' jest zawsze przyrostkiem (nie oddzielnym słowem jak polskie 'się'): вчуся, вчишся, вчиться. To upraszcza szyk zdania — nie trzeba myśleć, gdzie postawić 'się'."
+      },
+      {
+        "id": "pu_qt6",
+        "question": "_____ ти себе почуваєш?",
+        "translation": "(Jak się czujesz?)",
+        "options": [
+          "Як",
+          "Що",
+          "Чому",
+          "Коли"
+        ],
+        "correct": "Як",
+        "explanation": "Pytajnik 'як' oznacza 'jak'. 'Як ти себе почуваєш?' = 'Jak się czujesz?'. Polskie 'jak' — identyczne! To jedno z najprostszych słów pytających do zapamiętania. 'Почуватися' (czuć się) — polskie 'poczuwać się'. Bardziej potoczna forma: 'як справи?' (jak sprawy? / co słychać?). 'Як' jest niezwykle wszechstronny: 'як це зробити?' (jak to zrobić?), 'як тебе звати?' (jak masz na imię?). Ten pytajnik jest identyczny w polskim i ukraińskim — bezcenne ułatwienie w nauce."
+      },
+      {
+        "id": "pu_qt7",
+        "question": "_____ ти приїдеш?",
+        "translation": "(Kiedy przyjedziesz?)",
+        "options": [
+          "Коли",
+          "Де",
+          "Як",
+          "Скільки"
+        ],
+        "correct": "Коли",
+        "explanation": "Pytajnik 'коли' oznacza 'kiedy'. 'Коли ти приїдеш?' = 'Kiedy przyjedziesz?'. Polskie 'kiedy' — inny rdzeń, ale łatwo zapamiętać 'коли' przez skojarzenie z polskim 'koli' (dawna forma). 'Приїдеш' (przyjedziesz) od 'приїхати' (przyjechać) — polskie 'przyjadę/przyjedziesz'. Prefiks 'при-' oznacza przybycie, identycznie jak w polskim. 'Коли' jest kluczowe w codziennych rozmowach dotyczących planowania czasu. Odpowiedzi mogą zawierać: завтра (jutro), вчора (wczoraj), зараз (teraz)."
+      },
+      {
+        "id": "pu_qt8",
+        "question": "_____ тобі це потрібно?",
+        "translation": "(Po co ci to potrzebne?)",
+        "options": [
+          "Навіщо",
+          "Що",
+          "Чому",
+          "Як"
+        ],
+        "correct": "Навіщо",
+        "explanation": "Pytajnik 'навіщо' oznacza 'po co, na co'. Różni się od 'чому' (dlaczego) — 'навіщо' pyta o cel, 'чому' o przyczynę. W polskim: 'po co ci to?' vs 'dlaczego ci to?'. 'Потрібно' (potrzebne) — polskie 'potrzebne'. Konstrukcja 'тобі потрібно' (tobie potrzebne) jest bezosobowa, używana z celownikiem — jak polskie 'ci potrzebne'. 'Навіщо' to złożenie: 'на' + 'віщо' (na co). Rozróżnienie між 'чому' i 'навіщо' jest ważne: 'Чому плачеш?' (Dlaczego płaczesz?) vs 'Навіщо це робиш?' (Po co to robisz?)."
+      },
+      {
+        "id": "pu_qt9",
+        "question": "_____ це належить?",
+        "translation": "(Do kogo to należy?)",
+        "options": [
+          "Кому",
+          "Хто",
+          "Чому",
+          "Що"
+        ],
+        "correct": "Кому",
+        "explanation": "Pytajnik 'кому' to celownik od 'хто' — oznacza 'komu'. 'Кому це належить?' = 'Do kogo to należy?'. Polskie 'komu' — identyczne! 'Належати' (należeć) — polskie 'należeć'. Ukraiński 'належати' wymaga celownika: 'належить кому?' (należy do kogo?). W polskim 'należy do + dopełniacz', ale celownikowe 'komu' jest wspólne. Formy pytające od 'хто': хто (mianownik), кого (dopełniacz/biernik), кому (celownik), ким (narzędnik). Porównaj: polskie kto, kogo, komu, kim — niemal identyczne!"
+      },
+      {
+        "id": "pu_qt10",
+        "question": "_____ називається ця вулиця?",
+        "translation": "(Jak się nazywa ta ulica?)",
+        "options": [
+          "Як",
+          "Що",
+          "Де",
+          "Чому"
+        ],
+        "correct": "Як",
+        "explanation": "Pytanie 'як називається?' (jak się nazywa?) to kluczowa fraza w codziennej komunikacji. W polskim: 'jak się nazywa?'. Identyczna struktura! 'Називатися' (nazywać się) — polskie 'nazywać się'. 'Вулиця' (ulica) — polskie 'ulica'. Oba słowa mają identyczny rdzeń. To pytanie przydaje się wszędzie: 'як називається цей ресторан?' (jak się nazywa ta restauracja?), 'як називається ця станція?' (jak się nazywa ta stacja?). 'Як' jest tu w funkcji pytania o sposób, nie o porównanie."
+      },
+      {
+        "id": "pu_qt11",
+        "question": "_____ книжок ти прочитав?",
+        "translation": "(Ile książek przeczytałeś?)",
+        "options": [
+          "Скільки",
+          "Що",
+          "Як",
+          "Які"
+        ],
+        "correct": "Скільки",
+        "explanation": "Pytajnik 'скільки' (ile) + dopełniacz liczby mnogiej: 'скільки книжок'. 'Книжок' to dopełniacz mnogi od 'книжка' (książka). W polskim: 'ile książek' — również dopełniacz mnogi. 'Прочитав' (przeczytał) — dokonana forma od 'читати' (czytać), z prefiksem 'про-'. Polskie 'przeczytał' — identyczny prefiks 'prze-/про-'. Reguła: po 'скільки' zawsze dopełniacz, identycznie jak po polskim 'ile'. To pytanie jest praktyczne w rozmowach o hobby, nauce, zainteresowaniach."
+      },
+      {
+        "id": "pu_qt12",
+        "question": "_____ ти хочеш на обід?",
+        "translation": "(Co chcesz na obiad?)",
+        "options": [
+          "Що",
+          "Як",
+          "Де",
+          "Коли"
+        ],
+        "correct": "Що",
+        "explanation": "Pytajnik 'що' w bierniku (identyczne z mianownikiem): 'Що ти хочеш?' = 'Co chcesz?'. 'Хотіти' (chcieć) wymaga biernika: 'хочеш що?'. W polskim: 'co chcesz na obiad?'. 'Обід' (obiad) — polskie 'obiad'. Niemal identyczne! W ukraińskim posiłki to: сніданок (śniadanie), обід (obiad), вечеря (kolacja/wieczerza). 'На обід' = 'na obiad' — przyimek 'на' + biernik wyrażający cel czasu. Pytania z 'що' o jedzenie to jedne z najczęstszych w codziennym życiu."
+      },
+      {
+        "id": "pu_qt13",
+        "question": "_____ прийшов — Петро чи Іван?",
+        "translation": "(Kto przyszedł — Petro czy Iwan?)",
+        "options": [
+          "Хто",
+          "Що",
+          "Де",
+          "Як"
+        ],
+        "correct": "Хто",
+        "explanation": "Pytanie alternatywne z 'чи' (czy): 'Хто прийшов — Петро чи Іван?'. Ukraiński 'чи' odpowiada polskiemu 'czy'. W polskim: 'Kto przyszedł — Piotr czy Jan?'. Spójnik 'чи' służy do tworzenia pytań alternatywnych i pytań zamkniętych (tak/nie): 'Чи ти готовий?' (Czy jesteś gotowy?). Imiona ukraińskie: Петро (Piotr) i Іван (Iwan/Jan) — popularne imiona w tradycji ukraińskiej. 'Чи' może stać na początku pytania (pytanie ogólne) lub między alternatywami (pytanie wyboru)."
+      },
+      {
+        "id": "pu_qt14",
+        "question": "_____ тобі допомогти?",
+        "translation": "(Czym ci pomóc?)",
+        "options": [
+          "Чим",
+          "Що",
+          "Як",
+          "Кому"
+        ],
+        "correct": "Чим",
+        "explanation": "Pytajnik 'чим' to narzędnik od 'що' — oznacza 'czym'. 'Чим тобі допомогти?' = 'Czym ci pomóc?'. Polskie 'czym' — identyczne! 'Допомогти' (pomóc) — polskie 'dopomóc/pomóc'. Rdzeń 'помог-/помоч-' jest wspólny. 'Тобі' (tobie) — celownik od 'ти'. Formy pytajne od 'що': що (mianownik/biernik), чого (dopełniacz), чому (celownik), чим (narzędnik), на чому (miejscownik). Porównaj z polskim: co, czego, czemu, czym, o czym — niemal bliźniacze formy!"
+      },
+      {
+        "id": "pu_qt15",
+        "question": "_____ тобі подобається — чай чи кава?",
+        "translation": "(Co bardziej ci się podoba — herbata czy kawa?)",
+        "options": [
+          "Що",
+          "Як",
+          "Де",
+          "Скільки"
+        ],
+        "correct": "Що",
+        "explanation": "Pytanie preferencyjne: 'Що тобі подобається?' (Co ci się podoba?). Może być wzmocnione: 'Що тобі більше подобається?' (Co ci się bardziej podoba?). 'Подобатися' (podobać się) — identyczne z polskim 'podobać się'. 'Чай' (herbata) — od chińskiego, jak w wielu językach europejskich. 'Кава' (kawa) — polskie 'kawa'. Spójnik 'чи' (czy) łączy alternatywy. To pytanie jest niezwykle praktyczne w restauracji, kawiarni, przy wyborze — wszędzie, gdzie chcemy poznać preferencje rozmówcy."
+      }
+    ]
   }
 ]

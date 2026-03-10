@@ -1433,5 +1433,3080 @@
         "explanation": "最上級＋現在完了＋ever：「the most beautiful place I have ever visited」＝今までの人生で訪れた中で最も美しい。定型パターン：the + 最上級 + 名詞 + 主語 + have/has + ever + 過去分詞。「ever」は「今までに」の意味で経験の全体を示します。日本語の「今まで〜した中で一番」に対応する英語の決まった表現です。"
       }
     ]
+  },
+  {
+    "key": "present_continuous",
+    "name": "Present Continuous",
+    "description": "現在進行形",
+    "iconName": "figure.walk",
+    "color": "#34d399",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "je_pcon1",
+        "question": "I _____ reading a book right now.",
+        "translation": "(私は今本を読んでいます)",
+        "options": [
+          "am",
+          "is",
+          "are",
+          "be"
+        ],
+        "correct": "am",
+        "explanation": "現在進行形は「be動詞 + ~ing」で作ります。主語が'I'の場合、be動詞は'am'を使います。日本語の「～ている」に似ていますが、英語では「今まさにしている最中」という意味が強いです。'is'は三人称単数、'are'は複数・二人称に使います。進行形を正しく使うには、まず主語に合ったbe動詞を選ぶことが基本です。"
+      },
+      {
+        "id": "je_pcon2",
+        "question": "She _____ playing the piano.",
+        "translation": "(彼女はピアノを弾いています)",
+        "options": [
+          "is",
+          "am",
+          "are",
+          "does"
+        ],
+        "correct": "is",
+        "explanation": "三人称単数の主語（he, she, it）には'is'を使います。日本語では「弾いている」と主語に関係なく同じ形ですが、英語ではbe動詞を主語に合わせて変化させる必要があります。'She is playing'で「彼女は今弾いている最中」という意味になります。現在進行形は現在の一時的な動作を表すのに使われます。"
+      },
+      {
+        "id": "je_pcon3",
+        "question": "They _____ watching TV.",
+        "translation": "(彼らはテレビを見ています)",
+        "options": [
+          "are",
+          "is",
+          "am",
+          "do"
+        ],
+        "correct": "are",
+        "explanation": "複数の主語（they, we）や二人称（you）には'are'を使います。'They are watching TV'は「彼らは今テレビを見ている」という意味です。日本語の「見ている」は習慣的な意味にも使えますが、英語の現在進行形は「今この瞬間」の動作に限定されます。習慣を言うときは現在形（They watch TV every day）を使います。"
+      },
+      {
+        "id": "je_pcon4",
+        "question": "We _____ studying English together.",
+        "translation": "(私たちは一緒に英語を勉強しています)",
+        "options": [
+          "are",
+          "is",
+          "am",
+          "has"
+        ],
+        "correct": "are",
+        "explanation": "'We'は複数なので'are'を使います。'We are studying'で「私たちは今勉強している最中」です。日本語の「勉強している」は進行中でも習慣でも使えますが、英語では区別が必要です。'We study English every day'（習慣）と'We are studying English now'（今の動作）は異なります。この区別は日本人学習者にとって重要なポイントです。"
+      },
+      {
+        "id": "je_pcon5",
+        "question": "He is _____ dinner now.",
+        "translation": "(彼は今夕食を作っています)",
+        "options": [
+          "cooking",
+          "cook",
+          "cooks",
+          "cooked"
+        ],
+        "correct": "cooking",
+        "explanation": "現在進行形では動詞に'-ing'を付けます。'cook → cooking'です。日本語にはこの形の変化がないため、be動詞の後に原形を置いてしまう間違いが多いです。'He is cook'は誤りで、必ず'He is cooking'とします。-ingの付け方にはルールがあり、基本は語尾にそのまま付けますが、'e'で終わる動詞は'e'を取って付けます（make → making）。"
+      },
+      {
+        "id": "je_pcon6",
+        "question": "The children are _____ in the park.",
+        "translation": "(子供たちは公園で遊んでいます)",
+        "options": [
+          "playing",
+          "play",
+          "plays",
+          "played"
+        ],
+        "correct": "playing",
+        "explanation": "進行形の文では「be動詞 + 動詞ing」が鉄則です。'The children are playing'で「子供たちは今遊んでいる」となります。'play'の-ing形は'playing'（そのままyの後にingを付ける）。日本語では「遊んでいる」一語で済みますが、英語では'are'と'playing'の二つの要素が必要です。be動詞を忘れる、または-ingを付け忘れるのは日本人に多い間違いです。"
+      },
+      {
+        "id": "je_pcon7",
+        "question": "Look! It _____ raining outside.",
+        "translation": "(見て！外で雨が降っているよ)",
+        "options": [
+          "is",
+          "are",
+          "does",
+          "has"
+        ],
+        "correct": "is",
+        "explanation": "天気を表すときの主語'it'は三人称単数なので'is'を使います。'It is raining'は「雨が降っている」という意味です。'Look!'のような言葉は、今まさに起きていることを指すサインで、現在進行形と一緒によく使われます。日本語の「降っている」は状態を表しますが、英語の'It is raining'は「今降っている最中」というニュアンスです。"
+      },
+      {
+        "id": "je_pcon8",
+        "question": "I am not _____ anything right now.",
+        "translation": "(私は今何もしていません)",
+        "options": [
+          "doing",
+          "do",
+          "does",
+          "done"
+        ],
+        "correct": "doing",
+        "explanation": "現在進行形の否定形は「be動詞 + not + 動詞ing」です。'I am not doing'で「今何もしていない」となります。'do'の-ing形は'doing'です。否定文でもing形は変わりません。日本語の「していない」は一つの形ですが、英語では'am not doing'と三つの要素（be動詞・否定語・動詞ing）が必要です。短縮形は'I'm not doing'となります。"
+      },
+      {
+        "id": "je_pcon9",
+        "question": "_____ you listening to me?",
+        "translation": "(私の話を聞いていますか？)",
+        "options": [
+          "Are",
+          "Do",
+          "Is",
+          "Have"
+        ],
+        "correct": "Are",
+        "explanation": "現在進行形の疑問文は「Be動詞 + 主語 + 動詞ing？」の語順です。'Are you listening?'で「聞いていますか？」となります。日本語では文末に「か」を付けるだけですが、英語では語順が変わります。'Do you listening?'は誤りです。進行形の疑問文では必ずbe動詞を文頭に持ってきます。これは日本語にない英語特有のルールです。"
+      },
+      {
+        "id": "je_pcon10",
+        "question": "She is _____ a new dress today.",
+        "translation": "(彼女は今日新しいドレスを着ています)",
+        "options": [
+          "wearing",
+          "wears",
+          "wear",
+          "wore"
+        ],
+        "correct": "wearing",
+        "explanation": "'wear'の-ing形は'wearing'です。この文は「今日着ている」という一時的な状態を表しています。日本語の「着ている」は状態動詞のように使いますが、英語の'wear'は動作動詞なので進行形にできます。'She wears a uniform'（習慣的に着る）と'She is wearing a new dress today'（今日だけ着ている）の違いを理解することが大切です。"
+      },
+      {
+        "id": "je_pcon11",
+        "question": "The dog is _____ loudly.",
+        "translation": "(犬が大きな声で吠えています)",
+        "options": [
+          "barking",
+          "bark",
+          "barks",
+          "barked"
+        ],
+        "correct": "barking",
+        "explanation": "'bark'に'-ing'を付けて'barking'とします。'The dog is barking loudly'で「犬が大きな声で吠えている」という今起きている動作を描写しています。日本語では「吠えている」だけですが、英語では'is barking'の二語で表現します。現在進行形は目の前で起きていることをリアルタイムで描写するときに最適な時制です。"
+      },
+      {
+        "id": "je_pcon12",
+        "question": "My brother _____ sleeping upstairs.",
+        "translation": "(兄は二階で寝ています)",
+        "options": [
+          "is",
+          "are",
+          "am",
+          "does"
+        ],
+        "correct": "is",
+        "explanation": "'My brother'は三人称単数なので'is'を使います。'My brother is sleeping'で「兄は今寝ている」です。日本語では「寝ている」という一語で主語に関係なく使えますが、英語ではbe動詞を主語に合わせて選ぶ必要があります。家族の呼び方は日本語と英語で異なりますが、文法的には'he'と同じ扱いです。三人称単数 = isと覚えましょう。"
+      },
+      {
+        "id": "je_pcon13",
+        "question": "I _____ learning Japanese culture too.",
+        "translation": "(私も日本文化を学んでいます)",
+        "options": [
+          "am",
+          "is",
+          "are",
+          "do"
+        ],
+        "correct": "am",
+        "explanation": "主語'I'にはいつも'am'を使います。これは現在進行形でも変わりません。'I am learning'で「私は学んでいる最中」です。日本語の「学んでいる」は進行中でも完了した結果の状態でも使えますが、英語の進行形は「今まさに学びの過程にある」ことを強調します。'also'や'too'を使って「～も」を表現できます。"
+      },
+      {
+        "id": "je_pcon14",
+        "question": "Why _____ they running so fast?",
+        "translation": "(なぜ彼らはそんなに速く走っているのですか？)",
+        "options": [
+          "are",
+          "is",
+          "do",
+          "does"
+        ],
+        "correct": "are",
+        "explanation": "疑問詞付きの現在進行形疑問文は「疑問詞 + be動詞 + 主語 + 動詞ing」の語順です。'Why are they running?'です。'they'は複数なので'are'を使います。日本語では「なぜ走っているの？」と語順は変わりませんが、英語では疑問詞の後にbe動詞を置く必要があります。'run'の-ing形は'n'を重ねて'running'となるルールにも注意しましょう。"
+      },
+      {
+        "id": "je_pcon15",
+        "question": "We are _____ for the bus at the moment.",
+        "translation": "(私たちは今バスを待っています)",
+        "options": [
+          "waiting",
+          "wait",
+          "waits",
+          "waited"
+        ],
+        "correct": "waiting",
+        "explanation": "'at the moment'（今この瞬間）は現在進行形と一緒に使われる典型的な時間表現です。'We are waiting'で「私たちは待っている」です。他にも'now', 'right now', 'currently'なども進行形のサインです。日本語の「待っている」は広い意味で使えますが、英語ではこれらの時間表現と進行形をセットで使うことで、「今のこの瞬間」を明確に示します。"
+      }
+    ]
+  },
+  {
+    "key": "past_continuous",
+    "name": "Past Continuous",
+    "description": "過去進行形",
+    "iconName": "clock.arrow.circlepath",
+    "color": "#a78bfa",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_paco1",
+        "question": "I _____ sleeping when you called.",
+        "translation": "(あなたが電話したとき、私は寝ていました)",
+        "options": [
+          "was",
+          "were",
+          "am",
+          "is"
+        ],
+        "correct": "was",
+        "explanation": "過去進行形は「was/were + 動詞ing」で作ります。主語が'I'の場合は'was'を使います。日本語の「寝ていました」に対応しますが、英語では「ある時点で動作が進行中だった」ことを強調します。'when you called'のように、過去のある瞬間を示す節と一緒に使うのが典型的なパターンです。長い動作（寝ていた）の途中に短い動作（電話が来た）が割り込むイメージです。"
+      },
+      {
+        "id": "je_paco2",
+        "question": "They _____ playing soccer at 3 PM yesterday.",
+        "translation": "(彼らは昨日午後3時にサッカーをしていました)",
+        "options": [
+          "were",
+          "was",
+          "are",
+          "did"
+        ],
+        "correct": "were",
+        "explanation": "複数の主語（they, we）や'you'には'were'を使います。'They were playing soccer'で「彼らはサッカーをしていた」です。'at 3 PM yesterday'は過去の特定の時点を示し、その時点で動作が進行中だったことを表しています。日本語の「していました」と同じ感覚ですが、英語では主語によるwas/wereの使い分けが必要です。"
+      },
+      {
+        "id": "je_paco3",
+        "question": "She was _____ dinner when I arrived.",
+        "translation": "(私が着いたとき、彼女は夕食を作っていました)",
+        "options": [
+          "cooking",
+          "cook",
+          "cooks",
+          "cooked"
+        ],
+        "correct": "cooking",
+        "explanation": "過去進行形でも動詞にはing形を使います。'She was cooking'で「彼女は料理をしていた」です。'when I arrived'の'arrived'は過去形（短い動作）で、'was cooking'は進行形（長い動作）です。この組み合わせは、英語で非常によく使われるパターンです。日本語の「作っていた」は一語ですが、英語では'was'と'cooking'の二要素が必要です。"
+      },
+      {
+        "id": "je_paco4",
+        "question": "We _____ not watching TV at that time.",
+        "translation": "(その時、私たちはテレビを見ていませんでした)",
+        "options": [
+          "were",
+          "was",
+          "did",
+          "are"
+        ],
+        "correct": "were",
+        "explanation": "過去進行形の否定形は「was/were + not + 動詞ing」です。'We were not watching'の短縮形は'We weren't watching'です。'at that time'は「その時」という意味で、過去の特定の時点を表します。日本語では「見ていませんでした」と一つの動詞で表しますが、英語では'were not watching'の三要素になります。主語が'we'なので'were'を選びます。"
+      },
+      {
+        "id": "je_paco5",
+        "question": "_____ he studying when you saw him?",
+        "translation": "(あなたが彼を見たとき、彼は勉強していましたか？)",
+        "options": [
+          "Was",
+          "Were",
+          "Did",
+          "Is"
+        ],
+        "correct": "Was",
+        "explanation": "過去進行形の疑問文は「Was/Were + 主語 + 動詞ing？」の語順です。'he'は三人称単数なので'Was'を使います。'Was he studying?'で「彼は勉強していたか？」です。日本語では文末に「か」を付けるだけですが、英語ではwas/wereを文頭に移動させます。'Did he studying?'は誤りです。過去進行形の疑問文では必ずwas/wereを使います。"
+      },
+      {
+        "id": "je_paco6",
+        "question": "While I was _____, the phone rang.",
+        "translation": "(私がシャワーを浴びている間に電話が鳴りました)",
+        "options": [
+          "showering",
+          "shower",
+          "showered",
+          "showers"
+        ],
+        "correct": "showering",
+        "explanation": "'While'は「～している間に」という意味で、過去進行形と最もよく使われる接続詞の一つです。'While I was showering'で「シャワーを浴びている間に」です。'while'節は過去進行形（長い動作）、主節は過去形（短い動作）というパターンが典型的です。日本語では「浴びている間に」と自然に言えますが、英語ではwhileと進行形のセットが重要です。"
+      },
+      {
+        "id": "je_paco7",
+        "question": "The children were _____ in the garden all afternoon.",
+        "translation": "(子供たちは午後ずっと庭で遊んでいました)",
+        "options": [
+          "playing",
+          "play",
+          "played",
+          "plays"
+        ],
+        "correct": "playing",
+        "explanation": "'all afternoon'（午後ずっと）は過去のある期間を示し、その間ずっと動作が続いていたことを表します。'The children were playing'で「子供たちは遊んでいた」です。日本語の「遊んでいました」は過去進行形と過去完了の両方に使えますが、英語では「その時間帯に進行中だった」ことを明確に示すために過去進行形を使います。"
+      },
+      {
+        "id": "je_paco8",
+        "question": "It _____ raining heavily last night.",
+        "translation": "(昨夜は激しく雨が降っていました)",
+        "options": [
+          "was",
+          "were",
+          "is",
+          "did"
+        ],
+        "correct": "was",
+        "explanation": "天気の主語'it'は三人称単数なので'was'を使います。'It was raining heavily'で「激しい雨が降っていた」です。'last night'は過去を示す時間表現です。日本語の「降っていた」は状態描写ですが、英語の過去進行形は「昨夜のある時点で雨が降り続いていた」という動的な描写になります。天候表現は英語学習で頻出するので確実に覚えましょう。"
+      },
+      {
+        "id": "je_paco9",
+        "question": "What _____ you doing at 8 o'clock?",
+        "translation": "(8時に何をしていましたか？)",
+        "options": [
+          "were",
+          "was",
+          "did",
+          "are"
+        ],
+        "correct": "were",
+        "explanation": "疑問詞付きの過去進行形は「疑問詞 + was/were + 主語 + 動詞ing」の語順です。'you'には'were'を使います。'What were you doing?'で「何をしていたの？」です。日本語では「何をしていた？」と自然に言えますが、英語では語順の変化が必要です。'What did you doing?'は誤りです。進行形では常にbe動詞（ここではwere）を使います。"
+      },
+      {
+        "id": "je_paco10",
+        "question": "The students were _____ for the exam.",
+        "translation": "(生徒たちは試験の準備をしていました)",
+        "options": [
+          "preparing",
+          "prepare",
+          "prepared",
+          "prepares"
+        ],
+        "correct": "preparing",
+        "explanation": "'prepare'のing形は、語尾の'e'を取って'preparing'とします。これは英語のing形のルールの一つです。-eで終わる動詞はeを取ってからingを付けます（make → making, write → writing）。'The students were preparing'で「生徒たちは準備をしていた」です。日本語では「準備していた」ですが、英語では'were preparing'とbe動詞+ing形の二要素が必要です。"
+      },
+      {
+        "id": "je_paco11",
+        "question": "My father was _____ the newspaper when I left.",
+        "translation": "(私が出かけたとき、父は新聞を読んでいました)",
+        "options": [
+          "reading",
+          "read",
+          "reads",
+          "readed"
+        ],
+        "correct": "reading",
+        "explanation": "'read'のing形は'reading'です（発音は/ˈriːdɪŋ/）。'when I left'は過去のある瞬間を示し、その時の背景動作を過去進行形で表しています。日本語の「読んでいました」は状態の描写ですが、英語の'was reading'は「その瞬間に読んでいる途中だった」というニュアンスです。'when'を使った文では、長い動作を進行形、短い動作を過去形にするのが基本パターンです。"
+      },
+      {
+        "id": "je_paco12",
+        "question": "I was _____ to music while walking home.",
+        "translation": "(家に歩いて帰りながら音楽を聴いていました)",
+        "options": [
+          "listening",
+          "listen",
+          "listened",
+          "listens"
+        ],
+        "correct": "listening",
+        "explanation": "'listen'のing形は'listening'です。'while walking home'は「歩いて帰りながら」で、二つの動作が同時に起きていることを示しています。日本語の「聴きながら歩く」のような同時動作は、英語では'was listening while walking'のように表現します。'while'は二つの同時進行する過去の動作を結ぶときに非常に便利な接続詞です。"
+      },
+      {
+        "id": "je_paco13",
+        "question": "The birds _____ singing beautifully this morning.",
+        "translation": "(今朝、鳥たちが美しくさえずっていました)",
+        "options": [
+          "were",
+          "was",
+          "are",
+          "did"
+        ],
+        "correct": "were",
+        "explanation": "'The birds'は複数形なので'were'を使います。'this morning'は文脈によって現在・過去のどちらにも使えますが、ここでは「今朝（の出来事を振り返って）」という過去の意味です。'The birds were singing beautifully'で「鳥たちが美しくさえずっていた」という情景描写になります。過去進行形は物語や回想で情景を描くのに適した時制です。"
+      },
+      {
+        "id": "je_paco14",
+        "question": "She was _____ a letter when the doorbell rang.",
+        "translation": "(ドアベルが鳴ったとき、彼女は手紙を書いていました)",
+        "options": [
+          "writing",
+          "write",
+          "wrote",
+          "writes"
+        ],
+        "correct": "writing",
+        "explanation": "'write'のing形は、eを取って'writing'とします（write → writing）。この文は典型的な「when構文」です。長い動作（手紙を書いていた）の最中に短い動作（ドアベルが鳴った）が起きるパターンです。日本語では「書いていた」と簡単に言えますが、英語では'was writing'とbe動詞+ing形を正確に使う必要があります。書く系の動詞のing化は日本人に間違いが多いポイントです。"
+      },
+      {
+        "id": "je_paco15",
+        "question": "At midnight, everyone _____ sleeping peacefully.",
+        "translation": "(真夜中、みんな穏やかに眠っていました)",
+        "options": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "correct": "was",
+        "explanation": "'everyone'は形は単数扱いなので'was'を使います。これは日本人にとって紛らわしいポイントです。'everyone'は「みんな」という意味で複数に感じますが、英語文法では単数扱いです（同様にeverybody, someone, nobody も単数）。'At midnight'は過去の特定時点を示し、その時の状態を進行形で表現しています。不定代名詞の単複の区別は英語の重要な文法ルールです。"
+      }
+    ]
+  },
+  {
+    "key": "present_perfect_continuous",
+    "name": "Present Perfect Continuous",
+    "description": "現在完了進行形",
+    "iconName": "arrow.triangle.2.circlepath",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_ppc1",
+        "question": "I have been _____ for two hours.",
+        "translation": "(私は2時間勉強し続けています)",
+        "options": [
+          "studying",
+          "study",
+          "studied",
+          "studies"
+        ],
+        "correct": "studying",
+        "explanation": "現在完了進行形は「have/has + been + 動詞ing」で作ります。過去に始まった動作が今も続いていることを表します。日本語の「～し続けている」に近い意味です。'I have been studying for two hours'は「2時間前から今まで勉強し続けている」という意味です。'for'は期間（どのくらい長く）を表す前置詞で、この時制と非常によく一緒に使われます。"
+      },
+      {
+        "id": "je_ppc2",
+        "question": "She _____ been waiting since morning.",
+        "translation": "(彼女は朝からずっと待っています)",
+        "options": [
+          "has",
+          "have",
+          "had",
+          "is"
+        ],
+        "correct": "has",
+        "explanation": "三人称単数（she, he, it）では'has been + 動詞ing'を使います。'since'は起点（いつから）を表します。'She has been waiting since morning'で「朝からずっと待ち続けている」です。日本語の「待っている」は現在進行形でも使えますが、「朝から」のように起点がある場合は現在完了進行形が適切です。'since'は特定の時点、'for'は期間と一緒に使います。"
+      },
+      {
+        "id": "je_ppc3",
+        "question": "We have been _____ here for three years.",
+        "translation": "(私たちは3年間ここに住んでいます)",
+        "options": [
+          "living",
+          "live",
+          "lived",
+          "lives"
+        ],
+        "correct": "living",
+        "explanation": "'live'のing形は、eを取って'living'です。この文は「3年前からここに住み始めて、今も住んでいる」ことを表します。日本語の「住んでいる」は現在の状態を言うだけですが、英語の現在完了進行形は「継続」を強調します。ただし'live'は状態動詞にも近いので、'We have lived here for three years'（現在完了形）でもほぼ同じ意味になります。進行形の方が「ずっと住み続けている」感が強いです。"
+      },
+      {
+        "id": "je_ppc4",
+        "question": "How long _____ you been learning English?",
+        "translation": "(どのくらい英語を学んでいますか？)",
+        "options": [
+          "have",
+          "has",
+          "are",
+          "do"
+        ],
+        "correct": "have",
+        "explanation": "'How long have you been ~ing?'は「どのくらい長く～し続けていますか？」という意味の非常に便利な疑問文です。日本語では「どのくらい学んでいますか？」と簡単に言えますが、英語では'How long + have/has + 主語 + been + 動詞ing'の語順が必要です。この表現は英会話で非常によく使われ、相手の経験の長さを尋ねるのに最適です。"
+      },
+      {
+        "id": "je_ppc5",
+        "question": "It has been _____ all day.",
+        "translation": "(一日中雨が降り続いています)",
+        "options": [
+          "raining",
+          "rain",
+          "rained",
+          "rains"
+        ],
+        "correct": "raining",
+        "explanation": "'It has been raining all day'は「今日一日ずっと雨が降り続けている」という意味です。'all day'（一日中）は期間を表し、現在完了進行形と相性が良い表現です。現在完了進行形を使うことで、朝から始まった雨が今も続いていることが明確になります。単なる'It is raining'だと「今降っている」だけですが、'has been raining'は「ずっと降り続けている」という継続を強調します。"
+      },
+      {
+        "id": "je_ppc6",
+        "question": "They have been _____ hard lately.",
+        "translation": "(彼らは最近一生懸命働いています)",
+        "options": [
+          "working",
+          "work",
+          "worked",
+          "works"
+        ],
+        "correct": "working",
+        "explanation": "'lately'（最近）は現在完了進行形と一緒によく使われる時間表現です。'They have been working hard lately'で「最近ずっと一生懸命働いている」です。日本語の「最近働いている」だけでは時制が曖昧ですが、英語の現在完了進行形は「最近の期間ずっと継続している」ことを明確にします。似た表現に'recently'もあり、同様に完了形・完了進行形と使われます。"
+      },
+      {
+        "id": "je_ppc7",
+        "question": "He has been _____ tennis since he was five.",
+        "translation": "(彼は5歳からテニスをしています)",
+        "options": [
+          "playing",
+          "play",
+          "played",
+          "plays"
+        ],
+        "correct": "playing",
+        "explanation": "'since he was five'は「5歳のときから」という起点を示します。'He has been playing tennis since he was five'で「5歳からずっとテニスをし続けている」です。'since'の後には過去の時点や過去形の節が来ます。日本語では「テニスをしている」と現在形で言えますが、英語では長期間の継続を表すために現在完了進行形を使う必要があります。sinceとforの使い分けは重要です。"
+      },
+      {
+        "id": "je_ppc8",
+        "question": "I _____ been feeling tired this week.",
+        "translation": "(今週はずっと疲れを感じています)",
+        "options": [
+          "have",
+          "has",
+          "am",
+          "was"
+        ],
+        "correct": "have",
+        "explanation": "主語'I'には'have'を使います。'I have been feeling tired'で「ずっと疲れを感じ続けている」です。'feel'は通常、状態動詞で進行形にしないことが多いですが、一時的な感覚を表すときは進行形も可能です。'this week'は「今週」で、現在を含む期間を示すので現在完了進行形と一緒に使えます。日本語の「疲れている」は状態ですが、英語では継続的な感覚を強調できます。"
+      },
+      {
+        "id": "je_ppc9",
+        "question": "The baby has been _____ for an hour.",
+        "translation": "(赤ちゃんは1時間泣き続けています)",
+        "options": [
+          "crying",
+          "cry",
+          "cried",
+          "cries"
+        ],
+        "correct": "crying",
+        "explanation": "'cry'のing形は、yをそのまま残して'crying'です（yをiに変えるのは過去形のルール：cried）。'for an hour'は1時間という期間を表します。'The baby has been crying for an hour'で「赤ちゃんが1時間も泣き続けている」という状況を生き生きと描写しています。現在完了進行形は感情や状況の継続を伝えるのに効果的で、聞き手にその大変さを感じさせます。"
+      },
+      {
+        "id": "je_ppc10",
+        "question": "_____ she been exercising regularly?",
+        "translation": "(彼女は定期的に運動していますか？)",
+        "options": [
+          "Has",
+          "Have",
+          "Is",
+          "Does"
+        ],
+        "correct": "Has",
+        "explanation": "現在完了進行形の疑問文は「Have/Has + 主語 + been + 動詞ing？」です。'she'は三人称単数なので'Has'を使います。'Has she been exercising regularly?'で「彼女は定期的に運動し続けていますか？」です。日本語では文末に「か」を付けるだけですが、英語ではHave/Hasを文頭に移動させます。この表現は習慣の継続について尋ねるのに便利です。"
+      },
+      {
+        "id": "je_ppc11",
+        "question": "My eyes hurt because I have been _____ at the screen.",
+        "translation": "(画面を見すぎて目が痛いです)",
+        "options": [
+          "staring",
+          "stare",
+          "stared",
+          "stares"
+        ],
+        "correct": "staring",
+        "explanation": "'stare'のing形はeを取って'staring'です。'because I have been staring'は「ずっと画面を見ていたから」という理由を述べています。現在完了進行形は「今の状態の原因」を説明するのにも使われます。「目が痛い」（現在の結果）→「ずっと画面を見ていた」（その原因・継続動作）という因果関係を示すのが現在完了進行形の重要な使い方の一つです。"
+      },
+      {
+        "id": "je_ppc12",
+        "question": "We have been _____ about moving to Tokyo.",
+        "translation": "(私たちは東京への引っ越しについてずっと考えています)",
+        "options": [
+          "thinking",
+          "think",
+          "thought",
+          "thinks"
+        ],
+        "correct": "thinking",
+        "explanation": "'think'のing形は'thinking'です。'We have been thinking about'で「～についてずっと考え続けている」です。'think about'は「～について考える」で、進行形にすると「検討中・熟考中」というニュアンスが出ます。日本語の「考えている」は一時的にも長期的にも使えますが、英語の現在完了進行形は「一定期間ずっと考え続けている」ことを示します。重大な決断について話すときによく使われます。"
+      },
+      {
+        "id": "je_ppc13",
+        "question": "The price of food has been _____ steadily.",
+        "translation": "(食品の価格がずっと上がり続けています)",
+        "options": [
+          "rising",
+          "rise",
+          "risen",
+          "rose"
+        ],
+        "correct": "rising",
+        "explanation": "'rise'のing形はeを取って'rising'です（rise - rose - risen は不規則変化）。'has been rising steadily'で「着実に上がり続けている」です。この文は経済やニュースでよく見る表現で、傾向の継続を描写しています。現在完了進行形は変化や傾向が継続していることを伝えるのに最適です。'steadily'（着実に）のような副詞と組み合わせることで、より詳細な描写ができます。"
+      },
+      {
+        "id": "je_ppc14",
+        "question": "He has not been _____ well recently.",
+        "translation": "(彼は最近体調が良くありません)",
+        "options": [
+          "feeling",
+          "feel",
+          "felt",
+          "feels"
+        ],
+        "correct": "feeling",
+        "explanation": "否定形は「have/has + not + been + 動詞ing」です。'He has not been feeling well'で「彼は最近ずっと体調が良くない」です。短縮形は'hasn't been feeling'です。'recently'は「最近」で、現在完了進行形とよく使われます。日本語では「調子が悪い」と現在形で言いますが、英語では「最近ずっと悪い状態が続いている」と継続を示すために現在完了進行形を使います。"
+      },
+      {
+        "id": "je_ppc15",
+        "question": "I have been _____ to contact you all morning.",
+        "translation": "(午前中ずっとあなたに連絡を取ろうとしていました)",
+        "options": [
+          "trying",
+          "try",
+          "tried",
+          "tries"
+        ],
+        "correct": "trying",
+        "explanation": "'try'のing形はyをそのまま残して'trying'です。'I have been trying to contact you'で「ずっと連絡を取ろうとしている」です。'try to + 動詞'は「～しようとする」という意味で、進行形にすると「何度も試み続けている」というニュアンスが出ます。'all morning'は「午前中ずっと」で、継続の期間を示します。この表現はビジネスや日常会話で非常に実用的です。"
+      }
+    ]
+  },
+  {
+    "key": "past_perfect",
+    "name": "Past Perfect",
+    "description": "過去完了形",
+    "iconName": "arrow.uturn.backward",
+    "color": "#fb923c",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_ppf1",
+        "question": "I had already _____ when she arrived.",
+        "translation": "(彼女が着いたとき、私はすでに食べ終わっていました)",
+        "options": [
+          "eaten",
+          "eat",
+          "ate",
+          "eating"
+        ],
+        "correct": "eaten",
+        "explanation": "過去完了形は「had + 過去分詞」で作ります。過去のある時点よりさらに前に完了した動作を表します。'I had already eaten when she arrived'で「彼女が来た時点で、すでに食べ終わっていた」です。二つの過去の出来事の時間的前後関係を示すのが過去完了の主な役割です。日本語の「食べ終わっていた」に相当しますが、英語では'had + 過去分詞'という形で明確に表現します。"
+      },
+      {
+        "id": "je_ppf2",
+        "question": "She had _____ the movie before, so she didn't want to see it again.",
+        "translation": "(彼女はその映画を以前見たことがあったので、もう一度見たくなかったのです)",
+        "options": [
+          "seen",
+          "see",
+          "saw",
+          "seeing"
+        ],
+        "correct": "seen",
+        "explanation": "過去完了形で「以前に経験していた」ことを表せます。'She had seen the movie before'で「以前にその映画を見たことがあった」です。'see'の過去分詞は'seen'です（see - saw - seen）。日本語の「見たことがあった」に対応します。過去完了は過去の経験を別の過去の出来事と関連付けるときに使います。'before'は過去完了のサインとなる重要な単語です。"
+      },
+      {
+        "id": "je_ppf3",
+        "question": "By the time we got there, the train had already _____.",
+        "translation": "(私たちがそこに着くまでに、電車はすでに出発していました)",
+        "options": [
+          "left",
+          "leave",
+          "leaving",
+          "leaves"
+        ],
+        "correct": "left",
+        "explanation": "'By the time'（～するまでに）は過去完了と非常によく一緒に使われる表現です。'The train had already left'で「電車はすでに出発していた」です。'leave'の過去分詞は'left'（leave - left - left）。二つの過去の出来事の順序が明確になります：①電車が出発した ②私たちが着いた。日本語の「出発していた」も似た意味ですが、英語では'had + 過去分詞'で時間の前後関係を正確に示します。"
+      },
+      {
+        "id": "je_ppf4",
+        "question": "He realized he had _____ his wallet at home.",
+        "translation": "(彼は財布を家に忘れてきたことに気づきました)",
+        "options": [
+          "forgotten",
+          "forget",
+          "forgot",
+          "forgetting"
+        ],
+        "correct": "forgotten",
+        "explanation": "'forget'の過去分詞は'forgotten'です（forget - forgot - forgotten）。'He realized he had forgotten'で「忘れてきたことに気づいた」です。「気づいた（realized）」のが過去、「忘れてきた（had forgotten）」のがそれ以前。過去完了は「大過去」とも呼ばれ、過去のある時点より前の出来事を示します。日本語では時制の区別が曖昧ですが、英語では二つの過去の時間差を明確にします。"
+      },
+      {
+        "id": "je_ppf5",
+        "question": "They had never _____ sushi before they visited Japan.",
+        "translation": "(彼らは日本を訪れる前に寿司を食べたことがありませんでした)",
+        "options": [
+          "tried",
+          "try",
+          "trying",
+          "tries"
+        ],
+        "correct": "tried",
+        "explanation": "過去完了形の否定経験は「had + never + 過去分詞」で表します。'They had never tried sushi'で「寿司を食べたことがなかった」です。'try'の過去分詞は'tried'です。'before they visited Japan'が過去の基準点で、それ以前の経験の欠如を表しています。日本語の「食べたことがなかった」に対応しますが、英語では'had never tried'で経験の無さを過去の文脈で正確に伝えます。"
+      },
+      {
+        "id": "je_ppf6",
+        "question": "After she had _____ her homework, she went out to play.",
+        "translation": "(宿題を終えた後、彼女は遊びに出かけました)",
+        "options": [
+          "finished",
+          "finish",
+          "finishing",
+          "finishes"
+        ],
+        "correct": "finished",
+        "explanation": "'After + 過去完了'は「～した後で」という意味で、動作の順序を明確にします。①宿題を終えた（had finished）→ ②遊びに出た（went out）。'finish'の過去分詞は'finished'です。実は'after'があると順序が明確なので過去形でも通じますが、過去完了を使うとより正確です。日本語の「終えた後」は時制が曖昧ですが、英語では'had finished'で「完了してから」を明示します。"
+      },
+      {
+        "id": "je_ppf7",
+        "question": "I wish I had _____ harder for the exam.",
+        "translation": "(試験のためにもっと頑張って勉強すればよかったのに)",
+        "options": [
+          "studied",
+          "study",
+          "studying",
+          "studies"
+        ],
+        "correct": "studied",
+        "explanation": "'I wish + 過去完了'は「～すればよかったのに」という過去の後悔を表す重要な表現です。'I wish I had studied harder'で「もっと勉強すればよかった」です。実際には勉強しなかったという現実に反する過去の願望を表しています。日本語の「～すればよかった」に相当します。'study'の過去分詞は'studied'です。この構文は仮定法過去完了と呼ばれ、中上級者にとって重要な文法ポイントです。"
+      },
+      {
+        "id": "je_ppf8",
+        "question": "The streets were wet because it had _____ the night before.",
+        "translation": "(前の夜に雨が降ったので道が濡れていました)",
+        "options": [
+          "rained",
+          "rain",
+          "raining",
+          "rains"
+        ],
+        "correct": "rained",
+        "explanation": "過去完了は「過去の結果の原因」を説明するのにも使えます。道が濡れていた（過去の状態）→ 前の夜に雨が降った（それ以前の原因）。'It had rained'で「雨が降っていた」です。'the night before'は「前の夜」で時間の前後関係を示します。'rain'の過去分詞は'rained'（規則変化）。日本語では「降ったので」と簡単に言えますが、英語では過去完了で時間の前後を正確に表現します。"
+      },
+      {
+        "id": "je_ppf9",
+        "question": "_____ you ever visited Kyoto before that trip?",
+        "translation": "(その旅行の前に京都を訪れたことはありましたか？)",
+        "options": [
+          "Had",
+          "Have",
+          "Did",
+          "Were"
+        ],
+        "correct": "Had",
+        "explanation": "過去完了の疑問文は「Had + 主語 + 過去分詞？」の語順です。'Had you ever visited Kyoto?'で「京都を訪れたことがあったか？」です。'before that trip'が過去の基準点で、それ以前の経験を尋ねています。'Have you ever visited?'は現在完了（今までに）ですが、'Had you ever visited?'は過去完了（その時点までに）です。この時制の区別は日本人にとって難しいですが非常に重要です。"
+      },
+      {
+        "id": "je_ppf10",
+        "question": "She told me that she had _____ a new job.",
+        "translation": "(彼女は新しい仕事を見つけたと私に言いました)",
+        "options": [
+          "found",
+          "find",
+          "finding",
+          "finds"
+        ],
+        "correct": "found",
+        "explanation": "間接話法（reported speech）では、元の発言が過去形なら過去完了にずらします。元の発言：'I found a new job'（過去形）→ 間接話法：'She told me she had found a new job'（過去完了形）。これを「時制の一致」と言います。'find'の過去分詞は'found'（find - found - found）。日本語には時制の一致がないため、英語学習者にとって習得が難しいルールの一つです。"
+      },
+      {
+        "id": "je_ppf11",
+        "question": "We had _____ all the food by the time the guests came.",
+        "translation": "(お客さんが来る頃には食べ物を全部食べてしまっていました)",
+        "options": [
+          "eaten",
+          "eat",
+          "ate",
+          "eating"
+        ],
+        "correct": "eaten",
+        "explanation": "'by the time'は過去完了と最も相性の良い表現の一つです。'We had eaten all the food by the time the guests came'は、お客さんの到着前にすべて食べていたことを示します。'eat'の過去分詞は'eaten'（eat - ate - eaten）。この文は少し困った状況を描写していますが、二つの過去の出来事の時間関係が過去完了によって明確になっています。"
+      },
+      {
+        "id": "je_ppf12",
+        "question": "He had never _____ abroad before he was twenty.",
+        "translation": "(彼は20歳になるまで海外に行ったことがありませんでした)",
+        "options": [
+          "been",
+          "be",
+          "was",
+          "being"
+        ],
+        "correct": "been",
+        "explanation": "'go abroad'の過去完了形は'had been abroad'を使います（'had gone abroad'は「行ってしまった（もういない）」の意味になりやすい）。'be'の過去分詞は'been'です。'He had never been abroad'で「海外に行ったことがなかった」です。'before he was twenty'は基準となる過去の時点。'have/had been to ～'は「～に行ったことがある」の経験を表す重要な表現です。"
+      },
+      {
+        "id": "je_ppf13",
+        "question": "The concert had already _____ when we arrived at the hall.",
+        "translation": "(私たちがホールに着いたとき、コンサートはすでに始まっていました)",
+        "options": [
+          "started",
+          "start",
+          "starting",
+          "starts"
+        ],
+        "correct": "started",
+        "explanation": "'already'は過去完了でも使われ、「すでに」を強調します。'The concert had already started'で「コンサートはすでに始まっていた」です。'start'の過去分詞は'started'（規則変化）。この文は「到着した時にはもう遅かった」という場面を描写しており、日常会話でもよく使われるパターンです。'already'の位置は'had'と過去分詞の間に置くのが基本です。"
+      },
+      {
+        "id": "je_ppf14",
+        "question": "I had _____ the book before the teacher asked us about it.",
+        "translation": "(先生がそのことについて聞く前に、その本を読んでいました)",
+        "options": [
+          "read",
+          "reads",
+          "reading",
+          "readed"
+        ],
+        "correct": "read",
+        "explanation": "'read'の過去分詞は'read'です（スペルは同じですが発音が異なります：原形/riːd/ → 過去分詞/red/）。これは英語の不規則動詞の中でも特殊なタイプです。'I had read the book'で「その本を読んでいた」です。'before the teacher asked'が基準時点で、それ以前に読了していたことを示します。readの三つの形がすべて同じスペルなのは日本人にとって紛らわしいポイントです。"
+      },
+      {
+        "id": "je_ppf15",
+        "question": "If I had _____ earlier, I would have caught the train.",
+        "translation": "(もっと早く起きていたら、電車に間に合ったのに)",
+        "options": [
+          "woken",
+          "wake",
+          "woke",
+          "waking"
+        ],
+        "correct": "woken",
+        "explanation": "仮定法過去完了は「If + had + 過去分詞, would have + 過去分詞」で「もし～していたら、～だったのに」という過去の事実に反する仮定を表します。'wake'の過去分詞は'woken'（wake - woke - woken）。実際には早く起きなかったので電車に乗れなかった、という後悔を含む表現です。日本語の「起きていたら」と同じ感覚ですが、英語ではhad + 過去分詞で正確に表現します。"
+      }
+    ]
+  },
+  {
+    "key": "conditionals_zero_first",
+    "name": "Conditionals (Zero & First)",
+    "description": "条件文（ゼロ条件・第一条件）",
+    "iconName": "arrow.triangle.branch",
+    "color": "#22d3ee",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_czf1",
+        "question": "If you heat water to 100°C, it _____.",
+        "translation": "(水を100度に熱すると沸騰します)",
+        "options": [
+          "boils",
+          "will boil",
+          "boiled",
+          "would boil"
+        ],
+        "correct": "boils",
+        "explanation": "ゼロ条件文は「If + 現在形, 現在形」で、科学的事実や一般的な真理を表します。水を熱すると沸騰するのは常に変わらない事実なので、両方の節で現在形を使います。'will boil'は未来の特定の結果を暗示しますが、ゼロ条件文では普遍的な真理を述べているので現在形が正しいです。日本語の「～すると～する」に近い表現で、条件と結果が常に連動する関係を表します。"
+      },
+      {
+        "id": "je_czf2",
+        "question": "If it _____ tomorrow, we will stay home.",
+        "translation": "(明日雨が降ったら、家にいます)",
+        "options": [
+          "rains",
+          "will rain",
+          "rained",
+          "would rain"
+        ],
+        "correct": "rains",
+        "explanation": "第一条件文は「If + 現在形, will + 動詞原形」で、未来の現実的な条件を表します。if節では未来のことでも現在形を使うのが英語の重要なルールです。'If it will rain'は誤りです。日本語では「雨が降ったら」と条件を自然に表現できますが、英語では'if節の中ではwillを使わない'というルールを守る必要があります。このルールは日本人学習者にとって最も間違いやすいポイントの一つです。"
+      },
+      {
+        "id": "je_czf3",
+        "question": "If you mix red and blue, you _____ purple.",
+        "translation": "(赤と青を混ぜると紫になります)",
+        "options": [
+          "get",
+          "will get",
+          "got",
+          "would get"
+        ],
+        "correct": "get",
+        "explanation": "これはゼロ条件文です。色を混ぜると特定の色になるのは普遍的な事実です。両方の節で現在形を使います。ゼロ条件文と第一条件文の違いは、ゼロ条件文が「いつでも成り立つ事実」、第一条件文が「特定の未来の状況」を表すことです。'If you mix red and blue, you get purple'は「混ぜるといつも紫になる」という一般的な真理です。日本語の「～すると～になる」と同じパターンです。"
+      },
+      {
+        "id": "je_czf4",
+        "question": "If she _____ hard, she will pass the exam.",
+        "translation": "(彼女が一生懸命勉強すれば、試験に受かるでしょう)",
+        "options": [
+          "studies",
+          "will study",
+          "studied",
+          "would study"
+        ],
+        "correct": "studies",
+        "explanation": "第一条件文のif節では現在形を使います。'she'は三人称単数なので'studies'（三単現のs付き）です。'If she studies hard, she will pass'で「勉強すれば受かるだろう」という現実的な予測を表します。日本語の「勉強すれば」は条件形で、英語のif節に対応します。if節で'will'を使わないことと、三単現のsを忘れないことの二つのルールに注意が必要です。"
+      },
+      {
+        "id": "je_czf5",
+        "question": "If you press this button, the machine _____.",
+        "translation": "(このボタンを押すと機械が止まります)",
+        "options": [
+          "stops",
+          "will stop",
+          "stopped",
+          "would stop"
+        ],
+        "correct": "stops",
+        "explanation": "ボタンを押すと機械が止まるのは装置の仕組みとして常に成り立つ事実なので、ゼロ条件文を使います。両方の節で現在形です。取扱説明書やマニュアルでよく見るパターンです。ゼロ条件文は「もし～したら必ず～する」という因果関係を述べます。第一条件文の'will stop'でも文法的に通じますが、常に成り立つ仕組みを説明する場面ではゼロ条件文がより適切です。"
+      },
+      {
+        "id": "je_czf6",
+        "question": "If I have time, I _____ visit you.",
+        "translation": "(時間があれば、あなたを訪ねます)",
+        "options": [
+          "will",
+          "would",
+          "am",
+          "do"
+        ],
+        "correct": "will",
+        "explanation": "第一条件文の主節では'will + 動詞原形'を使います。'If I have time, I will visit you'で「時間があれば訪ねるよ」という未来の現実的な計画を表します。if節は現在形（have）、主節は未来形（will visit）です。日本語では「訪ねます」だけですが、英語では条件節と結果節で時制が異なることがポイントです。「もし～なら」は第一条件文の基本パターンです。"
+      },
+      {
+        "id": "je_czf7",
+        "question": "Plants die if they _____ get enough water.",
+        "translation": "(植物は十分な水が得られないと枯れます)",
+        "options": [
+          "don't",
+          "won't",
+          "didn't",
+          "wouldn't"
+        ],
+        "correct": "don't",
+        "explanation": "ゼロ条件文の否定形ではif節に'don't/doesn't'を使います。'Plants die if they don't get enough water'は「水が足りないと植物は枯れる」という一般的な事実です。ゼロ条件文では'if'を'when'に置き換えても同じ意味になることが多いです。日本語の「～ないと～する」に相当します。否定の条件文は日常生活で非常によく使われ、警告や注意を伝えるのに便利です。"
+      },
+      {
+        "id": "je_czf8",
+        "question": "If you _____ that cake, you will feel sick.",
+        "translation": "(そのケーキを食べたら、気持ち悪くなりますよ)",
+        "options": [
+          "eat",
+          "will eat",
+          "ate",
+          "would eat"
+        ],
+        "correct": "eat",
+        "explanation": "第一条件文のif節では未来のことでも現在形を使います。'If you eat that cake, you will feel sick'は「食べたら気持ち悪くなるよ」という警告です。この文は相手にアドバイスや注意をするときによく使われるパターンです。日本語の「食べたら」は過去形のように見えますが、実は条件を表す形です。英語では条件のifには常に現在形を使うことを覚えておきましょう。"
+      },
+      {
+        "id": "je_czf9",
+        "question": "If you _____ ice in the sun, it melts.",
+        "translation": "(氷を日光に置くと溶けます)",
+        "options": [
+          "put",
+          "will put",
+          "puts",
+          "putting"
+        ],
+        "correct": "put",
+        "explanation": "これもゼロ条件文で、一般的な事実を述べています。主語が'you'（一般的な人）なので動詞は原形'put'です。'put'は原形・過去形・過去分詞がすべて同じ形の不規則動詞です。ゼロ条件文の'you'は「あなた」というより「誰でも」という一般的な意味で使われることが多いです。日本語の「置くと溶ける」と同じパターンで、科学的な説明によく使われます。"
+      },
+      {
+        "id": "je_czf10",
+        "question": "We will miss the bus if we _____ hurry.",
+        "translation": "(急がないとバスに乗り遅れますよ)",
+        "options": [
+          "don't",
+          "won't",
+          "didn't",
+          "can't"
+        ],
+        "correct": "don't",
+        "explanation": "第一条件文の語順は逆にもできます。'We will miss the bus if we don't hurry'（主節 + if節）。意味は同じで、コンマは不要になります。if節の否定は'don't + 動詞原形'です。'won't'はif節では通常使いません。日本語の「急がないと」は条件の否定ですが、英語ではif節の中で'don't'を使って否定の条件を表します。緊急の場面でよく使われる実用的な表現です。"
+      },
+      {
+        "id": "je_czf11",
+        "question": "If the weather _____ nice, we will have a picnic.",
+        "translation": "(天気がよければ、ピクニックをします)",
+        "options": [
+          "is",
+          "will be",
+          "was",
+          "would be"
+        ],
+        "correct": "is",
+        "explanation": "if節ではbe動詞も現在形を使います。'If the weather is nice'で「天気がよければ」です。'will be'はif節では使いません。日本語の「よければ」は仮定の条件を表していますが、英語では現在形のisで表現します。天気について将来の計画を話すのは日常会話の定番パターンです。第一条件文は「十分起こり得る」現実的な計画に使います。"
+      },
+      {
+        "id": "je_czf12",
+        "question": "If you touch fire, you _____ burned.",
+        "translation": "(火に触ると火傷します)",
+        "options": [
+          "get",
+          "will get",
+          "got",
+          "would get"
+        ],
+        "correct": "get",
+        "explanation": "火に触ると火傷するのは普遍的な事実なので、ゼロ条件文を使います。'If you touch fire, you get burned'で「火に触れば火傷する」です。'get burned'は受動態の一種で「火傷させられる→火傷する」という意味です。ゼロ条件文は安全に関する注意事項を説明するのに適しています。日本語の「触ると～する」のパターンとほぼ同じ構造で理解しやすいでしょう。"
+      },
+      {
+        "id": "je_czf13",
+        "question": "I will call you if I _____ any news.",
+        "translation": "(ニュースがあれば電話します)",
+        "options": [
+          "hear",
+          "will hear",
+          "heard",
+          "would hear"
+        ],
+        "correct": "hear",
+        "explanation": "if節では未来のことでも現在形を使うルールです。'If I hear any news'で「ニュースを聞いたら」です。'hear'は知覚動詞で、ここでは「情報を得る」という意味で使われています。日本語の「あれば」は簡単な条件表現ですが、英語では'if + 現在形'のルールに従う必要があります。約束や予定を伝える場面で頻繁に使われる実用的なパターンです。"
+      },
+      {
+        "id": "je_czf14",
+        "question": "If you don't water the flowers, they _____.",
+        "translation": "(花に水をやらないと枯れます)",
+        "options": [
+          "die",
+          "will die",
+          "died",
+          "would die"
+        ],
+        "correct": "die",
+        "explanation": "花に水をやらないと枯れるのは一般的な事実（ゼロ条件文）です。この文では'will die'も第一条件文として文法的に正しいですが、普遍的な真理を述べているのでゼロ条件文（現在形）がより適切です。日本語の「枯れます」は習慣的な事実を述べていますが、英語ではゼロ条件文と第一条件文を使い分ける必要があります。文脈によって判断することが大切です。"
+      },
+      {
+        "id": "je_czf15",
+        "question": "If she _____ the email, she will reply soon.",
+        "translation": "(彼女がメールを受け取ったら、すぐに返事するでしょう)",
+        "options": [
+          "receives",
+          "will receive",
+          "received",
+          "would receive"
+        ],
+        "correct": "receives",
+        "explanation": "第一条件文のif節では三人称単数にも現在形を使います。'she'なので'receives'（三単現のs付き）です。'If she receives the email, she will reply soon'は「メールを受け取れば、すぐ返信するだろう」という現実的な予測です。if節でwillを使わないルールと、三人称単数のsのルールの両方に注意が必要です。ビジネスシーンでもよく使われる実用的な条件文の例です。"
+      }
+    ]
+  },
+  {
+    "key": "conditionals_second_third",
+    "name": "Second & Third Conditionals",
+    "description": "仮定法（第二・第三条件文）",
+    "iconName": "arrow.triangle.branch",
+    "color": "#f472b6",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "je_cst1",
+        "question": "If I _____ rich, I would travel the world.",
+        "translation": "(もし私がお金持ちなら、世界中を旅行するのに)",
+        "options": [
+          "were",
+          "am",
+          "was being",
+          "would be"
+        ],
+        "correct": "were",
+        "explanation": "第二条件文（仮定法過去）は「現在の事実に反する仮定」を表します。構文は「If + 主語 + 過去形, 主語 + would + 動詞原形」です。be動詞の場合、主語に関係なく'were'を使うのが文法的に正しい形です（口語では'was'も使われますが、フォーマルな場面では'were'が推奨されます）。日本語の「もし～なら」に近いですが、英語では動詞の時制を変えることで非現実を明確に表現する仕組みです。この文法構造は英語の特徴として非常に重要です。"
+      },
+      {
+        "id": "je_cst2",
+        "question": "If she studied harder, she _____ pass the exam.",
+        "translation": "(もし彼女がもっと勉強すれば、試験に受かるだろうに)",
+        "options": [
+          "would",
+          "will",
+          "can",
+          "shall"
+        ],
+        "correct": "would",
+        "explanation": "第二条件文の主節（結果節）では'would + 動詞原形'を使います。これは「～だろうに」という非現実的な結果を表します。'will'は第一条件文（現実的な条件）で使い、'would'は第二条件文（非現実的な条件）で使います。この区別は日本語にはない英語独自の表現方法です。'could'や'might'も使えますが、'would'が最も一般的な選択肢です。実際に勉強していない状況を仮定しています。"
+      },
+      {
+        "id": "je_cst3",
+        "question": "If I _____ you, I would apologize immediately.",
+        "translation": "(もし私があなただったら、すぐに謝るでしょう)",
+        "options": [
+          "were",
+          "am",
+          "be",
+          "being"
+        ],
+        "correct": "were",
+        "explanation": "「If I were you」は英語で最もよく使われる仮定法のフレーズの一つで、アドバイスをする時に使います。日本語の「あなたの立場なら」に相当します。文法的には仮定法過去なので、be動詞は'were'を使います。これは丁寧にアドバイスを伝える定型表現として覚えておくと非常に便利です。「If I was you」も口語では聞かれますが、正式な英語では'were'が正しいです。ビジネスでもカジュアルな会話でも頻出する重要な表現パターンです。"
+      },
+      {
+        "id": "je_cst4",
+        "question": "If they had left earlier, they _____ have caught the train.",
+        "translation": "(もし彼らがもっと早く出発していたら、電車に間に合っただろうに)",
+        "options": [
+          "would",
+          "will",
+          "shall",
+          "can"
+        ],
+        "correct": "would",
+        "explanation": "第三条件文（仮定法過去完了）は「過去の事実に反する仮定」を表します。構文は「If + 主語 + had + 過去分詞, 主語 + would have + 過去分詞」です。実際には早く出発しなかったし、電車にも乗り遅れたという過去の後悔を表現しています。日本語の「～していたら～だったのに」に近い表現です。過去を変えることはできないという含意があり、反省や後悔を表す場面で頻繁に使われる重要な構文です。"
+      },
+      {
+        "id": "je_cst5",
+        "question": "If he had known the truth, he _____ not have been so angry.",
+        "translation": "(もし彼が真実を知っていたら、そんなに怒らなかっただろうに)",
+        "options": [
+          "would",
+          "will",
+          "should",
+          "could"
+        ],
+        "correct": "would",
+        "explanation": "第三条件文の否定形です。「would not have + 過去分詞」で「～しなかっただろうに」を表します。この文は過去に実際に起きたこと（彼は真実を知らず、怒った）の反対を仮定しています。'could not have'も可能ですが、'would not have'が最も自然な表現です。日本語では時制の変化だけで仮定を表しますが、英語では構文全体が変わる点に注意が必要です。この文型は人間関係の誤解を振り返る場面でよく使われる実践的な表現です。"
+      },
+      {
+        "id": "je_cst6",
+        "question": "I wish I _____ speak French fluently.",
+        "translation": "(フランス語が流暢に話せたらいいのに)",
+        "options": [
+          "could",
+          "can",
+          "will",
+          "am able to"
+        ],
+        "correct": "could",
+        "explanation": "「I wish + 仮定法過去」は現在の願望で、実現していないことへの願いを表します。'could'は'can'の過去形ですが、ここでは仮定法として「～できたらいいのに」という意味になります。日本語の「～たらいいのに」に対応します。'I wish I can'は文法的に誤りです。wishの後には必ず仮定法（過去形）が来ます。この構文は第二条件文と同じ仮定法過去の仕組みを使っており、日常会話で非常に頻繁に使われる表現パターンです。"
+      },
+      {
+        "id": "je_cst7",
+        "question": "If only I _____ listened to my mother's advice.",
+        "translation": "(母のアドバイスを聞いていれば良かったのに)",
+        "options": [
+          "had",
+          "have",
+          "would",
+          "did"
+        ],
+        "correct": "had",
+        "explanation": "「If only + 仮定法過去完了」は過去の強い後悔を表す表現です。'had listened'で「聞いていれば」という過去の事実に反する仮定になります。「I wish I had listened」と同じ意味ですが、'If only'の方がより感情的で強い後悔のニュアンスがあります。日本語の「～していれば良かった」に相当し、実際にはそうしなかったことへの深い後悔を表現します。この表現は文学作品やドラマでも頻繁に登場するため覚えておくと非常に便利です。"
+      },
+      {
+        "id": "je_cst8",
+        "question": "She would buy the car if she _____ enough money.",
+        "translation": "(十分なお金があれば、彼女はその車を買うだろうに)",
+        "options": [
+          "had",
+          "has",
+          "will have",
+          "having"
+        ],
+        "correct": "had",
+        "explanation": "第二条件文ではif節の動詞を過去形にします。'have'の過去形は'had'です。この文では現在お金が足りないという事実に反する仮定をしています。if節と主節の順序は入れ替え可能で、「主節 + if節」の語順でも意味は同じです。ただし、if節が後に来る場合はカンマを省略するのが一般的です。日本語の「もし～なら」と構造は似ていますが、動詞の時制変化が鍵で、過去形を使って非現実を表す点が英語特有の表現方法です。"
+      },
+      {
+        "id": "je_cst9",
+        "question": "If we had booked earlier, we _____ have gotten better seats.",
+        "translation": "(もっと早く予約していたら、もっと良い席が取れただろうに)",
+        "options": [
+          "could",
+          "can",
+          "will",
+          "shall"
+        ],
+        "correct": "could",
+        "explanation": "第三条件文では'would have'以外に'could have'（～できただろうに）や'might have'（～だったかもしれない）も使えます。'could have gotten'は「得ることができただろうに」という可能性を表します。'would have gotten'よりも可能性のニュアンスが加わります。日本語では「～できただろうに」と訳せます。実際には予約が遅かったので良い席が取れなかったという過去の状況への後悔です。"
+      },
+      {
+        "id": "je_cst10",
+        "question": "What would you do if you _____ the lottery?",
+        "translation": "(もし宝くじに当たったら、何をしますか？)",
+        "options": [
+          "won",
+          "win",
+          "winning",
+          "would win"
+        ],
+        "correct": "won",
+        "explanation": "第二条件文の疑問文です。if節では過去形を使い、主節では'would + 動詞原形'を使います。'win'の過去形は'won'です。宝くじに当たる可能性は非常に低いので、第二条件文（非現実的な仮定）を使います。第一条件文（If you win）も文法的には可能ですが、宝くじのような非現実的な状況には第二条件文がより自然です。会話で想像力を働かせる質問によく使われるパターンで、楽しい会話のきっかけとして実践的に役立ちます。"
+      },
+      {
+        "id": "je_cst11",
+        "question": "If it _____ not been raining, we would have had a picnic.",
+        "translation": "(雨が降っていなかったら、ピクニックをしたのに)",
+        "options": [
+          "had",
+          "has",
+          "was",
+          "were"
+        ],
+        "correct": "had",
+        "explanation": "第三条件文で進行形を使う場合、「had + not + been + ~ing」の形をとります。'had not been raining'で「雨が降っていなかったら」という過去の事実に反する仮定を表します。実際には雨が降っていたのでピクニックはできなかったという状況です。第三条件文は過去完了形を使うため、'had'が正しい助動詞です。日本語とは異なり、英語は時制の組み合わせで仮定の種類を明確に区別します。"
+      },
+      {
+        "id": "je_cst12",
+        "question": "He talks as if he _____ everything.",
+        "translation": "(彼はまるで何でも知っているかのように話す)",
+        "options": [
+          "knew",
+          "knows",
+          "knowing",
+          "will know"
+        ],
+        "correct": "knew",
+        "explanation": "「as if / as though + 仮定法過去」は「まるで～のように」を表す表現です。実際にはすべてを知っているわけではないのに、そのように振る舞うことを表現しています。仮定法過去なので動詞は過去形（knew）を使います。日本語の「～かのように」に相当しますが、英語では仮定法の過去形で非現実を示す点が特徴的です。現在形の'knows'を使うと「実際に知っている」というニュアンスに変わります。"
+      },
+      {
+        "id": "je_cst13",
+        "question": "I wish I _____ gone to the party last night.",
+        "translation": "(昨夜パーティーに行けば良かった)",
+        "options": [
+          "had",
+          "have",
+          "would",
+          "did"
+        ],
+        "correct": "had",
+        "explanation": "「I wish + 仮定法過去完了」は過去のことへの後悔を表します。'had gone'で「行っていれば」という実現しなかった過去の行動への願いを表現します。現在の願望（I wish I could go）と過去の後悔（I wish I had gone）の違いをしっかり区別することが重要です。日本語では「～すれば良かった」と時制を変えずに後悔を表せますが、英語では「wish + had + 過去分詞」で過去完了形を使う必要があります。"
+      },
+      {
+        "id": "je_cst14",
+        "question": "If I _____ a bird, I would fly to Hawaii.",
+        "translation": "(もし私が鳥だったら、ハワイまで飛んでいくのに)",
+        "options": [
+          "were",
+          "am",
+          "was being",
+          "will be"
+        ],
+        "correct": "were",
+        "explanation": "典型的な第二条件文で、完全に非現実的な仮定（人間が鳥になること）を表しています。仮定法過去ではbe動詞は人称に関係なく'were'を使うのが標準的です。この例は非常にわかりやすく、第二条件文が「ありえない仮定」に使われることを示しています。日本語の「もし～だったら」と同じ発想ですが、英語は動詞の形を変えることで仮定であることを文法的に明示する点が特徴で、この区別は英語の論理的な表現力を示しています。"
+      },
+      {
+        "id": "je_cst15",
+        "question": "They wouldn't have missed the flight if they _____ left on time.",
+        "translation": "(時間通りに出発していたら、飛行機に乗り遅れなかっただろうに)",
+        "options": [
+          "had",
+          "have",
+          "would",
+          "did"
+        ],
+        "correct": "had",
+        "explanation": "第三条件文の否定形で、主節が先に来るパターンです。'had left'で「出発していたら」という過去の事実に反する条件を表します。実際には時間通りに出発しなかったので飛行機に乗り遅れたという状況です。第三条件文では必ず'if節にhad + 過去分詞'、'主節にwould have + 過去分詞'の組み合わせを使います。語順が逆でも構造は変わりません。この文型は反省や後悔の文脈で頻繁に使われ、旅行の失敗談などでも活用されます。"
+      }
+    ]
+  },
+  {
+    "key": "passive_voice",
+    "name": "Passive Voice",
+    "description": "受動態",
+    "iconName": "arrow.left.arrow.right",
+    "color": "#a78bfa",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_pv1",
+        "question": "The cake _____ baked by my grandmother.",
+        "translation": "(そのケーキは祖母によって焼かれました)",
+        "options": [
+          "was",
+          "is",
+          "were",
+          "been"
+        ],
+        "correct": "was",
+        "explanation": "受動態の基本構文は「be動詞 + 過去分詞」です。'cake'は三人称単数で、文脈から過去の話なので'was'を使います。日本語の「～された」に相当しますが、英語の受動態は日本語よりも頻繁に使われます。能動態「My grandmother baked the cake」を受動態にすると、動作の対象が主語になり、動作の主体は'by'で示されます。誰が行ったかより、何が行われたかに焦点を当てる表現です。"
+      },
+      {
+        "id": "je_pv2",
+        "question": "English _____ spoken in many countries.",
+        "translation": "(英語は多くの国で話されています)",
+        "options": [
+          "is",
+          "are",
+          "was",
+          "been"
+        ],
+        "correct": "is",
+        "explanation": "現在形の受動態は「is/are + 過去分詞」で作ります。'English'は単数名詞なので'is'を使います。この文は一般的な事実を述べており、現在形が適切です。受動態は行為者が不明・不重要・一般的な場合によく使われます。ここでは「誰が話すか」より「英語が話されている」という事実が重要です。日本語でも「～されている」と受動態を使いますが、英語の受動態はもっと多くの場面で自然に使われ、特にフォーマルな文章ではよく登場します。"
+      },
+      {
+        "id": "je_pv3",
+        "question": "The report will _____ finished by Friday.",
+        "translation": "(そのレポートは金曜日までに完成されるでしょう)",
+        "options": [
+          "be",
+          "been",
+          "being",
+          "is"
+        ],
+        "correct": "be",
+        "explanation": "未来形の受動態は「will + be + 過去分詞」で作ります。'will'の後には動詞の原形が来るので'be'が正解です。'been'は完了形で使い、'being'は進行形で使います。日本語の「～されるでしょう」に相当します。未来の受動態は約束や予定を伝える場面でよく使われ、ビジネス英語では特に頻出します。「The report will be finished」は「レポートが完了する見込みです」という前向きなニュアンスもあります。"
+      },
+      {
+        "id": "je_pv4",
+        "question": "The window _____ broken by the children.",
+        "translation": "(その窓は子供たちによって割られました)",
+        "options": [
+          "was",
+          "is",
+          "were",
+          "has"
+        ],
+        "correct": "was",
+        "explanation": "過去形の受動態は「was/were + 過去分詞」です。'window'は単数なので'was'を使います。'by the children'で行為者を示しています。能動態では「The children broke the window」ですが、受動態にすることで窓（被害を受けたもの）に焦点を当てています。日本語では「窓が割られた」と同じ発想です。受動態で'by'以下を省略することもできますが、この文では行為者を明示しています。break-broke-brokenの不規則変化にも注意。"
+      },
+      {
+        "id": "je_pv5",
+        "question": "This song _____ been played on the radio many times.",
+        "translation": "(この曲はラジオで何度も流されてきました)",
+        "options": [
+          "has",
+          "have",
+          "had",
+          "is"
+        ],
+        "correct": "has",
+        "explanation": "現在完了形の受動態は「has/have + been + 過去分詞」で作ります。'song'は三人称単数なので'has'を使います。この形は過去に始まって現在も関連のある受動的な行為を表します。「何度も流されてきた」という経験・繰り返しのニュアンスがあります。日本語の「～されてきた」に近い表現です。現在完了形と受動態を組み合わせることで、過去から現在にわたる継続的な状態を効果的に表現でき、音楽やメディアの話題でよく使われます。"
+      },
+      {
+        "id": "je_pv6",
+        "question": "The students were _____ asked to submit their essays.",
+        "translation": "(学生たちはエッセイを提出するよう求められました)",
+        "options": [
+          "asked",
+          "asking",
+          "ask",
+          "asks"
+        ],
+        "correct": "asked",
+        "explanation": "受動態では「be動詞 + 過去分詞」の形を使います。ここで'were'は既にbe動詞として機能しているので、あとは過去分詞'asked'を加えるだけです。問題文には既に'were'があるため、空欄に入るのは過去分詞のみです。'ask-asked-asked'は規則変化動詞で、過去形と過去分詞が同じ形です。受動態で「人 + be動詞 + asked + to不定詞」の形は依頼・指示を伝える場面で非常によく使われるパターンです。"
+      },
+      {
+        "id": "je_pv7",
+        "question": "The house is being _____ at the moment.",
+        "translation": "(その家は現在建てられている最中です)",
+        "options": [
+          "built",
+          "build",
+          "building",
+          "builds"
+        ],
+        "correct": "built",
+        "explanation": "現在進行形の受動態は「is/are + being + 過去分詞」で作ります。'being'の後に過去分詞'built'が来ます。'build-built-built'は不規則変化動詞です。この形は「今まさに行われている最中」の動作を受動態で表します。日本語の「～されているところです」に相当します。'at the moment'という時間表現が現在進行形を使うヒントになっています。能動態は「They are building the house」です。"
+      },
+      {
+        "id": "je_pv8",
+        "question": "The meeting has been _____ until next week.",
+        "translation": "(会議は来週まで延期されました)",
+        "options": [
+          "postponed",
+          "postpone",
+          "postponing",
+          "postpones"
+        ],
+        "correct": "postponed",
+        "explanation": "現在完了形の受動態「has been + 過去分詞」のパターンです。'postpone'（延期する）の過去分詞は'postponed'です。this形は最近決定されたことを伝える場面でよく使われ、ビジネス英語では非常に頻出します。受動態は「誰が決定したか」より「何が決定されたか」に焦点を当てるため、公式な通知やアナウンスメントに最適です。日本語の「～されました」という報告のニュアンスと同じ使い方です。"
+      },
+      {
+        "id": "je_pv9",
+        "question": "The criminal _____ arrested by the police yesterday.",
+        "translation": "(その犯人は昨日警察に逮捕されました)",
+        "options": [
+          "was",
+          "is",
+          "were",
+          "has"
+        ],
+        "correct": "was",
+        "explanation": "過去形の受動態です。'yesterday'という過去を示す時間表現があるため、過去形'was'を使います。'criminal'は単数なので'was'が正解です。ニュース報道では受動態が特に多く使われ、「誰が何をされたか」を客観的に伝えるのに適しています。能動態「The police arrested the criminal」と比べると、受動態は犯人に焦点を当てています。日本語のニュースでも「逮捕されました」と受動態が多用されるのと同じ理由です。"
+      },
+      {
+        "id": "je_pv10",
+        "question": "These cars _____ manufactured in Japan.",
+        "translation": "(これらの車は日本で製造されています)",
+        "options": [
+          "are",
+          "is",
+          "was",
+          "been"
+        ],
+        "correct": "are",
+        "explanation": "現在形の受動態で一般的な事実を述べています。'cars'は複数形なので'are'を使います。「日本で製造されている」という現在の継続的な事実を表しています。受動態は製品の説明や産業について話す場面でよく使われます。'by'を使って行為者を示す必要がない場合は省略できます。ここでは「誰が作るか」より「どこで作られるか」が重要な情報です。日本語の「製造されています」と同じ構造で、ビジネスや工業分野の文脈で頻出する実用的な表現です。"
+      },
+      {
+        "id": "je_pv11",
+        "question": "The homework must _____ completed before class.",
+        "translation": "(宿題は授業の前に完成させなければなりません)",
+        "options": [
+          "be",
+          "been",
+          "being",
+          "is"
+        ],
+        "correct": "be",
+        "explanation": "助動詞を含む受動態は「助動詞 + be + 過去分詞」の形をとります。'must'の後には動詞の原形が来るので'be'が正解です。'must be completed'で「完成されなければならない」という義務の受動態になります。同じパターンは他の助動詞でも使えます：should be done, can be seen, may be neededなど。助動詞+受動態は規則やルールを説明する場面で頻繁に使われ、日本語の「～されなければならない」に対応します。"
+      },
+      {
+        "id": "je_pv12",
+        "question": "The new bridge _____ being constructed when I drove past.",
+        "translation": "(私が車で通りかかった時、新しい橋が建設中でした)",
+        "options": [
+          "was",
+          "is",
+          "were",
+          "had"
+        ],
+        "correct": "was",
+        "explanation": "過去進行形の受動態は「was/were + being + 過去分詞」で作ります。'bridge'は単数なので'was'を使います。この形は過去のある時点で進行中だった動作を受動態で表します。「通りかかった時」という具体的な過去の時点が示されているため、過去進行形が適切です。日本語の「～されていた」「建設中だった」に相当します。現在進行形の受動態との違いは時制だけです。建設現場の描写など具体的な場面で活用される実用的な表現パターンです。"
+      },
+      {
+        "id": "je_pv13",
+        "question": "It is _____ that the company will close next year.",
+        "translation": "(その会社は来年閉鎖されると言われています)",
+        "options": [
+          "said",
+          "say",
+          "saying",
+          "says"
+        ],
+        "correct": "said",
+        "explanation": "「It is said that...」は「～と言われている」を表す非人称受動態の重要構文です。'say'の過去分詞は'said'です。この構文は情報源を明示せずに一般的な見解や噂を伝える際に使います。同様のパターンとして'It is believed that...'（～と信じられている）、'It is reported that...'（～と報告されている）などがあります。日本語の「～と言われている」とほぼ同じ使い方です。フォーマルな文章やニュースでよく使われる表現です。"
+      },
+      {
+        "id": "je_pv14",
+        "question": "She is known _____ being an excellent pianist.",
+        "translation": "(彼女は優れたピアニストとして知られています)",
+        "options": [
+          "for",
+          "to",
+          "by",
+          "with"
+        ],
+        "correct": "for",
+        "explanation": "「be known for」は「～で知られている」を表す受動態の慣用表現です。'for'は理由・原因を示す前置詞で、その人が知られている特徴や能力を導きます。「be known to」は「～に知られている」（人が対象）、「be known as」は「～として知られている」（肩書き）と意味が異なります。受動態には特定の前置詞と結びつく慣用表現が多く、これらを一つずつ覚えることが英語力向上の鍵です。日本語の「～で有名」に近いニュアンスです。"
+      },
+      {
+        "id": "je_pv15",
+        "question": "All the tickets have been _____ out.",
+        "translation": "(チケットはすべて売り切れました)",
+        "options": [
+          "sold",
+          "sell",
+          "selling",
+          "sells"
+        ],
+        "correct": "sold",
+        "explanation": "現在完了形の受動態「have been + 過去分詞」のパターンです。'sell'の不規則変化は'sell-sold-sold'で、過去分詞は'sold'です。'sold out'は「売り切れた」を意味する慣用表現です。現在完了形を使うことで、チケットが売り切れたという結果が今も続いていること（もう買えないこと）を表しています。イベントやコンサートの告知で頻繁に使われるフレーズで、日常会話でも非常に便利な表現です。"
+      }
+    ]
+  },
+  {
+    "key": "reported_speech",
+    "name": "Reported Speech",
+    "description": "間接話法",
+    "iconName": "quote.bubble",
+    "color": "#fb923c",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_rs1",
+        "question": "She said that she _____ tired.",
+        "translation": "(彼女は疲れていると言いました)",
+        "options": [
+          "was",
+          "is",
+          "were",
+          "be"
+        ],
+        "correct": "was",
+        "explanation": "間接話法（reported speech）では、直接話法の時制を一つ過去にずらします。これを「時制の一致（backshift）」と呼びます。元の発言「I am tired」の'am'が'was'に変わります。日本語では「疲れていると言った」と時制を変えませんが、英語では報告動詞（said）が過去形の場合、後続する節の時制も過去にずらすのが原則です。これは英語学習者にとって最も混乱しやすい文法事項の一つです。"
+      },
+      {
+        "id": "je_rs2",
+        "question": "He told me that he _____ going to the store.",
+        "translation": "(彼はお店に行くつもりだと私に言いました)",
+        "options": [
+          "was",
+          "is",
+          "will be",
+          "were"
+        ],
+        "correct": "was",
+        "explanation": "間接話法で'said'と'told'の違いも重要です。'said'は「～と言った」で、'told someone'は「誰かに～と言った」です。'told'は必ず目的語（人）を取ります。元の発言「I am going to the store」が間接話法では'was going'に変わります。進行形の場合も時制の一致で'am/is/are going'が'was/were going'になります。「going to」は近い将来の予定を表す表現で、間接話法でも構造は保たれます。"
+      },
+      {
+        "id": "je_rs3",
+        "question": "They said they _____ already finished the project.",
+        "translation": "(彼らはプロジェクトをすでに終えたと言いました)",
+        "options": [
+          "had",
+          "have",
+          "has",
+          "would"
+        ],
+        "correct": "had",
+        "explanation": "元の発言が現在完了形「We have finished」の場合、間接話法では過去完了形「had finished」に時制が一つずれます。現在完了→過去完了への変化は間接話法の基本ルールです。'already'は完了を強調する副詞で、位置は'had'と過去分詞の間に来ます。日本語では「もう終えたと言った」と特に時制を変える必要がないため、英語学習者にとってこの変化は意識的に練習する必要があり、反復練習が上達への確実な道のりとなります。"
+      },
+      {
+        "id": "je_rs4",
+        "question": "She asked me where I _____.",
+        "translation": "(彼女は私にどこに住んでいるか尋ねました)",
+        "options": [
+          "lived",
+          "live",
+          "living",
+          "do live"
+        ],
+        "correct": "lived",
+        "explanation": "間接疑問文では、疑問詞（where）は残りますが、語順が通常の肯定文の語順（主語+動詞）に変わります。元の質問「Where do you live?」が間接話法では'where I lived'になります。疑問文の'do'が消え、動詞が過去形に変わります。さらに'you'が'I'に人称が変わります。日本語の「どこに住んでいるか聞いた」とは異なり、英語の間接疑問文は語順と時制の両方が変わるという二重の変化があります。"
+      },
+      {
+        "id": "je_rs5",
+        "question": "He asked me if I _____ help him.",
+        "translation": "(彼は私に手伝えるかどうか尋ねました)",
+        "options": [
+          "could",
+          "can",
+          "may",
+          "will"
+        ],
+        "correct": "could",
+        "explanation": "Yes/No疑問文を間接話法にする場合、'if'または'whether'を使います。元の質問「Can you help me?」が間接話法では'if I could help him'になります。助動詞も時制の一致が適用され、'can'は'could'に変わります。人称も変わり、'you'→'I'、'me'→'him'となります。'if'と'whether'はほぼ同じ意味で使えますが、フォーマルな文脈では'whether'の方がやや文語的です。"
+      },
+      {
+        "id": "je_rs6",
+        "question": "The teacher told us _____ to open our textbooks.",
+        "translation": "(先生は教科書を開くように私たちに言いました)",
+        "options": [
+          "to",
+          "that",
+          "if",
+          "for"
+        ],
+        "correct": "to",
+        "explanation": "命令文を間接話法にする場合、「tell/ask/order + 人 + to不定詞」の形を使います。元の命令「Open your textbooks」が'told us to open'に変わります。'tell'は穏やかな指示、'order'は強い命令、'ask'は依頼のニュアンスです。否定の命令は'told us not to open'となります。日本語の「～するように言った」に対応しますが、英語ではto不定詞を使う構文に変わる点が特徴的です。この構文は日常会話からビジネスまで幅広く使われます。"
+      },
+      {
+        "id": "je_rs7",
+        "question": "She said she _____ visit us the following week.",
+        "translation": "(彼女は翌週私たちを訪ねると言いました)",
+        "options": [
+          "would",
+          "will",
+          "shall",
+          "can"
+        ],
+        "correct": "would",
+        "explanation": "間接話法では'will'は'would'に変わります。元の発言「I will visit you next week」が間接話法になると、'will'→'would'、'you'→'us'、'next week'→'the following week'に変わります。時間表現の変化も重要です：today→that day、tomorrow→the next day、yesterday→the day before、next week→the following week。これらの変化は日本語にはない英語独自のルールで、間接話法を完全に使いこなすには必須の知識です。"
+      },
+      {
+        "id": "je_rs8",
+        "question": "He said he _____ never been to Paris.",
+        "translation": "(彼はパリに行ったことがないと言いました)",
+        "options": [
+          "had",
+          "has",
+          "have",
+          "was"
+        ],
+        "correct": "had",
+        "explanation": "元の発言「I have never been to Paris」は現在完了形です。間接話法では現在完了が過去完了に変わるため、'have been'が'had been'になります。ただし、この事実が依然として真実である場合（今もパリに行ったことがない場合）は、時制をずらさないことも可能です。しかし試験や正式な文書では時制の一致を適用するのが安全です。'never'の位置は'had'の後ろで変わりません。経験を表す完了形は間接話法でもよく登場します。"
+      },
+      {
+        "id": "je_rs9",
+        "question": "She asked him what time the train _____.",
+        "translation": "(彼女は彼に電車が何時に出発するか尋ねました)",
+        "options": [
+          "departed",
+          "departs",
+          "departing",
+          "does depart"
+        ],
+        "correct": "departed",
+        "explanation": "間接疑問文で疑問詞が使われる場合、疑問詞の後は肯定文の語順になります。元の質問「What time does the train depart?」が間接話法では'what time the train departed'に変わります。助動詞'does'が消え、本動詞が過去形になります。ただし、時刻表や定期的な予定について話す場合は、時制をずらさないことも許容されます。日本語の「何時に出発するか聞いた」と比べると、英語は語順と時制の変化が複雑です。"
+      },
+      {
+        "id": "je_rs10",
+        "question": "My mother told me not _____ stay up late.",
+        "translation": "(母は夜更かしをしないようにと私に言いました)",
+        "options": [
+          "to",
+          "that",
+          "if",
+          "for"
+        ],
+        "correct": "to",
+        "explanation": "否定の命令・指示を間接話法にする場合、「tell + 人 + not to + 動詞原形」の形を使います。元の命令「Don't stay up late」が'told me not to stay up late'に変わります。'not'の位置は'to'の直前です。「not to」で「～しないように」を表します。肯定の指示は'told me to do'、否定は'told me not to do'という対比で覚えると効果的です。親から子への日常的な指示やアドバイスを報告する場面でよく使う表現です。"
+      },
+      {
+        "id": "je_rs11",
+        "question": "He mentioned that he _____ looking for a new job.",
+        "translation": "(彼は新しい仕事を探していると言っていました)",
+        "options": [
+          "was",
+          "is",
+          "were",
+          "be"
+        ],
+        "correct": "was",
+        "explanation": "報告動詞は'said'や'told'以外にも多くあります。'mentioned'は「～と述べた、触れた」という意味で、カジュアルに情報を伝えた場合に使います。他にも'explained'（説明した）、'claimed'（主張した）、'admitted'（認めた）、'insisted'（強く主張した）、'promised'（約束した）など、ニュアンスが異なる報告動詞があります。どの報告動詞を使うかで発言のトーンが変わるので、適切な動詞を選ぶことが重要です。"
+      },
+      {
+        "id": "je_rs12",
+        "question": "She wondered whether he _____ coming to the party.",
+        "translation": "(彼女は彼がパーティーに来るかどうか疑問に思いました)",
+        "options": [
+          "was",
+          "is",
+          "were",
+          "will be"
+        ],
+        "correct": "was",
+        "explanation": "「wonder + whether/if」は「～かどうか疑問に思う」を表す間接疑問の表現です。元の心の中の疑問「Is he coming to the party?」が'whether he was coming'に変わります。'wonder'は直接人に尋ねるのではなく、心の中で考えている状況を表します。'whether'は'if'よりもフォーマルで、特に書き言葉でよく使われます。進行形'was coming'は予定を表し、日本語の「来るのかな」という内心の疑問に相当します。"
+      },
+      {
+        "id": "je_rs13",
+        "question": "The doctor advised me _____ more exercise.",
+        "translation": "(医者はもっと運動するようにと私にアドバイスしました)",
+        "options": [
+          "to do",
+          "doing",
+          "do",
+          "did"
+        ],
+        "correct": "to do",
+        "explanation": "アドバイスや提案を間接話法にする場合、「advise + 人 + to + 動詞原形」の形を使います。元の発言「You should do more exercise」が'advised me to do'に変わります。'advise'は'tell'よりも専門的なアドバイスのニュアンスがあり、医者や専門家からの助言を報告する際によく使います。同様に'recommend'（勧める）、'suggest'（提案する）も使えますが、'suggest'は「suggest + ~ing」または「suggest that + 主語 + 動詞原形」の形をとるため注意が必要です。"
+      },
+      {
+        "id": "je_rs14",
+        "question": "He promised that he _____ return the book soon.",
+        "translation": "(彼はすぐに本を返すと約束しました)",
+        "options": [
+          "would",
+          "will",
+          "shall",
+          "could"
+        ],
+        "correct": "would",
+        "explanation": "「promise + that + would」は約束を間接話法で報告する形です。元の発言「I will return the book soon」の'will'が'would'に変わります。'promise'は約束を表す報告動詞で、後にthat節またはto不定詞（promised to return）をとります。'soon'は時制の一致では通常変化しませんが、文脈によっては'soon'が不明確になる場合があります。約束の報告は日常会話で頻繁に使われ、信頼関係のコンテキストで重要な表現です。"
+      },
+      {
+        "id": "je_rs15",
+        "question": "She denied _____ the money.",
+        "translation": "(彼女はそのお金を取ったことを否定しました)",
+        "options": [
+          "taking",
+          "to take",
+          "take",
+          "took"
+        ],
+        "correct": "taking",
+        "explanation": "特定の報告動詞は特有の文型をとります。'deny'は動名詞（~ing形）をとり、「deny + ~ing」で「～したことを否定する」を意味します。元の発言「I didn't take the money」が'denied taking'に変わります。'deny'のように動名詞をとる動詞には'admit ~ing'（～を認める）、'suggest ~ing'（～を提案する）などがあります。一方、'promise to do'、'agree to do'のようにto不定詞をとる動詞もあります。報告動詞ごとの文型を覚えることが間接話法マスターの鍵です。"
+      }
+    ]
+  },
+  {
+    "key": "relative_clauses",
+    "name": "Relative Clauses",
+    "description": "関係代名詞・関係節",
+    "iconName": "link",
+    "color": "#2dd4bf",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_rc1",
+        "question": "The woman _____ lives next door is a doctor.",
+        "translation": "(隣に住んでいる女性は医者です)",
+        "options": [
+          "who",
+          "which",
+          "what",
+          "whom"
+        ],
+        "correct": "who",
+        "explanation": "関係代名詞'who'は人を先行詞として受け、関係節の中で主語の役割を果たします。この文では'the woman'が先行詞で、'who lives next door'が関係節です。日本語では「隣に住んでいる女性」と先行詞の前に修飾語を置きますが、英語では先行詞の後に関係節を置きます。この語順の違いは日本語話者にとって最も慣れが必要な点の一つです。'which'は物に使い、'what'は先行詞を含む関係代名詞で使い方が異なります。"
+      },
+      {
+        "id": "je_rc2",
+        "question": "The book _____ I read last week was excellent.",
+        "translation": "(先週読んだ本はとても良かったです)",
+        "options": [
+          "that",
+          "who",
+          "whom",
+          "whose"
+        ],
+        "correct": "that",
+        "explanation": "関係代名詞'that'は人にも物にも使え、'which'の代わりにもなります。この文では'the book'が先行詞で、'that I read'が関係節です。関係節の中で'that'は目的語の役割を果たしています（I read the book → I read that）。目的格の関係代名詞は省略可能で、'The book I read'と言うこともできます。日本語の「読んだ本」と比べると、英語では本の後に説明が来る逆の構造で、この違いに慣れることが英語力向上の重要なステップです。"
+      },
+      {
+        "id": "je_rc3",
+        "question": "This is the restaurant _____ we had dinner last night.",
+        "translation": "(ここが昨夜夕食を食べたレストランです)",
+        "options": [
+          "where",
+          "which",
+          "that",
+          "who"
+        ],
+        "correct": "where",
+        "explanation": "関係副詞'where'は場所を表す先行詞を受けます。'the restaurant'が先行詞で、'where we had dinner'が関係節です。'where'は「in/at which」と置き換えることも可能です（the restaurant at which we had dinner）。ただし'where'の方が自然で一般的です。日本語の「夕食を食べたレストラン」は先行詞の前に修飾が来ますが、英語では後置修飾です。場所を表す単語（restaurant, city, house, school など）の後には'where'が使えます。"
+      },
+      {
+        "id": "je_rc4",
+        "question": "The man _____ car was stolen reported it to the police.",
+        "translation": "(車を盗まれた男性はそれを警察に届けました)",
+        "options": [
+          "whose",
+          "who",
+          "whom",
+          "which"
+        ],
+        "correct": "whose",
+        "explanation": "関係代名詞'whose'は所有格を表し、「～の」という意味です。'the man'が先行詞で、'whose car'は「その男性の車」を意味します。'whose'は人にも物にも使えます（the house whose roof is red = 屋根が赤い家）。日本語の「車を盗まれた男性」に相当しますが、英語では所有関係を明示するために'whose'を使います。'who's'（who isの短縮形）と混同しないよう注意が必要です。所有格の関係代名詞は省略できません。"
+      },
+      {
+        "id": "je_rc5",
+        "question": "The day _____ we first met was unforgettable.",
+        "translation": "(私たちが初めて会った日は忘れられません)",
+        "options": [
+          "when",
+          "where",
+          "which",
+          "who"
+        ],
+        "correct": "when",
+        "explanation": "関係副詞'when'は時間を表す先行詞を受けます。'the day'が先行詞で、'when we first met'が関係節です。'when'は「on/in which」と置き換えることもできますが、'when'の方が自然です。時間を表す単語（day, year, time, moment など）の後に使います。日本語では「初めて会った日」と前から修飾しますが、英語では「the day when we first met」と後から修飾します。この語順パターンに慣れることが英語の文構造理解の鍵です。"
+      },
+      {
+        "id": "je_rc6",
+        "question": "She is the teacher _____ everyone respects.",
+        "translation": "(彼女はみんなが尊敬している先生です)",
+        "options": [
+          "whom",
+          "whose",
+          "which",
+          "what"
+        ],
+        "correct": "whom",
+        "explanation": "関係代名詞'whom'は人を先行詞として受け、目的格の位置に来ます。この文では'everyone respects her'のherが関係代名詞に置き換わっています。'whom'はフォーマルな表現で、口語では'who'や'that'、あるいは省略されることも多いです。しかし、前置詞の直後では'whom'を使う必要があります（the person to whom I spoke）。日本語話者には「誰を」という目的格の概念が馴染みにくいですが、関係節内での役割を考えると理解しやすくなります。"
+      },
+      {
+        "id": "je_rc7",
+        "question": "The reason _____ he quit his job was personal.",
+        "translation": "(彼が仕事を辞めた理由は個人的なものでした)",
+        "options": [
+          "why",
+          "which",
+          "when",
+          "where"
+        ],
+        "correct": "why",
+        "explanation": "関係副詞'why'は理由を表す先行詞を受けます。通常'the reason'が先行詞です。'the reason why he quit'で「彼が辞めた理由」を表します。'why'は「for which」と置き換えることもできます。また、'the reason why'の'why'は省略可能で、'the reason he quit'とも言えます。日本語の「辞めた理由」と同じ意味ですが、英語では後置修飾の構造をとります。'the reason why'は日常会話やライティングで非常によく使われるパターンです。"
+      },
+      {
+        "id": "je_rc8",
+        "question": "My brother, _____ is a pilot, lives in London.",
+        "translation": "(パイロットである私の兄はロンドンに住んでいます)",
+        "options": [
+          "who",
+          "that",
+          "which",
+          "whom"
+        ],
+        "correct": "who",
+        "explanation": "カンマ付きの関係節（非制限用法）は、追加情報を提供しますが省略しても文の意味は通じます。非制限用法ではカンマで関係節を区切り、'that'は使えません（'who'または'which'のみ）。この文では'my brother'が先行詞で、'who is a pilot'は補足情報です。制限用法（カンマなし）は「どの人・物か」を特定し、非制限用法（カンマあり）は「ちなみに」と追加情報を加えます。日本語にはこの区別がないため、特に注意が必要です。"
+      },
+      {
+        "id": "je_rc9",
+        "question": "I visited Paris, _____ is famous for the Eiffel Tower.",
+        "translation": "(私はパリを訪れました。パリはエッフェル塔で有名です)",
+        "options": [
+          "which",
+          "that",
+          "where",
+          "what"
+        ],
+        "correct": "which",
+        "explanation": "非制限用法で物（ここでは都市名）を先行詞とする場合は'which'を使います。非制限用法では'that'は使えないというルールは非常に重要です。'Paris, which is famous for...'は「パリ、そしてそれは～で有名です」という追加情報を提供しています。カンマがあることで、この部分は追加情報であり、文の主要な情報ではないことを示します。固有名詞は通常、すでに特定されているため非制限用法が使われます。"
+      },
+      {
+        "id": "je_rc10",
+        "question": "The hotel _____ which we stayed was very comfortable.",
+        "translation": "(私たちが泊まったホテルはとても快適でした)",
+        "options": [
+          "in",
+          "at",
+          "on",
+          "to"
+        ],
+        "correct": "in",
+        "explanation": "「前置詞 + which」の形は、関係副詞'where'の代わりに使えるフォーマルな表現です。'stay in a hotel'の'in'が前に移動して、'in which we stayed'となります。前置詞の選択は元の動詞との組み合わせで決まります：stay in, live in, work at, look at, など。この構文はアカデミックな文章やフォーマルな場面で使われます。日本語には前置詞がないため、どの前置詞を使うかは動詞ごとに覚える必要がある点に注意してください。"
+      },
+      {
+        "id": "je_rc11",
+        "question": "_____ she said surprised everyone.",
+        "translation": "(彼女が言ったことはみんなを驚かせました)",
+        "options": [
+          "What",
+          "That",
+          "Which",
+          "Who"
+        ],
+        "correct": "What",
+        "explanation": "関係代名詞'what'は先行詞を含む特殊な関係代名詞で、「～すること、～するもの」を意味します。'what she said'は'the thing that she said'と同じ意味です。'what'はそれ自体が先行詞と関係代名詞の両方の役割を果たすため、前に名詞は不要です。日本語の「彼女が言ったこと」に自然に対応します。'That she said'は文法的に不完全で、'Which she said'は先行詞が必要なため使えません。'what'は主語としても目的語としても使える便利な単語です。"
+      },
+      {
+        "id": "je_rc12",
+        "question": "The students, most of _____ passed the exam, were happy.",
+        "translation": "(学生たちは、そのほとんどが試験に合格し、喜んでいました)",
+        "options": [
+          "whom",
+          "who",
+          "which",
+          "that"
+        ],
+        "correct": "whom",
+        "explanation": "「数量詞 + of + whom/which」は非制限用法でよく使われるパターンです。'most of whom'で「そのうちのほとんど」を表します。人の場合は'whom'、物の場合は'which'を使います。同様のパターン：some of whom, all of which, none of which, each of whomなど。このパターンは先行詞の一部について追加情報を提供する洗練された表現です。フォーマルな文章やアカデミックライティングで特に重要な構文です。"
+      },
+      {
+        "id": "je_rc13",
+        "question": "He works at a company _____ makes electric cars.",
+        "translation": "(彼は電気自動車を作る会社で働いています)",
+        "options": [
+          "that",
+          "who",
+          "whom",
+          "whose"
+        ],
+        "correct": "that",
+        "explanation": "制限用法（カンマなし）では'that'または'which'を使って「どの会社か」を特定します。'a company'が先行詞で、'that makes electric cars'は会社を特定する情報です。'that'は口語でも文語でも最も一般的な選択肢です。物が先行詞の場合、主格では'that'と'which'の両方が使えますが、'that'の方がより一般的です。日本語の「電気自動車を作る会社」と同じ意味ですが、修飾の位置が後ろから（後置修飾）である点が最大の違いです。"
+      },
+      {
+        "id": "je_rc14",
+        "question": "The way _____ he explained it was very clear.",
+        "translation": "(彼の説明の仕方はとても明確でした)",
+        "options": [
+          "in which",
+          "who",
+          "whose",
+          "when"
+        ],
+        "correct": "in which",
+        "explanation": "「the way in which」は「～する方法、やり方」を表す関係節の構文です。口語では'the way in which'の代わりに'the way (that)'や単に'the way'と言うことも多いです。'in which'はよりフォーマルで、ライティングに適しています。日本語の「～する方法」「～のやり方」に相当します。'the way how'は文法的に誤りなので注意が必要です（howは関係副詞として'the way'と一緒に使えません）。この構文は方法や手段を説明する場面で非常に有用です。"
+      },
+      {
+        "id": "je_rc15",
+        "question": "She married a man _____ family owns a vineyard.",
+        "translation": "(彼女は家族がブドウ園を所有している男性と結婚しました)",
+        "options": [
+          "whose",
+          "who",
+          "whom",
+          "which"
+        ],
+        "correct": "whose",
+        "explanation": "所有格の関係代名詞'whose'はここでも人の先行詞に使われています。'a man whose family'で「家族が～である男性」を表します。'whose'の後には必ず名詞が来ます（whose + 名詞）。日本語では「家族がブドウ園を所有している男性」と修飾語が前に来ますが、英語では後置修飾で先行詞の後に関係節が来ます。'whose'は人物の持ち物、身体的特徴、家族関係など所有を表すあらゆる場面で使える関係代名詞で、文を洗練させるために欠かせません。"
+      }
+    ]
+  },
+  {
+    "key": "comparatives_superlatives",
+    "name": "Comparatives & Superlatives",
+    "description": "比較級と最上級",
+    "iconName": "chart.bar.fill",
+    "color": "#fbbf24",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "je_cos1",
+        "question": "This building is _____ than that one.",
+        "translation": "(このビルはあのビルより高いです)",
+        "options": [
+          "taller",
+          "tallest",
+          "more tall",
+          "most tall"
+        ],
+        "correct": "taller",
+        "explanation": "一音節の形容詞（tall）の比較級は語尾に'-er'を付けます。'than'の前には必ず比較級が来ます。'more tall'は誤りで、短い形容詞には'-er'形を使います。日本語では「より高い」と「より」を付けるだけですが、英語では形容詞の形自体が変わります。比較級の基本ルール：一音節→-er（tall→taller）、二音節以上→more+形容詞（beautiful→more beautiful）。'than'は「～より」を意味し、比較対象を導きます。比較級は英語で最も頻繁に使われる文法構造の一つです。"
+      },
+      {
+        "id": "je_cos2",
+        "question": "She is the _____ student in the class.",
+        "translation": "(彼女はクラスで一番賢い学生です)",
+        "options": [
+          "smartest",
+          "smarter",
+          "most smart",
+          "more smart"
+        ],
+        "correct": "smartest",
+        "explanation": "一音節の形容詞（smart）の最上級は語尾に'-est'を付けます。最上級の前には定冠詞'the'が必要です。'in the class'は範囲を示す前置詞句で、「クラスの中で」を意味します。最上級の基本ルール：一音節→-est（smart→smartest）、二音節以上→most+形容詞（intelligent→most intelligent）。日本語の「一番賢い」に対応しますが、英語では'the'を忘れないことが重要です。範囲を示すには'in'（場所・グループ）または'of'（数量）を使います。"
+      },
+      {
+        "id": "je_cos3",
+        "question": "This exam is _____ difficult than the last one.",
+        "translation": "(この試験は前回より難しいです)",
+        "options": [
+          "more",
+          "most",
+          "much",
+          "very"
+        ],
+        "correct": "more",
+        "explanation": "二音節以上の形容詞（difficult）の比較級は'more + 形容詞'の形をとります。'more difficult than'で「～より難しい」を表します。'difficulter'のような形は存在しません。音節数が多い形容詞にはこのルールが適用されます。例：more important, more interesting, more expensive など。日本語では長さに関係なく「より」を付けるだけですが、英語では形容詞の音節数によってルールが変わります。この区別をマスターすることが自然な英語表現の第一歩です。"
+      },
+      {
+        "id": "je_cos4",
+        "question": "Mount Fuji is the _____ famous mountain in Japan.",
+        "translation": "(富士山は日本で最も有名な山です)",
+        "options": [
+          "most",
+          "more",
+          "much",
+          "very"
+        ],
+        "correct": "most",
+        "explanation": "二音節以上の形容詞（famous）の最上級は'the most + 形容詞'の形をとります。'the most famous'で「最も有名な」を意味します。最上級には必ず'the'が付きます。'in Japan'は範囲を示す前置詞句です。日本語の「最も有名な」に対応しますが、英語では「the + most + 形容詞」という三語の組み合わせになる点に注意が必要です。「日本で一番」のように範囲を限定する場合、最上級は非常に自然な表現です。富士山は日本人なら誰でも知る完璧な例文です。"
+      },
+      {
+        "id": "je_cos5",
+        "question": "This coffee is _____ than that one.",
+        "translation": "(このコーヒーはあれより良いです)",
+        "options": [
+          "better",
+          "gooder",
+          "more good",
+          "best"
+        ],
+        "correct": "better",
+        "explanation": "good-better-bestは不規則変化する形容詞の代表例です。'gooder'や'more good'は存在しません。同様に、bad-worse-worst、far-farther/further-farthest/furthestなども不規則変化します。不規則比較級は英語で最も頻繁に使われる単語であるため、丸暗記する価値があります。日本語では「より良い」と規則的に表現できますが、英語ではgoodの形が完全に変わります。これは英語の歴史的な言語変化の名残で、最も基本的な形容詞ほど不規則になる傾向があります。"
+      },
+      {
+        "id": "je_cos6",
+        "question": "He runs _____ fast as his brother.",
+        "translation": "(彼は兄と同じくらい速く走ります)",
+        "options": [
+          "as",
+          "more",
+          "most",
+          "than"
+        ],
+        "correct": "as",
+        "explanation": "「as ... as」は同等比較で「～と同じくらい」を表します。構文は「as + 形容詞/副詞 + as」です。二つ目の'as'の後に比較対象を置きます。否定形は「not as ... as」で「～ほど～ではない」を意味します。日本語の「同じくらい～」に対応します。比較級が「差がある」ことを示すのに対し、同等比較は「差がない」ことを示します。この三つ（同等比較、比較級、最上級）の使い分けが比較表現の基本セットです。"
+      },
+      {
+        "id": "je_cos7",
+        "question": "This is the _____ movie I have ever seen.",
+        "translation": "(これは今まで見た中で最悪の映画です)",
+        "options": [
+          "worst",
+          "worse",
+          "most bad",
+          "badder"
+        ],
+        "correct": "worst",
+        "explanation": "bad-worse-worstも不規則変化です。'badder'や'most bad'は存在しません。「the + 最上級 + I have ever + 過去分詞」は「今まで～した中で最も」を表す重要なパターンです。現在完了形と組み合わせることで、これまでの全経験の中での最上級を表現します。日本語の「今まで見た中で最悪の」に自然に対応する構文です。このパターンは感想や評価を述べる場面で非常によく使われ、会話を豊かにする表現力があります。"
+      },
+      {
+        "id": "je_cos8",
+        "question": "Her house is much _____ than mine.",
+        "translation": "(彼女の家は私の家よりずっと大きいです)",
+        "options": [
+          "bigger",
+          "biggest",
+          "big",
+          "more bigger"
+        ],
+        "correct": "bigger",
+        "explanation": "比較級を強調するには'much'、'far'、'a lot'、'significantly'などを使います。'much bigger than'で「ずっと大きい」を意味します。'more bigger'は二重比較で文法的に誤りです。'big'の比較級は子音字を重ねて'-er'を付けるため'bigger'となります（big→bigger→biggest）。同じパターン：hot→hotter, thin→thinner。'much'は比較級の前に置いて程度を強調する副詞で、日本語の「ずっと」「はるかに」に相当します。"
+      },
+      {
+        "id": "je_cos9",
+        "question": "The _____ you study, the better your results will be.",
+        "translation": "(勉強すればするほど、結果は良くなります)",
+        "options": [
+          "more",
+          "most",
+          "much",
+          "many"
+        ],
+        "correct": "more",
+        "explanation": "「the + 比較級 ..., the + 比較級 ...」は「～すればするほど、ますます～」を表す相関比較の構文です。日本語の「～すれば～するほど」に対応します。このパターンは二つの変化が連動していることを表し、因果関係やアドバイスを伝えるのに非常に効果的です。例：The sooner, the better（早ければ早いほど良い）。この構文はエッセイやスピーチでもよく使われ、説得力のある表現として便利です。'the'は比較級の前に必ず置きます。"
+      },
+      {
+        "id": "je_cos10",
+        "question": "Tokyo is one of the _____ cities in the world.",
+        "translation": "(東京は世界で最も大きい都市の一つです)",
+        "options": [
+          "largest",
+          "larger",
+          "large",
+          "most large"
+        ],
+        "correct": "largest",
+        "explanation": "「one of the + 最上級 + 複数名詞」は「最も～なものの一つ」を表す重要な構文です。最上級の後の名詞は必ず複数形にします（cities, not city）。この表現は「最も～」と断定するのではなく、トップグループの一つとして言及する控えめで正確な表現です。日本語の「最も～の一つ」にぴったり対応します。'large'の最上級は'-est'形（largest）で、'most large'は不適切です。東京という身近な例は日本語話者にとって理解しやすい文です。"
+      },
+      {
+        "id": "je_cos11",
+        "question": "This book is not as _____ as that one.",
+        "translation": "(この本はあの本ほど面白くないです)",
+        "options": [
+          "interesting",
+          "more interesting",
+          "most interesting",
+          "interested"
+        ],
+        "correct": "interesting",
+        "explanation": "否定の同等比較「not as + 形容詞の原級 + as」は「～ほど～ではない」を表します。比較級ではなく原級（元の形）を使う点に注意してください。日本語の「～ほど面白くない」に自然に対応します。'not as ... as'は比較級の否定形（less ... than）と同じ意味ですが、'not as ... as'の方が口語では一般的です。'interested'は「興味を持っている」（人の感情）、'interesting'は「面白い」（物の性質）で意味が異なるので注意が必要です。"
+      },
+      {
+        "id": "je_cos12",
+        "question": "He is getting _____ and taller every year.",
+        "translation": "(彼は毎年どんどん背が高くなっています)",
+        "options": [
+          "taller",
+          "tallest",
+          "tall",
+          "more tall"
+        ],
+        "correct": "taller",
+        "explanation": "「比較級 + and + 比較級」は「ますます～」「どんどん～」を表す構文です。'taller and taller'で「どんどん背が高くなる」を意味します。進行中の変化を強調する表現で、成長や変化を描写するのに最適です。多音節の形容詞の場合は'more and more + 形容詞'の形をとります（more and more popular）。日本語の「どんどん～」「ますます～」に対応する自然な表現で、変化の継続性を生き生きと伝えることができます。"
+      },
+      {
+        "id": "je_cos13",
+        "question": "She drives _____ carefully than her husband.",
+        "translation": "(彼女は夫よりも注意深く運転します)",
+        "options": [
+          "more",
+          "most",
+          "much",
+          "very"
+        ],
+        "correct": "more",
+        "explanation": "副詞の比較級も形容詞と同じルールに従います。'carefully'は三音節の副詞なので、比較級は'more carefully'です。副詞の比較は動作の質を比べる場合に使います。'more carefully than'で「～よりも注意深く」を表します。短い副詞（fast, hard, early）は'-er'形をとります（faster, harder, earlier）。長い副詞（carefully, easily, quickly）は'more'形をとります。日本語では「より注意深く」と単純ですが、英語では副詞の長さでルールが分かれます。"
+      },
+      {
+        "id": "je_cos14",
+        "question": "This is by _____ the most expensive restaurant in town.",
+        "translation": "(これは街で断然一番高いレストランです)",
+        "options": [
+          "far",
+          "much",
+          "more",
+          "very"
+        ],
+        "correct": "far",
+        "explanation": "「by far + the + 最上級」は最上級を強調する表現で「断然、圧倒的に」を意味します。'by far the most expensive'で「断然最も高い」を表します。他にも'easily the best'や'the very best'のような強調表現があります。日本語の「断然一番」「圧倒的に」に対応します。最上級の強調は、他と比べて突出している場合に使います。'by far'は最上級の前にも後にも置けますが、前に置く方が一般的です。この表現は評価や推薦の場面で頻繁に使われます。"
+      },
+      {
+        "id": "je_cos15",
+        "question": "The weather today is _____ than yesterday.",
+        "translation": "(今日の天気は昨日より悪いです)",
+        "options": [
+          "worse",
+          "worst",
+          "more bad",
+          "badder"
+        ],
+        "correct": "worse",
+        "explanation": "bad-worse-worstの不規則変化の比較級パターンです。'more bad'や'badder'は文法的に誤りです。天気について比較するのは日常会話で非常によく使います。不規則比較の完全リスト：good-better-best, bad-worse-worst, many/much-more-most, little-less-least, far-farther/further-farthest/furthest。これらはすべて日常的に使う基本語なので、不規則変化を完全に暗記することが必要です。日本語には不規則変化がないため、英語特有の難しさがあります。"
+      }
+    ]
+  },
+  {
+    "key": "prepositions_place",
+    "name": "Prepositions of Place",
+    "description": "場所を表す前置詞",
+    "iconName": "mappin.and.ellipse",
+    "color": "#34d399",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "je_prpl1",
+        "question": "The cat is _____ the table.",
+        "translation": "(猫はテーブルの上にいます)",
+        "options": [
+          "on",
+          "in",
+          "at",
+          "to"
+        ],
+        "correct": "on",
+        "explanation": "場所を表す前置詞は日本語の「〜に」「〜で」とは大きく異なります。英語では物が表面に接触している場合に'on'を使います。「テーブルの上に」は'on the table'です。日本語では「上に」だけで済みますが、英語では接触の有無によって'on'と'above'を使い分けます。'on'は平面との接触を強調する前置詞で、最も基本的な場所表現の一つです。日常会話で毎日使う表現なので確実にマスターしてください。"
+      },
+      {
+        "id": "je_prpl2",
+        "question": "She lives _____ Tokyo.",
+        "translation": "(彼女は東京に住んでいます)",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "to"
+        ],
+        "correct": "in",
+        "explanation": "都市や国など、広い範囲の場所を表すときは'in'を使います。日本語では「東京に住んでいる」と「に」一語で済みますが、英語では場所の広さや種類によって前置詞が変わります。都市='in Tokyo'、国='in Japan'、部屋の中='in the room'のように、空間の「中にいる」イメージで'in'を使います。これは日本語にはない概念で、英語学習者が最初に戸惑うポイントの一つです。"
+      },
+      {
+        "id": "je_prpl3",
+        "question": "He is waiting _____ the bus stop.",
+        "translation": "(彼はバス停で待っています)",
+        "options": [
+          "at",
+          "in",
+          "on",
+          "to"
+        ],
+        "correct": "at",
+        "explanation": "'at'は特定の地点やスポットを示すときに使います。バス停のような「点」として捉える場所には'at'が最適です。日本語の「〜で」に近いですが、完全には一致しません。'at the bus stop'（バス停で）、'at the station'（駅で）、'at the corner'（角で）のように、ピンポイントの位置を表します。'in'は空間の中、'on'は表面、'at'は点——この三つの前置詞を正確に使い分けることが英語上達の鍵です。"
+      },
+      {
+        "id": "je_prpl4",
+        "question": "The picture is hanging _____ the wall.",
+        "translation": "(絵が壁にかかっています)",
+        "options": [
+          "on",
+          "in",
+          "at",
+          "by"
+        ],
+        "correct": "on",
+        "explanation": "壁に貼ってあるもの、掛けてあるものには'on'を使います。これは表面への接触を表すためです。日本語では「壁に」と言いますが、英語では壁の表面に接触している場合は'on the wall'です。もし壁の中に埋め込まれているなら'in the wall'になります。例えば絵画や時計が壁にかかっている場合は必ず'on'を使います。表面との接触感覚を意識して前置詞を選ぶ習慣をつけましょう。"
+      },
+      {
+        "id": "je_prpl5",
+        "question": "There is a garden _____ the house.",
+        "translation": "(家の後ろに庭があります)",
+        "options": [
+          "behind",
+          "between",
+          "beside",
+          "below"
+        ],
+        "correct": "behind",
+        "explanation": "'behind'は「〜の後ろに」を意味する前置詞です。日本語の「後ろに」に相当しますが、英語にはさまざまな位置関係を表す前置詞があります。'behind'（後ろ）、'in front of'（前）、'beside/next to'（隣）、'between'（間）などです。日本語では「家の後ろ」のように名詞＋の＋位置で表しますが、英語では前置詞一語で方向を示せるため、とても効率的な表現方法です。"
+      },
+      {
+        "id": "je_prpl6",
+        "question": "The bank is _____ the post office and the school.",
+        "translation": "(銀行は郵便局と学校の間にあります)",
+        "options": [
+          "between",
+          "among",
+          "beside",
+          "behind"
+        ],
+        "correct": "between",
+        "explanation": "'between'は二つのものの「間」を表す前置詞です。'between A and B'のパターンで使います。三つ以上のものの間は'among'を使いますが、'between'は基本的に二者間です。日本語の「〜の間に」に対応しますが、英語では数の区別が重要になります。'The bank is between the post office and the school'で「銀行は郵便局と学校の間にある」という位置関係を正確に表現できます。道案内でも頻繁に使われます。"
+      },
+      {
+        "id": "je_prpl7",
+        "question": "The children are playing _____ the park.",
+        "translation": "(子どもたちは公園で遊んでいます)",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "to"
+        ],
+        "correct": "in",
+        "explanation": "公園のような囲まれた空間で活動する場合は'in'を使います。'in the park'は公園という空間の中で活動していることを表します。日本語の「公園で」と同じ意味ですが、英語の前置詞選択は空間認識に基づきます。公園は面積があるため'in'が自然です。ただし'at the park'も使えるケースがあり、より地点を強調する場合に適しています。状況に応じた使い分けを練習していきましょう。"
+      },
+      {
+        "id": "je_prpl8",
+        "question": "Please sit _____ me.",
+        "translation": "(私の隣に座ってください)",
+        "options": [
+          "next to",
+          "on to",
+          "in to",
+          "at to"
+        ],
+        "correct": "next to",
+        "explanation": "'next to'は「〜の隣に」を意味する前置詞句です。'beside'とほぼ同じ意味で使われます。日本語では「隣に」一語で表現しますが、英語では'next to'や'beside'で表します。'next to me'（私の隣に）、'next to the window'（窓の隣に）のように使います。'near'（近くに）とは異なり、すぐ隣にいることを強調しています。座席の指定や物の配置を説明するときに非常によく使われる実用的な表現です。"
+      },
+      {
+        "id": "je_prpl9",
+        "question": "The lamp is _____ the ceiling.",
+        "translation": "(ランプは天井についています)",
+        "options": [
+          "on",
+          "in",
+          "at",
+          "under"
+        ],
+        "correct": "on",
+        "explanation": "天井に取り付けられているものには、意外にも'on'を使います。これは天井の表面に接触しているためです。日本語では「天井から」と方向で表現しますが、英語では接触面を基準にします。'on the ceiling'（天井に）、'on the floor'（床に）、'on the wall'（壁に）のように、表面への接触は全て'on'で統一されます。重力の方向に関わらず、接触している以上は'on'という法則をしっかり覚えておきましょう。"
+      },
+      {
+        "id": "je_prpl10",
+        "question": "The boat is _____ the bridge.",
+        "translation": "(ボートは橋の下にいます)",
+        "options": [
+          "under",
+          "on",
+          "in",
+          "at"
+        ],
+        "correct": "under",
+        "explanation": "'under'は「〜の下に」を意味する前置詞です。日本語の「下に」にほぼ対応します。'under the bridge'（橋の下に）で橋と接触していない下方の位置を表します。接触していれば'beneath'や'underneath'も使えますが、日常会話では'under'が最もよく使われます。対義語は'over'（〜の上に、接触なし）です。'on'と'under'の対をまとめて覚えると、位置関係の表現が格段に上達します。"
+      },
+      {
+        "id": "je_prpl11",
+        "question": "She is standing _____ front of the mirror.",
+        "translation": "(彼女は鏡の前に立っています)",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "by"
+        ],
+        "correct": "in",
+        "explanation": "'in front of'は「〜の前に」を意味する重要な前置詞句です。三語で一つの意味を成す複合前置詞です。反対は'behind'（後ろに）です。日本語の「前に」と異なり、英語では'in front of'という長い表現になります。'in front of the mirror'（鏡の前に）、'in front of the building'（建物の前に）のように使います。場所には'in front of'を、時間には'before'を使うという区別も大切なポイントです。"
+      },
+      {
+        "id": "je_prpl12",
+        "question": "The books are _____ the shelf.",
+        "translation": "(本は棚の上にあります)",
+        "options": [
+          "on",
+          "in",
+          "at",
+          "under"
+        ],
+        "correct": "on",
+        "explanation": "棚の上に物が載っている場合は'on the shelf'です。表面との接触を表す'on'の典型的な使い方です。ただし'in the shelf'（棚の中に）も文脈によっては使えます。開放型の棚なら'on'、扉付きの棚なら'in'が自然です。このように英語の前置詞は物理的な状況を細かく反映します。日本語では「棚に」で済みますが、英語では状況に応じた判断が求められます。日常的に最も使う表現の一つです。"
+      },
+      {
+        "id": "je_prpl13",
+        "question": "We arrived _____ the airport early.",
+        "translation": "(私たちは早く空港に着きました)",
+        "options": [
+          "at",
+          "in",
+          "on",
+          "to"
+        ],
+        "correct": "at",
+        "explanation": "'arrive'の後の前置詞は日本語話者にとって混乱しやすいポイントです。場所が建物や施設の場合は'arrive at'（〜に着く）、都市や国の場合は'arrive in'（〜に着く）を使います。'arrive at the airport'（空港に着く）、'arrive in Tokyo'（東京に着く）です。'arrive to'は誤りで、これは非常に多い間違いです。日本語では全て「〜に着く」で、場所の規模による区別がないため注意が必要です。"
+      },
+      {
+        "id": "je_prpl14",
+        "question": "There is a bird _____ the tree.",
+        "translation": "(木に鳥がいます)",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "under"
+        ],
+        "correct": "in",
+        "explanation": "木の中にいる鳥は'in the tree'です。これは日本語話者には意外かもしれません。「木の上に」と言いたくなりますが、鳥は木の枝や葉の間にいるので'in'を使います。ただし、木の表面に何かがついている場合は'on the tree'です。例えば、りんごが実っているのは'on the tree'ですが、鳥が止まっているのは'in the tree'です。英語の前置詞は物理的な認識を正確に反映するという良い例です。"
+      },
+      {
+        "id": "je_prpl15",
+        "question": "He is sitting _____ the floor.",
+        "translation": "(彼は床に座っています)",
+        "options": [
+          "on",
+          "in",
+          "at",
+          "by"
+        ],
+        "correct": "on",
+        "explanation": "床の上に座っている場合は'on the floor'です。床は平らな表面なので、接触を表す'on'が自然です。'on the floor'（床の上に）は日常生活で非常によく使われます。同様に'on the ground'（地面の上に）も同じパターンです。日本語では「床に」と言いますが、英語では表面との接触を明示的に'on'で表現します。椅子に座る場合は'on the chair'または'in the chair'（肘掛け椅子など深い椅子）と使い分けます。"
+      }
+    ]
+  },
+  {
+    "key": "prepositions_time",
+    "name": "Prepositions of Time",
+    "description": "時間を表す前置詞",
+    "iconName": "clock",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "je_prt1",
+        "question": "I wake up _____ 7 o'clock every day.",
+        "translation": "(私は毎日7時に起きます)",
+        "options": [
+          "at",
+          "on",
+          "in",
+          "by"
+        ],
+        "correct": "at",
+        "explanation": "特定の時刻を表すときは'at'を使います。'at 7 o'clock'（7時に）、'at noon'（正午に）、'at midnight'（深夜0時に）のようにピンポイントの時間です。日本語では全て「〜に」ですが、英語では時間の種類で前置詞を使い分けます。時刻='at'、曜日・日付='on'、月・年・季節='in'という基本ルールをまず覚えてください。これは英語の時間表現の最も重要な基礎ルールの一つです。"
+      },
+      {
+        "id": "je_prt2",
+        "question": "The meeting is _____ Monday.",
+        "translation": "(会議は月曜日です)",
+        "options": [
+          "on",
+          "at",
+          "in",
+          "by"
+        ],
+        "correct": "on",
+        "explanation": "曜日には前置詞'on'を使います。'on Monday'（月曜日に）、'on Friday'（金曜日に）、'on Christmas Day'（クリスマスの日に）のように、特定の日を指すときは常に'on'です。日本語の「月曜日に」の「に」は一つですが、英語では日にちと時刻で異なる前置詞を使います。'on Monday at 3 o'clock'のように一文で組み合わせることもできます。曜日には必ず'on'を使うことを徹底してください。"
+      },
+      {
+        "id": "je_prt3",
+        "question": "We go on vacation _____ August.",
+        "translation": "(私たちは8月に休暇に行きます)",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "for"
+        ],
+        "correct": "in",
+        "explanation": "月や年など、比較的長い期間を表すときは'in'を使います。'in August'（8月に）、'in 2024'（2024年に）、'in summer'（夏に）、'in the morning'（朝に）のように使います。英語の時間前置詞の三大ルール：時刻='at'、曜日・日付='on'、月・年・季節='in'を必ず覚えてください。日本語では全て「〜に」で統一されますが、英語ではこの区別が必須です。間違えると不自然に聞こえてしまいます。"
+      },
+      {
+        "id": "je_prt4",
+        "question": "I'll finish the report _____ Friday.",
+        "translation": "(金曜日までにレポートを終わらせます)",
+        "options": [
+          "by",
+          "until",
+          "on",
+          "in"
+        ],
+        "correct": "by",
+        "explanation": "'by'は「〜までに」という期限を表す前置詞です。'by Friday'は「金曜日までに（完了する）」という意味です。'until'は「〜まで（ずっと）」で継続を表すため、全く異なります。'I'll finish by Friday'（金曜日までに終わらせる＝期限）と'I'll wait until Friday'（金曜日まで待つ＝継続）の違いは重要です。日本語の「まで」と「までに」の違いに似ていますが、英語では前置詞自体を変えて区別します。"
+      },
+      {
+        "id": "je_prt5",
+        "question": "She has lived here _____ 2015.",
+        "translation": "(彼女は2015年からここに住んでいます)",
+        "options": [
+          "since",
+          "for",
+          "from",
+          "in"
+        ],
+        "correct": "since",
+        "explanation": "'since'は過去の特定の時点から現在まで続いていることを表す前置詞です。'since 2015'（2015年から）のように、開始時点を明示します。一方'for'は期間の長さを示し、'for 10 years'（10年間）のように使います。'since'は必ず現在完了形と共に使う点が重要で、'She has lived here since 2015'は「2015年からずっとここに住んでいる」という継続を表す完璧な例文です。起点='since'、期間='for'と覚えましょう。"
+      },
+      {
+        "id": "je_prt6",
+        "question": "We studied _____ three hours yesterday.",
+        "translation": "(昨日3時間勉強しました)",
+        "options": [
+          "for",
+          "since",
+          "during",
+          "in"
+        ],
+        "correct": "for",
+        "explanation": "'for'は期間の長さを表す前置詞です。'for three hours'（3時間）、'for two weeks'（2週間）、'for five years'（5年間）のように時間の長さを示します。'since'が「起点」を示すのに対し、'for'は「どれくらいの長さ」を示します。日本語の「〜間」に相当する表現です。'during'は「〜の間に（特定のイベント中）」で、期間の長さではなく出来事を指すため、混同しないよう注意してください。"
+      },
+      {
+        "id": "je_prt7",
+        "question": "I read a lot _____ the summer vacation.",
+        "translation": "(夏休みの間にたくさん読みました)",
+        "options": [
+          "during",
+          "for",
+          "while",
+          "in"
+        ],
+        "correct": "during",
+        "explanation": "'during'は特定の出来事やイベントの期間中を表す前置詞です。'during the summer vacation'（夏休みの間に）、'during the meeting'（会議中に）のように使います。'for'は「どれくらいの長さ」、'during'は「何の最中に」を表すという違いがあります。日本語の「〜の間に」に対応しますが、'during'の後には必ず名詞が来ます。'while'も「〜の間に」ですが、'while'の後には主語＋動詞の文が来る点で異なります。"
+      },
+      {
+        "id": "je_prt8",
+        "question": "The train leaves _____ ten minutes.",
+        "translation": "(電車は10分後に出発します)",
+        "options": [
+          "in",
+          "after",
+          "on",
+          "at"
+        ],
+        "correct": "in",
+        "explanation": "「今から〜後に」を表すときは意外にも'in'を使います。'in ten minutes'（10分後に）、'in an hour'（1時間後に）、'in two days'（2日後に）のように、現在から未来までの時間を表します。場所の'in'と同じ前置詞ですが意味は全く異なります。'after'は特定のイベントの後に使う前置詞で、'after the meeting'（会議の後に）のように使います。日常会話で頻出する時間表現の一つです。"
+      },
+      {
+        "id": "je_prt9",
+        "question": "I don't work _____ weekends.",
+        "translation": "(私は週末は働きません)",
+        "options": [
+          "on",
+          "at",
+          "in",
+          "for"
+        ],
+        "correct": "on",
+        "explanation": "'weekends'（週末）には'on'を使います。これは複数の日を表しているためです。'on weekends'（週末に）、'on Saturdays'（毎週土曜に）のように、曜日のルールが適用されます。ただし、イギリス英語では'at weekends'も使われます。アメリカ英語では'on weekends'が標準です。日本語では「週末に」と同じ「に」を使いますが、英語の前置詞は曜日ルールに従います。両方の形を知っておくと便利です。"
+      },
+      {
+        "id": "je_prt10",
+        "question": "She was born _____ March 15th.",
+        "translation": "(彼女は3月15日に生まれました)",
+        "options": [
+          "on",
+          "in",
+          "at",
+          "by"
+        ],
+        "correct": "on",
+        "explanation": "特定の日付には'on'を使います。'on March 15th'（3月15日に）、'on my birthday'（誕生日に）のように使います。ただし月だけの場合は'in March'（3月に）です。日付が入ると'on'に変わるのがルールです。日本語では「3月に」も「3月15日に」も同じ「に」ですが、英語では日付の有無で前置詞が変わります。誕生日を聞かれたときに正しく答えるための重要なルールなので、しっかり覚えておきましょう。"
+      },
+      {
+        "id": "je_prt11",
+        "question": "I always feel sleepy _____ the afternoon.",
+        "translation": "(私はいつも午後に眠くなります)",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "for"
+        ],
+        "correct": "in",
+        "explanation": "時間帯を表すときは基本的に'in'を使います。'in the morning'（朝に）、'in the afternoon'（午後に）、'in the evening'（夕方に）です。ただし'at night'（夜に）は例外で'at'を使います。これは英語学習者がよく間違えるポイントです。なぜ'in the night'ではなく'at night'なのかは歴史的な慣習によるもので、そのまま覚えるしかありません。朝・昼・夕方='in'、夜='at night'という法則を覚えてください。"
+      },
+      {
+        "id": "je_prt12",
+        "question": "I will call you _____ noon.",
+        "translation": "(正午に電話します)",
+        "options": [
+          "at",
+          "in",
+          "on",
+          "by"
+        ],
+        "correct": "at",
+        "explanation": "'noon'（正午）と'midnight'（深夜0時）には'at'を使います。これらは特定の時刻、つまりピンポイントの瞬間だからです。'at noon'（正午に）、'at midnight'（深夜0時に）は定型表現として覚えましょう。'in the noon'や'on noon'は誤りです。英語の時間前置詞は例外も含めてパターンで覚えるのが効率的です。特定の時刻や特定の瞬間には必ず'at'を使うという原則を押さえておいてください。"
+      },
+      {
+        "id": "je_prt13",
+        "question": "I haven't seen her _____ last Monday.",
+        "translation": "(先週の月曜日から彼女に会っていません)",
+        "options": [
+          "since",
+          "for",
+          "from",
+          "by"
+        ],
+        "correct": "since",
+        "explanation": "'since'は「〜以来」という過去の時点を示す前置詞です。現在完了形と組み合わせて「〜以来ずっと」の意味になります。'since last Monday'は「先週の月曜日以来」です。'from'も「〜から」ですが、'from'は開始点を示すだけで現在完了とは限りません。'from Monday to Friday'（月曜から金曜まで）のように範囲を示す場合に使います。'since'と'from'の使い分けは英語学習の重要なポイントです。"
+      },
+      {
+        "id": "je_prt14",
+        "question": "The store is open _____ 9 a.m. to 9 p.m.",
+        "translation": "(店は午前9時から午後9時まで営業しています)",
+        "options": [
+          "from",
+          "since",
+          "at",
+          "between"
+        ],
+        "correct": "from",
+        "explanation": "'from A to B'は「AからBまで」の範囲を表す定型パターンです。'from 9 a.m. to 9 p.m.'（午前9時から午後9時まで）のように時間の範囲を示します。'since'は「〜以来ずっと今まで」で現在完了と共に使いますが、'from'は単純な開始点を示します。'from Monday to Friday'（月曜から金曜まで）も同じパターンです。日本語の「〜から〜まで」に直接対応する表現で、日常会話やビジネスで頻繁に使います。"
+      },
+      {
+        "id": "je_prt15",
+        "question": "We need to leave _____ 8 o'clock at the latest.",
+        "translation": "(遅くとも8時までに出発する必要があります)",
+        "options": [
+          "by",
+          "until",
+          "at",
+          "before"
+        ],
+        "correct": "by",
+        "explanation": "'by'は「〜までに（期限）」を表します。'by 8 o'clock'は8時が期限で、それ以前に完了する必要があることを意味します。'until 8 o'clock'は「8時まで継続して」で状態が8時まで続くことを表します。'before'も「〜の前に」ですが、'by'には「期限」のニュアンスが特に強くあります。日本語の「までに」にぴったり対応するのが'by'です。ビジネスでも日常でも極めて頻繁に使われる必須表現です。"
+      }
+    ]
+  },
+  {
+    "key": "gerunds_infinitives",
+    "name": "Gerunds & Infinitives",
+    "description": "動名詞と不定詞の使い分け",
+    "iconName": "arrow.triangle.swap",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_gi1",
+        "question": "I enjoy _____ music.",
+        "translation": "(私は音楽を聴くことを楽しんでいます)",
+        "options": [
+          "listening to",
+          "to listen to",
+          "listen to",
+          "listened to"
+        ],
+        "correct": "listening to",
+        "explanation": "'enjoy'の後は必ず動名詞（-ing形）が来ます。'enjoy listening to music'が正解です。日本語では「聴くことを楽しむ」のように「〜こと」で表現しますが、英語では動詞によって動名詞（-ing）か不定詞（to＋動詞）かが決まります。'enjoy'は動名詞専用の動詞です。他にも'finish'、'avoid'、'mind'、'suggest'なども動名詞のみを取ります。この使い分けは暗記が必要な重要ポイントです。"
+      },
+      {
+        "id": "je_gi2",
+        "question": "She decided _____ abroad.",
+        "translation": "(彼女は留学することに決めました)",
+        "options": [
+          "to study",
+          "studying",
+          "study",
+          "studied"
+        ],
+        "correct": "to study",
+        "explanation": "'decide'の後は不定詞（to＋動詞の原形）が来ます。'decide to study'が正しい形です。不定詞を取る動詞には'want'、'hope'、'plan'、'promise'、'refuse'、'agree'などがあります。これらは「未来志向」の動詞という共通点があります。つまり、まだ実行していない行為についての意思決定を表します。動名詞を取る動詞は「過去・現在の経験」に関するものが多いという傾向を覚えましょう。"
+      },
+      {
+        "id": "je_gi3",
+        "question": "He stopped _____ a cigarette.",
+        "translation": "(彼はタバコを吸うために立ち止まった)",
+        "options": [
+          "to smoke",
+          "smoking",
+          "smoke",
+          "smoked"
+        ],
+        "correct": "to smoke",
+        "explanation": "'stop'は動名詞と不定詞で意味が大きく変わる重要な動詞です。'stop smoking'は「喫煙をやめる（習慣を断つ）」、'stop to smoke'は「〜するために立ち止まる」です。この文は「タバコを吸うために立ち止まった」なので'to smoke'が正解です。日本語の翻訳を手がかりに文脈を読み取ることが大切です。同様に意味が変わる動詞には'remember'や'forget'もあり、これらは試験でも頻出テーマです。"
+      },
+      {
+        "id": "je_gi4",
+        "question": "Would you mind _____ the window?",
+        "translation": "(窓を開けていただけますか？)",
+        "options": [
+          "opening",
+          "to open",
+          "open",
+          "opened"
+        ],
+        "correct": "opening",
+        "explanation": "'mind'の後は必ず動名詞が来ます。'Would you mind opening...'は丁寧な依頼表現です。直訳すると「開けることを気にしますか？」で、「いいえ（気にしません）」と答えれば「開けてもいい」です。日本語話者がつまずきやすいのは返答の仕方で、'No, not at all'が「どうぞ」にあたります。'Yes'と答えると「気にする＝やめて」という意味になるので要注意です。'mind'は動名詞のみを取る代表的動詞です。"
+      },
+      {
+        "id": "je_gi5",
+        "question": "I hope _____ you again soon.",
+        "translation": "(またすぐにお会いしたいです)",
+        "options": [
+          "to see",
+          "seeing",
+          "see",
+          "seen"
+        ],
+        "correct": "to see",
+        "explanation": "'hope'の後は不定詞（to＋動詞）を取ります。'hope to see'は「会えることを願う」という未来への願望を表します。'hope'は典型的な「未来志向」の動詞で、まだ実現していないことへの期待を表すため不定詞と相性がいいのです。同様の動詞：'wish to'、'expect to'、'aim to'。日本語では「会いたい」と簡潔に表現しますが、英語では'hope to see'と構造的に未来への方向性を示す必要があります。"
+      },
+      {
+        "id": "je_gi6",
+        "question": "They avoided _____ about the problem.",
+        "translation": "(彼らはその問題について話すことを避けた)",
+        "options": [
+          "talking",
+          "to talk",
+          "talk",
+          "talked"
+        ],
+        "correct": "talking",
+        "explanation": "'avoid'は動名詞のみを取る動詞です。'avoid talking'（話すことを避ける）が正解です。動名詞を取る代表的な動詞リストを覚えることが重要です：enjoy、finish、avoid、mind、suggest、consider、practice、deny、risk、keep、quit、postpone。覚え方として'MEGA FAPS'（mind、enjoy、give up、avoid、finish、admit、postpone、suggest）という頭文字も有名です。繰り返し書いて練習するのが最も効果的です。"
+      },
+      {
+        "id": "je_gi7",
+        "question": "She promised _____ on time.",
+        "translation": "(彼女は時間通りに来ると約束しました)",
+        "options": [
+          "to come",
+          "coming",
+          "come",
+          "came"
+        ],
+        "correct": "to come",
+        "explanation": "'promise'の後は不定詞を取ります。'promise to come'（来ると約束する）が正解です。'promise'は強い意志・約束を表す動詞で、未来の行為についての宣言です。不定詞を取る動詞の共通点は「これからのこと」に関する意思を表すことです。'promise'、'agree'、'refuse'、'decide'、'offer'など、全て未来の行動に対する態度を表しています。日本語の「〜すると約束する」をそのまま英語構文に変換できます。"
+      },
+      {
+        "id": "je_gi8",
+        "question": "I remember _____ the door before leaving.",
+        "translation": "(出かける前にドアに鍵をかけたことを覚えています)",
+        "options": [
+          "locking",
+          "to lock",
+          "lock",
+          "locked"
+        ],
+        "correct": "locking",
+        "explanation": "'remember'は動名詞と不定詞で意味が変わる重要な動詞です。'remember locking'は「鍵をかけたことを覚えている（過去の行為の記憶）」、'remember to lock'は「鍵をかけることを忘れずにする（これからの行為）」です。この文では「かけたことを覚えている」なので動名詞'locking'が正解です。'forget'も同じパターンです。過去の記憶＝動名詞、未来の予定＝不定詞という法則を確実にマスターしてください。"
+      },
+      {
+        "id": "je_gi9",
+        "question": "We considered _____ to a new city.",
+        "translation": "(新しい街に引っ越すことを検討しました)",
+        "options": [
+          "moving",
+          "to move",
+          "move",
+          "moved"
+        ],
+        "correct": "moving",
+        "explanation": "'consider'は動名詞のみを取る動詞です。'consider moving'（引っ越すことを検討する）が正解です。'consider'は「じっくり考える、検討する」という意味で、既にある選択肢について考えるニュアンスがあるため動名詞と組み合わせます。'consider to move'は文法的に誤りで、日本語話者がよく犯す間違いの一つです。ビジネスでも日常でも頻出するため、'consider -ing'のパターンを必ず覚えてください。"
+      },
+      {
+        "id": "je_gi10",
+        "question": "He refused _____ the contract.",
+        "translation": "(彼は契約書に署名することを拒否した)",
+        "options": [
+          "to sign",
+          "signing",
+          "sign",
+          "signed"
+        ],
+        "correct": "to sign",
+        "explanation": "'refuse'は不定詞のみを取る動詞です。'refuse to sign'（署名することを拒否する）が正解です。'refuse'は「断る、拒否する」という強い意思を表す動詞で、未来の行動を拒絶するため不定詞と組み合わせます。似た意味の動詞'decline'も不定詞を取ります。「拒否する」系の動詞は全て不定詞を取ると覚えても良いでしょう。'refuse signing'は誤りです。動詞と動名詞・不定詞の組み合わせは体系的に学ぶのが上達への近道です。"
+      },
+      {
+        "id": "je_gi11",
+        "question": "_____ is good exercise.",
+        "translation": "(泳ぐことは良い運動です)",
+        "options": [
+          "Swimming",
+          "To swim",
+          "Swim",
+          "Swam"
+        ],
+        "correct": "Swimming",
+        "explanation": "主語の位置に来る場合、動名詞と不定詞の両方が使えますが、動名詞の方が自然で一般的です。'Swimming is good exercise'は「泳ぐことは良い運動だ」という一般的な事実を述べています。不定詞'To swim is good exercise'も文法的には正しいですが、改まった印象を与えます。日常会話では動名詞を主語にするのが普通です。日本語の「〜すること」にあたる表現で、英語の文をつくる基本技術として大切な知識です。"
+      },
+      {
+        "id": "je_gi12",
+        "question": "She suggested _____ to the beach.",
+        "translation": "(彼女はビーチに行くことを提案した)",
+        "options": [
+          "going",
+          "to go",
+          "go",
+          "gone"
+        ],
+        "correct": "going",
+        "explanation": "'suggest'は動名詞のみを取る動詞です。'suggest going'（行くことを提案する）が正解です。注意すべき点：'suggest someone to go'は誤りです。英語では'suggest that someone go'（仮定法現在）または'suggest going'と言います。日本語の「〜することを提案する」をそのまま英語にするとき、不定詞を使ってしまう間違いは非常に多いです。'suggest'の後は必ず動名詞というルールを鉄則として覚えてください。"
+      },
+      {
+        "id": "je_gi13",
+        "question": "I can't afford _____ a new car.",
+        "translation": "(新しい車を買う余裕がありません)",
+        "options": [
+          "to buy",
+          "buying",
+          "buy",
+          "bought"
+        ],
+        "correct": "to buy",
+        "explanation": "'afford'は不定詞のみを取る動詞です。'can't afford to buy'（買う余裕がない）が正解です。'afford'は通常'can/could'と共に使われ、経済的・時間的な余裕を表します。不定詞を取るのは「まだ実行していない行為」に対する能力を表すためです。'afford buying'は誤りです。日本語の「〜する余裕がある／ない」に対応する重要な表現で、日常会話やビジネスシーンで非常に頻繁に使われます。"
+      },
+      {
+        "id": "je_gi14",
+        "question": "He keeps _____ the same mistake.",
+        "translation": "(彼は同じ間違いを繰り返し続けている)",
+        "options": [
+          "making",
+          "to make",
+          "make",
+          "made"
+        ],
+        "correct": "making",
+        "explanation": "'keep'は動名詞のみを取る動詞です。'keep making'（し続ける）が正解です。'keep'は動作の反復や継続を表し、「繰り返しやっている」という進行中のニュアンスが強いため動名詞と相性が良いです。'keep on making'（さらに強調）も同じ意味で使えます。'keep to make'は誤りです。日本語の「〜し続ける」にあたる表現で、習慣的な行動を描写するときに非常に便利で実用的な構文です。"
+      },
+      {
+        "id": "je_gi15",
+        "question": "Don't forget _____ the lights off.",
+        "translation": "(電気を消すことを忘れないでね)",
+        "options": [
+          "to turn",
+          "turning",
+          "turn",
+          "turned"
+        ],
+        "correct": "to turn",
+        "explanation": "'forget'は動名詞と不定詞で意味が変わる動詞です。'forget to turn'は「消すことを忘れないで（これからの行為）」、'forget turning'は「消したことを忘れる（過去の行為の記憶）」です。この文は「これから消すことを忘れないで」という指示なので不定詞'to turn'が正解です。'remember'と同じルール：未来の行為＝不定詞、過去の記憶＝動名詞。この区別は中級英語の最重要テーマの一つです。"
+      }
+    ]
+  },
+  {
+    "key": "phrasal_verbs_basic",
+    "name": "Phrasal Verbs (Basic)",
+    "description": "基本的な句動詞",
+    "iconName": "arrow.up.right.circle",
+    "color": "#fb923c",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_pvb1",
+        "question": "Please turn _____ the light. It's too dark.",
+        "translation": "(電気をつけてください。暗すぎます)",
+        "options": [
+          "on",
+          "off",
+          "up",
+          "down"
+        ],
+        "correct": "on",
+        "explanation": "'turn on'は「（電気や機械を）つける、オンにする」という意味の句動詞です。反対は'turn off'（消す）です。日本語では「つける」一語ですが、英語では'turn'＋'on/off'の組み合わせで意味が決まります。句動詞は英語の最も実用的な表現群の一つで、日常会話では一語の動詞より頻繁に使われます。'turn on the light'と'turn the light on'のどちらの語順も可能です。"
+      },
+      {
+        "id": "je_pvb2",
+        "question": "I need to look _____ this word in the dictionary.",
+        "translation": "(この単語を辞書で調べなければなりません)",
+        "options": [
+          "up",
+          "on",
+          "in",
+          "out"
+        ],
+        "correct": "up",
+        "explanation": "'look up'は「（情報を）調べる、検索する」という意味の句動詞です。辞書やインターネットなどで情報を探す場合に使います。'look up a word'（単語を調べる）、'look up the schedule'（スケジュールを確認する）のように使います。日本語の「調べる」に相当しますが、'look'だけでは「見る」で、'up'が加わることで全く別の意味になります。これが句動詞の面白さであり難しさでもあるのです。"
+      },
+      {
+        "id": "je_pvb3",
+        "question": "Can you pick _____ some milk on your way home?",
+        "translation": "(帰りに牛乳を買ってきてくれますか？)",
+        "options": [
+          "up",
+          "on",
+          "in",
+          "out"
+        ],
+        "correct": "up",
+        "explanation": "'pick up'は多義的な句動詞で、「途中で買う、拾い上げる、車で迎えに行く」など様々な意味があります。ここでは「帰りがけに買って帰る」という意味です。他の使い方：'pick up a friend'（友人を迎えに行く）、'pick up a book from the floor'（床から本を拾い上げる）。日本語にはない「ついでに入手する」というニュアンスを含む非常に便利な表現で、日常会話に欠かせません。"
+      },
+      {
+        "id": "je_pvb4",
+        "question": "I woke _____ at 6 a.m. today.",
+        "translation": "(今日は朝6時に目が覚めました)",
+        "options": [
+          "up",
+          "on",
+          "out",
+          "in"
+        ],
+        "correct": "up",
+        "explanation": "'wake up'は「目が覚める、起きる」という最も基本的な句動詞の一つです。'get up'（ベッドから起き上がる）とは微妙に異なり、'wake up'は意識が戻る瞬間を指し、'get up'は実際にベッドから出ることを指します。'I woke up at 6 but didn't get up until 7'（6時に目覚めたが7時まで起き上がらなかった）のように使い分けます。日本語の「起きる」は両方を含みますが英語では区別します。"
+      },
+      {
+        "id": "je_pvb5",
+        "question": "She gave _____ smoking last year.",
+        "translation": "(彼女は去年喫煙をやめました)",
+        "options": [
+          "up",
+          "in",
+          "on",
+          "out"
+        ],
+        "correct": "up",
+        "explanation": "'give up'は「やめる、あきらめる」という意味の句動詞です。'give up smoking'（喫煙をやめる）、'give up hope'（希望をあきらめる）のように使います。'quit'と似た意味ですが、'give up'には努力した上であきらめるニュアンスが含まれます。日本語の「やめる」「あきらめる」に相当し、日常英語では欠かせない表現です。句動詞は一つずつ確実に覚えていけば、英語表現の幅が大きく広がります。"
+      },
+      {
+        "id": "je_pvb6",
+        "question": "Please sit _____.",
+        "translation": "(お座りください)",
+        "options": [
+          "down",
+          "up",
+          "on",
+          "in"
+        ],
+        "correct": "down",
+        "explanation": "'sit down'は「座る」という最も基本的な句動詞です。反対は'stand up'（立ち上がる）です。'down'は下方向の動きを表し、座る動作そのものを示します。'Please sit down'は丁寧な指示として使えますが、よりカジュアルには'Have a seat'や'Take a seat'とも言えます。日本語の「座ってください」にそのまま対応する表現です。'sit'だけでも「座る」ですが、'sit down'の方がより自然で一般的な英語表現です。"
+      },
+      {
+        "id": "je_pvb7",
+        "question": "We need to find _____ what happened.",
+        "translation": "(何が起きたか調べる必要があります)",
+        "options": [
+          "out",
+          "up",
+          "in",
+          "on"
+        ],
+        "correct": "out",
+        "explanation": "'find out'は「発見する、突き止める、調べて知る」という意味の句動詞です。'find'だけでも「見つける」ですが、'find out'は情報や事実を発見するニュアンスが加わります。'find out what happened'（何が起きたか知る）、'find out the truth'（真実を突き止める）のように使います。物理的な物を見つけるのは'find'、情報や事実を解明するのは'find out'と使い分けましょう。非常によく使われる重要表現です。"
+      },
+      {
+        "id": "je_pvb8",
+        "question": "I'm looking _____ to the weekend.",
+        "translation": "(週末を楽しみにしています)",
+        "options": [
+          "forward",
+          "up",
+          "out",
+          "back"
+        ],
+        "correct": "forward",
+        "explanation": "'look forward to'は「〜を楽しみにしている」という意味の重要な句動詞です。注意すべき点は'to'の後に名詞または動名詞が来ることです。'look forward to the weekend'（週末が楽しみ）、'look forward to seeing you'（お会いできるのが楽しみ）です。'look forward to see'（不定詞）は誤りで、日本語話者が非常によく間違えるポイントです。メールの結びにも'I look forward to hearing from you'と頻繁に使われます。"
+      },
+      {
+        "id": "je_pvb9",
+        "question": "He takes _____ his father.",
+        "translation": "(彼は父親に似ています)",
+        "options": [
+          "after",
+          "on",
+          "up",
+          "in"
+        ],
+        "correct": "after",
+        "explanation": "'take after'は「（家族に）似ている」という意味の句動詞です。外見や性格が親族に似ている場合に使います。'take after his father'（父親に似ている）のように使います。'look like'（見た目が似ている）とは異なり、'take after'は性格や行動パターンも含めた類似性を表します。ただし血縁関係がある場合にのみ使う表現です。友人同士の類似には'look alike'や'resemble'を使います。日本語の「〜に似ている」に相当します。"
+      },
+      {
+        "id": "je_pvb10",
+        "question": "Could you turn _____ the music? It's too loud.",
+        "translation": "(音楽の音量を下げてもらえますか？)",
+        "options": [
+          "down",
+          "off",
+          "up",
+          "on"
+        ],
+        "correct": "down",
+        "explanation": "'turn down'は「（音量を）下げる」という意味の句動詞です。反対は'turn up'（音量を上げる）。もう一つの重要な意味として「断る」があり、'turn down an offer'（申し出を断る）のように使います。同じ句動詞で全く異なる意味を持つのは英語の特徴で、文脈から判断する必要があります。ここでは'It's too loud'（うるさすぎる）という文脈から音量を下げる意味だとわかります。日常会話で頻出の表現です。"
+      },
+      {
+        "id": "je_pvb11",
+        "question": "I ran _____ an old friend at the store.",
+        "translation": "(お店で旧友にばったり会いました)",
+        "options": [
+          "into",
+          "on",
+          "up",
+          "out"
+        ],
+        "correct": "into",
+        "explanation": "'run into'は「（偶然）出会う、ばったり会う」という意味の句動詞です。'run into an old friend'（旧友に偶然会う）のように使います。物理的に「ぶつかる」という意味もあります。偶然の出会いを表す他の表現には'bump into'や'come across'もあります。計画された再会には使わず、あくまで予期しない出会いに使う点がポイントです。日本語の「ばったり会う」にぴったりの表現で、日常英語でよく耳にします。"
+      },
+      {
+        "id": "je_pvb12",
+        "question": "She put _____ her coat because it was cold.",
+        "translation": "(寒かったので彼女はコートを着ました)",
+        "options": [
+          "on",
+          "off",
+          "up",
+          "in"
+        ],
+        "correct": "on",
+        "explanation": "'put on'は「（衣類を）着る、身につける」という意味の句動詞です。反対は'take off'（脱ぐ）です。'put on a coat'（コートを着る）、'take off shoes'（靴を脱ぐ）のように対で覚えると効率的です。'wear'（着ている状態）との違いも重要です：'put on'は「着る動作」、'wear'は「着ている状態」です。'She is putting on her coat'（今着ている最中）と'She is wearing a coat'（着ている状態）ではニュアンスが異なります。"
+      },
+      {
+        "id": "je_pvb13",
+        "question": "The plane took _____ at exactly 3 p.m.",
+        "translation": "(飛行機はちょうど午後3時に離陸しました)",
+        "options": [
+          "off",
+          "on",
+          "up",
+          "in"
+        ],
+        "correct": "off",
+        "explanation": "'take off'は「離陸する」と「脱ぐ」という二つの主な意味がある句動詞です。飛行機の場合は「離陸する」、衣類の場合は「脱ぐ」です。'The plane took off'（飛行機が離陸した）、'He took off his jacket'（ジャケットを脱いだ）。主語が飛行機なら「離陸」、衣類が目的語なら「脱ぐ」と明確に区別できます。反対語は着陸='land'、着用='put on'です。文脈による意味判断の良い練習になる句動詞です。"
+      },
+      {
+        "id": "je_pvb14",
+        "question": "I'll call you _____ later.",
+        "translation": "(あとで折り返し電話します)",
+        "options": [
+          "back",
+          "up",
+          "in",
+          "on"
+        ],
+        "correct": "back",
+        "explanation": "'call back'は「折り返し電話する、かけ直す」という意味の句動詞です。'I'll call you back'は「あとでかけ直します」という日常的な表現です。電話を受けた後に返す場合に使います。似た表現に'call up'（電話をかける）がありますが、'call back'は「返す」というニュアンスが含まれます。日本語の「折り返す」「かけ直す」に対応し、ビジネスでも日常でも極めて頻繁に使います。電話応対の基本表現として必須です。"
+      },
+      {
+        "id": "je_pvb15",
+        "question": "We should go _____ this report before the meeting.",
+        "translation": "(会議の前にこのレポートを確認すべきです)",
+        "options": [
+          "over",
+          "up",
+          "in",
+          "on"
+        ],
+        "correct": "over",
+        "explanation": "'go over'は「確認する、見直す、復習する」という意味の句動詞です。'go over a report'（レポートを確認する）、'go over the notes'（ノートを復習する）のように使います。'review'（レビューする）と似た意味ですが、'go over'はより口語的で日常的な表現です。日本語の「確認する」「おさらいする」に相当します。ビジネスシーンでは'Let's go over the agenda'（議題を確認しましょう）のような使い方が非常によくあります。"
+      }
+    ]
+  },
+  {
+    "key": "question_tags",
+    "name": "Question Tags",
+    "description": "付加疑問文",
+    "iconName": "questionmark.circle",
+    "color": "#22d3ee",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_qt1",
+        "question": "She is a teacher, _____ she?",
+        "translation": "(彼女は先生ですよね？)",
+        "options": [
+          "isn't",
+          "doesn't",
+          "wasn't",
+          "won't"
+        ],
+        "correct": "isn't",
+        "explanation": "付加疑問文は日本語の「〜ですよね？」「〜でしょう？」に相当する便利な表現です。基本ルール：肯定文には否定の付加疑問、否定文には肯定の付加疑問をつけます。'She is a teacher'は肯定文なので否定の'isn't she?'をつけます。動詞に合わせて助動詞を選ぶことが大切です。be動詞の文にはbe動詞の否定形を使います。日本語では「よね？」で済みますが、英語では主語と動詞に応じて形を変える必要があります。"
+      },
+      {
+        "id": "je_qt2",
+        "question": "You like coffee, _____ you?",
+        "translation": "(コーヒーが好きですよね？)",
+        "options": [
+          "don't",
+          "aren't",
+          "isn't",
+          "won't"
+        ],
+        "correct": "don't",
+        "explanation": "一般動詞の場合、付加疑問にはdo/does/didを使います。'You like coffee'は現在形の一般動詞なので'don't you?'が正解です。be動詞の文ならbe動詞を使い、一般動詞の文ならdo/does/didを使うというルールです。主語が'you'なので'don't'になります。もし'She likes coffee'なら'doesn't she?'になります。付加疑問文は相手の同意を求める表現として会話で非常に頻繁に使われる重要な文法項目です。"
+      },
+      {
+        "id": "je_qt3",
+        "question": "They went to Paris, _____ they?",
+        "translation": "(彼らはパリに行きましたよね？)",
+        "options": [
+          "didn't",
+          "don't",
+          "weren't",
+          "haven't"
+        ],
+        "correct": "didn't",
+        "explanation": "過去形の一般動詞には'didn't'を使います。'went'は'go'の過去形なので、付加疑問は'didn't they?'です。ポイントは付加疑問でも動詞を原形に戻さないこと——それは既にdid/didn'tが時制を示しているためです。日本語では「行きましたよね？」と単純ですが、英語では主文の時制と動詞の種類に合わせて正しく付加疑問を作らなければなりません。過去形の一般動詞には常に'didn't'を使ってください。"
+      },
+      {
+        "id": "je_qt4",
+        "question": "He can swim, _____ he?",
+        "translation": "(彼は泳げますよね？)",
+        "options": [
+          "can't",
+          "doesn't",
+          "isn't",
+          "won't"
+        ],
+        "correct": "can't",
+        "explanation": "助動詞が使われている文では、その助動詞の否定形を付加疑問に使います。'He can swim'の助動詞は'can'なので否定形'can't he?'が正解です。同様に'She will come'→'won't she?'、'They should go'→'shouldn't they?'となります。助動詞の文では'do/does/did'は使いません。助動詞そのものを使うのがルールです。日本語では全て「〜よね？」で処理できますが、英語では使用されている助動詞に正確に合わせます。"
+      },
+      {
+        "id": "je_qt5",
+        "question": "You haven't finished yet, _____ you?",
+        "translation": "(まだ終わっていないんですよね？)",
+        "options": [
+          "have",
+          "haven't",
+          "don't",
+          "did"
+        ],
+        "correct": "have",
+        "explanation": "否定文には肯定の付加疑問をつけます。'You haven't finished'は否定文なので、肯定の'have you?'が正解です。基本ルールの逆パターン：肯定文→否定タグ、否定文→肯定タグです。'haven't you?'にすると否定＋否定になり文法的に誤りです。日本語では「終わっていないんですよね？」と否定のまま確認しますが、英語では必ず主文と反対の極性（肯定と否定）にする必要がある点に注意してください。"
+      },
+      {
+        "id": "je_qt6",
+        "question": "It's a beautiful day, _____ it?",
+        "translation": "(いい天気ですね？)",
+        "options": [
+          "isn't",
+          "doesn't",
+          "wasn't",
+          "won't"
+        ],
+        "correct": "isn't",
+        "explanation": "'It's'は'It is'の短縮形です。肯定文でbe動詞を使っているので付加疑問は'isn't it?'になります。天気の話題は英語のスモールトーク（雑談）の定番で、'Nice day, isn't it?'のような表現は日常的に使われます。付加疑問文は単なる文法項目ではなく、コミュニケーションを円滑にする潤滑油としてとても重要です。相手との会話を自然に始めたり続けたりする効果があるため、積極的に使いこなしましょう。"
+      },
+      {
+        "id": "je_qt7",
+        "question": "She won't be late, _____ she?",
+        "translation": "(彼女は遅れないですよね？)",
+        "options": [
+          "will",
+          "won't",
+          "doesn't",
+          "isn't"
+        ],
+        "correct": "will",
+        "explanation": "'won't'は'will not'の短縮形で否定です。否定文には肯定の付加疑問をつけるので'will she?'が正解です。未来形'will'を使った文の付加疑問パターンです。'She will come, won't she?'（肯定→否定）と'She won't come, will she?'（否定→肯定）を比較して覚えましょう。イントネーションも重要で、語尾を下げれば確認、上げれば本当の質問になります。日常会話で頻繁にこのパターンが登場します。"
+      },
+      {
+        "id": "je_qt8",
+        "question": "Let's go to the park, _____ we?",
+        "translation": "(公園に行きましょうよ？)",
+        "options": [
+          "shall",
+          "will",
+          "don't",
+          "aren't"
+        ],
+        "correct": "shall",
+        "explanation": "'Let's'で始まる文の付加疑問は特殊で、'shall we?'を使います。これは例外ルールとして覚える必要があります。'Let's go, shall we?'は提案に同意を求める表現です。通常の肯定・否定の反転ルールとは異なり、'Let's'専用のタグなのです。日本語の「〜しましょうよ」に相当する自然な誘いの表現です。'Let's have lunch, shall we?'のように使います。この特殊パターンは試験でもよく出題される重要ポイントです。"
+      },
+      {
+        "id": "je_qt9",
+        "question": "Nobody called, _____ they?",
+        "translation": "(誰も電話してきませんでしたよね？)",
+        "options": [
+          "did",
+          "didn't",
+          "don't",
+          "were"
+        ],
+        "correct": "did",
+        "explanation": "'nobody'、'nothing'、'no one'などの否定語を含む文は意味的に否定文です。そのため肯定の付加疑問をつけます。代名詞の選択にも注意してください：'nobody'は三人称単数ですが、付加疑問では'they'を使うのが現代英語の慣例です。'Nobody called, did they?'が自然な形です。'did he?'や'did she?'ではなく'they'を使うのは、性別不明の場合の汎用代名詞としての用法を反映しています。"
+      },
+      {
+        "id": "je_qt10",
+        "question": "You're coming to the party, _____ you?",
+        "translation": "(パーティーに来ますよね？)",
+        "options": [
+          "aren't",
+          "don't",
+          "isn't",
+          "won't"
+        ],
+        "correct": "aren't",
+        "explanation": "'You're coming'は現在進行形で'You are coming'の短縮形です。be動詞'are'の否定形'aren't'を付加疑問に使います。現在進行形が未来の予定を表す用法で、'coming to the party'は「パーティーに来る予定」という意味です。付加疑問は文の主動詞（ここではbe動詞'are'）に基づいて作ります。進行形の場合は常にbe動詞の否定・肯定タグになるというルールを覚えておきましょう。期待を込めた確認表現として自然です。"
+      },
+      {
+        "id": "je_qt11",
+        "question": "There is a problem, _____ there?",
+        "translation": "(問題がありますよね？)",
+        "options": [
+          "isn't",
+          "doesn't",
+          "hasn't",
+          "won't"
+        ],
+        "correct": "isn't",
+        "explanation": "'There is/are'構文の付加疑問では'there'をそのまま主語として使います。'There is a problem, isn't there?'が正解です。'isn't it?'ではなく'isn't there?'であることに注意してください。'There are many people, aren't there?'も同様のパターンです。'there'を含む構文は特殊で、付加疑問でも'there'を繰り返します。この点は日本語話者がよく間違えるポイントなので、パターンとしてしっかり練習しておきましょう。"
+      },
+      {
+        "id": "je_qt12",
+        "question": "He has already left, _____ he?",
+        "translation": "(彼はもう出発しましたよね？)",
+        "options": [
+          "hasn't",
+          "doesn't",
+          "didn't",
+          "isn't"
+        ],
+        "correct": "hasn't",
+        "explanation": "現在完了形'has left'の付加疑問は'hasn't he?'です。'has'は助動詞として機能しているためその否定形'hasn't'を使います。ここでの'has'は「持っている」の意味ではなく、完了形を作る助動詞です。注意点：'He has a car'（所有）の場合は、イギリス英語では'hasn't he?'、アメリカ英語では'doesn't he?'のように方言差があります。ただし完了形の'has/have'の場合は常に'hasn't/haven't'で統一されます。"
+      },
+      {
+        "id": "je_qt13",
+        "question": "I am right, _____ I?",
+        "translation": "(私は正しいですよね？)",
+        "options": [
+          "aren't",
+          "amn't",
+          "am not",
+          "isn't"
+        ],
+        "correct": "aren't",
+        "explanation": "'I am'の付加疑問は特殊なケースです。論理的には'amn't I?'ですが、この形は標準英語では使われず（スコットランド英語を除く）、代わりに'aren't I?'を使います。これは文法のイレギュラーとして覚えるしかありません。'I am right, aren't I?'が正解です。'am I not?'もフォーマルな場面では使えますが、日常会話では'aren't I?'が圧倒的に一般的です。この例外ルールは試験でも頻出する重要トピックです。"
+      },
+      {
+        "id": "je_qt14",
+        "question": "She rarely comes here, _____ she?",
+        "translation": "(彼女はめったにここに来ませんよね？)",
+        "options": [
+          "does",
+          "doesn't",
+          "is",
+          "isn't"
+        ],
+        "correct": "does",
+        "explanation": "'rarely'（めったに〜ない）は準否定語で、文を意味的に否定にします。そのため肯定の付加疑問'does she?'を使います。他の準否定語：'hardly'（ほとんど〜ない）、'seldom'（めったに〜ない）、'barely'（かろうじて）、'scarcely'（ほとんど〜ない）。これらはすべて否定の意味を持つため肯定タグをつけます。'She rarely comes, does she?'が正しく、'doesn't she?'にすると二重否定として文法的に誤りになります。"
+      },
+      {
+        "id": "je_qt15",
+        "question": "You'd better hurry, _____ you?",
+        "translation": "(急いだ方がいいですよね？)",
+        "options": [
+          "hadn't",
+          "wouldn't",
+          "shouldn't",
+          "didn't"
+        ],
+        "correct": "hadn't",
+        "explanation": "'You'd better'は'You had better'の短縮形です。よって付加疑問は'hadn't you?'になります。'had better'は強い助言を表す表現で、'should'より強いニュアンスがあります。'would rather'と混同しやすいですが、'You'd rather go, wouldn't you?'（むしろ行きたいでしょう？）では'wouldn't'を使います。'had better'='hadn't'、'would rather'='wouldn't'と正確に区別することが重要な文法ポイントです。"
+      }
+    ]
   }
 ]
