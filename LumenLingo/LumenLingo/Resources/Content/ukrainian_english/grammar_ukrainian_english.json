@@ -7788,5 +7788,1030 @@
         "explanation": "THE THING THAT = ще один спосіб створити cleft-подібну конструкцію. 'THE THING THAT worries me IS his health'. Варіанти: 'The thing that...', 'The person who...', 'The place where...', 'The reason why...'. Всі працюють як pseudo-cleft. 'The person who helped me was a stranger'. 'The reason why I left was the noise'. В розмовній часто: 'The thing is...' (справа в тому, що...) — скорочений варіант без THAT. 'The thing is, I don't have enough money' — дуже поширений вступ до пояснення. В українській: 'справа в тому, що...', 'річ у тім, що...'."
       }
     ]
+  },
+  {
+    "key": "inversion",
+    "name": "Inversion",
+    "description": "Інверсія (зворотний порядок слів)",
+    "iconName": "arrow.triangle.swap",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ue_inv1",
+        "question": "Never _____ such a beautiful sunset.",
+        "translation": "(Ніколи я не бачив такого гарного заходу сонця.)",
+        "options": [
+          "have I seen",
+          "I have seen",
+          "I saw",
+          "did I saw"
+        ],
+        "correct": "have I seen",
+        "explanation": "ІНВЕРСІЯ З NEGATIVE ADVERBS: Коли речення починається з негативного прислівника (NEVER, RARELY, SELDOM, HARDLY), підмет і допоміжне дієслово міняються місцями. 'Never HAVE I SEEN' замість звичайного 'I have never seen'. Це створює емфатичний (підсилений) ефект — немов поетичне чи урочисте мовлення. Інші приклади: 'Rarely have I felt so happy', 'Seldom does she complain'. В українській інверсія теж існує: 'Ніколи я не бачив' → 'Ніколи не бачив я'. Запам'ятайте: негатив + допоміжне + підмет + основне дієслово."
+      },
+      {
+        "id": "ue_inv2",
+        "question": "Hardly _____ the door when the phone rang.",
+        "translation": "(Ледве я зачинив двері, як задзвонив телефон.)",
+        "options": [
+          "had I closed",
+          "I had closed",
+          "I closed",
+          "did I close"
+        ],
+        "correct": "had I closed",
+        "explanation": "HARDLY...WHEN: Конструкція 'Hardly had + S + V3 when...' означає 'ледве... як'. Інверсія обов'язкова після HARDLY на початку речення. 'Hardly HAD I CLOSED the door when...' = 'Ледве я зачинив двері, як...'. Використовується Past Perfect, бо одна дія передувала іншій. Аналогічні конструкції: 'Scarcely had I arrived when...', 'No sooner had I sat down than...'. Зверніть увагу: HARDLY/SCARCELY + WHEN, але NO SOONER + THAN. В українській: 'Ледве... як', 'Тільки-но... як'. Це формальний, літературний стиль."
+      },
+      {
+        "id": "ue_inv3",
+        "question": "Not only _____ English, but she also speaks French.",
+        "translation": "(Вона не тільки розмовляє англійською, а й французькою.)",
+        "options": [
+          "does she speak",
+          "she speaks",
+          "she does speak",
+          "speaks she"
+        ],
+        "correct": "does she speak",
+        "explanation": "NOT ONLY...BUT ALSO: Парна конструкція 'Not only does + S + V, but (S) also + V'. Інверсія відбувається ТІЛЬКИ в першій частині! 'Not only DOES SHE SPEAK English, but she also speaks French'. Звичайний порядок: 'She not only speaks English but also French'. NOT ONLY на початку створює драматичний ефект — як риторичний прийом. Інші приклади: 'Not only did he apologize, but he also bought flowers'. В українській: 'Не лише... а й...' — інверсія не потрібна, але підсилення теж є."
+      },
+      {
+        "id": "ue_inv4",
+        "question": "Only after the exam _____ how difficult it was.",
+        "translation": "(Лише після іспиту я зрозумів, наскільки це було складно.)",
+        "options": [
+          "did I realize",
+          "I realized",
+          "I did realize",
+          "realized I"
+        ],
+        "correct": "did I realize",
+        "explanation": "ONLY + ADVERBIAL: Коли речення починається з ONLY + прислівникова фраза (only after, only when, only then, only by), відбувається інверсія в головному реченні. 'Only after the exam DID I REALIZE...' = 'Лише після іспиту я зрозумів...'. Інші приклади: 'Only when I arrived did I notice', 'Only then did she understand', 'Only by working hard can you succeed'. Важливо: інверсія в ГОЛОВНОМУ, не в підрядному! 'Only after she LEFT (нормальний порядок) did she REALIZE (інверсія)'. В українській: 'Лише тоді', 'Тільки після' — підсилення без інверсії."
+      },
+      {
+        "id": "ue_inv5",
+        "question": "Under no circumstances _____ leave the building.",
+        "translation": "(За жодних обставин ви не повинні залишати будівлю.)",
+        "options": [
+          "should you",
+          "you should",
+          "you shouldn't",
+          "shouldn't you"
+        ],
+        "correct": "should you",
+        "explanation": "UNDER NO CIRCUMSTANCES: Ця фраза = 'за жодних обставин' і ЗАВЖДИ вимагає інверсії. 'Under no circumstances SHOULD YOU leave' (не 'you should'). Негативний сенс вже в фразі, тому NOT не додаємо! Подібні фрази: 'In no way should you...', 'On no account must you...', 'At no time did he...'. Це дуже формальний стиль — використовується в офіційних оголошеннях, правилах, юридичних текстах. В українській: 'За жодних обставин не слід...' — з часткою 'не'. Англійська інверсія замінює негативну частку."
+      },
+      {
+        "id": "ue_inv6",
+        "question": "So beautiful _____ that everyone stopped to look.",
+        "translation": "(Така гарна була картина, що всі зупинилися подивитися.)",
+        "options": [
+          "was the painting",
+          "the painting was",
+          "the painting is",
+          "is the painting"
+        ],
+        "correct": "was the painting",
+        "explanation": "SO + ADJ + ІНВЕРСІЯ: 'So + прикметник + BE + підмет + that...' — підсилення якості. 'So beautiful WAS THE PAINTING that...' = 'Настільки гарною була картина, що...'. Інші приклади: 'So tired was I that I fell asleep', 'So fast did he run that he won'. Також працює з SUCH: 'Such was her anger that she left'. Це літературний, поетичний прийом — в розмовній мові рідкісний. В українській: 'Настільки... що' — порядок слів може змінюватися: 'Така гарна була картина' — теж інверсія!"
+      },
+      {
+        "id": "ue_inv7",
+        "question": "Little _____ that the decision would change his life.",
+        "translation": "(Мало він усвідомлював, що це рішення змінить його життя.)",
+        "options": [
+          "did he realize",
+          "he realized",
+          "he did realize",
+          "realized he"
+        ],
+        "correct": "did he realize",
+        "explanation": "LITTLE + ІНВЕРСІЯ: LITTLE на початку речення в значенні 'мало, ледве' вимагає інверсії. 'Little DID HE REALIZE that...' = 'Мало він усвідомлював, що...'. LITTLE тут має негативний відтінок (= he didn't really realize). Подібне: 'Little did they know...', 'Little does she care...'. Не плутайте з 'A little' (= трохи, позитивне) — воно НЕ вимагає інверсії. Цей зворот популярний у наративах та журналістиці для створення інтриги: 'Little did anyone suspect that...' (Ніхто й не підозрював, що...)."
+      },
+      {
+        "id": "ue_inv8",
+        "question": "At no time _____ to cheat on the test.",
+        "translation": "(У жоден момент він не намагався списати на тесті.)",
+        "options": [
+          "did he try",
+          "he tried",
+          "he did try",
+          "tried he"
+        ],
+        "correct": "did he try",
+        "explanation": "AT NO TIME: 'У жоден момент / ніколи' — ще одна негативна фраза, що вимагає інверсії. 'At no time DID HE TRY to cheat'. Зверніть увагу: DID + базова форма (try), не tried! Серія подібних фраз: AT NO TIME, IN NO WAY, ON NO ACCOUNT, UNDER NO CIRCUMSTANCES, BY NO MEANS — всі з інверсією. Ці звороти типові для офіційних заяв: 'At no time did the company violate regulations'. В розмовній мові скажуть простіше: 'He never tried to cheat'. Інверсія = формальність + емфаза."
+      },
+      {
+        "id": "ue_inv9",
+        "question": "No sooner _____ than it started to rain.",
+        "translation": "(Тільки-но ми вийшли, як почався дощ.)",
+        "options": [
+          "had we left",
+          "we had left",
+          "we left",
+          "did we leave"
+        ],
+        "correct": "had we left",
+        "explanation": "NO SOONER...THAN: 'Тільки-но... як' — з Past Perfect і інверсією. 'No sooner HAD WE LEFT than it started to rain'. Запам'ятайте пару: NO SOONER + THAN (не WHEN!). Порівняйте: HARDLY/SCARCELY + WHEN, але NO SOONER + THAN. Звичайний порядок: 'We had no sooner left than...'. Ця конструкція підкреслює негайну послідовність подій — одне за одним. В українській: 'Тільки-но ми вийшли, як...' або 'Щойно ми вийшли, як...'. Часто в літературних текстах і новинах."
+      },
+      {
+        "id": "ue_inv10",
+        "question": "Nowhere _____ such kindness as in this village.",
+        "translation": "(Ніде я не зустрічав такої доброти, як у цьому селі.)",
+        "options": [
+          "have I found",
+          "I have found",
+          "I found",
+          "did I found"
+        ],
+        "correct": "have I found",
+        "explanation": "NOWHERE + ІНВЕРСІЯ: 'Ніде' на початку речення — інверсія обов'язкова. 'Nowhere HAVE I FOUND such kindness' = 'Ніде я не знаходив такої доброти'. Інші місцеві прислівники з інверсією: 'Nowhere else can you see...', 'In no other place would you find...'. Present Perfect тут показує досвід до теперішнього моменту. В українській: 'Ніде я не зустрічав' — є частка 'не', якої немає в англійській (бо негатив вже в NOWHERE). Типово для подорожніх оповідей та рецензій."
+      },
+      {
+        "id": "ue_inv11",
+        "question": "Not until I got home _____ I had lost my wallet.",
+        "translation": "(Не раніше ніж я прийшов додому, я зрозумів, що загубив гаманець.)",
+        "options": [
+          "did I realize",
+          "I realized",
+          "I did realize",
+          "had I realized"
+        ],
+        "correct": "did I realize",
+        "explanation": "NOT UNTIL + ІНВЕРСІЯ: 'Не раніше ніж / Аж поки не'. 'Not until I got home DID I REALIZE...' — інверсія в ГОЛОВНОМУ реченні (did I realize), а підрядне (I got home) зберігає нормальний порядок! Це ключова помилка учнів — вони ставлять інверсію не там. Ще: 'Not until she called did I remember'. Нейтральний варіант: 'I didn't realize until I got home that...'. NOT UNTIL створює драматичну паузу — інформація розкривається поступово. В українській: 'Лише коли я прийшов додому, я зрозумів...'."
+      },
+      {
+        "id": "ue_inv12",
+        "question": "Were I _____, I would invest in education.",
+        "translation": "(Якби я був багатим, я б інвестував в освіту.)",
+        "options": [
+          "rich",
+          "was rich",
+          "am rich",
+          "being rich"
+        ],
+        "correct": "rich",
+        "explanation": "CONDITIONAL INVERSION (інверсія в умовних): Замість 'If I were rich' можна сказати 'WERE I RICH' — IF прибирається, WERE виходить на перше місце. Це формальний, елегантний варіант Second Conditional. Інші приклади: 'Were she here, she would help' (= If she were here), 'Were it not for you, I'd fail' (= If it weren't for you). Також з SHOULD/HAD: 'Should you need help, call me' (= If you should need), 'Had I known, I'd have come' (= If I had known). В українській: 'Якби я був' — IF завжди є, інверсія не працює так."
+      },
+      {
+        "id": "ue_inv13",
+        "question": "Had she _____ earlier, she would have caught the train.",
+        "translation": "(Якби вона вийшла раніше, вона б встигла на потяг.)",
+        "options": [
+          "left",
+          "leaving",
+          "leaves",
+          "been left"
+        ],
+        "correct": "left",
+        "explanation": "HAD + S + V3 (Third Conditional Inversion): 'Had she left earlier' = 'If she had left earlier'. Формальний стиль без IF. HAD виходить на перше місце + підмет + Past Participle. Ще: 'Had I known the truth, I wouldn't have agreed', 'Had they arrived on time, they'd have seen the show'. Цей зворот часто зустрічається в літературі, академічному та діловому листуванні. В розмовній мові — рідко, але всі носії розуміють. В українській: 'Якби вона вийшла раніше' — умовна частка 'якби' завжди на місці."
+      },
+      {
+        "id": "ue_inv14",
+        "question": "Should you _____ any problems, please contact us.",
+        "translation": "(Якщо у вас виникнуть будь-які проблеми, зв'яжіться з нами.)",
+        "options": [
+          "encounter",
+          "encountered",
+          "encountering",
+          "to encounter"
+        ],
+        "correct": "encounter",
+        "explanation": "SHOULD + S + V (First Conditional Inversion): 'Should you encounter problems' = 'If you (should) encounter problems'. SHOULD тут не означає 'повинен', а виражає умовність (= if by chance). Базова форма дієслова після SHOULD. Це ввічливий, формальний стиль — часто в діловому листуванні, інструкціях, об'явах. Ще: 'Should you require assistance...', 'Should the weather change...'. Менш вірогідна умова, ніж простий IF. В українській: 'Якщо трапиться', 'У разі виникнення' — теж формальний регістр."
+      },
+      {
+        "id": "ue_inv15",
+        "question": "Rarely _____ so many people at this event.",
+        "translation": "(Рідко буває так багато людей на цій події.)",
+        "options": [
+          "are there",
+          "there are",
+          "there is",
+          "is there"
+        ],
+        "correct": "are there",
+        "explanation": "RARELY + ІНВЕРСІЯ: 'Rarely ARE THERE so many people' = 'Рідко буває стільки людей'. RARELY = рідко, нечасто. З THERE ARE конструкція стає 'Rarely are there...'. Інші прикметні прислівники: SELDOM (рідко), BARELY (ледве), ONLY OCCASIONALLY (лише зрідка) — всі з інверсією на початку речення. Порівняйте: 'There are rarely so many people' (нормальний порядок, без емфази) vs 'Rarely are there...' (з інверсією, з підсиленням). В українській: 'Рідко буває' — порядок теж може змінюватися для наголосу."
+      }
+    ]
+  },
+  {
+    "key": "wish_hope",
+    "name": "Wish & Hope",
+    "description": "Бажання та надії (wish, hope, if only)",
+    "iconName": "star.fill",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ue_wh1",
+        "question": "I wish I _____ taller.",
+        "translation": "(Якби ж я був/була вищим/вищою.)",
+        "options": [
+          "were",
+          "am",
+          "was being",
+          "would be"
+        ],
+        "correct": "were",
+        "explanation": "WISH + PAST SIMPLE (нереальне теперішнє бажання): 'I wish I WERE taller' = 'Шкода, що я не вищий' / 'Якби ж мені бути вищим'. Після WISH використовуємо Past Simple для бажань про ТЕПЕРІШНЄ, яке ми хочемо змінити, але не можемо. WERE (не WAS) вживається для всіх осіб у формальному стилі (subjunctive mood). 'I wish I were rich', 'She wishes she were famous'. В розмовній мові 'I wish I was' — теж прийнятно. В українській: 'Якби ж...' або 'Шкода, що не...' — жаль про незмінну реальність."
+      },
+      {
+        "id": "ue_wh2",
+        "question": "I wish you _____ making that noise!",
+        "translation": "(Якби ти припинив/ла видавати цей шум!)",
+        "options": [
+          "would stop",
+          "stopped",
+          "will stop",
+          "stop"
+        ],
+        "correct": "would stop",
+        "explanation": "WISH + WOULD (роздратування / прохання про зміну): 'I wish you WOULD STOP' = 'Як би я хотів, щоб ти припинив'. WISH + WOULD виражає бажання, щоб ХТОСЬ ІНШИЙ змінив поведінку — часто з відтінком роздратування чи нетерпіння. Не можна: 'I wish I would' (не про себе!). Правильно: 'I wish he would listen', 'I wish they would be quiet'. Це НЕ про неможливі мрії, а про конкретну дратівливу ситуацію. В українській: 'Якби ж ти припинив...!', 'Хоч би він замовк!' — теж з емоційним забарвленням."
+      },
+      {
+        "id": "ue_wh3",
+        "question": "She wishes she _____ harder for the exam.",
+        "translation": "(Шкода, що вона не вчилася старанніше до іспиту.)",
+        "options": [
+          "had studied",
+          "studied",
+          "would study",
+          "has studied"
+        ],
+        "correct": "had studied",
+        "explanation": "WISH + PAST PERFECT (жаль про минуле): 'She wishes she HAD STUDIED harder' = 'Вона шкодує, що не вчилася старанніше'. Past Perfect після WISH — для жалю про МИНУЛІ ситуації, які вже не можна змінити. 'I wish I had gone to university', 'He wishes he hadn't said that'. Це найсильніший тип жалю — 'якби я тоді зробив інакше'. Часто з відтінком розкаяння. В українській: 'Шкода, що не...', 'Якби ж я тоді...' — минулий час із умовною часткою. Запам'ятайте: теперішня мрія → Past Simple; минулий жаль → Past Perfect."
+      },
+      {
+        "id": "ue_wh4",
+        "question": "If only I _____ there to help you.",
+        "translation": "(Якби тільки я був/була там, щоб допомогти тобі.)",
+        "options": [
+          "had been",
+          "was",
+          "am",
+          "would be"
+        ],
+        "correct": "had been",
+        "explanation": "IF ONLY + PAST PERFECT: 'If only I HAD BEEN there' = 'Якби тільки я був там'. IF ONLY = більш емоційний варіант WISH. Правила ті ж самі: IF ONLY + Past Simple (теперішнє бажання), IF ONLY + Past Perfect (жаль про минуле). 'If only I had been there' — жаль, що не був. 'If only I were there' — бажання бути зараз. IF ONLY часто вживається з окличним знаком і виражає глибший емоційний відтінок, ніж WISH. В українській: 'Якби тільки!', 'Якби ж!' — теж сильна емоція."
+      },
+      {
+        "id": "ue_wh5",
+        "question": "I hope she _____ the exam tomorrow.",
+        "translation": "(Я сподіваюся, що вона здасть іспит завтра.)",
+        "options": [
+          "passes",
+          "passed",
+          "would pass",
+          "were passing"
+        ],
+        "correct": "passes",
+        "explanation": "HOPE + PRESENT SIMPLE (реалістичне сподівання): 'I hope she PASSES' = 'Сподіваюся, вона здасть'. На відміну від WISH, HOPE виражає реалістичне сподівання на МОЖЛИВИЙ результат. Після HOPE — Present Simple (для майбутнього) або WILL. 'I hope it rains tomorrow' = 'I hope it will rain tomorrow'. Ключова різниця: WISH = нереальне / неможливе бажання, HOPE = реальне очікування. 'I wish I were rich' (нереально зараз) vs 'I hope I become rich' (можливо в майбутньому). В українській: 'Сподіваюся, що...' + майбутній час."
+      },
+      {
+        "id": "ue_wh6",
+        "question": "I wish it _____ so cold today.",
+        "translation": "(Якби ж не було так холодно сьогодні.)",
+        "options": [
+          "weren't",
+          "isn't",
+          "won't be",
+          "hasn't been"
+        ],
+        "correct": "weren't",
+        "explanation": "WISH + PAST SIMPLE (NEGATIVE): 'I wish it WEREN'T so cold' = 'Шкода, що так холодно'. Негативне речення після WISH теж у Past Simple. WEREN'T (не ISN'T) — бо це нереальне бажання про теперішнє. Зверніть увагу: реальність — холодно (IS cold), а бажання — протилежне (WEREN'T cold). WISH завжди створює контраст з реальністю. Ще: 'I wish I didn't have to work', 'She wishes she didn't live so far'. В українській: 'Якби ж не було холодно' — умовний спосіб із часткою 'не'. Просте правило: що є в реальності — заперечуємо у WISH."
+      },
+      {
+        "id": "ue_wh7",
+        "question": "We wish we _____ to the concert last night.",
+        "translation": "(Шкода, що ми не пішли на концерт вчора ввечері.)",
+        "options": [
+          "had gone",
+          "went",
+          "would go",
+          "have gone"
+        ],
+        "correct": "had gone",
+        "explanation": "WISH + PAST PERFECT (жаль про пропущену подію): 'We wish we HAD GONE to the concert' = 'Шкода, що ми не пішли'. Past Perfect для жалю про конкретну минулу подію, яку вже не можна змінити. Зверніть увагу: бажання позитивне (had gone), а реальність негативна (didn't go). Або навпаки: 'I wish I hadn't eaten so much' (жаль, що з'їв). Це емоція REGRET — розкаяння. Часто вживається у розповідях: 'Looking back, I wish I had taken that opportunity'. В українській: 'Шкода, що не пішли', 'Якби ж ми тоді пішли'."
+      },
+      {
+        "id": "ue_wh8",
+        "question": "If only we _____ more time for this project.",
+        "translation": "(Якби тільки ми мали більше часу на цей проект.)",
+        "options": [
+          "had",
+          "have",
+          "would have",
+          "will have"
+        ],
+        "correct": "had",
+        "explanation": "IF ONLY + PAST SIMPLE (теперішнє бажання): 'If only we HAD more time' = 'Якби тільки ми мали більше часу'. HAD тут — Past Simple (не Past Perfect!), бо це бажання про ТЕПЕРІШНЄ. Порівняйте: 'If only we had' (= зараз немає, а хочемо) vs 'If only we had had' (= тоді не було, шкодуємо). IF ONLY = WISH, але з додатковою емоцією, драматизмом. Часто вигукується з журбою або мрійливо. В українській: 'Якби тільки...!' — з окличним знаком, бо це емоційний вигук."
+      },
+      {
+        "id": "ue_wh9",
+        "question": "I hope you _____ a wonderful time on your holiday.",
+        "translation": "(Я сподіваюся, що ти чудово проведеш час на відпочинку.)",
+        "options": [
+          "have",
+          "had",
+          "would have",
+          "were having"
+        ],
+        "correct": "have",
+        "explanation": "HOPE + PRESENT SIMPLE (побажання): 'I hope you HAVE a wonderful time' = 'Сподіваюся, ти чудово проведеш'. HOPE + Present Simple для реалістичних побажань про МАЙБУТНЄ. Також можна HOPE + WILL: 'I hope you will have a wonderful time'. Обидва варіанти правильні. HOPE — позитивне, оптимістичне слово. Типові побажання: 'I hope you feel better soon', 'I hope everything goes well'. Різниця від WISH тут величезна: 'I hope you have fun' (ситуація реальна) vs 'I wish I were there with you' (нереальне). В українській: 'Сподіваюся', 'Бажаю' — теж реалістичні."
+      },
+      {
+        "id": "ue_wh10",
+        "question": "She wishes she _____ speak Chinese fluently.",
+        "translation": "(Вона б хотіла вільно розмовляти китайською.)",
+        "options": [
+          "could",
+          "can",
+          "will",
+          "would"
+        ],
+        "correct": "could",
+        "explanation": "WISH + COULD (бажання здатності): 'She wishes she COULD speak Chinese' = 'Вона б хотіла вміти (говорити)'. COULD після WISH = бажання мати здатність, якої немає. CAN → COULD (зсув часу). 'I wish I could fly', 'He wishes he could play guitar'. Це мрія про вміння, талант, можливість. COULD тут = 'якби я міг'. Не плутайте з WOULD: 'I wish he would call' (хочу, щоб він подзвонив — про дію іншого) vs 'I wish I could call' (шкода, що не можу подзвонити — про свою нездатність). В українській: 'Якби ж я міг/могла...'"
+      },
+      {
+        "id": "ue_wh11",
+        "question": "I wish my neighbors _____ so much noise at night.",
+        "translation": "(Якби ж мої сусіди не шуміли так вночі.)",
+        "options": [
+          "didn't make",
+          "don't make",
+          "won't make",
+          "haven't made"
+        ],
+        "correct": "didn't make",
+        "explanation": "WISH + DIDN'T (роздратування звичною ситуацією): 'I wish they DIDN'T MAKE noise' = 'Якби ж вони не шуміли'. DIDN'T (Past Simple negative) після WISH для регулярної теперішньої ситуації, яка дратує. Реальність: they DO make noise → бажання: wish they DIDN'T make noise. Ще приклади: 'I wish she didn't talk so fast', 'He wishes he didn't have to wake up early'. Це WISH про звичку / постійну ситуацію. Порівняйте з WOULD: 'I wish they would stop' (конкретний момент роздратування). В українській: 'Якби ж вони не шуміли' — умовний спосіб."
+      },
+      {
+        "id": "ue_wh12",
+        "question": "They hoped that the weather _____ improve.",
+        "translation": "(Вони сподівалися, що погода покращиться.)",
+        "options": [
+          "would",
+          "will",
+          "shall",
+          "could"
+        ],
+        "correct": "would",
+        "explanation": "HOPE + PAST → WOULD (sequence of tenses): 'They hoped the weather WOULD improve'. Коли HOPE в Past Simple (hoped), майбутнє виражається через WOULD (не WILL). Це правило узгодження часів (sequence of tenses / backshift). 'I hope it will rain' (теперішнє) → 'I hoped it would rain' (минуле). Ще: 'She hoped he would call', 'We hoped they would arrive on time'. В українській теж є зсув: 'Сподіваюся, покращиться' → 'Сподівався, що покращиться' — форма дієслова може не змінюватися, але контекст підказує."
+      },
+      {
+        "id": "ue_wh13",
+        "question": "If only she _____ that email before sending it.",
+        "translation": "(Якби тільки вона перечитала той лист перед відправкою.)",
+        "options": [
+          "had read",
+          "read",
+          "would read",
+          "has read"
+        ],
+        "correct": "had read",
+        "explanation": "IF ONLY + PAST PERFECT (жаль про конкретну минулу помилку): 'If only she HAD READ that email' = 'Якби тільки вона перечитала'. Past Perfect показує жаль про дію, яка НЕ БУЛА виконана в минулому. IF ONLY підсилює емоцію (сильніший жаль, ніж WISH). Це типова ситуація: 'If only I had checked', 'If only they had listened'. Часто супроводжується зітханням або розкаянням. В українській: 'Якби тільки вона прочитала...!' — окличне, емоційне. Живий приклад: помилка в email → 'If only I had proofread it!'"
+      },
+      {
+        "id": "ue_wh14",
+        "question": "I wish I _____ how to fix this computer.",
+        "translation": "(Якби ж я знав/знала, як полагодити цей комп'ютер.)",
+        "options": [
+          "knew",
+          "know",
+          "would know",
+          "have known"
+        ],
+        "correct": "knew",
+        "explanation": "WISH + KNEW (Past Simple — нереальне теперішнє): 'I wish I KNEW how to fix it' = 'Шкода, що не знаю, як полагодити'. KNOW → KNEW (зсув часу). Не WOULD KNOW! Після WISH для теперішніх бажань — Past Simple (для всіх дієслів). 'I wish I knew the answer', 'I wish I understood physics', 'She wishes she lived closer'. Ці бажання можуть бути мотивацією до дії: 'I wish I knew → so I'll take a course!' У HOPE було б: 'I hope I can learn to fix it' — реалістично. В українській: 'Якби ж я знав' — умовний спосіб із 'б'."
+      },
+      {
+        "id": "ue_wh15",
+        "question": "We all hope the project _____ successfully.",
+        "translation": "(Ми всі сподіваємось, що проєкт завершиться успішно.)",
+        "options": [
+          "ends",
+          "ended",
+          "would end",
+          "were ending"
+        ],
+        "correct": "ends",
+        "explanation": "HOPE + PRESENT SIMPLE (колективне сподівання): 'We hope the project ENDS successfully' = 'Ми сподіваємось, що проєкт завершиться'. Present Simple після HOPE (теперішній час) для реальних сподівань про майбутнє. Можна також: 'We hope the project will end successfully'. Підсумок трьох конструкцій: 1) HOPE + Present/Will = реалістичне сподівання; 2) WISH + Past Simple = нереальне теперішнє; 3) WISH + Past Perfect = жаль про минуле; 4) WISH + WOULD = бажання зміни поведінки інших. В українській: 'Сподіваємося, що...' — завжди з реалістичним очікуванням."
+      }
+    ]
+  },
+  {
+    "key": "used_to",
+    "name": "Used To & Would",
+    "description": "Минулі звички (used to, would, be used to)",
+    "iconName": "clock.arrow.circlepath",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ue_ut1",
+        "question": "I _____ to school every day when I was young.",
+        "translation": "(Я ходив/ходила до школи щодня, коли був/була маленьким/маленькою.)",
+        "options": [
+          "used to walk",
+          "use to walk",
+          "was used to walk",
+          "would to walk"
+        ],
+        "correct": "used to walk",
+        "explanation": "USED TO + INFINITIVE (минула звичка): 'I USED TO WALK to school' = 'Я мав звичку ходити до школи' / 'Раніше я ходив'. USED TO описує дії, які РЕГУЛЯРНО відбувалися в минулому, але БІЛЬШЕ НЕ ВІДБУВАЮТЬСЯ. Форма: USED TO + базовий інфінітив. 'She used to smoke' (раніше курила, тепер ні), 'We used to live in Kyiv' (раніше жили, тепер ні). В українській: 'Раніше я...', 'Колись я...' — спеціального маркера немає, просто минулий час + 'раніше'. USED TO підкреслює контраст між ТОДІ і ЗАРАЗ."
+      },
+      {
+        "id": "ue_ut2",
+        "question": "She didn't _____ like coffee, but now she loves it.",
+        "translation": "(Раніше вона не любила каву, але тепер обожнює.)",
+        "options": [
+          "use to",
+          "used to",
+          "using to",
+          "uses to"
+        ],
+        "correct": "use to",
+        "explanation": "DIDN'T USE TO (негативна форма): У заперечній формі DID/DIDN'T бере на себе минулий час, тому USE TO (без D!). 'She didn't USE TO like coffee' (не USED TO!). Також питальна форма: 'Did you USE TO play sports?' Це правило: DIDN'T + базова форма = USE TO, не USED TO. Однак у розмовній мові деякі носії кажуть 'didn't used to' — це вважається неформальним. Стандарт для іспитів і формального мовлення: 'didn't use to'. В українській: 'Раніше вона не любила' — просто заперечення в минулому часі."
+      },
+      {
+        "id": "ue_ut3",
+        "question": "My grandmother _____ tell us stories before bed.",
+        "translation": "(Моя бабуся розповідала нам казки перед сном.)",
+        "options": [
+          "would",
+          "used",
+          "was used to",
+          "will"
+        ],
+        "correct": "would",
+        "explanation": "WOULD для минулих звичок (ностальгічний відтінок): 'My grandmother WOULD tell us stories' = 'Бабуся, бувало, розповідала нам казки'. WOULD = повторювані дії в минулому, часто з теплими спогадами. АЛЕ! WOULD НЕ МОЖНА використовувати зі СТАТИВНИМИ дієсловами (be, have, know, like). ❌ 'I would be tall' ❌ 'She would like music'. Для станів — ТІЛЬКИ USED TO: ✅ 'I used to be tall', ✅ 'She used to like music'. WOULD = дії, USED TO = дії + стани. В українській: 'Бувало, розповідала' — слово 'бувало' = WOULD."
+      },
+      {
+        "id": "ue_ut4",
+        "question": "I am _____ to waking up early now.",
+        "translation": "(Зараз я звик/звикла рано вставати.)",
+        "options": [
+          "used",
+          "use",
+          "using",
+          "used to be"
+        ],
+        "correct": "used",
+        "explanation": "BE USED TO + V-ING (звикнути): 'I am USED TO waking up early' = 'Я звик рано прокидатися'. BE USED TO = бути звиклим до чогось ЗАРАЗ. Після BE USED TO — іменник або V-ING (не інфінітив!). ✅ 'I'm used to working hard', ✅ 'She's used to the noise'. ❌ 'I'm used to work hard'. Три конструкції: 1) USED TO + V = минула звичка (I used to smoke), 2) BE USED TO + V-ing = звиклий зараз (I'm used to smoking), 3) GET USED TO + V-ing = процес звикання (I'm getting used to smoking). В українській: 'Я звик до' + іменник/дія."
+      },
+      {
+        "id": "ue_ut5",
+        "question": "He is slowly getting _____ to the new city.",
+        "translation": "(Він повільно звикає до нового міста.)",
+        "options": [
+          "used",
+          "use",
+          "using",
+          "uses"
+        ],
+        "correct": "used",
+        "explanation": "GET USED TO (процес звикання): 'He is getting USED TO the new city' = 'Він звикає до нового міста'. GET USED TO = ПРОЦЕС (поступово звикати), на відміну від BE USED TO = РЕЗУЛЬТАТ (вже звиклий). Можна в різних часах: 'I'm getting used to it' (зараз звикаю), 'I got used to it' (звик), 'I'll get used to it' (звикну). Після GET USED TO — іменник або V-ING: 'getting used to driving on the left', 'getting used to British weather'. В українській: 'Звикаю до...' — процесуальне значення через недоконаний вид."
+      },
+      {
+        "id": "ue_ut6",
+        "question": "There _____ be a cinema here, but it closed down.",
+        "translation": "(Тут раніше був кінотеатр, але його закрили.)",
+        "options": [
+          "used to",
+          "would",
+          "was used to",
+          "use to"
+        ],
+        "correct": "used to",
+        "explanation": "USED TO зі стативними дієсловами: 'There USED TO BE a cinema' = 'Раніше тут був кінотеатр'. BE — стативне дієслово, тому WOULD тут НЕМОЖЛИВИЙ (❌ 'There would be a cinema'). USED TO = єдиний варіант для минулих СТАНІВ. Ще: 'I used to know her' (знав), 'He used to have a dog' (мав), 'She used to live here' (жила). WOULD працює тільки з ДИНАМІЧНИМИ дієсловами (run, tell, play, sing). В українській різниці немає: 'Раніше тут був' — одна конструкція для всіх типів."
+      },
+      {
+        "id": "ue_ut7",
+        "question": "We _____ play in the park every summer.",
+        "translation": "(Ми, бувало, гралися в парку кожного літа.)",
+        "options": [
+          "would",
+          "were used to",
+          "use to",
+          "are used to"
+        ],
+        "correct": "would",
+        "explanation": "WOULD + REPEATED PAST ACTION: 'We WOULD play in the park' = 'Ми, бувало, гралися в парку'. WOULD тут ідеально, бо PLAY — динамічне дієслово і дія повторювалася. Контекст 'every summer' підтверджує регулярність. WOULD часто з'являється в ланцюжку спогадів: 'We would wake up early, we would have breakfast together, and then we would go to the beach'. Це ностальгічний, оповідальний стиль. В українській: 'Бувало, гралися' або 'Щоліта ми гралися' — з маркером регулярності."
+      },
+      {
+        "id": "ue_ut8",
+        "question": "Are you _____ to driving on the right side of the road?",
+        "translation": "(Ти звик/звикла їздити по правій стороні дороги?)",
+        "options": [
+          "used",
+          "use",
+          "using",
+          "usual"
+        ],
+        "correct": "used",
+        "explanation": "ARE YOU USED TO + V-ING (питання про звичку): 'Are you USED TO driving...' = 'Ти звик їздити...?'. Питальна форма BE USED TO: інверсія BE (Are you used to?) + після TO — герундій (V-ING). Типові ситуації: 'Are you used to the weather?', 'Is she used to working night shifts?', 'Are they used to spicy food?'. Відповідь: 'Yes, I'm used to it now' або 'Not yet, I'm still getting used to it'. В українській: 'Ти звик до...?' — просте питання з 'звик'. Пам'ятайте: USED — прикметник тут, не дієслово!"
+      },
+      {
+        "id": "ue_ut9",
+        "question": "Life _____ be much simpler without smartphones.",
+        "translation": "(Життя раніше було набагато простішим без смартфонів.)",
+        "options": [
+          "used to",
+          "would",
+          "was used to",
+          "is used to"
+        ],
+        "correct": "used to",
+        "explanation": "USED TO + BE (стативне): 'Life USED TO BE simpler' = 'Раніше життя було простішим'. BE — стативне дієслово, тому ТІЛЬКИ USED TO (не WOULD!). Це філософське спостереження про зміни в суспільстві. Інші приклади: 'People used to be more patient', 'The air used to be cleaner', 'Everything used to be cheaper'. USED TO ідеально для ностальгічних порівнянь ТОДІ vs ЗАРАЗ. В українській: 'Раніше було', 'Колись було' — просто прислівник часу + минулий час. USED TO — вбудований маркер контрасту."
+      },
+      {
+        "id": "ue_ut10",
+        "question": "She can't get used _____ in a big city.",
+        "translation": "(Вона не може звикнути жити у великому місті.)",
+        "options": [
+          "to living",
+          "to live",
+          "living",
+          "for living"
+        ],
+        "correct": "to living",
+        "explanation": "GET USED TO + V-ING: 'She can't get used TO LIVING in a big city'. Пам'ятайте: TO тут — прийменник (не частина інфінітива!), тому після нього — ГЕРУНДІЙ (V-ING). Це найчастіша помилка: ❌ 'get used to live' ✅ 'get used to living'. Як перевірити: якщо можна замінити на іменник, то TO = прийменник. 'Get used to THE CITY' → 'Get used to LIVING in the city'. Інші приклади: 'get used to eating', 'get used to commuting'. В українській: 'Звикнути жити' — інфінітив, бо 'до' + дія = інфінітив в українській."
+      },
+      {
+        "id": "ue_ut11",
+        "question": "When I was a child, my father _____ read me bedtime stories.",
+        "translation": "(Коли я був/була дитиною, мій батько читав мені казки на ніч.)",
+        "options": [
+          "would",
+          "was used to",
+          "is used to",
+          "used"
+        ],
+        "correct": "would",
+        "explanation": "WOULD + минула повторювана дія (спогади про дитинство): 'My father WOULD read me stories' = 'Батько, бувало, читав мені казки'. WOULD тут — ідеальний вибір для теплих спогадів. READ — динамічне дієслово (дія, не стан). Контекст 'When I was a child' встановлює часову рамку — це важливо для WOULD! WOULD потребує контексту (коли, де, в який період). Без контексту WOULD незрозумілий: ❌ 'My father would read' (коли?). ✅ 'When I was young, my father would read'. В українській: 'Батько, бувало, читав' — 'бувало' = WOULD."
+      },
+      {
+        "id": "ue_ut12",
+        "question": "Did you _____ have long hair?",
+        "translation": "(Ти раніше мав/мала довге волосся?)",
+        "options": [
+          "use to",
+          "used to",
+          "using to",
+          "uses to"
+        ],
+        "correct": "use to",
+        "explanation": "DID + USE TO (питальна форма): 'Did you USE TO have long hair?' — USE TO (без D!), бо DID уже показує минулий час. Правило аналогічне з DIDN'T USE TO. DID/DIDN'T + базова форма = USE TO. Ще: 'Did she use to work here?', 'Did they use to live together?'. Альтернатива без DID: 'Used you to have long hair?' — архаїчна, рідко вживається. В розмовній мові часто уникають питальної форми взагалі: 'You used to have long hair, didn't you?' (question tag). В українській: 'Ти раніше мав...?' — просто питання в минулому часі."
+      },
+      {
+        "id": "ue_ut13",
+        "question": "I'm not _____ to eating spicy food yet.",
+        "translation": "(Я ще не звик/звикла їсти гостру їжу.)",
+        "options": [
+          "used",
+          "use",
+          "using",
+          "usual"
+        ],
+        "correct": "used",
+        "explanation": "NOT USED TO + V-ING: 'I'm not USED TO eating spicy food' = 'Я не звиклий до гострої їжі'. Негативна форма BE USED TO — просто додаємо NOT до BE: 'I'm not used to', 'She isn't used to', 'They aren't used to'. YET підкреслює, що процес звикання ще триває. Можна додати STILL: 'I'm still not used to it'. Порівняйте: 'I'm not used to it' (ще не звик) → 'I'm getting used to it' (звикаю) → 'I'm used to it' (вже звик). В українській: 'Ще не звик до' — з часткою 'ще'."
+      },
+      {
+        "id": "ue_ut14",
+        "question": "People _____ travel by horse before cars were invented.",
+        "translation": "(Люди подорожували конем до винаходу автомобілів.)",
+        "options": [
+          "used to",
+          "would",
+          "were used to",
+          "are used to"
+        ],
+        "correct": "used to",
+        "explanation": "USED TO для історичних фактів: 'People USED TO travel by horse' = 'Люди раніше подорожували конем'. Хоча TRAVEL — динамічне дієслово і WOULD можливий, USED TO краще для ЗАГАЛЬНИХ фактів про минуле. WOULD більше для особистих спогадів. USED TO встановлює факт: 'раніше було так, тепер інакше'. Ще: 'People used to write letters' (зараз — emails), 'Ships used to use sails' (зараз — двигуни). В українській: 'Раніше люди подорожували конем' — прислівник 'раніше' виконує роль USED TO."
+      },
+      {
+        "id": "ue_ut15",
+        "question": "It took me a while, but I finally got used _____ alone.",
+        "translation": "(Це зайняло деякий час, але я нарешті звик/звикла жити на самоті.)",
+        "options": [
+          "to living",
+          "to live",
+          "living",
+          "of living"
+        ],
+        "correct": "to living",
+        "explanation": "GOT USED TO + V-ING (завершення процесу звикання): 'I finally got used TO LIVING alone' = 'Я нарешті звик жити на самоті'. GOT USED TO (Past Simple) = процес завершився, звичка сформувалася. FINALLY підкреслює, що це було непросто. Знову: TO = прийменник, після нього V-ING! Ланцюжок: 'I wasn't used to living alone' → 'I was getting used to it' → 'I got used to it'. Повний цикл адаптації. В українській: 'Нарешті звик жити' — доконаний вид (звик, а не звикав). Це підсумок усієї теми USED TO / BE USED TO / GET USED TO."
+      }
+    ]
+  },
+  {
+    "key": "would_rather",
+    "name": "Would Rather & Prefer",
+    "description": "Уподобання та вибір (would rather, prefer)",
+    "iconName": "hand.thumbsup.fill",
+    "color": "#059669",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ue_wr1",
+        "question": "I'd rather _____ at home tonight.",
+        "translation": "(Я б краще залишився/залишилася вдома сьогодні ввечері.)",
+        "options": [
+          "stay",
+          "to stay",
+          "staying",
+          "stayed"
+        ],
+        "correct": "stay",
+        "explanation": "WOULD RATHER + BARE INFINITIVE: 'I'd rather STAY at home' = 'Я б краще залишився вдома'. Після WOULD RATHER — голий інфінітив (без TO!). ❌ 'I'd rather to stay' ❌ 'I'd rather staying'. ✅ 'I'd rather stay'. I'D = скорочення від I WOULD. Інші приклади: 'I'd rather eat at home', 'She'd rather walk'. WOULD RATHER = м'який, ввічливий спосіб сказати 'я б вибрав'. Це не наказ, а особисте вподобання. В українській: 'Я б краще...', 'Мені б хотілося...' — з умовною часткою 'б'. Природний, повсякденний зворот."
+      },
+      {
+        "id": "ue_wr2",
+        "question": "Would you rather _____ tea or coffee?",
+        "translation": "(Ти б краще випив/випила чай чи каву?)",
+        "options": [
+          "have",
+          "to have",
+          "having",
+          "had"
+        ],
+        "correct": "have",
+        "explanation": "WOULD RATHER + OR (вибір): 'Would you rather HAVE tea or coffee?' = 'Що б ти вибрав — чай чи каву?'. Питання з WOULD RATHER пропонують ВИБІР між альтернативами. Структура: Would + S + rather + V (bare inf) + A or B? Інші: 'Would you rather go out or stay in?', 'Would he rather fly or drive?'. Це ввічливий спосіб запропонувати вибір — м'якше за 'Do you want tea or coffee?'. В українській: 'Що б ти воліла — чай чи каву?', 'Тобі краще чай чи каву?' — питання з варіантами."
+      },
+      {
+        "id": "ue_wr3",
+        "question": "I'd rather you _____ tell anyone about this.",
+        "translation": "(Я б волів/воліла, щоб ти нікому про це не розповідав/розповідала.)",
+        "options": [
+          "didn't",
+          "don't",
+          "won't",
+          "haven't"
+        ],
+        "correct": "didn't",
+        "explanation": "WOULD RATHER + SOMEONE + PAST SIMPLE (бажання щодо іншої людини): 'I'd rather you DIDN'T tell' = 'Я б волів, щоб ти не розповідав'. Коли WOULD RATHER відноситься до ДІЇ ІНШОЇ ЛЮДИНИ, використовуємо Past Simple (хоча значення — теперішнє/майбутнє!). Це subjunctive — як з WISH. ✅ 'I'd rather she came tomorrow', 'I'd rather they left now'. ❌ 'I'd rather you don't tell'. DIDN'T для заперечення. В українській: 'Я б хотів, щоб ти не...' — теж умовний спосіб. Це ввічливе побажання, не наказ."
+      },
+      {
+        "id": "ue_wr4",
+        "question": "She _____ reading to watching TV.",
+        "translation": "(Вона надає перевагу читанню, а не перегляду телевізора.)",
+        "options": [
+          "prefers",
+          "would rather",
+          "had better",
+          "rather"
+        ],
+        "correct": "prefers",
+        "explanation": "PREFER + V-ING + TO + V-ING: 'She PREFERS reading TO watching TV' = 'Вона віддає перевагу читанню перед телевізором'. PREFER + герундій + TO + герундій — для ЗАГАЛЬНИХ, ПОСТІЙНИХ уподобань. TO тут = 'ніж / перед' (прийменник). ❌ 'prefers reading THAN watching'. Ще: 'I prefer walking to driving', 'He prefers cooking to eating out'. Також можна: 'She prefers to read rather than (to) watch TV' — з інфінітивом + RATHER THAN. В українській: 'Надає перевагу', 'Більше любить' — з давальним відмінком ('читанню')."
+      },
+      {
+        "id": "ue_wr5",
+        "question": "I would prefer _____ a taxi rather than walk.",
+        "translation": "(Я б воліла/волів взяти таксі, а не йти пішки.)",
+        "options": [
+          "to take",
+          "taking",
+          "take",
+          "took"
+        ],
+        "correct": "to take",
+        "explanation": "WOULD PREFER + TO V + RATHER THAN + V: 'I would prefer TO TAKE a taxi rather than walk' = 'Я б вибрала таксі, а не пішки'. WOULD PREFER = конкретне вподобання в конкретній ситуації (не загальне). Структура: would prefer + TO + V + rather than + V (bare inf). Ще: 'I'd prefer to eat in rather than go out tonight'. Порівняння: PREFER + V-ING = загальне завжди, WOULD PREFER + TO V = конкретний випадок зараз. В українській: 'Я б волів' = конкретно, 'Я надаю перевагу' = загально."
+      },
+      {
+        "id": "ue_wr6",
+        "question": "He'd rather _____ gone to the party last night.",
+        "translation": "(Він шкодує, що не пішов на вечірку вчора ввечері.)",
+        "options": [
+          "have",
+          "had",
+          "has",
+          "to have"
+        ],
+        "correct": "have",
+        "explanation": "WOULD RATHER + HAVE + V3 (жаль про минуле): 'He'd rather HAVE GONE' = 'Він би вибрав піти' (але не пішов). WOULD RATHER + HAVE + Past Participle — для жалю про минулу подію. Структура ідентична Third Conditional (would have gone). 'I'd rather have stayed silent' (= шкода, що не промовчав). 'She'd rather have studied medicine' (= шкода, що не вивчала медицину). Це сильний жаль — 'якби я міг повернутися, я б зробив інакше'. В українській: 'Краще б він пішов', 'Шкода, що не пішов' — умовний спосіб у минулому."
+      },
+      {
+        "id": "ue_wr7",
+        "question": "I'd rather you _____ earlier yesterday.",
+        "translation": "(Я б волів, щоб ти прийшов/прийшла раніше вчора.)",
+        "options": [
+          "had come",
+          "came",
+          "come",
+          "would come"
+        ],
+        "correct": "had come",
+        "explanation": "WOULD RATHER + S + PAST PERFECT (бажання щодо чужої минулої дії): 'I'd rather you HAD COME earlier' = 'Я б хотів, щоб ти прийшов раніше (вчора)'. Для минулих ситуацій з іншою людиною — Past Perfect. Порівняйте: 'I'd rather you came' (прийди зараз/завтра — Past Simple) vs 'I'd rather you had come' (шкода, що не прийшов вчора — Past Perfect). Таке ж правило, як і з WISH: теперішнє бажання → Past Simple, минулий жаль → Past Perfect. В українській: 'Якби ж ти прийшов/прийшла раніше' — умовний спосіб."
+      },
+      {
+        "id": "ue_wr8",
+        "question": "Do you prefer coffee _____ tea?",
+        "translation": "(Ти надаєш перевагу каві чи чаю?)",
+        "options": [
+          "to",
+          "or",
+          "than",
+          "over"
+        ],
+        "correct": "to",
+        "explanation": "PREFER + NOUN + TO + NOUN: 'Do you prefer coffee TO tea?' = 'Ти більше любиш каву чи чай?'. З іменниками PREFER використовує TO (не THAN!). ❌ 'prefer coffee THAN tea' ✅ 'prefer coffee TO tea'. Але в розмовній мові 'prefer coffee OVER tea' — теж можливо (особливо в AmE). Запам'ятайте пари: PREFER + TO (з іменниками та герундієм), RATHER THAN (з інфінітивом), WOULD RATHER (+ bare inf). В українській: 'Надаєш перевагу каві перед чаєм?' або просто 'Тобі більше подобається кава чи чай?'. TO = 'перед/ніж'."
+      },
+      {
+        "id": "ue_wr9",
+        "question": "We'd rather not _____ out in this weather.",
+        "translation": "(Ми б краще не виходили в таку погоду.)",
+        "options": [
+          "go",
+          "to go",
+          "going",
+          "went"
+        ],
+        "correct": "go",
+        "explanation": "WOULD RATHER NOT + BARE INF (негативна форма): 'We'd rather NOT GO out' = 'Ми б краще не виходили'. NOT ставиться перед дієсловом (не після WOULD). Порядок: S + 'D RATHER + NOT + base verb. ❌ 'We wouldn't rather go'. ✅ 'We'd rather not go'. Це ввічлива відмова — м'якше за 'I don't want to go'. Ще: 'I'd rather not say', 'She'd rather not discuss it'. В діловому спілкуванні: 'I'd rather not comment on that' — і дипломатичне, і ввічливе. В українській: 'Краще б не ходити', 'Я б волів не...' — з часткою 'не'."
+      },
+      {
+        "id": "ue_wr10",
+        "question": "I prefer _____ by train to flying.",
+        "translation": "(Я надаю перевагу подорожам поїздом, а не літаком.)",
+        "options": [
+          "travelling",
+          "to travel",
+          "travel",
+          "travelled"
+        ],
+        "correct": "travelling",
+        "explanation": "PREFER + V-ING + TO + V-ING: 'I prefer TRAVELLING by train TO flying' = 'Я більше люблю їздити поїздом, ніж літаком'. ЗАГАЛЬНЕ вподобання = PREFER + герундій + TO + герундій. Обидва дієслова в -ING формі! 'I prefer swimming to running', 'She prefers cooking to cleaning'. TO тут — прийменник (= 'ніж'), не частина інфінітива. Крім герундія, можна іменник: 'I prefer tea to coffee'. В українській: 'Надаю перевагу подорожам поїздом перед літаком' — давальний відмінок після 'перевагу'."
+      },
+      {
+        "id": "ue_wr11",
+        "question": "I'd rather she _____ the truth.",
+        "translation": "(Я б волів, щоб вона сказала правду.)",
+        "options": [
+          "told",
+          "tells",
+          "tell",
+          "would tell"
+        ],
+        "correct": "told",
+        "explanation": "WOULD RATHER + S + PAST SIMPLE (бажання про іншу людину, теперішнє/майбутнє): 'I'd rather she TOLD the truth' = 'Я б хотів, щоб вона сказала правду'. Пам'ятайте: коли WOULD RATHER стосується ІНШОЇ людини, завжди Past Simple (навіть для теперішнього/майбутнього). TOLD — Past Simple від TELL. Це subjunctive mood — нереальне бажання. Ще: 'I'd rather he stayed', 'I'd rather they didn't know'. В українській: 'Я б хотів, щоб вона сказала' — підрядне речення з 'щоб' + минулий. Дуже природний зворот."
+      },
+      {
+        "id": "ue_wr12",
+        "question": "Which would you prefer — the blue one _____ the red one?",
+        "translation": "(Який би ти обрав/обрала — синій чи червоний?)",
+        "options": [
+          "or",
+          "to",
+          "than",
+          "and"
+        ],
+        "correct": "or",
+        "explanation": "WOULD PREFER... OR (питання про вибір): 'Which would you prefer — the blue one OR the red one?' З WOULD PREFER у питаннях з конкретним вибором використовуємо OR (не TO). Це тому, що ми ПРОПОНУЄМО варіанти, а не порівнюємо вподобання. Порівняйте: 'Do you prefer A to B?' (загальне) vs 'Would you prefer A or B?' (конкретний момент). Ще: 'Would you prefer to sit here or over there?', 'Would she prefer Monday or Tuesday?'. В українській: 'Що б ти обрав — синій чи червоний?' — з 'чи' для альтернативи."
+      },
+      {
+        "id": "ue_wr13",
+        "question": "I'd rather _____ alone than with bad company.",
+        "translation": "(Я б краще був/була на самоті, ніж з поганою компанією.)",
+        "options": [
+          "be",
+          "to be",
+          "being",
+          "been"
+        ],
+        "correct": "be",
+        "explanation": "WOULD RATHER + V + THAN + V (порівняння): 'I'd rather BE alone THAN (be) with bad company'. THAN використовується після WOULD RATHER для порівняння двох варіантів. Структура: 'd rather + V1 + than + V2 (обидва — bare infinitive). Ще: 'I'd rather walk than drive', 'She'd rather sing than dance'. Друге дієслово можна скоротити, якщо зрозуміло з контексту: 'I'd rather stay than (go)'. THAN = 'ніж'. В українській: 'Краще бути одному, ніж...', 'Я б радше... ніж...' — з порівняльним сполучником 'ніж'."
+      },
+      {
+        "id": "ue_wr14",
+        "question": "She _____ rather not discuss politics.",
+        "translation": "(Вона вважає за краще не обговорювати політику.)",
+        "options": [
+          "would",
+          "had",
+          "has",
+          "is"
+        ],
+        "correct": "would",
+        "explanation": "WOULD RATHER NOT (повна форма): 'She WOULD rather not discuss politics'. 'D RATHER = WOULD RATHER (скорочення). В третій особі: 'She would rather...', 'He would rather...', 'They would rather...'. Скорочення: 'She'd rather', 'He'd rather'. WOULD RATHER NOT = ввічлива відмова обговорювати тему. Дуже корисно в соціальних ситуаціях: 'I'd rather not talk about it', 'He'd rather not get involved'. В українській: 'Вона вважає за краще не обговорювати', 'Їй не хотілося б обговорювати' — м'яка, ввічлива форма."
+      },
+      {
+        "id": "ue_wr15",
+        "question": "Many people prefer texting _____ making phone calls.",
+        "translation": "(Багато людей надають перевагу листуванню, а не телефонним дзвінкам.)",
+        "options": [
+          "to",
+          "than",
+          "over",
+          "from"
+        ],
+        "correct": "to",
+        "explanation": "PREFER + V-ING + TO + V-ING (сучасний приклад): 'Many people prefer texting TO making calls'. Підсумок усіх конструкцій: 1) PREFER + V-ing + TO + V-ing = загальне вподобання ('I prefer tea to coffee'); 2) WOULD PREFER + to V + rather than + V = конкретна ситуація; 3) WOULD RATHER + V = конкретний вибір; 4) WOULD RATHER + S + Past Simple = бажання про іншу людину. Запам'ятайте прийменники: PREFER → TO, WOULD RATHER → THAN. В українській: 'Надають перевагу листуванню перед дзвінками' — 'перед' = TO."
+      }
+    ]
+  },
+  {
+    "key": "had_better",
+    "name": "Had Better",
+    "description": "Поради та попередження (had better, ought to)",
+    "iconName": "exclamationmark.triangle.fill",
+    "color": "#dc2626",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ue_hb1",
+        "question": "You _____ leave now or you'll miss the bus.",
+        "translation": "(Тобі краще піти зараз, інакше пропустиш автобус.)",
+        "options": [
+          "had better",
+          "have better",
+          "would better",
+          "should better"
+        ],
+        "correct": "had better",
+        "explanation": "HAD BETTER + BARE INFINITIVE: 'You HAD BETTER leave now' = 'Тобі краще піти зараз'. HAD BETTER = сильна порада з відтінком ПОПЕРЕДЖЕННЯ (якщо не зробиш — будуть негативні наслідки!). Форма: S + HAD BETTER + голий інфінітив (без TO). Скорочення: 'You'd better leave'. Попри HAD (минулий час), значення — ТЕПЕРІШНЄ або МАЙБУТНЄ. ❌ 'have better' ❌ 'should better'. Це сильніше за SHOULD: 'You should leave' (порада) vs 'You'd better leave' (порада + загроза). В українській: 'Тобі краще...', 'Ліпше б ти...' — з попереджувальним тоном."
+      },
+      {
+        "id": "ue_hb2",
+        "question": "She'd better _____ for the exam, or she'll fail.",
+        "translation": "(Їй краще підготуватися до іспиту, інакше вона провалиться.)",
+        "options": [
+          "study",
+          "to study",
+          "studying",
+          "studied"
+        ],
+        "correct": "study",
+        "explanation": "HAD BETTER + BASE FORM (без TO): 'She'd better STUDY' — голий інфінітив. She'd = She had (не She would!). Ключова відмінність: 'She should study' (м'яка порада) vs 'She'd better study' (сильна порада з наслідками). 'Or she'll fail' — пояснення наслідків, що типово для HAD BETTER. Часто HAD BETTER вживається з OR + негативний результат: 'You'd better hurry or you'll be late', 'He'd better apologize or she'll never forgive him'. В українській: 'Їй краще підготуватися, а то не здасть' — 'а то' = 'or'."
+      },
+      {
+        "id": "ue_hb3",
+        "question": "We'd better _____ eat too much before swimming.",
+        "translation": "(Нам краще не їсти забагато перед плаванням.)",
+        "options": [
+          "not",
+          "don't",
+          "doesn't",
+          "didn't"
+        ],
+        "correct": "not",
+        "explanation": "HAD BETTER NOT (негативна форма): 'We'd better NOT eat too much'. NOT ставиться ПІСЛЯ BETTER, ПЕРЕД дієсловом. ❌ 'We hadn't better eat'. ✅ 'We'd better not eat'. Це попередження з негативним відтінком: 'не роби цього, бо буде погано'. Ще: 'You'd better not be late', 'She'd better not forget'. HAD BETTER NOT може звучати як загроза: 'You'd better not lie to me!' (Краще не бреши мені!). В українській: 'Краще не їсти', 'Тобі краще не...' — 'не' перед дієсловом, як і в англійській."
+      },
+      {
+        "id": "ue_hb4",
+        "question": "You ought _____ more water every day.",
+        "translation": "(Тобі слід пити більше води щодня.)",
+        "options": [
+          "to drink",
+          "drink",
+          "drinking",
+          "drunk"
+        ],
+        "correct": "to drink",
+        "explanation": "OUGHT TO + INFINITIVE: 'You ought TO DRINK more water'. OUGHT TO = морально правильна порада, обов'язок, очікування. На відміну від HAD BETTER (де є загроза), OUGHT TO — м'яка порада без попередження. Єдиний модальний дієслово з TO! 'You ought to exercise', 'She ought to apologize'. Часто взаємозамінний зі SHOULD: 'You should/ought to drink more water'. OUGHT TO звучить трохи формальніше. Негативна форма: 'You ought not to drink so much' (рідко вживається). В українській: 'Тобі слід', 'Тобі варто' — порада без тиску."
+      },
+      {
+        "id": "ue_hb5",
+        "question": "It's getting late. I'd better _____ going.",
+        "translation": "(Вже пізно. Мені краще йти.)",
+        "options": [
+          "get",
+          "to get",
+          "getting",
+          "got"
+        ],
+        "correct": "get",
+        "explanation": "HAD BETTER GET GOING (ідіома): 'I'd better GET going' = 'Мені пора рушати'. GET GOING = почати рухатися, піти. HAD BETTER тут = самопорада (раджу собі). Це дуже природний зворот для завершення зустрічі чи розмови: 'Well, I'd better get going', 'We'd better be off'. Інші побутові вирази: 'I'd better get ready' (краще приготуватися), 'I'd better get some sleep' (краще поспати). Знову: HAD BETTER + bare infinitive (GET, не TO GET). В українській: 'Мені вже пора', 'Краще мені йти' — типове прощання."
+      },
+      {
+        "id": "ue_hb6",
+        "question": "The children ought _____ in bed by nine o'clock.",
+        "translation": "(Діти мали б бути в ліжку до дев'ятої години.)",
+        "options": [
+          "to be",
+          "be",
+          "being",
+          "been"
+        ],
+        "correct": "to be",
+        "explanation": "OUGHT TO BE (стан, який мав би бути): 'The children ought TO BE in bed by nine'. OUGHT TO + BE для того, як МАЛО Б БУТИ. Це очікування або правило. 'She ought to be here by now' (вона мала б вже бути тут), 'The report ought to be ready' (звіт мав би бути готовий). OUGHT TO виражає ОЧІКУВАННЯ (не наказ). Порівняйте: 'must be in bed' (наказ) vs 'ought to be in bed' (очікування/рекомендація). В українській: 'Мали б бути', 'Мають бути' — м'яке очікування, не жорстка вимога."
+      },
+      {
+        "id": "ue_hb7",
+        "question": "You'd better _____ a doctor about that cough.",
+        "translation": "(Тобі краще звернутися до лікаря з приводу цього кашлю.)",
+        "options": [
+          "see",
+          "to see",
+          "seeing",
+          "saw"
+        ],
+        "correct": "see",
+        "explanation": "HAD BETTER для медичних порад: 'You'd better SEE a doctor'. У сфері здоров'я HAD BETTER використовується, коли ситуація серйозна і зволікання може бути небезпечним. 'You'd better get that checked out', 'She'd better rest for a few days'. Порівняйте ступені сили: 'You could see a doctor' (можеш) → 'You should see a doctor' (варто) → 'You'd better see a doctor' (дуже раджу!) → 'You must see a doctor' (зобов'язаний). HAD BETTER — ступінь нижче обов'язку, але вище простої поради. В українській: 'Тобі краще сходити до лікаря' — з підтекстом серйозності."
+      },
+      {
+        "id": "ue_hb8",
+        "question": "We ought _____ treated her more kindly.",
+        "translation": "(Нам слід було ставитися до неї добріше.)",
+        "options": [
+          "to have",
+          "have",
+          "to had",
+          "having"
+        ],
+        "correct": "to have",
+        "explanation": "OUGHT TO HAVE + V3 (жаль про минуле): 'We ought TO HAVE TREATED her more kindly' = 'Нам слід було ставитися до неї добріше (але ми не ставились)'. OUGHT TO HAVE + Past Participle = те, що СЛІД БУЛО зробити в минулому, але НЕ ЗРОБЛЕНО. Як SHOULD HAVE + V3. 'You ought to have told me' (мав був сказати), 'She ought to have studied harder' (мала б вчитися). Це м'яка критика або жаль. В українській: 'Слід було', 'Варто було' — минулий час із підтекстом 'але не зробили'. Зворот самокритики."
+      },
+      {
+        "id": "ue_hb9",
+        "question": "You'd better not _____ late for the interview.",
+        "translation": "(Тобі краще не запізнюватися на співбесіду.)",
+        "options": [
+          "be",
+          "to be",
+          "being",
+          "been"
+        ],
+        "correct": "be",
+        "explanation": "HAD BETTER NOT + BE (попередження про стан): 'You'd better NOT BE late'. HAD BETTER NOT + BE — попередження про ситуацію, стан. Це серйозніше за 'Don't be late' — є підтекст наслідків (не візьмуть на роботу). Ще: 'You'd better not be lying to me', 'He'd better not be here when I come back'. HAD BETTER NOT часто виражає ЗАГРОЗУ в розмовній мові: 'You'd better not touch my stuff!' (Тобі краще не чіпати мої речі!). В українській: 'Спробуй тільки запізнитися!', 'Не смій запізнюватися!' — загрозливий тон."
+      },
+      {
+        "id": "ue_hb10",
+        "question": "She'd better _____ an umbrella; it looks like rain.",
+        "translation": "(Їй краще взяти парасольку; схоже на дощ.)",
+        "options": [
+          "take",
+          "to take",
+          "taking",
+          "took"
+        ],
+        "correct": "take",
+        "explanation": "HAD BETTER для практичних порад: 'She'd better TAKE an umbrella'. HAD BETTER ідеально підходить для практичних, побутових порад, коли ви бачите очевидну причину діяти. 'It looks like rain' = обґрунтування поради. Ще: 'You'd better bring a jacket — it's cold', 'We'd better leave early — there'll be traffic'. HAD BETTER + пояснення = переконливіша порада. В розмовній мові дуже поширений: 'You'd better check your phone', 'I'd better fill up the car'. В українській: 'Їй краще взяти парасольку' — побутова порада з підтекстом 'інакше змокне'."
+      },
+      {
+        "id": "ue_hb11",
+        "question": "You ought _____ be more careful with your money.",
+        "translation": "(Тобі слід бути обережнішим/обережнішою з грошима.)",
+        "options": [
+          "to",
+          "–",
+          "for",
+          "at"
+        ],
+        "correct": "to",
+        "explanation": "OUGHT TO (прийменник TO обов'язковий): 'You ought TO be more careful'. Пам'ятайте: OUGHT — єдине модальне дієслово з TO! Всі інші модальні — без TO: 'should be', 'must be', 'can be', ALE 'ought TO be'. В заперечній формі: 'ought not to' (формально) або 'oughtn't to' (рідко, BrE). В AmE OUGHT TO рідше вживається — частіше SHOULD. В BrE OUGHT TO лишається звичним, особливо у формальному мовленні. В українській: 'Тобі слід бути' — прийменник 'бути' після 'слід'. Природно і м'яко."
+      },
+      {
+        "id": "ue_hb12",
+        "question": "Hadn't you better _____ your parents about the trip?",
+        "translation": "(Чи не краще б тобі розповісти батькам про подорож?)",
+        "options": [
+          "tell",
+          "to tell",
+          "telling",
+          "told"
+        ],
+        "correct": "tell",
+        "explanation": "HADN'T S BETTER (питальна форма): 'Hadn't you better TELL your parents?' = 'Чи не краще б тобі сказати?'. Питальна форма HAD BETTER — інверсія: HADN'T + S + BETTER + V. Це риторичне питання — порада у формі запитання. Звучить м'якше за твердження: 'You'd better tell' (наказова порада) vs 'Hadn't you better tell?' (делікатна порада). Ще: 'Hadn't we better start?', 'Hadn't she better check?'. В розмовній мові частіше: 'Don't you think you'd better tell them?'. В українській: 'Хіба тобі не краще сказати?' — питання-порада."
+      },
+      {
+        "id": "ue_hb13",
+        "question": "The students _____ to submit their essays by Friday.",
+        "translation": "(Студенти мають подати свої есе до п'ятниці.)",
+        "options": [
+          "ought",
+          "had better",
+          "rather",
+          "prefer"
+        ],
+        "correct": "ought",
+        "explanation": "OUGHT TO для академічних дедлайнів: 'Students OUGHT TO submit essays by Friday'. OUGHT TO тут = правило/очікування інституції. Це не загроза (HAD BETTER), а нормативне очікування. OUGHT TO в академічному контексті: 'Students ought to attend all lectures', 'Researchers ought to cite their sources'. Порівняйте: 'Students had better submit by Friday' (= інакше будуть наслідки — загрозливіше). OUGHT TO = 'так правильно робити'. В українській: 'Студенти мають подати', 'Студентам слід подати' — нейтральне очікування."
+      },
+      {
+        "id": "ue_hb14",
+        "question": "The weather's awful. We'd better _____ indoors.",
+        "translation": "(Погода жахлива. Нам краще залишитися вдома.)",
+        "options": [
+          "stay",
+          "to stay",
+          "staying",
+          "stayed"
+        ],
+        "correct": "stay",
+        "explanation": "HAD BETTER + BARE INF для рішень через обставини: 'We'd better STAY indoors'. Тут HAD BETTER = раціональне рішення через зовнішні обставини (погодні умови). Не загроза, а здоровий глузд. Ще: 'We'd better cancel the picnic', 'You'd better drive slowly on icy roads'. HAD BETTER для негайних рішень: зараз ситуація → зараз дія. Не для довгострокових порад (там SHOULD/OUGHT TO). В українській: 'Краще залишитися вдома' — раціональна порада. Живий, розмовний стиль — використовується щодня."
+      },
+      {
+        "id": "ue_hb15",
+        "question": "You'd better _____ that you've locked all the doors.",
+        "translation": "(Тобі краще переконатися, що ти замкнув/замкнула всі двері.)",
+        "options": [
+          "make sure",
+          "to make sure",
+          "making sure",
+          "made sure"
+        ],
+        "correct": "make sure",
+        "explanation": "HAD BETTER MAKE SURE (підсумок теми): 'You'd better MAKE SURE you've locked all the doors'. MAKE SURE = переконатися. HAD BETTER + MAKE SURE = настійна порада перевірити. Підсумок трьох конструкцій: 1) HAD BETTER + V = сильна порада з попередженням, bare infinitive; 2) OUGHT TO + V = м'яка порада, моральний обов'язок, з TO; 3) SHOULD + V = загальна порада, без TO. Шкала сили: MUST > HAD BETTER > SHOULD/OUGHT TO > COULD. В українській: 'Краще переконайся', 'Тобі варто перевірити' — різні ступені настійності."
+      }
+    ]
   }
 ]

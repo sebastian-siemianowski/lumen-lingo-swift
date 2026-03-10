@@ -16737,5 +16737,1015 @@
         "explanation": "'Remont kuchni' (ремонт кухні) — родовий: 'kuchnia' → 'kuchni'. 'Potrwać' (протривати) — 'potrwa' (3 ос. одн. майб.). 'Jeszcze dwa tygodnie' (ще два тижні) — знахідний: 'tydzień' → 'tygodnie' (2-4). В укр. 'ремонт кухні' — ідентична конструкція. 'Kuchnia' / 'кухня' — спільний корінь."
       }
     ]
+  },
+  {
+    "key": "family_relationships",
+    "name": "Сім'я та стосунки",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "up_fam1",
+        "question": "Moja _____ ma pięćdziesiąt lat.",
+        "translation": "(Моїй мамі п'ятдесят років.)",
+        "options": [
+          "mama",
+          "mamą",
+          "mamy",
+          "mamie"
+        ],
+        "correct": "mama",
+        "explanation": "'Mama' (мама) — називний, підмет. 'Ma pięćdziesiąt lat' (має п'ятдесят років) — конструкція 'mieć + роки'. 'Lat' — родовий множини від 'rok' (рік), суплетивна форма 'lato' → 'lat'. В укр. 'мамі п'ятдесят років' — давальний + 'років', а в польськ. 'mama ma' — називний + 'mieć'."
+      },
+      {
+        "id": "up_fam2",
+        "question": "Mój brat jest _____ ode mnie o dwa lata.",
+        "translation": "(Мій брат старший від мене на два роки.)",
+        "options": [
+          "starszy",
+          "stary",
+          "najstarszy",
+          "starszego"
+        ],
+        "correct": "starszy",
+        "explanation": "'Starszy' (старший) — порівняльний від 'stary' (старий). 'Ode mnie' (від мене) — 'od' + родовий, з евфонічним 'e'. 'O dwa lata' (на два роки) — знахідний для різниці. В укр. 'старший від мене' — ідентична конструкція. 'Brat' (брат) — спільнослов'янське слово."
+      },
+      {
+        "id": "up_fam3",
+        "question": "Moja siostra _____ się w przyszłym roku.",
+        "translation": "(Моя сестра вийде заміж наступного року.)",
+        "options": [
+          "wyda",
+          "wychodzi",
+          "wychodziła",
+          "wydaje"
+        ],
+        "correct": "wyda",
+        "explanation": "'Wydać się' (вийти заміж, архаїчна конструкція) — зазвичай кажуть 'wyjść za mąż'. 'Wyda się' — правильна форма майб. часу, але частіше вживають 'wyjdzie za mąż'. 'W przyszłym roku' (наступного року) — місцевий. В укр. 'вийти заміж' — аналогічний вираз."
+      },
+      {
+        "id": "up_fam4",
+        "question": "Dziadkowie _____ na wsi pod Krakowem.",
+        "translation": "(Дідусь і бабуся живуть у селі під Краковом.)",
+        "options": [
+          "mieszkają",
+          "mieszka",
+          "mieszkali",
+          "mieszkać"
+        ],
+        "correct": "mieszkają",
+        "explanation": "'Mieszkają' (мешкають, живуть) — 3 ос. множини від 'mieszkać'. 'Dziadkowie' (дідусі, дідусь і бабуся) — множина від 'dziadek'. 'Na wsi' (на селі, в селі) — місцевий: 'wieś' → 'wsi'. 'Pod Krakowem' (під Краковом) — орудний. В укр. 'дідусь і бабуся' — два слова замість одного."
+      },
+      {
+        "id": "up_fam5",
+        "question": "Jesteśmy _____ od dziesięciu lat.",
+        "translation": "(Ми одружені вже десять років.)",
+        "options": [
+          "małżeństwem",
+          "małżeństwo",
+          "małżeństwa",
+          "małżeństwie"
+        ],
+        "correct": "małżeństwem",
+        "explanation": "'Być małżeństwem' (бути подружжям) — орудний: 'małżeństwo' → 'małżeństwem'. 'Od dziesięciu lat' (вже десять років) — родовий: 'dziesięć' → 'dziesięciu'. В укр. 'ми одружені' — прикметникова конструкція, а в польськ. — іменникова 'бути подружжям'. Різна граматична стратегія."
+      },
+      {
+        "id": "up_fam6",
+        "question": "Moja córka _____ do przedszkola.",
+        "translation": "(Моя донька ходить до дитячого садка.)",
+        "options": [
+          "chodzi",
+          "idzie",
+          "pójdzie",
+          "chodziła"
+        ],
+        "correct": "chodzi",
+        "explanation": "'Chodzić' (ходити, регулярно) — 'chodzi' (3 ос. одн.). 'Iść' (йти, зараз) — одноразовий рух. 'Córka' (донька, дочка) — 'córka' від 'córa' (застаріле). 'Przedszkole' (дитячий садок) → 'do przedszkola' (родовий). В укр. 'ходить до садочка' — ідентична конструкція."
+      },
+      {
+        "id": "up_fam7",
+        "question": "Syn _____ do ojca.",
+        "translation": "(Син схожий на батька.)",
+        "options": [
+          "jest podobny",
+          "jest podobna",
+          "jest podobne",
+          "są podobni"
+        ],
+        "correct": "jest podobny",
+        "explanation": "'Podobny do' (схожий на) + родовий: 'ojciec' → 'ojca'. 'Syn' (син) — чол. рід → 'podobny'. В укр. 'схожий на' + знахідний (інший прийменник і відмінок!). 'Ojciec' (батько) — формальніше, ніж 'tata' (тато). 'Podobny' (подібний) — спільний корінь 'под-/pod-'."
+      },
+      {
+        "id": "up_fam8",
+        "question": "Moi _____ poznali się na studiach.",
+        "translation": "(Мої батьки познайомилися на студіях.)",
+        "options": [
+          "rodzice",
+          "rodzicom",
+          "rodziców",
+          "rodzicami"
+        ],
+        "correct": "rodzice",
+        "explanation": "'Rodzice' (батьки) — називний множини віроособовий від 'rodzic'. 'Poznali się' (познайомилися) — чол. віроособова форма мин. часу. 'Na studiach' (на студіях, в університеті) — місцевий множини. В укр. 'батьки' — інший корінь ('батько' vs. 'rodzic' від 'rodzić' — народжувати)."
+      },
+      {
+        "id": "up_fam9",
+        "question": "Moja teściowa _____ obiad w niedzielę.",
+        "translation": "(Моя теща/свекруха готує обід у неділю.)",
+        "options": [
+          "gotuje",
+          "gotować",
+          "gotowała",
+          "ugotuje"
+        ],
+        "correct": "gotuje",
+        "explanation": "'Gotować' (готувати) — 'gotuje' (3 ос. одн. теперішній). 'Teściowa' (теща/свекруха) — від 'teść' (тесть/свекор). В польській одне слово для обох значень, а в укр. — різні: 'теща' (мати дружини) / 'свекруха' (мати чоловіка). 'W niedzielę' (в неділю) — знахідний."
+      },
+      {
+        "id": "up_fam10",
+        "question": "Wujek _____ nam prezenty na gwiazdkę.",
+        "translation": "(Дядько приносить нам подарунки на Різдво.)",
+        "options": [
+          "przynosi",
+          "przyniesie",
+          "przyniósł",
+          "przynosić"
+        ],
+        "correct": "przynosi",
+        "explanation": "'Przynosić' (приносити, недок.) — 'przynosi' (3 ос. одн.). 'Wujek' (дядько — брат матері) — в польськ. 'wuj/wujek' (по матері) vs. 'stryj' (по батькові). 'Na gwiazdkę' (на Різдво, букв. 'на зірочку') — розмовне. 'Nam' (нам) — давальний. В укр. 'дядько' — для обох."
+      },
+      {
+        "id": "up_fam11",
+        "question": "Jesteśmy _____ rodziną od pokoleń.",
+        "translation": "(Ми — дружня сім'я вже поколіннями.)",
+        "options": [
+          "zgraną",
+          "zgrany",
+          "zgrane",
+          "zgrani"
+        ],
+        "correct": "zgraną",
+        "explanation": "'Zgraną rodziną' (дружньою сім'єю) — орудний жін. роду: 'zgrana rodzina' → 'zgraną rodziną'. 'Być' + орудний для характеристики. 'Od pokoleń' (поколіннями, від поколінь) — родовий мн. 'Zgrana' (згуртована, дружня) від 'zgrać się'. В укр. 'дружня сім'я' — інше слово."
+      },
+      {
+        "id": "up_fam12",
+        "question": "Mam bliźniaczą _____.",
+        "translation": "(У мене є сестра-близнючка.)",
+        "options": [
+          "siostrę",
+          "siostra",
+          "siostry",
+          "siostrą"
+        ],
+        "correct": "siostrę",
+        "explanation": "'Mieć siostrę' (мати сестру) — знахідний: 'siostra' → 'siostrę'. 'Bliźniacza' (близнючкова) — прикметник жін. роду від 'bliźniak' (близнюк). 'Mam' (маю, 1 ос. одн.). В укр. 'сестра' → 'сестру' (знахідний) — аналогічна відміна. 'Bliźniak' / 'близнюк' — спільний корінь 'bliz-/близ-'."
+      },
+      {
+        "id": "up_fam13",
+        "question": "Nasz _____ roczek w zeszłym tygodniu.",
+        "translation": "(Наш син святкував перший рочок минулого тижня.)",
+        "options": [
+          "syn obchodził",
+          "córka obchodziła",
+          "syn obchodzi",
+          "syn obchodziłem"
+        ],
+        "correct": "syn obchodził",
+        "explanation": "'Obchodzić' (святкувати, відзначати) — 'obchodził' (3 ос. одн. чол. рід мин. час). 'Syn' (син) — чол. рід → 'obchodził'. 'Roczek' (рочок, перший рік) — здрібніла від 'rok'. 'W zeszłym tygodniu' (минулого тижня) — місцевий. В укр. 'святкувати' — інший корінь."
+      },
+      {
+        "id": "up_fam14",
+        "question": "Wnuczka jest _____ babci.",
+        "translation": "(Онучка — бабусина улюблениця.)",
+        "options": [
+          "oczkiem w głowie",
+          "okiem w głowie",
+          "oczko w głowie",
+          "oczkiem głowy"
+        ],
+        "correct": "oczkiem w głowie",
+        "explanation": "'Być oczkiem w głowie' (бути улюбленцем, букв. 'зіницею в голові') — стійкий фразеологізм. 'Oczko' (зіниця, око) — здрібніла від 'oko'. 'Babcia' (бабуся) → 'babci' (родовий). В укр. 'зіниця ока' — інший фразеологізм. 'Wnuczka' (онучка) від 'wnuk' (онук)."
+      },
+      {
+        "id": "up_fam15",
+        "question": "Chrzestna _____ mi zegarek na osiemnastkę.",
+        "translation": "(Хрещена подарувала мені годинник на вісімнадцятиліття.)",
+        "options": [
+          "podarowała",
+          "podarował",
+          "podarowali",
+          "podarowano"
+        ],
+        "correct": "podarowała",
+        "explanation": "'Podarowała' — жін. рід мин. часу, бо 'chrzestna' (хрещена мати) — жін. роду. 'Podarować' (подарувати) + давальний 'mi' (мені) + знахідний 'zegarek' (годинник). 'Na osiemnastkę' (на вісімнадцятиліття) — польська традиція великого свята. В укр. 'хрещена' — те саме слово."
+      }
+    ]
+  },
+  {
+    "key": "emotions_feelings",
+    "name": "Емоції та почуття",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "up_emot1",
+        "question": "Jestem bardzo _____ z wyników egzaminu.",
+        "translation": "(Я дуже задоволений результатами іспиту.)",
+        "options": [
+          "zadowolony",
+          "zadowolona",
+          "zadowoleni",
+          "zadowoleniem"
+        ],
+        "correct": "zadowolony",
+        "explanation": "'Zadowolony z' (задоволений з/від) + родовий: 'wyniki' → 'wyników'. 'Bardzo' (дуже). Форма чол. роду — 'zadowolony', жін. — 'zadowolona'. В укр. 'задоволений' + орудний ('результатами'), а в польськ. + 'z' + родовий. Різна рекція при спільному корені 'wol-/вол-' (воля)."
+      },
+      {
+        "id": "up_emot2",
+        "question": "Boję _____ ciemności.",
+        "translation": "(Боюся темряви.)",
+        "options": [
+          "się",
+          "mnie",
+          "mi",
+          "ja"
+        ],
+        "correct": "się",
+        "explanation": "'Bać się' (боятися) + родовий: 'ciemność' → 'ciemności'. 'Boję się' (боюся, 1 ос. одн.). Зворотне дієслово з 'się'. В укр. 'боюся темряви' — ідентична конструкція: зворотне + родовий. 'Ciemność' (темрява) від 'ciemny' (темний). Спільний корінь 'тем-/ciem-'."
+      },
+      {
+        "id": "up_emot3",
+        "question": "Czuję się _____ po tej wiadomości.",
+        "translation": "(Почуваюся розгубленим після цієї новини.)",
+        "options": [
+          "zagubiony",
+          "zagubiona",
+          "zagubione",
+          "zagubieniem"
+        ],
+        "correct": "zagubiony",
+        "explanation": "'Zagubiony' (розгублений, загублений) — кол. рід, дієприкметник від 'zagubić się' (загубитися). 'Po tej wiadomości' (після цієї новини) — місцевий: 'wiadomość' → 'wiadomości'. В укр. 'розгублений' — той самий префікс 'роз-/za-', але різний корінь ('губ-/gub-' — спільний!)."
+      },
+      {
+        "id": "up_emot4",
+        "question": "Jestem _____ na brata za kłamstwo.",
+        "translation": "(Я злий на брата за брехню.)",
+        "options": [
+          "zły",
+          "zła",
+          "złe",
+          "źle"
+        ],
+        "correct": "zły",
+        "explanation": "'Zły na' (злий на) + знахідний: 'brat' → 'brata'. 'Za kłamstwo' (за брехню) — знахідний: 'kłamstwo'. В укр. 'злий на' — ідентична конструкція. 'Kłamstwo' (брехня) від 'kłamać' (брехати). В укр. 'брехня' від 'брехати' — споріднені ('кламати' — застаріле)."
+      },
+      {
+        "id": "up_emot5",
+        "question": "Ta muzyka _____ mnie do łez.",
+        "translation": "(Ця музика зворушує мене до сліз.)",
+        "options": [
+          "wzrusza",
+          "wzruszy",
+          "wzruszę",
+          "wzruszony"
+        ],
+        "correct": "wzrusza",
+        "explanation": "'Wzruszać' (зворушувати) — 'wzrusza' (3 ос. одн. теперішній). 'Do łez' (до сліз) — родовий множини: 'łza' → 'łez'. 'Mnie' (мене) — знахідний. В укр. 'зворушувати' — спільний корінь 'руш-/rusz-'. 'Łza' (сльоза) / 'сльоза' — спільнослов'янське."
+      },
+      {
+        "id": "up_emot6",
+        "question": "Nie mogę _____ stresu w pracy.",
+        "translation": "(Не можу витримати стресу на роботі.)",
+        "options": [
+          "znieść",
+          "znosić",
+          "zniesiony",
+          "znoszony"
+        ],
+        "correct": "znieść",
+        "explanation": "'Znieść' (витримати, знести) — доконаний вид після 'mogę'. 'Znosić' (зносити, недок.) — регулярна дія. 'Stresu' — родовий: 'stres' → 'stresu'. 'W pracy' (на роботі) — місцевий: 'praca' → 'pracy'. В укр. 'витримати стрес' — знахідний (інший відмінок). 'Znieść' = 'знести'."
+      },
+      {
+        "id": "up_emot7",
+        "question": "Jestem _____ jego zachowaniem.",
+        "translation": "(Я розчарований його поведінкою.)",
+        "options": [
+          "rozczarowany",
+          "rozczarowana",
+          "rozczarowani",
+          "rozczarowanie"
+        ],
+        "correct": "rozczarowany",
+        "explanation": "'Rozczarowany' (розчарований) + орудний: 'zachowanie' → 'zachowaniem'. 'Jego' (його) — родовий/знахідний. В укр. 'розчарований' + орудний — ідентична рекція. 'Rozczarować' (розчарувати) — спільний корінь 'чар-/czar-' (чари, чарувати). Префікс 'роз-/roz-' — теж спільний."
+      },
+      {
+        "id": "up_emot8",
+        "question": "Tęsknię _____ domem i rodziną.",
+        "translation": "(Сумую за домом і родиною.)",
+        "options": [
+          "za",
+          "o",
+          "do",
+          "na"
+        ],
+        "correct": "za",
+        "explanation": "'Tęsknić za' (сумувати за) + орудний: 'dom' → 'domem', 'rodzina' → 'rodziną'. 'Tęsknię' (сумую, 1 ос. одн.) від 'tęsknić'. В укр. 'сумувати за' + орудний — ідентична конструкція. 'Tęsknota' (туга, сум) — від давньослов'янського 'тьсковати'."
+      },
+      {
+        "id": "up_emot9",
+        "question": "Jestem _____, że udało się to zrobić.",
+        "translation": "(Я радий, що вдалося це зробити.)",
+        "options": [
+          "rad",
+          "rada",
+          "radzi",
+          "rado"
+        ],
+        "correct": "rad",
+        "explanation": "'Rad' (радий) — коротка форма прикметника, тільки предикативно. 'Rad' (чол. рід), 'rada' (жін.), 'radzi' (мн. віроос.). 'Udało się' (вдалося) — безособове зворотне. В укр. 'радий' — повна форма (нема короткої). 'Rad' — від 'radość' (радість). Спільний корінь 'рад-/rad-'."
+      },
+      {
+        "id": "up_emot10",
+        "question": "Mam _____ przed jutrzejszą prezentacją.",
+        "translation": "(Хвилююсь перед завтрашньою презентацією.)",
+        "options": [
+          "tremę",
+          "trema",
+          "tremy",
+          "tremą"
+        ],
+        "correct": "tremę",
+        "explanation": "'Mieć tremę' (хвилюватися, мати тремтіння) — знахідний: 'trema' → 'tremę'. 'Przed jutrzejszą prezentacją' (перед завтрашньою презентацією) — орудний: 'jutrzejsza prezentacja' → 'jutrzejszą prezentacją'. В укр. 'мати трему' — ідентична конструкція. 'Trema' — запозичення з італійської."
+      },
+      {
+        "id": "up_emot11",
+        "question": "Denerwuję _____ przed każdym lotem.",
+        "translation": "(Нервуюся перед кожним польотом.)",
+        "options": [
+          "się",
+          "mnie",
+          "mi",
+          "siebie"
+        ],
+        "correct": "się",
+        "explanation": "'Denerwować się' (нервуватися) — зворотне дієслово. 'Denerwuję się' (нервуюся, 1 ос. одн.). 'Przed każdym lotem' (перед кожним польотом) — орудний: 'każdy lot' → 'każdym lotem'. В укр. 'нервуватися' — ідентична конструкція. 'Lot' (політ) / 'літ/лот' — спільний корінь 'let-/lot-'."
+      },
+      {
+        "id": "up_emot12",
+        "question": "Ta historia naprawdę mnie _____.",
+        "translation": "(Ця історія мене справді зворушила.)",
+        "options": [
+          "poruszyła",
+          "poruszył",
+          "poruszyli",
+          "poruszone"
+        ],
+        "correct": "poruszyła",
+        "explanation": "'Poruszyła' — жін. рід мин. часу, бо 'historia' — жіночого роду. 'Poruszyć' (порушити, зворушити) — доконаний. 'Naprawdę' (справді, насправді) — від 'prawda'. 'Mnie' (мене) — знахідний. В укр. 'порушити' / 'зворушити' — різні значення, а в польськ. 'poruszyć' — обидва."
+      },
+      {
+        "id": "up_emot13",
+        "question": "Jestem _____ tego całego zamieszania.",
+        "translation": "(Я втомлений від усього цього хаосу.)",
+        "options": [
+          "zmęczony",
+          "zmęczona",
+          "zmęczeni",
+          "zmęczenie"
+        ],
+        "correct": "zmęczony",
+        "explanation": "'Zmęczony' (втомлений) + родовий або орудний: 'tego całego zamieszania' — родовий. 'Zamieszanie' (хаос, метушня) → 'zamieszania' (родовий). 'Całego' (всього, цілого). В укр. 'втомлений від' + родовий — ідентична рекція. 'Zmęczony' від 'zmęczyć' (втомити), як укр. 'змучений'."
+      },
+      {
+        "id": "up_emot14",
+        "question": "Z dumy _____ mi łzy w oczach.",
+        "translation": "(Від гордості в мене сльози на очах.)",
+        "options": [
+          "stanęły",
+          "stanął",
+          "stanęło",
+          "stanęli"
+        ],
+        "correct": "stanęły",
+        "explanation": "'Stanęły' — невіроособова множина мин. часу, бо 'łzy' (сльози) — множина жін. роду. 'Stanąć' (стати, з'явитися) — доконаний. 'Z dumy' (від гордості) — родовий: 'duma' → 'dumy'. 'W oczach' — місцевий мн. В укр. 'сльози на очах' — називний. 'Duma/дума' — загальнослов'янське слово."
+      },
+      {
+        "id": "up_emot15",
+        "question": "Martwię się _____ przyszłość dzieci.",
+        "translation": "(Хвилююся про майбутнє дітей.)",
+        "options": [
+          "o",
+          "za",
+          "na",
+          "w"
+        ],
+        "correct": "o",
+        "explanation": "'Martwić się o' (хвилюватися про/за) + знахідний: 'przyszłość' (майбутнє). 'Dzieci' (дітей) — родовий множини від 'dziecko'. В укр. 'хвилюватися за' + знахідний — різний прийменник ('о' vs. 'за'), але однаковий відмінок. 'Martwić się' (мартвитися, хвилюватися) — давнє слово."
+      }
+    ]
+  },
+  {
+    "key": "sports_hobbies",
+    "name": "Спорт та хобі",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "up_sprt1",
+        "question": "Gram w _____ dwa razy w tygodniu.",
+        "translation": "(Граю у футбол двічі на тиждень.)",
+        "options": [
+          "piłkę nożną",
+          "piłka nożna",
+          "piłki nożnej",
+          "piłką nożną"
+        ],
+        "correct": "piłkę nożną",
+        "explanation": "'Grać w' (грати в) + знахідний: 'piłka nożna' → 'piłkę nożną'. 'Dwa razy w tygodniu' (двічі на тиждень) — 'tydzień' → 'tygodniu' (місцевий). 'Piłka nożna' (футбол, букв. 'ножний м'яч'). В укр. 'грати у футбол' — запозичення з англ., а в польськ. — описова назва."
+      },
+      {
+        "id": "up_sprt2",
+        "question": "Lubię _____ na rowerze w weekendy.",
+        "translation": "(Люблю кататися на велосипеді у вихідні.)",
+        "options": [
+          "jeździć",
+          "jechać",
+          "jazda",
+          "jeżdżę"
+        ],
+        "correct": "jeździć",
+        "explanation": "'Jeździć' (їздити, кататися) — недоконаний багатократний після 'lubić'. 'Na rowerze' (на велосипеді) — місцевий: 'rower' → 'rowerze'. 'W weekendy' (у вихідні) — знахідний множини. В укр. 'кататися на велосипеді' — зворотне, а в польськ. 'jeździć' — без 'się'."
+      },
+      {
+        "id": "up_sprt3",
+        "question": "Trenuję _____ od pięciu lat.",
+        "translation": "(Тренуюся з плавання вже п'ять років.)",
+        "options": [
+          "pływanie",
+          "pływania",
+          "pływać",
+          "pływaniem"
+        ],
+        "correct": "pływanie",
+        "explanation": "'Trenować pływanie' (тренувати плавання) — знахідний: 'pływanie' (= називний, сер. рід). 'Od pięciu lat' (вже п'ять років) — родовий: 'pięć' → 'pięciu'. 'Pływanie' (плавання) від 'pływać' (плавати). В укр. 'тренуватися з плавання' — з родовим та прийменником 'з'."
+      },
+      {
+        "id": "up_sprt4",
+        "question": "Mecz _____ się w dogrywce.",
+        "translation": "(Матч закінчився в додатковому часі.)",
+        "options": [
+          "zakończył",
+          "zakończyła",
+          "zakończyło",
+          "zakończyli"
+        ],
+        "correct": "zakończył",
+        "explanation": "'Zakończył się' — чол. рід мин. часу, бо 'mecz' (матч) — чоловічого роду. 'W dogrywce' (у додатковому часі, в овертаймі) — місцевий: 'dogrywka' → 'dogrywce'. 'Dogrywka' від 'dogrywać' (догравати). В укр. 'матч' — запозичення з англ., як і в польськ. 'mecz'."
+      },
+      {
+        "id": "up_sprt5",
+        "question": "W wolnym czasie lubię _____.",
+        "translation": "(У вільний час люблю читати.)",
+        "options": [
+          "czytać",
+          "czytanie",
+          "przeczytać",
+          "czytam"
+        ],
+        "correct": "czytać",
+        "explanation": "'Lubić' + інфінітив: 'lubię czytać' (люблю читати). 'W wolnym czasie' (у вільний/вільному час) — місцевий: 'wolny czas' → 'wolnym czasie'. 'Czytać' (читати) — спільнослов'янський корінь 'чит-/czyt-'. В укр. 'люблю читати' — ідентична конструкція. 'Wolny' (вільний) vs. укр. 'вільний'."
+      },
+      {
+        "id": "up_sprt6",
+        "question": "Drużyna _____ w finale mistrzostw.",
+        "translation": "(Команда виграла у фіналі чемпіонату.)",
+        "options": [
+          "wygrała",
+          "wygrał",
+          "wygrali",
+          "wygrało"
+        ],
+        "correct": "wygrała",
+        "explanation": "'Wygrała' — жін. рід мин. часу, бо 'drużyna' (команда) — жіночого роду. 'W finale' (у фіналі) — місцевий: 'finał' → 'finale'. 'Mistrzostwa' (чемпіонат) → 'mistrzostw' (родовий множини). В укр. 'команда виграла' — також жін. рід. 'Drużyna/дружина' — спільний корінь, різне значення."
+      },
+      {
+        "id": "up_sprt7",
+        "question": "Chodzę na _____ dwa razy w tygodniu.",
+        "translation": "(Ходжу на силовні тренування двічі на тиждень.)",
+        "options": [
+          "siłownię",
+          "siłownia",
+          "siłowni",
+          "siłownią"
+        ],
+        "correct": "siłownię",
+        "explanation": "'Chodzić na' + знахідний: 'siłownia' → 'siłownię'. 'Siłownia' (тренажерний зал, силовня) від 'siła' (сила). 'Dwa razy w tygodniu' (двічі на тиждень). В укр. 'силовня' або 'тренажерний зал' — 'siłownia' є калькою. 'Chodzić na siłownię' = 'ходити на силовню'."
+      },
+      {
+        "id": "up_sprt8",
+        "question": "Uczę się _____ na gitarze od roku.",
+        "translation": "(Вчуся грати на гітарі вже рік.)",
+        "options": [
+          "grać",
+          "gry",
+          "grania",
+          "granie"
+        ],
+        "correct": "grać",
+        "explanation": "'Uczyć się grać' (вчитися грати) — інфінітив після 'uczyć się'. 'Na gitarze' (на гітарі) — місцевий: 'gitara' → 'gitarze'. 'Od roku' (вже рік, від року) — родовий: 'rok' → 'roku'. В укр. 'вчитися грати' — ідентична конструкція. 'Gitara/гітара' — спільне запозичення."
+      },
+      {
+        "id": "up_sprt9",
+        "question": "Biegnę _____ co rano przed pracą.",
+        "translation": "(Бігаю щоранку перед роботою.)",
+        "options": [
+          "maraton treningowy",
+          "pięć kilometrów",
+          "na bieżni",
+          "z kolegą"
+        ],
+        "correct": "pięć kilometrów",
+        "explanation": "'Pięć kilometrów' (п'ять кілометрів) — родовий множини: 'kilometr' → 'kilometrów'. 'Co rano' (щоранку) — сталий зворот. 'Przed pracą' (перед роботою) — орудний: 'praca' → 'pracą'. 'Biegać' (бігати) — 'biegnę' (бігаю, 1 ос. одн.). В укр. 'п'ять кілометрів' — також родовий множини."
+      },
+      {
+        "id": "up_sprt10",
+        "question": "Sędzia _____ żółtą kartkę zawodnikowi.",
+        "translation": "(Суддя показав жовту картку гравцю.)",
+        "options": [
+          "pokazał",
+          "pokazała",
+          "pokazali",
+          "pokazano"
+        ],
+        "correct": "pokazał",
+        "explanation": "'Pokazał' — чол. рід мин. часу, бо 'sędzia' (суддя) — чол. роду (хоча закінчення на '-a'!). 'Żółtą kartkę' — знахідний жін.: 'żółta kartka' → 'żółtą kartkę'. 'Zawodnikowi' — давальний. У польськ. 'sędzia' — чол. рід з жін. закінченням, як укр. 'суддя'."
+      },
+      {
+        "id": "up_sprt11",
+        "question": "Moje hobby to _____ znaczków pocztowych.",
+        "translation": "(Моє хобі — збирання поштових марок.)",
+        "options": [
+          "kolekcjonowanie",
+          "kolekcja",
+          "kolekcjonować",
+          "kolekcji"
+        ],
+        "correct": "kolekcjonowanie",
+        "explanation": "'Kolekcjonowanie' (колекціонування) — іменник віддієслівний від 'kolekcjonować'. 'Znaczki pocztowe' (поштові марки) → 'znaczków pocztowych' (родовий мн.). 'Hobby' — невідмінюване запозичення. В укр. 'колекціонування' або 'збирання' — ідентична конструкція."
+      },
+      {
+        "id": "up_sprt12",
+        "question": "Zajmuję _____ miejsce w rankingu.",
+        "translation": "(Займаю перше місце в рейтингу.)",
+        "options": [
+          "pierwsze",
+          "pierwszy",
+          "pierwsza",
+          "pierwszego"
+        ],
+        "correct": "pierwsze",
+        "explanation": "'Pierwsze miejsce' (перше місце) — знахідний: 'miejsce' — сер. рід, тому 'pierwsze' (сер. = називний). 'W rankingu' (в рейтингу) — місцевий. 'Zajmować' (займати) — 'zajmuję' (1 ос. одн.). В укр. 'перше місце' — також середній рід. 'Первше/pierwsza' — спільне."
+      },
+      {
+        "id": "up_sprt13",
+        "question": "Zimą lubię _____ na nartach.",
+        "translation": "(Взимку люблю кататися на лижах.)",
+        "options": [
+          "jeździć",
+          "jechać",
+          "jazda",
+          "jezdę"
+        ],
+        "correct": "jeździć",
+        "explanation": "'Jeździć na nartach' (кататися на лижах) — недоконаний багатократний. 'Narty' (лижі) → 'na nartach' (місцевий множини). 'Zimą' (взимку) — орудний: 'zima' → 'zimą'. В укр. 'кататися на лижах' — зворотне, а в польськ. 'jeździć' — без 'się'. 'Narty/нарти' — спільне слово."
+      },
+      {
+        "id": "up_sprt14",
+        "question": "Trener _____ nas do maratonu.",
+        "translation": "(Тренер готує нас до марафону.)",
+        "options": [
+          "przygotowuje",
+          "przygotował",
+          "przygotowywał",
+          "przygotowani"
+        ],
+        "correct": "przygotowuje",
+        "explanation": "'Przygotowywać' (готувати, підготовлювати) — 'przygotowuje' (3 ос. одн. теперішній). 'Nas' (нас) — знахідний. 'Do maratonu' (до марафону) — родовий: 'maraton' → 'maratonu'. В укр. 'готує нас до' — ідентична конструкція. 'Trener' (тренер) — спільне запозичення з англійської."
+      },
+      {
+        "id": "up_sprt15",
+        "question": "Kibice _____ swoją drużynę na stadionie.",
+        "translation": "(Вболівальники підтримують свою команду на стадіоні.)",
+        "options": [
+          "dopingują",
+          "dopinguje",
+          "dopingowali",
+          "dopinguję"
+        ],
+        "correct": "dopingują",
+        "explanation": "'Dopingować' (підтримувати, вболівати) — 'dopingują' (3 ос. множини). 'Kibice' (вболівальники) — множина від 'kibic', запозичення з нім. 'Kiebitz'. 'Swoją drużynę' — знахідний. 'Na stadionie' — місцевий. В укр. 'вболівальники' — від 'вболівати', а польськ. 'kibic' — запозичення."
+      }
+    ]
+  },
+  {
+    "key": "clothing_fashion",
+    "name": "Одяг та мода",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "up_clot1",
+        "question": "Ta sukienka _____ ci bardzo ładnie.",
+        "translation": "(Ця сукня тобі дуже пасує.)",
+        "options": [
+          "pasuje",
+          "pasować",
+          "pasowała",
+          "pasują"
+        ],
+        "correct": "pasuje",
+        "explanation": "'Pasować' (пасувати, підходити) — 'pasuje' (3 ос. одн.). 'Ci' (тобі) — давальний скорочена форма. 'Bardzo ładnie' (дуже гарно). 'Sukienka' (сукня) — здрібніла від 'suknia'. В укр. 'пасує тобі' — ідентична конструкція. 'Ładnie' (гарно) від 'ładny' (гарний)."
+      },
+      {
+        "id": "up_clot2",
+        "question": "Muszę _____ płaszcz, jest zimno na dworze.",
+        "translation": "(Мушу вдягнути пальто, надворі холодно.)",
+        "options": [
+          "założyć",
+          "zakładać",
+          "ubrać",
+          "ubrany"
+        ],
+        "correct": "założyć",
+        "explanation": "'Założyć' (вдягнути, надіти) — доконаний вид для одного предмета. 'Ubrać się' (одягтися — цілком). 'Płaszcz' (пальто, плащ) — чол. рід. 'Na dworze' (надворі) — місцевий. В укр. 'пальто' — невідмінюване запозичення, а польськ. 'płaszcz' — відмінюється. 'Założyć' = 'заложити' (давнє)."
+      },
+      {
+        "id": "up_clot3",
+        "question": "Te spodnie są za _____ w pasie.",
+        "translation": "(Ці штани завузькі в талії.)",
+        "options": [
+          "ciasne",
+          "ciasny",
+          "ciasna",
+          "ciasno"
+        ],
+        "correct": "ciasne",
+        "explanation": "'Za ciasne' (завузькі) — множина, бо 'spodnie' (штани) — тільки множина. 'Ciasny' (тісний, вузький) — множина невіроос.: 'ciasne'. 'W pasie' (в талії, букв. 'в поясі') — місцевий: 'pas' → 'pasie'. В укр. 'штани' — також тільки множина. 'Тісні' — спільний корінь."
+      },
+      {
+        "id": "up_clot4",
+        "question": "Chcę _____ tę bluzkę na mniejszy rozmiar.",
+        "translation": "(Хочу обміняти цю блузку на менший розмір.)",
+        "options": [
+          "wymienić",
+          "wymieniać",
+          "zmienić",
+          "zamienić"
+        ],
+        "correct": "wymienić",
+        "explanation": "'Wymienić' (обміняти) — доконаний з 'wy-'. 'Na mniejszy rozmiar' (на менший розмір) — знахідний: 'mniejszy' (менший). 'Tę bluzkę' — знахідний жін.: 'ta bluzka' → 'tę bluzkę'. В укр. 'обміняти на' — спільний прийменник 'на'. 'Rozmiar' (розмір) — від 'mierzyć' (міряти)."
+      },
+      {
+        "id": "up_clot5",
+        "question": "Ten krawat _____ do koszuli.",
+        "translation": "(Цей краватка підходить до сорочки.)",
+        "options": [
+          "pasuje",
+          "pasują",
+          "pasował",
+          "pasować"
+        ],
+        "correct": "pasuje",
+        "explanation": "'Pasować do' (підходити до) + родовий: 'koszula' → 'koszuli'. 'Krawat' (краватка) — чол. рід, від франц. 'cravate'. 'Koszula' (сорочка) — від лат. 'casula'. В укр. 'краватка' — жін. рід, а в польськ. 'krawat' — чол. рід. Різний рід одного предмета!"
+      },
+      {
+        "id": "up_clot6",
+        "question": "Włożyłam nową _____ na przyjęcie.",
+        "translation": "(Вдягнула нову сукню на прийняття.)",
+        "options": [
+          "sukienkę",
+          "sukienka",
+          "sukienki",
+          "sukienką"
+        ],
+        "correct": "sukienkę",
+        "explanation": "'Włożyć' (вдягнути, вкласти) — 'włożyłam' (1 ос. одн. жін. мин. час). 'Sukienka' → 'sukienkę' (знахідний). 'Na przyjęcie' (на прийняття, на вечірку) — знахідний. В укр. 'вдягнула нову сукню' — ідентична конструкція. 'Włożyć' буквально — 'вложити', як укр. 'вкласти'."
+      },
+      {
+        "id": "up_clot7",
+        "question": "Te buty są _____ skóry.",
+        "translation": "(Ці черевики зі шкіри.)",
+        "options": [
+          "ze",
+          "z",
+          "od",
+          "na"
+        ],
+        "correct": "ze",
+        "explanation": "'Ze skóry' (зі шкіри) — евфонічне 'ze' замість 'z' перед 'sk-'. 'Skóra' (шкіра) → 'skóry' (родовий). 'Buty' (черевики, взуття) — множина від 'but'. В укр. 'зі шкіри' — аналогічне евфонічне 'зі' замість 'з'. 'Skóra/шкіра' — спільнослов'янське слово."
+      },
+      {
+        "id": "up_clot8",
+        "question": "Czy masz tę koszulkę w _____ kolorze?",
+        "translation": "(Чи маєш цю футболку в іншому кольорі?)",
+        "options": [
+          "innym",
+          "inny",
+          "innej",
+          "innymi"
+        ],
+        "correct": "innym",
+        "explanation": "'W innym kolorze' (в іншому кольорі) — місцевий чол. роду: 'inny kolor' → 'w innym kolorze'. 'Koszulka' (футболка) → 'koszulkę' (знахідний). В укр. 'в іншому кольорі' — ідентична конструкція з місцевим відмінком. 'Inny' (інший) — від давнього 'інь/in-'. Спільний корінь."
+      },
+      {
+        "id": "up_clot9",
+        "question": "Moda na _____ lata zmienia się szybko.",
+        "translation": "(Мода на наступні роки змінюється швидко.)",
+        "options": [
+          "kolejne",
+          "kolejny",
+          "kolejna",
+          "kolejnych"
+        ],
+        "correct": "kolejne",
+        "explanation": "'Na kolejne lata' (на наступні роки) — знахідний множини: 'kolejny rok' → 'kolejne lata'. 'Zmienia się' (змінюється) — зворотне, 'szybko' (швидко). 'Kolejny' (наступний, черговий) від 'kolej' (черга). В укр. 'наступний' — інший корінь. 'Lata' (роки) — множина від 'rok', як укр. 'літа'."
+      },
+      {
+        "id": "up_clot10",
+        "question": "Noszę głównie ubrania w _____ ciemnych.",
+        "translation": "(Ношу переважно одяг темних кольорів.)",
+        "options": [
+          "kolorach",
+          "kolory",
+          "kolorów",
+          "kolorami"
+        ],
+        "correct": "kolorach",
+        "explanation": "'W kolorach ciemnych' (в темних кольорах) — місцевий множини: 'kolor' → 'kolorach'. 'Głównie' (переважно, головним чином). 'Ubrania' (одяг, множина) від 'ubranie'. 'Nosić' (носити) — 'noszę' (1 ос. одн.). В укр. 'темних кольорів' — родовий множини (інший відмінок)."
+      },
+      {
+        "id": "up_clot11",
+        "question": "Kupiłem sobie nową parę _____.",
+        "translation": "(Купив собі нову пару кросівок.)",
+        "options": [
+          "butów sportowych",
+          "buty sportowe",
+          "butami sportowymi",
+          "butom sportowym"
+        ],
+        "correct": "butów sportowych",
+        "explanation": "'Parę butów' (пару черевиків) — 'para' + родовий множини: 'buty' → 'butów'. 'Sportowych' — родовий множини від 'sportowy'. 'Sobie' (собі) — давальний. В укр. 'пару кросівок' — також родовий множини. 'Kupić' (купити) — 'kupiłem' (чол. рід мин. час)."
+      },
+      {
+        "id": "up_clot12",
+        "question": "Ten sweter jest _____ z wełny.",
+        "translation": "(Цей светр зроблений з вовни.)",
+        "options": [
+          "zrobiony",
+          "zrobiona",
+          "zrobione",
+          "zrobieni"
+        ],
+        "correct": "zrobiony",
+        "explanation": "'Zrobiony' — чол. рід, бо 'sweter' (светр) — чоловічого роду. 'Z wełny' (з вовни) — родовий: 'wełna' → 'wełny'. 'Zrobić' (зробити) → дієприкметник 'zrobiony'. В укр. 'зроблений з вовни' — ідентична конструкція. 'Wełna' (вовна) / 'вовна' — спільне слово."
+      },
+      {
+        "id": "up_clot13",
+        "question": "Proszę _____ mi pomóc z zamkiem błyskawicznym.",
+        "translation": "(Будь ласка, допоможіть мені з блискавкою.)",
+        "options": [
+          "mi",
+          "mnie",
+          "mną",
+          "moim"
+        ],
+        "correct": "mi",
+        "explanation": "'Proszę mi pomóc' (прошу мені допомогти) — давальний скорочена: 'mi' (мені). 'Zamek błyskawiczny' (блискавка, засувка) — буквально 'блискавичний замок'. 'Z zamkiem' — орудний. В укр. 'блискавка' — одне слово, а в польськ. — описовий зворот 'zamek błyskawiczny'."
+      },
+      {
+        "id": "up_clot14",
+        "question": "Ten kapelusz jest bardzo _____.",
+        "translation": "(Цей капелюх дуже модний.)",
+        "options": [
+          "modny",
+          "modna",
+          "modne",
+          "modni"
+        ],
+        "correct": "modny",
+        "explanation": "'Modny' (модний) — чол. рід, бо 'kapelusz' (капелюх) — чоловічого роду. 'Bardzo modny' (дуже модний). 'Kapelusz' від нім. 'Kapuze'. В укр. 'капелюх' — те саме запозичення. 'Modny/модний' — спільне слово від 'moda/мода' (з франц./італ.)."
+      },
+      {
+        "id": "up_clot15",
+        "question": "Rajstopy mają _____, muszę kupić nowe.",
+        "translation": "(Колготки порвалися, мушу купити нові.)",
+        "options": [
+          "dziurę",
+          "dziura",
+          "dziury",
+          "dziurą"
+        ],
+        "correct": "dziurę",
+        "explanation": "'Mieć dziurę' (мати дірку) — знахідний: 'dziura' → 'dziurę'. 'Rajstopy' (колготки) — множина, запозичення з нім. (через рос.). 'Muszę kupić nowe' — 'nowe' (множина невіроос.). В укр. 'колготки' — з франц., а польськ. 'rajstopy' — з нім. 'Dziura' (дірка) / 'діра' — спільний корінь."
+      }
+    ]
+  },
+  {
+    "key": "colors_descriptions",
+    "name": "Кольори та описи",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "up_colr1",
+        "question": "Niebo jest _____ w pogodny dzień.",
+        "translation": "(Небо блакитне в погожий день.)",
+        "options": [
+          "niebieskie",
+          "niebieski",
+          "niebieska",
+          "niebieskich"
+        ],
+        "correct": "niebieskie",
+        "explanation": "'Niebieskie' — сер. рід, бо 'niebo' (небо) — середнього роду. 'Pogodny' (погожий, ясний) — від 'pogoda' (погода). 'Dzień' (день) — 'w pogodny dzień' (знахідний). В укр. 'небо блакитне' — також сер. рід. 'Niebieski' (голубий/блакитний) від 'niebo' (небо). Спільне словотворення."
+      },
+      {
+        "id": "up_colr2",
+        "question": "Mój samochód jest ciemno_____.",
+        "translation": "(Мій автомобіль темно-зелений.)",
+        "options": [
+          "zielony",
+          "zielona",
+          "zielone",
+          "zieloni"
+        ],
+        "correct": "zielony",
+        "explanation": "'Ciemnozielony' (темно-зелений) — складний прикметник, чол. рід, бо 'samochód' (автомобіль) — чоловічого роду. 'Ciemno-' (темно-) — префікс для відтінків. В укр. 'темно-зелений' — ідентична конструкція. 'Zielony' (зелений) / 'зелений' — спільнослов'янське від 'зілля/zioło'."
+      },
+      {
+        "id": "up_colr3",
+        "question": "Kupiłam _____ torebkę do nowej sukienki.",
+        "translation": "(Купила чорну сумочку до нової сукні.)",
+        "options": [
+          "czarną",
+          "czarny",
+          "czarne",
+          "czarnej"
+        ],
+        "correct": "czarną",
+        "explanation": "'Czarną torebkę' — знахідний жін. роду: 'czarna torebka' → 'czarną torebkę'. 'Kupiłam' (купила, жін. рід). 'Torebka' (сумочка) — здрібніла від 'torba' (сумка). 'Do nowej sukienki' — родовий. В укр. 'чорну сумочку' — також знахідний. 'Czarny/чорний' — спільний корінь."
+      },
+      {
+        "id": "up_colr4",
+        "question": "Liście jesienią stają się _____ i pomarańczowe.",
+        "translation": "(Листя восени стає жовтим і помаранчевим.)",
+        "options": [
+          "żółte",
+          "żółty",
+          "żółta",
+          "żółtych"
+        ],
+        "correct": "żółte",
+        "explanation": "'Żółte' — множина невіроособова, бо 'liście' (листя) — множина від 'liść' (лист). 'Stają się' (стають) — зворотне. 'Pomarańczowe' (помаранчеві) — також множина. 'Jesienią' (восени) — орудний. В укр. 'жовте листя' — збірний іменник одн. числа, а в польськ. — множина."
+      },
+      {
+        "id": "up_colr5",
+        "question": "Ta róża jest _____ piękna.",
+        "translation": "(Ця троянда надзвичайно красива.)",
+        "options": [
+          "niezwykle",
+          "niezwykły",
+          "niezwykłe",
+          "niezwykła"
+        ],
+        "correct": "niezwykle",
+        "explanation": "'Niezwykle' (надзвичайно) — прислівник від 'niezwykły' (незвичайний). 'Piękna' (красива) — жін. рід, бо 'róża' (троянда) — жін. роду. 'Niezwykle piękna' — прислівник підсилює прикметник. В укр. 'надзвичайно красива' — ідентична конструкція. 'Róża/троянда' — різні запозичення (лат./тюрк.)."
+      },
+      {
+        "id": "up_colr6",
+        "question": "Jego oczy są _____ jak morze.",
+        "translation": "(Його очі сині, як море.)",
+        "options": [
+          "niebieskie",
+          "niebieski",
+          "niebieska",
+          "niebiescy"
+        ],
+        "correct": "niebieskie",
+        "explanation": "'Niebieskie' — множина невіроособова, бо 'oczy' (очі) — множина від 'oko' (око). 'Jak morze' (як море) — порівняння. 'Morze' (море) — називний. В укр. 'сині очі' — 'синій' (не 'небесний'). Відмінність: польськ. 'niebieski' (від 'niebo') vs. укр. 'синій' (від 'синь')."
+      },
+      {
+        "id": "up_colr7",
+        "question": "Ściany w moim pokoju są _____.",
+        "translation": "(Стіни в моїй кімнаті білі.)",
+        "options": [
+          "białe",
+          "biały",
+          "biała",
+          "białych"
+        ],
+        "correct": "białe",
+        "explanation": "'Białe' — множина невіроособова, бо 'ściany' (стіни) — множина від 'ściana'. 'W moim pokoju' (в моїй кімнаті) — місцевий: 'mój pokój' → 'moim pokoju'. В укр. 'білі стіни' — також множина. 'Biały/білий' — спільнослов'янське від 'biel/біль' (білизна). Ідентичне слово."
+      },
+      {
+        "id": "up_colr8",
+        "question": "Ten budynek jest bardzo _____.",
+        "translation": "(Ця будівля дуже висока.)",
+        "options": [
+          "wysoki",
+          "wysoka",
+          "wysokie",
+          "wysocy"
+        ],
+        "correct": "wysoki",
+        "explanation": "'Wysoki' — чол. рід, бо 'budynek' (будівля) — чоловічого роду в польській. В укр. 'будівля' — жін. рід, тому 'висока'. Різний рід: польськ. 'budynek' (ч.) vs. укр. 'будівля' (ж.). 'Wysoki' (високий) — спільний корінь 'выс-/wys-'. 'Bardzo' (дуже) — прислівник підсилення."
+      },
+      {
+        "id": "up_colr9",
+        "question": "Włosy mojej siostry są _____ i kręcone.",
+        "translation": "(Волосся моєї сестри довге і кучеряве.)",
+        "options": [
+          "długie",
+          "długi",
+          "długa",
+          "długich"
+        ],
+        "correct": "długie",
+        "explanation": "'Długie' — множина невіроособова, бо 'włosy' (волосся) — множина в польській ('włos' → 'włosy'). 'Kręcone' (кучеряве) — від 'kręcić' (крутити). 'Mojej siostry' — родовий жін. В укр. 'волосся' — збірний одн. числа, тому 'довге' (не множ.). Різна граматична число."
+      },
+      {
+        "id": "up_colr10",
+        "question": "Zachód słońca był _____ i czerwony.",
+        "translation": "(Захід сонця був золотий і червоний.)",
+        "options": [
+          "złoty",
+          "złota",
+          "złote",
+          "złoci"
+        ],
+        "correct": "złoty",
+        "explanation": "'Złoty' — чол. рід, бо 'zachód' (захід) — чоловічого роду. 'Był' (був) — чол. рід мин. часу. 'Zachód słońca' (захід сонця) — 'słońce' → 'słońca' (родовий). 'Czerwony' (червоний) — спільнослов'янське. В укр. 'золотий і червоний' — також чол. рід."
+      },
+      {
+        "id": "up_colr11",
+        "question": "Ten obraz ma _____ odcienie fioletu.",
+        "translation": "(Ця картина має красиві відтінки фіолетового.)",
+        "options": [
+          "piękne",
+          "piękny",
+          "piękna",
+          "pięknych"
+        ],
+        "correct": "piękne",
+        "explanation": "'Piękne odcienie' — знахідний множини невіроособовий: 'odcień' → 'odcienie', 'piękny' → 'piękne'. 'Fiolet' (фіолетовий) → 'fioletu' (родовий). 'Obraz' (картина, образ) — чол. рід. В укр. 'відтінки' — множина, як і в польськ. 'odcienie'. 'Piękny/гарний' — різні корені."
+      },
+      {
+        "id": "up_colr12",
+        "question": "Morze jest _____ dzisiaj.",
+        "translation": "(Море сьогодні спокійне.)",
+        "options": [
+          "spokojne",
+          "spokojny",
+          "spokojna",
+          "spokojni"
+        ],
+        "correct": "spokojne",
+        "explanation": "'Spokojne' — сер. рід, бо 'morze' (море) — середнього роду. 'Spokojny' (спокійний) — від 'spokój' (спокій). 'Dzisiaj' (сьогодні) — прислівник часу. В укр. 'спокійне море' — також сер. рід. 'Morze/море', 'spokojny/спокійний' — спільнослов'янські. Повний збіг конструкції."
+      },
+      {
+        "id": "up_colr13",
+        "question": "Ulica jest _____ i pusta o tej porze.",
+        "translation": "(Вулиця тиха і порожня о цій порі.)",
+        "options": [
+          "cicha",
+          "cichy",
+          "ciche",
+          "cichej"
+        ],
+        "correct": "cicha",
+        "explanation": "'Cicha' — жін. рід, бо 'ulica' (вулиця) — жіночого роду. 'Pusta' (порожня) — також жін. рід. 'O tej porze' (о цій порі) — місцевий: 'ta pora' → 'tej porze'. В укр. 'тиха і порожня вулиця' — також жін. рід. 'Cichy/тихий' — спільний корінь 'тих-/cich-'."
+      },
+      {
+        "id": "up_colr14",
+        "question": "Kot ma _____ i puszysty ogon.",
+        "translation": "(Кіт має довгий і пухнастий хвіст.)",
+        "options": [
+          "długi",
+          "długa",
+          "długie",
+          "długich"
+        ],
+        "correct": "długi",
+        "explanation": "'Długi ogon' — знахідний чол. неживий = називний: 'długi'. 'Puszysty' (пухнастий) — від 'puszek' (пушок). 'Ogon' (хвіст) — чол. рід. 'Kot' (кіт) — спільнослов'янське. В укр. 'довгий хвіст' — ідентична конструкція. 'Długi/довгий' — різні корені (długi від 'dłuż-', довгий від 'до-лг-')."
+      },
+      {
+        "id": "up_colr15",
+        "question": "Ten dom jest _____ od tamtego.",
+        "translation": "(Цей будинок більший за тамтой.)",
+        "options": [
+          "większy",
+          "większa",
+          "większe",
+          "wielki"
+        ],
+        "correct": "większy",
+        "explanation": "'Większy od' (більший від) + родовий: 'tamten' → 'tamtego'. 'Większy' — порівняльний від 'wielki/duży' (великий). 'Dom' (будинок) — чол. рід → 'większy'. В укр. 'більший за' + знахідний (інший прийменник і відмінок). 'Wielki' = 'великий' — спільний корінь."
+      }
+    ]
   }
 ]
