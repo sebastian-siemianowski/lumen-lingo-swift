@@ -39,7 +39,7 @@ Expand all 17 beta language pairs to **105 categories × 15 items = 1,575 items*
 | 3 | english_arabic | English | 78/105 | 1170/1575 | 15/20 | 🔄 |
 | 4 | english_chinese | English | 52/105 | 780/1575 | 9/20 | 🔄 |
 | 5 | english_french | English | 105/105 | 1575/1575 | 21/21 | ✅ |
-| 6 | english_german | English | 57/105 | 855/1575 | 11/20 | 🔄 |
+| 6 | english_german | English | 67/105 | 1005/1575 | 13/20 | 🔄 |
 | 7 | english_japanese | English | 101/105 | 1515/1575 | 20/21 | 🔄 |
 | 8 | french_english | French | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 9 | german_polish | German | 105/105 | 1575/1575 | 20/20 | ✅ |
@@ -289,8 +289,8 @@ All 21 batches completed.
 | 20 | culture_society, sports_leisure, media_communication, politics_law, science_research | ✅ |
 | 21 | revision_generale, common_mistakes, exam_strategies | ✅ |
 
-### english_german — 🔄 IN PROGRESS (62/105 categories, 930 items)
-ID prefixes used: eg_pres, eg_art, eg_past, eg_order, eg_case, eg_prep, eg_mod, eg_pp, eg_plq, eg_fut, eg_acc, eg_dat, eg_gen, eg_plu, eg_adj, eg_sep, eg_ref, eg_conj, eg_sub, eg_rel, eg_pv, eg_imp, eg_cmp, eg_sup, eg_adv, eg_neg, eg_qf, eg_pos, eg_dem, eg_ind, eg_per, eg_twp, eg_tp, eg_vp, eg_kii, eg_ki, eg_cond, eg_rs, eg_inf, eg_ptc, eg_ng, eg_cn, eg_wn, eg_sv, eg_mx, eg_hvs, eg_wu, eg_da, eg_wo, eg_di, eg_fp, eg_sw, eg_eo, eg_ms, eg_fi, eg_id, eg_ps, eg_te, eg_nq, eg_dm, eg_wf, eg_pf
+### english_german — 🔄 IN PROGRESS (67/105 categories, 1005 items)
+ID prefixes used: eg_pres, eg_art, eg_past, eg_order, eg_case, eg_prep, eg_mod, eg_pp, eg_plq, eg_fut, eg_acc, eg_dat, eg_gen, eg_plu, eg_adj, eg_sep, eg_ref, eg_conj, eg_sub, eg_rel, eg_pv, eg_imp, eg_cmp, eg_sup, eg_adv, eg_neg, eg_qf, eg_pos, eg_dem, eg_ind, eg_per, eg_twp, eg_tp, eg_vp, eg_kii, eg_ki, eg_cond, eg_rs, eg_inf, eg_ptc, eg_ng, eg_cn, eg_wn, eg_sv, eg_mx, eg_hvs, eg_wu, eg_da, eg_wo, eg_di, eg_fp, eg_sw, eg_eo, eg_ms, eg_fi, eg_id, eg_ps, eg_te, eg_nq, eg_dm, eg_wf, eg_pf, eg_vpc, eg_apc, eg_npc, eg_es, eg_pov
 
 | Batch | Categories | Status |
 |-------|-----------|--------|
@@ -306,7 +306,7 @@ ID prefixes used: eg_pres, eg_art, eg_past, eg_order, eg_case, eg_prep, eg_mod, 
 | 10 | da_compounds, wo_compounds, double_infinitive, future_perfect, subjunctive_wishes | ✅ |
 | 11 | expressing_opinions, making_suggestions, formal_vs_informal, idiomatic_expressions, proverbs_sayings | ✅ |
 | 12 | time_expressions, numbers_quantities, diminutives, word_formation, prefixes_suffixes | ✅ |
-| 13 | verb_preposition_combos, adjective_preposition_combos, noun_preposition_combos, es_constructions, position_verbs | ⬜ |
+| 13 | verb_preposition_combos, adjective_preposition_combos, noun_preposition_combos, es_constructions, position_verbs | ✅ |
 | 14 | lassen_constructions, modal_particles, discourse_markers, linking_words, emphasis_structures | ⬜ |
 | 15 | weather_climate, at_restaurant, shopping_expressions, telephone_phrases, formal_writing | ⬜ |
 | 16 | workplace_office, emotions_reactions, travel_vacation, health_body, education_school | ⬜ |

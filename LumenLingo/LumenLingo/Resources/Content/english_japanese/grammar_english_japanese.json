@@ -20233,5 +20233,1005 @@
         "explanation": "The biggest 'mistake' in Japanese learning is not making mistakes — it's avoiding practice due to fear of errors. Japanese native speakers are generally patient and appreciative of learners' efforts. 失敗は成功のもと (shippai wa seikou no moto, failure is the foundation of success) is a Japanese proverb that applies perfectly to language learning. Every error is data for improvement. The learners who achieve fluency are those who speak often, make mistakes often, and learn from them — not those who wait until they're 'ready.'"
       }
     ]
+  },
+  {
+    "name": "Sentence Patterns & Structures (文型)",
+    "items": [
+      {
+        "id": "ej_spt_1",
+        "question": "This book is _____ to understand.",
+        "translation": "(この本は理解しやすい。)",
+        "options": [
+          "理解しやすい",
+          "理解しにくい",
+          "理解できる",
+          "理解したい"
+        ],
+        "correct": "理解しやすい",
+        "explanation": "Verb stem + やすい (yasui) means 'easy to do.' 理解しやすい means 'easy to understand.' This productive suffix attaches to the masu-stem of any verb: 読みやすい (easy to read), 食べやすい (easy to eat), 使いやすい (easy to use). The opposite is にくい (nikui, hard to): 読みにくい (hard to read). These adjective-creating suffixes transform action verbs into descriptive words, making them invaluable for product reviews, recommendations, and everyday evaluations."
+      },
+      {
+        "id": "ej_spt_2",
+        "question": "It _____ to rain soon.",
+        "translation": "(もうすぐ雨が降りそうだ。)",
+        "options": [
+          "降りそうだ",
+          "降るようだ",
+          "降るらしい",
+          "降るみたいだ"
+        ],
+        "correct": "降りそうだ",
+        "explanation": "Verb stem + そうだ expresses imminent appearance: 降りそうだ means 'it looks like it's about to rain.' This pattern assesses the visible situation — you see dark clouds gathering. Compare the four 'seems' patterns: stem+そうだ (visual assessment), ようだ (formal inference), らしい (evidence-based hearsay), みたいだ (casual impression). Each carries different evidence weight and formality. Mastering when to use which 'seems' is a hallmark of advanced Japanese communication."
+      },
+      {
+        "id": "ej_spt_3",
+        "question": "The more I study, _____ it gets.",
+        "translation": "(勉強すればするほど面白くなる。)",
+        "options": [
+          "するほど面白く",
+          "するだけ面白く",
+          "するまで面白く",
+          "するから面白く"
+        ],
+        "correct": "するほど面白く",
+        "explanation": "〜ば〜ほど (ba...hodo) expresses 'the more X, the more Y.' 勉強すればするほど面白くなる means 'the more I study, the more interesting it gets.' This proportional structure uses the conditional ば-form + repeating the verb + ほど (to the extent of). Other examples: 食べれば食べるほど太る (the more you eat, the fatter you get), 考えれば考えるほどわからない (the more I think, the less I understand). This elegant structure expresses escalating relationships."
+      },
+      {
+        "id": "ej_spt_4",
+        "question": "I have no choice but _____ go.",
+        "translation": "(行くしかない。)",
+        "options": [
+          "行くしかない",
+          "行くだけない",
+          "行くほどない",
+          "行くまでない"
+        ],
+        "correct": "行くしかない",
+        "explanation": "〜しかない (shika nai) means 'have no choice but to' or 'can only.' 行くしかない means 'I have no choice but to go / I can only go.' しか always pairs with a negative form: これしか食べない (I only eat this), それしかない (there's nothing but that). This pattern expresses limitation or resignation: 自分でやるしかない (I have no choice but to do it myself), 待つしかない (all we can do is wait). It conveys resigned acceptance."
+      },
+      {
+        "id": "ej_spt_5",
+        "question": "Let's _____  about going to Kyoto.",
+        "translation": "(京都に行くことにしよう。)",
+        "options": [
+          "行くことにしよう",
+          "行くものにしよう",
+          "行くのにしよう",
+          "行くことでしよう"
+        ],
+        "correct": "行くことにしよう",
+        "explanation": "〜ことにする (koto ni suru) means 'decide to.' 京都に行くことにしよう means 'Let's decide to go to Kyoto.' This pattern marks a deliberate decision: 毎日運動することにした (I decided to exercise every day). The related 〜ことになる (koto ni naru) marks a decision made by others or circumstances: 来月転勤することになった (it's been decided that I'll transfer next month). にする (I decide) vs. になる (it's been decided) is a crucial active/passive distinction."
+      },
+      {
+        "id": "ej_spt_6",
+        "question": "I _____ been to Osaka three times.",
+        "translation": "(大阪に3回行ったことがある。)",
+        "options": [
+          "行ったことがある",
+          "行くことがある",
+          "行っていることがある",
+          "行ったところがある"
+        ],
+        "correct": "行ったことがある",
+        "explanation": "〜たことがある (ta koto ga aru) expresses past experience: 'have done (at least once).' 3回行ったことがある means 'I've been there three times.' The negative, ことがない (koto ga nai), means 'have never': 寿司を食べたことがない (I've never eaten sushi). This experience pattern is one of the most frequently used structures in conversation — perfect for travel talk, food discussions, and sharing life experiences. It always uses the ta-form before こと."
+      },
+      {
+        "id": "ej_spt_7",
+        "question": "She _____ nothing but complain.",
+        "translation": "(彼女は文句ばかり言っている。)",
+        "options": [
+          "文句ばかり",
+          "文句だけ",
+          "文句しか",
+          "文句まで"
+        ],
+        "correct": "文句ばかり",
+        "explanation": "ばかり (bakari) means 'nothing but / only / always' with a negative nuance — someone does too much of something. 文句ばかり言っている means 'she does nothing but complain.' ばかり implies excess or annoyance: ゲームばかりしている (does nothing but play games), 甘いものばかり食べる (eats nothing but sweets). Compare with だけ (neutral 'only') and しか〜ない (restrictive 'only'). ばかり adds emotional judgment that the behavior is excessive or tiresome."
+      },
+      {
+        "id": "ej_spt_8",
+        "question": "He pretended _____ to hear me.",
+        "translation": "(彼は聞こえないふりをした。)",
+        "options": [
+          "聞こえないふりを",
+          "聞こえないまねを",
+          "聞こえないようを",
+          "聞こえないみたいを"
+        ],
+        "correct": "聞こえないふりを",
+        "explanation": "〜ふりをする (furi wo suru) means 'pretend to.' 聞こえないふりをした means 'pretended not to hear.' ふり takes the plain form of verbs/adjectives: 知らないふりをする (pretend not to know), 病気のふりをする (pretend to be sick), 寝ているふりをする (pretend to be sleeping). This pattern is essential for describing deceptive or playful behavior. The の-form is used for な-adjectives and nouns: 元気なふりをする (pretend to be fine)."
+      },
+      {
+        "id": "ej_spt_9",
+        "question": "This building was _____ last year.",
+        "translation": "(このビルは去年建てられた。)",
+        "options": [
+          "建てられた",
+          "建てた",
+          "建っている",
+          "建てさせた"
+        ],
+        "correct": "建てられた",
+        "explanation": "The passive form 建てられた (taterareta, was built) shows how passives work with transitive verbs in formal/factual contexts. While Japanese passive often implies suffering (迷惑の受身), factual passives like this are common in descriptions: この橋は1900年に造られた (this bridge was built in 1900), この本は多くの人に読まれている (this book is read by many). Factual passives are standard in journalism, history, and formal descriptions — an impersonal, objective tone."
+      },
+      {
+        "id": "ej_spt_10",
+        "question": "I _____ watch TV too much.",
+        "translation": "(テレビを見すぎないようにしている。)",
+        "options": [
+          "見すぎないようにしている",
+          "見すぎることにしている",
+          "見すぎないことにしている",
+          "見すぎないふりをしている"
+        ],
+        "correct": "見すぎないようにしている",
+        "explanation": "〜ないようにしている (nai you ni shite iru) means 'I make an effort not to / I try to avoid.' 見すぎないようにしている means 'I try not to watch too much TV.' This pattern describes conscious habits and self-discipline: 甘いものを食べないようにしている (I try to avoid sweets), 遅刻しないようにしている (I make sure not to be late). The positive version, ようにしている, describes positive habits: 毎日運動するようにしている (I make sure to exercise daily)."
+      },
+      {
+        "id": "ej_spt_11",
+        "question": "This room is too dark _____ read.",
+        "translation": "(この部屋は暗すぎて読めない。)",
+        "options": [
+          "暗すぎて読めない",
+          "暗くて読めない",
+          "暗いので読めない",
+          "暗いから読めない"
+        ],
+        "correct": "暗すぎて読めない",
+        "explanation": "〜すぎる (sugiru, too much) + て + negative result is a powerful pattern: 暗すぎて読めない means 'it's too dark to read.' すぎる attaches to verb stems (食べすぎる, eat too much) and adjective stems (高すぎる, too expensive; 静かすぎる, too quiet). Combined with て for consequence: 飲みすぎて頭が痛い (drank too much and my head hurts). すぎる is one of the most versatile and frequently used grammar points for expressing excess in everyday conversation."
+      },
+      {
+        "id": "ej_spt_12",
+        "question": "No matter how hard I try, I _____ do it.",
+        "translation": "(いくら頑張っても、できない。)",
+        "options": [
+          "頑張ってもできない",
+          "頑張ればできない",
+          "頑張るとできない",
+          "頑張ったらできない"
+        ],
+        "correct": "頑張ってもできない",
+        "explanation": "いくら〜ても (ikura...temo) means 'no matter how much.' いくら頑張ってもできない means 'no matter how hard I try, I can't do it.' ても is the concessive 'even if' form: 雨が降っても行く (I'll go even if it rains). Combined with いくら, it emphasizes futility or determination: いくら食べても太らない (no matter how much I eat, I don't gain weight). Other intensifiers: どんなに〜ても (no matter how), 何回〜ても (no matter how many times)."
+      },
+      {
+        "id": "ej_spt_13",
+        "question": "I _____ my wallet at home.",
+        "translation": "(財布を家に忘れてきてしまった。)",
+        "options": [
+          "忘れてきてしまった",
+          "忘れてきた",
+          "忘れていた",
+          "忘れている"
+        ],
+        "correct": "忘れてきてしまった",
+        "explanation": "〜てしまう (te shimau) expresses completion with regret or accidental result. 忘れてきてしまった stacks three auxiliaries: 忘れて (forget) + きて (directional — left behind) + しまった (unfortunately/completely). てしまう has two meanings: regrettable result (鍵をなくしてしまった, I lost my key unfortunately) and thorough completion (本を全部読んでしまった, I finished reading the entire book). In casual speech, ちゃう/ちゃった replaces てしまう: 忘れちゃった (oops, forgot)."
+      },
+      {
+        "id": "ej_spt_14",
+        "question": "He left _____ saying goodbye.",
+        "translation": "(彼はさよならも言わずに去った。)",
+        "options": [
+          "言わずに去った",
+          "言わないで去った",
+          "言わなくて去った",
+          "言えなくて去った"
+        ],
+        "correct": "言わずに去った",
+        "explanation": "〜ずに (zu ni) is the literary/formal negative 'without doing': 言わずに means 'without saying.' It's the formal equivalent of 〜ないで: 言わないで去った (same meaning, more casual). ずに is used in writing, formal speech, and set phrases: 食べずに寝た (went to bed without eating), 休まずに働く (work without resting), 躊躇せずに (without hesitation). The irregular form for する is せずに. Mastering ずに elevates your Japanese from conversational to literate."
+      },
+      {
+        "id": "ej_spt_15",
+        "question": "As _____ as I know, he's still in Tokyo.",
+        "translation": "(私が知る限り、彼はまだ東京にいる。)",
+        "options": [
+          "知る限り",
+          "知るまで",
+          "知るほど",
+          "知るだけ"
+        ],
+        "correct": "知る限り",
+        "explanation": "〜限り (kagiri, as far as / as long as) sets a boundary or condition. 知る限り means 'as far as I know.' This versatile pattern has multiple uses: できる限り (as much as possible), 生きている限り (as long as I'm alive), 見た限りでは (from what I've seen). 限り also means 'unless': 雨が降らない限り行く (I'll go unless it rains). This multi-use grammar point appears frequently in formal and semi-formal Japanese, especially in workplace communication and academic writing."
+      }
+    ]
+  },
+  {
+    "name": "Conversation Strategies (会話戦略)",
+    "items": [
+      {
+        "id": "ej_cvs_1",
+        "question": "Excuse me, could you tell me _____?",
+        "translation": "(すみません、教えていただけますか。)",
+        "options": [
+          "教えていただけますか",
+          "教えてくれますか",
+          "教えてもらいますか",
+          "教えてくださいますか"
+        ],
+        "correct": "教えていただけますか",
+        "explanation": "いただけますか (itadakemasu ka) is the most polite way to make a request — literally 'would I be able to receive the favor of you doing...?' 教えていただけますか is the gold standard for polite requests to strangers or superiors. The politeness hierarchy for requests: 教えて (casual) → 教えてください (standard polite) → 教えてくれますか (polite question) → 教えていただけますか (humble+potential = maximum politeness). Choosing the right level is essential for smooth social interaction in Japan."
+      },
+      {
+        "id": "ej_cvs_2",
+        "question": "Well, let me think... _____.",
+        "translation": "(えーと、ちょっと考えさせてください。)",
+        "options": [
+          "考えさせてください",
+          "考えてください",
+          "考えましょう",
+          "考えます"
+        ],
+        "correct": "考えさせてください",
+        "explanation": "考えさせてください (kangaesasete kudasai) uses the causative form for self-direction: 'please let me think.' The causative-te + ください pattern politely asks permission: やらせてください (please let me do it), 見させてください (please let me see), 行かせてください (please let me go). This is extremely common in business: 確認させてください (please let me confirm), 検討させてください (please let me consider it). It's humble because you're asking to be allowed rather than declaring your action."
+      },
+      {
+        "id": "ej_cvs_3",
+        "question": "I'm sorry, but I _____ agree.",
+        "translation": "(申し訳ありませんが、賛成しかねます。)",
+        "options": [
+          "賛成しかねます",
+          "賛成しません",
+          "賛成できません",
+          "賛成しないです"
+        ],
+        "correct": "賛成しかねます",
+        "explanation": "〜かねる (kaneru) is the softest way to refuse — 'I'm unable to / I find it difficult to.' 賛成しかねます means 'I'm afraid I can't agree' without the directness of できません. In Japanese business culture, direct refusal is avoided: お受けしかねます (I'm afraid I can't accept), お答えしかねます (I'm afraid I can't answer). かねる wraps refusal in politeness, implying reluctance rather than unwillingness. This indirect rejection strategy is crucial for maintaining harmony (和, wa) in professional settings."
+      },
+      {
+        "id": "ej_cvs_4",
+        "question": "If you don't mind me asking, _____?",
+        "translation": "(差し支えなければ、お聞きしてもよろしいですか。)",
+        "options": [
+          "差し支えなければ",
+          "良ければ",
+          "できれば",
+          "もしよければ"
+        ],
+        "correct": "差し支えなければ",
+        "explanation": "差し支えなければ (sashitsukaenakereba, if it's not inconvenient) is a formal, considerate preamble before asking potentially sensitive questions. It signals respect for the other person's boundaries. Less formal alternatives: よければ (if it's okay), もしよければ (if you wouldn't mind). These conversation cushions (クッション言葉) soften potentially intrusive requests and are considered essential in polite adult Japanese. Other cushion phrases: 恐れ入りますが (I'm sorry to trouble you but), 失礼ですが (pardon me but)."
+      },
+      {
+        "id": "ej_cvs_5",
+        "question": "That sounds _____, doesn't it?",
+        "translation": "(それはいいですね。)",
+        "options": [
+          "いいですね",
+          "いいですか",
+          "いいですよ",
+          "いいですけど"
+        ],
+        "correct": "いいですね",
+        "explanation": "ね (ne) as a sentence-final particle seeks agreement and creates rapport — equivalent to 'right?' or 'isn't it?' いいですね means 'that's nice, isn't it?' ね is arguably the most important social particle in Japanese: it transforms statements into shared observations, inviting the listener into your perspective. 寒いですね (it's cold, isn't it?), おいしいですね (it's delicious, isn't it?). Using ね appropriately shows social awareness; overusing or underusing it can make you seem either uncertain or distant."
+      },
+      {
+        "id": "ej_cvs_6",
+        "question": "I'll tell you something — this is really _____.",
+        "translation": "(教えてあげるけど、これは本当においしいよ。)",
+        "options": [
+          "おいしいよ",
+          "おいしいね",
+          "おいしいか",
+          "おいしいぞ"
+        ],
+        "correct": "おいしいよ",
+        "explanation": "よ (yo) as a sentence-final particle asserts information — it tells the listener something they might not know. おいしいよ means 'it's delicious, I'm telling you!' While ね seeks agreement (shared knowledge), よ provides new information (one-way assertion). 危ないよ (watch out — it's dangerous!), もう帰るよ (I'm going home now). The ね/よ distinction is fundamental: ね = 'you know too, right?' vs. よ = 'let me inform you.' The combined よね means 'you know this too, right?' — asserting while seeking confirmation."
+      },
+      {
+        "id": "ej_cvs_7",
+        "question": "Could you say that _____, please?",
+        "translation": "(もう一度言っていただけますか。)",
+        "options": [
+          "もう一度言っていただけますか",
+          "もう一度言ってください",
+          "もう一度言いますか",
+          "もう一度言ってね"
+        ],
+        "correct": "もう一度言っていただけますか",
+        "explanation": "もう一度 (mou ichido, one more time) + いただけますか is the polite way to ask for repetition. Other useful conversation repair strategies: すみません、聞き取れませんでした (sorry, I couldn't catch that), もう少しゆっくり話していただけますか (could you speak a little more slowly?), それはどういう意味ですか (what does that mean?). These repair strategies are essential for language learners — knowing how to politely ask for clarification keeps conversations going even when comprehension fails."
+      },
+      {
+        "id": "ej_cvs_8",
+        "question": "I see, so _____ what happened.",
+        "translation": "(なるほど、そういうことだったんですね。)",
+        "options": [
+          "そういうことだったんですね",
+          "そういうことですか",
+          "そうですね",
+          "そうですか"
+        ],
+        "correct": "そういうことだったんですね",
+        "explanation": "なるほど (naruhodo, I see / that makes sense) + そういうことだったんですね combines two powerful conversation tools: なるほど shows understanding, and そういうことだったんですね means 'so that's what happened / that's what it was about.' The んです structure adds explanatory force. Active listening responses are crucial in Japanese: そうですか (is that so?), そうなんですか (really?), それは大変ですね (that must be tough). Japanese conversation relies heavily on these back-channel responses (相づち, aizuchi)."
+      },
+      {
+        "id": "ej_cvs_9",
+        "question": "To be honest, I _____ like it.",
+        "translation": "(正直に言うと、あまり好きではありません。)",
+        "options": [
+          "あまり好きではありません",
+          "好きではありません",
+          "嫌いです",
+          "好きじゃない"
+        ],
+        "correct": "あまり好きではありません",
+        "explanation": "正直に言うと (shoujiki ni iu to, to be honest) + softened negative opinion shows how Japanese hedges criticism. あまり好きではありません (I don't really like it) is far gentler than 嫌いだ (I hate it). Japanese conversation strategy layers softening: softening adverb (あまり) + polite negative (ではありません) + preamble (正直に言うと). Other hedging strategies: ちょっと... (well... implying difficulty), 微妙ですね (it's subtle/iffy), どうかな (I wonder...). Direct negative opinions are rare in polite Japanese society."
+      },
+      {
+        "id": "ej_cvs_10",
+        "question": "I was wondering if you could _____ me.",
+        "translation": "(手伝っていただけないかと思いまして。)",
+        "options": [
+          "いただけないかと思いまして",
+          "いただけますか",
+          "くれますか",
+          "もらえますか"
+        ],
+        "correct": "いただけないかと思いまして",
+        "explanation": "いただけないかと思いまして (itadakenai ka to omoimashite, I was wondering if I could receive the favor of...) is an ultra-polite indirect request. It wraps the request inside a thought (思いまして), making it even less imposing. This multi-layered indirectness is peak Japanese politeness: instead of asking directly, you share your thought about possibly asking. Business Japanese is full of these: ご検討いただけないかと思いまして (I was wondering if you might consider...). The more layers of indirectness, the more polite."
+      },
+      {
+        "id": "ej_cvs_11",
+        "question": "That's exactly _____ I was thinking.",
+        "translation": "(まさに私もそう思っていました。)",
+        "options": [
+          "私もそう思っていました",
+          "私もそう思います",
+          "私はそう思います",
+          "私もそう言いました"
+        ],
+        "correct": "私もそう思っていました",
+        "explanation": "まさに (masani, exactly / precisely) + 私もそう思っていました (I was thinking the same) creates an emphatic agreement. The ていました (past progressive) implies you were already thinking this before they said it — stronger agreement than そう思います (I think so). Japanese agreement expressions range from simple (そうですね, yes) to emphatic (まさにその通りです, exactly right). Showing enthusiasm for shared opinions builds rapport in Japanese communication, where consensus-building (根回し, nemawashi) is valued."
+      },
+      {
+        "id": "ej_cvs_12",
+        "question": "I hate to bother you, but _____.",
+        "translation": "(お忙しいところ恐れ入りますが。)",
+        "options": [
+          "お忙しいところ恐れ入りますが",
+          "すみませんが",
+          "ちょっといいですか",
+          "お願いしたいんですが"
+        ],
+        "correct": "お忙しいところ恐れ入りますが",
+        "explanation": "お忙しいところ恐れ入りますが (oisogashii tokoro osore irimasu ga, I'm afraid to intrude when you're busy) is a masterful conversation opener combining apology + acknowledgment of the other's situation + but (implying a request follows). This set phrase is used in business emails, phone calls, and formal conversations. Similar openers: お手数をおかけしますが (I'm sorry for the trouble but), ご多忙のところ申し訳ありませんが (I'm sorry to bother you when you're so busy). These formulaic openings are the backbone of professional Japanese communication."
+      },
+      {
+        "id": "ej_cvs_13",
+        "question": "Let me _____ about it and get back to you.",
+        "translation": "(少し考えてから、ご連絡いたします。)",
+        "options": [
+          "考えてからご連絡いたします",
+          "考えて連絡します",
+          "考えたら連絡します",
+          "考えると連絡します"
+        ],
+        "correct": "考えてからご連絡いたします",
+        "explanation": "〜てから + ご連絡いたします combines temporal sequence with humble language. いたします (itashimasu) is the humble form of します, and ご連絡 adds the honorific prefix. This response is perfect for buying time politely in business: 上司に確認してからご連絡いたします (I'll check with my supervisor and get back to you), 社内で検討してからお返事いたします (I'll discuss internally and respond). These delay-with-grace phrases prevent premature commitments while maintaining professionalism."
+      },
+      {
+        "id": "ej_cvs_14",
+        "question": "I'm afraid that won't be _____.",
+        "translation": "(申し訳ありませんが、それはちょっと難しいかと。)",
+        "options": [
+          "難しいかと",
+          "できません",
+          "いやです",
+          "無理です"
+        ],
+        "correct": "難しいかと",
+        "explanation": "ちょっと難しいかと (chotto muzukashii ka to, it might be a bit difficult, I think) is the quintessential indirect Japanese refusal. It literally never says 'no.' ちょっと (a bit) softens, 難しい (difficult) avoids 'impossible,' and かと (I think) makes it speculative. This is the most commonly used business refusal pattern. Stronger but still indirect: 対応しかねます (we're unable to accommodate), 今回は見送らせていただきます (we'll pass this time). Learning to say 'no' without saying 'no' is perhaps the most important Japanese communication skill."
+      },
+      {
+        "id": "ej_cvs_15",
+        "question": "Thank you for everything. I really _____ it.",
+        "translation": "(いろいろとお世話になりました。心から感謝しております。)",
+        "options": [
+          "感謝しております",
+          "感謝します",
+          "ありがとうございます",
+          "感謝している"
+        ],
+        "correct": "感謝しております",
+        "explanation": "感謝しております (kansha shite orimasu) is the humble form of 'I am grateful.' おります (orimasu) is the humble equivalent of います, making this deeply respectful. お世話になりました (osewa ni narimashita, you've taken care of me) is the go-to phrase for expressing gratitude for ongoing support. Gratitude expressions scale: ありがとう (casual) → ありがとうございます (standard) → 感謝しております (humble/formal) → 心より感謝申し上げます (deeply respectful). Japanese places enormous value on proper expressions of gratitude, especially at farewells and life transitions."
+      }
+    ]
+  },
+  {
+    "name": "Written Japanese (書き言葉)",
+    "items": [
+      {
+        "id": "ej_wrj_1",
+        "question": "According to the report, the population _____.",
+        "translation": "(報告書によると、人口が減少している。)",
+        "options": [
+          "減少している",
+          "減っている",
+          "少なくなっている",
+          "減りつつある"
+        ],
+        "correct": "減少している",
+        "explanation": "減少している (genshou shite iru, is decreasing) uses the Sino-Japanese compound verb 減少する instead of the native 減る (heru). Written Japanese strongly prefers Sino-Japanese (漢語, kango) vocabulary: 増加 vs. 増える (increase), 変化 vs. 変わる (change), 到着 vs. 着く (arrive). Academic papers, news articles, and formal reports use kango extensively. Recognizing and using these compound verbs elevates your writing from conversational to professional. This register shift between spoken and written vocabulary is a defining feature of Japanese literacy."
+      },
+      {
+        "id": "ej_wrj_2",
+        "question": "The meeting will be held _____ follows.",
+        "translation": "(会議は下記の通り開催されます。)",
+        "options": [
+          "下記の通り",
+          "次のように",
+          "こんなふうに",
+          "こう"
+        ],
+        "correct": "下記の通り",
+        "explanation": "下記の通り (kaki no toori, as written below) is standard formal document language. 通り (toori, as/according to) is essential in written Japanese: 予定通り (as planned), 計画通り (as per the plan), 説明の通り (as explained). Formal documents use specific spatial references: 上記 (jyouki, above-mentioned), 下記 (kaki, below-mentioned), 前述 (zenjutsu, previously stated), 後述 (koujutsu, to be discussed later). These navigational terms help readers orient themselves within formal documents."
+      },
+      {
+        "id": "ej_wrj_3",
+        "question": "This matter _____ further discussion.",
+        "translation": "(本件はさらなる議論を要する。)",
+        "options": [
+          "議論を要する",
+          "議論が必要だ",
+          "議論しなければならない",
+          "議論すべきだ"
+        ],
+        "correct": "議論を要する",
+        "explanation": "〜を要する (wo you suru, to require) is elegant written Japanese: 本件は議論を要する means 'this matter requires discussion.' 要する is more formal than 必要とする or いる. Written Japanese employs many such single-character verbs: 〜に関する (concerning), 〜に基づく (based on), 〜に伴う (accompanying), 〜に至る (reaching/arriving at). These literary verbs compress meaning into compact forms ideal for official documents, academic papers, and formal communications."
+      },
+      {
+        "id": "ej_wrj_4",
+        "question": "_____ the above reasons, we have decided to postpone.",
+        "translation": "(以上の理由により、延期することに決定いたしました。)",
+        "options": [
+          "以上の理由により",
+          "上の理由で",
+          "この理由から",
+          "だから"
+        ],
+        "correct": "以上の理由により",
+        "explanation": "以上の理由により (ijou no riyuu ni yori, for the above reasons) uses により (ni yori, by means of / due to), the formal equivalent of casual で or から. Written Japanese has a distinct set of conjunctions and connectors: したがって (therefore — formal) vs. だから (casual), ならびに (and/as well as — formal) vs. と (casual), もしくは (or — formal) vs. か (casual). Mastering these formal connectors is essential for writing professional Japanese emails, reports, and academic papers."
+      },
+      {
+        "id": "ej_wrj_5",
+        "question": "We kindly ask for your _____.",
+        "translation": "(ご理解くださいますようお願い申し上げます。)",
+        "options": [
+          "ご理解くださいますよう",
+          "理解してください",
+          "わかってください",
+          "理解してほしい"
+        ],
+        "correct": "ご理解くださいますよう",
+        "explanation": "ご理解くださいますようお願い申し上げます is the most polite written request form, combining: ご〜 (honorific prefix) + くださいますよう (in hopes that you would kindly) + お願い申し上げます (humbly request). This formulaic expression appears in business letters, official notices, and public announcements. Similar formulaic endings: ご確認のほどよろしくお願いいたします (we kindly ask you to verify), ご了承くださいますようお願いいたします (we ask for your understanding). These set phrases are memorized and deployed as complete units in formal writing."
+      },
+      {
+        "id": "ej_wrj_6",
+        "question": "The data _____ that the trend is continuing.",
+        "translation": "(データは、傾向が続いていることを示している。)",
+        "options": [
+          "示している",
+          "見せている",
+          "出している",
+          "言っている"
+        ],
+        "correct": "示している",
+        "explanation": "示す (shimesu, to indicate/show) is the academic verb for 'data shows.' Written Japanese uses specific verbs for evidence and analysis: 示す (indicate), 述べる (state), 論じる (argue), 検討する (examine), 考察する (discuss/consider), 分析する (analyze). 見せる (miseru, to show visually) is for physical showing, not data analysis. Choosing the right academic verb signals your understanding of written conventions and makes your writing credible and professional."
+      },
+      {
+        "id": "ej_wrj_7",
+        "question": "Regarding your inquiry, _____.",
+        "translation": "(お問い合わせの件につきまして。)",
+        "options": [
+          "お問い合わせの件につきまして",
+          "質問について",
+          "聞いたことについて",
+          "質問のことで"
+        ],
+        "correct": "お問い合わせの件につきまして",
+        "explanation": "につきまして (ni tsukimashite) is the formal equivalent of について (ni tsuite, regarding). お問い合わせの件につきまして means 'regarding your inquiry' in business correspondence. The politeness upgrade: について → につきまして, でした → でございました, ですが → でございますが. Business email Japanese has its own ecosystem of elevated expressions: 拝啓 (haikei, Dear Sir), 敬具 (keigu, Sincerely), ご査収ください (please review), 取り急ぎ (hastily/briefly — used for quick responses)."
+      },
+      {
+        "id": "ej_wrj_8",
+        "question": "It is _____ that all members attend.",
+        "translation": "(全員の出席が望ましい。)",
+        "options": [
+          "望ましい",
+          "いい",
+          "必要だ",
+          "大切だ"
+        ],
+        "correct": "望ましい",
+        "explanation": "望ましい (nozomashii, desirable) is a formal adjective for polite recommendations. 全員の出席が望ましい means 'attendance by all members is desirable.' This indirect phrasing avoids commanding while strongly suggesting. Written Japanese favors these indirect evaluative adjectives: 適切な (tekisetsu na, appropriate), 妥当な (datou na, reasonable/valid), 不可欠な (fukaketsu na, indispensable), 極めて重要な (kiwamete juuyou na, extremely important). They allow the writer to evaluate without dictating — a balanced, authoritative tone."
+      },
+      {
+        "id": "ej_wrj_9",
+        "question": "This product is available _____ limited quantities.",
+        "translation": "(この商品は数量限定で販売しております。)",
+        "options": [
+          "数量限定で",
+          "少しだけ",
+          "ちょっとだけ",
+          "少ない数で"
+        ],
+        "correct": "数量限定で",
+        "explanation": "数量限定 (suuryou gentei, limited quantity) is a four-character compound (四字熟語 style) common in commercial Japanese. Written Japanese loves compact compound expressions: 期間限定 (kikan gentei, limited time), 先着順 (senchaku jun, first come first served), 送料無料 (souryou muryou, free shipping), 全品半額 (zenpin hangaku, all items half price). These dense compounds pack maximum information into minimum space — essential for advertisements, signs, and commercial writing."
+      },
+      {
+        "id": "ej_wrj_10",
+        "question": "The government _____ a new policy.",
+        "translation": "(政府は新しい政策を発表した。)",
+        "options": [
+          "発表した",
+          "言った",
+          "話した",
+          "出した"
+        ],
+        "correct": "発表した",
+        "explanation": "発表する (happyou suru, to announce/publish) is the correct formal verb for official announcements. Written Japanese requires domain-specific verbs: governments 発表する (announce), companies 発売する (release products), researchers 発見する (discover), courts 判決を下す (hand down verdicts). Using the casual 言った (said) for government announcements would be stylistically inappropriate. Each domain — politics, business, science, law — has its own verb vocabulary, and using the right ones demonstrates literate competence."
+      },
+      {
+        "id": "ej_wrj_11",
+        "question": "The following _____ have been revised.",
+        "translation": "(以下の条項が改定されました。)",
+        "options": [
+          "条項が改定されました",
+          "ルールが変わりました",
+          "決まりが変わりました",
+          "条件が変わった"
+        ],
+        "correct": "条項が改定されました",
+        "explanation": "条項 (joukou, clauses/provisions) + 改定 (kaitei, revision) is legal/contractual Japanese. Formal documents use precise terminology: 条項 (clause), 規定 (regulation), 約款 (terms and conditions), 契約 (contract), 施行 (enforcement). The passive されました adds objectivity. Legal and administrative Japanese is a distinct register that most Japanese adults encounter regularly — in apartment contracts, employment agreements, insurance policies, and government notices. Reading this register is a practical life skill."
+      },
+      {
+        "id": "ej_wrj_12",
+        "question": "We sincerely apologize for the _____.",
+        "translation": "(ご不便をおかけして、心よりお詫び申し上げます。)",
+        "options": [
+          "ご不便をおかけして",
+          "不便で",
+          "困って",
+          "めんどうで"
+        ],
+        "correct": "ご不便をおかけして",
+        "explanation": "ご不便をおかけして (go fuben wo okake shite, for causing you inconvenience) + 心よりお詫び申し上げます (we sincerely apologize from the bottom of our hearts) is the gold standard corporate apology. Japanese corporate apology language is highly formulaic: 重ねてお詫び申し上げます (we apologize once again), ご迷惑をおかけしましたことを深くお詫びいたします (we deeply apologize for the inconvenience caused). These expressions appear in recall notices, service disruption announcements, and crisis communications."
+      },
+      {
+        "id": "ej_wrj_13",
+        "question": "Attached please find the _____ document.",
+        "translation": "(添付の書類をご確認ください。)",
+        "options": [
+          "添付の書類",
+          "つけた書類",
+          "送った書類",
+          "入れた書類"
+        ],
+        "correct": "添付の書類",
+        "explanation": "添付 (tenpu, attachment) is email/document Japanese. Common business email phrases: 添付ファイルをご確認ください (please check the attached file), 別添の資料 (separately attached materials), ご査収ください (please review and accept). Japanese business email has strict conventions: begin with 〇〇株式会社の〇〇です (this is [name] from [company]), state purpose clearly, end with よろしくお願いいたします (I humbly request your favorable consideration). These conventions must be followed precisely."
+      },
+      {
+        "id": "ej_wrj_14",
+        "question": "This event will take place _____ scheduled.",
+        "translation": "(本イベントは予定通り開催いたします。)",
+        "options": [
+          "予定通り開催いたします",
+          "予定通りやります",
+          "予定通りします",
+          "通りにします"
+        ],
+        "correct": "予定通り開催いたします",
+        "explanation": "予定通り開催いたします (yotei doori kaisai itashimasu, will be held as scheduled) demonstrates how written announcements layer formal vocabulary: 予定通り (as scheduled), 開催 (holding an event — Sino-Japanese), いたします (humble します). The humble いたします is mandatory in public-facing communication from organizations to customers. Compare: やります (we'll do it — too casual), します (we'll do it — neutral), いたします (we shall do it — humble/formal). Public announcements always use the humble form to show respect to the audience."
+      },
+      {
+        "id": "ej_wrj_15",
+        "question": "In conclusion, this research _____ new insights.",
+        "translation": "(結論として、本研究は新たな知見をもたらした。)",
+        "options": [
+          "知見をもたらした",
+          "ことがわかった",
+          "見つけた",
+          "知った"
+        ],
+        "correct": "知見をもたらした",
+        "explanation": "知見をもたらした (chiken wo motarashita, brought about new insights/findings) uses two literary elements: 知見 (chiken, findings/insights — academic vocabulary) and もたらす (motarasu, to bring about/yield — literary verb). Academic conclusion phrases: 結論として (in conclusion), 以上の結果から (from the above results), 本研究により明らかになった (this research clarified), 今後の課題として (as a future challenge). Academic Japanese writing follows precise structural conventions borrowed from Western academic traditions but expressed through Japanese formal register."
+      }
+    ]
+  },
+  {
+    "name": "Cultural Expressions (文化的表現)",
+    "items": [
+      {
+        "id": "ej_cul_1",
+        "question": "I'll have what you're _____. (When entering someone's home)",
+        "translation": "(お邪魔します。)",
+        "options": [
+          "お邪魔します",
+          "失礼します",
+          "ごめんください",
+          "入ります"
+        ],
+        "correct": "お邪魔します",
+        "explanation": "お邪魔します (ojama shimasu, I'm going to be a bother) is said when entering someone's home — literally 'I will cause a disturbance.' This humble phrase acknowledges that your presence is an imposition. When leaving: お邪魔しました (I was a bother). Japanese has ritualized phrases for every transition: いってきます (I'm leaving — from family), いってらっしゃい (response: go and come back), ただいま (I'm home), おかえりなさい (welcome back). These social rituals maintain group harmony and are performed daily."
+      },
+      {
+        "id": "ej_cul_2",
+        "question": "Before eating, you should say _____.",
+        "translation": "(いただきます。)",
+        "options": [
+          "いただきます",
+          "おいしそう",
+          "食べましょう",
+          "始めましょう"
+        ],
+        "correct": "いただきます",
+        "explanation": "いただきます (itadakimasu, I humbly receive) is the essential pre-meal expression — it thanks everyone involved in the meal: the cook, the farmer, the animal or plant. After eating: ごちそうさまでした (gochisousama deshita, it was a feast). These food rituals are non-negotiable in Japanese culture — even eating alone, most Japanese say いただきます. The humble verb いただく (receive) reflects gratitude and humility before consuming. Teaching children to say いただきます is a fundamental part of Japanese upbringing (しつけ, shitsuke)."
+      },
+      {
+        "id": "ej_cul_3",
+        "question": "_____, I'll be leaving work now.",
+        "translation": "(お先に失礼します。)",
+        "options": [
+          "お先に失礼します",
+          "さようなら",
+          "じゃあね",
+          "帰ります"
+        ],
+        "correct": "お先に失礼します",
+        "explanation": "お先に失礼します (osaki ni shitsurei shimasu, excuse me for leaving before you) is used when leaving work before colleagues — acknowledging that your departure while others stay is slightly rude. The response: お疲れ様でした (otsukaresama deshita, thank you for your hard work). This exchange is daily ritual in Japanese workplaces. Never say さようなら (goodbye) at work — it's too permanent. Other workplace phrases: お疲れ様です (hello/recognition of effort during work), ご苦労様です (said by superiors to subordinates after they complete a task)."
+      },
+      {
+        "id": "ej_cul_4",
+        "question": "It's been a long time! _____.",
+        "translation": "(お久しぶりです。お元気でしたか。)",
+        "options": [
+          "お久しぶりです",
+          "久しぶり",
+          "長い間ですね",
+          "元気"
+        ],
+        "correct": "お久しぶりです",
+        "explanation": "お久しぶりです (ohisashiburi desu, it's been a while — polite) is the standard reunion greeting. The casual version, 久しぶり (hisashiburi), is for friends. Japanese greetings are situation-specific: 初めまして (hajimemashite, first meeting), おはようございます (good morning), こんにちは (hello/afternoon), こんばんは (good evening). Each greeting has casual and formal forms. Using the wrong formality level is noticed immediately. Seasonal greetings add another layer: 明けましておめでとうございます (Happy New Year), お花見楽しんでますか (enjoying cherry blossom viewing?)."
+      },
+      {
+        "id": "ej_cul_5",
+        "question": "When receiving a gift, you say _____.",
+        "translation": "(恐れ入ります。ありがたく頂戴いたします。)",
+        "options": [
+          "ありがたく頂戴いたします",
+          "ありがとう",
+          "嬉しいです",
+          "もらいます"
+        ],
+        "correct": "ありがたく頂戴いたします",
+        "explanation": "ありがたく頂戴いたします (arigataku choudai itashimasu, I gratefully and humbly receive) is the most formal gift-receiving expression. 頂戴する (choudai suru) is humbler than もらう or いただく. Gift-giving culture (贈り物文化) in Japan involves elaborate rituals: the gift is presented with つまらないものですが (it's a trifling thing, but...), initially refused, then accepted graciously. お土産 (omiyage, travel souvenirs) are expected when returning from trips. These gift protocols reinforce social bonds and hierarchical awareness."
+      },
+      {
+        "id": "ej_cul_6",
+        "question": "I'm sorry for causing you _____.",
+        "translation": "(ご迷惑をおかけして申し訳ございません。)",
+        "options": [
+          "ご迷惑をおかけして",
+          "困って",
+          "嫌な気持ちで",
+          "面倒をかけて"
+        ],
+        "correct": "ご迷惑をおかけして",
+        "explanation": "ご迷惑をおかけして (go meiwaku wo okake shite, for causing you trouble/inconvenience) is the standard formal apology preamble. Japanese apologizes frequently and specifically: 遅れてすみません (sorry for being late), お待たせしました (sorry for making you wait), お手数をおかけします (sorry for the trouble I'm causing). Apology culture in Japan serves as social lubricant — even when not clearly at fault, apologizing first maintains relationships. The emphasis is on acknowledging impact on others, not just admitting fault."
+      },
+      {
+        "id": "ej_cul_7",
+        "question": "When asking someone to take care of something, you say _____.",
+        "translation": "(よろしくお願いします。)",
+        "options": [
+          "よろしくお願いします",
+          "頑張ってください",
+          "お願い",
+          "やってください"
+        ],
+        "correct": "よろしくお願いします",
+        "explanation": "よろしくお願いします (yoroshiku onegai shimasu) is possibly the most versatile phrase in Japanese — it means 'please treat me favorably / I'm counting on you / please take care of this / nice to meet you.' It's used when: meeting someone new, asking for help, starting a business relationship, closing emails, beginning a presentation, and dozens more contexts. The more formal versions: よろしくお願いいたします, 何卒よろしくお願い申し上げます. This single phrase encapsulates Japanese relationship culture — mutual obligation and goodwill."
+      },
+      {
+        "id": "ej_cul_8",
+        "question": "_____ (Used when congratulating someone)",
+        "translation": "(おめでとうございます。)",
+        "options": [
+          "おめでとうございます",
+          "すばらしいです",
+          "よかったですね",
+          "嬉しいです"
+        ],
+        "correct": "おめでとうございます",
+        "explanation": "おめでとうございます (omedetou gozaimasu, congratulations) is used for birthdays, graduations, promotions, weddings, and New Year. Japanese celebrates many milestones with specific phrases: 卒業おめでとう (graduation congrats), ご結婚おめでとうございます (wedding congrats), ご出産おめでとうございます (birth congrats), 昇進おめでとうございます (promotion congrats). Each life event has expected congratulatory expressions and associated gift-giving practices, forming a comprehensive social protocol that maintains community bonds."
+      },
+      {
+        "id": "ej_cul_9",
+        "question": "Thank you for the meal. It was _____.",
+        "translation": "(ごちそうさまでした。)",
+        "options": [
+          "ごちそうさまでした",
+          "おいしかったです",
+          "ありがとうございました",
+          "食べました"
+        ],
+        "correct": "ごちそうさまでした",
+        "explanation": "ごちそうさまでした (gochisousama deshita, it was a feast / thank you for the meal) is the post-meal ritual expression. ご馳走 (gochisou) literally means 'running around' — referencing the effort of preparing a feast. This phrase thanks the cook and all who contributed. It's said after meals at home, in restaurants (to the staff when leaving), and at dinner parties. The casual form, ごちそうさま, is common among family and friends. This before/after meal ritual (いただきます / ごちそうさまでした) may be the most culturally distinctive Japanese language practice."
+      },
+      {
+        "id": "ej_cul_10",
+        "question": "Please take care of yourself. _____.",
+        "translation": "(お体にお気をつけて。お大事に。)",
+        "options": [
+          "お大事に",
+          "元気でね",
+          "気をつけてね",
+          "さようなら"
+        ],
+        "correct": "お大事に",
+        "explanation": "お大事に (odaiji ni, take care of yourself — especially health) is said when someone is sick or leaving a doctor's office. Other care expressions: 気をつけて (ki wo tsukete, be careful — for someone traveling or going out), ご自愛ください (gojiai kudasai, please take care of yourself — formal, in letters). Japanese farewell expressions are context-specific: お元気で (stay well — long separation), また会いましょう (let's meet again), 良いお年を (have a good year — year-end). Each farewell matches the anticipated separation duration and context."
+      },
+      {
+        "id": "ej_cul_11",
+        "question": "This is just a small thing, but _____.",
+        "translation": "(つまらないものですが、どうぞ。)",
+        "options": [
+          "つまらないものですが",
+          "いいものですよ",
+          "高いものですが",
+          "プレゼントです"
+        ],
+        "correct": "つまらないものですが",
+        "explanation": "つまらないものですが (tsumaranai mono desu ga, it's a boring/trivial thing, but...) is the classic phrase when presenting a gift — deliberately understating its value. This reflects the Japanese value of 謙遜 (kenson, modesty). Though modern Japanese increasingly say ほんの気持ちですが (just a small token of my feelings) or お口に合うかわかりませんが (I'm not sure if it'll suit your taste — for food gifts), the principle remains: never boast about your gift's value. Self-deprecation in gift-giving shows sophistication and respect for the receiver."
+      },
+      {
+        "id": "ej_cul_12",
+        "question": "I'm counting on you for tomorrow. _____.",
+        "translation": "(明日はよろしくお願いします。)",
+        "options": [
+          "よろしくお願いします",
+          "頑張ってね",
+          "楽しみにしています",
+          "忘れないでね"
+        ],
+        "correct": "よろしくお願いします",
+        "explanation": "よろしくお願いします appears again — this time for a future situation. 明日はよろしくお願いします means 'I'm counting on you for tomorrow / please take care of things tomorrow.' This versatility makes it indispensable: 今後ともよろしくお願いします (please continue to favor me going forward — ongoing relationship), 引き続きよろしくお願いします (continue to support me — mid-project). The phrase fundamentally expresses mutual obligation (互恵, gokei) — a core Japanese social value."
+      },
+      {
+        "id": "ej_cul_13",
+        "question": "Welcome! Please come in. _____.",
+        "translation": "(いらっしゃいませ。どうぞお入りください。)",
+        "options": [
+          "いらっしゃいませ",
+          "こんにちは",
+          "ようこそ",
+          "入ってください"
+        ],
+        "correct": "いらっしゃいませ",
+        "explanation": "いらっしゃいませ (irasshaimase, welcome — honorific) is the ubiquitous greeting in shops, restaurants, and hotels. It uses the honorific form of いる/行く/来る, showing maximum respect to customers in the 客 (kyaku, customer) role. Japanese commercial hospitality (おもてなし, omotenashi) operates on the principle お客様は神様です (the customer is god). Retail staff are trained in specific phrases: またお越しくださいませ (please come again), ありがとうございました (thank you — past tense indicates the transaction is complete)."
+      },
+      {
+        "id": "ej_cul_14",
+        "question": "I hope you have a _____ weekend.",
+        "translation": "(良い週末をお過ごしください。)",
+        "options": [
+          "良い週末をお過ごしください",
+          "良い週末",
+          "週末楽しんで",
+          "良い週末ですね"
+        ],
+        "correct": "良い週末をお過ごしください",
+        "explanation": "良い週末をお過ごしください (yoi shuumatsu wo osugoshi kudasai, please spend a good weekend) uses the respectful お過ごしください rather than casual 過ごして. Japanese seasonal and temporal well-wishes: 良いお年を (have a good New Year), 素敵な休日を (have a lovely holiday), 良い一日を (have a good day). While less common than in English, these temporal farewells are increasingly used, especially in business emails. The respectful verb form (お〜ください) maintains the appropriate level of formality."
+      },
+      {
+        "id": "ej_cul_15",
+        "question": "I'm home! _____.",
+        "translation": "(ただいま。)",
+        "options": [
+          "ただいま",
+          "帰りました",
+          "戻りました",
+          "来ました"
+        ],
+        "correct": "ただいま",
+        "explanation": "ただいま (tadaima, I'm back / just now) is the arriving-home announcement, met with おかえりなさい (okaerinasai, welcome back) or casual おかえり. This daily ritual — ただいま/おかえり — is one of the most emotionally significant exchanges in Japanese family life. It signifies safety, belonging, and return to the inner circle (内, uchi). The full set of daily rituals: いってきます/いってらっしゃい (leaving/seeing off), ただいま/おかえり (returning/welcoming back), いただきます/ごちそうさま (before/after meals). These rituals create rhythm and connection in Japanese domestic life."
+      }
+    ]
+  },
+  {
+    "name": "Advanced Grammar Patterns (上級文法パターン)",
+    "items": [
+      {
+        "id": "ej_agp_1",
+        "question": "Not only did he pass, but he got _____ place.",
+        "translation": "(合格したばかりか、一位を取った。)",
+        "options": [
+          "合格したばかりか",
+          "合格したから",
+          "合格したけど",
+          "合格したのに"
+        ],
+        "correct": "合格したばかりか",
+        "explanation": "〜ばかりか (bakari ka, not only... but also) adds an unexpected additional fact. 合格したばかりか一位を取った means 'not only did he pass, but he took first place.' ばかりか escalates beyond expectation. Similar patterns: 〜のみならず (nomi narazu, not only — even more formal), 〜だけでなく (dake de naku, not only — neutral), 〜に加えて (ni kuwaete, in addition to). These progressive addition patterns are essential for academic and journalistic writing where building evidence is crucial."
+      },
+      {
+        "id": "ej_agp_2",
+        "question": "Whether or not it rains, the event will _____ on.",
+        "translation": "(雨が降ろうと降るまいと、イベントは開催される。)",
+        "options": [
+          "降ろうと降るまいと",
+          "降っても降らなくても",
+          "降るか降らないか",
+          "降ったら降ったで"
+        ],
+        "correct": "降ろうと降るまいと",
+        "explanation": "〜ようと〜まいと (you to...mai to) means 'whether or not' at a literary level. 降ろう (volitional — 'let it rain') + 降るまい (negative volitional — 'let it not rain') creates an elegant concessive pair. まい is the literary negative volitional: するまい (won't do), 行くまい (won't go). This construction is found in formal speeches, essays, and literature: 何があろうとなかろうと (regardless of what happens or doesn't). It shows sophisticated command of classical-influenced modern Japanese."
+      },
+      {
+        "id": "ej_agp_3",
+        "question": "Given that he's a beginner, his performance was _____.",
+        "translation": "(初心者にしては、良い演技だった。)",
+        "options": [
+          "初心者にしては",
+          "初心者だから",
+          "初心者なので",
+          "初心者として"
+        ],
+        "correct": "初心者にしては",
+        "explanation": "〜にしては (ni shite wa, for / considering that) sets an expectation then presents a surprising deviation. 初心者にしては良い means 'good, considering he's a beginner' — performance exceeded expectations for that category. Other examples: 日本人にしては背が高い (tall for a Japanese person), 子供にしては上手だ (skilled for a child). にしては is both a compliment and a qualifier — it praises while contextualizing. It's distinct from として (as) which doesn't imply surprise: 初心者として (as a beginner, speaking in that capacity)."
+      },
+      {
+        "id": "ej_agp_4",
+        "question": "Far from being tired, she seemed _____ energized.",
+        "translation": "(疲れるどころか、むしろ元気そうだった。)",
+        "options": [
+          "疲れるどころか",
+          "疲れたから",
+          "疲れたけど",
+          "疲れないで"
+        ],
+        "correct": "疲れるどころか",
+        "explanation": "〜どころか (dokoro ka, far from / let alone) strongly negates the expected state and presents the opposite. 疲れるどころか元気そうだった means 'far from being tired, she seemed energized.' どころか reverses expectations dramatically: 減るどころか増えた (far from decreasing, it increased), 簡単どころか難しすぎる (far from easy, it's too difficult). This rhetorical device is powerful in argumentation, showing that reality contradicts assumptions. むしろ (mushiro, rather/instead) often follows to emphasize the reversal."
+      },
+      {
+        "id": "ej_agp_5",
+        "question": "The project is _____ the verge of completion.",
+        "translation": "(プロジェクトは完成間近だ。)",
+        "options": [
+          "完成間近だ",
+          "完成しそうだ",
+          "完成したい",
+          "完成できる"
+        ],
+        "correct": "完成間近だ",
+        "explanation": "間近 (majika, imminent / close at hand) is a literary expression meaning 'very near.' 完成間近 means 'nearing completion / on the verge of being complete.' Advanced Japanese uses many such compact Sino-Japanese expressions: 目前 (mokuzen, imminent — even more dramatic), 危機一髪 (kiki ippatsu, by a hair's breadth), 前代未聞 (zendai mimon, unprecedented). These dense compounds carry narrative force and are staples of news headlines, book titles, and dramatic storytelling."
+      },
+      {
+        "id": "ej_agp_6",
+        "question": "To the extent _____ I've researched, there's no precedent.",
+        "translation": "(調べた限りでは、前例がない。)",
+        "options": [
+          "調べた限りでは",
+          "調べたから",
+          "調べると",
+          "調べたので"
+        ],
+        "correct": "調べた限りでは",
+        "explanation": "〜た限りでは (ta kagiri de wa, to the extent that / as far as one has done) qualifies a statement's scope. 調べた限りでは means 'as far as I've researched.' This qualifier is intellectually honest — acknowledging the limits of your investigation. Similar scope qualifiers: 私の知る限り (as far as I know), 覚えている限り (as far as I remember), 見た限りでは (from what I've seen). Academic and professional Japanese values these qualifiers because they show rigor and humility about the boundaries of one's knowledge."
+      },
+      {
+        "id": "ej_agp_7",
+        "question": "He speaks as if he _____ everything.",
+        "translation": "(彼はまるで何でも知っているかのように話す。)",
+        "options": [
+          "知っているかのように",
+          "知っているように",
+          "知っているみたいに",
+          "知っているらしく"
+        ],
+        "correct": "知っているかのように",
+        "explanation": "〜かのように (ka no you ni, as if) creates literary similes and hypothetical comparisons. まるで何でも知っているかのように means 'as if he knows everything.' まるで (marude, just like / as if) intensifies the comparison. かのように is more formal than ように or みたいに: まるで夢を見ているかのようだ (it's as if I'm dreaming), まるで別世界にいるかのようだった (it was as if I were in another world). This literary pattern adds vivid imagery to descriptions and is beloved in Japanese fiction and essays."
+      },
+      {
+        "id": "ej_agp_8",
+        "question": "_____ being injured, he continued playing.",
+        "translation": "(怪我をしているにもかかわらず、プレーを続けた。)",
+        "options": [
+          "にもかかわらず",
+          "のに",
+          "けど",
+          "でも"
+        ],
+        "correct": "にもかかわらず",
+        "explanation": "にもかかわらず (nimo kakawarazu, despite / in spite of) is the most formal concessive conjunction. 怪我をしているにもかかわらず means 'despite being injured.' Formality scale for 'despite': けど (casual) → のに (semi-formal, with emotional frustration) → にもかかわらず (formal/written). にもかかわらず is standard in academic writing, news reports, and formal speeches: 警告にもかかわらず (despite warnings), 努力にもかかわらず (despite efforts). Its length and formality make it a hallmark of sophisticated written Japanese."
+      },
+      {
+        "id": "ej_agp_9",
+        "question": "It goes without saying that health is _____.",
+        "translation": "(健康が大切なのは言うまでもない。)",
+        "options": [
+          "言うまでもない",
+          "言わないでいい",
+          "言うことない",
+          "言えない"
+        ],
+        "correct": "言うまでもない",
+        "explanation": "〜は言うまでもない (wa iu made mo nai, it goes without saying / needless to say) is an emphatic assertion of an obvious truth. 健康が大切なのは言うまでもない means 'It goes without saying that health is important.' This rhetorical device strengthens a point by claiming it's so obvious it shouldn't need stating — while of course stating it. Similar patterns: もちろん (of course), 当然ながら (naturally), いわずもがな (needless to say — literary). These are valuable in persuasive writing and speeches."
+      },
+      {
+        "id": "ej_agp_10",
+        "question": "This is the result of years of _____ effort.",
+        "translation": "(これは長年にわたる努力の結果だ。)",
+        "options": [
+          "長年にわたる",
+          "長年の",
+          "長い年の",
+          "長年からの"
+        ],
+        "correct": "長年にわたる",
+        "explanation": "にわたる (ni wataru, spanning / extending over) is a formal modifier meaning 'across/over (a period or range).' 長年にわたる努力 means 'efforts spanning many years.' にわたる modifies nouns: 3日間にわたる会議 (a meeting spanning 3 days), 全国にわたる調査 (a nationwide survey), 多岐にわたる分野 (a wide range of fields). This literary modifier is ubiquitous in formal reports, event descriptions, and any context requiring emphasis on scope or duration."
+      },
+      {
+        "id": "ej_agp_11",
+        "question": "He left without _____ much as a word.",
+        "translation": "(彼は一言も言わずに去った。)",
+        "options": [
+          "一言も言わずに",
+          "一言言って",
+          "一言だけ言って",
+          "一言しか言わずに"
+        ],
+        "correct": "一言も言わずに",
+        "explanation": "一言も〜ない (hitokoto mo...nai, not even a single word) uses も with a negative for emphatic 'not even one.' 一言も言わずに means 'without saying even a single word.' This 〜も〜ない pattern creates strong negatives: 一度も行ったことがない (have never been even once), 一円も持っていない (don't have even one yen), 一人も来なかった (not even one person came). The counter word + も + negative structure is one of the most expressive patterns in Japanese for emphasizing absence or zero."
+      },
+      {
+        "id": "ej_agp_12",
+        "question": "The _____ he spoke, the more confused I became.",
+        "translation": "(彼が話せば話すほど、混乱した。)",
+        "options": [
+          "話せば話すほど",
+          "話すと話すだけ",
+          "話して話して",
+          "話した話したで"
+        ],
+        "correct": "話せば話すほど",
+        "explanation": "〜ば〜ほど revisited with a complex example: 話せば話すほど混乱した means 'the more he spoke, the more confused I became.' This proportional increase pattern works with adjectives too: 安ければ安いほどいい (the cheaper the better), 早ければ早いほどいい (the sooner the better). It also works in the negative: 考えれば考えるほどわからなくなる (the more I think, the less I understand). This structure is intellectually satisfying and frequently tested on JLPT exams."
+      },
+      {
+        "id": "ej_agp_13",
+        "question": "Only after failing did he _____ the importance of study.",
+        "translation": "(失敗して初めて勉強の大切さがわかった。)",
+        "options": [
+          "初めてわかった",
+          "わかった",
+          "やっとわかった",
+          "ついにわかった"
+        ],
+        "correct": "初めてわかった",
+        "explanation": "〜て初めて (te hajimete, only after doing... for the first time) expresses that understanding or realization came only through experience. 失敗して初めてわかった means 'only after failing did I understand for the first time.' This pattern captures the wisdom-through-experience theme: 日本に住んで初めて日本語の難しさがわかった (only after living in Japan did I understand Japanese difficulty), 親になって初めて親の気持ちがわかった (only after becoming a parent did I understand parents' feelings). Profoundly human and frequently used in reflective speech."
+      },
+      {
+        "id": "ej_agp_14",
+        "question": "This is a problem that cannot be _____ any longer.",
+        "translation": "(これは無視できない問題だ。)",
+        "options": [
+          "無視できない問題",
+          "無理な問題",
+          "見ない問題",
+          "知らない問題"
+        ],
+        "correct": "無視できない問題",
+        "explanation": "無視できない (mushi dekinai, cannot be ignored) combines the Sino-Japanese noun 無視 (disregard) with the potential negative. Advanced Japanese builds complex expressions from Sino-Japanese elements: 否定できない事実 (undeniable fact), 避けられない問題 (unavoidable problem), 見過ごせない状況 (situation that can't be overlooked). These noun+できない/できる compounds are endlessly productive and professional-sounding: 想像できない (unimaginable), 理解できない (incomprehensible), 容認できない (unacceptable)."
+      },
+      {
+        "id": "ej_agp_15",
+        "question": "Come what may, I will _____ my dream.",
+        "translation": "(何があっても、夢を諦めない。)",
+        "options": [
+          "夢を諦めない",
+          "夢をやめない",
+          "夢を止めない",
+          "夢を忘れない"
+        ],
+        "correct": "夢を諦めない",
+        "explanation": "何があっても (nani ga atte mo, no matter what happens) + 諦めない (akiramenai, won't give up) creates a powerful statement of determination. 諦める (akirameru, to give up/resign oneself) is one of the most emotionally significant verbs in Japanese, connected to the Buddhist concept of acceptance (諦観, taikan). 諦めないで (don't give up) is one of the most famous encouraging phrases in Japanese culture, appearing in songs, speeches, and daily conversation. This final item captures the spirit of perseverance (頑張り, ganbari) that permeates Japanese culture."
+      }
+    ]
   }
 ]
