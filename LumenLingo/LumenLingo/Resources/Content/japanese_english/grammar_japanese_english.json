@@ -191,8 +191,8 @@
       },
       {
         "id": "je_art15",
-        "question": "I went to _____ hospital.",
-        "translation": "(私は病院に行きました)",
+        "question": "I went to _____ park yesterday.",
+        "translation": "(私は昨日公園に行きました)",
         "options": [
           "the",
           "a",
@@ -200,7 +200,7 @@
           "no article"
         ],
         "correct": "the",
-        "explanation": "アメリカ英語では通常、特定の場所に'the hospital'と言います：'I went to the hospital'。これは特定の病院、おそらく近くの病院またはみんなが知っている病院を意味します。イギリス英語では活動を指すときに'to hospital'（冠詞なし）と言うことがあります。日本語では「病院に行った」とこれを示しません。英語では通常、公共の場所にはその地域の特定のものを意味する場合'the'が必要です。"
+        "explanation": "特定の場所（話し手と聞き手が両方知っている場所）にはtheを使います。'I went to the park'は、いつもの公園・近所の公園を指します。日本語では「公園に行った」と冠詞は不要ですが、英語では特定の場所を指す時にtheが必要です。'a park'は不特定の公園を意味します：'Is there a park near here?'（この辺に公園はありますか？）のように使います。"
       }
     ]
   },
@@ -1043,7 +1043,7 @@
           "would"
         ],
         "correct": "can",
-        "explanation": "Canは「できる」という能力を表します。「私は泳げます」はI canです。Canの後は必ず動詞の原形です。泳ぎは楽しく、健康的な活動です。能力を表現することは、自分の強みを知らせる方法です。"
+        "explanation": "Canは能力・可能性を表す助動詞です。I can swim = 私は泳げます。Canの後は必ず動詞の原形（toなし）。日本語の「〜できる」「〜られる」に対応します。主語が変わっても形は同じ（I can, she can, they can）。否定形：cannot/can't。疑問文：Can you swim? Canには未来形がないため、will be able toを使います。"
       },
       {
         "id": "je_mod2",
@@ -1056,7 +1056,7 @@
           "would"
         ],
         "correct": "should",
-        "explanation": "Shouldは「すべき」というアドバイスや提案を表します。「あなたは一生懸命勉強すべきです」はYou shouldです。強制ではなく、優しい助言のニュアンスがあります。学習は自己成長の道です。"
+        "explanation": "Shouldは助言・提案を表し、日本語の「〜すべき」「〜した方がいい」に対応します。Mustより柔らかく、命令ではなく提案です。否定：shouldn't（〜すべきでない）。Shouldの3つの用法：①助言（You should rest = 休んだ方がいい）②予想（It should arrive soon = もうすぐ届くはず）③後悔—should have＋過去分詞（You should have told me = 言うべきだった）。"
       },
       {
         "id": "je_mod3",
@@ -1069,7 +1069,7 @@
           "would"
         ],
         "correct": "must",
-        "explanation": "Mustは強い義務や必要性を表します。「私たちは図書館では静かにしなければなりません」はWe mustです。図書館は静かに学ぶ場所です。ルールを守ることは共同生活の基本です。"
+        "explanation": "Mustは強い義務・必要性を表し、日本語の「〜しなければならない」に対応します。Shouldより強く、命令に近いニュアンスです。重要な区別：mustn't = 禁止（してはいけない）、don't have to = 不要（しなくてもよい）。日本語では両方「〜なくていい」と訳せる場合があるので注意。Mustには過去形がなく、had toで代用します。"
       },
       {
         "id": "je_mod4",
@@ -1082,7 +1082,7 @@
           "would"
         ],
         "correct": "can",
-        "explanation": "Canで複数の能力を表現できます。「彼女は3つの言語を話せます」はShe canです。多言語を話せることは素晴らしい能力です。言語は文化への扉を開きます。"
+        "explanation": "Canは習得した技能を表す時に使います。She can speak three languages = 彼女は3つの言語を話せます。Canとbe able toの違い：canは現在の一般的能力、be able toはより正式で全時制で使えます（was able to, will be able to）。Couldは過去の能力：I could swim when I was 5.（5歳の時泳げました）。Can'tは不能力：I can't cook.（料理できません）。"
       },
       {
         "id": "je_mod5",
@@ -1095,7 +1095,7 @@
           "would"
         ],
         "correct": "must",
-        "explanation": "Mustで規則やルールを表します。「彼は制服を着なければなりません」はHe mustです。制服は所属を示すものです。ドレスコードは社会的な規範の一つです。"
+        "explanation": "Mustは規則・ルールを表します。He must wear a uniform = 彼は制服を着なければなりません。Must vs have to：mustは話者自身の判断（内的義務）、have toは外部の要求（規則など）。例：I must study.（自分でそう思う）vs I have to study.（先生に言われた）。アメリカ英語ではhave toがmustより日常的に多く使われます。"
       },
       {
         "id": "je_mod6",
@@ -1108,7 +1108,7 @@
           "would"
         ],
         "correct": "should",
-        "explanation": "健康的なアドバイスにshouldを使います。「あなたはもっと野菜を食べるべきです」はYou shouldです。野菜は体に良い栄養を与えます。優しい助言は相手を思いやる表現です。"
+        "explanation": "Shouldで健康や生活に関する助言を表します。You should eat more vegetables = もっと野菜を食べるべきです。Shouldはought toとほぼ同じ意味：You ought to eat more vegetables. ただしought toの方がフォーマルです。否定形の比較：shouldn't（すべきでない）vs mustn't（してはいけない＝禁止）。Shouldは選択の余地がありますが、mustにはありません。"
       },
       {
         "id": "je_mod7",
@@ -1121,7 +1121,7 @@
           "would"
         ],
         "correct": "can",
-        "explanation": "楽器を演奏する能力もcanで表します。「私はピアノを弾けます」はI canです。音楽の才能は練習によって育ちます。ピアノの音色は心を癒します。"
+        "explanation": "楽器の演奏能力もcanで表します。I can play the piano = 私はピアノが弾けます。日本語の「〜が弾ける」はcanで表現。Play the pianoのように楽器にはtheが必要（play the guitar, play the violin）。ただしスポーツにはtheをつけません（play tennis, play soccer）。この区別は日本語にない英語特有のルールです。"
       },
       {
         "id": "je_mod8",
@@ -1134,7 +1134,7 @@
           "would"
         ],
         "correct": "must",
-        "explanation": "時間厳守の重要性をmustで表します。「彼らは時間通りに到着しなければなりません」はThey mustです。時間を守ることは相手への敬意です。"
+        "explanation": "Mustで厳守事項を表します。They must arrive on time = 時間通りに到着しなければなりません。Mustは推量にも使えます：He must be tired.（彼はきっと疲れているに違いない）。推量の確信度：must（違いない）> should（はず）> may（かもしれない）> might（ひょっとしたら）> can't（ありえない）。義務のmustと推量のmustは文脈で区別します。"
       },
       {
         "id": "je_mod9",
@@ -1147,7 +1147,7 @@
           "would"
         ],
         "correct": "should",
-        "explanation": "道徳的なアドバイスにshouldを使います。「私たちは助け合うべきです」はWe shouldです。助け合いは社会の基盤です。支え合うことで強くなれます。"
+        "explanation": "Shouldは道徳的・社会的な提案にも使います。We should help each other = 助け合うべきです。Shouldの疑問文は相手に助言を求める表現：Should I call him?（電話すべきでしょうか？）What should I do?（どうすべきでしょうか？）。日本語の「〜た方がいい」と「〜すべき」の両方にshouldが対応します。"
       },
       {
         "id": "je_mod10",
@@ -1160,7 +1160,7 @@
           "would"
         ],
         "correct": "can",
-        "explanation": "運転の能力もcanで表現します。「彼女は車を運転できます」はShe canです。運転は便利な技能ですが、責任も伴います。能力の習得には努力が必要です。"
+        "explanation": "Canは実用的な技能の表現にも使います。She can drive a car = 彼女は車を運転できます。Canで許可を尋ねることもできます：Can I use your phone?（電話を使ってもいいですか？）よりフォーマルな許可表現はMay I...?です。日本語では「〜できる」（能力）と「〜してもいい」（許可）は異なる表現ですが、英語ではどちらもcanで表せます。"
       },
       {
         "id": "je_mod11",
@@ -1173,7 +1173,7 @@
           "would"
         ],
         "correct": "should",
-        "explanation": "注意を促す時にshouldを使います。「あなたは注意すべきです」はYou shouldです。安全への配慮は大切です。相手を気遣う優しい表現です。"
+        "explanation": "Shouldで注意や警告を柔らかく伝えます。You should be careful = 注意した方がいいです。Shouldとhad betterの違い：had better（〜した方がいい＝さもないと…）はshouldより強い警告で、否定的な結果を暗示します。例：You had better hurry.（急いだ方がいい＝遅れるよ）。日本語の「〜した方がいい」はshouldに近く、had betterほど強くありません。"
       },
       {
         "id": "je_mod12",
@@ -1186,7 +1186,7 @@
           "would"
         ],
         "correct": "must",
-        "explanation": "締め切りなどの強い必要性をmustで表します。「私は今日これを終えなければなりません」はI mustです。責任感は信頼を築きます。完了への決意を示せます。"
+        "explanation": "Mustで締め切りや緊急の必要性を表します。I must finish this today = 今日これを終えなければなりません。Mustの過去形はhad to：I had to finish it yesterday.（昨日終えなければならなかった）。Will have toで未来の義務：I will have to finish it tomorrow.（明日終えなければならないだろう）。日本語の「〜ねばならない」「〜なくちゃ」がmust/have toに対応します。"
       },
       {
         "id": "je_mod13",
@@ -1199,7 +1199,7 @@
           "would"
         ],
         "correct": "can",
-        "explanation": "視力の能力もcanで表現します。「彼は眼鏡なしで読めます」はHe canです。良い視力は恵まれたものです。能力には個人差があり、それぞれが尊重されます。"
+        "explanation": "Canは身体的能力にも使います。He can read without glasses = 彼は眼鏡なしで読めます。Without（〜なしで）は前置詞。Canの否定can'tで不可能を表現：I can't see without my glasses.（眼鏡なしでは見えません）。Can'tには「不可能」の推量用法もあります：That can't be true.（そんなはずがない＝論理的にありえない）。日本語の「〜はずがない」に対応します。"
       },
       {
         "id": "je_mod14",
@@ -1212,7 +1212,7 @@
           "would"
         ],
         "correct": "should",
-        "explanation": "環境保護の提案にshouldを使います。「私たちは環境を守るべきです」はWe shouldです。地球は私たちの大切な家です。未来のために今行動することが重要です。"
+        "explanation": "Shouldで社会的な提言を表します。We should protect the environment = 環境を守るべきです。Shouldと他の助動詞の強さ比較：must（義務＝しなければならない）> had better（強い助言＝した方がいい、さもないと…）> should/ought to（助言＝すべき）> could（提案＝してもいいかも）。この強さの順番は英語学習者がよく間違えるポイントです。"
       },
       {
         "id": "je_mod15",
@@ -1225,7 +1225,7 @@
           "would"
         ],
         "correct": "must",
-        "explanation": "規則遵守の義務をmustで表します。「あなたはルールに従わなければなりません」はYou mustです。ルールは秩序を保つために存在します。社会生活には規律が必要です。"
+        "explanation": "Mustは規則遵守の義務を表します。You must follow the rules = ルールに従わなければなりません。Mustn't（〜してはいけない＝禁止）とdon't have to（〜しなくてよい＝任意）の違いは重要：You mustn't run here.（走ってはいけない）vs You don't have to run.（走らなくてもよい）。日本語の「〜てはいけない」はmustn't、「〜なくてもいい」はdon't have toに対応します。"
       }
     ]
   }

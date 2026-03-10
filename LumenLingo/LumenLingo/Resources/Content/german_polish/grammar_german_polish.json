@@ -869,7 +869,7 @@
       {
         "id": "gp_fut4",
         "question": "Przeczytam tę książkę. Perfektiv zeigt _____.",
-        "translation": null,
+        "translation": "(Das perfektive Verb zeigt automatisch Zukunft)",
         "options": [
           "Zukunft automatisch",
           "Vergangenheit",

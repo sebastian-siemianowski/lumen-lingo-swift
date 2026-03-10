@@ -898,11 +898,11 @@
         "translation": "(Nauczycie się lekcji - do mężczyzn)",
         "options": [
           "ستتعلمون",
-          "تتعلمon",
+          "تتعلمون",
           "تعلمتم",
           "يتعلم"
         ],
-        "correct": "ستتعلمon",
+        "correct": "ستتعلمون",
         "explanation": "ستتعلمون = سَ + تتعلمون (nauczycie się). Nauka to podróż przez całe życie. Każda lekcja buduje na poprzedniej, tworząc piramidę wiedzy. Uczenie się razem jako grupa wzmacnia zrozumienie - można wymieniać pomysły i pomagać sobie nawzajem."
       },
       {
@@ -1159,7 +1159,7 @@
           "بنات",
           "ابن"
         ],
-        "correct": "ابنتan",
+        "correct": "ابنتان",
         "explanation": "ابنة + ان = ابنتان (dwie córki). جميلتان to dual żeński przymiotnika. Córki to radość rodziców. Dwie córki mogą być bliskimi siostrami, wspierającymi się nawzajem. Rodzina jest fundamentem szczęścia."
       },
       {

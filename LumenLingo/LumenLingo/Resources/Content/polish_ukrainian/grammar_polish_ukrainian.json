@@ -17,7 +17,7 @@
           "розмовляє",
           "розмовляємо"
         ],
-        "correct": "rozmawiam",
+        "correct": "розмовляю",
         "explanation": "Witamy w świecie ukraińskich czasowników. Każda osoba ma swoją unikalną końcówkę. 'Розмовляти' (mówić) zmienia się w 'розмовляю' dla 'я' (ja). Końcówka -ю sygnalizuje pierwszą osobę liczby pojedynczej. Polski ma 'mówię' z końcówką -ę, ukraiński 'розмовляю' z -ю. Obie mowy odmieniają czasowniki przez osoby, co ułatwia wzajemne rozumienie. W ukraińskim można często opuścić zaimek - samo 'розмовляю' mówi wszystkim, że to 'ja'. Czasownik niesie informację, której angielski potrzebuje zaimka. Ta wspólna słowiańska cecha tworzy pomost między polskim a ukraińskim."
       },
       {
@@ -219,8 +219,8 @@
         "options": [
           "читаю",
           "прочитаю",
-          "czytałem",
-          "przeczytałem"
+          "читав",
+          "прочитав"
         ],
         "correct": "читаю",
         "explanation": "Witamy w świecie ukraińskiego aspektu. Czasownik 'Читати' (несовершенный вид) opisuje proces bez określonego końca. Jest to odpowiednik polskiego aspektu niedokonanego. Kiedy mówimy 'Я читаю', oznacza to 'czytam teraz' lub 'jestem w trakcie czytania'. Możemy to porównać do filmu, gdzie akcja po prostu trwa. Ukraiński aspekt działa bardzo podobnie do polskiego, co może być dla uczących się języka sporym ułatwieniem. Aspekt niedokonany wyraża proces, trwanie lub powtarzanie czynności. To przydatny aspekt do opisywania codziennych działań."
@@ -231,9 +231,9 @@
         "translation": "(Ja przeczytam/przeczytałem książkę)",
         "options": [
           "прочитаю",
-          "czytam",
-          "czytałem",
-          "będę czytać"
+          "читаю",
+          "читав",
+          "буду читати"
         ],
         "correct": "прочитаю",
         "explanation": "Czasownik 'Прочитати' (совершенный вид) wskazuje na akcję, która została zakończona lub zostanie zakończona. Jest to odpowiednik polskiego aspektu dokonanego. Gdy mówimy 'Я прочитаю', oznacza to 'przeczytam i zakończę czynność'. Możemy to porównać do zdjęcia, które uchwyciło moment ukończenia. Prefiks 'про-' często zmienia aspekt na dokonany. Ukraiński, podobnie jak polski, szeroko wykorzystuje prefiksy takie jak 'про-', 'за-', 'ви-', 'по-', aby zmieniać aspekt czasownika. To pokazuje wspólną precyzję obu języków."
@@ -244,9 +244,9 @@
         "translation": "(Ty robisz to codziennie?)",
         "options": [
           "робиш",
-          "zrobisz",
-          "robiłeś",
-          "zrobiłeś"
+          "зробиш",
+          "робив",
+          "зробив"
         ],
         "correct": "робиш",
         "explanation": "Czasownik 'Робити' (niedokonany) jest używany do opisywania zwyczajów i czynności powtarzalnych. Słowo 'щодня' (codziennie) często sygnalizuje potrzebę użycia aspektu niedokonanego. Podobnie jak w polskim, aspekt niedokonany odnosi się do życia, rutyny i nawyków. Czasownik 'робити' jest używany w sposób uniwersalny do wyrażania procesów, tak jak polski 'robić'. Jest to bardzo przydatny czasownik do opisywania codziennych czynności."
@@ -257,9 +257,9 @@
         "translation": "(On zrobił to wczoraj)",
         "options": [
           "зробив",
-          "robił",
-          "robi",
-          "zrobi"
+          "робив",
+          "робить",
+          "зробить"
         ],
         "correct": "зробив",
         "explanation": "Czasownik 'Зробити' (dokonany) jest używany dla jednorazowej akcji, szczególnie w przeszłości. Słowo 'вчора' (wczoraj) w połączeniu z aspektem dokonanym oznacza, że akcja została zakończona. Podobnie jak w polskim, 'зробив' oznacza, że czynność została wykonana i jest zakończona. Prefiks 'з-' często zmienia aspekt na dokonany. Możemy to porównać do postawienia pieczęci, gdzie akcja jest zakończona i przypieczętowana. Aspekt dokonany wyraża efektywność i osiągnięcie celu."
@@ -270,9 +270,9 @@
         "translation": "(My pracujemy każdego dnia)",
         "options": [
           "працюємо",
-          "popracujemy",
-          "pracowaliśmy",
-          "popracowaliśmy"
+          "попрацюємо",
+          "працювали",
+          "попрацювали"
         ],
         "correct": "працюємо",
         "explanation": "Czasownik 'Працювати' (niedokonany) jest odpowiedni dla regularnych działań. Fraza 'кожного дня' (każdego dnia) jasno wskazuje na aspekt niedokonany. Jest on używany do opisywania zwyczajów, nawyków i stałych zajęć. 'Працюємо' oznacza, że pracujemy systematycznie, co jest naszą rutyną. Ukraiński używa aspektu niedokonanego w bardzo podobny sposób do polskiego, co ułatwia naukę."
@@ -283,9 +283,9 @@
         "translation": "(Ona ugotuje obiad za godzinę)",
         "options": [
           "приготує",
-          "gotuje",
-          "gotowała",
-          "ugotowała"
+          "готує",
+          "готувала",
+          "приготувала"
         ],
         "correct": "приготує",
         "explanation": "Czasownik 'Приготувати' (dokonany) odnosi się do przyszłej akcji, która przyniesie konkretny efekt. Wyrażenie 'за годину' (za godzinę) w połączeniu z aspektem dokonanym oznacza, że coś będzie gotowe. Prefiks 'при-' często tworzy aspekt dokonany. Jest to obietnica rezultatu, na przykład, że obiad zostanie ugotowany. Aspekt dokonany w przyszłości często stanowi gwarancję osiągnięcia wyniku. To aspekt związany z planami i obietnicami."
@@ -296,9 +296,9 @@
         "translation": "(Ja słuchałem muzyki cały wieczór)",
         "options": [
           "слухав",
-          "posłuchałem",
-          "słucham",
-          "posłucham"
+          "послухав",
+          "слухаю",
+          "послухаю"
         ],
         "correct": "слухав",
         "explanation": "Czasownik 'Слухати' (niedokonany) w przeszłości jest używany do opisania długiego procesu. Wyrażenie 'весь вечір' (cały wieczór) wskazuje na aspekt niedokonany, ponieważ proces trwał przez dłuższy czas. Podobnie jak polski 'słuchałem', aspekt niedokonany podkreśla czas trwania czynności, a nie jej wynik. 'Слухав' oznacza, że była to długa, prawdopodobnie przyjemna aktywność. Jest to aspekt, który pozwala opisać doświadczanie czegoś."
@@ -309,9 +309,9 @@
         "translation": "(Ty zrobisz to szybko?)",
         "options": [
           "зробиш",
-          "robisz",
-          "robiłeś",
-          "zrobiłeś"
+          "робиш",
+          "робив",
+          "зробив"
         ],
         "correct": "зробиш",
         "explanation": "Czasownik 'Зробити' (dokonany) jest używany dla szybkiej, efektywnej akcji. Słowo 'швидко' (szybko) w połączeniu z pytaniem o efekt prowadzi do użycia aspektu dokonanego. Podobnie jak w polskim, 'zrobić' z 'szybko' oznacza efekt. Pytanie 'Зробиш?' to zapytanie o wynik lub efekt. Aspekt dokonany w pytaniach często dotyczy możliwości lub rezultatów. Jest to aspekt konkretów i osiągnięć."
@@ -322,9 +322,9 @@
         "translation": "(Oni czekali trzy godziny)",
         "options": [
           "чекали",
-          "poczekali",
-          "czekają",
-          "poczekają"
+          "почекали",
+          "чекають",
+          "почекають"
         ],
         "correct": "чекали",
         "explanation": "Czasownik 'Чекати' (niedokonany) jest odpowiedni do opisywania długiego oczekiwania. Wyrażenie 'три години' (trzy godziny) wskazuje na czas trwania, co wymaga aspektu niedokonanego. Czekanie to proces, a nie konkretny wynik. 'Чекали' oznacza, że czynność oczekiwania trwała przez pewien czas. Aspekt niedokonany w tym kontekście może wyrażać cierpliwość i wytrwałość, podobnie jak polski niedokonany z długimi okresami. To aspekt opisywania trwania czynności."
@@ -335,9 +335,9 @@
         "translation": "(On napisał list)",
         "options": [
           "написав",
-          "pisał",
-          "pisze",
-          "napisze"
+          "писав",
+          "пише",
+          "напише"
         ],
         "correct": "написав",
         "explanation": "Czasownik 'Написати' (dokonany) jest używany dla zakończonej akcji pisania. Prefiks 'на-' często tworzy aspekt dokonany. 'Написав' oznacza, że czynność pisania została zakończona, a list jest gotowy. Podobnie jak polski 'napisał', aspekt dokonany wskazuje, że list jest teraz gotowy do wysłania. Aspekt dokonany odnosi się do osiągnięć i ukończenia czynności. Jest to satysfakcja z zakończenia czegoś."
@@ -348,9 +348,9 @@
         "translation": "(My czytamy książki wieczorem)",
         "options": [
           "читаємо",
-          "przeczytamy",
-          "czytaliśmy",
-          "przeczytaliśmy"
+          "прочитаємо",
+          "читали",
+          "прочитали"
         ],
         "correct": "читаємо",
         "explanation": "Czasownik 'Читати' (niedokonany) jest używany do opisywania wieczornego rytuału. Słowo 'увечері' (wieczorem) w połączeniu z czasem teraźniejszym wskazuje na zwyczaj. Aspekt niedokonany jest odpowiedni dla przyjemnych, regularnych czynności. 'Читаємо книжки' oznacza, że jest to nasza codzienna przyjemność. Aspekt niedokonany może wyrażać tradycję, zwyczaje i komfort wynikający z regularności."
@@ -361,9 +361,9 @@
         "translation": "(Ja zrobię to jutro)",
         "options": [
           "зроблю",
-          "robię",
-          "robiłem",
-          "zrobiłem"
+          "роблю",
+          "робив",
+          "зробив"
         ],
         "correct": "зроблю",
         "explanation": "Czasownik 'Зробити' (dokonany) jest używany dla konkretnej obietnicy. Słowo 'завтра' (jutro) w połączeniu z obietnicą często wymaga aspektu dokonanego. 'Зроблю' oznacza, że czynność zostanie wykonana i będzie gotowa. Aspekt dokonany w przyszłości często stanowi gwarancję wykonania. Podobnie jak polski dokonany z 'jutro', jest to aspekt odpowiedzialności i zobowiązań. Kiedy obiecujesz coś, często użyjesz aspektu dokonanego."
@@ -374,9 +374,9 @@
         "translation": "(Ona chodzi do pracy każdego ranka)",
         "options": [
           "ходить",
-          "zejdzie",
-          "chodziła",
-          "zeszła"
+          "піде",
+          "ходила",
+          "пішла"
         ],
         "correct": "ходить",
         "explanation": "Czasownik 'Ходити' (niedokonany ruchu) jest używany do opisywania regularnych przemieszczeń. Wyrażenie 'кожного ранку' (każdego ranka) wskazuje na zwyczaj, co wymaga aspektu niedokonanego. Czasowniki ruchu w ukraińskim mają swoje specyficzne aspekty. 'Ходити' oznacza wielokrotne chodzenie. Niedokonany ruchu opisuje codzienne trasy i rytm życia."
@@ -387,9 +387,9 @@
         "translation": "(Ty odrobiłeś zadanie domowe?)",
         "options": [
           "зробив",
-          "robiłeś",
-          "robisz",
-          "zrobisz"
+          "робив",
+          "робиш",
+          "зробиш"
         ],
         "correct": "зробив",
         "explanation": "Czasownik 'Зробити' (dokonany) jest używany do sprawdzenia wykonania czynności. Pytanie o wynik lub efekt wymaga aspektu dokonanego. 'Зробив?' oznacza 'czy jest gotowe?'. Podobnie jak polski dokonany 'zrobiłeś?', często używają go nauczyciele, którzy chcą poznać efekt. Aspekt dokonany odnosi się do odpowiedzialności i sprawdzania, pewnego rodzaju kontroli jakości."
@@ -400,9 +400,9 @@
         "translation": "(My jeździmy do niego często)",
         "options": [
           "їздимо",
-          "pojedziemy",
-          "jeździliśmy",
-          "pojechaliśmy"
+          "поїдемо",
+          "їздили",
+          "поїхали"
         ],
         "correct": "їздимо",
         "explanation": "Czasownik 'Їздити' (niedokonany ruchu) jest używany do opisywania regularnych wizyt. Słowo 'часто' (często) sygnalizuje aspekt niedokonany, odnoszący się do wielokrotnych podróży lub wizyt. 'Їздимо' oznacza, że jest to nasza tradycja i regularna czynność. Niedokonany ruchu może opisywać relacje, więzi i utrzymywanie kontaktu, podobnie jak polski niedokonany z 'często'. To aspekt, który może symbolizować przyjaźń."
@@ -686,6 +686,136 @@
         ],
         "correct": "прийдуть",
         "explanation": "Dla 'вони' używamy 'прийдуть' od 'прийти'. Końcówka -уть typowa dla liczby mnogiej. 'Завтра прийдуть' (jutro przyjdą) to konkretny plan. Czasowniki ruchu w przyszłości są bardzo częste - opisują plany spotkań, podróży. 'Прийти' (przyjść) to jeden z najważniejszych czasowników ruchu. Ukraiński ma bogaty system czasowników ruchu, jeszcze bogatszy niż polski. Każdy sposób poruszania się ma swój czasownik."
+      },
+      {
+        "id": "pu_fut6",
+        "question": "Вона _____ лист.",
+        "translation": "(Ona napisze list)",
+        "options": [
+          "напише",
+          "напишу",
+          "напишеш",
+          "напишемо"
+        ],
+        "correct": "напише",
+        "explanation": "Dla 'вона' czasownik dokonany 'написати' odmienia się: 'напише' (napisze). Prefiks 'на-' czyni czasownik dokonanym. Końcówka -е dla trzeciej osoby jest standardowa. Jak polski 'napisze'. Napisanie listu to konkretna, zamknięta czynność — idealny przypa dek na aspekt dokonany w przyszłości. Forma przyszła czasowników dokonanych jest prosta i przewidywalna."
+      },
+      {
+        "id": "pu_fut7",
+        "question": "Я _____ каву.",
+        "translation": "(Wypiję kawę)",
+        "options": [
+          "вип'ю",
+          "вип'єш",
+          "вип'є",
+          "вип'ємо"
+        ],
+        "correct": "вип'ю",
+        "explanation": "Dla 'я' czasownik dokonany 'випити' (wypić) odmienia się: 'вип'ю'. Prefiks 'ви-' tworzy formę dokonaną od 'пити' (pić). Końcówka -ю dla pierwszej osoby. Apostrof w 'вип'ю' sygnalizuje miękkość — cecha charakterystyczna ukraińskiego. Jak polski 'wypiję'. Kawa (кава) to popularna codzienność, a 'вип'ю' obiecuje jej wypicie do końca."
+      },
+      {
+        "id": "pu_fut8",
+        "question": "Ти _____ мені?",
+        "translation": "(Pomożesz mi?)",
+        "options": [
+          "допоможеш",
+          "допоможу",
+          "допоможе",
+          "допоможемо"
+        ],
+        "correct": "допоможеш",
+        "explanation": "Dla 'ти' czasownik dokonany 'допомогти' (pomóc) odmienia się: 'допоможеш'. Prefiks 'до-' tworzy formę dokonaną. Końcówka -еш dla drugiej osoby. Pytanie 'Допоможеш мені?' to uprzejma prośba o pomoc w przyszłości. Jak polski 'pomożesz?'. To bardzo użyteczny zwrot w codziennych sytuacjach."
+      },
+      {
+        "id": "pu_fut9",
+        "question": "Він _____ це завтра.",
+        "translation": "(On skończy to jutro)",
+        "options": [
+          "закінчить",
+          "закінчу",
+          "закінчиш",
+          "закінчимо"
+        ],
+        "correct": "закінчить",
+        "explanation": "Dla 'він' czasownik dokonany 'закінчити' (skończyć) odmienia się: 'закінчить'. Prefiks 'за-' plus 'кінчити' tworzy dokonaną formę. Końcówka -ить dla trzeciej osoby. 'Завтра' (jutro) potwierdza przyszłość. Jak polski 'skończy'. Aspekt dokonany wyraża obietnicę ukończenia — to nie tylko 'będzie robił', ale 'zrobi i skończy'."
+      },
+      {
+        "id": "pu_fut10",
+        "question": "Ми _____ цей фільм.",
+        "translation": "(My obejrzymy ten film)",
+        "options": [
+          "подивимося",
+          "подивлюся",
+          "подивишся",
+          "подивляться"
+        ],
+        "correct": "подивимося",
+        "explanation": "Dla 'ми' z czasownikiem zwrotnym dokonanym 'подивитися' (obejrzeć): 'подивимося'. Końcówka -мося łączy -мо (my) z partykułą zwrotną -ся. Prefiks 'по-' tworzy aspekt dokonany. Фільм (film) to popularna rozrywka. Forma 'подивимося' brzmi jak zaproszenie do wspólnego oglądania."
+      },
+      {
+        "id": "pu_fut11",
+        "question": "Ви _____ вчасно.",
+        "translation": "(Zdążycie/Zdąży Pan/Pani na czas)",
+        "options": [
+          "встигнете",
+          "встигну",
+          "встигнеш",
+          "встигне"
+        ],
+        "correct": "встигнете",
+        "explanation": "Dla 'ви' (grzecznościowo lub liczba mnoga) czasownik dokonany 'встигнути' (zdążyć): 'встигнете'. Końcówka -ете dla drugiej osoby mnogiej. 'Вчасно' (na czas) to przydatne słowo. Jak polski 'zdążycie'. Czasownik ten jest bardzo przydatny w planowaniu — obiecuje punktualne przybycie."
+      },
+      {
+        "id": "pu_fut12",
+        "question": "Я _____ тобі подарунок.",
+        "translation": "(Kupię ci prezent)",
+        "options": [
+          "куплю",
+          "купиш",
+          "купить",
+          "купимо"
+        ],
+        "correct": "куплю",
+        "explanation": "Dla 'я' czasownik dokonany 'купити' (kupić): 'куплю'. Zmiana 'п' → 'пл' to typowa alternacja spółgłosek. Jak polski 'kupię' (z 'p' → 'pi'). 'Подарунок' (prezent) to piękne słowo. Forma 'куплю' wyraża konkretny plan zakupu — nie ogólne 'chcę kupić', ale 'kupię na pewno'."
+      },
+      {
+        "id": "pu_fut13",
+        "question": "Вона _____ пісню.",
+        "translation": "(Ona zaśpiewa piosenkę)",
+        "options": [
+          "заспіває",
+          "заспіваю",
+          "заспіваєш",
+          "заспіваємо"
+        ],
+        "correct": "заспіває",
+        "explanation": "Dla 'вона' czasownik dokonany 'заспівати' (zaśpiewać): 'заспіває'. Prefiks 'за-' dodaje znaczenie rozpoczęcia i ukończenia czynności. Końcówka -є dla trzeciej osoby. Ukraińska kultura jest bogata w pieśni. 'Заспіває пісню' brzmi jak zapowiedź pięknego momentu. Jak polski 'zaśpiewa'."
+      },
+      {
+        "id": "pu_fut14",
+        "question": "Ти _____ це швидко.",
+        "translation": "(Nauczysz się tego szybko)",
+        "options": [
+          "вивчиш",
+          "вивчу",
+          "вивчить",
+          "вивчимо"
+        ],
+        "correct": "вивчиш",
+        "explanation": "Dla 'ти' czasownik dokonany 'вивчити' (nauczyć się): 'вивчиш'. Prefiks 'ви-' tworzy formę dokonaną. Końcówka -иш dla drugiej osoby. 'Швидко' (szybko) to słowo pocieszenia i zachęty. Forma 'вивчиш' brzmi optymistycznie — obiecuje sukces w nauce. Ukraiński nagradza systematyczną pracę."
+      },
+      {
+        "id": "pu_fut15",
+        "question": "Вони _____ нас.",
+        "translation": "(Oni odwiedzą nas)",
+        "options": [
+          "відвідають",
+          "відвідаю",
+          "відвідаєш",
+          "відвідає"
+        ],
+        "correct": "відвідають",
+        "explanation": "Dla 'вони' czasownik dokonany 'відвідати' (odwiedzić): 'відвідають'. Prefiks 'від-' plus 'відати' tworzą dokonaną formę. Końcówka -ють dla trzeciej osoby mnogiej. Gościnność (гостинність) to ważna cecha ukraińskiej kultury. 'Відвідають нас' to zapowiedź radosnego spotkania. Jak polski 'odwiedzą'."
       }
     ]
   },
@@ -764,7 +894,7 @@
       },
       {
         "id": "pu_case6",
-        "question": "Це книzka _____. (siostra)",
+        "question": "Це книжка _____. (siostra)",
         "translation": "(To książka siostry)",
         "options": [
           "сестри",
@@ -909,8 +1039,8 @@
         "options": [
           "до",
           "в",
-          "na",
-          "z"
+          "на",
+          "з"
         ],
         "correct": "до",
         "explanation": "Przyimek 'do' oznacza 'do' i wymaga dopełniacza. 'Йду до школи' (szkoły - dopełniacz). Polski też używa dopełniacza po 'do': do szkoły. To podobne, ale ukraińska ortografia inna. Przyimek 'до' pokazuje kierunek ruchu DO miejsca. Reguła: do plus dopełniacz zawsze. To jeden z najpopularniejszych przyimków w ukraińskim, używany stale dla kierunku. Szkoła (школа) to miejsce wiedzy i przyjaźni."
@@ -966,6 +1096,136 @@
         ],
         "correct": "у",
         "explanation": "Przyimek 'u' (lub 'w' przed spółgłoskami) oznacza 'w' i wymaga miejscownika. 'У Львові' (we Lwowie - miejscownik z końcówką -і). Polski 'we Lwowie' też miejscownik. Miasta zawsze używają 'u/w', nie 'na'. To ważne do zapamiętania: u/w plus nazwa miasta. Львів (Lwów) to kulturalna stolica zachodniej Ukrainy. Piękne miasto pełne architektury, kawy i sztuki. Nazywany ukraińskim Paryżem."
+      },
+      {
+        "id": "pu_prep6",
+        "question": "Він йде _____ роботу.",
+        "translation": "(On idzie na pracę)",
+        "options": [
+          "на",
+          "до",
+          "в",
+          "з"
+        ],
+        "correct": "на",
+        "explanation": "Przyimek 'на' (na) z biernikiem wyraża kierunek ruchu. 'На роботу' (na pracę) — biernik końcówką -у. Ważne: 'на роботу' (kierunek, biernik) vs 'на роботі' (miejsce, miejscownik). Jak polski 'na pracę' vs 'w pracy'. Przyimek 'на' jest używany z pracą, pocztą, dworcami — to konwencja językowa."
+      },
+      {
+        "id": "pu_prep7",
+        "question": "Вона вийшла _____ кімнати.",
+        "translation": "(Ona wyszła z pokoju)",
+        "options": [
+          "з",
+          "до",
+          "в",
+          "на"
+        ],
+        "correct": "з",
+        "explanation": "Przyimek 'з' (z/ze) z dopełniaczem wyraża pochodzenie lub opuszczanie miejsca. 'З кімнати' (z pokoju) — dopełniacz końcówką -и. To para z 'do': wchodzisz 'до кімнати' i wychodzisz 'з кімнати'. Jak polski 'z pokoju'. Ta logika kierunków jest identyczna w obu językach."
+      },
+      {
+        "id": "pu_prep8",
+        "question": "Книжка _____ столом.",
+        "translation": "(Książka pod stołem)",
+        "options": [
+          "під",
+          "над",
+          "за",
+          "перед"
+        ],
+        "correct": "під",
+        "explanation": "Przyimek 'під' (pod) z narzędnikiem wyraża położenie pod czymś. 'Під столом' (pod stołem) — narzędnik końcówką -ом. Jak polski 'pod stołem'. Przyimki przestrzenne w ukraińskim działają bardzo podobnie do polskich. 'Під' to jeden z podstawowych przyimków lokalizacji."
+      },
+      {
+        "id": "pu_prep9",
+        "question": "Він стоїть _____ дверима.",
+        "translation": "(On stoi przed drzwiami)",
+        "options": [
+          "перед",
+          "за",
+          "під",
+          "над"
+        ],
+        "correct": "перед",
+        "explanation": "Przyimek 'перед' (przed) z narzędnikiem wyraża położenie z przodu. 'Перед дверима' (przed drzwiami) — narzędnik liczby mnogiej końcówką -ами/ями. Jak polski 'przed drzwiami'. 'Двері' (drzwi) w ukraińskim też zawsze w liczbie mnogiej, jak w polskim."
+      },
+      {
+        "id": "pu_prep10",
+        "question": "Ми гуляємо _____ містом.",
+        "translation": "(Spacerujemy za miastem)",
+        "options": [
+          "за",
+          "перед",
+          "під",
+          "над"
+        ],
+        "correct": "за",
+        "explanation": "Przyimek 'за' (za) z narzędnikiem wyraża położenie za czymś. 'За містом' (za miastem). Jak polski 'za miastem'. Przyimek 'за' ma wiele znaczeń — lokacja (za czymś), cel (po coś), czas (w ciągu). Tutaj to lokacja. Spacery za miastem to miła tradycja w ukraińskiej kulturze."
+      },
+      {
+        "id": "pu_prep11",
+        "question": "Лампа _____ столом.",
+        "translation": "(Lampa nad stołem)",
+        "options": [
+          "над",
+          "під",
+          "за",
+          "перед"
+        ],
+        "correct": "над",
+        "explanation": "Przyimek 'над' (nad) z narzędnikiem wyraża położenie powyżej czegoś. 'Над столом' (nad stołem). Jak polski 'nad stołem'. Przyimki 'над' i 'під' są antoniami — góra i dół. Oba wymagają narzędnika dla lokacji. To symetryczny system, łatwy do zapamiętania."
+      },
+      {
+        "id": "pu_prep12",
+        "question": "Я йду _____ магазину.",
+        "translation": "(Idę do sklepu)",
+        "options": [
+          "до",
+          "з",
+          "на",
+          "в"
+        ],
+        "correct": "до",
+        "explanation": "Znowu 'до' z dopełniaczem dla kierunku. 'До магазину' (do sklepu) — końcówka -у w dopełniaczu dla rodzaju męskiego. Jak polski 'do sklepu'. Przyimek 'до' to najczęstszy przyimek kierunkowy. Магазин (sklep) to słowo międzynarodowe, łatwe do zapamiętania."
+      },
+      {
+        "id": "pu_prep13",
+        "question": "Вони сидять _____ деревом.",
+        "translation": "(Oni siedzą pod drzewem)",
+        "options": [
+          "під",
+          "над",
+          "за",
+          "перед"
+        ],
+        "correct": "під",
+        "explanation": "'Під деревом' (pod drzewem) — narzędnik. Siedzenie pod drzewem to klasyczna scena relaksu. 'Дерево' (drzewo) w narzędniku zmienia się w 'деревом'. Jak polski 'pod drzewem'. Przyimki przestrzenne z narzędnikiem tworzą spójny system lokalizacji w ukraińskim."
+      },
+      {
+        "id": "pu_prep14",
+        "question": "Ми їдемо _____ моря.",
+        "translation": "(Jedziemy nad morze)",
+        "options": [
+          "до",
+          "на",
+          "в",
+          "з"
+        ],
+        "correct": "до",
+        "explanation": "'До моря' (do morza/nad morze) — dopełniacz. Jak polski 'nad morze' lub 'do morza'. Ukraiński używa 'до' jako uniwersalnego przyimka kierunkowego. Море (morze) — Ukraina ma piękne wybrzeże Morza Czarnego (Чорне море). Wakacje nad morzem to ulubiony cel ukraińskich rodzin."
+      },
+      {
+        "id": "pu_prep15",
+        "question": "Він працює _____ лікарні.",
+        "translation": "(On pracuje w szpitalu)",
+        "options": [
+          "в",
+          "на",
+          "до",
+          "з"
+        ],
+        "correct": "в",
+        "explanation": "Przyimek 'в' (w) z miejscownikiem wyraża lokację wewnątrz. 'В лікарні' (w szpitalu). 'В' to wariant 'у' używany przed spółgłoskami. Reguła: po samogłosce 'у', po spółgłosce 'в' — dla eufon ii. Лікарня (szpital) w miejscowniku przyjmuje końcówkę -і. Jak polski 'w szpitalu'."
       }
     ]
   }

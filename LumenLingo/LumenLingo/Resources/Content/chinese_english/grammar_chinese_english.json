@@ -685,7 +685,7 @@
           "be"
         ],
         "correct": "are",
-        "explanation": "We are eating = 我们正在吃。晚餐是家人团聚、分享一天经历的时光。Eating = eat + ing（去e加ing，双写t不需要）。注意：eat不双写t，直接加ing。家庭用餐增进感情和沟通。现在进行时捕捉当下瞬间，让表达更具体生动。慢慢享受食物，用心交流，让每餐都有意义。"
+        "explanation": "We are eating = 我们正在吃。晚餐是家人团聚、分享一天经历的时光。Eating = eat + ing（直接加ing，eat不以e结尾，所以不需要去e；也不需要双写t，因为eat以两个元音+辅音结尾）。注意：只有像run（短元音+单辅音）才需要双写：run → running。家庭用餐增进感情和沟通。现在进行时捕捉当下瞬间，让表达更具体生动。"
       },
       {
         "id": "ce_cont6",
@@ -1043,7 +1043,7 @@
           "will"
         ],
         "correct": "can",
-        "explanation": "情态动词是英语的特色，给动词增添意义。Can表示能力和可能性。I can swim = 我会游泳。Can后面接动词原形（不加to）。游泳是实用技能，也是好运动。Can的用法广泛，表达能做某事。掌握情态动词让表达更丰富准确。每个情态动词都有独特的含义和用法。"
+        "explanation": "Can表示能力或可能性，后接动词原形（不加to）。I can swim = 我会游泳。中文的'能/会/可以'都可对应can。Can的形式不随主语变化：I can, she can, they can（不说cans）。否定形式：cannot/can't。疑问句：Can you swim? Can没有将来形式，需用will be able to代替。"
       },
       {
         "id": "ce_mod2",
@@ -1056,7 +1056,7 @@
           "may"
         ],
         "correct": "should",
-        "explanation": "Should给出建议或推荐。You should study harder = 你应该更努力学习。这是善意的建议。Should比must温和，是建议而非命令。努力学习带来好结果。Should表达说话人的看法和关心。给予建议是关心他人的方式。适度的建议帮助他人成长。"
+        "explanation": "Should表建议或轻微义务，比must温和。You should study harder = 你应该更努力学习。中文对应'应该'。否定：shouldn't。Should还可表预期：The train should arrive at 3.（火车应该3点到。）疑问句用于征求建议：Should I call him?（我应该给他打电话吗？）"
       },
       {
         "id": "ce_mod3",
@@ -1069,7 +1069,7 @@
           "would"
         ],
         "correct": "can",
-        "explanation": "Can表能力。She can speak English well = 她能说好英语。Well（好）描述程度。流利的语言能力是成就。Can用于描述已有的技能。每个语言学习者都向这个目标努力。能力通过练习获得。Can表达对某人技能的认可。语言能力开启沟通之门。"
+        "explanation": "Can描述已有的能力或技能。She can speak English well = 她能说好英语。Can + 动词原形，不论主语形式不变（不加-s）。中文'能'和'会'的区别：会=learned skill（学来的技能），能=physical ability（身体能力）。英语统一用can，不区分。Well是副词，修饰speak。"
       },
       {
         "id": "ce_mod4",
@@ -1082,7 +1082,7 @@
           "should"
         ],
         "correct": "must",
-        "explanation": "Must表达强烈的必要性或义务。We must go now = 我们必须现在走。Must比should更强，是必须而非建议。有时情况要求我们立即行动。Must表达紧迫性。遵守必要的事情体现责任。理解must和should的区别帮助正确表达程度。时间有时是刚性的。"
+        "explanation": "Must表强烈义务或必要性。We must go now = 我们必须现在走。Must比should强得多，表'必须'而非'应该'。Must没有过去式，用had to代替：We had to go.（我们不得不走。）重要区别：mustn't = 禁止（不准做），don't have to = 不必（可做可不做）。"
       },
       {
         "id": "ce_mod5",
@@ -1095,7 +1095,7 @@
           "will"
         ],
         "correct": "might",
-        "explanation": "Might表示较弱的可能性。He might be at home = 他可能在家。不确定，但有可能。Might比may的可能性更低。生活中很多事情不确定。Might表达这种不确定性。灵活的思维接受多种可能。对未知保持开放态度很重要。情态动词的细微差别增加表达的精确性。"
+        "explanation": "Might表较低的可能性（约30-40%）。He might be at home = 他可能在家（不太确定）。可能性从高到低排列：will > should > may > might。Might和may意思接近，但might可能性更低。中文都译为'可能'，但语气不同。Might还可用于委婉建议：You might want to check.（你或许想看看。）"
       },
       {
         "id": "ce_mod6",
@@ -1108,7 +1108,7 @@
           "may"
         ],
         "correct": "should",
-        "explanation": "Should给建议。You should wear a coat = 你应该穿外套。关心他人健康的建议。Should表达对他人福祉的关心。天冷穿外套预防感冒。实用的建议出于关怀。适当的衣着保护身体。Should的建议性质让接受者有选择权。关心体现在细节中。"
+        "explanation": "Should用于给建议。You should wear a coat = 你应该穿外套。Should的三种主要用法：①建议（You should rest = 你应该休息）②预期（It should be ready = 应该准备好了）③表示遗憾——should have + 过去分词：You should have told me = 你当时应该告诉我（但你没有）。"
       },
       {
         "id": "ce_mod7",
@@ -1121,7 +1121,7 @@
           "may"
         ],
         "correct": "will",
-        "explanation": "虽然will主要表将来，也常和情态动词归为一类。They will arrive soon = 他们会很快到。Soon（很快）给时间框架。期待到来让人愉快。Will表达确定性较高的未来事件。等待的时间因期待而美好。Will是表达未来最常用的方式。到达意味着团聚。"
+        "explanation": "Will表确定的将来或即时决定。They will arrive soon = 他们会很快到。Will的三种用法：①将来事件（I will go tomorrow）②即时决定（'The phone is ringing.' 'I'll get it.'）③承诺（I will help you）。缩写：I'll, you'll, he'll。否定：won't (= will not)。中文'会/将'对应will。"
       },
       {
         "id": "ce_mod8",
@@ -1134,7 +1134,7 @@
           "will"
         ],
         "correct": "would",
-        "explanation": "Would用于礼貌请求或表达愿望。I would like some tea = 我想要些茶。比I want更礼貌。Would like是礼貌表达的标准方式。茶是舒适的饮品。礼貌的语言表达尊重。Would在提出请求时软化语气。文明的交流让人舒适。礼貌是社交的润滑剂。"
+        "explanation": "Would用于礼貌请求或假设。I would like some tea = 我想要些茶（比I want更礼貌）。Would的三种用法：①礼貌请求（Would you open the door?）②假设/虚拟（I would go if I could = 如果可以我就去）③过去习惯（He would always sing = 他以前总是唱歌）。中文无对应词，通过语气表礼貌。"
       },
       {
         "id": "ce_mod9",
@@ -1147,7 +1147,7 @@
           "would"
         ],
         "correct": "can",
-        "explanation": "Can表能力。She can play the piano = 她会弹钢琴。音乐才能是美好的天赋。Piano（钢琴）是优雅的乐器。Can描述已掌握的技能。音乐表达情感和艺术。每种才能都值得欣赏。Can让我们谈论自己和他人的能力。艺术丰富人生。"
+        "explanation": "Can表已掌握的技能。She can play the piano = 她会弹钢琴。注意can和be able to的区别：can用于现在和一般能力，be able to更正式且可用于所有时态（was able to, will be able to）。Could表过去能力：I could swim when I was 5.（我五岁时就会游泳。）Can't表示做不到：I can't drive.（我不会开车。）"
       },
       {
         "id": "ce_mod10",
@@ -1160,7 +1160,7 @@
           "would"
         ],
         "correct": "must",
-        "explanation": "Must表必要。We must leave early = 我们必须早走。Early（早）给足够时间。有时需要提前以避免迟到。Must表达不可商量的必要性。时间管理是重要技能。Must帮助强调严肃性。准时体现尊重和责任。提前规划避免匆忙。"
+        "explanation": "Must表不可商量的必要性。We must leave early = 我们必须早走。Must vs have to的细微区别：must是说话者自己认为必须的（内在），have to是外部要求（规定、别人要求）。例：I must study.（我觉得我得学习）vs I have to study.（老师要求我学习。）美式口语中have to比must更常用。"
       },
       {
         "id": "ce_mod11",
@@ -1173,7 +1173,7 @@
           "will"
         ],
         "correct": "cannot",
-        "explanation": "Cannot（can't）表禁止或不可能。You cannot smoke here = 你不能在这里吸烟。公共场所的规定保护健康。Cannot否定can，表达不允许。吸烟有害健康。尊重规则维护公共利益。Cannot清楚表达限制。健康意识在提高。遵守规定是公民素质。"
+        "explanation": "Cannot/can't表禁止或不可能。You cannot smoke here = 你不能在这里吸烟。Can't的两个含义：①禁止——You can't park here.（不准在这停车）②逻辑上不可能——That can't be true.（那不可能是真的。）注意：cannot写成一个词（不是can not）。Mustn't也表禁止但语气更强。中文'不能'和'不可以'对应这两种用法。"
       },
       {
         "id": "ce_mod12",
@@ -1186,7 +1186,7 @@
           "will"
         ],
         "correct": "must",
-        "explanation": "Must也用于强烈推断。He must be tired = 他一定很累。基于观察的逻辑推断。Must表达说话人的确信。疲劳是正常的身体信号。理解他人的状态体现同理心。Must的推断用法很常见。观察和推理是理解的基础。关心他人需要敏锐观察。"
+        "explanation": "Must还可表强烈推断（逻辑推理），不仅仅表义务。He must be tired = 他一定很累（根据观察判断出来的）。推断的可能性等级：must（一定是）> should（应该是）> may（可能是）> might（也许是）> can't（不可能是）。这种must表示'我確信'，中文'一定'对应推断义的must。区分语境：He must study.（义务）vs He must be tired.（推断）"
       },
       {
         "id": "ce_mod13",
@@ -1199,7 +1199,7 @@
           "can"
         ],
         "correct": "may",
-        "explanation": "May表中等可能性。They may come to the party = 他们可能会来。不确定但有希望。May比might的可能性稍高。聚会因朋友而有趣。May表达不确定的未来。灵活的计划适应变化。May的概率在can和might之间。期待但不强求让心态平和。"
+        "explanation": "May表中等可能性（约50%）。They may come to the party = 他们可能会来聚会。May比might的可能性稍高。May还用于正式许可：May I come in?（我可以进来吗？）这比Can I更正式、更有礼貌。中文'也许/可能'对应may的可能性含义，'可以'对应许可含义。注意may not不缩写（没有mayn't这个词）。"
       },
       {
         "id": "ce_mod14",
@@ -1212,7 +1212,7 @@
           "may"
         ],
         "correct": "will",
-        "explanation": "Will表承诺或意愿。I will help you = 我会帮助你。承诺帮助建立信任。Will表达坚定的决心。帮助他人是美德。Will使承诺明确。互助让社会温暖。Will的承诺性用法表达责任感。真诚的帮助不求回报。"
+        "explanation": "Will表承诺或意愿。I will help you = 我会帮助你。Will vs be going to的区别：will用于当场决定或承诺，be going to用于已有的计划。例：'I'll open the door.'（即时反应，刚决定）vs 'I'm going to study tonight.'（事先已计划好）。Won't = will not，表拒绝：I won't do it.（我不做。）"
       },
       {
         "id": "ce_mod15",
@@ -1225,7 +1225,7 @@
           "will"
         ],
         "correct": "should",
-        "explanation": "Should建议尝试。You should try this food = 你应该尝尝这个食物。友好的推荐。Should邀请但不强迫。尝试新食物拓展味觉。Should的建议性质尊重选择。美食是文化的一部分。Should表达分享好体验的愿望。开放的心态让生活丰富。"
+        "explanation": "Should用于推荐。You should try this food = 你应该尝尝这个食物。Should有时可用ought to替换，意思相同但ought to更正式：You ought to try this food. 否定：shouldn't = 不应该。Should常用于给个人意见和友善建议，完全对应中文的'应该'。注意should和must的区别：should是可选建议，must是强制要求。"
       }
     ]
   }
