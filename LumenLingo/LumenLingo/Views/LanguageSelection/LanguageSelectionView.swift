@@ -188,7 +188,6 @@ struct LanguageSelectionView: View {
     @State private var selectedSource: SupportedLanguage = .english
     @State private var selectedTarget: SupportedLanguage = .spanish
     @State private var showBeta = false
-    @State private var searchText = ""
 
     private var currentPref: LanguagePreference? { languagePrefs.first }
     private var isDark: Bool { colorScheme == .dark }
@@ -200,35 +199,34 @@ struct LanguageSelectionView: View {
         }
     }
 
-    // Determine available targets for the selected source
-    private var availableTargets: [SupportedLanguage] {
+    /// Targets where the pair (either direction) is built-in – always visible.
+    private var builtInTargets: [SupportedLanguage] {
         SupportedLanguage.allCases.filter { target in
             guard target != selectedSource else { return false }
             let pair = LanguagePair(source: selectedSource, target: target)
             let pairReverse = LanguagePair(source: target, target: selectedSource)
-            let isBuiltIn = pair.isBuiltIn || pairReverse.isBuiltIn
-            if isBuiltIn { return true }
-            // Beta: only show if content exists on disk (bundle has the JSON)
-            if showBeta {
-                let hasContent = Bundle.main.url(forResource: "flashcards_\(pair.key)", withExtension: "json") != nil
-                    || Bundle.main.url(forResource: "grammar_\(pair.key)", withExtension: "json") != nil
-                    || Bundle.main.url(forResource: "flashcards_\(pair.key)", withExtension: "json", subdirectory: "Content/\(pair.key)") != nil
-                if hasContent { return true }
-            }
+            return pair.isBuiltIn || pairReverse.isBuiltIn
+        }
+    }
+
+    /// Targets that are NOT built-in but have content or are explicitly enabled.
+    private var betaTargets: [SupportedLanguage] {
+        SupportedLanguage.allCases.filter { target in
+            guard target != selectedSource else { return false }
+            let pair = LanguagePair(source: selectedSource, target: target)
+            let pairReverse = LanguagePair(source: target, target: selectedSource)
+            if pair.isBuiltIn || pairReverse.isBuiltIn { return false }
+            let hasContent = Bundle.main.url(forResource: "flashcards_\(pair.key)", withExtension: "json") != nil
+                || Bundle.main.url(forResource: "grammar_\(pair.key)", withExtension: "json") != nil
+                || Bundle.main.url(forResource: "flashcards_\(pair.key)", withExtension: "json", subdirectory: "Content/\(pair.key)") != nil
+            if hasContent { return true }
             return betaPairs.contains {
                 $0.sourceLanguage == selectedSource.rawValue && $0.targetLanguage == target.rawValue
             }
         }
     }
 
-    private var filteredTargets: [SupportedLanguage] {
-        if searchText.isEmpty { return availableTargets }
-        return availableTargets.filter {
-            $0.name(in: selectedSource).localizedCaseInsensitiveContains(searchText)
-            || $0.displayName.localizedCaseInsensitiveContains(searchText)
-            || $0.englishName.localizedCaseInsensitiveContains(searchText)
-        }
-    }
+
 
     var body: some View {
         NavigationStack {
@@ -258,9 +256,14 @@ struct LanguageSelectionView: View {
                         directionArrow
                         targetLanguageSection
                         betaToggleSection
+                        if showBeta {
+                            betaTargetSection
+                                .transition(.opacity.combined(with: .move(edge: .top)))
+                        }
                         confirmButton
                         Spacer(minLength: 80)
                     }
+                    .animation(.easeInOut(duration: 0.3), value: showBeta)
                     .padding(.horizontal, 16)
                     .padding(.top, 12)
                 }
@@ -274,7 +277,6 @@ struct LanguageSelectionView: View {
                         .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
                 }
             }
-            .searchable(text: $searchText, prompt: L.searchLanguages)
             .onAppear { loadCurrent() }
         }
     }
@@ -355,7 +357,7 @@ struct LanguageSelectionView: View {
             .shadow(color: .cyan.opacity(0.3), radius: 8)
     }
 
-    // MARK: - Target Language
+    // MARK: - Target Language (Built-in)
 
     private var targetLanguageSection: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -369,7 +371,7 @@ struct LanguageSelectionView: View {
                     )
                 )
 
-            if filteredTargets.isEmpty {
+            if builtInTargets.isEmpty {
                 Text(L.noLanguagesAvailable)
                     .font(.subheadline)
                     .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
@@ -377,7 +379,43 @@ struct LanguageSelectionView: View {
                     .padding(20)
             } else {
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
-                    ForEach(filteredTargets, id: \.self) { lang in
+                    ForEach(builtInTargets, id: \.self) { lang in
+                        languageCard(lang, isSelected: lang == selectedTarget, translatedIn: selectedSource) {
+                            withAnimation(.spring(response: 0.35)) {
+                                selectedTarget = lang
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .padding(18)
+        .background(glassCard)
+    }
+
+    // MARK: - Beta Target Languages
+
+    private var betaTargetSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Label(L.betaLanguagePairs, systemImage: "flask.fill")
+                .font(.headline)
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: [.orange, Color(hex: "#f59e0b")],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+
+            if betaTargets.isEmpty {
+                Text(L.noLanguagesAvailable)
+                    .font(.subheadline)
+                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
+                    .frame(maxWidth: .infinity, alignment: .center)
+                    .padding(20)
+            } else {
+                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
+                    ForEach(betaTargets, id: \.self) { lang in
                         languageCard(lang, isSelected: lang == selectedTarget, translatedIn: selectedSource) {
                             withAnimation(.spring(response: 0.35)) {
                                 selectedTarget = lang

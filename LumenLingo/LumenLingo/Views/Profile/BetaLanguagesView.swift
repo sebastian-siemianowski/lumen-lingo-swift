@@ -19,16 +19,8 @@ struct BetaLanguagesView: View {
     private var L: AppStrings { localization.strings }
     private var isDark: Bool { colorScheme == .dark }
 
-    // Core pairs — React's TOP_LANGUAGE_PAIRS (always on)
-    private let corePairs: [LanguagePair] = [
-        .init(source: .english, target: .spanish),
-        .init(source: .spanish, target: .english),
-        .init(source: .polish, target: .english),
-        .init(source: .polish, target: .spanish),
-        .init(source: .polish, target: .german),
-        .init(source: .german, target: .english),
-        .init(source: .german, target: .spanish),
-    ]
+    // Core pairs — always on, matching LanguagePair.builtIn
+    private let corePairs: [LanguagePair] = LanguagePair.builtIn
 
     // MARK: - Data
 

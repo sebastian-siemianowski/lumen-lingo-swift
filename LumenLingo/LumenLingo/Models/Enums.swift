@@ -299,42 +299,15 @@ struct LanguagePair: Equatable, Hashable, Codable {
         "\(source.displayName) \u{2192} \(target.displayName)"
     }
 
-    /// Built-in (non-beta) language pairs that have content data
+    /// Built-in (non-beta) language pairs — the core supported pairs
     static let builtIn: [LanguagePair] = [
-        // English pairs
         .init(source: .english, target: .spanish),
-        .init(source: .english, target: .french),
-        .init(source: .english, target: .german),
-        .init(source: .english, target: .polish),
-        .init(source: .english, target: .arabic),
-        .init(source: .english, target: .chinese),
-        .init(source: .english, target: .japanese),
-        // Spanish pairs
         .init(source: .spanish, target: .english),
-        // French pairs
-        .init(source: .french, target: .english),
-        // German pairs
-        .init(source: .german, target: .english),
-        .init(source: .german, target: .spanish),
-        .init(source: .german, target: .polish),
-        // Polish pairs
         .init(source: .polish, target: .english),
         .init(source: .polish, target: .spanish),
         .init(source: .polish, target: .german),
-        .init(source: .polish, target: .french),
-        .init(source: .polish, target: .arabic),
-        .init(source: .polish, target: .chinese),
-        .init(source: .polish, target: .japanese),
-        .init(source: .polish, target: .ukrainian),
-        // Arabic pairs
-        .init(source: .arabic, target: .english),
-        // Chinese pairs
-        .init(source: .chinese, target: .english),
-        // Japanese pairs
-        .init(source: .japanese, target: .english),
-        // Ukrainian pairs
-        .init(source: .ukrainian, target: .english),
-        .init(source: .ukrainian, target: .polish),
+        .init(source: .german, target: .english),
+        .init(source: .german, target: .spanish),
     ]
 
     /// Check if a pair is built-in by key
