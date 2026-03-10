@@ -441,7 +441,7 @@
           "readed"
         ],
         "correct": "read",
-        "explanation": "'read'是个特别的动词 - 过去式拼写和现在时一样，但发音不同（过去式读作/red/）。She read = 她看了。Last night（昨晚）表明是过去。阅读是美好的习惯，让我们在书中旅行。英语有些不规则动词保持相同拼写，只改变发音。这些小特点使英语有趣。记住常用动词的过去式，就能自如地讲述过去的故事了。"
+        "explanation": "Watch 是规则动词，过去式加 -ed: watched。We watched = 我们看了。主语是 we（复数），动词形式不受影响——过去式对所有人称都一样。比较：I watched / She watched / They watched，动词形式完全相同。这是英语过去式比中文简单的地方——不需要量词或语气词变化。"
       },
       {
         "id": "ce_past3",
@@ -493,7 +493,7 @@
           "cookked"
         ],
         "correct": "cooked",
-        "explanation": "Cook + ed = cooked。You cooked = 你做了。烹饪是展现爱与创意的方式，美食连接人心。以 k 结尾的动词直接加-ed，不用双写（cook → cooked，不是 cookked）。这个拼写规则很重要。做饭给别人是表达关怀的美好方式。掌握规则动词的拼写规律，你的英语写作会更加准确流畅。"
+        "explanation": "Cook + ed = cooked，规则变化。注意以 k 结尾的动词直接加 -ed，不需要双写辅音（cook → cooked，不是 cookked）。双写规则只适用于短元音+单辅音结尾的动词（如 stop → stopped）。You cooked = 你做了饭。中文用「了」表示完成，英语用 -ed 后缀。"
       },
       {
         "id": "ce_past7",
@@ -571,7 +571,7 @@
           "be"
         ],
         "correct": "were",
-        "explanation": "You 总是用 were，即使是单数的你。You were = 你在/你是（过去）。At the party（在聚会上）说明地点。聚会是社交和庆祝的时刻，与朋友相聚带来快乐回忆。英语的 you 不区分单复数，都用 were。这个规则一旦记住就很简单。Be 动词是英语基础，掌握好它能帮助构建正确的句子。"
+        "explanation": "Play + ed = played。以辅音+y 结尾的动词要变 y 为 i 再加 -ed（如 study → studied），但 play 以元音+y 结尾，所以直接加 -ed。They played = 他们玩了。中文「他们」不分性别，英语 they 也不分——这是两种语言的共同点。"
       },
       {
         "id": "ce_past13",
@@ -597,7 +597,7 @@
           "be"
         ],
         "correct": "was",
-        "explanation": "She was happy = 她（那时）很开心。Was 用于第三人称单数（he/she/it）的过去。快乐是美好的情绪，值得珍惜和分享。回忆快乐时光让人温暖。英语用 be 动词表达状态和情绪，过去的情绪用 was/were。掌握 be 动词的变化是英语学习的重要基础，它出现在各种句型中。"
+        "explanation": "She was happy = 她（那时）很开心。Was 是 be 动词的过去式，用于 I/he/she/it（第一和第三人称单数）。Were 用于 you/we/they。比较：I was happy / We were happy。中文没有 be 动词的变化——「她开心」过去和现在形式相同，只靠上下文或时间词区分。"
       },
       {
         "id": "ce_past15",
@@ -659,7 +659,7 @@
           "be"
         ],
         "correct": "are",
-        "explanation": "You/we/they 用 are。They are playing = 他们正在踢。足球培养团队精神和身体健康。Playing = play + ing（直接加）。现在进行时描绘动态场景，让语言充满活力。Are 的使用范围广（你、我们、他们），记住这个，大部分复数和第二人称的进行时就没问题了。运动有益身心健康。"
+        "explanation": "They are playing = 他们正在踢。复数主语（we/you/they）用 are + 动词ing。Playing = play + ing（直接加）。以辅音结尾的动词有些需双写：run → running，sit → sitting。但 play 不需要，因为 y 前有元音 a。记住：are 搭配复数主语，这是固定搭配。"
       },
       {
         "id": "ce_cont4",
@@ -698,7 +698,7 @@
           "be"
         ],
         "correct": "are",
-        "explanation": "You are working hard = 你正在努力工作。勤奋是成功的基石，但也要记得休息。Working = work + ing。用进行时夸奖别人的努力，表达及时的认可和鼓励。You 配 are，无论单复数。平衡工作和休息对身心健康很重要。认可他人的付出能激励人心。"
+        "explanation": "You are working hard 中的 hard 是副词，修饰动词 working。Working = work + ing（直接加，不需双写）。You 配 are，无论表示「你」还是「你们」都一样。现在进行时表达此刻正在进行的动作，常用于描述当前状态。中文的「正在」对应英语的 be + -ing 结构。"
       },
       {
         "id": "ce_cont7",
@@ -711,7 +711,7 @@
           "be"
         ],
         "correct": "am",
-        "explanation": "I am listening = 我正在听。音乐是世界语言，表达情感，安抚心灵。Listening = listen + ing。音乐能改善心情，陪伴我们度过各种时刻。现在进行时强调动作正在进行，与简单现在时（习惯）不同。I 搭配 am，形成'I am + -ing'的固定格式。音乐的力量跨越语言和文化。"
+        "explanation": "Am reading = 正在读。I 是唯一搭配 am 的主语。现在进行时结构：主语 + am/is/are + 动词ing。Reading = read + ing（直接加）。注意 read 的进行时读音是 /riːdɪŋ/，而过去式 read 读 /red/。中文的「正在读」不需要改变动词形式，但英语必须用 -ing。"
       },
       {
         "id": "ce_cont8",
@@ -724,7 +724,7 @@
           "be"
         ],
         "correct": "is",
-        "explanation": "She is cooking = 她正在做。烹饪是技能也是艺术，香气弥漫，温暖人心。Cooking = cook + ing。准备食物是爱的表达。进行时描述正在进行的过程，你能想象她在厨房忙碌的场景。She 配 is，这个搭配要牢记。烹饪技能让人受益终身。"
+        "explanation": "She is cooking = 她正在做饭。Cooking = cook + ing（直接加）。She 配 is，这是第三人称单数的固定搭配（he/she/it 都用 is）。进行时和一般现在时的区别：She cooks every day（她每天做饭 = 习惯）vs. She is cooking now（她现在正在做 = 当前动作）。"
       },
       {
         "id": "ce_cont9",
@@ -737,7 +737,7 @@
           "be"
         ],
         "correct": "are",
-        "explanation": "They are running = 他们正在跑。跑步增强心肺，公园的自然环境让运动更愉快。Running = run + ning（双写 n）。短元音+单辅音结尾要双写再加 ing（run → running, swim → swimming）。户外运动亲近自然，有益健康。They 配 are。运动让身体和心情都更好。"
+        "explanation": "He is walking = 他正在走路。Walking = walk + ing（直接加）。进行时常和时间标志词一起用：now（现在）、right now、at the moment、currently。中文的「正在」或「在」就是英语进行时的标志。He 配 is，和 she/it 相同。"
       },
       {
         "id": "ce_cont10",
@@ -750,7 +750,7 @@
           "be"
         ],
         "correct": "is",
-        "explanation": "He is sleeping = 他正在睡。睡眠对健康至关重要，修复身体，整理记忆。Sleeping = sleep + ing。充足睡眠提升专注力和心情。用进行时说明他此刻在睡觉，轻声点，别打扰。He 配 is。良好睡眠是健康生活的基础。尊重他人的休息时间很重要。"
+        "explanation": "He is sleeping = 他正在睡觉。Sleeping = sleep + ing（直接加，保留双 e 中的一个）。注意区分：sleep（动词）→ sleeping / asleep（形容词）= He is asleep。进行时强调此刻正在进行的状态。He 配 is。中文「正在睡」和「睡着了」的区别类似英语 sleeping vs. asleep。"
       },
       {
         "id": "ce_cont11",
@@ -789,7 +789,7 @@
           "be"
         ],
         "correct": "am",
-        "explanation": "I am drinking = 我正在喝。水是生命之源，保持水分让身体和大脑运作良好。Drinking = drink + ing。水是最好的饮料，无糖无卡路里。I 配 am。现在进行时聚焦当下动作。规律喝水是健康习惯。简单的动作，重要的习惯。"
+        "explanation": "I am helping = 我正在帮忙。Helping = help + ing（直接加）。I 是唯一用 am 的主语，这是英语中最简单的搭配规则之一。进行时表达正在进行的动作，常回答 What are you doing? 这个问题。中文的「在帮忙」省略了主语，但英语必须保留。"
       },
       {
         "id": "ce_cont14",
@@ -802,7 +802,7 @@
           "be"
         ],
         "correct": "is",
-        "explanation": "She is dancing = 她正在跳舞。舞蹈是身体语言，随音乐释放情感和能量。Dancing = dance + ing（去 e 加 ing）。每种文化都有独特的舞蹈。She 配 is。舞蹈带来快乐和自由。进行时让我们看到她优雅的动作。跳舞是美好的表达方式。"
+        "explanation": "She is dancing = 她正在跳舞。Dancing = dance + ing（去掉末尾的 e 再加 -ing）。这是重要的拼写规则：以不发音的 e 结尾的动词，去 e 加 -ing（make → making，write → writing，dance → dancing）。She 配 is。掌握去 e 规则对进行时拼写至关重要。"
       },
       {
         "id": "ce_cont15",
@@ -838,7 +838,7 @@
           "going"
         ],
         "correct": "will go",
-        "explanation": "英语将来时非常简单优雅：will + 动词原形。I will go = 我将会去。所有人称都用 will，不需要变化，这比中文的'会'、'将'更统一。Tomorrow（明天）标明未来。Will 表达意愿、预测和承诺。这个结构简单可靠，掌握后你就能自如地谈论未来的计划和梦想。将来时打开想象的大门。"
+        "explanation": "Will + travel。I will travel = 我将旅行。Will 是最基本的将来时助动词，适用于所有人称且不变形——I will / She will / They will 都一样。中文用「将」或「会」表示将来，英语用 will + 动词原形。这比中文更规律，因为不需要考虑语气细微差别。"
       },
       {
         "id": "ce_fut2",
@@ -903,7 +903,7 @@
           "feeling"
         ],
         "correct": "will feel",
-        "explanation": "Will + feel。You will feel better soon = 你很快会感觉好些。这是鼓励和安慰的话。Soon（很快）给予希望。身体不适时，这样的话语温暖人心。Will 在这里表达对未来好转的信心。积极的期待有助于康复。关心他人的健康体现人性的温暖。"
+        "explanation": "Will + feel。You will feel better soon = 你很快会感觉好些。Soon 是将来时的时间标志词。Better 是 good/well 的比较级，本身不规则（不是 gooder），需要特别记忆。Will feel 表达对未来状态的预测。中文「会好些的」对应英语 will + 动词原形的结构。"
       },
       {
         "id": "ce_fut7",
@@ -916,7 +916,7 @@
           "being"
         ],
         "correct": "will be",
-        "explanation": "Will + be。I will be a doctor = 我将成为医生。即使是最不规则的 be 动词，在将来时也简单遵循 will + 原形。医生是崇高的职业，救死扶伤。职业梦想需要规划和努力。将来时帮我们表达志向和目标。每个梦想都值得尊重，每个为梦想努力的人都值得鼓励。"
+        "explanation": "Will + win。They will win = 他们将赢。Win 是不规则动词（win-won-won），但在将来时和 will 一起使用时只用原形。Will 后面永远跟动词原形，这是不变的规则。中文「将赢」和英语 will win 结构对应——都是将来标志+动词。"
       },
       {
         "id": "ce_fut8",
@@ -929,7 +929,7 @@
           "reading"
         ],
         "correct": "will read",
-        "explanation": "Will + read。She will read the book = 她将读那本书。阅读未来的书是对知识的承诺。书籍承载智慧和故事。Will + 动词原形的简单结构适用于所有情况。计划阅读是好习惯，每本书都是一次心灵之旅。为未来安排阅读时间是对自己的投资。"
+        "explanation": "Will + finish。She will finish = 她将完成。Finish 是规则动词（finish-finished-finished）。Will finish 表达对任务完成的预测。注意否定形式：She will not (won't) finish。Won't 是 will not 的缩写，这在口语中更常用。中文的「不会完成」对应 won't。"
       },
       {
         "id": "ce_fut9",
@@ -955,7 +955,7 @@
           "being"
         ],
         "correct": "will be",
-        "explanation": "Will + be。We will be happy = 我们将会快乐。对幸福未来的期望给人力量。Be 动词在将来时遵循同样简单的规则。快乐是人生追求，积极的态度创造美好未来。Will be 可以描述未来的状态和感受。希望和乐观让我们继续前行。建设幸福未来从今天的行动开始。"
+        "explanation": "Will + be。We will be happy = 我们将开心。Be 动词在将来时也用原形 be（不是 is/are/am）。Will be 表达未来的状态。比较三种时态：We are happy（现在）/ We were happy（过去）/ We will be happy（将来）。中文只靠时间词区分，英语靠动词变化。"
       },
       {
         "id": "ce_fut11",
@@ -1007,7 +1007,7 @@
           "going"
         ],
         "correct": "will go",
-        "explanation": "Will + go。She will go to France = 她将去法国。旅行梦想令人兴奋，法国有丰富的文化和历史。Will 表达未来的旅行计划。每个国家都有独特的魅力。旅行开阔视野，创造回忆。将来时帮助我们谈论期待的旅程。梦想和计划让生活充满期待。"
+        "explanation": "Will + come true。Dreams will come true = 梦想会实现。Come true 是固定短语，注意不说 become true。Will + 动词原形是将来时的固定结构。True 在这里是形容词，做 come 的补语。Come 是不规则动词（come-came-come），但将来时只用原形。"
       },
       {
         "id": "ce_fut15",

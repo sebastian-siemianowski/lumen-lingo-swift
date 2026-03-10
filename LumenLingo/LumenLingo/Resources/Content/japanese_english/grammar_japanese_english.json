@@ -441,7 +441,7 @@
           "spoke"
         ],
         "correct": "speaks",
-        "explanation": "主語が he/she/it の時、動詞に-s を付けます。「彼女は英語を話します」は She speaks です。日本語では主語によって動詞は変わりませんが、英語では三人称単数だけ特別です。この-s は大切なルールで、忘れやすいですが、慣れれば自然になります。言語は人と人をつなぐ素晴らしい道具です。"
+        "explanation": "主語が he/she/it（三人称単数）の時、動詞に -s を付けます。She speaks English = 彼女は英語を話します。日本語では主語によって動詞の形は変わりませんが（話す/話します）、英語では三人称単数だけ特別に -s が必要です。この -s を忘れるのは英語学習者の最も多いミスの一つです。"
       },
       {
         "id": "je_pres3",
@@ -532,7 +532,7 @@
           "sang"
         ],
         "correct": "sing",
-        "explanation": "You の時は、単数でも複数でも動詞は原形です。「あなたは上手に歌います」は You sing です。日本語では「あなた」と「あなたたち」を区別しますが、英語の you は両方に使えます。歌うことは感情を表現する美しい方法です。"
+        "explanation": "You の時は、単数でも複数でも動詞は原形を使います。You sing well = あなたは上手に歌います。日本語では「あなた」と「あなたたち」を区別しますが、英語の you は両方に使えます。重要なのは you は三人称単数ではないので、動詞に -s を付けません（sings ではなく sing）。"
       },
       {
         "id": "je_pres10",
@@ -646,7 +646,7 @@
           "readed"
         ],
         "correct": "read",
-        "explanation": "Read の過去形も read ですが、発音が違います（レッド）。「彼女は昨夜本を読みました」は She read です。Last night は過去を示す表現です。読書は心を豊かにし、知識を広げます。この不規則な変化に慣れることが大切です。"
+        "explanation": "Read の過去形も read ですが、発音が違います：現在形は /riːd/（リード）、過去形は /red/（レッド）。She read a book last night で「彼女は昨夜本を読みました」。Last night は過去を示す時間表現です。スペルが同じで発音だけ変わる動詞は珍しく、read は特に注意が必要です。"
       },
       {
         "id": "je_past3",
@@ -659,7 +659,7 @@
           "playing"
         ],
         "correct": "played",
-        "explanation": "Play は規則動詞なので、過去形は-ed を付けて played になります。「彼らはサッカーをしました」は They played です。スポーツは健康と友情を育みます。規則動詞の過去形は-ed を付けるだけなので、覚えやすいです。"
+        "explanation": "Play は規則動詞なので、過去形は -ed を付けて played になります。They played soccer = 彼らはサッカーをしました。規則動詞の -ed の発音は三種類：/t/（walked）、/d/（played）、/ɪd/（wanted）。Played の -ed は /d/ と発音します。有声音の後は /d/ になるのがルールです。"
       },
       {
         "id": "je_past4",
@@ -711,7 +711,7 @@
           "eating"
         ],
         "correct": "ate",
-        "explanation": "Eat の過去形は ate です。「私は和食を食べました」は I ate です。食事の経験は大切な思い出になります。和食は健康的で美しい料理です。不規則動詞の過去形は、使いながら覚えていくのが効果的です。"
+        "explanation": "Eat の過去形は ate（/eɪt/ エイト）です。I ate Japanese food = 私は和食を食べました。Eat-ate-eaten と不規則に変化します。数字の eight（8）と同じ発音なので、文脈で区別します。不規則動詞は使用頻度が高い基本動詞に多いので、個別に暗記が必要です。"
       },
       {
         "id": "je_past8",
@@ -890,7 +890,7 @@
           "should"
         ],
         "correct": "will",
-        "explanation": "「私たちは日本を訪れるでしょう」は We will visit です。旅行の計画を立てる時、未来形を使います。日本は四季折々の美しさを持つ国です。将来の楽しみを語ることは心を豊かにします。"
+        "explanation": "Will + visit。We will visit Japan = 私たちは日本を訪れるでしょう。Will は全ての人称で同じ形を使います（I will / He will / They will）。これは日本語の「〜でしょう」に近い表現です。疑問形は Will we visit...? と will を前に出します。否定は will not（won't）。"
       },
       {
         "id": "je_fut6",
@@ -955,7 +955,7 @@
           "should"
         ],
         "correct": "will",
-        "explanation": "Be 動詞の未来形も will を使います。「彼らは幸せになるでしょう」は They will be です。幸せを願う気持ちは普遍的です。未来への希望を込めた表現ができます。"
+        "explanation": "Be 動詞の未来形も will を使います。They will be happy = 彼らは幸せになるでしょう。Will の後は常に動詞の原形なので、is/are ではなく be を使います。三つの時態を比較：They are happy（現在）/ They were happy（過去）/ They will be happy（未来）。日本語では「です」の時制が変わります。"
       },
       {
         "id": "je_fut11",

@@ -4336,7 +4336,7 @@
           "is used to"
         ],
         "correct": "would",
-        "explanation": "Für WIEDERHOLTE Handlung Vergangenheit: 'would' oder 'used to' beide möglich. Diese Sommer-Großeltern-Besuche sind schöne Kindheitserinnerung."
+        "explanation": "Für WIEDERHOLTE Handlungen in der Vergangenheit: 'would' oder 'used to' beide möglich. 'Would visit' erzählt nostalgisch von der wiederholten Handlung. 'Used to visit' betont, dass es heute nicht mehr passiert. TIPP: 'Would' braucht einen Zeitkontext ('every summer'), 'used to' steht auch ohne Kontext."
       },
       {
         "id": "used_3",
@@ -4401,7 +4401,7 @@
           "use to"
         ],
         "correct": "both correct",
-        "explanation": "Wiederholte Handlung: 'used to go' ODER 'would go' beide korrekt. Diese Familien-Camping-Tradition in Bergen ist schöne Erinnerung."
+        "explanation": "'Used to go' und 'would go' beide korrekt für wiederholte vergangene Handlungen. 'Used to' impliziert Kontrast zu heute (wir machen es nicht mehr). 'Would' erzählt die Erinnerung lebendiger. WICHTIG: Am Anfang einer Erzählung 'used to' bevorzugen, dann mit 'would' fortfahren."
       },
       {
         "id": "used_8",
@@ -4440,7 +4440,7 @@
           "use to"
         ],
         "correct": "both correct",
-        "explanation": "Wiederholte Handlung: beide korrekt. Diese Telefon-Marathon-Gespräche sind typisch für enge Freundschaften oder Beziehungen."
+        "explanation": "Wiederholte vergangene Handlung: 'used to' UND 'would' beide korrekt. 'Used to spend' betont, dass es damals Gewohnheit war (heute nicht mehr). 'Would spend' erzählt nostalgisch von der wiederholten Handlung. Im Deutschen nur Präteritum: 'sie telefonierten stundenlang'. Englisch hat zwei Formen für vergangene Gewohnheiten - beide möglich bei wiederholten Handlungen."
       },
       {
         "id": "used_11",
@@ -4479,7 +4479,7 @@
           "use to"
         ],
         "correct": "both correct",
-        "explanation": "Wiederholte Handlung: beide korrekt. Diese Wald-Spaziergang-Tradition war gesunde Wochenend-Familienaktivität."
+        "explanation": "Für wiederholte vergangene Aktivitäten sind 'used to' und 'would' beide korrekt. 'Used to take' = wir haben früher Spaziergänge gemacht (Gewohnheit, die nicht mehr besteht). 'Would take' = nostalgische Erzählung der wiederholten Handlung. WICHTIG: 'Would' funktioniert NUR bei wiederholten Handlungen, nicht bei Zuständen ('I used to live' ✓, 'I would live' ✗)."
       },
       {
         "id": "used_14",
@@ -6168,7 +6168,7 @@
           "has"
         ],
         "correct": "both correct",
-        "explanation": "Für BESITZ: 'have' (US) oder 'have got' (UK) beide korrekt. Dieser Neuwagen-Kauf letzten Monat ist aufregende neue Anschaffung."
+        "explanation": "Für BESITZ: 'have' (amerikanisch) und 'have got' (britisch) beide korrekt. 'I have a car' = neutral/US. 'I've got a car' = informell/UK. ACHTUNG: 'Have got' hat KEINE Vergangenheitsform - nur 'had', nie 'had got'. Frage: 'Do you have...?' (US) vs. 'Have you got...?' (UK)."
       },
       {
         "id": "have_2",
@@ -6324,7 +6324,7 @@
           "both has and is having"
         ],
         "correct": "both has and is having",
-        "explanation": "Für TERMIN: 'has' oder 'is having' beide möglich. Dieses Chef-Meeting heute ist wichtiges berufliches Gespräch."
+        "explanation": "'Has a meeting' (fester Termin) und 'is having a meeting' (gerade in Besprechung) beide möglich, aber verschiedene Bedeutung. 'Has' = der Termin existiert im Kalender. 'Is having' = die Besprechung findet gerade statt. Im Deutschen: 'hat ein Meeting' für beides."
       },
       {
         "id": "have_14",
@@ -8387,7 +8387,7 @@
           "was"
         ],
         "correct": "both correct",
-        "explanation": "Für ERNST werden: beide möglich. Diese Problem-Eskalation durch Untätigkeit zeigt Wichtigkeit rechtzeitigen Handelns bei Schwierigkeiten."
+        "explanation": "'Get serious' und 'become serious' beide möglich. 'Get' = informeller, alltäglicher. 'Become' = formeller, schriftlicher. 'Get' betont den Wandel als Prozess, 'become' das Ergebnis. Im Deutschen: nur 'werden'. MERKE: 'Get' + Adjektiv = Zustandsveränderung, eines der häufigsten Muster im Englischen."
       },
       {
         "id": "get_become_15",
@@ -8527,7 +8527,7 @@
           "All"
         ],
         "correct": "Both correct",
-        "explanation": "Singular-Betonung: 'each/every child' beide möglich. Diese individuelle Essens-Mitnahme zur Schule ist praktische Selbstversorgung."
+        "explanation": "'Each child' und 'every child' beide korrekt mit Singular-Verb. 'Each' = betont jedes Kind EINZELN als Individuum. 'Every' = betont die GESAMTHEIT aller Kinder. Im Deutschen: 'jedes Kind' für beides. TIPP: 'Each of the children' (mit 'of') geht, 'every of' NIEMALS."
       },
       {
         "id": "each_every_10",
@@ -8553,7 +8553,7 @@
           "All"
         ],
         "correct": "Both correct",
-        "explanation": "Für INDIVIDUEN: beide möglich. Diese Einzel-Vorstellungsrunde im Raum ist typische Kennenlern-Methode in neuen Gruppen."
+        "explanation": "'Each' und 'every' beide korrekt mit Singular-Nomen 'person'. 'Each person' betont JEDE EINZELNE Person (individueller Fokus). 'Every person' betont ALLE als Gruppe (kollektiver Fokus). Im Deutschen: 'jede Person' deckt beides ab. Englisch macht diese feine Unterscheidung - 'one by one' passt besser zu 'each'."
       },
       {
         "id": "each_every_12",
@@ -8628,7 +8628,7 @@
           "both could and was able to"
         ],
         "correct": "both could and was able to",
-        "explanation": "Für ALLGEMEINE Fähigkeit Vergangenheit: 'could' oder 'was able to' beide möglich. Diese frühe Schwimmfähigkeit ist wichtige Kindheits-Kompetenz."
+        "explanation": "Für ALLGEMEINE vergangene Fähigkeit: 'could' und 'was able to' beide möglich. 'Could swim' = allgemeine Fähigkeit in der Vergangenheit. ACHTUNG: Für EINZELNE erfolgreiche Handlung NUR 'was able to': 'I was able to escape' ✓, 'I could escape' ✗. Im Deutschen: 'konnte' für beides."
       },
       {
         "id": "can_able_2",
@@ -8667,7 +8667,7 @@
           "both can and is able to"
         ],
         "correct": "both can and is able to",
-        "explanation": "Für JETZIGE Fähigkeit: 'can' oder 'is able to' beide möglich. Diese Dreisprachigkeit nach Jahren Lernen ist beeindruckende Leistung."
+        "explanation": "Für GEGENWÄRTIGE Fähigkeit: 'can' und 'is able to' beide möglich. 'Can speak' = alltäglich, normal. 'Is able to speak' = formeller, betont die erreichte Fähigkeit. 'Can' ist viel häufiger im Alltag. 'Be able to' wird NÖTIG mit anderen Modalverben: 'She will be able to' (can hat kein Futur)."
       },
       {
         "id": "can_able_5",
@@ -8885,7 +8885,7 @@
           "needs"
         ],
         "correct": "both correct",
-        "explanation": "Für NOTWENDIGKEIT: beide möglich. Diese Brillen-Pflicht wegen schlechter Sicht ist medizinische Notwendigkeit für klares Sehen."
+        "explanation": "'Must' und 'has to' beide korrekt für Notwendigkeit. 'Must wear' = der Sprecher erkennt die Notwendigkeit (innere Überzeugung). 'Has to wear' = äußere Notwendigkeit (medizinische Vorschrift). Im Deutschen nur 'muss' für beides. Negation ist VERSCHIEDEN: 'mustn't' = Verbot, 'don't have to' = nicht nötig!"
       },
       {
         "id": "must_have_6",
@@ -8898,7 +8898,7 @@
           "need"
         ],
         "correct": "both correct",
-        "explanation": "Für REGEL: beide möglich. Diese Zwei-Stunden-Vorlauf ist empfohlene Standard-Regel für internationale Flüge weltweit."
+        "explanation": "'Must' und 'have to' beide korrekt. 'Must be' = innere Erkenntnis der Notwendigkeit. 'Have to be' = externe Regel (Flughafen-Vorschrift). Für Regeln und Vorschriften ist 'have to' etwas natürlicher. ACHTUNG: In der Vergangenheit nur 'had to' möglich - 'must' hat keine Vergangenheitsform für Verpflichtung!"
       },
       {
         "id": "must_have_7",
@@ -8924,7 +8924,7 @@
           "needs"
         ],
         "correct": "both correct",
-        "explanation": "Für MEDIZINISCHE Pflicht: beide möglich. Diese tägliche dreimalige Medikamenten-Einnahme ist wichtige Gesundheits-Routine."
+        "explanation": "'Must' und 'has to' beide korrekt für medizinische Pflicht. 'Must take' = der Sprecher betont die Wichtigkeit. 'Has to take' = ärztliche Anweisung (externe Verpflichtung). Im Deutschen: nur 'muss'. TIPP: Bei ärztlichen Vorschriften klingt 'has to' natürlicher, weil die Pflicht von außen kommt."
       },
       {
         "id": "must_have_9",
@@ -8989,7 +8989,7 @@
           "need"
         ],
         "correct": "both correct",
-        "explanation": "Für TERMIN-Verpflichtung: beide möglich. Dieser Zahnarzt-Routine-Termin ist wichtig für Zahngesundheits-Überwachung."
+        "explanation": "'Must' und 'have to' beide korrekt für einen Termin. 'Must go' = eigene Einsicht, dass der Termin wichtig ist. 'Have to go' = terminliche Verpflichtung. Für geplante Termine ist 'have to' gebräuchlicher. Im Deutschen: 'Ich muss zum Zahnarzt' - eine Form für beides."
       },
       {
         "id": "must_have_14",
@@ -10141,7 +10141,7 @@
           "both like and such as"
         ],
         "correct": "both like and such as",
-        "explanation": "Für BEISPIELE: 'like' oder 'such as' beide möglich. Diese Metropolen sind klassische europäische Top-Reiseziele."
+        "explanation": "Für BEISPIELE: 'like' und 'such as' beide möglich. 'Cities like Paris' = informeller, alltäglicher Ton. 'Cities such as Paris' = formeller, akademischer Ton. Im Deutschen: 'wie' für beides. UNTERSCHIED: 'As' (ohne 'such') = 'als' (Funktion): 'He works as a teacher' ≠ 'like a teacher'."
       },
       {
         "id": "like_as_8",
@@ -10167,7 +10167,7 @@
           "both like and as if"
         ],
         "correct": "both like and as if",
-        "explanation": "'LIKE' oder 'AS IF' + Subjekt + Verb: beide möglich. Diese dunkle Himmel-Beobachtung ist klares Regen-Vorzeichen."
+        "explanation": "'Like' und 'as if' gefolgt von Subjekt + Verb: beide möglich. 'Looks like it's going to rain' = informell, alltäglich. 'Looks as if it's going to rain' = formell, korrekt. Grammatisch: 'as if' ist traditionell korrekt, 'like' wird zunehmend akzeptiert. Im Deutschen: 'als ob' + Konjunktiv."
       },
       {
         "id": "like_as_10",
@@ -10219,7 +10219,7 @@
           "both like and such as"
         ],
         "correct": "both like and such as",
-        "explanation": "Für BEISPIELE: beide möglich. Diese Mannschaftssportarten sind global beliebte Jugend-Aktivitäten."
+        "explanation": "'Like' und 'such as' beide korrekt für Beispiele. 'Sports like football' = informeller, alltäglicher Ton. 'Sports such as football' = formeller, akademischer Ton. Beide leiten Beispiele ein. Im Deutschen: 'wie' für beides ('Sportarten wie Fußball'). UNTERSCHIED: 'As' (ohne 'such') bedeutet 'als' (Funktion), nicht Beispiele!"
       },
       {
         "id": "like_as_14",
@@ -10512,7 +10512,7 @@
           "must"
         ],
         "correct": "both correct",
-        "explanation": "Negativ: beide möglich. Diese Schokoladen-Selbstbeschränkung ist Diät-Disziplin für Gewichts-Ziel."
+        "explanation": "'Had better not' und 'shouldn't' beide korrekt für negativen Rat. 'Had better not eat' = DRINGENDERE Warnung mit möglichen Konsequenzen ('sonst nimmst du zu'). 'Shouldn't eat' = MILDERER allgemeiner Rat. Im Deutschen: 'sollte nicht' für beides. 'Had better' drückt mehr Dringlichkeit aus als 'should'."
       },
       {
         "id": "better_should_5",
@@ -12152,7 +12152,7 @@
           "did"
         ],
         "correct": "both correct",
-        "explanation": "Für GEWOHNHEIT mit Zeitkontext: beide möglich. Diese regelmäßige Kindheits-Fußball-Aktivität ist schöne Erinnerung an frühere Zeiten."
+        "explanation": "'Used to' und 'would' beide korrekt für vergangene Gewohnheiten. 'Used to play' = betont den Kontrast zu heute (damals ja, jetzt nicht mehr). 'Would play' = erzählt nostalgisch von der wiederholten Handlung. MERKE: 'Would' geht NUR für wiederholte Handlungen, NICHT für Zustände ('used to like' ✓, 'would like' ✗ = etwas anderes!)."
       },
       {
         "id": "used_would_5",
@@ -12243,7 +12243,7 @@
           "did"
         ],
         "correct": "both correct",
-        "explanation": "WIEDERHOLTE Familien-Aktivität: beide möglich. Diese jährliche Strand-Tradition schuf schöne unvergessliche Sommer-Erinnerungen."
+        "explanation": "Für wiederholte vergangene Familien-Aktivitäten: 'used to' und 'would' beide korrekt. 'Used to take' = Gewohnheit, die nicht mehr besteht. 'Would take' = nostalgische Erzählung. REGEL: 'Would' braucht zeitlichen Kontext ('every summer'), 'used to' kann allein stehen. Im Deutschen: Präteritum + 'immer' ('nahm uns immer mit')."
       },
       {
         "id": "used_would_12",
@@ -12331,7 +12331,7 @@
           "both that and which"
         ],
         "correct": "both that and which",
-        "explanation": "Für DINGE: 'THAT' oder 'WHICH' beide möglich. Dieser Relativsatz identifiziert das spezifische Buch aus dem früheren Gespräch."
+        "explanation": "Für BESTIMMENDE Relativsätze bei DINGEN: 'that' und 'which' beide möglich. 'The book that/which we discussed' = definierender Relativsatz ohne Komma. 'That' ist häufiger in Alltagssprache. ABER: Nach Komma (nicht-definierend) NUR 'which': 'The book, which is great, costs €20'. Im Deutschen: immer 'das'."
       },
       {
         "id": "rel_cla_3",
@@ -12396,7 +12396,7 @@
           "both that and which"
         ],
         "correct": "both that and which",
-        "explanation": "Für DINGE: beide möglich. Dieser sofortige Laptop-Defekt nach Kauf gestern ist extrem frustrierend und ärgerlich."
+        "explanation": "Für BESTIMMENDE Relativsätze bei DINGEN: 'that' und 'which' beide korrekt. 'The laptop that/which I bought' = bestimmt genau welcher Laptop. 'That' ist häufiger in der Alltagssprache, 'which' formeller. ACHTUNG: Bei NICHT-bestimmenden Relativsätzen (mit Komma) NUR 'which': 'My laptop, which I bought yesterday, is broken'. Im Deutschen: immer 'den/das/die'."
       },
       {
         "id": "rel_cla_8",
@@ -12461,7 +12461,7 @@
           "both who and that"
         ],
         "correct": "both who and that",
-        "explanation": "Für PERSONEN allgemein: beide möglich. Diese Ehrlichkeits-Präferenz zeigt Wertschätzung für offene klare Kommunikation."
+        "explanation": "Für PERSONEN: 'who' und 'that' beide möglich in bestimmenden Relativsätzen. 'People who/that are honest' - 'who' ist eleganter und häufiger für Personen. 'That' klingt informeller. ACHTUNG: Nach Komma NUR 'who': 'My sister, who lives in Berlin, ...' Im Deutschen: 'die' für beide Fälle."
       },
       {
         "id": "rel_cla_13",
@@ -12487,7 +12487,7 @@
           "both who and that"
         ],
         "correct": "both who and that",
-        "explanation": "Für PERSONEN Vergangenheit: beide möglich. Diese Lehrer-Erinnerung aus Schulzeit ist oft prägende Bildungs-Erfahrung."
+        "explanation": "Für PERSONEN in bestimmenden Relativsätzen: 'who' und 'that' beide korrekt. 'The teacher who/that taught us' - 'who' ist eleganter und häufiger für Personen, 'that' ist informeller. ACHTUNG: Bei nicht-bestimmenden Relativsätzen (mit Komma) NUR 'who': 'Mr. Smith, who taught us math, retired'. Im Deutschen: immer 'der/die'."
       },
       {
         "id": "rel_cla_15",
@@ -14267,7 +14267,7 @@
           "in"
         ],
         "correct": "both up and back",
-        "explanation": "'CALL UP' = anrufen oder 'CALL BACK' = zurückrufen: beide möglich. Dieser Anruf ist Ankunfts-Bestätigung für Beruhigung."
+        "explanation": "'Call up' (anrufen) und 'call back' (zurückrufen) sind VERSCHIEDENE Bedeutungen - beide passen kontextuell. 'Call up' = jemanden anrufen (trennbar: 'call me up'). 'Call back' = zurückrufen (trennbar: 'call me back'). Im Deutschen: 'anrufen' vs. 'zurückrufen'. MERKE: Pronomen kommen ZWISCHEN Verb und Partikel."
       },
       {
         "id": "phr_sep_10",
@@ -14280,7 +14280,7 @@
           "off"
         ],
         "correct": "both away and out",
-        "explanation": "'THROW AWAY' oder 'THROW OUT' = wegwerfen: beide korrekt. Diese Kleidungs-Aussortierung ist Platz-Schaffen und Aufräumen."
+        "explanation": "'Throw away' und 'throw out' bedeuten beide 'wegwerfen' und sind austauschbar. Beide sind trennbar: 'throw it away' / 'throw it out' ✓. 'Throw away/out' + Nomen oder Pronomen dazwischen. Im Deutschen: 'wegwerfen' (auch trennbar: 'ich werfe es weg'). Parallele Struktur in beiden Sprachen!"
       },
       {
         "id": "phr_sep_11",
@@ -15393,7 +15393,7 @@
           "Both So do I and I do too"
         ],
         "correct": "Both So do I and I do too",
-        "explanation": "Zustimmung zu POSITIV: 'SO DO I' oder 'I DO TOO' beide korrekt. Diese Strukturen zeigen Übereinstimmung mit positiver Aussage über Pizza-Liebe."
+        "explanation": "'So do I' (Inversion) und 'I do too' (mit 'too') beide korrekt für Zustimmung. 'So do I' = formeller, eleganter - Hilfsverb muss zum Originalsatz passen: 'I like → So do I', 'She is → So am I'. 'I do too' = informeller. Im Deutschen: 'Ich auch'. NEGATIV: 'Neither do I' oder 'I don't either'."
       },
       {
         "id": "agree_2",
@@ -15689,7 +15689,7 @@
           "although"
         ],
         "correct": "both correct",
-        "explanation": "DESPITE/IN SPITE OF + Nomen: Diese Ruhe-Bewahrung in Chaos ist bewundernswerte Stress-Resistenz und professionelles Verhalten."
+        "explanation": "'Despite' und 'in spite of' bedeuten beide 'trotz' und sind austauschbar. Beide folgt NOMEN oder GERUNDIUM: 'despite/in spite of the situation'. 'Despite' ist etwas formeller und kürzer. 'In spite of' ist etwas betonter. Im Deutschen: nur 'trotz' + Genitiv. NICHT verwechseln: 'although' + Satz vs. 'despite' + Nomen!"
       },
       {
         "id": "despite_9",
@@ -15780,7 +15780,7 @@
           "Although"
         ],
         "correct": "Both correct",
-        "explanation": "DESPITE/IN SPITE OF + Nomen + being: Diese pünktliche Ankunft trotz Zug-Verspätung ist glückliches Timing oder gute Puffer-Planung."
+        "explanation": "'Despite' und 'in spite of' + Nomen + '-ing': beide korrekt. 'Despite/In spite of the train being late' nutzt die Struktur Nomen + Gerundium. Alternative: 'Despite/In spite of the late train' (Adjektiv + Nomen). MERKE: Nach both folgt KEIN 'that'-Satz - nur Nomen oder Gerundium. Im Deutschen: 'trotz der Verspätung'."
       }
     ]
   },
@@ -17189,7 +17189,7 @@
           "All correct"
         ],
         "correct": "All correct",
-        "explanation": "Alle ADDITIONS-Wörter am Satzanfang: Diese vielfältigen Stadt-Attraktionen bieten kulturelle und Natur-Erlebnisse."
+        "explanation": "Alle Additions-Wörter ('moreover', 'furthermore', 'in addition', 'besides', 'also') sind am Satzanfang korrekt, um zusätzliche Information hinzuzufügen. 'Moreover'/'furthermore' = formell. 'Besides' = informeller. 'In addition' = neutral. 'Also' = am häufigsten. Im Deutschen: 'außerdem', 'darüber hinaus', 'zudem'. Alle verbinden zwei positive Aussagen."
       },
       {
         "id": "add_14",
@@ -19239,7 +19239,7 @@
           "all correct"
         ],
         "correct": "will you",
-        "explanation": "Nach IMPERATIV: 'will you' oder 'won't you' (beide möglich): Diese Bitte-Verstärkung ist höfliche Erinnerung an Fenster-Schließen."
+        "explanation": "Nach IMPERATIV: 'will you?' ist das Standard-Tag. Es macht eine Aufforderung höflicher: 'Close the window, will you?' Im Deutschen gibt es keine Tag-Fragen - stattdessen 'bitte' oder 'oder?'. REGEL: Imperative nehmen immer 'will you' oder 'won't you' als Tag, unabhängig vom Verb."
       },
       {
         "id": "tag_que_14",
@@ -20147,7 +20147,7 @@
           "that"
         ],
         "correct": "both correct",
-        "explanation": "Nach 'check': beide möglich. Diese Sicherheits-Überprüfung vor Haus-Verlassen ist wichtige Routine."
+        "explanation": "Nach 'check': 'whether' und 'if' beide möglich für indirekte Ja/Nein-Fragen. 'Check whether/if the door is locked'. 'Whether' ist formeller und eindeutiger. TIPP: Wenn 'or not' direkt folgt, NUR 'whether': 'whether or not' ✓, 'if or not' ✗."
       },
       {
         "id": "whether_if_5",
@@ -20173,7 +20173,7 @@
           "that"
         ],
         "correct": "both correct",
-        "explanation": "Nach 'wonder': beide möglich: Diese Hochzeits-Teilnahme-Unsicherheit ist normale Event-Planungs-Frage."
+        "explanation": "Nach 'wonder': 'whether' und 'if' beide möglich. 'I wonder whether/if she'll come'. Beide leiten indirekte Fragen ein. 'Whether' ist stilistisch bevorzugt in formellem Schreiben. Im Deutschen: 'ob' für beide. MERKE: Mit 'or not' am Satzende: beide OK ('if he comes or not')."
       },
       {
         "id": "whether_if_7",
@@ -20199,7 +20199,7 @@
           "that"
         ],
         "correct": "both correct",
-        "explanation": "Nach 'let know': beide möglich: Diese Teilnahme-Bestätigungs-Anfrage ist wichtig für Meeting-Planung."
+        "explanation": "Nach 'let know': 'whether' und 'if' beide möglich. 'Let me know whether/if you can attend'. In geschäftlicher Kommunikation ist 'whether' professioneller. REGEL: Vor Infinitiv NUR 'whether': 'I don't know whether to go' ✓, 'I don't know if to go' ✗."
       },
       {
         "id": "whether_if_9",
@@ -20212,7 +20212,7 @@
           "that"
         ],
         "correct": "both correct",
-        "explanation": "Nach 'decide': beide möglich: Diese Kleider-Farb-Entscheidung zwischen zwei Optionen ist Style-Wahl."
+        "explanation": "Nach 'decide': 'whether' und 'if' beide möglich. 'Can't decide whether/if to buy'. Bei Entscheidungen zwischen Optionen ist 'whether' natürlicher, besonders mit 'or': 'whether blue or red'. Im Deutschen: 'ob' für alle Fälle."
       },
       {
         "id": "whether_if_10",
@@ -20238,7 +20238,7 @@
           "that"
         ],
         "correct": "both correct",
-        "explanation": "Nach 'curious': beide möglich: Diese Geheimhaltungs-Sorge ist wichtig für erfolgreiche Überraschung."
+        "explanation": "Nach 'curious': 'whether' und 'if' beide möglich. 'Curious whether/if he knows'. 'Whether' ist hier stilistisch leicht bevorzugt after Adjektiven. Im Deutschen: 'ob'. ZUSAMMENFASSUNG: 'Whether' = immer korrekt, 'if' = nur in indirekten Ja/Nein-Fragen (nicht vor 'or not' direkt, nicht vor Infinitiv)."
       },
       {
         "id": "whether_if_12",
@@ -20264,7 +20264,7 @@
           "that"
         ],
         "correct": "both correct",
-        "explanation": "Nach 'ask': beide möglich: Diese Lunch-Einladungs-Weitergabe ist freundliche Inklusions-Geste."
+        "explanation": "Nach 'ask': 'whether' und 'if' beide möglich. 'Ask her whether/if she wants to join'. Beide leiten die indirekte Frage ein. 'Whether' ist formeller. Im Deutschen: 'ob' deckt beides ab. TIPP: In gesprochener Sprache ist 'if' häufiger, im Schreiben 'whether'."
       },
       {
         "id": "whether_if_14",

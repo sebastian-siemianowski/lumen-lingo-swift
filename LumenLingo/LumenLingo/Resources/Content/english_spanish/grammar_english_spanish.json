@@ -4658,7 +4658,7 @@
           "de"
         ],
         "correct": "en",
-        "explanation": "Transportation uses 'en'. 'En tren/coche/avión' for vehicles."
+        "explanation": "'En' is the universal transport preposition in Spanish: 'en tren' (by train), 'en coche' (by car), 'en avión' (by plane). Unlike English which uses 'by', Spanish always uses 'en' for vehicles."
       },
       {
         "id": "prep_12",
@@ -4671,7 +4671,7 @@
           "por"
         ],
         "correct": "sin",
-        "explanation": "'Sin' means 'without'. Opposite of 'con' (with)."
+        "explanation": "'Sin' means 'without' and is the opposite of 'con' (with). Unlike English, 'sin' never changes form: 'sin azúcar' (without sugar), 'sin problema' (no problem). It can also form adjectives: 'sin sentido' (senseless)."
       },
       {
         "id": "prep_13",
@@ -4990,7 +4990,7 @@
           "De él"
         ],
         "correct": "Su",
-        "explanation": "'Su/sus' means his/her/your formal/their. Context clarifies whose."
+        "explanation": "'Su/sus' is ambiguous: it means his, her, your (formal), or their. Context usually clarifies, but for emphasis, add 'de + pronoun': 'el libro de ella' (her book) vs. 'su libro' (his/her/your/their book)."
       },
       {
         "id": "poss_6",
@@ -5260,7 +5260,7 @@
           "Si"
         ],
         "correct": "Aunque",
-        "explanation": "'Aunque' means 'although/even though'. Introduces concessive clause."
+        "explanation": "'Aunque' introduces concessive clauses meaning 'although/even though'. With indicative for facts: 'Aunque llueve, salgo' (Although it rains, I go out). With subjunctive for hypothetical: 'Aunque llueva, saldré' (Even if it rains, I'll go out)."
       },
       {
         "id": "conj_11",
@@ -6721,7 +6721,7 @@
           "preparada"
         ],
         "correct": "preparando",
-        "explanation": "Regular -ar verb gerund: 'preparar' becomes 'preparando'."
+        "explanation": "Regular -ar verbs form gerunds by replacing -ar with -ando: 'preparar' → 'preparando'. This is equivalent to English '-ing'. Use with 'estar' for ongoing actions: 'Estoy preparando la cena' (I'm preparing dinner)."
       },
       {
         "id": "prog_13",
@@ -7681,7 +7681,7 @@
           "Cuál"
         ],
         "correct": "Quién",
-        "explanation": "'¿Quién?' (with accent) asks 'who'. For people."
+        "explanation": "'¿Quién?' asks 'who?' and always carries an accent mark in questions. Without accent, 'quien' is a relative pronoun. Plural form: '¿Quiénes?' For 'whose', use '¿De quién?': '¿De quién es esto?' (Whose is this?)."
       },
       {
         "id": "q_8",
@@ -8065,7 +8065,7 @@
           "la"
         ],
         "correct": "un",
-        "explanation": "'Un cuarto' (one quarter) is masculine fraction."
+        "explanation": "'Un cuarto' (one quarter) uses the masculine article 'un' because fractions in Spanish are masculine nouns. Similarly: 'un tercio' (one third), 'un medio' (one half). Unlike English, Spanish treats fractions as gendered nouns."
       },
       {
         "id": "perc_6",
@@ -8745,7 +8745,7 @@
           "Con"
         ],
         "correct": "Sin",
-        "explanation": "'Sin duda' means without doubt. Expresses certainty."
+        "explanation": "'Sin duda' literally means 'without doubt' and expresses absolute certainty. It's more emphatic than 'creo que' (I think). Position at sentence start for emphasis: 'Sin duda, es el mejor' (Without doubt, he's the best)."
       },
       {
         "id": "op_11",
@@ -8963,7 +8963,7 @@
           "Mejor"
         ],
         "correct": "Buena",
-        "explanation": "'Buena idea' + infinitive. Approving suggestion."
+        "explanation": "'Buena idea' (good idea) is followed directly by an infinitive verb: 'Buena idea ir al cine' (Good idea to go to the cinema). No preposition needed between 'idea' and the infinitive, unlike English which requires 'to'."
       },
       {
         "id": "sug_12",
@@ -9513,7 +9513,7 @@
           "Está"
         ],
         "correct": "Hay",
-        "explanation": "'Haber' for fog. 'Hay niebla' standard expression."
+        "explanation": "Weather phenomena use 'haber' (hay) as an impersonal verb: 'Hay niebla' (there's fog). Unlike English 'it's foggy', Spanish doesn't use 'ser/estar' for weather conditions. Other examples: 'Hay tormenta', 'Hay viento'."
       },
       {
         "id": "wea_7",
@@ -9591,7 +9591,7 @@
           "Está"
         ],
         "correct": "Hay",
-        "explanation": "'Haber' for humidity. 'Hay humedad' standard expression."
+        "explanation": "Humidity uses impersonal 'haber': 'Hay humedad' (there's humidity). Spanish weather expressions with 'hay' describe conditions that exist rather than qualities. Compare: 'Hay humedad' (there's humidity) vs. 'Está húmedo' (it's humid)."
       },
       {
         "id": "wea_13",
@@ -9705,7 +9705,7 @@
           "Tengo"
         ],
         "correct": "Para mí",
-        "explanation": "'Para mí' when ordering. Standard restaurant phrase."
+        "explanation": "'Para mí' (for me) is the standard way to order in Spanish restaurants. It literally means 'for me'. More polite than English's direct 'I'll have...' because it uses an indirect construction, softening the request."
       },
       {
         "id": "rest_6",
@@ -9731,7 +9731,7 @@
           "sabroso"
         ],
         "correct": "fresco",
-        "explanation": "'Fresco' means fresh. Important question for seafood."
+        "explanation": "'Fresco' means 'fresh' and agrees in gender with the noun: 'fresco' (masc.), 'fresca' (fem.). When asking about seafood: '¿Es fresco/a?' Critical restaurant vocabulary since freshness indicates quality."
       },
       {
         "id": "rest_8",
@@ -9783,7 +9783,7 @@
           "limón"
         ],
         "correct": "hielo",
-        "explanation": "'Sin hielo' common drink request. Without ice."
+        "explanation": "'Sin hielo' (without ice) uses 'sin' + noun without any article. This 'sin + bare noun' pattern is standard for drink modifications: 'sin azúcar' (no sugar), 'sin gas' (still/no bubbles). Very common ordering phrase."
       },
       {
         "id": "rest_12",
@@ -9835,7 +9835,7 @@
           "bastante"
         ],
         "correct": "demasiado",
-        "explanation": "'Demasiado' means too much/too. Excessive amount."
+        "explanation": "'Demasiado' means 'too much/too' and functions as both adverb and adjective. As adjective, it agrees in gender/number: 'demasiada sal' (too much salt), 'demasiados platos' (too many dishes). Critical for complaints."
       }
     ]
   },
@@ -9975,7 +9975,7 @@
           "promoción"
         ],
         "correct": "oferta",
-        "explanation": "'Estar en oferta' means on sale. Special price."
+        "explanation": "'Estar en oferta' means 'to be on sale'. Notice it uses 'estar' (not 'ser') because a sale is a temporary state. 'Ser barato' = inherently cheap vs. 'Estar en oferta' = temporarily discounted. This ser/estar distinction matters."
       },
       {
         "id": "shop_11",
@@ -10027,7 +10027,7 @@
           "volver"
         ],
         "correct": "cambiar",
-        "explanation": "'Cambiar' means exchange/change. 'Devolver' means return."
+        "explanation": "'Cambiar' means to exchange/change while 'devolver' means to return for refund. This distinction matters in stores: '¿Puedo cambiar esto?' (Can I exchange this?) vs. '¿Puedo devolver esto?' (Can I return this?)."
       },
       {
         "id": "shop_15",
@@ -10154,7 +10154,7 @@
           "mala"
         ],
         "correct": "ocupada",
-        "explanation": "'Ocupada' means busy line. Can't get through."
+        "explanation": "'Ocupada' means the line is busy, using feminine gender because 'línea' (line) is feminine. In Spanish, even in phone contexts, adjectives must agree: 'La línea está ocupada'. This gender agreement is automatic for native speakers."
       },
       {
         "id": "tel_9",
@@ -10193,7 +10193,7 @@
           "para"
         ],
         "correct": "con",
-        "explanation": "'Hablar con' means speak with. Standard preposition."
+        "explanation": "'Hablar con' means 'to speak with someone'. Spanish requires the preposition 'con' after 'hablar' when specifying who: '¿Puedo hablar con el gerente?' (Can I speak with the manager?). Never use 'a' with 'hablar' for this meaning."
       },
       {
         "id": "tel_12",
@@ -10232,7 +10232,7 @@
           "móvil"
         ],
         "correct": "número",
-        "explanation": "'Número (de teléfono)' standard. Phone number request."
+        "explanation": "'Número de teléfono' is the standard phrase for phone number. The preposition 'de' links the nouns, unlike English which simply compounds them. '¿Me puede dar su número de teléfono?' is the polite way to ask."
       },
       {
         "id": "tel_15",
@@ -10281,7 +10281,7 @@
           "Con cariño"
         ],
         "correct": "Atentamente",
-        "explanation": "'Atentamente' most formal closing. Business letter standard."
+        "explanation": "'Atentamente' (sincerely/respectfully) is the most formal letter closing. From 'atento' (attentive). More formal than 'saludos' (regards). Full form: 'Le saluda atentamente' (Yours faithfully). Standard in business correspondence."
       },
       {
         "id": "fw_3",
@@ -10473,7 +10473,7 @@
           "encuentro"
         ],
         "correct": "reunión",
-        "explanation": "'Reunión' standard for meeting. Professional gathering."
+        "explanation": "'Reunión' (meeting) is a feminine noun requiring feminine articles/adjectives: 'la reunión importante' (the important meeting). Comes from 'reunir' (to gather). Plural: 'reuniones'. Essential professional vocabulary."
       },
       {
         "id": "work_2",
@@ -10486,7 +10486,7 @@
           "finalizar"
         ],
         "correct": "terminar",
-        "explanation": "'Terminar' most common for finish. Work completion."
+        "explanation": "'Terminar' is the most common verb for finishing work. Unlike 'acabar' (which implies completion), 'terminar' focuses on the endpoint: 'Terminar el proyecto' (finish the project). Both are regular -ar verbs."
       },
       {
         "id": "work_3",
@@ -10512,7 +10512,7 @@
           "por"
         ],
         "correct": "a",
-        "explanation": "'A jornada completa' means full-time. Fixed expression."
+        "explanation": "'A jornada completa' means full-time employment. 'Jornada' refers to the work day/shift. Part-time is 'a media jornada'. Notice 'completa' uses feminine form to agree with 'jornada'. Fixed professional expression."
       },
       {
         "id": "work_5",
@@ -10538,7 +10538,7 @@
           "vencimiento"
         ],
         "correct": "fecha límite",
-        "explanation": "'Fecha límite' standard for deadline. Professional term."
+        "explanation": "'Fecha límite' literally means 'date limit' — a compound noun where 'límite' acts as a modifier. Unlike English 'deadline' (one word), Spanish uses two words. Always feminine because 'fecha' is feminine: 'la fecha límite'."
       },
       {
         "id": "work_7",
@@ -10577,7 +10577,7 @@
           "escrito"
         ],
         "correct": "documento",
-        "explanation": "'Documento' most general for document. Professional file."
+        "explanation": "'Documento' is the most general term for any written file or paper. Related words: 'documentación' (documentation), 'documentar' (to document). Masculine noun: 'el documento importante'. Formal register vocabulary."
       },
       {
         "id": "work_10",
@@ -10616,7 +10616,7 @@
           "junta"
         ],
         "correct": "viaje",
-        "explanation": "'Viaje de negocios' business trip. Work travel."
+        "explanation": "'Viaje de negocios' (business trip) uses 'de' to express purpose, like English 'of/for'. The structure 'noun + de + noun' is extremely common in Spanish: 'viaje de trabajo', 'sala de conferencias', 'hora de almuerzo'."
       },
       {
         "id": "work_13",
@@ -10655,7 +10655,7 @@
           "división"
         ],
         "correct": "departamento",
-        "explanation": "'Departamento' standard for department. Company structure."
+        "explanation": "'Departamento' follows the -mento suffix pattern common in professional Spanish (from Latin -mentum). Like English '-ment': department/departamento, document/documento. Masculine noun: 'el departamento de ventas'."
       }
     ]
   },
@@ -10678,7 +10678,7 @@
           "susto"
         ],
         "correct": "sorpresa",
-        "explanation": "'¡Qué sorpresa!' exclamation for surprise. Common reaction."
+        "explanation": "'¡Qué sorpresa!' (What a surprise!) uses the exclamative 'qué' + noun structure. Notice no article between 'qué' and the noun — unlike English 'What a surprise!', Spanish drops the article: '¡Qué lástima!', '¡Qué horror!'."
       },
       {
         "id": "emo_2",
@@ -10704,7 +10704,7 @@
           "pánico"
         ],
         "correct": "miedo",
-        "explanation": "'Dar miedo' means scare/frighten. Common fear expression."
+        "explanation": "'Dar miedo' literally means 'to give fear' — the thing causing fear is the subject: 'Las arañas me dan miedo' (spiders scare me). This 'dar + emotion noun' pattern is quintessentially Spanish: dar asco, dar pena, dar vergüenza."
       },
       {
         "id": "emo_4",
@@ -10717,7 +10717,7 @@
           "dolor"
         ],
         "correct": "lástima",
-        "explanation": "'¡Qué lástima!' for pity/shame. Expressing disappointment."
+        "explanation": "'¡Qué lástima!' expresses pity or disappointment. 'Lástima' is always feminine. Can also be used as: 'Es una lástima que...' + subjunctive: 'Es una lástima que no puedas venir' (It's a shame you can't come)."
       },
       {
         "id": "emo_5",
@@ -10730,7 +10730,7 @@
           "inquieto"
         ],
         "correct": "nervioso",
-        "explanation": "'Poner nervioso' means make nervous. Cause anxiety."
+        "explanation": "'Poner nervioso/a' means 'to make nervous'. The subject causes the nervousness: 'Los exámenes me ponen nervioso' (Exams make me nervous). 'Poner' + adjective is a productive pattern: poner triste, poner contento, poner furioso."
       },
       {
         "id": "emo_6",
@@ -10743,7 +10743,7 @@
           "lindo"
         ],
         "correct": "bien",
-        "explanation": "'¡Qué bien!' common positive reaction. Pleased response."
+        "explanation": "'¡Qué bien!' is a common positive reaction meaning 'How great/nice!' Uses 'qué' + adverb. Compare with '¡Qué bueno!' (How good! — adjective). Adverb 'bien' never changes form, while adjective 'bueno' agrees in gender/number."
       },
       {
         "id": "emo_7",
@@ -10756,7 +10756,7 @@
           "timidez"
         ],
         "correct": "vergüenza",
-        "explanation": "'Dar vergüenza' for embarrassment. Social discomfort."
+        "explanation": "'Dar vergüenza' = 'to embarrass/cause shame'. The embarrassing thing is the grammatical subject: 'Me da vergüenza hablar en público' (Public speaking embarrasses me). Same 'dar + emotion' pattern as dar miedo, dar pena."
       },
       {
         "id": "emo_8",
@@ -10769,7 +10769,7 @@
           "satisfecho"
         ],
         "correct": "orgulloso",
-        "explanation": "'Estar orgulloso de' for pride. Emotional satisfaction."
+        "explanation": "'Estar orgulloso/a de' expresses pride. Uses 'estar' because pride is a temporary emotional state, not an inherent quality. The preposition 'de' is required: 'Estoy orgullosa de mis hijos' (I'm proud of my children)."
       },
       {
         "id": "emo_9",
@@ -10782,7 +10782,7 @@
           "feo"
         ],
         "correct": "asco",
-        "explanation": "'¡Qué asco!' strong disgust reaction. Revulsion expression."
+        "explanation": "'¡Qué asco!' expresses strong disgust. 'Asco' is masculine. The expression 'dar asco' works the same as 'dar miedo': 'Las cucarachas me dan asco' (Cockroaches disgust me). Very common in spoken Spanish."
       },
       {
         "id": "emo_10",
@@ -10795,7 +10795,7 @@
           "dolor"
         ],
         "correct": "pena",
-        "explanation": "'Dar pena' means sadden. Emotional pain."
+        "explanation": "'Dar pena' means 'to sadden/cause sorrow'. Like other 'dar + emotion' expressions, the cause is the subject: 'Me da pena ver eso' (It saddens me to see that). In Latin America, 'dar pena' can also mean 'to embarrass'."
       },
       {
         "id": "emo_11",
@@ -10834,7 +10834,7 @@
           "fastidioso"
         ],
         "correct": "frustrante",
-        "explanation": "'¡Qué frustrante!' for frustration. Annoying situation."
+        "explanation": "'¡Qué frustrante!' uses 'qué' + adjective to express an emotional reaction. The adjective must match what's frustrating: 'Qué frustrante' (invariable adjectival use). This 'qué + adjective' pattern expresses immediate emotional reactions."
       },
       {
         "id": "emo_14",
@@ -10909,7 +10909,7 @@
           "pacífico"
         ],
         "correct": "tranquilo",
-        "explanation": "'Tranquilo' for peaceful neighborhood. Calm environment."
+        "explanation": "'Tranquilo' describes a calm, peaceful area. As adjective, it agrees: 'barrio tranquilo' (masc.), 'zona tranquila' (fem.). Compare with 'silencioso' (quiet — about noise) vs. 'tranquilo' (peaceful — broader atmosphere)."
       },
       {
         "id": "place_4",
@@ -10935,7 +10935,7 @@
           "con turistas"
         ],
         "correct": "turístico",
-        "explanation": "'Turístico' adjective for touristy. Place characteristic."
+        "explanation": "'Turístico/a' means touristy or touristic. Agrees with gender: 'zona turística' (fem.), 'pueblo turístico' (masc.). Derived from 'turista' (tourist) — note 'turista' is both masculine and feminine, but 'turístico' has gendered forms."
       },
       {
         "id": "place_6",
@@ -10961,7 +10961,7 @@
           "pasado"
         ],
         "correct": "antiguo",
-        "explanation": "'Antiguo' for old things/places. Historical age."
+        "explanation": "'Antiguo' can mean 'old/ancient' (after noun) or 'former' (before noun): 'ciudad antigua' (ancient city) vs. 'antiguo presidente' (former president). Position changes meaning — a key Spanish adjective placement rule."
       },
       {
         "id": "place_8",
@@ -10974,7 +10974,7 @@
           "demasiados"
         ],
         "correct": "muchos",
-        "explanation": "'Muchos habitantes' (masculine plural). Population count."
+        "explanation": "'Muchos habitantes' uses masculine plural because 'habitante' defaults to masculine in plural. The structure 'tener + muchos/pocos + noun' describes quantities: 'La ciudad tiene muchos habitantes' (The city has many inhabitants)."
       },
       {
         "id": "place_9",
@@ -10987,7 +10987,7 @@
           "negociosa"
         ],
         "correct": "comercial",
-        "explanation": "'Zona comercial' business/shopping area. Commercial district."
+        "explanation": "'Zona comercial' is a compound noun meaning commercial/shopping area. 'Comercial' is an invariable adjective — same form for masculine and feminine: 'centro comercial' (mall), 'zona comercial' (commercial area)."
       },
       {
         "id": "place_10",
@@ -11000,7 +11000,7 @@
           "cálido"
         ],
         "correct": "templado",
-        "explanation": "'Templado' means mild/temperate climate. Moderate temperature."
+        "explanation": "'Templado' means mild or temperate climate. From 'templar' (to temper). Used for moderate weather: 'clima templado'. Unlike English which has distinct words (mild/temperate), Spanish uses 'templado' for both senses."
       },
       {
         "id": "place_11",
@@ -11026,7 +11026,7 @@
           "actual"
         ],
         "correct": "moderna",
-        "explanation": "'Moderna' agrees with feminine 'ciudad'. Contemporary style."
+        "explanation": "'Moderna' agrees with feminine 'ciudad': 'una ciudad moderna'. Adjectives of nationality-style endings (-o/-a) always match gender. Compare: 'un edificio moderno' (masc.) vs. 'una ciudad moderna' (fem.)."
       },
       {
         "id": "place_13",
@@ -11039,7 +11039,7 @@
           "sitios"
         ],
         "correct": "monumentos",
-        "explanation": "'Monumentos históricos' for landmarks. Historical sites."
+        "explanation": "'Monumentos históricos' (historical monuments) — both words are masculine plural. 'Histórico' from 'historia'. The adjective follows the noun in descriptive use. For emphasis, can precede: 'históricos monumentos' (literary style)."
       },
       {
         "id": "place_14",
@@ -11052,7 +11052,7 @@
           "bello"
         ],
         "correct": "pintoresco",
-        "explanation": "'Pintoresco' means picturesque. Scenic beauty."
+        "explanation": "'Pintoresco/a' means picturesque, from 'pintor' (painter). Literally 'painter-worthy'. Agrees in gender: 'pueblo pintoresco' (masc.), 'vista pintoresca' (fem.). Used for charming, scenic places worth photographing."
       },
       {
         "id": "place_15",
@@ -11101,7 +11101,7 @@
           "ocupar"
         ],
         "correct": "reservar",
-        "explanation": "'Reservar' means book/reserve. Hotel reservation."
+        "explanation": "'Reservar' means to book or reserve. Regular -ar verb. 'Hacer una reserva' (make a reservation) is an alternative. In hotels: '¿Tiene una reserva?' (Do you have a reservation?). The noun form 'reserva' is feminine."
       },
       {
         "id": "trav_3",
@@ -11114,7 +11114,7 @@
           "viaja"
         ],
         "correct": "sale",
-        "explanation": "'Salir' for departures. 'Sale el vuelo' standard."
+        "explanation": "'Salir' means to leave/depart, irregular in yo form: 'salgo'. For transportation: 'El vuelo sale a las 8' (The flight departs at 8). Opposite: 'llegar' (arrive). Notice Spanish uses 'a las' + time, not simply 'at'."
       },
       {
         "id": "trav_4",
@@ -11140,7 +11140,7 @@
           "área"
         ],
         "correct": "puerta",
-        "explanation": "'Puerta de embarque' boarding gate. Airport term."
+        "explanation": "'Puerta de embarque' (boarding gate) uses 'de' to connect nouns. 'Embarque' from 'embarcar' (to board). At airports: '¿Cuál es la puerta de embarque?' (Which is the boarding gate?). 'Puerta' is feminine: 'la puerta'."
       },
       {
         "id": "trav_6",
@@ -11153,7 +11153,7 @@
           "medio"
         ],
         "correct": "ventanilla",
-        "explanation": "'Asiento de ventanilla' window seat. Airplane preference."
+        "explanation": "'Asiento de ventanilla' (window seat) vs. 'asiento de pasillo' (aisle seat). The 'de + noun' structure describes the type of seat. 'Ventanilla' is a diminutive of 'ventana' (window), literally 'little window'."
       },
       {
         "id": "trav_7",
@@ -11166,7 +11166,7 @@
           "mide"
         ],
         "correct": "pesa",
-        "explanation": "'Pesar' means weigh. Important for airline limits."
+        "explanation": "'Pesar' means to weigh. At airports: '¿Cuánto pesa su maleta?' (How much does your suitcase weigh?). The noun 'peso' (weight) comes from this verb. Related: 'sobrepeso' (overweight) — important for airline luggage limits."
       },
       {
         "id": "trav_8",
@@ -11179,7 +11179,7 @@
           "hacer"
         ],
         "correct": "renovar",
-        "explanation": "'Renovar' for renew. Passport/document renewal."
+        "explanation": "'Renovar' means to renew, with stem change o→ue: 'renuevo'. For documents: 'Necesito renovar mi pasaporte' (I need to renew my passport). Related noun: 'renovación' (renewal). Common bureaucratic verb."
       },
       {
         "id": "trav_9",
@@ -11192,7 +11192,7 @@
           "tener"
         ],
         "correct": "hacer",
-        "explanation": "'Hacer turismo' for sightseeing. Tourist activity."
+        "explanation": "'Hacer turismo' literally 'to do tourism' — Spanish uses 'hacer' + noun for many activities: 'hacer turismo' (sightsee), 'hacer deporte' (exercise), 'hacer cola' (queue). This 'hacer + activity' pattern is very productive."
       },
       {
         "id": "trav_10",
@@ -11205,7 +11205,7 @@
           "centro"
         ],
         "correct": "mostrador",
-        "explanation": "'Mostrador de información' info desk. Service counter."
+        "explanation": "'Mostrador de información' uses 'mostrador' (counter, from 'mostrar' = to show). The 'de' preposition links purpose to object. At airports: '¿Dónde está el mostrador de información?' Masculine noun: 'el mostrador'."
       },
       {
         "id": "trav_11",
@@ -11231,7 +11231,7 @@
           "ruta"
         ],
         "correct": "vuelo",
-        "explanation": "'Vuelo directo' direct flight. No connections."
+        "explanation": "'Vuelo directo' (direct flight) vs. 'vuelo con escala(s)' (flight with layover(s)). 'Directo' agrees with masculine 'vuelo'. When booking: 'Prefiero un vuelo directo' (I prefer a direct flight). Adjective follows noun."
       },
       {
         "id": "trav_13",
@@ -11257,7 +11257,7 @@
           "convertir"
         ],
         "correct": "cambiar",
-        "explanation": "'Cambiar dinero' for currency exchange. Money changing."
+        "explanation": "'Cambiar dinero' (to change money) uses the same verb 'cambiar' as for exchanging items. Context distinguishes meaning. At banks/exchanges: 'Quiero cambiar dólares a euros' (I want to change dollars to euros). Uses 'a' for target currency."
       },
       {
         "id": "trav_15",
@@ -14332,7 +14332,7 @@
           "permaneció"
         ],
         "correct": "permanezca",
-        "explanation": "Romantic wishes use subjunctive. Hoping for lasting love."
+        "explanation": "Romantic wishes about the future use subjunctive because they express desire, not certainty. 'Espero que nuestro amor dure' (I hope our love lasts) — 'dure' is present subjunctive of 'durar'. Subjunctive is obligatory after 'esperar que'."
       },
       {
         "id": "indir_15",
@@ -16164,7 +16164,7 @@
           "estupendo"
         ],
         "correct": "genial",
-        "explanation": "'Estar genial' colloquial excellence. Informal high praise."
+        "explanation": "'Estar genial' uses 'estar' because it describes a temporary state of being excellent. Colloquial intensifier — stronger than 'bien'. 'Genial' is invariable by gender: 'La fiesta está genial', 'El libro está genial'. Very informal register."
       },
       {
         "id": "colloq_14",
@@ -16190,7 +16190,7 @@
           "irrita"
         ],
         "correct": "mosquea",
-        "explanation": "'Mosquear' colloquial for annoying. Informal irritation expression."
+        "explanation": "'Mosquear' is colloquial for 'to annoy/irritate'. From 'mosca' (fly) — literally 'to bug someone'. Reflexive 'mosquearse' = to get annoyed: 'Me mosquea que llegue tarde' (It bugs me that he arrives late). Very informal España Spanish."
       }
     ]
   },
@@ -19776,7 +19776,7 @@
           "Vuelto"
         ],
         "correct": "Volviendo",
-        "explanation": "'Volviendo a' refocuses discussion. Professional meeting redirection."
+        "explanation": "'Volviendo a' (returning to) uses the gerund of 'volver' + preposition 'a' to redirect discussion. Professional meeting phrase: 'Volviendo al tema principal...' (Returning to the main topic...). Gerund indicates ongoing transition."
       },
       {
         "id": "formal_8",
@@ -19854,7 +19854,7 @@
           "Cabe"
         ],
         "correct": "Conviene",
-        "explanation": "'Conviene destacar' academic advisement. Scholarly caution recommendation."
+        "explanation": "'Conviene destacar' (it's worth highlighting) uses impersonal 'conviene' + infinitive. Academic writing formula. Similar structures: 'conviene recordar' (it's worth remembering), 'conviene señalar' (it's worth pointing out)."
       },
       {
         "id": "formal_14",
