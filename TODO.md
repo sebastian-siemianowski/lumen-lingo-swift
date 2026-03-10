@@ -37,9 +37,9 @@ Expand all 17 beta language pairs to **105 categories × 15 items = 1,575 items*
 | 1 | arabic_english | Arabic | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 2 | chinese_english | Chinese | 105/105 | 1575/1575 | 21/21 | ✅ |
 | 3 | english_arabic | English | 78/105 | 1170/1575 | 15/20 | 🔄 |
-| 4 | english_chinese | English | 42/105 | 630/1575 | 7/20 | 🔄 |
+| 4 | english_chinese | English | 47/105 | 705/1575 | 8/20 | 🔄 |
 | 5 | english_french | English | 105/105 | 1575/1575 | 21/21 | ✅ |
-| 6 | english_german | English | 52/105 | 780/1575 | 10/20 | 🔄 |
+| 6 | english_german | English | 57/105 | 855/1575 | 11/20 | 🔄 |
 | 7 | english_japanese | English | 96/105 | 1440/1575 | 19/21 | 🔄 |
 | 8 | french_english | French | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 9 | german_polish | German | 105/105 | 1575/1575 | 20/20 | ✅ |
@@ -103,8 +103,8 @@ ID prefixes used: ea_ (all items use ea_ prefix with category-specific suffixes)
 | 19 | common_errors, negation_advanced, question_particles, discourse_markers, register_formality | ⬜ |
 | 20 | coordinating_conjunctions_advanced, subordinating_conjunctions, false_friends, revision_mixed, exam_strategies | ⬜ |
 
-### english_chinese — 🔄 IN PROGRESS (42/105 categories, 630 items)
-ID prefixes used: ec_wo, ec_mw, ec_time, ec_asp, ec_q, ec_n, ec_c, ec_sp, ec_de, ec_pr, ec_pb, ec_nc, ec_cl, ec_mv, ec_loc, ec_cj, ec_pos, ec_dm, ec_gr, ec_cs, ec_ft, ec_dr, ec_ba, ec_bei, ec_rc, ec_dc, ec_deg, ec_pot, ec_dur, ec_freq, ec_ex, ec_sv, ec_piv, ec_tc, ec_sd, ec_le, ec_zhe, ec_guo, ec_cov, ec_woa, ec_rcl, ec_ech
+### english_chinese — 🔄 IN PROGRESS (47/105 categories, 705 items)
+ID prefixes used: ec_wo, ec_mw, ec_time, ec_asp, ec_q, ec_n, ec_c, ec_sp, ec_de, ec_pr, ec_pb, ec_nc, ec_cl, ec_mv, ec_loc, ec_cj, ec_pos, ec_dm, ec_gr, ec_cs, ec_ft, ec_dr, ec_ba, ec_bei, ec_rc, ec_dc, ec_deg, ec_pot, ec_dur, ec_freq, ec_ex, ec_sv, ec_piv, ec_tc, ec_sd, ec_le, ec_zhe, ec_guo, ec_cov, ec_woa, ec_rcl, ec_ech, ec_voc, ec_drc, ec_pur, ec_cef, ec_rsp
 
 | Batch | Categories | Status |
 |-------|-----------|--------|
@@ -116,8 +116,8 @@ ID prefixes used: ec_wo, ec_mw, ec_time, ec_asp, ec_q, ec_n, ec_c, ec_sp, ec_de,
 | 5 | potential_complement, duration_expressions, frequency_expressions, existential_sentences, serial_verb | ✅ |
 | 6 | pivotal_sentences, topic_comment, emphatic_shi_de, le_particle, zhe_particle | ✅ |
 | 7 | guo_particle, coverbs, word_order_advanced, relative_clauses, expressing_change | ✅ |
-| 8 | verb_object_compounds, directional_compounds, purpose_clauses, cause_effect, reported_speech | 🔄 |
-| 9 | comparison_advanced, exclamatory_sentences, imperative_sentences, bu_vs_mei, jiu_vs_cai | ⬜ |
+| 8 | verb_object_compounds, directional_compounds, purpose_clauses, cause_effect, reported_speech | ✅ |
+| 9 | comparison_advanced, exclamatory_sentences, imperative_sentences, bu_vs_mei, jiu_vs_cai | 🔄 |
 | 10 | sentence_final_particles_adv, resultative_compounds, expressing_obligation, expressing_ability, expressing_wishes | ⬜ |
 | 11 | number_expressions_adv, indefinite_pronouns, chengyu_idioms, expressing_experience, expressing_suggestions | ⬜ |
 | 12 | time_clauses_advanced, separable_verbs, nominal_predicates, expressing_approximation, expressing_continuation | ⬜ |
@@ -289,8 +289,8 @@ All 21 batches completed.
 | 20 | culture_society, sports_leisure, media_communication, politics_law, science_research | ✅ |
 | 21 | revision_generale, common_mistakes, exam_strategies | ✅ |
 
-### english_german — 🔄 IN PROGRESS (52/105 categories, 780 items)
-ID prefixes used: eg_pres, eg_art, eg_past, eg_order, eg_case, eg_prep, eg_mod, eg_pp, eg_plq, eg_fut, eg_acc, eg_dat, eg_gen, eg_plu, eg_adj, eg_sep, eg_ref, eg_conj, eg_sub, eg_rel, eg_pv, eg_imp, eg_cmp, eg_sup, eg_adv, eg_neg, eg_qf, eg_pos, eg_dem, eg_ind, eg_per, eg_twp, eg_tp, eg_vp, eg_kii, eg_ki, eg_cond, eg_rs, eg_inf, eg_ptc, eg_ng, eg_cn, eg_wn, eg_sv, eg_mx, eg_hvs, eg_wu, eg_da, eg_wo, eg_di, eg_fp, eg_sw
+### english_german — 🔄 IN PROGRESS (57/105 categories, 855 items)
+ID prefixes used: eg_pres, eg_art, eg_past, eg_order, eg_case, eg_prep, eg_mod, eg_pp, eg_plq, eg_fut, eg_acc, eg_dat, eg_gen, eg_plu, eg_adj, eg_sep, eg_ref, eg_conj, eg_sub, eg_rel, eg_pv, eg_imp, eg_cmp, eg_sup, eg_adv, eg_neg, eg_qf, eg_pos, eg_dem, eg_ind, eg_per, eg_twp, eg_tp, eg_vp, eg_kii, eg_ki, eg_cond, eg_rs, eg_inf, eg_ptc, eg_ng, eg_cn, eg_wn, eg_sv, eg_mx, eg_hvs, eg_wu, eg_da, eg_wo, eg_di, eg_fp, eg_sw, eg_eo, eg_ms, eg_fi, eg_id, eg_ps
 
 | Batch | Categories | Status |
 |-------|-----------|--------|
@@ -304,7 +304,7 @@ ID prefixes used: eg_pres, eg_art, eg_past, eg_order, eg_case, eg_prep, eg_mod, 
 | 8 | reported_speech, infinitive_clauses, participle_clauses, noun_gender, compound_nouns | ✅ |
 | 9 | weak_nouns, strong_verbs, mixed_verbs, haben_vs_sein, werden_uses | ✅ |
 | 10 | da_compounds, wo_compounds, double_infinitive, future_perfect, subjunctive_wishes | ✅ |
-| 11 | expressing_opinions, making_suggestions, formal_vs_informal, idiomatic_expressions, proverbs_sayings | ⬜ |
+| 11 | expressing_opinions, making_suggestions, formal_vs_informal, idiomatic_expressions, proverbs_sayings | ✅ |
 | 12 | time_expressions, numbers_quantities, diminutives, word_formation, prefixes_suffixes | ⬜ |
 | 13 | verb_preposition_combos, adjective_preposition_combos, noun_preposition_combos, es_constructions, position_verbs | ⬜ |
 | 14 | lassen_constructions, modal_particles, discourse_markers, linking_words, emphasis_structures | ⬜ |

@@ -10658,5 +10658,1030 @@
         "explanation": "'Ich wollte, ich könnte fliegen' = 'I wish I could fly.' 'Wollte' functions like 'wünschte' here — expressing a wish despite being the past tense of 'wollen.' This is an older, more literary alternative to 'Ich wünschte...' After 'Ich wollte/wünschte,' the following clause always uses Konjunktiv II. 'Könnte' is the Konjunktiv II of 'können.' This dreamy, fantastical wish format appears in fairy tales, songs, and poetic speech. 'Ich wollte, ich wäre ein Vogel' (I wish I were a bird). It captures the essence of German Wunschsätze — the beautiful grammar of longing, hope, and impossible dreams."
       }
     ]
+  },
+  {
+    "key": "expressing_opinions",
+    "name": "Expressing Opinions",
+    "description": "Meinungen ausdrücken",
+    "iconName": "bubble.left.and.bubble.right",
+    "color": "#60a5fa",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_eo1",
+        "question": "Ich _____ der Meinung, dass Bildung wichtig ist.",
+        "translation": "(I am of the opinion that education is important)",
+        "options": [
+          "bin",
+          "habe",
+          "werde",
+          "sei"
+        ],
+        "correct": "bin",
+        "explanation": "'Ich bin der Meinung' (I am of the opinion) is a formal way to express opinions in German. Unlike English 'I think' (Ich denke), this phrase signals a considered, well-formed opinion. The structure uses 'sein' (to be) + genitive 'der Meinung' — literally 'I am of the opinion.' The 'dass' clause that follows uses regular word order with the verb at the end. Other opinion phrases: 'Meiner Meinung nach' (in my opinion), 'Ich finde, dass...' (I find that...). German has a rich arsenal of opinion markers ranging from casual 'Ich finde' to formal 'Ich vertrete die Auffassung.'"
+      },
+      {
+        "id": "eg_eo2",
+        "question": "Meiner Meinung _____ sollten wir mehr Sport treiben.",
+        "translation": "(In my opinion, we should do more sports)",
+        "options": [
+          "nach",
+          "zu",
+          "für",
+          "von"
+        ],
+        "correct": "nach",
+        "explanation": "'Meiner Meinung nach' (in my opinion) is one of the most common opinion expressions in German. The preposition 'nach' here means 'according to' and requires the dative case — hence 'meiner' (feminine dative of 'mein'). Notice that 'nach' comes AFTER 'Meinung' in this fixed expression, unlike most prepositions which precede their noun. When this phrase starts the sentence, the main verb follows immediately (V2 rule): 'Meiner Meinung nach sollten wir...' Similar constructions: 'meinem Gefühl nach' (to my feeling), 'dem Plan nach' (according to the plan)."
+      },
+      {
+        "id": "eg_eo3",
+        "question": "Ich _____, dass das eine gute Idee ist.",
+        "translation": "(I think that is a good idea)",
+        "options": [
+          "finde",
+          "fände",
+          "funden",
+          "findest"
+        ],
+        "correct": "finde",
+        "explanation": "'Ich finde' (I think/I find) is the most natural, everyday way to express opinions in German — far more common than 'Ich denke' which sounds slightly more cerebral. 'Finden' here doesn't mean 'to find' physically but 'to consider/regard.' The 'dass' subordinate clause sends the verb 'ist' to the end. Compare levels of formality: 'Ich finde' (casual) → 'Ich denke' (neutral) → 'Ich bin der Ansicht' (formal) → 'Ich vertrete die Auffassung' (very formal). In spoken German, you can also skip 'dass' entirely: 'Ich finde, das ist eine gute Idee' — verb stays in position 2."
+      },
+      {
+        "id": "eg_eo4",
+        "question": "Es _____ mir so vor, als ob es regnen würde.",
+        "translation": "(It seems to me as if it would rain)",
+        "options": [
+          "kommt",
+          "geht",
+          "steht",
+          "liegt"
+        ],
+        "correct": "kommt",
+        "explanation": "'Es kommt mir so vor' (it seems to me) is an idiomatic way to express uncertain impressions in German. The reflexive 'vorkommen' literally means 'to come before/to occur.' The construction 'als ob' (as if) triggers Konjunktiv II — hence 'würde.' This phrase signals that you're sharing a subjective perception rather than stating fact. Compare: 'Es scheint mir' (it seems to me — more formal), 'Mir fällt auf' (I notice), 'Ich habe den Eindruck' (I have the impression). These hedging expressions are crucial in German discourse for sounding polite rather than assertive."
+      },
+      {
+        "id": "eg_eo5",
+        "question": "Was mich _____, denke ich, dass wir zu spät sind.",
+        "translation": "(As for me, I think we are too late)",
+        "options": [
+          "betrifft",
+          "betroffen",
+          "betreffen",
+          "betreffend"
+        ],
+        "correct": "betrifft",
+        "explanation": "'Was mich betrifft' (as for me / as far as I'm concerned) is a sophisticated way to frame your personal perspective. 'Betreffen' (to concern) is conjugated as 'betrifft' for the 3rd person singular — the subject 'was' is treated as singular. This opening clause sets you apart from others' views before stating your position. It's particularly useful in debates or discussions. The comma after 'betrifft' separates the relative clause from the main clause. Alternative: 'Was mich angeht' (as far as I'm concerned) — slightly more casual. Both elevate your German significantly beyond basic 'Ich denke.'"
+      },
+      {
+        "id": "eg_eo6",
+        "question": "Ich bin davon _____, dass er Recht hat.",
+        "translation": "(I am convinced that he is right)",
+        "options": [
+          "überzeugt",
+          "überzeugend",
+          "überzeugen",
+          "überzeuge"
+        ],
+        "correct": "überzeugt",
+        "explanation": "'Überzeugt sein' (to be convinced) expresses strong certainty about an opinion. The past participle 'überzeugt' functions as an adjective here — 'Ich bin überzeugt' parallels English 'I am convinced.' The 'davon' (of that) is a da-compound pointing forward to the 'dass' clause. This is stronger than 'Ich glaube' (I believe) or 'Ich denke' (I think). Scale of conviction: 'Ich vermute' (I suspect) → 'Ich glaube' (I believe) → 'Ich bin sicher' (I'm sure) → 'Ich bin fest überzeugt' (I'm firmly convinced). Adding 'fest' (firmly) intensifies the conviction even further."
+      },
+      {
+        "id": "eg_eo7",
+        "question": "Ich _____ die Auffassung, dass mehr getan werden muss.",
+        "translation": "(I hold the view that more must be done)",
+        "options": [
+          "vertrete",
+          "vertritt",
+          "vertreten",
+          "vertrat"
+        ],
+        "correct": "vertrete",
+        "explanation": "'Die Auffassung vertreten' (to hold/represent a view) is a highly formal opinion expression used in academic, political, and professional contexts. 'Vertreten' literally means 'to represent' — you're representing a position. The 'ich' form is 'vertrete' (stem-changing in present but NOT in the way English speakers might expect — the vowel stays). The passive construction 'getan werden muss' (must be done) in the 'dass' clause showcases formal register. This phrase signals intellectual weight and is common in essays, speeches, and formal debates. Never use it in casual conversation — it would sound pompous."
+      },
+      {
+        "id": "eg_eo8",
+        "question": "Ich bin ganz deiner _____.",
+        "translation": "(I completely agree with you / I am entirely of your opinion)",
+        "options": [
+          "Meinung",
+          "Meinungen",
+          "Meinend",
+          "Meinunge"
+        ],
+        "correct": "Meinung",
+        "explanation": "'Ich bin ganz deiner Meinung' (I completely agree with you) combines agreement with emphasis. 'Ganz' (completely/entirely) intensifies the agreement. 'Deiner Meinung' uses the genitive case — 'deiner' is the genitive form of 'dein' (your, informal). The expression literally means 'I am entirely of your opinion.' For formal situations, use 'Ihrer Meinung' (genitive of 'Ihr'). To partially agree: 'Ich bin teilweise deiner Meinung' (I partially agree). To disagree politely: 'Da bin ich anderer Meinung' (I'm of a different opinion there). The word 'da' (there/in that regard) softens the disagreement."
+      },
+      {
+        "id": "eg_eo9",
+        "question": "Ich _____ dem nicht zu.",
+        "translation": "(I do not agree with that)",
+        "options": [
+          "stimme",
+          "stimmt",
+          "stimmen",
+          "stimmst"
+        ],
+        "correct": "stimme",
+        "explanation": "'Zustimmen' (to agree) is a separable verb — the prefix 'zu' goes to the end. 'Ich stimme dem zu' (I agree with that) uses the dative 'dem.' Adding 'nicht' for negation: 'Ich stimme dem nicht zu' — note that 'nicht' comes before the separable prefix at the end. This is the standard way to express disagreement in formal contexts. Compare agreement expressions: 'Ich stimme zu' (I agree — formal), 'Da hast du Recht' (You're right there — informal), 'Einverstanden!' (Agreed! — casual). For stronger disagreement: 'Ich widerspreche' (I object/contradict), 'Das sehe ich anders' (I see that differently)."
+      },
+      {
+        "id": "eg_eo10",
+        "question": "_____ ich ehrlich bin, gefällt mir das nicht.",
+        "translation": "(If I'm honest, I don't like that)",
+        "options": [
+          "Wenn",
+          "Wann",
+          "Ob",
+          "Als"
+        ],
+        "correct": "Wenn",
+        "explanation": "'Wenn ich ehrlich bin' (if I'm being honest) is a common hedging phrase for introducing potentially unwelcome opinions. 'Wenn' (if/when) introduces the conditional clause. Don't confuse: 'wenn' = if/whenever, 'wann' = when (question word), 'ob' = whether, 'als' = when (past single event). The main clause 'gefällt mir das nicht' uses the dative construction — 'gefallen' requires dative (mir). Similar softening phrases: 'Ehrlich gesagt' (honestly speaking), 'Um ehrlich zu sein' (to be honest), 'Offen gesagt' (frankly speaking). Germans value directness but also use these hedges to maintain politeness."
+      },
+      {
+        "id": "eg_eo11",
+        "question": "Ich habe den _____, dass etwas nicht stimmt.",
+        "translation": "(I have the impression that something is not right)",
+        "options": [
+          "Eindruck",
+          "Ausdruck",
+          "Abdruck",
+          "Nachdruck"
+        ],
+        "correct": "Eindruck",
+        "explanation": "'Den Eindruck haben' (to have the impression) is a nuanced way to express uncertain feelings in German. 'Eindruck' (impression) vs 'Ausdruck' (expression) vs 'Abdruck' (imprint) vs 'Nachdruck' (emphasis) — all are compound nouns with '-druck' but vastly different meanings. The verb 'stimmen' in 'etwas stimmt nicht' means 'to be right/correct.' This expression positions your opinion as a perception rather than established fact — diplomatically useful. In professional settings, 'Ich habe den Eindruck' is preferred over 'Ich glaube' because it sounds more objective and observation-based."
+      },
+      {
+        "id": "eg_eo12",
+        "question": "Es _____ außer Frage, dass wir handeln müssen.",
+        "translation": "(It is beyond question that we must act)",
+        "options": [
+          "steht",
+          "liegt",
+          "geht",
+          "kommt"
+        ],
+        "correct": "steht",
+        "explanation": "'Es steht außer Frage' (it is beyond question/doubt) expresses absolute certainty. 'Stehen' (to stand) is used idiomatically — the matter 'stands outside of question.' 'Außer' (outside of/beyond) takes dative — 'Frage' stays unchanged because feminine nouns don't change in dative singular. This is a powerful rhetorical device in debates and formal writing. Related expressions: 'Es steht fest' (it is certain), 'Es besteht kein Zweifel' (there is no doubt), 'Es ist unbestritten' (it is undisputed). Each has slightly different force — 'außer Frage' is among the strongest, leaving no room for debate."
+      },
+      {
+        "id": "eg_eo13",
+        "question": "Soweit ich _____, ist das Projekt erfolgreich.",
+        "translation": "(As far as I know, the project is successful)",
+        "options": [
+          "weiß",
+          "wisse",
+          "wusste",
+          "gewusst"
+        ],
+        "correct": "weiß",
+        "explanation": "'Soweit ich weiß' (as far as I know) is a qualifying phrase that limits your claim to your current knowledge. 'Soweit' (as far as/insofar as) introduces a concessive clause. The present tense 'weiß' (know) is used even when speaking about ongoing situations. This phrase protects you from being wrong — you're sharing knowledge, not making absolute claims. Similar qualifiers: 'Meines Wissens' (to my knowledge — more formal, uses genitive), 'Soviel ich weiß' (as much as I know), 'Nach meinem Kenntnisstand' (according to my state of knowledge — very formal). These are essential for professional communication."
+      },
+      {
+        "id": "eg_eo14",
+        "question": "Das _____ ich ganz anders.",
+        "translation": "(I see that completely differently)",
+        "options": [
+          "sehe",
+          "sieht",
+          "sehen",
+          "sähe"
+        ],
+        "correct": "sehe",
+        "explanation": "'Das sehe ich anders' (I see that differently) is the most common way to politely disagree in German conversation. Adding 'ganz' (completely) strengthens the disagreement. 'Sehen' (to see) is used metaphorically for perspective — just like English. The accusative 'das' is the direct object. This phrase is perfectly balanced — clear disagreement without rudeness. Compare: 'Da bin ich anderer Meinung' (I'm of a different opinion — more formal), 'Da muss ich widersprechen' (I must disagree — stronger), 'Das stimmt so nicht' (That's not right — confrontational). Choose your level based on social context."
+      },
+      {
+        "id": "eg_eo15",
+        "question": "Ich _____ der festen Überzeugung, dass wir es schaffen.",
+        "translation": "(I am firmly convinced that we will make it)",
+        "options": [
+          "bin",
+          "habe",
+          "werde",
+          "bleibe"
+        ],
+        "correct": "bin",
+        "explanation": "'Ich bin der festen Überzeugung' (I am firmly convinced) is the strongest opinion expression in German. 'Fest' (firm/solid) intensifies 'Überzeugung' (conviction). The genitive 'der festen Überzeugung' literally means 'of the firm conviction.' 'Schaffen' (to make it/manage) is colloquial but powerful — 'Wir schaffen das!' became famous in recent German political discourse. This phrase combines formal structure with emotional conviction, making it ideal for inspirational or persuasive contexts. The scale: Meinung (opinion) → Ansicht (view) → Überzeugung (conviction) — each step increases the speaker's commitment to the position."
+      }
+    ]
+  },
+  {
+    "key": "making_suggestions",
+    "name": "Making Suggestions",
+    "description": "Vorschläge machen",
+    "iconName": "lightbulb",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_ms1",
+        "question": "Wie _____ es, wenn wir ins Kino gehen?",
+        "translation": "(How about we go to the cinema?)",
+        "options": [
+          "wäre",
+          "war",
+          "ist",
+          "wird"
+        ],
+        "correct": "wäre",
+        "explanation": "'Wie wäre es' (how about / how would it be) is the most natural way to make casual suggestions in German. 'Wäre' is Konjunktiv II of 'sein' — the subjunctive makes the suggestion hypothetical and therefore polite. The 'wenn' clause (if/when we go) adds the specific proposal. Compare: 'Wie wäre es mit einem Kaffee?' (How about a coffee? — using 'mit' + dative). This construction mirrors English 'How would it be if...' but is far more common in German than its English equivalent. The politeness comes from the subjunctive — you're not demanding but gently proposing."
+      },
+      {
+        "id": "eg_ms2",
+        "question": "Ich _____ vor, dass wir morgen anfangen.",
+        "translation": "(I suggest that we start tomorrow)",
+        "options": [
+          "schlage",
+          "schlug",
+          "schlüge",
+          "schlagen"
+        ],
+        "correct": "schlage",
+        "explanation": "'Vorschlagen' (to suggest/propose) is a separable verb — 'vor' goes to the end in main clauses but stays attached in subordinate clauses. 'Ich schlage vor' is present tense, appropriate for actual suggestions. The 'dass' clause sends 'anfangen' (another separable verb) to the end as one word. 'Vorschlagen' is the standard formal way to suggest — stronger than 'Wie wäre es' but softer than 'Ich bestehe darauf' (I insist). In business German, 'Ich möchte vorschlagen' (I would like to suggest) adds an extra layer of politeness. The noun form is 'der Vorschlag' (the suggestion/proposal)."
+      },
+      {
+        "id": "eg_ms3",
+        "question": "_____ wir nicht lieber zu Hause bleiben?",
+        "translation": "(Shouldn't we rather stay at home?)",
+        "options": [
+          "Sollten",
+          "Sollen",
+          "Solltet",
+          "Sollt"
+        ],
+        "correct": "Sollten",
+        "explanation": "'Sollten wir nicht' (shouldn't we) uses Konjunktiv II of 'sollen' to make a polite suggestion through a question. The 'nicht' makes it a negative question expecting agreement — a gentle persuasion technique. 'Lieber' (rather/preferably) is the comparative of 'gern' and softens the suggestion further. 'Zu Hause' (at home) — note the capital H in 'Hause' in this fixed expression. Compare suggestion strength: 'Wollen wir...?' (Shall we — casual) → 'Sollten wir...?' (Should we — polite) → 'Müssten wir nicht...?' (Shouldn't we have to — pressing). The Konjunktiv II adds diplomatic distance."
+      },
+      {
+        "id": "eg_ms4",
+        "question": "Was _____ du davon, wenn wir Pizza bestellen?",
+        "translation": "(What do you think about us ordering pizza?)",
+        "options": [
+          "hältst",
+          "haltest",
+          "hältest",
+          "hieltest"
+        ],
+        "correct": "hältst",
+        "explanation": "'Was hältst du davon' (what do you think of that) uses 'halten von' (to think of/regard). The stem-change a→ä occurs in 2nd and 3rd person singular: du hältst, er hält. The 'davon' (of that) is a da-compound pointing to the 'wenn' clause. This phrasing seeks the other person's opinion while making a suggestion — collaborative rather than directive. Compare: 'Was meinst du?' (What do you think? — casual), 'Was halten Sie davon?' (What do you think? — formal with Sie). The 'wenn' clause adds a specific proposal. This is among the most commonly used suggestion forms in everyday German."
+      },
+      {
+        "id": "eg_ms5",
+        "question": "Ich würde _____, dass wir uns um 8 treffen.",
+        "translation": "(I would suggest that we meet at 8)",
+        "options": [
+          "vorschlagen",
+          "vorgeschlagen",
+          "vorschlage",
+          "vorschlägt"
+        ],
+        "correct": "vorschlagen",
+        "explanation": "'Ich würde vorschlagen' (I would suggest) uses 'würde' + infinitive — the most common Konjunktiv II construction. The separable verb 'vorschlagen' stays together as the infinitive at the end. This is more tentative and polite than 'Ich schlage vor.' The reflexive 'sich treffen' (to meet) appears as 'uns treffen' for 'wir.' Double politeness: 'würde' (conditional) + 'vorschlagen' (suggest) creates a very diplomatic tone perfect for professional and social settings. Even more polite: 'Ich würde gerne vorschlagen' (I would like to suggest), adding 'gerne' for extra courtesy."
+      },
+      {
+        "id": "eg_ms6",
+        "question": "_____ wir zusammen spazieren gehen?",
+        "translation": "(Shall we go for a walk together?)",
+        "options": [
+          "Wollen",
+          "Wollten",
+          "Wollend",
+          "Gewollt"
+        ],
+        "correct": "Wollen",
+        "explanation": "'Wollen wir...?' (Shall we / Do we want to...?) is the most casual, friendly way to make suggestions in German. Placing 'wollen' at the start creates a yes/no question — the verb-first position signals a question without needing a question word. 'Spazieren gehen' (to go for a walk) is a combination of two infinitives — the main verb 'gehen' carries the action, while 'spazieren' specifies the manner. 'Zusammen' (together) adds warmth to the invitation. Compare casual suggestions: 'Wollen wir...?' → 'Lass uns...!' (Let's...!) → 'Komm, wir...!' (Come on, let's...!). All three are perfect for friends and family."
+      },
+      {
+        "id": "eg_ms7",
+        "question": "Es wäre _____, wenn du mitkommst.",
+        "translation": "(It would be nice if you come along)",
+        "options": [
+          "schön",
+          "schöner",
+          "am schönsten",
+          "schönes"
+        ],
+        "correct": "schön",
+        "explanation": "'Es wäre schön' (it would be nice) is a warm, inviting way to suggest someone's participation. 'Wäre' (Konjunktiv II of 'sein') creates the conditional mood. 'Schön' (nice/beautiful) is used as a predicate adjective — no declension needed after 'sein.' 'Mitkommen' (to come along) is separable but stays together in subordinate clause: 'wenn du mitkommst.' The suggestion is framed as a desire rather than a request — making it easy for the other person to decline without awkwardness. Variations: 'Es wäre toll' (it would be great), 'Es wäre nett' (it would be nice — slightly more reserved)."
+      },
+      {
+        "id": "eg_ms8",
+        "question": "Lass _____ heute Abend kochen!",
+        "translation": "(Let's cook tonight!)",
+        "options": [
+          "uns",
+          "wir",
+          "mich",
+          "euch"
+        ],
+        "correct": "uns",
+        "explanation": "'Lass uns' (let us / let's) is the direct equivalent of English 'let's.' 'Lassen' in imperative 'lass' (informal) or 'lassen Sie uns' (formal) + pronoun + infinitive. 'Uns' is the accusative/dative first person plural pronoun. 'Heute Abend' (this evening/tonight) — German uses 'heute' + time of day rather than a single word. The exclamation mark signals enthusiasm. Compare: 'Lass uns...' (informal singular audience), 'Lasst uns...' (informal plural audience — speaking to a group), 'Lassen Sie uns...' (formal — business meetings). This structure directly parallels English and is easy for learners to master."
+      },
+      {
+        "id": "eg_ms9",
+        "question": "Ich _____ empfehlen, das Restaurant auszuprobieren.",
+        "translation": "(I would recommend trying the restaurant)",
+        "options": [
+          "würde",
+          "werde",
+          "will",
+          "wollte"
+        ],
+        "correct": "würde",
+        "explanation": "'Ich würde empfehlen' (I would recommend) uses 'würde' + infinitive for a polite recommendation. 'Empfehlen' (to recommend) is a strong verb — but in 'würde' + infinitive construction, it stays in its base form. 'Auszuprobieren' is the 'zu' + infinitive of the separable verb 'ausprobieren' (to try out) — note how 'zu' is inserted between prefix and stem: aus-zu-probieren. The difference from 'Ich empfehle' (I recommend — direct) is significant in formality. 'Würde' adds hypothetical distance, making the suggestion feel like gentle advice rather than instruction. Perfect for reviews, travel tips, or friendly guidance."
+      },
+      {
+        "id": "eg_ms10",
+        "question": "An deiner Stelle _____ ich zum Arzt gehen.",
+        "translation": "(In your place, I would go to the doctor)",
+        "options": [
+          "würde",
+          "werde",
+          "will",
+          "wollte"
+        ],
+        "correct": "würde",
+        "explanation": "'An deiner Stelle' (in your place/if I were you) is a powerful advice-giving construction. 'Stelle' (place/position) takes dative after 'an' — hence 'deiner' (feminine dative). The 'würde' + infinitive construction makes the advice hypothetical and less bossy. This is the German equivalent of English 'If I were you, I would...' Compare advice-giving: 'Du solltest...' (You should — direct), 'An deiner Stelle würde ich...' (If I were you — empathetic), 'Ich rate dir...' (I advise you — neutral). The 'an deiner/Ihrer Stelle' version is particularly effective because it shows you've put yourself in the other person's shoes."
+      },
+      {
+        "id": "eg_ms11",
+        "question": "Wie wäre es _____ einem Spaziergang?",
+        "translation": "(How about a walk?)",
+        "options": [
+          "mit",
+          "für",
+          "zu",
+          "von"
+        ],
+        "correct": "mit",
+        "explanation": "'Wie wäre es mit' (how about / what about) takes the dative after 'mit.' 'Einem Spaziergang' is masculine dative (der Spaziergang → einem Spaziergang). This is the shorter, more casual version of 'Wie wäre es, wenn wir spazieren gehen?' — using a noun instead of a full clause. 'Mit' + dative is the fixed structure here. Common uses: 'Wie wäre es mit einem Kaffee?' (How about a coffee?), 'Wie wäre es mit morgen?' (How about tomorrow?). You can also use: 'Was hältst du von einem Spaziergang?' (What do you think of a walk?) — same meaning, different construction, also dative."
+      },
+      {
+        "id": "eg_ms12",
+        "question": "Ich _____ dir, dich warm anzuziehen.",
+        "translation": "(I advise you to dress warmly)",
+        "options": [
+          "rate",
+          "riet",
+          "geraten",
+          "ratest"
+        ],
+        "correct": "rate",
+        "explanation": "'Raten' (to advise) takes dative for the person advised ('dir' = to you) and 'zu' + infinitive for the advice itself. Present tense: ich rate, du rätst, er rät. 'Sich anziehen' (to get dressed) is reflexive and separable — in the 'zu' + infinitive: 'an-zu-ziehen,' with the reflexive 'dich' (yourself, informal). 'Warm' is an adverb modifying how to dress. Compare: 'Ich rate dir' (I advise you — neutral), 'Ich empfehle dir' (I recommend — slightly stronger), 'Ich lege dir nahe' (I urge you — formal and pressing). 'Raten' can also mean 'to guess' — context distinguishes meaning."
+      },
+      {
+        "id": "eg_ms13",
+        "question": "Du _____ vielleicht mal den Chef fragen.",
+        "translation": "(You could perhaps ask the boss)",
+        "options": [
+          "könntest",
+          "kannst",
+          "konntest",
+          "könnte"
+        ],
+        "correct": "könntest",
+        "explanation": "'Könntest' (you could) is Konjunktiv II of 'können' for 'du' — perfect for gentle suggestions. The combination with 'vielleicht' (perhaps) and 'mal' (just/once — an informal softener) creates a very tactful suggestion. 'Mal' is a modal particle unique to German — it makes requests and suggestions sound casual and low-pressure. Without it, 'Du könntest den Chef fragen' sounds more formal. Compare: 'Frag den Chef!' (Ask the boss! — imperative, direct), 'Du könntest mal fragen' (You could just ask — gentle), 'Vielleicht solltest du fragen' (Perhaps you should ask — advisory). Modal particles are the secret to natural-sounding German."
+      },
+      {
+        "id": "eg_ms14",
+        "question": "Darf ich einen Vorschlag _____?",
+        "translation": "(May I make a suggestion?)",
+        "options": [
+          "machen",
+          "gemacht",
+          "machend",
+          "machte"
+        ],
+        "correct": "machen",
+        "explanation": "'Einen Vorschlag machen' (to make a suggestion) pairs 'Vorschlag' (suggestion/proposal) with 'machen' (to make). 'Darf ich' (may I) using 'dürfen' (to be allowed) is the polite way to ask permission. The infinitive 'machen' goes to the end because of the modal verb 'darf.' This phrase is perfect for meetings and formal discussions — it signals respect by asking permission before suggesting. Compare: 'Ich hätte einen Vorschlag' (I would have a suggestion — presenting directly), 'Gestatten Sie einen Vorschlag?' (Do you permit a suggestion? — very formal). 'Vorschlag' is masculine — hence 'einen' (accusative)."
+      },
+      {
+        "id": "eg_ms15",
+        "question": "Wir _____ doch einfach das Fenster aufmachen.",
+        "translation": "(We could simply open the window)",
+        "options": [
+          "könnten",
+          "können",
+          "konnten",
+          "gekonnt"
+        ],
+        "correct": "könnten",
+        "explanation": "'Könnten' (we could) is Konjunktiv II of 'können' for 'wir' — suggesting a simple solution. 'Doch' is a modal particle adding a sense of 'after all/why don't we' — it implies the solution is obvious and easy. 'Einfach' (simply) reinforces this ease. 'Aufmachen' (to open) is the colloquial separable verb for opening — more casual than 'öffnen.' Together, 'doch einfach' creates a very German way of suggesting something obvious without being patronizing. Modal particles like 'doch,' 'mal,' 'eben,' and 'halt' are what make German suggestions sound natural rather than textbook-formal. Mastering them is key to fluent spoken German."
+      }
+    ]
+  },
+  {
+    "key": "formal_vs_informal",
+    "name": "Formal vs. Informal",
+    "description": "Formell vs. Informell",
+    "iconName": "person.2",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_fi1",
+        "question": "_____ Sie mir bitte helfen?",
+        "translation": "(Could you please help me? — formal)",
+        "options": [
+          "Könnten",
+          "Kannst",
+          "Könnt",
+          "Konntest"
+        ],
+        "correct": "Könnten",
+        "explanation": "'Könnten Sie' (Could you — formal) combines Konjunktiv II politeness with 'Sie' (formal you). 'Sie' is always capitalized when meaning 'you' (formal) vs 'sie' (she/they). 'Könnten' signals hypothetical possibility — more polite than 'Können Sie' (Can you). Adding 'bitte' (please) makes it even more courteous. The formal 'Sie' register is essential in German — use it with strangers, in shops, at work with superiors, with older people, and in official situations. Switching from 'Sie' to 'du' (called 'Duzen') is a social milestone usually initiated by the older or higher-ranking person."
+      },
+      {
+        "id": "eg_fi2",
+        "question": "Hey, _____ du mir mal kurz helfen?",
+        "translation": "(Hey, can you help me for a sec? — informal)",
+        "options": [
+          "kannst",
+          "können",
+          "könnten",
+          "könnt"
+        ],
+        "correct": "kannst",
+        "explanation": "'Kannst du' (can you — informal) is the casual counterpart to 'Könnten Sie.' The entire sentence screams informality: 'Hey' (interjection), 'du' (informal you), 'mal' (modal particle = just/real quick), 'kurz' (briefly/for a sec). These layered informal markers create natural-sounding casual German. 'Mal' is particularly important — it transforms requests from demanding to casual. Compare: 'Hilf mir!' (Help me! — imperative, blunt) → 'Kannst du mir helfen?' (Can you help me? — neutral) → 'Kannst du mir mal kurz helfen?' (Can you help me real quick? — casual and friendly). The modal particles are what make German feel alive."
+      },
+      {
+        "id": "eg_fi3",
+        "question": "Ich möchte _____ gerne zum Essen einladen.",
+        "translation": "(I would like to invite you to dinner — formal)",
+        "options": [
+          "Sie",
+          "dich",
+          "dir",
+          "euch"
+        ],
+        "correct": "Sie",
+        "explanation": "'Sie' (formal you, accusative) is the correct choice for a formal dinner invitation. 'Einladen' (to invite) takes accusative for the person invited. The entire construction 'Ich möchte Sie gerne einladen' is elegantly formal: 'möchte' (would like), 'gerne' (gladly — adds warmth), separable verb 'einladen' with prefix at end. Compare pronoun choices: 'Sie' (formal), 'dich' (informal singular, accusative), 'dir' (informal singular, dative — wrong case here), 'euch' (informal plural, accusative). Choosing the wrong register — using 'dich' with a business associate — would be a serious social error in German-speaking countries."
+      },
+      {
+        "id": "eg_fi4",
+        "question": "Ich wollte fragen, _____ Sie morgen Zeit haben.",
+        "translation": "(I wanted to ask whether you have time tomorrow — formal)",
+        "options": [
+          "ob",
+          "wenn",
+          "dass",
+          "weil"
+        ],
+        "correct": "ob",
+        "explanation": "'Ob' (whether/if) introduces indirect yes/no questions — 'Haben Sie morgen Zeit?' becomes 'ob Sie morgen Zeit haben' (whether you have time tomorrow). Don't confuse 'ob' with 'wenn' (if/when for conditions) or 'dass' (that). 'Ich wollte fragen' (I wanted to ask) uses past tense 'wollte' even though the asking happens now — this is a politeness strategy called 'Konjunktiv der Höflichkeit,' where past tense creates diplomatic distance. The verb 'haben' moves to the end in the 'ob' clause. This indirect questioning style is common in formal German — more polite than directly asking 'Haben Sie morgen Zeit?'"
+      },
+      {
+        "id": "eg_fi5",
+        "question": "Würden Sie mir bitte _____ Wasser geben?",
+        "translation": "(Would you please give me some water? — formal)",
+        "options": [
+          "etwas",
+          "ein bisschen",
+          "was",
+          "bisschen"
+        ],
+        "correct": "etwas",
+        "explanation": "'Etwas' (some/a little) is the formal version of 'was' (informal abbreviation) and 'ein bisschen' (a bit). In formal speech, always use 'etwas' — 'was' sounds too casual for 'Sie' register. 'Würden Sie' (would you) is the most polite request form in German — 'würden' + infinitive. The entire sentence layers politeness: 'Würden' (conditional) + 'Sie' (formal) + 'bitte' (please) + 'etwas' (formal some). Compare register markers: formal = 'etwas,' 'bitte,' 'gerne'; informal = 'was,' 'mal,' 'n bisschen.' Mixing registers (e.g., 'Würden Sie mir mal was geben?') sounds jarring and should be avoided."
+      },
+      {
+        "id": "eg_fi6",
+        "question": "Na, wie _____'s dir so?",
+        "translation": "(So, how's it going? — very informal)",
+        "options": [
+          "geht",
+          "ginge",
+          "ging",
+          "gehen"
+        ],
+        "correct": "geht",
+        "explanation": "'Na, wie geht's dir?' is maximally informal German greeting. 'Na' is an informal interjection (= 'So/Well'), 'geht's' contracts 'geht es' (goes it), 'dir' (to you, informal dative), 'so' (softening particle = roughly). Every element signals casualness. Compare formality levels of the same question: 'Wie geht es Ihnen?' (How are you? — formal), 'Wie geht es dir?' (How are you? — standard informal), 'Wie geht's dir?' (How's it going? — casual), 'Na, wie geht's dir so?' (What's up? — very casual). The contraction 'geht's' and particles 'na/so' are pure spoken register — never use them in writing or formal situations."
+      },
+      {
+        "id": "eg_fi7",
+        "question": "Sehr _____ Damen und Herren,",
+        "translation": "(Dear Ladies and Gentlemen, — formal letter opening)",
+        "options": [
+          "geehrte",
+          "liebe",
+          "nette",
+          "gute"
+        ],
+        "correct": "geehrte",
+        "explanation": "'Sehr geehrte Damen und Herren' (Dear Ladies and Gentlemen) is the standard formal letter/email opening when you don't know the recipient's name. 'Geehrt' (honored) is the past participle of 'ehren' (to honor) used as an adjective — 'geehrte' takes the strong adjective ending for plural. Compare: 'Sehr geehrte/r Frau/Herr [Name]' (Dear Ms./Mr. [Name] — formal, known recipient), 'Liebe/r [Name]' (Dear [Name] — friendly), 'Hallo [Name]' (Hello [Name] — casual), 'Hi [Name]' or 'Hey' (very casual). German business correspondence REQUIRES 'Sehr geehrte/r' — using 'Liebe/r' with strangers is inappropriate."
+      },
+      {
+        "id": "eg_fi8",
+        "question": "Dürfte ich Sie um einen Gefallen _____?",
+        "translation": "(Might I ask you a favor? — very formal)",
+        "options": [
+          "bitten",
+          "beten",
+          "gebeten",
+          "bat"
+        ],
+        "correct": "bitten",
+        "explanation": "'Bitten' (to ask/request) is often confused with 'beten' (to pray) by English speakers. 'Dürfte' is Konjunktiv II of 'dürfen' — even more tentative than 'darf' (may I). 'Um einen Gefallen bitten' (to ask for a favor) uses 'um' + accusative. This is extremely formal and polite — the triple layers: 'dürfte' (may I possibly) + 'Sie' (formal you) + 'bitten' (request). In everyday conversation, you'd say: 'Kannst du mir einen Gefallen tun?' (Can you do me a favor? — informal). The formal version signals deep respect and is used when the request is significant or the relationship demands ceremony."
+      },
+      {
+        "id": "eg_fi9",
+        "question": "Ich _____ mich, von Ihnen zu hören.",
+        "translation": "(I look forward to hearing from you — formal closing)",
+        "options": [
+          "freue",
+          "freute",
+          "freuen",
+          "erfreue"
+        ],
+        "correct": "freue",
+        "explanation": "'Ich freue mich' (I look forward to / I'm happy) is reflexive — 'sich freuen' requires the reflexive pronoun. In formal correspondence, 'Ich freue mich, von Ihnen zu hören' closes a letter/email expecting a response. The 'zu' + infinitive 'zu hören' (to hear) follows the comma. Other formal closings: 'Mit freundlichen Grüßen' (Yours sincerely — most standard), 'Hochachtungsvoll' (Respectfully — very formal/old-fashioned), 'Beste Grüße' (Best regards — slightly less formal). Informal closings: 'Liebe Grüße' (Love/Best — friendly), 'Viele Grüße' (Many greetings — neutral-friendly), 'LG' (abbreviation — very casual, texts only)."
+      },
+      {
+        "id": "eg_fi10",
+        "question": "Ey, _____ mal her damit!",
+        "translation": "(Yo, give it here! — very informal/slang)",
+        "options": [
+          "gib",
+          "geben",
+          "gibst",
+          "gibt"
+        ],
+        "correct": "gib",
+        "explanation": "'Gib' is the informal imperative (du-form) of 'geben' (to give). The stem vowel changes e→i in imperative: geben → gib! (not 'geb!'). 'Mal' softens the command slightly, 'her' indicates direction (toward speaker), 'damit' (with it) specifies the object. 'Ey' is youth slang — equivalent to 'Yo/Hey.' This sentence is maximally informal — use only with close friends in very casual situations. Compare: 'Geben Sie mir bitte...' (Please give me... — formal) → 'Gib mir mal...' (Give me... — casual) → 'Gib mal her!' (Hand it over! — very casual). German imperatives drop the pronoun, unlike English."
+      },
+      {
+        "id": "eg_fi11",
+        "question": "Ich wäre _____ dankbar, wenn Sie mir antworten könnten.",
+        "translation": "(I would be very grateful if you could respond — formal)",
+        "options": [
+          "Ihnen",
+          "sehr",
+          "dir",
+          "ganz"
+        ],
+        "correct": "Ihnen",
+        "explanation": "'Ich wäre Ihnen dankbar' (I would be grateful to you) uses dative 'Ihnen' (to you, formal). 'Dankbar' (grateful) requires dative for the person you're grateful to. The construction layers three politeness markers: 'wäre' (Konjunktiv II), 'Ihnen' (formal Sie in dative), and 'könnten' (Konjunktiv II in the wenn-clause). This is a sophisticated formal request structure used in business correspondence. 'Sehr' (very) would also fit grammatically but 'Ihnen' is the key grammatical element being tested. Compare: 'Ich wäre Ihnen sehr dankbar' (I would be very grateful — adds emphasis). This phrasing commands respect in professional German."
+      },
+      {
+        "id": "eg_fi12",
+        "question": "Tschüss! Bis _____!",
+        "translation": "(Bye! See you later! — informal)",
+        "options": [
+          "später",
+          "Wiedersehen",
+          "bald",
+          "dann"
+        ],
+        "correct": "dann",
+        "explanation": "'Bis dann!' (Until then / See you!) is casual German for goodbye when you'll meet again. 'Tschüss' (bye) is the standard informal farewell. Compare farewell formality: 'Auf Wiedersehen' (formal goodbye — 'until seeing again'), 'Auf Wiederhören' (phone call formal — 'until hearing again'), 'Tschüss' (casual bye), 'Bis dann/später/bald' (see you then/later/soon — casual), 'Ciao' or 'Tschau' (very casual — borrowed from Italian), 'Mach's gut!' (Take care! — friendly). Regional variations: 'Servus' (Bavaria/Austria), 'Ade/Adé' (Southwest Germany), 'Tschö' (Rhineland). Choosing the right farewell signals your cultural awareness."
+      },
+      {
+        "id": "eg_fi13",
+        "question": "Entschuldigen Sie, _____ ich Sie etwas fragen?",
+        "translation": "(Excuse me, may I ask you something? — formal)",
+        "options": [
+          "darf",
+          "kann",
+          "soll",
+          "will"
+        ],
+        "correct": "darf",
+        "explanation": "'Darf ich' (may I) uses 'dürfen' (to be permitted) — the most polite way to ask permission in German. Compare: 'Kann ich...?' (Can I? — ability-focused, casual), 'Darf ich...?' (May I? — permission-focused, polite), 'Dürfte ich...?' (Might I? — even more polite). 'Entschuldigen Sie' (Excuse me — formal) vs 'Entschuldigung' (Excuse me — neutral) vs 'Sorry' (casual — borrowed from English, widely used in German). The combination 'Entschuldigen Sie, darf ich...' is the gold standard for approaching strangers. In informal German: 'Hey, kann ich dich was fragen?' — completely different register."
+      },
+      {
+        "id": "eg_fi14",
+        "question": "Hiermit _____ ich meinen Rücktritt bekannt.",
+        "translation": "(I hereby announce my resignation — very formal)",
+        "options": [
+          "gebe",
+          "mache",
+          "sage",
+          "teile"
+        ],
+        "correct": "gebe",
+        "explanation": "'Hiermit gebe ich bekannt' (I hereby announce) is highly formal bureaucratic/official German. 'Hiermit' (hereby) is used exclusively in formal documents. 'Bekanntgeben' (to announce) is separable — 'bekannt' as the separated prefix and 'gebe' as the conjugated verb. 'Rücktritt' (resignation/stepping back) is a compound: 'Rück-' (back) + 'Tritt' (step). This register level is found in legal documents, official announcements, and formal correspondence. Nobody speaks like this in conversation. Compare: 'Ich kündige' (I quit — normal), 'Ich reiche meine Kündigung ein' (I submit my resignation — professional), 'Hiermit gebe ich bekannt' (I hereby declare — official/legal)."
+      },
+      {
+        "id": "eg_fi15",
+        "question": "Hast du _____ Bock, ins Schwimmbad zu gehen?",
+        "translation": "(Do you feel like going to the pool? — very informal)",
+        "options": [
+          "Bock",
+          "Lust",
+          "Interesse",
+          "Wunsch"
+        ],
+        "correct": "Bock",
+        "explanation": "'Bock haben' (to feel like / to be up for) is very informal German slang — 'Hast du Bock?' literally involves the word for 'male goat/buck' but means 'Are you up for it?' 'Keinen Bock haben' (to not feel like it) is equally common: 'Ich hab keinen Bock' (I don't feel like it). Compare formality levels of 'wanting to do something': 'Ich habe den Wunsch' (I have the wish — formal), 'Ich habe Interesse' (I'm interested — neutral-formal), 'Ich habe Lust' (I feel like — standard informal), 'Ich hab Bock' (I'm up for it — very casual/youth slang). 'Bock' is perfectly normal among young Germans but inappropriate in professional settings."
+      }
+    ]
+  },
+  {
+    "key": "idiomatic_expressions",
+    "name": "Idiomatic Expressions",
+    "description": "Redewendungen",
+    "iconName": "text.quote",
+    "color": "#ec4899",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "eg_id1",
+        "question": "Das ist mir _____. (I don't care)",
+        "translation": "(That is all the same to me / I don't care)",
+        "options": [
+          "egal",
+          "gleich",
+          "ähnlich",
+          "selbe"
+        ],
+        "correct": "egal",
+        "explanation": "'Das ist mir egal' (I don't care / it's all the same to me) is one of the most common German idioms. 'Egal' means 'regardless/no matter' and takes dative 'mir' (to me). This is neutral in tone — not rude but clearly expressing indifference. Intensified versions: 'Das ist mir total egal' (I totally don't care), 'Das ist mir scheißegal' (I don't give a damn — vulgar). More polite alternatives: 'Das macht mir nichts aus' (That doesn't bother me), 'Das ist mir einerlei' (That's all one to me — old-fashioned). The construction 'mir ist...' with dative is very productive in German for expressing personal states: 'Mir ist kalt' (I'm cold), 'Mir ist schlecht' (I feel sick)."
+      },
+      {
+        "id": "eg_id2",
+        "question": "Er hat die Katze aus dem _____ gelassen.",
+        "translation": "(He let the cat out of the bag / revealed the secret)",
+        "options": [
+          "Sack",
+          "Beutel",
+          "Tasche",
+          "Korb"
+        ],
+        "correct": "Sack",
+        "explanation": "'Die Katze aus dem Sack lassen' (to let the cat out of the sack) means to reveal a secret — nearly identical to the English idiom! 'Sack' (sack/bag) is the traditional word; 'Tasche' (bag/purse) is more modern but wrong in this idiom. The past participle construction: 'hat... gelassen' (has let — present perfect of 'lassen'). Related expression: 'Die Katze im Sack kaufen' (to buy a cat in a sack = to buy something sight unseen). German has surprisingly many cat idioms: 'Katz und Maus spielen' (to play cat and mouse), 'Für die Katz sein' (to be for nothing — literally 'for the cat'). Idioms must be learned as fixed units."
+      },
+      {
+        "id": "eg_id3",
+        "question": "Da _____ der Hund begraben!",
+        "translation": "(That's the crux of the matter! Literally: That's where the dog is buried)",
+        "options": [
+          "liegt",
+          "steht",
+          "sitzt",
+          "geht"
+        ],
+        "correct": "liegt",
+        "explanation": "'Da liegt der Hund begraben' (that's where the dog is buried) means 'that's the root of the problem / the crux of the matter.' 'Liegen' (to lie) is the correct verb — the dog 'lies' buried. 'Begraben' (buried) is the past participle of 'begraben.' This expression has medieval origins — 'Hund' may have referred to a treasure guardian rather than an actual dog. It's used when you've identified the real issue. Other problem-identification idioms: 'Da hakt es' (that's where it gets stuck), 'Das ist der Punkt' (that's the point), 'Der springende Punkt' (the crucial point — lit. 'the jumping point'). All are common in professional German."
+      },
+      {
+        "id": "eg_id4",
+        "question": "Ich verstehe nur _____.",
+        "translation": "(I don't understand anything / It's all Greek to me. Lit: I only understand 'train station')",
+        "options": [
+          "Bahnhof",
+          "Deutsch",
+          "Chinesisch",
+          "Hauptstadt"
+        ],
+        "correct": "Bahnhof",
+        "explanation": "'Ich verstehe nur Bahnhof' (I only understand 'train station') is a uniquely German way to say 'I don't understand anything at all.' While English says 'It's Greek to me' and French says 'C'est du chinois,' German uses a train station! The origin is debated — possibly from WWI soldiers who only wanted to hear 'Bahnhof' (station) because it meant going home. This idiom is casual and humorous — perfect for expressing total confusion in a lighthearted way. Related expressions: 'Das sind böhmische Dörfer für mich' (Those are Bohemian villages to me = I have no idea), 'Ich stehe auf dem Schlauch' (I'm standing on the hose = I'm not getting it)."
+      },
+      {
+        "id": "eg_id5",
+        "question": "Sie hat den Nagel auf den _____ getroffen.",
+        "translation": "(She hit the nail on the head)",
+        "options": [
+          "Kopf",
+          "Punkt",
+          "Hammer",
+          "Boden"
+        ],
+        "correct": "Kopf",
+        "explanation": "'Den Nagel auf den Kopf treffen' (to hit the nail on the head) is identical in meaning to the English idiom! 'Kopf' (head) refers to the nail's head, not a human head. 'Treffen' (to hit/meet) uses 'hat... getroffen' in present perfect. This cross-linguistic similarity makes it easy for English speakers — one of the few idioms that translates directly. Other accuracy idioms: 'Ins Schwarze treffen' (to hit the bullseye — lit. 'hit the black'), 'Den Punkt treffen' (to hit the point), 'Volltreffer!' (Direct hit! / Bullseye!). When someone says exactly the right thing, 'Du hast den Nagel auf den Kopf getroffen!' is the perfect response."
+      },
+      {
+        "id": "eg_id6",
+        "question": "Er hat mich auf den _____ genommen.",
+        "translation": "(He pulled my leg / teased me)",
+        "options": [
+          "Arm",
+          "Bein",
+          "Fuß",
+          "Rücken"
+        ],
+        "correct": "Arm",
+        "explanation": "'Jemanden auf den Arm nehmen' (to take someone on the arm) means to pull someone's leg or tease them playfully. English uses 'leg,' German uses 'Arm' (arm) — don't mix them up! 'Nehmen' (to take) → 'hat genommen' (past participle). The imagery is of lifting someone like a child — patronizing in a humorous way. Compare teasing expressions: 'Auf den Arm nehmen' (to tease playfully), 'Veräppeln' (to fool/trick — from 'Äpfel' = apples), 'Verarschen' (crude: to make a fool of), 'Auf die Schippe nehmen' (to tease — lit. 'take on the shovel'). False friend alert: 'Arm' as adjective means 'poor,' as noun means 'arm.'"
+      },
+      {
+        "id": "eg_id7",
+        "question": "Das geht mir auf den _____!",
+        "translation": "(That gets on my nerves! Literally: That goes on my cookie/biscuit)",
+        "options": [
+          "Keks",
+          "Wecker",
+          "Nerv",
+          "Geist"
+        ],
+        "correct": "Keks",
+        "explanation": "'Das geht mir auf den Keks' (that gets on my cookie/biscuit) is a humorous German way to say something is annoying. 'Keks' (cookie/biscuit, from English 'cakes') represents your head/brain metaphorically. Variations: 'Das geht mir auf den Wecker' (... on the alarm clock), 'Das geht mir auf den Senkel' (... on the shoelace), 'Das geht mir auf die Nerven' (... on the nerves — most standard). The dative 'mir' (to me) plus 'auf den' (onto the — accusative with motion) is the fixed structure. Using 'Keks' instead of 'Nerven' adds humor and is more casual. All these are safe to use in informal contexts — 'auf die Nerven gehen' works everywhere."
+      },
+      {
+        "id": "eg_id8",
+        "question": "Sie hat _____ Tomaten auf den Augen.",
+        "translation": "(She can't see what's obvious. Lit: She has tomatoes on her eyes)",
+        "options": [
+          "Tomaten",
+          "Kartoffeln",
+          "Zwiebeln",
+          "Gurken"
+        ],
+        "correct": "Tomaten",
+        "explanation": "'Tomaten auf den Augen haben' (to have tomatoes on one's eyes) means to be oblivious or fail to see what's obvious — like having tomatoes blocking your vision! This is purely German with no English equivalent. The plural 'Augen' (eyes) with dative 'auf den Augen' (on the eyes). This expression is casual and humorous — used when someone misses something obvious. Related 'blindness' idioms: 'Blind wie ein Maulwurf' (blind as a mole), 'Brett vor dem Kopf haben' (to have a board in front of your head = to be dense), 'Den Wald vor lauter Bäumen nicht sehen' (can't see the forest for the trees — this one exists in English too!)."
+      },
+      {
+        "id": "eg_id9",
+        "question": "Ich drücke dir die _____!",
+        "translation": "(I'll keep my fingers crossed for you!)",
+        "options": [
+          "Daumen",
+          "Finger",
+          "Hände",
+          "Fäuste"
+        ],
+        "correct": "Daumen",
+        "explanation": "'Die Daumen drücken' (to press the thumbs) is the German equivalent of 'crossing fingers' for good luck. Germans press THUMBS (Daumen), not cross fingers! The dative 'dir' (for you) indicates who you're wishing luck for. 'Drücken' (to press/push) → 'Ich drücke dir die Daumen' (I'm pressing my thumbs for you). This is extremely common in everyday German. Related luck expressions: 'Hals- und Beinbruch!' (Break a neck and leg! — like English 'break a leg'), 'Toi, toi, toi!' (knock on wood — said three times), 'Viel Glück!' (Good luck!). The physical gesture of pressing thumbs inside fists is the actual German good-luck gesture."
+      },
+      {
+        "id": "eg_id10",
+        "question": "Das ist nicht mein _____.",
+        "translation": "(That's not my cup of tea / not my thing)",
+        "options": [
+          "Bier",
+          "Wein",
+          "Tee",
+          "Kaffee"
+        ],
+        "correct": "Bier",
+        "explanation": "'Das ist nicht mein Bier' (That's not my beer) means 'That's not my problem/business/cup of tea.' While English uses 'cup of tea,' German uses 'Bier' (beer) — reflecting cultural beverage preferences! The negation 'nicht' comes before 'mein' to negate possession. This can mean either 'not my concern' or 'not something I enjoy.' Similar expressions: 'Das geht mich nichts an' (That's none of my business), 'Das ist nicht meine Baustelle' (That's not my construction site — i.e., not my responsibility), 'Nicht mein Ding' (not my thing — more modern, borrowed from English). Cultural note: Beer is deeply embedded in German language and culture."
+      },
+      {
+        "id": "eg_id11",
+        "question": "Er hat ins _____ gegriffen.",
+        "translation": "(He got it completely wrong / made a blunder. Lit: He reached into the toilet)",
+        "options": [
+          "Klo",
+          "Wasser",
+          "Feuer",
+          "Leere"
+        ],
+        "correct": "Klo",
+        "explanation": "'Ins Klo greifen' (to reach into the toilet) means to make a big mistake or blunder — a very vivid and crude image! 'Klo' is colloquial for 'Klosett' (toilet, from English 'closet'). 'Greifen' (to reach/grab) → 'hat gegriffen' (past participle). This is informal and somewhat vulgar — don't use in polite company. More polite alternatives: 'Daneben greifen' (to reach beside the mark), 'Einen Fehler machen' (to make a mistake), 'Sich vertun' (to make an error). Stronger failure idioms: 'Auf die Nase fallen' (to fall on your nose), 'Baden gehen' (to go swimming = to fail spectacularly). German has many creative metaphors for failure."
+      },
+      {
+        "id": "eg_id12",
+        "question": "Jetzt mal _____ bei die Fische!",
+        "translation": "(Let's get down to business! Lit: Now butter to the fish!)",
+        "options": [
+          "Butter",
+          "Soße",
+          "Öl",
+          "Salz"
+        ],
+        "correct": "Butter",
+        "explanation": "'Butter bei die Fische!' (Butter to the fish!) means 'Let's get down to business / stop beating around the bush' — a North German expression. 'Bei die Fische' uses non-standard grammar (should be 'bei den Fischen' — dative plural) but it's a fixed expression kept in dialect form. The idiom likely comes from serving butter only when the fish was actually ready — meaning get to the real substance. This is wonderfully German — pragmatic and food-related. Similar expressions: 'Zur Sache kommen' (to get to the point), 'Nägel mit Köpfen machen' (to make nails with heads = to do something properly), 'Tacheles reden' (to talk straight — from Yiddish)."
+      },
+      {
+        "id": "eg_id13",
+        "question": "Da steppt der _____!",
+        "translation": "(That's where the party's at! Lit: There the bear dances!)",
+        "options": [
+          "Bär",
+          "Hund",
+          "Affe",
+          "Elefant"
+        ],
+        "correct": "Bär",
+        "explanation": "'Da steppt der Bär!' (There the bear tap-dances!) means 'That's where the action/party is!' — describing an exciting event or lively atmosphere. 'Steppen' (to tap-dance, from English 'step') + 'Bär' (bear) creates a wonderfully absurd image. This is purely colloquial and enthusiastic. The expression likely originates from medieval fairs where performing bears entertained crowds. Related party expressions: 'Da ist die Hölle los' (all hell breaks loose there), 'Da ist was los' (something's going on there), 'Da geht die Post ab' (the mail's going off there = it's wild). All express exciting atmospheres with different intensity levels."
+      },
+      {
+        "id": "eg_id14",
+        "question": "Er macht aus einer Mücke einen _____.",
+        "translation": "(He makes a mountain out of a molehill. Lit: Makes an elephant out of a mosquito)",
+        "options": [
+          "Elefanten",
+          "Berg",
+          "Riesen",
+          "Dinosaurier"
+        ],
+        "correct": "Elefanten",
+        "explanation": "'Aus einer Mücke einen Elefanten machen' (to make an elephant out of a mosquito) means to exaggerate problems massively. While English goes from molehill → mountain (landscape), German goes from Mücke (mosquito) → Elefant (elephant) — animals! The accusative 'einen Elefanten' uses the weak noun declension — 'Elefant' adds -en in all cases except nominative singular. This idiom is centuries old and universally understood. Related exaggeration expressions: 'Übertreiben' (to exaggerate), 'Ein Drama daraus machen' (to make a drama out of it), 'Die Kirche im Dorf lassen' (to leave the church in the village = don't overreact). That last one is uniquely German and wonderfully practical."
+      },
+      {
+        "id": "eg_id15",
+        "question": "Ich bin _____.",
+        "translation": "(I am stunned/speechless. Lit: I am ironed flat)",
+        "options": [
+          "platt",
+          "glatt",
+          "flach",
+          "breit"
+        ],
+        "correct": "platt",
+        "explanation": "'Ich bin platt!' (I am flat/ironed!) means 'I'm stunned/amazed/speechless' — as if something has flattened you with surprise. 'Platt' literally means 'flat' but idiomatically expresses astonishment. Don't confuse with 'Plattdeutsch' (Low German dialect). Similar surprise expressions: 'Ich bin baff!' (I'm flabbergasted!), 'Da bin ich sprachlos' (I'm speechless), 'Das haut mich um!' (That knocks me over!), 'Ich falle aus allen Wolken!' (I'm falling out of all clouds! = I'm completely shocked). The richness of German surprise expressions shows how much the language values expressiveness. 'Platt' is perfectly casual — use it freely with friends."
+      }
+    ]
+  },
+  {
+    "key": "proverbs_sayings",
+    "name": "Proverbs & Sayings",
+    "description": "Sprichwörter und Redewendungen",
+    "iconName": "book",
+    "color": "#14b8a6",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "eg_ps1",
+        "question": "Übung macht den _____.",
+        "translation": "(Practice makes perfect. Lit: Practice makes the master)",
+        "options": [
+          "Meister",
+          "Profi",
+          "Lehrer",
+          "Experten"
+        ],
+        "correct": "Meister",
+        "explanation": "'Übung macht den Meister' (Practice makes the master) is the German equivalent of 'Practice makes perfect.' Where English aims for abstract 'perfection,' German aims for 'Meister' (master/craftsman) — reflecting Germany's strong apprenticeship tradition (Meisterlehre). 'Übung' (practice/exercise) is the subject, 'macht' (makes) is the verb, 'den Meister' (the master — accusative) is the object. This proverb is used constantly — when encouraging someone to keep practicing or acknowledging improvement. Related: 'Es ist noch kein Meister vom Himmel gefallen' (No master has ever fallen from the sky = nobody's born an expert)."
+      },
+      {
+        "id": "eg_ps2",
+        "question": "Morgenstund hat _____ im Mund.",
+        "translation": "(The early bird catches the worm. Lit: Morning hour has gold in its mouth)",
+        "options": [
+          "Gold",
+          "Silber",
+          "Glück",
+          "Brot"
+        ],
+        "correct": "Gold",
+        "explanation": "'Morgenstund hat Gold im Mund' (Morning hour has gold in its mouth) means early rising brings wealth and success. The archaic 'Morgenstund' (morning hour — modern: Morgenstunde) adds poetic charm. While English has an 'early bird' catching a 'worm,' German finds 'Gold' (gold) in the 'Mund' (mouth) of morning. The rhyme Mund/Stund makes it memorable. This proverb promotes the German value of punctuality and industriousness. Counter-proverb (for night owls): There's no widely-known German equivalent of 'the night owl catches the mouse,' but you might hear 'Abendstund hat auch was Gutes' (evening hours are good too) as a humorous response."
+      },
+      {
+        "id": "eg_ps3",
+        "question": "Wer zuletzt lacht, lacht am _____.",
+        "translation": "(He who laughs last, laughs best)",
+        "options": [
+          "besten",
+          "lautesten",
+          "längsten",
+          "schönsten"
+        ],
+        "correct": "besten",
+        "explanation": "'Wer zuletzt lacht, lacht am besten' (Who laughs last, laughs best) is nearly identical to the English proverb. 'Zuletzt' (at last/finally) and 'am besten' (the best — superlative with 'am'). The 'wer... der...' construction (whoever... that person...) is common in German proverbs — though 'der' is often dropped in modern usage. The superlative 'am besten' uses the 'am + -sten' pattern for adverbial superlatives. This proverb teaches patience and resilience. Related: 'Rache ist süß' (Revenge is sweet), 'Gut Ding will Weile haben' (Good things take time — literally: good thing wants duration to have). German proverbs often rhyme or have rhythmic structure."
+      },
+      {
+        "id": "eg_ps4",
+        "question": "Aller _____ ist schwer.",
+        "translation": "(All beginnings are hard / The first step is the hardest)",
+        "options": [
+          "Anfang",
+          "Beginn",
+          "Start",
+          "Eingang"
+        ],
+        "correct": "Anfang",
+        "explanation": "'Aller Anfang ist schwer' (All beginning is hard) comforts those struggling with something new. 'Aller' is genitive plural — literally 'of all beginning(s).' The singular 'Anfang' is used collectively. 'Schwer' (hard/heavy/difficult) has both physical and abstract meanings. This proverb is one of the most-used in German — teachers say it to students, trainers to new employees, parents to children. It normalizes difficulty at the start. Related encouragement: 'Jeder fängt mal klein an' (Everyone starts small), 'Rom wurde nicht an einem Tag erbaut' (Rome wasn't built in a day — borrowed from Latin/French). German culture values perseverance (Durchhaltevermögen)."
+      },
+      {
+        "id": "eg_ps5",
+        "question": "Der Apfel fällt nicht weit vom _____.",
+        "translation": "(The apple doesn't fall far from the tree)",
+        "options": [
+          "Stamm",
+          "Baum",
+          "Ast",
+          "Blatt"
+        ],
+        "correct": "Stamm",
+        "explanation": "'Der Apfel fällt nicht weit vom Stamm' — in German, the apple falls not far from the TRUNK (Stamm), not the tree (Baum) as in English! 'Stamm' means trunk/stem but also 'family line/tribe' — creating a double meaning about family resemblance. 'Fallen' (to fall) → 'fällt' (3rd person, stem change a→ä). 'Weit' (far) + 'vom' (from the — contraction of 'von dem'). This proverb comments on children resembling their parents — in behavior, looks, or character. It can be positive or negative depending on context. Related: 'Wie der Vater, so der Sohn' (Like father, like son), 'Das liegt in der Familie' (It runs in the family)."
+      },
+      {
+        "id": "eg_ps6",
+        "question": "Wer anderen eine Grube _____, fällt selbst hinein.",
+        "translation": "(Who digs a pit for others falls in himself)",
+        "options": [
+          "gräbt",
+          "grabt",
+          "graben",
+          "grub"
+        ],
+        "correct": "gräbt",
+        "explanation": "'Wer anderen eine Grube gräbt, fällt selbst hinein' (Who digs a pit for others, falls in himself) warns against plotting against others. 'Graben' (to dig) → 'gräbt' (stem change a→ä in 3rd person). 'Grube' (pit/hole) — related to 'graben' by the same root. 'Selbst' (oneself) emphasizes the ironic self-punishment. 'Hinein' (into it) combines 'hin' (direction away) + 'ein' (in). This biblical proverb (Proverbs 26:27) exists in many languages. The German version preserves perfect poetic balance — the digger becomes the victim. Similar moral proverbs: 'Wer Wind sät, wird Sturm ernten' (Who sows wind will harvest storms), 'Was du nicht willst, dass man dir tu, das füg auch keinem andern zu' (Do unto others...)."
+      },
+      {
+        "id": "eg_ps7",
+        "question": "Lügen haben kurze _____.",
+        "translation": "(Lies have short legs / Lies don't travel far)",
+        "options": [
+          "Beine",
+          "Füße",
+          "Arme",
+          "Wege"
+        ],
+        "correct": "Beine",
+        "explanation": "'Lügen haben kurze Beine' (Lies have short legs) means lies are quickly exposed — they can't run far on short legs! This is uniquely German — English says 'lies don't hold up' or 'the truth will come out,' but German gives lies physical short legs. 'Beine' (legs) is the plural of 'Bein.' The imagery is wonderfully concrete: a lie tries to run away but stumbles because its legs are too short. Used as a warning against dishonesty, especially with children. Related honesty proverbs: 'Ehrlich währt am längsten' (Honesty lasts the longest), 'Die Wahrheit kommt immer ans Licht' (The truth always comes to light). German proverbs often personify abstract concepts."
+      },
+      {
+        "id": "eg_ps8",
+        "question": "Wenn zwei sich streiten, freut sich der _____.",
+        "translation": "(When two quarrel, the third rejoices)",
+        "options": [
+          "Dritte",
+          "Andere",
+          "Nächste",
+          "Letzte"
+        ],
+        "correct": "Dritte",
+        "explanation": "'Wenn zwei sich streiten, freut sich der Dritte' (When two argue, the third is happy) warns that conflict benefits bystanders. 'Sich streiten' (to quarrel — reflexive) uses 'zwei' (two) as a noun. 'Der Dritte' (the third one) is a nominalized ordinal number — capitalized because it functions as a noun. 'Sich freuen' (to be happy — reflexive). This proverb applies to business competition, politics, and personal conflicts. Historical example: When two European powers fought, a third often gained territory. Related: 'Divide et impera' (Divide and conquer — Latin, also used in German). The proverb encourages finding common ground rather than fighting."
+      },
+      {
+        "id": "eg_ps9",
+        "question": "Stille _____ sind tief.",
+        "translation": "(Still waters run deep)",
+        "options": [
+          "Wasser",
+          "Gewässer",
+          "Flüsse",
+          "Seen"
+        ],
+        "correct": "Wasser",
+        "explanation": "'Stille Wasser sind tief' (Still waters are deep) describes quiet people who have hidden depth — identical to the English proverb! 'Stille' (still/quiet) is an adjective modifying 'Wasser' (water — used as plural here, a special usage). 'Tief' (deep) as a predicate adjective needs no declension. The proverb advises not to underestimate quiet people — their silence may hide intelligence, complexity, or even danger. Used both positively (admiring someone's quiet depth) and as a warning (be careful of the quiet ones). Related: 'Reden ist Silber, Schweigen ist Gold' (Speech is silver, silence is gold), 'Wer schweigt, stimmt zu' (Who is silent, agrees — a counterpoint)."
+      },
+      {
+        "id": "eg_ps10",
+        "question": "Andere Länder, andere _____.",
+        "translation": "(Different countries, different customs / When in Rome...)",
+        "options": [
+          "Sitten",
+          "Gesetze",
+          "Leute",
+          "Sprachen"
+        ],
+        "correct": "Sitten",
+        "explanation": "'Andere Länder, andere Sitten' (Other countries, other customs) acknowledges cultural differences — the German version of 'When in Rome, do as the Romans do.' 'Sitten' (customs/morals — plural of 'Sitte') covers social norms, traditions, and acceptable behavior. The parallel structure (andere... andere...) makes it rhythmic and memorable. This proverb promotes cultural tolerance — don't judge foreign customs by your own standards. It's particularly relevant in multicultural Germany. Related: 'Jeder Jeck ist anders' (Everyone is different — Cologne Carnival motto, 'Jeck' = fool/eccentric in Kölsch dialect). German has strong traditions of regional cultural diversity within the country itself."
+      },
+      {
+        "id": "eg_ps11",
+        "question": "Wer A sagt, muss auch _____ sagen.",
+        "translation": "(If you say A, you must also say B / Finish what you started)",
+        "options": [
+          "B",
+          "Z",
+          "C",
+          "Ja"
+        ],
+        "correct": "B",
+        "explanation": "'Wer A sagt, muss auch B sagen' (Who says A must also say B) means once you've started something, you must follow through. The alphabetical simplicity A→B makes the message crystal clear: commitment requires completion. 'Muss' (must) using 'müssen' signals obligation, not choice. This is a quintessentially German proverb reflecting the cultural value of reliability (Zuverlässigkeit) and consistency. It's used when someone wants to quit midway or avoid consequences of their initial decision. Related: 'Was man anfängt, soll man auch zu Ende bringen' (What you start, you should finish), 'In for a penny, in for a pound' (closest English equivalent). German business culture places enormous value on following through."
+      },
+      {
+        "id": "eg_ps12",
+        "question": "Kleider _____ Leute.",
+        "translation": "(Clothes make the man / You are what you wear)",
+        "options": [
+          "machen",
+          "sind",
+          "zeigen",
+          "verändern"
+        ],
+        "correct": "machen",
+        "explanation": "'Kleider machen Leute' (Clothes make people) means appearance influences how you're perceived. 'Kleider' (clothes — formal/literary plural) + 'machen' (make) + 'Leute' (people). This is also the title of a famous novella by Gottfried Keller (1874) about a tailor mistaken for a nobleman because of his fine clothes. The story is required reading in German schools. The proverb cuts both ways — it acknowledges the reality of judging by appearance while implicitly criticizing it. Related: 'Der erste Eindruck zählt' (First impressions count), 'Man soll ein Buch nicht nach seinem Einband beurteilen' (Don't judge a book by its cover — the counterargument!)."
+      },
+      {
+        "id": "eg_ps13",
+        "question": "Was Hänschen nicht lernt, lernt _____ nimmermehr.",
+        "translation": "(What little Hans doesn't learn, Hans never will / You can't teach an old dog new tricks)",
+        "options": [
+          "Hans",
+          "Hanschen",
+          "der Hans",
+          "Hänschen"
+        ],
+        "correct": "Hans",
+        "explanation": "'Was Hänschen nicht lernt, lernt Hans nimmermehr' — 'Hänschen' is the diminutive of 'Hans' (little Hans = a child), while 'Hans' represents the adult. The proverb says what you don't learn young, you'll never learn later. 'Nimmermehr' (nevermore — archaic/poetic) adds finality. The diminutive suffix '-chen' is one of German's most productive features — it makes any noun neuter: der Hans → das Hänschen. This proverb motivates childhood learning but modern science partly contradicts it — neuroplasticity research shows adults CAN learn new things! Still widely quoted by parents and teachers. Counter-proverb: 'Man lernt nie aus' (You never stop learning)."
+      },
+      {
+        "id": "eg_ps14",
+        "question": "Reden ist Silber, _____ ist Gold.",
+        "translation": "(Speech is silver, silence is gold)",
+        "options": [
+          "Schweigen",
+          "Stille",
+          "Ruhe",
+          "Nichts"
+        ],
+        "correct": "Schweigen",
+        "explanation": "'Reden ist Silber, Schweigen ist Gold' (Speech is silver, silence is gold) values knowing when NOT to speak. 'Schweigen' (silence/remaining silent) is a nominalized verb — treated as a neuter noun (das Schweigen). 'Reden' (speaking) is similarly nominalized. The metal hierarchy Silber → Gold shows that while speaking has value, silence is more precious. This proverb reflects a Germanic communication style that values thoughtful silence over empty chatter. Use it when someone is talking too much or saying things they shouldn't. Related: 'Stille Wasser sind tief' (Still waters run deep), 'Erst denken, dann reden' (Think first, then speak). Not all cultures share this view — Mediterranean cultures often prefer expressiveness."
+      },
+      {
+        "id": "eg_ps15",
+        "question": "Ende _____, alles gut.",
+        "translation": "(All's well that ends well)",
+        "options": [
+          "gut",
+          "schlecht",
+          "endlich",
+          "dann"
+        ],
+        "correct": "gut",
+        "explanation": "'Ende gut, alles gut' (End good, all good) is the German version of 'All's well that ends well' — also a Shakespeare play title! The compressed structure drops the verb 'ist' (is) entirely: 'Ende [ist] gut, alles [ist] gut.' This telegraphic style is typical of proverbs — they're meant to be short and punchy. 'Ende' (end) and 'alles' (everything) are both neuter nouns. The proverb consoles after hardship — if the result is positive, the difficulties along the way don't matter. Use it after a stressful project succeeds or a difficult journey ends safely. Related: 'Es hat alles ein Ende, nur die Wurst hat zwei' (Everything has one end, only the sausage has two — a humorous German twist!)."
+      }
+    ]
   }
 ]
