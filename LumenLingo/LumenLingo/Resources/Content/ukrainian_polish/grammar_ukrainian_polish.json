@@ -17747,5 +17747,1015 @@
         "explanation": "'Większy od' (більший від) + родовий: 'tamten' → 'tamtego'. 'Większy' — порівняльний від 'wielki/duży' (великий). 'Dom' (будинок) — чол. рід → 'większy'. В укр. 'більший за' + знахідний (інший прийменник і відмінок). 'Wielki' = 'великий' — спільний корінь."
       }
     ]
+  },
+  {
+    "key": "media_communication",
+    "name": "Медіа та комунікація",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "up_medi1",
+        "question": "Czytam _____ codziennie rano.",
+        "translation": "(Читаю газету щоранку.)",
+        "options": [
+          "gazetę",
+          "gazeta",
+          "gazety",
+          "gazetą"
+        ],
+        "correct": "gazetę",
+        "explanation": "'Czytać gazetę' (читати газету) — знахідний: 'gazeta' → 'gazetę'. 'Codziennie rano' (щоранку, кожного ранку) — 'codziennie' (щоденно) + 'rano' (вранці). В укр. 'читаю газету' — ідентична конструкція. 'Gazeta' — запозичення з італ. 'gazzetta' (монета за газету у Венеції)."
+      },
+      {
+        "id": "up_medi2",
+        "question": "Najnowsze wiadomości _____ w telewizji o 19:00.",
+        "translation": "(Останні новини показують по телебаченню о 19:00.)",
+        "options": [
+          "nadają",
+          "nadaje",
+          "nadawać",
+          "nadano"
+        ],
+        "correct": "nadają",
+        "explanation": "'Nadawać' (передавати, транслювати) — 'nadają' (3 ос. множини, безос.). 'Wiadomości' (новини) — множина від 'wiadomość'. 'W telewizji' (по телебаченню) — місцевий. 'O dziewiętnastej' — години. В укр. 'передають новини' — ідентична безособова множина."
+      },
+      {
+        "id": "up_medi3",
+        "question": "Ten artykuł został _____ przez znanego dziennikarza.",
+        "translation": "(Цю статтю написав відомий журналіст.)",
+        "options": [
+          "napisany",
+          "napisana",
+          "napisane",
+          "napisani"
+        ],
+        "correct": "napisany",
+        "explanation": "'Napisany' — чол. рід, бо 'artykuł' (стаття) — чоловічого роду в польській (в укр. 'стаття' — жін.!). 'Został napisany' (був написаний) — пасивна конструкція. 'Przez' + знахідний: 'znanego dziennikarza'. Важливо: 'artykuł' (чол.) vs. 'стаття' (жін.) — різний рід!"
+      },
+      {
+        "id": "up_medi4",
+        "question": "Słucham _____ w samochodzie.",
+        "translation": "(Слухаю радіо в автомобілі.)",
+        "options": [
+          "radia",
+          "radio",
+          "radiu",
+          "radiem"
+        ],
+        "correct": "radia",
+        "explanation": "'Słuchać' + родовий: 'radio' → 'radia'. 'W samochodzie' (в автомобілі) — місцевий: 'samochód' → 'samochodzie'. 'Radio' (радіо) — невідмінюване в укр., але відмінюване в польськ.: 'radio, radia, radiu'. 'Słuchać' (слухати) — потребує родового, а укр. 'слухати' — знахідного."
+      },
+      {
+        "id": "up_medi5",
+        "question": "Dziennikarka _____ wywiad z prezydentem.",
+        "translation": "(Журналістка взяла інтерв'ю у президента.)",
+        "options": [
+          "przeprowadziła",
+          "przeprowadził",
+          "przeprowadzili",
+          "przeprowadzono"
+        ],
+        "correct": "przeprowadziła",
+        "explanation": "'Przeprowadziła' — жін. рід мин. часу, бо 'dziennikarka' (журналістка) — жіночого роду. 'Przeprowadzić wywiad' (провести інтерв'ю) — стала конструкція. 'Z prezydentem' (з президентом) — орудний. В укр. 'взяти інтерв'ю' — інше дієслово ('взяти' vs. 'przeprowadzić' — провести)."
+      },
+      {
+        "id": "up_medi6",
+        "question": "Oglądam filmy na _____ streamingowej.",
+        "translation": "(Дивлюся фільми на стрімінговій платформі.)",
+        "options": [
+          "platformie",
+          "platforma",
+          "platformy",
+          "platformą"
+        ],
+        "correct": "platformie",
+        "explanation": "'Na platformie' (на платформі) — місцевий: 'platforma' → 'platformie'. 'Streamingowa' (стрімінгова) — прикметник від англ. 'streaming'. 'Oglądam' (дивлюся, 1 ос. одн.) від 'oglądać'. В укр. 'на платформі' — ідентична конструкція. 'Filmy' — знахідний множини."
+      },
+      {
+        "id": "up_medi7",
+        "question": "Podcasty stały się bardzo _____ w ostatnich latach.",
+        "translation": "(Подкасти стали дуже популярними за останні роки.)",
+        "options": [
+          "popularne",
+          "popularny",
+          "popularna",
+          "popularni"
+        ],
+        "correct": "popularne",
+        "explanation": "'Popularne' — множина невіроособова, бо 'podcasty' — невіроособова множина. 'Stały się' (стали) — зворотне дієслово. 'W ostatnich latach' (за останні роки) — місцевий множини: 'ostatnie lata' → 'ostatnich latach'. В укр. 'популярними' — орудний, а тут — називний."
+      },
+      {
+        "id": "up_medi8",
+        "question": "Dostałem _____ od klienta przez e-mail.",
+        "translation": "(Отримав повідомлення від клієнта електронною поштою.)",
+        "options": [
+          "wiadomość",
+          "wiadomości",
+          "wiadomością",
+          "wiadomościa"
+        ],
+        "correct": "wiadomość",
+        "explanation": "'Dostać wiadomość' (отримати повідомлення) — знахідний: 'wiadomość' (= називний для жін. роду на -ść). 'Od klienta' (від клієнта) — родовий: 'klient' → 'klienta'. 'Przez e-mail' (електронною поштою) — знахідний. В укр. 'отримати повідомлення' — також знахідний."
+      },
+      {
+        "id": "up_medi9",
+        "question": "Reporterka _____ na żywo z miejsca zdarzenia.",
+        "translation": "(Репортерка вела пряму трансляцію з місця події.)",
+        "options": [
+          "relacjonowała",
+          "relacjonował",
+          "relacjonowali",
+          "relacjonowano"
+        ],
+        "correct": "relacjonowała",
+        "explanation": "'Relacjonowała' — жін. рід мин. часу, бо 'reporterka' — жін. роду. 'Na żywo' (наживо, в прямому ефірі) — стійкий зворот. 'Z miejsca zdarzenia' (з місця події) — родовий: 'miejsce zdarzenia' → 'miejsca zdarzenia'. 'Relacjonować' (передавати репортаж) від 'relacja' (репортаж)."
+      },
+      {
+        "id": "up_medi10",
+        "question": "Reklama _____ produktu w telewizji.",
+        "translation": "(Реклама нового продукту по телебаченню.)",
+        "options": [
+          "nowego",
+          "nowy",
+          "nowa",
+          "nowym"
+        ],
+        "correct": "nowego",
+        "explanation": "'Reklama nowego produktu' (реклама нового продукту) — родовий: 'nowy produkt' → 'nowego produktu'. Зв'язок іменників через родовий — як укр. 'реклама нового продукту'. 'W telewizji' (по телебаченню) — місцевий. 'Reklama' — від лат. 'reclamare'. Ідентична конструкція в обох мовах."
+      },
+      {
+        "id": "up_medi11",
+        "question": "Komentuję posty _____ w mediach społecznościowych.",
+        "translation": "(Коментую дописи друзів у соціальних мережах.)",
+        "options": [
+          "znajomych",
+          "znajomi",
+          "znajomym",
+          "znajomymi"
+        ],
+        "correct": "znajomych",
+        "explanation": "'Posty znajomych' (дописи друзів) — родовий множини віроособовий: 'znajomi' → 'znajomych'. 'W mediach społecznościowych' (у соціальних мережах) — місцевий множини. 'Komentuję' (коментую, 1 ос. одн.). В укр. 'дописи друзів' — також родовий множини. 'Media' від лат. 'medium'."
+      },
+      {
+        "id": "up_medi12",
+        "question": "Prenumeruję _____ tygodniki i miesięczniki.",
+        "translation": "(Передплачую кілька тижневиків та місячників.)",
+        "options": [
+          "kilka",
+          "kilku",
+          "kilkoma",
+          "kilki"
+        ],
+        "correct": "kilka",
+        "explanation": "'Kilka' (кілька) + родовий множини: 'tygodniki' → 'tygodników' (потрібен родовий, але 'kilka' виступає як знахідний з називним кількісного). 'Prenumerować' (передплачувати) — від лат. 'praenumerare'. 'Tygodnik' (тижневик) від 'tydzień'. 'Miesięcznik' (місячник) від 'miesiąc'."
+      },
+      {
+        "id": "up_medi13",
+        "question": "Fake newsy to duże _____ dla społeczeństwa.",
+        "translation": "(Фейкові новини — велика загроза для суспільства.)",
+        "options": [
+          "zagrożenie",
+          "zagrożenia",
+          "zagrożeniem",
+          "zagrożeniu"
+        ],
+        "correct": "zagrożenie",
+        "explanation": "'To zagrożenie' (це загроза) — називний: 'zagrożenie' (загроза, небезпека). 'Dla społeczeństwa' (для суспільства) — родовий: 'społeczeństwo' → 'społeczeństwa'. 'Duże' — сер. рід. В укр. 'загроза' — жін. рід, а польськ. 'zagrożenie' — сер. рід. Різний рід при спільному корені 'гроз-/groż-'."
+      },
+      {
+        "id": "up_medi14",
+        "question": "Wysłałem _____ do redakcji gazety.",
+        "translation": "(Надіслав листа до редакції газети.)",
+        "options": [
+          "list",
+          "listu",
+          "listem",
+          "liście"
+        ],
+        "correct": "list",
+        "explanation": "'Wysłać list' (надіслати листа) — знахідний: 'list' (= називний для неживого чол.). 'Do redakcji' (до редакції) — родовий: 'redakcja' → 'redakcji'. 'Gazety' — родовий від 'gazeta'. В укр. 'надіслати листа' — знахідний із закінченням '-а' (живий!), а в польськ. 'list' — неживий."
+      },
+      {
+        "id": "up_medi15",
+        "question": "Influencerka _____ nowy film na kanale.",
+        "translation": "(Інфлюенсерка опублікувала нове відео на каналі.)",
+        "options": [
+          "opublikowała",
+          "opublikował",
+          "opublikowali",
+          "opublikowano"
+        ],
+        "correct": "opublikowała",
+        "explanation": "'Opublikowała' — жін. рід мин. часу, бо 'influencerka' — жін. роду. 'Nowy film' (нове відео) — знахідний; в польськ. 'film' для відео. 'Na kanale' (на каналі) — місцевий: 'kanał' → 'kanale'. В укр. 'опублікувала відео' — також жін. рід. 'Film' (фільм/відео) — ширше значення."
+      }
+    ]
+  },
+  {
+    "key": "environment_nature",
+    "name": "Довкілля та природа",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "up_envr1",
+        "question": "Lasy _____ coraz bardziej zagrożone.",
+        "translation": "(Ліси дедалі більше під загрозою.)",
+        "options": [
+          "są",
+          "jest",
+          "być",
+          "było"
+        ],
+        "correct": "są",
+        "explanation": "'Są' (є) — 3 ос. множини, бо 'lasy' (ліси) — множина від 'las' (ліс). 'Coraz bardziej' (дедалі більше) — ступінь зростання. 'Zagrożone' (під загрозою) — множина невіроособова від 'zagrożony'. В укр. 'ліси під загрозою' — ідентичне. 'Las/ліс' — спільнослов'янське."
+      },
+      {
+        "id": "up_envr2",
+        "question": "Powinniśmy _____ śmieci do odpowiednich pojemników.",
+        "translation": "(Повинні сортувати сміття до відповідних контейнерів.)",
+        "options": [
+          "segregować",
+          "segreguje",
+          "segregacja",
+          "segregowany"
+        ],
+        "correct": "segregować",
+        "explanation": "'Powinniśmy segregować' (повинні сортувати) — модальне + інфінітив. 'Śmieci' (сміття) — множина від 'śmieć'. 'Do odpowiednich pojemników' — родовий множини: 'odpowiedni pojemnik' → 'odpowiednich pojemników'. В укр. 'сортувати' — інше слово, бо 'segregować' = від лат. 'segregare'."
+      },
+      {
+        "id": "up_envr3",
+        "question": "Zanieczyszczenie powietrza _____ poważnym problemem.",
+        "translation": "(Забруднення повітря є серйозною проблемою.)",
+        "options": [
+          "jest",
+          "są",
+          "było",
+          "będzie"
+        ],
+        "correct": "jest",
+        "explanation": "'Jest' (є) — 3 ос. одн., бо 'zanieczyszczenie' (забруднення) — одн. число сер. рід. 'Poważnym problemem' (серйозною проблемою) — орудний: 'poważny problem' → 'poważnym problemem'. 'Powietrze' (повітря) → 'powietrza' (родовий). Спільний корінь 'повітр-/powietrz-'."
+      },
+      {
+        "id": "up_envr4",
+        "question": "Energia _____ jest przyszłością energetyki.",
+        "translation": "(Сонячна енергія — майбутнє енергетики.)",
+        "options": [
+          "słoneczna",
+          "słoneczny",
+          "słoneczne",
+          "słonecznej"
+        ],
+        "correct": "słoneczna",
+        "explanation": "'Energia słoneczna' (сонячна енергія) — жін. рід: 'energia' → 'słoneczna'. 'Przyszłością energetyki' (майбутнім енергетики) — орудний: 'przyszłość' → 'przyszłością'. 'Energetyka' → 'energetyki' (родовий). В укр. 'сонячна' — від 'сонце/słońce'. Спільний корінь."
+      },
+      {
+        "id": "up_envr5",
+        "question": "Rzeka _____ przez całe miasto.",
+        "translation": "(Ріка протікає через усе місто.)",
+        "options": [
+          "płynie",
+          "płynąć",
+          "płynęła",
+          "płyną"
+        ],
+        "correct": "płynie",
+        "explanation": "'Płynąć' (плисти, текти) — 'płynie' (3 ос. одн. теперішній). 'Przez całe miasto' (через усе місто) — знахідний: 'całe miasto'. 'Rzeka' (ріка) — жін. рід. В укр. 'ріка протікає через' — інше дієслово ('протікати' vs. 'płynąć' = пливти). 'Rzeka/ріка' — спільне."
+      },
+      {
+        "id": "up_envr6",
+        "question": "Ochrona _____ jest obowiązkiem każdego.",
+        "translation": "(Охорона довкілля — обов'язок кожного.)",
+        "options": [
+          "środowiska",
+          "środowisko",
+          "środowisku",
+          "środowiskiem"
+        ],
+        "correct": "środowiska",
+        "explanation": "'Ochrona środowiska' (охорона довкілля) — родовий: 'środowisko' → 'środowiska'. 'Obowiązkiem każdego' (обов'язком кожного) — орудний: 'obowiązek' → 'obowiązkiem'. 'Każdego' (кожного) — родовий. В укр. 'довкілля/середовище' — 'środowisko' = середовище (спільний корінь 'сер-/środ-')."
+      },
+      {
+        "id": "up_envr7",
+        "question": "Gatunki zagrożone _____ wymarciem mogą zniknąć.",
+        "translation": "(Вимираючі види можуть зникнути.)",
+        "options": [
+          "wymarciem",
+          "wymieranie",
+          "wymrzeć",
+          "wymarcia"
+        ],
+        "correct": "wymarciem",
+        "explanation": "'Zagrożone wymarciem' (під загрозою вимирання) — орудний: 'wymarcie' → 'wymarciem'. 'Gatunki' (види) — множина від 'gatunek'. 'Zniknąć' (зникнути) — доконаний інфінітив. В укр. 'загрожені вимиранням' — також орудний. 'Wymarcie' (вимирання) від 'wymrzeć' — спільний корінь 'мер-/mr-'."
+      },
+      {
+        "id": "up_envr8",
+        "question": "Woda pitna jest _____ zasobem naturalnym.",
+        "translation": "(Питна вода — цінний природний ресурс.)",
+        "options": [
+          "cennym",
+          "cenny",
+          "cenne",
+          "cenną"
+        ],
+        "correct": "cennym",
+        "explanation": "'Cennym zasobem' (цінним ресурсом) — орудний чол. роду: 'cenny zasób' → 'cennym zasobem'. 'Naturalnym' — також орудний. 'Woda pitna' (питна вода) — 'pitna' від 'pić' (пити). В укр. 'цінний ресурс' — називний, а тут — орудний після 'jest'. 'Cenny/цінний' — спільний."
+      },
+      {
+        "id": "up_envr9",
+        "question": "Trzeba _____ zużycie plastiku w codziennym życiu.",
+        "translation": "(Треба зменшити використання пластику в повсякденному житті.)",
+        "options": [
+          "ograniczyć",
+          "ograniczać",
+          "ograniczony",
+          "ograniczenie"
+        ],
+        "correct": "ograniczyć",
+        "explanation": "'Trzeba ograniczyć' (треба обмежити) — модальне 'trzeba' + інфінітив доконаний. 'Zużycie plastiku' (використання пластику) — знахідний + родовий. 'W codziennym życiu' (в повсякденному житті) — місцевий. В укр. 'треба зменшити' — ідентична безособова конструкція."
+      },
+      {
+        "id": "up_envr10",
+        "question": "Temperatura globalna _____ z roku na rok.",
+        "translation": "(Глобальна температура зростає з року на рік.)",
+        "options": [
+          "rośnie",
+          "rosnąć",
+          "rosła",
+          "rosnące"
+        ],
+        "correct": "rośnie",
+        "explanation": "'Rosnąć' (рости, зростати) — 'rośnie' (3 ос. одн. теперішній). 'Z roku na rok' (з року на рік) — стійкий зворот зі знахідним. 'Temperatura globalna' (глобальна температура) — жін. рід. В укр. 'рости/зростати' — спільний корінь 'рост-/rost-'. Ідентична конструкція."
+      },
+      {
+        "id": "up_envr11",
+        "question": "W naszym regionie _____ wiele gatunków ptaków.",
+        "translation": "(В нашому регіоні живе багато видів птахів.)",
+        "options": [
+          "żyje",
+          "żyją",
+          "żył",
+          "żyć"
+        ],
+        "correct": "żyje",
+        "explanation": "'Żyje' (живе) — 3 ос. одн. при кількісному підметі 'wiele gatunków' (багато видів). Після 'wiele' — безособове одн. число. 'Ptaków' — родовий множини: 'ptak' → 'ptaków'. В укр. 'живе багато видів' — також одн. число після 'багато'. Спільне правило кількісних підметів."
+      },
+      {
+        "id": "up_envr12",
+        "question": "Recykling pomaga _____ zasoby naturalne.",
+        "translation": "(Переробка допомагає зберегти природні ресурси.)",
+        "options": [
+          "chronić",
+          "chroni",
+          "ochrona",
+          "chroniony"
+        ],
+        "correct": "chronić",
+        "explanation": "'Pomagać chronić' (допомагати охороняти) — 'pomagać' + інфінітив. 'Chronić zasoby naturalne' (охороняти природні ресурси) — знахідний множини. 'Recykling' (переробка) — запозичення з англ. 'recycling'. В укр. 'охороняти' — спільний корінь 'хорон-/chron-'. 'Pomaga' — 3 ос. одн."
+      },
+      {
+        "id": "up_envr13",
+        "question": "Susza _____ uprawy rolne w tym roku.",
+        "translation": "(Посуха знищила сільськогосподарські культури цього року.)",
+        "options": [
+          "zniszczyła",
+          "zniszczył",
+          "zniszczyło",
+          "zniszczyli"
+        ],
+        "correct": "zniszczyła",
+        "explanation": "'Zniszczyła' — жін. рід мин. часу, бо 'susza' (посуха) — жіночого роду. 'Uprawy rolne' (сільськогосподарські культури) — знахідний множини. 'W tym roku' (цього року) — місцевий. 'Susza' від 'suchy' (сухий). В укр. 'посуха' — також жін. рід. 'Suchy/сухий' — спільне."
+      },
+      {
+        "id": "up_envr14",
+        "question": "Parki narodowe służą _____ przyrody.",
+        "translation": "(Національні парки служать охороні природи.)",
+        "options": [
+          "ochronie",
+          "ochrona",
+          "ochrony",
+          "ochroną"
+        ],
+        "correct": "ochronie",
+        "explanation": "'Służyć ochronie' (служити охороні) — давальний: 'ochrona' → 'ochronie'. 'Przyrody' (природи) — родовий: 'przyroda' → 'przyrody'. 'Parki narodowe' (національні парки) — множина. В укр. 'служити охороні' — також давальний. 'Ochrona/охорона' — спільний корінь 'хорон-/ochron-'."
+      },
+      {
+        "id": "up_envr15",
+        "question": "Elektrownie wiatrowe _____ czystą energię.",
+        "translation": "(Вітрові електростанції виробляють чисту енергію.)",
+        "options": [
+          "produkują",
+          "produkuje",
+          "produkować",
+          "produkcja"
+        ],
+        "correct": "produkują",
+        "explanation": "'Produkować' (виробляти) — 'produkują' (3 ос. множини). 'Elektrownie wiatrowe' (вітрові електростанції) — множина. 'Czystą energię' (чисту енергію) — знахідний жін.: 'czysta energia' → 'czystą energię'. 'Wiatrowy' (вітровий) від 'wiatr' (вітер). В укр. 'виробляють' — ідентична конструкція."
+      }
+    ]
+  },
+  {
+    "key": "politics_society",
+    "name": "Політика та суспільство",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "up_poli1",
+        "question": "Prezydent _____ nową ustawę o edukacji.",
+        "translation": "(Президент підписав новий закон про освіту.)",
+        "options": [
+          "podpisał",
+          "podpisała",
+          "podpisali",
+          "podpisano"
+        ],
+        "correct": "podpisał",
+        "explanation": "'Podpisał' — чол. рід мин. часу, бо 'prezydent' — чоловічого роду. 'Podpisać ustawę' (підписати закон) — знахідний: 'ustawa' → 'ustawę'. 'O edukacji' (про освіту) — місцевий: 'edukacja' → 'edukacji'. В укр. 'підписав закон' — ідентична конструкція. 'Podpisać/підписати' — спільне."
+      },
+      {
+        "id": "up_poli2",
+        "question": "Obywatele mają prawo do _____ wolności słowa.",
+        "translation": "(Громадяни мають право на свободу слова.)",
+        "options": [
+          "wolności",
+          "wolność",
+          "wolnością",
+          "wolnościom"
+        ],
+        "correct": "wolności",
+        "explanation": "'Prawo do wolności' (право на свободу) — 'do' + родовий: 'wolność' → 'wolności'. 'Słowa' (слова) — родовий від 'słowo'. 'Obywatele' (громадяни) — множина від 'obywatel'. В укр. 'право на свободу' — 'на' + знахідний (інша конструкція). 'Wolność/вольність' — спільний корінь 'вол-/wol-'."
+      },
+      {
+        "id": "up_poli3",
+        "question": "Wybory _____ odbyły się w październiku.",
+        "translation": "(Парламентські вибори відбулися у жовтні.)",
+        "options": [
+          "parlamentarne",
+          "parlamentarny",
+          "parlamentarna",
+          "parlamentarnych"
+        ],
+        "correct": "parlamentarne",
+        "explanation": "'Wybory parlamentarne' (парламентські вибори) — множина невіроособова. 'Odbyły się' (відбулися) — зворотне, множина невіроос. мин. часу. 'W październiku' (у жовтні) — місцевий: 'październik' → 'październiku'. В укр. 'парламентські вибори відбулися' — ідентично. 'Październik' (жовтень) від 'paździerze'."
+      },
+      {
+        "id": "up_poli4",
+        "question": "Rząd _____ nowy program socjalny.",
+        "translation": "(Уряд запровадив нову соціальну програму.)",
+        "options": [
+          "wprowadził",
+          "wprowadzi",
+          "wprowadzić",
+          "wprowadzony"
+        ],
+        "correct": "wprowadził",
+        "explanation": "'Wprowadził' — чол. рід мин. часу, бо 'rząd' (уряд) — чоловічого роду. 'Nowy program socjalny' — знахідний (чол. неживий = називний). В укр. 'уряд запровадив' — ідентична конструкція. 'Rząd' (уряд, ряд) — спільний корінь 'ряд-/rząd-'. 'Wprowadzić' (запровадити) = 'в-про-вадити'."
+      },
+      {
+        "id": "up_poli5",
+        "question": "Opozycja _____ projekt ustawy.",
+        "translation": "(Опозиція відхилила законопроєкт.)",
+        "options": [
+          "odrzuciła",
+          "odrzucił",
+          "odrzucili",
+          "odrzucono"
+        ],
+        "correct": "odrzuciła",
+        "explanation": "'Odrzuciła' — жін. рід мин. часу, бо 'opozycja' (опозиція) — жіночого роду. 'Odrzucić projekt' (відхилити проєкт) — знахідний. 'Ustawy' — родовий від 'ustawa'. В укр. 'опозиція відхилила' — також жін. рід. 'Odrzucić' (відкинути, відхилити) — 'od-' + 'rzucić' (кинути)."
+      },
+      {
+        "id": "up_poli6",
+        "question": "Manifestacja przeszła _____ centrum miasta.",
+        "translation": "(Демонстрація пройшла через центр міста.)",
+        "options": [
+          "przez",
+          "po",
+          "do",
+          "na"
+        ],
+        "correct": "przez",
+        "explanation": "'Przez centrum' (через центр) — 'przez' + знахідний: 'centrum' (невідмінюване). 'Manifestacja' (демонстрація, маніфестація) — жін. рід. 'Miasta' (міста) — родовий від 'miasto'. 'Przeszła' (пройшла) — жін. рід мін. В укр. 'через центр' — ідентична конструкція з 'через' + знахідний."
+      },
+      {
+        "id": "up_poli7",
+        "question": "Debata _____ dotyczyła polityki zagranicznej.",
+        "translation": "(Передвиборча дебата стосувалася зовнішньої політики.)",
+        "options": [
+          "przedwyborcza",
+          "przedwyborczy",
+          "przedwyborczej",
+          "przedwyborcze"
+        ],
+        "correct": "przedwyborcza",
+        "explanation": "'Debata przedwyborcza' (передвиборча дебата) — називний жін. роду. 'Dotyczyła' (стосувалася) + родовний: 'polityka zagraniczna' → 'polityki zagranicznej'. 'Przedwyborcza' — складний прикметник: 'przed-' (перед-) + 'wyborcza' (виборча). В укр. 'передвиборча' — ідентичне словотворення."
+      },
+      {
+        "id": "up_poli8",
+        "question": "Sejm uchwalił _____ większością głosów.",
+        "translation": "(Сейм ухвалив закон більшістю голосів.)",
+        "options": [
+          "ustawę",
+          "ustawa",
+          "ustawy",
+          "ustawą"
+        ],
+        "correct": "ustawę",
+        "explanation": "'Uchwalić ustawę' (ухвалити закон) — знахідний: 'ustawa' → 'ustawę'. 'Większością głosów' (більшістю голосів) — орудний: 'większość' → 'większością'; 'głosy' → 'głosów' (родовий множини). В укр. 'ухвалити закон більшістю' — ідентична конструкція. 'Uchwalić/ухвалити' — спільне."
+      },
+      {
+        "id": "up_poli9",
+        "question": "Komisja _____ raport w sprawie korupcji.",
+        "translation": "(Комісія підготувала звіт у справі корупції.)",
+        "options": [
+          "przygotowała",
+          "przygotował",
+          "przygotowali",
+          "przygotowano"
+        ],
+        "correct": "przygotowała",
+        "explanation": "'Przygotowała' — жін. рід мин. часу, бо 'komisja' (комісія) — жіночого роду. 'Raport' (звіт, рапорт) — знахідний (чол. неживий). 'W sprawie korupcji' (у справі корупції) — місцевий + родовий. В укр. 'комісія підготувала' — ідентично. 'W sprawie' (у справі) — стала формула."
+      },
+      {
+        "id": "up_poli10",
+        "question": "Konstytucja gwarantuje _____ obywatelom.",
+        "translation": "(Конституція гарантує рівність громадянам.)",
+        "options": [
+          "równość",
+          "równości",
+          "równością",
+          "równa"
+        ],
+        "correct": "równość",
+        "explanation": "'Gwarantować równość' (гарантувати рівність) — знахідний: 'równość' (= називний для жін. на -ść). 'Obywatelom' (громадянам) — давальний множини. 'Konstytucja' (конституція) — запозичення з лат. В укр. 'гарантує рівність' — ідентичний синтаксис. 'Równość/рівність' — спільний корінь 'рів-/równ-'."
+      },
+      {
+        "id": "up_poli11",
+        "question": "Organizacja pozarządowa _____ pomoc uchodźcom.",
+        "translation": "(Неурядова організація надає допомогу біженцям.)",
+        "options": [
+          "udziela",
+          "udzielić",
+          "udzielił",
+          "udzielali"
+        ],
+        "correct": "udziela",
+        "explanation": "'Udzielać pomocy' (надавати допомогу) — 'udziela' (3 ос. одн.). 'Pomocy' — родовий: 'pomoc' → 'pomocy'. 'Uchodźcom' (біженцям) — давальний множини. 'Pozarządowa' (неурядова) від 'rząd' (уряд). В укр. 'надавати допомогу' — знахідний (інший від.), а тут — родовий."
+      },
+      {
+        "id": "up_poli12",
+        "question": "Polityk _____ na konferencji prasowej.",
+        "translation": "(Політик виступив на пресконференції.)",
+        "options": [
+          "wystąpił",
+          "wystąpiła",
+          "wystąpili",
+          "wystąpiono"
+        ],
+        "correct": "wystąpił",
+        "explanation": "'Wystąpił' — чол. рід мин. часу, бо 'polityk' (політик) — чоловічого роду. 'Na konferencji prasowej' (на прес-конференції) — місцевий жін.: 'konferencja prasowa' → 'konferencji prasowej'. В укр. 'політик виступив' — ідентично. 'Wystąpić' (виступити) — 'wy-' + 'stąpić' (ступити)."
+      },
+      {
+        "id": "up_poli13",
+        "question": "Podatki powinny być _____ sprawiedliwie.",
+        "translation": "(Податки повинні розподілятися справедливо.)",
+        "options": [
+          "rozdzielane",
+          "rozdzielany",
+          "rozdzielana",
+          "rozdzielani"
+        ],
+        "correct": "rozdzielane",
+        "explanation": "'Rozdzielane' — множина невіроособова, бо 'podatki' (податки) — множина чол. неживий. 'Sprawiedliwie' (справедливо) — прислівник від 'sprawiedliwy'. 'Powinny być' (повинні бути) — невіроос. множина. В укр. 'розділятися' або 'розподілятися'. 'Sprawiedliwie' = 'справедливо' — спільний корінь."
+      },
+      {
+        "id": "up_poli14",
+        "question": "Senator złożył _____ w związku ze skandalem.",
+        "translation": "(Сенатор подав відставку у зв'язку зі скандалом.)",
+        "options": [
+          "rezygnację",
+          "rezygnacja",
+          "rezygnacji",
+          "rezygnacją"
+        ],
+        "correct": "rezygnację",
+        "explanation": "'Złożyć rezygnację' (подати відставку) — знахідний: 'rezygnacja' → 'rezygnację'. 'W związku ze skandalem' (у зв'язку зі скандалом) — орудний: 'skandal' → 'skandalem'; евфонічне 'ze' перед 'sk-'. В укр. 'подати відставку' — ідентичний знахідний. 'Złożyć' (подати, скласти)."
+      },
+      {
+        "id": "up_poli15",
+        "question": "Dyplomaci _____ nad nowym porozumieniem.",
+        "translation": "(Дипломати працюють над новою угодою.)",
+        "options": [
+          "pracują",
+          "pracuje",
+          "pracować",
+          "pracowali"
+        ],
+        "correct": "pracują",
+        "explanation": "'Pracować nad' (працювати над) + орудний: 'nowe porozumienie' → 'nowym porozumieniem'. 'Dyplomaci' (дипломати) — множина від 'dyplomata'. 'Pracują' (працюють, 3 ос. мн.). В укр. 'працюють над угодою' — ідентична конструкція. 'Porozumienie' (угода, порозуміння) — спільний корінь 'розум-/rozum-'."
+      }
+    ]
+  },
+  {
+    "key": "arts_culture",
+    "name": "Мистецтво та культура",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "up_arts1",
+        "question": "Wystawa _____ otworzona w zeszłym tygodniu.",
+        "translation": "(Виставка була відкрита минулого тижня.)",
+        "options": [
+          "została",
+          "został",
+          "zostali",
+          "zostało"
+        ],
+        "correct": "została",
+        "explanation": "'Została otworzona' — жін. рід, бо 'wystawa' (виставка) — жіночого роду. 'Otworzona' (відкрита) — дієприкметник жін. род. 'W zeszłym tygodniu' (минулого тижня) — місцевий: 'zeszły tydzień' → 'zeszłym tygodniu'. В укр. 'виставка була відкрита' — ідентично."
+      },
+      {
+        "id": "up_arts2",
+        "question": "Ten obraz _____ przez znanego malarza.",
+        "translation": "(Ця картина була намальована відомим художником.)",
+        "options": [
+          "został namalowany",
+          "została namalowana",
+          "zostało namalowane",
+          "zostali namalowani"
+        ],
+        "correct": "został namalowany",
+        "explanation": "'Został namalowany' — чол. рід, бо 'obraz' (картина, образ) — чоловічого роду в польській. 'Przez znanego malarza' (відомим художником) — знахідний після 'przez' (пасив). В укр. 'картина' — жін. рід, а польськ. 'obraz' — чол. рід. Різний рід! 'Malarz' (художник) від 'malować'."
+      },
+      {
+        "id": "up_arts3",
+        "question": "Koncert _____ się o godzinie 20:00.",
+        "translation": "(Концерт починається о 20:00.)",
+        "options": [
+          "zaczyna",
+          "zaczęła",
+          "zaczną",
+          "zaczął"
+        ],
+        "correct": "zaczyna",
+        "explanation": "'Zaczynać się' (починатися) — 'zaczyna się' (3 ос. одн. теперішній). 'O godzinie dwudziestej' (о двадцятій годині) — місцевий: 'godzina' → 'godzinie'. 'Koncert' (концерт) — чол. рід. В укр. 'концерт починається' — ідентична конструкція. Обидві мови використовують зворотне дієслово."
+      },
+      {
+        "id": "up_arts4",
+        "question": "Muzeum _____ czynne we wtorki i czwartki.",
+        "translation": "(Музей відкритий по вівторках і четвергах.)",
+        "options": [
+          "jest",
+          "są",
+          "było",
+          "będzie"
+        ],
+        "correct": "jest",
+        "explanation": "'Muzeum jest czynne' (музей відкритий) — 'czynne' (сер. рід), бо 'muzeum' — середнього роду (від лат.). 'We wtorki i czwartki' (по вівторках і четвергах) — знахідний множини (регулярність). В укр. 'музей' — чол. рід, а польськ. 'muzeum' — сер. рід! Різний рід при спільному запозиченні."
+      },
+      {
+        "id": "up_arts5",
+        "question": "Aktorka _____ główną rolę w nowym filmie.",
+        "translation": "(Акторка зіграла головну роль у новому фільмі.)",
+        "options": [
+          "zagrała",
+          "zagrał",
+          "zagrali",
+          "zagrano"
+        ],
+        "correct": "zagrała",
+        "explanation": "'Zagrała' — жін. рід мин. часу, бо 'aktorka' (акторка) — жіночого роду. 'Główną rolę' (головну роль) — знахідний жін.: 'główna rola' → 'główną rolę'. 'W nowym filmie' (у новому фільмі) — місцевий. В укр. 'зіграла роль' — ідентична конструкція. 'Rola/роль' — спільне."
+      },
+      {
+        "id": "up_arts6",
+        "question": "Rzeźba stoi na _____ przed ratuszem.",
+        "translation": "(Скульптура стоїть на площі перед ратушею.)",
+        "options": [
+          "placu",
+          "plac",
+          "placu",
+          "placem"
+        ],
+        "correct": "placu",
+        "explanation": "'Na placu' (на площі) — місцевий: 'plac' → 'placu'. 'Przed ratuszem' (перед ратушею) — орудний: 'ratusz' → 'ratuszem'. 'Rzeźba' (скульптура) — жін. рід. 'Stoi' (стоїть) — 3 ос. одн. В укр. 'на площі' — ідентичний місцевий. 'Plac' (площа) — різне значення від 'plac' (плац)."
+      },
+      {
+        "id": "up_arts7",
+        "question": "Pisarz _____ nową powieść o historii Polski.",
+        "translation": "(Письменник написав новий роман про історію Польщі.)",
+        "options": [
+          "napisał",
+          "napisała",
+          "napisali",
+          "napisano"
+        ],
+        "correct": "napisał",
+        "explanation": "'Napisał' — чол. рід мин. часу, бо 'pisarz' (письменник) — чоловічого роду. 'Nową powieść' (новий роман) — знахідний жін.: 'nowa powieść' → 'nową powieść'. 'O historii Polski' — місцевий + родовий. В укр. 'письменник написав' — ідентично. 'Pisarz/писар' — спільний корінь 'пис-/pis-'."
+      },
+      {
+        "id": "up_arts8",
+        "question": "Bilety na spektakl są już _____.",
+        "translation": "(Квитки на виставу вже розпродані.)",
+        "options": [
+          "wyprzedane",
+          "wyprzedany",
+          "wyprzedana",
+          "wyprzedani"
+        ],
+        "correct": "wyprzedane",
+        "explanation": "'Wyprzedane' — множина невіроособова, бо 'bilety' (квитки) — множина чол. неживий. 'Na spektakl' (на виставу) — знахідний. 'Już' (вже). 'Wyprzedany' (розпроданий) від 'wyprzedać' (розпродати). В укр. 'квитки розпродані' — також множина. 'Wyprzedać' = 'ви-продати'."
+      },
+      {
+        "id": "up_arts9",
+        "question": "Orkiestra _____ symfonię Beethovena.",
+        "translation": "(Оркестр виконав симфонію Бетховена.)",
+        "options": [
+          "wykonała",
+          "wykonał",
+          "wykonali",
+          "wykonano"
+        ],
+        "correct": "wykonała",
+        "explanation": "'Wykonała' — жін. рід мин. часу, бо 'orkiestra' (оркестр) — жіночого роду в польській. В укр. 'оркестр' — чоловічого роду! Різний рід: 'orkiestra' (ж.) vs. 'оркестр' (ч.). 'Symfonię Beethovena' — знахідний + родовий. 'Wykonać' (виконати) — 'wy-' + 'konać' (завершити)."
+      },
+      {
+        "id": "up_arts10",
+        "question": "Festiwal filmowy odbywa się _____ w lipcu.",
+        "translation": "(Кінофестиваль проходить щорічно у липні.)",
+        "options": [
+          "corocznie",
+          "coroczny",
+          "coroczna",
+          "coroczne"
+        ],
+        "correct": "corocznie",
+        "explanation": "'Corocznie' (щорічно) — прислівник від 'coroczny' (щорічний). 'Festiwal filmowy' (кінофестиваль) — чол. рід. 'Odbywa się' (проходить, відбувається) — зворотне. 'W lipcu' (у липні) — місцевий: 'lipiec' → 'lipcu'. 'Lipiec' (липень) — від 'lipa' (липа). Спільне словотворення."
+      },
+      {
+        "id": "up_arts11",
+        "question": "Reżyser _____ nagrodzony na festiwalu w Cannes.",
+        "translation": "(Режисер був нагороджений на фестивалі в Каннах.)",
+        "options": [
+          "został",
+          "została",
+          "zostali",
+          "zostało"
+        ],
+        "correct": "został",
+        "explanation": "'Został nagrodzony' — чол. рід пасив. 'Reżyser' (режисер) — чол. рід. 'Na festiwalu' (на фестивалі) — місцевий: 'festiwal' → 'festiwalu'. 'W Cannes' — невідмінний топонім. 'Nagrodzony' (нагороджений) від 'nagrodzić'. В укр. 'режисер був нагороджений' — ідентична конструкція."
+      },
+      {
+        "id": "up_arts12",
+        "question": "Ten teatr _____ się największą sceną w kraju.",
+        "translation": "(Цей театр може похвалитися найбільшою сценою в країні.)",
+        "options": [
+          "szczyci",
+          "szczycić",
+          "szczyciła",
+          "szczycą"
+        ],
+        "correct": "szczyci",
+        "explanation": "'Szczycić się' (пишатися, хвалитися) — 'szczyci się' (3 ос. одн.). 'Największą sceną' (найбільшою сценою) — орудний жін.: 'największa scena' → 'największą sceną'. 'W kraju' (в країні) — місцевий. 'Szczycić się' — від 'szczyt' (вершина). В укр. 'пишатися' — інший корінь."
+      },
+      {
+        "id": "up_arts13",
+        "question": "Galeria _____ wystawę współczesnego malarstwa.",
+        "translation": "(Галерея організує виставку сучасного живопису.)",
+        "options": [
+          "organizuje",
+          "organizować",
+          "organizował",
+          "organizują"
+        ],
+        "correct": "organizuje",
+        "explanation": "'Organizować wystawę' (організувати виставку) — 'organizuje' (3 ос. одн.). 'Współczesnego malarstwa' (сучасного живопису) — родовий: 'współczesne malarstwo' → 'współczesnego malarstwa'. 'Galeria' (галерея) — жін. рід. В укр. 'організовує виставку' — ідентична конструкція."
+      },
+      {
+        "id": "up_arts14",
+        "question": "Chór _____ kolędy podczas Bożego Narodzenia.",
+        "translation": "(Хор виконує колядки під час Різдва.)",
+        "options": [
+          "śpiewa",
+          "śpiewać",
+          "śpiewał",
+          "śpiewają"
+        ],
+        "correct": "śpiewa",
+        "explanation": "'Śpiewać' (співати) — 'śpiewa' (3 ос. одн.). 'Chór' (хор) — одн. число попри колективне значення. 'Kolędy' (колядки) — знахідний множини. 'Podczas Bożego Narodzenia' (під час Різдва) — родовий. 'Kolęda/коляда' — спільнослов'янське від лат. 'calendae'. 'Śpiewać/співати' — спільне."
+      },
+      {
+        "id": "up_arts15",
+        "question": "Krytycy _____ ten film za doskonałą grę aktorską.",
+        "translation": "(Критики хвалять цей фільм за чудову акторську гру.)",
+        "options": [
+          "chwalą",
+          "chwali",
+          "chwalić",
+          "chwalili"
+        ],
+        "correct": "chwalą",
+        "explanation": "'Chwalić' (хвалити) — 'chwalą' (3 ос. множини). 'Krytycy' (критики) — множина віроособова від 'krytyk'. 'Za doskonałą grę aktorską' (за чудову акторську гру) — знахідний: 'doskonała gra aktorska' → 'doskonałą grę aktorską'. 'Chwalić/хвалити' — спільнослов'янське."
+      }
+    ]
+  },
+  {
+    "key": "science_research",
+    "name": "Наука та дослідження",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "up_scie1",
+        "question": "Naukowcy _____ nowe odkrycie w dziedzinie fizyki.",
+        "translation": "(Науковці зробили нове відкриття в галузі фізики.)",
+        "options": [
+          "dokonali",
+          "dokonał",
+          "dokonała",
+          "dokonano"
+        ],
+        "correct": "dokonali",
+        "explanation": "'Dokonali' — множина віроособова мин. часу, бо 'naukowcy' (науковці) — множина від 'naukowiec'. 'Dokonać odkrycia' (зробити відкриття) — родовий: 'odkrycie' → 'odkrycia'. 'W dziedzinie fizyki' (в галузі фізики) — місцевий + родовий. 'Dokonać' (доконати) — спільний корінь."
+      },
+      {
+        "id": "up_scie2",
+        "question": "Eksperyment _____ przeprowadzony w laboratorium.",
+        "translation": "(Експеримент був проведений у лабораторії.)",
+        "options": [
+          "został",
+          "została",
+          "zostali",
+          "zostało"
+        ],
+        "correct": "został",
+        "explanation": "'Został przeprowadzony' — чол. рід пасив, бо 'eksperyment' (експеримент) — чоловічого роду. 'W laboratorium' (у лабораторії) — місцевий: 'laboratorium' — невідмінюване. В укр. 'експеримент був проведений' — ідентична конструкція. 'Przeprowadzić' (провести) = 'пере-про-вадити'."
+      },
+      {
+        "id": "up_scie3",
+        "question": "Badania _____, że szczepionka jest skuteczna.",
+        "translation": "(Дослідження показали, що вакцина ефективна.)",
+        "options": [
+          "wykazały",
+          "wykazał",
+          "wykazała",
+          "wykazano"
+        ],
+        "correct": "wykazały",
+        "explanation": "'Wykazały' — множина невіроособова мин. часу, бо 'badania' (дослідження) — множина сер. роду. 'Szczepionka' (вакцина) від 'szczepić' (щепити). 'Skuteczna' (ефективна, дієва) — жін. рід. В укр. 'дослідження показали' — також множина. 'Wykazać' (виказати, показати) — спільний корінь."
+      },
+      {
+        "id": "up_scie4",
+        "question": "Hipoteza _____ potwierdzona przez kolejne eksperymenty.",
+        "translation": "(Гіпотеза була підтверджена наступними експериментами.)",
+        "options": [
+          "została",
+          "został",
+          "zostali",
+          "zostało"
+        ],
+        "correct": "została",
+        "explanation": "'Została potwierdzona' — жін. рід пасив, бо 'hipoteza' (гіпотеза) — жіночого роду. 'Przez kolejne eksperymenty' — знахідний множини. 'Potwierdzona' (підтверджена) від 'potwierdzić' (підтвердити). В укр. 'гіпотеза була підтверджена' — ідентична конструкція. 'Po-twierdzić/під-твердити'."
+      },
+      {
+        "id": "up_scie5",
+        "question": "Profesor _____ wykład o sztucznej inteligencji.",
+        "translation": "(Професор прочитав лекцію про штучний інтелект.)",
+        "options": [
+          "wygłosił",
+          "wygłosiła",
+          "wygłosili",
+          "wygłoszono"
+        ],
+        "correct": "wygłosił",
+        "explanation": "'Wygłosił' — чол. рід мин. часу, бо 'profesor' (професор) — чоловічого роду. 'Wygłosić wykład' (виголосити лекцію) — стала конструкція. 'O sztucznej inteligencji' (про штучний інтелект) — місцевий жін. В укр. 'прочитав лекцію' — інше дієслово ('прочитати' vs. 'wygłosić' = виголосити)."
+      },
+      {
+        "id": "up_scie6",
+        "question": "Wyniki badań _____ opublikowane w prestiżowym czasopiśmie.",
+        "translation": "(Результати досліджень були опубліковані в престижному журналі.)",
+        "options": [
+          "zostały",
+          "został",
+          "została",
+          "zostało"
+        ],
+        "correct": "zostały",
+        "explanation": "'Zostały opublikowane' — множина невіроособова, бо 'wyniki' (результати) — множина чол. неживий. 'W prestiżowym czasopiśmie' (у престижному журналі) — місцевий: 'czasopismo' → 'czasopiśmie'. 'Badań' — родовий множини. В укр. 'результати були опубліковані' — ідентична конструкція."
+      },
+      {
+        "id": "up_scie7",
+        "question": "Teoria _____ przez wielu naukowców.",
+        "translation": "(Теорія оспорюється багатьма науковцями.)",
+        "options": [
+          "jest kwestionowana",
+          "jest kwestionowany",
+          "są kwestionowane",
+          "jest kwestionowane"
+        ],
+        "correct": "jest kwestionowana",
+        "explanation": "'Jest kwestionowana' — жін. рід теперішній пасив, бо 'teoria' (теорія) — жіночого роду. 'Przez wielu naukowców' (багатьма науковцями) — 'wielu' + родовий множини віроос. 'Kwestionować' (оспорювати, сумніватися) — від лат. 'quaestio'. В укр. 'теорія оспорюється' — зворотний пасив."
+      },
+      {
+        "id": "up_scie8",
+        "question": "Sztuczna inteligencja _____ coraz więcej zastosowań.",
+        "translation": "(Штучний інтелект знаходить дедалі більше застосувань.)",
+        "options": [
+          "znajduje",
+          "znaleźć",
+          "znalazła",
+          "znajdują"
+        ],
+        "correct": "znajduje",
+        "explanation": "'Znajdować' (знаходити) — 'znajduje' (3 ос. одн.). 'Coraz więcej zastosowań' (дедалі більше застосувань) — родовий множини: 'zastosowanie' → 'zastosowań'. 'Sztuczna inteligencja' — жін. рід. В укр. 'знаходить' — ідентична конструкція. 'Sztuczna/штучна' — спільний корінь."
+      },
+      {
+        "id": "up_scie9",
+        "question": "Ten projekt badawczy _____ finansowany z grantu.",
+        "translation": "(Цей дослідницький проєкт фінансується з гранту.)",
+        "options": [
+          "jest",
+          "są",
+          "było",
+          "były"
+        ],
+        "correct": "jest",
+        "explanation": "'Jest finansowany' (фінансується) — чол. рід теперішній пасив. 'Projekt badawczy' (дослідницький проєкт) — чол. рід. 'Z grantu' (з гранту) — родовий: 'grant' → 'grantu'. 'Badawczy' (дослідницький) від 'badać' (досліджувати). В укр. 'фінансується з гранту' — зворотний пасив."
+      },
+      {
+        "id": "up_scie10",
+        "question": "Doktorant _____ nad rozprawą doktorską.",
+        "translation": "(Докторант працює над докторською дисертацією.)",
+        "options": [
+          "pracuje",
+          "pracować",
+          "pracował",
+          "pracują"
+        ],
+        "correct": "pracuje",
+        "explanation": "'Pracować nad' (працювати над) + орудний: 'rozprawa doktorska' → 'rozprawą doktorską'. 'Doktorant' (докторант) — чол. рід. В укр. 'докторант працює над' — ідентична конструкція. 'Rozprawa' (дисертація, розправа) — від 'rozprawa/розправа' — спільний корінь 'прав-/praw-'."
+      },
+      {
+        "id": "up_scie11",
+        "question": "Dane zostały _____ za pomocą specjalistycznego oprogramowania.",
+        "translation": "(Дані були проаналізовані за допомогою спеціалізованого програмного забезпечення.)",
+        "options": [
+          "przeanalizowane",
+          "przeanalizowany",
+          "przeanalizowana",
+          "przeanalizowani"
+        ],
+        "correct": "przeanalizowane",
+        "explanation": "'Przeanalizowane' — множина невіроособова, бо 'dane' (дані) — множина від 'dana' (дана). 'Za pomocą' (за допомогою) + родовий: 'specjalistyczne oprogramowanie' → 'specjalistycznego oprogramowania'. 'Oprogramowanie' (програмне забезпечення) — від 'program'. Спільна конструкція."
+      },
+      {
+        "id": "up_scie12",
+        "question": "Konferencja naukowa _____ się w maju.",
+        "translation": "(Наукова конференція відбудеться у травні.)",
+        "options": [
+          "odbędzie",
+          "odbyła",
+          "odbywa",
+          "odbywać"
+        ],
+        "correct": "odbędzie",
+        "explanation": "'Odbędzie się' (відбудеться) — доконаний майбутній, 3 ос. одн. 'Konferencja naukowa' (наукова конференція) — жін. рід. 'W maju' (у травні) — місцевий: 'maj' → 'maju'. В укр. 'відбудеться' — ідентична конструкція зворотного дієслова. 'Maj' (травень) — від лат. 'Maius'."
+      },
+      {
+        "id": "up_scie13",
+        "question": "Teleskop _____ nową galaktykę w kosmosie.",
+        "translation": "(Телескоп виявив нову галактику в космосі.)",
+        "options": [
+          "odkrył",
+          "odkryła",
+          "odkryli",
+          "odkryto"
+        ],
+        "correct": "odkrył",
+        "explanation": "'Odkrył' — чол. рід мин. часу, бо 'teleskop' (телескоп) — чоловічого роду. 'Nową galaktykę' — знахідний жін.: 'nowa galaktyka' → 'nową galaktykę'. 'W kosmosie' (у космосі) — місцевий. 'Odkryć' (відкрити) — 'od-kryć' як укр. 'від-крити'. Спільне словотворення."
+      },
+      {
+        "id": "up_scie14",
+        "question": "Laboratorium _____ wyposażone w najnowszy sprzęt.",
+        "translation": "(Лабораторія обладнана найновішим обладнанням.)",
+        "options": [
+          "jest",
+          "są",
+          "było",
+          "będzie"
+        ],
+        "correct": "jest",
+        "explanation": "'Jest wyposażone' — сер. рід, бо 'laboratorium' — середнього роду (від лат.). 'W najnowszy sprzęt' (найновішим обладнанням) — знахідний: 'najnowszy sprzęt'. 'Wyposażone' (обладнане) від 'wyposażyć'. В укр. 'лабораторія' — жін. рід, а польськ. 'laboratorium' — сер. Різний рід!"
+      },
+      {
+        "id": "up_scie15",
+        "question": "Wnioski z badań _____ jasne i jednoznaczne.",
+        "translation": "(Висновки з досліджень ясні й однозначні.)",
+        "options": [
+          "są",
+          "jest",
+          "było",
+          "były"
+        ],
+        "correct": "są",
+        "explanation": "'Są jasne i jednoznaczne' (є ясні й однозначні) — множина, бо 'wnioski' (висновки) — множина від 'wniosek'. 'Z badań' (з досліджень) — родовий множини: 'badanie' → 'badań'. 'Jednoznaczne' (однозначні) — 'jedno-' + 'znaczny' (значний). В укр. 'висновки ясні' — без дієслова-зв'язки."
+      }
+    ]
   }
 ]

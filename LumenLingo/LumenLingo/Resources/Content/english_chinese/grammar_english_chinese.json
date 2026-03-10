@@ -8568,5 +8568,1015 @@
         "explanation": "变化 (biànhuà) is a NOUN meaning 'change/transformation.' 发生了变化 means 'changes have occurred.' 很大的变化 = 'great/big changes.' Compare the 变 family: 变化(noun: change), 变成(verb: become/turn into), 变得(verb: become+description), 改变(verb: to change something). Using 变化 as a noun allows for rich description: 巨大的变化 (enormous change), 积极的变化 (positive change)."
       }
     ]
+  },
+  {
+    "key": "verb_object_compounds",
+    "name": "Verb-Object Compounds (动宾复合词)",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ec_voc1",
+        "question": "我每天都_____。",
+        "translation": "(I eat every day.)",
+        "options": [
+          "吃饭",
+          "吃了",
+          "吃的",
+          "吃着"
+        ],
+        "correct": "吃饭",
+        "explanation": "吃饭 (chī fàn) is a verb-object compound meaning 'to eat (a meal).' Unlike English, many Chinese verbs naturally come with a built-in object: 吃 (eat) + 饭 (rice/meal). These compounds cannot be directly followed by another object — you must split them. This is a fundamental pattern in Chinese: the verb and object form a single unit for the general action. Other common examples: 睡觉 (sleep), 说话 (speak), 跑步 (run), 唱歌 (sing)."
+      },
+      {
+        "id": "ec_voc2",
+        "question": "他在_____呢。",
+        "translation": "(He is sleeping.)",
+        "options": [
+          "睡觉",
+          "睡了",
+          "睡的",
+          "睡好"
+        ],
+        "correct": "睡觉",
+        "explanation": "睡觉 (shuì jiào) is a verb-object compound meaning 'to sleep.' 睡 is the verb (sleep) and 觉 is the object (a nap/sleep). When you add duration or frequency, you must insert it between the verb and object: 睡了一个觉 (slept one sleep), or use the verb alone: 睡了三个小时 (slept three hours). This splitting rule applies to all verb-object compounds and is essential for correct intermediate Chinese."
+      },
+      {
+        "id": "ec_voc3",
+        "question": "请你_____，好吗？",
+        "translation": "(Please help, okay?)",
+        "options": [
+          "帮忙",
+          "帮助",
+          "帮了",
+          "帮的"
+        ],
+        "correct": "帮忙",
+        "explanation": "帮忙 (bāng máng) is a verb-object compound meaning 'to help.' 帮 (help) + 忙 (busy/favor). Since it's a verb-object compound, you cannot say *帮忙我. Instead, you insert the person between verb and object: 帮我忙 or use 帮助我 (which is not a V-O compound). This distinction matters greatly: 帮忙 is more colloquial and natural, while 帮助 is more formal and can take a direct object normally."
+      },
+      {
+        "id": "ec_voc4",
+        "question": "她很喜欢_____。",
+        "translation": "(She really likes singing.)",
+        "options": [
+          "唱歌",
+          "唱了",
+          "唱着",
+          "唱过"
+        ],
+        "correct": "唱歌",
+        "explanation": "唱歌 (chàng gē) is a verb-object compound meaning 'to sing.' 唱 (sing) + 歌 (song). To specify what song, you must split the compound: 唱一首歌 (sing a song), 唱中文歌 (sing Chinese songs). You cannot say *唱歌中文歌. The measure word for songs is 首 (shǒu). Learning to split V-O compounds correctly is a key milestone in Chinese fluency — it shows you understand the internal structure of these common words."
+      },
+      {
+        "id": "ec_voc5",
+        "question": "我们出去_____吧！",
+        "translation": "(Let's go out for a walk!)",
+        "options": [
+          "散步",
+          "散了",
+          "散着",
+          "散过"
+        ],
+        "correct": "散步",
+        "explanation": "散步 (sàn bù) is a verb-object compound meaning 'to take a walk.' 散 (scatter/stroll) + 步 (step). Like other V-O compounds, you insert modifiers between verb and object: 散了一会儿步 (walked for a while), 散散步 (take a casual walk — using reduplication). The reduplication pattern for V-O compounds is special: you reduplicate only the verb part (散散步), not the whole compound (*散步散步 is wrong)."
+      },
+      {
+        "id": "ec_voc6",
+        "question": "他每天早上_____。",
+        "translation": "(He runs every morning.)",
+        "options": [
+          "跑步",
+          "跑了",
+          "跑着",
+          "跑的"
+        ],
+        "correct": "跑步",
+        "explanation": "跑步 (pǎo bù) means 'to run/jog' — another verb-object compound. 跑 (run) + 步 (step). For duration: 跑了半个小时的步 (ran for half an hour). Notice the 的 is sometimes added between the duration and the object for clarity. Key insight: when you want to add an aspect marker like 了, it goes between verb and object: 跑了步 (ran). The V-O structure is so fundamental that even advanced learners must consciously manage it."
+      },
+      {
+        "id": "ec_voc7",
+        "question": "你_____了吗？",
+        "translation": "(Have you graduated?)",
+        "options": [
+          "毕业",
+          "毕了业",
+          "毕的",
+          "毕着"
+        ],
+        "correct": "毕业",
+        "explanation": "毕业 (bì yè) means 'to graduate' — a verb-object compound. 毕 (complete) + 业 (studies/career). Some V-O compounds are so tightly bound that they rarely get split in daily speech. 毕业了 is standard (the 了 attaches after the whole compound here). However, formally you can split: 毕了业 (graduated). Recognizing which V-O compounds split commonly versus rarely is an important skill. 毕业 behaves almost like a single verb in modern usage."
+      },
+      {
+        "id": "ec_voc8",
+        "question": "她正在_____。",
+        "translation": "(She is doing laundry.)",
+        "options": [
+          "洗衣服",
+          "洗了",
+          "洗着",
+          "洗过"
+        ],
+        "correct": "洗衣服",
+        "explanation": "洗衣服 (xǐ yī fu) means 'to do laundry/wash clothes.' While 洗 (wash) can take various objects, 洗衣服 is a common fixed collocation. Unlike true V-O compounds like 吃饭, this is more of a verb + specific object phrase. The distinction matters: 吃饭 means 'eat (in general)' while 洗衣服 specifically means 'wash clothes.' You can freely say 洗碗 (wash dishes), 洗手 (wash hands) — 洗 is more flexible than compound-bound verbs."
+      },
+      {
+        "id": "ec_voc9",
+        "question": "我想跟你_____。",
+        "translation": "(I want to talk with you.)",
+        "options": [
+          "说话",
+          "说了",
+          "说的",
+          "说着"
+        ],
+        "correct": "说话",
+        "explanation": "说话 (shuō huà) is a verb-object compound meaning 'to speak/talk.' 说 (say) + 话 (words/speech). To add what you said: 说了一句话 (said one sentence), 说好话 (say nice things — adjective inserted before object). The key pattern: Verb + [modifier] + Object. You cannot say *说话好 to mean 'speak well' — instead use 说话说得好 (using the complement structure) or 好好说话 (speak properly, with adverb before the compound)."
+      },
+      {
+        "id": "ec_voc10",
+        "question": "周末我们可以_____。",
+        "translation": "(On weekends we can swim.)",
+        "options": [
+          "游泳",
+          "游了",
+          "游着",
+          "游过"
+        ],
+        "correct": "游泳",
+        "explanation": "游泳 (yóu yǒng) means 'to swim' — a verb-object compound. 游 (swim/travel) + 泳 (swimming). For duration: 游了一个小时的泳 (swam for one hour). Some learners find it surprising that 'swim' in Chinese is actually two morphemes. The pattern is consistent: 游了两次泳 (swam twice). In casual speech, people often just say 游泳了 without splitting. Understanding both the split and unsplit forms gives you natural flexibility."
+      },
+      {
+        "id": "ec_voc11",
+        "question": "你什么时候_____？",
+        "translation": "(When do you get off work?)",
+        "options": [
+          "下班",
+          "下了",
+          "下着",
+          "下过"
+        ],
+        "correct": "下班",
+        "explanation": "下班 (xià bān) means 'to get off work/finish work.' 下 (descend/off) + 班 (shift/class). The opposite is 上班 (shàng bān, go to work). These are extremely common V-O compounds in daily Chinese. You can split them: 下了班以后 (after getting off work). The 上/下 pair creates many useful compounds: 上课/下课 (start/end class), 上车/下车 (get on/off vehicle). This systematic pairing is a productive pattern in Chinese."
+      },
+      {
+        "id": "ec_voc12",
+        "question": "请大家_____！",
+        "translation": "(Everyone please be quiet!)",
+        "options": [
+          "安静",
+          "安了",
+          "安着",
+          "安的"
+        ],
+        "correct": "安静",
+        "explanation": "安静 (ān jìng) means 'to be quiet/calm.' While it looks like a V-O compound, 安静 actually functions more as an adjective compound (both characters contribute to the meaning 'peaceful-quiet'). Not all two-character words are V-O compounds — distinguishing them is important. True V-O compounds (吃饭, 睡觉) can be split; adjective compounds (安静, 高兴) cannot. Test: if you can insert 了 between characters naturally, it's likely V-O."
+      },
+      {
+        "id": "ec_voc13",
+        "question": "他昨天_____了。",
+        "translation": "(He got angry yesterday.)",
+        "options": [
+          "生气",
+          "生了",
+          "生着",
+          "生过"
+        ],
+        "correct": "生气",
+        "explanation": "生气 (shēng qì) means 'to get angry/be angry.' 生 (produce/generate) + 气 (anger/air). This is a V-O compound that can be split: 生他的气 (angry at him), 生了很大的气 (got very angry). The 的 connecting person/degree to 气 is a distinctive Chinese pattern. You cannot say *生气他 — the object of anger must be inserted: 生他的气. This splitting pattern is one of the trickiest aspects of V-O compounds for English speakers."
+      },
+      {
+        "id": "ec_voc14",
+        "question": "我们一起_____吧。",
+        "translation": "(Let's dance together.)",
+        "options": [
+          "跳舞",
+          "跳了",
+          "跳着",
+          "跳过"
+        ],
+        "correct": "跳舞",
+        "explanation": "跳舞 (tiào wǔ) means 'to dance.' 跳 (jump) + 舞 (dance). For specific dances: 跳拉丁舞 (dance Latin dance — the specific dance replaces the generic object). The reduplication form for casual suggestion is: 跳跳舞 (do some dancing). Remember: only reduplicate the verb in V-O compounds. Common error: *跳舞跳舞 (wrong) vs. 跳跳舞 (correct). This consistent pattern across all V-O compounds makes the rule easy to remember once learned."
+      },
+      {
+        "id": "ec_voc15",
+        "question": "老师在_____。",
+        "translation": "(The teacher is giving a lecture.)",
+        "options": [
+          "讲课",
+          "讲了",
+          "讲的",
+          "讲着"
+        ],
+        "correct": "讲课",
+        "explanation": "讲课 (jiǎng kè) means 'to give a lecture/teach a class.' 讲 (explain/lecture) + 课 (class/lesson). Split form: 讲了两节课 (taught two classes — measure word 节 inserted). Related compounds: 上课 (attend class), 下课 (dismiss class), 听课 (attend a lecture). The Chinese education vocabulary is rich with V-O compounds. Mastering these everyday compounds dramatically improves your ability to discuss school, work, and daily routines naturally."
+      }
+    ]
+  },
+  {
+    "key": "directional_compounds",
+    "name": "Directional Compounds (趋向补语)",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ec_drc1",
+        "question": "他走_____了。",
+        "translation": "(He walked in.)",
+        "options": [
+          "进来",
+          "进去",
+          "出来",
+          "出去"
+        ],
+        "correct": "进来",
+        "explanation": "进来 (jìn lái) is a compound directional complement meaning 'come in' (toward the speaker). It combines 进 (enter) + 来 (come/toward speaker). The distinction between 来 and 去 is crucial: 来 indicates movement toward the speaker, 去 indicates movement away. So 走进来 = walk in (toward me) vs. 走进去 = walk in (away from me). This speaker-oriented perspective system is fundamental to Chinese spatial expression and has no direct English equivalent."
+      },
+      {
+        "id": "ec_drc2",
+        "question": "请你走_____！",
+        "translation": "(Please go out!)",
+        "options": [
+          "出去",
+          "出来",
+          "进去",
+          "进来"
+        ],
+        "correct": "出去",
+        "explanation": "出去 (chū qù) means 'go out' (away from speaker). 出 (exit) + 去 (go/away from speaker). The four basic compound directionals are: 进来 (come in), 进去 (go in), 出来 (come out), 出去 (go out). These attach after motion verbs: 走出去 (walk out), 跑出去 (run out), 飞出去 (fly out). The verb describes HOW, while the directional describes WHERE and the speaker's perspective. This three-part structure (verb + direction + perspective) is uniquely Chinese."
+      },
+      {
+        "id": "ec_drc3",
+        "question": "他从楼上跑_____了。",
+        "translation": "(He ran down from upstairs.)",
+        "options": [
+          "下来",
+          "下去",
+          "上来",
+          "上去"
+        ],
+        "correct": "下来",
+        "explanation": "下来 (xià lái) means 'come down' (toward speaker). 下 (descend) + 来 (toward speaker). The up/down pair: 上来 (come up), 上去 (go up), 下来 (come down), 下去 (go down). Combined with a verb: 跑下来 (run down toward speaker). If the speaker is downstairs and someone runs down to them, use 下来. If the speaker is upstairs watching someone descend away, use 下去. Context and speaker position determine the correct form every time."
+      },
+      {
+        "id": "ec_drc4",
+        "question": "把书拿_____！",
+        "translation": "(Pick up the book! [toward speaker])",
+        "options": [
+          "起来",
+          "下来",
+          "出来",
+          "过来"
+        ],
+        "correct": "起来",
+        "explanation": "起来 (qǐ lái) as a directional complement means 'up/to rise.' 起 (rise) + 来 (toward speaker). 拿起来 means 'pick up (toward speaker).' 起来 is special because it also has abstract/extended meanings: 想起来 (remember/recall — ideas 'rise up'), 笑起来 (burst out laughing — laughter 'rises up'). These figurative uses make 起来 one of the most versatile directional complements. It can indicate the beginning of an action: 唱起来 (start singing)."
+      },
+      {
+        "id": "ec_drc5",
+        "question": "他朝我走_____了。",
+        "translation": "(He walked over toward me.)",
+        "options": [
+          "过来",
+          "过去",
+          "进来",
+          "出来"
+        ],
+        "correct": "过来",
+        "explanation": "过来 (guò lái) means 'come over' (toward speaker). 过 (cross/pass) + 来 (toward speaker). 走过来 means 'walk over to me.' The opposite 过去 means 'go over (away from speaker).' 过来 also has extended meanings: 明白过来 (come to understand), 醒过来 (wake up/come to). These figurative extensions follow a pattern: movement toward the speaker metaphorically represents 'recovery' or 'realization.' Chinese directionals encode both physical and conceptual movement."
+      },
+      {
+        "id": "ec_drc6",
+        "question": "他从口袋里拿_____一个钱包。",
+        "translation": "(He took out a wallet from his pocket.)",
+        "options": [
+          "出来",
+          "出去",
+          "进来",
+          "下来"
+        ],
+        "correct": "出来",
+        "explanation": "拿出来 (ná chū lái) means 'take out (toward speaker).' When a compound directional has an object, the object can go in different positions: 拿出来一个钱包 (take out a wallet) or 拿出一个钱包来 (take out a wallet — object between 出 and 来). For specific/definite objects, the object usually goes between: 拿出钱包来. For new/indefinite objects, it goes after: 拿出来一个东西. This word order flexibility follows information structure principles."
+      },
+      {
+        "id": "ec_drc7",
+        "question": "汽车开_____了。",
+        "translation": "(The car drove away.)",
+        "options": [
+          "走了",
+          "来了",
+          "进了",
+          "出了"
+        ],
+        "correct": "走了",
+        "explanation": "开走 (kāi zǒu) uses the simple directional complement 走 meaning 'away.' Simple directionals include: 来 (come), 去 (go), 上 (up), 下 (down), 进 (in), 出 (out), 回 (back), 过 (across), 起 (rise), 走 (away), 开 (apart). These simple forms combine with verbs directly: 拿走 (take away), 送走 (send away), 赶走 (chase away). The simple directionals form the building blocks for compound directionals like 走开 (walk apart/go away)."
+      },
+      {
+        "id": "ec_drc8",
+        "question": "她把信寄_____了。",
+        "translation": "(She sent the letter back.)",
+        "options": [
+          "回去",
+          "回来",
+          "出去",
+          "过去"
+        ],
+        "correct": "回去",
+        "explanation": "回去 (huí qù) means 'go back / return (away from speaker).' 回 (return) + 去 (away from speaker). 寄回去 means 'mail back (to where it came from, away from speaker).' If someone returns something to you, use 回来: 寄回来了 (mailed back [to me]). The 回 directional is very common: 走回去 (walk back), 跑回来 (run back here), 带回来 (bring back). The consistency of the 来/去 system means once you master the principle, all directionals become predictable."
+      },
+      {
+        "id": "ec_drc9",
+        "question": "孩子们都跑_____了。",
+        "translation": "(The children all ran up.)",
+        "options": [
+          "上来",
+          "上去",
+          "下来",
+          "下去"
+        ],
+        "correct": "上来",
+        "explanation": "上来 (shàng lái) means 'come up (toward speaker).' If the speaker is upstairs and children run up to them: 跑上来. 上来 also has abstract meanings: 说不上来 (can't put into words — words won't 'come up'), 热起来 (getting hot — temperature 'rising up'). Chinese directional complements create a rich system where physical direction metaphors extend to abstract concepts. Mastering both literal and figurative uses is key to sounding natural and understanding native speakers."
+      },
+      {
+        "id": "ec_drc10",
+        "question": "请把门关_____。",
+        "translation": "(Please close the door [shut].)",
+        "options": [
+          "上",
+          "下",
+          "起",
+          "走"
+        ],
+        "correct": "上",
+        "explanation": "关上 (guān shàng) uses the simple directional 上 meaning 'closed/shut/attached.' Beyond literal 'up,' 上 has extended meanings: 关上 (close shut), 穿上 (put on clothes), 戴上 (put on hat/glasses), 锁上 (lock up). The pattern: 上 indicates 'completion' or 'contact/attachment.' Similarly, 下 means 'off/detachment': 脱下 (take off clothes), 摘下 (take off accessories). These paired directionals (上/下) for putting on and taking off are used daily in Chinese."
+      },
+      {
+        "id": "ec_drc11",
+        "question": "他站_____了。",
+        "translation": "(He stood up.)",
+        "options": [
+          "起来",
+          "上来",
+          "出来",
+          "过来"
+        ],
+        "correct": "起来",
+        "explanation": "站起来 (zhàn qǐ lái) means 'stand up.' 起来 with posture verbs indicates changing to an upright position. Related: 坐起来 (sit up from lying), 爬起来 (climb up/get up). The 起来 complement is incredibly productive in Chinese — it works with nearly any verb to indicate 'starting an action': 哭起来 (start crying), 下起雨来 (start raining), 忙起来 (become busy). This 'inchoative' (beginning) meaning is one of the most useful grammar patterns in conversational Chinese."
+      },
+      {
+        "id": "ec_drc12",
+        "question": "风把帽子吹_____了。",
+        "translation": "(The wind blew the hat off.)",
+        "options": [
+          "走",
+          "来",
+          "上",
+          "起"
+        ],
+        "correct": "走",
+        "explanation": "吹走 (chuī zǒu) means 'blow away.' The directional 走 indicates 'away/gone' — the object has been displaced. Common combinations: 拿走 (take away), 带走 (carry away), 冲走 (wash away), 卷走 (sweep away). 走 as a directional always implies the object ends up somewhere else, separated from its original position. Compare: 吹走 (blown away — gone) vs. 吹倒 (blown over — still here but fallen). The choice of directional complement precisely specifies the result."
+      },
+      {
+        "id": "ec_drc13",
+        "question": "我想不_____他的名字。",
+        "translation": "(I can't recall his name.)",
+        "options": [
+          "起来",
+          "出来",
+          "上来",
+          "过来"
+        ],
+        "correct": "起来",
+        "explanation": "想不起来 (xiǎng bù qǐ lái) means 'can't remember/recall.' This is the figurative use of 起来 — ideas 'rising up' in memory. The potential form inserts 不 (negative) or 得 (positive) between verb and complement: 想得起来 (can remember), 想不起来 (can't remember). Other figurative 起来 patterns: 看起来 (looks like — appearance 'rises up'), 听起来 (sounds like), 闻起来 (smells like). These perception verbs + 起来 express how something appears to the senses."
+      },
+      {
+        "id": "ec_drc14",
+        "question": "快把灯打_____！",
+        "translation": "(Quickly turn on the light!)",
+        "options": [
+          "开",
+          "上",
+          "起",
+          "出"
+        ],
+        "correct": "开",
+        "explanation": "打开 (dǎ kāi) means 'to open/turn on.' The directional 开 means 'open/apart/on.' Common uses: 打开 (open/turn on), 拉开 (pull open), 推开 (push open), 分开 (separate/split apart), 展开 (unfold/develop). The opposite directional for 'close/off' varies: 关上 (close/turn off), 合上 (close together). Notice Chinese uses 上 for closing and 开 for opening — a logical system where 开 (apart) and 上 (together/contact) are conceptual opposites for doors, windows, and devices."
+      },
+      {
+        "id": "ec_drc15",
+        "question": "她把衣服穿_____了。",
+        "translation": "(She put on her clothes.)",
+        "options": [
+          "上",
+          "下",
+          "走",
+          "开"
+        ],
+        "correct": "上",
+        "explanation": "穿上 (chuān shàng) means 'put on (clothes).' The directional 上 here indicates 'attaching onto the body.' The complete clothing system: 穿上 (put on), 脱下 (take off), 换上 (change into), 套上 (slip on over). Each uses a different directional to show the action's result precisely. Note the asymmetry: putting on uses 上 (contact), taking off uses 下 (separation). This consistency extends to accessories: 戴上眼镜 (put on glasses), 摘下帽子 (take off hat). The directional system is beautifully regular."
+      }
+    ]
+  },
+  {
+    "key": "purpose_clauses",
+    "name": "Purpose Clauses (目的从句)",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ec_pur1",
+        "question": "我来中国是_____学中文。",
+        "translation": "(I came to China to study Chinese.)",
+        "options": [
+          "为了",
+          "因为",
+          "所以",
+          "虽然"
+        ],
+        "correct": "为了",
+        "explanation": "为了 (wèi le) means 'in order to / for the purpose of.' It introduces a purpose clause explaining WHY someone does something. Structure: 为了 + purpose + action, or action + 为了 + purpose. 为了学中文，我来了中国 (To study Chinese, I came to China). Unlike English 'to' which is ambiguous, 为了 explicitly marks purpose. Compare: 因为 (because — gives a reason/cause) vs. 为了 (in order to — states a goal). This distinction is clearer in Chinese than in English."
+      },
+      {
+        "id": "ec_pur2",
+        "question": "她努力工作_____多赚钱。",
+        "translation": "(She works hard to earn more money.)",
+        "options": [
+          "为了",
+          "因为",
+          "所以",
+          "但是"
+        ],
+        "correct": "为了",
+        "explanation": "为了 can appear before or after the main clause. Here it connects the action (work hard) with the purpose (earn more). Two valid orders: 她为了多赚钱努力工作 (She, to earn more, works hard) or 她努力工作为了多赚钱 (She works hard to earn more). Both are natural. The front-position (为了....) is slightly more emphatic about the purpose. In formal writing, front-position is preferred. In conversation, both positions are equally common and natural."
+      },
+      {
+        "id": "ec_pur3",
+        "question": "我买了一本书_____看。",
+        "translation": "(I bought a book to read.)",
+        "options": [
+          "来",
+          "去",
+          "为了",
+          "因为"
+        ],
+        "correct": "来",
+        "explanation": "来 (lái) after a verb phrase can express purpose — 'in order to.' This is different from 来 as 'come.' Structure: action + 来 + purpose. 买了一本书来看 = bought a book to read. This casual purpose construction is very common in spoken Chinese and feels more natural than 为了 in simple, everyday sentences. Compare: 我带了伞来挡雨 (I brought an umbrella to block rain). The 来 purpose construction works best for concrete, immediate actions rather than grand life goals."
+      },
+      {
+        "id": "ec_pur4",
+        "question": "他省钱是_____买房子。",
+        "translation": "(He saves money in order to buy a house.)",
+        "options": [
+          "为了",
+          "因为",
+          "所以",
+          "虽然"
+        ],
+        "correct": "为了",
+        "explanation": "是为了 (shì wèi le) adds emphasis: 'it is for the purpose of.' The 是...的 structure can frame purpose: 他省钱是为了买房子 emphasizes that the PURPOSE of saving is to buy a house. Without 是: 他为了买房子省钱 (He saves money to buy a house — more neutral). The 是 highlights and focuses on the purpose element, making it the information focus of the sentence. This emphatic purpose construction is common in explanatory contexts."
+      },
+      {
+        "id": "ec_pur5",
+        "question": "我们_____准备考试，每天都复习。",
+        "translation": "(To prepare for the exam, we review every day.)",
+        "options": [
+          "为了",
+          "因为",
+          "所以",
+          "然后"
+        ],
+        "correct": "为了",
+        "explanation": "为了 at the beginning of a sentence creates a strong purpose-first structure: 为了 + goal, main action. This front-position emphasizes the purpose/motivation. It's especially natural when the purpose is a larger goal that motivates multiple actions: 为了准备考试，我们每天复习，做练习，还请了家教 (To prepare for the exam, we review daily, do exercises, and even hired a tutor). The comma after the purpose clause is standard punctuation in Chinese."
+      },
+      {
+        "id": "ec_pur6",
+        "question": "请你说_____一点。",
+        "translation": "(Please speak more slowly [so I can understand].)",
+        "options": [
+          "慢",
+          "快",
+          "大",
+          "小"
+        ],
+        "correct": "慢",
+        "explanation": "While not using 为了 explicitly, this sentence implies purpose through the request pattern. 说慢一点 (speak a bit slower) implies 'so that I can understand.' Chinese often expresses purpose implicitly through context rather than explicit purpose markers. The pattern Verb + Adjective + 一点 is a polite request form: 写大一点 (write a bit bigger), 走快一点 (walk a bit faster). The implied purpose is understood from context — a feature of Chinese discourse that relies heavily on pragmatic inference."
+      },
+      {
+        "id": "ec_pur7",
+        "question": "她学做饭_____自己能照顾自己。",
+        "translation": "(She learned to cook so that she could take care of herself.)",
+        "options": [
+          "好",
+          "才",
+          "就",
+          "又"
+        ],
+        "correct": "好",
+        "explanation": "好 (hǎo) between two clauses can mean 'so that / in order to.' Structure: action + 好 + result/purpose. 学做饭好自己能照顾自己 = learn cooking so that (she) can take care of herself. This colloquial purpose marker is extremely common in spoken Chinese: 我告诉你好让你知道 (I'm telling you so that you know). It's less formal than 为了 and feels more natural in casual conversation. 好 here retains its core meaning of 'good/satisfactory' — achieving a good outcome."
+      },
+      {
+        "id": "ec_pur8",
+        "question": "他打工_____赚学费。",
+        "translation": "(He works part-time to earn tuition.)",
+        "options": [
+          "来",
+          "去",
+          "是",
+          "又"
+        ],
+        "correct": "来",
+        "explanation": "来 as a purpose marker connects an action to its goal. 打工来赚学费 = work part-time [in order] to earn tuition. The 来 purpose construction is more colloquial than 为了 and limited to relatively simple cause-purpose chains. For complex purposes with conditions or multiple goals, 为了 is preferred. You'll hear 来 purpose construction frequently in daily speech: 我用筷子来吃饭 (I use chopsticks to eat), 他用电脑来工作 (He uses a computer to work)."
+      },
+      {
+        "id": "ec_pur9",
+        "question": "老师让我们多练习，_____提高口语水平。",
+        "translation": "(The teacher told us to practice more, in order to improve our speaking level.)",
+        "options": [
+          "以便",
+          "因为",
+          "所以",
+          "但是"
+        ],
+        "correct": "以便",
+        "explanation": "以便 (yǐ biàn) means 'so as to / in order to' — a formal purpose connector. It's used in formal writing, speeches, and official communications. Compare formality levels: 来 (casual purpose) < 为了 (standard purpose) < 以便 (formal purpose) < 以期 (very formal purpose). 以便 literally means 'so that it's convenient/possible to.' Example: 请提前通知，以便安排 (Please notify in advance so that arrangements can be made). Using the right formality level is crucial for register appropriateness."
+      },
+      {
+        "id": "ec_pur10",
+        "question": "她早起_____赶飞机。",
+        "translation": "(She got up early to catch the flight.)",
+        "options": [
+          "为了",
+          "因为",
+          "所以",
+          "可是"
+        ],
+        "correct": "为了",
+        "explanation": "为了赶飞机她早起 or 她早起为了赶飞机 — both work. This example shows 为了 with a concrete, time-sensitive purpose. Note the difference between purpose and cause: 她早起为了赶飞机 (She got up early TO catch the flight — purpose, she chose to) vs. 她早起因为要赶飞机 (She got up early BECAUSE she needed to catch the flight — cause, explaining why). The distinction: 为了 emphasizes intentional goal-directed behavior; 因为 emphasizes causal explanation."
+      },
+      {
+        "id": "ec_pur11",
+        "question": "我特意来_____看你。",
+        "translation": "(I came specially to see you.)",
+        "options": [
+          "的",
+          "了",
+          "着",
+          "过"
+        ],
+        "correct": "的",
+        "explanation": "来...的 is the 是...的 purpose construction without 是 — emphasizing that seeing you was the specific purpose of coming. 我(是)特意来看你的 means 'I specifically came FOR the purpose of seeing you.' The 的 at the end marks this as a known/decided purpose. Without 的: 我特意来看你 (factual statement). With 的: emphasizes the purposefulness. This 的 cleft-like structure is natural in Chinese for highlighting the intentionality behind an action."
+      },
+      {
+        "id": "ec_pur12",
+        "question": "公司培训员工，_____提高工作效率。",
+        "translation": "(The company trains employees in order to improve work efficiency.)",
+        "options": [
+          "以",
+          "因",
+          "所",
+          "但"
+        ],
+        "correct": "以",
+        "explanation": "以 (yǐ) is a classical/formal purpose marker meaning 'in order to.' It's compact and used in formal writing, slogans, and literary contexts. 培训员工以提高效率 = train employees to improve efficiency. The formality hierarchy: 来→为了→好→以便→以→以期. In modern Chinese, 以 appears in set phrases: 以防万一 (just in case), 以免 (to avoid), 以便 (so as to). It retains its classical Chinese elegance and is commonly seen in newspaper articles, official documents, and academic writing."
+      },
+      {
+        "id": "ec_pur13",
+        "question": "早点出发_____堵车。",
+        "translation": "(Leave early to avoid traffic jams.)",
+        "options": [
+          "以免",
+          "因为",
+          "所以",
+          "虽然"
+        ],
+        "correct": "以免",
+        "explanation": "以免 (yǐ miǎn) means 'in order to avoid / lest / so as not to.' It introduces a negative purpose — what you want to prevent. 早点出发以免堵车 = leave early to avoid traffic. Similar negative purpose markers: 免得 (colloquial version of 以免), 省得 (to save the trouble of). These 'avoidance purpose' markers are especially common in advice and warnings: 多穿点以免感冒 (wear more to avoid catching cold). Chinese has richer vocabulary for negative purpose than English."
+      },
+      {
+        "id": "ec_pur14",
+        "question": "多吃蔬菜_____感冒。",
+        "translation": "(Eat more vegetables to avoid catching a cold.)",
+        "options": [
+          "免得",
+          "因为",
+          "所以",
+          "而且"
+        ],
+        "correct": "免得",
+        "explanation": "免得 (miǎn de) is the colloquial version of 以免, meaning 'to avoid / lest.' 多吃蔬菜免得感冒 = eat more vegetables to avoid catching cold. Compare: 以免 (formal/written) vs. 免得 (spoken/casual) vs. 省得 (even more casual — 'to save the bother'). Example: 我先告诉你，省得你不知道 (I'll tell you first, to save you not knowing). All three express negative purpose but at different formality levels. Choosing the right one signals your register awareness."
+      },
+      {
+        "id": "ec_pur15",
+        "question": "他每天锻炼_____保持健康。",
+        "translation": "(He exercises every day in order to stay healthy.)",
+        "options": [
+          "为了",
+          "因为",
+          "所以",
+          "然后"
+        ],
+        "correct": "为了",
+        "explanation": "This comprehensive example shows 为了 in its most natural context: habitual action motivated by a long-term purpose. 每天锻炼为了保持健康 = exercise daily to stay healthy. Summary of all purpose markers learned: 为了 (standard), 来 (casual), 好 (colloquial), 以便 (formal), 以 (literary), 以免/免得/省得 (negative purpose). Chinese has a richer set of purpose markers than English, allowing speakers to precisely control formality and nuance. Mastering these transforms your Chinese from textbook to natural."
+      }
+    ]
+  },
+  {
+    "key": "cause_effect",
+    "name": "Cause and Effect (因果关系)",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ec_cef1",
+        "question": "_____下雨了，所以我们不去了。",
+        "translation": "(Because it's raining, so we won't go.)",
+        "options": [
+          "因为",
+          "虽然",
+          "如果",
+          "为了"
+        ],
+        "correct": "因为",
+        "explanation": "因为...所以... (yīn wèi...suǒ yǐ...) is the standard cause-effect structure in Chinese: 'because...therefore.' Unlike English where you use either 'because' OR 'so' (not both), Chinese naturally uses BOTH 因为 AND 所以 in the same sentence. 因为下雨了，所以我们不去了 is the complete, standard form. You can also use just one: 因为下雨了，我们不去了 (omit 所以) or 下雨了，所以我们不去了 (omit 因为). The paired form is most common and balanced."
+      },
+      {
+        "id": "ec_cef2",
+        "question": "他生病了，_____没来上课。",
+        "translation": "(He is sick, so he didn't come to class.)",
+        "options": [
+          "所以",
+          "因为",
+          "虽然",
+          "但是"
+        ],
+        "correct": "所以",
+        "explanation": "所以 (suǒ yǐ) means 'therefore/so' and introduces the result/effect clause. When 因为 is omitted, the cause is stated first as a fact, then 所以 introduces the consequence. 他生病了，所以没来 = He's sick, so he didn't come. This shortened form is very common in conversation — speakers often drop 因为 when the causal relationship is obvious. The key word order rule: cause ALWAYS comes before effect in Chinese. You cannot say *所以没来上课，他生病了."
+      },
+      {
+        "id": "ec_cef3",
+        "question": "他成绩好是_____他很努力。",
+        "translation": "(His grades are good because he works very hard.)",
+        "options": [
+          "因为",
+          "所以",
+          "虽然",
+          "如果"
+        ],
+        "correct": "因为",
+        "explanation": "是因为 (shì yīn wèi) creates an emphatic 'it is because' structure. 他成绩好是因为他很努力 emphasizes the REASON. The 是 focuses attention on the cause, similar to English 'It IS because...' This pattern is especially useful when correcting misconceptions or emphasizing the true reason: 他成功不是因为运气，是因为努力 (His success isn't because of luck, it's because of effort). The 是因为 pattern is a powerful rhetorical tool in Chinese argumentation."
+      },
+      {
+        "id": "ec_cef4",
+        "question": "这个城市的空气不好，_____很多人都感冒了。",
+        "translation": "(This city's air is bad, as a result many people caught colds.)",
+        "options": [
+          "因此",
+          "因为",
+          "虽然",
+          "但是"
+        ],
+        "correct": "因此",
+        "explanation": "因此 (yīn cǐ) means 'therefore/as a result' — a more formal alternative to 所以. Used in written Chinese, news, and academic contexts. Compare formality: 所以 (conversational) < 因此 (formal written) < 故 (classical/very formal). 因此 literally means 'because of this' (因 = because, 此 = this). In academic papers: 实验证明...，因此我们可以得出... (Experiments prove..., therefore we can conclude...). Choosing 因此 over 所以 immediately elevates your writing register."
+      },
+      {
+        "id": "ec_cef5",
+        "question": "_____他的帮助，我才完成了。",
+        "translation": "(Thanks to his help, I was able to finish.)",
+        "options": [
+          "多亏",
+          "因为",
+          "所以",
+          "虽然"
+        ],
+        "correct": "多亏",
+        "explanation": "多亏 (duō kuī) means 'thanks to / fortunately because of.' It introduces a cause with POSITIVE connotation — gratitude for a favorable cause. 多亏他的帮助 = thanks to his help. Compare: 因为 (neutral cause), 多亏 (positive/grateful cause), 由于 (formal neutral cause). You cannot use 多亏 for negative causes: *多亏下雨了我们没去成 (wrong — rain is negative). Instead: 因为下雨了. 多亏 is exclusively for causes you're thankful for, making it emotionally marked unlike the neutral 因为."
+      },
+      {
+        "id": "ec_cef6",
+        "question": "_____交通堵塞，会议推迟了。",
+        "translation": "(Due to traffic congestion, the meeting was postponed.)",
+        "options": [
+          "由于",
+          "虽然",
+          "如果",
+          "为了"
+        ],
+        "correct": "由于",
+        "explanation": "由于 (yóu yú) means 'due to / owing to' — a formal cause marker used in written Chinese, news reports, and official communications. Structure: 由于 + cause, result. 由于交通堵塞，会议推迟了 = Due to traffic, the meeting was delayed. Compare: 因为 (everyday spoken) vs. 由于 (formal written). 由于 often appears with 因此 as its paired effect marker: 由于...因此... (Due to...therefore...). This pairing is standard in academic and business Chinese writing."
+      },
+      {
+        "id": "ec_cef7",
+        "question": "他太累了，_____就睡着了。",
+        "translation": "(He was too tired, so he fell asleep.)",
+        "options": [
+          "就",
+          "才",
+          "又",
+          "还"
+        ],
+        "correct": "就",
+        "explanation": "就 (jiù) can express natural consequence — 'and so / then naturally.' 太累了就睡着了 = so tired that (he) naturally fell asleep. The 就 here implies the result follows naturally and quickly from the cause. Compare: 所以 (deliberate/logical consequence) vs. 就 (natural/inevitable consequence). 下雨了就不去了 (It rained so naturally/we just won't go) feels more casual and inevitable than 下雨了所以不去了 (It rained therefore we won't go — more reasoned). 就 makes the cause-effect feel automatic."
+      },
+      {
+        "id": "ec_cef8",
+        "question": "他_____很聪明，考试总是第一名。",
+        "translation": "(He is so smart, [that] he always ranks first in exams.)",
+        "options": [
+          "那么",
+          "因为",
+          "虽然",
+          "如果"
+        ],
+        "correct": "那么",
+        "explanation": "那么 (nà me) meaning 'so/that' can express degree-caused results. 他那么聪明 = He's THAT smart (cause/degree), 考试总是第一名 = always first on exams (effect). This degree-result pattern doesn't use 因为/所以 — instead, the extreme degree itself implies causation. Similar patterns: 这么好吃 (so delicious that...), 那么远 (so far that...). Chinese often uses 这么/那么 + adjective to set up an implied cause, with the effect following naturally. It's more vivid and expressive than explicit 因为."
+      },
+      {
+        "id": "ec_cef9",
+        "question": "没带伞_____淋了一身雨。",
+        "translation": "(Didn't bring an umbrella, as a result got soaked in rain.)",
+        "options": [
+          "结果",
+          "因为",
+          "虽然",
+          "但是"
+        ],
+        "correct": "结果",
+        "explanation": "结果 (jié guǒ) means 'as a result / in the end' — it introduces an (often unexpected or unfortunate) consequence. 没带伞结果淋了雨 = didn't bring umbrella, as a result got soaked. 结果 often carries a sense of 'and then what happened was...' with slight surprise or irony. It's narrative in nature: 他准备了很久，结果还是没通过 (He prepared for a long time, but in the end still didn't pass). 结果 can introduce both expected and unexpected outcomes but has a storytelling quality."
+      },
+      {
+        "id": "ec_cef10",
+        "question": "他_____不吃早饭，所以身体不好。",
+        "translation": "(He always skips breakfast, so his health is poor.)",
+        "options": [
+          "总是",
+          "已经",
+          "正在",
+          "刚才"
+        ],
+        "correct": "总是",
+        "explanation": "总是 (zǒng shì) means 'always' and here establishes a habitual cause leading to a chronic effect. 总是不吃早饭 (always skips breakfast) → 身体不好 (poor health). Chinese cause-effect structures work seamlessly with time/frequency adverbs: 经常...所以... (often...so...), 从来不...因此... (never...therefore...). The combination of habitual adverb + cause-effect creates a 'lifestyle consequence' pattern that's common in health advice, parenting discussions, and life philosophy in Chinese culture."
+      },
+      {
+        "id": "ec_cef11",
+        "question": "她说话太快，_____我听不懂。",
+        "translation": "(She speaks too fast, so I can't understand.)",
+        "options": [
+          "所以",
+          "因为",
+          "虽然",
+          "但是"
+        ],
+        "correct": "所以",
+        "explanation": "太...所以... is a degree-cause-effect pattern. 太快 (too fast — the degree is the cause) → 听不懂 (can't understand — the effect). The word 太 (tài, too) inherently creates a cause-effect dynamic because 'too much' of something naturally leads to problems. Other examples: 太贵所以没买 (too expensive so didn't buy), 太远所以开车去 (too far so drove). The 太 pattern is one of the most natural ways to express cause-effect in daily Chinese conversation."
+      },
+      {
+        "id": "ec_cef12",
+        "question": "正是_____如此，我们才要更加努力。",
+        "translation": "(Precisely because of this, we must work even harder.)",
+        "options": [
+          "因为",
+          "虽然",
+          "如果",
+          "所以"
+        ],
+        "correct": "因为",
+        "explanation": "正是因为...才... (zhèng shì yīn wèi...cái...) is an emphatic pattern: 'precisely because of...only then...' The 正是 (precisely/exactly) intensifies 因为, and 才 emphasizes that the result is specifically triggered by this cause. This is a powerful rhetorical structure: 正是因为困难，我们才要坚持 (Precisely because it's difficult, we must persist). It's frequently used in motivational speeches, editorials, and persuasive writing. The 正是...才 frame demands attention and conviction."
+      },
+      {
+        "id": "ec_cef13",
+        "question": "他一紧张_____说不出话来。",
+        "translation": "(As soon as he gets nervous, he can't speak.)",
+        "options": [
+          "就",
+          "才",
+          "又",
+          "还"
+        ],
+        "correct": "就",
+        "explanation": "一...就... (yī...jiù...) expresses an immediate or automatic cause-effect: 'as soon as...then...' 一紧张就说不出话 = the moment (he) gets nervous, (he) can't speak. This pattern highlights an instantaneous or habitual trigger-response relationship. Common: 一下雨就堵车 (whenever it rains, traffic jams), 一看书就困 (as soon as opens a book, gets sleepy). The 一...就 pattern is more vivid than 因为...所以 because it captures the immediacy and automaticity of the cause-effect connection."
+      },
+      {
+        "id": "ec_cef14",
+        "question": "经济发展_____了环境问题。",
+        "translation": "(Economic development caused environmental problems.)",
+        "options": [
+          "导致",
+          "因为",
+          "所以",
+          "虽然"
+        ],
+        "correct": "导致",
+        "explanation": "导致 (dǎo zhì) means 'to lead to / to cause / to result in.' It's a formal cause-effect VERB rather than a conjunction. Structure: cause + 导致 + effect. 经济发展导致了环境问题 = Economic development caused environmental issues. Similar formal cause verbs: 造成 (cause/create problems), 引起 (give rise to), 促使 (prompt/drive). These are essential for academic writing, news reporting, and formal analysis. 导致 usually implies negative consequences; for positive outcomes, use 促进 (promote) or 带来 (bring about)."
+      },
+      {
+        "id": "ec_cef15",
+        "question": "_____是这样，我们也不能放弃。",
+        "translation": "(Even though this is the case, we still can't give up.)",
+        "options": [
+          "即使",
+          "因为",
+          "所以",
+          "为了"
+        ],
+        "correct": "即使",
+        "explanation": "即使 (jí shǐ) means 'even if / even though' — it introduces a concessive cause that does NOT lead to the expected effect. 即使是这样，也不能放弃 = Even if that's the case, still can't give up. This contrasts with 因为...所以 (expected cause→effect). 即使...也... breaks the expected causal chain: the cause exists but the expected consequence is denied. Compare: 虽然...但是 (although...but — factual concession) vs. 即使...也 (even if...still — hypothetical/strong concession). 即使 is stronger and more determined."
+      }
+    ]
+  },
+  {
+    "key": "reported_speech",
+    "name": "Reported Speech (转述/间接引语)",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ec_rsp1",
+        "question": "他说他明天_____来。",
+        "translation": "(He said he would come tomorrow.)",
+        "options": [
+          "会",
+          "了",
+          "着",
+          "过"
+        ],
+        "correct": "会",
+        "explanation": "Chinese reported speech is simpler than English — no tense backshift is needed. 他说他明天会来 (He said he would come tomorrow) keeps the original tense. In English, 'will' changes to 'would,' but Chinese 会 stays as 会. The basic reported speech pattern: subject + 说 + reported content. Chinese reports speech almost as a direct quotation without tense changes. This is a major advantage for English speakers learning Chinese: you simply attach 说 and reproduce the original statement. No complex sequence-of-tenses rules to memorize."
+      },
+      {
+        "id": "ec_rsp2",
+        "question": "老师_____我们明天要考试。",
+        "translation": "(The teacher told us we'll have an exam tomorrow.)",
+        "options": [
+          "告诉",
+          "说了",
+          "讲了",
+          "问了"
+        ],
+        "correct": "告诉",
+        "explanation": "告诉 (gào sù) means 'to tell (someone something).' Structure: subject + 告诉 + person + content. 老师告诉我们 = the teacher told us. Unlike 说 (say, no person needed), 告诉 requires both a person AND content. You cannot say *告诉明天考试 (must include who was told). Compare: 说 (say — general), 告诉 (tell someone), 通知 (notify — formal), 转告 (pass on a message). Each reporting verb has different structural requirements. 告诉 is the most common for reporting to specific people."
+      },
+      {
+        "id": "ec_rsp3",
+        "question": "她问我_____去过中国。",
+        "translation": "(She asked me whether I had been to China.)",
+        "options": [
+          "有没有",
+          "有了",
+          "有着",
+          "有的"
+        ],
+        "correct": "有没有",
+        "explanation": "Reported questions use 有没有 (yǒu méi yǒu) for yes/no questions. 她问我有没有去过中国 = She asked me whether I had been to China. In Chinese, reported yes/no questions use the A-not-A structure (有没有, 是不是, 去不去) or 是否 (formal). No 'if/whether' marker like English is needed — the A-not-A structure itself signals it's a question. For wh-questions, keep the question word: 她问我去了哪里 (She asked where I went). Chinese reported questions retain question markers rather than changing word order."
+      },
+      {
+        "id": "ec_rsp4",
+        "question": "妈妈让我_____作业。",
+        "translation": "(Mom told me to do my homework.)",
+        "options": [
+          "做",
+          "做了",
+          "做着",
+          "做的"
+        ],
+        "correct": "做",
+        "explanation": "让 (ràng) reports commands/requests: 'told someone to / made someone do.' 妈妈让我做作业 = Mom told me to do homework. The reported command in Chinese uses 让 + person + verb (bare verb, no tense marker). Other command-reporting verbs: 叫 (jiào, tell/order — slightly informal), 要求 (yāo qiú, require — formal), 命令 (mìng lìng, command — very formal). The structure stays simple: Reporter + 让/叫 + person + action. No infinitive 'to' is needed as in English."
+      },
+      {
+        "id": "ec_rsp5",
+        "question": "他_____他不想去。",
+        "translation": "(He said he doesn't want to go.)",
+        "options": [
+          "说",
+          "告诉",
+          "问",
+          "让"
+        ],
+        "correct": "说",
+        "explanation": "说 (shuō) is the most basic reporting verb. Structure: subject + 说 + content. 他说他不想去 = He said he doesn't want to go. Notice: Chinese does not change the pronouns systematically like English ('I don't want' → 'he doesn't want'). In 他说他不想去, the second 他 refers to the speaker himself. Context determines reference. In practice, this rarely causes confusion because Chinese relies heavily on context. When ambiguity could arise, Chinese speakers add names: 他说小明不想去."
+      },
+      {
+        "id": "ec_rsp6",
+        "question": "她跟我说她_____换工作了。",
+        "translation": "(She told me that she has changed jobs.)",
+        "options": [
+          "已经",
+          "正在",
+          "将要",
+          "没有"
+        ],
+        "correct": "已经",
+        "explanation": "跟...说 (gēn...shuō) means 'tell someone / say to someone.' 她跟我说 = She told me. This is more conversational than 告诉. The reported content 已经换工作了 uses 已经...了 (already...completed) to report a completed action. Again, no tense backshift: the original statement was 我已经换工作了 (I've already changed jobs), reported exactly the same way. Chinese reported speech preserves the original time reference entirely, making it structurally much simpler than English indirect speech."
+      },
+      {
+        "id": "ec_rsp7",
+        "question": "他问我_____学中文。",
+        "translation": "(He asked me why I study Chinese.)",
+        "options": [
+          "为什么",
+          "什么",
+          "怎么",
+          "哪里"
+        ],
+        "correct": "为什么",
+        "explanation": "Reported wh-questions keep the question word in place. 他问我为什么学中文 = He asked me why I study Chinese. The word order doesn't change like in English ('Why do you study' → 'why I study'). Chinese reported questions maintain the same word order as direct questions — the only change is adding the reporting frame (他问我). This applies to all wh-words: 他问我什么时候来 (asked when), 他问我在哪里 (asked where), 他问我怎么去 (asked how). Beautifully simple and consistent."
+      },
+      {
+        "id": "ec_rsp8",
+        "question": "老师_____我们好好复习。",
+        "translation": "(The teacher asked us to review well.)",
+        "options": [
+          "叫",
+          "说",
+          "问",
+          "跟"
+        ],
+        "correct": "叫",
+        "explanation": "叫 (jiào) for reported commands means 'told/ordered someone to.' It's slightly more casual than 让. 老师叫我们好好复习 = The teacher told us to review thoroughly. Nuance differences: 让 (let/allow/tell — neutral), 叫 (call on/tell — slightly more direct), 要求 (require — formal demand), 请 (request — polite). The choice reveals the speaker's attitude toward the command: 老师请我们复习 (teacher kindly requested) vs. 老师叫我们复习 (teacher told us to) vs. 老师要求我们复习 (teacher required us to)."
+      },
+      {
+        "id": "ec_rsp9",
+        "question": "他提到他下个月要_____。",
+        "translation": "(He mentioned he's going to get married next month.)",
+        "options": [
+          "结婚",
+          "结婚了",
+          "结了婚",
+          "结婚着"
+        ],
+        "correct": "结婚",
+        "explanation": "提到 (tí dào) means 'to mention.' 他提到 = He mentioned. The reported future event uses 要 + verb: 要结婚 (going to get married). Notice 结婚 is a V-O compound (结 + 婚), so no extra 了 is needed here since the action hasn't happened yet. Reporting verbs in Chinese have rich variety: 说 (say), 告诉 (tell), 提到 (mention), 表示 (express/state), 声称 (claim), 透露 (reveal/disclose), 承认 (admit), 否认 (deny). Each adds different nuance to the reported content."
+      },
+      {
+        "id": "ec_rsp10",
+        "question": "据说这家餐厅的菜_____好吃。",
+        "translation": "(It is said that this restaurant's food is very delicious.)",
+        "options": [
+          "很",
+          "了",
+          "着",
+          "过"
+        ],
+        "correct": "很",
+        "explanation": "据说 (jù shuō) means 'it is said / reportedly / according to hearsay.' It introduces information from unspecified sources. 据说这家餐厅很好吃 = It's said this restaurant is delicious. This impersonal reporting form has several variants: 据说 (hearsay), 据报道 (according to reports), 据了解 (according to understanding), 听说 (heard that — personal hearsay). 听说 is more casual and personal (I heard), while 据说 is more general and formal (people say). Both are essential for sharing secondhand information in Chinese."
+      },
+      {
+        "id": "ec_rsp11",
+        "question": "我_____他很快就会回来。",
+        "translation": "(I heard that he'll come back very soon.)",
+        "options": [
+          "听说",
+          "看到",
+          "觉得",
+          "希望"
+        ],
+        "correct": "听说",
+        "explanation": "听说 (tīng shuō) means 'I heard (that)' — the most common way to report hearsay in casual Chinese. Structure: 听说 + reported content. No 'that' conjunction is needed. 听说他很快回来 = I heard he'll be back soon. 听说 is incredibly frequent in daily conversation: 听说你要去日本？(Heard you're going to Japan?), 听说那个电影很好看 (Heard that movie is good). It naturally introduces information you received from others and is essential for everyday Chinese communication."
+      },
+      {
+        "id": "ec_rsp12",
+        "question": "他答应_____帮我搬家。",
+        "translation": "(He promised to help me move.)",
+        "options": [
+          "会",
+          "了",
+          "着",
+          "过"
+        ],
+        "correct": "会",
+        "explanation": "答应 (dā yìng) means 'to promise / to agree to.' Reporting promises: 他答应会帮我搬家 = He promised he would help me move. The 会 indicates future commitment. Other promise/commitment reporting verbs: 保证 (guarantee), 发誓 (swear), 承诺 (pledge — formal). Chinese reported promises are straightforward: reporter + 答应 + content. No tense change needed. 他答应了 can also stand alone meaning 'He agreed/promised' without specifying the content, when context makes it clear."
+      },
+      {
+        "id": "ec_rsp13",
+        "question": "她抱怨说天气_____热。",
+        "translation": "(She complained that the weather is too hot.)",
+        "options": [
+          "太",
+          "很",
+          "最",
+          "真"
+        ],
+        "correct": "太",
+        "explanation": "抱怨说 (bào yuàn shuō) means 'complained (saying).' Notice the pattern: attitude verb + 说 + content. This is a productive Chinese pattern: 笑着说 (said laughingly), 生气地说 (said angrily), 高兴地说 (said happily). The 说 anchors the reported content while the preceding word reveals the speaker's attitude. 抱怨说太热 reports both the complaint AND the content. This 'manner of speaking' + 说 pattern enriches Chinese narrative and is heavily used in storytelling, novels, and daily conversation."
+      },
+      {
+        "id": "ec_rsp14",
+        "question": "报道_____明天气温会下降。",
+        "translation": "(Reports say the temperature will drop tomorrow.)",
+        "options": [
+          "称",
+          "说",
+          "问",
+          "让"
+        ],
+        "correct": "称",
+        "explanation": "称 (chēng) means 'state/claim' — a formal reporting verb used in news and official communication. 报道称 = reports state/claim. This is journalistic Chinese: 报道称...据悉...消息人士表示... (Reports state...it is learned...sources indicate...). For news reading comprehension, knowing formal reporting verbs is essential: 称 (claim/state), 指出 (point out), 强调 (emphasize), 表示 (express), 透露 (disclose/reveal). Each carries different implications about the reliability and nature of the reported information."
+      },
+      {
+        "id": "ec_rsp15",
+        "question": "他建议我们_____坐地铁去。",
+        "translation": "(He suggested that we take the subway.)",
+        "options": [
+          "还是",
+          "因为",
+          "虽然",
+          "但是"
+        ],
+        "correct": "还是",
+        "explanation": "建议 (jiàn yì) means 'to suggest.' Reported suggestions: 他建议我们还是坐地铁去 = He suggested we'd better take the subway. The 还是 adds a nuance of 'it would be better to.' Chinese has multiple suggestion-reporting verbs: 建议 (suggest), 推荐 (recommend), 提议 (propose), 劝 (advise/persuade). Summary of reported speech in Chinese: no tense changes, keep original word order for questions, use appropriate reporting verbs (说/告诉/问/让/叫/建议), and leverage attitude markers to enrich the narrative. Simpler than English but equally expressive."
+      }
+    ]
   }
 ]

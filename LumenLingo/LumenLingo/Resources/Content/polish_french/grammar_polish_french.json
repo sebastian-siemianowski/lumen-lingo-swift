@@ -14910,5 +14910,1015 @@
         "explanation": "'Très froid' = bardzo zimno. 'Très' modyfikuje przymiotnik/przysłówek: très froid, très chaud, très vite. 'Trop froid' = za zimno (przesada). 'Beaucoup' modyfikuje czasownik (nie przymiotnik!): il travaille beaucoup (dużo pracuje). 'Couvrez-vous' — imperatif od 'se couvrir' (ubierać się ciepło) w formie vous. Imperatif bierze formę vous bez podmiotu: Couvrez-vous ! Asseyez-vous ! Dépêchez-vous !"
       }
     ]
+  },
+  {
+    "key": "achats_argent",
+    "name": "Achats et argent (zakupy i pieniadze)",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pf_ach1",
+        "question": "Ce pantalon _____ cinquante euros.",
+        "translation": "(Te spodnie kosztuja piedziesiat euro)",
+        "options": [
+          "coute",
+          "coutent",
+          "cout",
+          "coutera"
+        ],
+        "correct": "coute",
+        "explanation": "'Ce pantalon coute' — 'pantalon' (spodnie) jest w liczbie POJEDYNCZEJ we francuskim! W polskim 'spodnie' sa w liczbie mnogiej (plurale tantum), ale po francusku 'un pantalon' = jeden przedmiot. Dlatego czasownik w l.poj.: 'coute'. Inne ubrania w l.poj. po francusku: un jean, un short, un pyjama. To czesty blad polskoojezycznych uczniow!"
+      },
+      {
+        "id": "pf_ach2",
+        "question": "Je voudrais _____ ce pull en taille M.",
+        "translation": "(Chcialbym przymierzyc ten sweter w rozmiarze M)",
+        "options": [
+          "essayer",
+          "essaier",
+          "essaye",
+          "essayez"
+        ],
+        "correct": "essayer",
+        "explanation": "'Essayer' (przymierzyc/sprobowac) — po 'voudrais' uzywamy bezokolicznika! 'Je voudrais essayer' = chcialbym przymierzyc. 'Essayer' odmienia sie z dwoma wariantami: j'essaie/j'essaye, tu essaies/tu essayes. Obydwie formy sa poprawne. W sklepie warto znac: 'la cabine d'essayage' (przymierzalnia), 'est-ce que je peux essayer?' (czy moge przymierzyc?)."
+      },
+      {
+        "id": "pf_ach3",
+        "question": "Vous payez _____ carte ou en especes?",
+        "translation": "(Placiecie karta czy gotowka?)",
+        "options": [
+          "par",
+          "en",
+          "avec",
+          "de"
+        ],
+        "correct": "par",
+        "explanation": "'Payer par carte' (placic karta) — przyimki z platnoscia: 'par carte' (karta), 'en especes/en liquide' (gotowka), 'par cheque' (czekiem), 'par virement' (przelewem). UWAGA: 'en especes' (gotowka) — 'especes' to faux ami! NIE oznacza 'gatunkow' w tym kontekscie, lecz 'gotowke'. W polskim: 'placic karta' — narzednik bez przyimka, we francuskim potrzeba 'par'."
+      },
+      {
+        "id": "pf_ach4",
+        "question": "Il y a une _____ de trente pour cent sur tous les articles.",
+        "translation": "(Jest znizka trzydziestu procent na wszystkie artykuly)",
+        "options": [
+          "reduction",
+          "redaction",
+          "restitution",
+          "resolution"
+        ],
+        "correct": "reduction",
+        "explanation": "'Une reduction' (znizka/obnizka) — slownictwo zakupowe: 'soldes' (wyprzedaz), 'promotion' (promocja), 'remise' (rabat), 'reduction' (znizka). 'En solde' = na wyprzedazy. UWAGA: 'les soldes' sa rodzaju MESKIEGO w l.mn. (mimo zenskiej koncowki!): 'les grands soldes d'hiver'. W Polsce mamy 'przeceny' i 'wyprzedaze' — podobny system, ale bez rozroznien rodzajowych."
+      },
+      {
+        "id": "pf_ach5",
+        "question": "Est-ce que vous _____ rendre cet article?",
+        "translation": "(Czy mozecie przyjac zwrot tego artykulu?)",
+        "options": [
+          "pouvez",
+          "pouvons",
+          "peuvent",
+          "peux"
+        ],
+        "correct": "pouvez",
+        "explanation": "'Vous pouvez' (czy mozecie/Pan moze) — forma grzecznosciowa 'vous'. W sklepie uzywamy 'vous' nawet do jednej osoby (forma grzecznosciowa). 'Rendre un article' = zwrocic towar. Przydatne zwroty: 'je voudrais un remboursement' (chcialbym zwrot pieniedzy), 'avez-vous le ticket de caisse?' (macie paragon?), 'c'est echangeable?' (czy to mozna wymienic?)."
+      },
+      {
+        "id": "pf_ach6",
+        "question": "Cette robe est en _____ dans la vitrine.",
+        "translation": "(Ta sukienka jest na wystawie)",
+        "options": [
+          "montre",
+          "exposition",
+          "vitrine",
+          "affichage"
+        ],
+        "correct": "montre",
+        "explanation": "'Etre en montre' (byc wystawionym/na wystawie) — nie mylc z 'une montre' (zegarek)! 'La vitrine' to sama witryna/wystawa sklepowa, ale 'etre en montre' = byc wystawionym. Inne wyrazenia sklepowe: 'faire du leche-vitrines' (ogladac wystawy — dosloswnie: lizac wystawy!), 'faire les magasins/les boutiques' (chodzic po sklepach). W polskim: 'ogladac wystawy' — neutralniej."
+      },
+      {
+        "id": "pf_ach7",
+        "question": "Je cherche un cadeau _____ ma mere.",
+        "translation": "(Szukam prezentu dla mojej mamy)",
+        "options": [
+          "pour",
+          "a",
+          "de",
+          "par"
+        ],
+        "correct": "pour",
+        "explanation": "'Un cadeau pour' (prezent dla) — 'pour' = dla (przeznaczenie). Porownaj: 'un cadeau de ma mere' = prezent OD mamy. Przyimek zmienia calkowicie znaczenie! 'Chercher' (szukac) nie wymaga przyimka przed dopelnieniem bezposrednim: 'je cherche un cadeau' (szukam prezentu). W polskim 'szukac' wymaga dopelniacza: 'szukam prezentu' — ciekawe, ze oba jezyki maja tu szczegooolna skladnie."
+      },
+      {
+        "id": "pf_ach8",
+        "question": "Le prix a _____ de dix pour cent.",
+        "translation": "(Cena wzrosla o dziesiec procent)",
+        "options": [
+          "augmente",
+          "augmenter",
+          "augmentait",
+          "augmentes"
+        ],
+        "correct": "augmente",
+        "explanation": "'Le prix a augmente' (cena wzrosla) — passe compose z 'avoir': augmenter jest przechodni lub nieprzechodni. Tu jest nieprzechodni (cena sama wzrosla). 'Augmenter de 10%' = wzrosnac o 10%. Antonim: 'baisser/diminuer' (spadac/zmniejszac sie). W ekonomii: 'la hausse' (wzrost), 'la baisse' (spadek), 'la flambee des prix' (gwaltowny wzrost cen). W polskim: 'cena wzrosla' — identyczna logika."
+      },
+      {
+        "id": "pf_ach9",
+        "question": "Combien _____ ce livre, s'il vous plait?",
+        "translation": "(Ile kosztuje ta ksiazka, prosze?)",
+        "options": [
+          "coute",
+          "coutent",
+          "coutera",
+          "coutait"
+        ],
+        "correct": "coute",
+        "explanation": "'Combien coute...?' (ile kosztuje...?) — podstawowe pytanie zakupowe. Warianty: 'combien ca coute?' (ile to kosztuje? — potoczne), 'quel est le prix de...?' (jaka jest cena...? — formalne), 'c'est combien?' (ile? — bardzo potoczne). UWAGA: 'couter' NIGDY nie uzywa 'etre' w passe compose: 'ca a coute 20 euros' (NIE 'ca est coute'). W polskim: 'ile kosztuje?' — identyczna struktura."
+      },
+      {
+        "id": "pf_ach10",
+        "question": "Je vais retirer de l'argent au _____.",
+        "translation": "(Ide wyplacic pieniadze z bankomatu)",
+        "options": [
+          "distributeur",
+          "distribuer",
+          "distribution",
+          "distributrice"
+        ],
+        "correct": "distributeur",
+        "explanation": "'Un distributeur (automatique de billets)' = bankomat (DAB). Potocznie mowi sie tez 'un distributeur' lub po prostu 'la machine'. Inne urzadzenia: 'un distributeur de boissons' (automat z napojami). Slownictwo bankowe: 'retirer' (wyplacic), 'deposer' (wplacic), 'virer' (przelac), 'un compte bancaire' (konto bankowe), 'une carte bleue' (karta platnicza — od koloru Visa we Francji!)."
+      },
+      {
+        "id": "pf_ach11",
+        "question": "Nous devons faire des _____ pour les vacances.",
+        "translation": "(Musimy robic oszczednosci na wakacje)",
+        "options": [
+          "economies",
+          "economiques",
+          "economisations",
+          "epargnes"
+        ],
+        "correct": "economies",
+        "explanation": "'Faire des economies' (oszczedzac/robic oszczednosci) — to utrwalone wyrazenie. 'Economie' (l.poj.) = gospodarka/ekonomia, 'economies' (l.mn.) = oszczednosci. Porownaj: 'l'economie francaise' (gospodarka francuska) vs 'faire des economies' (oszczedzac). 'Epargne' (oszczednosc) jest bardziej finansowe: 'un compte d'epargne' (konto oszczednosciowe). W polskim: 'ekonomia' vs 'oszczednosci' — podobna roznica."
+      },
+      {
+        "id": "pf_ach12",
+        "question": "Le vendeur m'a fait une _____ de cinq euros.",
+        "translation": "(Sprzedawca zrobil mi rabat pieciu euro)",
+        "options": [
+          "remise",
+          "soumission",
+          "reduction",
+          "reclamation"
+        ],
+        "correct": "remise",
+        "explanation": "'Une remise' (rabat/znizka) — synonim 'reduction', ale 'remise' jest czesciej uzywane w kontekscie indywidualnego targowania sie. 'Faire une remise' = dac rabat. Porownaj: 'une reduction' (znizka ogolna, np. w sklepie), 'une remise' (rabat negocjowany), 'une ristourne' (rabat za ilosc/zniazka dla stalych klientow). W polskim: 'rabat' i 'znizka' — mniej niuansow niz we francuskim."
+      },
+      {
+        "id": "pf_ach13",
+        "question": "Cette boutique n'accepte pas les _____ bancaires.",
+        "translation": "(Ten sklep nie przyjmuje kart bankowych)",
+        "options": [
+          "cartes",
+          "carte",
+          "cartons",
+          "billets"
+        ],
+        "correct": "cartes",
+        "explanation": "'Les cartes bancaires' (karty bankowe) — liczba mnoga, bo mowa o kartach ogolnie. 'Carte bancaire' = karta bankowa, 'carte de credit' = karta kredytowa, 'carte de debit' = karta debetowa. We Francji popularna jest 'carte bleue' (niebieska karta) — potoczna nazwa karty platniczej od koloru pierwszych kart Visa. W polskim: 'karta platnicza', 'karta kredytowa' — podobne rozroznienia."
+      },
+      {
+        "id": "pf_ach14",
+        "question": "Je dois _____ mes impots avant la fin du mois.",
+        "translation": "(Musze zaplacic podatki przed koncem miesiaca)",
+        "options": [
+          "payer",
+          "payez",
+          "paye",
+          "payant"
+        ],
+        "correct": "payer",
+        "explanation": "'Devoir + infinitif': 'je dois payer' (musze zaplacic). 'Les impots' (podatki) — slowie kluczowe we Francji, gdzie podatki sa stosunkowo wysokie. 'Payer ses impots' (placic podatki), 'la declaration d'impots' (zeznanie podatkowe), 'le fisc' (urzad skarbowy). UWAGA: 'payer' + COD (bez przyimka): 'payer les impots', 'payer la facture' (zaplacic rachunek). W polskim: 'placic podatki' — tez bez przyimka."
+      },
+      {
+        "id": "pf_ach15",
+        "question": "Est-ce que je peux avoir la _____, s'il vous plait?",
+        "translation": "(Czy moge prosic o rachunek?)",
+        "options": [
+          "addition",
+          "facture",
+          "note",
+          "compte"
+        ],
+        "correct": "addition",
+        "explanation": "'L'addition' (rachunek w restauracji) — UWAGA na kontekst! 'L'addition' = rachunek w restauracji/kawiarni, 'la facture' = faktura/rachunek za uslugi (praca, naprawa), 'la note' = rachunek w hotelu, 'le releve' = wyciag bankowy. W polskim mamy 'rachunek' dla wszystkiego. We francuskim kontekst wyznacza slowo. Zdanine 'l'addition, s'il vous plait' to jedna z najczestszych fraz w restauracji."
+      }
+    ]
+  },
+  {
+    "key": "logement_maison",
+    "name": "Logement et maison (mieszkanie i dom)",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pf_log1",
+        "question": "Nous _____ un appartement dans le centre-ville.",
+        "translation": "(Wynajmujemy mieszkanie w centrum miasta)",
+        "options": [
+          "louons",
+          "louent",
+          "louer",
+          "louez"
+        ],
+        "correct": "louons",
+        "explanation": "'Louer' (wynajmowac) — UWAGA: 'louer' oznacza zarowno 'wynajmowac' (jako najemca) jak i 'wynajmowac' (jako wlasciciel)! Kontekst decyduje. 'Nous louons un appartement' = wynajmujemy (jestesmy najemcami). 'Je loue ma maison a des etudiants' = wynajmuje moj dom studentom (jestem wlascicielem). W polskim mamy te sama dwuznacznosc: 'wynajmowac'."
+      },
+      {
+        "id": "pf_log2",
+        "question": "Le _____ est inclus dans le prix du loyer.",
+        "translation": "(Ogrzewanie jest wliczone w cene czynszu)",
+        "options": [
+          "chauffage",
+          "chauffement",
+          "chauffe",
+          "chauffeur"
+        ],
+        "correct": "chauffage",
+        "explanation": "'Le chauffage' (ogrzewanie) — nie mylc z 'le chauffeur' (kierowca)! Oba pochodza od 'chauffer' (grzac), ale maja zupelnie rozne znaczenia. 'Le loyer' = czynsz, 'les charges' = oplaty eksploatacyjne, 'inclus' = wliczone. Zwrot 'charges comprises' (oplaty wliczone) lub 'hors charges' (bez oplat) — kluczowe przy szukaniu mieszkania we Francji. W polskim: 'czynsz' obejmuje czesto oplaty."
+      },
+      {
+        "id": "pf_log3",
+        "question": "Il faut _____ un etat des lieux avant d'emmenager.",
+        "translation": "(Trzeba zrobic protokol zdawczo-odbiorczy przed wprowadzeniem sie)",
+        "options": [
+          "faire",
+          "fait",
+          "fais",
+          "ferait"
+        ],
+        "correct": "faire",
+        "explanation": "'Il faut + infinitif' = trzeba. 'L'etat des lieux' (protokol zdawczo-odbiorczy) to termin prawny oznaczajacy opis stanu mieszkania przy wejsciu i wyjsciu najemcy. Jest OBOWIAZKOWY we Francji. 'Emmenager' = wprowadzac sie, 'demenager' = wyprowadzac sie. UWAGA: 'emmenager' (z 'em-' = do srodka), 'demenager' (z 'de-' = na zewnatrz). W polskim: 'wprowadzic sie' vs 'wyprowadzic sie'."
+      },
+      {
+        "id": "pf_log4",
+        "question": "La cuisine est _____ equipee avec tous les appareils.",
+        "translation": "(Kuchnia jest w pelni wyposanzona we wszystkie urzadzenia)",
+        "options": [
+          "entierement",
+          "entireement",
+          "entier",
+          "entiere"
+        ],
+        "correct": "entierement",
+        "explanation": "'Entierement' (calkowicie/w pelni) — przyslowek od 'entier'. Tworzenie: entier > entiere > entierement (dodajemy -ment do formy zenskiej). 'Une cuisine equipee' (kuchnia wyposanzona) — typowe okreslenie w ogloszeniach mieszkaniowych. 'Les appareils (electromenagers)' = sprzet AGD. We Francji mieszkania czesto sa 'non meublees' (nieumeblowane) — wynajmuje sie gole sciany!"
+      },
+      {
+        "id": "pf_log5",
+        "question": "Le proprietaire a _____ le loyer de cinquante euros.",
+        "translation": "(Wlasciciel podniiosl czynsz o piedziesiat euro)",
+        "options": [
+          "augmente",
+          "augmenter",
+          "augmentais",
+          "augmentera"
+        ],
+        "correct": "augmente",
+        "explanation": "'Augmenter' (podniesc/zwiekszyc) — 'le proprietaire a augmente le loyer' = wlasciciel podniiosl czynsz. We Francji podwyzka czynszu jest regulowana prawem — mozliwa raz w roku, nie wiecej niz indeks IRL. 'Le proprietaire' = wlasciciel, 'le locataire' = najemca, 'le bail' = umowa najmu, 'la caution' = kaucja (zwykle 1-2 miesiace czynszu). W polskim: 'wlasciciel podniiosl czynsz' — podobna struktura."
+      },
+      {
+        "id": "pf_log6",
+        "question": "Nous avons visite plusieurs _____ avant de choisir.",
+        "translation": "(Odwiedzilismy kilka mieszkan zanim wybralismy)",
+        "options": [
+          "appartements",
+          "apartements",
+          "apartments",
+          "appartment"
+        ],
+        "correct": "appartements",
+        "explanation": "'Appartements' — UWAGA na pisownie: dwa 'p', dwa 't'! To czesty blad ortograficzny nawet u Francuzow. 'Visiter un appartement' = ogladac mieszkanie (w kontekscie nieruchomosci). Slownictwo: 'un studio' (kawalerka), 'un T2/F2' (dwa pokoje), 'un T3/F3' (trzy pokoje), 'un duplex' (dwupoziomowe). W polskim: 'mieszkanie', 'kawalerka', 'dwupokojowe' — prostszea nomenklatura."
+      },
+      {
+        "id": "pf_log7",
+        "question": "La salle de bains est au _____ etage.",
+        "translation": "(Lazienka jest na drugim pietrze)",
+        "options": [
+          "deuxieme",
+          "deux",
+          "seconde",
+          "double"
+        ],
+        "correct": "deuxieme",
+        "explanation": "'Au deuxieme etage' (na drugim pietrze) — UWAGA: we Francji 'le rez-de-chaussee' = parter (dosliw. 'na poziomie ulicy'), 'le premier etage' = PIERWSZE PIETRO (nie parter!). Zatem 'le deuxieme etage' = to, co w Polsce by bylo trzecim pieetro! Ta roznica powoduje wiele nieporozumien. W Anglii i USA tez sa roznice: ground floor (UK) = first floor (US). W polskim: 'drugie pietrro' = trzecie we Francji."
+      },
+      {
+        "id": "pf_log8",
+        "question": "Il y a une fuite d'eau dans la _____.",
+        "translation": "(Jest wyciek wody w lazience)",
+        "options": [
+          "salle de bains",
+          "chambre de bain",
+          "salle du bain",
+          "chambre d'eau"
+        ],
+        "correct": "salle de bains",
+        "explanation": "'La salle de bains' (lazienka) — UWAGA na pisownie: 'de bains' z 's'! Dosloswnie: 'pokoj od kappieli'. 'Une fuite d'eau' = wyciek wody — to sytuacja awaryjna! W mieszkaniu: 'appeler le plombier' (wezwac hydraulika), 'couper l'eau' (zakrecic wode), 'le robinet' (kran), 'le tuyau' (rura). W polskim: 'lazienka' — jedno slowo, we francuskim zlozenie z dwoch slow."
+      },
+      {
+        "id": "pf_log9",
+        "question": "Les voisins du _____ font beaucoup de bruit.",
+        "translation": "(Sasiedzi z gory narabiaja duzo halasu)",
+        "options": [
+          "dessus",
+          "dessous",
+          "haut",
+          "plafond"
+        ],
+        "correct": "dessus",
+        "explanation": "'Les voisins du dessus' (sasiedzi z gory) vs 'les voisins du dessous' (sasiedzi z dolu). 'Dessus' = gora/powyzej, 'dessous' = dol/ponizej. 'Faire du bruit' = robic halas — to jedna z najczestszych przyczyn konflikow sasieedzkich we Francji! 'Les nuisances sonores' (uciazliwosci dzwiekowe) sa regulowane prawem. W polskim: 'sasiedzi z gory/z dolu' — przyimek + rzeczownik."
+      },
+      {
+        "id": "pf_log10",
+        "question": "Nous devons _____ l'appartement avant la fin du bail.",
+        "translation": "(Musimy opuscic mieszkanie przed koncem umowy najmu)",
+        "options": [
+          "quitter",
+          "quittons",
+          "quitte",
+          "quittez"
+        ],
+        "correct": "quitter",
+        "explanation": "'Devoir + infinitif': 'nous devons quitter' (musimy opuse cic). 'Quitter' vs 'partir': 'quitter' wymaga dopelnienia (quitter l'appartement), 'partir' nie (nous partons). 'Le bail' [baj] = umowa najmu — wymowa jest nieoczywista! 'Donner son preavis' = zlozyc wypowiedzenie (zwykle 1-3 miesiace). W polskim: 'opuscic mieszkanie' — podobna konstrukcja z bezokolicznikiem."
+      },
+      {
+        "id": "pf_log11",
+        "question": "Le _____ de la maison est en tres bon etat.",
+        "translation": "(Dach domu jest w bardzo dobrym stanie)",
+        "options": [
+          "toit",
+          "toile",
+          "toi",
+          "tuile"
+        ],
+        "correct": "toit",
+        "explanation": "'Le toit' (dach) — nie mylc z 'la toile' (plotno/material) ani 'la tuile' (dachowka). 'Etre en bon etat' = byc w dobrym stanie, 'etre en mauvais etat' = byc w zlym stanie. Czesci domu: 'le toit' (dach), 'les murs' (sciany), 'le sol/le plancher' (podloga), 'le plafond' (sufit), 'la cave' (piwnica), 'le grenier' (strych). W polskim: 'dach' — prostsze niz we francuskim."
+      },
+      {
+        "id": "pf_log12",
+        "question": "Je dois faire _____ les murs de ma chambre.",
+        "translation": "(Musze pomalowac sciany mojego pokoju)",
+        "options": [
+          "repeindre",
+          "repindre",
+          "repeintre",
+          "repeinder"
+        ],
+        "correct": "repeindre",
+        "explanation": "'Faire repeindre' (kazac pomalowac) lub 'repeindre' (pomalowac samemu). 'Re-' + 'peindre' = pomalowac ponownie. Odmiana 'peindre': je peins, tu peins, il peint, nous peignons. Participe passe: 'peint'. UWAGA: 'un peintre' (malarz/artysta), 'un peintre en batiment' (malarz pokojowy). W polskim: 'malarz' = i artysta, i pokojowy — kontekst decyduje."
+      },
+      {
+        "id": "pf_log13",
+        "question": "L'ascenseur est en _____ depuis ce matin.",
+        "translation": "(Winda jest nieczynna od dzisiejszegio ranka)",
+        "options": [
+          "panne",
+          "pause",
+          "arret",
+          "repos"
+        ],
+        "correct": "panne",
+        "explanation": "'En panne' (zepsuty/nieczynny) — uzywa sie do maszyn i urzadzen: 'l'ascenseur est en panne' (winda jest zepsuta), 'la voiture est en panne' (samochod jest zepsuty). NIE mowimy 'la voiture est cassee' (to brzmii jak rozbita). 'Une panne de courant/d'electricite' = awaria pradu, 'une panne d'essence' = brak paliwa. W polskim: 'byc zepsutym' lub 'byc nieczynnym' — rozne slowa w zaleznosci od kontekstu."
+      },
+      {
+        "id": "pf_log14",
+        "question": "Ma chambre donne _____ la rue.",
+        "translation": "(Moj pokoj wychodzi na ulice)",
+        "options": [
+          "sur",
+          "a",
+          "vers",
+          "dans"
+        ],
+        "correct": "sur",
+        "explanation": "'Donner sur' (wychodzic na) — typowe wyrazenie opisujace widok z okna. 'Ma chambre donne sur le jardin' (moj pokoj wychodzi na ogrod), 'la fenetre donne sur la cour' (okno wychodzi na podworko). 'Donner' ma wiele znaczen: donner (dac), donner sur (wychodzic na), donner dans (wpadac w — 'donner dans le piege'), se donner (poswiecic sie). W polskim: 'wychodzic na' — przyimek 'na' + biernik."
+      },
+      {
+        "id": "pf_log15",
+        "question": "Les _____ sont incluses dans les charges.",
+        "translation": "(Oplaty za wode sa wliczone w czynsz)",
+        "options": [
+          "charges d'eau",
+          "comptes d'eau",
+          "factures d'eau",
+          "frais d'eau"
+        ],
+        "correct": "charges d'eau",
+        "explanation": "'Les charges d'eau' (oplaty za wode) — 'les charges' w kontekscie mieszkaniowym to oplaty eksploatacyjne: eau (woda), electricite (prad), chauffage (ogrzewanie), entretien des parties communes (utrzymanie czesci wspolnych). 'Charges comprises' (CC) = z oplatami, 'hors charges' (HC) = bez oplat — kluczowe skroty w ogloszeniach mieszkaniowych. W polskim: 'czynsz' czesto obejmuje czesc tych oplat."
+      }
+    ]
+  },
+  {
+    "key": "medias_communication",
+    "name": "Medias et communication (media i komunikacja)",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pf_med1",
+        "question": "J'ai lu cette _____ dans le journal ce matin.",
+        "translation": "(Przeczytaleam ten artykul w gazecie dzis rano)",
+        "options": [
+          "nouvelle",
+          "nouveaux",
+          "nouvel",
+          "nouvelles"
+        ],
+        "correct": "nouvelle",
+        "explanation": "'Une nouvelle' (wiadomosc/nowina/nowela) — UWAGA na wieloznacznosc: 'une nouvelle' = wiadomosc (informacja), 'les nouvelles' = wiadomosci (dziennik), 'une nouvelle' = nowela (gatunek literacki). Jako przymiotnik: 'une nouvelle voiture' (nowy samochod). 'Le journal' = gazeta/dziennik. Inne media: 'la presse' (prasa), 'un magazine' (czasopismo), 'un hebdomadaire' (tygodnik). W polskim: 'wiadomosc' — mniejsza wieloznacznosc."
+      },
+      {
+        "id": "pf_med2",
+        "question": "Ce journaliste _____ pour un grand quotidien national.",
+        "translation": "(Ten dziennikarz pisze dla duzego dziennikaa krajowego)",
+        "options": [
+          "ecrit",
+          "ecris",
+          "ecrits",
+          "ecrivent"
+        ],
+        "correct": "ecrit",
+        "explanation": "'Il ecrit' (on pisze) — 'ecrire pour' = pisac dla. 'Un quotidien' = dziennik (gazeta codzienna), od 'quotidien' (codzienny). Inne czestotliwosci: 'un hebdomadaire' (tygodnik), 'un mensuel' (miesiecznik), 'un trimestriel' (kwartalnik). 'National' vs 'regional': 'Le Monde' (krajowy), 'Ouest-France' (regionalny — ale najczytelniejszy we Francji!). W polskim: 'dziennik', 'tygodnik', 'miesiecznik' — podobne tworzenie slow."
+      },
+      {
+        "id": "pf_med3",
+        "question": "Les reseaux _____ ont change notre facon de communiquer.",
+        "translation": "(Media spolecznoosciowe zmienily nasz sposob komunikowania sie)",
+        "options": [
+          "sociaux",
+          "sociales",
+          "social",
+          "sociale"
+        ],
+        "correct": "sociaux",
+        "explanation": "'Les reseaux sociaux' (media spolecznosciowe / sieci spoleczne) — 'reseau' (siec) jest rodzaju meskiego, l.mn.: 'reseaux'. Przymiotnik 'social' > l.mn. meska: 'sociaux'. Inne przyklady tego wzoru: national > nationaux, special > speciaux. Popularne sieci we Francji: Facebook, Instagram, X (Twitter), TikTok. Francuzi czesto uzywaja tez 'Snapchat'. W polskim: 'media spolecznosciowe' — neologizm jak we francuskim."
+      },
+      {
+        "id": "pf_med4",
+        "question": "Cette emission est _____ en direct a la television.",
+        "translation": "(Ten program jest nadawany na zywo w telewizji)",
+        "options": [
+          "diffusee",
+          "diffuse",
+          "diffuser",
+          "diffusees"
+        ],
+        "correct": "diffusee",
+        "explanation": "'Diffusee' (nadawana) — strona bierna: 'etre + participe passe'. 'Emission' jest rodzaju zenskiego, wiec 'diffusee' z 'e'. 'En direct' = na zywo, 'en differe' = z opoznieniem. Inne slownictwo telewizyjne: 'une chaine' (kanal), 'un presentateur/une presentatrice' (prezenter/ka), 'le JT / le journal televise' (wiadomosci telewizyjne), 'une serie' (serial). W polskim: 'nadawany na zywo' — podobna struktura."
+      },
+      {
+        "id": "pf_med5",
+        "question": "Il _____ son blog depuis trois ans.",
+        "translation": "(Prowadzi swojego bloga od trzech lat)",
+        "options": [
+          "tient",
+          "tiens",
+          "tiennent",
+          "tiendra"
+        ],
+        "correct": "tient",
+        "explanation": "'Tenir un blog' (prowadzic bloga) — 'tenir' ma wiele znaczen: tenir (trzymac), tenir un blog/un journal (prowadzic bloga/dziennik), se tenir (zachowywac sie), tenir a (zalezeec na), tenir de (dziedziczyc po). 'Depuis trois ans' + czas terazniejszy = od trzech lat (czynnosc trwa). Odmiana 'tenir': je tiens, tu tiens, il tient, nous tenons. W polskim: 'prowadzic bloga' — mniej wieloznaczne slowo."
+      },
+      {
+        "id": "pf_med6",
+        "question": "Le reportage a ete _____ par un photographe professionnel.",
+        "translation": "(Reportaz zostal nakrecony przez profesjonalnego fotografa)",
+        "options": [
+          "realise",
+          "realiser",
+          "realisait",
+          "realises"
+        ],
+        "correct": "realise",
+        "explanation": "'Realise par' (zrealizowany/nakrecony przez) — strona bierna: 'a ete realise'. 'Realiser' = realizowac (film, reportaz), ale tez 'uswiadamiac sobie': 'je realise que...' (uswiadamiam sobie, ze...). Ten drugie uzycie, choc rozpowszechnione, jest krytykowane jako anglicyzm. W polskim: 'zrealizowany' — podobne znaczenie, ale bez kontrowersji jezykowej."
+      },
+      {
+        "id": "pf_med7",
+        "question": "Avez-vous _____ les dernieres informations?",
+        "translation": "(Czy slyszelisciie ostatnie wiadomosci?)",
+        "options": [
+          "entendu",
+          "entendus",
+          "entendre",
+          "entendait"
+        ],
+        "correct": "entendu",
+        "explanation": "'Avez-vous entendu?' (czy slyszeliscie?) — 'entendre les informations' = slyszec wiadomosci. 'Les informations' (lub potocznie 'les infos') = wiadomosci. Porownaj: 'les nouvelles' (wiadomosci/nowiny — bardziej ogolne), 'les informations' (wiadomosci — bardziej formalne, TV/radio), 'les actualites' (aktualnosci). W polskim: 'wiadomosci' — jedno slowo dla wszystkich kontekstow."
+      },
+      {
+        "id": "pf_med8",
+        "question": "Cette fake news a ete _____ sur Internet.",
+        "translation": "(Ta falszywa wiadomosc zostala udostepniona w Internecie)",
+        "options": [
+          "partagee",
+          "partage",
+          "partager",
+          "partagees"
+        ],
+        "correct": "partagee",
+        "explanation": "'Partagee' (udostepniona) — 'partager' online = udostepnic. 'Fake news' jest uzywane we francuskim jako anglicyzm, ale Academie francaise zaleca 'infox' (info + intox). Strona bierna z zenskim podmiotem: 'a ete partagee'. 'Sur Internet' — we Francji uzywa sie 'sur' (na), w polskim tez: 'w Internecie' lub 'na stronie'. Oficjalnie po francusku: 'sur la Toile' (w Sieci)."
+      },
+      {
+        "id": "pf_med9",
+        "question": "Le podcast est disponible _____ telechargement.",
+        "translation": "(Podcast jest dostepny do pobrania)",
+        "options": [
+          "en",
+          "au",
+          "pour le",
+          "de"
+        ],
+        "correct": "en",
+        "explanation": "'En telechargement' (do pobrania) — 'disponible en telechargement' to formalne wyrazenie. 'Telecharger' = pobierac (download) LUB wysylac (upload) — we francuskim jedno slowo na oba kierunki! W razie watpliwosci: 'telecharger vers le haut' (upload), 'telecharger vers le bas' (download). Nowosze terminy: 'televerser' (upload), 'telecharger' (download). W polskim: 'pobrac' vs 'wgrac' — wyraznaie roznica."
+      },
+      {
+        "id": "pf_med10",
+        "question": "L'interview sera _____ demain a la radio.",
+        "translation": "(Wywiad bedzie wyemitowany jutro w radiu)",
+        "options": [
+          "diffusee",
+          "diffuse",
+          "diffuser",
+          "diffusees"
+        ],
+        "correct": "diffusee",
+        "explanation": "'L'interview sera diffusee' — 'interview' jest rodzaju ZENSKIEGO we francuskim: 'une interview'! Dlatego 'diffusee' z 'e'. UWAGA: wiele anglicyzmow ma inny rodzaj niz mozna by sie spodziewac: 'une interview' (zenski), 'un e-mail' (meski), 'un podcast' (meski). 'A la radio' = w radiu — 'radio' jest zenskie we francuskim: 'la radio'. W polskim: 'radio' jest nijake."
+      },
+      {
+        "id": "pf_med11",
+        "question": "Ce site web _____ un million de visiteurs par mois.",
+        "translation": "(Ta strona internetowa ma milion odwiedzajacych miesiecznie)",
+        "options": [
+          "attire",
+          "attirent",
+          "attires",
+          "attirer"
+        ],
+        "correct": "attire",
+        "explanation": "'Attirer' (przyciagac) — 'ce site attire' (ta strona przyciaga). 'Un million de visiteurs' — 'million' jako rzeczownik wymaga 'de'. 'Par mois' = miesiecznie/na miesiac. Slownictwo internetowe po francusku: 'un site web' (strona), 'un moteur de recherche' (wyszukiwarka), 'un navigateur' (przegladarka), 'un lien' (link), 'un mot de passe' (haslo). W polskim: wiele z tych slow to anglicyzmy."
+      },
+      {
+        "id": "pf_med12",
+        "question": "Les spectateurs ont _____ d'accord avec le commentateur.",
+        "translation": "(Widzowie zgodzili sie z komentatorem)",
+        "options": [
+          "ete",
+          "eu",
+          "fait",
+          "mis"
+        ],
+        "correct": "ete",
+        "explanation": "'Etre d'accord' (zgadzac sie) — w passe compose: 'ont ete d'accord'. 'Un commentateur' (komentator) vs 'un presentateur' (prezenter): komentator analizuje i komentuje, prezenter prowadzi program. 'Les spectateurs' (widzowie) vs 'les telespectateurs' (telewidzowie) vs 'les auditeurs' (sluchacze radiowi). W polskim: 'widzowie', 'telewidzowie', 'sluchacze' — podobne rozroznienia."
+      },
+      {
+        "id": "pf_med13",
+        "question": "Il faut verifier les _____ avant de partager une information.",
+        "translation": "(Trzeba sprawdzic zrodla przed udostepnieniem informacji)",
+        "options": [
+          "sources",
+          "ressources",
+          "courses",
+          "forces"
+        ],
+        "correct": "sources",
+        "explanation": "'Les sources' (zrodla) — kluczowe pojecie w dziennikarstwie i erze dezinformacji. 'Verifier ses sources' = sprawdzic zrodla. 'Une source fiable' (wiarygodne zrodlo), 'une source anonyme' (anonimowe zrodlo). Porownaj: 'les ressources' (zasoby — inne znaczenie!), 'la source d'une riviere' (zrodlo rzeki — znaczenie dosslowne). W polskim: 'zrodlo/zrodla' — ta sama wieloznacznosc."
+      },
+      {
+        "id": "pf_med14",
+        "question": "Ce documentaire _____ un sujet tres actuel.",
+        "translation": "(Ten dokument porusza bardzo aktualny temat)",
+        "options": [
+          "aborde",
+          "abordent",
+          "aborder",
+          "abordait"
+        ],
+        "correct": "aborde",
+        "explanation": "'Aborder un sujet' (poruszac temat) — 'aborder' ma kilka znaczen: aborder un sujet (poruszac temat), aborder quelqu'un (zagadnac kogos), aborder (dobijac do brzegu — znaczenie morskie). 'Actuel' = AKTUALNY, nie 'actual' w sensie angielskim (= rzeczywisty/prawdziwy). To faux ami! 'Actuellement' = OBECNIE (nie 'faktycznie'!). W polskim: 'aktualny' — takie samo znaczenie jak we francuskim."
+      },
+      {
+        "id": "pf_med15",
+        "question": "La liberte de la _____ est un droit fondamental.",
+        "translation": "(Wolnosc prasy to prawo podstawowe)",
+        "options": [
+          "presse",
+          "pression",
+          "prise",
+          "prestation"
+        ],
+        "correct": "presse",
+        "explanation": "'La liberte de la presse' (wolnosc prasy) — jedna z podstawowych wolnosci zapisanych w Deklaracji Praw Czlowieka i Obywatela (1789). 'La presse' = prasa (ogol mediow drukowanych). Nie mylc z 'la pression' (cisnienie/nacisk). Francja jest w czolowce rankingu wolnosci prasy RSF (Reporters Sans Frontieres — organizacja zalozzona w Paryzu). W polskim: 'wolnosc prasy/slowa' — identyczne pojecie."
+      }
+    ]
+  },
+  {
+    "key": "justice_droit",
+    "name": "Justice et droit (sprawiedliwosc i prawo)",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pf_jus1",
+        "question": "L'accuse a ete _____ non coupable par le jury.",
+        "translation": "(Oskarzdony zostal uznany za niewinnego przez lawe przysieglych)",
+        "options": [
+          "declare",
+          "declaree",
+          "declarer",
+          "declares"
+        ],
+        "correct": "declare",
+        "explanation": "'Declare non coupable' (uznany za niewinnego) — strona bierna: 'a ete declare'. 'L'accuse' (oskarzdony) jest rodzaju meskiego, wiec 'declare' bez 'e'. 'Coupable' (winny) vs 'non coupable/innocent' (niewinny). We Francji system jest inny niz anglosaski: nie ma lawy przysieglych w wiekszosci spraw — tylko w Cour d'assises (sad przysieglych) dla najciezszeych przestepstw. W polskim: 'uznany za niewinnego'."
+      },
+      {
+        "id": "pf_jus2",
+        "question": "L'avocat _____ son client devant le tribunal.",
+        "translation": "(Adwokat broni swojego klienta przed sadem)",
+        "options": [
+          "defend",
+          "defends",
+          "defendent",
+          "defende"
+        ],
+        "correct": "defend",
+        "explanation": "'Defendre' (bronic) — il defend (3. os. l.poj.). 'Un avocat' = adwokat, 'un tribunal' = sad. UWAGA na hierarchie sadow we Francji: 'le tribunal de proximite' (sad rejonowy), 'le tribunal judiciaire' (sad okregowy), 'la cour d'appel' (sad apelacyjny), 'la Cour de cassation' (Sad Najwyzszy). W polskim: podobna hierarchia, ale inne nazwy. 'Adwokat' pochodzi od lacingskiego 'advocatus' — wspolne pochodzenie z francuskim!"
+      },
+      {
+        "id": "pf_jus3",
+        "question": "Le juge a _____ une peine de six mois de prison.",
+        "translation": "(Sedzia wydal kare szesciu miesiecy wiezienia)",
+        "options": [
+          "prononce",
+          "prononcer",
+          "prononcait",
+          "prononcera"
+        ],
+        "correct": "prononce",
+        "explanation": "'Prononcer une peine' (wydac wyrok/kare) — termin prawniczy. 'Le juge' = sedzia. 'Une peine de prison' = kara wiezienia. Rodzaje kar: 'la prison ferme' (bezwzgledne wiezienie), 'le sursis' (zawieszenie), 'une amende' (grzywna), 'les travaux d'interet general' (prace spoleczne). Porownaj: 'prononcer un mot' (wymowic slowo) vs 'prononcer un jugement' (oglosic wyrok) — rozne konteksty. W polskim: 'wymierzic kare'."
+      },
+      {
+        "id": "pf_jus4",
+        "question": "Tout citoyen est _____ devant la loi.",
+        "translation": "(Kazdy obywatel jest rowny wobec prawa)",
+        "options": [
+          "egal",
+          "egale",
+          "egaux",
+          "egales"
+        ],
+        "correct": "egal",
+        "explanation": "'Egal devant la loi' (rowny wobec prawa) — zasada rownosci z Deklaracji Praw Czlowieka (1789). 'Citoyen' (obywatel) jest meeski, wiec 'egal'. Odmiana: egal, egale, egaux, egales. Dewiza Francji: 'Liberte, Egalite, Fraternite' (Wolnosc, Rownosc, Braterstwo). 'La loi' = prawo/ustawa, 'le droit' = prawo (system), 'un droit' = prawo (uprawnienie). W polskim: 'rowny wobec prawa' — identyczna estructura."
+      },
+      {
+        "id": "pf_jus5",
+        "question": "Le temoin a _____ sous serment.",
+        "translation": "(Swiadek zeznawal pod przysiega)",
+        "options": [
+          "temoigne",
+          "temoigner",
+          "temoignait",
+          "temoignes"
+        ],
+        "correct": "temoigne",
+        "explanation": "'Temoigner' (zeznawac/swiadczyc) — 'le temoin a temoigne sous serment' = swiadek zeznawal pod przysiega. 'Le serment' = przysiega. We Francji formula przysiiegi swiadka: 'Je jure de dire la verite, toute la verite, rien que la verite' (Przysiegam mowic prawde, cala prawde i tylko prawde). 'Le faux temoignage' (krzywoprzysiestwo) jest karalny. W polskim: 'zeznawac pod przysiega' — identyczna struktura."
+      },
+      {
+        "id": "pf_jus6",
+        "question": "La victime a porte _____ contre son agresseur.",
+        "translation": "(Ofiara zlozylla doniesienie na sprawce)",
+        "options": [
+          "plainte",
+          "plane",
+          "plante",
+          "pleinte"
+        ],
+        "correct": "plainte",
+        "explanation": "'Porter plainte' (zlozyc doniesienie/skarge) — utrwalone wyrazenie prawne. 'La victime' = ofiara, 'l'agresseur' = sprawca/napastnik. 'Porter plainte contre quelqu'un' = zlozyc doniesienie przeciwko komus. Inne wyrazenia: 'deposer une plainte' (zlozyc skarge — bardziej formalne), 'retirer sa plainte' (wycofac skarge), 'une plainte classee sans suite' (skarga umorzona). W polskim: 'zlozyc doniesienie/zawiadomienie'."
+      },
+      {
+        "id": "pf_jus7",
+        "question": "Le suspect a ete place en _____ provisoire.",
+        "translation": "(Podejrzany zostal umieszczony w areszcie tymczasowym)",
+        "options": [
+          "detention",
+          "detente",
+          "detention",
+          "detonation"
+        ],
+        "correct": "detention",
+        "explanation": "'La detention provisoire' (areszt tymczasowy) — termin prawny. 'Le suspect' = podejrzany (przed postawieniem zarzutow), 'le prevenu' = oskarzdony (po postawieniu zarzutow), 'le condamne' = skazany. We Francji areszt tymczasowy jest kontrowersyjny — moze trwac do 2 lat, co jest krytykowane przez organizacje praw czlowieka. W polskim: 'areszt tymczasowy' — identyczne pojecie."
+      },
+      {
+        "id": "pf_jus8",
+        "question": "L'accusee a _____ en appel apres le verdict.",
+        "translation": "(Oskarzona odwolala sieod wyroku)",
+        "options": [
+          "fait appel",
+          "fait appele",
+          "faite appel",
+          "fait appelee"
+        ],
+        "correct": "fait appel",
+        "explanation": "'Faire appel' (odwolac sie) — 'fait' + bezokolicznik = niezmienny! Zatem 'elle a fait appel' (NIE 'faite'). 'Le verdict' = wyrok/werdykt, 'faire appel d'un jugement' = odwolac sie od wyroku. Hierarchia odwolan: tribunal > cour d'appel > Cour de cassation. Kasacja nie bada faktow, tylko prawo. W polskim: 'odwolac sie od wyroku' — 'odwolac sie' = faire appel, 'wyroku' = du jugement."
+      },
+      {
+        "id": "pf_jus9",
+        "question": "Les droits de l'homme sont _____ par la Constitution.",
+        "translation": "(Prawa czlowieka sa gwarantowane przez Konstytucje)",
+        "options": [
+          "garantis",
+          "garanties",
+          "garanti",
+          "garantir"
+        ],
+        "correct": "garantis",
+        "explanation": "'Garantis' (gwarantowane) — 'les droits' jest rodzaju meskiego l.mn., wiec 'garantis'. 'Les droits de l'homme' = prawa czlowieka — wyrazenie z Deklaracji z 1789 r. Wspolczesnie mowi sie tez 'les droits humains' (prawa ludzkie) — bardziej inkluzywne. 'La Constitution' = Konstytucja — aktualna franuzksa jest z 1958 r. (V Republika). W polskim: 'prawa czlowieka' — identyczne wyrazenie."
+      },
+      {
+        "id": "pf_jus10",
+        "question": "Le procureur a _____ une enquete sur cette affaire.",
+        "translation": "(Prokurator wszczal ssledztwo w tej sprawie)",
+        "options": [
+          "ouvert",
+          "ouverte",
+          "ouvrir",
+          "ouvrait"
+        ],
+        "correct": "ouvert",
+        "explanation": "'Ouvrir une enquete' (wszczac sledztwo) — dosloswnie: 'otworzyc sledztwo'. 'Le procureur' = prokurator. We Francji 'le procureur de la Republique' (prokurator Republiki) jest szeefem prokuratury. 'Une enquete' = sledztwo/dochodzenie. 'Une affaire' = sprawa (prawna). 'Une affaire criminelle' = sprawa kryminalna. W polskim: 'wszczac sledztwo' — inny czasownik, ale ta sama logika."
+      },
+      {
+        "id": "pf_jus11",
+        "question": "Le contrat _____ ete signe par les deux parties.",
+        "translation": "(Umowa zostala podpisana przez obie strony)",
+        "options": [
+          "a",
+          "est",
+          "avait",
+          "sera"
+        ],
+        "correct": "a",
+        "explanation": "'Le contrat a ete signe' — strona bierna w passe compose: avoir + ete + p.p. 'Signer un contrat' = podpisac umowe. 'Les deux parties' = obie strony (umowy). Slownictwo umow: 'une clause' (klauzula), 'les conditions' (warunki), 'la resiliation' (rozwiazanie umowy), 'un avenant' (aneks). UWAGA: 'contrat' jest meski, wiec 'signe' bez 'e'. W polskim: 'umowa zostala podpisana' — podobna struktura bierna."
+      },
+      {
+        "id": "pf_jus12",
+        "question": "L'avocat a _____ des preuves decisives.",
+        "translation": "(Adwokat przedstawil rozstrzygajace dowody)",
+        "options": [
+          "presente",
+          "presenter",
+          "presentait",
+          "presentes"
+        ],
+        "correct": "presente",
+        "explanation": "'Presenter des preuves' (przedstawic dowody) — 'une preuve' = dowod, 'des preuves decisives' = rozstrzygajace dowody. 'Decisif/decisive' = rozstrzygajacy/a — przymiotnik od 'decision'. Rodzaje dowodow: 'une preuve materielle' (dowod rzeczowy), 'un temoignage' (zeznanie), 'un aveu' (przyznanie sie), 'une piece a conviction' (dowod materialny). W polskim: 'przedstawic dowody' — identyczny zwrot."
+      },
+      {
+        "id": "pf_jus13",
+        "question": "Le tribunal a condamne le prevenu a _____ amende.",
+        "translation": "(Sad skazal oskarzonego na grzywne)",
+        "options": [
+          "une",
+          "un",
+          "la",
+          "des"
+        ],
+        "correct": "une",
+        "explanation": "'Condamner a une amende' (skazac na grzywne) — 'une amende' (grzywna) jest zensakiego rodzaju. Nie mylc z 'une amande' (migdal) — roznica jednej litery! 'Condamner quelqu'un a' = skazac kogos na: condamner a la prison (skazac na wiezienie), condamner a mort (skazac na smierc — kara smierci zniesiona we Francji w 1981 r. przez Mitterranda). W polskim: 'skazac na grzywne' — te sama konstrukcja z 'na'."
+      },
+      {
+        "id": "pf_jus14",
+        "question": "La prescription de cette infraction est de _____ ans.",
+        "translation": "(Przedawnienietego wykroczenia wynosi trzy lata)",
+        "options": [
+          "trois",
+          "troisieme",
+          "triple",
+          "tier"
+        ],
+        "correct": "trois",
+        "explanation": "'La prescription' (przedawnienie) — termin prawny oznaczajacy czas, po ktorym nie mozna juz scigac przestepstwa. We Francji: 'un delit' (wystepek) = 6 lat, 'un crime' (zbrodnia) = 20 lat, 'une contravention' (wykroczenie) = 1 rok. Uwaga: 'un crime' po francusku = ZBRODNIA (najciezsze przestepstwo), NIE kazdde przestepstwo jak w angielskim 'crime'. W polskim: 'przedawnienie' — identyczne pojecie prawne."
+      },
+      {
+        "id": "pf_jus15",
+        "question": "Le droit a un avocat est _____ par la loi.",
+        "translation": "(Prawo do adwokata jest zapewnione przez prawo)",
+        "options": [
+          "garanti",
+          "garantie",
+          "garantis",
+          "garantir"
+        ],
+        "correct": "garanti",
+        "explanation": "'Le droit est garanti' — 'le droit' jest meski, wiec 'garanti' (bez 'e'). 'Le droit a un avocat' = prawo do adwokata — jedno z podstawowych praw procesowych. We Francji kazdy podejrzany ma prawo do adwokata od momentu zatrzymania (garde a vue). 'Commis d'office' = z urzedu (adwokat wyznaczony przez sad). W polskim: 'prawo do obrony/adwokata' — identyczna zasada prawna."
+      }
+    ]
+  },
+  {
+    "key": "politique_societe",
+    "name": "Politique et societe (polityka i spoleczenstwo)",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pf_pol1",
+        "question": "Le president est _____ pour cinq ans en France.",
+        "translation": "(Prezydent jest wybierany na piec lat we Francji)",
+        "options": [
+          "elu",
+          "elue",
+          "elus",
+          "elire"
+        ],
+        "correct": "elu",
+        "explanation": "'Elu' (wybrany) — 'le president est elu' = prezydent jest wybierany. 'Elire' (wybierac) — odmiana nieregularna: j'elis, tu elis, il elit. Participe passe: 'elu'. We Francji prezydent jest wybierany w wyborach powszechnych na 5 lat (quinquennat — od 2000 r., wczesniej 7 lat/septennat). Mozna byc wybranym ponownie raz. W polskim: 'wybrany na 5 lat' — identyczna konstrukja bierna."
+      },
+      {
+        "id": "pf_pol2",
+        "question": "Les citoyens ont le droit de _____ a partir de 18 ans.",
+        "translation": "(Obywatele maja prawo glosowania od 18. roku zycia)",
+        "options": [
+          "voter",
+          "votez",
+          "vote",
+          "votant"
+        ],
+        "correct": "voter",
+        "explanation": "'Le droit de + infinitif' = prawo do. 'Voter' = glosowac. We Francji glosowanie nie jest obowiazkowe (w przeciwienstwie do np. Belgii). 'Le suffrage universel' = powszechne prawo wyborcize (od 1848 r. dla mezczyzn, od 1944 r. dla kobiet). 'Le scrutin' = glosowanie, 'l'urne' = urna, 'le bulletin de vote' = karta do glosowania. W polskim: 'prawo do glosowania' — identyczna konstrukcja."
+      },
+      {
+        "id": "pf_pol3",
+        "question": "L'Assemblee nationale _____ les lois en France.",
+        "translation": "(Zgromadzenie Narodowe uchwala ustawy we Francji)",
+        "options": [
+          "vote",
+          "votes",
+          "votent",
+          "votons"
+        ],
+        "correct": "vote",
+        "explanation": "'L'Assemblee nationale vote les lois' — podmiot w l.poj. (Assemblee), wiec czasownik w l.poj. 'L'Assemblee nationale' i 'le Senat' tworza 'le Parlement' (Parlament). Proces legislacyjny: projekt ustawy ('projet de loi' od rzadu, 'proposition de loi' od parlamentarzystow) przechodzi przez obydwie izby. W polskim: 'Sejm uchwala ustawy' — analogiczna funkcja, inna nazwa."
+      },
+      {
+        "id": "pf_pol4",
+        "question": "La manifestation a _____ plus de cent mille personnes.",
+        "translation": "(W manifestacji wzieloo udzial ponad sto tyyy osob)",
+        "options": [
+          "reuni",
+          "reunie",
+          "reunis",
+          "reunir"
+        ],
+        "correct": "reuni",
+        "explanation": "'Reunir' (zebraca/zgromadzic) — 'la manifestation a reuni' = manifestacja zgromadzila. Uzycie 'avoir' jako czasownika pomocniczego (bo 'reunir' jest przechodni). UWAGA: 'se reunir' (spotykac sie) uzywa 'etre': 'ils se sont reunis'. Manifestacje sa czesccia kkultury francuskiej — 'le droit de manifester' (prawo do manifestacji) jest chronione konstytucyjnie. W polskim: 'manifestacja zgromadzila' — identyczna struktura."
+      },
+      {
+        "id": "pf_pol5",
+        "question": "Le premier ministre a _____ sa demission au president.",
+        "translation": "(Premier zlozyl dymisje na rece prezydenta)",
+        "options": [
+          "presente",
+          "presenter",
+          "presentait",
+          "presentes"
+        ],
+        "correct": "presente",
+        "explanation": "'Presenter sa demission' (zlozyc dymisje) — formalne wyrazenie polityczne. 'Le premier ministre' (premier) vs 'le president' (prezydent) — we Francji istnieje 'cohabitation' gdy prezydent i premier sa z roznych partii. 'La demission' = dymisja, 'demissionner' = podac sie do dymisji, 'renvoyer/limoger' = zdymisjonowac. W polskim: 'zlozyc dymisje' — identyczne wyrazenie."
+      },
+      {
+        "id": "pf_pol6",
+        "question": "La reforme a _____ de nombreux debats au Parlement.",
+        "translation": "(Reforma wywolala liczne debaty w Parlamencie)",
+        "options": [
+          "suscite",
+          "susciter",
+          "suscitait",
+          "suscites"
+        ],
+        "correct": "suscite",
+        "explanation": "'Susciter des debats' (wywolac debaty) — 'susciter' = wywolac/wzbudzic. Podobne czasowniki: 'provoquer' (sprowokoowac), 'engendrer' (spowodowac), 'entrainer' (pociagnac za soba). 'Un debat' = debata, 'une reforme' = reforma. We Francji reformy (zwlaasszcza emerytalne i rynku pracy) regularnie wywoluja protesty i strajki. W polskim: 'wywolac debaty' — identyczna kolokacja."
+      },
+      {
+        "id": "pf_pol7",
+        "question": "Le taux de _____ a augmente lors des dernieres elections.",
+        "translation": "(Frekwencja wzrosla podczas ostatnich wyborow)",
+        "options": [
+          "participation",
+          "parti",
+          "partage",
+          "partenariat"
+        ],
+        "correct": "participation",
+        "explanation": "'Le taux de participation' (frekwencja/wskaznik udzialu) — 'lors des' = podczas. 'Les dernieres elections' = ostatnie wybory. Rodzaje wyborow: 'elections presidentielles' (prezydenckie), 'legislatives' (parlamentarne), 'municipales' (samorzadowe), 'europeennes' (do PE). We Francji frekwencja waha sie od 40% (europejskie) do 80% (prezydenckie). W polskim: 'frekwencja wyborcza' — jedno slowo zamiast trzech."
+      },
+      {
+        "id": "pf_pol8",
+        "question": "L'egalite des _____ est inscrite dans la Constitution.",
+        "translation": "(Rownosc szans jest zapisana w Konstytucji)",
+        "options": [
+          "chances",
+          "change",
+          "champs",
+          "charges"
+        ],
+        "correct": "chances",
+        "explanation": "'L'egalite des chances' (rownosc szans) — fundamentalna zasada republikanskka. 'Inscrit dans la Constitution' = zapisane w Konstytucji. Inne zasady: 'la laicite' (zasada swiieckosci), 'la fraternite' (braterstwo), 'l'indivisibilite de la Republique' (niepodzielnosc Republiki). 'La chance' = szansa/szczescie (nie 'szanowa'!). W polskim: 'rownosc szans' — identyczne wyrazenie."
+      },
+      {
+        "id": "pf_pol9",
+        "question": "Le gouvernement a adopte de nouvelles _____ sanitaires.",
+        "translation": "(Rzad wprowadzil nowe srodki sanitarne)",
+        "options": [
+          "mesures",
+          "menures",
+          "mixtures",
+          "mesurages"
+        ],
+        "correct": "mesures",
+        "explanation": "'Adopter des mesures' (przyjac/wprowadzic srodki) — 'le gouvernement' = rzad. 'Des mesures sanitaires' = srodki sanitarne. 'Adopter' w kontekscie politycznym = przyjac/uchwalic (nie 'adoptowac dziecko'!). Inne kolokacje: 'prendre des mesures' (podjac srodki), 'des mesures d'urgence' (srodki nadzwyczajne), 'des mesures de securite' (srodki bezpieczenstwa). W polskim: 'wprowadzic srodki' — podobna kolokacja."
+      },
+      {
+        "id": "pf_pol10",
+        "question": "Le syndicat a appele a la _____ generale.",
+        "translation": "(Zwiazek zawodowy wezwal do strajku generalnego)",
+        "options": [
+          "greve",
+          "grieve",
+          "grive",
+          "grave"
+        ],
+        "correct": "greve",
+        "explanation": "'La greve' (strajk) — nie mylc z 'la grave' (plazmza) ani 'la grive' (drozd)! 'Faire greve / etre en greve' = strajkowac. 'Un syndicat' = zwiazek zaaawodowy. Glowne francuzkie: CGT, CFDT, FO. Strajki sa czesccia kultury spolecznej Francji — 'le droit de greve' (prawo do strajku) jest konstytucyjne. 'La greve generale' = strajk generalny, najsilniejsza forma protestu. W polskim: 'strajk' — zapozyczenie z niemieckiego."
+      },
+      {
+        "id": "pf_pol11",
+        "question": "La separation de l'Eglise et de l'_____ date de 1905.",
+        "translation": "(Rozdzial Kosciola i panstwa datuje sie na 1905 rok)",
+        "options": [
+          "Etat",
+          "Ecole",
+          "Europe",
+          "Economie"
+        ],
+        "correct": "Etat",
+        "explanation": "'La separation de l'Eglise et de l'Etat' (rozdzial Kosciola i panstwa) — ustawa z 1905 r. to fundament laickosci (laicite) francuskiej. 'L'Etat' (panstwo) — z wielka litera! Porownaj: 'un etat' (stan) vs 'l'Etat' (panstwo). Laickosc oznacza neutralnosc religiijna panstwa. We Francji np. symbole religijne sa zabronione w szkolach publicznych. W polskim: 'rozdzial Kosciola i panstwa' — identyczne wyrazenie."
+      },
+      {
+        "id": "pf_pol12",
+        "question": "Le _____ entre les riches et les pauvres continue de croitre.",
+        "translation": "(Przepasc miedzy bogatymi a biednymi nadal rosnie)",
+        "options": [
+          "fosse",
+          "force",
+          "forum",
+          "front"
+        ],
+        "correct": "fosse",
+        "explanation": "'Le fosse' (przepasc/roznica) — 'le fosse entre riches et pauvres' = przepasc miedzy bogatymi a biednymi. Nie mylc z 'la fosse' (dol/grob) — roznica rodzaju! 'Croitre' (rosnac) — formalny synonim 'grandir/augmenter'. 'Continuer de + inf.' = nadal + czs/bezokolicznik. Problematyka nierownosci spolecznyceh jest kluczowa we francuskiej debacie politycznej. W polskim: 'przepasc spoleczna' — metafora tez przenosna."
+      },
+      {
+        "id": "pf_pol13",
+        "question": "La politique d'_____ est un sujet complexe en France.",
+        "translation": "(Polityka imigracyjna to zlozony temat we Francji)",
+        "options": [
+          "immigration",
+          "imitation",
+          "imagination",
+          "importation"
+        ],
+        "correct": "immigration",
+        "explanation": "'L'immigration' (imigracja) — temat czestoo obecny w debacie publicznej we Francji. Porownaj: 'l'immigration' (przybywaanie), 'l'emigration' (wyjeezdzanie), 'la migration' (ruch ogolny). 'Un immigre' = imigrant. UWAGA: 'immigration' z podwojnym 'm'! Francja ma dluga historie imigracji — z Polski, Wloch, Afryki Polnocnej, Afryki Subsaharyjskiej. W polskim: 'imigracja' — z pojedynczym 'm'."
+      },
+      {
+        "id": "pf_pol14",
+        "question": "Le maire a ete _____ pour un mandat de six ans.",
+        "translation": "(Burmistrz zostal wybrany na szescioletnia kadencje)",
+        "options": [
+          "elu",
+          "elue",
+          "elire",
+          "elis"
+        ],
+        "correct": "elu",
+        "explanation": "'Elu pour un mandat de six ans' — 'le maire' (burmistrz) jest wybierany na 6 lat. UWAGA: 'le maire' to forma dla obu plci w tradycyjnej franczussczyznie, ale coraz czesciej mowi sie 'la maire' lub 'la mairesse' dla kobiet. 'Le mandat' = kadencja. We Francji jest ~35000 merostw (communes) — wiecej niz w jakimkolwiek innym kraju UE! W polskim: 'burmistrz/prezydent miasta' — inne nazwy w zaleznosci od wielkoosci."
+      },
+      {
+        "id": "pf_pol15",
+        "question": "Les partis d'opposition ont _____ le projet de loi.",
+        "translation": "(Partie opozycyjne skrytykowaly projekt ustawy)",
+        "options": [
+          "critique",
+          "critiquer",
+          "critiquait",
+          "critiques"
+        ],
+        "correct": "critique",
+        "explanation": "'Critiquer' (krytywkowac) — 'les partis d'opposition ont critique' = partie opozycji skrytykowaly. 'L'opposition' = opozycja, 'la majorite' = wiekszosc (rzadzaca). 'Un projet de loi' = projekt ustawy (od rzadu), 'une proposition de loi' = projekt (od parlamentarzystow). Krytyka rzadu to normalna czesc demokracji. 'Critiquer' vs 'contester' (kwestionowac) vs 'denoncer' (denuncjowac/potepiac). W polskim: 'skrytykowac projekt ustawy'."
+      }
+    ]
   }
 ]
