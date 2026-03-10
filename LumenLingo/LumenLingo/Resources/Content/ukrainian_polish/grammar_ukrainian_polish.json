@@ -19767,5 +19767,1015 @@
         "explanation": "'Pielgrzymka przyciąga' (паломництво приваблює) — 3 ос. одн. 'Jasna Góra' (Ясна Гора) — найважливіше паломницьке місце в Польщі (Ченстохова). 'Tysiące wiernych' (тисячі вірних) — родовий мн. 'Co roku' (щороку) — сталий зворот. В укр. 'Ясна Гора' — також відоме місце паломництва."
       }
     ]
+  },
+  {
+    "key": "common_errors",
+    "name": "Типові помилки",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "up_cerr1",
+        "question": "Szukam _____ brata. (Nie: szukam brat)",
+        "translation": "(Шукаю брата.)",
+        "options": [
+          "mojego",
+          "mój",
+          "moim",
+          "mojemu"
+        ],
+        "correct": "mojego",
+        "explanation": "'Szukać' (шукати) вимагає родового відмінка: 'mój brat' → 'mojego brata'. Типова помилка — вживання називного після 'szukać'. В українській 'шукати' також вимагає родового: 'шукаю мого брата'. Обидві мови тут збігаються, але українці часто помиляються через розмовну норму."
+      },
+      {
+        "id": "up_cerr2",
+        "question": "_____ w Krakowie. (Nie: Ja mieszkam w Krakowie)",
+        "translation": "(Мешкаю в Кракові.)",
+        "options": [
+          "Mieszkam",
+          "Ja mieszkam",
+          "Mieszkaję",
+          "Ja mieszkaję"
+        ],
+        "correct": "Mieszkam",
+        "explanation": "'Mieszkam' вже містить інформацію про особу (1 ос. одн.) — займенник 'ja' зайвий. В польській, як і в українській, дієслівне закінчення вказує особу. Додавання 'ja' звучить неприродно (калька з англійської 'I live'). Виняток: емфатичне 'Ja mieszkam, a on nie'."
+      },
+      {
+        "id": "up_cerr3",
+        "question": "Idę _____ sklep. (Nie: do sklep)",
+        "translation": "(Йду до крамниці.)",
+        "options": [
+          "do sklepu",
+          "do sklep",
+          "na sklep",
+          "w sklep"
+        ],
+        "correct": "do sklepu",
+        "explanation": "'Do' + родовий: 'sklep' → 'sklepu'. Типова помилка — забути змінити форму іменника після прийменника. 'Do sklep' — граматично неправильно. В українській 'до крамниці' — також родовий. 'Sklep' (крамниця) — фальшивий друг: укр. 'склеп' = 'piwnica/krypta'!"
+      },
+      {
+        "id": "up_cerr4",
+        "question": "Widziałem _____ kobietę. (Nie: piękna kobietę)",
+        "translation": "(Бачив гарну жінку.)",
+        "options": [
+          "piękną",
+          "piękna",
+          "pięknej",
+          "piękne"
+        ],
+        "correct": "piękną",
+        "explanation": "'Piękna kobieta' (называний) → 'piękną kobietę' (знахідний). Прикметник МУСИТЬ узгоджуватися з іменником у відмінку. Помилка: 'piękna kobietę' — називний прикметник + знахідний іменник. В українській так само: 'гарна жінка' → 'гарну жінку' — повне узгодження."
+      },
+      {
+        "id": "up_cerr5",
+        "question": "Lubię _____ książki. (Nie: czytanie książek)",
+        "translation": "(Люблю читати книжки.)",
+        "options": [
+          "czytać",
+          "czytanie",
+          "czytając",
+          "przeczytać"
+        ],
+        "correct": "czytać",
+        "explanation": "'Lubić' (любити) + інфінітив: 'lubię czytać' (люблю читати) — найприродніша конструкція. 'Lubię czytanie książek' — граматично правильне, але звучить штучно в розмовній мові. В українській 'люблю читати' — ідентична конструкція. Інфінітив тут звучить набагато природніше."
+      },
+      {
+        "id": "up_cerr6",
+        "question": "On jest _____ niż ja. (Nie: bardziej stary)",
+        "translation": "(Він старший за мене.)",
+        "options": [
+          "starszy",
+          "bardziej stary",
+          "najstarszy",
+          "stary"
+        ],
+        "correct": "starszy",
+        "explanation": "'Starszy' (старший) — синтетична форма порівняльного ступеня. 'Bardziej stary' — ПОМИЛКА: прості прикметники утворюють порівняльний суфіксом '-szy', а не 'bardziej'. 'Bardziej' вживається лише з довгими прикметниками: 'bardziej interesujący'. В укр. аналогічно: 'старший', не 'більш старий'."
+      },
+      {
+        "id": "up_cerr7",
+        "question": "_____ mi się ten film. (Nie: Ja lubię ten film — коли йдеться про враження)",
+        "translation": "(Мені подобається цей фільм.)",
+        "options": [
+          "Podoba",
+          "Lubię",
+          "Podobam",
+          "Podobaję"
+        ],
+        "correct": "Podoba",
+        "explanation": "'Podobać się' (подобатися) — безособова конструкція: 'podoba MI SIĘ' (подобається мені). Помилка: 'lubię' (люблю) не передає того ж значення — це для звичних речей. 'Podoba mi się' — для перших вражень. В укр. 'подобається мені' — ідентична конструкція. Дієслово в 3 ос. одн."
+      },
+      {
+        "id": "up_cerr8",
+        "question": "Mam dwóch _____. (Nie: dwóch braty)",
+        "translation": "(Маю двох братів.)",
+        "options": [
+          "braci",
+          "braty",
+          "bratów",
+          "brat"
+        ],
+        "correct": "braci",
+        "explanation": "'Dwóch braci' — родовий множини (бо числівник 2+ для особових чол. роду вимагає родового). 'Brat' → мн. 'bracia' → род. мн. 'braci'. Помилка: 'braty' не існує. 'Bratów' — теоретично можливо, але 'braci' — стандартна форма. В укр. 'братів' — регулярна форма."
+      },
+      {
+        "id": "up_cerr9",
+        "question": "Poszedłem _____ kino. (Nie: na kino)",
+        "translation": "(Пішов до кіно.)",
+        "options": [
+          "do kina",
+          "na kino",
+          "w kino",
+          "do kino"
+        ],
+        "correct": "do kina",
+        "explanation": "'Do kina' (до кіно) — правильна конструкція: 'do' + родовий: 'kino' → 'kina'. 'Na kino' — ПОМИЛКА (калька з укр. 'на кіно'). В польській 'na' для кіно не вживається. 'Kino' — середній рід, невідмінюване в називному, але відмінюється: 'kina' (род.), 'w kinie' (місц.)."
+      },
+      {
+        "id": "up_cerr10",
+        "question": "Ona _____ się na mnie. (Nie: gniewa)",
+        "translation": "(Вона злиться/гнівається на мене.)",
+        "options": [
+          "gniewa",
+          "gniwa",
+          "gniewa",
+          "gniewi"
+        ],
+        "correct": "gniewa",
+        "explanation": "'Gniewać się na' (гніватися на) — 'gniewa się' (3 ос. одн.). Типова помилка: 'gniewi' або 'gniwa' — неправильні форми. 'Gniewać' належить до І дієвідміни: 'gniewam, gniewasz, gniewa'. В українській 'гніватися' — споріднене, але дієвідмінювання відрізняється: 'гнівається'."
+      },
+      {
+        "id": "up_cerr11",
+        "question": "Nie _____ pieniędzy. (Nie: nie mam pieniądze)",
+        "translation": "(Не маю грошей.)",
+        "options": [
+          "mam",
+          "mam",
+          "maje",
+          "mają"
+        ],
+        "correct": "mam",
+        "explanation": "'Nie mam pieniędzy' — після заперечення знахідний змінюється на родовий: 'pieniądze' (знахідний) → 'pieniędzy' (родовий). Типова помилка: 'nie mam pieniądze' — збереження знахідного після заперечення. В укр. 'не маю грошей' — також родовий. 'Pieniądze' — тільки множина."
+      },
+      {
+        "id": "up_cerr12",
+        "question": "Spotkajmy się _____ środę. (Nie: na środę)",
+        "translation": "(Зустрінемось у середу.)",
+        "options": [
+          "w",
+          "na",
+          "o",
+          "do"
+        ],
+        "correct": "w",
+        "explanation": "'W środę' (в середу) — прийменник 'w' + знахідний для днів тижня. Помилка: 'na środę' — калька з укр. 'на середу'. В польській для днів тижня: 'w poniedziałek, we wtorek, w środę...'. В українській: 'в/у середу' або 'на середу'. Польська дозволяє лише 'w'."
+      },
+      {
+        "id": "up_cerr13",
+        "question": "_____ do szkoły codziennie. (Nie: chodze)",
+        "translation": "(Ходжу до школи щодня.)",
+        "options": [
+          "Chodzę",
+          "Chodze",
+          "Chodziem",
+          "Chodzimy"
+        ],
+        "correct": "Chodzę",
+        "explanation": "'Chodzę' (ходжу) — 1 ос. одн. з носовою 'ę' на кінці. Типова помилка: 'chodze' без 'ę'. Носова 'ę' в кінці слова часто не вимовляється як носова, що веде до помилок у написанні. В українській немає носових голосних, тому це джерело помилок для україномовних."
+      },
+      {
+        "id": "up_cerr14",
+        "question": "On ma ładne _____. (Nie: ładny oczy)",
+        "translation": "(Він має гарні очі.)",
+        "options": [
+          "oczy",
+          "oci",
+          "oczy",
+          "oczów"
+        ],
+        "correct": "oczy",
+        "explanation": "'Ładne oczy' — множина невіроособова + прикметник у формі 'ładne' (не 'ładny'). Помилка: 'ładny oczy' — чоловічий прикметник із множиною. 'Oczy' (очі) — неправильна множина від 'oko'. В українській 'гарні очі' — так само множина, прикметник узгоджується."
+      },
+      {
+        "id": "up_cerr15",
+        "question": "Chcę _____ z tobą porozmawiać. (Nie: chcę z tobą porozmawiam)",
+        "translation": "(Хочу з тобою поговорити.)",
+        "options": [
+          "porozmawiać",
+          "porozmawiam",
+          "rozmawiać",
+          "porozmawiac"
+        ],
+        "correct": "porozmawiać",
+        "explanation": "'Chcieć' + інфінітив: 'chcę porozmawiać'. Помилка: 'chcę porozmawiam' — два особові дієслова поспіль неможливі. Також: правопис 'porozmawiać' з 'ć' на кінці (не 'c'). Знак м'якості 'ć' відрізняє інфінітив від інших форм. В укр. 'хочу поговорити' — аналогічна конструкція."
+      }
+    ]
+  },
+  {
+    "key": "cyrillic_challenges",
+    "name": "Кириличні виклики",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "up_cyri1",
+        "question": "Miasto _____ ma piękną architekturę. (ukr. Жешув → pol.)",
+        "translation": "(Місто Жешув має гарну архітектуру.)",
+        "options": [
+          "Rzeszów",
+          "Żeszów",
+          "Rzeszuw",
+          "Ržešuv"
+        ],
+        "correct": "Rzeszów",
+        "explanation": "'Rzeszów' — укр. 'Жешув'. Складність: 'rz' = 'ж', 'sz' = 'ш', 'ów' = 'ув'. Польський диграф 'rz' передає звук [ж], якого в укр. записується однією літерою 'ж'. 'Ó' = 'у' (в закритому складі). Назви польських міст вимагають знання специфічних правописних правил."
+      },
+      {
+        "id": "up_cyri2",
+        "question": "_____ się polskiego od dwóch lat. (cz vs. ч)",
+        "translation": "(Вчу польську два роки.)",
+        "options": [
+          "Uczę",
+          "Uczę",
+          "Ucze",
+          "Učę"
+        ],
+        "correct": "Uczę",
+        "explanation": "'Uczę się' (вчуся) — 'ucz' передає укр. 'уч' (звук [ч]). Польський 'cz' = укр. 'ч'. Носова 'ę' на кінці — характерна для 1 ос. одн. Складність: транслітерація 'ч' → 'cz' (два символи). Також 'учити' → 'uczyć (się)' — зворотна форма обов'язкова в польській."
+      },
+      {
+        "id": "up_cyri3",
+        "question": "Moja _____ jest nauczycielką. (ukr. щ → pol.)",
+        "translation": "(Моя мама вчителька.)",
+        "options": [
+          "mama",
+          "мама",
+          "mama",
+          "mama"
+        ],
+        "correct": "mama",
+        "explanation": "'Mama' — ідентичне в обох мовах, але записується різними абетками. Справжня складність для українців: перемикання між кирилицею та латиницею. 'Nauczycielka' (вчителька) — від 'nauczyciel' (вчитель): 'naucz' = 'науч' (навч), суфікс '-yciel' = '-итель'. Жін. суфікс '-ka'."
+      },
+      {
+        "id": "up_cyri4",
+        "question": "Lubię jeździć do _____. (ukr. Вроцлав → pol.)",
+        "translation": "(Люблю їздити до Вроцлава.)",
+        "options": [
+          "Wrocławia",
+          "Wrocławu",
+          "Wroclava",
+          "Wroclawia"
+        ],
+        "correct": "Wrocławia",
+        "explanation": "'Wrocław' → 'do Wrocławia' (родовий). Складності: 'W' (не 'V'), 'ł' = 'в'/[w], 'aw' — не 'ав'. Польське 'ł' = звук [w], як англ. 'w'. 'Wrocław' відмінюється як чоловічий іменник: 'Wrocławia, Wrocławowi, Wrocławiem'. Укр. 'Вроцлав' — транслітерація з польської."
+      },
+      {
+        "id": "up_cyri5",
+        "question": "W _____ jest dużo jezior. (ukr. ш → pol. sz)",
+        "translation": "(У Польщі багато озер.)",
+        "options": [
+          "Polsce",
+          "Polsze",
+          "Polszcze",
+          "Polsku"
+        ],
+        "correct": "Polsce",
+        "explanation": "'Polska' → 'w Polsce' (місцевий). Складність: 'sce' — пом'якшення перед закінченням '-e'. Не 'Polsze' (помилка за аналогією з укр. 'Польщі'). Укр. 'ш' часто = pol. 'sz', але 'Polska' → 'Polsce' — чергування 'sk' → 'sc'. 'Jezior' — род. мн. від 'jezioro' (озеро)."
+      },
+      {
+        "id": "up_cyri6",
+        "question": "_____ ludzi mówi po angielsku. (ukr. щ → pol. szcz)",
+        "translation": "(Більшість людей говорить англійською.)",
+        "options": [
+          "Większość",
+          "Wiekszość",
+          "Większość",
+          "Więksość"
+        ],
+        "correct": "Większość",
+        "explanation": "'Większość' (більшість) — 'ksz' передає складний консонантний кластер. Укр. 'ш' = pol. 'sz', а укр. 'щ' = pol. 'szcz' (4 літери!). 'Większość' від 'większy' (більший) + суфікс '-ość'. Носова 'ię' [єн]. 'Ludzi' — родовий множини від 'ludzie' (люди)."
+      },
+      {
+        "id": "up_cyri7",
+        "question": "On jest _____. (ukr. щасливий → pol.)",
+        "translation": "(Він щасливий.)",
+        "options": [
+          "szczęśliwy",
+          "ščesliwy",
+          "szczęsliwy",
+          "szczesliwy"
+        ],
+        "correct": "szczęśliwy",
+        "explanation": "'Szczęśliwy' (щасливий) — максимальна складність: 'szcz' = 'щ', 'ę' = носова [ен], 'ś' = м'яке с', 'l' + 'iw' → '-ливий'. Укр. 'щ' → pol. 'szcz' (4 символи проти 1). Також 'ś' (м'яке с) — немає прямого аналога в українській. Найважче слово для правопису."
+      },
+      {
+        "id": "up_cyri8",
+        "question": "Proszę mówić _____. (ukr. повільніше → pol. wolniej)",
+        "translation": "(Прошу говорити повільніше.)",
+        "options": [
+          "wolniej",
+          "wolniey",
+          "volniej",
+          "wolneij"
+        ],
+        "correct": "wolniej",
+        "explanation": "'Wolniej' (повільніше) — порівняльний ступінь від 'wolno' (повільно). Складність: 'w' (не 'v'!), 'ej' = [ей]. Укр. 'в' = pol. 'w' (завжди). 'Wolno' (повільно) — фальшивий друг: укр. 'вільно' = pol. 'wolno/swobodnie'. 'Proszę mówić' — ввічлива форма прохання."
+      },
+      {
+        "id": "up_cyri9",
+        "question": "_____ bardzo smaczne pierogi. (ukr. її → pol.)",
+        "translation": "(Її вареники дуже смачні.)",
+        "options": [
+          "Jej",
+          "Jeji",
+          "Ji",
+          "Jei"
+        ],
+        "correct": "Jej",
+        "explanation": "'Jej' (її) — присвійний займенник 3 ос. жін. роду, невідмінюваний. Складність: укр. 'її' [йійі] — одне слово, pol. 'jej' [єй] — інша фонетика. 'Pierogi' (вареники, пироги) — множина від 'pieróg'. В укр. 'пироги' — інше значення! Фальшивий друг."
+      },
+      {
+        "id": "up_cyri10",
+        "question": "Jak się _____? (ukr. називаєшся → pol.)",
+        "translation": "(Як тебе звати?)",
+        "options": [
+          "nazywasz",
+          "nazyvasz",
+          "nazywajesz",
+          "nazwajesz"
+        ],
+        "correct": "nazywasz",
+        "explanation": "'Jak się nazywasz?' (Як тебе звати?) — 'nazywasz' [називаш], 2 ос. одн. Складність: pol. 'w' = укр. 'в', pol. 'sz' = один звук [ш]. 'Nazywać się' (називатися) — аналог укр. 'називатися'. Але в польській побутовій мові частіше 'Jak masz na imię?' (Як тебе по імені?)."
+      },
+      {
+        "id": "up_cyri11",
+        "question": "Jutro _____ do Gdańska. (ukr. й → pol. j)",
+        "translation": "(Завтра їду до Ґданська.)",
+        "options": [
+          "jadę",
+          "jade",
+          "jedę",
+          "jadzę"
+        ],
+        "correct": "jadę",
+        "explanation": "'Jadę' (їду) — 1 ос. одн. від 'jechać'. Складність: 'j' = укр. 'й/ї', носова 'ę'. 'Gdańsk' — 'ń' = м'яке 'н' (укр. 'нь'). 'Do Gdańska' — родовий. 'Jutro' (завтра) — від 'jutrzejszy' (завтрашній). В укр. 'завтра' — інший корінь. 'Jadę' від 'jechać' (їхати)."
+      },
+      {
+        "id": "up_cyri12",
+        "question": "Chcę kupić _____. (ukr. ж → pol. rz/ż: nóż)",
+        "translation": "(Хочу купити ніж.)",
+        "options": [
+          "nóż",
+          "nóz",
+          "nórz",
+          "nóž"
+        ],
+        "correct": "nóż",
+        "explanation": "'Nóż' (ніж) — 'ó' = [у] в закритому складі, 'ż' = [ж]. Укр. 'ж' = pol. 'ż' АБО 'rz' — правило: 'rz' після приголосної (strzał), 'ż' в інших позиціях (nóż). 'Nóż' — спільнослов'янський корінь з укр. 'ніж'. 'Ó' чергується з 'o': 'nożyk' (ножик)."
+      },
+      {
+        "id": "up_cerr_cy13",
+        "question": "Ta _____ jest długa. (ukr. ч → pol. cz: rzecz)",
+        "translation": "(Ця річ довга.)",
+        "options": [
+          "rzecz",
+          "riecz",
+          "rżecz",
+          "rjecz"
+        ],
+        "correct": "rzecz",
+        "explanation": "'Rzecz' [жеч] (річ) — 'rz' = [ж], 'cz' = [ч]. Укр. 'річ' ↔ pol. 'rzecz' — спільний корінь. Складність: 'rz' на початку = [ж], 'cz' на кінці = [ч]. Для українців два основні виклики: 1) 'rz' замість 'ж', 2) 'cz' замість 'ч'. 'Długa' (довга) — жін. рід."
+      },
+      {
+        "id": "up_cyri14",
+        "question": "Proszę napisać swoje _____ i _____. (ім'я та прізвище)",
+        "translation": "(Прошу написати своє ім'я та прізвище.)",
+        "options": [
+          "imię i nazwisko",
+          "imie i nazwisko",
+          "імʼя і прізвище",
+          "name i surname"
+        ],
+        "correct": "imię i nazwisko",
+        "explanation": "'Imię' (ім'я) — з носовою 'ę'. 'Nazwisko' (прізвище) — від 'nazwa' (назва). Складність: при заповненні документів українці мусять транслітерувати своє ім'я з кирилиці на латиницю за польськими правилами. 'Ś' → 'si' на початку, 'щ' → 'szcz', 'ь' → 'i' перед приголосною."
+      },
+      {
+        "id": "up_cyri15",
+        "question": "_____ mi to zdanie po polsku. (ukr. ц → pol. c)",
+        "translation": "(Переклади мені це речення польською.)",
+        "options": [
+          "Przetłumacz",
+          "Przetlumacz",
+          "Przetłumacz",
+          "Przetuumacz"
+        ],
+        "correct": "Przetłumacz",
+        "explanation": "'Przetłumacz' (переклади) — наказовий спосіб від 'przetłumaczyć'. Складності: 'prz' = [пш], 'tł' = [тw], 'cz' = [ч]. Укр. 'переклади' — зовсім інший корінь ('клад' vs. 'tłumacz'). 'Tłumacz' = перекладач/тлумач — саме слово 'тлумач' запозичене з тюркських мов."
+      }
+    ]
+  },
+  {
+    "key": "word_stress",
+    "name": "Наголос у словах",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "up_wstr1",
+        "question": "Nauka _____ jest ważna. (наголос на передостанньому складі)",
+        "translation": "(Вивчення граматики важливе.)",
+        "options": [
+          "gramatyki",
+          "gramatiki",
+          "gramatyce",
+          "gramatyku"
+        ],
+        "correct": "gramatyki",
+        "explanation": "'Gramatyka' → 'gramatyki' (родовий). Наголос: gra-ma-TY-ki — на передостанньому складі, як майже завжди в польській. В українській наголос рухомий: 'грамАтики'. Постійний наголос на передостанньому — одна з найважливіших відмінностей польської фонетики."
+      },
+      {
+        "id": "up_wstr2",
+        "question": "_____ nad projektem do piątku. (наголос: praCUjemy)",
+        "translation": "(Працюємо над проектом до п'ятниці.)",
+        "options": [
+          "Pracujemy",
+          "Pracuemy",
+          "Pracujamy",
+          "Pracójemy"
+        ],
+        "correct": "Pracujemy",
+        "explanation": "'Pracujemy' (працюємо) — наголос: pra-cu-JE-my (передостанній). 'Nad projektem' — орудний. 'Do piątku' — родовий (до п'ятниці). 'Piątek' → 'piątku' з носовою 'ą'. В укр. 'працЮємо' — наголос на іншому складі. Польський наголос регулярний, що полегшує вивчення."
+      },
+      {
+        "id": "up_wstr3",
+        "question": "_____ to bardzo ciekawe. (виняток із наголосу — запозичення)",
+        "translation": "(Математика — це дуже цікаво.)",
+        "options": [
+          "Matematyka",
+          "Matematika",
+          "Mathematyka",
+          "Matematyca"
+        ],
+        "correct": "Matematyka",
+        "explanation": "'Matematyka' — ma-te-ma-TY-ka. ВИНЯТОК: деякі запозичення з грецької/латини зберігають наголос на третьому складі від кінця: ma-te-MA-ty-ka (розмовне) vs. ma-te-ma-TY-ka (нормативне). 'Ciekawe' (цікаве) — сер. рід. В укр. 'матемАтика' — наголос на іншому складі."
+      },
+      {
+        "id": "up_wstr4",
+        "question": "_____ jest stolica Polski. (Warszawa — наголос на 'sza')",
+        "translation": "(Варшава — столиця Польщі.)",
+        "options": [
+          "Warszawa",
+          "Varszawa",
+          "Warszawia",
+          "Warshawa"
+        ],
+        "correct": "Warszawa",
+        "explanation": "'Warszawa' — War-SZA-wa — наголос на передостанньому. 'Sz' = [ш], 'w' = [в]. 'Stolica' (столиця) — від 'stół/stolec' (стіл/престол). 'Polski' → 'Polski' (родовий). В укр. 'ВаршАва' — той самий наголос, збіг! 'Stolica' ↔ 'столиця' — спільнослов'янське."
+      },
+      {
+        "id": "up_wstr5",
+        "question": "Zróbmy to _____! (наголос: nasTĘPnym razem)",
+        "translation": "(Зробимо це наступного разу!)",
+        "options": [
+          "następnym razem",
+          "nastepnym razem",
+          "następny raz",
+          "następną razą"
+        ],
+        "correct": "następnym razem",
+        "explanation": "'Następnym razem' (наступного разу) — орудний: 'następny' → 'następnym', 'raz' → 'razem'. Наголос: na-STĘP-nym RA-zem. Носова 'ę' [ен]. В укр. 'наступного разу' — родовий (інший відмінок!). Польська вживає орудний часу, українська — родовий часу."
+      },
+      {
+        "id": "up_wstr6",
+        "question": "Ta muzyka jest _____. (наголос: cuDOWna)",
+        "translation": "(Ця музика чудова.)",
+        "options": [
+          "cudowna",
+          "czudowna",
+          "cudownia",
+          "cudowina"
+        ],
+        "correct": "cudowna",
+        "explanation": "'Cudowna' (чудова) — cu-DOW-na, наголос на передостанньому. 'Cud' (чудо) → 'cudowny/a/e'. 'Muzyka' (музика) — mu-ZY-ka. В укр. 'чудОва' — наголос на тому ж складі, що й у польській. 'Muzyka' ↔ 'музика' — але наголос різний: pol. mu-ZY-ka, ukr. мУзика."
+      },
+      {
+        "id": "up_wstr7",
+        "question": "_____ nie jest łatwa do zrozumienia. (наголос: fiZYka)",
+        "translation": "(Фізика нелегка для розуміння.)",
+        "options": [
+          "Fizyka",
+          "Fizika",
+          "Fhyzyka",
+          "Fyżyka"
+        ],
+        "correct": "Fizyka",
+        "explanation": "'Fizyka' (фізика) — fi-ZY-ka. ВИНЯТОК: наголос на третьому від кінця складі — як у багатьох наукових термінах грецького походження (fizyka, muzyka, polityka). 'Łatwa' (легка) — 'ł' = [w]. 'Zrozumienie' (розуміння) — від 'rozumieć'. В укр. 'фІзика' — також ненормативний наголос."
+      },
+      {
+        "id": "up_wstr8",
+        "question": "Czy mogę prosić o _____? (наголос: inforMACję)",
+        "translation": "(Чи можу попросити інформацію?)",
+        "options": [
+          "informację",
+          "informacja",
+          "infomarję",
+          "informacyę"
+        ],
+        "correct": "informację",
+        "explanation": "'Informację' (інформацію) — знахідний: 'informacja' → 'informację'. Наголос: in-for-MA-cję (передостанній). 'Prosić o' + знахідний: 'prosić o informację'. В укр. 'інформАцію' — наголос на тому ж складі. '-cja' → '-cję' (знахідний жін. роду на -a → -ę)."
+      },
+      {
+        "id": "up_wstr9",
+        "question": "To jest naprawdę _____. (виняток: uniWERsytet)",
+        "translation": "(Це справді університет.)",
+        "options": [
+          "uniwersytet",
+          "univerytet",
+          "uniwersitet",
+          "uniwersytiet"
+        ],
+        "correct": "uniwersytet",
+        "explanation": "'Uniwersytet' — u-ni-wer-SY-tet. Наголос: на передостанньому 'sy'. Правопис: 'w' (не 'v'), 'sz' не потрібен, 'y' (не 'i'). 'Naprawdę' (справді) — 'na prawdę' злите, носова 'ę'. В укр. 'університЕт' — наголос на останньому складі, а в pol. на передостанньому."
+      },
+      {
+        "id": "up_wstr10",
+        "question": "Chcemy _____ nowy samochód. (наголос: kuPIĆ)",
+        "translation": "(Хочемо купити новий автомобіль.)",
+        "options": [
+          "kupić",
+          "kupować",
+          "kupiemy",
+          "kupienie"
+        ],
+        "correct": "kupić",
+        "explanation": "'Kupić' (купити) — KU-pić, наголос на передостанньому. 'Samochód' (автомобіль) — sa-mo-CHÓD, 'ó' = [у]. 'Chcemy' (хочемо) — 1 ос. мн. від 'chcieć'. В укр. 'купИти' — наголос на останньому складі. Порівняйте: pol. KU-pić vs. ukr. ку-ПИ-ти — різні наголоси."
+      },
+      {
+        "id": "up_wstr11",
+        "question": "Byliśmy _____ na wakacjach. (наголос: byLIśmy)",
+        "translation": "(Ми були разом на канікулах.)",
+        "options": [
+          "razem",
+          "wrazem",
+          "razom",
+          "raźem"
+        ],
+        "correct": "razem",
+        "explanation": "'Razem' (разом) — RA-zem. 'Byliśmy' — by-LIŚ-my (ВИНЯТОК: наголос на третьому від кінця через суфікс '-śmy'). Дієслова в 1 і 2 ос. мн. мин. часу — єдиний системний виняток з правила передостаннього складу. 'Wakacje' → 'na wakacjach' (місцевий мн.)."
+      },
+      {
+        "id": "up_wstr12",
+        "question": "_____ film obejrzymy wieczorem? (наголос: jAki)",
+        "translation": "(Який фільм подивимося ввечері?)",
+        "options": [
+          "Jaki",
+          "Jakij",
+          "Jakie",
+          "Jakié"
+        ],
+        "correct": "Jaki",
+        "explanation": "'Jaki' (який) — JA-ki, наголос на першому складі (передостанньому з двох). 'Obejrzymy' (подивимося) — o-bej-RZY-my, 1 ос. мн. від 'obejrzeć'. 'Wieczorem' (ввечері) — орудний від 'wieczór'. В укр. 'якИй' — наголос на кінці, pol. 'jAki' — на початку."
+      },
+      {
+        "id": "up_wstr13",
+        "question": "Potrzebuję _____ do lekarza. (наголос: wiZYty)",
+        "translation": "(Потребую візиту до лікаря.)",
+        "options": [
+          "wizyty",
+          "wizity",
+          "wizyta",
+          "wizytu"
+        ],
+        "correct": "wizyty",
+        "explanation": "'Wizyta' → 'wizyty' (родовий). Наголос: wi-ZY-ty — передостанній. 'Potrzebować' + родовий: 'potrzebuję wizyty'. 'Do lekarza' (до лікаря) — родовий. В укр. 'вІзиту' — інший наголос і рід (чол.). У pol. 'wizyta' — жін. рід, в укр. 'візит' — чол. рід."
+      },
+      {
+        "id": "up_wstr14",
+        "question": "_____ to duży problem. (наголос: BEZrobocie)",
+        "translation": "(Безробіття — це велика проблема.)",
+        "options": [
+          "Bezrobocie",
+          "Bezrobotie",
+          "Bezroboce",
+          "Bezrobocze"
+        ],
+        "correct": "Bezrobocie",
+        "explanation": "'Bezrobocie' (безробіття) — bez-ro-BO-cie, наголос на передостанньому. 'Bez-' (без-) — префікс. 'Robota' (робота) → 'bezrobocie'. '-cie' = [-чє] — суфікс абстрактних іменників сер. роду. В укр. 'безробІття' — інший суфікс '-іття'. 'Problem' (проблема) — чол. рід у pol."
+      },
+      {
+        "id": "up_wstr15",
+        "question": "Proszę o _____ na to pytanie. (наголос: odpoWIEDŹ)",
+        "translation": "(Прошу відповіді на це питання.)",
+        "options": [
+          "odpowiedź",
+          "otpowiedź",
+          "odpowed",
+          "odpowiedz"
+        ],
+        "correct": "odpowiedź",
+        "explanation": "'Odpowiedź' (відповідь) — od-po-WIEDŹ, наголос на передостанньому. 'Ź' (м'яке з) на кінці — відрізняє 'odpowiedź' (іменник, жін. рід) від 'odpowiedz!' (наказовий спосіб). В укр. 'відпОвідь' — наголос на другому складі. Спільний корінь 'повід/wied' — від 'wiedzieć/відати'."
+      }
+    ]
+  },
+  {
+    "key": "register_shifts",
+    "name": "Зміна регістру мовлення",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "up_regs1",
+        "question": "_____ mi pan powiedzieć, gdzie jest dworzec? (формальний)",
+        "translation": "(Чи не міг би пан мені сказати, де вокзал?)",
+        "options": [
+          "Czy mógłby",
+          "Czy może",
+          "Możesz",
+          "Powiedz"
+        ],
+        "correct": "Czy mógłby",
+        "explanation": "'Czy mógłby mi pan powiedzieć' — найвищий ступінь ввічливості: умовний спосіб 'mógłby' + 'pan' (звертання на 'пан'). В розмовній: 'Przepraszam, gdzie jest dworzec?' Ступені: 'Powiedz' (ти, наказ) → 'Możesz powiedzieć?' (ти, питання) → 'Czy mógłby pan' (формально)."
+      },
+      {
+        "id": "up_regs2",
+        "question": "Niniejszym _____ odbiór przesyłki. (офіційний лист)",
+        "translation": "(Цим підтверджую отримання відправлення.)",
+        "options": [
+          "potwierdzam",
+          "potwierdzę",
+          "potwierdzałem",
+          "potwierdzić"
+        ],
+        "correct": "potwierdzam",
+        "explanation": "'Niniejszym potwierdzam' — канцелярський стиль. 'Niniejszym' (цим) — архаїзм, тільки в офіційних документах. 'Potwierdzam' (підтверджую) — теперішній час, 1 ос. одн. 'Odbiór przesyłki' (отримання відправлення). Розмовний аналог: 'Potwierdzam, że dostałem paczkę'."
+      },
+      {
+        "id": "up_regs3",
+        "question": "Hej, _____ na piwo po pracy? (неформальний)",
+        "translation": "(Гей, йдеш на пиво після роботи?)",
+        "options": [
+          "idziesz",
+          "idzie pan",
+          "czy pan idzie",
+          "czy zamierza pan"
+        ],
+        "correct": "idziesz",
+        "explanation": "'Hej, idziesz na piwo?' — розмовний, дружній регістр. 'Idziesz' (2 ос. одн.) — tykanie (звертання на ти). 'Na piwo' — знахідний. 'Po pracy' (після роботи) — місцевий. Формальний аналог: 'Czy miałby pan ochotę na piwo?'. Різниця: цілий стиль змінюється, не лише форма дієслова."
+      },
+      {
+        "id": "up_regs4",
+        "question": "Szanowny Panie Profesorze, zwracam się z _____ prośbą. (академічний)",
+        "translation": "(Шановний пане професоре, звертаюсь з люб'язним проханням.)",
+        "options": [
+          "uprzejmą",
+          "ładną",
+          "normalną",
+          "fajną"
+        ],
+        "correct": "uprzejmą",
+        "explanation": "'Uprzejma prośba' (люб'язне прохання) — орудний: 'uprzejmą prośbą'. 'Szanowny Panie Profesorze' — клична форма (вокатив). 'Zwracać się z prośbą' (звертатися з проханням). Академічний регістр: 'uprzejmą', не 'ładną' (розмовне, недоречне). В укр. 'люб'язне прохання' — аналогічний формальний стиль."
+      },
+      {
+        "id": "up_regs5",
+        "question": "_____ tu na chwilę? (розмовний, другові)",
+        "translation": "(Підійдеш сюди на хвилинку?)",
+        "options": [
+          "Podejdziesz",
+          "Czy mógłbyś podejść",
+          "Proszę podejść",
+          "Podejdź"
+        ],
+        "correct": "Podejdziesz",
+        "explanation": "'Podejdziesz?' — розмовне питання-запрошення (без 'czy'). 'Podejść' (підійти) → 'podejdziesz' (2 ос. одн. майб.). 'Na chwilę' (на хвилинку). Регістри: 'Podejdziesz?' (друг) → 'Podejdź' (наказ) → 'Proszę podejść' (ввічливо) → 'Czy mógłbyś podejść?' (дуже ввічливо)."
+      },
+      {
+        "id": "up_regs6",
+        "question": "W _____ z powyższym proszę o rozpatrzenie mojego wniosku. (офіційний)",
+        "translation": "(У зв'язку з вищевикладеним прошу розглянути мою заяву.)",
+        "options": [
+          "związku",
+          "połączeniu",
+          "kontekście",
+          "nawiązaniu"
+        ],
+        "correct": "związku",
+        "explanation": "'W związku z' (у зв'язку з) + орудний: 'powyższym' (вищевикладеним). Канцелярський стиль: 'rozpatrzenie wniosku' (розгляд заяви). 'Powyższy' (вищезгаданий) — тільки в офіційних текстах. В укр. 'у зв'язку з вищевикладеним' — аналогічний канцеляризм."
+      },
+      {
+        "id": "up_regs7",
+        "question": "Stary, _____ to jest genialne! (сленг)",
+        "translation": "(Старий, ого, це геніально!)",
+        "options": [
+          "no",
+          "och",
+          "ach",
+          "hm"
+        ],
+        "correct": "no",
+        "explanation": "'No' — розмовна частка, вираження захоплення/підтвердження. 'Stary' (старий) — дружнє звертання (як укр. 'старий'). 'Genialne' (геніальне) — сер. рід. В розмовній польській 'no' вживається дуже часто як підсилювальна частка. В укр. 'ну' — аналог. Регістр: максимально неформальний."
+      },
+      {
+        "id": "up_regs8",
+        "question": "Czy _____ przekazać Państwu kilka informacji? (формальна презентація)",
+        "translation": "(Чи можу я передати вам кілька інформацій?)",
+        "options": [
+          "mogę",
+          "mogłabym",
+          "chcę",
+          "mam"
+        ],
+        "correct": "mogę",
+        "explanation": "'Czy mogę' (чи можу) — ввічливе вступне запитання в презентаціях. 'Państwo' (пані та панове) — найвищий ступінь ввічливості, множина. 'Przekazać' (передати) — доконаний вид. 'Kilka informacji' — родовий множини. Формальний регістр + 'Państwo' = бізнес/академічне середовище."
+      },
+      {
+        "id": "up_regs9",
+        "question": "Daj _____, sam to zrobię. (розмовний, наказ)",
+        "translation": "(Дай спокій, сам це зроблю.)",
+        "options": [
+          "spokój",
+          "spokojnie",
+          "spokoju",
+          "spokojny"
+        ],
+        "correct": "spokój",
+        "explanation": "'Daj spokój' (дай спокій) — сталий розмовний зворот: 'дай' + знахідний 'spokój'. В укр. 'дай спокій' — ідентичний вираз. 'Sam to zrobię' (сам це зроблю). Регістр: неформальний, між друзями. Формальний аналог: 'Proszę się nie martwić, zajmę się tym' (Не хвилюйтесь, я цим займусь)."
+      },
+      {
+        "id": "up_regs10",
+        "question": "Uprzejmie _____ o wystawienie faktury. (офіційний e-mail)",
+        "translation": "(Люб'язно прошу виставити фактуру.)",
+        "options": [
+          "proszę",
+          "żądam",
+          "chcę",
+          "potrzebuję"
+        ],
+        "correct": "proszę",
+        "explanation": "'Uprzejmie proszę' (люб'язно прошу) — стандартна ввічлива формула в діловому листуванні. 'Uprzejmie' (люб'язно) — прислівник від 'uprzejmy'. 'Wystawienie faktury' (виставлення фактури) — іменник від 'wystawić'. Розмовний: 'Proszę o fakturę'. Максимально неформальний: 'Wystawisz mi fakturę?'"
+      },
+      {
+        "id": "up_regs11",
+        "question": "To jest _____ interesujące zagadnienie. (науковий стиль)",
+        "translation": "(Це надзвичайно цікаве питання.)",
+        "options": [
+          "niezwykle",
+          "bardzo",
+          "strasznie",
+          "mega"
+        ],
+        "correct": "niezwykle",
+        "explanation": "'Niezwykle' (надзвичайно) — формальний/науковий прислівник від 'niezwykły' (надзвичайний). Градація стилів: 'mega' (сленг) → 'strasznie' (розмовний) → 'bardzo' (нейтральний) → 'niezwykle' (книжний/науковий). 'Zagadnienie' (питання, проблема) — формальніше за 'kwestia' чи 'pytanie'."
+      },
+      {
+        "id": "up_regs12",
+        "question": "Mam _____ przedstawić plan na kolejny kwartał. (діловий)",
+        "translation": "(Маю честь/задоволення представити план на наступний квартал.)",
+        "options": [
+          "przyjemność",
+          "ochotę",
+          "chęć",
+          "honor"
+        ],
+        "correct": "przyjemność",
+        "explanation": "'Mam przyjemność' (маю задоволення) — формальна ділова фраза для презентацій. 'Przyjemność' (приємність, задоволення). 'Przedstawić' (представити) — доконаний. 'Kolejny kwartał' (наступний квартал). Розмовний аналог: 'Chcę pokazać plan'. В укр. 'маю честь' — аналогічний формалізм."
+      },
+      {
+        "id": "up_regs13",
+        "question": "Nie _____, ale to nie jest dobry pomysł. (ввічлива відмова)",
+        "translation": "(Не ображайтесь, але це не добра ідея.)",
+        "options": [
+          "obraź się pan",
+          "obrażaj się",
+          "bądź zły",
+          "gniewaj się"
+        ],
+        "correct": "obraź się pan",
+        "explanation": "'Nie obraź się pan' (не ображайтесь) — ввічлива конструкція з 'pan' у наказовому. 'Obraź się' — наказовий від 'obrazić się' (образитися). З 'pan' = формально-ввічливо. Без 'pan' = дружньо. В укр. 'не ображайтесь' — одне слово, а в pol. — дієслово + зворотна частка + ввічливий займенник."
+      },
+      {
+        "id": "up_regs14",
+        "question": "Spoko, _____ się tym jutro. (молодіжний сленг)",
+        "translation": "(Спокійно, займемося цим завтра.)",
+        "options": [
+          "ogarnę",
+          "zajmę się",
+          "zrobię",
+          "ogarniamy"
+        ],
+        "correct": "ogarnę",
+        "explanation": "'Ogarnę' (огарну, розберу) — сленгове від 'ogarnąć' (охопити → впоратися). 'Spoko' (скорочення від 'spokojnie') — молодіжний сленг. Регістр: максимально неформальний. Формальний аналог: 'Proszę się nie martwić, zajmę się tym jutro'. В укр. 'розрулю' — аналогічний сленг."
+      },
+      {
+        "id": "up_regs15",
+        "question": "Z wyrazami _____, Jan Kowalski. (закриття офіційного листа)",
+        "translation": "(З виразами пошани, Ян Ковальський.)",
+        "options": [
+          "szacunku",
+          "szacunkiem",
+          "szacunek",
+          "szanowania"
+        ],
+        "correct": "szacunku",
+        "explanation": "'Z wyrazami szacunku' (з виразами пошани) — стандартне закриття офіційного листа. 'Wyrazy' (вирази) — множина від 'wyraz'. 'Szacunek' → 'szacunku' (родовий). Градація: 'Pozdrawiam' (нейтрально) → 'Z poważaniem' (офіційно) → 'Z wyrazami szacunku' (дуже офіційно). В укр. 'з повагою'."
+      }
+    ]
+  },
+  {
+    "key": "revision_mixed",
+    "name": "Повторення (змішане)",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "up_revn1",
+        "question": "Gdybym _____ więcej czasu, pojechałbym na wakacje.",
+        "translation": "(Якби я мав більше часу, поїхав би на канікули.)",
+        "options": [
+          "miał",
+          "mam",
+          "miałem",
+          "mieć"
+        ],
+        "correct": "miał",
+        "explanation": "Умовний спосіб: 'gdybym miał' (якби я мав) — 'gdyby' + суфікс '-m' (1 ос.) + минулий час 'miał'. 'Pojechałbym' — умовний: 'pojechał' + 'bym'. 'Więcej czasu' — родовий після кількісного. Складна конструкція, що поєднує умовний + родовий + доконаний аспект."
+      },
+      {
+        "id": "up_revn2",
+        "question": "Książka, _____ przeczytałem wczoraj, była fascynująca.",
+        "translation": "(Книжка, яку я прочитав учора, була захоплива.)",
+        "options": [
+          "którą",
+          "która",
+          "którą",
+          "którego"
+        ],
+        "correct": "którą",
+        "explanation": "'Którą' — знахідний жін. роду (бо 'przeczytałem książkę'). Вкладене підрядне: 'książka [którą przeczytałem] była fascynująca'. 'Przeczytać' (прочитати, док.) — 'przeczytałem' (чол. рід мин.). 'Fascynująca' — дієприкметник жін. роду. Інтеграція: відносні речення + аспект + рід."
+      },
+      {
+        "id": "up_revn3",
+        "question": "Nie wiedziałem, że ona już _____ ten film.",
+        "translation": "(Не знав, що вона вже бачила цей фільм.)",
+        "options": [
+          "widziała",
+          "widział",
+          "widzieć",
+          "zobaczyła"
+        ],
+        "correct": "widziała",
+        "explanation": "'Widziała' — мин. час жін. роду від 'widzieć' (бачити, недок.). Не 'zobaczyła' (побачила, док.) — тут важливий процес перегляду, не момент. 'Nie wiedziałem' (не знав, чол.) + 'że' (що). Поєднання: рід у мин. часі + аспект + підрядне речення."
+      },
+      {
+        "id": "up_revn4",
+        "question": "Ona poprosiła mnie, _____ jej pomógł z przeprowadzką.",
+        "translation": "(Вона попросила мене, щоб я їй допоміг з переїздом.)",
+        "options": [
+          "żebym",
+          "abym",
+          "że",
+          "żeby"
+        ],
+        "correct": "żebym",
+        "explanation": "'Żebym pomógł' — 'żeby' + суфікс '-m' (1 ос.) + мин. форма 'pomógł'. 'Poprosić' + знахідний 'mnie' + 'żeby' речення. 'Przeprowadzka' (переїзд) → 'z przeprowadzką' (орудний). 'Pomóc' (допомогти) → 'pomógł' (мин. чол.). Складна конструкція: прохання + цільне підрядне."
+      },
+      {
+        "id": "up_revn5",
+        "question": "Im _____ pracujesz, tym lepsze wyniki osiągniesz.",
+        "translation": "(Чим більше працюєш, тим кращі результати досягнеш.)",
+        "options": [
+          "więcej",
+          "dużo",
+          "bardziej",
+          "wiele"
+        ],
+        "correct": "więcej",
+        "explanation": "'Im więcej... tym lepsze' (чим більше... тим кращі) — кореляційна конструкція з порівняльним. 'Więcej' (більше) — порівняльний від 'dużo/wiele'. 'Lepsze wyniki' (кращі результати) — множина невіроособова. 'Osiągnąć' (досягнути). В укр. 'чим... тим' — ідентична структура."
+      },
+      {
+        "id": "up_revn6",
+        "question": "To jest miasto, w _____ się urodziłem.",
+        "translation": "(Це місто, в якому я народився.)",
+        "options": [
+          "którym",
+          "które",
+          "którą",
+          "który"
+        ],
+        "correct": "którym",
+        "explanation": "'W którym' — місцевий сер. роду (бо 'miasto' — сер. рід + 'w' вимагає місцевого). 'Urodziłem się' (я народився) — мин. зворотний чол. роду. Поєднання: відносне речення + відмінок після прийменника + рід підмета. В укр. 'в якому' — так само місцевий сер. роду."
+      },
+      {
+        "id": "up_revn7",
+        "question": "Mimo że pada deszcz, _____ na spacer.",
+        "translation": "(Незважаючи на те, що йде дощ, підемо на прогулянку.)",
+        "options": [
+          "pójdziemy",
+          "idziemy",
+          "chodzili",
+          "szlibyśmy"
+        ],
+        "correct": "pójdziemy",
+        "explanation": "'Mimo że' (незважаючи на те, що) — допустовий сполучник. 'Pada deszcz' (йде дощ) — безособова конструкція. 'Pójdziemy' (підемо) — 1 ос. мн. від 'pójść' (одноразова дія). Не 'idziemy' (йдемо — зараз). Інтеграція: допустове речення + аспект + безособова конструкція."
+      },
+      {
+        "id": "up_revn8",
+        "question": "Czym _____ zajmujesz w wolnym czasie?",
+        "translation": "(Чим займаєшся у вільний час?)",
+        "options": [
+          "się",
+          "sią",
+          "si",
+          "sje"
+        ],
+        "correct": "się",
+        "explanation": "'Czym się zajmujesz?' — зворотне дієслово з питальним орудним. 'Czym' (чим) — орудний від 'co'. 'Zajmować się' (займатися) + орудний. 'W wolnym czasie' — місцевий. Позиція 'się': після питального слова, перед дієсловом. В укр. 'чим займаєшся' — '-ся' злите з дієсловом."
+      },
+      {
+        "id": "up_revn9",
+        "question": "Zanim wyjdziesz, _____ okno.",
+        "translation": "(Перш ніж вийдеш, закрий вікно.)",
+        "options": [
+          "zamknij",
+          "zamykaj",
+          "zamkniesz",
+          "zamykasz"
+        ],
+        "correct": "zamknij",
+        "explanation": "'Zamknij' — наказовий доконаний від 'zamknąć' (закрити). 'Zanim' (перш ніж) + майбутній: 'wyjdziesz' (вийдеш). Головне речення — наказ. 'Okno' (вікно) — знахідний = називний (сер. рід). Інтеграція: часове підрядне + наказовий + аспект у підрядному vs. головному."
+      },
+      {
+        "id": "up_revn10",
+        "question": "Nigdy nie byłem w tak _____ restauracji.",
+        "translation": "(Ніколи не був у такому дорогому ресторані.)",
+        "options": [
+          "drogiej",
+          "drogi",
+          "drogie",
+          "droga"
+        ],
+        "correct": "drogiej",
+        "explanation": "'W tak drogiej restauracji' — місцевий жін. роду: 'droga restauracja' → 'w drogiej restauracji'. 'Tak' (так, настільки) — підсилювач. 'Nigdy' (ніколи) + подвійне заперечення 'nie byłem'. Інтеграція: заперечення + місцевий + прикметник + рід іменника. В укр. 'у такому дорогому' — інший рід."
+      },
+      {
+        "id": "up_revn11",
+        "question": "Powiedz mi, _____ się czujesz lepiej.",
+        "translation": "(Скажи мені, коли почуватимешся краще.)",
+        "options": [
+          "kiedy",
+          "gdy",
+          "jak",
+          "że"
+        ],
+        "correct": "kiedy",
+        "explanation": "'Kiedy' (коли) — питальний прислівник часу в непрямому питанні. 'Gdy' (коли) — у підрядних обставинних часу. 'Lepiej' (краще) — порівняльний від 'dobrze'. 'Czujesz się' (почуваєшся) — зворотне дієслово. Інтеграція: непряме питання + порівняльний + зворотне дієслово."
+      },
+      {
+        "id": "up_revn12",
+        "question": "Musisz się bardziej _____, żeby zdać egzamin.",
+        "translation": "(Мусиш більше старатися, щоб скласти іспит.)",
+        "options": [
+          "starać",
+          "postarać",
+          "staranie",
+          "starasz"
+        ],
+        "correct": "starać",
+        "explanation": "'Starać się' (старатися) — інфінітив недок. після 'musisz' (мусиш), бо процес тривалий. 'Bardziej' (більше) — порівняльний для дієслів. 'Żeby zdać' (щоб скласти) — цільне підрядне + доконаний. 'Egzamin' (екзамен). Інтеграція: модальне + аспект + цільне підрядне."
+      },
+      {
+        "id": "up_revn13",
+        "question": "Będę _____ na ciebie przy wejściu do kina.",
+        "translation": "(Чекатиму на тебе біля входу до кіно.)",
+        "options": [
+          "czekał",
+          "czekać",
+          "czekałem",
+          "czekając"
+        ],
+        "correct": "czekał",
+        "explanation": "'Będę czekał' (буду чекати) — складний майбутній недоконаний: 'będę' + дієприкметник/інфінітив. Обидва правильні: 'będę czekał' = 'będę czekać'. 'Na ciebie' (на тебе) — знахідний. 'Przy wejściu' (біля входу) — місцевий: 'wejście' → 'wejściu'. Інтеграція: майб. час + прийменники."
+      },
+      {
+        "id": "up_revn14",
+        "question": "Okazało się, że projekt, nad _____ pracowaliśmy, został anulowany.",
+        "translation": "(Виявилось, що проект, над яким ми працювали, був скасований.)",
+        "options": [
+          "którym",
+          "który",
+          "którego",
+          "któremu"
+        ],
+        "correct": "którym",
+        "explanation": "'Nad którym' — орудний після 'nad' (над). 'Pracować nad' (працювати над) + орудний. 'Pracowaliśmy' (ми працювали) — чоловічоособова мн. мин. час. 'Został anulowany' — пасивна конструкція. Інтеграція: відносне речення + орудний + пасив + рід множини."
+      },
+      {
+        "id": "up_revn15",
+        "question": "Nie _____ co robić, gdyby nagle zgasło światło.",
+        "translation": "(Не знав би, що робити, якби раптом погасло світло.)",
+        "options": [
+          "wiedziałbym",
+          "wiem",
+          "wiedziałem",
+          "wiedzieć"
+        ],
+        "correct": "wiedziałbym",
+        "explanation": "'Nie wiedziałbym' — умовний спосіб: 'wiedział' + 'bym'. 'Gdyby zgasło' — умовне підрядне: 'gdyby' + мин. сер. роду 'zgasło' (бо 'światło' — сер. рід). 'Nagle' (раптом). Максимальна інтеграція: умовний + підрядне + рід + аспект. Повторення всіх ключових конструкцій курсу."
+      }
+    ]
   }
 ]

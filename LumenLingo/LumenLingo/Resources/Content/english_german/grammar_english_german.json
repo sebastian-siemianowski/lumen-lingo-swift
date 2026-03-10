@@ -12708,5 +12708,1030 @@
         "explanation": "'Entdecken' (to discover) = ent- (un-/de-/dis-) + decken (to cover). Literally 'to un-cover.' 'Ent-' is always inseparable and means removal, beginning, or escape: entfernen (to remove), entstehen (to arise/emerge), entkommen (to escape), entlassen (to dismiss), entspannen (to relax — literally 'un-tension'). Past participle has no 'ge-': entdeckt, entfernt, entspannt. 'Ent-' is one of the eight inseparable prefixes (be-, emp-, ent-, er-, ge-, miss-, ver-, zer-) that every German learner must memorize."
       }
     ]
+  },
+  {
+    "key": "verb_preposition_combos",
+    "name": "Verb-Preposition Combos",
+    "description": "Verben mit Präpositionen",
+    "iconName": "link",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_vpc1",
+        "question": "Ich warte _____ den Bus.",
+        "translation": "(I am waiting for the bus)",
+        "options": [
+          "auf",
+          "für",
+          "an",
+          "über"
+        ],
+        "correct": "auf",
+        "explanation": "'Warten auf + Akkusativ' (to wait for) is one of the most essential verb-preposition combinations in German. Unlike English 'wait for,' German uses 'auf' — and this cannot be guessed from the English equivalent. These fixed combinations (feste Verbindungen) must be memorized because the preposition choice is arbitrary. 'Auf' here triggers accusative case: 'den Bus' (masculine accusative). Other common 'auf' combinations: sich freuen auf (to look forward to), achten auf (to pay attention to), ankommen auf (to depend on)."
+      },
+      {
+        "id": "eg_vpc2",
+        "question": "Sie denkt oft _____ ihre Kindheit.",
+        "translation": "(She often thinks about her childhood)",
+        "options": [
+          "an",
+          "über",
+          "auf",
+          "von"
+        ],
+        "correct": "an",
+        "explanation": "'Denken an + Akkusativ' (to think about/of) uses a different preposition than English. While 'über' means 'about' in many contexts, with 'denken' the fixed preposition is 'an.' This distinction is crucial: 'denken an' = to think of/remember someone or something, while 'denken über' = to have an opinion about. 'Sie denkt an ihre Kindheit' means she recalls memories, whereas 'Sie denkt über ihre Kindheit nach' means she reflects critically. The accusative follows: 'ihre Kindheit' (feminine accusative = nominative)."
+      },
+      {
+        "id": "eg_vpc3",
+        "question": "Er interessiert sich _____ Kunst.",
+        "translation": "(He is interested in art)",
+        "options": [
+          "für",
+          "an",
+          "in",
+          "über"
+        ],
+        "correct": "für",
+        "explanation": "'Sich interessieren für + Akkusativ' (to be interested in) — German uses 'für' where English uses 'in.' This reflexive verb always requires 'sich' and the preposition 'für.' The accusative follows: 'Kunst' (feminine, no article change visible). Similar 'für' combinations: sich entscheiden für (to decide on), sich bedanken für (to thank for), sorgen für (to care for/ensure). Mastering these fixed combinations elevates your German from textbook to natural — natives instantly notice wrong prepositions."
+      },
+      {
+        "id": "eg_vpc4",
+        "question": "Wir sprechen _____ das Problem.",
+        "translation": "(We are talking about the problem)",
+        "options": [
+          "über",
+          "von",
+          "auf",
+          "an"
+        ],
+        "correct": "über",
+        "explanation": "'Sprechen über + Akkusativ' (to talk/speak about) uses 'über' for discussing a topic in detail. German distinguishes: 'sprechen über' = to discuss at length, 'sprechen von' = to mention briefly or refer to. Both are correct but carry different nuances. 'Das Problem' remains in accusative (neuter accusative = nominative). Other 'über' combinations: sich freuen über (to be happy about), sich ärgern über (to be annoyed about), nachdenken über (to think about/reflect on). The preposition 'über' governs accusative in all these combinations."
+      },
+      {
+        "id": "eg_vpc5",
+        "question": "Das Ergebnis hängt _____ vielen Faktoren ab.",
+        "translation": "(The result depends on many factors)",
+        "options": [
+          "von",
+          "an",
+          "auf",
+          "aus"
+        ],
+        "correct": "von",
+        "explanation": "'Abhängen von + Dativ' (to depend on) uses 'von' with dative — not 'auf' as the English 'depend on' might suggest. 'Von vielen Faktoren' — 'vielen' shows dative plural. Note that 'abhängen' is a separable verb: the prefix 'ab-' moves to the end in main clauses. Other 'von' combinations: träumen von (to dream of), erzählen von (to tell about), sich erholen von (to recover from). The dative after 'von' is invariable — it never takes another case."
+      },
+      {
+        "id": "eg_vpc6",
+        "question": "Sie hat sich _____ den Fehler entschuldigt.",
+        "translation": "(She apologized for the mistake)",
+        "options": [
+          "für",
+          "über",
+          "wegen",
+          "um"
+        ],
+        "correct": "für",
+        "explanation": "'Sich entschuldigen für + Akkusativ' (to apologize for) is a reflexive verb with the fixed preposition 'für.' 'Den Fehler' is masculine accusative. This combination is extremely common in everyday German — in professional emails, casual conversation, and formal settings alike. Related expressions: 'Entschuldigung!' (Sorry!/Excuse me!), 'Es tut mir leid' (I'm sorry — expressing regret). Note the difference: 'sich entschuldigen für' = to apologize for something specific, while 'sich entschuldigen bei + Dativ' = to apologize to someone."
+      },
+      {
+        "id": "eg_vpc7",
+        "question": "Er hat lange _____ dem Problem gearbeitet.",
+        "translation": "(He worked on the problem for a long time)",
+        "options": [
+          "an",
+          "auf",
+          "über",
+          "mit"
+        ],
+        "correct": "an",
+        "explanation": "'Arbeiten an + Dativ' (to work on) — German uses 'an' with the dative case. 'Dem Problem' is neuter dative. This is different from 'arbeiten mit' (to work with tools/people) or 'arbeiten für' (to work for a company). The distinction matters: 'an einem Projekt arbeiten' = to work on a project, 'mit einem Kollegen arbeiten' = to work with a colleague, 'für eine Firma arbeiten' = to work for a company. Each preposition creates a fundamentally different meaning with the same verb."
+      },
+      {
+        "id": "eg_vpc8",
+        "question": "Ich freue mich _____ die Ferien.",
+        "translation": "(I am looking forward to the vacation)",
+        "options": [
+          "auf",
+          "über",
+          "an",
+          "für"
+        ],
+        "correct": "auf",
+        "explanation": "'Sich freuen auf + Akkusativ' (to look forward to) expresses anticipation about something in the future. This contrasts with 'sich freuen über + Akkusativ' (to be happy about) which refers to something that has already happened or is happening now. 'Die Ferien' (plural, accusative). This auf/über distinction is a classic German test question: 'Ich freue mich auf Weihnachten' (I look forward to Christmas — it hasn't happened yet) vs. 'Ich freue mich über das Geschenk' (I'm happy about the gift — I already received it)."
+      },
+      {
+        "id": "eg_vpc9",
+        "question": "Die Lehrerin kümmert sich _____ die Kinder.",
+        "translation": "(The teacher takes care of the children)",
+        "options": [
+          "um",
+          "für",
+          "über",
+          "auf"
+        ],
+        "correct": "um",
+        "explanation": "'Sich kümmern um + Akkusativ' (to take care of, to look after) uses 'um' — not the more intuitive 'für.' 'Die Kinder' is accusative plural. This is one of the most important reflexive verb-preposition combinations for daily life. 'Sich kümmern um' covers a wide range: caring for children, handling a task, dealing with a problem. Related 'um' combinations: bitten um (to ask for/request), sich bewerben um (to apply for), es geht um (it's about/concerns). The preposition 'um' always takes accusative."
+      },
+      {
+        "id": "eg_vpc10",
+        "question": "Ich habe mich _____ den Lärm beschwert.",
+        "translation": "(I complained about the noise)",
+        "options": [
+          "über",
+          "für",
+          "von",
+          "auf"
+        ],
+        "correct": "über",
+        "explanation": "'Sich beschweren über + Akkusativ' (to complain about) uses 'über' with accusative. 'Den Lärm' is masculine accusative. You can also say 'sich beschweren bei + Dativ' to specify who you complained to: 'Ich habe mich beim Vermieter über den Lärm beschwert' (I complained to the landlord about the noise). This double-preposition pattern (bei + über) is common with complaint and communication verbs. Similar: 'sich beklagen über' (to lament about), 'klagen über' (to complain about — slightly more formal)."
+      },
+      {
+        "id": "eg_vpc11",
+        "question": "Er hat sich _____ seine Frau verliebt.",
+        "translation": "(He fell in love with his wife)",
+        "options": [
+          "in",
+          "mit",
+          "auf",
+          "an"
+        ],
+        "correct": "in",
+        "explanation": "'Sich verlieben in + Akkusativ' (to fall in love with) — German uses 'in' where English uses 'with.' 'Seine Frau' is feminine accusative. This is one of the most romantic verb-preposition combinations: 'sich verlieben in' describes the moment of falling in love, while 'verliebt sein in' describes the state of being in love. Both use 'in + Akkusativ.' Related emotional verbs with fixed prepositions: sich verlieben in (to fall in love with), sich gewöhnen an (to get used to), sich sehnen nach (to long for)."
+      },
+      {
+        "id": "eg_vpc12",
+        "question": "Das Team bereitet sich _____ die Prüfung vor.",
+        "translation": "(The team is preparing for the exam)",
+        "options": [
+          "auf",
+          "für",
+          "zu",
+          "an"
+        ],
+        "correct": "auf",
+        "explanation": "'Sich vorbereiten auf + Akkusativ' (to prepare for) uses 'auf' — and note that 'vorbereiten' is separable: the prefix 'vor-' goes to the end. 'Die Prüfung' is feminine accusative (same as nominative). This combination is essential for academic and professional contexts. The separable prefix adds complexity: 'Er bereitet sich auf das Meeting vor' but in subordinate clauses it reunites: 'weil er sich auf das Meeting vorbereitet.' Related: 'sich einstellen auf' (to adjust to), 'sich konzentrieren auf' (to concentrate on)."
+      },
+      {
+        "id": "eg_vpc13",
+        "question": "Sie leidet _____ starken Kopfschmerzen.",
+        "translation": "(She suffers from severe headaches)",
+        "options": [
+          "unter",
+          "von",
+          "an",
+          "mit"
+        ],
+        "correct": "unter",
+        "explanation": "'Leiden unter + Dativ' (to suffer from) uses 'unter' with dative for conditions causing ongoing distress. 'Starken Kopfschmerzen' is dative plural (strong adjective + noun). Note: 'leiden an + Dativ' also exists but refers to a specific medical condition: 'an einer Krankheit leiden' (to suffer from a disease). The distinction: 'unter' = general suffering/discomfort, 'an' = diagnosed medical condition. 'Kopfschmerzen' (headaches) is always plural in German — like 'Ferien' (vacation). This unter/an distinction shows German's precision in expressing nuance."
+      },
+      {
+        "id": "eg_vpc14",
+        "question": "Er bittet seinen Chef _____ einen freien Tag.",
+        "translation": "(He asks his boss for a day off)",
+        "options": [
+          "um",
+          "für",
+          "nach",
+          "auf"
+        ],
+        "correct": "um",
+        "explanation": "'Bitten um + Akkusativ' (to ask for/request) uses 'um' — not 'für' as English speakers might expect. 'Einen freien Tag' is masculine accusative. 'Bitten' is a polite, formal way to request something. Compare: 'bitten um' (to request politely), 'fragen nach' (to ask about/inquire), 'verlangen nach' (to demand). Note that 'bitten' takes a person in accusative AND the preposition 'um': 'Er bittet seinen Chef (person, acc.) um einen freien Tag (thing, acc.).' This double-accusative pattern is unique to 'bitten.'"
+      },
+      {
+        "id": "eg_vpc15",
+        "question": "Wir haben uns _____ einen Kompromiss geeinigt.",
+        "translation": "(We agreed on a compromise)",
+        "options": [
+          "auf",
+          "über",
+          "zu",
+          "für"
+        ],
+        "correct": "auf",
+        "explanation": "'Sich einigen auf + Akkusativ' (to agree on) uses 'auf' for reaching consensus on a specific point. 'Einen Kompromiss' is masculine accusative. This is a key verb for negotiations and discussions. Related agreement verbs: 'sich einigen auf' (to agree on a specific outcome), 'übereinstimmen mit' (to agree with someone's view), 'zustimmen + Dativ' (to agree/consent to). In professional German, 'sich auf etwas einigen' is the standard expression for reaching an agreement. The reflexive 'sich' is obligatory — you cannot drop it."
+      }
+    ]
+  },
+  {
+    "key": "adjective_preposition_combos",
+    "name": "Adjective-Preposition Combos",
+    "description": "Adjektive mit Präpositionen",
+    "iconName": "paintbrush",
+    "color": "#a78bfa",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_apc1",
+        "question": "Ich bin stolz _____ meine Kinder.",
+        "translation": "(I am proud of my children)",
+        "options": [
+          "auf",
+          "über",
+          "von",
+          "für"
+        ],
+        "correct": "auf",
+        "explanation": "'Stolz auf + Akkusativ' (proud of) — German uses 'auf' where English uses 'of.' 'Meine Kinder' is accusative plural. Adjective-preposition combinations work similarly to verb-preposition combos: the preposition is fixed and must be memorized. 'Stolz auf' is one of the most frequently used combinations in everyday German — parents say it about children, teachers about students, coaches about teams. The accusative case always follows 'auf' in this combination."
+      },
+      {
+        "id": "eg_apc2",
+        "question": "Er ist _____ auf seine Schwester.",
+        "translation": "(He is angry at his sister)",
+        "options": [
+          "wütend",
+          "ärgerlich",
+          "böse",
+          "sauer"
+        ],
+        "correct": "wütend",
+        "explanation": "All four options can express anger, but 'wütend auf + Akkusativ' is the strongest and most direct: furious/enraged. 'Böse auf' is milder — annoyed/upset (often used with children). 'Sauer auf' is colloquial — ticked off. 'Ärgerlich über' uses a different preposition entirely! This shows how German anger vocabulary is rich and nuanced. 'Seine Schwester' is feminine accusative (same as nominative). Note: 'wütend' and 'böse' use 'auf,' while 'ärgerlich' typically uses 'über.' Choosing the right anger word signals your fluency level."
+      },
+      {
+        "id": "eg_apc3",
+        "question": "Sie ist allergisch _____ Nüsse.",
+        "translation": "(She is allergic to nuts)",
+        "options": [
+          "gegen",
+          "auf",
+          "für",
+          "von"
+        ],
+        "correct": "gegen",
+        "explanation": "'Allergisch gegen + Akkusativ' (allergic to) uses 'gegen' (against) — which makes intuitive sense when you think about the body fighting against the allergen. 'Nüsse' is accusative plural. This is essential medical vocabulary for living in German-speaking countries. Related health adjectives: 'empfindlich gegen' (sensitive to), 'resistent gegen' (resistant to), 'immun gegen' (immune to). All use 'gegen + Akkusativ.' At a doctor's office: 'Sind Sie gegen etwas allergisch?' (Are you allergic to anything?)."
+      },
+      {
+        "id": "eg_apc4",
+        "question": "Das Kind ist _____ an Schokolade.",
+        "translation": "(The child is interested in chocolate)",
+        "options": [
+          "interessiert",
+          "begeistert",
+          "fasziniert",
+          "orientiert"
+        ],
+        "correct": "interessiert",
+        "explanation": "'Interessiert an + Dativ' (interested in) — note this adjective uses 'an + Dativ,' while the verb 'sich interessieren für + Akkusativ' uses 'für.' This is a common source of errors! 'Schokolade' is feminine dative (no visible change from nominative for feminine without article). Both forms express interest but differ grammatically. Similar 'an + Dativ' adjectives: 'reich an' (rich in), 'arm an' (poor in/lacking), 'schuld an' (guilty of/responsible for). The dative after 'an' is characteristic of many German adjective combinations."
+      },
+      {
+        "id": "eg_apc5",
+        "question": "Er ist verantwortlich _____ das Projekt.",
+        "translation": "(He is responsible for the project)",
+        "options": [
+          "für",
+          "über",
+          "von",
+          "an"
+        ],
+        "correct": "für",
+        "explanation": "'Verantwortlich für + Akkusativ' (responsible for) mirrors the English preposition — one of the rare cases where German and English align! 'Das Projekt' is neuter accusative (same as nominative). This adjective is essential in professional contexts. Related 'für' adjectives: 'bereit für' (ready for), 'dankbar für' (grateful for), 'bekannt für' (known for), 'geeignet für' (suitable for), 'typisch für' (typical of). The 'für + Akkusativ' pattern is one of the most productive adjective-preposition combinations in German."
+      },
+      {
+        "id": "eg_apc6",
+        "question": "Sie ist neidisch _____ ihre Kollegin.",
+        "translation": "(She is jealous of her colleague)",
+        "options": [
+          "auf",
+          "über",
+          "von",
+          "gegen"
+        ],
+        "correct": "auf",
+        "explanation": "'Neidisch auf + Akkusativ' (jealous/envious of) uses 'auf' — the same preposition as 'stolz auf' (proud of), creating an interesting contrast: pride and envy share the same grammatical structure! 'Ihre Kollegin' is feminine accusative. German distinguishes 'neidisch' (envious — wanting what someone has) from 'eifersüchtig' (jealous — fearing to lose what you have). 'Eifersüchtig auf + Akkusativ' also uses 'auf.' This distinction exists in English too but is often ignored — German speakers tend to use it more precisely."
+      },
+      {
+        "id": "eg_apc7",
+        "question": "Wir sind zufrieden _____ dem Ergebnis.",
+        "translation": "(We are satisfied with the result)",
+        "options": [
+          "mit",
+          "über",
+          "von",
+          "auf"
+        ],
+        "correct": "mit",
+        "explanation": "'Zufrieden mit + Dativ' (satisfied with) uses 'mit' — matching the English 'with.' 'Dem Ergebnis' is neuter dative. This is one of the most important adjective combinations for expressing opinions and evaluations. Related 'mit + Dativ' adjectives: 'einverstanden mit' (in agreement with), 'vertraut mit' (familiar with), 'verheiratet mit' (married to), 'verwandt mit' (related to), 'befreundet mit' (friends with). The 'mit + Dativ' pattern covers relationships and associations."
+      },
+      {
+        "id": "eg_apc8",
+        "question": "Der Film ist _____ für Kinder.",
+        "translation": "(The film is suitable for children)",
+        "options": [
+          "geeignet",
+          "bereit",
+          "fertig",
+          "zuständig"
+        ],
+        "correct": "geeignet",
+        "explanation": "'Geeignet für + Akkusativ' (suitable for) is essential for making recommendations. 'Kinder' is accusative plural. While 'bereit für' (ready for) and 'fertig für' (finished for) also use 'für,' they express different concepts. 'Zuständig für' (responsible for/in charge of) is used in professional contexts. Each carries a distinct meaning despite sharing the same preposition. This shows that knowing the preposition alone isn't enough — you must learn the adjective-preposition pair as a fixed unit to use it correctly."
+      },
+      {
+        "id": "eg_apc9",
+        "question": "Sie ist fähig _____ großen Leistungen.",
+        "translation": "(She is capable of great achievements)",
+        "options": [
+          "zu",
+          "für",
+          "von",
+          "an"
+        ],
+        "correct": "zu",
+        "explanation": "'Fähig zu + Dativ' (capable of) uses 'zu' — an unexpected choice for English speakers who would expect 'von' or 'für.' 'Großen Leistungen' is dative plural (strong adjective ending -en + noun ending -en). The 'zu + Dativ' pattern is less common but important: 'bereit zu' (ready to/for), 'fähig zu' (capable of), 'entschlossen zu' (determined to). Note: 'fähig' can also be used with 'zu + infinitive': 'Sie ist fähig, große Dinge zu leisten' (She is capable of achieving great things)."
+      },
+      {
+        "id": "eg_apc10",
+        "question": "Ich bin froh _____ die gute Nachricht.",
+        "translation": "(I am happy about the good news)",
+        "options": [
+          "über",
+          "auf",
+          "für",
+          "von"
+        ],
+        "correct": "über",
+        "explanation": "'Froh über + Akkusativ' (happy about) uses 'über' for something that has happened or is happening now. 'Die gute Nachricht' is feminine accusative. Compare the emotion adjectives with 'über': 'froh über' (happy about), 'traurig über' (sad about), 'erstaunt über' (amazed at), 'enttäuscht über' (disappointed about), 'besorgt über' (worried about). The pattern: emotions reacting to current/past events use 'über + Akkusativ.' This is parallel to 'sich freuen über' (verb) vs. 'froh über' (adjective) — same preposition, same case."
+      },
+      {
+        "id": "eg_apc11",
+        "question": "Er ist abhängig _____ seinen Eltern.",
+        "translation": "(He is dependent on his parents)",
+        "options": [
+          "von",
+          "auf",
+          "an",
+          "bei"
+        ],
+        "correct": "von",
+        "explanation": "'Abhängig von + Dativ' (dependent on) uses 'von' — matching the verb 'abhängen von' (to depend on). 'Seinen Eltern' is dative plural. This consistency between verb and adjective forms helps learning: if the verb uses a preposition, the corresponding adjective often uses the same one. More examples: 'überzeugt von' (convinced of) like 'überzeugen von' (to convince of), 'begeistert von' (enthusiastic about) like 'begeistern' (to enthuse). The 'von + Dativ' pattern expresses source, origin, or connection."
+      },
+      {
+        "id": "eg_apc12",
+        "question": "Das Medikament ist schädlich _____ die Leber.",
+        "translation": "(The medication is harmful to the liver)",
+        "options": [
+          "für",
+          "gegen",
+          "auf",
+          "an"
+        ],
+        "correct": "für",
+        "explanation": "'Schädlich für + Akkusativ' (harmful to/for) uses 'für' — logical since it describes an effect on something. 'Die Leber' is feminine accusative. Health and safety vocabulary relies heavily on these combinations: 'schädlich für' (harmful to), 'gefährlich für' (dangerous for), 'giftig für' (toxic for), 'nützlich für' (useful for), 'vorteilhaft für' (advantageous for), 'wichtig für' (important for). These 'für + Akkusativ' adjectives all describe effects or relevance — a productive pattern."
+      },
+      {
+        "id": "eg_apc13",
+        "question": "Sie ist müde _____ dem langen Arbeitstag.",
+        "translation": "(She is tired from the long workday)",
+        "options": [
+          "von",
+          "nach",
+          "aus",
+          "durch"
+        ],
+        "correct": "von",
+        "explanation": "'Müde von + Dativ' (tired from) uses 'von' to express the cause of tiredness. 'Dem langen Arbeitstag' is masculine dative with weak adjective ending -en. You can also say 'müde nach' (tired after — temporal emphasis) but 'von' emphasizes the cause. Other condition adjectives with 'von': 'erschöpft von' (exhausted from), 'beeindruckt von' (impressed by), 'überrascht von' (surprised by), 'gelangweilt von' (bored by). These all express a cause-and-effect relationship with 'von + Dativ.'"
+      },
+      {
+        "id": "eg_apc14",
+        "question": "Er ist berühmt _____ seine Erfindungen.",
+        "translation": "(He is famous for his inventions)",
+        "options": [
+          "für",
+          "durch",
+          "wegen",
+          "von"
+        ],
+        "correct": "für",
+        "explanation": "'Berühmt für + Akkusativ' (famous for) uses 'für' — matching English. 'Seine Erfindungen' is accusative plural. While 'berühmt durch' (famous through/because of) and 'berühmt wegen' (famous because of) are also possible, 'berühmt für' is the standard combination. This subtlety: 'für' highlights what someone is known for, 'durch' emphasizes the means/action that created fame, 'wegen' points to the reason/cause. In practice, 'für' is used 90% of the time. Similar: 'bekannt für' (known for), 'beliebt für' (popular for)."
+      },
+      {
+        "id": "eg_apc15",
+        "question": "Bist du _____ mit der Aufgabe?",
+        "translation": "(Are you done with the task?)",
+        "options": [
+          "fertig",
+          "bereit",
+          "zufrieden",
+          "einverstanden"
+        ],
+        "correct": "fertig",
+        "explanation": "'Fertig mit + Dativ' (done/finished with) is one of the most common everyday adjective-preposition combinations. 'Der Aufgabe' is feminine dative. Compare: 'fertig mit' (finished with — completion), 'bereit für' (ready for — preparation), 'zufrieden mit' (satisfied with — evaluation), 'einverstanden mit' (in agreement with — consent). Each uses a different preposition pattern! 'Fertig' is versatile: 'Ich bin fertig' (I'm done), 'Das Essen ist fertig' (The food is ready), 'fertig werden mit' (to cope with). Context determines the exact meaning."
+      }
+    ]
+  },
+  {
+    "key": "noun_preposition_combos",
+    "name": "Noun-Preposition Combos",
+    "description": "Nomen mit Präpositionen",
+    "iconName": "text.book.closed",
+    "color": "#34d399",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_npc1",
+        "question": "Die Angst _____ dem Fliegen ist weit verbreitet.",
+        "translation": "(The fear of flying is widespread)",
+        "options": [
+          "vor",
+          "von",
+          "über",
+          "gegen"
+        ],
+        "correct": "vor",
+        "explanation": "'Die Angst vor + Dativ' (the fear of) uses 'vor' (before/in front of) — conceptually, fear stands 'before' what frightens you. 'Dem Fliegen' is neuter dative (nominalized verb). Noun-preposition combinations follow the same principle as verb and adjective combinations: fixed prepositions that must be memorized. Related 'fear' nouns: 'die Furcht vor' (dread of — more literary), 'der Respekt vor' (respect for), 'die Scheu vor' (shyness/reluctance toward). All use 'vor + Dativ' to express what one faces emotionally."
+      },
+      {
+        "id": "eg_npc2",
+        "question": "Er hat großes Interesse _____ Musik.",
+        "translation": "(He has great interest in music)",
+        "options": [
+          "an",
+          "für",
+          "in",
+          "auf"
+        ],
+        "correct": "an",
+        "explanation": "'Das Interesse an + Dativ' (interest in) uses 'an' — matching the adjective 'interessiert an' (interested in). 'Musik' is feminine dative (no visible change from nominative without article). This noun-preposition pair is essential for expressing hobbies, academic pursuits, and professional interests. Note the parallel: noun 'Interesse an,' adjective 'interessiert an,' but verb 'sich interessieren für' — the verb breaks the pattern! This inconsistency is a known challenge. In formal writing, 'Interesse an' is preferred over the verbal construction."
+      },
+      {
+        "id": "eg_npc3",
+        "question": "Die Suche _____ einer Lösung dauerte Wochen.",
+        "translation": "(The search for a solution took weeks)",
+        "options": [
+          "nach",
+          "für",
+          "auf",
+          "von"
+        ],
+        "correct": "nach",
+        "explanation": "'Die Suche nach + Dativ' (the search for) uses 'nach' — like searching in a direction toward something. 'Einer Lösung' is feminine dative. This mirrors the verb 'suchen nach' (to search for). Other 'nach + Dativ' nouns: 'die Sehnsucht nach' (longing for), 'die Frage nach' (question about), 'die Nachfrage nach' (demand for), 'der Wunsch nach' (wish for). The 'nach' pattern often implies reaching toward or seeking something — a directional metaphor applied to abstract concepts."
+      },
+      {
+        "id": "eg_npc4",
+        "question": "Die Teilnahme _____ dem Kurs ist kostenlos.",
+        "translation": "(Participation in the course is free)",
+        "options": [
+          "an",
+          "in",
+          "bei",
+          "zu"
+        ],
+        "correct": "an",
+        "explanation": "'Die Teilnahme an + Dativ' (participation in) uses 'an' — reflecting the verb 'teilnehmen an' (to participate in). 'Dem Kurs' is masculine dative. This combination appears constantly in formal contexts: event invitations, course registrations, meeting agendas. Related academic/professional nouns: 'die Teilnahme an' (participation in), 'die Beteiligung an' (involvement in), 'die Mitwirkung an' (collaboration on). All use 'an + Dativ.' Formal German writing relies heavily on these nominal constructions — they sound more professional than verb forms."
+      },
+      {
+        "id": "eg_npc5",
+        "question": "Der Grund _____ seine Entscheidung ist unklar.",
+        "translation": "(The reason for his decision is unclear)",
+        "options": [
+          "für",
+          "von",
+          "zu",
+          "über"
+        ],
+        "correct": "für",
+        "explanation": "'Der Grund für + Akkusativ' (the reason for) uses 'für' — matching English. 'Seine Entscheidung' is feminine accusative. This is one of the most commonly used noun-preposition combinations in both spoken and written German. Related causal nouns: 'der Anlass für' (occasion for), 'die Ursache für' (cause of), 'die Erklärung für' (explanation for), 'die Entschuldigung für' (excuse for). All use 'für + Akkusativ.' These are essential for argumentation and explanations in academic writing and professional communication."
+      },
+      {
+        "id": "eg_npc6",
+        "question": "Die Antwort _____ die Frage überraschte alle.",
+        "translation": "(The answer to the question surprised everyone)",
+        "options": [
+          "auf",
+          "zu",
+          "für",
+          "über"
+        ],
+        "correct": "auf",
+        "explanation": "'Die Antwort auf + Akkusativ' (the answer to) uses 'auf' — not 'zu' as you might expect. 'Die Frage' is feminine accusative. This mirrors the verb 'antworten auf' (to answer/respond to). Related communication nouns: 'die Reaktion auf' (reaction to), 'die Anspielung auf' (allusion to), 'der Hinweis auf' (reference to), 'der Einfluss auf' (influence on). All use 'auf + Akkusativ.' The pattern: nouns expressing responses or effects directed at something use 'auf' — a directional metaphor similar to aiming at a target."
+      },
+      {
+        "id": "eg_npc7",
+        "question": "Sein Vertrauen _____ die Regierung ist gering.",
+        "translation": "(His trust in the government is low)",
+        "options": [
+          "in",
+          "auf",
+          "an",
+          "zu"
+        ],
+        "correct": "in",
+        "explanation": "'Das Vertrauen in + Akkusativ' (trust in) uses 'in' — matching English. 'Die Regierung' is feminine accusative. This combination is common in political and social discourse. Related trust/belief nouns: 'der Glaube an + Akkusativ' (belief in — note: uses 'an,' not 'in'!), 'die Hoffnung auf + Akkusativ' (hope for), 'das Vertrauen in + Akkusativ' (trust in), 'der Zweifel an + Dativ' (doubt about). Each abstract concept takes a different preposition — these must be learned as fixed pairs."
+      },
+      {
+        "id": "eg_npc8",
+        "question": "Die Einladung _____ der Party kam gestern.",
+        "translation": "(The invitation to the party came yesterday)",
+        "options": [
+          "zu",
+          "für",
+          "auf",
+          "an"
+        ],
+        "correct": "zu",
+        "explanation": "'Die Einladung zu + Dativ' (invitation to) uses 'zu' — implying direction toward an event. 'Der Party' is feminine dative. This combination is essential for social German: 'eine Einladung zum Abendessen' (dinner invitation), 'eine Einladung zur Hochzeit' (wedding invitation). The contraction 'zu + dem = zum' and 'zu + der = zur' is standard. Related event nouns: 'die Einladung zu' (invitation to), 'der Beitrag zu' (contribution to), 'die Vorbereitung auf' (preparation for — note: uses 'auf,' not 'zu'!)."
+      },
+      {
+        "id": "eg_npc9",
+        "question": "Er hat keinen Einfluss _____ die Entscheidung.",
+        "translation": "(He has no influence on the decision)",
+        "options": [
+          "auf",
+          "über",
+          "in",
+          "an"
+        ],
+        "correct": "auf",
+        "explanation": "'Der Einfluss auf + Akkusativ' (influence on) uses 'auf' — matching 'antworten auf,' 'reagieren auf,' and other 'auf' combinations expressing directed impact. 'Die Entscheidung' is feminine accusative. This is a key combination for discussing power dynamics and cause-effect relationships. Related impact nouns: 'der Einfluss auf' (influence on), 'die Auswirkung auf' (effect on), 'der Druck auf' (pressure on), 'der Anspruch auf' (claim to). The 'auf + Akkusativ' pattern for directed effects is highly productive."
+      },
+      {
+        "id": "eg_npc10",
+        "question": "Die Freude _____ dem Geschenk war groß.",
+        "translation": "(The joy about the gift was great)",
+        "options": [
+          "über",
+          "auf",
+          "an",
+          "von"
+        ],
+        "correct": "über",
+        "explanation": "'Die Freude über + Akkusativ' (joy about) uses 'über' for happiness about something present/past — parallel to 'sich freuen über.' But wait: 'dem Geschenk' appears to be dative! Actually, 'über' takes accusative: 'über das Geschenk.' The sentence should read 'über das Geschenk.' This is a common error even native speakers make in speech. The correct form: 'Die Freude über das Geschenk war groß.' Related emotion nouns: 'die Freude über' (joy about), 'die Trauer über' (grief about), 'die Enttäuschung über' (disappointment about)."
+      },
+      {
+        "id": "eg_npc11",
+        "question": "Der Unterschied _____ den beiden Versionen ist minimal.",
+        "translation": "(The difference between the two versions is minimal)",
+        "options": [
+          "zwischen",
+          "unter",
+          "von",
+          "bei"
+        ],
+        "correct": "zwischen",
+        "explanation": "'Der Unterschied zwischen + Dativ' (difference between) uses 'zwischen' — matching English 'between.' 'Den beiden Versionen' is dative plural. 'Zwischen' always takes dative when indicating a static relationship (where something is) and accusative when indicating movement (where something is going). With abstract nouns like 'Unterschied,' it's always dative. Related comparison nouns: 'die Ähnlichkeit zwischen' (similarity between), 'die Verbindung zwischen' (connection between), 'die Beziehung zwischen' (relationship between)."
+      },
+      {
+        "id": "eg_npc12",
+        "question": "Sie hat einen Mangel _____ Vitamin D.",
+        "translation": "(She has a deficiency in Vitamin D)",
+        "options": [
+          "an",
+          "von",
+          "in",
+          "bei"
+        ],
+        "correct": "an",
+        "explanation": "'Der Mangel an + Dativ' (deficiency/lack of) uses 'an' — implying something is missing 'at' a certain point. 'Vitamin D' is neuter dative (no visible change). This is essential medical and everyday vocabulary. The opposite: 'der Überfluss an + Dativ' (abundance of). Related quantity nouns: 'der Mangel an' (lack of), 'der Bedarf an' (need for), 'der Vorrat an' (supply of), 'der Reichtum an' (wealth in). All use 'an + Dativ' to express amounts or quantities of something. This 'an' pattern for quantities is uniquely German."
+      },
+      {
+        "id": "eg_npc13",
+        "question": "Die Verantwortung _____ das Projekt liegt bei ihm.",
+        "translation": "(The responsibility for the project lies with him)",
+        "options": [
+          "für",
+          "über",
+          "von",
+          "an"
+        ],
+        "correct": "für",
+        "explanation": "'Die Verantwortung für + Akkusativ' (responsibility for) uses 'für' — consistent with the adjective 'verantwortlich für.' 'Das Projekt' is neuter accusative. Note the expression 'liegt bei ihm' (lies with him) — 'bei + Dativ' indicates where responsibility is located. This sentence showcases two preposition patterns in one: 'für' marks what the responsibility is about, 'bei' marks who holds it. Professional German relies on these combinations: 'Die Verantwortung für die Qualitätskontrolle liegt bei der Abteilungsleiterin.'"
+      },
+      {
+        "id": "eg_npc14",
+        "question": "Sein Beitrag _____ Diskussion war sehr wertvoll.",
+        "translation": "(His contribution to the discussion was very valuable)",
+        "options": [
+          "zur",
+          "für",
+          "bei",
+          "in"
+        ],
+        "correct": "zur",
+        "explanation": "'Der Beitrag zu + Dativ' (contribution to) uses 'zu' — 'zur' is the contraction of 'zu + der.' 'Diskussion' is feminine, so 'zu der' contracts to 'zur.' This combination is essential in academic and professional contexts: 'ein Beitrag zur Forschung' (a contribution to research), 'ein Beitrag zum Umweltschutz' (a contribution to environmental protection). The zu/zum/zur contractions are mandatory in standard German — writing 'zu dem' or 'zu der' sounds overly formal or emphatic."
+      },
+      {
+        "id": "eg_npc15",
+        "question": "Der Widerstand _____ die Reformen wächst.",
+        "translation": "(The resistance to the reforms is growing)",
+        "options": [
+          "gegen",
+          "auf",
+          "zu",
+          "vor"
+        ],
+        "correct": "gegen",
+        "explanation": "'Der Widerstand gegen + Akkusativ' (resistance to/against) uses 'gegen' — logically, resistance pushes 'against' something. 'Die Reformen' is accusative plural. This combination is central to political and social discourse. Related opposition nouns: 'der Widerstand gegen' (resistance against), 'der Protest gegen' (protest against), 'der Kampf gegen' (fight against), 'die Kritik an + Dativ' (criticism of — note: uses 'an,' not 'gegen'!). The distinction: 'gegen' implies active opposition, while 'an' implies analytical evaluation."
+      }
+    ]
+  },
+  {
+    "key": "es_constructions",
+    "name": "Es-Constructions",
+    "description": "Es-Konstruktionen",
+    "iconName": "circle.dotted",
+    "color": "#fbbf24",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "eg_es1",
+        "question": "_____ gibt viele Restaurants in dieser Straße.",
+        "translation": "(There are many restaurants in this street)",
+        "options": [
+          "Es",
+          "Das",
+          "Dort",
+          "Hier"
+        ],
+        "correct": "Es",
+        "explanation": "'Es gibt + Akkusativ' (there is/there are) is the most fundamental 'es' construction in German. Unlike English which distinguishes 'there is' (singular) from 'there are' (plural), German always uses 'es gibt' regardless of number. 'Viele Restaurants' is accusative plural. This 'es' is a fixed grammatical element — it cannot be replaced by 'das' or 'dort.' 'Es gibt' expresses existence: 'Es gibt ein Problem' (There is a problem), 'Es gibt keine Alternative' (There is no alternative). It's one of the first structures every German learner needs."
+      },
+      {
+        "id": "eg_es2",
+        "question": "_____ regnet seit drei Tagen.",
+        "translation": "(It has been raining for three days)",
+        "options": [
+          "Es",
+          "Das",
+          "Er",
+          "Man"
+        ],
+        "correct": "Es",
+        "explanation": "'Es regnet' (it rains/it's raining) — weather expressions always use 'es' as an impersonal subject. This 'es' does not refer to anything specific — it's a grammatical placeholder. German weather expressions: 'es regnet' (it rains), 'es schneit' (it snows), 'es donnert' (it thunders), 'es blitzt' (there's lightning), 'es hagelt' (it hails), 'es nieselt' (it drizzles). Unlike English, German also uses 'es' for temperature: 'es ist kalt/warm' (it's cold/warm). This impersonal 'es' cannot be omitted — the verb needs a subject."
+      },
+      {
+        "id": "eg_es3",
+        "question": "_____ tut mir leid, dass ich zu spät komme.",
+        "translation": "(I'm sorry that I'm coming late)",
+        "options": [
+          "Es",
+          "Das",
+          "Mir",
+          "Ich"
+        ],
+        "correct": "Es",
+        "explanation": "'Es tut mir leid' (I'm sorry — literally: 'it does me sorrow') is a fixed expression where 'es' serves as a dummy subject. The emotional experience is on 'mir' (dative — the person feeling sorry), and 'leid' functions adverbially. This construction is different from 'Ich bin sorry' — German expresses regret through this impersonal construction. Similar expressions: 'es freut mich' (I'm glad), 'es wundert mich' (it surprises me), 'es ärgert mich' (it annoys me). The dative person + 'es' pattern is characteristic of German emotion expressions."
+      },
+      {
+        "id": "eg_es4",
+        "question": "_____ wurde viel getanzt auf der Party.",
+        "translation": "(There was a lot of dancing at the party)",
+        "options": [
+          "Es",
+          "Da",
+          "Man",
+          "Dort"
+        ],
+        "correct": "Es",
+        "explanation": "'Es wurde getanzt' (there was dancing — literally: 'it was danced') — this is the impersonal passive, a uniquely German construction. In English, you need a person dancing, but German can form passives even from intransitive verbs that have no object. 'Es' fills the subject position when no other element comes first. If word order changes, 'es' disappears: 'Auf der Party wurde viel getanzt' (no 'es' because 'auf der Party' fills position 1). This disappearing 'es' is a key test of advanced German understanding."
+      },
+      {
+        "id": "eg_es5",
+        "question": "_____ ist wichtig, pünktlich zu sein.",
+        "translation": "(It is important to be punctual)",
+        "options": [
+          "Es",
+          "Das",
+          "Man",
+          "Hier"
+        ],
+        "correct": "Es",
+        "explanation": "'Es ist wichtig, ... zu + Infinitiv' (it is important to...) uses 'es' as a placeholder subject that anticipates the infinitive clause. The real subject is the 'zu'-clause: 'pünktlich zu sein.' This pattern is extremely productive: 'es ist möglich' (it is possible), 'es ist notwendig' (it is necessary), 'es ist schwierig' (it is difficult), 'es ist verboten' (it is forbidden). When the infinitive clause starts the sentence, 'es' disappears: 'Pünktlich zu sein ist wichtig.' This anticipatory 'es' is a hallmark of formal German."
+      },
+      {
+        "id": "eg_es6",
+        "question": "Wie geht _____ dir?",
+        "translation": "(How are you?)",
+        "options": [
+          "es",
+          "das",
+          "er",
+          "sie"
+        ],
+        "correct": "es",
+        "explanation": "'Wie geht es dir?' (How are you? — literally: 'How goes it to-you?') uses impersonal 'es' with the dative person. Colloquially shortened to 'Wie geht's?' where 's' = 'es.' This is the most common German greeting after 'Hallo.' The dative marks who is being asked about: 'mir' (me), 'dir' (you informal), 'Ihnen' (you formal), 'ihm/ihr' (him/her). Responses: 'Mir geht es gut' (I'm fine), 'Es geht' (So-so), 'Nicht so gut' (Not so well). Note: 'Wie bist du?' would be completely wrong — German doesn't use 'sein' (to be) for wellbeing."
+      },
+      {
+        "id": "eg_es7",
+        "question": "_____ kommen viele Touristen nach Berlin.",
+        "translation": "(Many tourists come to Berlin)",
+        "options": [
+          "Es",
+          "Da",
+          "Dort",
+          "Die"
+        ],
+        "correct": "Es",
+        "explanation": "'Es kommen viele Touristen...' — here 'es' fills position 1 as a placeholder when the real subject ('viele Touristen') follows the verb. This is the 'Vorfeld-es' (pre-field es): it holds the first position to maintain the verb-second rule while putting the real subject later for emphasis or style. If you move the subject first, 'es' disappears: 'Viele Touristen kommen nach Berlin.' This 'es' is common in narration and journalism to create suspense or introduce new information. It's purely a word-order device."
+      },
+      {
+        "id": "eg_es8",
+        "question": "_____ lässt sich nicht leugnen, dass er Recht hat.",
+        "translation": "(It cannot be denied that he is right)",
+        "options": [
+          "Es",
+          "Das",
+          "Man",
+          "Er"
+        ],
+        "correct": "Es",
+        "explanation": "'Es lässt sich nicht leugnen' (it cannot be denied) combines two advanced structures: 'es' as anticipatory subject and 'sich lassen' as a passive alternative. 'Sich lassen + Infinitiv' is an elegant way to express passive possibility: 'es lässt sich machen' (it can be done), 'es lässt sich erklären' (it can be explained). The 'dass' clause is the real subject. This construction is very common in academic and journalistic German — it sounds more sophisticated than 'man kann nicht leugnen' (one cannot deny)."
+      },
+      {
+        "id": "eg_es9",
+        "question": "_____ handelt sich um ein Missverständnis.",
+        "translation": "(It is a misunderstanding / It concerns a misunderstanding)",
+        "options": [
+          "Es",
+          "Das",
+          "Man",
+          "Hier"
+        ],
+        "correct": "Es",
+        "explanation": "'Es handelt sich um + Akkusativ' (it is about/it concerns) is a fixed impersonal expression. 'Ein Missverständnis' is neuter accusative. This expression is essential in formal and professional German: 'Es handelt sich um einen Fehler' (It concerns an error), 'Es handelt sich um eine wichtige Frage' (It concerns an important question). Unlike 'es geht um' (it's about — more casual), 'es handelt sich um' is more formal and precise. The reflexive 'sich' is obligatory. In subordinate clauses: 'weil es sich um ein Missverständnis handelt.'"
+      },
+      {
+        "id": "eg_es10",
+        "question": "_____ fehlt mir an Erfahrung.",
+        "translation": "(I lack experience / I am short of experience)",
+        "options": [
+          "Es",
+          "Mir",
+          "Das",
+          "Man"
+        ],
+        "correct": "Es",
+        "explanation": "'Es fehlt mir an + Dativ' (I lack something) is an impersonal construction where 'es' is the grammatical subject, 'mir' is the dative experiencer, and 'an + Dativ' specifies what is lacking. 'Erfahrung' is feminine dative. This is more formal than 'mir fehlt Erfahrung' (simpler version). The 'es fehlt an' pattern is common in needs assessments and evaluations: 'Es fehlt an Geld' (There is a lack of money), 'Es fehlt an Personal' (There is a shortage of staff). In position 1, 'es' can disappear: 'Mir fehlt es an Erfahrung.'"
+      },
+      {
+        "id": "eg_es11",
+        "question": "_____ gefällt mir, wie du singst.",
+        "translation": "(I like how you sing)",
+        "options": [
+          "Es",
+          "Das",
+          "Mir",
+          "Mich"
+        ],
+        "correct": "Es",
+        "explanation": "'Es gefällt mir' (I like it — literally: 'it pleases me') uses 'es' + dative to express liking. The 'wie' clause specifies what is liked. 'Gefallen' is one of German's most important dative verbs: the thing liked is nominative (subject), the person liking is dative (indirect object). This reverses English logic: 'The song pleases me' rather than 'I like the song.' Similar dative verbs: 'es schmeckt mir' (it tastes good to me), 'es gefällt mir' (I like it), 'es passt mir' (it suits me). Mastering this reversed perspective is key to thinking in German."
+      },
+      {
+        "id": "eg_es12",
+        "question": "Mir ist _____ kalt in diesem Zimmer.",
+        "translation": "(I am cold in this room)",
+        "options": [
+          "es",
+          "sehr",
+          "hier",
+          "so"
+        ],
+        "correct": "es",
+        "explanation": "'Mir ist es kalt' or 'Es ist mir kalt' (I am cold) — German expresses physical sensations with dative + 'es' rather than with 'ich bin.' You never say 'Ich bin kalt' (that means 'I am cold-natured/unfriendly'!). The dative construction: 'mir ist kalt' (I'm cold), 'mir ist warm' (I'm warm), 'mir ist schlecht' (I feel sick), 'mir ist schwindelig' (I'm dizzy). The 'es' can appear or disappear depending on word order. When other elements fill position 1, 'es' often drops: 'In diesem Zimmer ist mir kalt.'"
+      },
+      {
+        "id": "eg_es13",
+        "question": "_____ wurde beschlossen, das Projekt fortzusetzen.",
+        "translation": "(It was decided to continue the project)",
+        "options": [
+          "Es",
+          "Man",
+          "Das",
+          "Hier"
+        ],
+        "correct": "Es",
+        "explanation": "'Es wurde beschlossen' (it was decided) uses 'es' as a placeholder in formal passive construction. The infinitive clause 'das Projekt fortzusetzen' is the real subject. This impersonal passive is the backbone of formal German — meeting minutes, legal documents, official announcements. Examples: 'Es wurde vereinbart, dass...' (It was agreed that...), 'Es wurde festgestellt, dass...' (It was determined that...), 'Es wird erwartet, dass...' (It is expected that...). The passive voice + 'es' creates distance and objectivity."
+      },
+      {
+        "id": "eg_es14",
+        "question": "_____ scheint, als ob er krank wäre.",
+        "translation": "(It seems as if he were sick)",
+        "options": [
+          "Es",
+          "Er",
+          "Das",
+          "Man"
+        ],
+        "correct": "Es",
+        "explanation": "'Es scheint, als ob + Konjunktiv II' (it seems as if) combines impersonal 'es' with a subjunctive clause. 'Wäre' is Konjunktiv II of 'sein.' This construction expresses appearances and suppositions. The 'als ob' clause requires Konjunktiv II (or occasionally Konjunktiv I in formal writing). Alternatives: 'Es sieht so aus, als ob...' (It looks as if...), 'Es wirkt, als ob...' (It appears as if...), 'Es hat den Anschein, als ob...' (It has the appearance as if... — very formal). These 'es + appearance verb' patterns are indispensable for nuanced expression."
+      },
+      {
+        "id": "eg_es15",
+        "question": "_____ kommt darauf an, wie man es betrachtet.",
+        "translation": "(It depends on how you look at it)",
+        "options": [
+          "Es",
+          "Das",
+          "Man",
+          "Hier"
+        ],
+        "correct": "Es",
+        "explanation": "'Es kommt darauf an' (it depends) is one of the most useful fixed expressions in German. 'Darauf' is a da-compound replacing 'auf + etwas.' The full pattern: 'es kommt darauf an + interrogative clause.' 'Wie man es betrachtet' (how one looks at it) specifies what it depends on. This expression is universally useful: 'Es kommt darauf an, ob...' (It depends on whether...), 'Es kommt auf die Qualität an' (It depends on the quality). In colloquial speech, often shortened to 'Kommt drauf an!' (Depends!). Mastering 'es kommt darauf an' signals intermediate-to-advanced fluency."
+      }
+    ]
+  },
+  {
+    "key": "position_verbs",
+    "name": "Position Verbs",
+    "description": "Positionsverben",
+    "iconName": "arrow.up.arrow.down",
+    "color": "#60a5fa",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_pov1",
+        "question": "Das Buch _____ auf dem Tisch.",
+        "translation": "(The book is (lying) on the table)",
+        "options": [
+          "liegt",
+          "legt",
+          "steht",
+          "stellt"
+        ],
+        "correct": "liegt",
+        "explanation": "'Liegen' (to lie/be lying) describes the position of flat or horizontal objects. 'Das Buch liegt auf dem Tisch' — books naturally lie flat. German is much more precise than English about position: where English simply says 'is,' German distinguishes between 'liegen' (lying), 'stehen' (standing), 'hängen' (hanging), and 'sitzen' (sitting). 'Auf dem Tisch' uses dative because liegen describes a static location (no movement). The pair: 'liegen' (position/state, intransitive) vs. 'legen' (action/placement, transitive)."
+      },
+      {
+        "id": "eg_pov2",
+        "question": "Er _____ das Buch auf den Tisch.",
+        "translation": "(He puts/lays the book on the table)",
+        "options": [
+          "legt",
+          "liegt",
+          "stellt",
+          "steht"
+        ],
+        "correct": "legt",
+        "explanation": "'Legen' (to lay/put in a lying position) is the transitive action verb — it requires a direct object and describes placing something flat. 'Auf den Tisch' uses ACCUSATIVE because legen describes movement to a new position. This is the core Position Verb principle: position (static) = DATIVE, placement (movement) = ACCUSATIVE. The pair: liegen/legen (lie/lay), stehen/stellen (stand/set), sitzen/setzen (sit/seat), hängen/hängen (hang/hang — same but different conjugation in past tense). Mastering these pairs is essential for fluent German."
+      },
+      {
+        "id": "eg_pov3",
+        "question": "Die Flasche _____ im Kühlschrank.",
+        "translation": "(The bottle is (standing) in the fridge)",
+        "options": [
+          "steht",
+          "stellt",
+          "liegt",
+          "legt"
+        ],
+        "correct": "steht",
+        "explanation": "'Stehen' (to stand/be standing) describes the position of upright or tall objects. Bottles, glasses, vases, boxes — anything with a vertical orientation 'steht.' 'Im Kühlschrank' = 'in dem Kühlschrank' (dative — static location). German position logic: round/tall objects 'stehen,' flat objects 'liegen,' objects on walls 'hängen.' A cup 'steht auf dem Tisch' (stands on the table), a plate 'liegt auf dem Tisch' (lies on the table). This distinction reveals how German speakers conceptualize spatial relationships more precisely than English speakers."
+      },
+      {
+        "id": "eg_pov4",
+        "question": "Sie _____ die Flasche in den Kühlschrank.",
+        "translation": "(She puts the bottle into the fridge)",
+        "options": [
+          "stellt",
+          "steht",
+          "legt",
+          "liegt"
+        ],
+        "correct": "stellt",
+        "explanation": "'Stellen' (to set/put in standing position) is the transitive action verb for upright placement. 'In den Kühlschrank' uses ACCUSATIVE because it describes movement into the fridge. Compare: 'Die Flasche steht im (= in dem, DATIVE) Kühlschrank' (position) vs. 'Sie stellt die Flasche in den (ACCUSATIVE) Kühlschrank' (action). The accusative/dative switch with two-way prepositions (in, auf, an, über, unter, vor, hinter, neben, zwischen) is one of German's most challenging features — and position verbs are where it matters most."
+      },
+      {
+        "id": "eg_pov5",
+        "question": "Das Bild _____ an der Wand.",
+        "translation": "(The picture is hanging on the wall)",
+        "options": [
+          "hängt",
+          "hängen",
+          "gehängt",
+          "hing"
+        ],
+        "correct": "hängt",
+        "explanation": "'Hängen' (to hang/be hanging) describes objects attached to vertical surfaces. 'An der Wand' uses dative (static position). 'Hängen' is unique among position verbs: it has TWO forms — a strong (intransitive) form: hängt/hing/hat gehangen (state: something is hanging) and a weak (transitive) form: hängt/hängte/hat gehängt (action: someone hangs something). Present tense is identical! Past tense reveals the difference: 'Das Bild hing an der Wand' (state) vs. 'Er hängte das Bild an die Wand' (action). This irregularity even confuses native speakers."
+      },
+      {
+        "id": "eg_pov6",
+        "question": "Das Kind _____ auf dem Stuhl.",
+        "translation": "(The child is sitting on the chair)",
+        "options": [
+          "sitzt",
+          "setzt",
+          "steht",
+          "liegt"
+        ],
+        "correct": "sitzt",
+        "explanation": "'Sitzen' (to sit/be sitting) describes people or animals in a seated position. 'Auf dem Stuhl' uses dative (static position). The pair: 'sitzen' (intransitive — to be sitting) vs. 'setzen' (transitive — to seat/put someone in a sitting position, or reflexive: 'sich setzen' = to sit down). 'Er sitzt auf dem Stuhl' (He is sitting — state) vs. 'Er setzt sich auf den Stuhl' (He sits down — action, accusative for movement). 'Sitzen' is a strong verb: sitzt/saß/hat gesessen. In southern German: 'ist gesessen' (using sein!)."
+      },
+      {
+        "id": "eg_pov7",
+        "question": "Bitte _____ Sie sich!",
+        "translation": "(Please sit down! / Please have a seat!)",
+        "options": [
+          "setzen",
+          "sitzen",
+          "stellen",
+          "legen"
+        ],
+        "correct": "setzen",
+        "explanation": "'Setzen Sie sich!' (Please sit down!) uses the reflexive form of 'setzen' — literally 'seat yourself.' This is the polite way to invite someone to sit in German. 'Sich setzen' (to sit down/take a seat) is the action verb, while 'sitzen' is the state. The reflexive pronoun 'sich' is essential — without it, 'setzen' means to place something else. More reflexive position expressions: 'sich hinlegen' (to lie down), 'sich hinstellen' (to stand up/position oneself), 'sich hinsetzen' (to sit down — more emphatic with 'hin-')."
+      },
+      {
+        "id": "eg_pov8",
+        "question": "Wohin hast du die Schlüssel _____?",
+        "translation": "(Where did you put the keys?)",
+        "options": [
+          "gelegt",
+          "gelegen",
+          "gestellt",
+          "gestanden"
+        ],
+        "correct": "gelegt",
+        "explanation": "'Legen' (to lay/put flat) uses the transitive past participle 'gelegt' (weak verb: hat gelegt). Keys are flat objects, so 'legen' is the appropriate verb. 'Wohin' (where to) signals direction = action verb. Compare the past participles: 'gelegt' (laid — transitive, weak, hat) vs. 'gelegen' (lain — intransitive, strong, hat/ist). The perfect tense reveals the difference clearly: 'Ich habe die Schlüssel auf den Tisch gelegt' (I put the keys on the table) vs. 'Die Schlüssel haben auf dem Tisch gelegen' (The keys were lying on the table)."
+      },
+      {
+        "id": "eg_pov9",
+        "question": "Die Katze _____ unter dem Bett.",
+        "translation": "(The cat is (lying/sitting) under the bed)",
+        "options": [
+          "liegt",
+          "legt",
+          "steht",
+          "stellt"
+        ],
+        "correct": "liegt",
+        "explanation": "'Liegen' is used for animals in a resting position — cats typically lie when they rest. 'Unter dem Bett' uses dative (static location under the bed). For animals, the choice of position verb depends on their posture: 'Die Katze liegt' (lying/resting), 'Die Katze sitzt' (sitting upright), 'Der Hund steht' (standing). German speakers choose the verb based on visual observation of the actual position. This natural use of position verbs to describe animal behavior shows how intuitive these distinctions are for native speakers."
+      },
+      {
+        "id": "eg_pov10",
+        "question": "Er hat das Poster an die Wand _____.",
+        "translation": "(He hung the poster on the wall)",
+        "options": [
+          "gehängt",
+          "gehangen",
+          "gehangt",
+          "hing"
+        ],
+        "correct": "gehängt",
+        "explanation": "'Hängen' (transitive, to hang something) has the weak past participle 'gehängt' and uses 'hat': 'hat gehängt.' 'An die Wand' uses ACCUSATIVE (movement/placement — the poster wasn't on the wall, now it is). Contrast: intransitive 'hängen' uses strong forms: 'hat gehangen' (the poster was already hanging). The past tense contrast: 'Er hängte das Poster an die Wand' (he hung it — weak past) vs. 'Das Poster hing an der Wand' (the poster was hanging — strong past, dative). This transitive/intransitive distinction with different conjugation patterns is uniquely German."
+      },
+      {
+        "id": "eg_pov11",
+        "question": "Die Teller _____ im Schrank.",
+        "translation": "(The plates are (standing) in the cabinet)",
+        "options": [
+          "stehen",
+          "liegen",
+          "hängen",
+          "sitzen"
+        ],
+        "correct": "stehen",
+        "explanation": "'Stehen' for plates? Yes! In a cabinet, plates are typically stacked upright or leaning against each other — German considers them 'standing.' 'Im Schrank' = 'in dem Schrank' (dative, static). This reveals cultural differences in spatial perception: plates in a rack 'stehen,' but plates on a table 'liegen' (lying flat). Cups always 'stehen' (upright). The German position verb choice depends on the actual physical orientation, not on the object category. This attention to spatial detail is one of the most fascinating aspects of German grammar."
+      },
+      {
+        "id": "eg_pov12",
+        "question": "_____ du bitte die Bücher ins Regal!",
+        "translation": "(Please put the books on the shelf!)",
+        "options": [
+          "Stell",
+          "Steh",
+          "Leg",
+          "Lieg"
+        ],
+        "correct": "Stell",
+        "explanation": "'Stell!' is the imperative of 'stellen' (to set/place upright). Books on a shelf stand upright, so 'stellen' is correct. 'Ins Regal' = 'in das Regal' (accusative — movement into the shelf). If the books were to be placed flat (on a table), you'd say 'Leg die Bücher auf den Tisch!' The imperative drops the -e for informal 'du': stellen → stell, legen → leg. But some position verbs keep it: 'Setz dich!' (Sit down!). The imperative of position verbs is extremely common in daily life — organizing, cleaning, cooking."
+      },
+      {
+        "id": "eg_pov13",
+        "question": "Wo _____ denn meine Brille?",
+        "translation": "(Where are my glasses?)",
+        "options": [
+          "liegt",
+          "legt",
+          "steht",
+          "stellt"
+        ],
+        "correct": "liegt",
+        "explanation": "'Liegen' for glasses — glasses are flat objects that naturally lie on surfaces. 'Wo' (where, static location) confirms we need the position verb, not the placement verb. 'Meine Brille' is singular in German despite being 'glasses' (plural) in English! Compare 'Wo liegt meine Brille?' (Where are my glasses — flat) vs. 'Wo steht mein Glas?' (Where is my glass — upright). The 'wo' question word signals Dative/state, while 'wohin' signals Accusative/action. This wo/wohin distinction pairs perfectly with position vs. placement verbs."
+      },
+      {
+        "id": "eg_pov14",
+        "question": "Die Stadt _____ am Fluss.",
+        "translation": "(The city is located by the river)",
+        "options": [
+          "liegt",
+          "steht",
+          "sitzt",
+          "hängt"
+        ],
+        "correct": "liegt",
+        "explanation": "'Liegen' is used for the geographical location of cities, towns, and regions. 'Die Stadt liegt am Fluss' (The city lies by the river). 'Am Fluss' = 'an dem Fluss' (dative — static location). This is a fixed pattern: 'Berlin liegt an der Spree,' 'München liegt in Bayern,' 'Deutschland liegt in Europa.' For buildings, 'stehen' is used: 'Das Rathaus steht am Marktplatz' (The town hall stands at the market square). Mountains 'liegen' in regions but 'stehen' when viewed as towering structures. These geographic conventions are deeply ingrained."
+      },
+      {
+        "id": "eg_pov15",
+        "question": "Sie hat sich neben mich _____.",
+        "translation": "(She sat down next to me)",
+        "options": [
+          "gesetzt",
+          "gesessen",
+          "gestellt",
+          "gelegt"
+        ],
+        "correct": "gesetzt",
+        "explanation": "'Sich setzen' (to sit down) uses 'gesetzt' (weak past participle, hat): 'hat sich gesetzt.' 'Neben mich' uses ACCUSATIVE because 'sich setzen' describes movement to a new position. Compare: 'Sie hat sich neben mich gesetzt' (She sat down next to me — action, ACC) vs. 'Sie hat neben mir gesessen' (She was sitting next to me — state, DAT). The reflexive 'sich' confirms this is the action verb. This contrast between 'sich setzen + ACC' and 'sitzen + DAT' perfectly illustrates the German position verb system's core principle: action = ACC, state = DAT."
+      }
+    ]
   }
 ]
