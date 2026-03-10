@@ -19233,5 +19233,1005 @@
         "explanation": "報じられている (houjirareteiru, it is being reported) is the passive news citation form. 報じる (houjiru, to report — news) is the specialized journalism verb, distinct from 報告する (houkoku suru, to report — general). 生存者 (seizonsha, survivors) is the formal term. News Japanese uses multiple reporting verbs: 報じる (news media reports), 報告する (official/formal report), 伝える (convey/relay), 明らかにする (reveal/disclose). Each attributes information differently. 報じられている distances the newspaper from the claim, indicating it comes from another source."
       }
     ]
+  },
+  {
+    "name": "Classical Remnants (古語の名残)",
+    "items": [
+      {
+        "id": "ej_clr_1",
+        "question": "_____ is an archaic form of ある that survives in set expressions.",
+        "translation": "(「おわす」は「ある」の古語形で、慣用句に残っている。)",
+        "options": [
+          "おわす",
+          "あらう",
+          "おける",
+          "おわる"
+        ],
+        "correct": "おわす",
+        "explanation": "おわす is an archaic honorific existence verb meaning 'to be/exist' (for esteemed subjects). While no longer used in conversation, it survives in expressions like 神のおわす場所 (the place where God resides). Classical Japanese (古語/文語) forms permeate modern Japanese in fixed expressions, literature, and ceremonial language. Recognizing these remnants unlocks deeper understanding of formal and poetic Japanese."
+      },
+      {
+        "id": "ej_clr_2",
+        "question": "The classical negative ending _____ survives in 知らず (not knowing).",
+        "translation": "(古語の否定語尾「ず」は「知らず」に残っている。)",
+        "options": [
+          "ず",
+          "ぬ",
+          "じ",
+          "まじ"
+        ],
+        "correct": "ず",
+        "explanation": "ず (zu) is the classical negative auxiliary, replaced in modern Japanese by ない. But ず survives in many fixed expressions: 知らず知らず (unknowingly), 絶えず (ceaselessly), 限らず (not limited to), やむを得ず (unavoidably). Recognizing ず as an old negative marker helps you parse formal and literary Japanese. In writing, 〜ず is sometimes preferred over 〜ないで for an elevated aesthetic tone."
+      },
+      {
+        "id": "ej_clr_3",
+        "question": "The expression 汝 (なんじ) is an archaic word for _____.",
+        "translation": "(「汝」は古語で「あなた」を意味する。)",
+        "options": [
+          "you",
+          "I",
+          "they",
+          "we"
+        ],
+        "correct": "you",
+        "explanation": "汝 (nanji, thou/you) is a classical second-person pronoun found in religious texts, period dramas, and literature. Modern Japanese uses あなた, きみ, おまえ, etc. Other archaic pronouns: 我 (ware, I — formal/classical), 余 (yo, I — imperial), 吾輩 (wagahai, I — pompous, famously used in Natsume Soseki's novel). These pronouns appear in historical fiction, samurai dramas, and classical texts."
+      },
+      {
+        "id": "ej_clr_4",
+        "question": "The classical particle _____ means 'even' and survives in すら.",
+        "translation": "(古語の助詞「すら」は現代語の「さえ」と同じ意味。)",
+        "options": [
+          "すら",
+          "なむ",
+          "こそ",
+          "ぞ"
+        ],
+        "correct": "すら",
+        "explanation": "すら (sura) is the classical equivalent of modern さえ (even). 子供ですら知っている (even children know) sounds more literary than 子供でさえ. Other survived classical particles: をも (wo mo — emphatic 'even'), だに (dani — 'even just'), のみ (nomi — 'only,' more formal than だけ). These particles add gravitas to modern writing: 想像すらできない (can't even imagine), 微動だにしない (doesn't even flinch)."
+      },
+      {
+        "id": "ej_clr_5",
+        "question": "_____ is a classical conjunctive that means 'although' in modern ても/のに.",
+        "translation": "(「ども」は古語の「ても」に相当する逆接表現。)",
+        "options": [
+          "ども",
+          "ぞ",
+          "なむ",
+          "かし"
+        ],
+        "correct": "ども",
+        "explanation": "ども (domo) is the classical concessive 'although,' surviving in modern Japanese in 残念ながらども and the humble first-person 私ども (watakushidomo, we — humble). The classical ど/ども meaning 'even though' appears in classical poetry and literature. Recognizing concessive ども helps with reading pre-modern texts and understanding why 私ども exists as a plural humble pronoun."
+      },
+      {
+        "id": "ej_clr_6",
+        "question": "The archaic verb ending べし means _____.",
+        "translation": "(古語の「べし」は推量・当然を表す。)",
+        "options": [
+          "should/must",
+          "want to",
+          "can",
+          "did"
+        ],
+        "correct": "should/must",
+        "explanation": "べし (beshi) is a classical auxiliary expressing obligation, conjecture, or inevitability. Modern べき (should) derives directly from it: 行くべきだ (should go) ← 行くべし. Other forms from べし: べからず (must not — seen on signs: 入るべからず, no entry), べく (in order to — 成功すべく努力する, striving to succeed). べし and its derivatives bridge classical grammar and modern formal Japanese seamlessly."
+      },
+      {
+        "id": "ej_clr_7",
+        "question": "The expression 曰く (___) means 'says/said' in classical style.",
+        "translation": "(「曰く」は古語で「言う」を意味する。)",
+        "options": [
+          "いわく",
+          "のたまう",
+          "おっしゃる",
+          "もうす"
+        ],
+        "correct": "いわく",
+        "explanation": "曰く (iwaku) is the classical 'says/said,' surviving in modern Japanese for attributing quotes, especially from historical figures: 孔子曰く (Confucius said), ことわざに曰く (as the proverb says). It's used in academic writing and formal speeches. The word comes from the classical 言はく (iwaku), the 已然形 (realis form) of 言ふ used as a nominalizer. Modern equivalent: 〜によると/〜が言うには."
+      },
+      {
+        "id": "ej_clr_8",
+        "question": "_____ is the classical copula equivalent to modern だ/です.",
+        "translation": "(「なり」は古語で「だ/です」に相当する。)",
+        "options": [
+          "なり",
+          "たり",
+          "けり",
+          "めり"
+        ],
+        "correct": "なり",
+        "explanation": "なり (nari) is the classical copula (assertive auxiliary), equivalent to modern だ/です. It survives in the adverb 自然なり (as nature dictates) and in the expression 〜なり (being/as): 王者なり (he is a king — literary). Classical Japanese has two copulas: なり (for assertions based on knowledge) and たり (for assertions based on evidence/description). Understanding なり illuminates why modern な-adjectives end in な — it's a remnant of this copula."
+      },
+      {
+        "id": "ej_clr_9",
+        "question": "The classical past tense auxiliary _____ survives in けりをつける.",
+        "translation": "(古語の過去助動詞「けり」は「けりをつける」に残っている。)",
+        "options": [
+          "けり",
+          "つ",
+          "ぬ",
+          "き"
+        ],
+        "correct": "けり",
+        "explanation": "けり (keri) is the classical past tense/narrative marker, surviving in けりをつける (to settle/conclude a matter). Classical Japanese has two past auxiliaries: き (ki, direct past — speaker witnessed) and けり (keri, indirect past — narrated/discovered). This direct/indirect past distinction doesn't exist in modern Japanese (both became た), but understanding it enriches appreciation of classical literature and haiku, which frequently end with けり."
+      },
+      {
+        "id": "ej_clr_10",
+        "question": "The form _____ in ごとく means 'like/as if.'",
+        "translation": "(「ごとく」は「〜のように」を意味する古語表現。)",
+        "options": [
+          "ごとく",
+          "ごとし",
+          "ごとか",
+          "ごとに"
+        ],
+        "correct": "ごとく",
+        "explanation": "ごとく (gotoku, like/as) is the classical comparison form, replaced by ように in modern Japanese. But it survives in formal/literary expressions: 以下のごとく (as follows), 火のごとく (like fire), ご承知のごとく (as you know). The base form ごとし (gotoshi) functions as a classical simile marker. 矢のごとく飛ぶ (fly like an arrow) is more dramatic and literary than 矢のように飛ぶ."
+      },
+      {
+        "id": "ej_clr_11",
+        "question": "The classical emphatic particle _____ requires the predicate in 已然形.",
+        "translation": "(強調の係助詞「こそ」は述語を已然形にする。)",
+        "options": [
+          "こそ",
+          "ぞ",
+          "なむ",
+          "は"
+        ],
+        "correct": "こそ",
+        "explanation": "こそ (koso) is a classical emphatic focus particle that triggers 已然形 (izenkei/realis form) on the predicate through 係り結び (kakari musubi, bound ending). In modern Japanese, こそ survives but no longer triggers verb form changes: これこそ本物だ (this is indeed the real thing). In classical Japanese, it would be これこそ本物なれ (with なり in 已然形). 係り結び is one of classical grammar's most distinctive features."
+      },
+      {
+        "id": "ej_clr_12",
+        "question": "The suffix _____ in 恐ろしげ means 'seeming/appearing.'",
+        "translation": "(「恐ろしげ」の「げ」は「〜そうな」を意味する古語接尾辞。)",
+        "options": [
+          "げ",
+          "み",
+          "さ",
+          "き"
+        ],
+        "correct": "げ",
+        "explanation": "げ (ge) is a classical suffix meaning 'seeming/appearing,' equivalent to modern 〜そうな. 恐ろしげ (osoroshige, seeming fearful), 悲しげ (kanashige, looking sad), 楽しげ (tanoshige, appearing happy). While classical in origin, げ is still used in modern literary and semi-formal Japanese, adding a more refined, observational quality than 〜そう. This suffix demonstrates how classical Japanese forms create nuances unavailable in purely modern expression."
+      },
+      {
+        "id": "ej_clr_13",
+        "question": "The expression 我が (___) is the classical possessive for 'my.'",
+        "translation": "(「我が」は「私の」を意味する古語の所有格。)",
+        "options": [
+          "わが",
+          "われの",
+          "おのが",
+          "おのれの"
+        ],
+        "correct": "わが",
+        "explanation": "我が (waga, my) is the classical first-person possessive, surviving in patriotic and formal expressions: 我が国 (waga kuni, our country), 我が家 (wagaya, my home), 我が社 (waga sha, our company). The classical possessive used が where modern Japanese uses の. This が as possessive marker survives in names: 関ヶ原 (Sekigahara), 霞ヶ関 (Kasumigaseki). Modern の evolved from this classical possessive が."
+      },
+      {
+        "id": "ej_clr_14",
+        "question": "_____ is a classical intensifier meaning 'very' that still appears in formal Japanese.",
+        "translation": "(「甚だ」は「とても」を意味する古語の強調表現。)",
+        "options": [
+          "甚だ",
+          "いと",
+          "げに",
+          "あな"
+        ],
+        "correct": "甚だ",
+        "explanation": "甚だ (hanahada, exceedingly/very much) is a classical intensifier still used in modern formal Japanese: 甚だ遺憾です (deeply regrettable — official apologies), 甚だしい (extreme/excessive). Other classical intensifiers that survive: いたく (greatly, from 痛く), 極めて (kiwamete, extremely). Classical いと (ito, very much) no longer appears in modern usage but is essential for reading Heian literature like The Pillow Book and The Tale of Genji."
+      },
+      {
+        "id": "ej_clr_15",
+        "question": "The phrase 〜たる in 堂々たる means _____.",
+        "translation": "(「堂々たる」の「たる」は古語の連体形で「〜である」を意味する。)",
+        "options": [
+          "being/that is",
+          "was",
+          "will be",
+          "might be"
+        ],
+        "correct": "being/that is",
+        "explanation": "たる (taru) is the classical copula たり in attributive form (連体形), meaning 'that is/being.' It survives in dramatic adjective compounds: 堂々たる (dignified), 圧倒的たる (overwhelming), 歴然たる (obvious). These たる adjectives carry strong literary weight and are used in speeches, essays, and formal descriptions. The related と form also survives: 堂々と歩く (walk dignifiedly). These classical forms add gravitas that modern equivalents like 〜な cannot replicate."
+      }
+    ]
+  },
+  {
+    "name": "Dialect Awareness (方言意識)",
+    "items": [
+      {
+        "id": "ej_dia_1",
+        "question": "In Kansai dialect, the negative form of 食べない is _____.",
+        "translation": "(関西弁で「食べない」は「食べへん」になる。)",
+        "options": [
+          "食べへん",
+          "食べねー",
+          "食べん",
+          "食べまい"
+        ],
+        "correct": "食べへん",
+        "explanation": "Kansai-ben (関西弁, primarily Osaka/Kyoto) replaces ない with へん for negation: 食べない → 食べへん, 行かない → 行かへん, 知らない → 知らへん. This is the most recognizable Kansai dialect feature. Kansai dialect is Japan's second most prominent dialect group, widely heard in comedy (漫才/manzai), TV, and everyday Osaka/Kyoto life. Awareness of dialectal negation patterns helps learners understand real-world Japanese beyond textbook standard."
+      },
+      {
+        "id": "ej_dia_2",
+        "question": "The Kansai word _____ replaces standard おもしろい.",
+        "translation": "(関西弁の「おもろい」は標準語の「おもしろい」に相当する。)",
+        "options": [
+          "おもろい",
+          "おもさん",
+          "おもい",
+          "おもたい"
+        ],
+        "correct": "おもろい",
+        "explanation": "おもろい (omoroi) is the Kansai contraction of おもしろい (omoshiroi, interesting/funny). Many Kansai adjectives are shortened: めんどくさい → めんどい (troublesome), すごい → すごっ (amazing). Kansai speakers often sound more animated and direct. Since Kansai dialect dominates Japanese comedy (お笑い/owarai), understanding these features enriches your ability to enjoy Japanese humor, which is deeply dialect-influenced."
+      },
+      {
+        "id": "ej_dia_3",
+        "question": "_____ is the Kansai equivalent of standard ありがとう.",
+        "translation": "(関西弁では「おおきに」は「ありがとう」と同じ意味。)",
+        "options": [
+          "おおきに",
+          "ありがたや",
+          "すまんな",
+          "どうもな"
+        ],
+        "correct": "おおきに",
+        "explanation": "おおきに (ookini, thank you) is the classic Kansai thanking expression. In Osaka shops and restaurants, you'll hear おおきに instead of ありがとうございます. Other Kansai greetings and expressions: 元気でっか (genki dekka, how are you?), まいど (maido, hello — literally 'every time'). These replace their standard equivalents entirely in Kansai daily life. Even learners who speak standard Japanese benefit from recognizing these when visiting western Japan."
+      },
+      {
+        "id": "ej_dia_4",
+        "question": "In Kyushu dialect, _____ replaces standard だ as a sentence-ending copula.",
+        "translation": "(九州方言では「ばい」が文末に使われる。)",
+        "options": [
+          "ばい",
+          "けん",
+          "ちゃ",
+          "じゃ"
+        ],
+        "correct": "ばい",
+        "explanation": "ばい (bai) is a Hakata/Kyushu dialect sentence-ending particle, roughly equivalent to だよ/ですよ. 行くばい (ikubai, I'm going!). Other Kyushu features: けん/けんね (because/so — replacing から), 〜と (question marker instead of の). Kyushu dialects (博多弁/hakata-ben, 熊本弁/kumamoto-ben) are considered charming and are popular in Japanese media. These dialect particles are the quickest way to identify a Kyushu speaker."
+      },
+      {
+        "id": "ej_dia_5",
+        "question": "The Tohoku dialect feature of merging し and す sounds is called _____.",
+        "translation": "(東北弁のシとスの混同は「ズーズー弁」と呼ばれる。)",
+        "options": [
+          "ズーズー弁",
+          "べらんめえ",
+          "ちゃっぴー",
+          "だべ弁"
+        ],
+        "correct": "ズーズー弁",
+        "explanation": "ズーズー弁 (zuuzuu-ben) refers to the phonological feature in Tohoku dialects where sibilant distinctions blur: し/す, ち/つ, じ/ず merge. 寿司 (sushi) might sound like 'susu.' This is the most distinctive phonological feature of northern Japanese dialects. While sometimes stereotyped, Tohoku residents are proud of their linguistic heritage. Understanding that Japanese has significant phonological variation helps learners appreciate that 'standard Japanese' is one of many varieties."
+      },
+      {
+        "id": "ej_dia_6",
+        "question": "_____ is the Hokkaido dialect word for 'cold.'",
+        "translation": "(北海道方言で「寒い」は「しばれる」と言う。)",
+        "options": [
+          "しばれる",
+          "さぶい",
+          "ひゃっこい",
+          "つべたい"
+        ],
+        "correct": "しばれる",
+        "explanation": "しばれる (shibareru, freezing cold) is distinctly Hokkaido dialect, describing the intense cold that 'seizes' you. Standard Japanese's 寒い (samui) doesn't capture the same biting intensity. Other Hokkaido expressions: なまら (namara, very much — Hokkaido intensifier), ゴミを投げる (gomi wo nageru, to throw away trash — standard: 捨てる). Hokkaido dialect reflects the region's unique settlement history and extreme climate, with words that don't exist in standard Japanese."
+      },
+      {
+        "id": "ej_dia_7",
+        "question": "The Okinawan language greeting はいさい is equivalent to _____.",
+        "translation": "(沖縄語の「はいさい」は「こんにちは」に相当する。)",
+        "options": [
+          "こんにちは",
+          "さようなら",
+          "ありがとう",
+          "すみません"
+        ],
+        "correct": "こんにちは",
+        "explanation": "はいさい (haisai, hello — male) / はいたい (haitai — female) is the traditional Okinawan greeting. Okinawan (ウチナーグチ/uchinaaguchi) is actually a separate language, not just a dialect, in the Japonic language family. Other Okinawan: めんそーれ (mensoore, welcome), にふぇーでーびる (nifee deebiru, thank you). UNESCO classifies Okinawan as an endangered language. Recognizing the distinction between Japanese dialects and Ryukyuan languages shows cultural awareness."
+      },
+      {
+        "id": "ej_dia_8",
+        "question": "Standard Japanese これ/それ/あれ becomes こい/そい/あい in _____ dialect.",
+        "translation": "(標準語の「これ/それ/あれ」は鹿児島弁で「こい/そい/あい」になる。)",
+        "options": [
+          "Kagoshima",
+          "Osaka",
+          "Tokyo",
+          "Nagoya"
+        ],
+        "correct": "Kagoshima",
+        "explanation": "Kagoshima dialect (鹿児島弁/kagoshima-ben) is one of Japan's most distinctive dialects, historically so different from standard Japanese that it was used as a code language during WWII. こい/そい/あい replace これ/それ/あれ. Other features: 〜じゃっど (sentence ender), 〜ど (emphasis). Kagoshima-ben is notoriously difficult for other Japanese speakers to understand, illustrating the remarkable dialectal diversity within Japan."
+      },
+      {
+        "id": "ej_dia_9",
+        "question": "In Tokyo/Edo dialect (江戸弁), _____ replaces standard ひ (hi) sound.",
+        "translation": "(江戸弁では「ひ」が「し」になることがある。)",
+        "options": [
+          "し",
+          "ち",
+          "き",
+          "に"
+        ],
+        "correct": "し",
+        "explanation": "Old Edo (Tokyo) dialect blends ひ (hi) and し (shi): 東 (ひがし) becomes しがし, 人 (ひと) sounds like しと. This feature, called しひ不分 (shi-hi fubun), characterizes traditional shitamachi (downtown) Tokyo speech. It's different from standard Tokyo Japanese, which is based on the Yamanote (uptown) dialect. Even Tokyo has dialect variation. べらんめえ調 (beranmee-chou, rough downtown speech) appears in period dramas and Rakugo comedy."
+      },
+      {
+        "id": "ej_dia_10",
+        "question": "The Nagoya dialect uses _____ as an emphasis particle at the end of sentences.",
+        "translation": "(名古屋弁では「だがや」が文末の強調表現。)",
+        "options": [
+          "だがや",
+          "だべ",
+          "じゃん",
+          "ずら"
+        ],
+        "correct": "だがや",
+        "explanation": "だがや (dagaya) is Nagoya-ben's characteristic sentence-ending emphasis particle: 本当だがや (It's really true!). Nagoya dialect (名古屋弁) is part of the broader Tokai dialect group. Other Nagoya features: 〜りん (polite request, like 食べりん = please eat), でら〜 (dera, very — intensifier). Each region's dialect markers function as identity badges, and speakers shift between dialect and standard Japanese depending on context (code-switching)."
+      },
+      {
+        "id": "ej_dia_11",
+        "question": "The polite sentence ending _____ is characteristic of Kyoto dialect.",
+        "translation": "(京都弁の「〜どす」は丁寧な文末表現。)",
+        "options": [
+          "どす",
+          "だす",
+          "じゃ",
+          "や"
+        ],
+        "correct": "どす",
+        "explanation": "どす (dosu) is Kyoto's elegant copula: おいでやす (oideyasu, welcome — Kyoto) and 〜どす (desu equivalent) reflect Kyoto's historically refined speech. Kyoto-ben is considered the most elegant Japanese dialect due to the city's long history as the imperial capital. 〜はる (haru, honorific — Kyoto-style): 行かはる (ikaharu, go — polite, distinct from standard いらっしゃる). Kyoto and Osaka dialects differ despite their proximity."
+      },
+      {
+        "id": "ej_dia_12",
+        "question": "_____ is used in many dialects for 'very' but is not standard Japanese.",
+        "translation": "(「えらい」は多くの方言で「とても」を意味する。)",
+        "options": [
+          "えらい",
+          "ばり",
+          "なまら",
+          "でら"
+        ],
+        "correct": "えらい",
+        "explanation": "えらい (erai) in standard Japanese means 'great/admirable,' but in many western Japanese dialects it means 'very' or 'tiring': えらい暑い (very hot — dialectal), えらい疲れた (very tired — Kansai). This dual meaning causes confusion. Other dialect intensifiers: ばり (bari — Hakata: very), なまら (namara — Hokkaido: very), でら (dera — Nagoya: very), ぶち (buchi — Hiroshima: very). Each region has its own 'very' — a fun dialectal feature to collect."
+      },
+      {
+        "id": "ej_dia_13",
+        "question": "The contraction じゃん (jan) originated from _____ dialect.",
+        "translation": "(「じゃん」はもともと横浜・神奈川方言。)",
+        "options": [
+          "Yokohama",
+          "Osaka",
+          "Sapporo",
+          "Fukuoka"
+        ],
+        "correct": "Yokohama",
+        "explanation": "じゃん (jan, isn't it? / right?) originated in Yokohama/Kanagawa dialect but has spread widely through media to become quasi-standard, especially among younger speakers: いいじゃん (isn't it good?), 知ってるじゃん (you know, right?). This is a perfect example of dialect leveling — how media exposure spreads dialectal features nationwide. Similarly, Kansai なんでやねん has become nationally understood through comedy."
+      },
+      {
+        "id": "ej_dia_14",
+        "question": "The concept of 'dialect shame' (方言コンプレックス) means _____.",
+        "translation": "(「方言コンプレックス」は方言に対する劣等感を意味する。)",
+        "options": [
+          "feeling inferior about one's dialect",
+          "loving one's dialect",
+          "forgetting one's dialect",
+          "learning a new dialect"
+        ],
+        "correct": "feeling inferior about one's dialect",
+        "explanation": "方言コンプレックス (hougen complex) describes the shame some Japanese feel about their dialect, especially when moving to Tokyo. Historically, standardization policies (標準語教育) discouraged dialects in schools. Today, attitudes have shifted positively — dialects are valued as cultural heritage and regional identity. NHK朝ドラ (morning dramas) often feature dialects prominently. Understanding this social dynamic helps learners appreciate why some Japanese speakers code-switch between dialect and standard."
+      },
+      {
+        "id": "ej_dia_15",
+        "question": "The practice of switching between dialect and standard Japanese is called _____.",
+        "translation": "(方言と標準語を使い分けることを「コードスイッチング」と言う。)",
+        "options": [
+          "code-switching",
+          "dialect training",
+          "language mixing",
+          "style shifting"
+        ],
+        "correct": "code-switching",
+        "explanation": "Code-switching (コードスイッチング) — also called 使い分け (tsukaiwake, differentiated usage) — is how most dialect speakers navigate daily life: dialect with family and friends, standard Japanese at work and with strangers. Phone voice (電話の声) shifting to polite standard Japanese is a common example. Understanding this phenomenon helps learners realize that 'correct' Japanese isn't just standard — linguistic competence in Japan includes knowing when to use which variety."
+      }
+    ]
+  },
+  {
+    "name": "Gender in Language (言葉とジェンダー)",
+    "items": [
+      {
+        "id": "ej_gen_1",
+        "question": "The sentence-ending particle _____ is traditionally considered feminine.",
+        "translation": "(文末助詞「わ」は伝統的に女性的とされる。)",
+        "options": [
+          "わ",
+          "ぜ",
+          "ぞ",
+          "さ"
+        ],
+        "correct": "わ",
+        "explanation": "わ (wa) with falling intonation is traditionally feminine: きれいだわ (how pretty). With rising intonation in Kansai, it's gender-neutral. Gendered speech (女ことば/男ことば) is a notable feature of Japanese. However, modern usage is evolving — younger speakers use fewer gender-marked forms. Anime and textbooks often exaggerate gender differences. Understanding gendered particles helps you decode media while avoiding stereotypical speech patterns in real conversation."
+      },
+      {
+        "id": "ej_gen_2",
+        "question": "The rough masculine particle _____ adds assertion to statements.",
+        "translation": "(男性的な文末助詞「ぜ」は断定的なニュアンスを加える。)",
+        "options": [
+          "ぜ",
+          "わ",
+          "の",
+          "かしら"
+        ],
+        "correct": "ぜ",
+        "explanation": "ぜ (ze) is a masculine assertive particle: 行くぜ (I'm going! — strong, masculine). Similarly, ぞ (zo) adds forceful emphasis: やるぞ (Let's do it!). These 'rough' particles signal confidence and directness. In real life, their use correlates more with personality and context than strictly with gender — a businesswoman motivating her team might say やるぞ. Media tends to assign these particles rigidly by gender, but real speech is more fluid."
+      },
+      {
+        "id": "ej_gen_3",
+        "question": "Women traditionally use _____ instead of 僕 or 俺 for 'I.'",
+        "translation": "(女性は伝統的に「私」を使う。)",
+        "options": [
+          "私 (わたし)",
+          "僕 (ぼく)",
+          "俺 (おれ)",
+          "拙者 (せっしゃ)"
+        ],
+        "correct": "私 (わたし)",
+        "explanation": "First-person pronouns are strongly gendered in Japanese. Traditional associations: 私/わたし (watashi — neutral/feminine), わたくし (watakushi — very formal, any gender), 僕/ぼく (boku — masculine, soft), 俺/おれ (ore — masculine, rough), あたし (atashi — feminine, casual). But these boundaries are shifting: some women use 僕, some men prefer わたし casually. The choice of 'I' communicates gender identity, formality, and personality simultaneously."
+      },
+      {
+        "id": "ej_gen_4",
+        "question": "The questioning particle _____ is considered feminine in standard Japanese.",
+        "translation": "(「かしら」は標準語で女性的な疑問の文末助詞。)",
+        "options": [
+          "かしら",
+          "かな",
+          "だろう",
+          "じゃない"
+        ],
+        "correct": "かしら",
+        "explanation": "かしら (kashira, I wonder) is traditionally feminine: 大丈夫かしら (I wonder if it's okay). The masculine/neutral equivalent is かな (kana): 大丈夫かな. In practice, かしら is increasingly rare among younger women, who prefer かな or かなあ. This shift exemplifies how gendered language is evolving in modern Japan. Textbooks that teach かしら as standard female speech are somewhat outdated — awareness of this change prevents learners from sounding artificial."
+      },
+      {
+        "id": "ej_gen_5",
+        "question": "Using _____ form makes speech sound softer and more traditionally feminine.",
+        "translation": "(「〜のよ」は柔らかく女性的な話し方になる。)",
+        "options": [
+          "〜のよ",
+          "〜んだ",
+          "〜ぜ",
+          "〜ぞ"
+        ],
+        "correct": "〜のよ",
+        "explanation": "〜のよ (no yo) softens an explanatory statement femininely: そうなのよ (That's how it is, you know). Compare: そうなんだ (neutral), そうなんだよ (casual masculine). The の particle as sentence-ender with よ creates a warm, explanatory tone traditionally associated with female speech. In modern usage, many women prefer the gender-neutral のだ/んだ forms. のよ and のね remain common among older women and in certain social contexts."
+      },
+      {
+        "id": "ej_gen_6",
+        "question": "The word 主人 (しゅじん) for 'husband' is considered problematic because it means _____.",
+        "translation": "(「主人」は「master/lord」という意味があり問題視されている。)",
+        "options": [
+          "master/lord",
+          "partner",
+          "friend",
+          "gentleman"
+        ],
+        "correct": "master/lord",
+        "explanation": "主人 (shujin, husband) literally means 'master,' and 奥さん (okusan, wife) literally means 'person in the back (of the house).' These traditional terms reflect historical power dynamics. Modern alternatives: 夫 (otto, husband), 妻 (tsuma, wife), パートナー (partner), 配偶者 (haiguusha, spouse — legal/formal). The shift toward neutral terminology reflects evolving gender consciousness in Japan. Understanding both sets helps you navigate generational and contextual differences in Japanese society."
+      },
+      {
+        "id": "ej_gen_7",
+        "question": "The professional suffix _____ is gender-neutral, replacing gendered job titles.",
+        "translation": "(「〜さん」は性別を問わない敬称。)",
+        "options": [
+          "さん",
+          "くん",
+          "ちゃん",
+          "殿"
+        ],
+        "correct": "さん",
+        "explanation": "さん (san) is fully gender-neutral: 田中さん works for anyone. Historical gendered alternatives: くん (kun — traditionally for males/subordinates), ちゃん (chan — traditionally for females/children). In modern workplaces, さん is increasingly standard for everyone, replacing the practice of using くん for men and さん for women. Some companies have formally adopted all-さん policies. Even 〜嬢 (jou, Miss) in job titles like スチュワーデス has been replaced by gender-neutral キャビンアテンダント."
+      },
+      {
+        "id": "ej_gen_8",
+        "question": "In casual speech, men more commonly drop the _____ particle.",
+        "translation": "(カジュアルな男性の話し方では助詞を省略しやすい。)",
+        "options": [
+          "を (object particle)",
+          "は (topic particle)",
+          "の (possessive)",
+          "all of the above"
+        ],
+        "correct": "all of the above",
+        "explanation": "Masculine casual speech tends to drop particles more aggressively: ビール飲む？(Beer drink? — dropping を) vs. ビールを飲む？(standard). While particle dropping is common across genders in casual speech, stereotypically masculine speech drops more particles and uses shorter forms. これうまい (This tasty — dropping は) vs. これはおいしいわ (This is delicious — with particles, feminine particle). Awareness of these tendencies helps decode various speech styles without reinforcing rigid stereotypes."
+      },
+      {
+        "id": "ej_gen_9",
+        "question": "The term ネエ言葉 (nee-kotoba) refers to speech associated with _____.",
+        "translation": "(「ネエ言葉」はオネエの話し方を指す。)",
+        "options": [
+          "LGBTQ+ community speech",
+          "child speech",
+          "elderly speech",
+          "formal speech"
+        ],
+        "correct": "LGBTQ+ community speech",
+        "explanation": "オネエ言葉 (onee-kotoba, 'big sister language') refers to speech patterns associated with some members of Japan's LGBTQ+ community, particularly visible in media. It blends traditionally feminine particles with exaggerated intonation. While sometimes stereotyped, it's a legitimate sociolect that some speakers use proudly. Japanese has multiple speech communities with distinct styles, and understanding that language performs identity — beyond binary gender — gives learners a more nuanced view of Japanese sociolinguistics."
+      },
+      {
+        "id": "ej_gen_10",
+        "question": "The word 看護婦 (nurse-woman) was officially changed to the gender-neutral _____.",
+        "translation": "(「看護婦」は性別を問わない「看護師」に変更された。)",
+        "options": [
+          "看護師",
+          "看護人",
+          "看護者",
+          "看護員"
+        ],
+        "correct": "看護師",
+        "explanation": "看護婦 (kangofu, female nurse) / 看護士 (kangoshi, male nurse) were unified into 看護師 (kangoshi, nurse — gender neutral) in 2002. Similarly: 保母 (hobo, nursery mother) → 保育士 (hoikushi, childcare worker), スチュワーデス → 客室乗務員/CA. This systematic reform of gendered job titles in Japanese shows language actively evolving to reflect changing social values. Understanding both old and new terms helps with reading older texts while using current appropriate language."
+      },
+      {
+        "id": "ej_gen_11",
+        "question": "The ending _____ softens commands and is used more by women.",
+        "translation": "(「〜てちょうだい」は柔らかい命令形で女性がよく使う。)",
+        "options": [
+          "てちょうだい",
+          "てくれ",
+          "ろ",
+          "なさい"
+        ],
+        "correct": "てちょうだい",
+        "explanation": "〜てちょうだい (te choudai, please do — soft) is associated with feminine/parental speech: 見せてちょうだい (show me, please). Compare masculine equivalents: 〜てくれ (te kure, do it — rough), 〜ろ (ro, imperative — very rough). The imperative scale from soft to harsh: 〜てください (polite) → 〜てちょうだい (soft) → 〜てくれ (casual) → 〜て (intimate) → 〜ろ/〜なさい (commanding). Gender tendencies exist but are increasingly flexible in modern usage."
+      },
+      {
+        "id": "ej_gen_12",
+        "question": "めし (meshi, food/rice) is considered more _____ than ご飯 (gohan).",
+        "translation": "(「めし」は「ご飯」より男性的な表現。)",
+        "options": [
+          "masculine",
+          "feminine",
+          "formal",
+          "childish"
+        ],
+        "correct": "masculine",
+        "explanation": "めし (meshi, food/meal) is rougher and more masculine than ご飯 (gohan): 飯食おうぜ (let's eat — very casual, masculine) vs. ご飯食べましょう (let's eat — polite, neutral). Japanese has many word pairs where one form sounds rougher/masculine and another softer/neutral: 腹 (hara, belly — rough) vs. お腹 (onaka — neutral), うまい (umai, tasty — casual) vs. おいしい (oishii — neutral). These vocabulary choices subtly signal gender performance and social register."
+      },
+      {
+        "id": "ej_gen_13",
+        "question": "Adding お to words (お水, お菓子) is called _____ and is associated with polite/feminine speech.",
+        "translation": "(「お〜」を付ける美化語は丁寧・女性的な話し方。)",
+        "options": [
+          "美化語 (bikago)",
+          "尊敬語 (sonkeigo)",
+          "謙譲語 (kenjougo)",
+          "丁寧語 (teineigo)"
+        ],
+        "correct": "美化語 (bikago)",
+        "explanation": "美化語 (bikago, beautifying language) adds お/ご to nouns for refinement: お水 (omizu, water), お菓子 (okashi, sweets), お花 (ohana, flowers). Traditionally associated with feminine elegance (女言葉), excessive beautifying language marks speech as hyper-feminine or upper-class. Some お-words are now standard regardless of gender: お茶 (tea), お風呂 (bath), お金 (money). But adding お to everything (お魚 for fish, おビール for beer) is marked as overly feminine or posh."
+      },
+      {
+        "id": "ej_gen_14",
+        "question": "Modern Japanese increasingly uses _____ as a gender-neutral way to address someone.",
+        "translation": "(現代日本語では「〜さん」がジェンダーニュートラルな呼び方として普及。)",
+        "options": [
+          "さん",
+          "様",
+          "氏",
+          "君"
+        ],
+        "correct": "さん",
+        "explanation": "While mentioned earlier regarding professional titles, さん's gender neutrality extends to all contexts. Traditional systems used different address forms by gender: 〜君 (kun, for boys/male subordinates), 〜ちゃん (chan, for girls/children), 〜嬢 (jou, for young women), 〜氏 (shi, very formal, traditionally male). The trend toward universal さん reflects Japan's broader social evolution. Schools increasingly use さん for all students. Understanding this transition helps learners navigate both traditional and modern Japanese social norms."
+      },
+      {
+        "id": "ej_gen_15",
+        "question": "The concept that women should speak 'beautifully' (美しい日本語) is called _____.",
+        "translation": "(女性が「美しい日本語」を話すべきという概念は「女らしさ」に関連する。)",
+        "options": [
+          "女らしさ",
+          "男らしさ",
+          "礼儀正しさ",
+          "親しみやすさ"
+        ],
+        "correct": "女らしさ",
+        "explanation": "女らしさ (onnarashisa, femininity/womanliness) historically prescribed that women speak more politely, use more honorifics, and employ softer expressions. This expectation (and its male counterpart 男らしさ/otokorashisa) is increasingly questioned. The 2019 Gender Equality Act and changing social norms have challenged rigid gendered expectations in speech. For learners, the key insight is: learn the full range of speech styles, understand their social associations, then choose what feels authentic rather than conforming to outdated gender norms."
+      }
+    ]
+  },
+  {
+    "name": "Register Shifts (レジスターの変化)",
+    "items": [
+      {
+        "id": "ej_rgs_1",
+        "question": "Changing from 食べる to 召し上がる is a shift to _____ register.",
+        "translation": "(「食べる」から「召し上がる」への変化は敬語レジスター。)",
+        "options": [
+          "honorific",
+          "casual",
+          "humble",
+          "slang"
+        ],
+        "correct": "honorific",
+        "explanation": "Register (レジスター) refers to the language variety appropriate for a particular social context. 食べる (taberu, eat — neutral) → 召し上がる (meshiagaru, eat — honorific, about superiors). Japanese has one of the most elaborate register systems of any language, with distinct vocabulary, grammar, and even pronunciation for different social contexts. Mastering register shifts is essential for appropriate Japanese communication — using the wrong register creates social awkwardness."
+      },
+      {
+        "id": "ej_rgs_2",
+        "question": "In a job interview, you should use _____ to say 'I think.'",
+        "translation": "(面接では「〜と存じます」を使うべき。)",
+        "options": [
+          "〜と存じます",
+          "〜と思う",
+          "〜と思うんだけど",
+          "〜かな"
+        ],
+        "correct": "〜と存じます",
+        "explanation": "存じます (zonjimasu, think/know — humble) replaces 思います in formal situations like job interviews, business meetings with superiors, and formal correspondence. The register ladder for 'think': 思う (plain) → 思います (polite) → 存じます (humble/formal). Choosing the right level signals professionalism, respect, and social awareness. Using 思う in a job interview sounds too casual; using 存じます in a casual chat sounds absurdly stiff."
+      },
+      {
+        "id": "ej_rgs_3",
+        "question": "The slang term マジ replaces standard _____ in casual speech.",
+        "translation": "(「マジ」はカジュアルな場面で「本当」の代わりに使う。)",
+        "options": [
+          "本当に",
+          "少し",
+          "とても",
+          "全く"
+        ],
+        "correct": "本当に",
+        "explanation": "マジ (maji, seriously/really) is the casual/slang equivalent of 本当に (hontou ni): マジで美味い (seriously delicious) vs. 本当においしいです (it's truly delicious — polite). The register ladder: マジ (slang) → 本当に (standard) → 誠に (makoto ni, truly — very formal). Each level suits different contexts: マジ with friends, 本当に in general speech, 誠に in speeches and official apologies. Register awareness means knowing which 'really' to deploy where."
+      },
+      {
+        "id": "ej_rgs_4",
+        "question": "When writing an email to your boss, _____ is the appropriate way to say 'I understand.'",
+        "translation": "(上司へのメールでは「承知いたしました」が適切。)",
+        "options": [
+          "承知いたしました",
+          "わかった",
+          "了解",
+          "りょ"
+        ],
+        "correct": "承知いたしました",
+        "explanation": "Understanding → register levels: りょ (ryo — ultra-casual text shorthand) → 了解 (ryoukai — casual acknowledgment) → わかりました (wakarimashita — polite) → 承知しました (shouchi shimashita — formal) → 承知いたしました (shouchi itashimashita — humble formal). Using りょ with your boss is career-damaging; using 承知いたしました with close friends is bizarre. This 5-level scale illustrates how Japanese register shifts involve complete vocabulary replacement, not just adding ます/です."
+      },
+      {
+        "id": "ej_rgs_5",
+        "question": "The phrase ワンチャン (one chance) in youth slang means _____.",
+        "translation": "(若者言葉の「ワンチャン」は「もしかしたら」を意味する。)",
+        "options": [
+          "maybe/possibly",
+          "definitely",
+          "never",
+          "always"
+        ],
+        "correct": "maybe/possibly",
+        "explanation": "ワンチャン (wanchan, from 'one chance') has evolved in Japanese youth slang to mean 'possibly/maybe': ワンチャン行けるかも (I might possibly be able to go). Young people's language (若者言葉/wakamono kotoba) represents the most casual register, constantly evolving. Other examples: エモい (emoi, emotional/moving — from 'emo'), ぴえん (pien, sad — cute crying sound), ガチ (gachi, serious — from 'match'). These words are inappropriate in formal/professional settings but essential for understanding informal youth communication."
+      },
+      {
+        "id": "ej_rgs_6",
+        "question": "Switching from ください to いただけますか makes a request more _____.",
+        "translation": "(「ください」から「いただけますか」に変えると、より丁寧になる。)",
+        "options": [
+          "polite/indirect",
+          "casual",
+          "shorter",
+          "masculine"
+        ],
+        "correct": "polite/indirect",
+        "explanation": "Request register ladder: して (shite — plain command) → してくれ (shite kure — casual request) → してください (shite kudasai — polite request) → していただけますか (shite itadakemasu ka — humble question request) → していただけますでしょうか (shite itadakemasu deshou ka — ultra-polite). Each step adds indirectness and politeness. The humble question form (いただけますか) frames the request as asking about the other person's ability/willingness, which is more respectful than a direct command."
+      },
+      {
+        "id": "ej_rgs_7",
+        "question": "In academic writing, _____ replaces the spoken だ/です for stating facts.",
+        "translation": "(学術論文では「である」が「だ/です」の代わりに使われる。)",
+        "options": [
+          "である",
+          "でございます",
+          "でしょう",
+          "だよ"
+        ],
+        "correct": "である",
+        "explanation": "である (de aru) is the formal written copula used in academic papers, editorials, and literary prose. Compare: だ (plain spoken) → です (polite spoken) → である (formal written) → でございます (ultra-polite spoken). Japanese writing has its own register distinct from speech: 思われる (omowareru, it is thought — passive academic 'we') replaces 思う, 述べる (noberu, state) replaces 言う, 考察する (kousatsu suru, examine) replaces 考える. Academic register demands its own vocabulary."
+      },
+      {
+        "id": "ej_rgs_8",
+        "question": "The keigo error of mixing _____ levels in one sentence is called レジスターのずれ.",
+        "translation": "(一つの文で敬語レベルを混ぜるとレジスターのずれになる。)",
+        "options": [
+          "different politeness",
+          "different dialects",
+          "different topics",
+          "different tenses"
+        ],
+        "correct": "different politeness",
+        "explanation": "レジスターのずれ (register mismatch) occurs when you mix politeness levels inappropriately: 先生がおっしゃったけど、マジだと思う (Teacher said [honorific] but I seriously [slang] think so). The honorific おっしゃる clashes with slang マジ. Consistent register is a key principle: if you start in formal register, maintain it throughout. Common beginner mistakes include mixing ます-form with plain form, or using honorifics for yourself. Register consistency signals linguistic competence."
+      },
+      {
+        "id": "ej_rgs_9",
+        "question": "The phrase お疲れ様です shifts register depending on whether it's said to a superior or _____.",
+        "translation": "(「お疲れ様です」は相手が上司か同僚かで使い方が変わる。)",
+        "options": [
+          "a colleague",
+          "a customer",
+          "a stranger",
+          "a child"
+        ],
+        "correct": "a colleague",
+        "explanation": "お疲れ様です (otsukaresama desu, good work/cheers) is a versatile register-dependent greeting. To a superior leaving: お疲れ様でございます/でした (very formal). To a colleague: お疲れ様〜 (casual). Some companies debate whether お疲れ様 is appropriate upward (to bosses). The related ご苦労様 (gokurousama) is traditionally downward only (boss to subordinate), though this rule is relaxing. These workplace greetings demonstrate how identical words shift meaning based on hierarchical context."
+      },
+      {
+        "id": "ej_rgs_10",
+        "question": "LINE messages commonly use _____ instead of standard punctuation.",
+        "translation": "(LINEのメッセージでは句読点の代わりにスタンプや絵文字を使う。)",
+        "options": [
+          "stamps and emoji",
+          "periods",
+          "exclamation marks",
+          "semicolons"
+        ],
+        "correct": "stamps and emoji",
+        "explanation": "Digital register (デジタルレジスター) in Japanese has its own conventions. LINE messages: no periods (periods feel cold/angry), emoji and stamps replace punctuation, abbreviated forms (おけ for OK, り for 了解). Formal emails: 拝啓 (haikei, dear sir) opening, 敬具 (keigu, sincerely) closing, full keigo throughout. Business chat (Slack/Teams): 承知しました but without email formalities. Each digital platform has evolved its own register norms, adding a new dimension to Japanese register competence."
+      },
+      {
+        "id": "ej_rgs_11",
+        "question": "Speaking to a customer requires using _____ register, the highest politeness level.",
+        "translation": "(お客様には最高の丁寧さ「接客用語」を使う。)",
+        "options": [
+          "接客用語 (customer service language)",
+          "タメ口 (casual speech)",
+          "方言 (dialect)",
+          "学術用語 (academic language)"
+        ],
+        "correct": "接客用語 (customer service language)",
+        "explanation": "接客用語 (sekkyaku yougo, customer service language) is Japan's highest everyday register. Phrases like いらっしゃいませ (welcome), 少々お待ちくださいませ (please wait a moment — with ませ for extra politeness), ありがとうございました (thank you). This register uses special verb forms, extra-long polite expressions, and set phrases. Convenience store staff, hotel workers, and shopkeepers must master this register. It's so formulaic that some expressions (〜の方/ほう, 〜になります) are technically grammatically incorrect but socially expected."
+      },
+      {
+        "id": "ej_rgs_12",
+        "question": "The casual speech style used between close friends is called _____.",
+        "translation": "(親しい友人間のカジュアルな話し方を「タメ口」と言う。)",
+        "options": [
+          "タメ口",
+          "敬語",
+          "丁寧語",
+          "美化語"
+        ],
+        "correct": "タメ口",
+        "explanation": "タメ口 (tameguchi, casual/plain speech between equals) is the opposite end of the register spectrum from keigo. Characterized by: plain form verbs (行く not 行きます), particle dropping (それ食べる？ not それを食べますか？), slang, and shortened words. Using タメ口 appropriately requires social permission — speaking casually too soon with someone is rude, but refusing to shift to タメ口 when invited signals emotional distance. The transition from です/ます to タメ口 marks deepening friendship."
+      },
+      {
+        "id": "ej_rgs_13",
+        "question": "The 'telephone voice' phenomenon (電話の声) involves shifting to _____ register.",
+        "translation": "(「電話の声」は電話に出ると丁寧なレジスターに変わる現象。)",
+        "options": [
+          "polite/formal",
+          "casual",
+          "rough",
+          "dialect"
+        ],
+        "correct": "polite/formal",
+        "explanation": "電話の声 (denwa no koe, telephone voice) is the automatic register shift when answering a phone — pitch rises, speech becomes polite, and formal phrases emerge: はい、○○でございます (Yes, this is XX). This phenomenon beautifully illustrates Japanese register as a nearly automatic social reflex. Japanese speakers internalize register norms so deeply that the shift happens unconsciously — much like how English speakers might say 'Yeah?' to a friend but 'Good morning, how may I help you?' at work."
+      },
+      {
+        "id": "ej_rgs_14",
+        "question": "Newspapers use a distinct register called _____ with compressed grammar.",
+        "translation": "(新聞は「新聞語」と呼ばれる独特のレジスターを使う。)",
+        "options": [
+          "新聞語",
+          "口語体",
+          "文語体",
+          "俗語"
+        ],
+        "correct": "新聞語",
+        "explanation": "新聞語 (shinbungo, newspaper language) has distinctive features: nominalized predicates (〜の見通し instead of 〜と思われる), compressed expressions (記者会見で述べた instead of saying the full quote), absent subjects, and specialized vocabulary (当局 tōkyoku 'authorities,' 容疑者 yougisha 'suspect'). This register differs from both spoken Japanese and academic writing. Learning to read newspaper Japanese opens access to current events and demonstrates a high register-level mastery that impresses native speakers."
+      },
+      {
+        "id": "ej_rgs_15",
+        "question": "The ability to navigate all register levels appropriately is called _____.",
+        "translation": "(すべてのレジスターを適切に使い分ける能力を「待遇表現」と言う。)",
+        "options": [
+          "待遇表現",
+          "文法力",
+          "語彙力",
+          "読解力"
+        ],
+        "correct": "待遇表現",
+        "explanation": "待遇表現 (taiguu hyougen, socially appropriate expression) encompasses the entire system of adjusting language to social context — including keigo, register shifts, dialectal appropriateness, and situational awareness. It's the overarching skill that unifies everything in this category. A truly proficient Japanese speaker doesn't just know grammar and vocabulary — they instinctively select the right register, honorific level, and speech style for every interaction. This sociolinguistic competence is what distinguishes advanced learners from truly fluent speakers."
+      }
+    ]
+  },
+  {
+    "name": "Common Mistakes (よくある間違い)",
+    "items": [
+      {
+        "id": "ej_cmm_1",
+        "question": "Using は instead of が after question words is a common mistake. The correct form is 何_____ありますか.",
+        "translation": "(疑問詞の後は「が」を使う：何がありますか。)",
+        "options": [
+          "が",
+          "は",
+          "を",
+          "の"
+        ],
+        "correct": "が",
+        "explanation": "Question words (何, 誰, どこ, いつ) require が, not は: 何がありますか (What is there?), 誰が来ますか (Who is coming?). This is because question words introduce new information (focus), and が marks new/focused information while は marks known/topical information. Using は with question words (何はありますか) is ungrammatical. The は/が distinction with question words is one of the most fundamental rules and a frequent error source."
+      },
+      {
+        "id": "ej_cmm_2",
+        "question": "_____ is the correct particle for the destination with 行く.",
+        "translation": "(「行く」の目的地には「に」を使う。)",
+        "options": [
+          "に",
+          "を",
+          "で",
+          "が"
+        ],
+        "correct": "に",
+        "explanation": "学校に行く (go to school), not 学校を行く. The particle に marks destination/direction with motion verbs (行く, 来る, 帰る). Common confusion arises because を marks the route/path traversed: 道を歩く (walk along the road), 橋を渡る (cross the bridge). So 公園に行く (go TO the park — destination) vs. 公園を歩く (walk THROUGH the park — route). Confusing に and を with motion verbs is a persistent error — destination uses に, path uses を."
+      },
+      {
+        "id": "ej_cmm_3",
+        "question": "The mistake of saying 先生は来られた instead of 先生がいらっしゃった confuses _____ and honorific forms.",
+        "translation": "(「来られた」と「いらっしゃった」を混同するのは受身形と尊敬語の混乱。)",
+        "options": [
+          "passive",
+          "causative",
+          "potential",
+          "conditional"
+        ],
+        "correct": "passive",
+        "explanation": "来られた can be either passive ('was come to' — suffering passive) or honorific ('came' — respectful). This ambiguity is a design flaw in Japanese honorifics. Using the dedicated honorific verb いらっしゃる avoids confusion: 先生がいらっしゃった (the teacher came — clearly honorific). Similarly, 食べられた = 'was eaten' (passive) or 'ate' (honorific) — use 召し上がった for clarity. When dedicated honorific verbs exist (いらっしゃる, おっしゃる, 召し上がる), prefer them over the ambiguous れる/られる form."
+      },
+      {
+        "id": "ej_cmm_4",
+        "question": "Saying コーヒーを飲みたいです is acceptable, but traditionally _____ is more correct.",
+        "translation": "(「コーヒーが飲みたいです」が伝統的には正しい。)",
+        "options": [
+          "コーヒーが飲みたい",
+          "コーヒーは飲みたい",
+          "コーヒーに飲みたい",
+          "コーヒーで飲みたい"
+        ],
+        "correct": "コーヒーが飲みたい",
+        "explanation": "〜たい (want to) traditionally takes が for the desired object: コーヒーが飲みたい (want to drink coffee). This is because たい is an adjective-like ending, and the desired thing is the subject of the emotional state. However, modern Japanese increasingly accepts を: コーヒーを飲みたい. Both are now considered correct, but が sounds more natural in short sentences while を is preferred in longer, more complex sentences. Understanding this が/を variation with たい prevents overcorrection."
+      },
+      {
+        "id": "ej_cmm_5",
+        "question": "The double honorific error お召し上がりになる is called _____.",
+        "translation": "(「お召し上がりになる」のような二重敬語を「二重敬語」と言う。)",
+        "options": [
+          "二重敬語",
+          "敬語不足",
+          "タメ敬語",
+          "過剰敬語"
+        ],
+        "correct": "二重敬語",
+        "explanation": "二重敬語 (nijuu keigo, double honorifics) stacks honorific forms unnecessarily: お召し上がりになる (double — 召し上がる is already honorific, no need for お〜になる). Correct: 召し上がる. Other examples: おっしゃられる (double — おっしゃる + られる), ご覧になられる (double). However, some double honorifics are socially accepted: お召し上がりください (this specific form has become standard despite being technically double). Language evolves, and some 'errors' become conventional."
+      },
+      {
+        "id": "ej_cmm_6",
+        "question": "Using _____ for yourself is a keigo error called 自分尊敬.",
+        "translation": "(自分に尊敬語を使うことを「自分尊敬」と言う。)",
+        "options": [
+          "honorific verbs",
+          "humble verbs",
+          "plain verbs",
+          "passive verbs"
+        ],
+        "correct": "honorific verbs",
+        "explanation": "自分尊敬 (jibun sonkei, self-honorification) means using honorific verbs for your own actions: 私がおっしゃいました (I said — using honorific instead of humble). Correct: 私が申しました (humble). This is a fundamental keigo error: honorific (尊敬語) elevates others' actions, humble (謙譲語) lowers your own. Using おっしゃる, いらっしゃる, or 召し上がる for yourself sounds arrogant or ignorant. The rule is simple but frequently violated, especially under pressure during interviews and business meetings."
+      },
+      {
+        "id": "ej_cmm_7",
+        "question": "The 'convenience store keigo' error _____ is grammatically incorrect but widely used.",
+        "translation": "(コンビニ敬語の「〜になります」は文法的に不正確だが広く使われている。)",
+        "options": [
+          "〜になります",
+          "〜でございます",
+          "〜です",
+          "〜であります"
+        ],
+        "correct": "〜になります",
+        "explanation": "コンビニ敬語 (convenience store keigo) refers to pseudo-polite expressions used in service industries: こちらコーヒーになります (This becomes coffee?? — にnなります means 'becomes,' not 'is'). Correct: こちらコーヒーでございます (This is your coffee). Other common service errors: 1000円からお預かりします (receiving FROM 1000 yen — から is unnecessary), よろしかったでしょうか (past tense for present situation). These 'errors' are debated — linguists note they may be evolving into accepted usage."
+      },
+      {
+        "id": "ej_cmm_8",
+        "question": "Saying 全然大丈夫 (zenzen daijoubu) was historically considered wrong because 全然 required _____.",
+        "translation": "(「全然大丈夫」は歴史的には「全然」に否定文が必要とされた。)",
+        "options": [
+          "a negative verb",
+          "a positive verb",
+          "a noun",
+          "an adjective"
+        ],
+        "correct": "a negative verb",
+        "explanation": "全然 (zenzen) traditionally required negative predicates: 全然わからない (don't understand at all). Using it positively — 全然大丈夫 (totally fine), 全然おいしい (totally delicious) — was considered incorrect. However, historical research shows positive 全然 existed in pre-war Japanese (Natsume Soseki used it!). Modern usage has restored positive 全然 among younger speakers. This example shows how 'grammar rules' are sometimes prescriptive myths rather than historical facts. Both usages are now widely accepted."
+      },
+      {
+        "id": "ej_cmm_9",
+        "question": "Confusing _____ and いる/ある for existence is a common beginner error.",
+        "translation": "(「いる」と「ある」の混同はよくある初心者の間違い。)",
+        "options": [
+          "animate and inanimate",
+          "past and present",
+          "formal and casual",
+          "singular and plural"
+        ],
+        "correct": "animate and inanimate",
+        "explanation": "いる is for animate beings (people, animals): 猫がいる (the cat is here). ある is for inanimate objects: 本がある (the book is here). Mixing them up sounds very unnatural: 猫がある (treating the cat as an object). Edge cases: robots → ある (inanimate), fish in tank → いる (alive), plant → ある (not self-moving). The animate/inanimate distinction doesn't exist in many languages, making this a fundamental conceptual hurdle for beginners that must be internalized through practice."
+      },
+      {
+        "id": "ej_cmm_10",
+        "question": "Using 大きいな instead of 大きな is wrong because 大きな is a _____.",
+        "translation": "(「大きいな」ではなく「大きな」が正しい。「大きな」は連体詞。)",
+        "options": [
+          "prenominal adjective",
+          "i-adjective",
+          "na-adjective",
+          "adverb"
+        ],
+        "correct": "prenominal adjective",
+        "explanation": "大きな (ookina, big) and 小さな (chiisana, small) look like na-adjectives but are actually 連体詞 (rentaishi, prenominal adjectives) — they ONLY appear before nouns, never as predicates. Correct: 大きな家 (big house). Wrong: この家は大きなです (must be 大きいです). Compare: 大きい is an i-adjective (works everywhere), 大きな is a prenominal (only before nouns). Similarly: おかしな (strange), いろんな (various). These words look like na-adjectives but don't behave like them grammatically."
+      },
+      {
+        "id": "ej_cmm_11",
+        "question": "The error of saying 私は田中です、よろしくお願いします to introduce yourself is actually _____.",
+        "translation": "(「私は田中です」は自己紹介として実は正しい。)",
+        "options": [
+          "correct and natural",
+          "grammatically wrong",
+          "too casual",
+          "too formal"
+        ],
+        "correct": "correct and natural",
+        "explanation": "Trick question! 私は田中です、よろしくお願いします is perfectly correct. It's included here to highlight that learners sometimes over-worry about errors. Some 'rules' taught in textbooks are overly strict. Real Japanese is flexible: both 田中と申します (humble) and 田中です (polite) work for introductions depending on context. The key lesson: don't let fear of making mistakes prevent you from speaking. Native speakers make 'errors' constantly, and communication matters more than textbook perfection."
+      },
+      {
+        "id": "ej_cmm_12",
+        "question": "Using 見れる instead of 見られる is an example of _____.",
+        "translation": "(「見れる」は「ら抜き言葉」の例。)",
+        "options": [
+          "ら抜き言葉 (ra-nuki)",
+          "さ入れ言葉 (sa-ire)",
+          "い抜き言葉 (i-nuki)",
+          "二重敬語 (nijuu keigo)"
+        ],
+        "correct": "ら抜き言葉 (ra-nuki)",
+        "explanation": "ら抜き言葉 (ra-nuki kotoba, ra-dropping) omits ら from られる potential forms: 見られる → 見れる, 食べられる → 食べれる. This 'error' is now used by the majority of Japanese speakers, especially younger ones. It actually reduces ambiguity (見れる = 'can see' vs. 見られる = 'can see' OR 'is seen' — passive). Despite being 'incorrect,' ら抜き is becoming standard. This showcases language change in progress — what's an error today becomes tomorrow's norm."
+      },
+      {
+        "id": "ej_cmm_13",
+        "question": "Saying 友達に会った is correct; the common error is using _____ instead of に.",
+        "translation": "(「友達に会った」が正しく、「を」を使うのは間違い。)",
+        "options": [
+          "を",
+          "が",
+          "で",
+          "と"
+        ],
+        "correct": "を",
+        "explanation": "会う (au, meet) takes に for the person met: 友達に会った (met a friend). Using を (友達を会った) is incorrect. Similarly: 聞く takes に for the person asked (先生に聞く, ask the teacher) but を for the thing heard (音楽を聞く, listen to music). These particle requirements (格支配/kaku shihai, case government) must be memorized per verb. Other tricky verbs: 乗る + に (電車に乗る), 触る + に (猫に触る), 似る + に (母に似る)."
+      },
+      {
+        "id": "ej_cmm_14",
+        "question": "The mistake さ入れ言葉 (sa-ire) adds an unnecessary さ, as in 行かさせていただく instead of _____.",
+        "translation": "(「さ入れ言葉」は不要な「さ」を入れる間違い。)",
+        "options": [
+          "行かせていただく",
+          "行かされていただく",
+          "行きさせていただく",
+          "行くさせていただく"
+        ],
+        "correct": "行かせていただく",
+        "explanation": "さ入れ言葉 (sa-ire kotoba, sa-insertion) inserts an unnecessary さ in causative forms: 行かさせる (incorrect) instead of 行かせる (correct). This error is increasingly common, especially with させていただく: 読まさせていただく (wrong) → 読ませていただく (correct). The error occurs because speakers overgeneralize the さ from す-verb causative patterns (話す → 話させる, which legitimately has さ). Understanding verb conjugation groups prevents this particular error."
+      },
+      {
+        "id": "ej_cmm_15",
+        "question": "The most important advice for avoiding mistakes is to _____ rather than fear errors.",
+        "translation": "(間違いを恐れるより実践することが最も大切。)",
+        "options": [
+          "practice actively",
+          "study more grammar",
+          "memorize rules",
+          "avoid speaking"
+        ],
+        "correct": "practice actively",
+        "explanation": "The biggest 'mistake' in Japanese learning is not making mistakes — it's avoiding practice due to fear of errors. Japanese native speakers are generally patient and appreciative of learners' efforts. 失敗は成功のもと (shippai wa seikou no moto, failure is the foundation of success) is a Japanese proverb that applies perfectly to language learning. Every error is data for improvement. The learners who achieve fluency are those who speak often, make mistakes often, and learn from them — not those who wait until they're 'ready.'"
+      }
+    ]
   }
 ]

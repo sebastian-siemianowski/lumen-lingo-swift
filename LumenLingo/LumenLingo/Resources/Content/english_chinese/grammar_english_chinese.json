@@ -9578,5 +9578,1015 @@
         "explanation": "建议 (jiàn yì) means 'to suggest.' Reported suggestions: 他建议我们还是坐地铁去 = He suggested we'd better take the subway. The 还是 adds a nuance of 'it would be better to.' Chinese has multiple suggestion-reporting verbs: 建议 (suggest), 推荐 (recommend), 提议 (propose), 劝 (advise/persuade). Summary of reported speech in Chinese: no tense changes, keep original word order for questions, use appropriate reporting verbs (说/告诉/问/让/叫/建议), and leverage attitude markers to enrich the narrative. Simpler than English but equally expressive."
       }
     ]
+  },
+  {
+    "key": "comparison_advanced",
+    "name": "Advanced Comparisons (高级比较)",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ec_cmpa1",
+        "question": "他跑得比我_____多了。",
+        "translation": "(He runs much faster than me.)",
+        "options": [
+          "快",
+          "慢",
+          "高",
+          "远"
+        ],
+        "correct": "快",
+        "explanation": "比 (bǐ) + adjective + 多了 is the pattern for 'much more [adjective] than.' 快多了 means 'much faster.' The 多了 intensifier at the end emphasizes a large difference. Without 多了, 他跑得比我快 simply means 'he runs faster than me' — adding 多了 conveys a significant gap. Other intensifiers in comparative structures include 得多 (a lot more) and 多得多 (much much more). This pattern works with any adjective."
+      },
+      {
+        "id": "ec_cmpa2",
+        "question": "这个_____那个一样大。",
+        "translation": "(This one is as big as that one.)",
+        "options": [
+          "跟",
+          "比",
+          "对",
+          "从"
+        ],
+        "correct": "跟",
+        "explanation": "跟...一样 (gēn...yíyàng) means 'the same as' — the basic equality comparison pattern. 跟那个一样大 = as big as that one. The structure is: A + 跟 + B + 一样 + adjective. 跟 can be replaced by 和 (hé) in this pattern with the same meaning. To negate, add 不: 跟那个不一样大 = not as big as that one. This is one of the most essential comparison structures in Chinese, used constantly in everyday conversation."
+      },
+      {
+        "id": "ec_cmpa3",
+        "question": "她的中文水平_____来越好了。",
+        "translation": "(Her Chinese level is getting better and better.)",
+        "options": [
+          "越",
+          "更",
+          "最",
+          "比"
+        ],
+        "correct": "越",
+        "explanation": "越来越 (yuè lái yuè) + adjective means 'more and more' or 'getting [adjective]-er and [adjective]-er.' 越来越好 = better and better. This structure expresses progressive change over time. It always uses 越 twice with 来 in the middle. Common examples: 越来越冷 (colder and colder), 越来越难 (harder and harder), 越来越多 (more and more). This is a very high-frequency pattern in both spoken and written Chinese."
+      },
+      {
+        "id": "ec_cmpa4",
+        "question": "他是我们班_____高的学生。",
+        "translation": "(He is the tallest student in our class.)",
+        "options": [
+          "最",
+          "更",
+          "比",
+          "很"
+        ],
+        "correct": "最",
+        "explanation": "最 (zuì) + adjective creates the superlative form — 'the most [adjective].' 最高 = tallest/the tallest. Unlike English which adds '-est' or uses 'most,' Chinese consistently uses 最 for all superlatives. No exceptions or irregular forms exist. Examples: 最好 (best), 最快 (fastest), 最重要 (most important). The scope can be specified with 里/中: 我们班里最高的 = the tallest in our class."
+      },
+      {
+        "id": "ec_cmpa5",
+        "question": "今天比昨天冷_____。",
+        "translation": "(Today is a bit colder than yesterday.)",
+        "options": [
+          "一点儿",
+          "多了",
+          "一些",
+          "很多"
+        ],
+        "correct": "一点儿",
+        "explanation": "比 + adjective + 一点儿 (yì diǎnr) means 'a little bit more [adjective] than.' The 一点儿 softens the comparison, indicating a small difference. Compare the intensity scale: 一点儿 (a little) < 一些 (somewhat) < 多了 (much more) < 得多 (a lot more). In conversation, 一点儿 is very common for polite or gentle comparisons. Northern Chinese speakers often use the 儿 suffix; Southern speakers may say 一点."
+      },
+      {
+        "id": "ec_cmpa6",
+        "question": "这本书没有那本书_____。",
+        "translation": "(This book is not as interesting as that book.)",
+        "options": [
+          "有意思",
+          "好看",
+          "便宜",
+          "贵"
+        ],
+        "correct": "有意思",
+        "explanation": "没有...那么 + adjective is the negative comparison pattern meaning 'not as [adjective] as.' 没有那本书有意思 = not as interesting as that book. This is the negative counterpart of 跟...一样. Note that 那么 is sometimes omitted in casual speech. The pattern A + 没有 + B + (那么) + adjective is extremely common. 有意思 (yǒu yìsi) literally means 'has meaning/interest' and is the standard way to say 'interesting.'"
+      },
+      {
+        "id": "ec_cmpa7",
+        "question": "你越努力，成绩_____越好。",
+        "translation": "(The harder you work, the better your grades will be.)",
+        "options": [
+          "就",
+          "才",
+          "都",
+          "也"
+        ],
+        "correct": "就",
+        "explanation": "越...越... (yuè...yuè...) means 'the more...the more...' — a correlative comparative. The first 越 clause states the condition, and 就越 introduces the result. 越努力就越好 = the harder you work, the better. This pattern links two proportional changes. The 就 is often used before the second 越 to strengthen the causal connection. Examples: 越吃越胖 (the more you eat, the fatter), 越想越害怕 (the more you think, the more scared)."
+      },
+      {
+        "id": "ec_cmpa8",
+        "question": "他的汉字写得比以前_____多了。",
+        "translation": "(He writes Chinese characters much better than before.)",
+        "options": [
+          "好",
+          "快",
+          "差",
+          "多"
+        ],
+        "correct": "好",
+        "explanation": "比以前 (bǐ yǐqián) means 'compared to before.' Combined with adjective + 多了, it expresses significant improvement. 写得比以前好多了 = writes much better than before. Note the structural complement 得 (de) is required after the verb when comparing how an action is performed. The full pattern is: Verb + 得 + 比 + reference + adjective + 多了. This is essential for expressing progress and improvement in Chinese."
+      },
+      {
+        "id": "ec_cmpa9",
+        "question": "这两个房间一样_____。",
+        "translation": "(These two rooms are equally big.)",
+        "options": [
+          "大",
+          "小",
+          "多",
+          "少"
+        ],
+        "correct": "大",
+        "explanation": "一样 (yíyàng) + adjective directly expresses equality: 'equally [adjective].' 一样大 = equally big/the same size. When the comparison items are clear from context, A 跟 B can be omitted. This simplified form is very natural in spoken Chinese. Note: 一样 can also stand alone as a predicate: 这两个一样 (these two are the same). The adjective after 一样 specifies which dimension is being compared."
+      },
+      {
+        "id": "ec_cmpa10",
+        "question": "她唱歌唱得_____我好。",
+        "translation": "(She sings better than me.)",
+        "options": [
+          "比",
+          "跟",
+          "和",
+          "对"
+        ],
+        "correct": "比",
+        "explanation": "比 (bǐ) is the core comparison preposition meaning 'than.' When comparing actions (not just attributes), use: Subject + Verb + 得 + 比 + object + adjective. 唱得比我好 = sings better than me. The verb is often repeated when using the degree complement 得: 她唱歌唱得比我好. This verb repetition is grammatically required when both an object and a degree complement are present. It's a distinctive feature of Chinese grammar."
+      },
+      {
+        "id": "ec_cmpa11",
+        "question": "他比我大_____岁。",
+        "translation": "(He is three years older than me.)",
+        "options": [
+          "三",
+          "二",
+          "五",
+          "四"
+        ],
+        "correct": "三",
+        "explanation": "比 + adjective + specific quantity precisely states the difference in a comparison. 比我大三岁 = three years older than me. Chinese can specify exact differences elegantly: 比我高五厘米 (5 cm taller), 比这个贵十块 (10 yuan more expensive). This is more precise than 多了 (much more) or 一点儿 (a little). The quantity comes directly after the adjective. This numeric precision in comparisons is used constantly in daily Chinese conversation."
+      },
+      {
+        "id": "ec_cmpa12",
+        "question": "这个菜不如那个菜_____。",
+        "translation": "(This dish is not as delicious as that dish.)",
+        "options": [
+          "好吃",
+          "好看",
+          "便宜",
+          "有名"
+        ],
+        "correct": "好吃",
+        "explanation": "不如 (bùrú) means 'not as good as' or 'inferior to' — a more literary/formal negative comparison. A + 不如 + B + adjective = A is not as [adjective] as B. 不如那个菜好吃 = not as delicious as that dish. Compared to 没有...那么, 不如 carries a stronger connotation that A is inferior. It can also be used without an adjective: 我不如他 (I'm not as good as him). 不如 is common in both written and spoken registers."
+      },
+      {
+        "id": "ec_cmpa13",
+        "question": "他们俩差不多_____高。",
+        "translation": "(The two of them are about the same height.)",
+        "options": [
+          "一样",
+          "更",
+          "最",
+          "比"
+        ],
+        "correct": "一样",
+        "explanation": "差不多一样 (chà bu duō yíyàng) means 'about the same' — approximate equality. Adding 差不多 before 一样 softens the comparison to mean 'roughly equal' rather than 'exactly the same.' 差不多一样高 = about the same height. 差不多 (literally 'differ not much') is one of the most useful hedging expressions in Chinese. It can be used alone: 差不多 = 'almost/about right.' Combined with 一样, it creates natural, conversational comparisons."
+      },
+      {
+        "id": "ec_cmpa14",
+        "question": "这件衣服_____那件好看得多。",
+        "translation": "(This piece of clothing looks much better than that one.)",
+        "options": [
+          "比",
+          "跟",
+          "和",
+          "对"
+        ],
+        "correct": "比",
+        "explanation": "比 + adjective + 得多 (de duō) is another way to express 'much more [adjective] than.' 比那件好看得多 = looks much better than that one. The difference between 多了 and 得多: both mean 'much more,' but 得多 sounds slightly more formal/emphatic. They are largely interchangeable: 好多了 ≈ 好得多. The full intensity scale for comparisons: 一点儿 < 一些 < 多了/得多 < 多得多. Mastering these modifiers is key to natural-sounding Chinese."
+      },
+      {
+        "id": "ec_cmpa15",
+        "question": "他连我_____不如。",
+        "translation": "(He is not even as good as me.)",
+        "options": [
+          "都",
+          "也",
+          "就",
+          "才"
+        ],
+        "correct": "都",
+        "explanation": "连...都不如 (lián...dōu bùrú) means 'not even as good as' — an emphatic negative comparison. 连我都不如 = not even as good as me (implying the speaker sets a low bar). 连 (lián) adds emphasis meaning 'even,' and 都 reinforces the inclusive sense. This structure expresses strong criticism or surprise. The pattern 连...都/也 is broadly used for emphasis beyond comparisons: 连孩子都知道 (even children know). It's a powerful rhetorical tool in Chinese."
+      }
+    ]
+  },
+  {
+    "key": "exclamatory_sentences",
+    "name": "Exclamatory Sentences (感叹句)",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ec_exc1",
+        "question": "这个地方_____漂亮啊！",
+        "translation": "(This place is so beautiful!)",
+        "options": [
+          "真",
+          "很",
+          "太",
+          "好"
+        ],
+        "correct": "真",
+        "explanation": "真 (zhēn) means 'really/truly' and is one of the most natural exclamatory intensifiers. 真漂亮啊 = really beautiful! The sentence-final particle 啊 (a) adds emotional force. While 很 is neutral ('very'), 真 carries genuine surprise or admiration. Compare: 真好吃 (really delicious!), 真有意思 (really interesting!). In exclamatory sentences, 真 is preferred over 很 because it conveys the speaker's emotional reaction rather than a simple factual statement."
+      },
+      {
+        "id": "ec_exc2",
+        "question": "_____好吃了！",
+        "translation": "(It's so delicious!)",
+        "options": [
+          "太",
+          "真",
+          "很",
+          "好"
+        ],
+        "correct": "太",
+        "explanation": "太 (tài)...了 is the classic exclamatory pattern meaning 'so/too [adjective]!' 太好吃了 = so delicious! The 了 at the end is essential — 太好吃 alone sounds incomplete and unnatural. Common expressions: 太好了 (great!), 太贵了 (too expensive!), 太难了 (too hard!). Note that 太...了 can express both positive excitement and negative excess depending on context and tone. In exclamations, it almost always conveys strong emotion rather than literal excess."
+      },
+      {
+        "id": "ec_exc3",
+        "question": "这个孩子_____聪明啊！",
+        "translation": "(This child is so clever!)",
+        "options": [
+          "多",
+          "很",
+          "太",
+          "真"
+        ],
+        "correct": "多",
+        "explanation": "多 (duō) + adjective + 啊 is an exclamatory pattern meaning 'how [adjective]!' 多聪明啊 = how clever! This mirrors the English 'How clever!' construction. It always requires the final particle 啊. While 真 expresses genuine reaction and 太 expresses degree, 多 specifically creates a rhetorical exclamation of admiration. Compare: 多好啊 (how wonderful!), 多美啊 (how beautiful!). This pattern is common in spoken Chinese and literature."
+      },
+      {
+        "id": "ec_exc4",
+        "question": "今天的天气_____好啊！",
+        "translation": "(The weather today is so nice!)",
+        "options": [
+          "好",
+          "很",
+          "太",
+          "真"
+        ],
+        "correct": "好",
+        "explanation": "好 (hǎo) as an intensifier means 'so/really' in exclamations — different from its meaning of 'good.' 好好啊 would be redundant, but 好大啊 (so big!), 好冷啊 (so cold!) are natural. 好 + adjective + 啊 is a casual, warm exclamation pattern. It's slightly softer and more conversational than 太...了. Common in daily speech: 好可爱啊 (so cute!), 好厉害啊 (so amazing!). Note: 好 as intensifier is more informal and is rarely used in formal writing."
+      },
+      {
+        "id": "ec_exc5",
+        "question": "哇，你的房间_____干净！",
+        "translation": "(Wow, your room is so clean!)",
+        "options": [
+          "真",
+          "很",
+          "好",
+          "太"
+        ],
+        "correct": "真",
+        "explanation": "Interjections like 哇 (wā, 'wow') often begin exclamatory sentences. Combined with 真 + adjective, they create natural exclamations. 哇，真干净！= Wow, really clean! Common Chinese interjections: 哇 (wow), 哎呀 (oh no/oh my), 天哪 (oh heavens), 啊 (ah). These are essential for natural conversation. Note that 哇 is informal and friendly; in formal contexts, you'd simply use the intensifier pattern without the interjection."
+      },
+      {
+        "id": "ec_exc6",
+        "question": "这道题_____难了！我做不出来。",
+        "translation": "(This question is too hard! I can't solve it.)",
+        "options": [
+          "太",
+          "真",
+          "好",
+          "很"
+        ],
+        "correct": "太",
+        "explanation": "太...了 in negative contexts means 'too [adjective]' — expressing excessive degree. 太难了 = too hard (beyond acceptable). Context determines whether 太...了 is positive (太好了！= Great!) or negative (太难了！= Too hard!). When followed by a negative consequence (我做不出来 = I can't solve it), it clearly means 'excessively.' This dual nature of 太...了 is important: it can express both delight and complaint. Tone of voice and context are the key differentiators."
+      },
+      {
+        "id": "ec_exc7",
+        "question": "简直_____不可思议！",
+        "translation": "(It's simply unbelievable!)",
+        "options": [
+          "太",
+          "真",
+          "好",
+          "多"
+        ],
+        "correct": "太",
+        "explanation": "简直 (jiǎnzhí) means 'simply/absolutely' — a strong emphatic adverb. 简直太不可思议 = simply too unbelievable. 简直 elevates any exclamation to an extreme level. It precedes the intensifier: 简直太好了 (absolutely wonderful), 简直不敢相信 (simply can't believe it). This word is common in both spoken and written Chinese when expressing strong emotions. It pairs naturally with 太...了, creating a double-emphasis structure that's very expressive."
+      },
+      {
+        "id": "ec_exc8",
+        "question": "没想到你_____来了！",
+        "translation": "(I didn't expect you actually came!)",
+        "options": [
+          "竟然",
+          "忽然",
+          "突然",
+          "果然"
+        ],
+        "correct": "竟然",
+        "explanation": "竟然 (jìngrán) means 'actually/unexpectedly' — expressing surprise. 竟然来了 = actually came (to my surprise). It differs from: 忽然/突然 (suddenly — about speed, not surprise) and 果然 (as expected — opposite meaning). 竟然 is used when something happens contrary to expectation. Other surprise expressions: 居然 (similar to 竟然 but slightly more informal), 想不到 (wouldn't have thought). Exclamatory surprise is a rich area of Chinese expression."
+      },
+      {
+        "id": "ec_exc9",
+        "question": "这部电影_____感人了！",
+        "translation": "(This movie is so touching!)",
+        "options": [
+          "太",
+          "真",
+          "好",
+          "很"
+        ],
+        "correct": "太",
+        "explanation": "太感人了 (tài gǎnrén le) = so touching/moving! 感人 literally means 'move people' and is an adjective for emotionally moving content. The 太...了 pattern is the most versatile exclamatory form in Chinese. It works with virtually any adjective: 太有趣了 (so interesting), 太可怕了 (so scary), 太幸福了 (so happy). In movie/book reviews, food commentary, and daily reactions, 太...了 is the go-to exclamation pattern for Chinese speakers."
+      },
+      {
+        "id": "ec_exc10",
+        "question": "这儿的风景_____美了！",
+        "translation": "(The scenery here is so beautiful!)",
+        "options": [
+          "太",
+          "真",
+          "好",
+          "最"
+        ],
+        "correct": "太",
+        "explanation": "太美了 is a classic exclamation about beauty. Note 这儿 (zhèr) = 'here' — a contracted form of 这里 (zhèlǐ). Both are interchangeable, but 这儿 is more common in northern Mandarin while 这里 is more standard/universal. The sentence structure places the topic (这儿的风景) first, followed by the exclamatory predicate (太美了). This topic-comment structure is fundamental to Chinese: state what you're talking about, then comment on it."
+      },
+      {
+        "id": "ec_exc11",
+        "question": "你怎么_____晚才来！",
+        "translation": "(How come you came so late!)",
+        "options": [
+          "这么",
+          "那么",
+          "多么",
+          "怎么"
+        ],
+        "correct": "这么",
+        "explanation": "这么 (zhème) means 'this/so' when expressing surprise at degree. 这么晚 = this late/so late. 怎么...这么... is a common reproachful exclamation pattern: 'How come [it's] so [adjective]!' Compare: 这么 (this much — close/present), 那么 (that much — distant/hypothetical), 多么 (how — purely exclamatory). 怎么这么贵 (how come so expensive!), 怎么这么难 (how come so hard!). This pattern is very common in informal speech when expressing frustration or surprise."
+      },
+      {
+        "id": "ec_exc12",
+        "question": "多_____的一幅画啊！",
+        "translation": "(What a beautiful painting!)",
+        "options": [
+          "美",
+          "大",
+          "好",
+          "新"
+        ],
+        "correct": "美",
+        "explanation": "多 + adjective + 的 + noun + 啊 is the full exclamatory pattern for admiring something specific. 多美的一幅画啊 = What a beautiful painting! This mirrors English 'What a...!' The measure word 幅 (fú) is specifically for paintings and calligraphy. Chinese measure words in exclamations follow the same rules as in regular sentences. More examples: 多聪明的孩子啊 (What a clever child!), 多好的主意啊 (What a great idea!)."
+      },
+      {
+        "id": "ec_exc13",
+        "question": "她居然_____了第一名！",
+        "translation": "(She actually got first place!)",
+        "options": [
+          "拿",
+          "做",
+          "给",
+          "去"
+        ],
+        "correct": "拿",
+        "explanation": "居然 (jūrán) expresses surprise, similar to 竟然 but slightly more colloquial. 拿了第一名 = got/took first place. 拿 literally means 'to take/grab' and is used for winning prizes/places. Exclamatory sentences with 居然/竟然 emphasize that the result defied expectations. The 了 after the verb marks completion — she has already achieved it. Compare: 居然赢了 (actually won!), 居然考了一百分 (actually scored 100!). Both 居然 and 竟然 are essential for expressing surprise in Chinese."
+      },
+      {
+        "id": "ec_exc14",
+        "question": "天哪，_____下这么大的雨！",
+        "translation": "(Oh heavens, it's raining so heavily!)",
+        "options": [
+          "竟然",
+          "突然",
+          "果然",
+          "当然"
+        ],
+        "correct": "竟然",
+        "explanation": "天哪 (tiān na) is an interjection meaning 'oh heavens/oh my god.' 竟然下这么大的雨 = it's actually raining this heavily (unexpectedly). Chinese interjections set emotional tone: 天哪 (surprise), 哎呀 (dismay), 天啊 (shock), 我的天 (my god — modern slang). Note 这么大的雨 = 'rain this big' — Chinese describes rain quantity with 大 (big) and 小 (small) rather than 'heavy/light' as in English. This is a common source of learner errors."
+      },
+      {
+        "id": "ec_exc15",
+        "question": "你做的菜_____好吃啊！",
+        "translation": "(The food you made is so delicious!)",
+        "options": [
+          "真",
+          "很",
+          "太",
+          "好"
+        ],
+        "correct": "真",
+        "explanation": "真好吃啊 expresses genuine admiration for someone's cooking — a very common compliment in Chinese culture. The structure 你做的菜 (the dishes you made) uses 的 to create a descriptive phrase modifying 菜 (dishes). Summary of exclamatory intensifiers: 真 (genuine admiration, warm), 太...了 (strong degree, versatile), 好 (casual, conversational), 多...啊 (rhetorical admiration), 简直 (absolute emphasis). Mix and match these to create natural, emotionally rich exclamations in Chinese conversation."
+      }
+    ]
+  },
+  {
+    "key": "imperative_sentences",
+    "name": "Imperative Sentences (祈使句)",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ec_imp1",
+        "question": "请_____坐。",
+        "translation": "(Please sit down.)",
+        "options": [
+          "坐",
+          "站",
+          "走",
+          "来"
+        ],
+        "correct": "坐",
+        "explanation": "请 (qǐng) + verb is the polite imperative form, meaning 'please [do something].' 请坐 = please sit down. Note that 坐 appears twice in this common expression — 请坐坐, but 请坐 alone is the standard form. 请 transforms any command into a polite request. Common polite imperatives: 请进 (please come in), 请说 (please speak), 请等一下 (please wait a moment). Using 请 is essential in formal situations, with strangers, and in service contexts."
+      },
+      {
+        "id": "ec_imp2",
+        "question": "_____说话！",
+        "translation": "(Don't speak!/Be quiet!)",
+        "options": [
+          "别",
+          "不",
+          "没",
+          "非"
+        ],
+        "correct": "别",
+        "explanation": "别 (bié) + verb is the negative imperative: 'don't [do something].' 别说话 = don't speak/be quiet. 别 is the spoken form; its formal written equivalent is 不要 (búyào) or 勿 (wù). Compare: 别走 (don't go), 别担心 (don't worry), 别客气 (don't be polite = you're welcome). 别 is softer than 不要, which can sound more forceful. In urgent situations, 不要 or 别 with rising tone convey stronger prohibition."
+      },
+      {
+        "id": "ec_imp3",
+        "question": "快_____！要迟到了。",
+        "translation": "(Hurry up! We're going to be late.)",
+        "options": [
+          "点儿",
+          "些",
+          "多",
+          "着"
+        ],
+        "correct": "点儿",
+        "explanation": "快点儿 (kuài diǎnr) = hurry up — one of the most common imperatives. 快 means 'fast/quick,' and 点儿 means 'a bit.' Together they create an urgent but not harsh command. Similar patterns: 慢点儿 (slow down), 小心点儿 (be more careful), 认真点儿 (be more serious). The 点儿 softens the command slightly — without it, 快！alone sounds very abrupt. The follow-up clause 要迟到了 uses 要...了 to express 'about to' — imminent action."
+      },
+      {
+        "id": "ec_imp4",
+        "question": "你们_____安静！",
+        "translation": "(You all be quiet!)",
+        "options": [
+          "安静",
+          "说话",
+          "出去",
+          "坐下"
+        ],
+        "correct": "安静",
+        "explanation": "Direct imperatives can use the verb/adjective alone without any softening particle. 安静 (ānjìng) = be quiet. Adding 你们 (you all) specifies the addressees. Without any softener like 请 or 一下, this is a firm, authoritative command — appropriate for teachers, parents, or urgent situations. To soften: 请安静一下 (please be quiet for a moment). The choice between direct and softened imperatives depends on authority level, urgency, and relationship."
+      },
+      {
+        "id": "ec_imp5",
+        "question": "把门_____上。",
+        "translation": "(Close the door.)",
+        "options": [
+          "关",
+          "开",
+          "推",
+          "拉"
+        ],
+        "correct": "关",
+        "explanation": "把 (bǎ) + object + verb + complement is a common imperative pattern for giving specific instructions about handling objects. 把门关上 = close the door (take the door and close it shut). The 上 is a directional complement indicating completion/closure. 把 imperatives are very common in daily life: 把灯关了 (turn off the light), 把书拿来 (bring the book), 把手洗干净 (wash your hands clean). The 把 construction emphasizes the specific disposal or handling of the object."
+      },
+      {
+        "id": "ec_imp6",
+        "question": "你给我_____这里！",
+        "translation": "(You stay right here! / Don't you dare leave!)",
+        "options": [
+          "待在",
+          "走到",
+          "跑出",
+          "回到"
+        ],
+        "correct": "待在",
+        "explanation": "你给我 (nǐ gěi wǒ) + verb is an angry/forceful imperative pattern. 给我 literally means 'for me' but functions as an emphatic command marker conveying authority or anger. 给我待在这里 = stay here (and I mean it). Compare: 你给我出去 (get out!), 你给我安静 (shut up!). This is a strong imperative used by parents, authority figures, or in emotional situations. It would be rude between equals. Understanding register is crucial for appropriate Chinese usage."
+      },
+      {
+        "id": "ec_imp7",
+        "question": "我们走_____！",
+        "translation": "(Let's go!)",
+        "options": [
+          "吧",
+          "了",
+          "啊",
+          "呢"
+        ],
+        "correct": "吧",
+        "explanation": "Verb + 吧 (ba) creates a suggestion or soft imperative: 'let's [do something].' 走吧 = let's go. 吧 is one of the most important sentence-final particles in Chinese. In imperatives, it softens commands into suggestions: 吃吧 (go ahead and eat), 开始吧 (let's begin), 坐吧 (please sit). The first-person plural subject 我们 makes it explicitly inclusive. Without 吧, 我们走 is a flat statement ('we go'); with 吧, it becomes a warm invitation or suggestion."
+      },
+      {
+        "id": "ec_imp8",
+        "question": "不要_____手机了，该睡觉了。",
+        "translation": "(Stop playing with your phone, it's time to sleep.)",
+        "options": [
+          "玩",
+          "用",
+          "看",
+          "买"
+        ],
+        "correct": "玩",
+        "explanation": "不要 (búyào) + verb + 了 = 'stop [doing something].' 不要玩手机了 = stop playing with your phone. The 了 here marks a change — stopping an ongoing activity. Without 了, 不要玩手机 means 'don't play with your phone' (general prohibition). With 了, it specifically addresses the current activity. 该...了 (gāi...le) means 'it's time to...' — 该睡觉了 = time to sleep. This combination (stop + time for) is very common in parenting and daily reminders."
+      },
+      {
+        "id": "ec_imp9",
+        "question": "你去把那本书_____过来。",
+        "translation": "(Go bring that book over here.)",
+        "options": [
+          "拿",
+          "放",
+          "推",
+          "扔"
+        ],
+        "correct": "拿",
+        "explanation": "拿过来 (ná guòlái) = bring over — verb + directional complement. The 过来 indicates movement toward the speaker. Imperatives often chain actions: 去 (go) + 把...拿过来 (bring...over). Directional complements are essential in imperatives: 拿过来 (bring here), 拿过去 (take there), 拿出来 (take out), 拿进去 (take inside). The 把 construction specifies exactly what object to handle. This type of specific, multi-action imperative is extremely common in Chinese."
+      },
+      {
+        "id": "ec_imp10",
+        "question": "大家_____注意听！",
+        "translation": "(Everyone pay attention and listen!)",
+        "options": [
+          "请",
+          "别",
+          "没",
+          "不"
+        ],
+        "correct": "请",
+        "explanation": "请注意 (qǐng zhùyì) = please pay attention — a formal imperative used in announcements, classrooms, and public settings. 大家 (dàjiā) = everyone, addressing a group. 注意听 chains two verbs: pay attention + listen. In formal Chinese imperatives, 请 + specific action verb is the standard pattern. Public announcements often use: 请注意安全 (please pay attention to safety), 请保持安静 (please maintain silence). These formal patterns are important for understanding public Chinese."
+      },
+      {
+        "id": "ec_imp11",
+        "question": "千万_____忘了带护照！",
+        "translation": "(Whatever you do, don't forget to bring your passport!)",
+        "options": [
+          "别",
+          "不",
+          "没",
+          "非"
+        ],
+        "correct": "别",
+        "explanation": "千万别 (qiān wàn bié) = whatever you do, don't — an emphatic negative imperative. 千万 literally means 'ten million' and functions as an intense emphasis word meaning 'absolutely/by all means.' 千万别忘了 = absolutely don't forget. Similarly: 千万别迟到 (absolutely don't be late), 千万小心 (be extremely careful). 千万 elevates any imperative to critical importance. It's used when the consequences of not following the instruction would be serious."
+      },
+      {
+        "id": "ec_imp12",
+        "question": "你先_____一下，我马上来。",
+        "translation": "(Wait a moment first, I'll be right there.)",
+        "options": [
+          "等",
+          "看",
+          "说",
+          "想"
+        ],
+        "correct": "等",
+        "explanation": "Verb + 一下 (yíxià) is the gentlest imperative form, meaning 'do [something] briefly.' 等一下 = wait a moment. 一下 literally means 'one time' but functions to soften commands into casual, friendly requests. Common patterns: 看一下 (take a look), 试一下 (try it), 说一下 (tell me briefly). Adding 先 (xiān, 'first') suggests sequence: do this first, then something else will happen. 马上 (mǎshàng) = immediately/right away."
+      },
+      {
+        "id": "ec_imp13",
+        "question": "谁都不_____动！",
+        "translation": "(Nobody move!)",
+        "options": [
+          "许",
+          "能",
+          "会",
+          "要"
+        ],
+        "correct": "许",
+        "explanation": "不许 (bùxǔ) = not allowed/forbidden — a strong prohibition. 谁都不许动 = nobody is allowed to move. 不许 is more forceful than 别 and implies authority and consequences. Compare prohibition strength: 别 (don't) < 不要 (do not) < 不许 (not allowed) < 不准 (forbidden) < 禁止 (prohibited — official). 谁都 (shéi dōu) = everyone/nobody (depending on positive/negative context). In negative sentences, 谁都不 = nobody. This pattern is used in security, emergency, and authority contexts."
+      },
+      {
+        "id": "ec_imp14",
+        "question": "赶快把作业_____完！",
+        "translation": "(Hurry up and finish your homework!)",
+        "options": [
+          "做",
+          "写",
+          "看",
+          "读"
+        ],
+        "correct": "做",
+        "explanation": "赶快 (gǎnkuài) = hurry up/quickly — an urgency adverb stronger than 快. 把作业做完 = finish (doing) the homework. The resultative complement 完 (wán) after the verb indicates completion. 赶快 + 把 + object + verb + complement is a very direct, urgent imperative pattern. Parents commonly say: 赶快吃完饭 (hurry and finish eating), 赶快穿好衣服 (hurry and get dressed). The 把 construction ensures the object is fully dealt with."
+      },
+      {
+        "id": "ec_imp15",
+        "question": "你最好_____去医院看看。",
+        "translation": "(You'd better go see a doctor at the hospital.)",
+        "options": [
+          "还是",
+          "不要",
+          "千万",
+          "一定"
+        ],
+        "correct": "还是",
+        "explanation": "你最好还是 (nǐ zuìhǎo háishi) = you'd better (it would be best if you) — the advisory imperative. 最好 means 'best' and creates a strong suggestion rather than a direct command. 还是 adds a nuance of 'after considering alternatives.' Summary of imperative strength in Chinese: 请...吧 (polite request) → verb + 一下 (gentle suggestion) → 最好/应该 (advisory) → direct verb (neutral command) → 快/赶快 (urgent) → 别/不要 (prohibition) → 不许/不准 (strict prohibition) → 千万别 (emphatic prohibition)."
+      }
+    ]
+  },
+  {
+    "key": "bu_vs_mei",
+    "name": "不 vs 没 (Bù vs Méi)",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ec_bvm1",
+        "question": "我今天_____想吃饭。",
+        "translation": "(I don't feel like eating today.)",
+        "options": [
+          "不",
+          "没",
+          "别",
+          "非"
+        ],
+        "correct": "不",
+        "explanation": "不 (bù) negates willingness, desire, or habitual actions. 不想 = don't want to/don't feel like. 不 is used for: (1) present/future negation, (2) subjective unwillingness, (3) habitual negation, (4) negating adjectives. Compare: 我不想吃 (I don't want to eat — choice) vs 我没吃 (I didn't eat — fact). This distinction between 不 (subjective/volitional) and 没 (objective/factual) is one of the most important grammar points in Chinese."
+      },
+      {
+        "id": "ec_bvm2",
+        "question": "他昨天_____来上课。",
+        "translation": "(He didn't come to class yesterday.)",
+        "options": [
+          "没",
+          "不",
+          "别",
+          "非"
+        ],
+        "correct": "没",
+        "explanation": "没 (méi) negates completed past actions — factual negation of something that didn't happen. 没来 = didn't come. When a specific past time (昨天) is mentioned and you're stating a fact about what happened (or didn't), use 没. Key rule: 没 + verb = didn't do [verb]. Never combine 没 with 了 for simple past negation — 没来 is correct, not *没来了. However, 没 can combine with 过: 没来过 = has never come."
+      },
+      {
+        "id": "ec_bvm3",
+        "question": "我_____是中国人。",
+        "translation": "(I am not Chinese.)",
+        "options": [
+          "不",
+          "没",
+          "别",
+          "非"
+        ],
+        "correct": "不",
+        "explanation": "不 negates the verb 是 (shì, to be) — always 不是, never *没是. This is an absolute rule in Chinese. 不 is the only negator used with 是: 不是学生 (not a student), 不是我的 (not mine), 不是这样 (not like this). Similarly, 不 is always used with adjectives: 不好 (not good), 不大 (not big), 不贵 (not expensive). These patterns reflect 不's role as the subjective/state negator versus 没's role as the factual/event negator."
+      },
+      {
+        "id": "ec_bvm4",
+        "question": "这本书我还_____看完。",
+        "translation": "(I still haven't finished reading this book.)",
+        "options": [
+          "没",
+          "不",
+          "别",
+          "非"
+        ],
+        "correct": "没",
+        "explanation": "还没 (hái méi) = still haven't — expressing an incomplete action. 还没看完 = still haven't finished reading. 还没 implies the action is expected to happen eventually but hasn't yet. It's a very common pattern: 还没吃 (haven't eaten yet), 还没到 (haven't arrived yet), 还没准备好 (haven't prepared yet). Note: 还不 (hái bù) exists but means something different — 'still don't/won't': 他还不来 = he still won't come (refusal)."
+      },
+      {
+        "id": "ec_bvm5",
+        "question": "她_____喜欢吃辣的。",
+        "translation": "(She doesn't like eating spicy food.)",
+        "options": [
+          "不",
+          "没",
+          "别",
+          "非"
+        ],
+        "correct": "不",
+        "explanation": "不 negates psychological verbs and preferences: 不喜欢 (don't like), 不想 (don't want), 不愿意 (unwilling), 不知道 (don't know), 不认识 (don't recognize). These all express states of mind, which are negated with 不, not 没. Compare: 她不喜欢辣的 (she doesn't like spicy — permanent preference) vs 她没吃辣的 (she didn't eat spicy — specific past event). Understanding this subjective vs objective distinction is key to mastering Chinese negation."
+      },
+      {
+        "id": "ec_bvm6",
+        "question": "你怎么_____告诉我？",
+        "translation": "(Why didn't you tell me?)",
+        "options": [
+          "没",
+          "不",
+          "别",
+          "非"
+        ],
+        "correct": "没",
+        "explanation": "没 negates a specific past action that should have happened but didn't. 没告诉我 = didn't tell me (a factual past event). The question word 怎么 (zěnme) here means 'how come/why' (expressing surprise or complaint). Compare: 你怎么不告诉我 (why don't/won't you tell me — asking about unwillingness) vs 你怎么没告诉我 (why didn't you tell me — asking about a past omission). Both are grammatically correct but carry different meanings and temporal references."
+      },
+      {
+        "id": "ec_bvm7",
+        "question": "明天我_____去上班。",
+        "translation": "(I'm not going to work tomorrow.)",
+        "options": [
+          "不",
+          "没",
+          "别",
+          "非"
+        ],
+        "correct": "不",
+        "explanation": "不 is used for future negation — expressing a plan or decision not to do something. 不去 = won't go/am not going. When talking about future actions, always use 不: 明天不来 (won't come tomorrow), 下周不上课 (no class next week). 没 cannot negate future actions because it only deals with completed or factual events. This temporal distinction helps clarify: 不 = present/future + subjective; 没 = past + objective."
+      },
+      {
+        "id": "ec_bvm8",
+        "question": "这里的冬天_____太冷。",
+        "translation": "(The winters here are not too cold.)",
+        "options": [
+          "不",
+          "没",
+          "别",
+          "非"
+        ],
+        "correct": "不",
+        "explanation": "不 negates adjectives — always 不, never 没. 不太冷 = not too cold. 不 + adjective describes a state: 不大 (not big), 不远 (not far), 不难 (not difficult), 不贵 (not expensive). This is because adjectives in Chinese function as stative verbs (describing conditions), and 不 is the negator for states and qualities. Important exception: 没那么冷 (not that cold) uses 没 because it's negating a comparison (没有那么), not the adjective directly."
+      },
+      {
+        "id": "ec_bvm9",
+        "question": "我_____有钱买那辆车。",
+        "translation": "(I don't have money to buy that car.)",
+        "options": [
+          "没",
+          "不",
+          "别",
+          "非"
+        ],
+        "correct": "没",
+        "explanation": "没有 (méiyǒu) = don't have — 有 (yǒu) is uniquely negated with 没, never 不. 没有钱 = don't have money. This is the one verb that breaks the subjective/objective pattern: regardless of tense or willingness, 有 always takes 没. 没有 can be shortened to 没 in casual speech. Examples: 没有时间 (don't have time), 没有问题 (no problem), 没有人 (nobody). Note: 没有 also serves as the negative comparison word: 没有他高 (not as tall as him)."
+      },
+      {
+        "id": "ec_bvm10",
+        "question": "他_____会说法语。",
+        "translation": "(He can't speak French.)",
+        "options": [
+          "不",
+          "没",
+          "别",
+          "非"
+        ],
+        "correct": "不",
+        "explanation": "不 negates ability and skill verbs: 不会 = can't/doesn't know how to. 会 (huì) = can/know how to. 不会说法语 = can't speak French. Other ability negations: 不能 (cannot — permission/circumstance), 不可以 (may not — permission). Compare: 他不会游泳 (he can't swim — never learned) vs 他没游泳 (he didn't swim — specific instance). The 不 vs 没 choice reveals whether you're talking about ability/state or specific actions."
+      },
+      {
+        "id": "ec_bvm11",
+        "question": "你_____听懂他说的话吗？",
+        "translation": "(Did you understand what he said?)",
+        "options": [
+          "没",
+          "不",
+          "别",
+          "非"
+        ],
+        "correct": "没",
+        "explanation": "没听懂 = didn't understand (a specific instance). When asking about a completed event or result, use 没. 听懂 (tīngdǒng) = listen-understand, a resultative verb compound. In questions about past events, 没 is used: 你没听懂吗？ (didn't you understand?). Compare: 你不听懂 is grammatically odd because 听懂 is a result, not an ongoing state. With resultative complements (verb + result), 没 is the default negator because results are factual events."
+      },
+      {
+        "id": "ec_bvm12",
+        "question": "这个字我_____认识。",
+        "translation": "(I don't recognize this character.)",
+        "options": [
+          "不",
+          "没",
+          "别",
+          "非"
+        ],
+        "correct": "不",
+        "explanation": "不认识 = don't recognize — a state of not knowing. 认识 (rènshi) = to know/recognize. Since this describes an ongoing state (the character is unfamiliar), use 不. Compare: 我不认识他 (I don't know him — ongoing state) vs 我没认识他 is unnatural (认识 as a state verb resists 没). However, 我们还没认识 (we haven't met yet) is acceptable because it refers to the uncompleted event of meeting. Context determines whether a verb acts as state or event."
+      },
+      {
+        "id": "ec_bvm13",
+        "question": "我已经很久_____见到他了。",
+        "translation": "(I haven't seen him for a long time.)",
+        "options": [
+          "没",
+          "不",
+          "别",
+          "非"
+        ],
+        "correct": "没",
+        "explanation": "没 + verb + 了 here expresses a continuing state from the past. 很久没见了 = haven't seen for a long time. This is a special usage where 了 is a sentence-final particle indicating a changed situation, not a completed action. 很久没...了 is a very common pattern: 很久没吃了 (haven't eaten in a while), 很久没联系了 (haven't been in touch for a long time). The combination of 没 (negation of occurrence) + 了 (current relevance) creates the present perfect meaning."
+      },
+      {
+        "id": "ec_bvm14",
+        "question": "你_____应该这样做。",
+        "translation": "(You shouldn't do it this way.)",
+        "options": [
+          "不",
+          "没",
+          "别",
+          "非"
+        ],
+        "correct": "不",
+        "explanation": "不 negates modal/auxiliary verbs: 不应该 = shouldn't, 不能 = can't, 不可以 = may not, 不会 = won't/can't, 不想 = don't want to, 不愿意 = unwilling. All modal verbs take 不 because they express states of obligation, ability, willingness, or permission — all subjective qualities. This is a reliable rule: if the verb expresses modality, use 不. Only the result or actual occurrence of the action takes 没: 没做 (didn't do), but 不应该做 (shouldn't do)."
+      },
+      {
+        "id": "ec_bvm15",
+        "question": "我_____觉得这个主意好。",
+        "translation": "(I don't think this idea is good.)",
+        "options": [
+          "不",
+          "没",
+          "别",
+          "非"
+        ],
+        "correct": "不",
+        "explanation": "不觉得 = don't think/feel — subjective opinion. 觉得 (juéde) = to think/feel, an opinion verb always negated with 不. Summary of 不 vs 没 rules: 不 negates: adjectives, 是, psychological verbs (想/喜欢/觉得), modal verbs (会/能/应该), habitual actions, future plans, willingness. 没 negates: completed past actions, 有, ongoing durations (很久没...). Key test: Is it a fact about what happened (没) or a state/attitude/quality (不)? Mastering this distinction is a milestone in Chinese fluency."
+      }
+    ]
+  },
+  {
+    "key": "jiu_vs_cai",
+    "name": "就 vs 才 (Jiù vs Cái)",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ec_jvc1",
+        "question": "他八点_____到了。",
+        "translation": "(He arrived as early as 8 o'clock.)",
+        "options": [
+          "就",
+          "才",
+          "都",
+          "也"
+        ],
+        "correct": "就",
+        "explanation": "就 (jiù) before a verb indicates something happened earlier, faster, or more easily than expected. 八点就到了 = arrived as early as 8 (implying it was early). 就 expresses the speaker's feeling that the action was prompt or quick. Compare: 他八点才到 = He didn't arrive until 8 (implying it was late). This subjective evaluation is the core difference between 就 and 才 — same event, opposite attitudes. 就 pairs with 了: 就到了 (quickly arrived)."
+      },
+      {
+        "id": "ec_jvc2",
+        "question": "他十一点_____到。",
+        "translation": "(He didn't arrive until 11 o'clock.)",
+        "options": [
+          "才",
+          "就",
+          "都",
+          "也"
+        ],
+        "correct": "才",
+        "explanation": "才 (cái) indicates something happened later, slower, or with more difficulty than expected. 十一点才到 = didn't arrive until 11 (implying it was late). Key grammar difference: 才 does NOT take 了 after the verb — 才到 is correct, not *才到了. This is a fundamental rule: 就 + verb + 了; 才 + verb (no 了). Why? Because 就 emphasizes completion (hence 了), while 才 emphasizes delay/difficulty, and the delayed result is not viewed as 'completed' in the speaker's mind."
+      },
+      {
+        "id": "ec_jvc3",
+        "question": "我一回家_____开始做作业了。",
+        "translation": "(I started doing homework as soon as I got home.)",
+        "options": [
+          "就",
+          "才",
+          "都",
+          "也"
+        ],
+        "correct": "就",
+        "explanation": "一...就... (yī...jiù...) = 'as soon as...then...' — one of the most important Chinese grammar patterns. 一回家就开始 = as soon as [I] got home, [I] started. 一 marks the trigger event, 就 marks the immediate consequence. More examples: 一下雨就冷 (as soon as it rains, it gets cold), 一说就懂 (understand as soon as it's explained). This pattern emphasizes immediate, automatic connection between events. It's widely used in both spoken and written Chinese."
+      },
+      {
+        "id": "ec_jvc4",
+        "question": "学了三年_____能听懂中文新闻。",
+        "translation": "(Only after studying for three years could [I] understand Chinese news.)",
+        "options": [
+          "才",
+          "就",
+          "都",
+          "也"
+        ],
+        "correct": "才",
+        "explanation": "才 after a duration/condition emphasizes that it took a long time or great effort to achieve something. 学了三年才能听懂 = only after 3 years of study could [I] understand. This implies difficulty and a long process. If we used 就: 学了三年就能听懂 = after only 3 years, [I] could understand (implying it was fast/easy). Same fact, opposite evaluations. 才 with conditions: 吃了药才好 (only after taking medicine did [I] get better)."
+      },
+      {
+        "id": "ec_jvc5",
+        "question": "他很聪明，什么都一学_____会。",
+        "translation": "(He's very smart, he learns everything as soon as he tries.)",
+        "options": [
+          "就",
+          "才",
+          "都",
+          "也"
+        ],
+        "correct": "就",
+        "explanation": "一学就会 = learns as soon as he tries — using the 一...就... pattern to emphasize quickness and ease. 就 here conveys that the result comes effortlessly. This pattern is common in describing talent or aptitude: 一看就懂 (understands just by looking), 一听就明白 (gets it immediately upon hearing). The 什么都 (shénme dōu) = 'everything' reinforces the pattern. 就 in these contexts celebrates speed and natural ability."
+      },
+      {
+        "id": "ec_jvc6",
+        "question": "你怎么现在_____来？",
+        "translation": "(How come you're only coming now?)",
+        "options": [
+          "才",
+          "就",
+          "都",
+          "也"
+        ],
+        "correct": "才",
+        "explanation": "才 expresses 'only now/only then' — lateness with implied criticism. 现在才来 = only coming now (you're late!). 怎么...才 is a common complaint pattern. Compare: 你怎么现在就来了 = How come you're already here now (you're early!). The 才 vs 就 choice in questions reveals the speaker's attitude: 才 suggests disapproval of lateness; 就 suggests surprise at earliness. This attitudinal distinction makes 才/就 essential for expressing feelings in Chinese."
+      },
+      {
+        "id": "ec_jvc7",
+        "question": "我们明天_____出发吧。",
+        "translation": "(Let's set off tomorrow then.)",
+        "options": [
+          "就",
+          "才",
+          "都",
+          "也"
+        ],
+        "correct": "就",
+        "explanation": "就 in future/planning contexts means 'then/in that case' — indicating a decided course of action. 明天就出发 = let's depart tomorrow (it's decided). This is 就's function as a decision marker or logical connector. Examples: 那就这样吧 (then let's leave it at that), 我们就在这里吃吧 (let's just eat here then). 就 makes the plan feel natural and resolved, as if the decision flows logically from the circumstances. This usage is extremely common in daily planning conversations."
+      },
+      {
+        "id": "ec_jvc8",
+        "question": "他_____是不肯说。",
+        "translation": "(He just refuses to say.)",
+        "options": [
+          "就",
+          "才",
+          "都",
+          "也"
+        ],
+        "correct": "就",
+        "explanation": "就是 + verb/不verb expresses stubbornness or insistence — 'just/simply.' 就是不肯说 = simply refuses to say. This usage of 就 emphasizes determination or stubbornness: 就是不去 (just won't go), 就是要买 (insists on buying), 就是不信 (simply won't believe). 就是 here is different from 就是 meaning 'that is/namely.' Context distinguishes: before a verb phrase, it means 'insistently/simply'; before a noun, it means 'is precisely.' This emphatic 就 is very common in arguments and emotional speech."
+      },
+      {
+        "id": "ec_jvc9",
+        "question": "等大家都到了，我们_____开始。",
+        "translation": "(Once everyone has arrived, we'll start.)",
+        "options": [
+          "才",
+          "就",
+          "都",
+          "也"
+        ],
+        "correct": "才",
+        "explanation": "才 after a condition means 'only then/not until' — the action won't happen before the condition is met. 都到了才开始 = only after everyone arrives will we start. This conditional 才 is essential for setting prerequisites: 做完作业才能看电视 (only after finishing homework can you watch TV), 下雨了才会凉快 (it won't cool down until it rains). Compare: 都到了就开始 = as soon as everyone arrives, we'll start (emphasizing promptness rather than prerequisite)."
+      },
+      {
+        "id": "ec_jvc10",
+        "question": "他三岁_____会读书了。",
+        "translation": "(He could already read at age three.)",
+        "options": [
+          "就",
+          "才",
+          "都",
+          "也"
+        ],
+        "correct": "就",
+        "explanation": "就 with age/quantity emphasizes 'as early as' or 'already.' 三岁就会读书了 = could read as early as age 3 (impressive!). The 了 after the verb confirms the pattern: 就 + verb + 了. Compare: 三岁才会读书 = didn't learn to read until age 3 (slow). This age-related usage is common in Chinese storytelling: 他五岁就开始学钢琴了 (started learning piano at just 5), 她二十岁就当经理了 (became a manager at only 20)."
+      },
+      {
+        "id": "ec_jvc11",
+        "question": "你_____知道了啊？这么快！",
+        "translation": "(You already know? That fast!)",
+        "options": [
+          "就",
+          "才",
+          "都",
+          "也"
+        ],
+        "correct": "就",
+        "explanation": "就 expressing 'already' with surprise at speed: 就知道了 = already know (so fast!). The follow-up 这么快 confirms the speaker's amazement. 就 pairs naturally with surprise or admiration about speed: 你就做完了？(you're done already?), 他就走了？(he left already?). In questions, 就 implies the speaker finds the speed remarkable. Note the 了 — 就...了 always marks that the rapid event has been completed."
+      },
+      {
+        "id": "ec_jvc12",
+        "question": "想了半天_____想出一个办法。",
+        "translation": "(Thought for a long time before finally coming up with one solution.)",
+        "options": [
+          "才",
+          "就",
+          "都",
+          "也"
+        ],
+        "correct": "才",
+        "explanation": "才 after a duration emphasizes difficulty and effort: 想了半天才想出 = thought for a long time before finally thinking of [one]. 半天 (bàntiān) literally 'half a day' but commonly means 'a long time.' 才 emphasizes the struggle and the hard-won result. In contrast: 想了一会儿就想出... (thought for just a moment and came up with...) emphasizes ease. 才 after effort phrases: 找了好久才找到 (searched for ages before finding), 等了两个小时才来 (waited 2 hours before coming)."
+      },
+      {
+        "id": "ec_jvc13",
+        "question": "我_____要两杯咖啡。",
+        "translation": "(I only want two cups of coffee.)",
+        "options": [
+          "就",
+          "才",
+          "都",
+          "也"
+        ],
+        "correct": "就",
+        "explanation": "就 before a quantity means 'only/just' — minimizing the amount. 就要两杯 = only want two cups (it's not much). This 就 indicates sufficiency or smallness: 就三个人 (only three people), 就一块钱 (just one yuan), 就吃了一点儿 (only ate a little). Compare: 才三个人 also means 'only three people' but with stronger disappointment or frustration. Both 就 and 才 can mean 'only' with quantities, but 就 is neutral/content while 才 implies dissatisfaction."
+      },
+      {
+        "id": "ec_jvc14",
+        "question": "这里离学校很近，走路五分钟_____到了。",
+        "translation": "(It's very close to school, just a 5-minute walk.)",
+        "options": [
+          "就",
+          "才",
+          "都",
+          "也"
+        ],
+        "correct": "就",
+        "explanation": "就 emphasizing convenience and speed: 五分钟就到了 = arrive in just 5 minutes (it's quick!). This combines the 'short time' sense with the speed/ease sense. 很近 (very close) sets up the expectation, and 就 confirms it. Compare: 五分钟才到 would mean 'it takes a whole 5 minutes to get there' (implying it's slow/far). Same five minutes, completely different attitudes!"
+      },
+      {
+        "id": "ec_jvc15",
+        "question": "你不说我_____不知道呢。",
+        "translation": "(If you hadn't said, I wouldn't have known.)",
+        "options": [
+          "还",
+          "就",
+          "才",
+          "都"
+        ],
+        "correct": "还",
+        "explanation": "还 (hái) here means 'still' — 还不知道 = still wouldn't know. This contrasts with 就 and 才 uses. Summary of 就 vs 才: 就 = earlier/faster/easier than expected (uses 了), expresses satisfaction, surprise at speed, or decisiveness. 才 = later/slower/harder than expected (no 了), expresses frustration, delay, or conditions. Both can mean 'only' with quantities (就 is neutral, 才 is dissatisfied). Master this pair to express nuanced attitudes about timing and expectation in Chinese."
+      }
+    ]
   }
 ]

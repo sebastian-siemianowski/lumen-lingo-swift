@@ -3483,5 +3483,1030 @@
         "explanation": "Wyraz 'دَرس' (dars) → 'دُروس' (durūs) = lekcje. Wzorzec فُعول (fuʿūl) — ten sam co بيت → بيوت i عين → عيون. To bardzo produktywny wzorzec (wiele słów go używa). Inne: فَنّ → فُنون (sztuki), نَصّ → نُصوص (teksty). Jednosylabowe rzeczowniki typu فَعل → często فُعول w l. mn. Znajomość 5-6 głównych wzorców pokrywa większość słownictwa."
       }
     ]
+  },
+  {
+    "key": "sound_plurals",
+    "name": "Liczba mnoga regularna",
+    "description": "جمع المذكر والمؤنث السالم",
+    "iconName": "person.3.sequence",
+    "color": "#f472b6",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_sp1",
+        "question": "معلم → _____ (l. mn. r. męskiego)",
+        "translation": "(nauczyciel → nauczyciele)",
+        "options": [
+          "معلمون",
+          "معلمات",
+          "معالم",
+          "معلمان"
+        ],
+        "correct": "معلمون",
+        "explanation": "Wyraz 'معلم' (muʿallim) = nauczyciel → 'معلمون' (muʿallimūn) = nauczyciele. Liczba mnoga regularna r. męskiego (جمع المذكر السالم) tworzy się przez dodanie końcówki '-ون' (-ūn) w mianowniku. W bierniku/dopełniaczu końcówka to '-ين' (-īn). Dotyczy głównie rzeczowników oznaczających mężczyzn o określonych zawodach/cechach. W polskim odpowiednikiem jest regularna odmiana: nauczyciel → nauczyciele."
+      },
+      {
+        "id": "pa_sp2",
+        "question": "مهندس → _____ (l. mn. r. męskiego)",
+        "translation": "(inżynier → inżynierowie)",
+        "options": [
+          "مهندسون",
+          "مهندسات",
+          "مهاندس",
+          "مهندسان"
+        ],
+        "correct": "مهندسون",
+        "explanation": "Wyraz 'مهندس' (muhandis) = inżynier → 'مهندسون' (muhandisūn) = inżynierowie. Końcówka '-ون' dodana do rdzenia. L. mn. regularna r. męskiego stosowana jest do rzeczowników rozumnych (ludzi) r. męskiego. Nierozumne rzeczowniki męskie tworzą l. mn. łamaną. To ważna różnica — w arabskim 'rozumność' wpływa na gramatykę."
+      },
+      {
+        "id": "pa_sp3",
+        "question": "معلمة → _____ (l. mn. r. żeńskiego)",
+        "translation": "(nauczycielka → nauczycielki)",
+        "options": [
+          "معلمات",
+          "معلمون",
+          "معلّمة",
+          "معالم"
+        ],
+        "correct": "معلمات",
+        "explanation": "Wyraz 'معلمة' (muʿallima) = nauczycielka → 'معلمات' (muʿallimāt) = nauczycielki. L. mn. regularna r. żeńskiego (جمع المؤنث السالم) tworzy się przez zamianę tāʾ marbūṭa (ة) na '-ات' (-āt). To najprostsza i najbardziej regularna forma l. mn. w arabskim. W polskim: nauczycielka → nauczycielki — też regularne."
+      },
+      {
+        "id": "pa_sp4",
+        "question": "طالبة → _____",
+        "translation": "(studentka → studentki)",
+        "options": [
+          "طالبات",
+          "طالبون",
+          "طلاب",
+          "طالبان"
+        ],
+        "correct": "طالبات",
+        "explanation": "Wyraz 'طالبة' (ṭāliba) → 'طالبات' (ṭālibāt) = studentki. Zamiana ة → ات. Uwaga: męski odpowiednik 'طالب' tworzy l. mn. łamaną 'طلاب' (ṭullāb), a nie regularną *طالبون. To pokazuje, że ten sam rdzeń może mieć regularną l. mn. żeńską, ale łamaną męską. Trzeba uczyć się obu form."
+      },
+      {
+        "id": "pa_sp5",
+        "question": "Która końcówka tworzy l. mn. reg. r. męskiego w mianowniku?",
+        "translation": "(jaka końcówka dla l. mn. regularnej r.m.?)",
+        "options": [
+          "-ون (-ūn)",
+          "-ات (-āt)",
+          "-ان (-ān)",
+          "-ين (-īn)"
+        ],
+        "correct": "-ون (-ūn)",
+        "explanation": "Końcówka '-ون' (-ūn) tworzy l. mn. reg. r. męskiego w mianowniku (حالة الرفع). W bierniku i dopełniaczu używa się '-ين' (-īn). Np. معلمون (mianownik) vs. معلمين (biernik/dopełniacz). To odmiana dwukońcówkowa — mianownik ma osobną formę. W polskim mamy 7 przypadków, w arabskim 3, ale zasada deklinacji jest podobna."
+      },
+      {
+        "id": "pa_sp6",
+        "question": "سيارة → _____",
+        "translation": "(samochód → samochody)",
+        "options": [
+          "سيارات",
+          "سياير",
+          "سيارون",
+          "سيارتان"
+        ],
+        "correct": "سيارات",
+        "explanation": "Wyraz 'سيارة' (sayyāra) = samochód → 'سيارات' (sayyārāt) = samochody. Końcówka '-ات' zastępuje tāʾ marbūṭa. Rzeczowniki nierozumne r. żeńskiego prawie zawsze tworzą l. mn. reg. z '-ات'. Istnieją też zapożyczenia, np. تلفزيون → تلفزيونات (telewizory), gdzie '-ات' dodaje się nawet bez tāʾ marbūṭa."
+      },
+      {
+        "id": "pa_sp7",
+        "question": "مسلم → _____",
+        "translation": "(muzułmanin → muzułmanie)",
+        "options": [
+          "مسلمون",
+          "مسلمات",
+          "مسالم",
+          "مسلمان"
+        ],
+        "correct": "مسلمون",
+        "explanation": "Wyraz 'مسلم' (muslim) → 'مسلمون' (muslimūn) = muzułmanie. Imiesłów czynny (اسم الفاعل) od rdzenia س-ل-م. Rzeczowniki opisujące wyznawców, zawody, cechy rozumnych mężczyzn regularnie przyjmują '-ون'. Forma żeńska: مسلمة → مسلمات. To jeden z najczęstszych wzorców w klasycznym i współczesnym arabskim."
+      },
+      {
+        "id": "pa_sp8",
+        "question": "امتحان → _____",
+        "translation": "(egzamin → egzaminy)",
+        "options": [
+          "امتحانات",
+          "امتحانون",
+          "امتاحين",
+          "امتحانان"
+        ],
+        "correct": "امتحانات",
+        "explanation": "Wyraz 'امتحان' (imtiḥān) = egzamin → 'امتحانات' (imtiḥānāt) = egzaminy. Mimo braku tāʾ marbūṭa, wiele rzeczowników abstrakcyjnych i zapożyczeń tworzy l. mn. prostą przez dodanie '-ات'. Dotyczy to zwłaszcza maṣdarów (rzeczowników odsłownych) dłuższych form czasownikowych. Reguła: gdy nie ma ustalonej l. mn. łamanej, '-ات' jest bezpiecznym wyborem."
+      },
+      {
+        "id": "pa_sp9",
+        "question": "كاتب → _____ (l. mn. reg. r.m.)",
+        "translation": "(pisarz → pisarze)",
+        "options": [
+          "كاتبون",
+          "كتّاب",
+          "كاتبات",
+          "كتابون"
+        ],
+        "correct": "كاتبون",
+        "explanation": "Wyraz 'كاتب' (kātib) = pisarz → 'كاتبون' (kātibūn) regularna l. mn. Uwaga: istnieje też l. mn. łamana 'كتّاب' (kuttāb), która jest częściej używana w praktyce. W arabskim wiele rzeczowników ma ZARÓWNO regularną, jak i łamaną l. mn. — obie są poprawne, ale łamana jest często powszechniejsza w mowie potocznej."
+      },
+      {
+        "id": "pa_sp10",
+        "question": "طبيبة → _____",
+        "translation": "(lekarka → lekarki)",
+        "options": [
+          "طبيبات",
+          "طبيبون",
+          "أطباء",
+          "طبيبان"
+        ],
+        "correct": "طبيبات",
+        "explanation": "Wyraz 'طبيبة' (ṭabība) = lekarka → 'طبيبات' (ṭabībāt) = lekarki. Regularna zamiana ة → ات. Dla porównania: męska forma 'طبيب' tworzy l. mn. łamaną 'أطباء' (aṭibbāʾ). To klasyczny przykład asymetrii: żeński regularny vs. męski łamany. Polski ma podobne zjawisko: lekarz → lekarze (regularne), ale dziecko → dzieci (nieregularne)."
+      },
+      {
+        "id": "pa_sp11",
+        "question": "W jakim przypadku l. mn. reg. r.m. ma końcówkę '-ين'?",
+        "translation": "(kiedy używamy -īn?)",
+        "options": [
+          "biernik i dopełniacz",
+          "mianownik",
+          "wołacz",
+          "narzędnik"
+        ],
+        "correct": "biernik i dopełniacz",
+        "explanation": "Końcówka '-ين' (-īn) występuje w bierniku (حالة النصب) i dopełniaczu (حالة الجر). Np.: رأيتُ المعلمينَ (widziałem nauczycieli — biernik), مع المعلمينَ (z nauczycielami — dopełniacz). Mianownik ma '-ون'. To tzw. 'إعراب بالحروف' — odmiana za pomocą liter, nie znaków diakrytycznych. W polskim wszystkie 7 przypadków ma osobne końcówki."
+      },
+      {
+        "id": "pa_sp12",
+        "question": "ساعة → _____",
+        "translation": "(godzina/zegarek → godziny/zegarki)",
+        "options": [
+          "ساعات",
+          "سواعد",
+          "ساعون",
+          "ساعتان"
+        ],
+        "correct": "ساعات",
+        "explanation": "Wyraz 'ساعة' (sāʿa) = godzina/zegarek → 'ساعات' (sāʿāt). Regularna l. mn. żeńska z zamianą ة → ات. Słowo to jest bardzo częste — pojawia się w kontekście czasu (كم الساعة؟ = która godzina?) i jako zegarek. Forma mnoga jest całkowicie regularna, co ułatwia zapamiętywanie."
+      },
+      {
+        "id": "pa_sp13",
+        "question": "مدرّس → _____ (l. mn. reg. r.m.)",
+        "translation": "(nauczyciel → nauczyciele)",
+        "options": [
+          "مدرّسون",
+          "مدرّسات",
+          "مدارس",
+          "مدرّسين"
+        ],
+        "correct": "مدرّسون",
+        "explanation": "Wyraz 'مدرّس' (mudarris) → 'مدرّسون' (mudarrisūn) = nauczyciele. Uwaga na taszdid (ّ) na literze ر — podwojenie spółgłoski. Forma żeńska: مدرّسة → مدرّسات. Nie mylić z 'مدارس' (madāris) = szkoły, które jest l. mn. łamaną od 'مدرسة' (szkoła). Ten sam rdzeń د-ر-س daje różne wyrazy o różnych l. mn."
+      },
+      {
+        "id": "pa_sp14",
+        "question": "لغة → _____",
+        "translation": "(język → języki)",
+        "options": [
+          "لغات",
+          "لغون",
+          "ألغاء",
+          "لغتان"
+        ],
+        "correct": "لغات",
+        "explanation": "Wyraz 'لغة' (luġa) = język → 'لغات' (luġāt) = języki. Regularna l. mn. żeńska. Bardzo przydatne słowo: 'أتعلم اللغة العربية' (uczę się języka arabskiego). W formie l. mn.: 'كم لغة تتكلم؟' (ile języków mówisz?). Końcówka '-ات' jest tu jedyną możliwą formą — nie istnieje l. mn. łamana dla tego wyrazu."
+      },
+      {
+        "id": "pa_sp15",
+        "question": "Która z tych form to NIEPOPRAWNA l. mn. regularna?",
+        "translation": "(która forma jest błędna?)",
+        "options": [
+          "كتابون",
+          "معلمون",
+          "طالبات",
+          "مهندسون"
+        ],
+        "correct": "كتابون",
+        "explanation": "Forma *'كتابون' jest niepoprawna — 'كتاب' (książka) to rzeczownik nierozumny, więc NIE tworzy l. mn. reg. r.m. z '-ون'. Poprawna l. mn. to 'كُتُب' (kutub) — forma łamana. Końcówka '-ون' jest zarezerwowana dla rzeczowników oznaczających rozumnych mężczyzn (ludzi). 'معلمون', 'طالبات', 'مهندسون' — wszystkie poprawne, bo dotyczą ludzi."
+      }
+    ]
+  },
+  {
+    "key": "idafa_construct",
+    "name": "Konstrukcja iḍāfa",
+    "description": "الإضافة",
+    "iconName": "link",
+    "color": "#60a5fa",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pa_id1",
+        "question": "كتاب _____ (książka nauczyciela)",
+        "translation": "(książka nauczyciela)",
+        "options": [
+          "المعلم",
+          "معلمٌ",
+          "المعلمُ",
+          "لمعلم"
+        ],
+        "correct": "المعلم",
+        "explanation": "Iḍāfa (الإضافة) to konstrukcja dopełniaczowa: 'كتاب المعلم' (kitābu l-muʿallimi) = książka nauczyciela. Pierwszy wyraz (مضاف muḍāf) NIGDY nie ma rodzajnika 'ال'. Drugi wyraz (مضاف إليه muḍāf ilayhi) stoi w dopełniaczu. W polskim odpowiednikiem jest dopełniacz: 'książka nauczyciela'. To jedna z najważniejszych konstrukcji w arabskim — zastępuje przymiotnik dzierżawczy."
+      },
+      {
+        "id": "pa_id2",
+        "question": "باب _____ (drzwi domu)",
+        "translation": "(drzwi domu)",
+        "options": [
+          "البيت",
+          "بيتٌ",
+          "البيتُ",
+          "بيوت"
+        ],
+        "correct": "البيت",
+        "explanation": "Konstrukcja 'باب البيت' (bābu l-bayti) = drzwi domu. Muḍāf 'باب' traci tanwīn (nunację) — zamiast 'بابٌ' mamy 'بابُ'. Muḍāf ilayhi 'البيت' stoi w dopełniaczu (kasra pod ostatnią literą). W polskim: 'drzwi domu' — też dopełniacz. Iḍāfa może składać się z więcej niż 2 elementów: 'باب بيت المعلم' = drzwi domu nauczyciela."
+      },
+      {
+        "id": "pa_id3",
+        "question": "_____ المدينة (centrum miasta)",
+        "translation": "(centrum miasta)",
+        "options": [
+          "وسط",
+          "الوسط",
+          "وسطٌ",
+          "أوسط"
+        ],
+        "correct": "وسط",
+        "explanation": "Poprawnie: 'وسط المدينة' (wasaṭu l-madīnati) = centrum miasta. Pierwszy element iḍāfy (muḍāf) NIE przyjmuje rodzajnika 'ال'. Gdybyśmy powiedzieli 'الوسط المدينة', to byłby błąd — dwa oddzielne wyrazy, nie iḍāfa. Zasada: muḍāf jest zawsze bez 'ال' (nieokreślony formalnie, ale określony znaczeniowo przez muḍāf ilayhi)."
+      },
+      {
+        "id": "pa_id4",
+        "question": "Jak powiedzieć 'klucz samochodu'?",
+        "translation": "(klucz samochodu)",
+        "options": [
+          "مفتاح السيارة",
+          "المفتاح السيارة",
+          "مفتاح سيارة",
+          "المفتاح سيارةً"
+        ],
+        "correct": "مفتاح السيارة",
+        "explanation": "Poprawnie: 'مفتاح السيارة' (miftāḥu s-sayyārati) = klucz samochodu. 'مفتاح' — muḍāf (bez ال), 'السيارة' — muḍāf ilayhi (z ال, w dopełniaczu). Gdybyśmy chcieli powiedzieć 'klucz jakiegoś samochodu' (nieokreślony): 'مفتاح سيارةٍ'. Rodzajnik na drugim elemencie decyduje o określoności całej konstrukcji."
+      },
+      {
+        "id": "pa_id5",
+        "question": "غرفة _____ (pokój gościnny / pokój gości)",
+        "translation": "(pokój gościnny)",
+        "options": [
+          "الضيوف",
+          "ضيوفٌ",
+          "الضيفُ",
+          "ضيافة"
+        ],
+        "correct": "الضيوف",
+        "explanation": "Poprawnie: 'غرفة الضيوف' (ġurfatu ḍ-ḍuyūfi) = pokój gości. Tu muḍāf 'غرفة' traci tanwīn, a tāʾ marbūṭa (ة) wymawiana jest jako [t]: ġurfa*t*u. W iḍāfie tāʾ marbūṭa zawsze jest wymawiana! W zwykłej formie 'غرفة' wymawia się 'ġurfa' (bez t). To ważna reguła fonetyczna arabskiego."
+      },
+      {
+        "id": "pa_id6",
+        "question": "Ile elementów ma iḍāfa w 'كتاب طالب الجامعة'?",
+        "translation": "(książka studenta uniwersytetu)",
+        "options": [
+          "3 elementy",
+          "2 elementy",
+          "4 elementy",
+          "1 element"
+        ],
+        "correct": "3 elementy",
+        "explanation": "Trzy elementy: (1) كتاب (książka) → (2) طالب (student) → (3) الجامعة (uniwersytet). Tłumaczenie: 'książka studenta uniwersytetu'. Iḍāfa łańcuchowa (إضافة متسلسلة) może mieć wiele ogniw. Każdy element (poza ostatnim) jest muḍāfem bez 'ال'. Tylko OSTATNI element może mieć 'ال'. Wszystkie elementy poza pierwszym stają w dopełniaczu."
+      },
+      {
+        "id": "pa_id7",
+        "question": "لون _____ (kolor nieba)",
+        "translation": "(kolor nieba)",
+        "options": [
+          "السماء",
+          "سماءٌ",
+          "سماوات",
+          "الأسماء"
+        ],
+        "correct": "السماء",
+        "explanation": "Poprawnie: 'لون السماء' (lawnu s-samāʾi) = kolor nieba. 'لون' = kolor (muḍāf), 'السماء' = niebo (muḍāf ilayhi w dopełniaczu). Końcowa hamza (ء) po alif nie zmienia zasad odmiany. Iḍāfa jest tu lepsza niż przymiotnik — powiedzenie 'اللون السماوي' (kolor niebiański) to już inne znaczenie (przymiotnikowe, nie dzierżawcze)."
+      },
+      {
+        "id": "pa_id8",
+        "question": "Czy w iḍāfie 'مدير المدرسة' wyraz 'مدير' może mieć 'ال'?",
+        "translation": "(dyrektor szkoły — czy مدير ma ال?)",
+        "options": [
+          "Nie, nigdy",
+          "Tak, zawsze",
+          "Tylko w formalnym stylu",
+          "Tylko w l.mn."
+        ],
+        "correct": "Nie, nigdy",
+        "explanation": "Muḍāf (pierwszy element) NIGDY nie ma rodzajnika 'ال'. 'مدير المدرسة' (mudīru l-madrasati) = dyrektor szkoły. Gdybyśmy wstawili 'ال': 'المدير المدرسة' — to byłby błąd gramatyczny. Jeśli chcemy powiedzieć 'TEN dyrektor szkoły' z naciskiem, dodajemy zaimek: 'مدير المدرسة هذا'. Zasada ta jest absolutna i bezwyjątkowa w języku arabskim."
+      },
+      {
+        "id": "pa_id9",
+        "question": "حقيبة _____ (torba podróżna = torba podróży)",
+        "translation": "(torba podróżna)",
+        "options": [
+          "السفر",
+          "سفرٌ",
+          "المسافر",
+          "سافر"
+        ],
+        "correct": "السفر",
+        "explanation": "Poprawnie: 'حقيبة السفر' (ḥaqībatu s-safari) = torba podróżna (dosł. torba podróży). Tu iḍāfa pełni funkcję przymiotnika — nie chodzi o konkretną podróż, ale o typ torby. W arabskim iḍāfa często zastępuje przymiotnik: غرفة النوم (sypialnia = pokój snu), ملعب كرة القدم (boisko piłki nożnej). To jeden z najczęstszych użyć iḍāfy."
+      },
+      {
+        "id": "pa_id10",
+        "question": "Jak powiedzieć 'profesor uniwersytetu'?",
+        "translation": "(profesor uniwersytetu)",
+        "options": [
+          "أستاذ الجامعة",
+          "الأستاذ الجامعة",
+          "أستاذ جامعةٌ",
+          "الأستاذ جامعة"
+        ],
+        "correct": "أستاذ الجامعة",
+        "explanation": "Poprawnie: 'أستاذ الجامعة' (ustāḏu l-ǧāmiʿati) = profesor uniwersytetu. 'أستاذ' (muḍāf, bez ال), 'الجامعة' (muḍāf ilayhi, dopełniacz). Gdybyśmy chcieli powiedzieć 'profesor JAKIEGOŚ uniwersytetu': 'أستاذ جامعةٍ' (bez ال na drugim elemencie). Obecność/brak ال na muḍāf ilayhi zmienia znaczenie z określonego na nieokreślone."
+      },
+      {
+        "id": "pa_id11",
+        "question": "Gdzie stoi przymiotnik opisujący muḍāf w iḍāfie?",
+        "translation": "(gdzie wstawić przymiotnik?)",
+        "options": [
+          "Po całej iḍāfie",
+          "Między elementami",
+          "Przed iḍāfą",
+          "Zastępuje muḍāf"
+        ],
+        "correct": "Po całej iḍāfie",
+        "explanation": "Przymiotnik ZAWSZE stoi PO całej iḍāfie. 'كتاب المعلم الكبير' = duża książka nauczyciela (przymiotnik odnosi się do كتاب). Nie wolno rozdzielać elementów iḍāfy przymiotnikiem — *'كتاب الكبير المعلم' jest BŁĘDNE. Przymiotnik zgadza się w rodzaju, liczbie i przypadku z wyrazem, który opisuje, a nie z najbliższym elementem."
+      },
+      {
+        "id": "pa_id12",
+        "question": "رئيس _____ (prezydent państwa)",
+        "translation": "(prezydent państwa)",
+        "options": [
+          "الدولة",
+          "دولةً",
+          "الدول",
+          "دولتان"
+        ],
+        "correct": "الدولة",
+        "explanation": "Poprawnie: 'رئيس الدولة' (raʾīsu d-dawlati) = prezydent państwa. Bardzo powszechne wyrażenie w mediach arabskich. Iḍāfa z tytułami i funkcjami: وزير الخارجية (minister spraw zagranicznych), رئيس الوزراء (premier = prezydent ministrów). W politycznym arabskim iḍāfa jest niezbędna — prawie każdy tytuł to konstrukcja iḍāfa."
+      },
+      {
+        "id": "pa_id13",
+        "question": "Jak powiedzieć 'lekcja arabskiego' (lekcja języka arabskiego)?",
+        "translation": "(lekcja języka arabskiego)",
+        "options": [
+          "درس اللغة العربية",
+          "الدرس اللغة العربية",
+          "درسٌ عربيٌ",
+          "درس للغة"
+        ],
+        "correct": "درس اللغة العربية",
+        "explanation": "Poprawnie: 'درس اللغة العربية' (darsu l-luġati l-ʿarabiyyati) = lekcja języka arabskiego. Tu mamy iḍāfę 'درس اللغة' (lekcja języka) + przymiotnik 'العربية' (arabskiego) opisujący 'اللغة'. Przymiotnik 'العربية' stoi WEWNĄTRZ iḍāfy, bo opisuje muḍāf ilayhi, nie muḍāf. Kolejność zawsze: muḍāf + muḍāf ilayhi + jego przymiotnik."
+      },
+      {
+        "id": "pa_id14",
+        "question": "ابن _____ (syn sąsiada)",
+        "translation": "(syn sąsiada)",
+        "options": [
+          "الجار",
+          "جارٌ",
+          "الجيران",
+          "جارًا"
+        ],
+        "correct": "الجار",
+        "explanation": "Poprawnie: 'ابن الجار' (ibnu l-ǧāri) = syn sąsiada. Słowa oznaczające relacje rodzinne (ابن = syn, بنت = córka, أب = ojciec, أم = matka) bardzo często tworzą iḍāfę. 'ابن' (ibn) traci alif w pisowni, gdy jest w iḍāfie po imieniu własnym: 'محمد بن عبد الله' (Muhammad syn Abdullaha). To konwencja w imionach arabskich."
+      },
+      {
+        "id": "pa_id15",
+        "question": "Co jest BŁĘDNE w wyrażeniu 'الكتاب الطالب'?",
+        "translation": "(co jest źle w 'الكتاب الطالب'?)",
+        "options": [
+          "Muḍāf ma rodzajnik ال",
+          "Brak tanwīn",
+          "Zła kolejność",
+          "Brak przymiotnika"
+        ],
+        "correct": "Muḍāf ma rodzajnik ال",
+        "explanation": "Błąd: muḍāf (الكتاب) NIE może mieć rodzajnika 'ال' w iḍāfie. Poprawnie: 'كتاب الطالب' = książka studenta. Z 'ال' na obu elementach to nie jest iḍāfa, lecz dwa oddzielne wyrazy (الكتاب = ta książka, الطالب = ten student). To najczęstszy błąd uczących się arabskiego. Zapamiętaj: muḍāf NIGDY z 'ال'!"
+      }
+    ]
+  },
+  {
+    "key": "basic_questions",
+    "name": "Pytania podstawowe",
+    "description": "أدوات الاستفهام الأساسية",
+    "iconName": "questionmark.circle",
+    "color": "#fbbf24",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_bq1",
+        "question": "_____ اسمك؟ (Jak masz na imię?)",
+        "translation": "(Jak masz na imię?)",
+        "options": [
+          "ما",
+          "من",
+          "كيف",
+          "هل"
+        ],
+        "correct": "ما",
+        "explanation": "Partykuła 'ما' (mā) = co/jaki. 'ما اسمك؟' (mā ismuka?) = Jak masz na imię? (dosł. 'Co twoje imię?'). W arabskim pytamy 'co jest twoim imieniem', nie 'jak' — różnica kulturowa. Inne użycia 'ما': ما هذا؟ (co to?), ما رأيك؟ (co sądzisz?). 'ما' pyta o rzeczy, nie o osoby."
+      },
+      {
+        "id": "pa_bq2",
+        "question": "_____ هذا؟ (Kto to jest?)",
+        "translation": "(Kto to jest?)",
+        "options": [
+          "مَن",
+          "ما",
+          "أين",
+          "متى"
+        ],
+        "correct": "مَن",
+        "explanation": "Partykuła 'مَن' (man) = kto. 'مَن هذا؟' (man hāḏā?) = Kto to jest? Kluczowa różnica: مَن pyta o LUDZI, ما pyta o RZECZY. W polskim: 'kto' vs. 'co'. Inne przykłady: مَن معلمك؟ (kto jest twoim nauczycielem?), مَن فعل هذا؟ (kto to zrobił?). 'مَن' nie odmienia się — ma jedną formę dla wszystkich przypadków."
+      },
+      {
+        "id": "pa_bq3",
+        "question": "_____ المدرسة؟ (Gdzie jest szkoła?)",
+        "translation": "(Gdzie jest szkoła?)",
+        "options": [
+          "أين",
+          "متى",
+          "كم",
+          "لماذا"
+        ],
+        "correct": "أين",
+        "explanation": "Partykuła 'أين' (ayna) = gdzie. 'أين المدرسة؟' (ayna l-madrasa?) = Gdzie jest szkoła? W arabskim nie trzeba dodawać 'jest' — zdanie nominalne wystarczy. Inne przykłady: أين تسكن؟ (gdzie mieszkasz?), أين الحمام؟ (gdzie jest toaleta? — bardzo przydatne!). 'أين' to jedno z pierwszych słów do nauczenia się w podróży."
+      },
+      {
+        "id": "pa_bq4",
+        "question": "_____ تتكلم العربية؟ (Czy mówisz po arabsku?)",
+        "translation": "(Czy mówisz po arabsku?)",
+        "options": [
+          "هل",
+          "ما",
+          "أين",
+          "كيف"
+        ],
+        "correct": "هل",
+        "explanation": "Partykuła 'هل' (hal) = czy. 'هل تتكلم العربية؟' (hal tatakallamu l-ʿarabiyya?) = Czy mówisz po arabsku? 'هل' zamienia zdanie twierdzące na pytanie tak/nie. Zdanie twierdzące: 'أنت تتكلم العربية' (mówisz po arabsku). W mowie potocznej 'هل' często opuszcza się, a pytanie sygnalizuje intonacja — jak w polskim."
+      },
+      {
+        "id": "pa_bq5",
+        "question": "_____ جئت؟ (Kiedy przyszedłeś?)",
+        "translation": "(Kiedy przyszedłeś?)",
+        "options": [
+          "متى",
+          "أين",
+          "لماذا",
+          "كيف"
+        ],
+        "correct": "متى",
+        "explanation": "Partykuła 'متى' (matā) = kiedy. 'متى جئت؟' (matā ǧiʾta?) = Kiedy przyszedłeś? Inne przykłady: متى الامتحان؟ (kiedy egzamin?), متى تسافر؟ (kiedy podróżujesz?). W arabskim 'متى' może też wyrażać zaskoczenie: 'متى تعلمت العربية؟!' (kiedy nauczyłeś się arabskiego?! — z podziwem). Porządek: متى + czasownik + podmiot."
+      },
+      {
+        "id": "pa_bq6",
+        "question": "_____ أنت حزين؟ (Dlaczego jesteś smutny?)",
+        "translation": "(Dlaczego jesteś smutny?)",
+        "options": [
+          "لماذا",
+          "متى",
+          "كيف",
+          "هل"
+        ],
+        "correct": "لماذا",
+        "explanation": "Partykuła 'لماذا' (limāḏā) = dlaczego. 'لماذا أنت حزين؟' (limāḏā anta ḥazīn?) = Dlaczego jesteś smutny? Składa się z 'لِ' (dla) + 'ماذا' (co) = dosłownie: 'dla czego?'. Wariant krótszy: 'لِمَ' (lima). Porównanie: لماذا pyta o przyczynę, لِمَ jest bardziej formalne. W potocznym arabskim często słyszy się 'ليش' (lēš) — dialektalny odpowiednik."
+      },
+      {
+        "id": "pa_bq7",
+        "question": "_____ حالك؟ (Jak się masz?)",
+        "translation": "(Jak się masz?)",
+        "options": [
+          "كيف",
+          "ما",
+          "أين",
+          "هل"
+        ],
+        "correct": "كيف",
+        "explanation": "Partykuła 'كيف' (kayfa) = jak. 'كيف حالك؟' (kayfa ḥāluka?) = Jak się masz? (dosł. jak twój stan?). To jedno z najbardziej podstawowych powitań w arabskim. Odpowiedź: 'بخير، الحمد لله' (dobrze, chwała Bogu). Inne użycia: كيف تكتب هذا؟ (jak to napisać?), كيف الطقس؟ (jaka jest pogoda?)."
+      },
+      {
+        "id": "pa_bq8",
+        "question": "_____ عمرك؟ (Ile masz lat?)",
+        "translation": "(Ile masz lat?)",
+        "options": [
+          "كم",
+          "ما",
+          "أين",
+          "هل"
+        ],
+        "correct": "كم",
+        "explanation": "Partykuła 'كم' (kam) = ile. 'كم عمرك؟' (kam ʿumruka?) = Ile masz lat? (dosł. ile twojego wieku?). 'كم' pyta o liczby/ilości. Inne przykłady: كم الساعة؟ (która godzina?), كم تكلف؟ (ile kosztuje?), كم شخصًا؟ (ile osób?). Po 'كم' pytającym rzeczownik stoi w bierniku l. poj.: كم كتابًا؟ (ile książek?)."
+      },
+      {
+        "id": "pa_bq9",
+        "question": "_____ تفضّل، الشاي أم القهوة؟ (Co wolisz, herbatę czy kawę?)",
+        "translation": "(Co wolisz?)",
+        "options": [
+          "ماذا",
+          "هل",
+          "أين",
+          "لماذا"
+        ],
+        "correct": "ماذا",
+        "explanation": "Partykuła 'ماذا' (māḏā) = co (z czasownikiem). 'ماذا تفضّل؟' = Co wolisz? Różnica między 'ما' a 'ماذا': 'ما' + rzeczownik (ما اسمك), 'ماذا' + czasownik (ماذا تريد = czego chcesz). Spójnik 'أم' (am) = czy (w pytaniu alternatywnym): الشاي أم القهوة = herbata czy kawa? Uwaga: 'أم' ≠ 'أو' — 'أم' tylko w pytaniach."
+      },
+      {
+        "id": "pa_bq10",
+        "question": "_____ سيأتي، أحمد أم محمد؟ (Kto przyjdzie?)",
+        "translation": "(Kto przyjdzie, Ahmed czy Mohammed?)",
+        "options": [
+          "أيّهما",
+          "من",
+          "ماذا",
+          "هل"
+        ],
+        "correct": "أيّهما",
+        "explanation": "Partykuła 'أيّهما' (ayyuhumā) = który z nich dwóch. 'أيّهما سيأتي؟' = Który z nich przyjdzie? 'أيّ' (ayy) = który/jaki — jest jedyną partykułą pytającą, która się odmienia: أيّهم (z nich), أيّكم (z was), أيّ كتابٍ (która książka). W polskim: który/która/które — też odmienne. 'مَن' byłoby tu też poprawne, ale 'أيّهما' jest precyzyjniejsze."
+      },
+      {
+        "id": "pa_bq11",
+        "question": "_____ ذهبت إلى المدرسة؟ أمشيًا أم بالسيارة؟",
+        "translation": "(Jak dotarłeś do szkoły? Pieszo czy samochodem?)",
+        "options": [
+          "كيف",
+          "لماذا",
+          "متى",
+          "أين"
+        ],
+        "correct": "كيف",
+        "explanation": "Partykuła 'كيف' (kayfa) = jak (sposób). 'كيف ذهبت إلى المدرسة؟' = Jak dotarłeś do szkoły? Tu 'كيف' pyta o sposób (pieszo/samochodem), nie o stan (jak się masz). Odpowiedzi: 'مشيًا' (pieszo), 'بالسيارة' (samochodem), 'بالحافلة' (autobusem). Przyimek 'بِ' + środek transportu to standardowa konstrukcja."
+      },
+      {
+        "id": "pa_bq12",
+        "question": "Jak odróżnić pytanie tak/nie od pytania otwartego?",
+        "translation": "(هل vs. partykuły pytające)",
+        "options": [
+          "هل = tak/nie, inne = otwarte",
+          "Wszystkie to pytania otwarte",
+          "Tylko intonacja",
+          "هل = otwarte"
+        ],
+        "correct": "هل = tak/nie, inne = otwarte",
+        "explanation": "Partykuła 'هل' tworzy wyłącznie pytania tak/nie (zamknięte). Wszystkie inne (ما، مَن، أين، متى، كيف، لماذا، كم) tworzą pytania otwarte. W polskim: 'Czy mówisz..?' (zamknięte) vs. 'Gdzie mieszkasz?' (otwarte). Istnieje też 'أ' (hamza pytająca): 'أتكتب؟' = Czy piszesz? — bardziej literacka forma 'هل'. W mowie potocznej obie bywają pomijane."
+      },
+      {
+        "id": "pa_bq13",
+        "question": "من _____ هذا الكتاب؟ (Od kogo jest ta książka?)",
+        "translation": "(Od kogo jest ta książka?)",
+        "options": [
+          "عند",
+          "في",
+          "على",
+          "إلى"
+        ],
+        "correct": "عند",
+        "explanation": "Pytanie 'من عند مَن هذا الكتاب؟' lub krócej: 'ممن هذا الكتاب؟'. Ale tu chodzi o 'من عند' (min ʿinda) = od (osoby). Przyimek 'عند' (ʿinda) oznacza 'u/przy'. W połączeniu z 'من': 'من عند' = od kogoś. Przykład: 'هذا الكتاب من عند أحمد' = ta książka jest od Ahmeda. W polskim: 'od kogo?' — prosty dopełniacz."
+      },
+      {
+        "id": "pa_bq14",
+        "question": "_____ تسكن، في شقة أم في بيت؟",
+        "translation": "(Gdzie mieszkasz, w mieszkaniu czy w domu?)",
+        "options": [
+          "أين",
+          "كيف",
+          "هل",
+          "متى"
+        ],
+        "correct": "أين",
+        "explanation": "Partykuła 'أين' (ayna) = gdzie. 'أين تسكن؟' = Gdzie mieszkasz? Tu pytanie jest doprecyzowane alternatywą: 'في شقة' (w mieszkaniu) 'أم' (czy) 'في بيت' (w domu). Słownictwo: شقة (šaqqa) = mieszkanie, بيت (bayt) = dom, فيلا (fīllā) = willa, عمارة (ʿimāra) = budynek. Przyimek 'في' (fī) = w — najczęstszy przyimek miejsca."
+      },
+      {
+        "id": "pa_bq15",
+        "question": "Która partykuła pytająca pyta o ILOŚĆ?",
+        "translation": "(która partykuła = ile?)",
+        "options": [
+          "كم",
+          "ما",
+          "أين",
+          "كيف"
+        ],
+        "correct": "كم",
+        "explanation": "Partykuła 'كم' (kam) = ile/jak wiele. Pyta wyłącznie o ilość/liczbę. Po 'كم' pytającym (كم الاستفهامية) rzeczownik stoi w bierniku l. poj.: 'كم طالبًا في الفصل؟' (ilu studentów w klasie?). Uwaga: istnieje też 'كم' wykrzyknikowe (كم الخبرية): 'كم كتابٍ قرأتُ!' = ile książek przeczytałem! (wykrzyknienie). Tu rzeczownik w dopełniaczu."
+      }
+    ]
+  },
+  {
+    "key": "time_telling",
+    "name": "Określanie czasu",
+    "description": "كم الساعة؟",
+    "iconName": "clock",
+    "color": "#4ade80",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_tt1",
+        "question": "كم _____؟ (Która godzina?)",
+        "translation": "(Która godzina?)",
+        "options": [
+          "الساعة",
+          "الوقت",
+          "اليوم",
+          "الآن"
+        ],
+        "correct": "الساعة",
+        "explanation": "Pytanie 'كم الساعة؟' (kami s-sāʿa?) = Która godzina? (dosł. ile godzina?). 'ساعة' (sāʿa) = godzina/zegarek. Odpowiedź: 'الساعة الثالثة' = jest trzecia. Alternatywne pytanie: 'كم الوقت؟' (jaki czas?) — bardziej ogólne. W polskim pytamy 'która godzina?', w arabskim 'ile godzina?' — inna logika, ten sam cel."
+      },
+      {
+        "id": "pa_tt2",
+        "question": "الساعة _____ (Jest godzina trzecia)",
+        "translation": "(Jest godzina 3:00)",
+        "options": [
+          "الثالثة",
+          "ثلاثة",
+          "ثالث",
+          "الثلاث"
+        ],
+        "correct": "الثالثة",
+        "explanation": "Poprawnie: 'الساعة الثالثة' (as-sāʿatu ṯ-ṯāliṯa) = jest godzina trzecia. Przy podawaniu godzin używamy liczebników porządkowych r. żeńskiego (bo ساعة jest r. żeńskiego). Liczebnik ma rodzajnik 'ال'. Porównanie: ثلاثة (trzy — liczebnik główny), الثالثة (trzecia — porządkowy). W polskim też: 'jest trzecia', nie 'jest trzy'."
+      },
+      {
+        "id": "pa_tt3",
+        "question": "الساعة الخامسة _____ (5:30 — piąta i pół)",
+        "translation": "(Jest 5:30)",
+        "options": [
+          "والنصف",
+          "ونصف",
+          "والنص",
+          "نصفًا"
+        ],
+        "correct": "والنصف",
+        "explanation": "Poprawnie: 'الساعة الخامسة والنصف' (as-sāʿatu l-ḫāmisa wa-n-niṣf) = piąta trzydzieści. 'والنصف' = i pół. 'و' (wa) = i, 'النصف' (an-niṣf) = połowa. W mowie potocznej: 'الخامسة ونص' (bez ال). Inne ułamki: 'الربع' (kwadrans = ¼), 'الثلث' (trzecia część = ⅓). 'Pięć i pół' to w polskim identyczna logika."
+      },
+      {
+        "id": "pa_tt4",
+        "question": "الساعة السابعة _____ (6:45 = siódma bez kwadransa)",
+        "translation": "(Jest 6:45)",
+        "options": [
+          "إلا ربعًا",
+          "والربع",
+          "إلا نصفًا",
+          "والنصف"
+        ],
+        "correct": "إلا ربعًا",
+        "explanation": "Poprawnie: 'الساعة السابعة إلا ربعًا' = siódma bez kwadransa (= 6:45). 'إلا' (illā) = bez/oprócz, 'ربعًا' (rubʿan) = kwadrans (w bierniku). W arabskim, tak jak w polskim, 6:45 można powiedzieć 'siódma bez kwadransa' — następna godzina minus ¼. Inne: 'إلا عشر دقائق' (bez dziesięciu minut), 'إلا خمس دقائق' (bez pięciu minut)."
+      },
+      {
+        "id": "pa_tt5",
+        "question": "الساعة الثانية _____ (2:15 = druga i kwadrans)",
+        "translation": "(Jest 2:15)",
+        "options": [
+          "والربع",
+          "إلا ربعًا",
+          "والنصف",
+          "وربعًا"
+        ],
+        "correct": "والربع",
+        "explanation": "Poprawnie: 'الساعة الثانية والربع' (as-sāʿatu ṯ-ṯāniya wa-r-rubʿ) = druga piętnaście. 'والربع' = i kwadrans. 'الربع' (ar-rubʿ) = ćwierć/kwadrans. W polskim: 'piętnaście po drugiej' lub 'kwadrans po drugiej'. W arabskim zawsze: godzina + 'i' + ułamek. Nie mówi się *'kwadrans po drugiej' z przyimkiem 'po'."
+      },
+      {
+        "id": "pa_tt6",
+        "question": "Jak powiedzieć 'rano'?",
+        "translation": "(rano)",
+        "options": [
+          "صباحًا",
+          "مساءً",
+          "ليلًا",
+          "ظهرًا"
+        ],
+        "correct": "صباحًا",
+        "explanation": "Wyraz 'صباحًا' (ṣabāḥan) = rano. Inne pory dnia: 'ظهرًا' (ẓuhran) = w południe, 'مساءً' (masāʾan) = wieczorem, 'ليلًا' (laylan) = nocą. Poranki: صباح الخير (dzień dobry = poranek dobra), مساء الخير (dobry wieczór). Pora dnia dodawana po godzinie: 'الساعة السابعة صباحًا' = siódma rano. Biernik (-ًا) oznacza tu okolicznik czasu."
+      },
+      {
+        "id": "pa_tt7",
+        "question": "الساعة _____ ظهرًا (Jest 12:00 w południe)",
+        "translation": "(Jest 12:00 w południe)",
+        "options": [
+          "الثانية عشرة",
+          "اثنا عشر",
+          "عشرة",
+          "الثاني عشر"
+        ],
+        "correct": "الثانية عشرة",
+        "explanation": "Poprawnie: 'الساعة الثانية عشرة ظهرًا' = dwunasta w południe. Liczebnik porządkowy 12 r.ż.: 'الثانية عشرة'. Godziny 1-10 to proste liczebniki porządkowe, 11-12 to złożone. 'الحادية عشرة' = jedenasta, 'الثانية عشرة' = dwunasta. Po 12 wracamy do 'الواحدة' (pierwsza). 'ظهرًا' = w południe, od 'ظهر' (ẓuhr) — też nazwa modlitwy południowej."
+      },
+      {
+        "id": "pa_tt8",
+        "question": "الساعة التاسعة _____ عشر دقائق (9:10)",
+        "translation": "(Jest 9:10)",
+        "options": [
+          "و",
+          "إلا",
+          "في",
+          "من"
+        ],
+        "correct": "و",
+        "explanation": "Poprawnie: 'الساعة التاسعة وعشر دقائق' = dziewiąta i dziesięć minut. Spójnik 'و' (wa) = i — łączy godzinę z minutami. 'دقائق' (daqāʾiq) = minuty (l. mn. łamana od دقيقة). Schemat: godzina + و + liczba minut + دقائق/دقيقة. Dla 1 minuty: 'دقيقة واحدة', dla 2: 'دقيقتين', dla 3-10: 'دقائق'."
+      },
+      {
+        "id": "pa_tt9",
+        "question": "_____ الثالثة (przed trzecią)",
+        "translation": "(przed trzecią)",
+        "options": [
+          "قبل",
+          "بعد",
+          "عند",
+          "في"
+        ],
+        "correct": "قبل",
+        "explanation": "Przyimek 'قبل' (qabla) = przed. 'قبل الثالثة' = przed trzecią. Przeciwieństwo: 'بعد' (baʿda) = po. Inne wyrażenia czasowe: 'عند الساعة' (o godzinie), 'حوالي الساعة' (około godziny), 'من الساعة... إلى الساعة' (od... do godziny). W polskim: 'przed trzecią', 'po trzeciej' — identyczna logika z przyimkami."
+      },
+      {
+        "id": "pa_tt10",
+        "question": "الساعة _____ (Jest godzina pierwsza)",
+        "translation": "(Jest 1:00)",
+        "options": [
+          "الواحدة",
+          "واحد",
+          "الأولى",
+          "أول"
+        ],
+        "correct": "الواحدة",
+        "explanation": "Poprawnie: 'الساعة الواحدة' (as-sāʿatu l-wāḥida) = godzina pierwsza. Uwaga: dla godziny 1:00 używamy 'الواحدة' (wāḥida), NIE 'الأولى' (ūlā). 'الأولى' to 'pierwsza' w sensie porządkowym (pierwsza lekcja), ale przy zegarze tradycyjnie mówi się 'الواحدة'. Dla 2:00 zaś: 'الثانية' (aṯ-ṯāniya). Od 3 wzwyż — regularne porządkowe."
+      },
+      {
+        "id": "pa_tt11",
+        "question": "في أي _____ يبدأ الدرس؟ (O której godzinie zaczyna się lekcja?)",
+        "translation": "(O której godzinie zaczyna się lekcja?)",
+        "options": [
+          "ساعة",
+          "يوم",
+          "وقت",
+          "مكان"
+        ],
+        "correct": "ساعة",
+        "explanation": "Pytanie 'في أي ساعة...؟' (fī ayyi sāʿatin?) = o której godzinie? 'في' = w/o, 'أي' = jaki/która, 'ساعة' = godzina. Alternatywne pytanie: 'متى يبدأ الدرس؟' (kiedy zaczyna się lekcja?) — bardziej ogólne. Odpowiedź: 'في الساعة الثامنة' = o ósmej. Przyimek 'في' tu oznacza 'o' (godzinie) — w polskim 'o ósmej'."
+      },
+      {
+        "id": "pa_tt12",
+        "question": "الساعة الرابعة _____ (4:00 po południu)",
+        "translation": "(Jest 4:00 po południu)",
+        "options": [
+          "مساءً",
+          "صباحًا",
+          "ليلًا",
+          "ظهرًا"
+        ],
+        "correct": "مساءً",
+        "explanation": "Poprawnie: 'الساعة الرابعة مساءً' = czwarta po południu. 'مساءً' (masāʾan) = wieczorem/po południu. W arabskim nie ma systemu AM/PM — zamiast tego dodaje się porę dnia. Podział: صباحًا (rano, ~5-11), ظهرًا (południe, ~12-14), مساءً (po południu/wieczorem, ~15-20), ليلًا (nocą, ~21-4). W polskim: 'po południu', 'wieczorem'."
+      },
+      {
+        "id": "pa_tt13",
+        "question": "الدرس _____ ساعة واحدة (Lekcja trwa jedną godzinę)",
+        "translation": "(Lekcja trwa jedną godzinę)",
+        "options": [
+          "مدته",
+          "وقته",
+          "ساعته",
+          "يومه"
+        ],
+        "correct": "مدته",
+        "explanation": "Poprawnie: 'الدرس مدته ساعة واحدة' = lekcja trwa jedną godzinę (dosł. lekcja — jej czas trwania — jedna godzina). 'مدة' (mudda) = czas trwania, okres. Z zaimkiem: 'مدته' (muddatuhu) = jego czas trwania. Alternatywne sformułowanie: 'الدرس يستغرق ساعة' (lekcja zajmuje godzinę) — z czasownikiem 'يستغرق' (yastaġriqu). Obie formy poprawne."
+      },
+      {
+        "id": "pa_tt14",
+        "question": "Jak powiedzieć 'za pięć minut'?",
+        "translation": "(za pięć minut)",
+        "options": [
+          "بعد خمس دقائق",
+          "قبل خمس دقائق",
+          "في خمس دقائق",
+          "منذ خمس دقائق"
+        ],
+        "correct": "بعد خمس دقائق",
+        "explanation": "Poprawnie: 'بعد خمس دقائق' (baʿda ḫamsi daqāʾiqa) = za pięć minut (dosł. po pięciu minutach). 'بعد' = po/za, 'خمس' = pięć, 'دقائق' = minuty. Przeciwieństwo: 'قبل خمس دقائق' = pięć minut temu (dosł. przed pięcioma minutami). 'منذ خمس دقائق' = od pięciu minut (trwa od). W polskim: 'za' (w przyszłość), 'temu' (w przeszłość)."
+      },
+      {
+        "id": "pa_tt15",
+        "question": "Która forma godziny jest POPRAWNA?",
+        "translation": "(poprawna forma godziny)",
+        "options": [
+          "الساعة السادسة والنصف",
+          "الساعة ستة ونصف",
+          "ساعة السادسة نصف",
+          "الساعة سادسة والنصف"
+        ],
+        "correct": "الساعة السادسة والنصف",
+        "explanation": "Poprawna forma: 'الساعة السادسة والنصف' = szósta trzydzieści. Wymaga: (1) 'الساعة' z ال, (2) liczebnik porządkowy r. żeńskiego z ال (السادسة), (3) 'و' przed ułamkiem, (4) 'النصف' z ال. Błędy w pozostałych: 'ستة' to liczebnik główny (nie porządkowy), brak ال przy 'سادسة', brak 'و'. W formalnym arabskim te szczegóły są ważne."
+      }
+    ]
+  },
+  {
+    "key": "colors_shapes",
+    "name": "Kolory i kształty",
+    "description": "الألوان والأشكال",
+    "iconName": "paintpalette",
+    "color": "#c084fc",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_cs1",
+        "question": "السماء _____ (Niebo jest niebieskie)",
+        "translation": "(Niebo jest niebieskie)",
+        "options": [
+          "زرقاء",
+          "أزرق",
+          "زُرق",
+          "الأزرق"
+        ],
+        "correct": "زرقاء",
+        "explanation": "Poprawnie: 'السماء زرقاء' = Niebo jest niebieskie. 'السماء' jest r. żeńskiego, więc przymiotnik musi być w formie żeńskiej: 'زرقاء' (zarqāʾ). Forma męska: 'أزرق' (azraq). Kolory w arabskim mają specjalny wzorzec: أفعل (afʿal) r.m. / فعلاء (faʿlāʾ) r.ż. To wzorzec 'elativny' — ten sam co dla stopnia wyższego przymiotnika. Np. أحمر/حمراء (czerwony/a)."
+      },
+      {
+        "id": "pa_cs2",
+        "question": "الكتاب _____ (Książka jest czerwona)",
+        "translation": "(Książka jest czerwona)",
+        "options": [
+          "أحمر",
+          "حمراء",
+          "حُمر",
+          "الحمراء"
+        ],
+        "correct": "أحمر",
+        "explanation": "Poprawnie: 'الكتاب أحمر' = Książka jest czerwona. 'كتاب' jest r. MĘSKIEGO w arabskim (mimo że w polskim 'książka' jest żeńska!). Forma męska: 'أحمر' (aḥmar). Gdyby był r. żeński: 'حمراء' (ḥamrāʾ). To ważna pułapka: rodzaj gramatyczny NIE zawsze odpowiada polskiemu. Trzeba uczyć się rodzaju każdego rzeczownika osobno."
+      },
+      {
+        "id": "pa_cs3",
+        "question": "الوردة _____ (Róża jest biała)",
+        "translation": "(Róża jest biała)",
+        "options": [
+          "بيضاء",
+          "أبيض",
+          "بِيض",
+          "البيضاء"
+        ],
+        "correct": "بيضاء",
+        "explanation": "Poprawnie: 'الوردة بيضاء' = Róża jest biała. 'الوردة' (r.ż.) → 'بيضاء' (bayḍāʾ). Forma męska: 'أبيض' (abyaḍ). Wzorzec kolorów: أفعل/فعلاء to jedyny wzorzec przymiotnikowy, który NIE tworzy formy żeńskiej przez dodanie tāʾ marbūṭa (ة). Zamiast *'أبيضة' mamy 'بيضاء'. To wyjątek od zwykłej reguły tworzenia r. żeńskiego."
+      },
+      {
+        "id": "pa_cs4",
+        "question": "Jaki jest wzorzec kolorów w r. męskim?",
+        "translation": "(wzorzec kolorów r.m.)",
+        "options": [
+          "أفعل (afʿal)",
+          "فعيل (faʿīl)",
+          "فاعل (fāʿil)",
+          "فعّال (faʿʿāl)"
+        ],
+        "correct": "أفعل (afʿal)",
+        "explanation": "Wzorzec kolorów r.m.: 'أفعل' (afʿal) — z hamzą na początku. Przykłady: أحمر (czerwony), أزرق (niebieski), أصفر (żółty), أخضر (zielony), أسود (czarny), أبيض (biały). Forma żeńska: 'فعلاء' (faʿlāʾ): حمراء, زرقاء, صفراء, خضراء, سوداء, بيضاء. L. mn.: 'فُعل' (fuʿl): حُمر, زُرق, صُفر. Trzeba znać wszystkie 3 formy."
+      },
+      {
+        "id": "pa_cs5",
+        "question": "القميص _____ (Koszula jest czarna)",
+        "translation": "(Koszula jest czarna)",
+        "options": [
+          "أسود",
+          "سوداء",
+          "سُود",
+          "الأسود"
+        ],
+        "correct": "أسود",
+        "explanation": "Poprawnie: 'القميص أسود' = Koszula jest czarna. 'القميص' (al-qamīṣ) = koszula — r. MĘSKI w arabskim. Forma męska: 'أسود' (aswad). Forma żeńska: 'سوداء' (sawdāʾ). Uwaga na rdzeń: س-و-د. Litera 'و' (waw) jest 'słaba' — w różnych formach zachowuje się nieregularnie. Kolory z literami słabymi (و, ي) mają dodatkowe komplikacje odmianowe."
+      },
+      {
+        "id": "pa_cs6",
+        "question": "شكل _____ (kształt trójkąta = trójkątny)",
+        "translation": "(kształt trójkątny)",
+        "options": [
+          "مثلث",
+          "مربع",
+          "دائري",
+          "مستطيل"
+        ],
+        "correct": "مثلث",
+        "explanation": "Wyraz 'مثلث' (muṯallaṯ) = trójkąt/trójkątny. Od rdzenia ث-ل-ث (trzy). Dosłownie: 'utrójniony'. Inne kształty: 'مربع' (murabbaʿ) = kwadrat (od أربع = cztery), 'مستطيل' (mustaṭīl) = prostokąt (od طويل = długi), 'دائرة' (dāʾira) = koło (od دار = kręcić się). W arabskim nazwy kształtów często wywodzą się z liczebników lub przymiotników."
+      },
+      {
+        "id": "pa_cs7",
+        "question": "الشجرة _____ (Drzewo jest zielone)",
+        "translation": "(Drzewo jest zielone)",
+        "options": [
+          "خضراء",
+          "أخضر",
+          "خُضر",
+          "الأخضر"
+        ],
+        "correct": "خضراء",
+        "explanation": "Poprawnie: 'الشجرة خضراء' = Drzewo jest zielone. 'الشجرة' (aš-šaǧara) = drzewo — r. ŻEŃSKI (ma tāʾ marbūṭa). Forma żeńska koloru: 'خضراء' (ḫaḍrāʾ). Forma męska: 'أخضر' (aḫḍar). Rdzeń: خ-ض-ر. Słowo 'خضار' (ḫuḍār) = warzywa — też od tego rdzenia. 'الثورة الخضراء' (zielona rewolucja) — kolory często używane metaforycznie."
+      },
+      {
+        "id": "pa_cs8",
+        "question": "الموز _____ (Banan jest żółty)",
+        "translation": "(Banan jest żółty)",
+        "options": [
+          "أصفر",
+          "صفراء",
+          "صُفر",
+          "الأصفر"
+        ],
+        "correct": "أصفر",
+        "explanation": "Poprawnie: 'الموز أصفر' = Banan jest żółty. 'الموز' (al-mawz) = banan — r. męski, rzeczownik zbiorowy. Forma męska: 'أصفر' (aṣfar). Rdzeń: ص-ف-ر. Ciekawe: 'صفر' (ṣifr) = zero (od tego samego rdzenia!) — etymologicznie 'pusty/żółty'. Angielski 'zero' i 'cipher' pochodzą z arabskiego 'صفر' — wpływ arabskiej matematyki na świat."
+      },
+      {
+        "id": "pa_cs9",
+        "question": "Jak powiedzieć 'koło/okrąg'?",
+        "translation": "(koło)",
+        "options": [
+          "دائرة",
+          "مثلث",
+          "مربع",
+          "خط"
+        ],
+        "correct": "دائرة",
+        "explanation": "Wyraz 'دائرة' (dāʾira) = koło/okrąg. Od rdzenia د-و-ر (kręcić się, obracać). Powiązane słowa: 'دور' (dawr) = rola/kolej, 'دوران' (dawrān) = obrót, 'مدير' (mudīr) = dyrektor (ten, który zarządza = 'obraca' sprawami). Przymiotnik: 'دائري' (dāʾirī) = okrągły/kolisty. Kształt: شكل دائري (kształt kolisty). L. mn.: 'دوائر' (dawāʾir)."
+      },
+      {
+        "id": "pa_cs10",
+        "question": "الحائط _____ (Ściana jest brązowa)",
+        "translation": "(Ściana jest brązowa)",
+        "options": [
+          "بني",
+          "بنية",
+          "أبيض",
+          "بنّ"
+        ],
+        "correct": "بني",
+        "explanation": "Poprawnie: 'الحائط بني' = Ściana jest brązowa. 'الحائط' (al-ḥāʾiṭ) = ściana — r. MĘSKI. 'بني' (bunnī) = brązowy — od 'بُن' (bunn) = kawa (ziarno). UWAGA: 'بني' to WYJĄTEK od wzorca أفعل — nie mówi się *'أبنى'. Niektóre kolory nowsze (pomarańczowy=برتقالي, różowy=وردي) też nie podlegają wzorcowi أفعل, bo są przymiotnikami nisba od rzeczowników."
+      },
+      {
+        "id": "pa_cs11",
+        "question": "Jak brzmi l. mn. koloru 'أحمر'?",
+        "translation": "(l. mn. od 'czerwony')",
+        "options": [
+          "حُمر",
+          "أحمرون",
+          "حمراوات",
+          "أحامر"
+        ],
+        "correct": "حُمر",
+        "explanation": "L. mn. kolorów tworzy się według wzorca 'فُعل' (fuʿl): أحمر → حُمر (ḥumr). Inne: أزرق → زُرق, أصفر → صُفر, أسود → سُود, أبيض → بِيض (uwaga: بِيض nie فُعل!). Kolory w l. mn. stosuje się z rzeczownikami nierozumnymi w l. mn.: 'سيارات حُمر' (czerwone samochody). Z rozumnymi: 'رجال حُمر' (rzadko, bo kolory skóry wyrażamy inaczej)."
+      },
+      {
+        "id": "pa_cs12",
+        "question": "_____ مستطيل (kształt prostokątny)",
+        "translation": "(kształt prostokątny)",
+        "options": [
+          "شكل",
+          "لون",
+          "حجم",
+          "وزن"
+        ],
+        "correct": "شكل",
+        "explanation": "Poprawnie: 'شكل مستطيل' (šakl mustaṭīl) = kształt prostokątny. 'شكل' (šakl) = kształt/forma, 'مستطيل' (mustaṭīl) = prostokątny/prostokąt (od طول = długość). Inne wyrazy: 'لون' (lawn) = kolor, 'حجم' (ḥaǧm) = rozmiar, 'وزن' (wazn) = waga. 'شكل' ma też znaczenie 'problem': 'فيه شكل' (jest problem) — w dialektach."
+      },
+      {
+        "id": "pa_cs13",
+        "question": "السيارة _____ (Samochód jest szary)",
+        "translation": "(Samochód jest szary)",
+        "options": [
+          "رمادية",
+          "رمادي",
+          "أرمد",
+          "رماد"
+        ],
+        "correct": "رمادية",
+        "explanation": "Poprawnie: 'السيارة رمادية' = Samochód jest szary. 'السيارة' (as-sayyāra) = samochód — r. ŻEŃSKI. 'رمادي' (ramādī) = szary — przymiotnik nisba od 'رماد' (ramād) = popiół. Forma żeńska: 'رمادية' (ramādiyya) — z tāʾ marbūṭa. UWAGA: 'رمادي' to kolejny kolor, który NIE podlega wzorcowi أفعل, bo jest przymiotnikiem nisba (z końcówką -ī/-iyya)."
+      },
+      {
+        "id": "pa_cs14",
+        "question": "_____ خمسة أضلاع (Kształt o pięciu bokach = pięciokąt)",
+        "translation": "(pięciokąt)",
+        "options": [
+          "مخمّس",
+          "مثلث",
+          "مسدّس",
+          "مربع"
+        ],
+        "correct": "مخمّس",
+        "explanation": "Wyraz 'مخمّس' (muḫammas) = pięciokąt — od خمسة (pięć). Wzorzec tworzenia: م + rdzeń liczebnika + taszdid na 2. literze. Przykłady: مثلث (trójkąt, od ثلاثة), مربع (czworokąt, od أربعة), مخمّس (pięciokąt, od خمسة), مسدّس (sześciokąt, od ستة). 'أضلاع' (aḍlāʿ) = boki/żebra (l. mn. od ضلع). W polskim: trójkąt, czworokąt, pięciokąt — ta sama logika (liczba + kąt)."
+      },
+      {
+        "id": "pa_cs15",
+        "question": "Który kolor NIE podlega wzorcowi أفعل/فعلاء?",
+        "translation": "(który kolor jest wyjątkiem?)",
+        "options": [
+          "بني (brązowy)",
+          "أحمر (czerwony)",
+          "أزرق (niebieski)",
+          "أصفر (żółty)"
+        ],
+        "correct": "بني (brązowy)",
+        "explanation": "Kolor 'بني' (brązowy) NIE podlega wzorcowi أفعل/فعلاء — to przymiotnik nisba od 'بُن' (kawa). Forma żeńska: 'بنية' (z ة), nie *'بنّاء'. Inne wyjątki: برتقالي (pomarańczowy, od برتقال = pomarańcza), وردي (różowy, od ورد = róża), بنفسجي (fioletowy, od بنفسج = fiołek). Reguła: kolory od wzorca أفعل to kolory 'podstawowe', pozostałe — derywaty od rzeczowników."
+      }
+    ]
   }
 ]

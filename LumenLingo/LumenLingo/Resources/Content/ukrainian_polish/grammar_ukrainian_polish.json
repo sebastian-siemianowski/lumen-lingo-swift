@@ -18757,5 +18757,1015 @@
         "explanation": "'Są jasne i jednoznaczne' (є ясні й однозначні) — множина, бо 'wnioski' (висновки) — множина від 'wniosek'. 'Z badań' (з досліджень) — родовий множини: 'badanie' → 'badań'. 'Jednoznaczne' (однозначні) — 'jedno-' + 'znaczny' (значний). В укр. 'висновки ясні' — без дієслова-зв'язки."
       }
     ]
+  },
+  {
+    "key": "business_economics",
+    "name": "Бізнес та економіка",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "up_biz1",
+        "question": "Firma _____ nowych pracowników na stanowisko menedżera.",
+        "translation": "(Фірма шукає нових працівників на посаду менеджера.)",
+        "options": [
+          "poszukuje",
+          "szuka",
+          "poszukiwa",
+          "szukuje"
+        ],
+        "correct": "poszukuje",
+        "explanation": "'Poszukiwać' (розшукувати, шукати — формальніше) + родовий: 'nowych pracowników'. 'Poszukuje' (3 ос. одн.) — офіційний стиль оголошень. 'Szukać' — розмовне. 'Stanowisko' (посада, становище) → 'na stanowisko' (знахідний). В укр. 'шукає' — нейтральне, без стилістичного розрізнення."
+      },
+      {
+        "id": "up_biz2",
+        "question": "Podpisaliśmy _____ z zagranicznym partnerem.",
+        "translation": "(Ми підписали контракт з іноземним партнером.)",
+        "options": [
+          "umowę",
+          "umowa",
+          "umowy",
+          "umową"
+        ],
+        "correct": "umowę",
+        "explanation": "'Podpisać umowę' (підписати угоду/контракт) — знахідний: 'umowa' → 'umowę'. 'Z zagranicznym partnerem' — орудний: 'zagraniczny' → 'zagranicznym', 'partner' → 'partnerem'. В українській 'з іноземним партнером' — також орудний. 'Umowa' (угода, договір) — від 'umówić się'."
+      },
+      {
+        "id": "up_biz3",
+        "question": "Kurs _____ wzrósł o pięć procent.",
+        "translation": "(Курс долара зріс на п'ять відсотків.)",
+        "options": [
+          "dolara",
+          "dolar",
+          "dolarze",
+          "dolarem"
+        ],
+        "correct": "dolara",
+        "explanation": "'Kurs dolara' (курс долара) — родовий після 'kurs': 'dolar' → 'dolara'. 'Wzrosnąć' (зрости) — доконаний, 'wzrósł' (чол. мин. час). 'O pięć procent' (на п'ять відсотків) — 'o' + знахідний для зміни. В укр. 'на п'ять відсотків' — аналогічна конструкція з 'на'."
+      },
+      {
+        "id": "up_biz4",
+        "question": "Trzeba _____ budżet na przyszły kwartał.",
+        "translation": "(Треба затвердити бюджет на наступний квартал.)",
+        "options": [
+          "zatwierdzić",
+          "zatwierdzać",
+          "twierdzić",
+          "zatwierdzenie"
+        ],
+        "correct": "zatwierdzić",
+        "explanation": "'Zatwierdzić' (затвердити) — доконаний вид, одноразова формальна дія. 'Budżet' (бюджет) — запозичення. 'Na przyszły kwartał' (на наступний квартал) — знахідний: 'przyszły' (наступний, майбутній). 'Kwartał' (квартал) — спільне запозичення з латини. В укр. 'затвердити' — той самий корінь."
+      },
+      {
+        "id": "up_biz5",
+        "question": "Zyski firmy _____ w porównaniu z ubiegłym rokiem.",
+        "translation": "(Прибутки фірми зросли порівняно з минулим роком.)",
+        "options": [
+          "wzrosły",
+          "wzrósł",
+          "wzrosła",
+          "wzrastały"
+        ],
+        "correct": "wzrosły",
+        "explanation": "'Wzrosły' — мин. час, множина невіроособова (бо 'zyski' — прибутки, неживі). 'W porównaniu z' (порівняно з) + орудний: 'ubiegłym rokiem'. 'Ubiegły' (минулий) — формальний синонім 'zeszły/ostatni'. В укр. 'порівняно з минулим роком' — ідентична конструкція."
+      },
+      {
+        "id": "up_biz6",
+        "question": "Inwestycja _____ się w ciągu dwóch lat.",
+        "translation": "(Інвестиція окупиться протягом двох років.)",
+        "options": [
+          "zwróci",
+          "zwraca",
+          "zwróciła",
+          "zwracała"
+        ],
+        "correct": "zwróci",
+        "explanation": "'Zwrócić się' (окупитися) — доконаний вид, майбутній: 'zwróci się'. 'W ciągu' (протягом) + родовий: 'dwóch lat' (двох років). 'Inwestycja' (інвестиція) — жін. рід. В українській 'окупитися' — інше слово, але конструкція 'протягом двох років' — ідентична."
+      },
+      {
+        "id": "up_biz7",
+        "question": "Spotkanie zarządu _____ się na piątek.",
+        "translation": "(Засідання правління перенесли на п'ятницю.)",
+        "options": [
+          "przesunęło",
+          "przesunął",
+          "przesunęła",
+          "przesunęli"
+        ],
+        "correct": "przesunęło",
+        "explanation": "'Przesunąć się' (перенестися) — 'przesunęło się' — середній рід мин. часу, бо 'spotkanie' (засідання) — сер. рід. 'Zarząd' (правління) → 'zarządu' (родовий). 'Na piątek' (на п'ятницю) — знахідний. В укр. 'засідання' — також середній рід, 'правління' — також."
+      },
+      {
+        "id": "up_biz8",
+        "question": "Nasza firma specjalizuje się _____ eksporcie żywności.",
+        "translation": "(Наша фірма спеціалізується на експорті продуктів.)",
+        "options": [
+          "w",
+          "na",
+          "z",
+          "do"
+        ],
+        "correct": "w",
+        "explanation": "'Specjalizować się w' (спеціалізуватися в/на) + місцевий: 'w eksporcie'. 'Żywność' (продовольство) → 'żywności' (родовий). В українській 'спеціалізуватися на' — прийменник 'на', а в польській — 'w' (в). Різні прийменники при однаковій рекції (місцевий)."
+      },
+      {
+        "id": "up_biz9",
+        "question": "Prezes złożył _____ z funkcji.",
+        "translation": "(Президент компанії подав у відставку.)",
+        "options": [
+          "rezygnację",
+          "rezygnacja",
+          "rezygnacji",
+          "rezygnacją"
+        ],
+        "correct": "rezygnację",
+        "explanation": "'Złożyć rezygnację' (подати відставку) — знахідний: 'rezygnacja' → 'rezygnację'. 'Z funkcji' (з посади) — родовий: 'funkcja' → 'funkcji'. 'Prezes' (президент компанії, голова). В укр. 'подати у відставку' — прийменникова конструкція, а в польськ. 'złożyć rezygnację' — дієслівна."
+      },
+      {
+        "id": "up_biz10",
+        "question": "Negocjacje _____ trzy godziny.",
+        "translation": "(Переговори тривали три години.)",
+        "options": [
+          "trwały",
+          "trwał",
+          "trwała",
+          "trwali"
+        ],
+        "correct": "trwały",
+        "explanation": "'Trwały' — мин. час, множина невіроособова (бо 'negocjacje' — неживі). 'Trzy godziny' — знахідний множини (тривалість). 'Negocjacje' (переговори) — тільки множина, як і в українській 'переговори'. Форма 'trwały' (не 'trwali') — для невіроособових підметів."
+      },
+      {
+        "id": "up_biz11",
+        "question": "Klient _____ reklamację na wadliwy produkt.",
+        "translation": "(Клієнт подав рекламацію на бракований продукт.)",
+        "options": [
+          "złożył",
+          "złożyła",
+          "składał",
+          "złożony"
+        ],
+        "correct": "złożył",
+        "explanation": "'Złożyć reklamację' (подати рекламацію) — стійкий юридично-комерційний зворот. 'Złożył' (чол. мин. час, док.). 'Wadliwy' (бракований, дефектний) — від 'wada' (вада, дефект). В укр. 'подати рекламацію' або 'подати скаргу'. 'Na wadliwy produkt' — 'na' + знахідний."
+      },
+      {
+        "id": "up_biz12",
+        "question": "Bezrobocie w Polsce _____ do pięciu procent.",
+        "translation": "(Безробіття в Польщі знизилося до п'яти відсотків.)",
+        "options": [
+          "spadło",
+          "spadł",
+          "spadła",
+          "spadli"
+        ],
+        "correct": "spadło",
+        "explanation": "'Spadło' — середній рід мин. часу, бо 'bezrobocie' (безробіття) — сер. рід. 'Spaść' (впасти, знизитися) — доконаний. 'Do pięciu procent' (до п'яти відсотків) — родовий: 'pięć' → 'pięciu'. В укр. 'безробіття' — також середній рід, конструкція ідентична."
+      },
+      {
+        "id": "up_biz13",
+        "question": "Musimy _____ koszty produkcji o dwadzieścia procent.",
+        "translation": "(Ми мусимо знизити витрати на виробництво на двадцять відсотків.)",
+        "options": [
+          "obniżyć",
+          "obniżać",
+          "niżyć",
+          "zniżyć"
+        ],
+        "correct": "obniżyć",
+        "explanation": "'Obniżyć' (знизити) — доконаний вид після 'musimy' (мусимо). 'Koszty produkcji' (витрати виробництва) — 'koszty' (знахідн. мн.) + 'produkcji' (родовий). 'O dwadzieścia procent' (на двадцять відсотків). В укр. 'знизити витрати' — спільний корінь 'низ/niż'."
+      },
+      {
+        "id": "up_biz14",
+        "question": "Przychody firmy _____ dwanaście milionów złotych.",
+        "translation": "(Доходи фірми становлять дванадцять мільйонів злотих.)",
+        "options": [
+          "wynoszą",
+          "wynosi",
+          "wynosiły",
+          "wynosić"
+        ],
+        "correct": "wynoszą",
+        "explanation": "'Wynosić' (становити, складати) — 'wynoszą' (3 ос. множ., теперішній). 'Przychody' (доходи) — множина. 'Dwanaście milionów złotych' — числівник + родовий мн. 'Złoty' (злотий) → 'złotych' (родовий мн.). В укр. 'становлять' — аналогічне дієслово."
+      },
+      {
+        "id": "up_biz15",
+        "question": "Termin _____ ofert upływa w piątek.",
+        "translation": "(Термін подання пропозицій спливає в п'ятницю.)",
+        "options": [
+          "składania",
+          "składanie",
+          "złożenia",
+          "składać"
+        ],
+        "correct": "składania",
+        "explanation": "'Termin składania' (термін подання) — родовий від дієслівного іменника 'składanie' (подання). 'Oferta' (пропозиція) → 'ofert' (родовий мн.). 'Upływać' (спливати) — 'upływa' (3 ос. одн.). 'W piątek' (в п'ятницю) — знахідний. В укр. 'термін подання' — аналогічна конструкція."
+      }
+    ]
+  },
+  {
+    "key": "crime_justice",
+    "name": "Злочинність та правосуддя",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "up_crm1",
+        "question": "Policja _____ podejrzanego wczoraj wieczorem.",
+        "translation": "(Поліція затримала підозрюваного вчора ввечері.)",
+        "options": [
+          "zatrzymała",
+          "zatrzymali",
+          "zatrzymał",
+          "zatrzymano"
+        ],
+        "correct": "zatrzymała",
+        "explanation": "'Policja' (поліція) — жіночий рід однина → 'zatrzymała' (жін. мин. час). 'Zatrzymać' (затримати) + знахідний: 'podejrzany' → 'podejrzanego' (живий чол. рід). В українській 'поліція затримала' — теж жін. рід. 'Wczoraj wieczorem' (вчора ввечері) — орудний часу."
+      },
+      {
+        "id": "up_crm2",
+        "question": "Sąd _____ oskarżonego na karę więzienia.",
+        "translation": "(Суд засудив обвинуваченого до покарання у вигляді ув'язнення.)",
+        "options": [
+          "skazał",
+          "skazała",
+          "skazali",
+          "skazano"
+        ],
+        "correct": "skazał",
+        "explanation": "'Skazać na' (засудити до) + знахідний: 'na karę więzienia'. 'Sąd' (суд) — чол. рід → 'skazał'. 'Oskarżony' (обвинувачений) → 'oskarżonego' (знахідний живий). 'Więzienie' (в'язниця, ув'язнення). В укр. 'засудити до' + родовий, а в польськ. 'skazać na' + знахідний."
+      },
+      {
+        "id": "up_crm3",
+        "question": "Adwokat _____ swojego klienta przed sądem.",
+        "translation": "(Адвокат захищав свого клієнта перед судом.)",
+        "options": [
+          "bronił",
+          "broniła",
+          "bronili",
+          "broniony"
+        ],
+        "correct": "bronił",
+        "explanation": "'Bronić' (захищати, боронити) + родовий: 'klienta' (родовий = знахідний живий). 'Przed sądem' (перед судом) — орудний: 'sąd' → 'sądem'. 'Adwokat' — чол. рід → 'bronił'. В укр. 'боронити/захищати' — спільний корінь. 'Swój klient' → 'swojego klienta'."
+      },
+      {
+        "id": "up_crm4",
+        "question": "Świadek _____ zeznania pod przysięgą.",
+        "translation": "(Свідок дав покази під присягою.)",
+        "options": [
+          "złożył",
+          "składał",
+          "złożyła",
+          "złożone"
+        ],
+        "correct": "złożył",
+        "explanation": "'Złożyć zeznania' (дати покази) — стійкий юридичний зворот. 'Pod przysięgą' (під присягою) — орудний: 'przysięga' → 'przysięgą'. 'Świadek' (свідок) — чол. рід → 'złożył'. В укр. 'дати покази' — інше дієслово ('дати' vs 'złożyć' = 'скласти')."
+      },
+      {
+        "id": "up_crm5",
+        "question": "Wyrok _____ jeszcze nieprawomocny.",
+        "translation": "(Вирок ще не набрав законної сили.)",
+        "options": [
+          "jest",
+          "był",
+          "będzie",
+          "stał"
+        ],
+        "correct": "jest",
+        "explanation": "'Wyrok jest nieprawomocny' (вирок не набрав законної сили) — 'nieprawomocny' (такий, що не набрав законної сили) — юридичний термін. 'Jeszcze' (ще) — прислівник часу. В укр. 'непправомірний' — хибний друг; 'nieprawomocny' = 'не набрав чинності', а не 'неправомірний'."
+      },
+      {
+        "id": "up_crm6",
+        "question": "Prokuratura wszczęła _____ w tej sprawie.",
+        "translation": "(Прокуратура порушила розслідування у цій справі.)",
+        "options": [
+          "śledztwo",
+          "śledztwa",
+          "śledztwem",
+          "śledztwie"
+        ],
+        "correct": "śledztwo",
+        "explanation": "'Wszcząć śledztwo' (порушити розслідування) — стійкий юридичний зворот. 'Śledztwo' (розслідування, слідство) — знахідний = називний (сер. рід). 'Prokuratura' (прокуратура) — жін. рід. 'W tej sprawie' (у цій справі) — місцевий. В укр. 'слідство' — споріднене слово."
+      },
+      {
+        "id": "up_crm7",
+        "question": "Oskarżony nie _____ się do winy.",
+        "translation": "(Обвинувачений не визнав себе винним.)",
+        "options": [
+          "przyznał",
+          "przyznała",
+          "przyznali",
+          "przyznawał"
+        ],
+        "correct": "przyznał",
+        "explanation": "'Przyznać się do winy' (визнати себе винним) — стійкий юридичний зворот. 'Przyznał się' (доконаний, чол. мин. час). 'Do winy' — родовий: 'wina' (вина) → 'winy'. В укр. 'визнати себе винним' — інша конструкція (без 'do' + родовий), а прямий додаток + прикметник."
+      },
+      {
+        "id": "up_crm8",
+        "question": "Sprawca _____ z miejsca wypadku.",
+        "translation": "(Винуватець втік з місця ДТП.)",
+        "options": [
+          "uciekł",
+          "uciekła",
+          "uciekali",
+          "ucieczka"
+        ],
+        "correct": "uciekł",
+        "explanation": "'Uciec' (втекти) — доконаний, 'uciekł' (чол. мин. час). 'Sprawca' (винуватець, злочинець) — чол. рід (хоча закінчення '-a' як у жін.). 'Z miejsca wypadku' (з місця ДТП) — подвійний родовий. В укр. 'втік з місця' — ідентична конструкція. 'Wypadek' (випадок, ДТП)."
+      },
+      {
+        "id": "up_crm9",
+        "question": "Kara za to przestępstwo _____ do dziesięciu lat.",
+        "translation": "(Покарання за цей злочин — до десяти років.)",
+        "options": [
+          "wynosi",
+          "wynoszą",
+          "wynosiła",
+          "wynosić"
+        ],
+        "correct": "wynosi",
+        "explanation": "'Kara wynosi' (покарання становить) — 'wynosi' (3 ос. одн.), бо 'kara' — однина. 'Przestępstwo' (злочин) — сер. рід. 'Do dziesięciu lat' (до десяти років) — 'dziesięć' → 'dziesięciu' (родовий). В укр. 'покарання становить' — ідентична конструкція. 'Lat' — родовий мн. від 'rok'."
+      },
+      {
+        "id": "up_crm10",
+        "question": "Sędzia ogłosił _____ po długich obradach.",
+        "translation": "(Суддя оголосив вирок після довгих нарад.)",
+        "options": [
+          "wyrok",
+          "wyroku",
+          "wyrokiem",
+          "wyroki"
+        ],
+        "correct": "wyrok",
+        "explanation": "'Ogłosić wyrok' (оголосити вирок) — знахідний = називний (чол. неживий). 'Sędzia' (суддя) — чол. рід (як 'sprawca', '-a' закінчення). 'Po długich obradach' — місцевий мн.: 'obrady' (наради) → 'obradach'. В укр. 'суддя оголосив' — ідентична конструкція, 'суддя' — чол."
+      },
+      {
+        "id": "up_crm11",
+        "question": "Ofiara _____ odszkodowanie od sprawcy.",
+        "translation": "(Потерпілий отримав відшкодування від винуватця.)",
+        "options": [
+          "otrzymała",
+          "otrzymał",
+          "otrzymali",
+          "otrzymane"
+        ],
+        "correct": "otrzymała",
+        "explanation": "'Ofiara' (жертва, потерпілий) — жін. рід → 'otrzymała'. 'Odszkodowanie' (відшкодування) — знахідний = називний (сер. рід). 'Od sprawcy' (від винуватця) — родовий: 'sprawca' → 'sprawcy'. В укр. 'потерпілий' — чол. рід (інший рід!), а в польськ. 'ofiara' — завжди жін."
+      },
+      {
+        "id": "up_crm12",
+        "question": "Złodziej _____ się do mieszkania przez okno.",
+        "translation": "(Злодій проникнув у квартиру через вікно.)",
+        "options": [
+          "włamał",
+          "włamała",
+          "włamali",
+          "włamywał"
+        ],
+        "correct": "włamał",
+        "explanation": "'Włamać się' (зламатися, проникнути) — доконаний, 'włamał się' (чол. мин. час). 'Do mieszkania' (у квартиру) — родовий: 'mieszkanie' → 'mieszkania'. 'Przez okno' (через вікно) — знахідний. 'Złodziej' (злодій) — спільнослов'янське. В укр. 'злодій проникнув'."
+      },
+      {
+        "id": "up_crm13",
+        "question": "Podejrzany został _____ na wolność za kaucją.",
+        "translation": "(Підозрюваного звільнили під заставу.)",
+        "options": [
+          "wypuszczony",
+          "wypuszczona",
+          "wypuszczeni",
+          "wypuszczany"
+        ],
+        "correct": "wypuszczony",
+        "explanation": "'Zostać wypuszczonym' (бути звільненим) — пасив: 'został wypuszczony' (чол. рід). 'Na wolność' (на волю) — знахідний: 'wolność' → 'wolność'. 'Za kaucją' (під заставу, за кауцію) — орудний. В укр. 'під заставу' — прийменник 'під', а в польськ. 'za kaucją' — 'za' + орудний."
+      },
+      {
+        "id": "up_crm14",
+        "question": "Prawo _____ każdemu obywatelowi dostęp do sądu.",
+        "translation": "(Закон гарантує кожному громадянинові доступ до суду.)",
+        "options": [
+          "gwarantuje",
+          "gwarantują",
+          "gwarantował",
+          "gwarantować"
+        ],
+        "correct": "gwarantuje",
+        "explanation": "'Prawo gwarantuje' (закон гарантує) — 3 ос. одн. 'Każdemu obywatelowi' (кожному громадянинові) — давальний. 'Dostęp do sądu' (доступ до суду) — 'dostęp' (доступ) + 'do' + родовий. В укр. 'закон гарантує кожному громадянинові' — ідентична конструкція з давальним."
+      },
+      {
+        "id": "up_crm15",
+        "question": "Prokurator _____ akt oskarżenia do sądu.",
+        "translation": "(Прокурор направив обвинувальний акт до суду.)",
+        "options": [
+          "skierował",
+          "kierował",
+          "skierowała",
+          "skierowany"
+        ],
+        "correct": "skierował",
+        "explanation": "'Skierować' (направити, скерувати) — доконаний. 'Akt oskarżenia' (обвинувальний акт) — 'oskarżenie' → 'oskarżenia' (родовий). 'Prokurator' — чол. рід → 'skierował'. 'Do sądu' (до суду) — родовий. В укр. 'скерувати' / 'направити' — спільний корінь 'кер/kier'."
+      }
+    ]
+  },
+  {
+    "key": "academic_writing",
+    "name": "Академічне письмо",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "up_acad1",
+        "question": "Celem niniejszej pracy jest _____ problemu migracji.",
+        "translation": "(Метою цієї роботи є аналіз проблеми міграції.)",
+        "options": [
+          "analiza",
+          "analizować",
+          "analizy",
+          "analizą"
+        ],
+        "correct": "analiza",
+        "explanation": "'Celem jest analiza' (метою є аналіз) — називний відмінок іменної частини. 'Niniejszy' (цей, даний — книжне) — формальний вказівний. 'Problemu migracji' — подвійний родовий. В укр. 'метою є аналіз' — ідентична конструкція. 'Niniejszy' — не має аналога в розмовній укр."
+      },
+      {
+        "id": "up_acad2",
+        "question": "Wyniki badań _____ hipotezę postawioną na początku.",
+        "translation": "(Результати дослідження підтвердили гіпотезу, поставлену на початку.)",
+        "options": [
+          "potwierdziły",
+          "potwierdził",
+          "potwierdziła",
+          "potwierdzili"
+        ],
+        "correct": "potwierdziły",
+        "explanation": "'Potwierdziły' — мин. час, множина невіроособова (бо 'wyniki' — неживі). 'Badania' (дослідження) → 'badań' (родовий мн.). 'Hipoteza' (гіпотеза) → 'hipotezę' (знахідний). 'Postawiona' (поставлена) — дієприкметник жін. роду. В укр. 'підтвердили' — множина."
+      },
+      {
+        "id": "up_acad3",
+        "question": "Z powyższych danych _____, że zjawisko nasila się.",
+        "translation": "(З наведених вище даних випливає, що явище посилюється.)",
+        "options": [
+          "wynika",
+          "wynikają",
+          "wynikał",
+          "wynikać"
+        ],
+        "correct": "wynika",
+        "explanation": "'Wynikać' (випливати) — 'wynika' (3 ос. одн.), бо підмет — ціле речення 'że...'. 'Z powyższych danych' (з наведених вище даних) — родовий мн. 'Zjawisko' (явище) — сер. рід. 'Nasilać się' (посилюватися). В укр. 'випливає, що' — ідентична безособова конструкція."
+      },
+      {
+        "id": "up_acad4",
+        "question": "Autor _____ do wniosku, że teoria jest nieadekwatna.",
+        "translation": "(Автор дійшов висновку, що теорія неадекватна.)",
+        "options": [
+          "doszedł",
+          "doszła",
+          "doszli",
+          "dochodził"
+        ],
+        "correct": "doszedł",
+        "explanation": "'Dojść do wniosku' (дійти висновку) — стійкий зворот. 'Doszedł' — мин. час чол. від 'dojść'. 'Wniosek' (висновок) → 'wniosku' (родовий). 'Nieadekwatna' (неадекватна) — жін. рід, бо 'teoria' — жін. В укр. 'дійти висновку' — ідентичний зворот з родовим."
+      },
+      {
+        "id": "up_acad5",
+        "question": "Metodologia _____ w rozdziale drugim.",
+        "translation": "(Методологію описано в другому розділі.)",
+        "options": [
+          "została opisana",
+          "został opisany",
+          "zostały opisane",
+          "został opisana"
+        ],
+        "correct": "została opisana",
+        "explanation": "'Została opisana' — пасив жін. роду: 'metodologia' — жін. → 'została' + 'opisana'. 'W rozdziale drugim' (у другому розділі) — місцевий: 'rozdział' → 'rozdziale', 'drugi' → 'drugim'. В укр. 'описано' — безособова форма (без роду), а в польськ. — узгодження з родом."
+      },
+      {
+        "id": "up_acad6",
+        "question": "Należy _____, że próba badawcza była ograniczona.",
+        "translation": "(Слід зазначити, що дослідницька вибірка була обмеженою.)",
+        "options": [
+          "zaznaczyć",
+          "zaznaczać",
+          "zaznaczenie",
+          "zaznaczony"
+        ],
+        "correct": "zaznaczyć",
+        "explanation": "'Należy zaznaczyć' (слід зазначити) — безособова конструкція з інфінітивом. 'Próba badawcza' (дослідницька проба/вибірка). 'Ograniczona' (обмежена) — дієприкметник жін. роду. В укр. 'слід зазначити' — ідентична безособова конструкція. 'Należy' = 'слід/треба'."
+      },
+      {
+        "id": "up_acad7",
+        "question": "W świetle _____ badań można stwierdzić, że...",
+        "translation": "(У світлі проведених досліджень можна стверджувати, що...)",
+        "options": [
+          "przeprowadzonych",
+          "przeprowadzony",
+          "przeprowadzone",
+          "przeprowadzeni"
+        ],
+        "correct": "przeprowadzonych",
+        "explanation": "'W świetle przeprowadzonych badań' — родовий мн.: 'przeprowadzony' → 'przeprowadzonych' (родовий мн.). 'W świetle' (у світлі) + родовий — метафоричний прийменниковий зворот. 'Stwierdzić' (стверджувати). В укр. 'у світлі проведених досліджень' — повний збіг конструкції."
+      },
+      {
+        "id": "up_acad8",
+        "question": "Zjawisko to wymaga dalszych _____ naukowych.",
+        "translation": "(Це явище вимагає подальших наукових досліджень.)",
+        "options": [
+          "badań",
+          "badania",
+          "badanie",
+          "badaniom"
+        ],
+        "correct": "badań",
+        "explanation": "'Wymagać' (вимагати) + родовий: 'badania' → 'badań' (родовий мн.). 'Dalszych' (подальших) — порівняльний ступінь мн. родовий. 'Naukowych' (наукових) — родовий мн. В укр. 'вимагати подальших досліджень' — ідентична конструкція з родовим множини."
+      },
+      {
+        "id": "up_acad9",
+        "question": "Podsumowując, _____ stwierdzić, że hipoteza się potwierdziła.",
+        "translation": "(Підсумовуючи, можна стверджувати, що гіпотеза підтвердилася.)",
+        "options": [
+          "można",
+          "trzeba",
+          "należy",
+          "musi"
+        ],
+        "correct": "można",
+        "explanation": "'Można stwierdzić' (можна стверджувати) — безособова конструкція. 'Podsumowując' (підсумовуючи) — дієприслівник від 'podsumować'. 'Potwierdzić się' (підтвердитися) — 'potwierdziła się' (жін., бо 'hipoteza'). В укр. 'підсумовуючи, можна стверджувати' — ідентична конструкція."
+      },
+      {
+        "id": "up_acad10",
+        "question": "Niniejszy artykuł _____ się na analizie danych statystycznych.",
+        "translation": "(Ця стаття ґрунтується на аналізі статистичних даних.)",
+        "options": [
+          "opiera",
+          "opierał",
+          "opierają",
+          "oprzeć"
+        ],
+        "correct": "opiera",
+        "explanation": "'Opierać się na' (ґрунтуватися на) + місцевий: 'na analizie'. 'Opiera się' (3 ос. одн., теперішній). 'Dane statystyczne' (статистичні дані) → 'danych statystycznych' (родовий мн.). В укр. 'ґрунтується на аналізі' — ідентична конструкція. 'Niniejszy' (цей — книжне)."
+      },
+      {
+        "id": "up_acad11",
+        "question": "Jak _____ w literaturze przedmiotu, problem jest złożony.",
+        "translation": "(Як зазначено в літературі з предмету, проблема складна.)",
+        "options": [
+          "wskazano",
+          "wskazał",
+          "wskazali",
+          "wskazywać"
+        ],
+        "correct": "wskazano",
+        "explanation": "'Wskazano' — безособова форма минулого часу (без роду), дуже характерна для наукового стилю. 'W literaturze przedmiotu' (в літературі з предмету) — місцевий. 'Złożony' (складний, складений) — від 'złożyć'. В укр. 'зазначено' — аналогічна безособова форма на '-но'."
+      },
+      {
+        "id": "up_acad12",
+        "question": "Dane zebrano _____ metodą ankietową.",
+        "translation": "(Дані зібрано за допомогою анкетного методу.)",
+        "options": [
+          "za pomocą",
+          "z pomocą",
+          "przez",
+          "dzięki"
+        ],
+        "correct": "za pomocą",
+        "explanation": "'Za pomocą' (за допомогою) + родовий — формальний прийменниковий зворот. 'Metoda ankietowa' (анкетний метод) → 'metodą ankietową' (орудний після 'za pomocą'?). Ні — 'za pomocą' + родовий: 'metody ankietowej'. В укр. 'за допомогою' — ідентичний зворот. 'Zebrano' — безособова форма."
+      },
+      {
+        "id": "up_acad13",
+        "question": "Wyniki _____ z wcześniejszymi ustaleniami naukowymi.",
+        "translation": "(Результати узгоджуються з попередніми науковими висновками.)",
+        "options": [
+          "korespondują",
+          "koresponduje",
+          "korespondował",
+          "korespondować"
+        ],
+        "correct": "korespondują",
+        "explanation": "'Korespondować z' (кореспондувати з, узгоджуватися з) + орудний: 'z wcześniejszymi ustaleniami'. 'Korespondują' — 3 ос. мн. (бо 'wyniki' — мн.). 'Wcześniejszy' (попередній, раніший) — порівняльний ступінь. В укр. 'кореспондувати' або 'узгоджуватися з'."
+      },
+      {
+        "id": "up_acad14",
+        "question": "Istnieje _____ korelacja między wykształceniem a dochodami.",
+        "translation": "(Існує сильна кореляція між освітою та доходами.)",
+        "options": [
+          "silna",
+          "silny",
+          "silne",
+          "silnych"
+        ],
+        "correct": "silna",
+        "explanation": "'Silna korelacja' — жін. рід: 'korelacja' → 'silna'. 'Między' (між) + орудний: 'wykształceniem a dochodami'. 'A' (та, і — книжне) — сполучник у парі з 'między'. В укр. 'між освітою та доходами' — ідентична конструкція з орудним. 'Istnieć' (існувати) — 'istnieje'."
+      },
+      {
+        "id": "up_acad15",
+        "question": "Ograniczeniem badania _____ niewielka liczba respondentów.",
+        "translation": "(Обмеженням дослідження була невелика кількість респондентів.)",
+        "options": [
+          "była",
+          "był",
+          "było",
+          "byli"
+        ],
+        "correct": "była",
+        "explanation": "'Była' — жін. мин. час, бо підмет 'liczba' (кількість) — жін. рід. 'Ograniczenie badania' (обмеження дослідження) — орудний: 'ograniczeniem'. 'Niewielka' (невелика) — жін. 'Respondent' → 'respondentów' (родовий мн.). В укр. 'обмеженням була' — ідентична конструкція."
+      }
+    ]
+  },
+  {
+    "key": "formal_register_adv",
+    "name": "Формальний регістр (просунутий)",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "up_freg1",
+        "question": "Uprzejmie _____ o udzielenie informacji w tej sprawie.",
+        "translation": "(Ввічливо прошу надати інформацію в цій справі.)",
+        "options": [
+          "proszę",
+          "prosiłbym",
+          "prosić",
+          "prosimy"
+        ],
+        "correct": "proszę",
+        "explanation": "'Uprzejmie proszę' (ввічливо прошу) — найпоширеніша офіційна формула ввічливості в листах. 'Udzielenie informacji' (надання інформації) — 'udzielić' (надати) — формальне. 'W tej sprawie' (у цій справі) — місцевий. В укр. 'ввічливо прошу' — менш формально, ніж польський канцелярський стиль."
+      },
+      {
+        "id": "up_freg2",
+        "question": "W _____ do Państwa pisma z dnia 5 marca...",
+        "translation": "(У відповідь на Ваш лист від 5 березня...)",
+        "options": [
+          "nawiązaniu",
+          "nawiązanie",
+          "nawiązać",
+          "nawiązanym"
+        ],
+        "correct": "nawiązaniu",
+        "explanation": "'W nawiązaniu do' (у зв'язку з, у відповідь на) + родовий — офіційний зворот для кореспонденції. 'Państwa' (Ваш — ввічл. множ.) → 'Państwa pisma' (Вашого листа). 'Z dnia' (від дня, датоване) — формальне. В укр. 'у відповідь на' — менш формальне."
+      },
+      {
+        "id": "up_freg3",
+        "question": "Niniejszym _____ o przyjęcie mojej rezygnacji.",
+        "translation": "(Цим повідомляю про прийняття моєї відставки.)",
+        "options": [
+          "informuję",
+          "informować",
+          "informacja",
+          "informujesz"
+        ],
+        "correct": "informuję",
+        "explanation": "'Niniejszym informuję' (цим повідомляю) — канцелярська формула. 'Niniejszym' (цим) — орудний від 'niniejszy'. 'Przyjęcie' (прийняття) — дієслівний іменник. 'Rezygnacja' (відставка, відмова) → 'rezygnacji' (родовий). В укр. 'цим повідомляю' — менш поширена канцелярська формула."
+      },
+      {
+        "id": "up_freg4",
+        "question": "Zwracam się z _____ o przedłużenie terminu.",
+        "translation": "(Звертаюся з проханням про продовження терміну.)",
+        "options": [
+          "prośbą",
+          "prośba",
+          "prośby",
+          "prośbie"
+        ],
+        "correct": "prośbą",
+        "explanation": "'Z prośbą o' (з проханням про) — орудний: 'prośba' → 'prośbą'. 'Przedłużenie terminu' (продовження терміну) — родовий: 'termin' → 'terminu'. 'Zwracam się' (звертаюся) — зворотне. В укр. 'звертаюся з проханням' — ідентична конструкція з орудним."
+      },
+      {
+        "id": "up_freg5",
+        "question": "Do _____ dołączam wymagane dokumenty.",
+        "translation": "(До листа додаю необхідні документи.)",
+        "options": [
+          "niniejszego pisma",
+          "niniejsze pismo",
+          "niniejszym",
+          "niniejszego"
+        ],
+        "correct": "niniejszego pisma",
+        "explanation": "'Do niniejszego pisma' (до цього листа) — родовий: 'niniejsze pismo' → 'niniejszego pisma'. 'Dołączam' (додаю) — 1 ос. одн. 'Wymagane dokumenty' (необхідні документи) — 'wymagany' (необхідний, вимоганий). В укр. 'до цього листа' — простіша конструкція без 'niniejszy'."
+      },
+      {
+        "id": "up_freg6",
+        "question": "Szanowni Państwo, _____ nam miło poinformować...",
+        "translation": "(Шановні панове, нам приємно повідомити...)",
+        "options": [
+          "jest",
+          "będzie",
+          "było",
+          "byłoby"
+        ],
+        "correct": "jest",
+        "explanation": "'Jest nam miło' (нам приємно) — безособова конструкція з давальним: 'nam' (нам). 'Szanowni Państwo' (шановні панове) — ввічливе звернення в офіційному листі. 'Poinformować' (повідомити) — доконаний інфінітив. В укр. 'нам приємно повідомити' — ідентична конструкція."
+      },
+      {
+        "id": "up_freg7",
+        "question": "Prosimy o _____ odpowiedzi do końca miesiąca.",
+        "translation": "(Просимо нaдати відповідь до кінця місяця.)",
+        "options": [
+          "udzielenie",
+          "udzielić",
+          "udzielenia",
+          "udzielonym"
+        ],
+        "correct": "udzielenie",
+        "explanation": "'Prosić o udzielenie' (просити про надання) — 'o' + знахідний = називний (сер. рід). 'Odpowiedzi' (відповіді) — родовий: 'odpowiedź' → 'odpowiedzi'. 'Do końca miesiąca' (до кінця місяця) — подвійний родовий. В укр. 'просимо надати' — без іменникової конструкції, простіше."
+      },
+      {
+        "id": "up_freg8",
+        "question": "W _____ niepokojącej sytuacji konieczne jest podjęcie działań.",
+        "translation": "(У зв'язку з тривожною ситуацією необхідно вжити заходів.)",
+        "options": [
+          "związku z",
+          "związek z",
+          "związkiem",
+          "związany z"
+        ],
+        "correct": "związku z",
+        "explanation": "'W związku z' (у зв'язку з) + орудний — офіційний причиновий зворот. 'Niepokojąca sytuacja' → 'niepokojącą sytuacją' (орудний). 'Konieczne jest' (необхідно) — безособове. 'Podjęcie działań' (вжиття заходів). В укр. 'у зв'язку з' — ідентичний зворот, навіть етимологічно ('зв'язок'='związek')."
+      },
+      {
+        "id": "up_freg9",
+        "question": "Mam _____ poinformować Państwa o zmianach w regulaminie.",
+        "translation": "(Маю честь повідомити вас про зміни в регламенті.)",
+        "options": [
+          "zaszczyt",
+          "zaszczytu",
+          "zaszczytem",
+          "zaszczycony"
+        ],
+        "correct": "zaszczyt",
+        "explanation": "'Mam zaszczyt' (маю честь) — надзвичайно формальний зворот, знахідний = називний (чол. неживий). 'Poinformować Państwa' (повідомити вас) — 'Państwa' (знахідний = родовий, ввічл. форма). 'O zmianach' (про зміни) — місцевий мн. В укр. 'маю честь' — однаково формальне."
+      },
+      {
+        "id": "up_freg10",
+        "question": "Wyrażam _____ z powodu niedogodności.",
+        "translation": "(Висловлюю вибачення за незручності.)",
+        "options": [
+          "ubolewanie",
+          "ubolewania",
+          "ubolewaniem",
+          "ubolewać"
+        ],
+        "correct": "ubolewanie",
+        "explanation": "'Wyrażać ubolewanie' (висловлювати жаль/вибачення) — знахідний = називний (сер. рід). 'Z powodu' (з причини, через) + родовий: 'niedogodności' (незручності). 'Wyrażam' (висловлюю, 1 ос. одн.). В укр. 'висловлюю жаль' — аналогічна формальна конструкція."
+      },
+      {
+        "id": "up_freg11",
+        "question": "Zgodnie z _____ przepisami prawa, informuję, że...",
+        "translation": "(Відповідно до чинних норм права, повідомляю, що...)",
+        "options": [
+          "obowiązującymi",
+          "obowiązujący",
+          "obowiązujące",
+          "obowiązujących"
+        ],
+        "correct": "obowiązującymi",
+        "explanation": "'Zgodnie z' (відповідно до) + орудний: 'obowiązujące przepisy' → 'obowiązującymi przepisami'. 'Obowiązujący' (чинний, обов'язковий) — дієприкметник. 'Przepisy prawa' (норми права). В укр. 'відповідно до' + родовий (інший відмінок!), а в польськ. 'zgodnie z' + орудний."
+      },
+      {
+        "id": "up_freg12",
+        "question": "Z poważaniem _____ Jan Kowalski.",
+        "translation": "(З повагою — Ян Ковальський.)",
+        "options": [
+          "—",
+          "podpisał",
+          "pisze",
+          "wysyła"
+        ],
+        "correct": "—",
+        "explanation": "'Z poważaniem' (з повагою) — стандартна формула закриття офіційного листа, після якої стоїть тире та ім'я. Не вимагає дієслова. В українській 'з повагою' — ідентична формула. 'Poważanie' (повага, пошана) від 'poważać' (шанувати). 'Kowalski' (Ковальський) — найпоширеніше польське прізвище."
+      },
+      {
+        "id": "up_freg13",
+        "question": "Czy mógłby Pan _____ mi tę informację na piśmie?",
+        "translation": "(Чи не могли б Ви надати мені цю інформацію письмово?)",
+        "options": [
+          "przekazać",
+          "przekazywać",
+          "przekazanie",
+          "przekazał"
+        ],
+        "correct": "przekazać",
+        "explanation": "'Mógłby Pan przekazać' (Ви б могли передати) — умовний спосіб + ввічлива форма 'Pan'. 'Przekazać' (передати, надати) — доконаний інфінітив. 'Na piśmie' (письмово, у письмовій формі) — місцевий. В укр. 'чи не могли б Ви' — ідентична ввічлива конструкція."
+      },
+      {
+        "id": "up_freg14",
+        "question": "W imieniu zarządu _____ serdecznie dziękuję.",
+        "translation": "(Від імені правління щиро дякую.)",
+        "options": [
+          "firmy",
+          "firma",
+          "firmie",
+          "firmą"
+        ],
+        "correct": "firmy",
+        "explanation": "'W imieniu zarządu firmy' (від імені правління фірми) — подвійний родовий: 'zarząd' → 'zarządu', 'firma' → 'firmy'. 'Serdecznie' (щиро, сердечно) — прислівник. В укр. 'від імені правління' — ідентична конструкція з родовим. 'Serdecznie' / 'щиро' — обидва прислівники."
+      },
+      {
+        "id": "up_freg15",
+        "question": "Uprzejmie _____ o potwierdzenie odbioru niniejszego pisma.",
+        "translation": "(Ввічливо прошу підтвердити отримання цього листа.)",
+        "options": [
+          "proszę",
+          "prosimy",
+          "prosi",
+          "prosić"
+        ],
+        "correct": "proszę",
+        "explanation": "'Uprzejmie proszę o potwierdzenie' (ввічливо прошу про підтвердження) — стандартна канцелярська формула. 'Odbiór' (отримання) — від 'odebrać' (отримати). 'Niniejsze pismo' → 'niniejszego pisma' (родовий). В укр. 'прошу підтвердити отримання' — без прийменника 'о', простіше."
+      }
+    ]
+  },
+  {
+    "key": "religion_traditions",
+    "name": "Релігія та традиції",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "up_relt1",
+        "question": "W Polsce Boże Narodzenie _____ się Wigilią.",
+        "translation": "(У Польщі Різдво починається Святвечором.)",
+        "options": [
+          "zaczyna",
+          "zaczął",
+          "zaczynają",
+          "rozpoczyna"
+        ],
+        "correct": "zaczyna",
+        "explanation": "'Zaczyna się' (починається) — 3 ос. одн. зворотне, бо 'Boże Narodzenie' (Різдво) — одн. 'Wigilia' (Святвечір, Вілія) — орудний: 'Wigilią'. В укр. 'Святвечір' — аналогічна традиція. Польська 'Wigilia' від лат. 'vigilia' (нічна варта, передодень)."
+      },
+      {
+        "id": "up_relt2",
+        "question": "Na Wielkanoc Polacy święcą _____ w kościele.",
+        "translation": "(На Великдень поляки освячують їжу в костелі.)",
+        "options": [
+          "pokarmy",
+          "pokarm",
+          "pokarmów",
+          "pokarmami"
+        ],
+        "correct": "pokarmy",
+        "explanation": "'Święcić pokarmy' (освячувати їжу/страви) — знахідний множини. 'Pokarmy' (страви, продукти) — від 'pokarm' (їжа). 'W kościele' (в костелі) — місцевий: 'kościół' → 'kościele'. В укр. 'освячувати їжу' — та сама традиція (свячена корзинка), але без слова 'pokarmy'."
+      },
+      {
+        "id": "up_relt3",
+        "question": "Podczas kolędy ksiądz _____ domy parafian.",
+        "translation": "(Під час коляди священник відвідує будинки парафіян.)",
+        "options": [
+          "odwiedza",
+          "odwiedził",
+          "odwiedzają",
+          "odwiedzać"
+        ],
+        "correct": "odwiedza",
+        "explanation": "'Odwiedzać' (відвідувати) — недок. вид, 'odwiedza' (3 ос. одн.). 'Kolęda' тут = візит священника після Різдва (не тільки пісня!). 'Ksiądz' (священник, ксьондз). 'Parafianie' (парафіяни) → 'parafian' (родовий мн.). В укр. 'коляда' = різдвяна пісня, інше значення."
+      },
+      {
+        "id": "up_relt4",
+        "question": "Tradycyjnie na Wigilii _____ się dwanaście potraw.",
+        "translation": "(Традиційно на Святвечір подають дванадцять страв.)",
+        "options": [
+          "podaje",
+          "podają",
+          "podawać",
+          "podano"
+        ],
+        "correct": "podaje",
+        "explanation": "'Podaje się' (подають, подається) — безособова зворотна конструкція (не 'podają'!). 'Na Wigilii' (на Святвечері) — місцевий від 'Wigilia'. 'Dwanaście potraw' — родовий мн.: 'potrawa' → 'potraw'. В укр. '12 страв' — та сама традиція. 'Podawać' (подавати) — спільний корінь."
+      },
+      {
+        "id": "up_relt5",
+        "question": "W Wielki Piątek wierni _____ Drogę Krzyżową.",
+        "translation": "(У Страсну п'ятницю вірні проходять Хресну дорогу.)",
+        "options": [
+          "odprawiają",
+          "odprawia",
+          "odprawiał",
+          "odprawić"
+        ],
+        "correct": "odprawiają",
+        "explanation": "'Odprawiać Drogę Krzyżową' (відправляти Хресну дорогу) — стійкий зворот. 'Wierni' (вірні, вірники) → 'odprawiają' (3 ос. мн., віроособова). 'Wielki Piątek' (Великий П'ятниця = Страсна п'ятниця). В укр. 'Хресна дорога' — те саме, 'Droga Krzyżowa' = 'Хресний шлях'."
+      },
+      {
+        "id": "up_relt6",
+        "question": "Dzielenie się _____ to ważna tradycja wigilijna.",
+        "translation": "(Ділення облаткою — це важлива різдвяна традиція.)",
+        "options": [
+          "opłatkiem",
+          "opłatek",
+          "opłatka",
+          "opłatku"
+        ],
+        "correct": "opłatkiem",
+        "explanation": "'Dzielić się opłatkiem' (ділитися облаткою) — орудний: 'opłatek' → 'opłatkiem'. 'Opłatek' (облатка) — тонкий хлібець, символ примирення. 'Wigilijna' (вігілійна) — прикметник від 'Wigilia'. В укр. 'облатка' або 'просфора' — в українській традиції цей обряд рідший."
+      },
+      {
+        "id": "up_relt7",
+        "question": "W Dzień Wszystkich Świętych Polacy _____ groby bliskich.",
+        "translation": "(У День Усіх Святих поляки відвідують могили рідних.)",
+        "options": [
+          "odwiedzają",
+          "odwiedza",
+          "odwiedzili",
+          "odwiedzać"
+        ],
+        "correct": "odwiedzają",
+        "explanation": "'Polacy odwiedzają' (поляки відвідують) — 3 ос. мн. віроособова: 'Polacy' — віроособовий підмет. 'Groby' (могили) — знахідний мн. 'Bliskich' (рідних, близьких) — родовий мн. від 'bliski'. В укр. аналогічна традиція — 'Гробки', 'провідна неділя'. 'Dzień Wszystkich Świętych' = 1 листопада."
+      },
+      {
+        "id": "up_relt8",
+        "question": "Imieniny w Polsce są często _____ niż urodziny.",
+        "translation": "(Іменини в Польщі часто важливіші за день народження.)",
+        "options": [
+          "ważniejsze",
+          "ważniejszy",
+          "ważniejsza",
+          "najważniejsze"
+        ],
+        "correct": "ważniejsze",
+        "explanation": "'Ważniejsze niż' (важливіші ніж) — порівняльний ступінь мн. невіроособ. 'Imieniny' (іменини) — тільки множина, як і в укр. 'Urodziny' (день народження) — тільки множина. В Польщі 'imieniny' святкують більше, ніж в Україні, де важливіший 'день народження'."
+      },
+      {
+        "id": "up_relt9",
+        "question": "Lany Poniedziałek to tradycja _____ wodą w Wielkanoc.",
+        "translation": "(Поливаний Понеділок — це традиція обливання водою на Великдень.)",
+        "options": [
+          "polewania",
+          "polewanie",
+          "polewać",
+          "polewaniem"
+        ],
+        "correct": "polewania",
+        "explanation": "'Tradycja polewania' (традиція обливання) — родовий від дієслівного іменника: 'polewanie' → 'polewania'. 'Wodą' (водою) — орудний: 'woda' → 'wodą'. 'Lany Poniedziałek' (Поливаний Понеділок) — є і в укр. традиції. 'Lany' (облитий, поливаний) — від 'lać' (лити)."
+      },
+      {
+        "id": "up_relt10",
+        "question": "W polskim kościele msza _____ się po polsku.",
+        "translation": "(У польському костелі меса відбувається польською.)",
+        "options": [
+          "odbywa",
+          "odbywają",
+          "odbywał",
+          "odbyć"
+        ],
+        "correct": "odbywa",
+        "explanation": "'Odbywa się' (відбувається) — 3 ос. одн. зворотне, бо 'msza' (меса) — одн. жін. 'Po polsku' (польською) — прислівниковий зворот. 'W kościele' (в костелі). В укр. 'літургія відправляється' — інше слово ('літургія' vs 'msza') і дієслово ('відправлятися' vs 'відбуватися')."
+      },
+      {
+        "id": "up_relt11",
+        "question": "Podczas _____ ślubu nowożeńcy wymieniają obrączki.",
+        "translation": "(Під час церемонії вінчання молодята обмінюються обручками.)",
+        "options": [
+          "ceremonii",
+          "ceremonia",
+          "ceremonię",
+          "ceremonią"
+        ],
+        "correct": "ceremonii",
+        "explanation": "'Podczas ceremonii' (під час церемонії) + родовий: 'ceremonia' → 'ceremonii'. 'Ślub' (шлюб, вінчання) — спільнослов'янське. 'Nowożeńcy' (молодята) — 'wymieniają' (обмінюються, 3 ос. мн.). 'Obrączki' (обручки) — знахідний мн. В укр. 'під час церемонії' — ідентична конструкція."
+      },
+      {
+        "id": "up_relt12",
+        "question": "Na Zaduszki ludzie zapalają _____ na cmentarzach.",
+        "translation": "(На Задушки люди запалюють свічки на цвинтарях.)",
+        "options": [
+          "znicze",
+          "znicz",
+          "zniczy",
+          "zniczami"
+        ],
+        "correct": "znicze",
+        "explanation": "'Zapalać znicze' (запалювати лампадки) — знахідний мн.: 'znicz' → 'znicze'. 'Zaduszki' (Задушки, День поминання) — 2 листопада. 'Na cmentarzach' (на цвинтарях) — місцевий мн.: 'cmentarz' → 'cmentarzach'. В укр. 'Задушки' або 'День поминання' — спільна традиція."
+      },
+      {
+        "id": "up_relt13",
+        "question": "Tłusty Czwartek to dzień _____ pączków.",
+        "translation": "(Жирний четвер — це день їдження пампушок.)",
+        "options": [
+          "jedzenia",
+          "jedzenie",
+          "jeść",
+          "jedzone"
+        ],
+        "correct": "jedzenia",
+        "explanation": "'Dzień jedzenia' (день їдження) — родовий від 'jedzenie' (їдження, їжа). 'Pączki' (пампушки) → 'pączków' (родовий мн.). 'Tłusty Czwartek' (Жирний четвер) — переддень Великого посту. В укр. аналогічна традиція — останній день перед постом. 'Pączek' (пампушка) — класична польська страва."
+      },
+      {
+        "id": "up_relt14",
+        "question": "W wielokulturowej Polsce _____ wiele wyznań religijnych.",
+        "translation": "(У багатокультурній Польщі існує багато релігійних віросповідань.)",
+        "options": [
+          "istnieje",
+          "istnieją",
+          "istniał",
+          "istnieć"
+        ],
+        "correct": "istnieje",
+        "explanation": "'Istnieje wiele' (існує багато) — 'istnieje' одн. (бо 'wiele' — збірне). 'Wyznanie religijne' (релігійне віросповідання) → 'wyznań religijnych' (родовий мн.). 'Wielokulturowa' (багатокультурна) — складений прикметник. В укр. 'існує багато' — ідентична конструкція з однини."
+      },
+      {
+        "id": "up_relt15",
+        "question": "Pielgrzymka na Jasną Górę _____ co roku tysiące wiernych.",
+        "translation": "(Паломництво на Ясну Гору щороку збирає тисячі вірних.)",
+        "options": [
+          "przyciąga",
+          "przyciągają",
+          "przyciągał",
+          "przyciągnąć"
+        ],
+        "correct": "przyciąga",
+        "explanation": "'Pielgrzymka przyciąga' (паломництво приваблює) — 3 ос. одн. 'Jasna Góra' (Ясна Гора) — найважливіше паломницьке місце в Польщі (Ченстохова). 'Tysiące wiernych' (тисячі вірних) — родовий мн. 'Co roku' (щороку) — сталий зворот. В укр. 'Ясна Гора' — також відоме місце паломництва."
+      }
+    ]
   }
 ]

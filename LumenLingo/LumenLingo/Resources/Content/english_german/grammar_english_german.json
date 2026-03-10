@@ -11683,5 +11683,1030 @@
         "explanation": "'Ende gut, alles gut' (End good, all good) is the German version of 'All's well that ends well' — also a Shakespeare play title! The compressed structure drops the verb 'ist' (is) entirely: 'Ende [ist] gut, alles [ist] gut.' This telegraphic style is typical of proverbs — they're meant to be short and punchy. 'Ende' (end) and 'alles' (everything) are both neuter nouns. The proverb consoles after hardship — if the result is positive, the difficulties along the way don't matter. Use it after a stressful project succeeds or a difficult journey ends safely. Related: 'Es hat alles ein Ende, nur die Wurst hat zwei' (Everything has one end, only the sausage has two — a humorous German twist!)."
       }
     ]
+  },
+  {
+    "key": "time_expressions",
+    "name": "Time Expressions",
+    "description": "Zeitausdrücke",
+    "iconName": "clock",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "eg_te1",
+        "question": "Ich gehe _____ ins Kino.",
+        "translation": "(I go to the cinema today)",
+        "options": [
+          "heute",
+          "gestern",
+          "morgen",
+          "übermorgen"
+        ],
+        "correct": "heute",
+        "explanation": "'Heute' (today) is one of the most essential time adverbs in German. Unlike English, where 'today' can float in a sentence, German time expressions typically occupy the first position or come right after the verb in a main clause. 'Heute gehe ich ins Kino' (time-first inversion) is equally correct and very common in spoken German. Key time adverbs: gestern (yesterday), heute (today), morgen (tomorrow), übermorgen (day after tomorrow), vorgestern (day before yesterday). Notice how German creates compound time words that English needs phrases for."
+      },
+      {
+        "id": "eg_te2",
+        "question": "Wir treffen uns _____ Montag.",
+        "translation": "(We are meeting on Monday)",
+        "options": [
+          "am",
+          "im",
+          "um",
+          "an"
+        ],
+        "correct": "am",
+        "explanation": "'Am' is the contraction of 'an dem' and is used exclusively with days of the week and specific dates in German. This is non-negotiable — you cannot say 'auf Montag' or 'in Montag.' The preposition 'an' + dative article 'dem' fuses into 'am.' Compare: am Montag (on Monday), am 5. März (on March 5th). But for months and seasons, you use 'im' (in dem): im Januar, im Sommer. For clock times, 'um' is used: um 8 Uhr. These three prepositions — am, im, um — form the core time preposition trio in German."
+      },
+      {
+        "id": "eg_te3",
+        "question": "Der Zug fährt _____ 14:30 Uhr ab.",
+        "translation": "(The train departs at 2:30 PM)",
+        "options": [
+          "um",
+          "am",
+          "im",
+          "bei"
+        ],
+        "correct": "um",
+        "explanation": "'Um' is the preposition used exclusively with clock times in German — 'um 14:30 Uhr' (at 2:30 PM). This is a fixed rule with no exceptions. Germans commonly use the 24-hour clock in formal contexts (train schedules, appointments), while the 12-hour format appears in casual speech. The pattern is always: um + time + Uhr. Note that 'Uhr' literally means 'clock' and serves as the German equivalent of 'o'clock.' You can omit 'Uhr' in very casual speech, but it's considered standard to include it."
+      },
+      {
+        "id": "eg_te4",
+        "question": "_____ Sommer fahren wir nach Italien.",
+        "translation": "(In summer we drive to Italy)",
+        "options": [
+          "Im",
+          "Am",
+          "Um",
+          "Beim"
+        ],
+        "correct": "Im",
+        "explanation": "'Im' (in dem) is used with months and seasons: im Sommer (in summer), im Winter (in winter), im Januar (in January). 'Am' is for days, 'um' is for times — master this trio and you'll navigate most time expressions correctly. When a time expression begins the sentence, the verb must come second (V2 rule): 'Im Sommer fahren wir...' not 'Im Sommer wir fahren.' This inversion is mandatory in German and one of the most common mistakes English speakers make."
+      },
+      {
+        "id": "eg_te5",
+        "question": "Ich lerne _____ zwei Jahren Deutsch.",
+        "translation": "(I have been learning German for two years)",
+        "options": [
+          "seit",
+          "für",
+          "vor",
+          "nach"
+        ],
+        "correct": "seit",
+        "explanation": "'Seit' (since/for) is used for actions that started in the past and continue into the present — it always takes the dative case. Unlike English, which uses the present perfect continuous ('I have been learning'), German uses 'seit' + present tense: 'Ich lerne seit zwei Jahren.' This is a crucial difference! 'Für' means 'for' but refers to planned/future durations: 'für zwei Wochen' (for two weeks — a trip). 'Vor' means 'ago': 'vor zwei Jahren' (two years ago). Don't confuse seit (ongoing), für (planned), and vor (completed)."
+      },
+      {
+        "id": "eg_te6",
+        "question": "_____ drei Tagen hat es geregnet.",
+        "translation": "(Three days ago it rained)",
+        "options": [
+          "Vor",
+          "Seit",
+          "Nach",
+          "Während"
+        ],
+        "correct": "Vor",
+        "explanation": "'Vor' + dative means 'ago' when referring to completed past actions. 'Vor drei Tagen' = 'three days ago.' This is distinct from 'seit' (since/for ongoing actions). Common pattern: vor einer Woche (a week ago), vor einem Monat (a month ago), vor einem Jahr (a year ago). Notice how the dative article changes: einem (masc/neut), einer (fem). 'Vor' always takes dative in time expressions. Don't confuse it with 'bevor' (before — a conjunction): 'Bevor ich gehe, esse ich' (Before I go, I eat)."
+      },
+      {
+        "id": "eg_te7",
+        "question": "Ich komme _____ dem Essen.",
+        "translation": "(I'll come after the meal)",
+        "options": [
+          "nach",
+          "vor",
+          "seit",
+          "während"
+        ],
+        "correct": "nach",
+        "explanation": "'Nach' + dative means 'after' in time expressions: nach dem Essen (after the meal), nach der Arbeit (after work), nach dem Unterricht (after class). It's one of the most reliable dative prepositions in German. The opposite is 'vor' + dative: vor dem Essen (before the meal). These two form a perfect pair. Note: 'nach' also means 'to' with cities/countries without articles: 'Ich fahre nach Berlin' — a completely different usage that confuses many learners."
+      },
+      {
+        "id": "eg_te8",
+        "question": "_____ des Unterrichts darf man nicht sprechen.",
+        "translation": "(During the lesson one must not speak)",
+        "options": [
+          "Während",
+          "Seit",
+          "Nach",
+          "Vor"
+        ],
+        "correct": "Während",
+        "explanation": "'Während' (during) takes the genitive case — it's one of the key genitive prepositions that advanced learners must master. 'Während des Unterrichts' not 'während dem Unterricht' (though the dative is increasingly heard in casual speech, the genitive remains standard). Other genitive time prepositions: 'innerhalb' (within), 'außerhalb' (outside of), 'statt/anstatt' (instead of). 'Während' can also function as a conjunction meaning 'while': 'Während ich lerne, hört sie Musik.'"
+      },
+      {
+        "id": "eg_te9",
+        "question": "Ich bin _____ Morgen bis Abend in der Bibliothek.",
+        "translation": "(I am in the library from morning until evening)",
+        "options": [
+          "von",
+          "seit",
+          "ab",
+          "nach"
+        ],
+        "correct": "von",
+        "explanation": "'Von...bis' is the German pair for 'from...to/until' in time expressions: von Montag bis Freitag, von 8 bis 17 Uhr, von Morgen bis Abend. This construction is extremely common and always uses 'von' as the starting point. Don't confuse with 'ab' (from...onwards): 'ab Montag' means 'from Monday onwards' (with no endpoint specified). The 'von...bis' pair implies both a clear start and end, while 'ab' is open-ended."
+      },
+      {
+        "id": "eg_te10",
+        "question": "Sie kommt _____ eine Stunde zurück.",
+        "translation": "(She'll be back in an hour)",
+        "options": [
+          "in",
+          "nach",
+          "um",
+          "vor"
+        ],
+        "correct": "in",
+        "explanation": "'In' + dative is used for future time spans: 'in einer Stunde' (in an hour), 'in zwei Wochen' (in two weeks), 'in drei Monaten' (in three months). This is one area where German and English parallel each other nicely. However, note the dative endings: einer Stunde (fem), einem Monat (masc), zwei Wochen (plural). 'Nach' works similarly but tends to refer to sequence ('after') rather than duration into the future."
+      },
+      {
+        "id": "eg_te11",
+        "question": "Wir fliegen _____ Wochenende nach Paris.",
+        "translation": "(We're flying to Paris this weekend)",
+        "options": [
+          "am",
+          "im",
+          "zum",
+          "das"
+        ],
+        "correct": "am",
+        "explanation": "'Am Wochenende' (on/at the weekend) is the standard expression — 'am' because it uses the same day-based preposition rule. Germans treat 'Wochenende' like a day reference. Common time expressions with 'am': am Morgen (in the morning), am Nachmittag (in the afternoon), am Abend (in the evening). But: in der Nacht (at night) — night breaks the pattern and uses 'in der.' This irregularity trips up many learners, so commit 'in der Nacht' to memory as an exception."
+      },
+      {
+        "id": "eg_te12",
+        "question": "Ich gehe _____ Abend gern spazieren.",
+        "translation": "(I like to go for a walk in the evening)",
+        "options": [
+          "abends",
+          "Abends",
+          "am Abends",
+          "im Abend"
+        ],
+        "correct": "abends",
+        "explanation": "'Abends' (in the evenings, every evening) is an adverb formed by adding -s to the time noun, indicating habitual/repeated actions. This pattern works for all parts of day: morgens (in the mornings), mittags (at noon), nachmittags (in the afternoons), abends (in the evenings), nachts (at night). These are always lowercase as adverbs. Compare: 'am Abend' (on a specific evening) vs. 'abends' (evenings in general). The -s ending signals repetition — a uniquely German feature."
+      },
+      {
+        "id": "eg_te13",
+        "question": "Die Besprechung findet _____ statt.",
+        "translation": "(The meeting takes place the day after tomorrow)",
+        "options": [
+          "übermorgen",
+          "vorgestern",
+          "neulich",
+          "demnächst"
+        ],
+        "correct": "übermorgen",
+        "explanation": "'Übermorgen' (the day after tomorrow) is a classic German compound: über (over/beyond) + morgen (tomorrow). Similarly, 'vorgestern' = vor (before) + gestern (yesterday) = the day before yesterday. English needs entire phrases for what German expresses in one compound word. Other useful ones: 'heutzutage' (nowadays), 'demnächst' (soon/shortly), 'neulich' (recently), 'kürzlich' (recently/lately). German's ability to compress time concepts into single words is one of its greatest efficiencies."
+      },
+      {
+        "id": "eg_te14",
+        "question": "Er arbeitet _____ zu spät.",
+        "translation": "(He always works too late)",
+        "options": [
+          "immer",
+          "nie",
+          "selten",
+          "manchmal"
+        ],
+        "correct": "immer",
+        "explanation": "'Immer' (always) is a frequency adverb. The German frequency scale: immer (always) > meistens (mostly) > oft/häufig (often) > manchmal (sometimes) > selten (rarely) > nie/niemals (never). In a German sentence, frequency adverbs typically come after the verb: 'Er arbeitet immer zu spät.' But they can also start the sentence with inversion: 'Immer arbeitet er zu spät.' The position creates subtle emphasis differences — fronted position stresses the frequency more strongly."
+      },
+      {
+        "id": "eg_te15",
+        "question": "_____ Weihnachten besuchen wir die Großeltern.",
+        "translation": "(At Christmas we visit the grandparents)",
+        "options": [
+          "An",
+          "Am",
+          "Im",
+          "Zu"
+        ],
+        "correct": "An",
+        "explanation": "'An Weihnachten' (at Christmas) uses the preposition 'an' for holidays — though regional variation exists: 'zu Weihnachten' is common in northern Germany and Austria, while 'an Weihnachten' dominates in southern Germany. Both are correct! Other holiday expressions: an/zu Ostern (at Easter), an Silvester (on New Year's Eve), am Neujahrstag (on New Year's Day). German treats holidays as points in time (an) rather than periods (in/im). Note: 'an' here takes the dative, making it 'an Weihnachten' (no article needed with holiday names)."
+      }
+    ]
+  },
+  {
+    "key": "numbers_quantities",
+    "name": "Numbers & Quantities",
+    "description": "Zahlen und Mengenangaben",
+    "iconName": "number",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "eg_nq1",
+        "question": "Ich hätte gern _____ Kilo Äpfel.",
+        "translation": "(I'd like two kilos of apples)",
+        "options": [
+          "zwei",
+          "zwo",
+          "zweite",
+          "beiden"
+        ],
+        "correct": "zwei",
+        "explanation": "'Zwei' is the cardinal number 2. In German, units of measurement like 'Kilo,' 'Meter,' 'Liter' don't change in plural after numbers: 'zwei Kilo' not 'zwei Kilos.' This is different from English! Also, there's no 'of' between the number and the noun: 'zwei Kilo Äpfel' not 'zwei Kilo von Äpfel.' In spoken German, you might hear 'zwo' instead of 'zwei' to avoid confusion with 'drei' on the phone — but 'zwei' is standard written form."
+      },
+      {
+        "id": "eg_nq2",
+        "question": "Das kostet dreihundert_____ Euro.",
+        "translation": "(That costs three hundred and fifty euros)",
+        "options": [
+          "fünfzig",
+          "und fünfzig",
+          "fuffzig",
+          "fünfzigste"
+        ],
+        "correct": "fünfzig",
+        "explanation": "German numbers above 100 don't use 'und' between hundreds and tens — that's different from numbers 21-99 where 'und' is mandatory (einundzwanzig = 21). 'Dreihundertfünfzig' (350) is one continuous word. This contrasts with English 'three hundred AND fifty.' German number words are famously long compounds: 'dreihundertsiebenundachtzigtausendvierhundertzweiundsechzig' (387,462). In practice, digits are used for large numbers, but knowing the spoken form is essential for daily transactions."
+      },
+      {
+        "id": "eg_nq3",
+        "question": "Ich bin am _____zehnten Mai geboren.",
+        "translation": "(I was born on the fifteenth of May)",
+        "options": [
+          "fünf",
+          "fünft",
+          "fünfzehn",
+          "fünf"
+        ],
+        "correct": "fünf",
+        "explanation": "Ordinal numbers (first, second, third...) in German are formed by adding '-te' (1-19) or '-ste' (20+) to the cardinal. 'Der fünfzehnte Mai' = the fifteenth of May. For dates, ordinals always take the definite article and adjective endings: am fünfzehnten (dative). The question uses 'am ___zehnten' where you need 'fünf' to complete 'fünfzehnten.' Key exceptions: 'erste' (1st), 'dritte' (3rd), 'siebte' (7th), 'achte' (8th) — these don't follow the regular pattern exactly."
+      },
+      {
+        "id": "eg_nq4",
+        "question": "Ein _____ der Studenten hat die Prüfung bestanden.",
+        "translation": "(A third of the students passed the exam)",
+        "options": [
+          "Drittel",
+          "Dritte",
+          "Drittes",
+          "Dritter"
+        ],
+        "correct": "Drittel",
+        "explanation": "Fractions in German use '-tel' (from Teil = part): ein Drittel (a third), ein Viertel (a quarter), ein Fünftel (a fifth). 'Halb/e' is used for 'half': 'die Hälfte' (the half), 'ein halbes Kilo' (half a kilo). Fractions are neuter nouns: 'ein Drittel' (das Drittel). 'Anderthalb' or 'eineinhalb' both mean 'one and a half.' For percentages: 'Prozent' stays singular — 'fünfzig Prozent' (fifty percent), never 'Prozente.' These quantity words are essential for everyday shopping, cooking, and academic contexts."
+      },
+      {
+        "id": "eg_nq5",
+        "question": "Ich brauche _____ Milch für den Kuchen.",
+        "translation": "(I need some milk for the cake)",
+        "options": [
+          "etwas",
+          "einige",
+          "ein paar",
+          "wenige"
+        ],
+        "correct": "etwas",
+        "explanation": "'Etwas' (some/a bit of) is used with uncountable nouns: etwas Milch, etwas Zucker, etwas Geld. For countable nouns, use 'einige' (some/several) or 'ein paar' (a few): einige Bücher, ein paar Äpfel. Note: 'ein paar' (lowercase) means 'a few,' while 'ein Paar' (capitalized) means 'a pair/couple of.' This capitalization distinction changes the meaning completely! Other quantity words: 'viel/viele' (much/many), 'wenig/wenige' (little/few), 'genug' (enough)."
+      },
+      {
+        "id": "eg_nq6",
+        "question": "Es gibt _____ Leute hier als gestern.",
+        "translation": "(There are more people here than yesterday)",
+        "options": [
+          "mehr",
+          "mehrere",
+          "viele",
+          "meisten"
+        ],
+        "correct": "mehr",
+        "explanation": "'Mehr' (more) is the comparative of 'viel' (much/many) and is indeclinable — it never takes endings! 'Mehr Leute' (more people), 'mehr Geld' (more money), 'mehr Zeit' (more time). Compare with 'mehrere' (several), which is a different word entirely: 'mehrere Leute' = several people. The superlative 'am meisten' (the most) is also commonly used: 'Die meisten Leute' (most people). 'Mehr...als' creates comparisons: 'mehr als hundert' (more than a hundred)."
+      },
+      {
+        "id": "eg_nq7",
+        "question": "Wir brauchen _____ noch drei Stühle.",
+        "translation": "(We still need three more chairs)",
+        "options": [
+          "noch",
+          "schon",
+          "erst",
+          "nur"
+        ],
+        "correct": "noch",
+        "explanation": "'Noch' + number means 'more/additional': 'noch drei Stühle' = three more chairs. 'Noch' is incredibly versatile in quantity contexts: 'noch etwas' (some more), 'noch einmal' (once more), 'noch ein Bier' (another beer). Compare with 'schon' (already): 'Hast du schon drei?' (Do you already have three?). And 'erst' (only/just so far): 'Ich habe erst zwei' (I only have two so far). These three adverbs — noch, schon, erst — form a crucial quantity/expectation trio."
+      },
+      {
+        "id": "eg_nq8",
+        "question": "Jede_____ Student muss die Arbeit abgeben.",
+        "translation": "(Every student must submit the assignment)",
+        "options": [
+          "r",
+          "s",
+          "m",
+          "n"
+        ],
+        "correct": "r",
+        "explanation": "'Jeder' (every/each, masculine), 'jede' (feminine), 'jedes' (neuter) — these determiners follow the strong declension pattern like 'dieser.' 'Jeder Student' (every student — masculine nominative) takes '-r.' It changes with case: jeden Studenten (accusative), jedem Studenten (dative), jedes Studenten (genitive). 'Jeder' is always singular in German, just like 'every' in English. For plural, use 'alle': 'alle Studenten' (all students). Common mistake: using 'jeder' with plural nouns — always singular!"
+      },
+      {
+        "id": "eg_nq9",
+        "question": "Es waren _____ hundert Gäste auf der Party.",
+        "translation": "(There were about a hundred guests at the party)",
+        "options": [
+          "ungefähr",
+          "genau",
+          "mindestens",
+          "höchstens"
+        ],
+        "correct": "ungefähr",
+        "explanation": "'Ungefähr' (approximately/about) is the most common approximation word in German. Synonyms include 'circa/ca.' (circa), 'etwa' (roughly), 'rund' (around). For exact quantities: 'genau' (exactly). For minimums: 'mindestens' (at least). For maximums: 'höchstens' (at most). These precision modifiers are essential for natural-sounding German: 'Es dauert ungefähr zwei Stunden' (It takes about two hours). In academic/formal German, 'circa' is preferred over 'ungefähr.'"
+      },
+      {
+        "id": "eg_nq10",
+        "question": "Die Temperatur liegt bei minus _____ Grad.",
+        "translation": "(The temperature is at minus five degrees)",
+        "options": [
+          "fünf",
+          "fünfte",
+          "fünften",
+          "fünftem"
+        ],
+        "correct": "fünf",
+        "explanation": "Temperature uses cardinal numbers without declension: 'minus fünf Grad' (minus five degrees), 'plus zwanzig Grad' (plus twenty degrees). 'Grad' stays singular after numbers in German: 'dreißig Grad' not 'dreißig Grade.' Scientific German uses Celsius by default (unlike the US). Key temperature vocabulary: 'Es sind 20 Grad' (It's 20 degrees), 'unter null' (below zero), 'über null' (above zero). Weather reports are a great context for practicing numbers in German."
+      },
+      {
+        "id": "eg_nq11",
+        "question": "Das Buch hat über _____ Seiten.",
+        "translation": "(The book has over five hundred pages)",
+        "options": [
+          "fünfhundert",
+          "fünf hundert",
+          "fünfhunderter",
+          "fünfhundertem"
+        ],
+        "correct": "fünfhundert",
+        "explanation": "Hundreds in German are written as one word: zweihundert (200), dreihundert (300), fünfhundert (500). No spaces, no hyphens. 'Über' (over/more than) and 'unter' (under/less than) are common with quantities: 'über tausend' (over a thousand), 'unter fünfzig' (under fifty). German uses periods for thousands (1.000) and commas for decimals (3,5) — exactly opposite to English! This catches many learners off guard when reading prices or statistics."
+      },
+      {
+        "id": "eg_nq12",
+        "question": "Ich nehme _____ Scheiben Brot.",
+        "translation": "(I'll take a couple of slices of bread)",
+        "options": [
+          "ein paar",
+          "ein Paar",
+          "einige",
+          "manche"
+        ],
+        "correct": "ein paar",
+        "explanation": "'Ein paar' (lowercase, a few/a couple) vs. 'ein Paar' (capitalized, a pair/couple) — this distinction is crucial! 'Ein paar Scheiben' = a few slices (roughly 2-5). 'Ein Paar Schuhe' = a pair of shoes (exactly 2). Counting/portioning words: 'eine Scheibe' (a slice), 'ein Stück' (a piece), 'eine Tasse' (a cup), 'ein Glas' (a glass), 'eine Flasche' (a bottle), 'eine Dose' (a can). These counters are essential for ordering food and shopping in German."
+      },
+      {
+        "id": "eg_nq13",
+        "question": "_____ der Bevölkerung spricht Deutsch.",
+        "translation": "(Half the population speaks German)",
+        "options": [
+          "Die Hälfte",
+          "Das Halbe",
+          "Ein Halb",
+          "Die Halbe"
+        ],
+        "correct": "Die Hälfte",
+        "explanation": "'Die Hälfte' (the half) is a feminine noun used for proportions: 'die Hälfte der Bevölkerung' (half the population). Note the genitive construction! As an adjective, 'halb' works differently: 'eine halbe Stunde' (half an hour), 'ein halbes Kilo' (half a kilo). 'Halb' must agree with the noun's gender: halber (masc nom), halbe (fem nom), halbes (neut nom). For time: 'halb drei' means 2:30 (half TO three) — this trips up nearly every English speaker because English says 'half past two.'"
+      },
+      {
+        "id": "eg_nq14",
+        "question": "Er hat _____ Geschwister — zwei Brüder und eine Schwester.",
+        "translation": "(He has three siblings — two brothers and one sister)",
+        "options": [
+          "drei",
+          "dritte",
+          "dritten",
+          "dreien"
+        ],
+        "correct": "drei",
+        "explanation": "Cardinal numbers 1-12 are the building blocks: eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn, elf, zwölf. From 13-19, add '-zehn': dreizehn (13), vierzehn (14). From 21-99, the ones digit comes FIRST with 'und': 'einundzwanzig' (21 = one-and-twenty). This reversed order is one of the most challenging aspects for English speakers. Cardinal numbers are normally not declined, except 'ein/eine' which takes gender: 'ein Bruder' (one brother), 'eine Schwester' (one sister)."
+      },
+      {
+        "id": "eg_nq15",
+        "question": "Ich möchte _____ Kaffee, bitte.",
+        "translation": "(I'd like a little coffee, please)",
+        "options": [
+          "ein bisschen",
+          "ein wenig",
+          "etwas",
+          "ein bisschen"
+        ],
+        "correct": "ein bisschen",
+        "explanation": "'Ein bisschen' (a little bit) is the most casual way to express a small quantity. Synonyms from casual to formal: 'ein bisschen' (a little bit) → 'ein wenig' (a little) → 'etwas' (some/somewhat). All three work with uncountable nouns. 'Ein bisschen Kaffee, ein wenig Zucker, etwas Milch.' In conversation, Germans overwhelmingly prefer 'ein bisschen.' Note: 'bisschen' comes from 'Biss' (bite) — literally 'a little bite's worth.' This charming etymology helps remember the double-s spelling."
+      }
+    ]
+  },
+  {
+    "key": "diminutives",
+    "name": "Diminutives",
+    "description": "Verkleinerungsformen",
+    "iconName": "sparkles",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_dm1",
+        "question": "Das _____ spielt im Garten.",
+        "translation": "(The little child is playing in the garden)",
+        "options": [
+          "Kindchen",
+          "Kindlein",
+          "Kindschen",
+          "Kindlien"
+        ],
+        "correct": "Kindchen",
+        "explanation": "'-chen' is the most common diminutive suffix in German, turning any noun into a cute, small version. 'Kind' (child) → 'Kindchen' (little child). The critical rule: ALL '-chen' diminutives are NEUTER (das), regardless of the original gender! 'Die Katze' (the cat, feminine) → 'das Kätzchen' (the kitten, neuter). This gender change is absolute and non-negotiable. The vowels a, o, u typically gain an umlaut: Haus → Häuschen, Hund → Hündchen. '-chen' diminutives never take a plural -s."
+      },
+      {
+        "id": "eg_dm2",
+        "question": "Sie hat ein kleines _____ auf dem Tisch.",
+        "translation": "(She has a little flower on the table)",
+        "options": [
+          "Blümchen",
+          "Blümeling",
+          "Blumchen",
+          "Blümechen"
+        ],
+        "correct": "Blümchen",
+        "explanation": "When adding '-chen,' the base vowel often gets an umlaut: Blume (flower) → Blümchen (little flower). The 'e' at the end of 'Blume' drops before '-chen.' This vowel change pattern: a → ä (Katze → Kätzchen), o → ö (Dose → Döschen), u → ü (Blume → Blümchen). Not all nouns umlaut — those without a, o, or u stay unchanged: Bett → Bettchen. The umlaut adds phonetic cuteness, reinforcing the diminutive meaning through sound itself."
+      },
+      {
+        "id": "eg_dm3",
+        "question": "Das _____ singt wunderschön.",
+        "translation": "(The little bird sings beautifully)",
+        "options": [
+          "Vögelchen",
+          "Vogelchen",
+          "Vögelein",
+          "Vogelein"
+        ],
+        "correct": "Vögelchen",
+        "explanation": "'Vogel' (bird) → 'Vögelchen' (little bird/birdie). The 'o' umlauts to 'ö.' German diminutives serve multiple purposes beyond size: they express affection (Schätzchen = darling), food portions (Brötchen = bread roll), and even create entirely new meanings. 'Brötchen' is so established that most Germans don't even think of it as a diminutive anymore — it IS the standard word for 'bread roll.' Similarly, 'Mädchen' (girl) is etymologically 'little maid' (Magd → Mädchen) but is simply 'girl' in modern German."
+      },
+      {
+        "id": "eg_dm4",
+        "question": "Möchtest du ein _____ zum Frühstück?",
+        "translation": "(Would you like a bread roll for breakfast?)",
+        "options": [
+          "Brötchen",
+          "Brotchen",
+          "Brötlein",
+          "Brotlein"
+        ],
+        "correct": "Brötchen",
+        "explanation": "'Brot' (bread) → 'Brötchen' (bread roll) is a diminutive that has become a standalone word. Germans eat Brötchen daily for breakfast — it's a cultural staple. Regional variations exist: 'Semmel' (Bavaria/Austria), 'Wecken' (Swabia), 'Schrippe' (Berlin). This shows how deeply diminutives are integrated into German daily vocabulary. Other food diminutives: 'Würstchen' (small sausage), 'Hörnchen' (croissant, literally 'little horn'), 'Plätzchen' (cookie, from 'Platz')."
+      },
+      {
+        "id": "eg_dm5",
+        "question": "Das _____ sitzt auf dem Sofa.",
+        "translation": "(The kitten is sitting on the sofa)",
+        "options": [
+          "Kätzchen",
+          "Katzchen",
+          "Kätzlein",
+          "Katzechen"
+        ],
+        "correct": "Kätzchen",
+        "explanation": "'Katze' (cat, feminine) → 'Kätzchen' (kitten, neuter). Remember: the gender ALWAYS changes to neuter with '-chen.' The final '-e' of 'Katze' drops, and 'a' umlauts to 'ä.' Animal diminutives are very common in German: Hündchen (puppy), Häschen (bunny), Mäuschen (little mouse), Entchen (duckling). The '-chen' suffix makes animals sound affectionate and cute — Germans often use diminutives when speaking to pets or about baby animals."
+      },
+      {
+        "id": "eg_dm6",
+        "question": "Mein _____, komm bitte her!",
+        "translation": "(My darling, come here please!)",
+        "options": [
+          "Schätzchen",
+          "Schatzchen",
+          "Schätzlein",
+          "Schatzechen"
+        ],
+        "correct": "Schätzchen",
+        "explanation": "'Schatz' (treasure) → 'Schätzchen' (darling/sweetheart). Diminutives are extensively used as terms of endearment in German. Common ones: 'Häschen' (bunny), 'Mäuschen' (little mouse), 'Herzchen' (little heart), 'Engelchen' (little angel). The diminutive suffix softens the word and adds warmth. German speakers use these affectionate diminutives with partners, children, and close friends. Some have become so common that they function as standalone nicknames: 'Hasi' (bunny), 'Mausi' (mousey) — using the casual '-i' ending instead."
+      },
+      {
+        "id": "eg_dm7",
+        "question": "Wir wohnen in einem kleinen _____.",
+        "translation": "(We live in a little house)",
+        "options": [
+          "Häuschen",
+          "Hauslein",
+          "Hauschen",
+          "Häuslein"
+        ],
+        "correct": "Häuschen",
+        "explanation": "'Haus' (house) → 'Häuschen' (little house/cottage). The umlaut au → äu follows the same pattern. 'Häuschen' evokes cozy, charming imagery — think fairy-tale cottages. The expression 'ein Häuschen im Grünen' (a little house in the countryside) is a common German dream. Note: the alternative suffix '-lein' exists but is more literary/poetic: 'Häuslein' appears in fairy tales. In modern spoken German, '-chen' dominates everywhere except southern dialects where '-l' or '-le' is preferred: 'Häusle' (Swabian)."
+      },
+      {
+        "id": "eg_dm8",
+        "question": "Das ist ein wunderschönes Lieder_____.",
+        "translation": "(That is a beautiful little songbook)",
+        "options": [
+          "büchlein",
+          "buchlein",
+          "büchchen",
+          "buchchen"
+        ],
+        "correct": "büchlein",
+        "explanation": "'-lein' is the second diminutive suffix, more literary and formal than '-chen': Buch (book) → Büchlein (little book). Like '-chen,' '-lein' makes ALL nouns neuter and triggers umlauts. '-lein' sounds more poetic and appears frequently in: fairy tales ('Rumpelstilzchen,' 'Schneewittchen'), songs ('Hänschen klein'), and traditional texts. In everyday speech, '-chen' has almost completely replaced '-lein' except in fixed expressions. Regional dialects use '-l,' '-le,' '-li,' or '-erl' instead."
+      },
+      {
+        "id": "eg_dm9",
+        "question": "Das _____ spielt mit einer Puppe.",
+        "translation": "(The girl is playing with a doll)",
+        "options": [
+          "Mädchen",
+          "Mädechen",
+          "Mädlein",
+          "Magdchen"
+        ],
+        "correct": "Mädchen",
+        "explanation": "'Mädchen' (girl) is historically a diminutive of 'Magd' (maid/maiden) but has completely replaced the original word. This creates a famous grammar puzzle: 'das Mädchen' is neuter because of '-chen,' but refers to a female person. When using pronouns, you can say 'es' (grammatically correct) or 'sie' (semantically correct): 'Das Mädchen hat ihren/seinen Hut vergessen.' Modern German increasingly accepts 'sie/ihr' for 'Mädchen,' though 'es/sein' remains grammatically standard."
+      },
+      {
+        "id": "eg_dm10",
+        "question": "Zu Weihnachten backen wir viele _____.",
+        "translation": "(At Christmas we bake many cookies)",
+        "options": [
+          "Plätzchen",
+          "Platzchen",
+          "Plätzechen",
+          "Plätzlein"
+        ],
+        "correct": "Plätzchen",
+        "explanation": "'Platz' (place/spot) → 'Plätzchen' (cookie/biscuit) — the meaning has shifted entirely from the original! A 'Plätzchen' is specifically a flat, small Christmas cookie in German tradition. 'Plätzchen backen' (baking cookies) is a beloved German Christmas tradition. The plural of '-chen' diminutives is identical to singular: 'das Plätzchen' → 'die Plätzchen' (no change!). This zero-plural pattern applies to ALL '-chen' and '-lein' words: ein Brötchen, zwei Brötchen, hundert Brötchen."
+      },
+      {
+        "id": "eg_dm11",
+        "question": "Ihr _____ heißt Max.",
+        "translation": "(Her little dog is called Max)",
+        "options": [
+          "Hündchen",
+          "Hundchen",
+          "Hündlein",
+          "Hundechen"
+        ],
+        "correct": "Hündchen",
+        "explanation": "'Hund' (dog) → 'Hündchen' (little dog/puppy). The 'u' umlauts to 'ü.' Pet names in German frequently use diminutives to express affection. Note that 'Welpe' (puppy) is the technical term for a young dog, while 'Hündchen' is the affectionate diminutive of any small or cute dog. Germans often combine diminutives with adjectives for extra emphasis: 'ein süßes Hündchen' (a sweet little doggy). The double diminution (klein + -chen) is also common: 'ein kleines Hündchen' — somewhat redundant but emotionally intensifying."
+      },
+      {
+        "id": "eg_dm12",
+        "question": "Er schenkte ihr ein _____ zum Valentinstag.",
+        "translation": "(He gave her a little heart for Valentine's Day)",
+        "options": [
+          "Herzchen",
+          "Herzschen",
+          "Härzchen",
+          "Herzlein"
+        ],
+        "correct": "Herzchen",
+        "explanation": "'Herz' (heart) → 'Herzchen' (little heart/sweetheart). Note: 'Herz' does NOT umlaut because 'e' doesn't change. The word 'Herzchen' doubles as a term of endearment: 'Mein Herzchen!' (My sweetheart!). The noun 'Herz' itself is unusual — it's one of the few German nouns with mixed declension (n-declension in everything except nominative/accusative singular). Diminutive forms eliminate this complexity: 'das Herzchen' follows standard neuter patterns."
+      },
+      {
+        "id": "eg_dm13",
+        "question": "Die _____ schauen aus dem Nest.",
+        "translation": "(The little birds are looking out of the nest)",
+        "options": [
+          "Vögelchen",
+          "Vögelechen",
+          "Vogelchen",
+          "Vögelchens"
+        ],
+        "correct": "Vögelchen",
+        "explanation": "Plural of '-chen' diminutives: there is NO change! 'Das Vögelchen' (one little bird) → 'die Vögelchen' (several little birds). The article changes from 'das' to 'die' (plural), but the noun stays identical. This applies universally: Brötchen (singular) = Brötchen (plural), Mädchen (singular) = Mädchen (plural). Context or the article tells you whether it's singular or plural. This zero-plural rule is one of German's simplest — no exceptions for any '-chen' or '-lein' diminutive."
+      },
+      {
+        "id": "eg_dm14",
+        "question": "In Bayern sagt man '_____ ' statt 'Brötchen'.",
+        "translation": "(In Bavaria they say 'Semmel' instead of 'Brötchen')",
+        "options": [
+          "Semmel",
+          "Wecken",
+          "Schrippe",
+          "Rundstück"
+        ],
+        "correct": "Semmel",
+        "explanation": "Regional diminutive variants reflect Germany's rich dialect landscape. While standard German uses '-chen,' dialects have their own suffixes: Bavarian/Austrian '-l' or '-erl' (Sackerl = little bag), Swabian '-le' (Spätzle = little sparrows/noodles), Swiss German '-li' (Müesli = little muesli). 'Semmel' (Bavarian for bread roll) isn't a diminutive itself but shows how regional food terms vary. This diversity is a defining feature of German-speaking culture — the same item can have dozens of regional names."
+      },
+      {
+        "id": "eg_dm15",
+        "question": "Das Sternlein/_____ leuchtet am Himmel.",
+        "translation": "(The little star shines in the sky)",
+        "options": [
+          "Sternchen",
+          "Starchen",
+          "Sternlinen",
+          "Sternichen"
+        ],
+        "correct": "Sternchen",
+        "explanation": "'Stern' (star) → 'Sternchen' (little star, also asterisk *). The '-chen' diminutive has expanded into technical vocabulary: 'Sternchen' means the asterisk symbol (*) in German typography. Similarly, 'Häkchen' (little hook) means checkmark (✓). This shows how diminutives transcend mere 'smallness' — they create new technical meanings. The song 'Funkel, funkel, kleines Stern' (Twinkle, Twinkle, Little Star) often uses 'Sternlein' in the poetic version, showing '-lein' survives in songs and literature."
+      }
+    ]
+  },
+  {
+    "key": "word_formation",
+    "name": "Word Formation",
+    "description": "Wortbildung",
+    "iconName": "puzzlepiece",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_wf1",
+        "question": "Die _____ war sehr interessant.",
+        "translation": "(The lecture was very interesting)",
+        "options": [
+          "Vorlesung",
+          "Vorlesing",
+          "Vorlessung",
+          "Vorläsung"
+        ],
+        "correct": "Vorlesung",
+        "explanation": "'Vorlesung' (lecture) = vor (before/in front of) + Lesung (reading) → literally 'reading aloud (to an audience).' German word formation through prefixes and suffixes is systematic and powerful. The prefix 'vor-' adds meanings like 'before/forward/preliminary': Vorname (first name), Vorteil (advantage), Vorschlag (suggestion). Once you recognize these building blocks, you can decode thousands of compound words. The suffix '-ung' transforms verbs into feminine nouns: lesen → Lesung, bilden → Bildung, ordnen → Ordnung."
+      },
+      {
+        "id": "eg_wf2",
+        "question": "Die _____ dieses Problems ist kompliziert.",
+        "translation": "(The solution to this problem is complicated)",
+        "options": [
+          "Lösung",
+          "Lösing",
+          "Löslung",
+          "Lösheit"
+        ],
+        "correct": "Lösung",
+        "explanation": "The suffix '-ung' is one of the most productive in German — it turns verbs into feminine nouns (always die!). lösen (to solve) → Lösung (solution), wohnen (to live) → Wohnung (apartment), melden (to report) → Meldung (report), leisten (to achieve) → Leistung (achievement). This pattern is extremely reliable: whenever you see '-ung,' you know it's feminine, and you can usually trace it back to a verb. Master '-ung' and you instantly understand hundreds of abstract nouns."
+      },
+      {
+        "id": "eg_wf3",
+        "question": "Die _____ des Lehrers ist bewundernswert.",
+        "translation": "(The teacher's patience is admirable)",
+        "options": [
+          "Geduld",
+          "Geduldheit",
+          "Geduldigkeit",
+          "Geduldnis"
+        ],
+        "correct": "Geduld",
+        "explanation": "Not all abstract nouns follow the '-ung' pattern. 'Geduld' (patience) comes from 'dulden' (to endure/tolerate) with the prefix 'ge-.' The prefix 'ge-' creates collective or result nouns: Gebirge (mountain range), Gebäude (building), Geschrei (screaming). Other abstract noun suffixes: '-heit' (Freiheit = freedom), '-keit' (Möglichkeit = possibility), '-nis' (Ergebnis = result), '-schaft' (Freundschaft = friendship). Each suffix has its own gender pattern: -heit/-keit/-schaft are always feminine, -nis is always neuter."
+      },
+      {
+        "id": "eg_wf4",
+        "question": "Das ist eine wichtige _____.",
+        "translation": "(That is an important discovery)",
+        "options": [
+          "Entdeckung",
+          "Entdeckheit",
+          "Entdecknis",
+          "Entdeckschaft"
+        ],
+        "correct": "Entdeckung",
+        "explanation": "'Entdeckung' (discovery) = ent- (prefix indicating reversal/removal) + decken (to cover) + -ung (noun suffix). Literally: 'un-covering.' The prefix 'ent-' is inseparable and means removal/reversal: entfernen (to remove), entwickeln (to develop), enttäuschen (to disappoint). Combined with '-ung': Entfernung (distance/removal), Entwicklung (development), Enttäuschung (disappointment). Understanding prefix + root + suffix lets you build and decode vocabulary systematically rather than memorizing each word individually."
+      },
+      {
+        "id": "eg_wf5",
+        "question": "Die _____ zwischen den Ländern ist stark.",
+        "translation": "(The friendship between the countries is strong)",
+        "options": [
+          "Freundschaft",
+          "Freundheit",
+          "Freundnis",
+          "Freundung"
+        ],
+        "correct": "Freundschaft",
+        "explanation": "'-schaft' creates feminine abstract nouns denoting states, conditions, or groups: Freund (friend) → Freundschaft (friendship), Wissen (knowledge) → Wissenschaft (science), Land (country) → Landschaft (landscape), Gesellschaft (society/company). '-schaft' nouns are ALWAYS feminine (die). Compare with English '-ship' (friendship) — they share the same Germanic root! Other '-schaft' words: Mannschaft (team), Botschaft (embassy/message), Nachbarschaft (neighborhood), Wirtschaft (economy)."
+      },
+      {
+        "id": "eg_wf6",
+        "question": "Die _____ der Kinder ist grenzenlos.",
+        "translation": "(Children's creativity is limitless)",
+        "options": [
+          "Kreativität",
+          "Kreativheit",
+          "Kreativung",
+          "Kreativschaft"
+        ],
+        "correct": "Kreativität",
+        "explanation": "'-ität' is the German equivalent of English '-ity' and creates feminine abstract nouns from adjectives: kreativ → Kreativität (creativity), aktiv → Aktivität (activity), real → Realität (reality). These words are almost always borrowed from Latin/French roots. Compare with native German suffixes: '-heit/-keit' attach to Germanic adjectives (schön → Schönheit, möglich → Möglichkeit), while '-ität' attaches to Latinate ones. Both are always feminine. Recognizing this Latin layer helps decode academic and scientific vocabulary."
+      },
+      {
+        "id": "eg_wf7",
+        "question": "Das _____ war ein voller Erfolg.",
+        "translation": "(The result was a complete success)",
+        "options": [
+          "Ergebnis",
+          "Ergebung",
+          "Ergebheit",
+          "Ergebschaft"
+        ],
+        "correct": "Ergebnis",
+        "explanation": "'-nis' creates neuter (or occasionally feminine) nouns: ergeben (to result) → Ergebnis (result, neuter), erleben (to experience) → Erlebnis (experience, neuter), kennen (to know) → Kenntnis (knowledge, feminine). '-nis' plurals add '-se': Ergebnisse, Erlebnisse, Kenntnisse. The prefix 'er-' often indicates completion or achievement: erreichen (to reach/achieve), erfinden (to invent), erklären (to explain). Together, er- + verb + -nis creates 'the result/product of that action.'"
+      },
+      {
+        "id": "eg_wf8",
+        "question": "Die _____ dieses Films war überraschend.",
+        "translation": "(The ending of this film was surprising)",
+        "options": [
+          "Handlung",
+          "Handlei",
+          "Handnis",
+          "Handschaft"
+        ],
+        "correct": "Handlung",
+        "explanation": "'Handlung' (plot/action/storyline) = handeln (to act/deal) + -ung. But notice: the base verb 'handeln' relates to 'Hand' (hand), showing how German chains word formation from concrete to abstract. Hand → handeln (to act/handle) → Handlung (action/plot). Other '-ung' chains from body parts: Auge (eye) → äugeln → Äugelung, Ohr (ear) → horchen → Horchung. This concrete-to-abstract derivation pattern is fundamental to German's expressive power."
+      },
+      {
+        "id": "eg_wf9",
+        "question": "Seine _____ war bewundernswert.",
+        "translation": "(His bravery was admirable)",
+        "options": [
+          "Tapferkeit",
+          "Tapferung",
+          "Tapferschaft",
+          "Tapferniss"
+        ],
+        "correct": "Tapferkeit",
+        "explanation": "'-keit' attaches to adjectives ending in '-ig,' '-lich,' '-bar,' or '-sam': tapfer (brave) → Tapferkeit (bravery), möglich → Möglichkeit, dankbar → Dankbarkeit, aufmerksam → Aufmerksamkeit. '-heit' attaches to other adjectives: schön → Schönheit, krank → Krankheit, dumm → Dummheit. The distinction: -keit follows adjectives with specific endings, -heit follows the rest. Both are ALWAYS feminine. This rule is remarkably consistent and makes German abstract vocabulary highly predictable."
+      },
+      {
+        "id": "eg_wf10",
+        "question": "Der _____ spricht fünf Sprachen.",
+        "translation": "(The translator speaks five languages)",
+        "options": [
+          "Übersetzer",
+          "Übersetzung",
+          "Übersetzerin",
+          "Übersetzler"
+        ],
+        "correct": "Übersetzer",
+        "explanation": "'-er' creates masculine agent nouns (the person who does something): übersetzen (to translate) → Übersetzer (translator, male), lehren → Lehrer (teacher), fahren → Fahrer (driver), arbeiten → Arbeiter (worker). The feminine form adds '-in': Übersetzerin, Lehrerin, Fahrerin. This '-er/-in' pattern is extremely productive — virtually any verb can generate an agent noun. Note: gender-inclusive language in modern German often uses the asterisk 'Übersetzer*in' or colon 'Übersetzer:in.'"
+      },
+      {
+        "id": "eg_wf11",
+        "question": "Das Gerät ist _____bar.",
+        "translation": "(The device is portable)",
+        "options": [
+          "trag",
+          "tragt",
+          "trage",
+          "träg"
+        ],
+        "correct": "trag",
+        "explanation": "'-bar' creates adjectives meaning 'able to be (verb)ed' — like English '-able/-ible': tragen (to carry) → tragbar (portable), essen → essbar (edible), trinken → trinkbar (drinkable), machen → machbar (feasible). This suffix is incredibly productive and always creates the same meaning pattern. Some '-bar' adjectives have evolved beyond the literal: 'wunderbar' (wonderful) from 'Wunder' (miracle/wonder), 'sonderbar' (strange) from 'sonder' (special). '-bar' adjectives can be negated with 'un-': untragbar (unbearable), unessbar (inedible)."
+      },
+      {
+        "id": "eg_wf12",
+        "question": "Diese Aufgabe ist _____los.",
+        "translation": "(This task is pointless)",
+        "options": [
+          "sinn",
+          "sinne",
+          "sinns",
+          "sinner"
+        ],
+        "correct": "sinn",
+        "explanation": "'-los' creates adjectives meaning 'without/less' — like English '-less': Sinn (sense/meaning) → sinnlos (senseless/pointless), Arbeit → arbeitslos (unemployed), Hilfe → hilflos (helpless), Hoffnung → hoffnungslos (hopeless). Note: sometimes a connecting '-s-' appears: arbeitslos, hoffnungslos, bedeutungslos. The opposite suffix '-voll' means 'full of': sinnvoll (meaningful), hoffnungsvoll (hopeful), liebevoll (loving). These -los/-voll pairs are elegant and productive."
+      },
+      {
+        "id": "eg_wf13",
+        "question": "Er hat eine _____ Persönlichkeit.",
+        "translation": "(He has a likeable personality)",
+        "options": [
+          "liebenswürdige",
+          "liebenswürde",
+          "liebenswürdig",
+          "liebenswürdiger"
+        ],
+        "correct": "liebenswürdige",
+        "explanation": "'Liebenswürdig' (likeable/amiable) = lieben (to love) + s + würdig (worthy) — literally 'worthy of being loved.' This is a multi-part compound adjective showing German's love of stacking morphemes. The suffix '-würdig' (worthy of) creates formal adjectives: bemerkenswürdig (noteworthy), sehenswürdig (worth seeing → Sehenswürdigkeit = sight/attraction), denkwürdig (memorable). The adjective needs the ending '-e' here because it follows the indefinite article with a feminine noun: 'eine liebenswürdige Persönlichkeit.'"
+      },
+      {
+        "id": "eg_wf14",
+        "question": "Die _____ ist eine wichtige Fähigkeit.",
+        "translation": "(Flexibility is an important skill)",
+        "options": [
+          "Flexibilität",
+          "Flexibleheit",
+          "Flexiblung",
+          "Flexibelkeit"
+        ],
+        "correct": "Flexibilität",
+        "explanation": "'Flexibilität' shows the Latin '-ität' suffix with a stem change: 'flexibel' → 'Flexibilität.' The '-el' ending changes to '-il-' before '-ität': sensibel → Sensibilität, mobil → Mobilität, stabil → Stabilität. This pattern is consistent for Latinate adjectives. Meanwhile, Germanic adjectives use '-heit/-keit': flexibel can also form 'Flexibleheit' in theory, but the Latin form '-ität' is strongly preferred for Latin-origin words. This dual system reflects German's absorption of both Germanic and Romance vocabulary."
+      },
+      {
+        "id": "eg_wf15",
+        "question": "Das war eine _____ Entscheidung.",
+        "translation": "(That was a thoughtless decision)",
+        "options": [
+          "gedankenlose",
+          "gedankenlos",
+          "gedankenloser",
+          "gedankenlosen"
+        ],
+        "correct": "gedankenlose",
+        "explanation": "'Gedankenlos' (thoughtless) = Gedanken (thoughts) + los (without). When used as an attributive adjective (before a noun), it needs endings: 'eine gedankenlose Entscheidung' (indefinite article + feminine nominative → -e ending). 'Gedankenlos' without ending is the predicative form: 'Die Entscheidung war gedankenlos.' This distinction between attributive (with endings) and predicative (no endings) applies to ALL German adjectives — it's a fundamental rule that doesn't exist in English."
+      }
+    ]
+  },
+  {
+    "key": "prefixes_suffixes",
+    "name": "Prefixes & Suffixes",
+    "description": "Vorsilben und Nachsilben",
+    "iconName": "textformat.abc",
+    "color": "#14b8a6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_pf1",
+        "question": "Ich muss das Formular _____füllen.",
+        "translation": "(I have to fill out the form)",
+        "options": [
+          "aus",
+          "ein",
+          "an",
+          "ab"
+        ],
+        "correct": "aus",
+        "explanation": "'Ausfüllen' (to fill out) = aus- (out) + füllen (to fill). The prefix 'aus-' is separable and indicates completion, outward movement, or finishing: ausgehen (to go out), ausschalten (to turn off), auspacken (to unpack). In present tense, the prefix separates: 'Ich fülle das Formular aus.' In subordinate clauses, it rejoins: 'weil ich das Formular ausfülle.' This separation pattern is unique to German and one of its most challenging features for English speakers."
+      },
+      {
+        "id": "eg_pf2",
+        "question": "Er hat das Buch _____geschrieben.",
+        "translation": "(He has rewritten the book)",
+        "options": [
+          "um",
+          "aus",
+          "ab",
+          "ein"
+        ],
+        "correct": "um",
+        "explanation": "'Umschreiben' (to rewrite/paraphrase) = um- (around/re-) + schreiben (to write). The prefix 'um-' has two personalities: (1) separable: 'umschreiben' (to rewrite) — 'Er schreibt das Buch um'; (2) inseparable: 'umschreiben' (to paraphrase) — 'Er umschreibt das Wort.' The STRESS determines meaning! Separable: 'UMschreiben' (stress on UM); Inseparable: 'umSCHREIben' (stress on SCHREI). This dual nature applies to um-, über-, unter-, durch-, wider-, wieder- — they can be either separable or inseparable with different meanings."
+      },
+      {
+        "id": "eg_pf3",
+        "question": "Das ist völlig _____verständlich.",
+        "translation": "(That is completely incomprehensible)",
+        "options": [
+          "un",
+          "in",
+          "miss",
+          "ent"
+        ],
+        "correct": "un",
+        "explanation": "'Un-' is the most common negation prefix in German, equivalent to English 'un-/in-/im-': verständlich (understandable) → unverständlich (incomprehensible), möglich → unmöglich (impossible), freundlich → unfreundlich (unfriendly). Unlike English which has multiple negation prefixes (un-, in-, im-, ir-, il-), German primarily uses just 'un-.' This makes negation much more systematic! 'Un-' works with adjectives and some nouns: Unsinn (nonsense), Unfall (accident, literally 'un-fall'). It always carries the meaning of negation or the opposite."
+      },
+      {
+        "id": "eg_pf4",
+        "question": "Sie hat das Geschenk _____packt.",
+        "translation": "(She unwrapped the gift)",
+        "options": [
+          "aus",
+          "ein",
+          "um",
+          "ab"
+        ],
+        "correct": "aus",
+        "explanation": "'Auspacken' (to unwrap/unpack) = aus- (out) + packen (to pack). The past participle of separable verbs inserts 'ge-' between prefix and root: aus-ge-packt, ein-ge-packt, an-ge-fangen, auf-ge-macht. This 'ge-' insertion is a key marker separable verbs. Compare with inseparable verbs where there's NO 'ge-': 'verpackt' (not ver-ge-packt), 'entpackt' (not ent-ge-packt). The inseparable prefixes (be-, emp-, ent-, er-, ge-, miss-, ver-, zer-) NEVER take 'ge-' in past participle."
+      },
+      {
+        "id": "eg_pf5",
+        "question": "Der Kuchen ist _____brannt.",
+        "translation": "(The cake is burned)",
+        "options": [
+          "ver",
+          "zer",
+          "ent",
+          "er"
+        ],
+        "correct": "ver",
+        "explanation": "'Verbrennen' (to burn) uses the inseparable prefix 'ver-,' which often indicates a process going wrong, changing state, or doing something incorrectly: verbrannt (burned), verloren (lost), vergessen (forgotten), sich verlaufen (to get lost walking). 'Ver-' is highly productive and carries several meanings: (1) going wrong: verbrennen, verschreiben (to prescribe, but also misspell); (2) change of state: verwandeln (to transform); (3) away/through: verreisen (to travel away); (4) doing to death: verhungern (to starve to death). Context determines which meaning applies."
+      },
+      {
+        "id": "eg_pf6",
+        "question": "Die Vase ist _____brochen.",
+        "translation": "(The vase is shattered)",
+        "options": [
+          "zer",
+          "ver",
+          "ent",
+          "ab"
+        ],
+        "correct": "zer",
+        "explanation": "'Zerbrechen' (to shatter) uses the inseparable prefix 'zer-,' which specifically means destruction, breaking apart, or disintegration. 'Zer-' is one of the most dramatic prefixes: zerreißen (to tear apart), zerstören (to destroy), zerschlagen (to smash), zertrümmern (to demolish). Every 'zer-' word involves something being broken or fragmented. Compare: 'brechen' (to break) → 'zerbrechen' (to shatter into pieces), 'schneiden' (to cut) → 'zerschneiden' (to cut to pieces). 'Zer-' intensifies the violence of the action."
+      },
+      {
+        "id": "eg_pf7",
+        "question": "Das Kind ist schnell _____wachsen.",
+        "translation": "(The child has grown up quickly)",
+        "options": [
+          "auf",
+          "an",
+          "her",
+          "aus"
+        ],
+        "correct": "auf",
+        "explanation": "'Aufwachsen' (to grow up) = auf- (up) + wachsen (to grow). The prefix 'auf-' generally means upward, opening, or beginning: aufstehen (to stand up/get up), aufmachen (to open), aufhören (to stop/cease), aufpassen (to pay attention). 'Auf-' is separable: 'Das Kind wächst schnell auf.' Past participle: auf-ge-wachsen. Many 'auf-' verbs relate to daily routines: aufwachen (to wake up), aufstehen (to get up), aufräumen (to tidy up), aufhängen (to hang up). This makes 'auf-' one of the first prefixes learners should master."
+      },
+      {
+        "id": "eg_pf8",
+        "question": "Ich kann das nicht _____stehen.",
+        "translation": "(I can't understand that)",
+        "options": [
+          "ver",
+          "zer",
+          "ent",
+          "miss"
+        ],
+        "correct": "ver",
+        "explanation": "'Verstehen' (to understand) = ver- + stehen (to stand). Literally 'to stand before/thoroughly' → to comprehend. 'Ver-' is inseparable, so in conjugation: 'Ich verstehe das nicht' (no separation). Compare related 'stehen' compounds: bestehen (to pass/consist of), entstehen (to arise), gestehen (to confess). Each prefix completely transforms the meaning. The inseparable prefixes (be-, emp-, ent-, er-, ge-, miss-, ver-, zer-) are always unstressed. Mnemonic: 'BEginners ENTer GErman VERy ZEalously' — the first letters of the inseparable prefixes!"
+      },
+      {
+        "id": "eg_pf9",
+        "question": "Die Firma hat neue Mitarbeiter _____gestellt.",
+        "translation": "(The company has hired new employees)",
+        "options": [
+          "ein",
+          "an",
+          "aus",
+          "ab"
+        ],
+        "correct": "ein",
+        "explanation": "'Einstellen' (to hire/employ) = ein- (in) + stellen (to place/put). Separable prefix, past participle: ein-ge-stellt. 'Ein-' means inward or beginning: einsteigen (to get in/board), einladen (to invite), einschlafen (to fall asleep), einkaufen (to shop). Contrast with 'aus-' (out): einstellen (to hire) vs. ausstellen (to exhibit/issue), einsteigen (to get in) vs. aussteigen (to get out). These ein-/aus- pairs are extremely useful for daily life — boarding/exiting transport, shops, invitations."
+      },
+      {
+        "id": "eg_pf10",
+        "question": "Die Kinder sollen alle mit_____.",
+        "translation": "(The children should all come along)",
+        "options": [
+          "kommen",
+          "gehen",
+          "nehmen",
+          "bringen"
+        ],
+        "correct": "kommen",
+        "explanation": "'Mitkommen' (to come along) = mit- (with/along) + kommen (to come). 'Mit-' is separable and means accompanying or participating: mitmachen (to participate), mitnehmen (to take along), mitbringen (to bring along), mitspielen (to play along). In imperative: 'Komm mit!' (Come along!). In conversation: 'Kommst du mit?' (Are you coming along?) — one of the most common German questions. 'Mit-' verbs are social verbs, always involving doing something together with someone."
+      },
+      {
+        "id": "eg_pf11",
+        "question": "Der Plan ist leider _____gelungen.",
+        "translation": "(The plan unfortunately failed)",
+        "options": [
+          "miss",
+          "un",
+          "zer",
+          "ver"
+        ],
+        "correct": "miss",
+        "explanation": "'Misslingen' (to fail) = miss- + gelingen (to succeed). 'Miss-' is unique — it can be separable OR inseparable depending on the verb! With 'gelingen': inseparable → 'misslungen' (no ge-). With 'verstehen': 'missverstehen' → 'missverstanden.' 'Miss-' indicates failure, wrongness, or displeasure: Missverständnis (misunderstanding), Misserfolg (failure), Missbrauch (misuse/abuse), missachten (to disregard). It's equivalent to English 'mis-' and relatively rare compared to other prefixes, making it easy to learn the common ones."
+      },
+      {
+        "id": "eg_pf12",
+        "question": "Der Vulkan ist _____brochen.",
+        "translation": "(The volcano has erupted)",
+        "options": [
+          "aus",
+          "auf",
+          "ab",
+          "ein"
+        ],
+        "correct": "aus",
+        "explanation": "'Ausbrechen' (to erupt/break out) = aus- (out) + brechen (to break). The same verb means 'to escape' (from prison). Separable prefix, past participle: aus-ge-brochen. Compare all 'brechen' compounds: ausbrechen (to erupt/escape), einbrechen (to break in/burgle), abbrechen (to break off/cancel), zusammenbrechen (to collapse), zerbrechen (to shatter), unterbrechen (to interrupt — inseparable!). This family of verbs shows how one root + different prefixes creates an entire vocabulary cluster."
+      },
+      {
+        "id": "eg_pf13",
+        "question": "Wir müssen das Projekt _____setzen.",
+        "translation": "(We must continue the project)",
+        "options": [
+          "fort",
+          "ab",
+          "ein",
+          "um"
+        ],
+        "correct": "fort",
+        "explanation": "'Fortsetzen' (to continue) = fort- (away/forth) + setzen (to set/place). 'Fort-' means continuation or movement away: fortfahren (to continue/drive away), fortschreiten (to progress), Fortschritt (progress). Separable: 'Wir setzen das Projekt fort.' Compare with 'weiter-' which also means 'continue': weitermachen, weiterarbeiten, weitergehen. 'Weiter-' is more casual in speech, while 'fort-' is slightly more formal. Both are separable and interchangeable in many contexts."
+      },
+      {
+        "id": "eg_pf14",
+        "question": "Er hat das Problem _____schätzt.",
+        "translation": "(He underestimated the problem)",
+        "options": [
+          "unter",
+          "über",
+          "ein",
+          "ab"
+        ],
+        "correct": "unter",
+        "explanation": "'Unterschätzen' (to underestimate) = unter- (under) + schätzen (to estimate). Here 'unter-' is INSEPARABLE (no ge- in past participle: unterschätzt). But 'unter-' can be separable too: 'untergehen' (to go down/perish) — 'Die Sonne geht unter.' The stress rule: unterSCHÄTZEN (inseparable, stress on root) vs. UNtergehen (separable, stress on prefix). The same applies to 'über-': überSETZEN (to translate, inseparable) vs. ÜBERsetzen (to ferry across, separable). This dual nature is challenging but follows the stress pattern consistently."
+      },
+      {
+        "id": "eg_pf15",
+        "question": "Sie hat das Geheimnis _____deckt.",
+        "translation": "(She discovered the secret)",
+        "options": [
+          "ent",
+          "auf",
+          "ver",
+          "be"
+        ],
+        "correct": "ent",
+        "explanation": "'Entdecken' (to discover) = ent- (un-/de-/dis-) + decken (to cover). Literally 'to un-cover.' 'Ent-' is always inseparable and means removal, beginning, or escape: entfernen (to remove), entstehen (to arise/emerge), entkommen (to escape), entlassen (to dismiss), entspannen (to relax — literally 'un-tension'). Past participle has no 'ge-': entdeckt, entfernt, entspannt. 'Ent-' is one of the eight inseparable prefixes (be-, emp-, ent-, er-, ge-, miss-, ver-, zer-) that every German learner must memorize."
+      }
+    ]
   }
 ]
