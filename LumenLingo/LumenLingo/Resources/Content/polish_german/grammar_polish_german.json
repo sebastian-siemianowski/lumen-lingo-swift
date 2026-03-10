@@ -686,6 +686,136 @@
         ],
         "correct": "wird",
         "explanation": "Dla 'sie' (ona) używamy formy 'wird': konstrukcja 'wird schreiben'. Polski 'napisze' to dokonana forma żeńska, niemiecki wird plus schreiben bez różnicy rodzaju. Pisanie książki (ein Buch schreiben) to ambitne przedsięwzięcie. Czasownik 'schreiben' to kreatywny akt wyrażania myśli i uczuć."
+      },
+      {
+        "id": "pg_fut6",
+        "question": "_____ du morgen zur Arbeit gehen?",
+        "translation": "Czy pójdziesz jutro do pracy?",
+        "options": [
+          "Wirst",
+          "Willst",
+          "Musst",
+          "Sollst"
+        ],
+        "correct": "Wirst",
+        "explanation": "Futur I tworzymy za pomocą 'werden' + bezokolicznik. Dla 'du' używamy formy 'wirst'. Pytanie o przyszłe plany dotyczące pracy."
+      },
+      {
+        "id": "pg_fut7",
+        "question": "Die Kinder _____ im Sommer schwimmen lernen.",
+        "translation": "Dzieci nauczą się pływać latem.",
+        "options": [
+          "werden",
+          "wollen",
+          "können",
+          "sollen"
+        ],
+        "correct": "werden",
+        "explanation": "Futur I: 'werden' + bezokolicznik. Dla 'die Kinder' (3. os. l.mn.) używamy 'werden'. Wyrażamy plan na przyszłe lato."
+      },
+      {
+        "id": "pg_fut8",
+        "question": "Ich _____ nächste Woche nach München fliegen.",
+        "translation": "Polecę w przyszłym tygodniu do Monachium.",
+        "options": [
+          "werde",
+          "will",
+          "kann",
+          "muss"
+        ],
+        "correct": "werde",
+        "explanation": "Futur I: 'werden' (1. os. l.poj. = 'werde') + bezokolicznik na końcu zdania. Plan podróży do Monachium."
+      },
+      {
+        "id": "pg_fut9",
+        "question": "Es _____ morgen regnen.",
+        "translation": "Jutro będzie padać deszcz.",
+        "options": [
+          "wird",
+          "will",
+          "soll",
+          "kann"
+        ],
+        "correct": "wird",
+        "explanation": "Futur I używamy też do prognoz i przypuszczeń. 'Es wird regnen' = będzie padać. Forma 'wird' dla 'es' (3. os. l.poj.)."
+      },
+      {
+        "id": "pg_fut10",
+        "question": "Ihr _____ bald Ferien haben.",
+        "translation": "Wkrótce będziecie mieć wakacje.",
+        "options": [
+          "werdet",
+          "wollt",
+          "könnt",
+          "sollt"
+        ],
+        "correct": "werdet",
+        "explanation": "Futur I: 'werden' dla 'ihr' = 'werdet'. Zapowiedź przyszłych wakacji. Bezokolicznik 'haben' stoi na końcu zdania."
+      },
+      {
+        "id": "pg_fut11",
+        "question": "Der Lehrer _____ die Prüfung nächsten Montag korrigieren.",
+        "translation": "Nauczyciel poprawi egzamin w przyszły poniedziałek.",
+        "options": [
+          "wird",
+          "will",
+          "muss",
+          "soll"
+        ],
+        "correct": "wird",
+        "explanation": "Futur I: 'wird' (3. os. l.poj.) + bezokolicznik 'korrigieren' na końcu. Plan nauczyciela dotyczący sprawdzenia egzaminu."
+      },
+      {
+        "id": "pg_fut12",
+        "question": "Wir _____ uns um 18 Uhr treffen.",
+        "translation": "Spotkamy się o godzinie 18.",
+        "options": [
+          "werden",
+          "wollen",
+          "müssen",
+          "sollen"
+        ],
+        "correct": "werden",
+        "explanation": "Futur I: 'werden' (1. os. l.mn.) + 'uns treffen' (bezokolicznik zwrotny). Ustalenie przyszłego spotkania."
+      },
+      {
+        "id": "pg_fut13",
+        "question": "Sie _____ wahrscheinlich zu spät kommen.",
+        "translation": "Ona prawdopodobnie przyjdzie za późno.",
+        "options": [
+          "wird",
+          "will",
+          "kann",
+          "darf"
+        ],
+        "correct": "wird",
+        "explanation": "Futur I wyrażające przypuszczenie: 'wird' + 'wahrscheinlich' (prawdopodobnie) wzmacnia charakter domysłu. Bezokolicznik 'kommen' na końcu."
+      },
+      {
+        "id": "pg_fut14",
+        "question": "_____ Sie mir bitte helfen?",
+        "translation": "Czy pomoże mi Pan/Pani?",
+        "options": [
+          "Werden",
+          "Wollen",
+          "Können",
+          "Müssen"
+        ],
+        "correct": "Werden",
+        "explanation": "Futur I w grzecznej prośbie: 'Werden Sie...' brzmi formalnie i uprzejmie. Pytanie z inwersją (czasownik na początku)."
+      },
+      {
+        "id": "pg_fut15",
+        "question": "Das _____ nicht einfach sein, aber wir schaffen das.",
+        "translation": "To nie będzie łatwe, ale damy radę.",
+        "options": [
+          "wird",
+          "ist",
+          "war",
+          "wäre"
+        ],
+        "correct": "wird",
+        "explanation": "Futur I: 'wird' + bezokolicznik 'sein'. Wyrażamy przewidywanie dotyczące przyszłej trudności. Zdanie złożone z dwóch części."
       }
     ]
   },
@@ -1788,7 +1918,7 @@
         "explanation": "'Obwohl' concessive clause - verb kończy! 'Ist' ostatnie w tej części. To o determinacji - activity despite fatigue. Concessive clauses (obwohl, obgleich) mają verb-final order - 'ist' zamyka pierwszą część przed main clause. Contrast structure."
       },
       {
-        "id": "modal_t_6",
+        "id": "wor_ord_com_6",
         "question": "_____ ich gestern angekommen bin, habe ich dich sofort angerufen.",
         "translation": "(Gdy wczoraj przybyłem, natychmiast do ciebie zadzwoniłem)",
         "options": [
@@ -1863,7 +1993,7 @@
           "ging"
         ],
         "correct": "gegangen ist",
-        "explanation": "Indirect question - verb-final! 'Warum' clause wymaga końcowej pozycji - 'gegangen ist'. To curiosity - wondering about behavior. Pytania pośrednie (warum, wann, wo w mid-sentence) używają subordinate order - auxiliary kończy. Perfect на końcu."
+        "explanation": "Indirect question - verb-final! 'Warum' clause wymaga końcowej pozycji - 'gegangen ist'. To curiosity - wondering about behavior. Pytania pośrednie (warum, wann, wo w mid-sentence) używają subordinate order - auxiliary kończy. Perfect na końcu."
       },
       {
         "id": "word_ord_12",
@@ -1889,7 +2019,7 @@
           "ob"
         ],
         "correct": "weil",
-        "explanation": "'Weil' causa reason! Subordinate explaining happiness - verb kończy. To о radości - success causing emotion. Causal clauses (weil, da) explain why - require verb-final order. Participle + auxiliary kończy 'weil' clause."
+        "explanation": "'Weil' causa reason! Subordinate explaining happiness - verb kończy. To o radości - success causing emotion. Causal clauses (weil, da) explain why - require verb-final order. Participle + auxiliary kończy 'weil' clause."
       },
       {
         "id": "word_ord_14",
@@ -1902,7 +2032,7 @@
           "angekommen bist"
         ],
         "correct": "ankommen wirst",
-        "explanation": "Future w subordinate! Separable 'ankommen' + 'wirst' - оба na końcu. To expressing hope - punctuality wish. Subordinate future: infinitive + werden auxiliary kończy. Separable verb stays together jako infinitive на końcu."
+        "explanation": "Future w subordinate! Separable 'ankommen' + 'wirst' - oba na końcu. To expressing hope - punctuality wish. Subordinate future: infinitive + werden auxiliary kończy. Separable verb stays together jako infinitive na końcu."
       },
       {
         "id": "word_ord_15",
@@ -2595,7 +2725,7 @@
         "explanation": "Forma 'auf den vertrauen' - czasownik 'vertrauen AUF' plus biernik! Przyimek przed zaimkiem względnym biernikiem. To o zaufaniu - niezawodny przyjaciel. Czasownik 'vertrauen auf' (liczyć na) wymaga 'auf' plus biernik - 'auf den' (męski biernik). Czasownik dyktuje przyimek i przypadek."
       },
       {
-        "id": "refl_5",
+        "id": "rel_cla_pre_5",
         "question": "Das ist das Haus, _____ wir seit zehn Jahren wohnen glücklich.",
         "translation": "(To jest dom, w którym mieszkamy od dziesięciu lat szczęśliwie)",
         "options": [
@@ -3864,7 +3994,7 @@
         "explanation": "Forma 'veröffentlichte Nachricht' opublikowane wiadomości! Zakończona akcja - pojawiła się w gazecie. To raport medialny. Rozszerzona fraza imiesłowowa 'in der Zeitung veröffentlichte' dodaje lokalizację. Imiesłów przeszły pokazuje wiadomości już opublikowane. Złożona konstrukcja atrybutywna z lokalizacją."
       },
       {
-        "id": "inf_zu_8",
+        "id": "par_con_8",
         "question": "Der auf der Straße _____ Mann braucht dringend pomocy natychmiast.",
         "translation": "(Leżący na ulicy mężczyzna potrzebuje pilnie pomocy natychmiast)",
         "options": [
@@ -4995,15 +5125,6 @@
     ]
   },
   {
-    "key": "mixed_declensions",
-    "name": "Mieszane deklinacje",
-    "description": "Ein, kein, mein + końcówki przymiotnikowe",
-    "iconName": "repeat",
-    "color": "#ec4899",
-    "level": "advanced",
-    "items": []
-  },
-  {
     "key": "extended_adjective_phrases",
     "name": "Rozszerzone frazy przymiotnikowe",
     "description": "Das von mir geschriebene Buch - złożone konstrukcje",
@@ -5806,7 +5927,7 @@
           "zu lassen"
         ],
         "correct": "lassen",
-        "explanation": "'Wird lassen' to przyszła kazuatywność! Zleciła uszycie sukienki - przyszła usługa. To przygotowania ślubne - ubranie szyte na miarę. Przyszła kazuatywność: 'wird' + zaimek zwrotny + obiekt + bezokolicznik + 'lassen'. Planowanie zlеconej pracy."
+        "explanation": "'Wird lassen' to przyszła kazuatywność! Zleciła uszycie sukienki - przyszła usługa. To przygotowania ślubne - ubranie szyte na miarę. Przyszła kazuatywność: 'wird' + zaimek zwrotny + obiekt + bezokolicznik + 'lassen'. Planowanie zleconej pracy."
       },
       {
         "id": "lassen_15",
@@ -6538,7 +6659,7 @@
         "explanation": "Wyrażenie 'würde es ausmachen' to ultra-uprzejme! Pytanie czy przeszkadza - okrężna prośba. To maksymalna uprzejmość - bardzo delikatna prośba. Formuła 'würde es Ihnen ausmachen' ekstremalnie kurtuazyjna - pytanie czy prośba sprawia kłopot. Najwyższy poziom formalności."
       },
       {
-        "id": "es_imp_8",
+        "id": "wis_pol_req_8",
         "question": "Ich _____ so gerne nach Japan reisen - das ist mein Traum!",
         "translation": "(Tak chętnie pojechałbym do Japonii - to moje marzenie!)",
         "options": [
@@ -6898,7 +7019,7 @@
       {
         "id": "fixed_4",
         "question": "Er macht sich _____ um seine kranke Mutter große Gedanken.",
-        "translation": "(Martwi się о swoją chorą matkę duże myśli)",
+        "translation": "(Martwi się o swoją chorą matkę duże myśli)",
         "options": [
           "Sorgen",
           "Sorge",
@@ -7677,7 +7798,7 @@
     "level": "intermediate",
     "items": [
       {
-        "id": "adj_noun_1",
+        "id": "adj_as_nou_1",
         "question": "_____ _____ aus Deutschland wohnt hier in der Nähe.",
         "translation": "(Niemiec z Niemiec mieszka tutaj w pobliżu)",
         "options": [
@@ -7690,7 +7811,7 @@
         "explanation": "Przymiotnik 'deutsch' jako rzeczownik! Wielka litera plus deklinacja jak przymiotnik. To o narodowości - osoba niemiecka. Forma 'der Deutsche' (konkretny Niemiec) dostaje słabą końcówkę -e bo jest z określonym rodzajnikiem. Przymiotniki narodowości często stają się rzeczownikami."
       },
       {
-        "id": "adj_noun_2",
+        "id": "adj_as_nou_2",
         "question": "Ich habe etwas _____ für dich im Laden gekauft schön.",
         "translation": "(Kupiłem coś ładnego dla ciebie w sklepie)",
         "options": [
@@ -7703,7 +7824,7 @@
         "explanation": "Substantywizowany przymiotnik 'etwas Schönes'! Po 'etwas' przymiotnik wielką literą plus nijaka końcówka. To o prezentach - tajemniczy prezent. Konstrukcja 'etwas' plus przymiotnik (wielką literą) plus -es (nijaki). Nieokreślone zaimki (etwas, nichts, alles) plus kapitalizowany przymiotnik to standardowy wzór."
       },
       {
-        "id": "adj_noun_3",
+        "id": "adj_as_nou_3",
         "question": "_____ _____ hat mir heute sehr geholfen bei der Arbeit.",
         "translation": "(Mój znajomy pomógł mi dzisiaj bardzo przy pracy)",
         "options": [
@@ -7716,7 +7837,7 @@
         "explanation": "Substantywizowany 'ein Bekannter'! Przymiotnik 'bekannt' jako rzeczownik męski. To o znajomym. Z nieokreślonym 'ein' męski mianownik dostaje końcówkę -er (silna). Forma 'ein Bekannter' równa się znajomy - przymiotnik w pełni funkcjonuje jako rzeczownik."
       },
       {
-        "id": "adj_noun_4",
+        "id": "adj_as_nou_4",
         "question": "Ich habe nichts _____ gehört über dieses Thema bisher.",
         "translation": "(Nie słyszałem nic nowego o tym temacie dotąd)",
         "options": [
@@ -7729,7 +7850,7 @@
         "explanation": "Konstrukcja 'nichts Neues' żadnych nowości! Po 'nichts' przymiotnik wielką plus nijaka końcówka -es. To o braku informacji - brak aktualizacji. Forma 'nichts' plus kapitalizowany przymiotnik plus -es standardowa kombinacja. Brak nowych informacji wyrażony przez substantywizowany przymiotnik."
       },
       {
-        "id": "adj_noun_5",
+        "id": "adj_as_nou_5",
         "question": "_____ _____ steht an der Bushaltestelle und wartet geduldig.",
         "translation": "(Jakaś młoda kobieta stoi na przystanku i czeka cierpliwie)",
         "options": [
@@ -7742,7 +7863,7 @@
         "explanation": "BŁĄD w opcjach - powinno być o kobiecie! Poprawne: 'eine junge Frau' lub substantywizowana kobieca byłaby specjalna. To pytanie podchwytliwe - 'Junge' jako rzeczownik oznacza chłopiec (męski). Dla kobiety: 'eine junge Frau' (fraza) lub 'eine Jugendliche' (substantywizowany inny przymiotnik)."
       },
       {
-        "id": "adj_noun_6",
+        "id": "adj_as_nou_6",
         "question": "_____ _____ sprechen oft mehrere Sprachen fließend zusammen.",
         "translation": "(Młodzi ludzie często mówią kilka języków płynnie razem)",
         "options": [
@@ -7755,7 +7876,7 @@
         "explanation": "Forma frazy 'junge Leute'! Przymiotnik 'jung' jako normalny przymiotnik plus 'Leute' (ludzie). To o młodzieży - umiejętności językowe. Choć możesz substantywizować 'jung', 'junge Leute' bardziej naturalne dla 'młodzi ludzie'. Nie wszystko musi być substantywizowane - czasem fraza lepsza."
       },
       {
-        "id": "adj_noun_7",
+        "id": "adj_as_nou_7",
         "question": "Der _____ hat mir den Weg zum Bahnhof gezeigt freundlich.",
         "translation": "(Nieznajomy pokazał mi drogę do dworca przyjaźnie)",
         "options": [
@@ -7768,7 +7889,7 @@
         "explanation": "Substantywizowany nieznajomy 'der Fremde'! Przymiotnik 'fremd' (obcy/cudzy) jako rzeczownik. To o pomocy - miły nieznajomy. Męski mianownik z określonym 'der' plus słaba końcówka -e. Forma 'der Fremde' równa się nieznajomy - przymiotnik znaczący obcy/cudzy staje się rzeczownikiem osobowym."
       },
       {
-        "id": "adj_noun_8",
+        "id": "adj_as_nou_8",
         "question": "Ich möchte etwas _____ trinken - ich habe Durst sehr!",
         "translation": "(Chciałbym wypić coś zimnego - mam bardzo pragnienie!)",
         "options": [
@@ -7781,7 +7902,7 @@
         "explanation": "Substantywizowane pragnienie 'etwas Kaltes'! Coś zimnego (napój domyślny). To o pragnieniu - chęć zimnego napoju. Konstrukcja 'etwas' plus kapitalizowany przymiotnik plus -es wzór. Przymiotnik staje się rzeczownikiem reprezentującym całą kategorię zimnych napojów."
       },
       {
-        "id": "adj_noun_9",
+        "id": "adj_as_nou_9",
         "question": "Alles _____ muss ich zweimal erklären ihm leider immer.",
         "translation": "(Wszystko nowe muszę mu tłumaczyć niestety zawsze dwa razy)",
         "options": [
@@ -7794,7 +7915,7 @@
         "explanation": "Konstrukcja 'alles Neue' wszystko nowe! Po 'alles' przymiotnik wielką plus słaba końcówka -e. To o trudnościach w uczeniu - konieczność powtarzania. Forma 'alles' plus przymiotnik (kapitalizowany) plus -e kompleksowa kategoria. Wszystko co jest nowe wymaga podwójnego tłumaczenia."
       },
       {
-        "id": "adj_noun_10",
+        "id": "adj_as_nou_10",
         "question": "_____ _____ hat das Auto gestohlen in der Nacht.",
         "translation": "(Jakiś nieznany ukradł samochód w nocy)",
         "options": [
@@ -7807,7 +7928,7 @@
         "explanation": "Substantywizowana nieznana osoba 'ein Unbekannter'! Przymiotnik 'unbekannt' substantywizowany. To historia kryminalna - niezidentyfikowany złodziej. Nieokreślony 'ein' plus męski mianownik silna końcówka -er. Forma 'ein Unbekannter' równa się nieznana osoba - przymiotnik jako rzeczownik dla anonimowości."
       },
       {
-        "id": "adj_noun_11",
+        "id": "adj_as_nou_11",
         "question": "Das _____ an dieser Geschichte ist, dass sie wahr ist!",
         "translation": "(Najlepsze w tej historii jest to, że jest prawdziwa!)",
         "options": [
@@ -7820,7 +7941,7 @@
         "explanation": "Stopień najwyższy jako rzeczownik 'das Beste'! Najlepsze (rzecz) - abstrakcyjny koncept. To o puentcie - najważniejsze w historii. Nijaki 'das' plus przymiotnik stopnia najwyższego kapitalizowany plus końcówka -e. Forma 'das Beste' równa się najlepsza rzecz - przekształcanie jakości w rzecz."
       },
       {
-        "id": "adj_noun_12",
+        "id": "adj_as_nou_12",
         "question": "Ich kenne _____ _____, der dir helfen kann mit diesem Problem.",
         "translation": "(Znam kogoś, kto może ci pomóc z tym problemem)",
         "options": [
@@ -7833,7 +7954,7 @@
         "explanation": "Zaimek 'jemanden' już jest zaimkiem! NIE przymiotnik - małe litery jako standardowy zaimek. To o pomocy - identyfikacja pomocnika. Słowo 'jemand' (ktoś) to zaimek nie przymiotnik - 'jemanden' forma biernika. Nie wszystko kapitalizowane - zaimki pozostają małymi literami."
       },
       {
-        "id": "adj_noun_13",
+        "id": "adj_as_nou_13",
         "question": "Die _____ in diesem Land leben sehr gut und zufrieden.",
         "translation": "(Bogaci w tym kraju żyją bardzo dobrze i zadowoleni)",
         "options": [
@@ -7846,7 +7967,7 @@
         "explanation": "Substantywizowani bogaci ludzie 'die Reichen' mnoga! Przymiotnik 'reich' (bogaty) jako rzeczownik mnogi. To o społeczeństwie - opis klasy. Mnoga plus określony 'die' plus słaba końcówka -en. Forma 'die Reichen' równa się bogaci (jako grupa) - przymiotnik reprezentuje całą klasę ludzi."
       },
       {
-        "id": "adj_noun_14",
+        "id": "adj_as_nou_14",
         "question": "Er hat etwas _____ gesagt, aber ich habe nicht zugehört.",
         "translation": "(Powiedział coś ważnego, ale nie słuchałem)",
         "options": [
@@ -7859,7 +7980,7 @@
         "explanation": "Konstrukcja 'etwas Wichtiges' coś ważnego! Substantywizowana ważność. To żal - przegapiona informacja. Forma 'etwas' plus kapitalizowany przymiotnik plus -es (nijaki). Coś ważnego jako koncept - przymiotnik staje się rzeczownikiem reprezentującym ważną rzecz."
       },
       {
-        "id": "adj_noun_15",
+        "id": "adj_as_nou_15",
         "question": "Ich wünsche dir alles _____ zum Geburtstag herzlich!",
         "translation": "(Życzę ci wszystkiego najlepszego na urodziny serdecznie!)",
         "options": [
@@ -8959,7 +9080,7 @@
         "explanation": "Negacja miejsca 'nirgends' (lub 'nirgendwo')! Negowanie miejsc - brak lokalizacji. To o pozostawaniu - zostanie w domu. Formy 'nirgends'/'nirgendwo' wymienne dla 'nigdzie'. Negacja przestrzenna - nie byłem w żadnym miejscu."
       },
       {
-        "id": "v_n_fix_5",
+        "id": "neg_adv_for_5",
         "question": "Er wird das _____ wieder tun - er hat es versprochen fest!",
         "translation": "(Nigdy tego nie zrobi ponownie - obiecał mocno!)",
         "options": [
@@ -10957,7 +11078,7 @@
     "level": "advanced",
     "items": [
       {
-        "id": "adj_end_1",
+        "id": "adj_end_all_1",
         "question": "Ich habe einen _____ Freund in Berlin kennengelernt.",
         "translation": "(Poznałem dobrego przyjaciela w Berlinie)",
         "options": [
@@ -10970,7 +11091,7 @@
         "explanation": "Z nieokreślonym 'einen' w bierniku męskim przymiotnik dostaje końcówkę -en. To tzw. 'mieszana deklinacja'. Rodzajnik nieokreślony 'ein' nie pokazuje wyraźnie przypadka, więc przymiotnik musi bardziej pomóc - stąd końcówka -en. Polski nie ma takiego systemu, ale w niemieckim końcówki przymiotnikowe są jak dodatkowe wskazówki przypadka."
       },
       {
-        "id": "adj_end_2",
+        "id": "adj_end_all_2",
         "question": "Das ist ein _____ Buch über deutsche Geschichte.",
         "translation": "(To jest interesująca książka o niemieckiej historii)",
         "options": [
@@ -10983,7 +11104,7 @@
         "explanation": "Z nieokreślonym 'ein' w mianowniku nijakim przymiotnik dostaje końcówkę -es. Rodzajnik 'ein' dla nijakiego nie zmienia się między mianownikiem a biernikiem, więc przymiotnik musi jasno pokazać przypadek. Końcówka -es sygnalizuje że to nijaki mianownik - przymiotnik wykonuje ciężką pracę identyfikacji."
       },
       {
-        "id": "adj_end_3",
+        "id": "adj_end_all_3",
         "question": "Wir haben einer _____ Frau geholfen auf der Straße gestern.",
         "translation": "(Pomogliśmy starszej kobiecie na ulicy wczoraj)",
         "options": [
@@ -10996,7 +11117,7 @@
         "explanation": "Z nieokreślonym 'einer' w celowniku żeńskim przymiotnik dostaje końcówkę -en. Czasownik 'helfen' wymaga celownika - komu pomagamy. Końcówka -en w celowniku jest bardzo powszechna - to jedna z najczęstszych końcówek przymiotnikowych. To ułatwia zapamiętywanie bo celownik prawie zawsze ma -en."
       },
       {
-        "id": "adj_end_4",
+        "id": "adj_end_all_4",
         "question": "Der _____ Mann dort drüben ist mein Nachbar aus dem Erdgeschoss.",
         "translation": "(Ten wysoki mężczyzna tam jest moim sąsiadem z parteru)",
         "options": [
@@ -11009,7 +11130,7 @@
         "explanation": "Z określonym 'der' w mianowniku męskim przymiotnik dostaje słabą końcówkę -e. Gdy rodzajnik określony jasno pokazuje przypadek i rodzaj, przymiotnik może 'odpocząć' i używa prostszej końcówki -e. To tzw. słaba deklinacja - rodzajnik robi większość pracy, przymiotnik tylko minimalnie oznacza przypadek."
       },
       {
-        "id": "adj_end_5",
+        "id": "adj_end_all_5",
         "question": "Ich sehe den _____ Hund jeden Tag im Park laufen.",
         "translation": "(Widzę czarnego psa każdego dnia biegającego w parku)",
         "options": [
@@ -11022,7 +11143,7 @@
         "explanation": "Z określonym 'den' w bierniku męskim przymiotnik dostaje słabą końcówkę -en. Rodzajnik 'den' już jasno pokazuje że to męski biernik, więc przymiotnik używa końcówki -en. W bierniku męskim zawsze widzisz -en przy przymiotniku z określonym rodzajnikiem - to konsekwentny wzór."
       },
       {
-        "id": "adj_end_6",
+        "id": "adj_end_all_6",
         "question": "Das ist die Tasche der _____ Frau von nebenan.",
         "translation": "(To jest torebka eleganckiej kobiety z sąsiedztwa)",
         "options": [
@@ -11035,7 +11156,7 @@
         "explanation": "W dopełniaczu żeńskim z określonym 'der' przymiotnik dostaje końcówkę -en. Dopełniacz pokazuje posiadanie - czyja torebka. Choć dopełniacz w niemieckim jest rzadszy niż w polskim, gdy już się pojawia, przymiotniki konsekwentnie dostają -en. To upraszcza zapamiętywanie - dopełniacz to prawie zawsze -en."
       },
       {
-        "id": "adj_end_7",
+        "id": "adj_end_all_7",
         "question": "Wir wohnen in einem _____ Haus am Stadtrand ruhig.",
         "translation": "(Mieszkamy w małym domu na obrzeżach miasta spokojnie)",
         "options": [
@@ -11048,7 +11169,7 @@
         "explanation": "Przyimek 'in' z celownikiem plus nieokreślony 'einem' - przymiotnik dostaje końcówkę -en. Celownik po przyimkach miejsca (gdy pytamy GDZIE?) jest bardzo częsty. Końcówka -en w celowniku pojawia się regularnie i jest łatwa do zapamiętania - niemal zawsze -en w tym przypadku."
       },
       {
-        "id": "adj_end_8",
+        "id": "adj_end_all_8",
         "question": "Sie trägt einen _____ Mantel gegen die Kälte im Winter.",
         "translation": "(Nosi ciepły płaszcz przeciw zimnu zimą)",
         "options": [
@@ -11061,7 +11182,7 @@
         "explanation": "Z nieokreślonym 'einen' w bierniku męskim przymiotnik dostaje -en. Płaszcz (męski) w bierniku po czasowniku 'tragen' (nosić). To pokazuje funkcjonalność odzieży - ciepły płaszcz chroni przed zimnem. Końcówka -en w bierniku męskim po 'einen' to stała reguła."
       },
       {
-        "id": "adj_end_9",
+        "id": "adj_end_all_9",
         "question": "Das _____ Auto dort gehört meinem Chef aus der Firma.",
         "translation": "(Ten nowy samochód tam należy do mojego szefa z firmy)",
         "options": [
@@ -11074,7 +11195,7 @@
         "explanation": "Z określonym 'das' w mianowniku nijakim przymiotnik dostaje słabą końcówkę -e. Auto (das Auto) w mianowniku jako podmiot zdania. Rodzajnik 'das' jasno pokazuje przypadek, więc przymiotnik używa prostej -e. Słaba deklinacja ułatwia życie - gdy rodzajnik jest silny, przymiotnik może być prosty."
       },
       {
-        "id": "adj_end_10",
+        "id": "adj_end_all_10",
         "question": "Ich gebe dem _____ Kind ein Geschenk zum Geburtstag.",
         "translation": "(Daję małemu dziecku prezent na urodziny)",
         "options": [
@@ -11087,7 +11208,7 @@
         "explanation": "Z określonym 'dem' w celowniku nijakim przymiotnik dostaje końcówkę -en. Czasownik 'geben' wymaga celownika dla odbiorcy prezentu - komu dajesz. Celownik nijaki z określonym rodzajnikiem zawsze ma -en przy przymiotniku. To bardzo przewidywalna końcówka."
       },
       {
-        "id": "adj_end_11",
+        "id": "adj_end_all_11",
         "question": "_____ Wetter kann sehr schön sein im Frühling hier.",
         "translation": "(Ciepła pogoda może być bardzo piękna wiosną tutaj)",
         "options": [
@@ -11100,7 +11221,7 @@
         "explanation": "BEZ rodzajnika w mianowniku nijakim przymiotnik dostaje silną końcówkę -es! Gdy nie ma rodzajnika, przymiotnik musi SAM pokazać przypadek i rodzaj - stąd wyraźna końcówka -es. To tzw. silna deklinacja - przymiotnik pracuje ciężej gdy nie ma pomocy rodzajnika."
       },
       {
-        "id": "adj_end_12",
+        "id": "adj_end_all_12",
         "question": "Ich trinke gerne _____ Kaffee am Morgen zum Frühstück.",
         "translation": "(Lubię pić gorącą kawę rano do śniadania)",
         "options": [
@@ -11113,7 +11234,7 @@
         "explanation": "BEZ rodzajnika w bierniku męskim przymiotnik dostaje silną końcówkę -en. Kawa (der Kaffee) w bierniku bez rodzajnika - przymiotnik musi pokazać przypadek. Gdy mówimy o rzeczach ogólnie bez 'der/die/das', przymiotniki stają się bardziej 'widoczne' z wyraźnymi końcówkami."
       },
       {
-        "id": "adj_end_13",
+        "id": "adj_end_all_13",
         "question": "Mit _____ Musik kann ich besser konzentrieren mich auf Arbeit.",
         "translation": "(Z cichą muzyką mogę się lepiej skoncentrować na pracy)",
         "options": [
@@ -11126,7 +11247,7 @@
         "explanation": "BEZ rodzajnika w celowniku żeńskim przymiotnik dostaje silną końcówkę -er. Przyimek 'mit' wymaga celownika - z czym. Muzyka (die Musik) w celowniku bez rodzajnika potrzebuje wyraźnej końcówki. Końcówka -er w celowniku żeńskim pomaga zidentyfikować przypadek gdy brak rodzajnika."
       },
       {
-        "id": "adj_end_14",
+        "id": "adj_end_all_14",
         "question": "Sie hat mir _____ Bücher über Kunst geliehen aus Bibliothek.",
         "translation": "(Pożyczyła mi ciekawe książki o sztuce z biblioteki)",
         "options": [
@@ -11139,7 +11260,7 @@
         "explanation": "BEZ rodzajnika w bierniku mnogim przymiotnik dostaje silną końcówkę -e. Liczba mnoga bez rodzajnika to częsta sytuacja w niemieckim. Końcówka -e wyraźnie pokazuje że to mnoga - przymiotnik sam komunikuje tę informację. W liczbie mnogiej bez rodzajnika przymiotniki są bardzo pomocne."
       },
       {
-        "id": "adj_end_15",
+        "id": "adj_end_all_15",
         "question": "Wir arbeiten mit _____ Kollegen zusammen an diesem Projekt.",
         "translation": "(Pracujemy z nowymi kolegami razem nad tym projektem)",
         "options": [
@@ -11367,7 +11488,7 @@
     "level": "intermediate",
     "items": [
       {
-        "id": "sep_verb_1",
+        "id": "sep_ver_all_1",
         "question": "Ich stehe jeden Morgen um 6 Uhr _____ für die Arbeit.",
         "translation": "(Wstaję każdego ranka o 6 żeby iść do pracy)",
         "options": [
@@ -11380,7 +11501,7 @@
         "explanation": "Czasownik rozdzielny 'aufstehen' (wstawać) - przedrostek 'auf' oddziela się i idzie na koniec zdania. Przedrostek 'auf' oznacza 'w górę' - dosłownie 'stawanie w górę'. W czasie teraźniejszym przedrostek zawsze na końcu. To podstawowa cecha niemieckich czasowników rozdzielnych - przedrostek wędruje na koniec."
       },
       {
-        "id": "sep_verb_2",
+        "id": "sep_ver_all_2",
         "question": "Wann fängt der Film heute Abend im Kino _____?",
         "translation": "(Kiedy zaczyna się film dzisiejszego wieczoru w kinie?)",
         "options": [
@@ -11393,7 +11514,7 @@
         "explanation": "Czasownik 'anfangen' (zaczynać się) - przedrostek 'an' na końcu w pytaniu. Przedrostek 'an' wskazuje początek czegoś. W pytaniach przedrostek też idzie na koniec, tak jak w zdaniach oznajmujących. Pytania z czasownikami rozdzielnymi mają czasownik na początku, przedrostek na końcu."
       },
       {
-        "id": "sub_conj_3",
+        "id": "sep_ver_all_3",
         "question": "Kommst du morgen mit uns zur Party am Abend _____?",
         "translation": "(Czy idziesz jutro z nami na imprezę wieczorem?)",
         "options": [
@@ -11406,7 +11527,7 @@
         "explanation": "Czasownik 'mitkommen' (przychodzić z kimś) - przedrostek 'mit' oznacza 'z/razem'. To zaproszenie do wspólnego uczestnictwa. Przedrostek 'mit' na końcu pytania. Czasowniki z 'mit-' często wyrażają robienie czegoś wspólnie z innymi - 'mitkommen, mitspielen, mitarbeiten'."
       },
       {
-        "id": "sep_verb_4",
+        "id": "sep_ver_all_4",
         "question": "Ich bin gestern sehr früh _____ für einen wichtigen Termin.",
         "translation": "(Wstałem wczoraj bardzo wcześnie na ważne spotkanie)",
         "options": [
@@ -11419,7 +11540,7 @@
         "explanation": "W czasie Perfect czasowniki rozdzielne łączą przedrostek z imiesłowem - 'aufgestanden'. Przedrostek 'auf-' skleja się z 'gestanden' w jedną całość w formie Perfect. To ważna zmiana - w Perfect przedrostek NIE oddziela się ale staje się częścią imiesłowu. Forma 'bin aufgestanden' standardowa konstrukcja."
       },
       {
-        "id": "sep_verb_5",
+        "id": "sep_ver_all_5",
         "question": "Sie hat die Tür leise _____, um niemanden zu wecken nachts.",
         "translation": "(Zamknęła cicho drzwi, żeby nikogo nie obudzić w nocy)",
         "options": [
@@ -11432,7 +11553,7 @@
         "explanation": "Czasownik 'zumachen' (zamykać) w Perfect - 'zugemacht' to imiesłów z przedrostkiem. Przedrostek 'zu-' oznacza 'zamykanie/domykanie'. W Perfect forma 'hat zugemacht' - przedrostek i imiesłów łączą się. Ostrożne zamykanie pokazuje troskę o innych śpiących."
       },
       {
-        "id": "sep_verb_6",
+        "id": "sep_ver_all_6",
         "question": "Wir werden morgen sehr früh _____, um den Sonnenaufgang zu sehen.",
         "translation": "(Wstaniemy jutro bardzo wcześnie, żeby zobaczyć wschód słońca)",
         "options": [
@@ -11445,7 +11566,7 @@
         "explanation": "W czasie przyszłym (Futur) czasowniki rozdzielne używają bezokolicznika - 'aufstehen' pozostaje razem. Konstrukcja 'werden aufstehen' - bezokolicznik nie rozdziela się. To inna zasada niż w teraźniejszości - w Futur czasownik pozostaje całością. Planowanie wczesnego wstawania dla pięknego widoku."
       },
       {
-        "id": "sep_verb_7",
+        "id": "sep_ver_all_7",
         "question": "Bitte mach das Licht _____, wenn du den Raum verlässt!",
         "translation": "(Proszę wyłącz światło, gdy opuszczasz pokój!)",
         "options": [
@@ -11458,7 +11579,7 @@
         "explanation": "Czasownik 'ausmachen' (wyłączać) w trybie rozkazującym - przedrostek 'aus' na końcu. Przedrostek 'aus-' oznacza wyłączenie/zgaszenie. W rozkazach przedrostek też idzie na koniec - 'mach aus'. To podstawowa prośba o oszczędzanie energii - typowa sytuacja domowa."
       },
       {
-        "id": "sep_verb_8",
+        "id": "sep_ver_all_8",
         "question": "Er hat mir versprochen, dass er mich morgen vom Bahnhof _____.",
         "translation": "(Obiecał mi, że odbierze mnie jutro z dworca)",
         "options": [
@@ -11471,7 +11592,7 @@
         "explanation": "W zdaniu podrzędnym (z 'dass') czasownik pozostaje razem ale odmieniony - 'abholt' nie rozdziela się! W zdaniach podrzędnych czasownik idzie na koniec ALE w jednej całości. To ważna różnica od zdań głównych. Obietnica odbioru pokazuje niezawodność i troskę o kogoś."
       },
       {
-        "id": "sep_verb_9",
+        "id": "sep_ver_all_9",
         "question": "Ich muss heute Abend noch schnell im Supermarkt _____.",
         "translation": "(Muszę dzisiaj wieczorem jeszcze szybko zrobić zakupy w supermarkecie)",
         "options": [
@@ -11484,7 +11605,7 @@
         "explanation": "Z czasownikiem modalnym 'muss' używamy bezokolicznika - 'einkaufen' pozostaje razem. Konstrukcja 'muss einkaufen' - bezokolicznik na końcu nie rozdziela się. Czasowniki modalne zawsze łączą się z bezokolicznikiem który zostaje całością. Szybkie zakupy wieczorne to typowa sytuacja po pracy."
       },
       {
-        "id": "sep_verb_10",
+        "id": "sep_ver_all_10",
         "question": "Sie räumt ihr Zimmer gründlich _____ vor dem Besuch ihrer Eltern.",
         "translation": "(Sprząta dokładnie swój pokój przed wizytą rodziców)",
         "options": [
@@ -11497,7 +11618,7 @@
         "explanation": "Czasownik 'aufräumen' (sprzątać/porządkować) - przedrostek 'auf' oznacza 'porządkowanie w górę'. Przedrostek na końcu zdania w czasie teraźniejszym. Dokładne sprzątanie przed wizytą rodziców to uniwersalne doświadczenie - chcemy żeby dom wyglądał dobrze dla rodziny."
       },
       {
-        "id": "sep_verb_11",
+        "id": "sep_ver_all_11",
         "question": "Hast du schon alle Lichter _____ vor dem Schlafengehen?",
         "translation": "(Czy wyłączyłeś już wszystkie światła przed pójściem spać?)",
         "options": [
@@ -11510,7 +11631,7 @@
         "explanation": "Perfect od 'ausmachen' - imiesłów 'ausgemacht' łączy przedrostek z 'gemacht'. Pytanie o rutynę wieczorną - sprawdzanie czy wszystko bezpieczne przed snem. W Perfect przedrostek skleja się z imiesłowem tworząc jedną formę. Dbanie o bezpieczeństwo nocne to ważna rutyna."
       },
       {
-        "id": "sep_verb_12",
+        "id": "sep_ver_all_12",
         "question": "Wir laden dich herzlich zu unserer Feier am Samstag _____.",
         "translation": "(Zapraszamy cię serdecznie na nasze przyjęcie w sobotę)",
         "options": [
@@ -11523,7 +11644,7 @@
         "explanation": "Czasownik 'einladen' (zapraszać) - przedrostek 'ein-' oznacza 'do środka/dołączanie'. Zaproszenie to wpuszczanie kogoś do swojego wydarzenia. Przedrostek 'ein' na końcu w czasie teraźniejszym. Serdeczne zaproszenie pokazuje że ktoś jest mile widziany i pożądany jako gość."
       },
       {
-        "id": "sep_verb_13",
+        "id": "sep_ver_all_13",
         "question": "Sie hat gestern einen neuen Job im Zentrum _____.",
         "translation": "(Zaczęła wczoraj nową pracę w centrum)",
         "options": [
@@ -11536,7 +11657,7 @@
         "explanation": "Perfect od 'anfangen' - imiesłów 'angefangen' łączy 'an-' z 'gefangen'. Rozpoczęcie nowej pracy to ważny moment życiowy. W Perfect czasowniki rozdzielne tworzą złożone imiesłowy gdzie przedrostek jest na początku całej formy. Nowy rozdział w karierze zawsze ekscytujący."
       },
       {
-        "id": "sep_verb_14",
+        "id": "sep_ver_all_14",
         "question": "Könnt ihr bitte die Musik etwas leiser _____?",
         "translation": "(Czy możecie proszę ściszyć trochę muzykę?)",
         "options": [
@@ -11549,7 +11670,7 @@
         "explanation": "Uwaga - 'leiser machen' NIE jest czasownikiem rozdzielnym! 'Leiser' to komparatyw od 'leise' (cicho), 'machen' to normalny czasownik. To fraza 'uczynić ciszej' nie czasownik rozdzielny. Prośba o zmniejszenie głośności to częsta sytuacja gdy muzyka przeszkadza - grzeczne wyrażenie potrzeby ciszy."
       },
       {
-        "id": "sep_verb_15",
+        "id": "sep_ver_all_15",
         "question": "Ich habe vergessen, das Fenster zu _____.",
         "translation": "(Zapomniałem zamknąć okno)",
         "options": [
@@ -12174,7 +12295,7 @@
     "level": "intermediate",
     "items": [
       {
-        "id": "temp_adv_1",
+        "id": "tem_adv_cla_1",
         "question": "Ich wohnte _____ in einer kleinen Wohnung in der Stadtmitte.",
         "translation": "(Mieszkałem kiedyś w małym mieszkaniu w centrum miasta)",
         "options": [
@@ -12187,7 +12308,7 @@
         "explanation": "Przysłówek 'früher' oznacza 'kiedyś/dawniej' - opisuje przeszłość. Wspomnienie o poprzednim miejscu zamieszkania. Polski używa 'kiedyś' lub 'dawniej' podobnie. Przesłówek 'früher' pomaga w opowiadaniu o swoich doświadczeniach życiowych - tworzy kontrast między tym jak było a jak jest teraz."
       },
       {
-        "id": "temp_adv_2",
+        "id": "tem_adv_cla_2",
         "question": "Wir treffen uns _____ um 15 Uhr vor dem Café zentral.",
         "translation": "(Spotykamy się później o 15 przed kawiarnią w centrum)",
         "options": [
@@ -12200,7 +12321,7 @@
         "explanation": "Przysłówek 'später' oznacza 'później' - odnosi się do przyszłego czasu. Umówione spotkanie na konkretną godzinę. Polski 'później' działa identycznie. Używasz 'später' gdy mówisz o tym co się wydarzy po obecnej chwili - pomaga w planowaniu i koordynacji działań."
       },
       {
-        "id": "temp_adv_3",
+        "id": "tem_adv_cla_3",
         "question": "_____ war ich noch sehr jung und unerfahren in vielen Dingen.",
         "translation": "(Wtedy byłem jeszcze bardzo młody i niedoświadczony w wielu rzeczach)",
         "options": [
@@ -12213,7 +12334,7 @@
         "explanation": "Przysłówek 'damals' oznacza 'wtedy/w tamtych czasach' - odnosi się do konkretnego okresu w przeszłości. Wspomnienie młodości i naiwności. Polski 'wtedy' lub 'w tamtych czasach' odpowiada. 'Damals' używasz gdy opowiadasz o swoich przeszłych doświadczeniach z perspektywy czasu - często z refleksją o rozwoju."
       },
       {
-        "id": "temp_adv_4",
+        "id": "tem_adv_cla_4",
         "question": "Er ist _____ schon in Berlin angekommen müssen nach Zeit.",
         "translation": "(Musi już w międzyczasie dotrzeć do Berlina według czasu)",
         "options": [
@@ -12226,7 +12347,7 @@
         "explanation": "Przysłówek 'inzwischen' oznacza 'w międzyczasie/tymczasem' - coś się zdarzyło w czasie między. Logiczne przypuszczenie bazujące na czasie podróży. Polski używa 'w międzyczasie' lub 'tymczasem' podobnie. 'Inzwischen' pomaga wypełniać luki czasowe w narracji - opisuje co się wydarzyło podczas gdy ty robiłeś coś innego."
       },
       {
-        "id": "temp_adv_5",
+        "id": "tem_adv_cla_5",
         "question": "Ich komme _____ nach Hause und rufe dich dann sofort an.",
         "translation": "(Przyjdę zaraz do domu i zadzwonię do ciebie wtedy natychmiast)",
         "options": [
@@ -12239,7 +12360,7 @@
         "explanation": "Przysłówek 'gleich' oznacza 'zaraz/od razu' - bardzo bliska przyszłość. Obietnica szybkiego powrotu i telefonu. Polski 'zaraz' lub 'od razu' odpowiada. 'Gleich' sygnalizuje że coś stanie się bardzo szybko - pomaga w zarządzaniu oczekiwaniami gdy ktoś na ciebie czeka."
       },
       {
-        "id": "temp_adv_6",
+        "id": "tem_adv_cla_6",
         "question": "Sie ist _____ zur Arbeit gegangen, bevor ich aufgewacht bin.",
         "translation": "(Poszła już do pracy zanim się obudziłem)",
         "options": [
@@ -12252,7 +12373,7 @@
         "explanation": "Przysłówek 'schon' oznacza 'już' - coś się stało wcześniej niż oczekiwano. Jej wczesne wyjście zaskakuje. Polski 'już' działa identycznie. 'Schon' często wyraża że coś nastąpiło szybciej lub wcześniej niż się spodziewałeś - może sugerować zaskoczenie lub pośpiech."
       },
       {
-        "id": "temp_adv_7",
+        "id": "tem_adv_cla_7",
         "question": "Ich bin _____ seit einer Stunde hier und warte ungeduldig.",
         "translation": "(Jestem już od godziny tutaj i czekam niecierpliwie)",
         "options": [
@@ -12265,7 +12386,7 @@
         "explanation": "Przysłówek 'schon' podkreśla że godzina czekania to dużo - frustracja rośnie. Długie oczekiwanie testuje cierpliwość. Forma 'schon seit' (już od) często używana do podkreślenia długości trwania. Niecierpliwość naturalnie rośnie z czasem - 'schon' to wyraża."
       },
       {
-        "id": "temp_adv_8",
+        "id": "tem_adv_cla_8",
         "question": "Wir müssen _____ 10 Minuten warten auf den nächsten Bus leider.",
         "translation": "(Musimy niestety jeszcze 10 minut czekać na następny autobus)",
         "options": [
@@ -12278,7 +12399,7 @@
         "explanation": "Przysłówek 'noch' oznacza 'jeszcze' - czas pozostały do oczekiwania. Czekanie na autobus to codzienne doświadczenie. Polski 'jeszcze' działa tak samo. 'Noch' wskazuje że akcja (czekanie) musi kontynuować przez określony czas - pomaga w zarządzaniu oczekiwaniami."
       },
       {
-        "id": "temp_adv_9",
+        "id": "tem_adv_cla_9",
         "question": "Er hat _____ vor einer Stunde mit der Arbeit angefangen begonnen.",
         "translation": "(Zaczął dopiero przed godziną pracę)",
         "options": [
@@ -12291,7 +12412,7 @@
         "explanation": "Przysłówek 'erst' oznacza 'dopiero' - później niż oczekiwano. Godzina to krótki czas więc 'dopiero' podkreśla świeżość rozpoczęcia. Polski 'dopiero' identycznie używany. 'Erst' często wyraża że coś stało się później niż byłoby idealne - może sugerować opóźnienie lub że jest jeszcze dużo do zrobienia."
       },
       {
-        "id": "temp_adv_10",
+        "id": "tem_adv_cla_10",
         "question": "Ich werde _____ nach dem Essen die Hausaufgaben machen können.",
         "translation": "(Dopiero po jedzeniu będę mógł zrobić zadanie domowe)",
         "options": [
@@ -12304,7 +12425,7 @@
         "explanation": "Przysłówek 'erst' dla opóźnionej akcji - najpierw jedzenie, DOPIERO POTEM praca domowa. Priorytetyzowanie jedzenia przed nauką. Polski 'dopiero' podobnie używany. 'Erst nach' (dopiero po) pokazuje sekwencję - jedna rzecz musi się skończyć zanim rozpocznie się druga."
       },
       {
-        "id": "temp_adv_11",
+        "id": "tem_adv_cla_11",
         "question": "Sie wird _____ zurückkommen, sie hat es versprochen fest mir.",
         "translation": "(Wróci wkrótce, obiecała mi to mocno)",
         "options": [
@@ -12317,7 +12438,7 @@
         "explanation": "Przysłówek 'bald' oznacza 'wkrótce/niedługo' - bliska przyszłość. Obietnica szybkiego powrotu daje nadzieję. Polski 'wkrótce' lub 'niedługo' odpowiada. 'Bald' łagodzi niecierpliwość czekania - zapewnia że rozłąka będzie krótka. Obietnice z 'bald' pomagają w wytrzymaniu tymczasowej nieobecności."
       },
       {
-        "id": "temp_adv_12",
+        "id": "tem_adv_cla_12",
         "question": "Wir haben _____ schon alles vorbereitet für die Party morgen.",
         "translation": "(Przygotowaliśmy już wcześniej wszystko na przyjęcie jutro)",
         "options": [
@@ -12330,7 +12451,7 @@
         "explanation": "Przysłówek 'vorher' oznacza 'wcześniej/uprzednio' - przed jakimś momentem odniesienia. Wcześniejsze przygotowania oznaczają mniej stresu. Polski 'wcześniej' lub 'uprzednio' działa podobnie. Dobre przygotowanie z wyprzedzeniem to klucz do udanej imprezy - eliminuje chaos w ostatniej chwili."
       },
       {
-        "id": "temp_adv_13",
+        "id": "tem_adv_cla_13",
         "question": "Ich rufe dich _____ wieder an, wenn ich mehr Zeit habe endlich.",
         "translation": "(Oddzwonię do ciebie później ponownie, gdy będę miał w końcu więcej czasu)",
         "options": [
@@ -12343,7 +12464,7 @@
         "explanation": "Przysłówek 'nachher' oznacza 'później/potem' - po obecnym momencie. Obietnica kontaktu gdy sytuacja się uspokoi. Polski 'później' lub 'potem' identyczny. 'Nachher' używasz gdy chcesz powiedzieć że coś zrobisz ale nie teraz - pomaga w zarządzaniu oczekiwaniami bez odrzucania prośby."
       },
       {
-        "id": "temp_adv_14",
+        "id": "tem_adv_cla_14",
         "question": "Sie arbeitet _____ an diesem Projekt, aber es ist noch nicht fertig.",
         "translation": "(Pracuje już nad tym projektem, ale nie jest jeszcze skończony)",
         "options": [
@@ -12356,7 +12477,7 @@
         "explanation": "Przysłówek 'bereits' oznacza 'już' (bardziej formalnie niż 'schon') - podkreśla że praca jest w toku. Projekt jeszcze nieukończony mimo postępu. Polski 'już' odpowiada. 'Bereits' często w formalnych kontekstach - pokazuje że proces się rozpoczął choć może nie zakończył."
       },
       {
-        "id": "temp_adv_15",
+        "id": "tem_adv_cla_15",
         "question": "Wir fahren _____ nach Spanien dieses Jahr in den Sommerurlaub!",
         "translation": "(Jedziemy w końcu do Hiszpanii w tym roku na letnie wakacje!)",
         "options": [
@@ -14429,7 +14550,7 @@
     "level": "advanced",
     "items": [
       {
-        "id": "ext_adj_1",
+        "id": "ext_adj_phr_1",
         "question": "Das von meinem Großvater _____ Haus steht immer noch fest.",
         "translation": "(Dom zbudowany przez mojego dziadka stoi wciąż mocno)",
         "options": [
@@ -14442,7 +14563,7 @@
         "explanation": "Rozszerzona fraza imiesłowowa łączy sprawcę z czasownikiem - 'von Großvater gebaute' całość przed rzeczownikiem 'Haus'. Imiesłów 'gebaut' dostaje końcówkę przymiotnikową -e. To kompresuje zdanie względne ('das Haus, das von... gebaut wurde') w jeden atrybut. Dom zbudowany przez rodzinę ma emocjonalną wartość - to fizyczne dziedzictwo pokoleń."
       },
       {
-        "id": "ext_adj_2",
+        "id": "ext_adj_phr_2",
         "question": "Die in der Zeitung _____ Nachricht hat alle überrascht sehr.",
         "translation": "(Wiadomość opublikowana w gazecie zaskoczyła wszystkich bardzo)",
         "options": [
@@ -14455,7 +14576,7 @@
         "explanation": "Lokalizacja 'in der Zeitung' plus imiesłów 'veröffentlichte' tworzą rozszerzoną frazę. Końcówka -e dla żeńskiego mianownika. Media często publikują zaskakujące wiadomości. Ta konstrukcja precyzyjnie wskazuje źródło informacji - ważne dla wiarygodności w erze fake news."
       },
       {
-        "id": "ext_adj_3",
+        "id": "ext_adj_phr_3",
         "question": "Der seit zehn Jahren hier _____ Lehrer geht bald in Rente.",
         "translation": "(Nauczyciel pracujący tu od dziesięciu lat idzie wkrótce na emeryturę)",
         "options": [
@@ -14468,7 +14589,7 @@
         "explanation": "Czas trwania 'seit zehn Jahren' plus miejsce 'hier' plus imiesłów teraźniejsny 'unterrichtende'. Końcówka -e dla męskiego mianownika. Długi staż pokazuje doświadczenie. Emerytura po latach pracy to zasłużony odpoczynek - nauczyciele kształtują pokolenia uczniów przez swoje kariery."
       },
       {
-        "id": "ext_adj_4",
+        "id": "ext_adj_phr_4",
         "question": "Das gestern Abend im Fernsehen _____ Interview war spannend.",
         "translation": "(Wywiad pokazany wczoraj wieczorem w telewizji był fascynujący)",
         "options": [
@@ -14481,7 +14602,7 @@
         "explanation": "Czas 'gestern Abend' plus miejsce 'im Fernsehen' plus imiesłów 'gezeigte' kompresuje wiele informacji. Nijaki mianownik -e końcówka. To bardzo efektywna forma przekazywania szczegółów. Zamiast długiego zdania względnego, wszystko mieści się w jednej frazie przed rzeczownikiem."
       },
       {
-        "id": "ext_adj_5",
+        "id": "ext_adj_phr_5",
         "question": "Die für die Umwelt _____ Maßnahmen sind sehr wichtig aktuell.",
         "translation": "(Środki podjęte dla środowiska są bardzo ważne aktualnie)",
         "options": [
@@ -14494,7 +14615,7 @@
         "explanation": "Cel 'für die Umwelt' plus imiesłów 'getroffenen' opisuje środki. Mnoga końcówka -en po określonym 'die'. Ekologia wymaga konkretnych działań. Rozszerzona fraza pozwala elegancko wskazać cel środków - ochrona środowiska wymaga świadomych decyzji politycznych i indywidualnych."
       },
       {
-        "id": "ext_adj_6",
+        "id": "ext_adj_phr_6",
         "question": "Der mit großer Sorgfalt _____ Bericht liegt auf dem Tisch.",
         "translation": "(Raport przygotowany z wielką starannością leży na stole)",
         "options": [
@@ -14507,7 +14628,7 @@
         "explanation": "Sposób wykonania 'mit großer Sorgfalt' plus imiesłów 'vorbereitete'. Męski mianownik -e końcówka. Staranność w przygotowaniu dokumentów pokazuje profesjonalizm. Ta fraza kompresuje informację o JAKOŚCI przygotowania - nie tylko że został przygotowany, ale JAK został przygotowany."
       },
       {
-        "id": "ext_adj_7",
+        "id": "ext_adj_phr_7",
         "question": "Das aus Italien _____ Olivenöl schmeckt besonders aromatisch.",
         "translation": "(Oliwa z oliwek importowana z Włoch smakuje szczególnie aromatycznie)",
         "options": [
@@ -14520,7 +14641,7 @@
         "explanation": "Pochodzenie 'aus Italien' plus imiesłów 'importierte' wskazuje źródło produktu. Nijaki mianownik -e końcówka. Włoska oliwa ceniona za jakość. Informacja o pochodzeniu często wpływa na percepcję jakości - pochodzenie geograficzne produktów kulinarnych ma znaczenie dla smaku i autentyczności."
       },
       {
-        "id": "ext_adj_8",
+        "id": "ext_adj_phr_8",
         "question": "Die von allen _____ Entscheidung war die richtige letztendlich.",
         "translation": "(Decyzja zaakceptowana przez wszystkich była właściwa ostatecznie)",
         "options": [
@@ -14533,7 +14654,7 @@
         "explanation": "Sprawca 'von allen' (przez wszystkich) plus imiesłów 'akzeptierte'. Żeński mianownik -e. Konsensus grupowy dał dobre rezultaty. Uniwersalne poparcie dla decyzji często oznacza że był to właściwy wybór - mądrość tłumu ma swoją wartość."
       },
       {
-        "id": "ext_adj_9",
+        "id": "ext_adj_phr_9",
         "question": "Der vor einer Woche _____ Brief ist endlich angekommen heute.",
         "translation": "(List wysłany tydzień temu w końcu dzisiaj przybył)",
         "options": [
@@ -14546,7 +14667,7 @@
         "explanation": "Czas 'vor einer Woche' plus imiesłów 'geschickte' określa kiedy był wysłany. Męski mianownik -e końcówka. Opóźnienie poczty to frustrujące. Rozszerzona fraza czasowa pomaga śledzić przesyłki - wiedza kiedy coś było wysłane pozwala oszacować kiedy powinno dotrzeć."
       },
       {
-        "id": "ext_adj_10",
+        "id": "ext_adj_phr_10",
         "question": "Die im Krankenhaus _____ Ärzte sind sehr kompetent alle.",
         "translation": "(Lekarze pracujący w szpitalu są bardzo kompetentni wszyscy)",
         "options": [
@@ -14559,7 +14680,7 @@
         "explanation": "Miejsce pracy 'im Krankenhaus' plus imiesłów teraźniejszy 'arbeitenden'. Mnoga słaba końcówka -en po określonym 'die'. Kompetencja personelu medycznego to kluczowa dla jakości opieki. Imiesłów teraźniejszy pokazuje że to ich OBECNA praca - aktywnie wykonywany zawód."
       },
       {
-        "id": "ext_adj_11",
+        "id": "ext_adj_phr_11",
         "question": "Das ohne Erlaubnis _____ Gebiet ist für Besucher gesperrt.",
         "translation": "(Obszar wchodzony bez pozwolenia jest zamknięty dla odwiedzających)",
         "options": [
@@ -14572,7 +14693,7 @@
         "explanation": "Warunek 'ohne Erlaubnis' plus imiesłów 'betretene' opisuje zakazany obszar. Nijaki mianownik -e końcówka. Zakazy dostępu chronią bezpieczeństwo lub prywatność. Fraza jasno komunikuje że wejście bez pozwolenia jest problemem - respektowanie granic jest ważne."
       },
       {
-        "id": "ext_adj_12",
+        "id": "ext_adj_phr_12",
         "question": "Die von vielen Menschen _____ Tradition wird weiter gepflegt.",
         "translation": "(Tradycja praktykowana przez wielu ludzi jest nadal kultywowana)",
         "options": [
@@ -14585,7 +14706,7 @@
         "explanation": "Grupa praktykująca 'von vielen Menschen' plus imiesłów 'praktizierte'. Żeński mianownik -e końcówka. Tradycje łączą pokolenia. Kontynuacja tradycji pokazuje szacunek dla dziedzictwa - praktyki kulturowe przekazywane są przez aktywne uczestnictwo."
       },
       {
-        "id": "ext_adj_13",
+        "id": "ext_adj_phr_13",
         "question": "Der mit viel Liebe _____ Kuchen schmeckt einfach fantastisch!",
         "translation": "(Ciasto pieczone z wielką miłością smakuje po prostu fantastycznie!)",
         "options": [
@@ -14598,7 +14719,7 @@
         "explanation": "Emocja w procesie 'mit viel Liebe' plus imiesłów 'gebackene'. Męski mianownik -e końcówka. Miłość w gotowaniu to metafora troski. Jedzenie przygotowane z sercem rzeczywiście często smakuje lepiej - emocjonalne zaangażowanie wpływa na efekt końcowy."
       },
       {
-        "id": "ext_adj_14",
+        "id": "ext_adj_phr_14",
         "question": "Das für Kinder ab 6 Jahren _____ Buch ist sehr beliebt.",
         "translation": "(Książka przeznaczona dla dzieci od 6 lat jest bardzo popularna)",
         "options": [
@@ -14611,7 +14732,7 @@
         "explanation": "Grupa docelowa 'für Kinder ab 6 Jahren' plus imiesłów 'geeignete'. Nijaki mianownik -e. Odpowiednia klasyfikacja wiekowa pomaga rodzicom. Specyfikacja wieku w rozszerzonej frazie precyzyjnie określa publiczność - książki dopasowane do rozwoju poznawczego są skuteczniejsze edukacyjnie."
       },
       {
-        "id": "ext_adj_15",
+        "id": "ext_adj_phr_15",
         "question": "Die unter schwierigen Bedingungen _____ Athleten sind bewundernswert.",
         "translation": "(Sportowcy trenujący w trudnych warunkach są podziwu godni)",
         "options": [
@@ -15122,7 +15243,7 @@
         "explanation": "Od czasownika 'bedeuten' (oznaczać) powstaje 'Bedeutung' (znaczenie) przez dodanie '-ung'. To fundamentalny rzeczownik w nauce języków - każde słowo ma swoją 'Bedeutung'. Niejasne reguły wymagają lepszego wyjaśnienia - dobra pedagogika polega na przekazywaniu zrozumiałych instrukcji."
       },
       {
-        "id": "noun_adj_7",
+        "id": "wor_for_pat_7",
         "question": "Seine _____ in dieser Situation war wirklich beeindruckend mutig.",
         "translation": "(Jego odwaga w tej sytuacji była naprawdę imponująco odważna)",
         "options": [
@@ -17709,7 +17830,7 @@
     "level": "advanced",
     "items": [
       {
-        "id": "adj_noun_1",
+        "id": "adj_nou_com_1",
         "question": "Ich habe gestern einen _____ getroffen aus München zufällig.",
         "translation": "(Spotkałem wczoraj Niemca z Monachium przypadkowo)",
         "options": [
@@ -17722,7 +17843,7 @@
         "explanation": "Przymiotnik 'deutsch' (niemiecki) jako rzeczownik 'Deutscher' (Niemiec) - WIELKA litera! W bierniku z nieokreślonym 'einen' dostaje końcówkę -en jak zwykły przymiotnik. To przymiotnik udający rzeczownik - deklinuje się jak przymiotnik. Narodowości często używają tej konstrukcji - 'Deutscher, Pole, Franzose' zachowują się jak przymiotniki."
       },
       {
-        "id": "adj_noun_2",
+        "id": "adj_nou_com_2",
         "question": "Die _____ wartet schon lange auf den Arzt im Wartezimmer.",
         "translation": "(Chora kobieta czeka już długo na lekarza w poczekalni)",
         "options": [
@@ -17735,7 +17856,7 @@
         "explanation": "Przymiotnik 'krank' (chory) jako rzeczownik 'die Kranke' (chora osoba/pacjentka) - mianownik żeński z określonym 'die' dostaje słabą końcówkę -e. Wielka litera bo rzeczownik. Pacjenci w poczekalni to powszechny widok. Forma 'die Kranke' elegancko opisuje osobę przez jej stan - krócej niż 'die kranke Frau'."
       },
       {
-        "id": "adj_noun_3",
+        "id": "adj_nou_com_3",
         "question": "Ich habe etwas _____ im Geschäft gekauft gestern schön.",
         "translation": "(Kupiłem coś nowego w sklepie wczoraj)",
         "options": [
@@ -17748,7 +17869,7 @@
         "explanation": "Po nieokreślonych zaimkach jak 'etwas, nichts, viel, wenig' przymiotniki stają się rzeczownikami nijakimi - 'etwas Neues' (coś nowego). WIELKA litera! Końcówka -es jak silna deklinacja nijaka. Zakupy nowych rzeczy to przyjemność. Konstrukcja 'etwas + przymiotnik' bardzo użyteczna gdy nie chcesz precyzować CO dokładnie."
       },
       {
-        "id": "adj_noun_4",
+        "id": "adj_nou_com_4",
         "question": "Der _____ dort ist mein Kollege aus der Firma seit Jahren.",
         "translation": "(Ten wysoki tam jest moim kolegą z firmy od lat)",
         "options": [
@@ -17761,7 +17882,7 @@
         "explanation": "Przymiotnik 'groß' (wysoki/duży) jako rzeczownik męski - 'der Große' (ten wysoki). Mianownik z określonym 'der' dostaje słabą końcówkę -e. Wielka litera! Opisywanie ludzi przez cechy fizyczne. Forma 'der Große' krótsza niż 'der große Mann' - ekonomia języka przy jasnym kontekście."
       },
       {
-        "id": "adj_noun_5",
+        "id": "adj_nou_com_5",
         "question": "Ich habe nichts _____ gehört von ihm in letzter Zeit.",
         "translation": "(Nie słyszałem nic dobrego od niego ostatnio)",
         "options": [
@@ -17774,7 +17895,7 @@
         "explanation": "Po 'nichts' (nic) przymiotnik jako rzeczownik nijaki - 'nichts Gutes' (nic dobrego). Wielka litera plus końcówka -es. Brak dobrych wiadomości może martwić. Od 'gut' (dobry) forma 'Gutes' używana abstrakcyjnie - nie konkretna rzecz tylko abstrakcyjne dobro czy dobre wieści."
       },
       {
-        "id": "adj_noun_6",
+        "id": "adj_nou_com_6",
         "question": "Sie hilft immer den _____ in unserer Gesellschaft großzügig.",
         "translation": "(Zawsze hojnie pomaga biednym w naszym społeczeństwie)",
         "options": [
@@ -17787,7 +17908,7 @@
         "explanation": "Przymiotnik 'arm' (biedny) jako rzeczownik mnogi - 'den Armen' (biednym) celownik. Czasownik 'helfen' wymaga celownika. Końcówka -en jak w przymiotniku mnogim. Pomoc potrzebującym to ważna wartość. Forma 'den Armen' pokazuje grupę społeczną zdefiniowaną przez cechę - przymiotnikowe rzeczowniki często dla grup."
       },
       {
-        "id": "adj_noun_7",
+        "id": "adj_nou_com_7",
         "question": "Ich möchte gerne etwas _____ trinken - nicht Wasser!",
         "translation": "(Chciałbym wypić coś zimnego - nie wodę!)",
         "options": [
@@ -17800,7 +17921,7 @@
         "explanation": "Po 'etwas' przymiotnik jako rzeczownik nijaki - 'etwas Kaltes' (coś zimnego). Końcówka -es silna nijaka. Pragnienie zimnego napoju. Od 'kalt' (zimny) forma 'Kaltes' abstrakcyjna - nie konkretny napój tylko CECHA (zimność) napoju której szukasz."
       },
       {
-        "id": "adj_noun_8",
+        "id": "adj_nou_com_8",
         "question": "Die _____ kommen oft hierher zum Einkaufen aus der Umgebung.",
         "translation": "(Miejscowi przychodzą tu często na zakupy z okolicy)",
         "options": [
@@ -17813,7 +17934,7 @@
         "explanation": "Przymiotnik 'einheimisch' (miejscowy/lokalny) jako rzeczownik mnogi - 'die Einheimischen' (miejscowi). Mianownik mnogi z określonym 'die' dostaje słabą końcówkę -en. Lokalni mieszkańcy znają najlepsze miejsca. Forma 'die Einheimischen' elegancko opisuje grupę przez miejsce pochodzenia - przymiotnikowy rzeczownik dla wspólnoty."
       },
       {
-        "id": "adj_noun_9",
+        "id": "adj_nou_com_9",
         "question": "Er ist ein _____ in der Firma - arbeitet schon 40 Jahre!",
         "translation": "(Jest starym pracownikiem w firmie - pracuje już 40 lat!)",
         "options": [
@@ -17826,7 +17947,7 @@
         "explanation": "Przymiotnik 'alt' (stary) jako rzeczownik męski - 'ein Alter' (stary/weteran). Mianownik z nieokreślonym 'ein' dostaje silną końcówkę -er. Wielka litera! Długi staż to doświadczenie. Forma 'ein Alter' może też oznaczać 'staruszek' - kontekst określa czy to o wieku czy stażu."
       },
       {
-        "id": "adj_noun_10",
+        "id": "adj_nou_com_10",
         "question": "Ich esse gerne etwas _____ zum Nachtisch nach dem Essen.",
         "translation": "(Lubię zjeść coś słodkiego na deser po jedzeniu)",
         "options": [
@@ -17839,7 +17960,7 @@
         "explanation": "Po 'etwas' przymiotnik 'süß' (słodki) jako rzeczownik nijaki - 'etwas Süßes' (coś słodkiego). Końcówka -es standardowa. Desery są popularnym zakończeniem posiłku. Forma 'etwas Süßes' ogólna - może być ciastko, czekolada, lody - każda słodycz pasuje."
       },
       {
-        "id": "adj_noun_11",
+        "id": "adj_nou_com_11",
         "question": "Viele _____ studieren an dieser Universität aus verschiedenen Ländern.",
         "translation": "(Wielu obcokrajowców studiuje na tym uniwersytecie z różnych krajów)",
         "options": [
@@ -17852,7 +17973,7 @@
         "explanation": "UWAGA: 'Ausländer' to prawdziwy rzeczownik (nie przymiotnikowy)! Mnoga 'Ausländer' bez dodatkowej końcówki. Nie wszystko co wygląda jak przymiotnik to przymiotnikowy rzeczownik. Międzynarodowi studenci wzbogacają kampusy. Mimo że 'ausländisch' istnieje jako przymiotnik, forma rzeczownikowa 'Ausländer' jest standardowa i nie deklinuje się jak przymiotnik."
       },
       {
-        "id": "adj_noun_12",
+        "id": "adj_nou_com_12",
         "question": "Das ist nichts _____ - das ist ganz normal alltäglich!",
         "translation": "(To nie jest nic szczególnego - to całkiem normalne codzienne!)",
         "options": [
@@ -17865,7 +17986,7 @@
         "explanation": "Po 'nichts' przymiotnik 'besonder' (szczególny) jako rzeczownik nijaki - 'nichts Besonderes' (nic szczególnego). Końcówka -es. To powszechne wyrażenie bagatelizujące. Forma 'nichts Besonderes' to idiomatyczny sposób powiedzenia że coś jest przeciętne - używana z fałszywą skromnością lub realistyczną oceną."
       },
       {
-        "id": "adj_noun_13",
+        "id": "adj_nou_com_13",
         "question": "Wir haben viel _____ erlebt auf unserer Reise spannend!",
         "translation": "(Przeżyliśmy wiele ciekawego w naszej podróży ekscytująco!)",
         "options": [
@@ -17878,7 +17999,7 @@
         "explanation": "Po 'viel' (wiele) przymiotnik jako rzeczownik nijaki - 'viel Interessantes' (wiele ciekawego). Końcówka -es silna nijaka. Podróże pełne są doświadczeń. Forma z 'viel' dla niepoliczalnych abstrakcji - 'wiele ciekawych rzeczy/doświadczeń' skompresowane w dwa słowa."
       },
       {
-        "id": "adj_noun_14",
+        "id": "adj_nou_com_14",
         "question": "Der _____ sitzt alleine in der Ecke und liest still.",
         "translation": "(Nieznajomy siedzi sam w rogu i czyta cicho)",
         "options": [
@@ -17891,7 +18012,7 @@
         "explanation": "Przymiotnik 'fremd' (obcy) jako rzeczownik męski - 'der Fremde' (nieznajomy). Mianownik z określonym 'der' dostaje słabą końcówkę -e. Samotność nieznajomego budzi ciekawość. Forma 'der Fremde' neutralnie opisuje osobę którą nie znasz - bez negatywnych konotacji, po prostu ktoś nieznany."
       },
       {
-        "id": "adj_noun_15",
+        "id": "adj_nou_com_15",
         "question": "Sie hat mir etwas sehr _____ erzählt über ihre Vergangenheit.",
         "translation": "(Opowiedziała mi coś bardzo osobistego o swojej przeszłości)",
         "options": [
@@ -19144,7 +19265,7 @@
     "level": "intermediate",
     "items": [
       {
-        "id": "time_expr_1",
+        "id": "tim_exp_det_1",
         "question": "Ich habe ihn _____ nicht mehr gesehen - sehr lange!",
         "translation": "(Nie widziałem go od wieków - bardzo długo!)",
         "options": [
@@ -19157,7 +19278,7 @@
         "explanation": "Wyrażenie 'seit Ewigkeiten' (od wieków/od wieczności) używa 'seit' z celownikiem dla trwającego okresu. Przesadna forma dla długiego czasu. Mnoga 'Ewigkeiten' intensyfikuje. Tęsknota za kontaktem. Fraza jest idiomatyczna - dosłownie 'od wieczności' ale znaczy po prostu bardzo długo, przesada dla emocjonalnego efektu."
       },
       {
-        "id": "time_expr_2",
+        "id": "tim_exp_det_2",
         "question": "_____ werde ich in Urlaub fahren endlich an die See!",
         "translation": "(Za dwa tygodnie pojadę w końcu na urlop nad morze!)",
         "options": [
@@ -19170,7 +19291,7 @@
         "explanation": "Wyrażenie 'in zwei Wochen' (za dwa tygodnie) używa 'in' z celownikiem dla PRZYSZŁEGO czasu. Odliczanie do urlopu. Celownik 'Wochen' mnoga. Antycypacja wakacji. Przyimek 'in' dla przyszłości może być mylący - ale w kontekście czasowym jasno oznacza 'za' (czas do wydarzenia), nie 'w' (lokalizacja)."
       },
       {
-        "id": "time_expr_3",
+        "id": "tim_exp_det_3",
         "question": "_____ habe ich meinen Freund zum letzten Mal gesehen.",
         "translation": "(Tydzień temu widziałem mojego przyjaciela po raz ostatni)",
         "options": [
@@ -19183,7 +19304,7 @@
         "explanation": "Wyrażenie 'vor einer Woche' (tydzień temu) używa 'vor' z celownikiem dla UKOŃCZONEJ przeszłości. Punkt w czasie. Celownik żeński 'einer Woche'. Wspomnienie ostatniego spotkania. 'Vor' oznacza wstecz od teraz - liczy czas który MINĄŁ od wydarzenia, zamknięty okres w przeszłości."
       },
       {
-        "id": "time_expr_4",
+        "id": "tim_exp_det_4",
         "question": "Ich lerne _____ Deutsch intensiv - gute Fortschritte!",
         "translation": "(Uczę się od trzech miesięcy niemieckiego intensywnie - dobre postępy!)",
         "options": [
@@ -19196,7 +19317,7 @@
         "explanation": "Wyrażenie 'seit drei Monaten' (od trzech miesięcy) używa 'seit' z celownikiem dla TRWAJĄCEGO okresu. Akcja zaczęła się wtedy i WCIĄŻ trwa. Mnoga 'Monaten'. Postęp w nauce. 'Seit' łączy przeszłość z teraźniejszością - okres który rozpoczął się wcześniej ale nie zakończył, wciąż aktywny."
       },
       {
-        "id": "time_expr_5",
+        "id": "tim_exp_det_5",
         "question": "_____ bin ich endlich mit der Arbeit fertig - geschafft!",
         "translation": "(Po długim czasie w końcu skończyłem z pracą - udało się!)",
         "options": [
@@ -19209,7 +19330,7 @@
         "explanation": "Wyrażenie 'nach langer Zeit' (po długim czasie) używa 'nach' z celownikiem dla okresu który MINĄŁ zanim coś się stało. Ulga z ukończenia. Celownik żeński 'langer Zeit'. Długotrwała praca zakończona. 'Nach' wskazuje że długi okres był WARUNKIEM lub KONTEKSTEM - po jego upływie nastąpiło osiągnięcie."
       },
       {
-        "id": "time_expr_6",
+        "id": "tim_exp_det_6",
         "question": "Wir sehen uns _____ wieder - ich freue mich schon!",
         "translation": "(Zobaczymy się za miesiąc ponownie - już się cieszę!)",
         "options": [
@@ -19222,7 +19343,7 @@
         "explanation": "Przyszły czas z 'in' - 'in einem Monat' (za miesiąc). Celownik męski 'einem Monat'. Planowane spotkanie. Antycypacja radosna. Forma 'in' dla przyszłości konsekwentna - 'in einer Stunde, in zwei Tagen, in drei Wochen' wszystkie używają tej samej konstrukcji."
       },
       {
-        "id": "time_expr_7",
+        "id": "tim_exp_det_7",
         "question": "_____ habe ich in diesem Restaurant gegessen - war super!",
         "translation": "(Niedawno jadłem w tej restauracji - było super!)",
         "options": [
@@ -19235,7 +19356,7 @@
         "explanation": "Przysłówek 'neulich' (niedawno) dla bliskiej ale niesprecyzowanej przeszłości. Alternatywnie 'kürzlich' lub 'vor kurzem'. Pozytywne wspomnienie kulinar ne. Wszystkie trzy formy podobne ale 'neulich' najbardziej casualowe - używasz gdy dokładna data nieważna, liczy się że było ostatnio."
       },
       {
-        "id": "time_expr_8",
+        "id": "tim_exp_det_8",
         "question": "Ich wohne _____ in dieser Stadt - kenne sie gut!",
         "translation": "(Mieszkam od dawna w tym mieście - znam je dobrze!)",
         "options": [
@@ -19248,7 +19369,7 @@
         "explanation": "Wyrażenie 'seit langem' (od dawna) używa 'seit' z celownikiem dla długiego trwającego okresu. Nijaki 'langem' deklinowane. Znajomość miasta przez lata. Forma 'seit langem' mniej konkretna niż 'seit zehn Jahren' - podkreśla DŁUGOŚĆ nie precyzyjną liczbę, emfaza na doświadczeniu."
       },
       {
-        "id": "time_expr_9",
+        "id": "tim_exp_det_9",
         "question": "_____ werden wir die Ergebnisse bekommen hoffentlich schnell.",
         "translation": "(Najwyżej za tydzień otrzymamy wyniki miejmy nadzieję szybko)",
         "options": [
@@ -19261,7 +19382,7 @@
         "explanation": "Wyrażenie 'spätestens in' (najpóźniej za/najwyżej za) określa MAKSYMALNY czas oczekiwania. Uspokojenie przez termin. 'Spätestens' (najpóźniej) z przyszłym czasem. Oczekiwanie wyników. Forma daje górną granicę - może być wcześniej ale NIE później, to gwarancja maksymalnego czasu."
       },
       {
-        "id": "time_expr_10",
+        "id": "tim_exp_det_10",
         "question": "Er ist _____ angekommen - wir haben lange gewartet!",
         "translation": "(Dopiero teraz dotarł - długo czekaliśmy!)",
         "options": [
@@ -19274,7 +19395,7 @@
         "explanation": "Wyrażenie 'erst jetzt' (dopiero teraz) pokazuje że coś nastąpiło PÓŹNIEJ niż oczekiwano. Opóźnienie frustrujące. 'Erst' minimalizuje czas - 'dopiero' znaczy mniej niż powinno. Połączenie frustracji z ulgą. Forma wyraża że czekanie było dłuższe niż komfortowe - 'erst' podkreśla że to minimum akceptowalnego czasu."
       },
       {
-        "id": "time_expr_11",
+        "id": "tim_exp_det_11",
         "question": "Ich arbeite hier _____ - noch ganz frisch neu!",
         "translation": "(Pracuję tu od niedawna - jeszcze całkiem świeżo!)",
         "options": [
@@ -19287,7 +19408,7 @@
         "explanation": "Wyrażenie 'seit kurzem' (od niedawna) używa 'seit' dla TRWAJĄCEGO krótkiego okresu. Nijaki 'kurzem' celownik. Nowy w pracy. Początek zatrudnienia. 'Seit kurzem' pokazuje że jesteś w trakcie adaptacji - nie minęło dużo czasu od rozpoczęcia więc wciąż uczysz się i przyzwyczajasz."
       },
       {
-        "id": "time_expr_12",
+        "id": "tim_exp_det_12",
         "question": "_____ können wir mit dem Projekt beginnen endlich starten!",
         "translation": "(Od jutra możemy zacząć z projektem w końcu!)",
         "options": [
@@ -19300,7 +19421,7 @@
         "explanation": "Wyrażenie 'ab morgen' (od jutra) używa 'ab' dla PUNKTU STARTOWEGO w przyszłości. Od tego momentu naprzód. Biernik 'morgen' nieodmienny. Początek projektu. 'Ab' wskazuje że od tego punktu coś będzie kontynuowane - nie jednorazowe jutro tylko od jutra i dalej."
       },
       {
-        "id": "time_expr_13",
+        "id": "tim_exp_det_13",
         "question": "Wir bleiben _____ hier - dann fahren wir nach Hause.",
         "translation": "(Zostajemy tu do wieczora - potem jedziemy do domu)",
         "options": [
@@ -19313,7 +19434,7 @@
         "explanation": "Wyrażenie 'bis zum Abend' (do wieczora) używa 'bis' plus 'zu' z celownikiem dla KOŃCOWEGO punktu. Męski 'Abend' w celowniku. Planowanie powrotu. Forma 'bis zum' pokazuje limit czasowy - zostajecie AŻ DO tego momentu ale nie dłużej, jasna granica planów."
       },
       {
-        "id": "time_expr_14",
+        "id": "tim_exp_det_14",
         "question": "Sie kommt _____ zu spät - immer unpünktlich leider!",
         "translation": "(Przychodzi za każdym razem za późno - zawsze niepunktualna!)",
         "options": [
@@ -19326,7 +19447,7 @@
         "explanation": "Wyrażenie 'jedes Mal' (za każdym razem) używa nijakiego 'Mal' (raz) z 'jedes'. Biernik jako przysłówek czasu. Chroniczna niepunktualność. Forma 'jedes Mal' podkreśla REGULARNOŚĆ problemu - nie jednorazowy wypadek tylko powtarzający się wzór, frustrujący dla czekających."
       },
       {
-        "id": "time_expr_15",
+        "id": "tim_exp_det_15",
         "question": "_____ sollten wir uns öfter treffen - zu selten jetzt!",
         "translation": "(W przyszłości powinniśmy się częściej spotykać - za rzadko teraz!)",
         "options": [

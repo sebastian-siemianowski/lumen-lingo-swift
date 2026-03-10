@@ -1547,7 +1547,7 @@
         "explanation": "Nach 'wonder' (sich fragen): 'if' mit normaler Wortfolge, NICHT Fragestellung. Diese Unsicherheit über Teilnahme ist berechtigte Sorge vor wichtigem Meeting."
       },
       {
-        "id": "modal_adv_9",
+        "id": "wor_ord_com_9",
         "question": "Only after finishing _____ how difficult it had been for me.",
         "translation": "Erst nach Beendigung erkannte ich, wie schwierig es für mich gewesen war.",
         "options": [
@@ -1804,7 +1804,7 @@
         "explanation": "Trennbar 'give up' (aufgeben): Diese Ermutigung kurz vor Ziel motiviert zu letzter Anstrengung trotz Erschöpfung."
       },
       {
-        "id": "sep_12",
+        "id": "sep_ver_12",
         "question": "I need to fill _____ this application form before the deadline tomorrow.",
         "translation": "Ich muss dieses Antragsformular vor der morgigen Deadline ausfüllen.",
         "options": [
@@ -7723,7 +7723,7 @@
         "explanation": "'TOO' + Adjektiv + 'for...to': 'too heavy for me to carry'. Diese Taschenschwere bei vielen Treppen braucht Hilfe."
       },
       {
-        "id": "tag_11",
+        "id": "so_suc_too_11",
         "question": "She's _____ a good singer that she should audition for the show.",
         "translation": "Sie ist so eine gute Sängerin, dass sie für die Show vorsingen sollte.",
         "options": [
@@ -8290,7 +8290,13 @@
         "question": "Don't _____ upset about small things - life is too short for that!",
         "translation": "Werde nicht wegen kleiner Dinge aufgeregt - das Leben ist zu kurz dafür!",
         "correct": "get",
-        "explanation": "Für EMOTION umgangssprachlich: 'get upset' (häufiger als become). Dieser Rat zu Gelassenheit bei Kleinigkeiten ist gesunde Lebenseinstellung."
+        "explanation": "Für EMOTION umgangssprachlich: 'get upset' (häufiger als become). Dieser Rat zu Gelassenheit bei Kleinigkeiten ist gesunde Lebenseinstellung.",
+        "options": [
+          "get",
+          "become",
+          "turn",
+          "grow"
+        ]
       },
       {
         "id": "get_become_8",
@@ -12302,7 +12308,7 @@
     "level": "advanced",
     "items": [
       {
-        "id": "rel_1",
+        "id": "rel_cla_1",
         "question": "The woman _____ lives next door is a famous singer and performer.",
         "translation": "Die Frau, die nebenan wohnt, ist eine berühmte Sängerin und Künstlerin.",
         "options": [
@@ -12315,7 +12321,7 @@
         "explanation": "Für PERSONEN: 'WHO' oder 'THAT' beide möglich: 'woman who/that lives'. Diese Relativsätze fügen zusätzliche Information über die Person hinzu."
       },
       {
-        "id": "rel_2",
+        "id": "rel_cla_2",
         "question": "This is the book _____ I told you about last week during our meeting.",
         "translation": "Das ist das Buch, über das ich dir letzte Woche während unserem Treffen erzählte.",
         "options": [
@@ -12328,7 +12334,7 @@
         "explanation": "Für DINGE: 'THAT' oder 'WHICH' beide möglich. Dieser Relativsatz identifiziert das spezifische Buch aus dem früheren Gespräch."
       },
       {
-        "id": "rel_3",
+        "id": "rel_cla_3",
         "question": "I know the man _____ car is parked outside our house right now.",
         "translation": "Ich kenne den Mann, dessen Auto gerade vor unserem Haus geparkt ist.",
         "options": [
@@ -12341,7 +12347,7 @@
         "explanation": "'WHOSE' zeigt BESITZ: 'man whose car' (dessen Auto). NICHT 'who's' = who is. Dieses Relativpronomen verbindet Person mit Eigentum."
       },
       {
-        "id": "rel_4",
+        "id": "rel_cla_4",
         "question": "The restaurant _____ we ate at last night was absolutely fantastic and delicious!",
         "translation": "Das Restaurant, in dem wir letzte Nacht aßen, war absolut fantastisch und lecker!",
         "options": [
@@ -12354,7 +12360,7 @@
         "explanation": "Für ORT mit Präposition: 'that/which/where we ate'. Alle drei Formen sind grammatisch korrekt für Ort-Relativsätze."
       },
       {
-        "id": "rel_5",
+        "id": "rel_cla_5",
         "question": "The people _____ were waiting outside have already left the building now.",
         "translation": "Die Leute, die draußen warteten, haben das Gebäude jetzt bereits verlassen.",
         "options": [
@@ -12367,7 +12373,7 @@
         "explanation": "Für PERSONEN Mehrzahl: 'WHO' oder 'THAT'. Dieser Relativsatz beschreibt die spezifische Personen-Gruppe, die wartete."
       },
       {
-        "id": "rel_6",
+        "id": "rel_cla_6",
         "question": "This is the place _____ I first met my wife ten years ago exactly.",
         "translation": "Das ist der Ort, wo ich vor genau zehn Jahren meine Frau zum ersten Mal traf.",
         "options": [
@@ -12380,7 +12386,7 @@
         "explanation": "Für ORT: 'WHERE' (üblichst) oder 'that/which'. Dieser besondere Ort der ersten Begegnung hat emotionale romantische Bedeutung."
       },
       {
-        "id": "rel_7",
+        "id": "rel_cla_7",
         "question": "The laptop _____ I bought yesterday is already broken and not working!",
         "translation": "Der Laptop, den ich gestern kaufte, ist schon kaputt und funktioniert nicht!",
         "options": [
@@ -12393,7 +12399,7 @@
         "explanation": "Für DINGE: beide möglich. Dieser sofortige Laptop-Defekt nach Kauf gestern ist extrem frustrierend und ärgerlich."
       },
       {
-        "id": "rel_8",
+        "id": "rel_cla_8",
         "question": "The day _____ we first met was a beautiful sunny spring day in April.",
         "translation": "Der Tag, an dem wir uns zum ersten Mal trafen, war ein schöner sonniger Frühlingstag im April.",
         "options": [
@@ -12406,7 +12412,7 @@
         "explanation": "Für ZEIT: 'WHEN' oder 'THAT' (oder Weglassen). Dieser erste Begegnungs-Tag im Frühling bleibt als besondere Erinnerung."
       },
       {
-        "id": "rel_9",
+        "id": "rel_cla_9",
         "question": "That's the girl _____ brother goes to my school in the same grade.",
         "translation": "Das ist das Mädchen, dessen Bruder in derselben Klasse in meine Schule geht.",
         "options": [
@@ -12419,7 +12425,7 @@
         "explanation": "'WHOSE' für BESITZ/Verwandtschaft: 'girl whose brother'. Diese Schulverbindung über Geschwister schafft gemeinsamen Bezugspunkt."
       },
       {
-        "id": "rel_10",
+        "id": "rel_cla_10",
         "question": "The house _____ we're looking at buying is very expensive but beautiful too.",
         "translation": "Das Haus, das wir uns zum Kaufen anschauen, ist sehr teuer, aber auch schön.",
         "options": [
@@ -12432,7 +12438,7 @@
         "explanation": "Für DINGE: beide möglich: 'house that/which'. Dieser Hauskauf-Interessent-Status zeigt ernsthafte Immobilien-Überlegungen."
       },
       {
-        "id": "rel_11",
+        "id": "rel_cla_11",
         "question": "The reason _____ I'm late is that my car broke down on the highway.",
         "translation": "Der Grund, warum ich zu spät bin, ist, dass mein Auto auf der Autobahn kaputt ging.",
         "options": [
@@ -12445,7 +12451,7 @@
         "explanation": "Für GRUND: 'WHY' oder 'THAT' (oder Weglassen). Diese Autopanne-Entschuldigung erklärt die Verspätungs-Ursache nachvollziehbar."
       },
       {
-        "id": "rel_12",
+        "id": "rel_cla_12",
         "question": "I like people _____ are honest and direct in their communication with others.",
         "translation": "Ich mag Leute, die ehrlich und direkt in ihrer Kommunikation mit anderen sind.",
         "options": [
@@ -12458,7 +12464,7 @@
         "explanation": "Für PERSONEN allgemein: beide möglich. Diese Ehrlichkeits-Präferenz zeigt Wertschätzung für offene klare Kommunikation."
       },
       {
-        "id": "rel_13",
+        "id": "rel_cla_13",
         "question": "The project _____ we're working on is due next Friday and very important.",
         "translation": "Das Projekt, an dem wir arbeiten, ist nächsten Freitag fällig und sehr wichtig.",
         "options": [
@@ -12471,7 +12477,7 @@
         "explanation": "Für DINGE mit Präposition: beide möglich: 'project that/which we're working on'. Diese Freitags-Deadline erzeugt Zeitdruck."
       },
       {
-        "id": "rel_14",
+        "id": "rel_cla_14",
         "question": "Do you remember the teacher _____ taught us mathematics in primary school years ago?",
         "translation": "Erinnerst du dich an den Lehrer, der uns vor Jahren in der Grundschule Mathematik beibrachte?",
         "options": [
@@ -12484,7 +12490,7 @@
         "explanation": "Für PERSONEN Vergangenheit: beide möglich. Diese Lehrer-Erinnerung aus Schulzeit ist oft prägende Bildungs-Erfahrung."
       },
       {
-        "id": "rel_15",
+        "id": "rel_cla_15",
         "question": "The hotel _____ we stayed at during our vacation was right by the beautiful beach.",
         "translation": "Das Hotel, in dem wir während unseres Urlaubs übernachteten, war direkt am schönen Strand.",
         "options": [
@@ -13623,7 +13629,7 @@
         "explanation": "'LISTEN TO' für AKTIVE Aufmerksamkeit: 'listen to teacher'. Dieses aufmerksame Zuhören ist essentiell für Lern-Erfolg."
       },
       {
-        "id": "see_look_8",
+        "id": "hea_lis_8",
         "question": "Have you _____ the news about the company merger announced yesterday publicly?",
         "translation": "Hast du die gestern öffentlich angekündigten Nachrichten über die Firmen-Fusion gehört?",
         "options": [
@@ -13737,7 +13743,7 @@
     "level": "intermediate",
     "items": [
       {
-        "id": "quant_1",
+        "id": "qua_all_1",
         "question": "_____ students in the class passed the difficult exam with good grades surprisingly.",
         "translation": "Alle Studenten in der Klasse bestanden überraschenderweise die schwere Prüfung mit guten Noten.",
         "options": [
@@ -13750,7 +13756,7 @@
         "explanation": "'ALL' = 100% (alle): 'all students passed'. Dieser komplette Klassen-Erfolg ist außergewöhnliche kollektive Leistung bei schwerer Prüfung."
       },
       {
-        "id": "quant_2",
+        "id": "qua_all_2",
         "question": "_____ people in my country speak English as a second language quite well.",
         "translation": "Die meisten Leute in meinem Land sprechen Englisch als Zweitsprache ziemlich gut.",
         "options": [
@@ -13763,7 +13769,7 @@
         "explanation": "'MOST' = Mehrheit (die meisten): 'most people speak'. Diese hohe Englisch-Kompetenz zeigt gute Sprach-Ausbildung im Land."
       },
       {
-        "id": "quant_3",
+        "id": "qua_all_3",
         "question": "_____ of my friends enjoy playing video games in their free time regularly.",
         "translation": "Einige meiner Freunde genießen es, in ihrer Freizeit regelmäßig Videospiele zu spielen.",
         "options": [
@@ -13776,7 +13782,7 @@
         "explanation": "'SOME' = einige (unbestimmte Zahl): 'some of my friends'. Diese teilweise Gaming-Interesse ist normale Freizeitbeschäftigung."
       },
       {
-        "id": "quant_4",
+        "id": "qua_all_4",
         "question": "Very _____ people speak this rare indigenous language anymore in modern times.",
         "translation": "Sehr wenige Leute sprechen diese seltene indigene Sprache in modernen Zeiten noch.",
         "options": [
@@ -13789,7 +13795,7 @@
         "explanation": "'FEW' für ZÄHLBAR (wenige): 'few people speak'. Diese Sprach-Seltenheit zeigt kulturellen Verlust und Aussterbe-Gefahr."
       },
       {
-        "id": "quant_5",
+        "id": "qua_all_5",
         "question": "_____ the money I earned last month went towards paying rent and bills.",
         "translation": "Das ganze Geld, das ich letzten Monat verdiente, ging für Miete und Rechnungen drauf.",
         "options": [
@@ -13802,7 +13808,7 @@
         "explanation": "'ALL' + THE + Nomen: 'all the money'. Dieses komplette Geld-Aufbrauchen für Fixkosten zeigt finanzielle Belastung."
       },
       {
-        "id": "quant_6",
+        "id": "qua_all_6",
         "question": "_____ of the cake was eaten at the party - there's hardly any left now!",
         "translation": "Das meiste vom Kuchen wurde bei der Party gegessen - es ist jetzt kaum noch etwas übrig!",
         "options": [
@@ -13815,7 +13821,7 @@
         "explanation": "'MOST OF' + THE: 'most of the cake'. Dieser hohe Kuchen-Verzehr bei Party zeigt, dass er sehr beliebt war."
       },
       {
-        "id": "quant_7",
+        "id": "qua_all_7",
         "question": "_____ of us understood the complicated explanation that the professor gave today.",
         "translation": "Nur wenige von uns verstanden die komplizierte Erklärung, die der Professor heute gab.",
         "options": [
@@ -13828,7 +13834,7 @@
         "explanation": "'FEW OF' = wenige von (Personen): 'few of us understood'. Diese geringe Verständnis-Quote zeigt schwierige Erklärung."
       },
       {
-        "id": "quant_8",
+        "id": "qua_all_8",
         "question": "I spent _____ my free time last weekend reading this fascinating book at home.",
         "translation": "Ich verbrachte meine ganze Freizeit letztes Wochenende damit, dieses faszinierende Buch zu Hause zu lesen.",
         "options": [
@@ -13841,7 +13847,7 @@
         "explanation": "'ALL' + Possessiv: 'all my free time'. Diese komplette Wochenend-Lesezeit zeigt totale Buch-Faszination."
       },
       {
-        "id": "quant_9",
+        "id": "qua_all_9",
         "question": "_____ information on the internet is accurate and reliable - be careful what you read!",
         "translation": "Nicht alle Informationen im Internet sind genau und zuverlässig - sei vorsichtig, was du liest!",
         "options": [
@@ -13854,7 +13860,7 @@
         "explanation": "'NOT ALL' = nicht alle (Teilnegation): einige ja, andere nein. Diese Internet-Info-Warnung ist wichtiger kritischer Denk-Hinweis."
       },
       {
-        "id": "quant_10",
+        "id": "qua_all_10",
         "question": "There's very _____ water left in the bottle - we need to buy more soon.",
         "translation": "Es ist sehr wenig Wasser in der Flasche übrig - wir müssen bald mehr kaufen.",
         "options": [
@@ -13867,7 +13873,7 @@
         "explanation": "'LITTLE' für UNZÄHLBAR (wenig): 'little water'. Diese Wasser-Knappheit erfordert baldigen Nachkauf für Versorgung."
       },
       {
-        "id": "quant_11",
+        "id": "qua_all_11",
         "question": "_____ my colleagues are going to the conference next week in another city.",
         "translation": "Einige meiner Kollegen fahren nächste Woche zur Konferenz in einer anderen Stadt.",
         "options": [
@@ -13880,7 +13886,7 @@
         "explanation": "'SOME OF' + Possessiv: 'some of my colleagues'. Diese teilweise Konferenz-Teilnahme ist selektive Delegierung."
       },
       {
-        "id": "quant_12",
+        "id": "qua_all_12",
         "question": "_____ of the information you gave me yesterday was incorrect and misleading unfortunately.",
         "translation": "Einige der Informationen, die du mir gestern gabst, waren leider inkorrekt und irreführend.",
         "options": [
@@ -13893,7 +13899,7 @@
         "explanation": "'SOME OF' + THE: teilweise falsche Information. Diese Teilfehler in Informationen erfordern Fakten-Überprüfung."
       },
       {
-        "id": "quant_13",
+        "id": "qua_all_13",
         "question": "There are _____ good restaurants in this area - the food quality is generally poor.",
         "translation": "Es gibt wenige gute Restaurants in dieser Gegend - die Essensqualität ist allgemein schlecht.",
         "options": [
@@ -13906,7 +13912,7 @@
         "explanation": "'FEW' = wenige (negativ): 'few good restaurants'. Diese Restaurant-Knappheit in Gegend ist kulinarisch enttäuschend."
       },
       {
-        "id": "quant_14",
+        "id": "qua_all_14",
         "question": "I've visited _____ European countries so far in my life - about fifteen total.",
         "translation": "Ich habe bisher in meinem Leben mehrere europäische Länder besucht - insgesamt etwa fünfzehn.",
         "options": [
@@ -13919,7 +13925,7 @@
         "explanation": "'SEVERAL' = mehrere (einige, mehr als 'some'): Diese Europa-Reise-Erfahrung von fünfzehn Ländern ist beachtlich."
       },
       {
-        "id": "quant_15",
+        "id": "qua_all_15",
         "question": "_____ of the work has been completed already - we're making good progress finally!",
         "translation": "Das meiste der Arbeit ist schon erledigt - wir machen endlich gute Fortschritte!",
         "options": [
@@ -14967,7 +14973,7 @@
     "level": "advanced",
     "items": [
       {
-        "id": "ger_inf_1",
+        "id": "ger_inf_x_1",
         "question": "I enjoy _____ books in my free time at home and in cafés.",
         "translation": "Ich genieße es, in meiner Freizeit zu Hause und in Cafés Bücher zu lesen.",
         "options": [
@@ -14980,7 +14986,7 @@
         "explanation": "Nach ENJOY immer Gerund: 'enjoy reading' (NICHT to read). Verben wie enjoy, finish, avoid brauchen die -ing Form, keine andere Option möglich hier."
       },
       {
-        "id": "ger_inf_2",
+        "id": "ger_inf_x_2",
         "question": "She decided _____ a new language this year for her personal development goals.",
         "translation": "Sie entschied sich, dieses Jahr für ihre persönlichen Entwicklungsziele eine neue Sprache zu lernen.",
         "options": [
@@ -14993,7 +14999,7 @@
         "explanation": "Nach DECIDE immer Infinitiv: 'decided to learn'. Verben wie decide, want, plan, hope brauchen 'to' plus Grundform des Verbs."
       },
       {
-        "id": "ger_inf_3",
+        "id": "ger_inf_x_3",
         "question": "Would you mind _____ the window? It's getting very cold in here now.",
         "translation": "Würde es dir etwas ausmachen, das Fenster zu schließen? Es wird hier jetzt sehr kalt.",
         "options": [
@@ -15006,7 +15012,7 @@
         "explanation": "Nach MIND immer Gerund: 'mind closing'. Diese höfliche Frage-Form nutzt immer die -ing Form nach 'mind' in allen Kontexten."
       },
       {
-        "id": "ger_inf_4",
+        "id": "ger_inf_x_4",
         "question": "We hope _____ you again soon sometime next month for coffee together.",
         "translation": "Wir hoffen, dich nächsten Monat irgendwann bald wieder zu Kaffee zusammen zu sehen.",
         "options": [
@@ -15019,7 +15025,7 @@
         "explanation": "Nach HOPE immer Infinitiv: 'hope to see'. Hoffnungen und Wünsche für die Zukunft verwenden die to-Infinitiv Konstruktion immer."
       },
       {
-        "id": "ger_inf_5",
+        "id": "ger_inf_x_5",
         "question": "He kept _____ the same mistake over and over again despite warnings from teacher.",
         "translation": "Er machte trotz Warnungen vom Lehrer denselben Fehler immer und immer wieder weiter.",
         "options": [
@@ -15032,7 +15038,7 @@
         "explanation": "Nach KEEP (fortsetzen) immer Gerund: 'kept making'. Diese Konstruktion zeigt eine kontinuierliche wiederholte Handlung in der Vergangenheit."
       },
       {
-        "id": "ger_inf_6",
+        "id": "ger_inf_x_6",
         "question": "They offered _____ us with the heavy moving boxes upstairs to apartment.",
         "translation": "Sie boten an, uns mit den schweren Umzugskartons nach oben zur Wohnung zu helfen.",
         "options": [
@@ -15045,7 +15051,7 @@
         "explanation": "Nach OFFER immer Infinitiv: 'offered to help'. Angebote und Versprechen nutzen die to-Infinitiv Struktur für zukünftige Handlungen."
       },
       {
-        "id": "ger_inf_7",
+        "id": "ger_inf_x_7",
         "question": "I don't remember _____ him before at any party or social event ever.",
         "translation": "Ich erinnere mich nicht, ihn jemals zuvor bei irgendeiner Party oder sozialem Event gesehen zu haben.",
         "options": [
@@ -15058,7 +15064,7 @@
         "explanation": "REMEMBER + Gerund = Erinnerung an VERGANGENES: 'remember seeing' (erinnere mich, gesehen zu haben). Diese Form bezieht sich auf bereits Erlebtes."
       },
       {
-        "id": "ger_inf_8",
+        "id": "ger_inf_x_8",
         "question": "Please remember _____ the door when you leave the office tonight late.",
         "translation": "Bitte denke daran, heute Abend spät die Tür abzuschließen, wenn du das Büro verlässt.",
         "options": [
@@ -15071,7 +15077,7 @@
         "explanation": "REMEMBER + Infinitiv = an ZUKÜNFTIGES denken: 'remember to lock'. Diese Form ist eine Erinnerung an etwas, das noch getan werden muss."
       },
       {
-        "id": "ger_inf_9",
+        "id": "ger_inf_x_9",
         "question": "She suggested _____ to the beach instead of staying home this sunny weekend.",
         "translation": "Sie schlug vor, an diesem sonnigen Wochenende zum Strand zu gehen, statt zu Hause zu bleiben.",
         "options": [
@@ -15084,7 +15090,7 @@
         "explanation": "Nach SUGGEST immer Gerund: 'suggested going'. Vorschläge und Empfehlungen verwenden die -ing Form, niemals den Infinitiv mit 'to'."
       },
       {
-        "id": "ger_inf_10",
+        "id": "ger_inf_x_10",
         "question": "I can't afford _____ a new car right now with my current limited salary.",
         "translation": "Ich kann es mir nicht leisten, jetzt mit meinem aktuell begrenzten Gehalt ein neues Auto zu kaufen.",
         "options": [
@@ -15097,7 +15103,7 @@
         "explanation": "Nach AFFORD immer Infinitiv: 'afford to buy'. Diese Struktur zeigt finanzielle Möglichkeit oder Unmöglichkeit für zukünftige Anschaffungen."
       },
       {
-        "id": "ger_inf_11",
+        "id": "ger_inf_x_11",
         "question": "He stopped _____ cigarettes five years ago for his health and family's sake.",
         "translation": "Er hörte vor fünf Jahren für seine Gesundheit und das Wohl seiner Familie auf, Zigaretten zu rauchen.",
         "options": [
@@ -15110,7 +15116,7 @@
         "explanation": "STOP + Gerund = AUFHÖREN mit etwas: 'stopped smoking'. Diese Konstruktion bedeutet, dass die Handlung selbst beendet wurde, nicht mehr getan."
       },
       {
-        "id": "ger_inf_12",
+        "id": "ger_inf_x_12",
         "question": "We stopped _____ some coffee at the café on our way home from work.",
         "translation": "Wir hielten an, um auf unserem Heimweg von der Arbeit Kaffee im Café zu trinken.",
         "options": [
@@ -15123,7 +15129,7 @@
         "explanation": "STOP + Infinitiv = ANHALTEN um etwas zu tun: 'stopped to have'. Hier bedeutet 'stop', dass man pausiert, um eine andere Handlung auszuführen."
       },
       {
-        "id": "ger_inf_13",
+        "id": "ger_inf_x_13",
         "question": "She finished _____ her homework just before dinner time at seven o'clock.",
         "translation": "Sie wurde mit ihren Hausaufgaben kurz vor der Essenszeit um sieben Uhr fertig.",
         "options": [
@@ -15136,7 +15142,7 @@
         "explanation": "Nach FINISH immer Gerund: 'finished doing'. Verben, die das Ende einer Aktivität ausdrücken, brauchen immer die -ing Form danach."
       },
       {
-        "id": "ger_inf_14",
+        "id": "ger_inf_x_14",
         "question": "They promised _____ us at the airport tomorrow morning early at six.",
         "translation": "Sie versprachen, uns morgen früh um sechs am Flughafen zu treffen.",
         "options": [
@@ -15149,7 +15155,7 @@
         "explanation": "Nach PROMISE immer Infinitiv: 'promised to meet'. Versprechen und Zusagen für zukünftige Handlungen nutzen die to-Infinitiv Konstruktion."
       },
       {
-        "id": "ger_inf_15",
+        "id": "ger_inf_x_15",
         "question": "I regret _____ you that your application was not successful this time unfortunately.",
         "translation": "Ich bedaure, dir mitteilen zu müssen, dass deine Bewerbung diesmal leider nicht erfolgreich war.",
         "options": [
@@ -15289,7 +15295,7 @@
         "explanation": "Present Participle für GRUND: 'Arriving late' = Because he arrived late. Diese Struktur erklärt die Ursache für das Verpassen des Präsentations-Beginns."
       },
       {
-        "id": "ger_inf_10",
+        "id": "par_cla_10",
         "question": "She left the room _____ goodbye to anyone at the party last night.",
         "translation": "Sie verließ den Raum, ohne sich letzte Nacht bei der Party von irgendjemandem zu verabschieden.",
         "options": [
@@ -15302,7 +15308,7 @@
         "explanation": "OHNE + Gerund: 'without saying' (ohne zu sagen). Nach Präpositionen wie 'without' nutzen wir immer die -ing Form des Verbs."
       },
       {
-        "id": "ger_inf_11",
+        "id": "par_cla_11",
         "question": "_____ tired after the long journey, they went straight to bed immediately when home.",
         "translation": "Müde nach der langen Reise, gingen sie sofort direkt ins Bett, als sie zu Hause waren.",
         "options": [
@@ -15315,7 +15321,7 @@
         "explanation": "Present Participle für ZUSTAND-Grund: 'Feeling tired' = Because they felt tired. Diese Partizip-Form erklärt den Grund für sofortiges Schlafengehen."
       },
       {
-        "id": "ger_inf_12",
+        "id": "par_cla_12",
         "question": "The letter _____ yesterday morning still hasn't arrived at its destination yet unfortunately.",
         "translation": "Der gestern Morgen geschickte Brief ist leider noch nicht an seinem Bestimmungsort angekommen.",
         "options": [
@@ -15328,7 +15334,7 @@
         "explanation": "Past Participle (passiv) als ADJEKTIV: 'letter sent' = which was sent. Diese Kurzform beschreibt den Brief ohne kompletten Relativsatz."
       },
       {
-        "id": "ger_inf_13",
+        "id": "par_cla_13",
         "question": "_____ carefully, you'll notice many interesting small details in this beautiful painting here.",
         "translation": "Wenn du sorgfältig schaust, wirst du viele interessante kleine Details in diesem schönen Gemälde hier bemerken.",
         "options": [
@@ -15341,7 +15347,7 @@
         "explanation": "Present Participle für BEDINGUNG: 'Looking' = If you look. Beide Formen sind möglich, das Partizip ist konziser und direkter."
       },
       {
-        "id": "ger_inf_14",
+        "id": "par_cla_14",
         "question": "_____ all the work for today, she decided to go home early this afternoon.",
         "translation": "Da sie die ganze Arbeit für heute beendet hatte, entschied sie sich, heute Nachmittag früh nach Hause zu gehen.",
         "options": [
@@ -15354,7 +15360,7 @@
         "explanation": "HAVING + Past Participle für ABGESCHLOSSEN vor zweiter Handlung: Diese Struktur zeigt, dass Arbeits-Ende vor Heimgeh-Entscheidung lag."
       },
       {
-        "id": "ger_inf_15",
+        "id": "par_cla_15",
         "question": "The children came running into the house, _____ with excitement about their news today.",
         "translation": "Die Kinder kamen ins Haus gerannt und schrien vor Aufregung über ihre heutigen Neuigkeiten.",
         "options": [
@@ -19067,7 +19073,7 @@
     "level": "intermediate",
     "items": [
       {
-        "id": "tag_1",
+        "id": "tag_que_1",
         "question": "You're coming to the party tomorrow night, _____?",
         "translation": "Du kommst morgen Abend zur Party, oder?",
         "options": [
@@ -19080,7 +19086,7 @@
         "explanation": "POSITIV → negatives Tag: 'are' wird 'aren't you'. Diese Bestätigungs-Frage erwartet Zustimmung zur Party-Teilnahme."
       },
       {
-        "id": "tag_2",
+        "id": "tag_que_2",
         "question": "She doesn't like coffee very much, _____?",
         "translation": "Sie mag Kaffee nicht sehr, oder doch?",
         "options": [
@@ -19093,7 +19099,7 @@
         "explanation": "NEGATIV → positives Tag: 'doesn't like' wird 'does she'. Diese Frage bestätigt die Kaffee-Abneigung der Person."
       },
       {
-        "id": "tag_3",
+        "id": "tag_que_3",
         "question": "We've met before at the conference last year, _____?",
         "translation": "Wir haben uns letztes Jahr bei der Konferenz schon mal getroffen, nicht wahr?",
         "options": [
@@ -19106,7 +19112,7 @@
         "explanation": "Present Perfect → Tag mit 'have': Diese Erinnerungs-Bestätigung an frühere Begegnung sucht Bestätigung."
       },
       {
-        "id": "tag_4",
+        "id": "tag_que_4",
         "question": "It's a beautiful day today, _____?",
         "translation": "Es ist heute ein schöner Tag, nicht wahr?",
         "options": [
@@ -19119,7 +19125,7 @@
         "explanation": "'IT IS' → 'isn't it': Diese Wetter-Feststellung sucht Zustimmung zur positiven Tages-Qualität."
       },
       {
-        "id": "tag_5",
+        "id": "tag_que_5",
         "question": "You haven't seen my keys anywhere, _____?",
         "translation": "Du hast meine Schlüssel nirgendwo gesehen, oder?",
         "options": [
@@ -19132,7 +19138,7 @@
         "explanation": "NEGATIV Present Perfect → 'have you': Diese Schlüssel-Such-Frage hofft auf positive Antwort trotz negativer Formulierung."
       },
       {
-        "id": "tag_6",
+        "id": "tag_que_6",
         "question": "Let's go to the cinema tonight, _____?",
         "translation": "Lass uns heute Abend ins Kino gehen, okay?",
         "options": [
@@ -19145,7 +19151,7 @@
         "explanation": "Nach 'LET'S': immer 'SHALL WE': Diese Vorschlag-Form ist Einladung zur gemeinsamen Kino-Aktivität."
       },
       {
-        "id": "tag_7",
+        "id": "tag_que_7",
         "question": "He can speak three languages fluently, _____?",
         "translation": "Er kann drei Sprachen fließend sprechen, nicht wahr?",
         "options": [
@@ -19158,7 +19164,7 @@
         "explanation": "MODAL 'CAN' → 'can't he': Diese beeindruckende Mehrsprachigkeits-Feststellung sucht bewundernde Bestätigung."
       },
       {
-        "id": "tag_8",
+        "id": "tag_que_8",
         "question": "There's a meeting at three o'clock this afternoon, _____?",
         "translation": "Es gibt heute Nachmittag um drei Uhr ein Meeting, nicht wahr?",
         "options": [
@@ -19171,7 +19177,7 @@
         "explanation": "'THERE IS' → 'isn't there': Diese Meeting-Zeit-Bestätigung prüft Kalender-Information."
       },
       {
-        "id": "tag_9",
+        "id": "tag_que_9",
         "question": "Nobody called while I was out this morning, _____?",
         "translation": "Niemand rief an, während ich heute Morgen weg war, oder?",
         "options": [
@@ -19184,7 +19190,7 @@
         "explanation": "Nach NOBODY (negativ) → POSITIVES Tag 'did they': Diese Anruf-Bestätigung nutzt 'they' als Pronomen für 'nobody'."
       },
       {
-        "id": "tag_10",
+        "id": "tag_que_10",
         "question": "You used to live in London many years ago, _____?",
         "translation": "Du hast vor vielen Jahren in London gewohnt, nicht wahr?",
         "options": [
@@ -19197,7 +19203,7 @@
         "explanation": "'USED TO' → 'didn't you': Diese Erinnerungs-Frage an frühere London-Zeit nutzt 'did' im Tag."
       },
       {
-        "id": "tag_11",
+        "id": "tag_que_11",
         "question": "I'm right about this situation, _____?",
         "translation": "Ich habe mit dieser Situation recht, oder?",
         "options": [
@@ -19210,7 +19216,7 @@
         "explanation": "'I AM' → 'AREN'T I' (Spezialfall!): Diese Selbst-Bestätigung sucht Zustimmung zur eigenen Situations-Einschätzung."
       },
       {
-        "id": "tag_12",
+        "id": "tag_que_12",
         "question": "They won't be late for the important ceremony tomorrow, _____?",
         "translation": "Sie werden morgen nicht zu spät zur wichtigen Zeremonie sein, oder?",
         "options": [
@@ -19223,7 +19229,7 @@
         "explanation": "NEGATIV 'won't' → POSITIV 'will they': Diese Pünktlichkeits-Bestätigung hofft auf rechtzeitige Ankunft."
       },
       {
-        "id": "tag_13",
+        "id": "tag_que_13",
         "question": "Close the window before leaving, _____?",
         "translation": "Schließe das Fenster vor dem Gehen, ja?",
         "options": [
@@ -19236,7 +19242,7 @@
         "explanation": "Nach IMPERATIV: 'will you' oder 'won't you' (beide möglich): Diese Bitte-Verstärkung ist höfliche Erinnerung an Fenster-Schließen."
       },
       {
-        "id": "tag_14",
+        "id": "tag_que_14",
         "question": "Nothing bad happened during the trip abroad, _____?",
         "translation": "Nichts Schlimmes passierte während der Auslandsreise, oder?",
         "options": [
@@ -19249,7 +19255,7 @@
         "explanation": "Nach NOTHING (negativ) → POSITIV 'did it': Diese Reise-Qualitäts-Frage hofft auf problemfreie Urlaubs-Erfahrung."
       },
       {
-        "id": "tag_15",
+        "id": "tag_que_15",
         "question": "She'd like to come with us to the concert, _____?",
         "translation": "Sie würde gerne mit uns zum Konzert kommen, nicht wahr?",
         "options": [

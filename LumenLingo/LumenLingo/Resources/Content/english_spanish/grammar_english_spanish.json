@@ -14768,7 +14768,7 @@
     "level": "intermediate",
     "items": [
       {
-        "id": "gust_ext_1",
+        "id": "ver_gus_ext_1",
         "question": "A mi madre le _____ muchísimo las películas románticas de época.",
         "translation": "(My mother loves period romantic movies very much)",
         "options": [
@@ -14781,7 +14781,7 @@
         "explanation": "'Encantar' stronger than gustar, follows same pattern. Plural 'encantan' for plural 'películas'."
       },
       {
-        "id": "gust_ext_2",
+        "id": "ver_gus_ext_2",
         "question": "Me _____ los pies después de caminar todo el día por la ciudad.",
         "translation": "(My feet hurt after walking all day through the city)",
         "options": [
@@ -14794,7 +14794,7 @@
         "explanation": "'Doler' follows gustar pattern with plural subject. Plural 'duelen' for plural 'pies'."
       },
       {
-        "id": "gust_ext_3",
+        "id": "ver_gus_ext_3",
         "question": "A los estudiantes les _____ tres libros más para completar el curso.",
         "translation": "(The students need three more books to complete the course)",
         "options": [
@@ -14807,7 +14807,7 @@
         "explanation": "'Faltar' follows gustar with plural subject. Plural 'faltan' for plural books needed."
       },
       {
-        "id": "gust_ext_4",
+        "id": "ver_gus_ext_4",
         "question": "¿A ti te _____ bien estos pantalones nuevos que acabo de comprar?",
         "translation": "(Do these new pants I just bought fit you well?)",
         "options": [
@@ -14820,7 +14820,7 @@
         "explanation": "'Quedar' for clothing fit follows gustar. Plural 'quedan' for plural pants."
       },
       {
-        "id": "gust_ext_5",
+        "id": "ver_gus_ext_5",
         "question": "A nosotros nos _____ viajar durante el invierno por el clima frío.",
         "translation": "(We feel like traveling during winter because of the cold weather)",
         "options": [
@@ -14833,7 +14833,7 @@
         "explanation": "'Apetecer' means appeal to/feel like. Singular for infinitive 'viajar'."
       },
       {
-        "id": "gust_ext_6",
+        "id": "ver_gus_ext_6",
         "question": "Me _____ muy mal cuando la gente no cumple sus promesas.",
         "translation": "(It rubs me the wrong way when people don't keep their promises)",
         "options": [
@@ -14846,7 +14846,7 @@
         "explanation": "'Caer mal' means dislike/rub wrong way. Negative feeling about people."
       },
       {
-        "id": "gust_ext_7",
+        "id": "ver_gus_ext_7",
         "question": "A mi hermano le _____ todas las materias científicas en la escuela.",
         "translation": "(All scientific subjects at school interest my brother)",
         "options": [
@@ -14859,7 +14859,7 @@
         "explanation": "'Interesar' follows gustar pattern. Plural 'interesan' for plural subjects."
       },
       {
-        "id": "gust_ext_8",
+        "id": "ver_gus_ext_8",
         "question": "¿Te _____ esos zapatos elegantes que vi en la tienda ayer?",
         "translation": "(Do you like those elegant shoes I saw in the store yesterday?)",
         "options": [
@@ -14872,7 +14872,7 @@
         "explanation": "'Gustar' with plural subject needs plural verb. 'Zapatos' plural requires 'gustan'."
       },
       {
-        "id": "gust_ext_9",
+        "id": "ver_gus_ext_9",
         "question": "A mis padres les _____ mucho cocinar juntos los fines de semana.",
         "translation": "(My parents really enjoy cooking together on weekends)",
         "options": [
@@ -14885,7 +14885,7 @@
         "explanation": "'Gustar' with infinitive takes singular. Activity 'cocinar' is singular concept."
       },
       {
-        "id": "gust_ext_10",
+        "id": "ver_gus_ext_10",
         "question": "Me _____ extraño que no hayas llamado en toda la semana.",
         "translation": "(It seems strange to me you haven't called all week)",
         "options": [
@@ -14898,7 +14898,7 @@
         "explanation": "'Parecer' follows gustar for seeming. Singular for que-clause."
       },
       {
-        "id": "gust_ext_11",
+        "id": "ver_gus_ext_11",
         "question": "A ella le _____ fatal levantarse temprano durante la semana laboral.",
         "translation": "(She hates getting up early during the work week)",
         "options": [
@@ -14911,7 +14911,7 @@
         "explanation": "'Sentar fatal' means dislike intensely. Stronger negative than 'no gustar'."
       },
       {
-        "id": "gust_ext_12",
+        "id": "ver_gus_ext_12",
         "question": "Nos _____ solo dos días para terminar completamente este proyecto grande.",
         "translation": "(We have only two days left to completely finish this big project)",
         "options": [
@@ -14924,7 +14924,7 @@
         "explanation": "'Quedar' for remaining time. Plural 'quedan' for plural days."
       },
       {
-        "id": "gust_ext_13",
+        "id": "ver_gus_ext_13",
         "question": "Me _____ muchísimo esa actitud negativa que tienes últimamente.",
         "translation": "(That negative attitude you have lately bothers me a lot)",
         "options": [
@@ -14937,7 +14937,7 @@
         "explanation": "'Molestar' for annoyance. Singular 'molesta' for singular 'actitud'."
       },
       {
-        "id": "gust_ext_14",
+        "id": "ver_gus_ext_14",
         "question": "A los niños les _____ jugar videojuegos durante horas sin parar.",
         "translation": "(Children love playing video games for hours without stopping)",
         "options": [
@@ -14950,7 +14950,7 @@
         "explanation": "'Encantar' with infinitive takes singular. Activity is singular concept."
       },
       {
-        "id": "gust_ext_15",
+        "id": "ver_gus_ext_15",
         "question": "¿Te _____ bien ese nuevo compañero de trabajo que llegó?",
         "translation": "(Do you like that new coworker who arrived?)",
         "options": [
@@ -19229,7 +19229,7 @@
         "explanation": "'Sentirse' expresses emotional state felt. Internal emotional experience."
       },
       {
-        "id": "opin_13",
+        "id": "pro_ver_13",
         "question": "Se _____ loco de contento al enterarse de que había ganado la beca completa.",
         "translation": "(He went crazy with joy upon finding out he had won the full scholarship)",
         "options": [

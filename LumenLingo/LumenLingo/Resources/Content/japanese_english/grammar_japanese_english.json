@@ -31,7 +31,7 @@
           "no article"
         ],
         "correct": "an",
-        "explanation": "母音の前では'an'を使います：'an apple'。発音をスムーズにするために'a'が'an'に変わります。スペルではなく音に注目してください - 'an hour'（hは無音）、でも'a house'（hは発音される）。日本語にはこの概念がありませんが、英語では初めて言及する可算名詞にはこれが必要です。a/anの区別は純粋に音声的なもので、話し言葉の流れを自然にします。"
+        "explanation": "母音の前では'an'を使います：'an apple'。発音をスムーズにするために'a'が'an'に変わります。スペルではなく音に注目してください - 'an hour'（h は無音）、でも'a house'（h は発音される）。日本語にはこの概念がありませんが、英語では初めて言及する可算名詞にはこれが必要です。a/an の区別は純粋に音声的なもので、話し言葉の流れを自然にします。"
       },
       {
         "id": "je_art3",
@@ -96,7 +96,7 @@
           "no article"
         ],
         "correct": "a",
-        "explanation": "単数名詞の職業には'a/an'が必要です：'He is a teacher'。日本語では「彼は先生です」とマーカーなしで言います。英語では'a'が必要です。なぜならteacherは可算名詞だからです。彼が教師というカテゴリーに属すると言っているのです。'a'がないと、英語話者には文が不完全に感じられます。これは不定冠詞の最も一般的な用法の一つです - 職業や役割を識別する時です。"
+        "explanation": "単数名詞の職業には'a/an'が必要です：'He is a teacher'。日本語では「彼は先生です」とマーカーなしで言います。英語では'a'が必要です。なぜなら teacher は可算名詞だからです。彼が教師というカテゴリーに属すると言っているのです。'a'がないと、英語話者には文が不完全に感じられます。これは不定冠詞の最も一般的な用法の一つです - 職業や役割を識別する時です。"
       },
       {
         "id": "je_art8",
@@ -200,7 +200,7 @@
           "no article"
         ],
         "correct": "the",
-        "explanation": "特定の場所（話し手と聞き手が両方知っている場所）にはtheを使います。'I went to the park'は、いつもの公園・近所の公園を指します。日本語では「公園に行った」と冠詞は不要ですが、英語では特定の場所を指す時にtheが必要です。'a park'は不特定の公園を意味します：'Is there a park near here?'（この辺に公園はありますか？）のように使います。"
+        "explanation": "特定の場所（話し手と聞き手が両方知っている場所）には the を使います。'I went to the park'は、いつもの公園・近所の公園を指します。日本語では「公園に行った」と冠詞は不要ですが、英語では特定の場所を指す時に the が必要です。'a park'は不特定の公園を意味します：'Is there a park near here?'（この辺に公園はありますか？）のように使います。"
       }
     ]
   },
@@ -314,7 +314,7 @@
           "He's"
         ],
         "correct": "He",
-        "explanation": "動詞を伴う主語：'He likes sushi'。動詞が三人称単数で-sを追加することに注意してください。日本語の「彼は好き」は動詞形を変えません。英語では正しい主語代名詞と動詞の一致の両方が必要です。'He'は主語で、'likes'がそれに一致します。この二重の要求 - 正しい代名詞形と一致する動詞 - は正しい英語に不可欠です。動詞形が主語を確認し、文法的な結束を生み出します。"
+        "explanation": "動詞を伴う主語：'He likes sushi'。動詞が三人称単数で-s を追加することに注意してください。日本語の「彼は好き」は動詞形を変えません。英語では正しい主語代名詞と動詞の一致の両方が必要です。'He'は主語で、'likes'がそれに一致します。この二重の要求 - 正しい代名詞形と一致する動詞 - は正しい英語に不可欠です。動詞形が主語を確認し、文法的な結束を生み出します。"
       },
       {
         "id": "je_subj9",
@@ -327,7 +327,7 @@
           "He's"
         ],
         "correct": "He",
-        "explanation": "複合主語は主語形を使います：'He and I are friends'。'I'と組み合わせても、主語形を使います。よくある誤りは'him and I'や'me and him'です。ルール：複合主語を'we'に置き換えられる場合は、主語形を使います。日本語では「と」で単純に接続しますが、英語では主語形を維持する必要があります。これはすべての複合主語に適用されます - 常にI/he/she/we/theyを使い、主語の位置ではme/him/her/us/themを決して使いません。"
+        "explanation": "複合主語は主語形を使います：'He and I are friends'。'I'と組み合わせても、主語形を使います。よくある誤りは'him and I'や'me and him'です。ルール：複合主語を'we'に置き換えられる場合は、主語形を使います。日本語では「と」で単純に接続しますが、英語では主語形を維持する必要があります。これはすべての複合主語に適用されます - 常に I/he/she/we/they を使い、主語の位置では me/him/her/us/them を決して使いません。"
       },
       {
         "id": "je_subj10",
@@ -428,7 +428,7 @@
           "went"
         ],
         "correct": "go",
-        "explanation": "英語の現在形は日本語より単純です。主語がI/you/we/theyの時、動詞は原形のままです。「私は学校に行きます」はI goです。日本語の「行きます」は丁寧形ですが、英語では丁寧さは動詞の形では表しません。この基本パターンを理解すれば、多くの文が作れるようになります。毎日の習慣や一般的な事実を表現する時に使います。"
+        "explanation": "英語の現在形は日本語より単純です。主語が I/you/we/they の時、動詞は原形のままです。「私は学校に行きます」は I go です。日本語の「行きます」は丁寧形ですが、英語では丁寧さは動詞の形では表しません。この基本パターンを理解すれば、多くの文が作れるようになります。毎日の習慣や一般的な事実を表現する時に使います。"
       },
       {
         "id": "je_pres2",
@@ -441,7 +441,7 @@
           "spoke"
         ],
         "correct": "speaks",
-        "explanation": "主語がhe/she/itの時、動詞に-sを付けます。「彼女は英語を話します」はShe speaksです。日本語では主語によって動詞は変わりませんが、英語では三人称単数だけ特別です。この-sは大切なルールで、忘れやすいですが、慣れれば自然になります。言語は人と人をつなぐ素晴らしい道具です。"
+        "explanation": "主語が he/she/it の時、動詞に-s を付けます。「彼女は英語を話します」は She speaks です。日本語では主語によって動詞は変わりませんが、英語では三人称単数だけ特別です。この-s は大切なルールで、忘れやすいですが、慣れれば自然になります。言語は人と人をつなぐ素晴らしい道具です。"
       },
       {
         "id": "je_pres3",
@@ -454,7 +454,7 @@
           "readed"
         ],
         "correct": "read",
-        "explanation": "Theyは複数なので、動詞は原形のままです。「彼らは本を読みます」はThey readです。readという単語は現在形も過去形も同じスペルですが、発音が違います。本を読むことは知識を広げ、想像力を育てます。英語の規則的なパターンを覚えれば、多くの文が簡単に作れます。"
+        "explanation": "They は複数なので、動詞は原形のままです。「彼らは本を読みます」は They read です。read という単語は現在形も過去形も同じスペルですが、発音が違います。本を読むことは知識を広げ、想像力を育てます。英語の規則的なパターンを覚えれば、多くの文が簡単に作れます。"
       },
       {
         "id": "je_pres4",
@@ -467,7 +467,7 @@
           "drank"
         ],
         "correct": "drinks",
-        "explanation": "Heは三人称単数なので、drinkにsを付けてdrinksになります。「彼はコーヒーを飲みます」はHe drinksです。コーヒーは世界中で愛される飲み物です。この-sの規則は英語の基本中の基本です。最初は意識的に付ける必要がありますが、練習すれば自動的になります。"
+        "explanation": "He は三人称単数なので、drink に s を付けて drinks になります。「彼はコーヒーを飲みます」は He drinks です。コーヒーは世界中で愛される飲み物です。この-s の規則は英語の基本中の基本です。最初は意識的に付ける必要がありますが、練習すれば自動的になります。"
       },
       {
         "id": "je_pres5",
@@ -480,7 +480,7 @@
           "listened to"
         ],
         "correct": "listen to",
-        "explanation": "Weは複数なので動詞は原形です。「私たちは音楽を聴きます」はWe listen toです。英語では「聴く」はlisten toと言い、toが必要です。音楽は言葉を超えて心に響きます。このような句動詞（動詞＋前置詞）は英語によく出てきて、セットで覚えると便利です。"
+        "explanation": "We は複数なので動詞は原形です。「私たちは音楽を聴きます」は We listen to です。英語では「聴く」は listen to と言い、to が必要です。音楽は言葉を超えて心に響きます。このような句動詞（動詞＋前置詞）は英語によく出てきて、セットで覚えると便利です。"
       },
       {
         "id": "je_pres6",
@@ -493,7 +493,7 @@
           "got up"
         ],
         "correct": "gets up",
-        "explanation": "My sisterは三人称単数なので、getにsを付けます。「私の姉は早く起きます」はMy sister gets upです。Get upは「起きる」という意味の句動詞です。早起きは一日を有効に使える良い習慣です。英語では多くの日常動作を句動詞で表現します。"
+        "explanation": "My sister は三人称単数なので、get に s を付けます。「私の姉は早く起きます」は My sister gets up です。Get up は「起きる」という意味の句動詞です。早起きは一日を有効に使える良い習慣です。英語では多くの日常動作を句動詞で表現します。"
       },
       {
         "id": "je_pres7",
@@ -506,7 +506,7 @@
           "liked"
         ],
         "correct": "like",
-        "explanation": "主語がIなので、動詞は原形のlikeです。「私は和食が好きです」はI likeです。日本語の「好きです」は形容詞的ですが、英語のlikeは動詞です。この違いを理解することは大切です。好みを表現することは、自分を知ってもらう第一歩です。"
+        "explanation": "主語が I なので、動詞は原形の like です。「私は和食が好きです」は I like です。日本語の「好きです」は形容詞的ですが、英語の like は動詞です。この違いを理解することは大切です。好みを表現することは、自分を知ってもらう第一歩です。"
       },
       {
         "id": "je_pres8",
@@ -519,7 +519,7 @@
           "rose"
         ],
         "correct": "rises",
-        "explanation": "The sunは三人称単数なので、riseにsを付けます。「太陽は東から昇ります」はThe sun risesです。これは一般的な真理を表す現在形の使い方です。自然の法則や普遍的な事実を述べる時、現在形を使います。太陽の動きは古代から人々を魅了してきました。"
+        "explanation": "The sun は三人称単数なので、rise に s を付けます。「太陽は東から昇ります」は The sun rises です。これは一般的な真理を表す現在形の使い方です。自然の法則や普遍的な事実を述べる時、現在形を使います。太陽の動きは古代から人々を魅了してきました。"
       },
       {
         "id": "je_pres9",
@@ -532,7 +532,7 @@
           "sang"
         ],
         "correct": "sing",
-        "explanation": "Youの時は、単数でも複数でも動詞は原形です。「あなたは上手に歌います」はYou singです。日本語では「あなた」と「あなたたち」を区別しますが、英語のyouは両方に使えます。歌うことは感情を表現する美しい方法です。"
+        "explanation": "You の時は、単数でも複数でも動詞は原形です。「あなたは上手に歌います」は You sing です。日本語では「あなた」と「あなたたち」を区別しますが、英語の you は両方に使えます。歌うことは感情を表現する美しい方法です。"
       },
       {
         "id": "je_pres10",
@@ -545,7 +545,7 @@
           "played"
         ],
         "correct": "play",
-        "explanation": "Childrenは複数形なので、動詞は原形のplayです。「子供たちは公園で遊びます」はChildren playです。遊びは子供の成長に大切です。公園は子供たちが自由に走り回れる貴重な場所です。複数形の主語を見分けることが、正しい動詞の形を選ぶ鍵です。"
+        "explanation": "Children は複数形なので、動詞は原形の play です。「子供たちは公園で遊びます」は Children play です。遊びは子供の成長に大切です。公園は子供たちが自由に走り回れる貴重な場所です。複数形の主語を見分けることが、正しい動詞の形を選ぶ鍵です。"
       },
       {
         "id": "je_pres11",
@@ -558,7 +558,7 @@
           "drove"
         ],
         "correct": "drives",
-        "explanation": "My fatherは三人称単数なので、driveにsを付けます。「私の父は車を運転します」はMy father drivesです。運転は便利な技能ですが、安全が何より大切です。家族の日常を英語で表現できるようになると、会話の幅が広がります。"
+        "explanation": "My father は三人称単数なので、drive に s を付けます。「私の父は車を運転します」は My father drives です。運転は便利な技能ですが、安全が何より大切です。家族の日常を英語で表現できるようになると、会話の幅が広がります。"
       },
       {
         "id": "je_pres12",
@@ -571,7 +571,7 @@
           "lived"
         ],
         "correct": "live",
-        "explanation": "Weは複数なので、動詞は原形のliveです。「私たちは東京に住んでいます」はWe liveです。住む場所は私たちのアイデンティティの一部です。東京は伝統と現代が共存する魅力的な都市です。現在形で継続的な状態を表現できます。"
+        "explanation": "We は複数なので、動詞は原形の live です。「私たちは東京に住んでいます」は We live です。住む場所は私たちのアイデンティティの一部です。東京は伝統と現代が共存する魅力的な都市です。現在形で継続的な状態を表現できます。"
       },
       {
         "id": "je_pres13",
@@ -584,7 +584,7 @@
           "did"
         ],
         "correct": "does",
-        "explanation": "Heは三人称単数なので、doがdoesに変わります。「彼は宿題をします」はHe doesです。Doは不規則に変化する動詞で、doesという形になります。宿題は学んだことを定着させる大切な練習です。不規則動詞は少しずつ覚えていきましょう。"
+        "explanation": "He は三人称単数なので、do が does に変わります。「彼は宿題をします」は He does です。Do は不規則に変化する動詞で、does という形になります。宿題は学んだことを定着させる大切な練習です。不規則動詞は少しずつ覚えていきましょう。"
       },
       {
         "id": "je_pres14",
@@ -597,7 +597,7 @@
           "drank"
         ],
         "correct": "drink",
-        "explanation": "主語がIなので、動詞は原形のdrinkです。「私は毎朝お茶を飲みます」はI drinkです。Every morningのような時間表現は、習慣を表す現在形とよく使われます。朝のお茶は一日を静かに始める良い習慣です。"
+        "explanation": "主語が I なので、動詞は原形の drink です。「私は毎朝お茶を飲みます」は I drink です。Every morning のような時間表現は、習慣を表す現在形とよく使われます。朝のお茶は一日を静かに始める良い習慣です。"
       },
       {
         "id": "je_pres15",
@@ -610,7 +610,7 @@
           "opened"
         ],
         "correct": "opens",
-        "explanation": "The storeは三人称単数なので、openにsを付けます。「その店は午前9時に開きます」はThe store opensです。営業時間のような決まったスケジュールも現在形で表現します。規則的な予定を述べる時、現在形が自然です。"
+        "explanation": "The store は三人称単数なので、open に s を付けます。「その店は午前9時に開きます」は The store opens です。営業時間のような決まったスケジュールも現在形で表現します。規則的な予定を述べる時、現在形が自然です。"
       }
     ]
   },
@@ -633,7 +633,7 @@
           "going"
         ],
         "correct": "went",
-        "explanation": "過去形では、主語に関わらず動詞の過去形を使います。「私は昨日学校に行きました」はI wentです。Goの過去形はwentという不規則な形です。日本語の「行きました」に対応します。過去の出来事を伝えることで、経験を共有できます。"
+        "explanation": "過去形では、主語に関わらず動詞の過去形を使います。「私は昨日学校に行きました」は I went です。Go の過去形は went という不規則な形です。日本語の「行きました」に対応します。過去の出来事を伝えることで、経験を共有できます。"
       },
       {
         "id": "je_past2",
@@ -646,7 +646,7 @@
           "readed"
         ],
         "correct": "read",
-        "explanation": "Readの過去形もreadですが、発音が違います（レッド）。「彼女は昨夜本を読みました」はShe readです。Last nightは過去を示す表現です。読書は心を豊かにし、知識を広げます。この不規則な変化に慣れることが大切です。"
+        "explanation": "Read の過去形も read ですが、発音が違います（レッド）。「彼女は昨夜本を読みました」は She read です。Last night は過去を示す表現です。読書は心を豊かにし、知識を広げます。この不規則な変化に慣れることが大切です。"
       },
       {
         "id": "je_past3",
@@ -659,7 +659,7 @@
           "playing"
         ],
         "correct": "played",
-        "explanation": "Playは規則動詞なので、過去形は-edを付けてplayedになります。「彼らはサッカーをしました」はThey playedです。スポーツは健康と友情を育みます。規則動詞の過去形は-edを付けるだけなので、覚えやすいです。"
+        "explanation": "Play は規則動詞なので、過去形は-ed を付けて played になります。「彼らはサッカーをしました」は They played です。スポーツは健康と友情を育みます。規則動詞の過去形は-ed を付けるだけなので、覚えやすいです。"
       },
       {
         "id": "je_past4",
@@ -672,7 +672,7 @@
           "drinking"
         ],
         "correct": "drank",
-        "explanation": "Drinkの過去形はdrankです。「彼は今朝コーヒーを飲みました」はHe drankです。This morningは今日の朝のことなので、過去形を使います。朝のコーヒーは一日を始める儀式のようなものです。不規則動詞は少しずつ覚えていきましょう。"
+        "explanation": "Drink の過去形は drank です。「彼は今朝コーヒーを飲みました」は He drank です。This morning は今日の朝のことなので、過去形を使います。朝のコーヒーは一日を始める儀式のようなものです。不規則動詞は少しずつ覚えていきましょう。"
       },
       {
         "id": "je_past5",
@@ -685,7 +685,7 @@
           "listening"
         ],
         "correct": "listened",
-        "explanation": "Listenは規則動詞なので、過去形は-edを付けてlistenedです。「私たちは音楽を聴きました」はWe listenedです。音楽を聴いた経験を過去形で表現できます。音楽は時間を超えて心に残ります。"
+        "explanation": "Listen は規則動詞なので、過去形は-ed を付けて listened です。「私たちは音楽を聴きました」は We listened です。音楽を聴いた経験を過去形で表現できます。音楽は時間を超えて心に残ります。"
       },
       {
         "id": "je_past6",
@@ -698,7 +698,7 @@
           "getting"
         ],
         "correct": "got",
-        "explanation": "Getの過去形はgotです。「私の姉は早く起きました」はMy sister gotです。Get upは「起きる」という句動詞です。早起きした日の朝は、静かで清々しい時間です。過去の行動を述べることで、その日のことを思い出せます。"
+        "explanation": "Get の過去形は got です。「私の姉は早く起きました」は My sister got です。Get up は「起きる」という句動詞です。早起きした日の朝は、静かで清々しい時間です。過去の行動を述べることで、その日のことを思い出せます。"
       },
       {
         "id": "je_past7",
@@ -711,7 +711,7 @@
           "eating"
         ],
         "correct": "ate",
-        "explanation": "Eatの過去形はateです。「私は和食を食べました」はI ateです。食事の経験は大切な思い出になります。和食は健康的で美しい料理です。不規則動詞の過去形は、使いながら覚えていくのが効果的です。"
+        "explanation": "Eat の過去形は ate です。「私は和食を食べました」は I ate です。食事の経験は大切な思い出になります。和食は健康的で美しい料理です。不規則動詞の過去形は、使いながら覚えていくのが効果的です。"
       },
       {
         "id": "je_past8",
@@ -724,7 +724,7 @@
           "rising"
         ],
         "correct": "rose",
-        "explanation": "Riseの過去形はroseです。「太陽は午前6時に昇りました」はThe sun roseです。日の出は新しい一日の始まりを告げます。自然現象の過去の記録も過去形で表現します。美しい朝日は心を清めてくれます。"
+        "explanation": "Rise の過去形は rose です。「太陽は午前6時に昇りました」は The sun rose です。日の出は新しい一日の始まりを告げます。自然現象の過去の記録も過去形で表現します。美しい朝日は心を清めてくれます。"
       },
       {
         "id": "je_past9",
@@ -737,7 +737,7 @@
           "singing"
         ],
         "correct": "sang",
-        "explanation": "Singの過去形はsangです。「あなたは上手に歌いました」はYou sangです。過去の出来事を褒める時にも過去形を使います。歌声は人の心に残る美しいものです。過去形で感想を伝えることができます。"
+        "explanation": "Sing の過去形は sang です。「あなたは上手に歌いました」は You sang です。過去の出来事を褒める時にも過去形を使います。歌声は人の心に残る美しいものです。過去形で感想を伝えることができます。"
       },
       {
         "id": "je_past10",
@@ -750,7 +750,7 @@
           "playing"
         ],
         "correct": "played",
-        "explanation": "Playの過去形はplayedです。「子供たちは公園で遊びました」はChildren playedです。子供の頃の遊びの思い出は一生の宝物です。過去の楽しかった時間を振り返ることは心を温めます。"
+        "explanation": "Play の過去形は played です。「子供たちは公園で遊びました」は Children played です。子供の頃の遊びの思い出は一生の宝物です。過去の楽しかった時間を振り返ることは心を温めます。"
       },
       {
         "id": "je_past11",
@@ -763,7 +763,7 @@
           "driving"
         ],
         "correct": "drove",
-        "explanation": "Driveの過去形はdroveです。「私の父は車を運転しました」はMy father droveです。家族との車での思い出は特別です。過去の出来事を語ることで、家族の絆を感じられます。"
+        "explanation": "Drive の過去形は drove です。「私の父は車を運転しました」は My father drove です。家族との車での思い出は特別です。過去の出来事を語ることで、家族の絆を感じられます。"
       },
       {
         "id": "je_past12",
@@ -776,7 +776,7 @@
           "living"
         ],
         "correct": "lived",
-        "explanation": "Liveの過去形はlivedです。「私たちは東京に住んでいました」はWe livedです。過去に住んでいた場所には特別な思い出があります。場所との思い出は心の中に残ります。過去形で以前の生活を語れます。"
+        "explanation": "Live の過去形は lived です。「私たちは東京に住んでいました」は We lived です。過去に住んでいた場所には特別な思い出があります。場所との思い出は心の中に残ります。過去形で以前の生活を語れます。"
       },
       {
         "id": "je_past13",
@@ -789,7 +789,7 @@
           "doing"
         ],
         "correct": "did",
-        "explanation": "Doの過去形はdidです。「彼は宿題をしました」はHe didです。宿題を終えた時の達成感は良いものです。過去に完了したことを報告する時、過去形を使います。"
+        "explanation": "Do の過去形は did です。「彼は宿題をしました」は He did です。宿題を終えた時の達成感は良いものです。過去に完了したことを報告する時、過去形を使います。"
       },
       {
         "id": "je_past14",
@@ -802,7 +802,7 @@
           "drinking"
         ],
         "correct": "drank",
-        "explanation": "Drinkの過去形はdrankです。「私は今朝お茶を飲みました」はI drankです。朝のお茶の時間は心を落ち着けます。今日の朝の出来事は過去形で表現します。"
+        "explanation": "Drink の過去形は drank です。「私は今朝お茶を飲みました」は I drank です。朝のお茶の時間は心を落ち着けます。今日の朝の出来事は過去形で表現します。"
       },
       {
         "id": "je_past15",
@@ -815,7 +815,7 @@
           "opening"
         ],
         "correct": "opened",
-        "explanation": "Openの過去形はopenedです。「その店は午前9時に開きました」はThe store openedです。過去の特定の時間に起こったことを述べる時、過去形を使います。規則動詞の過去形は-edを付けるだけです。"
+        "explanation": "Open の過去形は opened です。「その店は午前9時に開きました」は The store opened です。過去の特定の時間に起こったことを述べる時、過去形を使います。規則動詞の過去形は-ed を付けるだけです。"
       }
     ]
   },
@@ -838,7 +838,7 @@
           "should"
         ],
         "correct": "will",
-        "explanation": "英語の未来形は簡単です。willを動詞の前に置くだけです。「私は学校に行くでしょう」はI will goです。日本語では「でしょう」「つもりです」などで未来を表しますが、英語ではwillが便利です。willの後の動詞は必ず原形です。未来の予定や意志を表現できます。"
+        "explanation": "英語の未来形は簡単です。will を動詞の前に置くだけです。「私は学校に行くでしょう」は I will go です。日本語では「でしょう」「つもりです」などで未来を表しますが、英語では will が便利です。will の後の動詞は必ず原形です。未来の予定や意志を表現できます。"
       },
       {
         "id": "je_fut2",
@@ -851,7 +851,7 @@
           "should"
         ],
         "correct": "will",
-        "explanation": "主語に関わらず、willは同じ形です。「彼女は英語を勉強するでしょう」はShe will studyです。現在形のように三人称単数でsを付ける必要はありません。これが未来形の便利なところです。学習の継続は成長につながります。"
+        "explanation": "主語に関わらず、will は同じ形です。「彼女は英語を勉強するでしょう」は She will study です。現在形のように三人称単数で s を付ける必要はありません。これが未来形の便利なところです。学習の継続は成長につながります。"
       },
       {
         "id": "je_fut3",
@@ -864,7 +864,7 @@
           "should"
         ],
         "correct": "will",
-        "explanation": "Tomorrowは未来を示す言葉です。「彼らは明日来るでしょう」はThey will comeです。時間を表す言葉と一緒に未来形を使います。明日への期待は心を前向きにします。willは確実性の高い未来を表現します。"
+        "explanation": "Tomorrow は未来を示す言葉です。「彼らは明日来るでしょう」は They will come です。時間を表す言葉と一緒に未来形を使います。明日への期待は心を前向きにします。will は確実性の高い未来を表現します。"
       },
       {
         "id": "je_fut4",
@@ -877,7 +877,7 @@
           "should"
         ],
         "correct": "will",
-        "explanation": "「彼はあなたを助けるでしょう」はHe will helpです。Willは約束や申し出にも使えます。助け合いは人間関係の基本です。未来の行動を約束する時、willは力強い表現になります。"
+        "explanation": "「彼はあなたを助けるでしょう」は He will help です。Will は約束や申し出にも使えます。助け合いは人間関係の基本です。未来の行動を約束する時、will は力強い表現になります。"
       },
       {
         "id": "je_fut5",
@@ -890,7 +890,7 @@
           "should"
         ],
         "correct": "will",
-        "explanation": "「私たちは日本を訪れるでしょう」はWe will visitです。旅行の計画を立てる時、未来形を使います。日本は四季折々の美しさを持つ国です。将来の楽しみを語ることは心を豊かにします。"
+        "explanation": "「私たちは日本を訪れるでしょう」は We will visit です。旅行の計画を立てる時、未来形を使います。日本は四季折々の美しさを持つ国です。将来の楽しみを語ることは心を豊かにします。"
       },
       {
         "id": "je_fut6",
@@ -903,7 +903,7 @@
           "should"
         ],
         "correct": "will",
-        "explanation": "天気予報でもwillを使います。「今夜は雨が降るでしょう」はIt will rainです。予測を述べる時、willは自然な選択です。雨は植物に命を与え、大地を潤します。"
+        "explanation": "天気予報でも will を使います。「今夜は雨が降るでしょう」は It will rain です。予測を述べる時、will は自然な選択です。雨は植物に命を与え、大地を潤します。"
       },
       {
         "id": "je_fut7",
@@ -916,7 +916,7 @@
           "should"
         ],
         "correct": "will",
-        "explanation": "「あなたはこの映画が気に入るでしょう」はYou will likeです。予想や推測にもwillを使えます。映画は物語を通じて私たちの心を動かします。相手が何かを楽しむだろうと予測する優しい表現です。"
+        "explanation": "「あなたはこの映画が気に入るでしょう」は You will like です。予想や推測にも will を使えます。映画は物語を通じて私たちの心を動かします。相手が何かを楽しむだろうと予測する優しい表現です。"
       },
       {
         "id": "je_fut8",
@@ -929,7 +929,7 @@
           "should"
         ],
         "correct": "will",
-        "explanation": "規則的な未来の出来事もwillで表現します。「太陽は午前6時に昇るでしょう」はThe sun will riseです。自然の法則は変わらない確実性を持っています。毎日の日の出は新しい始まりを告げます。"
+        "explanation": "規則的な未来の出来事も will で表現します。「太陽は午前6時に昇るでしょう」は The sun will rise です。自然の法則は変わらない確実性を持っています。毎日の日の出は新しい始まりを告げます。"
       },
       {
         "id": "je_fut9",
@@ -942,7 +942,7 @@
           "should"
         ],
         "correct": "will",
-        "explanation": "約束や意志を表す時にwillを使います。「後であなたに電話します」はI will callです。Laterは「後で」という意味です。連絡を取り合うことは関係を維持する大切な方法です。"
+        "explanation": "約束や意志を表す時に will を使います。「後であなたに電話します」は I will call です。Later は「後で」という意味です。連絡を取り合うことは関係を維持する大切な方法です。"
       },
       {
         "id": "je_fut10",
@@ -955,7 +955,7 @@
           "should"
         ],
         "correct": "will",
-        "explanation": "Be動詞の未来形もwillを使います。「彼らは幸せになるでしょう」はThey will beです。幸せを願う気持ちは普遍的です。未来への希望を込めた表現ができます。"
+        "explanation": "Be 動詞の未来形も will を使います。「彼らは幸せになるでしょう」は They will be です。幸せを願う気持ちは普遍的です。未来への希望を込めた表現ができます。"
       },
       {
         "id": "je_fut11",
@@ -968,7 +968,7 @@
           "should"
         ],
         "correct": "will",
-        "explanation": "Soonは「まもなく」という意味です。「彼女はまもなく到着するでしょう」はShe will arriveです。近い未来の出来事を述べる時もwillを使います。誰かの到着を待つ時間には期待感があります。"
+        "explanation": "Soon は「まもなく」という意味です。「彼女はまもなく到着するでしょう」は She will arrive です。近い未来の出来事を述べる時も will を使います。誰かの到着を待つ時間には期待感があります。"
       },
       {
         "id": "je_fut12",
@@ -981,7 +981,7 @@
           "should"
         ],
         "correct": "will",
-        "explanation": "「私たちはこの日を覚えているでしょう」はWe will rememberです。特別な日の記憶は一生残ります。未来にわたって続く状態もwillで表現できます。"
+        "explanation": "「私たちはこの日を覚えているでしょう」は We will remember です。特別な日の記憶は一生残ります。未来にわたって続く状態も will で表現できます。"
       },
       {
         "id": "je_fut13",
@@ -994,7 +994,7 @@
           "should"
         ],
         "correct": "will",
-        "explanation": "「彼は仕事を終えるでしょう」はHe will finishです。仕事を完了する意志や予定を表します。達成感は努力の報酬です。未来の完了を見据えることは目標設定に役立ちます。"
+        "explanation": "「彼は仕事を終えるでしょう」は He will finish です。仕事を完了する意志や予定を表します。達成感は努力の報酬です。未来の完了を見据えることは目標設定に役立ちます。"
       },
       {
         "id": "je_fut14",
@@ -1007,7 +1007,7 @@
           "should"
         ],
         "correct": "will",
-        "explanation": "特定の時刻での予定もwillで表現します。「私は午後5時にそこにいるでしょう」はI will beです。時間を守ることは信頼関係の基本です。明確な約束は相手を安心させます。"
+        "explanation": "特定の時刻での予定も will で表現します。「私は午後5時にそこにいるでしょう」は I will be です。時間を守ることは信頼関係の基本です。明確な約束は相手を安心させます。"
       },
       {
         "id": "je_fut15",
@@ -1020,7 +1020,7 @@
           "should"
         ],
         "correct": "will",
-        "explanation": "営業予定もwillで表します。「その店は明日開くでしょう」はThe store will openです。予定されたスケジュールを伝える時、willは明確です。明日への準備は今日から始まります。"
+        "explanation": "営業予定も will で表します。「その店は明日開くでしょう」は The store will open です。予定されたスケジュールを伝える時、will は明確です。明日への準備は今日から始まります。"
       }
     ]
   },
@@ -1043,7 +1043,7 @@
           "would"
         ],
         "correct": "can",
-        "explanation": "Canは能力・可能性を表す助動詞です。I can swim = 私は泳げます。Canの後は必ず動詞の原形（toなし）。日本語の「〜できる」「〜られる」に対応します。主語が変わっても形は同じ（I can, she can, they can）。否定形：cannot/can't。疑問文：Can you swim? Canには未来形がないため、will be able toを使います。"
+        "explanation": "Can は能力・可能性を表す助動詞です。I can swim = 私は泳げます。Can の後は必ず動詞の原形（to なし）。日本語の「〜できる」「〜られる」に対応します。主語が変わっても形は同じ（I can, she can, they can）。否定形：cannot/can't。疑問文：Can you swim? Can には未来形がないため、will be able to を使います。"
       },
       {
         "id": "je_mod2",
@@ -1056,7 +1056,7 @@
           "would"
         ],
         "correct": "should",
-        "explanation": "Shouldは助言・提案を表し、日本語の「〜すべき」「〜した方がいい」に対応します。Mustより柔らかく、命令ではなく提案です。否定：shouldn't（〜すべきでない）。Shouldの3つの用法：①助言（You should rest = 休んだ方がいい）②予想（It should arrive soon = もうすぐ届くはず）③後悔—should have＋過去分詞（You should have told me = 言うべきだった）。"
+        "explanation": "Should は助言・提案を表し、日本語の「〜すべき」「〜した方がいい」に対応します。Must より柔らかく、命令ではなく提案です。否定：shouldn't（〜すべきでない）。Should の3つの用法：①助言（You should rest = 休んだ方がいい）②予想（It should arrive soon = もうすぐ届くはず）③後悔—should have＋過去分詞（You should have told me = 言うべきだった）。"
       },
       {
         "id": "je_mod3",
@@ -1069,7 +1069,7 @@
           "would"
         ],
         "correct": "must",
-        "explanation": "Mustは強い義務・必要性を表し、日本語の「〜しなければならない」に対応します。Shouldより強く、命令に近いニュアンスです。重要な区別：mustn't = 禁止（してはいけない）、don't have to = 不要（しなくてもよい）。日本語では両方「〜なくていい」と訳せる場合があるので注意。Mustには過去形がなく、had toで代用します。"
+        "explanation": "Must は強い義務・必要性を表し、日本語の「〜しなければならない」に対応します。Should より強く、命令に近いニュアンスです。重要な区別：mustn't = 禁止（してはいけない）、don't have to = 不要（しなくてもよい）。日本語では両方「〜なくていい」と訳せる場合があるので注意。Must には過去形がなく、had to で代用します。"
       },
       {
         "id": "je_mod4",
@@ -1082,7 +1082,7 @@
           "would"
         ],
         "correct": "can",
-        "explanation": "Canは習得した技能を表す時に使います。She can speak three languages = 彼女は3つの言語を話せます。Canとbe able toの違い：canは現在の一般的能力、be able toはより正式で全時制で使えます（was able to, will be able to）。Couldは過去の能力：I could swim when I was 5.（5歳の時泳げました）。Can'tは不能力：I can't cook.（料理できません）。"
+        "explanation": "Can は習得した技能を表す時に使います。She can speak three languages = 彼女は3つの言語を話せます。Can と be able to の違い：can は現在の一般的能力、be able to はより正式で全時制で使えます（was able to, will be able to）。Could は過去の能力：I could swim when I was 5.（5歳の時泳げました）。Can't は不能力：I can't cook.（料理できません）。"
       },
       {
         "id": "je_mod5",
@@ -1095,7 +1095,7 @@
           "would"
         ],
         "correct": "must",
-        "explanation": "Mustは規則・ルールを表します。He must wear a uniform = 彼は制服を着なければなりません。Must vs have to：mustは話者自身の判断（内的義務）、have toは外部の要求（規則など）。例：I must study.（自分でそう思う）vs I have to study.（先生に言われた）。アメリカ英語ではhave toがmustより日常的に多く使われます。"
+        "explanation": "Must は規則・ルールを表します。He must wear a uniform = 彼は制服を着なければなりません。Must vs have to：must は話者自身の判断（内的義務）、have to は外部の要求（規則など）。例：I must study.（自分でそう思う）vs I have to study.（先生に言われた）。アメリカ英語では have to が must より日常的に多く使われます。"
       },
       {
         "id": "je_mod6",
@@ -1108,7 +1108,7 @@
           "would"
         ],
         "correct": "should",
-        "explanation": "Shouldで健康や生活に関する助言を表します。You should eat more vegetables = もっと野菜を食べるべきです。Shouldはought toとほぼ同じ意味：You ought to eat more vegetables. ただしought toの方がフォーマルです。否定形の比較：shouldn't（すべきでない）vs mustn't（してはいけない＝禁止）。Shouldは選択の余地がありますが、mustにはありません。"
+        "explanation": "Should で健康や生活に関する助言を表します。You should eat more vegetables = もっと野菜を食べるべきです。Should は ought to とほぼ同じ意味：You ought to eat more vegetables. ただし ought to の方がフォーマルです。否定形の比較：shouldn't（すべきでない）vs mustn't（してはいけない＝禁止）。Should は選択の余地がありますが、must にはありません。"
       },
       {
         "id": "je_mod7",
@@ -1121,7 +1121,7 @@
           "would"
         ],
         "correct": "can",
-        "explanation": "楽器の演奏能力もcanで表します。I can play the piano = 私はピアノが弾けます。日本語の「〜が弾ける」はcanで表現。Play the pianoのように楽器にはtheが必要（play the guitar, play the violin）。ただしスポーツにはtheをつけません（play tennis, play soccer）。この区別は日本語にない英語特有のルールです。"
+        "explanation": "楽器の演奏能力も can で表します。I can play the piano = 私はピアノが弾けます。日本語の「〜が弾ける」は can で表現。Play the piano のように楽器には the が必要（play the guitar, play the violin）。ただしスポーツには the をつけません（play tennis, play soccer）。この区別は日本語にない英語特有のルールです。"
       },
       {
         "id": "je_mod8",
@@ -1134,7 +1134,7 @@
           "would"
         ],
         "correct": "must",
-        "explanation": "Mustで厳守事項を表します。They must arrive on time = 時間通りに到着しなければなりません。Mustは推量にも使えます：He must be tired.（彼はきっと疲れているに違いない）。推量の確信度：must（違いない）> should（はず）> may（かもしれない）> might（ひょっとしたら）> can't（ありえない）。義務のmustと推量のmustは文脈で区別します。"
+        "explanation": "Must で厳守事項を表します。They must arrive on time = 時間通りに到着しなければなりません。Must は推量にも使えます：He must be tired.（彼はきっと疲れているに違いない）。推量の確信度：must（違いない）> should（はず）> may（かもしれない）> might（ひょっとしたら）> can't（ありえない）。義務の must と推量の must は文脈で区別します。"
       },
       {
         "id": "je_mod9",
@@ -1147,7 +1147,7 @@
           "would"
         ],
         "correct": "should",
-        "explanation": "Shouldは道徳的・社会的な提案にも使います。We should help each other = 助け合うべきです。Shouldの疑問文は相手に助言を求める表現：Should I call him?（電話すべきでしょうか？）What should I do?（どうすべきでしょうか？）。日本語の「〜た方がいい」と「〜すべき」の両方にshouldが対応します。"
+        "explanation": "Should は道徳的・社会的な提案にも使います。We should help each other = 助け合うべきです。Should の疑問文は相手に助言を求める表現：Should I call him?（電話すべきでしょうか？）What should I do?（どうすべきでしょうか？）。日本語の「〜た方がいい」と「〜すべき」の両方に should が対応します。"
       },
       {
         "id": "je_mod10",
@@ -1160,7 +1160,7 @@
           "would"
         ],
         "correct": "can",
-        "explanation": "Canは実用的な技能の表現にも使います。She can drive a car = 彼女は車を運転できます。Canで許可を尋ねることもできます：Can I use your phone?（電話を使ってもいいですか？）よりフォーマルな許可表現はMay I...?です。日本語では「〜できる」（能力）と「〜してもいい」（許可）は異なる表現ですが、英語ではどちらもcanで表せます。"
+        "explanation": "Can は実用的な技能の表現にも使います。She can drive a car = 彼女は車を運転できます。Can で許可を尋ねることもできます：Can I use your phone?（電話を使ってもいいですか？）よりフォーマルな許可表現は May I...?です。日本語では「〜できる」（能力）と「〜してもいい」（許可）は異なる表現ですが、英語ではどちらも can で表せます。"
       },
       {
         "id": "je_mod11",
@@ -1173,7 +1173,7 @@
           "would"
         ],
         "correct": "should",
-        "explanation": "Shouldで注意や警告を柔らかく伝えます。You should be careful = 注意した方がいいです。Shouldとhad betterの違い：had better（〜した方がいい＝さもないと…）はshouldより強い警告で、否定的な結果を暗示します。例：You had better hurry.（急いだ方がいい＝遅れるよ）。日本語の「〜した方がいい」はshouldに近く、had betterほど強くありません。"
+        "explanation": "Should で注意や警告を柔らかく伝えます。You should be careful = 注意した方がいいです。Should と had better の違い：had better（〜した方がいい＝さもないと…）は should より強い警告で、否定的な結果を暗示します。例：You had better hurry.（急いだ方がいい＝遅れるよ）。日本語の「〜した方がいい」は should に近く、had better ほど強くありません。"
       },
       {
         "id": "je_mod12",
@@ -1186,7 +1186,7 @@
           "would"
         ],
         "correct": "must",
-        "explanation": "Mustで締め切りや緊急の必要性を表します。I must finish this today = 今日これを終えなければなりません。Mustの過去形はhad to：I had to finish it yesterday.（昨日終えなければならなかった）。Will have toで未来の義務：I will have to finish it tomorrow.（明日終えなければならないだろう）。日本語の「〜ねばならない」「〜なくちゃ」がmust/have toに対応します。"
+        "explanation": "Must で締め切りや緊急の必要性を表します。I must finish this today = 今日これを終えなければなりません。Must の過去形は had to：I had to finish it yesterday.（昨日終えなければならなかった）。Will have to で未来の義務：I will have to finish it tomorrow.（明日終えなければならないだろう）。日本語の「〜ねばならない」「〜なくちゃ」が must/have to に対応します。"
       },
       {
         "id": "je_mod13",
@@ -1199,7 +1199,7 @@
           "would"
         ],
         "correct": "can",
-        "explanation": "Canは身体的能力にも使います。He can read without glasses = 彼は眼鏡なしで読めます。Without（〜なしで）は前置詞。Canの否定can'tで不可能を表現：I can't see without my glasses.（眼鏡なしでは見えません）。Can'tには「不可能」の推量用法もあります：That can't be true.（そんなはずがない＝論理的にありえない）。日本語の「〜はずがない」に対応します。"
+        "explanation": "Can は身体的能力にも使います。He can read without glasses = 彼は眼鏡なしで読めます。Without（〜なしで）は前置詞。Can の否定 can't で不可能を表現：I can't see without my glasses.（眼鏡なしでは見えません）。Can't には「不可能」の推量用法もあります：That can't be true.（そんなはずがない＝論理的にありえない）。日本語の「〜はずがない」に対応します。"
       },
       {
         "id": "je_mod14",
@@ -1212,7 +1212,7 @@
           "would"
         ],
         "correct": "should",
-        "explanation": "Shouldで社会的な提言を表します。We should protect the environment = 環境を守るべきです。Shouldと他の助動詞の強さ比較：must（義務＝しなければならない）> had better（強い助言＝した方がいい、さもないと…）> should/ought to（助言＝すべき）> could（提案＝してもいいかも）。この強さの順番は英語学習者がよく間違えるポイントです。"
+        "explanation": "Should で社会的な提言を表します。We should protect the environment = 環境を守るべきです。Should と他の助動詞の強さ比較：must（義務＝しなければならない）> had better（強い助言＝した方がいい、さもないと…）> should/ought to（助言＝すべき）> could（提案＝してもいいかも）。この強さの順番は英語学習者がよく間違えるポイントです。"
       },
       {
         "id": "je_mod15",
@@ -1225,7 +1225,7 @@
           "would"
         ],
         "correct": "must",
-        "explanation": "Mustは規則遵守の義務を表します。You must follow the rules = ルールに従わなければなりません。Mustn't（〜してはいけない＝禁止）とdon't have to（〜しなくてよい＝任意）の違いは重要：You mustn't run here.（走ってはいけない）vs You don't have to run.（走らなくてもよい）。日本語の「〜てはいけない」はmustn't、「〜なくてもいい」はdon't have toに対応します。"
+        "explanation": "Must は規則遵守の義務を表します。You must follow the rules = ルールに従わなければなりません。Mustn't（〜してはいけない＝禁止）と don't have to（〜しなくてよい＝任意）の違いは重要：You mustn't run here.（走ってはいけない）vs You don't have to run.（走らなくてもよい）。日本語の「〜てはいけない」は mustn't、「〜なくてもいい」は don't have to に対応します。"
       }
     ]
   }
