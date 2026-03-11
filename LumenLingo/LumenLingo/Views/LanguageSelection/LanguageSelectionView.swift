@@ -655,23 +655,18 @@ struct LanguageSelectionView: View {
                 if hasChanged {
                     TimelineView(.animation(minimumInterval: 1.0 / 30.0)) { context in
                         let t = context.date.timeIntervalSinceReferenceDate
-                        let phase = CGFloat(t.truncatingRemainder(dividingBy: 5.0) / 5.0)
+                        let phase = CGFloat(t.truncatingRemainder(dividingBy: 4.0) / 4.0)
 
-                        // Invisible text sets the natural size, then the shimmer
-                        // gradient is masked to that exact text shape and clipped.
                         Text(L.startYourAdventure)
                             .font(.headline.weight(.bold))
-                            .hidden()
-                            .overlay {
-                                cosmicGradient
-                                    .frame(width: 1200)
-                                    .offset(x: phase * 600 - 300)
-                            }
-                            .mask {
-                                Text(L.startYourAdventure)
-                                    .font(.headline.weight(.bold))
-                            }
-                            .clipped()
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: SiriCloseButton.siriColors,
+                                    startPoint: UnitPoint(x: phase - 0.5, y: 0),
+                                    endPoint: UnitPoint(x: phase + 0.5, y: 1)
+                                )
+                            )
+                            .shadow(color: Color(hex: "#FF9FF3").opacity(0.3), radius: 4)
                     }
                     .transition(.opacity)
                 } else {
@@ -728,65 +723,67 @@ struct LanguageSelectionView: View {
         .animation(.spring(response: 0.45, dampingFraction: 0.8), value: selectedTarget)
     }
 
-    // MARK: - Cosmic Shimmer Gradient
-
-    // Cosmic gradient — light colors only so text contrasts against the dark
-    // CTA background. Two identical 600pt tiles (1200pt total). Travel = 600pt
-    // centered (offset -300…+300) so the gradient always covers the text.
-    private var cosmicGradient: some View {
-        LinearGradient(
-            colors: [
-                // Tile 1
-                .white,
-                Color(hex: "#E0C3FC"),   // soft lavender
-                Color(hex: "#F9A8D4"),   // light pink
-                .white,
-                Color(hex: "#C7D2FE"),   // light periwinkle
-                Color(hex: "#FDE68A"),   // soft gold
-                .white,
-                Color(hex: "#E0C3FC"),   // soft lavender
-                // Tile 2 (identical repeat)
-                .white,
-                Color(hex: "#E0C3FC"),
-                Color(hex: "#F9A8D4"),
-                .white,
-                Color(hex: "#C7D2FE"),
-                Color(hex: "#FDE68A"),
-                .white,
-                Color(hex: "#E0C3FC"),
-                .white
-            ],
-            startPoint: .leading,
-            endPoint: .trailing
-        )
-    }
+    // MARK: - CTA Chevron Circle
 
     private var ctaBackground: some View {
-        RoundedRectangle(cornerRadius: 18)
-            .fill(
-                LinearGradient(
-                    colors: hasChanged
-                        ? [Color(hex: "#4F46E5"), Color(hex: "#7C3AED")]
-                        : [Color(.systemGray3), Color(.systemGray4)],
-                    startPoint: .leading,
-                    endPoint: .trailing
-                )
-            )
-            .overlay(
+        TimelineView(.animation(minimumInterval: 1.0 / 30.0)) { context in
+            let t = context.date.timeIntervalSinceReferenceDate
+            let phase = CGFloat(t.truncatingRemainder(dividingBy: 4.0) / 4.0)
+
+            ZStack {
+                // Main fill
                 RoundedRectangle(cornerRadius: 18)
-                    .strokeBorder(
+                    .fill(
                         LinearGradient(
-                            colors: [.white.opacity(0.25), .white.opacity(0.05)],
-                            startPoint: .top, endPoint: .bottom
-                        ),
-                        lineWidth: 1
+                            colors: hasChanged
+                                ? [Color(hex: "#4F46E5"), Color(hex: "#7C3AED")]
+                                : [Color(.systemGray3), Color(.systemGray4)],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
                     )
-            )
+
+                if hasChanged {
+                    // Diffused rainbow glow — AI bloom
+                    RoundedRectangle(cornerRadius: 18)
+                        .stroke(
+                            LinearGradient(
+                                colors: SiriCloseButton.siriColors,
+                                startPoint: UnitPoint(x: phase - 0.5, y: 0),
+                                endPoint: UnitPoint(x: phase + 0.5, y: 1)
+                            ),
+                            lineWidth: 4
+                        )
+                        .blur(radius: 8)
+                        .opacity(0.5)
+
+                    // Crisp rainbow border
+                    RoundedRectangle(cornerRadius: 18)
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: SiriCloseButton.siriColors,
+                                startPoint: UnitPoint(x: phase - 0.5, y: 0),
+                                endPoint: UnitPoint(x: phase + 0.5, y: 1)
+                            ),
+                            lineWidth: 1.5
+                        )
+                } else {
+                    RoundedRectangle(cornerRadius: 18)
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: [.white.opacity(0.25), .white.opacity(0.05)],
+                                startPoint: .top, endPoint: .bottom
+                            ),
+                            lineWidth: 1
+                        )
+                }
+            }
             .shadow(
                 color: hasChanged ? Color(hex: "#4F46E5").opacity(0.4) : .clear,
                 radius: hasChanged ? 20 : 0,
                 y: hasChanged ? 8 : 0
             )
+        }
     }
 
     // MARK: - Section Header
@@ -952,44 +949,82 @@ private struct TargetCardView: View {
     }
 }
 
-// MARK: - Siri-style Close Button
+// MARK: - Apple Intelligence Style Close Button
 
-/// Clean close button — on press, just the xmark glows with a soft flowing
-/// pastel rainbow (like the Siri activation bar). Circle stays unchanged.
+/// Apple Intelligence / Siri-style close pill — a thin capsule with a
+/// continuously flowing rainbow border glow and glowing X icon.
 private struct SiriCloseButton: View {
     let isDark: Bool
     let action: () -> Void
 
     @GestureState private var isPressed = false
 
-    var body: some View {
-        ZStack {
-            Circle()
-                .fill(isDark ? Color(hex: "#1a1a2e") : .white)
-                .frame(width: 36, height: 36)
-                .overlay(
-                    Circle()
-                        .strokeBorder(
-                            LinearGradient(
-                                colors: [.indigo.opacity(0.3), .purple.opacity(0.2)],
-                                startPoint: .top, endPoint: .bottom
-                            ),
-                            lineWidth: 1
-                        )
-                )
-                .shadow(color: .indigo.opacity(isDark ? 0.15 : 0.06), radius: 8, y: 2)
+    // Apple Intelligence pastel rainbow palette — doubled for seamless loop
+    static let siriColors: [Color] = [
+        Color(hex: "#FF6B6B"), // soft coral
+        Color(hex: "#FECA57"), // warm gold
+        Color(hex: "#48DBFB"), // sky cyan
+        Color(hex: "#FF9FF3"), // soft pink
+        Color(hex: "#54A0FF"), // periwinkle
+        Color(hex: "#5F27CD"), // deep violet
+        // repeat for seamless wrap
+        Color(hex: "#FF6B6B"),
+        Color(hex: "#FECA57"),
+        Color(hex: "#48DBFB"),
+        Color(hex: "#FF9FF3"),
+        Color(hex: "#54A0FF"),
+        Color(hex: "#5F27CD"),
+        Color(hex: "#FF6B6B"),
+    ]
 
-            Image(systemName: "xmark")
-                .font(.system(size: 13, weight: .semibold))
-                .foregroundStyle(
-                    LinearGradient(
-                        colors: [.indigo, .purple],
-                        startPoint: .top, endPoint: .bottom
+    /// Flowing gradient that shifts smoothly based on a 0…1 phase.
+    private static func flowingGradient(phase: Double) -> LinearGradient {
+        LinearGradient(
+            colors: siriColors,
+            startPoint: UnitPoint(x: phase - 0.5, y: 0),
+            endPoint: UnitPoint(x: phase + 0.5, y: 1)
+        )
+    }
+
+    var body: some View {
+        TimelineView(.animation(minimumInterval: 1.0 / 30.0)) { context in
+            let t = context.date.timeIntervalSinceReferenceDate
+            let phase = t.truncatingRemainder(dividingBy: 4.0) / 4.0
+
+            ZStack {
+                // Outer diffused glow — the signature AI bloom
+                Circle()
+                    .fill(.clear)
+                    .frame(width: 36, height: 36)
+                    .overlay(
+                        Circle()
+                            .stroke(Self.flowingGradient(phase: phase), lineWidth: 4)
                     )
-                )
+                    .blur(radius: 6)
+                    .opacity(0.6)
+
+                // Main circle — frosted glass
+                Circle()
+                    .fill(
+                        (isDark ? Color(hex: "#1a1a2e") : Color.white)
+                            .opacity(0.85)
+                    )
+                    .frame(width: 36, height: 36)
+                    .overlay(
+                        Circle()
+                            .stroke(Self.flowingGradient(phase: phase), lineWidth: 1.5)
+                    )
+
+                // Glowing X icon — rainbow-tinted
+                Image(systemName: "xmark")
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundStyle(Self.flowingGradient(phase: phase))
+                    .shadow(color: Color(hex: "#FF9FF3").opacity(0.4), radius: 4)
+            }
         }
-        .scaleEffect(isPressed ? 0.92 : 1.0)
-        .animation(.spring(response: 0.25, dampingFraction: 0.7), value: isPressed)
+        .scaleEffect(isPressed ? 0.9 : 1.0)
+        .brightness(isPressed ? 0.1 : 0)
+        .animation(.spring(response: 0.2, dampingFraction: 0.65), value: isPressed)
         .gesture(
             DragGesture(minimumDistance: 0)
                 .updating($isPressed) { _, state, _ in
