@@ -2728,5 +2728,1305 @@
         "exampleTranslation": "Komedia mnie rozśmiesza."
       }
     ]
+  },
+  {
+    "key": "fruits",
+    "name": "Owoce",
+    "description": "Nazwy popularnych owoców",
+    "iconName": "leaf.fill",
+    "color": "#f87171",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pc_fr_1",
+        "front": "Jabłko",
+        "back": "苹果",
+        "difficulty": "easy",
+        "example": "我每天吃一个苹果。",
+        "exampleTranslation": "Codziennie jem jedno jabłko."
+      },
+      {
+        "id": "pc_fr_2",
+        "front": "Banan",
+        "back": "香蕉",
+        "difficulty": "easy",
+        "example": "香蕉是黄色的。",
+        "exampleTranslation": "Banan jest żółty."
+      },
+      {
+        "id": "pc_fr_3",
+        "front": "Pomarańcza",
+        "back": "橙子",
+        "difficulty": "easy",
+        "example": "我喜欢喝橙子汁。",
+        "exampleTranslation": "Lubię pić sok pomarańczowy."
+      },
+      {
+        "id": "pc_fr_4",
+        "front": "Truskawka",
+        "back": "草莓",
+        "difficulty": "easy",
+        "example": "草莓蛋糕非常好吃。",
+        "exampleTranslation": "Ciasto truskawkowe jest bardzo smaczne."
+      },
+      {
+        "id": "pc_fr_5",
+        "front": "Winogrono",
+        "back": "葡萄",
+        "difficulty": "easy",
+        "example": "葡萄可以用来酿酒。",
+        "exampleTranslation": "Winogrona można używać do produkcji wina."
+      },
+      {
+        "id": "pc_fr_6",
+        "front": "Arbuz",
+        "back": "西瓜",
+        "difficulty": "easy",
+        "example": "夏天吃西瓜很解渴。",
+        "exampleTranslation": "Jedzenie arbuza latem dobrze gasi pragnienie."
+      },
+      {
+        "id": "pc_fr_7",
+        "front": "Brzoskwinia",
+        "back": "桃子",
+        "difficulty": "medium",
+        "example": "桃子的味道很甜。",
+        "exampleTranslation": "Brzoskwinia ma bardzo słodki smak."
+      },
+      {
+        "id": "pc_fr_8",
+        "front": "Gruszka",
+        "back": "梨",
+        "difficulty": "medium",
+        "example": "这个梨很新鲜。",
+        "exampleTranslation": "Ta gruszka jest bardzo świeża."
+      },
+      {
+        "id": "pc_fr_9",
+        "front": "Cytryna",
+        "back": "柠檬",
+        "difficulty": "medium",
+        "example": "柠檬水很好喝。",
+        "exampleTranslation": "Woda z cytryną jest bardzo smaczna."
+      },
+      {
+        "id": "pc_fr_10",
+        "front": "Ananas",
+        "back": "菠萝",
+        "difficulty": "medium",
+        "example": "菠萝是热带水果。",
+        "exampleTranslation": "Ananas jest owocem tropikalnym."
+      },
+      {
+        "id": "pc_fr_11",
+        "front": "Mango",
+        "back": "芒果",
+        "difficulty": "medium",
+        "example": "芒果冰淇淋是我的最爱。",
+        "exampleTranslation": "Lody mango to moje ulubione."
+      },
+      {
+        "id": "pc_fr_12",
+        "front": "Wiśnia",
+        "back": "樱桃",
+        "difficulty": "medium",
+        "example": "樱桃在夏天成熟。",
+        "exampleTranslation": "Wiśnie dojrzewają latem."
+      },
+      {
+        "id": "pc_fr_13",
+        "front": "Malina",
+        "back": "覆盆子",
+        "difficulty": "hard",
+        "example": "覆盆子酱味道很好。",
+        "exampleTranslation": "Dżem malinowy jest bardzo smaczny."
+      },
+      {
+        "id": "pc_fr_14",
+        "front": "Granat",
+        "back": "石榴",
+        "difficulty": "hard",
+        "example": "石榴含有丰富的维生素。",
+        "exampleTranslation": "Granat zawiera dużo witamin."
+      },
+      {
+        "id": "pc_fr_15",
+        "front": "Kiwi",
+        "back": "猕猴桃",
+        "difficulty": "hard",
+        "example": "猕猴桃富含维生素C。",
+        "exampleTranslation": "Kiwi jest bogate w witaminę C."
+      }
+    ]
+  },
+  {
+    "key": "vegetables",
+    "name": "Warzywa",
+    "description": "Nazwy popularnych warzyw",
+    "iconName": "carrot.fill",
+    "color": "#4ade80",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pc_veg_1",
+        "front": "Pomidor",
+        "back": "番茄",
+        "difficulty": "easy",
+        "example": "番茄炒蛋是中国家常菜。",
+        "exampleTranslation": "Jajecznica z pomidorami to popularne chińskie danie domowe."
+      },
+      {
+        "id": "pc_veg_2",
+        "front": "Ogórek",
+        "back": "黄瓜",
+        "difficulty": "easy",
+        "example": "黄瓜沙拉很清爽。",
+        "exampleTranslation": "Sałatka z ogórka jest bardzo orzeźwiająca."
+      },
+      {
+        "id": "pc_veg_3",
+        "front": "Marchewka",
+        "back": "胡萝卜",
+        "difficulty": "easy",
+        "example": "胡萝卜对眼睛好。",
+        "exampleTranslation": "Marchewka jest dobra dla oczu."
+      },
+      {
+        "id": "pc_veg_4",
+        "front": "Ziemniak",
+        "back": "土豆",
+        "difficulty": "easy",
+        "example": "土豆可以做很多菜。",
+        "exampleTranslation": "Z ziemniaków można zrobić wiele potraw."
+      },
+      {
+        "id": "pc_veg_5",
+        "front": "Cebula",
+        "back": "洋葱",
+        "difficulty": "easy",
+        "example": "切洋葱的时候会流泪。",
+        "exampleTranslation": "Przy krojeniu cebuli łzawią oczy."
+      },
+      {
+        "id": "pc_veg_6",
+        "front": "Czosnek",
+        "back": "大蒜",
+        "difficulty": "easy",
+        "example": "大蒜有杀菌的作用。",
+        "exampleTranslation": "Czosnek ma działanie antybakteryjne."
+      },
+      {
+        "id": "pc_veg_7",
+        "front": "Papryka",
+        "back": "辣椒",
+        "difficulty": "medium",
+        "example": "四川菜经常用辣椒。",
+        "exampleTranslation": "Kuchnia syczuańska często używa papryki chili."
+      },
+      {
+        "id": "pc_veg_8",
+        "front": "Kapusta",
+        "back": "白菜",
+        "difficulty": "medium",
+        "example": "白菜是冬天常见的蔬菜。",
+        "exampleTranslation": "Kapusta pekińska jest popularnym warzywem zimowym."
+      },
+      {
+        "id": "pc_veg_9",
+        "front": "Szpinak",
+        "back": "菠菜",
+        "difficulty": "medium",
+        "example": "菠菜含有很多铁。",
+        "exampleTranslation": "Szpinak zawiera dużo żelaza."
+      },
+      {
+        "id": "pc_veg_10",
+        "front": "Brokuł",
+        "back": "西兰花",
+        "difficulty": "medium",
+        "example": "西兰花是很健康的蔬菜。",
+        "exampleTranslation": "Brokuł jest bardzo zdrowym warzywem."
+      },
+      {
+        "id": "pc_veg_11",
+        "front": "Grzyb",
+        "back": "蘑菇",
+        "difficulty": "medium",
+        "example": "蘑菇汤味道鲜美。",
+        "exampleTranslation": "Zupa grzybowa jest bardzo smaczna."
+      },
+      {
+        "id": "pc_veg_12",
+        "front": "Dynia",
+        "back": "南瓜",
+        "difficulty": "medium",
+        "example": "南瓜粥是秋天的美食。",
+        "exampleTranslation": "Owsianka z dyni to przysmak jesieni."
+      },
+      {
+        "id": "pc_veg_13",
+        "front": "Bakłażan",
+        "back": "茄子",
+        "difficulty": "hard",
+        "example": "红烧茄子是经典的中国菜。",
+        "exampleTranslation": "Duszony bakłażan to klasyczne chińskie danie."
+      },
+      {
+        "id": "pc_veg_14",
+        "front": "Seler",
+        "back": "芹菜",
+        "difficulty": "hard",
+        "example": "芹菜可以降血压。",
+        "exampleTranslation": "Seler może obniżać ciśnienie krwi."
+      },
+      {
+        "id": "pc_veg_15",
+        "front": "Kukurydza",
+        "back": "玉米",
+        "difficulty": "hard",
+        "example": "煮玉米是很受欢迎的小吃。",
+        "exampleTranslation": "Gotowana kukurydza to popularna przekąska."
+      }
+    ]
+  },
+  {
+    "key": "animals",
+    "name": "Zwierzęta",
+    "description": "Nazwy popularnych zwierząt",
+    "iconName": "pawprint.fill",
+    "color": "#fb923c",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pc_ani_1",
+        "front": "Kot",
+        "back": "猫",
+        "difficulty": "easy",
+        "example": "我家有一只猫。",
+        "exampleTranslation": "W moim domu jest jeden kot."
+      },
+      {
+        "id": "pc_ani_2",
+        "front": "Pies",
+        "back": "狗",
+        "difficulty": "easy",
+        "example": "这只狗很聪明。",
+        "exampleTranslation": "Ten pies jest bardzo mądry."
+      },
+      {
+        "id": "pc_ani_3",
+        "front": "Ryba",
+        "back": "鱼",
+        "difficulty": "easy",
+        "example": "金鱼在水里游来游去。",
+        "exampleTranslation": "Złota rybka pływa w wodzie tam i z powrotem."
+      },
+      {
+        "id": "pc_ani_4",
+        "front": "Ptak",
+        "back": "鸟",
+        "difficulty": "easy",
+        "example": "那只鸟在树上唱歌。",
+        "exampleTranslation": "Ten ptak śpiewa na drzewie."
+      },
+      {
+        "id": "pc_ani_5",
+        "front": "Koń",
+        "back": "马",
+        "difficulty": "easy",
+        "example": "马跑得很快。",
+        "exampleTranslation": "Koń biega bardzo szybko."
+      },
+      {
+        "id": "pc_ani_6",
+        "front": "Krowa",
+        "back": "牛",
+        "difficulty": "easy",
+        "example": "牛在草地上吃草。",
+        "exampleTranslation": "Krowa pasie się na łące."
+      },
+      {
+        "id": "pc_ani_7",
+        "front": "Świnia",
+        "back": "猪",
+        "difficulty": "medium",
+        "example": "猪是很聪明的动物。",
+        "exampleTranslation": "Świnia jest bardzo inteligentnym zwierzęciem."
+      },
+      {
+        "id": "pc_ani_8",
+        "front": "Królik",
+        "back": "兔子",
+        "difficulty": "medium",
+        "example": "兔子喜欢吃胡萝卜。",
+        "exampleTranslation": "Królik lubi jeść marchewki."
+      },
+      {
+        "id": "pc_ani_9",
+        "front": "Owca",
+        "back": "羊",
+        "difficulty": "medium",
+        "example": "羊毛很暖和。",
+        "exampleTranslation": "Wełna owcza jest bardzo ciepła."
+      },
+      {
+        "id": "pc_ani_10",
+        "front": "Niedźwiedź",
+        "back": "熊",
+        "difficulty": "medium",
+        "example": "大熊猫是中国的国宝。",
+        "exampleTranslation": "Wielka panda jest skarbem narodowym Chin."
+      },
+      {
+        "id": "pc_ani_11",
+        "front": "Tygrys",
+        "back": "老虎",
+        "difficulty": "medium",
+        "example": "老虎是百兽之王。",
+        "exampleTranslation": "Tygrys jest królem zwierząt."
+      },
+      {
+        "id": "pc_ani_12",
+        "front": "Słoń",
+        "back": "大象",
+        "difficulty": "medium",
+        "example": "大象的记忆力很好。",
+        "exampleTranslation": "Słoń ma bardzo dobrą pamięć."
+      },
+      {
+        "id": "pc_ani_13",
+        "front": "Żółw",
+        "back": "乌龟",
+        "difficulty": "hard",
+        "example": "乌龟可以活很长时间。",
+        "exampleTranslation": "Żółw może żyć bardzo długo."
+      },
+      {
+        "id": "pc_ani_14",
+        "front": "Wąż",
+        "back": "蛇",
+        "difficulty": "hard",
+        "example": "蛇是冷血动物。",
+        "exampleTranslation": "Wąż jest zwierzęciem zimnokrwistym."
+      },
+      {
+        "id": "pc_ani_15",
+        "front": "Smok",
+        "back": "龙",
+        "difficulty": "hard",
+        "example": "龙是中国文化的象征。",
+        "exampleTranslation": "Smok jest symbolem chińskiej kultury."
+      }
+    ]
+  },
+  {
+    "key": "drinks",
+    "name": "Napoje",
+    "description": "Nazwy popularnych napojów",
+    "iconName": "cup.and.saucer.fill",
+    "color": "#38bdf8",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pc_dr_1",
+        "front": "Woda",
+        "back": "水",
+        "difficulty": "easy",
+        "example": "请给我一杯水。",
+        "exampleTranslation": "Poproszę szklankę wody."
+      },
+      {
+        "id": "pc_dr_2",
+        "front": "Herbata",
+        "back": "茶",
+        "difficulty": "easy",
+        "example": "中国人喜欢喝茶。",
+        "exampleTranslation": "Chińczycy lubią pić herbatę."
+      },
+      {
+        "id": "pc_dr_3",
+        "front": "Kawa",
+        "back": "咖啡",
+        "difficulty": "easy",
+        "example": "早上喝咖啡让我清醒。",
+        "exampleTranslation": "Poranna kawa mnie rozbudza."
+      },
+      {
+        "id": "pc_dr_4",
+        "front": "Mleko",
+        "back": "牛奶",
+        "difficulty": "easy",
+        "example": "孩子们每天喝牛奶。",
+        "exampleTranslation": "Dzieci codziennie piją mleko."
+      },
+      {
+        "id": "pc_dr_5",
+        "front": "Sok",
+        "back": "果汁",
+        "difficulty": "easy",
+        "example": "我想喝橙果汁。",
+        "exampleTranslation": "Chciałbym wypić sok pomarańczowy."
+      },
+      {
+        "id": "pc_dr_6",
+        "front": "Piwo",
+        "back": "啤酒",
+        "difficulty": "easy",
+        "example": "夏天喝冰啤酒很舒服。",
+        "exampleTranslation": "Picie zimnego piwa latem jest przyjemne."
+      },
+      {
+        "id": "pc_dr_7",
+        "front": "Wino",
+        "back": "葡萄酒",
+        "difficulty": "medium",
+        "example": "法国的葡萄酒很有名。",
+        "exampleTranslation": "Francuskie wino jest bardzo znane."
+      },
+      {
+        "id": "pc_dr_8",
+        "front": "Herbata zielona",
+        "back": "绿茶",
+        "difficulty": "medium",
+        "example": "绿茶对健康有好处。",
+        "exampleTranslation": "Zielona herbata jest korzystna dla zdrowia."
+      },
+      {
+        "id": "pc_dr_9",
+        "front": "Coca-Cola",
+        "back": "可乐",
+        "difficulty": "medium",
+        "example": "可乐是全世界最流行的饮料。",
+        "exampleTranslation": "Cola jest najpopularniejszym napojem na świecie."
+      },
+      {
+        "id": "pc_dr_10",
+        "front": "Herbata z mlekiem",
+        "back": "奶茶",
+        "difficulty": "medium",
+        "example": "珍珠奶茶在亚洲很流行。",
+        "exampleTranslation": "Bubble tea jest bardzo popularny w Azji."
+      },
+      {
+        "id": "pc_dr_11",
+        "front": "Smoothie",
+        "back": "果昔",
+        "difficulty": "medium",
+        "example": "我每天早上喝果昔。",
+        "exampleTranslation": "Każdego ranka piję smoothie."
+      },
+      {
+        "id": "pc_dr_12",
+        "front": "Woda mineralna",
+        "back": "矿泉水",
+        "difficulty": "medium",
+        "example": "请给我一瓶矿泉水。",
+        "exampleTranslation": "Poproszę butelkę wody mineralnej."
+      },
+      {
+        "id": "pc_dr_13",
+        "front": "Koktajl",
+        "back": "鸡尾酒",
+        "difficulty": "hard",
+        "example": "这家酒吧的鸡尾酒很好喝。",
+        "exampleTranslation": "Koktajle w tym barze są bardzo smaczne."
+      },
+      {
+        "id": "pc_dr_14",
+        "front": "Espresso",
+        "back": "浓缩咖啡",
+        "difficulty": "hard",
+        "example": "意大利人喜欢喝浓缩咖啡。",
+        "exampleTranslation": "Włosi lubią pić espresso."
+      },
+      {
+        "id": "pc_dr_15",
+        "front": "Napój gazowany",
+        "back": "汽水",
+        "difficulty": "hard",
+        "example": "汽水含有很多糖分。",
+        "exampleTranslation": "Napoje gazowane zawierają dużo cukru."
+      }
+    ]
+  },
+  {
+    "key": "seasons",
+    "name": "Pory roku",
+    "description": "Pory roku i związane pogodowe słowa",
+    "iconName": "cloud.sun.fill",
+    "color": "#fbbf24",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pc_sea_1",
+        "front": "Wiosna",
+        "back": "春天",
+        "difficulty": "easy",
+        "example": "春天花儿开了。",
+        "exampleTranslation": "Wiosną kwiaty kwitną."
+      },
+      {
+        "id": "pc_sea_2",
+        "front": "Lato",
+        "back": "夏天",
+        "difficulty": "easy",
+        "example": "夏天天气很热。",
+        "exampleTranslation": "Latem pogoda jest bardzo gorąca."
+      },
+      {
+        "id": "pc_sea_3",
+        "front": "Jesień",
+        "back": "秋天",
+        "difficulty": "easy",
+        "example": "秋天树叶变黄了。",
+        "exampleTranslation": "Jesienią liście żółkną."
+      },
+      {
+        "id": "pc_sea_4",
+        "front": "Zima",
+        "back": "冬天",
+        "difficulty": "easy",
+        "example": "冬天经常下雪。",
+        "exampleTranslation": "Zimą często pada śnieg."
+      },
+      {
+        "id": "pc_sea_5",
+        "front": "Pora roku",
+        "back": "季节",
+        "difficulty": "easy",
+        "example": "中国有四个季节。",
+        "exampleTranslation": "W Chinach są cztery pory roku."
+      },
+      {
+        "id": "pc_sea_6",
+        "front": "Klimat",
+        "back": "气候",
+        "difficulty": "easy",
+        "example": "这里的气候很温暖。",
+        "exampleTranslation": "Tutejszy klimat jest bardzo ciepły."
+      },
+      {
+        "id": "pc_sea_7",
+        "front": "Ciepły",
+        "back": "温暖",
+        "difficulty": "medium",
+        "example": "春天的阳光很温暖。",
+        "exampleTranslation": "Wiosenne słońce jest bardzo ciepłe."
+      },
+      {
+        "id": "pc_sea_8",
+        "front": "Gorący",
+        "back": "炎热",
+        "difficulty": "medium",
+        "example": "夏天的中午非常炎热。",
+        "exampleTranslation": "Letnie południe jest bardzo gorące."
+      },
+      {
+        "id": "pc_sea_9",
+        "front": "Chłodny",
+        "back": "凉爽",
+        "difficulty": "medium",
+        "example": "秋天的风很凉爽。",
+        "exampleTranslation": "Jesienny wiatr jest chłodny i orzeźwiający."
+      },
+      {
+        "id": "pc_sea_10",
+        "front": "Zimny",
+        "back": "寒冷",
+        "difficulty": "medium",
+        "example": "冬天的北方非常寒冷。",
+        "exampleTranslation": "Północ jest bardzo zimna w zimie."
+      },
+      {
+        "id": "pc_sea_11",
+        "front": "Kwitnąć",
+        "back": "开花",
+        "difficulty": "medium",
+        "example": "樱花在春天开花。",
+        "exampleTranslation": "Kwiaty wiśni kwitną wiosną."
+      },
+      {
+        "id": "pc_sea_12",
+        "front": "Opadać (liście)",
+        "back": "落叶",
+        "difficulty": "medium",
+        "example": "秋天到处都是落叶。",
+        "exampleTranslation": "Jesienią wszędzie są opadłe liście."
+      },
+      {
+        "id": "pc_sea_13",
+        "front": "Zbierać plony",
+        "back": "丰收",
+        "difficulty": "hard",
+        "example": "秋天是丰收的季节。",
+        "exampleTranslation": "Jesień jest sezonem zbiorów."
+      },
+      {
+        "id": "pc_sea_14",
+        "front": "Przesilenie letnie",
+        "back": "夏至",
+        "difficulty": "hard",
+        "example": "夏至是一年中白天最长的一天。",
+        "exampleTranslation": "Przesilenie letnie to najdłuższy dzień w roku."
+      },
+      {
+        "id": "pc_sea_15",
+        "front": "Odmiana pogody",
+        "back": "换季",
+        "difficulty": "hard",
+        "example": "换季的时候容易感冒。",
+        "exampleTranslation": "Przy zmianie pór roku łatwo się przeziębić."
+      }
+    ]
+  },
+  {
+    "key": "daily_routine",
+    "name": "Codzienna rutyna",
+    "description": "Czynności wykonywane każdego dnia",
+    "iconName": "alarm.fill",
+    "color": "#a78bfa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pc_dr2_1",
+        "front": "Budzić się",
+        "back": "起床",
+        "difficulty": "easy",
+        "example": "我每天早上六点起床。",
+        "exampleTranslation": "Budzę się codziennie o szóstej rano."
+      },
+      {
+        "id": "pc_dr2_2",
+        "front": "Myć zęby",
+        "back": "刷牙",
+        "difficulty": "easy",
+        "example": "早晚都要刷牙。",
+        "exampleTranslation": "Trzeba myć zęby rano i wieczorem."
+      },
+      {
+        "id": "pc_dr2_3",
+        "front": "Brać prysznic",
+        "back": "洗澡",
+        "difficulty": "easy",
+        "example": "我每天晚上洗澡。",
+        "exampleTranslation": "Biorę prysznic każdego wieczoru."
+      },
+      {
+        "id": "pc_dr2_4",
+        "front": "Jeść śniadanie",
+        "back": "吃早饭",
+        "difficulty": "easy",
+        "example": "吃早饭对健康很重要。",
+        "exampleTranslation": "Jedzenie śniadania jest ważne dla zdrowia."
+      },
+      {
+        "id": "pc_dr2_5",
+        "front": "Iść do pracy",
+        "back": "上班",
+        "difficulty": "easy",
+        "example": "我八点上班。",
+        "exampleTranslation": "Idę do pracy o ósmej."
+      },
+      {
+        "id": "pc_dr2_6",
+        "front": "Wracać do domu",
+        "back": "回家",
+        "difficulty": "easy",
+        "example": "下班后我回家做饭。",
+        "exampleTranslation": "Po pracy wracam do domu i gotuję."
+      },
+      {
+        "id": "pc_dr2_7",
+        "front": "Gotować",
+        "back": "做饭",
+        "difficulty": "medium",
+        "example": "妈妈每天做饭给我们吃。",
+        "exampleTranslation": "Mama codziennie gotuje dla nas."
+      },
+      {
+        "id": "pc_dr2_8",
+        "front": "Sprzątać",
+        "back": "打扫",
+        "difficulty": "medium",
+        "example": "周末我打扫房间。",
+        "exampleTranslation": "W weekend sprzątam pokój."
+      },
+      {
+        "id": "pc_dr2_9",
+        "front": "Odpoczywać",
+        "back": "休息",
+        "difficulty": "medium",
+        "example": "工作累了需要休息。",
+        "exampleTranslation": "Gdy jestem zmęczony pracą, potrzebuję odpoczynku."
+      },
+      {
+        "id": "pc_dr2_10",
+        "front": "Czesać się",
+        "back": "梳头",
+        "difficulty": "medium",
+        "example": "她每天早上梳头。",
+        "exampleTranslation": "Ona czesze się każdego ranka."
+      },
+      {
+        "id": "pc_dr2_11",
+        "front": "Ubierać się",
+        "back": "穿衣服",
+        "difficulty": "medium",
+        "example": "快点穿衣服，要迟到了。",
+        "exampleTranslation": "Szybko się ubieraj, bo się spóźnimy."
+      },
+      {
+        "id": "pc_dr2_12",
+        "front": "Kłaść się spać",
+        "back": "睡觉",
+        "difficulty": "medium",
+        "example": "我通常十一点睡觉。",
+        "exampleTranslation": "Zwykle kładę się spać o jedenastej."
+      },
+      {
+        "id": "pc_dr2_13",
+        "front": "Dojeżdżać",
+        "back": "通勤",
+        "difficulty": "hard",
+        "example": "通勤路上我喜欢听音乐。",
+        "exampleTranslation": "Podczas dojazdu lubię słuchać muzyki."
+      },
+      {
+        "id": "pc_dr2_14",
+        "front": "Medytować",
+        "back": "冥想",
+        "difficulty": "hard",
+        "example": "每天冥想可以减少压力。",
+        "exampleTranslation": "Codzienna medytacja może zmniejszyć stres."
+      },
+      {
+        "id": "pc_dr2_15",
+        "front": "Planować dzień",
+        "back": "计划一天",
+        "difficulty": "hard",
+        "example": "我喜欢早上计划一天的工作。",
+        "exampleTranslation": "Lubię rano planować pracę na cały dzień."
+      }
+    ]
+  },
+  {
+    "key": "meals",
+    "name": "Posiłki",
+    "description": "Rodzaje posiłków i dania kuchni chińskiej",
+    "iconName": "fork.knife",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pc_ml_1",
+        "front": "Śniadanie",
+        "back": "早餐",
+        "difficulty": "easy",
+        "example": "中国的早餐种类很多。",
+        "exampleTranslation": "Chińskie śniadania mają wiele odmian."
+      },
+      {
+        "id": "pc_ml_2",
+        "front": "Obiad",
+        "back": "午餐",
+        "difficulty": "easy",
+        "example": "午餐我吃了面条。",
+        "exampleTranslation": "Na obiad zjadłem makaron."
+      },
+      {
+        "id": "pc_ml_3",
+        "front": "Kolacja",
+        "back": "晚餐",
+        "difficulty": "easy",
+        "example": "全家人一起吃晚餐。",
+        "exampleTranslation": "Cała rodzina je razem kolację."
+      },
+      {
+        "id": "pc_ml_4",
+        "front": "Makaron",
+        "back": "面条",
+        "difficulty": "easy",
+        "example": "我喜欢吃炒面条。",
+        "exampleTranslation": "Lubię jeść smażony makaron."
+      },
+      {
+        "id": "pc_ml_5",
+        "front": "Ryż",
+        "back": "米饭",
+        "difficulty": "easy",
+        "example": "中国人每天吃米饭。",
+        "exampleTranslation": "Chińczycy jedzą ryż codziennie."
+      },
+      {
+        "id": "pc_ml_6",
+        "front": "Pierożki",
+        "back": "饺子",
+        "difficulty": "easy",
+        "example": "过年要吃饺子。",
+        "exampleTranslation": "Na Nowy Rok je się pierożki."
+      },
+      {
+        "id": "pc_ml_7",
+        "front": "Zupa",
+        "back": "汤",
+        "difficulty": "medium",
+        "example": "冬天喝热汤很舒服。",
+        "exampleTranslation": "Zimą picie gorącej zupy jest przyjemne."
+      },
+      {
+        "id": "pc_ml_8",
+        "front": "Smażone danie",
+        "back": "炒菜",
+        "difficulty": "medium",
+        "example": "妈妈做的炒菜最好吃。",
+        "exampleTranslation": "Smażone dania mamy są najsmaczniejsze."
+      },
+      {
+        "id": "pc_ml_9",
+        "front": "Przekąska",
+        "back": "小吃",
+        "difficulty": "medium",
+        "example": "北京有很多有名的小吃。",
+        "exampleTranslation": "Pekin ma wiele znanych przekąsek."
+      },
+      {
+        "id": "pc_ml_10",
+        "front": "Tofu",
+        "back": "豆腐",
+        "difficulty": "medium",
+        "example": "麻婆豆腐是四川名菜。",
+        "exampleTranslation": "Mapo tofu to słynne danie syczuańskie."
+      },
+      {
+        "id": "pc_ml_11",
+        "front": "Bułka parzona",
+        "back": "包子",
+        "difficulty": "medium",
+        "example": "肉包子是很受欢迎的早餐。",
+        "exampleTranslation": "Bułki parzone z mięsem to popularne śniadanie."
+      },
+      {
+        "id": "pc_ml_12",
+        "front": "Hot pot",
+        "back": "火锅",
+        "difficulty": "medium",
+        "example": "火锅是中国人最爱的聚餐方式。",
+        "exampleTranslation": "Hot pot to ulubiony sposób jedzenia w grupie w Chinach."
+      },
+      {
+        "id": "pc_ml_13",
+        "front": "Dim sum",
+        "back": "点心",
+        "difficulty": "hard",
+        "example": "广东的点心非常有名。",
+        "exampleTranslation": "Kantońskie dim sum jest bardzo znane."
+      },
+      {
+        "id": "pc_ml_14",
+        "front": "Kaczka po pekińsku",
+        "back": "北京烤鸭",
+        "difficulty": "hard",
+        "example": "北京烤鸭是中国最有名的菜之一。",
+        "exampleTranslation": "Kaczka po pekińsku to jedno z najsłynniejszych chińskich dań."
+      },
+      {
+        "id": "pc_ml_15",
+        "front": "Wiosenne sajgonki",
+        "back": "春卷",
+        "difficulty": "hard",
+        "example": "春卷外面酥脆，里面鲜美。",
+        "exampleTranslation": "Sajgonki są chrupiące na zewnątrz i smaczne w środku."
+      }
+    ]
+  },
+  {
+    "key": "desserts",
+    "name": "Desery",
+    "description": "Słodycze i desery",
+    "iconName": "birthday.cake.fill",
+    "color": "#f472b6",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pc_des_1",
+        "front": "Ciasto",
+        "back": "蛋糕",
+        "difficulty": "easy",
+        "example": "生日要吃蛋糕。",
+        "exampleTranslation": "Na urodziny je się ciasto."
+      },
+      {
+        "id": "pc_des_2",
+        "front": "Lody",
+        "back": "冰淇淋",
+        "difficulty": "easy",
+        "example": "夏天吃冰淇淋很开心。",
+        "exampleTranslation": "Jedzenie lodów latem sprawia radość."
+      },
+      {
+        "id": "pc_des_3",
+        "front": "Czekolada",
+        "back": "巧克力",
+        "difficulty": "easy",
+        "example": "她最喜欢吃巧克力。",
+        "exampleTranslation": "Najbardziej lubi jeść czekoladę."
+      },
+      {
+        "id": "pc_des_4",
+        "front": "Ciasteczko",
+        "back": "饼干",
+        "difficulty": "easy",
+        "example": "孩子们喜欢吃饼干。",
+        "exampleTranslation": "Dzieci lubią jeść ciasteczka."
+      },
+      {
+        "id": "pc_des_5",
+        "front": "Cukierek",
+        "back": "糖果",
+        "difficulty": "easy",
+        "example": "不要吃太多糖果。",
+        "exampleTranslation": "Nie jedz za dużo cukierków."
+      },
+      {
+        "id": "pc_des_6",
+        "front": "Ciasto księżycowe",
+        "back": "月饼",
+        "difficulty": "easy",
+        "example": "中秋节要吃月饼。",
+        "exampleTranslation": "Na Święto Środka Jesieni je się ciasta księżycowe."
+      },
+      {
+        "id": "pc_des_7",
+        "front": "Pudding",
+        "back": "布丁",
+        "difficulty": "medium",
+        "example": "芒果布丁很好吃。",
+        "exampleTranslation": "Pudding z mango jest bardzo smaczny."
+      },
+      {
+        "id": "pc_des_8",
+        "front": "Galaretka",
+        "back": "果冻",
+        "difficulty": "medium",
+        "example": "孩子们很喜欢吃果冻。",
+        "exampleTranslation": "Dzieci bardzo lubią jeść galaretkę."
+      },
+      {
+        "id": "pc_des_9",
+        "front": "Kulki ryżowe",
+        "back": "汤圆",
+        "difficulty": "medium",
+        "example": "元宵节要吃汤圆。",
+        "exampleTranslation": "Na Święto Latarni je się kulki ryżowe."
+      },
+      {
+        "id": "pc_des_10",
+        "front": "Miód",
+        "back": "蜂蜜",
+        "difficulty": "medium",
+        "example": "蜂蜜水对嗓子好。",
+        "exampleTranslation": "Woda z miodem jest dobra na gardło."
+      },
+      {
+        "id": "pc_des_11",
+        "front": "Ciasto z fasolą",
+        "back": "豆沙包",
+        "difficulty": "medium",
+        "example": "豆沙包是我最喜欢的甜点。",
+        "exampleTranslation": "Bułeczki z pastą z czerwonej fasoli to mój ulubiony deser."
+      },
+      {
+        "id": "pc_des_12",
+        "front": "Tarta",
+        "back": "蛋挞",
+        "difficulty": "medium",
+        "example": "港式蛋挞非常有名。",
+        "exampleTranslation": "Hongkońskie tarty jajeczne są bardzo znane."
+      },
+      {
+        "id": "pc_des_13",
+        "front": "Tofu deserowe",
+        "back": "豆腐花",
+        "difficulty": "hard",
+        "example": "豆腐花加上糖浆很好吃。",
+        "exampleTranslation": "Tofu deserowe z syropem jest bardzo smaczne."
+      },
+      {
+        "id": "pc_des_14",
+        "front": "Ciasto z sezamem",
+        "back": "芝麻球",
+        "difficulty": "hard",
+        "example": "芝麻球外酥里甜。",
+        "exampleTranslation": "Kulki sezamowe są chrupiące na zewnątrz i słodkie w środku."
+      },
+      {
+        "id": "pc_des_15",
+        "front": "Kandyzowane owoce",
+        "back": "糖葫芦",
+        "difficulty": "hard",
+        "example": "糖葫芦是北京传统小吃。",
+        "exampleTranslation": "Kandyzowane owoce na patyczkach to tradycyjna pekińska przekąska."
+      }
+    ]
+  },
+  {
+    "key": "conversations",
+    "name": "Rozmowy",
+    "description": "Wyrażenia do codziennych rozmów",
+    "iconName": "bubble.left.and.bubble.right.fill",
+    "color": "#34d399",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pc_conv_1",
+        "front": "Jak się masz?",
+        "back": "你好吗？",
+        "difficulty": "easy",
+        "example": "你好吗？我很好。",
+        "exampleTranslation": "Jak się masz? Dobrze."
+      },
+      {
+        "id": "pc_conv_2",
+        "front": "Jak masz na imię?",
+        "back": "你叫什么名字？",
+        "difficulty": "easy",
+        "example": "你叫什么名字？我叫小明。",
+        "exampleTranslation": "Jak masz na imię? Mam na imię Xiaoming."
+      },
+      {
+        "id": "pc_conv_3",
+        "front": "Skąd jesteś?",
+        "back": "你从哪里来？",
+        "difficulty": "easy",
+        "example": "你从哪里来？我从波兰来。",
+        "exampleTranslation": "Skąd jesteś? Jestem z Polski."
+      },
+      {
+        "id": "pc_conv_4",
+        "front": "Ile masz lat?",
+        "back": "你多大了？",
+        "difficulty": "easy",
+        "example": "你多大了？我二十五岁。",
+        "exampleTranslation": "Ile masz lat? Mam dwadzieścia pięć lat."
+      },
+      {
+        "id": "pc_conv_5",
+        "front": "Miło mi cię poznać",
+        "back": "认识你很高兴",
+        "difficulty": "easy",
+        "example": "认识你很高兴，请多多关照。",
+        "exampleTranslation": "Miło mi cię poznać, proszę o życzliwość."
+      },
+      {
+        "id": "pc_conv_6",
+        "front": "Nie rozumiem",
+        "back": "我不明白",
+        "difficulty": "easy",
+        "example": "对不起，我不明白你说什么。",
+        "exampleTranslation": "Przepraszam, nie rozumiem co mówisz."
+      },
+      {
+        "id": "pc_conv_7",
+        "front": "Proszę powtórzyć",
+        "back": "请再说一遍",
+        "difficulty": "medium",
+        "example": "请再说一遍，我没听清楚。",
+        "exampleTranslation": "Proszę powtórzyć, nie dosłyszałem."
+      },
+      {
+        "id": "pc_conv_8",
+        "front": "Czy mówisz po angielsku?",
+        "back": "你会说英语吗？",
+        "difficulty": "medium",
+        "example": "你会说英语吗？会一点。",
+        "exampleTranslation": "Czy mówisz po angielsku? Trochę."
+      },
+      {
+        "id": "pc_conv_9",
+        "front": "Uczę się chińskiego",
+        "back": "我在学中文",
+        "difficulty": "medium",
+        "example": "我在学中文，已经学了一年了。",
+        "exampleTranslation": "Uczę się chińskiego, uczę się już rok."
+      },
+      {
+        "id": "pc_conv_10",
+        "front": "Co lubisz robić?",
+        "back": "你喜欢做什么？",
+        "difficulty": "medium",
+        "example": "你喜欢做什么？我喜欢看书。",
+        "exampleTranslation": "Co lubisz robić? Lubię czytać książki."
+      },
+      {
+        "id": "pc_conv_11",
+        "front": "Zgadzam się",
+        "back": "我同意",
+        "difficulty": "medium",
+        "example": "我同意你的看法。",
+        "exampleTranslation": "Zgadzam się z twoim zdaniem."
+      },
+      {
+        "id": "pc_conv_12",
+        "front": "Nie mam zdania",
+        "back": "我没有意见",
+        "difficulty": "medium",
+        "example": "这件事我没有意见。",
+        "exampleTranslation": "W tej sprawie nie mam zdania."
+      },
+      {
+        "id": "pc_conv_13",
+        "front": "Czy mogę zapytać?",
+        "back": "我可以问一下吗？",
+        "difficulty": "hard",
+        "example": "我可以问一下吗？这个多少钱？",
+        "exampleTranslation": "Czy mogę zapytać? Ile to kosztuje?"
+      },
+      {
+        "id": "pc_conv_14",
+        "front": "Trzymaj się",
+        "back": "保重",
+        "difficulty": "hard",
+        "example": "再见，保重身体。",
+        "exampleTranslation": "Do widzenia, trzymaj się."
+      },
+      {
+        "id": "pc_conv_15",
+        "front": "Dawno się nie widzieliśmy",
+        "back": "好久不见",
+        "difficulty": "hard",
+        "example": "好久不见，你最近怎么样？",
+        "exampleTranslation": "Dawno się nie widzieliśmy, jak się ostatnio masz?"
+      }
+    ]
+  },
+  {
+    "key": "questions_asking",
+    "name": "Zadawanie pytań",
+    "description": "Pytania i wyrażenia pytające w języku chińskim",
+    "iconName": "questionmark.circle.fill",
+    "color": "#818cf8",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pc_qa_1",
+        "front": "Co?",
+        "back": "什么？",
+        "difficulty": "easy",
+        "example": "你说什么？",
+        "exampleTranslation": "Co powiedziałeś?"
+      },
+      {
+        "id": "pc_qa_2",
+        "front": "Kto?",
+        "back": "谁？",
+        "difficulty": "easy",
+        "example": "谁来了？",
+        "exampleTranslation": "Kto przyszedł?"
+      },
+      {
+        "id": "pc_qa_3",
+        "front": "Gdzie?",
+        "back": "哪里？",
+        "difficulty": "easy",
+        "example": "你要去哪里？",
+        "exampleTranslation": "Gdzie idziesz?"
+      },
+      {
+        "id": "pc_qa_4",
+        "front": "Kiedy?",
+        "back": "什么时候？",
+        "difficulty": "easy",
+        "example": "你什么时候回来？",
+        "exampleTranslation": "Kiedy wrócisz?"
+      },
+      {
+        "id": "pc_qa_5",
+        "front": "Dlaczego?",
+        "back": "为什么？",
+        "difficulty": "easy",
+        "example": "你为什么不来？",
+        "exampleTranslation": "Dlaczego nie przyszedłeś?"
+      },
+      {
+        "id": "pc_qa_6",
+        "front": "Jak?",
+        "back": "怎么？",
+        "difficulty": "easy",
+        "example": "这个字怎么读？",
+        "exampleTranslation": "Jak czyta się ten znak?"
+      },
+      {
+        "id": "pc_qa_7",
+        "front": "Ile? (policzalne)",
+        "back": "几个？",
+        "difficulty": "medium",
+        "example": "你有几个孩子？",
+        "exampleTranslation": "Ile masz dzieci?"
+      },
+      {
+        "id": "pc_qa_8",
+        "front": "Ile kosztuje?",
+        "back": "多少钱？",
+        "difficulty": "medium",
+        "example": "这件衣服多少钱？",
+        "exampleTranslation": "Ile kosztuje ta ubranie?"
+      },
+      {
+        "id": "pc_qa_9",
+        "front": "Który?",
+        "back": "哪个？",
+        "difficulty": "medium",
+        "example": "哪个是你的？",
+        "exampleTranslation": "Który jest twój?"
+      },
+      {
+        "id": "pc_qa_10",
+        "front": "Czy...?",
+        "back": "是不是？",
+        "difficulty": "medium",
+        "example": "他是不是你的朋友？",
+        "exampleTranslation": "Czy on jest twoim przyjacielem?"
+      },
+      {
+        "id": "pc_qa_11",
+        "front": "Jak daleko?",
+        "back": "多远？",
+        "difficulty": "medium",
+        "example": "从这里到学校多远？",
+        "exampleTranslation": "Jak daleko jest stąd do szkoły?"
+      },
+      {
+        "id": "pc_qa_12",
+        "front": "Jak długo?",
+        "back": "多长时间？",
+        "difficulty": "medium",
+        "example": "你学中文学了多长时间？",
+        "exampleTranslation": "Jak długo uczysz się chińskiego?"
+      },
+      {
+        "id": "pc_qa_13",
+        "front": "Z jakiego powodu?",
+        "back": "因为什么？",
+        "difficulty": "hard",
+        "example": "你因为什么来中国？",
+        "exampleTranslation": "Z jakiego powodu przyjechałeś do Chin?"
+      },
+      {
+        "id": "pc_qa_14",
+        "front": "W jaki sposób?",
+        "back": "用什么方式？",
+        "difficulty": "hard",
+        "example": "你用什么方式学习？",
+        "exampleTranslation": "W jaki sposób się uczysz?"
+      },
+      {
+        "id": "pc_qa_15",
+        "front": "Co sądzisz?",
+        "back": "你怎么看？",
+        "difficulty": "hard",
+        "example": "关于这件事你怎么看？",
+        "exampleTranslation": "Co sądzisz o tej sprawie?"
+      }
+    ]
   }
 ]

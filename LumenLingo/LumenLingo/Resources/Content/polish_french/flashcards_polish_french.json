@@ -2728,5 +2728,655 @@
         "exampleTranslation": "Komedia mnie rozśmiesza."
       }
     ]
+  },
+  {
+    "key": "fruits",
+    "name": "Owoce",
+    "description": "Nazwy owoców po francusku",
+    "iconName": "leaf.fill",
+    "color": "#FF6B6B",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pf_fruit_1",
+        "front": "Jabłko",
+        "back": "La pomme",
+        "difficulty": "easy",
+        "example": "Je mange une pomme chaque matin.",
+        "exampleTranslation": "Jem jabłko każdego ranka."
+      },
+      {
+        "id": "pf_fruit_2",
+        "front": "Pomarańcza",
+        "back": "L'orange",
+        "difficulty": "easy",
+        "example": "J'adore le jus d'orange frais.",
+        "exampleTranslation": "Uwielbiam świeży sok pomarańczowy."
+      },
+      {
+        "id": "pf_fruit_3",
+        "front": "Banan",
+        "back": "La banane",
+        "difficulty": "easy",
+        "example": "La banane est un fruit tropical.",
+        "exampleTranslation": "Banan jest owocem tropikalnym."
+      },
+      {
+        "id": "pf_fruit_4",
+        "front": "Truskawka",
+        "back": "La fraise",
+        "difficulty": "easy",
+        "example": "Les fraises sont délicieuses avec de la crème.",
+        "exampleTranslation": "Truskawki są pyszne ze śmietaną."
+      },
+      {
+        "id": "pf_fruit_5",
+        "front": "Winogrono",
+        "back": "Le raisin",
+        "difficulty": "easy",
+        "example": "Le raisin sert à fabriquer le vin.",
+        "exampleTranslation": "Winogrono służy do produkcji wina."
+      },
+      {
+        "id": "pf_fruit_6",
+        "front": "Cytryna",
+        "back": "Le citron",
+        "difficulty": "easy",
+        "example": "Le citron est très acide.",
+        "exampleTranslation": "Cytryna jest bardzo kwaśna."
+      },
+      {
+        "id": "pf_fruit_7",
+        "front": "Arbuz",
+        "back": "La pastèque",
+        "difficulty": "medium",
+        "example": "La pastèque est rafraîchissante en été.",
+        "exampleTranslation": "Arbuz jest orzeźwiający latem."
+      },
+      {
+        "id": "pf_fruit_8",
+        "front": "Brzoskwinia",
+        "back": "La pêche",
+        "difficulty": "medium",
+        "example": "La pêche a une peau douce et veloutée.",
+        "exampleTranslation": "Brzoskwinia ma gładką i aksamitną skórkę."
+      },
+      {
+        "id": "pf_fruit_9",
+        "front": "Wiśnia",
+        "back": "La cerise",
+        "difficulty": "medium",
+        "example": "Les cerises sont rouges et sucrées.",
+        "exampleTranslation": "Wiśnie są czerwone i słodkie."
+      },
+      {
+        "id": "pf_fruit_10",
+        "front": "Ananas",
+        "back": "L'ananas",
+        "difficulty": "medium",
+        "example": "L'ananas pousse dans les pays chauds.",
+        "exampleTranslation": "Ananas rośnie w ciepłych krajach."
+      },
+      {
+        "id": "pf_fruit_11",
+        "front": "Gruszka",
+        "back": "La poire",
+        "difficulty": "medium",
+        "example": "La poire est juteuse et sucrée.",
+        "exampleTranslation": "Gruszka jest soczysta i słodka."
+      },
+      {
+        "id": "pf_fruit_12",
+        "front": "Mango",
+        "back": "La mangue",
+        "difficulty": "medium",
+        "example": "La mangue est un fruit exotique populaire.",
+        "exampleTranslation": "Mango jest popularnym owocem egzotycznym."
+      },
+      {
+        "id": "pf_fruit_13",
+        "front": "Malina",
+        "back": "La framboise",
+        "difficulty": "hard",
+        "example": "Les framboises sont parfaites pour les tartes.",
+        "exampleTranslation": "Maliny są idealne do tart."
+      },
+      {
+        "id": "pf_fruit_14",
+        "front": "Śliwka",
+        "back": "La prune",
+        "difficulty": "hard",
+        "example": "Les prunes mûrissent en automne.",
+        "exampleTranslation": "Śliwki dojrzewają jesienią."
+      },
+      {
+        "id": "pf_fruit_15",
+        "front": "Grejpfrut",
+        "back": "Le pamplemousse",
+        "difficulty": "hard",
+        "example": "Le pamplemousse a un goût amer.",
+        "exampleTranslation": "Grejpfrut ma gorzki smak."
+      }
+    ]
+  },
+  {
+    "key": "vegetables",
+    "name": "Warzywa",
+    "description": "Nazwy warzyw po francusku",
+    "iconName": "carrot.fill",
+    "color": "#51CF66",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pf_veg_1",
+        "front": "Marchewka",
+        "back": "La carotte",
+        "difficulty": "easy",
+        "example": "Les carottes sont bonnes pour la vue.",
+        "exampleTranslation": "Marchewki są dobre dla wzroku."
+      },
+      {
+        "id": "pf_veg_2",
+        "front": "Pomidor",
+        "back": "La tomate",
+        "difficulty": "easy",
+        "example": "La tomate est rouge et juteuse.",
+        "exampleTranslation": "Pomidor jest czerwony i soczysty."
+      },
+      {
+        "id": "pf_veg_3",
+        "front": "Ziemniak",
+        "back": "La pomme de terre",
+        "difficulty": "easy",
+        "example": "Les pommes de terre sont un aliment de base.",
+        "exampleTranslation": "Ziemniaki są podstawowym pokarmem."
+      },
+      {
+        "id": "pf_veg_4",
+        "front": "Cebula",
+        "back": "L'oignon",
+        "difficulty": "easy",
+        "example": "L'oignon fait pleurer quand on le coupe.",
+        "exampleTranslation": "Cebula wywołuje łzy, gdy się ją kroi."
+      },
+      {
+        "id": "pf_veg_5",
+        "front": "Czosnek",
+        "back": "L'ail",
+        "difficulty": "easy",
+        "example": "L'ail donne beaucoup de goût aux plats.",
+        "exampleTranslation": "Czosnek nadaje dużo smaku potrawom."
+      },
+      {
+        "id": "pf_veg_6",
+        "front": "Ogórek",
+        "back": "Le concombre",
+        "difficulty": "easy",
+        "example": "Le concombre est idéal pour les salades.",
+        "exampleTranslation": "Ogórek jest idealny do sałatek."
+      },
+      {
+        "id": "pf_veg_7",
+        "front": "Papryka",
+        "back": "Le poivron",
+        "difficulty": "medium",
+        "example": "Le poivron peut être rouge, vert ou jaune.",
+        "exampleTranslation": "Papryka może być czerwona, zielona lub żółta."
+      },
+      {
+        "id": "pf_veg_8",
+        "front": "Sałata",
+        "back": "La laitue",
+        "difficulty": "medium",
+        "example": "La laitue est la base d'une bonne salade.",
+        "exampleTranslation": "Sałata jest podstawą dobrej sałatki."
+      },
+      {
+        "id": "pf_veg_9",
+        "front": "Szpinak",
+        "back": "Les épinards",
+        "difficulty": "medium",
+        "example": "Les épinards sont riches en fer.",
+        "exampleTranslation": "Szpinak jest bogaty w żelazo."
+      },
+      {
+        "id": "pf_veg_10",
+        "front": "Groszek",
+        "back": "Les petits pois",
+        "difficulty": "medium",
+        "example": "Les petits pois accompagnent bien le poulet.",
+        "exampleTranslation": "Groszek dobrze pasuje do kurczaka."
+      },
+      {
+        "id": "pf_veg_11",
+        "front": "Fasola",
+        "back": "Le haricot",
+        "difficulty": "medium",
+        "example": "Les haricots verts sont un légume classique.",
+        "exampleTranslation": "Fasolka szparagowa to klasyczne warzywo."
+      },
+      {
+        "id": "pf_veg_12",
+        "front": "Kapusta",
+        "back": "Le chou",
+        "difficulty": "medium",
+        "example": "Le chou est utilisé dans la choucroute.",
+        "exampleTranslation": "Kapusta jest używana w kiszonej kapuście."
+      },
+      {
+        "id": "pf_veg_13",
+        "front": "Bakłażan",
+        "back": "L'aubergine",
+        "difficulty": "hard",
+        "example": "L'aubergine est essentielle dans la ratatouille.",
+        "exampleTranslation": "Bakłażan jest niezbędny w ratatouille."
+      },
+      {
+        "id": "pf_veg_14",
+        "front": "Cukinia",
+        "back": "La courgette",
+        "difficulty": "hard",
+        "example": "La courgette se cuisine de multiples façons.",
+        "exampleTranslation": "Cukinię można przyrządzać na wiele sposobów."
+      },
+      {
+        "id": "pf_veg_15",
+        "front": "Kalafior",
+        "back": "Le chou-fleur",
+        "difficulty": "hard",
+        "example": "Le chou-fleur gratiné est un plat délicieux.",
+        "exampleTranslation": "Kalafior zapiekany to pyszne danie."
+      }
+    ]
+  },
+  {
+    "key": "animals",
+    "name": "Zwierzęta",
+    "description": "Nazwy zwierząt po francusku",
+    "iconName": "pawprint.fill",
+    "color": "#FF922B",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pf_anim_1",
+        "front": "Pies",
+        "back": "Le chien",
+        "difficulty": "easy",
+        "example": "Le chien est le meilleur ami de l'homme.",
+        "exampleTranslation": "Pies jest najlepszym przyjacielem człowieka."
+      },
+      {
+        "id": "pf_anim_2",
+        "front": "Kot",
+        "back": "Le chat",
+        "difficulty": "easy",
+        "example": "Le chat dort sur le canapé.",
+        "exampleTranslation": "Kot śpi na kanapie."
+      },
+      {
+        "id": "pf_anim_3",
+        "front": "Ptak",
+        "back": "L'oiseau",
+        "difficulty": "easy",
+        "example": "L'oiseau chante dans l'arbre.",
+        "exampleTranslation": "Ptak śpiewa na drzewie."
+      },
+      {
+        "id": "pf_anim_4",
+        "front": "Ryba",
+        "back": "Le poisson",
+        "difficulty": "easy",
+        "example": "Le poisson nage dans l'aquarium.",
+        "exampleTranslation": "Ryba pływa w akwarium."
+      },
+      {
+        "id": "pf_anim_5",
+        "front": "Koń",
+        "back": "Le cheval",
+        "difficulty": "easy",
+        "example": "Le cheval galope dans le pré.",
+        "exampleTranslation": "Koń galopuje na łące."
+      },
+      {
+        "id": "pf_anim_6",
+        "front": "Krowa",
+        "back": "La vache",
+        "difficulty": "easy",
+        "example": "La vache donne du lait.",
+        "exampleTranslation": "Krowa daje mleko."
+      },
+      {
+        "id": "pf_anim_7",
+        "front": "Królik",
+        "back": "Le lapin",
+        "difficulty": "medium",
+        "example": "Le lapin mange des carottes dans le jardin.",
+        "exampleTranslation": "Królik je marchewki w ogrodzie."
+      },
+      {
+        "id": "pf_anim_8",
+        "front": "Żółw",
+        "back": "La tortue",
+        "difficulty": "medium",
+        "example": "La tortue avance très lentement.",
+        "exampleTranslation": "Żółw porusza się bardzo wolno."
+      },
+      {
+        "id": "pf_anim_9",
+        "front": "Wilk",
+        "back": "Le loup",
+        "difficulty": "medium",
+        "example": "Le loup hurle à la lune.",
+        "exampleTranslation": "Wilk wyje do księżyca."
+      },
+      {
+        "id": "pf_anim_10",
+        "front": "Niedźwiedź",
+        "back": "L'ours",
+        "difficulty": "medium",
+        "example": "L'ours hiberne pendant l'hiver.",
+        "exampleTranslation": "Niedźwiedź zapada w sen zimowy."
+      },
+      {
+        "id": "pf_anim_11",
+        "front": "Motyl",
+        "back": "Le papillon",
+        "difficulty": "medium",
+        "example": "Le papillon vole de fleur en fleur.",
+        "exampleTranslation": "Motyl lata od kwiatka do kwiatka."
+      },
+      {
+        "id": "pf_anim_12",
+        "front": "Wąż",
+        "back": "Le serpent",
+        "difficulty": "medium",
+        "example": "Le serpent se déplace en rampant.",
+        "exampleTranslation": "Wąż porusza się pełzając."
+      },
+      {
+        "id": "pf_anim_13",
+        "front": "Orzeł",
+        "back": "L'aigle",
+        "difficulty": "hard",
+        "example": "L'aigle vole très haut dans le ciel.",
+        "exampleTranslation": "Orzeł lata bardzo wysoko na niebie."
+      },
+      {
+        "id": "pf_anim_14",
+        "front": "Delfin",
+        "back": "Le dauphin",
+        "difficulty": "hard",
+        "example": "Le dauphin est un animal très intelligent.",
+        "exampleTranslation": "Delfin jest bardzo inteligentnym zwierzęciem."
+      },
+      {
+        "id": "pf_anim_15",
+        "front": "Wiewiórka",
+        "back": "L'écureuil",
+        "difficulty": "hard",
+        "example": "L'écureuil ramasse des noisettes pour l'hiver.",
+        "exampleTranslation": "Wiewiórka zbiera orzeszki na zimę."
+      }
+    ]
+  },
+  {
+    "key": "drinks",
+    "name": "Napoje",
+    "description": "Nazwy napojów po francusku",
+    "iconName": "cup.and.saucer.fill",
+    "color": "#339AF0",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pf_drink_1",
+        "front": "Woda",
+        "back": "L'eau",
+        "difficulty": "easy",
+        "example": "Je bois de l'eau tous les jours.",
+        "exampleTranslation": "Piję wodę codziennie."
+      },
+      {
+        "id": "pf_drink_2",
+        "front": "Kawa",
+        "back": "Le café",
+        "difficulty": "easy",
+        "example": "Le café noir me réveille le matin.",
+        "exampleTranslation": "Czarna kawa budzi mnie rano."
+      },
+      {
+        "id": "pf_drink_3",
+        "front": "Herbata",
+        "back": "Le thé",
+        "difficulty": "easy",
+        "example": "Le thé vert est bon pour la santé.",
+        "exampleTranslation": "Zielona herbata jest dobra dla zdrowia."
+      },
+      {
+        "id": "pf_drink_4",
+        "front": "Mleko",
+        "back": "Le lait",
+        "difficulty": "easy",
+        "example": "Les enfants boivent du lait au petit-déjeuner.",
+        "exampleTranslation": "Dzieci piją mleko na śniadanie."
+      },
+      {
+        "id": "pf_drink_5",
+        "front": "Sok",
+        "back": "Le jus",
+        "difficulty": "easy",
+        "example": "Le jus de pomme est très populaire.",
+        "exampleTranslation": "Sok jabłkowy jest bardzo popularny."
+      },
+      {
+        "id": "pf_drink_6",
+        "front": "Piwo",
+        "back": "La bière",
+        "difficulty": "easy",
+        "example": "La bière est une boisson rafraîchissante.",
+        "exampleTranslation": "Piwo jest orzeźwiającym napojem."
+      },
+      {
+        "id": "pf_drink_7",
+        "front": "Wino",
+        "back": "Le vin",
+        "difficulty": "medium",
+        "example": "Le vin rouge accompagne bien la viande.",
+        "exampleTranslation": "Czerwone wino dobrze pasuje do mięsa."
+      },
+      {
+        "id": "pf_drink_8",
+        "front": "Lemoniada",
+        "back": "La limonade",
+        "difficulty": "medium",
+        "example": "La limonade est parfaite quand il fait chaud.",
+        "exampleTranslation": "Lemoniada jest idealna, gdy jest gorąco."
+      },
+      {
+        "id": "pf_drink_9",
+        "front": "Gorąca czekolada",
+        "back": "Le chocolat chaud",
+        "difficulty": "medium",
+        "example": "Le chocolat chaud réchauffe en hiver.",
+        "exampleTranslation": "Gorąca czekolada rozgrzewa zimą."
+      },
+      {
+        "id": "pf_drink_10",
+        "front": "Koktajl",
+        "back": "Le cocktail",
+        "difficulty": "medium",
+        "example": "Le barman prépare un délicieux cocktail.",
+        "exampleTranslation": "Barman przygotowuje pyszny koktajl."
+      },
+      {
+        "id": "pf_drink_11",
+        "front": "Napój gazowany",
+        "back": "La boisson gazeuse",
+        "difficulty": "medium",
+        "example": "Les boissons gazeuses contiennent beaucoup de sucre.",
+        "exampleTranslation": "Napoje gazowane zawierają dużo cukru."
+      },
+      {
+        "id": "pf_drink_12",
+        "front": "Woda mineralna",
+        "back": "L'eau minérale",
+        "difficulty": "medium",
+        "example": "Je préfère l'eau minérale plate.",
+        "exampleTranslation": "Wolę niegazowaną wodę mineralną."
+      },
+      {
+        "id": "pf_drink_13",
+        "front": "Espresso",
+        "back": "L'espresso",
+        "difficulty": "hard",
+        "example": "L'espresso est un café très concentré.",
+        "exampleTranslation": "Espresso to bardzo mocna kawa."
+      },
+      {
+        "id": "pf_drink_14",
+        "front": "Szampan",
+        "back": "Le champagne",
+        "difficulty": "hard",
+        "example": "Le champagne est servi lors des célébrations.",
+        "exampleTranslation": "Szampan jest podawany podczas uroczystości."
+      },
+      {
+        "id": "pf_drink_15",
+        "front": "Napar ziołowy",
+        "back": "La tisane",
+        "difficulty": "hard",
+        "example": "La tisane de camomille aide à dormir.",
+        "exampleTranslation": "Napar z rumianku pomaga zasnąć."
+      }
+    ]
+  },
+  {
+    "key": "seasons",
+    "name": "Pory roku",
+    "description": "Pory roku i związane z nimi słownictwo",
+    "iconName": "sun.and.horizon.fill",
+    "color": "#FCC419",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pf_seas_1",
+        "front": "Wiosna",
+        "back": "Le printemps",
+        "difficulty": "easy",
+        "example": "Le printemps commence en mars.",
+        "exampleTranslation": "Wiosna zaczyna się w marcu."
+      },
+      {
+        "id": "pf_seas_2",
+        "front": "Lato",
+        "back": "L'été",
+        "difficulty": "easy",
+        "example": "L'été est la saison la plus chaude.",
+        "exampleTranslation": "Lato jest najcieplejszą porą roku."
+      },
+      {
+        "id": "pf_seas_3",
+        "front": "Jesień",
+        "back": "L'automne",
+        "difficulty": "easy",
+        "example": "Les feuilles tombent en automne.",
+        "exampleTranslation": "Liście opadają jesienią."
+      },
+      {
+        "id": "pf_seas_4",
+        "front": "Zima",
+        "back": "L'hiver",
+        "difficulty": "easy",
+        "example": "L'hiver est froid et enneigé.",
+        "exampleTranslation": "Zima jest mroźna i śnieżna."
+      },
+      {
+        "id": "pf_seas_5",
+        "front": "Pora roku",
+        "back": "La saison",
+        "difficulty": "easy",
+        "example": "Quelle est ta saison préférée?",
+        "exampleTranslation": "Jaka jest twoja ulubiona pora roku?"
+      },
+      {
+        "id": "pf_seas_6",
+        "front": "Kwitnąć",
+        "back": "Fleurir",
+        "difficulty": "easy",
+        "example": "Les fleurs commencent à fleurir au printemps.",
+        "exampleTranslation": "Kwiaty zaczynają kwitnąć wiosną."
+      },
+      {
+        "id": "pf_seas_7",
+        "front": "Opalać się",
+        "back": "Bronzer",
+        "difficulty": "medium",
+        "example": "On peut bronzer à la plage en été.",
+        "exampleTranslation": "Można opalać się na plaży latem."
+      },
+      {
+        "id": "pf_seas_8",
+        "front": "Zbiory",
+        "back": "La récolte",
+        "difficulty": "medium",
+        "example": "La récolte des pommes se fait en automne.",
+        "exampleTranslation": "Zbiory jabłek odbywają się jesienią."
+      },
+      {
+        "id": "pf_seas_9",
+        "front": "Mróz",
+        "back": "Le gel",
+        "difficulty": "medium",
+        "example": "Le gel recouvre les vitres le matin.",
+        "exampleTranslation": "Mróz pokrywa szyby rano."
+      },
+      {
+        "id": "pf_seas_10",
+        "front": "Roztopy",
+        "back": "Le dégel",
+        "difficulty": "medium",
+        "example": "Le dégel annonce la fin de l'hiver.",
+        "exampleTranslation": "Roztopy zwiastują koniec zimy."
+      },
+      {
+        "id": "pf_seas_11",
+        "front": "Przesilenie letnie",
+        "back": "Le solstice d'été",
+        "difficulty": "medium",
+        "example": "Le solstice d'été est le jour le plus long.",
+        "exampleTranslation": "Przesilenie letnie to najdłuższy dzień."
+      },
+      {
+        "id": "pf_seas_12",
+        "front": "Równonoc",
+        "back": "L'équinoxe",
+        "difficulty": "medium",
+        "example": "L'équinoxe marque le début du printemps.",
+        "exampleTranslation": "Równonoc wyznacza początek wiosny."
+      },
+      {
+        "id": "pf_seas_13",
+        "front": "Klimat umiarkowany",
+        "back": "Le climat tempéré",
+        "difficulty": "hard",
+        "example": "La France a un climat tempéré.",
+        "exampleTranslation": "Francja ma klimat umiarkowany."
+      },
+      {
+        "id": "pf_seas_14",
+        "front": "Opady",
+        "back": "Les précipitations",
+        "difficulty": "hard",
+        "example": "Les précipitations sont abondantes en automne.",
+        "exampleTranslation": "Opady są obfite jesienią."
+      },
+      {
+        "id": "pf_seas_15",
+        "front": "Odwilż",
+        "back": "Le redoux",
+        "difficulty": "hard",
+        "example": "Le redoux fait fondre la neige en février.",
+        "exampleTranslation": "Odwilż topi śnieg w lutym."
+      }
+    ]
   }
 ]

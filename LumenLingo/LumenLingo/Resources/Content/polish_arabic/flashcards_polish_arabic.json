@@ -2728,5 +2728,1305 @@
         "exampleTranslation": "Komedia mnie rozśmiesza."
       }
     ]
+  },
+  {
+    "key": "fruits",
+    "name": "Owoce",
+    "description": "Nazwy popularnych owoców",
+    "iconName": "leaf.fill",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_fruit_1",
+        "front": "Jabłko",
+        "back": "تفاحة",
+        "difficulty": "easy",
+        "example": "أريد تفاحة حمراء من فضلك.",
+        "exampleTranslation": "Chcę czerwone jabłko, proszę."
+      },
+      {
+        "id": "pa_fruit_2",
+        "front": "Banan",
+        "back": "موزة",
+        "difficulty": "easy",
+        "example": "الموزة ناضجة وحلوة.",
+        "exampleTranslation": "Banan jest dojrzały i słodki."
+      },
+      {
+        "id": "pa_fruit_3",
+        "front": "Pomarańcza",
+        "back": "برتقالة",
+        "difficulty": "easy",
+        "example": "أحب عصير البرتقال في الصباح.",
+        "exampleTranslation": "Lubię sok pomarańczowy rano."
+      },
+      {
+        "id": "pa_fruit_4",
+        "front": "Truskawka",
+        "back": "فراولة",
+        "difficulty": "easy",
+        "example": "الفراولة فاكهة الربيع المفضلة.",
+        "exampleTranslation": "Truskawka to ulubiony owoc wiosenny."
+      },
+      {
+        "id": "pa_fruit_5",
+        "front": "Winogrono",
+        "back": "عنب",
+        "difficulty": "easy",
+        "example": "اشتريت عنباً أخضر من السوق.",
+        "exampleTranslation": "Kupiłem zielone winogrona na rynku."
+      },
+      {
+        "id": "pa_fruit_6",
+        "front": "Arbuz",
+        "back": "بطيخ",
+        "difficulty": "easy",
+        "example": "البطيخ منعش جداً في الصيف.",
+        "exampleTranslation": "Arbuz jest bardzo orzeźwiający latem."
+      },
+      {
+        "id": "pa_fruit_7",
+        "front": "Cytryna",
+        "back": "ليمون",
+        "difficulty": "medium",
+        "example": "أضفت الليمون إلى الشاي.",
+        "exampleTranslation": "Dodałem cytrynę do herbaty."
+      },
+      {
+        "id": "pa_fruit_8",
+        "front": "Brzoskwinia",
+        "back": "خوخ",
+        "difficulty": "medium",
+        "example": "الخوخ حلو ولذيذ.",
+        "exampleTranslation": "Brzoskwinia jest słodka i pyszna."
+      },
+      {
+        "id": "pa_fruit_9",
+        "front": "Gruszka",
+        "back": "كمثرى",
+        "difficulty": "medium",
+        "example": "أكلت كمثرى بعد الغداء.",
+        "exampleTranslation": "Zjadłem gruszkę po obiedzie."
+      },
+      {
+        "id": "pa_fruit_10",
+        "front": "Ananas",
+        "back": "أناناس",
+        "difficulty": "medium",
+        "example": "الأناناس فاكهة استوائية لذيذة.",
+        "exampleTranslation": "Ananas to pyszny owoc tropikalny."
+      },
+      {
+        "id": "pa_fruit_11",
+        "front": "Wiśnia",
+        "back": "كرز",
+        "difficulty": "medium",
+        "example": "جمعنا الكرز من الحديقة.",
+        "exampleTranslation": "Zebraliśmy wiśnie z ogrodu."
+      },
+      {
+        "id": "pa_fruit_12",
+        "front": "Malina",
+        "back": "توت العليق",
+        "difficulty": "medium",
+        "example": "مربى توت العليق لذيذ جداً.",
+        "exampleTranslation": "Dżem malinowy jest bardzo smaczny."
+      },
+      {
+        "id": "pa_fruit_13",
+        "front": "Mango",
+        "back": "مانجو",
+        "difficulty": "hard",
+        "example": "المانجو فاكهة استوائية غنية بالفيتامينات.",
+        "exampleTranslation": "Mango to owoc tropikalny bogaty w witaminy."
+      },
+      {
+        "id": "pa_fruit_14",
+        "front": "Granat",
+        "back": "رمان",
+        "difficulty": "hard",
+        "example": "عصير الرمان مفيد للصحة.",
+        "exampleTranslation": "Sok z granatu jest zdrowy."
+      },
+      {
+        "id": "pa_fruit_15",
+        "front": "Śliwka",
+        "back": "برقوق",
+        "difficulty": "hard",
+        "example": "نصنع مربى البرقوق كل خريف.",
+        "exampleTranslation": "Robimy dżem śliwkowy każdej jesieni."
+      }
+    ]
+  },
+  {
+    "key": "vegetables",
+    "name": "Warzywa",
+    "description": "Nazwy popularnych warzyw",
+    "iconName": "carrot.fill",
+    "color": "#22c55e",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_veg_1",
+        "front": "Pomidor",
+        "back": "طماطم",
+        "difficulty": "easy",
+        "example": "الطماطم ضرورية في السلطة.",
+        "exampleTranslation": "Pomidor jest niezbędny w sałatce."
+      },
+      {
+        "id": "pa_veg_2",
+        "front": "Ogórek",
+        "back": "خيار",
+        "difficulty": "easy",
+        "example": "أحب الخيار الطازج.",
+        "exampleTranslation": "Lubię świeżego ogórka."
+      },
+      {
+        "id": "pa_veg_3",
+        "front": "Marchew",
+        "back": "جزر",
+        "difficulty": "easy",
+        "example": "الجزر مفيد للنظر.",
+        "exampleTranslation": "Marchew jest dobra dla wzroku."
+      },
+      {
+        "id": "pa_veg_4",
+        "front": "Ziemniak",
+        "back": "بطاطس",
+        "difficulty": "easy",
+        "example": "طبخت البطاطس مع اللحم.",
+        "exampleTranslation": "Ugotowałem ziemniaki z mięsem."
+      },
+      {
+        "id": "pa_veg_5",
+        "front": "Cebula",
+        "back": "بصل",
+        "difficulty": "easy",
+        "example": "أضفت البصل إلى الحساء.",
+        "exampleTranslation": "Dodałem cebulę do zupy."
+      },
+      {
+        "id": "pa_veg_6",
+        "front": "Czosnek",
+        "back": "ثوم",
+        "difficulty": "easy",
+        "example": "الثوم يضيف نكهة للطعام.",
+        "exampleTranslation": "Czosnek dodaje smaku potrawom."
+      },
+      {
+        "id": "pa_veg_7",
+        "front": "Papryka",
+        "back": "فلفل",
+        "difficulty": "medium",
+        "example": "الفلفل الأحمر حلو المذاق.",
+        "exampleTranslation": "Czerwona papryka jest słodka w smaku."
+      },
+      {
+        "id": "pa_veg_8",
+        "front": "Sałata",
+        "back": "خس",
+        "difficulty": "medium",
+        "example": "الخس أساس كل سلطة.",
+        "exampleTranslation": "Sałata jest podstawą każdej sałatki."
+      },
+      {
+        "id": "pa_veg_9",
+        "front": "Kapusta",
+        "back": "ملفوف",
+        "difficulty": "medium",
+        "example": "نصنع سلطة الملفوف في الشتاء.",
+        "exampleTranslation": "Robimy sałatkę z kapusty zimą."
+      },
+      {
+        "id": "pa_veg_10",
+        "front": "Szpinak",
+        "back": "سبانخ",
+        "difficulty": "medium",
+        "example": "السبانخ غنية بالحديد.",
+        "exampleTranslation": "Szpinak jest bogaty w żelazo."
+      },
+      {
+        "id": "pa_veg_11",
+        "front": "Brokuł",
+        "back": "بروكلي",
+        "difficulty": "medium",
+        "example": "البروكلي من أصح الخضروات.",
+        "exampleTranslation": "Brokuł to jedno z najzdrowszych warzyw."
+      },
+      {
+        "id": "pa_veg_12",
+        "front": "Dynia",
+        "back": "يقطين",
+        "difficulty": "medium",
+        "example": "نطبخ حساء اليقطين في الخريف.",
+        "exampleTranslation": "Gotujemy zupę dyniową jesienią."
+      },
+      {
+        "id": "pa_veg_13",
+        "front": "Bakłażan",
+        "back": "باذنجان",
+        "difficulty": "hard",
+        "example": "الباذنجان المشوي لذيذ جداً.",
+        "exampleTranslation": "Grillowany bakłażan jest bardzo smaczny."
+      },
+      {
+        "id": "pa_veg_14",
+        "front": "Cukinia",
+        "back": "كوسا",
+        "difficulty": "hard",
+        "example": "أحب الكوسا المحشية.",
+        "exampleTranslation": "Lubię faszerowaną cukinię."
+      },
+      {
+        "id": "pa_veg_15",
+        "front": "Burak",
+        "back": "شمندر",
+        "difficulty": "hard",
+        "example": "الشمندر يستخدم في صنع البرشت.",
+        "exampleTranslation": "Burak jest używany do robienia barszczu."
+      }
+    ]
+  },
+  {
+    "key": "animals",
+    "name": "Zwierzęta",
+    "description": "Nazwy zwierząt domowych i dzikich",
+    "iconName": "pawprint.fill",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_anim_1",
+        "front": "Kot",
+        "back": "قطة",
+        "difficulty": "easy",
+        "example": "القطة تنام على الأريكة.",
+        "exampleTranslation": "Kot śpi na kanapie."
+      },
+      {
+        "id": "pa_anim_2",
+        "front": "Pies",
+        "back": "كلب",
+        "difficulty": "easy",
+        "example": "الكلب صديق الإنسان الوفي.",
+        "exampleTranslation": "Pies to wierny przyjaciel człowieka."
+      },
+      {
+        "id": "pa_anim_3",
+        "front": "Ptak",
+        "back": "طائر",
+        "difficulty": "easy",
+        "example": "الطائر يغني على الشجرة.",
+        "exampleTranslation": "Ptak śpiewa na drzewie."
+      },
+      {
+        "id": "pa_anim_4",
+        "front": "Ryba",
+        "back": "سمكة",
+        "difficulty": "easy",
+        "example": "السمكة تسبح في البحر.",
+        "exampleTranslation": "Ryba pływa w morzu."
+      },
+      {
+        "id": "pa_anim_5",
+        "front": "Koń",
+        "back": "حصان",
+        "difficulty": "easy",
+        "example": "الحصان حيوان قوي وجميل.",
+        "exampleTranslation": "Koń to silne i piękne zwierzę."
+      },
+      {
+        "id": "pa_anim_6",
+        "front": "Krowa",
+        "back": "بقرة",
+        "difficulty": "easy",
+        "example": "البقرة تعطينا الحليب.",
+        "exampleTranslation": "Krowa daje nam mleko."
+      },
+      {
+        "id": "pa_anim_7",
+        "front": "Owca",
+        "back": "خروف",
+        "difficulty": "medium",
+        "example": "الخروف يعطينا الصوف.",
+        "exampleTranslation": "Owca daje nam wełnę."
+      },
+      {
+        "id": "pa_anim_8",
+        "front": "Królik",
+        "back": "أرنب",
+        "difficulty": "medium",
+        "example": "الأرنب يجري بسرعة.",
+        "exampleTranslation": "Królik biega szybko."
+      },
+      {
+        "id": "pa_anim_9",
+        "front": "Lew",
+        "back": "أسد",
+        "difficulty": "medium",
+        "example": "الأسد ملك الغابة.",
+        "exampleTranslation": "Lew jest królem dżungli."
+      },
+      {
+        "id": "pa_anim_10",
+        "front": "Słoń",
+        "back": "فيل",
+        "difficulty": "medium",
+        "example": "الفيل أكبر حيوان بري.",
+        "exampleTranslation": "Słoń jest największym zwierzęciem lądowym."
+      },
+      {
+        "id": "pa_anim_11",
+        "front": "Żyrafa",
+        "back": "زرافة",
+        "difficulty": "medium",
+        "example": "الزرافة لها رقبة طويلة.",
+        "exampleTranslation": "Żyrafa ma długą szyję."
+      },
+      {
+        "id": "pa_anim_12",
+        "front": "Niedźwiedź",
+        "back": "دب",
+        "difficulty": "medium",
+        "example": "الدب ينام في الشتاء.",
+        "exampleTranslation": "Niedźwiedź śpi zimą."
+      },
+      {
+        "id": "pa_anim_13",
+        "front": "Wilk",
+        "back": "ذئب",
+        "difficulty": "hard",
+        "example": "الذئب يعيش في الغابات.",
+        "exampleTranslation": "Wilk żyje w lasach."
+      },
+      {
+        "id": "pa_anim_14",
+        "front": "Orzeł",
+        "back": "نسر",
+        "difficulty": "hard",
+        "example": "النسر يحلق عالياً في السماء.",
+        "exampleTranslation": "Orzeł lata wysoko na niebie."
+      },
+      {
+        "id": "pa_anim_15",
+        "front": "Delfin",
+        "back": "دلفين",
+        "difficulty": "hard",
+        "example": "الدلفين حيوان ذكي جداً.",
+        "exampleTranslation": "Delfin to bardzo inteligentne zwierzę."
+      }
+    ]
+  },
+  {
+    "key": "drinks",
+    "name": "Napoje",
+    "description": "Rodzaje napojów i płynów",
+    "iconName": "cup.and.saucer.fill",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_drink_1",
+        "front": "Woda",
+        "back": "ماء",
+        "difficulty": "easy",
+        "example": "أشرب الماء كل يوم.",
+        "exampleTranslation": "Piję wodę każdego dnia."
+      },
+      {
+        "id": "pa_drink_2",
+        "front": "Herbata",
+        "back": "شاي",
+        "difficulty": "easy",
+        "example": "أحب الشاي بالنعناع.",
+        "exampleTranslation": "Lubię herbatę z miętą."
+      },
+      {
+        "id": "pa_drink_3",
+        "front": "Kawa",
+        "back": "قهوة",
+        "difficulty": "easy",
+        "example": "أشرب القهوة كل صباح.",
+        "exampleTranslation": "Piję kawę każdego ranka."
+      },
+      {
+        "id": "pa_drink_4",
+        "front": "Sok",
+        "back": "عصير",
+        "difficulty": "easy",
+        "example": "عصير البرتقال غني بالفيتامينات.",
+        "exampleTranslation": "Sok pomarańczowy jest bogaty w witaminy."
+      },
+      {
+        "id": "pa_drink_5",
+        "front": "Mleko",
+        "back": "حليب",
+        "difficulty": "easy",
+        "example": "الحليب مفيد للعظام.",
+        "exampleTranslation": "Mleko jest dobre dla kości."
+      },
+      {
+        "id": "pa_drink_6",
+        "front": "Woda gazowana",
+        "back": "مياه غازية",
+        "difficulty": "easy",
+        "example": "أفضل المياه الغازية الباردة.",
+        "exampleTranslation": "Wolę zimną wodę gazowaną."
+      },
+      {
+        "id": "pa_drink_7",
+        "front": "Koktajl",
+        "back": "عصير مخلوط",
+        "difficulty": "medium",
+        "example": "صنعت عصيراً مخلوطاً من الفواكه.",
+        "exampleTranslation": "Zrobiłem koktajl z owoców."
+      },
+      {
+        "id": "pa_drink_8",
+        "front": "Kakao",
+        "back": "كاكاو",
+        "difficulty": "medium",
+        "example": "أشرب الكاكاو الساخن في الشتاء.",
+        "exampleTranslation": "Piję gorące kakao zimą."
+      },
+      {
+        "id": "pa_drink_9",
+        "front": "Herbata ziołowa",
+        "back": "شاي أعشاب",
+        "difficulty": "medium",
+        "example": "شاي الأعشاب يساعد على الاسترخاء.",
+        "exampleTranslation": "Herbata ziołowa pomaga się zrelaksować."
+      },
+      {
+        "id": "pa_drink_10",
+        "front": "Lemoniada",
+        "back": "عصير الليمون",
+        "difficulty": "medium",
+        "example": "عصير الليمون منعش في الصيف.",
+        "exampleTranslation": "Lemoniada jest orzeźwiająca latem."
+      },
+      {
+        "id": "pa_drink_11",
+        "front": "Woda mineralna",
+        "back": "مياه معدنية",
+        "difficulty": "medium",
+        "example": "أشتري المياه المعدنية من المتجر.",
+        "exampleTranslation": "Kupuję wodę mineralną ze sklepu."
+      },
+      {
+        "id": "pa_drink_12",
+        "front": "Kompot",
+        "back": "كمبوت",
+        "difficulty": "medium",
+        "example": "أمي تصنع الكمبوت من الفواكه.",
+        "exampleTranslation": "Mama robi kompot z owoców."
+      },
+      {
+        "id": "pa_drink_13",
+        "front": "Kefir",
+        "back": "كفير",
+        "difficulty": "hard",
+        "example": "الكفير مشروب صحي ومفيد للهضم.",
+        "exampleTranslation": "Kefir to zdrowy napój dobry dla trawienia."
+      },
+      {
+        "id": "pa_drink_14",
+        "front": "Napój energetyczny",
+        "back": "مشروب طاقة",
+        "difficulty": "hard",
+        "example": "مشروب الطاقة يعطيك النشاط.",
+        "exampleTranslation": "Napój energetyczny dodaje energii."
+      },
+      {
+        "id": "pa_drink_15",
+        "front": "Herbata z miodem",
+        "back": "شاي بالعسل",
+        "difficulty": "hard",
+        "example": "الشاي بالعسل يساعد عند الزكام.",
+        "exampleTranslation": "Herbata z miodem pomaga przy przeziębieniu."
+      }
+    ]
+  },
+  {
+    "key": "seasons",
+    "name": "Pory roku",
+    "description": "Pory roku i związane z nimi słownictwo",
+    "iconName": "cloud.sun.fill",
+    "color": "#eab308",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_seas_1",
+        "front": "Wiosna",
+        "back": "ربيع",
+        "difficulty": "easy",
+        "example": "في الربيع تتفتح الأزهار.",
+        "exampleTranslation": "Wiosną kwitną kwiaty."
+      },
+      {
+        "id": "pa_seas_2",
+        "front": "Lato",
+        "back": "صيف",
+        "difficulty": "easy",
+        "example": "الصيف هو أحر فصل في السنة.",
+        "exampleTranslation": "Lato to najcieplejsza pora roku."
+      },
+      {
+        "id": "pa_seas_3",
+        "front": "Jesień",
+        "back": "خريف",
+        "difficulty": "easy",
+        "example": "في الخريف تتساقط أوراق الأشجار.",
+        "exampleTranslation": "Jesienią opadają liście z drzew."
+      },
+      {
+        "id": "pa_seas_4",
+        "front": "Zima",
+        "back": "شتاء",
+        "difficulty": "easy",
+        "example": "الشتاء بارد جداً في بولندا.",
+        "exampleTranslation": "Zima jest bardzo zimna w Polsce."
+      },
+      {
+        "id": "pa_seas_5",
+        "front": "Pora roku",
+        "back": "فصل",
+        "difficulty": "easy",
+        "example": "هناك أربعة فصول في السنة.",
+        "exampleTranslation": "W roku są cztery pory roku."
+      },
+      {
+        "id": "pa_seas_6",
+        "front": "Kwitnąć",
+        "back": "يزهر",
+        "difficulty": "easy",
+        "example": "الأشجار تزهر في الربيع.",
+        "exampleTranslation": "Drzewa kwitną wiosną."
+      },
+      {
+        "id": "pa_seas_7",
+        "front": "Ciepło",
+        "back": "دفء",
+        "difficulty": "medium",
+        "example": "أحب دفء الصيف.",
+        "exampleTranslation": "Lubię ciepło lata."
+      },
+      {
+        "id": "pa_seas_8",
+        "front": "Chłód",
+        "back": "برودة",
+        "difficulty": "medium",
+        "example": "برودة الخريف ممتعة.",
+        "exampleTranslation": "Chłód jesieni jest przyjemny."
+      },
+      {
+        "id": "pa_seas_9",
+        "front": "Mróz",
+        "back": "صقيع",
+        "difficulty": "medium",
+        "example": "الصقيع يغطي النوافذ في الشتاء.",
+        "exampleTranslation": "Mróz pokrywa okna zimą."
+      },
+      {
+        "id": "pa_seas_10",
+        "front": "Żniwa",
+        "back": "حصاد",
+        "difficulty": "medium",
+        "example": "موسم الحصاد في الخريف.",
+        "exampleTranslation": "Pora żniw jest jesienią."
+      },
+      {
+        "id": "pa_seas_11",
+        "front": "Tać (śnieg)",
+        "back": "يذوب",
+        "difficulty": "medium",
+        "example": "الثلج يذوب في الربيع.",
+        "exampleTranslation": "Śnieg taje wiosną."
+      },
+      {
+        "id": "pa_seas_12",
+        "front": "Upał",
+        "back": "حرارة شديدة",
+        "difficulty": "medium",
+        "example": "الحرارة الشديدة صعبة في الصيف.",
+        "exampleTranslation": "Upał jest trudny do zniesienia latem."
+      },
+      {
+        "id": "pa_seas_13",
+        "front": "Przesilenie",
+        "back": "انقلاب شمسي",
+        "difficulty": "hard",
+        "example": "الانقلاب الشمسي يحدث مرتين في السنة.",
+        "exampleTranslation": "Przesilenie występuje dwa razy w roku."
+      },
+      {
+        "id": "pa_seas_14",
+        "front": "Równonoc",
+        "back": "اعتدال",
+        "difficulty": "hard",
+        "example": "الاعتدال الربيعي في شهر مارس.",
+        "exampleTranslation": "Równonoc wiosenna jest w marcu."
+      },
+      {
+        "id": "pa_seas_15",
+        "front": "Zmiana pór roku",
+        "back": "تغير الفصول",
+        "difficulty": "hard",
+        "example": "تغير الفصول ظاهرة طبيعية جميلة.",
+        "exampleTranslation": "Zmiana pór roku to piękne zjawisko naturalne."
+      }
+    ]
+  },
+  {
+    "key": "daily_routine",
+    "name": "Codzienna rutyna",
+    "description": "Czynności wykonywane na co dzień",
+    "iconName": "alarm.fill",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_daily_1",
+        "front": "Budzić się",
+        "back": "يستيقظ",
+        "difficulty": "easy",
+        "example": "أستيقظ في السادسة صباحاً.",
+        "exampleTranslation": "Budzę się o szóstej rano."
+      },
+      {
+        "id": "pa_daily_2",
+        "front": "Myć zęby",
+        "back": "يغسل أسنانه",
+        "difficulty": "easy",
+        "example": "أغسل أسناني مرتين في اليوم.",
+        "exampleTranslation": "Myję zęby dwa razy dziennie."
+      },
+      {
+        "id": "pa_daily_3",
+        "front": "Brać prysznic",
+        "back": "يستحم",
+        "difficulty": "easy",
+        "example": "أستحم كل صباح.",
+        "exampleTranslation": "Biorę prysznic każdego ranka."
+      },
+      {
+        "id": "pa_daily_4",
+        "front": "Ubierać się",
+        "back": "يرتدي ملابسه",
+        "difficulty": "easy",
+        "example": "أرتدي ملابسي بسرعة.",
+        "exampleTranslation": "Ubieram się szybko."
+      },
+      {
+        "id": "pa_daily_5",
+        "front": "Jeść śniadanie",
+        "back": "يتناول الفطور",
+        "difficulty": "easy",
+        "example": "أتناول الفطور في المطبخ.",
+        "exampleTranslation": "Jem śniadanie w kuchni."
+      },
+      {
+        "id": "pa_daily_6",
+        "front": "Iść do pracy",
+        "back": "يذهب إلى العمل",
+        "difficulty": "easy",
+        "example": "أذهب إلى العمل بالحافلة.",
+        "exampleTranslation": "Idę do pracy autobusem."
+      },
+      {
+        "id": "pa_daily_7",
+        "front": "Gotować obiad",
+        "back": "يطبخ الغداء",
+        "difficulty": "medium",
+        "example": "أطبخ الغداء كل يوم.",
+        "exampleTranslation": "Gotuję obiad każdego dnia."
+      },
+      {
+        "id": "pa_daily_8",
+        "front": "Sprzątać dom",
+        "back": "ينظف المنزل",
+        "difficulty": "medium",
+        "example": "أنظف المنزل في عطلة نهاية الأسبوع.",
+        "exampleTranslation": "Sprzątam dom w weekend."
+      },
+      {
+        "id": "pa_daily_9",
+        "front": "Odpoczywać",
+        "back": "يرتاح",
+        "difficulty": "medium",
+        "example": "أرتاح بعد يوم طويل.",
+        "exampleTranslation": "Odpoczywam po długim dniu."
+      },
+      {
+        "id": "pa_daily_10",
+        "front": "Oglądać telewizję",
+        "back": "يشاهد التلفاز",
+        "difficulty": "medium",
+        "example": "أشاهد التلفاز في المساء.",
+        "exampleTranslation": "Oglądam telewizję wieczorem."
+      },
+      {
+        "id": "pa_daily_11",
+        "front": "Czytać książkę",
+        "back": "يقرأ كتاباً",
+        "difficulty": "medium",
+        "example": "أقرأ كتاباً قبل النوم.",
+        "exampleTranslation": "Czytam książkę przed snem."
+      },
+      {
+        "id": "pa_daily_12",
+        "front": "Spacerować",
+        "back": "يتمشى",
+        "difficulty": "medium",
+        "example": "أتمشى في الحديقة بعد الغداء.",
+        "exampleTranslation": "Spaceruję w parku po obiedzie."
+      },
+      {
+        "id": "pa_daily_13",
+        "front": "Prasować ubrania",
+        "back": "يكوي الملابس",
+        "difficulty": "hard",
+        "example": "أكوي الملابس كل أسبوع.",
+        "exampleTranslation": "Prasuję ubrania co tydzień."
+      },
+      {
+        "id": "pa_daily_14",
+        "front": "Robić zakupy",
+        "back": "يتسوق",
+        "difficulty": "hard",
+        "example": "أتسوق من السوبرماركت.",
+        "exampleTranslation": "Robię zakupy w supermarkecie."
+      },
+      {
+        "id": "pa_daily_15",
+        "front": "Kłaść się spać",
+        "back": "يذهب للنوم",
+        "difficulty": "hard",
+        "example": "أذهب للنوم في العاشرة مساءً.",
+        "exampleTranslation": "Kładę się spać o dziesiątej wieczorem."
+      }
+    ]
+  },
+  {
+    "key": "meals",
+    "name": "Posiłki",
+    "description": "Posiłki i jedzenie",
+    "iconName": "fork.knife",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_meal_1",
+        "front": "Śniadanie",
+        "back": "فطور",
+        "difficulty": "easy",
+        "example": "الفطور أهم وجبة في اليوم.",
+        "exampleTranslation": "Śniadanie to najważniejszy posiłek dnia."
+      },
+      {
+        "id": "pa_meal_2",
+        "front": "Obiad",
+        "back": "غداء",
+        "difficulty": "easy",
+        "example": "نتناول الغداء في الواحدة.",
+        "exampleTranslation": "Jemy obiad o pierwszej."
+      },
+      {
+        "id": "pa_meal_3",
+        "front": "Kolacja",
+        "back": "عشاء",
+        "difficulty": "easy",
+        "example": "العشاء جاهز على الطاولة.",
+        "exampleTranslation": "Kolacja jest gotowa na stole."
+      },
+      {
+        "id": "pa_meal_4",
+        "front": "Przekąska",
+        "back": "وجبة خفيفة",
+        "difficulty": "easy",
+        "example": "أكلت وجبة خفيفة بين الوجبات.",
+        "exampleTranslation": "Zjadłem przekąskę między posiłkami."
+      },
+      {
+        "id": "pa_meal_5",
+        "front": "Chleb",
+        "back": "خبز",
+        "difficulty": "easy",
+        "example": "أشتري الخبز الطازج من المخبز.",
+        "exampleTranslation": "Kupuję świeży chleb z piekarni."
+      },
+      {
+        "id": "pa_meal_6",
+        "front": "Ryż",
+        "back": "أرز",
+        "difficulty": "easy",
+        "example": "الأرز طبق أساسي في المطبخ العربي.",
+        "exampleTranslation": "Ryż to podstawowe danie w kuchni arabskiej."
+      },
+      {
+        "id": "pa_meal_7",
+        "front": "Zupa",
+        "back": "حساء",
+        "difficulty": "medium",
+        "example": "الحساء الساخن لذيذ في الشتاء.",
+        "exampleTranslation": "Gorąca zupa jest pyszna zimą."
+      },
+      {
+        "id": "pa_meal_8",
+        "front": "Sałatka",
+        "back": "سلطة",
+        "difficulty": "medium",
+        "example": "السلطة مفيدة للصحة.",
+        "exampleTranslation": "Sałatka jest zdrowa."
+      },
+      {
+        "id": "pa_meal_9",
+        "front": "Kanapka",
+        "back": "شطيرة",
+        "difficulty": "medium",
+        "example": "أعددت شطيرة بالجبن.",
+        "exampleTranslation": "Przygotowałem kanapkę z serem."
+      },
+      {
+        "id": "pa_meal_10",
+        "front": "Makaron",
+        "back": "معكرونة",
+        "difficulty": "medium",
+        "example": "المعكرونة طبق إيطالي شهير.",
+        "exampleTranslation": "Makaron to znane danie włoskie."
+      },
+      {
+        "id": "pa_meal_11",
+        "front": "Mięso",
+        "back": "لحم",
+        "difficulty": "medium",
+        "example": "اللحم مصدر مهم للبروتين.",
+        "exampleTranslation": "Mięso jest ważnym źródłem białka."
+      },
+      {
+        "id": "pa_meal_12",
+        "front": "Ser",
+        "back": "جبنة",
+        "difficulty": "medium",
+        "example": "الجبنة البيضاء شائعة في مصر.",
+        "exampleTranslation": "Biały ser jest popularny w Egipcie."
+      },
+      {
+        "id": "pa_meal_13",
+        "front": "Jajko",
+        "back": "بيضة",
+        "difficulty": "hard",
+        "example": "أطبخ البيض المقلي للفطور.",
+        "exampleTranslation": "Smażę jajka na śniadanie."
+      },
+      {
+        "id": "pa_meal_14",
+        "front": "Przyprawa",
+        "back": "توابل",
+        "difficulty": "hard",
+        "example": "التوابل تضيف نكهة للطعام.",
+        "exampleTranslation": "Przyprawy dodają smaku potrawom."
+      },
+      {
+        "id": "pa_meal_15",
+        "front": "Przepis kulinarny",
+        "back": "وصفة طعام",
+        "difficulty": "hard",
+        "example": "وجدت وصفة طعام جديدة على الإنترنت.",
+        "exampleTranslation": "Znalazłem nowy przepis kulinarny w internecie."
+      }
+    ]
+  },
+  {
+    "key": "desserts",
+    "name": "Desery",
+    "description": "Słodycze i desery",
+    "iconName": "birthday.cake.fill",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_des_1",
+        "front": "Ciasto",
+        "back": "كعكة",
+        "difficulty": "easy",
+        "example": "خبزت كعكة الشوكولاتة.",
+        "exampleTranslation": "Upiekłem ciasto czekoladowe."
+      },
+      {
+        "id": "pa_des_2",
+        "front": "Lody",
+        "back": "آيس كريم",
+        "difficulty": "easy",
+        "example": "أحب آيس كريم الفواكه.",
+        "exampleTranslation": "Lubię lody owocowe."
+      },
+      {
+        "id": "pa_des_3",
+        "front": "Czekolada",
+        "back": "شوكولاتة",
+        "difficulty": "easy",
+        "example": "الشوكولاتة الداكنة مفيدة للصحة.",
+        "exampleTranslation": "Ciemna czekolada jest zdrowa."
+      },
+      {
+        "id": "pa_des_4",
+        "front": "Ciastko",
+        "back": "بسكويت",
+        "difficulty": "easy",
+        "example": "أكلت بسكويتاً مع الشاي.",
+        "exampleTranslation": "Zjadłem ciastko z herbatą."
+      },
+      {
+        "id": "pa_des_5",
+        "front": "Miód",
+        "back": "عسل",
+        "difficulty": "easy",
+        "example": "العسل حلو ومفيد.",
+        "exampleTranslation": "Miód jest słodki i zdrowy."
+      },
+      {
+        "id": "pa_des_6",
+        "front": "Cukier",
+        "back": "سكر",
+        "difficulty": "easy",
+        "example": "لا أضع كثيراً من السكر في القهوة.",
+        "exampleTranslation": "Nie daję dużo cukru do kawy."
+      },
+      {
+        "id": "pa_des_7",
+        "front": "Budyń",
+        "back": "بودينغ",
+        "difficulty": "medium",
+        "example": "البودينغ حلوى لذيذة وسهلة.",
+        "exampleTranslation": "Budyń to pyszny i łatwy deser."
+      },
+      {
+        "id": "pa_des_8",
+        "front": "Galaretka",
+        "back": "جيلي",
+        "difficulty": "medium",
+        "example": "الأطفال يحبون الجيلي الملون.",
+        "exampleTranslation": "Dzieci lubią kolorową galaretkę."
+      },
+      {
+        "id": "pa_des_9",
+        "front": "Naleśniki",
+        "back": "فطائر محلاة",
+        "difficulty": "medium",
+        "example": "نأكل الفطائر المحلاة مع المربى.",
+        "exampleTranslation": "Jemy naleśniki z dżemem."
+      },
+      {
+        "id": "pa_des_10",
+        "front": "Pączek",
+        "back": "دونات",
+        "difficulty": "medium",
+        "example": "أشتري الدونات من المخبز.",
+        "exampleTranslation": "Kupuję pączki w piekarni."
+      },
+      {
+        "id": "pa_des_11",
+        "front": "Szarlotka",
+        "back": "فطيرة التفاح",
+        "difficulty": "medium",
+        "example": "فطيرة التفاح حلوى بولندية تقليدية.",
+        "exampleTranslation": "Szarlotka to tradycyjny polski deser."
+      },
+      {
+        "id": "pa_des_12",
+        "front": "Cukierek",
+        "back": "حلوى",
+        "difficulty": "medium",
+        "example": "أعطيت الطفل حلوى.",
+        "exampleTranslation": "Dałem dziecku cukierka."
+      },
+      {
+        "id": "pa_des_13",
+        "front": "Bakława",
+        "back": "بقلاوة",
+        "difficulty": "hard",
+        "example": "البقلاوة حلوى عربية تقليدية لذيذة.",
+        "exampleTranslation": "Bakława to pyszny tradycyjny deser arabski."
+      },
+      {
+        "id": "pa_des_14",
+        "front": "Krem karmelowy",
+        "back": "كريم كراميل",
+        "difficulty": "hard",
+        "example": "كريم الكراميل حلوى فرنسية الأصل.",
+        "exampleTranslation": "Krem karmelowy to deser pochodzenia francuskiego."
+      },
+      {
+        "id": "pa_des_15",
+        "front": "Dżem",
+        "back": "مربى",
+        "difficulty": "hard",
+        "example": "صنعت مربى الفراولة في المنزل.",
+        "exampleTranslation": "Zrobiłem dżem truskawkowy w domu."
+      }
+    ]
+  },
+  {
+    "key": "conversations",
+    "name": "Rozmowy",
+    "description": "Zwroty używane w codziennych rozmowach",
+    "iconName": "bubble.left.and.bubble.right.fill",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_conv_1",
+        "front": "Jak się masz?",
+        "back": "كيف حالك؟",
+        "difficulty": "easy",
+        "example": "كيف حالك اليوم؟",
+        "exampleTranslation": "Jak się dzisiaj masz?"
+      },
+      {
+        "id": "pa_conv_2",
+        "front": "Dobrze, dziękuję",
+        "back": "بخير، شكراً",
+        "difficulty": "easy",
+        "example": "أنا بخير، شكراً لك.",
+        "exampleTranslation": "Mam się dobrze, dziękuję."
+      },
+      {
+        "id": "pa_conv_3",
+        "front": "Jak masz na imię?",
+        "back": "ما اسمك؟",
+        "difficulty": "easy",
+        "example": "ما اسمك يا صديقي؟",
+        "exampleTranslation": "Jak masz na imię, przyjacielu?"
+      },
+      {
+        "id": "pa_conv_4",
+        "front": "Mam na imię...",
+        "back": "اسمي...",
+        "difficulty": "easy",
+        "example": "اسمي أحمد، سعيد بلقائك.",
+        "exampleTranslation": "Mam na imię Ahmed, miło cię poznać."
+      },
+      {
+        "id": "pa_conv_5",
+        "front": "Skąd jesteś?",
+        "back": "من أين أنت؟",
+        "difficulty": "easy",
+        "example": "من أين أنت؟ أنا من بولندا.",
+        "exampleTranslation": "Skąd jesteś? Jestem z Polski."
+      },
+      {
+        "id": "pa_conv_6",
+        "front": "Miło cię poznać",
+        "back": "سعيد بلقائك",
+        "difficulty": "easy",
+        "example": "سعيد بلقائك يا سيدي.",
+        "exampleTranslation": "Miło pana poznać."
+      },
+      {
+        "id": "pa_conv_7",
+        "front": "Przepraszam",
+        "back": "أنا آسف",
+        "difficulty": "medium",
+        "example": "أنا آسف على التأخير.",
+        "exampleTranslation": "Przepraszam za spóźnienie."
+      },
+      {
+        "id": "pa_conv_8",
+        "front": "Nie ma problemu",
+        "back": "لا مشكلة",
+        "difficulty": "medium",
+        "example": "لا مشكلة، لا تقلق.",
+        "exampleTranslation": "Nie ma problemu, nie martw się."
+      },
+      {
+        "id": "pa_conv_9",
+        "front": "Czy mówisz po polsku?",
+        "back": "هل تتحدث البولندية؟",
+        "difficulty": "medium",
+        "example": "هل تتحدث البولندية أو الإنجليزية؟",
+        "exampleTranslation": "Czy mówisz po polsku lub po angielsku?"
+      },
+      {
+        "id": "pa_conv_10",
+        "front": "Nie rozumiem",
+        "back": "لا أفهم",
+        "difficulty": "medium",
+        "example": "لا أفهم ما تقول.",
+        "exampleTranslation": "Nie rozumiem co mówisz."
+      },
+      {
+        "id": "pa_conv_11",
+        "front": "Czy możesz powtórzyć?",
+        "back": "هل يمكنك الإعادة؟",
+        "difficulty": "medium",
+        "example": "هل يمكنك الإعادة من فضلك؟",
+        "exampleTranslation": "Czy możesz powtórzyć, proszę?"
+      },
+      {
+        "id": "pa_conv_12",
+        "front": "Oczywiście",
+        "back": "بالطبع",
+        "difficulty": "medium",
+        "example": "بالطبع، سأساعدك.",
+        "exampleTranslation": "Oczywiście, pomogę ci."
+      },
+      {
+        "id": "pa_conv_13",
+        "front": "Czy mogę ci pomóc?",
+        "back": "هل يمكنني مساعدتك؟",
+        "difficulty": "hard",
+        "example": "هل يمكنني مساعدتك في شيء ما؟",
+        "exampleTranslation": "Czy mogę ci w czymś pomóc?"
+      },
+      {
+        "id": "pa_conv_14",
+        "front": "Muszę już iść",
+        "back": "يجب أن أذهب الآن",
+        "difficulty": "hard",
+        "example": "يجب أن أذهب الآن، إلى اللقاء.",
+        "exampleTranslation": "Muszę już iść, do zobaczenia."
+      },
+      {
+        "id": "pa_conv_15",
+        "front": "Trzymaj się",
+        "back": "اعتنِ بنفسك",
+        "difficulty": "hard",
+        "example": "اعتنِ بنفسك وإلى اللقاء.",
+        "exampleTranslation": "Trzymaj się i do zobaczenia."
+      }
+    ]
+  },
+  {
+    "key": "questions_asking",
+    "name": "Zadawanie pytań",
+    "description": "Pytania i zwroty pytające",
+    "iconName": "questionmark.circle.fill",
+    "color": "#14b8a6",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_quest_1",
+        "front": "Co?",
+        "back": "ماذا؟",
+        "difficulty": "easy",
+        "example": "ماذا تريد أن تأكل؟",
+        "exampleTranslation": "Co chcesz zjeść?"
+      },
+      {
+        "id": "pa_quest_2",
+        "front": "Kto?",
+        "back": "من؟",
+        "difficulty": "easy",
+        "example": "من جاء إلى الحفلة؟",
+        "exampleTranslation": "Kto przyszedł na imprezę?"
+      },
+      {
+        "id": "pa_quest_3",
+        "front": "Gdzie?",
+        "back": "أين؟",
+        "difficulty": "easy",
+        "example": "أين يقع المتحف؟",
+        "exampleTranslation": "Gdzie znajduje się muzeum?"
+      },
+      {
+        "id": "pa_quest_4",
+        "front": "Kiedy?",
+        "back": "متى؟",
+        "difficulty": "easy",
+        "example": "متى يبدأ الدرس؟",
+        "exampleTranslation": "Kiedy zaczyna się lekcja?"
+      },
+      {
+        "id": "pa_quest_5",
+        "front": "Dlaczego?",
+        "back": "لماذا؟",
+        "difficulty": "easy",
+        "example": "لماذا أنت حزين؟",
+        "exampleTranslation": "Dlaczego jesteś smutny?"
+      },
+      {
+        "id": "pa_quest_6",
+        "front": "Jak?",
+        "back": "كيف؟",
+        "difficulty": "easy",
+        "example": "كيف أصل إلى المحطة؟",
+        "exampleTranslation": "Jak dojść do stacji?"
+      },
+      {
+        "id": "pa_quest_7",
+        "front": "Ile?",
+        "back": "كم؟",
+        "difficulty": "medium",
+        "example": "كم يكلف هذا الكتاب؟",
+        "exampleTranslation": "Ile kosztuje ta książka?"
+      },
+      {
+        "id": "pa_quest_8",
+        "front": "Który?",
+        "back": "أي؟",
+        "difficulty": "medium",
+        "example": "أي طريق أقصر؟",
+        "exampleTranslation": "Która droga jest krótsza?"
+      },
+      {
+        "id": "pa_quest_9",
+        "front": "Czy...?",
+        "back": "هل...؟",
+        "difficulty": "medium",
+        "example": "هل تحب القهوة؟",
+        "exampleTranslation": "Czy lubisz kawę?"
+      },
+      {
+        "id": "pa_quest_10",
+        "front": "Ile czasu?",
+        "back": "كم من الوقت؟",
+        "difficulty": "medium",
+        "example": "كم من الوقت يستغرق السفر؟",
+        "exampleTranslation": "Ile czasu zajmuje podróż?"
+      },
+      {
+        "id": "pa_quest_11",
+        "front": "Ile lat masz?",
+        "back": "كم عمرك؟",
+        "difficulty": "medium",
+        "example": "كم عمرك يا ولدي؟",
+        "exampleTranslation": "Ile masz lat, chłopcze?"
+      },
+      {
+        "id": "pa_quest_12",
+        "front": "Dokąd?",
+        "back": "إلى أين؟",
+        "difficulty": "medium",
+        "example": "إلى أين أنت ذاهب؟",
+        "exampleTranslation": "Dokąd idziesz?"
+      },
+      {
+        "id": "pa_quest_13",
+        "front": "O czym?",
+        "back": "عن ماذا؟",
+        "difficulty": "hard",
+        "example": "عن ماذا تتحدث؟",
+        "exampleTranslation": "O czym rozmawiasz?"
+      },
+      {
+        "id": "pa_quest_14",
+        "front": "Z kim?",
+        "back": "مع من؟",
+        "difficulty": "hard",
+        "example": "مع من تذهب إلى السينما؟",
+        "exampleTranslation": "Z kim idziesz do kina?"
+      },
+      {
+        "id": "pa_quest_15",
+        "front": "Którędy?",
+        "back": "من أي طريق؟",
+        "difficulty": "hard",
+        "example": "من أي طريق أصل إلى المطار؟",
+        "exampleTranslation": "Którędy dojadę na lotnisko?"
+      }
+    ]
   }
 ]

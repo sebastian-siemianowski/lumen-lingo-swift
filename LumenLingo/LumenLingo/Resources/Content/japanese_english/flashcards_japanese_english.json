@@ -2728,5 +2728,1305 @@
         "exampleTranslation": "この漫画は百巻以上あります"
       }
     ]
+  },
+  {
+    "key": "fruits",
+    "name": "果物",
+    "description": "日常的な果物の名前",
+    "iconName": "leaf.fill",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "je_fr_1",
+        "front": "りんご",
+        "back": "Apple",
+        "difficulty": "easy",
+        "example": "I eat an apple every morning.",
+        "exampleTranslation": "私は毎朝りんごを食べます。"
+      },
+      {
+        "id": "je_fr_2",
+        "front": "バナナ",
+        "back": "Banana",
+        "difficulty": "easy",
+        "example": "Bananas are rich in potassium.",
+        "exampleTranslation": "バナナはカリウムが豊富です。"
+      },
+      {
+        "id": "je_fr_3",
+        "front": "みかん",
+        "back": "Mandarin orange",
+        "difficulty": "easy",
+        "example": "Mandarin oranges are popular in winter.",
+        "exampleTranslation": "みかんは冬に人気があります。"
+      },
+      {
+        "id": "je_fr_4",
+        "front": "いちご",
+        "back": "Strawberry",
+        "difficulty": "easy",
+        "example": "I bought fresh strawberries at the market.",
+        "exampleTranslation": "市場で新鮮ないちごを買いました。"
+      },
+      {
+        "id": "je_fr_5",
+        "front": "ぶどう",
+        "back": "Grape",
+        "difficulty": "easy",
+        "example": "These grapes are very sweet.",
+        "exampleTranslation": "このぶどうはとても甘いです。"
+      },
+      {
+        "id": "je_fr_6",
+        "front": "もも",
+        "back": "Peach",
+        "difficulty": "easy",
+        "example": "Peaches are in season during summer.",
+        "exampleTranslation": "桃は夏が旬です。"
+      },
+      {
+        "id": "je_fr_7",
+        "front": "すいか",
+        "back": "Watermelon",
+        "difficulty": "medium",
+        "example": "We ate watermelon at the beach.",
+        "exampleTranslation": "私たちはビーチですいかを食べました。"
+      },
+      {
+        "id": "je_fr_8",
+        "front": "メロン",
+        "back": "Melon",
+        "difficulty": "medium",
+        "example": "This melon is a gift from Hokkaido.",
+        "exampleTranslation": "このメロンは北海道からの贈り物です。"
+      },
+      {
+        "id": "je_fr_9",
+        "front": "なし",
+        "back": "Pear",
+        "difficulty": "medium",
+        "example": "Japanese pears are juicy and crisp.",
+        "exampleTranslation": "日本の梨はみずみずしくてシャキシャキです。"
+      },
+      {
+        "id": "je_fr_10",
+        "front": "レモン",
+        "back": "Lemon",
+        "difficulty": "medium",
+        "example": "I squeezed lemon juice over the fish.",
+        "exampleTranslation": "魚にレモン汁をかけました。"
+      },
+      {
+        "id": "je_fr_11",
+        "front": "さくらんぼ",
+        "back": "Cherry",
+        "difficulty": "medium",
+        "example": "Cherries from Yamagata are famous.",
+        "exampleTranslation": "山形のさくらんぼは有名です。"
+      },
+      {
+        "id": "je_fr_12",
+        "front": "パイナップル",
+        "back": "Pineapple",
+        "difficulty": "medium",
+        "example": "This pineapple is from Okinawa.",
+        "exampleTranslation": "このパイナップルは沖縄産です。"
+      },
+      {
+        "id": "je_fr_13",
+        "front": "キウイ",
+        "back": "Kiwi",
+        "difficulty": "hard",
+        "example": "Kiwi fruit is high in vitamin C.",
+        "exampleTranslation": "キウイはビタミンCが豊富です。"
+      },
+      {
+        "id": "je_fr_14",
+        "front": "マンゴー",
+        "back": "Mango",
+        "difficulty": "hard",
+        "example": "I had a delicious mango smoothie.",
+        "exampleTranslation": "おいしいマンゴースムージーを飲みました。"
+      },
+      {
+        "id": "je_fr_15",
+        "front": "柿",
+        "back": "Persimmon",
+        "difficulty": "hard",
+        "example": "Persimmons are a traditional autumn fruit in Japan.",
+        "exampleTranslation": "柿は日本の伝統的な秋の果物です。"
+      }
+    ]
+  },
+  {
+    "key": "vegetables",
+    "name": "野菜",
+    "description": "よく使われる野菜の名前",
+    "iconName": "carrot.fill",
+    "color": "#22c55e",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "je_vg_1",
+        "front": "にんじん",
+        "back": "Carrot",
+        "difficulty": "easy",
+        "example": "Carrots are good for your eyes.",
+        "exampleTranslation": "にんじんは目に良いです。"
+      },
+      {
+        "id": "je_vg_2",
+        "front": "たまねぎ",
+        "back": "Onion",
+        "difficulty": "easy",
+        "example": "Please chop the onion finely.",
+        "exampleTranslation": "たまねぎを細かく切ってください。"
+      },
+      {
+        "id": "je_vg_3",
+        "front": "じゃがいも",
+        "back": "Potato",
+        "difficulty": "easy",
+        "example": "I boiled potatoes for the salad.",
+        "exampleTranslation": "サラダのためにじゃがいもを茹でました。"
+      },
+      {
+        "id": "je_vg_4",
+        "front": "トマト",
+        "back": "Tomato",
+        "difficulty": "easy",
+        "example": "Tomatoes turn red when ripe.",
+        "exampleTranslation": "トマトは熟すと赤くなります。"
+      },
+      {
+        "id": "je_vg_5",
+        "front": "きゅうり",
+        "back": "Cucumber",
+        "difficulty": "easy",
+        "example": "Cucumbers are refreshing in summer.",
+        "exampleTranslation": "きゅうりは夏にさっぱりします。"
+      },
+      {
+        "id": "je_vg_6",
+        "front": "キャベツ",
+        "back": "Cabbage",
+        "difficulty": "easy",
+        "example": "I bought a head of cabbage at the supermarket.",
+        "exampleTranslation": "スーパーでキャベツを一玉買いました。"
+      },
+      {
+        "id": "je_vg_7",
+        "front": "ほうれんそう",
+        "back": "Spinach",
+        "difficulty": "medium",
+        "example": "Spinach is rich in iron.",
+        "exampleTranslation": "ほうれんそうは鉄分が豊富です。"
+      },
+      {
+        "id": "je_vg_8",
+        "front": "なす",
+        "back": "Eggplant",
+        "difficulty": "medium",
+        "example": "Grilled eggplant is delicious.",
+        "exampleTranslation": "焼きなすはおいしいです。"
+      },
+      {
+        "id": "je_vg_9",
+        "front": "だいこん",
+        "back": "Radish",
+        "difficulty": "medium",
+        "example": "Daikon radish is used in many Japanese dishes.",
+        "exampleTranslation": "大根は多くの日本料理に使われます。"
+      },
+      {
+        "id": "je_vg_10",
+        "front": "ピーマン",
+        "back": "Green pepper",
+        "difficulty": "medium",
+        "example": "Children often dislike green peppers.",
+        "exampleTranslation": "子供はよくピーマンが苦手です。"
+      },
+      {
+        "id": "je_vg_11",
+        "front": "ねぎ",
+        "back": "Green onion",
+        "difficulty": "medium",
+        "example": "Add green onion to the miso soup.",
+        "exampleTranslation": "味噌汁にねぎを加えてください。"
+      },
+      {
+        "id": "je_vg_12",
+        "front": "かぼちゃ",
+        "back": "Pumpkin",
+        "difficulty": "medium",
+        "example": "We eat pumpkin on the winter solstice.",
+        "exampleTranslation": "冬至にかぼちゃを食べます。"
+      },
+      {
+        "id": "je_vg_13",
+        "front": "ごぼう",
+        "back": "Burdock root",
+        "difficulty": "hard",
+        "example": "Burdock root is a popular ingredient in Japanese cuisine.",
+        "exampleTranslation": "ごぼうは日本料理で人気のある食材です。"
+      },
+      {
+        "id": "je_vg_14",
+        "front": "れんこん",
+        "back": "Lotus root",
+        "difficulty": "hard",
+        "example": "Lotus root has a unique crunchy texture.",
+        "exampleTranslation": "れんこんは独特のシャキシャキした食感があります。"
+      },
+      {
+        "id": "je_vg_15",
+        "front": "しいたけ",
+        "back": "Shiitake mushroom",
+        "difficulty": "hard",
+        "example": "Dried shiitake mushrooms add umami flavor.",
+        "exampleTranslation": "干ししいたけはうま味を加えます。"
+      }
+    ]
+  },
+  {
+    "key": "animals",
+    "name": "動物",
+    "description": "身近な動物の名前",
+    "iconName": "pawprint.fill",
+    "color": "#a78bfa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "je_an_1",
+        "front": "犬",
+        "back": "Dog",
+        "difficulty": "easy",
+        "example": "I walk my dog every evening.",
+        "exampleTranslation": "毎晩犬の散歩をします。"
+      },
+      {
+        "id": "je_an_2",
+        "front": "猫",
+        "back": "Cat",
+        "difficulty": "easy",
+        "example": "The cat is sleeping on the sofa.",
+        "exampleTranslation": "猫がソファで寝ています。"
+      },
+      {
+        "id": "je_an_3",
+        "front": "鳥",
+        "back": "Bird",
+        "difficulty": "easy",
+        "example": "Birds are singing in the trees.",
+        "exampleTranslation": "鳥が木の上で歌っています。"
+      },
+      {
+        "id": "je_an_4",
+        "front": "魚",
+        "back": "Fish",
+        "difficulty": "easy",
+        "example": "There are many fish in this river.",
+        "exampleTranslation": "この川にはたくさんの魚がいます。"
+      },
+      {
+        "id": "je_an_5",
+        "front": "うさぎ",
+        "back": "Rabbit",
+        "difficulty": "easy",
+        "example": "The rabbit is eating a carrot.",
+        "exampleTranslation": "うさぎがにんじんを食べています。"
+      },
+      {
+        "id": "je_an_6",
+        "front": "馬",
+        "back": "Horse",
+        "difficulty": "easy",
+        "example": "I rode a horse in the countryside.",
+        "exampleTranslation": "田舎で馬に乗りました。"
+      },
+      {
+        "id": "je_an_7",
+        "front": "牛",
+        "back": "Cow",
+        "difficulty": "medium",
+        "example": "Cows are grazing in the field.",
+        "exampleTranslation": "牛が牧場で草を食べています。"
+      },
+      {
+        "id": "je_an_8",
+        "front": "豚",
+        "back": "Pig",
+        "difficulty": "medium",
+        "example": "Pigs are very intelligent animals.",
+        "exampleTranslation": "豚はとても頭の良い動物です。"
+      },
+      {
+        "id": "je_an_9",
+        "front": "猿",
+        "back": "Monkey",
+        "difficulty": "medium",
+        "example": "Monkeys live in the mountains of Japan.",
+        "exampleTranslation": "猿は日本の山に住んでいます。"
+      },
+      {
+        "id": "je_an_10",
+        "front": "象",
+        "back": "Elephant",
+        "difficulty": "medium",
+        "example": "The elephant at the zoo is very popular.",
+        "exampleTranslation": "動物園の象はとても人気があります。"
+      },
+      {
+        "id": "je_an_11",
+        "front": "ライオン",
+        "back": "Lion",
+        "difficulty": "medium",
+        "example": "The lion is called the king of the jungle.",
+        "exampleTranslation": "ライオンはジャングルの王様と呼ばれています。"
+      },
+      {
+        "id": "je_an_12",
+        "front": "くま",
+        "back": "Bear",
+        "difficulty": "medium",
+        "example": "Bears hibernate during winter.",
+        "exampleTranslation": "くまは冬の間冬眠します。"
+      },
+      {
+        "id": "je_an_13",
+        "front": "きつね",
+        "back": "Fox",
+        "difficulty": "hard",
+        "example": "Foxes appear in many Japanese folktales.",
+        "exampleTranslation": "きつねは日本の多くの昔話に登場します。"
+      },
+      {
+        "id": "je_an_14",
+        "front": "たぬき",
+        "back": "Raccoon dog",
+        "difficulty": "hard",
+        "example": "The raccoon dog is native to Japan.",
+        "exampleTranslation": "たぬきは日本の固有種です。"
+      },
+      {
+        "id": "je_an_15",
+        "front": "つる",
+        "back": "Crane",
+        "difficulty": "hard",
+        "example": "Cranes are a symbol of longevity in Japan.",
+        "exampleTranslation": "つるは日本で長寿の象徴です。"
+      }
+    ]
+  },
+  {
+    "key": "drinks",
+    "name": "飲み物",
+    "description": "日常的な飲み物",
+    "iconName": "cup.and.saucer.fill",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "je_dr_1",
+        "front": "水",
+        "back": "Water",
+        "difficulty": "easy",
+        "example": "Please give me a glass of water.",
+        "exampleTranslation": "水を一杯ください。"
+      },
+      {
+        "id": "je_dr_2",
+        "front": "お茶",
+        "back": "Tea",
+        "difficulty": "easy",
+        "example": "Would you like some tea?",
+        "exampleTranslation": "お茶はいかがですか？"
+      },
+      {
+        "id": "je_dr_3",
+        "front": "コーヒー",
+        "back": "Coffee",
+        "difficulty": "easy",
+        "example": "I drink coffee every morning.",
+        "exampleTranslation": "毎朝コーヒーを飲みます。"
+      },
+      {
+        "id": "je_dr_4",
+        "front": "牛乳",
+        "back": "Milk",
+        "difficulty": "easy",
+        "example": "Children should drink milk every day.",
+        "exampleTranslation": "子供は毎日牛乳を飲むべきです。"
+      },
+      {
+        "id": "je_dr_5",
+        "front": "ジュース",
+        "back": "Juice",
+        "difficulty": "easy",
+        "example": "I'd like an orange juice, please.",
+        "exampleTranslation": "オレンジジュースをください。"
+      },
+      {
+        "id": "je_dr_6",
+        "front": "ビール",
+        "back": "Beer",
+        "difficulty": "easy",
+        "example": "Let's have a beer after work.",
+        "exampleTranslation": "仕事の後にビールを飲みましょう。"
+      },
+      {
+        "id": "je_dr_7",
+        "front": "ワイン",
+        "back": "Wine",
+        "difficulty": "medium",
+        "example": "This red wine pairs well with steak.",
+        "exampleTranslation": "この赤ワインはステーキによく合います。"
+      },
+      {
+        "id": "je_dr_8",
+        "front": "日本酒",
+        "back": "Sake",
+        "difficulty": "medium",
+        "example": "Sake is best served warm in winter.",
+        "exampleTranslation": "日本酒は冬には温めて飲むのが一番です。"
+      },
+      {
+        "id": "je_dr_9",
+        "front": "紅茶",
+        "back": "Black tea",
+        "difficulty": "medium",
+        "example": "I prefer black tea with milk.",
+        "exampleTranslation": "紅茶にはミルクを入れるのが好きです。"
+      },
+      {
+        "id": "je_dr_10",
+        "front": "炭酸水",
+        "back": "Sparkling water",
+        "difficulty": "medium",
+        "example": "Sparkling water is very popular lately.",
+        "exampleTranslation": "最近炭酸水がとても人気です。"
+      },
+      {
+        "id": "je_dr_11",
+        "front": "抹茶",
+        "back": "Matcha",
+        "difficulty": "medium",
+        "example": "Matcha is used in traditional tea ceremonies.",
+        "exampleTranslation": "抹茶は伝統的な茶道で使われます。"
+      },
+      {
+        "id": "je_dr_12",
+        "front": "スムージー",
+        "back": "Smoothie",
+        "difficulty": "medium",
+        "example": "I make a fruit smoothie for breakfast.",
+        "exampleTranslation": "朝食にフルーツスムージーを作ります。"
+      },
+      {
+        "id": "je_dr_13",
+        "front": "焼酎",
+        "back": "Shochu",
+        "difficulty": "hard",
+        "example": "Shochu can be made from sweet potatoes or barley.",
+        "exampleTranslation": "焼酎はさつまいもや麦から作れます。"
+      },
+      {
+        "id": "je_dr_14",
+        "front": "梅酒",
+        "back": "Plum wine",
+        "difficulty": "hard",
+        "example": "Homemade plum wine takes three months to mature.",
+        "exampleTranslation": "自家製梅酒は熟成に三ヶ月かかります。"
+      },
+      {
+        "id": "je_dr_15",
+        "front": "甘酒",
+        "back": "Sweet rice drink",
+        "difficulty": "hard",
+        "example": "Sweet rice drink is a traditional New Year's beverage.",
+        "exampleTranslation": "甘酒は伝統的なお正月の飲み物です。"
+      }
+    ]
+  },
+  {
+    "key": "seasons",
+    "name": "季節",
+    "description": "季節と季節の表現",
+    "iconName": "cloud.sun.fill",
+    "color": "#eab308",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "je_sn_1",
+        "front": "春",
+        "back": "Spring",
+        "difficulty": "easy",
+        "example": "Cherry blossoms bloom in spring.",
+        "exampleTranslation": "春に桜が咲きます。"
+      },
+      {
+        "id": "je_sn_2",
+        "front": "夏",
+        "back": "Summer",
+        "difficulty": "easy",
+        "example": "Summer in Japan is very hot and humid.",
+        "exampleTranslation": "日本の夏はとても暑くて湿気が多いです。"
+      },
+      {
+        "id": "je_sn_3",
+        "front": "秋",
+        "back": "Autumn",
+        "difficulty": "easy",
+        "example": "The leaves change color in autumn.",
+        "exampleTranslation": "秋に葉が色づきます。"
+      },
+      {
+        "id": "je_sn_4",
+        "front": "冬",
+        "back": "Winter",
+        "difficulty": "easy",
+        "example": "It snows a lot in winter in Hokkaido.",
+        "exampleTranslation": "北海道では冬にたくさん雪が降ります。"
+      },
+      {
+        "id": "je_sn_5",
+        "front": "花見",
+        "back": "Cherry blossom viewing",
+        "difficulty": "easy",
+        "example": "We went cherry blossom viewing in the park.",
+        "exampleTranslation": "公園で花見をしました。"
+      },
+      {
+        "id": "je_sn_6",
+        "front": "梅雨",
+        "back": "Rainy season",
+        "difficulty": "easy",
+        "example": "The rainy season starts in June.",
+        "exampleTranslation": "梅雨は六月に始まります。"
+      },
+      {
+        "id": "je_sn_7",
+        "front": "紅葉",
+        "back": "Autumn foliage",
+        "difficulty": "medium",
+        "example": "The autumn foliage in Kyoto is breathtaking.",
+        "exampleTranslation": "京都の紅葉は息をのむほど美しいです。"
+      },
+      {
+        "id": "je_sn_8",
+        "front": "台風",
+        "back": "Typhoon",
+        "difficulty": "medium",
+        "example": "Typhoons often hit Japan in September.",
+        "exampleTranslation": "台風は九月によく日本に上陸します。"
+      },
+      {
+        "id": "je_sn_9",
+        "front": "猛暑",
+        "back": "Extreme heat",
+        "difficulty": "medium",
+        "example": "Please stay hydrated during extreme heat.",
+        "exampleTranslation": "猛暑の間は水分補給をしてください。"
+      },
+      {
+        "id": "je_sn_10",
+        "front": "初雪",
+        "back": "First snow",
+        "difficulty": "medium",
+        "example": "The first snow fell in November.",
+        "exampleTranslation": "初雪は十一月に降りました。"
+      },
+      {
+        "id": "je_sn_11",
+        "front": "残暑",
+        "back": "Lingering summer heat",
+        "difficulty": "medium",
+        "example": "The lingering summer heat continues into September.",
+        "exampleTranslation": "残暑は九月まで続きます。"
+      },
+      {
+        "id": "je_sn_12",
+        "front": "衣替え",
+        "back": "Seasonal wardrobe change",
+        "difficulty": "medium",
+        "example": "We do a seasonal wardrobe change in June and October.",
+        "exampleTranslation": "六月と十月に衣替えをします。"
+      },
+      {
+        "id": "je_sn_13",
+        "front": "五月晴れ",
+        "back": "Clear May skies",
+        "difficulty": "hard",
+        "example": "Clear May skies are perfect for outdoor activities.",
+        "exampleTranslation": "五月晴れは屋外活動に最適です。"
+      },
+      {
+        "id": "je_sn_14",
+        "front": "木枯らし",
+        "back": "Cold wintry wind",
+        "difficulty": "hard",
+        "example": "The first cold wintry wind signals the start of winter.",
+        "exampleTranslation": "最初の木枯らしは冬の始まりを告げます。"
+      },
+      {
+        "id": "je_sn_15",
+        "front": "小春日和",
+        "back": "Indian summer",
+        "difficulty": "hard",
+        "example": "It was a lovely Indian summer day in November.",
+        "exampleTranslation": "十一月の小春日和の素敵な日でした。"
+      }
+    ]
+  },
+  {
+    "key": "daily_routine",
+    "name": "日常生活",
+    "description": "毎日の生活に関する言葉",
+    "iconName": "sunrise.fill",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "je_dr2_1",
+        "front": "起きる",
+        "back": "To wake up",
+        "difficulty": "easy",
+        "example": "I wake up at six every morning.",
+        "exampleTranslation": "毎朝六時に起きます。"
+      },
+      {
+        "id": "je_dr2_2",
+        "front": "歯を磨く",
+        "back": "To brush teeth",
+        "difficulty": "easy",
+        "example": "I brush my teeth after breakfast.",
+        "exampleTranslation": "朝食の後に歯を磨きます。"
+      },
+      {
+        "id": "je_dr2_3",
+        "front": "シャワーを浴びる",
+        "back": "To take a shower",
+        "difficulty": "easy",
+        "example": "I take a shower before going to work.",
+        "exampleTranslation": "仕事に行く前にシャワーを浴びます。"
+      },
+      {
+        "id": "je_dr2_4",
+        "front": "朝ごはん",
+        "back": "Breakfast",
+        "difficulty": "easy",
+        "example": "What did you have for breakfast?",
+        "exampleTranslation": "朝ごはんは何を食べましたか？"
+      },
+      {
+        "id": "je_dr2_5",
+        "front": "支度する",
+        "back": "To get ready",
+        "difficulty": "easy",
+        "example": "I need thirty minutes to get ready.",
+        "exampleTranslation": "支度に三十分必要です。"
+      },
+      {
+        "id": "je_dr2_6",
+        "front": "出かける",
+        "back": "To go out",
+        "difficulty": "easy",
+        "example": "I go out at eight o'clock.",
+        "exampleTranslation": "八時に出かけます。"
+      },
+      {
+        "id": "je_dr2_7",
+        "front": "帰宅する",
+        "back": "To come home",
+        "difficulty": "medium",
+        "example": "I come home around seven in the evening.",
+        "exampleTranslation": "夕方七時頃に帰宅します。"
+      },
+      {
+        "id": "je_dr2_8",
+        "front": "夕食を作る",
+        "back": "To cook dinner",
+        "difficulty": "medium",
+        "example": "My mother cooks dinner every night.",
+        "exampleTranslation": "母は毎晩夕食を作ります。"
+      },
+      {
+        "id": "je_dr2_9",
+        "front": "洗濯する",
+        "back": "To do laundry",
+        "difficulty": "medium",
+        "example": "I do laundry on weekends.",
+        "exampleTranslation": "週末に洗濯します。"
+      },
+      {
+        "id": "je_dr2_10",
+        "front": "掃除する",
+        "back": "To clean",
+        "difficulty": "medium",
+        "example": "I clean my room every Saturday.",
+        "exampleTranslation": "毎週土曜日に部屋を掃除します。"
+      },
+      {
+        "id": "je_dr2_11",
+        "front": "お風呂に入る",
+        "back": "To take a bath",
+        "difficulty": "medium",
+        "example": "Japanese people take a bath in the evening.",
+        "exampleTranslation": "日本人は夕方にお風呂に入ります。"
+      },
+      {
+        "id": "je_dr2_12",
+        "front": "寝る",
+        "back": "To go to bed",
+        "difficulty": "medium",
+        "example": "I go to bed at eleven o'clock.",
+        "exampleTranslation": "十一時に寝ます。"
+      },
+      {
+        "id": "je_dr2_13",
+        "front": "通勤する",
+        "back": "To commute",
+        "difficulty": "hard",
+        "example": "I commute to work by train.",
+        "exampleTranslation": "電車で通勤しています。"
+      },
+      {
+        "id": "je_dr2_14",
+        "front": "身支度",
+        "back": "Getting dressed up",
+        "difficulty": "hard",
+        "example": "Her morning routine includes getting dressed up carefully.",
+        "exampleTranslation": "彼女の朝の日課には丁寧な身支度が含まれます。"
+      },
+      {
+        "id": "je_dr2_15",
+        "front": "夜更かし",
+        "back": "Staying up late",
+        "difficulty": "hard",
+        "example": "Staying up late is bad for your health.",
+        "exampleTranslation": "夜更かしは健康に悪いです。"
+      }
+    ]
+  },
+  {
+    "key": "meals",
+    "name": "食事",
+    "description": "食事に関する言葉",
+    "iconName": "fork.knife",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "je_ml_1",
+        "front": "ご飯",
+        "back": "Rice / Meal",
+        "difficulty": "easy",
+        "example": "Have you eaten your meal yet?",
+        "exampleTranslation": "もうご飯を食べましたか？"
+      },
+      {
+        "id": "je_ml_2",
+        "front": "味噌汁",
+        "back": "Miso soup",
+        "difficulty": "easy",
+        "example": "Miso soup is a staple of Japanese breakfast.",
+        "exampleTranslation": "味噌汁は日本の朝食の定番です。"
+      },
+      {
+        "id": "je_ml_3",
+        "front": "おにぎり",
+        "back": "Rice ball",
+        "difficulty": "easy",
+        "example": "I bought a rice ball at the convenience store.",
+        "exampleTranslation": "コンビニでおにぎりを買いました。"
+      },
+      {
+        "id": "je_ml_4",
+        "front": "ラーメン",
+        "back": "Ramen",
+        "difficulty": "easy",
+        "example": "This ramen shop is very popular.",
+        "exampleTranslation": "このラーメン店はとても人気があります。"
+      },
+      {
+        "id": "je_ml_5",
+        "front": "お弁当",
+        "back": "Lunch box",
+        "difficulty": "easy",
+        "example": "My wife makes a lunch box for me every day.",
+        "exampleTranslation": "妻は毎日お弁当を作ってくれます。"
+      },
+      {
+        "id": "je_ml_6",
+        "front": "寿司",
+        "back": "Sushi",
+        "difficulty": "easy",
+        "example": "Let's go eat sushi this weekend.",
+        "exampleTranslation": "今週末お寿司を食べに行きましょう。"
+      },
+      {
+        "id": "je_ml_7",
+        "front": "天ぷら",
+        "back": "Tempura",
+        "difficulty": "medium",
+        "example": "Shrimp tempura is my favorite dish.",
+        "exampleTranslation": "海老天ぷらは私の大好物です。"
+      },
+      {
+        "id": "je_ml_8",
+        "front": "焼き魚",
+        "back": "Grilled fish",
+        "difficulty": "medium",
+        "example": "Grilled fish with rice is a classic Japanese meal.",
+        "exampleTranslation": "焼き魚とご飯は典型的な和食です。"
+      },
+      {
+        "id": "je_ml_9",
+        "front": "丼",
+        "back": "Rice bowl dish",
+        "difficulty": "medium",
+        "example": "Beef rice bowl is quick and delicious.",
+        "exampleTranslation": "牛丼は手早くておいしいです。"
+      },
+      {
+        "id": "je_ml_10",
+        "front": "鍋料理",
+        "back": "Hot pot",
+        "difficulty": "medium",
+        "example": "Hot pot is perfect for cold winter nights.",
+        "exampleTranslation": "鍋料理は寒い冬の夜にぴったりです。"
+      },
+      {
+        "id": "je_ml_11",
+        "front": "うどん",
+        "back": "Udon noodles",
+        "difficulty": "medium",
+        "example": "Udon noodles from Kagawa are the best.",
+        "exampleTranslation": "香川のうどんが一番おいしいです。"
+      },
+      {
+        "id": "je_ml_12",
+        "front": "そば",
+        "back": "Buckwheat noodles",
+        "difficulty": "medium",
+        "example": "We eat buckwheat noodles on New Year's Eve.",
+        "exampleTranslation": "大晦日にそばを食べます。"
+      },
+      {
+        "id": "je_ml_13",
+        "front": "懐石料理",
+        "back": "Kaiseki cuisine",
+        "difficulty": "hard",
+        "example": "Kaiseki cuisine is the height of Japanese culinary art.",
+        "exampleTranslation": "懐石料理は日本の料理芸術の頂点です。"
+      },
+      {
+        "id": "je_ml_14",
+        "front": "精進料理",
+        "back": "Buddhist vegetarian cuisine",
+        "difficulty": "hard",
+        "example": "Buddhist vegetarian cuisine uses no meat or fish.",
+        "exampleTranslation": "精進料理は肉や魚を使いません。"
+      },
+      {
+        "id": "je_ml_15",
+        "front": "おせち料理",
+        "back": "New Year's cuisine",
+        "difficulty": "hard",
+        "example": "Each dish in New Year's cuisine has a special meaning.",
+        "exampleTranslation": "おせち料理の各料理には特別な意味があります。"
+      }
+    ]
+  },
+  {
+    "key": "desserts",
+    "name": "デザート",
+    "description": "お菓子やデザートの言葉",
+    "iconName": "birthday.cake.fill",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "je_ds_1",
+        "front": "ケーキ",
+        "back": "Cake",
+        "difficulty": "easy",
+        "example": "I bought a birthday cake for her.",
+        "exampleTranslation": "彼女のためにバースデーケーキを買いました。"
+      },
+      {
+        "id": "je_ds_2",
+        "front": "アイスクリーム",
+        "back": "Ice cream",
+        "difficulty": "easy",
+        "example": "What flavor of ice cream would you like?",
+        "exampleTranslation": "何味のアイスクリームがいいですか？"
+      },
+      {
+        "id": "je_ds_3",
+        "front": "チョコレート",
+        "back": "Chocolate",
+        "difficulty": "easy",
+        "example": "I received chocolate on Valentine's Day.",
+        "exampleTranslation": "バレンタインデーにチョコレートをもらいました。"
+      },
+      {
+        "id": "je_ds_4",
+        "front": "クッキー",
+        "back": "Cookie",
+        "difficulty": "easy",
+        "example": "I baked cookies with my children.",
+        "exampleTranslation": "子供たちとクッキーを焼きました。"
+      },
+      {
+        "id": "je_ds_5",
+        "front": "プリン",
+        "back": "Pudding",
+        "difficulty": "easy",
+        "example": "This pudding has a smooth, creamy texture.",
+        "exampleTranslation": "このプリンはなめらかでクリーミーな食感です。"
+      },
+      {
+        "id": "je_ds_6",
+        "front": "ドーナツ",
+        "back": "Doughnut",
+        "difficulty": "easy",
+        "example": "I had a doughnut with my coffee.",
+        "exampleTranslation": "コーヒーと一緒にドーナツを食べました。"
+      },
+      {
+        "id": "je_ds_7",
+        "front": "和菓子",
+        "back": "Japanese sweets",
+        "difficulty": "medium",
+        "example": "Japanese sweets are served with matcha.",
+        "exampleTranslation": "和菓子は抹茶と一緒に出されます。"
+      },
+      {
+        "id": "je_ds_8",
+        "front": "大福",
+        "back": "Mochi with filling",
+        "difficulty": "medium",
+        "example": "Strawberry mochi is popular in spring.",
+        "exampleTranslation": "いちご大福は春に人気があります。"
+      },
+      {
+        "id": "je_ds_9",
+        "front": "たい焼き",
+        "back": "Fish-shaped cake",
+        "difficulty": "medium",
+        "example": "I bought a fish-shaped cake filled with red bean paste.",
+        "exampleTranslation": "あんこ入りのたい焼きを買いました。"
+      },
+      {
+        "id": "je_ds_10",
+        "front": "せんべい",
+        "back": "Rice cracker",
+        "difficulty": "medium",
+        "example": "Rice crackers are a popular snack with tea.",
+        "exampleTranslation": "せんべいはお茶と一緒に人気のおやつです。"
+      },
+      {
+        "id": "je_ds_11",
+        "front": "パフェ",
+        "back": "Parfait",
+        "difficulty": "medium",
+        "example": "The fruit parfait at this cafe is amazing.",
+        "exampleTranslation": "このカフェのフルーツパフェは素晴らしいです。"
+      },
+      {
+        "id": "je_ds_12",
+        "front": "クレープ",
+        "back": "Crepe",
+        "difficulty": "medium",
+        "example": "Crepes from Harajuku are famous.",
+        "exampleTranslation": "原宿のクレープは有名です。"
+      },
+      {
+        "id": "je_ds_13",
+        "front": "羊羹",
+        "back": "Sweet bean jelly",
+        "difficulty": "hard",
+        "example": "Sweet bean jelly is a traditional Japanese confection.",
+        "exampleTranslation": "羊羹は伝統的な日本のお菓子です。"
+      },
+      {
+        "id": "je_ds_14",
+        "front": "わらび餅",
+        "back": "Bracken starch cake",
+        "difficulty": "hard",
+        "example": "Bracken starch cake is a refreshing summer dessert.",
+        "exampleTranslation": "わらび餅はさっぱりした夏のデザートです。"
+      },
+      {
+        "id": "je_ds_15",
+        "front": "金平糖",
+        "back": "Sugar candy",
+        "difficulty": "hard",
+        "example": "Sugar candy has been a Japanese treat since the 16th century.",
+        "exampleTranslation": "金平糖は十六世紀から日本のお菓子です。"
+      }
+    ]
+  },
+  {
+    "key": "conversations",
+    "name": "会話",
+    "description": "日常的な会話で使う表現",
+    "iconName": "bubble.left.and.bubble.right.fill",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "je_cv_1",
+        "front": "初めまして",
+        "back": "Nice to meet you",
+        "difficulty": "easy",
+        "example": "Nice to meet you, my name is Tanaka.",
+        "exampleTranslation": "初めまして、田中と申します。"
+      },
+      {
+        "id": "je_cv_2",
+        "front": "元気ですか",
+        "back": "How are you?",
+        "difficulty": "easy",
+        "example": "How are you doing today?",
+        "exampleTranslation": "今日は元気ですか？"
+      },
+      {
+        "id": "je_cv_3",
+        "front": "分かりました",
+        "back": "I understand",
+        "difficulty": "easy",
+        "example": "I understand, thank you for explaining.",
+        "exampleTranslation": "分かりました、説明していただきありがとうございます。"
+      },
+      {
+        "id": "je_cv_4",
+        "front": "ちょっと待ってください",
+        "back": "Please wait a moment",
+        "difficulty": "easy",
+        "example": "Please wait a moment, I'll be right back.",
+        "exampleTranslation": "ちょっと待ってください、すぐ戻ります。"
+      },
+      {
+        "id": "je_cv_5",
+        "front": "大丈夫です",
+        "back": "It's okay / I'm fine",
+        "difficulty": "easy",
+        "example": "Don't worry, I'm fine.",
+        "exampleTranslation": "心配しないでください、大丈夫です。"
+      },
+      {
+        "id": "je_cv_6",
+        "front": "お久しぶりです",
+        "back": "Long time no see",
+        "difficulty": "easy",
+        "example": "Long time no see! How have you been?",
+        "exampleTranslation": "お久しぶりです！お元気でしたか？"
+      },
+      {
+        "id": "je_cv_7",
+        "front": "よろしくお願いします",
+        "back": "Please take care of it",
+        "difficulty": "medium",
+        "example": "I'm new here, please take care of me.",
+        "exampleTranslation": "新入りです、よろしくお願いします。"
+      },
+      {
+        "id": "je_cv_8",
+        "front": "すみませんが",
+        "back": "Excuse me, but...",
+        "difficulty": "medium",
+        "example": "Excuse me, but could you help me?",
+        "exampleTranslation": "すみませんが、手伝ってもらえますか？"
+      },
+      {
+        "id": "je_cv_9",
+        "front": "その通りです",
+        "back": "That's right",
+        "difficulty": "medium",
+        "example": "That's right, the meeting is at three.",
+        "exampleTranslation": "その通りです、会議は三時です。"
+      },
+      {
+        "id": "je_cv_10",
+        "front": "残念ですが",
+        "back": "Unfortunately",
+        "difficulty": "medium",
+        "example": "Unfortunately, I can't come tomorrow.",
+        "exampleTranslation": "残念ですが、明日は行けません。"
+      },
+      {
+        "id": "je_cv_11",
+        "front": "お願いがあります",
+        "back": "I have a favor to ask",
+        "difficulty": "medium",
+        "example": "I have a favor to ask — could you lend me this book?",
+        "exampleTranslation": "お願いがあります。この本を貸していただけますか？"
+      },
+      {
+        "id": "je_cv_12",
+        "front": "気にしないでください",
+        "back": "Don't worry about it",
+        "difficulty": "medium",
+        "example": "It's nothing serious, don't worry about it.",
+        "exampleTranslation": "大したことではないので、気にしないでください。"
+      },
+      {
+        "id": "je_cv_13",
+        "front": "お先に失礼します",
+        "back": "Excuse me for leaving first",
+        "difficulty": "hard",
+        "example": "Excuse me for leaving first. See you tomorrow.",
+        "exampleTranslation": "お先に失礼します。また明日。"
+      },
+      {
+        "id": "je_cv_14",
+        "front": "恐れ入りますが",
+        "back": "I'm sorry to trouble you, but",
+        "difficulty": "hard",
+        "example": "I'm sorry to trouble you, but could you repeat that?",
+        "exampleTranslation": "恐れ入りますが、もう一度言っていただけますか？"
+      },
+      {
+        "id": "je_cv_15",
+        "front": "お疲れ様です",
+        "back": "Thank you for your hard work",
+        "difficulty": "hard",
+        "example": "Thank you for your hard work today.",
+        "exampleTranslation": "今日もお疲れ様です。"
+      }
+    ]
+  },
+  {
+    "key": "questions_asking",
+    "name": "質問",
+    "description": "質問をするための表現",
+    "iconName": "questionmark.circle.fill",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "je_qa_1",
+        "front": "何",
+        "back": "What",
+        "difficulty": "easy",
+        "example": "What is your name?",
+        "exampleTranslation": "お名前は何ですか？"
+      },
+      {
+        "id": "je_qa_2",
+        "front": "どこ",
+        "back": "Where",
+        "difficulty": "easy",
+        "example": "Where is the station?",
+        "exampleTranslation": "駅はどこですか？"
+      },
+      {
+        "id": "je_qa_3",
+        "front": "いつ",
+        "back": "When",
+        "difficulty": "easy",
+        "example": "When does the shop open?",
+        "exampleTranslation": "お店はいつ開きますか？"
+      },
+      {
+        "id": "je_qa_4",
+        "front": "誰",
+        "back": "Who",
+        "difficulty": "easy",
+        "example": "Who is that person?",
+        "exampleTranslation": "あの人は誰ですか？"
+      },
+      {
+        "id": "je_qa_5",
+        "front": "なぜ",
+        "back": "Why",
+        "difficulty": "easy",
+        "example": "Why are you late?",
+        "exampleTranslation": "なぜ遅れたのですか？"
+      },
+      {
+        "id": "je_qa_6",
+        "front": "どうやって",
+        "back": "How",
+        "difficulty": "easy",
+        "example": "How do I get to the airport?",
+        "exampleTranslation": "空港にはどうやって行きますか？"
+      },
+      {
+        "id": "je_qa_7",
+        "front": "いくら",
+        "back": "How much",
+        "difficulty": "medium",
+        "example": "How much is this?",
+        "exampleTranslation": "これはいくらですか？"
+      },
+      {
+        "id": "je_qa_8",
+        "front": "どのくらい",
+        "back": "How long / How much",
+        "difficulty": "medium",
+        "example": "How long does it take to get there?",
+        "exampleTranslation": "そこまでどのくらいかかりますか？"
+      },
+      {
+        "id": "je_qa_9",
+        "front": "何時",
+        "back": "What time",
+        "difficulty": "medium",
+        "example": "What time does the movie start?",
+        "exampleTranslation": "映画は何時に始まりますか？"
+      },
+      {
+        "id": "je_qa_10",
+        "front": "どちら",
+        "back": "Which one",
+        "difficulty": "medium",
+        "example": "Which one would you recommend?",
+        "exampleTranslation": "どちらがおすすめですか？"
+      },
+      {
+        "id": "je_qa_11",
+        "front": "何人",
+        "back": "How many people",
+        "difficulty": "medium",
+        "example": "How many people are coming to the party?",
+        "exampleTranslation": "パーティーには何人来ますか？"
+      },
+      {
+        "id": "je_qa_12",
+        "front": "どんな",
+        "back": "What kind of",
+        "difficulty": "medium",
+        "example": "What kind of music do you like?",
+        "exampleTranslation": "どんな音楽が好きですか？"
+      },
+      {
+        "id": "je_qa_13",
+        "front": "何歳",
+        "back": "How old",
+        "difficulty": "hard",
+        "example": "How old is your child?",
+        "exampleTranslation": "お子さんは何歳ですか？"
+      },
+      {
+        "id": "je_qa_14",
+        "front": "どういう意味",
+        "back": "What does it mean",
+        "difficulty": "hard",
+        "example": "What does this word mean?",
+        "exampleTranslation": "この言葉はどういう意味ですか？"
+      },
+      {
+        "id": "je_qa_15",
+        "front": "何か問題がありますか",
+        "back": "Is there a problem?",
+        "difficulty": "hard",
+        "example": "Is there a problem with the order?",
+        "exampleTranslation": "注文に何か問題がありますか？"
+      }
+    ]
   }
 ]

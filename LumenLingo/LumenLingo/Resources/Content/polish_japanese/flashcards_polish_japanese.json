@@ -2728,5 +2728,655 @@
         "exampleTranslation": "Komedia mnie rozśmiesza."
       }
     ]
+  },
+  {
+    "key": "fruits",
+    "name": "Owoce",
+    "description": "Nazwy popularnych owoców po japońsku",
+    "iconName": "leaf.fill",
+    "color": "#FF6B6B",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_fruit_1",
+        "front": "Jabłko",
+        "back": "りんご",
+        "difficulty": "easy",
+        "example": "りんごはとても甘いです。",
+        "exampleTranslation": "Jabłko jest bardzo słodkie."
+      },
+      {
+        "id": "pj_fruit_2",
+        "front": "Banan",
+        "back": "バナナ",
+        "difficulty": "easy",
+        "example": "朝ごはんにバナナを食べます。",
+        "exampleTranslation": "Na śniadanie jem banana."
+      },
+      {
+        "id": "pj_fruit_3",
+        "front": "Pomarańcza",
+        "back": "オレンジ",
+        "difficulty": "easy",
+        "example": "オレンジジュースが好きです。",
+        "exampleTranslation": "Lubię sok pomarańczowy."
+      },
+      {
+        "id": "pj_fruit_4",
+        "front": "Truskawka",
+        "back": "いちご",
+        "difficulty": "easy",
+        "example": "いちごのケーキを買いました。",
+        "exampleTranslation": "Kupiłem ciasto truskawkowe."
+      },
+      {
+        "id": "pj_fruit_5",
+        "front": "Winogrono",
+        "back": "ぶどう",
+        "difficulty": "easy",
+        "example": "ぶどうでワインを作ります。",
+        "exampleTranslation": "Z winogron robi się wino."
+      },
+      {
+        "id": "pj_fruit_6",
+        "front": "Arbuz",
+        "back": "スイカ",
+        "difficulty": "easy",
+        "example": "夏にスイカを食べるのが好きです。",
+        "exampleTranslation": "Lubię jeść arbuza latem."
+      },
+      {
+        "id": "pj_fruit_7",
+        "front": "Brzoskwinia",
+        "back": "もも",
+        "difficulty": "medium",
+        "example": "このももはとてもジューシーです。",
+        "exampleTranslation": "Ta brzoskwinia jest bardzo soczysta."
+      },
+      {
+        "id": "pj_fruit_8",
+        "front": "Cytryna",
+        "back": "レモン",
+        "difficulty": "medium",
+        "example": "レモンを紅茶に入れます。",
+        "exampleTranslation": "Wkładam cytrynę do herbaty."
+      },
+      {
+        "id": "pj_fruit_9",
+        "front": "Gruszka",
+        "back": "なし",
+        "difficulty": "medium",
+        "example": "日本のなしはとても大きいです。",
+        "exampleTranslation": "Japońskie gruszki są bardzo duże."
+      },
+      {
+        "id": "pj_fruit_10",
+        "front": "Wiśnia",
+        "back": "さくらんぼ",
+        "difficulty": "medium",
+        "example": "さくらんぼの季節が来ました。",
+        "exampleTranslation": "Nadszedł sezon wiśni."
+      },
+      {
+        "id": "pj_fruit_11",
+        "front": "Ananas",
+        "back": "パイナップル",
+        "difficulty": "medium",
+        "example": "パイナップルは南国のフルーツです。",
+        "exampleTranslation": "Ananas to owoc tropikalny."
+      },
+      {
+        "id": "pj_fruit_12",
+        "front": "Mango",
+        "back": "マンゴー",
+        "difficulty": "medium",
+        "example": "マンゴーアイスを食べたいです。",
+        "exampleTranslation": "Chciałbym zjeść lody mango."
+      },
+      {
+        "id": "pj_fruit_13",
+        "front": "Śliwka",
+        "back": "プラム",
+        "difficulty": "hard",
+        "example": "プラムジャムを作りましょう。",
+        "exampleTranslation": "Zróbmy dżem śliwkowy."
+      },
+      {
+        "id": "pj_fruit_14",
+        "front": "Kiwi",
+        "back": "キウイ",
+        "difficulty": "hard",
+        "example": "キウイにはビタミンCがたくさん含まれています。",
+        "exampleTranslation": "Kiwi zawiera dużo witaminy C."
+      },
+      {
+        "id": "pj_fruit_15",
+        "front": "Melon",
+        "back": "メロン",
+        "difficulty": "hard",
+        "example": "日本ではメロンがとても高いです。",
+        "exampleTranslation": "W Japonii melony są bardzo drogie."
+      }
+    ]
+  },
+  {
+    "key": "vegetables",
+    "name": "Warzywa",
+    "description": "Nazwy popularnych warzyw po japońsku",
+    "iconName": "carrot.fill",
+    "color": "#4ECDC4",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_veg_1",
+        "front": "Pomidor",
+        "back": "トマト",
+        "difficulty": "easy",
+        "example": "サラダにトマトを入れます。",
+        "exampleTranslation": "Wkładam pomidora do sałatki."
+      },
+      {
+        "id": "pj_veg_2",
+        "front": "Marchew",
+        "back": "にんじん",
+        "difficulty": "easy",
+        "example": "にんじんは目にいいです。",
+        "exampleTranslation": "Marchew jest dobra dla oczu."
+      },
+      {
+        "id": "pj_veg_3",
+        "front": "Ziemniak",
+        "back": "じゃがいも",
+        "difficulty": "easy",
+        "example": "じゃがいもをゆでてください。",
+        "exampleTranslation": "Proszę ugotować ziemniaki."
+      },
+      {
+        "id": "pj_veg_4",
+        "front": "Cebula",
+        "back": "たまねぎ",
+        "difficulty": "easy",
+        "example": "たまねぎを切ると涙が出ます。",
+        "exampleTranslation": "Kiedy kroję cebulę, łzy mi lecą."
+      },
+      {
+        "id": "pj_veg_5",
+        "front": "Ogórek",
+        "back": "きゅうり",
+        "difficulty": "easy",
+        "example": "きゅうりは夏の野菜です。",
+        "exampleTranslation": "Ogórek to warzywo letnie."
+      },
+      {
+        "id": "pj_veg_6",
+        "front": "Kapusta",
+        "back": "キャベツ",
+        "difficulty": "easy",
+        "example": "キャベツの千切りを作りました。",
+        "exampleTranslation": "Pokroiłem kapustę w paski."
+      },
+      {
+        "id": "pj_veg_7",
+        "front": "Papryka",
+        "back": "ピーマン",
+        "difficulty": "medium",
+        "example": "赤いピーマンが一番甘いです。",
+        "exampleTranslation": "Czerwona papryka jest najsłodsza."
+      },
+      {
+        "id": "pj_veg_8",
+        "front": "Szpinak",
+        "back": "ほうれんそう",
+        "difficulty": "medium",
+        "example": "ほうれんそうは鉄分が多いです。",
+        "exampleTranslation": "Szpinak jest bogaty w żelazo."
+      },
+      {
+        "id": "pj_veg_9",
+        "front": "Grzyb",
+        "back": "きのこ",
+        "difficulty": "medium",
+        "example": "きのこの味噌汁を作りましょう。",
+        "exampleTranslation": "Zróbmy zupę miso z grzybami."
+      },
+      {
+        "id": "pj_veg_10",
+        "front": "Czosnek",
+        "back": "にんにく",
+        "difficulty": "medium",
+        "example": "にんにくは料理の味を良くします。",
+        "exampleTranslation": "Czosnek poprawia smak potraw."
+      },
+      {
+        "id": "pj_veg_11",
+        "front": "Sałata",
+        "back": "レタス",
+        "difficulty": "medium",
+        "example": "ハンバーガーにレタスを挟みます。",
+        "exampleTranslation": "Do hamburgera wkładam sałatę."
+      },
+      {
+        "id": "pj_veg_12",
+        "front": "Kukurydza",
+        "back": "とうもろこし",
+        "difficulty": "medium",
+        "example": "とうもろこしを焼いて食べます。",
+        "exampleTranslation": "Jem grillowaną kukurydzę."
+      },
+      {
+        "id": "pj_veg_13",
+        "front": "Bakłażan",
+        "back": "なす",
+        "difficulty": "hard",
+        "example": "なすの天ぷらがおいしいです。",
+        "exampleTranslation": "Tempura z bakłażana jest pyszna."
+      },
+      {
+        "id": "pj_veg_14",
+        "front": "Dynia",
+        "back": "かぼちゃ",
+        "difficulty": "hard",
+        "example": "ハロウィンにかぼちゃを飾ります。",
+        "exampleTranslation": "Na Halloween dekorujemy dyniami."
+      },
+      {
+        "id": "pj_veg_15",
+        "front": "Rzodkiewka",
+        "back": "大根",
+        "difficulty": "hard",
+        "example": "大根おろしを魚に添えます。",
+        "exampleTranslation": "Podaję startą rzodkiewkę do ryby."
+      }
+    ]
+  },
+  {
+    "key": "animals",
+    "name": "Zwierzęta",
+    "description": "Nazwy zwierząt po japońsku",
+    "iconName": "pawprint.fill",
+    "color": "#95E1D3",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_anim_1",
+        "front": "Pies",
+        "back": "犬（いぬ）",
+        "difficulty": "easy",
+        "example": "犬と公園で散歩します。",
+        "exampleTranslation": "Spaceram z psem w parku."
+      },
+      {
+        "id": "pj_anim_2",
+        "front": "Kot",
+        "back": "猫（ねこ）",
+        "difficulty": "easy",
+        "example": "猫がソファで寝ています。",
+        "exampleTranslation": "Kot śpi na kanapie."
+      },
+      {
+        "id": "pj_anim_3",
+        "front": "Ptak",
+        "back": "鳥（とり）",
+        "difficulty": "easy",
+        "example": "鳥が木の上で歌っています。",
+        "exampleTranslation": "Ptak śpiewa na drzewie."
+      },
+      {
+        "id": "pj_anim_4",
+        "front": "Ryba",
+        "back": "魚（さかな）",
+        "difficulty": "easy",
+        "example": "川で魚を釣りました。",
+        "exampleTranslation": "Złowiłem rybę w rzece."
+      },
+      {
+        "id": "pj_anim_5",
+        "front": "Koń",
+        "back": "馬（うま）",
+        "difficulty": "easy",
+        "example": "馬に乗るのが好きです。",
+        "exampleTranslation": "Lubię jeździć konno."
+      },
+      {
+        "id": "pj_anim_6",
+        "front": "Krowa",
+        "back": "牛（うし）",
+        "difficulty": "easy",
+        "example": "牛から牛乳をもらいます。",
+        "exampleTranslation": "Od krowy dostajemy mleko."
+      },
+      {
+        "id": "pj_anim_7",
+        "front": "Królik",
+        "back": "うさぎ",
+        "difficulty": "medium",
+        "example": "うさぎはにんじんが大好きです。",
+        "exampleTranslation": "Króliki uwielbiają marchewki."
+      },
+      {
+        "id": "pj_anim_8",
+        "front": "Żółw",
+        "back": "亀（かめ）",
+        "difficulty": "medium",
+        "example": "亀はとてもゆっくり歩きます。",
+        "exampleTranslation": "Żółw chodzi bardzo wolno."
+      },
+      {
+        "id": "pj_anim_9",
+        "front": "Motyl",
+        "back": "蝶（ちょう）",
+        "difficulty": "medium",
+        "example": "きれいな蝶が花に止まりました。",
+        "exampleTranslation": "Piękny motyl usiadł na kwiatku."
+      },
+      {
+        "id": "pj_anim_10",
+        "front": "Małpa",
+        "back": "猿（さる）",
+        "difficulty": "medium",
+        "example": "猿は木登りが上手です。",
+        "exampleTranslation": "Małpy dobrze wspinają się na drzewa."
+      },
+      {
+        "id": "pj_anim_11",
+        "front": "Niedźwiedź",
+        "back": "熊（くま）",
+        "difficulty": "medium",
+        "example": "山に熊がいるので注意してください。",
+        "exampleTranslation": "Uważaj, w górach są niedźwiedzie."
+      },
+      {
+        "id": "pj_anim_12",
+        "front": "Lew",
+        "back": "ライオン",
+        "difficulty": "medium",
+        "example": "ライオンは動物の王様です。",
+        "exampleTranslation": "Lew jest królem zwierząt."
+      },
+      {
+        "id": "pj_anim_13",
+        "front": "Słoń",
+        "back": "象（ぞう）",
+        "difficulty": "hard",
+        "example": "象は記憶力がとても良いです。",
+        "exampleTranslation": "Słonie mają bardzo dobrą pamięć."
+      },
+      {
+        "id": "pj_anim_14",
+        "front": "Wilk",
+        "back": "狼（おおかみ）",
+        "difficulty": "hard",
+        "example": "狼は群れで行動します。",
+        "exampleTranslation": "Wilki działają w stadzie."
+      },
+      {
+        "id": "pj_anim_15",
+        "front": "Orzeł",
+        "back": "鷲（わし）",
+        "difficulty": "hard",
+        "example": "鷲が空高く飛んでいます。",
+        "exampleTranslation": "Orzeł leci wysoko na niebie."
+      }
+    ]
+  },
+  {
+    "key": "drinks",
+    "name": "Napoje",
+    "description": "Nazwy napojów po japońsku",
+    "iconName": "cup.and.saucer.fill",
+    "color": "#3498DB",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_drink_1",
+        "front": "Woda",
+        "back": "水（みず）",
+        "difficulty": "easy",
+        "example": "水をください。",
+        "exampleTranslation": "Poproszę wodę."
+      },
+      {
+        "id": "pj_drink_2",
+        "front": "Herbata",
+        "back": "お茶（おちゃ）",
+        "difficulty": "easy",
+        "example": "日本のお茶はとてもおいしいです。",
+        "exampleTranslation": "Japońska herbata jest bardzo smaczna."
+      },
+      {
+        "id": "pj_drink_3",
+        "front": "Kawa",
+        "back": "コーヒー",
+        "difficulty": "easy",
+        "example": "毎朝コーヒーを飲みます。",
+        "exampleTranslation": "Pijam kawę każdego ranka."
+      },
+      {
+        "id": "pj_drink_4",
+        "front": "Mleko",
+        "back": "牛乳（ぎゅうにゅう）",
+        "difficulty": "easy",
+        "example": "牛乳をコーヒーに入れますか？",
+        "exampleTranslation": "Dodajesz mleko do kawy?"
+      },
+      {
+        "id": "pj_drink_5",
+        "front": "Sok",
+        "back": "ジュース",
+        "difficulty": "easy",
+        "example": "オレンジジュースを注文しました。",
+        "exampleTranslation": "Zamówiłem sok pomarańczowy."
+      },
+      {
+        "id": "pj_drink_6",
+        "front": "Piwo",
+        "back": "ビール",
+        "difficulty": "easy",
+        "example": "仕事の後にビールを飲みましょう。",
+        "exampleTranslation": "Napijmy się piwa po pracy."
+      },
+      {
+        "id": "pj_drink_7",
+        "front": "Wino",
+        "back": "ワイン",
+        "difficulty": "medium",
+        "example": "赤ワインと白ワイン、どちらがいいですか？",
+        "exampleTranslation": "Wolisz wino czerwone czy białe?"
+      },
+      {
+        "id": "pj_drink_8",
+        "front": "Zielona herbata",
+        "back": "緑茶（りょくちゃ）",
+        "difficulty": "medium",
+        "example": "緑茶は健康にいいです。",
+        "exampleTranslation": "Zielona herbata jest zdrowa."
+      },
+      {
+        "id": "pj_drink_9",
+        "front": "Sake",
+        "back": "日本酒（にほんしゅ）",
+        "difficulty": "medium",
+        "example": "日本酒は米から作られます。",
+        "exampleTranslation": "Sake jest robione z ryżu."
+      },
+      {
+        "id": "pj_drink_10",
+        "front": "Herbata mrożona",
+        "back": "アイスティー",
+        "difficulty": "medium",
+        "example": "暑い日にはアイスティーが最高です。",
+        "exampleTranslation": "W gorący dzień mrożona herbata jest najlepsza."
+      },
+      {
+        "id": "pj_drink_11",
+        "front": "Kakao",
+        "back": "ココア",
+        "difficulty": "medium",
+        "example": "冬にはココアを飲みます。",
+        "exampleTranslation": "Zimą piję kakao."
+      },
+      {
+        "id": "pj_drink_12",
+        "front": "Lemoniada",
+        "back": "レモネード",
+        "difficulty": "medium",
+        "example": "レモネードを自分で作りました。",
+        "exampleTranslation": "Sam zrobiłem lemoniadę."
+      },
+      {
+        "id": "pj_drink_13",
+        "front": "Koktajl",
+        "back": "カクテル",
+        "difficulty": "hard",
+        "example": "バーでカクテルを注文しました。",
+        "exampleTranslation": "Zamówiłem koktajl w barze."
+      },
+      {
+        "id": "pj_drink_14",
+        "front": "Napój gazowany",
+        "back": "炭酸飲料（たんさんいんりょう）",
+        "difficulty": "hard",
+        "example": "炭酸飲料は歯に良くないです。",
+        "exampleTranslation": "Napoje gazowane nie są dobre dla zębów."
+      },
+      {
+        "id": "pj_drink_15",
+        "front": "Smoothie",
+        "back": "スムージー",
+        "difficulty": "hard",
+        "example": "フルーツのスムージーを作ります。",
+        "exampleTranslation": "Robię smoothie z owoców."
+      }
+    ]
+  },
+  {
+    "key": "seasons",
+    "name": "Pory roku",
+    "description": "Słownictwo związane z porami roku po japońsku",
+    "iconName": "cloud.sun.fill",
+    "color": "#F39C12",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_seas_1",
+        "front": "Wiosna",
+        "back": "春（はる）",
+        "difficulty": "easy",
+        "example": "春になると桜が咲きます。",
+        "exampleTranslation": "Wiosną kwitną wiśnie."
+      },
+      {
+        "id": "pj_seas_2",
+        "front": "Lato",
+        "back": "夏（なつ）",
+        "difficulty": "easy",
+        "example": "夏は暑いです。",
+        "exampleTranslation": "Lato jest gorące."
+      },
+      {
+        "id": "pj_seas_3",
+        "front": "Jesień",
+        "back": "秋（あき）",
+        "difficulty": "easy",
+        "example": "秋は紅葉がきれいです。",
+        "exampleTranslation": "Jesienią liście pięknie się zmieniają."
+      },
+      {
+        "id": "pj_seas_4",
+        "front": "Zima",
+        "back": "冬（ふゆ）",
+        "difficulty": "easy",
+        "example": "冬には雪が降ります。",
+        "exampleTranslation": "Zimą pada śnieg."
+      },
+      {
+        "id": "pj_seas_5",
+        "front": "Kwiat wiśni",
+        "back": "桜（さくら）",
+        "difficulty": "easy",
+        "example": "桜の季節にお花見をします。",
+        "exampleTranslation": "W sezonie kwitnienia wiśni urządzamy hanami."
+      },
+      {
+        "id": "pj_seas_6",
+        "front": "Liść",
+        "back": "葉（は）",
+        "difficulty": "easy",
+        "example": "秋になると葉が赤くなります。",
+        "exampleTranslation": "Jesienią liście robią się czerwone."
+      },
+      {
+        "id": "pj_seas_7",
+        "front": "Pora deszczowa",
+        "back": "梅雨（つゆ）",
+        "difficulty": "medium",
+        "example": "六月は梅雨の季節です。",
+        "exampleTranslation": "Czerwiec to pora deszczowa."
+      },
+      {
+        "id": "pj_seas_8",
+        "front": "Festiwal",
+        "back": "祭り（まつり）",
+        "difficulty": "medium",
+        "example": "夏祭りに行きました。",
+        "exampleTranslation": "Poszedłem na letni festiwal."
+      },
+      {
+        "id": "pj_seas_9",
+        "front": "Fajerwerki",
+        "back": "花火（はなび）",
+        "difficulty": "medium",
+        "example": "夏に花火大会があります。",
+        "exampleTranslation": "Latem odbywają się pokazy fajerwerków."
+      },
+      {
+        "id": "pj_seas_10",
+        "front": "Bałwan",
+        "back": "雪だるま（ゆきだるま）",
+        "difficulty": "medium",
+        "example": "子供たちが雪だるまを作っています。",
+        "exampleTranslation": "Dzieci lepią bałwana."
+      },
+      {
+        "id": "pj_seas_11",
+        "front": "Kwitnąć",
+        "back": "咲く（さく）",
+        "difficulty": "medium",
+        "example": "花が咲くのを見るのが好きです。",
+        "exampleTranslation": "Lubię patrzeć, jak kwiaty kwitną."
+      },
+      {
+        "id": "pj_seas_12",
+        "front": "Gorąco",
+        "back": "暑い（あつい）",
+        "difficulty": "medium",
+        "example": "今日はとても暑いですね。",
+        "exampleTranslation": "Dzisiaj jest bardzo gorąco, prawda?"
+      },
+      {
+        "id": "pj_seas_13",
+        "front": "Zimno",
+        "back": "寒い（さむい）",
+        "difficulty": "hard",
+        "example": "今朝はとても寒いです。",
+        "exampleTranslation": "Dzisiejszy poranek jest bardzo zimny."
+      },
+      {
+        "id": "pj_seas_14",
+        "front": "Przesilenie letnie",
+        "back": "夏至（げし）",
+        "difficulty": "hard",
+        "example": "夏至は一年で一番昼が長い日です。",
+        "exampleTranslation": "Przesilenie letnie to najdłuższy dzień w roku."
+      },
+      {
+        "id": "pj_seas_15",
+        "front": "Tajfun",
+        "back": "台風（たいふう）",
+        "difficulty": "hard",
+        "example": "秋に台風がよく来ます。",
+        "exampleTranslation": "Jesienią często przychodzą tajfuny."
+      }
+    ]
   }
 ]

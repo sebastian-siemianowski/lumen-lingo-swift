@@ -615,24 +615,24 @@ Before adding new categories, upgrade existing 20-21 categories from 10 to 15 it
 
 | # | Pair | Front Lang | Cats | Items | Target Cats | Target Items | Batches | Status |
 |---|------|-----------|------|-------|------------|-------------|---------|--------|
-| 1 | arabic_english | Arabic | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 2 | chinese_english | Chinese | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 3 | english_arabic | English | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 4 | english_chinese | English | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 5 | english_french | English | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 6 | english_german | English | 20/100 | 300/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 7 | english_japanese | English | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 8 | english_polish | English | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 9 | french_english | French | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 10 | german_polish | German | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 11 | japanese_english | Japanese | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 12 | polish_arabic | Polish | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 13 | polish_chinese | Polish | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 14 | polish_french | Polish | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 15 | polish_japanese | Polish | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 16 | polish_ukrainian | Polish | 20/100 | 300/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 17 | ukrainian_english | Ukrainian | 20/100 | 300/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 18 | ukrainian_polish | Ukrainian | 20/100 | 300/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 1 | arabic_english | Arabic | 100/100 | 1500/1500 | 100 | 1500 | 16/16 | ✅ |
+| 2 | chinese_english | Chinese | 100/100 | 1500/1500 | 100 | 1500 | 16/16 | ✅ |
+| 3 | english_arabic | English | 100/100 | 1500/1500 | 100 | 1500 | 16/16 | ✅ |
+| 4 | english_chinese | English | 100/100 | 1500/1500 | 100 | 1500 | 16/16 | ✅ |
+| 5 | english_french | English | 100/100 | 1500/1500 | 100 | 1500 | 16/16 | ✅ |
+| 6 | english_german | English | 100/100 | 1500/1500 | 100 | 1500 | 16/16 | ✅ |
+| 7 | english_japanese | English | 100/100 | 1500/1500 | 100 | 1500 | 16/16 | ✅ |
+| 8 | english_polish | English | 100/100 | 1500/1500 | 100 | 1500 | 16/16 | ✅ |
+| 9 | french_english | French | 100/100 | 1500/1500 | 100 | 1500 | 16/16 | ✅ |
+| 10 | german_polish | German | 100/100 | 1500/1500 | 100 | 1500 | 16/16 | ✅ |
+| 11 | japanese_english | Japanese | 21/100 | 315/1500 | 100 | 1500 | 0/16 | 🔄 |
+| 12 | polish_arabic | Polish | 21/100 | 315/1500 | 100 | 1500 | 0/16 | 🔄 |
+| 13 | polish_chinese | Polish | 26/100 | 390/1500 | 100 | 1500 | 1/16 | 🔄 |
+| 14 | polish_french | Polish | 26/100 | 390/1500 | 100 | 1500 | 1/16 | 🔄 |
+| 15 | polish_japanese | Polish | 21/100 | 315/1500 | 100 | 1500 | 0/16 | 🔄 |
+| 16 | polish_ukrainian | Polish | 20/100 | 300/1500 | 100 | 1500 | 0/16 | 🔄 |
+| 17 | ukrainian_english | Ukrainian | 20/100 | 300/1500 | 100 | 1500 | 0/16 | 🔄 |
+| 18 | ukrainian_polish | Ukrainian | 20/100 | 300/1500 | 100 | 1500 | 0/16 | 🔄 |
 
 ## Main Pairs (Complete - Reference)
 
@@ -690,6 +690,329 @@ Reference: polish_spanish has 135 categories. Target domains for new categories:
 8. Categories tailored to source→target language pair vocabulary
 
 ---
+
+### english_french (Flashcards) — ✅ COMPLETE
+Front language: English, Back language: French. Target: 100 categories, 1500 items.
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 0 | (existing 21: greetings, family, numbers, colors, food, house, places, clothing, work, transport, education, nature, emotions, time, weather, body, activities, learning, sports, travel, entertainment) | ✅ |
+| 1 | fruits, vegetables, animals, drinks, seasons | ✅ |
+| 2 | daily_routine, meals, desserts, conversations, questions_asking | ✅ |
+| 3 | accessories, pets_animals, beach_sea, everyday_objects, school_supplies | ✅ |
+| 4 | containers_packaging, common_actions, shapes_geometry, measurements_sizes, opposites | ✅ |
+| 5 | leisure_free_time, cafe_coffee, cleaning_housework, bedroom_sleep, children_babies | ✅ |
+| 6 | professions, restaurant, health, city, hobbies | ✅ |
+| 7 | technology, cooking, office, directions, computers_internet | ✅ |
+| 8 | reading_books, movies_cinema, music_instruments, art_creativity, goals_dreams | ✅ |
+| 9 | friendship, feelings_moods, celebrations, money_shopping, garden_plants | ✅ |
+| 10 | mountains_hiking, mail_post, time_expressions, social_relationships, car_driving | ✅ |
+| 11 | holidays_traditions, music_dance, doctor_medical, beauty_cosmetics, relationships_love | ✅ |
+| 12 | phone_communication, religion_spirituality, problems_solutions, describing_people, apartment_living | ✅ |
+| 13 | personality_traits, learning_education, tools_diy, documents_forms, safety_emergencies | ✅ |
+| 14 | banking_services, nature_environment, internet_social, professions_careers, ideas_creativity | ✅ |
+| 15 | opinions_debates, work_office_advanced, energy_power, social_gatherings, materials_substances | ✅ |
+| 16 | special_occasions, personality_character, opinions_thoughts, common_errors | ✅ |
+
+---
+
+### french_english (Flashcards) — ✅ COMPLETE
+Front language: French, Back language: English. Target: 100 categories, 1500 items.
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 0 | (existing 21: greetings, family, numbers, colors, food, house, places, clothing, work, transport, education, nature, emotions, time, weather, body, activities, learning, sports, travel, entertainment) | ✅ |
+| 1 | fruits, vegetables, animals, drinks, seasons | ✅ |
+| 2 | daily_routine, meals, desserts, conversations, questions_asking | ✅ |
+| 3 | accessories, pets_animals, beach_sea, everyday_objects, school_supplies | ✅ |
+| 4 | containers_packaging, common_actions, shapes_geometry, measurements_sizes, opposites | ✅ |
+| 5 | leisure_free_time, cafe_coffee, cleaning_housework, bedroom_sleep, children_babies | ✅ |
+| 6 | professions, restaurant, health, city, hobbies | ✅ |
+| 7 | technology, cooking, office, directions, computers_internet | ✅ |
+| 8 | reading_books, movies_cinema, music_instruments, art_creativity, goals_dreams | ✅ |
+| 9 | friendship, feelings_moods, celebrations, money_shopping, garden_plants | ✅ |
+| 10 | mountains_hiking, mail_post, time_expressions, social_relationships, car_driving | ✅ |
+| 11 | holidays_traditions, music_dance, doctor_medical, beauty_cosmetics, relationships_love | ✅ |
+| 12 | phone_communication, religion_spirituality, problems_solutions, describing_people, apartment_living | ✅ |
+| 13 | personality_traits, learning_education, tools_diy, documents_forms, safety_emergencies | ✅ |
+| 14 | banking_services, nature_environment, internet_technology, professions_jobs, ideas_creativity | ✅ |
+| 15 | opinions_beliefs, work_office_advanced, energy_power, social_gatherings, materials_substances | ✅ |
+| 16 | special_occasions, personality_character, opinions_thoughts, common_errors | ✅ |
+
+---
+
+### english_japanese (Flashcards) — ✅ COMPLETE
+Front language: English, Back language: Japanese. Target: 100 categories, 1500 items. **DONE: 100 categories, 1500 items.**
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 0 | (existing 21: greetings, family, numbers, colors, food, house, places, clothing, work, transport, education, nature, emotions, time, weather, body, activities, learning, sports, travel, entertainment) | ✅ |
+| 1 | fruits, vegetables, animals, drinks, seasons | ✅ |
+| 2 | daily_routine, meals, desserts, conversations, questions_asking | ✅ |
+| 3 | accessories, pets_animals, beach_sea, everyday_objects, school_supplies | ✅ |
+| 4 | containers_packaging, common_actions, shapes_geometry, measurements_sizes, opposites | ✅ |
+| 5 | leisure_free_time, cafe_coffee, cleaning_housework, bedroom_sleep, children_babies | ✅ |
+| 6 | professions, restaurant, health, city, hobbies | ✅ |
+| 7 | technology_devices, cooking, office, directions, computers_internet | ✅ |
+| 8 | reading_books, movies_cinema, music_instruments, art_creativity, goals_dreams | ✅ |
+| 9 | friendship, feelings_moods, celebrations, money_shopping, garden_plants | ✅ |
+| 10 | mountains_hiking, mail_post, time_expressions, social_relationships, car_driving | ✅ |
+| 11 | holidays_traditions, music_dance, doctor_medical, beauty_cosmetics, relationships_love | ✅ |
+| 12 | phone_communication, religion_spirituality, problems_solutions, describing_people, apartment_living | ✅ |
+| 13 | personality_traits, learning_education, tools_diy, documents_forms, safety_emergencies | ✅ |
+| 14 | banking_services, nature_environment, internet_culture, professions_advanced, ideas_creativity | ✅ |
+| 15 | opinions_beliefs, work_office_advanced, energy_power, social_gatherings, materials_substances | ✅ |
+| 16 | special_occasions, personality_character, common_mistakes, japanese_culture | ✅ |
+
+---
+
+### german_polish (Flashcards) — ✅ COMPLETE
+Front language: German, Back language: Polish. Target: 100 categories, 1500 items. **DONE: 100 categories, 1500 items.**
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 0 | (existing 21: greetings, family, numbers, colors, food, house, places, clothing, work, transport, education, nature, emotions, time, weather, body, activities, learning, sports, travel, entertainment) | ✅ |
+| 1 | fruits, vegetables, animals, drinks, seasons | ✅ |
+| 2 | daily_routine, meals, desserts, conversations, questions_asking | ✅ |
+| 3 | accessories, pets_animals, beach_sea, everyday_objects, school_supplies | ✅ |
+| 4 | containers_packaging, common_actions, shapes_geometry, measurements_sizes, opposites | ✅ |
+| 5 | leisure_free_time, cafe_coffee, cleaning_housework, bedroom_sleep, children_babies | ✅ |
+| 6 | professions, restaurant, health, city, hobbies | ✅ |
+| 7 | technology, cooking, office, directions, computers_internet | ✅ |
+| 8 | reading_books, movies_cinema, music_instruments, art_creativity, goals_dreams | ✅ |
+| 9 | friendship, feelings_moods, celebrations, money_shopping, garden_plants | ✅ |
+| 10 | mountains_hiking, mail_post, time_expressions, social_relationships, car_driving | ✅ |
+| 11 | holidays_traditions, music_dance, doctor_medical, beauty_cosmetics, relationships_love | ✅ |
+| 12 | phone_communication, religion_spirituality, problems_solutions, describing_people, apartment_living | ✅ |
+| 13 | personality_traits, learning_education, tools_diy, documents_forms, safety_emergencies | ✅ |
+| 14 | banking_services, nature_environment, internet_social, advanced_professions, ideas_creativity | ✅ |
+| 15 | opinions_debates, work_advanced, energy_power, social_gatherings, materials_substances | ✅ |
+| 16 | special_occasions, personality_character, common_mistakes, proverbs_sayings | ✅ |
+
+---
+
+### japanese_english (Flashcards) — 🔄 IN PROGRESS
+Front language: Japanese, Back language: English. Target: 100 categories, 1500 items.
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 0 | (existing 21: greetings, family, numbers, colors, food, house, places, clothing, work, transport, education, nature, emotions, time, weather, body, activities, learning, sports, travel, entertainment) | ✅ |
+| 1 | fruits, vegetables, animals, drinks, seasons | ✅ |
+| 2 | daily_routine, meals, desserts, conversations, questions_asking | ✅ |
+| 3 | accessories, pets_animals, beach_sea, everyday_objects, school_supplies | ⬜ |
+| 4 | containers_packaging, common_actions, shapes_geometry, measurements_sizes, opposites | ⬜ |
+| 5 | leisure_free_time, cafe_coffee, cleaning_housework, bedroom_sleep, children_babies | ⬜ |
+| 6 | professions, restaurant, health, city, hobbies | ⬜ |
+| 7 | technology, cooking, office, directions, computers_internet | ⬜ |
+| 8 | reading_books, movies_cinema, music_instruments, art_creativity, goals_dreams | ⬜ |
+| 9 | friendship, feelings_moods, celebrations, money_shopping, garden_plants | ⬜ |
+| 10 | mountains_hiking, mail_post, time_expressions, social_relationships, car_driving | ⬜ |
+| 11 | holidays_traditions, music_dance, doctor_medical, beauty_cosmetics, relationships_love | ⬜ |
+| 12 | phone_communication, religion_spirituality, problems_solutions, describing_people, apartment_living | ⬜ |
+| 13 | personality_traits, learning_education, tools_diy, documents_forms, safety_emergencies | ⬜ |
+| 14 | banking_services, nature_environment, internet_technology, professions_jobs, ideas_creativity | ⬜ |
+| 15 | opinions_beliefs, work_office_advanced, energy_power, social_gatherings, materials_substances | ⬜ |
+| 16 | special_occasions, personality_character, opinions_thoughts, common_errors | ⬜ |
+
+---
+
+### english_polish (Flashcards) — ✅ COMPLETE
+Front language: English, Back language: Polish. Target: 100 categories, 1500 items. **DONE: 100 categories, 1500 items.**
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 0 | (existing 21: greetings, family, numbers, colors, food, house, places, clothing, work, transport, education, nature, emotions, time, weather, body, activities, learning, sports, travel, entertainment) | ✅ |
+| 1 | fruits, vegetables, animals, drinks, seasons | ✅ |
+| 2 | daily_routine, meals, desserts, conversations, questions_asking | ✅ |
+| 3 | accessories, pets_animals, beach_sea, everyday_objects, school_supplies | ✅ |
+| 4 | containers_packaging, common_actions, shapes_geometry, measurements_sizes, opposites | ✅ |
+| 5 | leisure_free_time, cafe_coffee, cleaning_housework, bedroom_sleep, children_babies | ✅ |
+| 6 | professions, restaurant, health, city, hobbies | ✅ |
+| 7 | technology_devices, cooking, office, directions, computers_internet | ✅ |
+| 8 | reading_books, movies_cinema, music_instruments, art_creativity, goals_dreams | ✅ |
+| 9 | friendship, feelings_moods, celebrations, money_shopping, garden_plants | ✅ |
+| 10 | mountains_hiking, mail_post, time_expressions, social_relationships, car_driving | ✅ |
+| 11 | holidays_traditions, music_dance, doctor_medical, beauty_cosmetics, relationships_love | ✅ |
+| 12 | phone_communication, religion_spirituality, problems_solutions, describing_people, apartment_living | ✅ |
+| 13 | personality_traits, learning_education, tools_diy, documents_forms, safety_emergencies | ✅ |
+| 14 | banking_services, nature_environment, sewing_crafts, architecture_buildings, law_justice | ✅ |
+| 15 | opinions_beliefs, energy_power, social_gatherings, materials_substances, media_news | ✅ |
+| 16 | special_occasions, common_errors, astronomy_space, polish_culture | ✅ |
+
+---
+
+### polish_arabic (Flashcards) — 🔄 IN PROGRESS
+Front language: Polish, Back language: Arabic. Target: 100 categories, 1500 items.
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 0 | (existing 21: greetings, family, numbers, colors, food, house, places, clothing, work, transport, education, nature, emotions, time, weather, body, activities, learning, sports, travel, entertainment) | ✅ |
+| 1 | fruits, vegetables, animals, drinks, seasons | ⬜ |
+| 2 | daily_routine, meals, desserts, conversations, questions_asking | ⬜ |
+| 3 | accessories, pets_animals, beach_sea, everyday_objects, school_supplies | ⬜ |
+| 4 | containers_packaging, common_actions, shapes_geometry, measurements_sizes, opposites | ⬜ |
+| 5 | leisure_free_time, cafe_coffee, cleaning_housework, bedroom_sleep, children_babies | ⬜ |
+| 6 | professions, restaurant, health, city, hobbies | ⬜ |
+| 7 | technology, cooking, office, directions, computers_internet | ⬜ |
+| 8 | reading_books, movies_cinema, music_instruments, art_creativity, goals_dreams | ⬜ |
+| 9 | friendship, feelings_moods, celebrations, money_shopping, garden_plants | ⬜ |
+| 10 | mountains_hiking, mail_post, time_expressions, social_relationships, car_driving | ⬜ |
+| 11 | holidays_traditions, music_dance, doctor_medical, beauty_cosmetics, relationships_love | ⬜ |
+| 12 | phone_communication, religion_spirituality, problems_solutions, describing_people, apartment_living | ⬜ |
+| 13 | personality_traits, learning_education, tools_diy, documents_forms, safety_emergencies | ⬜ |
+| 14 | banking_services, nature_environment, internet_technology, professions_jobs, ideas_creativity | ⬜ |
+| 15 | opinions_beliefs, work_office_advanced, energy_power, social_gatherings, materials_substances | ⬜ |
+| 16 | special_occasions, personality_character, opinions_thoughts, common_errors | ⬜ |
+
+---
+
+### polish_french (Flashcards) — 🔄 IN PROGRESS
+Front language: Polish, Back language: French. Target: 100 categories, 1500 items.
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 0 | (existing 21: greetings, family, numbers, colors, food, house, places, clothing, work, transport, education, nature, emotions, time, weather, body, activities, learning, sports, travel, entertainment) | ✅ |
+| 1 | fruits, vegetables, animals, drinks, seasons | ✅ |
+| 2 | daily_routine, meals, desserts, conversations, questions_asking | ⬜ |
+| 3 | accessories, pets_animals, beach_sea, everyday_objects, school_supplies | ⬜ |
+| 4 | containers_packaging, common_actions, shapes_geometry, measurements_sizes, opposites | ⬜ |
+| 5 | leisure_free_time, cafe_coffee, cleaning_housework, bedroom_sleep, children_babies | ⬜ |
+| 6 | professions, restaurant, health, city, hobbies | ⬜ |
+| 7 | technology, cooking, office, directions, computers_internet | ⬜ |
+| 8 | reading_books, movies_cinema, music_instruments, art_creativity, goals_dreams | ⬜ |
+| 9 | friendship, feelings_moods, celebrations, money_shopping, garden_plants | ⬜ |
+| 10 | mountains_hiking, mail_post, time_expressions, social_relationships, car_driving | ⬜ |
+| 11 | holidays_traditions, music_dance, doctor_medical, beauty_cosmetics, relationships_love | ⬜ |
+| 12 | phone_communication, religion_spirituality, problems_solutions, describing_people, apartment_living | ⬜ |
+| 13 | personality_traits, learning_education, tools_diy, documents_forms, safety_emergencies | ⬜ |
+| 14 | banking_services, nature_environment, internet_technology, professions_jobs, ideas_creativity | ⬜ |
+| 15 | opinions_beliefs, work_office_advanced, energy_power, social_gatherings, materials_substances | ⬜ |
+| 16 | special_occasions, personality_character, opinions_thoughts, french_culture | ⬜ |
+
+---
+
+### polish_chinese (Flashcards) — 🔄 IN PROGRESS
+Front language: Polish, Back language: Chinese. Target: 100 categories, 1500 items.
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 0 | (existing 21: greetings, family, numbers, colors, food, house, places, clothing, work, transport, education, nature, emotions, time, weather, body, activities, learning, sports, travel, entertainment) | ✅ |
+| 1 | fruits, vegetables, animals, drinks, seasons | ✅ |
+| 2 | daily_routine, meals, desserts, conversations, questions_asking | ⬜ |
+| 3 | accessories, pets_animals, beach_sea, everyday_objects, school_supplies | ⬜ |
+| 4 | containers_packaging, common_actions, shapes_geometry, measurements_sizes, opposites | ⬜ |
+| 5 | leisure_free_time, cafe_coffee, cleaning_housework, bedroom_sleep, children_babies | ⬜ |
+| 6 | professions, restaurant, health, city, hobbies | ⬜ |
+| 7 | technology, cooking, office, directions, computers_internet | ⬜ |
+| 8 | reading_books, movies_cinema, music_instruments, art_creativity, goals_dreams | ⬜ |
+| 9 | friendship, feelings_moods, celebrations, money_shopping, garden_plants | ⬜ |
+| 10 | mountains_hiking, mail_post, time_expressions, social_relationships, car_driving | ⬜ |
+| 11 | holidays_traditions, music_dance, doctor_medical, beauty_cosmetics, relationships_love | ⬜ |
+| 12 | phone_communication, religion_spirituality, problems_solutions, describing_people, apartment_living | ⬜ |
+| 13 | personality_traits, learning_education, tools_diy, documents_forms, safety_emergencies | ⬜ |
+| 14 | banking_services, nature_environment, internet_technology, professions_jobs, ideas_creativity | ⬜ |
+| 15 | opinions_beliefs, work_office_advanced, energy_power, social_gatherings, materials_substances | ⬜ |
+| 16 | special_occasions, personality_character, opinions_thoughts, chinese_culture | ⬜ |
+
+---
+
+### polish_japanese (Flashcards) — 🔄 IN PROGRESS
+Front language: Polish, Back language: Japanese. Target: 100 categories, 1500 items.
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 0 | (existing 21: greetings, family, numbers, colors, food, house, places, clothing, work, transport, education, nature, emotions, time, weather, body, activities, learning, sports, travel, entertainment) | ✅ |
+| 1 | fruits, vegetables, animals, drinks, seasons | ⬜ |
+| 2 | daily_routine, meals, desserts, conversations, questions_asking | ⬜ |
+| 3 | accessories, pets_animals, beach_sea, everyday_objects, school_supplies | ⬜ |
+| 4 | containers_packaging, common_actions, shapes_geometry, measurements_sizes, opposites | ⬜ |
+| 5 | leisure_free_time, cafe_coffee, cleaning_housework, bedroom_sleep, children_babies | ⬜ |
+| 6 | professions, restaurant, health, city, hobbies | ⬜ |
+| 7 | technology, cooking, office, directions, computers_internet | ⬜ |
+| 8 | reading_books, movies_cinema, music_instruments, art_creativity, goals_dreams | ⬜ |
+| 9 | friendship, feelings_moods, celebrations, money_shopping, garden_plants | ⬜ |
+| 10 | mountains_hiking, mail_post, time_expressions, social_relationships, car_driving | ⬜ |
+| 11 | holidays_traditions, music_dance, doctor_medical, beauty_cosmetics, relationships_love | ⬜ |
+| 12 | phone_communication, religion_spirituality, problems_solutions, describing_people, apartment_living | ⬜ |
+| 13 | personality_traits, learning_education, tools_diy, documents_forms, safety_emergencies | ⬜ |
+| 14 | banking_services, nature_environment, internet_culture, professions_advanced, ideas_creativity | ⬜ |
+| 15 | opinions_beliefs, work_office_advanced, energy_power, social_gatherings, materials_substances | ⬜ |
+| 16 | special_occasions, personality_character, common_mistakes, japanese_culture | ⬜ |
+
+---
+
+### polish_ukrainian (Flashcards) — 🔄 IN PROGRESS
+Front language: Polish, Back language: Ukrainian. Target: 100 categories, 1500 items.
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 0 | (existing 20: basics, family, house, food, animals, places, time, emotions, weather, nature, clothing, work, transport, education, restaurant, sports, entertainment, movies, travel, colors) | ✅ |
+| 1 | fruits, vegetables, drinks, seasons, numbers | ⬜ |
+| 2 | daily_routine, meals, desserts, conversations, questions_asking | ⬜ |
+| 3 | accessories, pets_animals, beach_sea, everyday_objects, school_supplies | ⬜ |
+| 4 | containers_packaging, common_actions, shapes_geometry, measurements_sizes, opposites | ⬜ |
+| 5 | leisure_free_time, cafe_coffee, cleaning_housework, bedroom_sleep, children_babies | ⬜ |
+| 6 | professions, health, city, hobbies, body | ⬜ |
+| 7 | technology, cooking, office, directions, computers_internet | ⬜ |
+| 8 | reading_books, music_instruments, art_creativity, goals_dreams, activities | ⬜ |
+| 9 | friendship, feelings_moods, celebrations, money_shopping, garden_plants | ⬜ |
+| 10 | mountains_hiking, mail_post, time_expressions, social_relationships, car_driving | ⬜ |
+| 11 | holidays_traditions, music_dance, doctor_medical, beauty_cosmetics, relationships_love | ⬜ |
+| 12 | phone_communication, religion_spirituality, problems_solutions, describing_people, apartment_living | ⬜ |
+| 13 | personality_traits, learning_education, tools_diy, documents_forms, safety_emergencies | ⬜ |
+| 14 | banking_services, nature_environment, internet_technology, professions_jobs, ideas_creativity | ⬜ |
+| 15 | opinions_beliefs, work_office_advanced, energy_power, social_gatherings, materials_substances | ⬜ |
+| 16 | special_occasions, personality_character, opinions_thoughts, ukrainian_culture | ⬜ |
+
+---
+
+### ukrainian_english (Flashcards) — 🔄 IN PROGRESS
+Front language: Ukrainian, Back language: English. Target: 100 categories, 1500 items.
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 0 | (existing 20: basics, family, house, food, animals, places, time, emotions, weather, nature, clothing, work, transport, education, restaurant, sports, entertainment, movies, travel, colors) | ✅ |
+| 1 | fruits, vegetables, drinks, seasons, numbers | ⬜ |
+| 2 | daily_routine, meals, desserts, conversations, questions_asking | ⬜ |
+| 3 | accessories, pets_animals, beach_sea, everyday_objects, school_supplies | ⬜ |
+| 4 | containers_packaging, common_actions, shapes_geometry, measurements_sizes, opposites | ⬜ |
+| 5 | leisure_free_time, cafe_coffee, cleaning_housework, bedroom_sleep, children_babies | ⬜ |
+| 6 | professions, health, city, hobbies, body | ⬜ |
+| 7 | technology, cooking, office, directions, computers_internet | ⬜ |
+| 8 | reading_books, music_instruments, art_creativity, goals_dreams, activities | ⬜ |
+| 9 | friendship, feelings_moods, celebrations, money_shopping, garden_plants | ⬜ |
+| 10 | mountains_hiking, mail_post, time_expressions, social_relationships, car_driving | ⬜ |
+| 11 | holidays_traditions, music_dance, doctor_medical, beauty_cosmetics, relationships_love | ⬜ |
+| 12 | phone_communication, religion_spirituality, problems_solutions, describing_people, apartment_living | ⬜ |
+| 13 | personality_traits, learning_education, tools_diy, documents_forms, safety_emergencies | ⬜ |
+| 14 | banking_services, nature_environment, internet_technology, professions_jobs, ideas_creativity | ⬜ |
+| 15 | opinions_beliefs, work_office_advanced, energy_power, social_gatherings, materials_substances | ⬜ |
+| 16 | special_occasions, personality_character, opinions_thoughts, ukrainian_culture | ⬜ |
+
+---
+
+### ukrainian_polish (Flashcards) — 🔄 IN PROGRESS
+Front language: Ukrainian, Back language: Polish. Target: 100 categories, 1500 items.
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 0 | (existing 20: greetings, family, food, places, clothing, house, work, travel, school, weather, nature, animals, time, events, emotions, sports, health, hobbies, restaurant, culture) | ✅ |
+| 1 | fruits, vegetables, drinks, seasons, numbers | ⬜ |
+| 2 | daily_routine, meals, desserts, conversations, questions_asking | ⬜ |
+| 3 | accessories, pets_animals, beach_sea, everyday_objects, school_supplies | ⬜ |
+| 4 | containers_packaging, common_actions, shapes_geometry, measurements_sizes, opposites | ⬜ |
+| 5 | leisure_free_time, cafe_coffee, cleaning_housework, bedroom_sleep, children_babies | ⬜ |
+| 6 | professions, body, city, technology, cooking | ⬜ |
+| 7 | office, directions, computers_internet, reading_books, music_instruments | ⬜ |
+| 8 | art_creativity, goals_dreams, activities, friendship, feelings_moods | ⬜ |
+| 9 | celebrations, money_shopping, garden_plants, mountains_hiking, mail_post | ⬜ |
+| 10 | time_expressions, social_relationships, car_driving, holidays_traditions, music_dance | ⬜ |
+| 11 | doctor_medical, beauty_cosmetics, relationships_love, phone_communication, religion_spirituality | ⬜ |
+| 12 | problems_solutions, describing_people, apartment_living, personality_traits, learning_education | ⬜ |
+| 13 | tools_diy, documents_forms, safety_emergencies, banking_services, nature_environment | ⬜ |
+| 14 | internet_technology, professions_jobs, ideas_creativity, opinions_beliefs, work_office_advanced | ⬜ |
+| 15 | energy_power, social_gatherings, materials_substances, special_occasions, personality_character | ⬜ |
+| 16 | opinions_thoughts, polish_culture, common_mistakes, education_advanced | ⬜ |
 
 ---
 
