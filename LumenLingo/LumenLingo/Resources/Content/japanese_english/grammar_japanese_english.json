@@ -13733,5 +13733,2055 @@
         "explanation": "'had told the truth'（真実を話していたら＝過去の仮定）→'wouldn't be in trouble now'（今困っていないのに＝現在の仮定結果）。過去の行動が現在に影響する典型的な混合条件文です。嘘をついた過去の行為が、現在のトラブルの原因になっているという因果関係を仮定で表現しています。混合条件文は実生活で驚くほど多用され、「あの時〜していれば今〜なのに」というパターンは人間の思考に非常に自然です。この構文をマスターすれば上級者の仲間入りです。"
       }
     ]
+  },
+  {
+    "key": "articles_advanced",
+    "name": "Articles (Advanced)",
+    "description": "冠詞の上級用法",
+    "iconName": "doc.text.magnifyingglass",
+    "color": "#60a5fa",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "je_arta1",
+        "question": "_____ rich should help the poor.",
+        "translation": "(裕福な人々は貧しい人々を助けるべきです)",
+        "options": [
+          "The",
+          "A",
+          "An",
+          "No article"
+        ],
+        "correct": "The",
+        "explanation": "'the + 形容詞'で「〜な人々」という集合全体を表す上級用法です。'The rich'は「裕福な人々全体」を意味します。同様に'the poor'（貧困層）、'the elderly'（高齢者）、'the unemployed'（失業者）なども使われます。この場合、'the rich'は複数扱いで'are'と共に使います。日本語には冠詞がないため、この用法は特に難しいですが、社会的なグループを表す際に非常に頻繁に使われるパターンです。ニュースや論文でも頻出します。"
+      },
+      {
+        "id": "je_arta2",
+        "question": "She plays _____ piano beautifully.",
+        "translation": "(彼女はピアノを美しく弾きます)",
+        "options": [
+          "the",
+          "a",
+          "an",
+          "no article"
+        ],
+        "correct": "the",
+        "explanation": "楽器を演奏する場合、英語では楽器名の前に'the'をつけます。'play the piano'、'play the guitar'、'play the violin'が正しい形です。これは楽器という種類全体を代表する「総称用法」です。ただしスポーツには冠詞をつけません：'play tennis'（テニスをする）。この使い分けは日本語話者にとって不可解に感じるかもしれませんが、英語の慣習として覚える必要があります。アメリカ英語では冠詞を省略する場合もあります。"
+      },
+      {
+        "id": "je_arta3",
+        "question": "Life is _____ greatest gift.",
+        "translation": "(人生は最も偉大な贈り物です)",
+        "options": [
+          "the",
+          "a",
+          "an",
+          "no article"
+        ],
+        "correct": "the",
+        "explanation": "最上級形容詞の前には必ず'the'をつけます。'the greatest'、'the best'、'the most important'のように使います。これは最上級が一つだけのもの（唯一のもの）を指すため、特定なので'the'が必要です。例外として、比較対象が明示されない副詞の最上級では'the'を省略できることがあります。日本語では「最も」だけで冠詞の概念がないため、最上級+'the'のセットを確実に覚えることが中級から上級への重要なステップです。"
+      },
+      {
+        "id": "je_arta4",
+        "question": "I go to _____ school every day.",
+        "translation": "(私は毎日学校に通っています)",
+        "options": [
+          "no article",
+          "the",
+          "a",
+          "an"
+        ],
+        "correct": "no article",
+        "explanation": "'go to school'（通学する）では冠詞を使いません。これは「学校」という場所ではなく、「教育を受ける」という目的を表しているからです。同様に'go to church'（礼拝に行く）、'go to bed'（就寝する）、'go to hospital'（入院する・英）も冠詞なしです。しかし、建物そのものを指す場合は'go to the school'（その学校の建物に行く）となります。この目的 vs 場所の区別は上級文法の重要ポイントで、日本語にはない概念です。"
+      },
+      {
+        "id": "je_arta5",
+        "question": "_____ water in this bottle is very cold.",
+        "translation": "(このボトルの中の水はとても冷たいです)",
+        "options": [
+          "The",
+          "A",
+          "An",
+          "No article"
+        ],
+        "correct": "The",
+        "explanation": "特定の水（このボトルの水）を指しているので'the'が必要です。不可算名詞'water'は通常無冠詞（'Water is essential'＝水は不可欠です）ですが、特定のものを指す場合は'the'が必要です。この「一般的 vs 特定」の使い分けは冠詞の最も核心的なルールです。'Water is important'（水は一般的に大切）vs 'The water here is clean'（ここの水は特定で綺麗）。文脈から特定性を判断する能力が上級レベルの証です。"
+      },
+      {
+        "id": "je_arta6",
+        "question": "He is _____ honest man.",
+        "translation": "(彼は正直な男性です)",
+        "options": [
+          "an",
+          "a",
+          "the",
+          "no article"
+        ],
+        "correct": "an",
+        "explanation": "'honest'の'h'は発音されない（黙字の h）ため、母音で始まるとみなされ'an'を使います。'an honest man'、'an hour'（1時間）、'an heir'（相続人）は全て'an'です。逆に'a university'は発音が/juː/（子音）で始まるため'a'です。a/anの選択はスペルではなく発音に基づきます。この規則は日本語話者が見落としやすいポイントで、特に'h'で始まる単語と'u'で始まる単語に注意が必要です。"
+      },
+      {
+        "id": "je_arta7",
+        "question": "I had _____ breakfast at 7 a.m.",
+        "translation": "(私は朝7時に朝食を食べました)",
+        "options": [
+          "no article",
+          "the",
+          "a",
+          "an"
+        ],
+        "correct": "no article",
+        "explanation": "食事名（breakfast, lunch, dinner）は通常無冠詞です。'have breakfast'、'eat lunch'、'cook dinner'のように使います。ただし、特定の食事や形容詞がつく場合は冠詞を使います：'The breakfast at the hotel was excellent'（そのホテルの朝食は素晴らしかった）、'We had a wonderful dinner'（素晴らしいディナーだった）。日本語には冠詞がないため、「いつ省略するか」を覚えることは英語上級者への重要なステップです。"
+      },
+      {
+        "id": "je_arta8",
+        "question": "Mount Fuji is _____ highest mountain in Japan.",
+        "translation": "(富士山は日本で最も高い山です)",
+        "options": [
+          "the",
+          "a",
+          "an",
+          "no article"
+        ],
+        "correct": "the",
+        "explanation": "固有名詞と冠詞の関係は複雑です。山の名前には通常冠詞をつけません（Mount Fuji, Mount Everest）が、最上級表現では'the'が必要です。川には'the'をつけます（the Amazon, the Nile）。海・海洋にも'the'（the Pacific, the Atlantic）。国名は通常無冠詞ですが、複数形や「共和国・王国」を含む場合は'the'（the United States, the United Kingdom）。これらの規則は一つずつ覚える必要がある上級知識です。"
+      },
+      {
+        "id": "je_arta9",
+        "question": "She has _____ experience in marketing.",
+        "translation": "(彼女はマーケティングの経験があります)",
+        "options": [
+          "no article",
+          "the",
+          "a",
+          "an"
+        ],
+        "correct": "no article",
+        "explanation": "'experience'が不可算名詞として「経験」という抽象概念を表す場合、冠詞は不要です。'She has experience'（経験がある）が正しい形です。ただし、'experience'が可算名詞として「体験」を意味する場合は'an experience'を使います：'It was a wonderful experience'（素晴らしい体験だった）。同じ単語でも可算/不可算で意味と冠詞が変わる例は他にも多く（glass, paper, room等）、上級文法の重要テーマです。"
+      },
+      {
+        "id": "je_arta10",
+        "question": "I love _____ dogs.",
+        "translation": "(私は犬が大好きです)",
+        "options": [
+          "no article",
+          "the",
+          "a",
+          "an"
+        ],
+        "correct": "no article",
+        "explanation": "「犬全般が好き」という場合、複数形を無冠詞で使います。'I love dogs'は犬というカテゴリー全体を指す総称用法です。'I love the dogs'にすると「特定の犬たち」を意味してしまいます。総称表現には三つのパターンがあります：'Dogs are loyal'（無冠詞複数）、'A dog is loyal'（不定冠詞単数）、'The dog is loyal'（定冠詞単数）。全て「犬というもの」を表せますが、無冠詞複数が最も一般的で自然な形です。"
+      },
+      {
+        "id": "je_arta11",
+        "question": "He was elected _____ president of the company.",
+        "translation": "(彼は会社の社長に選ばれました)",
+        "options": [
+          "no article",
+          "the",
+          "a",
+          "an"
+        ],
+        "correct": "no article",
+        "explanation": "役職名が補語として使われる場合、その役職が唯一のものなら冠詞を省略できます。'He was elected president'は「社長（唯一の役職）に選ばれた」という意味です。同様に'She became captain of the team'も冠詞なしが可能です。ただし'He is a teacher'のように一般的な職業の場合は'a'が必要です。この違いは、唯一の役職は固有名詞に近い扱いを受けるためです。日本語では区別しない概念なので注意が必要です。"
+      },
+      {
+        "id": "je_arta12",
+        "question": "I saw _____ interesting movie last night.",
+        "translation": "(昨夜面白い映画を見ました)",
+        "options": [
+          "an",
+          "the",
+          "a",
+          "no article"
+        ],
+        "correct": "an",
+        "explanation": "'interesting'は母音/ɪ/で始まるため'an'を使います。初出の不特定なものには不定冠詞（a/an）を使い、話者が特定できないものを紹介します。'I saw an interesting movie'は聞き手にとって初情報の映画です。次にその映画に言及するときは'The movie was about...'と'the'に変わります。この「初出=a/an、既知=the」のルールは冠詞使用の最も基本的な原則であり、長文ライティングでも常に意識すべきポイントです。"
+      },
+      {
+        "id": "je_arta13",
+        "question": "_____ Japanese is difficult to learn.",
+        "translation": "(日本語は学ぶのが難しいです)",
+        "options": [
+          "No article",
+          "The",
+          "A",
+          "An"
+        ],
+        "correct": "No article",
+        "explanation": "言語名には冠詞をつけません。'Japanese is difficult'、'English is widely spoken'、'French is beautiful'が正しい形です。言語名は固有名詞扱いのため無冠詞です。ただし'the Japanese language'（日本語という言語）のように'language'をつける場合は'the'が必要です。同様に国籍を表す場合も使い分けがあります：'The Japanese are hardworking'（日本人は勤勉だ）では'the'をつけて国民全体を表します。"
+      },
+      {
+        "id": "je_arta14",
+        "question": "We stayed at _____ Hilton in Tokyo.",
+        "translation": "(私たちは東京のヒルトンに泊まりました)",
+        "options": [
+          "the",
+          "a",
+          "an",
+          "no article"
+        ],
+        "correct": "the",
+        "explanation": "ホテル名には通常'the'をつけます。'the Hilton'、'the Ritz'、'the Marriott'のように使います。これはホテル名が「〜ホテル」という施設を特定するためです。新聞名も同様：'the Times'、'the Guardian'。しかしブランド名や会社名には通常つけません：'Apple'、'Toyota'。固有名詞と冠詞の組み合わせルールは非常に複雑で、カテゴリーごとに覚えていく必要がある上級レベルの知識です。"
+      },
+      {
+        "id": "je_arta15",
+        "question": "She is studying _____ medicine at university.",
+        "translation": "(彼女は大学で医学を勉強しています)",
+        "options": [
+          "no article",
+          "the",
+          "a",
+          "an"
+        ],
+        "correct": "no article",
+        "explanation": "学問分野名は不可算名詞として無冠詞で使います。'study medicine'（医学を学ぶ）、'study law'（法学を学ぶ）、'study economics'（経済学を学ぶ）が正しい形です。これは抽象的な学問体系を表しているため冠詞は不要です。ただし'the study of medicine'（医学の研究）のように名詞として使う場合は'the'が必要です。また、イギリス英語では'at university'（無冠詞）、アメリカ英語では'at a university'と差があります。"
+      }
+    ]
+  },
+  {
+    "key": "compound_nouns",
+    "name": "Compound Nouns",
+    "description": "複合名詞の構造と使い方",
+    "iconName": "rectangle.on.rectangle",
+    "color": "#c084fc",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_cn1",
+        "question": "I need to buy a new _____.",
+        "translation": "(新しい歯ブラシを買わなければなりません)",
+        "options": [
+          "toothbrush",
+          "tooth brush",
+          "teeth brush",
+          "brushing tooth"
+        ],
+        "correct": "toothbrush",
+        "explanation": "'toothbrush'は二つの名詞（tooth + brush）が結合した複合名詞です。英語の複合名詞は一語、ハイフン付き、または二語に書かれます。'toothbrush'は一語で書く典型例です。日本語の「歯ブラシ」と同じ構造ですが、英語では最初の名詞が修飾語として後ろの名詞を説明します。複数形は後ろの名詞に付けます：'toothbrushes'。'teeth brush'は誤りで、修飾部分は単数形を使うのが一般的です。"
+      },
+      {
+        "id": "je_cn2",
+        "question": "The _____ is on the second floor.",
+        "translation": "(書店は2階にあります)",
+        "options": [
+          "bookshop",
+          "book's shop",
+          "books shop",
+          "shop book"
+        ],
+        "correct": "bookshop",
+        "explanation": "'bookshop'（書店）は'book'＋'shop'の複合名詞です。英語の複合名詞では前の名詞が後ろの名詞を修飾します：「何の店か」→「本の店」='bookshop'。語順が逆の'shop book'は意味をなしません。複合名詞のストレスは通常最初の要素に置きます：'BOOKshop'。日本語の「本屋」も同じ構造（本＋屋）なので、仕組みは理解しやすいですが、どの組み合わせが自然かは個別に覚える必要があります。"
+      },
+      {
+        "id": "je_cn3",
+        "question": "She works as a _____ driver.",
+        "translation": "(彼女はバスの運転手として働いています)",
+        "options": [
+          "bus",
+          "bus's",
+          "buses",
+          "busing"
+        ],
+        "correct": "bus",
+        "explanation": "複合名詞の修飾部分（前の名詞）は通常、単数形を使います。'bus driver'（バス運転手）、'shoe shop'（靴屋）、'car park'（駐車場）が正しい形です。'buses driver'や'bus's driver'は誤りです。これは修飾名詞が形容詞的に機能しているためです。ただし例外もあります：'sports car'、'clothes shop'など、常に複数形で使われるものもあります。日本語では「バスの運転手」と「の」で繋ぎますが、英語では名詞を並べるだけです。"
+      },
+      {
+        "id": "je_cn4",
+        "question": "We watched the _____ last night.",
+        "translation": "(昨夜サッカーの試合を見ました)",
+        "options": [
+          "football match",
+          "match football",
+          "football's match",
+          "matching football"
+        ],
+        "correct": "football match",
+        "explanation": "'football match'は二語で書く複合名詞です。前の名詞'football'が「どんな種類の試合か」を説明しています。英語の複合名詞は「修飾語＋被修飾語」の語順で、日本語と同じ「サッカー＋試合」の構造です。しかし全ての複合名詞がこの語順とは限らず、辞書で確認するのが安全です。'match football'は語順が逆で不自然です。ストレスは'FOOTBALL match'と前の要素に置きます。"
+      },
+      {
+        "id": "je_cn5",
+        "question": "My _____ is broken.",
+        "translation": "(私のサングラスが壊れています)",
+        "options": [
+          "sunglasses",
+          "sun glass",
+          "sun's glasses",
+          "glassing sun"
+        ],
+        "correct": "sunglasses",
+        "explanation": "'sunglasses'（サングラス）は'sun'＋'glasses'の複合名詞で、常に複数形で使われます。メガネ類は英語では二つのレンズから成るため複数形です：'glasses'（メガネ）、'sunglasses'（サングラス）。しかし'a pair of sunglasses'（サングラス一つ）のように数えます。日本語の「サングラス」は英語からの借用語ですが、英語では'sunglasses'と語尾の's'が不可欠です。動詞は'are'を使います：'My sunglasses are new'。"
+      },
+      {
+        "id": "je_cn6",
+        "question": "I put the leftovers in the _____.",
+        "translation": "(残り物を冷蔵庫に入れました)",
+        "options": [
+          "refrigerator",
+          "refrigerate or",
+          "cold box",
+          "freezing machine"
+        ],
+        "correct": "refrigerator",
+        "explanation": "'refrigerator'は一語の名詞ですが、日常会話では'fridge'という短縮形がよく使われます。食品保存に関連する複合名詞として'freezer'（冷凍庫）、'microwave oven'（電子レンジ）、'dishwasher'（食洗機）などがあります。これらのキッチン用品の名称は日常生活で頻繁に使われるため確実に覚えましょう。日本語の「冷蔵庫」は漢字で意味が明確ですが、英語の'refrigerator'はラテン語由来で語源からは推測しにくい単語です。"
+      },
+      {
+        "id": "je_cn7",
+        "question": "The _____ was delayed by two hours.",
+        "translation": "(フライトは2時間遅延しました)",
+        "options": [
+          "flight",
+          "fly",
+          "flying",
+          "flown"
+        ],
+        "correct": "flight",
+        "explanation": "'flight'は'fly'（飛ぶ）の名詞形で、「飛行便、フライト」を意味します。空港関連の複合名詞は多く存在します：'flight attendant'（客室乗務員）、'boarding pass'（搭乗券）、'departure gate'（出発ゲート）、'baggage claim'（手荷物受取所）。これらは旅行時に不可欠な語彙です。日本語でも「フライト」とカタカナ語として使いますが、関連する複合名詞のセットで覚えると実践的な語彙力が飛躍的に向上します。"
+      },
+      {
+        "id": "je_cn8",
+        "question": "He is my _____.",
+        "translation": "(彼は私の同級生です)",
+        "options": [
+          "classmate",
+          "class's mate",
+          "class mating",
+          "mate class"
+        ],
+        "correct": "classmate",
+        "explanation": "'classmate'は'class'＋'mate'で「同級生」を意味する複合名詞です。'-mate'を使った複合名詞は人間関係を表すのに便利です：'roommate'（ルームメイト）、'teammate'（チームメイト）、'workmate'（同僚）、'housemate'（同居人）。全て一語で書かれます。日本語の「クラスメート」は英語からの借用語ですが、英語では'classmate'と一語で書くことに注意してください。発音のストレスは'CLASSmate'と前半に置きます。"
+      },
+      {
+        "id": "je_cn9",
+        "question": "I have a _____ at 3 p.m.",
+        "translation": "(午後3時に歯医者の予約があります)",
+        "options": [
+          "dentist appointment",
+          "dentist's appointment",
+          "dental appointment",
+          "appointing dentist"
+        ],
+        "correct": "dentist appointment",
+        "explanation": "'dentist appointment'と'dental appointment'の両方が使われますが、この問題では'dentist appointment'が正解です。複合名詞と所有格の使い分けは微妙です。'dentist appointment'（複合名詞）は「歯科予約」という種類を表し、'dentist's appointment'（所有格）は「歯医者先生の予約」というニュアンスです。日常会話では複合名詞形が一般的です。'doctor's appointment'は所有格がより一般的など、慣用によって異なります。"
+      },
+      {
+        "id": "je_cn10",
+        "question": "The _____ starts at 9 a.m.",
+        "translation": "(授業は午前9時に始まります)",
+        "options": [
+          "class",
+          "classing",
+          "class's",
+          "classify"
+        ],
+        "correct": "class",
+        "explanation": "'class'（授業）は単独でも複合名詞の一部としても頻繁に使われる基本語彙です。'classroom'（教室）、'classwork'（授業中の課題）、'class schedule'（時間割）など多くの複合名詞に含まれています。教育関連の複合名詞は学校生活に欠かせません：'homework'（宿題）、'textbook'（教科書）、'school year'（学年度）。日本語でも「授業」一語で通じますが、英語では関連表現を複合名詞として組み合わせることが多いです。"
+      },
+      {
+        "id": "je_cn11",
+        "question": "There is a _____ near my house.",
+        "translation": "(私の家の近くにバス停があります)",
+        "options": [
+          "bus stop",
+          "stop bus",
+          "bus stopping",
+          "bus's stop"
+        ],
+        "correct": "bus stop",
+        "explanation": "'bus stop'は二語の複合名詞で「バス停」を意味します。交通関連の複合名詞は日常生活で頻出です：'bus stop'（バス停）、'train station'（電車の駅）、'taxi rank'（タクシー乗り場）、'parking lot'（駐車場）。複合名詞の語順は「修飾語→被修飾語」で固定されており、'stop bus'は意味をなしません。日本語の「バス停」と全く同じ語順構造なので、日本語話者にとっては理解しやすいパターンです。"
+      },
+      {
+        "id": "je_cn12",
+        "question": "She bought a beautiful _____.",
+        "translation": "(彼女は美しいネックレスを買いました)",
+        "options": [
+          "necklace",
+          "neck lace",
+          "necking lace",
+          "lace neck"
+        ],
+        "correct": "necklace",
+        "explanation": "'necklace'は'neck'（首）＋'lace'（ひも）が融合した一語の複合名詞です。アクセサリー関連の語彙は日常会話で役立ちます：'necklace'（ネックレス）、'bracelet'（ブレスレット）、'earring'（イヤリング）、'wristwatch'（腕時計）。一部は元の語源が見えにくくなっていますが、複合名詞の成り立ちを知ると語彙が覚えやすくなります。日本語の「ネックレス」もほぼ同形の借用語です。"
+      },
+      {
+        "id": "je_cn13",
+        "question": "I need to charge my _____ phone.",
+        "translation": "(携帯電話を充電する必要があります)",
+        "options": [
+          "mobile",
+          "mobiling",
+          "mobile's",
+          "movable"
+        ],
+        "correct": "mobile",
+        "explanation": "'mobile phone'は「携帯電話」を意味する二語の複合名詞です。イギリス英語では'mobile phone'、アメリカ英語では'cell phone'が一般的です。テクノロジー関連の複合名詞は現代英語で爆発的に増えています：'smartphone'（スマートフォン）、'laptop computer'（ノートパソコン）、'video call'（ビデオ通話）。日本語の「携帯電話」も複合語ですが、英語でもこの分野は常に新しい複合名詞が生まれています。"
+      },
+      {
+        "id": "je_cn14",
+        "question": "The _____ was very exciting.",
+        "translation": "(そのサッカーの試合はとてもエキサイティングでした)",
+        "options": [
+          "football game",
+          "game football",
+          "football gaming",
+          "foot balling game"
+        ],
+        "correct": "football game",
+        "explanation": "'football game'は'football'＋'game'の複合名詞で、アメリカ英語では特に一般的です。イギリス英語では'football match'が好まれます。スポーツの複合名詞には地域差があります：'soccer field'（米）vs 'football pitch'（英）、'basketball court'（バスケットコート）。複合名詞を正しく使うことでより自然な英語になります。日本語でも「サッカーの試合」と同じ構造で非常に分かりやすいパターンです。"
+      },
+      {
+        "id": "je_cn15",
+        "question": "We need a new _____.",
+        "translation": "(新しい本棚が必要です)",
+        "options": [
+          "bookcase",
+          "case book",
+          "book casing",
+          "book's case"
+        ],
+        "correct": "bookcase",
+        "explanation": "'bookcase'（本棚）は'book'＋'case'が融合した一語の複合名詞です。家具関連の複合名詞も日常で重要です：'bookcase'（本棚）、'wardrobe'（洋服ダンス）、'cupboard'（食器棚）、'armchair'（一人掛けソファ）。'bookshelf'も同義語として使えます。複合名詞が一語で書かれるか二語で書かれるかは、使用頻度が高いほど一語化する傾向があります。辞書で確認するのが最も確実な方法です。"
+      }
+    ]
+  },
+  {
+    "key": "adjective_order",
+    "name": "Adjective Order",
+    "description": "形容詞の語順ルール",
+    "iconName": "list.number",
+    "color": "#fbbf24",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_ao1",
+        "question": "She has a _____ bag.",
+        "translation": "(彼女は美しい大きな赤い革のバッグを持っています)",
+        "options": [
+          "beautiful big red leather",
+          "red beautiful big leather",
+          "leather big beautiful red",
+          "big red beautiful leather"
+        ],
+        "correct": "beautiful big red leather",
+        "explanation": "英語の形容詞には厳格な語順ルールがあります。基本順序は：意見→大きさ→年齢→形→色→出身→素材→目的。'beautiful'（意見）→'big'（大きさ）→'red'（色）→'leather'（素材）の順です。日本語では形容詞の順序が比較的自由ですが、英語ではこの順序を守らないと非常に不自然に聞こえます。ネイティブは直感的にこの順序を使いますが、外国語学習者は意識的に繰り返し練習して身につける必要があります。"
+      },
+      {
+        "id": "je_ao2",
+        "question": "He drives a _____ car.",
+        "translation": "(彼は古い小さなイタリアの車を運転しています)",
+        "options": [
+          "small old Italian",
+          "Italian old small",
+          "old small Italian",
+          "small Italian old"
+        ],
+        "correct": "small old Italian",
+        "explanation": "形容詞の語順ルール（OSASCOMP）に従います：Opinion（意見）、Size（大きさ）、Age（年齢）、Shape（形）、Color（色）、Origin（出身）、Material（素材）、Purpose（目的）。'small'（大きさ）→'old'（年齢）→'Italian'（出身）の順です。'Italian old small'は英語話者にとって非常に違和感があります。このルールは英語のネイティブ感覚の核心部分であり、自然な英語を目指すなら必ずマスターすべきポイントです。"
+      },
+      {
+        "id": "je_ao3",
+        "question": "I bought a _____ table.",
+        "translation": "(丸い大きな木製のテーブルを買いました)",
+        "options": [
+          "big round wooden",
+          "wooden round big",
+          "round big wooden",
+          "big wooden round"
+        ],
+        "correct": "big round wooden",
+        "explanation": "'big'（大きさ）→'round'（形）→'wooden'（素材）の順です。形容詞の語順ルールでは、大きさは形より先に来て、素材は最後の方に置かれます。'wooden round big'は語順が完全に逆で非常に不自然です。日本語では「大きな丸い木製のテーブル」と言えますが、形容詞の順序にはやや柔軟性があります。英語ではこの柔軟性がなく、固定された順序に従わなければなりません。練習を重ねて体に叩き込みましょう。"
+      },
+      {
+        "id": "je_ao4",
+        "question": "They live in a _____ house.",
+        "translation": "(彼らは美しい古い大きな家に住んでいます)",
+        "options": [
+          "beautiful big old",
+          "old beautiful big",
+          "big old beautiful",
+          "beautiful old big"
+        ],
+        "correct": "beautiful big old",
+        "explanation": "'beautiful'（意見）→'big'（大きさ）→'old'（年齢）の語順です。意見を表す形容詞（beautiful, lovely, nice, ugly, horrible等）は常に最初に来ます。これは主観的な評価が客観的な事実より先に述べられるという英語の原則に基づいています。日本語の「美しい古い大きな家」はやや不自然で、「美しい大きな古い家」の方が自然ですが、英語のルールとは完全には一致しません。英語独自の感覚として身につけてください。"
+      },
+      {
+        "id": "je_ao5",
+        "question": "She wore a _____ dress.",
+        "translation": "(彼女は素敵な長い黒いシルクのドレスを着ていました)",
+        "options": [
+          "lovely long black silk",
+          "black long lovely silk",
+          "silk lovely long black",
+          "long lovely black silk"
+        ],
+        "correct": "lovely long black silk",
+        "explanation": "'lovely'（意見）→'long'（大きさ/長さ）→'black'（色）→'silk'（素材）。英語の形容詞語順は「主観から客観へ」という大原則があります。最も主観的な「意見」が最初、最も客観的な「素材」「目的」が最後です。これは認知言語学的に、話者の判断から物質的な特性へと焦点が移動するためと説明されています。日本語ではこの規則性がそれほど厳密ではないため、英語の語順感覚を養うには多くの例文に触れることが大切です。"
+      },
+      {
+        "id": "je_ao6",
+        "question": "We saw a _____ bird.",
+        "translation": "(小さなかわいい青い鳥を見ました)",
+        "options": [
+          "cute little blue",
+          "blue little cute",
+          "little cute blue",
+          "blue cute little"
+        ],
+        "correct": "cute little blue",
+        "explanation": "'cute'（意見）→'little'（大きさ）→'blue'（色）です。'little'は大きさの形容詞として'small'と似ていますが、より感情的・愛着のニュアンスがあります。注意すべきは、同じカテゴリーの形容詞が複数ある場合（例：big and tall）はコンマや'and'で繋ぎます。異なるカテゴリーの形容詞は一般的にコンマなしで並べます。この規則は日本語話者にとって新しい概念ですが、英語のリズムと自然さに直結する重要なスキルです。"
+      },
+      {
+        "id": "je_ao7",
+        "question": "He has _____ hair.",
+        "translation": "(彼は短い黒い髪をしています)",
+        "options": [
+          "short black",
+          "black short",
+          "shortly black",
+          "black shortly"
+        ],
+        "correct": "short black",
+        "explanation": "'short'（大きさ/長さ）→'black'（色）の順です。大きさや長さは色より先に来ます。髪の毛を描写するとき、英語では形容詞の語順が厳密に守られます。'He has long curly brown hair'（長いカールのかかった茶色い髪）のように複数の形容詞を使う場合も同じルールです。日本語では「短い黒い髪」も「黒い短い髪」も可能ですが、英語では'short black'のみが自然です。身体描写は日常的に使うので練習価値が高いです。"
+      },
+      {
+        "id": "je_ao8",
+        "question": "I want a _____ cup.",
+        "translation": "(白い大きなコーヒーカップが欲しいです)",
+        "options": [
+          "big white coffee",
+          "white big coffee",
+          "coffee big white",
+          "big coffee white"
+        ],
+        "correct": "big white coffee",
+        "explanation": "'big'（大きさ）→'white'（色）→'coffee'（目的）の順です。'coffee cup'の'coffee'は目的を表す名詞で、形容詞の最後に置かれます。目的を示す名詞修飾語は形容詞語順の最も最後のカテゴリーです。'a sleeping bag'（寝袋）の'sleeping'も目的を表します。大きさ→色→目的という流れは非常に頻繁に使われるパターンです。日本語の「大きな白いコーヒーカップ」と同じ構造なので比較的理解しやすいでしょう。"
+      },
+      {
+        "id": "je_ao9",
+        "question": "They adopted a _____ dog.",
+        "translation": "(彼らはかわいい小さな茶色い犬を引き取りました)",
+        "options": [
+          "cute small brown",
+          "brown small cute",
+          "small brown cute",
+          "cute brown small"
+        ],
+        "correct": "cute small brown",
+        "explanation": "'cute'（意見）→'small'（大きさ）→'brown'（色）の正しい語順です。動物を描写する表現は日常会話で頻出します。ペットを紹介するとき、外見の描写に形容詞を複数使うことが多いです。'a friendly big golden retriever'（友好的な大きなゴールデンレトリバー）のように、意見→大きさの順序は厳守です。日本語では「かわいい小さい茶色い犬」も「小さいかわいい茶色い犬」も許容されますが、英語では順序が固定されています。"
+      },
+      {
+        "id": "je_ao10",
+        "question": "She lives in a _____ apartment.",
+        "translation": "(彼女は新しい素敵な小さなアパートに住んでいます)",
+        "options": [
+          "nice small new",
+          "new nice small",
+          "small new nice",
+          "nice new small"
+        ],
+        "correct": "nice small new",
+        "explanation": "'nice'（意見）→'small'（大きさ）→'new'（年齢）です。ただし実際の英語では'nice new small apartment'も容認される場合があります。形容詞語順のルールは厳格ですが、意見形容詞の位置については若干の柔軟性があります。特に会話では強調したい形容詞を前に持ってくることもあります。しかし試験や正式な英語では標準的な語順に従うべきです。住居の描写は不動産や日常会話で頻繁に使われるので実用価値が高いです。"
+      },
+      {
+        "id": "je_ao11",
+        "question": "He wore _____ shoes.",
+        "translation": "(彼は古い黒い革靴を履いていました)",
+        "options": [
+          "old black leather",
+          "leather black old",
+          "black old leather",
+          "old leather black"
+        ],
+        "correct": "old black leather",
+        "explanation": "'old'（年齢）→'black'（色）→'leather'（素材）です。年齢は色より先に、色は素材より先に来ます。衣服を描写する際に形容詞の語順は特に重要です。ファッションの話題は日常会話やショッピングで頻出します。'She bought expensive new Italian leather shoes'のように多くの形容詞を使う場合も同じルールに従います。日本語の「古い黒い革靴」と英語の順序がたまたま一致している良い例です。"
+      },
+      {
+        "id": "je_ao12",
+        "question": "We stayed in a _____ hotel.",
+        "translation": "(素晴らしい大きなモダンなホテルに泊まりました)",
+        "options": [
+          "wonderful large modern",
+          "modern wonderful large",
+          "large modern wonderful",
+          "wonderful modern large"
+        ],
+        "correct": "wonderful large modern",
+        "explanation": "'wonderful'（意見）→'large'（大きさ）→'modern'（年齢/スタイル）。'modern'は年齢カテゴリーに近い形容詞です（new, old, modern, ancient等）。ホテルや建物を描写するとき、意見→大きさ→スタイルの順序は非常に自然です。三つ以上の形容詞を使うときは、実際には二つに絞るか、文を分けるのが自然な英語です。'It was a wonderful hotel. It was large and modern.'のように表現しても良いでしょう。"
+      },
+      {
+        "id": "je_ao13",
+        "question": "I found a _____ coin.",
+        "translation": "(珍しい小さな古い銀色のコインを見つけました)",
+        "options": [
+          "rare small old silver",
+          "silver old small rare",
+          "old rare silver small",
+          "small silver rare old"
+        ],
+        "correct": "rare small old silver",
+        "explanation": "'rare'（意見）→'small'（大きさ）→'old'（年齢）→'silver'（素材/色）。四つの形容詞を使う場合も、同じOSASCOMPルールに従います。実際の英語では四つ以上の形容詞を並べることは稀で、文が重くなります。'I found a rare coin. It was small, old, and silver.'のように分割する方が自然です。しかし語順の知識は二つや三つの形容詞を使う場面で必ず役立ちます。ルールを知っていれば、直感的に正しい順序で話せるようになります。"
+      },
+      {
+        "id": "je_ao14",
+        "question": "She has a _____ cat.",
+        "translation": "(彼女は太った年取ったオレンジ色の猫を飼っています)",
+        "options": [
+          "fat old orange",
+          "orange fat old",
+          "old orange fat",
+          "fat orange old"
+        ],
+        "correct": "fat old orange",
+        "explanation": "'fat'（大きさ/体型）→'old'（年齢）→'orange'（色）。体型を表す形容詞は大きさカテゴリーに含まれます。ペットの描写では複数の形容詞を使うことが多く、語順ルールの実践的な練習になります。'a skinny young white cat'（痩せた若い白い猫）、'a friendly old brown dog'（人懐っこい年老いた茶色い犬）。日常的にこのパターンを使う場面は非常に多いので、自然に口から出るまで練習することが大切です。"
+      },
+      {
+        "id": "je_ao15",
+        "question": "I need a _____ knife.",
+        "translation": "(鋭い大きな料理用のナイフが必要です)",
+        "options": [
+          "big sharp cooking",
+          "cooking sharp big",
+          "sharp big cooking",
+          "big cooking sharp"
+        ],
+        "correct": "big sharp cooking",
+        "explanation": "'big'（大きさ）→'sharp'（性質）→'cooking'（目的）。目的を示す形容詞（cooking, sleeping, running等）は常に最後に来ます。'a sleeping bag'での'sleeping'も目的の位置です。このパターンを覚えておくと、道具や器具を描写する際に正確な英語が使えます。'a large round frying pan'（大きな丸いフライパン）のように、キッチン用品の描写でも同じルールが適用されます。実用的な場面で活きる文法知識です。"
+      }
+    ]
+  },
+  {
+    "key": "gradable_ungradable",
+    "name": "Gradable & Ungradable Adjectives",
+    "description": "段階的・非段階的形容詞",
+    "iconName": "slider.horizontal.3",
+    "color": "#2dd4bf",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "je_gu1",
+        "question": "The movie was _____ terrible.",
+        "translation": "(その映画は本当にひどかった)",
+        "options": [
+          "absolutely",
+          "very",
+          "quite",
+          "rather"
+        ],
+        "correct": "absolutely",
+        "explanation": "'terrible'は非段階的（ungradable）形容詞です。非段階的形容詞はすでに意味が極端なため、'very'で強調できません。代わりに'absolutely'、'utterly'、'completely'を使います。'very terrible'は誤りで、'absolutely terrible'が正しい表現です。段階的形容詞（bad, cold, hot等）には'very'を使い、非段階的形容詞（terrible, freezing, boiling等）には'absolutely'を使うという区別を覚えることが上級英語の重要なステップです。"
+      },
+      {
+        "id": "je_gu2",
+        "question": "It's _____ cold outside today.",
+        "translation": "(今日は外がとても寒いです)",
+        "options": [
+          "very",
+          "absolutely",
+          "utterly",
+          "completely"
+        ],
+        "correct": "very",
+        "explanation": "'cold'は段階的（gradable）形容詞です。段階的形容詞は程度がさまざまで、'a little cold'、'quite cold'、'very cold'のように強弱をつけられます。'very cold'は正しいですが、'absolutely cold'は不自然です。一方、'cold'の極端版'freezing'は非段階的なので'absolutely freezing'が正しく、'very freezing'は誤りです。この段階的/非段階的の区別は英語の表現力を大幅に高める上級知識です。日本語には同等の区別がないため注意が必要です。"
+      },
+      {
+        "id": "je_gu3",
+        "question": "The food was _____ delicious.",
+        "translation": "(料理は本当に美味しかった)",
+        "options": [
+          "absolutely",
+          "very",
+          "so much",
+          "real"
+        ],
+        "correct": "absolutely",
+        "explanation": "'delicious'は非段階的形容詞です。元々「この上なく美味しい」という極端な意味を持つため、'very'でのさらなる強調は不適切です。'absolutely delicious'、'utterly delicious'が正しい強調表現です。同様のペアを覚えましょう：good→very good / excellent→absolutely excellent、hot→very hot / boiling→absolutely boiling、big→very big / enormous→absolutely enormous。段階的形容詞の極端版が非段階的形容詞になるパターンを理解してください。"
+      },
+      {
+        "id": "je_gu4",
+        "question": "She is _____ beautiful.",
+        "translation": "(彼女はとても美しいです)",
+        "options": [
+          "very",
+          "absolutely",
+          "utterly",
+          "completely"
+        ],
+        "correct": "very",
+        "explanation": "'beautiful'は段階的形容詞です。'very beautiful'、'quite beautiful'、'rather beautiful'のように程度を表すことができます。'beautiful'の非段階的なバージョンは'gorgeous'（絶世の美）や'stunning'（息をのむほど美しい）で、これらには'absolutely gorgeous'、'absolutely stunning'を使います。段階的形容詞の強調には'very'、'really'、'extremely'、'incredibly'が使えます。適切な強調語を選ぶことで英語表現がぐっと洗練されます。"
+      },
+      {
+        "id": "je_gu5",
+        "question": "The exam was _____ impossible.",
+        "translation": "(試験は全く不可能でした)",
+        "options": [
+          "absolutely",
+          "very",
+          "rather",
+          "fairly"
+        ],
+        "correct": "absolutely",
+        "explanation": "'impossible'は非段階的形容詞の典型です。「不可能」は程度の問題ではなく、可能か不可能かの二者択一です。そのため'very impossible'は論理的に矛盾します。'absolutely impossible'、'completely impossible'、'utterly impossible'が正しい組み合わせです。他の二者択一的な形容詞：'dead'（死んでいる）、'unique'（唯一の）、'perfect'（完璧な）も同様です。ただし日常会話では'very unique'のような用法も聞かれますが、厳密には避けるべきです。"
+      },
+      {
+        "id": "je_gu6",
+        "question": "The hotel room was _____ tiny.",
+        "translation": "(ホテルの部屋は本当に小さかった)",
+        "options": [
+          "absolutely",
+          "very",
+          "so",
+          "real"
+        ],
+        "correct": "absolutely",
+        "explanation": "'tiny'は非段階的形容詞で、'very small'の極端版です。すでに「極端に小さい」という意味を含んでいるため、'very tiny'は冗長です。'absolutely tiny'が正解です。大きさの段階的/非段階的ペア：small→tiny/minute、big→enormous/huge/massive、tall→towering。これらのペアを覚えることで、段階的/非段階的の区別が直感的にわかるようになります。日本語にはこの体系的な区別がないため、英語独自の感覚として身につける必要があります。"
+      },
+      {
+        "id": "je_gu7",
+        "question": "I'm _____ tired after the long journey.",
+        "translation": "(長旅の後でとても疲れています)",
+        "options": [
+          "very",
+          "absolutely",
+          "utterly",
+          "completely"
+        ],
+        "correct": "very",
+        "explanation": "'tired'は段階的形容詞です。'a little tired'、'fairly tired'、'very tired'のように程度を変えられます。'tired'の非段階的バージョンは'exhausted'（疲労困憊の）で、'absolutely exhausted'が正しく、'very exhausted'は避けるべきです。感情や状態を表す形容詞にも段階的/非段階的の区別があります：happy（段階的）→ ecstatic（非段階的）、angry（段階的）→furious（非段階的）。使い分けをマスターすると表現力が飛躍的に向上します。"
+      },
+      {
+        "id": "je_gu8",
+        "question": "The view from the mountain was _____ amazing.",
+        "translation": "(山からの眺めは本当に素晴らしかった)",
+        "options": [
+          "absolutely",
+          "very",
+          "so much",
+          "real"
+        ],
+        "correct": "absolutely",
+        "explanation": "'amazing'は非段階的形容詞です。「驚くほど素晴らしい」という極端な意味をすでに持っているため、'very amazing'は過剰です。'absolutely amazing'、'truly amazing'が適切です。注意点として、'quite'は段階的・非段階的の両方に使えますが意味が変わります：'quite good'（まあまあ良い）vs 'quite amazing'（本当に素晴らしい）。'quite'が非段階的形容詞と使われると「完全に」の意味になり、段階的と使われると「かなり」の意味になります。"
+      },
+      {
+        "id": "je_gu9",
+        "question": "The water was _____ warm.",
+        "translation": "(水はかなり温かかった)",
+        "options": [
+          "fairly",
+          "absolutely",
+          "utterly",
+          "completely"
+        ],
+        "correct": "fairly",
+        "explanation": "'warm'は段階的形容詞です。'fairly warm'（まあまあ温かい）、'quite warm'（かなり温かい）、'very warm'（とても温かい）のように程度を変えられます。'fairly'は「まあまあ、そこそこ」という中程度の強調で、段階的形容詞にのみ使えます。温度の段階的/非段階的ペア：warm→boiling（とても熱い）、cold→freezing（凍えるような）。'It was fairly warm'は控えめな表現で、'absolutely boiling'は極端な表現。場面に応じて使い分けましょう。"
+      },
+      {
+        "id": "je_gu10",
+        "question": "His answer was _____ wrong.",
+        "translation": "(彼の答えは完全に間違っていました)",
+        "options": [
+          "completely",
+          "very",
+          "fairly",
+          "rather"
+        ],
+        "correct": "completely",
+        "explanation": "'wrong'は文脈によって段階的にも非段階的にも使える形容詞です。「完全に間違い」という意味では非段階的で'completely wrong'が適切です。一方、「少し間違い」の場合は段階的扱いで'slightly wrong'も可能です。このように一つの形容詞が両方の用法を持つ場合があります。'right'（正しい）も同様です。文脈を考慮して適切な強調語を選ぶ能力は、英語の微妙なニュアンスを表現するために不可欠なスキルです。"
+      },
+      {
+        "id": "je_gu11",
+        "question": "The traffic was _____ bad this morning.",
+        "translation": "(今朝の交通渋滞はとてもひどかった)",
+        "options": [
+          "really",
+          "absolutely",
+          "utterly",
+          "completely"
+        ],
+        "correct": "really",
+        "explanation": "'bad'は段階的形容詞です。'really bad'、'very bad'、'extremely bad'が適切です。'really'は段階的・非段階的の両方に使える万能な強調語です：'really good'（段階的）も'really fantastic'（非段階的）も両方自然です。このため、迷ったときは'really'を使うのが安全です。ただし'very'は段階的にのみ、'absolutely'は非段階的にのみ使えるため、正確に使い分けることが上級者の証です。日常会話では'really'が最も頻繁に使われます。"
+      },
+      {
+        "id": "je_gu12",
+        "question": "The concert was _____ fantastic.",
+        "translation": "(コンサートは本当に素晴らしかった)",
+        "options": [
+          "absolutely",
+          "very",
+          "fairly",
+          "slightly"
+        ],
+        "correct": "absolutely",
+        "explanation": "'fantastic'は非段階的形容詞です。「素晴らしい」は程度の問題ではなく、すでに最高レベルの評価を表しています。'absolutely fantastic'が正しく、'very fantastic'は避けるべきです。エンターテインメントの感想を述べるとき、強い形容詞と正しい強調語を組み合わせることで、より自然で印象的な表現になります。'The movie was absolutely brilliant'、'The show was utterly magnificent'のように。日常会話で積極的に使いましょう。"
+      },
+      {
+        "id": "je_gu13",
+        "question": "I'm _____ hungry. Let's eat.",
+        "translation": "(とてもお腹が空いています。食べましょう)",
+        "options": [
+          "very",
+          "absolutely",
+          "utterly",
+          "completely"
+        ],
+        "correct": "very",
+        "explanation": "'hungry'は段階的形容詞です。'a bit hungry'（少しお腹が空いた）、'quite hungry'（かなり空いた）、'very hungry'（とても空いた）のように程度を変えられます。'hungry'の非段階的バージョンは'starving'（飢えている）で、'absolutely starving'が正しい組み合わせです。日常会話では'I'm starving!'と誇張して使うことも多いです。食事の前に使う表現として'I'm very hungry'も'I'm absolutely starving'も覚えておくと便利です。"
+      },
+      {
+        "id": "je_gu14",
+        "question": "The scenery was _____ breathtaking.",
+        "translation": "(景色は本当に息をのむほど美しかった)",
+        "options": [
+          "utterly",
+          "very",
+          "fairly",
+          "rather"
+        ],
+        "correct": "utterly",
+        "explanation": "'breathtaking'（息をのむような）は非段階的形容詞です。すでに極端な感動を表しているため、'very breathtaking'ではなく'utterly breathtaking'や'absolutely breathtaking'を使います。旅行体験を語るとき、このレベルの表現力があると格段に印象的になります。'The sunset was utterly breathtaking'は感動を効果的に伝えます。非段階的形容詞と正しい強調語の組み合わせをマスターすることは、英語表現の洗練度を高める最も効果的な方法の一つです。"
+      },
+      {
+        "id": "je_gu15",
+        "question": "The lecture was _____ interesting.",
+        "translation": "(その講義はとても面白かった)",
+        "options": [
+          "extremely",
+          "absolutely",
+          "utterly",
+          "completely"
+        ],
+        "correct": "extremely",
+        "explanation": "'interesting'は段階的形容詞です。'fairly interesting'、'quite interesting'、'very interesting'、'extremely interesting'のように強弱をつけられます。'extremely'は'very'よりも強い強調で、段階的形容詞に使います。'interesting'の非段階的バージョンは'fascinating'（魅惑的な）で、'absolutely fascinating'が正しい組み合わせです。段階的形容詞の強調序列を覚えましょう：slightly < fairly < quite < very < extremely < incredibly。"
+      }
+    ]
+  },
+  {
+    "key": "intensifiers_mitigators",
+    "name": "Intensifiers & Mitigators",
+    "description": "強調語と緩和語",
+    "iconName": "speaker.wave.3",
+    "color": "#f472b6",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "je_im1",
+        "question": "The test was _____ difficult.",
+        "translation": "(テストは非常に難しかった)",
+        "options": [
+          "extremely",
+          "a bit",
+          "slightly",
+          "somewhat"
+        ],
+        "correct": "extremely",
+        "explanation": "'extremely'は最も強い強調語（intensifier）の一つです。'very'より強く、「極端に、非常に」という意味です。強調語の強さの序列：slightly < a bit < fairly < quite < rather < very < really < extremely < incredibly。テストの難しさを最大限に表現したい場合、'extremely difficult'が適切です。日本語では「非常に」「極めて」に相当します。ビジネスや学術的な場面でも頻繁に使われる正式な強調表現です。"
+      },
+      {
+        "id": "je_im2",
+        "question": "I'm _____ tired, so I think I'll go to bed early.",
+        "translation": "(少し疲れているので早く寝ようと思います)",
+        "options": [
+          "a bit",
+          "extremely",
+          "incredibly",
+          "tremendously"
+        ],
+        "correct": "a bit",
+        "explanation": "'a bit'は緩和語（mitigator）で、表現を弱める機能があります。'a bit tired'は「ちょっと疲れている」という軽い表現です。緩和語には'a bit'、'slightly'、'a little'、'somewhat'、'fairly'などがあります。日本語の「ちょっと」「少し」に相当します。緩和語を使いこなすことで、断定的すぎない柔らかい表現ができます。特にイギリス英語では緩和語を多用する傾向があり、控えめな表現が好まれる文化を反映しています。"
+      },
+      {
+        "id": "je_im3",
+        "question": "Her presentation was _____ impressive.",
+        "translation": "(彼女のプレゼンテーションは非常に印象的でした)",
+        "options": [
+          "highly",
+          "a little",
+          "slightly",
+          "barely"
+        ],
+        "correct": "highly",
+        "explanation": "'highly'は「非常に、大いに」という意味の強調語で、特にフォーマルな場面で使われます。'highly impressive'、'highly recommended'（強くお勧め）、'highly skilled'（非常に熟練した）のように、肯定的な評価に使われることが多いです。'very'と似ていますが、'highly'はより知的・専門的なニュアンスがあります。ビジネスレビューや推薦状では'highly'が好まれます。日本語の「大変」「極めて」に近い、格調高い強調表現です。"
+      },
+      {
+        "id": "je_im4",
+        "question": "The movie was _____ boring.",
+        "translation": "(映画はかなり退屈でした)",
+        "options": [
+          "rather",
+          "absolutely",
+          "totally",
+          "utterly"
+        ],
+        "correct": "rather",
+        "explanation": "'rather'は中程度の強調語で、特にネガティブな形容詞と共に使われることが多いです。'rather boring'（かなり退屈な）、'rather disappointing'（かなり期待外れの）。面白いことに、ポジティブな形容詞と使うと「意外にも良い」というニュアンスになります：'rather good'（予想以上に良い）。'rather'はイギリス英語で特に一般的です。日本語の「かなり」「なかなか」に近い微妙な表現で、断定を避けつつも印象を伝える上品な言い方です。"
+      },
+      {
+        "id": "je_im5",
+        "question": "She was _____ upset about the news.",
+        "translation": "(彼女はそのニュースについてやや動揺していました)",
+        "options": [
+          "somewhat",
+          "incredibly",
+          "tremendously",
+          "enormously"
+        ],
+        "correct": "somewhat",
+        "explanation": "'somewhat'は緩和語で「いくぶん、やや」という意味です。表現を控えめにする効果があり、フォーマルな文体で好まれます。'somewhat upset'（やや動揺して）、'somewhat surprised'（やや驚いて）のように使います。'a bit'よりフォーマルで、'slightly'と近い意味ですが、'somewhat'はより書き言葉的です。日本語の「やや」「いささか」に相当します。ビジネスコミュニケーションやアカデミックライティングでの使用頻度が高い表現です。"
+      },
+      {
+        "id": "je_im6",
+        "question": "The coffee is _____ hot. Be careful.",
+        "translation": "(コーヒーはとても熱いです。気をつけて)",
+        "options": [
+          "really",
+          "slightly",
+          "a bit",
+          "barely"
+        ],
+        "correct": "really",
+        "explanation": "'really'は最も万能な強調語です。段階的形容詞（really hot）にも非段階的形容詞（really amazing）にも使えます。口語でもフォーマルでも使え、'very'より強く'extremely'より柔らかい印象です。'really hot'は「本当に熱い」で、注意を促す場面に適しています。日本語の「本当に」「めっちゃ」に相当します。迷ったときに'really'を使えば間違いない、という意味でも覚えておくと便利な最重要強調語です。"
+      },
+      {
+        "id": "je_im7",
+        "question": "The traffic was _____ worse than yesterday.",
+        "translation": "(交通渋滞は昨日よりかなりひどかった)",
+        "options": [
+          "much",
+          "very",
+          "extremely",
+          "highly"
+        ],
+        "correct": "much",
+        "explanation": "比較級を強調するときは'much'、'far'、'a lot'を使います。'much worse'（はるかにひどい）、'far better'（はるかに良い）、'a lot bigger'（ずっと大きい）。注意：'very'は比較級には使えません。'very worse'は誤りで、'much worse'が正しい形です。このルールは日本語話者がよく間違えるポイントです。比較級の強調語は独自のグループを形成しており、通常の形容詞とは異なる強調語体系を使う必要があるのです。"
+      },
+      {
+        "id": "je_im8",
+        "question": "I _____ agree with your opinion.",
+        "translation": "(あなたの意見に完全に同意します)",
+        "options": [
+          "totally",
+          "a bit",
+          "slightly",
+          "barely"
+        ],
+        "correct": "totally",
+        "explanation": "'totally'は「完全に、全面的に」という意味の強い強調語です。動詞を修飾できる点が特徴的です。'totally agree'（完全に同意する）、'totally understand'（完全に理解する）のように使います。カジュアルな会話では'I totally get it'（完全にわかる）も自然です。フォーマルな場面では'absolutely'や'fully'が好まれます。日本語の「まったく」「完全に」に相当しますが、ポジティブな文脈で使う点が「まったく」の否定的用法とは異なります。"
+      },
+      {
+        "id": "je_im9",
+        "question": "The weather was _____ pleasant today.",
+        "translation": "(今日の天気はとても快適でした)",
+        "options": [
+          "quite",
+          "utterly",
+          "absolutely",
+          "completely"
+        ],
+        "correct": "quite",
+        "explanation": "'quite'は非常に便利だが注意が必要な語です。段階的形容詞と使うと「かなり」（quite pleasant＝かなり快適）、非段階的形容詞と使うと「完全に」（quite impossible＝全く不可能）の意味になります。さらにイギリス英語では'quite good'は「まあまあ」、アメリカ英語では「かなり良い」と解釈が異なります。この曖昧さがあるからこそ、文脈に注意して使う必要があります。日本語の「なかなか」に近い微妙なニュアンスを持つ表現です。"
+      },
+      {
+        "id": "je_im10",
+        "question": "He was _____ late for the meeting.",
+        "translation": "(彼は会議にわずかに遅刻しました)",
+        "options": [
+          "slightly",
+          "incredibly",
+          "enormously",
+          "tremendously"
+        ],
+        "correct": "slightly",
+        "explanation": "'slightly'は最も控えめな緩和語の一つで、「わずかに」という意味です。'slightly late'（わずかに遅れた）は、大幅な遅刻ではないことを表します。数値的な差異を表すのにも適しています：'slightly higher'（わずかに高い）、'slightly different'（少し違う）。学術的な文章で微差を表現する際に頻繁に使われます。日本語の「わずかに」「若干」に相当し、正確さを重視する場面で非常に有用な表現です。"
+      },
+      {
+        "id": "je_im11",
+        "question": "The scenery was _____ beautiful.",
+        "translation": "(景色は信じられないほど美しかった)",
+        "options": [
+          "incredibly",
+          "a bit",
+          "slightly",
+          "somewhat"
+        ],
+        "correct": "incredibly",
+        "explanation": "'incredibly'は「信じられないほど」という意味の非常に強い強調語です。'extremely'より感情的で、驚きや感動を含みます。'incredibly beautiful'、'incredibly talented'（信じられないほど才能がある）。直訳は「信じられない（incredible）ように」です。日常会話で感動を表現するときに最適です。強調語の強さのスペクトル上では最上位に位置し、本当に強い感情を伝えたいときに使います。日本語の「信じられないくらい」にぴったり対応する表現です。"
+      },
+      {
+        "id": "je_im12",
+        "question": "The problem is _____ more complex than we thought.",
+        "translation": "(問題は私たちが思っていたよりずっと複雑です)",
+        "options": [
+          "far",
+          "very",
+          "highly",
+          "deeply"
+        ],
+        "correct": "far",
+        "explanation": "'far'は比較級を強調する副詞です。'far more complex'（はるかに複雑な）、'far better'（はるかに良い）、'far worse'（はるかにひどい）。'much'と同じ機能ですが、'far'はよりフォーマルな印象を与えます。比較級の強調にはmuch/far/a lot/even/still/considerably を使い、veryは使えません。'far more complex than we thought'は期待と現実のギャップを強調する効果的な表現です。ビジネスやアカデミックな文脈で頻繁に使われます。"
+      },
+      {
+        "id": "je_im13",
+        "question": "She _____ enjoys reading novels.",
+        "translation": "(彼女は小説を読むことを大いに楽しんでいます)",
+        "options": [
+          "greatly",
+          "slightly",
+          "barely",
+          "hardly"
+        ],
+        "correct": "greatly",
+        "explanation": "'greatly'は「大いに」という意味のフォーマルな強調語です。動詞を修飾する場合に特に適しています。'greatly enjoy'（大いに楽しむ）、'greatly appreciate'（大変感謝する）、'greatly admire'（大いに敬服する）。ビジネスメールでは'I would greatly appreciate your help'（ご協力を大変感謝いたします）のように使われます。日本語の「大いに」「大変」に相当し、丁寧で格調高い印象を与えます。対照的に'barely'（かろうじて）は最も弱い状態を表します。"
+      },
+      {
+        "id": "je_im14",
+        "question": "The restaurant was _____ expensive.",
+        "translation": "(そのレストランはかなり高かった)",
+        "options": [
+          "fairly",
+          "absolutely",
+          "utterly",
+          "totally"
+        ],
+        "correct": "fairly",
+        "explanation": "'fairly'は「まあまあ、それなりに」という中程度の緩和語です。'fairly expensive'は「そこそこ高い」で、極端に高いわけではないことを示します。'fairly'は'quite'よりやや弱く、'very'よりかなり弱い位置にあります。控えめに評価する場面で便利です：'fairly good'（まあまあ良い）、'fairly common'（わりと一般的な）。イギリス英語では特に好まれる表現で、直接的すぎない柔らかい評価を伝えるのに理想的な語です。日本語の「わりと」に近いです。"
+      },
+      {
+        "id": "je_im15",
+        "question": "I can _____ hear you. Please speak louder.",
+        "translation": "(ほとんど聞こえません。もっと大きな声で話してください)",
+        "options": [
+          "barely",
+          "extremely",
+          "incredibly",
+          "tremendously"
+        ],
+        "correct": "barely",
+        "explanation": "'barely'は「かろうじて、ほとんど〜ない」という意味の特殊な緩和語です。'barely hear'（かろうじて聞こえる＝ほぼ聞こえない）。否定的な意味を含みますが、文法的には肯定文です。'can barely hear'＝'can hardly hear'＝'almost cannot hear'。'barely'、'hardly'、'scarcely'はほぼ同義で、全て「ほとんど〜ない」を表します。日本語の「かろうじて」にぴったり対応する表現です。否定語なしで否定的意味を表す上級表現として重要です。"
+      }
+    ]
+  },
+  {
+    "key": "plural_irregulars",
+    "name": "Irregular Plurals",
+    "description": "不規則な複数形",
+    "iconName": "person.2",
+    "color": "#f472b6",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "je_pi1",
+        "question": "There are three _____ in the room.",
+        "translation": "(部屋に3人の子どもがいます)",
+        "options": [
+          "children",
+          "childs",
+          "childrens",
+          "childes"
+        ],
+        "correct": "children",
+        "explanation": "'child'の複数形は'children'です。'-s'をつける通常の規則に従いません。英語には古英語に由来する不規則な複数形がいくつか残っています。'child→children'は最もよく使われる不規則複数形の一つで、日常会話でも頻出です。日本語には単複の区別がないため、英語の複数形そのものが難しい概念ですが、特に不規則なものは個別に覚える必要があります。'kids'（口語）も同じ意味でよく使われます。"
+      },
+      {
+        "id": "je_pi2",
+        "question": "I need to brush my _____.",
+        "translation": "(歯を磨かなければなりません)",
+        "options": [
+          "teeth",
+          "tooths",
+          "toothes",
+          "teeths"
+        ],
+        "correct": "teeth",
+        "explanation": "'tooth'の複数形は'teeth'です。母音が変化するタイプの不規則複数形で、'foot→feet'、'goose→geese'、'mouse→mice'も同じパターンです。これらは古英語の「母音変化（ウムラウト）」に由来する形で、ゲルマン語の特徴です。日本語では「歯」は単複同形なので、英語の不規則複数形は意識的に覚える必要があります。歯医者で'My tooth hurts'（歯が痛い、一本）と'My teeth hurt'（歯が痛い、複数）を正しく使い分けましょう。"
+      },
+      {
+        "id": "je_pi3",
+        "question": "Two _____ were standing in the field.",
+        "translation": "(2頭の羊が野原に立っていました)",
+        "options": [
+          "sheep",
+          "sheeps",
+          "sheepes",
+          "sheepies"
+        ],
+        "correct": "sheep",
+        "explanation": "'sheep'は単複同形の名詞です。一頭でも'a sheep'、百頭でも'a hundred sheep'で形が変わりません。同じタイプには'fish'（魚）、'deer'（鹿）、'aircraft'（航空機）、'species'（種）などがあります。日本語も名詞に複数形がないので、この点では日本語に似ているとも言えます。ただし英語では動詞の形で単複を区別します：'The sheep is...'（一頭）vs 'The sheep are...'（複数）。文脈から数を判断する力が重要です。"
+      },
+      {
+        "id": "je_pi4",
+        "question": "I saw two _____ running across the road.",
+        "translation": "(2匹のネズミが道を横切って走るのを見ました)",
+        "options": [
+          "mice",
+          "mouses",
+          "mices",
+          "mouse"
+        ],
+        "correct": "mice",
+        "explanation": "'mouse'の複数形は'mice'です。母音変化型の不規則複数形で、'ou'が'i'に変わります。コンピュータの「マウス」については、'computer mice'と'computer mouses'の両方が使われますが、生き物としてのネズミは必ず'mice'です。日本語では「ネズミ2匹」のように助数詞で数を表しますが、英語では名詞の形自体を変えます。不規則複数形は頻出するものから優先的に覚え、自然に使えるようになるまで繰り返し練習しましょう。"
+      },
+      {
+        "id": "je_pi5",
+        "question": "The _____ in this city are very friendly.",
+        "translation": "(この街の人々はとてもフレンドリーです)",
+        "options": [
+          "people",
+          "persons",
+          "peoples",
+          "person"
+        ],
+        "correct": "people",
+        "explanation": "'person'の複数形は通常'people'です。'persons'は法律用語や公式文書で使われますが、日常英語では'people'が圧倒的に一般的です。注意：'peoples'は「民族・国民」の複数形として使われる別の意味があります（'the peoples of Asia'＝アジアの諸民族）。日本語では「人」も「人々」も使いますが、英語ではほぼ常に'people'を使います。'There were many people'（多くの人がいた）が自然な英語です。"
+      },
+      {
+        "id": "je_pi6",
+        "question": "She has two left _____.",
+        "translation": "(彼女は不器用です＝左足が2本ある)",
+        "options": [
+          "feet",
+          "foots",
+          "feets",
+          "foot"
+        ],
+        "correct": "feet",
+        "explanation": "'foot'の複数形は'feet'です。'tooth→teeth'と同じ母音変化パターンで、'oo'が'ee'に変わります。この慣用表現'two left feet'は「不器用である」という意味のイディオムです。'foot'は長さの単位としても使われ、「6フィート」は'six feet'（'six foot'も口語では使用）です。日本語にはない単複変化なので、'foot'（単数）と'feet'（複数）の使い分けは意識的な練習が必要です。身体部位の不規則複数形は基本として覚えましょう。"
+      },
+      {
+        "id": "je_pi7",
+        "question": "The _____ are laying eggs.",
+        "translation": "(ガチョウたちが卵を産んでいます)",
+        "options": [
+          "geese",
+          "gooses",
+          "goosies",
+          "gease"
+        ],
+        "correct": "geese",
+        "explanation": "'goose'の複数形は'geese'です。これも母音変化型で、'oo'が'ee'に変わります。'tooth→teeth'、'foot→feet'、'goose→geese'は全て同じ古英語のパターンに従います。日常的にそこまで頻繁には使いませんが、慣用句'wild goose chase'（無駄な追跡）は有名です。日本語では「ガチョウ」は単複同形ですが、英語では変化させる必要があります。動物の不規則複数形は英語の語彙力を試す良いテストになります。"
+      },
+      {
+        "id": "je_pi8",
+        "question": "The _____ were caught by the police.",
+        "translation": "(泥棒たちは警察に捕まりました)",
+        "options": [
+          "thieves",
+          "thiefs",
+          "thievs",
+          "thiefes"
+        ],
+        "correct": "thieves",
+        "explanation": "'-f'や'-fe'で終わる名詞は、複数形で'-ves'に変化するものが多くあります。'thief→thieves'、'knife→knives'、'wife→wives'、'life→lives'、'leaf→leaves'がこのパターンです。ただし全てがこのルールに従うわけではなく、'roof→roofs'、'chief→chiefs'、'belief→beliefs'のように'-s'だけをつけるものもあります。日本語にはこのような変化がないため、英語学習者は個別に覚える必要があります。頻出するものから優先的に学びましょう。"
+      },
+      {
+        "id": "je_pi9",
+        "question": "Several _____ were damaged in the storm.",
+        "translation": "(嵐でいくつかの屋根が損傷しました)",
+        "options": [
+          "roofs",
+          "rooves",
+          "roofes",
+          "roves"
+        ],
+        "correct": "roofs",
+        "explanation": "'roof'の複数形は'roofs'です。'-f'で終わる名詞でも規則的に'-s'をつけるものがあります。'roof→roofs'、'chief→chiefs'、'proof→proofs'、'cliff→cliffs'がこのタイプです。一方、'knife→knives'、'wolf→wolves'のように'-ves'に変わるものもあります。どちらのパターンになるかは個別に覚えるしかありません。日本語には複数形の概念がないため、この二重のルール（'-s'型と'-ves'型）は特に混乱しやすいポイントです。"
+      },
+      {
+        "id": "je_pi10",
+        "question": "The _____ were playing in the park.",
+        "translation": "(女性たちが公園で遊んでいました)",
+        "options": [
+          "women",
+          "womans",
+          "womens",
+          "woman"
+        ],
+        "correct": "women",
+        "explanation": "'woman'の複数形は'women'です。'man→men'と同じパターンで、母音'a'が'e'に変化します。発音も異なり、'woman'は/ˈwʊmən/、'women'は/ˈwɪmɪn/です。英語の不規則複数形の中でも最も基本的なもので、日常会話で毎日のように使います。'man→men'、'woman→women'は対で覚えましょう。合成語でも同じルール：'policeman→policemen'、'businesswoman→businesswomen'。現代英語では性別中立的な表現も増えています。"
+      },
+      {
+        "id": "je_pi11",
+        "question": "The library has thousands of _____.",
+        "translation": "(その図書館には何千冊もの本があります)",
+        "options": [
+          "books",
+          "bookes",
+          "bookies",
+          "book"
+        ],
+        "correct": "books",
+        "explanation": "'book'の複数形は規則的に'-s'をつけて'books'です。ここで規則的な複数形も確認しましょう。英語の名詞の約90%は'-s'または'-es'をつけるだけです。'-s'型：book→books、car→cars。'-es'型：box→boxes、church→churches。'-y→-ies'型：city→cities、baby→babies。不規則なものは全体の10%程度ですが、高頻度語に多いため目立ちます。まず規則パターンをしっかり覚え、その上で不規則形を個別に学ぶのが効率的です。"
+      },
+      {
+        "id": "je_pi12",
+        "question": "The _____ flew south for winter.",
+        "translation": "(ガンの群れは冬に南へ飛んで行きました)",
+        "options": [
+          "geese",
+          "gooses",
+          "ganders",
+          "goosies"
+        ],
+        "correct": "geese",
+        "explanation": "'goose→geese'の復習です。鳥が季節移動する文脈で使われています。英語では群れで行動する動物の複数形を正しく使うことが重要です。'a flock of geese'（ガンの群れ）、'a herd of cattle'（牛の群れ）、'a pack of wolves'（オオカミの群れ）のように集合名詞と組み合わせることも多いです。日本語では動物の群れを数えるとき「羽」「頭」「匹」などの助数詞を使いますが、英語では名詞の形そのものを変えて複数を表現します。"
+      },
+      {
+        "id": "je_pi13",
+        "question": "How many _____ do you have?",
+        "translation": "(何本ナイフを持っていますか？)",
+        "options": [
+          "knives",
+          "knifes",
+          "knifs",
+          "knivs"
+        ],
+        "correct": "knives",
+        "explanation": "'knife'の複数形は'knives'です。'-fe'が'-ves'に変化するパターンです。同様の変化：'life→lives'、'wife→wives'。台所用品でいえば'knife→knives'は毎日使う可能性のある単語です。発音も変わり、'knife'の/naɪf/が'knives'では/naɪvz/になります。'f'の音が'v'の有声音に変わるのが特徴です。日本語では「ナイフ」が単複同形のカタカナ語なので、英語で正しく変化させることを意識的に練習する必要があります。"
+      },
+      {
+        "id": "je_pi14",
+        "question": "The farmer has fifty _____.",
+        "translation": "(農家は50頭の牛を飼っています)",
+        "options": [
+          "cattle",
+          "cattles",
+          "cows",
+          "cattleies"
+        ],
+        "correct": "cattle",
+        "explanation": "'cattle'は常に複数扱いの集合名詞です。'a cattle'とは言えず、一頭を指す場合は'a cow'（雌牛）、'a bull'（雄牛）、'a calf'（子牛）を使います。'cattle'に'-s'をつけて'cattles'とするのは誤りです。このような常に複数形の名詞には'police'（警察官たち）、'clothes'（衣服）もあります。日本語では「牛」は単複同形ですが、英語では'cattle are...'のように複数動詞と組み合わせます。集合名詞の特殊な性質を理解することが大切です。"
+      },
+      {
+        "id": "je_pi15",
+        "question": "There are many different _____ of fish in the ocean.",
+        "translation": "(海にはさまざまな種類の魚がいます)",
+        "options": [
+          "species",
+          "specieses",
+          "specie",
+          "specis"
+        ],
+        "correct": "species",
+        "explanation": "'species'は単複同形の名詞です。一種でも'one species'、多種でも'many species'で形が変わりません。ラテン語に由来する名詞には単複同形のものがあり、'species'はその代表例です。同じくラテン語由来で特殊な複数形を持つものには'datum→data'、'criterion→criteria'、'phenomenon→phenomena'があります。日本語にも外来語に特殊な扱いがあるように、英語でもラテン語・ギリシャ語由来の語は独自の複数形を持つことがあります。"
+      }
+    ]
+  },
+  {
+    "key": "false_friends",
+    "name": "False Friends (Japanese-English)",
+    "description": "和製英語・偽の友達",
+    "iconName": "exclamationmark.triangle",
+    "color": "#ef4444",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_ff1",
+        "question": "I need to charge my _____ phone.",
+        "translation": "(携帯電話を充電しなければなりません)",
+        "options": [
+          "mobile",
+          "smart",
+          "hand",
+          "pocket"
+        ],
+        "correct": "mobile",
+        "explanation": "日本語の「スマートフォン」は英語でも'smartphone'ですが、「携帯電話」は英語で'mobile phone'（イギリス英語）または'cell phone'（アメリカ英語）です。日本語では「ケータイ」で通じますが、英語では'keitai'は通じません。日本語の「モバイル」はほぼ英語の'mobile'と同じ意味で使われますが、日本独自の略語「ケータイ」「ガラケー」は和製英語として認識しておきましょう。英語圏ではブランド名を使うことも多いです。"
+      },
+      {
+        "id": "je_ff2",
+        "question": "She works in a _____ building near the station.",
+        "translation": "(彼女は駅近くのビルで働いています)",
+        "options": [
+          "commercial",
+          "mansion",
+          "apart",
+          "building"
+        ],
+        "correct": "commercial",
+        "explanation": "日本語の「マンション」は英語では'apartment'（アメリカ英語）か'flat'（イギリス英語）です。英語の'mansion'は「大邸宅」を意味し、豪華な一戸建ての家を指します。これは最も有名な和製英語の誤用の一つです。日本人が'I live in a mansion'と言うと、英語話者は大富豪だと思ってしまいます。正しくは'I live in an apartment'です。和製英語は英語学習の大きな落とし穴なので、一つずつ正しい英語表現を確認していくことが重要です。"
+      },
+      {
+        "id": "je_ff3",
+        "question": "Can I have a _____ of French fries?",
+        "translation": "(フライドポテトを一つもらえますか？)",
+        "options": [
+          "serving",
+          "fried potato",
+          "potato fry",
+          "fry"
+        ],
+        "correct": "serving",
+        "explanation": "日本語の「フライドポテト」は英語では'French fries'（アメリカ英語）または'chips'（イギリス英語）です。'fried potato'は文法的には通じますが、一般的な注文語ではありません。また、日本語の「ポテト」もそのままでは英語では単に'potato'（じゃがいも全体）を指し、フライドポテトの意味にはなりません。ファストフード店では'Can I have some fries?'が自然な表現です。食べ物関連の和製英語は特に多いので注意が必要です。"
+      },
+      {
+        "id": "je_ff4",
+        "question": "He is wearing a _____ today.",
+        "translation": "(彼は今日スーツを着ています)",
+        "options": [
+          "suit",
+          "costume",
+          "back",
+          "salary man"
+        ],
+        "correct": "suit",
+        "explanation": "日本語では「コスチューム」をファッション全般に使うことがありますが、英語の'costume'は主に「衣装、仮装衣装」（ハロウィンの衣装など）を意味します。ビジネススーツは英語では'suit'です。また「サラリーマン」は和製英語で、英語では'office worker'、'businessman'、'company employee'などと言います。'salary man'は英語では通じません。ビジネスに関する和製英語は特に多く、国際的なビジネスシーンで誤解を招く可能性があります。"
+      },
+      {
+        "id": "je_ff5",
+        "question": "I'll get the _____ from the front desk.",
+        "translation": "(フロントから鍵をもらいます)",
+        "options": [
+          "key",
+          "front",
+          "service",
+          "check"
+        ],
+        "correct": "key",
+        "explanation": "日本語の「フロント」はホテルの受付を意味しますが、英語では'front desk'または'reception'と言います。'front'だけでは「前部」「正面」という意味にしかなりません。'I'll check in at the front desk'（フロントでチェックインします）が正しい英語です。ホテル関連の和製英語には他にも「モーニングコール」→'wake-up call'、「パーキング」→'parking lot/garage'などがあります。旅行で使う英語は正確に覚えておくと役立ちます。"
+      },
+      {
+        "id": "je_ff6",
+        "question": "She bought a new _____ at the electronics store.",
+        "translation": "(彼女は電器店で新しいノートパソコンを買いました)",
+        "options": [
+          "laptop",
+          "note",
+          "personal computer",
+          "pasokon"
+        ],
+        "correct": "laptop",
+        "explanation": "日本語の「ノートパソコン」「パソコン」は和製英語です。英語では'laptop'（ノート型）、'desktop'（デスクトップ型）、'computer'（総称）と言います。'notebook computer'も通じますが、'note'だけでは「メモ帳」の意味です。また「パソコン」は英語圏では全く通じません。'PC'（personal computer）は英語でも使いますが、口語では'computer'や'laptop'が一般的です。IT関連の和製英語は非常に多いので、正しい英語表現を確認しておきましょう。"
+      },
+      {
+        "id": "je_ff7",
+        "question": "We need to fix the flat _____.",
+        "translation": "(パンクしたタイヤを修理しなければなりません)",
+        "options": [
+          "tire",
+          "punk",
+          "tyre",
+          "puncture"
+        ],
+        "correct": "tire",
+        "explanation": "日本語の「パンク」はドイツ語の'Panne'や英語の'puncture'に由来しますが、英語で「パンク」と言っても通じません。英語では'flat tire'（パンクしたタイヤ）、'I got a flat'（パンクした）、または'puncture'（イギリス英語）と言います。アメリカ英語のスペルは'tire'、イギリス英語は'tyre'です。車関連の用語にも和製英語が多く、「ハンドル」→'steering wheel'、「バックミラー」→'rearview mirror'など、正しい英語に置き換えて覚える必要があります。"
+      },
+      {
+        "id": "je_ff8",
+        "question": "The _____ in this restaurant is excellent.",
+        "translation": "(このレストランのサービスは素晴らしいです)",
+        "options": [
+          "service",
+          "viking",
+          "order",
+          "manner"
+        ],
+        "correct": "service",
+        "explanation": "日本語の「バイキング」（食べ放題）は英語では'buffet'（ビュッフェ）と言います。英語の'Viking'は北欧の海賊・戦士を意味し、食事とは無関係です。日本で「バイキング」が食べ放題の意味になったのは、帝国ホテルが北欧式のスモーガスボードを「バイキング」と名付けたことが始まりです。英語で食べ放題は'all-you-can-eat buffet'です。このような日本独自の意味変化は英語話者には理解できないので、正しい英語表現を使いましょう。"
+      },
+      {
+        "id": "je_ff9",
+        "question": "Could you get me a _____?",
+        "translation": "(ホッチキスを取ってもらえますか？)",
+        "options": [
+          "stapler",
+          "hotchkiss",
+          "patcher",
+          "clamp"
+        ],
+        "correct": "stapler",
+        "explanation": "日本語の「ホッチキス」はアメリカの会社名'Hotchkiss'に由来する商標名です。英語では'stapler'（ステープラー）が正しい一般名称です。同様に、日本語の「セロテープ」は英語では'Scotch tape'（アメリカ）/'sticky tape'（イギリス）、「シャーペン」は'mechanical pencil'です。日本語では商標名がそのまま一般名詞になることが多いですが、英語では異なる場合があるため注意が必要です。文房具の和製英語は特に多い分野です。"
+      },
+      {
+        "id": "je_ff10",
+        "question": "I'm going to the _____ to buy groceries.",
+        "translation": "(食料品を買いにスーパーに行きます)",
+        "options": [
+          "supermarket",
+          "super",
+          "grocery",
+          "department"
+        ],
+        "correct": "supermarket",
+        "explanation": "日本語では「スーパー」と略しますが、英語で'super'は「素晴らしい」という形容詞です。英語では'supermarket'または'grocery store'と完全な形で言う必要があります。'I'm going to the super'は英語では意味が通じません。日本語は外来語をよく短縮しますが（「コンビニ」「デパート」「エアコン」）、英語では短縮しないか別の略し方をします。'convenience store'（コンビニ）、'department store'（デパート）、'air conditioning'（エアコン）が正しい英語です。"
+      },
+      {
+        "id": "je_ff11",
+        "question": "She is a fashion _____.",
+        "translation": "(彼女はファッションモデルです)",
+        "options": [
+          "model",
+          "talent",
+          "idol",
+          "manner"
+        ],
+        "correct": "model",
+        "explanation": "日本語の「タレント」はテレビ出演者全般を指しますが、英語の'talent'は「才能」「能力」を意味し、人を指す場合も「才能のある人」というニュアンスです。テレビタレントは英語では'TV personality'、'celebrity'、'entertainer'などと言います。また「アイドル」も英語では'idol'（崇拝の対象）で、日本の「アイドル」とは少しニュアンスが異なります。英語では'pop star'や'teen idol'がより近い表現です。"
+      },
+      {
+        "id": "je_ff12",
+        "question": "I always eat _____ for breakfast.",
+        "translation": "(朝食にはいつもパンを食べます)",
+        "options": [
+          "bread",
+          "morning",
+          "pan",
+          "toast"
+        ],
+        "correct": "bread",
+        "explanation": "日本語の「パン」はポルトガル語の'pão'に由来します。英語では'bread'です。'pan'は英語では「フライパン」を意味し、パンとは無関係です。また日本語の「トースト」はそのまま英語でも'toast'ですが、焼いていないパンは'bread'です。食品関連の和製英語・外来語の誤用は非常に多く、「クリーム」→'cream'、「ジュース」→'juice'（英語では100%果汁のみを指す場合が多い）など、正確な意味を確認することが大切です。"
+      },
+      {
+        "id": "je_ff13",
+        "question": "He drives a _____ car.",
+        "translation": "(彼はハイブリッド車に乗っています)",
+        "options": [
+          "hybrid",
+          "eco",
+          "gasoline",
+          "handle"
+        ],
+        "correct": "hybrid",
+        "explanation": "「エコカー」は和製英語で、英語では'hybrid car'、'electric vehicle'（EV）、'fuel-efficient car'などと具体的に言います。英語で'eco car'と言って通じないわけではありませんが、一般的な表現ではありません。また「ガソリンスタンド」は英語では'gas station'（アメリカ）/'petrol station'（イギリス）です。自動車関連の和製英語は「ウィンカー」→'turn signal/indicator'、「クラクション」→'horn'など数多くあり、海外でのドライブ時に重要です。"
+      },
+      {
+        "id": "je_ff14",
+        "question": "I'm staying at a _____ near the beach.",
+        "translation": "(ビーチの近くのホテルに泊まっています)",
+        "options": [
+          "hotel",
+          "pension",
+          "mansion",
+          "apart"
+        ],
+        "correct": "hotel",
+        "explanation": "日本語の「ペンション」は小さな宿泊施設を意味しますが、英語の'pension'は「年金」です。英語で民宿のような小規模宿泊施設は'bed and breakfast'（B&B）、'inn'、'guesthouse'と言います。また「ホテル」はそのまま英語でも'hotel'ですが、「ビジネスホテル」は和製英語で、英語では'budget hotel'や'business hotel'（一部使用）と言います。宿泊関連の表現は旅行時に必要になるため、正しい英語を覚えておきましょう。"
+      },
+      {
+        "id": "je_ff15",
+        "question": "Please take a _____ before the interview.",
+        "translation": "(面接の前にアンケートに記入してください)",
+        "options": [
+          "questionnaire",
+          "enquete",
+          "survey form",
+          "hearing"
+        ],
+        "correct": "questionnaire",
+        "explanation": "日本語の「アンケート」はフランス語の'enquête'に由来しますが、英語では'questionnaire'（書面の質問票）、'survey'（調査）と言います。英語で'enquete'と言っても通じません。また日本語の「ヒアリング」は英語では'hearing'（聴聞会、聴覚）であり、「意見を聞くこと」は'interview'、'consultation'、'feedback session'などと言います。フランス語由来の和製英語は英語話者には特に通じにくいので要注意です。"
+      }
+    ]
+  },
+  {
+    "key": "common_errors_japanese",
+    "name": "Common Errors for Japanese Speakers",
+    "description": "日本語話者が犯しやすい間違い",
+    "iconName": "xmark.circle",
+    "color": "#ef4444",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_cej1",
+        "question": "I _____ to the station every day.",
+        "translation": "(私は毎日駅に行きます)",
+        "options": [
+          "go",
+          "go to",
+          "am going",
+          "going"
+        ],
+        "correct": "go",
+        "explanation": "日本語話者は「行きます」を直訳して'go to'を使いがちですが、この文では'go'だけで完結します。'I go to the station'が正しい文です（'to'は前置詞で'go'の一部ではありません）。ここでの問題は空所の直後に'to'があるため、'go to'を選ぶと'go to to'になってしまうことです。英語の前置詞は動詞と別の要素なので、文全体を見て判断する必要があります。日本語の助詞「に」は使いやすいですが、英語の前置詞は位置に注意が必要です。"
+      },
+      {
+        "id": "je_cej2",
+        "question": "She _____ a doctor.",
+        "translation": "(彼女は医者です)",
+        "options": [
+          "is",
+          "is a",
+          "does",
+          "has"
+        ],
+        "correct": "is",
+        "explanation": "日本語では「彼女は医者です」のように名詞だけで済みますが、英語では必ず冠詞が必要です。'She is a doctor.'が正解で、'She is doctor.'は誤りです。日本語には冠詞がないため、'a'や'the'を忘れる間違いは日本語話者に最も多いエラーの一つです。職業を述べるとき、英語では'a/an'＋職業名が基本パターンです。'He is an engineer.'、'I am a student.'のように常に冠詞をつけることを意識しましょう。"
+      },
+      {
+        "id": "je_cej3",
+        "question": "I _____ English since I was ten.",
+        "translation": "(10歳から英語を勉強しています)",
+        "options": [
+          "have studied",
+          "study",
+          "am studying",
+          "studied"
+        ],
+        "correct": "have studied",
+        "explanation": "日本語の「〜しています」を'am studying'と訳しがちですが、「10歳から今まで続けている」は過去から現在への継続を表す現在完了形'have studied'が正解です。日本語の「〜しています」は現在進行と現在完了の両方をカバーしますが、英語ではこれを明確に区別します。'since'（〜以来）や'for'（〜間）がある場合は現在完了形を使うのがルールです。時制の使い分けは日本語話者にとって最大の挑戦の一つです。"
+      },
+      {
+        "id": "je_cej4",
+        "question": "There are _____ students in the classroom.",
+        "translation": "(教室にはたくさんの学生がいます)",
+        "options": [
+          "many",
+          "much",
+          "a lot",
+          "lots"
+        ],
+        "correct": "many",
+        "explanation": "'many'は可算名詞（数えられる名詞）に、'much'は不可算名詞（数えられない名詞）に使います。'students'は数えられるので'many'が正解です。日本語では「たくさんの」一語で両方をカバーしますが、英語では区別が必要です。'many students'（学生が多い）、'much water'（水が多い）。ただし'a lot of'は両方に使えるので便利ですが、正式な文章では'many/much'を使い分ける方が適切です。可算・不可算の区別は日本語話者の大きな課題です。"
+      },
+      {
+        "id": "je_cej5",
+        "question": "I want _____ eat sushi.",
+        "translation": "(寿司を食べたいです)",
+        "options": [
+          "to",
+          "–",
+          "for",
+          "that"
+        ],
+        "correct": "to",
+        "explanation": "日本語の「〜したい」を英語にするとき、'want'の後に'to'＋動詞の原形が必要です。'I want to eat'が正解で、'I want eat'は誤りです。日本語では「食べたい」と動詞に直接「たい」をつけますが、英語では'want to'のように不定詞構文を使います。同様に'need to'、'would like to'も同じパターンです。'wanna'（want to の口語形）は会話では使えますが、正式な場面では避けましょう。この構文は毎日使う基本中の基本です。"
+      },
+      {
+        "id": "je_cej6",
+        "question": "The weather _____ nice today.",
+        "translation": "(今日は天気がいいです)",
+        "options": [
+          "is",
+          "does",
+          "has",
+          "makes"
+        ],
+        "correct": "is",
+        "explanation": "日本語では「天気がいいです」と形容詞的に表現しますが、英語では'The weather is nice'のようにbe動詞を使います。日本語話者がよくする間違いは、天気を'do'や'make'で表現しようとすることです。英語の天気表現は'It is sunny'、'It is raining'、'The weather is cold'のようにbe動詞が基本です。'It makes cold'や'Today does nice weather'は全て誤りです。天気の表現は毎日の会話で使うため、正しいパターンを体に染み込ませましょう。"
+      },
+      {
+        "id": "je_cej7",
+        "question": "I _____ to talk to you about something.",
+        "translation": "(あなたにお話ししたいことがあります)",
+        "options": [
+          "need",
+          "am needing",
+          "have need",
+          "needing"
+        ],
+        "correct": "need",
+        "explanation": "'need'は状態動詞で、通常は進行形にしません。'I am needing'は誤りで、'I need'が正しいです。日本語の「必要としています」を直訳すると進行形にしたくなりますが、英語の状態動詞（need, want, know, like, love, hate, believe, understand等）は進行形を避けます。ただし'think'は「考える」（動作）の場合は'I am thinking'が可能です。状態動詞と動作動詞の区別は日本語にはない概念で、英語特有のルールとして覚える必要があります。"
+      },
+      {
+        "id": "je_cej8",
+        "question": "He gave _____ a present.",
+        "translation": "(彼は彼女にプレゼントをあげました)",
+        "options": [
+          "her",
+          "she",
+          "to she",
+          "hers"
+        ],
+        "correct": "her",
+        "explanation": "日本語では「彼女に」と助詞「に」をつけますが、英語では目的格の代名詞'her'を使います。'He gave she a present'は誤りで、主格'she'は主語としてのみ使えます。英語の代名詞は格変化があり、主格（she）、目的格（her）、所有格（her/hers）を使い分けます。日本語では助詞（が、を、に）で役割を示しますが、英語では代名詞の形そのもので示します。この代名詞の格変化は日本語話者がよく混乱するポイントです。"
+      },
+      {
+        "id": "je_cej9",
+        "question": "I'm looking forward _____ meeting you.",
+        "translation": "(お会いできるのを楽しみにしています)",
+        "options": [
+          "to",
+          "for",
+          "at",
+          "in"
+        ],
+        "correct": "to",
+        "explanation": "'look forward to'の'to'の後は名詞または動名詞（-ing形）が来ます。'look forward to meeting'が正解で、'look forward to meet'は誤りです。この'to'は不定詞の'to'ではなく前置詞の'to'なので、後ろに動名詞が来ます。日本語話者は'to'を見ると不定詞だと思い込み、動詞の原形を使ってしまう間違いが非常に多いです。メールの結びにも使う重要表現なので、'looking forward to + -ing'のパターンを確実に覚えてください。"
+      },
+      {
+        "id": "je_cej10",
+        "question": "_____ you tell me the way to the station?",
+        "translation": "(駅への道を教えていただけますか？)",
+        "options": [
+          "Could",
+          "May",
+          "Do",
+          "Are"
+        ],
+        "correct": "Could",
+        "explanation": "日本語では「教えていただけますか？」と丁寧語を使いますが、英語でも丁寧さのレベルがあります。'Could you...?'は'Can you...?'より丁寧で、ビジネスや初対面の人に適しています。日本語話者は丁寧語の使い分けが得意ですが、英語の丁寧表現は異なるシステムです。丁寧さの順：'Tell me...'（命令）＜'Can you...?'（普通）＜'Could you...?'（丁寧）＜'Would you mind...?'（とても丁寧）。状況に応じた適切な丁寧さレベルを選ぶことが大切です。"
+      },
+      {
+        "id": "je_cej11",
+        "question": "I _____ agree with you.",
+        "translation": "(あなたに賛成しません)",
+        "options": [
+          "don't",
+          "am not",
+          "not",
+          "no"
+        ],
+        "correct": "don't",
+        "explanation": "日本語の否定は文末に来ますが（「賛成しません」）、英語の否定は動詞の前に来ます。一般動詞の否定には'do not/don't'を使います。'I not agree'や'I no agree'は誤りです。日本語話者がよくする間違いは、'not'だけを動詞の前に置くことです。英語では必ず'do/does/did'＋'not'の組み合わせが必要です。be動詞の場合は'am not/isn't/aren't'を使います。否定文の作り方は英語の基本構文として最初にマスターすべきルールです。"
+      },
+      {
+        "id": "je_cej12",
+        "question": "She said _____ she was tired.",
+        "translation": "(彼女は疲れていると言いました)",
+        "options": [
+          "that",
+          "to",
+          "what",
+          "if"
+        ],
+        "correct": "that",
+        "explanation": "日本語では「疲れていると言った」のように助詞「と」で引用しますが、英語では'said that'を使います。'She said that she was tired'が正解です。'that'は省略可能ですが、学習段階では入れた方が文構造が明確になります。日本語話者は'She said to she was tired'のように'to'を使う間違いをしがちです。報告文（間接話法）の基本パターンは'主語＋said＋that＋文'です。時制の一致（is→was）にも注意が必要で、これも日本語にはないルールです。"
+      },
+      {
+        "id": "je_cej13",
+        "question": "I've been to Japan _____.",
+        "translation": "(私は以前日本に行ったことがあります)",
+        "options": [
+          "before",
+          "ago",
+          "already",
+          "yet"
+        ],
+        "correct": "before",
+        "explanation": "'before'（以前）と'ago'（〜前）は日本語話者が混同しやすい単語です。'I've been to Japan before'は現在完了形で「以前行ったことがある」。'ago'は過去形と使い、'I went to Japan two years ago'（2年前に行った）のように具体的な過去の時点を示します。'ago'を現在完了形と一緒に使うのは誤りです。日本語の「前に」は両方の意味をカバーしますが、英語では時制に応じて使い分けが必要です。この区別は試験でも頻出する重要ポイントです。"
+      },
+      {
+        "id": "je_cej14",
+        "question": "I'm _____ in Japanese culture.",
+        "translation": "(私は日本文化に興味があります)",
+        "options": [
+          "interested",
+          "interesting",
+          "interest",
+          "interests"
+        ],
+        "correct": "interested",
+        "explanation": "'-ed'形と'-ing'形の形容詞の混同は日本語話者に非常に多い間違いです。'interested'は「興味を持っている（人の感情）」、'interesting'は「興味深い（物事の性質）」です。'I'm interested'（私は興味がある）✓、'I'm interesting'（私は面白い人間だ）✗。同じパターン：'bored/boring'、'excited/exciting'、'surprised/surprising'、'tired/tiring'。原則として、感情を感じる人は'-ed'、感情を引き起こす物事は'-ing'です。"
+      },
+      {
+        "id": "je_cej15",
+        "question": "Let's meet _____ next Monday.",
+        "translation": "(来週の月曜日に会いましょう)",
+        "options": [
+          "–",
+          "on",
+          "at",
+          "in"
+        ],
+        "correct": "–",
+        "explanation": "'next Monday'（来週の月曜日）、'this Friday'（今週の金曜日）、'last week'（先週）などの'next/this/last/every'がつく時間表現には前置詞をつけません。'Let's meet on next Monday'は誤りで、'Let's meet next Monday'が正解です。日本語では「来週の月曜日に」と「に」をつけるので、英語でも前置詞をつけたくなりますが、これは英語では不要です。同様に'every day'、'tomorrow'、'yesterday'にも前置詞は不要です。このルールは日本語話者が特に間違えやすいポイントです。"
+      }
+    ]
+  },
+  {
+    "key": "idiomatic_expressions",
+    "name": "Idiomatic Expressions",
+    "description": "慣用表現・イディオム",
+    "iconName": "text.quote",
+    "color": "#a78bfa",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "je_ie1",
+        "question": "It's raining cats and _____.",
+        "translation": "(土砂降りです)",
+        "options": [
+          "dogs",
+          "birds",
+          "fish",
+          "frogs"
+        ],
+        "correct": "dogs",
+        "explanation": "'It's raining cats and dogs'は「土砂降りだ」を意味する英語で最も有名なイディオムの一つです。文字通りに訳すと「猫と犬が降っている」ですが、実際には「非常に激しく雨が降っている」を表します。由来には諸説ありますが、17世紀のイギリスで大雨の後に動物の死骸が流れてきたことに関連するとも言われています。日本語の「バケツをひっくり返したような雨」に似た表現です。このようなイディオムは文化的な知識として楽しく覚えましょう。"
+      },
+      {
+        "id": "je_ie2",
+        "question": "She let the cat out of the _____.",
+        "translation": "(彼女は秘密をうっかり漏らしました)",
+        "options": [
+          "bag",
+          "box",
+          "house",
+          "room"
+        ],
+        "correct": "bag",
+        "explanation": "'let the cat out of the bag'は「秘密を漏らす」という意味のイディオムです。袋から猫を出してしまう→隠していたものが明るみに出るという比喩です。中世のヨーロッパで、市場で子豚の代わりに猫を袋に入れて売る詐欺があり、袋を開けると猫が出てきて詐欺がバレたことが由来とされています。日本語の「口を滑らす」に近い表現です。英語のイディオムには動物を使ったものが非常に多く、文化的背景を知ると記憶に残りやすくなります。"
+      },
+      {
+        "id": "je_ie3",
+        "question": "He's feeling under the _____.",
+        "translation": "(彼は体調が悪いです)",
+        "options": [
+          "weather",
+          "cloud",
+          "rain",
+          "storm"
+        ],
+        "correct": "weather",
+        "explanation": "'feel under the weather'は「体調が悪い、気分がすぐれない」という意味のイディオムです。船乗りが悪天候で船酔いしたことが由来とされています。直訳すると「天気の下にいる」ですが、実際には軽い病気や不調を表す婉曲表現です。'I'm sick'よりも柔らかい言い方で、日常会話でよく使われます。日本語にも「天気が悪いと体調も悪い」という感覚がありますが、英語ではこれがイディオムとして定着しています。"
+      },
+      {
+        "id": "je_ie4",
+        "question": "Break a _____!",
+        "translation": "(頑張って！＝幸運を祈る)",
+        "options": [
+          "leg",
+          "arm",
+          "finger",
+          "bone"
+        ],
+        "correct": "leg",
+        "explanation": "'Break a leg!'は「頑張って！」「幸運を祈る！」という意味の激励表現です。特に舞台俳優やパフォーマーに対して使われます。直訳は「足を折れ！」ですが、劇場の迷信で「Good luck」と言うと逆に不運になるため、反対のことを言って幸運を呼ぶという伝統に由来します。日本語にも「頑張って」という表現がありますが、英語の'Break a leg'は特にパフォーマンス前の決まり文句として広く使われています。文化的背景を楽しみながら覚えましょう。"
+      },
+      {
+        "id": "je_ie5",
+        "question": "It cost an arm and a _____.",
+        "translation": "(とても高価でした)",
+        "options": [
+          "leg",
+          "hand",
+          "foot",
+          "finger"
+        ],
+        "correct": "leg",
+        "explanation": "'cost an arm and a leg'は「非常に高価だ」「法外な値段だ」という意味のイディオムです。体の一部を犠牲にするほど高い、というユーモラスな誇張表現です。18世紀の肖像画家が体の部位の数に応じて料金を変えたことが由来の一説です。日本語の「目が飛び出るほど高い」に似た表現です。'That car cost me an arm and a leg'（あの車は目が飛び出るほど高かった）のように使います。日常会話でかなり頻繁に使われる便利なイディオムです。"
+      },
+      {
+        "id": "je_ie6",
+        "question": "She hit the nail on the _____.",
+        "translation": "(彼女は的を射た発言をしました)",
+        "options": [
+          "head",
+          "point",
+          "top",
+          "mark"
+        ],
+        "correct": "head",
+        "explanation": "'hit the nail on the head'は「的を射ている、まさにその通りだ」という意味のイディオムです。釘の頭を正確に叩くことから、「真実を正確に言い当てる」という比喩です。日本語の「的を射る」「図星だ」に相当します。'You hit the nail on the head with that comment'（そのコメントは的を射ている）のように使います。ビジネスの場面でも日常会話でも使えるフレーズで、相手の意見に強く同意するときに特に効果的です。"
+      },
+      {
+        "id": "je_ie7",
+        "question": "Don't put all your eggs in one _____.",
+        "translation": "(一つのことに全てを賭けるな)",
+        "options": [
+          "basket",
+          "box",
+          "bag",
+          "bowl"
+        ],
+        "correct": "basket",
+        "explanation": "'Don't put all your eggs in one basket'は「一つのことに全てを賭けるな、リスクを分散しろ」という意味の格言的イディオムです。全ての卵を一つのかごに入れると、かごを落としたら全部割れてしまうという教訓です。投資やビジネスでよく使われ、「リスク分散」の重要性を説きます。日本語の「一つのかごに全ての卵を盛るな」はこの英語のイディオムの直訳です。金融・ビジネスの場でも日常会話でも使える実用的な表現です。"
+      },
+      {
+        "id": "je_ie8",
+        "question": "The ball is in your _____.",
+        "translation": "(あなたが決める番です)",
+        "options": [
+          "court",
+          "field",
+          "hand",
+          "side"
+        ],
+        "correct": "court",
+        "explanation": "'The ball is in your court'は「あなたが行動する番だ、決定はあなた次第だ」という意味のイディオムです。テニスのコートでボールが相手側にある＝相手が打つ番、という比喩です。日本語の「ボールはあなたの側にある」に近い表現で、ビジネスメールでも頻繁に使われます。'I've made my offer. The ball is in your court now.'（提案はしました。あとはあなた次第です）のように使います。交渉や意思決定の場面で特に便利なイディオムです。"
+      },
+      {
+        "id": "je_ie9",
+        "question": "He's been burning the midnight _____.",
+        "translation": "(彼は夜遅くまで働いています)",
+        "options": [
+          "oil",
+          "candle",
+          "fire",
+          "light"
+        ],
+        "correct": "oil",
+        "explanation": "'burn the midnight oil'は「深夜まで働く、夜遅くまで勉強する」という意味のイディオムです。電気がなかった時代に、深夜までオイルランプを灯して作業していたことが由来です。日本語の「夜なべする」「徹夜する」に近い表現です。試験前の勉強や仕事の締め切り前によく使われます。'She's been burning the midnight oil to finish the project'（プロジェクトを終わらせるために深夜まで働いている）のように使います。"
+      },
+      {
+        "id": "je_ie10",
+        "question": "Let's not beat around the _____.",
+        "translation": "(遠回しに言わないでおこう)",
+        "options": [
+          "bush",
+          "tree",
+          "garden",
+          "corner"
+        ],
+        "correct": "bush",
+        "explanation": "'beat around the bush'は「遠回しに言う、本題を避ける」という意味のイディオムです。由来は狩猟で、茂みを叩いて獲物を追い出す際に茂みの周りばかり叩いている＝肝心の獲物に直接手を出さないことから来ています。'Don't beat around the bush—tell me what you really think'（遠回しに言わないで、本音を聞かせて）のように使います。日本語の「遠回しに言う」「回りくどい」に相当し、ビジネスでも日常でも頻出する重要イディオムです。"
+      },
+      {
+        "id": "je_ie11",
+        "question": "She's the apple of his _____.",
+        "translation": "(彼女は彼の目に入れても痛くないほど大切な人です)",
+        "options": [
+          "eye",
+          "heart",
+          "soul",
+          "mind"
+        ],
+        "correct": "eye",
+        "explanation": "'the apple of someone's eye'は「溺愛する人、目に入れても痛くない存在」という意味のイディオムです。聖書に由来する表現で、「目の中の瞳（apple＝瞳孔を指す古語）」が守るべき大切なものの比喩として使われています。日本語の「目に入れても痛くない」にぴったり対応する美しい表現です。親が子どもについて語るときや、誰かが大切な人について話すときに使います。感情的で温かみのある表現として覚えておくと良いでしょう。"
+      },
+      {
+        "id": "je_ie12",
+        "question": "Actions speak louder than _____.",
+        "translation": "(行動は言葉よりも雄弁だ)",
+        "options": [
+          "words",
+          "thoughts",
+          "ideas",
+          "talks"
+        ],
+        "correct": "words",
+        "explanation": "'Actions speak louder than words'は「行動は言葉より雄弁だ」「有言実行が大切だ」という意味の格言です。いくら言葉で約束しても、実際の行動が伴わなければ意味がないという教訓を含んでいます。日本語のことわざ「有言実行」や「不言実行」に近い概念です。ビジネスの場でも教育の場でもよく引用される表現で、英語圏では非常に広く知られた格言の一つです。英語の格言は文化を理解する窓口にもなります。"
+      },
+      {
+        "id": "je_ie13",
+        "question": "You can't judge a book by its _____.",
+        "translation": "(外見で判断してはいけません)",
+        "options": [
+          "cover",
+          "title",
+          "page",
+          "size"
+        ],
+        "correct": "cover",
+        "explanation": "'Don't judge a book by its cover'は「外見で判断してはいけない」「見かけによらない」という意味のイディオムです。本の表紙（見た目）だけで内容を判断するな、という比喩で、人や物事の外見に惑わされるなという教訓です。日本語の「人は見かけによらぬもの」に相当します。面接や初対面の場面でよく引用される格言で、偏見を戒める意味で使われます。日常会話でもビジネスの場でも使える普遍的な教訓を含んだ表現です。"
+      },
+      {
+        "id": "je_ie14",
+        "question": "Every cloud has a silver _____.",
+        "translation": "(どんな不幸にも良い面がある)",
+        "options": [
+          "lining",
+          "edge",
+          "side",
+          "light"
+        ],
+        "correct": "lining",
+        "explanation": "'Every cloud has a silver lining'は「どんな困難にも希望はある」「禍福はあざなえる縄のごとし」という意味のイディオムです。暗い雲の縁に太陽の光が銀色に輝いている様子から来た表現です。困っている人を励ますときに使います。日本語の「捨てる神あれば拾う神あり」「災い転じて福となす」に近い考え方です。'I know things look bad now, but every cloud has a silver lining'のように使います。前向きで希望を与える美しい英語表現として覚えましょう。"
+      },
+      {
+        "id": "je_ie15",
+        "question": "She's barking up the wrong _____.",
+        "translation": "(彼女は見当違いのことをしています)",
+        "options": [
+          "tree",
+          "road",
+          "path",
+          "dog"
+        ],
+        "correct": "tree",
+        "explanation": "'bark up the wrong tree'は「見当違いのことをしている、的外れだ」という意味のイディオムです。猟犬が獲物が逃げていない木に向かって吠えている＝間違った方向に努力している、という比喩です。日本語の「見当違い」「的外れ」に相当します。'If you think I did it, you're barking up the wrong tree'（私がやったと思っているなら見当違いだ）のように使います。相手の誤った推測や方向性を指摘するときに使う実用的なイディオムです。"
+      }
+    ]
+  },
+  {
+    "key": "proverbs_sayings",
+    "name": "Proverbs & Sayings",
+    "description": "ことわざ・格言",
+    "iconName": "book.closed",
+    "color": "#fbbf24",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "je_prv1",
+        "question": "Practice makes _____.",
+        "translation": "(練習すれば完璧になる＝習うより慣れよ)",
+        "options": [
+          "perfect",
+          "better",
+          "good",
+          "great"
+        ],
+        "correct": "perfect",
+        "explanation": "'Practice makes perfect'は英語で最もよく知られたことわざの一つで、「練習を重ねれば完璧になる」という意味です。日本語の「習うより慣れよ」「石の上にも三年」に近い教訓です。継続的な努力の重要性を説くこの格言は、教育現場、スポーツ、音楽、ビジネスなど、あらゆる分野で引用されます。英語学習そのものにも当てはまり、毎日少しずつ練習を積み重ねることが上達への最も確実な道です。シンプルながら力強いメッセージです。"
+      },
+      {
+        "id": "je_prv2",
+        "question": "When in Rome, do as the Romans _____.",
+        "translation": "(郷に入っては郷に従え)",
+        "options": [
+          "do",
+          "say",
+          "think",
+          "act"
+        ],
+        "correct": "do",
+        "explanation": "'When in Rome, do as the Romans do'は「郷に入っては郷に従え」に対応する英語のことわざです。4世紀の聖アンブロシウスの言葉に由来し、その土地の習慣や文化を尊重すべきだという教訓です。異文化理解の重要性を説く表現で、海外旅行や留学の場面でよく引用されます。日本語のことわざと英語のことわざが完全に対応する珍しい例で、短縮して'When in Rome...'だけでも意味が通じます。国際交流の場で使える教養ある表現です。"
+      },
+      {
+        "id": "je_prv3",
+        "question": "The early bird catches the _____.",
+        "translation": "(早起きは三文の得)",
+        "options": [
+          "worm",
+          "fish",
+          "bug",
+          "prey"
+        ],
+        "correct": "worm",
+        "explanation": "'The early bird catches the worm'は「早起きは三文の得」に相当する英語のことわざです。早く行動する人が最も良い成果を得る、という教訓です。17世紀の英語の格言集に初出があり、現代でもビジネスや日常会話で広く使われています。反対のユーモラスな表現として'The second mouse gets the cheese'（二番目のネズミがチーズを得る＝最初のネズミは罠にかかる＝慎重さも大切）というものもあります。勤勉さの価値を説く、文化を超えた普遍的な格言です。"
+      },
+      {
+        "id": "je_prv4",
+        "question": "A penny saved is a penny _____.",
+        "translation": "(節約は利益なり＝塵も積もれば山となる)",
+        "options": [
+          "earned",
+          "saved",
+          "kept",
+          "found"
+        ],
+        "correct": "earned",
+        "explanation": "'A penny saved is a penny earned'はベンジャミン・フランクリンに帰せられる有名な格言で、「1ペニーの節約は1ペニーの収入と同じ」という意味です。お金を使わないことは、お金を稼ぐことと同じ価値がある、という倹約の教訓です。日本語の「塵も積もれば山となる」に近い考え方です。財務管理や節約の話題でよく引用されます。英語圏の文化では個人の財務責任が強調されるため、この種の格言が多く存在します。"
+      },
+      {
+        "id": "je_prv5",
+        "question": "Better late than _____.",
+        "translation": "(遅れてもやらないよりまし)",
+        "options": [
+          "never",
+          "sorry",
+          "nothing",
+          "later"
+        ],
+        "correct": "never",
+        "explanation": "'Better late than never'は「遅くても、やらないよりはまし」という意味の非常にポピュラーなことわざです。完璧なタイミングを逃しても、行動しないよりは行動した方が良い、という励ましのメッセージです。遅刻した人への慰めとしても使われます。'Sorry I'm late.' 'Well, better late than never!'のように軽い冗談としても使えます。日本語にも「遅くてもしないよりまし」という表現があり、万国共通の知恵として世界中で使われています。"
+      },
+      {
+        "id": "je_prv6",
+        "question": "Rome wasn't built in a _____.",
+        "translation": "(ローマは一日にして成らず)",
+        "options": [
+          "day",
+          "week",
+          "year",
+          "night"
+        ],
+        "correct": "day",
+        "explanation": "'Rome wasn't built in a day'は「ローマは一日にして成らず」に完全に対応する英語のことわざです。大きな成果は一朝一夕には得られない、忍耐と継続が必要だ、という教訓です。英語学習にも当てはまり、流暢に話せるようになるには時間がかかることを認めた上で、着実に進歩することの大切さを説きます。日本語と英語で全く同じことわざが存在する興味深い例で、人類共通の知恵を感じさせます。励ましの言葉として広く使われています。"
+      },
+      {
+        "id": "je_prv7",
+        "question": "Two wrongs don't make a _____.",
+        "translation": "(他人の過ちで自分の過ちは正当化できない)",
+        "options": [
+          "right",
+          "left",
+          "good",
+          "point"
+        ],
+        "correct": "right",
+        "explanation": "'Two wrongs don't make a right'は「他人が悪いことをしたからといって、自分が悪いことをする理由にはならない」という意味のことわざです。復讐や仕返しを戒める道徳的な教訓です。子どもへの教育場面でよく使われ、'But he hit me first!' 'Two wrongs don't make a right.'のような会話が典型的です。日本語には直接対応することわざはありませんが、「やられたらやり返す」の反対の考え方です。道徳・倫理に関する重要な文化的表現です。"
+      },
+      {
+        "id": "je_prv8",
+        "question": "Curiosity killed the _____.",
+        "translation": "(好奇心は身を滅ぼす)",
+        "options": [
+          "cat",
+          "dog",
+          "bird",
+          "mouse"
+        ],
+        "correct": "cat",
+        "explanation": "'Curiosity killed the cat'は「好奇心は身を滅ぼす」「余計な詮索はするな」という意味のことわざです。知りすぎることの危険を警告する表現で、おせっかいな人に対して使います。猫が好奇心旺盛な動物であることから来ています。続きとして'...but satisfaction brought it back'（でも満足感が猫を生き返らせた＝知識は価値がある）という反論もあります。日本語の「知らぬが仏」に近い表現です。好奇心と慎重さのバランスを説く深いことわざです。"
+      },
+      {
+        "id": "je_prv9",
+        "question": "Don't count your chickens before they _____.",
+        "translation": "(取らぬ狸の皮算用)",
+        "options": [
+          "hatch",
+          "grow",
+          "lay",
+          "fly"
+        ],
+        "correct": "hatch",
+        "explanation": "'Don't count your chickens before they hatch'は「取らぬ狸の皮算用をするな」に対応する英語のことわざです。卵が孵化する前にヒナの数を数えるな＝結果が出る前に成功を見込むな、という教訓です。日本語の「捕らぬ狸の皮算用」と意味は同じですが、文化の違いにより動物が異なります（日本＝狸、英語＝鶏）。計画の段階で楽観的すぎる人に対して使います。文化比較として興味深い一対で、言語の多様性を感じさせます。"
+      },
+      {
+        "id": "je_prv10",
+        "question": "Where there's a will, there's a _____.",
+        "translation": "(意志あるところに道あり)",
+        "options": [
+          "way",
+          "path",
+          "road",
+          "hope"
+        ],
+        "correct": "way",
+        "explanation": "'Where there's a will, there's a way'は「意志あるところに道あり」「為せば成る」に対応する英語の格言です。強い意志があれば必ず方法が見つかる、という希望に満ちたメッセージです。困難に直面した人を励ますときに使われます。リンカーン大統領をはじめ多くの著名人が引用してきた格言です。日本語の「為せば成る」と同じ精神を持ち、困難を乗り越える力を与える言葉として、教育やビジネスの場で広く引用されています。"
+      },
+      {
+        "id": "je_prv11",
+        "question": "Time _____ all wounds.",
+        "translation": "(時が全ての傷を癒す＝時間が解決する)",
+        "options": [
+          "heals",
+          "fixes",
+          "cures",
+          "mends"
+        ],
+        "correct": "heals",
+        "explanation": "'Time heals all wounds'は「時が全ての傷を癒す」という意味のことわざで、悲しみや痛みも時間が経てば和らぐという慰めの言葉です。失恋、失敗、喪失を経験した人に対してよく使われます。日本語の「日にち薬」「時間が薬」に相当します。古代ギリシャの詩人メナンドロスに起源があるとされ、世界中の文化で同様の考え方が見られます。シンプルながら深い真理を含んだ格言として、慰めの場面で適切に使える表現です。"
+      },
+      {
+        "id": "je_prv12",
+        "question": "Honesty is the best _____.",
+        "translation": "(正直は最善の策)",
+        "options": [
+          "policy",
+          "choice",
+          "way",
+          "rule"
+        ],
+        "correct": "policy",
+        "explanation": "'Honesty is the best policy'は「正直は最善の策」というベンジャミン・フランクリンに帰せられることわざです。嘘をつくよりも正直でいた方が長期的には良い結果をもたらすという教訓です。日本語の「正直者の頭（こうべ）に神宿る」「嘘つきは泥棒の始まり」の反対側の教訓です。ビジネス倫理や子どもの教育でよく引用されます。英語圏の文化では正直さ（honesty）と誠実さ（integrity）が非常に重要な価値観とされています。"
+      },
+      {
+        "id": "je_prv13",
+        "question": "The pen is mightier than the _____.",
+        "translation": "(ペンは剣よりも強し)",
+        "options": [
+          "sword",
+          "gun",
+          "fist",
+          "shield"
+        ],
+        "correct": "sword",
+        "explanation": "'The pen is mightier than the sword'は「ペンは剣よりも強し」という有名な格言です。武力よりも言葉（文筆、教育、ジャーナリズム）の方が世界を変える力がある、という思想を表しています。1839年にエドワード・ブルワー＝リットンの戯曲で有名になりました。日本語でも「ペンは剣より強し」としてそのまま翻訳されており、表現の自由やジャーナリズムの重要性を説く場面で世界中で引用されています。教養として知っておくべき格言です。"
+      },
+      {
+        "id": "je_prv14",
+        "question": "A picture is worth a thousand _____.",
+        "translation": "(百聞は一見にしかず)",
+        "options": [
+          "words",
+          "stories",
+          "meanings",
+          "ideas"
+        ],
+        "correct": "words",
+        "explanation": "'A picture is worth a thousand words'は「百聞は一見にしかず」に相当する英語のことわざです。一枚の絵や写真は千の言葉に匹敵する情報を伝えられる、という意味です。プレゼンテーションやマーケティングの分野でよく引用され、ビジュアルコミュニケーションの重要性を説きます。日本語の「百聞は一見にしかず」は中国の『漢書』に由来しますが、英語版は1920年代のアメリカの広告業界で生まれました。デジタル時代にも通用する普遍的な格言です。"
+      },
+      {
+        "id": "je_prv15",
+        "question": "No pain, no _____.",
+        "translation": "(痛みなくして得るものなし)",
+        "options": [
+          "gain",
+          "goal",
+          "glory",
+          "growth"
+        ],
+        "correct": "gain",
+        "explanation": "'No pain, no gain'は「痛みなくして得るものなし」「苦労なくして成果なし」という意味の格言です。特にスポーツやフィットネスの世界で、努力なしに成果は得られないという精神を表す言葉として広く使われています。日本語の「虎穴に入らずんば虎子を得ず」「苦あれば楽あり」に近い教訓です。シンプルで覚えやすいリズミカルな構造が特徴で、モチベーション向上のスローガンとしても人気があります。日常会話でも気軽に使える便利な格言です。"
+      }
+    ]
   }
 ]

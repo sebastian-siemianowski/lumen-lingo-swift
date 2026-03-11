@@ -17658,5 +17658,1015 @@
         "explanation": "从来 (cónglái) = 'never (emphatic) / all along' — emphasizes the absolute absence of experience. 从来没有来过 = 'has never ever been.' 从来 + 没/不 is the strongest form of 'never': 从来不喝酒 (never drinks alcohol — absolute statement). Without 从来: 没来过 (hasn't been — neutral). With 从来: 从来没来过 (has NEVER been — emphatic)."
       }
     ]
+  },
+  {
+    "key": "discourse_markers",
+    "name": "Discourse Markers (话语标记)",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ec_dkm1",
+        "question": "_____，我们先讨论第一个问题。",
+        "translation": "(First of all, let's discuss the first question.)",
+        "options": [
+          "首先",
+          "然后",
+          "最后",
+          "其次"
+        ],
+        "correct": "首先",
+        "explanation": "首先 (shǒuxiān) means 'first of all / firstly' and introduces the first point in a sequence. It's used at the start of a paragraph or speech to organize ideas logically. Common sequence markers: 首先...然后...最后 (first...then...finally). In formal writing, 首先 can also pair with 其次 (secondly) and 再次 (thirdly). Unlike English, Chinese discourse markers often appear sentence-initially without a comma equivalent in speech."
+      },
+      {
+        "id": "ec_dkm2",
+        "question": "他很聪明，_____也很努力。",
+        "translation": "(He is smart, and moreover he works hard.)",
+        "options": [
+          "而且",
+          "但是",
+          "所以",
+          "因为"
+        ],
+        "correct": "而且",
+        "explanation": "而且 (érqiě) means 'moreover / and also / furthermore' and adds information that reinforces the previous statement. It implies the second point is equally or more important. Pattern: A，而且B. Similar markers: 并且 (bìngqiě, and also — more formal), 还 (hái, also — more casual). 而且 is stronger than simple 也 (also) because it adds emphasis to the additional point."
+      },
+      {
+        "id": "ec_dkm3",
+        "question": "_____他不来，我们就自己去吧。",
+        "translation": "(Since he's not coming, let's go by ourselves.)",
+        "options": [
+          "既然",
+          "如果",
+          "虽然",
+          "因为"
+        ],
+        "correct": "既然",
+        "explanation": "既然 (jìrán) means 'since / given that' and introduces a fact already known or accepted, then draws a conclusion. Unlike 因为 (because) which states a cause, 既然 presupposes the listener already knows the fact. Pattern: 既然A，就B. Example: 既然你不想吃，就别吃了 (since you don't want to eat, then don't). It often pairs with 就 or 那就 in the result clause."
+      },
+      {
+        "id": "ec_dkm4",
+        "question": "这个方案不错，_____，我们需要考虑成本。",
+        "translation": "(This plan is good; however, we need to consider the cost.)",
+        "options": [
+          "不过",
+          "而且",
+          "所以",
+          "于是"
+        ],
+        "correct": "不过",
+        "explanation": "不过 (búguò) means 'however / but / nevertheless' and introduces a mild contrast or reservation. It's softer than 但是 (dànshì, but) and often used in conversation. Formality scale: 然而 (rán'ér, formal) > 但是 > 不过 > 可是 (kěshì, casual). 不过 can also mean 'merely/only' in other contexts: 不过是个玩笑 (it's merely a joke)."
+      },
+      {
+        "id": "ec_dkm5",
+        "question": "_____，学好中文需要时间和耐心。",
+        "translation": "(In short, learning Chinese well requires time and patience.)",
+        "options": [
+          "总之",
+          "首先",
+          "另外",
+          "然而"
+        ],
+        "correct": "总之",
+        "explanation": "总之 (zǒngzhī) means 'in short / in a word / all in all' and summarizes preceding points. It signals that the speaker is wrapping up. Similar summary markers: 总的来说 (zǒng de lái shuō, generally speaking), 总而言之 (zǒng'éryánzhī, to sum up — very formal). 总之 is the most versatile and common in both spoken and written Chinese."
+      },
+      {
+        "id": "ec_dkm6",
+        "question": "他身体不好，_____他还是坚持工作。",
+        "translation": "(His health is not good; nevertheless, he still persists in working.)",
+        "options": [
+          "然而",
+          "而且",
+          "因此",
+          "于是"
+        ],
+        "correct": "然而",
+        "explanation": "然而 (rán'ér) means 'however / nevertheless / yet' and introduces a strong contrast, typically in formal or written Chinese. It's more literary than 但是 or 不过. Pattern: A，然而B (where B contrasts with A). In academic writing, 然而 is preferred over colloquial alternatives. Note: it cannot begin a conversation — it always connects to prior context."
+      },
+      {
+        "id": "ec_dkm7",
+        "question": "我喜欢旅游。_____，我也喜欢摄影。",
+        "translation": "(I like traveling. In addition, I also like photography.)",
+        "options": [
+          "另外",
+          "但是",
+          "所以",
+          "总之"
+        ],
+        "correct": "另外",
+        "explanation": "另外 (lìngwài) means 'in addition / besides / moreover' and introduces a separate but related point. Unlike 而且 (which reinforces), 另外 adds a new topic. It can start a new sentence or clause. 另外 can also function as an adjective meaning 'other/another': 另外一个人 (another person). Similar: 此外 (cǐwài, furthermore — more formal), 除此之外 (chúcǐzhīwài, apart from this)."
+      },
+      {
+        "id": "ec_dkm8",
+        "question": "他很忙，_____没有来参加会议。",
+        "translation": "(He was very busy, therefore he didn't come to the meeting.)",
+        "options": [
+          "因此",
+          "但是",
+          "而且",
+          "虽然"
+        ],
+        "correct": "因此",
+        "explanation": "因此 (yīncǐ) means 'therefore / for this reason / consequently' and introduces a logical result. It's more formal than 所以 (suǒyǐ). Formality scale: 因此 > 所以 > 就 (jiù). Pattern: cause + 因此 + result. In academic and business writing, 因此 is strongly preferred. It can also appear mid-sentence: 他因此决定离开 (he therefore decided to leave)."
+      },
+      {
+        "id": "ec_dkm9",
+        "question": "_____你们有什么问题，可以随时问我。",
+        "translation": "(If you have any questions, you can ask me anytime.)",
+        "options": [
+          "如果",
+          "既然",
+          "虽然",
+          "不管"
+        ],
+        "correct": "如果",
+        "explanation": "如果 (rúguǒ) means 'if' and introduces a hypothetical condition. Pattern: 如果A，就B. Synonyms by formality: 假如 (jiǎrú, formal), 要是 (yàoshi, casual), 倘若 (tǎngruò, literary). 如果 is the most neutral and universally appropriate. Note: in spoken Chinese, 如果 is often shortened to 要是, and 就 in the result clause can be omitted when the meaning is clear."
+      },
+      {
+        "id": "ec_dkm10",
+        "question": "他没有道歉，_____还说了很多难听的话。",
+        "translation": "(He didn't apologize; on the contrary, he said many unpleasant things.)",
+        "options": [
+          "反而",
+          "而且",
+          "不过",
+          "所以"
+        ],
+        "correct": "反而",
+        "explanation": "反而 (fǎn'ér) means 'on the contrary / instead / conversely' and indicates that the result is opposite to what's expected. Pattern: 不但没有A，反而B. It emphasizes the unexpected twist. Example: 吃了药，反而更严重了 (after taking medicine, it got worse instead). 反而 always implies surprise or irony — the outcome defies logical expectation."
+      },
+      {
+        "id": "ec_dkm11",
+        "question": "_____这件事很重要，我们应该认真对待。",
+        "translation": "(After all, this matter is important; we should take it seriously.)",
+        "options": [
+          "毕竟",
+          "反而",
+          "另外",
+          "然而"
+        ],
+        "correct": "毕竟",
+        "explanation": "毕竟 (bìjìng) means 'after all / when all is said and done' and reminds the listener of a fundamental fact that should influence the conclusion. Pattern: 毕竟A，所以B. Example: 他毕竟是个孩子 (after all, he's just a child). It provides justification or a reality check. Similar: 到底 (dàodǐ) can mean 'after all' but has additional uses like 'actually' or 'on earth' in questions."
+      },
+      {
+        "id": "ec_dkm12",
+        "question": "我想去旅游，_____没有时间。",
+        "translation": "(I want to travel, but I don't have time.)",
+        "options": [
+          "可是",
+          "而且",
+          "因此",
+          "另外"
+        ],
+        "correct": "可是",
+        "explanation": "可是 (kěshì) means 'but / however' and is the most colloquial contrast marker. Contrast markers ranked by formality: 然而 (literary) > 但是 (standard) > 不过 (mild) > 可是 (casual). 可是 is preferred in everyday speech and conveys a slightly emotional or helpless tone. It often appears in situations expressing personal frustration or disappointment: 我想帮你，可是我不会 (I want to help you, but I can't)."
+      },
+      {
+        "id": "ec_dkm13",
+        "question": "他学习很努力，_____成绩一直不太好。",
+        "translation": "(He studies very hard; however, his grades have never been very good.)",
+        "options": [
+          "但是",
+          "而且",
+          "所以",
+          "因此"
+        ],
+        "correct": "但是",
+        "explanation": "但是 (dànshì) is the standard 'but / however' conjunction, neutral in register and the most commonly used contrast marker in both speech and writing. Pattern: A，但是B. It's more formal than 可是 but less formal than 然而. 但 alone (without 是) is also common and slightly more literary. Often pairs with 虽然: 虽然A，但是B (although A, but B)."
+      },
+      {
+        "id": "ec_dkm14",
+        "question": "他先去了超市，_____又去了银行。",
+        "translation": "(He first went to the supermarket, and then went to the bank.)",
+        "options": [
+          "然后",
+          "但是",
+          "所以",
+          "反而"
+        ],
+        "correct": "然后",
+        "explanation": "然后 (ránhòu) means 'then / after that / afterwards' and sequences events chronologically. Common sequence markers: 先...然后...最后 (first...then...finally), 接着 (jiēzhe, next — more immediate), 之后 (zhīhòu, afterwards). In casual speech, 然后 is sometimes overused as a filler word (similar to 'and then' in English), which is considered a speech habit to avoid in formal contexts."
+      },
+      {
+        "id": "ec_dkm15",
+        "question": "工作很忙，_____他每天都运动。",
+        "translation": "(Work is very busy, but even so he exercises every day.)",
+        "options": [
+          "尽管如此",
+          "因此",
+          "另外",
+          "首先"
+        ],
+        "correct": "尽管如此",
+        "explanation": "尽管如此 (jǐnguǎn rúcǐ) means 'despite this / even so / nevertheless' and concedes a difficulty before stating that the action continues regardless. 尽管 alone means 'despite / even though' and introduces the concession clause: 尽管很累，他还是坚持了 (despite being tired, he persisted). Formality: 尽管如此 is semi-formal, suitable for essays and speeches. Casual: 但还是 (but still)."
+      }
+    ]
+  },
+  {
+    "key": "formal_registers",
+    "name": "Formal Registers (正式语体)",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ec_frg1",
+        "question": "本公司_____为您提供优质服务。",
+        "translation": "(This company is committed to providing you with quality service.)",
+        "options": [
+          "致力于",
+          "想要",
+          "喜欢",
+          "打算"
+        ],
+        "correct": "致力于",
+        "explanation": "致力于 (zhìlì yú) means 'to be committed to / to dedicate oneself to' and is a formal expression used in business and official contexts. 本公司 (běn gōngsī, 'this company') is the formal way to say 'our company' — 本 replaces 我们的 in formal writing. Other formal self-references: 本人 (this person = I), 本校 (this school). 致力于 takes a verb phrase: 致力于发展经济 (committed to developing the economy)."
+      },
+      {
+        "id": "ec_frg2",
+        "question": "_____天气原因，航班延误。",
+        "translation": "(Due to weather reasons, the flight is delayed.)",
+        "options": [
+          "由于",
+          "因为",
+          "所以",
+          "虽然"
+        ],
+        "correct": "由于",
+        "explanation": "由于 (yóuyú) means 'due to / owing to / because of' and is the formal equivalent of 因为. It's preferred in news reports, official announcements, and academic writing. Pattern: 由于A，B (Due to A, B results). Unlike 因为, 由于 is almost never used in casual conversation. It often pairs with 因此: 由于...因此... (due to...therefore...). Note: 由于 emphasizes the objective cause, while 因为 can be more subjective."
+      },
+      {
+        "id": "ec_frg3",
+        "question": "请_____以下规定。",
+        "translation": "(Please comply with the following regulations.)",
+        "options": [
+          "遵守",
+          "听",
+          "看",
+          "想"
+        ],
+        "correct": "遵守",
+        "explanation": "遵守 (zūnshǒu) means 'to comply with / to abide by / to observe (rules)' and is used in formal instructions and legal contexts. Common formal collocations: 遵守规定 (observe regulations), 遵守法律 (abide by the law), 遵守纪律 (follow discipline). The casual equivalent would be 听话 (obey) for personal contexts. 请 (qǐng, please) + formal verb is the standard pattern for polite formal requests."
+      },
+      {
+        "id": "ec_frg4",
+        "question": "会议_____下午两点举行。",
+        "translation": "(The meeting is scheduled to be held at 2 PM.)",
+        "options": [
+          "定于",
+          "在",
+          "是",
+          "要"
+        ],
+        "correct": "定于",
+        "explanation": "定于 (dìng yú) means 'to be scheduled for / to be set at' and is used in formal announcements about events. Pattern: 活动 + 定于 + time + 举行. 举行 (jǔxíng, to hold/convene) is the formal word for events; casual speech uses 开 (kāi, to hold a meeting). Other formal time expressions: 届时 (jièshí, at that time), 即日起 (jí rì qǐ, effective immediately). These are standard in invitations and notices."
+      },
+      {
+        "id": "ec_frg5",
+        "question": "兹_____王先生为本公司总经理。",
+        "translation": "(Hereby [we] appoint Mr. Wang as general manager of this company.)",
+        "options": [
+          "任命",
+          "叫",
+          "让",
+          "选"
+        ],
+        "correct": "任命",
+        "explanation": "兹 (zī) means 'hereby' and 任命 (rènmìng) means 'to appoint.' This is highly formal language used in official documents, decrees, and corporate announcements. 兹 is a classical Chinese character still used in modern formal writing. Other formal document starters: 特此通知 (hereby notify), 特此声明 (hereby declare). This register is equivalent to legal/corporate English and is never used in conversation."
+      },
+      {
+        "id": "ec_frg6",
+        "question": "经研究，_____同意你的申请。",
+        "translation": "(After deliberation, [we] hereby approve your application.)",
+        "options": [
+          "特此",
+          "所以",
+          "因此",
+          "然后"
+        ],
+        "correct": "特此",
+        "explanation": "特此 (tècǐ) means 'hereby / for this purpose' and appears in official decisions, approvals, and notifications. 经研究 (jīng yánjiū, after deliberation/study) is the standard formal preamble meaning 'having considered.' Pattern: 经 + verb + 特此 + decision. This language appears in government documents, corporate memos, and legal texts. It implies institutional authority behind the decision."
+      },
+      {
+        "id": "ec_frg7",
+        "question": "请您_____我们的邀请。",
+        "translation": "(Please accept our invitation.)",
+        "options": [
+          "接受",
+          "拿",
+          "要",
+          "给"
+        ],
+        "correct": "接受",
+        "explanation": "接受 (jiēshòu) means 'to accept' in a formal sense — used for invitations, proposals, challenges, and criticism. Formal request pattern: 请您 (polite 'please') + verb. 您 (nín) is the respectful form of 你 (nǐ, you). Formal collocations: 接受邀请 (accept invitation), 接受采访 (accept interview), 接受挑战 (accept challenge). The casual way to say 'accept' would be 答应 (dāying, to agree)."
+      },
+      {
+        "id": "ec_frg8",
+        "question": "本次活动_____取消。",
+        "translation": "(This event has been cancelled.)",
+        "options": [
+          "予以",
+          "被",
+          "给",
+          "让"
+        ],
+        "correct": "予以",
+        "explanation": "予以 (yǔyǐ) means 'to give / to grant / to carry out (an action)' in official language. Pattern: 予以 + action noun. Examples: 予以批准 (grant approval), 予以处理 (handle/deal with), 予以表彰 (commend). It's used in government and institutional documents. The everyday equivalent is simply using the verb directly: 取消了 (cancelled). 予以 adds institutional formality and authority to the action."
+      },
+      {
+        "id": "ec_frg9",
+        "question": "_____各位的支持，项目顺利完成。",
+        "translation": "(Thanks to everyone's support, the project was completed smoothly.)",
+        "options": [
+          "承蒙",
+          "因为",
+          "由于",
+          "多亏"
+        ],
+        "correct": "承蒙",
+        "explanation": "承蒙 (chéngméng) means 'thanks to / to be indebted for' and is a humble/formal expression of gratitude. It's used in speeches, formal letters, and ceremonies. 承蒙关照 (thank you for your kind attention) is a standard formal thanks. The casual equivalent is 多亏 (duōkuī, thanks to) or 谢谢 (xièxie, thanks). 承蒙 implies humility — acknowledging that the speaker benefited from others' generosity."
+      },
+      {
+        "id": "ec_frg10",
+        "question": "敬请_____。",
+        "translation": "(Respectfully request your understanding.)",
+        "options": [
+          "谅解",
+          "明白",
+          "知道",
+          "懂"
+        ],
+        "correct": "谅解",
+        "explanation": "敬请 (jìngqǐng) means 'respectfully request' and 谅解 (liàngjiě) means 'understanding / forgiveness.' 敬请谅解 is a standard formal apology phrase used in announcements when causing inconvenience. 敬 adds reverence; 请 adds politeness. Other 敬 phrases: 敬请光临 (respectfully invite your presence), 敬请期待 (please look forward to). This register is common in customer service, public notices, and formal correspondence."
+      },
+      {
+        "id": "ec_frg11",
+        "question": "此事_____重要，请尽快处理。",
+        "translation": "(This matter is of utmost importance; please handle it promptly.)",
+        "options": [
+          "至关",
+          "很",
+          "非常",
+          "特别"
+        ],
+        "correct": "至关",
+        "explanation": "至关 (zhìguān) means 'of utmost / crucial' and is used in formal contexts. 至关重要 (zhìguān zhòngyào) means 'of crucial importance.' Other formal intensifiers: 极为 (jíwéi, extremely), 尤为 (yóuwéi, especially), 颇为 (pōwéi, rather/quite). These replace casual 很 (hěn, very) and 非常 (fēicháng, extremely) in formal writing. 尽快 (jǐnkuài, as soon as possible) is also semi-formal; casual: 快点儿 (kuàidiǎnr)."
+      },
+      {
+        "id": "ec_frg12",
+        "question": "我公司_____贵公司合作。",
+        "translation": "(Our company is willing to cooperate with your esteemed company.)",
+        "options": [
+          "愿与",
+          "想和",
+          "要跟",
+          "能同"
+        ],
+        "correct": "愿与",
+        "explanation": "愿与 (yuàn yǔ) means 'willing to [cooperate] with' in formal business Chinese. 贵公司 (guì gōngsī, 'your esteemed company') is the respectful way to address another company — 贵 (guì, honorable) is the formal honorific prefix: 贵校 (your school), 贵国 (your country). 与 (yǔ) is the formal version of 和/跟 (and/with). Business Chinese extensively uses these honorific and humble terms for professional communication."
+      },
+      {
+        "id": "ec_frg13",
+        "question": "_____来函收悉。",
+        "translation": "(Your letter has been received and noted.)",
+        "options": [
+          "贵方",
+          "你们",
+          "他们",
+          "大家"
+        ],
+        "correct": "贵方",
+        "explanation": "贵方 (guìfāng) means 'your side / your party' in formal correspondence. 来函 (láihán) means 'your letter / incoming correspondence' and 收悉 (shōuxī) means 'received and noted.' This is standard business letter language. Other formal correspondence terms: 复函 (reply letter), 函告 (inform by letter), 函请 (request by letter). Modern business communication still uses these classical terms in formal emails and official letters."
+      },
+      {
+        "id": "ec_frg14",
+        "question": "如有疑问，请_____本部门。",
+        "translation": "(If you have any questions, please contact this department.)",
+        "options": [
+          "致电",
+          "打电话给",
+          "联系",
+          "找"
+        ],
+        "correct": "致电",
+        "explanation": "致电 (zhìdiàn) means 'to telephone / to call' in formal language. It's used in official notices and business communications. 如有 (rúyǒu, if there are) is the formal version of 如果有. The complete formal phrase 如有疑问 (if you have questions) is standard in customer service. Casual equivalent: 有问题就打电话 (if there's a problem, just call). Other formal contact terms: 来电 (incoming call), 来访 (incoming visit)."
+      },
+      {
+        "id": "ec_frg15",
+        "question": "望_____为盼。",
+        "translation": "([We] hope for your reply.)",
+        "options": [
+          "回复",
+          "说话",
+          "回来",
+          "帮忙"
+        ],
+        "correct": "回复",
+        "explanation": "望回复为盼 (wàng huífù wéi pàn) means 'hoping for your reply' and is a standard formal letter closing. 望 (wàng, hope) is the literary form of 希望 (xīwàng). 为盼 (wéi pàn, as hoped/expected) makes it extra formal. Other formal closings: 此致敬礼 (with best regards — the most standard), 顺祝商祺 (with business regards), 谨此 (respectfully yours). These closings follow strict etiquette in Chinese business and official correspondence."
+      }
+    ]
+  },
+  {
+    "key": "idiomatic_expressions",
+    "name": "Idiomatic Expressions (惯用语)",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ec_idm1",
+        "question": "这件事他心里_____。",
+        "translation": "(He knows this matter very well in his heart.)",
+        "options": [
+          "有数",
+          "有钱",
+          "有意",
+          "有空"
+        ],
+        "correct": "有数",
+        "explanation": "心里有数 (xīnli yǒushù) means 'to have a clear idea / to know the score' — literally 'to have numbers in one's heart.' It means someone understands the situation well even if they don't say it openly. Opposite: 心里没数 (to have no clue / to be clueless). This idiom is very common in daily life and business: 你放心，我心里有数 (don't worry, I know what I'm doing). It implies confidence and awareness."
+      },
+      {
+        "id": "ec_idm2",
+        "question": "你别_____了，快说重点吧。",
+        "translation": "(Stop beating around the bush and get to the point.)",
+        "options": [
+          "绕弯子",
+          "走路",
+          "开玩笑",
+          "说笑话"
+        ],
+        "correct": "绕弯子",
+        "explanation": "绕弯子 (rào wānzi) means 'to beat around the bush' — literally 'to go around bends.' It describes indirect or evasive speech. Related: 直说 (zhíshuō, to speak directly), 有话直说 (if you have something to say, say it directly). In Chinese business culture, 绕弯子 is sometimes considered polite (indirect communication), but in casual settings, people may say 别绕弯子了 to request directness."
+      },
+      {
+        "id": "ec_idm3",
+        "question": "别看他年纪小，做事可_____。",
+        "translation": "(Don't look at his young age; he does things very capable/experienced.)",
+        "options": [
+          "老练",
+          "老了",
+          "老实",
+          "老大"
+        ],
+        "correct": "老练",
+        "explanation": "老练 (lǎoliàn) means 'experienced / seasoned / sophisticated' — it describes someone who handles things with maturity beyond their age or appearance. 别看...可... (don't look at...but actually...) is a common pattern that sets up a contrast between appearance and reality. Similar expressions: 成熟 (chéngshú, mature), 有经验 (yǒu jīngyàn, experienced). 老 here doesn't mean 'old' but 'well-practiced.'"
+      },
+      {
+        "id": "ec_idm4",
+        "question": "这个工作他做得_____。",
+        "translation": "(He does this work with ease / effortlessly.)",
+        "options": [
+          "得心应手",
+          "不太好",
+          "很慢",
+          "马马虎虎"
+        ],
+        "correct": "得心应手",
+        "explanation": "得心应手 (déxīn yìngshǒu) means 'with great facility / with ease' — literally 'what the heart desires, the hand achieves.' It describes perfect coordination between thought and action, implying mastery. This is a chéngyǔ (四字成语, four-character idiom). Similar: 驾轻就熟 (jiàqīng jiùshú, to handle with ease due to familiarity). Opposite: 手忙脚乱 (shǒumáng jiǎoluàn, all in a fluster)."
+      },
+      {
+        "id": "ec_idm5",
+        "question": "他说话总是_____，让人听不懂。",
+        "translation": "(He always speaks in a roundabout way, making it hard to understand.)",
+        "options": [
+          "拐弯抹角",
+          "直来直去",
+          "大声说",
+          "小声说"
+        ],
+        "correct": "拐弯抹角",
+        "explanation": "拐弯抹角 (guǎiwān mòjiǎo) means 'to speak in a roundabout way / to be indirect' — literally 'turning corners and wiping angles.' It's similar to 绕弯子 but more emphatic and literary. Opposite: 直来直去 (zhílái zhíqù, straightforward/direct) or 开门见山 (kāimén jiànshān, to get straight to the point — literally 'open the door and see the mountain'). These idioms reflect the cultural importance of communication styles in Chinese society."
+      },
+      {
+        "id": "ec_idm6",
+        "question": "这次考试他_____了。",
+        "translation": "(He failed/messed up this exam.)",
+        "options": [
+          "砸锅",
+          "成功",
+          "通过",
+          "放弃"
+        ],
+        "correct": "砸锅",
+        "explanation": "砸锅 (zá guō) means 'to fail / to mess up / to flop' — literally 'to smash the pot.' It's a vivid colloquial expression for complete failure. Related: 砸了 (zá le, messed up/ruined), 搞砸了 (gǎo zá le, screwed up). In performance contexts, 砸锅 specifically means 'to bomb on stage.' These are informal expressions — in formal contexts, use 失败 (shībài, to fail) or 未通过 (wèi tōngguò, did not pass)."
+      },
+      {
+        "id": "ec_idm7",
+        "question": "别_____了，这件事已经过去了。",
+        "translation": "(Stop dwelling on it; this matter has already passed.)",
+        "options": [
+          "纠结",
+          "高兴",
+          "睡觉",
+          "吃饭"
+        ],
+        "correct": "纠结",
+        "explanation": "纠结 (jiūjié) means 'to dwell on / to agonize over / to be torn about' — it describes being unable to let go of a decision or past event. Originally meaning 'tangled/knotted,' it became popular internet slang in the 2010s and is now mainstream. 别纠结了 is a common phrase meaning 'stop overthinking it.' Related: 犹豫 (yóuyù, to hesitate), 想不开 (xiǎng bù kāi, unable to think through / to take things too hard)."
+      },
+      {
+        "id": "ec_idm8",
+        "question": "他这个人说话算数，从不_____。",
+        "translation": "(He is a man of his word and never goes back on his promise.)",
+        "options": [
+          "食言",
+          "吃饭",
+          "说谎",
+          "迟到"
+        ],
+        "correct": "食言",
+        "explanation": "食言 (shíyán) means 'to go back on one's word / to break a promise' — literally 'to eat one's words.' 说话算数 (shuōhuà suànshù) means 'one's word counts / to be a person of one's word.' Together they describe reliability. Related: 言而有信 (yán'ér yǒuxìn, to keep one's word — formal), 出尔反尔 (chū'ěr fǎn'ěr, to go back and forth on what one says). These expressions reflect the high value placed on trustworthiness in Chinese culture."
+      },
+      {
+        "id": "ec_idm9",
+        "question": "你的中文说得真_____！",
+        "translation": "(Your Chinese is really fluent/excellent!)",
+        "options": [
+          "地道",
+          "奇怪",
+          "难听",
+          "一般"
+        ],
+        "correct": "地道",
+        "explanation": "地道 (dìdao) means 'authentic / genuine / idiomatic' when describing language or food. 说得地道 means speaking like a native. Note the tone difference: dìdao (authentic) vs. dìdào (tunnel). Related compliments: 你的发音很标准 (your pronunciation is very standard), 说得很流利 (very fluent). 地道 can also describe food: 地道的四川菜 (authentic Sichuan cuisine). It's one of the highest compliments for a Chinese language learner."
+      },
+      {
+        "id": "ec_idm10",
+        "question": "这个项目还在_____阶段。",
+        "translation": "(This project is still in the preliminary/exploratory stage.)",
+        "options": [
+          "摸索",
+          "完成",
+          "结束",
+          "放弃"
+        ],
+        "correct": "摸索",
+        "explanation": "摸索 (mōsuǒ) means 'to grope / to explore / to feel one's way' — it describes cautiously trying to figure something out without clear direction. 摸索阶段 = exploratory phase. Related: 摸着石头过河 (mōzhe shítou guòhé, to cross the river by feeling the stones) is Deng Xiaoping's famous metaphor for China's reform approach — pragmatic, step-by-step experimentation. This idiom is widely known and frequently referenced in Chinese discourse."
+      },
+      {
+        "id": "ec_idm11",
+        "question": "他最近_____很大，瘦了很多。",
+        "translation": "(He has been under a lot of pressure recently and has lost a lot of weight.)",
+        "options": [
+          "压力",
+          "运气",
+          "力气",
+          "能力"
+        ],
+        "correct": "压力",
+        "explanation": "压力很大 (yālì hěn dà) means 'under great pressure/stress.' While 压力 itself is a standard word, it's used idiomatically in many expressions: 压力山大 (yālì shān dà, pressure as big as a mountain — internet slang pun on Alexander 亚历山大), 减压 (jiǎnyā, to relieve stress), 施压 (shīyā, to apply pressure). Chinese workplace culture frequently discusses 压力, making this a high-frequency expression in daily life."
+      },
+      {
+        "id": "ec_idm12",
+        "question": "他做事总是_____，不考虑后果。",
+        "translation": "(He always acts impulsively without considering the consequences.)",
+        "options": [
+          "冲动",
+          "小心",
+          "仔细",
+          "认真"
+        ],
+        "correct": "冲动",
+        "explanation": "冲动 (chōngdòng) means 'impulsive / to act on impulse.' Common warning: 冲动是魔鬼 (chōngdòng shì móguǐ, impulse is the devil — a popular saying). Related: 三思而后行 (sān sī ér hòu xíng, think three times before acting — Confucian proverb), 不假思索 (bù jiǎ sīsuǒ, without hesitation — can be positive or negative). 冲动消费 (impulse spending) is a modern commonly used compound."
+      },
+      {
+        "id": "ec_idm13",
+        "question": "你先别着急，我们_____想想办法。",
+        "translation": "(Don't worry for now; let's think of a solution together.)",
+        "options": [
+          "一起",
+          "自己",
+          "先",
+          "都"
+        ],
+        "correct": "一起",
+        "explanation": "一起想办法 (yìqǐ xiǎng bànfǎ) means 'to think of a solution together.' 想办法 (xiǎng bànfǎ, to think of a way/solution) is one of the most practical idioms in Chinese. Related: 没办法 (méi bànfǎ, there's no way/can't be helped), 有办法 (yǒu bànfǎ, to have a way), 想不出办法 (can't think of a solution). This reflects the Chinese pragmatic approach to problem-solving — focus on finding solutions rather than assigning blame."
+      },
+      {
+        "id": "ec_idm14",
+        "question": "这个人_____很深，不容易看透。",
+        "translation": "(This person is very deep/inscrutable; not easy to see through.)",
+        "options": [
+          "城府",
+          "年纪",
+          "学问",
+          "经验"
+        ],
+        "correct": "城府",
+        "explanation": "城府很深 (chéngfǔ hěn shēn) means 'very shrewd/calculating/inscrutable' — literally 'deep city walls,' referring to someone whose thoughts are as well-hidden as a fortress. It's not necessarily negative — it can mean strategic and composed. Related: 深藏不露 (shēncáng búlù, to hide one's abilities), 心机 (xīnjī, scheming). In Chinese social dynamics, reading people (看人, kàn rén) is considered an important skill."
+      },
+      {
+        "id": "ec_idm15",
+        "question": "他听到这个消息，_____了。",
+        "translation": "(When he heard this news, he was dumbfounded.)",
+        "options": [
+          "傻眼",
+          "高兴",
+          "生气",
+          "开心"
+        ],
+        "correct": "傻眼",
+        "explanation": "傻眼 (shǎyǎn) means 'to be dumbfounded / stunned / shocked' — literally 'foolish eyes.' It describes the moment of being so surprised that one is speechless. Very colloquial and vivid. Similar: 目瞪口呆 (mùdèng kǒudāi, eyes staring and mouth agape — more formal), 吓一跳 (xià yī tiào, startled), 惊呆了 (jīngdāi le, stunned — popular internet expression). These expressions are frequently used in storytelling."
+      }
+    ]
+  },
+  {
+    "key": "proverbs_sayings",
+    "name": "Proverbs & Sayings (谚语俗语)",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ec_pvs1",
+        "question": "活到老，_____到老。",
+        "translation": "(Live to old age, learn to old age — Never stop learning.)",
+        "options": [
+          "学",
+          "吃",
+          "玩",
+          "走"
+        ],
+        "correct": "学",
+        "explanation": "活到老，学到老 (huó dào lǎo, xué dào lǎo) means 'one is never too old to learn.' This is one of the most famous Chinese proverbs about lifelong learning. It's attributed to various ancient scholars and is frequently quoted in educational contexts. The parallel structure (verb + 到老) is a classic Chinese rhetorical pattern. This proverb resonates strongly in Chinese culture where education and self-improvement are deeply valued."
+      },
+      {
+        "id": "ec_pvs2",
+        "question": "入乡_____。",
+        "translation": "(When in Rome, do as the Romans do — Follow local customs.)",
+        "options": [
+          "随俗",
+          "吃饭",
+          "看看",
+          "休息"
+        ],
+        "correct": "随俗",
+        "explanation": "入乡随俗 (rù xiāng suí sú) means 'when entering a village, follow its customs' — the Chinese equivalent of 'when in Rome, do as the Romans do.' 入 (enter) + 乡 (village/locality) + 随 (follow) + 俗 (customs). This chéngyǔ is commonly used when discussing cultural adaptation, travel etiquette, or adjusting to new environments. It reflects the Confucian value of social harmony and respect for local traditions."
+      },
+      {
+        "id": "ec_pvs3",
+        "question": "三个臭皮匠，_____一个诸葛亮。",
+        "translation": "(Three cobblers equal one Zhuge Liang — Two heads are better than one.)",
+        "options": [
+          "顶",
+          "比",
+          "像",
+          "学"
+        ],
+        "correct": "顶",
+        "explanation": "三个臭皮匠，顶一个诸葛亮 (sān gè chòu píjiàng, dǐng yī gè Zhūgě Liàng) means 'three humble cobblers can match one Zhuge Liang (genius strategist).' 顶 means 'to equal/match.' Zhuge Liang (诸葛亮) is the legendary strategist from the Three Kingdoms period, symbolizing supreme wisdom. This proverb celebrates collective wisdom over individual genius and is commonly used to encourage teamwork and brainstorming."
+      },
+      {
+        "id": "ec_pvs4",
+        "question": "千里之行，始于_____。",
+        "translation": "(A journey of a thousand miles begins with a single step.)",
+        "options": [
+          "足下",
+          "天上",
+          "门口",
+          "梦里"
+        ],
+        "correct": "足下",
+        "explanation": "千里之行，始于足下 (qiānlǐ zhī xíng, shǐ yú zúxià) is from Laozi's Dao De Jing (道德经). 足下 literally means 'beneath one's feet' — i.e., a single step. This philosophical proverb encourages starting action rather than being overwhelmed by grand goals. It's widely quoted in motivational contexts worldwide. The classical grammar uses 之 (zhī, possessive particle) and 于 (yú, at/from), showing how ancient Chinese persists in modern proverbs."
+      },
+      {
+        "id": "ec_pvs5",
+        "question": "不怕慢，就怕_____。",
+        "translation": "(Don't fear going slowly; only fear standing still.)",
+        "options": [
+          "站",
+          "跑",
+          "飞",
+          "走"
+        ],
+        "correct": "站",
+        "explanation": "不怕慢，就怕站 (bú pà màn, jiù pà zhàn) means 'don't fear being slow, just fear stopping.' 站 means to stand still (stop moving). This folk proverb encourages persistence — any progress, however slow, is better than giving up. The parallel structure 不怕A，就怕B is a common proverb pattern. Similar: 只要功夫深，铁杵磨成针 (with enough effort, an iron rod can be ground into a needle) — persistence conquers all."
+      },
+      {
+        "id": "ec_pvs6",
+        "question": "熟能_____。",
+        "translation": "(Practice makes perfect.)",
+        "options": [
+          "生巧",
+          "生气",
+          "生病",
+          "生活"
+        ],
+        "correct": "生巧",
+        "explanation": "熟能生巧 (shú néng shēng qiǎo) means 'practice makes perfect' — literally 'familiarity breeds skill.' 熟 (skilled/familiar) + 能 (can) + 生 (produce) + 巧 (cleverness/skill). This chéngyǔ is one of the most commonly used four-character idioms in Chinese education. It comes from the story of an old oil seller (卖油翁 Mài Yóu Wēng) by Ouyang Xiu, where a man demonstrates perfect pouring technique through years of practice."
+      },
+      {
+        "id": "ec_pvs7",
+        "question": "功夫不负_____人。",
+        "translation": "(Hard work pays off — Effort does not betray the devoted.)",
+        "options": [
+          "有心",
+          "有钱",
+          "有名",
+          "有趣"
+        ],
+        "correct": "有心",
+        "explanation": "功夫不负有心人 (gōngfu bù fù yǒuxīn rén) means 'effort will not let down the person who tries' — hard work always pays off. 功夫 here means effort/hard work (not martial arts). 有心人 means 'someone with dedication/intention.' This is a very popular motivational saying used in education, sports, and career contexts. It's frequently quoted after someone achieves success through persistent effort and is a staple in Chinese graduation speeches and mentoring."
+      },
+      {
+        "id": "ec_pvs8",
+        "question": "百闻不如_____。",
+        "translation": "(Seeing once is better than hearing a hundred times.)",
+        "options": [
+          "一见",
+          "一听",
+          "一说",
+          "一想"
+        ],
+        "correct": "一见",
+        "explanation": "百闻不如一见 (bǎi wén bùrú yī jiàn) means 'seeing is believing' — literally 'hearing a hundred times is not as good as seeing once.' This originates from the Han Dynasty general Zhao Chongguo who insisted on inspecting the frontier personally before making strategy. The 百...不如一... pattern emphasizes the superiority of direct experience over secondhand information. Often used when inviting someone to visit or try something themselves."
+      },
+      {
+        "id": "ec_pvs9",
+        "question": "吃一堑，长一_____。",
+        "translation": "(A fall into a pit, a gain in your wit — Learn from mistakes.)",
+        "options": [
+          "智",
+          "岁",
+          "斤",
+          "寸"
+        ],
+        "correct": "智",
+        "explanation": "吃一堑，长一智 (chī yī qiàn, zhǎng yī zhì) means 'a fall into the pit teaches wisdom' — every setback is a learning opportunity. 堑 (qiàn) means pit/moat, 智 (zhì) means wisdom. This proverb encourages viewing failures positively. Mao Zedong popularized this saying, though it originates from classical Chinese texts. Similar: 失败是成功之母 (shībài shì chénggōng zhī mǔ, failure is the mother of success — also very commonly quoted)."
+      },
+      {
+        "id": "ec_pvs10",
+        "question": "有志者事竟_____。",
+        "translation": "(Where there's a will, there's a way.)",
+        "options": [
+          "成",
+          "败",
+          "难",
+          "易"
+        ],
+        "correct": "成",
+        "explanation": "有志者事竟成 (yǒu zhì zhě shì jìng chéng) means 'for those with ambition, things will eventually succeed.' 有志者 = those who have determination; 事竟成 = things will ultimately be accomplished. This is from the Book of the Later Han (后汉书). It's a powerful motivational proverb frequently used in Chinese education and self-help. The classical grammar (者 as nominalizer, 竟 as 'eventually') makes it elegant and memorable."
+      },
+      {
+        "id": "ec_pvs11",
+        "question": "一年之计在于_____。",
+        "translation": "(The plan for a year lies in spring — Plan ahead.)",
+        "options": [
+          "春",
+          "夏",
+          "秋",
+          "冬"
+        ],
+        "correct": "春",
+        "explanation": "一年之计在于春 (yī nián zhī jì zàiyú chūn) means 'the plan for the year should be made in spring' — plan ahead at the earliest opportunity. It's often extended: 一日之计在于晨 (the plan for the day lies in the morning). This agricultural wisdom proverb is quoted at Chinese New Year and in spring, encouraging people to set goals early. 之 and 在于 are classical grammar elements that make it elegant."
+      },
+      {
+        "id": "ec_pvs12",
+        "question": "知己知彼，百战不_____。",
+        "translation": "(Know yourself and know your enemy, and you will never be defeated.)",
+        "options": [
+          "殆",
+          "胜",
+          "亡",
+          "败"
+        ],
+        "correct": "殆",
+        "explanation": "知己知彼，百战不殆 (zhī jǐ zhī bǐ, bǎi zhàn bú dài) is from Sun Tzu's Art of War (孙子兵法). 殆 means 'peril/danger.' The full meaning: understanding both yourself and your opponent ensures you'll never be in danger, even in a hundred battles. This is widely applied beyond military strategy — in business, sports, exams, and negotiations. Sun Tzu's work is one of the most influential Chinese texts globally, and this is its most quoted line."
+      },
+      {
+        "id": "ec_pvs13",
+        "question": "书到用时方恨_____。",
+        "translation": "(When you need knowledge, you regret not having studied enough.)",
+        "options": [
+          "少",
+          "多",
+          "早",
+          "晚"
+        ],
+        "correct": "少",
+        "explanation": "书到用时方恨少 (shū dào yòng shí fāng hèn shǎo) means 'when it's time to use your knowledge, you regret having too little.' 方 means 'only then,' 恨 means 'regret.' This proverb motivates continuous learning — you never know when knowledge will be needed. Often paired with 事非经过不知难 (you don't know how hard something is until you do it). These proverbs are frequently shared by Chinese teachers and parents to encourage study."
+      },
+      {
+        "id": "ec_pvs14",
+        "question": "路遥知马力，日久见_____。",
+        "translation": "(Distance tests a horse's strength; time reveals a person's heart.)",
+        "options": [
+          "人心",
+          "太阳",
+          "天气",
+          "运气"
+        ],
+        "correct": "人心",
+        "explanation": "路遥知马力，日久见人心 (lù yáo zhī mǎlì, rì jiǔ jiàn rénxīn) means 'a long road tests a horse's endurance; time reveals a person's true character.' This proverb about the test of time in relationships is frequently quoted when discussing loyalty, friendship, and trust. It suggests that true character only emerges through prolonged interaction and shared challenges. 人心 means 'human heart/character.' This is one of the most beloved Chinese proverbs about human nature."
+      },
+      {
+        "id": "ec_pvs15",
+        "question": "己所不欲，勿施于_____。",
+        "translation": "(Do not impose on others what you do not desire — The Golden Rule.)",
+        "options": [
+          "人",
+          "己",
+          "天",
+          "地"
+        ],
+        "correct": "人",
+        "explanation": "己所不欲，勿施于人 (jǐ suǒ bú yù, wù shī yú rén) is Confucius's Golden Rule from the Analerta (论语): 'What you don't want done to yourself, don't do to others.' 己 = oneself, 所 = that which, 欲 = desire, 勿 = don't, 施 = impose, 于 = upon, 人 = others. This is perhaps the most important ethical principle in Confucian philosophy and profoundly shapes Chinese moral education. Almost every Chinese student can recite this from memory."
+      }
+    ]
+  },
+  {
+    "key": "weather_climate",
+    "name": "Weather & Climate (天气气候)",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ec_wtc1",
+        "question": "今天天气_____，适合出去玩。",
+        "translation": "(Today's weather is nice; it's suitable for going out.)",
+        "options": [
+          "不错",
+          "不好",
+          "很差",
+          "糟糕"
+        ],
+        "correct": "不错",
+        "explanation": "天气不错 (tiānqì búcuò) means 'the weather is nice/not bad.' 不错 literally means 'not wrong' but is used as a general positive evaluation meaning 'good / not bad.' Weather vocabulary basics: 天气 (tiānqì, weather), 气候 (qìhòu, climate — longer-term), 天气预报 (tiānqì yùbào, weather forecast). 适合 (shìhé, suitable for) + verb phrase is a useful pattern: 适合散步 (suitable for walking), 适合旅游 (suitable for traveling)."
+      },
+      {
+        "id": "ec_wtc2",
+        "question": "明天会_____，记得带伞。",
+        "translation": "(It will rain tomorrow; remember to bring an umbrella.)",
+        "options": [
+          "下雨",
+          "下雪",
+          "刮风",
+          "出太阳"
+        ],
+        "correct": "下雨",
+        "explanation": "下雨 (xià yǔ) means 'to rain' — literally 'fall rain.' Chinese uses 下 (xià, to fall/descend) for precipitation: 下雨 (rain), 下雪 (xiàxuě, snow), 下冰雹 (xià bīngbáo, hail). 记得 (jìde, remember to) + verb is a useful reminder pattern. Rain-related vocabulary: 大雨 (dàyǔ, heavy rain), 小雨 (xiǎoyǔ, light rain), 暴雨 (bàoyǔ, torrential rain), 毛毛雨 (máomaoyǔ, drizzle), 雨伞 (yǔsǎn, umbrella)."
+      },
+      {
+        "id": "ec_wtc3",
+        "question": "冬天北京经常_____。",
+        "translation": "(In winter, Beijing often snows.)",
+        "options": [
+          "下雪",
+          "下雨",
+          "刮风",
+          "打雷"
+        ],
+        "correct": "下雪",
+        "explanation": "下雪 (xiàxuě) means 'to snow.' 冬天 (dōngtiān, winter) is one of the four seasons: 春天 (chūntiān, spring), 夏天 (xiàtiān, summer), 秋天 (qiūtiān, autumn), 冬天 (winter). 经常 (jīngcháng, often/frequently) indicates habitual weather patterns. Snow vocabulary: 雪花 (xuěhuā, snowflake), 积雪 (jīxuě, accumulated snow), 堆雪人 (duī xuěrén, to build a snowman), 打雪仗 (dǎ xuězhàng, to have a snowball fight)."
+      },
+      {
+        "id": "ec_wtc4",
+        "question": "今天的气温是_____三十五度。",
+        "translation": "(Today's temperature is 35 degrees above zero.)",
+        "options": [
+          "零上",
+          "零下",
+          "大约",
+          "刚好"
+        ],
+        "correct": "零上",
+        "explanation": "零上 (líng shàng) means 'above zero' and 零下 (líng xià) means 'below zero.' Chinese uses Celsius (摄氏度 shèshìdù). Temperature patterns: 气温 (qìwēn, air temperature), 最高温 (zuìgāowēn, highest temperature), 最低温 (zuìdīwēn, lowest temperature). 三十五度 is very hot — China uses expressions like 高温天气 (gāowēn tiānqì, high-temperature weather) for heatwaves. 零上 can be omitted when temperatures are obviously positive."
+      },
+      {
+        "id": "ec_wtc5",
+        "question": "今天_____很大，出门要注意。",
+        "translation": "(The wind is very strong today; be careful when going out.)",
+        "options": [
+          "风",
+          "雨",
+          "雪",
+          "雾"
+        ],
+        "correct": "风",
+        "explanation": "风很大 (fēng hěn dà) means 'the wind is strong.' Wind expressions: 刮风 (guāfēng, to be windy — literally 'scrape wind'), 微风 (wēifēng, gentle breeze), 大风 (dàfēng, strong wind), 台风 (táifēng, typhoon), 龙卷风 (lóngjuǎnfēng, tornado). 出门要注意 (chūmén yào zhùyì, be careful when going out) is a common safety reminder pattern. Wind strength is described by Beaufort scale numbers in Chinese weather reports."
+      },
+      {
+        "id": "ec_wtc6",
+        "question": "夏天上海又热_____闷。",
+        "translation": "(In summer, Shanghai is both hot and humid.)",
+        "options": [
+          "又",
+          "也",
+          "还",
+          "更"
+        ],
+        "correct": "又",
+        "explanation": "又...又... (yòu...yòu...) means 'both...and...' and describes two simultaneous qualities. 闷 (mēn) means humid/stuffy/muggy. Summer weather descriptions: 又热又闷 (hot and humid), 又热又干 (hot and dry). This structure works for any two adjectives: 又大又圆 (big and round), 又便宜又好吃 (cheap and delicious). Shanghai's subtropical climate makes 闷热 (mēnrè, muggy) a commonly discussed topic in summer."
+      },
+      {
+        "id": "ec_wtc7",
+        "question": "今天有_____，能见度很低。",
+        "translation": "(There is fog today; visibility is very low.)",
+        "options": [
+          "雾",
+          "雨",
+          "风",
+          "雪"
+        ],
+        "correct": "雾",
+        "explanation": "雾 (wù) means 'fog.' 能见度 (néngjiàndù) means 'visibility' and is used in weather reports and driving advisories. Fog-related words: 大雾 (dàwù, heavy fog), 雾霾 (wùmái, smog — a major concern in Chinese cities), 起雾 (qǐwù, fog forming). China's smog issues have made 雾霾 one of the most discussed environmental terms. PM2.5 readings (PM2.5指数) are commonly checked via weather apps in Chinese cities."
+      },
+      {
+        "id": "ec_wtc8",
+        "question": "春天到了，天气渐渐_____了。",
+        "translation": "(Spring has arrived; the weather is gradually warming up.)",
+        "options": [
+          "暖和",
+          "寒冷",
+          "凉快",
+          "炎热"
+        ],
+        "correct": "暖和",
+        "explanation": "暖和 (nuǎnhuo) means 'warm / to warm up.' 渐渐 (jiànjiàn) means 'gradually' and is used with change-of-state descriptions. Temperature adjectives: 暖和 (warm), 凉快 (liángkuai, cool/pleasantly cool), 炎热 (yánrè, scorching hot), 寒冷 (hánlěng, bitterly cold). 到了 indicates arrival/beginning of a season. The phrase 春暖花开 (chūn nuǎn huā kāi, spring warmth causes flowers to bloom) is a beloved idiom describing spring's arrival."
+      },
+      {
+        "id": "ec_wtc9",
+        "question": "下雨之前，天空变得很_____。",
+        "translation": "(Before the rain, the sky became very dark/overcast.)",
+        "options": [
+          "阴暗",
+          "明亮",
+          "蓝色",
+          "美丽"
+        ],
+        "correct": "阴暗",
+        "explanation": "阴暗 (yīn'àn) means 'dark / overcast / gloomy.' Sky and cloud words: 阴天 (yīntiān, overcast/cloudy day), 晴天 (qíngtiān, sunny day), 多云 (duōyún, partly cloudy), 乌云 (wūyún, dark clouds). Weather forecast patterns: 天空 (tiānkōng, sky) + description. Before rain, Chinese often says 天要下雨了 (tiān yào xià yǔ le, it's about to rain). 阴 alone means 'overcast' in weather contexts: 明天阴转晴 (tomorrow overcast turning sunny)."
+      },
+      {
+        "id": "ec_wtc10",
+        "question": "昨天_____了一整天。",
+        "translation": "(It rained the entire day yesterday.)",
+        "options": [
+          "下了雨",
+          "下雪了",
+          "刮风了",
+          "出太阳"
+        ],
+        "correct": "下了雨",
+        "explanation": "下了雨 uses the 了 particle to indicate completed action: it rained (and finished). 一整天 (yī zhěng tiān) means 'the whole/entire day.' Duration expressions with weather: 下了一整天的雨 (rained for the whole day), 刮了一晚上的风 (wind blew all night). Note the word order: verb + 了 + duration + 的 + weather noun. This is a key Chinese grammar pattern for expressing how long a weather event lasted."
+      },
+      {
+        "id": "ec_wtc11",
+        "question": "秋天的天气特别_____。",
+        "translation": "(Autumn weather is particularly refreshing/crisp.)",
+        "options": [
+          "凉爽",
+          "闷热",
+          "寒冷",
+          "潮湿"
+        ],
+        "correct": "凉爽",
+        "explanation": "凉爽 (liángshuǎng) means 'pleasantly cool / refreshing / crisp' and is the classic description of autumn weather. 秋高气爽 (qiū gāo qì shuǎng, high autumn sky and refreshing air) is a beloved chéngyǔ describing perfect autumn weather. 特别 (tèbié, especially/particularly) intensifies the adjective. Autumn in China is associated with mid-autumn festival (中秋节), harvest, and the beauty of turning leaves — considered the most comfortable season by many Chinese people."
+      },
+      {
+        "id": "ec_wtc12",
+        "question": "今天_____很强，要涂防晒霜。",
+        "translation": "(The UV rays are very strong today; you need to apply sunscreen.)",
+        "options": [
+          "紫外线",
+          "温度",
+          "湿度",
+          "风力"
+        ],
+        "correct": "紫外线",
+        "explanation": "紫外线 (zǐwàixiàn) means 'ultraviolet rays / UV.' 防晒霜 (fángshàishuāng) means 'sunscreen.' Modern weather vocabulary includes: 紫外线指数 (UV index), 空气质量 (kōngqì zhìliàng, air quality), 湿度 (shīdù, humidity), 气压 (qìyā, air pressure). These terms are displayed on Chinese weather apps. Chinese skin care culture places heavy emphasis on sun protection — 防晒 (fángshài, sun protection) is a major topic in everyday conversation."
+      },
+      {
+        "id": "ec_wtc13",
+        "question": "台风要来了，大家要做好_____准备。",
+        "translation": "(A typhoon is coming; everyone should make preparations for prevention.)",
+        "options": [
+          "防范",
+          "旅游",
+          "庆祝",
+          "学习"
+        ],
+        "correct": "防范",
+        "explanation": "防范 (fángfàn) means 'prevention / precaution / to guard against.' 台风 (táifēng, typhoon) is a major weather concern in coastal China. Emergency weather vocabulary: 预警 (yùjǐng, warning), 红色预警 (hóngsè yùjǐng, red alert), 橙色预警 (chéngsè yùjǐng, orange alert), 避风 (bìfēng, to shelter from wind). China's typhoon warning system uses colors: blue (蓝), yellow (黄), orange (橙), red (红) in increasing severity."
+      },
+      {
+        "id": "ec_wtc14",
+        "question": "今天天气_____，适合户外运动。",
+        "translation": "(Today's weather is clear/sunny; suitable for outdoor sports.)",
+        "options": [
+          "晴朗",
+          "阴暗",
+          "糟糕",
+          "恶劣"
+        ],
+        "correct": "晴朗",
+        "explanation": "晴朗 (qínglǎng) means 'clear and bright / sunny' and is used for ideal weather conditions. Weather descriptions for activities: 晴朗 (sunny — outdoor sports), 凉爽 (cool — hiking), 温暖 (warm — picnics). 户外运动 (hùwài yùndòng, outdoor sports/activities) is increasingly popular in China. Forecast language: 晴 (fine), 多云 (cloudy), 阴 (overcast), 小雨 (light rain), 大雨 (heavy rain), 暴雨 (torrential rain)."
+      },
+      {
+        "id": "ec_wtc15",
+        "question": "北方冬天非常_____，经常零下十几度。",
+        "translation": "(Northern China's winter is extremely cold, often more than ten degrees below zero.)",
+        "options": [
+          "寒冷",
+          "温暖",
+          "凉爽",
+          "潮湿"
+        ],
+        "correct": "寒冷",
+        "explanation": "寒冷 (hánlěng) means 'bitterly cold / frigid.' China's north-south climate divide is dramatic: 北方 (běifāng, the north) has harsh winters with central heating (暖气 nuǎnqì), while 南方 (nánfāng, the south) is milder but lacks heating. 零下十几度 means 'more than 10 degrees below zero.' The Harbin Ice Festival (哈尔滨冰雪节) celebrates northern China's extreme cold. Common expression: 冷得要命 (lěng de yàomìng, freezing to death — exaggeration for emphasis)."
+      }
+    ]
   }
 ]

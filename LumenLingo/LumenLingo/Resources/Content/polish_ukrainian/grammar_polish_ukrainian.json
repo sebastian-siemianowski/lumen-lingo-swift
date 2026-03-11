@@ -6558,5 +6558,2055 @@
         "explanation": "Rzeczownik odczasownikowy na '-ття': 'відкриття' (otwarcie, odkrycie) od 'відкрити' (otworzyć, odkryć). Sufiks '-ття' od tematów samogłoskowych. W polskim: 'otwarcie/odkrycie'. 'Нового ресторану' (nowej restauracji) — dopełniacz. 'Привернуло увагу' (przyciągnęło uwagę) — 'привернути' (przyciągnąć, przekierować). 'Увагу' (uwagę) — biernik. Polskie 'uwagę'. Rzeczowniki na '-ття' tworzą ważną grupę: відкриття (odkrycie), закриття (zamknięcie), прибуття (przybycie), життя (życie). Wszystkie nijakie!"
       }
     ]
+  },
+  {
+    "key": "verbs_of_motion",
+    "name": "Дієслова руху",
+    "description": "Czasowniki ruchu",
+    "iconName": "figure.walk",
+    "color": "#f97316",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pu_vm1",
+        "question": "Я _____ до школи кожного дня.",
+        "translation": "(Chodzę do szkoły każdego dnia)",
+        "options": [
+          "ходжу",
+          "іду",
+          "їду",
+          "їжджу"
+        ],
+        "correct": "ходжу",
+        "explanation": "Ukraiński rozróżnia dwa typy czasowników ruchu: wielokierunkowe (habitualny, powtarzający się) i jednokierunkowe (teraz, w jedną stronę). 'Ходжу' (chodzę — regularnie) vs 'іду' (idę — teraz). Tu 'кожного дня' (każdego dnia) wskazuje na zwyczaj → 'ходжу'. W polskim: 'chodzę' (regularnie) vs 'idę' (teraz). Identyczna para! Ukraiński system jest analogiczny do polskiego: ходити/іти = chodzić/iść. To wielka zaleta dla polskojęzycznych uczniów."
+      },
+      {
+        "id": "pu_vm2",
+        "question": "Зараз я _____ на роботу.",
+        "translation": "(Teraz idę do pracy)",
+        "options": [
+          "іду",
+          "ходжу",
+          "їду",
+          "їжджу"
+        ],
+        "correct": "іду",
+        "explanation": "Jednokierunkowy czasownik ruchu pieszo: 'іду' (idę — teraz, w jednym kierunku). 'Зараз' (teraz) wskazuje na aktualny ruch → jednokierunkowy 'іти'. W polskim: 'idę' — identyczna logika. Koniugacja 'іти': іду, ідеш, іде, ідемо, ідете, ідуть. Porównaj z polskim: idę, idziesz, idzie, idziemy, idziecie, idą. Bardzo podobne formy! 'На роботу' (do pracy/na pracę) — biernik z przyimkiem 'на'. Polskie 'do pracy' używa 'do' + dopełniacz. Tu mała różnica przyimkowa."
+      },
+      {
+        "id": "pu_vm3",
+        "question": "Ми _____ автобусом до Львова.",
+        "translation": "(Jedziemy autobusem do Lwowa)",
+        "options": [
+          "їдемо",
+          "ідемо",
+          "ходимо",
+          "їздимо"
+        ],
+        "correct": "їдемо",
+        "explanation": "Jednokierunkowy czasownik ruchu pojazdem: 'їдемо' (jedziemy — teraz). 'Їхати' = jechać (jednokierunkowy, pojazdem). Porównaj: 'іти' (iść — pieszo) vs 'їхати' (jechać — pojazdem). W polskim: 'iść' vs 'jechać'. 'Автобусом' (autobusem) — narzędnik wskazujący środek transportu. W polskim identycznie: 'autobusem' w narzędniku. 'До Львова' (do Lwowa) — 'Львів' (Lwów) w dopełniaczu. Koniugacja 'їхати': їду, їдеш, їде, їдемо, їдете, їдуть."
+      },
+      {
+        "id": "pu_vm4",
+        "question": "Він часто _____ до Варшави.",
+        "translation": "(On często jeździ do Warszawy)",
+        "options": [
+          "їздить",
+          "їде",
+          "іде",
+          "ходить"
+        ],
+        "correct": "їздить",
+        "explanation": "Wielokierunkowy czasownik ruchu pojazdem: 'їздить' (jeździ — regularnie). 'Часто' (często) wskazuje na powtarzalność → wielokierunkowy 'їздити'. Porównaj pary: іти/ходити (iść/chodzić — pieszo), їхати/їздити (jechać/jeździć — pojazdem). W polskim: jechać/jeździć — identyczny wzorzec! 'До Варшави' (do Warszawy) — dopełniacz od 'Варшава'. Polskie 'do Warszawy'. System czterech czasowników ruchu (іти, ходити, їхати, їздити) ma dokładny odpowiednik w polskim."
+      },
+      {
+        "id": "pu_vm5",
+        "question": "Діти _____ у парку.",
+        "translation": "(Dzieci biegają w parku)",
+        "options": [
+          "бігають",
+          "біжать",
+          "бігти",
+          "бігли"
+        ],
+        "correct": "бігають",
+        "explanation": "Wielokierunkowy czasownik ruchu: 'бігають' (biegają — w różnych kierunkach). 'У парку' sugeruje bieganie dookoła, wielokierunkowo. Porównaj: 'бігти/біжать' (biec — w jednym kierunku, teraz) vs 'бігати/бігають' (biegać — wielokierunkowo). W polskim: 'biec' vs 'biegać'. 'Діти бігають' = dzieci biegają (po parku, tu i tam). Gdyby biegły w jednym kierunku: 'діти біжать'. Rdzeń 'біг-' i polskie 'bieg-' — identyczny! Ta para jest intuicyjna dla Polaków."
+      },
+      {
+        "id": "pu_vm6",
+        "question": "Птах _____ високо в небі.",
+        "translation": "(Ptak leci wysoko w niebie)",
+        "options": [
+          "летить",
+          "літає",
+          "летів",
+          "літати"
+        ],
+        "correct": "летить",
+        "explanation": "Jednokierunkowy czasownik ruchu: 'летить' (leci — w jednym kierunku, teraz). 'Летіти' (lecieć) vs 'літати' (latać). W polskim: 'lecieć' vs 'latać'. 'Птах' (ptak) — polskie 'ptak'. 'Високо' (wysoko) — polskie 'wysoko'. 'В небі' (w niebie) — miejscownik od 'небо'. Polskie 'w niebie'. Tu ptak leci w konkretnym kierunku → jednokierunkowy. Gdyby krążył: 'літає'. Koniugacja 'летіти': лечу, летиш, летить, летимо, летите, летять."
+      },
+      {
+        "id": "pu_vm7",
+        "question": "Вона _____ дитину за руку.",
+        "translation": "(Ona prowadzi dziecko za rękę)",
+        "options": [
+          "веде",
+          "водить",
+          "вести",
+          "водити"
+        ],
+        "correct": "веде",
+        "explanation": "Jednokierunkowy kauzatywny czasownik ruchu: 'веде' (prowadzi — teraz, w jednym kierunku). 'Вести' (prowadzić — jednokierunkowy) vs 'водити' (wodzić — wielokierunkowy). W polskim: 'wieść/prowadzić' vs 'wodzić'. 'За руку' (za rękę) — typowy zwrot z biernikiem. Polskie 'za rękę'. Kauzatywne czasowniki ruchu oznaczają ruch innej osoby/rzeczy: вести/водити (prowadzić), везти/возити (wieźć/wozić), нести/носити (nieść/nosić). Identyczne pary w polskim!"
+      },
+      {
+        "id": "pu_vm8",
+        "question": "Кіт _____ мишу в зубах.",
+        "translation": "(Kot niesie mysz w zębach)",
+        "options": [
+          "несе",
+          "носить",
+          "нести",
+          "носити"
+        ],
+        "correct": "несе",
+        "explanation": "Jednokierunkowy kauzatywny: 'несе' (niesie — teraz). 'Нести' (nieść — jednokierunkowy) vs 'носити' (nosić — wielokierunkowy). W polskim: 'nieść' vs 'nosić'. 'Миша' (mysz) → 'мишу' (biernik). 'В зубах' (w zębach) — miejscownik mnogi od 'зуб' (ząb). Polskie 'w zębach'. Koniugacja 'нести': несу, несеш, несе, несемо, несете, несуть. Polskie: niosę, niesiesz, niesie... Porównaj rdzenie: нес- i nios-/nies- — wspólne słowiańskie korzenie."
+      },
+      {
+        "id": "pu_vm9",
+        "question": "Він _____ валізу до вокзалу.",
+        "translation": "(On wiezie walizkę na dworzec)",
+        "options": [
+          "везе",
+          "возить",
+          "везти",
+          "возити"
+        ],
+        "correct": "везе",
+        "explanation": "Jednokierunkowy kauzatywny pojazdem: 'везе' (wiezie — teraz). 'Везти' (wieźć — jednokierunkowy) vs 'возити' (wozić — wielokierunkowy). W polskim: 'wieźć' vs 'wozić'. 'Валіза' (walizka) → 'валізу' (biernik). 'До вокзалу' (na/do dworzec) — dopełniacz. Pełna tabela par kauzatywnych: вести/водити (prowadzić), нести/носити (nieść/nosić), везти/возити (wieźć/wozić). Każda para ma dokładny odpowiednik w polskim. To jeden z największych paralelizmów."
+      },
+      {
+        "id": "pu_vm10",
+        "question": "Ми щодня _____ на роботу потягом.",
+        "translation": "(Codziennie jeździmy do pracy pociągiem)",
+        "options": [
+          "їздимо",
+          "їдемо",
+          "ходимо",
+          "ідемо"
+        ],
+        "correct": "їздимо",
+        "explanation": "Wielokierunkowy pojazdem: 'їздимо' (jeździmy — regularnie). 'Щодня' (codziennie) = 'що' + 'дня' → powtarzalność → wielokierunkowy. 'Потягом' (pociągiem) — narzędnik od 'потяг' (pociąg). Polskie 'pociągiem'. Porównaj: 'їздимо потягом' i 'jeździmy pociągiem' — identyczna struktura z narzędnikiem transportu. Wielokierunkowe czasowniki z przysłówkami częstotliwości: 'часто їздимо', 'завжди ходимо', 'іноді літаємо'. Polskie: 'często jeździmy', 'zawsze chodzimy'."
+      },
+      {
+        "id": "pu_vm11",
+        "question": "Риба _____ у річці.",
+        "translation": "(Ryba płynie w rzece)",
+        "options": [
+          "пливе",
+          "плаває",
+          "пливти",
+          "плавати"
+        ],
+        "correct": "пливе",
+        "explanation": "Jednokierunkowy ruch w wodzie: 'пливе' (płynie — w jednym kierunku). 'Пливти' (płynąć — jednokierunkowy) vs 'плавати' (pływać — wielokierunkowy). W polskim: 'płynąć' vs 'pływać'. 'Риба' (ryba) — identyczne! 'У річці' (w rzece) — miejscownik od 'річка' (rzeka/rzeczka). Polskie 'w rzece'. Gdyby ryba pływała w kółko: 'риба плаває'. Tu sugerowany jest ruch w jednym kierunku. Koniugacja 'пливти': пливу, пливеш, пливе, пливемо, пливете, пливуть."
+      },
+      {
+        "id": "pu_vm12",
+        "question": "Вони _____ речі з магазину додому.",
+        "translation": "(Oni noszą rzeczy ze sklepu do domu)",
+        "options": [
+          "носять",
+          "несуть",
+          "нести",
+          "носити"
+        ],
+        "correct": "носять",
+        "explanation": "Wielokierunkowy kauzatywny: 'носять' (noszą — regularnie, tam i z powrotem). 'Носити' wyraża powtarzalny transport. 'Речі' (rzeczy) — polskie 'rzeczy'. 'З магазину' (ze sklepu) — dopełniacz z przyimkiem 'з'. 'Додому' (do domu) — kierunek. Porównaj: 'несуть' (niosą — teraz, raz) vs 'носять' (noszą — zwyczaj). Polskie: 'niosą' vs 'noszą'. 'Магазин' (sklep) — z francuskiego 'magasin'. Szyk 'з магазину додому' wskazuje regularny ruch туди-сюди (tam-z powrotem)."
+      },
+      {
+        "id": "pu_vm13",
+        "question": "Куди ти _____?",
+        "translation": "(Dokąd idziesz?)",
+        "options": [
+          "ідеш",
+          "ходиш",
+          "їдеш",
+          "їздиш"
+        ],
+        "correct": "ідеш",
+        "explanation": "Jednokierunkowe pytanie o aktualny ruch: 'куди ти ідеш?' (dokąd idziesz?). 'Куди' (dokąd) wskazuje kierunek → jednokierunkowy 'іти'. W polskim: 'dokąd idziesz?' — identyczna logika. Gdyby pytanie było ogólne: 'куди ти ходиш?' (dokąd chodzisz? — zwyczajowo). 'Куди' (dokąd) — od 'ку-' (ku-) + 'ди'. Polskie 'dokąd'. To jedno z najczęstszych pytań — i odpowiedź determinuje wybór czasownika ruchu. Fundamentalne pytanie w codziennej komunikacji."
+      },
+      {
+        "id": "pu_vm14",
+        "question": "Вона _____ малюка до лікаря.",
+        "translation": "(Ona wodzi/prowadza malucha do lekarza)",
+        "options": [
+          "водить",
+          "веде",
+          "вести",
+          "водити"
+        ],
+        "correct": "водить",
+        "explanation": "Wielokierunkowy kauzatywny: 'водить' (wodzi/prowadza — regularnie). 'Водити' wyraża wielokrotne prowadzenie — do lekarza na regularne wizyty. W polskim: 'wodzi/prowadza' (wielokrotnie). 'Малюк' (maluch) → 'малюка' (biernik żywotny = dopełniacz). 'До лікаря' (do lekarza) — dopełniacz. Gdyby prowadziła teraz, jednorazowo: 'веде малюка до лікаря'. Wybór między 'водити' a 'вести' zmienia sens wypowiedzi — identycznie jak w polskim 'wodzić' vs 'wieść'."
+      },
+      {
+        "id": "pu_vm15",
+        "question": "Хлопчик _____ до мами.",
+        "translation": "(Chłopczyk biegnie do mamy)",
+        "options": [
+          "біжить",
+          "бігає",
+          "бігти",
+          "бігав"
+        ],
+        "correct": "біжить",
+        "explanation": "Jednokierunkowy ruch: 'біжить' (biegnie — teraz, w jednym kierunku do mamy). 'Бігти' (biec) vs 'бігати' (biegać). Polskie: 'biec' vs 'biegać'. 'Хлопчик' (chłopczyk) — zdrobnienie od 'хлопець'. Polskie 'chłopczyk'. 'До мами' (do mamy) — jasny kierunek → jednokierunkowy. Koniugacja 'бігти': біжу, біжиш, біжить, біжимо, біжите, біжать. Polskie: biegnę, biegniesz, biegnie... Alternacja г→ж w koniugacji: бігти → біжу. Polskie: biec → biegnę. Różne strategie alternacji."
+      }
+    ]
+  },
+  {
+    "key": "prefixed_verbs_motion",
+    "name": "Префіксальні дієслова руху",
+    "description": "Czasowniki ruchu z prefiksami",
+    "iconName": "arrow.triangle.swap",
+    "color": "#e879f9",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pu_pvm1",
+        "question": "Він _____ до кімнати.",
+        "translation": "(On wszedł do pokoju)",
+        "options": [
+          "увійшов",
+          "вийшов",
+          "пройшов",
+          "зайшов"
+        ],
+        "correct": "увійшов",
+        "explanation": "Prefiks 'у-/в-' + 'іти' → 'увійти' (wejść — do środka). Czas przeszły: 'увійшов'. W polskim: 'wszedł' z prefiksem 'w-'. Identyczna logika: 'в-' = 'w-' (do środka). Porównaj prefiksy: увійти (wejść), вийти (wyjść), пройти (przejść), зайти (zajść), прийти (przyjść), перейти (przejść). Polskie: wejść, wyjść, przejść, zajść, przyjść, przejść. System prefiksów jest niemal identyczny! To klucz do rozumienia setek ukraińskich czasowników."
+      },
+      {
+        "id": "pu_pvm2",
+        "question": "Вона _____ з дому о восьмій.",
+        "translation": "(Ona wyszła z domu o ósmej)",
+        "options": [
+          "вийшла",
+          "увійшла",
+          "зайшла",
+          "пройшла"
+        ],
+        "correct": "вийшла",
+        "explanation": "Prefiks 'ви-' + 'іти' → 'вийти' (wyjść — na zewnątrz). Czas przeszły żeński: 'вийшла'. W polskim: 'wyszła' z prefiksem 'wy-'. Ukraiński 'ви-' = polski 'wy-'. 'З дому' (z domu) — dopełniacz z przyimkiem 'з'. Polskie 'z domu'. 'О восьмій' (o ósmej) — miejscownik czasu. Porównaj: 'вийти з дому' i 'wyjść z domu' — identyczna konstrukcja! Prefiksy kierunkowe są jednym z najsilniejszych paralelizmów polsko-ukraińskich."
+      },
+      {
+        "id": "pu_pvm3",
+        "question": "Ми _____ через парк.",
+        "translation": "(Przeszliśmy przez park)",
+        "options": [
+          "пройшли",
+          "зайшли",
+          "увійшли",
+          "вийшли"
+        ],
+        "correct": "пройшли",
+        "explanation": "Prefiks 'про-' + 'іти' → 'пройти' (przejść — przez coś). Czas przeszły mnogi: 'пройшли'. W polskim: 'przeszliśmy' z prefiksem 'prze-'. Ukraiński 'про-' częściowo = polski 'prze-' (przejście przez przestrzeń). 'Через парк' (przez park) — przyimek 'через' + biernik. W polskim: 'przez park'. 'Через' i 'przez' — wspólny rdzeń. Cenna reguła: prefiks 'про-' sugeruje ruch na wskroś, przejście od początku do końca. Ta sama semantyka co polskie 'prze-'."
+      },
+      {
+        "id": "pu_pvm4",
+        "question": "Потяг _____ о третій годині.",
+        "translation": "(Pociąg odjechał o trzeciej)",
+        "options": [
+          "від'їхав",
+          "приїхав",
+          "під'їхав",
+          "переїхав"
+        ],
+        "correct": "від'їхав",
+        "explanation": "Prefiks 'від-' + 'їхати' → 'від'їхати' (odjechać). Czas przeszły: 'від'їхав'. W polskim: 'odjechał' z prefiksem 'od-'. Ukraiński 'від-' = polski 'od-'. Apostrof w 'від'їхав' rozdziela twardą 'д' i jotowany 'ї'. 'Потяг' (pociąg) — wspólny rdzeń 'тяг-/ciąg-'. 'О третій годині' (o trzeciej godzinie) — miejscownik czasu. Prefiksy z 'їхати': від'їхати (odjechać), приїхати (przyjechać), під'їхати (podjechać), переїхати (przejechać)."
+      },
+      {
+        "id": "pu_pvm5",
+        "question": "Гості _____ вчора ввечері.",
+        "translation": "(Goście przyjechali wczoraj wieczorem)",
+        "options": [
+          "приїхали",
+          "від'їхали",
+          "виїхали",
+          "заїхали"
+        ],
+        "correct": "приїхали",
+        "explanation": "Prefiks 'при-' + 'їхати' → 'приїхати' (przyjechać). Czas przeszły mnogi: 'приїхали'. W polskim: 'przyjechali' z prefiksem 'przy-'. Ukraiński 'при-' = polski 'przy-' (ruch ku, przybliżenie). 'Гості' (goście) — polskie 'goście'. 'Вчора ввечері' (wczoraj wieczorem) — polskie 'wczoraj wieczorem'. Prawie identyczne! Porównaj: приїхати/przyjechać, прийти/przyjść, прибігти/przybiec, прилетіти/przylecieć. Prefiks 'при-' działa identycznie w obu językach."
+      },
+      {
+        "id": "pu_pvm6",
+        "question": "Він _____ дорогу на зебрі.",
+        "translation": "(On przeszedł przez ulicę na zebrze)",
+        "options": [
+          "перейшов",
+          "пройшов",
+          "зайшов",
+          "увійшов"
+        ],
+        "correct": "перейшов",
+        "explanation": "Prefiks 'пере-' + 'іти' → 'перейти' (przejść — z jednej strony na drugą). Czas przeszły: 'перейшов'. W polskim: 'przeszedł' (przez ulicę). Ukraiński 'пере-' = polski 'prze-' (w znaczeniu 'z jednej strony na drugą'). 'Дорогу' (drogę/ulicę) — biernik. 'На зебрі' (na zebrze/na przejściu) — miejscownik. Różnica między 'про-' i 'пере-': пройти (przejść — przez długość), перейти (przejść — w poprzek). W polskim obie funkcje pokrywa 'prze-', ale kontekst rozróżnia."
+      },
+      {
+        "id": "pu_pvm7",
+        "question": "Автобус _____ до зупинки.",
+        "translation": "(Autobus podjechał do przystanku)",
+        "options": [
+          "під'їхав",
+          "від'їхав",
+          "приїхав",
+          "переїхав"
+        ],
+        "correct": "під'їхав",
+        "explanation": "Prefiks 'під-' + 'їхати' → 'під'їхати' (podjechać). Czas przeszły: 'під'їхав'. W polskim: 'podjechał' z prefiksem 'pod-'. Ukraiński 'під-' = polski 'pod-'. 'Зупинка' (przystanek) — od 'зупинити' (zatrzymać). 'До зупинки' — dopełniacz z 'до'. Prefiks 'під-' oznacza zbliżenie się: під'їхати (podjechać), підійти (podejść), підбігти (podbiec). W polskim: podjechać, podejść, podbiec. Identyczny wzorzec z prefiksem 'pod-'."
+      },
+      {
+        "id": "pu_pvm8",
+        "question": "Вони _____ з Польщі до України.",
+        "translation": "(Oni przylecieli z Polski na Ukrainę)",
+        "options": [
+          "прилетіли",
+          "відлетіли",
+          "залетіли",
+          "перелетіли"
+        ],
+        "correct": "прилетіли",
+        "explanation": "Prefiks 'при-' + 'летіти' → 'прилетіти' (przylecieć). Czas przeszły mnogi: 'прилетіли'. W polskim: 'przylecieli'. 'З Польщі' (z Polski) — dopełniacz. 'До України' (na Ukrainę) — uwaga: tradycyjnie 'на Україну', ale 'до України' jest coraz popularniejsze. Polskie 'z Polski na Ukrainę'. Prefiksy z 'летіти': прилетіти (przylecieć), відлетіти (odlecieć), залетіти (zalecieć), перелетіти (przelecieć), вилетіти (wylecieć). Polskie odpowiedniki z 'lecieć'."
+      },
+      {
+        "id": "pu_pvm9",
+        "question": "Дівчинка _____ до столу.",
+        "translation": "(Dziewczynka podbiegła do stołu)",
+        "options": [
+          "підбігла",
+          "вибігла",
+          "забігла",
+          "пробігла"
+        ],
+        "correct": "підбігла",
+        "explanation": "Prefiks 'під-' + 'бігти' → 'підбігти' (podbiec). Czas przeszły żeński: 'підбігла'. W polskim: 'podbiegła'. 'Дівчинка' (dziewczynka) — zdrobnienie od 'дівчина'. 'До столу' (do stołu) — dopełniacz. Polskie 'do stołu'. Prefiksy z 'бігти': підбігти (podbiec), вибігти (wybiec), забігти (zabiec), пробігти (przebiec), прибігти (przybiec), добігти (dobiec). Każdy ma dokładny odpowiednik w polskim z 'biec'. System jest w 100% równoległy!"
+      },
+      {
+        "id": "pu_pvm10",
+        "question": "Кіт _____ на дерево.",
+        "translation": "(Kot wlazł na drzewo)",
+        "options": [
+          "видерся",
+          "злізся",
+          "перелізся",
+          "залізся"
+        ],
+        "correct": "видерся",
+        "explanation": "Prefiks 'ви-' + 'дертися' → 'видертися' (wdrapać się, wleźć w górę). Czas przeszły: 'видерся'. 'Дертися' (drapać się, wspinać się) — zwrotny. 'На дерево' (na drzewo) — biernik z 'на' (kierunek w górę). Polskie 'na drzewo'. 'Дерево' (drzewo) — identyczny rdzeń. Porównaj: polskie 'wdrapać się' też ma prefiks 'w-'. Czasowniki wspinania uzupełniają system ruchu: 'лізти' (leźć, wspinać się) jest bazowym, a prefiksy dodają kierunek — jak w polskim 'leźć/wleźć/zleźć/przelezć'."
+      },
+      {
+        "id": "pu_pvm11",
+        "question": "Хлопець _____ м'яч до воріт.",
+        "translation": "(Chłopak doniósł piłkę do bramki)",
+        "options": [
+          "доніс",
+          "виніс",
+          "заніс",
+          "переніс"
+        ],
+        "correct": "доніс",
+        "explanation": "Prefiks 'до-' + 'нести' → 'донести' (donieść — do celu). Czas przeszły: 'доніс'. W polskim: 'doniósł' z prefiksem 'do-'. Ukraiński 'до-' = polski 'do-' (osiągnięcie celu). 'М'яч' (piłka) — z apostrofem po 'м'. 'Ворота' (bramka) → 'до воріт' (do bramki) — dopełniacz mnogi. Prefiksy z 'нести': донести (donieść), винести (wynieść), занести (zanieść), перенести (przenieść), принести (przynieść). Polskie odpowiedniki z 'nieść' są identyczne."
+      },
+      {
+        "id": "pu_pvm12",
+        "question": "Вона _____ валізу з машини.",
+        "translation": "(Ona wyniosła walizkę z samochodu)",
+        "options": [
+          "винесла",
+          "занесла",
+          "принесла",
+          "донесла"
+        ],
+        "correct": "винесла",
+        "explanation": "Prefiks 'ви-' + 'нести' → 'винести' (wynieść — na zewnątrz). Czas przeszły żeński: 'винесла'. W polskim: 'wyniosła' z prefiksem 'wy-'. 'Валізу' (walizkę) — biernik. 'З машини' (z samochodu) — dopełniacz z 'з'. 'Машина' (samochód) — z francuskiego. Prefiks 'ви-' = 'wy-' (ruch na zewnątrz): винести (wynieść), вийти (wyjść), виїхати (wyjechać). Ta korespondencja jest absolutna — każdy ukraiński 'ви-' odpowiada polskiemu 'wy-'."
+      },
+      {
+        "id": "pu_pvm13",
+        "question": "Діти _____ річку вплав.",
+        "translation": "(Dzieci przepłynęły rzekę wpław)",
+        "options": [
+          "перепливли",
+          "припливли",
+          "відпливли",
+          "допливли"
+        ],
+        "correct": "перепливли",
+        "explanation": "Prefiks 'пере-' + 'пливти' → 'перепливти' (przepłynąć — z jednej strony na drugą). Czas przeszły mnogi: 'перепливли'. W polskim: 'przepłynęły' z prefiksem 'prze-'. 'Річку' (rzekę) — biernik od 'річка'. 'Вплав' (wpław) — przysłówek od 'плавати'. Polskie 'wpław'. Przestrzenne prefiksy z 'пливти': перепливти (przepłynąć), припливти (przypłynąć), відпливти (odpłynąć), допливти (dopłynąć). Polskie z 'płynąć' — kompletna symetria."
+      },
+      {
+        "id": "pu_pvm14",
+        "question": "Кур'єр _____ посилку до офісу.",
+        "translation": "(Kurier przywiózł paczkę do biura)",
+        "options": [
+          "привіз",
+          "відвіз",
+          "завіз",
+          "перевіз"
+        ],
+        "correct": "привіз",
+        "explanation": "Prefiks 'при-' + 'везти' → 'привезти' (przywieźć). Czas przeszły: 'привіз'. W polskim: 'przywiózł'. 'Кур'єр' (kurier) — wspólne zapożyczenie z francuskiego. 'Посилку' (paczkę) — biernik od 'посилка'. 'До офісу' (do biura) — dopełniacz. Prefiksy z 'везти': привезти (przywieźć), відвезти (odwieźć), завезти (zawieźć), перевезти (przewieźć). Polskie z 'wieźć' — pełna odpowiedniość prefiksowa. To najwyższy poziom paralelizmu."
+      },
+      {
+        "id": "pu_pvm15",
+        "question": "Хлопчик _____ із школи щасливий.",
+        "translation": "(Chłopczyk wybiegł ze szkoły szczęśliwy)",
+        "options": [
+          "вибіг",
+          "забіг",
+          "прибіг",
+          "добіг"
+        ],
+        "correct": "вибіг",
+        "explanation": "Prefiks 'ви-' + 'бігти' → 'вибігти' (wybiec). Czas przeszły: 'вибіг'. W polskim: 'wybiegł'. 'Із школи' (ze szkoły) — wariant przyimka 'з' z dodanym 'і' dla łatwości wymowy po spółgłosce. Polskie 'ze szkoły' — identyczna zasada! 'Щасливий' (szczęśliwy) — polskie 'szczęśliwy'. Prawie identyczne brzmienie! Prefiks 'ви-' + ruch = wyjście z wnętrza. W polskim 'wy-' pełni tę samą funkcję. Ten wzorzec jest absolutnie regularny i przewidywalny."
+      }
+    ]
+  },
+  {
+    "key": "impersonal_constructions",
+    "name": "Безособові конструкції",
+    "description": "Konstrukcje bezosobowe",
+    "iconName": "person.slash",
+    "color": "#94a3b8",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pu_ic1",
+        "question": "Мені _____ спати.",
+        "translation": "(Chce mi się spać)",
+        "options": [
+          "хочеться",
+          "хочу",
+          "хоче",
+          "хотів"
+        ],
+        "correct": "хочеться",
+        "explanation": "Konstrukcja bezosobowa z '-ся': 'мені хочеться' (chce mi się). Celownik 'мені' + bezosobowy czasownik z '-ся'. W polskim: 'chce mi się' — identyczna struktura z celownikiem! Ten typ konstrukcji wyraża spontaniczne odczucie, nie świadomą wolę. Porównaj: 'я хочу спати' (chcę spać — świadoma decyzja) vs 'мені хочеться спати' (chce mi się spać — mimowolne odczucie). Ta subtelność jest identyczna w obu językach. 'Спати' (spać) — polskie 'spać'."
+      },
+      {
+        "id": "pu_ic2",
+        "question": "Тут не _____ палити.",
+        "translation": "(Tutaj nie wolno palić)",
+        "options": [
+          "можна",
+          "може",
+          "могти",
+          "можу"
+        ],
+        "correct": "можна",
+        "explanation": "Bezosobowy predykatyw 'можна' (można, wolno): 'не можна палити' (nie wolno palić). W polskim: 'nie można palić' — identyczne! 'Можна' jest nieodmienny — nie ma osoby, czasu ani liczby w teraźniejszym. W przeszłym: 'можна було', w przyszłym: 'можна буде'. Porównaj z polskim: 'można było', 'będzie można'. Inne predykatywy: 'треба' (trzeba), 'потрібно' (potrzebno/potrzeba), 'варто' (warto). Polskie: 'trzeba', 'potrzeba', 'warto'. Kompletna symetria!"
+      },
+      {
+        "id": "pu_ic3",
+        "question": "Йому _____ було йти.",
+        "translation": "(Musiał iść / Trzeba mu było iść)",
+        "options": [
+          "треба",
+          "можна",
+          "варто",
+          "цікаво"
+        ],
+        "correct": "треба",
+        "explanation": "Bezosobowy predykatyw 'треба' (trzeba): 'йому треба було йти'. Celownik 'йому' (mu) + 'треба' + przeszły 'було' + bezokolicznik. W polskim: 'trzeba mu było iść' — identyczna konstrukcja! 'Треба' wyraża konieczność/obowiązek bez wskazania sprawcy. Porównaj: 'він мусив йти' (musiał iść — osobowe) vs 'йому треба було йти' (trzeba mu było — bezosobowe). Bezosobowa forma jest mniej bezpośrednia, łagodniejsza. Ta różnica działa tak samo w obu językach."
+      },
+      {
+        "id": "pu_ic4",
+        "question": "Мені _____ холодно.",
+        "translation": "(Jest mi zimno)",
+        "options": [
+          "дуже",
+          "було",
+          "є",
+          "стало"
+        ],
+        "correct": "дуже",
+        "explanation": "Konstrukcja bezosobowa stanu: 'мені дуже холодно' (jest mi bardzo zimno). Celownik + przysłówek stanu. W polskim: 'jest mi (bardzo) zimno'. 'Дуже' (bardzo) — wzmocnienie. 'Холодно' (zimno) — przysłówek/predykatyw od 'холодний' (zimny). Ta konstrukcja bezosobowa wyraża stany fizyczne: 'мені тепло' (ciepło mi), 'мені зручно' (wygodnie mi), 'мені сумно' (smutno mi). Polskie: 'ciepło mi', 'wygodnie mi', 'smutno mi'. Identyczna struktura celownikowa!"
+      },
+      {
+        "id": "pu_ic5",
+        "question": "На дворі _____.",
+        "translation": "(Na dworze jest ciemno)",
+        "options": [
+          "темно",
+          "темний",
+          "темна",
+          "темні"
+        ],
+        "correct": "темно",
+        "explanation": "Bezosobowa konstrukcja pogodowa: 'на дворі темно' (na dworze jest ciemno). Brak podmiotu — stan przyrody wyrażony przysłówkiem. W polskim: 'na dworze jest ciemno'. 'На дворі' (na dworze/na podwórzu) — miejscownik od 'двір' (dwór/podwórze). Polskie 'na dworze' — identyczne. Więcej: 'на дворі холодно' (zimno), 'на дворі тепло' (ciepło), 'на дворі вітряно' (wietrznie). Polskie: 'na dworze zimno/ciepło/wietrznie'. Te bezosobowe opisy pogody działają identycznie."
+      },
+      {
+        "id": "pu_ic6",
+        "question": "Тобі _____ вчитися більше.",
+        "translation": "(Powinieneś uczyć się więcej / Warto ci się więcej uczyć)",
+        "options": [
+          "варто",
+          "можна",
+          "треба",
+          "цікаво"
+        ],
+        "correct": "варто",
+        "explanation": "Bezosobowy predykatyw 'варто' (warto): 'тобі варто вчитися більше'. Celownik 'тобі' (ci) + 'варто' + bezokolicznik. W polskim: 'warto ci się więcej uczyć'. 'Варто' wyraża rekomendację — łagodniejszą niż 'треба' (trzeba). Porównaj siłę obowiązku: 'мусити' (musieć) > 'треба' (trzeba) > 'варто' (warto) > 'можна' (можна). W polskim identyczna skala: 'musieć' > 'trzeba' > 'warto' > 'można'. Ta gradacja jest cenna w komunikacji."
+      },
+      {
+        "id": "pu_ic7",
+        "question": "Дітям _____ грати на вулиці.",
+        "translation": "(Dzieciom zabrania się grania na ulicy)",
+        "options": [
+          "заборонено",
+          "можна",
+          "треба",
+          "варто"
+        ],
+        "correct": "заборонено",
+        "explanation": "Bezosobowy bierny imiesłów: 'заборонено' (zabroniono/zabrania się). Celownik 'дітям' (dzieciom) + bezosobowy imiesłów. W polskim: 'dzieciom zabrania się' lub 'dzieciom zabroniono'. 'Заборонено' od 'заборонити' (zakazać/zabronić). Polskie 'zabroniono' — identyczna forma! Końcówka '-но' w ukraińskim tworzy bezosobowe imiesłowy bierne: заборонено (zabroniono), дозволено (dozwolono), зроблено (zrobiono). Polskie '-no': zabroniono, dozwolono, zrobiono. Absolutna symetria!"
+      },
+      {
+        "id": "pu_ic8",
+        "question": "Тут _____ тихо і спокійно.",
+        "translation": "(Tutaj jest cicho i spokojnie)",
+        "options": [
+          "завжди",
+          "було",
+          "буде",
+          "стало"
+        ],
+        "correct": "завжди",
+        "explanation": "Bezosobowa konstrukcja stanu: 'тут завжди тихо і спокійно' (tutaj zawsze jest cicho i spokojnie). Brak podmiotu — opis miejsca. 'Завжди' (zawsze) — polskie 'zawsze'. 'Тихо' (cicho) — polskie 'cicho'. 'Спокійно' (spokojnie) — polskie 'spokojnie'. Prawie identyczne brzmienie! Bezosobowe opisy miejsc pomagają wyrażać atmosferę: 'тут затишно' (tu przytulnie), 'тут гарно' (tu ładnie). W polskim: 'tu przytulnie', 'tu ładnie'. Ta sama bezosobowa strategia."
+      },
+      {
+        "id": "pu_ic9",
+        "question": "Як _____ до центру?",
+        "translation": "(Jak dojechać/dostać się do centrum?)",
+        "options": [
+          "дістатися",
+          "дістається",
+          "дістався",
+          "дістаємося"
+        ],
+        "correct": "дістатися",
+        "explanation": "Bezosobowe pytanie z bezokolicznikiem: 'як дістатися до центру?' (jak dostać się do centrum?). Brak podmiotu — pytanie ogólne. W polskim: 'jak dostać się do centrum?' — identyczna bezosobowa konstrukcja z bezokolicznikiem. 'Дістатися' (dostać się) — zwrotny od 'дістати'. 'Центр' (centrum) → 'до центру' (do centrum) — dopełniacz. Bezosobowe pytania z bezokolicznikiem są bardzo naturalne w obu językach: 'де купити...?' (gdzie kupić?), 'як зробити...?' (jak zrobić?)."
+      },
+      {
+        "id": "pu_ic10",
+        "question": "Її _____ нудити від поїздки.",
+        "translation": "(Nudzi ją od jazdy / Robi jej się niedobrze)",
+        "options": [
+          "почало",
+          "можна",
+          "треба",
+          "варто"
+        ],
+        "correct": "почало",
+        "explanation": "Bezosobowa konstrukcja z biernikiem: 'її почало нудити' (zaczęło ją mdlić). 'Її' (ją) — biernik. 'Нудити' (mdlić) to bezosobowy czasownik fizjologiczny. W polskim: 'zaczęło ją mdlić' — identyczna konstrukcja z biernikiem! 'Від поїздки' (od jazdy) — przyczyna. Bezosobowe odczucia fizyczne w ukr.: 'мене нудить' (mdli mnie), 'його морозить' (trzęsie go z zimna), 'її знобить' (gorączkuje ją). Polskie: 'mdli mnie', 'trzęsie mnie'. Ta sama logika bezosobowa."
+      },
+      {
+        "id": "pu_ic11",
+        "question": "Цей лист _____ вчора.",
+        "translation": "(Ten list został napisany wczoraj)",
+        "options": [
+          "написано",
+          "написав",
+          "написала",
+          "написали"
+        ],
+        "correct": "написано",
+        "explanation": "Bezosobowa konstrukcja na '-но': 'лист написано' (list napisano). W polskim: 'list napisano' — IDENTYCZNE! Końcówka '-но/-то' tworzy bezosobowe formy bierne w ukraińskim. Polskie '-no/-to' to dokładny odpowiednik: зроблено/zrobiono, сказано/powiedziano, відкрито/otworzono. Ta korespondencja jest jedną z najbardziej spektakularnych. Używa się ich, gdy sprawca jest nieznany lub nieistotny. Kluczowa cecha stylu urzędowego w obu językach."
+      },
+      {
+        "id": "pu_ic12",
+        "question": "Сьогодні _____ з ранку.",
+        "translation": "(Dzisiaj pada od rana)",
+        "options": [
+          "йде дощ",
+          "дощ іде",
+          "дощить",
+          "дощу"
+        ],
+        "correct": "йде дощ",
+        "explanation": "Bezosobowa konstrukcja pogodowa: 'йде дощ' (pada deszcz, dosł. 'idzie deszcz'). W polskim: 'pada deszcz'. Ukraiński używa 'іти' (iść) z 'дощ' (deszcz), polski 'padać'. Różnica w czasowniku, ale struktura ta sama. 'Сьогодні' (dzisiaj/dziś) — 'сього' + 'дні' (tego dnia). 'З ранку' (od rana) — przyimek 'з' + dopełniacz. Inne pogodowe: 'іде сніг' (pada śnieg), 'дує вітер' (wieje wiatr), 'гримить грім' (grzmi grzmot). Polskie: 'pada śnieg', 'wieje wiatr', 'grzmi'."
+      },
+      {
+        "id": "pu_ic13",
+        "question": "Тут не _____ фотографувати.",
+        "translation": "(Tutaj nie wolno fotografować)",
+        "options": [
+          "дозволено",
+          "дозволяє",
+          "дозволив",
+          "дозвільно"
+        ],
+        "correct": "дозволено",
+        "explanation": "Bezosobowa forma bierna: 'не дозволено' (nie dozwolono/zabrania się). Od 'дозволити' (pozwolić/dozwolić) + '-но'. W polskim: 'nie dozwolono' lub 'zabrania się'. 'Фотографувати' (fotografować) — identyczne! Zwróć uwagę na różnicę: 'не можна' (nie można — ogólna niemożliwość) vs 'не дозволено' (nie dozwolono — oficjalny zakaz). W polskim: 'nie można' vs 'nie dozwolono/zabrania się'. Styl urzędowy preferuje 'не дозволено' — brzmi oficjalniej i kategoryczniej."
+      },
+      {
+        "id": "pu_ic14",
+        "question": "Мені _____ від цієї музики.",
+        "translation": "(Jest mi wesoło od tej muzyki)",
+        "options": [
+          "весело",
+          "веселий",
+          "веселе",
+          "веселі"
+        ],
+        "correct": "весело",
+        "explanation": "Bezosobowa konstrukcja emocjonalna: 'мені весело' (jest mi wesoło). Celownik + predykatyw (przysłówek stanu). W polskim: 'jest mi wesoło' — identycznie! 'Від цієї музики' (od tej muzyki) — przyczyna. 'Музика' (muzyka) — identyczne. Porównaj stany emocjonalne: 'мені сумно' (smutno mi), 'мені страшно' (straszno mi), 'мені соромно' (wstyd mi), 'мені нудно' (nudno mi). Polskie: 'smutno mi', 'straszno mi', 'wstyd mi', 'nudno mi'. Perfekcyjna symetria."
+      },
+      {
+        "id": "pu_ic15",
+        "question": "_____ вже пізно, час іти.",
+        "translation": "(Jest już późno, czas iść)",
+        "options": [
+          "Вже",
+          "Було",
+          "Буде",
+          "Стає"
+        ],
+        "correct": "Вже",
+        "explanation": "Bezosobowa konstrukcja czasowa: 'вже пізно' (już późno). Brak podmiotu — opis stanu czasu. W polskim: 'jest już późno'. 'Час іти' (czas iść) — bezosobowa konstrukcja z 'час' (czas/pora) + bezokolicznik. Polskie: 'czas iść' — identyczne! 'Пізно' (późno) — polskie 'późno'. Ten typ zwrotów jest bardzo naturalny w codziennej mowie: 'рано вставати' (wcześnie wstawać), 'час обідати' (czas obiadować), 'пора спати' (pora spać). Bezosobowe ramy czasowe dnia."
+      }
+    ]
+  },
+  {
+    "key": "vocative_case",
+    "name": "Кличний відмінок",
+    "description": "Wołacz",
+    "iconName": "megaphone",
+    "color": "#fb923c",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pu_voc1",
+        "question": "_____, як ти себе почуваєш?",
+        "translation": "(Mamo, jak się czujesz?)",
+        "options": [
+          "Мамо",
+          "Мама",
+          "Мамі",
+          "Маму"
+        ],
+        "correct": "Мамо",
+        "explanation": "Wołacz od 'мама' (mama): 'мамо'. Końcówka '-о' dla żeńskich na '-а'. W polskim: 'mamo' — IDENTYCZNE! I forma, i końcówka, i brzmienie. 'Як ти себе почуваєш?' (jak się czujesz?) — 'почуватися' (czuć się). Polskie 'jak się czujesz?'. Wołacz to przypadek bezpośredniego zwrotu do osoby — jeden z najbardziej emocjonalnych. Ukraiński zachował go w pełni (tak jak polski), w odróżnieniu od np. rosyjskiego. To wspólna cecha polsko-ukraińska!"
+      },
+      {
+        "id": "pu_voc2",
+        "question": "_____, допоможи мені!",
+        "translation": "(Tato, pomóż mi!)",
+        "options": [
+          "Тату",
+          "Тато",
+          "Татові",
+          "Тата"
+        ],
+        "correct": "Тату",
+        "explanation": "Wołacz od 'тато' (tata): 'тату'. Końcówka '-у' dla męskich na '-о'. W polskim: 'tato' — tu mała różnica: polskie 'tato' ma '-о', ukraińskie 'тату' ma '-у'. Ale oba to wołacz! 'Допоможи' (pomóż) — tryb rozkazujący. 'Мені' (mi) — celownik. Inne wołacze na '-у': 'сину!' (synu!), 'батьку!' (ojcze!). Polskie: 'synu!', 'ojcze!'. Wołacz jest żywy w codziennym ukraińskim — używany w każdej rozmowie, e-mailu, SMS-ie."
+      },
+      {
+        "id": "pu_voc3",
+        "question": "Пане _____, вас до телефону.",
+        "translation": "(Panie profesorze, do telefonu)",
+        "options": [
+          "професоре",
+          "професор",
+          "професора",
+          "професору"
+        ],
+        "correct": "професоре",
+        "explanation": "Wołacz od 'професор' (profesor): 'професоре'. Końcówka '-е' dla męskich twardych na spółgłoskę. W polskim: 'profesorze' — bardzo bliskie! Polskie '-rze' i ukraińskie '-ре'. 'Пане' (panie) — wołacz od 'пан' (pan). Polskie 'panie' od 'pan'. W ukraińskim grzeczne zwracanie się: 'пане + wołacz zawodu'. W polskim: 'panie + wołacz'. 'Вас до телефону' — 'do telefonu, proszę'. Formy grzecznościowe z wołaczem są fundamentalne w ukraińskiej kulturze komunikacji."
+      },
+      {
+        "id": "pu_voc4",
+        "question": "_____, підійди сюди!",
+        "translation": "(Iwanie, podejdź tutaj!)",
+        "options": [
+          "Іване",
+          "Іван",
+          "Івану",
+          "Івана"
+        ],
+        "correct": "Іване",
+        "explanation": "Wołacz od 'Іван' (Iwan/Jan): 'Іване'. Końcówka '-е' dla męskich twardych. W polskim: 'Iwanie' — bardzo bliskie! 'Підійди' (podejdź) — tryb rozkazujący od 'підійти'. 'Сюди' (tutaj, w tę stronę). Popularne wołacze imion: Іване!, Петре!, Олексію!, Андрію!, Миколо! Polskie: Iwanie!, Piotrze!, Oleksiju (brak), Andrzeju!, Mikołaju! Wołacz imion jest obowiązkowy w ukraińskim — użycie mianownika zamiast wołacza brzmi nienaturalnie lub niegrzecznie."
+      },
+      {
+        "id": "pu_voc5",
+        "question": "Дорога _____, вітаю з днем народження!",
+        "translation": "(Droga Oksano, wszystkiego najlepszego z okazji urodzin!)",
+        "options": [
+          "Оксано",
+          "Оксана",
+          "Оксані",
+          "Оксану"
+        ],
+        "correct": "Оксано",
+        "explanation": "Wołacz od 'Оксана' (Oksana): 'Оксано'. Końcówka '-о' dla żeńskich na '-а'. W polskim żeńskie imiona też mają wołacz na '-о': 'Anno', 'Mario'. 'Дорога' (droga) — przymiotnik w formie żeńskiej (nie wołacz przymiotnika — w ukr. przymiotnik nie zmienia formy w wołaczu). 'Вітаю з днем народження!' (Gratuluję z dniem urodzin!) — 'день народження' to ukraińskie 'urodziny', dosł. 'dzień narodzenia'. Polskie 'dzień urodzin'."
+      },
+      {
+        "id": "pu_vm6b",
+        "question": "_____, покажи щоденник!",
+        "translation": "(Uczniu, pokaż dzienniczek!)",
+        "options": [
+          "Учню",
+          "Учень",
+          "Учня",
+          "Учневі"
+        ],
+        "correct": "Учню",
+        "explanation": "Wołacz od 'учень' (uczeń): 'учню'. Końcówka '-ю' dla miękkich męskich na '-ь'. W polskim: 'uczniu' — identyczne! 'Покажи' (pokaż) — tryb rozkazujący. 'Щоденник' (dzienniczek) — od 'щодня' (codziennie). Miękkie męskie w wołaczu: учень→учню, вчитель→вчителю, водій→водію. Polskie: uczeń→uczniu, nauczyciel→nauczycielu, kierowca→kierowco. Końcówka '-ю' jest typowa dla ukraińskich miękkich tematów w wołaczu."
+      },
+      {
+        "id": "pu_voc7",
+        "question": "_____, чи можу задати питання?",
+        "translation": "(Pani doktor, czy mogę zadać pytanie?)",
+        "options": [
+          "Пані лікарко",
+          "Пані лікар",
+          "Пані лікарки",
+          "Пані лікарку"
+        ],
+        "correct": "Пані лікарко",
+        "explanation": "Wołacz żeński od 'лікарка' (lekarka): 'лікарко'. Końcówka '-о' dla żeńskich na '-ка'. 'Пані' (pani) — nieodmienny w ukraińskim (w polskim: 'pani' też nieodmienny w formie grzecznościowej). 'Чи можу' (czy mogę) — partykuła pytająca + 'могти'. 'Задати питання' (zadać pytanie) — identyczne z polskim! 'Питання' (pytanie) — nijakie na '-ння'. Feminatywy (лікарка, вчителька, інженерка) są aktywnie używane w ukraińskim — wołacz tych form jest naturalny."
+      },
+      {
+        "id": "pu_voc8",
+        "question": "_____ мій, як гарно тут!",
+        "translation": "(Boże mój, jak ładnie tutaj!)",
+        "options": [
+          "Боже",
+          "Бог",
+          "Богу",
+          "Бога"
+        ],
+        "correct": "Боже",
+        "explanation": "Wołacz od 'Бог' (Bóg): 'Боже'. Alternacja г→ж przed '-е'. W polskim: 'Boże' — IDENTYCZNE! Ta sama alternacja! 'Боже мій' (Boże mój) — popularne wykrzyknienie. 'Як гарно тут!' (jak ładnie tutaj!) — 'гарно' (ładnie/pięknie). Alternacja spółgłoskowa w wołaczu: г→ж (Бог→Боже), к→ч (чоловік→чоловіче), х→ш (пастух→пастуше). Polskie: g→ż (Bóg→Boże), k→cz (chłopak→chłopcze). Identyczny wzorzec palatalizacji!"
+      },
+      {
+        "id": "pu_voc9",
+        "question": "_____, допоможіть, будь ласка!",
+        "translation": "(Proszę pana/pani, proszę pomóc!)",
+        "options": [
+          "Перепрошую",
+          "Пане",
+          "Добрий день",
+          "Слухайте"
+        ],
+        "correct": "Перепрошую",
+        "explanation": "Grzecznościowy zwrot: 'Перепрошую' (przepraszam — jako zwrócenie uwagi). W ukraińskim 'перепрошую' służy zarówno jako przeprosiny, jak i zwrócenie uwagi (jak polskie 'przepraszam...'). 'Допоможіть, будь ласка' (proszę pomóc). Tu wołacz nie jest potrzebny — 'перепрошую' zastępuje bezpośredni zwrot do osoby. W polskim: 'przepraszam, proszę pomóc'. 'Перепрошую' od 'перепрошувати' — z prefiksem 'пере-'. Polskie 'przepraszam' z 'prze-'. Wspólna struktura!"
+      },
+      {
+        "id": "pu_voc10",
+        "question": "_____, де найближча аптека?",
+        "translation": "(Proszę pani, gdzie jest najbliższa apteka?)",
+        "options": [
+          "Пані",
+          "Жінко",
+          "Панно",
+          "Пана"
+        ],
+        "correct": "Пані",
+        "explanation": "'Пані' (pani) jest nieodmiennym zwrotem grzecznościowym — nie zmienia formy w wołaczu. W polskim: 'pani' też jest nieodmienny w tej funkcji. 'Де найближча аптека?' (gdzie jest najbliższa apteka?) — typowe pytanie. 'Найближча' (najbliższa) — stopień najwyższy od 'близька' (bliska). Polskie 'najbliższa'. 'Аптека' (apteka) — identyczne! Grzeczne zwracanie się do nieznajomych: 'пане/'пані' + pytanie. W polskim: 'proszę pana/proszę pani'."
+      },
+      {
+        "id": "pu_voc11",
+        "question": "_____, я тебе кохаю!",
+        "translation": "(Kochanie, kocham cię!)",
+        "options": [
+          "Коханий",
+          "Кохання",
+          "Коханому",
+          "Коханого"
+        ],
+        "correct": "Коханий",
+        "explanation": "Wołacz przymiotnikowy: 'коханий' (kochany) — przymiotniki w wołaczu zachowują formę mianownika w ukraińskim. W polskim: 'kochany' — identycznie! Żeńska wersja: 'кохана' (kochana). 'Я тебе кохаю' (kocham cię) — 'кохати' (kochać). 'Тебе' (ciebie/cię) — biernik od 'ти'. Pieszczotliwe zwroty: 'коханий/кохана' (kochany/a), 'любий/люба' (drogi/a), 'дорогий/дорога' (drogi/a). Polskie: 'kochany/a', 'drogi/a'. Uniwersalny język miłości!"
+      },
+      {
+        "id": "pu_voc12",
+        "question": "_____ Іванівно, вітаю!",
+        "translation": "(Pani Iwanówno, witam!)",
+        "options": [
+          "Маріє",
+          "Марія",
+          "Марії",
+          "Марію"
+        ],
+        "correct": "Маріє",
+        "explanation": "Wołacz od 'Марія' (Maria): 'Маріє'. Końcówka '-є' dla żeńskich na '-ія'. W polskim: 'Mario' — tu różnica: polskie '-o', ukraińskie '-є'. 'Іванівно' — wołacz od ojcowskiego 'Іванівна' (z '-о'). Ukraiński system imion: ім'я (imię) + по батькові (otczestwo). 'Маріє Іванівно' = 'Mario Iwanówno'. Otczestwo jest ważne w formalnych sytuacjach ukraińskich. Polskie 'pan/pani' zastępują tę funkcję. To kulturowa różnica w systemach grzeczności."
+      },
+      {
+        "id": "pu_voc13",
+        "question": "_____, хочеш морозива?",
+        "translation": "(Synku, chcesz loda?)",
+        "options": [
+          "Синку",
+          "Син",
+          "Сина",
+          "Синові"
+        ],
+        "correct": "Синку",
+        "explanation": "Wołacz od 'синок' (synek): 'синку'. Zdrobniała forma 'син' (syn) → 'синок' → wołacz 'синку'. W polskim: 'synku' — IDENTYCZNE! 'Хочеш' (chcesz) — od 'хотіти'. 'Морозива' (loda) — dopełniacz od 'морозиво' (lód/lody), dosł. 'mrożone'. Wołacz zdrobnień: синку (synku), доню (córko — od 'донька'), бабусю (babciu), дідусю (dziadku). Polskie: synku, córko/córeczko, babciu, dziadku. Zdrobniałe wołacze wyrażają ciepło i bliskość."
+      },
+      {
+        "id": "pu_voc14",
+        "question": "Шановний _____, дякуємо за лист!",
+        "translation": "(Szanowny panie dyrektorze, dziękujemy za list!)",
+        "options": [
+          "пане директоре",
+          "пан директор",
+          "пана директора",
+          "пану директору"
+        ],
+        "correct": "пане директоре",
+        "explanation": "Oficjalny wołacz: 'пане директоре' (panie dyrektorze). Oba słowa w wołaczu: пан→пане, директор→директоре. W polskim: 'panie dyrektorze' — identycznie oba w wołaczu. 'Шановний' (szanowny) — formalny przymiotnik, zachowuje formę mianownika. Polskie 'szanowny'. 'Дякуємо' (dziękujemy) — od 'дякувати' (dziękować). 'За лист' (za list) — biernik. Oficjalne formy zwrotne: 'Шановний пане міністре!', 'Шановна пані президенте!'. To język korespondencji oficjalnej."
+      },
+      {
+        "id": "pu_voc15",
+        "question": "_____, ти найкраща!",
+        "translation": "(Siostrzyczko, jesteś najlepsza!)",
+        "options": [
+          "Сестричко",
+          "Сестричка",
+          "Сестрички",
+          "Сестричці"
+        ],
+        "correct": "Сестричко",
+        "explanation": "Wołacz od 'сестричка' (siostrzyczka): 'сестричко'. Końcówka '-о' dla zdrobnień na '-ка'. W polskim: 'siostrzyczko' — IDENTYCZNE! 'Найкраща' (najlepsza) — stopień najwyższy od 'краща' (lepsza) od 'гарна' (dobra/ładna). Supletywna gradacja jak 'dobra → lepsza → najlepsza'. Polskie 'najlepsza'. 'Ти найкраща' (jesteś najlepsza) — brak łącznika 'є'. W ukraińskim pomija się 'бути' w teraźniejszym, jak w polskim: 'jesteś najlepsza' (ale 'jesteś' jest opcjonalne)."
+      }
+    ]
+  },
+  {
+    "key": "instrumental_case_usage",
+    "name": "Використання орудного відмінка",
+    "description": "Użycie narzędnika",
+    "iconName": "wrench.and.screwdriver",
+    "color": "#60a5fa",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pu_inst1",
+        "question": "Я пишу _____.",
+        "translation": "(Piszę ołówkiem)",
+        "options": [
+          "олівцем",
+          "олівець",
+          "олівця",
+          "олівцю"
+        ],
+        "correct": "олівцем",
+        "explanation": "Narzędnik jako narzędzie: 'олівцем' (ołówkiem). Od 'олівець' (ołówek) → narzędnik '-ем'. W polskim: 'ołówkiem' z '-kiem'. Narzędnik wyraża narzędzie czynności — jego podstawowa funkcja w obu językach. Porównaj: 'пишу ручкою' (piszę długopisem), 'ріжу ножем' (kroję nożem), 'їм ложкою' (jem łyżką). Polskie: 'piszę długopisem', 'kroję nożem', 'jem łyżką'. Identyczna logika: narzędzie = narzędnik. Ten przypadek jest intuicyjny!"
+      },
+      {
+        "id": "pu_inst2",
+        "question": "Вона працює _____.",
+        "translation": "(Ona pracuje jako nauczycielka)",
+        "options": [
+          "вчителькою",
+          "вчителька",
+          "вчительки",
+          "вчительці"
+        ],
+        "correct": "вчителькою",
+        "explanation": "Narzędnik zawodu: 'працює вчителькою' (pracuje jako nauczycielka). W polskim: 'pracuje jako nauczycielka' (mianownik z 'jako') LUB 'jest nauczycielką' (narzędnik). Ukraiński preferuje narzędnik bez 'як'. Porównaj z polskim: 'він є лікарем' (jest lekarzem) vs 'він працює лікарем' (pracuje jako lekarz). 'Вчителька' (nauczycielka) — feminatyw od 'вчитель'. Końcówka narzędnika żeńskiego '-ою': вчителькою, лікаркою, інженеркою. Polskie '-ą': nauczycielką, lekarką."
+      },
+      {
+        "id": "pu_inst3",
+        "question": "Ми їдемо _____.",
+        "translation": "(Jedziemy pociągiem)",
+        "options": [
+          "потягом",
+          "потяг",
+          "потяга",
+          "потягу"
+        ],
+        "correct": "потягом",
+        "explanation": "Narzędnik środka transportu: 'їдемо потягом' (jedziemy pociągiem). Od 'потяг' (pociąg) → '-ом'. W polskim: 'pociągiem' z '-iem'. Narzędnik transportu: 'літаком' (samolotem), 'автобусом' (autobusem), 'таксі' (taksówką — tu bez końcówki, bo nieodmienny). Polskie: 'samolotem', 'autobusem', 'taksówką'. Ta funkcja narzędnika jest identyczna w obu językach. Ukraiński system jest nawet łatwiejszy — mniej wyjątków niż w polskim."
+      },
+      {
+        "id": "pu_inst4",
+        "question": "Вона захоплюється _____.",
+        "translation": "(Ona interesuje się muzyką)",
+        "options": [
+          "музикою",
+          "музика",
+          "музики",
+          "музиці"
+        ],
+        "correct": "музикою",
+        "explanation": "Narzędnik po czasowniku: 'захоплюватися + narzędnik' (interesować się + narzędnik). W polskim: 'interesować się muzyką' — identycznie narzędnik! Ukraiński 'захоплюватися' (zachwycać się, pasjonować się). Inne czasowniki z narzędnikiem: 'цікавитися' (interesować się), 'пишатися' (szczycić się), 'захоплюватися' (zachwycać się). Polskie: 'interesować się', 'szczycić się', 'zachwycać się' — wszystkie z narzędnikiem. Rząd czasownika jest taki sam w obu językach."
+      },
+      {
+        "id": "pu_inst5",
+        "question": "Стіл вкритий _____.",
+        "translation": "(Stół pokryty jest kwiatami)",
+        "options": [
+          "квітами",
+          "квіти",
+          "квітів",
+          "квітам"
+        ],
+        "correct": "квітами",
+        "explanation": "Narzędnik po imiesłowie biernym: 'вкритий квітами' (pokryty kwiatami). 'Квіти' (kwiaty) → narzędnik mnogi 'квітами'. W polskim: 'kwiatami' — identyczna końcówka '-ами/-ami'! Końcówka narzędnika mnogiego '-ами' jest jedną z najbardziej regularnych i wspólnych z polskim '-ami'. Porównaj: столами/stołami, книжками/książkami, людьми/ludźmi. Imiesłowy bierne + narzędnik są powszechne: 'написаний ручкою' (napisany długopisem), 'зроблений руками' (zrobiony rękami)."
+      },
+      {
+        "id": "pu_inst6",
+        "question": "Він пішов _____ стежкою.",
+        "translation": "(On poszedł leśną ścieżką)",
+        "options": [
+          "лісовою",
+          "лісова",
+          "лісові",
+          "лісовий"
+        ],
+        "correct": "лісовою",
+        "explanation": "Narzędnik z przymiotnikiem: 'лісовою стежкою' (leśną ścieżką). Przymiotnik 'лісова' → narzędnik 'лісовою'. Rzeczownik 'стежка' → 'стежкою'. Oba w narzędniku! W polskim: 'leśną ścieżką' — identyczna zgodność przymiotnik + rzeczownik w narzędniku. Końcówki żeńskiego narzędnika: '-ою' (ukr.) vs '-ą' (pol.). Tu narzędnik wyraża drogę/trajektorię — 'poszedł ścieżką'. To funkcja narzędnika drogi: 'іти вулицею' (iść ulicą), 'їхати дорогою' (jechać drogą)."
+      },
+      {
+        "id": "pu_inst7",
+        "question": "Я розмовляю з _____ по телефону.",
+        "translation": "(Rozmawiam z przyjacielem przez telefon)",
+        "options": [
+          "другом",
+          "друг",
+          "друга",
+          "друзі"
+        ],
+        "correct": "другом",
+        "explanation": "Narzędnik po przyimku 'з' (z): 'з другом' (z przyjacielem). Od 'друг' → 'другом'. W polskim: 'z przyjacielem'. Przyimek 'з' + narzędnik = towarzystwo — identycznie jak polskie 'z' + narzędnik. 'Розмовляю' (rozmawiam) — od 'розмовляти'. 'По телефону' (przez telefon) — przyimek 'по' + miejscownik. W polskim: 'przez telefon'. Tu różnica przyimkowa. Porównaj: 'з мамою' (z mamą), 'з братом' (z bratem). Polskie: 'z mamą', 'z bratem'."
+      },
+      {
+        "id": "pu_inst8",
+        "question": "Він став _____.",
+        "translation": "(On został lekarzem)",
+        "options": [
+          "лікарем",
+          "лікар",
+          "лікаря",
+          "лікарю"
+        ],
+        "correct": "лікарем",
+        "explanation": "Narzędnik predykatywny po 'стати' (zostać): 'став лікарем' (został lekarzem). W polskim: 'został lekarzem' — narzędnik! Taki sam rząd czasownika. 'Стати' (stać się/zostać) wymaga narzędnika. Polskie 'zostać' + narzędnik lub 'stać się' + narzędnik. Porównaj: 'стала вчителькою' (została nauczycielką), 'стане студентом' (zostanie studentem). Polskie: 'została nauczycielką', 'zostanie studentem'. Predykatywny narzędnik jest wspólny dla obu języków."
+      },
+      {
+        "id": "pu_inst9",
+        "question": "Вона милується _____.",
+        "translation": "(Ona zachwyca się zachodem słońca)",
+        "options": [
+          "заходом сонця",
+          "захід сонця",
+          "заходу сонця",
+          "заході сонця"
+        ],
+        "correct": "заходом сонця",
+        "explanation": "Narzędnik po 'милуватися' (zachwycać się, podziwiać): 'милується заходом сонця'. 'Захід сонця' (zachód słońca) → narzędnik 'заходом сонця'. W polskim: 'zachwyca się zachodem słońca' — identycznie narzędnik! 'Захід' (zachód) — od 'заходити' (zachodzić). 'Сонце' (słońce) — dopełniacz 'сонця'. Ta konstrukcja jest poetycka i piękna w obu językach. Więcej z 'милуватися': 'милується природою' (podziwia przyrodę), 'милується краєвидом' (zachwyca się krajobrazem)."
+      },
+      {
+        "id": "pu_inst10",
+        "question": "Кава з _____ дуже смачна.",
+        "translation": "(Kawa z mlekiem jest bardzo smaczna)",
+        "options": [
+          "молоком",
+          "молоко",
+          "молока",
+          "молоку"
+        ],
+        "correct": "молоком",
+        "explanation": "Narzędnik po 'з' — dodatek: 'з молоком' (z mlekiem). Od 'молоко' (mleko) → 'молоком'. W polskim: 'z mlekiem'. 'Смачна' (smaczna) — od 'смачний' (smaczny). Ta funkcja narzędnika wyraża składnik/dodatek: 'чай з лимоном' (herbata z cytryną), 'хліб з маслом' (chleb z masłem), 'каша з грибами' (kasza z grzybami). Polskie: 'herbata z cytryną', 'chleb z masłem', 'kasza z grzybami'. Narzędnik kulinarny działa identycznie!"
+      },
+      {
+        "id": "pu_inst11",
+        "question": "Він пишається своїм _____.",
+        "translation": "(On szczyci się swoim synem)",
+        "options": [
+          "сином",
+          "син",
+          "сина",
+          "синові"
+        ],
+        "correct": "сином",
+        "explanation": "Narzędnik po 'пишатися' (szczycić się): 'пишається сином'. W polskim: 'szczyci się synem' — identycznie narzędnik! 'Своїм' (swoim) — narzędnik od 'свій'. Polskie 'swoim'. 'Пишатися' (szczycić się, być dumnym) — od 'пиха' (pycha). Polskie 'szczycić się'. Ten czasownik z narzędnikiem wyraża dumę. Inne: 'хвалитися чимось' (chwalić się czymś), 'ділитися чимось' (dzielić się czymś). Polskie: 'chwalić się czymś', 'dzielić się czymś'. Narzędnik tematyczny."
+      },
+      {
+        "id": "pu_inst12",
+        "question": "Поле вкрите білим _____.",
+        "translation": "(Pole pokryte jest białym śniegiem)",
+        "options": [
+          "снігом",
+          "сніг",
+          "снігу",
+          "снігові"
+        ],
+        "correct": "снігом",
+        "explanation": "Narzędnik po imiesłowie 'вкрите' (pokryte): 'вкрите білим снігом'. 'Сніг' (śnieg) → 'снігом'. 'Білий' (biały) → 'білим'. W polskim: 'pokryte białym śniegiem'. Porównaj: снігом/śniegiem, білим/białym — niemal identyczne końcówki! Narzędnik przymiotnik + rzeczownik: 'великим успіхом' (wielkim sukcesem), 'тихим голосом' (cichym głosem). Polskie: 'wielkim sukcesem', 'cichym głosem'. Zgodność w narzędniku jest regularna w obu językach."
+      },
+      {
+        "id": "pu_inst13",
+        "question": "Він керує _____.",
+        "translation": "(On kieruje firmą)",
+        "options": [
+          "фірмою",
+          "фірма",
+          "фірми",
+          "фірмі"
+        ],
+        "correct": "фірмою",
+        "explanation": "Narzędnik po 'керувати' (kierować): 'керує фірмою'. W polskim: 'kieruje firmą' — narzędnik! 'Керувати' (kierować) — identyczny rdzeń i rząd. Inne czasowniki z narzędnikiem zarządzania: 'управляти' (zarządzać), 'володіти' (władać), 'користуватися' (korzystać z). Polskie: 'zarządzać', 'władać', 'korzystać z'. 'Фірма' (firma) → 'фірмою'. Końcówka '-ою' w narzędniku żeńskim jest regularna: фірмою, школою, лікарнею. Polskie '-ą': firmą, szkołą, szpitalem."
+      },
+      {
+        "id": "pu_inst14",
+        "question": "Ми розмовляємо _____ мовою.",
+        "translation": "(Rozmawiamy po ukraińsku / ukraińskim językiem)",
+        "options": [
+          "українською",
+          "українська",
+          "української",
+          "українській"
+        ],
+        "correct": "українською",
+        "explanation": "Narzędnik języka: 'українською мовою' (ukraińskim językiem / po ukraińsku). 'Українська' → narzędnik 'українською'. 'Мова' → 'мовою'. W polskim: 'ukraińskim językiem' lub częściej 'po ukraińsku'. Ukraiński preferuje narzędnik: 'розмовляти українською мовою' (mówić ukraińskim językiem). Porównaj: 'англійською' (po angielsku), 'польською' (po polsku), 'німецькою' (po niemiecku). Skrócona forma bez 'мовою': 'говорити українською' — potoczne."
+      },
+      {
+        "id": "pu_inst15",
+        "question": "Між _____ і парком є магазин.",
+        "translation": "(Między szkołą a parkiem jest sklep)",
+        "options": [
+          "школою",
+          "школа",
+          "школи",
+          "школі"
+        ],
+        "correct": "школою",
+        "explanation": "Narzędnik po 'між' (między): 'між школою і парком'. W polskim: 'między szkołą a parkiem' — narzędnik! Przyimek 'між' (między) wymaga narzędnika — identycznie jak w polskim. 'Парком' (parkiem) — też narzędnik. 'Магазин' (sklep). Inne przyimki z narzędnikiem: 'з' (z), 'за' (za), 'над' (nad), 'під' (pod), 'перед' (przed). Polskie: 'z', 'za', 'nad', 'pod', 'przed'. System przyimków z narzędnikiem jest niemal identyczny w obu językach!"
+      }
+    ]
+  },
+  {
+    "key": "genitive_case_usage",
+    "name": "Вживання родового відмінка",
+    "description": "Użycie dopełniacza",
+    "iconName": "arrow.down.right",
+    "color": "#f97316",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pu_gen1",
+        "question": "У мене немає _____.",
+        "translation": "(Nie mam książki)",
+        "options": [
+          "книжки",
+          "книжка",
+          "книжку",
+          "книжці"
+        ],
+        "correct": "книжки",
+        "explanation": "Po 'немає' (nie ma) stoi dopełniacz: 'книжки' — dopełniacz od 'книжка' (książka). W polskim: 'nie mam książki' — też dopełniacz! To kluczowa reguła: przeczenie + dopełniacz. 'У мене немає' dosłownie: 'u mnie nie ma'. Porównaj struktury: ukraiński 'у мене є книжка' (mam książkę — mianownik), 'у мене немає книжки' (nie mam książki — dopełniacz). Polski: 'mam książkę' (biernik), 'nie mam książki' (dopełniacz). Przeczenie zmienia przypadek w obu językach!"
+      },
+      {
+        "id": "pu_gen2",
+        "question": "Це машина мого _____.",
+        "translation": "(To samochód mojego brata)",
+        "options": [
+          "брата",
+          "брат",
+          "брату",
+          "братом"
+        ],
+        "correct": "брата",
+        "explanation": "Dopełniacz wyrażający posiadanie: 'машина брата' (samochód brata). W polskim: 'samochód brata' — identyczna konstrukcja! Dopełniacz posesywny to jedno z głównych zastosowań tego przypadka w obu językach. 'Мого' (mojego) — dopełniacz od 'мій'. Porównaj: мій/мого i mój/mojego — niemal identyczne formy. 'Брат' → 'брата' — końcówka '-а' dla męskich żywotnych. Polskie: 'brat' → 'brata'. Perfekcyjna korespondencja form dopełniacza między językami."
+      },
+      {
+        "id": "pu_gen3",
+        "question": "Я хочу склянку _____.",
+        "translation": "(Chcę szklankę wody)",
+        "options": [
+          "води",
+          "вода",
+          "воді",
+          "водою"
+        ],
+        "correct": "води",
+        "explanation": "Dopełniacz po słowach oznaczających ilość: 'склянку води' (szklankę wody). W polskim: 'szklankę wody' — identycznie! Reguła: miary + dopełniacz. Więcej przykładów: 'кілограм цукру' (kilogram cukru), 'літр молока' (litr mleka), 'шматок хліба' (kawałek chleba). 'Вода' → 'води' — końcówka '-и' dla żeńskich na '-а'. Polskie: 'woda' → 'wody'. Ta sama końcówka! Dopełniacz partytywny (części z całości) jest identyczny w obu językach."
+      },
+      {
+        "id": "pu_gen4",
+        "question": "Він приїхав з _____.",
+        "translation": "(On przyjechał z Ukrainy)",
+        "options": [
+          "України",
+          "Україна",
+          "Україні",
+          "Україну"
+        ],
+        "correct": "України",
+        "explanation": "Przyimek 'з' (z) + dopełniacz wyrażający pochodzenie/kierunek: 'з України' (z Ukrainy). W polskim: 'z Ukrainy' — identyczne! Przyimki wymagające dopełniacza: 'з/із' (z), 'від' (od), 'до' (do), 'без' (bez), 'для' (dla), 'після' (po). Porównaj z polskimi: z, od, do, bez, dla, po — większość tych samych przyimków rządzi dopełniaczem w obu językach! 'Україна' → 'України'. Końcówka '-и' w dopełniaczu żeńskim na '-а'. Analogicznie: Польща → Польщі."
+      },
+      {
+        "id": "pu_gen5",
+        "question": "Без _____ неможливо жити.",
+        "translation": "(Bez wody niemożliwe jest życie)",
+        "options": [
+          "води",
+          "вода",
+          "воді",
+          "водою"
+        ],
+        "correct": "води",
+        "explanation": "Przyimek 'без' (bez) + dopełniacz: 'без води' (bez wody). W polskim: 'bez wody' — identycznie! 'Неможливо' (niemożliwe/niemożliwie) — polskie 'niemożliwie'. 'Жити' (żyć) — polskie 'żyć'. Cała konstrukcja jest lustrzanym odbiciem polskiej: bez + dopełniacz + bezosobowy przymiotnik + bezokolicznik. Więcej przykładów z 'без': 'без цукру' (bez cukru), 'без молока' (bez mleka), 'без грошей' (bez pieniędzy). Ukraiński 'без' działa identycznie jak polski 'bez'."
+      },
+      {
+        "id": "pu_gen6",
+        "question": "Я боюся _____.",
+        "translation": "(Boję się ciemności)",
+        "options": [
+          "темряви",
+          "темрява",
+          "темряву",
+          "темрявою"
+        ],
+        "correct": "темряви",
+        "explanation": "Dopełniacz po czasownikach wyrażających emocje: 'боятися' (bać się) + dopełniacz. W polskim: 'boję się ciemności' — też dopełniacz! Czasowniki + dopełniacz: 'боятися' (bać się), 'потребувати' (potrzebować), 'бажати' (życzyć sobie), 'позбутися' (pozbyć się). Polskie odpowiedniki rządzą tym samym przypadkiem. 'Темрява' (ciemność) → 'темряви' (dopełniacz). Polskie: 'ciemność' → 'ciemności'. Ta zgodność rekcji czasownikowej jest niezwykle pomocna dla polskich uczniów."
+      },
+      {
+        "id": "pu_gen7",
+        "question": "П'ятого _____ у нас свято.",
+        "translation": "(Piątego marca mamy święto)",
+        "options": [
+          "березня",
+          "березень",
+          "березні",
+          "березнем"
+        ],
+        "correct": "березня",
+        "explanation": "Dopełniacz w datach: 'п'ятого березня' (piątego marca). W polskim: 'piątego marca' — identyczna konstrukcja! Nazwy miesięcy w dopełniaczu: січня (stycznia), лютого (lutego), березня (marca), квітня (kwietnia), травня (maja)... Porównaj: березень/marzec — różne rdzenie, ale identyczna odmiana dopełniaczowa z liczebnikiem porządkowym. 'Свято' (święto) — polskie 'święto'. Daty zawsze w dopełniaczu: 'двадцять п'ятого грудня' = dwudziestego piątego grudnia."
+      },
+      {
+        "id": "pu_gen8",
+        "question": "Я навчився багато _____ слів.",
+        "translation": "(Nauczyłem się wielu nowych słów)",
+        "options": [
+          "нових",
+          "нові",
+          "новими",
+          "новим"
+        ],
+        "correct": "нових",
+        "explanation": "Po 'багато' (dużo/wielu) stoi dopełniacz mnogi: 'багато нових слів'. W polskim: 'wielu nowych słów' — identycznie! 'Нових' — dopełniacz mnogi od 'новий' (nowy). 'Слів' — dopełniacz mnogi od 'слово' (słowo). Polskie: 'nowych słów'. Porównaj końcówki: нов-их/now-ych, слів/słów — niemal identyczne! Inne kwantyfikatory + dopełniacz: 'мало' (mało), 'кілька' (kilka), 'декілька' (kilka), 'скільки' (ile), 'стільки' (tyle). Polskie odpowiedniki rządzą tak samo."
+      },
+      {
+        "id": "pu_gen9",
+        "question": "Від _____ до п'ятниці я працюю.",
+        "translation": "(Od poniedziałku do piątku pracuję)",
+        "options": [
+          "понеділка",
+          "понеділок",
+          "понеділку",
+          "понеділком"
+        ],
+        "correct": "понеділка",
+        "explanation": "Przyimki 'від...до' (od...do) + dopełniacz: 'від понеділка до п'ятниці'. W polskim: 'od poniedziałku do piątku' — ta sama struktura. 'Понеділок' (poniedziałek) → 'понеділка' (dopełniacz). Porównaj: 'poniedziałek' → 'poniedziałku'. Dni tygodnia w dopełniaczu: понеділка, вівторка, середи, четверга, п'ятниці, суботи, неділі. Polskie: poniedziałku, wtorku, środy, czwartku, piątku, soboty, niedzieli. Struktura 'від...до' jest uniwersalna dla wyrażania zakresu."
+      },
+      {
+        "id": "pu_gen10",
+        "question": "Для _____ це важливо.",
+        "translation": "(Dla mnie to ważne)",
+        "options": [
+          "мене",
+          "мені",
+          "мною",
+          "я"
+        ],
+        "correct": "мене",
+        "explanation": "Przyimek 'для' (dla) + dopełniacz: 'для мене' (dla mnie). W polskim: 'dla mnie' — identycznie! Formy dopełniacza zaimków: мене (mnie), тебе (ciebie), його (jego), її (jej), нас (nas), вас (was), їх (ich). Polskie: mnie, ciebie, jego, jej, nas, was, ich. Niemal identyczne! 'Важливо' (ważne) — polskie 'ważne'. Cała konstrukcja 'для + dopełniacz zaimka + to + przymiotnik' jest identyczna w obu językach. Ten paralelizm czyni naukę bardzo intuicyjną."
+      },
+      {
+        "id": "pu_gen11",
+        "question": "Після _____ ми пішли додому.",
+        "translation": "(Po obiedzie poszliśmy do domu)",
+        "options": [
+          "обіду",
+          "обід",
+          "обіді",
+          "обідом"
+        ],
+        "correct": "обіду",
+        "explanation": "Przyimek 'після' (po) + dopełniacz: 'після обіду' (po obiedzie). UWAGA: w polskim 'po' + miejscownik ('po obiedzie'), ale w ukraińskim 'після' + dopełniacz! To ważna różnica. 'Обід' (obiad) → 'обіду' (dopełniacz). Polskie: 'obiad' → 'obiadu' (dopełniacz) / 'obiedzie' (miejscownik). Więcej przykładów: 'після роботи' (po pracy), 'після школи' (po szkole), 'після уроку' (po lekcji). Zapamiętaj: ukraiński 'після' zawsze rządzi dopełniaczem, w odróżnieniu od polskiego 'po'."
+      },
+      {
+        "id": "pu_gen12",
+        "question": "Я чекаю свого _____.",
+        "translation": "(Czekam na swojego przyjaciela)",
+        "options": [
+          "друга",
+          "друг",
+          "другу",
+          "другом"
+        ],
+        "correct": "друга",
+        "explanation": "Czasownik 'чекати' (czekać) + dopełniacz (dla żywotnych): 'чекаю друга'. W polskim: 'czekam na przyjaciela' — z przyimkiem 'na' + biernik! Tu widać różnicę: ukraiński 'чекати' jest bezprzyimkowy z dopełniaczem, polski 'czekać' wymaga 'na' + biernik. 'Друг' → 'друга' — dopełniacz męski żywotny = biernik. 'Свого' (swojego) — dopełniacz od 'свій'. Polskie: 'swojego'. To jedna z pułapek — rekcja czasownika różni się mimo bliskości języków."
+      },
+      {
+        "id": "pu_gen13",
+        "question": "Вона старша від _____.",
+        "translation": "(Ona jest starsza od niego)",
+        "options": [
+          "нього",
+          "він",
+          "йому",
+          "ним"
+        ],
+        "correct": "нього",
+        "explanation": "Porównanie z 'від' (od) + dopełniacz: 'старша від нього'. W polskim: 'starsza od niego' — identycznie! 'Від' = 'od'. UWAGA: po przyimku zaimek 'його' przyjmuje formę 'нього' (z początkowym 'н-'). To specjalna reguła: після przyimków 'він/його/йому' → 'нього/ньому', 'вона/її/їй' → 'неї/ній'. W polskim: 'jego' → 'niego', 'jej' → 'niej' — identyczna reguła z dodaniem 'n-'! Ten paralelizm jest wspaniały."
+      },
+      {
+        "id": "pu_gen14",
+        "question": "Серед _____ є багато студентів.",
+        "translation": "(Wśród nich jest wielu studentów)",
+        "options": [
+          "них",
+          "вони",
+          "їм",
+          "ними"
+        ],
+        "correct": "них",
+        "explanation": "Przyimek 'серед' (wśród) + dopełniacz: 'серед них'. UWAGA: 'їх' (ich) po przyimku → 'них'. W polskim: 'wśród nich' — identyczna transformacja 'ich' → 'nich'! 'Студентів' — dopełniacz mnogi od 'студент'. Polskie: 'studentów'. Końcówka '-ів' odpowiada polskiemu '-ów'. Przyimek 'серед' (wśród/pośród) — polskie 'wśród/śród'. Reguly dodawania 'н-' do zaimków po przyimkach działają identycznie w polskim i ukraińskim — cenną wspólna cecha gramatyczna."
+      },
+      {
+        "id": "pu_gen15",
+        "question": "Замість _____ прийшла сестра.",
+        "translation": "(Zamiast brata przyszła siostra)",
+        "options": [
+          "брата",
+          "брат",
+          "брату",
+          "братом"
+        ],
+        "correct": "брата",
+        "explanation": "Przyimek 'замість' (zamiast) + dopełniacz: 'замість брата'. W polskim: 'zamiast brata' — identycznie! 'Замість' i 'zamiast' — to prawie to samo słowo. 'Сестра' → przyszła (czas przeszły żeński). Polskie: 'siostra przyszła'. Inne przyimki + dopełniacz: 'крім' (oprócz), 'щодо' (co do), 'внаслідок' (wskutek), 'замість' (zamiast), 'навколо' (wokół). Większość ma polskie odpowiedniki z tym samym przypadkiem. To systematyczna zbieżność obu języków."
+      }
+    ]
+  },
+  {
+    "key": "dative_case_usage",
+    "name": "Вживання давального відмінка",
+    "description": "Użycie celownika",
+    "iconName": "arrow.right",
+    "color": "#06b6d4",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pu_dat1",
+        "question": "Я дав книжку _____.",
+        "translation": "(Dałem książkę bratu)",
+        "options": [
+          "братові",
+          "брата",
+          "братом",
+          "браті"
+        ],
+        "correct": "братові",
+        "explanation": "Celownik jako odbiorca czynności: 'дав братові' (dał bratu). W polskim: 'dałem bratu' — celownik! 'Брат' → 'братові' lub 'брату' — obie formy poprawne. Końcówka '-ові' jest typowo ukraińska dla męskich, '-у' jest bliższa polskiemu '-u'. Porównaj: братові/bratu. Celownik odpowiada na pytania 'кому?' (komu?) i 'чому?' (czemu?) — identycznie jak polski. Czasowniki z celownikiem: 'давати' (dawać), 'казати' (mówić), 'писати' (pisać), 'дарувати' (darować)."
+      },
+      {
+        "id": "pu_dat2",
+        "question": "_____ холодно.",
+        "translation": "(Dzieciom jest zimno)",
+        "options": [
+          "Дітям",
+          "Діти",
+          "Дітей",
+          "Дітьми"
+        ],
+        "correct": "Дітям",
+        "explanation": "Celownik w konstrukcjach bezosoowych: 'дітям холодно' (dzieciom zimno). W polskim: 'dzieciom jest zimno' — celownik! Konstrukcja: celownik + przysłówek stanu. Więcej: 'мені сумно' (jest mi smutno), 'тобі тепло' (tobie ciepło), 'нам весело' (nam wesoło). Polskie: 'mi smutno', 'ci ciepło', 'nam wesoło'. 'Діти' → 'дітям' (celownik mnogi). Polskie: 'dzieci' → 'dzieciom'. Porównaj końcówki: -ям / -om. Konstrukcje bezosobowe z celownikiem to wspólna cecha obu języków."
+      },
+      {
+        "id": "pu_dat3",
+        "question": "Він допомагає _____.",
+        "translation": "(On pomaga mamie)",
+        "options": [
+          "мамі",
+          "маму",
+          "мама",
+          "мамою"
+        ],
+        "correct": "мамі",
+        "explanation": "Czasownik 'допомагати' (pomagać) + celownik: 'допомагає мамі'. W polskim: 'pomaga mamie' — celownik! 'Мама' → 'мамі' (celownik). Polskie: 'mama' → 'mamie'. Porównaj: мамі/mamie — niemal identycznie! Czasowniki z celownikiem w obu językach: допомагати/pomagać, вірити/wierzyć, дякувати/dziękować, заважати/przeszkadzać, радити/radzić. Ta lista jest zdumiewająco zbieżna. Jeśli czasownik rządzi celownikiem w polskim, prawdopodobnie tak samo w ukraińskim."
+      },
+      {
+        "id": "pu_dat4",
+        "question": "_____ потрібна допомога.",
+        "translation": "(Jej potrzebna jest pomoc)",
+        "options": [
+          "Їй",
+          "Вона",
+          "Її",
+          "Нею"
+        ],
+        "correct": "Їй",
+        "explanation": "Celownik zaimka + 'потрібний' (potrzebny): 'їй потрібна допомога'. W polskim: 'jej potrzebna jest pomoc' — celownik! Formy celownika zaimków: мені (mi/mnie), тобі (tobie/ci), йому (jemu/mu), їй (jej), нам (nam), вам (wam), їм (im). Polskie: mi, ci, mu, jej, nam, wam, im. Prawie identyczne! 'Потрібна' zgadza się w rodzaju z 'допомога' (pomoc — rodzaj żeński). Polskie 'potrzebna' — identycznie! Konstrukcja 'celownik + potrzebny + podmiot' jest wspólna."
+      },
+      {
+        "id": "pu_dat5",
+        "question": "Я телефоную _____.",
+        "translation": "(Dzwonię do przyjaciela)",
+        "options": [
+          "другові",
+          "друга",
+          "другом",
+          "друже"
+        ],
+        "correct": "другові",
+        "explanation": "Czasownik 'телефонувати' (dzwonić/telefonować) + celownik: 'телефоную другові'. UWAGA: w polskim 'dzwonić DO kogoś' — z przyimkiem + dopełniacz! W ukraińskim — bezprzyimkowy celownik. To ważna różnica rekcji. 'Друг' → 'другові' (celownik). Podobnie: 'дзвонити комусь' (dawniej), 'телефонувати комусь'. Polskie 'telefonować do kogoś'. Zapamiętaj tę pułapkę — w ukraińskim wiele czasowników komunikacji rządzi celownikiem bez przyimka."
+      },
+      {
+        "id": "pu_dat6",
+        "question": "Скільки _____ років?",
+        "translation": "(Ile masz lat?)",
+        "options": [
+          "тобі",
+          "тебе",
+          "ти",
+          "тобою"
+        ],
+        "correct": "тобі",
+        "explanation": "Celownik w wyrażaniu wieku: 'скільки тобі років?' (ile ci lat?). W polskim: 'ile masz lat?' — inaczej! Polski używa 'mieć + biernik', ukraiński: 'celownik + бути + rok'. 'Мені двадцять років' (mam dwadzieścia lat) dosłownie: 'mi dwadzieścia lat'. To kluczowa różnica strukturalna. 'Тобі' — celownik od 'ти'. Polskie 'tobie/ci'. 'Років' — dopełniacz mnogi od 'рік' (rok). Po 5+ w ukraińskim stoi dopełniacz mnogi, jak w polskim po 'lat'."
+      },
+      {
+        "id": "pu_dat7",
+        "question": "Дякую _____!",
+        "translation": "(Dziękuję ci!)",
+        "options": [
+          "тобі",
+          "тебе",
+          "ти",
+          "тобою"
+        ],
+        "correct": "тобі",
+        "explanation": "Czasownik 'дякувати' (dziękować) + celownik: 'дякую тобі'. W polskim: 'dziękuję ci' — celownik! Identyczna rekcja. 'Дякувати' i 'dziękować' — wspólny rdzeń (дяк-/dzięk-). Porównaj formy: дякую тобі/dziękuję ci, дякую вам/dziękuję wam, дякую їй/dziękuję jej. Wszystko identyczne! 'Дякую' jest jednym z najważniejszych zwrotów — używaj go często. Bardziej formalna wersja: 'дякую вам' lub 'щиро дякую' (serdecznie dziękuję)."
+      },
+      {
+        "id": "pu_dat8",
+        "question": "Вчитель пояснює _____ граматику.",
+        "translation": "(Nauczyciel tłumaczy uczniom gramatykę)",
+        "options": [
+          "учням",
+          "учнів",
+          "учні",
+          "учнями"
+        ],
+        "correct": "учням",
+        "explanation": "Celownik mnogi jako odbiorca informacji: 'пояснює учням' (tłumaczy uczniom). W polskim: 'tłumaczy uczniom' — celownik! 'Учень' (uczeń) → 'учням' (celownik mnogi). Polskie: 'uczeń' → 'uczniom'. Końcówki: -ям / -om — regularna korespondencja. 'Пояснювати' (wyjaśniać/tłumaczyć) — od 'ясний' (jasny), dosłownie: 'czynić jasnym'. 'Граматику' — biernik od 'граматика'. Konstrukcja: czasownik + celownik (komu) + biernik (co) — identyczna w obu językach."
+      },
+      {
+        "id": "pu_dat9",
+        "question": "Я раджу _____ відпочити.",
+        "translation": "(Radzę ci odpocząć)",
+        "options": [
+          "тобі",
+          "тебе",
+          "ти",
+          "тобою"
+        ],
+        "correct": "тобі",
+        "explanation": "Czasownik 'радити' (radzić) + celownik: 'раджу тобі'. W polskim: 'radzę ci' — celownik! Identyczna rekcja i brzmienie rdzenin: рад-/radz-. 'Відпочити' (odpocząć) — bezokolicznik po czasowniku radzenia. Polskie: 'radzę ci odpocząć'. Ta sama struktura: 'radzić komuś + bezokolicznik'. Więcej czasowników tej grupy: 'пропонувати' (proponować), 'дозволяти' (pozwalać), 'забороняти' (zabraniać) — wszystkie + celownik w obu językach."
+      },
+      {
+        "id": "pu_dat10",
+        "question": "_____ подобається ця пісня.",
+        "translation": "(Jemu podoba się ta piosenka)",
+        "options": [
+          "Йому",
+          "Його",
+          "Він",
+          "Ним"
+        ],
+        "correct": "Йому",
+        "explanation": "Celownik z 'подобатися' (podobać się): 'йому подобається'. W polskim: 'jemu podoba się' — celownik! 'Подобатися' i 'podobać się' — praktycznie to samo słowo! 'Йому' (jemu/mu) — celownik od 'він'. Polskie: 'jemu'. Konstrukcja: celownik + подобається + mianownik (podmiot = to co się podoba). Identycznie w polskim: 'Jemu podoba się piosenka'. 'Пісня' (piosenka, pieśń) — mianownik, bo to podmiot. Ta struktura jest jedną z najczęstszych i najłatwiejszych do opanowania."
+      },
+      {
+        "id": "pu_dat11",
+        "question": "Лікар призначив _____ ліки.",
+        "translation": "(Lekarz przepisał mi lekarstwa)",
+        "options": [
+          "мені",
+          "мене",
+          "я",
+          "мною"
+        ],
+        "correct": "мені",
+        "explanation": "Celownik jako odbiorca: 'призначив мені ліки'. W polskim: 'przepisał mi lekarstwa'. 'Мені' (mi/mnie) — celownik od 'я'. 'Призначити' (przepisać, wyznaczyć) — od 'знак' (znak). 'Ліки' (lekarstwa/leki) — porównaj z polskim 'leki'. Słowo 'ліки' istnieje tylko w liczbie mnogiej — jak polskie 'lekarstwa'. Konstrukcja: czasownik dawania/przekazywania + celownik + biernik. Polski i ukraiński mają tę samą strukturę dwóch dopełnień."
+      },
+      {
+        "id": "pu_dat12",
+        "question": "_____ треба вчитися.",
+        "translation": "(Tobie trzeba się uczyć)",
+        "options": [
+          "Тобі",
+          "Тебе",
+          "Ти",
+          "Тобою"
+        ],
+        "correct": "Тобі",
+        "explanation": "Celownik + 'треба' (trzeba): 'тобі треба вчитися'. W polskim: 'tobie trzeba się uczyć' — celownik! 'Треба' (trzeba) — polskie 'trzeba'. Identyczne! To jedno z najpotrzebniejszych słów do wyrażania konieczności. Porównaj: 'мені треба' (muszę/trzeba mi), 'їй треба' (jej trzeba), 'нам треба' (nam trzeba). 'Вчитися' (uczyć się) — polskie 'uczyć się'. Konstrukcja 'celownik + треба + bezokolicznik' jest doskonałym odpowiednikiem polskiego 'trzeba + celownik'."
+      },
+      {
+        "id": "pu_dat13",
+        "question": "Я вірю _____.",
+        "translation": "(Wierzę ci)",
+        "options": [
+          "тобі",
+          "тебе",
+          "ти",
+          "тобою"
+        ],
+        "correct": "тобі",
+        "explanation": "Czasownik 'вірити' (wierzyć) + celownik: 'вірю тобі'. W polskim: 'wierzę ci' — celownik! Identyczna rekcja. 'Вірити/wierzyć' — ten sam rdzeń słowiański. UWAGA na niuans: 'вірити комусь' (wierzyć komuś — ufać), 'вірити в щось' (wierzyć w coś). Polskie: 'wierzyć komuś', 'wierzyć w coś'. Identyczne rozróżnienie! Celownik wyraża tu zaufanie do osoby, 'в' + biernik — wiarę w ideę. To subtelna, ale ważna różnica semantyczna wspólna obu językom."
+      },
+      {
+        "id": "pu_dat14",
+        "question": "Він заважає _____ працювати.",
+        "translation": "(On przeszkadza mi pracować)",
+        "options": [
+          "мені",
+          "мене",
+          "я",
+          "мною"
+        ],
+        "correct": "мені",
+        "explanation": "Czasownik 'заважати' (przeszkadzać) + celownik: 'заважає мені'. W polskim: 'przeszkadza mi' — celownik! 'Заважати' — od 'вага' (waga), dosłownie: 'obciążać'. Polskie 'przeszkadzać' ma inny rdzeń, ale identyczną rekcję. 'Мені' (mi/mnie). 'Працювати' (pracować) — bezokolicznik opisujący co jest utrudniane. Konstrukcja: 'ktoś zaважає komuś robić coś' = 'ktoś przeszkadza komuś robić coś'. Pełna kopia strukturalna!"
+      },
+      {
+        "id": "pu_dat15",
+        "question": "Ми подарували квіти _____.",
+        "translation": "(Podarowaliśmy kwiaty nauczycielce)",
+        "options": [
+          "вчительці",
+          "вчителька",
+          "вчительку",
+          "вчителькою"
+        ],
+        "correct": "вчительці",
+        "explanation": "Celownik jako odbiorca prezentu: 'подарували вчительці'. W polskim: 'podarowaliśmy nauczycielce' — celownik! 'Вчителька' → 'вчительці' (celownik). Polskie: 'nauczycielka' → 'nauczycielce'. Porównaj końcówki: -ці / -ce — identyczne! 'Подарувати' (podarować) — polskie 'podarować'. 'Квіти' (kwiaty) — polskie 'kwiaty'. Cała struktura: 'podaorwaliśmy + biernik + celownik' działa identycznie. Ten przykład doskonale ilustruje bliskość obu języków w użyciu celownika."
+      }
+    ]
+  },
+  {
+    "key": "accusative_case_usage",
+    "name": "Вживання знахідного відмінка",
+    "description": "Użycie biernika",
+    "iconName": "target",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pu_acc1",
+        "question": "Я бачу _____.",
+        "translation": "(Widzę dom)",
+        "options": [
+          "дім",
+          "дому",
+          "домом",
+          "домі"
+        ],
+        "correct": "дім",
+        "explanation": "Biernik nieżywotny męski = mianownik: 'бачу дім' (widzę dom). W polskim: 'widzę dom' — identycznie! Kluczowa reguła: biernik nieżywotnych = mianownik (для męskich). Żywotne: biernik = dopełniacz. 'Бачити' (widzieć/baczyć) — polskie 'baczyć' (archaiczne). 'Дім' (dom) — polskie 'dom'. Porównaj: 'бачу дім' (widzę dom — nieżywotny = mianownik), ale 'бачу брата' (widzę brata — żywotny = dopełniacz). W polskim identycznie: 'widzę dom', ale 'widzę brata'."
+      },
+      {
+        "id": "pu_acc2",
+        "question": "Вона читає _____.",
+        "translation": "(Ona czyta książkę)",
+        "options": [
+          "книжку",
+          "книжка",
+          "книжки",
+          "книжці"
+        ],
+        "correct": "книжку",
+        "explanation": "Biernik żeński na '-у': 'читає книжку'. 'Книжка' → 'книжку'. W polskim: 'czyta książkę' — 'książka' → 'książkę'. Reguła: żeński na '-а' → biernik '-у'. Polskie: '-a' → '-ę'. Więcej przykładów: 'газету' (gazetę), 'каву' (kawę), 'роботу' (robotę/pracę). Porównaj: газет-у/gazet-ę, кав-у/kaw-ę. Końcówki '-у'/'-ę' pełnią tę samą funkcję biernikową. 'Читати' (czytać) — polskie 'czytać'. Biernik to przypadek bezpośredniego dopełnienia."
+      },
+      {
+        "id": "pu_acc3",
+        "question": "Ми любимо _____.",
+        "translation": "(Kochamy muzykę)",
+        "options": [
+          "музику",
+          "музика",
+          "музики",
+          "музиці"
+        ],
+        "correct": "музику",
+        "explanation": "Biernik żeński: 'любимо музику'. 'Музика' → 'музику'. W polskim: 'kochamy muzykę'. Porównaj: музик-у / muzyk-ę. 'Любити' (kochać/lubić) — polskie 'lubić'. UWAGA: ukraiński 'любити' = zarówno 'kochać', jak i 'lubić'. Polskie 'lubić' i 'kochać' to dwa osobne słowa. Ukraiński ma też 'кохати' (kochać romantycznie) vs 'любити' (kochać/lubić ogólnie). Biernik jest tu konieczny, bo 'muzyka' jest bezpośrednim obiektem emocji."
+      },
+      {
+        "id": "pu_acc4",
+        "question": "Він запросив _____ на вечерю.",
+        "translation": "(On zaprosił ją na kolację)",
+        "options": [
+          "її",
+          "вона",
+          "їй",
+          "нею"
+        ],
+        "correct": "її",
+        "explanation": "Biernik zaimka żeńskiego: 'запросив її' (zaprosił ją). W polskim: 'zaprosił ją'. 'Її' w bierniku = forma dopełniacza (jak przy żywotnych męskich). Formy biernikowe zaimków osobowych: мене (mnie), тебе (ciebie), його (jego/go), її (ją), нас (nas), вас (was), їх (ich). Polskie: mnie, ciebie, go/jego, ją, nas, was, ich. 'Запросити' (zaprosić) — polskie 'zaprosić'. 'Вечеря' (kolacja/wieczerza) — polskie 'wieczerza'. 'На вечерю' — biernik po 'на' (kierunek)."
+      },
+      {
+        "id": "pu_acc5",
+        "question": "Я їду в _____.",
+        "translation": "(Jadę do Kijowa)",
+        "options": [
+          "Київ",
+          "Києва",
+          "Києві",
+          "Києвом"
+        ],
+        "correct": "Київ",
+        "explanation": "Przyimek 'в/у' (do/w) + biernik = kierunek: 'їду в Київ'. W polskim: 'jadę do Kijowa' — z przyimkiem 'do' + dopełniacz! WAŻNA RÓŻNICA: ukraiński 'в' + biernik (kierunek) vs polski 'do' + dopełniacz. 'Київ' — biernik = mianownik (nieżywotny). 'Їхати' (jechać) — polskie 'jechać'. Porównaj pary: 'їду в Київ/jadę do Kijowa', 'йду в школу/idę do szkoły'. Ukraiński rozróżnia: 'в Київ' (kierunek — biernik) vs 'в Києві' (miejsce — miejscownik)."
+      },
+      {
+        "id": "pu_acc6",
+        "question": "Діти дивляться _____.",
+        "translation": "(Dzieci oglądają film)",
+        "options": [
+          "фільм",
+          "фільму",
+          "фільмом",
+          "фільмі"
+        ],
+        "correct": "фільм",
+        "explanation": "Biernik nieżywotny: 'дивляться фільм'. 'Фільм' — biernik = mianownik. W polskim: 'oglądają film'. 'Дивитися' (oglądać/patrzeć) — polskie 'dziwić się' ma inny rdzeń, ale ukraiński sens to 'oglądać'. 'Фільм' (film) — identyczne w obu językach. Biernik nieżywotnych jest prosty — forma nie zmienia się wobec mianownika. To ogromne uproszczenie! Tylko żywotne męskie wymagają formy dopełniacza w bierniku. Polskie reguły są identyczne."
+      },
+      {
+        "id": "pu_acc7",
+        "question": "Вона купує _____ сукню.",
+        "translation": "(Ona kupuje nową sukienkę)",
+        "options": [
+          "нову",
+          "нова",
+          "нової",
+          "новій"
+        ],
+        "correct": "нову",
+        "explanation": "Biernik przymiotnika żeńskiego: 'нову сукню'. 'Нова' → 'нову'. W polskim: 'nową sukienkę'. Końcówki: нов-у / now-ą. 'Сукня' (sukienka) → 'сукню' (biernik). Przymiotnik zgadza się z rzeczownikiem w przypadku: новий стіл (mianownik), нову сукню (biernik), нового друга (biernik żywotny). Polskie: nowy stół, nową sukienkę, nowego przyjaciela. System zgodności przymiotnika z rzeczownikiem jest identyczny w obu językach — przypadek, rodzaj, liczba."
+      },
+      {
+        "id": "pu_acc8",
+        "question": "Ми чекаємо на _____.",
+        "translation": "(Czekamy na autobus)",
+        "options": [
+          "автобус",
+          "автобуса",
+          "автобусом",
+          "автобусі"
+        ],
+        "correct": "автобус",
+        "explanation": "Przyimek 'на' + biernik = oczekiwanie: 'чекаємо на автобус'. W polskim: 'czekamy na autobus' — identycznie! 'На' + biernik wyraża cel oczekiwania. 'Автобус' — biernik = mianownik (nieżywotny). UWAGA: 'чекати на + biernik' (czekać na coś nieżywotne) vs 'чекати + dopełniacz' (czekać kogoś — żywotne). W polskim: 'czekać na + biernik' dla wszystkich. Ta subtelność jest specyficznie ukraińska. 'Автобус' — identyczne w obu językach."
+      },
+      {
+        "id": "pu_acc9",
+        "question": "Він поклав ключі на _____.",
+        "translation": "(On położył klucze na stół)",
+        "options": [
+          "стіл",
+          "столі",
+          "стола",
+          "столом"
+        ],
+        "correct": "стіл",
+        "explanation": "Przyimek 'на' + biernik = kierunek (na powierzchnię): 'поклав на стіл'. W polskim: 'położył na stół' — biernik! 'На' z biernikiem = kierunek ('kładę NA stół'), 'на' z miejscownikiem = miejsce ('leży NA stole'). W polskim identycznie: 'na stół' (biernik, kierunek) vs 'na stole' (miejscownik, miejsce). 'Поклав' (położył) od 'покласти'. 'Ключі' (klucze) — polskie 'klucze'. Ta opozycja kierunek/miejsce jest fundamentalna w obu językach."
+      },
+      {
+        "id": "pu_acc10",
+        "question": "Я знаю цю _____.",
+        "translation": "(Znam tę kobietę)",
+        "options": [
+          "жінку",
+          "жінка",
+          "жінки",
+          "жінці"
+        ],
+        "correct": "жінку",
+        "explanation": "Biernik żeński żywotny: 'знаю жінку'. 'Жінка' → 'жінку'. W polskim: 'znam kobietę' — 'kobieta' → 'kobietę'. UWAGA: w ukraińskim biernik żeński żywotny = taki sam jak nieżywotny — zawsze na '-у'! W polskim analogicznie: '-ę' dla wszystkich żeńskich na '-a'. 'Знати' (znać) — polskie 'znać'. 'Цю' (tę) — biernik od 'ця'. Porównaj: цю/tę. Reguła żywotności w bierniku dotyczy TYLKO rodzaju męskiego — żeński nie rozróżnia. Identycznie w polskim!"
+      },
+      {
+        "id": "pu_acc11",
+        "question": "Вона вивчає українську _____.",
+        "translation": "(Ona uczy się ukraińskiej gramatyki)",
+        "options": [
+          "граматику",
+          "граматика",
+          "граматики",
+          "граматиці"
+        ],
+        "correct": "граматику",
+        "explanation": "Biernik po 'вивчати' (uczyć się): 'вивчає граматику'. W polskim: 'uczy się gramatyki' — UWAGA: dopełniacz! Tu różnica: ukraiński 'вивчати' + biernik, polski 'uczyć się' + dopełniacz. Ale: 'вчити' (uczyć kogoś) + biernik w obu! 'Граматика' → 'граматику'. 'Українську' (ukraińską) — biernik przymiotnika. Polskie: 'ukraińską'. Porównaj: українськ-у/ukraińsk-ą. To przykład, gdzie rekcja różni się — ważna pułapka dla polskich uczniów."
+      },
+      {
+        "id": "pu_acc12",
+        "question": "Він перетнув _____ вулицю.",
+        "translation": "(On przeszedł szeroką ulicę)",
+        "options": [
+          "широку",
+          "широка",
+          "широкої",
+          "широкій"
+        ],
+        "correct": "широку",
+        "explanation": "Biernik przymiotnik + rzeczownik żeński: 'широку вулицю'. 'Широка' → 'широку', 'вулиця' → 'вулицю'. W polskim: 'szeroką ulicę'. Porównaj: широк-у/szerok-ą, вулиц-ю/ulic-ę. 'Перетнути' (przejść, przekroczyć) — 'пере-' = pol. 'prze-'. 'Вулиця' (ulica) — polskie 'ulica'. Biernik żeński jest jednym z najczęstszych przypadków — każdy opis czynności wymaga biernika dla bezpośredniego dopełnienia. Końcówki '-у'/'-ю' i '-ą'/'-ę' są automatyczne."
+      },
+      {
+        "id": "pu_acc13",
+        "question": "Я зустрів свого _____.",
+        "translation": "(Spotkałem swojego sąsiada)",
+        "options": [
+          "сусіда",
+          "сусід",
+          "сусіду",
+          "сусідом"
+        ],
+        "correct": "сусіда",
+        "explanation": "Biernik męski żywotny = dopełniacz: 'зустрів сусіда'. 'Сусід' (sąsiad) → 'сусіда' (biernik = dopełniacz). W polskim: 'spotkałem sąsiada' — identycznie! 'Свого' (swojego) — biernik = dopełniacz przymiotnika dzierżawczego. Polskie: 'swojego'. Reguła: biernik żywotnych męskich = dopełniacz — w obu językach! Nieżywotne: biernik = mianownik. Ta reguła jest fundamentalna i działa identycznie: 'вижу брата/widzę brata', 'бачу дім/widzę dom'."
+      },
+      {
+        "id": "pu_acc14",
+        "question": "Покладіть речі у _____.",
+        "translation": "(Połóżcie rzeczy do szafy)",
+        "options": [
+          "шафу",
+          "шафа",
+          "шафі",
+          "шафою"
+        ],
+        "correct": "шафу",
+        "explanation": "Przyimek 'у/в' + biernik = kierunek (do wnętrza): 'у шафу'. W polskim: 'do szafy' — z 'do' + dopełniacz. RÓŻNICA: ukraiński 'у/в' + biernik, polski 'do' + dopełniacz. 'Шафа' (szafa) → 'шафу' (biernik). 'Речі' (rzeczy) — polskie 'rzeczy'. 'Покладіть' (połóżcie) — tryb rozkazujący grzecznościowy. Porównaj: 'у шафу' (do szafy — kierunek) vs 'у шафі' (w szafie — miejsce). Biernik = ruch, miejscownik = stan — w obu językach!"
+      },
+      {
+        "id": "pu_acc15",
+        "question": "Я люблю _____ погоду.",
+        "translation": "(Lubię ciepłą pogodę)",
+        "options": [
+          "теплу",
+          "тепла",
+          "теплої",
+          "теплій"
+        ],
+        "correct": "теплу",
+        "explanation": "Biernik przymiotnika żeńskiego: 'теплу погоду'. 'Тепла' → 'теплу', 'погода' → 'погоду'. W polskim: 'ciepłą pogodę'. Porównaj: тепл-у/ciepł-ą, погод-у/pogod-ę. 'Тепло' (ciepło) — polskie 'ciepło'. 'Погода' (pogoda) — identyczne! Reguła: przymiotnik + rzeczownik oba w bierniku. W polskim: '-ą' + '-ę'. W ukraińskim: '-у' + '-у'. Obie końcówki wyrażają biernik żeński. Ta regularność czyni ukraińskie formy biernikowe przewidywalnymi dla Polaków."
+      }
+    ]
+  },
+  {
+    "key": "locative_case_usage",
+    "name": "Вживання місцевого відмінка",
+    "description": "Użycie miejscownika",
+    "iconName": "mappin.and.ellipse",
+    "color": "#14b8a6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pu_loc1",
+        "question": "Я живу в _____.",
+        "translation": "(Mieszkam w Kijowie)",
+        "options": [
+          "Києві",
+          "Київ",
+          "Києва",
+          "Києвом"
+        ],
+        "correct": "Києві",
+        "explanation": "Miejscownik po 'в/у' (w) = lokalizacja: 'в Києві'. W polskim: 'w Kijowie' — miejscownik! 'Київ' → 'Києві'. Polskie: 'Kijów' → 'Kijowie'. Porównaj: Києві/Kijowie — zbliżone formy. Miejscownik odpowiada na pytania 'де?' (gdzie?) i 'на чому/в чому?' (na czym/w czym?). W polskim: 'gdzie?' — identycznie. Reguła: 'в/у' + miejscownik = GDZIE (stan), 'в/у' + biernik = DOKĄD (ruch). Polskie: 'w' + miejscownik vs 'do' + dopełniacz."
+      },
+      {
+        "id": "pu_loc2",
+        "question": "Книжка лежить на _____.",
+        "translation": "(Książka leży na stole)",
+        "options": [
+          "столі",
+          "стіл",
+          "стола",
+          "столом"
+        ],
+        "correct": "столі",
+        "explanation": "Miejscownik po 'на' = powierzchnia: 'на столі' (na stole). 'Стіл' → 'столі' — zmiana 'і' → 'о' + miejscownikowe '-і'. W polskim: 'na stole' — 'stół' → 'stole'. Porównaj: стол-і/stol-e — zbliżone formy. 'Лежати' (leżeć) — polskie 'leżeć'. Całe zdanie jest lustrem polskiego. Reguła: 'на + miejscownik' = lokalizacja na powierzchni. 'На столі' (na stole), 'на підлозі' (na podłodze), 'на стіні' (na ścianie). Identycznie w polskim: na + miejscownik."
+      },
+      {
+        "id": "pu_loc3",
+        "question": "Ми говоримо про _____.",
+        "translation": "(Rozmawiamy o pogodzie)",
+        "options": [
+          "погоду",
+          "погода",
+          "погоди",
+          "погодою"
+        ],
+        "correct": "погоду",
+        "explanation": "UWAGA: po 'про' (o) stoi BIERNIK, nie miejscownik! 'Про погоду'. W polskim: 'o pogodzie' — miejscownik! To kluczowa różnica: ukraiński 'про' + biernik, polski 'o' + miejscownik. 'Погода' → 'погоду' (biernik). 'Говорити' (mówić/rozmawiać) — polskie 'gaworzyć'. Zapamiętaj: 'розмовляти/говорити про + biernik' vs 'rozmawiać o + miejscownik'. Ukraiński przyimek 'про' z biernikiem jest jedną z najczęstszych pułapek dla polskich uczniów."
+      },
+      {
+        "id": "pu_loc4",
+        "question": "Діти грають у _____.",
+        "translation": "(Dzieci bawią się w parku)",
+        "options": [
+          "парку",
+          "парк",
+          "парка",
+          "парком"
+        ],
+        "correct": "парку",
+        "explanation": "Miejscownik po 'у/в': 'у парку' (w parku). W polskim: 'w parku' — identycznie! 'Парк' → 'парку' (miejscownik z końcówką '-у'). UWAGA: w miejscowniku męskie mają dwie końcówki: '-і' (більшість) i '-у' (некоторі). 'У парку', 'у банку', ale 'на столі', 'в домі'. Reguła: '-у' częściej dla zapożyczeń i abstrakcyjnych, '-і' dla rodzimych. W polskim: 'w parku' (-u), 'na stole' (-e). Podział jest podobny, choć nie identyczny."
+      },
+      {
+        "id": "pu_loc5",
+        "question": "Вона працює в _____.",
+        "translation": "(Ona pracuje w szpitalu)",
+        "options": [
+          "лікарні",
+          "лікарня",
+          "лікарню",
+          "лікарнею"
+        ],
+        "correct": "лікарні",
+        "explanation": "Miejscownik żeński: 'в лікарні' (w szpitalu). 'Лікарня' → 'лікарні'. W polskim: 'w szpitalu'. 'Лікарня' (szpital) — od 'лікар' (lekarz). Polskie: 'lecznica' — inny rdzeń, ale ta sama logika: od 'leczyć'. Końcówka '-і' w miejscowniku żeńskim na '-я'. Więcej: 'у школі' (w szkole) — 'школа' → 'школі'. Polskie: 'w szkole'. Porównaj: школ-і/szkol-e — bliskie końcówki. Miejscownik żeński jest bardzo regularny: '-а' → '-і', '-я' → '-і'."
+      },
+      {
+        "id": "pu_loc6",
+        "question": "Ключі в моїй _____.",
+        "translation": "(Klucze w mojej torbie)",
+        "options": [
+          "сумці",
+          "сумка",
+          "сумку",
+          "сумкою"
+        ],
+        "correct": "сумці",
+        "explanation": "Miejscownik po 'в': 'в сумці'. 'Сумка' → 'сумці' — alternacja к → ц przed '-і'. W polskim: 'w torebce' (torba → torebce). Palatalizacja: к → ц w ukraińskim (jak polskie k → c w 'ręka → ręce'). Więcej: 'у книжці' (w książce) — 'книжка' → 'книжці'. Polskie: 'w książce' — 'książka' → 'książce'. Identyczna alternacja! Reguła: г → з, к → ц, х → с przed '-і' w miejscowniku żeńskim. Polskie: g → dz, k → c, ch → sz. Systemy są równoległe."
+      },
+      {
+        "id": "pu_loc7",
+        "question": "Він думає про своє _____.",
+        "translation": "(On myśli o swoim życiu)",
+        "options": [
+          "життя",
+          "життю",
+          "життям",
+          "житті"
+        ],
+        "correct": "життя",
+        "explanation": "UWAGA: 'про' + BIERNIK: 'думає про життя'. Tu biernik nijakiego na '-я' = mianownik! W polskim: 'myśli o życiu' — 'o' + miejscownik. Znów ta sama różnica: ukraiński 'про + biernik', polski 'o + miejscownik'. 'Думати' (myśleć/dumać) — polskie 'dumać'. 'Життя' (życie) — polskie 'życie'. Choć po polsku użylibyśmy miejscownika, w ukraińskim 'про' zawsze żąda biernika. To jedna z najważniejszych różnic gramatycznych do zapamiętania."
+      },
+      {
+        "id": "pu_loc8",
+        "question": "Кіт сидить на _____.",
+        "translation": "(Kot siedzi na krześle)",
+        "options": [
+          "стільці",
+          "стілець",
+          "стільця",
+          "стільцем"
+        ],
+        "correct": "стільці",
+        "explanation": "Miejscownik po 'на': 'на стільці' (na krześle). 'Стілець' → 'стільці'. W polskim: 'na krześle'. 'Сидіти' (siedzieć) — polskie 'siedzieć'. 'Стілець' (krzesło) — od 'стіл' (stół) z sufiksem zdrobnieniu. Porównaj: 'стіл → стілець' jak polskie 'stół → stołek'. Końcówka '-і' w miejscowniku z alternacją samogłoskową. 'Кіт' (kot) — polskie 'kot'. Miejscownik po 'на' opisuje pozycję — 'na czymś'. Taka sama funkcja w obu językach."
+      },
+      {
+        "id": "pu_loc9",
+        "question": "Ми були в цьому _____.",
+        "translation": "(Byliśmy w tym mieście)",
+        "options": [
+          "місті",
+          "місто",
+          "міста",
+          "містом"
+        ],
+        "correct": "місті",
+        "explanation": "Miejscownik nijakiego: 'в місті' (w mieście). 'Місто' → 'місті'. W polskim: 'w mieście' — 'miasto' → 'mieście'. Porównaj: міст-і/mieśc-ie — zbliżone. 'Цьому' (tym) — miejscownik od 'цей'. Polskie: 'tym'. 'Були' (byli/byliśmy). Nijakie na '-о' w miejscowniku: '-і'. Polskie na '-o': '-e' (z palatalizacją). Więcej: 'у селі' (we wsi/w siele), 'у вікні' (w oknie). Polskie: 'we wsi', 'w oknie'. Regularność miejscownika nijakiego jest duża."
+      },
+      {
+        "id": "pu_loc10",
+        "question": "Вона сидить у _____.",
+        "translation": "(Ona siedzi w samochodzie)",
+        "options": [
+          "машині",
+          "машина",
+          "машину",
+          "машиною"
+        ],
+        "correct": "машині",
+        "explanation": "Miejscownik żeński: 'у машині'. 'Машина' → 'машині'. W polskim raczej 'w samochodzie' (inny rdzeń), ale 'maszyna' → 'w maszynie' — identyczna odmiana! Końcówka '-і' dla żeńskich na '-а'. 'Сидіти' (siedzieć) + 'у/в' + miejscownik = lokalizacja wewnątrz. Porównaj ukraińskie i polskie formy miejscownikowe: машин-і/maszyn-ie — regularna korespondencja '-і'/'-ie'. 'У машині' vs 'в автомобілі' — obе poprawne, 'машина' bardziej potoczne."
+      },
+      {
+        "id": "pu_loc11",
+        "question": "Ми розмовляємо на _____.",
+        "translation": "(Rozmawiamy na lekcji)",
+        "options": [
+          "уроці",
+          "урок",
+          "уроку",
+          "уроком"
+        ],
+        "correct": "уроці",
+        "explanation": "Miejscownik po 'на': 'на уроці' (na lekcji). 'Урок' → 'уроці' — alternacja к → ц. W polskim: 'na lekcji'. 'Урок' (lekcja/nauka) — polskie 'u-rok' (los). Zaimiana к → ц przed '-і': урок/уроці, як бік/боці. 'Розмовляти' (rozmawiać) — polskie 'rozmawiać'. 'На уроці' — przyimek 'на' + miejscownik opisuje aktywność ('na lekcji', 'na концерті' — na koncercie). Ta sama logika w polskim: 'na' + miejscownik dla wydarzeń i aktywności."
+      },
+      {
+        "id": "pu_loc12",
+        "question": "Квіти ростуть у _____.",
+        "translation": "(Kwiaty rosną w ogrodzie)",
+        "options": [
+          "саду",
+          "сад",
+          "сада",
+          "садом"
+        ],
+        "correct": "саду",
+        "explanation": "Miejscownik z '-у': 'у саду' (w ogrodzie/w sadzie). 'Сад' → 'саду'. W polskim: 'w sadzie' — końcówka '-ie'. Tu różnica końcówek: ukraiński '-у', polski '-ie'. Reguła: niektóre męskie mają '-у' zamiast '-і' w miejscowniku, zwłaszcza z przyimkami lokalnymi. 'Ростуть' (rosną) — polskie 'rosną'. 'Квіти' (kwiaty) — polskie 'kwiaty'. 'Сад' (ogród/sad) — polskie 'sad'. Ogród po ukraińsku to częściej 'город', ale 'сад' = sad owocowy."
+      },
+      {
+        "id": "pu_loc13",
+        "question": "Інформація на _____.",
+        "translation": "(Informacja na stronie internetowej)",
+        "options": [
+          "сайті",
+          "сайт",
+          "сайту",
+          "сайтом"
+        ],
+        "correct": "сайті",
+        "explanation": "Miejscownik: 'на сайті' (na stronie/na sajcie). 'Сайт' (strona internetowa) → 'сайті'. W polskim: 'na stronie'. 'Сайт' to zapożyczenie z angielskiego 'site'. Miejscownik z '-і' dla zapożyczeń na spółgłoskę. 'Інформація' (informacja) — polskie 'informacja'. To współczesne słownictwo — technologia wymaga nowych form. 'На сайті', 'в інтернеті' (w internecie), 'у програмі' (w programie). Wszystkie używają standardowego miejscownika, co pokazuje produktywność tego przypadka."
+      },
+      {
+        "id": "pu_loc14",
+        "question": "Діти на свіжому _____.",
+        "translation": "(Dzieci na świeżym powietrzu)",
+        "options": [
+          "повітрі",
+          "повітря",
+          "повітрю",
+          "повітрям"
+        ],
+        "correct": "повітрі",
+        "explanation": "Miejscownik nijakiego na '-я': 'на повітрі'. 'Повітря' (powietrze) → 'повітрі'. W polskim: 'na powietrzu' — 'powietrze' → 'powietrzu'. 'Свіжому' (świeżym) — miejscownik przymiotnika. Polskie: 'świeżym'. Porównaj: свіжом-у/świeżym-u — zbliżone formy. 'На свіжому повітрі' (na świeżym powietrzu) — stały zwrot identyczny w obu językach. Nijakie na '-тря' tworzą miejscownik na '-трі': повітря/повітрі. To regularna odmiana deklinacji nijakich na '-я'."
+      },
+      {
+        "id": "pu_loc15",
+        "question": "Він завжди думає про _____ роботі.",
+        "translation": "(On zawsze myśli o swojej pracy)",
+        "options": [
+          "свою",
+          "своїй",
+          "своя",
+          "своєї"
+        ],
+        "correct": "свою",
+        "explanation": "ZNOWU pułapka: 'думає про + BIERNIK'! 'Про свою роботу' — ale tu w pytaniu celowo dano 'роботі' jako odwrócenie. Prawidłowa pełna fraza: 'думає про свою роботу'. 'Про' zawsze rządzi biernikiem, nie miejscownikiem! W polskim: 'o swojej pracy' — miejscownik. TO FUNDAMENTALNA RÓŻNICA. Zapamiętaj: ukraiński 'про' ≠ polski 'o' pod względem przypadka. 'Свою' — biernik żeński od 'своя'. Polskie: 'swoją'. Reguła jest prosta ale wymaga przyzwyczajenia."
+      }
+    ]
+  },
+  {
+    "key": "case_preposition_combos",
+    "name": "Прийменники з відмінками",
+    "description": "Przyimki z przypadkami",
+    "iconName": "link",
+    "color": "#8b5cf6",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pu_cpc1",
+        "question": "Я йду _____ школи.",
+        "translation": "(Idę do szkoły)",
+        "options": [
+          "до",
+          "в",
+          "на",
+          "з"
+        ],
+        "correct": "до",
+        "explanation": "Przyimek 'до' (do) + dopełniacz = kierunek: 'до школи'. W polskim: 'do szkoły' — identycznie! 'До' + dopełniacz to jeden z najczęstszych przyimków kierunku. 'Школи' — dopełniacz od 'школа'. Polskie: 'szkoły'. Porównaj: до школ-и / do szkoł-y. 'Йти' (iść) — polskie 'iść'. Inna opcja kierunku: 'в школу' (w szkołę — biernik) — bardziej potoczne. 'До' jest bardziej neutralne/formalne. W polskim: 'do szkoły' jest standardem. Obie formy ukraińskie są poprawne."
+      },
+      {
+        "id": "pu_cpc2",
+        "question": "Він іде _____ роботу.",
+        "translation": "(On idzie do pracy)",
+        "options": [
+          "на",
+          "в",
+          "до",
+          "з"
+        ],
+        "correct": "на",
+        "explanation": "Przyimek 'на' + biernik = kierunek: 'на роботу' (do pracy/na pracę). KLUCZOWA REGUŁA: z niektórymi słowami używamy 'на' zamiast 'в/до': робота (praca), пошта (poczta), вокзал (dworzec), завод (fabryka). W polskim: 'do pracy' lub 'na pracę'. Ukraiński ma ustalone pary: 'на роботу/на роботі' (kierunek/miejsce), 'в офіс/в офісі'. Reguła: jeśli 'на + biernik' = kierunek, to 'на + miejscownik' = lokalizacja. 'Роботу' — biernik od 'робота'."
+      },
+      {
+        "id": "pu_cpc3",
+        "question": "Ми їдемо _____ Львова.",
+        "translation": "(Jedziemy ze Lwowa)",
+        "options": [
+          "з",
+          "до",
+          "в",
+          "на"
+        ],
+        "correct": "з",
+        "explanation": "Przyimek 'з/із' (z/ze) + dopełniacz = punkt wyjścia: 'з Львова' (ze Lwowa). W polskim: 'ze Lwowa' — identycznie! 'Львів' → 'Львова' (dopełniacz). Polskie: 'Lwów' → 'Lwowa'. Reguła par przyimkowych: 'до Львова ↔ з Львова' (do ← → ze), 'в Київ ↔ з Києва' (do ← → z). W polskim: 'do ↔ z'. Para 'в/до → з' jest fundamentalna: 'в' i 'до' wyrażają kierunek DO, 'з' wyraża kierunek OD. Identyczne pary w polskim: 'do ↔ z/ze'."
+      },
+      {
+        "id": "pu_cpc4",
+        "question": "Лампа висить _____ столом.",
+        "translation": "(Lampa wisi nad stołem)",
+        "options": [
+          "над",
+          "під",
+          "за",
+          "перед"
+        ],
+        "correct": "над",
+        "explanation": "Przyimek 'над' (nad) + narzędnik: 'над столом'. W polskim: 'nad stołem' — identycznie! 'Столом' — narzędnik od 'стіл'. Polskie: 'stołem'. Przyimki lokalne + narzędnik: 'над' (nad), 'під' (pod), 'за' (za), 'перед' (przed), 'між' (między). Polskie: nad, pod, za, przed, między — wszystkie + narzędnik! Ta grupa przyimków jest identyczna w obu językach pod względem przypadka i znaczenia. 'Висіти' (wisieć) — polskie 'wisieć'. 'Лампа' — identyczne."
+      },
+      {
+        "id": "pu_cpc5",
+        "question": "Кіт сховався _____ диваном.",
+        "translation": "(Kot schował się za kanapą)",
+        "options": [
+          "за",
+          "під",
+          "над",
+          "перед"
+        ],
+        "correct": "за",
+        "explanation": "Przyimek 'за' (za) + narzędnik = lokalizacja: 'за диваном'. W polskim: 'za kanapą'. 'Диван' (kanapa) → 'диваном' (narzędnik). ALE: 'за' + biernik = kierunek: 'сховався за диван' (schował się za kanapę). Pytanie dotyczy GDZIE (lokalizacja po ukryciu), więc narzędnik. W polskim: 'za kanapą' (narzędnik, gdzie?) vs 'za kanapę' (biernik, dokąd?). IDENTYCZNY system! 'Сховатися' (schować się) — od 'ховати' (chować). Polskie: 'schować się'."
+      },
+      {
+        "id": "pu_cpc6",
+        "question": "Ми сиділи _____ столом.",
+        "translation": "(Siedzieliśmy przy stole)",
+        "options": [
+          "за",
+          "на",
+          "під",
+          "над"
+        ],
+        "correct": "за",
+        "explanation": "Przyimek 'за' + narzędnik = 'przy' (w kontekście stołu): 'за столом' (przy stole). UWAGA: ukraiński 'за столом' ≠ polski 'za stołem'! Ukraiński 'за столом' = 'przy stole' (siedzieć przy stole). Polskie 'za stołem' = przestrzennie za. To ważna pułapka! Poprawne tłumaczenie: 'за столом' = 'przy stole'. 'Сидіти за столом' (siedzieć przy stole) — stały zwrot. 'Сиділи' (siedzieli). Ta różnica semantyczna jest jedną z najczęstszych błędów polskich uczniów."
+      },
+      {
+        "id": "pu_cpc7",
+        "question": "Подарунок _____ тебе.",
+        "translation": "(Prezent dla ciebie)",
+        "options": [
+          "для",
+          "до",
+          "від",
+          "з"
+        ],
+        "correct": "для",
+        "explanation": "Przyimek 'для' (dla) + dopełniacz = przeznaczenie: 'для тебе'. W polskim: 'dla ciebie' — identycznie! 'Подарунок' (prezent/podarunek) — polskie 'podarunek'. 'Тебе' — dopełniacz od 'ти'. Polskie: 'ciebie'. Porównaj inne przyimki + dopełniacz: 'від мене' (ode mnie), 'без нього' (bez niego), 'крім неї' (oprócz niej). Polskie: 'ode mnie', 'bez niego', 'oprócz niej'. System przyimków z dopełniaczem jest niemal identyczny w obu językach."
+      },
+      {
+        "id": "pu_cpc8",
+        "question": "Він стоїть _____ дверима.",
+        "translation": "(On stoi przed drzwiami)",
+        "options": [
+          "перед",
+          "за",
+          "між",
+          "над"
+        ],
+        "correct": "перед",
+        "explanation": "Przyimek 'перед' (przed) + narzędnik: 'перед дверима'. W polskim: 'przed drzwiami' — identycznie! 'Двері' → 'дверима' (narzędnik mnogi). Polskie: 'drzwi' → 'drzwiami'. Porównaj: двер-има / drzwi-ami — zbliżone końcówki narzędnika mnogiego. 'Стояти' (stać) — polskie 'stać'. 'Перед' to przyimek lokalizacyjny + narzędnik. Pełny zestaw: перед (przed), за (za), під (pod), над (nad), між (między) — wszystkie + narzędnik = lokalizacja."
+      },
+      {
+        "id": "pu_cpc9",
+        "question": "Ми зустрілися _____ кінотеатром.",
+        "translation": "(Spotkaliśmy się przed kinem)",
+        "options": [
+          "перед",
+          "за",
+          "в",
+          "на"
+        ],
+        "correct": "перед",
+        "explanation": "Przyimek 'перед' + narzędnik: 'перед кінотеатром'. W polskim: 'przed kinem'. 'Кінотеатр' (kino/kinematograf) → 'кінотеатром' (narzędnik). Polskie: 'kino' → 'kinem'. 'Зустрілися' (spotkaliśmy się) — dokonany od 'зустрічатися'. Porównaj krótsze warianty: 'кіно' (kino — nie odmienne!), 'кінотеатр' (kino — odmienny). W ukraińskim 'кіно' jako zapożyczone jest nieodmienne, 'кінотеатр' odmienia się regularnie. W polskim 'kino' odmienia się: kina, kinu, kinem."
+      },
+      {
+        "id": "pu_cpc10",
+        "question": "Магазин знаходиться _____ банком і аптекою.",
+        "translation": "(Sklep znajduje się między bankiem a apteką)",
+        "options": [
+          "між",
+          "за",
+          "перед",
+          "над"
+        ],
+        "correct": "між",
+        "explanation": "Przyimek 'між' (między) + narzędnik: 'між банком і аптекою'. W polskim: 'między bankiem a apteką' — identycznie! 'Банком' i 'аптекою' — oba w narzędniku. 'Між' łączy dwa elementy za pomocą 'і' (i) lub 'та'. Polskie 'między' łączy za pomocą 'a' lub 'i'. 'Знаходитися' (znajdować się) — polskie 'znajdować się'. 'Магазин' (sklep) — polskie 'magazyn' (inne znaczenie!). Fałszywi przyjaciele: 'магазин' = sklep, nie magazyn."
+      },
+      {
+        "id": "pu_cpc11",
+        "question": "Ми їдемо _____ Варшави до Кракова.",
+        "translation": "(Jedziemy z Warszawy do Krakowa)",
+        "options": [
+          "з",
+          "від",
+          "до",
+          "на"
+        ],
+        "correct": "з",
+        "explanation": "Para przyimkowa 'з...до' (z...do) + dopełniacz: 'з Варшави до Кракова'. W polskim: 'z Warszawy do Krakowa' — identycznie! 'Варшава' → 'Варшави', 'Краків' → 'Кракова'. Polskie: 'Warszawa' → 'Warszawy', 'Kraków' → 'Krakowa'. Porównaj dopełniacz: Варшав-и/Warszaw-y, Краков-а/Krakow-a — identyczne końcówki! Para 'з...до' wyraża trasę od-do. Inna para: 'від...до' (od...do) z lekkim niuansem — 'від' bardziej abstrakcyjny."
+      },
+      {
+        "id": "pu_cpc12",
+        "question": "Ми підемо туди _____ обіді.",
+        "translation": "(Pójdziemy tam po obiedzie)",
+        "options": [
+          "після",
+          "перед",
+          "до",
+          "під час"
+        ],
+        "correct": "після",
+        "explanation": "Przyimek 'після' (po) + dopełniacz: 'після обіді' (po obiedzie). UWAGA: polski 'po' + miejscownik, ukraiński 'після' + dopełniacz! To ważna różnica przypadkowa. 'Обід' → 'обіду' (dopełniacz). Polskie: 'obiad' → 'obiedzie' (miejscownik). 'Підемо' (pójdziemy) — przyszły od 'піти'. 'Туди' (tam — kierunek) — polskie 'tam'. Więcej: 'після роботи' (po pracy), 'після уроку' (po lekcji). Za każdym razem pamiętaj o dopełniaczu, nie miejscowniku!"
+      },
+      {
+        "id": "pu_cpc13",
+        "question": "Він працює _____ ранку до вечора.",
+        "translation": "(On pracuje od rana do wieczora)",
+        "options": [
+          "з",
+          "від",
+          "до",
+          "після"
+        ],
+        "correct": "з",
+        "explanation": "Para 'з...до' w kontekście czasu: 'з ранку до вечора'. W polskim: 'od rana do wieczora'. Tu ukraiński 'з' = polski 'od'. 'Ранку' (rana) — dopełniacz od 'ранок' (ranek). 'Вечора' (wieczora) — dopełniacz od 'вечір' (wieczór). Polskie: 'rana', 'wieczora' — dopełniacz. 'З ранку' vs 'від ранку' — oba poprawne, 'з' bardziej potoczne. W polskim: 'od rana' = standard. Konstrukcja 'з...до' działa zarówno dla czasu, jak i przestrzeni, identycznie jak polskie 'od...do'."
+      },
+      {
+        "id": "pu_cpc14",
+        "question": "Він біжить _____ парком.",
+        "translation": "(On biegnie przez park)",
+        "options": [
+          "через",
+          "крізь",
+          "по",
+          "за"
+        ],
+        "correct": "через",
+        "explanation": "Przyimek 'через' (przez) + biernik: 'через парк'. W polskim: 'przez park' — biernik! 'Через' i 'przez' — historycznie spokrewnione (чер-/prze-). 'Парк' — biernik = mianownik (nieżywotny). 'Біжить' (biegnie) od 'бігти'. Polskie: 'biegnie'. UWAGA na niuans: 'через' (przez — fizycznie) vs 'крізь' (przez — na wylot). Polskie 'przez' pokrywa oba znaczenia. 'Через парк' = 'przez park' (na drugą stronę). 'Крізь скло' = 'przez szybę' (na wylot)."
+      },
+      {
+        "id": "pu_cpc15",
+        "question": "Зустрінемося _____ п'ятій годині.",
+        "translation": "(Spotkamy się o piątej godzinie)",
+        "options": [
+          "о",
+          "в",
+          "на",
+          "до"
+        ],
+        "correct": "о",
+        "explanation": "Przyimek 'о' (o) + miejscownik = punkt w czasie: 'о п'ятій годині'. W polskim: 'o piątej godzinie' — identycznie! 'О' + miejscownik = dokładny czas. 'П'ятій' — miejscownik od 'п'ята' (piąta). Polskie: 'piątej'. 'Годині' — miejscownik od 'година' (godzina). Polskie: 'godzinie'. Porównaj: о п'ят-ій годин-і / o piąt-ej godzin-ie — niemal identyczne formy! Przyimek 'о' z godziną to standard: 'о третій', 'о восьмій', 'о дванадцятій'."
+      }
+    ]
   }
 ]
