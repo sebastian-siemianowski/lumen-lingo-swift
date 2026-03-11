@@ -18858,5 +18858,2670 @@
         "explanation": "'Konnte... widerlegt werden' (could not be refuted) combines past modal 'konnte' with passive infinitive 'widerlegt werden.' 'Widerlegen' (to refute/disprove) is inseparable (wider- prefix), past participle: 'widerlegt.' 'Bisher' (so far/until now) indicates the time frame. 'Die Theorie' (theory) follows Greek origin. Scientific discourse: bestätigen (confirm), widerlegen (refute), belegen (substantiate), hinterfragen (question/challenge). Passive with modals is typical of academic German."
       }
     ]
+  },
+  {
+    "key": "arts_culture",
+    "name": "Arts & Culture",
+    "description": "Kunst & Kultur",
+    "iconName": "paintpalette",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_art2_1",
+        "question": "Die _____ im Museum hat mich sehr beeindruckt.",
+        "translation": "(The exhibition at the museum impressed me a lot.)",
+        "options": [
+          "Ausstellung",
+          "Aufstellung",
+          "Vorstellung",
+          "Darstellung"
+        ],
+        "correct": "Ausstellung",
+        "explanation": "'Ausstellung' means exhibition or display, specifically for art, museum, or gallery contexts. While 'Vorstellung' means performance/show and 'Darstellung' means depiction/representation, 'Ausstellung' is the correct term for a curated collection of artworks or objects on public display. German distinguishes carefully between these related but distinct cultural concepts — 'Aufstellung' refers to setting up or arranging physical objects."
+      },
+      {
+        "id": "eg_art2_2",
+        "question": "Er spielt seit zehn Jahren _____ in einem Orchester.",
+        "translation": "(He has been playing violin in an orchestra for ten years.)",
+        "options": [
+          "Geige",
+          "Gitarre",
+          "Flöte",
+          "Harfe"
+        ],
+        "correct": "Geige",
+        "explanation": "'Geige' is the common German word for violin, though 'Violine' is also used in more formal or classical music contexts. German has two words for this instrument: the everyday 'Geige' and the more technical 'Violine.' In an orchestra context, both are acceptable, but 'Geige spielen' (to play violin) is the natural colloquial expression. Note that musical instruments in German don't require an article after 'spielen': 'Geige spielen,' not 'die Geige spielen.'"
+      },
+      {
+        "id": "eg_art2_3",
+        "question": "Das Theaterstück wurde von einem _____ Regisseur inszeniert.",
+        "translation": "(The play was directed by a famous director.)",
+        "options": [
+          "berühmten",
+          "berühmter",
+          "berühmtes",
+          "berühmt"
+        ],
+        "correct": "berühmten",
+        "explanation": "After 'einem' (dative masculine indefinite article), the adjective takes the weak declension ending '-en.' This is dative masculine: 'von einem berühmten Regisseur.' The dative case is triggered by the preposition 'von.' In German arts vocabulary, 'Regisseur' (director) is masculine, and 'inszenieren' (to stage/direct) is the standard verb for theatrical productions. The adjective declension pattern after indefinite articles in dative is always '-en' regardless of gender."
+      },
+      {
+        "id": "eg_art2_4",
+        "question": "Die Schauspielerin erhielt großen _____ für ihre Rolle.",
+        "translation": "(The actress received great applause for her role.)",
+        "options": [
+          "Beifall",
+          "Erfolg",
+          "Ruhm",
+          "Preis"
+        ],
+        "correct": "Beifall",
+        "explanation": "'Beifall' means applause — the specific word for audience approval expressed through clapping. 'Erfolg' means success, 'Ruhm' means fame/glory, and 'Preis' means prize/award. The phrase 'großen Beifall erhalten/bekommen' (to receive great applause) is a standard cultural expression in German theater and performance reviews. Note the accusative masculine: 'großen Beifall' — the adjective ending '-en' marks accusative masculine after no article."
+      },
+      {
+        "id": "eg_art2_5",
+        "question": "In der Galerie werden moderne _____ ausgestellt.",
+        "translation": "(Modern artworks are exhibited in the gallery.)",
+        "options": [
+          "Kunstwerke",
+          "Kunstwerk",
+          "Künste",
+          "Künstler"
+        ],
+        "correct": "Kunstwerke",
+        "explanation": "'Kunstwerke' is the plural of 'Kunstwerk' (artwork/work of art) — a compound noun: 'Kunst' (art) + 'Werk' (work). German loves compound nouns, and arts vocabulary is rich with them: 'Meisterwerk' (masterpiece), 'Gesamtkunstwerk' (total work of art), 'Bühnenbild' (stage design). The passive construction 'werden ausgestellt' (are exhibited) uses the present passive with the past participle of 'ausstellen.' Plural nominative requires no special adjective ending here."
+      },
+      {
+        "id": "eg_art2_6",
+        "question": "Der _____ hat ein neues Buch veröffentlicht.",
+        "translation": "(The author has published a new book.)",
+        "options": [
+          "Schriftsteller",
+          "Schreiber",
+          "Dichter",
+          "Verfasser"
+        ],
+        "correct": "Schriftsteller",
+        "explanation": "'Schriftsteller' is the standard German word for author/writer of prose works (novels, stories). While 'Dichter' specifically means poet or literary writer of high art, 'Verfasser' is more formal/legal (author of a document), and 'Schreiber' is simply someone who writes (clerk/scribe). Each word carries different cultural weight. 'Schriftsteller' comes from 'Schrift' (writing) + 'stellen' (to put/place) — literally one who puts things into writing. It's the neutral professional term."
+      },
+      {
+        "id": "eg_art2_7",
+        "question": "Die Oper _____ um 19 Uhr.",
+        "translation": "(The opera starts at 7 PM.)",
+        "options": [
+          "beginnt",
+          "anfängt",
+          "startet",
+          "öffnet"
+        ],
+        "correct": "beginnt",
+        "explanation": "'Beginnt' (from 'beginnen') is the formal/standard verb for performances starting. While 'anfangen' means the same thing, 'beginnen' is preferred in formal cultural contexts like opera, theater, and concerts. 'Starten' is used for races or engines, and 'öffnen' means to open (doors/buildings). Note that 'beginnen' is an inseparable verb (prefix 'be-' stays attached), while 'anfangen' is separable: 'Die Oper fängt an.' Both are correct, but 'beginnen' matches the formality of opera."
+      },
+      {
+        "id": "eg_art2_8",
+        "question": "Sie interessiert sich sehr _____ klassische Musik.",
+        "translation": "(She is very interested in classical music.)",
+        "options": [
+          "für",
+          "an",
+          "in",
+          "auf"
+        ],
+        "correct": "für",
+        "explanation": "'Sich interessieren für' (to be interested in) always takes the preposition 'für' + accusative. This is a fixed verb-preposition combination that must be memorized. English uses 'interested in,' but German uses 'für.' Other arts-related reflexive verb combinations: 'sich begeistern für' (to be enthusiastic about), 'sich beschäftigen mit' (to occupy oneself with), 'sich widmen' + dative (to dedicate oneself to). These preposition choices are not logical — they must simply be learned."
+      },
+      {
+        "id": "eg_art2_9",
+        "question": "Das Gemälde wurde im 18. _____ gemalt.",
+        "translation": "(The painting was painted in the 18th century.)",
+        "options": [
+          "Jahrhundert",
+          "Jahrzehnt",
+          "Jahrtausend",
+          "Zeitalter"
+        ],
+        "correct": "Jahrhundert",
+        "explanation": "'Jahrhundert' means century — literally 'hundred-year' (Jahr + hundert). German time-period words are beautifully logical compound nouns: 'Jahrzehnt' = decade (ten-year), 'Jahrtausend' = millennium (thousand-year), 'Zeitalter' = era/age. The ordinal number '18.' (achtzehnt-) combined with 'Jahrhundert' creates 'im 18. Jahrhundert' (in the 18th century). Note the contraction 'im' = 'in dem' (dative). Art history discussions constantly use these temporal markers."
+      },
+      {
+        "id": "eg_art2_10",
+        "question": "Der Film hat mehrere _____ gewonnen.",
+        "translation": "(The film has won several awards.)",
+        "options": [
+          "Preise",
+          "Preis",
+          "Auszeichnung",
+          "Belohnungen"
+        ],
+        "correct": "Preise",
+        "explanation": "'Preise' is the plural of 'Preis' (prize/award). After 'mehrere' (several), the noun must be plural. In German film and cultural vocabulary, 'Preise gewinnen' (to win prizes) is the standard expression. 'Auszeichnungen' (plural of Auszeichnung) would also work meaning 'honors/distinctions,' but with 'gewinnen,' 'Preise' is the most natural pairing. 'Belohnungen' means rewards (for effort), not awards for achievement. German distinguishes earned recognition from given rewards."
+      },
+      {
+        "id": "eg_art2_11",
+        "question": "Die Skulptur _____ aus Marmor.",
+        "translation": "(The sculpture is made of marble.)",
+        "options": [
+          "besteht",
+          "steht",
+          "macht",
+          "bildet"
+        ],
+        "correct": "besteht",
+        "explanation": "'Bestehen aus' (to consist of/be made of) is the correct verb for describing what materials something is made from. 'Die Skulptur besteht aus Marmor' literally means 'the sculpture consists of marble.' This is different from English 'is made of.' 'Stehen' means to stand, 'machen' means to make, and 'bilden' means to form. 'Bestehen' is an inseparable verb — the prefix 'be-' is never separated. In art description, this construction is essential for discussing materials and media."
+      },
+      {
+        "id": "eg_art2_12",
+        "question": "Wir gehen heute Abend _____ Konzert.",
+        "translation": "(We are going to a concert tonight.)",
+        "options": [
+          "ins",
+          "zum",
+          "im",
+          "beim"
+        ],
+        "correct": "ins",
+        "explanation": "'Ins' is the contraction of 'in das' (into the) — used because going to a concert implies entering the venue. 'Ins Konzert gehen' is the standard expression for attending a concert. Compare: 'zum Konzert gehen' would mean going toward/to the concert (perhaps meeting someone there), while 'im Konzert' means at/in the concert (already there). 'Beim Konzert' means during the concert. These subtle preposition differences convey whether you're heading toward, entering, or already inside."
+      },
+      {
+        "id": "eg_art2_13",
+        "question": "Der Künstler hat seine Werke in vielen _____ ausgestellt.",
+        "translation": "(The artist has exhibited his works in many countries.)",
+        "options": [
+          "Ländern",
+          "Länder",
+          "Land",
+          "Lände"
+        ],
+        "correct": "Ländern",
+        "explanation": "'Ländern' is the dative plural of 'Land' (country). After 'in vielen' (in many), the dative plural is required because 'in' + location = dative. The plural of 'Land' is 'Länder' (nominative/accusative), but dative plural adds '-n': 'Ländern.' This is a universal German rule: dative plural nouns always end in '-n' (or '-en' if they don't already end in '-n'). Similarly: Städten (cities), Häusern (houses), Museen (museums — already ends in -n)."
+      },
+      {
+        "id": "eg_art2_14",
+        "question": "Die Musik _____ mich an meine Kindheit.",
+        "translation": "(The music reminds me of my childhood.)",
+        "options": [
+          "erinnert",
+          "denkt",
+          "meint",
+          "merkt"
+        ],
+        "correct": "erinnert",
+        "explanation": "'Erinnern an' (to remind of) is a verb that takes accusative for the person reminded and 'an' + accusative for what is recalled. 'Die Musik erinnert mich an meine Kindheit' — the music reminds me of my childhood. This can also be reflexive: 'Ich erinnere mich an meine Kindheit' (I remember my childhood). 'Denken an' means to think of, 'meinen' means to mean/opine, and 'merken' means to notice. Music and art discussions frequently use 'erinnern' to describe emotional associations."
+      },
+      {
+        "id": "eg_art2_15",
+        "question": "Das Lied wurde von Millionen Menschen _____.",
+        "translation": "(The song was heard by millions of people.)",
+        "options": [
+          "gehört",
+          "hört",
+          "gehören",
+          "hörte"
+        ],
+        "correct": "gehört",
+        "explanation": "'Gehört' is the past participle of 'hören' (to hear), needed here for the passive construction 'wurde gehört' (was heard). The Vorgangspassiv (process passive) uses 'werden' + past participle. 'Von Millionen Menschen' uses 'von' + dative to express the agent (by whom). Note that 'gehören' (without context of passive) means 'to belong to' — a completely different verb despite looking like a form of 'hören.' This false connection trips up many learners."
+      }
+    ]
+  },
+  {
+    "key": "business_economics",
+    "name": "Business & Economics",
+    "description": "Wirtschaft & Geschäftsleben",
+    "iconName": "briefcase",
+    "color": "#0ea5e9",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "eg_biz1",
+        "question": "Das Unternehmen hat seinen _____ verdoppelt.",
+        "translation": "(The company has doubled its revenue.)",
+        "options": [
+          "Umsatz",
+          "Gehalt",
+          "Gewinn",
+          "Einkommen"
+        ],
+        "correct": "Umsatz",
+        "explanation": "'Umsatz' means revenue/turnover — the total sales income before expenses. German business vocabulary distinguishes precisely: 'Umsatz' (revenue/turnover), 'Gewinn' (profit — after expenses), 'Gehalt' (salary), 'Einkommen' (income — personal). 'Den Umsatz verdoppeln' (to double revenue) is standard business German. The prefix 'ver-' in 'verdoppeln' creates a verb from 'doppelt' (double). These financial distinctions are critical in German business communication."
+      },
+      {
+        "id": "eg_biz2",
+        "question": "Wir müssen die Kosten _____.",
+        "translation": "(We must reduce the costs.)",
+        "options": [
+          "senken",
+          "sinken",
+          "fallen",
+          "mindern"
+        ],
+        "correct": "senken",
+        "explanation": "'Senken' is transitive — you actively reduce/lower something. 'Sinken' is intransitive — something sinks/falls on its own. This transitive/intransitive pair is crucial in business German: 'Wir senken die Kosten' (we reduce costs) vs. 'Die Kosten sinken' (costs are falling). Compare English where 'lower' works both ways. Other business pairs: 'steigern' (to increase, transitive) vs. 'steigen' (to rise, intransitive). 'Fallen' means to fall and is also intransitive. 'Mindern' means to diminish but is less common."
+      },
+      {
+        "id": "eg_biz3",
+        "question": "Die Firma _____ 500 Mitarbeiter.",
+        "translation": "(The company employs 500 employees.)",
+        "options": [
+          "beschäftigt",
+          "arbeitet",
+          "anstellt",
+          "benutzt"
+        ],
+        "correct": "beschäftigt",
+        "explanation": "'Beschäftigen' means to employ — the standard verb for stating how many people a company has. 'Die Firma beschäftigt 500 Mitarbeiter' is formal business German. 'Anstellen' means to hire (the act of employing someone new), 'arbeiten' means to work (intransitive), and 'benutzen' means to use (objects). 'Mitarbeiter' (co-worker/employee) is a compound: 'mit' (with) + 'Arbeiter' (worker). In modern German business, 'Mitarbeiter' has replaced the older 'Angestellter' (employee) in many contexts."
+      },
+      {
+        "id": "eg_biz4",
+        "question": "Der Vertrag wurde gestern _____.",
+        "translation": "(The contract was signed yesterday.)",
+        "options": [
+          "unterschrieben",
+          "geschrieben",
+          "unterzeichnet",
+          "gezeichnet"
+        ],
+        "correct": "unterschrieben",
+        "explanation": "'Unterschrieben' is the past participle of 'unterschreiben' (to sign). Both 'unterschreiben' and 'unterzeichnen' mean to sign, but 'unterschreiben' is more common in everyday business. The passive 'wurde unterschrieben' (was signed) uses Vorgangspassiv. 'Geschrieben' means written (from 'schreiben'), and 'gezeichnet' means drawn (from 'zeichnen'). Note: 'unterschreiben' is inseparable (prefix 'unter-' stays) — 'Ich unterschreibe den Vertrag,' NOT 'Ich schreibe den Vertrag unter.'"
+      },
+      {
+        "id": "eg_biz5",
+        "question": "Die _____ des Unternehmens ist in den letzten Jahren gewachsen.",
+        "translation": "(The company's market share has grown in recent years.)",
+        "options": [
+          "Marktanteil",
+          "Marktplatz",
+          "Marktwert",
+          "Marktlage"
+        ],
+        "correct": "Marktanteil",
+        "explanation": "'Marktanteil' means market share — another brilliant German compound: 'Markt' (market) + 'Anteil' (share/portion). Business German is rich with 'Markt-' compounds: 'Marktplatz' (marketplace), 'Marktwert' (market value), 'Marktlage' (market situation), 'Marktführer' (market leader). The genitive 'des Unternehmens' (of the company) shows possession. Note: 'gewachsen' is the past participle of 'wachsen' (to grow) — a strong verb with vowel change: wachsen → wuchs → gewachsen."
+      },
+      {
+        "id": "eg_biz6",
+        "question": "Wir bieten unseren Kunden einen guten _____ an.",
+        "translation": "(We offer our customers good service.)",
+        "options": [
+          "Service",
+          "Dienst",
+          "Bedienung",
+          "Leistung"
+        ],
+        "correct": "Service",
+        "explanation": "'Service' has been adopted into German business vocabulary and is widely used, though 'Kundendienst' (customer service) is the traditional German compound. 'Dienst' means service in a duty sense, 'Bedienung' means table service or operation, and 'Leistung' means performance/output. Note the separable verb 'anbieten': 'Wir bieten ... an.' The prefix 'an-' goes to the end. The dative 'unseren Kunden' (to our customers) is required because 'anbieten' takes dative for the recipient."
+      },
+      {
+        "id": "eg_biz7",
+        "question": "Die Verhandlungen waren _____.",
+        "translation": "(The negotiations were successful.)",
+        "options": [
+          "erfolgreich",
+          "erfolgreichen",
+          "erfolgreicher",
+          "erfolgreiche"
+        ],
+        "correct": "erfolgreich",
+        "explanation": "'Erfolgreich' (successful) appears here as a predicate adjective after 'waren' (were), so it takes NO declension ending. This is a crucial German rule: adjectives after sein/werden/bleiben are never declined. Compare: 'Die erfolgreichen Verhandlungen' (attributive — needs ending) vs. 'Die Verhandlungen waren erfolgreich' (predicate — no ending). 'Erfolgreich' is a compound: 'Erfolg' (success) + '-reich' (rich in). The suffix '-reich' creates adjectives meaning 'full of': zahlreich, hilfreich, einflussreich."
+      },
+      {
+        "id": "eg_biz8",
+        "question": "Er hat eine _____ als Geschäftsführer.",
+        "translation": "(He has a position as managing director.)",
+        "options": [
+          "Stelle",
+          "Platz",
+          "Ort",
+          "Raum"
+        ],
+        "correct": "Stelle",
+        "explanation": "'Stelle' means position/post in a professional context. German workplace vocabulary: 'Stelle' (position/job), 'Platz' (place/seat), 'Ort' (location), 'Raum' (room/space). 'Geschäftsführer' (managing director/CEO) is a key compound: 'Geschäft' (business) + 'Führer' (leader). Alternative professional titles: 'Vorstandsvorsitzender' (chairman of the board), 'Abteilungsleiter' (department head), 'Sachbearbeiter' (case worker). German job titles are often long compounds that precisely describe the role."
+      },
+      {
+        "id": "eg_biz9",
+        "question": "Die Aktien sind um 10 Prozent _____.",
+        "translation": "(The stocks have risen by 10 percent.)",
+        "options": [
+          "gestiegen",
+          "gesteigert",
+          "erhöht",
+          "gewachsen"
+        ],
+        "correct": "gestiegen",
+        "explanation": "'Gestiegen' is the past participle of 'steigen' (to rise) — an intransitive verb meaning something goes up on its own. Stocks rise ('steigen'), they are not risen by someone. Compare: 'gesteigert' (from 'steigern' — to increase, transitive: someone increases something), 'erhöht' (from 'erhöhen' — to raise, also transitive). The intransitive/transitive distinction is vital: 'Die Preise steigen' (prices rise) vs. 'Wir steigern die Produktion' (we increase production). 'Steigen' uses 'sein' as auxiliary: 'sind gestiegen.'"
+      },
+      {
+        "id": "eg_biz10",
+        "question": "Wir sollten in neue Technologien _____.",
+        "translation": "(We should invest in new technologies.)",
+        "options": [
+          "investieren",
+          "investiert",
+          "investierend",
+          "investierung"
+        ],
+        "correct": "investieren",
+        "explanation": "'Investieren' is the infinitive needed after the modal verb 'sollten' (should). Modal verb + infinitive is the rule: 'Wir sollten investieren.' The verb 'investieren' (to invest) comes from Latin via French and follows regular German conjugation despite its foreign origin. 'Investieren in' + accusative is the standard business construction. Many German business verbs come from English/French: 'managen,' 'finanzieren,' 'organisieren,' 'analysieren.' They all follow regular German weak verb patterns."
+      },
+      {
+        "id": "eg_biz11",
+        "question": "Der _____ hat uns ein gutes Angebot gemacht.",
+        "translation": "(The supplier has made us a good offer.)",
+        "options": [
+          "Lieferant",
+          "Lieferung",
+          "Lieferer",
+          "Lieferdienst"
+        ],
+        "correct": "Lieferant",
+        "explanation": "'Lieferant' means supplier — a person or company that delivers goods. It's a weak (n-declension) noun: der Lieferant, den Lieferanten, dem Lieferanten, des Lieferanten. 'Lieferung' means delivery (the act), 'Lieferdienst' means delivery service. The expression 'ein Angebot machen' (to make an offer) is standard business German. Note the dative 'uns' (to us) — 'machen' with two objects: dative person + accusative thing. Many '-ant' nouns in German follow n-declension: Student, Praktikant, Consultant."
+      },
+      {
+        "id": "eg_biz12",
+        "question": "Die Besprechung _____ um 14 Uhr statt.",
+        "translation": "(The meeting takes place at 2 PM.)",
+        "options": [
+          "findet",
+          "stellt",
+          "nimmt",
+          "macht"
+        ],
+        "correct": "findet",
+        "explanation": "'Stattfinden' (to take place) is a separable verb: 'Die Besprechung findet statt.' The prefix 'statt' goes to the end of the clause. This is the standard verb for scheduled events. 'Besprechung' (meeting/discussion) is more formal than 'Treffen' (meeting/gathering). German business has many words for meetings: 'Sitzung' (session), 'Konferenz' (conference), 'Tagung' (convention), 'Versammlung' (assembly). Each has a different formality level and purpose."
+      },
+      {
+        "id": "eg_biz13",
+        "question": "Können Sie mir bitte die _____ schicken?",
+        "translation": "(Can you please send me the invoice?)",
+        "options": [
+          "Rechnung",
+          "Berechnung",
+          "Abrechnung",
+          "Aufrechnung"
+        ],
+        "correct": "Rechnung",
+        "explanation": "'Rechnung' means invoice/bill — the document requesting payment. German has several 'Rechnung' compounds with different meanings: 'Berechnung' (calculation), 'Abrechnung' (settlement/final billing), 'Aufrechnung' (offsetting/netting). The polite request 'Können Sie mir bitte ... schicken?' uses 'können' + infinitive. Note the dative 'mir' (to me) and accusative 'die Rechnung' (the invoice) — German verbs like 'schicken' take dative recipient + accusative object."
+      },
+      {
+        "id": "eg_biz14",
+        "question": "Das Produkt ist auf dem _____ sehr gefragt.",
+        "translation": "(The product is in high demand on the market.)",
+        "options": [
+          "Markt",
+          "Geschäft",
+          "Laden",
+          "Handel"
+        ],
+        "correct": "Markt",
+        "explanation": "'Auf dem Markt' (on the market) uses dative because 'auf' + location (no movement) = dative. 'Gefragt' (in demand) literally means 'asked for' — from 'fragen' (to ask). German economic vocabulary: 'Markt' (market — abstract or physical), 'Geschäft' (shop/business/deal), 'Laden' (shop/store), 'Handel' (trade/commerce). The expression 'gefragt sein' (to be in demand) is elegant business German that literally translates as 'to be asked for.'"
+      },
+      {
+        "id": "eg_biz15",
+        "question": "Die Firma muss _____ sparen.",
+        "translation": "(The company must save money.)",
+        "options": [
+          "Geld",
+          "Gelder",
+          "Gelde",
+          "Geldes"
+        ],
+        "correct": "Geld",
+        "explanation": "'Geld' (money) is a neuter noun used here in the accusative as the direct object of 'sparen' (to save). No article is needed with 'Geld' in this general sense — just like English 'save money' not 'save the money.' 'Geld sparen' is the most basic business expression. After the modal 'muss' (must), the infinitive 'sparen' goes to the end. 'Gelder' (plural: funds/monies) is used in formal financial contexts for multiple funding sources. The genitive 'des Geldes' appears in formal constructions."
+      }
+    ]
+  },
+  {
+    "key": "register_formality",
+    "name": "Register & Formality",
+    "description": "Sprachebenen & Höflichkeit",
+    "iconName": "person.2",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_reg1",
+        "question": "_____ Sie bitte Platz!",
+        "translation": "(Please take a seat! — formal)",
+        "options": [
+          "Nehmen",
+          "Nimm",
+          "Nehmt",
+          "Nimmst"
+        ],
+        "correct": "Nehmen",
+        "explanation": "'Nehmen Sie' is the formal imperative (Sie-form). German has three imperative forms reflecting its three levels of address: 'Nimm!' (du — informal singular), 'Nehmt!' (ihr — informal plural), 'Nehmen Sie!' (Sie — formal). The formal imperative always uses the infinitive form + 'Sie' and sounds like an inverted question. In professional settings, restaurants, and with strangers, 'Nehmen Sie' is expected. Using 'Nimm' with a stranger would be rude — register awareness is essential in German."
+      },
+      {
+        "id": "eg_reg2",
+        "question": "Entschuldigen Sie, _____ Sie mir bitte helfen?",
+        "translation": "(Excuse me, could you please help me? — formal)",
+        "options": [
+          "könnten",
+          "kannst",
+          "könnt",
+          "kann"
+        ],
+        "correct": "könnten",
+        "explanation": "'Könnten' is the Konjunktiv II (subjunctive) of 'können' — the most polite way to make a request in German. The politeness scala: 'Können Sie mir helfen?' (can you help me — polite) → 'Könnten Sie mir helfen?' (could you help me — very polite) → 'Würden Sie mir bitte helfen?' (would you please help me — extremely polite). Konjunktiv II adds a layer of indirectness that increases politeness, just like English 'could' is softer than 'can.' Adding 'bitte' (please) further softens the request."
+      },
+      {
+        "id": "eg_reg3",
+        "question": "Sehr _____ Frau Müller, ...",
+        "translation": "(Dear Mrs. Müller, ... — formal letter opening)",
+        "options": [
+          "geehrte",
+          "liebe",
+          "teure",
+          "gute"
+        ],
+        "correct": "geehrte",
+        "explanation": "'Sehr geehrte Frau Müller' is the standard formal letter/email opening in German, equivalent to 'Dear Mrs. Müller.' 'Geehrte' comes from 'ehren' (to honor) — literally 'very honored.' This is obligatory in business correspondence. The informal alternative is 'Liebe Frau Müller' (Dear — with warmth) for people you know well. 'Sehr geehrter Herr' (masculine), 'Sehr geehrte Damen und Herren' (Ladies and Gentlemen — gender unknown). Never use 'Liebe/r' in first-time business contact."
+      },
+      {
+        "id": "eg_reg4",
+        "question": "Ich _____ Ihnen für Ihre schnelle Antwort danken.",
+        "translation": "(I would like to thank you for your quick reply. — formal)",
+        "options": [
+          "möchte",
+          "will",
+          "werde",
+          "muss"
+        ],
+        "correct": "möchte",
+        "explanation": "'Möchte' (would like to) expresses polite intention — softer than 'will' (want to) or 'werde' (will). In formal German correspondence: 'Ich möchte Ihnen danken' is elegantly polite. 'Ihnen' (formal dative you) and 'Ihre' (formal possessive your) are always capitalized. The politeness hierarchy: 'Ich danke Ihnen' (I thank you — direct), 'Ich möchte Ihnen danken' (I would like to thank you — polite), 'Ich würde Ihnen gerne danken' (I would gladly like to thank you — very formal). Word choice reveals social awareness."
+      },
+      {
+        "id": "eg_reg5",
+        "question": "Hey, hast du _____ das neue Café gesehen?",
+        "translation": "(Hey, have you already seen the new café? — informal)",
+        "options": [
+          "schon",
+          "bereits",
+          "schon mal",
+          "noch"
+        ],
+        "correct": "schon",
+        "explanation": "'Schon' (already) is the informal/neutral register word. 'Bereits' means the same but is formal/written register. German register awareness: 'schon' (everyday) vs. 'bereits' (formal/written), 'jetzt' (now, everyday) vs. 'nun' (now, formal), 'aber' (but, everyday) vs. 'jedoch' (however, formal). The entire sentence signals informality: 'Hey' (informal greeting), 'hast du' (informal you), contrasting with formal equivalents: 'Guten Tag, haben Sie bereits das neue Café gesehen?'"
+      },
+      {
+        "id": "eg_reg6",
+        "question": "Hiermit _____ ich mich um die Stelle als Projektmanager.",
+        "translation": "(I hereby apply for the position of project manager.)",
+        "options": [
+          "bewerbe",
+          "bewirb",
+          "bewerben",
+          "bewirbt"
+        ],
+        "correct": "bewerbe",
+        "explanation": "'Bewerbe' is first person singular of 'sich bewerben um' (to apply for). 'Hiermit' (hereby) signals extremely formal register — used exclusively in business correspondence, legal documents, and official applications. The reflexive 'sich bewerben' requires accusative 'mich' and the preposition 'um' + accusative for what you're applying for. Formal application language includes: 'Hiermit bewerbe ich mich,' 'Ich beziehe mich auf Ihre Anzeige' (I refer to your advertisement), 'Mit freundlichen Grüßen' (Yours sincerely — closing)."
+      },
+      {
+        "id": "eg_reg7",
+        "question": "Was geht _____? Alles klar bei dir?",
+        "translation": "(What's up? Everything okay with you? — very informal)",
+        "options": [
+          "ab",
+          "an",
+          "auf",
+          "aus"
+        ],
+        "correct": "ab",
+        "explanation": "'Was geht ab?' is very informal/slang German for 'What's up?' or 'What's happening?' It comes from the separable verb 'abgehen' (to go off/happen). This is youth slang and would never appear in formal contexts. The register scale for greetings: 'Was geht ab?' / 'Na?' (very informal) → 'Hallo! Wie geht's?' (informal) → 'Guten Tag! Wie geht es Ihnen?' (formal) → 'Sehr geehrte Damen und Herren' (very formal, written). Choosing the wrong register is a significant social error in German culture."
+      },
+      {
+        "id": "eg_reg8",
+        "question": "Wir würden uns freuen, Sie bei uns _____ zu dürfen.",
+        "translation": "(We would be delighted to welcome you. — very formal)",
+        "options": [
+          "begrüßen",
+          "grüßen",
+          "treffen",
+          "sehen"
+        ],
+        "correct": "begrüßen",
+        "explanation": "'Begrüßen' (to welcome/greet formally) is the high-register verb for welcoming someone. The entire construction 'Wir würden uns freuen, Sie begrüßen zu dürfen' is peak formal German — a conditional (würden), reflexive (uns freuen), infinitive clause (begrüßen zu dürfen) combination. 'Grüßen' is simpler (to greet), 'treffen' (to meet) is neutral. Compare informal: 'Schön, dass du kommst!' (Nice that you're coming!). The double infinitive 'begrüßen zu dürfen' (to be permitted to welcome) adds ultimate politeness."
+      },
+      {
+        "id": "eg_reg9",
+        "question": "Ich habe leider _____ keine Zeit.",
+        "translation": "(Unfortunately I don't have time today. — neutral polite)",
+        "options": [
+          "heute",
+          "heut",
+          "heutzutage",
+          "heutig"
+        ],
+        "correct": "heute",
+        "explanation": "'Heute' (today) is the standard neutral form. 'Heut' is a colloquial shortening common in speech but not written. 'Heutzutage' means 'nowadays' (different meaning), and 'heutig' is the adjective form (today's). The word 'leider' (unfortunately) is a politeness softener — it shows regret when declining. German politeness markers: 'leider' (unfortunately), 'bitte' (please), 'gerne' (gladly), 'vielleicht' (perhaps). Using 'Ich habe keine Zeit' without 'leider' would sound blunt and potentially rude."
+      },
+      {
+        "id": "eg_reg10",
+        "question": "_____ Sie so freundlich, mir die Tür aufzuhalten?",
+        "translation": "(Would you be so kind as to hold the door for me?)",
+        "options": [
+          "Wären",
+          "Sind",
+          "Waren",
+          "Würden"
+        ],
+        "correct": "Wären",
+        "explanation": "'Wären Sie so freundlich' (Would you be so kind) uses Konjunktiv II of 'sein' — maximum politeness. This construction is formal and old-fashioned but still used in polite German society. Compare: 'Sind Sie so freundlich?' (present — direct request), 'Wären Sie so freundlich?' (subjunctive — ultra-polite request). 'Waren' is past tense (were), which doesn't fit. 'Würden Sie' (would you) is also very polite but combines with infinitive: 'Würden Sie mir die Tür aufhalten?'"
+      },
+      {
+        "id": "eg_reg11",
+        "question": "Lass uns _____ essen gehen!",
+        "translation": "(Let's go eat something! — informal)",
+        "options": [
+          "was",
+          "etwas",
+          "irgend",
+          "manches"
+        ],
+        "correct": "was",
+        "explanation": "'Was' is the colloquial/informal shortening of 'etwas' (something). 'Lass uns was essen gehen!' is perfectly natural informal German. In formal writing, you'd use 'etwas': 'Möchten Sie etwas essen?' The construction 'Lass uns + infinitive' is the informal 'let's' — equivalent to formal 'Lassen Sie uns.' Register pairs: 'was' vs. 'etwas' (something), 'nix/niks' vs. 'nichts' (nothing), 'nen' vs. 'einen' (a/an), 'ham' vs. 'haben' (have). These shortenings mark spoken informal German."
+      },
+      {
+        "id": "eg_reg12",
+        "question": "Mit freundlichen _____ ,",
+        "translation": "(Yours sincerely, — formal letter closing)",
+        "options": [
+          "Grüßen",
+          "Grüße",
+          "Gruß",
+          "Grüßung"
+        ],
+        "correct": "Grüßen",
+        "explanation": "'Mit freundlichen Grüßen' (With friendly greetings) is the standard formal letter/email closing in German — equivalent to 'Yours sincerely' or 'Best regards.' 'Grüßen' is dative plural of 'Gruß' (greeting) after 'mit' (with, + dative). The informality scale for closings: 'Mit freundlichen Grüßen' (formal) → 'Beste Grüße' / 'Viele Grüße' (friendly neutral) → 'Liebe Grüße' / 'LG' (informal) → 'Bis dann!' / 'Tschüss!' (very informal). Never use 'LG' in business first contact."
+      },
+      {
+        "id": "eg_reg13",
+        "question": "Ich bin der _____, dass wir das anders lösen sollten.",
+        "translation": "(I am of the opinion that we should solve this differently. — formal)",
+        "options": [
+          "Meinung",
+          "Ansicht",
+          "Überzeugung",
+          "Idee"
+        ],
+        "correct": "Meinung",
+        "explanation": "'Ich bin der Meinung, dass...' (I am of the opinion that...) is a formal way to express opinions. The genitive feminine 'der Meinung' after 'sein' is a fixed expression. Alternatives by register: 'Meiner Meinung nach...' (in my opinion — neutral), 'Ich finde, dass...' (I find that — informal), 'Ich bin der Ansicht/Auffassung, dass...' (I am of the view that — very formal). In meetings and presentations, choosing the right opinion-expressing formula shows professional competence and cultural awareness."
+      },
+      {
+        "id": "eg_reg14",
+        "question": "Das ist echt _____, oder?",
+        "translation": "(That's really cool, right? — informal)",
+        "options": [
+          "cool",
+          "ausgezeichnet",
+          "wunderbar",
+          "vorzüglich"
+        ],
+        "correct": "cool",
+        "explanation": "'Cool' has been fully adopted into informal German and is used exactly like in English. The word 'echt' (really/genuinely) is an informal intensifier — formal alternatives: 'wirklich' (really), 'sehr' (very), 'außerordentlich' (extraordinarily). The tag question 'oder?' (right?/or?) is casual German for seeking agreement. Formal equivalents for 'cool': 'ausgezeichnet' (excellent), 'wunderbar' (wonderful), 'vorzüglich' (exquisite). Using 'cool' in a business presentation would be inappropriate; 'ausgezeichnet' fits perfectly."
+      },
+      {
+        "id": "eg_reg15",
+        "question": "Darf ich Sie _____ Vornamen ansprechen?",
+        "translation": "(May I address you by your first name?)",
+        "options": [
+          "mit dem",
+          "beim",
+          "mit",
+          "zum"
+        ],
+        "correct": "mit dem",
+        "explanation": "'Mit dem Vornamen ansprechen' (to address by first name) represents one of the most important social transitions in German culture — the shift from 'Sie' to 'du.' This question is traditionally asked when two adults decide to become less formal. Dative is required after 'mit' (with): 'mit dem Vornamen.' The related expression 'das Du anbieten' (to offer the informal 'du') is a significant social ritual. Typically the older person, the higher-ranking person, or a woman offers 'du' first. This distinction barely exists in English."
+      }
+    ]
+  },
+  {
+    "key": "academic_writing",
+    "name": "Academic Writing",
+    "description": "Akademisches Schreiben",
+    "iconName": "graduationcap",
+    "color": "#1e40af",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "eg_acad1",
+        "question": "In der vorliegenden Arbeit wird _____ Thema untersucht.",
+        "translation": "(In the present work, this topic is examined.)",
+        "options": [
+          "dieses",
+          "dieser",
+          "diesem",
+          "diese"
+        ],
+        "correct": "dieses",
+        "explanation": "'Dieses' is nominative neuter, agreeing with 'das Thema' (the topic) — a neuter noun. Academic German overwhelmingly uses passive constructions: 'wird untersucht' (is examined) rather than 'ich untersuche' (I examine). The phrase 'in der vorliegenden Arbeit' (in the present work) is standard academic opening language. 'Vorliegend' means 'present/at hand' — from 'vorliegen' (to be present). Academic German avoids first person: 'Es wird gezeigt' (it is shown), not 'Ich zeige' (I show)."
+      },
+      {
+        "id": "eg_acad2",
+        "question": "Die Ergebnisse _____ darauf hin, dass...",
+        "translation": "(The results indicate that...)",
+        "options": [
+          "deuten",
+          "weisen",
+          "zeigen",
+          "bedeuten"
+        ],
+        "correct": "deuten",
+        "explanation": "'Deuten auf etwas hin' / 'Hindeuten auf' means 'to indicate/suggest' — a key academic verb. The separable prefix 'hin-' goes to the end: 'Die Ergebnisse deuten darauf hin, dass...' 'Weisen' would need 'darauf hin': 'weisen darauf hin' (point to). 'Zeigen' (to show) is more direct and less academic. Academic German values hedging — suggesting rather than stating definitively. Other hedging phrases: 'Es scheint, dass...' (It seems that...), 'Man könnte argumentieren' (One could argue), 'Es lässt sich feststellen' (It can be determined)."
+      },
+      {
+        "id": "eg_acad3",
+        "question": "_____ ist festzuhalten, dass die Hypothese bestätigt wurde.",
+        "translation": "(In summary, it should be noted that the hypothesis was confirmed.)",
+        "options": [
+          "Zusammenfassend",
+          "Zusammen",
+          "Zusammengefasst",
+          "Zusammenhängend"
+        ],
+        "correct": "Zusammenfassend",
+        "explanation": "'Zusammenfassend' (in summary/to summarize) is a present participle used as an adverb — standard academic conclusion language. 'Zusammen' just means 'together,' 'zusammengefasst' is the past participle (summarized), and 'zusammenhängend' means 'coherently/connected.' The construction 'es ist festzuhalten' (it should be noted) uses 'sein + zu + infinitive' for passive obligation — very common in academic German. Academic transition words: 'darüber hinaus' (furthermore), 'dennoch' (nevertheless), 'folglich' (consequently), 'demzufolge' (accordingly)."
+      },
+      {
+        "id": "eg_acad4",
+        "question": "Die Studie _____ sich an eine interdisziplinäre Leserschaft.",
+        "translation": "(The study is aimed at an interdisciplinary readership.)",
+        "options": [
+          "richtet",
+          "wendet",
+          "dreht",
+          "stellt"
+        ],
+        "correct": "richtet",
+        "explanation": "'Sich richten an' (to be aimed at/directed toward) + accusative is the standard academic expression for describing target audience. 'Die Studie richtet sich an...' The reflexive pronoun 'sich' is essential. 'Sich wenden an' means to turn to (for help), 'sich drehen um' means to revolve around (a topic), 'sich stellen' means to position oneself. Academic German uses many reflexive constructions: 'sich befassen mit' (to deal with), 'sich ergeben aus' (to result from), 'sich beziehen auf' (to refer to)."
+      },
+      {
+        "id": "eg_acad5",
+        "question": "Im Folgenden wird auf die Methodik _____ eingegangen.",
+        "translation": "(In the following, the methodology will be discussed in detail.)",
+        "options": [
+          "näher",
+          "nah",
+          "nahe",
+          "näherer"
+        ],
+        "correct": "näher",
+        "explanation": "'Näher eingehen auf' (to discuss in more detail) uses the comparative form of 'nah' (close/near): 'näher' (closer/in more detail). This is a fixed academic expression. 'Im Folgenden' (in the following) is standard academic transitional language. The passive 'wird eingegangen' avoids naming who discusses — academic convention. 'Eingehen auf' + accusative means to address/discuss a topic. Note the separable verb is split: 'wird auf die Methodik näher eingegangen.' Other academic discourse phrases: 'Im Weiteren' (furthermore), 'Wie bereits erwähnt' (as already mentioned)."
+      },
+      {
+        "id": "eg_acad6",
+        "question": "Es _____ sich die Frage, ob dieser Ansatz geeignet ist.",
+        "translation": "(The question arises whether this approach is suitable.)",
+        "options": [
+          "stellt",
+          "fragt",
+          "gibt",
+          "macht"
+        ],
+        "correct": "stellt",
+        "explanation": "'Es stellt sich die Frage' (the question arises/presents itself) is a quintessential academic German phrase. The reflexive 'sich stellen' here means 'to present itself' — the question presents itself, rather than someone asking it. This impersonal construction avoids agency, which academic German prefers. Compare informal: 'Ich frage mich, ob...' (I wonder whether...) vs. academic: 'Es stellt sich die Frage, ob...' Other academic question introductions: 'Es bleibt zu klären' (it remains to be clarified), 'Es ist zu prüfen' (it is to be examined)."
+      },
+      {
+        "id": "eg_acad7",
+        "question": "Laut der aktuellen _____ ist dieser Befund signifikant.",
+        "translation": "(According to current research, this finding is significant.)",
+        "options": [
+          "Forschung",
+          "Forschungen",
+          "Erforschung",
+          "Forscher"
+        ],
+        "correct": "Forschung",
+        "explanation": "'Forschung' (research) is used as an uncountable abstract noun here — 'die aktuelle Forschung' (current research as a field). 'Forschungen' (plural: research efforts/studies) emphasizes individual studies. 'Erforschung' means exploration/investigation of a specific topic, and 'Forscher' means researcher (person). 'Laut' (according to) + genitive/dative is standard for citing authority: 'laut der Forschung' (genitive) or 'laut Forschung' (no article). Academic German citation language: 'gemäß' (according to, formal), 'zufolge' (according to, postposition)."
+      },
+      {
+        "id": "eg_acad8",
+        "question": "Der Autor _____ die These, dass Bildung für alle zugänglich sein sollte.",
+        "translation": "(The author advocates the thesis that education should be accessible to all.)",
+        "options": [
+          "vertritt",
+          "steht",
+          "hält",
+          "unterstützt"
+        ],
+        "correct": "vertritt",
+        "explanation": "'Vertreten' (to represent/advocate) is the academic verb for championing a position: 'eine These vertreten' (to advocate a thesis). 'Stehen für' means to stand for, 'halten für' means to consider as, 'unterstützen' means to support. The noun 'These' (thesis/proposition) is used in academic discourse for a central argument. Academic German distinguishes: 'These' (proposition), 'Hypothese' (hypothesis — to be tested), 'Theorie' (theory — established framework), 'Annahme' (assumption). Each carries different epistemological weight."
+      },
+      {
+        "id": "eg_acad9",
+        "question": "Aus den Daten _____ sich folgende Schlussfolgerungen ziehen.",
+        "translation": "(The following conclusions can be drawn from the data.)",
+        "options": [
+          "lassen",
+          "können",
+          "müssen",
+          "werden"
+        ],
+        "correct": "lassen",
+        "explanation": "'Sich + lassen + infinitive' creates an elegant passive alternative meaning 'can be done.' 'Schlussfolgerungen lassen sich ziehen' = 'conclusions can be drawn.' This construction is extremely common in academic German as it avoids the standard passive while maintaining impersonality. Compare: 'können gezogen werden' (can be drawn — standard passive) vs. 'lassen sich ziehen' (can be drawn — reflexive alternative). 'Schlussfolgerung' (conclusion) is a compound: 'Schluss' (end) + 'Folgerung' (inference). Academic writing favors 'lassen sich' for elegance."
+      },
+      {
+        "id": "eg_acad10",
+        "question": "Dieses Phänomen wurde _____ mehreren Studien dokumentiert.",
+        "translation": "(This phenomenon has been documented in several studies.)",
+        "options": [
+          "in",
+          "von",
+          "durch",
+          "bei"
+        ],
+        "correct": "in",
+        "explanation": "'In mehreren Studien' (in several studies) locates the documentation within the studies. 'Von' would indicate who did it, 'durch' would indicate the means, 'bei' would mean during. Academic German uses 'in' for where findings appear: 'in der Literatur' (in the literature), 'in dieser Studie' (in this study), 'in Tabelle 3' (in Table 3). The past participle passive 'wurde dokumentiert' (was documented) is standard academic reporting. 'Phänomen' is neuter: 'dieses Phänomen' (this phenomenon)."
+      },
+      {
+        "id": "eg_acad11",
+        "question": "_____ sei auf die Grenzen dieser Studie hingewiesen.",
+        "translation": "(At this point, the limitations of this study should be noted.)",
+        "options": [
+          "Abschließend",
+          "Abschluss",
+          "Schließend",
+          "Zum Abschluss"
+        ],
+        "correct": "Abschließend",
+        "explanation": "'Abschließend' (in conclusion/finally) is the present participle of 'abschließen' used as an adverb — standard for academic conclusions. The passive construction 'sei hingewiesen' uses Konjunktiv I for formal indirect suggestion: 'it should be pointed out.' 'Grenzen' (limits/limitations) is essential academic vocabulary for discussing research scope. Academic conclusion phrases: 'abschließend' (in conclusion), 'zusammenfassend' (in summary), 'resümierend' (resuming), 'im Ergebnis' (as a result). Each signals a different type of conclusion."
+      },
+      {
+        "id": "eg_acad12",
+        "question": "Es bedarf weiterer _____, um diese Frage zu klären.",
+        "translation": "(Further research is needed to clarify this question.)",
+        "options": [
+          "Forschung",
+          "Forschungen",
+          "Untersuchung",
+          "Studien"
+        ],
+        "correct": "Forschung",
+        "explanation": "'Es bedarf' + genitive (it requires/needs) is a highly formal academic construction. 'Bedürfen' always takes the genitive case: 'Es bedarf weiterer Forschung' (it requires further research). This is distinctly academic — everyday German would say 'Man braucht mehr Forschung' (one needs more research). The genitive 'weiterer Forschung' (of further research) demonstrates the formal register. Academic German frequently calls for future research: 'Es bedarf weiterer Untersuchungen' (further investigations are needed), 'Zukünftige Studien sollten...' (future studies should...)."
+      },
+      {
+        "id": "eg_acad13",
+        "question": "Der theoretische _____ basiert auf Bourdieus Arbeiten.",
+        "translation": "(The theoretical framework is based on Bourdieu's works.)",
+        "options": [
+          "Rahmen",
+          "Rahme",
+          "Rahmen",
+          "Gestell"
+        ],
+        "correct": "Rahmen",
+        "explanation": "'Rahmen' (framework) is used in the academic compound 'theoretischer Rahmen' (theoretical framework). 'Basieren auf' + dative (to be based on) is the standard verb for describing foundational theory. 'Bourdieus Arbeiten' uses the genitive -s to show possession — German adds 's without an apostrophe for proper names (unlike English). Academic German terminology: 'Rahmen' (framework), 'Ansatz' (approach), 'Modell' (model), 'Paradigma' (paradigm). The verb 'basieren' is one of many Latinate academic verbs."
+      },
+      {
+        "id": "eg_acad14",
+        "question": "Die _____ Analyse zeigt signifikante Unterschiede.",
+        "translation": "(The quantitative analysis shows significant differences.)",
+        "options": [
+          "quantitative",
+          "quantitativer",
+          "quantitatives",
+          "quantitativen"
+        ],
+        "correct": "quantitative",
+        "explanation": "'Quantitative' is the strong adjective ending for nominative feminine after 'die': 'die quantitative Analyse.' After definite articles, adjectives take weak declension endings (-e or -en). Nominative feminine = -e. Academic vocabulary: 'quantitativ' (quantitative) vs. 'qualitativ' (qualitative), 'signifikant' (significant/statistically significant), 'Unterschiede' (differences). These Latinate adjectives are essential in research methodology. German academic writing uses many such borrowed terms but declines them following standard German adjective rules."
+      },
+      {
+        "id": "eg_acad15",
+        "question": "Wie _____ der Einleitung erwähnt, ...",
+        "translation": "(As mentioned in the introduction, ...)",
+        "options": [
+          "in",
+          "bei",
+          "an",
+          "auf"
+        ],
+        "correct": "in",
+        "explanation": "'Wie in der Einleitung erwähnt' (as mentioned in the introduction) is a standard academic cross-reference. 'In' + dative is used for sections of text: 'in der Einleitung' (in the introduction), 'in Kapitel 3' (in Chapter 3), 'in Abschnitt 2.1' (in Section 2.1), 'in Abbildung 4' (in Figure 4). This participial construction omits 'wurde' — the full form would be 'Wie in der Einleitung erwähnt wurde.' Academic German frequently uses such elliptical constructions for conciseness and elegance."
+      }
+    ]
+  },
+  {
+    "key": "colloquial_register",
+    "name": "Colloquial Register",
+    "description": "Umgangssprache",
+    "iconName": "bubble.left.and.bubble.right",
+    "color": "#f97316",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_coll1",
+        "question": "Das ist mir total _____.",
+        "translation": "(I don't care about that at all. — colloquial)",
+        "options": [
+          "egal",
+          "gleich",
+          "wurscht",
+          "einerlei"
+        ],
+        "correct": "egal",
+        "explanation": "'Egal' (doesn't matter/don't care) is the standard colloquial way to express indifference. 'Das ist mir egal' literally means 'that is to me equal/indifferent.' The dative 'mir' indicates who doesn't care. Regional variants: 'wurscht/wurst' (southern German/Austrian — literally 'sausage'), 'einerlei' (literary/old-fashioned), 'schnuppe' (northern informal). 'Total egal' intensifies: 'completely don't care.' In formal German, you'd say 'Es ist mir gleichgültig' (I am indifferent to it). Register awareness: 'egal' = informal, 'gleichgültig' = formal."
+      },
+      {
+        "id": "eg_coll2",
+        "question": "Ich hab _____ Ahnung, was er meint.",
+        "translation": "(I have no idea what he means. — colloquial)",
+        "options": [
+          "keine",
+          "kein",
+          "keinen",
+          "keiner"
+        ],
+        "correct": "keine",
+        "explanation": "'Keine Ahnung' (no idea/no clue) is perhaps the most common colloquial German expression. 'Ahnung' is feminine: 'keine Ahnung.' Note the colloquial contraction 'hab' instead of 'habe' — dropping the final -e in first person is universal in spoken German. The full formal version: 'Ich habe keine Ahnung.' Other colloquial contractions: 'geht's' (geht es), 'gibt's' (gibt es), 'isses' (ist es), 'ham wir' (haben wir). 'Keine Ahnung!' alone works as a standalone response meaning 'No clue!'"
+      },
+      {
+        "id": "eg_coll3",
+        "question": "Mensch, das war _____ knapp!",
+        "translation": "(Man, that was really close! — colloquial)",
+        "options": [
+          "echt",
+          "wirklich",
+          "wahrhaftig",
+          "tatsächlich"
+        ],
+        "correct": "echt",
+        "explanation": "'Echt' (really/genuinely) is the go-to colloquial intensifier. 'Mensch!' is an exclamation expressing surprise — literally 'human!' but used like 'Man!' or 'Geez!' Colloquial intensifiers ranked by informality: 'echt' (really — very informal), 'voll' (totally — youth slang), 'mega' (mega — very slangy), 'wirklich' (really — neutral), 'tatsächlich' (indeed — formal), 'wahrhaftig' (truly — literary). Using 'echt' in academic writing would be inappropriate; in conversation, it's natural and authentic."
+      },
+      {
+        "id": "eg_coll4",
+        "question": "Ich muss noch schnell was _____.",
+        "translation": "(I still need to quickly get something done. — colloquial)",
+        "options": [
+          "erledigen",
+          "machen",
+          "tun",
+          "schaffen"
+        ],
+        "correct": "erledigen",
+        "explanation": "'Erledigen' (to take care of/get done) is widely used in everyday German for completing tasks. 'Was erledigen' is colloquial for 'etwas erledigen' — the shortening of 'etwas' to 'was' is typical spoken German. 'Machen' (to do/make) is more general, 'tun' (to do) is vaguer, 'schaffen' (to manage/accomplish) implies difficulty. The word 'schnell' (quickly) + 'noch' (still) creates urgency: 'noch schnell' = 'quickly before it's too late.' This combination is quintessentially German — efficiently expressing time pressure."
+      },
+      {
+        "id": "eg_coll5",
+        "question": "Der Typ ist voll _____.",
+        "translation": "(That guy is totally nice. — youth slang)",
+        "options": [
+          "nett",
+          "netter",
+          "nettes",
+          "netten"
+        ],
+        "correct": "nett",
+        "explanation": "'Nett' takes no ending because it's a predicate adjective after 'ist' (is). 'Voll' (totally/fully) is youth slang intensifier — more informal than 'echt' or 'sehr.' 'Der Typ' (the guy/dude) is informal for 'der Mann' (the man). Youth slang layers: 'Der Typ ist nett' (neutral) → 'Der Typ ist voll nett' (youth slang) → 'Der Typ ist mega nett' (extreme youth slang). In formal German: 'Der Herr ist sehr freundlich' (The gentleman is very friendly). German youth slang borrows from English: 'nice,' 'cool,' 'cringe,' 'vibes.'"
+      },
+      {
+        "id": "eg_coll6",
+        "question": "Na, wie _____?",
+        "translation": "(So, how's it going? — very informal greeting)",
+        "options": [
+          "geht's",
+          "gehts",
+          "geht es",
+          "gehen"
+        ],
+        "correct": "geht's",
+        "explanation": "'Wie geht's?' is the contraction of 'Wie geht es (dir/Ihnen)?' — the most common German greeting question. 'Na' is an informal conversation opener with no direct English equivalent — it signals casual familiarity, like 'So' or 'Well.' The apostrophe in 'geht's' marks the omission of 'e' from 'es.' Without the dative pronoun, it's understood as 'dir' (informal). Full formal: 'Wie geht es Ihnen?' Typical casual responses: 'Gut, und dir?' (Good, and you?), 'Muss ja' (Have to [keep going]), 'Passt schon' (It's fine)."
+      },
+      {
+        "id": "eg_coll7",
+        "question": "Hast du _____ auf Pizza?",
+        "translation": "(Do you feel like having pizza? — colloquial)",
+        "options": [
+          "Bock",
+          "Lust",
+          "Hunger",
+          "Appetit"
+        ],
+        "correct": "Bock",
+        "explanation": "'Bock haben auf' (to feel like/be up for) is very colloquial — originally from Romani via youth language. 'Bock auf Pizza?' = 'Feel like pizza?' The polite equivalent is 'Lust haben auf': 'Hast du Lust auf Pizza?' 'Keinen Bock' (no desire/can't be bothered) is equally common: 'Ich hab keinen Bock auf Schule' (I can't be bothered with school). 'Hunger' means hunger (physical need), 'Appetit' means appetite (desire for food). 'Bock' vs. 'Lust': same meaning, but 'Bock' is clearly more informal and younger-sounding."
+      },
+      {
+        "id": "eg_coll8",
+        "question": "Das geht gar _____!",
+        "translation": "(That's absolutely not okay! — colloquial protest)",
+        "options": [
+          "nicht",
+          "nie",
+          "nix",
+          "kein"
+        ],
+        "correct": "nicht",
+        "explanation": "'Das geht gar nicht!' (That's absolutely not okay! / That won't do at all!) is a very common colloquial expression of disapproval or protest. 'Gar nicht' means 'not at all' — 'gar' intensifies the negation. The phrase 'Das geht nicht' literally means 'that doesn't go/work' but colloquially means 'that's not acceptable.' Compare register: 'Das ist inakzeptabel' (formal), 'Das geht nicht' (neutral), 'Das geht gar nicht!' (colloquial emphasis), 'Voll daneben!' (slang — totally off). 'Gar' is an intensifier used only with negation."
+      },
+      {
+        "id": "eg_coll9",
+        "question": "Krass, das habe ich nicht _____!",
+        "translation": "(Wow, I didn't know that! — colloquial)",
+        "options": [
+          "gewusst",
+          "gekennt",
+          "gekannt",
+          "geahnt"
+        ],
+        "correct": "gewusst",
+        "explanation": "'Gewusst' is the past participle of 'wissen' (to know facts). 'Wissen' is irregular: weiß, wusste, gewusst. 'Krass!' is a colloquial exclamation meaning 'Wow!/Crazy!/Intense!' — from the adjective 'krass' (extreme/blatant). Compare 'wissen' vs. 'kennen': 'Ich habe es nicht gewusst' (I didn't know it — a fact) vs. 'Ich habe ihn nicht gekannt' (I didn't know him — a person). 'Geahnt' (from 'ahnen' — to suspect) would change the meaning: 'I didn't suspect that.' German distinguishes knowing facts from knowing people."
+      },
+      {
+        "id": "eg_coll10",
+        "question": "Ich check das _____.",
+        "translation": "(I don't get that / I don't understand. — youth slang)",
+        "options": [
+          "nicht",
+          "nix",
+          "nie",
+          "null"
+        ],
+        "correct": "nicht",
+        "explanation": "'Checken' (to check/understand/get it) is borrowed from English and used in German slang to mean 'understand.' 'Ich check das nicht' = 'I don't get it.' The formal equivalent: 'Ich verstehe das nicht.' Other English-origin slang verbs in German: 'chillen' (to chill/relax), 'liken' (to like on social media), 'canceln' (to cancel someone), 'ghosten' (to ghost someone). These verbs follow German conjugation: 'ich checke, du checkst, er checkt.' Mixing English and German is characteristic of modern youth register."
+      },
+      {
+        "id": "eg_coll11",
+        "question": "Lass mal, ich _____ das schon.",
+        "translation": "(Don't worry about it, I'll handle that. — colloquial)",
+        "options": [
+          "mach",
+          "mache",
+          "machen",
+          "macht"
+        ],
+        "correct": "mach",
+        "explanation": "'Lass mal' (leave it/don't worry) is quintessential casual German — 'mal' softens any request or suggestion. 'Ich mach das schon' drops the -e ending of 'mache' — universal in spoken German. 'Schon' here means 'don't worry, I'll take care of it' — a reassuring particle with no direct English translation. The formal equivalent: 'Machen Sie sich keine Sorgen, ich kümmere mich darum.' Spoken German particle magic: 'mal' (softener), 'schon' (reassurance), 'doch' (emphasis/contradiction), 'halt' (resignation/acceptance)."
+      },
+      {
+        "id": "eg_coll12",
+        "question": "Der Film war so _____ langweilig!",
+        "translation": "(The movie was sooo boring! — colloquial complaint)",
+        "options": [
+          "dermaßen",
+          "richtig",
+          "mega",
+          "sowas von"
+        ],
+        "correct": "mega",
+        "explanation": "'Mega' is colloquial/youth intensifier meaning 'extremely/super.' The escalation of informal intensifiers: 'sehr' (very — neutral), 'richtig' (really — slightly informal), 'echt' (really — informal), 'mega' (mega — very informal), 'ultra' (ultra — slangy), 'sowas von' (so extremely — emphatic colloquial). 'Dermaßen' (to such an extent) is actually formal/literary. 'Mega langweilig' captures the dramatic complaint style of colloquial German. In formal writing: 'Der Film war äußerst langweilig' (The film was extremely boring)."
+      },
+      {
+        "id": "eg_coll13",
+        "question": "Guck _____, da drüben ist ein Eichhörnchen!",
+        "translation": "(Look, there's a squirrel over there! — colloquial)",
+        "options": [
+          "mal",
+          "einmal",
+          "doch",
+          "bitte"
+        ],
+        "correct": "mal",
+        "explanation": "'Guck mal!' (Look! / Check it out!) uses 'gucken' (to look — colloquial for 'schauen/sehen') + 'mal' (softening particle). 'Mal' is the most frequent colloquial particle — it makes any imperative friendlier: 'Komm mal her' (come here), 'Hör mal zu' (listen up), 'Sag mal' (tell me/say). Without 'mal,' imperatives sound harsh. 'Gucken' vs. 'schauen' vs. 'sehen': 'gucken' is northern/colloquial, 'schauen' is southern/standard, 'sehen' is neutral/formal. Regional differences color everyday German enormously."
+      },
+      {
+        "id": "eg_coll14",
+        "question": "Alter, das ist ja _____!",
+        "translation": "(Dude, that's awesome! — youth slang exclamation)",
+        "options": [
+          "geil",
+          "schön",
+          "gut",
+          "nett"
+        ],
+        "correct": "geil",
+        "explanation": "'Geil' originally meant 'lustful/horny' but has evolved in colloquial German to mean 'awesome/cool/great' — a dramatic semantic shift. 'Alter!' (literally 'old one') is youth slang for 'Dude!/Bro!' regardless of gender. The particle 'ja' here expresses surprise: 'Das ist ja geil!' = 'That IS awesome!' (discovering something unexpectedly cool). Formality alternatives: 'geil' (slang — awesome) → 'cool' (informal) → 'toll' (neutral — great) → 'ausgezeichnet' (formal — excellent) → 'hervorragend' (very formal — outstanding)."
+      },
+      {
+        "id": "eg_coll15",
+        "question": "Komm, wir _____ los!",
+        "translation": "(Come on, let's go! — colloquial)",
+        "options": [
+          "gehen",
+          "laufen",
+          "fahren",
+          "machen"
+        ],
+        "correct": "gehen",
+        "explanation": "'Losgehen' (to set off/get going) is a separable verb: 'Wir gehen los!' The prefix 'los-' means 'off/away' and adds the sense of starting movement. 'Komm!' (Come!/Come on!) is the du-imperative used as an encouragement. 'Los' appears in many colloquial expressions: 'Los geht's!' (Here we go!/Let's start!), 'Was ist los?' (What's going on?/What's wrong?), 'Leg los!' (Get started!). The construction 'Komm, wir + verb' is an informal 'let's' — friendlier than 'Lass uns + infinitive.'"
+      }
+    ]
+  },
+  {
+    "key": "false_friends",
+    "name": "False Friends",
+    "description": "Falsche Freunde",
+    "iconName": "exclamationmark.triangle",
+    "color": "#ef4444",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_ff1",
+        "question": "Ich will heute eine Prüfung _____.",
+        "translation": "(I want to take an exam today — 'will' means 'want', not future tense!)",
+        "options": [
+          "ablegen",
+          "werden",
+          "sein",
+          "machen"
+        ],
+        "correct": "ablegen",
+        "explanation": "This sentence uses 'will' — but beware! German 'will' means 'want to,' NOT future tense. English speakers constantly confuse this. 'Ich will eine Prüfung ablegen' = 'I want to take an exam.' For future tense, German uses 'werden': 'Ich werde eine Prüfung ablegen.' This is one of the most dangerous false friends because 'will' appears identical in both languages but means completely different things. Remember: German 'will' = English 'want to'; German 'werde' = English 'will.'"
+      },
+      {
+        "id": "eg_ff2",
+        "question": "Er wurde _____, weil er zu schnell gefahren ist.",
+        "translation": "(He was given a fine because he drove too fast — 'bekommen' = 'to get', not 'to become')",
+        "options": [
+          "bestraft",
+          "bekommen",
+          "geworden",
+          "erhalten"
+        ],
+        "correct": "bestraft",
+        "explanation": "'Bestraft' (punished/fined) is correct because German 'bekommen' means 'to receive/get' — NOT 'to become'! This is arguably the most famous German-English false friend. English 'become' = German 'werden.' So 'Er hat eine Strafe bekommen' means 'He received a fine,' not 'He became a fine.' Many English speakers say 'Ich bekomme ein Steak' thinking it means 'I'll become a steak' — it actually means 'I'll get a steak.' Always remember: bekommen = get, werden = become."
+      },
+      {
+        "id": "eg_ff3",
+        "question": "Der Chef hat die Mitarbeiter _____.",
+        "translation": "(The boss fired the employees — 'Gift' = poison, not gift!)",
+        "options": [
+          "entlassen",
+          "begabt",
+          "vergiftet",
+          "geschenkt"
+        ],
+        "correct": "entlassen",
+        "explanation": "'Entlassen' means 'fired/let go.' This item highlights that German 'Gift' means 'poison,' NOT 'gift'! If someone offers you a 'Gift' in German, run! The English word 'gift' translates to German 'Geschenk.' This false friend has caused countless embarrassing moments. Related trap: 'giftig' means 'poisonous/toxic,' not 'gifted.' The word 'begabt' means 'gifted/talented.' These etymological divergences happened centuries ago — both originally meant 'something given,' but German specialized toward 'administered dose' (poison)."
+      },
+      {
+        "id": "eg_ff4",
+        "question": "Sie hat einen _____ Rat gegeben.",
+        "translation": "(She gave good advice — 'brav' = well-behaved, not brave!)",
+        "options": [
+          "guten",
+          "braven",
+          "mutigen",
+          "tapferen"
+        ],
+        "correct": "guten",
+        "explanation": "'Guten Rat' (good advice) is the natural collocation. The false friend here: German 'brav' means 'well-behaved/obedient,' NOT 'brave'! A 'braves Kind' is a well-behaved child, not a brave one. English 'brave' = German 'mutig' or 'tapfer.' So 'She was brave' in German is 'Sie war mutig,' not 'Sie war brav.' Saying someone is 'brav' in German suggests they're docile and follow rules — quite different from the heroic English connotation of 'brave.' Context determines whether this could be patronizing."
+      },
+      {
+        "id": "eg_ff5",
+        "question": "Ich muss _____ den Termin absagen.",
+        "translation": "(I unfortunately have to cancel the appointment — 'eventuell' = possibly, not eventually!)",
+        "options": [
+          "leider",
+          "eventuell",
+          "schließlich",
+          "endlich"
+        ],
+        "correct": "leider",
+        "explanation": "'Leider' (unfortunately) is correct. The trap: German 'eventuell' means 'possibly/perhaps,' NOT 'eventually'! English 'eventually' = German 'schließlich' or 'endlich.' So 'Eventuell komme ich' means 'I might come,' not 'I'll come eventually.' This false friend creates serious misunderstandings in business contexts — saying 'Ich werde eventuell fertig' sounds uncertain ('I'll possibly finish'), when you meant certain ('I'll eventually finish'). Use 'schließlich' or 'am Ende' for English 'eventually.'"
+      },
+      {
+        "id": "eg_ff6",
+        "question": "Der Student hat die Vorlesung _____.",
+        "translation": "(The student attended the lecture — 'Gymnasium' = academic high school, not gym!)",
+        "options": [
+          "besucht",
+          "praktiziert",
+          "studiert",
+          "trainiert"
+        ],
+        "correct": "besucht",
+        "explanation": "'Besucht' (attended/visited) is the standard verb for attending lectures. The false friend connection: 'Gymnasium' in German is an academic-track secondary school (grades 5-12/13), NOT a gym/sports facility! A sports gym is 'Turnhalle' or 'Fitnessstudio.' When Germans say 'Ich gehe aufs Gymnasium,' they mean attending an academically rigorous school preparing for university, not exercising. The German Gymnasium leads to the 'Abitur' (university entrance exam). This confuses English speakers who picture weight rooms instead of classrooms."
+      },
+      {
+        "id": "eg_ff7",
+        "question": "Die _____ hat ein neues Menü zusammengestellt.",
+        "translation": "(The kitchen/chef created a new menu — 'Menü' = set meal, not menu!)",
+        "options": [
+          "Küche",
+          "Speisekarte",
+          "Kantine",
+          "Mensa"
+        ],
+        "correct": "Küche",
+        "explanation": "'Die Küche' (kitchen/cuisine) is correct. False friend alert: German 'Menü' typically means a set meal or fixed-price multi-course meal, NOT a menu (list of dishes)! The English 'menu' (list of options) = German 'Speisekarte.' So 'Das Mittagsmenü kostet 12 Euro' means 'The set lunch costs 12 euros,' not 'The lunch menu costs 12 euros.' In restaurants, ask for 'die Speisekarte' to see all available dishes. 'Menü' implies you'll get a predetermined sequence of courses at a fixed price."
+      },
+      {
+        "id": "eg_ff8",
+        "question": "Er konnte die schwere Aufgabe nicht _____.",
+        "translation": "(He couldn't solve the difficult task — 'sensibel' = sensitive, not sensible!)",
+        "options": [
+          "lösen",
+          "sensibel",
+          "vernünftig",
+          "klug"
+        ],
+        "correct": "lösen",
+        "explanation": "'Lösen' (to solve) fits the context. The false friend: German 'sensibel' means 'sensitive/delicate,' NOT 'sensible'! English 'sensible' (practical/reasonable) = German 'vernünftig' or 'sinnvoll.' So 'Er ist sehr sensibel' means 'He's very sensitive/emotional,' not 'He's very sensible.' Telling a German colleague they're 'sensibel' might offend — it implies emotional fragility rather than the English praise of being practical. For 'That's sensible,' say 'Das ist vernünftig,' never 'Das ist sensibel.'"
+      },
+      {
+        "id": "eg_ff9",
+        "question": "Die Firma hat den _____ veröffentlicht.",
+        "translation": "(The company published the prospectus — 'Prospekt' = brochure, not prospect!)",
+        "options": [
+          "Prospekt",
+          "Aussicht",
+          "Interessent",
+          "Kandidat"
+        ],
+        "correct": "Prospekt",
+        "explanation": "'Prospekt' in German means 'brochure/leaflet/prospectus,' NOT 'prospect' (potential customer/future outlook)! English 'prospect' (opportunity) = German 'Aussicht' or 'Perspektive.' English 'prospect' (potential customer) = German 'Interessent.' So 'Ich habe einen Prospekt bekommen' means 'I received a brochure,' not 'I got a prospect.' In real estate, a 'Prospekt' is a property brochure with details and photos. The verb 'prospektieren' (to prospect/explore) does exist in mining contexts but is rare."
+      },
+      {
+        "id": "eg_ff10",
+        "question": "Nach dem Studium will sie _____ werden.",
+        "translation": "(After university she wants to become a professor — 'Akademiker' = university graduate, not academic!)",
+        "options": [
+          "Professorin",
+          "Akademikerin",
+          "Dozentin",
+          "Lehrerin"
+        ],
+        "correct": "Professorin",
+        "explanation": "'Professorin' (female professor) is correct here. The false friend: 'Akademiker/in' in German simply means 'person with a university degree' — NOT an academic/professor! In English, 'academic' implies a scholarly professional; in German, any university graduate is an 'Akademiker.' So 'Sie ist Akademikerin' just means 'She has a university degree,' not necessarily that she works in academia. For English 'academic' (professor/researcher), use 'Wissenschaftler/in' or 'Dozent/in.' This distinction matters greatly on CVs and job applications."
+      },
+      {
+        "id": "eg_ff11",
+        "question": "Das Konzert war _____ gut besucht.",
+        "translation": "(The concert was quite well attended — 'aktuell' = current, not actually!)",
+        "options": [
+          "ziemlich",
+          "aktuell",
+          "tatsächlich",
+          "eigentlich"
+        ],
+        "correct": "ziemlich",
+        "explanation": "'Ziemlich' (quite/fairly) modifies 'gut besucht' naturally. Major false friend: German 'aktuell' means 'current/up-to-date,' NOT 'actually'! English 'actually' = German 'tatsächlich,' 'eigentlich,' or 'wirklich.' So 'aktuelle Nachrichten' means 'current news,' not 'actual news.' Saying 'Aktuell arbeite ich bei Siemens' means 'Currently I work at Siemens,' not 'Actually I work at Siemens.' This false friend appears in almost every English-German conversation and causes constant confusion in business communication."
+      },
+      {
+        "id": "eg_ff12",
+        "question": "Das Kind hat sich beim Spielen _____.",
+        "translation": "(The child got hurt while playing — 'also' = therefore, not also!)",
+        "options": [
+          "verletzt",
+          "also",
+          "auch",
+          "ebenfalls"
+        ],
+        "correct": "verletzt",
+        "explanation": "'Verletzt' (hurt/injured) completes the reflexive construction 'sich verletzen.' The false friend: German 'also' means 'therefore/so/hence,' NOT 'also' (too/as well)! English 'also' = German 'auch' or 'ebenfalls.' So 'Also, ich denke...' means 'So, I think...' not 'Also, I think...' This creates hilarious misunderstandings: 'Er war also dort' means 'He was therefore there,' not 'He was also there.' For 'He was also there,' say 'Er war auch dort.' One of the sneakiest false friends because both spellings are identical."
+      },
+      {
+        "id": "eg_ff13",
+        "question": "Wir brauchen einen größeren _____.",
+        "translation": "(We need a bigger room — 'Keller' = cellar/basement, not caller!)",
+        "options": [
+          "Raum",
+          "Keller",
+          "Saal",
+          "Platz"
+        ],
+        "correct": "Raum",
+        "explanation": "'Raum' (room/space) is the most natural choice. False friend note: 'Keller' means 'cellar/basement,' not 'caller.' While not an identical spelling, it sounds similar to English ears. The word 'Raum' itself can be tricky — it means both 'room' (physical space) and 'space' (abstract concept, even outer space: 'Weltraum'). German has multiple words for 'room': 'Zimmer' (a room in a house), 'Raum' (general space/room), 'Saal' (hall/large room). Choosing the right one depends on context — 'Raum' is the most versatile and formal."
+      },
+      {
+        "id": "eg_ff14",
+        "question": "Die Polizei hat die Straße _____.",
+        "translation": "(The police blocked off the street — 'Handy' = mobile phone, not handy!)",
+        "options": [
+          "gesperrt",
+          "kontrolliert",
+          "gehandelt",
+          "praktisch"
+        ],
+        "correct": "gesperrt",
+        "explanation": "'Gesperrt' (blocked/closed off) is correct for police road closures. Pop quiz false friend: 'Handy' in German means 'mobile phone/cell phone' — NOT 'handy' (useful/convenient)! English 'handy' = German 'praktisch' or 'nützlich.' Germans borrowed 'Handy' from English but gave it a completely new meaning. This is a pseudo-anglicism — a word that looks English but isn't used this way in English. Other pseudo-anglicisms: 'Beamer' (projector, not BMW), 'Oldtimer' (classic car, not old person), 'Smoking' (tuxedo, not smoking)."
+      },
+      {
+        "id": "eg_ff15",
+        "question": "Diese Aufgabe ist besonders _____.",
+        "translation": "(This task is particularly tricky — 'genial' = brilliant/ingenious, not genial!)",
+        "options": [
+          "knifflig",
+          "genial",
+          "freundlich",
+          "gemütlich"
+        ],
+        "correct": "knifflig",
+        "explanation": "'Knifflig' (tricky/fiddly) describes a challenging task. The false friend: German 'genial' means 'brilliant/ingenious/genius-like,' NOT 'genial' (friendly/cheerful)! English 'genial' = German 'freundlich,' 'herzlich,' or 'leutselig.' So calling someone 'genial' in German is a massive compliment about their intelligence — 'eine geniale Idee' means 'a brilliant/genius idea.' In English, 'a genial person' just means someone pleasant and warm. The praise level is drastically different — German 'genial' puts someone at Einstein level."
+      }
+    ]
+  },
+  {
+    "key": "common_errors",
+    "name": "Common Errors",
+    "description": "Häufige Fehler",
+    "iconName": "xmark.circle",
+    "color": "#f97316",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_err1",
+        "question": "Ich bin nach Deutschland _____.",
+        "translation": "(I went to Germany — movement verbs use 'sein', not 'haben'!)",
+        "options": [
+          "gefahren",
+          "gefahrt",
+          "fahren",
+          "fuhr"
+        ],
+        "correct": "gefahren",
+        "explanation": "Common error #1: Movement verbs form perfect tense with 'sein,' not 'haben'! 'Ich bin gefahren' (I drove/went), never 'Ich habe gefahren.' English speakers default to 'haben' because English always uses 'have' (I have gone). German splits: movement/change-of-state verbs use 'sein' (gehen→bin gegangen, fliegen→bin geflogen, sterben→bin gestorben), while most others use 'haben.' This rule affects dozens of common verbs and is one of the most persistent errors even at advanced levels."
+      },
+      {
+        "id": "eg_err2",
+        "question": "Ich _____ kalt.",
+        "translation": "(I am cold — German uses dative 'mir ist kalt', not 'ich bin kalt'!)",
+        "options": [
+          "Mir ist",
+          "bin",
+          "habe",
+          "fühle"
+        ],
+        "correct": "Mir ist",
+        "explanation": "Critical error: Never say 'Ich bin kalt'! In German, that means 'I am a cold/unfriendly person,' not 'I feel cold.' The correct form is 'Mir ist kalt' (literally: 'To me it is cold') — using the dative pronoun 'mir.' This applies to many physical sensations: 'Mir ist warm' (I'm warm), 'Mir ist schlecht' (I feel sick), 'Mir ist schwindelig' (I'm dizzy). German expresses these states impersonally with dative, while English uses 'I am + adjective.' This is a deeply ingrained English transfer error."
+      },
+      {
+        "id": "eg_err3",
+        "question": "Ich _____ Deutsch seit drei Jahren.",
+        "translation": "(I have been learning German for three years — German uses present tense for ongoing actions!)",
+        "options": [
+          "lerne",
+          "habe gelernt",
+          "lernte",
+          "bin gelernt"
+        ],
+        "correct": "lerne",
+        "explanation": "English speakers instinctively use perfect tense for 'I have been learning for 3 years,' but German uses PRESENT TENSE for actions that started in the past and continue now! 'Ich lerne seit drei Jahren Deutsch' — present tense + 'seit.' This is a fundamental structural difference: English marks the duration with 'have been...ing,' German marks it with 'seit' + present tense. Also applies to: 'Ich wohne seit 2020 hier' (I've been living here since 2020). Using perfect tense would imply you STOPPED learning."
+      },
+      {
+        "id": "eg_err4",
+        "question": "Es _____ mir leid.",
+        "translation": "(I'm sorry — 'tut' not 'macht' or 'ist'!)",
+        "options": [
+          "tut",
+          "macht",
+          "ist",
+          "hat"
+        ],
+        "correct": "tut",
+        "explanation": "'Es tut mir leid' is a fixed expression meaning 'I'm sorry.' Common error: using 'macht' or 'ist' instead of 'tut.' The verb 'tun' (to do) is required here — no substitutions. Another frequent mistake is forgetting the dative 'mir': 'Es tut MIR leid,' not 'Es tut MICH leid.' The accusative/dative confusion plagues English speakers because English 'me' covers both. Related fixed expressions with 'tun': 'Das tut weh' (That hurts), 'Das tut gut' (That feels good). Memorize these as chunks."
+      },
+      {
+        "id": "eg_err5",
+        "question": "Ich habe _____ gefragt.",
+        "translation": "(I asked him — use 'ihn' accusative, not 'ihm' dative for 'fragen'!)",
+        "options": [
+          "ihn",
+          "ihm",
+          "er",
+          "seinen"
+        ],
+        "correct": "ihn",
+        "explanation": "'Fragen' (to ask) takes the ACCUSATIVE, not the dative — this surprises English speakers because 'asking someone' feels indirect. 'Ich habe IHN gefragt' (I asked him), not 'Ich habe IHM gefragt.' This is one of the most common case errors. Other verbs that unexpectedly take accusative: 'anrufen' (to call someone), 'unterrichten' (to teach someone), 'bitten' (to request of someone). Conversely, verbs that unexpectedly take dative: 'helfen' (to help someone), 'danken' (to thank someone), 'folgen' (to follow someone)."
+      },
+      {
+        "id": "eg_err6",
+        "question": "Ich _____ Deutsch sprechen.",
+        "translation": "(I can speak German — 'kann', never 'könne' in indicative!)",
+        "options": [
+          "kann",
+          "könne",
+          "könnte",
+          "kenne"
+        ],
+        "correct": "kann",
+        "explanation": "'Kann' is the correct present indicative of 'können' (can/to be able). Common errors: using 'könne' (Konjunktiv I — used only in reported speech/formal writing) or confusing 'können' with 'kennen' (to know/be familiar with). 'Ich kann Deutsch' = 'I can speak German.' 'Ich kenne Deutsch' doesn't work — 'kennen' is for people and places. Another error: adding 'zu' before the infinitive after modal verbs: say 'Ich kann sprechen,' never 'Ich kann zu sprechen.' Modal verbs take bare infinitives without 'zu.'"
+      },
+      {
+        "id": "eg_err7",
+        "question": "Das Buch, _____ ich lese, ist spannend.",
+        "translation": "(The book that I'm reading is exciting — relative pronoun must match antecedent gender!)",
+        "options": [
+          "das",
+          "der",
+          "die",
+          "was"
+        ],
+        "correct": "das",
+        "explanation": "'Das' is correct because 'Buch' is neuter (das Buch), and relative pronouns must match the GENDER of their antecedent noun, not their function in the clause. Common error: using 'der' or 'die' because English 'that/which' doesn't change. German relative pronouns decline: der/die/das (nom), den/die/das (acc), dem/der/dem (dat), dessen/deren/dessen (gen). English speakers often pick the wrong gender or forget to change case. 'Die Frau, DIE ich kenne' but 'Der Mann, DEN ich kenne' — gender + case must both be correct."
+      },
+      {
+        "id": "eg_err8",
+        "question": "Sie hat _____ für das Geschenk bedankt.",
+        "translation": "(She thanked [someone] for the gift — reflexive 'sich' required with 'bedanken'!)",
+        "options": [
+          "sich",
+          "ihr",
+          "mich",
+          "es"
+        ],
+        "correct": "sich",
+        "explanation": "'Sich bedanken' (to thank) is reflexive — you must include 'sich.' Common error: using 'danken' and 'bedanken' interchangeably without adjusting structure. 'Danken' takes dative: 'Sie hat mir gedankt.' 'Bedanken' is reflexive + 'bei' for the person + 'für' for the thing: 'Sie hat sich bei mir für das Geschenk bedankt.' Forgetting 'sich' or mixing prepositions is extremely common. Many German verbs are reflexive where English equivalents aren't: 'sich erinnern' (remember), 'sich freuen' (be happy), 'sich beeilen' (hurry)."
+      },
+      {
+        "id": "eg_err9",
+        "question": "Wir gehen am Wochenende _____.",
+        "translation": "(We're going shopping on the weekend — 'einkaufen' is separable!)",
+        "options": [
+          "einkaufen",
+          "kaufen ein",
+          "einkauf",
+          "kaufend"
+        ],
+        "correct": "einkaufen",
+        "explanation": "With modal-like constructions using 'gehen + infinitive,' the separable verb stays together as an infinitive: 'Wir gehen einkaufen.' Common error: separating it unnecessarily or using 'kaufen' alone (which means just 'to buy,' not 'to go shopping'). But in main clauses with a conjugated separable verb, it DOES split: 'Ich kaufe morgen ein.' The rule: separable verbs split in present/simple past main clauses, but stay together as infinitives and in subordinate clauses. 'Ich kaufe ein' vs. 'Ich will einkaufen' vs. '...weil ich einkaufe.'"
+      },
+      {
+        "id": "eg_err10",
+        "question": "Er hat den ganzen Tag am Computer _____.",
+        "translation": "(He sat at the computer all day — 'gesessen' with 'sein' in southern German, 'haben' in northern!)",
+        "options": [
+          "gesessen",
+          "gesitzt",
+          "gesetzt",
+          "sitzen"
+        ],
+        "correct": "gesessen",
+        "explanation": "'Gesessen' is the past participle of 'sitzen' (to sit) — an irregular verb. Common error: saying 'gesitzt' (applying regular patterns to an irregular verb). The auxiliary verb varies regionally: northern German uses 'hat gesessen,' southern German and Austrian use 'ist gesessen.' Both are acceptable! Similar pairs: 'stehen→gestanden' (not 'gesteht'), 'liegen→gelegen' (not 'geliegt'). These position verbs are all irregular. Don't confuse: 'sitzen' (to BE sitting) vs. 'setzen' (to PLACE/sit down) — 'sich setzen' = sit down, 'sitzen' = be seated."
+      },
+      {
+        "id": "eg_err11",
+        "question": "Ich freue _____ auf das Wochenende.",
+        "translation": "(I'm looking forward to the weekend — 'sich freuen AUF' for future events!)",
+        "options": [
+          "mich",
+          "mir",
+          "sich",
+          "mein"
+        ],
+        "correct": "mich",
+        "explanation": "Reflexive pronoun 'mich' (accusative) is needed with 'sich freuen.' But the real error trap is the PREPOSITION: 'sich freuen AUF' (looking forward TO something future) vs. 'sich freuen ÜBER' (being happy ABOUT something present/past). English uses 'happy about' for both! 'Ich freue mich auf den Urlaub' (looking forward to vacation — hasn't happened). 'Ich freue mich über das Geschenk' (happy about the gift — already received). Mixing these prepositions is a dead giveaway for non-native speakers."
+      },
+      {
+        "id": "eg_err12",
+        "question": "Das ist _____ als ich dachte.",
+        "translation": "(That is more difficult than I thought — comparative with 'als', not 'wie'!)",
+        "options": [
+          "schwieriger",
+          "mehr schwierig",
+          "schwierig",
+          "am schwierigsten"
+        ],
+        "correct": "schwieriger",
+        "explanation": "'Schwieriger als' (more difficult than) — German comparisons use the suffix '-er' + 'als,' never 'mehr + adjective' (unlike French/Spanish). Common error: using 'wie' instead of 'als.' RULE: 'als' = than (for differences), 'wie' = as (for equality). 'Größer ALS' (bigger than) vs. 'so groß WIE' (as big as). English speakers often say 'besser wie' — this is dialectal German but grammatically incorrect in standard German. Another error: 'mehr besser' — never combine 'mehr' with '-er.' The '-er' ending IS the comparative marker."
+      },
+      {
+        "id": "eg_err13",
+        "question": "Ich esse _____ Obst als Gemüse.",
+        "translation": "(I eat more fruit than vegetables — 'lieber' for preference, 'mehr' for quantity!)",
+        "options": [
+          "lieber",
+          "mehr",
+          "besser",
+          "gerner"
+        ],
+        "correct": "lieber",
+        "explanation": "'Lieber' (rather/preferably) expresses preference. Common confusion: 'lieber' vs. 'mehr' vs. 'besser.' 'Ich esse lieber Obst' = I prefer eating fruit. 'Ich esse mehr Obst' = I eat more fruit (quantity). 'Ich esse besser' = I eat better (quality). English uses 'more' ambiguously for both preference and quantity, but German distinguishes clearly. 'Gern→lieber→am liebsten' (like→prefer→like most). Note: 'gerner' doesn't exist — the comparative of 'gern' is the irregular 'lieber,' just as English 'good→better' is irregular."
+      },
+      {
+        "id": "eg_ff14b",
+        "question": "Wir treffen _____ morgen um acht.",
+        "translation": "(We'll meet tomorrow at eight — reflexive 'uns' required!)",
+        "options": [
+          "uns",
+          "wir",
+          "sich",
+          "einander"
+        ],
+        "correct": "uns",
+        "explanation": "'Sich treffen' (to meet) is reflexive in German — English 'we meet' has no reflexive pronoun. 'Wir treffen UNS morgen' (We'll meet tomorrow). Without 'uns,' 'treffen' means 'to hit/strike.' This reflexive requirement trips up English speakers constantly because English doesn't distinguish: 'meet' covers both. Other reflexive verbs English speakers forget: 'sich setzen' (sit down), 'sich anziehen' (get dressed), 'sich umziehen' (change clothes). The reflexive pronoun matches the subject: ich→mich, du→dich, er/sie/es→sich, wir→uns."
+      },
+      {
+        "id": "eg_err15",
+        "question": "Ich bin am Montag _____ Berlin geflogen.",
+        "translation": "(I flew to Berlin on Monday — 'nach' for cities, not 'zu'!)",
+        "options": [
+          "nach",
+          "zu",
+          "in",
+          "an"
+        ],
+        "correct": "nach",
+        "explanation": "For travel TO cities and countries (without articles), German uses 'nach': 'nach Berlin,' 'nach Deutschland,' 'nach Frankreich.' Common error: using 'zu' (which means 'to' for people and specific locations: 'zum Arzt,' 'zur Schule'). Exception: countries with articles use 'in': 'in die Schweiz,' 'in die Türkei,' 'in die USA.' So the rules are: cities/most countries → 'nach'; countries with articles → 'in + accusative'; people/specific places → 'zu.' Mixing these prepositions is one of the most persistent errors at all levels."
+      }
+    ]
+  },
+  {
+    "key": "passive_alternatives",
+    "name": "Passive Alternatives",
+    "description": "Passiversatzformen",
+    "iconName": "arrow.triangle.swap",
+    "color": "#8b5cf6",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "eg_pa1",
+        "question": "Das Problem _____ sich leicht lösen.",
+        "translation": "(The problem can be solved easily — 'sich lassen' as passive alternative)",
+        "options": [
+          "lässt",
+          "kann",
+          "wird",
+          "hat"
+        ],
+        "correct": "lässt",
+        "explanation": "'Sich lassen + infinitive' is an elegant passive alternative meaning 'can be done.' 'Das Problem lässt sich lösen' = 'The problem can be solved' — without using passive voice (wird gelöst). This construction is extremely common in German and sounds more natural than formal passive in many contexts. It implies possibility and ease. Compare: 'Das lässt sich machen' (That can be done/That's doable) vs. the more bureaucratic 'Das kann gemacht werden.' Native speakers strongly prefer 'sich lassen' in spoken German for expressing passive possibility."
+      },
+      {
+        "id": "eg_pa2",
+        "question": "Das Formular ist bis Freitag _____.",
+        "translation": "(The form is to be submitted by Friday — 'sein + zu + infinitive' expresses obligation)",
+        "options": [
+          "einzureichen",
+          "eingereicht",
+          "einreichen",
+          "einreichend"
+        ],
+        "correct": "einzureichen",
+        "explanation": "'Sein + zu + infinitive' is a powerful passive alternative expressing necessity or possibility. 'Das Formular ist einzureichen' = 'The form must be submitted' (passive + obligation). This construction is very common in official/administrative German. It can express: 1) Obligation: 'Die Hausaufgaben sind bis morgen abzugeben' (Homework must be handed in by tomorrow). 2) Possibility: 'Diese Wohnung ist zu vermieten' (This apartment is available for rent). Context determines whether it means 'must be' or 'can be.'"
+      },
+      {
+        "id": "eg_pa3",
+        "question": "Dieses Gerät ist leicht _____.",
+        "translation": "(This device is easy to operate — adjective with '-bar' suffix as passive alternative)",
+        "options": [
+          "bedienbar",
+          "zu bedienen",
+          "bedienend",
+          "bedient"
+        ],
+        "correct": "bedienbar",
+        "explanation": "The suffix '-bar' creates adjectives meaning 'can be [verb]ed' — a compact passive alternative. 'Bedienbar' = operable/usable. This is equivalent to English '-able/-ible.' Common '-bar' adjectives: 'essbar' (edible), 'trinkbar' (drinkable), 'machbar' (doable/feasible), 'lesbar' (readable), 'waschbar' (washable), 'erreichbar' (reachable). This suffix attaches to verb stems: 'tragen→tragbar' (portable), 'denken→denkbar' (conceivable). It's more concise than 'kann getragen werden' and preferred in everyday and technical German."
+      },
+      {
+        "id": "eg_pa4",
+        "question": "Man _____ hier nicht rauchen.",
+        "translation": "(One may not smoke here — 'man' construction as passive alternative)",
+        "options": [
+          "darf",
+          "wird",
+          "ist",
+          "hat"
+        ],
+        "correct": "darf",
+        "explanation": "The impersonal pronoun 'man' (one/you/people) is German's most common passive alternative. 'Man darf hier nicht rauchen' avoids passive entirely while expressing the same idea as 'Hier wird nicht geraucht' or 'Rauchen ist hier verboten.' 'Man' constructions feel more natural in spoken German: 'Man sagt, dass...' (It is said that...), 'Man kann das so machen' (It can be done this way). Important: 'man' is always nominative and takes third person singular verbs. Don't confuse 'man' (impersonal) with 'Mann' (man/husband) — spelling matters!"
+      },
+      {
+        "id": "eg_pa5",
+        "question": "Es gibt viel _____ in dieser Stadt.",
+        "translation": "(There is a lot to see in this city — 'zu + infinitive' expressing passive possibility)",
+        "options": [
+          "zu sehen",
+          "gesehen",
+          "sehend",
+          "zu sehend"
+        ],
+        "correct": "zu sehen",
+        "explanation": "'Es gibt viel zu sehen' (There's a lot to see) uses 'zu + infinitive' as a passive alternative meaning 'that can be seen/to be seen.' This structure is natural and common: 'Es gibt nichts zu befürchten' (There's nothing to fear), 'Es gibt viel zu tun' (There's a lot to do). It's more idiomatic than passive: compare 'Es gibt viel, was gesehen werden kann' (awkward passive) vs. 'Es gibt viel zu sehen' (natural). The infinitive with 'zu' after 'es gibt' always implies possibility or availability."
+      },
+      {
+        "id": "eg_pa6",
+        "question": "Der Text _____ sich gut lesen.",
+        "translation": "(The text reads well — reflexive construction as passive alternative)",
+        "options": [
+          "lässt",
+          "kann",
+          "wird",
+          "ist"
+        ],
+        "correct": "lässt",
+        "explanation": "'Sich lesen lassen' means 'to be readable/to read well.' 'Der Text lässt sich gut lesen' = 'The text can be read easily / The text reads well.' This reflexive 'lassen' construction works with many verbs to create natural-sounding passive alternatives: 'Das erklärt sich von selbst' (That explains itself / is self-explanatory), 'Das versteht sich' (That goes without saying / is understood). These constructions are stylistically preferred in German writing over heavy passive constructions with 'werden.'"
+      },
+      {
+        "id": "eg_pa7",
+        "question": "Diese Schuhe sind nicht mehr _____.",
+        "translation": "(These shoes are no longer wearable — '-bar' adjective for impossibility)",
+        "options": [
+          "tragbar",
+          "getragen",
+          "tragend",
+          "zu tragen"
+        ],
+        "correct": "tragbar",
+        "explanation": "'Tragbar' (wearable/portable) with negation 'nicht mehr' creates a natural way to say something can no longer be done. Compare the alternatives: 'Diese Schuhe können nicht mehr getragen werden' (formal passive — verbose) vs. 'Diese Schuhe sind nicht mehr tragbar' (concise '-bar' form). The '-bar' suffix encapsulates passive meaning + possibility in one word. Note: 'tragbar' has two meanings depending on context — for clothes it means 'wearable,' for equipment it means 'portable.' 'Ein tragbarer Computer' = laptop/portable computer."
+      },
+      {
+        "id": "eg_pa8",
+        "question": "Hier ist Rauchen _____.",
+        "translation": "(Smoking is prohibited here — nominalized infinitive as passive alternative)",
+        "options": [
+          "verboten",
+          "verbieten",
+          "zu verbieten",
+          "verbietend"
+        ],
+        "correct": "verboten",
+        "explanation": "'Verboten' (forbidden/prohibited) as a past participle used as adjective is a succinct passive alternative. 'Rauchen ist verboten' is more direct than 'Rauchen wird verboten' (is being prohibited — implies ongoing action). German frequently uses past participles as adjectives to express passive states: 'Die Tür ist geschlossen' (The door is closed — state) vs. 'Die Tür wird geschlossen' (The door is being closed — action). This Zustandspassiv (stative passive with 'sein') vs. Vorgangspassiv (process passive with 'werden') distinction is crucial."
+      },
+      {
+        "id": "eg_pa9",
+        "question": "Das Ergebnis _____ noch bekannt zu geben.",
+        "translation": "(The result is still to be announced — 'sein + zu + infinitive' for obligation)",
+        "options": [
+          "ist",
+          "wird",
+          "hat",
+          "kann"
+        ],
+        "correct": "ist",
+        "explanation": "'Ist ... bekannt zu geben' uses the 'sein + zu + infinitive' construction for passive obligation. This is particularly common in official announcements and administrative language: 'Die Ergebnisse sind bis Montag bekannt zu geben' (The results are to be announced by Monday). With separable verbs, 'zu' goes between prefix and stem: 'bekannt zu geben,' 'ein zu reichen,' 'ab zu geben.' This construction is more formal than 'müssen + passive' and typical of written German, bureaucratic texts, and public notices."
+      },
+      {
+        "id": "eg_pa10",
+        "question": "Die Vorteile dieser Methode sind _____ zu übersehen.",
+        "translation": "(The advantages of this method cannot be overlooked — 'nicht zu + infinitive')",
+        "options": [
+          "nicht",
+          "kein",
+          "nie",
+          "kaum"
+        ],
+        "correct": "nicht",
+        "explanation": "'Nicht zu übersehen' (not to be overlooked / impossible to overlook) combines negation with 'zu + infinitive' for emphatic passive impossibility. This is a powerful rhetorical device: 'Die Risiken sind nicht zu unterschätzen' (The risks must not be underestimated). The negative version emphasizes that something CANNOT or SHOULD NOT be done. Compare: 'zu übersehen' (can be overlooked — neutral) vs. 'nicht zu übersehen' (cannot be overlooked — emphatic). Common in academic and journalistic German for making strong claims."
+      },
+      {
+        "id": "eg_pa11",
+        "question": "Der Kuchen _____ gerade gebacken.",
+        "translation": "(The cake is being baked right now — Vorgangspassiv with 'werden')",
+        "options": [
+          "wird",
+          "ist",
+          "hat",
+          "bekommt"
+        ],
+        "correct": "wird",
+        "explanation": "This illustrates the contrast between Vorgangspassiv and its alternatives. 'Wird gebacken' = is being baked (process happening NOW). But you could also say: 'Der Kuchen ist im Ofen' (state description), 'Man bäckt gerade einen Kuchen' (man-construction), or later: 'Der Kuchen ist gebacken' (Zustandspassiv — it's done, state). The Vorgangspassiv with 'werden' emphasizes the ongoing ACTION. German has three passive types: werden-Passiv (process), sein-Passiv (state), bekommen-Passiv (recipient) — much richer than English."
+      },
+      {
+        "id": "eg_pa12",
+        "question": "Er _____ das Buch geschenkt.",
+        "translation": "(He was given the book — 'bekommen'-passive for recipients)",
+        "options": [
+          "bekam",
+          "wurde",
+          "ist",
+          "hat"
+        ],
+        "correct": "bekam",
+        "explanation": "The 'bekommen-Passiv' (also called Rezipientenpassiv or Dativpassiv) focuses on the RECIPIENT of an action. 'Er bekam das Buch geschenkt' = He was given the book as a gift. This is unique to German — the dative object becomes the subject. Compare: 'Sie wurde informiert' (standard passive — she was informed) vs. 'Er bekam das Paket zugeschickt' (recipient passive — he was sent the package). Regional variants use 'kriegen' instead of 'bekommen.' This third passive type fills a gap that even English struggles with."
+      },
+      {
+        "id": "eg_pa13",
+        "question": "Die Aufgabe lässt sich in zwei Stunden _____.",
+        "translation": "(The task can be completed in two hours — 'sich lassen' for feasibility)",
+        "options": [
+          "erledigen",
+          "erledigt",
+          "erledigend",
+          "zu erledigen"
+        ],
+        "correct": "erledigen",
+        "explanation": "'Sich lassen + bare infinitive' — note there's no 'zu' before the infinitive! 'Die Aufgabe lässt sich erledigen' = The task can be done. This is a frequent error: students add 'zu' (*lässt sich zu erledigen) by analogy with other constructions. Remember: 'lassen' is a modal-like verb and takes bare infinitives. The 'sich lassen' passive alternative always implies: 1) possibility (it can be done), and often 2) ease (it's doable). It cannot express obligation — for that, use 'sein + zu + infinitive.'"
+      },
+      {
+        "id": "eg_pa14",
+        "question": "Das Medikament ist rezeptfrei _____.",
+        "translation": "(The medication is available without prescription — '-lich' suffix as passive alternative)",
+        "options": [
+          "erhältlich",
+          "erhalten",
+          "erhaltend",
+          "zu erhalten"
+        ],
+        "correct": "erhältlich",
+        "explanation": "'Erhältlich' (available/obtainable) is formed with the suffix '-lich' from 'erhalten' (to obtain). Like '-bar,' the suffix '-lich' can create adjectives with passive meaning: 'käuflich' (purchasable/for sale), 'verständlich' (understandable), 'begreiflich' (comprehensible), 'unverwüstlich' (indestructible). While '-bar' is more productive (you can create new words), '-lich' forms are fixed vocabulary items. Compare: 'lesbar' (readable — '-bar') and 'leserlich' (legible — '-lich') — subtle meaning difference despite similar function."
+      },
+      {
+        "id": "eg_pa15",
+        "question": "Es _____ sich, früh aufzustehen.",
+        "translation": "(It's worth getting up early — 'es lohnt sich' reflexive impersonal)",
+        "options": [
+          "lohnt",
+          "wird",
+          "ist",
+          "hat"
+        ],
+        "correct": "lohnt",
+        "explanation": "'Es lohnt sich' (it's worth it/it pays off) is a reflexive impersonal construction that avoids passive. Instead of 'Frühes Aufstehen wird belohnt' (Early rising is rewarded — passive), German naturally says 'Es lohnt sich, früh aufzustehen.' Many impersonal reflexive constructions serve as natural passive alternatives: 'Es zeigt sich, dass...' (It turns out that...), 'Es ergibt sich, dass...' (It emerges that...), 'Es versteht sich von selbst' (It goes without saying). These are essential for natural-sounding German."
+      }
+    ]
+  },
+  {
+    "key": "extended_adjective",
+    "name": "Extended Adjective",
+    "description": "Erweiterte Adjektivattribute",
+    "iconName": "text.insert",
+    "color": "#06b6d4",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "eg_ea1",
+        "question": "Der gestern _____ Brief liegt auf dem Tisch.",
+        "translation": "(The letter that arrived yesterday is on the table — extended adjective with participle)",
+        "options": [
+          "angekommene",
+          "angekommen",
+          "ankommende",
+          "angekommener"
+        ],
+        "correct": "angekommene",
+        "explanation": "Extended adjective constructions (erweiterte Adjektivattribute) pack an entire relative clause into a pre-noun modifier. 'Der gestern angekommene Brief' = 'The letter that arrived yesterday.' In English, you'd use a relative clause; German can compress it before the noun. The participle 'angekommene' must be declined like an adjective (here: masculine nominative after definite article → -e ending). This construction is characteristic of formal/written German and can become extremely long in academic and legal texts."
+      },
+      {
+        "id": "eg_ea2",
+        "question": "Die von der Regierung _____ Maßnahmen sind umstritten.",
+        "translation": "(The measures proposed by the government are controversial)",
+        "options": [
+          "vorgeschlagenen",
+          "vorgeschlagen",
+          "vorschlagenden",
+          "vorgeschlagene"
+        ],
+        "correct": "vorgeschlagenen",
+        "explanation": "'Die von der Regierung vorgeschlagenen Maßnahmen' compresses a passive relative clause ('die Maßnahmen, die von der Regierung vorgeschlagen wurden') into an extended adjective. 'Vorgeschlagenen' is the past participle declined as adjective (feminine plural nominative after definite article → -en ending). Reading order: work backwards from the noun ('Maßnahmen') through the modifier ('von der Regierung vorgeschlagen'). These constructions are a hallmark of German newspaper, legal, and academic prose — mastering them is essential for reading comprehension."
+      },
+      {
+        "id": "eg_ea3",
+        "question": "Ein in Deutschland _____ Auto ist weltweit beliebt.",
+        "translation": "(A car manufactured in Germany is popular worldwide)",
+        "options": [
+          "hergestelltes",
+          "hergestellt",
+          "herstellendes",
+          "hergestellter"
+        ],
+        "correct": "hergestelltes",
+        "explanation": "'Ein in Deutschland hergestelltes Auto' = 'A car manufactured in Germany.' The past participle 'hergestelltes' takes neuter nominative indefinite article ending (-es). Extended adjectives after indefinite articles take strong declension endings (showing gender/case more explicitly). Compare: 'das hergestelltE Auto' (definite → weak -e) vs. 'ein hergestelltES Auto' (indefinite → strong -es). This declension switch between definite/indefinite articles in extended adjective constructions is a common error source even for advanced learners."
+      },
+      {
+        "id": "eg_ea4",
+        "question": "Die seit Monaten _____ Verhandlungen sind gescheitert.",
+        "translation": "(The negotiations that have been ongoing for months have failed)",
+        "options": [
+          "andauernden",
+          "andauernd",
+          "angedauerten",
+          "andauernder"
+        ],
+        "correct": "andauernden",
+        "explanation": "'Die seit Monaten andauernden Verhandlungen' uses a PRESENT participle ('andauernd' = ongoing/lasting) as the core of the extended adjective. Present participles describe ongoing actions: 'andauernd' = which are lasting/continuing. Past participles describe completed actions: 'abgeschlossen' = which have been completed. The choice between present and past participle changes the temporal meaning entirely. 'Andauernden' takes plural nominative weak ending (-en after 'die'). Time indicator 'seit Monaten' extends the adjective phrase further."
+      },
+      {
+        "id": "eg_ea5",
+        "question": "Der von vielen Experten als revolutionär _____ Ansatz funktioniert.",
+        "translation": "(The approach considered revolutionary by many experts works)",
+        "options": [
+          "bezeichnete",
+          "bezeichnet",
+          "bezeichnender",
+          "bezeichneten"
+        ],
+        "correct": "bezeichnete",
+        "explanation": "This is a complex extended adjective: 'Der von vielen Experten als revolutionär bezeichnete Ansatz.' It includes: an agent ('von vielen Experten'), a characterization ('als revolutionär'), and the participle ('bezeichnete' = described/termed). Reading strategy: find the noun ('Ansatz'), then read the extended modifier backwards: 'the approach [that is] termed as revolutionary by many experts.' Declension: masculine nominative singular after 'der' → weak ending -e. These multi-layered constructions are why foreign learners struggle with German newspaper articles."
+      },
+      {
+        "id": "eg_ea6",
+        "question": "Das auf dem Tisch _____ Buch gehört mir.",
+        "translation": "(The book lying on the table belongs to me)",
+        "options": [
+          "liegende",
+          "liegendes",
+          "liegend",
+          "gelegene"
+        ],
+        "correct": "liegende",
+        "explanation": "'Das auf dem Tisch liegende Buch' uses the present participle 'liegend' (lying) as adjective. Present participle = active/ongoing: the book IS lying there now. After definite article 'das' (neuter nominative), the ending is weak -e ('liegende'). Don't confuse with 'gelegene,' which comes from a different verb — 'gelegen' (situated/located) typically describes permanent locations of buildings or towns: 'eine günstig gelegene Wohnung' (a conveniently located apartment). 'Liegend' emphasizes the physical position."
+      },
+      {
+        "id": "eg_ea7",
+        "question": "Wir suchen einen in der Branche _____ Mitarbeiter.",
+        "translation": "(We're looking for an employee experienced in the industry)",
+        "options": [
+          "erfahrenen",
+          "erfahren",
+          "erfahrener",
+          "erfahrende"
+        ],
+        "correct": "erfahrenen",
+        "explanation": "'Einen ... erfahrenen Mitarbeiter' — after accusative masculine indefinite article 'einen,' the adjective takes mixed declension ending -en. 'In der Branche erfahrenen' = experienced in the industry. This is a common pattern in job advertisements: extended adjectives pack multiple qualifications into concise noun phrases. Compare: 'einen motivierten, teamfähigen Mitarbeiter' (a motivated, team-capable employee) — string of adjectives. But 'einen in der Branche seit Jahren erfahrenen Mitarbeiter' — extended adjective with prepositional detail."
+      },
+      {
+        "id": "eg_ea8",
+        "question": "Die für morgen _____ Konferenz wurde verschoben.",
+        "translation": "(The conference planned for tomorrow was postponed)",
+        "options": [
+          "geplante",
+          "geplant",
+          "planende",
+          "geplanten"
+        ],
+        "correct": "geplante",
+        "explanation": "'Die für morgen geplante Konferenz' = 'The conference planned for tomorrow.' Past participle 'geplant' (planned) takes feminine nominative weak ending -e after 'die.' This construction is everywhere in business German: 'die vereinbarte Frist' (the agreed deadline), 'die erwarteten Ergebnisse' (the expected results), 'das vorgesehene Budget' (the planned budget). These are simple extended adjectives — just participle + time/manner adverbial. They're the gateway to understanding longer, more complex constructions."
+      },
+      {
+        "id": "eg_ea9",
+        "question": "Ein noch nie _____ Ergebnis wurde erzielt.",
+        "translation": "(A never-before-seen result was achieved — 'dagewesenes' = unprecedented)",
+        "options": [
+          "dagewesenes",
+          "dagewesen",
+          "dagewesenem",
+          "dagewesene"
+        ],
+        "correct": "dagewesenes",
+        "explanation": "'Ein noch nie dagewesenes Ergebnis' (an unprecedented result, literally: a never-yet-been-there result) shows how German compresses complex ideas into extended adjectives. The past participle 'dagewesen' (from 'da sein' = to exist/be there) + 'noch nie' (never before) creates 'unprecedented.' After neuter nominative indefinite 'ein,' strong ending -es is required. This is elegant but demanding — readers must unpack: 'a result [that has] never before existed/been seen.' Alternatives: 'beispiellos' (unprecedented), 'einmalig' (unique), but the extended form is more vivid."
+      },
+      {
+        "id": "eg_ea10",
+        "question": "Mit dem neu _____ System arbeiten wir effizienter.",
+        "translation": "(We work more efficiently with the newly introduced system)",
+        "options": [
+          "eingeführten",
+          "eingeführt",
+          "einführenden",
+          "eingeführtem"
+        ],
+        "correct": "eingeführten",
+        "explanation": "'Mit dem neu eingeführten System' — after 'mit + dem' (dative neuter), the adjective takes weak ending -en. 'Eingeführten' (introduced/implemented) from 'einführen.' The adverb 'neu' (newly) modifies the participle. In dative constructions, extended adjectives always take -en ending after definite articles regardless of gender: 'mit dem ... -en System,' 'mit der ... -en Methode,' 'mit den ... -en Regeln.' This consistency makes dative actually easier for extended adjectives than nominative or accusative."
+      },
+      {
+        "id": "eg_ea11",
+        "question": "Die ständig _____ Nachfrage überrascht die Branche.",
+        "translation": "(The constantly growing demand surprises the industry)",
+        "options": [
+          "wachsende",
+          "gewachsene",
+          "wachsend",
+          "wachsenden"
+        ],
+        "correct": "wachsende",
+        "explanation": "'Die ständig wachsende Nachfrage' uses present participle 'wachsend' (growing) — the demand IS actively growing now (ongoing process). If we used past participle 'gewachsene,' it would mean 'the demand that HAS grown' (completed growth). This distinction is crucial: 'steigend' (rising — now) vs. 'gestiegen' (risen — completed); 'fallend' (falling — now) vs. 'gefallen' (fallen — completed). Financial German uses these constantly: 'die sinkenden Kurse' (falling prices — currently dropping) vs. 'die gesunkenen Kurse' (prices that have dropped)."
+      },
+      {
+        "id": "eg_ea12",
+        "question": "Eine vom Arzt _____ Diät hilft bei der Genesung.",
+        "translation": "(A diet recommended by the doctor helps with recovery)",
+        "options": [
+          "empfohlene",
+          "empfohlen",
+          "empfehlende",
+          "empfohlener"
+        ],
+        "correct": "empfohlene",
+        "explanation": "'Eine vom Arzt empfohlene Diät' = 'A diet recommended by the doctor.' The agent 'vom Arzt' (by the doctor) mirrors passive voice: 'die Diät, die vom Arzt empfohlen wurde.' Past participle 'empfohlene' takes feminine nominative strong-ish ending -e after 'eine.' Note: after indefinite articles, endings show more information than after definite articles. This is the mixed declension pattern: 'eine empfohlene' (f.nom) vs. 'einen empfohlenen' (m.acc) vs. 'einem empfohlenen' (m/n.dat)."
+      },
+      {
+        "id": "eg_ea13",
+        "question": "Der langsam aber sicher _____ Fortschritt ist sichtbar.",
+        "translation": "(The slowly but surely advancing progress is visible)",
+        "options": [
+          "voranschreitende",
+          "vorangeschrittene",
+          "voranschreitend",
+          "voranschreitender"
+        ],
+        "correct": "voranschreitende",
+        "explanation": "'Der langsam aber sicher voranschreitende Fortschritt' — a beautifully extended adjective with adverbial modifiers 'langsam aber sicher' (slowly but surely). Present participle 'voranschreitend' (advancing/progressing) describes ongoing movement. Masculine nominative after 'der' → weak ending -e. This example shows how German extended adjectives can incorporate coordinated adverbs, creating rhythmic, literary-quality prose. Reading tip: always identify the article-adjective-noun frame first (der...voranschreitende Fortschritt), then read the modifiers between them."
+      },
+      {
+        "id": "eg_ea14",
+        "question": "Im vergangenen Jahr wurden die von uns _____ Ziele erreicht.",
+        "translation": "(Last year the goals set by us were achieved)",
+        "options": [
+          "gesteckten",
+          "gesteckt",
+          "steckenden",
+          "gesteckter"
+        ],
+        "correct": "gesteckten",
+        "explanation": "'Die von uns gesteckten Ziele' = 'the goals set by us.' 'Gesteckt' from 'stecken' — 'Ziele stecken' means 'to set goals.' Plural nominative after 'die' → weak ending -en. This business German construction shows reflexive agent 'von uns': the company sets its own goals. Extended adjectives in annual reports and business communication are ubiquitous: 'die im Vorjahr erzielten Umsätze' (revenues achieved in the previous year), 'die geplanten Investitionen' (planned investments). Mastering these is essential for professional German."
+      },
+      {
+        "id": "eg_ea15",
+        "question": "Die immer komplizierter _____ Regulierung belastet kleine Firmen.",
+        "translation": "(The increasingly complicated regulation burdens small companies)",
+        "options": [
+          "werdende",
+          "werdenden",
+          "gewordene",
+          "geworden"
+        ],
+        "correct": "werdende",
+        "explanation": "'Die immer komplizierter werdende Regulierung' combines a comparative ('komplizierter') with present participle ('werdend' = becoming). It means 'the regulation that is becoming increasingly complicated.' Feminine nominative after 'die' → weak ending -e. This shows how extended adjectives can include comparative structures: 'die immer größer werdende Kluft' (the ever-widening gap), 'die stetig wachsende Bevölkerung' (the steadily growing population). These are standard in journalistic and academic German for describing trends and developments."
+      }
+    ]
+  },
+  {
+    "key": "verb_patterns",
+    "name": "Verb Patterns",
+    "description": "Verbmuster",
+    "iconName": "list.bullet.indent",
+    "color": "#14b8a6",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "eg_vpt1",
+        "question": "Ich gewöhne _____ an das kalte Wetter.",
+        "translation": "(I'm getting used to the cold weather — 'sich gewöhnen an + accusative')",
+        "options": [
+          "mich",
+          "mir",
+          "sich",
+          "mein"
+        ],
+        "correct": "mich",
+        "explanation": "'Sich gewöhnen an + accusative' (to get used to) is a fixed verb pattern. The reflexive pronoun is ACCUSATIVE ('mich,' not 'mir'), and the preposition 'an' is fixed. German verb patterns consist of: verb + reflexive pronoun (if any) + fixed preposition + required case. These patterns cannot be changed or guessed from English. 'Sich gewöhnen an' = get used to; 'sich erinnern an' = remember (about); 'denken an' = think of. Each must be memorized as a complete unit including case and preposition."
+      },
+      {
+        "id": "eg_vpt2",
+        "question": "Er interessiert sich _____ deutsche Geschichte.",
+        "translation": "(He is interested in German history — 'sich interessieren für + accusative')",
+        "options": [
+          "für",
+          "in",
+          "an",
+          "über"
+        ],
+        "correct": "für",
+        "explanation": "'Sich interessieren FÜR' (to be interested in) — English uses 'in,' German uses 'für.' This is a prime example of why verb-preposition patterns must be memorized. You cannot translate English prepositions directly: 'interested IN' ≠ 'interessiert IN.' Other 'für' patterns: 'sich entscheiden für' (decide on), 'sorgen für' (take care of), 'sich bedanken für' (thank for), 'kämpfen für' (fight for). The preposition 'für' always takes accusative. Building a mental dictionary of these patterns is essential for fluent German."
+      },
+      {
+        "id": "eg_vpt3",
+        "question": "Sie wartet _____ den Bus.",
+        "translation": "(She is waiting for the bus — 'warten auf + accusative')",
+        "options": [
+          "auf",
+          "für",
+          "nach",
+          "an"
+        ],
+        "correct": "auf",
+        "explanation": "'Warten AUF + accusative' (to wait for) — NOT 'warten für'! English 'wait for' leads students to use 'für,' but German requires 'auf.' This preposition mismatch is a constant source of errors. Other 'auf' patterns: 'sich freuen auf' (look forward to), 'achten auf' (pay attention to), 'sich verlassen auf' (rely on), 'ankommen auf' (depend on), 'sich konzentrieren auf' (concentrate on). Note: 'auf' takes accusative in these verb patterns (direction/abstract target), not dative (location)."
+      },
+      {
+        "id": "eg_vpt4",
+        "question": "Er leidet _____ starken Kopfschmerzen.",
+        "translation": "(He suffers from severe headaches — 'leiden an/unter + dative')",
+        "options": [
+          "unter",
+          "von",
+          "mit",
+          "aus"
+        ],
+        "correct": "unter",
+        "explanation": "'Leiden unter + dative' (to suffer from) — 'unter' takes dative here. Note: 'leiden an + dative' also works with a slight nuance: 'leiden an' for medical conditions ('an einer Krankheit'), 'leiden unter' for circumstances/situations ('unter dem Lärm'). Both mean 'suffer from' but with different contexts. Other dative-preposition patterns: 'teilnehmen an' (participate in), 'zweifeln an' (doubt), 'arbeiten an' (work on), 'sich fürchten vor' (be afraid of). The dative case after these prepositions is fixed."
+      },
+      {
+        "id": "eg_vpt5",
+        "question": "Die Entscheidung hängt _____ vielen Faktoren ab.",
+        "translation": "(The decision depends on many factors — 'abhängen von + dative')",
+        "options": [
+          "von",
+          "auf",
+          "an",
+          "aus"
+        ],
+        "correct": "von",
+        "explanation": "'Abhängen von + dative' (to depend on) — a separable verb with fixed preposition. In main clauses: 'Es hängt von dir ab' (It depends on you). In subordinate clauses: '...weil es von dir abhängt.' English 'depend ON' → German 'abhängen VON' — different prepositions again! Other 'von' patterns: 'träumen von' (dream of/about), 'sich erholen von' (recover from), 'sich verabschieden von' (say goodbye to), 'überzeugen von' (convince of). The 'von' in these patterns always takes dative."
+      },
+      {
+        "id": "eg_vpt6",
+        "question": "Ich habe ihn _____ gebeten, leiser zu sein.",
+        "translation": "(I asked him to be quieter — 'bitten um + accusative' or 'bitten + acc person')",
+        "options": [
+          "darum",
+          "dafür",
+          "damit",
+          "davon"
+        ],
+        "correct": "darum",
+        "explanation": "'Bitten um' (to ask for/request) uses 'um + accusative.' When followed by a clause, the da-compound 'darum' replaces the prepositional object: 'Ich habe ihn darum gebeten, leiser zu sein' = I asked him (for this:) to be quieter. Da-compounds are the glue between verb patterns and subordinate clauses: 'sich freuen auf → sich darauf freuen, dass...' 'warten auf → darauf warten, dass...' 'denken an → daran denken, dass...' The da-compound matches the verb's required preposition: darauf, daran, darum, davon, etc."
+      },
+      {
+        "id": "eg_vpt7",
+        "question": "Sie hat sich _____ die Verspätung entschuldigt.",
+        "translation": "(She apologized for the delay — 'sich entschuldigen für + accusative')",
+        "options": [
+          "für",
+          "über",
+          "wegen",
+          "um"
+        ],
+        "correct": "für",
+        "explanation": "'Sich entschuldigen für' (to apologize for) — reflexive + fixed preposition + accusative. Common error: using 'über' or 'wegen' by analogy with English. You can also say 'sich entschuldigen bei' (apologize TO someone): 'Sie hat sich bei ihrem Chef für die Verspätung entschuldigt.' Many German verbs combine with both a person-preposition and a thing-preposition: 'sich bedanken bei + person für + thing,' 'sich beschweren bei + person über + thing,' 'sich erkundigen bei + person nach + thing.'"
+      },
+      {
+        "id": "eg_vpt8",
+        "question": "Wir haben uns _____ die letzte Reise unterhalten.",
+        "translation": "(We talked about the last trip — 'sich unterhalten über + accusative')",
+        "options": [
+          "über",
+          "von",
+          "um",
+          "für"
+        ],
+        "correct": "über",
+        "explanation": "'Sich unterhalten über + accusative' (to talk/chat about) — 'über' (about/concerning) is one of the most versatile prepositions in verb patterns. Other 'über' verbs: 'sprechen über' (speak about), 'nachdenken über' (think about), 'diskutieren über' (discuss), 'sich ärgern über' (be annoyed about), 'sich beschweren über' (complain about), 'sich wundern über' (be amazed at), 'berichten über' (report on). Note: 'über' in verb patterns ALWAYS takes accusative, even though locational 'über' can take dative."
+      },
+      {
+        "id": "eg_vpt9",
+        "question": "Die Lehrerin besteht _____ Pünktlichkeit.",
+        "translation": "(The teacher insists on punctuality — 'bestehen auf + dative')",
+        "options": [
+          "auf",
+          "an",
+          "über",
+          "um"
+        ],
+        "correct": "auf",
+        "explanation": "'Bestehen auf + dative' (to insist on) — note: 'auf' here takes DATIVE, not accusative! This is one of the exceptions where 'auf' in a verb pattern uses dative. Compare: 'warten auf + ACC' (wait for) vs. 'bestehen auf + DAT' (insist on). 'Bestehen' has three meanings with different prepositions: 'bestehen auf + DAT' (insist on), 'bestehen aus + DAT' (consist of), 'bestehen + ACC' (pass an exam: 'eine Prüfung bestehen'). Same verb, three prepositions, three meanings — this is why verb patterns require careful study."
+      },
+      {
+        "id": "eg_vpt10",
+        "question": "Er hat mich _____ seiner Party eingeladen.",
+        "translation": "(He invited me to his party — 'einladen zu + dative')",
+        "options": [
+          "zu",
+          "auf",
+          "für",
+          "nach"
+        ],
+        "correct": "zu",
+        "explanation": "'Einladen zu + dative' (to invite to) — another preposition mismatch: English 'invite TO' might suggest 'nach' or 'auf,' but German uses 'zu.' Other 'zu' patterns: 'gehören zu' (belong to), 'führen zu' (lead to), 'gratulieren zu' (congratulate on), 'beitragen zu' (contribute to), 'sich entschließen zu' (decide to). The preposition 'zu' in verb patterns always takes dative: 'zur Party einladen,' 'zum Erfolg beitragen.' Building fluency requires actively collecting these zu-patterns."
+      },
+      {
+        "id": "eg_vpt11",
+        "question": "Sie kümmert sich _____ ihre kranke Mutter.",
+        "translation": "(She takes care of her sick mother — 'sich kümmern um + accusative')",
+        "options": [
+          "um",
+          "für",
+          "über",
+          "auf"
+        ],
+        "correct": "um",
+        "explanation": "'Sich kümmern um + accusative' (to take care of/look after) — 'um' here means 'about/concerning.' Other 'um' patterns: 'bitten um' (ask for), 'sich bewerben um' (apply for), 'es geht um' (it's about), 'sich handeln um' (to be about/concern), 'kämpfen um' (fight for). All take accusative. Note the difference: 'sich sorgen um' (worry about someone), 'sorgen für' (provide for/take care of) — the preposition change shifts the meaning from emotional concern to practical provision."
+      },
+      {
+        "id": "eg_vpt12",
+        "question": "Er hat sich _____ das Ergebnis gewundert.",
+        "translation": "(He was surprised at the result — 'sich wundern über + accusative')",
+        "options": [
+          "über",
+          "an",
+          "von",
+          "für"
+        ],
+        "correct": "über",
+        "explanation": "'Sich wundern über + accusative' (to be surprised at/amazed by). This is different from 'wundern' without 'sich': 'Es wundert mich' (It surprises me — accusative object, no preposition). The reflexive version emphasizes the subject's reaction: 'Ich wundere mich über das Wetter' (I'm amazed at the weather). Related expressions: 'Kein Wunder!' (No wonder!), 'Es ist ein Wunder, dass...' (It's a miracle that...). The verb 'wundern' belongs to the 'über' family of emotion verbs alongside 'sich freuen über' and 'sich ärgern über.'"
+      },
+      {
+        "id": "eg_vpt13",
+        "question": "Sie hat ihn _____ überredet, mitzukommen.",
+        "translation": "(She persuaded him to come along — 'überreden + acc person + zu')",
+        "options": [
+          "dazu",
+          "damit",
+          "darum",
+          "dafür"
+        ],
+        "correct": "dazu",
+        "explanation": "'Überreden zu + dative' (to persuade to). With a following clause, use da-compound 'dazu': 'Ihn dazu überreden, mitzukommen.' Note the two objects: accusative person ('ihn') + zu-prepositional object ('dazu/zu + dative'). Similar patterns: 'jemanden dazu bringen, etwas zu tun' (get someone to do something), 'jemanden dazu zwingen' (force someone to), 'jemanden dazu ermutigen' (encourage someone to). The 'dazu...zu + infinitive' frame is extremely productive in German for expressing persuasion, encouragement, and compulsion."
+      },
+      {
+        "id": "eg_vpt14",
+        "question": "Können Sie mir _____ der Frage helfen?",
+        "translation": "(Can you help me with the question? — 'helfen bei + dative' or 'helfen mit + dative')",
+        "options": [
+          "bei",
+          "mit",
+          "an",
+          "für"
+        ],
+        "correct": "bei",
+        "explanation": "'Helfen bei + dative' (help with) is the standard pattern for helping with a task or issue. 'Helfen mit + dative' also exists but emphasizes the instrument/means of help. Important: 'helfen' itself takes DATIVE for the person: 'Können Sie MIR helfen?' (not 'mich'). This is one of the most-tested dative verbs. Other dative-person verbs: 'danken' (thank), 'gratulieren' (congratulate), 'folgen' (follow), 'gehören' (belong to), 'passen' (fit/suit), 'gefallen' (please/like), 'glauben' (believe someone)."
+      },
+      {
+        "id": "eg_vpt15",
+        "question": "Er hat sich bei der Firma _____ eine Stelle beworben.",
+        "translation": "(He applied to the company for a position — 'sich bewerben um + accusative')",
+        "options": [
+          "um",
+          "für",
+          "auf",
+          "nach"
+        ],
+        "correct": "um",
+        "explanation": "'Sich bewerben um + accusative' (to apply for). This pattern includes 'bei + dative' for the organization: 'sich bei einer Firma um eine Stelle bewerben.' Note: some Germans also use 'sich bewerben auf + accusative' (influenced by job postings: 'auf diese Stelle'), but 'um' is the standard pattern. The full construction has three parts: reflexive 'sich' + 'bei' (where) + 'um' (what for). These multi-preposition patterns represent peak complexity in German verb patterns and are mastered through extensive reading and practice."
+      }
+    ]
+  },
+  {
+    "key": "exam_strategies",
+    "name": "Exam Strategies",
+    "description": "Prüfungsstrategien",
+    "iconName": "graduationcap",
+    "color": "#f59e0b",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "eg_exam1",
+        "question": "Obwohl er müde war, _____ er die Prüfung bestanden.",
+        "translation": "(Although he was tired, he passed the exam)",
+        "options": [
+          "hat",
+          "ist",
+          "wird",
+          "hatte"
+        ],
+        "correct": "hat",
+        "explanation": "In exam contexts, 'bestehen' (to pass) uses 'haben' as its auxiliary. 'Er hat die Prüfung bestanden' is Perfekt tense — the most common past tense in spoken German. Many exam tasks test whether you know which auxiliary ('haben' or 'sein') to use. The rule: most transitive verbs (those with a direct object like 'die Prüfung') take 'haben'. Movement and state-change verbs take 'sein'. This distinction is tested extensively in Goethe and TestDaF exams — mastering it is essential."
+      },
+      {
+        "id": "eg_exam2",
+        "question": "Je mehr man übt, _____ besser wird man.",
+        "translation": "(The more one practices, the better one gets)",
+        "options": [
+          "desto",
+          "als",
+          "wie",
+          "so"
+        ],
+        "correct": "desto",
+        "explanation": "'Je ... desto/umso ...' is the German correlative comparative structure — 'the more ... the more ...'. 'Je' always starts the first clause, and 'desto' or 'umso' starts the second. Word order matters: after 'je', the verb goes to the end (subordinate clause); after 'desto', the verb comes immediately (main clause with inversion). This structure appears frequently in B2/C1 exams. Both 'desto' and 'umso' are correct, but 'desto' is more common in formal writing."
+      },
+      {
+        "id": "eg_exam3",
+        "question": "Es ist wichtig, dass man regelmäßig _____.",
+        "translation": "(It is important that one practices regularly)",
+        "options": [
+          "übt",
+          "üben",
+          "geübt",
+          "übte"
+        ],
+        "correct": "übt",
+        "explanation": "'Dass' introduces a subordinate clause where the conjugated verb goes to the END — this is the most important German word order rule tested in exams. 'Es ist wichtig, dass man übt' places 'übt' at the final position. Students often mistake this by keeping verb-second order. The 'dass' clause pattern (subject + objects + verb-at-end) is tested in every German proficiency exam from A2 upward. Practice identifying all subordinating conjunctions: dass, weil, obwohl, wenn, als, bevor, nachdem, damit."
+      },
+      {
+        "id": "eg_exam4",
+        "question": "Der Text, _____ ich gelesen habe, war sehr interessant.",
+        "translation": "(The text that I read was very interesting)",
+        "options": [
+          "den",
+          "der",
+          "dem",
+          "das"
+        ],
+        "correct": "den",
+        "explanation": "'Den' is the accusative masculine relative pronoun — used because 'Text' is masculine and it's the direct object of 'gelesen habe' (I read). Relative clauses are heavily tested in German exams. The relative pronoun must agree in gender and number with the noun it refers to, but its CASE depends on its function within the relative clause. Here: 'Text' = masculine, and 'ich habe den Text gelesen' → accusative. This three-step analysis (gender from noun, case from function) is the key exam strategy."
+      },
+      {
+        "id": "eg_exam5",
+        "question": "Wenn ich mehr Zeit hätte, _____ ich nach Deutschland reisen.",
+        "translation": "(If I had more time, I would travel to Germany)",
+        "options": [
+          "würde",
+          "werde",
+          "will",
+          "wollte"
+        ],
+        "correct": "würde",
+        "explanation": "'Würde + Infinitiv' is the standard Konjunktiv II form for expressing unreal conditions — tested extensively in B1+ exams. The structure mirrors English 'would + verb'. 'Wenn ich hätte' (if I had — unreal) → 'würde ich reisen' (I would travel). Note: common verbs like haben, sein, werden, wissen, and modals use their own Konjunktiv II forms (hätte, wäre, würde, wüsste) rather than 'würde + Infinitiv'. Recognizing when to use which form is a frequent exam trap."
+      },
+      {
+        "id": "eg_exam6",
+        "question": "Die Studenten, die fleißig gelernt _____, haben gute Noten bekommen.",
+        "translation": "(The students who studied diligently got good grades)",
+        "options": [
+          "hatten",
+          "haben",
+          "hätten",
+          "sind"
+        ],
+        "correct": "hatten",
+        "explanation": "'Hatten gelernt' is Plusquamperfekt (past perfect) — expressing an action completed BEFORE another past action. The students' studying (Plusquamperfekt) happened before they received grades (Perfekt). In exams, temporal sequencing is crucial: Plusquamperfekt for the earlier event, Perfekt/Präteritum for the later one. The relative clause 'die fleißig gelernt hatten' has the verb at the end (subordinate clause rule). This combination of relative clause + past perfect is a classic B2 exam construction."
+      },
+      {
+        "id": "eg_exam7",
+        "question": "Anstatt zu arbeiten, _____ er den ganzen Tag fern.",
+        "translation": "(Instead of working, he watched TV all day)",
+        "options": [
+          "sah",
+          "sieht",
+          "sehen",
+          "sähe"
+        ],
+        "correct": "sah",
+        "explanation": "'Anstatt zu + Infinitiv' (instead of doing) is an infinitive construction frequently tested in exams. The main clause uses Präteritum 'sah fern' — from 'fernsehen' (to watch TV), a separable verb where the prefix 'fern' detaches. In Präteritum: 'er sah fern'. Exam tip: 'anstatt zu', 'ohne zu', and 'um zu' are the three key infinitive constructions. They always take 'zu + Infinitiv' and express contrast, absence, or purpose respectively. Knowing all three and their meanings is essential for B1+."
+      },
+      {
+        "id": "eg_exam8",
+        "question": "_____ des schlechten Wetters gingen wir spazieren.",
+        "translation": "(Despite the bad weather, we went for a walk)",
+        "options": [
+          "Trotz",
+          "Wegen",
+          "Während",
+          "Aufgrund"
+        ],
+        "correct": "Trotz",
+        "explanation": "'Trotz' (despite) is a genitive preposition expressing concession — a high-frequency exam word. 'Trotz des schlechten Wetters' shows the genitive case after 'trotz'. Other genitive prepositions tested in exams: 'wegen' (because of), 'während' (during), 'aufgrund' (due to), 'statt' (instead of). All of these require genitive, and getting the case right after them is a common exam task. Note: in spoken German, 'trotz' sometimes takes dative, but exams expect genitive in formal register."
+      },
+      {
+        "id": "eg_exam9",
+        "question": "Er fragte mich, ob ich ihm _____ könnte.",
+        "translation": "(He asked me whether I could help him)",
+        "options": [
+          "helfen",
+          "helfe",
+          "geholfen",
+          "hilft"
+        ],
+        "correct": "helfen",
+        "explanation": "Indirect questions with 'ob' (whether) are subordinate clauses — the conjugated verb 'könnte' goes to the end, and the infinitive 'helfen' precedes it. 'Ob ich ihm helfen könnte' = whether I could help him. In exam writing tasks, transforming direct questions into indirect ones is frequently tested. Direct: 'Können Sie mir helfen?' → Indirect: 'Er fragte, ob ich ihm helfen könnte.' The modal 'könnte' (Konjunktiv II of können) adds politeness. Note: 'helfen' takes dative ('ihm'), not accusative."
+      },
+      {
+        "id": "eg_exam10",
+        "question": "Das Buch wurde von vielen Menschen _____.",
+        "translation": "(The book was read by many people)",
+        "options": [
+          "gelesen",
+          "lesen",
+          "las",
+          "liest"
+        ],
+        "correct": "gelesen",
+        "explanation": "Passive voice (Vorgangspassiv) with 'wurde + Partizip II' is one of the most tested structures in German exams. 'Wurde gelesen' = was read. The agent is introduced by 'von + Dativ' (von vielen Menschen). Exam tip: distinguish between Vorgangspassiv (werden + PP, describing an action) and Zustandspassiv (sein + PP, describing a state). 'Das Buch wird gelesen' (is being read) vs. 'Das Buch ist gelesen' (is read/finished). Passive transformation exercises appear in virtually every German proficiency exam."
+      },
+      {
+        "id": "eg_exam11",
+        "question": "Nachdem er _____ hatte, ging er ins Bett.",
+        "translation": "(After he had eaten, he went to bed)",
+        "options": [
+          "gegessen",
+          "essen",
+          "aß",
+          "isst"
+        ],
+        "correct": "gegessen",
+        "explanation": "'Nachdem' (after) triggers a specific tense sequence in German: the 'nachdem' clause uses a tense ONE STEP further in the past than the main clause. Main clause in Präteritum ('ging') → nachdem clause in Plusquamperfekt ('gegessen hatte'). This tense correlation is strictly tested in exams. The pattern: nachdem + Plusquamperfekt → Präteritum/Perfekt main clause. Or: nachdem + Perfekt → Präsens main clause. 'Gegessen' is the Partizip II of 'essen' (irregular: essen-aß-gegessen). Mastering these temporal conjunctions is key for B2."
+      },
+      {
+        "id": "eg_exam12",
+        "question": "Ich bin der Meinung, _____ wir mehr für die Umwelt tun sollten.",
+        "translation": "(I am of the opinion that we should do more for the environment)",
+        "options": [
+          "dass",
+          "das",
+          "weil",
+          "denn"
+        ],
+        "correct": "dass",
+        "explanation": "'Dass' (that, conjunction) vs. 'das' (that, article/pronoun) is one of the most common spelling traps in German exams. 'Dass' introduces a subordinate clause and sends the verb to the end: 'dass wir tun sollten'. 'Das' is a definite article or relative/demonstrative pronoun. Quick exam trick: if you can replace it with 'welches' or 'dieses', use 'das'; if not, use 'dass'. In 'Ich bin der Meinung, dass...' — you can't say 'welches wir tun sollten', so it's 'dass'. This distinction is tested from A2 through C2."
+      },
+      {
+        "id": "eg_exam13",
+        "question": "Er spricht Deutsch, als _____ er ein Muttersprachler.",
+        "translation": "(He speaks German as if he were a native speaker)",
+        "options": [
+          "wäre",
+          "ist",
+          "war",
+          "sei"
+        ],
+        "correct": "wäre",
+        "explanation": "'Als ob/als wenn/als' + Konjunktiv II expresses unreal comparison — 'as if'. When 'als' stands alone (without 'ob'), the verb comes immediately after: 'als wäre er'. With 'als ob': 'als ob er wäre' (verb at end). 'Wäre' is Konjunktiv II of 'sein'. This structure is tested in B2/C1 exams as it combines comparative clauses with subjunctive mood. The three variants: 'als ob er ein Muttersprachler wäre', 'als wenn er wäre', 'als wäre er' — all mean the same but have different word orders."
+      },
+      {
+        "id": "eg_exam14",
+        "question": "Nicht nur lernt er Deutsch, _____ er spricht auch Französisch.",
+        "translation": "(Not only does he learn German, but he also speaks French)",
+        "options": [
+          "sondern",
+          "aber",
+          "und",
+          "oder"
+        ],
+        "correct": "sondern",
+        "explanation": "'Nicht nur ... sondern auch ...' (not only ... but also ...) is a correlative conjunction pair tested in every German exam level. 'Sondern' specifically contradicts or extends a negative statement — it's used ONLY after negation ('nicht', 'kein'). Compare: 'aber' (but, general contrast) can follow positive or negative statements. 'Sondern' adds something unexpected after negation. Exam trap: 'Er ist nicht dumm, sondern klug' (sondern after nicht). 'Er ist klug, aber faul' (aber without negation). This nicht/sondern vs. aber distinction is repeatedly tested."
+      },
+      {
+        "id": "eg_exam15",
+        "question": "Die von der Regierung _____ Maßnahmen sind umstritten.",
+        "translation": "(The measures taken by the government are controversial)",
+        "options": [
+          "ergriffenen",
+          "ergriffene",
+          "ergriffen",
+          "ergreifenden"
+        ],
+        "correct": "ergriffenen",
+        "explanation": "Extended participial attributes (erweiterte Partizipialattribute) are the hallmark of advanced German — tested heavily in C1/C2 exams. 'Die von der Regierung ergriffenen Maßnahmen' packs a relative clause into an adjective position: 'die Maßnahmen, die von der Regierung ergriffen wurden' → compressed form. The Partizip II 'ergriffen' gets adjective endings: '-en' because it follows 'die' (definite article, plural, nominative). Understanding and producing these compressed structures is what separates intermediate from advanced German. Practice decompressing them into relative clauses."
+      }
+    ]
+  },
+  {
+    "key": "advanced_word_order",
+    "name": "Advanced Word Order",
+    "description": "Fortgeschrittene Satzstellung",
+    "iconName": "arrow.left.arrow.right",
+    "color": "#8b5cf6",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "eg_awo1",
+        "question": "Gestern _____ ich meinen Freund im Park getroffen.",
+        "translation": "(Yesterday I met my friend in the park)",
+        "options": [
+          "habe",
+          "ich habe",
+          "hatte",
+          "bin"
+        ],
+        "correct": "habe",
+        "explanation": "When a time adverb ('gestern') occupies position 1, the verb MUST stay in position 2 — causing subject-verb inversion: 'Gestern habe ich...' instead of 'Ich habe gestern...'. This V2 (verb-second) rule is the backbone of German word order. Any element can fill position 1 (time, place, object, adverb), but the conjugated verb is ALWAYS second. This inversion is one of the most frequently violated rules by English speakers, who tend to keep subject-verb order regardless of what starts the sentence."
+      },
+      {
+        "id": "eg_awo2",
+        "question": "Kaum hatte er das Haus verlassen, _____ es an zu regnen.",
+        "translation": "(Hardly had he left the house when it started to rain)",
+        "options": [
+          "fing",
+          "hat",
+          "begann",
+          "war"
+        ],
+        "correct": "fing",
+        "explanation": "'Kaum' (hardly/scarcely) at position 1 triggers inversion in the first clause AND implies immediate sequence. 'Kaum hatte er verlassen, fing es an' — the second clause also begins with verb-first (narrative inversion). 'Anfangen zu regnen' (to start raining) uses 'fing an' (Präteritum of anfangen, separable). This literary structure — 'Kaum ... da/so ...' — creates dramatic temporal compression. It's characteristic of formal/written German and appears in C1 reading comprehension and transformation exercises."
+      },
+      {
+        "id": "eg_awo3",
+        "question": "Im Park _____ viele Kinder mit ihren Eltern.",
+        "translation": "(In the park many children are playing with their parents)",
+        "options": [
+          "spielen",
+          "spielten",
+          "spielt",
+          "gespielt"
+        ],
+        "correct": "spielen",
+        "explanation": "Prepositional phrase 'Im Park' at position 1 triggers inversion: verb 'spielen' comes second, subject 'viele Kinder' third. This is the standard V2 pattern. 'Spielen' (present tense, plural) agrees with 'viele Kinder' (plural subject). Note: when the subject is displaced from position 1, it typically appears immediately after the verb. German allows great flexibility in position 1 — you can front almost any clause element for emphasis, topic shift, or text cohesion — but the verb stays firmly in second position."
+      },
+      {
+        "id": "eg_awo4",
+        "question": "Weil er krank war, _____ er zu Hause geblieben.",
+        "translation": "(Because he was sick, he stayed at home)",
+        "options": [
+          "ist",
+          "hat",
+          "war",
+          "wurde"
+        ],
+        "correct": "ist",
+        "explanation": "When a subordinate clause ('Weil er krank war') comes first, the entire clause counts as position 1 — so the main clause verb 'ist' immediately follows in position 2. This creates: [Subordinate clause], [Verb] [Subject] ... The verb-verb collision ('war, ist') at the clause boundary is characteristic of German. 'Bleiben' (to stay) uses 'sein' as its auxiliary because it indicates a state/location. This fronted-subordinate-clause pattern is extremely common in academic and journalistic German."
+      },
+      {
+        "id": "eg_awo5",
+        "question": "Nicht nur hat er das Buch gelesen, sondern er hat auch den Film _____.",
+        "translation": "(Not only did he read the book, but he also watched the film)",
+        "options": [
+          "gesehen",
+          "sehen",
+          "sah",
+          "sieht"
+        ],
+        "correct": "gesehen",
+        "explanation": "'Nicht nur ... sondern auch ...' with verb-first in the first clause is emphatic word order. 'Hat gelesen' and 'hat gesehen' are both Perfekt forms. 'Gesehen' is the Partizip II of 'sehen' (sehen-sah-gesehen, strong verb). In the Perfekt bracket structure, the auxiliary 'hat' occupies position 2 and the participle goes to the end — this 'Satzklammer' (sentence bracket) is fundamental to German. Everything between 'hat' and 'gesehen' sits in the 'Mittelfeld' (middle field): 'hat auch den Film gesehen'."
+      },
+      {
+        "id": "eg_awo6",
+        "question": "Hätte ich das gewusst, _____ ich anders gehandelt.",
+        "translation": "(Had I known that, I would have acted differently)",
+        "options": [
+          "hätte",
+          "habe",
+          "wäre",
+          "würde"
+        ],
+        "correct": "hätte",
+        "explanation": "Conditional sentences without 'wenn' place the verb FIRST: 'Hätte ich gewusst' = 'Wenn ich gewusst hätte' (If I had known). This verb-first conditional is more formal and literary. The main clause uses 'hätte + Partizip II' (Konjunktiv II Vergangenheit): 'hätte ich gehandelt' — expressing an unreal past action. This wenn-less conditional with verb-first order appears frequently in formal written German and is tested in B2+ exams. Both clauses use Konjunktiv II to signal unreality."
+      },
+      {
+        "id": "eg_awo7",
+        "question": "Er sagte, er _____ morgen kommen.",
+        "translation": "(He said he would come tomorrow)",
+        "options": [
+          "werde",
+          "wird",
+          "würde",
+          "wurde"
+        ],
+        "correct": "werde",
+        "explanation": "'Werde' is Konjunktiv I of 'werden' — used in indirect speech (indirekte Rede). 'Er sagte, er werde kommen' reports what someone said without 'dass'. Without 'dass', the word order stays like a main clause (verb second). With 'dass': 'Er sagte, dass er morgen kommen werde' (verb at end). Konjunktiv I (werde) is preferred in formal/journalistic German for reported speech. If Konjunktiv I is identical to indicative, use Konjunktiv II (würde) as a substitute. This Konjunktiv I/II distinction in indirect speech is extensively tested in C1 exams."
+      },
+      {
+        "id": "eg_awo8",
+        "question": "Das Buch, das er mir _____ hat, war sehr spannend.",
+        "translation": "(The book that he gave me was very exciting)",
+        "options": [
+          "gegeben",
+          "geben",
+          "gab",
+          "gibt"
+        ],
+        "correct": "gegeben",
+        "explanation": "In relative clauses, the conjugated verb goes to the END: 'das er mir gegeben hat' — 'hat' is last. The Partizip II 'gegeben' (from geben-gab-gegeben) precedes the auxiliary in the verbal bracket. Relative clauses interrupt the main clause: 'Das Buch [relative clause] war spannend.' The main clause verb 'war' resumes after the comma. This interrupted structure (Hauptsatzklammer with embedded Nebensatz) is characteristic of German syntax. Students must track which verb belongs to which clause — a skill heavily tested in reading comprehension."
+      },
+      {
+        "id": "eg_awo9",
+        "question": "Selten _____ man so ein schönes Gemälde.",
+        "translation": "(Rarely does one see such a beautiful painting)",
+        "options": [
+          "sieht",
+          "sehen",
+          "sah",
+          "gesehen"
+        ],
+        "correct": "sieht",
+        "explanation": "'Selten' (rarely) in position 1 triggers standard V2 inversion: 'Selten sieht man...' Negative/restrictive adverbs at position 1 (selten, kaum, nie, nur) produce particularly emphatic statements similar to English inversion ('Rarely does one see...'). 'Sieht' agrees with 'man' (indefinite pronoun, always 3rd person singular). This fronting of adverbs for emphasis is a stylistic device in German academic and literary writing. Other examples: 'Nie zuvor hatte ich...' (Never before had I...), 'Nur so kann man...' (Only thus can one...)."
+      },
+      {
+        "id": "eg_awo10",
+        "question": "Er hat versucht, den Brief so schnell wie möglich _____.",
+        "translation": "(He tried to write the letter as quickly as possible)",
+        "options": [
+          "zu schreiben",
+          "schreiben",
+          "geschrieben",
+          "schreibt"
+        ],
+        "correct": "zu schreiben",
+        "explanation": "'Zu + Infinitiv' after 'versuchen' (to try) creates an infinitive clause. 'Zu schreiben' goes to the very end of its clause. The infinitive clause 'den Brief so schnell wie möglich zu schreiben' has its own internal word order: objects and adverbials before 'zu + Infinitiv'. Verbs that take 'zu + Infinitiv' include: versuchen, beginnen, aufhören, vergessen, vorhaben, sich freuen. Note: modal verbs (können, müssen) take bare infinitive WITHOUT 'zu'. This zu/no-zu distinction is a frequent exam error source."
+      },
+      {
+        "id": "eg_awo11",
+        "question": "Je schneller du läufst, _____ schneller kommst du an.",
+        "translation": "(The faster you run, the faster you arrive)",
+        "options": [
+          "desto",
+          "als",
+          "wie",
+          "um"
+        ],
+        "correct": "desto",
+        "explanation": "'Je ... desto ...' demonstrates advanced word order with TWO different clause types. The 'je' clause is subordinate: 'Je schneller du läufst' — verb 'läufst' at the end. The 'desto' clause is a main clause with inversion: 'desto schneller kommst du an' — verb 'kommst' in position 2 after 'desto schneller'. This interplay between subordinate word order (verb-final) and main clause word order (verb-second with inversion) in one sentence tests deep understanding of German clause structure. 'Ankommen' is separable: 'kommst an'."
+      },
+      {
+        "id": "eg_awo12",
+        "question": "Morgen wird er den ganzen Tag im Büro _____ müssen.",
+        "translation": "(Tomorrow he will have to work in the office all day)",
+        "options": [
+          "arbeiten",
+          "gearbeitet",
+          "arbeitend",
+          "arbeitet"
+        ],
+        "correct": "arbeiten",
+        "explanation": "When a modal verb appears in future tense, the order at the clause end is: Infinitiv + modal Infinitiv → 'arbeiten müssen'. The auxiliary 'wird' is in position 2, and the double infinitive 'arbeiten müssen' is at the end. This creates a three-verb cluster: 'wird ... arbeiten müssen'. German verb clusters at the end of clauses follow strict ordering rules. In subordinate clauses, this becomes even more complex: 'weil er arbeiten müssen wird' — though speakers often avoid such constructions. Understanding verb cluster ordering is essential for advanced German."
+      },
+      {
+        "id": "eg_awo13",
+        "question": "Seinen Eltern _____ er ein Geschenk mitgebracht.",
+        "translation": "(For his parents he brought a gift)",
+        "options": [
+          "hat",
+          "haben",
+          "hatte",
+          "ist"
+        ],
+        "correct": "hat",
+        "explanation": "Fronting the dative object 'Seinen Eltern' to position 1 emphasizes the RECIPIENT. Standard order: 'Er hat seinen Eltern ein Geschenk mitgebracht.' Fronted: 'Seinen Eltern hat er ein Geschenk mitgebracht.' The verb 'hat' stays in position 2, subject 'er' moves after it. German uses position 1 for TOPIC (known information) or FOCUS (new/emphasized information). Moving 'seinen Eltern' forward signals: 'As for his parents — he brought them a gift.' This information-structural flexibility is what makes German word order 'free but not random'."
+      },
+      {
+        "id": "eg_awo14",
+        "question": "Das ist der Mann, _____ Frau Ärztin ist.",
+        "translation": "(That is the man whose wife is a doctor)",
+        "options": [
+          "dessen",
+          "deren",
+          "dem",
+          "den"
+        ],
+        "correct": "dessen",
+        "explanation": "'Dessen' is the genitive masculine relative pronoun (whose). 'Der Mann' is masculine → 'dessen'. For feminine/plural nouns, use 'deren': 'die Frau, deren Mann...' Within the relative clause, 'dessen Frau' functions as the subject: 'dessen Frau Ärztin ist' — verb 'ist' at the end (subordinate clause). Genitive relative pronouns are among the most challenging structures in German: they replace possessive determiners within the relative clause. 'Dessen/deren' never change form regardless of the case of the noun they modify."
+      },
+      {
+        "id": "eg_awo15",
+        "question": "Erst nachdem alle Gäste _____ waren, begann die Feier.",
+        "translation": "(Only after all guests had arrived, the celebration began)",
+        "options": [
+          "angekommen",
+          "ankommen",
+          "ankamen",
+          "ankommt"
+        ],
+        "correct": "angekommen",
+        "explanation": "'Nachdem + Plusquamperfekt' in a fronted temporal clause followed by a Präteritum main clause — this is complex German sentence architecture. 'Nachdem alle Gäste angekommen waren' (subordinate: auxiliary 'waren' at end, participle 'angekommen' before it). Then: 'begann die Feier' (main clause: verb 'begann' in position 2 with inversion). 'Ankommen' uses 'sein' (movement verb) and its Partizip II is 'angekommen'. The entire subordinate clause in position 1 functions as one unit, with the main verb immediately following — demonstrating how German handles complex temporal sequencing."
+      }
+    ]
+  },
+  {
+    "key": "revision_mixed",
+    "name": "Revision & Mixed Practice",
+    "description": "Wiederholung & gemischte Übungen",
+    "iconName": "arrow.triangle.2.circlepath",
+    "color": "#06b6d4",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "eg_rev1",
+        "question": "Ich _____ gerne Kaffee, aber heute trinke ich Tee.",
+        "translation": "(I like to drink coffee, but today I'm drinking tea)",
+        "options": [
+          "trinke",
+          "trinkt",
+          "trinkst",
+          "trinken"
+        ],
+        "correct": "trinke",
+        "explanation": "Back to basics with a twist — 'trinke' (1st person singular, present) contrasts with the second clause where 'heute' in position 1 causes inversion: 'heute trinke ich Tee'. The same verb form 'trinke' appears in both clauses but in different positions: 'Ich trinke' (standard SVO) vs. 'trinke ich' (inverted after fronted adverb). 'Aber' is a coordinating conjunction that doesn't affect word order — each clause keeps its own structure. This sentence tests three concepts at once: conjugation, inversion, and conjunction types."
+      },
+      {
+        "id": "eg_rev2",
+        "question": "Die Kinder, die im Garten spielen, _____ sehr laut.",
+        "translation": "(The children who are playing in the garden are very loud)",
+        "options": [
+          "sind",
+          "ist",
+          "waren",
+          "seid"
+        ],
+        "correct": "sind",
+        "explanation": "This sentence combines a relative clause with subject-verb agreement. 'Die Kinder' (plural) requires 'sind' (plural form of sein). The relative clause 'die im Garten spielen' is inserted between subject and verb, testing whether you can track agreement across an interruption. Main clause skeleton: 'Die Kinder sind sehr laut.' The relative clause has its own verb 'spielen' at the end. Exam trap: students sometimes match the verb to 'Garten' (singular) instead of 'Kinder' (plural). Always identify the true subject of the main clause."
+      },
+      {
+        "id": "eg_rev3",
+        "question": "Wenn das Wetter schön _____, gehen wir an den See.",
+        "translation": "(If the weather is nice, we'll go to the lake)",
+        "options": [
+          "ist",
+          "wäre",
+          "sein",
+          "war"
+        ],
+        "correct": "ist",
+        "explanation": "'Wenn' + Indikativ expresses a real condition (Realbedingung): 'Wenn es schön ist, gehen wir.' Compare with unreal: 'Wenn es schön wäre, würden wir gehen' (Konjunktiv II). The choice between indicative and subjunctive after 'wenn' changes the entire meaning. 'An den See' uses accusative because 'gehen' implies movement TOWARD the lake (Wechselpräposition: direction = accusative). This sentence tests three grammar points simultaneously: conditional mood, wenn-clause word order, and two-way preposition case selection."
+      },
+      {
+        "id": "eg_rev4",
+        "question": "Er hat mir das Buch gegeben, _____ ich ihm empfohlen hatte.",
+        "translation": "(He gave me the book that I had recommended to him)",
+        "options": [
+          "das",
+          "dass",
+          "dem",
+          "den"
+        ],
+        "correct": "das",
+        "explanation": "'Das' is the relative pronoun (neuter nominative/accusative) referring to 'das Buch' (neuter). Here it's accusative: 'ich hatte das Buch empfohlen' → 'das ich empfohlen hatte'. This tests: (1) das vs. dass — 'das' is a pronoun replaceable by 'welches', 'dass' is a conjunction; (2) relative pronoun case — accusative because it's the object of 'empfohlen'; (3) Plusquamperfekt in the relative clause — 'empfohlen hatte' (had recommended, past perfect). Three grammar concepts in one gap — typical of advanced mixed revision."
+      },
+      {
+        "id": "eg_rev5",
+        "question": "Sie interessiert _____ für deutsche Literatur.",
+        "translation": "(She is interested in German literature)",
+        "options": [
+          "sich",
+          "mich",
+          "ihr",
+          "es"
+        ],
+        "correct": "sich",
+        "explanation": "'Sich interessieren für' is a reflexive verb with a fixed preposition. 'Sie interessiert sich' — the reflexive pronoun 'sich' matches the 3rd person subject 'sie'. This tests three concepts: (1) reflexive verb recognition — 'interessieren' MUST be used reflexively in this meaning; (2) correct reflexive pronoun — ich/mich, du/dich, er-sie-es/sich, wir/uns, ihr/euch, sie-Sie/sich; (3) fixed preposition — 'für' + accusative ('deutsche Literatur'). Reflexive verbs with fixed prepositions are highly frequent in German and appear as set phrases."
+      },
+      {
+        "id": "eg_rev6",
+        "question": "Das Essen in diesem Restaurant schmeckt _____ als in dem anderen.",
+        "translation": "(The food in this restaurant tastes better than in the other one)",
+        "options": [
+          "besser",
+          "gut",
+          "am besten",
+          "beste"
+        ],
+        "correct": "besser",
+        "explanation": "'Besser' is the comparative of 'gut' — one of German's irregular comparisons (gut → besser → am besten). 'Als' after a comparative means 'than'. This tests: (1) irregular comparative forms — also: viel-mehr-am meisten, gern-lieber-am liebsten, hoch-höher-am höchsten; (2) comparative structure — [comparative] + als; (3) dative after 'in' — 'in diesem Restaurant' and 'in dem anderen' both use dative because they indicate location (not direction). Mixed revision forces recall of interconnected grammar rules in natural contexts."
+      },
+      {
+        "id": "eg_rev7",
+        "question": "Wir _____ letztes Jahr nach Berlin gefahren.",
+        "translation": "(We drove/went to Berlin last year)",
+        "options": [
+          "sind",
+          "haben",
+          "waren",
+          "hatten"
+        ],
+        "correct": "sind",
+        "explanation": "'Fahren' (to drive/go) uses 'sein' in Perfekt because it's a verb of MOVEMENT from A to B: 'Wir sind gefahren.' This tests the haben/sein distinction — one of German's trickiest rules. Movement verbs (gehen, fahren, fliegen, kommen, laufen) and state-change verbs (werden, sterben, einschlafen, aufwachen) take 'sein'. Most other verbs take 'haben'. Trap: 'Ich habe das Auto gefahren' (I drove the car) — with a direct object, 'fahren' takes 'haben'! Without object (intransitive movement): sein. With object (transitive): haben."
+      },
+      {
+        "id": "eg_rev8",
+        "question": "_____ du mir bitte das Salz reichen?",
+        "translation": "(Could you please pass me the salt?)",
+        "options": [
+          "Könntest",
+          "Kannst",
+          "Konntest",
+          "Solltest"
+        ],
+        "correct": "Könntest",
+        "explanation": "'Könntest' (Konjunktiv II of können) makes requests polite — like English 'could you'. 'Kannst du?' (Can you?) is direct; 'Könntest du?' (Could you?) is polite. This tests: (1) Konjunktiv II for politeness — modal verbs get Umlaut: kann→könnte, darf→dürfte, soll→sollte; (2) verb-first for yes/no questions; (3) dative object — 'mir' (to me) with 'reichen' (to hand/pass). Polite Konjunktiv II is used constantly in everyday German — in restaurants, shops, offices. It's one of the most practically useful grammar points."
+      },
+      {
+        "id": "eg_rev9",
+        "question": "Das ist das _____ Gebäude in der Stadt.",
+        "translation": "(That is the tallest building in the city)",
+        "options": [
+          "höchste",
+          "höchsten",
+          "höher",
+          "hoch"
+        ],
+        "correct": "höchste",
+        "explanation": "'Höchste' is the superlative of 'hoch' (tall/high) with adjective endings. 'Hoch' has an irregular superlative: hoch → höher → höchst-. As a predicative adjective after 'das': 'das höchste Gebäude' — neuter nominative after definite article gets '-e' ending. This tests: (1) irregular superlative; (2) adjective declension — after definite article, nominative neuter = -e; (3) the construction 'das + superlative + Nomen' for expressing 'the most/tallest/biggest'. All three adjective declension patterns (strong, weak, mixed) must be mastered for fluent German."
+      },
+      {
+        "id": "eg_rev10",
+        "question": "Er hat versprochen, pünktlich _____.",
+        "translation": "(He promised to be on time)",
+        "options": [
+          "zu sein",
+          "sein",
+          "ist",
+          "gewesen"
+        ],
+        "correct": "zu sein",
+        "explanation": "'Zu sein' — infinitive with 'zu' after 'versprechen' (to promise). 'Versprechen' belongs to verbs requiring 'zu + Infinitiv' in infinitive clauses. Tests: (1) 'zu + Infinitiv' vs. bare infinitive — modal verbs (können, müssen) take bare infinitive; verbs like versprechen, versuchen, beginnen take 'zu'; (2) 'sein' as a main verb meaning 'to be'; (3) infinitive clause word order — 'zu sein' at the end. The comma before the infinitive clause is mandatory when the clause has its own elements — though minimal clauses like 'zu sein' can optionally omit it."
+      },
+      {
+        "id": "eg_rev11",
+        "question": "Ich freue mich _____ deinen Besuch.",
+        "translation": "(I'm looking forward to your visit)",
+        "options": [
+          "auf",
+          "über",
+          "für",
+          "an"
+        ],
+        "correct": "auf",
+        "explanation": "'Sich freuen auf' (to look forward to, future) vs. 'sich freuen über' (to be happy about, present/past) — one of German's classic preposition pairs. 'Auf deinen Besuch' = looking forward to your visit (future event). 'Über deinen Besuch' = happy about your visit (already happening/happened). Both take accusative after the preposition. This tests verb-preposition combinations with meaning changes — a core German challenge. Other pairs: 'denken an' (think of) vs. 'denken über' (think about). These must be memorized as fixed expressions."
+      },
+      {
+        "id": "eg_rev12",
+        "question": "Die Suppe wird von der Köchin _____.",
+        "translation": "(The soup is being prepared by the cook)",
+        "options": [
+          "zubereitet",
+          "zubereiten",
+          "bereitet zu",
+          "zubereite"
+        ],
+        "correct": "zubereitet",
+        "explanation": "Passive voice with a separable verb: 'zubereiten' → Partizip II 'zubereitet' (the prefix stays attached in the participle: zu-ge-bereitet → zubereitet, since 'zu-' is an inseparable prefix in this compound). Wait — actually 'zubereiten' has inseparable 'zu-' prefix in the participle: 'zubereitet' (no 'ge-'). Passive: 'wird zubereitet' (is being prepared). 'Von der Köchin' = by the cook (agent with 'von' + dative, feminine 'die Köchin' → dative 'der Köchin'). This combines passive voice, participle formation, and dative case — three core grammar areas in one sentence."
+      },
+      {
+        "id": "eg_rev13",
+        "question": "Obwohl es regnete, ging er ohne _____ spazieren.",
+        "translation": "(Although it was raining, he went for a walk without an umbrella)",
+        "options": [
+          "Schirm",
+          "einen Schirm",
+          "einem Schirm",
+          "Schirmes"
+        ],
+        "correct": "Schirm",
+        "explanation": "'Ohne' (without) takes accusative AND drops the article when used with a general/indefinite sense: 'ohne Schirm' (without an umbrella, general). This zero-article usage after 'ohne' is idiomatic German. You CAN say 'ohne einen Schirm' (without a specific umbrella), but 'ohne Schirm' is far more natural and common. Also tests: 'obwohl' as subordinating conjunction (verb 'regnete' at end), and the main clause with inversion after the fronted 'obwohl' clause. 'Ohne' always takes accusative, never dative — a common error among learners."
+      },
+      {
+        "id": "eg_rev14",
+        "question": "Je länger man in Deutschland lebt, desto besser _____ man die Kultur.",
+        "translation": "(The longer one lives in Germany, the better one understands the culture)",
+        "options": [
+          "versteht",
+          "verstehen",
+          "verstand",
+          "verstehe"
+        ],
+        "correct": "versteht",
+        "explanation": "'Je ... desto ...' combining comparative correlatives with proper verb agreement: 'man versteht' (3rd person singular, present). The 'je' clause has verb-final order: 'je länger man lebt'. The 'desto' clause has verb-second with inversion: 'desto besser versteht man'. This sentence is a comprehensive review: (1) je/desto structure, (2) subordinate vs. main clause word order, (3) 'man' agreement (always singular), (4) irregular comparative 'besser' (gut→besser), (5) present tense for general truths. A single sentence testing five grammar concepts — the essence of mixed revision."
+      },
+      {
+        "id": "eg_rev15",
+        "question": "Nachdem er das Studium _____ hatte, zog er nach München.",
+        "translation": "(After he had finished his studies, he moved to Munich)",
+        "options": [
+          "abgeschlossen",
+          "abschließen",
+          "abschloss",
+          "abschließt"
+        ],
+        "correct": "abgeschlossen",
+        "explanation": "The ultimate mixed review sentence: 'Nachdem' + Plusquamperfekt ('abgeschlossen hatte') in a fronted subordinate clause, followed by Präteritum main clause ('zog er'). Tests: (1) nachdem tense sequence (Plusquamperfekt → Präteritum); (2) separable verb participle — 'abschließen' → 'abgeschlossen' (prefix 'ab-' + ge- + schlossen); (3) subordinate clause verb-final order ('abgeschlossen hatte' at end); (4) main clause inversion after fronted clause ('zog er'); (5) 'ziehen nach' for moving to a city. Five grammar rules in one sentence — if you got this right, your German grammar foundation is solid."
+      }
+    ]
   }
 ]

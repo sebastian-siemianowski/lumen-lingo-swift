@@ -18950,5 +18950,2429 @@
         "explanation": "'Il s'agit de' (chodzi o) — bezosobowy gallicyzm tematyczny. 'Il s'agit de' + nom/infinitif = 'chodzi o'. Bardzo czesty! 'De quoi s'agit-il?' (O co chodzi?), 'il s'agit d'un probleme grave' (chodzi o powazny problem), 'il ne s'agit pas de ca' (nie o to chodzi). UWAGA: ZAWSZE bezosobowy — 'il' nie moze byc zastanpione inna osoba! NIE: *'je m'agis de'. 'S'agir' istnieje TYLKO w 3os. poj. bezosobowej. W polskim: 'chodzi o' — bezosobowe wyrazenie, dobra analogia."
       }
     ]
+  },
+  {
+    "key": "expressions_avoir",
+    "name": "Expressions avec avoir",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pf_exav1",
+        "question": "J'_____ faim. Je veux manger.",
+        "translation": "(Jestem glodny. Chce jesc.)",
+        "options": [
+          "ai",
+          "suis",
+          "fais",
+          "vais"
+        ],
+        "correct": "ai",
+        "explanation": "Po polsku mowimy 'jestem glodny', ale po francusku uzywamy 'avoir faim' (dosownie: miec glod). To jedna z najwazniejszych roznic miedzy jezykami! Francuzi 'maja' uczucia fizyczne: faim (glod), soif (pragnienie), chaud (goracy), froid (zimno). Pamietaj: j'ai faim, tu as faim, il a faim. Nigdy nie mow 'je suis faim' - to blad typowy dla Polakow!"
+      },
+      {
+        "id": "pf_exav2",
+        "question": "Elle _____ soif apres le sport.",
+        "translation": "(Ona jest spragniona po sporcie.)",
+        "options": [
+          "a",
+          "est",
+          "fait",
+          "va"
+        ],
+        "correct": "a",
+        "explanation": "'Avoir soif' (miec pragnienie) to kolejna wyrazenie z 'avoir', ktore po polsku tlumaczylibysmy z 'byc'. Elle a soif = Ona jest spragniona. Wszystkie stany fizyczne we francuskim uzywa sie z 'avoir': avoir faim, avoir soif, avoir chaud, avoir froid, avoir sommeil. To fundamentalna roznica z polskim, gdzie uzywamy 'byc' dla tych stanow."
+      },
+      {
+        "id": "pf_exav3",
+        "question": "Nous _____ besoin d'aide.",
+        "translation": "(Potrzebujemy pomocy.)",
+        "options": [
+          "avons",
+          "sommes",
+          "faisons",
+          "allons"
+        ],
+        "correct": "avons",
+        "explanation": "'Avoir besoin de' (potrzebowac) to kluczowe wyrazenie francuskie. Po polsku mowimy 'potrzebujemy', ale po francusku dosownie 'mamy potrzebe czegos'. Struktura: sujet + avoir + besoin + de + rzeczownik/bezokolicznik. Przyklad: J'ai besoin de dormir (Potrzebuje spac). Uwaga na 'de' przed nastepnym slowem - to obowiazkowy element."
+      },
+      {
+        "id": "pf_exav4",
+        "question": "Tu _____ raison, c'est correct.",
+        "translation": "(Masz racje, to poprawne.)",
+        "options": [
+          "as",
+          "es",
+          "fais",
+          "dis"
+        ],
+        "correct": "as",
+        "explanation": "'Avoir raison' (miec racje) i 'avoir tort' (nie miec racji) to wyrazenia, ktore akurat pokrywaja sie z polskim - mowiac 'masz racje', uzywa sie 'avoir'! Ale wielu uczacych sie myli to z 'etre'. Zapamietaj pare: avoir raison (miec racje) vs avoir tort (mylic sie). W dialogu: Tu as raison! (Masz racje!) / Tu as tort! (Mylisz sie!)."
+      },
+      {
+        "id": "pf_exav5",
+        "question": "Il _____ peur des araignees.",
+        "translation": "(On boi sie pajakow.)",
+        "options": [
+          "a",
+          "est",
+          "fait",
+          "prend"
+        ],
+        "correct": "a",
+        "explanation": "'Avoir peur de' (bac sie czegos) to kolejne wyrazenie emocjonalne z 'avoir'. Po polsku mowimy 'boi sie', ale po francusku dosownie 'ma strach czegos'. Struktura: avoir peur de + rzeczownik/bezokolicznik. Przyklady: J'ai peur du noir (Boje sie ciemnosci), Elle a peur de voler (Ona boi sie latac). Uwaga na przyimek 'de', ktory jest obowiazkowy!"
+      },
+      {
+        "id": "pf_exav6",
+        "question": "Vous _____ de la chance aujourd'hui.",
+        "translation": "(Macie dzisiaj szczescie.)",
+        "options": [
+          "avez",
+          "etes",
+          "faites",
+          "prenez"
+        ],
+        "correct": "avez",
+        "explanation": "'Avoir de la chance' (miec szczescie) to wyrazenie uzywane bardzo czesto w codziennym francuskim. Po polsku tez mowimy 'miec szczescie', wiec tu sie zgadza! Ale uwaga na rodzajnik: 'de la chance' - 'la' jest obowiazkowe. Inne wyrazenia: avoir de la patience (miec cierpliwosc), avoir du courage (miec odwage). Odwrotnosc: ne pas avoir de chance."
+      },
+      {
+        "id": "pf_exav7",
+        "question": "Les enfants _____ sommeil, il est tard.",
+        "translation": "(Dzieci sa senne, jest pozno.)",
+        "options": [
+          "ont",
+          "sont",
+          "font",
+          "vont"
+        ],
+        "correct": "ont",
+        "explanation": "'Avoir sommeil' (byc sennym, chciec spac) to kolejny stan fizyczny z 'avoir'. Po polsku powiedzielibysmy 'sa senne' (z 'byc'), ale po francusku 'maja sennosc'. Cala rodzina wyrazen stanow fizycznych: avoir faim, avoir soif, avoir chaud, avoir froid, avoir sommeil, avoir mal. Wszystkie z 'avoir', nigdy z 'etre'!"
+      },
+      {
+        "id": "pf_exav8",
+        "question": "Quel age _____-vous?",
+        "translation": "(Ile macie lat?)",
+        "options": [
+          "avez",
+          "etes",
+          "faites",
+          "allez"
+        ],
+        "correct": "avez",
+        "explanation": "'Avoir ... ans' (miec ... lat) - wiek po francusku wyrazamy z 'avoir'! To identyczne jak po polsku: 'Ile masz lat?' = 'Quel age as-tu?'. J'ai 25 ans (Mam 25 lat). Czesty blad: mowienie 'je suis 25 ans' - to niepoprawne! Francuzi dosownie 'maja' lata, tak jak Polacy. To jedna z nielicznych zgodnosci miedzy naszymi jezykami."
+      },
+      {
+        "id": "pf_exav9",
+        "question": "Elle _____ l'air fatiguee ce matin.",
+        "translation": "(Ona wyglada na zmeczona dzis rano.)",
+        "options": [
+          "a",
+          "est",
+          "fait",
+          "semble"
+        ],
+        "correct": "a",
+        "explanation": "'Avoir l'air' (wygladac na, sprawiac wrazenie) to wyrazenie opisujace wyglad zewnetrzny. Struktura: avoir l'air + przymiotnik. Przymiotnik zgadza sie z podmiotem: Elle a l'air fatiguEE (koncowka zenska). Ale mozna tez: Elle a l'air fatiguE (zgoda z 'air', meski). Obie formy sa poprawne, choc pierwsza jest bardziej nowoczesna."
+      },
+      {
+        "id": "pf_exav10",
+        "question": "J'_____ honte de mon erreur.",
+        "translation": "(Wstydze sie mojego bledu.)",
+        "options": [
+          "ai",
+          "suis",
+          "fais",
+          "prends"
+        ],
+        "correct": "ai",
+        "explanation": "'Avoir honte de' (wstydzic sie czegos) to emocja wyrazana z 'avoir'. Po polsku 'wstydzic sie' uzywa struktury zwrotnej, ale po francusku dosownie 'miec wstyd czegos'. Inne emocje z 'avoir': avoir honte (wstydzic sie), avoir pitie (litowac sie), avoir envie de (miec ochote na). Struktura: avoir honte + de + rzeczownik/bezokolicznik."
+      },
+      {
+        "id": "pf_exav11",
+        "question": "Nous _____ l'habitude de nous lever tot.",
+        "translation": "(Mamy zwyczaj wczesnie wstawac.)",
+        "options": [
+          "avons",
+          "sommes",
+          "faisons",
+          "prenons"
+        ],
+        "correct": "avons",
+        "explanation": "'Avoir l'habitude de' (miec zwyczaj, byc przyzwyczajonym do) to wyrazenie czesto uzywane w codziennym francuskim. Struktura: avoir l'habitude + de + bezokolicznik. Po polsku mowimy 'mamy zwyczaj' (z 'miec') lub 'jestesmy przyzwyczajeni' (z 'byc'). Po francusku zawsze z 'avoir'. Przyklady: J'ai l'habitude de lire le soir (Mam zwyczaj czytac wieczorem)."
+      },
+      {
+        "id": "pf_exav12",
+        "question": "Tu _____ mal a la tete?",
+        "translation": "(Boli cie glowa?)",
+        "options": [
+          "as",
+          "es",
+          "fais",
+          "sens"
+        ],
+        "correct": "as",
+        "explanation": "'Avoir mal a' (odczuwac bol w) to wyrazenie stanu fizycznego z 'avoir'. Po polsku mowimy 'boli mnie glowa', ale po francusku dosownie 'mam bol w glowie'. Struktura: avoir mal + a + czesc ciala. Przyklady: avoir mal a la tete (bol glowy), avoir mal au ventre (bol brzucha), avoir mal aux dents (bol zebow). Uwaga na rodzajniki!"
+      },
+      {
+        "id": "pf_exav13",
+        "question": "Ils _____ tort de partir maintenant.",
+        "translation": "(Nie maja racji, zeby teraz wyjezdzac.)",
+        "options": [
+          "ont",
+          "sont",
+          "font",
+          "vont"
+        ],
+        "correct": "ont",
+        "explanation": "'Avoir tort de' (nie miec racji, zle robic) to antonim 'avoir raison'. Struktura: avoir tort + de + bezokolicznik. Przyklady: Tu as tort de mentir (Zle robisz, ze klamiesz), Il a tort de ne pas etudier (Zle robi, ze nie studiuje). Po polsku powiedzielibysmy 'myla sie' lub 'zle robia', ale po francusku zawsze z 'avoir'."
+      },
+      {
+        "id": "pf_exav14",
+        "question": "J'_____ envie de voyager cet ete.",
+        "translation": "(Mam ochote podrozowac tego lata.)",
+        "options": [
+          "ai",
+          "suis",
+          "fais",
+          "veux"
+        ],
+        "correct": "ai",
+        "explanation": "'Avoir envie de' (miec ochote na) to wyrazenie pragnienia z 'avoir'. Roznica z 'vouloir': 'avoir envie de' jest bardziej nieformalny i subiektywny. J'ai envie de glace (Mam ochote na lody) vs Je veux de la glace (Chce lody). Struktura: avoir envie + de + rzeczownik/bezokolicznik. Czesto uzywane w mowie potocznej."
+      },
+      {
+        "id": "pf_exav15",
+        "question": "Elle _____ du mal a comprendre.",
+        "translation": "(Ona ma trudnosci ze zrozumieniem.)",
+        "options": [
+          "a",
+          "est",
+          "fait",
+          "met"
+        ],
+        "correct": "a",
+        "explanation": "'Avoir du mal a' (miec trudnosci z) to wyrazenie opisujace trudnosc. Struktura: avoir du mal + a + bezokolicznik. Po polsku mowimy 'miec trudnosci z' - tu sie zgadza! Przyklady: J'ai du mal a dormir (Mam trudnosci z zasypianiem), Il a du mal a se concentrer (Ma trudnosci z koncentracja). Odwrotnosc: ne pas avoir de mal a (nie miec trudnosci z)."
+      }
+    ]
+  },
+  {
+    "key": "expressions_faire",
+    "name": "Expressions avec faire",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pf_exfa1",
+        "question": "Il _____ beau aujourd'hui.",
+        "translation": "(Dzis jest ladna pogoda.)",
+        "options": [
+          "fait",
+          "est",
+          "a",
+          "va"
+        ],
+        "correct": "fait",
+        "explanation": "'Il fait + przymiotnik' to struktura uzywana do opisu pogody. Po polsku mowimy 'jest ladna pogoda', ale po francusku dosownie 'robi ladnie'. Il fait beau (ladna pogoda), il fait mauvais (brzydka pogoda), il fait chaud (jest goraco), il fait froid (jest zimno). 'Il' jest tu zaimkiem bezosobowym, nie oznacza 'on'. To fundamentalne wyrazenie codzienne!"
+      },
+      {
+        "id": "pf_exfa2",
+        "question": "Je _____ du sport chaque matin.",
+        "translation": "(Uprawiam sport kazdego ranka.)",
+        "options": [
+          "fais",
+          "joue",
+          "pratique",
+          "suis"
+        ],
+        "correct": "fais",
+        "explanation": "'Faire du sport' (uprawiac sport) - po francusku 'robic sport'. Uwaga na roznice: 'faire du' (sport ogolnie lub meskie), 'faire de la' (zenski), 'faire de l'' (przed samogloska). Przyklady: faire du tennis, faire de la natation, faire de l'escalade. Roznica z 'jouer': faire = sporty indywidualne, jouer a = gry zespolowe z pilka."
+      },
+      {
+        "id": "pf_exfa3",
+        "question": "Tu _____ la cuisine ce soir?",
+        "translation": "(Gotujesz dzis wieczorem?)",
+        "options": [
+          "fais",
+          "cuisines",
+          "prepares",
+          "as"
+        ],
+        "correct": "fais",
+        "explanation": "'Faire la cuisine' (gotowac) to czeste wyrazenie codzienne. Po polsku mowimy po prostu 'gotowac', ale po francusku dosownie 'robic kuchnie'. Inne wyrazenia domowe z 'faire': faire le menage (sprzatac), faire la vaisselle (zmywac naczynia), faire la lessive (robic pranie), faire les courses (robic zakupy). Wszystkie sa bardzo uzywane w codziennym zyciu."
+      },
+      {
+        "id": "pf_exfa4",
+        "question": "Nous _____ attention au danger.",
+        "translation": "(Uwazamy na niebezpieczenstwo.)",
+        "options": [
+          "faisons",
+          "avons",
+          "prenons",
+          "sommes"
+        ],
+        "correct": "faisons",
+        "explanation": "'Faire attention a' (uwazac na) to wyrazenie ostrzezenia. Ale uwaga: rownie popularne jest 'prendre attention' - NIE! To blad! Poprawnie: 'faire attention'. Mozna tez 'preter attention a' (zwracac uwage na) - ale to inny odcien znaczeniowy. 'Faire attention' = uwazac (na niebezpieczenstwo), 'preter attention' = zwracac uwage (na szczegoly)."
+      },
+      {
+        "id": "pf_exfa5",
+        "question": "Elle _____ semblant de dormir.",
+        "translation": "(Ona udaje, ze spi.)",
+        "options": [
+          "fait",
+          "est",
+          "a",
+          "joue"
+        ],
+        "correct": "fait",
+        "explanation": "'Faire semblant de' (udawac, ze) to wyrazenie udawania. Struktura: faire semblant + de + bezokolicznik. Po polsku mowimy 'udawac, ze...', po francusku dosownie 'robic pozor czegos'. Przyklady: Il fait semblant de travailler (Udaje, ze pracuje), Nous faisons semblant de comprendre (Udajemy, ze rozumiemy). Bardzo uzyteczne w codziennej komunikacji!"
+      },
+      {
+        "id": "pf_exfa6",
+        "question": "Les enfants _____ du bruit toute la journee.",
+        "translation": "(Dzieci halasuja caly dzien.)",
+        "options": [
+          "font",
+          "sont",
+          "ont",
+          "mettent"
+        ],
+        "correct": "font",
+        "explanation": "'Faire du bruit' (halasowac, robic halas) to czeste wyrazenie. Po polsku 'robic halas' lub 'halasowac'. Inne wyrazenia z 'faire' + rzeczownik: faire du bruit (halasowac), faire du bien (robic dobrze), faire du mal (robic krzywde), faire de la peine (sprawiac bol emocjonalny). Kazde ma swoj specyficzny odcien znaczeniowy, ktory warto zapamiectac."
+      },
+      {
+        "id": "pf_exfa7",
+        "question": "Je _____ de mon mieux pour reussir.",
+        "translation": "(Staram sie jak moge, zeby sie udalo.)",
+        "options": [
+          "fais",
+          "suis",
+          "donne",
+          "mets"
+        ],
+        "correct": "fais",
+        "explanation": "'Faire de son mieux' (starac sie jak najlepiej) to wyrazenie wysilku. Zaimek dzierczerczy zmienia sie z osoba: je fais de MON mieux, tu fais de TON mieux, il fait de SON mieux, nous faisons de NOTRE mieux. Po polsku: 'robic co w mojej mocy'. To eleganckie wyrazenie, czesto uzywane zarowno w mowie formalnej, jak i nieformalnej."
+      },
+      {
+        "id": "pf_exfa8",
+        "question": "Vous _____ la queue depuis longtemps?",
+        "translation": "(Stoicie w kolejce od dawna?)",
+        "options": [
+          "faites",
+          "etes",
+          "avez",
+          "attendez"
+        ],
+        "correct": "faites",
+        "explanation": "'Faire la queue' (stac w kolejce) to wyrazenie typowo francuskie. Po polsku mowimy 'stac w kolejce', ale po francusku dosownie 'robic ogon'. To jedno z tych wyrazen, ktore trzeba po prostu zapamiectac! Inne nietypowe wyrazenia z 'faire': faire la tete (byc obraoznym), faire la greve (strajkowac), faire la fete (imprezowac). Kazde ma swoja specyficzna logike."
+      },
+      {
+        "id": "pf_exfa9",
+        "question": "Il _____ nuit a six heures en hiver.",
+        "translation": "(Robi sie ciemno o szostej zima.)",
+        "options": [
+          "fait",
+          "est",
+          "devient",
+          "tombe"
+        ],
+        "correct": "fait",
+        "explanation": "'Il fait nuit' (robi sie ciemno, jest ciemno) i 'il fait jour' (jest jasno) to wyrazenia opisujace swiatlo dnia. Podobnie jak pogoda, uzywa sie bezosobowego 'il fait'. To nie oznacza 'on robi noc'! Po polsku mowimy 'jest ciemno' lub 'robi sie ciemno'. Inne: il fait sombre (jest ciemnawo), il fait clair (jest jasno). Zawsze z bezosobowym 'il'."
+      },
+      {
+        "id": "pf_exfa10",
+        "question": "Tu _____ confiance a ton ami?",
+        "translation": "(Ufasz swojemu przyjacielowi?)",
+        "options": [
+          "fais",
+          "as",
+          "donnes",
+          "es"
+        ],
+        "correct": "fais",
+        "explanation": "'Faire confiance a' (ufac komus) to wyrazenie zaufania. Po polsku mowimy 'ufac komus', po francusku dosownie 'robic zaufanie komus'. Uwaga: 'avoir confiance en' tez istnieje i znaczy to samo! Ale 'faire confiance a' jest bardziej powszechne w mowie codziennej. Przyimek 'a' po 'confiance' jest obowiazkowy. Przyklad: Je fais confiance a mes parents."
+      },
+      {
+        "id": "pf_exfa11",
+        "question": "Nous _____ face a un probleme serieux.",
+        "translation": "(Stawiamy czola powaznemu problemowi.)",
+        "options": [
+          "faisons",
+          "sommes",
+          "avons",
+          "mettons"
+        ],
+        "correct": "faisons",
+        "explanation": "'Faire face a' (stawiac czola czemus, konfrontowac sie z) to wyrazenie formalne i silne. Struktura: faire face + a + rzeczownik. Po polsku mowimy 'stawiac czola' (tez idiom!). Przyklady: faire face a la realite (stawiac czola rzeczywistosci), faire face a ses responsabilites (stawiac czola swoim obowiazkom). Czesto uzywane w kontekscie profesjonalnym i medialnym."
+      },
+      {
+        "id": "pf_exfa12",
+        "question": "Elle _____ expres de m'ignorer.",
+        "translation": "(Ona celowo mnie ignoruje.)",
+        "options": [
+          "fait",
+          "est",
+          "va",
+          "veut"
+        ],
+        "correct": "fait",
+        "explanation": "'Faire expres de' (robic cos celowo, umyslnie) to wyrazenie intencjonalnosci. Struktura: faire expres + de + bezokolicznik. Po polsku: 'robic cos specjalnie/celowo'. Przyklady: Il fait expres de me deranger (On celowo mnie przeszkadza). Forma negatywna: Je ne fais pas expres (Nie robie tego specjalnie) - czesto uzywana jako przeprosiny za niezamierzone dzialanie."
+      },
+      {
+        "id": "pf_exfa13",
+        "question": "Ils _____ partie de l'equipe.",
+        "translation": "(Oni naleza do druzyny.)",
+        "options": [
+          "font",
+          "sont",
+          "ont",
+          "jouent"
+        ],
+        "correct": "font",
+        "explanation": "'Faire partie de' (byc czescia, nalezec do) to wazne wyrazenie przynaleznosci. Po polsku mowimy 'nalezec do' lub 'byc czescia', ale po francusku dosownie 'robic czesc czegos'. Przyklady: faire partie d'un club (nalezec do klubu), faire partie de la famille (byc czescia rodziny). Czesto uzywane w CV i opisach organizacji. Zapamietaj: 'de' jest obowiazkowe!"
+      },
+      {
+        "id": "pf_exfa14",
+        "question": "Vous _____ plaisir a votre mere.",
+        "translation": "(Sprawiasz przyjemnosc swojej matce.)",
+        "options": [
+          "faites",
+          "donnez",
+          "etes",
+          "avez"
+        ],
+        "correct": "faites",
+        "explanation": "'Faire plaisir a' (sprawiac przyjemnosc komus) to wyrazenie radosci. Ale uwaga na roznice: 'faire plaisir a quelqu'un' (sprawiac komus przyjemnosc) vs 'se faire plaisir' (sprawiac sobie przyjemnosc). Czesto uzywane jako pytanie grzecznosciowe: Ca vous ferait plaisir? (Czy sprawilioby to panu przyjemnosc?). Bardzo przydatne w codziennych interakcjach spolecznych."
+      },
+      {
+        "id": "pf_exfa15",
+        "question": "Je _____ un reve etrange cette nuit.",
+        "translation": "(Mialem dziwny sen tej nocy.)",
+        "options": [
+          "fais",
+          "ai",
+          "suis",
+          "vois"
+        ],
+        "correct": "fais",
+        "explanation": "'Faire un reve' (snic, miec sen) - po francusku dosownie 'robic sen'. Po polsku mowimy 'mialam sen' lub 'snilo mi sie', ale po francusku typowo uzywamy 'faire'. Faire un reve = snic sen (ogolnie), faire un cauchemar = miec koszmar. Ale 'avoir un reve' tez jest poprawne i coraz czesciej uzywane. 'J'ai fait un beau reve' (Mialem piekny sen) - w passe compose!"
+      }
+    ]
+  },
+  {
+    "key": "expressions_etre",
+    "name": "Expressions avec etre",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pf_exet1",
+        "question": "Je _____ en train de manger.",
+        "translation": "(Wlasnie jem.)",
+        "options": [
+          "suis",
+          "ai",
+          "fais",
+          "vais"
+        ],
+        "correct": "suis",
+        "explanation": "'Etre en train de' (byc w trakcie robienia czegos) to kluczowa konstrukcja wyrazajaca czynnosc w toku - odpowiednik angielskiego 'present continuous'. Po polsku mowimy 'wlasnie robie cos'. Struktura: etre + en train de + bezokolicznik. Przyklady: Je suis en train de lire (Wlasnie czytam), Ils sont en train de jouer (Oni wlasnie graja). Uzywana bardzo czesto w mowie!"
+      },
+      {
+        "id": "pf_exet2",
+        "question": "Elle _____ sur le point de partir.",
+        "translation": "(Ona zaraz wyjdzie.)",
+        "options": [
+          "est",
+          "a",
+          "fait",
+          "va"
+        ],
+        "correct": "est",
+        "explanation": "'Etre sur le point de' (byc na skraju zrobienia czegos, zaraz cos zrobic) wyrazenie bliskiej przyszlosci, silniejsze niz 'aller + infinitif'. Struktura: etre sur le point + de + bezokolicznik. Po polsku: 'zaraz cos zrobic', 'byc o krok od'. Przyklad: Le train est sur le point de partir (Pociag zaraz odjedzie). Sugeruje, ze cos stanie sie za chwile."
+      },
+      {
+        "id": "pf_exet3",
+        "question": "Nous _____ d'accord avec votre proposition.",
+        "translation": "(Zgadzamy sie z wasza propozycja.)",
+        "options": [
+          "sommes",
+          "avons",
+          "faisons",
+          "allons"
+        ],
+        "correct": "sommes",
+        "explanation": "'Etre d'accord avec' (zgadzac sie z) to fundamentalne wyrazenie. Po polsku 'zgadzac sie' to czasownik, ale po francusku dosownie 'byc zgodnym'. Forma negatywna: Je ne suis pas d'accord (Nie zgadzam sie). Czesto uzywane w dyskusjach: Vous etes d'accord? (Zgadzacie sie?). Mozna tez powiedziec 'etre d'accord pour + infinitif' (zgadzac sie na cos)."
+      },
+      {
+        "id": "pf_exet4",
+        "question": "Il _____ en retard a chaque reunion.",
+        "translation": "(On sie spoznia na kazde spotkanie.)",
+        "options": [
+          "est",
+          "a",
+          "fait",
+          "arrive"
+        ],
+        "correct": "est",
+        "explanation": "'Etre en retard' (byc spoznionym) vs 'etre en avance' (byc wczesniej) vs 'etre a l'heure' (byc na czas). Po polsku mowimy 'spozniac sie' (czasownik), ale po francusku 'byc w opoznieniu'. Przyklady: Je suis en retard de 10 minutes (Jestem spozniony o 10 minut). Czeste zwroty: Desolee, je suis en retard! (Przepraszam, spoznilem sie!). Uzywane codziennie!"
+      },
+      {
+        "id": "pf_exet5",
+        "question": "Vous _____ au courant de la situation?",
+        "translation": "(Czy jestescie na biezaco z sytuacja?)",
+        "options": [
+          "etes",
+          "avez",
+          "faites",
+          "savez"
+        ],
+        "correct": "etes",
+        "explanation": "'Etre au courant de' (byc na biezaco z, wiedziec o) to wyrazenie informacji. Po polsku: 'byc na biezaco' lub 'wiedziec o czyms'. Mettre quelqu'un au courant = poinformowac kogos, se tenir au courant = byc na biezaco. Przyklad: Je te mettrai au courant demain (Jutro cie poinformuje). Bardzo uzyteczne w kontekscie profesjonalnym i codziennym."
+      },
+      {
+        "id": "pf_exet6",
+        "question": "Tu _____ cense savoir cela.",
+        "translation": "(Powinienes to wiedziec.)",
+        "options": [
+          "es",
+          "as",
+          "fais",
+          "dois"
+        ],
+        "correct": "es",
+        "explanation": "'Etre cense + infinitif' (byc zobowiazanym, miec powinnosc) wyrazenie oczekiwania. Po polsku: 'powinienes', 'oczekuje sie, ze'. Roznica z 'devoir': 'etre cense' to oczekiwanie spoleczne, 'devoir' to obowiazek. Przyklady: Tu es cense arriver a 8h (Masz byc o 8). Ils sont censes travailler (Oczekuje sie, ze pracuja). Bardzo uzywane w kontekscie formalnym."
+      },
+      {
+        "id": "pf_exet7",
+        "question": "Je _____ de passage a Paris.",
+        "translation": "(Jestem przejazdem w Paryzu.)",
+        "options": [
+          "suis",
+          "ai",
+          "fais",
+          "passe"
+        ],
+        "correct": "suis",
+        "explanation": "'Etre de passage' (byc przejazdem, byc tymczasowo) to wyrazenie tymczasowej obecnosci. Po polsku: 'byc przejazdem', 'byc na chwile'. Przyklady: Je suis de passage a Lyon (Jestem przejazdem w Lyonie), Il est de passage en France (Jest tymczasowo we Francji). Czesto uzywane w kontekscie podrozy i wizyt. Sugeruje krotki pobyt, nie stale zamieszkanie."
+      },
+      {
+        "id": "pf_exet8",
+        "question": "Les magasins _____ ouverts le dimanche.",
+        "translation": "(Sklepy sa otwarte w niedziele.)",
+        "options": [
+          "sont",
+          "font",
+          "ont",
+          "restent"
+        ],
+        "correct": "sont",
+        "explanation": "'Etre ouvert' (byc otwartym) vs 'etre ferme' (byc zamknietym) to podstawowe wyrazenia uzywane codziennie do sklepow, urzedow, restauracji. Po polsku mowimy 'sklep jest otwarty' - tu sie zgadza z francuskim! Przyklad: Le musee est ouvert de 9h a 18h (Muzeum jest otwarte od 9 do 18). A quelle heure est-ce que la boulangerie est ouverte? (O ktorej otwarta jest piekarnia?)."
+      },
+      {
+        "id": "pf_exet9",
+        "question": "Elle _____ en colere contre son frere.",
+        "translation": "(Ona gniewa sie na swojego brata.)",
+        "options": [
+          "est",
+          "a",
+          "fait",
+          "met"
+        ],
+        "correct": "est",
+        "explanation": "'Etre en colere contre' (gniewac sie na kogos) - emocja gniewu wyrazana z 'etre'. Po polsku: 'gniewac sie' lub 'byc zlym'. Roznica: 'etre en colere' (byc zlym) vs 'se mettre en colere' (zdenerwowac sie - poczatek stanu). Przyklady: Ne sois pas en colere! (Nie zlosz sie!), Il s'est mis en colere (Zdeznerwowl sie). Przyimek 'contre' oznacza na kogo sie gniewamy."
+      },
+      {
+        "id": "pf_exet10",
+        "question": "Nous _____ prets a partir.",
+        "translation": "(Jestesmy gotowi do wyjscia.)",
+        "options": [
+          "sommes",
+          "avons",
+          "faisons",
+          "allons"
+        ],
+        "correct": "sommes",
+        "explanation": "'Etre pret a' (byc gotowym do) to wyrazenie gotowosci. Przymiotnik 'pret' odmienia sie: pret (m.sg), prete (f.sg), prets (m.pl), pretes (f.pl). Struktura: etre pret(e)(s) + a + bezokolicznik. Przyklad: Tu es prete a manger? (Jestes gotowa do jedzenia?). W pytaniach czesto: Pret? (Gotowy?) - krotko i uzywane na co dzien."
+      },
+      {
+        "id": "pf_exet11",
+        "question": "Tu _____ capable de le faire seul.",
+        "translation": "(Jestes zdolny to zrobic sam.)",
+        "options": [
+          "es",
+          "as",
+          "fais",
+          "peux"
+        ],
+        "correct": "es",
+        "explanation": "'Etre capable de' (byc zdolnym do) wyrazenie umiejetnosci. Roznica z 'pouvoir': 'pouvoir' = moznosc fizyczna/pozwolenie, 'etre capable' = kompetencja/umiejetnosc. Przyklady: Il est capable de courir un marathon (Jest zdolny przebiec maraton). Forma negatywna 'etre incapable de' (byc niezdolnym do). W polskim tez mowimy 'byc zdolnym' - tu sie pokrywa!"
+      },
+      {
+        "id": "pf_exet12",
+        "question": "Le livre _____ a moi, pas a toi.",
+        "translation": "(Ksiazka jest moja, nie twoja.)",
+        "options": [
+          "est",
+          "fait",
+          "a",
+          "appartient"
+        ],
+        "correct": "est",
+        "explanation": "'Etre a quelqu'un' (nalezec do kogos) to prosta konstrukcja wlasnosci. Po polsku: 'byc czyms czyims' lub 'nalezec do'. C'est a moi! (To moje!), C'est a qui? (Do kogo to nalezy?). Alternatywa formalna: 'appartenir a' (nalezec do). Ale 'etre a' jest znacznie czesciej uzywane w mowie codziennej. Przyklady: Ce sac est a ma soeur (Ta torba jest mojej siostry)."
+      },
+      {
+        "id": "pf_exet13",
+        "question": "Ils _____ en vacances jusqu'a lundi.",
+        "translation": "(Oni sa na wakacjach do poniedzialku.)",
+        "options": [
+          "sont",
+          "ont",
+          "font",
+          "partent"
+        ],
+        "correct": "sont",
+        "explanation": "'Etre en vacances' (byc na wakacjach/urlopie) to czeste wyrazenie. Po polsku tez mowimy 'byc na wakacjach' - zgadza sie! Inne wyrazenia z 'etre en': etre en voyage (byc w podrozy), etre en reunion (byc na spotkaniu), etre en cours (byc na zajeciach), etre en conge (byc na urlopie). Zawsze z 'en' + rzeczownik bez rodzajnika. Bardzo uzyteczna grupa wyrazen!"
+      },
+      {
+        "id": "pf_exet14",
+        "question": "Je _____ a l'aise dans ce groupe.",
+        "translation": "(Czuje sie swobodnie w tej grupie.)",
+        "options": [
+          "suis",
+          "ai",
+          "fais",
+          "me sens"
+        ],
+        "correct": "suis",
+        "explanation": "'Etre a l'aise' (czuc sie swobodnie, komfortowo) to wyrazenie komfortu emocjonalnego lub fizycznego. Odwrotnosc: 'etre mal a l'aise' (czuc sie niezrecznie). Po polsku: 'czuc sie swobodnie' uzywa 'czuc', ale po francusku 'byc'. Przyklady: Mettez-vous a l'aise ! (Niech pani/pan czuje sie swobodnie! / Prosze sie rozgoscic!). Czesto uzywane przez gospodarzy."
+      },
+      {
+        "id": "pf_exet15",
+        "question": "Cette decision _____ difficile a prendre.",
+        "translation": "(Ta decyzja jest trudna do podjecia.)",
+        "options": [
+          "est",
+          "fait",
+          "a",
+          "semble"
+        ],
+        "correct": "est",
+        "explanation": "'Etre + przymiotnik + a + infinitif' to wazna konstrukcja opisujaca trudnosc/latwosc czynnosci. Przyklady: facile a comprendre (latwy do zrozumienia), difficile a croire (trudny do uwierzenia), impossible a faire (niemozliwy do zrobienia). Po polsku tez mowimy 'trudny DO zrobienia', wiec tu sie struktura pokrywa. Ale po francusku uzywamy 'a', nie 'de' w tej konstrukcji!"
+      }
+    ]
+  },
+  {
+    "key": "verbes_prepositionnels",
+    "name": "Verbes a preposition",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pf_vprep1",
+        "question": "Il pense _____ ses vacances.",
+        "translation": "(On mysli o swoich wakacjach.)",
+        "options": [
+          "a",
+          "de",
+          "sur",
+          "pour"
+        ],
+        "correct": "a",
+        "explanation": "'Penser a' (myslec o czyms/kims) to jeden z najwazniejszych czasownikow z przyimkiem. UWAGA na roznice: 'penser a' = myslec o (kierunek mysli), 'penser de' = miec zdanie o (opinia). Przyklad: Je pense a toi (Mysle o tobie) vs Que penses-tu de ce film? (Co myslisz o tym filmie?). W polskim uzywamy 'o' w obu przypadkach, ale po francusku to rozne przyimki!"
+      },
+      {
+        "id": "pf_vprep2",
+        "question": "Elle s'interesse _____ la musique classique.",
+        "translation": "(Ona interesuje sie muzyka klasyczna.)",
+        "options": [
+          "a",
+          "de",
+          "pour",
+          "en"
+        ],
+        "correct": "a",
+        "explanation": "'S'interesser a' (interesowac sie czyms) - przyimek 'a', nie 'de' ani 'pour'! Ale 'etre interesse par' (byc zainteresowanym czym) uzywa 'par'. To czesty blad: mylenie przyimkow przy formach aktywnych i pasywnych. Po polsku: 'interesowac sie czyms' (narzednik), ale po francusku: s'interesser A quelque chose. Zapamietaj te pare!"
+      },
+      {
+        "id": "pf_vprep3",
+        "question": "Nous avons decide _____ partir.",
+        "translation": "(Postanowilismy wyjechac.)",
+        "options": [
+          "de",
+          "a",
+          "pour",
+          "par"
+        ],
+        "correct": "de",
+        "explanation": "'Decider de + infinitif' (postanowic cos zrobic) - przyimek 'de' przed bezokolicznikiem. To jeden z wielu czasownikow uzywajacych 'de' przed bezokolicznikiem: essayer de (probowac), oublier de (zapomniec), refuser de (odmowic), arreeter de (przestac). Po polsku te czasowniki nie wymagaja przyimka - 'postanowilem wyjechac'. Dlatego Polacy czesto zapominaja o 'de'!"
+      },
+      {
+        "id": "pf_vprep4",
+        "question": "Je m'occupe _____ les enfants.",
+        "translation": "(Opiekuje sie dziecmi.)",
+        "options": [
+          "de",
+          "a",
+          "pour",
+          "avec"
+        ],
+        "correct": "de",
+        "explanation": "'S'occuper de' (opiekowac sie czyms/kims, zajmowac sie) - zawsze z 'de'. Po polsku mowimy 'opiekowac sie kims' (narzednik), ale po francusku 'de'. Inne znaczenie: 'occuper' bez 'se' = zajmowac (miejsce). Przyklady: Je m'occupe de tout (Zajme sie wszystkim), Elle s'occupe de sa grand-mere (Ona opiekuje sie babcia). W formie rozkazujacej: Occupe-toi de tes affaires! (Zajmij sie swoimi sprawami!)."
+      },
+      {
+        "id": "pf_vprep5",
+        "question": "Tu joues _____ piano?",
+        "translation": "(Grasz na pianinie?)",
+        "options": [
+          "du",
+          "au",
+          "le",
+          "sur le"
+        ],
+        "correct": "du",
+        "explanation": "'Jouer de' + instrument muzyczny (grac na instrumencie) vs 'jouer a' + sport/gra (grac w cos). To fundamentalna roznica! Jouer DU piano (grac na pianinie), jouer DE LA guitare (grac na gitarze), ale jouer AU football (grac w pilke), jouer AUX cartes (grac w karty). 'Du' = de + le (contraction). Po polsku 'grac na/w', ale po francusku trzeba wiedziec, czy to instrument (de) czy gra (a)."
+      },
+      {
+        "id": "pf_vprep6",
+        "question": "Elle ressemble _____ sa mere.",
+        "translation": "(Ona jest podobna do swojej matki.)",
+        "options": [
+          "a",
+          "de",
+          "comme",
+          "avec"
+        ],
+        "correct": "a",
+        "explanation": "'Ressembler a' (byc podobnym do) - przyimek 'a', nie 'de'! Po polsku: 'byc podobnym DO' (dopelniacz), po francusku 'a' (celownik). Przyklad: Tu ressembles a ton pere (Jestes podobny do ojca). Forma zwrotna 'se ressembler' (byc do siebie podobnymi): Ils se ressemblent beaucoup (Bardzo sa do siebie podobni). Czeste wyrazenie opisujace wygladl lub charakter."
+      },
+      {
+        "id": "pf_vprep7",
+        "question": "Il depend _____ ses parents financierement.",
+        "translation": "(On zalezy finansowo od rodzicow.)",
+        "options": [
+          "de",
+          "a",
+          "sur",
+          "par"
+        ],
+        "correct": "de",
+        "explanation": "'Dependre de' (zalezec od) - przyimek 'de'. Po polsku 'zalezec OD' (dopelniacz), po francusku 'de'. Tu sie akurat zgadza logika! Ca depend (To zalezy) - uzywane samo, bez 'de' w potocznej mowie. Ca depend de toi (To zalezy od ciebie). Przyklady: Le prix depend de la qualite (Cena zalezy od jakosci). Czesto uzywane w rozmowach codziennych."
+      },
+      {
+        "id": "pf_vprep8",
+        "question": "Nous participons _____ la competition.",
+        "translation": "(Bierzemy udzial w konkursie.)",
+        "options": [
+          "a",
+          "de",
+          "dans",
+          "pour"
+        ],
+        "correct": "a",
+        "explanation": "'Participer a' (uczestniczyc w, brac udzial w) - przyimek 'a'. Po polsku: 'uczestniczyc W' (miejscownik), ale po francusku 'a'. Przyklad: Elle participe a la reunion (Uczestniczy w spotkaniu). Podobne czasowniki z 'a': assister a (byc obecnym na), repondre a (odpowiadac na). Wielu Polakow blednie mowi 'participer dans' - to niepoprawne po francusku!"
+      },
+      {
+        "id": "pf_vprep9",
+        "question": "Je me souviens _____ cette journee.",
+        "translation": "(Pamietam ten dzien.)",
+        "options": [
+          "de",
+          "a",
+          "sur",
+          "pour"
+        ],
+        "correct": "de",
+        "explanation": "'Se souvenir de' (pamietac o, wspominac) - przyimek 'de'. UWAGA na roznice: 'se souvenir DE' (pamietac, wspominac) vs 'se rappeler' (przypominac sobie) - 'se rappeler' jest czasownikiem bezposrednim, BEZ przyimka! Je me souviens de toi (Pamietam cie) vs Je me rappelle cette journee (Przypominam sobie ten dzien). W mowie potocznej obie formy sa czesto mylone nawet przez Francuzow."
+      },
+      {
+        "id": "pf_vprep10",
+        "question": "Elle refuse _____ accepter cette condition.",
+        "translation": "(Ona odmawia przyjecia tego warunku.)",
+        "options": [
+          "de",
+          "a",
+          "pour",
+          "par"
+        ],
+        "correct": "de",
+        "explanation": "'Refuser de + infinitif' (odmawiac zrobienia czegos) - przyimek 'de' przed bezokolicznikiem. Grupa czasownikow z 'de': refuser de, essayer de, arreter de, continuer de, oublier de, decider de, regretter de, proposer de. Po polsku te czasowniki nie wymagaja przyimka: 'odmawiam zrobienia' - bezposrednie polaczenie. To czesty zrodlo bledow dla polskojezycznych uczniow!"
+      },
+      {
+        "id": "pf_vprep11",
+        "question": "Tu t'habitues _____ la vie en France?",
+        "translation": "(Przyzwyczajasz sie do zycia we Francji?)",
+        "options": [
+          "a",
+          "de",
+          "avec",
+          "pour"
+        ],
+        "correct": "a",
+        "explanation": "'S'habituer a' (przyzwyczajac sie do) - przyimek 'a'. Po polsku: 'przyzwyczajac sie DO' (dopelniacz). Przyklady: Je m'habitue au climat (Przyzwyczajam sie do klimatu - 'au' = a + le). Przymiotnik 'habitue a' (przyzwyczajony do): Je suis habitue au froid (Jestem przyzwyczajony do zimna). Proces: s'habituer a qqch, stan: etre habitue a qqch."
+      },
+      {
+        "id": "pf_vprep12",
+        "question": "Il reve _____ devenir astronaute.",
+        "translation": "(On marzy o tym, zeby zostac astronauta.)",
+        "options": [
+          "de",
+          "a",
+          "pour",
+          "sur"
+        ],
+        "correct": "de",
+        "explanation": "'Rever de' (marzyc o) - przyimek 'de'. Po polsku: 'marzyc O' (miejscownik). Struktura: rever de + rzeczownik/bezokolicznik. Przyklady: Je reve de voyager (Marze o podrozowaniu), Elle reve d'un monde meilleur (Marzy o lepszym swiecie). Ale 'rever a' tez istnieje w sensie 'rozmyslac o, snuc marzenia o' - subtelna roznica! 'Rever de' jest bardziej powszechne."
+      },
+      {
+        "id": "pf_vprep13",
+        "question": "Nous nous inquietons _____ l'avenir.",
+        "translation": "(Martwimy sie o przyszlosc.)",
+        "options": [
+          "de",
+          "pour",
+          "a",
+          "sur"
+        ],
+        "correct": "de",
+        "explanation": "'S'inquieter de' (martwic sie o) - przyimek 'de'. Po polsku: 'martwic sie O' (biernik). Ale 'inquieter quelqu'un' (martwic kogos) bez przyimka: Cette situation m'inquiete (Ta sytuacja mnie martwi). 'S'inquieter pour' tez jest uzywane (bardziej empatycznie): Je m'inquiete pour toi (Martwic sie o ciebie - emocjonalnie). 'De' jest bardziej neutralne, 'pour' bardziej osobiste."
+      },
+      {
+        "id": "pf_vprep14",
+        "question": "Elle reussit toujours _____ convaincre les gens.",
+        "translation": "(Ona zawsze udaje sie przekonac ludzi.)",
+        "options": [
+          "a",
+          "de",
+          "pour",
+          "par"
+        ],
+        "correct": "a",
+        "explanation": "'Reussir a + infinitif' (udac sie cos zrobic, zdolac) - przyimek 'a'. UWAGA: 'reussir' + rzeczownik (bez przyimka): reussir un examen (zdac egzamin), ale 'reussir A faire qqch' (zdolac cos zrobic). Po polsku: 'udac sie cos zrobic' - bez przyimka. Przyklad: J'ai reussi a le contacter (Udalio mi sie z nim skontaktowac). Czesty blad: 'reussir de faire' - NIEPOPRAWNE!"
+      },
+      {
+        "id": "pf_vprep15",
+        "question": "Tu tiens _____ ce projet?",
+        "translation": "(Zalezy ci na tym projekcie?)",
+        "options": [
+          "a",
+          "de",
+          "pour",
+          "sur"
+        ],
+        "correct": "a",
+        "explanation": "'Tenir a' (zalezec na, byc przywiazanym do) - przyimek 'a'. Po polsku: 'zalezec NA' (miejscownik). Ale 'tenir de' = byc podobnym do (z rodziny): Il tient de sa mere (Jest podobny do matki). I 'se tenir' = trzymac sie: Tiens-toi droit! (Stoj prosto!). Trzy rozne przyimki, trzy rozne znaczenia! J'y tiens beaucoup = Bardzo mi na tym zalezy ('y' zastepuje 'a cela')."
+      }
+    ]
+  },
+  {
+    "key": "interrogation_avancee",
+    "name": "Interrogation avancee",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pf_intav1",
+        "question": "_____ est-ce que tu fais ce soir?",
+        "translation": "(Co robisz dzis wieczorem?)",
+        "options": [
+          "Qu'",
+          "Que",
+          "Quoi",
+          "Quel"
+        ],
+        "correct": "Qu'",
+        "explanation": "'Qu'est-ce que' (co - pytanie o czynnosc/rzecz) to najczesciej uzywana forma pytania o 'co' we francuskim. Skladowe: Qu' (co) + est-ce que (inwersja). Elision: 'Que' staje sie 'Qu'' przed samogloska. Trzy sposoby pytania o to samo: Qu'est-ce que tu fais? (standardowe), Que fais-tu? (formalne z inwersja), Tu fais quoi? (potoczne). Wszystkie poprawne, roznia sie rejestrem!"
+      },
+      {
+        "id": "pf_intav2",
+        "question": "A _____ pensez-vous?",
+        "translation": "(O czym myslicie?)",
+        "options": [
+          "quoi",
+          "que",
+          "qui",
+          "quel"
+        ],
+        "correct": "quoi",
+        "explanation": "'A quoi' (o czym) - 'quoi' uzywa sie po przyimku (a, de, avec, pour...). Po polsku mamy 'co/czym' w roznych przypadkach, ale po francusku: 'que' bez przyimka, 'quoi' po przyimku. Przyklady: De quoi parles-tu? (O czym mowisz?), Avec quoi manges-tu? (Czym jesz?), Pour quoi faire? (Po co?). Zapamietaj regule: przyimek + quoi, nigdy przyimek + que!"
+      },
+      {
+        "id": "pf_intav3",
+        "question": "_____ livre preferes-tu?",
+        "translation": "(Ktora ksiazke wolisz?)",
+        "options": [
+          "Quel",
+          "Lequel",
+          "Que",
+          "Qui"
+        ],
+        "correct": "Quel",
+        "explanation": "'Quel(le)(s)' (jaki, ktory) - przymiotnik pytajny, ktory odmienia sie w rodzaju i liczbie: quel (m.sg), quelle (f.sg), quels (m.pl), quelles (f.pl). Zawsze stoi PRZED rzeczownikiem: Quel livre? (Jaka ksiazka?), Quelle heure est-il? (Ktora godzina?). Roznica z 'lequel': 'quel' + rzeczownik, 'lequel' zastepuje rzeczownik (bez niego). Po polsku: 'jaki/ktory' - podobna funkcja."
+      },
+      {
+        "id": "pf_intav4",
+        "question": "_____ de ces deux films as-tu vu?",
+        "translation": "(Ktory z tych dwoch filmow widziales?)",
+        "options": [
+          "Lequel",
+          "Quel",
+          "Que",
+          "Qui"
+        ],
+        "correct": "Lequel",
+        "explanation": "'Lequel' (ktory - zaimek pytajny) zastepuje rzeczownik w pytaniu o wybor. Odmiana: lequel (m.sg), laquelle (f.sg), lesquels (m.pl), lesquelles (f.pl). UWAGA na contractions z 'a' i 'de': auquel (a + lequel), duquel (de + lequel), auxquels/auxquelles, desquels/desquelles. Przyklad: Auquel penses-tu? (O ktorym myslisz?). W polskim mamy 'ktory' bez tych komplikacji."
+      },
+      {
+        "id": "pf_intav5",
+        "question": "De _____ ce restaurant est-il connu?",
+        "translation": "(Z czego ta restauracja jest znana?)",
+        "options": [
+          "quoi",
+          "que",
+          "quel",
+          "qui"
+        ],
+        "correct": "quoi",
+        "explanation": "'De quoi' (z czego, o czym) - przyimek 'de' + 'quoi' dla rzeczy. Regula: 'de qui' dla osob, 'de quoi' dla rzeczy. Przyklady: De quoi parles-tu? (O czym mowisz?), De qui parles-tu? (O kim mowisz?). Roznica z 'dont': 'de quoi' w pytaniach, 'dont' w zdaniach wzglednych. Po polsku uzywamy 'o czym/o kim' - tu przyimek jest taki sam, ale po francusku mamy de quoi/de qui."
+      },
+      {
+        "id": "pf_intav6",
+        "question": "_____ a telephone ce matin?",
+        "translation": "(Kto dzwonil dzis rano?)",
+        "options": [
+          "Qui",
+          "Que",
+          "Quoi",
+          "Quel"
+        ],
+        "correct": "Qui",
+        "explanation": "'Qui' (kto) jako podmiot pytania - najwazniejsza funkcja. Kiedy 'qui' jest podmiotem, czasownik jest w 3 osobie liczby pojedynczej: Qui veut du cafe? (Kto chce kawe?), Qui est la? (Kto tam?). UWAGA: brak inwersji ani 'est-ce que' kiedy 'qui' jest podmiotem! Porownaj: Qui vient? (Kto przychodzi? - podmiot) vs Qui invites-tu? (Kogo zapraszasz? - dopelnienie)."
+      },
+      {
+        "id": "pf_intav7",
+        "question": "_____ est-ce qui te derange?",
+        "translation": "(Co cie przeszkadza?)",
+        "options": [
+          "Qu'",
+          "Qui",
+          "Quoi",
+          "Quel"
+        ],
+        "correct": "Qu'",
+        "explanation": "'Qu'est-ce qui' (co - jako podmiot) to forma pytania o rzecz w funkcji podmiotu. Cztery kombinacje: Qui est-ce qui (kto-podmiot), Qui est-ce que (kogo-dopelnienie), Qu'est-ce qui (co-podmiot), Qu'est-ce que (co-dopelnienie). To system, ktory trzeba zapamiectac! Pierwszy element = o co pytamy (qui=osoba, que=rzecz), drugi = funkcja (qui=podmiot, que=dopelnienie)."
+      },
+      {
+        "id": "pf_intav8",
+        "question": "_____ vous preferez, le rouge ou le bleu?",
+        "translation": "(Czy wolicie czerwony czy niebieski?)",
+        "options": [
+          "Est-ce que",
+          "Qu'est-ce que",
+          "Est-ce qui",
+          "Qui est-ce que"
+        ],
+        "correct": "Est-ce que",
+        "explanation": "'Est-ce que' to uniwersalny sposob tworzenia pytan zamknietych (tak/nie) we francuskim. Dodajesz go na poczatku zdania oznajmujacego: Tu aimes le chocolat -> Est-ce que tu aimes le chocolat? Trzy sposoby pytania tak/nie: intonacja (Tu viens?), est-ce que (Est-ce que tu viens?), inwersja (Viens-tu?). 'Est-ce que' jest neutralne - ani za formalne, ani za potoczne. Idealne do nauki!"
+      },
+      {
+        "id": "pf_intav9",
+        "question": "_____ vous ne venez pas?",
+        "translation": "(Dlaczego nie przychodzicie?)",
+        "options": [
+          "Pourquoi",
+          "Pour quoi",
+          "Parce que",
+          "Comment"
+        ],
+        "correct": "Pourquoi",
+        "explanation": "'Pourquoi' (dlaczego) - jedno slowo! UWAGA na roznice: 'pourquoi' (dlaczego - pytanie) vs 'parce que' (poniewaz - odpowiedz) vs 'pour quoi' (dwa slowa = po co, w jakim celu). Przyklad: Pourquoi tu pleures? Parce que je suis triste. (Dlaczego placzeas? Poniewaz jestem smutna). Po polsku 'dlaczego' i 'bo/poniewaz' to tez rozne slowa. Czesty blad: pisanie 'pour quoi' zamiast 'pourquoi'."
+      },
+      {
+        "id": "pf_intav10",
+        "question": "_____ s'appelle votre chien?",
+        "translation": "(Jak sie nazywa wasz pies?)",
+        "options": [
+          "Comment",
+          "Comme",
+          "Quel",
+          "Quoi"
+        ],
+        "correct": "Comment",
+        "explanation": "'Comment' (jak) - przyslowek pytajny. Uzywany do pytania o sposob lub nazwe. Comment vous appelez-vous? (Jak sie pan/pani nazywa?), Comment ca va? (Jak sie masz?), Comment dit-on... en francais? (Jak sie mowi... po francusku?). Nie mylic z 'comme' (jak - w porownaniach): Il est grand comme son pere (Jest wysoki jak ojciec). 'Comment' = pytanie, 'comme' = porownanie."
+      },
+      {
+        "id": "pf_intav11",
+        "question": "_____ coute ce manteau?",
+        "translation": "(Ile kosztuje ten plaszcz?)",
+        "options": [
+          "Combien",
+          "Comment",
+          "Quel",
+          "Quoi"
+        ],
+        "correct": "Combien",
+        "explanation": "'Combien' (ile) - pytanie o ilosc lub cene. Combien ca coute? (Ile to kosztuje?), Combien de temps? (Ile czasu?), Combien de personnes? (Ile osob?). UWAGA: 'combien DE' + rzeczownik (ile czegos), ale 'combien' samo (ile kosztuje). Po polsku 'ile' uzywa dopelniacza: 'ile osob', we francuskim: combien DE personnes. 'De' jest kluczowe i obowiazkowe!"
+      },
+      {
+        "id": "pf_intav12",
+        "question": "D'_____ venez-vous exactement?",
+        "translation": "(Skad dokladnie pochodzicie?)",
+        "options": [
+          "ou",
+          "ici",
+          "la",
+          "quoi"
+        ],
+        "correct": "ou",
+        "explanation": "'D'ou' (skad) to pytanie o pochodzenie lub punkt wyjscia. Struktura: 'de' + 'ou' -> D'ou. D'ou venez-vous? (Skad pochodzicie?), D'ou vient ce bruit? (Skad dochodzi ten halas?). Roznica: 'ou' (gdzie - kierunek/miejsce) vs 'd'ou' (skad - poczatek). Po polsku: 'gdzie' vs 'skad' - ta sama logika. 'Ou' z akcentem (ou) = gdzie; 'ou' bez akcentu (ou) = lub!"
+      },
+      {
+        "id": "pf_intav13",
+        "question": "A _____ heure commence le film?",
+        "translation": "(O ktorej godzinie zaczyna sie film?)",
+        "options": [
+          "quelle",
+          "quel",
+          "combien",
+          "quoi"
+        ],
+        "correct": "quelle",
+        "explanation": "'A quelle heure' (o ktorej godzinie) - 'quelle' bo 'heure' jest rodzaju zenskiego! Zapamietaj: quel + m., quelle + f. 'Heure' (godzina) = rodzaj zenski we francuskim. Przyklady: A quelle heure tu te leves? (O ktorej wstajesz?), A quelle heure le magasin ouvre? (O ktorej otwiera sie sklep?). Odpowiedz: A 8 heures (O osmej). 'Quelle' jest tu przymiotnikiem pytajnym."
+      },
+      {
+        "id": "pf_intav14",
+        "question": "_____ est le plus grand, Pierre ou Jean?",
+        "translation": "(Kto jest wyzszy, Pierre czy Jean?)",
+        "options": [
+          "Qui",
+          "Que",
+          "Quel",
+          "Lequel"
+        ],
+        "correct": "Qui",
+        "explanation": "'Qui' (kto) w pytaniu o osobe z porownaniem. 'Qui est le plus grand?' to pytanie o identyfikacje osoby. Roznica z 'lequel': 'qui' = open question (kto - brak ograniczonego wyboru), 'lequel' = zamkniety wybor (ktory z podanych). Ale w mowie codziennej 'qui' jest czesto uzywane nawet przy ograniczonym wyborze. Przyklady: Qui est le meilleur? (Kto jest najlepszy?)."
+      },
+      {
+        "id": "pf_intav15",
+        "question": "_____ exactement lui avez-vous dit?",
+        "translation": "(Co dokladnie mu powiedzieliscie?)",
+        "options": [
+          "Que",
+          "Quoi",
+          "Quel",
+          "Qui"
+        ],
+        "correct": "Que",
+        "explanation": "'Que' (co) jako dopelnienie z inwersja formalną. Struktura: Que + czasownik + podmiot (inwersja). To najbardziej formalna forma pytania o 'co'. Porownaj trzy rejestry: Qu'avez-vous dit? (formalny), Qu'est-ce que vous avez dit? (standardowy), Vous avez dit quoi? (potoczny). Wszystkie poprawne! 'Que' wymaga inwersji lub 'est-ce que'. W mowie codziennej najczesciej: Tu as dit quoi?"
+      }
+    ]
+  },
+  {
+    "key": "exclamation",
+    "name": "Exclamation",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pf_excl1",
+        "question": "_____ belle journee!",
+        "translation": "(Co za piekny dzien!)",
+        "options": [
+          "Quelle",
+          "Quel",
+          "Quelles",
+          "Quels"
+        ],
+        "correct": "Quelle",
+        "explanation": "'Quelle' (jaka) to przymiotnik wykrzyknikowy rodzaju zenskiego liczby pojedynczej. Zgadza sie z rzeczownikiem 'journee' (f.). Francuskie wykrzyknienia z 'quel/quelle' odpowiadaja polskiemu 'co za...!'. Odmiana: quel (m.sg.), quelle (f.sg.), quels (m.pl.), quelles (f.pl.). W przeciwienstwie do polskiego, zawsze wymagany jest rodzajnik wykrzyknikowy — nie mozna powiedziec po prostu 'Belle journee!'"
+      },
+      {
+        "id": "pf_excl2",
+        "question": "_____ surprise de te voir ici!",
+        "translation": "(Co za niespodzianka spotkac cie tutaj!)",
+        "options": [
+          "Quelle",
+          "Quel",
+          "Quelles",
+          "Comme"
+        ],
+        "correct": "Quelle",
+        "explanation": "'Quelle surprise!' (co za niespodzianka!) — 'surprise' to rzeczownik rodzaju zenskiego, wiec uzywamy 'quelle'. Konstrukcja 'Quel(le) + rzeczownik + de + bezokolicznik' tworzy pelne wyrazenie emocji. UWAGA: nie mylic z 'Comme' (jak), ktore wymaga innej skladni: 'Comme c'est surprenant!' Oba wyrazaja emocje, ale struktura sie rozni."
+      },
+      {
+        "id": "pf_excl3",
+        "question": "_____ tu es grand maintenant!",
+        "translation": "(Jak ty jestes teraz duzy!)",
+        "options": [
+          "Comme",
+          "Comment",
+          "Combien",
+          "Quel"
+        ],
+        "correct": "Comme",
+        "explanation": "'Comme' (jak) to przyslowek wykrzyknikowy uzywany przed zdaniem podmiot+orzeczenie. 'Comme tu es grand!' = 'Jak jestes duzy!' W odroznieniu od 'Quel', ktory laczy sie z rzeczownikiem, 'Comme' modyfikuje calowity. Alternatywna forma: 'Que tu es grand!' (rejestr literacki). 'Comment' w wykrzyknieniu oznacza zaskoczenie: 'Comment! Tu es la?' (Co! Jestes tutaj?)"
+      },
+      {
+        "id": "pf_excl4",
+        "question": "_____ il fait chaud aujourd'hui!",
+        "translation": "(Jak jest dzisiaj goraco!)",
+        "options": [
+          "Qu'est-ce qu'",
+          "Comme",
+          "Comment",
+          "Combien"
+        ],
+        "correct": "Qu'est-ce qu'",
+        "explanation": "'Qu'est-ce qu'il fait chaud!' (Jak jest goraco!) — konstrukcja potoczna, bardzo czesta we francuskim mowionym. Formalnie to forma pytajaca, ale w wykrzyknieniu wyrasiwyrazknie emocje. Alternatywy: 'Comme il fait chaud!' (neutralne), 'Ce qu'il fait chaud!' (potoczne skrocone). Te trzy formy sa wymienne, ale roznia sie rejestrem — 'Qu'est-ce que' jest najbardziej potoczne."
+      },
+      {
+        "id": "pf_excl5",
+        "question": "_____ de bruit dans cette rue!",
+        "translation": "(Ile halasu na tej ulicy!)",
+        "options": [
+          "Que",
+          "Quel",
+          "Combien",
+          "Comme"
+        ],
+        "correct": "Que",
+        "explanation": "'Que de + rzeczownik' (ile + rzeczownik) to formalna/literacka konstrukcja wykrzyknikowa wyrazajaca duza ilosc. 'Que de bruit!' = 'Ile halasu!' Inne opcje: 'Combien de bruit!' (bardziej potoczne), 'Quel bruit!' (z przymiotnikiem wykrzyknikowym). UWAGA: 'Que' w tej pozycji NIE jest zaimkiem pytajacym, lecz przyslowkiem wykrzyknikowym — czesty blad u uczacych sie."
+      },
+      {
+        "id": "pf_excl6",
+        "question": "_____ magnifique spectacle nous avons vu!",
+        "translation": "(Co za wspanialy spektakl widzielismy!)",
+        "options": [
+          "Quel",
+          "Quelle",
+          "Quels",
+          "Comme"
+        ],
+        "correct": "Quel",
+        "explanation": "'Quel' (jaki) — rodzaj meski liczba pojedyncza, bo 'spectacle' jest rodzaju meskiego. Przymiotnik 'magnifique' stoi miedzy 'quel' a rzeczownikiem, tworzac emfatyczna konstrukcje. Szyk: Quel + (przymiotnik) + rzeczownik + podmiot + orzeczenie. W polskim: 'Co za wspanialy spektakl!' W odroznieniu od polskiego, francuski wymaga uzgodnienia rodzaju i liczby przymiotnika wykrzyknikowego."
+      },
+      {
+        "id": "pf_excl7",
+        "question": "_____ c'est beau!",
+        "translation": "(Jak to jest piekne!)",
+        "options": [
+          "Comme",
+          "Quel",
+          "Comment",
+          "Combien"
+        ],
+        "correct": "Comme",
+        "explanation": "'Comme c'est beau!' (Jak to jest piekne!) — 'Comme' przed 'c'est + przymiotnik' to najczestsze wyrazenie podziwu. Struktura: Comme + c'est + przymiotnik. Alternatywy: 'Que c'est beau!' (literackie), 'Ce que c'est beau!' (potoczne). Blad do unikania: NIE 'Comment c'est beau!' — 'comment' nie sluzy do wyrazania podziwu, lecz zaskoczenia lub pyta o sposob: 'Comment c'est fait?' (jak to zrobione?)"
+      },
+      {
+        "id": "pf_excl8",
+        "question": "_____ chance tu as!",
+        "translation": "(Co za szczescie masz!)",
+        "options": [
+          "Quelle",
+          "Quel",
+          "Comme",
+          "Que"
+        ],
+        "correct": "Quelle",
+        "explanation": "'Quelle chance!' (co za szczescie!) — 'chance' jest rodzaju zenskiego (la chance), wiec uzywamy 'quelle'. To jedno z najczestszych wyrazen wykrzyknikowych. Uwaga na false friend: 'chance' po francusku oznacza 'szczescie/szansa', NIE 'szansa' w sensie prawdopodobienstwa. Inne popularne: 'Quelle horreur!' (co za koszmar!), 'Quelle idee!' (co za pomysl!), 'Quelle histoire!' (co za historia!)."
+      },
+      {
+        "id": "pf_excl9",
+        "question": "Si seulement je _____ parler francais couramment!",
+        "translation": "(Gdybym tylko mogl plynnie mowic po francusku!)",
+        "options": [
+          "pouvais",
+          "peux",
+          "pourrai",
+          "puisse"
+        ],
+        "correct": "pouvais",
+        "explanation": "'Si seulement + imparfait' (gdybym tylko + czas przeszly niedokonany) wyrazycza niezrealizowane zyczenie dotyczace terazniejszosci. 'Si seulement je pouvais...' = 'Gdybym tylko mogl...' To zdanie wykrzyknikowe wyrazajace pragnienie. UWAGA: uzywamy imparfait (pouvais), NIE present (peux), bo to zyczenie nierealne. Inne przykladowe: 'Si seulement j'avais le temps!' (gdybym tylko mial czas!)"
+      },
+      {
+        "id": "pf_excl10",
+        "question": "_____ idiot j'ai ete!",
+        "translation": "(Jakim bylem idiota!)",
+        "options": [
+          "Quel",
+          "Quelle",
+          "Comme",
+          "Comment"
+        ],
+        "correct": "Quel",
+        "explanation": "'Quel idiot!' (jaki idiota!) — 'idiot' jest rodzaju meskiego, wiec 'quel'. Konstrukcja 'Quel + rzeczownik + j'ai ete!' wyrazycza autocenure ze zdumieniene. Szyk: Quel + rzeczownik + podmiot + czasownik. Inne popularne samokrytyki: 'Quelle idiote j'ai ete!' (f.), 'Quel imbecile!' (jaki glupiec!). UWAGA: w j. mowionym czesto upraszcza sie do 'Quel idiot!' bez dalszej czesci zdania."
+      },
+      {
+        "id": "pf_excl11",
+        "question": "_____ gentil de ta part!",
+        "translation": "(Jak milo z twojej strony!)",
+        "options": [
+          "Comme c'est",
+          "Quel",
+          "Comment",
+          "Combien"
+        ],
+        "correct": "Comme c'est",
+        "explanation": "'Comme c'est gentil de ta part!' (jak milo z twojej strony!) — pelna struktura: Comme + c'est + przymiotnik + de + possesseur + part. Wyrazycza wdziecznosc lub uznanie. 'De ta part' = z twojej strony, 'de sa part' = z jego/jej strony. Alternatywy: 'C'est tellement gentil!' (bardziej potoczne), 'C'est tres gentil de ta part' (neutralne). W polskim odpowiada: 'Jak milo/uprzejmie z twojej strony!'"
+      },
+      {
+        "id": "pf_excl12",
+        "question": "_____ j'aimerais etre a ta place!",
+        "translation": "(Jak bardzo chcialbym byc na twoim miejscu!)",
+        "options": [
+          "Comme",
+          "Comment",
+          "Combien",
+          "Quel"
+        ],
+        "correct": "Comme",
+        "explanation": "'Comme j'aimerais...!' (jak bardzo chcialbym...!) — 'Comme' + conditionnel wyrazycza silne, nierealistyczne pragnienie. 'Etre a ta place' = byc na twoim miejscu. Alternatywa: 'Combien j'aimerais...!' (bardziej formalne). UWAGA: 'aimer' w conditionnel (aimerais) wyrazycza zyczenie, w indicatif (aime) — stan faktyczny. 'J'aime le chocolat' (lubie czekolade) vs 'J'aimerais voyager' (chcialbym podrozowac)."
+      },
+      {
+        "id": "pf_excl13",
+        "question": "_____ droles vous etes!",
+        "translation": "(Jacy wy jestescie smieszni!)",
+        "options": [
+          "Que",
+          "Comme",
+          "Comment",
+          "Quels"
+        ],
+        "correct": "Que",
+        "explanation": "'Que + przymiotnik + podmiot + etre!' to konstrukcja literacka/formalna wyrazajaca emocje. 'Que droles vous etes!' = 'Jacy jestescie smieszni!' Odpowiada polskiemu 'Jak/jacy...' 'Que' w tej pozycji jest adwerbem wykrzyknikowym (= comme). Codziennie powiedzielibysmy: 'Comme vous etes droles!' lub 'Vous etes tellement droles!' Ale 'Que' jest czeste w literaturze i filmach."
+      },
+      {
+        "id": "pf_excl14",
+        "question": "_____ dommage que tu ne puisses pas venir!",
+        "translation": "(Co za szkoda, ze nie mozesz przyjsc!)",
+        "options": [
+          "Quel",
+          "Quelle",
+          "Comme",
+          "Comment"
+        ],
+        "correct": "Quel",
+        "explanation": "'Quel dommage!' (co za szkoda!) — 'dommage' jest rodzaju meskiego (le dommage), wiec 'quel'. Konstrukcja: Quel dommage + que + subjonctif. 'Que tu ne puisses pas venir' — subjonctif, bo wyrazycza emocje/ubolewanie. UWAGA: 'dommage' jest zawsze meskie, czesty blad: NIE 'quelle dommage'. Krotka wersja: 'Quel dommage!' (bez dalszej czesci) jest rownie poprawna i czesta."
+      },
+      {
+        "id": "pf_excl15",
+        "question": "_____ monde il y a ici!",
+        "translation": "(Ile ludzi jest tutaj!)",
+        "options": [
+          "Que de",
+          "Quel",
+          "Comme",
+          "Combien de"
+        ],
+        "correct": "Que de",
+        "explanation": "'Que de monde!' (ile ludzi! / co za tlum!) — 'Que de + rzeczownik' wyrazycza duza ilosc w sposob emfatyczny. 'Monde' w tym kontekscie oznacza 'ludzi/tlum' (nie 'swiat'). Alternatywy: 'Combien de monde!' (mniej formalne), 'Il y a tellement de monde!' (neutralne stwierdzenie). UWAGA: 'monde' jest niepoliczalny w tym uzyciu — NIE 'Que de mondes!' Konstrukcja 'que de' jest typowo francuska, bez bezposredniego odpowiednika w polskim."
+      }
+    ]
+  },
+  {
+    "key": "double_pronoms",
+    "name": "Double pronoms",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pf_dpro1",
+        "question": "Je _____ donne.",
+        "translation": "(Daje ci to.)",
+        "options": [
+          "te le",
+          "le te",
+          "te la",
+          "la te"
+        ],
+        "correct": "te le",
+        "explanation": "Szyk podwojnych zaimkow we francuskim: me/te/se/nous/vous + le/la/les. 'Je te le donne' = Daje ci to (le = to). Zaimek osobowy (te = ci) stoi PRZED zaimkiem rzeczowym (le = to). To odwrotny szyk niz w polskim! W polskim: 'daje CI TO' lub 'daje TO CI' — oba poprawne. We francuskim TYLKO: te le. NIGDY 'le te'. Ta zasada dotyczy 1. i 2. osoby (me, te, se, nous, vous)."
+      },
+      {
+        "id": "pf_dpro2",
+        "question": "Il _____ a explique.",
+        "translation": "(On nam to wyjasnil.)",
+        "options": [
+          "nous l'",
+          "l'nous",
+          "nous le",
+          "le nous"
+        ],
+        "correct": "nous l'",
+        "explanation": "'Il nous l'a explique' = On nam to wyjasnil. Szyk: nous (nam) + l' (to, elision przed 'a'). UWAGA na elision: 'le' staje sie 'l'' przed samogloska ('a' od 'avoir'). Pelna forma bez elision bylaby 'nous le', ale przed samogloska ZAWSZE nastepuje elision: nous l'a. Szyk podwojnych zaimkow z passe compose: podmiot + zaimki + auxiliaire + participe passe."
+      },
+      {
+        "id": "pf_dpro3",
+        "question": "Elle _____ a envoyes.",
+        "translation": "(Ona mu je wyslala.)",
+        "options": [
+          "les lui",
+          "lui les",
+          "le lui",
+          "lui le"
+        ],
+        "correct": "les lui",
+        "explanation": "Szyk z 3. osoba: le/la/les + lui/leur. 'Elle les lui a envoyes' = Ona je (les) jemu (lui) wyslala. UWAGA: z 3. osoba szyk jest ODWROTNY niz z 1./2. osoba! Z me/te/nous/vous: osobowy PRZED rzeczowym (te le). Z lui/leur: rzeczowy PRZED osobowym (les lui). To najczestszy blad — trzeba zapamietac dwie rozne kolejnosci!"
+      },
+      {
+        "id": "pf_dpro4",
+        "question": "Ne _____ dis pas!",
+        "translation": "(Nie mow mu tego!)",
+        "options": [
+          "le lui",
+          "lui le",
+          "lui la",
+          "la lui"
+        ],
+        "correct": "le lui",
+        "explanation": "'Ne le lui dis pas!' = Nie mow mu tego! W negacji zaimki zostaja miedzy 'ne' i czasownikiem: ne + zaimki + czasownik + pas. Szyk zaimkow nie zmienia sie w negacji! 'Le' (tego) + 'lui' (mu) — rzeczowy przed osobowym 3. osoby. Porownaj: 'Dis-le-lui!' (tryb rozkazujacy twierdzacy — zaimki PO czasowniku z myslnikami) vs 'Ne le lui dis pas!' (przeczacy — zaimki PRZED)."
+      },
+      {
+        "id": "pf_dpro5",
+        "question": "_____ en a parle.",
+        "translation": "(On mu/jej o tym mowil.)",
+        "options": [
+          "Il lui",
+          "Il le",
+          "Lui il",
+          "Il y"
+        ],
+        "correct": "Il lui",
+        "explanation": "'Il lui en a parle' = On mu/jej o tym mowil. 'Lui' = mu/jej (COI), 'en' = o tym (zamienia 'de qqch'). Szyk: lui/leur + en. 'En' zastepuje 'de quelque chose': parler de qqch -> en parler. 'Lui' zastepuje 'a quelqu'un': parler a qqn -> lui parler. Lacznie: parler de qqch a qqn -> lui en parler. UWAGA: 'en' pojawia sie zawsze na koncu lancucha zaimkow (przed czasownikiem)."
+      },
+      {
+        "id": "pf_dpro6",
+        "question": "Je vais _____ presenter.",
+        "translation": "(Zamierzam ci go/ja przedstawic.)",
+        "options": [
+          "te le",
+          "le te",
+          "te la",
+          "la te"
+        ],
+        "correct": "te le",
+        "explanation": "'Je vais te le presenter' = Zamierzam ci go przedstawic. Z bezokolicznikiem (futur proche: aller + infinitif) zaimki stoja PRZED bezokolicznikiem, NIE przed 'aller'. Tak samo: 'Je veux te le dire' (chce ci to powiedziec), 'Je peux te le montrer' (moge ci to pokazac). Szyk: me/te + le/la/les + infinitif. NIGDY: 'Je te vais le presenter' — zaimki ida do bezokolicznika!"
+      },
+      {
+        "id": "pf_dpro7",
+        "question": "Donne-_____!",
+        "translation": "(Daj mi to!)",
+        "options": [
+          "le-moi",
+          "moi-le",
+          "me-le",
+          "le-me"
+        ],
+        "correct": "le-moi",
+        "explanation": "'Donne-le-moi!' = Daj mi to! W trybie rozkazujacym twierdzacym zaimki stoja PO czasowniku, polaczone myslnikami. Szyk: czasownik + le/la/les + moi/toi/lui/nous/vous/leur. UWAGA: 'me' staje sie 'moi', 'te' staje sie 'toi' w pozycji po czasowniku. ALE w negacji: 'Ne me le donne pas!' — powracamy do normalnego szyku (zaimki PRZED czasownikiem, 'moi' -> 'me')."
+      },
+      {
+        "id": "pf_dpro8",
+        "question": "Il _____ y a emmenes.",
+        "translation": "(On nas tam zabral.)",
+        "options": [
+          "nous",
+          "y nous",
+          "nous y",
+          "en nous"
+        ],
+        "correct": "nous",
+        "explanation": "'Il nous y a emmenes' = On nas tam zabral. 'Nous' = nas, 'y' = tam (zastepuje miejsce). Szyk: me/te/nous/vous + y + czasownik. 'Y' zastepuje 'a + lieu': aller a Paris -> y aller. UWAGA: 'y' pojawia sie miedzy zaimkiem osobowym a czasownikiem. Porownaj: 'Il m'y a conduit' (zawiozl mnie tam), 'Elle t'y retrouvera' (spotka cie tam). 'Y' i 'en' sa zawsze na koncu lancucha (y przed en)."
+      },
+      {
+        "id": "pf_dpro9",
+        "question": "Ne _____ donne pas!",
+        "translation": "(Nie dawaj mu ich!)",
+        "options": [
+          "les lui",
+          "lui les",
+          "le lui",
+          "lui le"
+        ],
+        "correct": "les lui",
+        "explanation": "'Ne les lui donne pas!' = Nie dawaj mu ich! Szyk w negacji z 3. osoba: ne + le/la/les + lui/leur + czasownik + pas. Zaimki zostaja w tej samej kolejnosci co w twierdzeniu. 'Les' (ich) przed 'lui' (mu). Porownaj twierdzenie: 'Donne-les-lui!' (imperatif, zaimki PO, z myslnikami). Negacja zawsze przywraca normalny szyk zaimkow — to pocieszajace, bo jest latwiejsze!"
+      },
+      {
+        "id": "pf_dpro10",
+        "question": "Elle _____ a rendus.",
+        "translation": "(Ona je im oddala.)",
+        "options": [
+          "les leur",
+          "leur les",
+          "le leur",
+          "leur le"
+        ],
+        "correct": "les leur",
+        "explanation": "'Elle les leur a rendus' = Ona je (les) im (leur) oddala. 'Leur' = im (COI, l.mn.), 'les' = je (COD, l.mn.). Szyk z 3. osoba: rzeczowy (les) PRZED osobowym (leur). Accord du participe passe: 'rendus' (l.mn.m. lub mieszana) bo COD 'les' stoi PRZED auxiliaire 'avoir'. Gdyby COD byl zenski: 'Elle les leur a rendues'. To trudna zasada, laczaca podwojne zaimki z uzgodnieniem!"
+      },
+      {
+        "id": "pf_dpro11",
+        "question": "Je _____ souviens bien.",
+        "translation": "(Dobrze to pamietam.)",
+        "options": [
+          "m'en",
+          "en me",
+          "me en",
+          "y me"
+        ],
+        "correct": "m'en",
+        "explanation": "'Je m'en souviens bien' = Dobrze to pamietam. 'Se souvenir de qqch' = pamietac cos. 'Me' (sie — zaimek zwrotny), 'en' (tego — zastepuje 'de qqch'). Szyk: me + en -> m'en (elision). UWAGA: 'se souvenir' to czasownik zwrotny, wiec 'me' jest zaimkiem zwrotnym, nie COI. 'En' zastepuje dopelnienie z 'de'. Inne przyklady: 's'en aller' (odchodzic): 'Je m'en vais' (odchodze)."
+      },
+      {
+        "id": "pf_dpro12",
+        "question": "Dites-_____ vite!",
+        "translation": "(Powiedzcie mu to szybko!)",
+        "options": [
+          "le-lui",
+          "lui-le",
+          "la-lui",
+          "lui-la"
+        ],
+        "correct": "le-lui",
+        "explanation": "'Dites-le-lui vite!' = Powiedzcie mu to szybko! Imperatif twierdzacy z 3. osoba: czasownik + le/la/les + lui/leur (z myslnikami). Szyk jest taki sam jak w zdaniu oznajmujacym — rzeczowy przed osobowym. Przyspl. 'vite' stoi po zaimkach. ALE w negacji: 'Ne le lui dites pas!' (powrot do normalnego szyku). UWAGA: w j. mowionym Francuzi czesto upraszczaja: 'Dis-lui' (powiedz mu) bez 'le'."
+      },
+      {
+        "id": "pf_dpro13",
+        "question": "Il va _____ offrir pour Noel.",
+        "translation": "(On zamierza jej to podarowac na Boze Narodzenie.)",
+        "options": [
+          "le lui",
+          "lui le",
+          "la lui",
+          "lui la"
+        ],
+        "correct": "le lui",
+        "explanation": "'Il va le lui offrir pour Noel' = On zamierza je (le) jej (lui) podarowac. Z aller + infinitif: zaimki stoja PRZED bezokolicznikiem (offrir). Szyk z 3. osoba: le/la/les + lui/leur + infinitif. NIGDY: 'Il le va lui offrir'. Czasownik modalny (va) nie przyjmuje zaimkow! Inne: 'Elle veut le lui dire' (chce mu to powiedziec), 'Je dois les leur rendre' (musze im je oddac)."
+      },
+      {
+        "id": "pf_dpro14",
+        "question": "_____ a-t-il envoye la lettre?",
+        "translation": "(Czy mu ja wyslal?)",
+        "options": [
+          "La lui",
+          "Lui la",
+          "Le lui",
+          "Lui le"
+        ],
+        "correct": "La lui",
+        "explanation": "'La lui a-t-il envoyee?' = Czy (ja) (mu/jej) wyslal? W pytaniu z inwersja zaimki stoja PRZED blokiem inwersyjnym (a-t-il). Szyk zaimkow nie zmienia sie w pytaniu! 'La' (ja, f.) + 'lui' (mu/jej) — rzeczowy przed osobowym 3. os. UWAGA na accord: 'envoyee' (zenski) bo 'la' (COD f.) stoi przed 'avoir'. Pytanie potoczne: 'Il la lui a envoyee?' (bez inwersji, ta sama kolejnosc zaimkow)."
+      },
+      {
+        "id": "pf_dpro15",
+        "question": "Je _____ ai achetees au marche.",
+        "translation": "(Kupilem je (f.) tam na targu.)",
+        "options": [
+          "les y",
+          "y les",
+          "les en",
+          "en les"
+        ],
+        "correct": "les y",
+        "explanation": "'Je les y ai achetees au marche' — tu 'y' zastepuje lokalizacje (na targu => tam). Szyk: me/te/le/la/les/nous/vous + y. 'Les' (je) + 'y' (tam). Accord: 'achetees' (f.pl.) bo COD 'les' (f.) stoi przed 'avoir'. W praktyce 'y' z innymi zaimkami jest rzadkie w mowie — Francuzi czesciej powiedza: 'Je les ai achetees la-bas'. Ale w pisowni formalnej ta konstrukcja jest poprawna i elegancka."
+      }
+    ]
+  },
+  {
+    "key": "ne_expletif",
+    "name": "Ne expletif",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pf_nexp1",
+        "question": "J'ai peur qu'il _____ vienne.",
+        "translation": "(Boje sie, ze on przyjdzie.)",
+        "options": [
+          "ne",
+          "n'en",
+          "ne pas",
+          "pas"
+        ],
+        "correct": "ne",
+        "explanation": "'Ne expletif' (ne pozorne) to 'ne' bez wartosci przeczacej! 'J'ai peur qu'il ne vienne' = boje sie, ze PRZYJDZIE (nie: ze nie przyjdzie). Po wyrazeniach strachu/obawy (avoir peur que, craindre que) dodajemy 'ne' ktore nic nie neguje — to czysta ozdoba gramatyczna. W polskim nie ma odpowiednika. BEZ 'ne': 'J'ai peur qu'il vienne' — rowniez poprawne, szczegolnie w j. mowionym. Z negacja: 'J'ai peur qu'il ne vienne pas' — boje sie, ze NIE przyjdzie."
+      },
+      {
+        "id": "pf_nexp2",
+        "question": "Avant qu'il _____ parte, dis-lui au revoir.",
+        "translation": "(Zanim odejdzie, pozegnaj go.)",
+        "options": [
+          "ne",
+          "ne pas",
+          "n'en",
+          "pas"
+        ],
+        "correct": "ne",
+        "explanation": "'Avant que + ne expletif + subjonctif' — 'avant qu'il ne parte' = zanim odejdzie. Zdanie NIE jest przeczace! 'Ne' jest tu pozorne, czysto stylistyczne. Uzywane po 'avant que' w rejestrzeformalnym/pisamym. NIGDY w: 'apres que' (po tym jak) — tam zwykly indicatif. W mowie potocznej 'ne' ekspletywne jest pomijane: 'Avant qu'il parte'. UWAGA: NIE mylic z 'Avant qu'il ne parte pas' — to bylaby negacja: zanim NIE odejdzie (co nie ma sensu)."
+      },
+      {
+        "id": "pf_nexp3",
+        "question": "Elle est plus intelligente qu'on _____ le pense.",
+        "translation": "(Ona jest madrzejsza niz sie mysli.)",
+        "options": [
+          "ne",
+          "ne pas",
+          "n'en",
+          "y"
+        ],
+        "correct": "ne",
+        "explanation": "'Ne expletif' po porownianiu nierownosci (plus/moins/autre que). 'Plus intelligente qu'on ne le pense' = madrzejsza niz sie mysli. 'Ne' nie neguje! To ozdobnik podkreslajacy roznice. 'Le' zastepuje to, co sie mysli. W mowie: 'Plus intelligente qu'on pense' (bez 'ne' i 'le'). UWAGA: TYLKO po nierownosciach: plus que, moins que, autre que, mieux que. NIGDY po aussi que, autant que (rownosc) — tam 'ne' ekspletywne nie wystepuje!"
+      },
+      {
+        "id": "pf_nexp4",
+        "question": "Je crains qu'elle _____ soit en retard.",
+        "translation": "(Obawiam sie, ze ona sie spozni.)",
+        "options": [
+          "ne",
+          "ne pas",
+          "n'en",
+          "pas"
+        ],
+        "correct": "ne",
+        "explanation": "'Craindre que + ne expletif' — 'Je crains qu'elle ne soit en retard' = obawiam sie, ze BEDZIE spomniona. 'Ne' tu nic nie neguje! Inne czasowniki obawy z 'ne' ekspletywnym: redouter que (lekac sie), trembler que (drzec), apprehender que. UWAGA: uzywamy subjonctif (soit), bo po 'craindre que' zawsze subjonctif. Negacja: 'Je crains qu'elle ne soit PAS en retard' — obawiam sie, ze NIE bedzie spomniona. Widzisz roznice? 'Ne' sam = ekspletywny; 'ne...pas' = prawdziwa negacja."
+      },
+      {
+        "id": "pf_nexp5",
+        "question": "Empeche qu'il _____ parte!",
+        "translation": "(Powstrzymaj go, zeby nie odszedl!)",
+        "options": [
+          "ne",
+          "ne pas",
+          "n'y",
+          "pas"
+        ],
+        "correct": "ne",
+        "explanation": "'Empecher que + ne expletif + subjonctif' — po 'empecher que' (powstrzymac, zeby) i 'eviter que' (unikac, zeby) uzywamy 'ne' ekspletywnego. 'Empeche qu'il ne parte!' = Powstrzymaj, zeby (nie) odszedl. Tu 'ne' jako ekspletywne jest naprawde na granicy — sugeruje zapobieganie, wiec troche 'neguje'. UWAGA: 'empecher de + infinitif' NIE wymaga 'ne': 'Empeche-le de partir!' Ekspletywne 'ne' tylko z 'que + subjonctif'!"
+      },
+      {
+        "id": "pf_nexp6",
+        "question": "Il est plus rapide que tu _____ crois.",
+        "translation": "(On jest szybszy niz myslisz.)",
+        "options": [
+          "ne le",
+          "ne pas le",
+          "le ne",
+          "pas le"
+        ],
+        "correct": "ne le",
+        "explanation": "'Ne expletif' w porownaniu: 'plus rapide que tu ne le crois' = szybszy niz myslisz. 'Ne' jest pozorne (nic nie neguje). 'Le' zastepuje 'qu'il est rapide' — zaimek neutralny odwolujacy sie do calego pojecia. Szyk: que + podmiot + ne + le + czasownik. W mowie potocznej: 'plus rapide que tu crois' (bez 'ne' i 'le'). Cala ta konstrukcja jest cecha rejestru formalnego/pisanego — poprawna w pisamie, ale rzadka w mowie."
+      },
+      {
+        "id": "pf_nexp7",
+        "question": "De peur qu'il _____ pleuve, prends un parapluie.",
+        "translation": "(Z obawy przed deszczem, wez parasol.)",
+        "options": [
+          "ne",
+          "ne pas",
+          "n'en",
+          "pas"
+        ],
+        "correct": "ne",
+        "explanation": "'De peur que / de crainte que + ne expletif + subjonctif' — 'de peur qu'il ne pleuve' = z obawy, ze bedzie padac. Zdanie NIE mowi, ze nie bedzie padac! 'Ne' jest czysto ozdobne. 'Pleuve' to subjonctif od 'pleuvoir' (padac). Inne wyrazenia z 'ne' ekspletywnym: 'de crainte que' (z obawy, ze), 'de peur de + infinitif' (z obawy przed — BEZ 'ne'!). UWAGA: tylko 'de peur que + subjonctif' bierze 'ne', nie 'de peur de + infinitif'."
+      },
+      {
+        "id": "pf_nexp8",
+        "question": "A moins qu'il _____ fasse beau, nous resterons a la maison.",
+        "translation": "(Chyba ze bedzie ladna pogoda, zostaniemy w domu.)",
+        "options": [
+          "ne",
+          "ne pas",
+          "n'en",
+          "y"
+        ],
+        "correct": "ne",
+        "explanation": "'A moins que + ne expletif + subjonctif' — 'a moins qu'il ne fasse beau' = chyba ze bedzie ladna pogoda. 'Ne' nie neguje! 'Fasse' to subjonctif od 'faire'. 'A moins que' (chyba ze) zawsze wymaga subjonctif. Inne spojniki z 'ne' ekspletywnym: 'sans que' (bez tego, zeby — ale tu 'ne' jest rzadsze). UWAGA: w mowie potocznej 'ne' ekspletywne po 'a moins que' jest czesto pomijane: 'A moins qu'il fasse beau'."
+      },
+      {
+        "id": "pf_nexp9",
+        "question": "Cela fait trois ans que je _____ l'ai vu.",
+        "translation": "(Minelo trzy lata, odkad go nie widzialem.)",
+        "options": [
+          "ne",
+          "n'",
+          "ne pas",
+          "pas"
+        ],
+        "correct": "ne",
+        "explanation": "UWAGA: Tu 'ne' NIE jest ekspletywne — to prawdziwa negacja! 'Cela fait trois ans que je ne l'ai vu' = Nie widzialem go od trzech lat. W formalnym/literackim francuskim 'ne' moze wystepowac BEZ 'pas' z pewnymi czasownikami: voir (widziec), oser (smiec), pouvoir (moc), savoir (wiedziec), cesser (przestawac). 'Je ne sais' (nie wiem), 'Je n'ose' (nie smiem). To nie ekspletywne 'ne', ale archaiczna negacja bez 'pas'."
+      },
+      {
+        "id": "pf_nexp10",
+        "question": "Je doute qu'il _____ reussisse.",
+        "translation": "(Watpie, czy mu sie uda.)",
+        "options": [
+          "ne",
+          "y",
+          "en",
+          "le"
+        ],
+        "correct": "ne",
+        "explanation": "UWAGA: Po 'douter que' (watpic, czy) 'ne' ekspletywne jest OPCJONALNE i rzadkie. Wielu gramatykow odradza je tu, bo 'douter' juz zawiera negatywnosc. Poprawne formy: 'Je doute qu'il reussisse' (standardowe), 'Je doute qu'il ne reussisse' (z 'ne' ekspletywnym — bardzo formalne). ALE: po 'ne pas douter que' (nie watpic, ze): 'Je ne doute pas qu'il ne reussisse' — tu 'ne' ekspletywne jest czestsze, bo zanegowane watpienie = pewnosc."
+      },
+      {
+        "id": "pf_nexp11",
+        "question": "Il est moins cher que je _____ pensais.",
+        "translation": "(Jest tanszy niz myslalem.)",
+        "options": [
+          "ne le",
+          "ne pas le",
+          "le ne",
+          "pas"
+        ],
+        "correct": "ne le",
+        "explanation": "'Moins + przymiotnik + que + ne expletif' — 'moins cher que je ne le pensais' = tanszy niz myslalem. Tak samo jak z 'plus': 'ne' nie neguje, jest ozdobne. 'Le' jest zaimkiem neutralnym zastepujacym cale pojecie (ze jest drogi). UWAGA: z 'aussi/autant que' (tak samo jak) NIE uzywamy 'ne' ekspletywnego: 'Il est aussi cher que je le pensais' (jest tak drogi jak myslalem) — bez 'ne'. Roznica miedzy rownoscia a nierownoscia!"
+      },
+      {
+        "id": "pf_nexp12",
+        "question": "Elle travaille dur pour _____ echouer a l'examen.",
+        "translation": "(Ona cieszko pracuje, zeby nie oblac egzaminu.)",
+        "options": [
+          "ne pas",
+          "ne",
+          "pas",
+          "n'en pas"
+        ],
+        "correct": "ne pas",
+        "explanation": "UWAGA: Tu to PRAWDZIWA negacja, nie ekspletywna! 'Pour ne pas echouer' = zeby NIE oblac. Struktura: pour + ne pas + infinitif. Szyk negacji z bezokolicznikiem: 'ne pas' stoja RAZEM przed bezokolicznikiem (nie rozdzielone jak w zdaniu glownym). Porownaj: 'Je ne veux pas' (ne...pas rozdzielone) vs 'pour ne pas vouloir' (ne pas razem). Inne: 'afin de ne pas' (aby nie), 'sans ne pas' (NIE! — 'sans' juz jest negatywne)."
+      },
+      {
+        "id": "pf_nexp13",
+        "question": "Partons avant qu'il _____ fasse nuit.",
+        "translation": "(Wyjdzmy zanim sie sciemni.)",
+        "options": [
+          "ne",
+          "ne pas",
+          "n'en",
+          "pas"
+        ],
+        "correct": "ne",
+        "explanation": "'Avant que + ne expletif' — 'avant qu'il ne fasse nuit' = zanim sie sciemni. 'Faire nuit' = robic sie ciemno (bezosobowe: il fait nuit). 'Ne' jest pozorne — zdanie mowi, ze sciemni sie, chcemy wyjsc PRZED tym. Bez 'ne': 'Avant qu'il fasse nuit' — rownie poprawne, mniej formalne. WSKAZOWKA: Jesli usuwasz 'ne' i sens zdania sie nie zmienia, to bylo 'ne' ekspletywne. Jesli zmienia sie — to prawdziwa negacja."
+      },
+      {
+        "id": "pf_nexp14",
+        "question": "Il est autre que je _____ croyais.",
+        "translation": "(On jest inny niz sadzalem.)",
+        "options": [
+          "ne le",
+          "ne pas le",
+          "le",
+          "ne"
+        ],
+        "correct": "ne le",
+        "explanation": "'Autre que + ne expletif' — 'autre que je ne le croyais' = inny niz sadzalem. 'Autre que' (inny niz) to trzeci typ porownania (obok plus/moins) ktory bierze 'ne' ekspletywne. 'Le' = zaimek neutralny (= jakim go uwalem). REGULA GENERALNA: porownanie nierownosci (plus, moins, autre, mieux, pire) + que + ne ekspletywne (opcjonalne, formalne). Porownanie rownosci (aussi, autant, pareil, meme) — BEZ 'ne' ekspletywnego."
+      },
+      {
+        "id": "pf_nexp15",
+        "question": "Restez ici jusqu'a ce que je _____ revienne.",
+        "translation": "(Zostancie tu, az wrzuce.)",
+        "options": [
+          "ne",
+          "pas",
+          "ne pas",
+          "y"
+        ],
+        "correct": "ne",
+        "explanation": "UWAGA: 'Jusqu'a ce que + ne expletif' jest KONTROWERSYJNE. Wielu gramatykow uwaza, ze NIE powinno sie tu uzywac 'ne' ekspletywnego, ale jest spotykane w uzyciu. Standardowa forma: 'jusqu'a ce que je revienne' (bez 'ne'). Z 'ne': 'jusqu'a ce que je ne revienne' — hiperformalne. PODSUMOWANIE ne ekspletif: wyrabienia strachu (avoir peur, craindre), zapobiegania (empecher, eviter), porownania (plus/moins/autre que), czasu (avant que, a moins que). W mowie — pomijane!"
+      }
+    ]
+  },
+  {
+    "key": "tout_meme_autre",
+    "name": "Tout, meme, autre",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pf_tma1",
+        "question": "_____ les jours, je vais au travail.",
+        "translation": "(Codziennie chodze do pracy.)",
+        "options": [
+          "Tous",
+          "Tout",
+          "Toute",
+          "Toutes"
+        ],
+        "correct": "Tous",
+        "explanation": "'Tous les jours' (codziennie/wszystkie dni) — 'tous' to forma meska l.mn. od 'tout'. Odmiana: tout (m.sg.), toute (f.sg.), tous (m.pl.), toutes (f.pl.). UWAGA na wymowe: 'tous' przed rzeczownikiem = [tu] (bez s), 'tous' jako zaimek = [tus] (z s). 'Tous les jours' [tu le zur]. Porownaj: 'Ils sont tous la' [tus] (wszyscy sa). Ta roznica wymowy jest kluczowa — pisownia identyczna, wymowa inna!"
+      },
+      {
+        "id": "pf_tma2",
+        "question": "Elle est _____ contente de la nouvelle.",
+        "translation": "(Ona jest bardzo zadowolona z nowiny.)",
+        "options": [
+          "toute",
+          "tout",
+          "tous",
+          "toutes"
+        ],
+        "correct": "toute",
+        "explanation": "'Tout/toute' jako adwerb (= tres, completement) znaczy 'calkiem/bardzo/zupelnie'. SPECJALNA ZASADA: jako adwerb 'tout' jest NIEODMIENNY... z jednym wyjatkiem! Przed przymiotnikiem zenskim zaczynajacym sie od spolgloski lub 'h' aspirowane: 'toute contente' (nie 'tout contente'). ALE: 'tout heureuse' (nie 'toute') bo 'h' jest nieme. 'Tout entiere' (nie 'toute') bo 'e' to samogloska. Ta zasada jest unikalna i czesto sprawiana na egzaminach DELF!"
+      },
+      {
+        "id": "pf_tma3",
+        "question": "J'ai lu le livre _____.",
+        "translation": "(Przeczytalem cala ksiazke.)",
+        "options": [
+          "tout entier",
+          "tout entiere",
+          "toute entiere",
+          "tous entiers"
+        ],
+        "correct": "tout entier",
+        "explanation": "'Tout entier' — tu 'tout' jest adwerbem (= completement) modyfikujacym 'entier'. Nie wyrazona w zdaniu ale 'livre' jest m. (le livre), wiec 'tout entier' (m.sg.). Gdyby to bylo 'la maison': 'J'ai lu la lettre tout entiere' — ale UWAGA: w tym przypadku 'entiere' zaczyna sie od samogloski 'e', wiec 'tout' pozostaje nieodmienne (nie 'toute')! Tylko przed spolgloska/h-aspirowane odmienia sie: 'toute petite', 'toute honteuse'."
+      },
+      {
+        "id": "pf_tma4",
+        "question": "C'est la _____ chose que j'ai vue.",
+        "translation": "(To ta sama rzecz, ktora widzialem.)",
+        "options": [
+          "meme",
+          "memes",
+          "propre",
+          "seule"
+        ],
+        "correct": "meme",
+        "explanation": "'Meme' (ten sam/ta sama) jako przymiotnik PRZED rzeczownikiem znaczy 'ten sam'. 'La meme chose' = ta sama rzecz. UWAGA na pozycje! PRZED rzeczownikiem: 'meme' = ten sam (la meme personne = ta sama osoba). PO rzeczowniku: 'meme' = sam/sama, wlasnie (le roi meme = sam krol). Z myslnikiem: 'moi-meme' = ja sam/sama. W polskim nie mamy tej rozgrywki pozycji — 'ten sam' i 'sam' to rozne slowa."
+      },
+      {
+        "id": "pf_tma5",
+        "question": "Les enfants _____ l'ont compris.",
+        "translation": "(Same dzieci to zrozumialy.)",
+        "options": [
+          "eux-memes",
+          "eux-meme",
+          "memes",
+          "meme"
+        ],
+        "correct": "eux-memes",
+        "explanation": "'Eux-memes' (one same, m.pl.) — zaimek toniczny + meme/memes z myslnikiem. Odmiana: moi-meme, toi-meme, lui-meme, elle-meme, nous-memes, vous-meme(s), eux-memes, elles-memes. UWAGA: 'vous-meme' (sg. grzecznosciowe) vs 'vous-memes' (pl.). 'Eux-memes' jest ZAWSZE w l.mn. Pozycja: po podmiocie lub na koncu zdania. 'Ils l'ont fait eux-memes' = Zrobili to sami. W polskim: 'sami' — prostsze, bez myslnika."
+      },
+      {
+        "id": "pf_tma6",
+        "question": "J'ai _____ essaye, mais sans succes.",
+        "translation": "(Nawet probowalem, ale bez powodzenia.)",
+        "options": [
+          "meme",
+          "memes",
+          "tous",
+          "aussi"
+        ],
+        "correct": "meme",
+        "explanation": "'Meme' jako adwerb (= nawet) jest NIEODMIENNY i stoi przed czasownikiem lub po nim. 'J'ai meme essaye' = nawet probowalem. UWAGA na 3 znaczenia 'meme': 1) przymiotnik przed rzecz. = ten sam (le meme livre), 2) przymiotnik po rzecz./zaimku = sam (lui-meme), 3) adwerb = nawet (meme pas = nawet nie). Adwerbialne 'meme' nigdy sie nie odmienia! 'Meme les enfants' = nawet dzieci (tutaj: adverb + article + nom)."
+      },
+      {
+        "id": "pf_tma7",
+        "question": "Donnez-moi un _____ verre, s'il vous plait.",
+        "translation": "(Daj mi inny szklank, prosze.)",
+        "options": [
+          "autre",
+          "autres",
+          "meme",
+          "nouveau"
+        ],
+        "correct": "autre",
+        "explanation": "'Autre' (inny/inna) — przymiotnik nieokresloni, nie odmienia sie w rodzaju (autre m. = autre f.), ale w liczbie: autre (sg.), autres (pl.). 'Un autre verre' = inny szklankak. UWAGA: 'un autre' (nieokreslony inny) vs 'l'autre' (okreslony ten drugi). 'Les uns... les autres' = jedni... drudzy. W polskim: 'inny' odmienia sie przez rodzaj i przypadek — 'autre' jest prostsze! Czesty blad: 'un different verre' — NIE! Uzyj 'autre'."
+      },
+      {
+        "id": "pf_tma8",
+        "question": "_____ dit, il faudra recommencer.",
+        "translation": "(Innymi slowy, trzeba bedzie zaczac od nowa.)",
+        "options": [
+          "Autrement",
+          "Autrefois",
+          "Autre",
+          "Alternatives"
+        ],
+        "correct": "Autrement",
+        "explanation": "'Autrement dit' (innymi slowy) — stale wyrazenie lancujace z 'autrement' (inaczej/w inny sposob). Pokrewne wyrazenia: 'autrement' (inaczej/w przeciwnym razie), 'autrefois' (dawniej/kiedys — UWAGA: inne slowo!), 'autre part' (gdzie indziej), 'd'autre part' (z drugiej strony). NIE mylic 'autrement' i 'autrefois'! 'Autrement' = inaczej (od 'autre'), 'autrefois' = dawniej (autre + fois = inny raz)."
+      },
+      {
+        "id": "pf_tma9",
+        "question": "C'est _____ a fait normal.",
+        "translation": "(To jest zupelnie normalne.)",
+        "options": [
+          "tout",
+          "toute",
+          "tous",
+          "tres"
+        ],
+        "correct": "tout",
+        "explanation": "'Tout a fait' (zupelnie/calkowicie) — stale wyrazenie przyslowkowe. 'Tout' jest tu nieodmienny (zawsze 'tout', nigdy 'toute a fait'!). Inne stale wyrazenia z 'tout': 'tout de suite' (od razu), 'tout a l'heure' (za chwile / przed chwila), 'tout a coup' (nagle), 'tout de meme' (mimo wszystko), 'tout au moins' (przynajmniej). UWAGA: 'tout a fait' jest bardziej emfatyczne niz 'completement'. Odpowiada polskiemu 'zupelnie/absolutnie'."
+      },
+      {
+        "id": "pf_tma10",
+        "question": "Ce n'est pas la _____ chose.",
+        "translation": "(To nie jest ta sama rzecz.)",
+        "options": [
+          "meme",
+          "autre",
+          "pareille",
+          "seule"
+        ],
+        "correct": "meme",
+        "explanation": "'La meme chose' (ta sama rzecz) — z negacja: 'ce n'est pas la meme chose' = to nie jest ta sama rzecz. 'Meme' (przymiotnik, przed rzecz.) = ten sam/ta sama. Synonimy: 'pareil(le)' (taki sam/podobny — ale stoi PO rzeczowniku!): 'une chose pareille'. 'Identique' (identyczny — takze PO): 'une chose identique'. Do odrozniania: 'C'est pareil' (to to samo, potoczne), 'C'est la meme chose' (to ta sama rzecz, standardowe)."
+      },
+      {
+        "id": "pf_tma11",
+        "question": "Les _____ ont refuse de participer.",
+        "translation": "(Pozostali odmowili udzialu.)",
+        "options": [
+          "autres",
+          "autre",
+          "memes",
+          "tous"
+        ],
+        "correct": "autres",
+        "explanation": "'Les autres' (pozostali/inni) — 'autre' jako zaimek moze stac samodzielnie z rodzajnikiem. Uzywamy l.mn.: 'les autres' (inni/pozostali). 'L'un et l'autre' (jeden i drugi), 'ni l'un ni l'autre' (ani jeden, ani drugi), 'l'un ou l'autre' (jeden z dwoch). UWAGA: 'autrui' = inni ludzie (bardzo formalny odpowiednik 'les autres'): 'respecter autrui' (szanowac bliznich). W mowie: zawsze 'les autres'."
+      },
+      {
+        "id": "pf_tma12",
+        "question": "Il pleut, mais _____ de meme nous sortirons.",
+        "translation": "(Pada, ale mimo wszystko wyjdziemy.)",
+        "options": [
+          "tout",
+          "toute",
+          "tous",
+          "meme"
+        ],
+        "correct": "tout",
+        "explanation": "'Tout de meme' (mimo wszystko/jednak) — stale wyrazenie przyslowkowe. 'Tout' jest tu nieodmienny (adwerb). 'Tout de meme!' jako samodzielny wykrzyknik wyraza oburzenie: 'Tout de meme!' (No co ty! / Mimo to!). Synonimy: 'quand meme' (mimo to — bardziej potoczne), 'neanmoins' (niemniej — formalne), 'cependant' (jednak). UWAGA: 'quand meme' i 'tout de meme' sa wymienne, ale 'quand meme' jest czestsze w mowie."
+      },
+      {
+        "id": "pf_tma13",
+        "question": "Ce sont _____ des excuses.",
+        "translation": "(To wszystko wymowki.)",
+        "options": [
+          "tout",
+          "toutes",
+          "tous",
+          "toute"
+        ],
+        "correct": "tout",
+        "explanation": "TRUDNE: 'Tout' jako zaimek neutr. (= wszystko). 'Ce sont tout des excuses' — tu 'tout' = wszystko, jest nieodmienne (zaimek neutr.). POROWNAJ: 'Toutes sont des excuses' — tu 'toutes' = wszystkie (zaimek f.pl., odnosi sie do konkretnych rzeczy). Roznica: 'tout' (nieodm.) = pojecie abstrakcyjne 'wszystko', 'tous/toutes' (odm.) = wszystkie konkretne elementy. 'Tout est pret' (wszystko gotowe) vs 'Tous sont prets' (wszyscy sa gotowi)."
+      },
+      {
+        "id": "pf_tma14",
+        "question": "Elle a mange une _____ tarte!",
+        "translation": "(Zjadla cale ciasto!)",
+        "options": [
+          "toute",
+          "tout",
+          "entiere",
+          "grande"
+        ],
+        "correct": "toute",
+        "explanation": "UWAGA: Tu 'toute' POPRZEDZA rodzajnik nieokreslony! Szyk: tout/toute + article + nom. 'Une toute tarte' — NIE! Poprawnie: WIELOZNACZNE. Mozliwe interpretacje: 1) 'toute une tarte' (cale ciasto — 'tout' przymiotnik), 2) 'une tarte entiere' (cale ciasto). Poprawna wersja: 'Elle a mange toute une tarte!' Szyk: 'tout/toute' + 'un/une' + rzeczownik = caly/cala. UWAGA: to czesty szyk, 'toute une histoire' (cala historia!)."
+      },
+      {
+        "id": "pf_tma15",
+        "question": "Il a fini _____ seul, sans aide.",
+        "translation": "(Skonczyl calkiem sam, bez pomocy.)",
+        "options": [
+          "tout",
+          "tous",
+          "toute",
+          "meme"
+        ],
+        "correct": "tout",
+        "explanation": "'Tout seul' (calkiem sam/zupelnie sam) — 'tout' jako adwerb (= completement). Odmiana adwerbu: 'tout seul' (m.), 'toute seule' (f. — bo 'seule' zaczyna sie od spolgloski 's'!), 'tout seuls' (m.pl.), 'toutes seules' (f.pl.). PRZYPOMNIENIE: adwerb 'tout' odmienia sie TYLKO przed przymiotnikiem zenskim zaczynajacym sie od spolgloski lub h aspirowane. 'Tout heureux' (m.), 'tout heureuse' (f., h nieme => bez odmiany), ALE 'toute seule' (f., 's' = spolgloska => odmiana)."
+      }
+    ]
+  },
+  {
+    "key": "revision_generale",
+    "name": "Revision generale",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pf_rev1",
+        "question": "Si j'_____ le temps, je voyagerais plus.",
+        "translation": "(Gdybym mial czas, podrozowalbym wiecej.)",
+        "options": [
+          "avais",
+          "aurais",
+          "ai",
+          "aurai"
+        ],
+        "correct": "avais",
+        "explanation": "Zdanie warunkowe typu 2 (nierealne): si + imparfait, conditionnel present. 'Si j'avais' (gdybym mial — imparfait) + 'je voyagerais' (podrozowalbym — conditionnel). NIGDY: 'si j'aurais' — po 'si' warunkowym NIGDY conditionnel! To najczestszy blad, nawet u Francuzow. Reguly: Typ 1 (realne): si + present, futur. Typ 2 (nierealne teraz): si + imparfait, conditionnel. Typ 3 (nierealne przeszle): si + plus-que-parfait, conditionnel passe."
+      },
+      {
+        "id": "pf_rev2",
+        "question": "Elle s'est _____ les mains avant de manger.",
+        "translation": "(Umyla rece przed jedzeniem.)",
+        "options": [
+          "lave",
+          "lavee",
+          "laves",
+          "lavees"
+        ],
+        "correct": "lave",
+        "explanation": "Accord du participe passe z czasownikami zwrotnymi: 'se laver les mains'. COD = 'les mains' (stoi PO auxiliaire) => BRAK ACCORD. 'Elle s'est lave les mains' — 'lave' nieodmienione! ALE: 'Elle s'est lavee' (umyla sie) — tu 'se' jest COD i stoi PRZED => accord zenski. REGULA: z 'etre' w czasownikach zwrotnych — zgadniaj z COD tylko jesli stoi PRZED czasownikiem. Les mains = COD PO => brak accord. Se = COD PRZED => accord."
+      },
+      {
+        "id": "pf_rev3",
+        "question": "Il faut que tu _____ tes devoirs.",
+        "translation": "(Musisz zrobic swoje zadania.)",
+        "options": [
+          "fasses",
+          "fais",
+          "feras",
+          "ferais"
+        ],
+        "correct": "fasses",
+        "explanation": "'Il faut que + subjonctif' — 'fasses' to subjonctif present od 'faire'. UWAGA: 'il faut que' ZAWSZE wymaga subjonctif! Czeste bledu: 'il faut que tu fais' (indicatif — ZLE!), 'il faut que tu feras' (futur — ZLE!). Inne konstrukcje z subjonctif: bien que (chociaz), pour que (zeby), avant que (zanim), a condition que (pod warunkiem), a moins que (chyba ze). W polskim subjonctif nie istnieje — to najtrudniejszy tryb dla Polakow."
+      },
+      {
+        "id": "pf_rev4",
+        "question": "Les livres que j'ai _____ etaient passionnants.",
+        "translation": "(Ksiazki, ktore przeczytalem, byly fascynujace.)",
+        "options": [
+          "lus",
+          "lu",
+          "lues",
+          "lue"
+        ],
+        "correct": "lus",
+        "explanation": "Accord du participe passe z 'avoir': zgadniaj z COD jesli stoi PRZED. 'Les livres que j'ai lus' — 'que' (= les livres, m.pl.) jest COD i stoi PRZED 'ai lu'. Wiec: 'lus' (m.pl.). UWAGA: 'les livres' jest meskie (le livre), wiec 'lus', nie 'lues'. Gdyby to byly 'les lettres' (f.pl.): 'les lettres que j'ai lues'. Bez 'que': 'J'ai lu les livres' — COD PO => brak accord ('lu' nieodmienione). Ta regula jest fundamentalna!"
+      },
+      {
+        "id": "pf_rev5",
+        "question": "Nous _____ sommes promenees dans le parc.",
+        "translation": "(Przespacerowalismy sie po parku.)",
+        "options": [
+          "nous",
+          "se",
+          "s'",
+          "me"
+        ],
+        "correct": "nous",
+        "explanation": "'Nous nous sommes promenees' — podwojne 'nous': 1) podmiot, 2) zaimek zwrotny. 'Se promener' (spacerowac, zwrotny) w passe compose: nous + nous + sommes + promenee(s). UWAGA: 'promenees' (f.pl.) — czasowniki zwrotne tworzace passe compose z 'etre' zgadniaja participe passe z podmiotem (tu: 'nous' zenskie l.mn.). Z meskim podmiotem: 'promeNES'. Mieszany: 'promenes' (meski ma priorytet)."
+      },
+      {
+        "id": "pf_rev6",
+        "question": "C'est le film _____ je t'ai parle.",
+        "translation": "(To ten film, o ktorym ci mowilem.)",
+        "options": [
+          "dont",
+          "que",
+          "qui",
+          "lequel"
+        ],
+        "correct": "dont",
+        "explanation": "'Dont' (o ktorym/ktorego) — zaimek wzgledny zastepujacy 'de + rzeczownik'. 'Parler de qqch' (mowic o czyms) => 'dont je t'ai parle' (o ktorym ci mowilem). REGULA: jesli czasownik wymaga 'de', uzywamy 'dont'. 'Avoir besoin de' (potrzebowac) => 'dont j'ai besoin'. 'Se souvenir de' (pamietac) => 'dont je me souviens'. UWAGA: 'dont' zastepuje tez dopelniacz: 'l'homme dont le fils...' (czlowiek, ktorego syn...)."
+      },
+      {
+        "id": "pf_rev7",
+        "question": "_____ tu aies fini, nous ne partirons pas.",
+        "translation": "(Dopoki nie skonczysz, nie wyjedziemy.)",
+        "options": [
+          "Tant que",
+          "Pendant que",
+          "Depuis que",
+          "Pour que"
+        ],
+        "correct": "Tant que",
+        "explanation": "'Tant que + subjonctif/indicatif' (dopoki/tak dlugo jak). Z indicatif: 'Tant que tu travailles, tout ira bien' (dopoki pracujesz, wszystko bedzie dobrze). Z subjonctif (sens warunkowy/przyszly): 'Tant que tu n'aies fini' (dopoki nie skonczysz). UWAGA: 'pendant que' (podczas gdy — jednoczesnosc), 'depuis que' (od kiedy — poczatek), 'tant que' (dopoki — warunek trwania). Czesty blad: mylenie 'tant que' z 'autant que' (tyle samo co)."
+      },
+      {
+        "id": "pf_rev8",
+        "question": "Elle m'a dit qu'elle _____ le lendemain.",
+        "translation": "(Powiedziala mi, ze przyjdzie nastepnego dnia.)",
+        "options": [
+          "viendrait",
+          "vient",
+          "viendra",
+          "venait"
+        ],
+        "correct": "viendrait",
+        "explanation": "Concordance des temps (nastepstwo czasow) w mowie zaleznej: dire au passe + que + conditionnel (futur du passe). Discours direct: 'Je viendrai demain' (futur). Discours indirect au passe: 'Elle a dit qu'elle viendrait le lendemain' (conditionnel). Transformacje: demain -> le lendemain, hier -> la veille, aujourd'hui -> ce jour-la, futur -> conditionnel, present -> imparfait, passe compose -> plus-que-parfait. To kluczowe dla DELF B1/B2!"
+      },
+      {
+        "id": "pf_rev9",
+        "question": "_____ il pleut, je prends mon parapluie.",
+        "translation": "(Kiedy/Ilekroc pada, biore parasol.)",
+        "options": [
+          "Quand",
+          "Que",
+          "Qui",
+          "Comme"
+        ],
+        "correct": "Quand",
+        "explanation": "'Quand' + present wyrabienia habituel/powtarzalnosc. 'Quand il pleut' = kiedy pada (za kazdym razem). Odrozni od: 'quand' + futur (kiedy... w przyszlosci), 'quand' + imparfait (kiedy... w przeszlosci powtarzalnej), 'lorsque' (kiedy — bardziej formalne, wymienne z 'quand'). UWAGA: 'quand' + futur jest poprawne po francusku! 'Quand tu viendras, je serai la'. Po polsku: 'kiedy przyjdziesz' (present!). To roznica miedzy jezykami."
+      },
+      {
+        "id": "pf_rev10",
+        "question": "Il a _____ manger avant de partir.",
+        "translation": "(Musial zjesc przed wyjsciem.)",
+        "options": [
+          "du",
+          "doit",
+          "devait",
+          "devra"
+        ],
+        "correct": "du",
+        "explanation": "'Devoir' w passe compose: 'il a du' (musial). 'Du' to participe passe od 'devoir'. UWAGA na homografie: 'du' (participe passe devoir) vs 'du' (rodzajnik sciagniety de+le) vs 'du' (participe passe z akcentem: on pisze 'du'). Odmiana passe compose: j'ai du, tu as du, il a du, nous avons du, vous avez du, ils ont du. 'Du + infinitif' = musial cos zrobic. 'Pouvait' takze bierze infinitif: 'il a pu manger' (mogl zjesc)."
+      },
+      {
+        "id": "pf_rev11",
+        "question": "C'est la plus belle ville que j'_____ jamais visitee.",
+        "translation": "(To najpiekniejsze miasto, jakie kiedykolwiek odwiedzalem.)",
+        "options": [
+          "aie",
+          "ai",
+          "avais",
+          "aurais"
+        ],
+        "correct": "aie",
+        "explanation": "Subjonctif po superlatif! 'La plus belle ville que + subjonctif'. Po superlatywach (le plus, le moins, le meilleur, le pire) i po: le seul, le premier, le dernier + que => subjonctif. 'Que j'aie visitee' — subjonctif passe (aie + participe passe). UWAGA: accord 'visitee' (f. — 'ville' jest zenskie) bo 'que' (COD) stoi PRZED. Indicatif ('que j'ai visitee') jest tez dopuszczalny w mowie, ale subjonctif jest gramatycznie poprawniejszy."
+      },
+      {
+        "id": "pf_rev12",
+        "question": "Ils se sont _____ au telephone hier soir.",
+        "translation": "(Rozmawiali przez telefon wczoraj wieczorem.)",
+        "options": [
+          "parle",
+          "parles",
+          "parlees",
+          "parlee"
+        ],
+        "correct": "parle",
+        "explanation": "'Se parler' (mowic do siebie) — 'parler a quelqu'un', wiec 'se' jest COI (nie COD!). Regula: z czasownikami zwrotnymi, jesli 'se' jest COI => BRAK ACCORD. 'Ils se sont parle' — 'parle' nieodmienione. Porownaj: 'Ils se sont regardes' (patrzyli na siebie — 'regarder qqn', se = COD => accord). Kluczowe pytanie: czy oryginalny czasownik bierze 'a' (COI, brak accord) czy dopelnienie bezposrednie (COD, accord)? Parler A => COI => brak accord."
+      },
+      {
+        "id": "pf_rev13",
+        "question": "Je cherche quelqu'un qui _____ m'aider.",
+        "translation": "(Szukaml kogos, kto moglby mi pomoc.)",
+        "options": [
+          "puisse",
+          "peut",
+          "pourra",
+          "pourrait"
+        ],
+        "correct": "puisse",
+        "explanation": "Subjonctif po zdaniu wzglednym wyrazajacym poszukiwanie/cel! 'Quelqu'un qui puisse' = kogos, kto moglby (nie wiem, czy istnieje). Indicatif: 'quelqu'un qui peut' = kogos, kto moze (wiem, ze istnieje). Subjonctif podkresla niepewnosc/szukanie. Z indicatif: stwierdzenie faktu. Inne watkiem: 'je veux un livre qui soit interessant' (subj. — szukam), 'j'ai un livre qui est interessant' (ind. — mam). Ta niuansowana roznica jest trudna nawet dla zaawansowanych!"
+      },
+      {
+        "id": "pf_rev14",
+        "question": "Bien qu'il _____ malade, il est venu au travail.",
+        "translation": "(Chociaz byl chory, przyszedl do pracy.)",
+        "options": [
+          "soit",
+          "est",
+          "etait",
+          "serait"
+        ],
+        "correct": "soit",
+        "explanation": "'Bien que + subjonctif' (chociaz) — ZAWSZE subjonctif, nigdy indicatif! 'Bien qu'il soit malade' = chociaz jest chory. Synonimy: 'quoique' (chociaz — tez subj.), 'malgre + nom' (mimo + rzecz. — BEZ subj.: 'malgre sa maladie'). Czesty blad: 'Bien qu'il est malade' (indicatif — ZLE!). Inne spojniki z subjonctif: pourvu que (byleby), afin que (zeby), pour que (zeby), sans que (bez tego, zeby). Zapamiamientaj: bien que = subjonctif, ZAWSZE."
+      },
+      {
+        "id": "pf_rev15",
+        "question": "Les fleurs qu'elle m'a _____ sont magnifiques.",
+        "translation": "(Kwiaty, ktore mi dala, sa wspaniale.)",
+        "options": [
+          "offertes",
+          "offert",
+          "offerts",
+          "offerte"
+        ],
+        "correct": "offertes",
+        "explanation": "Accord final: 'Les fleurs que elle m'a offertes'. 'Que' (= les fleurs, f.pl.) jest COD stojacym PRZED 'avoir' => accord: 'offertes' (f.pl.). 'Offert' to nieregularny participe passe od 'offrir'. Odmiana: offert (m.sg.), offerte (f.sg.), offerts (m.pl.), offertes (f.pl.). PODSUMOWANIE accord: 1) avec 'etre' — accord z podmiotem, 2) avec 'avoir' — accord z COD jesli PRZED, 3) zwrotne — jak 'etre', ale sprawdz czy 'se'=COD. Te trzy reguly obejmuja 95 procent przypadkow!"
+      }
+    ]
+  },
+  {
+    "key": "structures_argumentatives",
+    "name": "Structures argumentatives",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pf_sarg1",
+        "question": "_____, il est important de noter que ce projet est viable.",
+        "translation": "(Przede wszystkim, nalezy zauwazyc, ze ten projekt jest wykonalny.)",
+        "options": [
+          "Tout d'abord",
+          "Ensuite",
+          "Enfin",
+          "Pourtant"
+        ],
+        "correct": "Tout d'abord",
+        "explanation": "'Tout d'abord' (przede wszystkim/po pierwsze) otwiera argument. To najbardziej formalna forma 'po pierwsze'. Hierarchia argumentow: 'tout d'abord/premierement' (po pierwsze) -> 'ensuite/deuxiemement' (nastepnie/po drugie) -> 'enfin/finalement' (wreszcie/na koncu). W polskim: 'po pierwsze, po drugie...' W eseju/prezentacji: zawsze uzywaj tych lacznikow, by nadac strukture. 'D'abord' (najpierw) jest mniej formalne niz 'Tout d'abord'."
+      },
+      {
+        "id": "pf_sarg2",
+        "question": "_____, on peut affirmer que l'education est un droit fondamental.",
+        "translation": "(Podsumowujac, mozna stwierdzic, ze edukacja jest prawem podstawowym.)",
+        "options": [
+          "En conclusion",
+          "Par exemple",
+          "En revanche",
+          "Neanmoins"
+        ],
+        "correct": "En conclusion",
+        "explanation": "'En conclusion' (podsumowujac/wnioskujac) zamyka argumentacje. Synonimy: 'pour conclure' (aby podsumowac), 'en somme' (slowem), 'en definitive' (ostatecznie), 'en fin de compte' (koniec koncow). UWAGA na rejestr: 'en conclusion' i 'pour conclure' — formalne (esej, praca), 'en fin de compte' — neutralne, 'bref' (krotko mowiac) — potoczne. W polskim: 'podsumowujac', 'wnioskujac', 'konczac' — podobna gama formalnosci."
+      },
+      {
+        "id": "pf_sarg3",
+        "question": "Ce produit est cher. _____, sa qualite est excellente.",
+        "translation": "(Ten produkt jest drogi. Jednakze jego jakosc jest doskonala.)",
+        "options": [
+          "Cependant",
+          "Donc",
+          "Par consequent",
+          "De plus"
+        ],
+        "correct": "Cependant",
+        "explanation": "'Cependant' (jednakze/jednak) wprowadza kontrargument lub ograniczenie. Synonimy wedlug formalnosci: 'neanmoins' (niemniej — bardzo formalny), 'cependant' (jednakze — formalny), 'toutefois' (jednakze — formalny), 'pourtant' (jednakze — neutralny), 'mais' (ale — potoczny). POZYCJA: 'cependant/neanmoins/toutefois' moga stac na poczatku zdania lub po podmiocie: 'Il est cependant vrai que...' W polskim: 'jednakze' moze tez stac w srodku zdania."
+      },
+      {
+        "id": "pf_sarg4",
+        "question": "Il pleut beaucoup. _____, les agriculteurs sont satisfaits.",
+        "translation": "(Bardzo pada. Dlatego rolnicy sa zadowoleni.)",
+        "options": [
+          "C'est pourquoi",
+          "En revanche",
+          "Malgre tout",
+          "Au contraire"
+        ],
+        "correct": "C'est pourquoi",
+        "explanation": "'C'est pourquoi' (dlatego/z tego powodu) wprowadza konsekwencje/wniosek logiczny. Synonimy: 'par consequent' (w konsekwencji — formalny), 'donc' (wiec — neutralny), 'ainsi' (tak wiec — formalny), 'de ce fait' (z tego faktu — bardzo formalny), 'du coup' (wiec/przez to — potoczny!). UWAGA: 'du coup' jest BARDZO potoczny — unikaj w eseju, ale jest normalny w mowie! W polskim: 'dlatego', 'wiec', 'w zwiazku z tym' — podobna gama formalnosci."
+      },
+      {
+        "id": "pf_sarg5",
+        "question": "_____ les avantages economiques, il y a aussi des benefices sociaux.",
+        "translation": "(Oprocz korzysci ekonomicznych, sa tez korzysci spoleczne.)",
+        "options": [
+          "Outre",
+          "Malgre",
+          "Sans",
+          "Contre"
+        ],
+        "correct": "Outre",
+        "explanation": "'Outre' (oprocz/poza) — prepozycja formalna dodajaca element. 'Outre les avantages' = oprocz korzysci. Synonimy: 'en plus de' (oprocz — neutralny), 'au-dela de' (poza — formalny), 'hormis' (oprocz/z wyjatkiem — bardzo formalny), 'a part' (oprocz — potoczny). 'En outre' (ponadto) — lacznik zdaniowy. UWAGA: 'outre' (prepozycja) vs 'en outre' (adwerb). 'Outre son talent...' (oprocz jego talentu) vs 'En outre, il est talentueux' (ponadto, jest utalentowany)."
+      },
+      {
+        "id": "pf_sarg6",
+        "question": "D'une part, il est competent. _____, il est aussi tres motive.",
+        "translation": "(Z jednej strony jest kompetentny. Z drugiej strony, jest tez bardzo zmotywowany.)",
+        "options": [
+          "D'autre part",
+          "En revanche",
+          "Pourtant",
+          "Cependant"
+        ],
+        "correct": "D'autre part",
+        "explanation": "'D'une part... d'autre part' (z jednej strony... z drugiej strony) — para lacznikow prezentujaca dwa aspekty. UWAGA: we francuskim 'd'autre part' moze dodawac komplementarny argument (nie koniecznie przeciwny!). Inne pary: 'D'un cote... de l'autre (cote)' (z jednej strony... z drugiej). 'Non seulement... mais aussi/encore' (nie tylko... ale takze). W eseju: uzywaj tych par do rownowazenia argumentow. W polskim: 'z jednej strony... z drugiej' — identyczne!"
+      },
+      {
+        "id": "pf_sarg7",
+        "question": "Il a reussi _____ ses difficultes.",
+        "translation": "(Udalo mu sie pomimo jego trudnosci.)",
+        "options": [
+          "malgre",
+          "grace a",
+          "a cause de",
+          "pour"
+        ],
+        "correct": "malgre",
+        "explanation": "'Malgre' (pomimo/mimo) + rzeczownik — prepozycja koncesyjna. 'Malgre ses difficultes' = pomimo jego trudnosci. UWAGA: 'malgre' + rzeczownik (NIGDY 'malgre que' + subjonctif — to blad, choc coraz bardziej rozpowszechniony!). Poprawne alternatywy: 'bien que + subjonctif' (chociaz), 'en depit de + nom' (wbrew). Porownaj: 'malgre' (pomimo — koncesja) vs 'grace a' (dzieki — przyczyna pozytywna) vs 'a cause de' (z powodu — przyczyna negatywna)."
+      },
+      {
+        "id": "pf_sarg8",
+        "question": "_____ que ce soit difficile, essayons quand meme.",
+        "translation": "(Nawet jesli to jest trudne, sprobujmy mimo wszystko.)",
+        "options": [
+          "Meme si",
+          "Bien",
+          "Pour",
+          "A moins"
+        ],
+        "correct": "Bien",
+        "explanation": "UWAGA: 'Bien que + subjonctif' (chociaz/mimo ze) — ZAWSZE subjonctif! 'Bien que ce soit difficile' = chociaz to jest trudne ('soit' = subjonctif od 'etre'). POROWNAJ: 'Meme si + indicatif' (nawet jesli) — NIGDY subjonctif! 'Meme si c'est difficile' (indicatif). Czesty blad: 'bien que c'est' (indicatif — ZLE!). Roznica: 'bien que' (bardziej formalny, + subj.) vs 'meme si' (bardziej potoczny, + ind.). Oba oznaczaja koncesje/przeciwstawienie."
+      },
+      {
+        "id": "pf_sarg9",
+        "question": "Je suis favorable a cette reforme. _____, je pense qu'elle pourrait etre amelioree.",
+        "translation": "(Jestem za ta reforma. Niemniej jednak uwazam, ze mozna by ja ulepszyc.)",
+        "options": [
+          "Neanmoins",
+          "Donc",
+          "En effet",
+          "Par consequent"
+        ],
+        "correct": "Neanmoins",
+        "explanation": "'Neanmoins' (niemniej jednak) — najbardziej formalny concessif. Hierarchia formalnosci: 'neanmoins' (bardzo formalny) > 'toutefois' (formalny) > 'cependant' (formalny) > 'pourtant' (neutralny) > 'mais' (potoczny) > 'quand meme' (potoczny). Wszystkie wprowadzaja kontrargument. POZYCJA: 'neanmoins' i 'toutefois' preferuja poczatek zdania. 'Pourtant' i 'cependant' moga stac w srodku. 'Mais' laczy dwa zdania. W eseju DELF B2: uzywaj 'neanmoins/toutefois'!"
+      },
+      {
+        "id": "pf_sarg10",
+        "question": "_____ les statistiques montrent, le chomage a diminue.",
+        "translation": "(Jak pokazuja statystyki, bezrobocie sie zmniejszylo.)",
+        "options": [
+          "Comme",
+          "Puisque",
+          "Parce que",
+          "Car"
+        ],
+        "correct": "Comme",
+        "explanation": "'Comme' (jak/poniewaz) na poczatku zdania wprowadza fakt znany lub dowod. 'Comme les statistiques montrent' = jak pokazuja statystyki. UWAGA: 'comme' = 'jak' (sposob) lub 'poniewaz' (przyczyna) — kontekst decyduje. Tu: 'jak'. Inne sposoby odwolywania sie do dowodow: 'selon' (wedlug), 'd'apres' (wedlug/wg), 'conformement a' (zgodnie z — formalny). W eseju: 'Selon les experts...' (wedlug ekspertow), 'D'apres cette etude...' (wedlug tego badania)."
+      },
+      {
+        "id": "pf_sarg11",
+        "question": "Ce probleme est complexe. _____, il requiert une approche multidisciplinaire.",
+        "translation": "(Ten problem jest zlozont. Dlatego tez wymaga podejscia multidyscyplinarnego.)",
+        "options": [
+          "De ce fait",
+          "Malgre tout",
+          "En revanche",
+          "Neanmoins"
+        ],
+        "correct": "De ce fait",
+        "explanation": "'De ce fait' (z tego faktu/dlatego tez) — formalny lacznik konsekwencji. Hierarchia formalnosci lacznikow konsekwencji: 'de ce fait' (bardzo formalny) > 'par consequent' (formalny) > 'c'est pourquoi' (neutralny formalny) > 'donc' (neutralny) > 'alors' (potoczny) > 'du coup' (bardzo potoczny). W eseju: uzywaj roznorodnych lacznikow! Nie powtarzaj 'donc' w kazdym zdaniu — alternuj. W polskim: 'dlatego', 'z tego powodu', 'w konsekwencji'."
+      },
+      {
+        "id": "pf_sarg12",
+        "question": "Il n'est _____ competent _____ motive.",
+        "translation": "(Nie jest ani kompetentny, ani zmotywowany.)",
+        "options": [
+          "ni... ni",
+          "ne... pas",
+          "soit... soit",
+          "ou... ou"
+        ],
+        "correct": "ni... ni",
+        "explanation": "'Ni... ni' (ani... ani) — podwojna negacja laczkowa. 'Il n'est ni competent ni motive' = nie jest ani kompetentny, ani zmotywowany. UWAGA: z 'ni...ni' uzywamy tylko 'ne' (bez 'pas'!). Z rzeczownikami: 'ni' eliminuje rodzajnik: 'Je n'ai ni frere ni soeur' (nie mam ani brata, ani siostry — bez 'un/une'). ALE z okreslonymi: 'Je n'aime ni le cafe ni le the' (zachowujemy 'le'). Porownaj: 'soit... soit' (albo... albo — bez negacji)."
+      },
+      {
+        "id": "pf_sarg13",
+        "question": "_____ ses resultats precedents, nous lui confions ce projet.",
+        "translation": "(W swietle jego poprzednich wynikow, powierzamy mu ten projekt.)",
+        "options": [
+          "Au vu de",
+          "Malgre",
+          "En depit de",
+          "Faute de"
+        ],
+        "correct": "Au vu de",
+        "explanation": "'Au vu de' (w swietle/biorac pod uwage) — formalna fraza uzasadniajaca. 'Au vu de ses resultats' = w swietleiego wynikow. Synonimy: 'compte tenu de' (biorac pod uwage), 'etant donne' (biorac pod uwage — nieodmienny lub odmienny), 'vu' (zwazyswszy — prepozycja, nieodmienny!). UWAGA: 'vu' sam jako prepozycja jest NIEODMIENNY: 'Vu les circonstances' (zwazyswszy okolicznosci). ALE jako participe passe: 'la situation vue hier' (sytuacja widziana wczoraj) — odmienia sie."
+      },
+      {
+        "id": "pf_sarg14",
+        "question": "Il a echoue _____ de preparation.",
+        "translation": "(Nie udalo mu sie z powodu braku przygotowania.)",
+        "options": [
+          "faute",
+          "grace",
+          "cause",
+          "manque"
+        ],
+        "correct": "faute",
+        "explanation": "'Faute de' (z braku/z powodu braku) — prepozycja przyczynowa wskazujaca na brak czegos. 'Faute de preparation' = z braku przygotowania. Synonimy: 'par manque de' (z powodu braku — dluzsze). POROWNAJ przyczyny: 'a cause de' (z powodu — negatywna), 'grace a' (dzieki — pozytywna), 'en raison de' (z racji — neutralna formalna), 'du fait de' (z uwagi na — formalna), 'faute de' (z braku). UWAGA: 'faute de mieux' = z braku lepszego (stale wyrazenie)."
+      },
+      {
+        "id": "pf_sarg15",
+        "question": "Je suis convaincu que cette mesure est necessaire. _____, je m'y oppose sur le plan ethique.",
+        "translation": "(Jestem przekonany, ze ten srodek jest konieczny. Mimo to, sprzeciwiam mu sie na plaszczyznie etycznej.)",
+        "options": [
+          "Pour autant",
+          "Par consequent",
+          "En effet",
+          "Ainsi"
+        ],
+        "correct": "Pour autant",
+        "explanation": "'Pour autant' (mimo to/niemniej) — formalny concessif silniejszy niz 'cependant'. Najczesciej z negacja: 'Il a tort, mais je ne le critiquerai pas pour autant' (ma racje, ale nie bede go za to krytykowac). Tu bez negacji: wyrazone sprzeciw. UWAGA: 'pour autant' jest czesto uzywany z 'pas pour autant': 'Ce n'est pas pour autant que...' (to nie znaczy, ze...). W eseju level C1: 'pour autant' jest doskonalym narzedziem argumentacyjnym, bardziej wyrafinowanym niz 'cependant/neanmoins'."
+      }
+    ]
+  },
+  {
+    "key": "registre_informel",
+    "name": "Registre informel",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pf_rinf1",
+        "question": "T'as _____ le film hier soir?",
+        "translation": "(Widziales/as ten film wczoraj wieczorem? — potoczny)",
+        "options": [
+          "vu",
+          "vus",
+          "voir",
+          "vue"
+        ],
+        "correct": "vu",
+        "explanation": "'T'as vu' to potoczne 'Tu as vu' (widziales). W mowie trzy transformacje: 1) 'tu' -> 't'' (apostrofe/polknicie), 2) czeste pominiecenie 'ne' w negacji, 3) inwersja zamieniona na intonacje. 'T'as vu le film?' = postawione jako pytanie przez intonacje (glos do gory), zamiast formalnego 'As-tu vu le film?' lub standardowego 'Est-ce que tu as vu le film?'. UWAGA: 't'as' jest BARDZO potoczne — nigdy w pisamie formalnym, ale codzienne w mowie."
+      },
+      {
+        "id": "pf_rinf2",
+        "question": "J'sais _____ quoi faire.",
+        "translation": "(Nie wiem co robic. — potoczny)",
+        "options": [
+          "pas",
+          "point",
+          "plus",
+          "rien"
+        ],
+        "correct": "pas",
+        "explanation": "'J'sais pas' to potoczne 'Je ne sais pas' (nie wiem). Dwie potocznosci: 1) 'Je' -> 'J'' (pominiecenie samogloski), 2) pominiecenie 'ne'. W mowie Francuzi prawie NIGDY nie mowia 'ne': 'Je sais pas', 'J'ai pas', 'Il veut pas'. To normalne, nie blad! ALE w pisamie zawsze zachowuj 'ne...pas'. UWAGA: z 'savoir' elision 'ne' jest szczegolnie czesta: 'Je sais pas' lub nawet 'Chais pas' [sheh pah] (skrajnie potoczne)."
+      },
+      {
+        "id": "pf_rinf3",
+        "question": "Il y a _____ de monde ici!",
+        "translation": "(Jest pelno ludzi tutaj! — potoczny)",
+        "options": [
+          "plein",
+          "beaucoup",
+          "trop",
+          "assez"
+        ],
+        "correct": "plein",
+        "explanation": "'Plein de' (pelno/duzo — potoczny) to codzienne wyrazenie ilosciowe. 'Y a plein de monde!' = Jest pelno ludzi! UWAGA: w mowie 'il y a' czesto skraca sie do 'y a': 'Y a plein de monde!' FORMALNOSC: 'plein de' (potoczny) < 'beaucoup de' (neutralny) < 'enormement de' (formalny) < 'une multitude de' (bardzo formalny). 'Plein' tutaj jest NIE przymiotnikiem (pelny), ale kwantyfikatoerm potocznym. 'J'ai plein d'idees' = mam pelno pomyslow (potoczne)."
+      },
+      {
+        "id": "pf_rinf4",
+        "question": "C'est _____ complique, ce truc.",
+        "translation": "(To mega skomplikowane, ten cos. — potoczny)",
+        "options": [
+          "vachement",
+          "tres",
+          "beaucoup",
+          "assez"
+        ],
+        "correct": "vachement",
+        "explanation": "'Vachement' (mega/strasznie/bardzo — slang) to potoczny intensyfikator od 'vache' (krowa!). 'Vachement complique' = mega skomplikowane. Inne potoczne intensyfikatory: 'super' (super), 'hyper' (hiper), 'mega' (mega), 'grave' (powaznie — slang mlodziewzy: 'c'est grave bien' = to jest mega dobre). W rejestrze formalnym: 'tres', 'extremement', 'fort'. UWAGA: slang zmienia sie szybko — 'vachement' jest stabilny od dekad, 'grave' jest nowszy."
+      },
+      {
+        "id": "pf_rinf5",
+        "question": "J'en ai _____ de ce travail!",
+        "translation": "(Mam dosc tej pracy! — potoczny)",
+        "options": [
+          "marre",
+          "peur",
+          "besoin",
+          "envie"
+        ],
+        "correct": "marre",
+        "explanation": "'En avoir marre de' (miec dosc/byc zmeczonym — potoczny). 'J'en ai marre!' = Mam dosc! Inne potoczne wyrazenia zniecierpliwienia: 'j'en ai ras-le-bol' (mam po dziurki — slang), 'j'en ai assez' (mam dosc — neutralny), 'j'en peux plus' (nie moge juz — neutralny), 'ca me saoule' (nudzi mnie/wkurza — slang mlodziewzy). UWAGA: 'marre' nie istnieje jako osobny przymiotnik — tylko w zwrocie 'en avoir marre'. W polskim: 'mam dosc', 'mam juz po dziurki w nosie'."
+      },
+      {
+        "id": "pf_rinf6",
+        "question": "On _____ au cine ce soir?",
+        "translation": "(Idziemy do kina dzis wieczorem? — potoczny)",
+        "options": [
+          "va",
+          "ira",
+          "allons",
+          "irait"
+        ],
+        "correct": "va",
+        "explanation": "'On va au cine?' — 'on' zamiast 'nous' + 'cine' zamiast 'cinema'. W mowie potocznej: 1) 'on' ZAWSZE zastepuje 'nous' (95 procent wypowiedzi): 'On y va?' (idziemy?), 'On mange?' (jemy?). 2) Skrocenia slow: cinema -> cine, restaurant -> resto, petit-dejeuner -> p'tit-dej, sympathique -> sympa. UWAGA: 'on' z czasownikiem w 3. os. sg. ale accord w l.mn.: 'On est partis' (odeszlismy — accord z 'nous' domyslnym). To norma mowiona."
+      },
+      {
+        "id": "pf_rinf7",
+        "question": "C'est _____ comme idee!",
+        "translation": "(To fajna pomysl! — potoczny)",
+        "options": [
+          "chouette",
+          "jolie",
+          "belle",
+          "bonne"
+        ],
+        "correct": "chouette",
+        "explanation": "'Chouette!' (fajne/swietne — potoczny) doslow. od 'chouette' (sowa!). Potoczne przymiotniki uznania: 'chouette' (fajny), 'genial' (genialny — neutralny potoczny), 'top' (super — slang), 'nickel' (idealny — slang), 'canon' (piekny — slang o wygladzdie). Negatywne potoczne: 'nul' (kiepski), 'pourri' (beznadziejny), 'galere' (trudny/uciazliwy). UWAGA: 'chouette' jest urocze i slodko brzmiace — uzywane czesto przez dorosle Francuzow, nie tylko dzieci."
+      },
+      {
+        "id": "pf_rinf8",
+        "question": "T'inquiete, _____ va s'arranger.",
+        "translation": "(Nie martw sie, to sie ulozy. — potoczny)",
+        "options": [
+          "ca",
+          "cela",
+          "il",
+          "tout"
+        ],
+        "correct": "ca",
+        "explanation": "'T'inquiete' = 'Ne t'inquiete pas' (nie martw sie — potoczne skrocenie, pominiecenie 'ne' i 'pas'!). 'Ca' = 'cela' (to — potoczna forma). W mowie potocznej: 'cela' prawie NIGDY nie jest uzywane, zawsze 'ca'. 'Ca va' (w porzadku), 'ca y est' (gotowe/juz), 'ca m'enerve' (wkurza mnie to). UWAGA: w pisamie formalnym uzywaj 'cela'. W mowie: ZAWSZE 'ca'. Inne potoczne formy pocieszania: 'T'en fais pas' = 'Ne t'en fais pas' (nie przejmuj sie)."
+      },
+      {
+        "id": "pf_rinf9",
+        "question": "Il _____ rien foutu de la journee.",
+        "translation": "(Nic nie robil przez caly dzien. — wulg./potoczny)",
+        "options": [
+          "a",
+          "est",
+          "fait",
+          "va"
+        ],
+        "correct": "a",
+        "explanation": "'Foutre' (robic — wulgarny odpowiednik 'faire'). 'Il a rien foutu' = nic nie robil (potocznie). UWAGA: 'foutre' jest WULGARNY! Uzywaj ostroznie. 'S'en foutre' (miec gdzies): 'Je m'en fous' = mam gdzies. 'Fous-moi la paix!' = daj mi spokoj! Mniej wulgarne alternatywy: 'ficher' (to samo, ale mniej wulg.): 'Il n'a rien fichu'. 'Je m'en fiche' (mam gdzies — lagodniejsze). W polskim: 'miec gdzies', 'olewac' — podobny rejestr. W pisamie NIGDY!"
+      },
+      {
+        "id": "pf_rinf10",
+        "question": "_____, t'as pas une clope?",
+        "translation": "(Hej, nie masz papierosa? — potoczny)",
+        "options": [
+          "Dis",
+          "Dit",
+          "Dire",
+          "Dites"
+        ],
+        "correct": "Dis",
+        "explanation": "'Dis' (hej/sluchaj — potoczne zwrocenie uwagi) od 'dire' (mowic). 'Dis, t'as...' = Hej, masz... UWAGA: to NIE jest formalne 'dis' (powiedz), lecz fatyczne (sluzace nawiazaniu kontaktu). Inne: 'Tiens!' (o! / sluchaj!), 'Hein?' (co? — bardzo potoczne), 'Bah...' (no... — wahanie). 'Clope' = papieros (slang, od 'cigarette'). Inne potoczne slowa: 'bouquin' (ksiazka), 'bagnole/caisse' (auto), 'baraque' (dom), 'fric/ble/thune' (pieniadze), 'bouffer' (jesc — pot.)."
+      },
+      {
+        "id": "pf_rinf11",
+        "question": "J'ai la _____ de sortir ce soir.",
+        "translation": "(Nie mam ochoty wychodzic dzis wieczorem. — potoczny)",
+        "options": [
+          "flemme",
+          "paresse",
+          "fainse",
+          "fatigue"
+        ],
+        "correct": "flemme",
+        "explanation": "'Avoir la flemme' (nie chciec sie/byc leniwym — potoczny). 'J'ai la flemme' = nie chce mi sie. Synonim formalny: 'avoir la paresse de' (byc zbyt leniwym). Inne potoczne wyrazenia stanow: 'avoir le cafard' (byc w dole/depresji), 'avoir la pèche/la patate' (byc w swietnej formie), 'avoir le trac' (miec treme), 'avoir la trouille' (bac sie — potoczny). UWAGA: 'flemme' pochodzi od wloskiego 'flemma'. W polskim: 'leni mi sie' — identyczny sens i rejestr!"
+      },
+      {
+        "id": "pf_rinf12",
+        "question": "C'est _____ bon, ce gateau!",
+        "translation": "(To jest mega dobre, to ciasto! — potoczny)",
+        "options": [
+          "trop",
+          "tres",
+          "beaucoup",
+          "fort"
+        ],
+        "correct": "trop",
+        "explanation": "'Trop' (za duzo -> mega/super — mlodziewzy slang) — w slangu 'trop' nie oznacza 'za duzo' lecz 'bardzo/mega': 'C'est trop bon!' = to jest mega dobre! W formalnym francuskim 'trop bon' = ZA dobre (nadmiar). W slangu = BARDZO dobre (emfaza). Inne mlodziezowe intensyfikatory: 'trop' (mega), 'grave' (powaznie), 'vener' (verlan od 'enervant' = irytujacy). UWAGA: verlan (= l'envers, na odwrot) to system odwracania sylab: femme -> meuf, bizarre -> zarbi, louche -> chelou."
+      },
+      {
+        "id": "pf_rinf13",
+        "question": "Laisse _____, c'est pas grave.",
+        "translation": "(Daj spokoj, to nic powaowego. — potoczny)",
+        "options": [
+          "tomber",
+          "aller",
+          "faire",
+          "partir"
+        ],
+        "correct": "tomber",
+        "explanation": "'Laisser tomber' (dac spokoj/odpuscic — potoczny). Doslow: pozwolic upasc. 'Laisse tomber!' = Daj spokoj! / Olej to! Inne potoczne wyrazenia rezygnacji: 'tant pis' (trudno/tym gorzej), 'c'est pas la peine' (nie warto), 'on s'en fiche' (mamy to gdzies). UWAGA: 'Laisse tomber' moze tez znaczyc 'porzucic kogos': 'Il l'a laissee tomber' (porzucil ja). Kontekst decyduje. 'C'est pas grave' = 'Ce n'est pas grave' (to nic — pominiecenie 'ne', norma w mowie)."
+      },
+      {
+        "id": "pf_rinf14",
+        "question": "T'es _____ ou quoi?",
+        "translation": "(Jestes zwarioowany czy co? — potoczny)",
+        "options": [
+          "ouf",
+          "fou",
+          "dingue",
+          "cinglse"
+        ],
+        "correct": "ouf",
+        "explanation": "'Ouf' = verlan od 'fou' (szalony). Verlan to system odwracania sylab, typowy dla slangu francuskiego (szczegolnie paryskiego): fou -> ouf, bizarre -> zarbi, louche -> chelou, femme -> meuf, mec -> cem, fete -> teuf, merci -> cimer, francais -> cesfran. 'T'es ouf!' = Jestes szalony! UWAGA: nie wszystkie slowa verlanowe sa rozpowszechnione — 'meuf', 'ouf', 'chelou' sa powszechne, inne sa lokalne. Verlan jest fascynujacym fenomenem lingwistycznym!"
+      },
+      {
+        "id": "pf_rinf15",
+        "question": "On se fait un _____ demain?",
+        "translation": "(Robimy jakas imprezke jutro? — potoczny)",
+        "options": [
+          "apero",
+          "aperitif",
+          "repas",
+          "diner"
+        ],
+        "correct": "apero",
+        "explanation": "'Apero' = 'aperitif' (aperitif — skrocenie potoczne). 'Se faire un apero' = zorganizowac spotkanie przy drinkach. Francuski 'apero' to wiecej niz drink — to rytywal spoleczny! Trwa 1-3h, z napojami i 'amuse-gueules' (przekaskami). Inne potoczne skrocenia: 'resto' (restaurant), 'aprem' (apres-midi — popoludnie), 'coloc' (colocataire — wspolmieszkanie), 'promo' (promotion), 'exam' (examen), 'manif' (manifestation — demonstracja). Francuzi UWIELBIAJA skrocenia — to cecha definiujaca mowe potoczna!"
+      }
+    ]
   }
 ]

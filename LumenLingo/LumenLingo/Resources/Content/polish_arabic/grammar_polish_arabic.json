@@ -7583,5 +7583,2055 @@
         "explanation": "STANDARDOWA kolejność: إنَّ + اسم إنّ (biernik) + خبر إنّ (mianownik). إنَّ الحياةَ جَمِيلَةٌ = Zaprawdę życie jest piękne. ALE: orzeczenie MOŻE wyprzedzić podmiot, jeśli jest wyrażeniem przyimkowym: إنَّ فِي القُرْآنِ حِكْمَةً (Zaprawdę w Koranie jest mądrość) — في القرآن = orzeczenie wyprzedzone, حكمةً = podmiot opóźniony. Elastyczność, ale z regułami!"
       }
     ]
+  },
+  {
+    "key": "accusative_case",
+    "name": "Biernik (المنصوب)",
+    "description": "حالة النصب في اللغة العربية",
+    "iconName": "arrow.down.right",
+    "color": "#4ade80",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pa_acc1",
+        "question": "قَرَأَ الطالبُ _____ (Student przeczytał książkę)",
+        "translation": "(Student przeczytał książkę)",
+        "options": [
+          "الكتابَ",
+          "الكتابُ",
+          "الكتابِ",
+          "كتاباً"
+        ],
+        "correct": "الكتابَ",
+        "explanation": "Poprawnie: 'الكتابَ' (al-kitāba) z fathą na końcu = biernik (منصوب). Dopełnienie bliższe (مفعول به) czasownika przechodniego stoi ZAWSZE w bierniku. قَرَأَ (czytał) wymaga dopełnienia: co czytał? → الكتابَ. W polskim: 'książkę' (biernik, nie 'książka'). System identyczny — zmiana końcówki wskazuje funkcję w zdaniu."
+      },
+      {
+        "id": "pa_acc2",
+        "question": "Które z tych zdań ma poprawny biernik?",
+        "translation": "(أي جملة فيها منصوب صحيح؟)",
+        "options": [
+          "أكلتُ تفاحةً",
+          "أكلتُ تفاحةٌ",
+          "أكلتُ تفاحةٍ",
+          "أكلتُ التفاحةُ"
+        ],
+        "correct": "أكلتُ تفاحةً",
+        "explanation": "Poprawnie: 'أكلتُ تفاحةً' = Zjadłem jabłko. تفاحةً z tanwinem fatha (ـًـ) = biernik nieokreślony. Reguła: rzeczowniki nieokreślone w bierniku mają tanwin fatha: كتاباً, تفاحةً, رسالةً. UWAGA: tanwin fatha pisze się na alif (ـاً) oprócz słów z tā' marbūṭa (ة) i hamzą (ء) po alif. Np.: كِتَاباً (z alif), تُفَّاحةً (bez alif — bo ة)."
+      },
+      {
+        "id": "pa_acc3",
+        "question": "سافرتُ _____ (Podróżowałem pieszo) — przysłówek halu",
+        "translation": "(Podróżowałem pieszo)",
+        "options": [
+          "ماشياً",
+          "ماشيٌ",
+          "ماشيِ",
+          "الماشي"
+        ],
+        "correct": "ماشياً",
+        "explanation": "Poprawnie: 'ماشياً' (māshiyan) = pieszo (dosł. idąc). To حال (ḥāl) — okolicznik stanu, ZAWSZE w bierniku. حال odpowiada polskiemu imiesłowowi przysłówkowemu: 'idąc'. Inne przykłady: جاءَ ضاحكاً (przyszedł śmiejąc się), جلستُ صامتاً (siedziałem milcząc). Reguła: حال opisuje STAN podmiotu podczas czynności i stoi w bierniku (منصوب)."
+      },
+      {
+        "id": "pa_acc4",
+        "question": "ذهبتُ إلى المدرسة _____ (Poszedłem do szkoły rano)",
+        "translation": "(Poszedłem do szkoły rano)",
+        "options": [
+          "صباحاً",
+          "صباحٌ",
+          "صباحِ",
+          "الصباحَ"
+        ],
+        "correct": "صباحاً",
+        "explanation": "Poprawnie: 'صباحاً' (ṣabāḥan) = rano. To ظرف زمان (okolicznik czasu) w bierniku. Czasowe i miejscowe okoliczniki stoją w bierniku (منصوب): صباحاً (rano), مساءً (wieczorem), يوماً (pewnego dnia), شمالاً (na północ). W polskim: 'rano' nie odmienia się; w arabskim ma fathę/tanwin. Biernik jest 'domyślnym' przypadkiem przysłówków arabskich."
+      },
+      {
+        "id": "pa_acc5",
+        "question": "كانَ الجوُّ _____ (Pogoda była piękna) — orzecznik كان",
+        "translation": "(Pogoda była piękna)",
+        "options": [
+          "جميلاً",
+          "جميلٌ",
+          "جميلٍ",
+          "الجميلَ"
+        ],
+        "correct": "جميلاً",
+        "explanation": "Poprawnie: 'جميلاً' (jamīlan) = piękna (biernik). Po كَانَ i 'siostry' (أصبحَ, ظلَّ, ليسَ itd.): podmiot → mianownik (اسم كان), orzecznik → BIERNIK (خبر كان). كانَ الجوُّ (mianownik) جميلاً (biernik). W polskim: 'Pogoda BYŁA piękna' — narzędnik!. Arabski: biernik. To kluczowa różnica — zapamiętaj: خبر كان = منصوب."
+      },
+      {
+        "id": "pa_acc6",
+        "question": "إنَّ _____ مجتهدٌ (Zaiste student jest pilny) — podmiot إنَّ",
+        "translation": "(Zaiste student jest pilny)",
+        "options": [
+          "الطالبَ",
+          "الطالبُ",
+          "الطالبِ",
+          "طالباً"
+        ],
+        "correct": "الطالبَ",
+        "explanation": "Poprawnie: 'الطالبَ' (aṭ-ṭāliba) w bierniku. Po إنَّ i 'siostry' (أنَّ, لكنَّ, لعلَّ, ليتَ, كأنَّ): podmiot → BIERNIK (اسم إنّ), orzecznik → mianownik (خبر إنّ). Odwrotnie niż normalnie! إنَّ الطالبَ (biernik) مجتهدٌ (mianownik). Porównaj: الطالبُ مجتهدٌ (zdanie nominalne bez إنّ — oba w mianowniku). إنّ 'odwraca' przypadek podmiotu."
+      },
+      {
+        "id": "pa_acc7",
+        "question": "ما أجملَ _____! (Jak piękne jest niebo!)",
+        "translation": "(Jak piękne jest niebo!)",
+        "options": [
+          "السماءَ",
+          "السماءُ",
+          "السماءِ",
+          "سماءً"
+        ],
+        "correct": "السماءَ",
+        "explanation": "Poprawnie: 'السماءَ' (as-samāʾa) w bierniku. To صيغة التعجّب (forma wykrzyknikowa): ما أفعلَ + rzeczownik w bierniku! ما أجملَ السماءَ = Jak piękne jest niebo! (dosł. Co uczyniło niebo pięknym!). Rzeczownik po أفعلَ ZAWSZE w bierniku. Inna forma: أجمِلْ بالسماءِ! (z przyimkiem بـ). Obie formy = 'Jakże piękne niebo!'"
+      },
+      {
+        "id": "pa_acc8",
+        "question": "جاءَ الطلابُ إلّا _____ (Przyszli studenci oprócz Alego)",
+        "translation": "(Przyszli studenci oprócz Alego)",
+        "options": [
+          "عليّاً",
+          "عليٌّ",
+          "عليٍّ",
+          "عليَّ"
+        ],
+        "correct": "عليّاً",
+        "explanation": "Poprawnie: 'عليّاً' (ʿAliyyan) w bierniku. Po إلّا (oprócz) w zdaniu twierdzącym pełnym: wyjątek (المستثنى) stoi w BIERNIKU. جاءَ الطلابُ (zdanie pełne, twierdzące) إلّا عليّاً (biernik). Ale: ما جاءَ إلّا عليٌّ (zdanie niepełne — po إلّا mianownik, bo عليّ jest podmiotem). Reguła إلّا zależy od typu zdania!"
+      },
+      {
+        "id": "pa_acc9",
+        "question": "اشتريتُ عشرينَ _____ (Kupiłem dwadzieścia książek) — تمييز",
+        "translation": "(Kupiłem dwadzieścia książek)",
+        "options": [
+          "كتاباً",
+          "كتابٌ",
+          "كتابٍ",
+          "كُتُبٍ"
+        ],
+        "correct": "كتاباً",
+        "explanation": "Poprawnie: 'كتاباً' (kitāban) = książek (l. poj.! w bierniku). To تمييز (tamyīz = specyfikacja): po liczebnikach 11-99 rzeczownik stoi w bierniku l. POJEDYNCZEJ. عشرينَ كتاباً (20 książek — dosł. 'dwadzieścia książką'). W polskim: 'dwadzieścia książek' (dopełniacz l. mn.). Arabski: biernik l. poj. To jedna z najdziwniejszych reguł arabskiej składni dla Polaków."
+      },
+      {
+        "id": "pa_acc10",
+        "question": "Który wyraz jest مفعولاً مطلقاً (dopełnienie bezwzględne)?",
+        "translation": "(ما المفعول المطلق؟)",
+        "options": [
+          "ضرباً شديداً (uderzenie silne)",
+          "الكتابَ (książkę)",
+          "صباحاً (rano)",
+          "ماشياً (idąc)"
+        ],
+        "correct": "ضرباً شديداً (uderzenie silne)",
+        "explanation": "Poprawnie: 'ضرباً شديداً' = silne uderzenie — dopełnienie bezwzględne (مفعول مطلق). Jest to masdar od tego samego czasownika, w bierniku: ضَرَبَ ضرباً شديداً (uderzył silnym uderzeniem). Wzmacnia lub określa czynność. الكتابَ = مفعول به (dopełnienie bliższe), صباحاً = ظرف زمان (okolicznik czasu), ماشياً = حال (okolicznik stanu). Wszystkie w bierniku, ale RÓŻNE funkcje!"
+      },
+      {
+        "id": "pa_acc11",
+        "question": "سافرتُ _____ العلم (Podróżowałem dla nauki) — مفعول لأجله",
+        "translation": "(Podróżowałem dla nauki)",
+        "options": [
+          "طلباً لِـ",
+          "طلبٌ لِـ",
+          "طلبِ",
+          "الطلبَ"
+        ],
+        "correct": "طلباً لِـ",
+        "explanation": "Poprawnie: 'طلباً للعلمِ' = dla poszukiwania nauki. To مفعول لأجله (dopełnienie celowe) — masdar w bierniku wyrażający CEL czynności. Odpowiada polskiemu 'dla/w celu': 'Podróżowałem w celu zdobycia wiedzy'. Warunki: 1) masdar, 2) nieokreślony, 3) ten sam podmiot co czasownik, 4) wyraża przyczynę/cel. Jeśli nie spełnia — używamy لِـ + dopełniacz."
+      },
+      {
+        "id": "pa_acc12",
+        "question": "رأيتُ الولدَ _____ (Widziałem chłopca biegnącego) — حال",
+        "translation": "(Widziałem chłopca biegnącego)",
+        "options": [
+          "راكضاً",
+          "راكضٌ",
+          "الراكضَ",
+          "راكضٍ"
+        ],
+        "correct": "راكضاً",
+        "explanation": "Poprawnie: 'راكضاً' (rākiḍan) = biegnąc/biegnącego — حال (okolicznik stanu) w bierniku, nieokreślony. Opisuje stan الولد (chłopca) w momencie widzenia. Reguły حال: 1) ZAWSZE w bierniku, 2) prawie ZAWSZE nieokreślony (راكضاً, nie الراكضَ), 3) zgadza się w rodzaju/liczbie z صاحب الحال (właścicielem stanu). Dla dziewczynki: راكضةً."
+      },
+      {
+        "id": "pa_acc13",
+        "question": "يا _____ (O studencie!) — منادى",
+        "translation": "(O studencie! — wołacz)",
+        "options": [
+          "طالبُ",
+          "طالباً",
+          "طالبَ",
+          "طالبِ"
+        ],
+        "correct": "طالبُ",
+        "explanation": "Uwaga-pułapka! 'يا طالبُ' — wołacz pojedynczy nieokreślony to MIANOWNIK (مبني على الضم), NIE biernik! Ale: يا طالباً مجتهداً (z przymiotnikiem) → biernik. Wołacz ma złożone reguły: يا طالبُ (prosty), يا طالبَ العلمِ (idafa — biernik), يا أيّها الطالبُ (z أيّها — mianownik). Wołacz to jeden z najtrudniejszych tematów i-rābu."
+      },
+      {
+        "id": "pa_acc14",
+        "question": "لَنْ _____ (Nie pójdę) — po لَنْ",
+        "translation": "(Nie pójdę)",
+        "options": [
+          "أذهبَ",
+          "أذهبُ",
+          "أذهبْ",
+          "ذهبتُ"
+        ],
+        "correct": "أذهبَ",
+        "explanation": "Poprawnie: 'لَنْ أذهبَ' (lan adhhaba) = nie pójdę. Po لَنْ (nigdy/nie będę): czasownik w trybie łączącym (منصوب) — z fathą na końcu. Porównaj: أذهبُ (ḍamma = مرفوع, wskaźnikowy), أذهبَ (fatha = منصوب, łączący), أذهبْ (sukun = مجزوم, warunkowy). Partykuły nasb: أَنْ, لَنْ, كَيْ, حتّى, لِـ (celowe). Po nich ZAWSZE fatha."
+      },
+      {
+        "id": "pa_acc15",
+        "question": "Ile typów biernika (منصوب) wymieniono w tej kategorii?",
+        "translation": "(كم نوعاً من المنصوبات ذُكر؟)",
+        "options": [
+          "7 (مفعول به, حال, ظرف, خبر كان, اسم إنّ, تمييز, مفعول مطلق)",
+          "3",
+          "10",
+          "1"
+        ],
+        "correct": "7 (مفعول به, حال, ظرف, خبر كان, اسم إنّ, تمييز, مفعول مطلق)",
+        "explanation": "W arabskim jest co najmniej 15 typów منصوبات! Omówiliśmy 7 głównych: 1) مفعول به (dopełnienie bliższe), 2) حال (okolicznik stanu), 3) ظرف (okolicznik czasu/miejsca), 4) خبر كان (orzecznik كان), 5) اسم إنّ (podmiot إنّ), 6) تمييز (specyfikacja), 7) مفعول مطلق (dopełnienie bezwzgl.). Jeszcze: مفعول لأجله (cel), مفعول معه (towarzyszenie), منادى (wołacz), مستثنى (wyjątek). Biernik to NAJCZĘSTSZY przypadek!"
+      }
+    ]
+  },
+  {
+    "key": "genitive_case",
+    "name": "Dopełniacz (المجرور)",
+    "description": "حالة الجرّ في اللغة العربية",
+    "iconName": "arrow.down.left",
+    "color": "#c084fc",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pa_gen1",
+        "question": "ذهبتُ إلى _____ (Poszedłem do szkoły)",
+        "translation": "(Poszedłem do szkoły)",
+        "options": [
+          "المدرسةِ",
+          "المدرسةُ",
+          "المدرسةَ",
+          "مدرسةً"
+        ],
+        "correct": "المدرسةِ",
+        "explanation": "Poprawnie: 'المدرسةِ' (al-madrasati) z kasrą = dopełniacz (مجرور). Po przyimku (حرف جر) rzeczownik ZAWSZE w dopełniaczu. إلى (do) + المدرسةِ. Inne przyimki: في (w), من (z/od), على (na), عن (o), بـ (z/przez), لـ (dla). W polskim: 'do szkoły' — też dopełniacz! Tu systemy są zbieżne."
+      },
+      {
+        "id": "pa_gen2",
+        "question": "كتابُ _____ (Książka studenta) — إضافة",
+        "translation": "(Książka studenta)",
+        "options": [
+          "الطالبِ",
+          "الطالبُ",
+          "الطالبَ",
+          "طالبٍ"
+        ],
+        "correct": "الطالبِ",
+        "explanation": "Poprawnie: 'الطالبِ' (aṭ-ṭālibi) w dopełniaczu. W konstrukcji إضافة (idafa = posiadanie): drugi wyraz ZAWSZE w dopełniaczu. كتابُ (mianownik — bo podmiot) الطالبِ (dopełniacz — posiadacz). W polskim: 'książka studenta' — dopełniacz! Identyczna logika. Reguła: w idafa pierwszy wyraz NIE ma rodzajnika ani tanwinu, drugi ma kasrę."
+      },
+      {
+        "id": "pa_gen3",
+        "question": "في بيتِ _____ (W domu nauczyciela) — podwójna إضافة",
+        "translation": "(W domu nauczyciela)",
+        "options": [
+          "المعلمِ",
+          "المعلمُ",
+          "المعلمَ",
+          "معلمٌ"
+        ],
+        "correct": "المعلمِ",
+        "explanation": "Poprawnie: 'المعلمِ' (al-muʿallimi) w dopełniaczu. W łańcuchu إضافة WSZYSTKIE wyrazy po pierwszym są w dopełniaczu: في (przyimek) بيتِ (dopełniacz po في) المعلمِ (dopełniacz jako مضاف إليه). Łańcuchy mogą być długie: كتابُ ابنِ معلمِ المدرسةِ (książka syna nauczyciela szkoły) — 4 dopełniacze z rzędu!"
+      },
+      {
+        "id": "pa_gen4",
+        "question": "Tanwin kasra (ـٍ) oznacza:",
+        "translation": "(ماذا يعني التنوين بالكسر؟)",
+        "options": [
+          "Dopełniacz nieokreślony",
+          "Mianownik nieokreślony",
+          "Biernik nieokreślony",
+          "Określony dopełniacz"
+        ],
+        "correct": "Dopełniacz nieokreślony",
+        "explanation": "Tanwin kasra (ـٍ) = dopełniacz nieokreślony: كتابٍ (jakiejś książki). Porównaj 3 tanwiny: كتابٌ (mianownik — ـٌ), كتاباً (biernik — ـاً), كتابٍ (dopełniacz — ـٍ). Z rodzajnikiem (określony): الكتابُ, الكتابَ, الكتابِ — bez tanwinu, ale z odpowiednią samogłoską. Tanwin NIGDY nie występuje z الـ. To jak 'a book' vs. 'the book' w angielskim."
+      },
+      {
+        "id": "pa_gen5",
+        "question": "مررتُ بـ_____ (Przeszedłem obok domu) — po بـ",
+        "translation": "(Przeszedłem obok domu)",
+        "options": [
+          "البيتِ",
+          "البيتُ",
+          "البيتَ",
+          "بيتاً"
+        ],
+        "correct": "البيتِ",
+        "explanation": "Poprawnie: 'البيتِ' (al-bayti) w dopełniaczu po بـ (przez/obok). Przyimek بـ jest klitykiem — łączy się bezpośrednio z następnym wyrazem: بـ+البيت = بالبيتِ. Inne klityki-przyimki: لـ (dla/do), كـ (jak). Uwaga: لـ + الـ = لِلـ (nie *لالـ): لِلبيتِ (dla domu). كـ + الـ = كالـ: كالبيتِ (jak dom)."
+      },
+      {
+        "id": "pa_gen6",
+        "question": "هذا أحدُ _____ (To jeden ze studentów) — diptot w dopełniaczu",
+        "translation": "(To jeden ze studentów)",
+        "options": [
+          "الطلّابِ",
+          "الطلّابُ",
+          "الطلّابَ",
+          "طلّاباً"
+        ],
+        "correct": "الطلّابِ",
+        "explanation": "Poprawnie: 'الطلّابِ' (aṭ-ṭullābi) w dopełniaczu po أحد (jeden z). Konstrukcja أحد/إحدى + dopełniacz = 'jeden z'. Uwaga: طُلّاب to l. mn. łamana — odmienia się regularnie z kasrą w dopełniaczu, gdy ma الـ. BEZ الـ byłby diptot (ممنوع من الصرف)? Nie — طلّاب nie jest diptotem. Diptoty mają fathę zamiast kasry: مساجِدَ (meczetów), nie مساجِدِ."
+      },
+      {
+        "id": "pa_gen7",
+        "question": "ذهبتُ إلى مساجدَ كثيرةٍ (Chodziłem do wielu meczetów) — dlaczego مساجدَ z fathą?",
+        "translation": "(لماذا مساجدَ بالفتحة؟)",
+        "options": [
+          "Bo to diptot (ممنوع من الصرف) — fatha zamiast kasry",
+          "Bo to biernik",
+          "Błąd — powinno być مساجدِ",
+          "Bo jest po إلى"
+        ],
+        "correct": "Bo to diptot (ممنوع من الصرف) — fatha zamiast kasry",
+        "explanation": "Diptoty (ممنوع من الصرف) mają w dopełniaczu FATHĘ zamiast kasry: مساجدَ (nie *مساجدِ). Diptoty to: 1) l. mn. łamana na wzór مَفَاعِل/مَفَاعِيل: مساجد, مكاتب, مفاتيح, 2) imiona własne: أحمدَ, عمرَ, 3) przymiotniki na أفعل: أكبرَ. ALE: z الـ → normalna kasra: المساجدِ (dopełniacz z kasrą!). Diptot 'wraca do normy' z rodzajnikiem."
+      },
+      {
+        "id": "pa_gen8",
+        "question": "سافرتُ مع _____ (Podróżowałem z Ahmedem)",
+        "translation": "(Podróżowałem z Ahmedem)",
+        "options": [
+          "أحمدَ",
+          "أحمدُ",
+          "أحمدٍ",
+          "أحمداً"
+        ],
+        "correct": "أحمدَ",
+        "explanation": "Poprawnie: 'أحمدَ' (Aḥmada) z FATHĄ (nie kasrą!). مع (z) to przyimek → dopełniacz. Ale أحمد to diptot (imię na wzorze أفعل) → fatha zamiast kasry w dopełniaczu. W polskim: 'z Ahmedem' (narzędnik). Tu potrójna trudność: 1) przyimek → dopełniacz, 2) ale diptot → fatha zamiast kasry, 3) imię własne → bez tanwinu."
+      },
+      {
+        "id": "pa_gen9",
+        "question": "Rzeczownik po كُلّ (każdy/wszyscy) jest w:",
+        "translation": "(ما إعراب ما بعد كلّ؟)",
+        "options": [
+          "Dopełniaczu (مجرور) — bo إضافة",
+          "Mianowniku",
+          "Bierniku",
+          "Zależy od kontekstu"
+        ],
+        "correct": "Dopełniaczu (مجرور) — bo إضافة",
+        "explanation": "Poprawnie: po كُلّ → dopełniacz, bo to إضافة. كُلُّ طالبٍ (każdy student) = كُلّ + طالبٍ. Inne słowa-kwantyfikatory z إضافة: بعض (niektórzy), جميع (wszyscy), كثير من (wielu z), قليل من (mało z). Uwaga: كلّ może być też przysłówkiem: 'كلّ يومٍ' = codziennie (każdego dnia — dopełniacz). To jak polski: 'każdego dnia' — dopełniacz!"
+      },
+      {
+        "id": "pa_gen10",
+        "question": "هذا بابُ _____ الأماميُّ (To przednie drzwi domu)",
+        "translation": "(To przednie drzwi domu)",
+        "options": [
+          "البيتِ",
+          "البيتُ",
+          "البيتَ",
+          "بيتٌ"
+        ],
+        "correct": "البيتِ",
+        "explanation": "Poprawnie: 'البيتِ' w dopełniaczu — مضاف إليه w إضافة. Struktura: بابُ (drzwi) البيتِ (domu) الأماميُّ (przednie). Przymiotnik الأماميُّ odnosi się do بابُ (nie البيت) → mianownik (jak باب). Reguła: przymiotnik po إضافة odnosi się do PIERWSZEGO wyrazu i zgadza się z NIM w przypadku i rodzaju."
+      },
+      {
+        "id": "pa_gen11",
+        "question": "مِنْ أحسنِ _____ (Z najlepszych ludzi)",
+        "translation": "(Z najlepszych ludzi)",
+        "options": [
+          "الناسِ",
+          "الناسُ",
+          "الناسَ",
+          "ناساً"
+        ],
+        "correct": "الناسِ",
+        "explanation": "Poprawnie: 'الناسِ' (an-nāsi) w dopełniaczu. مِنْ (z/spośród) → dopełniacz + أحسنِ (najlepsza — إضافة z أفعل التفضيل) → الناسِ (dopełniacz jako مضاف إليه). Podwójny powód dopełniacza: 1) po مِنْ, 2) مضاف إليه po أحسنِ. W stopniu najwyższym (أفعل): struktura أفعلُ + dopełniacz = najlepszy z/z czegoś."
+      },
+      {
+        "id": "pa_gen12",
+        "question": "ما عندي _____ (Nie mam pieniędzy) — po عند",
+        "translation": "(Nie mam pieniędzy)",
+        "options": [
+          "مالٍ",
+          "مالٌ",
+          "مالاً",
+          "المالُ"
+        ],
+        "correct": "مالٍ",
+        "explanation": "Uwaga! To pytanie-pułapka. عندي = عند + ي (zaimek). مالٍ to podmiot zdania (ما عندي مالٌ = nie mam pieniędzy). Poprawna odpowiedź to MIANOWNIK: مالٌ, nie dopełniacz مالٍ. Ale w potocznym 'ما عندي مالٍ' (z kasrą po negacji). W MSA formalnym: مالٌ (mianownik jako مبتدأ مؤخّر). To subtelna kwestia — w praktyce oba się spotyka."
+      },
+      {
+        "id": "pa_gen13",
+        "question": "قبلَ _____ (Przed lekcją) — ظرف + إضافة",
+        "translation": "(Przed lekcją)",
+        "options": [
+          "الدرسِ",
+          "الدرسُ",
+          "الدرسَ",
+          "درساً"
+        ],
+        "correct": "الدرسِ",
+        "explanation": "Poprawnie: 'الدرسِ' (ad-darsi) w dopełniaczu. قبلَ (przed) i بعدَ (po) to okoliczniki czasu (ظرف زمان) — same w bierniku, ale tworzą إضافة z następnym rzeczownikiem → dopełniacz: قبلَ الدرسِ, بعدَ الدرسِ. Inne ظروف z إضافة: فوقَ (nad), تحتَ (pod), أمامَ (przed), وراءَ (za). Wszystkie rządzą dopełniaczem!"
+      },
+      {
+        "id": "pa_gen14",
+        "question": "Ile jest przyimków w arabskim (حروف الجرّ)?",
+        "translation": "(كم عدد حروف الجر؟)",
+        "options": [
+          "Około 20 (من, إلى, في, على, عن, بـ, لـ, كـ, حتّى, مُذْ, مُنْذُ...)",
+          "3",
+          "50",
+          "Tylko 7"
+        ],
+        "correct": "Około 20 (من, إلى, في, على, عن, بـ, لـ, كـ, حتّى, مُذْ, مُنْذُ...)",
+        "explanation": "Gramatycy arabscy wymieniają ok. 20 przyimków: مِنْ (z/od), إِلَى (do), فِي (w), عَلَى (na), عَنْ (o/od), بـ (z/przez), لـ (dla/do), كـ (jak), حَتَّى (aż do), مُذْ/مُنْذُ (od — czas), رُبَّ (niejeden), واو القسم (waw przysięgi), تاء القسم (tā' przysięgi), خَلَا/عَدَا/حَاشَا (oprócz). Każdy rządzi dopełniaczem. Najczęstsze 7: من, إلى, في, على, عن, بـ, لـ."
+      },
+      {
+        "id": "pa_gen15",
+        "question": "Który z tych wyrazów NIE jest w dopełniaczu?",
+        "translation": "(أيّ كلمة ليست مجرورة؟)",
+        "options": [
+          "كتاباً",
+          "المدرسةِ",
+          "البيتِ",
+          "أحمدَ"
+        ],
+        "correct": "كتاباً",
+        "explanation": "Poprawnie: 'كتاباً' z tanwinem fatha = BIERNIK, nie dopełniacz. Pozostałe: المدرسةِ (kasra = dopełniacz), البيتِ (kasra = dopełniacz), أحمدَ (fatha = dopełniacz DIPTOTU — fatha zamiast kasry!). Kluczowe rozróżnienie: fatha na zwykłym rzeczowniku = biernik, ale fatha na diptocie = może być biernik LUB dopełniacz. Kontekst rozstrzyga!"
+      }
+    ]
+  },
+  {
+    "key": "nominative_case",
+    "name": "Mianownik (المرفوع)",
+    "description": "حالة الرفع في اللغة العربية",
+    "iconName": "arrow.up",
+    "color": "#22d3ee",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pa_nom1",
+        "question": "_____ جميلةٌ (Szkoła jest piękna) — podmiot",
+        "translation": "(Szkoła jest piękna)",
+        "options": [
+          "المدرسةُ",
+          "المدرسةَ",
+          "المدرسةِ",
+          "مدرسةً"
+        ],
+        "correct": "المدرسةُ",
+        "explanation": "Poprawnie: 'المدرسةُ' (al-madrasatu) z ḍammą = mianownik (مرفوع). Podmiot (مبتدأ) zdania nominalnego ZAWSZE w mianowniku. المدرسةُ (podmiot) جميلةٌ (orzecznik — też mianownik). W polskim: 'Szkoła jest piękna' — mianownik. Identyczne logicznie. Mianownik = 'domyślny' przypadek podmiotu w obu językach."
+      },
+      {
+        "id": "pa_nom2",
+        "question": "جاءَ _____ (Przyszedł nauczyciel) — فاعل",
+        "translation": "(Przyszedł nauczyciel)",
+        "options": [
+          "المعلمُ",
+          "المعلمَ",
+          "المعلمِ",
+          "معلماً"
+        ],
+        "correct": "المعلمُ",
+        "explanation": "Poprawnie: 'المعلمُ' (al-muʿallimu) w mianowniku. Podmiot (فاعل) zdania werbalnego → mianownik. Szyk: ORZECZENIE + PODMIOT (typowy arabski): جاءَ المعلمُ (dosł. 'Przyszedł nauczyciel'). W polskim oba szyki OK: 'Przyszedł nauczyciel' / 'Nauczyciel przyszedł'. W arabskim: szyk VOS/VSO jest standardowy, SVO też możliwy."
+      },
+      {
+        "id": "pa_nom3",
+        "question": "الطالبُ _____ (Student jest pilny) — orzecznik",
+        "translation": "(Student jest pilny)",
+        "options": [
+          "مجتهدٌ",
+          "مجتهداً",
+          "مجتهدٍ",
+          "المجتهدَ"
+        ],
+        "correct": "مجتهدٌ",
+        "explanation": "Poprawnie: 'مجتهدٌ' (mujtahidun) z tanwinem ḍamma = mianownik nieokreślony. Orzecznik (خبر) zdania nominalnego → mianownik. الطالبُ مجتهدٌ — oba w mianowniku. UWAGA: orzecznik jest zwykle NIEOKREŚLONY (مجتهدٌ), a podmiot OKREŚLONY (الطالبُ). Jeśli oba określone: الطالبُ هو المجتهدُ (z zaimkiem rozdzielającym هو)."
+      },
+      {
+        "id": "pa_nom4",
+        "question": "إنَّ الطالبَ _____ (Zaiste student jest pilny) — خبر إنّ",
+        "translation": "(Zaiste student jest pilny)",
+        "options": [
+          "مجتهدٌ",
+          "مجتهداً",
+          "مجتهدٍ",
+          "المجتهدُ"
+        ],
+        "correct": "مجتهدٌ",
+        "explanation": "Poprawnie: 'مجتهدٌ' (mujtahidun) = mianownik. Po إنَّ: podmiot → biernik (الطالبَ), ale orzecznik → MIANOWNIK (مجتهدٌ). To odwrotność كان: w كان podmiot = mianownik, orzecznik = biernik; w إنّ podmiot = biernik, orzecznik = mianownik. Zapamiętaj: كان 'stawia' orzecznik w bierniku, إنّ 'stawia' podmiot w bierniku. Orzecznik i podmiot — jeden zawsze مرفوع!"
+      },
+      {
+        "id": "pa_nom5",
+        "question": "كُتِبَ _____ (List został napisany) — نائب الفاعل",
+        "translation": "(List został napisany)",
+        "options": [
+          "الخطابُ",
+          "الخطابَ",
+          "الخطابِ",
+          "خطاباً"
+        ],
+        "correct": "الخطابُ",
+        "explanation": "Poprawnie: 'الخطابُ' (al-khiṭābu) w mianowniku. W stronie biernej: dopełnienie bliższe staje się نائب الفاعل (zastępcą podmiotu) → MIANOWNIK. كَتَبَ أحمدُ الخطابَ (czynna: الخطابَ w bierniku) → كُتِبَ الخطابُ (bierna: الخطابُ w mianowniku). Identyczne z polskim: 'Ahmed napisał list' → 'List został napisany'."
+      },
+      {
+        "id": "pa_nom6",
+        "question": "الطلابُ _____ (Studenci są pilni) — zgodność l.mn.",
+        "translation": "(Studenci są pilni)",
+        "options": [
+          "مجتهدونَ",
+          "مجتهدينَ",
+          "مجتهدٌ",
+          "مجتهداتٌ"
+        ],
+        "correct": "مجتهدونَ",
+        "explanation": "Poprawnie: 'مجتهدونَ' (mujtahidūna) — l. mn. r.m. zdrowa w mianowniku. Końcówka: -ونَ (mianownik), -ينَ (biernik/dopełniacz). Porównaj: معلمونَ (nauczyciele — mianownik), معلمينَ (biernik/dopełniacz). To jak polska deklinacja: 'nauczyciele' (mianownik) vs. 'nauczycieli' (dopełniacz/biernik). L. mn. zdrowa ma DWIE formy: -ون/-ين."
+      },
+      {
+        "id": "pa_nom7",
+        "question": "Orzeczenie (فعل) w zdaniu werbalnym jest w:",
+        "translation": "(ما إعراب الفعل في الجملة الفعلية؟)",
+        "options": [
+          "Nie ma przypadka — czasownik ma TRYB (مرفوع/منصوب/مجزوم)",
+          "Mianowniku",
+          "Bierniku",
+          "Dopełniaczu"
+        ],
+        "correct": "Nie ma przypadka — czasownik ma TRYB (مرفوع/منصوب/مجزوم)",
+        "explanation": "WAŻNE rozróżnienie: rzeczowniki mają PRZYPADEK (إعراب), czasowniki mają TRYB (إعراب الفعل). Czas teraźniejszy: يَكْتُبُ (wskaźnikowy — مرفوع), يَكْتُبَ (łączący — منصوب), يَكْتُبْ (warunkowy — مجزوم). Te same terminy (مرفوع/منصوب/مجزوم), ale inne znaczenie! Czas przeszły i rozkaz są 'niezmienialne' (مبني)."
+      },
+      {
+        "id": "pa_nom8",
+        "question": "Tanwin ḍamma (ـٌ) na słowie 'كتابٌ' oznacza:",
+        "translation": "(ماذا يعني التنوين بالضم؟)",
+        "options": [
+          "Mianownik nieokreślony (jakaś książka)",
+          "Dopełniacz",
+          "Biernik",
+          "Określony mianownik"
+        ],
+        "correct": "Mianownik nieokreślony (jakaś książka)",
+        "explanation": "Tanwin ḍamma (ـٌ) = mianownik + nieokreśloność. كتابٌ = 'jakaś książka' (jako podmiot). 3 tanwiny: ـٌ (mianownik), ـً (biernik), ـٍ (dopełniacz). Tanwin = nieokreśloność + przypadek. Rodzajnik الـ = określoność → bez tanwinu: الكتابُ. Tanwin i الـ NIGDY razem. To jak angielskie 'a' vs. 'the', ale zakodowane w samych końcówkach."
+      },
+      {
+        "id": "pa_nom9",
+        "question": "Pięć imion (الأسماء الخمسة) w mianowniku mają:",
+        "translation": "(ما علامة رفع الأسماء الخمسة؟)",
+        "options": [
+          "Waw (و): أبوكَ, أخوكَ, حموكَ, فوكَ, ذو",
+          "Ḍamma",
+          "Alif",
+          "Yā'"
+        ],
+        "correct": "Waw (و): أبوكَ, أخوكَ, حموكَ, فوكَ, ذو",
+        "explanation": "Pięć imion: أب (ojciec), أخ (brat), حم (teść), فم (usta), ذو (posiadacz). W mianowniku mają و: أبوكَ (twój ojciec), أخوكَ (twój brat), ذو مالٍ (posiadacz majątku). W bierniku: أباكَ (alif), w dopełniaczu: أبيكَ (yā'). WARUNEK: muszą być w إضافة (أبوكَ, nie *أبو). Bez إضافة: أبٌ (zwykła ḍamma). To najstarsza warstwa deklinacji arabskiej."
+      },
+      {
+        "id": "pa_nom10",
+        "question": "كانَ _____ مريضاً (Student był chory) — اسم كان",
+        "translation": "(Student był chory)",
+        "options": [
+          "الطالبُ",
+          "الطالبَ",
+          "الطالبِ",
+          "طالباً"
+        ],
+        "correct": "الطالبُ",
+        "explanation": "Poprawnie: 'الطالبُ' (aṭ-ṭālibu) w mianowniku. Po كَانَ: podmiot (اسم كان) → MIANOWNIK, orzecznik (خبر كان) → biernik. كانَ الطالبُ (mianownik) مريضاً (biernik). Porównaj z إنَّ: إنَّ الطالبَ (biernik) مريضٌ (mianownik). كان i إنّ to 'lustrzane odbicia' — jeden stawia podmiot w mianowniku, drugi w bierniku."
+      },
+      {
+        "id": "pa_nom11",
+        "question": "L. mn. żeńska zdrowa w mianowniku: المعلم_____ مجتهد_____",
+        "translation": "(Nauczycielki są pilne)",
+        "options": [
+          "ـاتُ ... ـاتٌ",
+          "ـاتِ ... ـاتٍ",
+          "ـاتَ ... ـاتاً",
+          "ـينَ ... ـينَ"
+        ],
+        "correct": "ـاتُ ... ـاتٌ",
+        "explanation": "Poprawnie: 'المعلماتُ مجتهداتٌ'. L. mn. żeńska zdrowa (جمع مؤنث سالم) w mianowniku ma ḍammę: ـاتُ. Ale w bierniku i dopełniaczu: ـاتِ (KASRA dla obu!). To wyjątek: l. mn. żeńska nie rozróżnia biernika i dopełniacza — oba mają kasrę. Porównaj l. mn. męską: ـونَ (mian.) vs. ـينَ (biern./dopeł.) — tu YĀNA dla obu."
+      },
+      {
+        "id": "pa_nom12",
+        "question": "يأتي المعلمُ و_____ (Przychodzi nauczyciel i student) — معطوف",
+        "translation": "(Przychodzi nauczyciel i student)",
+        "options": [
+          "الطالبُ",
+          "الطالبَ",
+          "الطالبِ",
+          "طالباً"
+        ],
+        "correct": "الطالبُ",
+        "explanation": "Poprawnie: 'الطالبُ' w mianowniku. Po spójniku و (i): wyraz ma TEN SAM przypadek co wyraz przed spójnikiem. المعلمُ jest فاعل (podmiot) → mianownik, więc الطالبُ po و → też mianownik. Reguła: العطف (łączenie spójnikowe) = zgoda w przypadku. Dotyczy و (i), أو (lub), ثمَّ (potem), فـ (więc). Jak w polskim: 'nauczyciel i student' — oba w mianowniku."
+      },
+      {
+        "id": "pa_nom13",
+        "question": "Która z form jest w mianowniku (مرفوع)?",
+        "translation": "(أي شكل مرفوع؟)",
+        "options": [
+          "يكتبُ (pisze)",
+          "يكتبَ (po أنْ)",
+          "يكتبْ (po لمْ)",
+          "كتبَ (pisał)"
+        ],
+        "correct": "يكتبُ (pisze)",
+        "explanation": "Poprawnie: 'يكتبُ' (yaktubu) z ḍammą = مرفوع (tryb wskaźnikowy). To 'domyślny' tryb teraźniejszego — bez żadnych partykuł. يكتبَ (fatha = منصوب, po أنْ/لنْ/كيْ), يكتبْ (sukun = مجزوم, po لمْ/لا). Czas przeszły كتبَ jest مبني (niezmienny) — fatha NIE oznacza منصوب, to stała samogłoska formy."
+      },
+      {
+        "id": "pa_nom14",
+        "question": "أنتم تكتبونَ — końcówka -ونَ w l.mn. teraźn. jest znakiem:",
+        "translation": "(ما دليل الرفع في تكتبون؟)",
+        "options": [
+          "Mianownika (مرفوع) — ثبوت النون",
+          "Biernika",
+          "Dopełniacza",
+          "Nie ma znaczenia"
+        ],
+        "correct": "Mianownika (مرفوع) — ثبوت النون",
+        "explanation": "W 'pięciu czasownikach' (الأفعال الخمسة): تكتبونَ, تكتبانِ, يكتبانِ, تكتبينَ, يكتبونَ — znakiem مرفوع jest ZACHOWANIE نون (ثبوت النون). W منصوب/مجزوم: نون ODPADA: لنْ تكتبوا (nie *تكتبونَ), لم تكتبوا. To jak w polskim: 'piszecie' (oznajmujący) vs. '(że)byście pisali' (łączący) — zmiana końcówki = zmiana trybu."
+      },
+      {
+        "id": "pa_nom15",
+        "question": "Które zdanie ma wszystkie wyrazy w mianowniku?",
+        "translation": "(أي جملة كل كلماتها مرفوعة؟)",
+        "options": [
+          "الطالبُ مجتهدٌ (Student jest pilny)",
+          "ذهبَ الطالبُ إلى المدرسةِ",
+          "إنَّ الطالبَ مجتهدٌ",
+          "كانَ الطالبُ مجتهداً"
+        ],
+        "correct": "الطالبُ مجتهدٌ (Student jest pilny)",
+        "explanation": "Poprawnie: 'الطالبُ مجتهدٌ' — zdanie nominalne: مبتدأ (الطالبُ — مرفوع) + خبر (مجتهدٌ — مرفوع). OBA w mianowniku! Inne: 'ذهبَ الطالبُ إلى المدرسةِ' — المدرسةِ w dopełniaczu; 'إنَّ الطالبَ مجتهدٌ' — الطالبَ w bierniku; 'كانَ الطالبُ مجتهداً' — مجتهداً w bierniku. Tylko czyste zdanie nominalne bez partykuł ma oba w مرفوع."
+      }
+    ]
+  },
+  {
+    "key": "conditional_sentences",
+    "name": "Zdania warunkowe (الشرط)",
+    "description": "جمل الشرط والجزاء في العربية",
+    "iconName": "arrow.triangle.branch",
+    "color": "#f472b6",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pa_cond1",
+        "question": "إنْ _____ ادرسْ تنجحْ (Jeśli będziesz się uczył, zdasz)",
+        "translation": "(Jeśli będziesz się uczył, zdasz)",
+        "options": [
+          "تدرسْ تنجحْ",
+          "تدرسُ تنجحُ",
+          "تدرسَ تنجحَ",
+          "درستَ تنجحُ"
+        ],
+        "correct": "تدرسْ تنجحْ",
+        "explanation": "Poprawnie: 'إنْ تدرسْ تنجحْ' — po إنْ (jeśli) OBA czasowniki w مجزوم (jussive — sukun). إنْ to partykuła warunkowa jazm (أداة شرط جازمة) — wymaga مجزوم zarówno w warunku (فعل الشرط), jak i w następstwie (جواب الشرط). Porównaj z polskim: 'Jeśli się uczysz, zdasz' — oba w trybie oznajmującym. Arabski zmienia TRYB obu czasowników!"
+      },
+      {
+        "id": "pa_cond2",
+        "question": "لَوْ درستَ _____ (Gdybyś się uczył, zdałbyś)",
+        "translation": "(Gdybyś się uczył, zdałbyś)",
+        "options": [
+          "لنجحتَ",
+          "تنجحْ",
+          "نجحتَ",
+          "سوف تنجح"
+        ],
+        "correct": "لنجحتَ",
+        "explanation": "Poprawnie: 'لَوْ درستَ لنجحتَ' = Gdybyś się uczył, zdałbyś. لَوْ = gdyby (warunek NIEREALNY/przeszły). Po لَوْ: czas PRZESZŁY (درستَ), następstwo z لـ + czas przeszły (لنجحتَ). لَوْ NIGDY nie używa مجزوم — to nie jest partykuła جازمة! Porównaj: إنْ (realna możliwość + مجزوم) vs. لَوْ (nierealna/przeszła + czas przeszły). Jak polskie: 'jeśli' vs. 'gdyby'."
+      },
+      {
+        "id": "pa_cond3",
+        "question": "إذا جاءَ المعلمُ _____ (Gdy przyjdzie nauczyciel, wstanę)",
+        "translation": "(Gdy przyjdzie nauczyciel, wstanę)",
+        "options": [
+          "أقومُ / قُمْتُ",
+          "أقومْ",
+          "أقومَ",
+          "قامَ"
+        ],
+        "correct": "أقومُ / قُمْتُ",
+        "explanation": "Poprawnie: po إذا (kiedy/gdy) następstwo może być w teraźniejszym (أقومُ) LUB przeszłym (قُمتُ). إذا jest NIE-جازمة w standardowej gramatyce — nie wymaga مجزوم (choć w Koranie spotyka się مجزوم). إذا + czas przeszły (warunek) + czas ter./przeszły (następstwo). Różnica: إنْ = 'jeśli' (niepewny), إذا = 'gdy/kiedy' (pewny/oczekiwany). إذا jest NAJCZĘSTSZĄ partykułą warunkową."
+      },
+      {
+        "id": "pa_cond4",
+        "question": "مَنْ يدرسْ _____ (Kto się uczy, zdaje) — مَنْ warunkowe",
+        "translation": "(Kto się uczy, zdaje)",
+        "options": [
+          "ينجحْ",
+          "ينجحُ",
+          "ينجحَ",
+          "نجحَ"
+        ],
+        "correct": "ينجحْ",
+        "explanation": "Poprawnie: 'مَنْ يدرسْ ينجحْ' — مَنْ (kto) jako أداة شرط جازمة wymaga مجزوم w warunku i następstwie. مَنْ warunkowe (kto = jeśli ktoś) ≠ مَنْ pytające (kto?). Inne zaimki warunkowe جازمة: ما (co/cokolwiek), أينَ (gdzie), متى (kiedy), مهما (cokolwiek), أيّ (który). Wszystkie wymagają مجزوم w OBUCZASOWNIKACH."
+      },
+      {
+        "id": "pa_cond5",
+        "question": "لولا الماءُ _____ (Gdyby nie woda, zginęlibyśmy)",
+        "translation": "(Gdyby nie woda, zginęlibyśmy)",
+        "options": [
+          "لهلكنا",
+          "هلكنا",
+          "نهلكْ",
+          "سنهلك"
+        ],
+        "correct": "لهلكنا",
+        "explanation": "Poprawnie: 'لولا الماءُ لهلكنا' = Gdyby nie woda, zginęlibyśmy. لولا = gdyby nie (warunek NIEREALNY z powodu istnienia czegoś). Struktura: لولا + podmiot (mianownik) + لـ + czas przeszły. Podmiot po لولا jest اسم (nie فعل!): لولا الماءُ, لولا اللهُ, لولا الصبرُ. Następstwo ZAWSZE z لـ. Brak لـ to BŁĄD gramatyczny."
+      },
+      {
+        "id": "pa_cond6",
+        "question": "إنْ تذهبْ أذهبْ — jeśli następstwo jest zdaniem nominalnym, używamy:",
+        "translation": "(ماذا لو كان جواب الشرط جملة اسمية؟)",
+        "options": [
+          "فـ (fā' رابطة): إنْ تدرسْ فأنتَ ناجحٌ",
+          "Nic — bez zmian",
+          "لـ (lām)",
+          "سوف"
+        ],
+        "correct": "فـ (fā' رابطة): إنْ تدرسْ فأنتَ ناجحٌ",
+        "explanation": "Gdy następstwo (جواب الشرط) jest zdaniem nominalnym, rozkazem, pytaniem lub z سوف/سـ/لنْ/ما/قد — MUSI być فـ (fā' łącząca) na początku. إنْ تدرسْ فأنتَ ناجحٌ (jeśli się uczysz, TO jesteś zdolny). Bez فـ: BŁĄD. Mnemotechnika: جملة اسمية/أمر/استفهام/سوف/لن/ما/قد = potrzebna فـ. Wiersz: 'اسمية طلبية وبجامد وبما وقد وبلن وبالتسويف' (reguła فـ)."
+      },
+      {
+        "id": "pa_cond7",
+        "question": "لَوْ أنَّكَ درستَ _____ (Gdybyś się uczył, zdałbyś) — z أنَّ",
+        "translation": "(Gdybyś się uczył, zdałbyś)",
+        "options": [
+          "لنجحتَ",
+          "لتنجحْ",
+          "فإنَّك ناجحٌ",
+          "نجحتَ"
+        ],
+        "correct": "لنجحتَ",
+        "explanation": "Poprawnie: 'لَوْ أنَّكَ درستَ لنجحتَ'. Wariant لَوْ z أنَّ: wzmacnia emfazę. أنَّكَ درستَ = 'że się uczyłeś' (podmiot أنَّ w bierniku + orzecznik). Następstwo: لـ + czas przeszły (لنجحتَ). Bez لـ: potoczne, ale gramatycznie niepełne. لَوْ zawsze oznacza NIEREALNOŚĆ — warunek NIE został spełniony. 'Gdybyś się uczył (ale się nie uczyłeś)'."
+      },
+      {
+        "id": "pa_cond8",
+        "question": "Różnica: إنْ vs. إذا:",
+        "translation": "(الفرق بين إنْ و إذا)",
+        "options": [
+          "إنْ = niepewne/możliwe + جزم; إذا = pewne/oczekiwane, bez جزم",
+          "Identyczne",
+          "إنْ = przyszłość, إذا = przeszłość",
+          "إنْ = formalne, إذا = potoczne"
+        ],
+        "correct": "إنْ = niepewne/możliwe + جزم; إذا = pewne/oczekiwane, bez جزم",
+        "explanation": "KLUCZOWA różnica: إنْ = 'jeśli' (sytuacja NIEPEWNA, może się zdarzyć lub nie) + جزم (مجزوم). إذا = 'kiedy/gdy' (sytuacja OCZEKIWANA, prawdopodobna) + normalny czas przeszły (nie جازمة standardowo). Np.: إنْ يأتِ المطرُ... (jeśli przyjdzie deszcz — niepewne), إذا جاءَ المطرُ... (kiedy przyjdzie deszcz — oczekujemy). W polskim: 'jeśli' ≈ إنْ, 'kiedy/gdy' ≈ إذا."
+      },
+      {
+        "id": "pa_cond9",
+        "question": "مهما _____ فلن أخافَ (Cokolwiek się stanie, nie będę się bał)",
+        "translation": "(Cokolwiek się stanie, nie będę się bał)",
+        "options": [
+          "يحدثْ",
+          "يحدثُ",
+          "حدثَ",
+          "يحدثَ"
+        ],
+        "correct": "يحدثْ",
+        "explanation": "Poprawnie: 'مهما يحدثْ فلن أخافَ'. مهما (cokolwiek) = partykuła warunkowa جازمة → يحدثْ w مجزوم. Następstwo: فـ (bo لنْ!) + لنْ أخافَ (بiernik po لنْ). Reguła فـ: gdy następstwo zawiera لنْ, MUSI być فـ. مهما to najmocniejszy zaimek 'cokolwiek' — implukuje brak znaczenia warunku: 'NIEWAŻNE co się stanie'."
+      },
+      {
+        "id": "pa_cond10",
+        "question": "أينما _____ أجدْكَ (Gdziekolwiek pójdę, znajdę cię)",
+        "translation": "(Gdziekolwiek pójdę, znajdę cię)",
+        "options": [
+          "أذهبْ",
+          "أذهبُ",
+          "ذهبتُ",
+          "أذهبَ"
+        ],
+        "correct": "أذهبْ",
+        "explanation": "Poprawnie: 'أينما أذهبْ أجدْكَ'. أينما (gdziekolwiek) = partykuła warunkowa جازمة → OBA w مجزوم: أذهبْ i أجدْ. Końcówka كَ = cię (zaimek suffixalny). Inne złożone partykuły warunkowe: حيثما (gdziekolwiek), كيفما (jakkolwiek), أيّانَ (kiedykolwiek). Końcówka ما dodaje znaczenie 'kolwiek' do zaimka: أينَ (gdzie) → أينما (gdziekolwiek)."
+      },
+      {
+        "id": "pa_cond11",
+        "question": "لَمَّا جاءَ _____ (Kiedy przyszedł, usiadłem)",
+        "translation": "(Kiedy przyszedł, usiadłem)",
+        "options": [
+          "جلستُ",
+          "أجلسْ",
+          "جالسٌ",
+          "سأجلسُ"
+        ],
+        "correct": "جلستُ",
+        "explanation": "Poprawnie: 'لمّا جاءَ جلستُ' = kiedy przyszedł, usiadłem. لمّا = kiedy (przeszłość, jednorazowo). Struktura: لمّا + czas przeszły + czas przeszły. لمّا NIE jest جازمة — oba czasowniki w zwykłym przeszłym. Porównaj: إذا (przyszłość), لمّا (przeszłość). W polskim: 'kiedy przyszedł' (przeszłość, oba w przeszłym). لمّا implikuje NATYCHMIASTOWOŚĆ: przyszedł → od razu usiadłem."
+      },
+      {
+        "id": "pa_cond12",
+        "question": "إنْ لمْ تدرسْ _____ (Jeśli nie będziesz się uczył, obleje ciesz)",
+        "translation": "(Jeśli nie będziesz się uczył, oblejesz)",
+        "options": [
+          "فلنْ تنجحَ",
+          "تنجحْ",
+          "لا تنجحُ",
+          "ما نجحتَ"
+        ],
+        "correct": "فلنْ تنجحَ",
+        "explanation": "Poprawnie: 'إنْ لمْ تدرسْ فلنْ تنجحَ'. Negacja warunku: إنْ + لمْ + مجزوم. لمْ JUŻ wymaga مجزوم, więc z إنْ nie ma 'podwójnego' جزم — لمْ 'zasłania' إنْ. Następstwo: فـ (bo لنْ) + لنْ تنجحَ (منصوب). Negacja warunku: لمْ (po إنْ), ما (po إذا/لو). إنْ لمْ = jeśli nie..., إذا ما/لو ما = gdyby nie..."
+      },
+      {
+        "id": "pa_cond13",
+        "question": "أمّا أنا _____ أُفَضِّلُ الشايَ (Jeśli chodzi o mnie, wolę herbatę)",
+        "translation": "(Co do mnie, wolę herbatę)",
+        "options": [
+          "فـ (فأنا أُفَضِّلُ)",
+          "و (وأنا أُفَضِّلُ)",
+          "ثمَّ",
+          "لكنْ"
+        ],
+        "correct": "فـ (فأنا أُفَضِّلُ)",
+        "explanation": "Poprawnie: 'أمّا أنا فأُفَضِّلُ الشايَ'. أمّا = co do / jeśli chodzi o — partykuła warunkowa TEMATYCZNA (تفصيل). Po أمّا OBOWIĄZKOWE jest فـ przed następstwem. أمّا الولدُ فذكيٌّ (co do chłopca — jest mądry), أمّا البنتُ فجميلةٌ (co do dziewczynki — jest piękna). Brak فـ po أمّا to BŁĄD GRAMATYCZNY. أمّا jest bardzo częsta w Koranie i MSA."
+      },
+      {
+        "id": "pa_cond14",
+        "question": "لَوْلا _____ لما تعلَّمنا (Gdyby nie nauczyciel, nie nauczylibyśmy się)",
+        "translation": "(Gdyby nie nauczyciel, nie nauczylibyśmy się)",
+        "options": [
+          "المعلمُ",
+          "المعلمَ",
+          "المعلمِ",
+          "معلماً"
+        ],
+        "correct": "المعلمُ",
+        "explanation": "Poprawnie: 'المعلمُ' w MIANOWNIKU. Po لولا podmiot → mianownik (مبتدأ). لولا المعلمُ لما تعلَّمنا. Orzecznik (خبر) po لولا jest DOMYŚLNY i nie wymaga wyrażenia: لولا المعلمُ (موجودٌ) = gdyby nauczyciel nie (istniał). Następstwo: لـ + ما + przeszły (لما تعلَّمنا). Negacja w następstwie لولا: لـ + ما = 'nigdy byśmy nie'."
+      },
+      {
+        "id": "pa_cond15",
+        "question": "Ile typów zdań warunkowych omówiliśmy?",
+        "translation": "(كم نوعاً من الجمل الشرطية؟)",
+        "options": [
+          "4 (إنْ realne, لَوْ nierealne, إذا oczekiwane, لولا gdyby-nie)",
+          "1",
+          "2",
+          "10"
+        ],
+        "correct": "4 (إنْ realne, لَوْ nierealne, إذا oczekiwane, لولا gdyby-nie)",
+        "explanation": "4 główne typy: 1) إنْ = warunek REALNY/możliwy + جزم (إنْ تدرسْ تنجحْ), 2) لَوْ = warunek NIEREALNY/przeszły + czas przeszły (لَوْ درستَ لنجحتَ), 3) إذا = warunek OCZEKIWANY + przeszły/teraźniejszy (إذا جاءَ أقومُ), 4) لولا = gdyby-NIE + podmiot mian. + لـ+przeszły (لولا الماءُ لهلكنا). Plus: مَنْ/ما/أينما/مهما (zaimki warunkowe جازمة). Polskie odpowiedniki: jeśli, gdyby, gdy/kiedy, gdyby nie."
+      }
+    ]
+  },
+  {
+    "key": "relative_pronouns_ar",
+    "name": "Zaimki względne (الموصول)",
+    "description": "الأسماء الموصولة في العربية",
+    "iconName": "link",
+    "color": "#fbbf24",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pa_rel1",
+        "question": "الطالبُ _____ درسَ نجحَ (Student, który się uczył, zdał)",
+        "translation": "(Student, który się uczył, zdał)",
+        "options": [
+          "الذي",
+          "التي",
+          "الذين",
+          "اللاتي"
+        ],
+        "correct": "الذي",
+        "explanation": "Poprawnie: 'الذي' (alladhī) = który (r.m., l.poj.). Zaimki względne w arabskim ODMIENIAJĄ SIĘ przez rodzaj i liczbę: الذي (m. poj.), التي (ż. poj.), اللذانِ/اللذَينِ (m. podw.), اللتانِ/اللتَينِ (ż. podw.), الذينَ (m. mn.), اللاتي/اللواتي (ż. mn.). W polskim: 'który/która/którzy/które' — też odmiana! Systemy zbliżone."
+      },
+      {
+        "id": "pa_rel2",
+        "question": "المعلمةُ _____ تدرّسُنا ممتازةٌ (Nauczycielka, która nas uczy, jest świetna)",
+        "translation": "(Nauczycielka, która nas uczy, jest świetna)",
+        "options": [
+          "التي",
+          "الذي",
+          "الذين",
+          "اللتان"
+        ],
+        "correct": "التي",
+        "explanation": "Poprawnie: 'التي' (allatī) = która (r.ż., l.poj.). المعلمةُ jest żeńska → التي. Zdanie względne (صلة الموصول): تدرّسُنا = uczy nas. Zaimek względny MUSI zgadzać się z poprzednikiem (الموصول) w rodzaju i liczbie. Porównaj: المعلمُ الذي يدرّسُنا (nauczyciel m.) vs. المعلمةُ التي تدرّسُنا (nauczycielka ż.)."
+      },
+      {
+        "id": "pa_rel3",
+        "question": "الطلابُ _____ درسوا نجحوا (Studenci, którzy się uczyli, zdali)",
+        "translation": "(Studenci, którzy się uczyli, zdali)",
+        "options": [
+          "الذينَ",
+          "الذي",
+          "التي",
+          "اللواتي"
+        ],
+        "correct": "الذينَ",
+        "explanation": "Poprawnie: 'الذينَ' (alladhīna) = którzy (r.m., l.mn.). الطلابُ to l. mn. r.m. → الذينَ. WAŻNE: الذينَ jest NIEZMIENNY — ta sama forma w mianowniku, bierniku i dopełniaczu (nie ma *الذونَ/*الذِينِ). W przeciwieństwie do l. podwójnej: اللذانِ (mianownik) vs. اللذَينِ (biernik/dopełniacz) — ta się ODMIENIA."
+      },
+      {
+        "id": "pa_rel4",
+        "question": "قرأتُ الكتابَ _____ اشتريتُهُ (Przeczytałem książkę, którą kupiłem)",
+        "translation": "(Przeczytałem książkę, którą kupiłem)",
+        "options": [
+          "الذي",
+          "التي",
+          "الذين",
+          "ما"
+        ],
+        "correct": "الذي",
+        "explanation": "Poprawnie: 'الذي' — الكتابَ jest r.m. → الذي. KLUCZOWE: zdanie względne musi zawierać عائد (zaimek powrotny) odnoszący się do poprzednika. Tu: اشتريتُهُ — هُ = go (= الكتاب). Bez هُ byłoby BŁĘDNE: *الكتابَ الذي اشتريتُ. W polskim: 'książkę, KTÓRĄ kupiłem' — 'którą' pełni podwójną funkcję. W arabskim: الذي + هُ oddzielnie."
+      },
+      {
+        "id": "pa_rel5",
+        "question": " هذا _____ أريدُهُ (To jest to, czego chcę) — مَا",
+        "translation": "(To jest to, czego chcę)",
+        "options": [
+          "ما",
+          "الذي",
+          "مَنْ",
+          "أيّ"
+        ],
+        "correct": "ما",
+        "explanation": "Poprawnie: 'ما' (mā) = co/to, co — zaimek względny dla RZECZY nierozumnych. ما أريدُهُ = to, czego chcę. Porównaj: مَنْ (kto/ten, kto) = dla OSÓB: مَنْ يدرسْ ينجحْ (kto się uczy, zdaje). ما = co/to co (rzeczy), مَنْ = kto/ten kto (osoby). Oba są NIEODMIENNE (jeden kształt dla m./ż./poj./mn./wszystkich przypadków)."
+      },
+      {
+        "id": "pa_rel6",
+        "question": "جاءَ مَنْ _____ (Przyszedł ten, kto się uczył)",
+        "translation": "(Przyszedł ten, kto się uczył)",
+        "options": [
+          "درسَ",
+          "درسوا",
+          "يدرسُ",
+          "درستْ"
+        ],
+        "correct": "درسَ",
+        "explanation": "Poprawnie: 'مَنْ درسَ' = ten, kto się uczył. Czasownik po مَنْ jest zwykle w 3. os. l. poj. r.m. (domyślny), nawet gdy odnosi się do wielu osób: جاءَ مَنْ درسَ (przyszedł ten/ci, kto się uczył/uczyli). ALE: można też uzgodnić z rzeczywistą liczbą: جاءَ مَنْ درسوا (przyszli ci, którzy się uczyli). Forma singularna jest poprawniejsza gramatycznie."
+      },
+      {
+        "id": "pa_rel7",
+        "question": "الذي po rzeczowniku NIEOKREŚLONYM — czy jest poprawne?",
+        "translation": "(هل يأتي الذي بعد نكرة؟)",
+        "options": [
+          "NIE — po nieokreślonych nie ma الذي; zamiast tego: zdanie opisowe bez zaimka",
+          "TAK — zawsze",
+          "TAK — ale tylko z التي",
+          "To zależy od dialektu"
+        ],
+        "correct": "NIE — po nieokreślonych nie ma الذي; zamiast tego: zdanie opisowe bez zaimka",
+        "explanation": "KLUCZOWA reguła: الذي/التي/الذينَ występują TYLKO po rzeczowniku OKREŚLONYM (z الـ lub imieniu). Po nieokreślonym: ZDANIE OPISOWE bez zaimka (جملة وصفية). Porównaj: الطالبُ الذي درسَ (student, który...) vs. طالبٌ درسَ (student, który... — BEZ الذي!). W polskim oba mają 'który'. W arabskim: określony + الذي, nieokreślony + zdanie bez zaimka."
+      },
+      {
+        "id": "pa_rel8",
+        "question": "مررتُ بالرجلِ الذي _____ في بيتِهِ (Przeszedłem obok mężczyzny, którego odwiedziłem w domu)",
+        "translation": "(Przeszedłem obok mężczyzny, którego odwiedziłem w domu)",
+        "options": [
+          "زُرْتُهُ",
+          "زُرْتُ",
+          "يزوُرُ",
+          "زائرٌ"
+        ],
+        "correct": "زُرْتُهُ",
+        "explanation": "Poprawnie: 'زُرْتُهُ' = odwiedziłem GO. العائد (zaimek powrotny) هُ = go (= الرجل). Zaimek العائد MUSI być obecny w zdaniu względnym. Gdzie: الذي + zdanie z zaimkiem powrotnym odnoszącym się do الموصول. Bez هُ: *الذي زرتُ في بيتِهِ — BŁĄD (brakuje powrotu do الرجل po زرتُ). Wyjątek: gdy zaimek jest podmiotem — ukryty: الذي درسَ (هو ukryte)."
+      },
+      {
+        "id": "pa_rel9",
+        "question": "قابلتُ المرأةَ التي _____ ابنُها (Spotkałem kobietę, której syn podróżował)",
+        "translation": "(Spotkałem kobietę, której syn podróżował)",
+        "options": [
+          "سافرَ ابنُها",
+          "سافرَ ابنُهُ",
+          "سافرَتْ",
+          "السافرَ"
+        ],
+        "correct": "سافرَ ابنُها",
+        "explanation": "Poprawnie: 'سافرَ ابنُها' = podróżował JEJ syn. العائد tu to ها (jej) w ابنُها — odnosi się do المرأة (ż.). Gdyby الرجل: سافرَ ابنُهُ (JEGO syn). Zaimek powrotny MUSI zgadzać się w rodzaju z الموصول: المرأة → ها, الرجل → هُ. To odpowiednik polskiego: 'kobietę, KTÓREJ syn' — 'której' → arabskie التي + ها."
+      },
+      {
+        "id": "pa_rel10",
+        "question": "اللذانِ _____ (Ci dwaj, którzy przyszli) — l. podwójna",
+        "translation": "(Ci dwaj, którzy przyszli)",
+        "options": [
+          "جاءا",
+          "جاءوا",
+          "جاءَ",
+          "جاءتا"
+        ],
+        "correct": "جاءا",
+        "explanation": "Poprawnie: 'اللذانِ جاءا' = ci dwaj, którzy przyszli. اللذانِ (r.m. l. podw. mianownik) + جاءا (3. os. l. podw. r.m.). L. podwójna zaimka: اللذانِ (mianownik) / اللذَينِ (biernik/dopełniacz). Żeńska: اللتانِ / اللتَينِ. L. podwójna zaimka względnego: JEDYNA forma, która się odmienia przez przypadek! الذينَ, اللاتي = nieodmienne."
+      },
+      {
+        "id": "pa_rel11",
+        "question": "Czy w dialektach arabskich zaimek względny jest prostszy?",
+        "translation": "(هل الموصول أبسط في اللهجات؟)",
+        "options": [
+          "TAK — w większości dialektów: إللي (illi) dla wszystkich",
+          "NIE — jest bardziej złożony",
+          "Nie ma zaimka względnego",
+          "Tak, ale tylko w egipskim"
+        ],
+        "correct": "TAK — w większości dialektów: إللي (illi) dla wszystkich",
+        "explanation": "W dialektach: إللي (illi/yalli) = jeden zaimek względny dla WSZYSTKIEGO — r.m., r.ż., l.poj., l.mn., l.podw.: الراجل إللي, الستّ إللي, الناس إللي. Ogromne uproszczenie vs. MSA (الذي, التي, الذينَ, اللاتي, اللذانِ, اللتانِ). To jak angielskie 'who/which/that' → dialektalne 'illi'. W polskim: 'który/która/którzy/które' — bliższe MSA."
+      },
+      {
+        "id": "pa_rel12",
+        "question": "أعجبني _____ قلتَهُ (Spodobało mi się to, co powiedziałeś)",
+        "translation": "(Spodobało mi się to, co powiedziałeś)",
+        "options": [
+          "ما",
+          "الذي",
+          "مَنْ",
+          "التي"
+        ],
+        "correct": "ما",
+        "explanation": "Poprawnie: 'ما قلتَهُ' = to, co powiedziałeś. ما odnosi się do TREŚCI (co = wypowiedź), nie do osoby. أعجبني (spodobało mi się — dosł. 'zadziwiło mnie') + ما (to, co) + قلتَهُ (powiedziałeś to — هُ = عائد). Alternatywa: الذي قلتَهُ — też poprawne (الذي dla nieosobowych też OK). Ale ما jest bardziej naturalne dla treści abstrakcyjnych."
+      },
+      {
+        "id": "pa_rel13",
+        "question": "رأيتُ طالباً _____ في المكتبة (Zobaczyłem studenta siedzącego w bibliotece) — bez zaimka!",
+        "translation": "(Zobaczyłem studenta siedzącego w bibliotece)",
+        "options": [
+          "يجلسُ",
+          "الذي يجلسُ",
+          "جالساً",
+          "الجالسَ"
+        ],
+        "correct": "يجلسُ",
+        "explanation": "Poprawnie: 'طالباً يجلسُ في المكتبة' — zdanie opisowe BEZ zaimka الذي, bo طالباً jest NIEOKREŚLONY. Porównaj: الطالبَ الذي يجلسُ (określony → z zaimkiem). Powtórzenie kluczowej reguły: nieokreślony + zdanie opisowe (bez zaimka), określony + zdanie względne (z zaimkiem). 'جالساً' to حال (okolicznik stanu) — też poprawne, ale inna konstrukcja."
+      },
+      {
+        "id": "pa_rel14",
+        "question": "Zdanie: هذا هو الذي رأيتُهُ — هو tu pełni funkcję:",
+        "translation": "(ما وظيفة هو في هذا هو الذي؟)",
+        "options": [
+          "Zaimka rozdzielającego (ضمير فصل) — podkreśla tożsamość",
+          "Podmiotu",
+          "Zaimka powrotnego",
+          "Orzecznika"
+        ],
+        "correct": "Zaimka rozdzielającego (ضمير فصل) — podkreśla tożsamość",
+        "explanation": "هو w هذا هو الذي to ضمير فصل (zaimek rozdzielający) — umieszczony między podmiotem a orzecznikiem dla EMFAZY i jasności. هذا = to (podmiot), هو = [właśnie], الذي رأيتُهُ = ten, którego widziałem (orzecznik). Bez هو: هذا الذي رأيتُهُ — poprawne, ale bez emfazy. ضمير فصل pomaga też rozróżnić orzecznik od przydawki."
+      },
+      {
+        "id": "pa_rel15",
+        "question": "Która kombinacja الموصول + العائد jest BŁĘDNA?",
+        "translation": "(أي تركيبة خاطئة؟)",
+        "options": [
+          "المعلمةُ الذي درسَ (ż. + m.)",
+          "الطالبُ الذي درسَ",
+          "الطالبةُ التي درسَتْ",
+          "الطلابُ الذينَ درسوا"
+        ],
+        "correct": "المعلمةُ الذي درسَ (ż. + m.)",
+        "explanation": "BŁĄD: 'المعلمةُ الذي' — المعلمة jest żeńska, ale الذي jest męski! Powinno być: المعلمةُ التي درسَتْ. Reguła: zaimek względny MUSI zgadzać się z poprzednikiem w: 1) RODZAJU (m./ż.), 2) LICZBIE (poj./podw./mn.). Brak zgody = BŁĄD GRAMATYCZNY. To najczęstszy błąd uczniów — używanie الذي zamiast التي dla rzeczowników żeńskich."
+      }
+    ]
+  },
+  {
+    "key": "imperative_mood",
+    "name": "Tryb rozkazujący (الأمر)",
+    "description": "صيغة الأمر في اللغة العربية",
+    "iconName": "exclamationmark.bubble",
+    "color": "#60a5fa",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pa_imp1",
+        "question": "_____ الكتابَ! (Napisz książkę!) — od كَتَبَ/يَكْتُبُ",
+        "translation": "(Napisz książkę!)",
+        "options": [
+          "اُكْتُبْ",
+          "كَتَبَ",
+          "يَكْتُبُ",
+          "كاتِبْ"
+        ],
+        "correct": "اُكْتُبْ",
+        "explanation": "Poprawnie: 'اُكْتُبْ!' (uktub!) = napisz! Tworzenie rozkazu: 1) Weź czas teraźn. 2. os.: تَكْتُبُ, 2) Odetnij prefiks تَـ: كْتُبُ, 3) Dodaj hamzat al-waṣl: اُكْتُبُ, 4) Zmień końcówkę na sukun (مجزوم): اُكْتُبْ. Samogłoska hamzy: ḍamma (اُ) jeśli samogłoska środkowa to ḍamma (كْتُبُ), kasra (اِ) w pozostałych: اِفْعَلْ, اِفْعِلْ."
+      },
+      {
+        "id": "pa_imp2",
+        "question": "_____ هنا! (Usiądź tutaj!) — od جَلَسَ/يَجْلِسُ",
+        "translation": "(Usiądź tutaj!)",
+        "options": [
+          "اِجْلِسْ",
+          "جَلَسَ",
+          "اُجْلُسْ",
+          "جالِسْ"
+        ],
+        "correct": "اِجْلِسْ",
+        "explanation": "Poprawnie: 'اِجْلِسْ!' (ijlis!) = usiądź! Teraźniejszy: يَجْلِسُ (z kasrą) → تَجْلِسُ → جْلِسُ → اِجْلِسْ (hamza z KASRĄ, bo samogłoska środkowa to kasra). Reguła samogłoski hamzy: يَفْعُلُ → اُفْعُلْ (ḍamma), يَفْعِلُ → اِفْعِلْ (kasra), يَفْعَلُ → اِفْعَلْ (kasra!). Fatha rdzeniowa → kasra hamzy (nie fatha!)."
+      },
+      {
+        "id": "pa_imp3",
+        "question": "_____ الطعامَ! (Jedz jedzenie!) — od أَكَلَ/يَأْكُلُ",
+        "translation": "(Jedz jedzenie!)",
+        "options": [
+          "كُلْ",
+          "اُؤْكُلْ",
+          "أَكِلْ",
+          "آكُلْ"
+        ],
+        "correct": "كُلْ",
+        "explanation": "Poprawnie: 'كُلْ!' (kul!) = jedz! WYJĄTEK: czasowniki z hamzą początkową (أَكَلَ, أَخَذَ, أَمَرَ) tracą hamzę w rozkazie: أَكَلَ → تَأْكُلُ → أْكُلُ → كُلْ (hamza rdzeniowa odpada!). Tylko 3 czasowniki: كُلْ (jedz! — أكل), خُذْ (weź! — أخذ), مُرْ (rozkaż! — أمر). To najkrótsze rozkazy w arabskim!"
+      },
+      {
+        "id": "pa_imp4",
+        "question": "Rozkaz dla 'ty' ż. (أنتِ) od كَتَبَ to:",
+        "translation": "(ما أمر أنتِ من كتب؟)",
+        "options": [
+          "اُكْتُبِي",
+          "اُكْتُبْ",
+          "اُكْتُبُوا",
+          "اُكْتُبَا"
+        ],
+        "correct": "اُكْتُبِي",
+        "explanation": "Poprawnie: 'اُكْتُبِي!' (uktubī!) = napisz! (do kobiety). Końcówki rozkazu wg osoby: أنتَ → اُكْتُبْ (bez końcówki), أنتِ → اُكْتُبِي (ي), أنتما → اُكْتُبَا (ا), أنتم → اُكْتُبُوا (وا), أنتنَّ → اُكْتُبْنَ (نَ). 5 form rozkazu! W polskim: 'napisz/napiszcie' — tylko 2 formy. Arabski rozróżnia płeć i l. podwójną."
+      },
+      {
+        "id": "pa_imp5",
+        "question": "_____ ! (Bądź cicho!) — od سَكَتَ/يَسْكُتُ",
+        "translation": "(Bądź cicho!)",
+        "options": [
+          "اُسْكُتْ",
+          "سَكَتَ",
+          "اِسْكِتْ",
+          "ساكِتْ"
+        ],
+        "correct": "اُسْكُتْ",
+        "explanation": "Poprawnie: 'اُسْكُتْ!' (uskut!) = bądź cicho! يَسْكُتُ (z ḍammą) → hamza z ḍammą: اُسْكُتْ. Inne popularne rozkazy: تعالَ! (chodź tu! — nieregularny, nie od تَعَالَ), هاتِ! (daj! — bez czasownika źródłowego), قِفْ! (stój! — od وَقَفَ, bez hamzy bo وَقَفَ zaczyna się od و). Niektóre rozkazy są nieregularne i trzeba je zapamiętać."
+      },
+      {
+        "id": "pa_imp6",
+        "question": "Rozkaz formy II od عَلَّمَ (uczył) to:",
+        "translation": "(ما أمر عَلَّمَ؟)",
+        "options": [
+          "عَلِّمْ",
+          "اِعْلَمْ",
+          "تَعَلَّمْ",
+          "عالِمْ"
+        ],
+        "correct": "عَلِّمْ",
+        "explanation": "Poprawnie: 'عَلِّمْ!' (ʿallim!) = ucz! Formy II-X NIE potrzebują hamzat al-waṣl (bo ich teraźniejszy nie zaczyna się od spółgłosk: يُعَلِّمُ → تُعَلِّمُ → عَلِّمْ). Rozkazy form: II: فَعِّلْ (عَلِّمْ), III: فاعِلْ (سافِرْ), IV: أَفْعِلْ (أَرْسِلْ), V: تَفَعَّلْ (تَعَلَّمْ), VI: تَفاعَلْ (تَعاوَنْ). Proste — odetnij يُـ i dodaj sukun."
+      },
+      {
+        "id": "pa_imp7",
+        "question": "Negacja rozkazu (zakaz) tworzy się przez:",
+        "translation": "(كيف ننفي الأمر؟)",
+        "options": [
+          "لا + teraźniejszy مجزوم: لا تكتبْ (nie pisz!)",
+          "ما + rozkaz",
+          "لن + rozkaz",
+          "لم + rozkaz"
+        ],
+        "correct": "لا + teraźniejszy مجزوم: لا تكتبْ (nie pisz!)",
+        "explanation": "WAŻNE: zakaz (النهي) NIE jest negacją rozkazu — to ODRĘBNA forma: لا (الناهية) + czas teraźniejszy w مجزوم. لا تكتبْ! (nie pisz!), لا تذهبْ! (nie idź!), لا تأكلْ! (nie jedz!). NIE: *لا اُكْتُبْ (BŁĄD — łączenie لا z rozkazem). Porównaj: اُكْتُبْ (pisz!) ↔ لا تكتبْ (nie pisz!). Inne formy, inne tryby, ale ta sama funkcja."
+      },
+      {
+        "id": "pa_imp8",
+        "question": "Rozkaz od نَامَ/يَنَامُ (spał/śpi — أجوف) to:",
+        "translation": "(ما أمر نَامَ؟)",
+        "options": [
+          "نَمْ",
+          "اِنَمْ",
+          "نَامْ",
+          "اُنُمْ"
+        ],
+        "correct": "نَمْ",
+        "explanation": "Poprawnie: 'نَمْ!' (nam!) = śpij! Rozkaz od أجوف (pustego): يَنَامُ → تَنَامُ → نَامْ → نَمْ (alif odpada w مجزوم!). Inne: قُلْ (powiedz! — od قَالَ), بِعْ (sprzedaj! — od بَاعَ), سِرْ (idź! — od سَارَ), زُرْ (odwiedź! — od زَارَ). Samogłoska zależy od typu pustego: ḍamma (قُلْ), kasra (بِعْ, سِرْ), fatha (نَمْ)."
+      },
+      {
+        "id": "pa_imp9",
+        "question": "Rozkaz od مَشَى/يَمْشِي (szedł/chodzi — ناقص) to:",
+        "translation": "(ما أمر مَشَى؟)",
+        "options": [
+          "اِمْشِ",
+          "اِمْشِي",
+          "مَشِيْ",
+          "اُمْشُ"
+        ],
+        "correct": "اِمْشِ",
+        "explanation": "Poprawnie: 'اِمْشِ!' (imshi!) = idź! (do mężczyzny). Rozkaz od ناقص: يَمْشِي → تَمْشِي → مْشِي → مجزوم: مْشِ (ي odpada!) → اِمْشِ (hamza z kasrą). Dla أنتِ: اِمْشِي (ي wraca jako końcówka żeńska — wygląda identycznie jak teraźniejszy!). Kontekst rozróżnia: تَمْشِينَ (teraźniejszy) vs. اِمْشِي (rozkaz)."
+      },
+      {
+        "id": "pa_imp10",
+        "question": "Rozkaz od رَدَّ/يَرُدُّ (odpowiedział — مضعّف) to:",
+        "translation": "(ما أمر رَدَّ؟)",
+        "options": [
+          "رُدَّ",
+          "اِرْدُدْ",
+          "رَدِّ",
+          "رُدُدْ"
+        ],
+        "correct": "رُدَّ",
+        "explanation": "Poprawnie: 'رُدَّ!' (rudda!) = odpowiedz! Rozkaz od مضعّف: يَرُدُّ → تَرُدُّ → رُدُّ → مجزوم: رُدَّ (fatha na szaddzie w مجزوم, bo sukun na szaddzie niemożliwy). Alternatywna forma (rzadsza): اُرْدُدْ (rozdzielone — poprawna, ale archaiczna). W praktyce: رُدَّ (krótka) jest standardowa. Inne: مُدَّ (wyciągnij!), شُدَّ (ściągnij!), عُدَّ (policz!)."
+      },
+      {
+        "id": "pa_imp11",
+        "question": "Rozkaz formy X od اِسْتَخْدَمَ (używał) to:",
+        "translation": "(ما أمر اِسْتَخْدَمَ؟)",
+        "options": [
+          "اِسْتَخْدِمْ",
+          "خْدِمْ",
+          "اُسْتَخْدِمْ",
+          "سَتَخْدِمْ"
+        ],
+        "correct": "اِسْتَخْدِمْ",
+        "explanation": "Poprawnie: 'اِسْتَخْدِمْ!' (istakhdim!) = użyj! Forma X rozkaz: يَسْتَخْدِمُ → تَسْتَخْدِمُ → سْتَخْدِمُ → اِسْتَخْدِمْ. Formy VII, VIII, X zachowują hamzat al-waṣl: اِنْطَلِقْ (VII — ruszaj!), اِخْتَرْ (VIII — wybierz! — od اختار, أجوف w VIII), اِسْتَغْفِرْ (X — proś o przebaczenie!). Hamza VII/VIII/X ma zawsze KASRĘ."
+      },
+      {
+        "id": "pa_imp12",
+        "question": "W jakim 'trybie' (إعراب) jest rozkaz?",
+        "translation": "(ما إعراب فعل الأمر؟)",
+        "options": [
+          "مبني (niezmienny) — nie ma إعراب",
+          "مرفوع",
+          "منصوب",
+          "مجزوم"
+        ],
+        "correct": "مبني (niezmienny) — nie ma إعراب",
+        "explanation": "Rozkaz jest مبني (nieodmienny/niezmienny) — nie podlega إعراب (deklinacji/koniugacji). Końcowy sukun to STAŁA cecha formy, NIE znak مجزوم. Trzy czasy/tryby: 1) przeszły = مبني (zawsze fatha: كَتَبَ), 2) rozkaz = مبني (zawsze sukun: اُكْتُبْ), 3) teraźniejszy = مُعرَب (مرفوع/منصوب/مجزوم — zmienny!). Tylko teraźniejszy się 'odmienia' przez tryb."
+      },
+      {
+        "id": "pa_imp13",
+        "question": "Hamzat al-waṣl w rozkazie: اُكْتُبْ — ta hamza:",
+        "translation": "(ما نوع الهمزة في اُكْتُبْ؟)",
+        "options": [
+          "Odpada w środku zdania: وَاكْتُبْ (nie *وَاُكْتُبْ)",
+          "Zawsze wymawiana",
+          "Zamienia się na madda",
+          "Znika w piśmie"
+        ],
+        "correct": "Odpada w środku zdania: وَاكْتُبْ (nie *وَاُكْتُبْ)",
+        "explanation": "Hamzat al-waṣl (همزة الوصل) = hamza 'łącząca' — wymawiana TYLKO na początku wypowiedzi, ODPADA przy łączeniu: اُكْتُبْ! (wymawiane: uktub!), ale: وَاكتُبْ! (wymawiane: waktub! — hamza znika). Porównaj z hamzat al-qaṭʿ (همزة القطع): أَرْسِلْ — ta hamza ZAWSZE wymawiana: وَأَرْسِلْ (waʾarsil!). Formy I, VII, VIII, X = waṣl; II, III, IV = qaṭʿ."
+      },
+      {
+        "id": "pa_imp14",
+        "question": "تعالَ! (Chodź tu!) — to rozkaz od jakiego czasownika?",
+        "translation": "(ما فعل تعالَ؟)",
+        "options": [
+          "Nieregularny — nie ma standardowego czasownika źródłowego",
+          "تَعَالَى (forma VI)",
+          "عَلَا (wstąpił)",
+          "عَلَّمَ (uczył)"
+        ],
+        "correct": "Nieregularny — nie ma standardowego czasownika źródłowego",
+        "explanation": "تعالَ! (taʿāla!) = chodź tu! — NIEREGULARNY rozkaz. Teoretycznie od تَعَالَى (forma VI od ع-ل-و = być wywyższonym), ale semantycznie 'chodź tu' nie ma związku z 'wywyższaniem'. To skostniała forma — jedyna w swoim rodzaju. Odmiana: تعالَ (m.), تعالَيْ (ż.), تعالَوْا (m. mn.), تعالَيْنَ (ż. mn.). Inne nieregularne: هاتِ (daj!), هَلُمَّ (chodź!/daj!)."
+      },
+      {
+        "id": "pa_imp15",
+        "question": "Które zdanie zawiera rozkaz z فـ wzmacniającą (لام الأمر)?",
+        "translation": "(أي جملة فيها لام الأمر؟)",
+        "options": [
+          "لِيَكْتُبْ (Niech pisze! — 3. osoba)",
+          "اُكْتُبْ (Pisz! — 2. osoba)",
+          "لا تكتبْ (Nie pisz!)",
+          "كَتَبَ (Napisał)"
+        ],
+        "correct": "لِيَكْتُبْ (Niech pisze! — 3. osoba)",
+        "explanation": "Poprawnie: 'لِيَكْتُبْ' (li-yaktub) = niech pisze! لام الأمر = lām rozkazu — tworzy rozkaz dla 3. osoby (on/ona/oni) i 1. osoby (my): لِيَكْتُبْ (niech pisze), لِتَكْتُبْ (niech pisze — ona), لِنَكْتُبْ (piszmy!). Zwykły rozkaz istnieje TYLKO dla 2. osoby (ty). Dla 3. i 1. osoby: لـ + مجزوم. W polskim: 'niech pisze' = tryb rozkazujący opisowy."
+      }
+    ]
+  },
+  {
+    "key": "subjunctive_mood",
+    "name": "Tryb łączący (المنصوب)",
+    "description": "نصب الفعل المضارع في العربية",
+    "iconName": "arrow.turn.down.right",
+    "color": "#818cf8",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pa_subj1",
+        "question": "أريدُ أنْ _____ (Chcę pisać) — po أنْ",
+        "translation": "(Chcę pisać)",
+        "options": [
+          "أكتبَ",
+          "أكتبُ",
+          "أكتبْ",
+          "كتبتُ"
+        ],
+        "correct": "أكتبَ",
+        "explanation": "Poprawnie: 'أنْ أكتبَ' (an aktuba) — po أنْ (że/żeby) czasownik w منصوب (łączący) z FATHĄ. أريدُ أنْ أكتبَ = chcę, żeby pisać (dosł. chcę że piszę). أنْ to najczęstsza partykuła نصب. W polskim: 'chcę pisać' (bezokolicznik). Arabski nie ma bezokolicznika — zamiast tego: أنْ + czas teraźn. منصوب. To KLUCZ do zrozumienia arabskiej składni!"
+      },
+      {
+        "id": "pa_subj2",
+        "question": "لَنْ _____ (Nie pójdę) — po لَنْ",
+        "translation": "(Nigdy nie pójdę)",
+        "options": [
+          "أذهبَ",
+          "أذهبُ",
+          "أذهبْ",
+          "ذهبتُ"
+        ],
+        "correct": "أذهبَ",
+        "explanation": "Poprawnie: 'لَنْ أذهبَ' (lan adhhaba) = nie pójdę / nigdy nie pójdę. لَنْ = negacja PRZYSZŁOŚCI + نصب. Porównaj negacje: ما (+ przeszły = nie zrobił), لا (+ teraźniejszy مرفوع = nie robi), لمْ (+ مجزوم = nie robił), لنْ (+ منصوب = nie zrobi). Każda negacja ma INNY tryb/czas! لنْ implikuje STANOWCZOŚĆ: nie zrobię i KONIEC."
+      },
+      {
+        "id": "pa_subj3",
+        "question": "درستُ كيْ _____ (Uczyłem się, żeby zdać) — po كَيْ",
+        "translation": "(Uczyłem się, żeby zdać)",
+        "options": [
+          "أنجحَ",
+          "أنجحُ",
+          "أنجحْ",
+          "نجحتُ"
+        ],
+        "correct": "أنجحَ",
+        "explanation": "Poprawnie: 'كيْ أنجحَ' (kay anjaḥa) — po كَيْ (żeby/po to, aby) → منصوب z fathą. كَيْ wyraża CEL. Alternatywa: لِكَيْ (z لـ wzmacniającą — to samo znaczenie). Inne partykuły celu + نصب: حتّى (aż/żeby), لـ (żeby — celowe). درستُ لأنجحَ = درستُ كيْ أنجحَ = درستُ حتّى أنجحَ. Wszystkie = 'uczyłem się, żeby zdać'."
+      },
+      {
+        "id": "pa_subj4",
+        "question": "ذهبتُ إلى المكتبة لِـ_____ (Poszedłem do biblioteki, żeby czytać) — لـ celowe",
+        "translation": "(Poszedłem do biblioteki, żeby czytać)",
+        "options": [
+          "أقرأَ",
+          "أقرأُ",
+          "أقرأْ",
+          "القراءةِ"
+        ],
+        "correct": "أقرأَ",
+        "explanation": "Poprawnie: 'لِأقرأَ' (li-aqraʾa) — لـ celowe (لام التعليل) + أنْ (ukryte!) → منصوب. Reguła: po لـ celowe jest UKRYTE أنْ: لِأقرأَ = لِأنْ أقرأَ. Inne partykuły z ukrytym أنْ: حتّى, فـ (w odpowiedziach warunkowych). WAŻNE: لـ bez celu = لام الأمر (rozkaz): لِيَكْتُبْ (niech pisze) — INNY نوع لـ!"
+      },
+      {
+        "id": "pa_subj5",
+        "question": "حتّى _____ (Aż zrozumiem) — po حتّى",
+        "translation": "(Aż zrozumiem)",
+        "options": [
+          "أفهمَ",
+          "أفهمُ",
+          "أفهمْ",
+          "فهمتُ"
+        ],
+        "correct": "أفهمَ",
+        "explanation": "Poprawnie: 'حتّى أفهمَ' (ḥattā afhama) — po حتّى (aż/żeby) → منصوب. حتّى ma DWA znaczenia: 1) CEL: درستُ حتّى أنجحَ (uczyłem się, ŻEBY zdać), 2) GRANICA: سأدرسُ حتّى أفهمَ (będę się uczył, AŻ zrozumiem). Obie z منصوب. UWAGA: حتّى + rzeczownik → dopełniacz (nie نصب!): حتّى الصباحِ (aż do rana). Kontekst rozstrzyga."
+      },
+      {
+        "id": "pa_subj6",
+        "question": "W 'pięciu czasownikach' (الأفعال الخمسة) نصب widać przez:",
+        "translation": "(ما علامة النصب في الأفعال الخمسة؟)",
+        "options": [
+          "Odpadnięcie نون: لن تكتبوا (nie *تكتبونَ)",
+          "Fathę na końcu",
+          "Sukun",
+          "Kasrę"
+        ],
+        "correct": "Odpadnięcie نون: لن تكتبوا (nie *تكتبونَ)",
+        "explanation": "W 'pięciu czasownikach' (يكتبونَ, تكتبونَ, يكتبانِ, تكتبانِ, تكتبينَ): زnakami منصوب i مجزوم jest ODPADNIĘCIE نون! مرفوع: تكتبونَ (z نون), منصوب: لن تكتبوا (bez نون), مجزوم: لم تكتبوا (bez نون). منصوب i مجزوم IDENTYCZNE w formie! Kontekst (partykuła) rozstrzyga: لن = منصوب, لم = مجزوم."
+      },
+      {
+        "id": "pa_subj7",
+        "question": " فـ السببية (فـ skutkowa) po negacji/pytaniu wyma نصب. Przykład:",
+        "translation": "(مثال على فاء السببية)",
+        "options": [
+          "لا تكسلْ فتندمَ (Nie leniuchuj, bo pożałujesz)",
+          "كتبَ فذهبَ",
+          "جاءَ فجلسَ",
+          "هو كاتبٌ فماهرٌ"
+        ],
+        "correct": "لا تكسلْ فتندمَ (Nie leniuchuj, bo pożałujesz)",
+        "explanation": "Poprawnie: 'لا تكسلْ فتندمَ' — فـ السببية (fā' skutkowa/przyczynowa) po negacji/zakazie/pytaniu/życzeniu wymaga نصب. فَتندمَ = 'więc pożałujesz' (skutek). Warunki فـ السببية: musi być po 1) negacji (ما/لا/لم), 2) rozkazie, 3) zakazie (لا), 4) pytaniu, 5) życzeniu (ليت). فـ zwykła (i/potem) NIE wymaga نصب: جاءَ فجلسَ (przyszedł i usiadł — oba normalne)."
+      },
+      {
+        "id": "pa_subj8",
+        "question": "Różnica: أنْ (masdarowe) vs. أنَّ (twierdzące):",
+        "translation": "(الفرق بين أنْ و أنَّ)",
+        "options": [
+          "أنْ + فعل منصوب (że/żeby); أنَّ + اسم منصوب + خبر (że)",
+          "Identyczne",
+          "أنْ = pytanie, أنَّ = odpowiedź",
+          "أنْ = przeszłość, أنَّ = przyszłość"
+        ],
+        "correct": "أنْ + فعل منصوب (że/żeby); أنَّ + اسم منصوب + خبر (że)",
+        "explanation": "KLUCZOWE: أنْ (lekkie, bez szaddy) + CZASOWNIK w منصوب: أريدُ أنْ أكتبَ (chcę pisać). أنَّ (ciężkie, z szaddą) + RZECZOWNIK w bierniku + orzecznik: أعرفُ أنَّ الطالبَ مجتهدٌ (wiem, że student jest pilny). أنْ ≈ 'żeby' (z czasownikiem), أنَّ ≈ 'że' (z rzeczownikiem). Jedna szadda zmienia CAŁĄ składnię!"
+      },
+      {
+        "id": "pa_subj9",
+        "question": "يجبُ أنْ _____ (Trzeba się uczyć) — أنْ po يجب",
+        "translation": "(Trzeba się uczyć)",
+        "options": [
+          "تدرسَ",
+          "تدرسُ",
+          "تدرسْ",
+          "درستَ"
+        ],
+        "correct": "تدرسَ",
+        "explanation": "Poprawnie: 'يجبُ أنْ تدرسَ' = trzeba, żebyś się uczył. يجبُ (trzeba/należy) + أنْ + منصوب. Inne czasowniki/wyrażenia z أنْ: يمكنُ أنْ (można), ينبغي أنْ (należy), يُفضَّلُ أنْ (lepiej), من الضروريّ أنْ (konieczne jest). W polskim: 'trzeba się uczyć' (bezokolicznik). Arabski: أنْ + منصوب — ZAWSZE zamiast bezokolicznika."
+      },
+      {
+        "id": "pa_subj10",
+        "question": "Ile jest partykuł نصب (أدوات النصب)?",
+        "translation": "(كم أداة نصب؟)",
+        "options": [
+          "4 główne: أنْ, لنْ, كيْ, إذنْ",
+          "1 — tylko أنْ",
+          "10",
+          "2"
+        ],
+        "correct": "4 główne: أنْ, لنْ, كيْ, إذنْ",
+        "explanation": "4 partykuły نصب: 1) أنْ (że/żeby — najczęstsza), 2) لنْ (nigdy/nie będzie — negacja przyszłości), 3) كَيْ (żeby — cel), 4) إذنْ (zatem/w takim razie — rzadka). Plus: أنْ UKRYTE po لـ (celowe), حتّى, فـ السببية, واو المعية. Reguła: po każdej partykule نصب → fatha na czasowniku (lub odpadnięcie نون w الأفعال الخمسة)."
+      },
+      {
+        "id": "pa_subj11",
+        "question": "واو المعية (waw towarzyszenia) + نصب: لا تأكلْ و_____ (Nie jedz chodząc)",
+        "translation": "(Nie jedz idąc/i chodzisz)",
+        "options": [
+          "تمشيَ",
+          "تمشي",
+          "تمشيْ",
+          "مشيتَ"
+        ],
+        "correct": "تمشيَ",
+        "explanation": "Poprawnie: 'لا تأكلْ وتمشيَ' = nie jedz i (jednocześnie) chodź. واو المعية (waw towarzyszenia/jednoczesności) po negacji/zakazie wymaga نصب z UKRYTYM أنْ. وَتمشيَ = و + (أنْ) + تمشي. واو المعية ≠ واو العطف (spójnik 'i'). Różnica: واو العطف = ta sama czynność; واو المعية = jednoczesna, inna czynność. Subtelna, ale ważna różnica składniowa."
+      },
+      {
+        "id": "pa_subj12",
+        "question": "إذنْ _____ (W takim razie pójdę) — po إذنْ",
+        "translation": "(W takim razie pójdę)",
+        "options": [
+          "أذهبَ",
+          "أذهبُ",
+          "أذهبْ",
+          "ذهبتُ"
+        ],
+        "correct": "أذهبَ",
+        "explanation": "Poprawnie: 'إذنْ أذهبَ' (idhan adhhaba) = w takim razie pójdę. إذنْ to NAJRZADSZA partykuła نصب — wymaga: 1) być na początku zdania (odpowiedzi), 2) czasownik dotyczy PRZYSZŁOŚCI, 3) brak przerwy między إذنْ a czasownikiem. Jeśli którykolwiek warunek niespełniony → مرفوع: إذنْ فأذهبُ (z فـ — przerywa →مرفوع). W praktyce prawie wyłącznie Koranowa/literacka."
+      },
+      {
+        "id": "pa_subj13",
+        "question": "Masdar مؤوَّل (interpretowany) z أنْ + فعل: أنْ تدرسَ =",
+        "translation": "(ما المصدر المؤوَّل من أنْ تدرسَ؟)",
+        "options": [
+          "= الدراسة (nauka) — funkcjonuje jak masdar",
+          "Nie ma odpowiednika",
+          "= student",
+          "= szkoła"
+        ],
+        "correct": "= الدراسة (nauka) — funkcjonuje jak masdar",
+        "explanation": "WAŻNA koncepcja: أنْ + فعل = مصدر مؤوَّل (masdar interpretowany) — cała konstrukcja funkcjonuje jak RZECZOWNIK. يجبُ أنْ تدرسَ = يجبُ الدراسةُ (nauka jest obowiązkowa). أنْ تدرسَ = الدراسة (nauka). Masdar مؤوَّل może być podmiotem, dopełnieniem, w إضافة — jak każdy rzeczownik. To KLUCZ do zrozumienia, dlaczego arabski nie potrzebuje bezokolicznika!"
+      },
+      {
+        "id": "pa_subj14",
+        "question": "Które zdanie zawiera منصوب z fathą?",
+        "translation": "(أي جملة فيها فعل منصوب بالفتحة؟)",
+        "options": [
+          "لن أذهبَ (Nie pójdę)",
+          "لم أذهبْ (Nie poszedłem)",
+          "أذهبُ (Idę)",
+          "اِذهبْ (Idź!)"
+        ],
+        "correct": "لن أذهبَ (Nie pójdę)",
+        "explanation": "Poprawnie: 'لن أذهبَ' — فتحة (fatha) na بـ = منصوب. Porównaj: أذهبُ (ḍamma = مرفوع), أذهبَ (fatha = منصوب — po لن/أن/كي), أذهبْ (sukun = مجزوم — po لم/لا الناهية), اِذهبْ (sukun = rozkaz — مبني). 4 formy tego samego rdzenia — każda z inną samogłoską końcową!"
+      },
+      {
+        "id": "pa_subj15",
+        "question": "Tryb łączący (منصوب) odpowiada w polskim:",
+        "translation": "(ما يقابل المنصوب في البولندية؟)",
+        "options": [
+          "Bezokolicznikowi i trybowi łączącemu: 'chcę PISAĆ', 'żeby PISAŁ'",
+          "Trybowi rozkazującemu",
+          "Czasowi przeszłemu",
+          "Nie ma odpowiednika"
+        ],
+        "correct": "Bezokolicznikowi i trybowi łączącemu: 'chcę PISAĆ', 'żeby PISAŁ'",
+        "explanation": "Arabski منصوب odpowiada polskiemu: 1) BEZOKOLICZNIKOWI: أريدُ أنْ أكتبَ = chcę PISAĆ, 2) trybowi łączącemu z 'żeby': درستُ كي أنجحَ = uczyłem się, ŻEBY zdać. W polskim bezokolicznik nie odmienia się; w arabskim أنْ + teraźn. ODMIENIA się przez osobę: أنْ أكتبَ (ja), أنْ تكتبَ (ty), أنْ يكتبَ (on). To bardziej precyzyjny system niż polski bezokolicznik!"
+      }
+    ]
+  },
+  {
+    "key": "jussive_mood",
+    "name": "Tryb warunkowy (المجزوم)",
+    "description": "جزم الفعل المضارع في العربية",
+    "iconName": "scissors",
+    "color": "#4ade80",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pa_jus1",
+        "question": "لَمْ _____ (Nie napisałem) — po لَمْ",
+        "translation": "(Nie napisałem)",
+        "options": [
+          "أكتبْ",
+          "أكتبُ",
+          "أكتبَ",
+          "كتبتُ"
+        ],
+        "correct": "أكتبْ",
+        "explanation": "Poprawnie: 'لَمْ أكتبْ' (lam aktub) — po لَمْ (nie — negacja przeszłości) → مجزوم z SUKUNEM. لَمْ to najczęstsza partykuła جزم. WAŻNE: لَمْ neguje PRZESZŁOŚĆ mimo że używa czasu TERAŹNIEJSZEGO! لَمْ أكتبْ = nie napisałem (NIE: nie piszę). W polskim: 'nie napisałem' = czas przeszły. Arabski: لَمْ + czas teraźn. مجزوم = sens przeszły."
+      },
+      {
+        "id": "pa_jus2",
+        "question": "لَمَّا _____ (Jeszcze nie napisał) — po لَمَّا",
+        "translation": "(Jeszcze nie napisał)",
+        "options": [
+          "يكتبْ",
+          "يكتبُ",
+          "يكتبَ",
+          "كتبَ"
+        ],
+        "correct": "يكتبْ",
+        "explanation": "Poprawnie: 'لَمَّا يكتبْ' (lammā yaktub) = jeszcze nie napisał. لَمَّا = jeszcze nie (negacja przeszłości z implikacją, że MOŻE się jeszcze zdarzyć). Porównaj: لَمْ يكتبْ (nie napisał — fakt), لَمَّا يكتبْ (jeszcze nie napisał — ale może napisze). Subtelna różnica! لَمَّا implikuje oczekiwanie. W polskim: 'jeszcze nie' vs. 'nie' — ta sama niuans."
+      },
+      {
+        "id": "pa_jus3",
+        "question": "لا _____ هنا! (Nie siadaj tutaj!) — zakaz (النهي)",
+        "translation": "(Nie siadaj tutaj!)",
+        "options": [
+          "تجلسْ",
+          "تجلسُ",
+          "تجلسَ",
+          "اِجلسْ"
+        ],
+        "correct": "تجلسْ",
+        "explanation": "Poprawnie: 'لا تجلسْ!' (lā tajlis!) — لا الناهية (لا zakazowa) + مجزوم z sukunem. UWAGA: لا الناهية (zakaz) ≠ لا النافية (negacja): لا تجلسْ (NIE siadaj! — zakaz, مجزوم) vs. لا تجلسُ (nie siedzisz — negacja, مرفوع). Identyczne لا, ale INNY tryb czasownika! Sukun = zakaz, ḍamma = zwykła negacja. Kontekst i samogłoska rozstrzygają."
+      },
+      {
+        "id": "pa_jus4",
+        "question": "Jussive od أجوف 'قَالَ/يَقُولُ' po لَمْ:",
+        "translation": "(ما مجزوم يقول؟)",
+        "options": [
+          "لم يَقُلْ",
+          "لم يَقُولْ",
+          "لم يَقُولُ",
+          "لم قالَ"
+        ],
+        "correct": "لم يَقُلْ",
+        "explanation": "Poprawnie: 'لم يَقُلْ' (lam yaqul) — w أجوف (pustym), مجزوم = UTRATA długiej samogłoski: يَقُولُ → يَقُلْ (و odpada). Inne: يَنَامُ → لم يَنَمْ, يَسِيرُ → لم يَسِرْ, يَكُونُ → لم يَكُنْ. Reguła: مجزوم pustych = skrócenie (حذف حرف العلة). To jak 'ścięcie' środkowej samogłoski. Porównaj: منصوب zachowuje: لن يقولَ."
+      },
+      {
+        "id": "pa_jus5",
+        "question": "Jussive od ناقص 'مَشَى/يَمْشِي' po لَمْ:",
+        "translation": "(ما مجزوم يمشي؟)",
+        "options": [
+          "لم يَمْشِ",
+          "لم يَمْشِي",
+          "لم يَمْشَى",
+          "لم مَشَى"
+        ],
+        "correct": "لم يَمْشِ",
+        "explanation": "Poprawnie: 'لم يَمْشِ' (lam yamshi) — w ناقص (ułomnym), مجزوم = UTRATA ostatniego ي/و: يَمْشِي → يَمْشِ, يَدْعُو → يَدْعُ. Reguła: مجزوم ناقص = حذف حرف العلة (usunięcie litery słabej). Porównaj 3 tryby: يَمْشِي (مرفوع — z ي), يَمْشِيَ (منصوب — z ي + fathą), يَمْشِ (مجزوم — BEZ ي)."
+      },
+      {
+        "id": "pa_jus6",
+        "question": "Jussive od مضعّف 'يَمُرُّ' po لَمْ:",
+        "translation": "(ما مجزوم يَمُرُّ؟)",
+        "options": [
+          "لم يَمُرَّ",
+          "لم يَمُرْ",
+          "لم يَمُرُّ",
+          "لم مَرَّ"
+        ],
+        "correct": "لم يَمُرَّ",
+        "explanation": "Poprawnie: 'لم يَمُرَّ' (lam yamurra) — w مضعّف (podwojonym): na szaddzie NIE MOŻNA postawić sukunu → fatha zastępcza: يَمُرُّ → يَمُرَّ (ḍamma → fatha). Porównaj normalne: لم يكتبْ (sukun na końcu). Podwojone: لم يمرَّ (fatha na szaddzie). To JEDYNY typ, gdzie مجزوم ma fathę zamiast sukunu — łatwo pomylić z منصوب!"
+      },
+      {
+        "id": "pa_jus7",
+        "question": "إنْ تدرسْ _____ (Jeśli się uczysz, zdajesz) — warunek + odpowiedź w مجزوم",
+        "translation": "(Jeśli się uczysz, zdajesz)",
+        "options": [
+          "تنجحْ",
+          "تنجحُ",
+          "تنجحَ",
+          "نجحتَ"
+        ],
+        "correct": "تنجحْ",
+        "explanation": "Poprawnie: 'إنْ تدرسْ تنجحْ' — po إنْ (jeśli) OBA w مجزوم. إنْ to أداة شرط جازمة — wymaga مجزوم w WARUNKU (فعل الشرط: تدرسْ) I w NASTĘPSTWIE (جواب الشرط: تنجحْ). To JEDYNA sytuacja, gdzie مجزوم pojawia się w DWÓCH czasownikach naraz. Z لَمْ/لا الناهية = jeden czasownik. Z إنْ = dwa!"
+      },
+      {
+        "id": "pa_jus8",
+        "question": "مَنْ يجتهدْ _____ (Kto jest pilny, odniesie sukces)",
+        "translation": "(Kto jest pilny, odniesie sukces)",
+        "options": [
+          "يَنْجَحْ",
+          "يَنْجَحُ",
+          "يَنْجَحَ",
+          "نَجَحَ"
+        ],
+        "correct": "يَنْجَحْ",
+        "explanation": "Poprawnie: 'مَنْ يجتهدْ ينجحْ' — مَنْ warunkowe (kto = jeśli ktoś) + مجزوم w obu. Zaimki warunkowe جازمة: مَنْ (kto), ما (co), أيّ (który), متى (kiedy), أينما (gdziekolwiek), مهما (cokolwiek), كيفما (jakkolwiek), حيثما (gdziekolwiek), أيّانَ (kiedykolwiek). WSZYSTKIE wymagają مجزوم w warunku i następstwie."
+      },
+      {
+        "id": "pa_jus9",
+        "question": "لِيَكْتُبْ = 'Niech pisze'. Jakim jest trybem?",
+        "translation": "(ما إعراب لِيَكْتُبْ؟)",
+        "options": [
+          "مجزوم — لام الأمر + مجزوم",
+          "منصوب",
+          "مرفوع",
+          "مبني"
+        ],
+        "correct": "مجزوم — لام الأمر + مجزوم",
+        "explanation": "Poprawnie: لِيَكْتُبْ = مجزوم po لام الأمر (lām rozkazu). لام الأمر jest partykułą جزم: لِيَكْتُبْ (niech pisze), لِنَذْهَبْ (chodźmy!), لِتَأْكُلْ (niech je — ona). Porównaj: لِـ rozkazu (+ مجزوم: لِيَكْتُبْ) vs. لِـ cel (+ منصوب: لِيَكْتُبَ — z ukrytym أنْ). JEDYNA różnica: sukun (جزم) vs. fatha (نصب)!"
+      },
+      {
+        "id": "pa_jus10",
+        "question": "W 'pięciu czasownikach' مجزوم widać przez:",
+        "translation": "(علامة الجزم في الأفعال الخمسة)",
+        "options": [
+          "Odpadnięcie نون: لم يكتبوا (nie *يكتبونَ)",
+          "Sukun",
+          "Fathę",
+          "Kasrę"
+        ],
+        "correct": "Odpadnięcie نون: لم يكتبوا (nie *يكتبونَ)",
+        "explanation": "W الأفعال الخمسة: مجزوم = حذف النون (odpadnięcie نون). يكتبونَ → لم يكتبوا. IDENTYCZNE z منصوب: لن يكتبوا = لم يكتبوا (ta sama forma!). Skąd rozróżnić? Z partykuły: لن = منصوب (przyszłość), لم = مجزوم (przeszłość). Kontekst jest JEDYNYM wyznacznikiem. To najtrudniejszy punkt arabskiej gramatyki dla uczniów."
+      },
+      {
+        "id": "pa_jus11",
+        "question": "Trzy partykuły جزم (أدوات الجزم) to:",
+        "translation": "(ما أدوات الجزم؟)",
+        "options": [
+          "لَمْ, لَمَّا, لام الأمر, لا الناهية + partykuły warunkowe",
+          "Tylko لَمْ",
+          "أنْ, لنْ, كي",
+          "في, من, إلى"
+        ],
+        "correct": "لَمْ, لَمَّا, لام الأمر, لا الناهية + partykuły warunkowe",
+        "explanation": "Partykuły جزم dzielą się na: A) Jednoargumentowe (جازم فعلاً واحداً): لَمْ (nie — przeszłość), لَمَّا (jeszcze nie), لام الأمر (niech), لا الناهية (nie rób!). B) Dwuargumentowe (جازم فعلين — warunek+odpowiedź): إنْ, مَنْ, ما, متى, أينما, مهما, أيّ, كيفما, حيثما, أيّان. Ogółem: ~14 partykuł/zaimków warunkowych. System bogaty, ale regularny."
+      },
+      {
+        "id": "pa_jus12",
+        "question": "لَمْ يَكُنْ _____ (Nie był studentem) — po لَمْ يَكُنْ",
+        "translation": "(Nie był studentem)",
+        "options": [
+          "طالباً",
+          "طالبٌ",
+          "طالبٍ",
+          "الطالبُ"
+        ],
+        "correct": "طالباً",
+        "explanation": "Poprawnie: 'لَمْ يَكُنْ طالباً' = nie był studentem. يَكُنْ = مجزوم od يَكُونُ (jest — أجوف: و odpada → يَكُنْ). Po يَكُنْ (= كَانَ w negacji): podmiot (ukryty هو) w mianowniku, orzecznik (خبر) w BIERNIKU: طالباً. Reguła كان: zawsze خبر w bierniku — nawet po لَمْ! لَمْ يكنْ = negacja كان: 'nie był'."
+      },
+      {
+        "id": "pa_jus13",
+        "question": "Porównaj tryby: يَكْتُبُ / يَكْتُبَ / يَكْتُبْ:",
+        "translation": "(قارن المرفوع والمنصوب والمجزوم)",
+        "options": [
+          "ḍamma=wskaźnikowy, fatha=łączący, sukun=warunkowy",
+          "Wszystkie identyczne",
+          "Różne korzenie",
+          "Różne znaczenia czasownika"
+        ],
+        "correct": "ḍamma=wskaźnikowy, fatha=łączący, sukun=warunkowy",
+        "explanation": "3 tryby czasu teraźniejszego: 1) يَكْتُبُ (ḍamma) = مرفوع (wskaźnikowy) — domyślny: 'pisze', 2) يَكْتُبَ (fatha) = منصوب (łączący) — po أن/لن/كي: 'żeby pisał/nie napisze', 3) يَكْتُبْ (sukun) = مجزوم (warunkowy) — po لم/إن/لا: 'nie pisał/jeśli pisze'. JEDNA samogłoska na końcu zmienia sens, czas i modalność. To kwintesencja arabskiego إعراب!"
+      },
+      {
+        "id": "pa_jus14",
+        "question": "Czy czas przeszły (الماضي) ma مجزوم?",
+        "translation": "(هل يُجزم الفعل الماضي؟)",
+        "options": [
+          "NIE — przeszły jest مبني (niezmienny), nie ma إعراب",
+          "TAK — z لَمْ",
+          "TAK — zawsze",
+          "Tylko w warunkach"
+        ],
+        "correct": "NIE — przeszły jest مبني (niezmienny), nie ma إعراب",
+        "explanation": "Czas przeszły (الماضي) jest مبني على الفتح (nieodmiennie na fathie) — NIGDY nie ma مرفوع/منصوب/مجزوم. Fatha w كَتَبَ to STAŁA samogłoska, nie znak إعراب. Tylko czas TERAŹNIEJSZY (المضارع) podlega إعراب: مرفوع/منصوب/مجزوم. Rozkaz (الأمر) też jest مبني (na sukunie). Mnemotechnika: إعراب = TYLKO teraźniejszy!"
+      },
+      {
+        "id": "pa_jus15",
+        "question": "Które błędne zdanie narusza reguły جزم?",
+        "translation": "(أي جملة خاطئة في الجزم؟)",
+        "options": [
+          "لَمْ يذهبُ (ḍamma po لَمْ — powinno być يذهبْ)",
+          "لَمْ يذهبْ",
+          "إنْ تدرسْ تنجحْ",
+          "لا تذهبْ"
+        ],
+        "correct": "لَمْ يذهبُ (ḍamma po لَمْ — powinno być يذهبْ)",
+        "explanation": "BŁĄD: 'لَمْ يذهبُ' — ḍamma (مرفوع) po لَمْ to BŁĄD. Po لَمْ MUSI być مجزوم: لَمْ يذهبْ (sukun). To najczęstszy błąd uczniów — zapominają zmienić samogłoskę końcową po partykule جزم. Inne błędy: *إنْ تدرسُ (powinno: تدرسْ), *لا تذهبُ (jako zakaz — powinno: تذهبْ). Zawsze sprawdzaj samogłoskę po partykule!"
+      }
+    ]
+  },
+  {
+    "key": "numbers_11_100",
+    "name": "Liczebniki 11-100 (الأعداد ١١-١٠٠)",
+    "description": "قواعد الأعداد من ١١ إلى ١٠٠",
+    "iconName": "number",
+    "color": "#c084fc",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pa_n100_1",
+        "question": "جاءَ _____ طالباً (Przyszło 15 studentów) — poprawna liczba:",
+        "translation": "(Przyszło 15 studentów)",
+        "options": [
+          "خمسةَ عشرَ",
+          "خمسَ عشرةَ",
+          "خمسةً وعشرةً",
+          "خمسةَ عشرٍ"
+        ],
+        "correct": "خمسةَ عشرَ",
+        "explanation": "Poprawnie: 'خمسةَ عشرَ طالباً'. Liczebniki 11-19: OBA człony nieodmienne (مبني على الفتح). Reguła ODWROTNOŚCI płci: طالب (m.) → خمسةَ عشرَ (z ة — odwrotność!). Gdyby طالبة (ż.): خمسَ عشرةَ (BEZ ة — odwrotność!). Po 11-99: rzeczownik w BIERNIKU l. POJEDYNCZEJ: طالباً (nie طلابٍ!). To najtrudniejsza reguła liczebników arabskich."
+      },
+      {
+        "id": "pa_n100_2",
+        "question": "Liczebnik 11 (أحدَ عشرَ) jest wyjątkowy, bo:",
+        "translation": "(ما الخاص في أحد عشر؟)",
+        "options": [
+          "OBA człony zgadzają się w płci z rzeczownikiem (nie odwrotność)",
+          "Nie odmienia się",
+          "Ma tanwin",
+          "Jest regularny"
+        ],
+        "correct": "OBA człony zgadzają się w płci z rzeczownikiem (nie odwrotność)",
+        "explanation": "WYJĄTEK: 11 i 12 — oba człony zgadzają się w płci z rzeczownikiem: أحدَ عشرَ طالباً (m.+m. = studentów), إحدى عشرةَ طالبةً (ż.+ż. = studentek). Porównaj 13-19: ثلاثةَ عشرَ طالباً (ODWROTNOŚĆ: ة z m. rzeczownikiem). 11-12 = ZGODA, 13-19 = ODWROTNOŚĆ. 12 ma dodatkową cechę: اثنا عشرَ (mianownik) vs. اثني عشرَ (biernik/dopełniacz) — odmienia się!"
+      },
+      {
+        "id": "pa_n100_3",
+        "question": "عشرونَ طالباً — 'عشرون' jest w mianowniku. W bierniku/dopełniaczu:",
+        "translation": "(ما نصب/جر عشرون؟)",
+        "options": [
+          "عشرينَ",
+          "عشرونَ",
+          "عشرةً",
+          "عِشْرِ"
+        ],
+        "correct": "عشرينَ",
+        "explanation": "Poprawnie: 'عشرينَ' (ʿishrīna) w bierniku/dopełniaczu. Dziesiątki (20, 30... 90) odmieniają się jak l. mn. męska zdrowa: -ونَ (mianownik), -ينَ (biernik/dopełniacz). عشرونَ/عشرينَ, ثلاثونَ/ثلاثينَ, أربعونَ/أربعينَ... تسعونَ/تسعينَ. NIE mają odwrotności płci — jedna forma dla m. i ż. Po nich: biernik l. poj. (تمييز)."
+      },
+      {
+        "id": "pa_n100_4",
+        "question": "واحد وعشرون طالباً — szyk 21-99 to:",
+        "translation": "(ما ترتيب الأعداد ٢١-٩٩؟)",
+        "options": [
+          "Jedności + و + dziesiątki: واحدٌ وعشرونَ (nie *عشرون وواحد)",
+          "Dziesiątki + jedności",
+          "Dowolny",
+          "Tylko dziesiątki"
+        ],
+        "correct": "Jedności + و + dziesiątki: واحدٌ وعشرونَ (nie *عشرون وواحد)",
+        "explanation": "Szyk 21-99: JEDNOŚCI PIERWSZE + و + dziesiątki. واحدٌ وعشرونَ = dwadzieścia jeden (dosł. 'jeden i dwadzieścia'). Jak w niemieckim: einundzwanzig! Polskie: 'dwadzieścia jeden' (dziesiątki pierwsze) — ODWROTNY szyk. Jedności 1-2: zgoda płci (واحدٌ m. / واحدةٌ ż.), jedności 3-9: ODWROTNOŚĆ. ثلاثةٌ وعشرونَ طالباً (23 studentów — ة z m.)."
+      },
+      {
+        "id": "pa_n100_5",
+        "question": "Rzeczownik po liczebnikach 11-99 jest w:",
+        "translation": "(ما إعراب التمييز بعد ١١-٩٩؟)",
+        "options": [
+          "Bierniku l. pojedynczej (تمييز منصوب مفرد)",
+          "Dopełniaczu l. mn.",
+          "Mianowniku l. poj.",
+          "Bierniku l. mn."
+        ],
+        "correct": "Bierniku l. pojedynczej (تمييز منصوب مفرد)",
+        "explanation": "Po 11-99: تمييز (specyfikacja) w BIERNIKU l. POJEDYNCZEJ: خمسةَ عشرَ كتاباً (15 książek — dosł. 'książką'), عشرونَ طالباً (20 studentów). Porównaj: po 3-10 → DOPEŁNIACZ l. MNOGIEJ: خمسةُ كُتُبٍ (5 książek). Po 100, 1000 → DOPEŁNIACZ l. POJEDYNCZEJ: مائةُ كتابٍ (100 książek). 3 różne reguły! Podsumowanie: 3-10=dopeł. mn., 11-99=biern. poj., 100+=dopeł. poj."
+      },
+      {
+        "id": "pa_n100_6",
+        "question": "Jak powiedzieć 'mam 50 lat'?",
+        "translation": "(كيف تقول: عمري ٥٠ سنة؟)",
+        "options": [
+          "عُمري خمسونَ سنةً",
+          "عُمري خمسينَ سنةً",
+          "عُمري خمسونَ سنوات",
+          "عندي خمسون سنين"
+        ],
+        "correct": "عُمري خمسونَ سنةً",
+        "explanation": "Poprawnie: 'عُمري خمسونَ سنةً'. عُمري (mój wiek) = مبتدأ. خمسونَ = خبر (مرفوع — mianownik z -ونَ). سنةً = تمييز (biern. l. poj.). Gdyby w zdaniu biernikowym: رأيتُ خمسينَ طالباً (widziałem 50 studentów — -ينَ bo biernik). Dziesiątki odmieniają się jak l. mn. مذكر سالم — jedyne liczebniki z pełną odmianą przypadkową."
+      },
+      {
+        "id": "pa_n100_7",
+        "question": "مائة (100) — rzeczownik po niej jest w:",
+        "translation": "(ما إعراب ما بعد مائة؟)",
+        "options": [
+          "Dopełniaczu l. pojedynczej: مائةُ كتابٍ",
+          "Bierniku l. poj.",
+          "Dopełniaczu l. mn.",
+          "Mianowniku"
+        ],
+        "correct": "Dopełniaczu l. pojedynczej: مائةُ كتابٍ",
+        "explanation": "Poprawnie: 'مائةُ كتابٍ' (miʾatu kitābin) = 100 książek. Po مائة (100) i أَلْف (1000): مضاف إليه (dopełniacz l. POJEDYNCZEJ). مائةُ طالبٍ (100 studentów), ألفُ كتابٍ (1000 książek). NIE l. mn.: *مائةُ طلابٍ (BŁĄD). Porównaj: 3-10 = dopełn. l. mn. (خمسةُ طلابٍ), 11-99 = biern. l. poj. (خمسونَ طالباً), 100+ = dopełn. l. poj. (مائةُ طالبٍ)."
+      },
+      {
+        "id": "pa_n100_8",
+        "question": "Reguła ODWROTNOŚCI płci dotyczy liczebników:",
+        "translation": "(أي الأعداد لها قاعدة المخالفة؟)",
+        "options": [
+          "3-9 (jedności) i 13-19 (w członie jedności)",
+          "1-100",
+          "Tylko 1-2",
+          "Tylko dziesiątek"
+        ],
+        "correct": "3-9 (jedności) i 13-19 (w członie jedności)",
+        "explanation": "Odwrotność płci: TYLKO jedności 3-9. W 13-19: człon jedności (3-9) ma odwrotność, ale عشر/عشرة zgadza się z rzeczownikiem. 1-2: zgoda (nie odwrotność). 10: zgoda gdy samodzielne (عشرُ طالباتٍ), odwrotność w złożeniu (عشرون — nie ma tu płci). Dziesiątki 20-90: BRAK odwrotności (jedna forma). مائة, ألف: BRAK odwrotności. Więc: odwrotność = 3-9 + ich złożenia."
+      },
+      {
+        "id": "pa_n100_9",
+        "question": "اثنا عشرَ vs. اثنَيْ عشرَ — różnica:",
+        "translation": "(الفرق بين اثنا عشر و اثني عشر)",
+        "options": [
+          "اثنا = mianownik, اثني = biernik/dopełniacz",
+          "Identyczne",
+          "اثنا = m., اثني = ż.",
+          "اثنا = formalne, اثني = potoczne"
+        ],
+        "correct": "اثنا = mianownik, اثني = biernik/dopełniacz",
+        "explanation": "Liczebnik 12 to JEDYNY z 11-19, który się ODMIENIA: اثنا عشرَ (mianownik), اثنَيْ عشرَ (biernik/dopełniacz). Bo اثنان/اثنين odmienia się jak l. podwójna: -انِ (mian.), -يْنِ (biern./dopeł.). Reszta 11-19 jest مبني على الفتح (niezmienna). Żeński: اثنتا عشرةَ (mian.), اثنتَيْ عشرةَ (biern./dopeł.). 12 to bezsprzecznie najtrudniejszy liczebnik arabski."
+      },
+      {
+        "id": "pa_n100_10",
+        "question": "Jak powiedzieć '99 balonów'?",
+        "translation": "(كيف نقول ٩٩ بالوناً؟)",
+        "options": [
+          "تسعةٌ وتسعونَ بالوناً",
+          "تسعٌ وتسعون بالوناً",
+          "تسعون وتسعة بالوناً",
+          "تسعة تسعون بالوناً"
+        ],
+        "correct": "تسعةٌ وتسعونَ بالوناً",
+        "explanation": "Poprawnie: 'تسعةٌ وتسعونَ بالوناً' = 99 balonów. تسعةٌ = jedności z ة (odwrotność — بالون jest m.); وتسعونَ = dziesiątki (mianownik); بالوناً = تمييز (biern. l. poj.). Gdyby بالونة (ż.): تسعٌ وتسعونَ بالونةً (BEZ ة w jedności). Szyk: jedności + و + dziesiątki + تمييز. To naprawdę złożony system!"
+      },
+      {
+        "id": "pa_n100_11",
+        "question": "Liczebnik porządkowy od 15 to:",
+        "translation": "(ما العدد الترتيبي لـ ١٥؟)",
+        "options": [
+          "الخامسَ عشرَ (m.) / الخامسةَ عشرةَ (ż.)",
+          "خمسةَ عشرَ",
+          "خامسَ عشرينَ",
+          "الخامِسون"
+        ],
+        "correct": "الخامسَ عشرَ (m.) / الخامسةَ عشرةَ (ż.)",
+        "explanation": "Porządkowe 11-19: pierwszy człon to porządkowy (الخامس), drugi to العاشر (dziewiąty). OBA nieodmienne (مبني على الفتح). Porządkowe zgadzają się w płci z rzeczownikiem: الطالبُ الخامسَ عشرَ (15. student — m.), الطالبةُ الخامسةَ عشرةَ (15. studentka — ż.). Od 20 wzwyż: porządkowe = główne: الطالبُ العشرونَ (20. student)."
+      },
+      {
+        "id": "pa_n100_12",
+        "question": "عندي _____ كتاباً (Mam 30 książek) — w zdaniu biernikowym:",
+        "translation": "(Mam 30 książek)",
+        "options": [
+          "ثلاثينَ",
+          "ثلاثونَ",
+          "ثلاثةً",
+          "ثلاثين"
+        ],
+        "correct": "ثلاثينَ",
+        "explanation": "Poprawnie: 'عندي ثلاثينَ كتاباً'. Dlaczego ثلاثينَ (nie ثلاثونَ)? عندي = przy mnie → ثلاثينَ jest خبر (orzecznik) w... hmm, właściwie عندي ثلاثونَ (mianownik jako مبتدأ مؤخر) byłoby też poprawne. Ale w kontekście biernikowym (np. اشتريتُ ثلاثينَ كتاباً) — ثلاثينَ bo dopełnienie w bierniku. Dziesiątki: -ونَ (mian.), -ينَ (biern./dopeł.)."
+      },
+      {
+        "id": "pa_n100_13",
+        "question": "Podsumowanie: jakie są 3 systemy po liczebnikach?",
+        "translation": "(ما الأنظمة الثلاثة بعد الأعداد؟)",
+        "options": [
+          "3-10: dopeł. mn., 11-99: biern. poj., 100+: dopeł. poj.",
+          "Wszędzie biernik",
+          "Wszędzie dopełniacz",
+          "Brak systemu"
+        ],
+        "correct": "3-10: dopeł. mn., 11-99: biern. poj., 100+: dopeł. poj.",
+        "explanation": "3 systemy: 1) Po 3-10: things in DOPEŁNIACZU l. MNOGIEJ — خمسةُ كتبٍ (5 książek). 2) Po 11-99: BIERNIK l. POJEDYNCZEJ (تمييز) — خمسةَ عشرَ كتاباً (15 książek). 3) Po 100, 1000: DOPEŁNIACZ l. POJEDYNCZEJ (إضافة) — مائةُ كتابٍ (100 książek), ألفُ كتابٍ (1000 książek). Plus: 1 i 2 = przymiotnik (zgoda): كتابٌ واحدٌ, كتابانِ اثنانِ."
+      },
+      {
+        "id": "pa_n100_14",
+        "question": "Jak powiedzieć 'rok 2024'?",
+        "translation": "(كيف نقول سنة ٢٠٢٤؟)",
+        "options": [
+          "سنةُ ألفينِ وأربعٍ وعشرينَ",
+          "سنة اثنين ألف وعشرين أربعة",
+          "سنة ألفان وأربعة وعشرونَ",
+          "عام ٢٠٢٤"
+        ],
+        "correct": "سنةُ ألفينِ وأربعٍ وعشرينَ",
+        "explanation": "Poprawnie: 'سنةُ ألفَيْنِ وأربعٍ وعشرينَ' = rok 2024. Rozbite: ألفَيْنِ (2000 — l. podw. أَلْف w dopełniaczu po سنة/إضافة) + و + أربعٍ (4 — ż. bez ة bo سنة jest ż. → ODWROTNOŚĆ) + و + عشرينَ (20 — dopełniacz). W praktyce w MSA coraz częściej podaje się cyfry: عامُ ٢٠٢٤. Arabski numeralny system jest tak złożony, że nawet native speakers unikają pełnej formy słownej!"
+      },
+      {
+        "id": "pa_n100_15",
+        "question": "Czy arabski system liczebników jest łatwiejszy od polskiego?",
+        "translation": "(هل نظام الأعداد العربي أسهل من البولندي؟)",
+        "options": [
+          "NIE — arabski jest ZNACZNIE trudniejszy (odwrotność, 3 systemy, odmiana)",
+          "TAK",
+          "Identyczne",
+          "Nie da się porównać"
+        ],
+        "correct": "NIE — arabski jest ZNACZNIE trudniejszy (odwrotność, 3 systemy, odmiana)",
+        "explanation": "Arabski system liczebników to najtrudniejszy komponent gramatyki. Porównaj: polski: 'pięciu studentów' (dopełniacz — i koniec!). Arabski: خمسةُ طلابٍ (ة — odwrotność + dopełn. mn.). 'Piętnastu studentów': خمسةَ عشرَ طالباً (nieodmienność + odwrotność w jedności + biern. l. poj.). Sam arabski żart: 'Nawet Arabowie nie znają dobrze reguł الأعداد!' — bo to JEDYNY temat, gdzie reguły mają tyle wyjątków."
+      }
+    ]
+  },
+  {
+    "key": "ordinal_numbers",
+    "name": "Liczebniki porządkowe (الأعداد الترتيبية)",
+    "description": "الأعداد الترتيبية في العربية",
+    "iconName": "list.number",
+    "color": "#22d3ee",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pa_ord1",
+        "question": "Pierwszy (m.) po arabsku to:",
+        "translation": "(ما 'الأول'؟)",
+        "options": [
+          "الأوَّلُ",
+          "الواحِدُ",
+          "الأوْلَى",
+          "أوَّلاً"
+        ],
+        "correct": "الأوَّلُ",
+        "explanation": "Poprawnie: 'الأوَّلُ' (al-awwalu) = pierwszy. UWAGA: الأوَّلُ NIE pochodzi od wzorca أَفْعَل (jak inne porządkowe) — jest NIEREGULARNY. Żeńska forma: الأُولَى (al-ūlā) = pierwsza (nie *الأوَّلة!). Jest to jedyny porządkowy z nieregularną formą żeńską. Porównaj regularny wzorzec: ثانٍ/ثانية, ثالث/ثالثة. 'أوَّلاً' = po pierwsze (przysłówek w bierniku)."
+      },
+      {
+        "id": "pa_ord2",
+        "question": "Wzorzec porządkowych 1-10 to:",
+        "translation": "(ما وزن الأعداد الترتيبية؟)",
+        "options": [
+          "فاعِل: ثانٍ, ثالث, رابع, خامس...",
+          "فَعِيل",
+          "أَفْعَل",
+          "مَفْعُول"
+        ],
+        "correct": "فاعِل: ثانٍ, ثالث, رابع, خامس...",
+        "explanation": "Wzorzec فاعِل (imiesłów czynny!): ثانٍ (2.), ثالِث (3.), رابِع (4.), خامِس (5.), سادِس (6.), سابِع (7.), ثامِن (8.), تاسِع (9.), عاشِر (10.). Żeńskie: + ة: ثانية, ثالثة, رابعة... WYJĄTKI: أوَّل/أُولَى (1.) — nieregularny. ثانٍ z tanwinem (bo ناقص: ي znika w nieokreślonym) — الثاني (z الـ: ي wraca)."
+      },
+      {
+        "id": "pa_ord3",
+        "question": "الطالبُ _____ (Drugi student) — porządkowy jako przydawka:",
+        "translation": "(Drugi student)",
+        "options": [
+          "الثاني",
+          "ثانياً",
+          "ثانٍ",
+          "الاثنان"
+        ],
+        "correct": "الثاني",
+        "explanation": "Poprawnie: 'الطالبُ الثاني' = drugi student. Porządkowy jako przydawka (صفة) zgadza się z rzeczownikiem w: 1) OKREŚLONOŚCI (الطالب → الثاني, oba z الـ), 2) RODZAJU (m.→m.: الثاني, ż.→ż.: الثانية), 3) PRZYPADKU (mianownik → mianownik). To jak polski: 'drugi student' — 'drugi' zgadza się z 'student' w rodzaju, liczbie, przypadku."
+      },
+      {
+        "id": "pa_ord4",
+        "question": "Studentka trzecia: الطالبةُ _____",
+        "translation": "(الطالبة الثالثة)",
+        "options": [
+          "الثالثةُ",
+          "الثالثُ",
+          "ثالثةً",
+          "الثلاثةُ"
+        ],
+        "correct": "الثالثةُ",
+        "explanation": "Poprawnie: 'الطالبةُ الثالثةُ' = trzecia studentka. Żeńska forma: ثالِث → ثالِثة (+ ة). Oba z rodzajnikiem الـ (bo الطالبة jest określona). Oba w mianowniku (ḍamma). Powtórzenie: porządkowy jako przydawka = pełna zgoda. 'Zobaczyłem trzecią studentkę': رأيتُ الطالبةَ الثالثةَ (fatha na obu — biernik)."
+      },
+      {
+        "id": "pa_ord5",
+        "question": "Po 10. nie ma porządkowych — zamiast nich:",
+        "translation": "(ماذا نستخدم بعد العاشر؟)",
+        "options": [
+          "Liczebniki główne: الطالبُ الحاديَ عشرَ (11. student)",
+          "Dalsze فاعِل: حادي عشر, ثاني عشر...",
+          "Nie ma porządkowych po 10",
+          "Formy opisowe"
+        ],
+        "correct": "Liczebniki główne: الطالبُ الحاديَ عشرَ (11. student)",
+        "explanation": "Po 10: porządkowe 11-19 istnieją, ale pierwszy człon to porządkowy, drugi to عاشر: الحاديَ عشرَ (11.), الثانيَ عشرَ (12.)... التاسعَ عشرَ (19.). OBA مبني على الفتح (nieodmienne). Od 20: używa się liczebników GŁÓWNYCH jako porządkowych: الطالبُ العشرونَ (20. student), الصفحةُ الخامسةُ والعشرونَ (25. strona). Proste — bo nie ma osobnych form."
+      },
+      {
+        "id": "pa_ord6",
+        "question": "Piąte piętro: الطابقُ _____",
+        "translation": "(الطابق الخامس)",
+        "options": [
+          "الخامسُ",
+          "خامساً",
+          "الخمسةُ",
+          "خمسةُ"
+        ],
+        "correct": "الخامسُ",
+        "explanation": "Poprawnie: 'الطابقُ الخامسُ' = piąte piętro. الطابق (m.) → الخامِس (m., z الـ, mianownik). Porządkowe używane w codziennych kontekstach: الطابقُ الثالثُ (3. piętro), الشارعُ الرابعُ (4. ulica), البابُ السادسُ (6. drzwi). W adresach i lokalizacjach — kluczowe słownictwo!"
+      },
+      {
+        "id": "pa_ord7",
+        "question": "أوَّلاً, ثانياً, ثالثاً... — te formy to:",
+        "translation": "(ما نوع أوّلاً، ثانياً؟)",
+        "options": [
+          "Przysłówki porządkowe w bierniku: po pierwsze, po drugie...",
+          "Przymiotniki",
+          "Rzeczowniki",
+          "Czasowniki"
+        ],
+        "correct": "Przysłówki porządkowe w bierniku: po pierwsze, po drugie...",
+        "explanation": "Poprawnie: أوَّلاً (po pierwsze), ثانياً (po drugie), ثالثاً (po trzecie)... عاشراً (po dziesiąte). To porządkowe w BIERNIKU jako حال lub ظرف — funkcja przysłówkowa. Bardzo częste w tekstach akademickich, prezentacjach, listach. W polskim: 'po pierwsze, po drugie' — forma przysłówkowa. Identyczna funkcja w obu językach."
+      },
+      {
+        "id": "pa_ord8",
+        "question": "Forma żeńska 'السادس' (szósty) to:",
+        "translation": "(ما مؤنث السادس؟)",
+        "options": [
+          "السادسة",
+          "الساتة",
+          "السدسة",
+          "السادسى"
+        ],
+        "correct": "السادسة",
+        "explanation": "Poprawnie: 'السادسة' (as-sādisa) = szósta. Regularne tworzenie żeńskiej: + ة. Wszystkie porządkowe 2-10 tworzą żeński regularnie: ثانية, ثالثة, رابعة, خامسة, سادسة, سابعة, ثامنة, تاسعة, عاشرة. WYJĄTEK: أوّل → أُولَى (nie *أوّلة). Porządkowe to przymiotniki — odmieniają się w pełni jak przymiotniki (rodzaj, liczba, przypadek, określoność)."
+      },
+      {
+        "id": "pa_ord9",
+        "question": "اليومُ _____ من رمضان (15. dzień Ramadanu)",
+        "translation": "(اليوم الخامس عشر من رمضان)",
+        "options": [
+          "الخامسَ عشرَ",
+          "خمسةَ عشرَ",
+          "الخامسُ عشرُ",
+          "خامسَ عشرونَ"
+        ],
+        "correct": "الخامسَ عشرَ",
+        "explanation": "Poprawnie: 'اليومُ الخامسَ عشرَ' = 15. dzień. Porządkowe 11-19: مبني على الفتح (nieodmienne — OBA człony z fathą). Pierwszy człon porządkowy (الخامس), drugi عاشر (dziesiąty). Zgoda w płci: اليوم (m.) → الخامسَ عشرَ (m.+m.), الليلة (noc, ż.) → الخامسةَ عشرةَ (ż.+ż.). To jak polski: '15. dzień' — porządkowy zgadza się z rzeczownikiem."
+      },
+      {
+        "id": "pa_ord10",
+        "question": "Porządkowy od 'واحد' (jeden) to:",
+        "translation": "(ما الترتيبي من واحد؟)",
+        "options": [
+          "أوَّل (nie *واحِد)",
+          "واحِد",
+          "أحَد",
+          "وَحيد"
+        ],
+        "correct": "أوَّل (nie *واحِد)",
+        "explanation": "WAŻNE: واحِد = liczebnik GŁÓWNY (jeden), أوَّل = porządkowy (pierwszy). To RÓŻNE wyrazy — nie od tego samego rdzenia! واحد od و-ح-د, أوّل od أ-و-ل. Porównaj: 'one' vs. 'first' w angielskim (też inne rdzenie). Inne pary: اثنان/ثانٍ (dwa/drugi — inne rdzenie!), ثلاثة/ثالث (trzy/trzeci — ten sam rdzeń ث-ل-ث). Od 3 wzwyż: rdzeń wspólny."
+      },
+      {
+        "id": "pa_ord11",
+        "question": "Jak powiedzieć 'po raz pierwszy'?",
+        "translation": "(كيف تقول 'لأول مرة'؟)",
+        "options": [
+          "لأوَّلِ مرَّةٍ",
+          "أوَّلَ مرَّةً",
+          "في الأوَّلِ",
+          "مرَّةً أولى"
+        ],
+        "correct": "لأوَّلِ مرَّةٍ",
+        "explanation": "Poprawnie: 'لأوَّلِ مرَّةٍ' (liʾawwali marratin) = po raz pierwszy (dosł. 'dla pierwszego razu'). لـ (przyimek: dla) + أوَّلِ (dopełniacz) + مرَّةٍ (dopełniacz — إضافة). Alternatywa: لِلمرَّةِ الأُولَى (dla pierwszego razu — z الـ). Inne wyrażenia: آخِرَ مرَّةٍ (ostatni raz), كلَّ مرَّةٍ (za każdym razem), هذه المرَّةَ (tym razem)."
+      },
+      {
+        "id": "pa_ord12",
+        "question": "Który porządkowy ma nieregularną formę żeńską?",
+        "translation": "(أي ترتيبي مؤنثه شاذ؟)",
+        "options": [
+          "أوَّل → أُولَى (nie *أوَّلة)",
+          "ثانٍ → ثانية",
+          "ثالث → ثالثة",
+          "عاشر → عاشرة"
+        ],
+        "correct": "أوَّل → أُولَى (nie *أوَّلة)",
+        "explanation": "أوَّل → أُولَى to JEDYNY nieregularny porządkowy. Forma żeńska na ـى (alif maqṣūra) zamiast ـة (tā' marbūṭa). Jest to wzorzec فُعْلَى (superlativus ż.): أوَّل = أَفْعَل (m.), أُولَى = فُعْلَى (ż.). Inne أَفْعَل/فُعْلَى: أَكْبَر/كُبْرَى (większy/większa), أَصْغَر/صُغْرَى (mniejszy/mniejsza). To wzorzec stopnia najwyższego, nie porządkowy!"
+      },
+      {
+        "id": "pa_ord13",
+        "question": "الجزءُ _____ (Trzeci tom/część)",
+        "translation": "(الجزء الثالث)",
+        "options": [
+          "الثالثُ",
+          "ثالثاً",
+          "الثلاثةُ",
+          "ثلاثةً"
+        ],
+        "correct": "الثالثُ",
+        "explanation": "Poprawnie: 'الجزءُ الثالثُ' = trzeci tom. Użycie w realiach: الجزء الأوّل (tom 1.), الحلقة الخامسة (odcinek 5.), الفصل السابع (rozdział 7.), الصفحة العاشرة (strona 10.). To podstawowe porządkowe w kontekstach akademickich, medialnych i religijnych (Koran: الجزء الثلاثون = 30. część)."
+      },
+      {
+        "id": "pa_ord14",
+        "question": "ثانٍ (drugi — nieokreślony) — dlaczego tanwin (ـٍ)?",
+        "translation": "(لماذا ثانٍ بالتنوين؟)",
+        "options": [
+          "Bo to ناقص — ي odpada w nieokreślonym mianow./dopełn.",
+          "Bo jest w dopełniaczu",
+          "Przypadkowy tanwin",
+          "Błąd"
+        ],
+        "correct": "Bo to ناقص — ي odpada w nieokreślonym mianow./dopełn.",
+        "explanation": "ثانٍ ma rdzeń ث-ن-ي (ناقص — ي na końcu). W formie nieokreślonej mianownik/dopełniacz: ي ODPADA + tanwin: ثانٍ (mian./dopeł.). Z الـ: الثاني (ي wraca). W bierniku: ثانياً (ي zachowana). To ta sama reguła co: قاضٍ (sędzia) / القاضي, ماشٍ (idący) / الماشي. Porządkowe na فاعِل od rdzeni ناقص: ثانٍ = jedyny taki porządkowy (bo 2 = ث-ن-ي)."
+      },
+      {
+        "id": "pa_ord15",
+        "question": "Podsumowanie: porządkowe 1-10 vs. 11+:",
+        "translation": "(ملخص الترتيبيات)",
+        "options": [
+          "1-10: فاعِل (oddzielne formy); 11-19: złożone nieodmienne; 20+: = główne",
+          "Wszędzie takie same",
+          "Nie ma porządkowych po 10",
+          "1-100: wszystkie فاعِل"
+        ],
+        "correct": "1-10: فاعِل (oddzielne formy); 11-19: złożone nieodmienne; 20+: = główne",
+        "explanation": "System: 1) Porządkowe 1-10: oddzielne formy na فاعِل (أوَّل, ثانٍ, ثالث...عاشر) + formy żeńskie (أولى, ثانية, ثالثة...). 2) Porządkowe 11-19: złożone + nieodmienne (الحاديَ عشرَ, الثانيَ عشرَ... التاسعَ عشرَ). 3) Od 20: BRAK odrębnych form — używamy liczebników GŁÓWNYCH jako porządkowych: الصفحةُ العشرونَ (str. 20.). Prostota rośnie z wielkością liczby!"
+      }
+    ]
   }
 ]

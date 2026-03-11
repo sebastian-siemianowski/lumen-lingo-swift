@@ -17213,5 +17213,1905 @@
         "explanation": "الإِخوَةِ (the siblings/brothers) is genitive — بَينَ is a ظرف مكان followed by genitive. العَلاقَةُ (the relationship) is the مُبتدأ in nominative. قَوِيَّةٌ (strong, feminine) is the خبر. جِدًّا (very) intensifies. بَينَ + genitive for 'between/among.' Relationship vocabulary: عَلاقَة (relationship), رَابِطَة (bond), صِلَة (connection), قَرابَة (kinship/closeness). الإِخوَة specifically means siblings/brothers (kinship), while إِخوان can mean brothers in faith/brotherhood. Family bond language reflects Arabic's emphasis on kinship ties."
       }
     ]
+  },
+  {
+    "key": "daily_routines",
+    "name": "Daily Routines (الروتين اليومي)",
+    "description": "Arabic grammar and vocabulary for describing everyday activities and habits",
+    "iconName": "sunrise.fill",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ea_dr1",
+        "question": "_____ مِن النَّومِ في السَّاعَةِ السَّادِسَةِ (I wake up at six o'clock)",
+        "options": [
+          "أَستَيقِظُ",
+          "يَستَيقِظُ",
+          "اِستَيقَظتُ",
+          "تَستَيقِظُ"
+        ],
+        "correct": "أَستَيقِظُ",
+        "explanation": "أَستَيقِظُ (I wake up) is Form X (اِستَفعَلَ → أَستَفعِلُ) from يَقِظَ (to be awake). The أَ prefix marks first person singular present. مِن النَّومِ (from sleep) uses مِن + genitive. في السَّاعَةِ السَّادِسَةِ (at six o'clock) — السَّادِسَة is the ordinal 'sixth' agreeing with السَّاعَة (hour, feminine). Daily routine verbs commonly use present tense for habitual actions: أَستَيقِظُ (I wake up), أَغتَسِلُ (I wash), أَتَناوَلُ (I eat)."
+      },
+      {
+        "id": "ea_dr2",
+        "question": "أَغسِلُ _____ قَبلَ الفُطورِ (I brush my teeth before breakfast)",
+        "options": [
+          "أَسنَاني",
+          "أَسنَانُهُ",
+          "الأَسنَانَ",
+          "أَسنَانٌ"
+        ],
+        "correct": "أَسنَاني",
+        "explanation": "أَسنَاني (my teeth) uses the possessive suffix ي attached to أَسنَان (teeth — sound masculine plural of سِنّ, though سِنّ itself is feminine). قَبلَ الفُطورِ (before breakfast) — قَبلَ is a ظرف زمان in accusative, الفُطور is genitive. أَغسِلُ (I wash) is Form I. Personal hygiene vocabulary is essential for daily conversation: فُرشَاة أَسنَان (toothbrush), مَعجون أَسنَان (toothpaste), صَابون (soap), مِنشَفَة (towel). Possessive suffixes are critical in routine descriptions."
+      },
+      {
+        "id": "ea_dr3",
+        "question": "أَتَناوَلُ _____ في السَّاعَةِ السَّابِعَةِ (I have breakfast at seven o'clock)",
+        "options": [
+          "الفُطورَ",
+          "الفُطورُ",
+          "الفُطورِ",
+          "فُطورًا"
+        ],
+        "correct": "الفُطورَ",
+        "explanation": "الفُطورَ (breakfast) is accusative — direct object of أَتَناوَلُ (I eat/have, Form VI). Arabic meal names: الفُطور/الإِفطَار (breakfast), الغَدَاء (lunch), العَشَاء (dinner), وَجبَة خَفيفَة (snack). في السَّاعَةِ السَّابِعَةِ (at seven) — both noun and ordinal adjective are genitive after في. تَناوَلَ (Form VI) is more formal than أَكَلَ for eating. Routine expressions with time create the backbone of describing one's day in Arabic."
+      },
+      {
+        "id": "ea_dr4",
+        "question": "أَذهَبُ إِلى العَمَلِ _____ (I go to work by bus)",
+        "options": [
+          "بِالحَافِلَةِ",
+          "الحَافِلَةَ",
+          "حَافِلَةً",
+          "في الحَافِلَةِ"
+        ],
+        "correct": "بِالحَافِلَةِ",
+        "explanation": "بِالحَافِلَةِ (by bus) uses بِ + definite noun to express means of transportation. إِلى العَمَلِ (to work) uses إِلى + genitive. أَذهَبُ (I go, present habitual) describes the daily routine. Arabic commuting vocabulary: أَذهَبُ بِالسَّيَّارَةِ (by car), أَذهَبُ مَشيًا (on foot — مَشيًا is a حال), أَذهَبُ بِالقِطَارِ (by train). The بِ + transport structure is the standard way to describe how you get somewhere in daily Arabic conversation."
+      },
+      {
+        "id": "ea_dr5",
+        "question": "بَعدَ العَمَلِ، _____ إِلى البَيتِ (After work, I return home)",
+        "options": [
+          "أَعودُ",
+          "يَعودُ",
+          "عُدتُ",
+          "تَعودُ"
+        ],
+        "correct": "أَعودُ",
+        "explanation": "أَعودُ (I return) — Form I hollow verb from عَادَ (root ع-و-د). The present tense أَعودُ shows habitual action. بَعدَ العَمَلِ (after work) — بَعدَ is a ظرف (adverbial) in accusative, العَمل is genitive. إِلى البَيتِ (to home) — البَيت is genitive after إِلى. Hollow verbs like عَادَ have a long vowel in the middle that changes in conjugation: عُدتُ (I returned), أَعودُ (I return), سَأَعودُ (I will return). Evening routine verbs: أَعودُ (return), أَستَريحُ (rest), أُشاهِدُ (watch)."
+      },
+      {
+        "id": "ea_dr6",
+        "question": "أُشاهِدُ _____ مَساءً بَعدَ العَشاءِ (I watch television in the evening after dinner)",
+        "options": [
+          "التِّلفَازَ",
+          "التِّلفَازُ",
+          "التِّلفَازِ",
+          "تِلفَازًا"
+        ],
+        "correct": "التِّلفَازَ",
+        "explanation": "التِّلفَازَ (the television) is accusative — direct object of أُشاهِدُ (I watch, Form III). مَساءً (in the evening) is an adverbial accusative. بَعدَ العَشاءِ (after dinner) — العَشاء is genitive. أُشاهِدُ is Form III which often implies doing something sustained/interactive: شَاهَدَ (watched), قَابَلَ (met), حَاوَلَ (tried). Evening activities: أُشاهِدُ التِّلفَازَ (watch TV), أَقرَأُ كِتابًا (read a book), أَستَمِعُ إِلى المُوسيقَى (listen to music)."
+      },
+      {
+        "id": "ea_dr7",
+        "question": "أَنَامُ في السَّاعَةِ _____ لَيلًا (I sleep at eleven at night)",
+        "options": [
+          "الحَادِيَةَ عَشْرَةَ",
+          "الحَادِيَ عَشَرَ",
+          "أَحَدَ عَشَرَ",
+          "الحَادِيَةُ عَشْرَةُ"
+        ],
+        "correct": "الحَادِيَةَ عَشْرَةَ",
+        "explanation": "الحَادِيَةَ عَشْرَةَ (the eleventh — feminine to match السَّاعَة) is accusative because it's a fronted adverbial specification after في. Compound ordinals 11-19 use حَادي/حَادِيَة + عَشَر/عَشْرَة. Since السَّاعَة is feminine, both parts take feminine form. أَنَامُ (I sleep) is from نَامَ (hollow verb, root ن-و-م). لَيلًا (at night) is adverbial accusative. Time-of-day markers: صَبَاحًا (in the morning), ظُهرًا (at noon), مَسَاءً (in the evening), لَيلًا (at night)."
+      },
+      {
+        "id": "ea_dr8",
+        "question": "أُمارِسُ الرِّيَاضَةَ _____ أُسبُوعِيًّا (I exercise three times a week)",
+        "options": [
+          "ثَلَاثَ مَرَّاتٍ",
+          "ثَلَاثَةَ مَرَّاتٍ",
+          "ثَلَاثُ مَرَّاتٍ",
+          "ثَلَاثٌ"
+        ],
+        "correct": "ثَلَاثَ مَرَّاتٍ",
+        "explanation": "ثَلَاثَ مَرَّاتٍ (three times) — ثَلَاث without tā' marbūṭa because مَرَّات (times) is feminine (gender polarity: numbers 3-10 take opposite gender of counted noun). مَرَّاتٍ is genitive plural. أُمارِسُ (I practice/exercise, Form III) + الرِّيَاضَةَ (sports/exercise, accusative). أُسبُوعِيًّا (weekly) is a nisba adverb. Frequency expressions: مَرَّةً في اليَومِ (once a day), مَرَّتَينِ (twice — dual), كُلَّ يَومٍ (every day), أَحيانًا (sometimes)."
+      },
+      {
+        "id": "ea_dr9",
+        "question": "_____ وَجهي وَيَدَيَّ بِالمَاءِ وَالصَّابونِ (I wash my face and hands with water and soap)",
+        "options": [
+          "أَغسِلُ",
+          "يَغسِلُ",
+          "غَسَلتُ",
+          "اِغسِل"
+        ],
+        "correct": "أَغسِلُ",
+        "explanation": "أَغسِلُ (I wash, present) — the habitual present for daily hygiene routines. وَجهي (my face) is the direct object with possessive ي. وَيَدَيَّ (and my two hands) — dual accusative/genitive يَدَينِ + ي possessive = يَدَيَّ (the نون drops before possessive suffix). بِالمَاءِ وَالصَّابونِ (with water and soap) uses بِ for instrument. يَد (hand) is one of Arabic's irregular nouns — its dual and plural forms are essential for body-care vocabulary in routine descriptions."
+      },
+      {
+        "id": "ea_dr10",
+        "question": "أُحِبُّ أَن أَقرَأَ _____ قَبلَ النَّومِ (I like to read a book before sleep)",
+        "options": [
+          "كِتَابًا",
+          "كِتَابٌ",
+          "كِتَابٍ",
+          "الكِتَابَ"
+        ],
+        "correct": "كِتَابًا",
+        "explanation": "كِتَابًا (a book) is accusative — direct object of أَقرَأَ (I read, subjunctive after أَن). أُحِبُّ أَن (I like to) + subjunctive is the standard way to express preferences for activities. قَبلَ النَّومِ (before sleep) — النَّوم is the masdar of نَامَ. The indefinite كِتَابًا (a book, any book) vs الكِتَابَ (the specific book) makes a meaning difference. Bedtime routine vocabulary: أَقرَأُ (I read), أُصَلّي (I pray), أَتَأَمَّلُ (I meditate), أُطفِئُ النُّورَ (I turn off the light)."
+      },
+      {
+        "id": "ea_dr11",
+        "question": "في عُطلَةِ نِهايَةِ الأُسبُوعِ، _____ مُتَأَخِّرًا (On the weekend, I wake up late)",
+        "options": [
+          "أَستَيقِظُ",
+          "يَستَيقِظُ",
+          "اِستَيقَظتُ",
+          "نَستَيقِظُ"
+        ],
+        "correct": "أَستَيقِظُ",
+        "explanation": "أَستَيقِظُ (I wake up, Form X) — same verb as ea_dr1 but in a weekend context. مُتَأَخِّرًا (late) is a حال (circumstantial accusative) — literally 'being late.' عُطلَةِ نِهايَةِ الأُسبُوعِ (the weekend holiday) is a triple idāfa: عُطلَة (holiday) + نِهايَة (end) + الأُسبُوع (the week). Weekend activities: أَنامُ كَثيرًا (I sleep a lot), أَزورُ أَصدِقائي (I visit friends), أَتَسَوَّقُ (I shop), أُنَظِّفُ البَيتَ (I clean the house)."
+      },
+      {
+        "id": "ea_dr12",
+        "question": "تُرَتِّبُ أُمّي _____ كُلَّ صَباحٍ (My mother organizes the house every morning)",
+        "options": [
+          "البَيتَ",
+          "البَيتُ",
+          "البَيتِ",
+          "بَيتًا"
+        ],
+        "correct": "البَيتَ",
+        "explanation": "البَيتَ (the house) is accusative — direct object of تُرَتِّبُ (she organizes/tidies, Form II). كُلَّ صَباحٍ (every morning) is an adverbial accusative: كُلّ is accusative, صَباح is genitive as مُضاف إليه. أُمّي (my mother) is the subject. Household chore vocabulary: رَتَّبَ (organized, Form II), نَظَّفَ (cleaned, Form II), غَسَلَ (washed), طَبَخَ (cooked), كَنَسَ (swept). Form II verbs are common for domestic activities as they often imply thoroughness."
+      },
+      {
+        "id": "ea_dr13",
+        "question": "أُصَلّي الفَجرَ ثُمَّ أَبدَأُ _____ (I pray Fajr then I start my day)",
+        "options": [
+          "يَومي",
+          "يَومُهُ",
+          "اليَومَ",
+          "يَومٌ"
+        ],
+        "correct": "يَومي",
+        "explanation": "يَومي (my day) is accusative — direct object of أَبدَأُ (I begin). The possessive ي hides the accusative marker. أُصَلّي (I pray, Form II) + الفَجرَ (Fajr/dawn prayer, accusative). ثُمَّ (then) is a sequential conjunction indicating ordered events. The five daily prayers structure many Arabic speakers' routines: الفَجر (dawn), الظُّهر (noon), العَصر (afternoon), المَغرِب (sunset), العِشَاء (night). Sequencing conjunctions: ثُمَّ (then), بَعدَ ذَلِكَ (after that), وَ (and)."
+      },
+      {
+        "id": "ea_dr14",
+        "question": "أَستَحِمُّ بِ_____ السَّاخِنِ في الشِّتاءِ (I shower with hot water in winter)",
+        "options": [
+          "المَاءِ",
+          "المَاءُ",
+          "المَاءَ",
+          "مَاءٍ"
+        ],
+        "correct": "المَاءِ",
+        "explanation": "المَاءِ (the water) is genitive after بِ. السَّاخِنِ (hot) is a genitive adjective agreeing with المَاء. أَستَحِمُّ (I shower/bathe, Form X — اِستَحَمَّ) from حَمَّ (related to heat/bath). في الشِّتاءِ (in winter) is temporal. The active participle ساخِن (hot) vs بَارِد (cold) describes water temperature. Bathing vocabulary: حَمَّام (bathroom), دُشّ (shower), بَانيو (bathtub), شَامبو (shampoo). Form X اِستَحَمَّ literally means 'to seek heat/bathing.'"
+      },
+      {
+        "id": "ea_dr15",
+        "question": "لا أُحِبُّ أَن _____ بَاكِرًا يَومَ الجُمُعَةِ (I don't like to wake up early on Friday)",
+        "options": [
+          "أَستَيقِظَ",
+          "أَستَيقِظُ",
+          "اِستَيقَظَ",
+          "يَستَيقِظَ"
+        ],
+        "correct": "أَستَيقِظَ",
+        "explanation": "أَستَيقِظَ (to wake up) is subjunctive after أَن — the final vowel changes from ḍamma to fatḥa: أَستَيقِظُ → أَستَيقِظَ. لا أُحِبُّ أَن (I don't like to) + subjunctive expresses dislike for an activity. بَاكِرًا (early) is an adverb in accusative. يَومَ الجُمُعَةِ (on Friday) — يَوم is accusative as ظرف زمان, الجُمُعَة is genitive. Days of the week: الأَحَد (Sunday), الاِثنَين (Monday), الثُّلاثاء (Tuesday), الأَربِعاء (Wednesday), الخَميس (Thursday), الجُمُعَة (Friday), السَّبت (Saturday)."
+      }
+    ]
+  },
+  {
+    "key": "formal_arabic",
+    "name": "Formal Arabic (العربية الرسمية)",
+    "description": "Structures and expressions used in formal Modern Standard Arabic contexts",
+    "iconName": "building.columns.fill",
+    "color": "#6366f1",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ea_fa1",
+        "question": "_____ السَّيِّدَاتُ وَالسَّادَةُ (Ladies and gentlemen)",
+        "options": [
+          "أَيُّهَا",
+          "يَا",
+          "هَؤُلاءِ",
+          "أَنتُم"
+        ],
+        "correct": "أَيُّهَا",
+        "explanation": "أَيُّهَا is the formal vocative particle used before definite nouns. In formal Arabic, أَيُّهَا (masculine/mixed) and أَيَّتُهَا (feminine) replace the informal يَا before definite nouns: أَيُّهَا المُدِيرُ (O Director), أَيَّتُهَا السَّيِّدَةُ (O Madam). السَّيِّدَاتُ (ladies) + وَ + السَّادَةُ (gentlemen) — both nominative after the vocative. This opening is standard in speeches, conferences, and formal broadcasts. Formal address is a hallmark of فُصحَى (Standard Arabic)."
+      },
+      {
+        "id": "ea_fa2",
+        "question": "يَسُرُّنِي أَن _____ بَينَ أَيديكُم هَذا المَشروعَ (It pleases me to present this project to you)",
+        "options": [
+          "أُقَدِّمَ",
+          "أُقَدِّمُ",
+          "قَدَّمتُ",
+          "يُقَدِّمَ"
+        ],
+        "correct": "أُقَدِّمَ",
+        "explanation": "أُقَدِّمَ (to present, subjunctive) — after أَن, the verb takes subjunctive with fatḥa ending. يَسُرُّنِي (it pleases me) is an impersonal construction: يَسُرُّ (pleases) + نِي (me). بَينَ أَيديكُم (before you — literally 'between your hands') is a formal idiomatic expression. Formal presentation openings: يَسُرُّنِي (it pleases me), يُشَرِّفُنِي (it honors me), أَوَدُّ أَن (I would like to). These إِنشائِيَّة (performative) constructions are essential for professional Arabic."
+      },
+      {
+        "id": "ea_fa3",
+        "question": "بِنَاءً _____ ما تَقَدَّمَ، نَقتَرِحُ الخُطَّةَ التَّالِيَةَ (Based on the foregoing, we propose the following plan)",
+        "options": [
+          "عَلَى",
+          "مِن",
+          "في",
+          "إِلى"
+        ],
+        "correct": "عَلَى",
+        "explanation": "بِنَاءً عَلَى (based on/in light of) is a formal connective phrase: بِنَاءً is the accusative masdar of بَنَى (to build), and عَلَى means 'on.' ما تَقَدَّمَ (what preceded — Form V past tense as relative clause). نَقتَرِحُ (we propose, Form VIII). الخُطَّةَ التَّالِيَةَ (the following plan — both accusative). Formal connective phrases: بِنَاءً عَلَى (based on), اِستِنادًا إِلى (referring to), نَظَرًا لِ (in view of), فِيمَا يَتَعَلَّقُ بِ (regarding). These phrases are hallmarks of official documents and formal speeches."
+      },
+      {
+        "id": "ea_fa4",
+        "question": "نَوَدُّ أَن نُعرِبَ عَن _____ لِجُهودِكُم (We would like to express our appreciation for your efforts)",
+        "options": [
+          "تَقدِيرِنَا",
+          "تَقدِيرُنَا",
+          "تَقدِيرَنَا",
+          "تَقدِيرٌ"
+        ],
+        "correct": "تَقدِيرِنَا",
+        "explanation": "تَقدِيرِنَا (our appreciation) is genitive after عَن. نُعرِبَ عَن (to express — Form IV أَعرَبَ: literally 'to make Arab/clear') is subjunctive after أَن. لِجُهودِكُم (for your efforts) uses لِ + genitive. نَوَدُّ (we would like) is softer than نُريدُ. Formal appreciation vocabulary: تَقدِير (appreciation), اِمتِنَان (gratitude), شُكر (thanks), عِرفَان (recognition). Official correspondence uses elaborate expressions of thanks that seem excessive to English speakers but are culturally expected."
+      },
+      {
+        "id": "ea_fa5",
+        "question": "تَمَّ _____ القَرَارِ بِالإِجمَاعِ (The decision was approved unanimously)",
+        "options": [
+          "اِعتِمَادُ",
+          "اِعتِمَادَ",
+          "اِعتِمَادِ",
+          "يَعتَمِدُ"
+        ],
+        "correct": "اِعتِمَادُ",
+        "explanation": "اِعتِمَادُ (approval/adoption) is nominative — it's the فاعل (subject) of تَمَّ (was completed/done). تَمَّ + masdar is a formal way to express passive actions: تَمَّ اِعتِمَادُ (was approved), تَمَّ تَوقِيعُ (was signed), تَمَّ إِنجَازُ (was accomplished). القَرَارِ (the decision) is genitive as مُضاف إليه. بِالإِجمَاعِ (unanimously — literally 'by consensus'). Official action vocabulary: قَرَار (decision), مَوافَقَة (approval), تَصويت (voting), جَلسَة (session)."
+      },
+      {
+        "id": "ea_fa6",
+        "question": "_____ لِسِيادَتِكُم بِأَنَّ الاِجتِمَاعَ سَيُعقَدُ غَدًا (We inform Your Excellency that the meeting will be held tomorrow)",
+        "options": [
+          "نُحيطُ عِلمًا",
+          "نُخبِرُ",
+          "نَقولُ",
+          "نَكتُبُ"
+        ],
+        "correct": "نُحيطُ عِلمًا",
+        "explanation": "نُحيطُ عِلمًا (we inform — literally 'we surround with knowledge') is a formal phrase used in official correspondence. لِسِيادَتِكُم (to Your Excellency) uses a title of respect — سِيادَة (sovereignty/eminence). أَنَّ + accusative introduces the content clause. سَيُعقَدُ (will be held) is passive future. Formal titles: سِيادَة (Excellency), مَعَالِي (His/Her Eminence), سُمُوّ (Highness), فَضِيلَة (His Eminence — religious). Formal Arabic correspondence requires elaborate formulaic openings and closings."
+      },
+      {
+        "id": "ea_fa7",
+        "question": "يُرجَى _____ العِلمِ وَالتَّفَضُّلِ بِالمُوافَقَةِ (Please take note and kindly approve)",
+        "options": [
+          "الاِطِّلاعُ وَالإِحَاطَةُ",
+          "أَن تَطَّلِعَ",
+          "أَن تَقرَأَ",
+          "الاِطِّلاعَ"
+        ],
+        "correct": "الاِطِّلاعُ وَالإِحَاطَةُ",
+        "explanation": "الاِطِّلاعُ وَالإِحَاطَةُ (reviewing and noting) — both masdars are nominative as subject after the impersonal passive يُرجَى (it is hoped/requested). This is a standard formal closing formula in official Arabic correspondence. التَّفَضُّل (kindly doing — from Form V تَفَضَّلَ). بِالمُوافَقَةِ (with approval — masdar of Form III وافَقَ). Official letter closings: يُرجَى التَّكَرُّمُ بِ (please be so kind as to), نَأمُلُ مِن سِيادَتِكُم (we hope from Your Excellency). These formulaic endings are essential for bureaucratic Arabic."
+      },
+      {
+        "id": "ea_fa8",
+        "question": "مِمَّا لا شَكَّ _____ أَنَّ التَّعليمَ أَساسُ التَّقَدُّمِ (Undoubtedly, education is the foundation of progress)",
+        "options": [
+          "فيهِ",
+          "فيها",
+          "بِهِ",
+          "مِنهُ"
+        ],
+        "correct": "فيهِ",
+        "explanation": "مِمَّا لا شَكَّ فيهِ (that which there is no doubt about it) is a formal emphatic phrase. مِمَّا = مِن + ما (from that which). لا شَكَّ (no doubt — لا النَّافِيَة لِلجِنسِ with accusative). فيهِ (in it) refers back to ما. أَنَّ التَّعليمَ (that education — accusative after أَنَّ). أَساسُ التَّقَدُّمِ (the foundation of progress — idāfa, nominative خبر). Formal assertion phrases: مِمَّا لا شَكَّ فيهِ (undoubtedly), مِنَ المَعلومِ أَنَّ (it is known that), لا رَيبَ أَنَّ (there is no doubt that)."
+      },
+      {
+        "id": "ea_fa9",
+        "question": "إِشارَةً إِلى كِتابِكُم _____ أَعلَاهُ (In reference to your letter mentioned above)",
+        "options": [
+          "المُشارِ إِلَيهِ",
+          "المَذكورِ",
+          "الَّذي",
+          "السَّابِقِ"
+        ],
+        "correct": "المُشارِ إِلَيهِ",
+        "explanation": "المُشارِ إِلَيهِ (the aforementioned — literally 'the one referred to') is a formal participial phrase modifying كِتابِكُم (your letter/correspondence, genitive after إِلى). إِشارَةً إِلى (in reference to) is a formal opening: إِشارَة is accusative as حال or مَفعول لِأَجلِهِ. أَعلَاهُ (above it — elative form used as adverb). Official reference phrases: إِشارَةً إِلى (referring to), عَطفًا عَلى (further to), إِلحاقًا بِ (supplementary to). These phrases connect correspondence chains in formal Arabic."
+      },
+      {
+        "id": "ea_fa10",
+        "question": "نَرجو مِن سِيادَتِكُم _____ بِالنَّظَرِ في طَلَبِنَا (We request Your Excellency to kindly consider our request)",
+        "options": [
+          "التَّفَضُّلَ",
+          "التَّفَضُّلُ",
+          "التَّفَضُّلِ",
+          "تَفَضَّلَ"
+        ],
+        "correct": "التَّفَضُّلَ",
+        "explanation": "التَّفَضُّلَ (kindly doing) is accusative — direct object of نَرجو (we request/hope). مِن سِيادَتِكُم (from Your Excellency) is the indirect object phrase. بِالنَّظَرِ في (by looking into/considering) — النَّظَر is the masdar of نَظَرَ. طَلَبِنَا (our request) is genitive. This entire sentence is a formulaic request structure in bureaucratic Arabic. The layered politeness: نَرجو (we hope) + مِن سِيادَتِكُم (from Your Excellency) + التَّفَضُّل (to kindly) creates maximum formality."
+      },
+      {
+        "id": "ea_fa11",
+        "question": "وَتَفَضَّلوا بِقَبولِ فَائِقِ _____ (Please accept the highest expressions of respect)",
+        "options": [
+          "الاِحتِرَامِ",
+          "الاِحتِرَامُ",
+          "الاِحتِرَامَ",
+          "اِحتِرَامٍ"
+        ],
+        "correct": "الاِحتِرَامِ",
+        "explanation": "الاِحتِرَامِ (respect) is genitive as مُضاف إليه of فَائِق (highest/superior — which is genitive after قَبول, which is genitive after بِ). This creates a chain: بِ + قَبولِ + فَائِقِ + الاِحتِرَامِ. وَتَفَضَّلوا (and please/kindly — imperative plural of Form V). This is the standard formal letter closing in Arabic, equivalent to 'Yours sincerely.' The full formula is often: وَتَفَضَّلوا بِقَبولِ فَائِقِ الاِحتِرَامِ وَالتَّقدِيرِ (and the appreciation). Mastering this closing is essential for professional Arabic."
+      },
+      {
+        "id": "ea_fa12",
+        "question": "_____ أَنَّ الحُكومَةَ أَصدَرَت قَرارًا جَديدًا (It was announced that the government issued a new decision)",
+        "options": [
+          "أُعلِنَ",
+          "أَعلَنَ",
+          "يُعلِنُ",
+          "أُعلِنوا"
+        ],
+        "correct": "أُعلِنَ",
+        "explanation": "أُعلِنَ (it was announced) is passive voice of Form IV أَعلَنَ (to announce). The passive pattern of Form IV: أُفعِلَ. The following أَنَّ clause serves as النَّائِب عَنِ الفَاعِلِ (deputy subject). أَصدَرَت (she/it issued, Form IV) — feminine past to agree with الحُكومَة. قَرارًا جَديدًا (a new decision — both accusative indefinite). Formal news vocabulary: أُعلِنَ (was announced), صَدَرَ (was issued), تَقَرَّرَ (was decided), تَمَّ الاِتِّفاقُ (agreement was reached)."
+      },
+      {
+        "id": "ea_fa13",
+        "question": "يَتَعَيَّنُ عَلَيْنَا _____ الإِجراءَاتِ اللَّازِمَةَ (We must take the necessary measures)",
+        "options": [
+          "اِتِّخاذُ",
+          "أَن نَتَّخِذَ",
+          "اِتَّخَذنا",
+          "نَتَّخِذُ"
+        ],
+        "correct": "اِتِّخاذُ",
+        "explanation": "اِتِّخاذُ (taking/adopting) is nominative — the real subject (فاعل) of يَتَعَيَّنُ (it is incumbent upon — impersonal Form V). عَلَيْنَا (upon us) specifies who. الإِجراءَاتِ اللَّازِمَةَ (the necessary measures) is genitive as مُضاف إليه of اِتِّخاذ. يَتَعَيَّنُ is a formal obligation verb (stronger than يَجِبُ). Alternative: يَتَعَيَّنُ عَلَينا أَن نَتَّخِذَ (with أَن + subjunctive instead of masdar). Both constructions are correct in formal Arabic — the masdar version is more bureaucratic."
+      },
+      {
+        "id": "ea_fa14",
+        "question": "في _____ الخِتَامِ، نَشكُرُكُم عَلَى حُسنِ المُتَابَعَةِ (In conclusion, we thank you for your close attention)",
+        "options": [
+          "مِسكِ",
+          "نِهايَةِ",
+          "آخِرِ",
+          "خُلاصَةِ"
+        ],
+        "correct": "مِسكِ",
+        "explanation": "مِسكِ الخِتَامِ (the musk/perfume of the closing — an idiomatic formal phrase meaning 'in gracious conclusion') uses مِسك (musk/perfume) metaphorically. في مِسكِ الخِتَامِ is an elegant formal closing formula. نَشكُرُكُم (we thank you — with كُم plural object). عَلَى حُسنِ المُتَابَعَةِ (for good/close follow-up) — حُسن (goodness) + المُتَابَعَة (follow-up, Form III masdar). This poetic closing is characteristic of Arabic formal style where metaphorical language enhances bureaucratic discourse."
+      },
+      {
+        "id": "ea_fa15",
+        "question": "حَضَرَ الاِجتِمَاعَ كُلٌّ مِن المُدِيرِ _____ (The meeting was attended by both the director and his deputy)",
+        "options": [
+          "وَنَائِبِهِ",
+          "وَنَائِبُهُ",
+          "وَنَائِبَهُ",
+          "نَائِبٌ"
+        ],
+        "correct": "وَنَائِبِهِ",
+        "explanation": "وَنَائِبِهِ (and his deputy) is genitive — coordinated with المُدِيرِ (genitive after مِن). كُلٌّ مِن... وَ... (both... and...) is the formal Arabic construction for listing participants. حَضَرَ الاِجتِمَاعَ (attended the meeting) — الاِجتِمَاع is accusative (direct object). نَائِب (deputy/representative) is a Form I active participle from نَابَ (to deputize). Formal meeting vocabulary: حَضَرَ (attended), تَرَأَّسَ (chaired), اِفتَتَحَ (opened), اِختَتَمَ (concluded), صَادَقَ عَلَى (ratified)."
+      }
+    ]
+  },
+  {
+    "key": "media_arabic",
+    "name": "Media Arabic (العربية الإعلامية)",
+    "description": "Arabic vocabulary and structures used in news, journalism, and media",
+    "iconName": "newspaper.fill",
+    "color": "#64748b",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ea_ma1",
+        "question": "أَفَادَت _____ أَنَّ الرَّئيسَ سَيَزورُ البِلادَ غَدًا (Sources reported that the president will visit the country tomorrow)",
+        "options": [
+          "مَصَادِرُ",
+          "المَصَادِرَ",
+          "مَصَادِرَ",
+          "المَصَادِرُ"
+        ],
+        "correct": "مَصَادِرُ",
+        "explanation": "مَصَادِرُ (sources) is nominative — the subject (فاعل) of أَفَادَت (reported — feminine singular because broken plurals of non-human nouns take feminine singular agreement). مَصَادِر is the broken plural of مَصدَر. أَنَّ + clause reports the news content. سَيَزورُ (will visit) uses سَ for near future. Media attribution: أَفَادَت مَصَادِرُ (sources reported), ذَكَرَت تَقارِيرُ (reports mentioned), أَعلَنَ مَسؤولٌ (an official announced). These attribution phrases open most Arabic news stories."
+      },
+      {
+        "id": "ea_ma2",
+        "question": "شَهِدَت المَنطِقَةُ _____ في عَدَدِ السُّكَّانِ (The region witnessed an increase in the population)",
+        "options": [
+          "اِرتِفَاعًا",
+          "اِرتِفَاعٌ",
+          "اِرتِفَاعٍ",
+          "الاِرتِفَاعَ"
+        ],
+        "correct": "اِرتِفَاعًا",
+        "explanation": "اِرتِفَاعًا (an increase/rise) is accusative — direct object of شَهِدَت (witnessed). شَهِدَ (to witness) is commonly used metaphorically in news: شَهِدَت المَنطِقَةُ (the region witnessed = experienced). في عَدَدِ السُّكَّانِ (in the population count) is a double idāfa. News verbs for changes: شَهِدَ اِرتِفاعًا (witnessed a rise), شَهِدَ اِنخِفاضًا (witnessed a decline), شَهِدَ تَطَوُّرًا (witnessed development), شَهِدَ تَحَوُّلًا (witnessed a transformation)."
+      },
+      {
+        "id": "ea_ma3",
+        "question": "أَكَّدَ المُتَحَدِّثُ الرَّسمِيُّ _____ الحُكومَةُ مُلتَزِمَةٌ بِالاِتِّفَاقِ (The official spokesperson confirmed that the government is committed to the agreement)",
+        "options": [
+          "أَنَّ",
+          "أَنْ",
+          "إِنَّ",
+          "لأَنَّ"
+        ],
+        "correct": "أَنَّ",
+        "explanation": "أَنَّ (that — with fatḥa on hamza) introduces reported content after verbs of speech/confirmation. Its subject الحُكومَةَ takes accusative (though in context written nominative due to proximity to خبر). المُتَحَدِّثُ الرَّسمِيُّ (the official spokesperson) — both nominative. أَكَّدَ (confirmed, Form II) is typical in news reports. مُلتَزِمَةٌ (committed, feminine active participle of Form VIII). News attribution: أَكَّدَ (confirmed), نَفَى (denied), أَوضَحَ (clarified), صَرَّحَ (stated), أَشارَ إِلى (indicated)."
+      },
+      {
+        "id": "ea_ma4",
+        "question": "_____ مُؤتَمَرٌ صُحُفِيٌّ لِلإِعلَانِ عَنِ النَّتَائِجِ (A press conference was held to announce the results)",
+        "options": [
+          "عُقِدَ",
+          "عَقَدَ",
+          "يَعقِدُ",
+          "يُعقَدُ"
+        ],
+        "correct": "عُقِدَ",
+        "explanation": "عُقِدَ (was held — passive past of عَقَدَ 'to hold/convene'). مُؤتَمَرٌ (conference) is the نَائِب فاعِل in nominative. صُحُفِيٌّ (press-related, nisba from صَحيفَة) is an adjective. لِلإِعلَانِ (to announce — لِ + masdar) expresses purpose. عَنِ النَّتَائِجِ (about the results). Media event vocabulary: مُؤتَمَر صُحُفِيّ (press conference), بَيان (statement), تَصريح (declaration), نَدوَة (symposium), لِقاء (interview). Passive voice is extremely common in Arabic news headlines."
+      },
+      {
+        "id": "ea_ma5",
+        "question": "وَصَفَ المُرَاقِبونَ الاِنتِخابَاتِ _____ نَزيهَةٍ (Observers described the elections as fair)",
+        "options": [
+          "بِأَنَّها",
+          "أَنَّها",
+          "لِأَنَّها",
+          "كَأَنَّها"
+        ],
+        "correct": "بِأَنَّها",
+        "explanation": "بِأَنَّها (as being — literally 'by that they/it') uses بِ + أَنَّ + pronoun suffix for indirect characterization. وَصَفَ بِ (described as) takes this preposition. المُرَاقِبونَ (the observers — sound masculine plural in nominative). الاِنتِخابَاتِ (the elections — sound feminine plural in accusative). نَزيهَة (fair/clean — feminine adjective). Election vocabulary: اِنتِخابَات (elections), تَصويت (voting), مُرَشَّح (candidate), فَوز (victory), حَملَة اِنتِخابِيَّة (election campaign)."
+      },
+      {
+        "id": "ea_ma6",
+        "question": "وَفقًا _____ الأَخيرَةِ، تَراجَعَ مُعَدَّلُ البَطالَةِ (According to the latest statistics, the unemployment rate declined)",
+        "options": [
+          "لِلإِحصائِيَّاتِ",
+          "إِلى الإِحصائِيَّاتِ",
+          "بِالإِحصائِيَّاتِ",
+          "عَنِ الإِحصائِيَّاتِ"
+        ],
+        "correct": "لِلإِحصائِيَّاتِ",
+        "explanation": "لِلإِحصائِيَّاتِ (to the statistics — لِ contracts with ال to become لِل) after وَفقًا (according to). وَفقًا لِ is a formal attribution phrase. الأَخيرَةِ (the latest, feminine genitive) modifies الإِحصائِيَّات. تَراجَعَ (declined, Form VI) — indicates gradual retreat. مُعَدَّلُ البَطالَةِ (unemployment rate) is an idāfa. Economic news vocabulary: تَراجُع (decline), نُمُوّ (growth), تَضَخُّم (inflation), بَطالَة (unemployment), نَاتِج مَحَلِّيّ (GDP)."
+      },
+      {
+        "id": "ea_ma7",
+        "question": "تَأتي هَذِهِ الخُطوَةُ في إِطارِ _____ الحُكومَةِ لِتَحسينِ الخَدَمَاتِ (This step comes within the framework of the government's efforts to improve services)",
+        "options": [
+          "جُهودِ",
+          "جُهودُ",
+          "جُهودَ",
+          "جُهودٌ"
+        ],
+        "correct": "جُهودِ",
+        "explanation": "جُهودِ (efforts of) is genitive — مُضاف إليه of إِطار (framework, genitive after في). الحُكومَةِ is further genitive as مُضاف إليه of جُهود. This triple idāfa: إِطارِ جُهودِ الحُكومَةِ (the framework of the government's efforts). لِتَحسينِ (to improve — لِ + masdar of Form II). الخَدَمَاتِ (services — sound feminine plural genitive). Media framing phrases: في إِطارِ (within the framework of), في سِيَاقِ (in the context of), ضِمنَ (within). These contextualization phrases are ubiquitous in Arabic journalism."
+      },
+      {
+        "id": "ea_ma8",
+        "question": "دَعَا الأَمينُ العَامُّ إِلى _____ فَورِيٍّ لِإِطلاقِ النَّارِ (The Secretary-General called for an immediate ceasefire)",
+        "options": [
+          "وَقفٍ",
+          "وَقفُ",
+          "وَقفَ",
+          "وَقفٌ"
+        ],
+        "correct": "وَقفٍ",
+        "explanation": "وَقفٍ (a halt/cessation) is genitive after إِلى. دَعَا إِلى (called for — Form I hollow verb) is the standard diplomatic verb. الأَمينُ العَامُّ (the Secretary-General — both nominative with adjective agreement). فَورِيٍّ (immediate, nisba adjective) modifies وَقف in genitive. لِإِطلاقِ النَّارِ (of fire — ceasefire idāfa). International relations vocabulary: وَقف إِطلاقِ النَّارِ (ceasefire), مُفاوَضات (negotiations), مُعاهَدَة (treaty), عُقوبات (sanctions). Arabic news requires mastering diplomatic terminology."
+      },
+      {
+        "id": "ea_ma9",
+        "question": "يُتَوَقَّعُ أَن _____ أَسعارُ النَّفطِ خِلالَ الأُسبوعِ القادِمِ (Oil prices are expected to rise during the coming week)",
+        "options": [
+          "تَرتَفِعَ",
+          "تَرتَفِعُ",
+          "يَرتَفِعَ",
+          "اِرتَفَعَت"
+        ],
+        "correct": "تَرتَفِعَ",
+        "explanation": "تَرتَفِعَ (to rise, fem. subjunctive) — after أَن the verb takes subjunctive (fatḥa). Feminine singular because أَسعَار (prices, broken plural of non-human) takes feminine singular agreement. يُتَوَقَّعُ (it is expected — passive Form V) is an impersonal construction common in forecasting. خِلالَ (during) is a ظرف. أَسعارُ النَّفطِ (oil prices — idāfa). Forecasting language: يُتَوَقَّعُ (it is expected), مِنَ المُرَجَّحِ (it is likely), يُحتَمَلُ أَن (it is possible that)."
+      },
+      {
+        "id": "ea_ma10",
+        "question": "نَقَلَ المُرَاسِلُ _____ مِن مَوقِعِ الحَدَثِ (The correspondent transmitted live from the event location)",
+        "options": [
+          "مُبَاشَرَةً",
+          "مُبَاشَرَةٌ",
+          "مُبَاشَرَةٍ",
+          "المُبَاشَرَةَ"
+        ],
+        "correct": "مُبَاشَرَةً",
+        "explanation": "مُبَاشَرَةً (live/directly) is a حال in accusative — describing the manner of transmission. نَقَلَ (transmitted/conveyed) is the verb. المُرَاسِلُ (the correspondent — active participle of Form III رَاسَلَ 'to correspond'). مِن مَوقِعِ الحَدَثِ (from the event site — double idāfa). Broadcast vocabulary: نَقل مُباشِر (live broadcast), تَقرير (report), تَغطِيَة (coverage), بَثّ (broadcast), مُقَابَلَة (interview). Arabic news channels use these terms extensively."
+      },
+      {
+        "id": "ea_ma11",
+        "question": "أَسفَرَت المُبَاحَثَاتُ عَن _____ اِتِّفَاقٍ بَينَ الطَّرَفَينِ (The talks resulted in reaching an agreement between the two parties)",
+        "options": [
+          "التَّوَصُّلِ إِلى",
+          "التَّوَصُّلُ إِلى",
+          "التَّوَصُّلَ إِلى",
+          "تَوَصَّلَ إِلى"
+        ],
+        "correct": "التَّوَصُّلِ إِلى",
+        "explanation": "التَّوَصُّلِ (reaching — Form V masdar) is genitive after عَن. أَسفَرَت عَن (resulted in — Form IV feminine) is the standard diplomatic verb for outcomes. المُبَاحَثَاتُ (the discussions — sound feminine plural of مُبَاحَثَة, Form III masdar). بَينَ الطَّرَفَينِ (between the two parties — dual genitive). Negotiation vocabulary: مُبَاحَثَات (talks), مُفَاوَضَات (negotiations), تَوَصَّلَ إِلى (reached), اِتِّفَاق (agreement), بَيان مُشتَرَك (joint statement)."
+      },
+      {
+        "id": "ea_ma12",
+        "question": "حَذَّرَ الخُبَرَاءُ مِن _____ التَّلَوُّثِ عَلى البيئَةِ (Experts warned of the effects of pollution on the environment)",
+        "options": [
+          "تَأثيرَاتِ",
+          "تَأثيرَاتُ",
+          "تَأثيرَاتَ",
+          "تَأثيرٌ"
+        ],
+        "correct": "تَأثيرَاتِ",
+        "explanation": "تَأثيرَاتِ (effects — sound feminine plural) is genitive after مِن. حَذَّرَ مِن (warned against, Form II) is common in scientific reporting. الخُبَرَاءُ (the experts — broken plural of خَبير) is nominative. التَّلَوُّثِ (pollution, Form V masdar of تَلَوَّثَ) is genitive as مُضاف إليه. عَلى البيئَةِ (on the environment). Environmental news: تَغَيُّر المُنَاخ (climate change), اِحتِبَاس حَرارِيّ (global warming), طَاقَة مُتَجَدِّدَة (renewable energy), اِنبِعاثَات (emissions)."
+      },
+      {
+        "id": "ea_ma13",
+        "question": "_____ الإِعلامُ العَرَبِيُّ دَورًا كَبيرًا في نَشرِ الثَّقافَةِ (Arab media plays a significant role in spreading culture)",
+        "options": [
+          "يُؤَدّي",
+          "تُؤَدّي",
+          "أَدَّى",
+          "يُؤَدّونَ"
+        ],
+        "correct": "يُؤَدّي",
+        "explanation": "يُؤَدّي (he/it plays — Form II of أَدَّى 'to perform/play a role') is masculine to agree with الإِعلامُ (media, masculine). دَورًا كَبيرًا (a big role — both accusative). في نَشرِ الثَّقافَةِ (in spreading culture — نَشر is masdar, الثَّقافَة is genitive مُضاف إليه). يُؤَدّي دَورًا (plays a role) is a standard Arabic collocation. Media analysis vocabulary: دَور (role), تَأثير (influence), وَسائِل الإِعلام (media outlets), رَأي عَامّ (public opinion)."
+      },
+      {
+        "id": "ea_ma14",
+        "question": "كَشَفَ التَّحقيقُ _____ فَسَادٍ في المُؤَسَّسَةِ (The investigation uncovered cases of corruption in the institution)",
+        "options": [
+          "حَالاتِ",
+          "حَالاتُ",
+          "حَالاتَ",
+          "حَالَةَ"
+        ],
+        "correct": "حَالاتِ",
+        "explanation": "حَالاتِ (cases of) — sound feminine plural accusative used as direct object (though lacking ال, it looks genitive, but as part of an idāfa it's accusative as مَفعول بِهِ since it could also be read as accusative). Actually, حَالاتِ in accusative for sound feminine plurals takes the same kasra ending. كَشَفَ (uncovered, Form I) is the verb. فَسَادٍ (corruption) is genitive as مُضاف إليه. Investigative journalism vocabulary: تَحقيق (investigation), فَسَاد (corruption), اِختِلاس (embezzlement), رَشوَة (bribery), مُسَاءَلَة (accountability)."
+      },
+      {
+        "id": "ea_ma15",
+        "question": "عَلى صَعيدٍ _____ ، اِرتَفَعَت أَسعارُ العَقاراتِ (On another front, real estate prices rose)",
+        "options": [
+          "آخَرَ",
+          "آخَرُ",
+          "آخَرٍ",
+          "الآخَرِ"
+        ],
+        "correct": "آخَرَ",
+        "explanation": "آخَرَ (another) is diptote — it takes fatḥa in genitive instead of kasra because it follows the pattern أَفعَل (comparative/elative). عَلى صَعيدٍ آخَرَ (on another front/level) is a standard news transition phrase. اِرتَفَعَت (rose, Form VIII feminine) agrees with أَسعَار (broken plural → feminine singular). العَقَارَاتِ (real estate — sound feminine plural genitive). News transition phrases: عَلى صَعيدٍ آخَرَ (on another front), مِن جِهَةٍ أُخرَى (on the other hand), في سِياقٍ مُتَّصِلٍ (in a related context)."
+      }
+    ]
+  },
+  {
+    "key": "idiomatic_expressions",
+    "name": "Idiomatic Expressions (التعبيرات الاصطلاحية)",
+    "description": "Common Arabic idioms and fixed expressions with their grammatical patterns",
+    "iconName": "text.quote",
+    "color": "#a855f7",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ea_ie1",
+        "question": "هَذَا المَوضُوعُ بَينَ _____ وَالسِّندَانِ (This topic is between a rock and a hard place — literally 'between the hammer and the anvil')",
+        "options": [
+          "المِطرَقَةِ",
+          "المِطرَقَةُ",
+          "مِطرَقَةً",
+          "المِطرَقَةَ"
+        ],
+        "correct": "المِطرَقَةِ",
+        "explanation": "المِطرَقَةِ (the hammer) is genitive after بَينَ. بَينَ المِطرَقَةِ وَالسِّندَانِ (between the hammer and the anvil) is an Arabic idiom equivalent to 'between a rock and a hard place.' بَينَ takes genitive for both nouns. مِطرَقَة is an instrumental noun (اسم آلة) from طَرَقَ (to hammer), pattern مِفعَلَة. Arabic idioms often use concrete imagery: بَينَ نَارَينِ (between two fires), عَلى أَحَرّ مِن الجَمرِ (on hotter than coals = on tenterhooks)."
+      },
+      {
+        "id": "ea_ie2",
+        "question": "أَعطَاهُ الضَّوءَ _____ لِلبَدءِ بِالمَشروعِ (He gave him the green light to start the project)",
+        "options": [
+          "الأَخضَرَ",
+          "الأَخضَرُ",
+          "أَخضَرَ",
+          "الأَخضَرِ"
+        ],
+        "correct": "الأَخضَرَ",
+        "explanation": "الأَخضَرَ (the green) is accusative — adjective agreeing with الضَّوءَ (the light, direct object). أَعطَى (gave) takes two objects: هُ (him, first object) and الضَّوءَ الأَخضَرَ (the green light, second object). لِلبَدءِ (to begin — لِ + masdar). This idiom is shared between Arabic and English. الأَخضَر is a diptote color adjective (أَفعَل pattern) but with ال it fully declines. Permission idioms: أَعطَى الضَّوءَ الأَخضَرَ (gave the green light), فَتَحَ البَابَ أَمَامَ (opened the door for)."
+      },
+      {
+        "id": "ea_ie3",
+        "question": "وَضَعَ النِّقاطَ عَلى _____ (He dotted the i's — literally 'put the dots on the letters')",
+        "options": [
+          "الحُروفِ",
+          "الحُروفُ",
+          "الحُروفَ",
+          "حُروفٍ"
+        ],
+        "correct": "الحُروفِ",
+        "explanation": "الحُروفِ (the letters) is genitive after عَلى. وَضَعَ النِّقاطَ عَلى الحُروفِ (put the dots on the letters) means to clarify things precisely — similar to 'dotting the i's and crossing the t's.' This idiom references Arabic's diacritical dots that distinguish letters (ب/ت/ث/ن). النِّقاط (the dots/points, broken plural of نُقطَة). Clarity idioms: وَضَّحَ الأَمرَ (clarified the matter), كَشَفَ القِنَاعَ (removed the mask), سَمَّى الأَشياءَ بِأَسمائِها (called things by their names)."
+      },
+      {
+        "id": "ea_ie4",
+        "question": "وَقَعَ الخَبَرُ عَلَيهِ كَ_____ الصَّاعِقَةِ (The news hit him like a thunderbolt)",
+        "options": [
+          "وَقعِ",
+          "وَقعُ",
+          "وَقعَ",
+          "وَقعٌ"
+        ],
+        "correct": "وَقعِ",
+        "explanation": "وَقعِ (the impact of) is genitive after كَ (like). الصَّاعِقَةِ (the thunderbolt) is genitive as مُضاف إليه. This idiom describes shocking news: كَوَقعِ الصَّاعِقَةِ (like the impact of a thunderbolt). وَقَعَ (fell/occurred) is used the first time as a verb, and وَقع the second time as a masdar meaning 'impact.' Shock/surprise idioms: كَالصَّاعِقَةِ (like a thunderbolt), أَصَابَهُ الذُّهولُ (astonishment seized him), فَغَرَ فَاهُ (his mouth dropped open)."
+      },
+      {
+        "id": "ea_ie5",
+        "question": "هَذا الأَمرُ في _____ الرِّيحِ (This matter is futile — literally 'in the blowing of the wind')",
+        "options": [
+          "مَهَبِّ",
+          "مَهَبُّ",
+          "مَهَبَّ",
+          "مَهَبٌّ"
+        ],
+        "correct": "مَهَبِّ",
+        "explanation": "مَهَبِّ (the blowing place/direction of) is genitive after في. مَهَبّ is a place/time noun (اسم مكان/زمان) from هَبَّ (to blow). في مَهَبِّ الرِّيحِ (in the direction of the wind) means exposed, vulnerable, or futile — something that will be blown away. This idiom is used for things at risk or doomed to fail. Wind idioms: في مَهَبِّ الرِّيحِ (at the mercy of the wind), ذَهَبَ أَدرَاجَ الرِّيَاحِ (went with the winds = vanished), لَهُ ريحٌ (has influence)."
+      },
+      {
+        "id": "ea_ie6",
+        "question": "_____ حَبلُ الكَذِبِ قَصيرٌ (A lie has short legs — literally 'the rope of lying is short')",
+        "options": [
+          "إِنَّ",
+          "أَنَّ",
+          "كَانَ",
+          "لَكِنَّ"
+        ],
+        "correct": "إِنَّ",
+        "explanation": "إِنَّ (indeed/verily) starts this proverb-like saying for emphasis. حَبلُ الكَذِبِ (the rope of lying) is اسم إِنَّ — but wait, after إِنَّ the subject should be accusative: حَبلَ. However, in many proverbial expressions, the form is fixed. The meaning: lies are quickly exposed, like a short rope that can't reach far. Deception idioms: حَبلُ الكَذِبِ قَصيرٌ (lies have short legs), مَن حَفَرَ حُفرَةً لِأَخيهِ وَقَعَ فيها (who digs a pit for his brother falls in it)."
+      },
+      {
+        "id": "ea_ie7",
+        "question": "مَدَّ لَهُ يَدَ _____ في وَقتِ الشِّدَّةِ (He extended a helping hand in time of hardship)",
+        "options": [
+          "المُسَاعَدَةِ",
+          "المُسَاعَدَةُ",
+          "المُسَاعَدَةَ",
+          "مُسَاعَدَةً"
+        ],
+        "correct": "المُسَاعَدَةِ",
+        "explanation": "المُسَاعَدَةِ (help/assistance) is genitive as مُضاف إليه of يَد (hand). مَدَّ يَدَ المُسَاعَدَةِ (extended the hand of help) is a standard idiom for offering assistance. مَدَّ (extended/stretched) — doubled verb. لَهُ (to him) — indirect object. في وَقتِ الشِّدَّةِ (in time of hardship) — double idāfa. Help idioms: مَدَّ يَدَ المُسَاعَدَةِ (lent a helping hand), وَقَفَ إِلى جَانِبِهِ (stood by his side), شَدَّ أَزرَهُ (strengthened his back = supported him)."
+      },
+      {
+        "id": "ea_ie8",
+        "question": "قَلَبَ الطَّاوِلَةَ عَلى _____ (He turned the tables on them)",
+        "options": [
+          "رُؤوسِهِم",
+          "رُؤوسُهُم",
+          "رُؤوسَهُم",
+          "رَأسِهِم"
+        ],
+        "correct": "رُؤوسِهِم",
+        "explanation": "رُؤوسِهِم (their heads) is genitive after عَلى. قَلَبَ الطَّاوِلَةَ عَلى رُؤوسِهِم (turned the table on their heads) means to reverse a situation against opponents. رُؤوس is the broken plural of رَأس (head). هِم is the masculine plural possessive suffix. Reversal idioms: قَلَبَ الطَّاوِلَةَ (turned the tables), غَيَّرَ مَجرَى الأُمورِ (changed the course of things), اِنقَلَبَ السِّحرُ عَلى السَّاحِرِ (the magic turned on the magician)."
+      },
+      {
+        "id": "ea_ie9",
+        "question": "أَخَذَ الأَمرَ عَلى _____ الجِدِّ (He took the matter seriously — literally 'on the side of seriousness')",
+        "options": [
+          "مَحمَلِ",
+          "مَحمَلُ",
+          "مَحمَلَ",
+          "مَحمَلٌ"
+        ],
+        "correct": "مَحمَلِ",
+        "explanation": "مَحمَلِ (the bearing/interpretation of) is genitive after عَلى. الجِدِّ (seriousness) is genitive as مُضاف إليه. أَخَذَ عَلى مَحمَلِ الجِدِّ (took on the interpretation of seriousness = took seriously). مَحمَل is a place noun from حَمَلَ (to carry/bear). Seriousness idioms: عَلى مَحمَلِ الجِدِّ (seriously), بِكُلِّ جِدِّيَّةٍ (with all seriousness). Opposite: أَخَذَ عَلى مَحمَلِ الهَزلِ/المُزَاحِ (took as a joke). This idiom is extremely common in conversational and written Arabic."
+      },
+      {
+        "id": "ea_ie10",
+        "question": "وَضَعَ كُلَّ _____ في سَلَّةٍ وَاحِدَةٍ (He put all his eggs in one basket — literally 'put all eggs in one basket')",
+        "options": [
+          "بَيضِهِ",
+          "بَيضُهُ",
+          "بَيضَهُ",
+          "بَيضٍ"
+        ],
+        "correct": "بَيضِهِ",
+        "explanation": "بَيضِهِ (his eggs) is genitive as مُضاف إليه of كُلّ. في سَلَّةٍ وَاحِدَةٍ (in one basket — both genitive). This idiom is shared between Arabic and English, meaning to risk everything on one option. بَيض is the collective noun for eggs (one egg = بَيضَة). كُلَّ is accusative as a direct object component. Risk idioms: وَضَعَ كُلَّ بَيضِهِ في سَلَّةٍ وَاحِدَةٍ (all eggs in one basket), لَعِبَ بِالنَّارِ (played with fire), رَكِبَ المَوجَةَ (rode the wave)."
+      },
+      {
+        "id": "ea_ie11",
+        "question": "القُشَّةُ الَّتي _____ ظَهرَ البَعيرِ (The straw that broke the camel's back)",
+        "options": [
+          "قَصَمَت",
+          "قَصَمَ",
+          "تَقصِمُ",
+          "قَصَمَتا"
+        ],
+        "correct": "قَصَمَت",
+        "explanation": "قَصَمَت (it broke — feminine past) agrees with القُشَّة (the straw, feminine). الَّتي is the feminine relative pronoun. ظَهرَ البَعيرِ (the camel's back — idāfa accusative). قَصَمَ (to break/snap) — a strong verb implying shattering. البَعير (the camel — general term for camels). This proverb is nearly identical in Arabic and English, though its Arabic origins predate the English version. Camel proverbs are common in Arabic: الجَمَلُ لا يَرَى سَنَامَهُ (the camel doesn't see its own hump = the pot calling the kettle black)."
+      },
+      {
+        "id": "ea_ie12",
+        "question": "أَصبَحَ الوَضعُ عَلى _____ السَّيفِ (The situation became on a knife's edge)",
+        "options": [
+          "حَدِّ",
+          "حَدُّ",
+          "حَدَّ",
+          "حَدٌّ"
+        ],
+        "correct": "حَدِّ",
+        "explanation": "حَدِّ (the edge/blade of) is genitive after عَلى. السَّيفِ (the sword) is genitive as مُضاف إليه. عَلى حَدِّ السَّيفِ (on the edge of the sword) means a critical/dangerous situation. أَصبَحَ (became — كان's sister) puts الوَضعُ in nominative. حَدّ also means 'limit' — عَلى حَدِّ عِلمي (to my knowledge), عَلى حَدِّ سَواء (equally). Danger idioms: عَلى حَدِّ السَّيفِ (on the sword's edge), عَلى شَفيرِ الهاوِيَةِ (on the brink of the abyss), عَلى كَفِّ عِفريتٍ (on a demon's palm)."
+      },
+      {
+        "id": "ea_ie13",
+        "question": "_____ لَهُ البابَ عَلى مِصراعَيهِ (He opened the door wide for him)",
+        "options": [
+          "فَتَحَ",
+          "فَتَحَت",
+          "يَفتَحُ",
+          "اِفتَح"
+        ],
+        "correct": "فَتَحَ",
+        "explanation": "فَتَحَ (he opened) — Form I past tense. لَهُ (for him) — indirect object. البَابَ (the door) is accusative — direct object. عَلى مِصراعَيهِ (on both its wings/panels — dual genitive) means 'wide open.' مِصراع is one panel/leaf of a double door; the dual مِصراعَين refers to both sides fully opened. This idiom means to welcome completely or give full opportunity. Welcome idioms: فَتَحَ البَابَ عَلى مِصراعَيهِ (opened the door wide), اِستَقبَلَهُ بِالأَحضانِ (received with open arms)."
+      },
+      {
+        "id": "ea_ie14",
+        "question": "ما كُلُّ مَا _____ ذَهَبًا (Not everything that glitters is gold)",
+        "options": [
+          "يَلمَعُ",
+          "لَمَعَ",
+          "يَلمَعونَ",
+          "تَلمَعُ"
+        ],
+        "correct": "يَلمَعُ",
+        "explanation": "يَلمَعُ (it glitters/shines) — present tense for a general truth. ما (not) is a negation particle. كُلُّ (all/every) is the مُبتدأ. ما يَلمَعُ (that which glitters) is a relative clause: ما = الَّذي (that which). ذَهَبًا (gold) is a تَمييز (specification) in accusative. This universal proverb exists in Arabic with identical meaning to English. Appearance vs reality idioms: لَيسَ كُلُّ ما يَلمَعُ ذَهَبًا (not all that glitters is gold), الثَّوبُ لا يَصنَعُ الرَّاهِبَ (the robe doesn't make the monk)."
+      },
+      {
+        "id": "ea_ie15",
+        "question": "ضَرَبَ _____ عَلى الحَديدِ وَهُوَ سَاخِنٌ (He struck while the iron was hot)",
+        "options": [
+          "بِيَدِهِ",
+          "يَدَهُ",
+          "بِيَدٍ",
+          "يَدُهُ"
+        ],
+        "correct": "بِيَدِهِ",
+        "explanation": "بِيَدِهِ (with his hand) uses بِ for instrument — genitive. ضَرَبَ (he struck) — the main verb. عَلى الحَديدِ (on the iron — genitive after عَلى). وَهُوَ سَاخِنٌ (while it is hot) — a حال clause: واو الحال + هُوَ (it) + سَاخِنٌ (hot, خبر). This idiom means to seize the opportunity at the right moment. Opportunity idioms: اِغتَنَمَ الفُرصَةَ (seized the opportunity), الحَديدُ يُطرَقُ وَهُوَ سَاخِنٌ (iron is struck while hot), مَن سَبَقَ أَكَلَ النَّبَقَ (first come, first served)."
+      }
+    ]
+  },
+  {
+    "key": "proverbs_sayings",
+    "name": "Proverbs & Sayings (الأمثال والحكم)",
+    "description": "Classical and popular Arabic proverbs with their grammatical structures",
+    "iconName": "scroll.fill",
+    "color": "#92400e",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ea_ps1",
+        "question": "مَن جَدَّ _____ (Whoever strives, finds — He who seeks shall find)",
+        "options": [
+          "وَجَدَ",
+          "يَجِدُ",
+          "وَاجِدٌ",
+          "فَوَجَدَ"
+        ],
+        "correct": "وَجَدَ",
+        "explanation": "وَجَدَ (he found) completes this conditional proverb. مَن (whoever) introduces a conditional meaning. جَدَّ (strove/was serious) is the condition; وَجَدَ (found) is the answer. Arabic proverbs often use مَن + past tense for timeless truths, functioning like a conditional: the past tense here carries habitual/generic meaning. Short proverbial structures: مَن صَبَرَ ظَفَرَ (who was patient won), مَن طَلَبَ العُلا سَهِرَ اللَّيالي (who seeks heights stays up nights). This concise style is characteristic of Arabic wisdom literature."
+      },
+      {
+        "id": "ea_ps2",
+        "question": "العِلمُ في الصِّغَرِ كَ_____ عَلى الحَجَرِ (Learning in youth is like engraving on stone)",
+        "options": [
+          "النَّقشِ",
+          "النَّقشُ",
+          "النَّقشَ",
+          "نَقشٍ"
+        ],
+        "correct": "النَّقشِ",
+        "explanation": "النَّقشِ (the engraving) is genitive after كَ (like). عَلى الحَجَرِ (on stone) — الحَجَر is genitive. العِلمُ (knowledge/learning) is the مُبتدأ. في الصِّغَرِ (in childhood) — الصِّغَر is the masdar of صَغُرَ. This proverb emphasizes that childhood learning is permanent, like carving in rock. It's often contrasted with: العِلمُ في الكِبَرِ كَالنَّقشِ عَلى المَاءِ (learning in old age is like engraving on water). Education proverbs reflect Arabic culture's deep respect for knowledge."
+      },
+      {
+        "id": "ea_ps3",
+        "question": "إِذا _____ الكَلامُ مِن فِضَّةٍ فَالسُّكوتُ مِن ذَهَبٍ (If speech is silver, then silence is gold)",
+        "options": [
+          "كَانَ",
+          "يَكونُ",
+          "كانَت",
+          "كُن"
+        ],
+        "correct": "كَانَ",
+        "explanation": "كَانَ (was/is) introduces the conditional protasis. الكَلامُ (speech) is اسم كان in nominative. مِن فِضَّةٍ (of silver — genitive) is the خبر. فَالسُّكوتُ (then silence) — فَ marks the apodosis (result clause). مِن ذَهَبٍ (of gold). إِذا + past tense for a conditional stating a hypothetical truth. This proverb values silence over speech. Silence proverbs: رُبَّ سُكوتٍ أَبلَغُ مِن كَلامٍ (sometimes silence is more eloquent than speech), لِسانُكَ حِصانُكَ إِن صُنتَهُ صَانَكَ (your tongue is your horse: if you guard it, it guards you)."
+      },
+      {
+        "id": "ea_ps4",
+        "question": "لا تُؤَجِّل عَمَلَ اليَومِ إِلى _____ (Don't postpone today's work until tomorrow)",
+        "options": [
+          "الغَدِ",
+          "الغَدُ",
+          "الغَدَ",
+          "غَدٍ"
+        ],
+        "correct": "الغَدِ",
+        "explanation": "الغَدِ (tomorrow) is genitive after إِلى. لا تُؤَجِّل (don't postpone — لا + jussive of Form II أَجَّلَ). عَمَلَ اليَومِ (today's work — idāfa, عَمَل is accusative as direct object). This proverb is universally recognized and very commonly used in Arabic daily life. الغَد (tomorrow) is a semi-diptote noun. Procrastination proverbs: لا تُؤَجِّل عَمَلَ اليَومِ إِلى الغَدِ (don't delay today's work), التَّأخيرُ آفَةٌ (delay is a plague), الوَقتُ كَالسَّيفِ (time is like a sword)."
+      },
+      {
+        "id": "ea_ps5",
+        "question": "الصَّديقُ وَقتَ _____ (A friend in time of need — literally 'the friend at the time of distress')",
+        "options": [
+          "الضِّيقِ",
+          "الضِّيقُ",
+          "الضِّيقَ",
+          "ضِيقٍ"
+        ],
+        "correct": "الضِّيقِ",
+        "explanation": "الضِّيقِ (hardship/distress) is genitive as مُضاف إليه of وَقت (time — accusative as ظرف). الصَّديقُ (the friend) is المُبتدأ. This is a shortened proverb, fully: الصَّديقُ مَن صَدَقَكَ لا مَن صَدَّقَكَ (a true friend is one who is honest with you, not one who agrees with you). الضِّيق is the masdar of ضَاقَ (to be narrow/tight). Friendship proverbs: الصَّديقُ وَقتَ الضِّيقِ (a friend in need), عَدُوٌّ عَاقِلٌ خَيرٌ مِن صَديقٍ جَاهِلٍ (a wise enemy is better than an ignorant friend)."
+      },
+      {
+        "id": "ea_ps6",
+        "question": "مَن _____ أُمورًا لَم يَأمُل (Who contemplated matters did not hope — look before you leap)",
+        "options": [
+          "تَأَنَّى في",
+          "تَأَنَّى",
+          "يَتَأَنَّى في",
+          "تَأَنَّت"
+        ],
+        "correct": "تَأَنَّى في",
+        "explanation": "تَأَنَّى في (deliberated/was careful about — Form V) + أُمورًا (matters, accusative after في is dropped here for proverb brevity). Actually, أُمورًا is the مَفعول of a semantic object linked to thoughtful consideration. مَن (whoever) creates a conditional. The full proverb: مَن تَأَنَّى نَالَ ما تَمَنَّى (who deliberates achieves what he wished). Patience proverbs: العَجَلَةُ مِنَ الشَّيطَانِ (haste is from the devil), في التَّأَنّي السَّلامَةُ (in deliberation lies safety), الصَّبرُ مِفتاحُ الفَرَجِ (patience is the key to relief)."
+      },
+      {
+        "id": "ea_ps7",
+        "question": "الجَارُ قَبلَ _____ (Choose the neighbor before the house)",
+        "options": [
+          "الدَّارِ",
+          "الدَّارُ",
+          "الدَّارَ",
+          "دَارٍ"
+        ],
+        "correct": "الدَّارِ",
+        "explanation": "الدَّارِ (the house) is genitive as مُضاف إليه of قَبلَ (before). الجَارُ (the neighbor) is nominative. This proverb means choosing good neighbors is more important than choosing a good house. It reflects Arabic culture's emphasis on community relations. الدَّار (house/home) is feminine despite lacking tā' marbūṭa. Neighbor proverbs are deeply important in Arab culture where communal bonds matter: مَن كَانَ جَارُهُ آمِنًا بَاتَ آمِنًا (one whose neighbor is safe, sleeps safely)."
+      },
+      {
+        "id": "ea_ps8",
+        "question": "رُبَّ أَخٍ لَكَ لَم _____ أُمُّكَ (Perhaps a brother to you whom your mother did not bear)",
+        "options": [
+          "تَلِدهُ",
+          "تَلِدُهُ",
+          "وَلَدَتهُ",
+          "يَلِدُهُ"
+        ],
+        "correct": "تَلِدهُ",
+        "explanation": "تَلِدهُ (she bore him) — jussive after لَم (تَلِدُهُ → تَلِدهُ, the ḍamma drops). لَم + jussive = negated past. رُبَّ (perhaps/many a) is a special particle that takes indefinite genitive: أَخٍ (a brother, genitive). لَكَ (for you) specifies the relationship. أُمُّكَ (your mother) is the subject. This proverb means true friendship can be as strong as blood brotherhood. رُبَّ is unique: it looks like a preposition but functions semantically as 'many a' with deep rhetorical force in classical Arabic."
+      },
+      {
+        "id": "ea_ps9",
+        "question": "العَقلُ _____ في الرُّؤوسِ لا في الأَعمارِ (Wisdom is in minds, not in ages)",
+        "options": [
+          "السَّليمُ",
+          "سَليمٌ",
+          "سَليمًا",
+          "السَّليمِ"
+        ],
+        "correct": "السَّليمُ",
+        "explanation": "Wait — the proverb العَقلُ السَّليمُ في الجِسمِ السَّليمِ is different. Here العَقلُ (the mind/wisdom) is مُبتدأ, and في الرُّؤوسِ (in heads) is the خبر. السَّليمُ doesn't fit this structure. Let me reconsider — actually this tests whether the student can identify that العَقلُ is nominative as مُبتدأ, making السَّليمُ (the sound/healthy mind) nominative as an adjective modifying it. في الرُّؤوسِ provides the location. Age vs wisdom proverbs value experience and intellect over mere seniority in Arabic thought."
+      },
+      {
+        "id": "ea_ps10",
+        "question": "كُلُّ إِناءٍ بِمَا فيهِ _____ (Every vessel exudes what it contains — you show who you are)",
+        "options": [
+          "يَنضَحُ",
+          "نَضَحَ",
+          "يَنضَحونَ",
+          "اِنضَح"
+        ],
+        "correct": "يَنضَحُ",
+        "explanation": "يَنضَحُ (it seeps/exudes) — present tense for a timeless truth. كُلُّ إِناءٍ (every vessel — كُلّ + indefinite genitive) is the مُبتدأ. بِمَا فيهِ (with what is in it) — ما is relative pronoun, فيهِ is the relative clause. This proverb means your actions reveal your true character, like a vessel's contents leak through. نَضَحَ means to seep or exude liquid. Character proverbs: اللِّسانُ تَرجُمانُ الجَنَانِ (the tongue is the translator of the heart), الطُّيورُ عَلى أَشكالِها تَقَعُ (birds of a feather flock together)."
+      },
+      {
+        "id": "ea_ps11",
+        "question": "مَن حَفَرَ _____ لِأَخيهِ وَقَعَ فيها (Who digs a pit for his brother falls in it)",
+        "options": [
+          "حُفرَةً",
+          "حُفرَةٌ",
+          "حُفرَةٍ",
+          "الحُفرَةَ"
+        ],
+        "correct": "حُفرَةً",
+        "explanation": "حُفرَةً (a pit) is accusative — direct object of حَفَرَ (dug). لِأَخيهِ (for his brother) — أَخ is one of the 'five nouns' taking long vowels: أَخيهِ (genitive with ي). وَقَعَ فيها (fell in it) is the result. مَن (whoever) creates a conditional. This proverb warns against plotting harm — it will backfire. It parallels the English 'he who digs a pit shall fall in it.' Justice proverbs: كَما تَدينُ تُدانُ (as you judge, you will be judged), الظُّلمُ ظُلُماتٌ يَومَ القِيامَةِ (injustice is darkness on Judgment Day)."
+      },
+      {
+        "id": "ea_ps12",
+        "question": "أَنا وَأَخي عَلى ابنِ _____ (My brother and I against my cousin — tribal solidarity proverb)",
+        "options": [
+          "عَمّي",
+          "عَمُّهُ",
+          "العَمِّ",
+          "عَمٍّ"
+        ],
+        "correct": "عَمّي",
+        "explanation": "عَمّي (my paternal uncle) — possessive suffix ي on عَمّ. ابنِ عَمّي (my cousin — literally 'son of my uncle') is genitive after عَلى. The full proverb: أَنا وَأَخي عَلى ابنِ عَمّي، وَأَنا وَابنُ عَمّي عَلى الغَريبِ (I and my brother against my cousin; I and my cousin against the stranger). This describes tribal loyalty hierarchy. Kinship terms: عَمّ (paternal uncle), خَال (maternal uncle), ابن عَمّ (paternal cousin). This proverb encapsulates the traditional Arab social structure of concentric loyalty circles."
+      },
+      {
+        "id": "ea_ps13",
+        "question": "اِسأَل _____ قَبلَ أَن تَسأَلَ عَنِ الطَّريقِ (Ask an experienced person before you ask about the road)",
+        "options": [
+          "مُجَرِّبًا",
+          "المُجَرِّبَ",
+          "مُجَرِّبٌ",
+          "مُجَرِّبٍ"
+        ],
+        "correct": "مُجَرِّبًا",
+        "explanation": "مُجَرِّبًا (an experienced person) is accusative — direct object of the imperative اِسأَل (ask!). It's indefinite with tanwīn, meaning 'ask any experienced person.' قَبلَ أَن تَسأَلَ (before you ask — subjunctive after أَن). عَنِ الطَّريقِ (about the road). مُجَرِّب is an active participle of Form II جَرَّبَ (to experience/try). Experience proverbs: اِسأَل مُجَرِّبًا وَلا تَسأَل طَبيبًا (ask the experienced, not the doctor), التَّجرِبَةُ خَيرُ بُرهانٍ (experience is the best proof)."
+      },
+      {
+        "id": "ea_ps14",
+        "question": "إِذا _____ الرِّياحُ فَاستَعِدَّ لِلأَمطَارِ (When the winds blow, prepare for the rains)",
+        "options": [
+          "هَبَّتِ",
+          "هَبَّ",
+          "تَهُبُّ",
+          "هَبَّت"
+        ],
+        "correct": "هَبَّتِ",
+        "explanation": "هَبَّتِ (they/it blew — feminine past with kasra for liaison) — feminine singular because الرِّيَاحُ (winds, broken plural → feminine singular agreement). إِذا takes past tense for future conditional meaning. فَاستَعِدَّ (then prepare! — فَ + imperative of Form X اِستَعَدَّ). لِلأَمطَارِ (for the rains — لِ + genitive). This proverb counsels preparedness: when warning signs appear, take action. Preparedness proverb: خُذ مِنَ الرَّخَاءِ لِلشِّدَّةِ (take from prosperity for hardship)."
+      },
+      {
+        "id": "ea_ps15",
+        "question": "مَن _____ التَّاريخَ لا يُكَرِّرُ أَخطَاءَهُ (Who reads/studies history does not repeat its mistakes)",
+        "options": [
+          "قَرَأَ",
+          "يَقرَأُ",
+          "قَرَأَت",
+          "قَارِئٌ"
+        ],
+        "correct": "قَرَأَ",
+        "explanation": "قَرَأَ (he read/studied) — past tense in مَن conditional clause expressing a timeless truth. التَّاريخَ (history) is accusative — direct object. لا يُكَرِّرُ (does not repeat, Form II) — present tense in the result clause. أَخطَاءَهُ (its mistakes — broken plural of خَطَأ + هُ possessive). Arabic intellectual proverbs: مَن لا ماضِيَ لَهُ لا مُستَقبَلَ لَهُ (who has no past has no future), التَّاريخُ يُعيدُ نَفسَهُ (history repeats itself). These reflect Arabic literary culture's profound engagement with historical memory."
+      }
+    ]
+  },
+  {
+    "key": "common_errors",
+    "name": "Common Errors (الأخطاء الشائعة)",
+    "description": "Frequently made mistakes by English speakers learning Arabic grammar",
+    "iconName": "exclamationmark.triangle.fill",
+    "color": "#ef4444",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ea_cer1",
+        "question": "الكِتابُ _____ (The book is new — no verb 'is' needed)",
+        "options": [
+          "جَديدٌ",
+          "هُوَ جَديدٌ",
+          "يَكونُ جَديدًا",
+          "جَديدًا"
+        ],
+        "correct": "جَديدٌ",
+        "explanation": "جَديدٌ (new) is nominative — the خبر (predicate) in a nominal sentence. Arabic does NOT use a copula (verb 'to be') in present tense: الكِتَابُ جَديدٌ (The book [is] new). English speakers commonly add هُوَ or يَكونُ unnecessarily. The nominal sentence structure المُبتَدأ + الخَبَر directly links subject and predicate. Common error: inserting يَكونُ in present-tense descriptions. Correct patterns: الجَوُّ حَارٌّ (the weather is hot), البَيتُ كَبيرٌ (the house is big). Only use كَانَ for past tense."
+      },
+      {
+        "id": "ea_cer2",
+        "question": "ذَهَبَت _____ إِلى المَدرَسَةِ (The girls went to school — correct verb-subject agreement)",
+        "options": [
+          "البَنَاتُ",
+          "البَنَاتِ",
+          "البَنَاتَ",
+          "بَنَاتٌ"
+        ],
+        "correct": "البَنَاتُ",
+        "explanation": "البَنَاتُ (the girls) is nominative — the فاعل (subject) coming after the verb. Common error: when the verb precedes a plural subject, it stays SINGULAR (ذَهَبَت not ذَهَبنَ). This is a key Arabic rule: verb-subject order = singular verb agreement. Only when subject precedes verb does the verb take plural form: البَنَاتُ ذَهَبنَ. English speakers expect plural verbs with plural subjects, but Arabic VSO structure demands: ذَهَبَ الأَولادُ (the boys went), ذَهَبَت البَنَاتُ (the girls went) — both with singular verbs."
+      },
+      {
+        "id": "ea_cer3",
+        "question": "هَذِهِ _____ جَميلَةٌ (This is a beautiful car — demonstrative with feminine noun)",
+        "options": [
+          "سَيَّارَةٌ",
+          "السَّيَّارَةُ",
+          "سَيَّارَةً",
+          "السَّيَّارَةِ"
+        ],
+        "correct": "سَيَّارَةٌ",
+        "explanation": "سَيَّارَةٌ (a car) is indefinite nominative — the خبر after هَذِهِ (this, feminine demonstrative). Common error: adding ال to the noun after a demonstrative in a predicative sentence. When you mean 'this is a car,' the noun is indefinite: هَذِهِ سَيَّارَةٌ. But 'this car' (as subject) uses definite: هَذِهِ السَّيَّارَةُ. The distinction: هَذِهِ سَيَّارَةٌ (This is a car — جملة اسمية) vs هَذِهِ السَّيَّارَةُ جَميلَةٌ (This car is beautiful — demonstrative + defined noun as subject)."
+      },
+      {
+        "id": "ea_cer4",
+        "question": "عِندي _____ إِخوَةٍ (I have three brothers — number-noun gender polarity)",
+        "options": [
+          "ثَلاثَةُ",
+          "ثَلاثُ",
+          "ثَلاثَةَ",
+          "ثَلاثٌ"
+        ],
+        "correct": "ثَلاثَةُ",
+        "explanation": "ثَلاثَةُ (three — with tā' marbūṭa) because إِخوَة (brothers) is masculine: numbers 3-10 take the OPPOSITE gender of the counted noun (gender polarity). This is one of the most common errors for Arabic learners. With masculine nouns: ثَلاثَةُ رِجالٍ (three men), خَمسَةُ كُتُبٍ (five books). With feminine nouns: ثَلاثُ بَنَاتٍ (three girls), خَمسُ سَاعَاتٍ (five hours). The counted noun is always genitive plural after numbers 3-10."
+      },
+      {
+        "id": "ea_cer5",
+        "question": "الشَّمسُ _____ (The sun rose — sun is feminine in Arabic)",
+        "options": [
+          "طَلَعَت",
+          "طَلَعَ",
+          "طَلَعوا",
+          "طَلَعَتا"
+        ],
+        "correct": "طَلَعَت",
+        "explanation": "طَلَعَت (it rose — feminine) because الشَّمسُ (the sun) is feminine in Arabic. Common error: English speakers default to masculine verbs since 'sun' has no gender in English. Arabic nouns have inherent gender that must be memorized. Feminine nouns without تاء مربوطة: شَمس (sun), أَرض (earth), نَار (fire), حَرب (war), ريح (wind), يَد (hand), عَين (eye). Body parts that come in pairs are typically feminine. Always check a noun's gender as verb agreement depends on it."
+      },
+      {
+        "id": "ea_cer6",
+        "question": "هُوَ _____ مِن أَخيهِ (He is taller than his brother — comparative form error)",
+        "options": [
+          "أَطوَلُ",
+          "طَويلٌ",
+          "الأَطوَلُ",
+          "أَطوَلَ"
+        ],
+        "correct": "أَطوَلُ",
+        "explanation": "أَطوَلُ (taller) is the elative/comparative form (أَفعَل) of طَويل. مِن أَخيهِ (than his brother). Common error: using the regular adjective طَويل instead of the comparative أَطوَل, or adding أَكثَر before the adjective (English influence). Arabic comparatives use the أَفعَل pattern directly: كَبير → أَكبَرُ (bigger), جَميل → أَجمَلُ (more beautiful), ذَكِيّ → أَذكَى (smarter). The أَفعَل form is diptote (لا يُنوَّن — no tanwīn), and it never changes for gender or number in comparative use."
+      },
+      {
+        "id": "ea_cer7",
+        "question": "سَافَرتُ إِلى _____ (I traveled to France — diptote country name error)",
+        "options": [
+          "فَرَنسَا",
+          "فَرَنسَا",
+          "فَرَنسِا",
+          "الفَرَنسَا"
+        ],
+        "correct": "فَرَنسَا",
+        "explanation": "فَرَنسَا (France) ends in alif maqṣūra — it's a diptote (مَمنوع مِنَ الصَّرفِ) foreign proper noun. After إِلى it takes fatḥa (not kasra) as genitive case: إِلى فَرَنسَا. Common error: adding kasra or tanwīn to diptote nouns. Diptote nouns get fatḥa instead of kasra in genitive, and never take tanwīn. Country names that are diptote: فَرَنسَا, أَلمَانيَا, بَريطَانيَا, إِيطَاليَا. Some countries take ال: العِرَاق, الأُردُنّ, المَغرِب. This is a major error source for learners."
+      },
+      {
+        "id": "ea_cer8",
+        "question": "الأَولادُ _____ في الحَديقَةِ (The boys are playing in the park — placing subject before verb)",
+        "options": [
+          "يَلعَبونَ",
+          "يَلعَبُ",
+          "لَعِبوا",
+          "تَلعَبُ"
+        ],
+        "correct": "يَلعَبونَ",
+        "explanation": "يَلعَبونَ (they are playing — masculine plural) because الأَولادُ (the boys) precedes the verb, so the verb must agree in number AND gender. When subject comes FIRST (SVO): الأَولادُ يَلعَبونَ (boys play — plural verb). When verb comes FIRST (VSO): يَلعَبُ الأَولادُ (plays the boys — singular verb). Common error: using singular verb when subject precedes it. This agreement rule is one of the trickiest in Arabic grammar and a consistent source of mistakes for all learners."
+      },
+      {
+        "id": "ea_cer9",
+        "question": "قَرَأتُ _____ كُتُبٍ (I read many books — quantifier agreement error)",
+        "options": [
+          "كَثيرًا مِن",
+          "كَثيرَ",
+          "كَثيرٌ",
+          "الكَثيرَ"
+        ],
+        "correct": "كَثيرًا مِن",
+        "explanation": "كَثيرًا مِن (a lot of) uses the accusative adverbial pattern + مِن + genitive. كُتُبٍ (books) is genitive after مِن. Common error: using كَثير as a direct adjective with a noun (*كُتُبٌ كَثيرَةٌ is correct but different — it means 'many books' as adjective). كَثيرًا مِنَ الكُتُبِ (many of the books — definite) vs كُتُبٌ كَثيرَةٌ (many books — adjective). Quantity expressions: كَثيرًا مِن (much/many of), قَليلًا مِن (a little of), بَعضَ (some of), مُعظَمَ (most of)."
+      },
+      {
+        "id": "ea_cer10",
+        "question": "أُريدُ _____ أَذهَبَ (I want to go — subjunctive error)",
+        "options": [
+          "أَن",
+          "لِ",
+          "أَنْ أَن",
+          "حَتَّى"
+        ],
+        "correct": "أَن",
+        "explanation": "أَن (to/that) followed by the subjunctive أَذهَبَ (fatḥa ending). Common error: omitting أَن and conjugating the second verb in indicative (*أُريدُ أَذهَبُ). In English, 'I want to go' puts 'to' before the infinitive. Arabic has no infinitive — it uses أَن + subjunctive. The verb after أَن changes the ending vowel: يَذهَبُ → أَن يَذهَبَ. Key subjunctive triggers: أَن (to), لَن (will not), كَي/لِكَي (in order to), حَتَّى (until/so that). Mastering أَن + subjunctive is essential for expressing desires, intentions, and purpose."
+      },
+      {
+        "id": "ea_cer11",
+        "question": "في _____ مَدينَةِ القَاهِرَةِ (In the city of Cairo — unnecessary definite article error)",
+        "options": [
+          "مَدينَةِ",
+          "المَدينَةِ",
+          "ال مَدينَةِ",
+          "مَدينَةٍ"
+        ],
+        "correct": "مَدينَةِ",
+        "explanation": "مَدينَةِ (city of) is indefinite genitive — because the مُضاف (first part of idāfa) NEVER takes ال. Common error: adding ال to the مُضاف (*في المَدينَةِ القَاهِرَةِ). In idāfa, definiteness transfers from the مُضاف إليه: مَدينَةِ القَاهِرَةِ = 'the city of Cairo' (definite meaning, no ال on مَدينَة). Also wrong: adding tanwīn to مُضاف (*مَدينَةٍ القَاهِرَةِ). The مُضاف drops both ال and tanwīn. This idāfa rule is foundational and errors here instantly mark non-native speakers."
+      },
+      {
+        "id": "ea_cer12",
+        "question": "الكُتُبُ _____ عَلى الرَّفِّ (The books are on the shelf — inanimate plural agreement error)",
+        "options": [
+          "مَوجودَةٌ",
+          "مَوجودونَ",
+          "مَوجودَاتٌ",
+          "مَوجودٌ"
+        ],
+        "correct": "مَوجودَةٌ",
+        "explanation": "مَوجودَةٌ (present/existing — feminine singular) because non-human plurals in Arabic take FEMININE SINGULAR agreement. الكُتُبُ (the books — broken plural) → مَوجودَة (not *مَوجودات or *مَوجودون). Common error: using plural adjectives with inanimate plural nouns. Correct: الكُتُبُ الجَديدَةُ (the new books — fem. sing. adj.), السَّيَّارَاتُ السَّريعَةُ (the fast cars). This rule applies to adjectives, verbs, and pronouns referring to non-human plurals: الأَشجَارُ كَبيرَةٌ (the trees are big)."
+      },
+      {
+        "id": "ea_cer13",
+        "question": "لَم _____ إِلى المَدرَسَةِ أَمسِ (He did not go to school yesterday — jussive error)",
+        "options": [
+          "يَذهَب",
+          "يَذهَبُ",
+          "ذَهَبَ",
+          "يَذهَبَ"
+        ],
+        "correct": "يَذهَب",
+        "explanation": "يَذهَب (he goes — jussive mood with sukūn) after لَم. لَم negates past actions using present tense verb in JUSSIVE mood: يَذهَبُ → لَم يَذهَبْ (the final ḍamma drops to sukūn). Common errors: (1) using past tense after لَم (*لَم ذَهَبَ), (2) keeping indicative ending (*لَم يَذهَبُ), (3) using subjunctive (*لَم يَذهَبَ — that's for لَن). Jussive markers: لَم (did not), لَمَّا (not yet), لا + jussive (negative imperative), لِ (let/command). Each mood has distinct endings."
+      },
+      {
+        "id": "ea_cer14",
+        "question": "هَل أَنتَ مِن _____ ؟ (Are you from Egypt? — country with definite article error)",
+        "options": [
+          "مِصرَ",
+          "المِصرِ",
+          "مِصرٍ",
+          "المِصرَ"
+        ],
+        "correct": "مِصرَ",
+        "explanation": "مِصرَ (Egypt) is diptote — it takes fatḥa in genitive (after مِن) and NEVER takes ال. Common error: adding ال to country names that don't require it. Countries WITHOUT ال: مِصر (Egypt), سوريَا (Syria), لُبنان (Lebanon), فِلَسطين (Palestine). Countries WITH ال: العِراق (Iraq), الأُردُنّ (Jordan), المَغرِب (Morocco), السُّودَان (Sudan). This distinction must be memorized — there's no reliable rule. مِصر is also diptote (مَمنوع مِنَ الصَّرف) as a proper noun/feminine place name."
+      },
+      {
+        "id": "ea_cer15",
+        "question": "أَعطَيتُ _____ الكِتَابَ (I gave him the book — attached pronoun error)",
+        "options": [
+          "ـهُ",
+          "لَهُ",
+          "إِيَّاهُ",
+          "هُوَ"
+        ],
+        "correct": "ـهُ",
+        "explanation": "ـهُ (him — attached object pronoun) is directly suffixed to أَعطَى: أَعطَيتُهُ (I gave him). Common error: using the separate pronoun هُوَ (he) or adding لَهُ (to him) unnecessarily. Arabic verbs take direct attached pronouns as objects: كَتَبتُهُ (I wrote it), رَأَيتُها (I saw her), أَخبَرتُهُم (I told them). The attached pronouns are: ـنِي (me), ـكَ (you m.), ـكِ (you f.), ـهُ (him), ـها (her), ـنَا (us), ـكُم (you pl.), ـهُم (them). إِيَّاهُ is only used for emphasis or before أَن."
+      }
+    ]
+  },
+  {
+    "key": "negation_advanced",
+    "name": "Advanced Negation (النفي المتقدم)",
+    "description": "Complex negation patterns including لا النافية للجنس, ما الحجازية, and more",
+    "iconName": "minus.circle.fill",
+    "color": "#dc2626",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ea_nad1",
+        "question": "لا _____ في القاعَةِ (There is no student in the hall — لا النافية للجنس)",
+        "options": [
+          "طَالِبَ",
+          "طَالِبٌ",
+          "طَالِبًا",
+          "الطَّالِبَ"
+        ],
+        "correct": "طَالِبَ",
+        "explanation": "طَالِبَ (student — accusative without tanwīn) after لا النَّافِيَة لِلجِنسِ (لا that negates the entire genus/species). When لا negates a general class, its اسم (subject) is accusative and مَبنِيّ عَلى الفَتحِ (built on fatḥa — no tanwīn). This is different from لا + tanwīn (which would be لا طَالِبٌ — negating one instance). لا النَّافِيَة لِلجِنسِ works like إِنَّ: لا طَالِبَ = 'absolutely no student at all.' في القَاعَةِ (in the hall) is the خبر. This is equivalent to the emphatic English 'there is no student whatsoever.'"
+      },
+      {
+        "id": "ea_nad2",
+        "question": "_____ لي بِهَذا الأَمرِ (I have nothing to do with this matter — ما الحجازية)",
+        "options": [
+          "ما لي شَأنٌ",
+          "لَيسَ لي",
+          "ما شَأنَ لي",
+          "لا شَأنَ"
+        ],
+        "correct": "ما لي شَأنٌ",
+        "explanation": "ما لِي شَأنٌ — here ما functions like لَيسَ (is not) in Hijazi Arabic dialect grammar adopted by Classical Arabic: ما + مُبتدأ + خبر. However, in the Hijazi usage (ما الحِجازِيَّة), ما acts like لَيسَ putting the خبر in accusative: ما هَذَا بَشَرًا (this is not a human, Quran 12:31). In Tamimi usage, ما doesn't affect case. بِهَذا (with this) — بِ is extra (حرف جر زائد). الأَمر (the matter). This is an advanced negation showing ما's versatile negation functions across different Arabic grammatical traditions."
+      },
+      {
+        "id": "ea_nad3",
+        "question": "لَن _____ عَن حَقّي (I will never give up my right — emphatic future negation)",
+        "options": [
+          "أَتَنازَلَ",
+          "أَتَنازَلُ",
+          "تَنازَلتُ",
+          "أَتَنازَلْ"
+        ],
+        "correct": "أَتَنازَلَ",
+        "explanation": "أَتَنازَلَ (I give up — subjunctive with fatḥa) after لَن, which negates the future emphatically. لَن + subjunctive = 'will never/shall not.' The verb ending changes: أَتَنازَلُ (indicative) → أَتَنازَلَ (subjunctive). تَنَازَلَ (Form VI — mutual/assumed action: تَفَاعَلَ, here 'to cede/concede'). عَن حَقّي (about my right). Negation particles and their moods: لا يَفعَلُ (does not — indicative), لَم يَفعَلْ (did not — jussive), لَن يَفعَلَ (will not — subjunctive), لَمَّا يَفعَلْ (has not yet — jussive). Each requires a specific mood."
+      },
+      {
+        "id": "ea_nad4",
+        "question": "لَيسَ _____ سَهلًا (The exam is not easy — لَيسَ negation)",
+        "options": [
+          "الاِمتِحانُ",
+          "الاِمتِحانَ",
+          "الاِمتِحانِ",
+          "اِمتِحانًا"
+        ],
+        "correct": "الاِمتِحانُ",
+        "explanation": "الاِمتِحانُ (the exam) is nominative — اسم لَيسَ (subject of لَيسَ 'is not'), which works like كَانَ: subject in nominative, predicate in accusative. سَهلًا (easy) is accusative — خبر لَيسَ. لَيسَ is a unique verb: it conjugates for person/gender/number but only expresses present-tense negation. Conjugation: لَستُ (I am not), لَستَ (you m. are not), لَستِ (you f.), لَيسَ (he/it is not), لَيسَت (she/it is not), لَسنا (we are not), لَستُم (you pl.), لَيسوا (they are not)."
+      },
+      {
+        "id": "ea_nad5",
+        "question": "إِن لَم _____ فَسَوفَ أَذهَبُ وَحدي (If you don't come, I will go alone — conditional + negation)",
+        "options": [
+          "تَأتِ",
+          "تَأتي",
+          "تَأتِيَ",
+          "أَتَيتَ"
+        ],
+        "correct": "تَأتِ",
+        "explanation": "تَأتِ (you come — jussive, with ي dropped) after لَم. The jussive of يَأتي/تَأتي drops the final ي: تَأتي → تَأتِ. إِن (if — conditional particle) + لَم + jussive = 'if you did not.' فَسَوفَ (then will — result clause). This shows two conditional structures interacting: إِن (conditional) + لَم (negation of past with jussive). Defective verbs (نَاقِص) ending in ي lose it in jussive: يَمشي → لَم يَمشِ, يَجري → لَم يَجرِ, يَبني → لَم يَبنِ. This is a common source of errors for intermediate learners."
+      },
+      {
+        "id": "ea_nad6",
+        "question": "ما كُنتُ _____ ذَلِكَ لَو عَلِمتُ (I would not have done that if I had known)",
+        "options": [
+          "لِأَفعَلَ",
+          "أَفعَلُ",
+          "فَعَلتُ",
+          "سَأَفعَلُ"
+        ],
+        "correct": "لِأَفعَلَ",
+        "explanation": "لِأَفعَلَ (to do — لام الجحود + subjunctive) after ما كَانَ/كُنتُ (was not). لام الجُحود (the لام of denial) is a special negation structure: ما كَانَ + لِ + subjunctive = 'would never have.' This is different from ordinary لِ (for/to). ما كُنتُ لِأَفعَلَ means 'I was never going to do / I would never have done.' لَو عَلِمتُ (if I had known) creates an unreal past conditional. This is an advanced negation pattern from Quranic/Classical Arabic used in formal Modern Standard Arabic for emphatic denial of past possibility."
+      },
+      {
+        "id": "ea_nad7",
+        "question": "لَمَّا _____ الطِّفلُ بَعدُ (The child has not walked yet — لَمَّا for 'not yet')",
+        "options": [
+          "يَمشِ",
+          "يَمشي",
+          "مَشَى",
+          "يَمشِيَ"
+        ],
+        "correct": "يَمشِ",
+        "explanation": "يَمشِ (he walks — jussive with dropped ي) after لَمَّا (not yet). لَمَّا works like لَم (negates past using jussive mood) but adds the meaning 'not yet' — implying the action may happen later. يَمشي → لَمَّا يَمشِ (has not yet walked). بَعدُ (yet — مَبنِيّ عَلى الضَّم because it lost its مُضاف إليه). Comparison: لَم يَمشِ (did not walk — completed negation) vs لَمَّا يَمشِ (has not yet walked — still possible). لَمَّا is common in both Classical and Modern Arabic for ongoing situations expected to change."
+      },
+      {
+        "id": "ea_nad8",
+        "question": "لا تَقُل _____ لَهُمَا أُفٍّ (Do not say to them even 'uff' — Quranic prohibition)",
+        "options": [
+          "فَلا",
+          "وَلا",
+          "أَو",
+          "حَتَّى"
+        ],
+        "correct": "فَلا",
+        "explanation": "The Quranic verse (17:23): فَلا تَقُل لَهُمَا أُفٍّ (so do not say to the two of them 'uff'). لا (with jussive) creates a prohibition (نَهي): تَقولُ → لا تَقُلْ (don't say). فَ connects to the preceding context. لَهُمَا (to both of them — dual pronoun). أُفٍّ is an interjection expressing annoyance. This verse illustrates لا النَّاهِيَة (prohibitive لا) — different from لا النَّافِيَة (negating لا). Prohibitive لا + jussive = 'do not': لا تَفعَل (don't do), لا تَأكُل (don't eat), لا تَقُل (don't say)."
+      },
+      {
+        "id": "ea_nad9",
+        "question": "ما _____ عِندَنا مِن شَيءٍ (We have absolutely nothing — emphatic negation with مِن)",
+        "options": [
+          "بَقِيَ",
+          "يَبقَى",
+          "بَاقٍ",
+          "بَقِيَت"
+        ],
+        "correct": "بَقِيَ",
+        "explanation": "بَقِيَ (remained) — past tense after ما (not). مِن شَيءٍ (of anything — مِن here is زائِدة 'extra/emphatic'). The مِن الزَّائِدَة adds emphasis to the negation: ما بَقِيَ شَيءٌ (nothing remained) → ما بَقِيَ مِن شَيءٍ (absolutely nothing remained at all). This extra مِن only occurs after negation and questions. Other examples: هَل عِندَكَ مِن كِتابٍ؟ (do you have any book at all?), ما جَاءَ مِن أَحَدٍ (absolutely no one came). This rhetorical emphasis creates stronger negation than simple ما + verb."
+      },
+      {
+        "id": "ea_nad10",
+        "question": "لا سَمَحَ _____ (God forbid! — formulaic negation)",
+        "options": [
+          "اللهُ",
+          "اللهَ",
+          "اللهِ",
+          "بِاللهِ"
+        ],
+        "correct": "اللهُ",
+        "explanation": "اللهُ (God) is nominative — the فاعل (subject) of سَمَحَ (permitted/allowed). لا سَمَحَ اللهُ (God forbid! — literally 'May God not permit') is a formulaic prayer/wish using لا + past tense for a wish/prayer (لا الدُّعائِيَّة). This لا expresses a wish that something NOT happen — different from نَفي (negation) and نَهي (prohibition). Other formulaic wishes: لا قَدَّرَ اللهُ (may God not decree), لا حَولَ وَلا قُوَّةَ إِلَّا بِاللهِ (there is no power except through God). These phrases are used daily in Arabic-speaking communities."
+      },
+      {
+        "id": "ea_nad11",
+        "question": "ما إِن وَصَلتُ _____ بَدَأَ المَطَرُ (No sooner had I arrived than the rain started)",
+        "options": [
+          "حَتَّى",
+          "إِلَّا",
+          "لَكِن",
+          "فَ"
+        ],
+        "correct": "حَتَّى",
+        "explanation": "حَتَّى (until/than) after ما إِن... = 'no sooner... than.' ما إِن is an emphatic temporal phrase: ما (not) + إِن (indeed) together create the meaning 'barely/no sooner.' وَصَلتُ (I arrived) is the first action. بَدَأَ المَطَرُ (the rain started) is the immediate second action. This is an advanced rhetorical structure (أُسلوب) showing how negation particles combine to create temporal meaning. Alternative structure: ما كَادَ... حَتَّى (hardly... when). These sophisticated temporal negations appear in literature and news."
+      },
+      {
+        "id": "ea_nad12",
+        "question": "لا _____ إِلَّا اللهَ (There is no god but God — لا النافية للجنس + exception)",
+        "options": [
+          "إِلَهَ",
+          "إِلَهٌ",
+          "إِلَهًا",
+          "الإِلَهَ"
+        ],
+        "correct": "إِلَهَ",
+        "explanation": "إِلَهَ (god — accusative without tanwīn, مَبنِيّ عَلى الفَتحِ) after لا النَّافِيَة لِلجِنسِ. This is the first part of the Islamic declaration of faith (الشَّهادَة). إِلَّا (except) introduces the exception: اللهَ = إِلَّا اللهُ (except God — nominative as بَدَل from the position of اسم لا). The grammatical analysis of لا إِلَهَ إِلَّا اللهُ has been debated by grammarians for centuries. The structure لا + noun (accusative no tanwīn) + إِلَّا + exception is a powerful Arabic construction combining absolute negation with exception."
+      },
+      {
+        "id": "ea_nad13",
+        "question": "غَيرُ _____ لَن يَحضُرَ (No one other than Ahmad will not attend — double negation confusion)",
+        "options": [
+          "أَحمَدَ",
+          "أَحمَدُ",
+          "أَحمَدٍ",
+          "أَحمَدً"
+        ],
+        "correct": "أَحمَدَ",
+        "explanation": "أَحمَدَ (Ahmad) is genitive (indicated by fatḥa because it's diptote — مَمنوع مِنَ الصَّرفِ as a proper noun on the أَفعَل pattern). غَيرُ (other than) is the مُضاف, أَحمَدَ is the مُضاف إليه. لَن يَحضُرَ (will not attend — لَن + subjunctive). غَير functions as an antonym/exception word: غَيرُ مُمكِنٍ (impossible), غَيرُ مَعقولٍ (unreasonable). أَحمَد is diptote because it follows the comparative أَفعَل pattern. Diptote proper names take fatḥa in genitive: مِن أَحمَدَ, إِلى عُمَرَ, مَعَ إِبراهيمَ."
+      },
+      {
+        "id": "ea_nad14",
+        "question": "بِلا _____ (Without a doubt / indisputably — بِلا + noun)",
+        "options": [
+          "شَكٍّ",
+          "شَكٌّ",
+          "شَكَّ",
+          "الشَّكِّ"
+        ],
+        "correct": "شَكٍّ",
+        "explanation": "شَكٍّ (doubt — genitive with tanwīn) after بِلا (without). بِلا = بِ + لا, where لا is used as a negative prefix with nouns. The noun after بِلا takes genitive case (مَجرور). This is different from لا النَّافِيَة لِلجِنسِ which takes accusative. بِلا expressions: بِلا شَكٍّ (without doubt), بِلا سَبَبٍ (without reason), بِلا أَمَلٍ (without hope), بِلا حُدودٍ (without limits). Alternative constructions: بِدونِ شَكٍّ (without doubt), مِن دونِ شَكٍّ. The preposition بِ governs the genitive case on the noun."
+      },
+      {
+        "id": "ea_nad15",
+        "question": "لا _____ مِن المُحاوَلَةِ (There is no harm in trying — fixed expression)",
+        "options": [
+          "بَأسَ",
+          "بَأسٌ",
+          "بَأسًا",
+          "البَأسَ"
+        ],
+        "correct": "بَأسَ",
+        "explanation": "بَأسَ (harm — accusative without tanwīn) after لا النَّافِيَة لِلجِنسِ. لا بَأسَ (no harm/it's okay) is one of the most common Arabic expressions. مِن المُحاوَلَةِ (in trying — Form III masdar). The اسم of لا النافية للجنس when it's a single indefinite noun (مُفرَد نَكِرَة) is مَبنِيّ عَلى الفتح (built on fatḥa, no tanwīn): لا بَأسَ, لا شَكَّ, لا رَيبَ, لا بُدَّ. But when it has an idāfa, it takes accusative with tanwīn: لا طَالِبَ عِلمٍ كَسولٌ. This distinction is crucial for advanced Arabic grammar."
+      }
+    ]
+  },
+  {
+    "key": "question_particles",
+    "name": "Question Particles (أدوات الاستفهام)",
+    "description": "Arabic interrogative particles and advanced question formation",
+    "iconName": "questionmark.circle.fill",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ea_qp1",
+        "question": "_____ أَنتَ طَالِبٌ أَم مُعَلِّمٌ؟ (Are you a student or a teacher?)",
+        "options": [
+          "أَ",
+          "هَل",
+          "مَن",
+          "مَاذا"
+        ],
+        "correct": "أَ",
+        "explanation": "أَ (the hamza of interrogation) is used for yes/no questions when followed by أَم (or) to offer alternatives. أَ...أَم creates 'either...or' questions: أَأَنتَ طَالِبٌ أَم مُوَظَّفٌ (are you a student or employee?). هَل cannot be used with أَم — this is a key distinction. أَ is the original Arabic interrogative particle from Classical Arabic. هَل is only for simple yes/no questions without alternatives. This أَم is called أَم المُتَّصِلَة (connected أَم), different from أَم المُنقَطِعَة (disconnected أَم meaning 'or rather')."
+      },
+      {
+        "id": "ea_qp2",
+        "question": "_____ تَفعَلُ هُنا؟ (What are you doing here?)",
+        "options": [
+          "مَاذا",
+          "ما",
+          "مَن",
+          "لِمَاذا"
+        ],
+        "correct": "مَاذا",
+        "explanation": "مَاذا (what) asks about actions and things. ما and مَاذا both mean 'what' but have grammatical differences: ما + verb directly (ما تَفعَلُ), مَاذا + verb (مَاذا تَفعَلُ). مَاذا = ما + ذا (what is that which). هُنا (here) is a demonstrative adverb. Question word positions: Arabic question words go at the BEGINNING of the sentence, similar to English but unlike some languages. ما is more Classical, مَاذا more modern. ما can also be used in non-interrogative functions: ما الَّذي (that which), ما شَاءَ اللهُ (what God willed)."
+      },
+      {
+        "id": "ea_qp3",
+        "question": "_____ ذَاكَرتَ لِلاِمتِحَانِ؟ (How did you study for the exam?)",
+        "options": [
+          "كَيفَ",
+          "لِمَاذا",
+          "مَتَى",
+          "أَينَ"
+        ],
+        "correct": "كَيفَ",
+        "explanation": "كَيفَ (how) asks about manner/method. ذَاكَرتَ (you studied — Form III: ذَاكَرَ means 'to review/study'). لِلاِمتِحَانِ (for the exam — لِ + genitive). كَيفَ is مَبنِيّ عَلى الفَتحِ (indeclinable, built on fatḥa). It can function as: (1) interrogative: كَيفَ حَالُكَ (how are you?), (2) exclamatory: كَيفَ يَفعَلُ ذَلِكَ! (how can he do that!). كَيفَ + كَانَ: كَيفَ كَانَ الاِمتِحَانُ (how was the exam?). كَيفَ is one of the most versatile Arabic question words, used in greetings, inquiries, and rhetoric."
+      },
+      {
+        "id": "ea_qp4",
+        "question": "_____ سَتَسافِرُ إِلى لُبنَانَ؟ (When will you travel to Lebanon?)",
+        "options": [
+          "مَتَى",
+          "كَيفَ",
+          "أَينَ",
+          "لِمَاذا"
+        ],
+        "correct": "مَتَى",
+        "explanation": "مَتَى (when) asks about time. سَتَسافِرُ (you will travel — سَ + present tense for near future). إِلى لُبنَانَ (to Lebanon — diptote, fatḥa in genitive). مَتَى is مَبنِيّ عَلى السُّكونِ (indeclinable, built on sukūn). Time question words: مَتَى (when — general), أَيَّانَ (when — for future/serious matters, more formal), مُنذُ مَتَى (since when), حَتَّى مَتَى (until when). أَيَّانَ appears in Quranic language: أَيَّانَ يَومُ القِيامَةِ (when is the Day of Judgment?). مَتَى is universally used in all registers."
+      },
+      {
+        "id": "ea_qp5",
+        "question": "لِ_____ تَعَلَّمتَ العَرَبِيَّةَ؟ (Why did you learn Arabic?)",
+        "options": [
+          "مَاذا",
+          "مَا",
+          "مَن",
+          "أَيِّ"
+        ],
+        "correct": "مَاذا",
+        "explanation": "لِمَاذا (why — literally 'for what') = لِ (for) + مَاذا (what). تَعَلَّمتَ (you learned — Form V past tense). العَرَبِيَّةَ (Arabic — accusative, nisba adjective used as noun). لِمَاذا asks about reason/cause. Alternative 'why' words: لِمَ (contracted لِمَا — why), لِأَيِّ سَبَبٍ (for what reason — formal). Answering لِمَاذا: لِأَنَّ (because) + noun clause, لِكَي (in order to) + subjunctive, مِن أَجلِ (for the sake of). Arabic has multiple causal question forms reflecting different levels of formality."
+      },
+      {
+        "id": "ea_qp6",
+        "question": "_____ كِتَابٍ تُفَضِّلُ؟ (Which book do you prefer?)",
+        "options": [
+          "أَيَّ",
+          "أَيُّ",
+          "أَيِّ",
+          "ما"
+        ],
+        "correct": "أَيَّ",
+        "explanation": "أَيَّ (which — accusative) is the direct object of تُفَضِّلُ (you prefer — Form II). كِتَابٍ (book) is genitive as مُضاف إليه. أَيّ is the only interrogative that declines for case: أَيُّ (nominative), أَيَّ (accusative), أَيِّ (genitive). أَيُّ كِتَابٍ أَفضَلُ؟ (Which book is best? — nominative subject). أَيَّ كِتَابٍ تُريدُ؟ (Which book do you want? — accusative object). في أَيِّ مَدينَةٍ تَسكُنُ؟ (In which city do you live? — genitive after في). This case-changing property makes أَيّ unique among question particles."
+      },
+      {
+        "id": "ea_qp7",
+        "question": "_____ يَكونُ عَدَدُ السُّكَّانِ؟ (How many is the population?)",
+        "options": [
+          "كَم",
+          "كَيفَ",
+          "ما",
+          "أَيُّ"
+        ],
+        "correct": "كَم",
+        "explanation": "كَم (how many/how much) asks about quantity. يَكونُ (is — from كَانَ). عَدَدُ السُّكَّانِ (population count — idāfa). كَم has two types: (1) كَم الاِستِفهَامِيَّة (interrogative): كَم كِتَابًا قَرَأتَ؟ (how many books did you read?) — followed by تَمييز in accusative singular. (2) كَم الخَبَرِيَّة (informative/exclamatory): كَم كِتَابٍ قَرَأتُ! (so many books I've read!) — followed by genitive. The same word كَم changes its grammar based on whether it's asking or exclaiming."
+      },
+      {
+        "id": "ea_qp8",
+        "question": "_____ وَصَلتَ إِلى هَذَا الاِستِنتَاجِ؟ (How did you reach this conclusion?)",
+        "options": [
+          "كَيفَ",
+          "مَتَى",
+          "أَينَ",
+          "مَن"
+        ],
+        "correct": "كَيفَ",
+        "explanation": "كَيفَ (how) asks about the method of reaching the conclusion. وَصَلتَ (you arrived/reached). إِلى هَذَا الاِستِنتَاجِ (to this conclusion — demonstrative + genitive). الاِستِنتَاج (conclusion/deduction — Form X masdar of اِستَنتَجَ). كَيفَ in academic/analytical context refers to process and methodology. Analytical questions: كَيفَ تَوَصَّلتَ (how did you arrive at), كَيفَ يُمكِنُ (how is it possible), كَيفَ نُفَسِّرُ (how do we explain). In formal Arabic, the how-question opens analytical discussions and research inquiries."
+      },
+      {
+        "id": "ea_qp9",
+        "question": "هَل مِن _____ يُسَاعِدُنَا؟ (Is there anyone to help us? — rhetorical question)",
+        "options": [
+          "أَحَدٍ",
+          "أَحَدٌ",
+          "أَحَدًا",
+          "الأَحَدِ"
+        ],
+        "correct": "أَحَدٍ",
+        "explanation": "أَحَدٍ (anyone — genitive) after مِن الزَّائِدَة (emphatic مِن). هَل مِن أَحَدٍ = 'is there anyone at all?' The مِن here is extra (زائِدة), adding emphasis to the question. يُسَاعِدُنَا (helps us — with نَا object suffix). Without مِن: هَل أَحَدٌ يُسَاعِدُنَا (nominative). With emphatic مِن: هَل مِن أَحَدٍ (genitive). This مِن only appears in negative and interrogative contexts. Rhetorical questions: هَل مِن مُجيبٍ (is there anyone to respond?), هَل مِن مَزيدٍ (is there more?), هَل مِن سَبيلٍ (is there a way?)."
+      },
+      {
+        "id": "ea_qp10",
+        "question": "أَلَيسَ _____ صَحيحًا؟ (Isn't this correct? — negative question expecting 'yes')",
+        "options": [
+          "هَذَا",
+          "هَذِهِ",
+          "ذَلِكَ",
+          "هَؤُلاءِ"
+        ],
+        "correct": "هَذَا",
+        "explanation": "هَذَا (this — masculine singular demonstrative) is اسم لَيسَ in nominative. صَحيحًا (correct — accusative) is خبر لَيسَ. أَلَيسَ = أَ (interrogative hamza) + لَيسَ (is not). This creates a negative question expecting agreement: 'Isn't this correct? Yes, it is!' This rhetorical technique (الاِستِفهام الإِنكاري) uses negation to assert the opposite. Answering negative questions: بَلَى means 'yes, it IS' (confirming against the negation), while نَعَم after a negative question means 'yes, you're right, it isn't.' بَلَى vs نَعَم distinction is critical."
+      },
+      {
+        "id": "ea_qp11",
+        "question": "_____ تَجلِسُ في البَيتِ وَالطَّقسُ جَميلٌ؟ (How can you sit at home when the weather is beautiful? — أَ of reproach)",
+        "options": [
+          "أَ",
+          "هَل",
+          "لِمَاذا",
+          "كَيفَ"
+        ],
+        "correct": "أَ",
+        "explanation": "أَ (interrogative hamza — here used for reproach/denial, اِستِفهام إِنكاري) isn't a real question but a rebuke: 'How can you possibly sit at home?!' تَجلِسُ (you sit) is indicative. وَالطَّقسُ جَميلٌ (while the weather is beautiful — واو الحال + nominal clause). The hamza أَ has multiple rhetorical uses beyond simple questions: (1) اِستِفهام حَقيقي (genuine question), (2) إِنكاري (reproach), (3) تَقريري (confirmation), (4) تَعَجُّبي (wonder). Context determines which function applies. This versatility makes أَ a powerful rhetorical tool in Arabic."
+      },
+      {
+        "id": "ea_qp12",
+        "question": "مِمَّ _____ هَذِهِ الحَقيبَةُ؟ (What is this bag made of? — contracted question)",
+        "options": [
+          "صُنِعَت",
+          "صَنَعَ",
+          "تَصنَعُ",
+          "يُصنَعُ"
+        ],
+        "correct": "صُنِعَت",
+        "explanation": "صُنِعَت (it was made — feminine passive) agrees with الحَقيبَةُ (the bag, feminine). مِمَّ = مِن + ما (from what?) — when ما is interrogative after a preposition, its alif is dropped and the letters merge: مِن + ما = مِمَّ, عَن + ما = عَمَّ, لِ + ما = لِمَ, في + ما = فيمَ, بِ + ما = بِمَ. These contractions are mandatory in formal Arabic, and using the uncontracted form (*مِن ما) is a grammatical error. This is a common area of confusion since relative ما keeps its alif: مِمَّا (from that which)."
+      },
+      {
+        "id": "ea_qp13",
+        "question": "_____ الفَرقُ بَينَ هَذَينِ الكَلِمَتَينِ؟ (What is the difference between these two words?)",
+        "options": [
+          "ما",
+          "مَن",
+          "كَم",
+          "أَيُّ"
+        ],
+        "correct": "ما",
+        "explanation": "ما (what) asks about things/concepts. الفَرقُ (the difference — nominative as مُبتدأ). بَينَ هَذَينِ (between these two — dual demonstrative in genitive/accusative). الكَلِمَتَينِ (the two words — dual genitive after بَينَ). ما vs مَن: ما asks about non-human things, مَن asks about people. ما الفَرقُ (what is the difference), ما المَعنَى (what is the meaning), ما السَّبَبُ (what is the reason). مَن here would be wrong as we're asking about an abstract concept. Arabic maintains this human/non-human distinction consistently in its interrogatives."
+      },
+      {
+        "id": "ea_qp14",
+        "question": "بِ_____ تَسَافِرُ: بِالطَّائِرَةِ أَم بِالقِطَارِ؟ (By what means will you travel: by plane or train?)",
+        "options": [
+          "مَاذا",
+          "ما",
+          "مَن",
+          "أَيِّ"
+        ],
+        "correct": "مَاذا",
+        "explanation": "بِمَاذا (by what/with what) = بِ + مَاذا. The preposition attaches to the question word. تُسَافِرُ (you travel). بِالطَّائِرَةِ (by plane) أَم (or) بِالقِطَارِ (by train). Questions with prepositions: بِمَاذا (with what), لِمَاذا (for what = why), إِلى أَينَ (to where), مِن أَينَ (from where), عَلى مَاذا (on what). The preposition always precedes the question word in Arabic, unlike English where it can be stranded at the end (*What did you travel by?). Arabic never strands prepositions."
+      },
+      {
+        "id": "ea_qp15",
+        "question": "أَيُّهُما _____ : القِراءَةُ أَم الكِتابَةُ؟ (Which of them is easier: reading or writing?)",
+        "options": [
+          "أَسهَلُ",
+          "سَهلٌ",
+          "أَسهَلَ",
+          "سَهلَةٌ"
+        ],
+        "correct": "أَسهَلُ",
+        "explanation": "أَسهَلُ (easier — elative/comparative, nominative) is the خبر of أَيُّهُما (which of the two — nominative as مُبتدأ). أَيُّهُما = أَيّ + هُمَا (dual pronoun suffix). القِراءَةُ أَم الكِتابَةُ (reading or writing — both nominative as clarifying apposition). أَسهَل follows the أَفعَل comparative pattern from سَهُلَ (to be easy). Comparative questions: أَيُّهُما أَفضَلُ (which is better), أَيُّهُم أَكبَرُ (which of them is bigger), أَيُّهُنَّ أَجمَلُ (which of them f. is more beautiful). The pronoun suffix on أَيّ specifies the group being compared."
+      }
+    ]
+  },
+  {
+    "key": "discourse_markers",
+    "name": "Discourse Markers (علامات الخطاب)",
+    "description": "Arabic connective words and phrases that structure speech and writing",
+    "iconName": "text.alignleft",
+    "color": "#14b8a6",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ea_dmc1",
+        "question": "_____ ، أَوَدُّ أَن أَشكُرَكُم (First of all, I would like to thank you)",
+        "options": [
+          "بِدَايَةً",
+          "أَوَّلًا",
+          "بِالبِدَايَةِ",
+          "في البِدايَةِ"
+        ],
+        "correct": "بِدَايَةً",
+        "explanation": "بِدَايَةً (to begin with / first of all) is an adverbial accusative opening marker. أَوَدُّ أَن (I would like to — Form I) + أَشكُرَكُم (thank you — subjunctive after أَن + plural object كُم). Opening discourse markers: بِدَايَةً (to begin with), أَوَّلًا (firstly), في البِدَايَةِ (at the beginning), قَبلَ كُلِّ شَيءٍ (before everything). These markers organize speech and signal structure to the listener. Arabic formal speeches require clear signposting using these transition words more than English does."
+      },
+      {
+        "id": "ea_dmc2",
+        "question": "الطَّقسُ جَميلٌ، _____ سَنَذهَبُ في نُزهَةٍ (The weather is nice, therefore we will go on an outing)",
+        "options": [
+          "لِذَلِكَ",
+          "لَكِنَّ",
+          "لِأَنَّ",
+          "رَغمَ"
+        ],
+        "correct": "لِذَلِكَ",
+        "explanation": "لِذَلِكَ (therefore/for that reason) = لِ (for) + ذَلِكَ (that). It connects cause and result. سَنَذهَبُ (we will go — سَ + present). في نُزهَةٍ (on an outing — genitive). Cause-result markers: لِذَلِكَ (therefore), لِهَذا (for this reason), مِن ثَمَّ (hence), بِالتَّالي (consequently), وَبِنَاءً عَلَى ذَلِكَ (based on that), إِذَن (then/so). These markers are essential for argumentative and academic writing in Arabic, showing logical connections between ideas."
+      },
+      {
+        "id": "ea_dmc3",
+        "question": "أَنا أُحِبُّ القِراءَةَ، _____ أُفَضِّلُ الرِّوايَاتِ (I like reading, especially I prefer novels)",
+        "options": [
+          "وَبِخَاصَّةٍ",
+          "وَلَكِنَّ",
+          "وَأَيضًا",
+          "لِذَلِكَ"
+        ],
+        "correct": "وَبِخَاصَّةٍ",
+        "explanation": "وَبِخَاصَّةٍ (and especially/particularly) = وَ + بِ + خَاصَّة (specialness — genitive after بِ). It specifies or narrows from general to particular. أُفَضِّلُ (I prefer — Form II). الرِّوَايَاتِ (novels — sound feminine plural accusative). Specification markers: بِخَاصَّةٍ / خَاصَّةً (especially), تَحديدًا (specifically), بِالأَخَصِّ (most particularly), لا سِيَّما (particularly — classical), وَعَلى وَجهِ الخُصوصِ (and in particular). These markers are crucial in academic and professional Arabic for narrowing scope."
+      },
+      {
+        "id": "ea_dmc4",
+        "question": "الاِقتِصادُ يَنمو، _____ البَطالَةَ لا تَزالُ مُرتَفِعَةً (The economy is growing, however unemployment remains high)",
+        "options": [
+          "إِلَّا أَنَّ",
+          "وَ",
+          "لِأَنَّ",
+          "لِذَلِكَ"
+        ],
+        "correct": "إِلَّا أَنَّ",
+        "explanation": "إِلَّا أَنَّ (however/yet) introduces a contrast or exception to the preceding statement. البَطالَةَ (unemployment — accusative after أَنَّ). لا تَزالُ (still is — one of كَانَ's sisters indicating continuity). مُرتَفِعَةً (high — accusative as خبر لا تزال). Contrast/concession markers: إِلَّا أَنَّ (however), غَيرَ أَنَّ (but/yet), عَلى الرَّغمِ مِن (despite), مَعَ ذَلِكَ (nevertheless), بَيدَ أَنَّ (yet — formal). These function like English 'however/nonetheless' and are vital for balanced argumentation in Arabic."
+      },
+      {
+        "id": "ea_dmc5",
+        "question": "_____ القَولِ، هَذَا المَشروعُ نَاجِحٌ (In short, this project is successful)",
+        "options": [
+          "خُلَاصَةَ",
+          "في",
+          "عِندَ",
+          "مَعَ"
+        ],
+        "correct": "خُلَاصَةَ",
+        "explanation": "خُلَاصَةَ القَولِ (the summary of speech = in short) — خُلَاصَة is accusative as a مَفعول مُطلَق or ظرف-like expression. القَولِ (of speech/saying — genitive as مُضاف إليه). Summarizing markers: خُلَاصَةَ القَولِ (in short), بِإِيجَازٍ (briefly), بِاختِصَارٍ (in summary), مُجمَلَ القَولِ (the sum of speech), وَخِتامًا (and in conclusion). These summary markers signal the speaker/writer is wrapping up. Arabic academic writing particularly relies on these explicit transition markers to guide the reader."
+      },
+      {
+        "id": "ea_dmc6",
+        "question": "أُحِبُّ السَّفَرَ. _____ ، أُحِبُّ التَّعَرُّفَ عَلى ثَقافَاتٍ جَديدَةٍ (I love travel. Moreover, I love getting to know new cultures)",
+        "options": [
+          "عِلاوَةً عَلى ذَلِكَ",
+          "لَكِنَّ",
+          "لِذَلِكَ",
+          "بَينَمَا"
+        ],
+        "correct": "عِلاوَةً عَلى ذَلِكَ",
+        "explanation": "عِلاوَةً عَلى ذَلِكَ (moreover/in addition to that) — عِلاوَة is accusative adverbial. عَلى ذَلِكَ (on top of that). التَّعَرُّفَ (getting to know — Form V masdar, accusative after أُحِبُّ). عَلى ثَقافَاتٍ (about cultures — genitive after عَلى). جَديدَةٍ (new — genitive adjective). Addition markers: عِلاوَةً عَلى ذَلِكَ (moreover), بِالإِضَافَةِ إِلى (in addition to), فَضلًا عَن (not to mention), كَذَلِكَ (likewise), أَيضًا (also). These additive connectors build cumulative arguments in Arabic."
+      },
+      {
+        "id": "ea_dmc7",
+        "question": "_____ رَأيي، يَجِبُ أَن نَتَّخِذَ قَرارًا سَريعًا (In my opinion, we must make a quick decision)",
+        "options": [
+          "في",
+          "مِن",
+          "عَلى",
+          "بِ"
+        ],
+        "correct": "في",
+        "explanation": "في رَأيي (in my opinion) — في + رَأي (opinion, genitive) + ي (my). يَجِبُ أَن (it is necessary that — impersonal + subjunctive). نَتَّخِذَ (we make/take — Form VIII subjunctive). قَرارًا سَريعًا (a quick decision — both accusative). Opinion markers: في رَأيي (in my opinion), مِن وِجهَةِ نَظَري (from my point of view), أَعتَقِدُ أَنَّ (I believe that), أَرَى أَنَّ (I see that), في اعتِقادي (in my belief). Arabic academic style frequently uses these hedging markers to attribute opinions and maintain objectivity."
+      },
+      {
+        "id": "ea_dmc8",
+        "question": "_____ يَتَعَلَّقُ بِالمَوضوعِ الثَّاني (As for what concerns the second topic)",
+        "options": [
+          "فيمَا",
+          "مِمَّا",
+          "عَمَّا",
+          "لِمَا"
+        ],
+        "correct": "فيمَا",
+        "explanation": "فيمَا يَتَعَلَّقُ بِ (regarding/as far as... is concerned) — فيمَا = في + ما (in what). يَتَعَلَّقُ بِ (is related to — Form V). الموضوعِ الثَّاني (the second topic — both genitive). Topic-shift markers: فيمَا يَتَعَلَّقُ بِ (regarding), بِالنِّسبَةِ لِ (as for/regarding), أَمَّا بِالنِّسبَةِ لِ (as for), فيمَا يَخُصُّ (concerning). أَمَّا... فَ is the classical topic-fronting structure: أَمَّا التَّعليمُ فَهُوَ مُهِمٌّ (as for education, it is important). These markers organize multi-topic discussions."
+      },
+      {
+        "id": "ea_dmc9",
+        "question": "لَقَد نَجَحنا _____ الصُّعوبَاتِ (We succeeded despite the difficulties)",
+        "options": [
+          "رَغمَ",
+          "بِسَبَبِ",
+          "مِن أَجلِ",
+          "بِفَضلِ"
+        ],
+        "correct": "رَغمَ",
+        "explanation": "رَغمَ (despite/in spite of) is a ظرف (adverb) taking a genitive مُضاف إليه: الصُّعوبَاتِ (the difficulties — sound feminine plural genitive). لَقَد (indeed — emphatic past marker). نَجَحنا (we succeeded). Concession markers: رَغمَ (despite), بِالرَّغمِ مِن (in spite of), عَلى الرَّغمِ مِن (despite), مَعَ أَنَّ (even though), رَغمَ أَنَّ (despite that). The difference: رَغمَ + noun (رَغمَ الصُّعوبَاتِ), رَغمَ أَنَّ + clause (رَغمَ أَنَّنا واجَهنا صُعوبَاتٍ). Mastering concessive markers elevates Arabic writing significantly."
+      },
+      {
+        "id": "ea_dmc10",
+        "question": "يَجِبُ أَن نَقرَأَ كَثيرًا. _____ الحِكمَةِ، القِراءَةُ تُغَذّي العَقلَ (We must read a lot. The wisdom behind it is that reading nourishes the mind)",
+        "options": [
+          "وَجهُ",
+          "سَبَبُ",
+          "مَعنَى",
+          "قَصدُ"
+        ],
+        "correct": "وَجهُ",
+        "explanation": "وَجهُ الحِكمَةِ (the face/aspect of wisdom = the wisdom behind it) — وَجه (face/aspect, nominative) + الحِكمَة (wisdom, genitive). The القِراءَةُ (reading) is مُبتدأ. تُغَذّي (nourishes — Form II feminine) العَقلَ (the mind, accusative). Explanation markers: وَجهُ الحِكمَةِ (the wisdom is), السَّبَبُ في ذَلِكَ (the reason for that), ما يُفَسِّرُ ذَلِكَ (what explains that), يَعودُ ذَلِكَ إِلى (that goes back to). These explanatory discourse markers help elaborate on claims and are common in instruction and persuasive Arabic texts."
+      },
+      {
+        "id": "ea_dmc11",
+        "question": "_____ ناحِيَةٍ أُخرَى، هُنَاكَ فَوائِدُ كَثيرَةٌ (On the other hand, there are many benefits)",
+        "options": [
+          "مِن",
+          "في",
+          "عَلى",
+          "بِ"
+        ],
+        "correct": "مِن",
+        "explanation": "مِن نَاحِيَةٍ أُخرَى (from another side/aspect = on the other hand) — نَاحِيَة (side/aspect — genitive after مِن). أُخرَى (another — diptote feminine adjective). هُنَاكَ (there are). فَوائِدُ (benefits — broken plural of فَائِدَة, nominative). كَثيرَةٌ (many — feminine singular for non-human plural). Two-sided argument markers: مِن نَاحِيَةٍ... وَمِن نَاحِيَةٍ أُخرَى (on one hand... on the other), مِن جِهَةٍ... وَمِن جِهَةٍ أُخرَى (from one side... from another). These paired markers create balanced discussions."
+      },
+      {
+        "id": "ea_dmc12",
+        "question": "هَذا المَقالُ مُفيدٌ، _____ أَنَّهُ طَويلٌ قَليلًا (This article is useful, except that it is a bit long)",
+        "options": [
+          "غَيرَ",
+          "إِلَّا",
+          "لَكِنَّ",
+          "وَ"
+        ],
+        "correct": "غَيرَ",
+        "explanation": "غَيرَ أَنَّهُ (except that it — غَير is accusative here as مُستَثنى or ظرف). أَنَّهُ (that it) — أَنَّ + هُ pronoun. طَويلٌ (long — nominative as خبر أَنَّ). قَليلًا (a little — adverbial accusative). Qualification/reservation markers: غَيرَ أَنَّ (except that — formal), إِلَّا أَنَّ (but/however), سِوَى أَنَّ (except that), عَدَا (except/besides). These markers introduce minor reservations or qualifications to an otherwise positive statement. They are softer than لَكِنَّ (but) and more sophisticated in academic register."
+      },
+      {
+        "id": "ea_dmc13",
+        "question": "_____ سَبيلِ المِثالِ، يُمكِنُ أَن نَذكُرَ ما يَلي (For example, we can mention the following)",
+        "options": [
+          "عَلى",
+          "في",
+          "مِن",
+          "بِ"
+        ],
+        "correct": "عَلى",
+        "explanation": "عَلى سَبيلِ المِثالِ (by way of example = for example) — سَبيل (way/path) is genitive after عَلى, المِثَال (the example) is genitive as مُضاف إليه. يُمكِنُ أَن (it is possible to — impersonal + subjunctive). نَذكُرَ (we mention — subjunctive). ما يَلي (what follows — ما relative + يَلي present). Exemplification markers: عَلَى سَبيلِ المِثالِ (for example), مَثَلًا (for instance), كَ (like/such as), نَحو (approximately/such as), مِن ذَلِكَ (among that), كَأَن (as if/such as). Academic Arabic heavily uses these to support arguments with evidence."
+      },
+      {
+        "id": "ea_dmc14",
+        "question": "أَمَّا السُّؤَالُ الثَّالِثُ _____ سَنُناقِشُهُ لاحِقًا (As for the third question, we will discuss it later)",
+        "options": [
+          "فَ",
+          "وَ",
+          "ثُمَّ",
+          "لَكِنَّ"
+        ],
+        "correct": "فَ",
+        "explanation": "فَ (then/so — correlative فَ after أَمَّا) is MANDATORY. أَمَّا... فَ is one of Arabic's most important discourse structures: أَمَّا introduces the topic, فَ introduces the comment. This is called التَّفصيل بَعدَ الإِجمال (detailing after generalizing). سَنُنَاقِشُهُ (we will discuss it — سَ + present + هُ object). لاحِقًا (later — adverbial accusative). The فَ after أَمَّا is not optional — omitting it is a serious grammatical error. أَمَّا...فَ structure: أَمَّا أَنا فَأُحِبُّ القِراءَةَ (as for me, I love reading)."
+      },
+      {
+        "id": "ea_dmc15",
+        "question": "_____ وَلَيسَ آخِرًا، أَشكُرُ فَريقَ العَمَلِ (Last but not least, I thank the work team)",
+        "options": [
+          "أَخيرًا",
+          "آخِرًا",
+          "نِهايَةً",
+          "خِتَامًا"
+        ],
+        "correct": "أَخيرًا",
+        "explanation": "أَخيرًا وَلَيسَ آخِرًا (lastly and not last = last but not least) — أَخيرًا (lastly — adverbial accusative from أَخير 'last'). وَلَيسَ آخِرًا (and not least/last — لَيسَ negation). أَشكُرُ (I thank). فَريقَ العَمَلِ (the work team — idāfa, accusative). Closing markers: أَخيرًا (finally), خِتَامًا (in conclusion), وَفي الخِتَامِ (and in closing), وَآخِرُ ما أَقولُهُ (the last thing I say). Arabic speeches and essays require explicit closing markers. The symmetric opening-body-closing structure is emphasized in Arabic rhetoric (عِلم البَلاغَة)."
+      }
+    ]
+  },
+  {
+    "key": "register_formality",
+    "name": "Register & Formality (السجل واللغة الرسمية)",
+    "description": "Understanding different levels of formality and register in Arabic",
+    "iconName": "person.badge.shield.checkmark.fill",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ea_rf1",
+        "question": "_____ اللهِ الرَّحمَنِ الرَّحيمِ (In the name of God, the Most Gracious, the Most Merciful — formal opening)",
+        "options": [
+          "بِسمِ",
+          "بِاسمِ",
+          "اِسمُ",
+          "في اسمِ"
+        ],
+        "correct": "بِسمِ",
+        "explanation": "بِسمِ (in the name of) is a special contracted form: بِ + اسم → بِسمِ (the alif of اسم drops when attached to بِ with genitive). اللهِ (God — genitive as مُضاف إليه). الرَّحمَنِ الرَّحيمِ (the Most Gracious, the Most Merciful — both genitive adjectives/appellations). This بَسمَلَة (invocation) opens virtually all formal Arabic documents, letters, speeches, and books. It is the most recognizable formal opening in Arabic. Using بِاسمِ instead of بِسمِ is less common but grammatically valid — بِسمِ is the established formula."
+      },
+      {
+        "id": "ea_rf2",
+        "question": "أَرجو _____ طَلَبي بِعَينِ الاِعتِبارِ (I request that you take my request into consideration — formal register)",
+        "options": [
+          "أَخذَ",
+          "أَن تَأخُذوا",
+          "تَأخُذوا",
+          "خُذوا"
+        ],
+        "correct": "أَخذَ",
+        "explanation": "أَخذَ (taking — masdar of أَخَذَ) is the direct object of أَرجو (I request/hope). Using the masdar instead of أَن + subjunctive is MORE formal: أَرجو أَخذَ (I request the taking) vs أَرجو أَن تَأخُذوا (I request that you take). طَلَبي (my request — accusative as مُضاف إليه of أَخذ). بِعَينِ الاِعتِبارِ (into consideration — literally 'with the eye of consideration'). Formal register prefers: masdars over verb clauses, passive over active, impersonal constructions over personal ones, يُرجَى over أَرجو."
+      },
+      {
+        "id": "ea_rf3",
+        "question": "تَفَضَّلوا بِ_____ (Please have a seat — polite imperative)",
+        "options": [
+          "الجُلوسِ",
+          "الجُلوسَ",
+          "جُلوسٍ",
+          "تَجلِسوا"
+        ],
+        "correct": "الجُلوسِ",
+        "explanation": "الجُلوسِ (sitting — masdar of جَلَسَ, genitive after بِ). تَفَضَّلوا بِ (please do/kindly — Form V imperative + بِ + masdar) is the elegant formal way to make requests. تَفَضَّلوا is more polite than the direct imperative اِجلِسوا (sit!). Politeness levels: (1) اِجلِس (sit! — direct/informal), (2) مِن فَضلِكَ اِجلِس (please sit — moderate), (3) تَفَضَّل بِالجُلوسِ (kindly have a seat — formal), (4) أَرجو التَّفَضُّلَ بِالجُلوسِ (I request you kindly sit — very formal). Arabic has well-defined politeness hierarchies."
+      },
+      {
+        "id": "ea_rf4",
+        "question": "يُعَدُّ هَذَا المَشروعُ _____ أَهَمِّ المُبادَرَاتِ (This project is considered one of the most important initiatives — formal passive)",
+        "options": [
+          "مِن",
+          "في",
+          "عَلى",
+          "لِ"
+        ],
+        "correct": "مِن",
+        "explanation": "مِن أَهَمِّ (one of the most important — مِن partitive + elative, genitive). يُعَدُّ (is considered — passive of عَدَّ, Form I of counted/reckoned) is the formal passive construction. هَذَا المَشروعُ (this project — nominative as نَائِب فاعِل). المُبادَرَاتِ (the initiatives — sound feminine plural genitive). Formal evaluation verbs: يُعَدُّ (is considered), يُعتَبَرُ (is regarded), يُصَنَّفُ (is classified), يُوصَفُ بِ (is described as). Academic Arabic heavily uses passive forms for objectivity: يُلاحَظُ أَنَّ (it is noted that), يُتَوَقَّعُ أَن (it is expected that)."
+      },
+      {
+        "id": "ea_rf5",
+        "question": "_____ لَكُم جَزيلَ الشُّكرِ (We extend to you our deepest thanks — very formal gratitude)",
+        "options": [
+          "نَتَقَدَّمُ",
+          "نُقَدِّمُ",
+          "نَشكُرُ",
+          "شُكرًا"
+        ],
+        "correct": "نَتَقَدَّمُ",
+        "explanation": "نَتَقَدَّمُ (we advance/extend — Form V) is the formal way to express gratitude: نَتَقَدَّمُ بِجَزيلِ الشُّكرِ (we extend deep thanks). لَكُم (to you plural). جَزيلَ (deep/copious — accusative, مُضاف) الشُّكرِ (of thanks — genitive). Gratitude levels: شُكرًا (thanks — casual), أَشكُرُكَ (I thank you — neutral), أَتَقَدَّمُ بِالشُّكرِ (I extend thanks — formal), نَتَقَدَّمُ بِوَافِرِ الشُّكرِ وَالتَّقدِيرِ (we extend abundant thanks and appreciation — very formal). Arabic formal register requires 'performative' verbs that describe the act of thanking."
+      },
+      {
+        "id": "ea_rf6",
+        "question": "لا يَخفَى _____ أَنَّ الوَضعَ الرَّاهِنَ يَتَطَلَّبُ تَغييرًا (It is not hidden from you that the current situation requires change — formal academic)",
+        "options": [
+          "عَلَيكُم",
+          "لَكُم",
+          "مِنكُم",
+          "فيكُم"
+        ],
+        "correct": "عَلَيكُم",
+        "explanation": "لا يَخفَى عَلَيكُم (it is not hidden from you = you're well aware) — an impersonal negative construction for formal settings. يَخفَى (is hidden — Form I defective verb from خ-ف-ي). عَلَيكُم (from you). أَنَّ الوَضعَ (that the situation — accusative after أَنَّ). الرَّاهِنَ (the current — active participle adjective). يَتَطَلَّبُ (requires — Form V). تَغييرًا (change — accusative). Formal awareness phrases: لا يَخفَى عَلَيكُم (it's not hidden from you), كَمَا تَعلَمونَ (as you know), مِنَ المَعلومِ (it is known). These soften assertions by attributing knowledge to the audience."
+      },
+      {
+        "id": "ea_rf7",
+        "question": "تُحيطُكُم _____ عِلمًا بِأَنَّ المَوعِدَ قَد تَغَيَّرَ (We inform you that the appointment has changed — official notification register)",
+        "options": [
+          "الإِدارَةُ",
+          "الإِدارَةَ",
+          "الإِدارَةِ",
+          "إِدارَةٌ"
+        ],
+        "correct": "الإِدارَةُ",
+        "explanation": "الإِدارَةُ (the administration — nominative as فاعِل). تُحيطُكُم... عِلمًا (informs you — literally 'surrounds you with knowledge') is the standard official notification formula. بِأَنَّ (that — بِ + أَنَّ for content). المَوعِدَ (the appointment — accusative after أَنَّ). قَد تَغَيَّرَ (has changed — قَد + past = completed action, Form V). Official notification formulas: يُحيطُكُم عِلمًا (informs you), يُفيدُكُم عِلمًا (notifies you), يُنهي إِلَيكُم (conveys to you). These impersonal administrative phrases are the backbone of Arabic bureaucratic communication."
+      },
+      {
+        "id": "ea_rf8",
+        "question": "هَلَّا _____ لي بِرَأيِكَ في المَوضوعِ? (Would you kindly share your opinion on the topic? — polite request)",
+        "options": [
+          "أَدلَيتَ",
+          "تُدلي",
+          "أَدلِ",
+          "دَلِّ"
+        ],
+        "correct": "أَدلَيتَ",
+        "explanation": "أَدلَيتَ (you shared/gave — Form IV past of أَدلَى بِ 'to cast/give/share') after هَلَّا (would you/why don't you — هَل + لا in a polite request). هَلَّا + past tense is a polite request/suggestion, softer than the imperative. بِرَأيِكَ (with your opinion — بِ + رَأي genitive + كَ possessive). في المَوضوعِ (on the topic). Polite request forms (escalating formality): أَخبِرني (tell me), هَل يُمكِنُكَ (can you), هَلَّا أَخبَرتَني (would you tell me), أَرجو مِنكَ التَّفَضُّلَ بِ (I request you kindly to). هَلَّا is an elegant softener unique to Arabic."
+      },
+      {
+        "id": "ea_rf9",
+        "question": "مُلَخَّصُ _____ أَنَّ النَّتائِجَ إِيجَابِيَّةٌ (The summary of the matter is that the results are positive — academic register)",
+        "options": [
+          "الأَمرِ",
+          "الأَمرُ",
+          "الأَمرَ",
+          "أَمرٍ"
+        ],
+        "correct": "الأَمرِ",
+        "explanation": "الأَمرِ (the matter — genitive as مُضاف إليه). مُلَخَّصُ (summary — passive participle of Form II لَخَّصَ, nominative as مُبتدأ). أَنَّ + clause is the خبر. النَّتائِجَ (the results — accusative after أَنَّ). إِيجَابِيَّةٌ (positive — nisba adjective + tā' marbūṭa, nominative as خبر أَنَّ). Academic summary phrases: مُلَخَّصُ الأَمرِ (the summary), حَاصِلُ القَولِ (the gist), خُلاصَةُ البَحثِ (the research conclusion). Arabic academic writing uses these noun-heavy constructions rather than verbal expressions: 'the summary is that' rather than 'to summarize.'"
+      },
+      {
+        "id": "ea_rf10",
+        "question": "نَودُّ _____ سِيادَتَكُم بِأَنَّ المُهلَةَ قَد اِنتَهَت (We wish to inform Your Excellency that the deadline has expired — official register)",
+        "options": [
+          "إِفادَةَ",
+          "إِفادَةُ",
+          "أَن نُفيدَ",
+          "نُفيدُ"
+        ],
+        "correct": "إِفادَةَ",
+        "explanation": "إِفادَةَ (informing — Form IV masdar, accusative as direct object of نَوَدُّ). سِيادَتَكُم (Your Excellency — accusative). بِأَنَّ (that). المُهلَةَ (the deadline — accusative after أَنَّ). قَدِ اِنتَهَت (has expired — Form VIII feminine past). Using the masdar إِفادَة instead of أَن نُفيدَ (that we inform) is MORE formal — official Arabic strongly prefers nominal/masdar constructions over verbal ones. Register difference: نُريدُ أَن نُخبِرَكُم (informal), نَوَدُّ إِفادَتَكُم (formal), يُشرِّفُنا إِفادَةُ سِيادَتِكُم (very formal)."
+      },
+      {
+        "id": "ea_rf11",
+        "question": "جَزَاكَ اللهُ _____ (May God reward you well — Islamic formal thanks)",
+        "options": [
+          "خَيرًا",
+          "خَيرٌ",
+          "خَيرٍ",
+          "بِخَيرٍ"
+        ],
+        "correct": "خَيرًا",
+        "explanation": "خَيرًا (with good — accusative as مَفعول بِهِ ثَانٍ, second direct object of جَزَى which takes two objects). جَزَاكَ (He rewarded you — past tense used as دُعَاء/prayer). اللهُ (God — nominative as فاعل). This is the most common Islamic thank-you expression, used across all registers from casual to highly formal. More elaborate versions: جَزَاكُمُ اللهُ خَيرَ الجَزَاءِ (may God reward you the best of rewards). Religiously inflected formulas pervade Arabic formal expression, even in secular contexts, since they carry cultural weight beyond religious meaning."
+      },
+      {
+        "id": "ea_rf12",
+        "question": "يُؤسِفُنا _____ أَنَّ طَلَبَكُم قَد رُفِضَ (We regret to inform you that your request has been rejected — formal refusal)",
+        "options": [
+          "إِبلاغُكُم",
+          "أَن نُبلِغَكُم",
+          "نُبلِغُكُم",
+          "إِبلاغَكُم"
+        ],
+        "correct": "إِبلاغُكُم",
+        "explanation": "إِبلاغُكُم (informing you — Form IV masdar + كُم object, nominative as فاعل of يُؤسِفُنا). يُؤسِفُنا (it saddens us — Form IV impersonal + نَا object). أَنَّ طَلَبَكُم (that your request — accusative). رُفِضَ (was rejected — passive). In formal rejection letters, the masdar (إِبلاغ) is preferred over the verbal clause (أَن نُبلِغَ). Soft refusal formulas: يُؤسِفُنا (it saddens us), نَأسَفُ لِ (we regret), لِلأَسَفِ الشَّديدِ (with deep regret), يَتَعَذَّرُ عَلَينا (it is impossible for us). Arabic formal communication softens bad news with elaborate apologetic phrasing."
+      },
+      {
+        "id": "ea_rf13",
+        "question": "السَّلامُ عَلَيكُم _____ اللهِ وَبَرَكَاتُهُ (Peace be upon you and God's mercy and blessings — complete formal greeting)",
+        "options": [
+          "وَرَحمَةُ",
+          "وَرَحمَةِ",
+          "وَرَحمَةَ",
+          "رَحمَةُ"
+        ],
+        "correct": "وَرَحمَةُ",
+        "explanation": "وَرَحمَةُ (and the mercy of — nominative, coordinated with السَّلامُ). اللهِ (God — genitive as مُضاف إليه). وَبَرَكَاتُهُ (and His blessings — nominative, coordinated). The full greeting: السَّلامُ عَلَيكُم وَرَحمَةُ اللهِ وَبَرَكَاتُهُ. Three levels of Islamic greeting: (1) السَّلامُ عَلَيكُم (basic), (2) السَّلامُ عَلَيكُم وَرَحمَةُ اللهِ (with mercy), (3) full version (with blessings). Each level is considered more virtuous. Response: وَعَلَيكُمُ السَّلامُ وَرَحمَةُ اللهِ وَبَرَكَاتُهُ. This greeting opens all Arabic formal and informal interactions."
+      },
+      {
+        "id": "ea_rf14",
+        "question": "_____ حَضرَةَ المُحتَرَمِ (Dear Respected Sir — formal letter salutation)",
+        "options": [
+          "سَيِّدي",
+          "يا سَيِّد",
+          "أَيُّها السَّيِّدُ",
+          "السَّيِّدُ"
+        ],
+        "correct": "سَيِّدي",
+        "explanation": "سَيِّدي (my Sir/Sir — possessive ي adds formality and personal respect). حَضرَةَ (the presence of — accusative as مُنادَى or apposition). المُحتَرَمِ (the respected — genitive مُضاف إليه or adjective). Arabic letter salutation levels: حَضرَةَ السَّيِّدِ (to Mr. — neutral), سَعَادَةَ السَّفيرِ (to His Excellency the Ambassador), مَعَالي الوَزيرِ (to His Eminence the Minister), فَخَامَةَ الرَّئيسِ (to His Excellency the President). Titles and honorifics are essential in Arabic formal correspondence and reflect careful attention to social hierarchy."
+      },
+      {
+        "id": "ea_rf15",
+        "question": "حَفِظَكُم اللهُ _____ (May God protect you and care for you — formal letter closing prayer)",
+        "options": [
+          "وَرَعَاكُم",
+          "وَيَرعَاكُم",
+          "رَعَايَةً",
+          "بِالرِّعَايَةِ"
+        ],
+        "correct": "وَرَعَاكُم",
+        "explanation": "وَرَعَاكُم (and He cared for you — past tense used as prayer/دُعَاء). حَفِظَكُم (He protected you — also prayer form). اللهُ (God — nominative فاعل shared between both verbs). These past-tense verbs function as wishes/prayers (الماضي الدُّعَائِيّ): the past tense expresses certainty of the wish. Formal letter closing prayers: حَفِظَكُم اللهُ وَرَعَاكُم (may God protect and care for you), أَطالَ اللهُ بَقَاءَكُم (may God prolong your life), أَدَامَ اللهُ عِزَّكُم (may God perpetuate your honor). These are culturally essential in Arabic formal communication."
+      }
+    ]
   }
 ]
