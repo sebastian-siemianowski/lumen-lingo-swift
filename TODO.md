@@ -40,17 +40,17 @@ Expand all 17 beta language pairs to **105 categories × 15 items = 1,575 items*
 | 4 | english_chinese | English | 52/105 | 780/1575 | 9/20 | 🔄 |
 | 5 | english_french | English | 105/105 | 1575/1575 | 21/21 | ✅ |
 | 6 | english_german | English | 67/105 | 1005/1575 | 13/20 | 🔄 |
-| 7 | english_japanese | English | 101/105 | 1515/1575 | 20/21 | 🔄 |
+| 7 | english_japanese | English | 105/105 | 1575/1575 | 21/21 | ✅ |
 | 8 | french_english | French | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 9 | german_polish | German | 105/105 | 1575/1575 | 20/20 | ✅ |
-| 10 | japanese_english | Japanese | 22/105 | 330/1575 | 3/20 | 🔄 |
+| 10 | japanese_english | Japanese | 27/105 | 405/1575 | 4/20 | 🔄 |
 | 11 | polish_arabic | Polish | 22/105 | 330/1575 | 3/20 | 🔄 |
 | 12 | polish_chinese | Polish | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 13 | polish_french | Polish | 78/105 | 1170/1575 | 14/20 | 🔄 |
 | 14 | polish_japanese | Polish | 17/105 | 255/1575 | 2/20 | 🔄 |
 | 15 | polish_ukrainian | Polish | 12/105 | 180/1575 | 1/20 | 🔄 |
 | 16 | ukrainian_english | Ukrainian | 43/105 | 645/1575 | 7/20 | 🔄 |
-| 17 | ukrainian_polish | Ukrainian | 92/105 | 1380/1575 | 18/21 | 🔄 |
+| 17 | ukrainian_polish | Ukrainian | 102/105 | 1530/1575 | 20/21 | 🔄 |
 
 ### arabic_english — ✅ COMPLETE (105/105 categories, 1575 items)
 All 20 batches completed. ID prefixes used: ae_ps, ae_ar, ae_pas, ae_pc, ae_fs, ae_mv, ae_pp, ae_ppc, ae_paco, ae_ppf, ae_czf, ae_cst, ae_pv, ae_rs, ae_rc, ae_cos, ae_pb, ae_pa, ae_gi, ae_pvb, ae_qt, ae_sva, ae_qu, ae_dt, ae_cj, ae_af, ae_am, ae_cu, ae_po, ae_rp, ae_ip, ae_dm, ae_pva, ae_cl, ae_wo, ae_cs, ae_inv, ae_wh, ae_ut, ae_wr, ae_hb, ae_bs, ae_chg, ae_nc, ae_el, ae_sb, ae_es, ae_dsc, ae_lw, ae_hd, ae_fr, ae_ifr, ae_aw, ae_eo, ae_ms, ae_ad, ae_ro, ae_ca, ae_dt2_, ae_dp, ae_ce, ae_cc, ae_te, ae_ffa, ae_nt, ae_mc, ae_arta, ae_cn, ae_ao, ae_gu, ae_im, ae_pi, ae_gn, ae_ff, ae_cer, ae_ie, ae_pvs, ae_tv, ae_fdr, ae_hb2_, ae_wo2_, ae_ti, ae_en, ae_edl, ae_sh, ae_fe, ae_wc, ae_sm, ae_hh, ae_td, ae_mc2_, ae_cj2_, ae_pso, ae_sr, ae_ac, ae_be, ae_rf, ae_rsa, ae_pva2_, ae_rca, ae_ef, ae_ess, ae_nm, ae_exs
@@ -341,8 +341,8 @@ All 20 batches completed. ID prefixes used: gp_pres, gp_case, gp_past, gp_asp, g
 | 19 | crime_justice, politics_society, arts_culture, science_research, academic_polish | ✅ |
 | 20 | business_economics, common_errors, exam_strategies, false_friends, revision_mixed | ✅ |
 
-### english_japanese — 🔄 IN PROGRESS (101/105 categories, 1515 items)
-ID prefixes used: ej_part, ej_wo, ej_pres, ej_past, ej_pol, ej_adj, ej_cnt, ej_tf_, ej_nf_, ej_qf_, ej_dm_, ej_ev_, ej_vg_, ej_pt_, ej_vl_, ej_cd_, ej_imp_, ej_psv_, ej_cau_, ej_grv_, ej_hon_, ej_hum_, ej_nom_, ej_cmp_, ej_sup_, ej_cnj_, ej_cna_, ej_tim_, ej_dur_, ej_rel_, ej_quo_, ej_des_, ej_try_, ej_app_, ej_obl_, ej_per_, ej_abl_, ej_rea_, ej_pur_, ej_con_, ej_lst_, ej_sim_, ej_cos_, ej_prp_, ej_exp_, ej_adv_, ej_tri_, ej_cpv_, ej_aux_, ej_adb_, ej_ada_, ej_ono_, ej_sep_, ej_fws_, ej_nca_, ej_fam_, ej_bdy_, ej_emo_, ej_wea_, ej_fod_, ej_trv_, ej_shp_, ej_wrk_, ej_edu_, ej_tec_, ej_sph_, ej_hou_, ej_trn_, ej_med_, ej_soc_, ej_opn_, ej_req_, ej_fcs_, ej_idm_, ej_prv_, ej_jn5_, ej_abp_, ej_jn4_, ej_jn3_, ej_jn2_, ej_jn1_, ej_kgr_, ej_vnc_, ej_ajc_, ej_cwa_, ej_tca_, ej_emq_, ej_cap_, ej_bna_, ej_reg_, ej_sur_, ej_cer_, ej_unc_, ej_fcr_, ej_biz_, ej_acj_, ej_nws_, ej_cls_, ej_dia_, ej_gen_, ej_rgs_, ej_cmk_
+### english_japanese — ✅ COMPLETE (105/105 categories, 1575 items)
+ID prefixes used: ej_part, ej_wo, ej_pres, ej_past, ej_pol, ej_adj, ej_cnt, ej_tf_, ej_nf_, ej_qf_, ej_dm_, ej_ev_, ej_vg_, ej_pt_, ej_vl_, ej_cd_, ej_imp_, ej_psv_, ej_cau_, ej_grv_, ej_hon_, ej_hum_, ej_nom_, ej_cmp_, ej_sup_, ej_cnj_, ej_cna_, ej_tim_, ej_dur_, ej_rel_, ej_quo_, ej_des_, ej_try_, ej_app_, ej_obl_, ej_per_, ej_abl_, ej_rea_, ej_pur_, ej_con_, ej_lst_, ej_sim_, ej_cos_, ej_prp_, ej_exp_, ej_adv_, ej_tri_, ej_cpv_, ej_aux_, ej_adb_, ej_ada_, ej_ono_, ej_sep_, ej_fws_, ej_nca_, ej_fam_, ej_bdy_, ej_emo_, ej_wea_, ej_fod_, ej_trv_, ej_shp_, ej_wrk_, ej_edu_, ej_tec_, ej_sph_, ej_hou_, ej_trn_, ej_med_, ej_soc_, ej_opn_, ej_req_, ej_fcs_, ej_idm_, ej_prv_, ej_jn5_, ej_abp_, ej_jn4_, ej_jn3_, ej_jn2_, ej_jn1_, ej_kgr_, ej_vnc_, ej_ajc_, ej_cwa_, ej_tca_, ej_emq_, ej_cap_, ej_bna_, ej_reg_, ej_sur_, ej_cer_, ej_unc_, ej_fcr_, ej_biz_, ej_acj_, ej_nws_, ej_cls_, ej_dia_, ej_gen_, ej_rgs_, ej_cmk_, ej_spt_, ej_cvs_, ej_wrj_, ej_cex_
 
 | Batch | Categories | Status |
 |-------|-----------|--------|
@@ -366,7 +366,7 @@ ID prefixes used: ej_part, ej_wo, ej_pres, ej_past, ej_pol, ej_adj, ej_cnt, ej_t
 | 18 | causative_passive, benefactive_advanced, expressing_regret, expressing_surprise, expressing_certainty | ✅ |
 | 19 | expressing_uncertainty, formal_correspondence, business_japanese, academic_japanese, newspaper_japanese | ✅ |
 | 20 | classical_remnants, dialect_awareness, gender_in_language, register_shifts, common_mistakes | ✅ |
-| 21 | final_4_categories (102-105) | ⬜ |
+| 21 | sentence_patterns, conversation_strategies, written_japanese, cultural_expressions | ✅ |
 
 ### polish_chinese — ✅ COMPLETE (105/105 categories, 1575 items)
 ID prefixes used: pc_pres, pc_mw, pc_pt, pc_am, pc_mv, pc_sp, pc_qw, pc_neg, pc_cs, pc_te, pc_lw, pc_dep, pc_ba, pc_bei, pc_cr, pc_cd, pc_nc, pc_cla, pc_conj, pc_adv, pc_cond, pc_tc, pc_es, pc_sv, pc_piv, pc_emp, pc_red, pc_pot, pc_df, pc_baa, pc_rq, pc_le, pc_zhe, pc_guo, pc_wo, pc_cov, pc_sde, pc_rc, pc_ec, pc_cdg, pc_voc, pc_dc, pc_pur, pc_ce, pc_rs, pc_pa, pc_drc, pc_exc, pc_imp, pc_cma, pc_dn, pc_bm, pc_jc, pc_sfp, pc_rsc, pc_obl, pc_abl, pc_wsh, pc_ne, pc_pp, pc_cp, pc_ccj, pc_ip, pc_chi, pc_ee, pc_sug, pc_tcl, pc_vra, pc_dge, pc_sep, pc_np, pc_apr, pc_ctn, pc_af, pc_pl, pc_fwc, pc_qe, pc_me, pc_sim, pc_seq, pc_inc, pc_con, pc_pg, pc_emo, pc_wc, pc_fd, pc_tt, pc_hb, pc_qpa, pc_va, pc_fi, pc_wf, pc_mn, pc_wb, pc_ti, pc_ea, pc_nm, pc_cls, pc_fr, pc_sh, pc_sm, pc_hh, pc_en, pc_prv, pc_dr
@@ -393,15 +393,15 @@ ID prefixes used: pc_pres, pc_mw, pc_pt, pc_am, pc_mv, pc_sp, pc_qw, pc_neg, pc_
 | 18 | colors_shapes, family_relationships, sports_hobbies, shopping_money, housing_home | ✅ |
 | 19 | environment_nature, proverbs_sayings, daily_routines | ✅ |
 
-### japanese_english — 🔄 IN PROGRESS (22/105 categories, 330 items)
-ID prefixes used: je_art, je_subj, je_pres, je_past, je_fut, je_mod, je_pp, je_pcon, je_paco, je_ppc, je_ppf, je_czf, je_cst, je_pv, je_rs, je_rc, je_cos, je_prpl, je_prt, je_gi, je_pvb, je_qt
+### japanese_english — 🔄 IN PROGRESS (27/105 categories, 405 items)
+ID prefixes used: je_art, je_subj, je_pres, je_past, je_fut, je_mod, je_pp, je_pcon, je_paco, je_ppc, je_ppf, je_czf, je_cst, je_pv, je_rs, je_rc, je_cos, je_prpl, je_prt, je_gi, je_pvb, je_qt, je_sva, je_qn, je_det, je_cj, je_af
 
 | Batch | Categories | Status |
 |-------|-----------|--------|
 | 1 | present_continuous, past_continuous, present_perfect_continuous, past_perfect, conditionals_zero_first | ✅ |
 | 2 | conditionals_second_third, passive_voice, reported_speech, relative_clauses, comparatives_superlatives | ✅ |
 | 3 | prepositions_place, prepositions_time, gerunds_infinitives, phrasal_verbs_basic, question_tags | ✅ |
-| 4 | subject_verb_agreement, quantifiers, determiners, conjunctions, adverbs_frequency | ⬜ |
+| 4 | subject_verb_agreement, quantifiers, determiners, conjunctions, adverbs_frequency | ✅ |
 | 5 | adverbs_manner, countable_uncountable, possessives, reflexive_pronouns, indefinite_pronouns | ⬜ |
 | 6 | demonstratives, phrasal_verbs_advanced, collocations, word_order, cleft_sentences | ⬜ |
 | 7 | inversion, wish_hope, used_to, had_better_would_rather, be_supposed_to | ⬜ |
@@ -445,7 +445,7 @@ ID prefixes used: ue_ps, ue_art, ue_past, ue_fut, ue_q, ue_cm, ue_pp, ue_pc, ue_
 | 19 | business_economics, register_formality, reported_speech_advanced, passive_voice_advanced, relative_clauses_advanced | ⬜ |
 | 20 | emphasis_fronting, ellipsis_substitution, noun_modifiers, exam_strategies | ⬜ |
 
-### ukrainian_polish — 🔄 IN PROGRESS (97/105 categories, 1455 items)
+### ukrainian_polish — 🔄 IN PROGRESS (102/105 categories, 1530 items)
 ID prefixes used: up_pres, up_case, up_fut, up_ci, up_prep, up_pron, up_pt, up_adj, up_asp, up_neg, up_conj, up_num, up_mod, up_ref, up_cond, up_comp, up_imp, up_pas, up_instr, up_genpl, up_loc, up_dat, up_acc, up_voc, up_asp_e, up_mot, up_time, up_ng, up_pln, up_dim, up_poss, up_qw, up_wo, up_fi, up_rel, up_rs, up_pasc, up_ff, up_cog, up_sp, up_sh, up_pv, up_wf, up_cw, up_advb, up_advm, up_supa, up_ip, up_dp, up_nc, up_no, up_pa, up_ppas, up_vn, up_impc, up_subc, up_purp, up_ce, up_tc, up_ch, up_cc, up_em, up_ell, up_quant, up_inde, up_disc, up_idiom, up_prov, up_coll, up_phe, up_polr, up_opin, up_agrd, up_trav, up_food, up_shop, up_heal, up_work, up_educ, up_tech, up_weat, up_hous, up_fam, up_emot, up_sprt, up_clot, up_colr, up_media, up_env, up_pol, up_arts, up_sci, up_biz, up_crim, up_acad, up_freg, up_relig
 
 | Batch | Categories | Status |
@@ -469,8 +469,8 @@ ID prefixes used: up_pres, up_case, up_fut, up_ci, up_prep, up_pron, up_pt, up_a
 | 17 | family_relationships, emotions_feelings, sports_hobbies, clothing_fashion, colors_descriptions | ✅ |
 | 18 | media_communication, environment_nature, politics_society, arts_culture, science_research | ✅ |
 | 19 | business_economics, crime_justice, academic_writing, formal_register_adv, religion_traditions | ✅ |
-| 20 | common_errors, cyrillic_challenges, word_stress, register_shifts, revision_mixed | 🔄 |
-| 21 | exam_strategies, advanced_grammar_review, final_review | ⬜ |
+| 20 | common_errors, cyrillic_challenges, word_stress, register_shifts, revision_mixed | ✅ |
+| 21 | exam_strategies, advanced_grammar_review, final_review | 🔄 |
 
 ### polish_arabic — 🔄 IN PROGRESS (22/105 categories, 330 items)
 ID prefixes used: pa_pres, pa_art, pa_past, pa_pr, pa_fut, pa_dual, pa_neg, pa_ga, pa_ns, pa_sm, pa_ppd, pa_pos, pa_prep, pa_dem, pa_num, pa_adja, pa_bp, pa_sp, pa_id, pa_bq, pa_tt, pa_cs

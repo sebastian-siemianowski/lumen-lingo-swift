@@ -4508,5 +4508,1030 @@
         "explanation": "'You'd better'は'You had better'の短縮形です。よって付加疑問は'hadn't you?'になります。'had better'は強い助言を表す表現で、'should'より強いニュアンスがあります。'would rather'と混同しやすいですが、'You'd rather go, wouldn't you?'（むしろ行きたいでしょう？）では'wouldn't'を使います。'had better'='hadn't'、'would rather'='wouldn't'と正確に区別することが重要な文法ポイントです。"
       }
     ]
+  },
+  {
+    "key": "subject_verb_agreement",
+    "name": "Subject-Verb Agreement",
+    "description": "主語と動詞の一致",
+    "iconName": "equal.circle",
+    "color": "#c084fc",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_sva1",
+        "question": "The list of items _____ on the table.",
+        "translation": "(品物のリストはテーブルの上にあります)",
+        "options": [
+          "is",
+          "are",
+          "were",
+          "be"
+        ],
+        "correct": "is",
+        "explanation": "主語と動詞の一致は、日本語にはない英語独特の文法ルールです。ここでの主語は'list'（単数）であって'items'ではありません。'of items'は前置詞句で主語を修飾しているだけです。英語では前置詞の後の名詞（ここでは'items'）に惑わされず、本当の主語に動詞を合わせる必要があります。日本語では動詞の形は主語の数で変わりませんが、英語では三人称単数には's'をつけるなど厳密な一致が求められます。"
+      },
+      {
+        "id": "je_sva2",
+        "question": "Neither the students nor the teacher _____ happy.",
+        "translation": "(生徒も先生も幸せではありません)",
+        "options": [
+          "is",
+          "are",
+          "were",
+          "be"
+        ],
+        "correct": "is",
+        "explanation": "'neither A nor B'構文では、動詞はBに最も近い名詞に一致させます。ここではBが'the teacher'（単数）なので'is'が正解です。もし'Neither the teacher nor the students are happy'なら'are'になります。これは「近接一致」と呼ばれるルールです。日本語では「〜も〜も〜ない」と表現しますが、英語では動詞の形を近い方の主語に合わせるという独特のルールがあります。同様に'either A or B'でも同じルールが適用されます。"
+      },
+      {
+        "id": "je_sva3",
+        "question": "Everyone _____ a good time at the party.",
+        "translation": "(パーティーで皆楽しんでいます)",
+        "options": [
+          "is having",
+          "are having",
+          "were having",
+          "have"
+        ],
+        "correct": "is having",
+        "explanation": "'everyone'は意味的には複数の人を指しますが、文法的には単数扱いです。そのため動詞は単数形'is having'になります。同様に単数扱いの不定代名詞：'everybody'、'someone'、'something'、'anyone'、'nothing'、'each'、'every'。日本語では「皆」は複数のイメージですが、英語の'everyone'は「一人一人全員」という単数の意識で使われます。この文法的な扱いの違いは日本語話者にとって最も間違いやすいポイントの一つです。"
+      },
+      {
+        "id": "je_sva4",
+        "question": "Mathematics _____ my favorite subject.",
+        "translation": "(数学は私の好きな科目です)",
+        "options": [
+          "is",
+          "are",
+          "were",
+          "have"
+        ],
+        "correct": "is",
+        "explanation": "'mathematics'は語尾が'-s'で終わりますが、科目名として単数扱いです。同様のパターン：'physics'（物理学）、'economics'（経済学）、'news'（ニュース）、'politics'（政治学）はすべて単数扱いです。これは英語学習者が混乱しやすいポイントです。見た目は複数形ですが、一つの学問分野や概念を指すため単数です。日本語にはこのような「見た目は複数だが単数扱い」という概念がないため、特に注意が必要です。暗記しましょう。"
+      },
+      {
+        "id": "je_sva5",
+        "question": "The news _____ shocking.",
+        "translation": "(そのニュースは衝撃的です)",
+        "options": [
+          "is",
+          "are",
+          "were",
+          "have been"
+        ],
+        "correct": "is",
+        "explanation": "'news'は不可算名詞で常に単数扱いです。'The news is shocking'が正しく、'The news are shocking'は誤りです。英語の'news'は一つのニュース項目でも複数のニュース項目でも常に'news'であり、'a news'とは言えません。数えたい場合は'a piece of news'（一つのニュース）、'two pieces of news'（二つのニュース）と言います。日本語の「ニュース」はそのまま使えますが、英語では数え方に注意が必要です。"
+      },
+      {
+        "id": "je_sva6",
+        "question": "Each of the students _____ a textbook.",
+        "translation": "(生徒はそれぞれ教科書を持っています)",
+        "options": [
+          "has",
+          "have",
+          "having",
+          "had"
+        ],
+        "correct": "has",
+        "explanation": "'each'は「それぞれ」という意味で、常に単数扱いです。'each of the students'は「生徒のそれぞれ」ですが、動詞は単数形'has'になります。'students'が複数でも関係ありません。'each'自体が「一人一人」を意味するため、動詞は単数です。同様に'every student has...'も単数です。日本語の「それぞれ」には単数・複数の区別がないため、英語での単数扱いは意識して覚える必要がります。頻出の文法事項です。"
+      },
+      {
+        "id": "je_sva7",
+        "question": "A number of people _____ waiting outside.",
+        "translation": "(多くの人が外で待っています)",
+        "options": [
+          "are",
+          "is",
+          "was",
+          "has been"
+        ],
+        "correct": "are",
+        "explanation": "'a number of'は「多くの」を意味し、複数扱いです。しかし'the number of'は「〜の数」を意味し、単数扱いです。この違いは重要です。'A number of people are waiting'（多くの人々が待っている）→複数。'The number of students is increasing'（学生の数が増えている）→単数。日本語では両方とも「〜の」で済みますが、英語では冠詞の違い（a/the）で主語の数が変わります。この区別は試験でも頻出です。"
+      },
+      {
+        "id": "je_sva8",
+        "question": "Either coffee or tea _____ fine with me.",
+        "translation": "(コーヒーか紅茶のどちらでも構いません)",
+        "options": [
+          "is",
+          "are",
+          "were",
+          "be"
+        ],
+        "correct": "is",
+        "explanation": "'either A or B'構文でも、動詞はBに最も近い名詞に一致させます（近接一致ルール）。ここでは'tea'が最も近く、単数なので'is'が正解です。'neither...nor...'と同じルールです。もし'Either the teacher or the students are...'なら、'students'（複数）に一致して'are'になります。日本語の「AかBか」には動詞の変化がありませんが、英語ではこの近接一致を正しく適用することが重要です。"
+      },
+      {
+        "id": "je_sva9",
+        "question": "There _____ many books on the shelf.",
+        "translation": "(棚にはたくさんの本があります)",
+        "options": [
+          "are",
+          "is",
+          "was",
+          "has"
+        ],
+        "correct": "are",
+        "explanation": "'there is/are'構文では、動詞は後に来る名詞（真の主語）に一致させます。'many books'は複数なので'are'が正解です。'There is a book'（単数）、'There are many books'（複数）と使い分けます。口語では'There's many books'のように単数形を使う人もいますが、正式な英語では複数名詞には'are'を使います。日本語の「〜がある」には単数・複数の区別がないため、この一致規則は意識的に練習する必要があります。"
+      },
+      {
+        "id": "je_sva10",
+        "question": "The team _____ playing well this season.",
+        "translation": "(チームは今シーズン良いプレーをしています)",
+        "options": [
+          "is",
+          "are",
+          "were",
+          "have"
+        ],
+        "correct": "is",
+        "explanation": "集合名詞（collective nouns）は文脈によって単数にも複数にもなります。アメリカ英語では'the team is'（チーム全体として）が一般的で、イギリス英語では'the team are'（メンバー個々として）も使われます。ここではチーム全体の成績を述べているので'is'が自然です。他の集合名詞：'family'、'government'、'committee'、'class'。日本語にはこの区別がなく、「チームは」で済みますが、英語では視点により動詞が変わります。"
+      },
+      {
+        "id": "je_sva11",
+        "question": "Ten dollars _____ enough for lunch.",
+        "translation": "(10ドルは昼食に十分です)",
+        "options": [
+          "is",
+          "are",
+          "were",
+          "have been"
+        ],
+        "correct": "is",
+        "explanation": "金額、距離、時間などの数量が一つの単位として扱われる場合は単数扱いです。'Ten dollars'は10枚のドル硬貨ではなく、一つの金額として捉えるため'is'を使います。同様に'Five miles is a long walk'（5マイルは長い散歩だ）、'Two hours is enough time'（2時間は十分な時間だ）も単数です。日本語では「10ドルは」と数量をそのまま主語にしますが、英語では一塊の量として単数扱いする点が独特です。"
+      },
+      {
+        "id": "je_sva12",
+        "question": "The police _____ investigating the case.",
+        "translation": "(警察はその事件を捜査しています)",
+        "options": [
+          "are",
+          "is",
+          "was",
+          "has been"
+        ],
+        "correct": "are",
+        "explanation": "'police'は常に複数扱いの名詞です。'The police are investigating'が正しく、'The police is'は誤りです。一人の警官を指す場合は'a police officer'や'a policeman/policewoman'を使います。同様に常に複数扱いの名詞：'people'（人々）、'cattle'（牛の群れ）、'clergy'（聖職者）。逆に'fish'や'sheep'は単複同形です。日本語には単複の区別がないため、英語のこのような不規則な扱いは個別に覚える必要があります。"
+      },
+      {
+        "id": "je_sva13",
+        "question": "Not only the students but also the teacher _____ surprised.",
+        "translation": "(生徒だけでなく先生も驚いていました)",
+        "options": [
+          "was",
+          "were",
+          "are",
+          "have been"
+        ],
+        "correct": "was",
+        "explanation": "'not only A but also B'構文では、動詞はBに最も近い名詞に一致させます。'the teacher'が最も近く単数なので'was'が正解です。これは'neither...nor...'や'either...or...'と同じ近接一致ルールです。もし順序を逆にして'Not only the teacher but also the students were surprised'なら'were'になります。日本語の「AだけでなくBも」には動詞の一致は不要ですが、英語ではBの単複に合わせる必要があります。"
+      },
+      {
+        "id": "je_sva14",
+        "question": "The United States _____ a large country.",
+        "translation": "(アメリカは大きな国です)",
+        "options": [
+          "is",
+          "are",
+          "were",
+          "have been"
+        ],
+        "correct": "is",
+        "explanation": "国名、組織名、書籍名などの固有名詞は、たとえ複数形に見えても単数扱いです。'The United States'は一つの国なので'is'を使います。同様に'The Philippines is...'、'The United Nations is...'（組織として）。'The New York Times is...'（新聞名として）。日本語では「アメリカは」と特に意識しませんが、英語では固有名詞の形に惑わされず、それが指す実体（一つの国、一つの組織）に合わせて動詞を選ぶことが重要です。"
+      },
+      {
+        "id": "je_sva15",
+        "question": "What I need _____ more time and patience.",
+        "translation": "(私が必要なのはもっと時間と忍耐です)",
+        "options": [
+          "is",
+          "are",
+          "were",
+          "have been"
+        ],
+        "correct": "is",
+        "explanation": "'What I need'は名詞節で、主語として機能しています。名詞節が主語の場合、通常は単数扱いです。'What I need is more time'が自然です。ただし補語が明らかに複数の場合、口語では'are'も使われることがあります。文法的には'What I need is...'が安全です。同様に'What matters is...'、'What surprises me is...'も単数扱いが標準です。日本語の「〜のは」に相当する構文ですが、英語では動詞の一致に注意が必要です。"
+      }
+    ]
+  },
+  {
+    "key": "quantifiers",
+    "name": "Quantifiers",
+    "description": "数量詞の使い方",
+    "iconName": "number.circle",
+    "color": "#facc15",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_qn1",
+        "question": "There isn't _____ milk left.",
+        "translation": "(牛乳がほとんど残っていません)",
+        "options": [
+          "much",
+          "many",
+          "few",
+          "several"
+        ],
+        "correct": "much",
+        "explanation": "'much'は不可算名詞と共に使い、主に否定文と疑問文で使います。'milk'は不可算名詞なので'much milk'が正解です。可算名詞には'many'を使います。日本語では「たくさん」一語で済みますが、英語では名詞が数えられるかどうかで'much'と'many'を使い分けます。肯定文では'a lot of'が'much/many'の代わりによく使われます。'There isn't much milk'は「牛乳があまりない」という意味で、日常会話で頻繁に使われる基本表現です。"
+      },
+      {
+        "id": "je_qn2",
+        "question": "There are _____ apples in the basket.",
+        "translation": "(かごの中にリンゴがいくつかあります)",
+        "options": [
+          "some",
+          "any",
+          "much",
+          "a"
+        ],
+        "correct": "some",
+        "explanation": "'some'は肯定文で「いくつかの」を意味し、可算名詞の複数形と不可算名詞の両方に使えます。'some apples'（いくつかのリンゴ）が正解です。否定文と疑問文では通常'any'を使います。ただし、相手に「はい」の答えを期待する場合は疑問文でも'some'を使えます。例えば'Would you like some coffee?'（コーヒーはいかがですか？）。日本語の「いくつかの」に相当しますが、肯定/否定/疑問による使い分けが重要です。"
+      },
+      {
+        "id": "je_qn3",
+        "question": "I don't have _____ friends here.",
+        "translation": "(ここにはほとんど友達がいません)",
+        "options": [
+          "many",
+          "much",
+          "a lot",
+          "several"
+        ],
+        "correct": "many",
+        "explanation": "'many'は可算名詞の複数形と共に使い、否定文と疑問文で特に多く使われます。'friends'は可算名詞なので'many friends'が正解です。肯定文で「たくさん」と言いたい場合は'a lot of friends'や'lots of friends'の方が自然です。'many'は肯定文ではやや堅い印象を与えます。日本語の「たくさん」に相当しますが、英語では名詞の種類（可算/不可算）と文の種類（肯定/否定/疑問）で適切な数量詞が変わります。"
+      },
+      {
+        "id": "je_qn4",
+        "question": "_____ of the students passed the exam.",
+        "translation": "(ほとんどの生徒が試験に合格しました)",
+        "options": [
+          "Most",
+          "Much",
+          "Any",
+          "Every"
+        ],
+        "correct": "Most",
+        "explanation": "'most'は「ほとんどの」を意味し、可算名詞にも不可算名詞にも使えます。'Most of the students'（生徒のほとんど）が正解です。注意：'most'の後に特定の名詞を指す場合は'of the'が必要です。一般的な話では'Most students like holidays'のように'of the'なしで使えます。日本語の「ほとんどの」にそのまま対応する便利な表現ですが、冠詞の有無に注意が必要です。'Almost'（副詞）と混同しないようにしましょう。"
+      },
+      {
+        "id": "je_qn5",
+        "question": "There are _____ eggs. We need to buy more.",
+        "translation": "(卵がほとんどありません。もっと買う必要があります)",
+        "options": [
+          "few",
+          "a few",
+          "little",
+          "a little"
+        ],
+        "correct": "few",
+        "explanation": "'few'と'a few'の違いは重要です。'few'は「ほとんどない（否定的）」、'a few'は「少しはある（肯定的）」です。ここでは「もっと買う必要がある」ので不足を表す'few'が正解です。可算名詞には'few/a few'、不可算名詞には'little/a little'を使います。日本語では「ほとんどない」と「少しある」の違いですが、英語では冠詞'a'の有無でニュアンスが大きく変わります。この微妙な違いは中級レベルの重要テーマです。"
+      },
+      {
+        "id": "je_qn6",
+        "question": "We have _____ time before the train leaves.",
+        "translation": "(電車が出る前に少し時間があります)",
+        "options": [
+          "a little",
+          "a few",
+          "few",
+          "many"
+        ],
+        "correct": "a little",
+        "explanation": "'a little'は不可算名詞と共に使い、「少しはある（肯定的）」を意味します。'time'は不可算名詞なので'a little time'が正解です。'a little'は「十分ではないが、まだある」という肯定的なニュアンスです。'little time'（冠詞なし）なら「ほとんど時間がない」と否定的になります。日本語の「少し」に相当しますが、'a'があるかないかで意味が変わる点が英語の繊細さです。文脈に合わせて正しく使い分けましょう。"
+      },
+      {
+        "id": "je_qn7",
+        "question": "_____ student must submit the assignment.",
+        "translation": "(全ての生徒がその課題を提出しなければなりません)",
+        "options": [
+          "Every",
+          "All",
+          "Each",
+          "Some"
+        ],
+        "correct": "Every",
+        "explanation": "'every'は「全ての」を意味し、単数名詞と単数動詞と共に使います。'every student'（全ての生徒）は一人一人を強調しつつ全体を指します。'all students'との違いは、'every'が個人に焦点を当てるのに対し、'all'はグループ全体を指すことです。日本語の「全ての」「どの〜も」に相当します。'every'の後は必ず単数名詞が来る点に注意してください。'every students'は誤りです。この規則は英語の基本中の基本です。"
+      },
+      {
+        "id": "je_qn8",
+        "question": "Is there _____ water in the bottle?",
+        "translation": "(ボトルに水はありますか？)",
+        "options": [
+          "any",
+          "some",
+          "many",
+          "few"
+        ],
+        "correct": "any",
+        "explanation": "疑問文では通常'any'を使います。'Is there any water?'は「水はありますか？」という一般的な質問です。'any'は疑問文と否定文で使われ、「いくらかの」「何か」を意味します。ただし、相手に「はい」と答えてほしい場合は'Would you like some water?'のように'some'も使えます。日本語では区別しませんが、英語では肯定='some'、否定・疑問='any'が基本ルールです。この使い分けは初級から中級への重要なステップです。"
+      },
+      {
+        "id": "je_qn9",
+        "question": "She ate _____ of the cake.",
+        "translation": "(彼女はケーキを全部食べました)",
+        "options": [
+          "all",
+          "every",
+          "each",
+          "any"
+        ],
+        "correct": "all",
+        "explanation": "'all of'は「〜の全部」を意味します。'all of the cake'は「ケーキの全部」です。'all'は可算名詞にも不可算名詞にも使えます。'every'は単数名詞のみに使い、'all'は複数名詞や不可算名詞に使います。'She ate all of the cake'（不可算のケーキ全部）、'All of the students passed'（全員が合格）のように使います。日本語の「全部」「全て」に対応する幅広い使い方ができる便利な表現です。"
+      },
+      {
+        "id": "je_qn10",
+        "question": "_____ of the answers is correct.",
+        "translation": "(答えはどちらも正しくありません)",
+        "options": [
+          "Neither",
+          "Both",
+          "Either",
+          "All"
+        ],
+        "correct": "Neither",
+        "explanation": "'neither'は「どちらも〜ない」を意味し、二つのものについて使います。'Neither of the answers is correct'は「どちらの答えも正しくない」です。'neither'は否定の意味を持つので、動詞に'not'をつけません（二重否定を避ける）。'both'は「両方とも」（肯定）、'either'は「どちらか」です。日本語の「どちらも〜ない」に対応しますが、英語では動詞を肯定形にする点を忘れないでください。三つ以上には'none'を使います。"
+      },
+      {
+        "id": "je_qn11",
+        "question": "I'd like _____ more coffee, please.",
+        "translation": "(もう少しコーヒーをいただけますか)",
+        "options": [
+          "some",
+          "any",
+          "many",
+          "few"
+        ],
+        "correct": "some",
+        "explanation": "依頼や提案の文では、疑問文であっても'some'を使います。'I'd like some more coffee'は丁寧な依頼で、相手に「はい」の返答を期待しています。このルールは重要な例外です。基本は疑問文='any'ですが、依頼（Would you like some...?）、提案（Can I have some...?）では'some'を維持します。日本語の「いくらか」「少し」には肯定/否定の区別がないため、この英語の使い分けは特に意識して練習する必要があります。"
+      },
+      {
+        "id": "je_qn12",
+        "question": "_____ people came to the meeting.",
+        "translation": "(数人が会議に来ました)",
+        "options": [
+          "Several",
+          "Much",
+          "A little",
+          "Any"
+        ],
+        "correct": "Several",
+        "explanation": "'several'は「いくつかの、数個の」を意味し、可算名詞の複数形と共に使います。'some'より少し多い印象を与えます。具体的には3〜7程度のイメージです。'several people'（数人の人々）は日常的な表現です。'several'は肯定文で使い、'much'（不可算名詞用）や'a little'（不可算名詞用）とは使う名詞の種類が異なります。日本語の「数人の」「いくつかの」にそのまま対応する使いやすい数量詞です。ビジネスでも頻繁に登場します。"
+      },
+      {
+        "id": "je_qn13",
+        "question": "There isn't _____ sugar in my tea.",
+        "translation": "(私の紅茶にはあまり砂糖が入っていません)",
+        "options": [
+          "enough",
+          "many",
+          "few",
+          "several"
+        ],
+        "correct": "enough",
+        "explanation": "'enough'は「十分な」を意味し、可算名詞にも不可算名詞にも使えます。'enough sugar'（十分な砂糖）が正解です。否定文'there isn't enough sugar'は「砂糖が十分でない」です。'enough'の位置にも注意：名詞の前に置きます（'enough time'）が、形容詞の後に置きます（'old enough'、'good enough'）。日本語の「十分な」に対応しますが、英語では位置のルールがあるため、正しい語順で使いましょう。"
+      },
+      {
+        "id": "je_qn14",
+        "question": "Would you like _____ cup of tea?",
+        "translation": "(もう一杯お茶はいかがですか？)",
+        "options": [
+          "another",
+          "other",
+          "others",
+          "the other"
+        ],
+        "correct": "another",
+        "explanation": "'another'は'an + other'が合体した語で、「もう一つの」を意味します。単数名詞の前に使います。'another cup of tea'は「もう一杯のお茶」です。'other'（他の、複数形の前）、'the other'（残りのもう一つ）、'others'（他の人々）との使い分けが重要です。日本語の「もう一つの」「別の」に対応しますが、英語では単数/複数と特定/不特定の組み合わせで正しい形を選ぶ必要があります。"
+      },
+      {
+        "id": "je_qn15",
+        "question": "He has _____ experience in this field.",
+        "translation": "(彼はこの分野でかなりの経験があります)",
+        "options": [
+          "a lot of",
+          "many",
+          "a few",
+          "several"
+        ],
+        "correct": "a lot of",
+        "explanation": "'a lot of'は可算名詞にも不可算名詞にも使える万能な数量詞です。'experience'は不可算名詞なので'many'や'several'は使えず、'a lot of experience'が正解です。'a lot of'は'much/many'より口語的で自然な表現です。肯定文では'much'より'a lot of'が好まれます。同義語に'lots of'、'plenty of'もあります。日本語の「たくさんの」に最も近い英語表現で、名詞の種類を気にせず使えるため、初中級者にとって非常に便利な表現です。"
+      }
+    ]
+  },
+  {
+    "key": "determiners",
+    "name": "Determiners",
+    "description": "限定詞の使い方",
+    "iconName": "text.cursor",
+    "color": "#2dd4bf",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_det1",
+        "question": "I'll take _____ one, please.",
+        "translation": "(あれをください)",
+        "options": [
+          "that",
+          "a",
+          "an",
+          "these"
+        ],
+        "correct": "that",
+        "explanation": "限定詞（determiners）は名詞の前に置いて、その名詞を特定する役割を持ちます。'that'は「あの、あれ」と離れた物を指す指示限定詞です。'that one'は「あの一つ」を指し、話し手から遠い物を選ぶ際に使います。日本語の「あの」「あれ」に対応します。限定詞には冠詞（a/an/the）、指示詞（this/that/these/those）、所有格（my/your等）などがあり、名詞の意味を限定する英語の重要な仕組みです。"
+      },
+      {
+        "id": "je_det2",
+        "question": "_____ books are mine.",
+        "translation": "(これらの本は私のです)",
+        "options": [
+          "These",
+          "This",
+          "A",
+          "That"
+        ],
+        "correct": "These",
+        "explanation": "'these'は「これらの」を意味する複数形の指示限定詞です。'books'は複数形なので'these books'が正しい組み合わせです。'this'は単数（'this book'）、'these'は複数（'these books'）。同様に遠くの物：'that'（単数）、'those'（複数）。日本語では「この本」「この本たち」のように「この」の形が変わりませんが、英語では名詞の数に応じて指示限定詞も変化します。この一致は英語の基本ルールの一つです。"
+      },
+      {
+        "id": "je_det3",
+        "question": "Is this _____ umbrella?",
+        "translation": "(これはあなたの傘ですか？)",
+        "options": [
+          "your",
+          "you",
+          "yours",
+          "you're"
+        ],
+        "correct": "your",
+        "explanation": "所有限定詞'your'は名詞の前に置いて「あなたの」を意味します。'your umbrella'（あなたの傘）が正解です。'yours'は所有代名詞で名詞なしで使います（'This umbrella is yours'）。'you're'は'you are'の短縮形です。日本語の「あなたの」に対応しますが、英語では所有形容詞（my, your, his, her）と所有代名詞（mine, yours, his, hers）の使い分けが必要です。名詞の前=形容詞形、単独使用=代名詞形と覚えてください。"
+      },
+      {
+        "id": "je_det4",
+        "question": "I need _____ information about the course.",
+        "translation": "(そのコースについての情報が必要です)",
+        "options": [
+          "some",
+          "a",
+          "many",
+          "a few"
+        ],
+        "correct": "some",
+        "explanation": "'some'は限定詞として「いくらかの」を意味し、不可算名詞にも可算名詞にも使えます。'information'は不可算名詞なので'a information'や'many information'は誤りです。'some information'が正しい表現です。日本語では「情報」は数える意識が弱いですが、英語では'information'が不可算であることを知っている必要があります。不可算名詞の代表例：information, advice, furniture, luggage, homework, news, knowledge, research。"
+      },
+      {
+        "id": "je_det5",
+        "question": "She goes jogging _____ morning.",
+        "translation": "(彼女は毎朝ジョギングに行きます)",
+        "options": [
+          "every",
+          "all",
+          "each",
+          "any"
+        ],
+        "correct": "every",
+        "explanation": "'every'は「毎〜、どの〜も」を意味する限定詞です。'every morning'（毎朝）は日常的に繰り返される習慣を表す最も自然な言い方です。'every'と'each'の違い：'every'は全体としてのグループを強調し、'each'は個別の要素を強調します。'every morning'は「朝という時間帯全てにおいて」、'each morning'は「一つ一つの朝において」のニュアンスです。日常会話では'every'の方が圧倒的に多く使われます。"
+      },
+      {
+        "id": "je_det6",
+        "question": "I've never seen _____ a beautiful sunset.",
+        "translation": "(こんなに美しい夕日は見たことがありません)",
+        "options": [
+          "such",
+          "so",
+          "this",
+          "very"
+        ],
+        "correct": "such",
+        "explanation": "'such'は「そのような、こんな」を意味する限定詞です。'such a beautiful sunset'は「こんなに美しい夕日」です。'such'は名詞句の前に使い、'so'は形容詞・副詞の前に使います。'such a nice day'＝'so nice a day'は同じ意味ですが構造が異なります。日本語の「こんな」「そんな」に対応します。'such'の語順は'such + a/an + 形容詞 + 名詞'で、'a such beautiful sunset'は誤りです。この語順は日本語話者が間違えやすいポイントです。"
+      },
+      {
+        "id": "je_det7",
+        "question": "_____ child needs love and attention.",
+        "translation": "(どの子どもも愛情と注意が必要です)",
+        "options": [
+          "Every",
+          "All",
+          "The",
+          "A"
+        ],
+        "correct": "Every",
+        "explanation": "'every'は「どの〜も全て」を意味し、例外なく全てのものに当てはまることを表します。'Every child'は「どの子どもも」です。'All children'（複数形）でも同じ意味になりますが、'every'は一人一人に焦点を当てたニュアンスが強いです。'every'の後は必ず単数名詞が来ます。日本語の「どの〜も」「全ての」に対応しますが、英語では'every'+単数、'all'+複数と名詞の形が異なる点に注目してください。普遍的な真理を述べる際によく使われます。"
+      },
+      {
+        "id": "je_det8",
+        "question": "I have _____ idea what happened.",
+        "translation": "(何が起こったか全く分かりません)",
+        "options": [
+          "no",
+          "not",
+          "none",
+          "any"
+        ],
+        "correct": "no",
+        "explanation": "'no'は限定詞として「一つも〜ない」を意味します。'I have no idea'は「全く分からない」という非常によく使われる表現です。'no'と'not any'は同じ意味ですが、'no'の方がやや強調的です。'I have no money'='I don't have any money'。日本語の「全く〜ない」に対応します。'no'は名詞の前に直接置く限定詞で、'not'は動詞を否定する副詞です。この区別を理解することで、否定表現の幅が広がります。"
+      },
+      {
+        "id": "je_det9",
+        "question": "_____ side of the road has sidewalks.",
+        "translation": "(道路の両側に歩道があります)",
+        "options": [
+          "Each",
+          "Every",
+          "All",
+          "Any"
+        ],
+        "correct": "Each",
+        "explanation": "'each'は「それぞれの」を意味し、個別の要素を一つずつ強調します。'each side'は「それぞれの側」で、道路の両側を個別に指しています。'every'との違いは、'each'が二つ以上の個別要素を意識するのに対し、'every'は三つ以上の全体を強調することです。道路の側面は二つしかないので'each'が適切です。'every side'は三つ以上の側面がある場合に使います。日本語の「それぞれの」に正確に対応する表現です。"
+      },
+      {
+        "id": "je_det10",
+        "question": "We don't have _____ time to waste.",
+        "translation": "(無駄にする時間はありません)",
+        "options": [
+          "any",
+          "some",
+          "a",
+          "many"
+        ],
+        "correct": "any",
+        "explanation": "否定文では'any'を使います。'We don't have any time'は「時間が全くない」を意味します。'don't have any'='have no'で、どちらも否定を表しますが、'any'を使う形の方が一般的です。'time'は不可算名詞なので'many'は使えません。日本語の「少しも〜ない」に対応する表現です。肯定文='some'、否定文='any'、疑問文='any'（依頼を除く）という基本パターンをしっかり覚えることが重要です。"
+      },
+      {
+        "id": "je_det11",
+        "question": "Would you like _____ drink?",
+        "translation": "(何かお飲み物はいかがですか？)",
+        "options": [
+          "a",
+          "the",
+          "some",
+          "any"
+        ],
+        "correct": "a",
+        "explanation": "'a'は不定冠詞で、不特定の一つのものを指す最も基本的な限定詞です。'a drink'は「一杯の飲み物」で、何でも良いから一つの飲み物を提案しています。'Would you like a drink?'は社交場面での定番フレーズです。'the drink'なら特定の飲み物を指します。日本語では冠詞がないため、「飲み物」とだけ言いますが、英語では必ず冠詞や限定詞をつける必要があります。この冠詞の使い方は英語の最難関テーマの一つとされています。"
+      },
+      {
+        "id": "je_det12",
+        "question": "_____ of my friends speak English.",
+        "translation": "(私の友人のほとんどが英語を話します)",
+        "options": [
+          "Most",
+          "Much",
+          "Every",
+          "Each"
+        ],
+        "correct": "Most",
+        "explanation": "'most of'は「〜のほとんど」を意味し、可算名詞にも不可算名詞にも使えます。'Most of my friends'は「友人のほとんど」です。'most'の後に特定の名詞（my, the, theseなど）が来る場合は'of'が必要です。一般的な文では'Most people like music'のように'of'なしで使えます。'much of'は不可算名詞のみに使います。日本語の「ほとんどの」に対応する便利な表現で、会話でも文章でも頻繁に使われます。"
+      },
+      {
+        "id": "je_det13",
+        "question": "I'll meet you at _____ usual place.",
+        "translation": "(いつもの場所で会いましょう)",
+        "options": [
+          "the",
+          "a",
+          "an",
+          "some"
+        ],
+        "correct": "the",
+        "explanation": "定冠詞'the'は、話し手と聞き手の両方が知っている特定の物を指すときに使います。'the usual place'は「いつもの（お互いが知っている）場所」です。'a usual place'とは言いません。'the'は「あの」「例の」に近い感覚です。日本語には冠詞がないため、「いつもの場所」で十分ですが、英語では特定のものには必ず'the'をつけます。'the'は英語で最も頻繁に使われる単語であり、その使い方をマスターすることが流暢な英語への鍵です。"
+      },
+      {
+        "id": "je_det14",
+        "question": "I have _____ brothers. I'm an only child.",
+        "translation": "(兄弟はいません。一人っ子です)",
+        "options": [
+          "no",
+          "not",
+          "any",
+          "none"
+        ],
+        "correct": "no",
+        "explanation": "'no'は名詞の前に置いて「一つも〜ない」を表す限定詞です。'I have no brothers'は'I don't have any brothers'と同じ意味ですが、'no'を使った形はより直接的で強い否定になります。'none'は代名詞で名詞なしで使います（例：'I have none'）。'not'は動詞を否定する副詞で名詞の前には置けません。日本語の「〜がない」「〜はいない」に対応しますが、英語では'no'、'not any'、'none'の使い分けが必要です。"
+      },
+      {
+        "id": "je_det15",
+        "question": "_____ answer you choose will be accepted.",
+        "translation": "(どの答えを選んでも受け入れられます)",
+        "options": [
+          "Whichever",
+          "Whatever",
+          "However",
+          "Whenever"
+        ],
+        "correct": "Whichever",
+        "explanation": "'whichever'は「どの〜を〜しても」を意味する限定詞で、限られた選択肢からの任意の選択を表します。'Whichever answer you choose'は「どの答えを選んでも」です。'whatever'は選択肢が限定されていない場合に使います。'whichever'は特定のグループ内からの選択、'whatever'は無制限の可能性を指します。日本語の「どの〜でも」に対応します。この二つの使い分けができると、英語の表現力が格段に向上します。上級者向けの重要な限定詞です。"
+      }
+    ]
+  },
+  {
+    "key": "conjunctions",
+    "name": "Conjunctions",
+    "description": "接続詞の使い方",
+    "iconName": "link.circle",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_cj1",
+        "question": "I like tea _____ coffee.",
+        "translation": "(私はお茶もコーヒーも好きです)",
+        "options": [
+          "and",
+          "but",
+          "or",
+          "so"
+        ],
+        "correct": "and",
+        "explanation": "'and'は最も基本的な等位接続詞で、二つの要素を並列に結びます。'tea and coffee'は「お茶とコーヒー」です。日本語の「と」「も」に相当します。等位接続詞には'and'（そして）、'but'（しかし）、'or'（または）、'so'（だから）、'yet'（しかし）、'for'（なぜなら）、'nor'（〜もない）の7つがあります。これらは文法的に対等な要素を結ぶ役割を果たします。英語の文章構成の基礎となる最も重要な接続詞の一つです。"
+      },
+      {
+        "id": "je_cj2",
+        "question": "She studied hard, _____ she failed the exam.",
+        "translation": "(彼女は一生懸命勉強しましたが、試験に落ちました)",
+        "options": [
+          "but",
+          "and",
+          "so",
+          "or"
+        ],
+        "correct": "but",
+        "explanation": "'but'は「しかし、でも」を意味する等位接続詞で、対比や予想外の結果を表します。'She studied hard, but she failed'は努力と結果の対比を示しています。日本語の「しかし」「でも」「が」に対応します。'but'の前にはカンマを置くのが一般的です。'however'も「しかし」の意味ですが、'however'は副詞で接続詞ではありません。'but'は二つの節を直接つなげますが、'however'はセミコロンやピリオドが必要です。"
+      },
+      {
+        "id": "je_cj3",
+        "question": "Hurry up, _____ you'll miss the train.",
+        "translation": "(急いで、さもないと電車に乗り遅れますよ)",
+        "options": [
+          "or",
+          "and",
+          "but",
+          "so"
+        ],
+        "correct": "or",
+        "explanation": "'or'は「または、さもないと」を意味する等位接続詞です。'Hurry up, or you'll miss the train'は命令文＋orで「〜しなさい、さもないと〜」という警告パターンです。逆に命令文＋andは「〜しなさい、そうすれば〜」となります。この'or'と'and'の使い分けは重要です。日本語の「さもないと」「あるいは」に対応します。選択を表す場合もあります：'Tea or coffee?'（お茶かコーヒー？）。文脈によって意味が変わる万能な接続詞です。"
+      },
+      {
+        "id": "je_cj4",
+        "question": "I was tired, _____ I went to bed early.",
+        "translation": "(疲れていたので、早く寝ました)",
+        "options": [
+          "so",
+          "but",
+          "or",
+          "and"
+        ],
+        "correct": "so",
+        "explanation": "'so'は「だから、それで」を意味する等位接続詞で、原因と結果を結びます。'I was tired, so I went to bed early'は原因（疲れた）→結果（早く寝た）を表します。日本語の「だから」「なので」に対応します。'because'との違い：'because'は原因を導き、'so'は結果を導きます。'Because I was tired, I went to bed early'='I was tired, so I went to bed early'は同じ意味ですが、構造が逆です。文脈に応じて使い分けましょう。"
+      },
+      {
+        "id": "je_cj5",
+        "question": "I'll go _____ it rains.",
+        "translation": "(雨が降っても行きます)",
+        "options": [
+          "even if",
+          "so that",
+          "in order to",
+          "as long as"
+        ],
+        "correct": "even if",
+        "explanation": "'even if'は「たとえ〜でも」を意味する従属接続詞です。'even if it rains'は「たとえ雨が降っても」で、仮定の状況に関わらず行動する意志を表します。'even though'との違い：'even if'は仮定（〜だとしても）、'even though'は事実（〜にもかかわらず）。日本語の「たとえ〜でも」に対応する表現です。'I'll go even if it rains'は仮定的、'I went even though it rained'は実際に雨が降った事実を述べています。この区別は上級英語で重要です。"
+      },
+      {
+        "id": "je_cj6",
+        "question": "_____ I got home, I took a shower.",
+        "translation": "(家に着いたら、シャワーを浴びました)",
+        "options": [
+          "After",
+          "Before",
+          "Until",
+          "During"
+        ],
+        "correct": "After",
+        "explanation": "'after'は「〜の後に」を意味する従属接続詞で、時間の順序を表します。'After I got home, I took a shower'は「帰宅後にシャワーを浴びた」です。'after'の後には完全な文（主語＋動詞）が来ます。'before'（〜の前に）は反対の意味です。日本語の「〜してから」「〜した後で」に対応します。'after'は前置詞としても使えます：'after dinner'（夕食後）。接続詞として使う場合は後に文が続くことが特徴です。"
+      },
+      {
+        "id": "je_cj7",
+        "question": "_____ you study harder, you won't pass.",
+        "translation": "(もっと勉強しないと、合格しませんよ)",
+        "options": [
+          "Unless",
+          "If",
+          "Although",
+          "Because"
+        ],
+        "correct": "Unless",
+        "explanation": "'unless'は「〜しない限り」を意味する条件の接続詞です。'Unless you study harder'は'If you don't study harder'と同じ意味です。'unless'='if...not'と覚えてください。否定の条件を表す際に非常に便利な接続詞です。日本語の「〜しなければ」「〜しない限り」に対応します。注意：'unless'自体が否定の意味を含むので、'unless you don't study'は二重否定になり誤りです。ビジネスでも日常でも頻繁に使われる重要な接続詞です。"
+      },
+      {
+        "id": "je_cj8",
+        "question": "_____ it was raining, we went out.",
+        "translation": "(雨が降っていたにもかかわらず、私たちは出かけました)",
+        "options": [
+          "Although",
+          "Because",
+          "Since",
+          "When"
+        ],
+        "correct": "Although",
+        "explanation": "'although'は「〜にもかかわらず」を意味する譲歩の接続詞です。'Although it was raining, we went out'は予想に反する行動を示しています。'though'は'although'のカジュアル版、'even though'はさらに強調された形です。日本語の「〜にもかかわらず」「〜だけれども」に対応します。'but'と意味は似ていますが、構造が異なります。'Although it rained, we went out'='It rained, but we went out'。従属接続詞なのでカンマの使い方にも注意しましょう。"
+      },
+      {
+        "id": "je_cj9",
+        "question": "She whispered _____ nobody could hear her.",
+        "translation": "(誰にも聞こえないように彼女はささやきました)",
+        "options": [
+          "so that",
+          "because",
+          "unless",
+          "although"
+        ],
+        "correct": "so that",
+        "explanation": "'so that'は「〜するために」「〜するように」を意味する目的の接続詞です。'She whispered so that nobody could hear her'は「誰にも聞こえないようにささやいた」という目的を表しています。'so that'の後には'can/could/will/would'などの助動詞がよく来ます。日本語の「〜するように」「〜するために」に対応します。'in order that'も同じ意味ですが、よりフォーマルです。目的を表す表現は日常英語で非常に重要です。"
+      },
+      {
+        "id": "je_cj10",
+        "question": "I'll wait _____ you come back.",
+        "translation": "(あなたが戻るまで待ちます)",
+        "options": [
+          "until",
+          "unless",
+          "while",
+          "since"
+        ],
+        "correct": "until",
+        "explanation": "'until'（'till'とも書く）は「〜まで」を意味する時間の接続詞です。'I'll wait until you come back'は「戻るまで待つ」で、ある状態が続く終点を示します。注意：未来の出来事について'until'を使う場合でも、'until'の後は現在形を使います（'until you come back'であって'until you will come back'ではない）。日本語の「〜まで」にそのまま対応しますが、英語では時制のルールに特に注意が必要です。"
+      },
+      {
+        "id": "je_cj11",
+        "question": "_____ the sun was shining, it was cold.",
+        "translation": "(太陽が輝いていましたが、寒かったです)",
+        "options": [
+          "Even though",
+          "Because",
+          "Since",
+          "When"
+        ],
+        "correct": "Even though",
+        "explanation": "'even though'は「〜にもかかわらず」を意味し、'although'よりも強い対比を表します。太陽が出ている＝暖かいはずなのに寒い、という予想外の状況を強調しています。'even though'は事実に基づいた譲歩を表すのに対し、'even if'は仮定の譲歩です。日本語の「〜にもかかわらず」「それでも」に対応する強調表現です。'Although'で置き換え可能ですが、驚きや予想外の感情を込めたい場合は'even though'がより効果的な選択です。"
+      },
+      {
+        "id": "je_cj12",
+        "question": "He exercises daily _____ he can stay healthy.",
+        "translation": "(健康でいられるように毎日運動しています)",
+        "options": [
+          "so that",
+          "even though",
+          "unless",
+          "although"
+        ],
+        "correct": "so that",
+        "explanation": "'so that'は目的を表す接続詞で、「〜するために」を意味します。'He exercises daily so that he can stay healthy'は運動の目的（健康維持）を明確にしています。'so that'の後に'can/could/will/would'がよく来るのは、目的が可能性や意志に関わるからです。'in order to'も同じく目的を表しますが、こちらは不定詞につなげます。日本語の「〜ために」「〜ように」に対応する重要な構文パターンです。日常英語での使用頻度が高い表現です。"
+      },
+      {
+        "id": "je_cj13",
+        "question": "_____ I was a child, I loved swimming.",
+        "translation": "(子どもの頃、私は水泳が大好きでした)",
+        "options": [
+          "When",
+          "While",
+          "Until",
+          "Since"
+        ],
+        "correct": "When",
+        "explanation": "'when'は「〜とき」を意味する最も基本的な時間の接続詞です。'When I was a child'は「子どもだったとき」で、過去の時期を指しています。'when'は特定の時点やperiodを表し、'while'は「〜している間」で動作の同時進行を強調します。日本語の「〜とき」「〜の頃」に対応する表現です。'when'と'while'の使い分け：'when'は点的な時間（「着いたとき」）にも期間的な時間（「子どもの頃」）にも使えますが、'while'は期間のみです。"
+      },
+      {
+        "id": "je_cj14",
+        "question": "He is rich _____ he is not happy.",
+        "translation": "(彼は金持ちですが、幸せではありません)",
+        "options": [
+          "yet",
+          "and",
+          "or",
+          "for"
+        ],
+        "correct": "yet",
+        "explanation": "'yet'は等位接続詞として「しかし、それでも」を意味します。'but'と似ていますが、'yet'はより文語的で、予想に反する結果を強調します。'He is rich yet (he is) not happy'は「裕福なのに幸せでない」という対比です。日本語の「しかし」「それなのに」に対応します。副詞としての'yet'（「まだ」：'I haven't finished yet'）と混同しないよう注意してください。接続詞'yet'は文と文の間に置かれ、フォーマルな文章で好まれます。"
+      },
+      {
+        "id": "je_cj15",
+        "question": "I stayed home _____ I was feeling sick.",
+        "translation": "(気分が悪かったので家にいました)",
+        "options": [
+          "because",
+          "although",
+          "unless",
+          "until"
+        ],
+        "correct": "because",
+        "explanation": "'because'は「〜なので」を意味する原因の接続詞で、最も頻繁に使われる理由の表現です。'I stayed home because I was feeling sick'は原因（体調不良）→結果（家にいた）を示します。'since'や'as'も理由を表せますが、'because'が最も直接的で強い因果関係を示します。日本語の「〜なので」「〜から」に対応します。'because of'（前置詞句）との違い：'because'+文、'because of'+名詞。この基本的な使い分けをマスターしましょう。"
+      }
+    ]
+  },
+  {
+    "key": "adverbs_frequency",
+    "name": "Adverbs of Frequency",
+    "description": "頻度の副詞",
+    "iconName": "clock.arrow.2.circlepath",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "je_af1",
+        "question": "She _____ goes to the gym on Mondays.",
+        "translation": "(彼女はいつも月曜日にジムに行きます)",
+        "options": [
+          "always",
+          "never",
+          "rarely",
+          "seldom"
+        ],
+        "correct": "always",
+        "explanation": "'always'は「いつも、常に」を意味する頻度100%の副詞です。頻度の副詞は一般動詞の前、be動詞や助動詞の後に置くのが基本ルールです。'She always goes'のように主語と一般動詞の間に置きます。日本語の「いつも」に対応しますが、英語では位置が重要です。'She goes always to the gym'は不自然です。頻度の副詞の順番：always (100%) > usually (80%) > often (60%) > sometimes (40%) > rarely (10%) > never (0%)。"
+      },
+      {
+        "id": "je_af2",
+        "question": "He is _____ late for work.",
+        "translation": "(彼は決して仕事に遅刻しません)",
+        "options": [
+          "never",
+          "always",
+          "usually",
+          "often"
+        ],
+        "correct": "never",
+        "explanation": "'never'は「決して〜ない」を意味する頻度0%の副詞です。'He is never late'のようにbe動詞の後に置きます。'never'自体が否定の意味を持つため、'He is not never late'のように'not'と併用すると二重否定になり誤りです。日本語の「決して〜ない」に対応しますが、英語では'never'一語で否定を表すため、動詞に'not'は不要です。位置のルール：be動詞の後、一般動詞の前に統一して覚えましょう。頻度ゼロを強く表現できる副詞です。"
+      },
+      {
+        "id": "je_af3",
+        "question": "I _____ eat breakfast at home.",
+        "translation": "(私はたいてい家で朝食を食べます)",
+        "options": [
+          "usually",
+          "never",
+          "rarely",
+          "hardly"
+        ],
+        "correct": "usually",
+        "explanation": "'usually'は「たいてい、普通は」を意味する頻度約80%の副詞です。習慣的な行動を表すのに最もよく使われます。'I usually eat breakfast at home'は日常的な習慣を述べています。'always'ほど例外なしではないが、かなりの頻度で行う行動に使います。日本語の「たいてい」「普段は」に対応します。位置は一般動詞の前：'I usually eat...'。文頭に置くこともできます：'Usually, I eat breakfast at home'。カジュアルな会話で非常に頻繁に使われます。"
+      },
+      {
+        "id": "je_af4",
+        "question": "We _____ go to that restaurant. It's our favorite.",
+        "translation": "(私たちはよくあのレストランに行きます。お気に入りなんです)",
+        "options": [
+          "often",
+          "never",
+          "rarely",
+          "seldom"
+        ],
+        "correct": "often",
+        "explanation": "'often'は「しばしば、よく」を意味する頻度約60%の副詞です。'We often go to that restaurant'は「よく行く」という頻繁な習慣を表します。'often'は'frequently'と同義で、日常会話では'often'の方がよく使われます。日本語の「よく」「しばしば」に対応します。位置は一般動詞の前が基本ですが、文末にも置けます：'We go there often'。'How often do you...?'（どれくらいの頻度で〜しますか？）という質問の答えとしても使います。"
+      },
+      {
+        "id": "je_af5",
+        "question": "They _____ watch TV. They prefer reading.",
+        "translation": "(彼らはめったにテレビを見ません。読書が好みです)",
+        "options": [
+          "rarely",
+          "always",
+          "often",
+          "usually"
+        ],
+        "correct": "rarely",
+        "explanation": "'rarely'は「めったに〜ない」を意味する頻度約10%の副詞です。'They rarely watch TV'は「めったにテレビを見ない」を表します。'rarely'自体が否定的な意味を持つため、'don't rarely'のように'not'との併用は不要です。'seldom'も同じ意味ですが、'seldom'はよりフォーマルです。日本語の「めったに〜ない」に対応します。'rarely'は頻度が非常に低いことを控えめに表現する副詞で、完全な否定の'never'とは区別して使います。"
+      },
+      {
+        "id": "je_af6",
+        "question": "She _____ drinks coffee in the evening.",
+        "translation": "(彼女は時々夕方にコーヒーを飲みます)",
+        "options": [
+          "sometimes",
+          "always",
+          "never",
+          "rarely"
+        ],
+        "correct": "sometimes",
+        "explanation": "'sometimes'は「時々」を意味する頻度約40%の副詞です。他の頻度の副詞と異なり、'sometimes'は文頭、文中、文末のどこにでも置ける柔軟な副詞です。'Sometimes she drinks coffee'、'She sometimes drinks coffee'、'She drinks coffee sometimes'の全てが自然です。日本語の「時々」「たまに」に対応します。'occasionally'も同じ意味ですが、よりフォーマルです。日常会話で最も使いやすい頻度副詞の一つです。"
+      },
+      {
+        "id": "je_af7",
+        "question": "He is _____ on time. You can depend on him.",
+        "translation": "(彼はいつも時間通りです。信頼できます)",
+        "options": [
+          "always",
+          "sometimes",
+          "rarely",
+          "never"
+        ],
+        "correct": "always",
+        "explanation": "'always'は信頼性や一貫性を表すのにも使われます。'He is always on time'は「彼はいつも時間通りだ」で、be動詞の後に置かれています。be動詞がある文：'主語 + be動詞 + always/never等 + 補語'。一般動詞がある文：'主語 + always/never等 + 動詞'。この位置ルールは英語の副詞配置の基本です。日本語では「いつも」を文頭に置くことが多いですが、英語ではbe動詞と一般動詞で位置が異なる点を必ず覚えましょう。"
+      },
+      {
+        "id": "je_af8",
+        "question": "We _____ eat out during the week.",
+        "translation": "(私たちは平日にはめったに外食しません)",
+        "options": [
+          "hardly ever",
+          "always",
+          "often",
+          "usually"
+        ],
+        "correct": "hardly ever",
+        "explanation": "'hardly ever'は「ほとんど〜ない」を意味し、'rarely'とほぼ同じ頻度（約5%）を表します。'We hardly ever eat out'は「ほとんど外食しない」です。'hardly'は'hard'（一生懸命に）とは全く異なる意味の副詞です。'hardly'は「ほとんど〜ない」、'hard'は「一生懸命に」。この違いは日本語話者が混同しやすいポイントです。'hardly ever'は口語的で自然な表現として、'rarely'より会話でよく使われることがあります。"
+      },
+      {
+        "id": "je_af9",
+        "question": "Do you _____ travel abroad?",
+        "translation": "(よく海外旅行しますか？)",
+        "options": [
+          "ever",
+          "never",
+          "always",
+          "rarely"
+        ],
+        "correct": "ever",
+        "explanation": "'ever'は「今までに」「かつて」を意味し、主に疑問文で使われる頻度副詞です。'Do you ever travel abroad?'は「海外に行くことはありますか？」という意味です。'ever'は肯定文では通常使わず、疑問文と否定文で使います。'Have you ever been to Paris?'（パリに行ったことがありますか？）のように現在完了形との組み合わせが特に有名です。日本語の「今までに」「かつて」に対応し、経験や習慣について尋ねる際に使う重要な副詞です。"
+      },
+      {
+        "id": "je_af10",
+        "question": "She _____ forgets to call her mother.",
+        "translation": "(彼女は母親に電話することをめったに忘れません)",
+        "options": [
+          "seldom",
+          "always",
+          "often",
+          "usually"
+        ],
+        "correct": "seldom",
+        "explanation": "'seldom'は「めったに〜ない」を意味する頻度副詞で、'rarely'とほぼ同義ですがよりフォーマルです。'She seldom forgets'は「めったに忘れない」を表します。'seldom'は書き言葉で好まれ、日常会話では'rarely'や'hardly ever'の方が一般的です。日本語の「めったに〜ない」に対応します。'seldom'も否定の意味を含むため、'She doesn't seldom forget'のような二重否定は避けてください。文語的表現を使いこなせると英語力の幅が広がります。"
+      },
+      {
+        "id": "je_af11",
+        "question": "I _____ check my email first thing in the morning.",
+        "translation": "(私はたいてい朝一番にメールを確認します)",
+        "options": [
+          "generally",
+          "never",
+          "rarely",
+          "seldom"
+        ],
+        "correct": "generally",
+        "explanation": "'generally'は「一般的に、たいてい」を意味し、'usually'とほぼ同じ頻度を表しますが、少しフォーマルです。'I generally check my email'は日常的な習慣を述べています。'generally speaking'（一般的に言って）という表現も頻繁に使われます。日本語の「たいてい」「普通は」「一般に」に対応します。'generally'は文頭に置くこともできます：'Generally, I check my email...'。ビジネスシーンで特に好まれる副詞です。"
+      },
+      {
+        "id": "je_af12",
+        "question": "He is _____ cheerful. He smiles a lot.",
+        "translation": "(彼はだいたいいつも明るいです。よく笑います)",
+        "options": [
+          "generally",
+          "never",
+          "seldom",
+          "rarely"
+        ],
+        "correct": "generally",
+        "explanation": "'generally'はbe動詞の後に置いて、性格や状態の一般的な傾向を表すこともできます。'He is generally cheerful'は「彼はだいたいいつも明るい」を意味します。be動詞がある場合の副詞の位置：'主語 + be動詞 + 副詞 + 補語'です。この位置ルールは全ての頻度副詞に共通します。'generally'は'usually'と互換的に使えることが多いですが、個人の性質や特徴を述べる場合には'generally'がより自然な選択となることがあります。"
+      },
+      {
+        "id": "je_af13",
+        "question": "_____ do you exercise?",
+        "translation": "(どれくらいの頻度で運動しますか？)",
+        "options": [
+          "How often",
+          "How much",
+          "How long",
+          "How many"
+        ],
+        "correct": "How often",
+        "explanation": "'How often'は頻度を尋ねる疑問表現で、「どれくらいの頻度で」を意味します。'How often do you exercise?'の答えとして頻度副詞を使います：'I exercise every day'、'I often exercise'、'Twice a week'など。'How much'は量、'How long'は期間、'How many'は数を尋ねます。日本語の「どれくらい〜しますか」に対応する質問パターンです。この質問形は習慣や routine について会話する際の定番表現で、日常英語で非常に頻繁に使われます。"
+      },
+      {
+        "id": "je_af14",
+        "question": "She _____ eats meat. She's a vegetarian.",
+        "translation": "(彼女は一度も肉を食べません。ベジタリアンです)",
+        "options": [
+          "never",
+          "seldom",
+          "sometimes",
+          "often"
+        ],
+        "correct": "never",
+        "explanation": "'never'は「一度も〜ない」を意味し、完全な否定（頻度0%）を表します。ベジタリアンなので肉を完全に食べない='never eats meat'です。'rarely'や'seldom'は「めったに〜ない」で少しは可能性がありますが、'never'は例外なし、完全にゼロです。日本語の「一度も〜ない」「絶対に〜ない」に対応します。'never'は強い言葉なので、本当にゼロの場合にのみ使うべきです。文化的な信条やアレルギーなど、絶対的な制限を述べる際に適切です。"
+      },
+      {
+        "id": "je_af15",
+        "question": "We _____ have meetings on Fridays.",
+        "translation": "(私たちはたいてい金曜日に会議があります)",
+        "options": [
+          "usually",
+          "never",
+          "hardly",
+          "seldom"
+        ],
+        "correct": "usually",
+        "explanation": "'usually'は頻度約80%で「たいてい」を意味し、例外はあるが大部分の場合に当てはまることを表します。'We usually have meetings on Fridays'は「たいてい金曜日に会議がある」で、金曜日以外の日もある可能性を残しています。'always'なら100%、'usually'なら80%程度です。日本語の「たいてい」「普段は」に正確に対応する使い勝手の良い副詞です。ビジネスでも使いやすく、習慣や予定を伝える際の基本表現として必須です。"
+      }
+    ]
   }
 ]
