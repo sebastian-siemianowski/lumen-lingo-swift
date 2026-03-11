@@ -15313,5 +15313,955 @@
         "explanation": "هِيَ here is a ضَمير فَصل (separating pronoun) — it separates the مُبتدأ from the خبر and allows the خبر to be definite. Without هِيَ, أُمِّي الأَهَمُّ would be a noun phrase (my most important mother), not a sentence. The ضَمير فَصل enables definite-subject + definite-predicate sentences. الأَهَمُّ (the most important) takes nominative (ḍamma) as the خبر. This separating pronoun is a sophisticated Arabic mechanism used in the Quran: أُولَئِكَ هُمُ المُفلِحونَ (those are the successful ones)."
       }
     ]
+  },
+  {
+    "key": "occupations",
+    "name": "Occupations (المهن والوظائف)",
+    "description": "Vocabulary and grammar for describing jobs and professions in Arabic",
+    "iconName": "briefcase.fill",
+    "color": "#0ea5e9",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ea_oc1",
+        "question": "أَبي _____ في المُستَشفَى (My father is a doctor at the hospital)",
+        "options": [
+          "طَبيبٌ",
+          "طَبيبًا",
+          "طَبيبٍ",
+          "الطَّبيبُ"
+        ],
+        "correct": "طَبيبٌ",
+        "explanation": "طَبيبٌ (a doctor) is the خبر (predicate) in this nominal sentence, taking nominative case with tanwīn. أَبي (my father) is the مُبتدأ. In Arabic, occupations are stated without an article when predicative: هُوَ مُهَندِسٌ (he is an engineer), هِيَ مُعَلِّمَةٌ (she is a teacher). The hospital المُستَشفَى uses the preposition في (in/at). Occupation nouns follow standard Arabic patterns and have masculine/feminine pairs."
+      },
+      {
+        "id": "ea_oc2",
+        "question": "أُختي _____ في مَدرَسَةٍ ابتِدائِيَّةٍ (My sister is a teacher at an elementary school)",
+        "options": [
+          "مُعَلِّمَةٌ",
+          "مُعَلِّمٌ",
+          "مُعَلِّمَةً",
+          "المُعَلِّمَةُ"
+        ],
+        "correct": "مُعَلِّمَةٌ",
+        "explanation": "مُعَلِّمَةٌ (female teacher) uses the feminine form (ة-ending) because the subject أُختي (my sister) is female. Arabic systematically creates feminine occupation forms: مُعَلِّم → مُعَلِّمَة (teacher), مُهَندِس → مُهَندِسَة (engineer), طَبيب → طَبيبَة (doctor), مُحَامٍ → مُحَامِيَة (lawyer). ابتِدائِيَّة is a nisba adjective from ابتِدَاء (beginning). Gender matching in occupations is mandatory in Arabic — using masculine for a female is grammatically incorrect."
+      },
+      {
+        "id": "ea_oc3",
+        "question": "يَعمَلُ كَ_____ في شَرِكَةٍ كَبيرَةٍ (He works as an engineer at a large company)",
+        "options": [
+          "مُهَندِسٍ",
+          "مُهَندِسٌ",
+          "مُهَندِسًا",
+          "المُهَندِسِ"
+        ],
+        "correct": "مُهَندِسٍ",
+        "explanation": "After the preposition كَ (as/like), the noun takes genitive case: مُهَندِسٍ with tanwīn kasra. The verb يَعمَلُ (he works) introduces the occupation. Arabic uses كَ + occupation or بِصِفَةِ + occupation to express 'as a [job].' شَرِكَة كَبيرَة (a large company) shows adjective agreement — both indefinite genitive feminine. مُهَندِس comes from هَندَسَة (engineering/geometry), which itself derives from the Persian word for measurement. Many professional terms in Arabic have rich etymologies."
+      },
+      {
+        "id": "ea_oc4",
+        "question": "أُريدُ أَن أَصبِحَ _____ في المُستَقبَلِ (I want to become a pilot in the future)",
+        "options": [
+          "طَيَّارًا",
+          "طَيَّارٌ",
+          "طَيَّارٍ",
+          "الطَّيَّارَ"
+        ],
+        "correct": "طَيَّارًا",
+        "explanation": "طَيَّارًا (a pilot) is the predicate of أَصبِحَ (to become — one of كَانَ's sisters), which takes accusative: خبر أَصبَحَ is منصوب. The verb أَصبِحَ is in subjunctive mood after أَن. طَيَّار comes from the root ط-ي-ر (to fly) with the intensive pattern فَعَّال indicating someone who does something professionally/habitually: طَبَّاخ (cook), نَجَّار (carpenter), حَدَّاد (blacksmith), خَبَّاز (baker). The فَعَّال pattern is one of Arabic's most productive occupation patterns."
+      },
+      {
+        "id": "ea_oc5",
+        "question": "_____ يُدافِعُ عَن المُتَّهَمِ (The lawyer defends the accused)",
+        "options": [
+          "المُحامي",
+          "مُحامٍ",
+          "المُحامِيَةُ",
+          "مُحامِيًا"
+        ],
+        "correct": "المُحامي",
+        "explanation": "المُحامي (the lawyer) is the subject in nominative case. It's a defective noun (اسم منقوص) — the final ي drops before tanwīn in nominative/genitive: مُحامٍ (a lawyer), but stays with ال: المُحامي. يُدافِعُ عَن (defends, from) — the verb Form III indicates interaction/doing something with/for someone. المُتَّهَمِ (the accused) is a passive participle from Form VIII اتَّهَمَ (to accuse). Legal occupation vocabulary is important for formal Arabic proficiency."
+      },
+      {
+        "id": "ea_oc6",
+        "question": "تَعمَلُ أُمّي _____ في البَنكِ (My mother works as an accountant at the bank)",
+        "options": [
+          "مُحاسِبَةً",
+          "مُحاسِبَةٌ",
+          "مُحاسِبَةٍ",
+          "المُحاسِبَةُ"
+        ],
+        "correct": "مُحاسِبَةً",
+        "explanation": "مُحاسِبَةً (as an accountant, feminine) is a حال (circumstantial accusative) or a second predicate in accusative — describing her capacity while working. مُحاسِبَة comes from حِسَاب (accounting/calculation), using the active participle of Form III حاسَبَ (to hold accountable/calculate). في البَنكِ (at the bank) is a locative phrase. Arabic uses active participles extensively for occupations: مُحاسِب (accountant), مُراسِل (correspondent), مُدَرِّس (instructor), مُمَرِّض (nurse)."
+      },
+      {
+        "id": "ea_oc7",
+        "question": "الصَّحَفِيُّ _____ الأَخبَارَ كُلَّ يَومٍ (The journalist writes the news every day)",
+        "options": [
+          "يَكتُبُ",
+          "كَتَبَ",
+          "يَكتُبونَ",
+          "اُكتُب"
+        ],
+        "correct": "يَكتُبُ",
+        "explanation": "يَكتُبُ (he writes, present tense) — the journalist الصَّحَفِيُّ is the مُبتدأ, and يَكتُبُ الأَخبَارَ is the verbal خبر. Since the sentence starts with the subject (SVO order), the verb must agree in number (singular here). صَحَفِيّ is a nisba adjective from صَحيفَة (newspaper), used as an occupation noun. كُلَّ يَومٍ (every day) is an adverbial accusative. Media-related occupations: مُذيعٌ (broadcaster), مُصَوِّرٌ (photographer), مُحَرِّرٌ (editor)."
+      },
+      {
+        "id": "ea_oc8",
+        "question": "أَخي _____ ماهِرٌ (My brother is a skilled carpenter)",
+        "options": [
+          "نَجَّارٌ",
+          "نَجَّارًا",
+          "نَجَّارٍ",
+          "النَّجَّارُ"
+        ],
+        "correct": "نَجَّارٌ",
+        "explanation": "نَجَّارٌ (carpenter) is the خبر in nominative with tanwīn. ماهِرٌ (skilled) is an additional adjective also nominative. The فَعَّال pattern for tradespeople: نَجَّار (carpenter, from نَجَرَ to carve), حَدَّاد (blacksmith, from حَديد iron), خَيَّاط (tailor, from خَاطَ to sew), بَنَّاء (builder, from بَنَى to build), رَسَّام (artist/painter, from رَسَمَ to draw). This pattern suggests intensive/habitual action and is Arabic's main way to form craft/trade occupation nouns."
+      },
+      {
+        "id": "ea_oc9",
+        "question": "ذَهَبتُ إِلى _____ لِإِصلاحِ سَيَّارَتي (I went to the mechanic to fix my car)",
+        "options": [
+          "المِيكانيكيِّ",
+          "مِيكانيكيٌّ",
+          "المِيكانيكيُّ",
+          "مِيكانيكيًّا"
+        ],
+        "correct": "المِيكانيكيِّ",
+        "explanation": "المِيكانيكيِّ (the mechanic) takes genitive after إِلى. This is a borrowed word with a nisba suffix يّ- added: مِيكانيكيّ. Many modern occupations use borrowed words: بْروفِيسور (professor), تِكنولوجيّ (technologist). لِإِصلاحِ (to fix) uses لِ + masdar. سَيَّارَتي (my car) — the ي possessive suffix. Arabic adapts foreign occupation words by adding Arabic morphological features like nisba and tanwīn, integrating them into the case system."
+      },
+      {
+        "id": "ea_oc10",
+        "question": "المُمَرِّضَةُ تُساعِدُ _____ في المُستَشفَى (The nurse helps the patients at the hospital)",
+        "options": [
+          "المَرضَى",
+          "المَريضَ",
+          "مَرضَى",
+          "المَرضِ"
+        ],
+        "correct": "المَرضَى",
+        "explanation": "المَرضَى (the patients/sick people) is the direct object in accusative. It's a defective noun — words ending in alif maqṣūra (ى) don't show case endings visibly. المُمَرِّضَةُ (female nurse) derives from مَرَّضَ (Form II: to nurse/tend to the sick), which comes from مَرِضَ (to be sick). The active participle مُمَرِّض/مُمَرِّضَة shows the doer. تُساعِدُ (she helps, Form III) uses the feminine prefix تُ-. This sentence connects the occupation to its function elegantly."
+      },
+      {
+        "id": "ea_oc11",
+        "question": "يَحلُمُ ابني بِأَن يَكونَ _____ (My son dreams of being an astronaut)",
+        "options": [
+          "رَائِدَ فَضَاءٍ",
+          "رَائِدُ فَضَاءٍ",
+          "رَائِدِ فَضَاءٍ",
+          "رَائِدٌ"
+        ],
+        "correct": "رَائِدَ فَضَاءٍ",
+        "explanation": "رَائِدَ فَضَاءٍ (astronaut — literally 'space pioneer') is the predicate of يَكونَ in accusative. يَكونَ is subjunctive after أَن, and its predicate (خبر كان) takes accusative. رَائِد is an active participle meaning 'pioneer/leader' from رَادَ (to explore). فَضَاءٍ (space) is the مُضاف إليه in genitive. Arabic creates compound occupation titles: رَائِدُ فَضَاءٍ (astronaut), طَبيبُ أَسنَانٍ (dentist), مُهَندِسُ بَرمَجِيَّاتٍ (software engineer)."
+      },
+      {
+        "id": "ea_oc12",
+        "question": "كَانَ جَدّي _____ في القَريَةِ (My grandfather was a farmer in the village)",
+        "options": [
+          "فَلَّاحًا",
+          "فَلَّاحٌ",
+          "فَلَّاحٍ",
+          "الفَلَّاحُ"
+        ],
+        "correct": "فَلَّاحًا",
+        "explanation": "فَلَّاحًا (a farmer) is the predicate of كَانَ — خبر كان is always accusative. فَلَّاح follows the فَعَّال pattern from فَلَحَ (to cultivate/succeed). في القَريَةِ (in the village) is locative. جَدّي (my grandfather) is اسم كان in nominative. Arabic agricultural occupations: فَلَّاح (farmer), رَاعٍ (shepherd — defective noun), صَيَّاد (fisherman/hunter), بُستانِيّ (gardener). كَانَ + occupation expresses past profession, useful for family history narratives."
+      },
+      {
+        "id": "ea_oc13",
+        "question": "_____ يَطبُخُ طَعامًا لَذيذًا (The chef cooks delicious food)",
+        "options": [
+          "الطَّبَّاخُ",
+          "طَبَّاخٌ",
+          "الطَّبَّاخَ",
+          "طَبَّاخًا"
+        ],
+        "correct": "الطَّبَّاخُ",
+        "explanation": "الطَّبَّاخُ (the chef/cook) is the subject in nominative. طَبَّاخ is another فَعَّال pattern from طَبَخَ (to cook). يَطبُخُ (he cooks) agrees in gender and number since this is SVO order. طَعامًا لَذيذًا (delicious food) — both accusative with tanwīn as direct object + adjective. Food service occupations: طَبَّاخ (cook), نادِل/خادِم (waiter), حَلوَانِيّ (confectioner). The فَعَّال pattern implies professional-level habitual action vs occasional cooking."
+      },
+      {
+        "id": "ea_oc14",
+        "question": "صَديقَتي تَعمَلُ _____ في المَطارِ (My friend works as a translator at the airport)",
+        "options": [
+          "مُتَرجِمَةً",
+          "مُتَرجِمَةٌ",
+          "مُتَرجِمَةٍ",
+          "المُتَرجِمَةُ"
+        ],
+        "correct": "مُتَرجِمَةً",
+        "explanation": "مُتَرجِمَةً (female translator) is accusative — functioning as a حال describing her work role. مُتَرجِم comes from تَرجَمَ (a quadriliteral verb: to translate), with active participle pattern مُفَعلِل. في المَطارِ (at the airport) — مَطار follows the pattern مَفعَل (place noun) from طَارَ (to fly). Language-related occupations: مُتَرجِم (translator), مُفَسِّر (interpreter/exegete), لُغَوِيّ (linguist), كاتِب (writer). These are relevant to language learners."
+      },
+      {
+        "id": "ea_oc15",
+        "question": "إِنَّ _____ مَسؤولٌ عَن سَلامَةِ المَبنَى (Indeed the engineer is responsible for the building's safety)",
+        "options": [
+          "المُهَندِسَ",
+          "المُهَندِسُ",
+          "المُهَندِسِ",
+          "مُهَندِسًا"
+        ],
+        "correct": "المُهَندِسَ",
+        "explanation": "المُهَندِسَ is accusative because إِنَّ puts its subject (اسم إنّ) in the accusative case. مَسؤولٌ (responsible) is the خبر of إِنَّ in nominative. سَلامَة (safety) is a masdar from سَلِمَ. This sentence demonstrates how إِنَّ affects case marking of occupation nouns — a critical grammar point. The مُهَندِس pattern (مُفَعلِل from quadriliteral هَندَسَ) is also used for: مُدَرِّس (from دَرَّسَ Form II), مُصَمِّم (designer, from صَمَّمَ)."
+      }
+    ]
+  },
+  {
+    "key": "weather_nature",
+    "name": "Weather & Nature (الطقس والطبيعة)",
+    "description": "Arabic vocabulary and structures for describing weather and natural phenomena",
+    "iconName": "cloud.sun.fill",
+    "color": "#38bdf8",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ea_wn1",
+        "question": "الطَّقسُ _____ اليَومَ (The weather is hot today)",
+        "options": [
+          "حَارٌّ",
+          "حَارًّا",
+          "حَارٍّ",
+          "الحَارُّ"
+        ],
+        "correct": "حَارٌّ",
+        "explanation": "حَارٌّ (hot) is the خبر in nominative with tanwīn. The shadda on the final ر indicates a doubled consonant. Arabic weather descriptions use nominal sentences: الجَوُّ بَارِدٌ (the atmosphere is cold), الطَّقسُ مُعتَدِلٌ (the weather is moderate), الحَرَارَةُ مُرتَفِعَةٌ (the temperature is high). اليَومَ (today) is an adverbial accusative. Weather vocabulary is essential for daily conversation and news comprehension in Arabic."
+      },
+      {
+        "id": "ea_wn2",
+        "question": "تُمطِرُ السَّماءُ _____ غَزيرًا (The sky is raining heavily)",
+        "options": [
+          "مَطَرًا",
+          "مَطَرٌ",
+          "مَطَرٍ",
+          "المَطَرَ"
+        ],
+        "correct": "مَطَرًا",
+        "explanation": "مَطَرًا is a مفعول مطلق (absolute/cognate object) — the verb تُمطِرُ and the noun مَطَر share the same root م-ط-ر. The مفعول مطلق is always accusative and reinforces/specifies the verb's action. غَزيرًا (heavy/abundant) modifies مَطَرًا and is also accusative. This construction is similar to English 'rained a heavy rain.' The feminine verb تُمطِرُ matches السَّماءُ (the sky, feminine). Arabic weather verbs: أَمطَرَت (it rained), أَثلَجَت (it snowed), أَبرَقَت (it lightninged)."
+      },
+      {
+        "id": "ea_wn3",
+        "question": "في الشِّتاءِ تَكونُ اللَّيَالي _____ (In winter the nights are long)",
+        "options": [
+          "طَويلَةً",
+          "طَويلَةٌ",
+          "طَويلَةٍ",
+          "الطَّويلَةُ"
+        ],
+        "correct": "طَويلَةً",
+        "explanation": "طَويلَةً (long, feminine) is the predicate of تَكونُ (to be — كَانَ in present tense), which requires accusative for its خبر. اللَّيَالي (the nights) is the subject of تَكونُ in nominative — it's the broken plural of لَيلَة. الشِّتاءِ (winter) is genitive after في. Arabic seasons: الرَّبيع (spring), الصَّيف (summer), الخَريف (autumn), الشِّتَاء (winter). Season names are used with في for temporal reference: في الصَّيفِ (in summer)."
+      },
+      {
+        "id": "ea_wn4",
+        "question": "_____ الرِّيَاحُ بِشِدَّةٍ هَذا المَساءَ (The winds are blowing strongly this evening)",
+        "options": [
+          "تَهُبُّ",
+          "يَهُبُّ",
+          "هَبَّت",
+          "تَهُبُّونَ"
+        ],
+        "correct": "تَهُبُّ",
+        "explanation": "تَهُبُّ (it/she blows) uses the feminine prefix تَ- because الرِّيَاحُ (winds) is a broken plural — broken plurals of non-human nouns take FEMININE SINGULAR verb agreement. This is a fundamental Arabic rule: الأَشجَارُ تَنمو (the trees grow), الكُتُبُ وَصَلَت (the books arrived), الجِبَالُ تَبدو جَميلَةً (the mountains look beautiful). بِشِدَّةٍ (with force/strongly) uses بِ + masdar as an adverb of manner. هَذا المَسَاءَ is an adverbial accusative."
+      },
+      {
+        "id": "ea_wn5",
+        "question": "الشَّمسُ _____ مِن خَلفِ الغُيومِ (The sun appeared from behind the clouds)",
+        "options": [
+          "ظَهَرَت",
+          "ظَهَرَ",
+          "تَظهَرُ",
+          "ظَهَروا"
+        ],
+        "correct": "ظَهَرَت",
+        "explanation": "ظَهَرَت uses feminine past tense because الشَّمسُ (the sun) is feminine in Arabic. Note: SVO order here means the verb could also agree in number, but since الشَّمس is singular, singular agreement is expected either way. مِن خَلفِ (from behind) combines the preposition مِن with the ظرف مكان خَلف. الغُيومِ (the clouds) is genitive — plural of غَيمَة (a cloud). Celestial vocabulary: الشَّمس (sun, feminine), القَمَر (moon, masculine), النُّجوم (stars)."
+      },
+      {
+        "id": "ea_wn6",
+        "question": "دَرَجَةُ الحَرارَةِ _____ في الصَّيفِ (The temperature rises in summer)",
+        "options": [
+          "تَرتَفِعُ",
+          "يَرتَفِعُ",
+          "اِرتَفَعَت",
+          "تَرتَفِعونَ"
+        ],
+        "correct": "تَرتَفِعُ",
+        "explanation": "تَرتَفِعُ (it rises, feminine) — Form VIII اِرتَفَعَ from رَفَعَ (to raise). The feminine verb matches دَرَجَة (degree, feminine). دَرَجَةُ الحَرارَةِ (temperature — literally 'degree of heat') is an idāfa construction. Arabic uses specific verbs for temperature changes: اِرتَفَعَت (rose), اِنخَفَضَت (dropped), اِستَقَرَّت (stabilized). في الصَّيفِ (in summer) uses في + season name. Weather reports in Arabic use this formal structure extensively."
+      },
+      {
+        "id": "ea_wn7",
+        "question": "الأَشجَارُ _____ أَورَاقَها في الخَريفِ (The trees shed their leaves in autumn)",
+        "options": [
+          "تَفقِدُ",
+          "يَفقِدُ",
+          "فَقَدوا",
+          "تَفقِدونَ"
+        ],
+        "correct": "تَفقِدُ",
+        "explanation": "تَفقِدُ (she/it loses) — feminine singular for the broken plural الأَشجَار (trees, non-human plural = feminine singular agreement). أَورَاقَها (its/their leaves) is the direct object — أَوراق is the broken plural of وَرَقَة, with the feminine possessive suffix ها referring back to الأَشجَار. This rule — non-human plurals take feminine singular — applies to verbs, adjectives, and pronouns universally in Arabic and is one of the most important agreement rules to master."
+      },
+      {
+        "id": "ea_wn8",
+        "question": "سَيَكونُ الطَّقسُ _____ غَدًا (The weather will be cloudy tomorrow)",
+        "options": [
+          "غَائِمًا",
+          "غَائِمٌ",
+          "غَائِمٍ",
+          "الغَائِمُ"
+        ],
+        "correct": "غَائِمًا",
+        "explanation": "غَائِمًا (cloudy) is the predicate of سَيَكونُ (will be) in accusative — خبر كان is always منصوب. غَائِم is an active participle from غَامَ (to be cloudy). Arabic weather adjectives: غَائِم (cloudy), صَافٍ (clear — defective), مُشمِس (sunny), مَاطِر (rainy), عَاصِف (stormy), ضَبَابيّ (foggy). These participles describe weather states. غَدًا (tomorrow) is an adverbial accusative — note the alif with tanwīn fatḥa."
+      },
+      {
+        "id": "ea_wn9",
+        "question": "البَحرُ _____ وَهَادِئٌ (The sea is blue and calm)",
+        "options": [
+          "أَزرَقُ",
+          "أَزرَقًا",
+          "أَزرَقٍ",
+          "الأَزرَقُ"
+        ],
+        "correct": "أَزرَقُ",
+        "explanation": "أَزرَقُ (blue) is a diptote adjective (pattern أَفعَل for colors) — nominative without tanwīn as the خبر. وَهَادِئٌ (and calm) is coordinated with وَ. Note the case contrast: أَزرَقُ has no tanwīn (diptote) while هَادِئٌ has tanwīn (triptote). Colors in Arabic are diptote and have distinct masculine/feminine forms: أَزرَق/زَرقاء, أَخضَر/خَضراء, أَحمَر/حَمراء. Nature vocabulary linked to sea: مَوجٌ (waves), شَاطِئٌ (shore), مَدٌّ وَجَزرٌ (tide)."
+      },
+      {
+        "id": "ea_wn10",
+        "question": "سَقَطَ _____ كَثيفٌ عَلى الجِبالِ (Heavy snow fell on the mountains)",
+        "options": [
+          "ثَلجٌ",
+          "ثَلجًا",
+          "ثَلجٍ",
+          "الثَّلجُ"
+        ],
+        "correct": "ثَلجٌ",
+        "explanation": "ثَلجٌ (snow) is the subject (فاعل) in nominative after the verb سَقَطَ (it fell). كَثيفٌ (thick/heavy) is its adjective, also nominative. عَلى الجِبالِ (on the mountains) — الجِبال is the broken plural of جَبَل. In verbal sentences (VSO), the subject after the verb takes nominative case. Precipitation vocabulary: ثَلج (snow), بَرَد (hail), جَليد (ice/frost), نَدَى (dew). Arabic uses سَقَطَ (fell) for all types of precipitation."
+      },
+      {
+        "id": "ea_wn11",
+        "question": "يَزدَادُ جَمَالُ الحَديقَةِ في _____ (The garden's beauty increases in spring)",
+        "options": [
+          "الرَّبيعِ",
+          "الرَّبيعُ",
+          "الرَّبيعَ",
+          "رَبيعٍ"
+        ],
+        "correct": "الرَّبيعِ",
+        "explanation": "الرَّبيعِ (spring) is genitive after في. يَزدَادُ (increases, Form VIII) from زَادَ (to increase). جَمَالُ الحَديقَةِ (the garden's beauty) is an idāfa — جَمَال nominative as subject, الحَديقَة genitive as مُضاف إليه. الرَّبيع derives from the root ر-ب-ع (related to 'four' — the fourth season in some old reckonings). Nature-beauty vocabulary: زُهور (flowers), خُضرَة (greenery), عُشب (grass), نَسيم (breeze)."
+      },
+      {
+        "id": "ea_wn12",
+        "question": "رَأَينا _____ جَميلًا بَعدَ المَطَرِ (We saw a beautiful rainbow after the rain)",
+        "options": [
+          "قَوسَ قُزَحَ",
+          "قَوسُ قُزَحِ",
+          "قَوسِ قُزَحِ",
+          "قَوسٌ"
+        ],
+        "correct": "قَوسَ قُزَحَ",
+        "explanation": "قَوسَ قُزَحَ (rainbow — literally 'bow of Quzaḥ') is the direct object in accusative. It's an idāfa compound: قَوس (bow, accusative) + قُزَح (proper name of a pre-Islamic deity/angel of clouds, genitive — diptote). جَميلًا (beautiful) is accusative adjective. بَعدَ المَطَرِ (after the rain) is a ظرف زمان. Arabic compound nature terms: كُسوف (solar eclipse), خُسوف (lunar eclipse), شَلَّال (waterfall), بُركان (volcano). These terms combine poetic Arabic roots with scientific precision."
+      },
+      {
+        "id": "ea_wn13",
+        "question": "تَسقُطُ _____ مِن الأَشجَارِ في الخَريفِ (The leaves fall from trees in autumn)",
+        "options": [
+          "الأَوراقُ",
+          "الأَوراقَ",
+          "الأَوراقِ",
+          "أَوراقٌ"
+        ],
+        "correct": "الأَوراقُ",
+        "explanation": "الأَوراقُ (the leaves) is the subject (فاعل) coming after the verb تَسقُطُ (they/it fall). In VSO order, the verb is feminine singular (تَسقُطُ — non-human plural treated as feminine singular). The subject is nominative. مِن الأَشجَارِ (from the trees) is a prepositional phrase. في الخَريفِ (in autumn) is temporal. الخَريف comes from خَرَفَ (to harvest fruit), reflecting the agricultural origins of Arabic season names."
+      },
+      {
+        "id": "ea_wn14",
+        "question": "اللَّيلَةَ السَّماءُ _____ بِالنُّجومِ (Tonight the sky is filled with stars)",
+        "options": [
+          "مَليئَةٌ",
+          "مَليئَةً",
+          "مَليئَةٍ",
+          "المَليئَةُ"
+        ],
+        "correct": "مَليئَةٌ",
+        "explanation": "مَليئَةٌ (full/filled, feminine) is the خبر in nominative. السَّماءُ (the sky) is the مُبتدأ. بِالنُّجومِ (with stars) uses بِ + genitive. اللَّيلَةَ (tonight) is a fronted adverbial accusative providing temporal context. النُّجوم is the broken plural of نَجم (star). Arabic night-sky vocabulary: نَجم (star), كَوكَب (planet), مَجَرَّة (galaxy), بَدر (full moon), هِلال (crescent — also the Islamic symbol). مَليء follows the pattern فَعيل and pairs with بِ for 'full of.'"
+      },
+      {
+        "id": "ea_wn15",
+        "question": "تَتَساقَطُ قَطَرَاتُ _____ عَلى النَّافِذَةِ (Raindrops are falling on the window)",
+        "options": [
+          "المَطَرِ",
+          "المَطَرُ",
+          "المَطَرَ",
+          "مَطَرٌ"
+        ],
+        "correct": "المَطَرِ",
+        "explanation": "المَطَرِ (the rain) is genitive as مُضاف إليه of قَطَرَات (drops). قَطَرَاتُ is a sound feminine plural in nominative (subject). تَتَساقَطُ (they fall one by one, Form VI) — this pattern indicates gradual/reciprocal action, perfect for describing raindrops. عَلى النَّافِذَةِ (on the window) uses عَلى + genitive. Form VI تَساقَطَ vs سَقَطَ: the base verb means 'fell,' while Form VI adds the nuance of 'falling gradually/repeatedly.' Arabic verb forms create poetic precision in nature descriptions."
+      }
+    ]
+  },
+  {
+    "key": "food_restaurant",
+    "name": "Food & Restaurant (الطعام والمطعم)",
+    "description": "Arabic vocabulary for ordering food, describing meals, and restaurant dialogue",
+    "iconName": "fork.knife",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ea_fr1",
+        "question": "أُريدُ _____ مِنَ القَهوَةِ مِن فَضلِكَ (I want a cup of coffee please)",
+        "options": [
+          "فِنجَانًا",
+          "فِنجَانٌ",
+          "فِنجَانٍ",
+          "الفِنجَانَ"
+        ],
+        "correct": "فِنجَانًا",
+        "explanation": "فِنجَانًا (a cup) is the direct object of أُريدُ (I want), taking accusative with tanwīn fatḥa. مِنَ القَهوَةِ (of coffee) specifies the content using مِن + genitive. مِن فَضلِكَ (please — literally 'from your kindness') is a polite phrase. فِنجَان is originally from Persian and entered Arabic with full declension. Restaurant ordering uses أُريدُ or أَرغَبُ في (I would like). Common beverage words: شَاي (tea), عَصير (juice), مَاء (water), حَليب (milk)."
+      },
+      {
+        "id": "ea_fr2",
+        "question": "هَل عِندَكُم _____ بِدونِ لَحمٍ؟ (Do you have dishes without meat?)",
+        "options": [
+          "أَطبَاقٌ",
+          "أَطبَاقًا",
+          "أَطبَاقٍ",
+          "الأَطبَاقُ"
+        ],
+        "correct": "أَطبَاقٌ",
+        "explanation": "أَطبَاقٌ (dishes/plates) is the مُبتدأ مُؤَخَّر (delayed subject) in nominative — the sentence begins with عِندَكُم (you have — fronted خبر). هَل introduces a yes/no question. بِدونِ لَحمٍ (without meat) — بِدون is an indeclinable preposition meaning 'without.' أَطبَاق is the broken plural of طَبَق. Arabic restaurant phrases: القَائِمَة مِن فَضلِكَ (the menu please), مَا هِيَ الأَطبَاقُ المُتَاحَةُ؟ (what dishes are available?). Food vocabulary is essential for travel."
+      },
+      {
+        "id": "ea_fr3",
+        "question": "الطَّعَامُ في هَذا المَطعَمِ _____ جِدًّا (The food at this restaurant is delicious)",
+        "options": [
+          "لَذيذٌ",
+          "لَذيذًا",
+          "لَذيذٍ",
+          "اللَّذيذُ"
+        ],
+        "correct": "لَذيذٌ",
+        "explanation": "لَذيذٌ (delicious) is the خبر in nominative. الطَّعَامُ (the food) is the مُبتدأ. في هَذا المَطعَمِ (in this restaurant) — المَطعَم (restaurant) is a place noun (اسم مكان) from طَعِمَ (to taste/eat), pattern مَفعَل. جِدًّا (very) is an adverbial intensifier in accusative. Arabic taste adjectives: لَذيذ (delicious), شَهِيّ (appetizing), حَارّ (spicy), مَالِح (salty), حُلو (sweet), مُرّ (bitter), حَامِض (sour). These follow standard adjective patterns."
+      },
+      {
+        "id": "ea_fr4",
+        "question": "أَطلُبُ _____ مَشوِيًّا مَعَ الأُرزِّ (I'll order grilled chicken with rice)",
+        "options": [
+          "دَجَاجًا",
+          "دَجَاجٌ",
+          "دَجَاجٍ",
+          "الدَّجَاجَ"
+        ],
+        "correct": "دَجَاجًا",
+        "explanation": "دَجَاجًا (chicken) is the direct object of أَطلُبُ (I order), taking accusative. دَجَاج is a collective noun (اسم جمع) — one chicken is دَجَاجَة. مَشوِيًّا (grilled) is an adjective in accusative agreeing with دَجَاجًا. مَعَ الأُرزِّ (with rice) — الأُرز (rice) is genitive after مَعَ. Cooking methods vocabulary: مَشوِيّ (grilled), مَقلِيّ (fried), مَسلوق (boiled), مَحشِيّ (stuffed), مَطهُوّ/مَطبوخ (cooked). These passive participles describe food preparation styles."
+      },
+      {
+        "id": "ea_fr5",
+        "question": "الحِسابَ مِن _____ (The bill please — literally 'the bill, from your favor')",
+        "options": [
+          "فَضلِكَ",
+          "فَضلُكَ",
+          "فَضلَكَ",
+          "فَضلٌ"
+        ],
+        "correct": "فَضلِكَ",
+        "explanation": "فَضلِكَ (your kindness/favor) is genitive after مِن. الحِسَابَ (the bill/check) stands alone as a request — implied verb أُريدُ or أَعطِني is dropped for brevity. فَضل means 'grace/kindness/favor.' This is the standard polite restaurant closing phrase. Other useful restaurant phrases: هَل يُمكِنُني الدَّفعُ بِالبِطاقَةِ؟ (Can I pay by card?), أَينَ الحَمَّامُ؟ (Where is the restroom?), شُكرًا عَلى الخِدمَةِ (Thank you for the service)."
+      },
+      {
+        "id": "ea_fr6",
+        "question": "أُفَضِّلُ _____ بِدونِ سُكَّرٍ (I prefer tea without sugar)",
+        "options": [
+          "الشَّايَ",
+          "الشَّايُ",
+          "الشَّايِ",
+          "شَايًا"
+        ],
+        "correct": "الشَّايَ",
+        "explanation": "الشَّايَ (the tea) is the direct object of أُفَضِّلُ (I prefer, Form II), taking accusative. Arabic uses the definite article with generic references to types of food/drink: أُحِبُّ الشَّايَ (I like tea in general). بِدونِ سُكَّرٍ (without sugar) — سُكَّر has shadda on the كّ. أُفَضِّلُ is Form II (intensive), from فَضَلَ (to be superior). Beverage modifications: بِالحَليبِ (with milk), ساخِن (hot), بَارِد (cold), مَعَ ثَلجٍ (with ice)."
+      },
+      {
+        "id": "ea_fr7",
+        "question": "هَل هَذا الطَّبَقُ _____ لِلأَطفَالِ؟ (Is this dish suitable for children?)",
+        "options": [
+          "مُنَاسِبٌ",
+          "مُنَاسِبًا",
+          "مُنَاسِبٍ",
+          "المُنَاسِبُ"
+        ],
+        "correct": "مُنَاسِبٌ",
+        "explanation": "مُنَاسِبٌ (suitable/appropriate) is the خبر in nominative — predicating هَذا الطَّبَقُ (this dish). لِلأَطفَالِ (for children) uses لِ + genitive. مُنَاسِب is an active participle from Form III نَاسَبَ (to suit/be appropriate for). هَل makes this a yes/no question. Useful restaurant questions: هَل فيهِ مُكَسَّرَاتٌ؟ (does it contain nuts?), هَل هُوَ حَلالٌ؟ (is it halal?), مَا المُكَوِّنَاتُ؟ (what are the ingredients?). These are practical for dietary restrictions."
+      },
+      {
+        "id": "ea_fr8",
+        "question": "سَأَتَناوَلُ _____ مَعَ سَلَطَةٍ (I will have fish with a salad)",
+        "options": [
+          "سَمَكًا",
+          "سَمَكٌ",
+          "سَمَكٍ",
+          "السَّمَكَ"
+        ],
+        "correct": "سَمَكًا",
+        "explanation": "سَمَكًا (fish) is the indefinite accusative direct object of سَأَتَناوَلُ (I will eat/have, Form VI). مَعَ سَلَطَةٍ (with a salad) — سَلَطَة is borrowed from Turkish/Italian. تَناوَلَ (Form VI) is more formal than أَكَلَ (to eat) — used in restaurants and formal dining. Future prefix سَ indicates near future. سَمَك is a collective noun (one fish = سَمَكَة). Seafood vocabulary: رُوبيان (shrimp), كَابوريا (crab), مَحار (oysters). Arabic restaurant language often blends formal verbs with casual context."
+      },
+      {
+        "id": "ea_fr9",
+        "question": "الخُبزُ العَرَبيُّ _____ مَعَ كُلِّ وَجبَةٍ (Arab bread is served with every meal)",
+        "options": [
+          "يُقَدَّمُ",
+          "يُقَدِّمُ",
+          "قَدَّمَ",
+          "قُدِّمَ"
+        ],
+        "correct": "يُقَدَّمُ",
+        "explanation": "يُقَدَّمُ (is served/presented) is passive voice (مبني للمجهول) of Form II قَدَّمَ (to present/serve). The pattern يُفَعَّلُ converts active to passive. الخُبزُ (bread) is the نائب فاعل (deputy subject) in nominative. مَعَ كُلِّ وَجبَةٍ (with every meal) — وَجبَة (meal) is مُضاف إليه. Food serving verbs in passive: يُطهَى (is cooked), يُقلَى (is fried), يُشوَى (is grilled). Passive voice is common in recipe instructions and menu descriptions."
+      },
+      {
+        "id": "ea_fr10",
+        "question": "طَلَبنَا _____ أَصنَافٍ مِنَ الحَلَوَيَاتِ (We ordered three types of desserts)",
+        "options": [
+          "ثَلَاثَةَ",
+          "ثَلَاثَ",
+          "ثَلَاثَةِ",
+          "ثَلَاثُ"
+        ],
+        "correct": "ثَلَاثَةَ",
+        "explanation": "ثَلَاثَةَ (three) is accusative — direct object of طَلَبنَا. It takes tā' marbūṭa because أَصنَاف (types) is masculine — Arabic numbers 3-10 take the OPPOSITE gender of the counted noun (gender polarity). أَصنَافٍ is genitive plural as تمييز العدد (number specification). الحَلَوَيَات (desserts/sweets) is sound feminine plural from حَلوَى (sweet/dessert). Arabic desserts: بَقلاوَة (baklava), كُنافَة (kunafa), مَهَلَّبِيَّة (pudding). Number-gender polarity is crucial for ordering quantities."
+      },
+      {
+        "id": "ea_fr11",
+        "question": "هَل تُريدُ أَن تُجَرِّبَ هَذا _____؟ (Do you want to try this dish?)",
+        "options": [
+          "الطَّبَقَ",
+          "الطَّبَقُ",
+          "الطَّبَقِ",
+          "طَبَقًا"
+        ],
+        "correct": "الطَّبَقَ",
+        "explanation": "الطَّبَقَ is accusative as the direct object of تُجَرِّبَ (to try, Form II, subjunctive after أَن). هَذا (this) is a demonstrative modifying الطَّبَقَ. تُريدُ (you want) + أَن + subjunctive is a standard Arabic construction for 'want to do.' In restaurant contexts: هَل تُريدُ أَن تَطلُبَ المَزيدَ؟ (want to order more?), هَل تُريدُ أَن تَغيُرَ الطَّلَبَ؟ (want to change the order?). The subjunctive after أَن changes the final vowel from ḍamma to fatḥa."
+      },
+      {
+        "id": "ea_fr12",
+        "question": "الطَّعامُ المِصريُّ _____ بِالتَّوابِلِ (Egyptian food is known for its spices)",
+        "options": [
+          "مَعروفٌ",
+          "مَعروفًا",
+          "مَعروفٍ",
+          "المَعروفُ"
+        ],
+        "correct": "مَعروفٌ",
+        "explanation": "مَعروفٌ (known/famous) is a passive participle from عَرَفَ (to know), functioning as the خبر in nominative. بِالتَّوابِلِ (for its spices) uses بِ + genitive. التَّوابِل (spices) is the broken plural of تَابِل. Arabic food culture vocabulary: تَوابِل (spices), بُهارات (seasonings), زَيتون (olives), زَيت (oil). Passive participles as predicates are very common in food descriptions: مَحشِيّ (stuffed), مَشهور (famous), مُفَضَّل (preferred)."
+      },
+      {
+        "id": "ea_fr13",
+        "question": "اِطلُب لي _____ مَاءٍ مِن فَضلِكَ (Order a bottle of water for me please)",
+        "options": [
+          "زُجاجَةَ",
+          "زُجاجَةُ",
+          "زُجاجَةِ",
+          "زُجاجَةً"
+        ],
+        "correct": "زُجاجَةَ",
+        "explanation": "زُجاجَةَ (a bottle) is accusative — direct object of the imperative اِطلُب (order!). مَاءٍ (water) is genitive as مُضاف إليه. لي (for me) places the beneficiary. The imperative اِطلُب comes from طَلَبَ (to request) — imperative of Form I verbs with hamzat waṣl. Container words used with food: زُجاجَة (bottle), كَأس (cup/glass), صَحن (plate), وِعاء (container), عُلبَة (can/box). These are essential for specifying quantities when ordering."
+      },
+      {
+        "id": "ea_fr14",
+        "question": "لا أَستَطيعُ أَن آكُلَ الطَّعامَ _____ (I cannot eat spicy food)",
+        "options": [
+          "الحَارَّ",
+          "الحَارُّ",
+          "حَارًّا",
+          "حَارٍّ"
+        ],
+        "correct": "الحَارَّ",
+        "explanation": "الحَارَّ (the hot/spicy) is an adjective modifying الطَّعَامَ — it must agree in case (accusative), gender (masculine), number (singular), and definiteness (definite with ال). Both are accusative: الطَّعامَ الحَارَّ. لا أَستَطيعُ (I cannot) + أَن + subjunctive = inability expression. Dietary restriction phrases: لَدَيَّ حَسَاسِيَّةٌ مِن... (I have an allergy to...), أَنَا نَبَاتِيٌّ (I am vegetarian), أَنَا صَائِمٌ (I am fasting)."
+      },
+      {
+        "id": "ea_fr15",
+        "question": "الوَجبَةُ كَانَت _____ فِعلًا (The meal was truly excellent)",
+        "options": [
+          "مُمتَازَةً",
+          "مُمتَازَةٌ",
+          "مُمتَازَةٍ",
+          "المُمتَازَةُ"
+        ],
+        "correct": "مُمتَازَةً",
+        "explanation": "مُمتَازَةً (excellent, feminine) is the predicate of كَانَت — خبر كان takes accusative. The ت on كَانَت marks past tense feminine to agree with الوَجبَةُ (the meal, feminine). فِعلًا (truly/indeed) is an adverbial accusative intensifier. مُمتَاز is an active participle from Form VIII اِمتَازَ (to be distinguished/excellent). Quality descriptions for food: مُمتَاز (excellent), رَائِع (wonderful), عَادِيّ (ordinary), سَيِّئ (bad). Restaurant review language transfers directly from classroom Arabic."
+      }
+    ]
+  },
+  {
+    "key": "health_body",
+    "name": "Health & Body (الصحة والجسم)",
+    "description": "Medical and health vocabulary with Arabic grammatical structures",
+    "iconName": "heart.fill",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ea_hb1",
+        "question": "أَشعُرُ بِ_____ في رَأسي (I feel a pain in my head)",
+        "options": [
+          "أَلَمٍ",
+          "أَلَمٌ",
+          "أَلَمًا",
+          "الأَلَمِ"
+        ],
+        "correct": "أَلَمٍ",
+        "explanation": "أَلَمٍ (a pain) is genitive after the preposition بِ. أَشعُرُ بِ (I feel — Form I with بِ for sensation) is the standard way to express physical feelings. في رَأسي (in my head) locates the pain — رَأس (head) with possessive ي. Body pain expressions follow this pattern: أَشعُرُ بِأَلَمٍ في... (I feel pain in...). Body parts: رَأس (head), بَطن (stomach), ظَهر (back), صَدر (chest), حَلق (throat). This sentence pattern is essential for doctor visits."
+      },
+      {
+        "id": "ea_hb2",
+        "question": "يَجِبُ أَن تَذهَبَ إِلى _____ (You must go to the doctor)",
+        "options": [
+          "الطَّبيبِ",
+          "الطَّبيبُ",
+          "الطَّبيبَ",
+          "طَبيبٍ"
+        ],
+        "correct": "الطَّبيبِ",
+        "explanation": "الطَّبيبِ (the doctor) is genitive after إِلى (to). يَجِبُ أَن (it is necessary that/must) + subjunctive is a standard obligation structure. تَذهَبَ is subjunctive (fatḥa ending) after أَن. Medical specialist vocabulary: طَبيبُ أَسنانٍ (dentist), طَبيبُ عُيونٍ (eye doctor), طَبيبُ أَطفالٍ (pediatrician), جَرَّاح (surgeon), طَبيبٌ نَفسِيٌّ (psychiatrist). يَجِبُ is impersonal — it doesn't conjugate for the subject."
+      },
+      {
+        "id": "ea_hb3",
+        "question": "المَريضُ يَحتاجُ إِلى _____ (The patient needs rest)",
+        "options": [
+          "رَاحَةٍ",
+          "رَاحَةٌ",
+          "رَاحَةً",
+          "الرَّاحَةِ"
+        ],
+        "correct": "رَاحَةٍ",
+        "explanation": "رَاحَةٍ (rest) is genitive after إِلى. يَحتاجُ إِلى (needs — Form VIII with إِلى) is the standard expression for medical needs. المَريضُ (the patient) is a nominative subject — from مَرِضَ (to be sick), on the pattern فَعيل for ailment states. Medical instruction verbs: يَحتاجُ إِلى (needs), يَجِبُ أَن (must), يُنصَحُ بِ (is advised to), يُمنَعُ مِن (is prohibited from). رَاحَة (rest) is the masdar of رَاحَ (to rest/go)."
+      },
+      {
+        "id": "ea_hb4",
+        "question": "تَنَاوَلْ هَذا _____ ثَلَاثَ مَرَّاتٍ يَومِيًّا (Take this medicine three times daily)",
+        "options": [
+          "الدَّوَاءَ",
+          "الدَّوَاءُ",
+          "الدَّوَاءِ",
+          "دَوَاءً"
+        ],
+        "correct": "الدَّوَاءَ",
+        "explanation": "الدَّوَاءَ (the medicine) is accusative — direct object of the imperative تَنَاوَلْ (take!/consume!). هَذا is a demonstrative adjective. ثَلَاثَ مَرَّاتٍ (three times) — مَرَّات is sound feminine plural of مَرَّة (time/instance), genitive after the number. يَومِيًّا (daily) is an adverb with nisba ending. Medical instructions: تَنَاوَلْ (take — for medicine), اِشرَبْ (drink), اِستَعمِلْ (use), ضَعْ (apply — for cream). Imperative forms are essential in medical Arabic."
+      },
+      {
+        "id": "ea_hb5",
+        "question": "_____ مُرتَفِعَةٌ وَيَجِبُ خَفضُها (The temperature is high and must be lowered)",
+        "options": [
+          "الحَرارَةُ",
+          "الحَرارَةَ",
+          "الحَرارَةِ",
+          "حَرارَةٌ"
+        ],
+        "correct": "الحَرارَةُ",
+        "explanation": "الحَرارَةُ (the temperature/fever) is the مُبتدأ in nominative. مُرتَفِعَةٌ (high/elevated, feminine) is the خبر. خَفضُها (lowering it) — خَفض is the masdar of خَفَضَ (to lower), and ها is the possessive pronoun. يَجِبُ خَفضُها (it must be lowered) uses the impersonal يَجِبُ + masdar construction. Medical condition vocabulary: حُمَّى (fever), ضَغط (pressure), سُكَّر (blood sugar), تَحلِيل (test/analysis). Arabic medical terminology often uses masdars for precise clinical expression."
+      },
+      {
+        "id": "ea_hb6",
+        "question": "كَسَرَ الوَلَدُ _____ أَثنَاءَ اللَّعِبِ (The boy broke his arm during play)",
+        "options": [
+          "ذِراعَهُ",
+          "ذِراعُهُ",
+          "ذِراعِهِ",
+          "ذِراعٌ"
+        ],
+        "correct": "ذِراعَهُ",
+        "explanation": "ذِراعَهُ (his arm) is accusative — direct object of كَسَرَ (he broke). The possessive هُ (his) is attached. أَثنَاءَ (during) is a ظرف زمان in accusative. اللَّعِبِ (play/playing) is genitive as مُضاف إليه. Upper body parts: ذِراع (arm), يَد (hand), كَتِف (shoulder), مِرفَق (elbow), إِصبَع (finger), مِعصَم (wrist). Injury vocabulary: كَسر (fracture), جُرح (wound), رَضَّة (bruise), اِلتِوَاء (sprain). These commonly appear in emergency situations."
+      },
+      {
+        "id": "ea_hb7",
+        "question": "يَجِبُ غَسلُ _____ قَبلَ الأَكلِ (Hands must be washed before eating)",
+        "options": [
+          "اليَدَينِ",
+          "اليَدَانِ",
+          "اليَدُ",
+          "يَدَينٍ"
+        ],
+        "correct": "اليَدَينِ",
+        "explanation": "اليَدَينِ (the two hands) is genitive — it's the مُضاف إليه of the masdar غَسل (washing). The dual form in genitive/accusative uses ين-: اليَدَينِ, while nominative uses ان-: اليَدَانِ. قَبلَ الأَكلِ (before eating) — قَبلَ is accusative as ظرف, الأَكل is genitive masdar. Hygiene vocabulary: غَسل (washing), تَنظيف (cleaning), تَعقيم (sterilization), صَابون (soap). The dual form is particularly relevant for body parts that come in pairs."
+      },
+      {
+        "id": "ea_hb8",
+        "question": "أُعاني مِن _____ مُزمِنٍ في الظَّهرِ (I suffer from chronic back pain)",
+        "options": [
+          "أَلَمٍ",
+          "أَلَمٌ",
+          "أَلَمًا",
+          "الأَلَمِ"
+        ],
+        "correct": "أَلَمٍ",
+        "explanation": "أَلَمٍ (a pain) takes genitive after مِن. أُعاني مِن (I suffer from, Form III) is the standard expression for chronic conditions. مُزمِنٍ (chronic) is an adjective agreeing with أَلَم in case (genitive), gender (masculine), and definiteness (indefinite). في الظَّهرِ (in the back) locates the pain. Medical condition adjectives: مُزمِن (chronic), حَادّ (acute), مُتَقَطِّع (intermittent), خَفيف (mild), شَديد (severe). These are used with أَلَم to describe pain precisely."
+      },
+      {
+        "id": "ea_hb9",
+        "question": "أَجرَى الطَّبيبُ _____ لِلمَريضِ (The doctor performed surgery on the patient)",
+        "options": [
+          "عَمَلِيَّةً",
+          "عَمَلِيَّةٌ",
+          "عَمَلِيَّةٍ",
+          "العَمَلِيَّةَ"
+        ],
+        "correct": "عَمَلِيَّةً",
+        "explanation": "عَمَلِيَّةً (an operation/surgery) is accusative — direct object of أَجرَى (he performed/conducted, Form IV). لِلمَريضِ (for the patient) uses لِ + genitive. عَمَلِيَّة is derived from عَمَل (work) with the nisba suffix + tā' marbūṭa, creating an abstract/procedural noun. Medical procedures: عَمَلِيَّة جِراحِيَّة (surgical operation), فَحص (examination), تَحلِيل (analysis), أَشِعَّة (X-ray), تَصوير بِالرَّنين (MRI). أَجرَى (Form IV) is the standard verb for 'to conduct/perform' medical procedures."
+      },
+      {
+        "id": "ea_hb10",
+        "question": "وَصَفَ الطَّبيبُ _____ لِعِلاجِ الزُّكامِ (The doctor prescribed medicine for treating the cold)",
+        "options": [
+          "دَوَاءً",
+          "دَوَاءٌ",
+          "دَوَاءٍ",
+          "الدَّوَاءَ"
+        ],
+        "correct": "دَوَاءً",
+        "explanation": "دَوَاءً (medicine) is accusative — direct object of وَصَفَ (he prescribed/described). لِعِلاجِ (for treating) uses لِ + masdar عِلاج (treatment). الزُّكامِ (the cold/flu) is genitive as مُضاف إليه. وَصَفَ has two meanings: to describe and to prescribe (medical). Common illnesses: زُكام (cold), إِنفلوَنزا (flu), حَساسِيَّة (allergy), اِلتِهاب (inflammation), عَدوَى (infection). Medical Arabic is important for healthcare workers and patients in Arabic-speaking countries."
+      },
+      {
+        "id": "ea_hb11",
+        "question": "عَلَيكَ أَن تَشرَبَ _____ كَثيرًا (You should drink a lot of water)",
+        "options": [
+          "مَاءً",
+          "مَاءٌ",
+          "مَاءٍ",
+          "المَاءَ"
+        ],
+        "correct": "مَاءً",
+        "explanation": "مَاءً (water) is accusative — direct object of تَشرَبَ (drink, subjunctive after أَن). عَلَيكَ أَن (you should — literally 'upon you that') expresses medical advice. كَثيرًا (a lot) is an adverb in accusative. مَاء (water) has special spelling: in accusative, the hamza-alif combination makes it مَاءً (no extra alif because the word already ends in اء). Health advice verbs: اِشرَبْ (drink), كُلْ (eat), نَمْ (sleep), تَمَرَّنْ (exercise), اِستَرِحْ (rest). عَلَيكَ أَن is softer than يَجِبُ."
+      },
+      {
+        "id": "ea_hb12",
+        "question": "تَحسَّنَتْ _____ المَريضِ بَعدَ العِلاجِ (The patient's condition improved after treatment)",
+        "options": [
+          "حَالَةُ",
+          "حَالَةَ",
+          "حَالَةِ",
+          "حَالَةٌ"
+        ],
+        "correct": "حَالَةُ",
+        "explanation": "حَالَةُ (condition/state of) is nominative — it's the subject (فاعل) of تَحسَّنَتْ (improved, Form V feminine past). As the first element of an idāfa (حَالَةُ المَريضِ), it loses tanwīn. المَريضِ is genitive as مُضاف إليه. بَعدَ العِلاجِ (after treatment) — بَعدَ is ظرف زمان. تَحسَّنَ (Form V: to improve) from حَسُنَ (to be good). Medical progress verbs: تَحسَّنَ (improved), تَدَهوَرَ (deteriorated), اِستَقَرَّ (stabilized), تَعافَى (recovered)."
+      },
+      {
+        "id": "ea_hb13",
+        "question": "لا تَنسَ أَن تَأخُذَ _____ في مَوعِدِها (Don't forget to take the medicine on time)",
+        "options": [
+          "الأَدوِيَةَ",
+          "الأَدوِيَةُ",
+          "الأَدوِيَةِ",
+          "أَدوِيَةً"
+        ],
+        "correct": "الأَدوِيَةَ",
+        "explanation": "الأَدوِيَةَ (the medicines) is accusative — direct object of تَأخُذَ (take, subjunctive). أَدوِيَة is the broken plural of دَوَاء. لا تَنسَ (don't forget) — لا + jussive for negative command; the final alif of تَنسَى drops in jussive. في مَوعِدِها (on time/at their appointed time) — مَوعِد (appointment/time) with possessive ها referring to the medicines. Plural medical terms: أَدوِيَة (medicines), حُبوب (pills), كَبسولات (capsules), حُقَن (injections), ضَمَّادات (bandages)."
+      },
+      {
+        "id": "ea_hb14",
+        "question": "يُعاني كَثيرٌ مِنَ النَّاسِ مِن _____ (Many people suffer from diabetes)",
+        "options": [
+          "مَرَضِ السُّكَّرِيِّ",
+          "مَرَضُ السُّكَّرِيِّ",
+          "مَرَضَ السُّكَّرِيِّ",
+          "مَرَضٌ"
+        ],
+        "correct": "مَرَضِ السُّكَّرِيِّ",
+        "explanation": "مَرَضِ السُّكَّرِيِّ (diabetes — literally 'sugar disease') is genitive after مِن. This is an idāfa: مَرَض (disease, genitive) + السُّكَّرِيّ (sugar-related, genitive as مُضاف إليه). كَثيرٌ مِنَ النَّاسِ (many people) — كَثير is the subject, مِنَ النَّاسِ specifies the group. Common diseases in Arabic: مَرَض السُّكَّرِيّ (diabetes), ضَغط الدَّم (blood pressure), الرَّبو (asthma), القَلب (heart disease). Arabic medical terminology often uses idāfa constructions."
+      },
+      {
+        "id": "ea_hb15",
+        "question": "الطَّبيبَةُ _____ المَرضَى بِعِنايَةٍ (The female doctor examines the patients with care)",
+        "options": [
+          "تَفحَصُ",
+          "يَفحَصُ",
+          "فَحَصَت",
+          "تَفحَصينَ"
+        ],
+        "correct": "تَفحَصُ",
+        "explanation": "تَفحَصُ (she examines) uses the feminine prefix تَ- to agree with الطَّبيبَةُ (feminine doctor). Since this is SVO order (subject first), full agreement is expected — and singular feminine matches. المَرضَى (the patients/sick ones) is the direct object — it's a defective noun not showing visible case endings. بِعِنايَةٍ (with care) uses بِ + masdar for manner. Medical examination vocabulary: فَحَصَ (examined), شَخَّصَ (diagnosed), عَالَجَ (treated), قَاسَ (measured). The feminine occupation form is standard in Arabic medical contexts."
+      }
+    ]
+  },
+  {
+    "key": "travel_transport",
+    "name": "Travel & Transport (السفر والمواصلات)",
+    "description": "Essential Arabic for traveling, directions, and transportation",
+    "iconName": "airplane",
+    "color": "#0284c7",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ea_tt1",
+        "question": "أُريدُ _____ إِلى القَاهِرَةِ (I want a ticket to Cairo)",
+        "options": [
+          "تَذكِرَةً",
+          "تَذكِرَةٌ",
+          "تَذكِرَةٍ",
+          "التَّذكِرَةَ"
+        ],
+        "correct": "تَذكِرَةً",
+        "explanation": "تَذكِرَةً (a ticket) is accusative — direct object of أُريدُ. إِلى القَاهِرَةِ (to Cairo) — القَاهِرَة is genitive after إِلى. Travel booking vocabulary: تَذكِرَة ذَهاب (one-way ticket), تَذكِرَة ذَهاب وَعَودَة (round-trip ticket), حَجز (reservation), دَرَجَة أولَى (first class), دَرَجَة سِياحِيَّة (economy class). تَذكِرَة is from ذَكَّرَ (to remind) — originally a reminder/receipt. This practical vocabulary is essential for any traveler in Arabic-speaking countries."
+      },
+      {
+        "id": "ea_tt2",
+        "question": "مَتَى تُقلِعُ _____ ؟ (When does the plane take off?)",
+        "options": [
+          "الطَّائِرَةُ",
+          "الطَّائِرَةَ",
+          "الطَّائِرَةِ",
+          "طَائِرَةٌ"
+        ],
+        "correct": "الطَّائِرَةُ",
+        "explanation": "الطَّائِرَةُ (the plane/airplane) is nominative — subject of تُقلِعُ (takes off, Form IV). مَتَى (when?) is an interrogative adverb. الطَّائِرَة is literally 'the flying one' — feminine active participle of طَارَ (to fly). تُقلِعُ (Form IV أَقلَعَ: to take off/depart) uses the feminine prefix. Airport vocabulary: مَطَار (airport), إِقلاع (takeoff), هُبوط (landing), بَوَّابَة (gate), صَالَة المُغادَرَة (departure hall). Form IV verbs are common in transportation contexts."
+      },
+      {
+        "id": "ea_tt3",
+        "question": "أَينَ _____ الحافِلاتِ؟ (Where is the bus station?)",
+        "options": [
+          "مَحَطَّةُ",
+          "مَحَطَّةَ",
+          "مَحَطَّةِ",
+          "مَحَطَّةٌ"
+        ],
+        "correct": "مَحَطَّةُ",
+        "explanation": "مَحَطَّةُ (station) is nominative — subject (مُبتدأ مُؤَخَّر) with أَينَ serving as the fronted خبر. الحافِلاتِ (buses) is genitive as مُضاف إليه — sound feminine plural in genitive takes kasra. مَحَطَّة is a place noun from حَطَّ (to set down/land). Transport stations: مَحَطَّة القِطارِ (train station), مَحَطَّة المِترو (metro station), مَوقِف الحافِلاتِ (bus stop — مَوقِف from وَقَفَ to stop). أَينَ questions are essential for navigating Arabic cities."
+      },
+      {
+        "id": "ea_tt4",
+        "question": "سَنَسَافِرُ _____ إِلى بَيروتَ (We will travel by car to Beirut)",
+        "options": [
+          "بِالسَّيَّارَةِ",
+          "السَّيَّارَةَ",
+          "سَيَّارَةً",
+          "بِسَيَّارَةٍ"
+        ],
+        "correct": "بِالسَّيَّارَةِ",
+        "explanation": "بِالسَّيَّارَةِ (by car) uses بِ + definite noun in genitive to express means of transport. This is the standard Arabic way to say 'by [vehicle]': بِالطَّائِرَةِ (by plane), بِالقِطارِ (by train), بِالحافِلَةِ (by bus), بِالبَاخِرَةِ (by ship). سَنَسَافِرُ (we will travel) uses سَ for future + first person plural. بَيروتَ is diptote (genitive with fatḥa). Mode of transport vocabulary: سَيَّارَة (car), قِطَار (train), حَافِلَة (bus), تَاكسي (taxi), دَرَّاجَة (bicycle)."
+      },
+      {
+        "id": "ea_tt5",
+        "question": "هَل يُمكِنُكَ أَن تَدُلَّني عَلى _____ إِلى المَتحَفِ؟ (Can you show me the way to the museum?)",
+        "options": [
+          "الطَّريقِ",
+          "الطَّريقُ",
+          "الطَّريقَ",
+          "طَريقٍ"
+        ],
+        "correct": "الطَّريقِ",
+        "explanation": "الطَّريقِ (the road/way) is genitive after عَلى. تَدُلَّني (show/guide me) — Form I دَلَّ + ني (me), subjunctive after أَن (fatḥa on shadda). يُمكِنُكَ (is it possible for you — literally 'it is possible to you'). Navigation vocabulary: طَريق (road/way), شَارِع (street), تَقاطُع (intersection), إِشارَة مُرور (traffic light), دَوَّار (roundabout). Direction verbs: اِذهَبْ يَمينًا (go right), اِذهَبْ يَسارًا (go left), اِستَمِرَّ (continue straight)."
+      },
+      {
+        "id": "ea_tt6",
+        "question": "الفُندُقُ _____ مِنَ المَطَارِ (The hotel is far from the airport)",
+        "options": [
+          "بَعيدٌ",
+          "بَعيدًا",
+          "بَعيدٍ",
+          "البَعيدُ"
+        ],
+        "correct": "بَعيدٌ",
+        "explanation": "بَعيدٌ (far) is the خبر in nominative. مِنَ المَطَارِ (from the airport) uses مِن + genitive for distance reference. الفُندُقُ (the hotel) is the مُبتدأ. Location adjectives with مِن: بَعيدٌ مِن (far from), قَريبٌ مِن (near to). Distance expressions: عَلى بُعدِ كيلومِتر (at a distance of a kilometer), يَبعُدُ عَن (is distant from). Accommodation vocabulary: فُندُق (hotel), غُرفَة (room), حَجز (reservation), اِستِقبال (reception), تَسجيل الدُّخولِ (check-in)."
+      },
+      {
+        "id": "ea_tt7",
+        "question": "وَصَلنَا إِلى _____ في الوَقتِ المُحَدَّدِ (We arrived at the airport on time)",
+        "options": [
+          "المَطَارِ",
+          "المَطَارُ",
+          "المَطَارَ",
+          "مَطَارٍ"
+        ],
+        "correct": "المَطَارِ",
+        "explanation": "المَطَارِ (the airport) is genitive after إِلى. وَصَلنَا (we arrived) — نَا suffix marks first person plural. في الوَقتِ المُحَدَّدِ (on time — literally 'in the designated time') — المُحَدَّد is a passive participle from Form II حَدَّدَ (to determine/specify). مَطَار is a place noun (مَفعَل) from طَارَ (to fly). Airport procedures: تَسجيل/تَحقُّق (check-in), تَفتيش أَمني (security check), بَوَّابَة (gate), اِستِلام الأَمتِعَة (baggage claim)."
+      },
+      {
+        "id": "ea_tt8",
+        "question": "سَنَستَقِلُّ _____ مِن هُنا إِلى وَسَطِ المَدينَةِ (We will take a taxi from here to downtown)",
+        "options": [
+          "سَيَّارَةَ أُجرَةٍ",
+          "سَيَّارَةُ أُجرَةٍ",
+          "سَيَّارَةِ أُجرَةٍ",
+          "سَيَّارَةً"
+        ],
+        "correct": "سَيَّارَةَ أُجرَةٍ",
+        "explanation": "سَيَّارَةَ أُجرَةٍ (a taxi — literally 'hire car') is accusative as the direct object of سَنَستَقِلُّ (we will ride/take, Form X). It's an idāfa: سَيَّارَة (car, accusative) + أُجرَة (hire/fee, genitive). مِن هُنا (from here) → إِلى وَسَطِ المَدينَةِ (to the city center). اِستَقَلَّ (Form X: to ride/board) is formal — يَركَبُ is more colloquial. وَسَط (center/middle) is both a ظرف and a regular noun: في وَسَطِ (in the middle of)."
+      },
+      {
+        "id": "ea_tt9",
+        "question": "يَجِبُ أَن نَمُرَّ عَبرَ _____ الأَمنِيِّ (We must pass through the security checkpoint)",
+        "options": [
+          "نُقطَةِ التَّفتيشِ",
+          "نُقطَةُ التَّفتيشِ",
+          "نُقطَةَ التَّفتيشِ",
+          "نُقطَةٍ"
+        ],
+        "correct": "نُقطَةِ التَّفتيشِ",
+        "explanation": "نُقطَةِ التَّفتيشِ (the inspection/checkpoint point) is genitive — it's the مُضاف إليه of عَبرَ (through/across, actually عَبرَ here is a preposition taking genitive). Wait — عَبرَ functions as a preposition 'across/through,' taking genitive. التَّفتيشِ (inspection) is the مُضاف إليه of نُقطَة. الأَمنِيِّ (security-related, nisba adjective) modifies the whole compound. Airport security vocabulary: تَفتيش (inspection), جَواز سَفَر (passport), تَأشيرَة (visa), جُمرُك (customs)."
+      },
+      {
+        "id": "ea_tt10",
+        "question": "القِطارُ يَتَأَخَّرُ عَن _____ بِعِشرينَ دَقيقَةً (The train is delayed by twenty minutes from its schedule)",
+        "options": [
+          "مَوعِدِهِ",
+          "مَوعِدُهُ",
+          "مَوعِدَهُ",
+          "مَوعِدٌ"
+        ],
+        "correct": "مَوعِدِهِ",
+        "explanation": "مَوعِدِهِ (its schedule/appointment) is genitive after عَن. يَتَأَخَّرُ (it is delayed, Form V) from أَخَّرَ (to delay). بِعِشرينَ دَقيقَةً — عِشرين (twenty) is in genitive after بِ (takes ين- in all oblique cases), and دَقيقَةً (minute) is accusative as تَمييز العَدَد (number distinction — numbers 11-99 take singular accusative counted noun). Delay expressions: مُتَأَخِّر (delayed), في المَوعِدِ (on time), مُبَكِّر (early). Travel disruption vocabulary is practical for Arabic-speaking transit systems."
+      },
+      {
+        "id": "ea_tt11",
+        "question": "أَحتاجُ إِلى _____ غُرفَةٍ في الفُندُقِ (I need to book a room at the hotel)",
+        "options": [
+          "حَجزِ",
+          "حَجزُ",
+          "حَجزَ",
+          "حَجزٌ"
+        ],
+        "correct": "حَجزِ",
+        "explanation": "حَجزِ (booking/reservation) is genitive after إِلى. It's also the first element of an idāfa: حَجزِ غُرفَةٍ (booking of a room). The double genitive — after إِلى and as مُضاف — means حَجز takes kasra. غُرفَةٍ (room) is genitive as مُضاف إليه. في الفُندُقِ (at the hotel) is locative. Accommodation verbs: حَجَزَ (to book), سَجَّلَ (to check in), غَادَرَ (to check out), أَلغَى (to cancel). The masdar حَجز after إِلى creates a need + action construction."
+      },
+      {
+        "id": "ea_tt12",
+        "question": "كَم تَبعُدُ المَسافَةُ مِن هُنا إِلى _____؟ (How far is it from here to the station?)",
+        "options": [
+          "المَحَطَّةِ",
+          "المَحَطَّةُ",
+          "المَحَطَّةَ",
+          "مَحَطَّةٍ"
+        ],
+        "correct": "المَحَطَّةِ",
+        "explanation": "المَحَطَّةِ (the station) is genitive after إِلى. كَم (how much/many) is an interrogative. تَبعُدُ (it is distant/far) — from بَعُدَ. المَسافَة (the distance) is nominative as subject. مِن هُنا إِلى (from here to) creates a distance question. Direction/distance vocabulary: كَم كيلومِتر (how many kilometers), كَم ساعَة (how many hours), بِالتَّقريبِ (approximately), مَسافَة قَصيرَة (short distance), مَسافَة طَويلَة (long distance)."
+      },
+      {
+        "id": "ea_tt13",
+        "question": "يُقلِعُ القِطارُ مِن _____ الثَّالِثِ (The train departs from platform three)",
+        "options": [
+          "الرَّصيفِ",
+          "الرَّصيفُ",
+          "الرَّصيفَ",
+          "رَصيفٍ"
+        ],
+        "correct": "الرَّصيفِ",
+        "explanation": "الرَّصيفِ (the platform) is genitive after مِن. الثَّالِثِ (the third) is an ordinal number adjective, agreeing in case (genitive), gender (masculine), and definiteness (definite). يُقلِعُ (departs, Form IV) — the same verb used for planes and trains. Ordinal numbers: الأَوَّل (first), الثَّاني (second), الثَّالِث (third)... up to العَاشِر (tenth). Station vocabulary: رَصيف (platform), سِكَّة (track/rail), قَاطِرَة (locomotive), عَرَبَة (carriage/car)."
+      },
+      {
+        "id": "ea_tt14",
+        "question": "هَل هَذِهِ _____ تَذهَبُ إِلى المَدينَةِ القَديمَةِ؟ (Does this bus go to the old city?)",
+        "options": [
+          "الحَافِلَةُ",
+          "حَافِلَةٌ",
+          "الحَافِلَةَ",
+          "حَافِلَةً"
+        ],
+        "correct": "الحَافِلَةُ",
+        "explanation": "الحَافِلَةُ (the bus) is nominative as the مُبتدأ. هَذِهِ (this, feminine) correctly matches the feminine noun حَافِلَة. تَذهَبُ (it goes) uses the feminine prefix تَ-. إِلى المَدينَةِ القَديمَةِ (to the old city) — both noun and adjective are genitive, definite, feminine. Public transport vocabulary: حَافِلَة (bus), حَافِلَة صَغيرَة (minibus), ترَام (tram), مِترو (metro). Route questions: إِلى أَينَ تَذهَبُ؟ (where does it go?), كَم تَستَغرِقُ الرِّحلَةُ؟ (how long does the trip take?)."
+      },
+      {
+        "id": "ea_tt15",
+        "question": "ضَاعَت _____ في المَطَارِ (My luggage was lost at the airport)",
+        "options": [
+          "حَقيبَتي",
+          "حَقيبَتُكَ",
+          "الحَقيبَةُ",
+          "حَقائِبَ"
+        ],
+        "correct": "حَقيبَتي",
+        "explanation": "حَقيبَتي (my suitcase/luggage) is nominative — subject (فاعل) of ضَاعَت (was lost/got lost, feminine past). The ي possessive suffix hides the case ending but the grammatical role is still nominative. في المَطَارِ (at the airport) is locative. ضَاعَ (to be lost) is intransitive. Lost luggage vocabulary: حَقيبَة (suitcase), أَمتِعَة (luggage, plural of مَتاع), مَكتَب الأَمتِعَةِ المَفقودَةِ (lost baggage office), بَطاقَة الأَمتِعَة (luggage tag). This is a critical travel emergency scenario to practice in Arabic."
+      }
+    ]
   }
 ]

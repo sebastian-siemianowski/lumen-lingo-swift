@@ -44,13 +44,13 @@ Expand all 17 beta language pairs to **105 categories × 15 items = 1,575 items*
 | 8 | french_english | French | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 9 | german_polish | German | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 10 | japanese_english | Japanese | 27/105 | 405/1575 | 4/20 | 🔄 |
-| 11 | polish_arabic | Polish | 22/105 | 330/1575 | 3/20 | 🔄 |
+| 11 | polish_arabic | Polish | 27/105 | 405/1575 | 4/20 | 🔄 |
 | 12 | polish_chinese | Polish | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 13 | polish_french | Polish | 83/105 | 1245/1575 | 15/20 | 🔄 |
 | 14 | polish_japanese | Polish | 17/105 | 255/1575 | 2/20 | 🔄 |
 | 15 | polish_ukrainian | Polish | 12/105 | 180/1575 | 1/20 | 🔄 |
 | 16 | ukrainian_english | Ukrainian | 48/105 | 720/1575 | 8/20 | 🔄 |
-| 17 | ukrainian_polish | Ukrainian | 102/105 | 1530/1575 | 20/21 | 🔄 |
+| 17 | ukrainian_polish | Ukrainian | 105/105 | 1575/1575 | 21/21 | ✅ |
 
 ### arabic_english — ✅ COMPLETE (105/105 categories, 1575 items)
 All 20 batches completed. ID prefixes used: ae_ps, ae_ar, ae_pas, ae_pc, ae_fs, ae_mv, ae_pp, ae_ppc, ae_paco, ae_ppf, ae_czf, ae_cst, ae_pv, ae_rs, ae_rc, ae_cos, ae_pb, ae_pa, ae_gi, ae_pvb, ae_qt, ae_sva, ae_qu, ae_dt, ae_cj, ae_af, ae_am, ae_cu, ae_po, ae_rp, ae_ip, ae_dm, ae_pva, ae_cl, ae_wo, ae_cs, ae_inv, ae_wh, ae_ut, ae_wr, ae_hb, ae_bs, ae_chg, ae_nc, ae_el, ae_sb, ae_es, ae_dsc, ae_lw, ae_hd, ae_fr, ae_ifr, ae_aw, ae_eo, ae_ms, ae_ad, ae_ro, ae_ca, ae_dt2_, ae_dp, ae_ce, ae_cc, ae_te, ae_ffa, ae_nt, ae_mc, ae_arta, ae_cn, ae_ao, ae_gu, ae_im, ae_pi, ae_gn, ae_ff, ae_cer, ae_ie, ae_pvs, ae_tv, ae_fdr, ae_hb2_, ae_wo2_, ae_ti, ae_en, ae_edl, ae_sh, ae_fe, ae_wc, ae_sm, ae_hh, ae_td, ae_mc2_, ae_cj2_, ae_pso, ae_sr, ae_ac, ae_be, ae_rf, ae_rsa, ae_pva2_, ae_rca, ae_ef, ae_ess, ae_nm, ae_exs
@@ -445,8 +445,8 @@ ID prefixes used: ue_ps, ue_art, ue_past, ue_fut, ue_q, ue_cm, ue_pp, ue_pc, ue_
 | 19 | business_economics, register_formality, reported_speech_advanced, passive_voice_advanced, relative_clauses_advanced | ⬜ |
 | 20 | emphasis_fronting, ellipsis_substitution, noun_modifiers, exam_strategies | ⬜ |
 
-### ukrainian_polish — 🔄 IN PROGRESS (102/105 categories, 1530 items)
-ID prefixes used: up_pres, up_case, up_fut, up_ci, up_prep, up_pron, up_pt, up_adj, up_asp, up_neg, up_conj, up_num, up_mod, up_ref, up_cond, up_comp, up_imp, up_pas, up_instr, up_genpl, up_loc, up_dat, up_acc, up_voc, up_asp_e, up_mot, up_time, up_ng, up_pln, up_dim, up_poss, up_qw, up_wo, up_fi, up_rel, up_rs, up_pasc, up_ff, up_cog, up_sp, up_sh, up_pv, up_wf, up_cw, up_advb, up_advm, up_supa, up_ip, up_dp, up_nc, up_no, up_pa, up_ppas, up_vn, up_impc, up_subc, up_purp, up_ce, up_tc, up_ch, up_cc, up_em, up_ell, up_quant, up_inde, up_disc, up_idiom, up_prov, up_coll, up_phe, up_polr, up_opin, up_agrd, up_trav, up_food, up_shop, up_heal, up_work, up_educ, up_tech, up_weat, up_hous, up_fam, up_emot, up_sprt, up_clot, up_colr, up_media, up_env, up_pol, up_arts, up_sci, up_biz, up_crim, up_acad, up_freg, up_relig
+### ukrainian_polish — ✅ COMPLETE (105/105 categories, 1575 items)
+ID prefixes used: up_pres, up_case, up_fut, up_ci, up_prep, up_pron, up_pt, up_adj, up_asp, up_neg, up_conj, up_num, up_mod, up_ref, up_cond, up_comp, up_imp, up_pas, up_instr, up_genpl, up_loc, up_dat, up_acc, up_voc, up_asp_e, up_mot, up_time, up_ng, up_pln, up_dim, up_poss, up_qw, up_wo, up_fi, up_rel, up_rs, up_pasc, up_ff, up_cog, up_sp, up_sh, up_pv, up_wf, up_cw, up_advb, up_advm, up_supa, up_ip, up_dp, up_nc, up_no, up_pa, up_ppas, up_vn, up_impc, up_subc, up_purp, up_ce, up_tc, up_ch, up_cc, up_em, up_ell, up_quant, up_inde, up_disc, up_idiom, up_prov, up_coll, up_phe, up_polr, up_opin, up_agrd, up_trav, up_food, up_shop, up_heal, up_work, up_edu, up_tech, up_weat, up_hous, up_fam, up_emot, up_sprt, up_cloth, up_col, up_media, up_env, up_pol, up_arts, up_sci, up_biz, up_crime, up_acad, up_frmr, up_relig, up_cerr, up_cyrc, up_wstr, up_regs, up_revn, up_exam, up_advg, up_finr
 
 | Batch | Categories | Status |
 |-------|-----------|--------|
@@ -470,17 +470,17 @@ ID prefixes used: up_pres, up_case, up_fut, up_ci, up_prep, up_pron, up_pt, up_a
 | 18 | media_communication, environment_nature, politics_society, arts_culture, science_research | ✅ |
 | 19 | business_economics, crime_justice, academic_writing, formal_register_adv, religion_traditions | ✅ |
 | 20 | common_errors, cyrillic_challenges, word_stress, register_shifts, revision_mixed | ✅ |
-| 21 | exam_strategies, advanced_grammar_review, final_review | 🔄 |
+| 21 | exam_strategies, advanced_grammar_review, final_review | ✅ |
 
-### polish_arabic — 🔄 IN PROGRESS (22/105 categories, 330 items)
-ID prefixes used: pa_pres, pa_art, pa_past, pa_pr, pa_fut, pa_dual, pa_neg, pa_ga, pa_ns, pa_sm, pa_ppd, pa_pos, pa_prep, pa_dem, pa_num, pa_adja, pa_bp, pa_sp, pa_id, pa_bq, pa_tt, pa_cs
+### polish_arabic — 🔄 IN PROGRESS (27/105 categories, 405 items)
+ID prefixes used: pa_pres, pa_art, pa_past, pa_pr, pa_fut, pa_dual, pa_neg, pa_ga, pa_ns, pa_sm, pa_ppd, pa_pos, pa_prep, pa_dem, pa_num, pa_adja, pa_bp, pa_sp, pa_id, pa_bq, pa_tt, pa_cs, pa_vf1, pa_vf23, pa_vf45, pa_vf67, pa_vf8x
 
 | Batch | Categories | Status |
 |-------|-----------|--------|
 | 1 | (original 7) + gender_agreement, nominal_sentences, sun_moon_letters, personal_pronouns_detailed, possessive_suffixes | ✅ |
 | 2 | prepositions_basic_ar, demonstratives_arabic, numbers_1_10, adjective_agreement, broken_plurals_basic | ✅ |
 | 3 | sound_plurals, idafa_construct, basic_questions, time_telling, colors_shapes | ✅ |
-| 4 | verb_forms_I, verb_forms_II_III, verb_forms_IV_V, verb_forms_VI_VII, verb_forms_VIII_IX_X | ⬜ |
+| 4 | verb_forms_I, verb_forms_II_III, verb_forms_IV_V, verb_forms_VI_VII, verb_forms_VIII_IX_X | ✅ |
 | 5 | hollow_verbs, defective_verbs, doubled_verbs, hamzated_verbs, passive_voice_arabic | ⬜ |
 | 6 | masdar_verbal_nouns, active_participle, passive_participle, kana_and_sisters, inna_and_sisters | ⬜ |
 | 7 | accusative_case, genitive_case, nominative_case, conditional_sentences, relative_pronouns_ar | ⬜ |
