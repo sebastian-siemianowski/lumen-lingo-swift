@@ -3483,5 +3483,1030 @@
         "explanation": "Tsugi ni to spójnik sekwencyjny — 'następnie/dalej/potem'. Mazu, yasai wo kirimasu. Tsugi ni, itamemasu. Mazu (najpierw) + tsugi ni (następnie) to para spójników do opisywania kroków — idealne w przepisach, instrukcjach. W polskim: 'najpierw... następnie...'. Itameru (smażyć na patelni) — oddzielny od yaku (grillować/piec) i ageru (smażyć w głębokim oleju). Japońska kuchnia ma precyzyjne słownictwo kulinarne."
       }
     ]
+  },
+  {
+    "key": "verb_groups",
+    "name": "Grupy czasowników",
+    "description": "Japońskie czasowniki dzielą się na trzy grupy koniugacyjne: godan (五段), ichidan (一段) i nieregularne. Znajomość tych grup jest kluczowa do poprawnego odmieniania. Godan kończą się na różne samogłoski w formie słownikowej (-u, -ku, -gu, -su, -tsu, -nu, -bu, -mu, -ru), a ichidan zawsze na -iru lub -eru. Suru i kuru to wyjątki.",
+    "iconName": "list.bullet",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_vg1",
+        "question": "食べる (taberu) należy do grupy czasowników _____.",
+        "translation": "(Jeść należy do grupy...)",
+        "options": [
+          "ichidan",
+          "godan",
+          "nieregularnych",
+          "keigo"
+        ],
+        "correct": "ichidan",
+        "explanation": "Taberu (jeść) kończy się na -eru i jest prawdziwym czasownikiem ichidan (一段). Czasowniki ichidan tracą końcówkę -ru przy odmianie: tabe-ru → tabe-masu. To najprostsza grupa koniugacyjna — wystarczy usunąć -ru i dodać odpowiednią końcówkę. Uwaga: nie każdy czasownik na -eru/-iru jest ichidan (np. kaeru — wrócić — to godan)."
+      },
+      {
+        "id": "pj_vg2",
+        "question": "書く (kaku) należy do grupy czasowników _____.",
+        "translation": "(Pisać należy do grupy...)",
+        "options": [
+          "godan",
+          "ichidan",
+          "nieregularnych",
+          "pomocniczych"
+        ],
+        "correct": "godan",
+        "explanation": "Kaku (pisać) kończy się na -ku, co jednoznacznie wskazuje na grupę godan (五段). Czasowniki godan mają pięć poziomów odmiany (a, i, u, e, o). Kak-u → kak-imasu → kak-anai → kak-eba → kak-ou. Każda końcówka -ku, -gu, -su, -tsu, -nu, -bu, -mu w formie słownikowej to zawsze godan. Pamiętaj: godan = pięć zmian samogłoski."
+      },
+      {
+        "id": "pj_vg3",
+        "question": "する (suru) to czasownik _____.",
+        "translation": "(Robić to czasownik...)",
+        "options": [
+          "nieregularny",
+          "godan",
+          "ichidan",
+          "bierny"
+        ],
+        "correct": "nieregularny",
+        "explanation": "Suru (robić) to jeden z dwóch nieregularnych czasowników japońskich (obok kuru). Jego odmiana nie pasuje do żadnych reguł: suru → shimasu → shinai → shita → sureba → shiyou. Suru jest niezwykle produktywny — połączony z rzeczownikami tworzy setki złożonych czasowników: benkyō suru (uczyć się), ryōri suru (gotować), unten suru (prowadzić)."
+      },
+      {
+        "id": "pj_vg4",
+        "question": "泳ぐ (oyogu) należy do grupy _____.",
+        "translation": "(Pływać należy do grupy...)",
+        "options": [
+          "godan",
+          "ichidan",
+          "nieregularnych",
+          "keigo"
+        ],
+        "correct": "godan",
+        "explanation": "Oyogu (pływać) kończy się na -gu, co zawsze oznacza grupę godan. Odmiana: oyog-u → oyog-imasu → oyog-anai. W formie te: oyogu → oyoide (końcówka -gu zmienia się na -ide). To ważna reguła fonetyczna: czasowniki na -gu w te-form dają -ide, a nie -ite. Porównaj: kaku → kaite (twarda spółgłoska), oyogu → oyoide (miękka spółgłoska)."
+      },
+      {
+        "id": "pj_vg5",
+        "question": "見る (miru) należy do grupy _____.",
+        "translation": "(Patrzeć należy do grupy...)",
+        "options": [
+          "ichidan",
+          "godan",
+          "nieregularnych",
+          "pomocniczych"
+        ],
+        "correct": "ichidan",
+        "explanation": "Miru (patrzeć/widzieć) to czasownik ichidan kończący się na -iru. Odmiana: mi-ru → mi-masu → mi-nai → mi-ta. Wszystkie formy tworzy się przez proste dodanie końcówki do rdzenia mi-. Uwaga na pułapkę: kiru (nosić ubrania, 着る) jest ichidan, ale kiru (ciąć, 切る) jest godan! Kontekst i kanji pomagają rozróżnić."
+      },
+      {
+        "id": "pj_vg6",
+        "question": "来る (kuru) odmienia się w formie masu jako _____.",
+        "translation": "(Przyjechać w formie masu to...)",
+        "options": [
+          "きます",
+          "くます",
+          "こます",
+          "かます"
+        ],
+        "correct": "きます",
+        "explanation": "Kuru (przychodzić) to drugi z nieregularnych czasowników. Odmiana jest całkowicie nieregularna: kuru → kimasu → konai → kita → kureba → koyou. Rdzeń zmienia się między ku-, ki-, ko-. Nie ma żadnej reguły — trzeba zapamiętać. Na szczęście są tylko dwa takie czasowniki w całym języku japońskim (suru i kuru)."
+      },
+      {
+        "id": "pj_vg7",
+        "question": "話す (hanasu) w formie te to _____.",
+        "translation": "(Mówić w formie te to...)",
+        "options": [
+          "話して",
+          "話いて",
+          "話んで",
+          "話って"
+        ],
+        "correct": "話して",
+        "explanation": "Hanasu (mówić) to czasownik godan na -su. Reguła te-form dla -su: zamień -su na -shite. Hanasu → hanashite. Ta sama reguła dotyczy wszystkich czasowników godan na -su: kasu (pożyczać) → kashite, dasu (wydawać) → dashite, naosu (naprawiać) → naoshite. To jedna z łatwiejszych reguł te-form, bo nie ma zdłużeń ani nazalizacji."
+      },
+      {
+        "id": "pj_vg8",
+        "question": "帰る (kaeru — wracać) to czasownik _____.",
+        "translation": "(Wracać to czasownik...)",
+        "options": [
+          "godan",
+          "ichidan",
+          "nieregularny",
+          "przechodni"
+        ],
+        "correct": "godan",
+        "explanation": "Kaeru (wracać, 帰る) to klasyczna pułapka! Kończy się na -eru, ale jest godan, nie ichidan. Odmiana: kaer-u → kaer-imasu (nie *kae-masu). Inne znane wyjątki: hashiru (biec), shiru (znać), hairu (wchodzić), kiru (ciąć). Te 'fałszywe ichidan' trzeba zapamiętać indywidualnie. Wskazówka: jeśli rdzeń ma jedną sylabę przed -ru, to często godan."
+      },
+      {
+        "id": "pj_vg9",
+        "question": "待つ (matsu) w formie te to _____.",
+        "translation": "(Czekać w formie te to...)",
+        "options": [
+          "待って",
+          "待して",
+          "待いて",
+          "待んで"
+        ],
+        "correct": "待って",
+        "explanation": "Matsu (czekać) to godan na -tsu. Reguła te-form: -tsu → -tte (z podwójnym t). Matsu → matte. Ta sama reguła dotyczy -u i -ru w godan: kau (kupować) → katte, toru (brać) → totte. To grupa 'podwójnego t' (tzw. sokuon, っ). Rytm japoński: matte kudasai (待ってください) — proszę zaczekać — jedno z najważniejszych wyrażeń."
+      },
+      {
+        "id": "pj_vg10",
+        "question": "勉強_____ (benkyō _____) — uczyć się.",
+        "translation": "(Uczyć się)",
+        "options": [
+          "する",
+          "くる",
+          "ある",
+          "いる"
+        ],
+        "correct": "する",
+        "explanation": "Benkyō suru (uczyć się) to przykład połączenia rzeczownika sino-japońskiego z suru. Setki takich złożeń istnieją: ryōri suru (gotować), setsumei suru (wyjaśniać), shigoto suru (pracować). Odmiana jest jak suru: benkyō shimasu, benkyō shinai, benkyō shita. Dla Polaków: to jak polskie 'robić + rzeczownik' — robić ćwiczenia, robić zakupy."
+      },
+      {
+        "id": "pj_vg11",
+        "question": "死ぬ (shinu) w formie te to _____.",
+        "translation": "(Umierać w formie te to...)",
+        "options": [
+          "死んで",
+          "死いて",
+          "死して",
+          "死って"
+        ],
+        "correct": "死んで",
+        "explanation": "Shinu (umierać) to jedyny japoński czasownik godan kończący się na -nu. Reguła te-form: -nu → -nde (nazalizacja). Shinu → shinde. Ta sama reguła dotyczy -bu i -mu: yobu (wołać) → yonde, yomu (czytać) → yonde. To tzw. grupa nazalna — końcówka -nde z charakterystycznym dźwiękiem 'n'. Ważne: shinu jest rzadko używany bezpośrednio — nakunaru jest delikatniejszy."
+      },
+      {
+        "id": "pj_vg12",
+        "question": "起きる (okiru) odmienia się w przeczeniu jako _____.",
+        "translation": "(Wstawać w przeczeniu to...)",
+        "options": [
+          "起きない",
+          "起かない",
+          "起らない",
+          "起いない"
+        ],
+        "correct": "起きない",
+        "explanation": "Okiru (wstawać/budzić się) to ichidan na -iru. Przeczenie tworzy się prosto: usuń -ru, dodaj -nai: oki-ru → oki-nai. Ta regularna odmiana to główna zaleta grupy ichidan. Porównaj z godan: kaku → kaka-nai (zmiana samogłoski na -a). Ichidan jest prostsze, bo rdzeń się nie zmienia. Pamiętaj: jeśli -ru formy słownikowej to ichidan, po prostu zamień -ru na -nai."
+      },
+      {
+        "id": "pj_vg13",
+        "question": "遊ぶ (asobu) w formie te to _____.",
+        "translation": "(Bawić się w formie te to...)",
+        "options": [
+          "遊んで",
+          "遊いて",
+          "遊して",
+          "遊って"
+        ],
+        "correct": "遊んで",
+        "explanation": "Asobu (bawić się) to godan na -bu. Reguła: -bu → -nde. Asobu → asonde. To ta sama nazalna grupa co -mu i -nu: yomu → yonde, shinu → shinde. Mnemotechnika: BuMuNu = NDE. To jedna z trzech głównych grup te-form: 1) -ite/-ide (kaku→kaite, oyogu→oyoide), 2) -nde (yomu→yonde), 3) -tte (matsu→matte), 4) -shite (hanasu→hanashite)."
+      },
+      {
+        "id": "pj_vg14",
+        "question": "『教える』 (oshieru) należy do grupy _____.",
+        "translation": "(Uczyć/nauczać należy do grupy...)",
+        "options": [
+          "ichidan",
+          "godan",
+          "nieregularnych",
+          "biernych"
+        ],
+        "correct": "ichidan",
+        "explanation": "Oshieru (uczyć/nauczać) to ichidan na -eru. Odmiana: oshie-ru → oshie-masu → oshie-nai → oshie-ta. Dłuższy rdzeń (oshie-) mocno sugeruje ichidan — większość wyjątków godan na -eru ma krótki rdzeń (kaeru, keru). Ciekawostka: oshieru znaczy 'uczyć kogoś', a narau 'uczyć się od kogoś' — japoński rozróżnia perspektywę nauczyciela i ucznia."
+      },
+      {
+        "id": "pj_vg15",
+        "question": "立つ (tatsu) w formie przeszłej to _____.",
+        "translation": "(Stać w formie przeszłej to...)",
+        "options": [
+          "立った",
+          "立した",
+          "立いた",
+          "立んだ"
+        ],
+        "correct": "立った",
+        "explanation": "Tatsu (stać/wstawać) to godan na -tsu. Forma przeszła: -tsu → -tta (sokuon). Tatsu → tatta. Reguła ta-form jest identyczna jak te-form, ale z -ta zamiast -te: matte → matta, kaite → kaita, yonde → yonda. Jeśli znasz te-form, znasz też formę przeszłą — po prostu zamień końcowe -e na -a. To najważniejsza reguła koniugacji japońskiej."
+      }
+    ]
+  },
+  {
+    "key": "imperative_form",
+    "name": "Tryb rozkazujący",
+    "description": "Japoński ma kilka poziomów trybu rozkazującego: od surowego rozkazu (命令形 meireikei) przez łagodniejsze formy z -te kudasai, aż po negatywny rozkaz z -na. Wybór formy zależy od relacji społecznej, płci mówiącego i kontekstu. Mężczyźni używają surowych form częściej niż kobiety.",
+    "iconName": "exclamationmark.triangle",
+    "color": "#ef4444",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_imp1",
+        "question": "食べ_____ (jedz!) — uprzejma prośba.",
+        "translation": "(Proszę, jedz)",
+        "options": [
+          "てください",
+          "ろ",
+          "なさい",
+          "な"
+        ],
+        "correct": "てください",
+        "explanation": "Tabete kudasai (食べてください) to najczęściej używana forma polecenia/prośby. Te-form + kudasai = 'proszę, zrób X'. Jest uprzejma i bezpieczna w każdej sytuacji. Kudasai dosłownie znaczy 'proszę daj mi' (od kudasaru — forma honoryfikatywna 'dawać'). Dla Polaków: odpowiednik 'proszę' + tryb rozkazujący."
+      },
+      {
+        "id": "pj_imp2",
+        "question": "行け! (ike!) to forma rozkazująca od _____.",
+        "translation": "(Idź! to rozkaz od...)",
+        "options": [
+          "行く",
+          "行って",
+          "行かない",
+          "行きます"
+        ],
+        "correct": "行く",
+        "explanation": "Ike! to surowa forma rozkazująca (meireikei) od iku (iść). Tworzy się ją zmieniając -u na -e w godan: iku → ike, kaku → kake, nomu → nome. Ta forma jest bardzo bezpośrednia i może być niegrzeczna! Używana głównie: przez mężczyzn w nieformalnych sytuacjach, w sporcie, na wojsku, w anime/mandze. Kobiety prawie nigdy jej nie używają."
+      },
+      {
+        "id": "pj_imp3",
+        "question": "見_____ (nie patrz!) — zakaz nieformalny.",
+        "translation": "(Nie patrz!)",
+        "options": [
+          "るな",
+          "ないで",
+          "てはいけない",
+          "ますな"
+        ],
+        "correct": "るな",
+        "explanation": "Miru na (見るな) to negatywny rozkaz: forma słownikowa + na. To dosć surowy zakaz, używany w nieformalnych sytuacjach. Iku na! (nie idź!), taberu na! (nie jedz!). Jest prostszy niż -te wa ikenai (formalny zakaz), ale też bardziej os3try. W anime i filmach usłyszysz go często. W uprzejmej mowie lepiej użyć: minaide kudasai (proszę nie patrzeć)."
+      },
+      {
+        "id": "pj_imp4",
+        "question": "先生に聞い_____ — zapytaj nauczyciela (uprzejmie).",
+        "translation": "(Zapytaj nauczyciela)",
+        "options": [
+          "てください",
+          "てみて",
+          "てもらって",
+          "てあげて"
+        ],
+        "correct": "てください",
+        "explanation": "Sensei ni kiite kudasai (先生に聞いてください) = proszę zapytać nauczyciela. Kiku (pytać/słuchać) → kiite + kudasai. Partykuła ni wskazuje osobę, do której kierujemy pytanie. To standardowa uprzejma prośba w szkołach i biurach. Alternatywa: sensei ni otazune kudasai (jeszcze bardziej formalna, z keigo). W codziennych rozmowach -te kudasai wystarcza."
+      },
+      {
+        "id": "pj_imp5",
+        "question": "走れ! (hashire!) to rozkaz od _____.",
+        "translation": "(Biegnij! to rozkaz od...)",
+        "options": [
+          "走る",
+          "走って",
+          "走ります",
+          "走らない"
+        ],
+        "correct": "走る",
+        "explanation": "Hashire! to meireikei od hashiru (biec). Hashiru jest wyjątkowym godan na -ru (nie ichidan!). Meireikei: hashir-u → hashir-e. Gdyby był ichidan, forma brzmiałaby *hashi-ro. Ta forma jest typowa na zawodach sportowych: hashire! (biegnij!), ganbare! (daj z siebie wszystko!). Reguła: godan -u→-e, ichidan -ru→-ro."
+      },
+      {
+        "id": "pj_imp6",
+        "question": "ここに座って_____ — proszę siądź tutaj.",
+        "translation": "(Proszę, usiądź tutaj)",
+        "options": [
+          "ください",
+          "なさい",
+          "ろ",
+          "な"
+        ],
+        "correct": "ください",
+        "explanation": "Koko ni suwatte kudasai (ここに座ってください) = proszę usiądź tutaj. Suwaru (siadać) → suwatte (te-form godan na -ru → -tte). Koko ni = tutaj (z partykułą miejsca ni). Alternatywy: okake kudasai (jeszcze bardziej uprzejme, keigo), suware! (surowy rozkaz, godan: suwar-u → suwar-e). Wybór formy ukazuje japońskie wyczulenie na hierarchię społeczną."
+      },
+      {
+        "id": "pj_imp7",
+        "question": "ここで待って_____ — łagodna prośba 'poczekaj tu'.",
+        "translation": "(Poczekaj tu, proszę)",
+        "options": [
+          "てね",
+          "ください",
+          "ろ",
+          "な"
+        ],
+        "correct": "てね",
+        "explanation": "Koko de matte te ne (ここで待っててね) tołagodna, czuła prośba. Te-form + ne dodaje miękkiego 'prawda?/ok?'. To forma używana między bliskimi osobami, rodzicami do dzieci, między przyjaciółmi. Jest znacznie cieplejsza niż -te kudasai. Inne przykłady: tabete ne (jedz, dobrze?), ganbatte ne (trzymaj się!). Partykuła ne łagodzi każdy rozkaz."
+      },
+      {
+        "id": "pj_imp8",
+        "question": "先生が「静かに_____」と言いました。",
+        "translation": "(Nauczyciel powiedział: 'Bądźcje cicho')",
+        "options": [
+          "しなさい",
+          "しろ",
+          "するな",
+          "してください"
+        ],
+        "correct": "しなさい",
+        "explanation": "Shizuka ni shinasai (静かにしなさい) = bądź cicho (polecenie). Nasai to łagodniejsza forma rozkazująca, używana przez nauczycieli i rodziców. Tworzy się: masu-stem + nasai. Tabemasu → tabe + nasai. Jest między -te kudasai (uprzejma prośba) a meireikei (rozkaz). W szkołach japońskich to standardowa forma poleceń. Shizuka ni = cicho (na-przymiotnik + ni)."
+      },
+      {
+        "id": "pj_imp9",
+        "question": "帰れ! (kaere!) to rozkaz _____.",
+        "translation": "(Idź do domu! to rozkaz...)",
+        "options": [
+          "surowy (meireikei)",
+          "uprzejmy",
+          "łagodny",
+          "formalny"
+        ],
+        "correct": "surowy (meireikei)",
+        "explanation": "Kaere! (帰れ!) to surowy meireikei od kaeru (wracać). Godan: kaer-u → kaer-e. To bardzo mocny rozkaz — 'wynoś się!' — używany w gniewie lub sporcie. Hierarchia rozkazująca: kaere! (surowy) > kaeri nasai (rodzicielski) > kaette kudasai (uprzejmy) > kaette ne (czuły). Japoński ma więcej stopni rozkazujących niż polski — wybór formy niesie informację o emocjach i relacji."
+      },
+      {
+        "id": "pj_imp10",
+        "question": "毎日運動し_____ — ćwicz codziennie (rada).",
+        "translation": "(Ćwicz codziennie)",
+        "options": [
+          "なさい",
+          "ろ",
+          "てください",
+          "な"
+        ],
+        "correct": "なさい",
+        "explanation": "Mainichi undō shinasai (毎日運動しなさい) = ćwicz codziennie (polecenie/rada). Undō suru → shi + nasai. Nasai ma ton rodzicielskiego polecenia — stanowczy, ale nie wrogi. Matka mówi do dziecka: hayaku okinasai (wstawaj szybko!), ha wo migaki nasai (umyj zęby!). To naturalna forma poleceń w domu. Codzienne słownictwo: mainichi (毎日) = codziennie."
+      },
+      {
+        "id": "pj_imp11",
+        "question": "あちらを見_____ (patrz tam) — nieformalna prośba.",
+        "translation": "(Patrz tam)",
+        "options": [
+          "て",
+          "ろ",
+          "なさい",
+          "な"
+        ],
+        "correct": "て",
+        "explanation": "Achira wo mite (あちらを見て) = patrz tam — sama te-form bez kudasai to nieformalna prośba. To bardzo naturalne między przyjaciółmi i bliskimi: matte (czekaj), kite (chodź), mite (patrz). Krótsza i cieplejsza niż -te kudasai. Achira (あちら) to formalna wersja 'tam' (vs. asoko — nieformalna). Wo (を) oznacza dopełnienie bliższe."
+      },
+      {
+        "id": "pj_imp12",
+        "question": "電話に出_____ (odbierz telefon) — rozkaz rodzica.",
+        "translation": "(Odbierz telefon)",
+        "options": [
+          "なさい",
+          "てください",
+          "ろ",
+          "てね"
+        ],
+        "correct": "なさい",
+        "explanation": "Denwa ni de nasai (電話に出なさい) = odbierz telefon. Deru (wyjść/odebrać) → de + nasai. Denwa ni deru = 'odebrać telefon' (dosł. 'wyjść do telefonu'). Nasai to naturalny ton rodzica do dziecka. W biurze byłoby: denwa ni dete kudasai. Japoński rozróżnia: denwa wo kakeru (dzwonić), denwa ni deru (odbierać), denwa wo kiru (rozłączać się)."
+      },
+      {
+        "id": "pj_imp13",
+        "question": "そこに入る_____! (nie wchodź tam!)",
+        "translation": "(Nie wchodź tam!)",
+        "options": [
+          "な",
+          "なさい",
+          "てください",
+          "てね"
+        ],
+        "correct": "な",
+        "explanation": "Soko ni hairu na! (そこに入るな!) = nie wchodź tam! Forma słownikowa + na = surowy zakaz. Hairu (wchodzić) to godan na -ru (wyjątek!). Hairu na! jest mocny — używany w nagłych sytuacjach. Łagodniejsze formy: hairanaide kudasai (uprzejma prośba), hairanaide (nieformalna prośba). Soko (そこ) = tam (blisko rozmówcy). Japoński ma trzy stopnie odległości: koko/soko/asoko."
+      },
+      {
+        "id": "pj_imp14",
+        "question": "もっと食べ_____ (jedz więcej) — czule, od babci.",
+        "translation": "(Jedz więcej)",
+        "options": [
+          "てね",
+          "なさい",
+          "ろ",
+          "てください"
+        ],
+        "correct": "てね",
+        "explanation": "Motto tabete ne (もっと食べてね) = jedz więcej (czule). Te-form + ne jest idealną formą dla czułych poleceń od babci czy mamy. Motto (もっと) = więcej/bardziej. Ta forma pokazuje troskę i ciepło. Porównaj emocjonalny ładunek: motto tabenasai (stanowcze polecenie), motto tabete kudasai (uprzejma prośba), motto tabete ne (czułe zachęcenie). Każda forma tworzy inną atmosferę."
+      },
+      {
+        "id": "pj_imp15",
+        "question": "Ichidan 『見る』 w meireikei to _____.",
+        "translation": "(Patrzeć w formie rozkazującej to...)",
+        "options": [
+          "見ろ",
+          "見え",
+          "見な",
+          "見て"
+        ],
+        "correct": "見ろ",
+        "explanation": "Miro! (見ろ!) = patrz! (surowy rozkaz). Ichidan tworzy meireikei przez zamianę -ru na -ro: miru → miro, taberu → tabero, okiru → okiro. To różnica od godan (-u → -e): miru → miro (ichidan), ale kaeru → kaere (godan). Nieprawidlarne: suru → shiro, kuru → koi. Ta forma jest silna emocjonalnie i rzadka w uprzejmej rozmowie — głównie w filmach, sporcie i argumentach."
+      }
+    ]
+  },
+  {
+    "key": "passive_voice",
+    "name": "Strona bierna",
+    "description": "Japońska strona bierna (受身形 ukemikei) ma unikalne zastosowanie: oprócz zwykłej biernej ('być zrobionym'), istnieje tzw. bierna uciążliwa (meiwaku no ukemi), wyrażająca, że ktoś został dotknięty czymś negatywnym. To nie istnieje w polskim! Tworzy się: godan -u→-areru, ichidan -ru→-rareru.",
+    "iconName": "arrow.uturn.backward",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_psv1",
+        "question": "私は先生に_____ (zostałem pochwalony przez nauczyciela).",
+        "translation": "(Zostałem pochwalony przez nauczyciela)",
+        "options": [
+          "ほめられた",
+          "ほめた",
+          "ほめさせた",
+          "ほめていた"
+        ],
+        "correct": "ほめられた",
+        "explanation": "Watashi wa sensei ni homerareta (私は先生にほめられた) = zostałem pochwalony przez nauczyciela. Homeru (chwalić) → homerareru (być chwalonym). Ichidan: -ru → -rareru. Partykuła ni oznacza sprawcę czynności (jak 'przez' po polsku). Bierna pozytywna jest używana, gdy podmiot zyskuje coś miłego. Wa zaznacza temat zdania — 'jeśli o mnie chodzi'."
+      },
+      {
+        "id": "pj_psv2",
+        "question": "雨に_____ (dostałem deszczu — bierna uciążliwa).",
+        "translation": "(Zmokłem od deszczu)",
+        "options": [
+          "降られた",
+          "降った",
+          "降らせた",
+          "降っていた"
+        ],
+        "correct": "降られた",
+        "explanation": "Ame ni furareta (雨に降られた) = deszcz mi spadł / zmokłem (byłem dotknięty deszczem). To bierna uciążliwa (meiwaku no ukemi) — unikalna dla japońskiego! Furu (padać) → furareru. Nie ma polskiego odpowiednika — najliżej: 'deszcz mi spadł'. Wyraża, że padał i to mnie dotknęło negatywnie (zmokłem, zrujnowało plan). To jedna z najtrudniejszych koncepcji dla Polaków."
+      },
+      {
+        "id": "pj_psv3",
+        "question": "この本は多くの人に_____ (ta książka jest czytana przez wielu ludzi).",
+        "translation": "(Ta książka jest czytana przez wielu)",
+        "options": [
+          "読まれている",
+          "読んでいる",
+          "読ませている",
+          "読んだ"
+        ],
+        "correct": "読まれている",
+        "explanation": "Kono hon wa ōku no hito ni yomarete iru = ta książka jest czytana przez wielu ludzi. Yomu (czytać) → yomareru (godan: -u → -areru) + -te iru (stan trwający). Bierna + te iru = stan bierny trwający (jak angielskie 'is being read'). To zwykła bierna opisowa, podobna do polskiej. Ōku no hito ni = przez wielu ludzi. Ni = sprawca."
+      },
+      {
+        "id": "pj_psv4",
+        "question": "電車で足を_____ (ktoś nadepnął mi na nogę w pociągu).",
+        "translation": "(Nadepnięto mi na nogę w pociągu)",
+        "options": [
+          "踏まれた",
+          "踏んだ",
+          "踏ませた",
+          "踏んでいた"
+        ],
+        "correct": "踏まれた",
+        "explanation": "Densha de ashi wo fumareta (電車で足を踏まれた) = nadepnięto mi na nogę w pociągu. Fumu (deptać) → fumareru (godan: -u → -areru). Kolejna bierna uciążliwa — wyraża nieprzyjemne doświadczenie. Sprawca jest pominięty (ktoś nieokreślony). De = w/na (środek transportu). Ashi wo = moją nogę (wo = dop. bliższe). W polskim: 'nadepnięto mi' — bezosobowo."
+      },
+      {
+        "id": "pj_psv5",
+        "question": "弟にケーキを_____ (brat zjadł mi ciasto — jestem poszkodowany).",
+        "translation": "(Brat zjadł mi ciasto)",
+        "options": [
+          "食べられた",
+          "食べた",
+          "食べさせた",
+          "食べていた"
+        ],
+        "correct": "食べられた",
+        "explanation": "Otōto ni kēki wo taberareta (弟にケーキを食べられた) = brat zjadł mi ciasto (i jestem przez to poszkodowany). Taberu → taberareru (ichidan: bierna). To klasyczny przykład biernej uciążliwej: otōto (brat — sprawca) + ni, kēki wo (obiekt), taberareta. Mówimy o MOIM niezadowoleniu, że brat to zrobił. Aktywna wersja: otōto ga kēki wo tabeta (neutralna informacja)."
+      },
+      {
+        "id": "pj_psv6",
+        "question": "この寺は500年前に_____ (ta świątynia została zbudowana 500 lat temu).",
+        "translation": "(Ta świątynia została zbudowana 500 lat temu)",
+        "options": [
+          "建てられた",
+          "建てた",
+          "建てさせた",
+          "建てていた"
+        ],
+        "correct": "建てられた",
+        "explanation": "Kono tera wa 500-nen mae ni taterareta (この寺は500年前に建てられた) = ta świątynia została zbudowana 500 lat temu. Tateru (budować) → taterareru (ichidan: bierna). Tu sprawca jest pominięty — to bierna opisowa (nie uciążliwa). Mae ni = temu (doslj. 'przed'). Tera (寺) = świątynia buddyjska (vs. jinja 神社 = świątynia shinto). Wa zaznacza temat."
+      },
+      {
+        "id": "pj_psv7",
+        "question": "彼女に泣か_____ (ona płakała i jestem przez to dotknięty).",
+        "translation": "(Ona płakała i jestem przez to dotknięty)",
+        "options": [
+          "れた",
+          "いた",
+          "せた",
+          "なかった"
+        ],
+        "correct": "れた",
+        "explanation": "Kanojo ni nakareta (彼女に泣かれた) = ona płakała i mnie to dotknęło. Naku (płakać) → nakareru (godan bierna). To bierna uciążliwa od czasownika NIEPRZECHODNIEGO! W polskim nie da się powiedzieć 'zostałem płakany'. Japoński pozwala: 'ktoś płakał i to mnie dotknęło emocjonalnie'. Ni = sprawca. To zaawansowany wzorzec unikalny dla japońskiego."
+      },
+      {
+        "id": "pj_psv8",
+        "question": "日本語は世界中で_____ (japoński jest używany na całym świecie).",
+        "translation": "(Japoński jest używany na całym świecie)",
+        "options": [
+          "使われている",
+          "使っている",
+          "使わせている",
+          "使う"
+        ],
+        "correct": "使われている",
+        "explanation": "Nihongo wa sekaijū de tsukawarete iru = japoński jest używany na całym świecie. Tsukau (używać) → tsukawareru (godan: -u → -areru) + te iru (stan). Sekaijū de = na całym świecie. To formalna bierna opisowa, częsta w tekstach informacyjnych i mediach. Dokładny odpowiednik polskiej biernej: 'jest używany'. Bierna + te iru = stan ciągły."
+      },
+      {
+        "id": "pj_psv9",
+        "question": "隣の人にタバコを_____ (sąsiad palił i mi to przeszkadzało).",
+        "translation": "(Sąsiad palił i mi to przeszkadzało)",
+        "options": [
+          "吸われた",
+          "吸った",
+          "吸わせた",
+          "吸んだ"
+        ],
+        "correct": "吸われた",
+        "explanation": "Tonari no hito ni tabako wo suwareta (隣の人にタバコを吸われた) = sąsiad palił i mi to przeszkadzało. Suu (palić/wdychać) → suwareru (godan bierna). Bierna uciążliwa: palenie sąsiada negatywnie mnie dotknęło. Tonari no hito = osoba obok/sąsiad. W polskim: 'sąsiad palił' — brak biernej, ale czujemy dyskrecję."
+      },
+      {
+        "id": "pj_psv10",
+        "question": "先生に名前を_____ (nauczyciel wywołał moje imię).",
+        "translation": "(Nauczyciel wywołał moje imię)",
+        "options": [
+          "呼ばれた",
+          "呼んだ",
+          "呼ばせた",
+          "呼んでいた"
+        ],
+        "correct": "呼ばれた",
+        "explanation": "Sensei ni namae wo yobareta (先生に名前を呼ばれた) = nauczyciel wywołał moje imię. Yobu (wołać) → yobareru (godan: -u → -areru). Tu bierna jest neutralna/lekko negatywna (nie lubimy być wywoływani). Sensei ni = przez nauczyciela. Namae (名前) = imię. Wo = dopełnienie. Bierna często implikuje, że podmiot nie miał kontroli."
+      },
+      {
+        "id": "pj_psv11",
+        "question": "子供に花瓶を_____ (dziecko rozbiło mi wazon).",
+        "translation": "(Dziecko rozbiło mi wazon)",
+        "options": [
+          "割られた",
+          "割った",
+          "割らせた",
+          "割れた"
+        ],
+        "correct": "割られた",
+        "explanation": "Kodomo ni kabin wo warareta (子供に花瓶を割られた) = dziecko rozbiło mi wazon (bierna uciążliwa). Waru (tłuc) → warareru (godan bierna). Podmiot (ja) jest poszkodowany rozbitym wazonem. Kodomo ni = przez dziecko. Kabin (花瓶) = wazon. Uwaga: wareru (pięć-) = pęknąć (nieprzechodni), waru = tłuc (przechodni). Para przechodni/nieprzechodni."
+      },
+      {
+        "id": "pj_psv12",
+        "question": "その映画は黒澤によって_____ (ten film został wyereżyserowany przez Kurosawę).",
+        "translation": "(Ten film wyereżyserował Kurosawa)",
+        "options": [
+          "作られた",
+          "作った",
+          "作らせた",
+          "作りました"
+        ],
+        "correct": "作られた",
+        "explanation": "Sono eiga wa Kurosawa ni yotte tsukurareta (その映画は黒澤によって作られた) = ten film został stworzony przez Kurosawę. Tsukuru (tworzyć) → tsukurareru. Ni yotte = 'przez' (formalny sprawca, używany z konkretną osobą). Ni yotte jest bardziej formalne niż samo ni — używane w tekstach akademickich i opisach historycznych. Eiga (映画) = film."
+      },
+      {
+        "id": "pj_psv13",
+        "question": "電車の中で財布を_____ (ukradli mi portfel w pociągu).",
+        "translation": "(Ukradli mi portfel w pociągu)",
+        "options": [
+          "盗まれた",
+          "盗んだ",
+          "盗ませた",
+          "盗んでいた"
+        ],
+        "correct": "盗まれた",
+        "explanation": "Densha no naka de saifu wo nusumareta = ukradli mi portfel w pociągu. Nusumu (kraść) → nusumareru (godan bierna). Klasyczna bierna uciążliwa — jestem ofiarą kradzieży. Sprawca jest nieznany (pominięty). Saifu (財布) = portfel. Densha no naka de = w środku pociągu. No naka de = wewnątrz. Bardzo przydatne wyrażenie na podróż do Japonii."
+      },
+      {
+        "id": "pj_psv14",
+        "question": "先輩に助け_____ (senpai mi pomógł — bierna pozytywna).",
+        "translation": "(Senpai mi pomógł)",
+        "options": [
+          "られた",
+          "た",
+          "させた",
+          "ていた"
+        ],
+        "correct": "られた",
+        "explanation": "Senpai ni tasukerareta (先輩に助けられた) = senpai mi pomógł (zostałem uratowany). Tasukeru (pomagać) → tasukerareru (ichidan bierna). Bierna pozytywna — dobre doświadczenie! Senpai (先輩) = starszy kolega (szkoła/praca). To ważna relacja w japońskiej hierarchii. Ni = sprawca. Bierna pozytywna jest rzadsza niż uciążliwa, ale występuje z czasownikami typu tasukeru, homeru (chwalić)."
+      },
+      {
+        "id": "pj_psv15",
+        "question": "みんなに_____ (być lubianym przez wszystkich).",
+        "translation": "(Być lubianym przez wszystkich)",
+        "options": [
+          "愛されている",
+          "愛している",
+          "愛させている",
+          "愛した"
+        ],
+        "correct": "愛されている",
+        "explanation": "Minna ni aisarete iru (みんなに愛されている) = być kochanym/lubianym przez wszystkich. Aisuru (kochać) → aisareru (bierna) + te iru (stan ciągły). Minna (みんな) = wszyscy, ni = sprawca. To piękne wyrażenie opisujące popularność lub sympatyczność osoby. Bierna + te iru = trwały stan. Aisuru to literacka forma (suru-czasownik), codzienna: suki da (lubić)."
+      }
+    ]
+  },
+  {
+    "key": "causative_form",
+    "name": "Forma sprawcza",
+    "description": "Forma sprawcza (使役形 shieki-kei) wyraża 'zmuszanie' lub 'pozwalanie' komuś na wykonanie czynności. To jak polskie 'każę mu iść' lub 'pozwolę mu iść'. Tworzy się: godan -u→-aseru, ichidan -ru→-saseru. Kontekst decyduje, czy to przymus czy pozwolenie.",
+    "iconName": "arrow.triangle.branch",
+    "color": "#f59e0b",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pj_cau1",
+        "question": "母は子供に野菜を_____ (matka każe dziecku jeść warzywa).",
+        "translation": "(Matka każe dziecku jeść warzywa)",
+        "options": [
+          "食べさせる",
+          "食べられる",
+          "食べる",
+          "食べたい"
+        ],
+        "correct": "食べさせる",
+        "explanation": "Haha wa kodomo ni yasai wo tabesaseru (母は子供に野菜を食べさせる) = matka każe dziecku jeść warzywa. Taberu → tabesaseru (ichidan: -ru → -saseru). Ni = osoba zmuszana/otrzymująca pozwolenie. Wo = obiekt (warzywa). Kontekst: matka i dziecko — to raczej 'każe' niż 'pozwala'. Sprawcza pokazuje relację władzy. Haha (母) = moja matka (skromna forma)."
+      },
+      {
+        "id": "pj_cau2",
+        "question": "先生は生徒を_____ (nauczyciel każe uczniom biegać).",
+        "translation": "(Nauczyciel każe uczniom biegać)",
+        "options": [
+          "走らせる",
+          "走られる",
+          "走る",
+          "走った"
+        ],
+        "correct": "走らせる",
+        "explanation": "Sensei wa seito wo hashiraseru (先生は生徒を走らせる) = nauczyciel każe uczniom biegać. Hashiru → hashiraseru (godan: -u → -aseru). Uwaga na partykuły! Z czasownikami nieprzechodnimi: osoba sprawcza + wo (nie ni!): seito WO hashiraseru. Z przechodnimi: osoba + ni, obiekt + wo: kodomo NI yasai WO tabesaseru. To ważna reguła!"
+      },
+      {
+        "id": "pj_cau3",
+        "question": "部下に報告書を_____ (każę podwładnemu napisać raport).",
+        "translation": "(Każę podwładnemu napisać raport)",
+        "options": [
+          "書かせる",
+          "書かれる",
+          "書く",
+          "書いた"
+        ],
+        "correct": "書かせる",
+        "explanation": "Buka ni hōkokusho wo kakaseru (部下に報告書を書かせる) = każę podwładnemu napisać raport. Kaku (pisać) → kakaseru (godan sprawcza). Buka (部下) = podwładny, ni = odbiorca polecenia, hōkokusho (報告書) = raport. W środowisku biznesowym sprawcza wyraża wyraźną hierarchię: szef → podwładny. To naturalne i nie jest niegrzeczne w kontekstie pracy."
+      },
+      {
+        "id": "pj_cau4",
+        "question": "子供に好きなおもちゃを_____ (pozwalam dziecku wybrać ulubioną zabawkę).",
+        "translation": "(Pozwalam dziecku wybrać zabawkę)",
+        "options": [
+          "選ばせる",
+          "選ばれる",
+          "選ぶ",
+          "選んだ"
+        ],
+        "correct": "選ばせる",
+        "explanation": "Kodomo ni suki na omocha wo erabaseru = pozwalam dziecku wybrać ulubioną zabawkę. Erabu (wybierać) → erabaseru (godan sprawcza). Tu kontekst = pozwolenie (nie przymus). Suki na (好きな) = ulubiony (na-przymiotnik). Omocha (おもちゃ) = zabawka. Ta sama forma sprawcza może znaczyć 'każę' lub 'pozwalam' — decyduje kontekst i relacja. Pozwolenie jest cieplejsze."
+      },
+      {
+        "id": "pj_cau5",
+        "question": "お客さまを待た_____ (zmusiłem klienta do czekania — przepraszam).",
+        "translation": "(Zmusiłem klienta do czekania)",
+        "options": [
+          "せてしまいました",
+          "せました",
+          "れました",
+          "せていました"
+        ],
+        "correct": "せてしまいました",
+        "explanation": "Okyaku-sama wo matasete shimaimashita = (niefortunnie) zmusiłem klienta do czekania. Matsu → mataseru (sprawcza) + -te shimau (wyraża żal/niepożądany rezultat). Shimaimashita dodaje 'niestety', 'przepraszam'. To typowe wyrażenie biznesowe: omataseshimashita (お待たせしました) = przepraszam za czekanie. Keigo + sprawcza + shimau = pełne wyrażenie uprzejmości."
+      },
+      {
+        "id": "pj_cau6",
+        "question": "私に行か_____ (pozwól mi iść).",
+        "translation": "(Pozwól mi iść)",
+        "options": [
+          "せてください",
+          "れてください",
+          "いてください",
+          "ってください"
+        ],
+        "correct": "せてください",
+        "explanation": "Watashi ni ikasete kudasai (私に行かせてください) = proszę, pozwól mi iść. Iku → ikaseru (sprawcza) → ikasete (te-form) + kudasai. Sprawcza + te kudasai = prośba o pozwolenie. To bardzo ważny wzorzec! Watashi ni = mnie (odbiorca pozwolenia). Inne przykłady: yarasete kudasai (pozwól mi zrobić), tsukawasete kudasai (pozwól mi użyć). W biznesie często: sasete itadakimasu (forma keigo)."
+      },
+      {
+        "id": "pj_cau7",
+        "question": "課長は新人にプレゼンを_____ (kierownik każe nowemu pracownikowi prezentować).",
+        "translation": "(Kierownik każe nowemu prezentować)",
+        "options": [
+          "させる",
+          "される",
+          "する",
+          "した"
+        ],
+        "correct": "させる",
+        "explanation": "Kachō wa shinjin ni purezen wo saseru = kierownik każe nowemu pracownikowi prezentować. Suru → saseru (nieregularna sprawcza). Kachō (課長) = kierownik sekcji, shinjin (新人) = nowa osoba/nowicjusz. Purezen = prezentacja (skrót z angielskiego 'presentation'). W japońskich firmach dawanie prac nowym to szkolenie — sprawcza odzwierciedla kulturę hierarchiczną."
+      },
+      {
+        "id": "pj_cau8",
+        "question": "父は私に車を_____ (ojciec pozwolił mi prowadzić samochód).",
+        "translation": "(Ojciec pozwolił mi prowadzić)",
+        "options": [
+          "運転させた",
+          "運転した",
+          "運転された",
+          "運転していた"
+        ],
+        "correct": "運転させた",
+        "explanation": "Chichi wa watashi ni kuruma wo unten saseta (父は私に車を運転させた) = ojciec pozwolił mi prowadzić samochód. Unten suru → unten saseru → unten saseta (przeszła). Chichi (父) = mój ojciec (skromna forma). Kontekst: ojciec pozwala następcom — to pozwolenie, nie przymus. Sprawcza przeszła: -saseru → -saseta. Unten (運転) = prowadzenie (pojazdu)."
+      },
+      {
+        "id": "pj_cau9",
+        "question": "子供を外で_____ (pozwalam dzieciom bawić się na zewnątrz).",
+        "translation": "(Pozwalam dzieciom bawić się na zewnątrz)",
+        "options": [
+          "遊ばせる",
+          "遊ばれる",
+          "遊ぶ",
+          "遊んだ"
+        ],
+        "correct": "遊ばせる",
+        "explanation": "Kodomo wo soto de asobaseru = pozwalam dzieciom bawić się na zewnątrz. Asobu (bawić się) → asobaseru (godan sprawcza). Wo = osoba sprawczana (z nieprzechodnim). Soto de (外で) = na zewnątrz (de = miejsce akcji). To pozwolenie (kontekst rodzicielski). Japońscy rodzice często używają sprawczej: tabesaseru, neraseru (układać spać), asobaseru. To część codziennego języka rodzinnego."
+      },
+      {
+        "id": "pj_cau10",
+        "question": "すみませんが、先に_____ (przepraszam, ale pozwolicie, że pójdę pierwszy).",
+        "translation": "(Przepraszam, pójdę pierwszy)",
+        "options": [
+          "帰らせていただきます",
+          "帰ります",
+          "帰られます",
+          "帰ってください"
+        ],
+        "correct": "帰らせていただきます",
+        "explanation": "Sumimasen ga, saki ni kaerasete itadakimasu = przepraszam, pozwolicie że pójdę pierwszy. To najważniejszy biznesowy wzorzec sprawczej: -sasete itadakimasu = 'pozwolicie, że zrobię' (super uprzejmie). Kaeru → kaeraseru → kaerasete itadakimasu. Itadaku to keigo od morau (otrzymywać). Saki ni (先に) = najpierw/wcześniej. To codzienne wyrażenie biurowe w Japonii."
+      },
+      {
+        "id": "pj_cau11",
+        "question": "医者は患者に薬を_____ (lekarz każe pacjentowi brać leki).",
+        "translation": "(Lekarz każe pacjentowi brać lek)",
+        "options": [
+          "飲ませる",
+          "飲まれる",
+          "飲む",
+          "飲んだ"
+        ],
+        "correct": "飲ませる",
+        "explanation": "Isha wa kanja ni kusuri wo nomaseru = lekarz każe pacjentowi brać lek. Nomu (pić/brać lek) → nomaseru (godan sprawcza). Isha (医者) = lekarz, kanja (患者) = pacjent, kusuri (薬) = lek. Ni = osoba sprawczana (przechodni + ni + obiekt + wo). Sprawcza lekarz→pacjent jest naturalny — sprawcza wyraża autorytet medyczny. W aptece: kono kusuri wo nonde kudasai (proszę wziąć ten lek)."
+      },
+      {
+        "id": "pj_cau12",
+        "question": "彼を会議に_____ (zaprosiłem/wpuciłem go na spotkanie).",
+        "translation": "(Wpuciłem go na spotkanie)",
+        "options": [
+          "出席させた",
+          "出席した",
+          "出席された",
+          "出席していた"
+        ],
+        "correct": "出席させた",
+        "explanation": "Kare wo kaigi ni shusseki saseta = zaprosiłem go na spotkanie. Shusseki suru (był obecny) → shusseki saseru (sprawcza suru). Kare (彼) = on. Kaigi (会議) = spotkanie/zebranie. Wo = osoba sprawczana. Tu kontekst: pozwolenie/zaproszenie. Shusseki (出席) = obecność (formalny termin). Alternatywa: kaigi ni desaseta (mniej formalnie, od deru → desaseru)."
+      },
+      {
+        "id": "pj_cau13",
+        "question": "笑わ_____ (rozbawił mnie / rozmśmieszył).",
+        "translation": "(Rozmśmieszył mnie)",
+        "options": [
+          "せた",
+          "れた",
+          "った",
+          "いた"
+        ],
+        "correct": "せた",
+        "explanation": "Warawaseta (笑わせた) = roześmiał mnie / rozbawił mnie. Warau (śmiać się) → warawaseru (godan sprawcza) → warawaseta (przeszła). Sprawcza od warau = 'sprawić, że ktoś się śmieje'. Podobnie: nakaseru (sprawić że ktoś płacze), okoraseru (rozłoscić). Te emocjonalne sprawcze są bardzo ekspresyjne i naturalne w codziennej rozmowie."
+      },
+      {
+        "id": "pj_cau14",
+        "question": "自分の意見を_____ (pozwól mi wyrazić moją opinię).",
+        "translation": "(Pozwól mi wyrazić opinię)",
+        "options": [
+          "言わせてください",
+          "言ってください",
+          "言われてください",
+          "言いてください"
+        ],
+        "correct": "言わせてください",
+        "explanation": "Jibun no iken wo iwasete kudasai = pozwól mi wyrazić moją opinię. Iu (mówić) → iwaseru (sprawcza godan) → iwasete (te-form) + kudasai. Sprawcza + te kudasai = prośba o pozwolenie na działanie. Jibun no (自分の) = swój własny, iken (意見) = opinia. Można dodajć mo (też): iken mo iwasete kudasai = pozwól mi TEŻ coś powiedzieć. Bardzo użyteczne w dyskusjach."
+      },
+      {
+        "id": "pj_cau15",
+        "question": "そのニュースはみんなを_____ (ta wiadomość zadziwiła wszystkich).",
+        "translation": "(Ta wiadomość zadziwiła wszystkich)",
+        "options": [
+          "驚かせた",
+          "驚いた",
+          "驚かれた",
+          "驚かした"
+        ],
+        "correct": "驚かせた",
+        "explanation": "Sono nyūsu wa minna wo odorokaseta = ta wiadomość zadziwiła wszystkich. Odoroku (dziwić się) → odorokaseru (sprawcza godan) → odorokaseta. Sprawcza emocjonalna wyraża powodowanie uczuć: odorokaseru (zaskoczyć), kanashimaseru (zasmuclć), yorokobaseru (ucieszyć). Nyūsu (ニュース) = wiadomości (z angielskiego). Minna wo = wszystkich (dopełnienie z nieprzechodnim sprawczym)."
+      }
+    ]
+  },
+  {
+    "key": "conditional_ba",
+    "name": "Tryb warunkowy (ば)",
+    "description": "Japoński ma kilka form warunkowych: -ba (ば), -tara (たら), -to (と), -nara (なら). Każda ma inne niuanse. Forma -ba wyraża ogólne warunki i hipotezy. Tworzy się: godan -u→-eba, ichidan -ru→-reba. Jest formalna i częsta w przysłowiach i ogólnych prawdach.",
+    "iconName": "arrow.triangle.swap",
+    "color": "#14b8a6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_cba1",
+        "question": "安けれ_____ 買います (jeśli będzie tanie, kupię).",
+        "translation": "(Jeśli będzie tanie, kupię)",
+        "options": [
+          "ば",
+          "たら",
+          "と",
+          "なら"
+        ],
+        "correct": "ば",
+        "explanation": "Yasukereba kaimasu (安ければ買います) = jeśli będzie tanie, kupię. I-przymiotnik + -kereba: yasui → yasui → yasukereba. Ba-warunkowy wyraża ogólny warunek. Zasada tworzenia: usuń -i, dodaj -kereba. Takai → takakereba (jeśli drogie), ōkii → ōkikereba (jeśli duże). Pamiętaj: -ba jest neutralne, -tara jest bardziej osobiste/konkretne."
+      },
+      {
+        "id": "pj_cba2",
+        "question": "雨が降れ_____ 試合は中止です (jeśli spadnie deszcz, mecz zostanie odwołany).",
+        "translation": "(Jeśli spadnie deszcz, mecz odwołany)",
+        "options": [
+          "ば",
+          "たら",
+          "て",
+          "ので"
+        ],
+        "correct": "ば",
+        "explanation": "Ame ga fureba shiai wa chūshi desu = jeśli spadnie deszcz, mecz odwołany. Furu (padać) → fureba (godan: -u → -eba). Godan ba-form: zamień ostatnią samogłoskę -u na -eba. Shiai (試合) = mecz/zawody, chūshi (中止) = odwołanie/anulowanie. Ba-forma jest idealna dla ogólnych reguł i warunków. Nie używaj jej dla prośb i poleceń (tam lepiej -tara)."
+      },
+      {
+        "id": "pj_cba3",
+        "question": "春になれ_____ 花が咲きます (jeśli nadejdzie wiosna, kwiaty zakwitną).",
+        "translation": "(Kiedy nadejdzie wiosna, kwiaty zakwitną)",
+        "options": [
+          "ば",
+          "と",
+          "たら",
+          "ても"
+        ],
+        "correct": "ば",
+        "explanation": "Haru ni nareba hana ga sakimasu = jeśli/kiedy nadejdzie wiosna, kwiaty zakwitną. Naru (stać się) → nareba (godan ba-form). To ogólna prawda przyrodnicza — idealne zastosowanie -ba. Haru (春) = wiosna, hana (花) = kwiat/kwiaty, saku (kwitnąć) → sakimasu. -Ba jest naturalna dla prawdł natury i regularnych zjawisk. Też można: -to (natomiast tara brzmiałoby zbyt osobiście tu)."
+      },
+      {
+        "id": "pj_cba4",
+        "question": "一生懸命勉強すれ_____ 合格できます (jeśli będziesz pilnie się uczyć, zdasz).",
+        "translation": "(Jeśli pilnie się uczysz, zdasz)",
+        "options": [
+          "ば",
+          "たら",
+          "ので",
+          "けれど"
+        ],
+        "correct": "ば",
+        "explanation": "Isshōkenmei benkyō sureba gōkaku dekimasu = jeśli pilnie się uczysz, zdasz egzamin. Suru → sureba (nieregularna ba-form). Isshōkenmei (一生懸命) = z całych sił/pilnie (bardzo częste słowo). Gōkaku (合格) = zdanie egzaminu, dekiru = móc. Ba + dekiru = 'jeśli to zrobisz, będziesz mógł'. To motywacyjne zdanie, idealne dla uczniów. Nauczyciele często używają ba-formy w radach."
+      },
+      {
+        "id": "pj_cba5",
+        "question": "このボタンを押せ_____ ドアが開きます (jeśli naciśniesz ten przycisk, drzwi się otworzą).",
+        "translation": "(Jeśli naciśniesz przycisk, drzwi się otworzą)",
+        "options": [
+          "ば",
+          "と",
+          "たら",
+          "なら"
+        ],
+        "correct": "ば",
+        "explanation": "Kono botan wo oseba doa ga akimasu = jeśli naciśniesz ten przycisk, drzwi się otworzą. Osu (naciskać) → oseba (godan ba). Botan (ボタン) = przycisk (z angielskiego 'button'), doa (ドア) = drzwi (z angielskiego 'door'). Aku = otwierać się (nieprzechodni). Tu -ba opisuje mechaniczny związek przyczynowy. Można też: osuto (z -to, porównywalnie)."
+      },
+      {
+        "id": "pj_cba6",
+        "question": "時間があれ_____ 映画を見ます (jeśli będę miał czas, obejrzę film).",
+        "translation": "(Jeśli będę miał czas, obejrzę film)",
+        "options": [
+          "ば",
+          "たら",
+          "と",
+          "ので"
+        ],
+        "correct": "ば",
+        "explanation": "Jikan ga areba eiga wo mimasu = jeśli będę miał czas, obejrzę film. Aru (być/mieć) → areba (godan ba). Jikan (時間) = czas, eiga (映画) = film. Ba-forma jest tu neutralna i ogólna. Też poprawne: jikan ga attara (bardziej potoczne, konkretna sytuacja). -Ba brzmi trochę bardziej formalnie i hipotetycznie. Aru to godan mimo końcówki -ru (wyjątek!)."
+      },
+      {
+        "id": "pj_cba7",
+        "question": "早く寝れ_____ 明日元気になれます (jeśli pójdziesz spać wcześnie, jutro będziesz pełen energii).",
+        "translation": "(Jeśli położysz się wcześnie, jutro odzyskasz energię)",
+        "options": [
+          "ば",
+          "たら",
+          "ても",
+          "のに"
+        ],
+        "correct": "ば",
+        "explanation": "Hayaku nereba ashita genki ni naremasu = jeśli pójdziesz spać wcześnie, jutro będziesz pełen energii. Neru (spać) → nereba (ichidan: -ru → -reba). Hayaku (早く) = wcześnie (przysłówek od hayai). Ashita (明日) = jutro. Genki ni naru = stać się zdrowym/energicznym. Ba-forma świetnie pasuje do rad zdrowotnych i ogólnych prawdł. To zdanie brzmiałoby naturalnie od lekarza."
+      },
+      {
+        "id": "pj_cba8",
+        "question": "左に曲がれ_____ 駅があります (jeśli skręcisz w lewo, jest stacja).",
+        "translation": "(Jeśli skręcisz w lewo, będzie stacja)",
+        "options": [
+          "ば",
+          "と",
+          "たら",
+          "なら"
+        ],
+        "correct": "ば",
+        "explanation": "Hidari ni magareba eki ga arimasu = jeśli skręcisz w lewo, jest stacja. Magaru (skręcać) → magareba (godan ba). Hidari (左) = lewo, ni = kierunek, eki (駅) = stacja. Też naturalnie: magaruto (z -to — automatyczny rezultat). Ba jest lekko bardziej hipotetyczne. W podawaniu kierunków -to i -ba są wymienne. Migi (右) = prawo. Masugu (まっすぐ) = prosto."
+      },
+      {
+        "id": "pj_cba9",
+        "question": "安くなけれ_____ 買いません (jeśli nie będzie tanie, nie kupię).",
+        "translation": "(Jeśli nie będzie tanie, nie kupię)",
+        "options": [
+          "ば",
+          "たら",
+          "と",
+          "なら"
+        ],
+        "correct": "ば",
+        "explanation": "Yasuku nakereba kaimasen = jeśli nie będzie tanie, nie kupię. Przeczenie ba: yasui → yasuku nai → yasuku nakereba. Nai (przeczenie) + -kereba = 'jeśli nie'. To kluczowa struktura! Inny przykład: takakunakereba (jeśli nie drogie), omoshirokunakereba (jeśli nie ciekawe). Dla czasowników: ikanai → ikanakereba (jeśli nie pójdę). Nakereba = warunek negatywny."
+      },
+      {
+        "id": "pj_cba10",
+        "question": "天気がよけれ_____ ピクニックに行きましょう (jeśli pogoda będzie ładna, pójdźmy na piknik).",
+        "translation": "(Jeśli pogoda ładna, pójdźmy na piknik)",
+        "options": [
+          "ば",
+          "たら",
+          "と",
+          "なら"
+        ],
+        "correct": "ば",
+        "explanation": "Tenki ga yokereba pikunikku ni ikimashou = jeśli pogoda będzie dobra, pójdźmy na piknik. Yoi/ii (dobry) → yokereba (ba-forma od yoi). Ii jest nieformalną formą yoi — w odmianie wraca do yoi: yokereba, yokatta. Tenki (天気) = pogoda, pikunikku (ピクニック) = piknik (z ang.). Mashou = zaproponujmy (‘let's’). Ba + mashou = propozycja warunkowa."
+      },
+      {
+        "id": "pj_cba11",
+        "question": "練習すれ_____ 上手になれます (jeśli będziesz ćwiczyć, staniesz się dobry).",
+        "translation": "(Jeśli będziesz ćwiczyć, staniesz się dobry)",
+        "options": [
+          "ば",
+          "たら",
+          "と",
+          "ので"
+        ],
+        "correct": "ば",
+        "explanation": "Renshu sureba jōzu ni naremasu = jeśli będziesz ćwiczyć, staniesz się dobry. Suru → sureba (nieregularna ba). Renshu (練習) = ćwiczenie/trening. Jōzu (上手) = biegły/dobry (na-przymiotnik). Ni nareru = móc stać się. To motywująca ogólna prawda — ba- jest idealne. Przysłowie japońskie: Narau yori narero (習うより慣れろ) = praktyka ponad teorię (świczenie czyni mistrza)."
+      },
+      {
+        "id": "pj_cba12",
+        "question": "分からなけれ_____ 聞いてください (jeśli nie rozumiesz, pytaj).",
+        "translation": "(Jeśli nie rozumiesz, pytaj)",
+        "options": [
+          "ば",
+          "たら",
+          "と",
+          "なら"
+        ],
+        "correct": "ば",
+        "explanation": "Wakaranakereba kiite kudasai = jeśli nie rozumiesz, pytaj. Wakaru (rozumieć) → wakaranai (przeczenie) → wakaranakereba (ba przeczenia). Nai → nakereba. To jedno z najhczęściej używanych zdań w klasie japońskiego! Nauczyciel mówi: wakaranakereba kiite kudasai (pytajcie jeśli nie rozumiecie). Ba + kudasai — uprzejma rada warunkowa. Bardzo użyteczne."
+      },
+      {
+        "id": "pj_cba13",
+        "question": "お金があれ_____ 旅行したいです (gdybym miał pieniądze, chciałbym podróżować).",
+        "translation": "(Gdybym miał pieniądze, chciałbym podróżować)",
+        "options": [
+          "ば",
+          "たら",
+          "と",
+          "なら"
+        ],
+        "correct": "ば",
+        "explanation": "Okane ga areba ryokō shitai desu = gdybym miał pieniądze, chciałbym podróżować. Aru → areba. Okane (お金) = pieniądze, ryokō (旅行) = podróż, shitai = chcę zrobić. Ba może wyrażać hipotezy (jak polski tryb przypuszczający). Tu warunek jest hipotetyczny: 'gdybym miał'. W polskim: 'gdybym...' = ba w japońskim. Ale: ba nie wyraża niemożliwych hipotetycz — do tego lepiej -tara + noni."
+      },
+      {
+        "id": "pj_cba14",
+        "question": "彼が来れ_____ パーティーが始まります (jeśli on przyjdzie, impreza się zacznie).",
+        "translation": "(Jeśli on przyjdzie, impreza się zacznie)",
+        "options": [
+          "ば",
+          "たら",
+          "と",
+          "なら"
+        ],
+        "correct": "ば",
+        "explanation": "Kare ga kureba pātī ga hajimarimasu = jeśli on przyjdzie, impreza się zacznie. Kuru → kureba (nieregularna ba). Kare (彼) = on, pātī (パーティー) = impreza (z ang.), hajimaru (zaczynać się) = nieprzechodni. Ba-forma sugeruje, że czekamy na spełnienie warunku. To neutralne oczekiwanie. Gdyby użyć -tara: kitara = gdy przyjdzie (bardziej konkretne/pewne)."
+      },
+      {
+        "id": "pj_cba15",
+        "question": "みんなが賛成すれ_____ 決定します (jeśli wszyscy się zgadzają, podejmiemy decyzję).",
+        "translation": "(Jeśli wszyscy się zgadzają, zdecydujemy)",
+        "options": [
+          "ば",
+          "たら",
+          "と",
+          "なら"
+        ],
+        "correct": "ば",
+        "explanation": "Minna ga sansei sureba kettei shimasu = jeśli wszyscy się zgadzają, podejmiemy decyzję. Sansei suru (zgadzać się) → sansei sureba. Minna (みんな) = wszyscy, kettei suru (決定する) = decydować. Ba-forma jest naturalna dla warunków proceduralnych i formalnych decyzji. To typowe zdanie z zebrań: warunkowe podejście do decyzji. Sansei (賛成) = zgoda, hantai (反対) = sprzeciw."
+      }
+    ]
   }
 ]

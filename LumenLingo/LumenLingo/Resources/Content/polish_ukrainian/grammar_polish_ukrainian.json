@@ -8608,5 +8608,1030 @@
         "explanation": "Przyimek 'о' (o) + miejscownik = punkt w czasie: 'о п'ятій годині'. W polskim: 'o piątej godzinie' — identycznie! 'О' + miejscownik = dokładny czas. 'П'ятій' — miejscownik od 'п'ята' (piąta). Polskie: 'piątej'. 'Годині' — miejscownik od 'година' (godzina). Polskie: 'godzinie'. Porównaj: о п'ят-ій годин-і / o piąt-ej godzin-ie — niemal identyczne formy! Przyimek 'о' z godziną to standard: 'о третій', 'о восьмій', 'о дванадцятій'."
       }
     ]
+  },
+  {
+    "key": "soft_hard_consonants",
+    "name": "М'які та тверді приголосні",
+    "description": "Spółgłoski miękkie i twarde",
+    "iconName": "waveform",
+    "color": "#f472b6",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pu_shc1",
+        "question": "Літера 'ь' у слові 'день' робить 'н' _____.",
+        "translation": "(Litera 'ь' w słowie 'dzień' sprawia, że 'н' jest...)",
+        "options": [
+          "м'яким",
+          "твердим",
+          "довгим",
+          "дзвінким"
+        ],
+        "correct": "м'яким",
+        "explanation": "Miękki znak 'ь' zmiękicza poprzednią spółgłoskę: 'день' — 'н' jest miękkie. W polskim: 'dzień' — 'ń' jest miękkie (oznaczone kreską). Ukraiński 'ь' = polski znak diakrytyczny lub 'i' przed spółgłoską. Porównaj: день/dzień, тінь/cień, сіль/sól. Ukraiński miękki znak jest niezbędny — bez niego zmienia się znaczenie: 'кон' (koń bez miękkiego) vs 'кінь' (koń z miękkim). System miękkości jest fundamentalny w obu językach."
+      },
+      {
+        "id": "pu_shc2",
+        "question": "У слові 'ніс' літера 'н' є _____.",
+        "translation": "(W słowie 'ніс' litera 'н' jest...)",
+        "options": [
+          "м'яким",
+          "твердим",
+          "подвійним",
+          "дзвінким"
+        ],
+        "correct": "м'яким",
+        "explanation": "Przed 'і' spółgłoska jest miękka: 'ніс' — 'н' miękkie. W ukraińskim samogłoska 'і' zmiękicza poprzednią spółgłoskę automatycznie. W polskim: 'nos' — 'n' twarde. Tu widzimy historyczną zmianę: ukraiński 'і' w zamkniętej sylabie odpowiada polskiemu 'o'. 'Ніс/nos', 'стіл/stół', 'дім/dom' — ukraiński 'і' = polski 'o/ó'. Ta alternacja jest kluczowa: każde 'і' w zamkniętej sylabie to sygnał historycznej samogłoski 'o'. Mnóstwo par: кіт/kot, він/on."
+      },
+      {
+        "id": "pu_shc3",
+        "question": "Апостроф у слові 'м'яч' означає, що 'м' залишається _____.",
+        "translation": "(Apostrof w słowie 'm'jacz' oznacza, że 'm' pozostaje...)",
+        "options": [
+          "твердим",
+          "м'яким",
+          "подвійним",
+          "глухим"
+        ],
+        "correct": "твердим",
+        "explanation": "Apostrof (') w ukraińskim oznacza, że spółgłoska przed nim jest TWARDA, a następna 'я/ю/є/ї' wymawiana z [j]: 'м'яч' = [mjacz]. Bez apostrofu 'мяч' byłoby z miękkim 'м'. W polskim: 'miękki' — 'mi' zmiękicza. Apostrof jest specyficznie ukraiński — polski nie ma tego znaku w tej funkcji. Porównaj: 'п'ять' (pięć) — 'п' twarde + [jat']. Polskie 'pięć' — 'p' jest miękkie. Ta różnica w mechanizmie miękkości jest ważna do zrozumienia."
+      },
+      {
+        "id": "pu_shc4",
+        "question": "У слові 'люди' літера 'л' є _____.",
+        "translation": "(W słowie 'люди' litera 'л' jest...)",
+        "options": [
+          "м'яким",
+          "твердим",
+          "подвійним",
+          "глухим"
+        ],
+        "correct": "м'яким",
+        "explanation": "Samogłoska 'ю' po spółgłosce zmiękicza ją: 'люди' — 'л' miękkie. Samogłoski miękkie ('і', 'ї', 'є', 'ю', 'я') zmiękiczają poprzednią spółgłoskę. Twarde samogłoski: 'а', 'о', 'у', 'и', 'е'. W polskim: 'ludzie' — 'l' miękkie (przed 'u'). Porównaj pary: 'лук' (cebula — 'л' twarde) vs 'люк' (właz — 'л' miękkie). Różnica 'у/ю' zmienia twardość spółgłoski. W polskim podobna opozycja: 'lu-' twarde vs 'lju-' miękkie."
+      },
+      {
+        "id": "pu_shc5",
+        "question": "У слові 'книга' літера 'г' є _____.",
+        "translation": "(W słowie 'книга' litera 'г' jest...)",
+        "options": [
+          "твердим",
+          "м'яким",
+          "подвійним",
+          "глухим"
+        ],
+        "correct": "твердим",
+        "explanation": "Przed 'а' spółgłoska jest twarda: 'книга' — 'г' twarde. 'А' to samogłoska twarda — nie zmiękicza. W polskim: 'księga' — 'g' przed 'a' też twarde. UWAGA: ukraiński 'г' to dźwięk szczelinowy [ɦ], nie zwartołączny [g] jak w polskim! To fundamentalna różnica fonetyczna. Ukraiński ma osobną literę 'ґ' dla dźwięku [g]. 'Книга' (księga/książka). Porównaj: 'ганок' [ɦanok] vs 'ґанок' [ganok] — różnica w sposobie wymowy 'г/ґ'."
+      },
+      {
+        "id": "pu_shc6",
+        "question": "Подвійний 'нн' у слові 'знання' робить звук _____.",
+        "translation": "(Podwójne 'нн' w słowie 'знання' sprawia, że dźwięk jest...)",
+        "options": [
+          "довгим",
+          "м'яким",
+          "твердим",
+          "глухим"
+        ],
+        "correct": "довгим",
+        "explanation": "Podwójna spółgłoska 'нн' oznacza dźwięk długi (подовжений): 'знання' [znann'a]. W polskim: 'znanie' — jedna 'n'. Ukraiński ma wiele rzeczowników z podwójnymi spółgłoskami: 'знання' (wiedza), 'питання' (pytanie), 'завдання' (zadanie), 'навчання' (nauka). Wszystkie kończą się na '-ння'. W polskim odpowiedniki: '-nie'/'-anie'. Podwójna spółgłoska w ukraińskim jest wymawiana dłużej — to nie jest graficzna konwencja, lecz rzeczywista wymowa. Ważna cecha fonetyczna!"
+      },
+      {
+        "id": "pu_shc7",
+        "question": "У слові 'сіль' остання приголосна є _____.",
+        "translation": "(W słowie 'sól' ostatnia spółgłoska jest...)",
+        "options": [
+          "м'яким",
+          "твердим",
+          "подвійним",
+          "дзвінким"
+        ],
+        "correct": "м'яким",
+        "explanation": "Miękki znak na końcu: 'сіль' — 'л' miękkie. W polskim: 'sól' — 'l' miękkie (oznaczone brakiem 'ł'). Porównaj: сіль/sól — oba ze spółgłoską miękką. Więcej par: 'день/dzień', 'кінь/koń', 'вогонь/ogień'. Wszystkie z miękkim znakiem w ukraińskim i odpowiadającą miękkością w polskim. Miękki znak 'ь' na końcu wyrazu jest jednym z najczęstszych — pojawia się w końcówkach rzeczowników, czasowników ('бути' → 'будь'), przymiotników."
+      },
+      {
+        "id": "pu_shc8",
+        "question": "Літера 'щ' в українській мові передає звук _____.",
+        "translation": "(Litera 'щ' w języku ukraińskim oddaje dźwięk...)",
+        "options": [
+          "шч",
+          "сч",
+          "шц",
+          "сц"
+        ],
+        "correct": "шч",
+        "explanation": "Ukraiński 'щ' = [шч], czyli połączenie [sz+cz]. W polskim: 'szcz' — identyczny dźwięk! Porównaj: 'щастя' (szczęście), 'ще' (jeszcze), 'щоденник' (codziennik/dziennik). Polskie: 'szczęście', 'jeszcze'. Ukraiński zapisuje to jedną literą 'щ', polski czterema: 'szcz'. To uproszczenie graficzne. 'Щ' jest jedną z najtrudniejszych liter do wymowy — ale dla Polaków jest naturalny! Wymawiaj jak polskie 'szcz' w 'szczęście'. To wielka przewaga Polaków uczących się ukraińskiego."
+      },
+      {
+        "id": "pu_shc9",
+        "question": "У слові 'дзвінок' поєднання 'дз' — це _____.",
+        "translation": "(W słowie 'dzwonek' połączenie 'дз' to...)",
+        "options": [
+          "одна afrykata",
+          "дві окремі літери",
+          "подвійна приголосна",
+          "м'який знак"
+        ],
+        "correct": "одна afrykata",
+        "explanation": "Ukraiński 'дз' to jedna afrykata [dz], nie dwie osobne litery. Porównaj z polskim: 'dzwonek' — 'dz' to też jedna afrykata! Ukraiński ma dwie afrykaty z 'д': 'дз' [dz] i 'дж' [dż]. Polskie odpowiedniki: 'dz' i 'dż'. 'Дзвінок' (dzwonek) — polskie 'dzwonek'. Identyczne! 'Дзеркало' (lustro/zwierciadło) — 'дз' + 'е'. 'Джерело' (źródło). Te afrykaty są naturalnie obecne w obu językach, co czyni wymowę ukraińską dostępną dla Polaków."
+      },
+      {
+        "id": "pu_shc10",
+        "question": "Яка різниця між 'и' та 'і' у вимові? 'И' звучить _____.",
+        "translation": "(Jaka różnica w wymowie między 'и' a 'і'? 'И' brzmi...)",
+        "options": [
+          "як polskie 'y'",
+          "як polskie 'i'",
+          "як polskie 'e'",
+          "як polskie 'u'"
+        ],
+        "correct": "як polskie 'y'",
+        "explanation": "Ukraiński 'и' = polskie 'y' (tylne, twarde). Ukraiński 'і' = polskie 'i' (przednie, miękkie). To fundamentalne rozróżnienie! Porównaj: 'ми' (my) i 'мі-сто' (mia-sto). 'Ви' (wy) — polskie 'wy'. 'Вітер' (wiatr) — 'і' miękkie. Reguła: 'и' nie zmiękicza poprzedniej spółgłoski, 'і' — zmiękicza. W polskim: 'y' nie zmiękicza, 'i' — zmiękicza. IDENTYCZNIE! Ta korespondencja и/y oraz і/i jest kluczem do poprawnej wymowy ukraińskiej."
+      },
+      {
+        "id": "pu_shc11",
+        "question": "У слові 'п'ять' апостроф стоїть після _____.",
+        "translation": "(W słowie 'п'ять' apostrof stoi po...)",
+        "options": [
+          "губної приголосної",
+          "шиплячої",
+          "зубної",
+          "гортанної"
+        ],
+        "correct": "губної приголосної",
+        "explanation": "Apostrof stawia się po spółgłoskach wargowych (губних): б, п, в, м, ф — przed 'я, ю, є, ї'. 'П'ять' — po 'п' (wargowa). Więcej: 'б'ю' (biję), 'в'язати' (wiązać), 'м'яso' (mięso). Reguła: wargowe + apostrof + я/ю/є/ї. Bez apostrofu spółgłoska byłaby miękka. W polskim: 'pięć' — 'p' jest miękkie (piękna różnica!). Ukraiński zachowuje twardość wargowej + dodaje [j]. Polski zmiękicza. To fundamentalna różnica fonetyczna między językami."
+      },
+      {
+        "id": "pu_shc12",
+        "question": "Слово 'ніж' закінчується на _____ приголосну.",
+        "translation": "(Słowo 'nóż' kończy się na ... spółgłoskę)",
+        "options": [
+          "тверду",
+          "м'яку",
+          "подвійну",
+          "дзвінку"
+        ],
+        "correct": "тверду",
+        "explanation": "W słowie 'ніж' (nóż) — 'ж' jest twarde (brak miękkiego znaku). W polskim: 'nóż' — 'ż' jest twarde. Identycznie! Porównaj: 'ніж' (nóż) vs 'ніжь' (nie istnieje — 'ж' rzadko bywa miękkie). Szumiące spółgłoski (ш, ж, ч, щ) w ukraińskim są zwykle twarde. W polskim: sz, ż, cz — zawsze twarde. 'Ніж' (nóż) — історична zmiana: ukraiński 'і' w zamkniętej sylabie = polski 'ó'. Ніж/nóż — piękna para ilustrująca tę regułę."
+      },
+      {
+        "id": "pu_shc13",
+        "question": "Яка літера пом'якшує приголосну у слові 'ніч'? _____.",
+        "translation": "(Jaka litera zmiękicza spółgłoskę w słowie 'noc'?)",
+        "options": [
+          "і",
+          "ь",
+          "н",
+          "ч"
+        ],
+        "correct": "і",
+        "explanation": "W 'ніч' (noc) to samogłoska 'і' zmiękicza 'н'. 'Ч' na końcu jest twarde (brak 'ь'). Porównaj: w polskim 'noc' — 'n' jest twarde (przed 'o'). To różnica: ukraiński 'ні-' jest miękki, polski 'no-' jest twardy. Zmiana samogłoski spowodowała zmianę twardości. 'Ніч' — zamknięta sylaba z 'і' = historyczne 'o'. Polskie 'noc' zachowało oryginalne 'o' i twardość. Ta historia fonetyczna wyjaśnia wiele różnic między polskim a ukraińskim."
+      },
+      {
+        "id": "pu_shc14",
+        "question": "У слові 'зілля' подвоєння 'лл' означає _____.",
+        "translation": "(W słowie 'ziele' podwojenie 'лл' oznacza...)",
+        "options": [
+          "довгий звук",
+          "м'якість",
+          "твердість",
+          "наголос"
+        ],
+        "correct": "довгий звук",
+        "explanation": "Podwojenie 'лл' w 'зілля' (ziele) oznacza długi dźwięk [ll']. To nie jest zwykłe podwojenie — to dźwięk wydłużony. W polskim: 'ziele' — jedna 'l'. Ukraiński zachowuje historyczne podwojenie, które polski utracił. Więcej: 'насіння' (nasienie), 'каміння' (kamienie), 'колосся' (kłosy). Podwojenie w ukraińskim jest fonetyczne — naprawdę się wymawia dłużej. Dla Polaków to wymaga ćwiczeń, bo polski nie ma systematycznych podwojeń."
+      },
+      {
+        "id": "pu_shc15",
+        "question": "Приголосна 'ц' у слові 'цікавий' є _____.",
+        "translation": "(Spółgłoska 'ц' w słowie 'ciekawy' jest...)",
+        "options": [
+          "м'яким",
+          "твердим",
+          "подвійним",
+          "дзвінким"
+        ],
+        "correct": "м'яким",
+        "explanation": "W 'цікавий' (ciekawy) — 'ц' jest miękkie (przed 'і'). W polskim: 'ciekawy' — 'c' jest miękkie (przed 'ie'). Identycznie! Porównaj: цікав-ий/ciekaw-y — te same dźwięki. 'Ц' w ukraińskim może być twarde ('царь') i miękkie ('ціна'). W polskim: 'c' twarde ('car') i miękkie ('cień'). Reguła: przed 'і' spółgłoska jest miękka w ukraińskim — identycznie jak w polskim przed 'i'. Ten paralelizm pozwala Polakom naturalnie wymawiać ukraińskie słowa."
+      }
+    ]
+  },
+  {
+    "key": "spelling_rules",
+    "name": "Правила правопису",
+    "description": "Zasady ortografii",
+    "iconName": "textformat.abc",
+    "color": "#84cc16",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pu_sr1",
+        "question": "Після 'ш', 'ч', 'щ', 'ж' пишемо _____, а не 'я'.",
+        "translation": "(Po 'sz', 'cz', 'szcz', 'ż' piszemy..., a nie 'ja')",
+        "options": [
+          "а",
+          "я",
+          "і",
+          "е"
+        ],
+        "correct": "а",
+        "explanation": "Reguła: po szumiących (ш, ч, щ, ж) piszemy 'а', nie 'я'. Przykłady: 'чашка' (filiżanka), 'шапка' (czapka), 'жарт' (żart). W polskim: po sz, cz, ż piszemy 'a' — identycznie! Porównaj: чашк-а/filiżank-a, шапк-а/czapk-a. To reguła ortograficzna, nie fonetyczna — dźwięk jest taki sam, ale zapis jest ustalony. W ukraińskim ta reguła jest ścisła i nie ma wyjątków. Pomaga to w poprawnym pisaniu — wystarczy zapamiętać jedną regułę."
+      },
+      {
+        "id": "pu_sr2",
+        "question": "Після 'ш', 'ч', 'щ', 'ж' пишемо _____, а не 'ю'.",
+        "translation": "(Po 'sz', 'cz', 'szcz', 'ż' piszemy..., a nie 'ju')",
+        "options": [
+          "у",
+          "ю",
+          "о",
+          "і"
+        ],
+        "correct": "у",
+        "explanation": "Reguła: po szumiących (ш, ч, щ, ж) piszemy 'у', nie 'ю'. Przykłady: 'чужий' (cudzy — piszemy 'чу', nie 'чю'), 'шукати' (szukać — 'шу'), 'журнал' (dziennik — 'жу'). W polskim nie ma dokładnego odpowiednika tej reguły, ale logika jest ta sama: szumiące są twarde, więc po nich nie idą miękkie samogłoski. 'Чужий' (cudzy) — polskie 'cudzy'. 'Шукати' (szukać) — polskie 'szukać'. Zapamiętaj: ш, ч, щ, ж + а, у (nie я, ю)."
+      },
+      {
+        "id": "pu_sr3",
+        "question": "Правильний запис: не_____.",
+        "translation": "(Poprawny zapis: nie...)",
+        "options": [
+          "великий",
+          "великій",
+          "валикий",
+          "великай"
+        ],
+        "correct": "великий",
+        "explanation": "Reguła pisowni 'не' z przymiotnikami: 'невеликий' (niewielki) — razem! W ukraińskim 'не' z przymiotnikami pisze się razem, gdy tworzy nowe słowo (antoniм). Osobno: gdy jest wyraźne przeciwstawienie. W polskim: 'niewielki' — razem. Identyczna reguła! Porównaj: 'невеликий/niewielki', 'некрасивий/niebrzydki'. ALE: 'не великий, а малий' (nie wielki, a mały) — osobno przy przeciwstawieniu. Polskie: 'nie wielki, ale mały'. System negacji przymiotnikowej jest identyczny."
+      },
+      {
+        "id": "pu_sr4",
+        "question": "Яка правильна форма? Пів_____ на п'яту.",
+        "translation": "(Jaka prawidłowa forma? Wpół do piątej.)",
+        "options": [
+          "години",
+          "годині",
+          "година",
+          "годину"
+        ],
+        "correct": "години",
+        "explanation": "Po 'пів' (pół) stoi dopełniacz: 'півгодини' (pół godziny). Pisze się RAZEM! 'Година' → 'години' (dopełniacz). W polskim: 'pół godziny' — osobno, też dopełniacz! Reguła: 'пів' + dopełniacz = razem: 'півроку' (pół roku), 'півмісяця' (pół miesiąca), 'півціни' (pół ceny). Polskie: 'pół roku', 'pół miesiąca' — osobno. Różnica graficzna, ale ten sam przypadek gramatyczny. 'На п'яту' — popularna forma wyrażania czasu: 'wpół do piątej'."
+      },
+      {
+        "id": "pu_sr5",
+        "question": "Який варіант правильний? Ми _____їхали з Києва.",
+        "translation": "(Który wariant jest poprawny? Wyjechaliśmy z Kijowa.)",
+        "options": [
+          "ви",
+          "ві",
+          "вы",
+          "ве"
+        ],
+        "correct": "ви",
+        "explanation": "Prefiks 'ви-' (wy-): 'виїхали' (wyjechali). W ukraińskim prefiks jest zawsze 'ви-', nigdy 'вы-' (to rosyjska forma!). W polskim: 'wy-'. Porównaj: ви-їхати/wy-jechać, ви-йти/wy-jść, ви-брати/wy-brać. To ważna ortograficzna reguła — ukraiński nie ma litery 'ы' (to cecha rosyjska). Ukraiński 'и' = polskie 'y', 'і' = polskie 'i'. Polacy często mylą ukraiński z rosyjskim — ta różnica pomaga rozróżnić języki. 'Виїхати' z apostrofem-podwojonym 'ї'."
+      },
+      {
+        "id": "pu_sr6",
+        "question": "Правильний запис: він _____мовляється.",
+        "translation": "(Poprawny zapis: on się wymawia.)",
+        "options": [
+          "ви",
+          "ві",
+          "вы",
+          "ве"
+        ],
+        "correct": "ви",
+        "explanation": "Prefiks 'ви-': 'вимовляється' (wymawia się). W polskim: 'wymawia się'. Prefiks 'ви-' odpowiada polskiemu 'wy-' — identyczne znaczenie i funkcja! 'Мовляти' (mówić) — polskie 'mawiać'. 'Вимовляти' (wymawiać). Reguła ortograficzna: prefiks 'ви-' jest zawsze pisany z 'и', nie 'і'. To stała reguła, bez wyjątków. W rosyjskim: 'вы-' — inna litera. W ukraińskim: zawsze 'ви-'. Prostota tej reguły pomaga uniknąć błędów ortograficznych."
+      },
+      {
+        "id": "pu_sr7",
+        "question": "Після 'р' у корені слова зазвичай пишемо _____, а не 'я'.",
+        "translation": "(Po 'р' w rdzeniu słowa zwykle piszemy..., a nie 'ja')",
+        "options": [
+          "а",
+          "я",
+          "о",
+          "е"
+        ],
+        "correct": "а",
+        "explanation": "Reguła: po 'р' w rdzeniu piszemy 'а', nie 'я'. Przykłady: 'рад' (rad), 'рано' (rano), 'рахувати' (rachować/liczyć). Wyjątki istnieją: 'рядок' (rządek/wiersz), 'ряд' (rząd). W polskim: po 'r' piszemy normalnie 'a' — 'rano', 'rachować'. Ta reguła jest mniej ścisła niż reguła szumiących, ale ważna w praktyce. 'Рахувати' (rachować/liczyć) — polskie 'rachować'. 'Рано' (rano) — identyczne w obu językach!"
+      },
+      {
+        "id": "pu_sr8",
+        "question": "Правильний запис прийменника: _____ мною.",
+        "translation": "(Poprawny zapis przyimka: przede mną.)",
+        "options": [
+          "переді",
+          "перед",
+          "пиреді",
+          "приреді"
+        ],
+        "correct": "переді",
+        "explanation": "Wariant przyimka z samogłoską: 'переді мною' (przede mną). Gdy następny wyraz zaczyna się od trudnej grupy spółgłoskowej, dodajemy samogłoskę: 'перед' → 'переді'. W polskim: 'przed' → 'przede' (mną). Identyczna reguła! Porównaj: переді мною / przede mną. Inne przykłady: 'з' → 'із/зі' (ze), 'в' → 'у' (w/u — wymienne w ukraińskim). Te warianty fonetyczne ułatwiają wymowę. Reguła eufonii (ładnego brzmienia) istnieje w obu językach."
+      },
+      {
+        "id": "pu_sr9",
+        "question": "Яка літера правильна? Укра_____нський.",
+        "translation": "(Jaka litera jest poprawna? Ukraiński.)",
+        "options": [
+          "ї",
+          "і",
+          "и",
+          "е"
+        ],
+        "correct": "ї",
+        "explanation": "Poprawnie: 'український' — z literą 'ї'. 'Ї' = [ji] — samogłoska jotowana. Zawsze wymawiana z 'j' na początku. Występuje: na początku wyrazu ('їхати' — jechać), po samogłosce ('моїх' — moich), po apostrofie ('з'їсти' — zjeść). NIGDY po spółgłosce bez apostrofu. W polskim nie ma odpowiednika 'ї' — polski zapisze to jako 'ji' lub 'i'. 'Їжа' (jedzenie) — polskie 'jadło'. 'Ї' to jedna z unikalnych liter ukraińskiego alfabetu."
+      },
+      {
+        "id": "pu_sr10",
+        "question": "Правильний запис: най_____ший.",
+        "translation": "(Poprawny zapis: najwyższy.)",
+        "options": [
+          "вищ",
+          "більш",
+          "вишч",
+          "виш"
+        ],
+        "correct": "вищ",
+        "explanation": "Stopień najwyższy: 'найвищий' (najwyższy). Prefiks 'най-' + stopień wyższy. 'Вищий' (wyższy) od 'високий' (wysoki). W polskim: 'naj-' + 'wyższy' = 'najwyższy'. Identyczna budowa! Porównaj: най-вищ-ий / naj-wyż-szy. Reguła: 'най-' jest ZAWSZE pisany z '-й', nie '-и'. To stała reguła ortograficzna. 'Високий' → 'вищий' → 'найвищий'. Polskie: 'wysoki' → 'wyższy' → 'najwyższy'. Trzy stopnie tworzone identycznie."
+      },
+      {
+        "id": "pu_sr11",
+        "question": "Який правильний варіант? Він прий_____ пізно.",
+        "translation": "(Który wariant jest poprawny? On przyszedł późno.)",
+        "options": [
+          "шов",
+          "шол",
+          "шоў",
+          "шів"
+        ],
+        "correct": "шов",
+        "explanation": "Poprawnie: 'прийшов' (przyszedł). Końcówka '-шов' w czasie przeszłym od 'прийти'. W polskim: 'przyszedł'. Reguła: czasowniki ruchu 'йти' (iść) mają w przeszłym: я пішов / я прийшов / я вийшов. Końcówka '-шов' (lub '-шла' dla żeńskich). W polskim: '-szedł/-szła'. 'Пізно' (późno) — polskie 'późno'. Porównaj: пізн-о / późn-o — niemal identyczne. Ortografia czasowników 'iść' wymaga zapamiętania — formy są nieregularne, ale paralelne."
+      },
+      {
+        "id": "pu_sr12",
+        "question": "В українській мові 'і' та 'й' чергуються. Ми пишемо: Іван _____ Марія.",
+        "translation": "(W ukraińskim 'i' oraz 'й' wymieniają się. Piszemy: Iwan ... Maria.)",
+        "options": [
+          "й",
+          "і",
+          "та",
+          "чи"
+        ],
+        "correct": "й",
+        "explanation": "Reguła eufonii: po samogłosce piszemy 'й' (не 'і'): 'Іван й Марія'. Po spółgłosce: 'і'. Porównaj: 'мама і тато' (mama i tata — po spółgłosce), 'Іван й Марія' (po samogłosce). W polskim: 'i' nie zmienia się fonetycznie. Ta reguła jest specyficznie ukraińska. 'Й' to skrócone 'і' dla uniknięcia zbiegu samogłosek. Trzeci wariant: 'та' (i/oraz) — używany zamiennie z 'і/й'. Polskie 'i/oraz'. System jest elastyczny i służy melodynjości mowy."
+      },
+      {
+        "id": "pu_sr13",
+        "question": "Правильний запис: _____дповідь.",
+        "translation": "(Poprawny zapis: odpowiedź.)",
+        "options": [
+          "ві",
+          "от",
+          "від",
+          "од"
+        ],
+        "correct": "ві",
+        "explanation": "Poprawnie: 'відповідь' (odpowiedź). Prefiks 'від-' (od-). W polskim: 'od-powiedź'. Porównaj: від-повідь / od-powiedź — identyczna struktura! 'Повідь' nie istnieje osobno, ale rdzeń 'повід-' jest wspólny. Ukraiński prefiks 'від-' = polski 'od-' — najczęstsze odpowiedniki. Więcej: 'відкрити' (odkryć), 'відчути' (odczuć), 'відповісти' (odpowiedzieć). Polskie: 'odkryć', 'odczuć', 'odpowiedzieć'. Regularna korespondencja prefiksów pomaga w rozumieniu nowych słów."
+      },
+      {
+        "id": "pu_sr14",
+        "question": "Правильний запис: роз_____лення.",
+        "translation": "(Poprawny zapis: rozdzielenie.)",
+        "options": [
+          "ді",
+          "де",
+          "ды",
+          "да"
+        ],
+        "correct": "ді",
+        "explanation": "Poprawnie: 'розділення' (rozdzielenie). Prefiks 'роз-' + 'ділити' (dzielić). W polskim: 'roz-dzielenie'. Porównaj: роз-діл-ення / roz-dziel-enie — identyczna budowa. Od 'ділити' (dzielić) — rdzeń 'діл-'. Polskie: 'dziel-'. Ukraiński 'і' w zamkniętej sylabie: 'діл' = pol. 'dział'. W otwartej sylabie: 'ділити' — 'і' pozostaje. Reguła: prefiks 'роз-' = polski 'roz-', prefiks 'від-' = 'od-', 'по-' = 'po-'. Stała korespondencja prefiksów."
+      },
+      {
+        "id": "pu_sr15",
+        "question": "У слові 'сьогодні' м'який знак стоїть після _____.",
+        "translation": "(W słowie 'dzisiaj' miękki znak stoi po...)",
+        "options": [
+          "с",
+          "о",
+          "г",
+          "д"
+        ],
+        "correct": "с",
+        "explanation": "W 'сьогодні' (dzisiaj/dziś) miękki znak stoi po 'с': 'сь-'. To zmiękicza 'с' → [ś]. W polskim: 'dziś' — inne brzmienie, ale rdzeń pochodzi od 'tego dnia'. Ukraiński 'сьогодні' dosłownie: 'сього' (tego) + 'дні' (dnia). Polskie 'dzisiaj' = 'dzi' (tego) + 'siaj/siej' (dnia). Obie formy mają wspólne etymologiczne korzenie. 'Сь' w ukraińskim = polskie 'ś' — ten sam dźwięk, różny zapis. Miękki znak po 'с' jest bardzo częsty: 'всього' → 'всь'."
+      }
+    ]
+  },
+  {
+    "key": "cyrillic_challenges",
+    "name": "Виклики кирилиці",
+    "description": "Wyzwania cyrylicy",
+    "iconName": "character.book.closed",
+    "color": "#e879f9",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pu_cc1",
+        "question": "Українська літера 'Г' вимовляється як _____.",
+        "translation": "(Ukraińska litera 'Г' wymawia się jak...)",
+        "options": [
+          "polskie 'h'",
+          "polskie 'g'",
+          "polskie 'ch'",
+          "polskie 'k'"
+        ],
+        "correct": "polskie 'h'",
+        "explanation": "Ukraiński 'Г' to dźwięk szczelinowy [ɦ], podobny do polskiego 'h'. NIE jest to polskie 'g'! Polskie 'g' w ukraińskim to osobna litera 'Ґ'. Porównaj: 'гарний' [harnyj] (ładny), ale 'ґанок' [ganok] (ganek). To jedna z najczęstszych pułapek! Polacy czytając 'г' instynktywnie wymawiają [g], ale powinni [h]. 'Герой' = [heroj] (bohater), nie [geroj]. 'Група' = [hrupa] (grupa). Litera 'ґ' jest rzadka — pojawia się głównie w zapożyczeniach."
+      },
+      {
+        "id": "pu_cc2",
+        "question": "Ukraińska litera 'И' odpowiada polskiej _____.",
+        "translation": "(Ukraińska litera 'И' odpowiada polskiej...)",
+        "options": [
+          "y",
+          "i",
+          "u",
+          "e"
+        ],
+        "correct": "y",
+        "explanation": "Ukraiński 'И' = polskie 'y' — twarda samogłoska tylna. UWAGA: nie mylić z rosyjskim! W rosyjskim 'И' = polskie 'i' (miękkie), ale ukraiński 'И' = 'y' (twarde). Ukraiński 'І' = polskie 'i'. Porównaj: 'ми' (my), 'ви' (wy), 'син' (syn). Polskie: my, wy, syn — identyczne dźwięki. 'Сир' (ser/syr) — polskie 'ser'. Ta korespondencja И/y oraz І/i jest fundamentalna i musi być opanowana na samym początku nauki."
+      },
+      {
+        "id": "pu_cc3",
+        "question": "Літера 'Є' в українській мові це _____.",
+        "translation": "(Litera 'Є' w ukraińskim to...)",
+        "options": [
+          "je",
+          "e",
+          "ie",
+          "ja"
+        ],
+        "correct": "je",
+        "explanation": "Ukraiński 'Є' = [je] (j + e). Występuje: na początku wyrazu ('Європа' — Europa), po samogłosce ('моє' — moje), po apostrofie ('об'єкт' — obiekt). Po spółgłosce zmiękicza ją i brzmi [e]: 'синє' [syn'e]. W polskim nie ma odpowiednika — polski pisze 'je' osobno. 'Європа' [Jewropa] — polskie 'Europa'. 'Є' to też forma czasownika 'бути': 'є' = 'jest'. 'Тут є кава' (Tu jest kawa). Litera 'Є' jest unikalna dla ukraińskiego — rosyjski ma 'Е' = [je]."
+      },
+      {
+        "id": "pu_cc4",
+        "question": "Літера 'Ї' завжди вимовляється як _____.",
+        "translation": "(Litera 'Ї' zawsze wymawia się jako...)",
+        "options": [
+          "ji",
+          "i",
+          "y",
+          "je"
+        ],
+        "correct": "ji",
+        "explanation": "Ukraiński 'Ї' = zawsze [ji] — z 'j' na początku! Nigdy nie zmiękicza poprzedniej spółgłoski — zawsze zachowuje [j]. Występuje: na początku wyrazu ('їсти' — jeść), po samogłosce ('моїх' — moich), po apostrofie ('з'їсти' — zjeść). W polskim: brak odpowiednika — polski pisze 'ji' lub 'i'. 'Їжа' [jiża] (jedzenie). 'Київ' — tu 'ї' po samogłosce 'и'. Litera 'Ї' jest UNIKALNA dla ukraińskiego — nie ma jej w rosyjskim, białoruskim ani żadnym innym języku!"
+      },
+      {
+        "id": "pu_cc5",
+        "question": "Яка літера НЕ існує в українській абетці? _____.",
+        "translation": "(Jakiej litery NIE MA w ukraińskim alfabecie?)",
+        "options": [
+          "Ы",
+          "Ї",
+          "Є",
+          "Ґ"
+        ],
+        "correct": "Ы",
+        "explanation": "Litera 'Ы' NIE istnieje w ukraińskim! To litera rosyjska. Ukraiński odpowiednik to 'И' (= polskie 'y'). Ukraiński alfabet ma 33 litery, z unikalnymi: Ґ, Є, І, Ї. Nie ma rosyjskich: Ы, Ё, Э, Ъ. To ważne rozróżnienie! Litery unikalne ukraińskiego: 'Ґ' (g zwarte), 'Є' (je), 'І' (i miękkie), 'Ї' (ji). Alfabet ukraiński jest bliższy polskiemu fonetycznie niż rosyjski. Znajomość tych różnic pomaga poprawnie identyfikować język ukraiński."
+      },
+      {
+        "id": "pu_cc6",
+        "question": "Літера 'Щ' вимовляється як _____.",
+        "translation": "(Litera 'Щ' wymawia się jako...)",
+        "options": [
+          "szcz",
+          "sz",
+          "ść",
+          "cz"
+        ],
+        "correct": "szcz",
+        "explanation": "Ukraiński 'Щ' = [szcz] — jak polskie 'szcz' w 'szczęście'. To jest JEDNA litera dla CZTERECH polskich! 'Щастя' (szczęście) — porównaj: Щ = szcz. Polacy mają ogromną przewagę — naturalnie wymawiają ten dźwięk. 'Ще' (jeszcze), 'щоденник' (dziennik), 'борщ' (barszcz). Polskie: 'jeszcze', 'barszcz'. W rosyjskim 'Щ' = [ś:] (długie miękkie 'ś'), ale w ukraińskim to twarde [szcz]. Ta różnica jest ważna — ukraiński 'Щ' brzmi bliżej polskiemu!"
+      },
+      {
+        "id": "pu_cc7",
+        "question": "Літера 'Ц' відповідає polskiej _____.",
+        "translation": "(Litera 'Ц' odpowiada polskiej...)",
+        "options": [
+          "c",
+          "cz",
+          "ć",
+          "s"
+        ],
+        "correct": "c",
+        "explanation": "Ukraiński 'Ц' = polskie 'c' (jak w 'cena'). 'Ціна' (cena) — identyczne! Porównaj: 'центр' (centrum), 'цікавий' (ciekawy), 'цей' (ten). Polskie: 'centrum', 'ciekawy'. 'Ц' może być twarde ('цар' — car) i miękkie ('ціна' — cena). W polskim: 'c' twarde ('car') i 'c'/'ć' miękkie ('cena'). UWAGA: nie mylić 'Ц' z 'Ч'! 'Ч' = 'cz' (jak w 'czas'). 'Ц' = 'c'. To częsty błąd początkujących — litery wyglądają podobnie, ale dźwięki są różne."
+      },
+      {
+        "id": "pu_cc8",
+        "question": "W jakim kierunku czyta się ukraiński tekst? _____.",
+        "translation": "(W jakim kierunku czyta się ukraiński tekst?)",
+        "options": [
+          "od lewej do prawej",
+          "od prawej do lewej",
+          "od góry do dołu",
+          "pionowo"
+        ],
+        "correct": "od lewej do prawej",
+        "explanation": "Ukraiński, jak polski, czyta się od lewej do prawej. Cyrylica nie zmienia kierunku czytania! To ważna informacja dla początkujących, którzy mogą mylić cyrylicę z pismem arabskim czy hebrajskim. Alfabet cyrylicki powstał w IX wieku na bazie greckiego — pisany od lewej do prawej. Ukraiński alfabet ma 33 litery. Polski — 32 (+ dodatkowe z diakrytykami). Oba alfabety zapisują te same dźwięki słowiańskie, tylko innymi znakami. To jak dwa kody dla tego samego systemu."
+      },
+      {
+        "id": "pu_cc9",
+        "question": "Ukraińska litera 'Б' odpowiada polskiej _____.",
+        "translation": "(Ukraińska litera 'Б' odpowiada polskiej...)",
+        "options": [
+          "b",
+          "w",
+          "d",
+          "g"
+        ],
+        "correct": "b",
+        "explanation": "Ukraiński 'Б' = polskie 'b'. UWAGA: nie mylić z łacińskim 'B'! Wygląd cyrylickiego 'Б' jest inny (з гачком), ale dźwięk identyczny. 'Брат' (brat), 'банк' (bank), 'батько' (ojciec). Litery cyrylickie które WYGLĄDAJĄ jak łacińskie, ale BRZMIĄ inaczej: 'В' = [w] (nie 'B'!), 'Н' = [n] (nie 'H'!), 'Р' = [r] (nie 'P'!), 'С' = [s] (nie 'C'!). Te 'fałszywi przyjaciele graficzni' to największa pułapka cyrylicy dla Polaków. Zapamiętaj te cztery litery!"
+      },
+      {
+        "id": "pu_cc10",
+        "question": "Która ukraińska litera wygląda jak łacińskie 'P', ale brzmi jak _____?",
+        "translation": "(Która ukraińska litera wygląda jak łacińskie 'P'...)",
+        "options": [
+          "r",
+          "p",
+          "d",
+          "b"
+        ],
+        "correct": "r",
+        "explanation": "Ukraiński 'Р' wygląda jak łacińskie 'P', ale brzmi jak [r]! To jeden z najbardziej mylących 'fałszywych przyjaciół graficznych'. 'Робота' = [robota] (praca), nie 'pobota'! 'Ресторан' = [restoran]. Porównaj inne pułapki: 'В' wygląda jak 'B', ale = [w]; 'Н' wygląda jak 'H', ale = [n]; 'С' wygląda jak 'C', ale = [s]; 'У' wygląda jak 'Y', ale = [u]. Tych pięć liter trzeba zapamiętać jako pierwsze — to klucz do czytania cyrylicy!"
+      },
+      {
+        "id": "pu_cc11",
+        "question": "Літера 'Ч' відповідає polskiemu _____.",
+        "translation": "(Litera 'Ч' odpowiada polskiemu...)",
+        "options": [
+          "cz",
+          "c",
+          "sz",
+          "ć"
+        ],
+        "correct": "cz",
+        "explanation": "Ukraiński 'Ч' = polskie 'cz'. 'Час' (czas), 'чоловік' (człowiek), 'чай' (czaj/herbata). Porównaj: час/czas, чоловік/człowiek — te same dźwięki. 'Ч' to afrykata — połączenie 'т' + 'ш'. Polskie 'cz' to analogiczne połączenie. NIE MYLIĆ z 'Ц' (= polskie 'c')! 'Ч' = cz (twarde), 'Ц' = c (twarde). W polskim: 'cz' vs 'c' — inna para, ale identyczna logika. 'Чай' (herbata) — od chińskiego 'cha'. Polskie 'czaj' (archaiczne)."
+      },
+      {
+        "id": "pu_cc12",
+        "question": "Літера 'Ш' відповідає polskiemu _____.",
+        "translation": "(Litera 'Ш' odpowiada polskiemu...)",
+        "options": [
+          "sz",
+          "s",
+          "ś",
+          "cz"
+        ],
+        "correct": "sz",
+        "explanation": "Ukraiński 'Ш' = polskie 'sz'. 'Школа' (szkoła), 'шапка' (czapka/shapka), 'шість' (sześć). Porównaj: школ-а/szkoł-a — identyczny dźwięk. 'Ш' to spółgłoska szczelinowa, twarda — jak polskie 'sz'. W rosyjskim 'Ш' brzmi tak samo. To jedna z liter, która nie sprawia problemów Polakom — dźwięk jest naturalny. Porównaj komplet szumiących: 'Ш' = sz, 'Ж' = ż, 'Ч' = cz, 'Щ' = szcz. Polskie odpowiedniki: sz, ż, cz, szcz. Perfekcyjna korespondencja!"
+      },
+      {
+        "id": "pu_cc13",
+        "question": "Літера 'Ж' відповідає polskiemu _____.",
+        "translation": "(Litera 'Ж' odpowiada polskiemu...)",
+        "options": [
+          "ż",
+          "z",
+          "ź",
+          "dż"
+        ],
+        "correct": "ż",
+        "explanation": "Ukraiński 'Ж' = polskie 'ż'. 'Жити' (żyć), 'жінка' (żona/kobieta), 'жарт' (żart). Porównaj: жити/żyć, жарт/żart — identyczne. 'Ж' wygląda charakterystycznie — jak 'trójnóg'. W polskim nie ma odpowiednika graficznego. 'Жовтий' (żółty) — porównaj: жовтий/żółty. Ten sam dźwięk, ten sam rdzeń! Opanowanie czterech szumiących (Ш=sz, Ж=ż, Ч=cz, Щ=szcz) daje umiejętność czytania większości ukraińskich słów — te litery są niezwykle częste."
+      },
+      {
+        "id": "pu_cc14",
+        "question": "Яка літера є у слові 'ґанок' і не існує в російській? _____.",
+        "translation": "(Jaką literę ma słowo 'ganek', której nie ma w rosyjskim?)",
+        "options": [
+          "Ґ",
+          "Г",
+          "К",
+          "Х"
+        ],
+        "correct": "Ґ",
+        "explanation": "Litera 'Ґ' (z haczykiem) to unikalna litera ukraińska — dźwięk [g] (zwarte, jak polskie 'g'). Rosyjski tej litery nie ma. Porównaj: 'Г' = [h] (szczelinowe), 'Ґ' = [g] (zwarte). 'Ґанок' (ganek) — polskie 'ganek'. 'Ґудзик' (guzik) — polskie 'guzik'. 'Ґ' pojawia się głównie w słowach rodzimych i zapożyczeniach. Lista jest krótka: ґрати (kraty), ґречний (grzeczny — archaiczne), ґатунок (gatunek). Dla Polaków to łatwa litera — brzmi jak normalne 'g'."
+      },
+      {
+        "id": "pu_cc15",
+        "question": "М'який знак 'Ь' у кінці слова 'кінь' означає _____.",
+        "translation": "(Miękki znak 'Ь' na końcu słowa 'koń' oznacza...)",
+        "options": [
+          "зм'якшення попередньої",
+          "подовження",
+          "наголос",
+          "подвоєння"
+        ],
+        "correct": "зм'якшення попередньої",
+        "explanation": "Miękki znak 'Ь' zmiękicza poprzednią spółgłoskę: 'кінь' — 'н' jest miękkie [ń]. W polskim: 'koń' — 'ń' miękkie (z kreską). Porównaj: кінь/koń — identyczny dźwięk na końcu! 'Ь' nie jest samogłoską — nie wymawia się go, tylko modyfikuje spółgłoskę. Funkcje: 1) na końcu wyrazu (день, кінь, сіль), 2) w środku przed spółgłoską (ньому, тьмяний). W polskim miękkość oznaczana kreską (ń, ś, ź, ć) lub 'i' przed spółgłoską. Systemy różne graficznie, ale identyczne fonetycznie."
+      }
+    ]
+  },
+  {
+    "key": "word_stress",
+    "name": "Наголос",
+    "description": "Akcent wyrazowy",
+    "iconName": "speaker.wave.2",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pu_ws1",
+        "question": "У слові 'молоко' наголос падає на _____ склад.",
+        "translation": "(W słowie 'молоко' akcent pada na ... sylabę)",
+        "options": [
+          "третій",
+          "перший",
+          "другий",
+          "четвертий"
+        ],
+        "correct": "третій",
+        "explanation": "W 'молоко' (mleko) akcent na trzeciej sylabie: мо-ло-КО. W polskim: 'mle-ko' — akcent na przedostatniej (stały!). KLUCZOWA RÓŻNICA: polski ma stały akcent na przedostatniej sylabie, ukraiński ma RUCHOMY akcent — może padać na dowolną sylabę. To jedno z najtrudniejszych wyzwań ukraińskiego dla Polaków. Ukraiński akcent zmienia się w odmianie: 'молоКО' ale 'МОлока' (dopełniacz). Trzeba uczyć się akcentu z każdym nowym słowem."
+      },
+      {
+        "id": "pu_ws2",
+        "question": "У слові 'написати' наголос на складі _____.",
+        "translation": "(W słowie 'написати' akcent na sylabie...)",
+        "options": [
+          "на-пи-СА-ти",
+          "НА-пи-са-ти",
+          "на-ПИ-са-ти",
+          "на-пи-са-ТИ"
+        ],
+        "correct": "на-пи-СА-ти",
+        "explanation": "W 'написати' (napisać) akcent na trzeciej sylabie: на-пи-СА-ти. W polskim: 'na-PI-sać' — przedostatnia. Ukraiński bezokolicznik często ma akcent na przyrostku '-а-': читАти (czytać), писАти (pisać), робИти (robić). ALE NIE ZAWSZE: 'бАчити' (widzieć), 'чУти' (słyszeć). Brak stałej reguły to wyzwanie. W polskim: akcent ZAWSZE na przedostatniej — bez wyjątków (prawie). Ta stałość polskiego kontra ruchomość ukraińskiego to fundamentalna różnica."
+      },
+      {
+        "id": "pu_ws3",
+        "question": "Наголос може змінювати _____ слова.",
+        "translation": "(Akcent może zmieniać ... słowa)",
+        "options": [
+          "значення",
+          "написання",
+          "довжину",
+          "рід"
+        ],
+        "correct": "значення",
+        "explanation": "Akcent w ukraińskim zmienia ZNACZENIE (значення) słowa! Klasyczne pary minimalne: 'зАмок' (zamek — budowla) vs 'замОк' (zamek — do drzwi). W polskim: 'zamek' — jedno słowo z jednym akcentem. Więcej par: 'мУка' (мąk) vs 'мукА' (мęka), 'дОрога' (droga — przymiotnik) vs 'дорОга' (droga — rzeczownik). Polskie: 'droga' — bez rozróżnienia akcentem. Ta funkcja rozróżniająca akcentu jest kluczowa — złe umieszczenie akcentu może zmienić sens wypowiedzi!"
+      },
+      {
+        "id": "pu_ws4",
+        "question": "У слові 'людина' наголос на складі _____.",
+        "translation": "(W słowie 'людина' akcent na sylabie...)",
+        "options": [
+          "лю-ДИ-на",
+          "ЛЮ-ди-на",
+          "лю-ди-НА",
+          "люди-на"
+        ],
+        "correct": "лю-ДИ-на",
+        "explanation": "W 'людина' (człowiek/osoba) akcent na drugiej sylabie: лю-ДИ-на. W polskim nie ma bezpośredniego odpowiednika z tym akcentem. Reguła: w wielu trzy sylabowych wyrazach akcent pada na drugą sylabę — ale NIE ZAWSZE. Porównaj: 'лю-ДИ-на', 'ро-БО-та' (praca), 'до-РО-га' (droga). Ale: 'МО-ло-ко' → 'мо-ло-КО'. Brak reguły! Najlepsza strategia: uczyć się akcentu razem ze słowem. Słowniki ukraińskie zawsze zaznaczają akcent — korzystaj z nich."
+      },
+      {
+        "id": "pu_ws5",
+        "question": "У множині слова 'вікно' наголос _____.",
+        "translation": "(W liczbie mnogiej słowa 'вікно' akcent...)",
+        "options": [
+          "змінюється",
+          "залишається",
+          "зникає",
+          "подвоюється"
+        ],
+        "correct": "змінюється",
+        "explanation": "Akcent się zmienia w odmianie: 'вікнО' (lp.) → 'ВІкна' (lm.). W polskim: 'ok-no' → 'ok-na' — akcent zawsze na przedostatniej. Ukraiński akcent jest ruchomy w odmianie! Więcej: 'рукА' → 'РУки', 'стінА' → 'СТІни', 'водА' → 'ВОди'. To systematyczna zmiana — często lm. przesuwa akcent ku początkowi. Ale: 'книжкА' → 'книжкИ' (bez zmiany!). Trzeba uczyć się par: mianownik lp. + lm. z akcentem. To wymaga praktyki, ale wzorce powtarzają się."
+      },
+      {
+        "id": "pu_ws6",
+        "question": "У слові 'Україна' наголос на складі _____.",
+        "translation": "(W słowie 'Україна' akcent na sylabie...)",
+        "options": [
+          "У-кра-Ї-на",
+          "У-КРА-ї-на",
+          "у-кра-ї-НА",
+          "У-кра-ї-на"
+        ],
+        "correct": "У-кра-Ї-на",
+        "explanation": "W 'Україна' (Ukraina) akcent na trzeciej sylabie: У-кра-Ї-на. W polskim: 'U-kra-I-na' — akcent na 'i' (przedostatnia). Tu akurat akcent jest na tej samej sylabie! Ale z innej przyczyny: polski — reguła przedostatniej, ukraiński — stały akcent tego konkretnego słowa. 'Україна' — nazwa kraju pochodzi od 'у країні' (w kraju/krainie). Polskie 'Ukraina' — to samo źródło. Poprawna wymowa z akcentem na 'ї' jest ważna — szanuje to język i kulturę."
+      },
+      {
+        "id": "pu_ws7",
+        "question": "Чи може наголос в українській мові падати на останній склад? _____.",
+        "translation": "(Czy akcent w ukraińskim może padać na ostatnią sylabę?)",
+        "options": [
+          "так",
+          "ні",
+          "тільки в питаннях",
+          "тільки в дієсловах"
+        ],
+        "correct": "так",
+        "explanation": "TAK — ukraiński akcent może padać na KAŻDĄ sylabę, w tym ostatnią! Przykłady z akcentem na końcu: 'молоКО' (mleko), 'водА' (woda), 'іСТИ' (jeść). W polskim: akcent prawie NIGDY na ostatniej (wyjątki: 'arcy-', zapożyczenia typu 'résumé'). To duża różnica. Ukraiński aksent na końcu jest częsty w: rzeczownikach ('водА', 'землЯ'), czasownikach ('пишУ', 'іДУ'). Polak musi się ODUCZYĆ instynktownego akcentowania przedostatniej sylaby."
+      },
+      {
+        "id": "pu_ws8",
+        "question": "Слова 'дорога' і 'дорога' відрізняються _____.",
+        "translation": "(Słowa 'дорога' i 'дорога' różnią się...)",
+        "options": [
+          "наголосом",
+          "написанням",
+          "родом",
+          "числом"
+        ],
+        "correct": "наголосом",
+        "explanation": "Minimalna para akcentowa: 'дОрога' (droga — przymiotnik ż. 'droga/kosztowna') vs 'дорОга' (droga — rzeczownik 'droga/szlak'). Różnią się TYLKO akcentem! W polskim: 'droga' — jedno słowo, jeden akcent. Kontekst rozstrzyga: 'ця річ дОрога' (ta rzecz jest droga/kosztowna), 'ця дорОга довга' (ta droga jest długa). Takie pary minimalne dowodzą, że ukraiński akcent jest fonologiczny — rozróżnia znaczenia. To cecha typowa dla języków wschodniosłowiańskich."
+      },
+      {
+        "id": "pu_ws9",
+        "question": "У слові 'батько' наголос на _____.",
+        "translation": "(W słowie 'батько' akcent na...)",
+        "options": [
+          "першому складі",
+          "другому складі",
+          "третьому складі",
+          "останньому"
+        ],
+        "correct": "першому складі",
+        "explanation": "W 'батько' (ojciec) akcent na pierwszej sylabie: БАТь-ко. Wyrazy z akcentem na pierwszej sylabie: 'БАТько' (ojciec), 'МАТи' (matka), 'ДІти' (dzieci), 'ДОбрий' (dobry). Polskie odpowiedniki: 'oj-CIEC' (przedostatnia), 'MAT-ka' (przedostatnia). Akcent na pierwszej sylabie w ukraińskim jest częsty w krótkich wyrazach: 'бАтько', 'мАти', 'тАто'. To naturalne — krótki wyraz ma więcej 'wolności' w pozycji akcentu."
+      },
+      {
+        "id": "pu_ws10",
+        "question": "В українській мові наголос є _____.",
+        "translation": "(W ukraińskim akcentem jest...)",
+        "options": [
+          "вільним",
+          "фіксованим",
+          "подвійним",
+          "тональним"
+        ],
+        "correct": "вільним",
+        "explanation": "Ukraiński akcent jest WOLNY (вільний) — może padać na dowolną sylabę. W polskim: STAŁY (фіксований) — prawie zawsze na przedostatniej. To fundamentalna różnica typologiczna. Języki z wolnym akcentem: ukraiński, rosyjski, angielski. Z stałym: polski, czeski (na 1.), francuski (na ostatniej). Wolny akcent ma zaletę (rozróżnia znaczenia) i wadę (trzeba zapamiętywać). Stały akcent ma zaletę (przewidywalność) i wadę (nie rozróżnia). Oba systemy mają swoją logikę."
+      },
+      {
+        "id": "pu_ws11",
+        "question": "У дієслові 'пишу' наголос на _____.",
+        "translation": "(W czasowniku 'piszę' akcent na...)",
+        "options": [
+          "другому складі",
+          "першому складі",
+          "третьому",
+          "рівномірний"
+        ],
+        "correct": "другому складі",
+        "explanation": "W 'пишу' (piszę) akcent na drugiej sylabie: пи-ШУ. W polskim: 'PI-szę' — na przedostatniej (= pierwszej). Porównaj wzorzec: пиШУ, пиШЕШ, пиШЕ, пиШЕМО... Akcent stały w całej koniugacji na temacie. Ale inne czasowniki: 'нЕсу' vs 'несЕШ' — mogą zmieniać! Reguła ogólna: w wielu czasownikach akcent w 1. osobie = akcent w reszcie koniugacji. Ale wyjątki istnieją. Polskie czasowniki mają stały akcent na przedostatniej — łatwiejsze."
+      },
+      {
+        "id": "pu_ws12",
+        "question": "Яке слово має наголос на першому складі? _____.",
+        "translation": "(Które słowo ma akcent na pierwszej sylabie?)",
+        "options": [
+          "сонце",
+          "вікно",
+          "земля",
+          "весна"
+        ],
+        "correct": "сонце",
+        "explanation": "'СОНце' (słońce) — akcent na pierwszej sylabie. Porównaj: 'вікнО' (okno), 'землЯ' (ziemia), 'веснА' (wiosna) — wszystkie na końcu. W polskim: 'SŁOŃ-ce', 'OK-no', 'ZIE-mia', 'WIOS-na' — wszystkie na przedostatniej. Ukraiński akcentuje różne sylaby: 'СОНце' (1.), 'вікнО' (2.), 'землЯ' (2.), 'веснА' (2.). Słowa z akcentem na 1. sylabie to często podstawowe, krótkie wyrazy: 'СОНце', 'МОре' (morze), 'НЕбо' (niebo)."
+      },
+      {
+        "id": "pu_ws13",
+        "question": "У прикметнику 'гарний' наголос на _____.",
+        "translation": "(W przymiotniku 'ładny' akcent na...)",
+        "options": [
+          "першому складі",
+          "другому складі",
+          "останньому",
+          "рівномірний"
+        ],
+        "correct": "першому складі",
+        "explanation": "'ГАРний' (ładny/piękny) — akcent na pierwszej sylabie. Przymiotniki w ukraińskim mogą mieć akcent na różnych sylabach: 'ГАРний' (1.), 'велИкий' (2.), 'молодИй' (3.). Polskie: 'ŁAD-ny' (1./przedostatnia), 'WIEL-ki' (1./przedostatnia). 'Гарний' to jedno z najpopularniejszych ukraińskich przymiotników — 'piękny, ładny, dobry'. Nie ma dokładnego polskiego odpowiednika — łączy w sobie 'ładny' + 'piękny' + 'dobry'. Używaj go często!"
+      },
+      {
+        "id": "pu_ws14",
+        "question": "У слові 'допомога' наголос на складі _____.",
+        "translation": "(W słowie 'pomoc' akcent na sylabie...)",
+        "options": [
+          "до-по-МО-га",
+          "ДО-по-мо-га",
+          "до-ПО-мо-га",
+          "до-по-мо-ГА"
+        ],
+        "correct": "до-по-МО-га",
+        "explanation": "'ДопоМОга' (pomoc) — akcent na trzeciej sylabie. W polskim: 'PO-moc' — na przedostatniej. Reguła: w dłuższych ukraińskich wyrazach (4+ sylaby) akcent jest TRUDNIEJSZY do przewidzenia. Trzeba zapamiętywać indywidualnie. 'ДопоМОга' od 'поМОгти' (pomóc) — akcent zachowuje się na rdzeniu '-мог-'. To pomaga: jeśli znasz akcent w bezokoliczniku, często odgadniesz w pochodnych. 'ПоМОгти' → 'допоМОга'. Szukaj wzorców!"
+      },
+      {
+        "id": "pu_ws15",
+        "question": "У якій формі слова 'рука' наголос змінюється? _____.",
+        "translation": "(W jakiej formie słowa 'ręka' akcent się zmienia?)",
+        "options": [
+          "у множині",
+          "у минулому часі",
+          "у родовому",
+          "не змінюється"
+        ],
+        "correct": "у множині",
+        "explanation": "Akcent zmienia się w liczbie mnogiej: 'рукА' (lp.) → 'РУки' (lm.). Przesunięcie akcentu ku początkowi w lm. to częsty wzorzec: 'ногА/НОги' (noga/nogi), 'водА/ВОди' (woda/wody), 'землЯ/ЗЕмлі'. W polskim: 'rę-KA' → 'rę-CE' — akcent nie zmienia sylaby (zawsze przedostatnia). Ruchomy akcent w odmianie to jedna z najtrudniejszych cech ukraińskiego. Ale wzorce się powtarzają — wiele żeńskich na '-а' przesuwa akcent w lm."
+      }
+    ]
+  },
+  {
+    "key": "diminutives",
+    "name": "Зменшувальні форми",
+    "description": "Zdrobnienia",
+    "iconName": "heart",
+    "color": "#fb923c",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pu_dim1",
+        "question": "Зменшувальна форма від 'кіт' — _____.",
+        "translation": "(Zdrobnienie od 'kota' to...)",
+        "options": [
+          "котик",
+          "коти",
+          "котів",
+          "котом"
+        ],
+        "correct": "котик",
+        "explanation": "Zdrobnienie od 'кіт' (kot): 'котик' (kotek). Sufiks '-ик' to jeden z najpopularniejszych sufiksów zdrabniających dla męskich. W polskim: 'kот' → 'kotek' (z '-ek'). Porównaj: кот-ик / kot-ek — różne sufiksy, ta sama funkcja. Więcej: 'дом' → 'домик' (domek), 'стіл' → 'столик' (stolik). Polskie: dom → domek, stół → stolik. UWAGA: polski 'stolik' używa tego samego sufiksu '-ik' co ukraiński! Zdrobnienia wyrażają czułość, sympatię lub mały rozmiar."
+      },
+      {
+        "id": "pu_dim2",
+        "question": "Зменшувальна форма від 'книжка' — _____.",
+        "translation": "(Zdrobnienie od 'książka' to...)",
+        "options": [
+          "книжечка",
+          "книжки",
+          "книгою",
+          "книжці"
+        ],
+        "correct": "книжечка",
+        "explanation": "Zdrobnienie od 'книжка' (książka): 'книжечка' (książeczka). Sufiks '-ечка' dla żeńskich. W polskim: 'książka' → 'książeczka' (z '-eczka'). Porównaj: книж-ечк-а / książ-eczk-a — IDENTYCZNY sufiks! To zdumiewające podobieństwo. Więcej: 'чашка' → 'чашечка' (filiżaneczka), 'ложка' → 'ложечка' (łyżeczka). Polskie: 'filiżanka' → 'filiżaneczka', 'łyżka' → 'łyżeczka'. Sufiks '-eczka/-ечка' jest produktywny w obu językach."
+      },
+      {
+        "id": "pu_dim3",
+        "question": "Зменшувальна форма від 'сонце' — _____.",
+        "translation": "(Zdrobnienie od 'słońce' to...)",
+        "options": [
+          "сонечко",
+          "сонця",
+          "сонцем",
+          "сонці"
+        ],
+        "correct": "сонечко",
+        "explanation": "Zdrobnienie od 'сонце' (słońce): 'сонечко' (słoneczko). Sufiks '-ечко' dla nijakich. W polskim: 'słońce' → 'słoneczko'. Porównaj: сон-ечк-о / słon-eczk-o — identyczny sufiks! 'Сонечко' jest jednym z najczulszych zwrotów w ukraińskim — używa się go jako pieszczotliwego zwrotu do bliskiej osoby: 'Сонечко моє!' (Słoneczko moje!). W polskim dokładnie tak samo: 'Słoneczko!' jako zwrot czuły. Piękna wspólna cecha kulturowo-językowa."
+      },
+      {
+        "id": "pu_dim4",
+        "question": "Зменшувальна форма від 'мама' — _____.",
+        "translation": "(Zdrobnienie od 'mama' to...)",
+        "options": [
+          "матуся",
+          "мамки",
+          "мамою",
+          "мамі"
+        ],
+        "correct": "матуся",
+        "explanation": "Zdrobnienie od 'мама' (mama): 'матуся' (mamusia). Sufiks '-уся' wyraża głęboką czułość. W polskim: 'mama' → 'mamusia' (z '-usia'). Porównaj: мат-ус-я / mam-usi-a — ten sam sufiks pieszotliwy! Inne zdrobnienia 'мami': 'мамка' (mniej czułe), 'мамочка' (bardzo czułe), 'ненька' (poetyckie). Polskie: 'mamka', 'mameczka', 'mateczka'. Ukraiński 'ненька' to unikalne — pochodzi od 'нене/мене'. 'Ненька Україна' (Matka Ukraina) — poetyckie określenie ojczyzny."
+      },
+      {
+        "id": "pu_dim5",
+        "question": "Зменшувальна форма від 'дім' — _____.",
+        "translation": "(Zdrobnienie od 'dom' to...)",
+        "options": [
+          "домик",
+          "домів",
+          "домом",
+          "домі"
+        ],
+        "correct": "домик",
+        "explanation": "Zdrobnienie od 'дім' (dom): 'домик' (domek). Sufiks '-ик'. W polskim: 'dom' → 'domek' (z '-ek'). Porównaj: дом-ик / dom-ek. 'Дім' → 'домик' — zmiana samogłoski 'і' → 'о' (zamknięta → otwarta sylaba) + sufiks. W polskim: 'dom' → 'domek' — bez zmiany samogłoski. UWAGA: w innym kontekście 'домик' może też oznaczać 'domek letniskowy'. W ukraińskim 'хатинка' (od 'хата' — chata) to alternatywne zdrobnienie. Polskie 'chatka' — identyczne."
+      },
+      {
+        "id": "pu_dim6",
+        "question": "Зменшувальна форма від 'вода' — _____.",
+        "translation": "(Zdrobnienie od 'woda' to...)",
+        "options": [
+          "водичка",
+          "води",
+          "водою",
+          "воді"
+        ],
+        "correct": "водичка",
+        "explanation": "Zdrobnienie od 'вода' (woda): 'водичка' (wodeczka/wodziczka). Sufiks '-ичка'. W polskim: 'woda' → 'wodziczka' lub 'wodeczka'. Porównaj: вод-ичк-а — sufiks '-ичка' jest typowo ukraiński. 'Водичка' wyraża ciepłe uczucie — jakby woda była sympatyczna: 'Випий водичку' (Wypij wodeczkę). Zdrobnienia w ukraińskim są NIEZWYKLE częste w codziennej mowie — dużo częstsze niż w polskim. Ukraińcy zdrabniają prawie wszystko, wyrażając ciepło i serdeczność."
+      },
+      {
+        "id": "pu_dim7",
+        "question": "Зменшувальна форма від 'хліб' — _____.",
+        "translation": "(Zdrobnienie od 'chleb' to...)",
+        "options": [
+          "хлібчик",
+          "хліба",
+          "хлібом",
+          "хлібі"
+        ],
+        "correct": "хлібчик",
+        "explanation": "Zdrobnienie od 'хліб' (chleb): 'хлібчик' (chlebek). Sufiks '-чик'. W polskim: 'chleb' → 'chlebek' / 'chlebczyk'. Porównaj: хліб-чик / chleb-czyk — sufiks '-чик' = '-czyk'. 'Хлібчик' brzmi pieszczotliwie — 'kupię хлібчик' (kupię chlebek). 'Хліб' to kulturowo ważne słowo — chleb w ukraińskiej tradycji ma szczególne znaczenie. 'Хліб-сіль' (chleb-sól) — symbol gościnności, identyczny z polskim 'chlebem-solą'. Wspólna tradycja słowiańska."
+      },
+      {
+        "id": "pu_dim8",
+        "question": "Зменшувальна форма від 'дівчина' — _____.",
+        "translation": "(Zdrobnienie od 'dziewczyna' to...)",
+        "options": [
+          "дівчинка",
+          "дівчини",
+          "дівчиною",
+          "дівчині"
+        ],
+        "correct": "дівчинка",
+        "explanation": "Zdrobnienie od 'дівчина' (dziewczyna): 'дівчинка' (dziewczynka). Sufiks '-ка' zdrabniający. W polskim: 'dziewczyna' → 'dziewczynka' (z '-ka'). Porównaj: дівчин-к-а / dziewczyn-k-a — IDENTYCZNY sufiks! Jeszcze czulej: 'дівчинонька' (z dodanym '-онька'). Polskie: 'dziewczyneczka'. Ukraiński system zdrobnień jest wielopoziomowy: 'дівчина' → 'дівчинка' → 'дівчинонька'. Każdy kolejny sufiks dodaje więcej czułości. W polskim podobnie: dziewczyna → dziewczynka → dziewczyneczka."
+      },
+      {
+        "id": "pu_dim9",
+        "question": "Зменшувальна форма від 'брат' — _____.",
+        "translation": "(Zdrobnienie od 'brat' to...)",
+        "options": [
+          "братик",
+          "брати",
+          "братом",
+          "браті"
+        ],
+        "correct": "братик",
+        "explanation": "Zdrobnienie od 'брат' (brat): 'братик' (braciszek). Sufiks '-ик'. W polskim: 'brat' → 'braciszek' lub 'bratek'. 'Братик' brzmi ciepło i familiarnie — typowe w rozmowach o młodszym bracie: 'мій братик' (mój braciszek). Inne zwroty: 'брат' (oficjalnie), 'братик' (czule), 'братку!' (zwrot grzecznościowy — jak polskie 'bratku!'). 'Братку' to wołacz zdrobnienia — używany jako zwrot do przyjaciela. W polskim 'bratku!' — identycznie, choć rzadsze."
+      },
+      {
+        "id": "pu_dim10",
+        "question": "Зменшувальна форма від 'зірка' — _____.",
+        "translation": "(Zdrobnienie od 'gwiazdka' to...)",
+        "options": [
+          "зіронька",
+          "зірки",
+          "зіркою",
+          "зірці"
+        ],
+        "correct": "зіронька",
+        "explanation": "Zdrobnienie od 'зірка' (gwiazda/gwiazdka): 'зіронька' (gwiazdeczka). Sufiks '-онька' — najbardziej pieszczotliwy sufiks ukraiński. W polskim: 'gwiazda' → 'gwiazdeczka'. 'Зіронька' brzmi niezwykle czule — używane w piosenkach ludowych, kołysankach: 'Зіронько моя!' (Gwiazdeczko moja!). Sufiks '-онька/-енька' to jedno z najpiękniszych narzędzi ukraińskiego: 'мамонька' (mamusieńka), 'доненька' (córeczeńka), 'серденько' (serduszko). Te formy wyrażają głęboką czułość."
+      },
+      {
+        "id": "pu_dim11",
+        "question": "Зменшувальна форма від 'серце' — _____.",
+        "translation": "(Zdrobnienie od 'serce' to...)",
+        "options": [
+          "серденько",
+          "серця",
+          "серцем",
+          "серці"
+        ],
+        "correct": "серденько",
+        "explanation": "Zdrobnienie od 'серце' (serce): 'серденько' (serduszko/serdeńko). Sufiks '-енько' dla nijakich. W polskim: 'serce' → 'serduszko'. 'Серденько' to jeden z najpiękniejszych ukraińskich zwrotów pieszczotliwych — używany do kochanej osoby: 'Серденько моє!' (Serduszko moje!). Porównaj sufiksy: -енько (ukr.) / -uszko (pol.). Inne nijakie zdrobnienia: 'сонце' → 'сонечко', 'вікно' → 'віконечко', 'слово' → 'слівце'. Zdrobnienia nijakie mają specjalny, ciepły wydźwięk."
+      },
+      {
+        "id": "pu_dim12",
+        "question": "Зменшувальна форма від 'ніч' — _____.",
+        "translation": "(Zdrobnienie od 'noc' to...)",
+        "options": [
+          "ніченька",
+          "ночі",
+          "ніччю",
+          "ночей"
+        ],
+        "correct": "ніченька",
+        "explanation": "Zdrobnienie od 'ніч' (noc): 'ніченька' (nocka/noseńka). Sufiks '-енька'. W polskim: 'noc' → 'nocka'. Porównaj: ніч-еньк-а — sufiks '-енька' jest typowo ukraiński, nie ma dokładnego polskiego odpowiednika. 'Ніченька' pojawia się w poezji i piosenkach: 'Ніченька темна' (Ciemna nocka). To poetycki, czuły rejestr. W codziennej mowie zdrobnienia od pór doby: 'ніченька' (nocka), 'ранечок' (raniutki ranek). Ukraiński jest niezwykle bogaty w zdrobnienia — to cecha kultury."
+      },
+      {
+        "id": "pu_dim13",
+        "question": "Зменшувальна форма від 'квітка' — _____.",
+        "translation": "(Zdrobnienie od 'kwiatek' to...)",
+        "options": [
+          "квіточка",
+          "квітки",
+          "квіткою",
+          "квітці"
+        ],
+        "correct": "квіточка",
+        "explanation": "Zdrobnienie od 'квітка' (kwiat/kwiatek): 'квіточка' (kwiateczek/kwiatuszek). Sufiks '-очка'. W polskim: 'kwiatek' → 'kwiatuszek' / 'kwiateczek'. Porównaj: квіт-очк-а — sufiks '-очка' wyraża delikatność i czułość. 'Квіточка' pojawia się w pieśniach ludowych: 'Ти моя квіточка!' (Ty mój kwiatuszku!). Alternatywa: 'квітонька' (z '-онька' — jeszcze czulej). Ukraiński ma wielopoziomowy system: квітка → квіточка → квітонька. Każdy poziom dodaje czułości."
+      },
+      {
+        "id": "pu_dim14",
+        "question": "Зменшувальна форма від 'голова' — _____.",
+        "translation": "(Zdrobnienie od 'głowa' to...)",
+        "options": [
+          "голівка",
+          "голови",
+          "головою",
+          "голові"
+        ],
+        "correct": "голівка",
+        "explanation": "Zdrobnienie od 'голова' (głowa): 'голівка' (główka). Sufiks '-ка' z modyfikacją rdzenia: голов- → голів-. W polskim: 'głowa' → 'główka' (z modyfikacją 'ow' → 'ówk'). Porównaj: голів-к-а / głów-к-а — identyczna strategia! Zmiana samogłoski w rdzeniu + sufiks '-ка'. Inne: 'корова' → 'корівка' (krówka), 'борода' → 'бородка' (bródka). Polskie: 'krowa' → 'krówka'. 'Головка часнику' (główka czosnku) — też przenośne, jak w polskim!"
+      },
+      {
+        "id": "pu_dim15",
+        "question": "Зменшувальна форма від 'рука' — _____.",
+        "translation": "(Zdrobnienie od 'ręka' to...)",
+        "options": [
+          "ручка",
+          "руки",
+          "рукою",
+          "руці"
+        ],
+        "correct": "ручка",
+        "explanation": "Zdrobnienie od 'рука' (ręka): 'ручка' (rączka). Zmiana к → ч + sufiks '-ка': рук- → руч-ка. W polskim: 'ręka' → 'rączka' (к → cz). Alternacja к → ч w ukraińskim = k → cz w polskim! Identyczny wzorzec. 'Ручка' ma też drugie znaczenie: 'długopis' (=uchwyt, rączka). W polskim: 'rączka' nie oznacza 'długopisu'. To fałszywy przyjaciel semantyczny! 'Ручка' (długopis) — bo trzymasz go w 'рука' (ręce). Ciekawe przesunięcie znaczeniowe."
+      }
+    ]
   }
 ]

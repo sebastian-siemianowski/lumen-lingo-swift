@@ -18668,5 +18668,1015 @@
         "explanation": "寒冷 (hánlěng) means 'bitterly cold / frigid.' China's north-south climate divide is dramatic: 北方 (běifāng, the north) has harsh winters with central heating (暖气 nuǎnqì), while 南方 (nánfāng, the south) is milder but lacks heating. 零下十几度 means 'more than 10 degrees below zero.' The Harbin Ice Festival (哈尔滨冰雪节) celebrates northern China's extreme cold. Common expression: 冷得要命 (lěng de yàomìng, freezing to death — exaggeration for emphasis)."
       }
     ]
+  },
+  {
+    "key": "food_dining",
+    "name": "Food & Dining (饮食文化)",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ec_fod1",
+        "question": "我想要一份_____炒饭。",
+        "translation": "(I would like a plate of egg fried rice.)",
+        "options": [
+          "蛋",
+          "肉",
+          "菜",
+          "鱼"
+        ],
+        "correct": "蛋",
+        "explanation": "蛋炒饭 (dàn chǎofàn) means 'egg fried rice' — one of China's most iconic everyday dishes. 一份 (yī fèn) is the measure word for portions/servings of food. Food ordering patterns: 我想要 (I would like) or 来一份 (give me a portion of). Measure words for food: 份 (portion), 碗 (wǎn, bowl), 盘 (pán, plate), 杯 (bēi, cup/glass). Chinese restaurants often ask 几位？(jǐ wèi, how many guests?) when seating."
+      },
+      {
+        "id": "ec_fod2",
+        "question": "这道菜太_____了，能少放点盐吗？",
+        "translation": "(This dish is too salty; can you put less salt?)",
+        "options": [
+          "咸",
+          "甜",
+          "酸",
+          "辣"
+        ],
+        "correct": "咸",
+        "explanation": "咸 (xián) means 'salty.' The five basic tastes in Chinese: 酸 (suān, sour), 甜 (tián, sweet), 苦 (kǔ, bitter), 辣 (là, spicy), 咸 (xián, salty). 少放点 (shǎo fàng diǎn) means 'put a little less.' Useful restaurant phrases: 不要太辣 (bú yào tài là, not too spicy), 多放点醋 (duō fàng diǎn cù, add more vinegar). Chinese regional cuisines are defined by their flavors: 四川 (Sichuan — spicy), 广东 (Cantonese — mild), 山西 (Shanxi — sour)."
+      },
+      {
+        "id": "ec_fod3",
+        "question": "服务员，请给我_____。",
+        "translation": "(Waiter, please give me the menu.)",
+        "options": [
+          "菜单",
+          "账单",
+          "筷子",
+          "纸巾"
+        ],
+        "correct": "菜单",
+        "explanation": "菜单 (càidān) means 'menu.' 服务员 (fúwùyuán, waiter/waitress) is the standard way to address restaurant staff in China — it's polite and gender-neutral. Restaurant essentials: 菜单 (menu), 点菜 (diǎncài, to order food), 买单/结账 (mǎidān/jiézhàng, to pay the bill), 打包 (dǎbāo, to take away leftovers). In China, it's common and not rude to call out 服务员！ to get attention; raising your hand is also acceptable."
+      },
+      {
+        "id": "ec_fod4",
+        "question": "中国人吃饭用_____。",
+        "translation": "(Chinese people eat with chopsticks.)",
+        "options": [
+          "筷子",
+          "叉子",
+          "刀子",
+          "勺子"
+        ],
+        "correct": "筷子",
+        "explanation": "筷子 (kuàizi) means 'chopsticks.' Chinese dining utensils: 筷子, 勺子 (sháozi, spoon), 碗 (wǎn, bowl). Chopstick etiquette is important: never stick chopsticks upright in rice (resembles funeral incense), don't point with chopsticks, don't use them to drum on bowls. 公筷 (gōngkuài, serving chopsticks) are increasingly promoted for hygiene. Using chopsticks well is admired: 你筷子用得很好 (you use chopsticks very well) is a common compliment to foreigners."
+      },
+      {
+        "id": "ec_fod5",
+        "question": "我们AA制，还是你_____？",
+        "translation": "(Shall we split the bill, or will you treat?)",
+        "options": [
+          "请客",
+          "做饭",
+          "洗碗",
+          "点菜"
+        ],
+        "correct": "请客",
+        "explanation": "请客 (qǐngkè) means 'to treat / to host a meal / to pick up the tab.' AA制 (AA zhì) means 'to split the bill equally' (borrowed from European concept). In Chinese dining culture, 抢着买单 (qiǎngzhe mǎidān, fighting to pay the bill) is a common social ritual showing generosity. Common phrases: 今天我请 (today I'll treat), 下次你请 (next time you treat), 别客气 (don't be polite — accept my treat). This reflects the Chinese value of 面子 (miànzi, face/social reputation)."
+      },
+      {
+        "id": "ec_fod6",
+        "question": "这个饭馆的_____很好吃。",
+        "translation": "(This restaurant's dumplings are delicious.)",
+        "options": [
+          "饺子",
+          "面条",
+          "米饭",
+          "包子"
+        ],
+        "correct": "饺子",
+        "explanation": "饺子 (jiǎozi) means 'dumplings' — perhaps the most iconic Chinese food internationally. Chinese staple foods: 饺子 (dumplings), 面条 (miàntiáo, noodles), 米饭 (mǐfàn, rice), 包子 (bāozi, steamed buns), 馒头 (mántou, plain steamed bread). 好吃 (hǎochī, delicious — literally 'good to eat'). Northern China prefers wheat-based foods (面食 miànshí), while Southern China prefers rice (米饭). Dumplings are essential during Spring Festival (春节)."
+      },
+      {
+        "id": "ec_fod7",
+        "question": "你想喝什么_____？",
+        "translation": "(What beverage would you like to drink?)",
+        "options": [
+          "饮料",
+          "食物",
+          "水果",
+          "零食"
+        ],
+        "correct": "饮料",
+        "explanation": "饮料 (yǐnliào) means 'beverage / drink.' Common Chinese beverages: 茶 (chá, tea), 白开水 (báikāishuǐ, plain boiled water — very Chinese!), 果汁 (guǒzhī, juice), 啤酒 (píjiǔ, beer), 可乐 (kělè, cola), 奶茶 (nǎichá, milk tea — hugely popular). 多喝热水 (duō hē rèshuǐ, drink more hot water) is the stereotypical Chinese health advice given for everything. Chinese tea culture (茶文化) dates back thousands of years."
+      },
+      {
+        "id": "ec_fod8",
+        "question": "我对花生_____。",
+        "translation": "(I am allergic to peanuts.)",
+        "options": [
+          "过敏",
+          "喜欢",
+          "讨厌",
+          "害怕"
+        ],
+        "correct": "过敏",
+        "explanation": "过敏 (guòmǐn) means 'allergic / to have an allergy.' Pattern: 对 + allergen + 过敏. This is essential survival Chinese for dining out. Common allergens: 花生 (huāshēng, peanuts), 海鲜 (hǎixiān, seafood), 牛奶 (niúnǎi, milk), 鸡蛋 (jīdàn, eggs), 麸质 (fūzhì, gluten). Important phrases: 我不能吃... (I can't eat...), 这里面有...吗？(does this contain...?). Allergy awareness is growing in China but still less common than in Western countries."
+      },
+      {
+        "id": "ec_fod9",
+        "question": "这个菜是_____的，没有肉。",
+        "translation": "(This dish is vegetarian; it has no meat.)",
+        "options": [
+          "素",
+          "荤",
+          "辣",
+          "甜"
+        ],
+        "correct": "素",
+        "explanation": "素 (sù) means 'vegetarian / plain.' The Chinese food classification: 素菜 (sùcài, vegetarian dishes) vs. 荤菜 (hūncài, meat dishes). 吃素 (chīsù, to eat vegetarian) is associated with Buddhist practice. Vegetarian vocabulary: 素食者 (sùshízhě, vegetarian person), 纯素 (chúnsù, vegan), 豆腐 (dòufu, tofu — the classic Chinese plant protein). Useful phrase: 我吃素 (I'm vegetarian) or 有素菜吗？(do you have vegetarian dishes?)."
+      },
+      {
+        "id": "ec_fod10",
+        "question": "中国最有名的_____菜是宫保鸡丁。",
+        "translation": "(China's most famous Sichuan dish is Kung Pao Chicken.)",
+        "options": [
+          "四川",
+          "广东",
+          "北京",
+          "上海"
+        ],
+        "correct": "四川",
+        "explanation": "四川 (Sìchuān) cuisine is one of China's Eight Great Cuisines (八大菜系 bādà càixì). 宫保鸡丁 (gōngbǎo jīdīng, Kung Pao Chicken) features diced chicken with peanuts and chili. Other major cuisines: 粤菜 (yuècài, Cantonese — dim sum), 鲁菜 (lǔcài, Shandong — classic northern), 湘菜 (xiāngcài, Hunan — spicy), 浙菜 (zhècài, Zhejiang — fresh and light). Each province has signature dishes: 北京烤鸭 (Beijing roast duck), 上海小笼包 (Shanghai soup dumplings)."
+      },
+      {
+        "id": "ec_fod11",
+        "question": "这碗面条_____了，能再热一下吗？",
+        "translation": "(This bowl of noodles has gotten cold; can you reheat it?)",
+        "options": [
+          "凉",
+          "热",
+          "咸",
+          "淡"
+        ],
+        "correct": "凉",
+        "explanation": "凉 (liáng) means 'cool / cold (food).' Chinese culture generally prefers hot food and drinks — eating cold food is traditionally considered unhealthy (related to 中医 zhōngyī, traditional Chinese medicine concepts of hot/cold balance). 再热一下 (zài rè yīxià, reheat it) uses the 一下 softener. 凉菜 (liángcài, cold dishes) are appetizers served at the beginning of a meal. The temperature preference: 热的 (rède, hot), 凉的 (liángde, cold), 常温的 (chángwēnde, room temperature)."
+      },
+      {
+        "id": "ec_fod12",
+        "question": "服务员，我们要_____了。",
+        "translation": "(Waiter, we would like to pay the bill.)",
+        "options": [
+          "买单",
+          "点菜",
+          "打包",
+          "加菜"
+        ],
+        "correct": "买单",
+        "explanation": "买单 (mǎidān) means 'to pay the bill / check please.' Alternative: 结账 (jiézhàng, to settle the bill — slightly more formal). In Chinese restaurants, the bill is usually paid at the front counter, not at the table. Mobile payment (移动支付 yídòng zhīfù) via WeChat Pay (微信支付) or Alipay (支付宝) is nearly universal in China. Other useful phrases: 打包 (dǎbāo, to pack leftovers — very common and not considered cheap), 开发票 (kāi fāpiào, to issue a receipt/invoice)."
+      },
+      {
+        "id": "ec_fod13",
+        "question": "今天我们吃_____吧。",
+        "translation": "(Let's eat hot pot today.)",
+        "options": [
+          "火锅",
+          "烧烤",
+          "快餐",
+          "西餐"
+        ],
+        "correct": "火锅",
+        "explanation": "火锅 (huǒguō) means 'hot pot' — a communal dining experience where diners cook raw ingredients in a simmering broth at the table. It's one of China's most popular social dining activities. Types: 四川火锅 (Sichuan spicy hot pot), 老北京涮羊肉 (Beijing mutton hot pot), 鸳鸯锅 (yuānyāng guō, half-and-half pot — spicy and mild). 吃火锅 is a social verb phrase meaning 'to have hot pot together' and is a favorite group activity among friends."
+      },
+      {
+        "id": "ec_fod14",
+        "question": "你能用手机_____吗？",
+        "translation": "(Can you scan [the QR code] to order with your phone?)",
+        "options": [
+          "扫码点餐",
+          "打电话",
+          "拍照片",
+          "发消息"
+        ],
+        "correct": "扫码点餐",
+        "explanation": "扫码点餐 (sǎomǎ diǎncān) means 'scan code to order food' — this is the modern norm in Chinese restaurants. 扫码 (sǎomǎ, to scan a QR code) is used everywhere in China: ordering food, making payments, sharing contacts, accessing services. This QR-code-based infrastructure is unique to modern China. Related: 扫一扫 (sǎo yī sǎo, scan it), 二维码 (èrwéimǎ, QR code). Most Chinese restaurants now have table QR codes for ordering, reducing the need for waitstaff interaction."
+      },
+      {
+        "id": "ec_fod15",
+        "question": "这家餐厅的_____服务很好。",
+        "translation": "(This restaurant's delivery service is very good.)",
+        "options": [
+          "外卖",
+          "堂食",
+          "预约",
+          "自助"
+        ],
+        "correct": "外卖",
+        "explanation": "外卖 (wàimài) means 'food delivery / takeout.' China's food delivery industry (via apps like 美团 Měituán and 饿了么 Èle me) is the world's largest. 堂食 (tángshí) means 'dine-in.' 外卖小哥 (wàimài xiǎogē, delivery rider) is a ubiquitous figure in Chinese cities. Related: 下单 (xiàdān, to place an order), 配送 (pèisòng, delivery), 评分 (píngfēn, rating). The pandemic accelerated China's already dominant food delivery culture, making 点外卖 (ordering delivery) a daily routine for most urban Chinese."
+      }
+    ]
+  },
+  {
+    "key": "travel_transport",
+    "name": "Travel & Transport (旅行交通)",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ec_trv1",
+        "question": "我想买一张去上海的_____票。",
+        "translation": "(I want to buy a train ticket to Shanghai.)",
+        "options": [
+          "火车",
+          "飞机",
+          "汽车",
+          "轮船"
+        ],
+        "correct": "火车",
+        "explanation": "火车票 (huǒchē piào) means 'train ticket.' Chinese transport vocabulary: 火车 (huǒchē, train), 高铁 (gāotiě, high-speed rail), 飞机 (fēijī, airplane), 汽车 (qìchē, car/bus), 地铁 (dìtiě, subway). China's high-speed rail network (高铁) is the world's largest, connecting major cities at 300+ km/h. Buying tickets: 12306 is China's official rail booking website/app. Pattern: 买票 (buy ticket), 订票 (book ticket), 退票 (refund ticket)."
+      },
+      {
+        "id": "ec_trv2",
+        "question": "请问，去博物馆_____走？",
+        "translation": "(Excuse me, how do I get to the museum?)",
+        "options": [
+          "怎么",
+          "什么",
+          "为什么",
+          "哪里"
+        ],
+        "correct": "怎么",
+        "explanation": "怎么走 (zěnme zǒu) means 'how to get there / which way to go.' This is the essential direction-asking phrase in Chinese. 请问 (qǐngwèn, may I ask) is the polite opener. Direction words: 往左 (wǎng zuǒ, turn left), 往右 (wǎng yòu, turn right), 一直走 (yīzhí zǒu, go straight), 过马路 (guò mǎlù, cross the road). In modern China, navigation apps (导航 dǎoháng) like 高德地图 and 百度地图 have largely replaced asking for directions."
+      },
+      {
+        "id": "ec_trv3",
+        "question": "这趟航班_____了两个小时。",
+        "translation": "(This flight was delayed by two hours.)",
+        "options": [
+          "延误",
+          "提前",
+          "取消",
+          "改签"
+        ],
+        "correct": "延误",
+        "explanation": "延误 (yánwù) means 'delayed.' Airport vocabulary: 航班 (hángbān, flight), 延误 (delayed), 取消 (qǔxiāo, cancelled), 改签 (gǎiqiān, to rebook), 登机 (dēngjī, to board), 登机口 (dēngjī kǒu, boarding gate), 行李 (xíngli, luggage), 托运 (tuōyùn, to check luggage). 这趟 (zhè tàng) uses the measure word 趟 for trips/scheduled services. Chinese airports rank among the world's busiest, making flight delays a common topic of conversation."
+      },
+      {
+        "id": "ec_trv4",
+        "question": "师傅，请_____这个地址。",
+        "translation": "(Driver, please go to this address.)",
+        "options": [
+          "去",
+          "看",
+          "找",
+          "念"
+        ],
+        "correct": "去",
+        "explanation": "师傅 (shīfu) is the respectful address for taxi/ride-hailing drivers, literally meaning 'master.' In China, 滴滴出行 (Dīdī Chūxíng) is the dominant ride-hailing app. Taxi phrases: 到了 (dàole, we've arrived), 在这里停 (zài zhèlǐ tíng, stop here), 打表 (dǎbiǎo, use the meter), 多少钱 (duōshao qián, how much). Mobile payment is standard in taxis. 师傅 is also used for any skilled worker: plumber, electrician, repairman."
+      },
+      {
+        "id": "ec_trv5",
+        "question": "我需要_____一个酒店房间。",
+        "translation": "(I need to book a hotel room.)",
+        "options": [
+          "预订",
+          "参观",
+          "打扫",
+          "装修"
+        ],
+        "correct": "预订",
+        "explanation": "预订 (yùdìng) means 'to book / to reserve.' Hotel vocabulary: 酒店 (jiǔdiàn, hotel), 宾馆 (bīnguǎn, hotel/guesthouse), 民宿 (mínsù, homestay/B&B — increasingly popular), 房间 (fángjiān, room), 入住 (rùzhù, to check in), 退房 (tuìfáng, to check out). Chinese booking apps: 携程 (Xiéchéng, Ctrip), 美团 (Měituán), 去哪儿 (Qù nǎr). 预订 vs. 预定: both are used, but 预订 is specifically for reservations."
+      },
+      {
+        "id": "ec_trv6",
+        "question": "从北京到上海坐高铁大约要_____个小时。",
+        "translation": "(Taking high-speed rail from Beijing to Shanghai takes about 4 hours.)",
+        "options": [
+          "四",
+          "二",
+          "八",
+          "十"
+        ],
+        "correct": "四",
+        "explanation": "The Beijing-Shanghai high-speed rail (京沪高铁 jīng-hù gāotiě) covers 1,318 km in about 4.5 hours at 350 km/h, making it one of the world's busiest rail routes. Time expression pattern: 从A到B + transport + 要 + duration. 大约 (dàyuē, approximately) indicates estimation. China's high-speed rail vocabulary: 动车 (dòngchē, D-train, 250 km/h), 高铁 (gāotiě, G-train, 350 km/h), 车次 (chēcì, train number), 站台 (zhàntái, platform)."
+      },
+      {
+        "id": "ec_trv7",
+        "question": "这个景点要买_____才能进去。",
+        "translation": "(You need to buy a ticket to enter this scenic spot.)",
+        "options": [
+          "门票",
+          "车票",
+          "电影票",
+          "彩票"
+        ],
+        "correct": "门票",
+        "explanation": "门票 (ménpiào) means 'entrance ticket / admission ticket.' 景点 (jǐngdiǎn, scenic spot/attraction) and 景区 (jǐngqū, scenic area) are the standard words for tourist destinations. Ticket types: 门票 (entrance), 学生票 (xuéshēng piào, student ticket — with discount), 网上预约 (wǎngshàng yùyuē, online reservation — increasingly required). Many Chinese attractions require advance booking via apps. Popular 5A scenic spots (5A级景区) are China's highest-rated destinations."
+      },
+      {
+        "id": "ec_trv8",
+        "question": "请问地铁站_____这里远吗？",
+        "translation": "(Excuse me, is the subway station far from here?)",
+        "options": [
+          "离",
+          "从",
+          "到",
+          "在"
+        ],
+        "correct": "离",
+        "explanation": "离 (lí) means 'from / away from' and is used to express distance between two places. Pattern: A + 离 + B + 远/近 (far/near). 地铁 (dìtiě, subway/metro) is the main urban transport in Chinese cities. Major metro systems: 北京地铁, 上海地铁, 广州地铁. Useful subway phrases: 换乘 (huànchéng, to transfer), 下一站 (xià yī zhàn, next stop), 终点站 (zhōngdiǎn zhàn, terminal station). Chinese subway systems use QR code entry via apps."
+      },
+      {
+        "id": "ec_trv9",
+        "question": "行李箱太_____了，我拿不动。",
+        "translation": "(The suitcase is too heavy; I can't carry it.)",
+        "options": [
+          "重",
+          "轻",
+          "大",
+          "小"
+        ],
+        "correct": "重",
+        "explanation": "重 (zhòng) means 'heavy.' 拿不动 (ná bú dòng) uses the potential complement structure: verb + 不 + complement, meaning 'unable to carry/lift.' Travel luggage vocabulary: 行李箱 (xínglixiāng, suitcase), 背包 (bēibāo, backpack), 手提包 (shǒutíbāo, handbag), 行李称重 (xíngli chēngzhòng, luggage weighing). The potential complement is essential: 拿得动 (can carry) vs. 拿不动 (can't carry), 看得见 (can see) vs. 看不见 (can't see)."
+      },
+      {
+        "id": "ec_trv10",
+        "question": "我们在下一站_____。",
+        "translation": "(We get off at the next stop.)",
+        "options": [
+          "下车",
+          "上车",
+          "停车",
+          "开车"
+        ],
+        "correct": "下车",
+        "explanation": "下车 (xiàchē) means 'to get off (a vehicle).' Vehicle verbs: 上车 (shàngchē, to get on), 下车 (to get off), 停车 (tíngchē, to stop/park), 开车 (kāichē, to drive). 下一站 (xià yī zhàn, next stop) is announced on all Chinese public transport. Useful on buses: 到站了 (dào zhàn le, arrived at the stop), 请从后门下车 (qǐng cóng hòumén xiàchē, please exit from the rear door). 上下 is a verb pair that works with many nouns: 上班/下班 (go to/leave work), 上课/下课 (start/end class)."
+      },
+      {
+        "id": "ec_trv11",
+        "question": "我的护照_____了，怎么办？",
+        "translation": "(My passport is lost; what should I do?)",
+        "options": [
+          "丢",
+          "到",
+          "换",
+          "找"
+        ],
+        "correct": "丢",
+        "explanation": "丢 (diū) means 'to lose / to be lost.' Travel emergency vocabulary: 护照 (hùzhào, passport), 签证 (qiānzhèng, visa), 身份证 (shēnfènzhèng, ID card), 大使馆 (dàshǐguǎn, embassy), 警察局 (jǐngchájú, police station), 报警 (bàojǐng, to report to police). 怎么办 (zěnme bàn, what to do) is a common expression of distress. Emergency number in China: 110 (police), 120 (ambulance), 119 (fire). 丢了 (lost) uses 了 for completed action."
+      },
+      {
+        "id": "ec_trv12",
+        "question": "你有_____推荐的旅游路线吗？",
+        "translation": "(Do you have any recommended travel routes?)",
+        "options": [
+          "什么",
+          "哪个",
+          "多少",
+          "几"
+        ],
+        "correct": "什么",
+        "explanation": "什么推荐的 (shénme tuījiàn de) means 'any recommended.' Travel planning vocabulary: 旅游路线 (lǚyóu lùxiàn, travel route/itinerary), 自由行 (zìyóuxíng, independent travel), 跟团游 (gēntuán yóu, group tour), 攻略 (gōnglüè, travel guide/tips — very popular term). Chinese travelers extensively research 攻略 on platforms like 小红书 (Xiǎohóngshū, Little Red Book) and 马蜂窝 (Mǎfēngwō). 你有什么...？ is a natural way to ask for suggestions."
+      },
+      {
+        "id": "ec_trv13",
+        "question": "这趟车每_____发一班。",
+        "translation": "(This service departs once every 20 minutes.)",
+        "options": [
+          "二十分钟",
+          "两个小时",
+          "半小时",
+          "一天"
+        ],
+        "correct": "二十分钟",
+        "explanation": "每二十分钟 (měi èrshí fēnzhōng) means 'every 20 minutes.' 每 + time + verb + 一 + measure word is the frequency pattern. Transport schedule vocabulary: 发车 (fāchē, departure), 到达 (dàodá, arrival), 首班车 (shǒubānchē, first service), 末班车 (mòbānchē, last service), 班次 (bāncì, service frequency). Missing the 末班车 is a common concern: 末班车几点？(what time is the last service?). In China, subways typically run from ~5:30 AM to ~11 PM."
+      },
+      {
+        "id": "ec_trv14",
+        "question": "我想租一辆_____游览城市。",
+        "translation": "(I want to rent a bicycle to tour the city.)",
+        "options": [
+          "自行车",
+          "汽车",
+          "摩托车",
+          "电动车"
+        ],
+        "correct": "自行车",
+        "explanation": "自行车 (zìxíngchē) means 'bicycle.' Shared bikes (共享单车 gòngxiǎng dānchē) like 哈啰单车 (Hāluō) and 美团单车 are ubiquitous in Chinese cities — just scan a QR code to unlock. 租 (zū, to rent) also applies to 租车 (rent a car), 租房 (rent a house). Electric vehicles: 电动车 (diàndòngchē, e-bike), 电动汽车 (electric car). China leads the world in e-bike usage — they're the dominant personal transport in many cities. Traffic vocabulary: 红绿灯 (hónglǜdēng, traffic light), 人行道 (rénxíngdào, sidewalk)."
+      },
+      {
+        "id": "ec_trv15",
+        "question": "到了机场以后，先去_____。",
+        "translation": "(After arriving at the airport, first go to check-in.)",
+        "options": [
+          "值机柜台",
+          "登机口",
+          "行李转盘",
+          "出口"
+        ],
+        "correct": "值机柜台",
+        "explanation": "值机柜台 (zhíjī guìtái) means 'check-in counter.' Airport procedure vocabulary: 值机 (zhíjī, check-in), 托运行李 (tuōyùn xíngli, check luggage), 安检 (ānjiǎn, security check), 候机 (hòujī, wait for flight), 登机 (dēngjī, boarding), 行李转盘 (xíngli zhuànpán, baggage carousel). Chinese airports increasingly use 自助值机 (zìzhù zhíjī, self-service check-in) kiosks and facial recognition. Useful phrase: 几号登机口？(which gate number?)."
+      }
+    ]
+  },
+  {
+    "key": "health_body",
+    "name": "Health & Body (健康身体)",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ec_hlb1",
+        "question": "我_____不舒服，想去看医生。",
+        "translation": "(My stomach is uncomfortable; I want to see a doctor.)",
+        "options": [
+          "肚子",
+          "头",
+          "手",
+          "脚"
+        ],
+        "correct": "肚子",
+        "explanation": "肚子不舒服 (dùzi bù shūfu) means 'stomach is uncomfortable / stomachache.' Body parts: 头 (tóu, head), 眼睛 (yǎnjing, eyes), 鼻子 (bízi, nose), 嘴 (zuǐ, mouth), 耳朵 (ěrduo, ears), 手 (shǒu, hand), 脚 (jiǎo, foot), 肚子 (dùzi, stomach/belly). Medical phrase pattern: body part + 不舒服 or body part + 疼/痛 (téng/tòng, hurts). 看医生 (kàn yīshēng, see a doctor) is the standard expression."
+      },
+      {
+        "id": "ec_hlb2",
+        "question": "医生说我需要多_____。",
+        "translation": "(The doctor says I need to rest more.)",
+        "options": [
+          "休息",
+          "工作",
+          "运动",
+          "吃药"
+        ],
+        "correct": "休息",
+        "explanation": "休息 (xiūxi) means 'to rest.' Doctor's advice vocabulary: 多休息 (rest more), 多喝水 (drink more water), 吃药 (chīyào, take medicine), 打针 (dǎzhēn, get an injection/shot), 做检查 (zuò jiǎnchá, get an examination). Chinese medical culture often emphasizes rest and nutrition over medication for minor illnesses. The ubiquitous advice 多喝热水 (drink more hot water) has become a cultural meme, reflecting traditional Chinese medical beliefs about internal balance."
+      },
+      {
+        "id": "ec_hlb3",
+        "question": "我_____了，全身都没有力气。",
+        "translation": "(I have a cold; my whole body has no energy.)",
+        "options": [
+          "感冒",
+          "受伤",
+          "过敏",
+          "中毒"
+        ],
+        "correct": "感冒",
+        "explanation": "感冒 (gǎnmào) means 'to have a cold / cold (illness).' 全身 (quánshēn, whole body), 没有力气 (méiyǒu lìqi, no energy/strength). Common illnesses: 感冒 (cold), 发烧 (fāshāo, fever), 咳嗽 (késou, cough), 头疼 (tóuténg, headache), 拉肚子 (lā dùzi, diarrhea). Chinese distinguishes between 感冒 (cold) and 流感 (liúgǎn, influenza/flu). Symptom description pattern: 我 + symptom + 了 (I have developed...)."
+      },
+      {
+        "id": "ec_hlb4",
+        "question": "这个药每天吃_____次。",
+        "translation": "(Take this medicine three times a day.)",
+        "options": [
+          "三",
+          "一",
+          "五",
+          "七"
+        ],
+        "correct": "三",
+        "explanation": "每天三次 (měitiān sān cì) means 'three times a day.' Medicine instructions: 每天 (every day) + number + 次 (times), 每次 (měicì, each time) + number + 片/粒 (piàn/lì, tablets/pills). Pharmacy vocabulary: 药房/药店 (yàofáng/yàodiàn, pharmacy), 处方药 (chǔfāng yào, prescription medicine), 非处方药 (fēi chǔfāng yào, OTC medicine). China has both Western pharmacies and 中药店 (zhōngyào diàn, traditional Chinese medicine shops) selling herbal remedies."
+      },
+      {
+        "id": "ec_hlb5",
+        "question": "她_____已经三个月了。",
+        "translation": "(She has been pregnant for three months already.)",
+        "options": [
+          "怀孕",
+          "生病",
+          "工作",
+          "学习"
+        ],
+        "correct": "怀孕",
+        "explanation": "怀孕 (huáiyùn) means 'to be pregnant.' Duration pattern: 怀孕 + duration + 了. Health milestones vocabulary: 怀孕 (pregnant), 生孩子 (shēng háizi, to give birth), 产检 (chǎnjiǎn, prenatal checkup), 坐月子 (zuò yuèzi, postpartum confinement — a traditional Chinese practice of resting for a month after giving birth). 坐月子 is a uniquely Chinese cultural practice involving specific dietary and rest requirements that is still widely observed in modern China."
+      },
+      {
+        "id": "ec_hlb6",
+        "question": "我的_____有点高，需要控制饮食。",
+        "translation": "(My blood pressure is a bit high; I need to control my diet.)",
+        "options": [
+          "血压",
+          "体温",
+          "体重",
+          "视力"
+        ],
+        "correct": "血压",
+        "explanation": "血压 (xuèyā) means 'blood pressure.' Health metrics: 血压 (blood pressure), 血糖 (xuètáng, blood sugar), 体温 (tǐwēn, body temperature), 心率 (xīnlǜ, heart rate), 体重 (tǐzhòng, body weight). 控制饮食 (kòngzhì yǐnshí, control diet) is common Chinese health advice. Chinese health culture values 养生 (yǎngshēng, health cultivation), which includes dietary therapy, exercise, and lifestyle balance — a philosophy rooted in traditional Chinese medicine."
+      },
+      {
+        "id": "ec_hlb7",
+        "question": "你今天脸色不太好，是不是没_____好？",
+        "translation": "(Your complexion doesn't look good today; did you not sleep well?)",
+        "options": [
+          "睡",
+          "吃",
+          "玩",
+          "走"
+        ],
+        "correct": "睡",
+        "explanation": "没睡好 (méi shuì hǎo) means 'didn't sleep well.' 脸色 (liǎnsè, complexion/facial color) is an important concept in Chinese culture — people observe facial color as a health indicator. Chinese health/sleep vocabulary: 失眠 (shīmián, insomnia), 睡眠质量 (shuìmián zhìliàng, sleep quality), 熬夜 (áoyè, to stay up late — considered very unhealthy in Chinese culture). The Chinese saying 早睡早起身体好 (early to bed, early to rise makes one healthy) reflects the cultural emphasis on sleep."
+      },
+      {
+        "id": "ec_hlb8",
+        "question": "他做了一个小_____，需要住院一周。",
+        "translation": "(He had a minor operation; he needs to stay in the hospital for a week.)",
+        "options": [
+          "手术",
+          "检查",
+          "运动",
+          "实验"
+        ],
+        "correct": "手术",
+        "explanation": "手术 (shǒushù) means 'surgery / operation.' 住院 (zhùyuàn, to be hospitalized), 出院 (chūyuàn, to be discharged). Hospital vocabulary: 医院 (yīyuàn, hospital), 科室 (kēshì, department — e.g., 内科 nèikē internal medicine, 外科 wàikē surgery), 挂号 (guàhào, to register — required before seeing a doctor in Chinese hospitals), 病房 (bìngfáng, ward). Chinese hospitals require 挂号 at the front desk, often requiring specific department selection beforehand."
+      },
+      {
+        "id": "ec_hlb9",
+        "question": "坚持_____对身体很有好处。",
+        "translation": "(Persisting in exercise is very beneficial for the body.)",
+        "options": [
+          "锻炼",
+          "吃饭",
+          "睡觉",
+          "看书"
+        ],
+        "correct": "锻炼",
+        "explanation": "锻炼 (duànliàn) means 'to exercise / to work out.' 坚持 (jiānchí, to persist/insist on) + activity is a common motivational pattern. Exercise vocabulary: 跑步 (pǎobù, running), 游泳 (yóuyǒng, swimming), 瑜伽 (yújiā, yoga), 太极拳 (tàijíquán, tai chi). 广场舞 (guǎngchǎng wǔ, square dancing) is a unique Chinese phenomenon where groups of mostly older women dance in public squares every evening — a beloved and sometimes controversial form of community exercise."
+      },
+      {
+        "id": "ec_hlb10",
+        "question": "中国很多人相信_____的理论。",
+        "translation": "(Many people in China believe in the theories of traditional Chinese medicine.)",
+        "options": [
+          "中医",
+          "西医",
+          "科学",
+          "哲学"
+        ],
+        "correct": "中医",
+        "explanation": "中医 (zhōngyī) means 'Traditional Chinese Medicine (TCM).' 中医 includes acupuncture (针灸 zhēnjiǔ), herbal medicine (中药 zhōngyào), cupping (拔罐 báguàn), and massage (推拿 tuīná). It's based on concepts like 阴阳 (yīnyáng), 气 (qì, vital energy), and 经络 (jīngluò, meridians). 西医 (xīyī, Western medicine) coexists with 中医 in China — most hospitals offer both. Many Chinese people use 中西结合 (zhōngxī jiéhé, combining Chinese and Western medicine) for treatment."
+      },
+      {
+        "id": "ec_hlb11",
+        "question": "我今天有点_____，可能是昨天吹空调了。",
+        "translation": "(I have a bit of a sore throat today; maybe it's from the air conditioning yesterday.)",
+        "options": [
+          "嗓子疼",
+          "头疼",
+          "牙疼",
+          "肚子疼"
+        ],
+        "correct": "嗓子疼",
+        "explanation": "嗓子疼 (sǎngzi téng) means 'sore throat.' In Chinese health culture, air conditioning (空调 kōngtiáo) is often blamed for illness — being exposed to cold air is believed to cause colds, sore throats, and body aches. This reflects the 中医 concept of 寒气 (hánqì, cold qi) entering the body. Common complaint pattern: 身体部位 + 疼 (body part + hurts). 吹空调 (chuī kōngtiáo, exposure to AC — literally 'blown by AC') is a uniquely Chinese health concern that surprises many Westerners."
+      },
+      {
+        "id": "ec_hlb12",
+        "question": "定期体检可以_____发现健康问题。",
+        "translation": "(Regular check-ups can detect health problems early.)",
+        "options": [
+          "及早",
+          "很晚",
+          "勉强",
+          "偶尔"
+        ],
+        "correct": "及早",
+        "explanation": "及早 (jízǎo) means 'as early as possible / timely.' 定期体检 (dìngqī tǐjiǎn, regular physical examination/check-up) is strongly encouraged in Chinese healthcare. Chinese companies typically provide annual 体检 for employees as a benefit. Check-up vocabulary: 体检报告 (tǐjiǎn bàogào, check-up report), 验血 (yànxuè, blood test), 拍X光 (pāi X guāng, take an X-ray), B超 (B chāo, ultrasound). Chinese people commonly share and discuss 体检 results with family."
+      },
+      {
+        "id": "ec_hlb13",
+        "question": "心情好对身体健康也有_____。",
+        "translation": "(A good mood also has benefits for physical health.)",
+        "options": [
+          "好处",
+          "坏处",
+          "影响",
+          "关系"
+        ],
+        "correct": "好处",
+        "explanation": "好处 (hǎochù) means 'benefit / advantage.' 对...有好处 (duì...yǒu hǎochù, beneficial for...) is a very common pattern. 心情 (xīnqíng, mood/state of mind) reflects the Chinese holistic health concept where mental and physical health are interconnected — 身心健康 (shēnxīn jiànkāng, physical and mental health). Chinese proverb: 笑一笑，十年少 (xiào yī xiào, shí nián shǎo, one smile makes you ten years younger) — laughter is seen as medicine."
+      },
+      {
+        "id": "ec_hlb14",
+        "question": "他每天早上都会_____半个小时。",
+        "translation": "(Every morning he jogs for half an hour.)",
+        "options": [
+          "跑步",
+          "吃饭",
+          "看书",
+          "上网"
+        ],
+        "correct": "跑步",
+        "explanation": "跑步 (pǎobù) means 'to jog / to run.' Morning exercise (晨练 chénliàn) is a widespread Chinese habit, especially among older adults. Common morning exercises: 跑步 (jogging), 打太极 (dǎ tàijí, practice tai chi), 散步 (sànbù, take a walk). Duration pattern: verb + duration (跑步半个小时, jog for half an hour). Chinese parks in the early morning are alive with exercise groups — this communal morning exercise culture is one of China's distinctive social features."
+      },
+      {
+        "id": "ec_hlb15",
+        "question": "熬夜对_____伤害很大。",
+        "translation": "(Staying up late is very harmful to the liver.)",
+        "options": [
+          "肝脏",
+          "心脏",
+          "肺",
+          "肾"
+        ],
+        "correct": "肝脏",
+        "explanation": "肝脏 (gānzàng) means 'liver.' In Chinese medicine, staying up late (熬夜 áoyè) is believed to especially damage the liver — the 中医 body clock (子午流注 zǐwǔ liúzhù) assigns organ peak hours: liver (1-3 AM), lungs (3-5 AM). Internal organs: 心脏 (xīnzàng, heart), 肺 (fèi, lungs), 肝脏 (liver), 肾 (shèn, kidneys), 胃 (wèi, stomach). 对...伤害很大 (very harmful to) is the pattern. Chinese health articles frequently warn against 熬夜 as the number one health enemy."
+      }
+    ]
+  },
+  {
+    "key": "work_business",
+    "name": "Work & Business (工作商务)",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ec_wkb1",
+        "question": "我在一家互联网公司_____。",
+        "translation": "(I work at an internet company.)",
+        "options": [
+          "上班",
+          "上学",
+          "上课",
+          "上网"
+        ],
+        "correct": "上班",
+        "explanation": "上班 (shàngbān) means 'to go to work / to work (at a job).' 互联网公司 (hùliánwǎng gōngsī, internet company) — China's tech sector is massive. Work-related 上/下 pairs: 上班/下班 (start/finish work), 上课/下课 (start/end class). Company types: 国企 (guóqǐ, state-owned enterprise), 私企 (sīqǐ, private company), 外企 (wàiqǐ, foreign company). Chinese 996 work culture (9 AM to 9 PM, 6 days/week) has been widely debated and criticized."
+      },
+      {
+        "id": "ec_wkb2",
+        "question": "今天下午有一个重要的_____。",
+        "translation": "(There is an important meeting this afternoon.)",
+        "options": [
+          "会议",
+          "聚会",
+          "比赛",
+          "活动"
+        ],
+        "correct": "会议",
+        "explanation": "会议 (huìyì) means 'meeting / conference.' Business meeting vocabulary: 开会 (kāihuì, to hold a meeting), 会议室 (huìyìshì, conference room), 议题 (yìtí, agenda item), 记录 (jìlù, minutes), 总结 (zǒngjié, summary). In Chinese business culture, meetings often begin with small talk (寒暄 hánxuān) and tea before getting to business. Hierarchy matters: senior members speak first, and decisions often flow top-down."
+      },
+      {
+        "id": "ec_wkb3",
+        "question": "他申请了一个新_____。",
+        "translation": "(He applied for a new position/job.)",
+        "options": [
+          "职位",
+          "名字",
+          "地址",
+          "号码"
+        ],
+        "correct": "职位",
+        "explanation": "职位 (zhíwèi) means 'position / post / job title.' Job application vocabulary: 申请 (shēnqǐng, to apply), 简历 (jiǎnlì, resume/CV), 面试 (miànshì, interview), 录用 (lùyòng, to hire), 入职 (rùzhí, to start a new job). Chinese job titles: 经理 (jīnglǐ, manager), 总监 (zǒngjiān, director), 总裁 (zǒngcái, CEO/president), 员工 (yuángōng, employee). Chinese job seekers use platforms like 智联招聘, 前程无忧, and BOSS直聘."
+      },
+      {
+        "id": "ec_wkb4",
+        "question": "请把这份文件_____给客户。",
+        "translation": "(Please send this document to the client.)",
+        "options": [
+          "发送",
+          "接收",
+          "删除",
+          "保存"
+        ],
+        "correct": "发送",
+        "explanation": "发送 (fāsòng) means 'to send (electronically).' Office vocabulary: 文件 (wénjiàn, document/file), 邮件 (yóujiàn, email), 附件 (fùjiàn, attachment), 客户 (kèhù, client/customer). In Chinese business communication, 微信 (WeChat) is used extensively for professional communication — far more than email. Business WeChat (企业微信 qǐyè wēixìn) is a workplace-specific version. Many Chinese businesses communicate primarily through WeChat groups (微信群) rather than email chains."
+      },
+      {
+        "id": "ec_wkb5",
+        "question": "这个项目的_____是下个月底。",
+        "translation": "(This project's deadline is the end of next month.)",
+        "options": [
+          "截止日期",
+          "开始日期",
+          "预算",
+          "报价"
+        ],
+        "correct": "截止日期",
+        "explanation": "截止日期 (jiézhǐ rìqī) means 'deadline.' Project vocabulary: 项目 (xiàngmù, project), 进度 (jìndù, progress), 任务 (rènwu, task), 团队 (tuánduì, team), 汇报 (huìbào, to report). The phrase 赶deadline (gǎn deadline) mixing Chinese and English is common in Chinese workplaces — code-switching between Chinese and English is standard in business settings. 下个月底 (xià gè yuè dǐ) means 'end of next month' — 月底 (yuèdǐ, month end) is a common time reference."
+      },
+      {
+        "id": "ec_wkb6",
+        "question": "加班太多会影响_____和生活的平衡。",
+        "translation": "(Too much overtime affects the balance between work and life.)",
+        "options": [
+          "工作",
+          "学习",
+          "运动",
+          "旅游"
+        ],
+        "correct": "工作",
+        "explanation": "工作和生活的平衡 (gōngzuò hé shēnghuó de pínghéng) means 'work-life balance.' 加班 (jiābān, overtime) is a hot topic in Chinese society. 996工作制 (9 AM-9 PM, 6 days/week) was common in tech companies until government crackdowns. 内卷 (nèijuǎn, involution — excessive competition) and 躺平 (tǎngpíng, lying flat — opting out of the rat race) are major social concepts reflecting generational attitudes toward work. 加班费 (jiābān fèi, overtime pay) is legally required but not always provided."
+      },
+      {
+        "id": "ec_wkb7",
+        "question": "公司决定给表现好的员工_____。",
+        "translation": "(The company decided to give bonuses to well-performing employees.)",
+        "options": [
+          "加薪",
+          "降薪",
+          "放假",
+          "开除"
+        ],
+        "correct": "加薪",
+        "explanation": "加薪 (jiāxīn) means 'to raise salary / pay raise.' Compensation vocabulary: 薪水/工资 (xīnshuǐ/gōngzī, salary), 奖金 (jiǎngjīn, bonus), 年终奖 (niánzhōng jiǎng, year-end bonus — very important in Chinese corporate culture), 五险一金 (wǔ xiǎn yī jīn, five insurances + housing fund — China's mandatory employee benefits). 年终奖 can be 1-6+ months' salary and is a major factor in job satisfaction. Many employees time job changes around receiving their 年终奖."
+      },
+      {
+        "id": "ec_wkb8",
+        "question": "我们需要制定一个详细的_____。",
+        "translation": "(We need to create a detailed plan.)",
+        "options": [
+          "计划",
+          "问题",
+          "答案",
+          "故事"
+        ],
+        "correct": "计划",
+        "explanation": "计划 (jìhuà) means 'plan.' Business planning vocabulary: 制定计划 (zhìdìng jìhuà, to formulate a plan), 方案 (fāng'àn, proposal/scheme), 战略 (zhànlüè, strategy), 目标 (mùbiāo, goal/objective), 执行 (zhíxíng, to implement/execute). Chinese business culture values detailed planning and consensus-building. The phrase 详细的 (xiángxì de, detailed) modifies nouns using the 的 particle. Business plans in China often include both quantitative targets and relationship-building strategies."
+      },
+      {
+        "id": "ec_wkb9",
+        "question": "这次商务谈判非常_____。",
+        "translation": "(This business negotiation was very successful.)",
+        "options": [
+          "成功",
+          "失败",
+          "困难",
+          "无聊"
+        ],
+        "correct": "成功",
+        "explanation": "成功 (chénggōng) means 'successful / to succeed.' Business negotiation vocabulary: 商务谈判 (shāngwù tánpàn, business negotiation), 合同 (hétong, contract), 合作 (hézuò, cooperation), 签约 (qiānyuē, to sign a contract), 双赢 (shuāngyíng, win-win). In Chinese business culture, 关系 (guānxi, relationships/connections) and personal trust are crucial to successful negotiations. Business dinners (商务宴请 shāngwù yànqǐng) often follow successful negotiations."
+      },
+      {
+        "id": "ec_wkb10",
+        "question": "他因为工作表现好被_____了。",
+        "translation": "(He was promoted because of his good work performance.)",
+        "options": [
+          "提拔",
+          "开除",
+          "批评",
+          "转岗"
+        ],
+        "correct": "提拔",
+        "explanation": "提拔 (tíbá) means 'to promote (in rank).' Career progression vocabulary: 晋升 (jìnshēng, promotion — more formal), 提拔 (to promote — implies recognition by superiors), 升职 (shēngzhí, job promotion), 加薪 (pay raise), 调动 (diàodòng, to transfer). In Chinese workplaces, 提拔 often implies a mentor or superior advocating for someone. The phrase 工作表现 (gōngzuò biǎoxiàn, work performance) is used in evaluations. 被 marks the passive construction."
+      },
+      {
+        "id": "ec_wkb11",
+        "question": "周一早上我们要开_____会。",
+        "translation": "(On Monday morning we have a weekly meeting.)",
+        "options": [
+          "周",
+          "月",
+          "年",
+          "日"
+        ],
+        "correct": "周",
+        "explanation": "周会 (zhōuhuì) means 'weekly meeting.' Meeting frequency: 日报 (rìbào, daily report), 周会 (weekly meeting), 月会 (yuèhuì, monthly meeting), 季度总结 (jìdù zǒngjié, quarterly summary). Chinese workplace meeting culture is structured around regular check-ins. 站会 (zhànhuì, standup meeting) is used in tech companies adopting agile methodology. 早会 (zǎohuì, morning meeting) is common in many Chinese companies as a daily kickoff."
+      },
+      {
+        "id": "ec_wkb12",
+        "question": "我今天要写一份工作_____。",
+        "translation": "(Today I need to write a work report.)",
+        "options": [
+          "报告",
+          "小说",
+          "日记",
+          "信"
+        ],
+        "correct": "报告",
+        "explanation": "报告 (bàogào) means 'report.' Chinese workplace documents: 工作报告 (gōngzuò bàogào, work report), 总结 (zǒngjié, summary), 计划书 (jìhuàshū, proposal document), 会议纪要 (huìyì jìyào, meeting minutes). Report writing is a major part of Chinese office work. Chinese 公文 (gōngwén, official documents) have specific formatting rules. Many companies require 周报 (zhōubào, weekly report) and 月报 (yuèbào, monthly report) from employees."
+      },
+      {
+        "id": "ec_wkb13",
+        "question": "创业需要很大的_____和决心。",
+        "translation": "(Starting a business requires great courage and determination.)",
+        "options": [
+          "勇气",
+          "运气",
+          "力气",
+          "脾气"
+        ],
+        "correct": "勇气",
+        "explanation": "勇气 (yǒngqì) means 'courage / bravery.' Entrepreneurship vocabulary: 创业 (chuàngyè, to start a business), 创业者 (chuàngyèzhě, entrepreneur), 融资 (róngzī, fundraising), 投资 (tóuzī, investment), 风投 (fēngtóu, venture capital). China's entrepreneurial culture exploded in the 2010s with 大众创业，万众创新 (mass entrepreneurship and innovation). 决心 (juéxīn, determination) is highly valued in Chinese business culture."
+      },
+      {
+        "id": "ec_wkb14",
+        "question": "我们公司的企业_____很好。",
+        "translation": "(Our company's corporate culture is very good.)",
+        "options": [
+          "文化",
+          "商品",
+          "服务",
+          "产品"
+        ],
+        "correct": "文化",
+        "explanation": "企业文化 (qǐyè wénhuà) means 'corporate culture.' Modern Chinese workplace concepts: 团队建设 (tuánduì jiànshè, team building), 企业文化 (corporate culture), 核心价值观 (héxīn jiàzhíguān, core values), 团建 (tuánjiàn, team-building activities — very common in Chinese companies). Chinese companies often organize group trips, dinners, and activities as 团建. Understanding 企业文化 is essential for working in China — it encompasses everything from dress code to communication style."
+      },
+      {
+        "id": "ec_wkb15",
+        "question": "这个季度的销售_____比去年增长了百分之二十。",
+        "translation": "(This quarter's sales revenue grew by 20% compared to last year.)",
+        "options": [
+          "额",
+          "量",
+          "人",
+          "店"
+        ],
+        "correct": "额",
+        "explanation": "销售额 (xiāoshòu é) means 'sales revenue/amount.' Business metrics: 销售额 (sales revenue), 利润 (lìrùn, profit), 成本 (chéngběn, cost), 增长 (zēngzhǎng, growth), 市场份额 (shìchǎng fèn'é, market share). 百分之二十 (bǎi fēn zhī èrshí) means '20%' — Chinese expresses percentages as '100 parts of which X.' 比 (bǐ) introduces comparison: A比B增长了X (A grew by X compared to B). This vocabulary is essential for Chinese business presentations and reports."
+      }
+    ]
+  },
+  {
+    "key": "technology_internet",
+    "name": "Technology & Internet (科技互联网)",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ec_tci1",
+        "question": "你的手机_____是什么？",
+        "translation": "(What is your phone password?)",
+        "options": [
+          "密码",
+          "号码",
+          "品牌",
+          "颜色"
+        ],
+        "correct": "密码",
+        "explanation": "密码 (mìmǎ) means 'password.' Technology basics: 手机 (shǒujī, mobile phone), 电脑 (diànnǎo, computer), 平板 (píngbǎn, tablet), 密码 (password), 账号 (zhànghào, account). Chinese tech vocabulary often differs from English: 手机 literally means 'hand machine,' 电脑 means 'electric brain.' Never share your password: 不要把密码告诉别人 (don't tell others your password). Chinese apps often use phone number + verification code (验证码 yànzhèngmǎ) instead of passwords."
+      },
+      {
+        "id": "ec_tci2",
+        "question": "微信是中国最流行的_____软件。",
+        "translation": "(WeChat is China's most popular social software/app.)",
+        "options": [
+          "社交",
+          "学习",
+          "购物",
+          "游戏"
+        ],
+        "correct": "社交",
+        "explanation": "社交软件 (shèjiāo ruǎnjiàn) means 'social media app.' WeChat (微信 Wēixìn) is China's super-app combining messaging, social media, payments, mini-programs, and more. China's major platforms: 微信 (WeChat — communication), 微博 (Wēibó — microblogging/Twitter-like), 抖音 (Dǒuyīn — TikTok's Chinese version), 小红书 (Xiǎohóngshū — lifestyle sharing). Understanding these platforms is essential for daily life in China. 流行 (liúxíng, popular/trending) describes what's currently popular."
+      },
+      {
+        "id": "ec_tci3",
+        "question": "请把WiFi_____告诉我。",
+        "translation": "(Please tell me the WiFi password.)",
+        "options": [
+          "密码",
+          "速度",
+          "品牌",
+          "名字"
+        ],
+        "correct": "密码",
+        "explanation": "WiFi密码 (WiFi mìmǎ) is the WiFi password — an essential phrase for any visitor to China. Connectivity vocabulary: 上网 (shàngwǎng, to go online), 网络 (wǎngluò, network), 信号 (xìnhào, signal), 流量 (liúliàng, mobile data), 断网 (duànwǎng, disconnected). In China, many services require internet access: 移动支付 (yídòng zhīfù, mobile payment), 共享单车 (shared bikes), 外卖 (food delivery). Without internet, daily life in Chinese cities becomes very difficult."
+      },
+      {
+        "id": "ec_tci4",
+        "question": "我需要_____一个新的APP。",
+        "translation": "(I need to download a new app.)",
+        "options": [
+          "下载",
+          "上传",
+          "删除",
+          "更新"
+        ],
+        "correct": "下载",
+        "explanation": "下载 (xiàzài) means 'to download.' Digital action verbs: 下载 (download), 上传 (shàngchuán, upload), 安装 (ānzhuāng, install), 更新 (gēngxīn, update), 卸载 (xièzài, uninstall), 删除 (shānchú, delete). Chinese app stores: Apple App Store and various Android stores (华为应用市场, 小米应用商店, etc. — Google Play is not available in China). APP is pronounced 'A-P-P' letter by letter in Chinese, not as a word."
+      },
+      {
+        "id": "ec_tci5",
+        "question": "这个视频_____量已经超过一亿了。",
+        "translation": "(This video's view count has already exceeded 100 million.)",
+        "options": [
+          "播放",
+          "下载",
+          "评论",
+          "转发"
+        ],
+        "correct": "播放",
+        "explanation": "播放量 (bōfàng liàng) means 'view count / play count.' Social media metrics: 播放量 (views), 点赞 (diǎnzàn, likes), 评论 (pínglùn, comments), 转发 (zhuǎnfā, shares/reposts), 关注 (guānzhù, follow), 粉丝 (fěnsī, fans/followers). 一亿 (yī yì) is 100 million — Chinese uses 万 (wàn, 10,000) and 亿 (yì, 100 million) as number units, which differs from the Western thousands/millions system. Going viral: 火了 (huǒ le, went viral) or 爆款 (bàokuǎn, viral hit)."
+      },
+      {
+        "id": "ec_tci6",
+        "question": "中国人习惯用手机_____。",
+        "translation": "(Chinese people are accustomed to using mobile payment.)",
+        "options": [
+          "支付",
+          "游戏",
+          "拍照",
+          "阅读"
+        ],
+        "correct": "支付",
+        "explanation": "支付 (zhīfù) means 'payment.' China's mobile payment revolution: 微信支付 (WeChat Pay) and 支付宝 (Zhīfùbǎo, Alipay) handle the vast majority of transactions. Cash is rarely used in Chinese cities. 扫码支付 (sǎomǎ zhīfù, QR code payment) is the standard method. Digital finance vocabulary: 转账 (zhuǎnzhàng, money transfer), 红包 (hóngbāo, digital red envelope), 花呗 (Huābei, Ant Financial's credit service), 数字人民币 (shùzì rénmínbì, digital yuan/e-CNY)."
+      },
+      {
+        "id": "ec_tci7",
+        "question": "人工智能_____正在改变我们的生活。",
+        "translation": "(Artificial intelligence technology is changing our lives.)",
+        "options": [
+          "技术",
+          "产品",
+          "公司",
+          "课程"
+        ],
+        "correct": "技术",
+        "explanation": "技术 (jìshù) means 'technology.' AI vocabulary: 人工智能 (réngōng zhìnéng, artificial intelligence — often abbreviated as AI), 机器学习 (jīqì xuéxí, machine learning), 大数据 (dà shùjù, big data), 算法 (suànfǎ, algorithm), 自动驾驶 (zìdòng jiàshǐ, autonomous driving). China is a global AI leader, with major companies like 百度 (Bǎidù), 阿里巴巴 (Alibaba), 腾讯 (Téngxùn, Tencent), and numerous AI startups. 正在 (zhèngzài) indicates ongoing action: 'is currently changing.'"
+      },
+      {
+        "id": "ec_tci8",
+        "question": "在网上购物要注意保护个人_____。",
+        "translation": "(When shopping online, pay attention to protecting personal information.)",
+        "options": [
+          "信息",
+          "物品",
+          "金钱",
+          "时间"
+        ],
+        "correct": "信息",
+        "explanation": "个人信息 (gèrén xìnxī) means 'personal information.' Cybersecurity vocabulary: 信息安全 (xìnxī ānquán, information security), 隐私 (yǐnsī, privacy), 诈骗 (zhàpiàn, fraud/scam), 钓鱼网站 (diàoyú wǎngzhàn, phishing site), 黑客 (hēikè, hacker). China passed the 个人信息保护法 (Personal Information Protection Law) in 2021. 注意 (zhùyì, pay attention to) + verb is a warning pattern. Online shopping platforms: 淘宝 (Táobǎo), 京东 (JD.com), 拼多多 (Pinduoduo)."
+      },
+      {
+        "id": "ec_tci9",
+        "question": "请问网速怎么这么_____？",
+        "translation": "(Why is the internet speed so slow?)",
+        "options": [
+          "慢",
+          "快",
+          "贵",
+          "好"
+        ],
+        "correct": "慢",
+        "explanation": "网速慢 (wǎngsù màn) means 'internet speed is slow.' 怎么这么 (zěnme zhème, why so) expresses frustration or surprise. Internet speed vocabulary: 网速 (wǎngsù, internet speed), 带宽 (dàikuān, bandwidth), 5G网络 (5G wǎngluò, 5G network), 卡 (kǎ, to lag/buffer — 视频很卡 means 'the video is lagging'). China's 5G deployment is among the world's most advanced. Common internet complaints: 卡了 (lagging), 掉线了 (diàoxiàn le, disconnected), 连不上 (lián bú shàng, can't connect)."
+      },
+      {
+        "id": "ec_tci10",
+        "question": "我刚在网上_____了一双鞋。",
+        "translation": "(I just bought a pair of shoes online.)",
+        "options": [
+          "买",
+          "卖",
+          "看",
+          "试"
+        ],
+        "correct": "买",
+        "explanation": "在网上买 (zài wǎngshàng mǎi) means 'to buy online.' E-commerce vocabulary: 网购 (wǎnggòu, online shopping), 下单 (xiàdān, place order), 快递 (kuàidì, express delivery), 物流 (wùliú, logistics), 退货 (tuìhuò, return goods), 好评 (hǎopíng, positive review). China's e-commerce events: 双十一 (shuāng shíyī, Singles' Day/11.11 — world's largest shopping festival), 双十二 (12.12), 618 (June 18). 一双 is the measure word for pairs: 一双鞋 (a pair of shoes), 一双袜子 (a pair of socks)."
+      },
+      {
+        "id": "ec_tci11",
+        "question": "现在很多人用_____来学习语言。",
+        "translation": "(Now many people use apps to study languages.)",
+        "options": [
+          "应用程序",
+          "课本",
+          "电视",
+          "收音机"
+        ],
+        "correct": "应用程序",
+        "explanation": "应用程序 (yìngyòng chéngxù) means 'application / app.' In spoken Chinese, APP is more commonly used than the full Chinese term. Education technology: 在线教育 (zàixiàn jiàoyù, online education), 网课 (wǎngkè, online class), 直播课 (zhíbō kè, live-streamed class), 录播课 (lùbō kè, recorded class). China's ed-tech sector was enormous before 2021 regulatory changes. Popular learning platforms: 学而思 (Xuérsī), 猿辅导 (Yuán Fǔdǎo). 用...来 (yòng...lái, use...to) is the instrumental pattern."
+      },
+      {
+        "id": "ec_tci12",
+        "question": "他是一名软件_____。",
+        "translation": "(He is a software engineer.)",
+        "options": [
+          "工程师",
+          "设计师",
+          "销售员",
+          "教师"
+        ],
+        "correct": "工程师",
+        "explanation": "软件工程师 (ruǎnjiàn gōngchéngshī) means 'software engineer.' Tech job titles: 程序员 (chéngxùyuán, programmer), 产品经理 (chǎnpǐn jīnglǐ, product manager), 设计师 (shèjìshī, designer), 数据分析师 (shùjù fēnxīshī, data analyst), 运维工程师 (yùnwéi gōngchéngshī, DevOps engineer). 码农 (mǎnóng, 'code farmer') is the humorous self-deprecating term programmers use for themselves in Chinese internet culture. Tech hubs: 中关村 (Zhōngguāncūn, Beijing), 深圳 (Shēnzhèn), 杭州 (Hángzhōu)."
+      },
+      {
+        "id": "ec_tci13",
+        "question": "这款手机的_____很好。",
+        "translation": "(This phone's camera is very good.)",
+        "options": [
+          "摄像头",
+          "屏幕",
+          "电池",
+          "音响"
+        ],
+        "correct": "摄像头",
+        "explanation": "摄像头 (shèxiàngtóu) means 'camera (on a device).' Phone specification vocabulary: 摄像头 (camera), 屏幕 (píngmù, screen), 电池 (diànchí, battery), 内存 (nèicún, RAM/storage), 处理器 (chǔlǐqì, processor). Chinese phone brands: 华为 (Huáwéi), 小米 (Xiǎomǐ), OPPO, vivo, 荣耀 (Róngyào, Honor). Phone reviews often focus on 拍照 (pāizhào, photography) capabilities. 这款 (zhè kuǎn, this model) uses the measure word 款 for products/models."
+      },
+      {
+        "id": "ec_tci14",
+        "question": "请把这个文件_____到云端。",
+        "translation": "(Please upload this file to the cloud.)",
+        "options": [
+          "上传",
+          "下载",
+          "删除",
+          "打印"
+        ],
+        "correct": "上传",
+        "explanation": "上传 (shàngchuán) means 'to upload.' Cloud computing vocabulary: 云端 (yúnduān, the cloud), 云存储 (yún cúnchǔ, cloud storage), 备份 (bèifèn, backup), 同步 (tóngbù, sync). Chinese cloud services: 阿里云 (Aliyun/Alibaba Cloud), 腾讯云 (Tencent Cloud), 百度网盘 (Baidu Cloud Disk — popular personal cloud storage). The direction pair 上/下 works figuratively: 上传 (upload — send up), 下载 (download — load down). Cloud computing 云计算 (yún jìsuàn) is a major Chinese tech sector."
+      },
+      {
+        "id": "ec_tci15",
+        "question": "直播带货已经成为一种新的_____方式。",
+        "translation": "(Livestream selling has become a new sales method.)",
+        "options": [
+          "销售",
+          "学习",
+          "运动",
+          "娱乐"
+        ],
+        "correct": "销售",
+        "explanation": "直播带货 (zhíbō dàihuò) means 'livestream commerce / selling products via livestream.' This is a massive industry in China pioneered by influencers like 李佳琦 (Lǐ Jiāqí) and 薇娅 (Wēiyǎ). E-commerce livestream vocabulary: 主播 (zhǔbō, livestreamer/host), 带货 (dàihuò, to promote and sell products), 直播间 (zhíbō jiān, livestream room), 秒杀 (miǎoshā, flash sale). This Chinese innovation has transformed global e-commerce and represents the convergence of entertainment, social media, and shopping."
+      }
+    ]
   }
 ]
