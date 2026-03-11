@@ -3378,5 +3378,3905 @@
         "exampleTranslation": "Jesienią często przychodzą tajfuny."
       }
     ]
+  },
+  {
+    "key": "daily_routine",
+    "name": "Codzienna rutyna",
+    "description": "Czynności wykonywane codziennie po japońsku",
+    "iconName": "alarm.fill",
+    "color": "#E67E22",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_daily_1",
+        "front": "Budzić się",
+        "back": "起きる（おきる）",
+        "difficulty": "easy",
+        "example": "毎朝六時に起きます。",
+        "exampleTranslation": "Budzę się codziennie o szóstej rano."
+      },
+      {
+        "id": "pj_daily_2",
+        "front": "Myć zęby",
+        "back": "歯を磨く（はをみがく）",
+        "difficulty": "easy",
+        "example": "朝ごはんの前に歯を磨きます。",
+        "exampleTranslation": "Przed śniadaniem myję zęby."
+      },
+      {
+        "id": "pj_daily_3",
+        "front": "Brać prysznic",
+        "back": "シャワーを浴びる",
+        "difficulty": "easy",
+        "example": "毎朝シャワーを浴びます。",
+        "exampleTranslation": "Codziennie rano biorę prysznic."
+      },
+      {
+        "id": "pj_daily_4",
+        "front": "Ubierać się",
+        "back": "着替える（きがえる）",
+        "difficulty": "easy",
+        "example": "学校に行く前に着替えます。",
+        "exampleTranslation": "Ubieram się przed wyjściem do szkoły."
+      },
+      {
+        "id": "pj_daily_5",
+        "front": "Jeść śniadanie",
+        "back": "朝ごはんを食べる",
+        "difficulty": "easy",
+        "example": "毎日朝ごはんを食べます。",
+        "exampleTranslation": "Codziennie jem śniadanie."
+      },
+      {
+        "id": "pj_daily_6",
+        "front": "Iść do pracy",
+        "back": "仕事に行く（しごとにいく）",
+        "difficulty": "easy",
+        "example": "八時に仕事に行きます。",
+        "exampleTranslation": "O ósmej idę do pracy."
+      },
+      {
+        "id": "pj_daily_7",
+        "front": "Gotować",
+        "back": "料理する（りょうりする）",
+        "difficulty": "medium",
+        "example": "夕飯に料理をします。",
+        "exampleTranslation": "Gotuję na kolację."
+      },
+      {
+        "id": "pj_daily_8",
+        "front": "Sprzątać",
+        "back": "掃除する（そうじする）",
+        "difficulty": "medium",
+        "example": "週末に部屋を掃除します。",
+        "exampleTranslation": "W weekend sprzątam pokój."
+      },
+      {
+        "id": "pj_daily_9",
+        "front": "Robić pranie",
+        "back": "洗濯する（せんたくする）",
+        "difficulty": "medium",
+        "example": "毎週洗濯します。",
+        "exampleTranslation": "Co tydzień robię pranie."
+      },
+      {
+        "id": "pj_daily_10",
+        "front": "Odpoczywać",
+        "back": "休む（やすむ）",
+        "difficulty": "medium",
+        "example": "昼ご飯の後に少し休みます。",
+        "exampleTranslation": "Po obiedzie trochę odpoczywam."
+      },
+      {
+        "id": "pj_daily_11",
+        "front": "Spacerować",
+        "back": "散歩する（さんぽする）",
+        "difficulty": "medium",
+        "example": "夕方に散歩するのが好きです。",
+        "exampleTranslation": "Lubię spacerować wieczorami."
+      },
+      {
+        "id": "pj_daily_12",
+        "front": "Kłaść się spać",
+        "back": "寝る（ねる）",
+        "difficulty": "medium",
+        "example": "十一時に寝ます。",
+        "exampleTranslation": "Kładę się spać o jedenastej."
+      },
+      {
+        "id": "pj_daily_13",
+        "front": "Rozmawiać przez telefon",
+        "back": "電話する（でんわする）",
+        "difficulty": "hard",
+        "example": "毎日母に電話します。",
+        "exampleTranslation": "Codziennie dzwonię do mamy."
+      },
+      {
+        "id": "pj_daily_14",
+        "front": "Robić zakupy",
+        "back": "買い物する（かいものする）",
+        "difficulty": "hard",
+        "example": "金曜日にスーパーで買い物します。",
+        "exampleTranslation": "W piątek robię zakupy w supermarkecie."
+      },
+      {
+        "id": "pj_daily_15",
+        "front": "Dojeżdżać do pracy",
+        "back": "通勤する（つうきんする）",
+        "difficulty": "hard",
+        "example": "電車で通勤しています。",
+        "exampleTranslation": "Dojeżdżam do pracy pociągiem."
+      }
+    ]
+  },
+  {
+    "key": "meals",
+    "name": "Posiłki",
+    "description": "Słownictwo związane z posiłkami po japońsku",
+    "iconName": "fork.knife",
+    "color": "#E74C3C",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_meal_1",
+        "front": "Śniadanie",
+        "back": "朝ごはん（あさごはん）",
+        "difficulty": "easy",
+        "example": "朝ごはんにパンを食べます。",
+        "exampleTranslation": "Na śniadanie jem chleb."
+      },
+      {
+        "id": "pj_meal_2",
+        "front": "Obiad",
+        "back": "昼ごはん（ひるごはん）",
+        "difficulty": "easy",
+        "example": "昼ごはんに何を食べますか？",
+        "exampleTranslation": "Co jesz na obiad?"
+      },
+      {
+        "id": "pj_meal_3",
+        "front": "Kolacja",
+        "back": "夕飯（ゆうはん）",
+        "difficulty": "easy",
+        "example": "家族と一緒に夕飯を食べます。",
+        "exampleTranslation": "Jem kolację z rodziną."
+      },
+      {
+        "id": "pj_meal_4",
+        "front": "Ryż",
+        "back": "ご飯（ごはん）",
+        "difficulty": "easy",
+        "example": "日本ではご飯をよく食べます。",
+        "exampleTranslation": "W Japonii często je się ryż."
+      },
+      {
+        "id": "pj_meal_5",
+        "front": "Zupa miso",
+        "back": "味噌汁（みそしる）",
+        "difficulty": "easy",
+        "example": "味噌汁は日本の伝統的な料理です。",
+        "exampleTranslation": "Zupa miso to tradycyjne japońskie danie."
+      },
+      {
+        "id": "pj_meal_6",
+        "front": "Sushi",
+        "back": "寿司（すし）",
+        "difficulty": "easy",
+        "example": "寿司は世界中で人気があります。",
+        "exampleTranslation": "Sushi jest popularne na całym świecie."
+      },
+      {
+        "id": "pj_meal_7",
+        "front": "Makaron ramen",
+        "back": "ラーメン",
+        "difficulty": "medium",
+        "example": "寒い日にはラーメンが最高です。",
+        "exampleTranslation": "W zimny dzień ramen jest najlepszy."
+      },
+      {
+        "id": "pj_meal_8",
+        "front": "Przekąska",
+        "back": "おやつ",
+        "difficulty": "medium",
+        "example": "三時のおやつにクッキーを食べます。",
+        "exampleTranslation": "Na przekąskę o trzeciej jem ciasteczka."
+      },
+      {
+        "id": "pj_meal_9",
+        "front": "Grillowane mięso",
+        "back": "焼肉（やきにく）",
+        "difficulty": "medium",
+        "example": "週末に焼肉屋に行きました。",
+        "exampleTranslation": "W weekend poszliśmy do restauracji z grillem."
+      },
+      {
+        "id": "pj_meal_10",
+        "front": "Tempura",
+        "back": "天ぷら（てんぷら）",
+        "difficulty": "medium",
+        "example": "天ぷらは油で揚げた料理です。",
+        "exampleTranslation": "Tempura to potrawa smażona na głębokim oleju."
+      },
+      {
+        "id": "pj_meal_11",
+        "front": "Bento",
+        "back": "弁当（べんとう）",
+        "difficulty": "medium",
+        "example": "学校に弁当を持って行きます。",
+        "exampleTranslation": "Zabieram bento do szkoły."
+      },
+      {
+        "id": "pj_meal_12",
+        "front": "Tofu",
+        "back": "豆腐（とうふ）",
+        "difficulty": "medium",
+        "example": "豆腐は大豆から作ります。",
+        "exampleTranslation": "Tofu robi się z soi."
+      },
+      {
+        "id": "pj_meal_13",
+        "front": "Makaron udon",
+        "back": "うどん",
+        "difficulty": "hard",
+        "example": "うどんは太い麺です。",
+        "exampleTranslation": "Udon to gruby makaron."
+      },
+      {
+        "id": "pj_meal_14",
+        "front": "Onigiri",
+        "back": "おにぎり",
+        "difficulty": "hard",
+        "example": "おにぎりの中に鮞が入っています。",
+        "exampleTranslation": "W środku onigiri jest łosoś."
+      },
+      {
+        "id": "pj_meal_15",
+        "front": "Danie jednogarnkowe",
+        "back": "鍋料理（なべりょうり）",
+        "difficulty": "hard",
+        "example": "冬には鍋料理をよく食べます。",
+        "exampleTranslation": "Zimą często jemy dania gotowane w garnku."
+      }
+    ]
+  },
+  {
+    "key": "desserts",
+    "name": "Desery",
+    "description": "Nazwy deserów i słodyczy po japońsku",
+    "iconName": "birthday.cake.fill",
+    "color": "#F1948A",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_dessert_1",
+        "front": "Ciasto",
+        "back": "ケーキ",
+        "difficulty": "easy",
+        "example": "誕生日にケーキを食べます。",
+        "exampleTranslation": "Na urodziny jemy ciasto."
+      },
+      {
+        "id": "pj_dessert_2",
+        "front": "Lody",
+        "back": "アイスクリーム",
+        "difficulty": "easy",
+        "example": "夏にアイスクリームを食べるのが好きです。",
+        "exampleTranslation": "Lubię jeść lody latem."
+      },
+      {
+        "id": "pj_dessert_3",
+        "front": "Czekolada",
+        "back": "チョコレート",
+        "difficulty": "easy",
+        "example": "バレンタインデーにチョコレートをあげます。",
+        "exampleTranslation": "Na Walentynki daję czekoladki."
+      },
+      {
+        "id": "pj_dessert_4",
+        "front": "Ciastko",
+        "back": "クッキー",
+        "difficulty": "easy",
+        "example": "焼きたてのクッキーはおいしいです。",
+        "exampleTranslation": "Świeżo upieczone ciastka są pyszne."
+      },
+      {
+        "id": "pj_dessert_5",
+        "front": "Cukierek",
+        "back": "飴（あめ）",
+        "difficulty": "easy",
+        "example": "飴をなめています。",
+        "exampleTranslation": "Ssę cukierek."
+      },
+      {
+        "id": "pj_dessert_6",
+        "front": "Pudding",
+        "back": "プリン",
+        "difficulty": "easy",
+        "example": "プリンは子供に人気です。",
+        "exampleTranslation": "Pudding jest popularny wśród dzieci."
+      },
+      {
+        "id": "pj_dessert_7",
+        "front": "Naleśnik",
+        "back": "パンケーキ",
+        "difficulty": "medium",
+        "example": "日曜日にパンケーキを作ります。",
+        "exampleTranslation": "W niedzielę robię naleśniki."
+      },
+      {
+        "id": "pj_dessert_8",
+        "front": "Mochi",
+        "back": "餅（もち）",
+        "difficulty": "medium",
+        "example": "お正月に餅を食べます。",
+        "exampleTranslation": "Na Nowy Rok jemy mochi."
+      },
+      {
+        "id": "pj_dessert_9",
+        "front": "Dorayaki",
+        "back": "どら焼き",
+        "difficulty": "medium",
+        "example": "どら焼きの中にあんこが入っています。",
+        "exampleTranslation": "W dorayaki jest pasta z czerwonej fasoli."
+      },
+      {
+        "id": "pj_dessert_10",
+        "front": "Dango",
+        "back": "団子（だんご）",
+        "difficulty": "medium",
+        "example": "お花見の時に団子を食べます。",
+        "exampleTranslation": "Podczas hanami jemy dango."
+      },
+      {
+        "id": "pj_dessert_11",
+        "front": "Gofr",
+        "back": "ワッフル",
+        "difficulty": "medium",
+        "example": "ワッフルにはちみつをかけます。",
+        "exampleTranslation": "Polewam gofra miodem."
+      },
+      {
+        "id": "pj_dessert_12",
+        "front": "Słodycze japońskie",
+        "back": "おはぎ",
+        "difficulty": "medium",
+        "example": "おはぎは甘いお菓子です。",
+        "exampleTranslation": "Ohagi to słodki przysmak."
+      },
+      {
+        "id": "pj_dessert_13",
+        "front": "Taiyaki",
+        "back": "たい焼き",
+        "difficulty": "hard",
+        "example": "たい焼きは魚の形をしています。",
+        "exampleTranslation": "Taiyaki ma kształt ryby."
+      },
+      {
+        "id": "pj_dessert_14",
+        "front": "Matcha latte",
+        "back": "抹茶ラテ",
+        "difficulty": "hard",
+        "example": "カフェで抹茶ラテを注文しました。",
+        "exampleTranslation": "W kawiarni zamówiłem matcha latte."
+      },
+      {
+        "id": "pj_dessert_15",
+        "front": "Wagashi",
+        "back": "和菓子（わがし）",
+        "difficulty": "hard",
+        "example": "和菓子はとても美しいです。",
+        "exampleTranslation": "Japońskie słodycze wagashi są bardzo piękne."
+      }
+    ]
+  },
+  {
+    "key": "conversations",
+    "name": "Rozmowy",
+    "description": "Przydatne zwroty do codziennych rozmów po japońsku",
+    "iconName": "bubble.left.and.bubble.right.fill",
+    "color": "#9B59B6",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_conv_1",
+        "front": "Przepraszam",
+        "back": "すみません",
+        "difficulty": "easy",
+        "example": "すみません、道を教えてください。",
+        "exampleTranslation": "Przepraszam, proszę mi wskazać drogę."
+      },
+      {
+        "id": "pj_conv_2",
+        "front": "Proszę",
+        "back": "どうぞ",
+        "difficulty": "easy",
+        "example": "どうぞ、お座りください。",
+        "exampleTranslation": "Proszę, niech pan usiądzie."
+      },
+      {
+        "id": "pj_conv_3",
+        "front": "Oczywiście",
+        "back": "もちろん",
+        "difficulty": "easy",
+        "example": "もちろん、手伝います。",
+        "exampleTranslation": "Oczywiście, pomogę."
+      },
+      {
+        "id": "pj_conv_4",
+        "front": "Rozumiem",
+        "back": "分かりました（わかりました）",
+        "difficulty": "easy",
+        "example": "分かりました、ありがとうございます。",
+        "exampleTranslation": "Rozumiem, dziękuję bardzo."
+      },
+      {
+        "id": "pj_conv_5",
+        "front": "Nie rozumiem",
+        "back": "分かりません（わかりません）",
+        "difficulty": "easy",
+        "example": "日本語がまだ分かりません。",
+        "exampleTranslation": "Jeszcze nie rozumiem japońskiego."
+      },
+      {
+        "id": "pj_conv_6",
+        "front": "Proszę powtórzyć",
+        "back": "もう一度お願いします",
+        "difficulty": "easy",
+        "example": "すみません、もう一度お願いします。",
+        "exampleTranslation": "Przepraszam, proszę powtórzyć."
+      },
+      {
+        "id": "pj_conv_7",
+        "front": "Ile to kosztuje?",
+        "back": "いくらですか？",
+        "difficulty": "medium",
+        "example": "このシャツはいくらですか？",
+        "exampleTranslation": "Ile kosztuje ta koszula?"
+      },
+      {
+        "id": "pj_conv_8",
+        "front": "Gdzie jest...?",
+        "back": "どこですか？",
+        "difficulty": "medium",
+        "example": "トイレはどこですか？",
+        "exampleTranslation": "Gdzie jest toaleta?"
+      },
+      {
+        "id": "pj_conv_9",
+        "front": "Miło mi",
+        "back": "はじめまして",
+        "difficulty": "medium",
+        "example": "はじめまして、田中です。",
+        "exampleTranslation": "Miło mi, jestem Tanaka."
+      },
+      {
+        "id": "pj_conv_10",
+        "front": "Do zobaczenia",
+        "back": "また会いましょう",
+        "difficulty": "medium",
+        "example": "楽しかったです。また会いましょう。",
+        "exampleTranslation": "Było miło. Do zobaczenia."
+      },
+      {
+        "id": "pj_conv_11",
+        "front": "Chwileczkę",
+        "back": "ちょっと待ってください",
+        "difficulty": "medium",
+        "example": "ちょっと待ってください、すぐ戻ります。",
+        "exampleTranslation": "Proszę chwilę poczekać, zaraz wrócę."
+      },
+      {
+        "id": "pj_conv_12",
+        "front": "Smacznego",
+        "back": "いただきます",
+        "difficulty": "medium",
+        "example": "食べる前にいただきますと言います。",
+        "exampleTranslation": "Przed jedzeniem mówi się itadakimasu."
+      },
+      {
+        "id": "pj_conv_13",
+        "front": "Było pyszne",
+        "back": "ごちそうさまでした",
+        "difficulty": "hard",
+        "example": "食べた後にごちそうさまでしたと言います。",
+        "exampleTranslation": "Po jedzeniu mówi się gochisousama deshita."
+      },
+      {
+        "id": "pj_conv_14",
+        "front": "Nie ma za co",
+        "back": "どういたしまして",
+        "difficulty": "hard",
+        "example": "ありがとう。どういたしまして。",
+        "exampleTranslation": "Dziękuję. Nie ma za co."
+      },
+      {
+        "id": "pj_conv_15",
+        "front": "Pozwólcie, że się przedstawię",
+        "back": "自己紹介させていただきます",
+        "difficulty": "hard",
+        "example": "自己紹介させていただきます。ポーランドから来ました。",
+        "exampleTranslation": "Pozwólcie, że się przedstawię. Jestem z Polski."
+      }
+    ]
+  },
+  {
+    "key": "questions_asking",
+    "name": "Zadawanie pytań",
+    "description": "Jak zadawać pytania po japońsku",
+    "iconName": "questionmark.circle.fill",
+    "color": "#1ABC9C",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_ques_1",
+        "front": "Co?",
+        "back": "何（なに）",
+        "difficulty": "easy",
+        "example": "何を食べたいですか？",
+        "exampleTranslation": "Co chcesz zjeść?"
+      },
+      {
+        "id": "pj_ques_2",
+        "front": "Kto?",
+        "back": "誰（だれ）",
+        "difficulty": "easy",
+        "example": "誰が来ますか？",
+        "exampleTranslation": "Kto przyjdzie?"
+      },
+      {
+        "id": "pj_ques_3",
+        "front": "Gdzie?",
+        "back": "どこ",
+        "difficulty": "easy",
+        "example": "どこに住んでいますか？",
+        "exampleTranslation": "Gdzie mieszkasz?"
+      },
+      {
+        "id": "pj_ques_4",
+        "front": "Kiedy?",
+        "back": "いつ",
+        "difficulty": "easy",
+        "example": "いつ日本に来ましたか？",
+        "exampleTranslation": "Kiedy przyjechałeś do Japonii?"
+      },
+      {
+        "id": "pj_ques_5",
+        "front": "Dlaczego?",
+        "back": "なぜ",
+        "difficulty": "easy",
+        "example": "なぜ日本語を勉強していますか？",
+        "exampleTranslation": "Dlaczego uczysz się japońskiego?"
+      },
+      {
+        "id": "pj_ques_6",
+        "front": "Jak?",
+        "back": "どうやって",
+        "difficulty": "easy",
+        "example": "どうやってここに来ましたか？",
+        "exampleTranslation": "Jak tu dotarłeś?"
+      },
+      {
+        "id": "pj_ques_7",
+        "front": "Ile?",
+        "back": "いくつ",
+        "difficulty": "medium",
+        "example": "りんごはいくつありますか？",
+        "exampleTranslation": "Ile jest jabłek?"
+      },
+      {
+        "id": "pj_ques_8",
+        "front": "Który?",
+        "back": "どれ",
+        "difficulty": "medium",
+        "example": "どれが一番好きですか？",
+        "exampleTranslation": "Który lubisz najbardziej?"
+      },
+      {
+        "id": "pj_ques_9",
+        "front": "Jak długo?",
+        "back": "どのくらい",
+        "difficulty": "medium",
+        "example": "どのくらい日本にいますか？",
+        "exampleTranslation": "Jak długo jesteś w Japonii?"
+      },
+      {
+        "id": "pj_ques_10",
+        "front": "Czy lubisz...?",
+        "back": "好きですか（すきですか）",
+        "difficulty": "medium",
+        "example": "日本料理が好きですか？",
+        "exampleTranslation": "Czy lubisz kuchnię japońską?"
+      },
+      {
+        "id": "pj_ques_11",
+        "front": "Jak się nazywasz?",
+        "back": "お名前は何ですか",
+        "difficulty": "medium",
+        "example": "お名前は何ですか？田中です。",
+        "exampleTranslation": "Jak się nazywasz? Tanaka."
+      },
+      {
+        "id": "pj_ques_12",
+        "front": "Ile masz lat?",
+        "back": "何歳ですか（なんさいですか）",
+        "difficulty": "medium",
+        "example": "何歳ですか？二十五歳です。",
+        "exampleTranslation": "Ile masz lat? Mam dwadzieścia pięć lat."
+      },
+      {
+        "id": "pj_ques_13",
+        "front": "Czy mogę...?",
+        "back": "してもいいですか",
+        "difficulty": "hard",
+        "example": "写真を撮ってもいいですか？",
+        "exampleTranslation": "Czy mogę zrobić zdjęcie?"
+      },
+      {
+        "id": "pj_ques_14",
+        "front": "Czy mógłbyś...?",
+        "back": "していただけますか",
+        "difficulty": "hard",
+        "example": "もう少しゆっくり話していただけますか？",
+        "exampleTranslation": "Czy mógłbyś mówić trochę wolniej?"
+      },
+      {
+        "id": "pj_ques_15",
+        "front": "Co sądzisz o...?",
+        "back": "についてどう思いますか",
+        "difficulty": "hard",
+        "example": "日本の文化についてどう思いますか？",
+        "exampleTranslation": "Co sądzisz o japońskiej kulturze?"
+      }
+    ]
+  },
+  {
+    "key": "accessories",
+    "name": "Akcesoria",
+    "description": "Nazwy akcesoriów i dodatków po japońsku",
+    "iconName": "eyeglasses",
+    "color": "#8E44AD",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_acc_1",
+        "front": "Okulary",
+        "back": "眼鏡（めがね）",
+        "difficulty": "easy",
+        "example": "眼鏡をかけています。",
+        "exampleTranslation": "Noszę okulary."
+      },
+      {
+        "id": "pj_acc_2",
+        "front": "Zegarek",
+        "back": "腕時計（うでどけい）",
+        "difficulty": "easy",
+        "example": "新しい腕時計を買いました。",
+        "exampleTranslation": "Kupiłem nowy zegarek."
+      },
+      {
+        "id": "pj_acc_3",
+        "front": "Torebka",
+        "back": "ハンドバッグ",
+        "difficulty": "easy",
+        "example": "赤いハンドバッグが欲しいです。",
+        "exampleTranslation": "Chcę czerwoną torebkę."
+      },
+      {
+        "id": "pj_acc_4",
+        "front": "Pasek",
+        "back": "ベルト",
+        "difficulty": "easy",
+        "example": "黒いベルトをしています。",
+        "exampleTranslation": "Noszę czarny pasek."
+      },
+      {
+        "id": "pj_acc_5",
+        "front": "Pierścionek",
+        "back": "指輪（ゆびわ）",
+        "difficulty": "easy",
+        "example": "結婚指輪を見せてください。",
+        "exampleTranslation": "Pokaż mi obrączkę."
+      },
+      {
+        "id": "pj_acc_6",
+        "front": "Naszyjnik",
+        "back": "ネックレス",
+        "difficulty": "easy",
+        "example": "美しいネックレスをもらいました。",
+        "exampleTranslation": "Dostałam piękny naszyjnik."
+      },
+      {
+        "id": "pj_acc_7",
+        "front": "Parasol",
+        "back": "傘（かさ）",
+        "difficulty": "medium",
+        "example": "雨なので傘を持って行きます。",
+        "exampleTranslation": "Pada deszcz, więc biorę parasol."
+      },
+      {
+        "id": "pj_acc_8",
+        "front": "Portfel",
+        "back": "財布（さいふ）",
+        "difficulty": "medium",
+        "example": "財布を忘れました。",
+        "exampleTranslation": "Zapomniałem portfela."
+      },
+      {
+        "id": "pj_acc_9",
+        "front": "Kolczyki",
+        "back": "イヤリング",
+        "difficulty": "medium",
+        "example": "新しいイヤリングをつけています。",
+        "exampleTranslation": "Mam na sobie nowe kolczyki."
+      },
+      {
+        "id": "pj_acc_10",
+        "front": "Szalik",
+        "back": "マフラー",
+        "difficulty": "medium",
+        "example": "寒いのでマフラーをします。",
+        "exampleTranslation": "Jest zimno, więc zakładam szalik."
+      },
+      {
+        "id": "pj_acc_11",
+        "front": "Rękawiczki",
+        "back": "手袋（てぶくろ）",
+        "difficulty": "medium",
+        "example": "雪の日に手袋が必要です。",
+        "exampleTranslation": "W śnieżny dzień potrzebne są rękawiczki."
+      },
+      {
+        "id": "pj_acc_12",
+        "front": "Plecak",
+        "back": "リュックサック",
+        "difficulty": "medium",
+        "example": "リュックサックに本を入れます。",
+        "exampleTranslation": "Wkładam książki do plecaka."
+      },
+      {
+        "id": "pj_acc_13",
+        "front": "Bransoletka",
+        "back": "ブレスレット",
+        "difficulty": "hard",
+        "example": "金のブレスレットを持っています。",
+        "exampleTranslation": "Mam złotą bransoletkę."
+      },
+      {
+        "id": "pj_acc_14",
+        "front": "Krawat",
+        "back": "ネクタイ",
+        "difficulty": "hard",
+        "example": "仕事にネクタイをします。",
+        "exampleTranslation": "Do pracy zakładam krawat."
+      },
+      {
+        "id": "pj_acc_15",
+        "front": "Okulary przeciwsłoneczne",
+        "back": "サングラス",
+        "difficulty": "hard",
+        "example": "夏にサングラスをかけます。",
+        "exampleTranslation": "Latem noszę okulary przeciwsłoneczne."
+      }
+    ]
+  },
+  {
+    "key": "pets_animals",
+    "name": "Zwierzęta domowe",
+    "description": "Nazwy zwierząt domowych i opieki nad nimi po japońsku",
+    "iconName": "pawprint.fill",
+    "color": "#A0522D",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_pet_1",
+        "front": "Pies",
+        "back": "犬（いぬ）",
+        "difficulty": "easy",
+        "example": "犬を飼っています。",
+        "exampleTranslation": "Mam psa."
+      },
+      {
+        "id": "pj_pet_2",
+        "front": "Kot",
+        "back": "猫（ねこ）",
+        "difficulty": "easy",
+        "example": "猫がソファーで寝ています。",
+        "exampleTranslation": "Kot śpi na kanapie."
+      },
+      {
+        "id": "pj_pet_3",
+        "front": "Rybka",
+        "back": "金魚（きんぎょ）",
+        "difficulty": "easy",
+        "example": "金魚を三匹飼っています。",
+        "exampleTranslation": "Hoduję trzy rybki."
+      },
+      {
+        "id": "pj_pet_4",
+        "front": "Chomik",
+        "back": "ハムスター",
+        "difficulty": "easy",
+        "example": "ハムスターはかわいいです。",
+        "exampleTranslation": "Chomik jest słodki."
+      },
+      {
+        "id": "pj_pet_5",
+        "front": "Królik",
+        "back": "うさぎ",
+        "difficulty": "easy",
+        "example": "うさぎがニンジンを食べています。",
+        "exampleTranslation": "Królik je marchewkę."
+      },
+      {
+        "id": "pj_pet_6",
+        "front": "Papuga",
+        "back": "インコ",
+        "difficulty": "easy",
+        "example": "インコが話します。",
+        "exampleTranslation": "Papuga mówi."
+      },
+      {
+        "id": "pj_pet_7",
+        "front": "Karma dla zwierząt",
+        "back": "ペットフード",
+        "difficulty": "medium",
+        "example": "ペットフードを買いに行きます。",
+        "exampleTranslation": "Idę kupić karmę dla zwierząt."
+      },
+      {
+        "id": "pj_pet_8",
+        "front": "Spacerować z psem",
+        "back": "犬の散歩（いぬのさんぽ）",
+        "difficulty": "medium",
+        "example": "毎朝犬の散歩をします。",
+        "exampleTranslation": "Codziennie rano spaceruję z psem."
+      },
+      {
+        "id": "pj_pet_9",
+        "front": "Weterynarz",
+        "back": "獣医（じゅうい）",
+        "difficulty": "medium",
+        "example": "猫を獣医に連れて行きます。",
+        "exampleTranslation": "Zabiorę kota do weterynarza."
+      },
+      {
+        "id": "pj_pet_10",
+        "front": "Żółw",
+        "back": "亀（かめ）",
+        "difficulty": "medium",
+        "example": "亀は長生きです。",
+        "exampleTranslation": "Żółwie żyją długo."
+      },
+      {
+        "id": "pj_pet_11",
+        "front": "Klatka",
+        "back": "かご",
+        "difficulty": "medium",
+        "example": "鳥がかごの中にいます。",
+        "exampleTranslation": "Ptak jest w klatce."
+      },
+      {
+        "id": "pj_pet_12",
+        "front": "Akwarium",
+        "back": "水槽（すいそう）",
+        "difficulty": "medium",
+        "example": "居間に水槽があります。",
+        "exampleTranslation": "W salonie jest akwarium."
+      },
+      {
+        "id": "pj_pet_13",
+        "front": "Smycz",
+        "back": "リード",
+        "difficulty": "hard",
+        "example": "犬にリードをつけてください。",
+        "exampleTranslation": "Proszę założyć psu smycz."
+      },
+      {
+        "id": "pj_pet_14",
+        "front": "Szczepienie",
+        "back": "予防接種（よぼうせっしゅ）",
+        "difficulty": "hard",
+        "example": "犬の予防接種に行きます。",
+        "exampleTranslation": "Idę na szczepienie psa."
+      },
+      {
+        "id": "pj_pet_15",
+        "front": "Adopcja zwierzęcia",
+        "back": "ペットの里親（さとおや）",
+        "difficulty": "hard",
+        "example": "保護猫を引き取りました。",
+        "exampleTranslation": "Adoptowałem kota ze schroniska."
+      }
+    ]
+  },
+  {
+    "key": "beach_sea",
+    "name": "Plaża i morze",
+    "description": "Słownictwo związane z plażą i morzem po japońsku",
+    "iconName": "water.waves",
+    "color": "#1ABC9C",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_beach_1",
+        "front": "Plaża",
+        "back": "ビーチ",
+        "difficulty": "easy",
+        "example": "夏にビーチに行きます。",
+        "exampleTranslation": "Latem jeżdżę na plażę."
+      },
+      {
+        "id": "pj_beach_2",
+        "front": "Morze",
+        "back": "海（うみ）",
+        "difficulty": "easy",
+        "example": "海がきれいです。",
+        "exampleTranslation": "Morze jest piękne."
+      },
+      {
+        "id": "pj_beach_3",
+        "front": "Piasek",
+        "back": "砂（すな）",
+        "difficulty": "easy",
+        "example": "子供が砂で遊んでいます。",
+        "exampleTranslation": "Dzieci bawią się w piasku."
+      },
+      {
+        "id": "pj_beach_4",
+        "front": "Fale",
+        "back": "波（なみ）",
+        "difficulty": "easy",
+        "example": "今日は波が高いです。",
+        "exampleTranslation": "Dziś fale są wysokie."
+      },
+      {
+        "id": "pj_beach_5",
+        "front": "Pływać",
+        "back": "泳ぐ（およぐ）",
+        "difficulty": "easy",
+        "example": "海で泳ぎました。",
+        "exampleTranslation": "Pływałem w morzu."
+      },
+      {
+        "id": "pj_beach_6",
+        "front": "Opalanie",
+        "back": "日光浴（にっこうよく）",
+        "difficulty": "easy",
+        "example": "ビーチで日光浴をします。",
+        "exampleTranslation": "Opalam się na plaży."
+      },
+      {
+        "id": "pj_beach_7",
+        "front": "Krem do opalania",
+        "back": "日焼け止め（ひやけどめ）",
+        "difficulty": "medium",
+        "example": "日焼け止めを塗りました。",
+        "exampleTranslation": "Nałożyłam krem do opalania."
+      },
+      {
+        "id": "pj_beach_8",
+        "front": "Ręcznik plażowy",
+        "back": "ビーチタオル",
+        "difficulty": "medium",
+        "example": "ビーチタオルを広げました。",
+        "exampleTranslation": "Rozłożyłem ręcznik plażowy."
+      },
+      {
+        "id": "pj_beach_9",
+        "front": "Muszla",
+        "back": "貝殻（かいがら）",
+        "difficulty": "medium",
+        "example": "きれいな貝殻を拾いました。",
+        "exampleTranslation": "Znalazłem piękną muszlę."
+      },
+      {
+        "id": "pj_beach_10",
+        "front": "Nurkowanie",
+        "back": "ダイビング",
+        "difficulty": "medium",
+        "example": "沖縄でダイビングをしました。",
+        "exampleTranslation": "Nurkowałem na Okinawie."
+      },
+      {
+        "id": "pj_beach_11",
+        "front": "Latarnia morska",
+        "back": "灯台（とうだい）",
+        "difficulty": "medium",
+        "example": "灯台の光が見えます。",
+        "exampleTranslation": "Widać światło latarni morskiej."
+      },
+      {
+        "id": "pj_beach_12",
+        "front": "Surfing",
+        "back": "サーフィン",
+        "difficulty": "medium",
+        "example": "サーフィンは難しいです。",
+        "exampleTranslation": "Surfing jest trudny."
+      },
+      {
+        "id": "pj_beach_13",
+        "front": "Zachód słońca",
+        "back": "夕日（ゆうひ）",
+        "difficulty": "hard",
+        "example": "海で夕日を見ました。",
+        "exampleTranslation": "Oglądałem zachód słońca nad morzem."
+      },
+      {
+        "id": "pj_beach_14",
+        "front": "Rafa koralowa",
+        "back": "珊瑚礁（さんごしょう）",
+        "difficulty": "hard",
+        "example": "珊瑚礁を守ることが大切です。",
+        "exampleTranslation": "Ochrona raf koralowych jest ważna."
+      },
+      {
+        "id": "pj_beach_15",
+        "front": "Przypływ i odpływ",
+        "back": "潮の満ち引き（しおのみちひき）",
+        "difficulty": "hard",
+        "example": "潮の満ち引きに注意してください。",
+        "exampleTranslation": "Uważaj na przypływy i odpływy."
+      }
+    ]
+  },
+  {
+    "key": "everyday_objects",
+    "name": "Przedmioty codzienne",
+    "description": "Nazwy przedmiotów używanych na co dzień po japońsku",
+    "iconName": "key.fill",
+    "color": "#F39C12",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_obj_1",
+        "front": "Klucz",
+        "back": "鍵（かぎ）",
+        "difficulty": "easy",
+        "example": "鍵を忘れました。",
+        "exampleTranslation": "Zapomniałem kluczy."
+      },
+      {
+        "id": "pj_obj_2",
+        "front": "Telefon",
+        "back": "携帯電話（けいたいでんわ）",
+        "difficulty": "easy",
+        "example": "携帯電話を充電します。",
+        "exampleTranslation": "Ładuję telefon."
+      },
+      {
+        "id": "pj_obj_3",
+        "front": "Chusteczka",
+        "back": "ティッシュ",
+        "difficulty": "easy",
+        "example": "ティッシュをください。",
+        "exampleTranslation": "Proszę o chusteczkę."
+      },
+      {
+        "id": "pj_obj_4",
+        "front": "Nożyczki",
+        "back": "はさみ",
+        "difficulty": "easy",
+        "example": "はさみで紙を切ります。",
+        "exampleTranslation": "Tnę papier nożyczkami."
+      },
+      {
+        "id": "pj_obj_5",
+        "front": "Lusterko",
+        "back": "鏡（かがみ）",
+        "difficulty": "easy",
+        "example": "鏡を見てください。",
+        "exampleTranslation": "Spójrz w lustro."
+      },
+      {
+        "id": "pj_obj_6",
+        "front": "Świeca",
+        "back": "ろうそく",
+        "difficulty": "easy",
+        "example": "ろうそくに火をつけました。",
+        "exampleTranslation": "Zapaliłem świecę."
+      },
+      {
+        "id": "pj_obj_7",
+        "front": "Bateria",
+        "back": "電池（でんち）",
+        "difficulty": "medium",
+        "example": "電池が切れました。",
+        "exampleTranslation": "Bateria się wyczerpala."
+      },
+      {
+        "id": "pj_obj_8",
+        "front": "Załącznik",
+        "back": "コンセント",
+        "difficulty": "medium",
+        "example": "コンセントが必要です。",
+        "exampleTranslation": "Potrzebuję gniazdka."
+      },
+      {
+        "id": "pj_obj_9",
+        "front": "Zapalniczka",
+        "back": "ライター",
+        "difficulty": "medium",
+        "example": "ライターを持っていますか？",
+        "exampleTranslation": "Czy masz zapalniczkę?"
+      },
+      {
+        "id": "pj_obj_10",
+        "front": "Grzebień",
+        "back": "くし",
+        "difficulty": "medium",
+        "example": "髪をくしでとかします。",
+        "exampleTranslation": "Czeszę włosy grzebieniem."
+      },
+      {
+        "id": "pj_obj_11",
+        "front": "Taśma klejąca",
+        "back": "テープ",
+        "difficulty": "medium",
+        "example": "テープで箱を閉じました。",
+        "exampleTranslation": "Zamknąłem pudło taśmą klejącą."
+      },
+      {
+        "id": "pj_obj_12",
+        "front": "Pędzel",
+        "back": "筆（ふで）",
+        "difficulty": "medium",
+        "example": "筆で絵を描きます。",
+        "exampleTranslation": "Maluję obrazek pędzlem."
+      },
+      {
+        "id": "pj_obj_13",
+        "front": "Igła",
+        "back": "針（はり）",
+        "difficulty": "hard",
+        "example": "針でボタンをつけます。",
+        "exampleTranslation": "Przyszywam guzik igłą."
+      },
+      {
+        "id": "pj_obj_14",
+        "front": "Sznurek",
+        "back": "ひも",
+        "difficulty": "hard",
+        "example": "ひもで荷物を縛りました。",
+        "exampleTranslation": "Związałem paczkę sznurkiem."
+      },
+      {
+        "id": "pj_obj_15",
+        "front": "Spinacz do papieru",
+        "back": "クリップ",
+        "difficulty": "hard",
+        "example": "書類をクリップでまとめます。",
+        "exampleTranslation": "Spiąłem dokumenty spinaczem."
+      }
+    ]
+  },
+  {
+    "key": "school_supplies",
+    "name": "Przybory szkolne",
+    "description": "Nazwy przyborów szkolnych po japońsku",
+    "iconName": "pencil.and.ruler.fill",
+    "color": "#3498DB",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_school_1",
+        "front": "Ołówek",
+        "back": "鉛筆（えんぴつ）",
+        "difficulty": "easy",
+        "example": "鉛筆で書いてください。",
+        "exampleTranslation": "Proszę pisać ołówkiem."
+      },
+      {
+        "id": "pj_school_2",
+        "front": "Długopis",
+        "back": "ボールペン",
+        "difficulty": "easy",
+        "example": "ボールペンを貸してください。",
+        "exampleTranslation": "Proszę pożyczyć mi długopis."
+      },
+      {
+        "id": "pj_school_3",
+        "front": "Zeszyt",
+        "back": "ノート",
+        "difficulty": "easy",
+        "example": "ノートにメモを取ります。",
+        "exampleTranslation": "Robię notatki w zeszycie."
+      },
+      {
+        "id": "pj_school_4",
+        "front": "Książka",
+        "back": "本（ほん）",
+        "difficulty": "easy",
+        "example": "図書館で本を借ります。",
+        "exampleTranslation": "Wypożyczam książki z biblioteki."
+      },
+      {
+        "id": "pj_school_5",
+        "front": "Gumka do mazania",
+        "back": "消しゴム（けしごむ）",
+        "difficulty": "easy",
+        "example": "消しゴムで間違いを消します。",
+        "exampleTranslation": "Wymazuję błędy gumką."
+      },
+      {
+        "id": "pj_school_6",
+        "front": "Linijka",
+        "back": "定規（じょうぎ）",
+        "difficulty": "easy",
+        "example": "定規で線を引きます。",
+        "exampleTranslation": "Rysuję linię linijką."
+      },
+      {
+        "id": "pj_school_7",
+        "front": "Piórnik",
+        "back": "筆箱（ふでばこ）",
+        "difficulty": "medium",
+        "example": "筆箱に鉛筆を入れます。",
+        "exampleTranslation": "Wkładam ołówki do piórnika."
+      },
+      {
+        "id": "pj_school_8",
+        "front": "Tablica",
+        "back": "黒板（こくばん）",
+        "difficulty": "medium",
+        "example": "先生が黒板に書きます。",
+        "exampleTranslation": "Nauczyciel pisze na tablicy."
+      },
+      {
+        "id": "pj_school_9",
+        "front": "Kreda",
+        "back": "チョーク",
+        "difficulty": "medium",
+        "example": "白いチョークで書きます。",
+        "exampleTranslation": "Piszę białą kredą."
+      },
+      {
+        "id": "pj_school_10",
+        "front": "Kalkulator",
+        "back": "電卓（でんたく）",
+        "difficulty": "medium",
+        "example": "数学の授業で電卓を使います。",
+        "exampleTranslation": "Używam kalkulatora na lekcji matematyki."
+      },
+      {
+        "id": "pj_school_11",
+        "front": "Klej",
+        "back": "のり",
+        "difficulty": "medium",
+        "example": "のりで紙を貼ります。",
+        "exampleTranslation": "Kleję papier klejem."
+      },
+      {
+        "id": "pj_school_12",
+        "front": "Farby",
+        "back": "絵の具（えのぐ）",
+        "difficulty": "medium",
+        "example": "絵の具で絵を描きます。",
+        "exampleTranslation": "Maluję farbami."
+      },
+      {
+        "id": "pj_school_13",
+        "front": "Plecak szkolny",
+        "back": "ランドセル",
+        "difficulty": "hard",
+        "example": "日本の子供はランドセルを使います。",
+        "exampleTranslation": "Japońskie dzieci używają tornistra randoseru."
+      },
+      {
+        "id": "pj_school_14",
+        "front": "Słownik",
+        "back": "辞書（じしょ）",
+        "difficulty": "hard",
+        "example": "辞書で言葉を調べます。",
+        "exampleTranslation": "Sprawdzam słowa w słowniku."
+      },
+      {
+        "id": "pj_school_15",
+        "front": "Cyrkiel",
+        "back": "コンパス",
+        "difficulty": "hard",
+        "example": "コンパスで円を描きます。",
+        "exampleTranslation": "Rysuję koło cyrklem."
+      }
+    ]
+  },
+  {
+    "key": "containers_packaging",
+    "name": "Pojemniki i opakowania",
+    "description": "Nazwy pojemników i opakowań po japońsku",
+    "iconName": "shippingbox.fill",
+    "color": "#D35400",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_cont_1",
+        "front": "Pudełko",
+        "back": "箱（はこ）",
+        "difficulty": "easy",
+        "example": "箱に荷物を入れます。",
+        "exampleTranslation": "Wkładam rzeczy do pudełka."
+      },
+      {
+        "id": "pj_cont_2",
+        "front": "Torba",
+        "back": "袋（ふくろ）",
+        "difficulty": "easy",
+        "example": "レジ袋をもらえますか？",
+        "exampleTranslation": "Czy mogę prosić o torebkę?"
+      },
+      {
+        "id": "pj_cont_3",
+        "front": "Butelka",
+        "back": "ボトル",
+        "difficulty": "easy",
+        "example": "水のボトルを買いました。",
+        "exampleTranslation": "Kupiłem butelkę wody."
+      },
+      {
+        "id": "pj_cont_4",
+        "front": "Szklanka",
+        "back": "コップ",
+        "difficulty": "easy",
+        "example": "水をコップに入れてください。",
+        "exampleTranslation": "Proszę nalej wodę do szklanki."
+      },
+      {
+        "id": "pj_cont_5",
+        "front": "Puszka",
+        "back": "缶（かん）",
+        "difficulty": "easy",
+        "example": "ビールの缶を開けます。",
+        "exampleTranslation": "Otwieram puszkę piwa."
+      },
+      {
+        "id": "pj_cont_6",
+        "front": "Słoik",
+        "back": "瓶（びん）",
+        "difficulty": "easy",
+        "example": "ジャムの瓶を開けます。",
+        "exampleTranslation": "Otwieram słoik dżemu."
+      },
+      {
+        "id": "pj_cont_7",
+        "front": "Talerz",
+        "back": "お皿（おさら）",
+        "difficulty": "medium",
+        "example": "お皿を洗います。",
+        "exampleTranslation": "Zmywam talerze."
+      },
+      {
+        "id": "pj_cont_8",
+        "front": "Miska",
+        "back": "ボウル",
+        "difficulty": "medium",
+        "example": "サラダをボウルに入れます。",
+        "exampleTranslation": "Wkładam sałatkę do miski."
+      },
+      {
+        "id": "pj_cont_9",
+        "front": "Wiadro",
+        "back": "バケツ",
+        "difficulty": "medium",
+        "example": "バケツに水を入れます。",
+        "exampleTranslation": "Nalewam wodę do wiadra."
+      },
+      {
+        "id": "pj_cont_10",
+        "front": "Tacka",
+        "back": "トレイ",
+        "difficulty": "medium",
+        "example": "トレイに料理を並べます。",
+        "exampleTranslation": "Układam jedzenie na tacce."
+      },
+      {
+        "id": "pj_cont_11",
+        "front": "Dzban",
+        "back": "ピッチャー",
+        "difficulty": "medium",
+        "example": "ピッチャーにジュースを入れます。",
+        "exampleTranslation": "Wlewam sok do dzbana."
+      },
+      {
+        "id": "pj_cont_12",
+        "front": "Kubek",
+        "back": "マグカップ",
+        "difficulty": "medium",
+        "example": "コーヒーをマグカップに入れます。",
+        "exampleTranslation": "Nalej kawę do kubka."
+      },
+      {
+        "id": "pj_cont_13",
+        "front": "Woreczek foliowy",
+        "back": "ビニール袋",
+        "difficulty": "hard",
+        "example": "ビニール袋は環境に悪いです。",
+        "exampleTranslation": "Torebki foliowe są złe dla środowiska."
+      },
+      {
+        "id": "pj_cont_14",
+        "front": "Karton",
+        "back": "段ボール（だんボール）",
+        "difficulty": "hard",
+        "example": "引っ越しの段ボールを準備します。",
+        "exampleTranslation": "Przygotowuję kartony do przeprowadzki."
+      },
+      {
+        "id": "pj_cont_15",
+        "front": "Termos",
+        "back": "水筒（すいとう）",
+        "difficulty": "hard",
+        "example": "水筒にお茶を入れます。",
+        "exampleTranslation": "Wlewam herbatę do termosu."
+      }
+    ]
+  },
+  {
+    "key": "common_actions",
+    "name": "Czynności",
+    "description": "Podstawowe czynności i czasowniki po japońsku",
+    "iconName": "figure.walk",
+    "color": "#27AE60",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_cact_1",
+        "front": "Iść",
+        "back": "行く（いく）",
+        "difficulty": "easy",
+        "example": "学校に行きます。",
+        "exampleTranslation": "Idę do szkoły."
+      },
+      {
+        "id": "pj_cact_2",
+        "front": "Jechać",
+        "back": "乗る（のる）",
+        "difficulty": "easy",
+        "example": "電車に乗ります。",
+        "exampleTranslation": "Wsiadam do pociągu."
+      },
+      {
+        "id": "pj_cact_3",
+        "front": "Czytać",
+        "back": "読む（よむ）",
+        "difficulty": "easy",
+        "example": "本を読みます。",
+        "exampleTranslation": "Czytam książkę."
+      },
+      {
+        "id": "pj_cact_4",
+        "front": "Pisać",
+        "back": "書く（かく）",
+        "difficulty": "easy",
+        "example": "手紙を書きます。",
+        "exampleTranslation": "Piszę list."
+      },
+      {
+        "id": "pj_cact_5",
+        "front": "Pić",
+        "back": "飲む（のむ）",
+        "difficulty": "easy",
+        "example": "水を飲みます。",
+        "exampleTranslation": "Piję wodę."
+      },
+      {
+        "id": "pj_cact_6",
+        "front": "Słuchać",
+        "back": "聞く（きく）",
+        "difficulty": "easy",
+        "example": "音楽を聞きます。",
+        "exampleTranslation": "Słucham muzyki."
+      },
+      {
+        "id": "pj_cact_7",
+        "front": "Otwierać",
+        "back": "開ける（あける）",
+        "difficulty": "medium",
+        "example": "窓を開けてください。",
+        "exampleTranslation": "Proszę otworzyć okno."
+      },
+      {
+        "id": "pj_cact_8",
+        "front": "Zamykać",
+        "back": "閉める（しめる）",
+        "difficulty": "medium",
+        "example": "ドアを閉めてください。",
+        "exampleTranslation": "Proszę zamknąć drzwi."
+      },
+      {
+        "id": "pj_cact_9",
+        "front": "Uczyć się",
+        "back": "勉強する（べんきょうする）",
+        "difficulty": "medium",
+        "example": "毎日日本語を勉強します。",
+        "exampleTranslation": "Codziennie uczę się japońskiego."
+      },
+      {
+        "id": "pj_cact_10",
+        "front": "Pracować",
+        "back": "働く（はたらく）",
+        "difficulty": "medium",
+        "example": "会社で働いています。",
+        "exampleTranslation": "Pracuję w firmie."
+      },
+      {
+        "id": "pj_cact_11",
+        "front": "Biegać",
+        "back": "走る（はしる）",
+        "difficulty": "medium",
+        "example": "毎朝公園で走ります。",
+        "exampleTranslation": "Codziennie rano biegam w parku."
+      },
+      {
+        "id": "pj_cact_12",
+        "front": "Czekać",
+        "back": "待つ（まつ）",
+        "difficulty": "medium",
+        "example": "バスを待っています。",
+        "exampleTranslation": "Czekam na autobus."
+      },
+      {
+        "id": "pj_cact_13",
+        "front": "Szukać",
+        "back": "探す（さがす）",
+        "difficulty": "hard",
+        "example": "鍵を探しています。",
+        "exampleTranslation": "Szukam kluczy."
+      },
+      {
+        "id": "pj_cact_14",
+        "front": "Zmieniać",
+        "back": "変える（かえる）",
+        "difficulty": "hard",
+        "example": "予定を変えました。",
+        "exampleTranslation": "Zmieniłem plan."
+      },
+      {
+        "id": "pj_cact_15",
+        "front": "Naprawiać",
+        "back": "修理する（しゅうりする）",
+        "difficulty": "hard",
+        "example": "自転車を修理します。",
+        "exampleTranslation": "Naprawiam rower."
+      }
+    ]
+  },
+  {
+    "key": "shapes_geometry",
+    "name": "Kształty i geometria",
+    "description": "Nazwy kształtów geometrycznych po japońsku",
+    "iconName": "triangle.fill",
+    "color": "#2980B9",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_shape_1",
+        "front": "Koło",
+        "back": "円（えん）",
+        "difficulty": "easy",
+        "example": "円を描いてください。",
+        "exampleTranslation": "Proszę narysować koło."
+      },
+      {
+        "id": "pj_shape_2",
+        "front": "Kwadrat",
+        "back": "正方形（せいほうけい）",
+        "difficulty": "easy",
+        "example": "正方形には四つの辺があります。",
+        "exampleTranslation": "Kwadrat ma cztery boki."
+      },
+      {
+        "id": "pj_shape_3",
+        "front": "Trójkąt",
+        "back": "三角形（さんかくけい）",
+        "difficulty": "easy",
+        "example": "三角形には三つの角があります。",
+        "exampleTranslation": "Trójkąt ma trzy kąty."
+      },
+      {
+        "id": "pj_shape_4",
+        "front": "Prostokąt",
+        "back": "長方形（ちょうほうけい）",
+        "difficulty": "easy",
+        "example": "テーブルは長方形です。",
+        "exampleTranslation": "Stół jest prostokątny."
+      },
+      {
+        "id": "pj_shape_5",
+        "front": "Gwiazda",
+        "back": "星形（ほしがた）",
+        "difficulty": "easy",
+        "example": "星形を切ります。",
+        "exampleTranslation": "Wycinam kształt gwiazdy."
+      },
+      {
+        "id": "pj_shape_6",
+        "front": "Serce",
+        "back": "ハート形（ハートがた）",
+        "difficulty": "easy",
+        "example": "ハート形のチョコレートをあげます。",
+        "exampleTranslation": "Daję czekoladkę w kształcie serca."
+      },
+      {
+        "id": "pj_shape_7",
+        "front": "Sześciokąt",
+        "back": "六角形（ろっかくけい）",
+        "difficulty": "medium",
+        "example": "ハチの巣は六角形です。",
+        "exampleTranslation": "Plastry miodu mają kształt sześciokąta."
+      },
+      {
+        "id": "pj_shape_8",
+        "front": "Kula",
+        "back": "球（たま）",
+        "difficulty": "medium",
+        "example": "地球は球の形です。",
+        "exampleTranslation": "Ziemia ma kształt kuli."
+      },
+      {
+        "id": "pj_shape_9",
+        "front": "Stożek",
+        "back": "円錐（えんすい）",
+        "difficulty": "medium",
+        "example": "アイスクリームの円錐が好きです。",
+        "exampleTranslation": "Lubię lody w rożku."
+      },
+      {
+        "id": "pj_shape_10",
+        "front": "Romb",
+        "back": "菱形（ひしがた）",
+        "difficulty": "medium",
+        "example": "菱形は四つの等しい辺があります。",
+        "exampleTranslation": "Romb ma cztery równe boki."
+      },
+      {
+        "id": "pj_shape_11",
+        "front": "Sześcian",
+        "back": "立方体（りっぽうたい）",
+        "difficulty": "medium",
+        "example": "サイコロは立方体です。",
+        "exampleTranslation": "Kostka do gry jest sześcianem."
+      },
+      {
+        "id": "pj_shape_12",
+        "front": "Walec",
+        "back": "円柱（えんちゅう）",
+        "difficulty": "medium",
+        "example": "缶は円柱の形です。",
+        "exampleTranslation": "Puszka ma kształt walca."
+      },
+      {
+        "id": "pj_shape_13",
+        "front": "Pięciokąt",
+        "back": "五角形（ごかくけい）",
+        "difficulty": "hard",
+        "example": "ペンタゴンは五角形です。",
+        "exampleTranslation": "Pentagon jest pięciokątem."
+      },
+      {
+        "id": "pj_shape_14",
+        "front": "Elipsa",
+        "back": "楽円（だえん）",
+        "difficulty": "hard",
+        "example": "惑星の軌道は楽円です。",
+        "exampleTranslation": "Orbita planet ma kształt elipsy."
+      },
+      {
+        "id": "pj_shape_15",
+        "front": "Ostrosłup",
+        "back": "ピラミッド",
+        "difficulty": "hard",
+        "example": "エジプトのピラミッドは有名です。",
+        "exampleTranslation": "Piramidy egipskie są słynne."
+      }
+    ]
+  },
+  {
+    "key": "measurements_sizes",
+    "name": "Miary i rozmiary",
+    "description": "Słownictwo związane z miarami i rozmiarami po japońsku",
+    "iconName": "ruler.fill",
+    "color": "#16A085",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_meas_1",
+        "front": "Długi",
+        "back": "長い（ながい）",
+        "difficulty": "easy",
+        "example": "この道は長いです。",
+        "exampleTranslation": "Ta droga jest długa."
+      },
+      {
+        "id": "pj_meas_2",
+        "front": "Krótki",
+        "back": "短い（みじかい）",
+        "difficulty": "easy",
+        "example": "髪が短いです。",
+        "exampleTranslation": "Ma krótkie włosy."
+      },
+      {
+        "id": "pj_meas_3",
+        "front": "Ciężki",
+        "back": "重い（おもい）",
+        "difficulty": "easy",
+        "example": "この荷物は重いです。",
+        "exampleTranslation": "Ten bagaż jest ciężki."
+      },
+      {
+        "id": "pj_meas_4",
+        "front": "Lekki",
+        "back": "軽い（かるい）",
+        "difficulty": "easy",
+        "example": "このかばんは軽いです。",
+        "exampleTranslation": "Ta torba jest lekka."
+      },
+      {
+        "id": "pj_meas_5",
+        "front": "Duży",
+        "back": "大きい（おおきい）",
+        "difficulty": "easy",
+        "example": "大きい犬がいます。",
+        "exampleTranslation": "Jest duży pies."
+      },
+      {
+        "id": "pj_meas_6",
+        "front": "Mały",
+        "back": "小さい（ちいさい）",
+        "difficulty": "easy",
+        "example": "小さい猫がかわいいです。",
+        "exampleTranslation": "Mały kotek jest słodki."
+      },
+      {
+        "id": "pj_meas_7",
+        "front": "Wysoki",
+        "back": "高い（たかい）",
+        "difficulty": "medium",
+        "example": "あのビルは高いです。",
+        "exampleTranslation": "Tamten budynek jest wysoki."
+      },
+      {
+        "id": "pj_meas_8",
+        "front": "Niski",
+        "back": "低い（ひくい）",
+        "difficulty": "medium",
+        "example": "天井が低いです。",
+        "exampleTranslation": "Sufit jest niski."
+      },
+      {
+        "id": "pj_meas_9",
+        "front": "Szeroki",
+        "back": "広い（ひろい）",
+        "difficulty": "medium",
+        "example": "広い公園で遊びます。",
+        "exampleTranslation": "Bawimy się w szerokim parku."
+      },
+      {
+        "id": "pj_meas_10",
+        "front": "Wąski",
+        "back": "狭い（せまい）",
+        "difficulty": "medium",
+        "example": "この通りは狭いです。",
+        "exampleTranslation": "Ta ulica jest wąska."
+      },
+      {
+        "id": "pj_meas_11",
+        "front": "Gruby",
+        "back": "厚い（あつい）",
+        "difficulty": "medium",
+        "example": "厚い本を読んでいます。",
+        "exampleTranslation": "Czytam grubą książkę."
+      },
+      {
+        "id": "pj_meas_12",
+        "front": "Cienki",
+        "back": "薄い（うすい）",
+        "difficulty": "medium",
+        "example": "薄い紙を使います。",
+        "exampleTranslation": "Używam cienkiego papieru."
+      },
+      {
+        "id": "pj_meas_13",
+        "front": "Głęboki",
+        "back": "深い（ふかい）",
+        "difficulty": "hard",
+        "example": "この湖は深いです。",
+        "exampleTranslation": "To jezioro jest głębokie."
+      },
+      {
+        "id": "pj_meas_14",
+        "front": "Płytki",
+        "back": "浅い（あさい）",
+        "difficulty": "hard",
+        "example": "ここの海は浅いです。",
+        "exampleTranslation": "Morze tutaj jest płytkie."
+      },
+      {
+        "id": "pj_meas_15",
+        "front": "Ogromny",
+        "back": "巨大な（きょだいな）",
+        "difficulty": "hard",
+        "example": "巨大な積乱雲が見えます。",
+        "exampleTranslation": "Widać ogromną chmurę burzową."
+      }
+    ]
+  },
+  {
+    "key": "opposites",
+    "name": "Przeciwieństwa",
+    "description": "Pary przeciwieństw po japońsku",
+    "iconName": "arrow.left.arrow.right",
+    "color": "#E74C3C",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_opp_1",
+        "front": "Gorąco - zimno",
+        "back": "暑い - 寒い（あつい - さむい）",
+        "difficulty": "easy",
+        "example": "今日は暑いですが、昨日は寒かったです。",
+        "exampleTranslation": "Dziś jest gorąco, ale wczoraj było zimno."
+      },
+      {
+        "id": "pj_opp_2",
+        "front": "Szybki - wolny",
+        "back": "速い - 遅い（はやい - おそい）",
+        "difficulty": "easy",
+        "example": "新幹線は速いですが、バスは遅いです。",
+        "exampleTranslation": "Shinkansen jest szybki, ale autobus jest wolny."
+      },
+      {
+        "id": "pj_opp_3",
+        "front": "Stary - nowy",
+        "back": "古い - 新しい（ふるい - あたらしい）",
+        "difficulty": "easy",
+        "example": "古い家と新しい家があります。",
+        "exampleTranslation": "Są stare i nowe domy."
+      },
+      {
+        "id": "pj_opp_4",
+        "front": "Jasny - ciemny",
+        "back": "明るい - 暗い（あかるい - くらい）",
+        "difficulty": "easy",
+        "example": "部屋が明るいですが、廊下は暗いです。",
+        "exampleTranslation": "Pokój jest jasny, ale korytarz jest ciemny."
+      },
+      {
+        "id": "pj_opp_5",
+        "front": "Dobry - zły",
+        "back": "いい - 悪い（わるい）",
+        "difficulty": "easy",
+        "example": "天気がいいですが、気分が悪いです。",
+        "exampleTranslation": "Pogoda jest dobra, ale humor jest zły."
+      },
+      {
+        "id": "pj_opp_6",
+        "front": "Łatwy - trudny",
+        "back": "簡単 - 難しい（かんたん - むずかしい）",
+        "difficulty": "easy",
+        "example": "この問題は簡単ですが、あれは難しいです。",
+        "exampleTranslation": "To zadanie jest łatwe, ale tamto jest trudne."
+      },
+      {
+        "id": "pj_opp_7",
+        "front": "Młody - stary (osoba)",
+        "back": "若い - 年を取った（わかい - としをとった）",
+        "difficulty": "medium",
+        "example": "彼は若いですが、経験があります。",
+        "exampleTranslation": "Jest młody, ale ma doświadczenie."
+      },
+      {
+        "id": "pj_opp_8",
+        "front": "Blisko - daleko",
+        "back": "近い - 遠い（ちかい - とおい）",
+        "difficulty": "medium",
+        "example": "駅は近いですが、空港は遠いです。",
+        "exampleTranslation": "Stacja jest blisko, ale lotnisko jest daleko."
+      },
+      {
+        "id": "pj_opp_9",
+        "front": "Głośno - cicho",
+        "back": "うるさい - 静か（しずか）",
+        "difficulty": "medium",
+        "example": "電車はうるさいですが、図書館は静かです。",
+        "exampleTranslation": "Pociąg jest głośny, ale biblioteka jest cicha."
+      },
+      {
+        "id": "pj_opp_10",
+        "front": "Bogaty - biedny",
+        "back": "金持ち - 貧しい（かねもち - まずしい）",
+        "difficulty": "medium",
+        "example": "金持ちでも貧しい人でも幸せになれます。",
+        "exampleTranslation": "Zarówno bogaci, jak i biedni mogą być szczęśliwi."
+      },
+      {
+        "id": "pj_opp_11",
+        "front": "Słodki - gorzki",
+        "back": "甘い - 苦い（あまい - にがい）",
+        "difficulty": "medium",
+        "example": "チョコレートは甘いですが、コーヒーは苦いです。",
+        "exampleTranslation": "Czekolada jest słodka, ale kawa jest gorzka."
+      },
+      {
+        "id": "pj_opp_12",
+        "front": "Mokry - suchy",
+        "back": "湿った - 乾いた（ぬれた - かわいた）",
+        "difficulty": "medium",
+        "example": "服が湿っていますが、もうすぐ乾きます。",
+        "exampleTranslation": "Ubranie jest mokre, ale zaraz wyschnie."
+      },
+      {
+        "id": "pj_opp_13",
+        "front": "Miękki - twardy",
+        "back": "柔らかい - 硬い（やわらかい - かたい）",
+        "difficulty": "hard",
+        "example": "パンは柔らかいですが、せんべいは硬いです。",
+        "exampleTranslation": "Chleb jest miękki, ale krakersy są twarde."
+      },
+      {
+        "id": "pj_opp_14",
+        "front": "Wczesny - późny",
+        "back": "早い - 遅い（はやい - おそい）",
+        "difficulty": "hard",
+        "example": "早い時間に起きますが、遅く寝ます。",
+        "exampleTranslation": "Wstaję wcześnie, ale kładę się późno."
+      },
+      {
+        "id": "pj_opp_15",
+        "front": "Bezpieczny - niebezpieczny",
+        "back": "安全 - 危険（あんぜん - きけん）",
+        "difficulty": "hard",
+        "example": "この町は安全ですが、あの通りは危険です。",
+        "exampleTranslation": "To miasto jest bezpieczne, ale tamta ulica jest niebezpieczna."
+      }
+    ]
+  },
+  {
+    "key": "leisure_free_time",
+    "name": "Czas wolny",
+    "description": "Słownictwo związane z czasem wolnym po japońsku",
+    "iconName": "figure.socialdance",
+    "color": "#3498DB",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_leis_1",
+        "front": "Czas wolny",
+        "back": "自由時間（じゆうじかん）",
+        "difficulty": "easy",
+        "example": "自由時間に何をしますか？",
+        "exampleTranslation": "Co robisz w wolnym czasie?"
+      },
+      {
+        "id": "pj_leis_2",
+        "front": "Oglądać telewizję",
+        "back": "テレビを見る",
+        "difficulty": "easy",
+        "example": "夜にテレビを見ます。",
+        "exampleTranslation": "Wieczorem oglądam telewizję."
+      },
+      {
+        "id": "pj_leis_3",
+        "front": "Grać w gry",
+        "back": "ゲームをする",
+        "difficulty": "easy",
+        "example": "友達とゲームをします。",
+        "exampleTranslation": "Gram w gry z przyjaciółmi."
+      },
+      {
+        "id": "pj_leis_4",
+        "front": "Słuchać muzyki",
+        "back": "音楽を聞く（おんがくをきく）",
+        "difficulty": "easy",
+        "example": "電車で音楽を聞きます。",
+        "exampleTranslation": "W pociągu słucham muzyki."
+      },
+      {
+        "id": "pj_leis_5",
+        "front": "Rysować",
+        "back": "絵を描く（えをかく）",
+        "difficulty": "easy",
+        "example": "絵を描くのが好きです。",
+        "exampleTranslation": "Lubię rysować."
+      },
+      {
+        "id": "pj_leis_6",
+        "front": "Fotografować",
+        "back": "写真を撮る（しゃしんをとる）",
+        "difficulty": "easy",
+        "example": "旅行中に写真を撮ります。",
+        "exampleTranslation": "Podczas podróży robię zdjęcia."
+      },
+      {
+        "id": "pj_leis_7",
+        "front": "Wędkować",
+        "back": "釣りをする（つりをする）",
+        "difficulty": "medium",
+        "example": "週末に釣りをします。",
+        "exampleTranslation": "W weekend wędkuję."
+      },
+      {
+        "id": "pj_leis_8",
+        "front": "Piknik",
+        "back": "ピクニック",
+        "difficulty": "medium",
+        "example": "公園でピクニックをします。",
+        "exampleTranslation": "Urządzamy piknik w parku."
+      },
+      {
+        "id": "pj_leis_9",
+        "front": "Hobby",
+        "back": "趣味（しゅみ）",
+        "difficulty": "medium",
+        "example": "趣味は何ですか？",
+        "exampleTranslation": "Jakie masz hobby?"
+      },
+      {
+        "id": "pj_leis_10",
+        "front": "Ogrodnictwo",
+        "back": "ガーデニング",
+        "difficulty": "medium",
+        "example": "ガーデニングが好きです。",
+        "exampleTranslation": "Lubię ogrodnictwo."
+      },
+      {
+        "id": "pj_leis_11",
+        "front": "Rozrywka",
+        "back": "娯楽（ごらく）",
+        "difficulty": "medium",
+        "example": "東京には娯楽がたくさんあります。",
+        "exampleTranslation": "W Tokio jest dużo rozrywek."
+      },
+      {
+        "id": "pj_leis_12",
+        "front": "Relaksować się",
+        "back": "リラックスする",
+        "difficulty": "medium",
+        "example": "家でリラックスします。",
+        "exampleTranslation": "Relaksuję się w domu."
+      },
+      {
+        "id": "pj_leis_13",
+        "front": "Zbierać znaczki",
+        "back": "切手を集める（きってをあつめる）",
+        "difficulty": "hard",
+        "example": "子供の頃から切手を集めています。",
+        "exampleTranslation": "Zbieram znaczki od dzieciństwa."
+      },
+      {
+        "id": "pj_leis_14",
+        "front": "Majsterkować",
+        "back": "DIYをする",
+        "difficulty": "hard",
+        "example": "週末にDIYで棚を作りました。",
+        "exampleTranslation": "W weekend zrobiłem półkę sam."
+      },
+      {
+        "id": "pj_leis_15",
+        "front": "Karaoke",
+        "back": "カラオケ",
+        "difficulty": "hard",
+        "example": "友達とカラオケに行きました。",
+        "exampleTranslation": "Poszedłem z przyjaciółmi na karaoke."
+      }
+    ]
+  },
+  {
+    "key": "cafe_coffee",
+    "name": "Kawiarnia",
+    "description": "Słownictwo związane z kawiarnią po japońsku",
+    "iconName": "cup.and.saucer.fill",
+    "color": "#795548",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_cafe_1",
+        "front": "Kawa",
+        "back": "コーヒー",
+        "difficulty": "easy",
+        "example": "コーヒーを一杯ください。",
+        "exampleTranslation": "Proszę jedną kawę."
+      },
+      {
+        "id": "pj_cafe_2",
+        "front": "Herbata",
+        "back": "お茶（おちゃ）",
+        "difficulty": "easy",
+        "example": "緑茶が好きです。",
+        "exampleTranslation": "Lubię zieloną herbatę."
+      },
+      {
+        "id": "pj_cafe_3",
+        "front": "Mleko",
+        "back": "ミルク",
+        "difficulty": "easy",
+        "example": "コーヒーにミルクを入れます。",
+        "exampleTranslation": "Dodaję mleko do kawy."
+      },
+      {
+        "id": "pj_cafe_4",
+        "front": "Cukier",
+        "back": "砂糖（さとう）",
+        "difficulty": "easy",
+        "example": "砂糖なしでお願いします。",
+        "exampleTranslation": "Proszę bez cukru."
+      },
+      {
+        "id": "pj_cafe_5",
+        "front": "Menu",
+        "back": "メニュー",
+        "difficulty": "easy",
+        "example": "メニューを見せてください。",
+        "exampleTranslation": "Proszę pokazać menu."
+      },
+      {
+        "id": "pj_cafe_6",
+        "front": "Rachunek",
+        "back": "お会計（おかいけい）",
+        "difficulty": "easy",
+        "example": "お会計をお願いします。",
+        "exampleTranslation": "Proszę o rachunek."
+      },
+      {
+        "id": "pj_cafe_7",
+        "front": "Espresso",
+        "back": "エスプレッソ",
+        "difficulty": "medium",
+        "example": "エスプレッソをダブルでお願いします。",
+        "exampleTranslation": "Proszę podwójne espresso."
+      },
+      {
+        "id": "pj_cafe_8",
+        "front": "Cappuccino",
+        "back": "カプチーノ",
+        "difficulty": "medium",
+        "example": "カプチーノの泡が好きです。",
+        "exampleTranslation": "Lubię piankę na cappuccino."
+      },
+      {
+        "id": "pj_cafe_9",
+        "front": "Na wynos",
+        "back": "テイクアウト",
+        "difficulty": "medium",
+        "example": "テイクアウトでお願いします。",
+        "exampleTranslation": "Proszę na wynos."
+      },
+      {
+        "id": "pj_cafe_10",
+        "front": "Na miejscu",
+        "back": "店内で（てんないで）",
+        "difficulty": "medium",
+        "example": "店内で飲みます。",
+        "exampleTranslation": "Wypijem na miejscu."
+      },
+      {
+        "id": "pj_cafe_11",
+        "front": "Kawa mrożona",
+        "back": "アイスコーヒー",
+        "difficulty": "medium",
+        "example": "夏はアイスコーヒーがおいしいです。",
+        "exampleTranslation": "Latem mrożona kawa jest pyszna."
+      },
+      {
+        "id": "pj_cafe_12",
+        "front": "Barista",
+        "back": "バリスタ",
+        "difficulty": "medium",
+        "example": "バリスタが美しいラテアートを作ります。",
+        "exampleTranslation": "Barista robi piękne latte art."
+      },
+      {
+        "id": "pj_cafe_13",
+        "front": "Herbata matcha",
+        "back": "抹茶（まっちゃ）",
+        "difficulty": "hard",
+        "example": "抹茶は日本の伝統的なお茶です。",
+        "exampleTranslation": "Matcha to tradycyjna japońska herbata."
+      },
+      {
+        "id": "pj_cafe_14",
+        "front": "Deser do kawy",
+        "back": "コーヒーのお供（おとも）",
+        "difficulty": "hard",
+        "example": "ケーキをコーヒーのお供に頼みました。",
+        "exampleTranslation": "Zamówiłem ciasto jako deser do kawy."
+      },
+      {
+        "id": "pj_cafe_15",
+        "front": "Kawiarnia na rogu",
+        "back": "角のカフェ（かどのカフェ）",
+        "difficulty": "hard",
+        "example": "角のカフェで待ち合わせしましょう。",
+        "exampleTranslation": "Spotkajmy się w kawiarni na rogu."
+      }
+    ]
+  },
+  {
+    "key": "cleaning_housework",
+    "name": "Sprzątanie",
+    "description": "Słownictwo związane ze sprzątaniem po japońsku",
+    "iconName": "sparkles",
+    "color": "#2ECC71",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_clean_1",
+        "front": "Sprzątać pokój",
+        "back": "部屋を掃除する（へやをそうじする）",
+        "difficulty": "easy",
+        "example": "毎日部屋を掃除します。",
+        "exampleTranslation": "Codziennie sprzątam pokój."
+      },
+      {
+        "id": "pj_clean_2",
+        "front": "Odkurzacz",
+        "back": "掃除機（そうじき）",
+        "difficulty": "easy",
+        "example": "掃除機をかけます。",
+        "exampleTranslation": "Odkurzam."
+      },
+      {
+        "id": "pj_clean_3",
+        "front": "Miotła",
+        "back": "ほうき",
+        "difficulty": "easy",
+        "example": "ほうきで床を掃きます。",
+        "exampleTranslation": "Zamiatam podłogę miotłą."
+      },
+      {
+        "id": "pj_clean_4",
+        "front": "Myć naczynia",
+        "back": "食器を洗う（しょっきをあらう）",
+        "difficulty": "easy",
+        "example": "食事の後に食器を洗います。",
+        "exampleTranslation": "Po posiłku zmywam naczynia."
+      },
+      {
+        "id": "pj_clean_5",
+        "front": "Pranie",
+        "back": "洗濯（せんたく）",
+        "difficulty": "easy",
+        "example": "洗濯物を干します。",
+        "exampleTranslation": "Wieszą pranie."
+      },
+      {
+        "id": "pj_clean_6",
+        "front": "Wycierać kurz",
+        "back": "ほこりを拭く（ほこりをふく）",
+        "difficulty": "easy",
+        "example": "棚のほこりを拭きます。",
+        "exampleTranslation": "Wycieraę kurz z półek."
+      },
+      {
+        "id": "pj_clean_7",
+        "front": "Środek czyszczący",
+        "back": "洗剤（せんざい）",
+        "difficulty": "medium",
+        "example": "洗剤を使って洗います。",
+        "exampleTranslation": "Myję za pomocą środka czyszczącego."
+      },
+      {
+        "id": "pj_clean_8",
+        "front": "Mop",
+        "back": "モップ",
+        "difficulty": "medium",
+        "example": "モップで床を拭きます。",
+        "exampleTranslation": "Myję podłogę mopem."
+      },
+      {
+        "id": "pj_clean_9",
+        "front": "Wiadro",
+        "back": "バケツ",
+        "difficulty": "medium",
+        "example": "バケツに水を入れます。",
+        "exampleTranslation": "Nalewam wodę do wiadra."
+      },
+      {
+        "id": "pj_clean_10",
+        "front": "Gąbka",
+        "back": "スポンジ",
+        "difficulty": "medium",
+        "example": "スポンジでお皿を洗います。",
+        "exampleTranslation": "Myję talerze gąbką."
+      },
+      {
+        "id": "pj_clean_11",
+        "front": "Wietrzenie pokoju",
+        "back": "換気（かんき）",
+        "difficulty": "medium",
+        "example": "朝に換気します。",
+        "exampleTranslation": "Rano wietrzę pokój."
+      },
+      {
+        "id": "pj_clean_12",
+        "front": "Śmieć",
+        "back": "ゴミ",
+        "difficulty": "medium",
+        "example": "ゴミを捨てます。",
+        "exampleTranslation": "Wyrzucam śmieci."
+      },
+      {
+        "id": "pj_clean_13",
+        "front": "Pralka",
+        "back": "洗濯機（せんたくき）",
+        "difficulty": "hard",
+        "example": "新しい洗濯機を買いました。",
+        "exampleTranslation": "Kupiłem nową pralkę."
+      },
+      {
+        "id": "pj_clean_14",
+        "front": "Żelazko",
+        "back": "アイロン",
+        "difficulty": "hard",
+        "example": "シャツにアイロンをかけます。",
+        "exampleTranslation": "Prasuję koszulę żelazkiem."
+      },
+      {
+        "id": "pj_clean_15",
+        "front": "Segregacja odpadów",
+        "back": "ゴミの分別（ゴミのぶんべつ）",
+        "difficulty": "hard",
+        "example": "日本ではゴミの分別が大切です。",
+        "exampleTranslation": "W Japonii segregacja odpadów jest bardzo ważna."
+      }
+    ]
+  },
+  {
+    "key": "bedroom_sleep",
+    "name": "Sypialnia i sen",
+    "description": "Słownictwo związane z sypialnią i snem po japońsku",
+    "iconName": "bed.double.fill",
+    "color": "#34495E",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_bed_1",
+        "front": "Łóżko",
+        "back": "ベッド",
+        "difficulty": "easy",
+        "example": "ベッドで寝ます。",
+        "exampleTranslation": "Śpię w łóżku."
+      },
+      {
+        "id": "pj_bed_2",
+        "front": "Poduszka",
+        "back": "枕（まくら）",
+        "difficulty": "easy",
+        "example": "やわらかい枕が好きです。",
+        "exampleTranslation": "Lubię miękką poduszkę."
+      },
+      {
+        "id": "pj_bed_3",
+        "front": "Kołdra",
+        "back": "布団（ふとん）",
+        "difficulty": "easy",
+        "example": "冬は布団が温かいです。",
+        "exampleTranslation": "Zimą kołdra jest ciepła."
+      },
+      {
+        "id": "pj_bed_4",
+        "front": "Budzik",
+        "back": "目覚まし時計（めざましどけい）",
+        "difficulty": "easy",
+        "example": "目覚まし時計をセットします。",
+        "exampleTranslation": "Nastawiam budzik."
+      },
+      {
+        "id": "pj_bed_5",
+        "front": "Piżama",
+        "back": "パジャマ",
+        "difficulty": "easy",
+        "example": "パジャマに着替えます。",
+        "exampleTranslation": "Przebieraę się w piżamę."
+      },
+      {
+        "id": "pj_bed_6",
+        "front": "Sen",
+        "back": "睡眠（すいみん）",
+        "difficulty": "easy",
+        "example": "十分な睡眠が大切です。",
+        "exampleTranslation": "Wystarczająco dużo snu jest ważne."
+      },
+      {
+        "id": "pj_bed_7",
+        "front": "Śnić",
+        "back": "夢を見る（ゆめをみる）",
+        "difficulty": "medium",
+        "example": "いい夢を見ました。",
+        "exampleTranslation": "Miałem ładny sen."
+      },
+      {
+        "id": "pj_bed_8",
+        "front": "Drzemka",
+        "back": "お昼寝（おひるね）",
+        "difficulty": "medium",
+        "example": "お昼寝をします。",
+        "exampleTranslation": "Robię drzemkę."
+      },
+      {
+        "id": "pj_bed_9",
+        "front": "Lampka nocna",
+        "back": "ナイトランプ",
+        "difficulty": "medium",
+        "example": "ナイトランプをつけて本を読みます。",
+        "exampleTranslation": "Czytam książkę przy lampce nocnej."
+      },
+      {
+        "id": "pj_bed_10",
+        "front": "Prześcierałło",
+        "back": "シーツ",
+        "difficulty": "medium",
+        "example": "シーツを洗濯します。",
+        "exampleTranslation": "Piorę prześcierałło."
+      },
+      {
+        "id": "pj_bed_11",
+        "front": "Ziewanie",
+        "back": "あくび",
+        "difficulty": "medium",
+        "example": "眠い時にあくびが出ます。",
+        "exampleTranslation": "Kiedy jestem śpiący, ziewam."
+      },
+      {
+        "id": "pj_bed_12",
+        "front": "Chrapanie",
+        "back": "いびき",
+        "difficulty": "medium",
+        "example": "いびきがうるさいです。",
+        "exampleTranslation": "Chrapanie jest głośne."
+      },
+      {
+        "id": "pj_bed_13",
+        "front": "Bezsenność",
+        "back": "不眠症（ふみんしょう）",
+        "difficulty": "hard",
+        "example": "不眠症に悩んでいます。",
+        "exampleTranslation": "Cierpie na bezsenność."
+      },
+      {
+        "id": "pj_bed_14",
+        "front": "Futon",
+        "back": "布団（ふとん）",
+        "difficulty": "hard",
+        "example": "日本では布団で寝る人が多いです。",
+        "exampleTranslation": "W Japonii wiele osób śpi na futonie."
+      },
+      {
+        "id": "pj_bed_15",
+        "front": "Kółko do snu (dobranoc)",
+        "back": "おやすみなさい",
+        "difficulty": "hard",
+        "example": "寝る前におやすみなさいと言います。",
+        "exampleTranslation": "Przed snem mówimy dobranoc."
+      }
+    ]
+  },
+  {
+    "key": "children_babies",
+    "name": "Dzieci i niemowlęta",
+    "description": "Słownictwo związane z dziećmi i niemowlętami po japońsku",
+    "iconName": "figure.and.child.holdinghands",
+    "color": "#FF69B4",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_child_1",
+        "front": "Dziecko",
+        "back": "子供（こども）",
+        "difficulty": "easy",
+        "example": "子供が遊んでいます。",
+        "exampleTranslation": "Dzieci się bawią."
+      },
+      {
+        "id": "pj_child_2",
+        "front": "Niemowlę",
+        "back": "赤ちゃん（あかちゃん）",
+        "difficulty": "easy",
+        "example": "赤ちゃんが泣いています。",
+        "exampleTranslation": "Niemowlę płacze."
+      },
+      {
+        "id": "pj_child_3",
+        "front": "Zabawka",
+        "back": "おもちゃ",
+        "difficulty": "easy",
+        "example": "おもちゃで遊びます。",
+        "exampleTranslation": "Bawię się zabawką."
+      },
+      {
+        "id": "pj_child_4",
+        "front": "Wózek",
+        "back": "ベビーカー",
+        "difficulty": "easy",
+        "example": "ベビーカーで散歩します。",
+        "exampleTranslation": "Spaceruję z wózkiem."
+      },
+      {
+        "id": "pj_child_5",
+        "front": "Smoczek",
+        "back": "おしゃぶり",
+        "difficulty": "easy",
+        "example": "赤ちゃんがおしゃぶりをくわえています。",
+        "exampleTranslation": "Niemowlę ssie smoczek."
+      },
+      {
+        "id": "pj_child_6",
+        "front": "Plac zabaw",
+        "back": "遊び場（あそびば）",
+        "difficulty": "easy",
+        "example": "子供を遊び場に連れて行きます。",
+        "exampleTranslation": "Zabieraę dzieci na plac zabaw."
+      },
+      {
+        "id": "pj_child_7",
+        "front": "Pielucha",
+        "back": "おむつ",
+        "difficulty": "medium",
+        "example": "おむつを替えます。",
+        "exampleTranslation": "Zmieniam pieluchy."
+      },
+      {
+        "id": "pj_child_8",
+        "front": "Kołyska",
+        "back": "ベビーベッド",
+        "difficulty": "medium",
+        "example": "赤ちゃんがベビーベッドで寝ています。",
+        "exampleTranslation": "Niemowlę śpi w kołysce."
+      },
+      {
+        "id": "pj_child_9",
+        "front": "Butelka dla niemowląt",
+        "back": "哺乳瓶（ほにゅうびん）",
+        "difficulty": "medium",
+        "example": "哺乳瓶にミルクを入れます。",
+        "exampleTranslation": "Wlewam mleko do butelki."
+      },
+      {
+        "id": "pj_child_10",
+        "front": "Śliniak",
+        "back": "よだれかけ",
+        "difficulty": "medium",
+        "example": "食事の時によだれかけをつけます。",
+        "exampleTranslation": "Podczas posiłku zakładam śliniak."
+      },
+      {
+        "id": "pj_child_11",
+        "front": "Przedszkole",
+        "back": "幼稚園（ようちえん）",
+        "difficulty": "medium",
+        "example": "子供を幼稚園に送ります。",
+        "exampleTranslation": "Odprowadzam dziecko do przedszkola."
+      },
+      {
+        "id": "pj_child_12",
+        "front": "Kołysanka",
+        "back": "子守唄（こもりうた）",
+        "difficulty": "medium",
+        "example": "子守唄を歌って寝かせます。",
+        "exampleTranslation": "Śpiewam kołysankę, żeby uśpić dziecko."
+      },
+      {
+        "id": "pj_child_13",
+        "front": "Usypianie",
+        "back": "寝かしつけ（ねかしつけ）",
+        "difficulty": "hard",
+        "example": "赤ちゃんの寝かしつけは大変です。",
+        "exampleTranslation": "Usypianie niemowlęcia jest trudne."
+      },
+      {
+        "id": "pj_child_14",
+        "front": "Ząbkowanie",
+        "back": "歯が生える（はがはえる）",
+        "difficulty": "hard",
+        "example": "赤ちゃんの歯が生えてきました。",
+        "exampleTranslation": "Niemowlęciu wyrastają ząbki."
+      },
+      {
+        "id": "pj_child_15",
+        "front": "Opieka nad dziećmi",
+        "back": "子育て（こそだて）",
+        "difficulty": "hard",
+        "example": "子育ては大変ですが、楽しいです。",
+        "exampleTranslation": "Opieka nad dziećmi jest trudna, ale radosna."
+      }
+    ]
+  },
+  {
+    "key": "professions",
+    "name": "Zawody",
+    "description": "Nazwy zawodów i profesji",
+    "iconName": "briefcase.fill",
+    "color": "#5B8C5A",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_prof_1",
+        "front": "Lekarz",
+        "back": "医者 (いしゃ)",
+        "difficulty": "easy",
+        "example": "医者に行きました。",
+        "exampleTranslation": "Poszedłem do lekarza."
+      },
+      {
+        "id": "pj_prof_2",
+        "front": "Nauczyciel",
+        "back": "先生 (せんせい)",
+        "difficulty": "easy",
+        "example": "先生は優しいです。",
+        "exampleTranslation": "Nauczyciel jest miły."
+      },
+      {
+        "id": "pj_prof_3",
+        "front": "Inżynier",
+        "back": "エンジニア",
+        "difficulty": "medium",
+        "example": "彼はエンジニアです。",
+        "exampleTranslation": "On jest inżynierem."
+      },
+      {
+        "id": "pj_prof_4",
+        "front": "Prawnik",
+        "back": "弁護士 (べんごし)",
+        "difficulty": "hard",
+        "example": "弁護士に相談しました。",
+        "exampleTranslation": "Skonsultowałem się z prawnikiem."
+      },
+      {
+        "id": "pj_prof_5",
+        "front": "Pielęgniarka",
+        "back": "看護師 (かんごし)",
+        "difficulty": "medium",
+        "example": "看護師が注射をしました。",
+        "exampleTranslation": "Pielęgniarka zrobiła zastrzyk."
+      },
+      {
+        "id": "pj_prof_6",
+        "front": "Kucharz",
+        "back": "コック (コック)",
+        "difficulty": "easy",
+        "example": "コックが料理を作ります。",
+        "exampleTranslation": "Kucharz gotuje posiłek."
+      },
+      {
+        "id": "pj_prof_7",
+        "front": "Policjant",
+        "back": "警察官 (けいさつかん)",
+        "difficulty": "medium",
+        "example": "警察官が交通を整理しています。",
+        "exampleTranslation": "Policjant kieruje ruchem."
+      },
+      {
+        "id": "pj_prof_8",
+        "front": "Strażak",
+        "back": "消防士 (しょうぼうし)",
+        "difficulty": "hard",
+        "example": "消防士が火事を消しました。",
+        "exampleTranslation": "Strażak ugasił pożar."
+      },
+      {
+        "id": "pj_prof_9",
+        "front": "Architekt",
+        "back": "建築家 (けんちくか)",
+        "difficulty": "medium",
+        "example": "建築家が設計しました。",
+        "exampleTranslation": "Architekt zaprojektował to."
+      },
+      {
+        "id": "pj_prof_10",
+        "front": "Dentysta",
+        "back": "歯医者 (はいしゃ)",
+        "difficulty": "easy",
+        "example": "歯医者に行きます。",
+        "exampleTranslation": "Idę do dentysty."
+      },
+      {
+        "id": "pj_prof_11",
+        "front": "Pisarz",
+        "back": "作家 (さっか)",
+        "difficulty": "easy",
+        "example": "有名な作家です。",
+        "exampleTranslation": "To słynny pisarz."
+      },
+      {
+        "id": "pj_prof_12",
+        "front": "Kierowca",
+        "back": "運転手 (うんてんしゅ)",
+        "difficulty": "medium",
+        "example": "運転手は丁寧です。",
+        "exampleTranslation": "Kierowca jest uprzejmy."
+      },
+      {
+        "id": "pj_prof_13",
+        "front": "Farmaceuta",
+        "back": "薬剤師 (やくざいし)",
+        "difficulty": "hard",
+        "example": "薬剤師に薬をもらいました。",
+        "exampleTranslation": "Odebrałem lek od farmaceuty."
+      },
+      {
+        "id": "pj_prof_14",
+        "front": "Programista",
+        "back": "プログラマー",
+        "difficulty": "easy",
+        "example": "プログラマーとして働いています。",
+        "exampleTranslation": "Pracuję jako programista."
+      },
+      {
+        "id": "pj_prof_15",
+        "front": "Fotograf",
+        "back": "カメラマン",
+        "difficulty": "medium",
+        "example": "カメラマンが写真を撮りました。",
+        "exampleTranslation": "Fotograf zrobił zdjęcie."
+      }
+    ]
+  },
+  {
+    "key": "restaurant",
+    "name": "Restauracja",
+    "description": "Zamawianie i jedzenie w restauracji",
+    "iconName": "fork.knife",
+    "color": "#C75B39",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_rest_1",
+        "front": "Menu",
+        "back": "メニュー",
+        "difficulty": "easy",
+        "example": "メニューを見せてください。",
+        "exampleTranslation": "Proszę pokazać menu."
+      },
+      {
+        "id": "pj_rest_2",
+        "front": "Rachunek",
+        "back": "会計 (かいけい)",
+        "difficulty": "medium",
+        "example": "会計をお願いします。",
+        "exampleTranslation": "Proszę o rachunek."
+      },
+      {
+        "id": "pj_rest_3",
+        "front": "Zamówienie",
+        "back": "注文 (ちゅうもん)",
+        "difficulty": "medium",
+        "example": "注文をお願いします。",
+        "exampleTranslation": "Chciałbym złożyć zamówienie."
+      },
+      {
+        "id": "pj_rest_4",
+        "front": "Kelner",
+        "back": "ウェイター",
+        "difficulty": "easy",
+        "example": "ウェイターを呼びました。",
+        "exampleTranslation": "Zawołałem kelnera."
+      },
+      {
+        "id": "pj_rest_5",
+        "front": "Rezerwacja",
+        "back": "予約 (よやく)",
+        "difficulty": "medium",
+        "example": "予約をしたいです。",
+        "exampleTranslation": "Chciałbym dokonać rezerwacji."
+      },
+      {
+        "id": "pj_rest_6",
+        "front": "Danie główne",
+        "back": "メインディッシュ",
+        "difficulty": "medium",
+        "example": "メインディッシュは何ですか。",
+        "exampleTranslation": "Jakie jest danie główne?"
+      },
+      {
+        "id": "pj_rest_7",
+        "front": "Przystawka",
+        "back": "前菜 (ぜんさい)",
+        "difficulty": "hard",
+        "example": "前菜を一つください。",
+        "exampleTranslation": "Proszę jedną przystawkę."
+      },
+      {
+        "id": "pj_rest_8",
+        "front": "Napiwek",
+        "back": "チップ",
+        "difficulty": "easy",
+        "example": "チップを渡しました。",
+        "exampleTranslation": "Dałem napiwek."
+      },
+      {
+        "id": "pj_rest_9",
+        "front": "Stołek",
+        "back": "テーブル",
+        "difficulty": "easy",
+        "example": "テーブルは空いていますか。",
+        "exampleTranslation": "Czy stolik jest wolny?"
+      },
+      {
+        "id": "pj_rest_10",
+        "front": "Specjalność dnia",
+        "back": "本日のおすすめ (ほんじつのおすすめ)",
+        "difficulty": "hard",
+        "example": "本日のおすすめは何ですか。",
+        "exampleTranslation": "Jaka jest specjalność dnia?"
+      },
+      {
+        "id": "pj_rest_11",
+        "front": "Karta win",
+        "back": "ワインリスト",
+        "difficulty": "medium",
+        "example": "ワインリストをください。",
+        "exampleTranslation": "Proszę o kartę win."
+      },
+      {
+        "id": "pj_rest_12",
+        "front": "Porcja",
+        "back": "一人前 (いちにんまえ)",
+        "difficulty": "medium",
+        "example": "一人前が大きいです。",
+        "exampleTranslation": "Porcja jest duża."
+      },
+      {
+        "id": "pj_rest_13",
+        "front": "Smacznego",
+        "back": "いただきます",
+        "difficulty": "easy",
+        "example": "いただきますと言いました。",
+        "exampleTranslation": "Powiedziałem „smacznego”."
+      },
+      {
+        "id": "pj_rest_14",
+        "front": "Danie na wynos",
+        "back": "持ち帰り (もちかえり)",
+        "difficulty": "hard",
+        "example": "持ち帰りでお願いします。",
+        "exampleTranslation": "Proszę na wynos."
+      },
+      {
+        "id": "pj_rest_15",
+        "front": "Stolik dla dwóch",
+        "back": "二人席 (ふたりせき)",
+        "difficulty": "medium",
+        "example": "二人席をお願いします。",
+        "exampleTranslation": "Proszę stolik dla dwóch osób."
+      }
+    ]
+  },
+  {
+    "key": "health",
+    "name": "Zdrowie",
+    "description": "Słownictwo związane ze zdrowiem i samopoczuciem",
+    "iconName": "heart.fill",
+    "color": "#E85D75",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_health_1",
+        "front": "Zdrowie",
+        "back": "健康 (けんこう)",
+        "difficulty": "easy",
+        "example": "健康が一番大切です。",
+        "exampleTranslation": "Zdrowie jest najważniejsze."
+      },
+      {
+        "id": "pj_health_2",
+        "front": "Choroba",
+        "back": "病気 (びょうき)",
+        "difficulty": "easy",
+        "example": "病気が治りました。",
+        "exampleTranslation": "Choroba została wyleczona."
+      },
+      {
+        "id": "pj_health_3",
+        "front": "Lek",
+        "back": "薬 (くすり)",
+        "difficulty": "easy",
+        "example": "薬を飲みました。",
+        "exampleTranslation": "Wziąłem lek."
+      },
+      {
+        "id": "pj_health_4",
+        "front": "Gorączka",
+        "back": "熱 (ねつ)",
+        "difficulty": "easy",
+        "example": "熱があります。",
+        "exampleTranslation": "Mam gorączkę."
+      },
+      {
+        "id": "pj_health_5",
+        "front": "Kaszel",
+        "back": "咳 (せき)",
+        "difficulty": "medium",
+        "example": "咳が止まりません。",
+        "exampleTranslation": "Kaszel nie ustaje."
+      },
+      {
+        "id": "pj_health_6",
+        "front": "Przeziębienie",
+        "back": "風邪 (かぜ)",
+        "difficulty": "easy",
+        "example": "風邪をひきました。",
+        "exampleTranslation": "Przeziębiłem się."
+      },
+      {
+        "id": "pj_health_7",
+        "front": "Szpital",
+        "back": "病院 (びょういん)",
+        "difficulty": "easy",
+        "example": "病院に行きました。",
+        "exampleTranslation": "Poszedłem do szpitala."
+      },
+      {
+        "id": "pj_health_8",
+        "front": "Operacja",
+        "back": "手術 (しゅじゅつ)",
+        "difficulty": "hard",
+        "example": "手術が成功しました。",
+        "exampleTranslation": "Operacja się powiodła."
+      },
+      {
+        "id": "pj_health_9",
+        "front": "Recepta",
+        "back": "処方箋 (しょほうせん)",
+        "difficulty": "hard",
+        "example": "処方箋をもらいました。",
+        "exampleTranslation": "Dostałem receptę."
+      },
+      {
+        "id": "pj_health_10",
+        "front": "Alergia",
+        "back": "アレルギー",
+        "difficulty": "medium",
+        "example": "花粉アレルギーがあります。",
+        "exampleTranslation": "Mam alergię na pyłki."
+      },
+      {
+        "id": "pj_health_11",
+        "front": "Ból głowy",
+        "back": "頭痛 (ずつう)",
+        "difficulty": "medium",
+        "example": "頭痛がします。",
+        "exampleTranslation": "Boli mnie głowa."
+      },
+      {
+        "id": "pj_health_12",
+        "front": "Badanie",
+        "back": "検査 (けんさ)",
+        "difficulty": "medium",
+        "example": "検査を受けました。",
+        "exampleTranslation": "Przeszedłem badanie."
+      },
+      {
+        "id": "pj_health_13",
+        "front": "Szczepienie",
+        "back": "予防接種 (よぼうせっしゅ)",
+        "difficulty": "hard",
+        "example": "予防接種を受けました。",
+        "exampleTranslation": "Przyjąłem szczepienie."
+      },
+      {
+        "id": "pj_health_14",
+        "front": "Apteka",
+        "back": "薬局 (やっきょく)",
+        "difficulty": "medium",
+        "example": "薬局で薬を買いました。",
+        "exampleTranslation": "Kupiłem lek w aptece."
+      },
+      {
+        "id": "pj_health_15",
+        "front": "Dobre samopoczucie",
+        "back": "体調がいい (たいちょうがいい)",
+        "difficulty": "medium",
+        "example": "今日は体調がいいです。",
+        "exampleTranslation": "Dziś czuję się dobrze."
+      }
+    ]
+  },
+  {
+    "key": "city",
+    "name": "Miasto",
+    "description": "Miejsca i obiekty w mieście",
+    "iconName": "building.2.fill",
+    "color": "#6E7B8B",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_city_1",
+        "front": "Miasto",
+        "back": "街 (まち)",
+        "difficulty": "easy",
+        "example": "この街はきれいです。",
+        "exampleTranslation": "To miasto jest piękne."
+      },
+      {
+        "id": "pj_city_2",
+        "front": "Ulica",
+        "back": "通り (とおり)",
+        "difficulty": "easy",
+        "example": "この通りは広いです。",
+        "exampleTranslation": "Ta ulica jest szeroka."
+      },
+      {
+        "id": "pj_city_3",
+        "front": "Most",
+        "back": "橋 (はし)",
+        "difficulty": "easy",
+        "example": "橋を渡りました。",
+        "exampleTranslation": "Przeszedłem przez most."
+      },
+      {
+        "id": "pj_city_4",
+        "front": "Park",
+        "back": "公園 (こうえん)",
+        "difficulty": "easy",
+        "example": "公園で散歩しました。",
+        "exampleTranslation": "Spacerowałem w parku."
+      },
+      {
+        "id": "pj_city_5",
+        "front": "Biblioteka",
+        "back": "図書館 (としょかん)",
+        "difficulty": "medium",
+        "example": "図書館で本を借りました。",
+        "exampleTranslation": "Wypożyczyłem książkę z biblioteki."
+      },
+      {
+        "id": "pj_city_6",
+        "front": "Muzeum",
+        "back": "博物館 (はくぶつかん)",
+        "difficulty": "medium",
+        "example": "博物館を見学しました。",
+        "exampleTranslation": "Zwiedziłem muzeum."
+      },
+      {
+        "id": "pj_city_7",
+        "front": "Ratusz",
+        "back": "市役所 (しやくしょ)",
+        "difficulty": "hard",
+        "example": "市役所で書類をもらいました。",
+        "exampleTranslation": "Odebrałem dokumenty w ratuszu."
+      },
+      {
+        "id": "pj_city_8",
+        "front": "Plac",
+        "back": "広場 (ひろば)",
+        "difficulty": "easy",
+        "example": "広場に人がたくさんいます。",
+        "exampleTranslation": "Na placu jest dużo ludzi."
+      },
+      {
+        "id": "pj_city_9",
+        "front": "Fontanna",
+        "back": "噴水 (ふんすい)",
+        "difficulty": "medium",
+        "example": "噴水がきれいです。",
+        "exampleTranslation": "Fontanna jest piękna."
+      },
+      {
+        "id": "pj_city_10",
+        "front": "Wieża",
+        "back": "塔 (とう)",
+        "difficulty": "medium",
+        "example": "塔に登りました。",
+        "exampleTranslation": "Wspiąłem się na wieżę."
+      },
+      {
+        "id": "pj_city_11",
+        "front": "Centrum handlowe",
+        "back": "ショッピングモール",
+        "difficulty": "medium",
+        "example": "ショッピングモールで買い物しました。",
+        "exampleTranslation": "Robiłem zakupy w centrum handlowym."
+      },
+      {
+        "id": "pj_city_12",
+        "front": "Przejście dla pieszych",
+        "back": "横断歩道 (おうだんほどう)",
+        "difficulty": "hard",
+        "example": "横断歩道を渡ってください。",
+        "exampleTranslation": "Proszę przejść przez przejście."
+      },
+      {
+        "id": "pj_city_13",
+        "front": "Skrzyżowanie",
+        "back": "交差点 (こうさてん)",
+        "difficulty": "hard",
+        "example": "交差点で曲がってください。",
+        "exampleTranslation": "Proszę skręcić na skrzyżowaniu."
+      },
+      {
+        "id": "pj_city_14",
+        "front": "Chodnik",
+        "back": "歩道 (ほどう)",
+        "difficulty": "medium",
+        "example": "歩道を歩いてください。",
+        "exampleTranslation": "Proszę iść chodnikiem."
+      },
+      {
+        "id": "pj_city_15",
+        "front": "Parking",
+        "back": "駐車場 (ちゅうしゃじょう)",
+        "difficulty": "medium",
+        "example": "駐車場は満車です。",
+        "exampleTranslation": "Parking jest pełny."
+      }
+    ]
+  },
+  {
+    "key": "hobbies",
+    "name": "Hobby",
+    "description": "Popularne hobby i zainteresowania",
+    "iconName": "paintpalette.fill",
+    "color": "#9B59B6",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_hob_1",
+        "front": "Hobby",
+        "back": "趣味 (しゅみ)",
+        "difficulty": "easy",
+        "example": "趣味は何ですか。",
+        "exampleTranslation": "Jakie masz hobby?"
+      },
+      {
+        "id": "pj_hob_2",
+        "front": "Czytanie",
+        "back": "読書 (どくしょ)",
+        "difficulty": "easy",
+        "example": "読書が好きです。",
+        "exampleTranslation": "Lubię czytanie."
+      },
+      {
+        "id": "pj_hob_3",
+        "front": "Rysowanie",
+        "back": "絵を描く (えをかく)",
+        "difficulty": "easy",
+        "example": "絵を描くのが得意です。",
+        "exampleTranslation": "Jestem dobry w rysowaniu."
+      },
+      {
+        "id": "pj_hob_4",
+        "front": "Gotowanie",
+        "back": "料理 (りょうり)",
+        "difficulty": "easy",
+        "example": "料理が上手です。",
+        "exampleTranslation": "Jest dobry w gotowaniu."
+      },
+      {
+        "id": "pj_hob_5",
+        "front": "Ogrodnictwo",
+        "back": "ガーデニング",
+        "difficulty": "medium",
+        "example": "ガーデニングが趣味です。",
+        "exampleTranslation": "Moim hobby jest ogrodnictwo."
+      },
+      {
+        "id": "pj_hob_6",
+        "front": "Fotografia",
+        "back": "写真 (しゃしん)",
+        "difficulty": "easy",
+        "example": "写真を撮るのが好きです。",
+        "exampleTranslation": "Lubię robić zdjęcia."
+      },
+      {
+        "id": "pj_hob_7",
+        "front": "Szycie",
+        "back": "裁縫 (さいほう)",
+        "difficulty": "medium",
+        "example": "裁縫を習っています。",
+        "exampleTranslation": "Uczę się szycia."
+      },
+      {
+        "id": "pj_hob_8",
+        "front": "Wędkowanie",
+        "back": "釣り (つり)",
+        "difficulty": "easy",
+        "example": "釣りに行きました。",
+        "exampleTranslation": "Poszedłem na wędkowanie."
+      },
+      {
+        "id": "pj_hob_9",
+        "front": "Kolekcjonowanie",
+        "back": "収集 (しゅうしゅう)",
+        "difficulty": "medium",
+        "example": "切手を収集しています。",
+        "exampleTranslation": "Kolekcjonuję znaczki."
+      },
+      {
+        "id": "pj_hob_10",
+        "front": "Gra na gitarze",
+        "back": "ギターを弾く (ギターをひく)",
+        "difficulty": "medium",
+        "example": "ギターを弾くのが好きです。",
+        "exampleTranslation": "Lubię grać na gitarze."
+      },
+      {
+        "id": "pj_hob_11",
+        "front": "Szachy",
+        "back": "チェス",
+        "difficulty": "medium",
+        "example": "チェスをしましょう。",
+        "exampleTranslation": "Zagrajmy w szachy."
+      },
+      {
+        "id": "pj_hob_12",
+        "front": "Kaligraﬁa",
+        "back": "書道 (しょどう)",
+        "difficulty": "hard",
+        "example": "書道を習っています。",
+        "exampleTranslation": "Uczę się kaligraﬁi."
+      },
+      {
+        "id": "pj_hob_13",
+        "front": "Origami",
+        "back": "折り紙 (おりがみ)",
+        "difficulty": "easy",
+        "example": "折り紙で鶴を作りました。",
+        "exampleTranslation": "Zrobiłem żurawia z origami."
+      },
+      {
+        "id": "pj_hob_14",
+        "front": "Taniec",
+        "back": "ダンス",
+        "difficulty": "easy",
+        "example": "ダンスを習っています。",
+        "exampleTranslation": "Uczę się tańca."
+      },
+      {
+        "id": "pj_hob_15",
+        "front": "Ceramika",
+        "back": "陶芸 (とうげい)",
+        "difficulty": "hard",
+        "example": "陶芸教室に通っています。",
+        "exampleTranslation": "Chodzę na zajęcia ceramiki."
+      }
+    ]
+  },
+  {
+    "key": "technology",
+    "name": "Technologia",
+    "description": "Nowoczesna technologia i urządzenia",
+    "iconName": "desktopcomputer",
+    "color": "#3498DB",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_tech_1",
+        "front": "Komputer",
+        "back": "コンピューター",
+        "difficulty": "easy",
+        "example": "コンピューターを使います。",
+        "exampleTranslation": "Używam komputera."
+      },
+      {
+        "id": "pj_tech_2",
+        "front": "Telefon komórkowy",
+        "back": "携帯電話 (けいたいでんわ)",
+        "difficulty": "medium",
+        "example": "携帯電話を忘れました。",
+        "exampleTranslation": "Zapomniałem telefonu komórkowego."
+      },
+      {
+        "id": "pj_tech_3",
+        "front": "Ekran",
+        "back": "画面 (がめん)",
+        "difficulty": "easy",
+        "example": "画面が明るいです。",
+        "exampleTranslation": "Ekran jest jasny."
+      },
+      {
+        "id": "pj_tech_4",
+        "front": "Klawiatura",
+        "back": "キーボード",
+        "difficulty": "easy",
+        "example": "キーボードを買いました。",
+        "exampleTranslation": "Kupiłem klawiaturę."
+      },
+      {
+        "id": "pj_tech_5",
+        "front": "Drukarka",
+        "back": "プリンター",
+        "difficulty": "easy",
+        "example": "プリンターで印刷します。",
+        "exampleTranslation": "Drukuję na drukarce."
+      },
+      {
+        "id": "pj_tech_6",
+        "front": "Bateria",
+        "back": "バッテリー",
+        "difficulty": "easy",
+        "example": "バッテリーが切れました。",
+        "exampleTranslation": "Bateria się rozładowała."
+      },
+      {
+        "id": "pj_tech_7",
+        "front": "Ładowarka",
+        "back": "充電器 (じゅうでんき)",
+        "difficulty": "medium",
+        "example": "充電器を買います。",
+        "exampleTranslation": "Kupię ładowarkę."
+      },
+      {
+        "id": "pj_tech_8",
+        "front": "Robot",
+        "back": "ロボット",
+        "difficulty": "easy",
+        "example": "ロボットが掲除します。",
+        "exampleTranslation": "Robot sprząta."
+      },
+      {
+        "id": "pj_tech_9",
+        "front": "Sztuczna inteligencja",
+        "back": "人工知能 (じんこうちのう)",
+        "difficulty": "hard",
+        "example": "人工知能が発展しています。",
+        "exampleTranslation": "Sztuczna inteligencja się rozwija."
+      },
+      {
+        "id": "pj_tech_10",
+        "front": "Aplikacja",
+        "back": "アプリ",
+        "difficulty": "easy",
+        "example": "新しいアプリをダウンロードしました。",
+        "exampleTranslation": "Pobrałem nową aplikację."
+      },
+      {
+        "id": "pj_tech_11",
+        "front": "Aktualizacja",
+        "back": "アップデート",
+        "difficulty": "medium",
+        "example": "アップデートが必要です。",
+        "exampleTranslation": "Potrzebna jest aktualizacja."
+      },
+      {
+        "id": "pj_tech_12",
+        "front": "Dysk twardy",
+        "back": "ハードディスク",
+        "difficulty": "medium",
+        "example": "ハードディスクがいっぱいです。",
+        "exampleTranslation": "Dysk twardy jest pełny."
+      },
+      {
+        "id": "pj_tech_13",
+        "front": "Dane",
+        "back": "データ",
+        "difficulty": "medium",
+        "example": "データを保存しました。",
+        "exampleTranslation": "Zapisałem dane."
+      },
+      {
+        "id": "pj_tech_14",
+        "front": "Kabel",
+        "back": "ケーブル",
+        "difficulty": "easy",
+        "example": "ケーブルをつないでください。",
+        "exampleTranslation": "Proszę podłączyć kabel."
+      },
+      {
+        "id": "pj_tech_15",
+        "front": "Chmura",
+        "back": "クラウド",
+        "difficulty": "medium",
+        "example": "クラウドに保存しました。",
+        "exampleTranslation": "Zapisałem w chmurze."
+      }
+    ]
+  },
+  {
+    "key": "cooking",
+    "name": "Gotowanie",
+    "description": "Czynności i narzędzia kuchenne",
+    "iconName": "flame.fill",
+    "color": "#E67E22",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_cook_1",
+        "front": "Gotować",
+        "back": "料理する (りょうりする)",
+        "difficulty": "easy",
+        "example": "毎日料理します。",
+        "exampleTranslation": "Codziennie gotuję."
+      },
+      {
+        "id": "pj_cook_2",
+        "front": "Kroić",
+        "back": "切る (きる)",
+        "difficulty": "easy",
+        "example": "野菜を切ります。",
+        "exampleTranslation": "Kroję warzywa."
+      },
+      {
+        "id": "pj_cook_3",
+        "front": "Mieszać",
+        "back": "混ぜる (まぜる)",
+        "difficulty": "easy",
+        "example": "よく混ぜてください。",
+        "exampleTranslation": "Proszę dobrze wymieszać."
+      },
+      {
+        "id": "pj_cook_4",
+        "front": "Smażyć",
+        "back": "炒める (いためる)",
+        "difficulty": "medium",
+        "example": "肉を炒めます。",
+        "exampleTranslation": "Smażę mięso."
+      },
+      {
+        "id": "pj_cook_5",
+        "front": "Piec",
+        "back": "焦く (やく)",
+        "difficulty": "easy",
+        "example": "パンを焦きます。",
+        "exampleTranslation": "Piekę chleb."
+      },
+      {
+        "id": "pj_cook_6",
+        "front": "Gotować (w wodzie)",
+        "back": "茹でる (ゆでる)",
+        "difficulty": "medium",
+        "example": "卵を茹でます。",
+        "exampleTranslation": "Gotuję jajka."
+      },
+      {
+        "id": "pj_cook_7",
+        "front": "Patelnia",
+        "back": "フライパン",
+        "difficulty": "easy",
+        "example": "フライパンを温めます。",
+        "exampleTranslation": "Rozgrzewam patelnię."
+      },
+      {
+        "id": "pj_cook_8",
+        "front": "Garnek",
+        "back": "鍋 (なべ)",
+        "difficulty": "easy",
+        "example": "鍋でスープを作ります。",
+        "exampleTranslation": "Gotuję zupę w garnku."
+      },
+      {
+        "id": "pj_cook_9",
+        "front": "Nóż kuchenny",
+        "back": "包丁 (ほうちょう)",
+        "difficulty": "medium",
+        "example": "包丁を研ぎました。",
+        "exampleTranslation": "Naostrzyłem nóż kuchenny."
+      },
+      {
+        "id": "pj_cook_10",
+        "front": "Przepis",
+        "back": "レシピ",
+        "difficulty": "easy",
+        "example": "新しいレシピを試しました。",
+        "exampleTranslation": "Wypróbowałem nowy przepis."
+      },
+      {
+        "id": "pj_cook_11",
+        "front": "Składnik",
+        "back": "材料 (ざいりょう)",
+        "difficulty": "medium",
+        "example": "材料を買いました。",
+        "exampleTranslation": "Kupiłem składniki."
+      },
+      {
+        "id": "pj_cook_12",
+        "front": "Przyprawy",
+        "back": "調味料 (ちょうみりょう)",
+        "difficulty": "hard",
+        "example": "調味料を加えます。",
+        "exampleTranslation": "Dodaję przyprawy."
+      },
+      {
+        "id": "pj_cook_13",
+        "front": "Piekarnik",
+        "back": "オーブン",
+        "difficulty": "medium",
+        "example": "オーブンを予熱します。",
+        "exampleTranslation": "Rozgrzewam piekarnik."
+      },
+      {
+        "id": "pj_cook_14",
+        "front": "Deska do krojenia",
+        "back": "まな板 (まないた)",
+        "difficulty": "hard",
+        "example": "まな板の上で切ります。",
+        "exampleTranslation": "Kroję na desce do krojenia."
+      },
+      {
+        "id": "pj_cook_15",
+        "front": "Obierać",
+        "back": "皆をむく (かわをむく)",
+        "difficulty": "hard",
+        "example": "じゃがいもの皆をむきます。",
+        "exampleTranslation": "Obieram ziemniaki."
+      }
+    ]
+  },
+  {
+    "key": "office",
+    "name": "Biuro",
+    "description": "Przedmioty i czynności biurowe",
+    "iconName": "building.fill",
+    "color": "#7F8C8D",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_off_1",
+        "front": "Biuro",
+        "back": "事務所 (じむしょ)",
+        "difficulty": "easy",
+        "example": "事務所で働いています。",
+        "exampleTranslation": "Pracuję w biurze."
+      },
+      {
+        "id": "pj_off_2",
+        "front": "Biurko",
+        "back": "机 (つくえ)",
+        "difficulty": "easy",
+        "example": "机の上に書類があります。",
+        "exampleTranslation": "Na biurku są dokumenty."
+      },
+      {
+        "id": "pj_off_3",
+        "front": "Spotkanie",
+        "back": "会議 (かいぎ)",
+        "difficulty": "medium",
+        "example": "会議は三時からです。",
+        "exampleTranslation": "Spotkanie jest od trzeciej."
+      },
+      {
+        "id": "pj_off_4",
+        "front": "Dokument",
+        "back": "書類 (しょるい)",
+        "difficulty": "medium",
+        "example": "書類を準備しました。",
+        "exampleTranslation": "Przygotowałem dokumenty."
+      },
+      {
+        "id": "pj_off_5",
+        "front": "Długopis",
+        "back": "ボールペン",
+        "difficulty": "easy",
+        "example": "ボールペンを貸してください。",
+        "exampleTranslation": "Proszę pożyczyć długopis."
+      },
+      {
+        "id": "pj_off_6",
+        "front": "Kopiarka",
+        "back": "コピー機 (コピーき)",
+        "difficulty": "medium",
+        "example": "コピー機が壊れました。",
+        "exampleTranslation": "Kopiarka się zepsuła."
+      },
+      {
+        "id": "pj_off_7",
+        "front": "Szef",
+        "back": "上司 (じょうし)",
+        "difficulty": "easy",
+        "example": "上司に報告しました。",
+        "exampleTranslation": "Złożyłem raport szefowi."
+      },
+      {
+        "id": "pj_off_8",
+        "front": "Kolega z pracy",
+        "back": "同僚 (どうりょう)",
+        "difficulty": "medium",
+        "example": "同僚と昧ごはんを食べました。",
+        "exampleTranslation": "Jadłem lunch z kolegą z pracy."
+      },
+      {
+        "id": "pj_off_9",
+        "front": "Termin",
+        "back": "締め切り (しめきり)",
+        "difficulty": "medium",
+        "example": "締め切りは明日です。",
+        "exampleTranslation": "Termin jest jutro."
+      },
+      {
+        "id": "pj_off_10",
+        "front": "Nadgodziny",
+        "back": "残業 (ざんぎょう)",
+        "difficulty": "hard",
+        "example": "今日は残業です。",
+        "exampleTranslation": "Dziś mam nadgodziny."
+      },
+      {
+        "id": "pj_off_11",
+        "front": "Pensja",
+        "back": "給料 (きゅうりょう)",
+        "difficulty": "medium",
+        "example": "給料をもらいました。",
+        "exampleTranslation": "Dostałem pensję."
+      },
+      {
+        "id": "pj_off_12",
+        "front": "Prezentacja",
+        "back": "プレゼンテーション",
+        "difficulty": "medium",
+        "example": "プレゼンテーションをします。",
+        "exampleTranslation": "Będę robić prezentację."
+      },
+      {
+        "id": "pj_off_13",
+        "front": "E-mail",
+        "back": "メール",
+        "difficulty": "easy",
+        "example": "メールを送りました。",
+        "exampleTranslation": "Wysłałem e-mail."
+      },
+      {
+        "id": "pj_off_14",
+        "front": "Umowa",
+        "back": "契約 (けいやく)",
+        "difficulty": "hard",
+        "example": "契約を結びました。",
+        "exampleTranslation": "Zawarłem umowę."
+      },
+      {
+        "id": "pj_off_15",
+        "front": "Przerwa",
+        "back": "休憩 (きゅうけい)",
+        "difficulty": "medium",
+        "example": "休憩を取ります。",
+        "exampleTranslation": "Zrobię przerwę."
+      }
+    ]
+  },
+  {
+    "key": "directions",
+    "name": "Kierunki",
+    "description": "Pytanie o drogę i orientacja w przestrzeni",
+    "iconName": "location.fill",
+    "color": "#1ABC9C",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_dir_1",
+        "front": "Prawo",
+        "back": "右 (みぎ)",
+        "difficulty": "easy",
+        "example": "右に曲がってください。",
+        "exampleTranslation": "Proszę skręcić w prawo."
+      },
+      {
+        "id": "pj_dir_2",
+        "front": "Lewo",
+        "back": "左 (ひだり)",
+        "difficulty": "easy",
+        "example": "左に曲がってください。",
+        "exampleTranslation": "Proszę skręcić w lewo."
+      },
+      {
+        "id": "pj_dir_3",
+        "front": "Prosto",
+        "back": "まっすぐ",
+        "difficulty": "easy",
+        "example": "まっすぐ行ってください。",
+        "exampleTranslation": "Proszę iść prosto."
+      },
+      {
+        "id": "pj_dir_4",
+        "front": "Północ",
+        "back": "北 (きた)",
+        "difficulty": "easy",
+        "example": "北に向かいます。",
+        "exampleTranslation": "Jadę na północ."
+      },
+      {
+        "id": "pj_dir_5",
+        "front": "Południe",
+        "back": "南 (みなみ)",
+        "difficulty": "easy",
+        "example": "南にあります。",
+        "exampleTranslation": "Jest na południu."
+      },
+      {
+        "id": "pj_dir_6",
+        "front": "Wschód",
+        "back": "東 (ひがし)",
+        "difficulty": "easy",
+        "example": "東から日が昇ります。",
+        "exampleTranslation": "Słońce wschodzi ze wschodu."
+      },
+      {
+        "id": "pj_dir_7",
+        "front": "Zachód",
+        "back": "西 (にし)",
+        "difficulty": "easy",
+        "example": "西に沈みます。",
+        "exampleTranslation": "Zachodzi na zachodzie."
+      },
+      {
+        "id": "pj_dir_8",
+        "front": "Blisko",
+        "back": "近い (ちかい)",
+        "difficulty": "easy",
+        "example": "駅は近いです。",
+        "exampleTranslation": "Stacja jest blisko."
+      },
+      {
+        "id": "pj_dir_9",
+        "front": "Daleko",
+        "back": "遠い (とおい)",
+        "difficulty": "easy",
+        "example": "空港は遠いです。",
+        "exampleTranslation": "Lotnisko jest daleko."
+      },
+      {
+        "id": "pj_dir_10",
+        "front": "Naprzeciw",
+        "back": "向かい (むかい)",
+        "difficulty": "medium",
+        "example": "コンビニの向かいです。",
+        "exampleTranslation": "Jest naprzeciw sklepu."
+      },
+      {
+        "id": "pj_dir_11",
+        "front": "Obok",
+        "back": "隣 (となり)",
+        "difficulty": "medium",
+        "example": "郵便局の隣です。",
+        "exampleTranslation": "Jest obok poczty."
+      },
+      {
+        "id": "pj_dir_12",
+        "front": "Za",
+        "back": "後ろ (うしろ)",
+        "difficulty": "medium",
+        "example": "建物の後ろです。",
+        "exampleTranslation": "Jest za budynkiem."
+      },
+      {
+        "id": "pj_dir_13",
+        "front": "Przed",
+        "back": "前 (まえ)",
+        "difficulty": "easy",
+        "example": "駅の前で待っています。",
+        "exampleTranslation": "Czekam przed stacją."
+      },
+      {
+        "id": "pj_dir_14",
+        "front": "Między",
+        "back": "間 (あいだ)",
+        "difficulty": "medium",
+        "example": "銀行とホテルの間です。",
+        "exampleTranslation": "Jest między bankiem a hotelem."
+      },
+      {
+        "id": "pj_dir_15",
+        "front": "Drogę proszę",
+        "back": "道を教えてください (みちをおしえてください)",
+        "difficulty": "hard",
+        "example": "駅への道を教えてください。",
+        "exampleTranslation": "Proszę wskazać drogę na stację."
+      }
+    ]
+  },
+  {
+    "key": "computers_internet",
+    "name": "Komputery i internet",
+    "description": "Internet, sieci i świat cyfrowy",
+    "iconName": "wifi",
+    "color": "#2980B9",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_inet_1",
+        "front": "Internet",
+        "back": "インターネット",
+        "difficulty": "easy",
+        "example": "インターネットに接続しました。",
+        "exampleTranslation": "Połączyłem się z internetem."
+      },
+      {
+        "id": "pj_inet_2",
+        "front": "Strona internetowa",
+        "back": "ウェブサイト",
+        "difficulty": "easy",
+        "example": "ウェブサイトを開きました。",
+        "exampleTranslation": "Otworzyłem stronę internetową."
+      },
+      {
+        "id": "pj_inet_3",
+        "front": "Hasło",
+        "back": "パスワード",
+        "difficulty": "easy",
+        "example": "パスワードを忘れました。",
+        "exampleTranslation": "Zapomniałem hasła."
+      },
+      {
+        "id": "pj_inet_4",
+        "front": "Wyszukiwarka",
+        "back": "検索エンジン (けんさくエンジン)",
+        "difficulty": "medium",
+        "example": "検索エンジンで調べました。",
+        "exampleTranslation": "Sprawdziłem w wyszukiwarce."
+      },
+      {
+        "id": "pj_inet_5",
+        "front": "Pobierać",
+        "back": "ダウンロードする",
+        "difficulty": "medium",
+        "example": "ファイルをダウンロードしました。",
+        "exampleTranslation": "Pobrałem plik."
+      },
+      {
+        "id": "pj_inet_6",
+        "front": "Wysyłać",
+        "back": "送信する (そうしんする)",
+        "difficulty": "medium",
+        "example": "メッセージを送信しました。",
+        "exampleTranslation": "Wysłałem wiadomość."
+      },
+      {
+        "id": "pj_inet_7",
+        "front": "Wi-Fi",
+        "back": "ワイファイ",
+        "difficulty": "easy",
+        "example": "ワイファイがつながりません。",
+        "exampleTranslation": "Wi-Fi się nie łączy."
+      },
+      {
+        "id": "pj_inet_8",
+        "front": "Media społecznościowe",
+        "back": "SNS (エスエヌエス)",
+        "difficulty": "medium",
+        "example": "SNSをよく使います。",
+        "exampleTranslation": "Często używam mediów społecznościowych."
+      },
+      {
+        "id": "pj_inet_9",
+        "front": "Konto",
+        "back": "アカウント",
+        "difficulty": "easy",
+        "example": "アカウントを作りました。",
+        "exampleTranslation": "Założyłem konto."
+      },
+      {
+        "id": "pj_inet_10",
+        "front": "Blog",
+        "back": "ブログ",
+        "difficulty": "easy",
+        "example": "ブログを書いています。",
+        "exampleTranslation": "Piszę bloga."
+      },
+      {
+        "id": "pj_inet_11",
+        "front": "Film online",
+        "back": "動画 (どうが)",
+        "difficulty": "easy",
+        "example": "動画を見ました。",
+        "exampleTranslation": "Oglądałem film online."
+      },
+      {
+        "id": "pj_inet_12",
+        "front": "Wiadomość",
+        "back": "メッセージ",
+        "difficulty": "easy",
+        "example": "メッセージを受け取りました。",
+        "exampleTranslation": "Otrzymałem wiadomość."
+      },
+      {
+        "id": "pj_inet_13",
+        "front": "Gra komputerowa",
+        "back": "ゲーム",
+        "difficulty": "easy",
+        "example": "ゲームをします。",
+        "exampleTranslation": "Gram w grę komputerową."
+      },
+      {
+        "id": "pj_inet_14",
+        "front": "Link",
+        "back": "リンク",
+        "difficulty": "easy",
+        "example": "リンクをクリックしてください。",
+        "exampleTranslation": "Proszę kliknąć w link."
+      },
+      {
+        "id": "pj_inet_15",
+        "front": "Bezpieczeństwo online",
+        "back": "セキュリティ",
+        "difficulty": "hard",
+        "example": "セキュリティに気をつけてください。",
+        "exampleTranslation": "Proszę uważać na bezpieczeństwo online."
+      }
+    ]
   }
 ]
