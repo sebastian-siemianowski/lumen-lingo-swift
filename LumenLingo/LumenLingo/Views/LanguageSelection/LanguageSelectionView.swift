@@ -646,10 +646,31 @@ struct LanguageSelectionView: View {
 
                 Spacer()
 
-                Text(hasChanged ? L.startYourAdventure : L.done)
-                    .font(.headline)
-                    .foregroundStyle(.white)
-                    .contentTransition(.interpolate)
+                if hasChanged {
+                    TimelineView(.animation(minimumInterval: 1.0 / 30.0)) { context in
+                        let t = context.date.timeIntervalSinceReferenceDate
+                        let phase = CGFloat(t.truncatingRemainder(dividingBy: 3.5) / 3.5)
+
+                        Text(L.startYourAdventure)
+                            .font(.headline.weight(.bold))
+                            .foregroundStyle(.clear)
+                            .overlay {
+                                cosmicGradient
+                                    .frame(width: 600)
+                                    .offset(x: (phase - 0.5) * 400)
+                                    .mask {
+                                        Text(L.startYourAdventure)
+                                            .font(.headline.weight(.bold))
+                                    }
+                            }
+                    }
+                    .transition(.opacity)
+                } else {
+                    Text(L.done)
+                        .font(.headline.weight(.bold))
+                        .foregroundStyle(.white)
+                        .contentTransition(.interpolate)
+                }
 
                 Image(systemName: hasChanged ? "chevron.right" : "checkmark.circle.fill")
                     .font(.system(size: hasChanged ? 13 : 17, weight: .bold))
@@ -688,6 +709,27 @@ struct LanguageSelectionView: View {
         .animation(.spring(response: 0.45, dampingFraction: 0.8), value: hasChanged)
         .animation(.spring(response: 0.45, dampingFraction: 0.8), value: selectedSource)
         .animation(.spring(response: 0.45, dampingFraction: 0.8), value: selectedTarget)
+    }
+
+    // MARK: - Cosmic Shimmer Gradient
+
+    private var cosmicGradient: some View {
+        LinearGradient(
+            colors: [
+                Color(hex: "#7C3AED"),
+                Color(hex: "#A855F7"),
+                Color(hex: "#E0C3FC"),
+                .white,
+                Color(hex: "#818CF8"),
+                Color(hex: "#6366F1"),
+                Color(hex: "#A855F7"),
+                Color(hex: "#EC4899"),
+                .white,
+                Color(hex: "#7C3AED")
+            ],
+            startPoint: .leading,
+            endPoint: .trailing
+        )
     }
 
     private var ctaBackground: some View {
