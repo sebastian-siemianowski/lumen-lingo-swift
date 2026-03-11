@@ -1,0 +1,702 @@
+[
+  {
+    "key": "fruits_wb",
+    "name": "Fruits",
+    "description": "Common fruits in German",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Apfel",
+        "hint": "Apple"
+      },
+      {
+        "word": "Orange",
+        "hint": "Orange (citrus fruit)"
+      },
+      {
+        "word": "Banane",
+        "hint": "Banana"
+      },
+      {
+        "word": "Erdbeere",
+        "hint": "Strawberry"
+      },
+      {
+        "word": "Traube",
+        "hint": "Grape"
+      },
+      {
+        "word": "Zitrone",
+        "hint": "Lemon"
+      },
+      {
+        "word": "Wassermelone",
+        "hint": "Watermelon"
+      },
+      {
+        "word": "Pfirsich",
+        "hint": "Peach"
+      },
+      {
+        "word": "Kirsche",
+        "hint": "Cherry"
+      },
+      {
+        "word": "Ananas",
+        "hint": "Pineapple"
+      },
+      {
+        "word": "Birne",
+        "hint": "Pear"
+      },
+      {
+        "word": "Mango",
+        "hint": "Mango"
+      },
+      {
+        "word": "Himbeere",
+        "hint": "Raspberry"
+      },
+      {
+        "word": "Pflaume",
+        "hint": "Plum"
+      },
+      {
+        "word": "Heidelbeere",
+        "hint": "Blueberry"
+      }
+    ]
+  },
+  {
+    "key": "vegetables_wb",
+    "name": "Vegetables",
+    "description": "Common vegetables in German",
+    "iconName": "carrot",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Tomate",
+        "hint": "Tomato"
+      },
+      {
+        "word": "Zwiebel",
+        "hint": "Onion"
+      },
+      {
+        "word": "Salat",
+        "hint": "Lettuce / Salad"
+      },
+      {
+        "word": "Karotte",
+        "hint": "Carrot"
+      },
+      {
+        "word": "Kartoffel",
+        "hint": "Potato"
+      },
+      {
+        "word": "Knoblauch",
+        "hint": "Garlic"
+      },
+      {
+        "word": "Gurke",
+        "hint": "Cucumber"
+      },
+      {
+        "word": "Paprika",
+        "hint": "Bell pepper"
+      },
+      {
+        "word": "Spinat",
+        "hint": "Spinach"
+      },
+      {
+        "word": "Brokkoli",
+        "hint": "Broccoli"
+      },
+      {
+        "word": "Mais",
+        "hint": "Corn"
+      },
+      {
+        "word": "Erbse",
+        "hint": "Pea"
+      },
+      {
+        "word": "Pilz",
+        "hint": "Mushroom"
+      },
+      {
+        "word": "Aubergine",
+        "hint": "Eggplant"
+      },
+      {
+        "word": "Bohne",
+        "hint": "Bean"
+      }
+    ]
+  },
+  {
+    "key": "colors_wb",
+    "name": "Colors",
+    "description": "Basic colors in German",
+    "iconName": "paintpalette",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Rot",
+        "hint": "Red"
+      },
+      {
+        "word": "Blau",
+        "hint": "Blue"
+      },
+      {
+        "word": "Gelb",
+        "hint": "Yellow"
+      },
+      {
+        "word": "Schwarz",
+        "hint": "Black"
+      },
+      {
+        "word": "Braun",
+        "hint": "Brown"
+      },
+      {
+        "word": "Violett",
+        "hint": "Violet"
+      },
+      {
+        "word": "Lila",
+        "hint": "Purple"
+      },
+      {
+        "word": "Rosa",
+        "hint": "Pink"
+      },
+      {
+        "word": "Grau",
+        "hint": "Gray"
+      },
+      {
+        "word": "Gold",
+        "hint": "Gold"
+      },
+      {
+        "word": "Silber",
+        "hint": "Silver"
+      },
+      {
+        "word": "Beige",
+        "hint": "Beige"
+      },
+      {
+        "word": "Türkis",
+        "hint": "Turquoise"
+      },
+      {
+        "word": "Dunkelblau",
+        "hint": "Dark blue"
+      },
+      {
+        "word": "Hellgrün",
+        "hint": "Light green"
+      }
+    ]
+  },
+  {
+    "key": "family_wb",
+    "name": "Family",
+    "description": "Family members in German",
+    "iconName": "person.3",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Mutter",
+        "hint": "Mother"
+      },
+      {
+        "word": "Vater",
+        "hint": "Father"
+      },
+      {
+        "word": "Schwester",
+        "hint": "Sister"
+      },
+      {
+        "word": "Bruder",
+        "hint": "Brother"
+      },
+      {
+        "word": "Großmutter",
+        "hint": "Grandmother"
+      },
+      {
+        "word": "Großvater",
+        "hint": "Grandfather"
+      },
+      {
+        "word": "Sohn",
+        "hint": "Son"
+      },
+      {
+        "word": "Tochter",
+        "hint": "Daughter"
+      },
+      {
+        "word": "Cousin",
+        "hint": "Cousin (male)"
+      },
+      {
+        "word": "Neffe",
+        "hint": "Nephew"
+      },
+      {
+        "word": "Nichte",
+        "hint": "Niece"
+      },
+      {
+        "word": "Ehemann",
+        "hint": "Husband"
+      },
+      {
+        "word": "Ehefrau",
+        "hint": "Wife"
+      },
+      {
+        "word": "Schwager",
+        "hint": "Brother-in-law"
+      },
+      {
+        "word": "Enkel",
+        "hint": "Grandchild"
+      }
+    ]
+  },
+  {
+    "key": "animals_wb",
+    "name": "Animals",
+    "description": "Common animals in German",
+    "iconName": "hare",
+    "color": "#eab308",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Hund",
+        "hint": "Dog"
+      },
+      {
+        "word": "Katze",
+        "hint": "Cat"
+      },
+      {
+        "word": "Pferd",
+        "hint": "Horse"
+      },
+      {
+        "word": "Vogel",
+        "hint": "Bird"
+      },
+      {
+        "word": "Fisch",
+        "hint": "Fish"
+      },
+      {
+        "word": "Kaninchen",
+        "hint": "Rabbit"
+      },
+      {
+        "word": "Schildkröte",
+        "hint": "Turtle"
+      },
+      {
+        "word": "Schmetterling",
+        "hint": "Butterfly"
+      },
+      {
+        "word": "Löwe",
+        "hint": "Lion"
+      },
+      {
+        "word": "Elefant",
+        "hint": "Elephant"
+      },
+      {
+        "word": "Affe",
+        "hint": "Monkey"
+      },
+      {
+        "word": "Bär",
+        "hint": "Bear"
+      },
+      {
+        "word": "Maus",
+        "hint": "Mouse"
+      },
+      {
+        "word": "Schwein",
+        "hint": "Pig"
+      },
+      {
+        "word": "Schlange",
+        "hint": "Snake"
+      }
+    ]
+  },
+  {
+    "key": "body_parts_wb",
+    "name": "Body Parts",
+    "description": "Parts of the human body in German",
+    "iconName": "figure.stand",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Kopf",
+        "hint": "Head"
+      },
+      {
+        "word": "Arm",
+        "hint": "Arm"
+      },
+      {
+        "word": "Bein",
+        "hint": "Leg"
+      },
+      {
+        "word": "Hand",
+        "hint": "Hand"
+      },
+      {
+        "word": "Auge",
+        "hint": "Eye"
+      },
+      {
+        "word": "Nase",
+        "hint": "Nose"
+      },
+      {
+        "word": "Mund",
+        "hint": "Mouth"
+      },
+      {
+        "word": "Finger",
+        "hint": "Finger"
+      },
+      {
+        "word": "Herz",
+        "hint": "Heart"
+      },
+      {
+        "word": "Rücken",
+        "hint": "Back"
+      },
+      {
+        "word": "Knie",
+        "hint": "Knee"
+      },
+      {
+        "word": "Schulter",
+        "hint": "Shoulder"
+      },
+      {
+        "word": "Hals",
+        "hint": "Neck / Throat"
+      },
+      {
+        "word": "Bauch",
+        "hint": "Belly / Stomach"
+      },
+      {
+        "word": "Zahn",
+        "hint": "Tooth"
+      }
+    ]
+  },
+  {
+    "key": "numbers_wb",
+    "name": "Numbers",
+    "description": "Number words in German",
+    "iconName": "number",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Eins",
+        "hint": "One"
+      },
+      {
+        "word": "Zwei",
+        "hint": "Two"
+      },
+      {
+        "word": "Drei",
+        "hint": "Three"
+      },
+      {
+        "word": "Vier",
+        "hint": "Four"
+      },
+      {
+        "word": "Fünf",
+        "hint": "Five"
+      },
+      {
+        "word": "Sechs",
+        "hint": "Six"
+      },
+      {
+        "word": "Sieben",
+        "hint": "Seven"
+      },
+      {
+        "word": "Acht",
+        "hint": "Eight"
+      },
+      {
+        "word": "Neun",
+        "hint": "Nine"
+      },
+      {
+        "word": "Zehn",
+        "hint": "Ten"
+      },
+      {
+        "word": "Zwanzig",
+        "hint": "Twenty"
+      },
+      {
+        "word": "Hundert",
+        "hint": "Hundred"
+      },
+      {
+        "word": "Tausend",
+        "hint": "Thousand"
+      },
+      {
+        "word": "Null",
+        "hint": "Zero"
+      },
+      {
+        "word": "Zwölf",
+        "hint": "Twelve"
+      }
+    ]
+  },
+  {
+    "key": "greetings_wb",
+    "name": "Greetings",
+    "description": "Common greetings and polite phrases in German",
+    "iconName": "hand.wave",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Hallo",
+        "hint": "Hello"
+      },
+      {
+        "word": "Danke",
+        "hint": "Thank you"
+      },
+      {
+        "word": "Bitte",
+        "hint": "Please / You're welcome"
+      },
+      {
+        "word": "Willkommen",
+        "hint": "Welcome"
+      },
+      {
+        "word": "Entschuldigung",
+        "hint": "Excuse me / Sorry"
+      },
+      {
+        "word": "Morgen",
+        "hint": "Morning (as in 'Guten Morgen')"
+      },
+      {
+        "word": "Abend",
+        "hint": "Evening (as in 'Guten Abend')"
+      },
+      {
+        "word": "Nacht",
+        "hint": "Night (as in 'Gute Nacht')"
+      },
+      {
+        "word": "Wiedersehen",
+        "hint": "Goodbye (formal, 'Auf Wiedersehen')"
+      },
+      {
+        "word": "Tschüss",
+        "hint": "Bye (informal)"
+      },
+      {
+        "word": "Freut",
+        "hint": "Pleased (as in 'Freut mich')"
+      },
+      {
+        "word": "Grüße",
+        "hint": "Greetings / Regards"
+      },
+      {
+        "word": "Prost",
+        "hint": "Cheers (toast)"
+      },
+      {
+        "word": "Glückwunsch",
+        "hint": "Congratulations"
+      },
+      {
+        "word": "Herzlich",
+        "hint": "Cordial / Warm (greeting)"
+      }
+    ]
+  },
+  {
+    "key": "food_wb",
+    "name": "Food",
+    "description": "Common food items in German",
+    "iconName": "fork.knife",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Brot",
+        "hint": "Bread"
+      },
+      {
+        "word": "Käse",
+        "hint": "Cheese"
+      },
+      {
+        "word": "Butter",
+        "hint": "Butter"
+      },
+      {
+        "word": "Reis",
+        "hint": "Rice"
+      },
+      {
+        "word": "Nudeln",
+        "hint": "Noodles / Pasta"
+      },
+      {
+        "word": "Fleisch",
+        "hint": "Meat"
+      },
+      {
+        "word": "Hähnchen",
+        "hint": "Chicken"
+      },
+      {
+        "word": "Wurst",
+        "hint": "Sausage"
+      },
+      {
+        "word": "Suppe",
+        "hint": "Soup"
+      },
+      {
+        "word": "Salz",
+        "hint": "Salt"
+      },
+      {
+        "word": "Pfeffer",
+        "hint": "Pepper (spice)"
+      },
+      {
+        "word": "Zucker",
+        "hint": "Sugar"
+      },
+      {
+        "word": "Honig",
+        "hint": "Honey"
+      },
+      {
+        "word": "Marmelade",
+        "hint": "Jam / Marmalade"
+      },
+      {
+        "word": "Brötchen",
+        "hint": "Bread roll"
+      }
+    ]
+  },
+  {
+    "key": "clothing_wb",
+    "name": "Clothing",
+    "description": "Clothing and accessories in German",
+    "iconName": "tshirt",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Hemd",
+        "hint": "Shirt"
+      },
+      {
+        "word": "Hose",
+        "hint": "Pants / Trousers"
+      },
+      {
+        "word": "Jacke",
+        "hint": "Jacket"
+      },
+      {
+        "word": "Kleid",
+        "hint": "Dress"
+      },
+      {
+        "word": "Schuh",
+        "hint": "Shoe"
+      },
+      {
+        "word": "Socke",
+        "hint": "Sock"
+      },
+      {
+        "word": "Mantel",
+        "hint": "Coat"
+      },
+      {
+        "word": "Schal",
+        "hint": "Scarf"
+      },
+      {
+        "word": "Mütze",
+        "hint": "Cap / Beanie"
+      },
+      {
+        "word": "Handschuh",
+        "hint": "Glove"
+      },
+      {
+        "word": "Gürtel",
+        "hint": "Belt"
+      },
+      {
+        "word": "Stiefel",
+        "hint": "Boot"
+      },
+      {
+        "word": "Pullover",
+        "hint": "Sweater / Pullover"
+      },
+      {
+        "word": "Rock",
+        "hint": "Skirt"
+      },
+      {
+        "word": "Bluse",
+        "hint": "Blouse"
+      }
+    ]
+  }
+]

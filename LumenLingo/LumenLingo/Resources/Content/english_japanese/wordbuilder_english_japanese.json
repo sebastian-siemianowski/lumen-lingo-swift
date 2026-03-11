@@ -1,0 +1,702 @@
+[
+  {
+    "key": "fruits_wb",
+    "name": "Fruits",
+    "description": "Learn to spell common fruit names in Japanese",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "りんご",
+        "hint": "Apple"
+      },
+      {
+        "word": "みかん",
+        "hint": "Mandarin orange"
+      },
+      {
+        "word": "バナナ",
+        "hint": "Banana"
+      },
+      {
+        "word": "いちご",
+        "hint": "Strawberry"
+      },
+      {
+        "word": "ぶどう",
+        "hint": "Grape"
+      },
+      {
+        "word": "レモン",
+        "hint": "Lemon"
+      },
+      {
+        "word": "すいか",
+        "hint": "Watermelon"
+      },
+      {
+        "word": "もも",
+        "hint": "Peach"
+      },
+      {
+        "word": "なし",
+        "hint": "Pear"
+      },
+      {
+        "word": "メロン",
+        "hint": "Melon"
+      },
+      {
+        "word": "さくらんぼ",
+        "hint": "Cherry"
+      },
+      {
+        "word": "マンゴー",
+        "hint": "Mango"
+      },
+      {
+        "word": "パイナップル",
+        "hint": "Pineapple"
+      },
+      {
+        "word": "キウイ",
+        "hint": "Kiwi"
+      },
+      {
+        "word": "かき",
+        "hint": "Persimmon"
+      }
+    ]
+  },
+  {
+    "key": "vegetables_wb",
+    "name": "Vegetables",
+    "description": "Learn to spell common vegetable names in Japanese",
+    "iconName": "carrot",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "トマト",
+        "hint": "Tomato"
+      },
+      {
+        "word": "たまねぎ",
+        "hint": "Onion"
+      },
+      {
+        "word": "にんじん",
+        "hint": "Carrot"
+      },
+      {
+        "word": "キャベツ",
+        "hint": "Cabbage"
+      },
+      {
+        "word": "だいこん",
+        "hint": "Japanese radish"
+      },
+      {
+        "word": "ほうれんそう",
+        "hint": "Spinach"
+      },
+      {
+        "word": "きゅうり",
+        "hint": "Cucumber"
+      },
+      {
+        "word": "ピーマン",
+        "hint": "Bell pepper"
+      },
+      {
+        "word": "なす",
+        "hint": "Eggplant"
+      },
+      {
+        "word": "じゃがいも",
+        "hint": "Potato"
+      },
+      {
+        "word": "ブロッコリー",
+        "hint": "Broccoli"
+      },
+      {
+        "word": "レタス",
+        "hint": "Lettuce"
+      },
+      {
+        "word": "かぼちゃ",
+        "hint": "Pumpkin"
+      },
+      {
+        "word": "ねぎ",
+        "hint": "Green onion / Leek"
+      },
+      {
+        "word": "もやし",
+        "hint": "Bean sprouts"
+      }
+    ]
+  },
+  {
+    "key": "colors_wb",
+    "name": "Colors",
+    "description": "Learn to spell color words in Japanese",
+    "iconName": "paintpalette",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "あか",
+        "hint": "Red"
+      },
+      {
+        "word": "あお",
+        "hint": "Blue"
+      },
+      {
+        "word": "みどり",
+        "hint": "Green"
+      },
+      {
+        "word": "きいろ",
+        "hint": "Yellow"
+      },
+      {
+        "word": "くろ",
+        "hint": "Black"
+      },
+      {
+        "word": "しろ",
+        "hint": "White"
+      },
+      {
+        "word": "オレンジ",
+        "hint": "Orange"
+      },
+      {
+        "word": "むらさき",
+        "hint": "Purple"
+      },
+      {
+        "word": "ピンク",
+        "hint": "Pink"
+      },
+      {
+        "word": "ちゃいろ",
+        "hint": "Brown"
+      },
+      {
+        "word": "はいいろ",
+        "hint": "Gray"
+      },
+      {
+        "word": "きんいろ",
+        "hint": "Gold"
+      },
+      {
+        "word": "ぎんいろ",
+        "hint": "Silver"
+      },
+      {
+        "word": "そらいろ",
+        "hint": "Sky blue"
+      },
+      {
+        "word": "もえぎ",
+        "hint": "Light green"
+      }
+    ]
+  },
+  {
+    "key": "family_wb",
+    "name": "Family",
+    "description": "Learn to spell family member names in Japanese",
+    "iconName": "person.3",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "おかあさん",
+        "hint": "Mother"
+      },
+      {
+        "word": "おとうさん",
+        "hint": "Father"
+      },
+      {
+        "word": "おねえさん",
+        "hint": "Older sister"
+      },
+      {
+        "word": "おにいさん",
+        "hint": "Older brother"
+      },
+      {
+        "word": "いもうと",
+        "hint": "Younger sister"
+      },
+      {
+        "word": "おとうと",
+        "hint": "Younger brother"
+      },
+      {
+        "word": "おばあさん",
+        "hint": "Grandmother"
+      },
+      {
+        "word": "おじいさん",
+        "hint": "Grandfather"
+      },
+      {
+        "word": "おば",
+        "hint": "Aunt"
+      },
+      {
+        "word": "おじ",
+        "hint": "Uncle"
+      },
+      {
+        "word": "いとこ",
+        "hint": "Cousin"
+      },
+      {
+        "word": "むすめ",
+        "hint": "Daughter"
+      },
+      {
+        "word": "むすこ",
+        "hint": "Son"
+      },
+      {
+        "word": "かぞく",
+        "hint": "Family"
+      },
+      {
+        "word": "しんせき",
+        "hint": "Relatives"
+      }
+    ]
+  },
+  {
+    "key": "animals_wb",
+    "name": "Animals",
+    "description": "Learn to spell animal names in Japanese",
+    "iconName": "pawprint",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "いぬ",
+        "hint": "Dog"
+      },
+      {
+        "word": "ねこ",
+        "hint": "Cat"
+      },
+      {
+        "word": "うさぎ",
+        "hint": "Rabbit"
+      },
+      {
+        "word": "うま",
+        "hint": "Horse"
+      },
+      {
+        "word": "さかな",
+        "hint": "Fish"
+      },
+      {
+        "word": "とり",
+        "hint": "Bird"
+      },
+      {
+        "word": "ぞう",
+        "hint": "Elephant"
+      },
+      {
+        "word": "ライオン",
+        "hint": "Lion"
+      },
+      {
+        "word": "パンダ",
+        "hint": "Panda"
+      },
+      {
+        "word": "くま",
+        "hint": "Bear"
+      },
+      {
+        "word": "さる",
+        "hint": "Monkey"
+      },
+      {
+        "word": "ペンギン",
+        "hint": "Penguin"
+      },
+      {
+        "word": "きつね",
+        "hint": "Fox"
+      },
+      {
+        "word": "たぬき",
+        "hint": "Raccoon dog (Tanuki)"
+      },
+      {
+        "word": "かめ",
+        "hint": "Turtle"
+      }
+    ]
+  },
+  {
+    "key": "body_parts_wb",
+    "name": "Body Parts",
+    "description": "Learn to spell body part names in Japanese",
+    "iconName": "figure.stand",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "あたま",
+        "hint": "Head"
+      },
+      {
+        "word": "て",
+        "hint": "Hand"
+      },
+      {
+        "word": "あし",
+        "hint": "Foot / Leg"
+      },
+      {
+        "word": "め",
+        "hint": "Eye"
+      },
+      {
+        "word": "みみ",
+        "hint": "Ear"
+      },
+      {
+        "word": "はな",
+        "hint": "Nose"
+      },
+      {
+        "word": "くち",
+        "hint": "Mouth"
+      },
+      {
+        "word": "かた",
+        "hint": "Shoulder"
+      },
+      {
+        "word": "ひざ",
+        "hint": "Knee"
+      },
+      {
+        "word": "ゆび",
+        "hint": "Finger"
+      },
+      {
+        "word": "おなか",
+        "hint": "Stomach / Belly"
+      },
+      {
+        "word": "せなか",
+        "hint": "Back (body)"
+      },
+      {
+        "word": "むね",
+        "hint": "Chest"
+      },
+      {
+        "word": "のど",
+        "hint": "Throat"
+      },
+      {
+        "word": "ほね",
+        "hint": "Bone"
+      }
+    ]
+  },
+  {
+    "key": "numbers_wb",
+    "name": "Numbers",
+    "description": "Learn to spell number words in Japanese",
+    "iconName": "number",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "いち",
+        "hint": "One"
+      },
+      {
+        "word": "に",
+        "hint": "Two"
+      },
+      {
+        "word": "さん",
+        "hint": "Three"
+      },
+      {
+        "word": "よん",
+        "hint": "Four"
+      },
+      {
+        "word": "ご",
+        "hint": "Five"
+      },
+      {
+        "word": "ろく",
+        "hint": "Six"
+      },
+      {
+        "word": "なな",
+        "hint": "Seven"
+      },
+      {
+        "word": "はち",
+        "hint": "Eight"
+      },
+      {
+        "word": "きゅう",
+        "hint": "Nine"
+      },
+      {
+        "word": "じゅう",
+        "hint": "Ten"
+      },
+      {
+        "word": "ひゃく",
+        "hint": "One hundred"
+      },
+      {
+        "word": "せん",
+        "hint": "One thousand"
+      },
+      {
+        "word": "まん",
+        "hint": "Ten thousand"
+      },
+      {
+        "word": "ゼロ",
+        "hint": "Zero"
+      },
+      {
+        "word": "にじゅう",
+        "hint": "Twenty"
+      }
+    ]
+  },
+  {
+    "key": "greetings_wb",
+    "name": "Greetings",
+    "description": "Learn to spell common greetings in Japanese",
+    "iconName": "hand.wave",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "おはよう",
+        "hint": "Good morning"
+      },
+      {
+        "word": "こんにちは",
+        "hint": "Hello / Good afternoon"
+      },
+      {
+        "word": "こんばんは",
+        "hint": "Good evening"
+      },
+      {
+        "word": "さようなら",
+        "hint": "Goodbye"
+      },
+      {
+        "word": "ありがとう",
+        "hint": "Thank you"
+      },
+      {
+        "word": "すみません",
+        "hint": "Excuse me / Sorry"
+      },
+      {
+        "word": "おねがいします",
+        "hint": "Please"
+      },
+      {
+        "word": "いただきます",
+        "hint": "Let's eat (before meal)"
+      },
+      {
+        "word": "おやすみ",
+        "hint": "Good night"
+      },
+      {
+        "word": "ごめんなさい",
+        "hint": "I'm sorry"
+      },
+      {
+        "word": "はじめまして",
+        "hint": "Nice to meet you"
+      },
+      {
+        "word": "おめでとう",
+        "hint": "Congratulations"
+      },
+      {
+        "word": "おかえり",
+        "hint": "Welcome home"
+      },
+      {
+        "word": "ただいま",
+        "hint": "I'm home"
+      },
+      {
+        "word": "いってきます",
+        "hint": "I'm leaving (for now)"
+      }
+    ]
+  },
+  {
+    "key": "food_wb",
+    "name": "Food",
+    "description": "Learn to spell common food names in Japanese",
+    "iconName": "fork.knife",
+    "color": "#d97706",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "ごはん",
+        "hint": "Rice / Meal"
+      },
+      {
+        "word": "パン",
+        "hint": "Bread"
+      },
+      {
+        "word": "たまご",
+        "hint": "Egg"
+      },
+      {
+        "word": "にく",
+        "hint": "Meat"
+      },
+      {
+        "word": "サラダ",
+        "hint": "Salad"
+      },
+      {
+        "word": "スープ",
+        "hint": "Soup"
+      },
+      {
+        "word": "ラーメン",
+        "hint": "Ramen noodles"
+      },
+      {
+        "word": "すし",
+        "hint": "Sushi"
+      },
+      {
+        "word": "てんぷら",
+        "hint": "Tempura"
+      },
+      {
+        "word": "うどん",
+        "hint": "Udon noodles"
+      },
+      {
+        "word": "カレー",
+        "hint": "Curry"
+      },
+      {
+        "word": "おにぎり",
+        "hint": "Rice ball"
+      },
+      {
+        "word": "みそしる",
+        "hint": "Miso soup"
+      },
+      {
+        "word": "やきにく",
+        "hint": "Grilled meat (BBQ)"
+      },
+      {
+        "word": "そば",
+        "hint": "Buckwheat noodles"
+      }
+    ]
+  },
+  {
+    "key": "clothing_wb",
+    "name": "Clothing",
+    "description": "Learn to spell clothing item names in Japanese",
+    "iconName": "tshirt",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "シャツ",
+        "hint": "Shirt"
+      },
+      {
+        "word": "ズボン",
+        "hint": "Pants / Trousers"
+      },
+      {
+        "word": "くつ",
+        "hint": "Shoes"
+      },
+      {
+        "word": "ぼうし",
+        "hint": "Hat / Cap"
+      },
+      {
+        "word": "スカート",
+        "hint": "Skirt"
+      },
+      {
+        "word": "コート",
+        "hint": "Coat"
+      },
+      {
+        "word": "セーター",
+        "hint": "Sweater"
+      },
+      {
+        "word": "くつした",
+        "hint": "Socks"
+      },
+      {
+        "word": "ドレス",
+        "hint": "Dress"
+      },
+      {
+        "word": "ジーンズ",
+        "hint": "Jeans"
+      },
+      {
+        "word": "ジャケット",
+        "hint": "Jacket"
+      },
+      {
+        "word": "ネクタイ",
+        "hint": "Necktie"
+      },
+      {
+        "word": "きもの",
+        "hint": "Kimono"
+      },
+      {
+        "word": "ゆかた",
+        "hint": "Yukata (summer kimono)"
+      },
+      {
+        "word": "てぶくろ",
+        "hint": "Gloves"
+      }
+    ]
+  }
+]

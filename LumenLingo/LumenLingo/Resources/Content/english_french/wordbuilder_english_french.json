@@ -1,0 +1,1052 @@
+[
+  {
+    "key": "fruits_wb",
+    "name": "Fruits",
+    "description": "Common fruits in French",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "pomme",
+        "hint": "Apple"
+      },
+      {
+        "word": "orange",
+        "hint": "Orange"
+      },
+      {
+        "word": "banane",
+        "hint": "Banana"
+      },
+      {
+        "word": "fraise",
+        "hint": "Strawberry"
+      },
+      {
+        "word": "raisin",
+        "hint": "Grape"
+      },
+      {
+        "word": "citron",
+        "hint": "Lemon"
+      },
+      {
+        "word": "cerise",
+        "hint": "Cherry"
+      },
+      {
+        "word": "poire",
+        "hint": "Pear"
+      },
+      {
+        "word": "ananas",
+        "hint": "Pineapple"
+      },
+      {
+        "word": "mangue",
+        "hint": "Mango"
+      },
+      {
+        "word": "abricot",
+        "hint": "Apricot"
+      },
+      {
+        "word": "prune",
+        "hint": "Plum"
+      },
+      {
+        "word": "framboise",
+        "hint": "Raspberry"
+      },
+      {
+        "word": "melon",
+        "hint": "Melon"
+      },
+      {
+        "word": "figue",
+        "hint": "Fig"
+      }
+    ]
+  },
+  {
+    "key": "vegetables_wb",
+    "name": "Vegetables",
+    "description": "Common vegetables in French",
+    "iconName": "carrot",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "tomate",
+        "hint": "Tomato"
+      },
+      {
+        "word": "oignon",
+        "hint": "Onion"
+      },
+      {
+        "word": "laitue",
+        "hint": "Lettuce"
+      },
+      {
+        "word": "carotte",
+        "hint": "Carrot"
+      },
+      {
+        "word": "pomme de terre",
+        "hint": "Potato"
+      },
+      {
+        "word": "concombre",
+        "hint": "Cucumber"
+      },
+      {
+        "word": "poivron",
+        "hint": "Bell pepper"
+      },
+      {
+        "word": "haricot",
+        "hint": "Bean"
+      },
+      {
+        "word": "champignon",
+        "hint": "Mushroom"
+      },
+      {
+        "word": "courgette",
+        "hint": "Zucchini"
+      },
+      {
+        "word": "chou",
+        "hint": "Cabbage"
+      },
+      {
+        "word": "betterave",
+        "hint": "Beet"
+      },
+      {
+        "word": "radis",
+        "hint": "Radish"
+      },
+      {
+        "word": "navet",
+        "hint": "Turnip"
+      },
+      {
+        "word": "asperge",
+        "hint": "Asparagus"
+      }
+    ]
+  },
+  {
+    "key": "colors_wb",
+    "name": "Colors",
+    "description": "Colors in French",
+    "iconName": "paintpalette",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "rouge",
+        "hint": "Red"
+      },
+      {
+        "word": "bleu",
+        "hint": "Blue"
+      },
+      {
+        "word": "vert",
+        "hint": "Green"
+      },
+      {
+        "word": "jaune",
+        "hint": "Yellow"
+      },
+      {
+        "word": "noir",
+        "hint": "Black"
+      },
+      {
+        "word": "blanc",
+        "hint": "White"
+      },
+      {
+        "word": "violet",
+        "hint": "Purple"
+      },
+      {
+        "word": "rose",
+        "hint": "Pink"
+      },
+      {
+        "word": "marron",
+        "hint": "Brown"
+      },
+      {
+        "word": "gris",
+        "hint": "Gray"
+      },
+      {
+        "word": "pourpre",
+        "hint": "Crimson/Purple"
+      },
+      {
+        "word": "turquoise",
+        "hint": "Turquoise"
+      },
+      {
+        "word": "beige",
+        "hint": "Beige"
+      },
+      {
+        "word": "argent",
+        "hint": "Silver"
+      },
+      {
+        "word": "doré",
+        "hint": "Golden"
+      }
+    ]
+  },
+  {
+    "key": "family_wb",
+    "name": "Family",
+    "description": "Family members in French",
+    "iconName": "figure.2.and.child",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "mère",
+        "hint": "Mother"
+      },
+      {
+        "word": "père",
+        "hint": "Father"
+      },
+      {
+        "word": "soeur",
+        "hint": "Sister"
+      },
+      {
+        "word": "frère",
+        "hint": "Brother"
+      },
+      {
+        "word": "grand-mère",
+        "hint": "Grandmother"
+      },
+      {
+        "word": "grand-père",
+        "hint": "Grandfather"
+      },
+      {
+        "word": "fils",
+        "hint": "Son"
+      },
+      {
+        "word": "fille",
+        "hint": "Daughter"
+      },
+      {
+        "word": "cousin",
+        "hint": "Cousin (male)"
+      },
+      {
+        "word": "cousine",
+        "hint": "Cousin (female)"
+      },
+      {
+        "word": "oncle",
+        "hint": "Uncle"
+      },
+      {
+        "word": "tante",
+        "hint": "Aunt"
+      },
+      {
+        "word": "neveu",
+        "hint": "Nephew"
+      },
+      {
+        "word": "nièce",
+        "hint": "Niece"
+      },
+      {
+        "word": "époux",
+        "hint": "Spouse (male)"
+      }
+    ]
+  },
+  {
+    "key": "animals_wb",
+    "name": "Animals",
+    "description": "Common animals in French",
+    "iconName": "hare",
+    "color": "#eab308",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "chien",
+        "hint": "Dog"
+      },
+      {
+        "word": "chat",
+        "hint": "Cat"
+      },
+      {
+        "word": "cheval",
+        "hint": "Horse"
+      },
+      {
+        "word": "oiseau",
+        "hint": "Bird"
+      },
+      {
+        "word": "poisson",
+        "hint": "Fish"
+      },
+      {
+        "word": "vache",
+        "hint": "Cow"
+      },
+      {
+        "word": "cochon",
+        "hint": "Pig"
+      },
+      {
+        "word": "lapin",
+        "hint": "Rabbit"
+      },
+      {
+        "word": "tortue",
+        "hint": "Turtle"
+      },
+      {
+        "word": "papillon",
+        "hint": "Butterfly"
+      },
+      {
+        "word": "lion",
+        "hint": "Lion"
+      },
+      {
+        "word": "serpent",
+        "hint": "Snake"
+      },
+      {
+        "word": "grenouille",
+        "hint": "Frog"
+      },
+      {
+        "word": "souris",
+        "hint": "Mouse"
+      },
+      {
+        "word": "canard",
+        "hint": "Duck"
+      }
+    ]
+  },
+  {
+    "key": "body_parts_wb",
+    "name": "Body Parts",
+    "description": "Parts of the human body in French",
+    "iconName": "figure.stand",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "tête",
+        "hint": "Head"
+      },
+      {
+        "word": "bras",
+        "hint": "Arm"
+      },
+      {
+        "word": "jambe",
+        "hint": "Leg"
+      },
+      {
+        "word": "main",
+        "hint": "Hand"
+      },
+      {
+        "word": "pied",
+        "hint": "Foot"
+      },
+      {
+        "word": "oeil",
+        "hint": "Eye"
+      },
+      {
+        "word": "bouche",
+        "hint": "Mouth"
+      },
+      {
+        "word": "oreille",
+        "hint": "Ear"
+      },
+      {
+        "word": "doigt",
+        "hint": "Finger"
+      },
+      {
+        "word": "coeur",
+        "hint": "Heart"
+      },
+      {
+        "word": "épaule",
+        "hint": "Shoulder"
+      },
+      {
+        "word": "genou",
+        "hint": "Knee"
+      },
+      {
+        "word": "ventre",
+        "hint": "Belly"
+      },
+      {
+        "word": "dos",
+        "hint": "Back (body)"
+      },
+      {
+        "word": "dent",
+        "hint": "Tooth"
+      }
+    ]
+  },
+  {
+    "key": "numbers_wb",
+    "name": "Numbers",
+    "description": "Number words in French",
+    "iconName": "number",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "zéro",
+        "hint": "Zero"
+      },
+      {
+        "word": "trois",
+        "hint": "Three"
+      },
+      {
+        "word": "quatre",
+        "hint": "Four"
+      },
+      {
+        "word": "cinq",
+        "hint": "Five"
+      },
+      {
+        "word": "sept",
+        "hint": "Seven"
+      },
+      {
+        "word": "huit",
+        "hint": "Eight"
+      },
+      {
+        "word": "neuf",
+        "hint": "Nine"
+      },
+      {
+        "word": "douze",
+        "hint": "Twelve"
+      },
+      {
+        "word": "quinze",
+        "hint": "Fifteen"
+      },
+      {
+        "word": "vingt",
+        "hint": "Twenty"
+      },
+      {
+        "word": "trente",
+        "hint": "Thirty"
+      },
+      {
+        "word": "quarante",
+        "hint": "Forty"
+      },
+      {
+        "word": "cinquante",
+        "hint": "Fifty"
+      },
+      {
+        "word": "soixante",
+        "hint": "Sixty"
+      },
+      {
+        "word": "cent",
+        "hint": "One hundred"
+      }
+    ]
+  },
+  {
+    "key": "greetings_wb",
+    "name": "Greetings",
+    "description": "Common greetings and polite phrases in French",
+    "iconName": "hand.wave",
+    "color": "#14b8a6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "bonjour",
+        "hint": "Hello / Good morning"
+      },
+      {
+        "word": "bonsoir",
+        "hint": "Good evening"
+      },
+      {
+        "word": "merci",
+        "hint": "Thank you"
+      },
+      {
+        "word": "pardon",
+        "hint": "Excuse me / Sorry"
+      },
+      {
+        "word": "salut",
+        "hint": "Hi / Bye (informal)"
+      },
+      {
+        "word": "bienvenue",
+        "hint": "Welcome"
+      },
+      {
+        "word": "enchanté",
+        "hint": "Nice to meet you"
+      },
+      {
+        "word": "aurevoir",
+        "hint": "Goodbye"
+      },
+      {
+        "word": "bonne nuit",
+        "hint": "Good night"
+      },
+      {
+        "word": "comment",
+        "hint": "How"
+      },
+      {
+        "word": "monsieur",
+        "hint": "Sir / Mr."
+      },
+      {
+        "word": "madame",
+        "hint": "Madam / Mrs."
+      },
+      {
+        "word": "excusez",
+        "hint": "Excuse (formal)"
+      },
+      {
+        "word": "volontiers",
+        "hint": "Gladly / With pleasure"
+      },
+      {
+        "word": "félicitations",
+        "hint": "Congratulations"
+      }
+    ]
+  },
+  {
+    "key": "food_wb",
+    "name": "Food",
+    "description": "Common food items in French",
+    "iconName": "fork.knife",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "pain",
+        "hint": "Bread"
+      },
+      {
+        "word": "fromage",
+        "hint": "Cheese"
+      },
+      {
+        "word": "poulet",
+        "hint": "Chicken"
+      },
+      {
+        "word": "riz",
+        "hint": "Rice"
+      },
+      {
+        "word": "beurre",
+        "hint": "Butter"
+      },
+      {
+        "word": "oeuf",
+        "hint": "Egg"
+      },
+      {
+        "word": "viande",
+        "hint": "Meat"
+      },
+      {
+        "word": "salade",
+        "hint": "Salad"
+      },
+      {
+        "word": "soupe",
+        "hint": "Soup"
+      },
+      {
+        "word": "pâtes",
+        "hint": "Pasta"
+      },
+      {
+        "word": "saumon",
+        "hint": "Salmon"
+      },
+      {
+        "word": "jambon",
+        "hint": "Ham"
+      },
+      {
+        "word": "crêpe",
+        "hint": "Pancake / Crêpe"
+      },
+      {
+        "word": "baguette",
+        "hint": "French bread stick"
+      },
+      {
+        "word": "croissant",
+        "hint": "Crescent-shaped pastry"
+      }
+    ]
+  },
+  {
+    "key": "clothing_wb",
+    "name": "Clothing",
+    "description": "Clothing items in French",
+    "iconName": "tshirt",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "chemise",
+        "hint": "Shirt"
+      },
+      {
+        "word": "pantalon",
+        "hint": "Pants / Trousers"
+      },
+      {
+        "word": "robe",
+        "hint": "Dress"
+      },
+      {
+        "word": "manteau",
+        "hint": "Coat"
+      },
+      {
+        "word": "chaussure",
+        "hint": "Shoe"
+      },
+      {
+        "word": "chapeau",
+        "hint": "Hat"
+      },
+      {
+        "word": "écharpe",
+        "hint": "Scarf"
+      },
+      {
+        "word": "jupe",
+        "hint": "Skirt"
+      },
+      {
+        "word": "ceinture",
+        "hint": "Belt"
+      },
+      {
+        "word": "gant",
+        "hint": "Glove"
+      },
+      {
+        "word": "chaussette",
+        "hint": "Sock"
+      },
+      {
+        "word": "veste",
+        "hint": "Jacket"
+      },
+      {
+        "word": "pull",
+        "hint": "Sweater / Pullover"
+      },
+      {
+        "word": "cravate",
+        "hint": "Tie"
+      },
+      {
+        "word": "lunettes",
+        "hint": "Glasses"
+      }
+    ]
+  },
+  {
+    "key": "house_rooms_wb",
+    "name": "House & Rooms",
+    "description": "Rooms and parts of a house in French",
+    "iconName": "house",
+    "color": "#6366f1",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "cuisine",
+        "hint": "Kitchen"
+      },
+      {
+        "word": "chambre",
+        "hint": "Bedroom"
+      },
+      {
+        "word": "salon",
+        "hint": "Living room"
+      },
+      {
+        "word": "jardin",
+        "hint": "Garden"
+      },
+      {
+        "word": "garage",
+        "hint": "Garage"
+      },
+      {
+        "word": "balcon",
+        "hint": "Balcony"
+      },
+      {
+        "word": "escalier",
+        "hint": "Stairs"
+      },
+      {
+        "word": "grenier",
+        "hint": "Attic"
+      },
+      {
+        "word": "plafond",
+        "hint": "Ceiling"
+      },
+      {
+        "word": "plancher",
+        "hint": "Floor"
+      },
+      {
+        "word": "fenêtre",
+        "hint": "Window"
+      },
+      {
+        "word": "porte",
+        "hint": "Door"
+      },
+      {
+        "word": "couloir",
+        "hint": "Hallway"
+      },
+      {
+        "word": "cave",
+        "hint": "Cellar / Basement"
+      },
+      {
+        "word": "terrasse",
+        "hint": "Terrace / Patio"
+      }
+    ]
+  },
+  {
+    "key": "weather_wb",
+    "name": "Weather",
+    "description": "Weather vocabulary in French",
+    "iconName": "cloud.sun",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "soleil",
+        "hint": "Sun"
+      },
+      {
+        "word": "pluie",
+        "hint": "Rain"
+      },
+      {
+        "word": "neige",
+        "hint": "Snow"
+      },
+      {
+        "word": "nuage",
+        "hint": "Cloud"
+      },
+      {
+        "word": "orage",
+        "hint": "Storm"
+      },
+      {
+        "word": "vent",
+        "hint": "Wind"
+      },
+      {
+        "word": "brouillard",
+        "hint": "Fog"
+      },
+      {
+        "word": "tempête",
+        "hint": "Tempest / Storm"
+      },
+      {
+        "word": "tonnerre",
+        "hint": "Thunder"
+      },
+      {
+        "word": "éclair",
+        "hint": "Lightning"
+      },
+      {
+        "word": "grêle",
+        "hint": "Hail"
+      },
+      {
+        "word": "chaleur",
+        "hint": "Heat"
+      },
+      {
+        "word": "froid",
+        "hint": "Cold"
+      },
+      {
+        "word": "humidité",
+        "hint": "Humidity"
+      },
+      {
+        "word": "arc-en-ciel",
+        "hint": "Rainbow"
+      }
+    ]
+  },
+  {
+    "key": "professions_wb",
+    "name": "Professions",
+    "description": "Common professions and jobs in French",
+    "iconName": "briefcase",
+    "color": "#64748b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "médecin",
+        "hint": "Doctor"
+      },
+      {
+        "word": "avocat",
+        "hint": "Lawyer"
+      },
+      {
+        "word": "boulanger",
+        "hint": "Baker"
+      },
+      {
+        "word": "infirmier",
+        "hint": "Nurse (male)"
+      },
+      {
+        "word": "pompier",
+        "hint": "Firefighter"
+      },
+      {
+        "word": "professeur",
+        "hint": "Teacher / Professor"
+      },
+      {
+        "word": "cuisinier",
+        "hint": "Cook / Chef"
+      },
+      {
+        "word": "architecte",
+        "hint": "Architect"
+      },
+      {
+        "word": "dentiste",
+        "hint": "Dentist"
+      },
+      {
+        "word": "journaliste",
+        "hint": "Journalist"
+      },
+      {
+        "word": "pharmacien",
+        "hint": "Pharmacist"
+      },
+      {
+        "word": "plombier",
+        "hint": "Plumber"
+      },
+      {
+        "word": "électricien",
+        "hint": "Electrician"
+      },
+      {
+        "word": "comptable",
+        "hint": "Accountant"
+      },
+      {
+        "word": "ingénieur",
+        "hint": "Engineer"
+      }
+    ]
+  },
+  {
+    "key": "transport_wb",
+    "name": "Transport",
+    "description": "Modes of transport in French",
+    "iconName": "car",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "voiture",
+        "hint": "Car"
+      },
+      {
+        "word": "avion",
+        "hint": "Airplane"
+      },
+      {
+        "word": "bateau",
+        "hint": "Boat"
+      },
+      {
+        "word": "train",
+        "hint": "Train"
+      },
+      {
+        "word": "autobus",
+        "hint": "Bus"
+      },
+      {
+        "word": "métro",
+        "hint": "Subway / Metro"
+      },
+      {
+        "word": "vélo",
+        "hint": "Bicycle"
+      },
+      {
+        "word": "moto",
+        "hint": "Motorcycle"
+      },
+      {
+        "word": "camion",
+        "hint": "Truck"
+      },
+      {
+        "word": "hélicoptère",
+        "hint": "Helicopter"
+      },
+      {
+        "word": "tramway",
+        "hint": "Tram / Streetcar"
+      },
+      {
+        "word": "fusée",
+        "hint": "Rocket"
+      },
+      {
+        "word": "ambulance",
+        "hint": "Ambulance"
+      },
+      {
+        "word": "taxi",
+        "hint": "Taxi"
+      },
+      {
+        "word": "navire",
+        "hint": "Ship"
+      }
+    ]
+  },
+  {
+    "key": "school_wb",
+    "name": "School",
+    "description": "School and education vocabulary in French",
+    "iconName": "book",
+    "color": "#10b981",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "école",
+        "hint": "School"
+      },
+      {
+        "word": "crayon",
+        "hint": "Pencil"
+      },
+      {
+        "word": "cahier",
+        "hint": "Notebook"
+      },
+      {
+        "word": "tableau",
+        "hint": "Blackboard"
+      },
+      {
+        "word": "stylo",
+        "hint": "Pen"
+      },
+      {
+        "word": "gomme",
+        "hint": "Eraser"
+      },
+      {
+        "word": "règle",
+        "hint": "Ruler"
+      },
+      {
+        "word": "cartable",
+        "hint": "School bag"
+      },
+      {
+        "word": "devoirs",
+        "hint": "Homework"
+      },
+      {
+        "word": "examen",
+        "hint": "Exam"
+      },
+      {
+        "word": "leçon",
+        "hint": "Lesson"
+      },
+      {
+        "word": "élève",
+        "hint": "Student / Pupil"
+      },
+      {
+        "word": "classe",
+        "hint": "Classroom / Class"
+      },
+      {
+        "word": "récréation",
+        "hint": "Recess / Break"
+      },
+      {
+        "word": "bibliothèque",
+        "hint": "Library"
+      }
+    ]
+  }
+]

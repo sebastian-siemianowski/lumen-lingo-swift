@@ -1092,27 +1092,75 @@ Create wordbuilder content for all 25 language pairs with **30+ categories × 15
 
 | # | Pair | Hint Lang | Word Lang | Cats | Items | Target Cats | Target Items | Status |
 |---|------|----------|----------|------|-------|------------|-------------|--------|
-| 1 | german_english | German | English | 0 | 0 | 30 | 450 | ⬜ |
-| 2 | german_spanish | German | Spanish | 0 | 0 | 30 | 450 | ⬜ |
-| 3 | polish_english | Polish | English | 0 | 0 | 30 | 450 | ⬜ |
-| 4 | polish_german | Polish | German | 0 | 0 | 30 | 450 | ⬜ |
-| 5 | polish_spanish | Polish | Spanish | 0 | 0 | 30 | 450 | ⬜ |
-| 6 | spanish_english | Spanish | English | 0 | 0 | 30 | 450 | ⬜ |
+| 1 | german_english | German | English | 30 | 450 | 30 | 450 | ✅ |
+| 2 | german_spanish | German | Spanish | 30 | 450 | 30 | 450 | ✅ |
+| 3 | polish_english | Polish | English | 30 | 450 | 30 | 450 | ✅ |
+| 4 | polish_german | Polish | German | 0 | 0 | 30 | 450 | 🔄 |
+| 5 | polish_spanish | Polish | Spanish | 30 | 450 | 30 | 450 | ✅ |
+| 6 | spanish_english | Spanish | English | 30 | 450 | 30 | 450 | ✅ |
+
+### polish_german — 🔄 IN PROGRESS (0/30 categories, 0 items)
+Hint language: Polish | Word language: German
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ⬜ |
+| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ⬜ |
+| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ⬜ |
+| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ⬜ |
+| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ⬜ |
+| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ⬜ |
+
+### polish_spanish — ✅ COMPLETE (30/30 categories, 450 items)
+Hint language: Polish | Word language: Spanish
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ✅ |
+| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ✅ |
+| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ✅ |
+| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
+| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
+| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+
+### german_english — ✅ COMPLETE (30/30 categories, 450 items)
+Hint language: German | Word language: English
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ✅ |
+| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ✅ |
+| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ✅ |
+| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
+| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
+| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+
+### spanish_english — ✅ COMPLETE (30/30 categories, 450 items)
+Hint language: Spanish | Word language: English
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ✅ |
+| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ✅ |
+| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ✅ |
+| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
+| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
+| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
 
 ### Beta Pairs (18 missing — no wordbuilder file)
 
 | # | Pair | Hint Lang | Word Lang | Cats | Items | Target Cats | Target Items | Status |
 |---|------|----------|----------|------|-------|------------|-------------|--------|
-| 1 | arabic_english | Arabic | English | 0 | 0 | 30 | 450 | ⬜ |
-| 2 | chinese_english | Chinese | English | 0 | 0 | 30 | 450 | ⬜ |
-| 3 | english_arabic | English | Arabic | 0 | 0 | 30 | 450 | ⬜ |
-| 4 | english_chinese | English | Chinese | 0 | 0 | 30 | 450 | ⬜ |
-| 5 | english_french | English | French | 0 | 0 | 30 | 450 | ⬜ |
-| 6 | english_german | English | German | 0 | 0 | 30 | 450 | ⬜ |
-| 7 | english_japanese | English | Japanese | 0 | 0 | 30 | 450 | ⬜ |
-| 8 | english_polish | English | Polish | 0 | 0 | 30 | 450 | ⬜ |
-| 9 | french_english | French | English | 0 | 0 | 30 | 450 | ⬜ |
-| 10 | german_polish | German | Polish | 0 | 0 | 30 | 450 | ⬜ |
+| 1 | arabic_english | Arabic | English | 0 | 0 | 30 | 450 | 🔄 |
+| 2 | chinese_english | Chinese | English | 0 | 0 | 30 | 450 | 🔄 |
+| 3 | english_arabic | English | Arabic | 0 | 0 | 30 | 450 | 🔄 |
+| 4 | english_chinese | English | Chinese | 0 | 0 | 30 | 450 | 🔄 |
+| 5 | english_french | English | French | 0 | 0 | 30 | 450 | 🔄 |
+| 6 | english_german | English | German | 0 | 0 | 30 | 450 | 🔄 |
+| 7 | english_japanese | English | Japanese | 0 | 0 | 30 | 450 | 🔄 |
+| 8 | english_polish | English | Polish | 0 | 0 | 30 | 450 | 🔄 |
+| 9 | french_english | French | English | 0 | 0 | 30 | 450 | 🔄 |
+| 10 | german_polish | German | Polish | 0 | 0 | 30 | 450 | 🔄 |
 | 11 | japanese_english | Japanese | English | 0 | 0 | 30 | 450 | ⬜ |
 | 12 | polish_arabic | Polish | Arabic | 0 | 0 | 30 | 450 | ⬜ |
 | 13 | polish_chinese | Polish | Chinese | 0 | 0 | 30 | 450 | ⬜ |
@@ -1121,6 +1169,114 @@ Create wordbuilder content for all 25 language pairs with **30+ categories × 15
 | 16 | polish_ukrainian | Polish | Ukrainian | 0 | 0 | 30 | 450 | ⬜ |
 | 17 | ukrainian_english | Ukrainian | English | 0 | 0 | 30 | 450 | ⬜ |
 | 18 | ukrainian_polish | Ukrainian | Polish | 0 | 0 | 30 | 450 | ⬜ |
+
+### arabic_english — 🔄 IN PROGRESS (25/30 categories, 375 items)
+Hint language: Arabic | Word language: English
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ✅ |
+| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ✅ |
+| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ✅ |
+| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
+| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
+| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ⬜ |
+
+### chinese_english — 🔄 IN PROGRESS (0/30 categories, 0 items)
+Hint language: Chinese | Word language: English
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ⬜ |
+| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ⬜ |
+| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ⬜ |
+| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ⬜ |
+| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ⬜ |
+| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ⬜ |
+
+### english_german — 🔄 IN PROGRESS (10/30 categories, 150 items)
+Hint language: English | Word language: German
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ✅ |
+| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ✅ |
+| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ⬜ |
+| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ⬜ |
+| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ⬜ |
+| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ⬜ |
+
+### english_polish — 🔄 IN PROGRESS (0/30 categories, 0 items)
+Hint language: English | Word language: Polish
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ⬜ |
+| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ⬜ |
+| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ⬜ |
+| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ⬜ |
+| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ⬜ |
+| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ⬜ |
+
+### english_french — 🔄 IN PROGRESS (0/30 categories, 0 items)
+Hint language: English | Word language: French
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ⬜ |
+| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ⬜ |
+| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ⬜ |
+| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ⬜ |
+| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ⬜ |
+| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ⬜ |
+
+### english_chinese — 🔄 IN PROGRESS (0/30 categories, 0 items)
+Hint language: English | Word language: Chinese
+
+| Batch | Categories | Status |
+|-------|-----------|---------|
+| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ⬜ |
+| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ⬜ |
+| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ⬜ |
+| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ⬜ |
+| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ⬜ |
+| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ⬜ |
+
+### english_japanese — 🔄 IN PROGRESS (0/30 categories, 0 items)
+Hint language: English | Word language: Japanese (hiragana/katakana)
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ⬜ |
+| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ⬜ |
+| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ⬜ |
+| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ⬜ |
+| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ⬜ |
+| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ⬜ |
+
+### french_english — 🔄 IN PROGRESS (0/30 categories, 0 items)
+Hint language: French | Word language: English
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ⬜ |
+| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ⬜ |
+| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ⬜ |
+| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ⬜ |
+| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ⬜ |
+| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ⬜ |
+
+### english_arabic — 🔄 IN PROGRESS (0/30 categories, 0 items)
+Hint language: English | Word language: Arabic
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ⬜ |
+| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ⬜ |
+| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ⬜ |
+| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ⬜ |
+| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ⬜ |
+| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ⬜ |
 
 ## Special Considerations for Non-Latin Script Pairs
 

@@ -1,0 +1,2102 @@
+[
+  {
+    "key": "fruits_wb",
+    "name": "水果",
+    "description": "常见水果的英文名称",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "apple",
+        "hint": "苹果"
+      },
+      {
+        "word": "orange",
+        "hint": "橙子"
+      },
+      {
+        "word": "banana",
+        "hint": "香蕉"
+      },
+      {
+        "word": "strawberry",
+        "hint": "草莓"
+      },
+      {
+        "word": "grape",
+        "hint": "葡萄"
+      },
+      {
+        "word": "lemon",
+        "hint": "柠檬"
+      },
+      {
+        "word": "watermelon",
+        "hint": "西瓜"
+      },
+      {
+        "word": "peach",
+        "hint": "桃子"
+      },
+      {
+        "word": "cherry",
+        "hint": "樱桃"
+      },
+      {
+        "word": "pineapple",
+        "hint": "菠萝"
+      },
+      {
+        "word": "pear",
+        "hint": "梨"
+      },
+      {
+        "word": "mango",
+        "hint": "芒果"
+      },
+      {
+        "word": "kiwi",
+        "hint": "猕猴桃"
+      },
+      {
+        "word": "coconut",
+        "hint": "椰子"
+      },
+      {
+        "word": "plum",
+        "hint": "李子"
+      }
+    ]
+  },
+  {
+    "key": "vegetables_wb",
+    "name": "蔬菜",
+    "description": "常见蔬菜的英文名称",
+    "iconName": "carrot",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "tomato",
+        "hint": "番茄"
+      },
+      {
+        "word": "onion",
+        "hint": "洋葱"
+      },
+      {
+        "word": "lettuce",
+        "hint": "生菜"
+      },
+      {
+        "word": "carrot",
+        "hint": "胡萝卜"
+      },
+      {
+        "word": "potato",
+        "hint": "土豆"
+      },
+      {
+        "word": "garlic",
+        "hint": "大蒜"
+      },
+      {
+        "word": "cucumber",
+        "hint": "黄瓜"
+      },
+      {
+        "word": "pepper",
+        "hint": "辣椒"
+      },
+      {
+        "word": "spinach",
+        "hint": "菠菜"
+      },
+      {
+        "word": "broccoli",
+        "hint": "西兰花"
+      },
+      {
+        "word": "corn",
+        "hint": "玉米"
+      },
+      {
+        "word": "cabbage",
+        "hint": "卷心菜"
+      },
+      {
+        "word": "mushroom",
+        "hint": "蘑菇"
+      },
+      {
+        "word": "eggplant",
+        "hint": "茄子"
+      },
+      {
+        "word": "pumpkin",
+        "hint": "南瓜"
+      }
+    ]
+  },
+  {
+    "key": "colors_wb",
+    "name": "颜色",
+    "description": "基础颜色的英文单词",
+    "iconName": "paintpalette",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "red",
+        "hint": "红色"
+      },
+      {
+        "word": "blue",
+        "hint": "蓝色"
+      },
+      {
+        "word": "green",
+        "hint": "绿色"
+      },
+      {
+        "word": "yellow",
+        "hint": "黄色"
+      },
+      {
+        "word": "black",
+        "hint": "黑色"
+      },
+      {
+        "word": "white",
+        "hint": "白色"
+      },
+      {
+        "word": "coral",
+        "hint": "珊瑚色"
+      },
+      {
+        "word": "purple",
+        "hint": "紫色"
+      },
+      {
+        "word": "pink",
+        "hint": "粉色"
+      },
+      {
+        "word": "brown",
+        "hint": "棕色"
+      },
+      {
+        "word": "gray",
+        "hint": "灰色"
+      },
+      {
+        "word": "golden",
+        "hint": "金色"
+      },
+      {
+        "word": "silver",
+        "hint": "银色"
+      },
+      {
+        "word": "violet",
+        "hint": "紫罗兰色"
+      },
+      {
+        "word": "scarlet",
+        "hint": "猩红色"
+      }
+    ]
+  },
+  {
+    "key": "family_wb",
+    "name": "家庭",
+    "description": "家庭成员的英文称呼",
+    "iconName": "person.3",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "mother",
+        "hint": "母亲"
+      },
+      {
+        "word": "father",
+        "hint": "父亲"
+      },
+      {
+        "word": "sister",
+        "hint": "姐妹"
+      },
+      {
+        "word": "brother",
+        "hint": "兄弟"
+      },
+      {
+        "word": "grandmother",
+        "hint": "祖母"
+      },
+      {
+        "word": "grandfather",
+        "hint": "祖父"
+      },
+      {
+        "word": "daughter",
+        "hint": "女儿"
+      },
+      {
+        "word": "uncle",
+        "hint": "叔叔"
+      },
+      {
+        "word": "aunt",
+        "hint": "阿姨"
+      },
+      {
+        "word": "cousin",
+        "hint": "表兄弟/表姐妹"
+      },
+      {
+        "word": "nephew",
+        "hint": "侄子"
+      },
+      {
+        "word": "niece",
+        "hint": "侄女"
+      },
+      {
+        "word": "husband",
+        "hint": "丈夫"
+      },
+      {
+        "word": "wife",
+        "hint": "妻子"
+      },
+      {
+        "word": "parent",
+        "hint": "父母"
+      }
+    ]
+  },
+  {
+    "key": "animals_wb",
+    "name": "动物",
+    "description": "常见动物的英文名称",
+    "iconName": "pawprint",
+    "color": "#eab308",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "dog",
+        "hint": "狗"
+      },
+      {
+        "word": "cat",
+        "hint": "猫"
+      },
+      {
+        "word": "horse",
+        "hint": "马"
+      },
+      {
+        "word": "bird",
+        "hint": "鸟"
+      },
+      {
+        "word": "fish",
+        "hint": "鱼"
+      },
+      {
+        "word": "rabbit",
+        "hint": "兔子"
+      },
+      {
+        "word": "turtle",
+        "hint": "乌龟"
+      },
+      {
+        "word": "butterfly",
+        "hint": "蝴蝶"
+      },
+      {
+        "word": "lion",
+        "hint": "狮子"
+      },
+      {
+        "word": "elephant",
+        "hint": "大象"
+      },
+      {
+        "word": "monkey",
+        "hint": "猴子"
+      },
+      {
+        "word": "tiger",
+        "hint": "老虎"
+      },
+      {
+        "word": "dolphin",
+        "hint": "海豚"
+      },
+      {
+        "word": "penguin",
+        "hint": "企鹅"
+      },
+      {
+        "word": "eagle",
+        "hint": "鹰"
+      }
+    ]
+  },
+  {
+    "key": "body_parts_wb",
+    "name": "身体部位",
+    "description": "人体各部位的英文名称",
+    "iconName": "figure.stand",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "head",
+        "hint": "头"
+      },
+      {
+        "word": "shoulder",
+        "hint": "肩膀"
+      },
+      {
+        "word": "knee",
+        "hint": "膝盖"
+      },
+      {
+        "word": "hand",
+        "hint": "手"
+      },
+      {
+        "word": "foot",
+        "hint": "脚"
+      },
+      {
+        "word": "nose",
+        "hint": "鼻子"
+      },
+      {
+        "word": "mouth",
+        "hint": "嘴巴"
+      },
+      {
+        "word": "finger",
+        "hint": "手指"
+      },
+      {
+        "word": "heart",
+        "hint": "心脏"
+      },
+      {
+        "word": "back",
+        "hint": "背部"
+      },
+      {
+        "word": "elbow",
+        "hint": "肘部"
+      },
+      {
+        "word": "neck",
+        "hint": "脖子"
+      },
+      {
+        "word": "chest",
+        "hint": "胸部"
+      },
+      {
+        "word": "stomach",
+        "hint": "胃/肚子"
+      },
+      {
+        "word": "wrist",
+        "hint": "手腕"
+      }
+    ]
+  },
+  {
+    "key": "numbers_wb",
+    "name": "数字",
+    "description": "英文数字单词拼写",
+    "iconName": "number",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "zero",
+        "hint": "零"
+      },
+      {
+        "word": "three",
+        "hint": "三"
+      },
+      {
+        "word": "four",
+        "hint": "四"
+      },
+      {
+        "word": "five",
+        "hint": "五"
+      },
+      {
+        "word": "seven",
+        "hint": "七"
+      },
+      {
+        "word": "eight",
+        "hint": "八"
+      },
+      {
+        "word": "nine",
+        "hint": "九"
+      },
+      {
+        "word": "twelve",
+        "hint": "十二"
+      },
+      {
+        "word": "twenty",
+        "hint": "二十"
+      },
+      {
+        "word": "thirty",
+        "hint": "三十"
+      },
+      {
+        "word": "fifty",
+        "hint": "五十"
+      },
+      {
+        "word": "hundred",
+        "hint": "一百"
+      },
+      {
+        "word": "thousand",
+        "hint": "一千"
+      },
+      {
+        "word": "million",
+        "hint": "一百万"
+      },
+      {
+        "word": "billion",
+        "hint": "十亿"
+      }
+    ]
+  },
+  {
+    "key": "greetings_wb",
+    "name": "问候语",
+    "description": "日常英文问候和寒暄用语",
+    "iconName": "hand.wave",
+    "color": "#14b8a6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "hello",
+        "hint": "你好"
+      },
+      {
+        "word": "goodbye",
+        "hint": "再见"
+      },
+      {
+        "word": "please",
+        "hint": "请"
+      },
+      {
+        "word": "thanks",
+        "hint": "谢谢"
+      },
+      {
+        "word": "sorry",
+        "hint": "对不起"
+      },
+      {
+        "word": "welcome",
+        "hint": "欢迎"
+      },
+      {
+        "word": "morning",
+        "hint": "早上"
+      },
+      {
+        "word": "evening",
+        "hint": "晚上"
+      },
+      {
+        "word": "night",
+        "hint": "夜晚"
+      },
+      {
+        "word": "friend",
+        "hint": "朋友"
+      },
+      {
+        "word": "cheers",
+        "hint": "干杯/谢啦"
+      },
+      {
+        "word": "pardon",
+        "hint": "抱歉/请再说一遍"
+      },
+      {
+        "word": "farewell",
+        "hint": "告别"
+      },
+      {
+        "word": "greeting",
+        "hint": "问候"
+      },
+      {
+        "word": "regards",
+        "hint": "致意/问候"
+      }
+    ]
+  },
+  {
+    "key": "food_wb",
+    "name": "食物",
+    "description": "日常食物的英文名称",
+    "iconName": "fork.knife",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "bread",
+        "hint": "面包"
+      },
+      {
+        "word": "cheese",
+        "hint": "奶酪"
+      },
+      {
+        "word": "chicken",
+        "hint": "鸡肉"
+      },
+      {
+        "word": "rice",
+        "hint": "米饭"
+      },
+      {
+        "word": "pasta",
+        "hint": "意大利面"
+      },
+      {
+        "word": "salad",
+        "hint": "沙拉"
+      },
+      {
+        "word": "soup",
+        "hint": "汤"
+      },
+      {
+        "word": "steak",
+        "hint": "牛排"
+      },
+      {
+        "word": "pizza",
+        "hint": "比萨"
+      },
+      {
+        "word": "sandwich",
+        "hint": "三明治"
+      },
+      {
+        "word": "butter",
+        "hint": "黄油"
+      },
+      {
+        "word": "noodle",
+        "hint": "面条"
+      },
+      {
+        "word": "sausage",
+        "hint": "香肠"
+      },
+      {
+        "word": "pancake",
+        "hint": "煎饼"
+      },
+      {
+        "word": "cereal",
+        "hint": "谷物/麦片"
+      }
+    ]
+  },
+  {
+    "key": "clothing_wb",
+    "name": "服装",
+    "description": "常见服装的英文名称",
+    "iconName": "tshirt",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "shirt",
+        "hint": "衬衫"
+      },
+      {
+        "word": "pants",
+        "hint": "裤子"
+      },
+      {
+        "word": "dress",
+        "hint": "连衣裙"
+      },
+      {
+        "word": "jacket",
+        "hint": "夹克"
+      },
+      {
+        "word": "shoes",
+        "hint": "鞋子"
+      },
+      {
+        "word": "socks",
+        "hint": "袜子"
+      },
+      {
+        "word": "skirt",
+        "hint": "裙子"
+      },
+      {
+        "word": "sweater",
+        "hint": "毛衣"
+      },
+      {
+        "word": "boots",
+        "hint": "靴子"
+      },
+      {
+        "word": "gloves",
+        "hint": "手套"
+      },
+      {
+        "word": "scarf",
+        "hint": "围巾"
+      },
+      {
+        "word": "belt",
+        "hint": "腰带"
+      },
+      {
+        "word": "coat",
+        "hint": "外套"
+      },
+      {
+        "word": "uniform",
+        "hint": "制服"
+      },
+      {
+        "word": "sandals",
+        "hint": "凉鞋"
+      }
+    ]
+  },
+  {
+    "key": "house_rooms_wb",
+    "name": "房间",
+    "description": "房屋各房间的英文名称",
+    "iconName": "house",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "kitchen",
+        "hint": "厨房"
+      },
+      {
+        "word": "bedroom",
+        "hint": "卧室"
+      },
+      {
+        "word": "bathroom",
+        "hint": "浴室"
+      },
+      {
+        "word": "garden",
+        "hint": "花园"
+      },
+      {
+        "word": "garage",
+        "hint": "车库"
+      },
+      {
+        "word": "hallway",
+        "hint": "走廊"
+      },
+      {
+        "word": "balcony",
+        "hint": "阳台"
+      },
+      {
+        "word": "basement",
+        "hint": "地下室"
+      },
+      {
+        "word": "attic",
+        "hint": "阁楼"
+      },
+      {
+        "word": "dining",
+        "hint": "餐厅"
+      },
+      {
+        "word": "stairs",
+        "hint": "楼梯"
+      },
+      {
+        "word": "ceiling",
+        "hint": "天花板"
+      },
+      {
+        "word": "window",
+        "hint": "窗户"
+      },
+      {
+        "word": "doorway",
+        "hint": "门口"
+      },
+      {
+        "word": "terrace",
+        "hint": "露台"
+      }
+    ]
+  },
+  {
+    "key": "weather_wb",
+    "name": "天气",
+    "description": "天气相关的英文词汇",
+    "iconName": "cloud.sun",
+    "color": "#0ea5e9",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "sunny",
+        "hint": "晴天"
+      },
+      {
+        "word": "cloudy",
+        "hint": "多云"
+      },
+      {
+        "word": "rainy",
+        "hint": "下雨"
+      },
+      {
+        "word": "snowy",
+        "hint": "下雪"
+      },
+      {
+        "word": "windy",
+        "hint": "刮风"
+      },
+      {
+        "word": "storm",
+        "hint": "暴风雨"
+      },
+      {
+        "word": "thunder",
+        "hint": "雷声"
+      },
+      {
+        "word": "foggy",
+        "hint": "有雾的"
+      },
+      {
+        "word": "humid",
+        "hint": "潮湿的"
+      },
+      {
+        "word": "freeze",
+        "hint": "结冰/冻结"
+      },
+      {
+        "word": "rainbow",
+        "hint": "彩虹"
+      },
+      {
+        "word": "breeze",
+        "hint": "微风"
+      },
+      {
+        "word": "drought",
+        "hint": "干旱"
+      },
+      {
+        "word": "climate",
+        "hint": "气候"
+      },
+      {
+        "word": "forecast",
+        "hint": "天气预报"
+      }
+    ]
+  },
+  {
+    "key": "professions_wb",
+    "name": "职业",
+    "description": "常见职业的英文名称",
+    "iconName": "briefcase",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "doctor",
+        "hint": "医生"
+      },
+      {
+        "word": "teacher",
+        "hint": "老师"
+      },
+      {
+        "word": "engineer",
+        "hint": "工程师"
+      },
+      {
+        "word": "lawyer",
+        "hint": "律师"
+      },
+      {
+        "word": "nurse",
+        "hint": "护士"
+      },
+      {
+        "word": "pilot",
+        "hint": "飞行员"
+      },
+      {
+        "word": "dentist",
+        "hint": "牙医"
+      },
+      {
+        "word": "farmer",
+        "hint": "农民"
+      },
+      {
+        "word": "artist",
+        "hint": "艺术家"
+      },
+      {
+        "word": "soldier",
+        "hint": "军人"
+      },
+      {
+        "word": "mechanic",
+        "hint": "技工"
+      },
+      {
+        "word": "surgeon",
+        "hint": "外科医生"
+      },
+      {
+        "word": "architect",
+        "hint": "建筑师"
+      },
+      {
+        "word": "plumber",
+        "hint": "水管工"
+      },
+      {
+        "word": "journalist",
+        "hint": "记者"
+      }
+    ]
+  },
+  {
+    "key": "transport_wb",
+    "name": "交通工具",
+    "description": "常见交通工具的英文名称",
+    "iconName": "car",
+    "color": "#10b981",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "bicycle",
+        "hint": "自行车"
+      },
+      {
+        "word": "train",
+        "hint": "火车"
+      },
+      {
+        "word": "airplane",
+        "hint": "飞机"
+      },
+      {
+        "word": "subway",
+        "hint": "地铁"
+      },
+      {
+        "word": "taxi",
+        "hint": "出租车"
+      },
+      {
+        "word": "ferry",
+        "hint": "渡轮"
+      },
+      {
+        "word": "scooter",
+        "hint": "踏板车"
+      },
+      {
+        "word": "truck",
+        "hint": "卡车"
+      },
+      {
+        "word": "rocket",
+        "hint": "火箭"
+      },
+      {
+        "word": "tractor",
+        "hint": "拖拉机"
+      },
+      {
+        "word": "canoe",
+        "hint": "独木舟"
+      },
+      {
+        "word": "trolley",
+        "hint": "手推车/电车"
+      },
+      {
+        "word": "yacht",
+        "hint": "游艇"
+      },
+      {
+        "word": "ambulance",
+        "hint": "救护车"
+      },
+      {
+        "word": "helicopter",
+        "hint": "直升机"
+      }
+    ]
+  },
+  {
+    "key": "school_wb",
+    "name": "学校",
+    "description": "学校相关的英文词汇",
+    "iconName": "book",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pencil",
+        "hint": "铅笔"
+      },
+      {
+        "word": "eraser",
+        "hint": "橡皮"
+      },
+      {
+        "word": "ruler",
+        "hint": "尺子"
+      },
+      {
+        "word": "notebook",
+        "hint": "笔记本"
+      },
+      {
+        "word": "textbook",
+        "hint": "教科书"
+      },
+      {
+        "word": "scissors",
+        "hint": "剪刀"
+      },
+      {
+        "word": "backpack",
+        "hint": "背包"
+      },
+      {
+        "word": "chalk",
+        "hint": "粉笔"
+      },
+      {
+        "word": "globe",
+        "hint": "地球仪"
+      },
+      {
+        "word": "compass",
+        "hint": "指南针/圆规"
+      },
+      {
+        "word": "library",
+        "hint": "图书馆"
+      },
+      {
+        "word": "homework",
+        "hint": "家庭作业"
+      },
+      {
+        "word": "exam",
+        "hint": "考试"
+      },
+      {
+        "word": "diploma",
+        "hint": "毕业证书"
+      },
+      {
+        "word": "scholar",
+        "hint": "学者"
+      }
+    ]
+  },
+  {
+    "key": "kitchen_utensils_wb",
+    "name": "厨房用具",
+    "description": "厨房常用工具和器具的英文名称",
+    "iconName": "frying.pan",
+    "color": "#d97706",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "knife",
+        "hint": "刀"
+      },
+      {
+        "word": "spoon",
+        "hint": "勺子"
+      },
+      {
+        "word": "plate",
+        "hint": "盘子"
+      },
+      {
+        "word": "bowl",
+        "hint": "碗"
+      },
+      {
+        "word": "kettle",
+        "hint": "水壶"
+      },
+      {
+        "word": "blender",
+        "hint": "搅拌机"
+      },
+      {
+        "word": "spatula",
+        "hint": "锅铲"
+      },
+      {
+        "word": "skillet",
+        "hint": "平底锅"
+      },
+      {
+        "word": "grater",
+        "hint": "擦菜器"
+      },
+      {
+        "word": "colander",
+        "hint": "滤锅"
+      },
+      {
+        "word": "whisk",
+        "hint": "打蛋器"
+      },
+      {
+        "word": "ladle",
+        "hint": "汤勺"
+      },
+      {
+        "word": "tongs",
+        "hint": "夹子"
+      },
+      {
+        "word": "mug",
+        "hint": "马克杯"
+      },
+      {
+        "word": "pitcher",
+        "hint": "水壶/大杯"
+      }
+    ]
+  },
+  {
+    "key": "sports_wb",
+    "name": "体育运动",
+    "description": "常见体育运动的英文名称",
+    "iconName": "sportscourt",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "soccer",
+        "hint": "足球"
+      },
+      {
+        "word": "tennis",
+        "hint": "网球"
+      },
+      {
+        "word": "swimming",
+        "hint": "游泳"
+      },
+      {
+        "word": "basketball",
+        "hint": "篮球"
+      },
+      {
+        "word": "volleyball",
+        "hint": "排球"
+      },
+      {
+        "word": "boxing",
+        "hint": "拳击"
+      },
+      {
+        "word": "cycling",
+        "hint": "骑行"
+      },
+      {
+        "word": "skiing",
+        "hint": "滑雪"
+      },
+      {
+        "word": "surfing",
+        "hint": "冲浪"
+      },
+      {
+        "word": "archery",
+        "hint": "射箭"
+      },
+      {
+        "word": "fencing",
+        "hint": "击剑"
+      },
+      {
+        "word": "rugby",
+        "hint": "橄榄球"
+      },
+      {
+        "word": "hockey",
+        "hint": "曲棍球"
+      },
+      {
+        "word": "wrestling",
+        "hint": "摔跤"
+      },
+      {
+        "word": "marathon",
+        "hint": "马拉松"
+      }
+    ]
+  },
+  {
+    "key": "music_instruments_wb",
+    "name": "乐器",
+    "description": "常见乐器的英文名称",
+    "iconName": "music.note",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "piano",
+        "hint": "钢琴"
+      },
+      {
+        "word": "guitar",
+        "hint": "吉他"
+      },
+      {
+        "word": "violin",
+        "hint": "小提琴"
+      },
+      {
+        "word": "drums",
+        "hint": "鼓"
+      },
+      {
+        "word": "flute",
+        "hint": "长笛"
+      },
+      {
+        "word": "trumpet",
+        "hint": "小号"
+      },
+      {
+        "word": "cello",
+        "hint": "大提琴"
+      },
+      {
+        "word": "harp",
+        "hint": "竖琴"
+      },
+      {
+        "word": "clarinet",
+        "hint": "单簧管"
+      },
+      {
+        "word": "saxophone",
+        "hint": "萨克斯管"
+      },
+      {
+        "word": "trombone",
+        "hint": "长号"
+      },
+      {
+        "word": "banjo",
+        "hint": "班卓琴"
+      },
+      {
+        "word": "harmonica",
+        "hint": "口琴"
+      },
+      {
+        "word": "oboe",
+        "hint": "双簧管"
+      },
+      {
+        "word": "accordion",
+        "hint": "手风琴"
+      }
+    ]
+  },
+  {
+    "key": "nature_wb",
+    "name": "自然",
+    "description": "自然界常见事物的英文名称",
+    "iconName": "leaf.arrow.circlepath",
+    "color": "#059669",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "mountain",
+        "hint": "山"
+      },
+      {
+        "word": "river",
+        "hint": "河流"
+      },
+      {
+        "word": "ocean",
+        "hint": "海洋"
+      },
+      {
+        "word": "forest",
+        "hint": "森林"
+      },
+      {
+        "word": "desert",
+        "hint": "沙漠"
+      },
+      {
+        "word": "island",
+        "hint": "岛屿"
+      },
+      {
+        "word": "valley",
+        "hint": "山谷"
+      },
+      {
+        "word": "volcano",
+        "hint": "火山"
+      },
+      {
+        "word": "waterfall",
+        "hint": "瀑布"
+      },
+      {
+        "word": "glacier",
+        "hint": "冰川"
+      },
+      {
+        "word": "canyon",
+        "hint": "峡谷"
+      },
+      {
+        "word": "meadow",
+        "hint": "草地"
+      },
+      {
+        "word": "cliff",
+        "hint": "悬崖"
+      },
+      {
+        "word": "swamp",
+        "hint": "沼泽"
+      },
+      {
+        "word": "prairie",
+        "hint": "草原"
+      }
+    ]
+  },
+  {
+    "key": "emotions_wb",
+    "name": "情感",
+    "description": "表达情感和感受的英文词汇",
+    "iconName": "heart",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "happy",
+        "hint": "快乐的"
+      },
+      {
+        "word": "angry",
+        "hint": "生气的"
+      },
+      {
+        "word": "afraid",
+        "hint": "害怕的"
+      },
+      {
+        "word": "excited",
+        "hint": "兴奋的"
+      },
+      {
+        "word": "nervous",
+        "hint": "紧张的"
+      },
+      {
+        "word": "proud",
+        "hint": "骄傲的"
+      },
+      {
+        "word": "lonely",
+        "hint": "孤独的"
+      },
+      {
+        "word": "jealous",
+        "hint": "嫉妒的"
+      },
+      {
+        "word": "grateful",
+        "hint": "感恩的"
+      },
+      {
+        "word": "confused",
+        "hint": "困惑的"
+      },
+      {
+        "word": "curious",
+        "hint": "好奇的"
+      },
+      {
+        "word": "anxious",
+        "hint": "焦虑的"
+      },
+      {
+        "word": "cheerful",
+        "hint": "愉快的"
+      },
+      {
+        "word": "furious",
+        "hint": "狂怒的"
+      },
+      {
+        "word": "peaceful",
+        "hint": "平静的"
+      }
+    ]
+  },
+  {
+    "key": "technology_wb",
+    "name": "科技",
+    "description": "科技和电子产品的英文词汇",
+    "iconName": "desktopcomputer",
+    "color": "#2563eb",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "computer",
+        "hint": "电脑"
+      },
+      {
+        "word": "keyboard",
+        "hint": "键盘"
+      },
+      {
+        "word": "monitor",
+        "hint": "显示器"
+      },
+      {
+        "word": "printer",
+        "hint": "打印机"
+      },
+      {
+        "word": "speaker",
+        "hint": "扬声器"
+      },
+      {
+        "word": "camera",
+        "hint": "相机"
+      },
+      {
+        "word": "battery",
+        "hint": "电池"
+      },
+      {
+        "word": "charger",
+        "hint": "充电器"
+      },
+      {
+        "word": "software",
+        "hint": "软件"
+      },
+      {
+        "word": "network",
+        "hint": "网络"
+      },
+      {
+        "word": "router",
+        "hint": "路由器"
+      },
+      {
+        "word": "server",
+        "hint": "服务器"
+      },
+      {
+        "word": "tablet",
+        "hint": "平板电脑"
+      },
+      {
+        "word": "database",
+        "hint": "数据库"
+      },
+      {
+        "word": "wireless",
+        "hint": "无线的"
+      }
+    ]
+  },
+  {
+    "key": "office_wb",
+    "name": "办公室",
+    "description": "办公室物品和工作相关英文词汇",
+    "iconName": "building.2",
+    "color": "#64748b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "stapler",
+        "hint": "订书机"
+      },
+      {
+        "word": "folder",
+        "hint": "文件夹"
+      },
+      {
+        "word": "calendar",
+        "hint": "日历"
+      },
+      {
+        "word": "envelope",
+        "hint": "信封"
+      },
+      {
+        "word": "clipboard",
+        "hint": "剪贴板"
+      },
+      {
+        "word": "receipt",
+        "hint": "收据"
+      },
+      {
+        "word": "invoice",
+        "hint": "发票"
+      },
+      {
+        "word": "schedule",
+        "hint": "日程表"
+      },
+      {
+        "word": "project",
+        "hint": "项目"
+      },
+      {
+        "word": "meeting",
+        "hint": "会议"
+      },
+      {
+        "word": "deadline",
+        "hint": "截止日期"
+      },
+      {
+        "word": "contract",
+        "hint": "合同"
+      },
+      {
+        "word": "budget",
+        "hint": "预算"
+      },
+      {
+        "word": "manager",
+        "hint": "经理"
+      },
+      {
+        "word": "colleague",
+        "hint": "同事"
+      }
+    ]
+  },
+  {
+    "key": "health_medical_wb",
+    "name": "健康医疗",
+    "description": "健康和医疗相关的英文词汇",
+    "iconName": "cross.case",
+    "color": "#dc2626",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "hospital",
+        "hint": "医院"
+      },
+      {
+        "word": "medicine",
+        "hint": "药品"
+      },
+      {
+        "word": "symptom",
+        "hint": "症状"
+      },
+      {
+        "word": "fever",
+        "hint": "发烧"
+      },
+      {
+        "word": "headache",
+        "hint": "头痛"
+      },
+      {
+        "word": "allergy",
+        "hint": "过敏"
+      },
+      {
+        "word": "bandage",
+        "hint": "绷带"
+      },
+      {
+        "word": "vaccine",
+        "hint": "疫苗"
+      },
+      {
+        "word": "pharmacy",
+        "hint": "药房"
+      },
+      {
+        "word": "surgery",
+        "hint": "手术"
+      },
+      {
+        "word": "therapy",
+        "hint": "治疗"
+      },
+      {
+        "word": "diagnosis",
+        "hint": "诊断"
+      },
+      {
+        "word": "capsule",
+        "hint": "胶囊"
+      },
+      {
+        "word": "inhaler",
+        "hint": "吸入器"
+      },
+      {
+        "word": "scalpel",
+        "hint": "手术刀"
+      }
+    ]
+  },
+  {
+    "key": "travel_wb",
+    "name": "旅行",
+    "description": "旅行和出游相关的英文词汇",
+    "iconName": "airplane",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "passport",
+        "hint": "护照"
+      },
+      {
+        "word": "luggage",
+        "hint": "行李"
+      },
+      {
+        "word": "ticket",
+        "hint": "票"
+      },
+      {
+        "word": "hotel",
+        "hint": "酒店"
+      },
+      {
+        "word": "tourist",
+        "hint": "游客"
+      },
+      {
+        "word": "airport",
+        "hint": "机场"
+      },
+      {
+        "word": "boarding",
+        "hint": "登机"
+      },
+      {
+        "word": "customs",
+        "hint": "海关"
+      },
+      {
+        "word": "souvenir",
+        "hint": "纪念品"
+      },
+      {
+        "word": "itinerary",
+        "hint": "行程"
+      },
+      {
+        "word": "currency",
+        "hint": "货币"
+      },
+      {
+        "word": "terminal",
+        "hint": "航站楼"
+      },
+      {
+        "word": "departure",
+        "hint": "出发"
+      },
+      {
+        "word": "arrival",
+        "hint": "到达"
+      },
+      {
+        "word": "excursion",
+        "hint": "短途旅行"
+      }
+    ]
+  },
+  {
+    "key": "hobbies_wb",
+    "name": "爱好",
+    "description": "常见爱好和休闲活动的英文词汇",
+    "iconName": "star",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "painting",
+        "hint": "绘画"
+      },
+      {
+        "word": "cooking",
+        "hint": "烹饪"
+      },
+      {
+        "word": "reading",
+        "hint": "阅读"
+      },
+      {
+        "word": "dancing",
+        "hint": "跳舞"
+      },
+      {
+        "word": "fishing",
+        "hint": "钓鱼"
+      },
+      {
+        "word": "hiking",
+        "hint": "远足"
+      },
+      {
+        "word": "camping",
+        "hint": "露营"
+      },
+      {
+        "word": "knitting",
+        "hint": "编织"
+      },
+      {
+        "word": "pottery",
+        "hint": "陶艺"
+      },
+      {
+        "word": "gardening",
+        "hint": "园艺"
+      },
+      {
+        "word": "sculpting",
+        "hint": "雕塑"
+      },
+      {
+        "word": "juggling",
+        "hint": "杂耍"
+      },
+      {
+        "word": "origami",
+        "hint": "折纸"
+      },
+      {
+        "word": "calligraphy",
+        "hint": "书法"
+      },
+      {
+        "word": "astronomy",
+        "hint": "天文学"
+      }
+    ]
+  },
+  {
+    "key": "drinks_beverages_wb",
+    "name": "饮品",
+    "description": "各类饮品和饮料的英文名称",
+    "iconName": "cup.and.saucer",
+    "color": "#0d9488",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "coffee",
+        "hint": "咖啡"
+      },
+      {
+        "word": "juice",
+        "hint": "果汁"
+      },
+      {
+        "word": "smoothie",
+        "hint": "果昔"
+      },
+      {
+        "word": "lemonade",
+        "hint": "柠檬水"
+      },
+      {
+        "word": "milkshake",
+        "hint": "奶昔"
+      },
+      {
+        "word": "espresso",
+        "hint": "浓缩咖啡"
+      },
+      {
+        "word": "cocktail",
+        "hint": "鸡尾酒"
+      },
+      {
+        "word": "champagne",
+        "hint": "香槟"
+      },
+      {
+        "word": "whiskey",
+        "hint": "威士忌"
+      },
+      {
+        "word": "cappuccino",
+        "hint": "卡布奇诺"
+      },
+      {
+        "word": "mineral",
+        "hint": "矿泉（水）"
+      },
+      {
+        "word": "cider",
+        "hint": "苹果酒"
+      },
+      {
+        "word": "herbal",
+        "hint": "花草（茶）"
+      },
+      {
+        "word": "cocoa",
+        "hint": "可可"
+      },
+      {
+        "word": "tonic",
+        "hint": "汤力水"
+      }
+    ]
+  },
+  {
+    "key": "desserts_sweets_wb",
+    "name": "甜点",
+    "description": "常见甜点和糕点的英文名称",
+    "iconName": "birthday.cake",
+    "color": "#db2777",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "cake",
+        "hint": "蛋糕"
+      },
+      {
+        "word": "cookie",
+        "hint": "饼干"
+      },
+      {
+        "word": "chocolate",
+        "hint": "巧克力"
+      },
+      {
+        "word": "pudding",
+        "hint": "布丁"
+      },
+      {
+        "word": "brownie",
+        "hint": "布朗尼"
+      },
+      {
+        "word": "waffle",
+        "hint": "华夫饼"
+      },
+      {
+        "word": "muffin",
+        "hint": "松饼"
+      },
+      {
+        "word": "croissant",
+        "hint": "牛角面包"
+      },
+      {
+        "word": "macaron",
+        "hint": "马卡龙"
+      },
+      {
+        "word": "custard",
+        "hint": "蛋奶冻"
+      },
+      {
+        "word": "truffle",
+        "hint": "松露巧克力"
+      },
+      {
+        "word": "donut",
+        "hint": "甜甜圈"
+      },
+      {
+        "word": "caramel",
+        "hint": "焦糖"
+      },
+      {
+        "word": "pastry",
+        "hint": "糕点"
+      },
+      {
+        "word": "meringue",
+        "hint": "蛋白酥"
+      }
+    ]
+  },
+  {
+    "key": "furniture_wb",
+    "name": "家具",
+    "description": "常见家具的英文名称",
+    "iconName": "sofa",
+    "color": "#92400e",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "table",
+        "hint": "桌子"
+      },
+      {
+        "word": "chair",
+        "hint": "椅子"
+      },
+      {
+        "word": "sofa",
+        "hint": "沙发"
+      },
+      {
+        "word": "wardrobe",
+        "hint": "衣柜"
+      },
+      {
+        "word": "bookshelf",
+        "hint": "书架"
+      },
+      {
+        "word": "dresser",
+        "hint": "梳妆台"
+      },
+      {
+        "word": "cabinet",
+        "hint": "橱柜"
+      },
+      {
+        "word": "mattress",
+        "hint": "床垫"
+      },
+      {
+        "word": "cushion",
+        "hint": "靠垫"
+      },
+      {
+        "word": "curtain",
+        "hint": "窗帘"
+      },
+      {
+        "word": "lamp",
+        "hint": "灯"
+      },
+      {
+        "word": "carpet",
+        "hint": "地毯"
+      },
+      {
+        "word": "ottoman",
+        "hint": "脚凳"
+      },
+      {
+        "word": "armchair",
+        "hint": "扶手椅"
+      },
+      {
+        "word": "nightstand",
+        "hint": "床头柜"
+      }
+    ]
+  },
+  {
+    "key": "tools_wb",
+    "name": "工具",
+    "description": "常用工具的英文名称",
+    "iconName": "wrench",
+    "color": "#78716c",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "hammer",
+        "hint": "锤子"
+      },
+      {
+        "word": "screwdriver",
+        "hint": "螺丝刀"
+      },
+      {
+        "word": "wrench",
+        "hint": "扳手"
+      },
+      {
+        "word": "pliers",
+        "hint": "钳子"
+      },
+      {
+        "word": "drill",
+        "hint": "电钻"
+      },
+      {
+        "word": "shovel",
+        "hint": "铲子"
+      },
+      {
+        "word": "chisel",
+        "hint": "凿子"
+      },
+      {
+        "word": "clamp",
+        "hint": "夹具"
+      },
+      {
+        "word": "saw",
+        "hint": "锯"
+      },
+      {
+        "word": "level",
+        "hint": "水平仪"
+      },
+      {
+        "word": "sandpaper",
+        "hint": "砂纸"
+      },
+      {
+        "word": "crowbar",
+        "hint": "撬棍"
+      },
+      {
+        "word": "hacksaw",
+        "hint": "弓锯"
+      },
+      {
+        "word": "socket",
+        "hint": "套筒"
+      },
+      {
+        "word": "mallet",
+        "hint": "木槌"
+      }
+    ]
+  },
+  {
+    "key": "materials_wb",
+    "name": "材料",
+    "description": "常见材料和物质的英文名称",
+    "iconName": "cube",
+    "color": "#475569",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "cotton",
+        "hint": "棉花"
+      },
+      {
+        "word": "leather",
+        "hint": "皮革"
+      },
+      {
+        "word": "marble",
+        "hint": "大理石"
+      },
+      {
+        "word": "concrete",
+        "hint": "混凝土"
+      },
+      {
+        "word": "copper",
+        "hint": "铜"
+      },
+      {
+        "word": "bronze",
+        "hint": "青铜"
+      },
+      {
+        "word": "rubber",
+        "hint": "橡胶"
+      },
+      {
+        "word": "plastic",
+        "hint": "塑料"
+      },
+      {
+        "word": "ceramic",
+        "hint": "陶瓷"
+      },
+      {
+        "word": "granite",
+        "hint": "花岗岩"
+      },
+      {
+        "word": "velvet",
+        "hint": "天鹅绒"
+      },
+      {
+        "word": "bamboo",
+        "hint": "竹子"
+      },
+      {
+        "word": "titanium",
+        "hint": "钛"
+      },
+      {
+        "word": "silicon",
+        "hint": "硅"
+      },
+      {
+        "word": "graphite",
+        "hint": "石墨"
+      }
+    ]
+  }
+]
