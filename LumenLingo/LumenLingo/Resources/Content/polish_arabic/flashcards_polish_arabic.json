@@ -86,6 +86,46 @@
         "difficulty": "medium",
         "example": "لا، لا أريد",
         "exampleTranslation": "Nie, nie chcę"
+      },
+      {
+        "id": "pa_greet_11",
+        "front": "Przepraszam",
+        "back": "عفواً",
+        "difficulty": "easy",
+        "example": "عفواً، أين المحطة؟",
+        "exampleTranslation": "Przepraszam, gdzie jest stacja?"
+      },
+      {
+        "id": "pa_greet_12",
+        "front": "Miło mi",
+        "back": "تشرفنا",
+        "difficulty": "easy",
+        "example": "تشرفنا بمعرفتك.",
+        "exampleTranslation": "Miło mi cię poznać."
+      },
+      {
+        "id": "pa_greet_13",
+        "front": "Jak się masz?",
+        "back": "كيف حالك؟",
+        "difficulty": "medium",
+        "example": "كيف حالك اليوم؟",
+        "exampleTranslation": "Jak się masz dzisiaj?"
+      },
+      {
+        "id": "pa_greet_14",
+        "front": "Witaj ponownie",
+        "back": "مرحباً مجدداً",
+        "difficulty": "medium",
+        "example": "مرحباً مجدداً يا صديقي.",
+        "exampleTranslation": "Witaj ponownie, przyjacielu."
+      },
+      {
+        "id": "pa_greet_15",
+        "front": "Tęskniłem za tobą",
+        "back": "اشتقت إليك",
+        "difficulty": "hard",
+        "example": "اشتقت إليك كثيراً.",
+        "exampleTranslation": "Bardzo za tobą tęskniłem."
       }
     ]
   },
@@ -176,6 +216,46 @@
         "difficulty": "medium",
         "example": "عمتي لطيفة جداً",
         "exampleTranslation": "Moja ciocia jest bardzo miła"
+      },
+      {
+        "id": "pa_fam_11",
+        "front": "Dziadek",
+        "back": "جد",
+        "difficulty": "easy",
+        "example": "جدي رجل حكيم.",
+        "exampleTranslation": "Mój dziadek jest mądrym człowiekiem."
+      },
+      {
+        "id": "pa_fam_12",
+        "front": "Babcia",
+        "back": "جدة",
+        "difficulty": "easy",
+        "example": "جدتي تطبخ جيداً.",
+        "exampleTranslation": "Moja babcia dobrze gotuje."
+      },
+      {
+        "id": "pa_fam_13",
+        "front": "Wujek",
+        "back": "عم",
+        "difficulty": "medium",
+        "example": "عمي يعيش في القاهرة.",
+        "exampleTranslation": "Mój wujek mieszka w Kairze."
+      },
+      {
+        "id": "pa_fam_14",
+        "front": "Ciotka",
+        "back": "عمة",
+        "difficulty": "medium",
+        "example": "عمتي طبيبة.",
+        "exampleTranslation": "Moja ciotka jest lekarką."
+      },
+      {
+        "id": "pa_fam_15",
+        "front": "Kuzyn",
+        "back": "ابن عم",
+        "difficulty": "hard",
+        "example": "ابن عمي يدرس الطب.",
+        "exampleTranslation": "Mój kuzyn studiuje medycynę."
       }
     ]
   },
@@ -266,6 +346,46 @@
         "difficulty": "medium",
         "example": "عشرة يورو، من فضلك",
         "exampleTranslation": "Dziesięć euro, proszę"
+      },
+      {
+        "id": "pa_num_11",
+        "front": "Dwadzieścia",
+        "back": "عشرون",
+        "difficulty": "easy",
+        "example": "لدي عشرون كتاباً.",
+        "exampleTranslation": "Mam dwadzieścia książek."
+      },
+      {
+        "id": "pa_num_12",
+        "front": "Trzydzieści",
+        "back": "ثلاثون",
+        "difficulty": "easy",
+        "example": "عمره ثلاثون سنة.",
+        "exampleTranslation": "Ma trzydzieści lat."
+      },
+      {
+        "id": "pa_num_13",
+        "front": "Pięćdziesiąt",
+        "back": "خمسون",
+        "difficulty": "medium",
+        "example": "يكلف خمسون ديناراً.",
+        "exampleTranslation": "Kosztuje pięćdziesiąt dinarów."
+      },
+      {
+        "id": "pa_num_14",
+        "front": "Sto",
+        "back": "مئة",
+        "difficulty": "medium",
+        "example": "في الصف مئة طالب.",
+        "exampleTranslation": "W klasie jest stu uczniów."
+      },
+      {
+        "id": "pa_num_15",
+        "front": "Tysiąc",
+        "back": "ألف",
+        "difficulty": "hard",
+        "example": "قرأت ألف صفحة.",
+        "exampleTranslation": "Przeczytałem tysiąc stron."
       }
     ]
   },
@@ -356,6 +476,46 @@
         "difficulty": "medium",
         "example": "الفيل رمادي",
         "exampleTranslation": "Słoń jest szary"
+      },
+      {
+        "id": "pa_col_11",
+        "front": "Pomarańczowy",
+        "back": "برتقالي",
+        "difficulty": "easy",
+        "example": "هذا القميص برتقالي.",
+        "exampleTranslation": "Ta koszulka jest pomarańczowa."
+      },
+      {
+        "id": "pa_col_12",
+        "front": "Różowy",
+        "back": "وردي",
+        "difficulty": "easy",
+        "example": "الوردة وردية اللون.",
+        "exampleTranslation": "Róża jest różowa."
+      },
+      {
+        "id": "pa_col_13",
+        "front": "Szary",
+        "back": "رمادي",
+        "difficulty": "medium",
+        "example": "السماء رمادية اليوم.",
+        "exampleTranslation": "Niebo jest dziś szare."
+      },
+      {
+        "id": "pa_col_14",
+        "front": "Fioletowy",
+        "back": "بنفسجي",
+        "difficulty": "medium",
+        "example": "أحب اللون البنفسجي.",
+        "exampleTranslation": "Lubię kolor fioletowy."
+      },
+      {
+        "id": "pa_col_15",
+        "front": "Złoty",
+        "back": "ذهبي",
+        "difficulty": "hard",
+        "example": "الخاتم ذهبي اللون.",
+        "exampleTranslation": "Pierścionek jest złotego koloru."
       }
     ]
   },
@@ -446,6 +606,46 @@
         "difficulty": "medium",
         "example": "آكل البيض في الإفطار",
         "exampleTranslation": "Jem jajka na śniadanie"
+      },
+      {
+        "id": "pa_food_11",
+        "front": "Winogrona",
+        "back": "عنب",
+        "difficulty": "easy",
+        "example": "العنب لذيذ جداً.",
+        "exampleTranslation": "Winogrona są bardzo smaczne."
+      },
+      {
+        "id": "pa_food_12",
+        "front": "Kurczak",
+        "back": "دجاج",
+        "difficulty": "easy",
+        "example": "أحب أكل الدجاج.",
+        "exampleTranslation": "Lubię jeść kurczaka."
+      },
+      {
+        "id": "pa_food_13",
+        "front": "Makaron",
+        "back": "معكرونة",
+        "difficulty": "medium",
+        "example": "المعكرونة جاهزة.",
+        "exampleTranslation": "Makaron jest gotowy."
+      },
+      {
+        "id": "pa_food_14",
+        "front": "Przyprawa",
+        "back": "بهار",
+        "difficulty": "medium",
+        "example": "أضف قليلاً من البهار.",
+        "exampleTranslation": "Dodaj trochę przyprawy."
+      },
+      {
+        "id": "pa_food_15",
+        "front": "Deser",
+        "back": "حلوى",
+        "difficulty": "hard",
+        "example": "هل تريد بعض الحلوى؟",
+        "exampleTranslation": "Czy chcesz trochę deseru?"
       }
     ]
   },
@@ -536,6 +736,46 @@
         "difficulty": "medium",
         "example": "السرير ناعم",
         "exampleTranslation": "Łóżko jest miękkie"
+      },
+      {
+        "id": "pa_house_11",
+        "front": "Sufit",
+        "back": "سقف",
+        "difficulty": "easy",
+        "example": "السقف مرتفع جداً.",
+        "exampleTranslation": "Sufit jest bardzo wysoki."
+      },
+      {
+        "id": "pa_house_12",
+        "front": "Schody",
+        "back": "درج",
+        "difficulty": "easy",
+        "example": "الدرج ضيق.",
+        "exampleTranslation": "Schody są wąskie."
+      },
+      {
+        "id": "pa_house_13",
+        "front": "Piwnica",
+        "back": "قبو",
+        "difficulty": "medium",
+        "example": "القبو بارد في الصيف.",
+        "exampleTranslation": "Piwnica jest chłodna latem."
+      },
+      {
+        "id": "pa_house_14",
+        "front": "Balkon",
+        "back": "شرفة",
+        "difficulty": "medium",
+        "example": "الشرفة تطل على الحديقة.",
+        "exampleTranslation": "Balkon wychodzi na ogród."
+      },
+      {
+        "id": "pa_house_15",
+        "front": "Kominek",
+        "back": "مدفأة",
+        "difficulty": "hard",
+        "example": "المدفأة تدفئ المنزل.",
+        "exampleTranslation": "Kominek ogrzewa dom."
       }
     ]
   },
@@ -626,6 +866,46 @@
         "difficulty": "medium",
         "example": "المتحف مثير للاهتمام",
         "exampleTranslation": "Muzeum jest interesujące"
+      },
+      {
+        "id": "pa_place_11",
+        "front": "Apteka",
+        "back": "صيدلية",
+        "difficulty": "easy",
+        "example": "الصيدلية قريبة من هنا.",
+        "exampleTranslation": "Apteka jest blisko stąd."
+      },
+      {
+        "id": "pa_place_12",
+        "front": "Stadion",
+        "back": "ملعب",
+        "difficulty": "easy",
+        "example": "الملعب كبير جداً.",
+        "exampleTranslation": "Stadion jest bardzo duży."
+      },
+      {
+        "id": "pa_place_13",
+        "front": "Muzeum",
+        "back": "متحف",
+        "difficulty": "medium",
+        "example": "زرت المتحف أمس.",
+        "exampleTranslation": "Odwiedziłem muzeum wczoraj."
+      },
+      {
+        "id": "pa_place_14",
+        "front": "Kościół",
+        "back": "كنيسة",
+        "difficulty": "medium",
+        "example": "الكنيسة قديمة جداً.",
+        "exampleTranslation": "Kościół jest bardzo stary."
+      },
+      {
+        "id": "pa_place_15",
+        "front": "Ambasada",
+        "back": "سفارة",
+        "difficulty": "hard",
+        "example": "السفارة مفتوحة صباحاً.",
+        "exampleTranslation": "Ambasada jest otwarta rano."
       }
     ]
   },
@@ -716,6 +996,46 @@
         "difficulty": "medium",
         "example": "المعطف دافئ",
         "exampleTranslation": "Płaszcz jest ciepły"
+      },
+      {
+        "id": "pa_cloth_11",
+        "front": "Rękawiczki",
+        "back": "قفازات",
+        "difficulty": "easy",
+        "example": "القفازات تحمي يديك.",
+        "exampleTranslation": "Rękawiczki chronią twoje ręce."
+      },
+      {
+        "id": "pa_cloth_12",
+        "front": "Szalik",
+        "back": "وشاح",
+        "difficulty": "easy",
+        "example": "الوشاح دافئ.",
+        "exampleTranslation": "Szalik jest ciepły."
+      },
+      {
+        "id": "pa_cloth_13",
+        "front": "Pasek",
+        "back": "حزام",
+        "difficulty": "medium",
+        "example": "الحزام جلدي.",
+        "exampleTranslation": "Pasek jest skórzany."
+      },
+      {
+        "id": "pa_cloth_14",
+        "front": "Garnitur",
+        "back": "بدلة",
+        "difficulty": "medium",
+        "example": "البدلة أنيقة جداً.",
+        "exampleTranslation": "Garnitur jest bardzo elegancki."
+      },
+      {
+        "id": "pa_cloth_15",
+        "front": "Sweter",
+        "back": "سترة صوفية",
+        "difficulty": "hard",
+        "example": "السترة الصوفية مريحة.",
+        "exampleTranslation": "Sweter jest wygodny."
       }
     ]
   },
@@ -806,6 +1126,46 @@
         "difficulty": "medium",
         "example": "الميكانيكي يصلح السيارات",
         "exampleTranslation": "Mechanik naprawia samochody"
+      },
+      {
+        "id": "pa_work_11",
+        "front": "Spotkanie",
+        "back": "اجتماع",
+        "difficulty": "easy",
+        "example": "الاجتماع في الساعة الثالثة.",
+        "exampleTranslation": "Spotkanie jest o trzeciej."
+      },
+      {
+        "id": "pa_work_12",
+        "front": "Pensja",
+        "back": "راتب",
+        "difficulty": "easy",
+        "example": "الراتب جيد.",
+        "exampleTranslation": "Pensja jest dobra."
+      },
+      {
+        "id": "pa_work_13",
+        "front": "Kolega z pracy",
+        "back": "زميل عمل",
+        "difficulty": "medium",
+        "example": "زميل العمل ودود.",
+        "exampleTranslation": "Kolega z pracy jest przyjazny."
+      },
+      {
+        "id": "pa_work_14",
+        "front": "Awans",
+        "back": "ترقية",
+        "difficulty": "medium",
+        "example": "حصلت على ترقية.",
+        "exampleTranslation": "Dostałem awans."
+      },
+      {
+        "id": "pa_work_15",
+        "front": "Termin",
+        "back": "موعد نهائي",
+        "difficulty": "hard",
+        "example": "الموعد النهائي غداً.",
+        "exampleTranslation": "Termin jest jutro."
       }
     ]
   },
@@ -896,6 +1256,46 @@
         "difficulty": "medium",
         "example": "أشتري تذكرة",
         "exampleTranslation": "Kupuję bilet"
+      },
+      {
+        "id": "pa_trans_11",
+        "front": "Metro",
+        "back": "مترو",
+        "difficulty": "easy",
+        "example": "المترو سريع.",
+        "exampleTranslation": "Metro jest szybkie."
+      },
+      {
+        "id": "pa_trans_12",
+        "front": "Taksówka",
+        "back": "سيارة أجرة",
+        "difficulty": "easy",
+        "example": "سيارة الأجرة في الخارج.",
+        "exampleTranslation": "Taksówka jest na zewnątrz."
+      },
+      {
+        "id": "pa_trans_13",
+        "front": "Bilet",
+        "back": "تذكرة",
+        "difficulty": "medium",
+        "example": "اشتريت تذكرة.",
+        "exampleTranslation": "Kupiłem bilet."
+      },
+      {
+        "id": "pa_trans_14",
+        "front": "Kierowca",
+        "back": "سائق",
+        "difficulty": "medium",
+        "example": "السائق محترف.",
+        "exampleTranslation": "Kierowca jest profesjonalny."
+      },
+      {
+        "id": "pa_trans_15",
+        "front": "Skrzyżowanie",
+        "back": "تقاطع",
+        "difficulty": "hard",
+        "example": "انعطف يميناً عند التقاطع.",
+        "exampleTranslation": "Skręć w prawo na skrzyżowaniu."
       }
     ]
   },
@@ -986,6 +1386,46 @@
         "difficulty": "medium",
         "example": "حقيبة ظهري ثقيلة",
         "exampleTranslation": "Mój plecak jest ciężki"
+      },
+      {
+        "id": "pa_edu_11",
+        "front": "Wykład",
+        "back": "محاضرة",
+        "difficulty": "easy",
+        "example": "المحاضرة ممتعة.",
+        "exampleTranslation": "Wykład jest ciekawy."
+      },
+      {
+        "id": "pa_edu_12",
+        "front": "Notatki",
+        "back": "ملاحظات",
+        "difficulty": "easy",
+        "example": "أكتب الملاحظات.",
+        "exampleTranslation": "Robię notatki."
+      },
+      {
+        "id": "pa_edu_13",
+        "front": "Biblioteka",
+        "back": "مكتبة",
+        "difficulty": "medium",
+        "example": "المكتبة هادئة.",
+        "exampleTranslation": "Biblioteka jest cicha."
+      },
+      {
+        "id": "pa_edu_14",
+        "front": "Dyplom",
+        "back": "شهادة",
+        "difficulty": "medium",
+        "example": "حصلت على شهادتي.",
+        "exampleTranslation": "Zdobyłem swój dyplom."
+      },
+      {
+        "id": "pa_edu_15",
+        "front": "Stypendium",
+        "back": "منحة دراسية",
+        "difficulty": "hard",
+        "example": "حصلت على منحة دراسية.",
+        "exampleTranslation": "Dostałem stypendium."
       }
     ]
   },
@@ -1076,6 +1516,46 @@
         "difficulty": "medium",
         "example": "القمر مكتمل",
         "exampleTranslation": "Księżyc jest w pełni"
+      },
+      {
+        "id": "pa_nature_11",
+        "front": "Wodospad",
+        "back": "شلال",
+        "difficulty": "easy",
+        "example": "الشلال جميل.",
+        "exampleTranslation": "Wodospad jest piękny."
+      },
+      {
+        "id": "pa_nature_12",
+        "front": "Pustynia",
+        "back": "صحراء",
+        "difficulty": "easy",
+        "example": "الصحراء واسعة.",
+        "exampleTranslation": "Pustynia jest rozległa."
+      },
+      {
+        "id": "pa_nature_13",
+        "front": "Dolina",
+        "back": "وادي",
+        "difficulty": "medium",
+        "example": "الوادي أخضر.",
+        "exampleTranslation": "Dolina jest zielona."
+      },
+      {
+        "id": "pa_nature_14",
+        "front": "Jaskinia",
+        "back": "كهف",
+        "difficulty": "medium",
+        "example": "الكهف مظلم.",
+        "exampleTranslation": "Jaskinia jest ciemna."
+      },
+      {
+        "id": "pa_nature_15",
+        "front": "Wulkan",
+        "back": "بركان",
+        "difficulty": "hard",
+        "example": "البركان نشط.",
+        "exampleTranslation": "Wulkan jest aktywny."
       }
     ]
   },
@@ -1166,6 +1646,46 @@
         "difficulty": "medium",
         "example": "هم ملل",
         "exampleTranslation": "Oni są znudzeni"
+      },
+      {
+        "id": "pa_emo_11",
+        "front": "Dumny",
+        "back": "فخور",
+        "difficulty": "easy",
+        "example": "أنا فخور بك.",
+        "exampleTranslation": "Jestem z ciebie dumny."
+      },
+      {
+        "id": "pa_emo_12",
+        "front": "Zaskoczony",
+        "back": "متفاجئ",
+        "difficulty": "easy",
+        "example": "أنا متفاجئ بالنتيجة.",
+        "exampleTranslation": "Jestem zaskoczony wynikiem."
+      },
+      {
+        "id": "pa_emo_13",
+        "front": "Zazdrosny",
+        "back": "غيور",
+        "difficulty": "medium",
+        "example": "لا تكن غيوراً.",
+        "exampleTranslation": "Nie bądź zazdrosny."
+      },
+      {
+        "id": "pa_emo_14",
+        "front": "Wdzięczny",
+        "back": "ممتن",
+        "difficulty": "medium",
+        "example": "أنا ممتن لمساعدتك.",
+        "exampleTranslation": "Jestem wdzięczny za twoją pomoc."
+      },
+      {
+        "id": "pa_emo_15",
+        "front": "Rozczarowany",
+        "back": "محبط",
+        "difficulty": "hard",
+        "example": "أنا محبط من النتائج.",
+        "exampleTranslation": "Jestem rozczarowany wynikami."
       }
     ]
   },
@@ -1256,6 +1776,46 @@
         "difficulty": "medium",
         "example": "الأسبوع القادم",
         "exampleTranslation": "Następny tydzień"
+      },
+      {
+        "id": "pa_time_11",
+        "front": "Świt",
+        "back": "فجر",
+        "difficulty": "easy",
+        "example": "الفجر جميل.",
+        "exampleTranslation": "Świt jest piękny."
+      },
+      {
+        "id": "pa_time_12",
+        "front": "Zmierzch",
+        "back": "غسق",
+        "difficulty": "easy",
+        "example": "الغسق هادئ.",
+        "exampleTranslation": "Zmierzch jest spokojny."
+      },
+      {
+        "id": "pa_time_13",
+        "front": "Kwartał",
+        "back": "ربع سنة",
+        "difficulty": "medium",
+        "example": "يبقى ربع سنة.",
+        "exampleTranslation": "Pozostał jeden kwartał."
+      },
+      {
+        "id": "pa_time_14",
+        "front": "Dekada",
+        "back": "عقد",
+        "difficulty": "medium",
+        "example": "عشت هنا عقداً.",
+        "exampleTranslation": "Mieszkałem tu dekadę."
+      },
+      {
+        "id": "pa_time_15",
+        "front": "Stulecie",
+        "back": "قرن",
+        "difficulty": "hard",
+        "example": "بُني هذا المبنى منذ قرن.",
+        "exampleTranslation": "Ten budynek zbudowano sto lat temu."
       }
     ]
   },
@@ -1346,6 +1906,46 @@
         "difficulty": "medium",
         "example": "يمكنك سماع الرعد",
         "exampleTranslation": "Słyszysz grzmot"
+      },
+      {
+        "id": "pa_weather_11",
+        "front": "Grad",
+        "back": "بَرَد",
+        "difficulty": "easy",
+        "example": "سقط البَرَد بشدة.",
+        "exampleTranslation": "Grad padał mocno."
+      },
+      {
+        "id": "pa_weather_12",
+        "front": "Mgła",
+        "back": "ضباب",
+        "difficulty": "easy",
+        "example": "الضباب كثيف.",
+        "exampleTranslation": "Mgła jest gęsta."
+      },
+      {
+        "id": "pa_weather_13",
+        "front": "Tęcza",
+        "back": "قوس قزح",
+        "difficulty": "medium",
+        "example": "رأيت قوس قزح.",
+        "exampleTranslation": "Widziałem tęczę."
+      },
+      {
+        "id": "pa_weather_14",
+        "front": "Susza",
+        "back": "جفاف",
+        "difficulty": "medium",
+        "example": "الجفاف يؤثر على المحاصيل.",
+        "exampleTranslation": "Susza wpływa na uprawy."
+      },
+      {
+        "id": "pa_weather_15",
+        "front": "Huragan",
+        "back": "إعصار",
+        "difficulty": "hard",
+        "example": "الإعصار دمر المنازل.",
+        "exampleTranslation": "Huragan zniszczył domy."
       }
     ]
   },
@@ -1436,6 +2036,46 @@
         "difficulty": "medium",
         "example": "قلبي ينبض بسرعة",
         "exampleTranslation": "Moje serce bije szybko"
+      },
+      {
+        "id": "pa_body_11",
+        "front": "Łokieć",
+        "back": "كوع",
+        "difficulty": "easy",
+        "example": "أصبت كوعي.",
+        "exampleTranslation": "Uderzyłem się w łokieć."
+      },
+      {
+        "id": "pa_body_12",
+        "front": "Kolano",
+        "back": "ركبة",
+        "difficulty": "easy",
+        "example": "ركبتي تؤلمني.",
+        "exampleTranslation": "Boli mnie kolano."
+      },
+      {
+        "id": "pa_body_13",
+        "front": "Kciuk",
+        "back": "إبهام",
+        "difficulty": "medium",
+        "example": "الإبهام مهم لـلقبضة.",
+        "exampleTranslation": "Kciuk jest ważny dla uchwytu."
+      },
+      {
+        "id": "pa_body_14",
+        "front": "Brew",
+        "back": "حاجب",
+        "difficulty": "medium",
+        "example": "رفع حاجبه.",
+        "exampleTranslation": "Uniósł brew."
+      },
+      {
+        "id": "pa_body_15",
+        "front": "Żebro",
+        "back": "ضلع",
+        "difficulty": "hard",
+        "example": "كسرت ضلعاً.",
+        "exampleTranslation": "Złamałem żebro."
       }
     ]
   },
@@ -1526,6 +2166,46 @@
         "difficulty": "medium",
         "example": "أفكر فيك",
         "exampleTranslation": "Myślę o tobie"
+      },
+      {
+        "id": "pa_act_11",
+        "front": "Wędkowanie",
+        "back": "صيد السمك",
+        "difficulty": "easy",
+        "example": "أحب صيد السمك.",
+        "exampleTranslation": "Lubię wędkowanie."
+      },
+      {
+        "id": "pa_act_12",
+        "front": "Wspinaczka",
+        "back": "تسلق",
+        "difficulty": "easy",
+        "example": "التسلق ممتع.",
+        "exampleTranslation": "Wspinaczka jest zabawna."
+      },
+      {
+        "id": "pa_act_13",
+        "front": "Ogrodnictwo",
+        "back": "بستنة",
+        "difficulty": "medium",
+        "example": "البستنة هوايتي المفضلة.",
+        "exampleTranslation": "Ogrodnictwo to moje ulubione hobby."
+      },
+      {
+        "id": "pa_act_14",
+        "front": "Szycie",
+        "back": "خياطة",
+        "difficulty": "medium",
+        "example": "تعلمت الخياطة.",
+        "exampleTranslation": "Nauczyłem się szycia."
+      },
+      {
+        "id": "pa_act_15",
+        "front": "Rzeźbiarstwo",
+        "back": "نحت",
+        "difficulty": "hard",
+        "example": "النحت فن قديم.",
+        "exampleTranslation": "Rzeźbiarstwo to stara sztuka."
       }
     ]
   },
@@ -1616,6 +2296,46 @@
         "difficulty": "medium",
         "example": "أتذكر الدرس",
         "exampleTranslation": "Pamiętam tę lekcję"
+      },
+      {
+        "id": "pa_learn_11",
+        "front": "Słownik",
+        "back": "قاموس",
+        "difficulty": "easy",
+        "example": "القاموس مفيد.",
+        "exampleTranslation": "Słownik jest przydatny."
+      },
+      {
+        "id": "pa_learn_12",
+        "front": "Ćwiczenie",
+        "back": "تمرين",
+        "difficulty": "easy",
+        "example": "أكمل التمرين.",
+        "exampleTranslation": "Ukończ ćwiczenie."
+      },
+      {
+        "id": "pa_learn_13",
+        "front": "Wymowa",
+        "back": "نطق",
+        "difficulty": "medium",
+        "example": "النطق مهم جداً.",
+        "exampleTranslation": "Wymowa jest bardzo ważna."
+      },
+      {
+        "id": "pa_learn_14",
+        "front": "Tłumaczenie",
+        "back": "ترجمة",
+        "difficulty": "medium",
+        "example": "الترجمة دقيقة.",
+        "exampleTranslation": "Tłumaczenie jest dokładne."
+      },
+      {
+        "id": "pa_learn_15",
+        "front": "Biegłość",
+        "back": "إتقان",
+        "difficulty": "hard",
+        "example": "الإتقان يتطلب ممارسة.",
+        "exampleTranslation": "Biegłość wymaga praktyki."
       }
     ]
   },
@@ -1706,6 +2426,46 @@
         "difficulty": "medium",
         "example": "مدربنا ممتاز",
         "exampleTranslation": "Nasz trener jest doskonały"
+      },
+      {
+        "id": "pa_sport_11",
+        "front": "Sędzia",
+        "back": "حكم",
+        "difficulty": "easy",
+        "example": "الحكم عادل.",
+        "exampleTranslation": "Sędzia jest sprawiedliwy."
+      },
+      {
+        "id": "pa_sport_12",
+        "front": "Mistrzostwa",
+        "back": "بطولة",
+        "difficulty": "easy",
+        "example": "البطولة بدأت.",
+        "exampleTranslation": "Mistrzostwa się rozpoczęły."
+      },
+      {
+        "id": "pa_sport_13",
+        "front": "Trener",
+        "back": "مدرب",
+        "difficulty": "medium",
+        "example": "المدرب ممتاز.",
+        "exampleTranslation": "Trener jest doskonały."
+      },
+      {
+        "id": "pa_sport_14",
+        "front": "Rekord",
+        "back": "رقم قياسي",
+        "difficulty": "medium",
+        "example": "حطم الرقم القياسي.",
+        "exampleTranslation": "Pobił rekord."
+      },
+      {
+        "id": "pa_sport_15",
+        "front": "Szermierka",
+        "back": "مبارزة",
+        "difficulty": "hard",
+        "example": "المبارزة رياضة أولمبية.",
+        "exampleTranslation": "Szermierka jest sportem olimpijskim."
       }
     ]
   },
@@ -1796,6 +2556,46 @@
         "difficulty": "medium",
         "example": "أشتري تذكاراً",
         "exampleTranslation": "Kupuję pamiątkę"
+      },
+      {
+        "id": "pa_travel_11",
+        "front": "Paszport",
+        "back": "جواز سفر",
+        "difficulty": "easy",
+        "example": "جواز سفري جاهز.",
+        "exampleTranslation": "Mój paszport jest gotowy."
+      },
+      {
+        "id": "pa_travel_12",
+        "front": "Wiza",
+        "back": "تأشيرة",
+        "difficulty": "easy",
+        "example": "أحتاج تأشيرة.",
+        "exampleTranslation": "Potrzebuję wizy."
+      },
+      {
+        "id": "pa_travel_13",
+        "front": "Rezerwacja",
+        "back": "حجز",
+        "difficulty": "medium",
+        "example": "الحجز مؤكد.",
+        "exampleTranslation": "Rezerwacja jest potwierdzona."
+      },
+      {
+        "id": "pa_travel_14",
+        "front": "Przewodnik",
+        "back": "دليل سياحي",
+        "difficulty": "medium",
+        "example": "الدليل السياحي ممتاز.",
+        "exampleTranslation": "Przewodnik jest doskonały."
+      },
+      {
+        "id": "pa_travel_15",
+        "front": "Ubezpieczenie",
+        "back": "تأمين سفر",
+        "difficulty": "hard",
+        "example": "تأمين السفر ضروري.",
+        "exampleTranslation": "Ubezpieczenie podróżne jest konieczne."
       }
     ]
   },
@@ -1886,6 +2686,46 @@
         "difficulty": "medium",
         "example": "القراءة هوايتي",
         "exampleTranslation": "Czytanie to moje hobby"
+      },
+      {
+        "id": "pa_ent_11",
+        "front": "Koncert",
+        "back": "حفلة موسيقية",
+        "difficulty": "easy",
+        "example": "الحفلة الموسيقية رائعة.",
+        "exampleTranslation": "Koncert jest wspaniały."
+      },
+      {
+        "id": "pa_ent_12",
+        "front": "Wystawa",
+        "back": "معرض",
+        "difficulty": "easy",
+        "example": "المعرض مفتوح.",
+        "exampleTranslation": "Wystawa jest otwarta."
+      },
+      {
+        "id": "pa_ent_13",
+        "front": "Cyrk",
+        "back": "سيرك",
+        "difficulty": "medium",
+        "example": "السيرك ممتع للأطفال.",
+        "exampleTranslation": "Cyrk jest zabawny dla dzieci."
+      },
+      {
+        "id": "pa_ent_14",
+        "front": "Festiwal",
+        "back": "مهرجان",
+        "difficulty": "medium",
+        "example": "المهرجان سنوي.",
+        "exampleTranslation": "Festiwal jest coroczny."
+      },
+      {
+        "id": "pa_ent_15",
+        "front": "Komedia",
+        "back": "كوميديا",
+        "difficulty": "hard",
+        "example": "الكوميديا تجعلني أضحك.",
+        "exampleTranslation": "Komedia mnie rozśmiesza."
       }
     ]
   }

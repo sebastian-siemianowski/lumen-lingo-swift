@@ -86,6 +86,46 @@
         "difficulty": "medium",
         "example": "Non, je ne veux pas",
         "exampleTranslation": "No, I don't want"
+      },
+      {
+        "id": "ef_greet_11",
+        "front": "Welcome",
+        "back": "Bienvenue",
+        "difficulty": "easy",
+        "example": "Bienvenue dans notre maison",
+        "exampleTranslation": "Welcome to our house"
+      },
+      {
+        "id": "ef_greet_12",
+        "front": "How are you?",
+        "back": "Comment allez-vous ?",
+        "difficulty": "easy",
+        "example": "Comment allez-vous aujourd'hui ?",
+        "exampleTranslation": "How are you today?"
+      },
+      {
+        "id": "ef_greet_13",
+        "front": "See you later",
+        "back": "À plus tard",
+        "difficulty": "medium",
+        "example": "À plus tard, bonne journée !",
+        "exampleTranslation": "See you later, have a good day!"
+      },
+      {
+        "id": "ef_greet_14",
+        "front": "Nice to meet you",
+        "back": "Enchanté(e)",
+        "difficulty": "medium",
+        "example": "Enchanté, je m'appelle Pierre",
+        "exampleTranslation": "Nice to meet you, my name is Pierre"
+      },
+      {
+        "id": "ef_greet_15",
+        "front": "Take care",
+        "back": "Prends soin de toi",
+        "difficulty": "hard",
+        "example": "Prends soin de toi pendant le voyage",
+        "exampleTranslation": "Take care during the trip"
       }
     ]
   },
@@ -176,6 +216,46 @@
         "difficulty": "medium",
         "example": "Ma tante est très gentille",
         "exampleTranslation": "My aunt is very kind"
+      },
+      {
+        "id": "ef_fam_11",
+        "front": "Uncle",
+        "back": "Oncle",
+        "difficulty": "easy",
+        "example": "Mon oncle habite à Lyon",
+        "exampleTranslation": "My uncle lives in Lyon"
+      },
+      {
+        "id": "ef_fam_12",
+        "front": "Aunt",
+        "back": "Tante",
+        "difficulty": "easy",
+        "example": "Ma tante est professeur",
+        "exampleTranslation": "My aunt is a teacher"
+      },
+      {
+        "id": "ef_fam_13",
+        "front": "Cousin (male)",
+        "back": "Cousin",
+        "difficulty": "medium",
+        "example": "Mon cousin a le même âge que moi",
+        "exampleTranslation": "My cousin is the same age as me"
+      },
+      {
+        "id": "ef_fam_14",
+        "front": "Grandson",
+        "back": "Petit-fils",
+        "difficulty": "medium",
+        "example": "Le petit-fils ressemble à son grand-père",
+        "exampleTranslation": "The grandson looks like his grandfather"
+      },
+      {
+        "id": "ef_fam_15",
+        "front": "Son-in-law",
+        "back": "Gendre",
+        "difficulty": "hard",
+        "example": "Le gendre est venu pour le dîner",
+        "exampleTranslation": "The son-in-law came for dinner"
       }
     ]
   },
@@ -266,6 +346,46 @@
         "difficulty": "medium",
         "example": "Dix euros, s'il vous plaît",
         "exampleTranslation": "Ten euros, please"
+      },
+      {
+        "id": "ef_num_11",
+        "front": "Eleven",
+        "back": "Onze",
+        "difficulty": "easy",
+        "example": "Il y a onze joueurs dans l'équipe",
+        "exampleTranslation": "There are eleven players on the team"
+      },
+      {
+        "id": "ef_num_12",
+        "front": "Twenty",
+        "back": "Vingt",
+        "difficulty": "easy",
+        "example": "Elle a vingt ans",
+        "exampleTranslation": "She is twenty years old"
+      },
+      {
+        "id": "ef_num_13",
+        "front": "Fifty",
+        "back": "Cinquante",
+        "difficulty": "medium",
+        "example": "Le billet coûte cinquante euros",
+        "exampleTranslation": "The ticket costs fifty euros"
+      },
+      {
+        "id": "ef_num_14",
+        "front": "One hundred",
+        "back": "Cent",
+        "difficulty": "medium",
+        "example": "Il y a cent pages dans ce livre",
+        "exampleTranslation": "There are one hundred pages in this book"
+      },
+      {
+        "id": "ef_num_15",
+        "front": "One thousand",
+        "back": "Mille",
+        "difficulty": "hard",
+        "example": "Cette ville a mille ans d'histoire",
+        "exampleTranslation": "This city has a thousand years of history"
       }
     ]
   },
@@ -356,6 +476,46 @@
         "difficulty": "medium",
         "example": "L'éléphant est gris",
         "exampleTranslation": "The elephant is gray"
+      },
+      {
+        "id": "ef_col_11",
+        "front": "Purple",
+        "back": "Violet",
+        "difficulty": "easy",
+        "example": "Elle porte une robe violette",
+        "exampleTranslation": "She wears a purple dress"
+      },
+      {
+        "id": "ef_col_12",
+        "front": "Pink",
+        "back": "Rose",
+        "difficulty": "easy",
+        "example": "Les fleurs sont roses",
+        "exampleTranslation": "The flowers are pink"
+      },
+      {
+        "id": "ef_col_13",
+        "front": "Gray",
+        "back": "Gris",
+        "difficulty": "medium",
+        "example": "Le ciel est gris aujourd'hui",
+        "exampleTranslation": "The sky is gray today"
+      },
+      {
+        "id": "ef_col_14",
+        "front": "Brown",
+        "back": "Marron",
+        "difficulty": "medium",
+        "example": "Il a les yeux marron",
+        "exampleTranslation": "He has brown eyes"
+      },
+      {
+        "id": "ef_col_15",
+        "front": "Gold / Golden",
+        "back": "Doré",
+        "difficulty": "hard",
+        "example": "La lumière dorée du coucher de soleil",
+        "exampleTranslation": "The golden light of the sunset"
       }
     ]
   },
@@ -446,6 +606,46 @@
         "difficulty": "medium",
         "example": "Je mange des œufs au petit déjeuner",
         "exampleTranslation": "I eat eggs for breakfast"
+      },
+      {
+        "id": "ef_food_11",
+        "front": "Grapes",
+        "back": "Raisins",
+        "difficulty": "easy",
+        "example": "Les raisins sont mûrs en automne",
+        "exampleTranslation": "Grapes are ripe in autumn"
+      },
+      {
+        "id": "ef_food_12",
+        "front": "Potatoes",
+        "back": "Pommes de terre",
+        "difficulty": "easy",
+        "example": "J'adore les pommes de terre frites",
+        "exampleTranslation": "I love fried potatoes"
+      },
+      {
+        "id": "ef_food_13",
+        "front": "Olive oil",
+        "back": "Huile d'olive",
+        "difficulty": "medium",
+        "example": "Ajoutez de l'huile d'olive à la salade",
+        "exampleTranslation": "Add olive oil to the salad"
+      },
+      {
+        "id": "ef_food_14",
+        "front": "Spices",
+        "back": "Épices",
+        "difficulty": "medium",
+        "example": "La cuisine française utilise beaucoup d'épices",
+        "exampleTranslation": "French cuisine uses many spices"
+      },
+      {
+        "id": "ef_food_15",
+        "front": "Seafood",
+        "back": "Fruits de mer",
+        "difficulty": "hard",
+        "example": "Ce restaurant est connu pour ses fruits de mer",
+        "exampleTranslation": "This restaurant is known for its seafood"
       }
     ]
   },
@@ -536,6 +736,46 @@
         "difficulty": "medium",
         "example": "Le lit est doux",
         "exampleTranslation": "The bed is soft"
+      },
+      {
+        "id": "ef_house_11",
+        "front": "Ceiling",
+        "back": "Plafond",
+        "difficulty": "easy",
+        "example": "Le plafond est très haut",
+        "exampleTranslation": "The ceiling is very high"
+      },
+      {
+        "id": "ef_house_12",
+        "front": "Stairs",
+        "back": "Escalier",
+        "difficulty": "easy",
+        "example": "Montez l'escalier jusqu'au deuxième étage",
+        "exampleTranslation": "Go up the stairs to the second floor"
+      },
+      {
+        "id": "ef_house_13",
+        "front": "Balcony",
+        "back": "Balcon",
+        "difficulty": "medium",
+        "example": "Nous prenons le café sur le balcon",
+        "exampleTranslation": "We have coffee on the balcony"
+      },
+      {
+        "id": "ef_house_14",
+        "front": "Wardrobe",
+        "back": "Armoire",
+        "difficulty": "medium",
+        "example": "L'armoire est pleine de vêtements",
+        "exampleTranslation": "The wardrobe is full of clothes"
+      },
+      {
+        "id": "ef_house_15",
+        "front": "Basement",
+        "back": "Sous-sol",
+        "difficulty": "hard",
+        "example": "Le sous-sol sert de salle de jeux",
+        "exampleTranslation": "The basement serves as a game room"
       }
     ]
   },
@@ -626,6 +866,46 @@
         "difficulty": "medium",
         "example": "Le musée est intéressant",
         "exampleTranslation": "The museum is interesting"
+      },
+      {
+        "id": "ef_place_11",
+        "front": "Pharmacy",
+        "back": "Pharmacie",
+        "difficulty": "easy",
+        "example": "La pharmacie est ouverte le dimanche",
+        "exampleTranslation": "The pharmacy is open on Sunday"
+      },
+      {
+        "id": "ef_place_12",
+        "front": "Library",
+        "back": "Bibliothèque",
+        "difficulty": "easy",
+        "example": "J'étudie à la bibliothèque",
+        "exampleTranslation": "I study at the library"
+      },
+      {
+        "id": "ef_place_13",
+        "front": "Stadium",
+        "back": "Stade",
+        "difficulty": "medium",
+        "example": "Le stade est plein de supporters",
+        "exampleTranslation": "The stadium is full of supporters"
+      },
+      {
+        "id": "ef_place_14",
+        "front": "Gas station",
+        "back": "Station-service",
+        "difficulty": "medium",
+        "example": "Arrêtons-nous à la station-service",
+        "exampleTranslation": "Let's stop at the gas station"
+      },
+      {
+        "id": "ef_place_15",
+        "front": "Embassy",
+        "back": "Ambassade",
+        "difficulty": "hard",
+        "example": "J'ai pris rendez-vous à l'ambassade",
+        "exampleTranslation": "I made an appointment at the embassy"
       }
     ]
   },
@@ -716,6 +996,46 @@
         "difficulty": "medium",
         "example": "Le manteau est chaud",
         "exampleTranslation": "The coat is warm"
+      },
+      {
+        "id": "ef_cloth_11",
+        "front": "Scarf",
+        "back": "Écharpe",
+        "difficulty": "easy",
+        "example": "Mets ton écharpe, il fait froid",
+        "exampleTranslation": "Put on your scarf, it's cold"
+      },
+      {
+        "id": "ef_cloth_12",
+        "front": "Sneakers",
+        "back": "Baskets",
+        "difficulty": "easy",
+        "example": "J'ai acheté des baskets neuves",
+        "exampleTranslation": "I bought new sneakers"
+      },
+      {
+        "id": "ef_cloth_13",
+        "front": "Suit",
+        "back": "Costume",
+        "difficulty": "medium",
+        "example": "Il porte un costume élégant",
+        "exampleTranslation": "He wears an elegant suit"
+      },
+      {
+        "id": "ef_cloth_14",
+        "front": "Necktie",
+        "back": "Cravate",
+        "difficulty": "medium",
+        "example": "Sa cravate est en soie",
+        "exampleTranslation": "His tie is made of silk"
+      },
+      {
+        "id": "ef_cloth_15",
+        "front": "Raincoat",
+        "back": "Imperméable",
+        "difficulty": "hard",
+        "example": "N'oublie pas ton imperméable, il va pleuvoir",
+        "exampleTranslation": "Don't forget your raincoat, it's going to rain"
       }
     ]
   },
@@ -806,6 +1126,46 @@
         "difficulty": "medium",
         "example": "Le mécanicien répare les voitures",
         "exampleTranslation": "The mechanic repairs cars"
+      },
+      {
+        "id": "ef_work_11",
+        "front": "Promotion",
+        "back": "Promotion",
+        "difficulty": "easy",
+        "example": "Elle a obtenu une promotion",
+        "exampleTranslation": "She got a promotion"
+      },
+      {
+        "id": "ef_work_12",
+        "front": "Meeting",
+        "back": "Réunion",
+        "difficulty": "easy",
+        "example": "La réunion commence à neuf heures",
+        "exampleTranslation": "The meeting starts at nine o'clock"
+      },
+      {
+        "id": "ef_work_13",
+        "front": "Deadline",
+        "back": "Date limite",
+        "difficulty": "medium",
+        "example": "La date limite est vendredi prochain",
+        "exampleTranslation": "The deadline is next Friday"
+      },
+      {
+        "id": "ef_work_14",
+        "front": "Resume / CV",
+        "back": "Curriculum vitae",
+        "difficulty": "medium",
+        "example": "Envoyez votre curriculum vitae par courriel",
+        "exampleTranslation": "Send your CV by email"
+      },
+      {
+        "id": "ef_work_15",
+        "front": "Retirement",
+        "back": "Retraite",
+        "difficulty": "hard",
+        "example": "Il prend sa retraite l'année prochaine",
+        "exampleTranslation": "He is retiring next year"
       }
     ]
   },
@@ -896,6 +1256,46 @@
         "difficulty": "medium",
         "example": "J'achète un billet",
         "exampleTranslation": "I buy a ticket"
+      },
+      {
+        "id": "ef_trans_11",
+        "front": "Platform",
+        "back": "Quai",
+        "difficulty": "easy",
+        "example": "Le train arrive au quai numéro trois",
+        "exampleTranslation": "The train arrives at platform number three"
+      },
+      {
+        "id": "ef_trans_12",
+        "front": "Traffic light",
+        "back": "Feu de signalisation",
+        "difficulty": "easy",
+        "example": "Tournez à droite au feu de signalisation",
+        "exampleTranslation": "Turn right at the traffic light"
+      },
+      {
+        "id": "ef_trans_13",
+        "front": "Traffic jam",
+        "back": "Embouteillage",
+        "difficulty": "medium",
+        "example": "Il y a un embouteillage sur l'autoroute",
+        "exampleTranslation": "There is a traffic jam on the highway"
+      },
+      {
+        "id": "ef_trans_14",
+        "front": "Driver's license",
+        "back": "Permis de conduire",
+        "difficulty": "medium",
+        "example": "J'ai passé mon permis de conduire",
+        "exampleTranslation": "I passed my driver's license test"
+      },
+      {
+        "id": "ef_trans_15",
+        "front": "Parking lot",
+        "back": "Parking",
+        "difficulty": "hard",
+        "example": "Le parking souterrain est complet",
+        "exampleTranslation": "The underground parking lot is full"
       }
     ]
   },
@@ -986,6 +1386,46 @@
         "difficulty": "medium",
         "example": "Mon sac à dos est lourd",
         "exampleTranslation": "My backpack is heavy"
+      },
+      {
+        "id": "ef_edu_11",
+        "front": "Curriculum",
+        "back": "Programme scolaire",
+        "difficulty": "easy",
+        "example": "Le programme scolaire a changé cette année",
+        "exampleTranslation": "The curriculum changed this year"
+      },
+      {
+        "id": "ef_edu_12",
+        "front": "Lecture",
+        "back": "Cours magistral",
+        "difficulty": "easy",
+        "example": "Le professeur donne un cours magistral",
+        "exampleTranslation": "The professor gives a lecture"
+      },
+      {
+        "id": "ef_edu_13",
+        "front": "Scholarship",
+        "back": "Bourse d'études",
+        "difficulty": "medium",
+        "example": "Elle a obtenu une bourse d'études",
+        "exampleTranslation": "She got a scholarship"
+      },
+      {
+        "id": "ef_edu_14",
+        "front": "Thesis",
+        "back": "Thèse",
+        "difficulty": "medium",
+        "example": "Il rédige sa thèse de doctorat",
+        "exampleTranslation": "He is writing his doctoral thesis"
+      },
+      {
+        "id": "ef_edu_15",
+        "front": "Graduation",
+        "back": "Diplôme / Remise des diplômes",
+        "difficulty": "hard",
+        "example": "La remise des diplômes a lieu en juin",
+        "exampleTranslation": "The graduation ceremony takes place in June"
       }
     ]
   },
@@ -1076,6 +1516,46 @@
         "difficulty": "medium",
         "example": "La lune est pleine",
         "exampleTranslation": "The moon is full"
+      },
+      {
+        "id": "ef_nature_11",
+        "front": "Waterfall",
+        "back": "Cascade",
+        "difficulty": "easy",
+        "example": "La cascade est magnifique au printemps",
+        "exampleTranslation": "The waterfall is magnificent in spring"
+      },
+      {
+        "id": "ef_nature_12",
+        "front": "Hill",
+        "back": "Colline",
+        "difficulty": "easy",
+        "example": "La maison est sur la colline",
+        "exampleTranslation": "The house is on the hill"
+      },
+      {
+        "id": "ef_nature_13",
+        "front": "Cave",
+        "back": "Grotte",
+        "difficulty": "medium",
+        "example": "Nous avons visité une grotte préhistorique",
+        "exampleTranslation": "We visited a prehistoric cave"
+      },
+      {
+        "id": "ef_nature_14",
+        "front": "Desert",
+        "back": "Désert",
+        "difficulty": "medium",
+        "example": "Le Sahara est le plus grand désert du monde",
+        "exampleTranslation": "The Sahara is the largest desert in the world"
+      },
+      {
+        "id": "ef_nature_15",
+        "front": "Volcano",
+        "back": "Volcan",
+        "difficulty": "hard",
+        "example": "Le volcan est en éruption depuis hier",
+        "exampleTranslation": "The volcano has been erupting since yesterday"
       }
     ]
   },
@@ -1166,6 +1646,46 @@
         "difficulty": "medium",
         "example": "Ils sont ennuyés",
         "exampleTranslation": "They are bored"
+      },
+      {
+        "id": "ef_emo_11",
+        "front": "Pride",
+        "back": "Fierté",
+        "difficulty": "easy",
+        "example": "Je ressens de la fierté pour mes enfants",
+        "exampleTranslation": "I feel pride for my children"
+      },
+      {
+        "id": "ef_emo_12",
+        "front": "Anxiety",
+        "back": "Anxiété",
+        "difficulty": "easy",
+        "example": "L'anxiété avant les examens est normale",
+        "exampleTranslation": "Anxiety before exams is normal"
+      },
+      {
+        "id": "ef_emo_13",
+        "front": "Nostalgia",
+        "back": "Nostalgie",
+        "difficulty": "medium",
+        "example": "J'éprouve de la nostalgie pour mon enfance",
+        "exampleTranslation": "I feel nostalgia for my childhood"
+      },
+      {
+        "id": "ef_emo_14",
+        "front": "Frustration",
+        "back": "Frustration",
+        "difficulty": "medium",
+        "example": "Sa frustration était évidente",
+        "exampleTranslation": "His frustration was evident"
+      },
+      {
+        "id": "ef_emo_15",
+        "front": "Gratitude",
+        "back": "Gratitude",
+        "difficulty": "hard",
+        "example": "Je voudrais exprimer ma gratitude",
+        "exampleTranslation": "I would like to express my gratitude"
       }
     ]
   },
@@ -1256,6 +1776,46 @@
         "difficulty": "medium",
         "example": "La semaine prochaine",
         "exampleTranslation": "Next week"
+      },
+      {
+        "id": "ef_time_11",
+        "front": "Dawn",
+        "back": "Aube",
+        "difficulty": "easy",
+        "example": "Il se lève à l'aube chaque jour",
+        "exampleTranslation": "He gets up at dawn every day"
+      },
+      {
+        "id": "ef_time_12",
+        "front": "Sunset",
+        "back": "Coucher de soleil",
+        "difficulty": "easy",
+        "example": "Le coucher de soleil est splendide",
+        "exampleTranslation": "The sunset is splendid"
+      },
+      {
+        "id": "ef_time_13",
+        "front": "Quarter hour",
+        "back": "Quart d'heure",
+        "difficulty": "medium",
+        "example": "J'arrive dans un quart d'heure",
+        "exampleTranslation": "I'll be there in a quarter of an hour"
+      },
+      {
+        "id": "ef_time_14",
+        "front": "Midnight",
+        "back": "Minuit",
+        "difficulty": "medium",
+        "example": "Le magasin ferme à minuit",
+        "exampleTranslation": "The store closes at midnight"
+      },
+      {
+        "id": "ef_time_15",
+        "front": "Decade",
+        "back": "Décennie",
+        "difficulty": "hard",
+        "example": "Beaucoup de choses ont changé en une décennie",
+        "exampleTranslation": "Many things have changed in a decade"
       }
     ]
   },
@@ -1346,6 +1906,46 @@
         "difficulty": "medium",
         "example": "On entend le tonnerre",
         "exampleTranslation": "You can hear thunder"
+      },
+      {
+        "id": "ef_weather_11",
+        "front": "Fog",
+        "back": "Brouillard",
+        "difficulty": "easy",
+        "example": "Il y a du brouillard ce matin",
+        "exampleTranslation": "There is fog this morning"
+      },
+      {
+        "id": "ef_weather_12",
+        "front": "Thunderstorm",
+        "back": "Orage",
+        "difficulty": "easy",
+        "example": "Un orage est prévu ce soir",
+        "exampleTranslation": "A thunderstorm is expected tonight"
+      },
+      {
+        "id": "ef_weather_13",
+        "front": "Heat wave",
+        "back": "Canicule",
+        "difficulty": "medium",
+        "example": "La canicule dure depuis une semaine",
+        "exampleTranslation": "The heat wave has lasted a week"
+      },
+      {
+        "id": "ef_weather_14",
+        "front": "Frost",
+        "back": "Givre",
+        "difficulty": "medium",
+        "example": "Il y a du givre sur les vitres",
+        "exampleTranslation": "There is frost on the windows"
+      },
+      {
+        "id": "ef_weather_15",
+        "front": "Hurricane",
+        "back": "Ouragan",
+        "difficulty": "hard",
+        "example": "L'ouragan a causé des dégâts importants",
+        "exampleTranslation": "The hurricane caused significant damage"
       }
     ]
   },
@@ -1436,6 +2036,46 @@
         "difficulty": "medium",
         "example": "Mon cœur bat vite",
         "exampleTranslation": "My heart beats fast"
+      },
+      {
+        "id": "ef_body_11",
+        "front": "Shoulder",
+        "back": "Épaule",
+        "difficulty": "easy",
+        "example": "J'ai mal à l'épaule",
+        "exampleTranslation": "My shoulder hurts"
+      },
+      {
+        "id": "ef_body_12",
+        "front": "Wrist",
+        "back": "Poignet",
+        "difficulty": "easy",
+        "example": "Elle porte un bracelet au poignet",
+        "exampleTranslation": "She wears a bracelet on her wrist"
+      },
+      {
+        "id": "ef_body_13",
+        "front": "Ankle",
+        "back": "Cheville",
+        "difficulty": "medium",
+        "example": "Il s'est tordu la cheville",
+        "exampleTranslation": "He twisted his ankle"
+      },
+      {
+        "id": "ef_body_14",
+        "front": "Eyelid",
+        "back": "Paupière",
+        "difficulty": "medium",
+        "example": "Sa paupière tremble de fatigue",
+        "exampleTranslation": "Her eyelid trembles from tiredness"
+      },
+      {
+        "id": "ef_body_15",
+        "front": "Throat",
+        "back": "Gorge",
+        "difficulty": "hard",
+        "example": "J'ai mal à la gorge depuis hier",
+        "exampleTranslation": "My throat has been hurting since yesterday"
       }
     ]
   },
@@ -1526,6 +2166,46 @@
         "difficulty": "medium",
         "example": "Je pense à toi",
         "exampleTranslation": "I think of you"
+      },
+      {
+        "id": "ef_act_11",
+        "front": "Climbing",
+        "back": "Escalade",
+        "difficulty": "easy",
+        "example": "L'escalade est un sport passionnant",
+        "exampleTranslation": "Climbing is an exciting sport"
+      },
+      {
+        "id": "ef_act_12",
+        "front": "Drawing",
+        "back": "Dessin",
+        "difficulty": "easy",
+        "example": "Le dessin est son passe-temps préféré",
+        "exampleTranslation": "Drawing is his favorite hobby"
+      },
+      {
+        "id": "ef_act_13",
+        "front": "Gardening",
+        "back": "Jardinage",
+        "difficulty": "medium",
+        "example": "Le jardinage est relaxant le week-end",
+        "exampleTranslation": "Gardening is relaxing on weekends"
+      },
+      {
+        "id": "ef_act_14",
+        "front": "Sewing",
+        "back": "Couture",
+        "difficulty": "medium",
+        "example": "Ma grand-mère m'a appris la couture",
+        "exampleTranslation": "My grandmother taught me sewing"
+      },
+      {
+        "id": "ef_act_15",
+        "front": "Skiing",
+        "back": "Ski",
+        "difficulty": "hard",
+        "example": "Nous faisons du ski dans les Alpes",
+        "exampleTranslation": "We go skiing in the Alps"
       }
     ]
   },
@@ -1616,6 +2296,46 @@
         "difficulty": "medium",
         "example": "Je me souviens de la leçon",
         "exampleTranslation": "I remember the lesson"
+      },
+      {
+        "id": "ef_learn_11",
+        "front": "Analysis",
+        "back": "Analyse",
+        "difficulty": "easy",
+        "example": "L'analyse des données prend du temps",
+        "exampleTranslation": "Data analysis takes time"
+      },
+      {
+        "id": "ef_learn_12",
+        "front": "Hypothesis",
+        "back": "Hypothèse",
+        "difficulty": "easy",
+        "example": "L'hypothèse doit être vérifiée",
+        "exampleTranslation": "The hypothesis must be verified"
+      },
+      {
+        "id": "ef_learn_13",
+        "front": "Conclusion",
+        "back": "Conclusion",
+        "difficulty": "medium",
+        "example": "Quelle est votre conclusion ?",
+        "exampleTranslation": "What is your conclusion?"
+      },
+      {
+        "id": "ef_learn_14",
+        "front": "Reference",
+        "back": "Référence",
+        "difficulty": "medium",
+        "example": "Ce livre est une excellente référence",
+        "exampleTranslation": "This book is an excellent reference"
+      },
+      {
+        "id": "ef_learn_15",
+        "front": "Methodology",
+        "back": "Méthodologie",
+        "difficulty": "hard",
+        "example": "La méthodologie de recherche est rigoureuse",
+        "exampleTranslation": "The research methodology is rigorous"
       }
     ]
   },
@@ -1706,6 +2426,46 @@
         "difficulty": "medium",
         "example": "Notre entraîneur est excellent",
         "exampleTranslation": "Our coach is excellent"
+      },
+      {
+        "id": "ef_sport_11",
+        "front": "Boxing",
+        "back": "Boxe",
+        "difficulty": "easy",
+        "example": "La boxe est un sport populaire en France",
+        "exampleTranslation": "Boxing is a popular sport in France"
+      },
+      {
+        "id": "ef_sport_12",
+        "front": "Swimming",
+        "back": "Natation",
+        "difficulty": "easy",
+        "example": "La natation est bonne pour la santé",
+        "exampleTranslation": "Swimming is good for health"
+      },
+      {
+        "id": "ef_sport_13",
+        "front": "Referee",
+        "back": "Arbitre",
+        "difficulty": "medium",
+        "example": "L'arbitre a sifflé la fin du match",
+        "exampleTranslation": "The referee blew the whistle for the end of the match"
+      },
+      {
+        "id": "ef_sport_14",
+        "front": "Championship",
+        "back": "Championnat",
+        "difficulty": "medium",
+        "example": "L'équipe a gagné le championnat",
+        "exampleTranslation": "The team won the championship"
+      },
+      {
+        "id": "ef_sport_15",
+        "front": "Fencing",
+        "back": "Escrime",
+        "difficulty": "hard",
+        "example": "L'escrime est un sport olympique élégant",
+        "exampleTranslation": "Fencing is an elegant Olympic sport"
       }
     ]
   },
@@ -1796,6 +2556,46 @@
         "difficulty": "medium",
         "example": "J'achète un souvenir",
         "exampleTranslation": "I'm buying a souvenir"
+      },
+      {
+        "id": "ef_travel_11",
+        "front": "Passport",
+        "back": "Passeport",
+        "difficulty": "easy",
+        "example": "N'oubliez pas votre passeport",
+        "exampleTranslation": "Don't forget your passport"
+      },
+      {
+        "id": "ef_travel_12",
+        "front": "Reservation",
+        "back": "Réservation",
+        "difficulty": "easy",
+        "example": "J'ai fait une réservation d'hôtel",
+        "exampleTranslation": "I made a hotel reservation"
+      },
+      {
+        "id": "ef_travel_13",
+        "front": "Cruise",
+        "back": "Croisière",
+        "difficulty": "medium",
+        "example": "La croisière dure une semaine",
+        "exampleTranslation": "The cruise lasts a week"
+      },
+      {
+        "id": "ef_travel_14",
+        "front": "Visa",
+        "back": "Visa",
+        "difficulty": "medium",
+        "example": "Il faut un visa pour entrer dans ce pays",
+        "exampleTranslation": "You need a visa to enter this country"
+      },
+      {
+        "id": "ef_travel_15",
+        "front": "Tourist attraction",
+        "back": "Attraction touristique",
+        "difficulty": "hard",
+        "example": "La Tour Eiffel est la plus grande attraction touristique de Paris",
+        "exampleTranslation": "The Eiffel Tower is the biggest tourist attraction in Paris"
       }
     ]
   },
@@ -1886,6 +2686,46 @@
         "difficulty": "medium",
         "example": "La lecture est mon passe-temps",
         "exampleTranslation": "Reading is my hobby"
+      },
+      {
+        "id": "ef_ent_11",
+        "front": "Theater play",
+        "back": "Pièce de théâtre",
+        "difficulty": "easy",
+        "example": "Nous avons vu une pièce de théâtre hier",
+        "exampleTranslation": "We saw a theater play yesterday"
+      },
+      {
+        "id": "ef_ent_12",
+        "front": "Concert",
+        "back": "Concert",
+        "difficulty": "easy",
+        "example": "Les billets du concert sont épuisés",
+        "exampleTranslation": "The concert tickets are sold out"
+      },
+      {
+        "id": "ef_ent_13",
+        "front": "Art exhibition",
+        "back": "Exposition d'art",
+        "difficulty": "medium",
+        "example": "L'exposition d'art ouvre demain",
+        "exampleTranslation": "The art exhibition opens tomorrow"
+      },
+      {
+        "id": "ef_ent_14",
+        "front": "Video game",
+        "back": "Jeu vidéo",
+        "difficulty": "medium",
+        "example": "Ce jeu vidéo est très populaire",
+        "exampleTranslation": "This video game is very popular"
+      },
+      {
+        "id": "ef_ent_15",
+        "front": "Documentary",
+        "back": "Documentaire",
+        "difficulty": "hard",
+        "example": "Le documentaire sur la nature a gagné un prix",
+        "exampleTranslation": "The nature documentary won an award"
       }
     ]
   }

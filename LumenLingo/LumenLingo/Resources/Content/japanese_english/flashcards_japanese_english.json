@@ -86,6 +86,46 @@
         "difficulty": "medium",
         "example": "No, I don't want",
         "exampleTranslation": "いいえ、欲しくないです"
+      },
+      {
+        "id": "je_greet_11",
+        "front": "ようこそ",
+        "back": "Welcome",
+        "difficulty": "easy",
+        "example": "Welcome to Japan",
+        "exampleTranslation": "ようこそ日本へ"
+      },
+      {
+        "id": "je_greet_12",
+        "front": "お元気ですか？",
+        "back": "How are you?",
+        "difficulty": "easy",
+        "example": "How have you been recently?",
+        "exampleTranslation": "最近お元気ですか？"
+      },
+      {
+        "id": "je_greet_13",
+        "front": "また後で",
+        "back": "See you later",
+        "difficulty": "medium",
+        "example": "See you later at the meeting",
+        "exampleTranslation": "また後で会議で会いましょう"
+      },
+      {
+        "id": "je_greet_14",
+        "front": "はじめまして",
+        "back": "Nice to meet you",
+        "difficulty": "medium",
+        "example": "Nice to meet you, I'm Tanaka",
+        "exampleTranslation": "はじめまして、田中です"
+      },
+      {
+        "id": "je_greet_15",
+        "front": "気をつけて",
+        "back": "Take care",
+        "difficulty": "hard",
+        "example": "Take care during your trip",
+        "exampleTranslation": "旅行中、気をつけてください"
       }
     ]
   },
@@ -176,6 +216,46 @@
         "difficulty": "medium",
         "example": "My aunt is very kind",
         "exampleTranslation": "叔母はとても優しいです"
+      },
+      {
+        "id": "je_fam_11",
+        "front": "おじさん",
+        "back": "Uncle",
+        "difficulty": "easy",
+        "example": "My uncle lives in Osaka",
+        "exampleTranslation": "おじさんは大阪に住んでいます"
+      },
+      {
+        "id": "je_fam_12",
+        "front": "おばさん",
+        "back": "Aunt",
+        "difficulty": "easy",
+        "example": "My aunt is good at cooking",
+        "exampleTranslation": "おばさんは料理が上手です"
+      },
+      {
+        "id": "je_fam_13",
+        "front": "いとこ",
+        "back": "Cousin",
+        "difficulty": "medium",
+        "example": "I played with my cousin during summer",
+        "exampleTranslation": "夏休みにいとこと遊びました"
+      },
+      {
+        "id": "je_fam_14",
+        "front": "孫",
+        "back": "Grandchild",
+        "difficulty": "medium",
+        "example": "Grandmother looks forward to seeing her grandchild",
+        "exampleTranslation": "祖母は孫に会うのが楽しみです"
+      },
+      {
+        "id": "je_fam_15",
+        "front": "親戚",
+        "back": "Relatives",
+        "difficulty": "hard",
+        "example": "Relatives gather during New Year",
+        "exampleTranslation": "お正月に親戚が集まります"
       }
     ]
   },
@@ -266,6 +346,46 @@
         "difficulty": "medium",
         "example": "Ten euros, please",
         "exampleTranslation": "10ユーロお願いします"
+      },
+      {
+        "id": "je_num_11",
+        "front": "十一",
+        "back": "Eleven",
+        "difficulty": "easy",
+        "example": "There are eleven players on the team",
+        "exampleTranslation": "チームには十一人の選手がいます"
+      },
+      {
+        "id": "je_num_12",
+        "front": "二十",
+        "back": "Twenty",
+        "difficulty": "easy",
+        "example": "She is twenty years old",
+        "exampleTranslation": "彼女は二十歳です"
+      },
+      {
+        "id": "je_num_13",
+        "front": "五十",
+        "back": "Fifty",
+        "difficulty": "medium",
+        "example": "The ticket costs fifty dollars",
+        "exampleTranslation": "切符は五十ドルです"
+      },
+      {
+        "id": "je_num_14",
+        "front": "百",
+        "back": "One hundred",
+        "difficulty": "medium",
+        "example": "This book has one hundred pages",
+        "exampleTranslation": "この本には百ページあります"
+      },
+      {
+        "id": "je_num_15",
+        "front": "千",
+        "back": "One thousand",
+        "difficulty": "hard",
+        "example": "This town has a thousand years of history",
+        "exampleTranslation": "この町は千年の歴史があります"
       }
     ]
   },
@@ -356,6 +476,46 @@
         "difficulty": "medium",
         "example": "The elephant is gray",
         "exampleTranslation": "象は灰色です"
+      },
+      {
+        "id": "je_col_11",
+        "front": "紫",
+        "back": "Purple",
+        "difficulty": "easy",
+        "example": "She is wearing a purple dress",
+        "exampleTranslation": "紫のドレスを着ています"
+      },
+      {
+        "id": "je_col_12",
+        "front": "ピンク",
+        "back": "Pink",
+        "difficulty": "easy",
+        "example": "Cherry blossoms are pink",
+        "exampleTranslation": "桜の花はピンク色です"
+      },
+      {
+        "id": "je_col_13",
+        "front": "灰色",
+        "back": "Gray",
+        "difficulty": "medium",
+        "example": "The sky is gray today",
+        "exampleTranslation": "今日の空は灰色です"
+      },
+      {
+        "id": "je_col_14",
+        "front": "茶色",
+        "back": "Brown",
+        "difficulty": "medium",
+        "example": "He has brown eyes",
+        "exampleTranslation": "彼は茶色の目をしています"
+      },
+      {
+        "id": "je_col_15",
+        "front": "金色",
+        "back": "Gold",
+        "difficulty": "hard",
+        "example": "The golden sunset is beautiful",
+        "exampleTranslation": "金色の夕日が美しい"
       }
     ]
   },
@@ -446,6 +606,46 @@
         "difficulty": "medium",
         "example": "I eat eggs for breakfast",
         "exampleTranslation": "私は朝食に卵を食べます"
+      },
+      {
+        "id": "je_food_11",
+        "front": "ぶどう",
+        "back": "Grapes",
+        "difficulty": "easy",
+        "example": "Grapes are delicious in autumn",
+        "exampleTranslation": "秋にぶどうが美味しいです"
+      },
+      {
+        "id": "je_food_12",
+        "front": "じゃがいも",
+        "back": "Potato",
+        "difficulty": "easy",
+        "example": "I make curry with potatoes",
+        "exampleTranslation": "じゃがいもでカレーを作ります"
+      },
+      {
+        "id": "je_food_13",
+        "front": "醤油",
+        "back": "Soy sauce",
+        "difficulty": "medium",
+        "example": "I put soy sauce on sushi",
+        "exampleTranslation": "寿司に醤油をつけます"
+      },
+      {
+        "id": "je_food_14",
+        "front": "香辛料",
+        "back": "Spices",
+        "difficulty": "medium",
+        "example": "Many spices are used in this dish",
+        "exampleTranslation": "この料理には多くの香辛料が使われています"
+      },
+      {
+        "id": "je_food_15",
+        "front": "海鮮",
+        "back": "Seafood",
+        "difficulty": "hard",
+        "example": "This restaurant is famous for its seafood",
+        "exampleTranslation": "このレストランは海鮮料理で有名です"
       }
     ]
   },
@@ -536,6 +736,46 @@
         "difficulty": "medium",
         "example": "The bed is soft",
         "exampleTranslation": "ベッドは柔らかいです"
+      },
+      {
+        "id": "je_house_11",
+        "front": "天井",
+        "back": "Ceiling",
+        "difficulty": "easy",
+        "example": "The ceiling is very high",
+        "exampleTranslation": "天井がとても高いです"
+      },
+      {
+        "id": "je_house_12",
+        "front": "階段",
+        "back": "Stairs",
+        "difficulty": "easy",
+        "example": "Please go up the stairs",
+        "exampleTranslation": "階段を上がってください"
+      },
+      {
+        "id": "je_house_13",
+        "front": "バルコニー",
+        "back": "Balcony",
+        "difficulty": "medium",
+        "example": "I eat breakfast on the balcony",
+        "exampleTranslation": "バルコニーで朝ごはんを食べます"
+      },
+      {
+        "id": "je_house_14",
+        "front": "押し入れ",
+        "back": "Closet",
+        "difficulty": "medium",
+        "example": "I put the futon in the closet",
+        "exampleTranslation": "押し入れに布団を入れます"
+      },
+      {
+        "id": "je_house_15",
+        "front": "玄関",
+        "back": "Entrance hall",
+        "difficulty": "hard",
+        "example": "Please take off your shoes at the entrance",
+        "exampleTranslation": "玄関で靴を脱いでください"
       }
     ]
   },
@@ -626,6 +866,46 @@
         "difficulty": "medium",
         "example": "The museum is interesting",
         "exampleTranslation": "博物館は面白いです"
+      },
+      {
+        "id": "je_place_11",
+        "front": "薬局",
+        "back": "Pharmacy",
+        "difficulty": "easy",
+        "example": "The pharmacy is near the station",
+        "exampleTranslation": "薬局は駅の近くにあります"
+      },
+      {
+        "id": "je_place_12",
+        "front": "図書館",
+        "back": "Library",
+        "difficulty": "easy",
+        "example": "I study at the library",
+        "exampleTranslation": "図書館で勉強します"
+      },
+      {
+        "id": "je_place_13",
+        "front": "神社",
+        "back": "Shrine",
+        "difficulty": "medium",
+        "example": "I go to the shrine on New Year's",
+        "exampleTranslation": "お正月に神社へ行きます"
+      },
+      {
+        "id": "je_place_14",
+        "front": "交番",
+        "back": "Police station",
+        "difficulty": "medium",
+        "example": "I asked for directions at the police box",
+        "exampleTranslation": "交番で道を聞きました"
+      },
+      {
+        "id": "je_place_15",
+        "front": "大使館",
+        "back": "Embassy",
+        "difficulty": "hard",
+        "example": "I applied for a visa at the embassy",
+        "exampleTranslation": "大使館でビザを申請しました"
       }
     ]
   },
@@ -716,6 +996,46 @@
         "difficulty": "medium",
         "example": "The coat is warm",
         "exampleTranslation": "コートは暖かいです"
+      },
+      {
+        "id": "je_cloth_11",
+        "front": "マフラー",
+        "back": "Scarf",
+        "difficulty": "easy",
+        "example": "I'm wearing a scarf because it's cold",
+        "exampleTranslation": "寒いのでマフラーをしています"
+      },
+      {
+        "id": "je_cloth_12",
+        "front": "スニーカー",
+        "back": "Sneakers",
+        "difficulty": "easy",
+        "example": "I bought new sneakers",
+        "exampleTranslation": "新しいスニーカーを買いました"
+      },
+      {
+        "id": "je_cloth_13",
+        "front": "スーツ",
+        "back": "Suit",
+        "difficulty": "medium",
+        "example": "I wear a suit for the interview",
+        "exampleTranslation": "面接のためにスーツを着ます"
+      },
+      {
+        "id": "je_cloth_14",
+        "front": "着物",
+        "back": "Kimono",
+        "difficulty": "medium",
+        "example": "I wear a kimono at festivals",
+        "exampleTranslation": "お祭りに着物を着ます"
+      },
+      {
+        "id": "je_cloth_15",
+        "front": "レインコート",
+        "back": "Raincoat",
+        "difficulty": "hard",
+        "example": "You need a raincoat on rainy days",
+        "exampleTranslation": "雨の日はレインコートが必要です"
       }
     ]
   },
@@ -806,6 +1126,46 @@
         "difficulty": "medium",
         "example": "The mechanic repairs cars",
         "exampleTranslation": "整備士が車を修理します"
+      },
+      {
+        "id": "je_work_11",
+        "front": "昇進",
+        "back": "Promotion",
+        "difficulty": "easy",
+        "example": "She got a promotion",
+        "exampleTranslation": "彼女は昇進しました"
+      },
+      {
+        "id": "je_work_12",
+        "front": "会議",
+        "back": "Meeting",
+        "difficulty": "easy",
+        "example": "The meeting starts at nine",
+        "exampleTranslation": "会議は九時に始まります"
+      },
+      {
+        "id": "je_work_13",
+        "front": "締め切り",
+        "back": "Deadline",
+        "difficulty": "medium",
+        "example": "The deadline is next Friday",
+        "exampleTranslation": "締め切りは来週の金曜日です"
+      },
+      {
+        "id": "je_work_14",
+        "front": "履歴書",
+        "back": "Resume",
+        "difficulty": "medium",
+        "example": "Please send your resume by email",
+        "exampleTranslation": "履歴書をメールで送ってください"
+      },
+      {
+        "id": "je_work_15",
+        "front": "退職",
+        "back": "Retirement",
+        "difficulty": "hard",
+        "example": "He plans to retire next year",
+        "exampleTranslation": "来年退職する予定です"
       }
     ]
   },
@@ -896,6 +1256,46 @@
         "difficulty": "medium",
         "example": "I buy a ticket",
         "exampleTranslation": "私は切符を買います"
+      },
+      {
+        "id": "je_trans_11",
+        "front": "ホーム",
+        "back": "Platform",
+        "difficulty": "easy",
+        "example": "The train arrives at platform three",
+        "exampleTranslation": "電車は三番ホームに到着します"
+      },
+      {
+        "id": "je_trans_12",
+        "front": "信号",
+        "back": "Traffic light",
+        "difficulty": "easy",
+        "example": "Turn right at the traffic light",
+        "exampleTranslation": "信号で右に曲がってください"
+      },
+      {
+        "id": "je_trans_13",
+        "front": "ラッシュアワー",
+        "back": "Rush hour",
+        "difficulty": "medium",
+        "example": "Trains during rush hour are crowded",
+        "exampleTranslation": "ラッシュアワーの電車はとても混んでいます"
+      },
+      {
+        "id": "je_trans_14",
+        "front": "運転免許証",
+        "back": "Driver's license",
+        "difficulty": "medium",
+        "example": "I got my driver's license",
+        "exampleTranslation": "運転免許証を取りました"
+      },
+      {
+        "id": "je_trans_15",
+        "front": "新幹線",
+        "back": "Bullet train",
+        "difficulty": "hard",
+        "example": "I go from Tokyo to Osaka by bullet train",
+        "exampleTranslation": "新幹線で東京から大阪まで行きます"
       }
     ]
   },
@@ -986,6 +1386,46 @@
         "difficulty": "medium",
         "example": "My backpack is heavy",
         "exampleTranslation": "私のリュックサックは重いです"
+      },
+      {
+        "id": "je_edu_11",
+        "front": "カリキュラム",
+        "back": "Curriculum",
+        "difficulty": "easy",
+        "example": "The curriculum changed this year",
+        "exampleTranslation": "今年カリキュラムが変わりました"
+      },
+      {
+        "id": "je_edu_12",
+        "front": "講義",
+        "back": "Lecture",
+        "difficulty": "easy",
+        "example": "The professor gives a lecture",
+        "exampleTranslation": "教授が講義をしています"
+      },
+      {
+        "id": "je_edu_13",
+        "front": "奨学金",
+        "back": "Scholarship",
+        "difficulty": "medium",
+        "example": "She received a scholarship",
+        "exampleTranslation": "奨学金を受け取りました"
+      },
+      {
+        "id": "je_edu_14",
+        "front": "論文",
+        "back": "Thesis",
+        "difficulty": "medium",
+        "example": "I am writing my thesis",
+        "exampleTranslation": "卒業論文を書いています"
+      },
+      {
+        "id": "je_edu_15",
+        "front": "卒業",
+        "back": "Graduation",
+        "difficulty": "hard",
+        "example": "The graduation ceremony is in March",
+        "exampleTranslation": "卒業式は三月に行われます"
       }
     ]
   },
@@ -1076,6 +1516,46 @@
         "difficulty": "medium",
         "example": "The moon is full",
         "exampleTranslation": "月は満月です"
+      },
+      {
+        "id": "je_nature_11",
+        "front": "滝",
+        "back": "Waterfall",
+        "difficulty": "easy",
+        "example": "I can hear the sound of the waterfall",
+        "exampleTranslation": "滝の音が聞こえます"
+      },
+      {
+        "id": "je_nature_12",
+        "front": "丘",
+        "back": "Hill",
+        "difficulty": "easy",
+        "example": "There is a house on the hill",
+        "exampleTranslation": "丘の上に家があります"
+      },
+      {
+        "id": "je_nature_13",
+        "front": "洞窟",
+        "back": "Cave",
+        "difficulty": "medium",
+        "example": "We explored the cave",
+        "exampleTranslation": "洞窟を探検しました"
+      },
+      {
+        "id": "je_nature_14",
+        "front": "砂漠",
+        "back": "Desert",
+        "difficulty": "medium",
+        "example": "It rarely rains in the desert",
+        "exampleTranslation": "砂漠ではめったに雨が降りません"
+      },
+      {
+        "id": "je_nature_15",
+        "front": "火山",
+        "back": "Volcano",
+        "difficulty": "hard",
+        "example": "Mount Fuji is a famous volcano",
+        "exampleTranslation": "富士山は有名な火山です"
       }
     ]
   },
@@ -1166,6 +1646,46 @@
         "difficulty": "medium",
         "example": "They are bored",
         "exampleTranslation": "彼らは退屈しています"
+      },
+      {
+        "id": "je_emo_11",
+        "front": "誇り",
+        "back": "Pride",
+        "difficulty": "easy",
+        "example": "I feel pride in my children",
+        "exampleTranslation": "子供たちを誇りに思います"
+      },
+      {
+        "id": "je_emo_12",
+        "front": "不安",
+        "back": "Anxiety",
+        "difficulty": "easy",
+        "example": "I feel anxiety before exams",
+        "exampleTranslation": "試験前に不安を感じます"
+      },
+      {
+        "id": "je_emo_13",
+        "front": "懐かしさ",
+        "back": "Nostalgia",
+        "difficulty": "medium",
+        "example": "I feel nostalgia for my childhood",
+        "exampleTranslation": "子供の頃を思い出すと懐かしさを感じます"
+      },
+      {
+        "id": "je_emo_14",
+        "front": "苛立ち",
+        "back": "Frustration",
+        "difficulty": "medium",
+        "example": "His frustration was obvious",
+        "exampleTranslation": "彼の苛立ちは明らかでした"
+      },
+      {
+        "id": "je_emo_15",
+        "front": "感謝",
+        "back": "Gratitude",
+        "difficulty": "hard",
+        "example": "I would like to express my gratitude",
+        "exampleTranslation": "感謝の気持ちを伝えたいです"
       }
     ]
   },
@@ -1256,6 +1776,46 @@
         "difficulty": "medium",
         "example": "Next week",
         "exampleTranslation": "来週"
+      },
+      {
+        "id": "je_time_11",
+        "front": "夜明け",
+        "back": "Dawn",
+        "difficulty": "easy",
+        "example": "I wake up at dawn",
+        "exampleTranslation": "夜明けに起きます"
+      },
+      {
+        "id": "je_time_12",
+        "front": "日没",
+        "back": "Sunset",
+        "difficulty": "easy",
+        "example": "The sunset is very beautiful",
+        "exampleTranslation": "日没がとても美しいです"
+      },
+      {
+        "id": "je_time_13",
+        "front": "十五分",
+        "back": "Quarter hour",
+        "difficulty": "medium",
+        "example": "I'll arrive in fifteen minutes",
+        "exampleTranslation": "十五分後に着きます"
+      },
+      {
+        "id": "je_time_14",
+        "front": "真夜中",
+        "back": "Midnight",
+        "difficulty": "medium",
+        "example": "The store closes at midnight",
+        "exampleTranslation": "真夜中にお店が閉まります"
+      },
+      {
+        "id": "je_time_15",
+        "front": "十年",
+        "back": "Decade",
+        "difficulty": "hard",
+        "example": "Many things changed in this decade",
+        "exampleTranslation": "この十年で多くのことが変わりました"
       }
     ]
   },
@@ -1346,6 +1906,46 @@
         "difficulty": "medium",
         "example": "You can hear thunder",
         "exampleTranslation": "雷鳴が聞こえます"
+      },
+      {
+        "id": "je_weather_11",
+        "front": "霧",
+        "back": "Fog",
+        "difficulty": "easy",
+        "example": "There is fog this morning",
+        "exampleTranslation": "今朝は霧が出ています"
+      },
+      {
+        "id": "je_weather_12",
+        "front": "雷雨",
+        "back": "Thunderstorm",
+        "difficulty": "easy",
+        "example": "A thunderstorm is forecast tonight",
+        "exampleTranslation": "今夜は雷雨の予報です"
+      },
+      {
+        "id": "je_weather_13",
+        "front": "猛暑",
+        "back": "Heat wave",
+        "difficulty": "medium",
+        "example": "The heat wave has lasted a week",
+        "exampleTranslation": "猛暑が一週間続いています"
+      },
+      {
+        "id": "je_weather_14",
+        "front": "霜",
+        "back": "Frost",
+        "difficulty": "medium",
+        "example": "There is frost on the windows",
+        "exampleTranslation": "窓に霜がついています"
+      },
+      {
+        "id": "je_weather_15",
+        "front": "台風",
+        "back": "Typhoon",
+        "difficulty": "hard",
+        "example": "A typhoon is approaching",
+        "exampleTranslation": "台風が近づいています"
       }
     ]
   },
@@ -1436,6 +2036,46 @@
         "difficulty": "medium",
         "example": "My heart beats fast",
         "exampleTranslation": "心臓が速く鼓動しています"
+      },
+      {
+        "id": "je_body_11",
+        "front": "肩",
+        "back": "Shoulder",
+        "difficulty": "easy",
+        "example": "My shoulder hurts",
+        "exampleTranslation": "肩が痛いです"
+      },
+      {
+        "id": "je_body_12",
+        "front": "手首",
+        "back": "Wrist",
+        "difficulty": "easy",
+        "example": "I wear a watch on my wrist",
+        "exampleTranslation": "手首に時計をしています"
+      },
+      {
+        "id": "je_body_13",
+        "front": "足首",
+        "back": "Ankle",
+        "difficulty": "medium",
+        "example": "I twisted my ankle",
+        "exampleTranslation": "足首をひねりました"
+      },
+      {
+        "id": "je_body_14",
+        "front": "額",
+        "back": "Forehead",
+        "difficulty": "medium",
+        "example": "I'm sweating on my forehead",
+        "exampleTranslation": "額に汗をかいています"
+      },
+      {
+        "id": "je_body_15",
+        "front": "喉",
+        "back": "Throat",
+        "difficulty": "hard",
+        "example": "My throat has been hurting since yesterday",
+        "exampleTranslation": "昨日から喉が痛いです"
       }
     ]
   },
@@ -1526,6 +2166,46 @@
         "difficulty": "medium",
         "example": "I think of you",
         "exampleTranslation": "あなたのことを考えています"
+      },
+      {
+        "id": "je_act_11",
+        "front": "ハイキング",
+        "back": "Hiking",
+        "difficulty": "easy",
+        "example": "I go hiking on weekends",
+        "exampleTranslation": "週末にハイキングに行きます"
+      },
+      {
+        "id": "je_act_12",
+        "front": "お絵描き",
+        "back": "Drawing",
+        "difficulty": "easy",
+        "example": "Drawing is my hobby",
+        "exampleTranslation": "お絵描きが趣味です"
+      },
+      {
+        "id": "je_act_13",
+        "front": "園芸",
+        "back": "Gardening",
+        "difficulty": "medium",
+        "example": "Gardening is relaxing",
+        "exampleTranslation": "園芸はリラックスできます"
+      },
+      {
+        "id": "je_act_14",
+        "front": "書道",
+        "back": "Calligraphy",
+        "difficulty": "medium",
+        "example": "I am learning Japanese calligraphy",
+        "exampleTranslation": "日本の書道を習っています"
+      },
+      {
+        "id": "je_act_15",
+        "front": "スキー",
+        "back": "Skiing",
+        "difficulty": "hard",
+        "example": "We go skiing in Hokkaido",
+        "exampleTranslation": "北海道でスキーをします"
       }
     ]
   },
@@ -1616,6 +2296,46 @@
         "difficulty": "medium",
         "example": "I remember the lesson",
         "exampleTranslation": "レッスンを覚えています"
+      },
+      {
+        "id": "je_learn_11",
+        "front": "分析",
+        "back": "Analysis",
+        "difficulty": "easy",
+        "example": "Data analysis takes time",
+        "exampleTranslation": "データの分析に時間がかかります"
+      },
+      {
+        "id": "je_learn_12",
+        "front": "仮説",
+        "back": "Hypothesis",
+        "difficulty": "easy",
+        "example": "The hypothesis needs to be verified",
+        "exampleTranslation": "仮説を検証する必要があります"
+      },
+      {
+        "id": "je_learn_13",
+        "front": "結論",
+        "back": "Conclusion",
+        "difficulty": "medium",
+        "example": "What is your conclusion?",
+        "exampleTranslation": "あなたの結論は何ですか？"
+      },
+      {
+        "id": "je_learn_14",
+        "front": "参考文献",
+        "back": "Reference",
+        "difficulty": "medium",
+        "example": "This book is an excellent reference",
+        "exampleTranslation": "この本は優れた参考文献です"
+      },
+      {
+        "id": "je_learn_15",
+        "front": "方法論",
+        "back": "Methodology",
+        "difficulty": "hard",
+        "example": "The research methodology is rigorous",
+        "exampleTranslation": "研究の方法論は厳密です"
       }
     ]
   },
@@ -1706,6 +2426,46 @@
         "difficulty": "medium",
         "example": "Our coach is excellent",
         "exampleTranslation": "私たちのコーチは素晴らしいです"
+      },
+      {
+        "id": "je_sport_11",
+        "front": "柔道",
+        "back": "Judo",
+        "difficulty": "easy",
+        "example": "Judo is a Japanese martial art",
+        "exampleTranslation": "柔道は日本の武道です"
+      },
+      {
+        "id": "je_sport_12",
+        "front": "水泳",
+        "back": "Swimming",
+        "difficulty": "easy",
+        "example": "Swimming is good for health",
+        "exampleTranslation": "水泳は健康に良いです"
+      },
+      {
+        "id": "je_sport_13",
+        "front": "審判",
+        "back": "Referee",
+        "difficulty": "medium",
+        "example": "The referee announced the end of the match",
+        "exampleTranslation": "審判が試合の終了を告げました"
+      },
+      {
+        "id": "je_sport_14",
+        "front": "選手権",
+        "back": "Championship",
+        "difficulty": "medium",
+        "example": "The team won the championship",
+        "exampleTranslation": "チームは選手権で優勝しました"
+      },
+      {
+        "id": "je_sport_15",
+        "front": "相撲",
+        "back": "Sumo wrestling",
+        "difficulty": "hard",
+        "example": "Sumo is a traditional Japanese sport",
+        "exampleTranslation": "相撲は日本の伝統的なスポーツです"
       }
     ]
   },
@@ -1796,6 +2556,46 @@
         "difficulty": "medium",
         "example": "I'm buying a souvenir",
         "exampleTranslation": "お土産を買っています"
+      },
+      {
+        "id": "je_travel_11",
+        "front": "パスポート",
+        "back": "Passport",
+        "difficulty": "easy",
+        "example": "Don't forget your passport",
+        "exampleTranslation": "パスポートを忘れないでください"
+      },
+      {
+        "id": "je_travel_12",
+        "front": "予約",
+        "back": "Reservation",
+        "difficulty": "easy",
+        "example": "I made a hotel reservation",
+        "exampleTranslation": "ホテルの予約をしました"
+      },
+      {
+        "id": "je_travel_13",
+        "front": "お土産",
+        "back": "Souvenir",
+        "difficulty": "medium",
+        "example": "I bought souvenirs for my friends",
+        "exampleTranslation": "友達にお土産を買いました"
+      },
+      {
+        "id": "je_travel_14",
+        "front": "ビザ",
+        "back": "Visa",
+        "difficulty": "medium",
+        "example": "You need a visa for this country",
+        "exampleTranslation": "この国にはビザが必要です"
+      },
+      {
+        "id": "je_travel_15",
+        "front": "観光名所",
+        "back": "Tourist attraction",
+        "difficulty": "hard",
+        "example": "Kyoto has many tourist attractions",
+        "exampleTranslation": "京都には多くの観光名所があります"
       }
     ]
   },
@@ -1886,6 +2686,46 @@
         "difficulty": "medium",
         "example": "Reading is my hobby",
         "exampleTranslation": "読書は私の趣味です"
+      },
+      {
+        "id": "je_ent_11",
+        "front": "アニメ",
+        "back": "Anime",
+        "difficulty": "easy",
+        "example": "Japanese anime is popular worldwide",
+        "exampleTranslation": "日本のアニメは世界中で人気です"
+      },
+      {
+        "id": "je_ent_12",
+        "front": "コンサート",
+        "back": "Concert",
+        "difficulty": "easy",
+        "example": "The concert tickets are sold out",
+        "exampleTranslation": "コンサートのチケットが売り切れました"
+      },
+      {
+        "id": "je_ent_13",
+        "front": "美術展",
+        "back": "Art exhibition",
+        "difficulty": "medium",
+        "example": "The art exhibition opens tomorrow",
+        "exampleTranslation": "美術展が明日開きます"
+      },
+      {
+        "id": "je_ent_14",
+        "front": "ビデオゲーム",
+        "back": "Video game",
+        "difficulty": "medium",
+        "example": "This video game is very popular",
+        "exampleTranslation": "このビデオゲームはとても人気があります"
+      },
+      {
+        "id": "je_ent_15",
+        "front": "漫画",
+        "back": "Manga",
+        "difficulty": "hard",
+        "example": "This manga has over one hundred volumes",
+        "exampleTranslation": "この漫画は百巻以上あります"
       }
     ]
   }

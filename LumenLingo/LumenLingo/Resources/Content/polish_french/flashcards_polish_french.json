@@ -86,6 +86,46 @@
         "difficulty": "medium",
         "example": "Non, je ne veux pas",
         "exampleTranslation": "Nie, nie chcę"
+      },
+      {
+        "id": "pf_greet_11",
+        "front": "Przepraszam",
+        "back": "Excusez-moi",
+        "difficulty": "easy",
+        "example": "Excusez-moi, où est la gare ?",
+        "exampleTranslation": "Przepraszam, gdzie jest dworzec?"
+      },
+      {
+        "id": "pf_greet_12",
+        "front": "Miło mi",
+        "back": "Enchanté",
+        "difficulty": "easy",
+        "example": "Enchanté de vous rencontrer.",
+        "exampleTranslation": "Miło mi cię poznać."
+      },
+      {
+        "id": "pf_greet_13",
+        "front": "Jak się masz?",
+        "back": "Comment allez-vous ?",
+        "difficulty": "medium",
+        "example": "Comment allez-vous aujourd'hui ?",
+        "exampleTranslation": "Jak się masz dzisiaj?"
+      },
+      {
+        "id": "pf_greet_14",
+        "front": "Witaj ponownie",
+        "back": "Bienvenue à nouveau",
+        "difficulty": "medium",
+        "example": "Bienvenue à nouveau, mon ami.",
+        "exampleTranslation": "Witaj ponownie, przyjacielu."
+      },
+      {
+        "id": "pf_greet_15",
+        "front": "Tęskniłem za tobą",
+        "back": "Tu m'as manqué",
+        "difficulty": "hard",
+        "example": "Tu m'as beaucoup manqué.",
+        "exampleTranslation": "Bardzo za tobą tęskniłem."
       }
     ]
   },
@@ -176,6 +216,46 @@
         "difficulty": "medium",
         "example": "Ma tante est très gentille",
         "exampleTranslation": "Moja ciocia jest bardzo miła"
+      },
+      {
+        "id": "pf_fam_11",
+        "front": "Dziadek",
+        "back": "Grand-père",
+        "difficulty": "easy",
+        "example": "Mon grand-père est sage.",
+        "exampleTranslation": "Mój dziadek jest mądry."
+      },
+      {
+        "id": "pf_fam_12",
+        "front": "Babcia",
+        "back": "Grand-mère",
+        "difficulty": "easy",
+        "example": "Ma grand-mère cuisine bien.",
+        "exampleTranslation": "Moja babcia dobrze gotuje."
+      },
+      {
+        "id": "pf_fam_13",
+        "front": "Wujek",
+        "back": "Oncle",
+        "difficulty": "medium",
+        "example": "Mon oncle habite à Paris.",
+        "exampleTranslation": "Mój wujek mieszka w Paryżu."
+      },
+      {
+        "id": "pf_fam_14",
+        "front": "Ciotka",
+        "back": "Tante",
+        "difficulty": "medium",
+        "example": "Ma tante est médecin.",
+        "exampleTranslation": "Moja ciotka jest lekarką."
+      },
+      {
+        "id": "pf_fam_15",
+        "front": "Kuzyn",
+        "back": "Cousin",
+        "difficulty": "hard",
+        "example": "Mon cousin étudie la médecine.",
+        "exampleTranslation": "Mój kuzyn studiuje medycynę."
       }
     ]
   },
@@ -266,6 +346,46 @@
         "difficulty": "medium",
         "example": "Dix euros, s'il vous plaît",
         "exampleTranslation": "Dziesięć euro, proszę"
+      },
+      {
+        "id": "pf_num_11",
+        "front": "Dwadzieścia",
+        "back": "Vingt",
+        "difficulty": "easy",
+        "example": "J'ai vingt livres.",
+        "exampleTranslation": "Mam dwadzieścia książek."
+      },
+      {
+        "id": "pf_num_12",
+        "front": "Trzydzieści",
+        "back": "Trente",
+        "difficulty": "easy",
+        "example": "Il a trente ans.",
+        "exampleTranslation": "Ma trzydzieści lat."
+      },
+      {
+        "id": "pf_num_13",
+        "front": "Pięćdziesiąt",
+        "back": "Cinquante",
+        "difficulty": "medium",
+        "example": "Ça coûte cinquante euros.",
+        "exampleTranslation": "To kosztuje pięćdziesiąt euro."
+      },
+      {
+        "id": "pf_num_14",
+        "front": "Sto",
+        "back": "Cent",
+        "difficulty": "medium",
+        "example": "Il y a cent élèves dans la classe.",
+        "exampleTranslation": "W klasie jest stu uczniów."
+      },
+      {
+        "id": "pf_num_15",
+        "front": "Tysiąc",
+        "back": "Mille",
+        "difficulty": "hard",
+        "example": "J'ai lu mille pages.",
+        "exampleTranslation": "Przeczytałem tysiąc stron."
       }
     ]
   },
@@ -356,6 +476,46 @@
         "difficulty": "medium",
         "example": "L'éléphant est gris",
         "exampleTranslation": "Słoń jest szary"
+      },
+      {
+        "id": "pf_col_11",
+        "front": "Pomarańczowy",
+        "back": "Orange",
+        "difficulty": "easy",
+        "example": "Cette chemise est orange.",
+        "exampleTranslation": "Ta koszulka jest pomarańczowa."
+      },
+      {
+        "id": "pf_col_12",
+        "front": "Różowy",
+        "back": "Rose",
+        "difficulty": "easy",
+        "example": "La rose est rose.",
+        "exampleTranslation": "Róża jest różowa."
+      },
+      {
+        "id": "pf_col_13",
+        "front": "Szary",
+        "back": "Gris",
+        "difficulty": "medium",
+        "example": "Le ciel est gris aujourd'hui.",
+        "exampleTranslation": "Niebo jest dziś szare."
+      },
+      {
+        "id": "pf_col_14",
+        "front": "Fioletowy",
+        "back": "Violet",
+        "difficulty": "medium",
+        "example": "J'aime la couleur violette.",
+        "exampleTranslation": "Lubię kolor fioletowy."
+      },
+      {
+        "id": "pf_col_15",
+        "front": "Złoty",
+        "back": "Doré",
+        "difficulty": "hard",
+        "example": "La bague est dorée.",
+        "exampleTranslation": "Pierścionek jest złoty."
       }
     ]
   },
@@ -446,6 +606,46 @@
         "difficulty": "medium",
         "example": "Je mange des œufs au petit déjeuner",
         "exampleTranslation": "Jem jajka na śniadanie"
+      },
+      {
+        "id": "pf_food_11",
+        "front": "Winogrona",
+        "back": "Raisins",
+        "difficulty": "easy",
+        "example": "Les raisins sont délicieux.",
+        "exampleTranslation": "Winogrona są pyszne."
+      },
+      {
+        "id": "pf_food_12",
+        "front": "Kurczak",
+        "back": "Poulet",
+        "difficulty": "easy",
+        "example": "J'aime manger du poulet.",
+        "exampleTranslation": "Lubię jeść kurczaka."
+      },
+      {
+        "id": "pf_food_13",
+        "front": "Makaron",
+        "back": "Pâtes",
+        "difficulty": "medium",
+        "example": "Les pâtes sont prêtes.",
+        "exampleTranslation": "Makaron jest gotowy."
+      },
+      {
+        "id": "pf_food_14",
+        "front": "Przyprawa",
+        "back": "Épice",
+        "difficulty": "medium",
+        "example": "Ajoutez un peu d'épice.",
+        "exampleTranslation": "Dodaj trochę przyprawy."
+      },
+      {
+        "id": "pf_food_15",
+        "front": "Deser",
+        "back": "Dessert",
+        "difficulty": "hard",
+        "example": "Voulez-vous un dessert ?",
+        "exampleTranslation": "Chcesz deser?"
       }
     ]
   },
@@ -536,6 +736,46 @@
         "difficulty": "medium",
         "example": "Le lit est doux",
         "exampleTranslation": "Łóżko jest miękkie"
+      },
+      {
+        "id": "pf_house_11",
+        "front": "Sufit",
+        "back": "Plafond",
+        "difficulty": "easy",
+        "example": "Le plafond est très haut.",
+        "exampleTranslation": "Sufit jest bardzo wysoki."
+      },
+      {
+        "id": "pf_house_12",
+        "front": "Schody",
+        "back": "Escalier",
+        "difficulty": "easy",
+        "example": "L'escalier est étroit.",
+        "exampleTranslation": "Schody są wąskie."
+      },
+      {
+        "id": "pf_house_13",
+        "front": "Piwnica",
+        "back": "Cave",
+        "difficulty": "medium",
+        "example": "La cave est fraîche en été.",
+        "exampleTranslation": "Piwnica jest chłodna latem."
+      },
+      {
+        "id": "pf_house_14",
+        "front": "Balkon",
+        "back": "Balcon",
+        "difficulty": "medium",
+        "example": "Le balcon donne sur le jardin.",
+        "exampleTranslation": "Balkon wychodzi na ogród."
+      },
+      {
+        "id": "pf_house_15",
+        "front": "Kominek",
+        "back": "Cheminée",
+        "difficulty": "hard",
+        "example": "La cheminée réchauffe la maison.",
+        "exampleTranslation": "Kominek ogrzewa dom."
       }
     ]
   },
@@ -626,6 +866,46 @@
         "difficulty": "medium",
         "example": "Le musée est intéressant",
         "exampleTranslation": "Muzeum jest interesujące"
+      },
+      {
+        "id": "pf_place_11",
+        "front": "Apteka",
+        "back": "Pharmacie",
+        "difficulty": "easy",
+        "example": "La pharmacie est tout près.",
+        "exampleTranslation": "Apteka jest blisko."
+      },
+      {
+        "id": "pf_place_12",
+        "front": "Stadion",
+        "back": "Stade",
+        "difficulty": "easy",
+        "example": "Le stade est très grand.",
+        "exampleTranslation": "Stadion jest bardzo duży."
+      },
+      {
+        "id": "pf_place_13",
+        "front": "Muzeum",
+        "back": "Musée",
+        "difficulty": "medium",
+        "example": "J'ai visité le musée hier.",
+        "exampleTranslation": "Odwiedziłem muzeum wczoraj."
+      },
+      {
+        "id": "pf_place_14",
+        "front": "Katedra",
+        "back": "Cathédrale",
+        "difficulty": "medium",
+        "example": "La cathédrale est magnifique.",
+        "exampleTranslation": "Katedra jest wspaniała."
+      },
+      {
+        "id": "pf_place_15",
+        "front": "Ambasada",
+        "back": "Ambassade",
+        "difficulty": "hard",
+        "example": "L'ambassade est ouverte le matin.",
+        "exampleTranslation": "Ambasada jest otwarta rano."
       }
     ]
   },
@@ -716,6 +996,46 @@
         "difficulty": "medium",
         "example": "Le manteau est chaud",
         "exampleTranslation": "Płaszcz jest ciepły"
+      },
+      {
+        "id": "pf_cloth_11",
+        "front": "Rękawiczki",
+        "back": "Gants",
+        "difficulty": "easy",
+        "example": "Les gants protègent vos mains.",
+        "exampleTranslation": "Rękawiczki chronią twoje ręce."
+      },
+      {
+        "id": "pf_cloth_12",
+        "front": "Szalik",
+        "back": "Écharpe",
+        "difficulty": "easy",
+        "example": "L'écharpe est chaude.",
+        "exampleTranslation": "Szalik jest ciepły."
+      },
+      {
+        "id": "pf_cloth_13",
+        "front": "Pasek",
+        "back": "Ceinture",
+        "difficulty": "medium",
+        "example": "La ceinture est en cuir.",
+        "exampleTranslation": "Pasek jest skórzany."
+      },
+      {
+        "id": "pf_cloth_14",
+        "front": "Garnitur",
+        "back": "Costume",
+        "difficulty": "medium",
+        "example": "Le costume est très élégant.",
+        "exampleTranslation": "Garnitur jest bardzo elegancki."
+      },
+      {
+        "id": "pf_cloth_15",
+        "front": "Sweter",
+        "back": "Pull",
+        "difficulty": "hard",
+        "example": "Le pull est confortable.",
+        "exampleTranslation": "Sweter jest wygodny."
       }
     ]
   },
@@ -806,6 +1126,46 @@
         "difficulty": "medium",
         "example": "Le mécanicien répare les voitures",
         "exampleTranslation": "Mechanik naprawia samochody"
+      },
+      {
+        "id": "pf_work_11",
+        "front": "Spotkanie",
+        "back": "Réunion",
+        "difficulty": "easy",
+        "example": "La réunion est à trois heures.",
+        "exampleTranslation": "Spotkanie jest o trzeciej."
+      },
+      {
+        "id": "pf_work_12",
+        "front": "Pensja",
+        "back": "Salaire",
+        "difficulty": "easy",
+        "example": "Le salaire est bon.",
+        "exampleTranslation": "Pensja jest dobra."
+      },
+      {
+        "id": "pf_work_13",
+        "front": "Kolega z pracy",
+        "back": "Collègue",
+        "difficulty": "medium",
+        "example": "Mon collègue est sympathique.",
+        "exampleTranslation": "Kolega z pracy jest sympatyczny."
+      },
+      {
+        "id": "pf_work_14",
+        "front": "Awans",
+        "back": "Promotion",
+        "difficulty": "medium",
+        "example": "J'ai obtenu une promotion.",
+        "exampleTranslation": "Dostałem awans."
+      },
+      {
+        "id": "pf_work_15",
+        "front": "Termin",
+        "back": "Date limite",
+        "difficulty": "hard",
+        "example": "La date limite est demain.",
+        "exampleTranslation": "Termin jest jutro."
       }
     ]
   },
@@ -896,6 +1256,46 @@
         "difficulty": "medium",
         "example": "J'achète un billet",
         "exampleTranslation": "Kupuję bilet"
+      },
+      {
+        "id": "pf_trans_11",
+        "front": "Metro",
+        "back": "Métro",
+        "difficulty": "easy",
+        "example": "Le métro est rapide.",
+        "exampleTranslation": "Metro jest szybkie."
+      },
+      {
+        "id": "pf_trans_12",
+        "front": "Taksówka",
+        "back": "Taxi",
+        "difficulty": "easy",
+        "example": "Le taxi est dehors.",
+        "exampleTranslation": "Taksówka jest na zewnątrz."
+      },
+      {
+        "id": "pf_trans_13",
+        "front": "Bilet",
+        "back": "Billet",
+        "difficulty": "medium",
+        "example": "J'ai acheté un billet.",
+        "exampleTranslation": "Kupiłem bilet."
+      },
+      {
+        "id": "pf_trans_14",
+        "front": "Kierowca",
+        "back": "Chauffeur",
+        "difficulty": "medium",
+        "example": "Le chauffeur est professionnel.",
+        "exampleTranslation": "Kierowca jest profesjonalny."
+      },
+      {
+        "id": "pf_trans_15",
+        "front": "Skrzyżowanie",
+        "back": "Carrefour",
+        "difficulty": "hard",
+        "example": "Tournez à droite au carrefour.",
+        "exampleTranslation": "Skręć w prawo na skrzyżowaniu."
       }
     ]
   },
@@ -986,6 +1386,46 @@
         "difficulty": "medium",
         "example": "Mon sac à dos est lourd",
         "exampleTranslation": "Mój plecak jest ciężki"
+      },
+      {
+        "id": "pf_edu_11",
+        "front": "Wykład",
+        "back": "Conférence",
+        "difficulty": "easy",
+        "example": "La conférence est intéressante.",
+        "exampleTranslation": "Wykład jest ciekawy."
+      },
+      {
+        "id": "pf_edu_12",
+        "front": "Notatki",
+        "back": "Notes",
+        "difficulty": "easy",
+        "example": "Je prends des notes.",
+        "exampleTranslation": "Robię notatki."
+      },
+      {
+        "id": "pf_edu_13",
+        "front": "Biblioteka",
+        "back": "Bibliothèque",
+        "difficulty": "medium",
+        "example": "La bibliothèque est calme.",
+        "exampleTranslation": "Biblioteka jest cicha."
+      },
+      {
+        "id": "pf_edu_14",
+        "front": "Dyplom",
+        "back": "Diplôme",
+        "difficulty": "medium",
+        "example": "J'ai obtenu mon diplôme.",
+        "exampleTranslation": "Zdobyłem dyplom."
+      },
+      {
+        "id": "pf_edu_15",
+        "front": "Stypendium",
+        "back": "Bourse",
+        "difficulty": "hard",
+        "example": "J'ai obtenu une bourse.",
+        "exampleTranslation": "Dostałem stypendium."
       }
     ]
   },
@@ -1076,6 +1516,46 @@
         "difficulty": "medium",
         "example": "La lune est pleine",
         "exampleTranslation": "Księżyc jest w pełni"
+      },
+      {
+        "id": "pf_nature_11",
+        "front": "Wodospad",
+        "back": "Cascade",
+        "difficulty": "easy",
+        "example": "La cascade est belle.",
+        "exampleTranslation": "Wodospad jest piękny."
+      },
+      {
+        "id": "pf_nature_12",
+        "front": "Pustynia",
+        "back": "Désert",
+        "difficulty": "easy",
+        "example": "Le désert est vaste.",
+        "exampleTranslation": "Pustynia jest rozległa."
+      },
+      {
+        "id": "pf_nature_13",
+        "front": "Dolina",
+        "back": "Vallée",
+        "difficulty": "medium",
+        "example": "La vallée est verte.",
+        "exampleTranslation": "Dolina jest zielona."
+      },
+      {
+        "id": "pf_nature_14",
+        "front": "Jaskinia",
+        "back": "Grotte",
+        "difficulty": "medium",
+        "example": "La grotte est sombre.",
+        "exampleTranslation": "Jaskinia jest ciemna."
+      },
+      {
+        "id": "pf_nature_15",
+        "front": "Wulkan",
+        "back": "Volcan",
+        "difficulty": "hard",
+        "example": "Le volcan est actif.",
+        "exampleTranslation": "Wulkan jest aktywny."
       }
     ]
   },
@@ -1166,6 +1646,46 @@
         "difficulty": "medium",
         "example": "Ils sont ennuyés",
         "exampleTranslation": "Są znudzeni"
+      },
+      {
+        "id": "pf_emo_11",
+        "front": "Dumny",
+        "back": "Fier",
+        "difficulty": "easy",
+        "example": "Je suis fier de toi.",
+        "exampleTranslation": "Jestem z ciebie dumny."
+      },
+      {
+        "id": "pf_emo_12",
+        "front": "Zaskoczony",
+        "back": "Surpris",
+        "difficulty": "easy",
+        "example": "Je suis surpris par le résultat.",
+        "exampleTranslation": "Jestem zaskoczony wynikiem."
+      },
+      {
+        "id": "pf_emo_13",
+        "front": "Zazdrosny",
+        "back": "Jaloux",
+        "difficulty": "medium",
+        "example": "Ne sois pas jaloux.",
+        "exampleTranslation": "Nie bądź zazdrosny."
+      },
+      {
+        "id": "pf_emo_14",
+        "front": "Wdzięczny",
+        "back": "Reconnaissant",
+        "difficulty": "medium",
+        "example": "Je suis reconnaissant pour ton aide.",
+        "exampleTranslation": "Jestem wdzięczny za twoją pomoc."
+      },
+      {
+        "id": "pf_emo_15",
+        "front": "Rozczarowany",
+        "back": "Déçu",
+        "difficulty": "hard",
+        "example": "Je suis déçu des résultats.",
+        "exampleTranslation": "Jestem rozczarowany wynikami."
       }
     ]
   },
@@ -1256,6 +1776,46 @@
         "difficulty": "medium",
         "example": "La semaine prochaine",
         "exampleTranslation": "Następny tydzień"
+      },
+      {
+        "id": "pf_time_11",
+        "front": "Świt",
+        "back": "Aube",
+        "difficulty": "easy",
+        "example": "L'aube est belle.",
+        "exampleTranslation": "Świt jest piękny."
+      },
+      {
+        "id": "pf_time_12",
+        "front": "Zmierzch",
+        "back": "Crépuscule",
+        "difficulty": "easy",
+        "example": "Le crépuscule est calme.",
+        "exampleTranslation": "Zmierzch jest spokojny."
+      },
+      {
+        "id": "pf_time_13",
+        "front": "Kwartał",
+        "back": "Trimestre",
+        "difficulty": "medium",
+        "example": "Il reste un trimestre.",
+        "exampleTranslation": "Pozostał jeden kwartał."
+      },
+      {
+        "id": "pf_time_14",
+        "front": "Dekada",
+        "back": "Décennie",
+        "difficulty": "medium",
+        "example": "J'ai vécu ici une décennie.",
+        "exampleTranslation": "Mieszkałem tu dekadę."
+      },
+      {
+        "id": "pf_time_15",
+        "front": "Stulecie",
+        "back": "Siècle",
+        "difficulty": "hard",
+        "example": "Ce bâtiment a été construit il y a un siècle.",
+        "exampleTranslation": "Ten budynek zbudowano sto lat temu."
       }
     ]
   },
@@ -1346,6 +1906,46 @@
         "difficulty": "medium",
         "example": "On entend le tonnerre",
         "exampleTranslation": "Słychać grzmot"
+      },
+      {
+        "id": "pf_weather_11",
+        "front": "Grad",
+        "back": "Grêle",
+        "difficulty": "easy",
+        "example": "La grêle est tombée fort.",
+        "exampleTranslation": "Grad padał mocno."
+      },
+      {
+        "id": "pf_weather_12",
+        "front": "Mgła",
+        "back": "Brouillard",
+        "difficulty": "easy",
+        "example": "Le brouillard est dense.",
+        "exampleTranslation": "Mgła jest gęsta."
+      },
+      {
+        "id": "pf_weather_13",
+        "front": "Tęcza",
+        "back": "Arc-en-ciel",
+        "difficulty": "medium",
+        "example": "J'ai vu un arc-en-ciel.",
+        "exampleTranslation": "Widziałem tęczę."
+      },
+      {
+        "id": "pf_weather_14",
+        "front": "Susza",
+        "back": "Sécheresse",
+        "difficulty": "medium",
+        "example": "La sécheresse affecte les récoltes.",
+        "exampleTranslation": "Susza wpływa na uprawy."
+      },
+      {
+        "id": "pf_weather_15",
+        "front": "Huragan",
+        "back": "Ouragan",
+        "difficulty": "hard",
+        "example": "L'ouragan a détruit des maisons.",
+        "exampleTranslation": "Huragan zniszczył domy."
       }
     ]
   },
@@ -1436,6 +2036,46 @@
         "difficulty": "medium",
         "example": "Mon cœur bat vite",
         "exampleTranslation": "Moje serce bije szybko"
+      },
+      {
+        "id": "pf_body_11",
+        "front": "Łokieć",
+        "back": "Coude",
+        "difficulty": "easy",
+        "example": "Je me suis cogné le coude.",
+        "exampleTranslation": "Uderzyłem się w łokieć."
+      },
+      {
+        "id": "pf_body_12",
+        "front": "Kolano",
+        "back": "Genou",
+        "difficulty": "easy",
+        "example": "Mon genou me fait mal.",
+        "exampleTranslation": "Boli mnie kolano."
+      },
+      {
+        "id": "pf_body_13",
+        "front": "Kciuk",
+        "back": "Pouce",
+        "difficulty": "medium",
+        "example": "Le pouce est important pour la prise.",
+        "exampleTranslation": "Kciuk jest ważny dla uchwytu."
+      },
+      {
+        "id": "pf_body_14",
+        "front": "Brew",
+        "back": "Sourcil",
+        "difficulty": "medium",
+        "example": "Il a levé le sourcil.",
+        "exampleTranslation": "Uniósł brew."
+      },
+      {
+        "id": "pf_body_15",
+        "front": "Żebro",
+        "back": "Côte",
+        "difficulty": "hard",
+        "example": "Je me suis cassé une côte.",
+        "exampleTranslation": "Złamałem żebro."
       }
     ]
   },
@@ -1526,6 +2166,46 @@
         "difficulty": "medium",
         "example": "Je pense à toi",
         "exampleTranslation": "Myślę o tobie"
+      },
+      {
+        "id": "pf_act_11",
+        "front": "Wędkowanie",
+        "back": "Pêche",
+        "difficulty": "easy",
+        "example": "J'aime la pêche.",
+        "exampleTranslation": "Lubię wędkowanie."
+      },
+      {
+        "id": "pf_act_12",
+        "front": "Wspinaczka",
+        "back": "Escalade",
+        "difficulty": "easy",
+        "example": "L'escalade est amusante.",
+        "exampleTranslation": "Wspinaczka jest zabawna."
+      },
+      {
+        "id": "pf_act_13",
+        "front": "Ogrodnictwo",
+        "back": "Jardinage",
+        "difficulty": "medium",
+        "example": "Le jardinage est mon passe-temps préféré.",
+        "exampleTranslation": "Ogrodnictwo to moje ulubione hobby."
+      },
+      {
+        "id": "pf_act_14",
+        "front": "Szycie",
+        "back": "Couture",
+        "difficulty": "medium",
+        "example": "J'ai appris la couture.",
+        "exampleTranslation": "Nauczyłem się szycia."
+      },
+      {
+        "id": "pf_act_15",
+        "front": "Rzeźbiarstwo",
+        "back": "Sculpture",
+        "difficulty": "hard",
+        "example": "La sculpture est un art ancien.",
+        "exampleTranslation": "Rzeźbiarstwo to stara sztuka."
       }
     ]
   },
@@ -1616,6 +2296,46 @@
         "difficulty": "medium",
         "example": "Je me souviens de la leçon",
         "exampleTranslation": "Zapamiętałem lekcję"
+      },
+      {
+        "id": "pf_learn_11",
+        "front": "Słownik",
+        "back": "Dictionnaire",
+        "difficulty": "easy",
+        "example": "Le dictionnaire est utile.",
+        "exampleTranslation": "Słownik jest przydatny."
+      },
+      {
+        "id": "pf_learn_12",
+        "front": "Ćwiczenie",
+        "back": "Exercice",
+        "difficulty": "easy",
+        "example": "Terminez l'exercice.",
+        "exampleTranslation": "Ukończ ćwiczenie."
+      },
+      {
+        "id": "pf_learn_13",
+        "front": "Wymowa",
+        "back": "Prononciation",
+        "difficulty": "medium",
+        "example": "La prononciation est très importante.",
+        "exampleTranslation": "Wymowa jest bardzo ważna."
+      },
+      {
+        "id": "pf_learn_14",
+        "front": "Tłumaczenie",
+        "back": "Traduction",
+        "difficulty": "medium",
+        "example": "La traduction est précise.",
+        "exampleTranslation": "Tłumaczenie jest dokładne."
+      },
+      {
+        "id": "pf_learn_15",
+        "front": "Biegłość",
+        "back": "Maîtrise",
+        "difficulty": "hard",
+        "example": "La maîtrise nécessite de la pratique.",
+        "exampleTranslation": "Biegłość wymaga praktyki."
       }
     ]
   },
@@ -1706,6 +2426,46 @@
         "difficulty": "medium",
         "example": "Notre entraîneur est excellent",
         "exampleTranslation": "Nasz trener jest świetny"
+      },
+      {
+        "id": "pf_sport_11",
+        "front": "Sędzia",
+        "back": "Arbitre",
+        "difficulty": "easy",
+        "example": "L'arbitre est juste.",
+        "exampleTranslation": "Sędzia jest sprawiedliwy."
+      },
+      {
+        "id": "pf_sport_12",
+        "front": "Mistrzostwa",
+        "back": "Championnat",
+        "difficulty": "easy",
+        "example": "Le championnat a commencé.",
+        "exampleTranslation": "Mistrzostwa się rozpoczęły."
+      },
+      {
+        "id": "pf_sport_13",
+        "front": "Trener",
+        "back": "Entraîneur",
+        "difficulty": "medium",
+        "example": "L'entraîneur est excellent.",
+        "exampleTranslation": "Trener jest doskonały."
+      },
+      {
+        "id": "pf_sport_14",
+        "front": "Rekord",
+        "back": "Record",
+        "difficulty": "medium",
+        "example": "Il a battu le record.",
+        "exampleTranslation": "Pobił rekord."
+      },
+      {
+        "id": "pf_sport_15",
+        "front": "Szermierka",
+        "back": "Escrime",
+        "difficulty": "hard",
+        "example": "L'escrime est un sport olympique.",
+        "exampleTranslation": "Szermierka jest sportem olimpijskim."
       }
     ]
   },
@@ -1796,6 +2556,46 @@
         "difficulty": "medium",
         "example": "J'achète un souvenir",
         "exampleTranslation": "Kupuję pamiątkę"
+      },
+      {
+        "id": "pf_travel_11",
+        "front": "Paszport",
+        "back": "Passeport",
+        "difficulty": "easy",
+        "example": "Mon passeport est prêt.",
+        "exampleTranslation": "Mój paszport jest gotowy."
+      },
+      {
+        "id": "pf_travel_12",
+        "front": "Wiza",
+        "back": "Visa",
+        "difficulty": "easy",
+        "example": "J'ai besoin d'un visa.",
+        "exampleTranslation": "Potrzebuję wizy."
+      },
+      {
+        "id": "pf_travel_13",
+        "front": "Rezerwacja",
+        "back": "Réservation",
+        "difficulty": "medium",
+        "example": "La réservation est confirmée.",
+        "exampleTranslation": "Rezerwacja jest potwierdzona."
+      },
+      {
+        "id": "pf_travel_14",
+        "front": "Przewodnik",
+        "back": "Guide",
+        "difficulty": "medium",
+        "example": "Le guide est excellent.",
+        "exampleTranslation": "Przewodnik jest doskonały."
+      },
+      {
+        "id": "pf_travel_15",
+        "front": "Ubezpieczenie",
+        "back": "Assurance voyage",
+        "difficulty": "hard",
+        "example": "L'assurance voyage est nécessaire.",
+        "exampleTranslation": "Ubezpieczenie podróżne jest konieczne."
       }
     ]
   },
@@ -1886,6 +2686,46 @@
         "difficulty": "medium",
         "example": "La lecture est mon passe-temps",
         "exampleTranslation": "Czytanie jest moim hobby"
+      },
+      {
+        "id": "pf_ent_11",
+        "front": "Koncert",
+        "back": "Concert",
+        "difficulty": "easy",
+        "example": "Le concert est magnifique.",
+        "exampleTranslation": "Koncert jest wspaniały."
+      },
+      {
+        "id": "pf_ent_12",
+        "front": "Wystawa",
+        "back": "Exposition",
+        "difficulty": "easy",
+        "example": "L'exposition est ouverte.",
+        "exampleTranslation": "Wystawa jest otwarta."
+      },
+      {
+        "id": "pf_ent_13",
+        "front": "Cyrk",
+        "back": "Cirque",
+        "difficulty": "medium",
+        "example": "Le cirque est amusant pour les enfants.",
+        "exampleTranslation": "Cyrk jest zabawny dla dzieci."
+      },
+      {
+        "id": "pf_ent_14",
+        "front": "Festiwal",
+        "back": "Festival",
+        "difficulty": "medium",
+        "example": "Le festival est annuel.",
+        "exampleTranslation": "Festiwal jest coroczny."
+      },
+      {
+        "id": "pf_ent_15",
+        "front": "Komedia",
+        "back": "Comédie",
+        "difficulty": "hard",
+        "example": "La comédie me fait rire.",
+        "exampleTranslation": "Komedia mnie rozśmiesza."
       }
     ]
   }

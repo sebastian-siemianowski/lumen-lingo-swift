@@ -86,6 +86,46 @@
         "difficulty": "medium",
         "example": "Miłego dnia",
         "exampleTranslation": "Гарного дня"
+      },
+      {
+        "id": "up_basics_11",
+        "front": "Вибачте",
+        "back": "Przepraszam",
+        "difficulty": "easy",
+        "example": "Przepraszam, gdzie jest stacja?",
+        "exampleTranslation": "Вибачте, де станція?"
+      },
+      {
+        "id": "up_basics_12",
+        "front": "Приємно познайомитись",
+        "back": "Miło mi",
+        "difficulty": "easy",
+        "example": "Miło mi cię poznać.",
+        "exampleTranslation": "Приємно з вами познайомитись."
+      },
+      {
+        "id": "up_basics_13",
+        "front": "Як справи?",
+        "back": "Jak się masz?",
+        "difficulty": "medium",
+        "example": "Jak się masz dzisiaj?",
+        "exampleTranslation": "Як справи сьогодні?"
+      },
+      {
+        "id": "up_basics_14",
+        "front": "Ласкаво просимо",
+        "back": "Witaj ponownie",
+        "difficulty": "medium",
+        "example": "Witaj ponownie, przyjacielu.",
+        "exampleTranslation": "Ласкаво просимо знову, друже."
+      },
+      {
+        "id": "up_basics_15",
+        "front": "Я за тобою скучив",
+        "back": "Tęskniłem za tobą",
+        "difficulty": "hard",
+        "example": "Bardzo za tobą tęskniłem.",
+        "exampleTranslation": "Я дуже за тобою скучив."
       }
     ]
   },
@@ -176,6 +216,46 @@
         "difficulty": "medium",
         "example": "Moja ciocia jest miła",
         "exampleTranslation": "Моя тітка добра"
+      },
+      {
+        "id": "up_fam_11",
+        "front": "Дідусь",
+        "back": "Dziadek",
+        "difficulty": "easy",
+        "example": "Mój dziadek jest bardzo mądry.",
+        "exampleTranslation": "Мій дідусь дуже мудрий."
+      },
+      {
+        "id": "up_fam_12",
+        "front": "Бабуся",
+        "back": "Babcia",
+        "difficulty": "easy",
+        "example": "Babcia dobrze gotuje.",
+        "exampleTranslation": "Бабуся добре готує."
+      },
+      {
+        "id": "up_fam_13",
+        "front": "Дядько",
+        "back": "Wujek",
+        "difficulty": "medium",
+        "example": "Mój wujek mieszka w Kijowie.",
+        "exampleTranslation": "Мій дядько живе у Києві."
+      },
+      {
+        "id": "up_fam_14",
+        "front": "Тітка",
+        "back": "Ciotka",
+        "difficulty": "medium",
+        "example": "Moja ciotka jest lekarką.",
+        "exampleTranslation": "Моя тітка — лікар."
+      },
+      {
+        "id": "up_fam_15",
+        "front": "Двоюрідний брат",
+        "back": "Kuzyn",
+        "difficulty": "hard",
+        "example": "Mój kuzyn studiuje medycynę.",
+        "exampleTranslation": "Мій двоюрідний брат вивчає медицину."
       }
     ]
   },
@@ -266,6 +346,46 @@
         "difficulty": "medium",
         "example": "Czerwone wino",
         "exampleTranslation": "Червоне вино"
+      },
+      {
+        "id": "up_food_11",
+        "front": "Виноград",
+        "back": "Winogrona",
+        "difficulty": "easy",
+        "example": "Winogrona są bardzo smaczne.",
+        "exampleTranslation": "Виноград дуже смачний."
+      },
+      {
+        "id": "up_food_12",
+        "front": "Курка",
+        "back": "Kurczak",
+        "difficulty": "easy",
+        "example": "Lubię jeść kurczaka.",
+        "exampleTranslation": "Я люблю їсти курку."
+      },
+      {
+        "id": "up_food_13",
+        "front": "Макарони",
+        "back": "Makaron",
+        "difficulty": "medium",
+        "example": "Makaron jest gotowy.",
+        "exampleTranslation": "Макарони готові."
+      },
+      {
+        "id": "up_food_14",
+        "front": "Приправа",
+        "back": "Przyprawa",
+        "difficulty": "medium",
+        "example": "Dodaj trochę przyprawy.",
+        "exampleTranslation": "Додай трохи приправи."
+      },
+      {
+        "id": "up_food_15",
+        "front": "Десерт",
+        "back": "Deser",
+        "difficulty": "hard",
+        "example": "Czy chcesz deser?",
+        "exampleTranslation": "Хочеш десерт?"
       }
     ]
   },
@@ -356,6 +476,46 @@
         "difficulty": "medium",
         "example": "Muzeum jest ciekawe",
         "exampleTranslation": "Музей цікавий"
+      },
+      {
+        "id": "up_place_11",
+        "front": "Аптека",
+        "back": "Apteka",
+        "difficulty": "easy",
+        "example": "Apteka jest blisko.",
+        "exampleTranslation": "Аптека поруч."
+      },
+      {
+        "id": "up_place_12",
+        "front": "Стадіон",
+        "back": "Stadion",
+        "difficulty": "easy",
+        "example": "Stadion jest bardzo duży.",
+        "exampleTranslation": "Стадіон дуже великий."
+      },
+      {
+        "id": "up_place_13",
+        "front": "Музей",
+        "back": "Muzeum",
+        "difficulty": "medium",
+        "example": "Odwiedziłem muzeum wczoraj.",
+        "exampleTranslation": "Я відвідав музей вчора."
+      },
+      {
+        "id": "up_place_14",
+        "front": "Церква",
+        "back": "Kościół",
+        "difficulty": "medium",
+        "example": "Kościół jest bardzo stary.",
+        "exampleTranslation": "Церква дуже стара."
+      },
+      {
+        "id": "up_place_15",
+        "front": "Посольство",
+        "back": "Ambasada",
+        "difficulty": "hard",
+        "example": "Ambasada jest otwarta rano.",
+        "exampleTranslation": "Посольство відкрите вранці."
       }
     ]
   },
@@ -446,6 +606,46 @@
         "difficulty": "medium",
         "example": "Spódnica jest ładna",
         "exampleTranslation": "Спідниця гарна"
+      },
+      {
+        "id": "up_cloth_11",
+        "front": "Рукавички",
+        "back": "Rękawiczki",
+        "difficulty": "easy",
+        "example": "Rękawiczki chronią ręce.",
+        "exampleTranslation": "Рукавички захищають руки."
+      },
+      {
+        "id": "up_cloth_12",
+        "front": "Шарф",
+        "back": "Szalik",
+        "difficulty": "easy",
+        "example": "Szalik jest ciepły.",
+        "exampleTranslation": "Шарф теплий."
+      },
+      {
+        "id": "up_cloth_13",
+        "front": "Пасок",
+        "back": "Pasek",
+        "difficulty": "medium",
+        "example": "Pasek jest skórzany.",
+        "exampleTranslation": "Пасок шкіряний."
+      },
+      {
+        "id": "up_cloth_14",
+        "front": "Костюм",
+        "back": "Garnitur",
+        "difficulty": "medium",
+        "example": "Garnitur jest bardzo elegancki.",
+        "exampleTranslation": "Костюм дуже елегантний."
+      },
+      {
+        "id": "up_cloth_15",
+        "front": "Светр",
+        "back": "Sweter",
+        "difficulty": "hard",
+        "example": "Sweter jest wygodny.",
+        "exampleTranslation": "Светр зручний."
       }
     ]
   },
@@ -536,6 +736,46 @@
         "difficulty": "medium",
         "example": "Łóżko jest miękkie",
         "exampleTranslation": "Ліжко м'яке"
+      },
+      {
+        "id": "up_house_11",
+        "front": "Стеля",
+        "back": "Sufit",
+        "difficulty": "easy",
+        "example": "Sufit jest bardzo wysoki.",
+        "exampleTranslation": "Стеля дуже висока."
+      },
+      {
+        "id": "up_house_12",
+        "front": "Сходи",
+        "back": "Schody",
+        "difficulty": "easy",
+        "example": "Schody są wąskie.",
+        "exampleTranslation": "Сходи вузькі."
+      },
+      {
+        "id": "up_house_13",
+        "front": "Підвал",
+        "back": "Piwnica",
+        "difficulty": "medium",
+        "example": "Piwnica jest chłodna latem.",
+        "exampleTranslation": "Підвал прохолодний влітку."
+      },
+      {
+        "id": "up_house_14",
+        "front": "Балкон",
+        "back": "Balkon",
+        "difficulty": "medium",
+        "example": "Balkon wychodzi na ogród.",
+        "exampleTranslation": "Балкон виходить на сад."
+      },
+      {
+        "id": "up_house_15",
+        "front": "Камін",
+        "back": "Kominek",
+        "difficulty": "hard",
+        "example": "Kominek ogrzewa dom.",
+        "exampleTranslation": "Камін зігріває будинок."
       }
     ]
   },
@@ -626,6 +866,46 @@
         "difficulty": "medium",
         "example": "To mój kolega z pracy",
         "exampleTranslation": "Це мій колега по роботі"
+      },
+      {
+        "id": "up_work_11",
+        "front": "Зустріч",
+        "back": "Spotkanie",
+        "difficulty": "easy",
+        "example": "Spotkanie jest o trzeciej.",
+        "exampleTranslation": "Зустріч о третій."
+      },
+      {
+        "id": "up_work_12",
+        "front": "Зарплата",
+        "back": "Pensja",
+        "difficulty": "easy",
+        "example": "Pensja jest dobra.",
+        "exampleTranslation": "Зарплата хороша."
+      },
+      {
+        "id": "up_work_13",
+        "front": "Колега",
+        "back": "Kolega z pracy",
+        "difficulty": "medium",
+        "example": "Kolega z pracy jest przyjazny.",
+        "exampleTranslation": "Колега дуже привітний."
+      },
+      {
+        "id": "up_work_14",
+        "front": "Підвищення",
+        "back": "Awans",
+        "difficulty": "medium",
+        "example": "Dostałem awans.",
+        "exampleTranslation": "Я отримав підвищення."
+      },
+      {
+        "id": "up_work_15",
+        "front": "Крайній термін",
+        "back": "Termin",
+        "difficulty": "hard",
+        "example": "Termin jest jutro.",
+        "exampleTranslation": "Крайній термін завтра."
       }
     ]
   },
@@ -716,6 +996,46 @@
         "difficulty": "medium",
         "example": "Kierowca jest ostrożny",
         "exampleTranslation": "Водій обережний"
+      },
+      {
+        "id": "up_travel_11",
+        "front": "Паспорт",
+        "back": "Paszport",
+        "difficulty": "easy",
+        "example": "Mój paszport jest gotowy.",
+        "exampleTranslation": "Мій паспорт готовий."
+      },
+      {
+        "id": "up_travel_12",
+        "front": "Віза",
+        "back": "Wiza",
+        "difficulty": "easy",
+        "example": "Potrzebuję wizy.",
+        "exampleTranslation": "Мені потрібна віза."
+      },
+      {
+        "id": "up_travel_13",
+        "front": "Бронювання",
+        "back": "Rezerwacja",
+        "difficulty": "medium",
+        "example": "Rezerwacja jest potwierdzona.",
+        "exampleTranslation": "Бронювання підтверджено."
+      },
+      {
+        "id": "up_travel_14",
+        "front": "Гід",
+        "back": "Przewodnik",
+        "difficulty": "medium",
+        "example": "Przewodnik jest doskonały.",
+        "exampleTranslation": "Гід чудовий."
+      },
+      {
+        "id": "up_travel_15",
+        "front": "Страхування",
+        "back": "Ubezpieczenie",
+        "difficulty": "hard",
+        "example": "Ubezpieczenie podróżne jest konieczne.",
+        "exampleTranslation": "Страхування подорожі необхідне."
       }
     ]
   },
@@ -806,6 +1126,46 @@
         "difficulty": "medium",
         "example": "Studiuję w bibliotece",
         "exampleTranslation": "Я навчаюся в бібліотеці"
+      },
+      {
+        "id": "up_school_11",
+        "front": "Лекція",
+        "back": "Wykład",
+        "difficulty": "easy",
+        "example": "Wykład jest ciekawy.",
+        "exampleTranslation": "Лекція цікава."
+      },
+      {
+        "id": "up_school_12",
+        "front": "Нотатки",
+        "back": "Notatki",
+        "difficulty": "easy",
+        "example": "Robię notatki.",
+        "exampleTranslation": "Я роблю нотатки."
+      },
+      {
+        "id": "up_school_13",
+        "front": "Бібліотека",
+        "back": "Biblioteka",
+        "difficulty": "medium",
+        "example": "Biblioteka jest cicha.",
+        "exampleTranslation": "Бібліотека тиха."
+      },
+      {
+        "id": "up_school_14",
+        "front": "Диплом",
+        "back": "Dyplom",
+        "difficulty": "medium",
+        "example": "Zdobyłem dyplom.",
+        "exampleTranslation": "Я отримав диплом."
+      },
+      {
+        "id": "up_school_15",
+        "front": "Стипендія",
+        "back": "Stypendium",
+        "difficulty": "hard",
+        "example": "Dostałem stypendium.",
+        "exampleTranslation": "Я отримав стипендію."
       }
     ]
   },
@@ -896,6 +1256,46 @@
         "difficulty": "medium",
         "example": "Słychać grzmot",
         "exampleTranslation": "Чути грім"
+      },
+      {
+        "id": "up_weather_11",
+        "front": "Град",
+        "back": "Grad",
+        "difficulty": "easy",
+        "example": "Grad padał mocno.",
+        "exampleTranslation": "Град сильно падав."
+      },
+      {
+        "id": "up_weather_12",
+        "front": "Туман",
+        "back": "Mgła",
+        "difficulty": "easy",
+        "example": "Mgła jest gęsta.",
+        "exampleTranslation": "Туман густий."
+      },
+      {
+        "id": "up_weather_13",
+        "front": "Веселка",
+        "back": "Tęcza",
+        "difficulty": "medium",
+        "example": "Widziałem tęczę.",
+        "exampleTranslation": "Я бачив веселку."
+      },
+      {
+        "id": "up_weather_14",
+        "front": "Посуха",
+        "back": "Susza",
+        "difficulty": "medium",
+        "example": "Susza wpływa na uprawy.",
+        "exampleTranslation": "Посуха впливає на врожай."
+      },
+      {
+        "id": "up_weather_15",
+        "front": "Ураган",
+        "back": "Huragan",
+        "difficulty": "hard",
+        "example": "Huragan zniszczył domy.",
+        "exampleTranslation": "Ураган зруйнував будинки."
       }
     ]
   },
@@ -986,6 +1386,46 @@
         "difficulty": "medium",
         "example": "Księżyc jest pełny",
         "exampleTranslation": "Місяць повний"
+      },
+      {
+        "id": "up_nature_11",
+        "front": "Водоспад",
+        "back": "Wodospad",
+        "difficulty": "easy",
+        "example": "Wodospad jest piękny.",
+        "exampleTranslation": "Водоспад гарний."
+      },
+      {
+        "id": "up_nature_12",
+        "front": "Пустеля",
+        "back": "Pustynia",
+        "difficulty": "easy",
+        "example": "Pustynia jest ogromna.",
+        "exampleTranslation": "Пустеля величезна."
+      },
+      {
+        "id": "up_nature_13",
+        "front": "Долина",
+        "back": "Dolina",
+        "difficulty": "medium",
+        "example": "Dolina jest zielona.",
+        "exampleTranslation": "Долина зелена."
+      },
+      {
+        "id": "up_nature_14",
+        "front": "Печера",
+        "back": "Jaskinia",
+        "difficulty": "medium",
+        "example": "Jaskinia jest ciemna.",
+        "exampleTranslation": "Печера темна."
+      },
+      {
+        "id": "up_nature_15",
+        "front": "Вулкан",
+        "back": "Wulkan",
+        "difficulty": "hard",
+        "example": "Wulkan jest aktywny.",
+        "exampleTranslation": "Вулкан активний."
       }
     ]
   },
@@ -1076,6 +1516,46 @@
         "difficulty": "medium",
         "example": "Mysz jest mała",
         "exampleTranslation": "Миша маленька"
+      },
+      {
+        "id": "up_animal_11",
+        "front": "Папуга",
+        "back": "Papuga",
+        "difficulty": "easy",
+        "example": "Papuga jest bardzo mądra.",
+        "exampleTranslation": "Папуга дуже розумна."
+      },
+      {
+        "id": "up_animal_12",
+        "front": "Черепаха",
+        "back": "Żółw",
+        "difficulty": "easy",
+        "example": "Żółw jest powolny.",
+        "exampleTranslation": "Черепаха повільна."
+      },
+      {
+        "id": "up_animal_13",
+        "front": "Білка",
+        "back": "Wiewiórka",
+        "difficulty": "medium",
+        "example": "Wiewiórka zbiera orzechy.",
+        "exampleTranslation": "Білка збирає горіхи."
+      },
+      {
+        "id": "up_animal_14",
+        "front": "Сова",
+        "back": "Sowa",
+        "difficulty": "medium",
+        "example": "Sowa poluje w nocy.",
+        "exampleTranslation": "Сова полює вночі."
+      },
+      {
+        "id": "up_animal_15",
+        "front": "Дельфін",
+        "back": "Delfin",
+        "difficulty": "hard",
+        "example": "Delfin jest bardzo mądrym zwierzęciem.",
+        "exampleTranslation": "Дельфін дуже розумна тварина."
       }
     ]
   },
@@ -1166,6 +1646,46 @@
         "difficulty": "medium",
         "example": "Ten miesiąc",
         "exampleTranslation": "Цей місяць"
+      },
+      {
+        "id": "up_time_11",
+        "front": "Світанок",
+        "back": "Świt",
+        "difficulty": "easy",
+        "example": "Świt jest piękny.",
+        "exampleTranslation": "Світанок прекрасний."
+      },
+      {
+        "id": "up_time_12",
+        "front": "Сутінки",
+        "back": "Zmierzch",
+        "difficulty": "easy",
+        "example": "Zmierzch jest spokojny.",
+        "exampleTranslation": "Сутінки тихі."
+      },
+      {
+        "id": "up_time_13",
+        "front": "Квартал",
+        "back": "Kwartał",
+        "difficulty": "medium",
+        "example": "Pozostał jeden kwartał.",
+        "exampleTranslation": "Залишився один квартал."
+      },
+      {
+        "id": "up_time_14",
+        "front": "Десятиліття",
+        "back": "Dekada",
+        "difficulty": "medium",
+        "example": "Mieszkałem tu dekadę.",
+        "exampleTranslation": "Я тут жив десятиліття."
+      },
+      {
+        "id": "up_time_15",
+        "front": "Століття",
+        "back": "Stulecie",
+        "difficulty": "hard",
+        "example": "Ten budynek zbudowano sto lat temu.",
+        "exampleTranslation": "Цей будинок збудований століття тому."
       }
     ]
   },
@@ -1256,6 +1776,46 @@
         "difficulty": "medium",
         "example": "Szczęśliwego Nowego Roku",
         "exampleTranslation": "Щасливого Нового року"
+      },
+      {
+        "id": "up_event_11",
+        "front": "Весілля",
+        "back": "Ślub",
+        "difficulty": "easy",
+        "example": "Ślub był piękny.",
+        "exampleTranslation": "Весілля було прекрасним."
+      },
+      {
+        "id": "up_event_12",
+        "front": "День народження",
+        "back": "Urodziny",
+        "difficulty": "easy",
+        "example": "Wszystkiego najlepszego z okazji urodzin!",
+        "exampleTranslation": "З днем народження!"
+      },
+      {
+        "id": "up_event_13",
+        "front": "Ювілей",
+        "back": "Rocznica",
+        "difficulty": "medium",
+        "example": "Obchodziliśmy rocznicę.",
+        "exampleTranslation": "Ми святкували ювілей."
+      },
+      {
+        "id": "up_event_14",
+        "front": "Випускний",
+        "back": "Bal maturalny",
+        "difficulty": "medium",
+        "example": "Bal maturalny jest w piątek.",
+        "exampleTranslation": "Випускний у п'ятницю."
+      },
+      {
+        "id": "up_event_15",
+        "front": "Церемонія",
+        "back": "Ceremonia",
+        "difficulty": "hard",
+        "example": "Ceremonia była uroczysta.",
+        "exampleTranslation": "Церемонія була урочистою."
       }
     ]
   },
@@ -1346,6 +1906,46 @@
         "difficulty": "medium",
         "example": "Oni są znudzeni",
         "exampleTranslation": "Їм нудно"
+      },
+      {
+        "id": "up_emo_11",
+        "front": "Гордий",
+        "back": "Dumny",
+        "difficulty": "easy",
+        "example": "Jestem z ciebie dumny.",
+        "exampleTranslation": "Я гордий тобою."
+      },
+      {
+        "id": "up_emo_12",
+        "front": "Здивований",
+        "back": "Zaskoczony",
+        "difficulty": "easy",
+        "example": "Jestem zaskoczony wynikiem.",
+        "exampleTranslation": "Я здивований результатом."
+      },
+      {
+        "id": "up_emo_13",
+        "front": "Заздрісний",
+        "back": "Zazdrosny",
+        "difficulty": "medium",
+        "example": "Nie bądź zazdrosny.",
+        "exampleTranslation": "Не будь заздрісним."
+      },
+      {
+        "id": "up_emo_14",
+        "front": "Вдячний",
+        "back": "Wdzięczny",
+        "difficulty": "medium",
+        "example": "Jestem wdzięczny za twoją pomoc.",
+        "exampleTranslation": "Я вдячний за твою допомогу."
+      },
+      {
+        "id": "up_emo_15",
+        "front": "Розчарований",
+        "back": "Rozczarowany",
+        "difficulty": "hard",
+        "example": "Jestem rozczarowany wynikami.",
+        "exampleTranslation": "Я розчарований результатами."
       }
     ]
   },
@@ -1436,6 +2036,46 @@
         "difficulty": "medium",
         "example": "Jestem w drużynie",
         "exampleTranslation": "Я в команді"
+      },
+      {
+        "id": "up_sport_11",
+        "front": "Суддя",
+        "back": "Sędzia",
+        "difficulty": "easy",
+        "example": "Sędzia jest sprawiedliwy.",
+        "exampleTranslation": "Суддя справедливий."
+      },
+      {
+        "id": "up_sport_12",
+        "front": "Чемпіонат",
+        "back": "Mistrzostwa",
+        "difficulty": "easy",
+        "example": "Mistrzostwa się rozpoczęły.",
+        "exampleTranslation": "Чемпіонат розпочався."
+      },
+      {
+        "id": "up_sport_13",
+        "front": "Тренер",
+        "back": "Trener",
+        "difficulty": "medium",
+        "example": "Trener jest doskonały.",
+        "exampleTranslation": "Тренер чудовий."
+      },
+      {
+        "id": "up_sport_14",
+        "front": "Рекорд",
+        "back": "Rekord",
+        "difficulty": "medium",
+        "example": "Pobił rekord.",
+        "exampleTranslation": "Він побив рекорд."
+      },
+      {
+        "id": "up_sport_15",
+        "front": "Фехтування",
+        "back": "Szermierka",
+        "difficulty": "hard",
+        "example": "Szermierka jest sportem olimpijskim.",
+        "exampleTranslation": "Фехтування — олімпійський вид спорту."
       }
     ]
   },
@@ -1526,6 +2166,46 @@
         "difficulty": "medium",
         "example": "Zdrowie jest ważne",
         "exampleTranslation": "Здоров'я важливе"
+      },
+      {
+        "id": "up_health_11",
+        "front": "Ліки",
+        "back": "Leki",
+        "difficulty": "easy",
+        "example": "Leki są na stole.",
+        "exampleTranslation": "Ліки на столі."
+      },
+      {
+        "id": "up_health_12",
+        "front": "Рецепт",
+        "back": "Recepta",
+        "difficulty": "easy",
+        "example": "Mam receptę od lekarza.",
+        "exampleTranslation": "У мене рецепт від лікаря."
+      },
+      {
+        "id": "up_health_13",
+        "front": "Алергія",
+        "back": "Alergia",
+        "difficulty": "medium",
+        "example": "Mam alergię na pyłki.",
+        "exampleTranslation": "У мене алергія на пилок."
+      },
+      {
+        "id": "up_health_14",
+        "front": "Щеплення",
+        "back": "Szczepienie",
+        "difficulty": "medium",
+        "example": "Szczepienie jest obowiązkowe.",
+        "exampleTranslation": "Щеплення обов'язкове."
+      },
+      {
+        "id": "up_health_15",
+        "front": "Діагноз",
+        "back": "Diagnoza",
+        "difficulty": "hard",
+        "example": "Diagnoza jest pozytywna.",
+        "exampleTranslation": "Діагноз позитивний."
       }
     ]
   },
@@ -1616,6 +2296,46 @@
         "difficulty": "medium",
         "example": "Uwielbiam podróże",
         "exampleTranslation": "Я люблю подорожі"
+      },
+      {
+        "id": "up_hobby_11",
+        "front": "Малювання",
+        "back": "Malowanie",
+        "difficulty": "easy",
+        "example": "Malowanie jest moim hobby.",
+        "exampleTranslation": "Малювання — моє хобі."
+      },
+      {
+        "id": "up_hobby_12",
+        "front": "Фотографія",
+        "back": "Fotografia",
+        "difficulty": "easy",
+        "example": "Fotografia jest fascynująca.",
+        "exampleTranslation": "Фотографія захоплююча."
+      },
+      {
+        "id": "up_hobby_13",
+        "front": "Шахи",
+        "back": "Szachy",
+        "difficulty": "medium",
+        "example": "Gram w szachy codziennie.",
+        "exampleTranslation": "Я граю в шахи щодня."
+      },
+      {
+        "id": "up_hobby_14",
+        "front": "Колекціонування",
+        "back": "Kolekcjonowanie",
+        "difficulty": "medium",
+        "example": "Kolekcjonuję znaczki.",
+        "exampleTranslation": "Я колекціоную марки."
+      },
+      {
+        "id": "up_hobby_15",
+        "front": "Каліграфія",
+        "back": "Kaligrafia",
+        "difficulty": "hard",
+        "example": "Kaligrafia wymaga cierpliwości.",
+        "exampleTranslation": "Каліграфія вимагає терпіння."
       }
     ]
   },
@@ -1706,6 +2426,46 @@
         "difficulty": "medium",
         "example": "Rezerwuję stolik",
         "exampleTranslation": "Я резервую столик"
+      },
+      {
+        "id": "up_rest_11",
+        "front": "Офіціант",
+        "back": "Kelner",
+        "difficulty": "easy",
+        "example": "Kelner jest bardzo uprzejmy.",
+        "exampleTranslation": "Офіціант дуже ввічливий."
+      },
+      {
+        "id": "up_rest_12",
+        "front": "Рахунок",
+        "back": "Rachunek",
+        "difficulty": "easy",
+        "example": "Proszę o rachunek.",
+        "exampleTranslation": "Принесіть рахунок, будь ласка."
+      },
+      {
+        "id": "up_rest_13",
+        "front": "Основна страва",
+        "back": "Danie główne",
+        "difficulty": "medium",
+        "example": "Danie główne jest smaczne.",
+        "exampleTranslation": "Основна страва смачна."
+      },
+      {
+        "id": "up_rest_14",
+        "front": "Чайові",
+        "back": "Napiwek",
+        "difficulty": "medium",
+        "example": "Zostawiłem napiwek.",
+        "exampleTranslation": "Я залишив чайові."
+      },
+      {
+        "id": "up_rest_15",
+        "front": "Бронювання столика",
+        "back": "Rezerwacja stolika",
+        "difficulty": "hard",
+        "example": "Zarezerwowałem stolik.",
+        "exampleTranslation": "Я забронював столик."
       }
     ]
   },
@@ -1796,6 +2556,46 @@
         "difficulty": "medium",
         "example": "Wystawa jest interesująca",
         "exampleTranslation": "Виставка цікава"
+      },
+      {
+        "id": "up_cult_11",
+        "front": "Виставка",
+        "back": "Wystawa",
+        "difficulty": "easy",
+        "example": "Wystawa jest otwarta.",
+        "exampleTranslation": "Виставка відкрита."
+      },
+      {
+        "id": "up_cult_12",
+        "front": "Традиція",
+        "back": "Tradycja",
+        "difficulty": "easy",
+        "example": "To stara tradycja.",
+        "exampleTranslation": "Це стара традиція."
+      },
+      {
+        "id": "up_cult_13",
+        "front": "Спадщина",
+        "back": "Dziedzictwo",
+        "difficulty": "medium",
+        "example": "Chronimy nasze dziedzictwo.",
+        "exampleTranslation": "Ми захищаємо нашу спадщину."
+      },
+      {
+        "id": "up_cult_14",
+        "front": "Фольклор",
+        "back": "Folklor",
+        "difficulty": "medium",
+        "example": "Folklor jest bardzo bogaty.",
+        "exampleTranslation": "Фольклор дуже багатий."
+      },
+      {
+        "id": "up_cult_15",
+        "front": "Ремесло",
+        "back": "Rzemiosło",
+        "difficulty": "hard",
+        "example": "Rzemiosło jest tradycyjne.",
+        "exampleTranslation": "Ремесло є традиційним."
       }
     ]
   }

@@ -86,6 +86,46 @@
         "difficulty": "medium",
         "example": "No, I don't want",
         "exampleTranslation": "不，我不想要"
+      },
+      {
+        "id": "ce_greet_11",
+        "front": "欢迎",
+        "back": "Welcome",
+        "difficulty": "easy",
+        "example": "Welcome to our school",
+        "exampleTranslation": "欢迎来到我们的学校"
+      },
+      {
+        "id": "ce_greet_12",
+        "front": "好久不见",
+        "back": "Long time no see",
+        "difficulty": "easy",
+        "example": "Long time no see, how have you been?",
+        "exampleTranslation": "好久不见，你过得怎么样？"
+      },
+      {
+        "id": "ce_greet_13",
+        "front": "打扰一下",
+        "back": "Excuse me",
+        "difficulty": "medium",
+        "example": "Excuse me, where is the bathroom?",
+        "exampleTranslation": "打扰一下，洗手间在哪里？"
+      },
+      {
+        "id": "ce_greet_14",
+        "front": "认识你很高兴",
+        "back": "Nice to meet you",
+        "difficulty": "medium",
+        "example": "Nice to meet you, I'm Li Wei",
+        "exampleTranslation": "认识你很高兴，我是李伟"
+      },
+      {
+        "id": "ce_greet_15",
+        "front": "一路平安",
+        "back": "Have a safe trip",
+        "difficulty": "hard",
+        "example": "Have a safe trip back home",
+        "exampleTranslation": "一路平安，回家路上小心"
       }
     ]
   },
@@ -176,6 +216,46 @@
         "difficulty": "medium",
         "example": "My aunt is very kind",
         "exampleTranslation": "我阿姨很善良"
+      },
+      {
+        "id": "ce_fam_11",
+        "front": "叔叔",
+        "back": "Uncle (father's younger brother)",
+        "difficulty": "easy",
+        "example": "My uncle works at a hospital",
+        "exampleTranslation": "我叔叔在医院工作"
+      },
+      {
+        "id": "ce_fam_12",
+        "front": "阿姨",
+        "back": "Aunt (mother's sister)",
+        "difficulty": "easy",
+        "example": "Aunt brought us gifts",
+        "exampleTranslation": "阿姨给我们带了礼物"
+      },
+      {
+        "id": "ce_fam_13",
+        "front": "表姐",
+        "back": "Older female cousin (maternal)",
+        "difficulty": "medium",
+        "example": "My cousin got married last month",
+        "exampleTranslation": "我表姐上个月结婚了"
+      },
+      {
+        "id": "ce_fam_14",
+        "front": "外孙",
+        "back": "Grandson (daughter's son)",
+        "difficulty": "medium",
+        "example": "The grandson visits every weekend",
+        "exampleTranslation": "外孙每个周末都来看望"
+      },
+      {
+        "id": "ce_fam_15",
+        "front": "婆婆",
+        "back": "Mother-in-law (husband's mother)",
+        "difficulty": "hard",
+        "example": "My mother-in-law is very kind",
+        "exampleTranslation": "我婆婆非常善良"
       }
     ]
   },
@@ -266,6 +346,46 @@
         "difficulty": "medium",
         "example": "Ten euros, please",
         "exampleTranslation": "十欧元，请"
+      },
+      {
+        "id": "ce_num_11",
+        "front": "十一",
+        "back": "Eleven",
+        "difficulty": "easy",
+        "example": "There are eleven apples",
+        "exampleTranslation": "有十一个苹果"
+      },
+      {
+        "id": "ce_num_12",
+        "front": "二十",
+        "back": "Twenty",
+        "difficulty": "easy",
+        "example": "She is twenty years old",
+        "exampleTranslation": "她二十岁了"
+      },
+      {
+        "id": "ce_num_13",
+        "front": "五十",
+        "back": "Fifty",
+        "difficulty": "medium",
+        "example": "The book costs fifty yuan",
+        "exampleTranslation": "这本书五十元"
+      },
+      {
+        "id": "ce_num_14",
+        "front": "一百",
+        "back": "One hundred",
+        "difficulty": "medium",
+        "example": "I ran one hundred meters",
+        "exampleTranslation": "我跑了一百米"
+      },
+      {
+        "id": "ce_num_15",
+        "front": "一万",
+        "back": "Ten thousand",
+        "difficulty": "hard",
+        "example": "This city has ten thousand residents",
+        "exampleTranslation": "这座城市有一万居民"
       }
     ]
   },
@@ -356,6 +476,46 @@
         "difficulty": "medium",
         "example": "The elephant is gray",
         "exampleTranslation": "大象是灰色的"
+      },
+      {
+        "id": "ce_col_11",
+        "front": "紫色",
+        "back": "Purple",
+        "difficulty": "easy",
+        "example": "The curtains are purple",
+        "exampleTranslation": "窗帘是紫色的"
+      },
+      {
+        "id": "ce_col_12",
+        "front": "粉色",
+        "back": "Pink",
+        "difficulty": "easy",
+        "example": "She likes pink flowers",
+        "exampleTranslation": "她喜欢粉色的花"
+      },
+      {
+        "id": "ce_col_13",
+        "front": "灰色",
+        "back": "Gray",
+        "difficulty": "medium",
+        "example": "He is wearing a gray coat",
+        "exampleTranslation": "他穿着一件灰色的外套"
+      },
+      {
+        "id": "ce_col_14",
+        "front": "棕色",
+        "back": "Brown",
+        "difficulty": "medium",
+        "example": "The table is brown",
+        "exampleTranslation": "桌子是棕色的"
+      },
+      {
+        "id": "ce_col_15",
+        "front": "金色",
+        "back": "Gold / Golden",
+        "difficulty": "hard",
+        "example": "The sunset turned the sky golden",
+        "exampleTranslation": "日落把天空染成了金色"
       }
     ]
   },
@@ -446,6 +606,46 @@
         "difficulty": "medium",
         "example": "I eat eggs for breakfast",
         "exampleTranslation": "我早餐吃鸡蛋"
+      },
+      {
+        "id": "ce_food_11",
+        "front": "豆腐",
+        "back": "Tofu",
+        "difficulty": "easy",
+        "example": "I like eating tofu with rice",
+        "exampleTranslation": "我喜欢吃豆腐配米饭"
+      },
+      {
+        "id": "ce_food_12",
+        "front": "饺子",
+        "back": "Dumplings",
+        "difficulty": "easy",
+        "example": "We eat dumplings during Chinese New Year",
+        "exampleTranslation": "我们过年吃饺子"
+      },
+      {
+        "id": "ce_food_13",
+        "front": "酱油",
+        "back": "Soy sauce",
+        "difficulty": "medium",
+        "example": "Add some soy sauce to the noodles",
+        "exampleTranslation": "给面条加点酱油"
+      },
+      {
+        "id": "ce_food_14",
+        "front": "辣椒",
+        "back": "Chili pepper",
+        "difficulty": "medium",
+        "example": "Sichuan food uses a lot of chili peppers",
+        "exampleTranslation": "四川菜用很多辣椒"
+      },
+      {
+        "id": "ce_food_15",
+        "front": "海鲜",
+        "back": "Seafood",
+        "difficulty": "hard",
+        "example": "The restaurant specializes in seafood",
+        "exampleTranslation": "这家餐厅专做海鲜"
       }
     ]
   },
@@ -536,6 +736,46 @@
         "difficulty": "medium",
         "example": "The bed is soft",
         "exampleTranslation": "床很软"
+      },
+      {
+        "id": "ce_house_11",
+        "front": "天花板",
+        "back": "Ceiling",
+        "difficulty": "easy",
+        "example": "The ceiling is very high",
+        "exampleTranslation": "天花板很高"
+      },
+      {
+        "id": "ce_house_12",
+        "front": "楼梯",
+        "back": "Stairs",
+        "difficulty": "easy",
+        "example": "Walk up the stairs slowly",
+        "exampleTranslation": "慢慢走上楼梯"
+      },
+      {
+        "id": "ce_house_13",
+        "front": "阳台",
+        "back": "Balcony",
+        "difficulty": "medium",
+        "example": "We grow flowers on the balcony",
+        "exampleTranslation": "我们在阳台上种花"
+      },
+      {
+        "id": "ce_house_14",
+        "front": "衣柜",
+        "back": "Wardrobe",
+        "difficulty": "medium",
+        "example": "The wardrobe is full of clothes",
+        "exampleTranslation": "衣柜里满是衣服"
+      },
+      {
+        "id": "ce_house_15",
+        "front": "地下室",
+        "back": "Basement",
+        "difficulty": "hard",
+        "example": "We keep old boxes in the basement",
+        "exampleTranslation": "我们把旧箱子放在地下室"
       }
     ]
   },
@@ -626,6 +866,46 @@
         "difficulty": "medium",
         "example": "The museum is interesting",
         "exampleTranslation": "博物馆很有趣"
+      },
+      {
+        "id": "ce_place_11",
+        "front": "药店",
+        "back": "Pharmacy",
+        "difficulty": "easy",
+        "example": "The pharmacy is next to the bank",
+        "exampleTranslation": "药店在银行旁边"
+      },
+      {
+        "id": "ce_place_12",
+        "front": "图书馆",
+        "back": "Library",
+        "difficulty": "easy",
+        "example": "I borrowed a book from the library",
+        "exampleTranslation": "我从图书馆借了一本书"
+      },
+      {
+        "id": "ce_place_13",
+        "front": "体育场",
+        "back": "Stadium",
+        "difficulty": "medium",
+        "example": "The stadium can hold fifty thousand people",
+        "exampleTranslation": "体育场可以容纳五万人"
+      },
+      {
+        "id": "ce_place_14",
+        "front": "加油站",
+        "back": "Gas station",
+        "difficulty": "medium",
+        "example": "There is a gas station ahead",
+        "exampleTranslation": "前面有一个加油站"
+      },
+      {
+        "id": "ce_place_15",
+        "front": "大使馆",
+        "back": "Embassy",
+        "difficulty": "hard",
+        "example": "I need to go to the embassy for my visa",
+        "exampleTranslation": "我需要去大使馆办签证"
       }
     ]
   },
@@ -716,6 +996,46 @@
         "difficulty": "medium",
         "example": "The coat is warm",
         "exampleTranslation": "外套很暖和"
+      },
+      {
+        "id": "ce_cloth_11",
+        "front": "围巾",
+        "back": "Scarf",
+        "difficulty": "easy",
+        "example": "She always wears a red scarf in winter",
+        "exampleTranslation": "冬天她总是戴一条红围巾"
+      },
+      {
+        "id": "ce_cloth_12",
+        "front": "运动鞋",
+        "back": "Sneakers",
+        "difficulty": "easy",
+        "example": "I need new sneakers for running",
+        "exampleTranslation": "我需要新的运动鞋来跑步"
+      },
+      {
+        "id": "ce_cloth_13",
+        "front": "西装",
+        "back": "Suit",
+        "difficulty": "medium",
+        "example": "He wears a suit to work every day",
+        "exampleTranslation": "他每天穿西装上班"
+      },
+      {
+        "id": "ce_cloth_14",
+        "front": "领带",
+        "back": "Tie / Necktie",
+        "difficulty": "medium",
+        "example": "His tie is dark blue",
+        "exampleTranslation": "他的领带是深蓝色的"
+      },
+      {
+        "id": "ce_cloth_15",
+        "front": "旗袍",
+        "back": "Cheongsam / Qipao",
+        "difficulty": "hard",
+        "example": "She wore a beautiful qipao to the banquet",
+        "exampleTranslation": "她穿了一件漂亮的旗袍去参加宴会"
       }
     ]
   },
@@ -806,6 +1126,46 @@
         "difficulty": "medium",
         "example": "The mechanic repairs cars",
         "exampleTranslation": "机械师修理汽车"
+      },
+      {
+        "id": "ce_work_11",
+        "front": "升职",
+        "back": "Promotion",
+        "difficulty": "easy",
+        "example": "She got a promotion this year",
+        "exampleTranslation": "她今年升职了"
+      },
+      {
+        "id": "ce_work_12",
+        "front": "会议",
+        "back": "Meeting",
+        "difficulty": "easy",
+        "example": "The meeting starts at ten o'clock",
+        "exampleTranslation": "会议十点开始"
+      },
+      {
+        "id": "ce_work_13",
+        "front": "截止日期",
+        "back": "Deadline",
+        "difficulty": "medium",
+        "example": "The deadline is next Monday",
+        "exampleTranslation": "截止日期是下周一"
+      },
+      {
+        "id": "ce_work_14",
+        "front": "简历",
+        "back": "Resume / CV",
+        "difficulty": "medium",
+        "example": "Please send your resume to this email",
+        "exampleTranslation": "请把简历发到这个邮箱"
+      },
+      {
+        "id": "ce_work_15",
+        "front": "退休",
+        "back": "Retirement",
+        "difficulty": "hard",
+        "example": "He plans to retire at sixty",
+        "exampleTranslation": "他计划六十岁退休"
       }
     ]
   },
@@ -896,6 +1256,46 @@
         "difficulty": "medium",
         "example": "I buy a ticket",
         "exampleTranslation": "我买票"
+      },
+      {
+        "id": "ce_trans_11",
+        "front": "站台",
+        "back": "Platform",
+        "difficulty": "easy",
+        "example": "The train arrives at platform three",
+        "exampleTranslation": "火车到达三号站台"
+      },
+      {
+        "id": "ce_trans_12",
+        "front": "红绿灯",
+        "back": "Traffic light",
+        "difficulty": "easy",
+        "example": "Turn left at the traffic light",
+        "exampleTranslation": "在红绿灯处左转"
+      },
+      {
+        "id": "ce_trans_13",
+        "front": "堵车",
+        "back": "Traffic jam",
+        "difficulty": "medium",
+        "example": "There is always a traffic jam at rush hour",
+        "exampleTranslation": "高峰期总是堵车"
+      },
+      {
+        "id": "ce_trans_14",
+        "front": "驾照",
+        "back": "Driver's license",
+        "difficulty": "medium",
+        "example": "I just got my driver's license",
+        "exampleTranslation": "我刚拿到驾照"
+      },
+      {
+        "id": "ce_trans_15",
+        "front": "停车场",
+        "back": "Parking lot",
+        "difficulty": "hard",
+        "example": "The parking lot is underground",
+        "exampleTranslation": "停车场在地下"
       }
     ]
   },
@@ -986,6 +1386,46 @@
         "difficulty": "medium",
         "example": "My backpack is heavy",
         "exampleTranslation": "我的背包很重"
+      },
+      {
+        "id": "ce_edu_11",
+        "front": "课程",
+        "back": "Course / Curriculum",
+        "difficulty": "easy",
+        "example": "I enrolled in an English course",
+        "exampleTranslation": "我报了一门英语课程"
+      },
+      {
+        "id": "ce_edu_12",
+        "front": "讲座",
+        "back": "Lecture",
+        "difficulty": "easy",
+        "example": "The professor gave an excellent lecture",
+        "exampleTranslation": "教授做了一场精彩的讲座"
+      },
+      {
+        "id": "ce_edu_13",
+        "front": "奖学金",
+        "back": "Scholarship",
+        "difficulty": "medium",
+        "example": "She received a full scholarship",
+        "exampleTranslation": "她获得了全额奖学金"
+      },
+      {
+        "id": "ce_edu_14",
+        "front": "论文",
+        "back": "Thesis / Paper",
+        "difficulty": "medium",
+        "example": "He is writing his thesis",
+        "exampleTranslation": "他正在写论文"
+      },
+      {
+        "id": "ce_edu_15",
+        "front": "毕业",
+        "back": "Graduation",
+        "difficulty": "hard",
+        "example": "Graduation is in June",
+        "exampleTranslation": "毕业典礼在六月"
       }
     ]
   },
@@ -1076,6 +1516,46 @@
         "difficulty": "medium",
         "example": "The moon is full",
         "exampleTranslation": "月亮是满的"
+      },
+      {
+        "id": "ce_nature_11",
+        "front": "瀑布",
+        "back": "Waterfall",
+        "difficulty": "easy",
+        "example": "The waterfall is very tall",
+        "exampleTranslation": "瀑布非常高"
+      },
+      {
+        "id": "ce_nature_12",
+        "front": "小山",
+        "back": "Hill",
+        "difficulty": "easy",
+        "example": "The children played on the hill",
+        "exampleTranslation": "孩子们在小山上玩耍"
+      },
+      {
+        "id": "ce_nature_13",
+        "front": "山洞",
+        "back": "Cave",
+        "difficulty": "medium",
+        "example": "We explored a cave during the hike",
+        "exampleTranslation": "我们在徒步时探索了一个山洞"
+      },
+      {
+        "id": "ce_nature_14",
+        "front": "沙漠",
+        "back": "Desert",
+        "difficulty": "medium",
+        "example": "The desert is very hot during the day",
+        "exampleTranslation": "沙漠白天非常热"
+      },
+      {
+        "id": "ce_nature_15",
+        "front": "火山",
+        "back": "Volcano",
+        "difficulty": "hard",
+        "example": "The volcano has been dormant for centuries",
+        "exampleTranslation": "这座火山已经沉寂了几百年"
       }
     ]
   },
@@ -1166,6 +1646,46 @@
         "difficulty": "medium",
         "example": "They are bored",
         "exampleTranslation": "他们很无聊"
+      },
+      {
+        "id": "ce_emo_11",
+        "front": "骄傲",
+        "back": "Pride / Proud",
+        "difficulty": "easy",
+        "example": "I feel proud of my son",
+        "exampleTranslation": "我为我的儿子感到骄傲"
+      },
+      {
+        "id": "ce_emo_12",
+        "front": "焦虑",
+        "back": "Anxiety",
+        "difficulty": "easy",
+        "example": "She suffers from anxiety before tests",
+        "exampleTranslation": "她考试前感到焦虑"
+      },
+      {
+        "id": "ce_emo_13",
+        "front": "怀念",
+        "back": "Nostalgia / Miss",
+        "difficulty": "medium",
+        "example": "I miss my hometown",
+        "exampleTranslation": "我怀念我的家乡"
+      },
+      {
+        "id": "ce_emo_14",
+        "front": "沮丧",
+        "back": "Frustration / Dejected",
+        "difficulty": "medium",
+        "example": "He felt frustrated after failing the test",
+        "exampleTranslation": "考试不及格后他感到沮丧"
+      },
+      {
+        "id": "ce_emo_15",
+        "front": "感激",
+        "back": "Gratitude",
+        "difficulty": "hard",
+        "example": "I want to express my gratitude to my teacher",
+        "exampleTranslation": "我想表达对老师的感激之情"
       }
     ]
   },
@@ -1256,6 +1776,46 @@
         "difficulty": "medium",
         "example": "Next week",
         "exampleTranslation": "下星期"
+      },
+      {
+        "id": "ce_time_11",
+        "front": "黎明",
+        "back": "Dawn",
+        "difficulty": "easy",
+        "example": "The rooster crows at dawn",
+        "exampleTranslation": "公鸡在黎明时啼叫"
+      },
+      {
+        "id": "ce_time_12",
+        "front": "日落",
+        "back": "Sunset",
+        "difficulty": "easy",
+        "example": "The sunset is beautiful today",
+        "exampleTranslation": "今天的日落很美"
+      },
+      {
+        "id": "ce_time_13",
+        "front": "一刻钟",
+        "back": "A quarter of an hour",
+        "difficulty": "medium",
+        "example": "I'll be there in a quarter of an hour",
+        "exampleTranslation": "我一刻钟后到"
+      },
+      {
+        "id": "ce_time_14",
+        "front": "半夜",
+        "back": "Midnight",
+        "difficulty": "medium",
+        "example": "He came home at midnight",
+        "exampleTranslation": "他半夜才回家"
+      },
+      {
+        "id": "ce_time_15",
+        "front": "世纪",
+        "back": "Century",
+        "difficulty": "hard",
+        "example": "This building is over a century old",
+        "exampleTranslation": "这栋建筑有一百多年历史"
       }
     ]
   },
@@ -1346,6 +1906,46 @@
         "difficulty": "medium",
         "example": "You can hear thunder",
         "exampleTranslation": "你能听到雷声"
+      },
+      {
+        "id": "ce_weather_11",
+        "front": "大雾",
+        "back": "Dense fog",
+        "difficulty": "easy",
+        "example": "Drive slowly in thick fog",
+        "exampleTranslation": "大雾天慢慢开车"
+      },
+      {
+        "id": "ce_weather_12",
+        "front": "雷阵雨",
+        "back": "Thunderstorm",
+        "difficulty": "easy",
+        "example": "A thunderstorm is expected this afternoon",
+        "exampleTranslation": "今天下午预计有雷阵雨"
+      },
+      {
+        "id": "ce_weather_13",
+        "front": "热浪",
+        "back": "Heat wave",
+        "difficulty": "medium",
+        "example": "The heat wave lasted a whole week",
+        "exampleTranslation": "热浪持续了整整一周"
+      },
+      {
+        "id": "ce_weather_14",
+        "front": "霜",
+        "back": "Frost",
+        "difficulty": "medium",
+        "example": "There is frost on the grass this morning",
+        "exampleTranslation": "今天早上草地上有霜"
+      },
+      {
+        "id": "ce_weather_15",
+        "front": "台风",
+        "back": "Typhoon",
+        "difficulty": "hard",
+        "example": "The typhoon caused flooding in the south",
+        "exampleTranslation": "台风在南方造成了洪水"
       }
     ]
   },
@@ -1436,6 +2036,46 @@
         "difficulty": "medium",
         "example": "My heart beats fast",
         "exampleTranslation": "我的心跳很快"
+      },
+      {
+        "id": "ce_body_11",
+        "front": "肩膀",
+        "back": "Shoulder",
+        "difficulty": "easy",
+        "example": "My shoulder is sore from exercise",
+        "exampleTranslation": "运动后我肩膀很酸"
+      },
+      {
+        "id": "ce_body_12",
+        "front": "手腕",
+        "back": "Wrist",
+        "difficulty": "easy",
+        "example": "She hurt her wrist playing tennis",
+        "exampleTranslation": "她打网球时伤了手腕"
+      },
+      {
+        "id": "ce_body_13",
+        "front": "脚踝",
+        "back": "Ankle",
+        "difficulty": "medium",
+        "example": "He sprained his ankle",
+        "exampleTranslation": "他扭伤了脚踝"
+      },
+      {
+        "id": "ce_body_14",
+        "front": "眼皮",
+        "back": "Eyelid",
+        "difficulty": "medium",
+        "example": "Her eyelid kept twitching",
+        "exampleTranslation": "她的眼皮一直在跳"
+      },
+      {
+        "id": "ce_body_15",
+        "front": "喉咙",
+        "back": "Throat",
+        "difficulty": "hard",
+        "example": "I have a sore throat",
+        "exampleTranslation": "我喉咙疼"
       }
     ]
   },
@@ -1526,6 +2166,46 @@
         "difficulty": "medium",
         "example": "I think of you",
         "exampleTranslation": "我想你"
+      },
+      {
+        "id": "ce_act_11",
+        "front": "爬山",
+        "back": "Mountain climbing",
+        "difficulty": "easy",
+        "example": "We go mountain climbing on weekends",
+        "exampleTranslation": "我们周末去爬山"
+      },
+      {
+        "id": "ce_act_12",
+        "front": "画画",
+        "back": "Drawing / Painting",
+        "difficulty": "easy",
+        "example": "The child enjoys drawing",
+        "exampleTranslation": "这个孩子喜欢画画"
+      },
+      {
+        "id": "ce_act_13",
+        "front": "园艺",
+        "back": "Gardening",
+        "difficulty": "medium",
+        "example": "Gardening is my grandmother's hobby",
+        "exampleTranslation": "园艺是我奶奶的爱好"
+      },
+      {
+        "id": "ce_act_14",
+        "front": "缝纫",
+        "back": "Sewing",
+        "difficulty": "medium",
+        "example": "She learned sewing from her mother",
+        "exampleTranslation": "她跟妈妈学了缝纫"
+      },
+      {
+        "id": "ce_act_15",
+        "front": "滑雪",
+        "back": "Skiing",
+        "difficulty": "hard",
+        "example": "We went skiing in Hokkaido",
+        "exampleTranslation": "我们去北海道滑雪了"
       }
     ]
   },
@@ -1616,6 +2296,46 @@
         "difficulty": "medium",
         "example": "I remember the lesson",
         "exampleTranslation": "我记得这课"
+      },
+      {
+        "id": "ce_learn_11",
+        "front": "分析",
+        "back": "Analysis",
+        "difficulty": "easy",
+        "example": "The data analysis is complete",
+        "exampleTranslation": "数据分析已完成"
+      },
+      {
+        "id": "ce_learn_12",
+        "front": "假设",
+        "back": "Hypothesis",
+        "difficulty": "easy",
+        "example": "We need to test this hypothesis",
+        "exampleTranslation": "我们需要验证这个假设"
+      },
+      {
+        "id": "ce_learn_13",
+        "front": "结论",
+        "back": "Conclusion",
+        "difficulty": "medium",
+        "example": "What is your conclusion?",
+        "exampleTranslation": "你的结论是什么？"
+      },
+      {
+        "id": "ce_learn_14",
+        "front": "参考文献",
+        "back": "References",
+        "difficulty": "medium",
+        "example": "The paper has twenty references",
+        "exampleTranslation": "这篇论文有二十篇参考文献"
+      },
+      {
+        "id": "ce_learn_15",
+        "front": "方法论",
+        "back": "Methodology",
+        "difficulty": "hard",
+        "example": "The research methodology is sound",
+        "exampleTranslation": "研究方法论很合理"
       }
     ]
   },
@@ -1706,6 +2426,46 @@
         "difficulty": "medium",
         "example": "Our coach is excellent",
         "exampleTranslation": "我们的教练很优秀"
+      },
+      {
+        "id": "ce_sport_11",
+        "front": "拳击",
+        "back": "Boxing",
+        "difficulty": "easy",
+        "example": "Boxing is a popular sport",
+        "exampleTranslation": "拳击是一项受欢迎的运动"
+      },
+      {
+        "id": "ce_sport_12",
+        "front": "游泳",
+        "back": "Swimming",
+        "difficulty": "easy",
+        "example": "Swimming is good for your health",
+        "exampleTranslation": "游泳对健康有益"
+      },
+      {
+        "id": "ce_sport_13",
+        "front": "裁判",
+        "back": "Referee",
+        "difficulty": "medium",
+        "example": "The referee blew the whistle",
+        "exampleTranslation": "裁判吹了哨子"
+      },
+      {
+        "id": "ce_sport_14",
+        "front": "锦标赛",
+        "back": "Championship",
+        "difficulty": "medium",
+        "example": "The team won the national championship",
+        "exampleTranslation": "这支球队赢得了全国锦标赛"
+      },
+      {
+        "id": "ce_sport_15",
+        "front": "乒乓球",
+        "back": "Table tennis",
+        "difficulty": "hard",
+        "example": "China dominates in table tennis",
+        "exampleTranslation": "中国在乒乓球领域占主导地位"
       }
     ]
   },
@@ -1796,6 +2556,46 @@
         "difficulty": "medium",
         "example": "I'm buying a souvenir",
         "exampleTranslation": "我买纪念品"
+      },
+      {
+        "id": "ce_travel_11",
+        "front": "护照",
+        "back": "Passport",
+        "difficulty": "easy",
+        "example": "Don't forget your passport",
+        "exampleTranslation": "别忘了带护照"
+      },
+      {
+        "id": "ce_travel_12",
+        "front": "预订",
+        "back": "Reservation / Booking",
+        "difficulty": "easy",
+        "example": "I made a hotel reservation",
+        "exampleTranslation": "我预订了酒店"
+      },
+      {
+        "id": "ce_travel_13",
+        "front": "游轮",
+        "back": "Cruise ship",
+        "difficulty": "medium",
+        "example": "We took a cruise around the islands",
+        "exampleTranslation": "我们坐游轮环游了岛屿"
+      },
+      {
+        "id": "ce_travel_14",
+        "front": "签证",
+        "back": "Visa",
+        "difficulty": "medium",
+        "example": "I applied for a tourist visa",
+        "exampleTranslation": "我申请了旅游签证"
+      },
+      {
+        "id": "ce_travel_15",
+        "front": "旅行社",
+        "back": "Travel agency",
+        "difficulty": "hard",
+        "example": "The travel agency planned our entire trip",
+        "exampleTranslation": "旅行社安排了我们整个行程"
       }
     ]
   },
@@ -1886,6 +2686,46 @@
         "difficulty": "medium",
         "example": "Reading is my hobby",
         "exampleTranslation": "阅读是我的爱好"
+      },
+      {
+        "id": "ce_ent_11",
+        "front": "话剧",
+        "back": "Theater play",
+        "difficulty": "easy",
+        "example": "We watched a theater play last night",
+        "exampleTranslation": "我们昨晚看了一场话剧"
+      },
+      {
+        "id": "ce_ent_12",
+        "front": "音乐会",
+        "back": "Concert",
+        "difficulty": "easy",
+        "example": "The concert tickets are sold out",
+        "exampleTranslation": "音乐会的票卖完了"
+      },
+      {
+        "id": "ce_ent_13",
+        "front": "画展",
+        "back": "Art exhibition",
+        "difficulty": "medium",
+        "example": "There is a new art exhibition at the museum",
+        "exampleTranslation": "博物馆有一个新画展"
+      },
+      {
+        "id": "ce_ent_14",
+        "front": "电子游戏",
+        "back": "Video game",
+        "difficulty": "medium",
+        "example": "He spends too much time on video games",
+        "exampleTranslation": "他花太多时间玩电子游戏"
+      },
+      {
+        "id": "ce_ent_15",
+        "front": "纪录片",
+        "back": "Documentary",
+        "difficulty": "hard",
+        "example": "The nature documentary won an award",
+        "exampleTranslation": "这部自然纪录片获了奖"
       }
     ]
   }

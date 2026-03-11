@@ -86,6 +86,46 @@
         "difficulty": "medium",
         "example": "Nie, nie chcę",
         "exampleTranslation": "Nein, ich will nicht"
+      },
+      {
+        "id": "gp_greet_11",
+        "front": "Willkommen",
+        "back": "Witaj",
+        "difficulty": "easy",
+        "example": "Witaj w naszym domu",
+        "exampleTranslation": "Willkommen in unserem Haus"
+      },
+      {
+        "id": "gp_greet_12",
+        "front": "Wie geht es Ihnen?",
+        "back": "Jak się Pan/Pani miewa?",
+        "difficulty": "easy",
+        "example": "Jak się Pan dzisiaj miewa?",
+        "exampleTranslation": "Wie geht es Ihnen heute?"
+      },
+      {
+        "id": "gp_greet_13",
+        "front": "Bis später",
+        "back": "Do zobaczenia",
+        "difficulty": "medium",
+        "example": "Do zobaczenia, miłego dnia!",
+        "exampleTranslation": "Bis später, schönen Tag noch!"
+      },
+      {
+        "id": "gp_greet_14",
+        "front": "Freut mich",
+        "back": "Miło mi",
+        "difficulty": "medium",
+        "example": "Miło mi cię poznać, jestem Marek",
+        "exampleTranslation": "Freut mich, ich bin Marek"
+      },
+      {
+        "id": "gp_greet_15",
+        "front": "Pass auf dich auf",
+        "back": "Trzymaj się",
+        "difficulty": "hard",
+        "example": "Trzymaj się ciepło tej zimy",
+        "exampleTranslation": "Pass auf dich auf diesen Winter"
       }
     ]
   },
@@ -176,6 +216,46 @@
         "difficulty": "medium",
         "example": "Moja ciocia jest bardzo miła",
         "exampleTranslation": "Meine Tante ist sehr freundlich"
+      },
+      {
+        "id": "gp_fam_11",
+        "front": "Onkel",
+        "back": "Wujek",
+        "difficulty": "easy",
+        "example": "Mój wujek mieszka w Krakowie",
+        "exampleTranslation": "Mein Onkel wohnt in Krakau"
+      },
+      {
+        "id": "gp_fam_12",
+        "front": "Tante",
+        "back": "Ciocia",
+        "difficulty": "easy",
+        "example": "Ciocia gotuje pyszne pierogi",
+        "exampleTranslation": "Die Tante kocht leckere Piroggen"
+      },
+      {
+        "id": "gp_fam_13",
+        "front": "Cousin",
+        "back": "Kuzyn",
+        "difficulty": "medium",
+        "example": "Mój kuzyn studiuje medycynę",
+        "exampleTranslation": "Mein Cousin studiert Medizin"
+      },
+      {
+        "id": "gp_fam_14",
+        "front": "Enkelkind",
+        "back": "Wnuk",
+        "difficulty": "medium",
+        "example": "Wnuk odwiedza dziadków co niedzielę",
+        "exampleTranslation": "Das Enkelkind besucht die Großeltern jeden Sonntag"
+      },
+      {
+        "id": "gp_fam_15",
+        "front": "Schwiegersohn",
+        "back": "Zięć",
+        "difficulty": "hard",
+        "example": "Zięć przyszedł na obiad",
+        "exampleTranslation": "Der Schwiegersohn kam zum Mittagessen"
       }
     ]
   },
@@ -266,6 +346,46 @@
         "difficulty": "medium",
         "example": "Dziesięć euro, proszę",
         "exampleTranslation": "Zehn Euro, bitte"
+      },
+      {
+        "id": "gp_num_11",
+        "front": "Elf",
+        "back": "Jedenaście",
+        "difficulty": "easy",
+        "example": "W drużynie jest jedenaście osób",
+        "exampleTranslation": "In der Mannschaft sind elf Personen"
+      },
+      {
+        "id": "gp_num_12",
+        "front": "Zwanzig",
+        "back": "Dwadzieścia",
+        "difficulty": "easy",
+        "example": "Ona ma dwadzieścia lat",
+        "exampleTranslation": "Sie ist zwanzig Jahre alt"
+      },
+      {
+        "id": "gp_num_13",
+        "front": "Fünfzig",
+        "back": "Pięćdziesiąt",
+        "difficulty": "medium",
+        "example": "Bilet kosztuje pięćdziesiąt złotych",
+        "exampleTranslation": "Das Ticket kostet fünfzig Zloty"
+      },
+      {
+        "id": "gp_num_14",
+        "front": "Hundert",
+        "back": "Sto",
+        "difficulty": "medium",
+        "example": "W tej książce jest sto stron",
+        "exampleTranslation": "In diesem Buch sind hundert Seiten"
+      },
+      {
+        "id": "gp_num_15",
+        "front": "Tausend",
+        "back": "Tysiąc",
+        "difficulty": "hard",
+        "example": "To miasto ma tysiąc lat historii",
+        "exampleTranslation": "Diese Stadt hat tausend Jahre Geschichte"
       }
     ]
   },
@@ -356,6 +476,46 @@
         "difficulty": "medium",
         "example": "Słoń jest szary",
         "exampleTranslation": "Der Elefant ist grau"
+      },
+      {
+        "id": "gp_col_11",
+        "front": "Lila",
+        "back": "Fioletowy",
+        "difficulty": "easy",
+        "example": "Ona nosi fioletową sukienkę",
+        "exampleTranslation": "Sie trägt ein lila Kleid"
+      },
+      {
+        "id": "gp_col_12",
+        "front": "Rosa",
+        "back": "Różowy",
+        "difficulty": "easy",
+        "example": "Kwiaty są różowe",
+        "exampleTranslation": "Die Blumen sind rosa"
+      },
+      {
+        "id": "gp_col_13",
+        "front": "Grau",
+        "back": "Szary",
+        "difficulty": "medium",
+        "example": "Niebo jest dzisiaj szare",
+        "exampleTranslation": "Der Himmel ist heute grau"
+      },
+      {
+        "id": "gp_col_14",
+        "front": "Braun",
+        "back": "Brązowy",
+        "difficulty": "medium",
+        "example": "On ma brązowe oczy",
+        "exampleTranslation": "Er hat braune Augen"
+      },
+      {
+        "id": "gp_col_15",
+        "front": "Silber",
+        "back": "Srebrny",
+        "difficulty": "hard",
+        "example": "Srebrny samochód lśni w słońcu",
+        "exampleTranslation": "Das silberne Auto glänzt in der Sonne"
       }
     ]
   },
@@ -446,6 +606,46 @@
         "difficulty": "medium",
         "example": "Jem jajka na śniadanie",
         "exampleTranslation": "Ich esse Eier zum Frühstück"
+      },
+      {
+        "id": "gp_food_11",
+        "front": "Kartoffel",
+        "back": "Ziemniak",
+        "difficulty": "easy",
+        "example": "Ziemniaki są podstawą polskiej kuchni",
+        "exampleTranslation": "Kartoffeln sind die Grundlage der polnischen Küche"
+      },
+      {
+        "id": "gp_food_12",
+        "front": "Wurst",
+        "back": "Kiełbasa",
+        "difficulty": "easy",
+        "example": "Polska kiełbasa jest bardzo smaczna",
+        "exampleTranslation": "Polnische Wurst ist sehr lecker"
+      },
+      {
+        "id": "gp_food_13",
+        "front": "Gewürze",
+        "back": "Przyprawy",
+        "difficulty": "medium",
+        "example": "Te przyprawy nadają potrawom smak",
+        "exampleTranslation": "Diese Gewürze geben dem Essen Geschmack"
+      },
+      {
+        "id": "gp_food_14",
+        "front": "Gebäck",
+        "back": "Pieczywo",
+        "difficulty": "medium",
+        "example": "Polskie pieczywo jest pyszne",
+        "exampleTranslation": "Polnisches Gebäck ist köstlich"
+      },
+      {
+        "id": "gp_food_15",
+        "front": "Meeresfrüchte",
+        "back": "Owoce morza",
+        "difficulty": "hard",
+        "example": "Ta restauracja słynie z owoców morza",
+        "exampleTranslation": "Dieses Restaurant ist berühmt für Meeresfrüchte"
       }
     ]
   },
@@ -536,6 +736,46 @@
         "difficulty": "medium",
         "example": "Muzeum jest interesujące",
         "exampleTranslation": "Das Museum ist interessant"
+      },
+      {
+        "id": "gp_place_11",
+        "front": "Apotheke",
+        "back": "Apteka",
+        "difficulty": "easy",
+        "example": "Apteka jest czynna w niedzielę",
+        "exampleTranslation": "Die Apotheke ist am Sonntag geöffnet"
+      },
+      {
+        "id": "gp_place_12",
+        "front": "Bibliothek",
+        "back": "Biblioteka",
+        "difficulty": "easy",
+        "example": "Uczę się w bibliotece",
+        "exampleTranslation": "Ich lerne in der Bibliothek"
+      },
+      {
+        "id": "gp_place_13",
+        "front": "Rathaus",
+        "back": "Ratusz",
+        "difficulty": "medium",
+        "example": "Ratusz stoi na rynku",
+        "exampleTranslation": "Das Rathaus steht am Marktplatz"
+      },
+      {
+        "id": "gp_place_14",
+        "front": "Tankstelle",
+        "back": "Stacja benzynowa",
+        "difficulty": "medium",
+        "example": "Zatrzymajmy się na stacji benzynowej",
+        "exampleTranslation": "Halten wir an der Tankstelle"
+      },
+      {
+        "id": "gp_place_15",
+        "front": "Schloss",
+        "back": "Zamek",
+        "difficulty": "hard",
+        "example": "Zamek królewski jest piękny",
+        "exampleTranslation": "Das königliche Schloss ist wunderschön"
       }
     ]
   },
@@ -626,6 +866,46 @@
         "difficulty": "medium",
         "example": "Płaszcz jest ciepły",
         "exampleTranslation": "Der Mantel ist warm"
+      },
+      {
+        "id": "gp_cloth_11",
+        "front": "Schal",
+        "back": "Szalik",
+        "difficulty": "easy",
+        "example": "Załóż szalik, jest zimno",
+        "exampleTranslation": "Zieh deinen Schal an, es ist kalt"
+      },
+      {
+        "id": "gp_cloth_12",
+        "front": "Turnschuhe",
+        "back": "Adidasy",
+        "difficulty": "easy",
+        "example": "Kupiłem nowe adidasy",
+        "exampleTranslation": "Ich habe neue Turnschuhe gekauft"
+      },
+      {
+        "id": "gp_cloth_13",
+        "front": "Anzug",
+        "back": "Garnitur",
+        "difficulty": "medium",
+        "example": "On nosi elegancki garnitur",
+        "exampleTranslation": "Er trägt einen eleganten Anzug"
+      },
+      {
+        "id": "gp_cloth_14",
+        "front": "Krawatte",
+        "back": "Krawat",
+        "difficulty": "medium",
+        "example": "Jego krawat jest z jedwabiu",
+        "exampleTranslation": "Seine Krawatte ist aus Seide"
+      },
+      {
+        "id": "gp_cloth_15",
+        "front": "Regenmantel",
+        "back": "Płaszcz przeciwdeszczowy",
+        "difficulty": "hard",
+        "example": "Nie zapomnij płaszcza przeciwdeszczowego",
+        "exampleTranslation": "Vergiss deinen Regenmantel nicht"
       }
     ]
   },
@@ -716,6 +996,46 @@
         "difficulty": "medium",
         "example": "Łóżko jest miękkie",
         "exampleTranslation": "Das Bett ist weich"
+      },
+      {
+        "id": "gp_house_11",
+        "front": "Decke",
+        "back": "Sufit",
+        "difficulty": "easy",
+        "example": "Sufit jest bardzo wysoki",
+        "exampleTranslation": "Die Decke ist sehr hoch"
+      },
+      {
+        "id": "gp_house_12",
+        "front": "Treppe",
+        "back": "Schody",
+        "difficulty": "easy",
+        "example": "Wejdź po schodach na górę",
+        "exampleTranslation": "Geh die Treppe hinauf"
+      },
+      {
+        "id": "gp_house_13",
+        "front": "Balkon",
+        "back": "Balkon",
+        "difficulty": "medium",
+        "example": "Pijemy kawę na balkonie",
+        "exampleTranslation": "Wir trinken Kaffee auf dem Balkon"
+      },
+      {
+        "id": "gp_house_14",
+        "front": "Kleiderschrank",
+        "back": "Szafa",
+        "difficulty": "medium",
+        "example": "Szafa jest pełna ubrań",
+        "exampleTranslation": "Der Kleiderschrank ist voll"
+      },
+      {
+        "id": "gp_house_15",
+        "front": "Keller",
+        "back": "Piwnica",
+        "difficulty": "hard",
+        "example": "W piwnicy przechowujemy przetwory",
+        "exampleTranslation": "Im Keller lagern wir die Einmachgläser"
       }
     ]
   },
@@ -806,6 +1126,46 @@
         "difficulty": "medium",
         "example": "Mechanik naprawia samochody",
         "exampleTranslation": "Der Mechaniker repariert Autos"
+      },
+      {
+        "id": "gp_work_11",
+        "front": "Beförderung",
+        "back": "Awans",
+        "difficulty": "easy",
+        "example": "Ona dostała awans",
+        "exampleTranslation": "Sie hat eine Beförderung bekommen"
+      },
+      {
+        "id": "gp_work_12",
+        "front": "Besprechung",
+        "back": "Spotkanie",
+        "difficulty": "easy",
+        "example": "Spotkanie zaczyna się o dziewiątej",
+        "exampleTranslation": "Die Besprechung beginnt um neun Uhr"
+      },
+      {
+        "id": "gp_work_13",
+        "front": "Frist",
+        "back": "Termin",
+        "difficulty": "medium",
+        "example": "Termin upływa w przyszły piątek",
+        "exampleTranslation": "Die Frist endet nächsten Freitag"
+      },
+      {
+        "id": "gp_work_14",
+        "front": "Lebenslauf",
+        "back": "Życiorys",
+        "difficulty": "medium",
+        "example": "Wyślij swój życiorys mailem",
+        "exampleTranslation": "Senden Sie Ihren Lebenslauf per E-Mail"
+      },
+      {
+        "id": "gp_work_15",
+        "front": "Ruhestand",
+        "back": "Emerytura",
+        "difficulty": "hard",
+        "example": "On przechodzi na emeryturę w przyszłym roku",
+        "exampleTranslation": "Er geht nächstes Jahr in den Ruhestand"
       }
     ]
   },
@@ -896,6 +1256,46 @@
         "difficulty": "medium",
         "example": "Kupuję bilet",
         "exampleTranslation": "Ich kaufe eine Fahrkarte"
+      },
+      {
+        "id": "gp_trans_11",
+        "front": "Bahnsteig",
+        "back": "Peron",
+        "difficulty": "easy",
+        "example": "Pociąg przyjeżdża na peron trzeci",
+        "exampleTranslation": "Der Zug kommt an Bahnsteig drei an"
+      },
+      {
+        "id": "gp_trans_12",
+        "front": "Ampel",
+        "back": "Sygnalizacja świetlna",
+        "difficulty": "easy",
+        "example": "Skręć w prawo przy sygnalizacji świetlnej",
+        "exampleTranslation": "Biegen Sie an der Ampel rechts ab"
+      },
+      {
+        "id": "gp_trans_13",
+        "front": "Stau",
+        "back": "Korek",
+        "difficulty": "medium",
+        "example": "Na autostradzie jest korek",
+        "exampleTranslation": "Auf der Autobahn ist Stau"
+      },
+      {
+        "id": "gp_trans_14",
+        "front": "Führerschein",
+        "back": "Prawo jazdy",
+        "difficulty": "medium",
+        "example": "Zdałem egzamin na prawo jazdy",
+        "exampleTranslation": "Ich habe die Führerscheinprüfung bestanden"
+      },
+      {
+        "id": "gp_trans_15",
+        "front": "Parkplatz",
+        "back": "Parking",
+        "difficulty": "hard",
+        "example": "Parking podziemny jest pełny",
+        "exampleTranslation": "Der Parkplatz ist leider voll"
       }
     ]
   },
@@ -986,6 +1386,46 @@
         "difficulty": "medium",
         "example": "Mój plecak jest ciężki",
         "exampleTranslation": "Mein Rucksack ist schwer"
+      },
+      {
+        "id": "gp_edu_11",
+        "front": "Lehrplan",
+        "back": "Program nauczania",
+        "difficulty": "easy",
+        "example": "Program nauczania zmienił się w tym roku",
+        "exampleTranslation": "Der Lehrplan hat sich dieses Jahr geändert"
+      },
+      {
+        "id": "gp_edu_12",
+        "front": "Vorlesung",
+        "back": "Wykład",
+        "difficulty": "easy",
+        "example": "Profesor prowadzi wykład",
+        "exampleTranslation": "Der Professor hält eine Vorlesung"
+      },
+      {
+        "id": "gp_edu_13",
+        "front": "Stipendium",
+        "back": "Stypendium",
+        "difficulty": "medium",
+        "example": "Ona otrzymała stypendium",
+        "exampleTranslation": "Sie hat ein Stipendium erhalten"
+      },
+      {
+        "id": "gp_edu_14",
+        "front": "Abschlussarbeit",
+        "back": "Praca dyplomowa",
+        "difficulty": "medium",
+        "example": "On pisze pracę dyplomową",
+        "exampleTranslation": "Er schreibt seine Abschlussarbeit"
+      },
+      {
+        "id": "gp_edu_15",
+        "front": "Abschlussfeier",
+        "back": "Ukończenie studiów",
+        "difficulty": "hard",
+        "example": "Ceremonia ukończenia studiów jest w czerwcu",
+        "exampleTranslation": "Die Abschlussfeier findet im Juni statt"
       }
     ]
   },
@@ -1076,6 +1516,46 @@
         "difficulty": "medium",
         "example": "Księżyc jest w pełni",
         "exampleTranslation": "Der Mond ist voll"
+      },
+      {
+        "id": "gp_nature_11",
+        "front": "Wasserfall",
+        "back": "Wodospad",
+        "difficulty": "easy",
+        "example": "Wodospad jest piękny wiosną",
+        "exampleTranslation": "Der Wasserfall ist im Frühling wunderschön"
+      },
+      {
+        "id": "gp_nature_12",
+        "front": "Hügel",
+        "back": "Wzgórze",
+        "difficulty": "easy",
+        "example": "Dom stoi na wzgórzu",
+        "exampleTranslation": "Das Haus steht auf einem Hügel"
+      },
+      {
+        "id": "gp_nature_13",
+        "front": "Höhle",
+        "back": "Jaskinia",
+        "difficulty": "medium",
+        "example": "Odwiedziliśmy jaskinię w Tatrach",
+        "exampleTranslation": "Wir haben eine Höhle in der Tatra besucht"
+      },
+      {
+        "id": "gp_nature_14",
+        "front": "Wüste",
+        "back": "Pustynia",
+        "difficulty": "medium",
+        "example": "Na pustyni rzadko pada deszcz",
+        "exampleTranslation": "In der Wüste regnet es selten"
+      },
+      {
+        "id": "gp_nature_15",
+        "front": "Vulkan",
+        "back": "Wulkan",
+        "difficulty": "hard",
+        "example": "Wulkan jest aktywny od wczoraj",
+        "exampleTranslation": "Der Vulkan ist seit gestern aktiv"
       }
     ]
   },
@@ -1166,6 +1646,46 @@
         "difficulty": "medium",
         "example": "Są znudzeni",
         "exampleTranslation": "Sie sind gelangweilt"
+      },
+      {
+        "id": "gp_emo_11",
+        "front": "Stolz",
+        "back": "Duma",
+        "difficulty": "easy",
+        "example": "Czuję dumę z moich dzieci",
+        "exampleTranslation": "Ich bin stolz auf meine Kinder"
+      },
+      {
+        "id": "gp_emo_12",
+        "front": "Angst",
+        "back": "Lęk",
+        "difficulty": "easy",
+        "example": "Lęk przed egzaminem jest normalny",
+        "exampleTranslation": "Angst vor der Prüfung ist normal"
+      },
+      {
+        "id": "gp_emo_13",
+        "front": "Nostalgie",
+        "back": "Nostalgia",
+        "difficulty": "medium",
+        "example": "Czuję nostalgię za dzieciństwem",
+        "exampleTranslation": "Ich empfinde Nostalgie für meine Kindheit"
+      },
+      {
+        "id": "gp_emo_14",
+        "front": "Frustration",
+        "back": "Frustracja",
+        "difficulty": "medium",
+        "example": "Jego frustracja była widoczna",
+        "exampleTranslation": "Seine Frustration war deutlich zu spüren"
+      },
+      {
+        "id": "gp_emo_15",
+        "front": "Dankbarkeit",
+        "back": "Wdzięczność",
+        "difficulty": "hard",
+        "example": "Chciałbym wyrazić swoją wdzięczność",
+        "exampleTranslation": "Ich möchte meine Dankbarkeit ausdrücken"
       }
     ]
   },
@@ -1256,6 +1776,46 @@
         "difficulty": "medium",
         "example": "Następny tydzień",
         "exampleTranslation": "Nächste Woche"
+      },
+      {
+        "id": "gp_time_11",
+        "front": "Morgendämmerung",
+        "back": "Świt",
+        "difficulty": "easy",
+        "example": "Codziennie wstaje o świcie",
+        "exampleTranslation": "Er steht jeden Tag bei Morgendämmerung auf"
+      },
+      {
+        "id": "gp_time_12",
+        "front": "Sonnenuntergang",
+        "back": "Zachód słońca",
+        "difficulty": "easy",
+        "example": "Zachód słońca jest piękny",
+        "exampleTranslation": "Der Sonnenuntergang ist wunderschön"
+      },
+      {
+        "id": "gp_time_13",
+        "front": "Viertelstunde",
+        "back": "Kwadrans",
+        "difficulty": "medium",
+        "example": "Przyjdę za kwadrans",
+        "exampleTranslation": "Ich komme in einer Viertelstunde"
+      },
+      {
+        "id": "gp_time_14",
+        "front": "Mitternacht",
+        "back": "Północ",
+        "difficulty": "medium",
+        "example": "Sklep zamyka się o północy",
+        "exampleTranslation": "Das Geschäft schließt um Mitternacht"
+      },
+      {
+        "id": "gp_time_15",
+        "front": "Jahrzehnt",
+        "back": "Dekada",
+        "difficulty": "hard",
+        "example": "Wiele się zmieniło w ciągu dekady",
+        "exampleTranslation": "Viel hat sich in einem Jahrzehnt verändert"
       }
     ]
   },
@@ -1346,6 +1906,46 @@
         "difficulty": "medium",
         "example": "Słychać grzmot",
         "exampleTranslation": "Man hört den Donner"
+      },
+      {
+        "id": "gp_weather_11",
+        "front": "Nebel",
+        "back": "Mgła",
+        "difficulty": "easy",
+        "example": "Dziś rano jest mgła",
+        "exampleTranslation": "Heute Morgen liegt Nebel"
+      },
+      {
+        "id": "gp_weather_12",
+        "front": "Gewitter",
+        "back": "Burza",
+        "difficulty": "easy",
+        "example": "Burza jest przewidziana na wieczór",
+        "exampleTranslation": "Ein Gewitter wird für den Abend erwartet"
+      },
+      {
+        "id": "gp_weather_13",
+        "front": "Hitzewelle",
+        "back": "Fala upałów",
+        "difficulty": "medium",
+        "example": "Fala upałów trwa od tygodnia",
+        "exampleTranslation": "Die Hitzewelle dauert seit einer Woche"
+      },
+      {
+        "id": "gp_weather_14",
+        "front": "Frost",
+        "back": "Mróz",
+        "difficulty": "medium",
+        "example": "Dziś w nocy będzie mróz",
+        "exampleTranslation": "Heute Nacht gibt es Frost"
+      },
+      {
+        "id": "gp_weather_15",
+        "front": "Hagel",
+        "back": "Grad",
+        "difficulty": "hard",
+        "example": "Grad zniszczył plony",
+        "exampleTranslation": "Der Hagel hat die Ernte beschädigt"
       }
     ]
   },
@@ -1436,6 +2036,46 @@
         "difficulty": "medium",
         "example": "Moje serce bije szybko",
         "exampleTranslation": "Mein Herz schlägt schnell"
+      },
+      {
+        "id": "gp_body_11",
+        "front": "Schulter",
+        "back": "Ramię",
+        "difficulty": "easy",
+        "example": "Boli mnie ramię",
+        "exampleTranslation": "Meine Schulter tut weh"
+      },
+      {
+        "id": "gp_body_12",
+        "front": "Handgelenk",
+        "back": "Nadgarstek",
+        "difficulty": "easy",
+        "example": "Nosi zegarek na nadgarstku",
+        "exampleTranslation": "Sie trägt eine Uhr am Handgelenk"
+      },
+      {
+        "id": "gp_body_13",
+        "front": "Knöchel",
+        "back": "Kostka",
+        "difficulty": "medium",
+        "example": "Skręcił kostkę",
+        "exampleTranslation": "Er hat sich den Knöchel verstaucht"
+      },
+      {
+        "id": "gp_body_14",
+        "front": "Stirn",
+        "back": "Czoło",
+        "difficulty": "medium",
+        "example": "Ma pot na czole",
+        "exampleTranslation": "Er hat Schweiß auf der Stirn"
+      },
+      {
+        "id": "gp_body_15",
+        "front": "Kehle",
+        "back": "Gardło",
+        "difficulty": "hard",
+        "example": "Od wczoraj boli mnie gardło",
+        "exampleTranslation": "Seit gestern tut mir die Kehle weh"
       }
     ]
   },
@@ -1526,6 +2166,46 @@
         "difficulty": "medium",
         "example": "Myślę o tobie",
         "exampleTranslation": "Ich denke an dich"
+      },
+      {
+        "id": "gp_act_11",
+        "front": "Wandern",
+        "back": "Wędrówka",
+        "difficulty": "easy",
+        "example": "Lubimy wędrówki po górach",
+        "exampleTranslation": "Wir wandern gern in den Bergen"
+      },
+      {
+        "id": "gp_act_12",
+        "front": "Zeichnen",
+        "back": "Rysowanie",
+        "difficulty": "easy",
+        "example": "Rysowanie to jego ulubione hobby",
+        "exampleTranslation": "Zeichnen ist sein Lieblingshobby"
+      },
+      {
+        "id": "gp_act_13",
+        "front": "Gartenarbeit",
+        "back": "Ogrodnictwo",
+        "difficulty": "medium",
+        "example": "Ogrodnictwo jest relaksujące w weekendy",
+        "exampleTranslation": "Gartenarbeit ist am Wochenende entspannend"
+      },
+      {
+        "id": "gp_act_14",
+        "front": "Nähen",
+        "back": "Szycie",
+        "difficulty": "medium",
+        "example": "Babcia nauczyła mnie szycia",
+        "exampleTranslation": "Meine Großmutter hat mir das Nähen beigebracht"
+      },
+      {
+        "id": "gp_act_15",
+        "front": "Skifahren",
+        "back": "Narciarstwo",
+        "difficulty": "hard",
+        "example": "Jeździmy na nartach w Zakopanem",
+        "exampleTranslation": "Wir fahren Ski in Zakopane"
       }
     ]
   },
@@ -1616,6 +2296,46 @@
         "difficulty": "medium",
         "example": "Zapamiętałem lekcję",
         "exampleTranslation": "Ich erinnere mich an die Lektion"
+      },
+      {
+        "id": "gp_learn_11",
+        "front": "Analyse",
+        "back": "Analiza",
+        "difficulty": "easy",
+        "example": "Analiza danych zajmuje czas",
+        "exampleTranslation": "Die Datenanalyse braucht Zeit"
+      },
+      {
+        "id": "gp_learn_12",
+        "front": "Hypothese",
+        "back": "Hipoteza",
+        "difficulty": "easy",
+        "example": "Hipoteza wymaga weryfikacji",
+        "exampleTranslation": "Die Hypothese muss überprüft werden"
+      },
+      {
+        "id": "gp_learn_13",
+        "front": "Schlussfolgerung",
+        "back": "Wniosek",
+        "difficulty": "medium",
+        "example": "Jaki jest twój wniosek?",
+        "exampleTranslation": "Was ist Ihre Schlussfolgerung?"
+      },
+      {
+        "id": "gp_learn_14",
+        "front": "Nachschlagewerk",
+        "back": "Odniesienie",
+        "difficulty": "medium",
+        "example": "Ta książka jest doskonałym odniesieniem",
+        "exampleTranslation": "Dieses Buch ist ein ausgezeichnetes Nachschlagewerk"
+      },
+      {
+        "id": "gp_learn_15",
+        "front": "Methodik",
+        "back": "Metodologia",
+        "difficulty": "hard",
+        "example": "Metodologia badań jest rygorystyczna",
+        "exampleTranslation": "Die Forschungsmethodik ist streng"
       }
     ]
   },
@@ -1706,6 +2426,46 @@
         "difficulty": "medium",
         "example": "Nasz trener jest świetny",
         "exampleTranslation": "Unser Trainer ist ausgezeichnet"
+      },
+      {
+        "id": "gp_sport_11",
+        "front": "Boxen",
+        "back": "Boks",
+        "difficulty": "easy",
+        "example": "Boks jest popularnym sportem",
+        "exampleTranslation": "Boxen ist ein beliebter Sport"
+      },
+      {
+        "id": "gp_sport_12",
+        "front": "Schwimmen",
+        "back": "Pływanie",
+        "difficulty": "easy",
+        "example": "Pływanie jest dobre dla zdrowia",
+        "exampleTranslation": "Schwimmen ist gut für die Gesundheit"
+      },
+      {
+        "id": "gp_sport_13",
+        "front": "Schiedsrichter",
+        "back": "Sędzia",
+        "difficulty": "medium",
+        "example": "Sędzia odgwizdał koniec meczu",
+        "exampleTranslation": "Der Schiedsrichter pfiff das Spiel ab"
+      },
+      {
+        "id": "gp_sport_14",
+        "front": "Meisterschaft",
+        "back": "Mistrzostwa",
+        "difficulty": "medium",
+        "example": "Drużyna wygrała mistrzostwa",
+        "exampleTranslation": "Die Mannschaft hat die Meisterschaft gewonnen"
+      },
+      {
+        "id": "gp_sport_15",
+        "front": "Volleyball",
+        "back": "Siatkówka",
+        "difficulty": "hard",
+        "example": "Polska jest znana z siatkówki",
+        "exampleTranslation": "Polen ist bekannt für Volleyball"
       }
     ]
   },
@@ -1796,6 +2556,46 @@
         "difficulty": "medium",
         "example": "Kupuję pamiątkę",
         "exampleTranslation": "Ich kaufe ein Souvenir"
+      },
+      {
+        "id": "gp_travel_11",
+        "front": "Reisepass",
+        "back": "Paszport",
+        "difficulty": "easy",
+        "example": "Nie zapomnij paszportu",
+        "exampleTranslation": "Vergiss deinen Reisepass nicht"
+      },
+      {
+        "id": "gp_travel_12",
+        "front": "Reservierung",
+        "back": "Rezerwacja",
+        "difficulty": "easy",
+        "example": "Zrobiłem rezerwację hotelową",
+        "exampleTranslation": "Ich habe eine Hotelreservierung gemacht"
+      },
+      {
+        "id": "gp_travel_13",
+        "front": "Kreuzfahrt",
+        "back": "Rejs",
+        "difficulty": "medium",
+        "example": "Rejs trwa tydzień",
+        "exampleTranslation": "Die Kreuzfahrt dauert eine Woche"
+      },
+      {
+        "id": "gp_travel_14",
+        "front": "Visum",
+        "back": "Wiza",
+        "difficulty": "medium",
+        "example": "Do tego kraju potrzebna jest wiza",
+        "exampleTranslation": "Man braucht ein Visum für dieses Land"
+      },
+      {
+        "id": "gp_travel_15",
+        "front": "Sehenswürdigkeit",
+        "back": "Atrakcja turystyczna",
+        "difficulty": "hard",
+        "example": "Wawel to największa atrakcja turystyczna Krakowa",
+        "exampleTranslation": "Der Wawel ist die größte Sehenswürdigkeit in Krakau"
       }
     ]
   },
@@ -1886,6 +2686,46 @@
         "difficulty": "medium",
         "example": "Czytanie jest moim hobby",
         "exampleTranslation": "Lesen ist mein Hobby"
+      },
+      {
+        "id": "gp_ent_11",
+        "front": "Theaterstück",
+        "back": "Sztuka teatralna",
+        "difficulty": "easy",
+        "example": "Wczoraj widzieliśmy sztukę teatralną",
+        "exampleTranslation": "Gestern haben wir ein Theaterstück gesehen"
+      },
+      {
+        "id": "gp_ent_12",
+        "front": "Konzert",
+        "back": "Koncert",
+        "difficulty": "easy",
+        "example": "Bilety na koncert są wyprzedane",
+        "exampleTranslation": "Die Konzertkarten sind ausverkauft"
+      },
+      {
+        "id": "gp_ent_13",
+        "front": "Kunstausstellung",
+        "back": "Wystawa sztuki",
+        "difficulty": "medium",
+        "example": "Wystawa sztuki otwiera się jutro",
+        "exampleTranslation": "Die Kunstausstellung eröffnet morgen"
+      },
+      {
+        "id": "gp_ent_14",
+        "front": "Videospiel",
+        "back": "Gra wideo",
+        "difficulty": "medium",
+        "example": "Ta gra wideo jest bardzo popularna",
+        "exampleTranslation": "Dieses Videospiel ist sehr beliebt"
+      },
+      {
+        "id": "gp_ent_15",
+        "front": "Dokumentarfilm",
+        "back": "Film dokumentalny",
+        "difficulty": "hard",
+        "example": "Film dokumentalny o przyrodzie zdobył nagrodę",
+        "exampleTranslation": "Der Naturdokumentarfilm hat einen Preis gewonnen"
       }
     ]
   }

@@ -86,6 +86,46 @@
         "difficulty": "medium",
         "example": "Have a nice day",
         "exampleTranslation": "Гарного дня"
+      },
+      {
+        "id": "ue_basic_11",
+        "front": "Вибачте",
+        "back": "Excuse me",
+        "difficulty": "easy",
+        "example": "Excuse me, where is the station?",
+        "exampleTranslation": "Вибачте, де станція?"
+      },
+      {
+        "id": "ue_basic_12",
+        "front": "Звичайно",
+        "back": "Of course",
+        "difficulty": "easy",
+        "example": "Of course, I will help.",
+        "exampleTranslation": "Звичайно, я допоможу."
+      },
+      {
+        "id": "ue_basic_13",
+        "front": "Можливо",
+        "back": "Perhaps",
+        "difficulty": "medium",
+        "example": "Perhaps he will come later.",
+        "exampleTranslation": "Можливо, він прийде пізніше."
+      },
+      {
+        "id": "ue_basic_14",
+        "front": "Саме так",
+        "back": "Exactly",
+        "difficulty": "medium",
+        "example": "Exactly what I was thinking.",
+        "exampleTranslation": "Саме так я і думав."
+      },
+      {
+        "id": "ue_basic_15",
+        "front": "На жаль",
+        "back": "Unfortunately",
+        "difficulty": "hard",
+        "example": "Unfortunately, the shop is closed.",
+        "exampleTranslation": "На жаль, магазин зачинений."
       }
     ]
   },
@@ -176,6 +216,46 @@
         "difficulty": "medium",
         "example": "My aunt is kind",
         "exampleTranslation": "Моя тітка добра"
+      },
+      {
+        "id": "ue_fam_11",
+        "front": "Дідусь",
+        "back": "Grandfather",
+        "difficulty": "easy",
+        "example": "My grandfather is very wise.",
+        "exampleTranslation": "Мій дідусь дуже мудрий."
+      },
+      {
+        "id": "ue_fam_12",
+        "front": "Бабуся",
+        "back": "Grandmother",
+        "difficulty": "easy",
+        "example": "Grandmother cooks very well.",
+        "exampleTranslation": "Бабуся добре готує."
+      },
+      {
+        "id": "ue_fam_13",
+        "front": "Дядько",
+        "back": "Uncle",
+        "difficulty": "medium",
+        "example": "My uncle lives in Kyiv.",
+        "exampleTranslation": "Мій дядько живе у Києві."
+      },
+      {
+        "id": "ue_fam_14",
+        "front": "Тітка",
+        "back": "Aunt",
+        "difficulty": "medium",
+        "example": "My aunt is a doctor.",
+        "exampleTranslation": "Моя тітка — лікар."
+      },
+      {
+        "id": "ue_fam_15",
+        "front": "Двоюрідний брат",
+        "back": "Cousin",
+        "difficulty": "hard",
+        "example": "My cousin studies medicine.",
+        "exampleTranslation": "Мій двоюрідний брат вивчає медицину."
       }
     ]
   },
@@ -266,6 +346,46 @@
         "difficulty": "medium",
         "example": "The bed is soft",
         "exampleTranslation": "Ліжко м'яке"
+      },
+      {
+        "id": "ue_house_11",
+        "front": "Стеля",
+        "back": "Ceiling",
+        "difficulty": "easy",
+        "example": "The ceiling is very high.",
+        "exampleTranslation": "Стеля дуже висока."
+      },
+      {
+        "id": "ue_house_12",
+        "front": "Сходи",
+        "back": "Stairs",
+        "difficulty": "easy",
+        "example": "The stairs are narrow.",
+        "exampleTranslation": "Сходи вузькі."
+      },
+      {
+        "id": "ue_house_13",
+        "front": "Підвал",
+        "back": "Basement",
+        "difficulty": "medium",
+        "example": "The basement is cool in summer.",
+        "exampleTranslation": "Підвал прохолодний влітку."
+      },
+      {
+        "id": "ue_house_14",
+        "front": "Балкон",
+        "back": "Balcony",
+        "difficulty": "medium",
+        "example": "The balcony overlooks the garden.",
+        "exampleTranslation": "Балкон виходить на сад."
+      },
+      {
+        "id": "ue_house_15",
+        "front": "Камін",
+        "back": "Fireplace",
+        "difficulty": "hard",
+        "example": "The fireplace warms the house.",
+        "exampleTranslation": "Камін зігріває будинок."
       }
     ]
   },
@@ -356,6 +476,46 @@
         "difficulty": "medium",
         "example": "Red wine",
         "exampleTranslation": "Червоне вино"
+      },
+      {
+        "id": "ue_food_11",
+        "front": "Виноград",
+        "back": "Grapes",
+        "difficulty": "easy",
+        "example": "The grapes are very tasty.",
+        "exampleTranslation": "Виноград дуже смачний."
+      },
+      {
+        "id": "ue_food_12",
+        "front": "Курка",
+        "back": "Chicken",
+        "difficulty": "easy",
+        "example": "I like eating chicken.",
+        "exampleTranslation": "Я люблю їсти курку."
+      },
+      {
+        "id": "ue_food_13",
+        "front": "Макарони",
+        "back": "Pasta",
+        "difficulty": "medium",
+        "example": "The pasta is ready.",
+        "exampleTranslation": "Макарони готові."
+      },
+      {
+        "id": "ue_food_14",
+        "front": "Приправа",
+        "back": "Spice",
+        "difficulty": "medium",
+        "example": "Add a bit of spice.",
+        "exampleTranslation": "Додайте трохи приправи."
+      },
+      {
+        "id": "ue_food_15",
+        "front": "Десерт",
+        "back": "Dessert",
+        "difficulty": "hard",
+        "example": "Would you like some dessert?",
+        "exampleTranslation": "Хочете десерт?"
       }
     ]
   },
@@ -446,6 +606,46 @@
         "difficulty": "medium",
         "example": "The mouse is small",
         "exampleTranslation": "Миша маленька"
+      },
+      {
+        "id": "ue_animal_11",
+        "front": "Папуга",
+        "back": "Parrot",
+        "difficulty": "easy",
+        "example": "The parrot is very smart.",
+        "exampleTranslation": "Папуга дуже розумна."
+      },
+      {
+        "id": "ue_animal_12",
+        "front": "Черепаха",
+        "back": "Turtle",
+        "difficulty": "easy",
+        "example": "The turtle is slow.",
+        "exampleTranslation": "Черепаха повільна."
+      },
+      {
+        "id": "ue_animal_13",
+        "front": "Білка",
+        "back": "Squirrel",
+        "difficulty": "medium",
+        "example": "The squirrel collects nuts.",
+        "exampleTranslation": "Білка збирає горіхи."
+      },
+      {
+        "id": "ue_animal_14",
+        "front": "Сова",
+        "back": "Owl",
+        "difficulty": "medium",
+        "example": "The owl hunts at night.",
+        "exampleTranslation": "Сова полює вночі."
+      },
+      {
+        "id": "ue_animal_15",
+        "front": "Дельфін",
+        "back": "Dolphin",
+        "difficulty": "hard",
+        "example": "The dolphin is a very intelligent animal.",
+        "exampleTranslation": "Дельфін — дуже розумна тварина."
       }
     ]
   },
@@ -536,6 +736,46 @@
         "difficulty": "medium",
         "example": "The museum is interesting",
         "exampleTranslation": "Музей цікавий"
+      },
+      {
+        "id": "ue_place_11",
+        "front": "Аптека",
+        "back": "Pharmacy",
+        "difficulty": "easy",
+        "example": "The pharmacy is nearby.",
+        "exampleTranslation": "Аптека поруч."
+      },
+      {
+        "id": "ue_place_12",
+        "front": "Стадіон",
+        "back": "Stadium",
+        "difficulty": "easy",
+        "example": "The stadium is very large.",
+        "exampleTranslation": "Стадіон дуже великий."
+      },
+      {
+        "id": "ue_place_13",
+        "front": "Музей",
+        "back": "Museum",
+        "difficulty": "medium",
+        "example": "I visited the museum yesterday.",
+        "exampleTranslation": "Я відвідав музей вчора."
+      },
+      {
+        "id": "ue_place_14",
+        "front": "Церква",
+        "back": "Church",
+        "difficulty": "medium",
+        "example": "The church is very old.",
+        "exampleTranslation": "Церква дуже стара."
+      },
+      {
+        "id": "ue_place_15",
+        "front": "Посольство",
+        "back": "Embassy",
+        "difficulty": "hard",
+        "example": "The embassy is open in the morning.",
+        "exampleTranslation": "Посольство відкрите вранці."
       }
     ]
   },
@@ -626,6 +866,46 @@
         "difficulty": "medium",
         "example": "This month",
         "exampleTranslation": "Цей місяць"
+      },
+      {
+        "id": "ue_time_11",
+        "front": "Світанок",
+        "back": "Dawn",
+        "difficulty": "easy",
+        "example": "The dawn is beautiful.",
+        "exampleTranslation": "Світанок прекрасний."
+      },
+      {
+        "id": "ue_time_12",
+        "front": "Сутінки",
+        "back": "Dusk",
+        "difficulty": "easy",
+        "example": "The dusk is quiet.",
+        "exampleTranslation": "Сутінки тихі."
+      },
+      {
+        "id": "ue_time_13",
+        "front": "Квартал",
+        "back": "Quarter",
+        "difficulty": "medium",
+        "example": "One quarter remains.",
+        "exampleTranslation": "Залишився один квартал."
+      },
+      {
+        "id": "ue_time_14",
+        "front": "Десятиліття",
+        "back": "Decade",
+        "difficulty": "medium",
+        "example": "I lived here for a decade.",
+        "exampleTranslation": "Я тут жив десятиліття."
+      },
+      {
+        "id": "ue_time_15",
+        "front": "Століття",
+        "back": "Century",
+        "difficulty": "hard",
+        "example": "This building was built a century ago.",
+        "exampleTranslation": "Цей будинок побудований століття тому."
       }
     ]
   },
@@ -716,6 +996,46 @@
         "difficulty": "medium",
         "example": "They are bored",
         "exampleTranslation": "Їм нудно"
+      },
+      {
+        "id": "ue_emo_11",
+        "front": "Гордий",
+        "back": "Proud",
+        "difficulty": "easy",
+        "example": "I am proud of you.",
+        "exampleTranslation": "Я гордий тобою."
+      },
+      {
+        "id": "ue_emo_12",
+        "front": "Здивований",
+        "back": "Surprised",
+        "difficulty": "easy",
+        "example": "I am surprised by the result.",
+        "exampleTranslation": "Я здивований результатом."
+      },
+      {
+        "id": "ue_emo_13",
+        "front": "Заздрісний",
+        "back": "Jealous",
+        "difficulty": "medium",
+        "example": "Don't be jealous.",
+        "exampleTranslation": "Не будь заздрісним."
+      },
+      {
+        "id": "ue_emo_14",
+        "front": "Вдячний",
+        "back": "Grateful",
+        "difficulty": "medium",
+        "example": "I am grateful for your help.",
+        "exampleTranslation": "Я вдячний за твою допомогу."
+      },
+      {
+        "id": "ue_emo_15",
+        "front": "Розчарований",
+        "back": "Disappointed",
+        "difficulty": "hard",
+        "example": "I am disappointed with the results.",
+        "exampleTranslation": "Я розчарований результатами."
       }
     ]
   },
@@ -806,6 +1126,46 @@
         "difficulty": "medium",
         "example": "You can hear thunder",
         "exampleTranslation": "Чути грім"
+      },
+      {
+        "id": "ue_weather_11",
+        "front": "Град",
+        "back": "Hail",
+        "difficulty": "easy",
+        "example": "The hail fell heavily.",
+        "exampleTranslation": "Град сильно падав."
+      },
+      {
+        "id": "ue_weather_12",
+        "front": "Туман",
+        "back": "Fog",
+        "difficulty": "easy",
+        "example": "The fog is dense.",
+        "exampleTranslation": "Туман густий."
+      },
+      {
+        "id": "ue_weather_13",
+        "front": "Веселка",
+        "back": "Rainbow",
+        "difficulty": "medium",
+        "example": "I saw a rainbow.",
+        "exampleTranslation": "Я бачив веселку."
+      },
+      {
+        "id": "ue_weather_14",
+        "front": "Посуха",
+        "back": "Drought",
+        "difficulty": "medium",
+        "example": "The drought affects the crops.",
+        "exampleTranslation": "Посуха впливає на врожай."
+      },
+      {
+        "id": "ue_weather_15",
+        "front": "Ураган",
+        "back": "Hurricane",
+        "difficulty": "hard",
+        "example": "The hurricane destroyed houses.",
+        "exampleTranslation": "Ураган зруйнував будинки."
       }
     ]
   },
@@ -896,6 +1256,46 @@
         "difficulty": "medium",
         "example": "The moon is full",
         "exampleTranslation": "Місяць повний"
+      },
+      {
+        "id": "ue_nature_11",
+        "front": "Водоспад",
+        "back": "Waterfall",
+        "difficulty": "easy",
+        "example": "The waterfall is beautiful.",
+        "exampleTranslation": "Водоспад гарний."
+      },
+      {
+        "id": "ue_nature_12",
+        "front": "Пустеля",
+        "back": "Desert",
+        "difficulty": "easy",
+        "example": "The desert is vast.",
+        "exampleTranslation": "Пустеля величезна."
+      },
+      {
+        "id": "ue_nature_13",
+        "front": "Долина",
+        "back": "Valley",
+        "difficulty": "medium",
+        "example": "The valley is green.",
+        "exampleTranslation": "Долина зелена."
+      },
+      {
+        "id": "ue_nature_14",
+        "front": "Печера",
+        "back": "Cave",
+        "difficulty": "medium",
+        "example": "The cave is dark.",
+        "exampleTranslation": "Печера темна."
+      },
+      {
+        "id": "ue_nature_15",
+        "front": "Вулкан",
+        "back": "Volcano",
+        "difficulty": "hard",
+        "example": "The volcano is active.",
+        "exampleTranslation": "Вулкан активний."
       }
     ]
   },
@@ -986,6 +1386,46 @@
         "difficulty": "medium",
         "example": "The skirt is nice",
         "exampleTranslation": "Спідниця гарна"
+      },
+      {
+        "id": "ue_cloth_11",
+        "front": "Рукавички",
+        "back": "Gloves",
+        "difficulty": "easy",
+        "example": "Gloves protect your hands.",
+        "exampleTranslation": "Рукавички захищають руки."
+      },
+      {
+        "id": "ue_cloth_12",
+        "front": "Шарф",
+        "back": "Scarf",
+        "difficulty": "easy",
+        "example": "The scarf is warm.",
+        "exampleTranslation": "Шарф теплий."
+      },
+      {
+        "id": "ue_cloth_13",
+        "front": "Пасок",
+        "back": "Belt",
+        "difficulty": "medium",
+        "example": "The belt is made of leather.",
+        "exampleTranslation": "Пасок шкіряний."
+      },
+      {
+        "id": "ue_cloth_14",
+        "front": "Костюм",
+        "back": "Suit",
+        "difficulty": "medium",
+        "example": "The suit is very elegant.",
+        "exampleTranslation": "Костюм дуже елегантний."
+      },
+      {
+        "id": "ue_cloth_15",
+        "front": "Светр",
+        "back": "Sweater",
+        "difficulty": "hard",
+        "example": "The sweater is comfortable.",
+        "exampleTranslation": "Светр зручний."
       }
     ]
   },
@@ -1076,6 +1516,46 @@
         "difficulty": "medium",
         "example": "This is my colleague from work",
         "exampleTranslation": "Це мій колега по роботі"
+      },
+      {
+        "id": "ue_work_11",
+        "front": "Зустріч",
+        "back": "Meeting",
+        "difficulty": "easy",
+        "example": "The meeting is at three o'clock.",
+        "exampleTranslation": "Зустріч о третій годині."
+      },
+      {
+        "id": "ue_work_12",
+        "front": "Зарплата",
+        "back": "Salary",
+        "difficulty": "easy",
+        "example": "The salary is good.",
+        "exampleTranslation": "Зарплата хороша."
+      },
+      {
+        "id": "ue_work_13",
+        "front": "Колега",
+        "back": "Colleague",
+        "difficulty": "medium",
+        "example": "My colleague is very friendly.",
+        "exampleTranslation": "Мій колега дуже привітний."
+      },
+      {
+        "id": "ue_work_14",
+        "front": "Підвищення",
+        "back": "Promotion",
+        "difficulty": "medium",
+        "example": "I got a promotion.",
+        "exampleTranslation": "Я отримав підвищення."
+      },
+      {
+        "id": "ue_work_15",
+        "front": "Крайній термін",
+        "back": "Deadline",
+        "difficulty": "hard",
+        "example": "The deadline is tomorrow.",
+        "exampleTranslation": "Крайній термін завтра."
       }
     ]
   },
@@ -1166,6 +1646,46 @@
         "difficulty": "medium",
         "example": "The driver is careful",
         "exampleTranslation": "Водій обережний"
+      },
+      {
+        "id": "ue_trans_11",
+        "front": "Метро",
+        "back": "Subway",
+        "difficulty": "easy",
+        "example": "The subway is fast.",
+        "exampleTranslation": "Метро швидке."
+      },
+      {
+        "id": "ue_trans_12",
+        "front": "Таксі",
+        "back": "Taxi",
+        "difficulty": "easy",
+        "example": "The taxi is outside.",
+        "exampleTranslation": "Таксі на вулиці."
+      },
+      {
+        "id": "ue_trans_13",
+        "front": "Квиток",
+        "back": "Ticket",
+        "difficulty": "medium",
+        "example": "I bought a ticket.",
+        "exampleTranslation": "Я купив квиток."
+      },
+      {
+        "id": "ue_trans_14",
+        "front": "Водій",
+        "back": "Driver",
+        "difficulty": "medium",
+        "example": "The driver is professional.",
+        "exampleTranslation": "Водій професійний."
+      },
+      {
+        "id": "ue_trans_15",
+        "front": "Перехрестя",
+        "back": "Intersection",
+        "difficulty": "hard",
+        "example": "Turn right at the intersection.",
+        "exampleTranslation": "Поверніть праворуч на перехресті."
       }
     ]
   },
@@ -1256,6 +1776,46 @@
         "difficulty": "medium",
         "example": "I study at the library",
         "exampleTranslation": "Я навчаюся в бібліотеці"
+      },
+      {
+        "id": "ue_edu_11",
+        "front": "Лекція",
+        "back": "Lecture",
+        "difficulty": "easy",
+        "example": "The lecture is interesting.",
+        "exampleTranslation": "Лекція цікава."
+      },
+      {
+        "id": "ue_edu_12",
+        "front": "Нотатки",
+        "back": "Notes",
+        "difficulty": "easy",
+        "example": "I am taking notes.",
+        "exampleTranslation": "Я роблю нотатки."
+      },
+      {
+        "id": "ue_edu_13",
+        "front": "Бібліотека",
+        "back": "Library",
+        "difficulty": "medium",
+        "example": "The library is quiet.",
+        "exampleTranslation": "Бібліотека тиха."
+      },
+      {
+        "id": "ue_edu_14",
+        "front": "Диплом",
+        "back": "Diploma",
+        "difficulty": "medium",
+        "example": "I received my diploma.",
+        "exampleTranslation": "Я отримав диплом."
+      },
+      {
+        "id": "ue_edu_15",
+        "front": "Стипендія",
+        "back": "Scholarship",
+        "difficulty": "hard",
+        "example": "I received a scholarship.",
+        "exampleTranslation": "Я отримав стипендію."
       }
     ]
   },
@@ -1346,6 +1906,46 @@
         "difficulty": "medium",
         "example": "I'm reserving a table",
         "exampleTranslation": "Я резервую столик"
+      },
+      {
+        "id": "ue_rest_11",
+        "front": "Офіціант",
+        "back": "Waiter",
+        "difficulty": "easy",
+        "example": "The waiter is very polite.",
+        "exampleTranslation": "Офіціант дуже ввічливий."
+      },
+      {
+        "id": "ue_rest_12",
+        "front": "Рахунок",
+        "back": "Bill",
+        "difficulty": "easy",
+        "example": "Bring the bill, please.",
+        "exampleTranslation": "Принесіть рахунок, будь ласка."
+      },
+      {
+        "id": "ue_rest_13",
+        "front": "Основна страва",
+        "back": "Main course",
+        "difficulty": "medium",
+        "example": "The main course is delicious.",
+        "exampleTranslation": "Основна страва дуже смачна."
+      },
+      {
+        "id": "ue_rest_14",
+        "front": "Чайові",
+        "back": "Tip",
+        "difficulty": "medium",
+        "example": "I left a tip.",
+        "exampleTranslation": "Я залишив чайові."
+      },
+      {
+        "id": "ue_rest_15",
+        "front": "Бронювання столика",
+        "back": "Table reservation",
+        "difficulty": "hard",
+        "example": "I made a table reservation.",
+        "exampleTranslation": "Я зробив бронювання столика."
       }
     ]
   },
@@ -1436,6 +2036,46 @@
         "difficulty": "medium",
         "example": "Our coach is great",
         "exampleTranslation": "Наш тренер чудовий"
+      },
+      {
+        "id": "ue_sport_11",
+        "front": "Суддя",
+        "back": "Referee",
+        "difficulty": "easy",
+        "example": "The referee is fair.",
+        "exampleTranslation": "Суддя справедливий."
+      },
+      {
+        "id": "ue_sport_12",
+        "front": "Чемпіонат",
+        "back": "Championship",
+        "difficulty": "easy",
+        "example": "The championship has started.",
+        "exampleTranslation": "Чемпіонат розпочався."
+      },
+      {
+        "id": "ue_sport_13",
+        "front": "Тренер",
+        "back": "Coach",
+        "difficulty": "medium",
+        "example": "The coach is excellent.",
+        "exampleTranslation": "Тренер чудовий."
+      },
+      {
+        "id": "ue_sport_14",
+        "front": "Рекорд",
+        "back": "Record",
+        "difficulty": "medium",
+        "example": "He broke the record.",
+        "exampleTranslation": "Він побив рекорд."
+      },
+      {
+        "id": "ue_sport_15",
+        "front": "Фехтування",
+        "back": "Fencing",
+        "difficulty": "hard",
+        "example": "Fencing is an Olympic sport.",
+        "exampleTranslation": "Фехтування — олімпійський вид спорту."
       }
     ]
   },
@@ -1526,6 +2166,46 @@
         "difficulty": "medium",
         "example": "I'm interested in photography",
         "exampleTranslation": "Мене цікавить фотографія"
+      },
+      {
+        "id": "ue_ent_11",
+        "front": "Концерт",
+        "back": "Concert",
+        "difficulty": "easy",
+        "example": "The concert is wonderful.",
+        "exampleTranslation": "Концерт чудовий."
+      },
+      {
+        "id": "ue_ent_12",
+        "front": "Виставка",
+        "back": "Exhibition",
+        "difficulty": "easy",
+        "example": "The exhibition is open.",
+        "exampleTranslation": "Виставка відкрита."
+      },
+      {
+        "id": "ue_ent_13",
+        "front": "Цирк",
+        "back": "Circus",
+        "difficulty": "medium",
+        "example": "The circus is fun for children.",
+        "exampleTranslation": "Цирк веселий для дітей."
+      },
+      {
+        "id": "ue_ent_14",
+        "front": "Фестиваль",
+        "back": "Festival",
+        "difficulty": "medium",
+        "example": "The festival is annual.",
+        "exampleTranslation": "Фестиваль щорічний."
+      },
+      {
+        "id": "ue_ent_15",
+        "front": "Комедія",
+        "back": "Comedy",
+        "difficulty": "hard",
+        "example": "The comedy makes me laugh.",
+        "exampleTranslation": "Комедія мене смішить."
       }
     ]
   },
@@ -1616,6 +2296,46 @@
         "difficulty": "medium",
         "example": "The advertisement is long",
         "exampleTranslation": "Реклама довга"
+      },
+      {
+        "id": "ue_movie_11",
+        "front": "Режисер",
+        "back": "Director",
+        "difficulty": "easy",
+        "example": "The director is very talented.",
+        "exampleTranslation": "Режисер дуже талановитий."
+      },
+      {
+        "id": "ue_movie_12",
+        "front": "Актор",
+        "back": "Actor",
+        "difficulty": "easy",
+        "example": "The actor performs wonderfully.",
+        "exampleTranslation": "Актор грає чудово."
+      },
+      {
+        "id": "ue_movie_13",
+        "front": "Сценарій",
+        "back": "Screenplay",
+        "difficulty": "medium",
+        "example": "The screenplay is very interesting.",
+        "exampleTranslation": "Сценарій дуже цікавий."
+      },
+      {
+        "id": "ue_movie_14",
+        "front": "Прем'єра",
+        "back": "Premiere",
+        "difficulty": "medium",
+        "example": "The movie premiere is tomorrow.",
+        "exampleTranslation": "Прем'єра фільму завтра."
+      },
+      {
+        "id": "ue_movie_15",
+        "front": "Дублювання",
+        "back": "Dubbing",
+        "difficulty": "hard",
+        "example": "The dubbing is of good quality.",
+        "exampleTranslation": "Дублювання зроблено якісно."
       }
     ]
   },
@@ -1706,6 +2426,46 @@
         "difficulty": "medium",
         "example": "I'm buying a souvenir",
         "exampleTranslation": "Я купую сувенір"
+      },
+      {
+        "id": "ue_travel_11",
+        "front": "Паспорт",
+        "back": "Passport",
+        "difficulty": "easy",
+        "example": "My passport is ready.",
+        "exampleTranslation": "Мій паспорт готовий."
+      },
+      {
+        "id": "ue_travel_12",
+        "front": "Віза",
+        "back": "Visa",
+        "difficulty": "easy",
+        "example": "I need a visa.",
+        "exampleTranslation": "Мені потрібна віза."
+      },
+      {
+        "id": "ue_travel_13",
+        "front": "Бронювання",
+        "back": "Reservation",
+        "difficulty": "medium",
+        "example": "The reservation is confirmed.",
+        "exampleTranslation": "Бронювання підтверджено."
+      },
+      {
+        "id": "ue_travel_14",
+        "front": "Гід",
+        "back": "Guide",
+        "difficulty": "medium",
+        "example": "The guide is excellent.",
+        "exampleTranslation": "Гід чудовий."
+      },
+      {
+        "id": "ue_travel_15",
+        "front": "Страхування",
+        "back": "Insurance",
+        "difficulty": "hard",
+        "example": "Travel insurance is necessary.",
+        "exampleTranslation": "Страхування подорожі необхідне."
       }
     ]
   },
@@ -1796,6 +2556,46 @@
         "difficulty": "medium",
         "example": "The bear is brown",
         "exampleTranslation": "Ведмідь коричневий"
+      },
+      {
+        "id": "ue_color_11",
+        "front": "Помаранчевий",
+        "back": "Orange",
+        "difficulty": "easy",
+        "example": "This shirt is orange.",
+        "exampleTranslation": "Ця сорочка помаранчева."
+      },
+      {
+        "id": "ue_color_12",
+        "front": "Рожевий",
+        "back": "Pink",
+        "difficulty": "easy",
+        "example": "The rose is pink.",
+        "exampleTranslation": "Троянда рожева."
+      },
+      {
+        "id": "ue_color_13",
+        "front": "Сірий",
+        "back": "Gray",
+        "difficulty": "medium",
+        "example": "The sky is gray today.",
+        "exampleTranslation": "Небо сьогодні сіре."
+      },
+      {
+        "id": "ue_color_14",
+        "front": "Фіолетовий",
+        "back": "Purple",
+        "difficulty": "medium",
+        "example": "I like the color purple.",
+        "exampleTranslation": "Мені подобається фіолетовий колір."
+      },
+      {
+        "id": "ue_color_15",
+        "front": "Золотий",
+        "back": "Golden",
+        "difficulty": "hard",
+        "example": "The ring is golden.",
+        "exampleTranslation": "Каблучка золотого кольору."
       }
     ]
   }

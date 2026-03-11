@@ -592,47 +592,47 @@ Before adding new categories, upgrade existing 20-21 categories from 10 to 15 it
 
 | # | Pair | Current Cats | Current Items | Items After Upgrade | Status |
 |---|------|-------------|--------------|-------------------|--------|
-| 1 | arabic_english | 21 | 210 | 315 | ⬜ |
-| 2 | chinese_english | 21 | 210 | 315 | ⬜ |
-| 3 | english_arabic | 21 | 210 | 315 | ⬜ |
-| 4 | english_chinese | 21 | 210 | 315 | ⬜ |
-| 5 | english_french | 21 | 210 | 315 | ⬜ |
-| 6 | english_german | 20 | 200 | 300 | ⬜ |
-| 7 | english_japanese | 21 | 210 | 315 | ⬜ |
-| 8 | english_polish | 21 | 210 | 315 | ⬜ |
-| 9 | french_english | 21 | 210 | 315 | ⬜ |
-| 10 | german_polish | 21 | 210 | 315 | ⬜ |
-| 11 | japanese_english | 21 | 210 | 315 | ⬜ |
-| 12 | polish_arabic | 21 | 210 | 315 | ⬜ |
-| 13 | polish_chinese | 21 | 210 | 315 | ⬜ |
-| 14 | polish_french | 21 | 210 | 315 | ⬜ |
-| 15 | polish_japanese | 21 | 210 | 315 | ⬜ |
-| 16 | polish_ukrainian | 20 | 200 | 300 | ⬜ |
-| 17 | ukrainian_english | 20 | 200 | 300 | ⬜ |
-| 18 | ukrainian_polish | 20 | 200 | 300 | ⬜ |
+| 1 | arabic_english | 21 | 315 | 315 | ✅ |
+| 2 | chinese_english | 21 | 315 | 315 | ✅ |
+| 3 | english_arabic | 21 | 315 | 315 | ✅ |
+| 4 | english_chinese | 21 | 315 | 315 | ✅ |
+| 5 | english_french | 21 | 315 | 315 | ✅ |
+| 6 | english_german | 20 | 300 | 300 | ✅ |
+| 7 | english_japanese | 21 | 315 | 315 | ✅ |
+| 8 | english_polish | 21 | 315 | 315 | ✅ |
+| 9 | french_english | 21 | 315 | 315 | ✅ |
+| 10 | german_polish | 21 | 315 | 315 | ✅ |
+| 11 | japanese_english | 21 | 315 | 315 | ✅ |
+| 12 | polish_arabic | 21 | 315 | 315 | ✅ |
+| 13 | polish_chinese | 21 | 315 | 315 | ✅ |
+| 14 | polish_french | 21 | 315 | 315 | ✅ |
+| 15 | polish_japanese | 21 | 315 | 315 | ✅ |
+| 16 | polish_ukrainian | 20 | 300 | 300 | ✅ |
+| 17 | ukrainian_english | 20 | 300 | 300 | ✅ |
+| 18 | ukrainian_polish | 20 | 300 | 300 | ✅ |
 
 ## Phase 2: Add New Categories (target ~100 total per pair)
 
 | # | Pair | Front Lang | Cats | Items | Target Cats | Target Items | Batches | Status |
 |---|------|-----------|------|-------|------------|-------------|---------|--------|
-| 1 | arabic_english | Arabic | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 2 | chinese_english | Chinese | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 3 | english_arabic | English | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 4 | english_chinese | English | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 5 | english_french | English | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 6 | english_german | English | 20/100 | 200/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 7 | english_japanese | English | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 8 | english_polish | English | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 9 | french_english | French | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 10 | german_polish | German | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 11 | japanese_english | Japanese | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 12 | polish_arabic | Polish | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 13 | polish_chinese | Polish | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 14 | polish_french | Polish | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 15 | polish_japanese | Polish | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 16 | polish_ukrainian | Polish | 20/100 | 200/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 17 | ukrainian_english | Ukrainian | 20/100 | 200/1500 | 100 | 1500 | 0/16 | ⬜ |
-| 18 | ukrainian_polish | Ukrainian | 20/100 | 200/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 1 | arabic_english | Arabic | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 2 | chinese_english | Chinese | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 3 | english_arabic | English | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 4 | english_chinese | English | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 5 | english_french | English | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 6 | english_german | English | 20/100 | 300/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 7 | english_japanese | English | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 8 | english_polish | English | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 9 | french_english | French | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 10 | german_polish | German | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 11 | japanese_english | Japanese | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 12 | polish_arabic | Polish | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 13 | polish_chinese | Polish | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 14 | polish_french | Polish | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 15 | polish_japanese | Polish | 21/100 | 315/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 16 | polish_ukrainian | Polish | 20/100 | 300/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 17 | ukrainian_english | Ukrainian | 20/100 | 300/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 18 | ukrainian_polish | Ukrainian | 20/100 | 300/1500 | 100 | 1500 | 0/16 | ⬜ |
 
 ## Main Pairs (Complete - Reference)
 
@@ -699,9 +699,8 @@ Reference: polish_spanish has 135 categories. Target domains for new categories:
 Create wordbuilder content for all 25 language pairs with **30+ categories × 15 items = 450+ items** each. Currently only english_spanish has content (6 categories, 90 items).
 
 ## Current State
-- **1 pair has content**: english_spanish — 6 categories, 90 items (5 beginner, 1 intermediate)
+- **1 pair has content**: english_spanish — 31 categories, 465 items (12 beginner, 14 intermediate, 5 advanced) ✅ COMPLETE
 - **24 pairs have NO content**: No wordbuilder JSON files exist
-- **english_spanish is also incomplete**: needs expansion from 6→30+ categories
 
 ## Scale
 - Files to create: **24** new wordbuilder JSON files
@@ -753,16 +752,16 @@ Create wordbuilder content for all 25 language pairs with **30+ categories × 15
 - Each pair needs ~6 batch scripts (30 categories ÷ 5 = 6 batches)
 - Consider script complexity: non-Latin scripts (Arabic, Chinese, Japanese, Ukrainian) need special attention for letter scrambling
 
-## Phase 1: Expand english_spanish (Reference Pair)
+## Phase 1: Expand english_spanish (Reference Pair) — ✅ COMPLETE (31 categories, 465 items)
 
 | Batch | Categories | Status |
 |-------|-----------|--------|
 | 0 | (existing 6: fruits, vegetables, colors_wb, family_wb, animals, body_parts) | ✅ |
-| 1 | greetings, numbers_wb, food_wb, clothing_wb, house_rooms | ⬜ |
-| 2 | weather_wb, time_wb, professions_wb, transport_wb, school_wb | ⬜ |
-| 3 | kitchen_utensils, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ⬜ |
-| 4 | technology_wb, office_wb, health_medical, travel_wb, hobbies_wb | ⬜ |
-| 5 | drinks_beverages, desserts_sweets, furniture_wb, tools_wb, materials_wb | ⬜ |
+| 1 | greetings, numbers_wb, food_wb, clothing_wb, house_rooms | ✅ |
+| 2 | weather_wb, time_wb, professions_wb, transport_wb, school_wb | ✅ |
+| 3 | kitchen_utensils, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
+| 4 | technology_wb, office_wb, health_medical, travel_wb, hobbies_wb | ✅ |
+| 5 | drinks_beverages, desserts_sweets, furniture_wb, tools_wb, materials_wb | ✅ |
 
 ## Phase 2: Create All Missing Language Pairs
 
@@ -852,4 +851,4 @@ Categories should cover these vocabulary domains:
 8. Progressive difficulty across categories: simpler/shorter words in beginner, longer/complex in advanced
 
 ---
-*Last updated: 2025-07-15*
+*Last updated: 2026-03-11*

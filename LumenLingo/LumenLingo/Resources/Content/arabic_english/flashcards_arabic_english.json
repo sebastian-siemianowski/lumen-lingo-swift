@@ -86,6 +86,46 @@
         "difficulty": "medium",
         "example": "No, I don't want",
         "exampleTranslation": "لا، لا أريد"
+      },
+      {
+        "id": "ae_greet_11",
+        "front": "أهلاً وسهلاً",
+        "back": "Welcome",
+        "difficulty": "easy",
+        "example": "Welcome to our home",
+        "exampleTranslation": "أهلاً وسهلاً في بيتنا"
+      },
+      {
+        "id": "ae_greet_12",
+        "front": "كيف الحال؟",
+        "back": "How are you?",
+        "difficulty": "easy",
+        "example": "How are you today?",
+        "exampleTranslation": "كيف حالك اليوم؟"
+      },
+      {
+        "id": "ae_greet_13",
+        "front": "إلى اللقاء",
+        "back": "See you later",
+        "difficulty": "medium",
+        "example": "See you later at school",
+        "exampleTranslation": "إلى اللقاء في المدرسة"
+      },
+      {
+        "id": "ae_greet_14",
+        "front": "تشرفنا",
+        "back": "Nice to meet you",
+        "difficulty": "medium",
+        "example": "Nice to meet you, my name is Ahmed",
+        "exampleTranslation": "تشرفنا، اسمي أحمد"
+      },
+      {
+        "id": "ae_greet_15",
+        "front": "أسعد الله مساءك",
+        "back": "Good evening (formal)",
+        "difficulty": "hard",
+        "example": "Good evening, ladies and gentlemen",
+        "exampleTranslation": "أسعد الله مساءكم، سيداتي وسادتي"
       }
     ]
   },
@@ -176,6 +216,46 @@
         "difficulty": "medium",
         "example": "My aunt is very kind",
         "exampleTranslation": "عمتي لطيفة جداً"
+      },
+      {
+        "id": "ae_fam_11",
+        "front": "عمّ",
+        "back": "Uncle (paternal)",
+        "difficulty": "easy",
+        "example": "My uncle lives nearby",
+        "exampleTranslation": "عمّي يسكن بالقرب"
+      },
+      {
+        "id": "ae_fam_12",
+        "front": "خالة",
+        "back": "Aunt (maternal)",
+        "difficulty": "easy",
+        "example": "My aunt cooks delicious food",
+        "exampleTranslation": "خالتي تطبخ طعاماً لذيذاً"
+      },
+      {
+        "id": "ae_fam_13",
+        "front": "ابن عمّ",
+        "back": "Cousin (male, paternal)",
+        "difficulty": "medium",
+        "example": "My cousin is my best friend",
+        "exampleTranslation": "ابن عمّي هو أفضل صديق لي"
+      },
+      {
+        "id": "ae_fam_14",
+        "front": "حفيد",
+        "back": "Grandson",
+        "difficulty": "medium",
+        "example": "The grandson looks like his grandfather",
+        "exampleTranslation": "الحفيد يشبه جدّه"
+      },
+      {
+        "id": "ae_fam_15",
+        "front": "صهر",
+        "back": "Son-in-law",
+        "difficulty": "hard",
+        "example": "The son-in-law joined the family dinner",
+        "exampleTranslation": "الصهر انضمّ إلى عشاء العائلة"
       }
     ]
   },
@@ -266,6 +346,46 @@
         "difficulty": "medium",
         "example": "Ten euros, please",
         "exampleTranslation": "عشرة يورو، من فضلك"
+      },
+      {
+        "id": "ae_num_11",
+        "front": "أحد عشر",
+        "back": "Eleven",
+        "difficulty": "easy",
+        "example": "There are eleven players on the team",
+        "exampleTranslation": "يوجد أحد عشر لاعباً في الفريق"
+      },
+      {
+        "id": "ae_num_12",
+        "front": "عشرون",
+        "back": "Twenty",
+        "difficulty": "easy",
+        "example": "I need twenty minutes",
+        "exampleTranslation": "أحتاج عشرين دقيقة"
+      },
+      {
+        "id": "ae_num_13",
+        "front": "خمسون",
+        "back": "Fifty",
+        "difficulty": "medium",
+        "example": "The ticket costs fifty dollars",
+        "exampleTranslation": "التذكرة تكلف خمسين دولاراً"
+      },
+      {
+        "id": "ae_num_14",
+        "front": "مئة",
+        "back": "One hundred",
+        "difficulty": "medium",
+        "example": "There are one hundred students in the school",
+        "exampleTranslation": "يوجد مئة طالب في المدرسة"
+      },
+      {
+        "id": "ae_num_15",
+        "front": "ألف",
+        "back": "One thousand",
+        "difficulty": "hard",
+        "example": "The book has one thousand pages",
+        "exampleTranslation": "الكتاب يحتوي على ألف صفحة"
       }
     ]
   },
@@ -356,6 +476,46 @@
         "difficulty": "medium",
         "example": "The elephant is gray",
         "exampleTranslation": "الفيل رمادي"
+      },
+      {
+        "id": "ae_col_11",
+        "front": "بنفسجي",
+        "back": "Purple",
+        "difficulty": "easy",
+        "example": "She wore a purple dress",
+        "exampleTranslation": "ارتدت فستاناً بنفسجياً"
+      },
+      {
+        "id": "ae_col_12",
+        "front": "وردي",
+        "back": "Pink",
+        "difficulty": "easy",
+        "example": "The flowers are pink",
+        "exampleTranslation": "الأزهار وردية"
+      },
+      {
+        "id": "ae_col_13",
+        "front": "رمادي",
+        "back": "Gray",
+        "difficulty": "medium",
+        "example": "The sky is gray today",
+        "exampleTranslation": "السماء رمادية اليوم"
+      },
+      {
+        "id": "ae_col_14",
+        "front": "بنّي",
+        "back": "Brown",
+        "difficulty": "medium",
+        "example": "The dog has brown fur",
+        "exampleTranslation": "الكلب لديه فراء بنّي"
+      },
+      {
+        "id": "ae_col_15",
+        "front": "ذهبي",
+        "back": "Gold",
+        "difficulty": "hard",
+        "example": "She received a gold medal",
+        "exampleTranslation": "حصلت على ميدالية ذهبية"
       }
     ]
   },
@@ -446,6 +606,46 @@
         "difficulty": "medium",
         "example": "I eat eggs for breakfast",
         "exampleTranslation": "آكل البيض على الفطور"
+      },
+      {
+        "id": "ae_food_11",
+        "front": "عنب",
+        "back": "Grapes",
+        "difficulty": "easy",
+        "example": "I bought fresh grapes from the market",
+        "exampleTranslation": "اشتريت عنباً طازجاً من السوق"
+      },
+      {
+        "id": "ae_food_12",
+        "front": "بطاطس",
+        "back": "Potatoes",
+        "difficulty": "easy",
+        "example": "We need potatoes for dinner",
+        "exampleTranslation": "نحتاج بطاطس للعشاء"
+      },
+      {
+        "id": "ae_food_13",
+        "front": "زيت زيتون",
+        "back": "Olive oil",
+        "difficulty": "medium",
+        "example": "Add olive oil to the salad",
+        "exampleTranslation": "أضف زيت الزيتون إلى السلطة"
+      },
+      {
+        "id": "ae_food_14",
+        "front": "بهارات",
+        "back": "Spices",
+        "difficulty": "medium",
+        "example": "Arabic food uses many spices",
+        "exampleTranslation": "الطعام العربي يستخدم بهارات كثيرة"
+      },
+      {
+        "id": "ae_food_15",
+        "front": "مأكولات بحرية",
+        "back": "Seafood",
+        "difficulty": "hard",
+        "example": "This restaurant is famous for its seafood",
+        "exampleTranslation": "هذا المطعم مشهور بالمأكولات البحرية"
       }
     ]
   },
@@ -536,6 +736,46 @@
         "difficulty": "medium",
         "example": "The bed is soft",
         "exampleTranslation": "السرير ناعم"
+      },
+      {
+        "id": "ae_house_11",
+        "front": "سقف",
+        "back": "Ceiling / Roof",
+        "difficulty": "easy",
+        "example": "The roof needs repair",
+        "exampleTranslation": "السقف يحتاج إلى إصلاح"
+      },
+      {
+        "id": "ae_house_12",
+        "front": "درج",
+        "back": "Stairs",
+        "difficulty": "easy",
+        "example": "Go up the stairs to the second floor",
+        "exampleTranslation": "اصعد الدرج إلى الطابق الثاني"
+      },
+      {
+        "id": "ae_house_13",
+        "front": "شرفة",
+        "back": "Balcony",
+        "difficulty": "medium",
+        "example": "We have coffee on the balcony every morning",
+        "exampleTranslation": "نشرب القهوة على الشرفة كل صباح"
+      },
+      {
+        "id": "ae_house_14",
+        "front": "خزانة",
+        "back": "Closet / Wardrobe",
+        "difficulty": "medium",
+        "example": "Put your clothes in the wardrobe",
+        "exampleTranslation": "ضع ملابسك في الخزانة"
+      },
+      {
+        "id": "ae_house_15",
+        "front": "قبو",
+        "back": "Basement",
+        "difficulty": "hard",
+        "example": "We store old furniture in the basement",
+        "exampleTranslation": "نخزّن الأثاث القديم في القبو"
       }
     ]
   },
@@ -626,6 +866,46 @@
         "difficulty": "medium",
         "example": "The museum is interesting",
         "exampleTranslation": "المتحف ممتع"
+      },
+      {
+        "id": "ae_place_11",
+        "front": "صيدلية",
+        "back": "Pharmacy",
+        "difficulty": "easy",
+        "example": "The pharmacy is open until midnight",
+        "exampleTranslation": "الصيدلية مفتوحة حتى منتصف الليل"
+      },
+      {
+        "id": "ae_place_12",
+        "front": "مكتبة",
+        "back": "Library",
+        "difficulty": "easy",
+        "example": "I study at the library every day",
+        "exampleTranslation": "أدرس في المكتبة كل يوم"
+      },
+      {
+        "id": "ae_place_13",
+        "front": "ملعب",
+        "back": "Stadium",
+        "difficulty": "medium",
+        "example": "The stadium is full of fans",
+        "exampleTranslation": "الملعب مليء بالمشجعين"
+      },
+      {
+        "id": "ae_place_14",
+        "front": "محطة وقود",
+        "back": "Gas station",
+        "difficulty": "medium",
+        "example": "Stop at the gas station to fill the tank",
+        "exampleTranslation": "توقّف عند محطة الوقود لملء الخزان"
+      },
+      {
+        "id": "ae_place_15",
+        "front": "سفارة",
+        "back": "Embassy",
+        "difficulty": "hard",
+        "example": "I went to the embassy to get a visa",
+        "exampleTranslation": "ذهبت إلى السفارة للحصول على تأشيرة"
       }
     ]
   },
@@ -716,6 +996,46 @@
         "difficulty": "medium",
         "example": "The coat is warm",
         "exampleTranslation": "المعطف دافئ"
+      },
+      {
+        "id": "ae_cloth_11",
+        "front": "وشاح",
+        "back": "Scarf",
+        "difficulty": "easy",
+        "example": "She wrapped a scarf around her neck",
+        "exampleTranslation": "لفّت وشاحاً حول رقبتها"
+      },
+      {
+        "id": "ae_cloth_12",
+        "front": "حذاء رياضي",
+        "back": "Sneakers",
+        "difficulty": "easy",
+        "example": "I bought new sneakers for running",
+        "exampleTranslation": "اشتريت حذاءً رياضياً جديداً للجري"
+      },
+      {
+        "id": "ae_cloth_13",
+        "front": "بدلة",
+        "back": "Suit",
+        "difficulty": "medium",
+        "example": "He wears a suit to the office",
+        "exampleTranslation": "يرتدي بدلة إلى المكتب"
+      },
+      {
+        "id": "ae_cloth_14",
+        "front": "ربطة عنق",
+        "back": "Tie / Necktie",
+        "difficulty": "medium",
+        "example": "The tie matches his shirt",
+        "exampleTranslation": "ربطة العنق تتناسب مع قميصه"
+      },
+      {
+        "id": "ae_cloth_15",
+        "front": "عباءة",
+        "back": "Cloak / Abaya",
+        "difficulty": "hard",
+        "example": "The abaya is a traditional garment",
+        "exampleTranslation": "العباءة هي لباس تقليدي"
       }
     ]
   },
@@ -806,6 +1126,46 @@
         "difficulty": "medium",
         "example": "The mechanic repairs cars",
         "exampleTranslation": "الميكانيكي يصلح السيارات"
+      },
+      {
+        "id": "ae_work_11",
+        "front": "ترقية",
+        "back": "Promotion",
+        "difficulty": "easy",
+        "example": "She received a promotion at work",
+        "exampleTranslation": "حصلت على ترقية في العمل"
+      },
+      {
+        "id": "ae_work_12",
+        "front": "إجتماع",
+        "back": "Meeting",
+        "difficulty": "easy",
+        "example": "The meeting starts at nine",
+        "exampleTranslation": "الاجتماع يبدأ في التاسعة"
+      },
+      {
+        "id": "ae_work_13",
+        "front": "موعد نهائي",
+        "back": "Deadline",
+        "difficulty": "medium",
+        "example": "The deadline is next Friday",
+        "exampleTranslation": "الموعد النهائي يوم الجمعة القادم"
+      },
+      {
+        "id": "ae_work_14",
+        "front": "سيرة ذاتية",
+        "back": "Resume / CV",
+        "difficulty": "medium",
+        "example": "Please send your resume by email",
+        "exampleTranslation": "يُرجى إرسال سيرتك الذاتية عبر البريد الإلكتروني"
+      },
+      {
+        "id": "ae_work_15",
+        "front": "تقاعد",
+        "back": "Retirement",
+        "difficulty": "hard",
+        "example": "He is planning for retirement next year",
+        "exampleTranslation": "يخطّط للتقاعد العام القادم"
       }
     ]
   },
@@ -896,6 +1256,46 @@
         "difficulty": "medium",
         "example": "I buy a ticket",
         "exampleTranslation": "أشتري تذكرة"
+      },
+      {
+        "id": "ae_trans_11",
+        "front": "رصيف",
+        "back": "Platform / Sidewalk",
+        "difficulty": "easy",
+        "example": "Wait on the platform for the train",
+        "exampleTranslation": "انتظر على الرصيف حتى يأتي القطار"
+      },
+      {
+        "id": "ae_trans_12",
+        "front": "إشارة مرور",
+        "back": "Traffic light",
+        "difficulty": "easy",
+        "example": "Stop at the red traffic light",
+        "exampleTranslation": "توقّف عند إشارة المرور الحمراء"
+      },
+      {
+        "id": "ae_trans_13",
+        "front": "ازدحام",
+        "back": "Traffic jam",
+        "difficulty": "medium",
+        "example": "There is a traffic jam on the highway",
+        "exampleTranslation": "يوجد ازدحام على الطريق السريع"
+      },
+      {
+        "id": "ae_trans_14",
+        "front": "رخصة قيادة",
+        "back": "Driver's license",
+        "difficulty": "medium",
+        "example": "I need to renew my driver's license",
+        "exampleTranslation": "أحتاج إلى تجديد رخصة القيادة"
+      },
+      {
+        "id": "ae_trans_15",
+        "front": "مرآب",
+        "back": "Garage / Parking lot",
+        "difficulty": "hard",
+        "example": "Park the car in the garage",
+        "exampleTranslation": "أوقف السيارة في المرآب"
       }
     ]
   },
@@ -986,6 +1386,46 @@
         "difficulty": "medium",
         "example": "My backpack is heavy",
         "exampleTranslation": "حقيبتي ثقيلة"
+      },
+      {
+        "id": "ae_edu_11",
+        "front": "منهج",
+        "back": "Curriculum",
+        "difficulty": "easy",
+        "example": "The school updated its curriculum",
+        "exampleTranslation": "حدّثت المدرسة منهجها"
+      },
+      {
+        "id": "ae_edu_12",
+        "front": "محاضرة",
+        "back": "Lecture",
+        "difficulty": "easy",
+        "example": "The professor gave an interesting lecture",
+        "exampleTranslation": "ألقى الأستاذ محاضرة شيقة"
+      },
+      {
+        "id": "ae_edu_13",
+        "front": "منحة دراسية",
+        "back": "Scholarship",
+        "difficulty": "medium",
+        "example": "She won a scholarship to study abroad",
+        "exampleTranslation": "فازت بمنحة دراسية للدراسة في الخارج"
+      },
+      {
+        "id": "ae_edu_14",
+        "front": "أطروحة",
+        "back": "Thesis / Dissertation",
+        "difficulty": "medium",
+        "example": "He is writing his thesis on history",
+        "exampleTranslation": "يكتب أطروحته عن التاريخ"
+      },
+      {
+        "id": "ae_edu_15",
+        "front": "تخرّج",
+        "back": "Graduation",
+        "difficulty": "hard",
+        "example": "The graduation ceremony is next month",
+        "exampleTranslation": "حفل التخرّج الشهر القادم"
       }
     ]
   },
@@ -1076,6 +1516,46 @@
         "difficulty": "medium",
         "example": "The moon is full",
         "exampleTranslation": "القمر مكتمل"
+      },
+      {
+        "id": "ae_nature_11",
+        "front": "شلّال",
+        "back": "Waterfall",
+        "difficulty": "easy",
+        "example": "The waterfall is breathtaking",
+        "exampleTranslation": "الشلّال يخطف الأنفاس"
+      },
+      {
+        "id": "ae_nature_12",
+        "front": "تلّ",
+        "back": "Hill",
+        "difficulty": "easy",
+        "example": "We climbed the hill at sunrise",
+        "exampleTranslation": "صعدنا التلّ عند شروق الشمس"
+      },
+      {
+        "id": "ae_nature_13",
+        "front": "كهف",
+        "back": "Cave",
+        "difficulty": "medium",
+        "example": "The cave is dark and deep",
+        "exampleTranslation": "الكهف مظلم وعميق"
+      },
+      {
+        "id": "ae_nature_14",
+        "front": "واحة",
+        "back": "Oasis",
+        "difficulty": "medium",
+        "example": "The oasis is surrounded by palm trees",
+        "exampleTranslation": "الواحة محاطة بأشجار النخيل"
+      },
+      {
+        "id": "ae_nature_15",
+        "front": "بركان",
+        "back": "Volcano",
+        "difficulty": "hard",
+        "example": "The volcano erupted last year",
+        "exampleTranslation": "ثار البركان العام الماضي"
       }
     ]
   },
@@ -1166,6 +1646,46 @@
         "difficulty": "medium",
         "example": "They are bored",
         "exampleTranslation": "هم ملولون"
+      },
+      {
+        "id": "ae_emo_11",
+        "front": "فخر",
+        "back": "Pride",
+        "difficulty": "easy",
+        "example": "He felt pride in his achievements",
+        "exampleTranslation": "شعر بالفخر بإنجازاته"
+      },
+      {
+        "id": "ae_emo_12",
+        "front": "قلق",
+        "back": "Anxiety / Worry",
+        "difficulty": "easy",
+        "example": "She has anxiety before exams",
+        "exampleTranslation": "تشعر بالقلق قبل الامتحانات"
+      },
+      {
+        "id": "ae_emo_13",
+        "front": "حنين",
+        "back": "Nostalgia / Longing",
+        "difficulty": "medium",
+        "example": "I feel nostalgia for my childhood",
+        "exampleTranslation": "أشعر بالحنين لطفولتي"
+      },
+      {
+        "id": "ae_emo_14",
+        "front": "إحباط",
+        "back": "Frustration",
+        "difficulty": "medium",
+        "example": "He expressed his frustration openly",
+        "exampleTranslation": "عبّر عن إحباطه بصراحة"
+      },
+      {
+        "id": "ae_emo_15",
+        "front": "امتنان",
+        "back": "Gratitude",
+        "difficulty": "hard",
+        "example": "I want to express my gratitude",
+        "exampleTranslation": "أريد أن أعبّر عن امتناني"
       }
     ]
   },
@@ -1256,6 +1776,46 @@
         "difficulty": "medium",
         "example": "Next week",
         "exampleTranslation": "الأسبوع القادم"
+      },
+      {
+        "id": "ae_time_11",
+        "front": "فجر",
+        "back": "Dawn",
+        "difficulty": "easy",
+        "example": "He wakes up at dawn every day",
+        "exampleTranslation": "يستيقظ عند الفجر كل يوم"
+      },
+      {
+        "id": "ae_time_12",
+        "front": "غروب",
+        "back": "Sunset",
+        "difficulty": "easy",
+        "example": "The sunset is beautiful by the sea",
+        "exampleTranslation": "الغروب جميل عند البحر"
+      },
+      {
+        "id": "ae_time_13",
+        "front": "ربع ساعة",
+        "back": "Quarter of an hour",
+        "difficulty": "medium",
+        "example": "I'll be there in a quarter of an hour",
+        "exampleTranslation": "سأكون هناك خلال ربع ساعة"
+      },
+      {
+        "id": "ae_time_14",
+        "front": "منتصف الليل",
+        "back": "Midnight",
+        "difficulty": "medium",
+        "example": "The store closes at midnight",
+        "exampleTranslation": "المتجر يغلق في منتصف الليل"
+      },
+      {
+        "id": "ae_time_15",
+        "front": "عقد",
+        "back": "Decade",
+        "difficulty": "hard",
+        "example": "A lot has changed in the last decade",
+        "exampleTranslation": "تغيّر الكثير في العقد الأخير"
       }
     ]
   },
@@ -1346,6 +1906,46 @@
         "difficulty": "medium",
         "example": "You can hear thunder",
         "exampleTranslation": "يمكنك سماع الرعد"
+      },
+      {
+        "id": "ae_weather_11",
+        "front": "ضباب",
+        "back": "Fog",
+        "difficulty": "easy",
+        "example": "Drive carefully in the fog",
+        "exampleTranslation": "قُد بحذر في الضباب"
+      },
+      {
+        "id": "ae_weather_12",
+        "front": "عاصفة رعدية",
+        "back": "Thunderstorm",
+        "difficulty": "easy",
+        "example": "A thunderstorm is expected tonight",
+        "exampleTranslation": "عاصفة رعدية متوقعة الليلة"
+      },
+      {
+        "id": "ae_weather_13",
+        "front": "موجة حرّ",
+        "back": "Heat wave",
+        "difficulty": "medium",
+        "example": "The city is suffering from a heat wave",
+        "exampleTranslation": "المدينة تعاني من موجة حرّ"
+      },
+      {
+        "id": "ae_weather_14",
+        "front": "صقيع",
+        "back": "Frost",
+        "difficulty": "medium",
+        "example": "There is frost on the windows",
+        "exampleTranslation": "يوجد صقيع على النوافذ"
+      },
+      {
+        "id": "ae_weather_15",
+        "front": "إعصار",
+        "back": "Hurricane / Tornado",
+        "difficulty": "hard",
+        "example": "The hurricane caused severe damage",
+        "exampleTranslation": "الإعصار تسبّب بأضرار جسيمة"
       }
     ]
   },
@@ -1436,6 +2036,46 @@
         "difficulty": "medium",
         "example": "My heart beats fast",
         "exampleTranslation": "قلبي ينبض بسرعة"
+      },
+      {
+        "id": "ae_body_11",
+        "front": "كتف",
+        "back": "Shoulder",
+        "difficulty": "easy",
+        "example": "My shoulder hurts after exercising",
+        "exampleTranslation": "كتفي يؤلمني بعد التمرين"
+      },
+      {
+        "id": "ae_body_12",
+        "front": "معصم",
+        "back": "Wrist",
+        "difficulty": "easy",
+        "example": "She wears a watch on her wrist",
+        "exampleTranslation": "ترتدي ساعة على معصمها"
+      },
+      {
+        "id": "ae_body_13",
+        "front": "كاحل",
+        "back": "Ankle",
+        "difficulty": "medium",
+        "example": "He twisted his ankle while running",
+        "exampleTranslation": "التوى كاحله أثناء الجري"
+      },
+      {
+        "id": "ae_body_14",
+        "front": "جفن",
+        "back": "Eyelid",
+        "difficulty": "medium",
+        "example": "Her eyelid was swollen",
+        "exampleTranslation": "كان جفنها منتفخاً"
+      },
+      {
+        "id": "ae_body_15",
+        "front": "حنجرة",
+        "back": "Throat / Larynx",
+        "difficulty": "hard",
+        "example": "The doctor examined his throat",
+        "exampleTranslation": "فحص الطبيب حنجرته"
       }
     ]
   },
@@ -1526,6 +2166,46 @@
         "difficulty": "medium",
         "example": "I think of you",
         "exampleTranslation": "أفكر فيك"
+      },
+      {
+        "id": "ae_act_11",
+        "front": "تسلّق",
+        "back": "Climbing",
+        "difficulty": "easy",
+        "example": "Climbing mountains is his hobby",
+        "exampleTranslation": "تسلّق الجبال هوايته"
+      },
+      {
+        "id": "ae_act_12",
+        "front": "رسم",
+        "back": "Drawing / Painting",
+        "difficulty": "easy",
+        "example": "She enjoys drawing portraits",
+        "exampleTranslation": "تستمتع برسم الصور الشخصية"
+      },
+      {
+        "id": "ae_act_13",
+        "front": "بستنة",
+        "back": "Gardening",
+        "difficulty": "medium",
+        "example": "Gardening is relaxing on weekends",
+        "exampleTranslation": "البستنة مريحة في عطلة نهاية الأسبوع"
+      },
+      {
+        "id": "ae_act_14",
+        "front": "خياطة",
+        "back": "Sewing",
+        "difficulty": "medium",
+        "example": "My grandmother taught me sewing",
+        "exampleTranslation": "علّمتني جدّتي الخياطة"
+      },
+      {
+        "id": "ae_act_15",
+        "front": "تزلّج",
+        "back": "Skiing",
+        "difficulty": "hard",
+        "example": "We went skiing in the mountains",
+        "exampleTranslation": "ذهبنا للتزلّج في الجبال"
       }
     ]
   },
@@ -1616,6 +2296,46 @@
         "difficulty": "medium",
         "example": "I remember the lesson",
         "exampleTranslation": "أتذكر الدرس"
+      },
+      {
+        "id": "ae_learn_11",
+        "front": "تحليل",
+        "back": "Analysis",
+        "difficulty": "easy",
+        "example": "The analysis of the data took three days",
+        "exampleTranslation": "تحليل البيانات استغرق ثلاثة أيام"
+      },
+      {
+        "id": "ae_learn_12",
+        "front": "فرضية",
+        "back": "Hypothesis",
+        "difficulty": "easy",
+        "example": "The scientist tested his hypothesis",
+        "exampleTranslation": "اختبر العالم فرضيته"
+      },
+      {
+        "id": "ae_learn_13",
+        "front": "استنتاج",
+        "back": "Conclusion",
+        "difficulty": "medium",
+        "example": "What conclusion did you reach?",
+        "exampleTranslation": "ما الاستنتاج الذي توصّلت إليه؟"
+      },
+      {
+        "id": "ae_learn_14",
+        "front": "مرجع",
+        "back": "Reference",
+        "difficulty": "medium",
+        "example": "She cited five references in her paper",
+        "exampleTranslation": "استشهدت بخمسة مراجع في بحثها"
+      },
+      {
+        "id": "ae_learn_15",
+        "front": "منهجية",
+        "back": "Methodology",
+        "difficulty": "hard",
+        "example": "The research methodology was rigorous",
+        "exampleTranslation": "كانت منهجية البحث صارمة"
       }
     ]
   },
@@ -1706,6 +2426,46 @@
         "difficulty": "medium",
         "example": "Our coach is excellent",
         "exampleTranslation": "مدربنا ممتاز"
+      },
+      {
+        "id": "ae_sport_11",
+        "front": "ملاكمة",
+        "back": "Boxing",
+        "difficulty": "easy",
+        "example": "He started boxing at age twelve",
+        "exampleTranslation": "بدأ الملاكمة في سنّ الثانية عشرة"
+      },
+      {
+        "id": "ae_sport_12",
+        "front": "سباحة",
+        "back": "Swimming",
+        "difficulty": "easy",
+        "example": "Swimming is good exercise",
+        "exampleTranslation": "السباحة تمرين جيّد"
+      },
+      {
+        "id": "ae_sport_13",
+        "front": "حكم",
+        "back": "Referee",
+        "difficulty": "medium",
+        "example": "The referee made a fair decision",
+        "exampleTranslation": "اتّخذ الحكم قراراً عادلاً"
+      },
+      {
+        "id": "ae_sport_14",
+        "front": "بطولة",
+        "back": "Championship",
+        "difficulty": "medium",
+        "example": "The team won the championship",
+        "exampleTranslation": "فاز الفريق بالبطولة"
+      },
+      {
+        "id": "ae_sport_15",
+        "front": "رياضة فروسية",
+        "back": "Equestrian sport",
+        "difficulty": "hard",
+        "example": "Equestrian sport is popular in Arab countries",
+        "exampleTranslation": "الرياضة الفروسية شائعة في البلاد العربية"
       }
     ]
   },
@@ -1796,6 +2556,46 @@
         "difficulty": "medium",
         "example": "I'm buying a souvenir",
         "exampleTranslation": "أشتري تذكاراً"
+      },
+      {
+        "id": "ae_travel_11",
+        "front": "جواز سفر",
+        "back": "Passport",
+        "difficulty": "easy",
+        "example": "Don't forget your passport",
+        "exampleTranslation": "لا تنسَ جواز سفرك"
+      },
+      {
+        "id": "ae_travel_12",
+        "front": "حجز",
+        "back": "Reservation / Booking",
+        "difficulty": "easy",
+        "example": "I made a hotel reservation online",
+        "exampleTranslation": "قمت بحجز فندقي عبر الإنترنت"
+      },
+      {
+        "id": "ae_travel_13",
+        "front": "رحلة بحرية",
+        "back": "Cruise",
+        "difficulty": "medium",
+        "example": "The cruise stops at three ports",
+        "exampleTranslation": "الرحلة البحرية تتوقّف في ثلاثة موانئ"
+      },
+      {
+        "id": "ae_travel_14",
+        "front": "تأشيرة",
+        "back": "Visa",
+        "difficulty": "medium",
+        "example": "You need a visa to enter this country",
+        "exampleTranslation": "تحتاج تأشيرة لدخول هذا البلد"
+      },
+      {
+        "id": "ae_travel_15",
+        "front": "منطقة سياحية",
+        "back": "Tourist area",
+        "difficulty": "hard",
+        "example": "The tourist area has many restaurants",
+        "exampleTranslation": "المنطقة السياحية تحتوي على مطاعم كثيرة"
       }
     ]
   },
@@ -1886,6 +2686,46 @@
         "difficulty": "medium",
         "example": "Reading is my hobby",
         "exampleTranslation": "القراءة هوايتي"
+      },
+      {
+        "id": "ae_ent_11",
+        "front": "مسرحية",
+        "back": "Play / Theater show",
+        "difficulty": "easy",
+        "example": "We watched a comedy play last night",
+        "exampleTranslation": "شاهدنا مسرحية كوميدية الليلة الماضية"
+      },
+      {
+        "id": "ae_ent_12",
+        "front": "حفلة موسيقية",
+        "back": "Concert",
+        "difficulty": "easy",
+        "example": "The concert tickets are sold out",
+        "exampleTranslation": "تذاكر الحفلة الموسيقية نفدت"
+      },
+      {
+        "id": "ae_ent_13",
+        "front": "معرض فنّي",
+        "back": "Art exhibition",
+        "difficulty": "medium",
+        "example": "The art exhibition opens tomorrow",
+        "exampleTranslation": "المعرض الفنّي يفتتح غداً"
+      },
+      {
+        "id": "ae_ent_14",
+        "front": "لعبة فيديو",
+        "back": "Video game",
+        "difficulty": "medium",
+        "example": "The new video game is very exciting",
+        "exampleTranslation": "لعبة الفيديو الجديدة مثيرة جداً"
+      },
+      {
+        "id": "ae_ent_15",
+        "front": "وثائقي",
+        "back": "Documentary",
+        "difficulty": "hard",
+        "example": "The documentary about nature won an award",
+        "exampleTranslation": "الوثائقي عن الطبيعة فاز بجائزة"
       }
     ]
   }

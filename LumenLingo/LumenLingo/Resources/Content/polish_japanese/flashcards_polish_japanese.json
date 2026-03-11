@@ -86,6 +86,46 @@
         "difficulty": "medium",
         "example": "いいえ、欲しくないです",
         "exampleTranslation": "Nie, nie chcę"
+      },
+      {
+        "id": "pj_greet_11",
+        "front": "Przepraszam",
+        "back": "すみません",
+        "difficulty": "easy",
+        "example": "すみません、駅はどこですか？",
+        "exampleTranslation": "Przepraszam, gdzie jest stacja?"
+      },
+      {
+        "id": "pj_greet_12",
+        "front": "Miło mi",
+        "back": "はじめまして",
+        "difficulty": "easy",
+        "example": "はじめまして、よろしくお願いします。",
+        "exampleTranslation": "Miło mi, proszę o opiekę."
+      },
+      {
+        "id": "pj_greet_13",
+        "front": "Jak się masz?",
+        "back": "お元気ですか？",
+        "difficulty": "medium",
+        "example": "今日はお元気ですか？",
+        "exampleTranslation": "Jak się masz dzisiaj?"
+      },
+      {
+        "id": "pj_greet_14",
+        "front": "Witaj ponownie",
+        "back": "おかえりなさい",
+        "difficulty": "medium",
+        "example": "おかえりなさい、友達。",
+        "exampleTranslation": "Witaj ponownie, przyjacielu."
+      },
+      {
+        "id": "pj_greet_15",
+        "front": "Tęskniłem za tobą",
+        "back": "会いたかった",
+        "difficulty": "hard",
+        "example": "とても会いたかったです。",
+        "exampleTranslation": "Bardzo za tobą tęskniłem."
       }
     ]
   },
@@ -176,6 +216,46 @@
         "difficulty": "medium",
         "example": "叔母はとても親切です",
         "exampleTranslation": "Moja ciocia jest bardzo miła"
+      },
+      {
+        "id": "pj_fam_11",
+        "front": "Dziadek",
+        "back": "おじいさん",
+        "difficulty": "easy",
+        "example": "おじいさんは八十歳です。",
+        "exampleTranslation": "Dziadek ma osiemdziesiąt lat."
+      },
+      {
+        "id": "pj_fam_12",
+        "front": "Babcia",
+        "back": "おばあさん",
+        "difficulty": "easy",
+        "example": "おばあさんは料理が上手です。",
+        "exampleTranslation": "Babcia dobrze gotuje."
+      },
+      {
+        "id": "pj_fam_13",
+        "front": "Wujek",
+        "back": "おじさん",
+        "difficulty": "medium",
+        "example": "おじさんは東京に住んでいます。",
+        "exampleTranslation": "Wujek mieszka w Tokio."
+      },
+      {
+        "id": "pj_fam_14",
+        "front": "Ciotka",
+        "back": "おばさん",
+        "difficulty": "medium",
+        "example": "おばさんは医者です。",
+        "exampleTranslation": "Ciotka jest lekarką."
+      },
+      {
+        "id": "pj_fam_15",
+        "front": "Kuzyn",
+        "back": "いとこ",
+        "difficulty": "hard",
+        "example": "いとこは医学を勉強しています。",
+        "exampleTranslation": "Kuzyn studiuje medycynę."
       }
     ]
   },
@@ -266,6 +346,46 @@
         "difficulty": "medium",
         "example": "十ユーロお願いします",
         "exampleTranslation": "Dziesięć euro, proszę"
+      },
+      {
+        "id": "pj_num_11",
+        "front": "Dwadzieścia",
+        "back": "二十",
+        "difficulty": "easy",
+        "example": "本が二十冊あります。",
+        "exampleTranslation": "Mam dwadzieścia książek."
+      },
+      {
+        "id": "pj_num_12",
+        "front": "Trzydzieści",
+        "back": "三十",
+        "difficulty": "easy",
+        "example": "彼は三十歳です。",
+        "exampleTranslation": "Ma trzydzieści lat."
+      },
+      {
+        "id": "pj_num_13",
+        "front": "Pięćdziesiąt",
+        "back": "五十",
+        "difficulty": "medium",
+        "example": "五十円かかりました。",
+        "exampleTranslation": "Kosztowało pięćdziesiąt."
+      },
+      {
+        "id": "pj_num_14",
+        "front": "Sto",
+        "back": "百",
+        "difficulty": "medium",
+        "example": "クラスに百人の生徒がいます。",
+        "exampleTranslation": "W klasie jest stu uczniów."
+      },
+      {
+        "id": "pj_num_15",
+        "front": "Tysiąc",
+        "back": "千",
+        "difficulty": "hard",
+        "example": "千ページ読みました。",
+        "exampleTranslation": "Przeczytałem tysiąc stron."
       }
     ]
   },
@@ -356,6 +476,46 @@
         "difficulty": "medium",
         "example": "象は灰色です",
         "exampleTranslation": "Słoń jest szary"
+      },
+      {
+        "id": "pj_col_11",
+        "front": "Pomarańczowy",
+        "back": "オレンジ色",
+        "difficulty": "easy",
+        "example": "このシャツはオレンジ色です。",
+        "exampleTranslation": "Ta koszulka jest pomarańczowa."
+      },
+      {
+        "id": "pj_col_12",
+        "front": "Różowy",
+        "back": "ピンク",
+        "difficulty": "easy",
+        "example": "バラはピンクです。",
+        "exampleTranslation": "Róża jest różowa."
+      },
+      {
+        "id": "pj_col_13",
+        "front": "Szary",
+        "back": "灰色",
+        "difficulty": "medium",
+        "example": "今日の空は灰色です。",
+        "exampleTranslation": "Niebo jest dziś szare."
+      },
+      {
+        "id": "pj_col_14",
+        "front": "Fioletowy",
+        "back": "紫",
+        "difficulty": "medium",
+        "example": "紫色が好きです。",
+        "exampleTranslation": "Lubię kolor fioletowy."
+      },
+      {
+        "id": "pj_col_15",
+        "front": "Złoty",
+        "back": "金色",
+        "difficulty": "hard",
+        "example": "この指輪は金色です。",
+        "exampleTranslation": "Pierścionek jest złotego koloru."
       }
     ]
   },
@@ -446,6 +606,46 @@
         "difficulty": "medium",
         "example": "朝食に卵を食べます",
         "exampleTranslation": "Jem jajka na śniadanie"
+      },
+      {
+        "id": "pj_food_11",
+        "front": "Winogrona",
+        "back": "ぶどう",
+        "difficulty": "easy",
+        "example": "ぶどうはおいしいです。",
+        "exampleTranslation": "Winogrona są smaczne."
+      },
+      {
+        "id": "pj_food_12",
+        "front": "Kurczak",
+        "back": "鶏肉",
+        "difficulty": "easy",
+        "example": "鶏肉が好きです。",
+        "exampleTranslation": "Lubię kurczaka."
+      },
+      {
+        "id": "pj_food_13",
+        "front": "Makaron",
+        "back": "パスタ",
+        "difficulty": "medium",
+        "example": "パスタができました。",
+        "exampleTranslation": "Makaron jest gotowy."
+      },
+      {
+        "id": "pj_food_14",
+        "front": "Przyprawa",
+        "back": "スパイス",
+        "difficulty": "medium",
+        "example": "スパイスを少し加えてください。",
+        "exampleTranslation": "Dodaj trochę przyprawy."
+      },
+      {
+        "id": "pj_food_15",
+        "front": "Deser",
+        "back": "デザート",
+        "difficulty": "hard",
+        "example": "デザートはいかがですか？",
+        "exampleTranslation": "Chcesz deser?"
       }
     ]
   },
@@ -536,6 +736,46 @@
         "difficulty": "medium",
         "example": "ベッドは柔らかいです",
         "exampleTranslation": "Łóżko jest miękkie"
+      },
+      {
+        "id": "pj_house_11",
+        "front": "Sufit",
+        "back": "天井",
+        "difficulty": "easy",
+        "example": "天井がとても高いです。",
+        "exampleTranslation": "Sufit jest bardzo wysoki."
+      },
+      {
+        "id": "pj_house_12",
+        "front": "Schody",
+        "back": "階段",
+        "difficulty": "easy",
+        "example": "階段が狭いです。",
+        "exampleTranslation": "Schody są wąskie."
+      },
+      {
+        "id": "pj_house_13",
+        "front": "Piwnica",
+        "back": "地下室",
+        "difficulty": "medium",
+        "example": "地下室は夏に涼しいです。",
+        "exampleTranslation": "Piwnica jest chłodna latem."
+      },
+      {
+        "id": "pj_house_14",
+        "front": "Balkon",
+        "back": "バルコニー",
+        "difficulty": "medium",
+        "example": "バルコニーは庭に面しています。",
+        "exampleTranslation": "Balkon wychodzi na ogród."
+      },
+      {
+        "id": "pj_house_15",
+        "front": "Kominek",
+        "back": "暖炉",
+        "difficulty": "hard",
+        "example": "暖炉が家を暖めます。",
+        "exampleTranslation": "Kominek ogrzewa dom."
       }
     ]
   },
@@ -626,6 +866,46 @@
         "difficulty": "medium",
         "example": "博物館は面白いです",
         "exampleTranslation": "Muzeum jest interesujące"
+      },
+      {
+        "id": "pj_place_11",
+        "front": "Apteka",
+        "back": "薬局",
+        "difficulty": "easy",
+        "example": "薬局はここから近いです。",
+        "exampleTranslation": "Apteka jest blisko stąd."
+      },
+      {
+        "id": "pj_place_12",
+        "front": "Stadion",
+        "back": "スタジアム",
+        "difficulty": "easy",
+        "example": "スタジアムはとても大きいです。",
+        "exampleTranslation": "Stadion jest bardzo duży."
+      },
+      {
+        "id": "pj_place_13",
+        "front": "Muzeum",
+        "back": "博物館",
+        "difficulty": "medium",
+        "example": "昨日博物館を訪れました。",
+        "exampleTranslation": "Odwiedziłem muzeum wczoraj."
+      },
+      {
+        "id": "pj_place_14",
+        "front": "Świątynia",
+        "back": "神社",
+        "difficulty": "medium",
+        "example": "この神社はとても古いです。",
+        "exampleTranslation": "Ta świątynia jest bardzo stara."
+      },
+      {
+        "id": "pj_place_15",
+        "front": "Ambasada",
+        "back": "大使館",
+        "difficulty": "hard",
+        "example": "大使館は午前中に開いています。",
+        "exampleTranslation": "Ambasada jest otwarta rano."
       }
     ]
   },
@@ -716,6 +996,46 @@
         "difficulty": "medium",
         "example": "コートは暖かいです",
         "exampleTranslation": "Płaszcz jest ciepły"
+      },
+      {
+        "id": "pj_cloth_11",
+        "front": "Rękawiczki",
+        "back": "手袋",
+        "difficulty": "easy",
+        "example": "手袋は手を守ります。",
+        "exampleTranslation": "Rękawiczki chronią ręce."
+      },
+      {
+        "id": "pj_cloth_12",
+        "front": "Szalik",
+        "back": "マフラー",
+        "difficulty": "easy",
+        "example": "マフラーは暖かいです。",
+        "exampleTranslation": "Szalik jest ciepły."
+      },
+      {
+        "id": "pj_cloth_13",
+        "front": "Pasek",
+        "back": "ベルト",
+        "difficulty": "medium",
+        "example": "ベルトは革製です。",
+        "exampleTranslation": "Pasek jest skórzany."
+      },
+      {
+        "id": "pj_cloth_14",
+        "front": "Garnitur",
+        "back": "スーツ",
+        "difficulty": "medium",
+        "example": "スーツはとてもかっこいいです。",
+        "exampleTranslation": "Garnitur jest bardzo elegancki."
+      },
+      {
+        "id": "pj_cloth_15",
+        "front": "Sweter",
+        "back": "セーター",
+        "difficulty": "hard",
+        "example": "セーターは快適です。",
+        "exampleTranslation": "Sweter jest wygodny."
       }
     ]
   },
@@ -806,6 +1126,46 @@
         "difficulty": "medium",
         "example": "整備士は車を修理します",
         "exampleTranslation": "Mechanik naprawia samochody"
+      },
+      {
+        "id": "pj_work_11",
+        "front": "Spotkanie",
+        "back": "会議",
+        "difficulty": "easy",
+        "example": "会議は三時からです。",
+        "exampleTranslation": "Spotkanie jest o trzeciej."
+      },
+      {
+        "id": "pj_work_12",
+        "front": "Pensja",
+        "back": "給料",
+        "difficulty": "easy",
+        "example": "給料がいいです。",
+        "exampleTranslation": "Pensja jest dobra."
+      },
+      {
+        "id": "pj_work_13",
+        "front": "Kolega z pracy",
+        "back": "同僚",
+        "difficulty": "medium",
+        "example": "同僚は親切です。",
+        "exampleTranslation": "Kolega z pracy jest przyjazny."
+      },
+      {
+        "id": "pj_work_14",
+        "front": "Awans",
+        "back": "昇進",
+        "difficulty": "medium",
+        "example": "昇進しました。",
+        "exampleTranslation": "Dostałem awans."
+      },
+      {
+        "id": "pj_work_15",
+        "front": "Termin",
+        "back": "締め切り",
+        "difficulty": "hard",
+        "example": "締め切りは明日です。",
+        "exampleTranslation": "Termin jest jutro."
       }
     ]
   },
@@ -896,6 +1256,46 @@
         "difficulty": "medium",
         "example": "切符を買います",
         "exampleTranslation": "Kupuję bilet"
+      },
+      {
+        "id": "pj_trans_11",
+        "front": "Metro",
+        "back": "地下鉄",
+        "difficulty": "easy",
+        "example": "地下鉄は速いです。",
+        "exampleTranslation": "Metro jest szybkie."
+      },
+      {
+        "id": "pj_trans_12",
+        "front": "Taksówka",
+        "back": "タクシー",
+        "difficulty": "easy",
+        "example": "タクシーが外にいます。",
+        "exampleTranslation": "Taksówka jest na zewnątrz."
+      },
+      {
+        "id": "pj_trans_13",
+        "front": "Bilet",
+        "back": "切符",
+        "difficulty": "medium",
+        "example": "切符を買いました。",
+        "exampleTranslation": "Kupiłem bilet."
+      },
+      {
+        "id": "pj_trans_14",
+        "front": "Kierowca",
+        "back": "運転手",
+        "difficulty": "medium",
+        "example": "運転手はプロです。",
+        "exampleTranslation": "Kierowca jest profesjonalny."
+      },
+      {
+        "id": "pj_trans_15",
+        "front": "Skrzyżowanie",
+        "back": "交差点",
+        "difficulty": "hard",
+        "example": "交差点で右に曲がってください。",
+        "exampleTranslation": "Skręć w prawo na skrzyżowaniu."
       }
     ]
   },
@@ -986,6 +1386,46 @@
         "difficulty": "medium",
         "example": "私のリュックサックは重いです",
         "exampleTranslation": "Mój plecak jest ciężki"
+      },
+      {
+        "id": "pj_edu_11",
+        "front": "Wykład",
+        "back": "講義",
+        "difficulty": "easy",
+        "example": "講義は面白いです。",
+        "exampleTranslation": "Wykład jest ciekawy."
+      },
+      {
+        "id": "pj_edu_12",
+        "front": "Notatki",
+        "back": "ノート",
+        "difficulty": "easy",
+        "example": "ノートを取っています。",
+        "exampleTranslation": "Robię notatki."
+      },
+      {
+        "id": "pj_edu_13",
+        "front": "Biblioteka",
+        "back": "図書館",
+        "difficulty": "medium",
+        "example": "図書館は静かです。",
+        "exampleTranslation": "Biblioteka jest cicha."
+      },
+      {
+        "id": "pj_edu_14",
+        "front": "Dyplom",
+        "back": "卒業証書",
+        "difficulty": "medium",
+        "example": "卒業証書をもらいました。",
+        "exampleTranslation": "Zdobyłem dyplom."
+      },
+      {
+        "id": "pj_edu_15",
+        "front": "Stypendium",
+        "back": "奨学金",
+        "difficulty": "hard",
+        "example": "奨学金を受けました。",
+        "exampleTranslation": "Dostałem stypendium."
       }
     ]
   },
@@ -1076,6 +1516,46 @@
         "difficulty": "medium",
         "example": "月は満ちています",
         "exampleTranslation": "Księżyc jest w pełni"
+      },
+      {
+        "id": "pj_nature_11",
+        "front": "Wodospad",
+        "back": "滝",
+        "difficulty": "easy",
+        "example": "滝は美しいです。",
+        "exampleTranslation": "Wodospad jest piękny."
+      },
+      {
+        "id": "pj_nature_12",
+        "front": "Pustynia",
+        "back": "砂漠",
+        "difficulty": "easy",
+        "example": "砂漠は広大です。",
+        "exampleTranslation": "Pustynia jest rozległa."
+      },
+      {
+        "id": "pj_nature_13",
+        "front": "Dolina",
+        "back": "谷",
+        "difficulty": "medium",
+        "example": "谷は緑です。",
+        "exampleTranslation": "Dolina jest zielona."
+      },
+      {
+        "id": "pj_nature_14",
+        "front": "Jaskinia",
+        "back": "洞窟",
+        "difficulty": "medium",
+        "example": "洞窟は暗いです。",
+        "exampleTranslation": "Jaskinia jest ciemna."
+      },
+      {
+        "id": "pj_nature_15",
+        "front": "Wulkan",
+        "back": "火山",
+        "difficulty": "hard",
+        "example": "火山は活動中です。",
+        "exampleTranslation": "Wulkan jest aktywny."
       }
     ]
   },
@@ -1166,6 +1646,46 @@
         "difficulty": "medium",
         "example": "彼らは退屈しています",
         "exampleTranslation": "Oni są znudzeni"
+      },
+      {
+        "id": "pj_emo_11",
+        "front": "Dumny",
+        "back": "誇り",
+        "difficulty": "easy",
+        "example": "あなたを誇りに思います。",
+        "exampleTranslation": "Jestem z ciebie dumny."
+      },
+      {
+        "id": "pj_emo_12",
+        "front": "Zaskoczony",
+        "back": "驚いた",
+        "difficulty": "easy",
+        "example": "結果に驚きました。",
+        "exampleTranslation": "Jestem zaskoczony wynikiem."
+      },
+      {
+        "id": "pj_emo_13",
+        "front": "Zazdrosny",
+        "back": "嫉妬",
+        "difficulty": "medium",
+        "example": "嫉妬しないでください。",
+        "exampleTranslation": "Nie bądź zazdrosny."
+      },
+      {
+        "id": "pj_emo_14",
+        "front": "Wdzięczny",
+        "back": "感謝",
+        "difficulty": "medium",
+        "example": "助けてくれて感謝しています。",
+        "exampleTranslation": "Jestem wdzięczny za pomoc."
+      },
+      {
+        "id": "pj_emo_15",
+        "front": "Rozczarowany",
+        "back": "がっかり",
+        "difficulty": "hard",
+        "example": "結果にがっかりしました。",
+        "exampleTranslation": "Jestem rozczarowany wynikami."
       }
     ]
   },
@@ -1256,6 +1776,46 @@
         "difficulty": "medium",
         "example": "来週",
         "exampleTranslation": "Następny tydzień"
+      },
+      {
+        "id": "pj_time_11",
+        "front": "Świt",
+        "back": "夜明け",
+        "difficulty": "easy",
+        "example": "夜明けは美しいです。",
+        "exampleTranslation": "Świt jest piękny."
+      },
+      {
+        "id": "pj_time_12",
+        "front": "Zmierzch",
+        "back": "夕暮れ",
+        "difficulty": "easy",
+        "example": "夕暮れは静かです。",
+        "exampleTranslation": "Zmierzch jest spokojny."
+      },
+      {
+        "id": "pj_time_13",
+        "front": "Kwartał",
+        "back": "四半期",
+        "difficulty": "medium",
+        "example": "あと一四半期残っています。",
+        "exampleTranslation": "Pozostał jeden kwartał."
+      },
+      {
+        "id": "pj_time_14",
+        "front": "Dekada",
+        "back": "十年",
+        "difficulty": "medium",
+        "example": "ここに十年住んでいました。",
+        "exampleTranslation": "Mieszkałem tu dekadę."
+      },
+      {
+        "id": "pj_time_15",
+        "front": "Stulecie",
+        "back": "世紀",
+        "difficulty": "hard",
+        "example": "この建物は一世紀前に建てられました。",
+        "exampleTranslation": "Ten budynek zbudowano sto lat temu."
       }
     ]
   },
@@ -1346,6 +1906,46 @@
         "difficulty": "medium",
         "example": "雷が聞こえます",
         "exampleTranslation": "Słyszysz grzmot"
+      },
+      {
+        "id": "pj_weather_11",
+        "front": "Grad",
+        "back": "ひょう",
+        "difficulty": "easy",
+        "example": "ひょうが激しく降りました。",
+        "exampleTranslation": "Grad padał mocno."
+      },
+      {
+        "id": "pj_weather_12",
+        "front": "Mgła",
+        "back": "霧",
+        "difficulty": "easy",
+        "example": "霧が濃いです。",
+        "exampleTranslation": "Mgła jest gęsta."
+      },
+      {
+        "id": "pj_weather_13",
+        "front": "Tęcza",
+        "back": "虹",
+        "difficulty": "medium",
+        "example": "虹を見ました。",
+        "exampleTranslation": "Widziałem tęczę."
+      },
+      {
+        "id": "pj_weather_14",
+        "front": "Susza",
+        "back": "干ばつ",
+        "difficulty": "medium",
+        "example": "干ばつが作物に影響しています。",
+        "exampleTranslation": "Susza wpływa na uprawy."
+      },
+      {
+        "id": "pj_weather_15",
+        "front": "Huragan",
+        "back": "ハリケーン",
+        "difficulty": "hard",
+        "example": "ハリケーンが家を破壊しました。",
+        "exampleTranslation": "Huragan zniszczył domy."
       }
     ]
   },
@@ -1436,6 +2036,46 @@
         "difficulty": "medium",
         "example": "私の心臓は速く鼓動しています",
         "exampleTranslation": "Moje serce bije szybko"
+      },
+      {
+        "id": "pj_body_11",
+        "front": "Łokieć",
+        "back": "肘",
+        "difficulty": "easy",
+        "example": "肘をぶつけました。",
+        "exampleTranslation": "Uderzyłem się w łokieć."
+      },
+      {
+        "id": "pj_body_12",
+        "front": "Kolano",
+        "back": "膝",
+        "difficulty": "easy",
+        "example": "膝が痛いです。",
+        "exampleTranslation": "Boli mnie kolano."
+      },
+      {
+        "id": "pj_body_13",
+        "front": "Kciuk",
+        "back": "親指",
+        "difficulty": "medium",
+        "example": "親指は握るのに大切です。",
+        "exampleTranslation": "Kciuk jest ważny dla uchwytu."
+      },
+      {
+        "id": "pj_body_14",
+        "front": "Brew",
+        "back": "眉毛",
+        "difficulty": "medium",
+        "example": "彼は眉毛を上げました。",
+        "exampleTranslation": "Uniósł brew."
+      },
+      {
+        "id": "pj_body_15",
+        "front": "Żebro",
+        "back": "肋骨",
+        "difficulty": "hard",
+        "example": "肋骨を折りました。",
+        "exampleTranslation": "Złamałem żebro."
       }
     ]
   },
@@ -1526,6 +2166,46 @@
         "difficulty": "medium",
         "example": "あなたのことを考えています",
         "exampleTranslation": "Myślę o tobie"
+      },
+      {
+        "id": "pj_act_11",
+        "front": "Wędkowanie",
+        "back": "釣り",
+        "difficulty": "easy",
+        "example": "釣りが好きです。",
+        "exampleTranslation": "Lubię wędkowanie."
+      },
+      {
+        "id": "pj_act_12",
+        "front": "Wspinaczka",
+        "back": "登山",
+        "difficulty": "easy",
+        "example": "登山は楽しいです。",
+        "exampleTranslation": "Wspinaczka jest zabawna."
+      },
+      {
+        "id": "pj_act_13",
+        "front": "Ogrodnictwo",
+        "back": "園芸",
+        "difficulty": "medium",
+        "example": "園芸は一番好きな趣味です。",
+        "exampleTranslation": "Ogrodnictwo to moje ulubione hobby."
+      },
+      {
+        "id": "pj_act_14",
+        "front": "Szycie",
+        "back": "裁縫",
+        "difficulty": "medium",
+        "example": "裁縫を習いました。",
+        "exampleTranslation": "Nauczyłem się szycia."
+      },
+      {
+        "id": "pj_act_15",
+        "front": "Rzeźbiarstwo",
+        "back": "彫刻",
+        "difficulty": "hard",
+        "example": "彫刻は古い芸術です。",
+        "exampleTranslation": "Rzeźbiarstwo to stara sztuka."
       }
     ]
   },
@@ -1616,6 +2296,46 @@
         "difficulty": "medium",
         "example": "レッスンを覚えています",
         "exampleTranslation": "Pamiętam tę lekcję"
+      },
+      {
+        "id": "pj_learn_11",
+        "front": "Słownik",
+        "back": "辞書",
+        "difficulty": "easy",
+        "example": "辞書は役に立ちます。",
+        "exampleTranslation": "Słownik jest przydatny."
+      },
+      {
+        "id": "pj_learn_12",
+        "front": "Ćwiczenie",
+        "back": "練習",
+        "difficulty": "easy",
+        "example": "練習を終えてください。",
+        "exampleTranslation": "Ukończ ćwiczenie."
+      },
+      {
+        "id": "pj_learn_13",
+        "front": "Wymowa",
+        "back": "発音",
+        "difficulty": "medium",
+        "example": "発音はとても大切です。",
+        "exampleTranslation": "Wymowa jest bardzo ważna."
+      },
+      {
+        "id": "pj_learn_14",
+        "front": "Tłumaczenie",
+        "back": "翻訳",
+        "difficulty": "medium",
+        "example": "翻訳は正確です。",
+        "exampleTranslation": "Tłumaczenie jest dokładne."
+      },
+      {
+        "id": "pj_learn_15",
+        "front": "Biegłość",
+        "back": "熟達",
+        "difficulty": "hard",
+        "example": "熟達には練習が必要です。",
+        "exampleTranslation": "Biegłość wymaga praktyki."
       }
     ]
   },
@@ -1706,6 +2426,46 @@
         "difficulty": "medium",
         "example": "私たちのコーチは素晴らしいです",
         "exampleTranslation": "Nasz trener jest doskonały"
+      },
+      {
+        "id": "pj_sport_11",
+        "front": "Sędzia",
+        "back": "審判",
+        "difficulty": "easy",
+        "example": "審判は公正です。",
+        "exampleTranslation": "Sędzia jest sprawiedliwy."
+      },
+      {
+        "id": "pj_sport_12",
+        "front": "Mistrzostwa",
+        "back": "選手権",
+        "difficulty": "easy",
+        "example": "選手権が始まりました。",
+        "exampleTranslation": "Mistrzostwa się rozpoczęły."
+      },
+      {
+        "id": "pj_sport_13",
+        "front": "Trener",
+        "back": "コーチ",
+        "difficulty": "medium",
+        "example": "コーチは優秀です。",
+        "exampleTranslation": "Trener jest doskonały."
+      },
+      {
+        "id": "pj_sport_14",
+        "front": "Rekord",
+        "back": "記録",
+        "difficulty": "medium",
+        "example": "記録を破りました。",
+        "exampleTranslation": "Pobił rekord."
+      },
+      {
+        "id": "pj_sport_15",
+        "front": "Szermierka",
+        "back": "フェンシング",
+        "difficulty": "hard",
+        "example": "フェンシングはオリンピック競技です。",
+        "exampleTranslation": "Szermierka jest sportem olimpijskim."
       }
     ]
   },
@@ -1796,6 +2556,46 @@
         "difficulty": "medium",
         "example": "お土産を買います",
         "exampleTranslation": "Kupuję pamiątkę"
+      },
+      {
+        "id": "pj_travel_11",
+        "front": "Paszport",
+        "back": "パスポート",
+        "difficulty": "easy",
+        "example": "パスポートの準備ができました。",
+        "exampleTranslation": "Mój paszport jest gotowy."
+      },
+      {
+        "id": "pj_travel_12",
+        "front": "Wiza",
+        "back": "ビザ",
+        "difficulty": "easy",
+        "example": "ビザが必要です。",
+        "exampleTranslation": "Potrzebuję wizy."
+      },
+      {
+        "id": "pj_travel_13",
+        "front": "Rezerwacja",
+        "back": "予約",
+        "difficulty": "medium",
+        "example": "予約が確認されました。",
+        "exampleTranslation": "Rezerwacja jest potwierdzona."
+      },
+      {
+        "id": "pj_travel_14",
+        "front": "Przewodnik",
+        "back": "ガイド",
+        "difficulty": "medium",
+        "example": "ガイドは素晴らしいです。",
+        "exampleTranslation": "Przewodnik jest doskonały."
+      },
+      {
+        "id": "pj_travel_15",
+        "front": "Ubezpieczenie",
+        "back": "旅行保険",
+        "difficulty": "hard",
+        "example": "旅行保険は必要です。",
+        "exampleTranslation": "Ubezpieczenie podróżne jest konieczne."
       }
     ]
   },
@@ -1886,6 +2686,46 @@
         "difficulty": "medium",
         "example": "読書は私の趣味です",
         "exampleTranslation": "Czytanie to moje hobby"
+      },
+      {
+        "id": "pj_ent_11",
+        "front": "Koncert",
+        "back": "コンサート",
+        "difficulty": "easy",
+        "example": "コンサートは素晴らしいです。",
+        "exampleTranslation": "Koncert jest wspaniały."
+      },
+      {
+        "id": "pj_ent_12",
+        "front": "Wystawa",
+        "back": "展示会",
+        "difficulty": "easy",
+        "example": "展示会が開いています。",
+        "exampleTranslation": "Wystawa jest otwarta."
+      },
+      {
+        "id": "pj_ent_13",
+        "front": "Cyrk",
+        "back": "サーカス",
+        "difficulty": "medium",
+        "example": "サーカスは子供に楽しいです。",
+        "exampleTranslation": "Cyrk jest zabawny dla dzieci."
+      },
+      {
+        "id": "pj_ent_14",
+        "front": "Festiwal",
+        "back": "祭り",
+        "difficulty": "medium",
+        "example": "祭りは毎年行われます。",
+        "exampleTranslation": "Festiwal jest coroczny."
+      },
+      {
+        "id": "pj_ent_15",
+        "front": "Komedia",
+        "back": "コメディ",
+        "difficulty": "hard",
+        "example": "コメディは笑わせてくれます。",
+        "exampleTranslation": "Komedia mnie rozśmiesza."
       }
     ]
   }

@@ -7,21 +7,66 @@
     "color": "#22c55e",
     "level": "beginner",
     "items": [
-      { "word": "manzana", "hint": "Apple" },
-      { "word": "naranja", "hint": "Orange" },
-      { "word": "plátano", "hint": "Banana" },
-      { "word": "fresa", "hint": "Strawberry" },
-      { "word": "uva", "hint": "Grape" },
-      { "word": "limón", "hint": "Lemon" },
-      { "word": "sandía", "hint": "Watermelon" },
-      { "word": "melocotón", "hint": "Peach" },
-      { "word": "cereza", "hint": "Cherry" },
-      { "word": "piña", "hint": "Pineapple" },
-      { "word": "pera", "hint": "Pear" },
-      { "word": "mango", "hint": "Mango" },
-      { "word": "kiwi", "hint": "Kiwi" },
-      { "word": "coco", "hint": "Coconut" },
-      { "word": "ciruela", "hint": "Plum" }
+      {
+        "word": "manzana",
+        "hint": "Apple"
+      },
+      {
+        "word": "naranja",
+        "hint": "Orange"
+      },
+      {
+        "word": "plátano",
+        "hint": "Banana"
+      },
+      {
+        "word": "fresa",
+        "hint": "Strawberry"
+      },
+      {
+        "word": "uva",
+        "hint": "Grape"
+      },
+      {
+        "word": "limón",
+        "hint": "Lemon"
+      },
+      {
+        "word": "sandía",
+        "hint": "Watermelon"
+      },
+      {
+        "word": "melocotón",
+        "hint": "Peach"
+      },
+      {
+        "word": "cereza",
+        "hint": "Cherry"
+      },
+      {
+        "word": "piña",
+        "hint": "Pineapple"
+      },
+      {
+        "word": "pera",
+        "hint": "Pear"
+      },
+      {
+        "word": "mango",
+        "hint": "Mango"
+      },
+      {
+        "word": "kiwi",
+        "hint": "Kiwi"
+      },
+      {
+        "word": "coco",
+        "hint": "Coconut"
+      },
+      {
+        "word": "ciruela",
+        "hint": "Plum"
+      }
     ]
   },
   {
@@ -32,21 +77,66 @@
     "color": "#f97316",
     "level": "beginner",
     "items": [
-      { "word": "tomate", "hint": "Tomato" },
-      { "word": "cebolla", "hint": "Onion" },
-      { "word": "lechuga", "hint": "Lettuce" },
-      { "word": "zanahoria", "hint": "Carrot" },
-      { "word": "patata", "hint": "Potato" },
-      { "word": "ajo", "hint": "Garlic" },
-      { "word": "pepino", "hint": "Cucumber" },
-      { "word": "pimiento", "hint": "Pepper" },
-      { "word": "espinaca", "hint": "Spinach" },
-      { "word": "brócoli", "hint": "Broccoli" },
-      { "word": "maíz", "hint": "Corn" },
-      { "word": "guisante", "hint": "Pea" },
-      { "word": "champiñón", "hint": "Mushroom" },
-      { "word": "berenjena", "hint": "Eggplant" },
-      { "word": "calabaza", "hint": "Pumpkin" }
+      {
+        "word": "tomate",
+        "hint": "Tomato"
+      },
+      {
+        "word": "cebolla",
+        "hint": "Onion"
+      },
+      {
+        "word": "lechuga",
+        "hint": "Lettuce"
+      },
+      {
+        "word": "zanahoria",
+        "hint": "Carrot"
+      },
+      {
+        "word": "patata",
+        "hint": "Potato"
+      },
+      {
+        "word": "ajo",
+        "hint": "Garlic"
+      },
+      {
+        "word": "pepino",
+        "hint": "Cucumber"
+      },
+      {
+        "word": "pimiento",
+        "hint": "Pepper"
+      },
+      {
+        "word": "espinaca",
+        "hint": "Spinach"
+      },
+      {
+        "word": "brócoli",
+        "hint": "Broccoli"
+      },
+      {
+        "word": "maíz",
+        "hint": "Corn"
+      },
+      {
+        "word": "guisante",
+        "hint": "Pea"
+      },
+      {
+        "word": "champiñón",
+        "hint": "Mushroom"
+      },
+      {
+        "word": "berenjena",
+        "hint": "Eggplant"
+      },
+      {
+        "word": "calabaza",
+        "hint": "Pumpkin"
+      }
     ]
   },
   {
@@ -57,21 +147,66 @@
     "color": "#ec4899",
     "level": "beginner",
     "items": [
-      { "word": "rojo", "hint": "Red" },
-      { "word": "azul", "hint": "Blue" },
-      { "word": "verde", "hint": "Green" },
-      { "word": "amarillo", "hint": "Yellow" },
-      { "word": "negro", "hint": "Black" },
-      { "word": "blanco", "hint": "White" },
-      { "word": "naranja", "hint": "Orange" },
-      { "word": "morado", "hint": "Purple" },
-      { "word": "rosa", "hint": "Pink" },
-      { "word": "marrón", "hint": "Brown" },
-      { "word": "gris", "hint": "Gray" },
-      { "word": "dorado", "hint": "Gold" },
-      { "word": "plateado", "hint": "Silver" },
-      { "word": "celeste", "hint": "Light blue" },
-      { "word": "oscuro", "hint": "Dark" }
+      {
+        "word": "rojo",
+        "hint": "Red"
+      },
+      {
+        "word": "azul",
+        "hint": "Blue"
+      },
+      {
+        "word": "verde",
+        "hint": "Green"
+      },
+      {
+        "word": "amarillo",
+        "hint": "Yellow"
+      },
+      {
+        "word": "negro",
+        "hint": "Black"
+      },
+      {
+        "word": "blanco",
+        "hint": "White"
+      },
+      {
+        "word": "naranja",
+        "hint": "Orange"
+      },
+      {
+        "word": "morado",
+        "hint": "Purple"
+      },
+      {
+        "word": "rosa",
+        "hint": "Pink"
+      },
+      {
+        "word": "marrón",
+        "hint": "Brown"
+      },
+      {
+        "word": "gris",
+        "hint": "Gray"
+      },
+      {
+        "word": "dorado",
+        "hint": "Gold"
+      },
+      {
+        "word": "plateado",
+        "hint": "Silver"
+      },
+      {
+        "word": "celeste",
+        "hint": "Light blue"
+      },
+      {
+        "word": "oscuro",
+        "hint": "Dark"
+      }
     ]
   },
   {
@@ -82,21 +217,66 @@
     "color": "#8b5cf6",
     "level": "beginner",
     "items": [
-      { "word": "madre", "hint": "Mother" },
-      { "word": "padre", "hint": "Father" },
-      { "word": "hermana", "hint": "Sister" },
-      { "word": "hermano", "hint": "Brother" },
-      { "word": "abuela", "hint": "Grandmother" },
-      { "word": "abuelo", "hint": "Grandfather" },
-      { "word": "hijo", "hint": "Son" },
-      { "word": "hija", "hint": "Daughter" },
-      { "word": "primo", "hint": "Cousin" },
-      { "word": "sobrino", "hint": "Nephew" },
-      { "word": "sobrina", "hint": "Niece" },
-      { "word": "esposo", "hint": "Husband" },
-      { "word": "esposa", "hint": "Wife" },
-      { "word": "cuñado", "hint": "Brother-in-law" },
-      { "word": "suegra", "hint": "Mother-in-law" }
+      {
+        "word": "madre",
+        "hint": "Mother"
+      },
+      {
+        "word": "padre",
+        "hint": "Father"
+      },
+      {
+        "word": "hermana",
+        "hint": "Sister"
+      },
+      {
+        "word": "hermano",
+        "hint": "Brother"
+      },
+      {
+        "word": "abuela",
+        "hint": "Grandmother"
+      },
+      {
+        "word": "abuelo",
+        "hint": "Grandfather"
+      },
+      {
+        "word": "hijo",
+        "hint": "Son"
+      },
+      {
+        "word": "hija",
+        "hint": "Daughter"
+      },
+      {
+        "word": "primo",
+        "hint": "Cousin"
+      },
+      {
+        "word": "sobrino",
+        "hint": "Nephew"
+      },
+      {
+        "word": "sobrina",
+        "hint": "Niece"
+      },
+      {
+        "word": "esposo",
+        "hint": "Husband"
+      },
+      {
+        "word": "esposa",
+        "hint": "Wife"
+      },
+      {
+        "word": "cuñado",
+        "hint": "Brother-in-law"
+      },
+      {
+        "word": "suegra",
+        "hint": "Mother-in-law"
+      }
     ]
   },
   {
@@ -107,21 +287,66 @@
     "color": "#14b8a6",
     "level": "beginner",
     "items": [
-      { "word": "perro", "hint": "Dog" },
-      { "word": "gato", "hint": "Cat" },
-      { "word": "caballo", "hint": "Horse" },
-      { "word": "pájaro", "hint": "Bird" },
-      { "word": "pez", "hint": "Fish" },
-      { "word": "vaca", "hint": "Cow" },
-      { "word": "cerdo", "hint": "Pig" },
-      { "word": "conejo", "hint": "Rabbit" },
-      { "word": "tortuga", "hint": "Turtle" },
-      { "word": "mariposa", "hint": "Butterfly" },
-      { "word": "león", "hint": "Lion" },
-      { "word": "elefante", "hint": "Elephant" },
-      { "word": "mono", "hint": "Monkey" },
-      { "word": "oso", "hint": "Bear" },
-      { "word": "ratón", "hint": "Mouse" }
+      {
+        "word": "perro",
+        "hint": "Dog"
+      },
+      {
+        "word": "gato",
+        "hint": "Cat"
+      },
+      {
+        "word": "caballo",
+        "hint": "Horse"
+      },
+      {
+        "word": "pájaro",
+        "hint": "Bird"
+      },
+      {
+        "word": "pez",
+        "hint": "Fish"
+      },
+      {
+        "word": "vaca",
+        "hint": "Cow"
+      },
+      {
+        "word": "cerdo",
+        "hint": "Pig"
+      },
+      {
+        "word": "conejo",
+        "hint": "Rabbit"
+      },
+      {
+        "word": "tortuga",
+        "hint": "Turtle"
+      },
+      {
+        "word": "mariposa",
+        "hint": "Butterfly"
+      },
+      {
+        "word": "león",
+        "hint": "Lion"
+      },
+      {
+        "word": "elefante",
+        "hint": "Elephant"
+      },
+      {
+        "word": "mono",
+        "hint": "Monkey"
+      },
+      {
+        "word": "oso",
+        "hint": "Bear"
+      },
+      {
+        "word": "ratón",
+        "hint": "Mouse"
+      }
     ]
   },
   {
@@ -132,21 +357,1816 @@
     "color": "#ef4444",
     "level": "intermediate",
     "items": [
-      { "word": "cabeza", "hint": "Head" },
-      { "word": "brazo", "hint": "Arm" },
-      { "word": "pierna", "hint": "Leg" },
-      { "word": "mano", "hint": "Hand" },
-      { "word": "pie", "hint": "Foot" },
-      { "word": "ojo", "hint": "Eye" },
-      { "word": "nariz", "hint": "Nose" },
-      { "word": "boca", "hint": "Mouth" },
-      { "word": "oreja", "hint": "Ear" },
-      { "word": "dedo", "hint": "Finger" },
-      { "word": "corazón", "hint": "Heart" },
-      { "word": "espalda", "hint": "Back" },
-      { "word": "rodilla", "hint": "Knee" },
-      { "word": "hombro", "hint": "Shoulder" },
-      { "word": "cuello", "hint": "Neck" }
+      {
+        "word": "cabeza",
+        "hint": "Head"
+      },
+      {
+        "word": "brazo",
+        "hint": "Arm"
+      },
+      {
+        "word": "pierna",
+        "hint": "Leg"
+      },
+      {
+        "word": "mano",
+        "hint": "Hand"
+      },
+      {
+        "word": "pie",
+        "hint": "Foot"
+      },
+      {
+        "word": "ojo",
+        "hint": "Eye"
+      },
+      {
+        "word": "nariz",
+        "hint": "Nose"
+      },
+      {
+        "word": "boca",
+        "hint": "Mouth"
+      },
+      {
+        "word": "oreja",
+        "hint": "Ear"
+      },
+      {
+        "word": "dedo",
+        "hint": "Finger"
+      },
+      {
+        "word": "corazón",
+        "hint": "Heart"
+      },
+      {
+        "word": "espalda",
+        "hint": "Back"
+      },
+      {
+        "word": "rodilla",
+        "hint": "Knee"
+      },
+      {
+        "word": "hombro",
+        "hint": "Shoulder"
+      },
+      {
+        "word": "cuello",
+        "hint": "Neck"
+      }
+    ]
+  },
+  {
+    "key": "greetings",
+    "name": "Greetings & Phrases",
+    "description": "Common greetings and polite expressions in Spanish",
+    "iconName": "hand.wave",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "hola",
+        "hint": "Hello"
+      },
+      {
+        "word": "adiós",
+        "hint": "Goodbye"
+      },
+      {
+        "word": "gracias",
+        "hint": "Thank you"
+      },
+      {
+        "word": "buenos",
+        "hint": "Good (masc. pl.)"
+      },
+      {
+        "word": "noches",
+        "hint": "Nights"
+      },
+      {
+        "word": "tardes",
+        "hint": "Afternoons"
+      },
+      {
+        "word": "favor",
+        "hint": "Favor / Please"
+      },
+      {
+        "word": "perdón",
+        "hint": "Pardon / Sorry"
+      },
+      {
+        "word": "salud",
+        "hint": "Health / Bless you"
+      },
+      {
+        "word": "bienvenido",
+        "hint": "Welcome"
+      },
+      {
+        "word": "despedida",
+        "hint": "Farewell"
+      },
+      {
+        "word": "encantado",
+        "hint": "Delighted / Pleased to meet you"
+      },
+      {
+        "word": "disculpa",
+        "hint": "Excuse me"
+      },
+      {
+        "word": "permiso",
+        "hint": "Permission / Excuse me"
+      },
+      {
+        "word": "suerte",
+        "hint": "Luck / Good luck"
+      }
+    ]
+  },
+  {
+    "key": "numbers_wb",
+    "name": "Numbers",
+    "description": "Spell out number words in Spanish",
+    "iconName": "number",
+    "color": "#6366f1",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "cero",
+        "hint": "Zero"
+      },
+      {
+        "word": "tres",
+        "hint": "Three"
+      },
+      {
+        "word": "cinco",
+        "hint": "Five"
+      },
+      {
+        "word": "siete",
+        "hint": "Seven"
+      },
+      {
+        "word": "nueve",
+        "hint": "Nine"
+      },
+      {
+        "word": "diez",
+        "hint": "Ten"
+      },
+      {
+        "word": "once",
+        "hint": "Eleven"
+      },
+      {
+        "word": "doce",
+        "hint": "Twelve"
+      },
+      {
+        "word": "veinte",
+        "hint": "Twenty"
+      },
+      {
+        "word": "treinta",
+        "hint": "Thirty"
+      },
+      {
+        "word": "cuarenta",
+        "hint": "Forty"
+      },
+      {
+        "word": "cincuenta",
+        "hint": "Fifty"
+      },
+      {
+        "word": "cien",
+        "hint": "One hundred"
+      },
+      {
+        "word": "mil",
+        "hint": "One thousand"
+      },
+      {
+        "word": "millón",
+        "hint": "One million"
+      }
+    ]
+  },
+  {
+    "key": "food_wb",
+    "name": "Food",
+    "description": "Common food items in Spanish",
+    "iconName": "fork.knife",
+    "color": "#d97706",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "arroz",
+        "hint": "Rice"
+      },
+      {
+        "word": "pollo",
+        "hint": "Chicken"
+      },
+      {
+        "word": "queso",
+        "hint": "Cheese"
+      },
+      {
+        "word": "huevo",
+        "hint": "Egg"
+      },
+      {
+        "word": "leche",
+        "hint": "Milk"
+      },
+      {
+        "word": "mantequilla",
+        "hint": "Butter"
+      },
+      {
+        "word": "pescado",
+        "hint": "Fish (as food)"
+      },
+      {
+        "word": "carne",
+        "hint": "Meat"
+      },
+      {
+        "word": "sopa",
+        "hint": "Soup"
+      },
+      {
+        "word": "ensalada",
+        "hint": "Salad"
+      },
+      {
+        "word": "bocadillo",
+        "hint": "Sandwich"
+      },
+      {
+        "word": "galleta",
+        "hint": "Cookie / Biscuit"
+      },
+      {
+        "word": "helado",
+        "hint": "Ice cream"
+      },
+      {
+        "word": "cereal",
+        "hint": "Cereal"
+      },
+      {
+        "word": "tortilla",
+        "hint": "Omelette / Tortilla"
+      }
+    ]
+  },
+  {
+    "key": "clothing_wb",
+    "name": "Clothing",
+    "description": "Clothing and accessories in Spanish",
+    "iconName": "tshirt",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "camisa",
+        "hint": "Shirt"
+      },
+      {
+        "word": "pantalón",
+        "hint": "Pants / Trousers"
+      },
+      {
+        "word": "zapato",
+        "hint": "Shoe"
+      },
+      {
+        "word": "vestido",
+        "hint": "Dress"
+      },
+      {
+        "word": "falda",
+        "hint": "Skirt"
+      },
+      {
+        "word": "chaqueta",
+        "hint": "Jacket"
+      },
+      {
+        "word": "abrigo",
+        "hint": "Coat"
+      },
+      {
+        "word": "corbata",
+        "hint": "Tie"
+      },
+      {
+        "word": "sombrero",
+        "hint": "Hat"
+      },
+      {
+        "word": "bufanda",
+        "hint": "Scarf"
+      },
+      {
+        "word": "guante",
+        "hint": "Glove"
+      },
+      {
+        "word": "cinturón",
+        "hint": "Belt"
+      },
+      {
+        "word": "calcetín",
+        "hint": "Sock"
+      },
+      {
+        "word": "camiseta",
+        "hint": "T-shirt"
+      },
+      {
+        "word": "sudadera",
+        "hint": "Sweatshirt / Hoodie"
+      }
+    ]
+  },
+  {
+    "key": "house_rooms",
+    "name": "House & Rooms",
+    "description": "Rooms and parts of a house in Spanish",
+    "iconName": "house",
+    "color": "#0ea5e9",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "cocina",
+        "hint": "Kitchen"
+      },
+      {
+        "word": "salón",
+        "hint": "Living room"
+      },
+      {
+        "word": "dormitorio",
+        "hint": "Bedroom"
+      },
+      {
+        "word": "baño",
+        "hint": "Bathroom"
+      },
+      {
+        "word": "jardín",
+        "hint": "Garden"
+      },
+      {
+        "word": "garaje",
+        "hint": "Garage"
+      },
+      {
+        "word": "escalera",
+        "hint": "Staircase"
+      },
+      {
+        "word": "ventana",
+        "hint": "Window"
+      },
+      {
+        "word": "puerta",
+        "hint": "Door"
+      },
+      {
+        "word": "techo",
+        "hint": "Roof / Ceiling"
+      },
+      {
+        "word": "balcón",
+        "hint": "Balcony"
+      },
+      {
+        "word": "sótano",
+        "hint": "Basement"
+      },
+      {
+        "word": "pasillo",
+        "hint": "Hallway"
+      },
+      {
+        "word": "terraza",
+        "hint": "Terrace"
+      },
+      {
+        "word": "comedor",
+        "hint": "Dining room"
+      }
+    ]
+  },
+  {
+    "key": "weather_wb",
+    "name": "Weather",
+    "description": "Weather and climate vocabulary in Spanish",
+    "iconName": "cloud.sun",
+    "color": "#38bdf8",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "lluvia",
+        "hint": "Rain"
+      },
+      {
+        "word": "nieve",
+        "hint": "Snow"
+      },
+      {
+        "word": "viento",
+        "hint": "Wind"
+      },
+      {
+        "word": "tormenta",
+        "hint": "Storm"
+      },
+      {
+        "word": "nube",
+        "hint": "Cloud"
+      },
+      {
+        "word": "trueno",
+        "hint": "Thunder"
+      },
+      {
+        "word": "granizo",
+        "hint": "Hail"
+      },
+      {
+        "word": "niebla",
+        "hint": "Fog"
+      },
+      {
+        "word": "calor",
+        "hint": "Heat"
+      },
+      {
+        "word": "frío",
+        "hint": "Cold"
+      },
+      {
+        "word": "soleado",
+        "hint": "Sunny"
+      },
+      {
+        "word": "nublado",
+        "hint": "Cloudy"
+      },
+      {
+        "word": "húmedo",
+        "hint": "Humid"
+      },
+      {
+        "word": "helada",
+        "hint": "Frost"
+      },
+      {
+        "word": "relámpago",
+        "hint": "Lightning"
+      }
+    ]
+  },
+  {
+    "key": "time_wb",
+    "name": "Time & Calendar",
+    "description": "Time-related words and calendar terms in Spanish",
+    "iconName": "clock",
+    "color": "#64748b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "lunes",
+        "hint": "Monday"
+      },
+      {
+        "word": "martes",
+        "hint": "Tuesday"
+      },
+      {
+        "word": "miércoles",
+        "hint": "Wednesday"
+      },
+      {
+        "word": "jueves",
+        "hint": "Thursday"
+      },
+      {
+        "word": "viernes",
+        "hint": "Friday"
+      },
+      {
+        "word": "sábado",
+        "hint": "Saturday"
+      },
+      {
+        "word": "domingo",
+        "hint": "Sunday"
+      },
+      {
+        "word": "enero",
+        "hint": "January"
+      },
+      {
+        "word": "marzo",
+        "hint": "March"
+      },
+      {
+        "word": "julio",
+        "hint": "July"
+      },
+      {
+        "word": "octubre",
+        "hint": "October"
+      },
+      {
+        "word": "semana",
+        "hint": "Week"
+      },
+      {
+        "word": "hora",
+        "hint": "Hour"
+      },
+      {
+        "word": "minuto",
+        "hint": "Minute"
+      },
+      {
+        "word": "segundo",
+        "hint": "Second (time)"
+      }
+    ]
+  },
+  {
+    "key": "professions_wb",
+    "name": "Professions",
+    "description": "Jobs and professions in Spanish",
+    "iconName": "briefcase",
+    "color": "#059669",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "médico",
+        "hint": "Doctor"
+      },
+      {
+        "word": "abogado",
+        "hint": "Lawyer"
+      },
+      {
+        "word": "maestro",
+        "hint": "Teacher"
+      },
+      {
+        "word": "ingeniero",
+        "hint": "Engineer"
+      },
+      {
+        "word": "enfermera",
+        "hint": "Nurse"
+      },
+      {
+        "word": "bombero",
+        "hint": "Firefighter"
+      },
+      {
+        "word": "policía",
+        "hint": "Police officer"
+      },
+      {
+        "word": "cocinero",
+        "hint": "Cook / Chef"
+      },
+      {
+        "word": "dentista",
+        "hint": "Dentist"
+      },
+      {
+        "word": "periodista",
+        "hint": "Journalist"
+      },
+      {
+        "word": "carpintero",
+        "hint": "Carpenter"
+      },
+      {
+        "word": "electricista",
+        "hint": "Electrician"
+      },
+      {
+        "word": "piloto",
+        "hint": "Pilot"
+      },
+      {
+        "word": "arquitecto",
+        "hint": "Architect"
+      },
+      {
+        "word": "veterinario",
+        "hint": "Veterinarian"
+      }
+    ]
+  },
+  {
+    "key": "transport_wb",
+    "name": "Transportation",
+    "description": "Vehicles and transportation in Spanish",
+    "iconName": "car",
+    "color": "#3b82f6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "coche",
+        "hint": "Car"
+      },
+      {
+        "word": "autobús",
+        "hint": "Bus"
+      },
+      {
+        "word": "avión",
+        "hint": "Airplane"
+      },
+      {
+        "word": "barco",
+        "hint": "Boat / Ship"
+      },
+      {
+        "word": "tren",
+        "hint": "Train"
+      },
+      {
+        "word": "bicicleta",
+        "hint": "Bicycle"
+      },
+      {
+        "word": "moto",
+        "hint": "Motorcycle"
+      },
+      {
+        "word": "taxi",
+        "hint": "Taxi"
+      },
+      {
+        "word": "camión",
+        "hint": "Truck"
+      },
+      {
+        "word": "metro",
+        "hint": "Subway"
+      },
+      {
+        "word": "tranvía",
+        "hint": "Tram"
+      },
+      {
+        "word": "helicóptero",
+        "hint": "Helicopter"
+      },
+      {
+        "word": "ambulancia",
+        "hint": "Ambulance"
+      },
+      {
+        "word": "lancha",
+        "hint": "Motorboat"
+      },
+      {
+        "word": "crucero",
+        "hint": "Cruise ship"
+      }
+    ]
+  },
+  {
+    "key": "school_wb",
+    "name": "School",
+    "description": "School and classroom vocabulary in Spanish",
+    "iconName": "book",
+    "color": "#eab308",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "escuela",
+        "hint": "School"
+      },
+      {
+        "word": "profesor",
+        "hint": "Professor / Teacher"
+      },
+      {
+        "word": "alumno",
+        "hint": "Student"
+      },
+      {
+        "word": "libro",
+        "hint": "Book"
+      },
+      {
+        "word": "cuaderno",
+        "hint": "Notebook"
+      },
+      {
+        "word": "pizarra",
+        "hint": "Blackboard"
+      },
+      {
+        "word": "examen",
+        "hint": "Exam"
+      },
+      {
+        "word": "tarea",
+        "hint": "Homework"
+      },
+      {
+        "word": "clase",
+        "hint": "Class"
+      },
+      {
+        "word": "bolígrafo",
+        "hint": "Pen"
+      },
+      {
+        "word": "lápiz",
+        "hint": "Pencil"
+      },
+      {
+        "word": "mochila",
+        "hint": "Backpack"
+      },
+      {
+        "word": "escritorio",
+        "hint": "Desk"
+      },
+      {
+        "word": "biblioteca",
+        "hint": "Library"
+      },
+      {
+        "word": "recreo",
+        "hint": "Recess / Break"
+      }
+    ]
+  },
+  {
+    "key": "kitchen_utensils",
+    "name": "Kitchen Utensils",
+    "description": "Kitchen items and utensils in Spanish",
+    "iconName": "cup.and.saucer",
+    "color": "#b45309",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "cuchillo",
+        "hint": "Knife"
+      },
+      {
+        "word": "tenedor",
+        "hint": "Fork"
+      },
+      {
+        "word": "cuchara",
+        "hint": "Spoon"
+      },
+      {
+        "word": "plato",
+        "hint": "Plate"
+      },
+      {
+        "word": "taza",
+        "hint": "Cup / Mug"
+      },
+      {
+        "word": "sartén",
+        "hint": "Frying pan"
+      },
+      {
+        "word": "olla",
+        "hint": "Pot"
+      },
+      {
+        "word": "batidora",
+        "hint": "Blender / Mixer"
+      },
+      {
+        "word": "cafetera",
+        "hint": "Coffee maker"
+      },
+      {
+        "word": "horno",
+        "hint": "Oven"
+      },
+      {
+        "word": "nevera",
+        "hint": "Refrigerator"
+      },
+      {
+        "word": "servilleta",
+        "hint": "Napkin"
+      },
+      {
+        "word": "bandeja",
+        "hint": "Tray"
+      },
+      {
+        "word": "colador",
+        "hint": "Strainer / Colander"
+      },
+      {
+        "word": "espátula",
+        "hint": "Spatula"
+      }
+    ]
+  },
+  {
+    "key": "sports_wb",
+    "name": "Sports",
+    "description": "Sports and physical activities in Spanish",
+    "iconName": "sportscourt",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "fútbol",
+        "hint": "Soccer / Football"
+      },
+      {
+        "word": "baloncesto",
+        "hint": "Basketball"
+      },
+      {
+        "word": "tenis",
+        "hint": "Tennis"
+      },
+      {
+        "word": "natación",
+        "hint": "Swimming"
+      },
+      {
+        "word": "ciclismo",
+        "hint": "Cycling"
+      },
+      {
+        "word": "atletismo",
+        "hint": "Athletics / Track & field"
+      },
+      {
+        "word": "voleibol",
+        "hint": "Volleyball"
+      },
+      {
+        "word": "boxeo",
+        "hint": "Boxing"
+      },
+      {
+        "word": "esquí",
+        "hint": "Skiing"
+      },
+      {
+        "word": "gimnasia",
+        "hint": "Gymnastics"
+      },
+      {
+        "word": "esgrima",
+        "hint": "Fencing"
+      },
+      {
+        "word": "remo",
+        "hint": "Rowing"
+      },
+      {
+        "word": "surfear",
+        "hint": "To surf"
+      },
+      {
+        "word": "patinaje",
+        "hint": "Skating"
+      },
+      {
+        "word": "escalada",
+        "hint": "Climbing"
+      }
+    ]
+  },
+  {
+    "key": "music_instruments_wb",
+    "name": "Musical Instruments",
+    "description": "Musical instruments in Spanish",
+    "iconName": "guitars",
+    "color": "#dc2626",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "guitarra",
+        "hint": "Guitar"
+      },
+      {
+        "word": "piano",
+        "hint": "Piano"
+      },
+      {
+        "word": "violín",
+        "hint": "Violin"
+      },
+      {
+        "word": "batería",
+        "hint": "Drums"
+      },
+      {
+        "word": "flauta",
+        "hint": "Flute"
+      },
+      {
+        "word": "trompeta",
+        "hint": "Trumpet"
+      },
+      {
+        "word": "saxofón",
+        "hint": "Saxophone"
+      },
+      {
+        "word": "arpa",
+        "hint": "Harp"
+      },
+      {
+        "word": "clarinete",
+        "hint": "Clarinet"
+      },
+      {
+        "word": "acordeón",
+        "hint": "Accordion"
+      },
+      {
+        "word": "violonchelo",
+        "hint": "Cello"
+      },
+      {
+        "word": "contrabajo",
+        "hint": "Double bass"
+      },
+      {
+        "word": "órgano",
+        "hint": "Organ"
+      },
+      {
+        "word": "pandereta",
+        "hint": "Tambourine"
+      },
+      {
+        "word": "trombón",
+        "hint": "Trombone"
+      }
+    ]
+  },
+  {
+    "key": "nature_wb",
+    "name": "Nature",
+    "description": "Nature and landscape vocabulary in Spanish",
+    "iconName": "leaf",
+    "color": "#15803d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "montaña",
+        "hint": "Mountain"
+      },
+      {
+        "word": "bosque",
+        "hint": "Forest"
+      },
+      {
+        "word": "playa",
+        "hint": "Beach"
+      },
+      {
+        "word": "desierto",
+        "hint": "Desert"
+      },
+      {
+        "word": "cascada",
+        "hint": "Waterfall"
+      },
+      {
+        "word": "volcán",
+        "hint": "Volcano"
+      },
+      {
+        "word": "selva",
+        "hint": "Jungle"
+      },
+      {
+        "word": "pradera",
+        "hint": "Meadow"
+      },
+      {
+        "word": "arroyo",
+        "hint": "Stream / Creek"
+      },
+      {
+        "word": "cueva",
+        "hint": "Cave"
+      },
+      {
+        "word": "acantilado",
+        "hint": "Cliff"
+      },
+      {
+        "word": "pantano",
+        "hint": "Swamp"
+      },
+      {
+        "word": "colina",
+        "hint": "Hill"
+      },
+      {
+        "word": "valle",
+        "hint": "Valley"
+      },
+      {
+        "word": "arrecife",
+        "hint": "Reef"
+      }
+    ]
+  },
+  {
+    "key": "emotions_wb",
+    "name": "Emotions",
+    "description": "Feelings and emotions in Spanish",
+    "iconName": "heart",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "alegría",
+        "hint": "Joy / Happiness"
+      },
+      {
+        "word": "tristeza",
+        "hint": "Sadness"
+      },
+      {
+        "word": "enfado",
+        "hint": "Anger"
+      },
+      {
+        "word": "miedo",
+        "hint": "Fear"
+      },
+      {
+        "word": "sorpresa",
+        "hint": "Surprise"
+      },
+      {
+        "word": "vergüenza",
+        "hint": "Shame / Embarrassment"
+      },
+      {
+        "word": "orgullo",
+        "hint": "Pride"
+      },
+      {
+        "word": "envidia",
+        "hint": "Envy"
+      },
+      {
+        "word": "confianza",
+        "hint": "Confidence / Trust"
+      },
+      {
+        "word": "ansiedad",
+        "hint": "Anxiety"
+      },
+      {
+        "word": "esperanza",
+        "hint": "Hope"
+      },
+      {
+        "word": "nostalgia",
+        "hint": "Nostalgia"
+      },
+      {
+        "word": "gratitud",
+        "hint": "Gratitude"
+      },
+      {
+        "word": "cariño",
+        "hint": "Affection"
+      },
+      {
+        "word": "soledad",
+        "hint": "Loneliness"
+      }
+    ]
+  },
+  {
+    "key": "technology_wb",
+    "name": "Technology",
+    "description": "Technology and gadget vocabulary in Spanish",
+    "iconName": "desktopcomputer",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "computadora",
+        "hint": "Computer"
+      },
+      {
+        "word": "teléfono",
+        "hint": "Telephone"
+      },
+      {
+        "word": "pantalla",
+        "hint": "Screen"
+      },
+      {
+        "word": "teclado",
+        "hint": "Keyboard"
+      },
+      {
+        "word": "impresora",
+        "hint": "Printer"
+      },
+      {
+        "word": "contraseña",
+        "hint": "Password"
+      },
+      {
+        "word": "programa",
+        "hint": "Program / Software"
+      },
+      {
+        "word": "archivo",
+        "hint": "File"
+      },
+      {
+        "word": "carpeta",
+        "hint": "Folder"
+      },
+      {
+        "word": "correo",
+        "hint": "Email / Mail"
+      },
+      {
+        "word": "enlace",
+        "hint": "Link"
+      },
+      {
+        "word": "buscador",
+        "hint": "Search engine"
+      },
+      {
+        "word": "tableta",
+        "hint": "Tablet"
+      },
+      {
+        "word": "auricular",
+        "hint": "Headphone / Earpiece"
+      },
+      {
+        "word": "cargador",
+        "hint": "Charger"
+      }
+    ]
+  },
+  {
+    "key": "office_wb",
+    "name": "Office",
+    "description": "Office and workplace vocabulary in Spanish",
+    "iconName": "building.2",
+    "color": "#475569",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "oficina",
+        "hint": "Office"
+      },
+      {
+        "word": "reunión",
+        "hint": "Meeting"
+      },
+      {
+        "word": "empresa",
+        "hint": "Company"
+      },
+      {
+        "word": "jefe",
+        "hint": "Boss"
+      },
+      {
+        "word": "empleado",
+        "hint": "Employee"
+      },
+      {
+        "word": "salario",
+        "hint": "Salary"
+      },
+      {
+        "word": "factura",
+        "hint": "Invoice / Bill"
+      },
+      {
+        "word": "presupuesto",
+        "hint": "Budget"
+      },
+      {
+        "word": "contrato",
+        "hint": "Contract"
+      },
+      {
+        "word": "proyecto",
+        "hint": "Project"
+      },
+      {
+        "word": "informe",
+        "hint": "Report"
+      },
+      {
+        "word": "horario",
+        "hint": "Schedule"
+      },
+      {
+        "word": "ascenso",
+        "hint": "Promotion"
+      },
+      {
+        "word": "despido",
+        "hint": "Dismissal / Firing"
+      },
+      {
+        "word": "entrevista",
+        "hint": "Interview"
+      }
+    ]
+  },
+  {
+    "key": "health_medical",
+    "name": "Health & Medicine",
+    "description": "Health and medical vocabulary in Spanish",
+    "iconName": "cross.case",
+    "color": "#dc2626",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "hospital",
+        "hint": "Hospital"
+      },
+      {
+        "word": "medicina",
+        "hint": "Medicine"
+      },
+      {
+        "word": "pastilla",
+        "hint": "Pill / Tablet"
+      },
+      {
+        "word": "receta",
+        "hint": "Prescription / Recipe"
+      },
+      {
+        "word": "farmacia",
+        "hint": "Pharmacy"
+      },
+      {
+        "word": "fiebre",
+        "hint": "Fever"
+      },
+      {
+        "word": "herida",
+        "hint": "Wound / Injury"
+      },
+      {
+        "word": "cirugía",
+        "hint": "Surgery"
+      },
+      {
+        "word": "vendaje",
+        "hint": "Bandage"
+      },
+      {
+        "word": "alergia",
+        "hint": "Allergy"
+      },
+      {
+        "word": "vacuna",
+        "hint": "Vaccine"
+      },
+      {
+        "word": "consulta",
+        "hint": "Consultation"
+      },
+      {
+        "word": "síntoma",
+        "hint": "Symptom"
+      },
+      {
+        "word": "diagnóstico",
+        "hint": "Diagnosis"
+      },
+      {
+        "word": "sangre",
+        "hint": "Blood"
+      }
+    ]
+  },
+  {
+    "key": "travel_wb",
+    "name": "Travel",
+    "description": "Travel and tourism vocabulary in Spanish",
+    "iconName": "airplane",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "equipaje",
+        "hint": "Luggage"
+      },
+      {
+        "word": "pasaporte",
+        "hint": "Passport"
+      },
+      {
+        "word": "maleta",
+        "hint": "Suitcase"
+      },
+      {
+        "word": "billete",
+        "hint": "Ticket"
+      },
+      {
+        "word": "aeropuerto",
+        "hint": "Airport"
+      },
+      {
+        "word": "estación",
+        "hint": "Station"
+      },
+      {
+        "word": "reserva",
+        "hint": "Reservation"
+      },
+      {
+        "word": "turista",
+        "hint": "Tourist"
+      },
+      {
+        "word": "itinerario",
+        "hint": "Itinerary"
+      },
+      {
+        "word": "frontera",
+        "hint": "Border"
+      },
+      {
+        "word": "aduana",
+        "hint": "Customs"
+      },
+      {
+        "word": "alojamiento",
+        "hint": "Accommodation"
+      },
+      {
+        "word": "excursión",
+        "hint": "Excursion / Trip"
+      },
+      {
+        "word": "recuerdo",
+        "hint": "Souvenir / Memory"
+      },
+      {
+        "word": "guía",
+        "hint": "Guide"
+      }
+    ]
+  },
+  {
+    "key": "hobbies_wb",
+    "name": "Hobbies",
+    "description": "Hobbies and leisure activities in Spanish",
+    "iconName": "star",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "lectura",
+        "hint": "Reading"
+      },
+      {
+        "word": "pintura",
+        "hint": "Painting"
+      },
+      {
+        "word": "costura",
+        "hint": "Sewing"
+      },
+      {
+        "word": "jardinería",
+        "hint": "Gardening"
+      },
+      {
+        "word": "fotografía",
+        "hint": "Photography"
+      },
+      {
+        "word": "cerámica",
+        "hint": "Ceramics / Pottery"
+      },
+      {
+        "word": "bordado",
+        "hint": "Embroidery"
+      },
+      {
+        "word": "ajedrez",
+        "hint": "Chess"
+      },
+      {
+        "word": "cocinar",
+        "hint": "To cook"
+      },
+      {
+        "word": "dibujo",
+        "hint": "Drawing"
+      },
+      {
+        "word": "escultura",
+        "hint": "Sculpture"
+      },
+      {
+        "word": "pesca",
+        "hint": "Fishing"
+      },
+      {
+        "word": "senderismo",
+        "hint": "Hiking"
+      },
+      {
+        "word": "colección",
+        "hint": "Collection"
+      },
+      {
+        "word": "bricolaje",
+        "hint": "DIY / Crafts"
+      }
+    ]
+  },
+  {
+    "key": "drinks_beverages",
+    "name": "Drinks & Beverages",
+    "description": "Drinks and beverages in Spanish",
+    "iconName": "cup.and.saucer",
+    "color": "#06b6d4",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "cerveza",
+        "hint": "Beer"
+      },
+      {
+        "word": "refresco",
+        "hint": "Soft drink / Soda"
+      },
+      {
+        "word": "limonada",
+        "hint": "Lemonade"
+      },
+      {
+        "word": "batido",
+        "hint": "Milkshake / Smoothie"
+      },
+      {
+        "word": "infusión",
+        "hint": "Herbal tea / Infusion"
+      },
+      {
+        "word": "chocolate",
+        "hint": "Chocolate (drink)"
+      },
+      {
+        "word": "zumo",
+        "hint": "Juice"
+      },
+      {
+        "word": "champán",
+        "hint": "Champagne"
+      },
+      {
+        "word": "ginebra",
+        "hint": "Gin"
+      },
+      {
+        "word": "aguardiente",
+        "hint": "Spirit / Liquor"
+      },
+      {
+        "word": "sidra",
+        "hint": "Cider"
+      },
+      {
+        "word": "sangría",
+        "hint": "Sangria"
+      },
+      {
+        "word": "horchata",
+        "hint": "Horchata (tiger nut drink)"
+      },
+      {
+        "word": "café",
+        "hint": "Coffee"
+      },
+      {
+        "word": "vinagre",
+        "hint": "Vinegar"
+      }
+    ]
+  },
+  {
+    "key": "desserts_sweets",
+    "name": "Desserts & Sweets",
+    "description": "Desserts, pastries, and sweet treats in Spanish",
+    "iconName": "birthday.cake",
+    "color": "#f97316",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "pastel",
+        "hint": "Cake"
+      },
+      {
+        "word": "polvorón",
+        "hint": "Shortbread cookie (Christmas treat)"
+      },
+      {
+        "word": "churro",
+        "hint": "Churro (fried dough)"
+      },
+      {
+        "word": "flan",
+        "hint": "Flan / Caramel custard"
+      },
+      {
+        "word": "turrón",
+        "hint": "Nougat"
+      },
+      {
+        "word": "mermelada",
+        "hint": "Jam / Marmalade"
+      },
+      {
+        "word": "caramelo",
+        "hint": "Candy / Caramel"
+      },
+      {
+        "word": "bombón",
+        "hint": "Bonbon / Chocolate candy"
+      },
+      {
+        "word": "mazapán",
+        "hint": "Marzipan"
+      },
+      {
+        "word": "brownie",
+        "hint": "Brownie"
+      },
+      {
+        "word": "gelatina",
+        "hint": "Gelatin / Jelly"
+      },
+      {
+        "word": "natilla",
+        "hint": "Custard"
+      },
+      {
+        "word": "rosquilla",
+        "hint": "Doughnut / Ring-shaped pastry"
+      },
+      {
+        "word": "mousse",
+        "hint": "Mousse"
+      },
+      {
+        "word": "bizcocho",
+        "hint": "Sponge cake"
+      }
+    ]
+  },
+  {
+    "key": "furniture_wb",
+    "name": "Furniture",
+    "description": "Furniture and home items in Spanish",
+    "iconName": "sofa",
+    "color": "#92400e",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "silla",
+        "hint": "Chair"
+      },
+      {
+        "word": "mesa",
+        "hint": "Table"
+      },
+      {
+        "word": "cama",
+        "hint": "Bed"
+      },
+      {
+        "word": "armario",
+        "hint": "Wardrobe / Closet"
+      },
+      {
+        "word": "estante",
+        "hint": "Shelf"
+      },
+      {
+        "word": "sofá",
+        "hint": "Sofa / Couch"
+      },
+      {
+        "word": "lámpara",
+        "hint": "Lamp"
+      },
+      {
+        "word": "alfombra",
+        "hint": "Rug / Carpet"
+      },
+      {
+        "word": "cortina",
+        "hint": "Curtain"
+      },
+      {
+        "word": "espejo",
+        "hint": "Mirror"
+      },
+      {
+        "word": "cajón",
+        "hint": "Drawer"
+      },
+      {
+        "word": "mesita",
+        "hint": "Small table / Nightstand"
+      },
+      {
+        "word": "taburete",
+        "hint": "Stool"
+      },
+      {
+        "word": "cómoda",
+        "hint": "Dresser / Chest of drawers"
+      },
+      {
+        "word": "perchero",
+        "hint": "Coat rack"
+      }
+    ]
+  },
+  {
+    "key": "tools_wb",
+    "name": "Tools",
+    "description": "Tools and hardware in Spanish",
+    "iconName": "wrench",
+    "color": "#71717a",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "martillo",
+        "hint": "Hammer"
+      },
+      {
+        "word": "destornillador",
+        "hint": "Screwdriver"
+      },
+      {
+        "word": "taladro",
+        "hint": "Drill"
+      },
+      {
+        "word": "tornillo",
+        "hint": "Screw"
+      },
+      {
+        "word": "sierra",
+        "hint": "Saw"
+      },
+      {
+        "word": "alicate",
+        "hint": "Pliers"
+      },
+      {
+        "word": "llave",
+        "hint": "Wrench / Key"
+      },
+      {
+        "word": "clavo",
+        "hint": "Nail"
+      },
+      {
+        "word": "cinta",
+        "hint": "Tape / Ribbon"
+      },
+      {
+        "word": "brocha",
+        "hint": "Paintbrush"
+      },
+      {
+        "word": "pala",
+        "hint": "Shovel"
+      },
+      {
+        "word": "serrucho",
+        "hint": "Handsaw"
+      },
+      {
+        "word": "hacha",
+        "hint": "Axe"
+      },
+      {
+        "word": "carretilla",
+        "hint": "Wheelbarrow"
+      },
+      {
+        "word": "cincel",
+        "hint": "Chisel"
+      }
+    ]
+  },
+  {
+    "key": "materials_wb",
+    "name": "Materials",
+    "description": "Common materials and substances in Spanish",
+    "iconName": "cube",
+    "color": "#a1a1aa",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "madera",
+        "hint": "Wood"
+      },
+      {
+        "word": "metal",
+        "hint": "Metal"
+      },
+      {
+        "word": "vidrio",
+        "hint": "Glass"
+      },
+      {
+        "word": "plástico",
+        "hint": "Plastic"
+      },
+      {
+        "word": "algodón",
+        "hint": "Cotton"
+      },
+      {
+        "word": "seda",
+        "hint": "Silk"
+      },
+      {
+        "word": "cuero",
+        "hint": "Leather"
+      },
+      {
+        "word": "piedra",
+        "hint": "Stone"
+      },
+      {
+        "word": "ladrillo",
+        "hint": "Brick"
+      },
+      {
+        "word": "cemento",
+        "hint": "Cement"
+      },
+      {
+        "word": "caucho",
+        "hint": "Rubber"
+      },
+      {
+        "word": "acero",
+        "hint": "Steel"
+      },
+      {
+        "word": "cobre",
+        "hint": "Copper"
+      },
+      {
+        "word": "mármol",
+        "hint": "Marble"
+      },
+      {
+        "word": "porcelana",
+        "hint": "Porcelain"
+      }
     ]
   }
 ]
