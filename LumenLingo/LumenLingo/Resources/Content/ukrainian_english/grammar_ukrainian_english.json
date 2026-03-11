@@ -9838,5 +9838,1030 @@
         "explanation": "IF NOT (максимальний еліпсис): 'Or Sunday IF NOT' = 'or Sunday if Saturday doesn't work'. IF NOT замінює цілу умовну клаузу! Це крайня форма еліпсису — пропускається все, крім IF NOT. Ще: 'I'll try to come, and if not, I'll call you', 'Let's hope for the best, and if not, we'll manage'. IF SO (позитивний): 'Is the shop open? If so, I'll go'. IF NOT (негативний): 'If not, I'll try tomorrow'. В українській: 'Якщо ні' — точний відповідник. Обидні мови використовують цей прийом. Підсумок: еліпсис = стислість + природність."
       }
     ]
+  },
+  {
+    "key": "substitution",
+    "name": "Substitution",
+    "description": "Заміщення (one, do so, such)",
+    "iconName": "arrow.triangle.2.circlepath",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ue_sub1",
+        "question": "I don't have a pen. Can I borrow _____?",
+        "translation": "(В мене немає ручки. Можу позичити?)",
+        "options": [
+          "one",
+          "it",
+          "pen",
+          "a one"
+        ],
+        "correct": "one",
+        "explanation": "ONE як заміщення (singular indefinite): 'Can I borrow ONE?' = 'Can I borrow a pen?'. ONE замінює злічуваний іменник в однині, коли мова йде не про КОНКРЕТНИЙ предмет, а про БУДЬ-ЯКИЙ з категорії. Порівняйте: 'Where's my pen? I need IT' (конкретна ручка) vs 'I need a pen. Can I borrow ONE?' (будь-яка ручка). ONE = невизначений, IT = визначений. Ще: 'This cake is good. Would you like one?'. В українській: 'Можу позичити?' — ручку пропускаємо зовсім, ONE не перекладається."
+      },
+      {
+        "id": "ue_sub2",
+        "question": "These shoes are nice, but I prefer the red _____.",
+        "translation": "(Ці туфлі гарні, але я надаю перевагу червоним.)",
+        "options": [
+          "ones",
+          "one",
+          "them",
+          "shoes"
+        ],
+        "correct": "ones",
+        "explanation": "ONES (plural substitution): 'I prefer the red ONES' = 'I prefer the red shoes'. ONES замінює злічуваний іменник у МНОЖИНІ. ONE = однина, ONES = множина. З прикметником: 'the big ones', 'the cheap ones', 'which ones?'. Без артикля: 'I want blue ones' (будь-які сині). З артиклем: 'I want the blue ones' (конкретні сині). 'Which ones do you want?' (Які саме хочеш?). В українській: 'Червоні' — просто прикметник без іменника. Українська ще стисліша за англійську."
+      },
+      {
+        "id": "ue_sub3",
+        "question": "She asked me to tidy up and I did _____.",
+        "translation": "(Вона попросила мене прибрати, і я це зробив.)",
+        "options": [
+          "so",
+          "it",
+          "that",
+          "this"
+        ],
+        "correct": "so",
+        "explanation": "DO SO (formal substitution): 'I DID SO' = 'I did tidy up'. DO SO замінює дієслово + доповнення як одне ціле. Більш формальне, ніж просте DO: 'If you wish to apply, please do so before Friday'. Ще: 'She promised to help and she did so willingly', 'He was told to leave and he did so immediately'. DO SO типове для офіційних інструкцій, ділового і академічного стилю. В розмовній мові частіше: 'She asked me to tidy up and I did'. В українській: 'І я зробив це' або просто 'І я зробив' — 'це' опціонально."
+      },
+      {
+        "id": "ue_sub4",
+        "question": "\"Is she ill?\" — \"If _____, she should see a doctor.\"",
+        "translation": "(«Вона хвора?» — «Якщо так, їй слід піти до лікаря.»)",
+        "options": [
+          "so",
+          "she",
+          "it",
+          "that"
+        ],
+        "correct": "so",
+        "explanation": "IF SO / IF NOT (conditional substitution): 'IF SO, she should see a doctor' = 'If she is ill, she should see a doctor'. SO замінює цілу умовну клаузу. IF SO = якщо так, IF NOT = якщо ні. Ще: 'Is it raining? If so, take an umbrella. If not, enjoy the walk.' Максимальна стислість: IF SO = 2 слова замість цілого речення. Типово для інструкцій: 'Check the box. If so, proceed. If not, contact support.' В українській: 'Якщо так' / 'Якщо ні' — точний відповідник. Обидні мови скорочують однаково."
+      },
+      {
+        "id": "ue_sub5",
+        "question": "The climate here is similar to _____ of Southern France.",
+        "translation": "(Клімат тут подібний до клімату Півдня Франції.)",
+        "options": [
+          "that",
+          "this",
+          "one",
+          "it"
+        ],
+        "correct": "that",
+        "explanation": "THAT OF (formal comparison substitution): 'Similar to THAT OF Southern France' = 'подібний до клімату...' THAT замінює НЕЗЛІЧУВАНИЙ іменник або абстрактне поняття для уникнення повтору. THAT/THOSE = формальна заміна: 'The population of London is larger than THAT of Paris' (= the population). 'The results of this study are comparable to THOSE of previous research' (= the results). В розмовній мові рідко: 'London's population is bigger than Paris's'. В українській: 'До клімату' — повтор або 'до такого у Франції'."
+      },
+      {
+        "id": "ue_sub6",
+        "question": "I've never seen such a beautiful sunset. Have you ever seen _____?",
+        "translation": "(Я ніколи не бачив такого гарного заходу сонця. А ти?)",
+        "options": [
+          "one",
+          "it",
+          "such",
+          "that"
+        ],
+        "correct": "one",
+        "explanation": "HAVE YOU EVER SEEN ONE (заміщення в питанні): 'Have you ever seen ONE?' = 'Have you ever seen such a beautiful sunset?'. ONE тут замінює 'such a beautiful sunset'. Не IT, бо мова не про ТОЙ САМИЙ захід, а про ПОДІБНИЙ досвід. ONE = будь-який подібний. Порівняння: 'I lost my umbrella. Have you seen IT?' (конкретне — моя парасолька) vs 'I need an umbrella. Can I buy ONE?' (невизначене — будь-яку). В українській: 'А ти (бачив)?' — пропускаємо об'єкт. Максимальна стислість."
+      },
+      {
+        "id": "ue_sub7",
+        "question": "His attitude was _____ of a true professional.",
+        "translation": "(Його ставлення було як у справжнього професіонала.)",
+        "options": [
+          "that",
+          "one",
+          "it",
+          "which"
+        ],
+        "correct": "that",
+        "explanation": "THAT OF (характеристика): 'His attitude was THAT OF a true professional' = 'як ставлення справжнього професіонала'. THAT тут замінює 'the attitude' — абстрактне, незлічуване. Елегантна формальна конструкція для порівнянь та характеристик. 'Her voice was that of an angel', 'The quality is that of a luxury brand'. В академічному стилі: 'The approach adopted was that of Chomsky (1965)'. В українській: 'Як у професіонала' або 'Було таким, як у...' — порівняльна конструкція."
+      },
+      {
+        "id": "ue_sub8",
+        "question": "\"Will they win?\" — \"I believe _____\"",
+        "translation": "(«Вони виграють?» — «Думаю, що так.»)",
+        "options": [
+          "so.",
+          "it.",
+          "that.",
+          "them."
+        ],
+        "correct": "so.",
+        "explanation": "I BELIEVE SO (SO замість clause): 'I believe SO' = 'I believe they will win'. SO замінює ціле підрядне речення. Дієслова, що працюють з SO: THINK, BELIEVE, HOPE, EXPECT, SUPPOSE, GUESS, IMAGINE, BE AFRAID. 'Will it rain?' — 'I expect so.' 'Is she coming?' — 'I believe so.' Негативні: THINK → 'I don't think so', HOPE → 'I hope not', BELIEVE → 'I don't believe so' / 'I believe not'. В українській: 'Думаю, що так' — 'що так' = SO. Обидні мови економлять повтор."
+      },
+      {
+        "id": "ue_sub9",
+        "question": "These cookies are better than the _____ we bought yesterday.",
+        "translation": "(Ці печива смачніші, ніж ті, що ми купили вчора.)",
+        "options": [
+          "ones",
+          "one",
+          "those",
+          "cookies"
+        ],
+        "correct": "ones",
+        "explanation": "THE ONES (визначені заміщувачі): 'Better than THE ONES we bought' = 'ніж ті (печива), що купили'. THE ONES = визначені множинні замінники з відносним реченням. ONE/ONES зазвичай без THE, але коли є означення (we bought yesterday), додаємо THE. Ще: 'These are the ones I wanted', 'The ones at the back are cheaper'. Також THOSE працює: 'Better than those we bought' — більш формально. В українській: 'Ніж ті, що купили' — 'ті' = THE ONES. Ідентично."
+      },
+      {
+        "id": "ue_sub10",
+        "question": "The manager said the report was incomplete, and I agree it _____.",
+        "translation": "(Менеджер сказав, що звіт неповний, і я погоджуюся, що це так.)",
+        "options": [
+          "is",
+          "was",
+          "does",
+          "has"
+        ],
+        "correct": "is",
+        "explanation": "AUX/BE як заміщення (verb phrase ellipsis): 'I agree it IS (incomplete)'. BE замінює 'is incomplete' — пропускаємо предикатив, залишаємо тільки допоміжне/зв'язку. Ще: 'She seems happy, and she is (happy)', 'They said it was urgent, and it was'. Вибір допоміжного/зв'язки: IS/WAS (зі станом), DO/DID (з дією), CAN/COULD (зі здатністю). 'He can dance and she can too' (= can dance). В українській: 'Погоджуюся, що так' або 'Погоджуюся' — ще стисліше. 'Що це так' = IS."
+      },
+      {
+        "id": "ue_sub11",
+        "question": "I'd like to travel more, but I'm unable to do _____.",
+        "translation": "(Я хотів би більше подорожувати, але не маю змоги.)",
+        "options": [
+          "so",
+          "it",
+          "that",
+          "this"
+        ],
+        "correct": "so",
+        "explanation": "UNABLE TO DO SO (формальне заміщення): 'Unable to do SO' = 'unable to travel more'. DO SO — формальна заміна дієслівної фрази. В офіційних текстах: 'Employees are required to register. Failure to do so may result in...'. 'Please submit by Friday. If you are unable to do so, contact us.' DO SO = формально і чітко. В розмовній мові: 'I can't (travel more)' — простіше. В українській: 'Не маю змоги' або 'Не можу цього зробити' — 'цього' = SO. В діловій мові DO SO незамінний."
+      },
+      {
+        "id": "ue_sub12",
+        "question": "I like this jacket, but not the green _____.",
+        "translation": "(Мені подобається ця куртка, але не зелена.)",
+        "options": [
+          "one",
+          "it",
+          "jacket",
+          "which"
+        ],
+        "correct": "one",
+        "explanation": "NOT THE + ADJ + ONE (контраст): 'Not the green ONE'. ONE після прикметника замінює іменник у контрастному виборі. 'I want the big one, not the small one', 'Can I have the blue one instead of the red one?'. Це базове використання ONE — в магазинах, при виборі товарів. Також: 'Which one do you want?', 'This one, please', 'That one is too expensive'. В українській: 'Не зелену' — просто прикметник без іменника. Одне з небагатьох місць, де українська стисліша за англійську."
+      },
+      {
+        "id": "ue_sub13",
+        "question": "The problems of today are different from _____ of the past.",
+        "translation": "(Проблеми сьогодення відрізняються від проблем минулого.)",
+        "options": [
+          "those",
+          "that",
+          "ones",
+          "them"
+        ],
+        "correct": "those",
+        "explanation": "THOSE OF (formal plural substitution): 'Different from THOSE OF the past' = 'від проблем минулого'. THOSE замінює множинний іменник (problems) в формальних порівняннях. THAT = однина/незлічуване, THOSE = множина. Академічні приклади: 'The findings differ from those of Smith (2020)', 'Current policies resemble those of the 1990s'. В розмовній мові рідко — скажуть 'different from past problems'. В українській: 'Від проблем минулого' — повтор або 'від тих, що в минулому'. THOSE = 'ті'."
+      },
+      {
+        "id": "ue_sub14",
+        "question": "\"Are you leaving?\" — \"I suppose _____\"",
+        "translation": "(«Ти йдеш?» — «Гадаю, що так.»)",
+        "options": [
+          "so.",
+          "it.",
+          "yes.",
+          "that."
+        ],
+        "correct": "so.",
+        "explanation": "I SUPPOSE SO (неохоча згода): 'I suppose SO' = 'Гадаю, що так'. I SUPPOSE SO має відтінок НЕОХОТИ або НЕВПЕВНЕНОСТІ: 'так, мабуть, але не дуже хочеться'. Ще: 'Do we have to go?' — 'I suppose so' (мабуть, так). Негативна форма: 'I suppose not' або 'I don't suppose so'. SUPPOSE SO — менш впевнено, ніж THINK SO. Шкала впевненості: 'I'm sure' > 'I think so' > 'I suppose so' > 'I'm not sure'. В українській: 'Гадаю, що так' або просто 'Мабуть' — з відтінком вагання."
+      },
+      {
+        "id": "ue_sub15",
+        "question": "Each student must bring their own laptop. Those who fail to do _____ will not be admitted.",
+        "translation": "(Кожен студент має принести свій ноутбук. Ті, хто не зробить цього, не будуть допущені.)",
+        "options": [
+          "so",
+          "it",
+          "that",
+          "this"
+        ],
+        "correct": "so",
+        "explanation": "FAIL TO DO SO (формальне попередження): 'Those who FAIL TO DO SO' = 'ті, хто не принесе'. DO SO — формальне заміщення цілої дієслівної фрази у офіційних попередженнях, правилах, контрактах. Типова юридична мова: 'You must pay by the 15th. Failure to do so will result in penalties.' Підсумок заміщувачів: ONE/ONES = іменники; THAT/THOSE = формальні іменники; SO = клаузи та дієслівні фрази; DO SO = формальне дієслово. В українській: 'Хто не зробить цього' — 'цього' = SO. У формальному стилі обидві мови максимально стислі."
+      }
+    ]
+  },
+  {
+    "key": "emphasis_structures",
+    "name": "Emphasis Structures",
+    "description": "Конструкції наголосу та емфази",
+    "iconName": "exclamationmark.2",
+    "color": "#dc2626",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ue_emp1",
+        "question": "I _____ like your new haircut. It looks great!",
+        "translation": "(Мені ДІЙСНО подобається твоя нова зачіска!)",
+        "options": [
+          "do",
+          "does",
+          "am",
+          "really"
+        ],
+        "correct": "do",
+        "explanation": "DO/DOES/DID для емфази (emphatic DO): 'I DO like your haircut!' = 'Мені ДІЙСНО подобається'. DO перед основним дієсловом у стверджувальному реченні = ПІДСИЛЕННЯ. Зазвичай DO/DOES/DID не вживаються в стверджувальних (тільки в питаннях/запереченнях), тому їхня присутність = НАГОЛОС. 'I DO understand', 'She DOES care', 'We DID try'. Часто для переконання скептика чи підтвердження: 'You don't believe me, but I DID see it!'. В українській: 'ДІЙСНО', 'СПРАВДІ' — додаткове слово. Англійська — граматичний прийом."
+      },
+      {
+        "id": "ue_emp2",
+        "question": "It was _____ who broke the window, not Tom.",
+        "translation": "(Це ДЖОН розбив вікно, не Том.)",
+        "options": [
+          "John",
+          "John's",
+          "John he",
+          "by John"
+        ],
+        "correct": "John",
+        "explanation": "IT-CLEFT для наголосу на підметі: 'IT WAS JOHN who broke the window'. IT WAS + наголошений елемент + WHO/THAT + решта. Це CLEFT SENTENCE (розщеплене речення) — ви 'розрізаєте' просте речення на дві частини, щоб виділити одну. Нейтральне: 'John broke the window' → Наголос: 'It was JOHN who broke it' (хто саме?). Можна наголосити різне: 'It was THE WINDOW that he broke' (що?), 'It was YESTERDAY that it happened' (коли?). В українській: 'Це ДЖОН розбив' — з 'це' для фокусу."
+      },
+      {
+        "id": "ue_emp3",
+        "question": "What I really need _____ a good night's sleep.",
+        "translation": "(Те, що мені дійсно потрібно — це хороший нічний сон.)",
+        "options": [
+          "is",
+          "are",
+          "was",
+          "were"
+        ],
+        "correct": "is",
+        "explanation": "WH-CLEFT (pseudo-cleft) для наголосу: 'WHAT I really need IS a good night's sleep'. WHAT + S + V + IS + наголошений елемент. Ефект 'барабанного дробу' — напруга перед головною інформацією. WHAT clause = загальне, IS + noun = конкретне. Ще: 'What bothers me is the noise', 'What we need is more time', 'What she said was surprising'. Дієслово BE в однині (IS), навіть якщо WHAT clause містить множинний елемент. В українській: 'Те, що мені потрібно — це сон' — ідентична структура."
+      },
+      {
+        "id": "ue_emp4",
+        "question": "Never _____ I been so embarrassed in my life.",
+        "translation": "(Ніколи в житті мені не було так ніяково.)",
+        "options": [
+          "have",
+          "has",
+          "had",
+          "was"
+        ],
+        "correct": "have",
+        "explanation": "NEGATIVE FRONTING для емфази: 'NEVER HAVE I been so embarrassed'. Переміщення негативного прислівника на початок речення + інверсія = максимальний емоційний наголос. NEVER, RARELY, SELDOM, SCARCELY, HARDLY, IN NO WAY, UNDER NO CIRCUMSTANCES. Звичайне: 'I have never been' → Емфатичне: 'Never have I been'. Це риторичний прийом — часто в промовах, публіцистиці, літературі. В українській: 'НІКОЛИ В ЖИТТІ мені не було' — велика літера / інтонація замість інверсії."
+      },
+      {
+        "id": "ue_emp5",
+        "question": "She is, without _____, the most talented singer I've heard.",
+        "translation": "(Вона, без сумніву, найталановитіша співачка, яку я чув.)",
+        "options": [
+          "doubt",
+          "question",
+          "fail",
+          "miss"
+        ],
+        "correct": "doubt",
+        "explanation": "WITHOUT DOUBT (вставна емфатична фраза): 'WITHOUT DOUBT, the most talented'. Вставні фрази для підсилення: WITHOUT DOUBT, WITHOUT QUESTION, WITHOUT A SHADOW OF A DOUBT, BEYOND DOUBT. Ставляться між комами: 'She is, without doubt, the best'. Ще: BY FAR ('She is by far the best'), EASILY ('He's easily the tallest'), UNDOUBTEDLY, UNQUESTIONABLY. Ці фрази = абсолютна впевненість. В українській: 'Без сумніву', 'Безперечно', 'Безумовно' — вставні слова між комами. Ідентична функція."
+      },
+      {
+        "id": "ue_emp6",
+        "question": "It is the kindness of strangers _____ restores my faith in humanity.",
+        "translation": "(Саме доброта незнайомців відновлює мою віру в людство.)",
+        "options": [
+          "that",
+          "what",
+          "which",
+          "who"
+        ],
+        "correct": "that",
+        "explanation": "IT IS...THAT (cleft для наголосу на об'єкті): 'IT IS the kindness THAT restores my faith'. IT IS + об'єкт/обставина + THAT + решта. THAT з'єднує дві частини розщепленого речення. Для людей: WHO або THAT. Для речей/абстрактного: THAT (не WHICH). Нейтральне: 'The kindness restores my faith' → Емфатичне: 'It IS the kindness THAT restores...'. Наголос на причині. В українській: 'САМЕ доброта...' — слово 'саме' = IT IS...THAT. Компактніше, але менш драматичне."
+      },
+      {
+        "id": "ue_emp7",
+        "question": "_____ I do enjoy is a cup of tea in the morning.",
+        "translation": "(Те, що мені дійсно подобається — це чашка чаю вранці.)",
+        "options": [
+          "What",
+          "That",
+          "Which",
+          "How"
+        ],
+        "correct": "What",
+        "explanation": "WHAT-CLEFT з DO для подвійної емфази: 'WHAT I DO enjoy IS a cup of tea'. Два емфатичних прийоми одразу: WH-cleft (what...is) + emphatic DO. WHAT + S + DO + V = надзвичайно сильний наголос. Варіації: 'What I really do appreciate is honesty', 'What we did find was a small error'. В академічному стилі: 'What this study does demonstrate is...'. Ефект: і 'барабанний дріб' (what), і підсилення (do). В українській: 'Те, що мені СПРАВДІ подобається — це...' — додаткове слово 'справді'."
+      },
+      {
+        "id": "ue_emp8",
+        "question": "He himself _____ the cake for the party.",
+        "translation": "(Він САМ спік торт на вечірку.)",
+        "options": [
+          "baked",
+          "baking",
+          "was baked",
+          "had baking"
+        ],
+        "correct": "baked",
+        "explanation": "REFLEXIVE PRONOUN для емфази (emphatic reflexive): 'HE HIMSELF baked the cake'. HIMSELF тут = НЕ зворотне значення, а НАГОЛОС: 'він ОСОБИСТО / він САМ'. Без нього: 'He baked the cake' — нейтрально. З ним: 'He HIMSELF baked it' — підкреслення, що не хтось інший, а саме він. Можна ставити після підмета або в кінці: 'I did it myself', 'The president herself spoke'. В українській: 'Він САМ спік' — слово 'сам/сама' = HIMSELF/HERSELF. Ідентична конструкція."
+      },
+      {
+        "id": "ue_emp9",
+        "question": "Only when she left _____ he realize how much she meant to him.",
+        "translation": "(Лише коли вона пішла, він зрозумів, наскільки вона для нього важлива.)",
+        "options": [
+          "did",
+          "does",
+          "has",
+          "was"
+        ],
+        "correct": "did",
+        "explanation": "ONLY WHEN + ІНВЕРСІЯ: 'Only when she left DID HE realize'. ONLY + adverbial clause на початку = інверсія в ГОЛОВНОМУ реченні. ONLY WHEN, ONLY AFTER, ONLY IF, ONLY THEN — всі з інверсією. Підрядне (she left) — НОРМАЛЬНИЙ порядок. Головне (did he realize) — ІНВЕРСІЯ. Помилка учнів: інверсія в підрядному (❌ 'Only when did she leave'). Правильно: підрядне норм + головне інверсія. В українській: 'ЛИШЕ коли вона пішла' — наголос на 'лише', без інверсії."
+      },
+      {
+        "id": "ue_emp10",
+        "question": "The very _____ of losing everything terrified her.",
+        "translation": "(Сама думка про те, що можна все втратити, її жахала.)",
+        "options": [
+          "thought",
+          "thinking",
+          "think",
+          "thoughtful"
+        ],
+        "correct": "thought",
+        "explanation": "THE VERY + NOUN (емфатичний прикметник): 'THE VERY THOUGHT' = 'сама лише думка'. VERY перед іменником = 'сам/сама, навіть, саме': 'the very idea' (сама ідея), 'the very beginning' (самий початок), 'the very person' (саме та людина). Це підсилювач, що виділяє іменник як ключовий. 'From the very start', 'At the very moment', 'In the very center'. В українській: 'САМА думка', 'САМИЙ початок' — прикметник 'сам/самий'. Ідентична функція, але англійська VERY = 'дуже' в інших контекстах."
+      },
+      {
+        "id": "ue_emp11",
+        "question": "She _____ so talented! I can't believe it.",
+        "translation": "(Вона ТАКА талановита! Я не можу повірити.)",
+        "options": [
+          "is",
+          "does",
+          "has",
+          "was"
+        ],
+        "correct": "is",
+        "explanation": "SO + ADJ (інтенсифікатор): 'She IS SO talented!' SO перед прикметником = дуже, така. В окличних реченнях SO підсилює емоцію: 'It's so beautiful!', 'He's so funny!', 'This is so boring!'. SO + ADJ + THAT: 'She is so talented THAT everyone noticed'. SUCH + NOUN: 'She is SUCH a talent' (не 'so a talent'). Різниця: SO + adjective/adverb, SUCH + noun/noun phrase. В українській: 'ТАКА талановита!' — слово 'така/такий'. Обидні мови використовують інтенсифікатори перед прикметниками."
+      },
+      {
+        "id": "ue_emp12",
+        "question": "Not a single word _____ she say during the meeting.",
+        "translation": "(Жодного слова вона не сказала під час зустрічі.)",
+        "options": [
+          "did",
+          "does",
+          "was",
+          "has"
+        ],
+        "correct": "did",
+        "explanation": "NOT A SINGLE + NOUN + ІНВЕРСІЯ: 'Not a single word DID SHE say'. Негативна фраза на початку = інверсія. NOT A SINGLE = 'ані одного'. Максимальний наголос: 'Not a single person came', 'Not a single mistake was found', 'Not one word did he utter'. Ще: NOT ONCE, NOT ONLY, NEVER BEFORE, NOWHERE ELSE — всі з інверсією. Звичайне: 'She didn't say a single word' → Емфатичне: 'Not a single word did she say'. В українській: 'ЖОДНОГО слова не сказала' — жодного + не. Підсилення теж працює."
+      },
+      {
+        "id": "ue_emp13",
+        "question": "This is indeed _____ remarkable achievement.",
+        "translation": "(Це справді надзвичайне досягнення.)",
+        "options": [
+          "a",
+          "the",
+          "an",
+          "one"
+        ],
+        "correct": "a",
+        "explanation": "INDEED (вставне підсилення): 'This is INDEED a remarkable achievement'. INDEED = 'справді, дійсно' — підтверджує і підсилює. Позиції: 'This is indeed remarkable' (середина), 'Indeed, it was remarkable' (початок), 'Very good indeed!' (кінець — BrE). INDEED часто в академічному та діловому стилі: 'The results were indeed significant'. Ще формальні підсилювачі: TRULY, IN FACT, AS A MATTER OF FACT. В українській: 'Справді', 'Дійсно', 'Насправді' — вставні слова такою ж природою."
+      },
+      {
+        "id": "ue_emp14",
+        "question": "_____ did I expect such a warm welcome.",
+        "translation": "(Аж ніяк я не очікував такого теплого прийому.)",
+        "options": [
+          "Little",
+          "Few",
+          "Small",
+          "Less"
+        ],
+        "correct": "Little",
+        "explanation": "LITTLE DID I + V (негативна емфаза): 'LITTLE DID I expect such a welcome'. LITTLE на початку = 'аж ніяк не, мало хто б подумав'. Має негативний відтінок: she DIDN'T really expect. Ще: 'Little did they know what was coming', 'Little does she realize how lucky she is'. Наративний прийом для створення інтриги та контрасту: 'Little did I know that this meeting would change my life'. Дуже літературний стиль. В українській: 'Мало хто б подумав', 'Аж ніяк не очікував' — з негативним відтінком."
+      },
+      {
+        "id": "ue_emp15",
+        "question": "All I want _____ to be left alone.",
+        "translation": "(Все, що я хочу — щоб мене залишили в спокої.)",
+        "options": [
+          "is",
+          "are",
+          "was",
+          "were"
+        ],
+        "correct": "is",
+        "explanation": "ALL + S + V + IS (мінімалістична емфаза): 'ALL I want IS to be left alone'. ALL + clause + IS/WAS = наголос на ЄДИНОМУ бажанні. Підкреслює простоту: 'лише це і нічого більше'. Ще: 'All you need is love', 'All she did was smile', 'All they asked for was fairness'. Це менш формальна версія WH-cleft: 'What I want = All I want'. Ефект: 'мені потрібно ТАК МАЛО, лише це'. В українській: 'ВСЕ, що я хочу — це...' — порядок слів ідентичний. В обох мовах — потужна емоційна конструкція."
+      }
+    ]
+  },
+  {
+    "key": "discourse_markers",
+    "name": "Discourse Markers",
+    "description": "Дискурсивні маркери (зв'язки в мовленні)",
+    "iconName": "bubble.left.and.bubble.right.fill",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ue_dm1",
+        "question": "_____, I'd like to welcome everyone to todays meeting.",
+        "translation": "(Перш за все, я хотів би привітати всіх на сьогоднішній зустрічі.)",
+        "options": [
+          "First of all",
+          "At first",
+          "Firstly of all",
+          "For first"
+        ],
+        "correct": "First of all",
+        "explanation": "FIRST OF ALL (вступний маркер): 'FIRST OF ALL, I'd like to welcome...' = 'Перш за все'. FIRST OF ALL = відкриття списку тем або виступу. Не плутайте: AT FIRST = 'спочатку' (часовий маркер: 'At first I was scared, then I relaxed'), FIRST OF ALL = 'по-перше' (організаційний маркер). Ще вступні маркери: TO BEGIN WITH, TO START WITH, BEFORE ANYTHING ELSE. В українській: 'Перш за все', 'По-перше', 'Насамперед' — функція ідентична. Типово для промов і презентацій."
+      },
+      {
+        "id": "ue_dm2",
+        "question": "The project is behind schedule. _____, we need more funding.",
+        "translation": "(Проєкт відстає від графіку. До того ж, нам потрібно більше фінансування.)",
+        "options": [
+          "Moreover",
+          "But",
+          "So",
+          "Although"
+        ],
+        "correct": "Moreover",
+        "explanation": "MOREOVER (додавання інформації): 'MOREOVER, we need more funding' = 'Більш того / До того ж'. MOREOVER = формальний маркер ДОДАТКУ: додавання аргументу чи факту до вже сказаного. Синоніми: FURTHERMORE, IN ADDITION, WHAT'S MORE, ON TOP OF THAT, BESIDES. Шкала формальності: MOREOVER/FURTHERMORE (формально), IN ADDITION (нейтрально), WHAT'S MORE/BESIDES (розмовно), ON TOP OF THAT (неформально). В українській: 'Більш того', 'Крім того', 'До того ж' — вставні слова. В академічних текстах — обов'язкові."
+      },
+      {
+        "id": "ue_dm3",
+        "question": "She didn't study at all. _____, she passed the exam.",
+        "translation": "(Вона зовсім не вчилася. Проте вона склала іспит.)",
+        "options": [
+          "Nevertheless",
+          "Therefore",
+          "Moreover",
+          "For instance"
+        ],
+        "correct": "Nevertheless",
+        "explanation": "NEVERTHELESS (контраст/несподіванка): 'NEVERTHELESS, she passed' = 'Тим не менш / Проте'. NEVERTHELESS = формальний маркер КОНТРАСТУ: результат суперечить очікуванню. Синоніми: HOWEVER, YET, STILL, NONETHELESS, EVEN SO, ALL THE SAME. Шкала: NEVERTHELESS/NONETHELESS (дуже формально), HOWEVER (формально), STILL/YET (нейтрально), EVEN SO (розмовно), ALL THE SAME (неформально). В українській: 'Тим не менш', 'Проте', 'Однак', 'Все ж' — кожне має свій регістр."
+      },
+      {
+        "id": "ue_dm4",
+        "question": "He's not very organized. _____, he always meets his deadlines.",
+        "translation": "(Він не дуже організований. Однак він завжди вкладається в терміни.)",
+        "options": [
+          "However",
+          "Therefore",
+          "Consequently",
+          "Moreover"
+        ],
+        "correct": "However",
+        "explanation": "HOWEVER (найпоширеніший контрастний маркер): 'HOWEVER, he always meets deadlines'. HOWEVER = 'однак, проте'. Найуніверсальніший контрастний маркер — працює у формальному й нейтральному стилі. Позиції: 'However, he...' (початок), 'He, however, always...' (середина), 'He meets them, however' (кінець — рідко). Після HOWEVER завжди КОМА, після BUT — НІ. 'But he meets deadlines' (без коми) vs 'However, he meets deadlines' (з комою). В українській: 'Однак', 'Проте' — з комою або без."
+      },
+      {
+        "id": "ue_dm5",
+        "question": "The food was delicious. _____, the service was excellent.",
+        "translation": "(Їжа була смачною. Крім того, обслуговування було чудовим.)",
+        "options": [
+          "In addition",
+          "In contrast",
+          "In spite of",
+          "In order"
+        ],
+        "correct": "In addition",
+        "explanation": "IN ADDITION (додавання): 'IN ADDITION, the service was excellent' = 'Крім того'. IN ADDITION = нейтральний маркер додаткової інформації. Ще: IN ADDITION TO THIS/THAT (сильніше): 'In addition to the food, the service was great too'. Не плутайте: IN ADDITION = 'крім того' (додавання), IN CONTRAST = 'на відміну від' (протиставлення). В рецензіях: 'The rooms were clean. In addition, the staff was friendly.' В українській: 'Крім того', 'На додаток', 'Також' — вставні маркери."
+      },
+      {
+        "id": "ue_dm6",
+        "question": "_____, let me explain what happened.",
+        "translation": "(Ну, дозвольте мені пояснити, що сталося.)",
+        "options": [
+          "Well",
+          "Good",
+          "Fine",
+          "OK then"
+        ],
+        "correct": "Well",
+        "explanation": "WELL (розмовний дискурсивний маркер): 'WELL, let me explain'. WELL = пауза для збору думок, початок нової теми, пом'якшення. Функції: 1) Пауза: 'Well, I'm not sure' (ну, не знаю). 2) Зміна теми: 'Well, anyway...' (ну, мовляв...). 3) Пом'якшення: 'Well, it's not quite right' (ну, не зовсім). 4) Здивування: 'Well, that's unexpected!' (ну, це несподівано!). Легкое та природне — одне з перших слів, що вчать у розмовній англійській. В українській: 'Ну', 'Ну от', 'Ну що ж' — ідентичні функції."
+      },
+      {
+        "id": "ue_dm7",
+        "question": "We didn't have enough time. _____, we managed to finish the project.",
+        "translation": "(У нас не було достатньо часу. Незважаючи на це, ми встигли завершити проєкт.)",
+        "options": [
+          "Despite this",
+          "Because of this",
+          "Due to this",
+          "Thanks to this"
+        ],
+        "correct": "Despite this",
+        "explanation": "DESPITE THIS (контраст з попереднім): 'DESPITE THIS, we managed to finish'. DESPITE THIS/THAT = 'Незважаючи на це'. Підтверджує контраст між двома фактами: негативна обставина → позитивний результат. Синоніми: IN SPITE OF THIS, REGARDLESS, REGARDLESS OF THIS. DESPITE + noun (не clause!): 'Despite the rain, we went out'. DESPITE + V-ING: 'Despite raining, we went'. В українській: 'Незважаючи на це', 'Попри це', 'Всупереч цьому' — прийменникова конструкція."
+      },
+      {
+        "id": "ue_dm8",
+        "question": "There are many benefits. For _____, it saves time and money.",
+        "translation": "(Є багато переваг. Наприклад, це економить час і гроші.)",
+        "options": [
+          "instance",
+          "sample",
+          "case",
+          "point"
+        ],
+        "correct": "instance",
+        "explanation": "FOR INSTANCE / FOR EXAMPLE (приклад): 'FOR INSTANCE, it saves time'. FOR INSTANCE = FOR EXAMPLE = 'наприклад'. Обидва еквівалентні; FOR EXAMPLE = трохи частіший. Ще: SUCH AS (перед списком): 'benefits such as time savings'. E.G. (у письмі): 'e.g., time and money'. FOR ONE THING: 'For one thing, it saves time'. TO ILLUSTRATE: 'To illustrate, consider the following case'. В українській: 'Наприклад', 'Зокрема', 'Скажімо' — вставні маркери прикладу."
+      },
+      {
+        "id": "ue_dm9",
+        "question": "_____, I'd like to say that this has been a great experience.",
+        "translation": "(На закінчення, хочу сказати, що це був чудовий досвід.)",
+        "options": [
+          "In conclusion",
+          "In addition",
+          "In contrast",
+          "In fact"
+        ],
+        "correct": "In conclusion",
+        "explanation": "IN CONCLUSION (завершальний маркер): 'IN CONCLUSION, I'd like to say...' = 'На закінчення'. Маркери завершення: IN CONCLUSION, TO CONCLUDE, TO SUM UP, IN SUMMARY, FINALLY, LAST BUT NOT LEAST, ALL IN ALL. Для презентацій: 'To wrap up...', 'In closing...'. Для есе: 'In conclusion...', 'To sum up...'. Для розмов: 'So, to sum up...', 'All in all...'. В українській: 'На закінчення', 'Підсумовуючи', 'Отже', 'Загалом' — завершальні вставні слова."
+      },
+      {
+        "id": "ue_dm10",
+        "question": "_____, I think we should reconsider our approach.",
+        "translation": "(Чесно кажучи, я думаю, нам слід переглянти наш підхід.)",
+        "options": [
+          "To be honest",
+          "To be sure",
+          "To be fair",
+          "To begin"
+        ],
+        "correct": "To be honest",
+        "explanation": "TO BE HONEST (маркер щирості): 'TO BE HONEST, I think we should reconsider' = 'Чесно кажучи'. Маркери щирості/відвертості: TO BE HONEST, HONESTLY, FRANKLY, FRANKLY SPEAKING, TO TELL YOU THE TRUTH. Вони сигналізують: 'зараз я скажу щось відверте, можливо неприємне'. 'To be honest, I didn't like the film', 'Frankly, I think he's wrong'. Часто перед критикою або непопулярною думкою. В українській: 'Чесно кажучи', 'Відверто кажучи', 'Правду кажучи' — дієприслівниковий зворот."
+      },
+      {
+        "id": "ue_dm11",
+        "question": "She's very talented. _____, she's also extremely hardworking.",
+        "translation": "(Вона дуже талановита. Більш того, вона ще й надзвичайно працьовита.)",
+        "options": [
+          "What's more",
+          "What's less",
+          "What's worse",
+          "What's best"
+        ],
+        "correct": "What's more",
+        "explanation": "WHAT'S MORE (розмовне додавання): 'WHAT'S MORE, she's hardworking' = 'Більш того'. WHAT'S MORE = розмовний еквівалент MOREOVER/FURTHERMORE. Зазвичай додає ПОЗИТИВНУ інформацію або підсилення. 'The hotel was cheap. What's more, it was in the center!' Протилежне: WHAT'S WORSE (додає негативне): 'He was late. What's worse, he didn't apologize.' В українській: 'Більш того', 'Мало того' — підсилення перед додатковим аргументом. Ефект наростання."
+      },
+      {
+        "id": "ue_dm12",
+        "question": "I know it's difficult. _____, we need to keep trying.",
+        "translation": "(Я знаю, що це складно. Тим не менш, ми маємо продовжувати намагатися.)",
+        "options": [
+          "Still",
+          "So",
+          "Then",
+          "Thus"
+        ],
+        "correct": "Still",
+        "explanation": "STILL (несподіваний контраст): 'STILL, we need to keep trying' = 'Тим не менш'. STILL на початку речення (з комою) = контрастний маркер, синонім HOWEVER/NEVERTHELESS але менш формальний. 'It's raining. Still, let's go.' 'I'm tired. Still, I have to finish.' Не плутайте: STILL (середина речення) = 'ще, все ще': 'I'm still waiting'. STILL (початок + кома) = 'тим не менш'. В українській: 'Все ж', 'Тим не менш', 'Однак' — розмовні контрастні маркери."
+      },
+      {
+        "id": "ue_dm13",
+        "question": "The exam was very difficult. _____, most students passed.",
+        "translation": "(Іспит був дуже складним. Дивно, але більшість студентів склали.)",
+        "options": [
+          "Surprisingly",
+          "Unsurprisingly",
+          "Obviously",
+          "Clearly"
+        ],
+        "correct": "Surprisingly",
+        "explanation": "SURPRISINGLY (маркер несподіванки): 'SURPRISINGLY, most students passed'. Прислівники-маркери ставлення (stance adverbs): SURPRISINGLY, UNFORTUNATELY, FORTUNATELY, INTERESTINGLY, REMARKABLY, PREDICTABLY, STRANGELY. Вони показують СТАВЛЕННЯ мовця до інформації. 'Unfortunately, the shop was closed', 'Interestingly, nobody complained'. Позиція: зазвичай на початку з комою. В українській: 'На подив', 'Дивно, але', 'На щастя', 'На жаль' — вставні слова із значенням оцінки."
+      },
+      {
+        "id": "ue_dm14",
+        "question": "He failed the driving test. _____, he'll have to take it again.",
+        "translation": "(Він провалив іспит з водіння. Відповідно, йому доведеться перескладати.)",
+        "options": [
+          "As a result",
+          "As well",
+          "As usual",
+          "As if"
+        ],
+        "correct": "As a result",
+        "explanation": "AS A RESULT (причинно-наслідковий маркер): 'AS A RESULT, he'll have to retake it'. AS A RESULT = 'У результаті / Відповідно'. Маркери НАСЛІДКУ: THEREFORE (формальний), CONSEQUENTLY (формальний), AS A RESULT (нейтральний), SO (розмовний), THUS (академічний), HENCE (дуже формальний). Логіка: причина → AS A RESULT → наслідок. 'It rained heavily. As a result, the match was cancelled.' В українській: 'У результаті', 'Тому', 'Відповідно', 'Отже' — різні маркери наслідку."
+      },
+      {
+        "id": "ue_dm15",
+        "question": "_____, what I meant to say is that we need to change our strategy.",
+        "translation": "(Іншими словами, я хотів сказати, що нам потрібно змінити стратегію.)",
+        "options": [
+          "In other words",
+          "In many words",
+          "In few words",
+          "In some words"
+        ],
+        "correct": "In other words",
+        "explanation": "IN OTHER WORDS (перефразування): 'IN OTHER WORDS, we need to change strategy'. Маркери перефразування: IN OTHER WORDS, THAT IS (TO SAY), I.E., PUT SIMPLY, TO PUT IT ANOTHER WAY, BASICALLY. Функція: перекласти складне на просте або уточнити. 'The project is not viable. In other words, we can't do it.' 'The deadline is imminent, i.e., it's tomorrow.' В українській: 'Іншими словами', 'Тобто', 'Інакше кажучи', 'Простіше кажучи' — маркери перефразування."
+      }
+    ]
+  },
+  {
+    "key": "linking_words",
+    "name": "Linking Words",
+    "description": "Сполучники та з'єднувальні слова",
+    "iconName": "link",
+    "color": "#ca8a04",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ue_lw1",
+        "question": "_____ it was raining, we decided to go for a walk.",
+        "translation": "(Хоча йшов дощ, ми вирішили піти на прогулянку.)",
+        "options": [
+          "Although",
+          "Because",
+          "Since",
+          "While"
+        ],
+        "correct": "Although",
+        "explanation": "ALTHOUGH / THOUGH / EVEN THOUGH (допустові): 'ALTHOUGH it was raining, we went for a walk'. ALTHOUGH = 'хоча, незважаючи на те що'. Вводить ОБСТАВИНУ, яка не перешкодила дії. Шкала сили: THOUGH (розмовне) < ALTHOUGH (нейтральне) < EVEN THOUGH (емфатичне). Позиції: 'Although X, Y' або 'Y although X'. THOUGH може бути в кінці: 'It was fun, though' (= однак). В українській: 'Хоча', 'Незважаючи на те, що', 'Попри те, що' — допустові сполучники."
+      },
+      {
+        "id": "ue_lw2",
+        "question": "He failed the exam _____ he didn't study enough.",
+        "translation": "(Він провалив іспит, тому що недостатньо вчився.)",
+        "options": [
+          "because",
+          "although",
+          "despite",
+          "however"
+        ],
+        "correct": "because",
+        "explanation": "BECAUSE (причина): 'He failed BECAUSE he didn't study'. BECAUSE = 'тому що'. Вводить ПРИЧИНУ. Маркери причини: BECAUSE (найчастіший), SINCE (відома причина), AS (м'яка причина), DUE TO + noun (формальний), OWING TO + noun (формальний). 'Since you're here, let's start' (ви вже тут — відомий факт). 'As it was late, we left' (м'яко). 'Due to the rain, the match was cancelled' (офіційно). В українській: 'Тому що', 'Через те, що', 'Оскільки', 'Бо' — різна формальність."
+      },
+      {
+        "id": "ue_lw3",
+        "question": "She studied hard. _____, she got excellent results.",
+        "translation": "(Вона багато вчилася. Тому вона отримала відмінні результати.)",
+        "options": [
+          "Therefore",
+          "However",
+          "Although",
+          "Despite"
+        ],
+        "correct": "Therefore",
+        "explanation": "THEREFORE (наслідок, формальний): 'THEREFORE, she got excellent results'. THEREFORE = 'тому, отже' — формальний маркер наслідку. Причина → THEREFORE → наслідок. Шкала: HENCE (дуже формальний) > THEREFORE/THUS (формальний) > CONSEQUENTLY (нейтрально-формальний) > AS A RESULT (нейтральний) > SO (розмовний). В академічних текстах: 'The data was insufficient. Therefore, the hypothesis could not be confirmed.' В українській: 'Тому', 'Отже', 'Відповідно' — причинно-наслідкові маркери."
+      },
+      {
+        "id": "ue_lw4",
+        "question": "_____ the bad weather, the event was a success.",
+        "translation": "(Незважаючи на погану погоду, подія була успішною.)",
+        "options": [
+          "Despite",
+          "Because of",
+          "Due to",
+          "Thanks to"
+        ],
+        "correct": "Despite",
+        "explanation": "DESPITE + NOUN (допуст з іменником): 'DESPITE the bad weather'. DESPITE і IN SPITE OF = 'незважаючи на' + ІМЕННИК або V-ING (не clause!). ✅ 'Despite the rain' ✅ 'Despite raining' ❌ 'Despite it rained' (потрібно ALTHOUGH). Порівняйте: DESPITE/IN SPITE OF + noun vs ALTHOUGH/EVEN THOUGH + clause. 'Despite being tired, she continued' = 'Although she was tired, she continued'. DESPITE = стисліше. В українській: 'Незважаючи на погоду' — з прийменником, як DESPITE."
+      },
+      {
+        "id": "ue_lw5",
+        "question": "I'll come to the party _____ I finish work early.",
+        "translation": "(Я прийду на вечірку, якщо закінчу роботу рано.)",
+        "options": [
+          "provided",
+          "despite",
+          "although",
+          "whereas"
+        ],
+        "correct": "provided",
+        "explanation": "PROVIDED / PROVIDED THAT (умова): 'I'll come PROVIDED I finish early' = 'за умови, що'. PROVIDED (THAT) = AS LONG AS = ON CONDITION THAT = формальні умовні сполучники. Більш формальні за IF. 'You can go out provided you finish your homework', 'I'll lend you the money as long as you pay me back'. В контрактах: 'The warranty is valid provided the product is used correctly'. В українській: 'За умови, що', 'Якщо тільки', 'Лише за умови' — формальні умовні. IF = 'якщо' (нейтральне)."
+      },
+      {
+        "id": "ue_lw6",
+        "question": "The first half was boring, _____ the second half was exciting.",
+        "translation": "(Перша половина була нудною, тоді як друга — захоплюючою.)",
+        "options": [
+          "whereas",
+          "therefore",
+          "moreover",
+          "because"
+        ],
+        "correct": "whereas",
+        "explanation": "WHEREAS / WHILE (контраст): 'The first half was boring, WHEREAS the second was exciting'. WHEREAS = 'тоді як, в той час як'. Показує ПРЯМЕ ПРОТИСТАВЛЕННЯ двох фактів. Більш формальне за BUT. WHILE теж може виражати контраст: 'While she loves cities, he prefers the countryside'. Різниця WHEREAS vs ALTHOUGH: WHEREAS = рівноправні факти (A vs B), ALTHOUGH = один факт всупереч іншому (despite A, B). В українській: 'Тоді як', 'В той час як' — точні еквіваленти."
+      },
+      {
+        "id": "ue_lw7",
+        "question": "She went to bed early _____ order to get enough sleep.",
+        "translation": "(Вона лягла спати рано, щоб виспатися.)",
+        "options": [
+          "in",
+          "for",
+          "by",
+          "at"
+        ],
+        "correct": "in",
+        "explanation": "IN ORDER TO + V (мета): 'IN ORDER TO get enough sleep'. IN ORDER TO = формальне 'щоб'. Шкала: TO (нейтральне) < IN ORDER TO (формальне) < SO AS TO (дуже формальне). 'She studies hard to pass' = 'She studies hard in order to pass' = 'She studies hard so as to pass'. Негативна: IN ORDER NOT TO / SO AS NOT TO: 'In order not to be late, she left early'. SO THAT + clause: 'She left early so that she wouldn't be late'. В українській: 'Щоб', 'Для того, щоб' — фінальні сполучники. Формальність додає 'для того'."
+      },
+      {
+        "id": "ue_lw8",
+        "question": "He's very intelligent; _____, he's very lazy.",
+        "translation": "(Він дуже розумний; однак він дуже ледачий.)",
+        "options": [
+          "however",
+          "therefore",
+          "moreover",
+          "besides"
+        ],
+        "correct": "however",
+        "explanation": "HOWEVER (контраст із крапкою з комою): 'He's intelligent; HOWEVER, he's lazy'. HOWEVER може з'єднувати два речення через КРАПКУ З КОМОЮ (;) або КРАПКУ (.). ❌ 'He's intelligent, however, he's lazy' (comma splice — помилка!). Правильно: '; however,' або '. However,'. BUT може стояти після коми: 'He's intelligent, but lazy' (OK). HOWEVER потребує ; або . В українській: 'Однак', 'Проте' — можуть стояти після коми, крапки або крапки з комою. Гнучкіші за англійські."
+      },
+      {
+        "id": "ue_lw9",
+        "question": "Not only is she smart, _____ she's also very kind.",
+        "translation": "(Вона не лише розумна, а й дуже добра.)",
+        "options": [
+          "but",
+          "and",
+          "so",
+          "yet"
+        ],
+        "correct": "but",
+        "explanation": "NOT ONLY...BUT (ALSO) (парний сполучник): 'NOT ONLY is she smart, BUT she's also kind'. NOT ONLY...BUT (ALSO) = 'не лише...а й'. Парні (correlative) сполучники: NOT ONLY...BUT ALSO, EITHER...OR, NEITHER...NOR, BOTH...AND, WHETHER...OR. 'Both cheap and delicious', 'Either tea or coffee', 'Neither rich nor famous'. Ці пари НЕРОЗРИВНІ — використовуються тільки разом. В українській: 'Не лише...а й', 'Або...або', 'Ні...ні', 'Як...так і' — теж парні."
+      },
+      {
+        "id": "ue_lw10",
+        "question": "I'll have tea instead _____ coffee today.",
+        "translation": "(Я вип'ю чай замість кави сьогодні.)",
+        "options": [
+          "of",
+          "to",
+          "than",
+          "from"
+        ],
+        "correct": "of",
+        "explanation": "INSTEAD OF + NOUN/V-ING (заміна): 'INSTEAD OF coffee'. INSTEAD OF = 'замість'. Після INSTEAD OF — іменник або герундій. 'Instead of driving, let's walk', 'She came instead of her sister'. INSTEAD (без OF) — прислівник: 'I didn't go out. I stayed home instead' (= замість цього). Ще маркери заміни: RATHER THAN ('rather than coffee'), IN PLACE OF (формально). В українській: 'Замість кави', 'Замість того, щоб...' — прийменник 'замість' + родовий відмінок."
+      },
+      {
+        "id": "ue_lw11",
+        "question": "_____ I'm concerned, the decision has already been made.",
+        "translation": "(Наскільки це стосується мене, рішення вже прийнято.)",
+        "options": [
+          "As far as",
+          "As long as",
+          "As soon as",
+          "As well as"
+        ],
+        "correct": "As far as",
+        "explanation": "AS FAR AS...CONCERNED (точка зору): 'AS FAR AS I'M CONCERNED' = 'Що стосується мене / На мою думку'. Фіксований вираз: AS FAR AS + person + BE CONCERNED. Ще: 'As far as the budget is concerned', 'As far as I know' (наскільки мені відомо). Не плутайте: AS FAR AS = 'наскільки, що стосується', AS LONG AS = 'за умови що', AS SOON AS = 'щойно'. В українській: 'Що стосується мене', 'Наскільки мені відомо' — фіксовані звороти з 'наскільки / що стосується'."
+      },
+      {
+        "id": "ue_lw12",
+        "question": "It was sunny. _____, we decided to have a barbecue.",
+        "translation": "(Було сонячно. Тому ми вирішили влаштувати барбекю.)",
+        "options": [
+          "So",
+          "But",
+          "Yet",
+          "Nor"
+        ],
+        "correct": "So",
+        "explanation": "SO (розмовний наслідок): 'SO, we decided to have a barbecue'. SO = 'тому, отже' — найрозмовніший маркер наслідку. В РОЗМОВНІЙ мові: SO, THAT'S WHY, THAT'S THE REASON. В ФОРМАЛЬНІЙ: THEREFORE, CONSEQUENTLY, HENCE. 'It was cheap, so I bought it', 'She was tired, so she went to bed'. SO може починати речення або з'єднувати з комою. В розмовній мові SO часто починає відповідь: 'So, what happened next?' В українській: 'Тому', 'Тож', 'Ну тому' — розмовні причинно-наслідкові."
+      },
+      {
+        "id": "ue_lw13",
+        "question": "She likes rock music, _____ her brother prefers jazz.",
+        "translation": "(Вона любить рок-музику, а її брат надає перевагу джазу.)",
+        "options": [
+          "while",
+          "because",
+          "since",
+          "until"
+        ],
+        "correct": "while",
+        "explanation": "WHILE (контраст / одночасність): 'She likes rock, WHILE her brother prefers jazz'. WHILE має ТРИ значення: 1) Контраст: 'While she likes A, he likes B' (тоді як). 2) Одночасність: 'While I was cooking, he was reading' (поки). 3) Допуст: 'While I understand your point, I disagree' (хоча). Контекст визначає значення. В українській: 'Тоді як' (контраст), 'Поки' (одночасність), 'Хоча' (допуст) — три різних перекладу для одного WHILE."
+      },
+      {
+        "id": "ue_lw14",
+        "question": "He's not only a good teacher _____ also a wonderful person.",
+        "translation": "(Він не тільки хороший вчитель, а й чудова людина.)",
+        "options": [
+          "but",
+          "and",
+          "or",
+          "yet"
+        ],
+        "correct": "but",
+        "explanation": "NOT ONLY...BUT ALSO (без інверсії): 'Not only a good teacher BUT ALSO a wonderful person'. Коли NOT ONLY стоїть НЕ на початку речення, інверсія НЕ потрібна! Порівняйте: 'Not only IS he a teacher, but...' (інверсія — NOT ONLY на початку) vs 'He is not only a teacher but also...' (без інверсії — NOT ONLY в середині). Правило: інверсія тільки коли NOT ONLY відкриває речення. В українській: 'Не тільки...а й' — без інверсії в обох позиціях."
+      },
+      {
+        "id": "ue_lw15",
+        "question": "I went to the shop. _____, I stopped at the bank.",
+        "translation": "(Я пішов у магазин. По дорозі я зайшов у банк.)",
+        "options": [
+          "On the way",
+          "By the way",
+          "In the way",
+          "Under way"
+        ],
+        "correct": "On the way",
+        "explanation": "ON THE WAY / BY THE WAY (маркери доповнення): 'ON THE WAY, I stopped at the bank' = 'По дорозі'. ON THE WAY = буквально 'по дорозі'. BY THE WAY (BTW) = 'до речі' — зміна теми або додавання інформації. 'By the way, have you heard the news?' В THE WAY = 'заважає': 'Don't stand in the way!' UNDER WAY = 'в процесі': 'The project is under way'. Підсумок linking words: причина (because), наслідок (therefore), контраст (however), додавання (moreover), мета (in order to), умова (provided), приклад (for instance). В українській: 'По дорозі', 'До речі', 'На заваді', 'В процесі' — різні прийменники."
+      }
+    ]
+  },
+  {
+    "key": "hedging",
+    "name": "Hedging Language",
+    "description": "М'яке висловлювання (пом'якшення тверджень)",
+    "iconName": "shield.lefthalf.filled",
+    "color": "#475569",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ue_hdg1",
+        "question": "This _____ be the right answer, but I'm not 100% sure.",
+        "translation": "(Це, мабуть, правильна відповідь, але я не впевнений на 100%.)",
+        "options": [
+          "might",
+          "must",
+          "will",
+          "shall"
+        ],
+        "correct": "might",
+        "explanation": "MIGHT (невпевненість): 'This MIGHT be the right answer' = 'Це, можливо, правильна відповідь'. MIGHT = найм'якший модальний — менш впевнений, ніж MAY, набагато менш, ніж MUST. Шкала впевненості: MUST (90%) > SHOULD (75%) > MAY (50%) > MIGHT/COULD (30%). Hedging = пом'якшення тверджень, щоб не звучати категорично. В академічній мові: 'This might suggest that...', 'It might be the case that...'. В українській: 'Можливо', 'Мабуть', 'Може бути' — різні ступені впевненості."
+      },
+      {
+        "id": "ue_hdg2",
+        "question": "The results _____ to suggest that the treatment is effective.",
+        "translation": "(Результати, здається, свідчать про те, що лікування ефективне.)",
+        "options": [
+          "seem",
+          "are",
+          "prove",
+          "show"
+        ],
+        "correct": "seem",
+        "explanation": "SEEM TO / APPEAR TO (обережне спостереження): 'The results SEEM TO suggest...' = 'Результати, здається, свідчать'. SEEM/APPEAR пом'якшують — ви не стверджуєте категорично, а описуєте ВРАЖЕННЯ. Подвійне хеджування: SEEM + SUGGEST (двічі пом'якшено!). Академічний стиль: 'The data appears to indicate...', 'This seems to imply...'. В розмовній мові: 'She seems happy', 'It appears to be broken'. В українській: 'Здається', 'Як видається', 'Вочевидь' — модальні маркери обережності."
+      },
+      {
+        "id": "ue_hdg3",
+        "question": "_____ speaking, the older generation tends to be more conservative.",
+        "translation": "(Загалом кажучи, старше покоління, як правило, більш консервативне.)",
+        "options": [
+          "Generally",
+          "Always",
+          "Definitely",
+          "Certainly"
+        ],
+        "correct": "Generally",
+        "explanation": "GENERALLY SPEAKING (узагальнення з застереженням): 'GENERALLY SPEAKING, the older generation...' Маркери ОБЕРЕЖНОГО узагальнення: GENERALLY (SPEAKING), ON THE WHOLE, BY AND LARGE, IN GENERAL, BROADLY SPEAKING. Вони означають: 'зазвичай так, але не ЗАВЖДИ'. Порівняйте: 'Old people are conservative' (категорично, необережно) vs 'Generally speaking, older people tend to be more conservative' (обережно, точно). В українській: 'Загалом кажучи', 'В цілому', 'Як правило' — пом'якшувальні вставні."
+      },
+      {
+        "id": "ue_hdg4",
+        "question": "The project could _____ be finished by the end of the month.",
+        "translation": "(Проєкт, ймовірно, може бути завершений до кінця місяця.)",
+        "options": [
+          "potentially",
+          "definitely",
+          "absolutely",
+          "certainly"
+        ],
+        "correct": "potentially",
+        "explanation": "POTENTIALLY / POSSIBLY / PERHAPS (прислівники невпевненості): 'Could POTENTIALLY be finished'. Шкала прислівників від впевненого до невпевненого: DEFINITELY/CERTAINLY (100%) > PROBABLY (80%) > LIKELY (70%) > POSSIBLY (40%) > POTENTIALLY (30%) > CONCEIVABLY (20%). В академічному стилі POTENTIALLY і POSSIBLY — ключові: 'This could potentially lead to...'. В розмовній: 'Maybe/Perhaps she'll come'. В українській: 'Потенційно', 'Можливо', 'Ймовірно', 'Може бути' — різні рівні впевненості."
+      },
+      {
+        "id": "ue_hdg5",
+        "question": "I _____ argue that the policy needs to be changed.",
+        "translation": "(Я би стверджував, що політику потрібно змінити.)",
+        "options": [
+          "would",
+          "will",
+          "must",
+          "shall"
+        ],
+        "correct": "would",
+        "explanation": "WOULD (пом'якшене твердження): 'I WOULD argue that...' = 'Я б стверджував'. WOULD пом'якшує категоричність: 'I think' → 'I would think', 'I say' → 'I would say', 'I argue' → 'I would argue'. Це НЕ умовний спосіб, а ввічливий модальний зсув. В академічних текстах: 'I would suggest that...', 'One would expect that...'. В діловому: 'I would recommend...', 'I would advise...'. В українській: 'Я би стверджував', 'Я б запропонував' — умовний із часткою 'б/би'. Функція та сама."
+      },
+      {
+        "id": "ue_hdg6",
+        "question": "There is _____ evidence to support this theory.",
+        "translation": "(Є деякі докази на підтримку цієї теорії.)",
+        "options": [
+          "some",
+          "total",
+          "complete",
+          "absolute"
+        ],
+        "correct": "some",
+        "explanation": "SOME / CERTAIN / A DEGREE OF (кількісне пом'якшення): 'There is SOME evidence' = 'є деякі докази'. SOME пом'якшує: не 'evidence' (категорично), а 'SOME evidence' (є, але не всеохоплююче). Ще: 'a certain degree of', 'to some extent', 'in some cases', 'to a certain degree'. Академічний стиль вимагає обережності: ❌ 'This proves...' → ✅ 'This provides some evidence for...'. В українській: 'Деякі', 'Певні', 'До певної міри' — кількісні пом'якшувачі."
+      },
+      {
+        "id": "ue_hdg7",
+        "question": "_____ the economy will improve next year.",
+        "translation": "(Цілком ймовірно, що економіка покращиться наступного року.)",
+        "options": [
+          "It is likely that",
+          "It is certain that",
+          "It is obvious that",
+          "It is clear that"
+        ],
+        "correct": "It is likely that",
+        "explanation": "IT IS LIKELY THAT (ймовірність): 'IT IS LIKELY THAT the economy will improve' = 'Ймовірно, що'. Шкала формальних маркерів ймовірності: IT IS CERTAIN THAT (впевненість) > IT IS PROBABLE THAT (висока) > IT IS LIKELY THAT (помірна) > IT IS POSSIBLE THAT (низька) > IT IS UNLIKELY THAT (мала). В академічному стилі ці конструкції — фундамент обережного висловлювання. IT IS + ADJ + THAT — безособова, об'єктивна форма. В українській: 'Ймовірно, що', 'Цілком можливо, що' — безособові конструкції."
+      },
+      {
+        "id": "ue_hdg8",
+        "question": "The new drug tends _____ be more effective in younger patients.",
+        "translation": "(Новий лікарський засіб, як правило, ефективніший у молодших пацієнтів.)",
+        "options": [
+          "to",
+          "for",
+          "in",
+          "at"
+        ],
+        "correct": "to",
+        "explanation": "TEND TO (тенденція, не абсолют): 'The drug TENDS TO be more effective' = 'Як правило, ефективніший'. TEND TO = 'має тенденцію / зазвичай'. Це хеджування: не 'IS more effective' (категорично), а 'TENDS TO BE' (зазвичай, але не завжди). Ще: 'People tend to prefer...' 'Prices tend to rise in summer'. HAVE A TENDENCY TO (формальніше): 'Patients have a tendency to respond positively'. В українській: 'Як правило', 'Зазвичай', 'Має тенденцію' — узагальнення з м'яким відтінком."
+      },
+      {
+        "id": "ue_hdg9",
+        "question": "I'm _____ certain that the meeting is at 3 o'clock.",
+        "translation": "(Я майже впевнений, що зустріч о 3-й годині.)",
+        "options": [
+          "fairly",
+          "totally",
+          "completely",
+          "absolutely"
+        ],
+        "correct": "fairly",
+        "explanation": "FAIRLY / QUITE / RATHER / SOMEWHAT (модифікатори ступеня): 'I'm FAIRLY certain' = 'Я досить впевнений, але не на 100%'. FAIRLY пом'якшує CERTAIN: не 'абсолютно впевнений', а 'досить впевнений'. Шкала: ABSOLUTELY/COMPLETELY > VERY > QUITE/FAIRLY > RATHER > SOMEWHAT > SLIGHTLY. В BrE QUITE = 'досить' (пом'якшення), в AmE QUITE = 'дуже' (підсилення) — обережно! В українській: 'Досить', 'Доволі', 'Достатньо', 'Дещо' — модифікатори ступеня. 'Я майже впевнений' = FAIRLY CERTAIN."
+      },
+      {
+        "id": "ue_hdg10",
+        "question": "This could _____ be interpreted as a sign of progress.",
+        "translation": "(Це можна інтерпретувати як ознаку прогресу.)",
+        "options": [
+          "arguably",
+          "definitely",
+          "obviously",
+          "undeniably"
+        ],
+        "correct": "arguably",
+        "explanation": "ARGUABLY (спірне, але аргументоване): 'This could ARGUABLY be interpreted...' = 'Це можна аргументовано інтерпретувати'. ARGUABLY = 'можна стверджувати'. Визнає, що це ОДНА з можливих інтерпретацій, не єдина. Потрійне хеджування: COULD + ARGUABLY + BE INTERPRETED (три пом'якшувачі!). Ще: 'Arguably the best player in history', 'This is arguably true'. В українській: 'Можна стверджувати', 'Аргументовано', 'Спірно, але' — визнання дискусійності."
+      },
+      {
+        "id": "ue_hdg11",
+        "question": "It _____ that more research is needed in this area.",
+        "translation": "(Видається, що в цій галузі потрібні додаткові дослідження.)",
+        "options": [
+          "appears",
+          "is",
+          "proves",
+          "confirms"
+        ],
+        "correct": "appears",
+        "explanation": "IT APPEARS / IT SEEMS (безособове хеджування): 'IT APPEARS THAT more research is needed'. IT APPEARS/SEEMS THAT = безособова, об'єктивна форма: 'Видається, що'. Не 'I think' (суб'єктивно), а 'It appears' (ніби об'єктивний факт, але з обережністю). Академічний стиль: 'It would appear that...', 'It seems reasonable to assume that...'. В діловому: 'It appears that sales are declining'. В українській: 'Видається, що', 'Здається, що' — безособові конструкції. Обережність і об'єктивність."
+      },
+      {
+        "id": "ue_hdg12",
+        "question": "I was _____ if you could help me with this.",
+        "translation": "(Я хотів спитати, чи не могли б ви мені з цим допомогти.)",
+        "options": [
+          "wondering",
+          "thinking",
+          "wanting",
+          "needing"
+        ],
+        "correct": "wondering",
+        "explanation": "I WAS WONDERING IF (ввічливе прохання): 'I WAS WONDERING IF you could help me'. I WAS WONDERING IF = пом'якшене прохання — значно ввічливіше за 'Can you help me?'. Past Continuous (was wondering) створює дистанцію й ввічливість. Шкала ввічливості: 'Help me!' < 'Can you help?' < 'Could you help?' < 'Would you mind helping?' < 'I was wondering if you could help?' У діловій кореспонденції: 'I was wondering whether it would be possible to...'. В українській: 'Я хотів запитати, чи не могли б ви...' — теж багатошаровий."
+      },
+      {
+        "id": "ue_hdg13",
+        "question": "To a certain _____, I agree with your point.",
+        "translation": "(До певної міри я погоджуюся з вашою думкою.)",
+        "options": [
+          "extent",
+          "amount",
+          "level",
+          "point"
+        ],
+        "correct": "extent",
+        "explanation": "TO A CERTAIN EXTENT / TO SOME EXTENT (часткова згода): 'TO A CERTAIN EXTENT, I agree'. Часткова згода — фундамент дипломатичного спілкування: ви не відкидаєте повністю, але й не погоджуєтесь на 100%. Ще: 'Up to a point', 'To a degree', 'In part', 'Partially'. 'You're right to a certain extent, but...' — визнаєте частину, потім додаєте своє. В академічному стилі: 'This is true to some extent, however...'. В українській: 'До певної міри', 'Певною мірою', 'Частково' — маркери часткової згоди."
+      },
+      {
+        "id": "ue_hdg14",
+        "question": "The evidence _____ that there may be a connection between diet and health.",
+        "translation": "(Дані свідчать про те, що може існувати зв'язок між дієтою та здоров'ям.)",
+        "options": [
+          "suggests",
+          "proves",
+          "confirms",
+          "demonstrates"
+        ],
+        "correct": "suggests",
+        "explanation": "SUGGEST (м'яке твердження): 'The evidence SUGGESTS' = 'дані свідчать / вказують'. SUGGEST vs PROVE: SUGGEST = обережне, допускає інші інтерпретації. PROVE = категоричне, остаточне. Шкала: PROVE/DEMONSTRATE (сильні) > SHOW/INDICATE (помірні) > SUGGEST/IMPLY (м'які) > HINT AT (дуже м'яке). В академічному стилі SUGGEST — золотий стандарт: 'The findings suggest...', 'This evidence suggests...'. В українській: 'Свідчить', 'Вказує', 'Дає підстави вважати' — різні ступені категоричності."
+      },
+      {
+        "id": "ue_hdg15",
+        "question": "I'm not entirely _____ that this is the best approach.",
+        "translation": "(Я не цілком переконаний, що це найкращий підхід.)",
+        "options": [
+          "convinced",
+          "sure about",
+          "happy",
+          "satisfied"
+        ],
+        "correct": "convinced",
+        "explanation": "NOT ENTIRELY CONVINCED (подвійне пом'якшення): 'I'm NOT ENTIRELY CONVINCED' = 'Я не цілком переконаний'. NOT + ENTIRELY = подвійне хеджування: заперечення + 'не цілком' (не 'зовсім не', а 'не повністю'). Ще: 'I'm not altogether sure', 'I'm not wholly in agreement', 'I'm not completely satisfied'. Це ввічливий незгода — м'якший за 'I disagree'. Підсумок hedging: модальні (might, could), прислівники (possibly, arguably), дієслова (seem, suggest, tend), фрази (to some extent). В українській: 'Не цілком переконаний', 'Не зовсім згоден' — пом'якшена незгода."
+      }
+    ]
   }
 ]

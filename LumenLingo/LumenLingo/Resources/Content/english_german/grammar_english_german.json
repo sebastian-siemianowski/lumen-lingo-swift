@@ -14758,5 +14758,1030 @@
         "explanation": "'Erst recht' (all the more/now more than ever) is an emphatic expression meaning that opposition or obstacles INCREASE determination rather than decrease it. 'Erst recht werde ich das tun!' = 'Now I'm going to do it even more!' (defiant). It's the opposite of backing down: 'Du willst mich aufhalten? Erst recht mache ich weiter!' (You want to stop me? Now I'll keep going even more!). This expression captures German directness and determination. Related emphatic phrases: 'um so mehr' (all the more), 'jetzt erst recht' (now more than ever — slightly more colloquial). It's a favorite in motivational contexts and arguments."
       }
     ]
+  },
+  {
+    "key": "weather_climate",
+    "name": "Weather & Climate",
+    "description": "Wetter und Klima",
+    "iconName": "cloud.sun",
+    "color": "#60a5fa",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "eg_wc1",
+        "question": "Heute _____ es den ganzen Tag.",
+        "translation": "(Today it is raining all day)",
+        "options": [
+          "regnet",
+          "regnen",
+          "regnest",
+          "regnete"
+        ],
+        "correct": "regnet",
+        "explanation": "German weather expressions use the impersonal pronoun 'es' (it) as subject — just like English 'it rains.' The verb 'regnen' (to rain) conjugates as 'es regnet' in the present. This impersonal construction is standard for all weather verbs: es schneit (it snows), es hagelt (it hails), es donnert (it thunders). The subject 'es' is grammatically required but has no real meaning — it's a placeholder subject. Unlike English where you might say 'raining!' casually, German always keeps 'es' in formal speech."
+      },
+      {
+        "id": "eg_wc2",
+        "question": "Im Winter _____ es oft sehr kalt.",
+        "translation": "(In winter it is often very cold)",
+        "options": [
+          "ist",
+          "hat",
+          "wird",
+          "macht"
+        ],
+        "correct": "ist",
+        "explanation": "To describe temperature, German uses 'es ist kalt/warm/heiß' — literally 'it is cold/warm/hot.' This parallels English directly. However, German also uses 'es wird kalt' (it's getting cold) for changing conditions — a key distinction. The preposition 'im' is a contraction of 'in dem' (dative) used with months and seasons: im Januar, im Sommer, im Herbst. 'Oft' (often) is a frequency adverb that typically follows the verb in German main clauses."
+      },
+      {
+        "id": "eg_wc3",
+        "question": "Morgen _____ die Sonne scheinen.",
+        "translation": "(Tomorrow the sun will shine)",
+        "options": [
+          "wird",
+          "will",
+          "soll",
+          "kann"
+        ],
+        "correct": "wird",
+        "explanation": "Future tense for weather forecasts uses 'werden' + infinitive. 'Die Sonne wird scheinen' = 'The sun will shine.' Be careful: German 'will' does NOT mean English 'will' — German 'will' means 'wants to.' This is a classic false friend! Future weather predictions always use 'werden': Es wird regnen (it will rain), es wird schneien (it will snow). Note the word order: 'morgen' at position 1 pushes the subject after the verb (V2 rule)."
+      },
+      {
+        "id": "eg_wc4",
+        "question": "Es ist _____ bewölkt mit einzelnen Schauern.",
+        "translation": "(It is partly cloudy with isolated showers)",
+        "options": [
+          "teilweise",
+          "teilweisen",
+          "teilweiser",
+          "teilweises"
+        ],
+        "correct": "teilweise",
+        "explanation": "'Teilweise' (partly/partially) is an adverb — it does NOT decline! Adverbs in German never change form regardless of the noun they modify. This differs from adjectives which must agree in gender, number, and case. 'Bewölkt' (cloudy) comes from 'Wolke' (cloud) — notice how German creates adjectives from nouns with the prefix 'be-' and past participle ending '-t'. 'Schauer' (showers) is masculine: der Schauer. Weather vocabulary is essential for daily conversation in German-speaking countries."
+      },
+      {
+        "id": "eg_wc5",
+        "question": "Bei diesem Gewitter solltest du lieber zu Hause _____.",
+        "translation": "(In this thunderstorm you should better stay at home)",
+        "options": [
+          "bleiben",
+          "bleibt",
+          "bleibst",
+          "geblieben"
+        ],
+        "correct": "bleiben",
+        "explanation": "After modal verbs like 'solltest' (should), the main verb goes to the end in infinitive form: 'bleiben' (to stay). The construction 'solltest du lieber' means 'you'd better' — very common in spoken German advice. 'Bei' + dative describes conditions: 'bei Regen' (in rain), 'bei Schnee' (in snow), 'bei Gewitter' (during a thunderstorm). 'Zu Hause' means 'at home' (location), while 'nach Hause' means 'to home' (direction) — a crucial German distinction."
+      },
+      {
+        "id": "eg_wc6",
+        "question": "Die Temperatur _____ gestern auf minus zehn Grad.",
+        "translation": "(The temperature dropped to minus ten degrees yesterday)",
+        "options": [
+          "fiel",
+          "fal",
+          "fiele",
+          "gefallen"
+        ],
+        "correct": "fiel",
+        "explanation": "'Fallen' (to fall) is a strong verb with the stem change a→ie in Präteritum: fiel, fielst, fiel. For temperature changes, Germans use 'fallen' (to fall/drop) and 'steigen' (to rise). 'Auf minus zehn Grad' uses 'auf' + accusative to indicate the target temperature. In weather reports, Präteritum is preferred over Perfekt — this is formal/written style. 'Grad' doesn't add an -e in plural when preceded by a number: zehn Grad, not 'zehn Grade.'"
+      },
+      {
+        "id": "eg_wc7",
+        "question": "Im Frühling _____ die Blumen zu blühen.",
+        "translation": "(In spring the flowers begin to bloom)",
+        "options": [
+          "beginnen",
+          "beginnt",
+          "begann",
+          "begonnen"
+        ],
+        "correct": "beginnen",
+        "explanation": "'Die Blumen' (the flowers) is plural, so the verb needs plural conjugation: 'beginnen' (they begin). The infinitive clause 'zu blühen' (to bloom) follows 'beginnen' — German uses 'zu' before the infinitive in these constructions, similar to English 'to.' 'Im Frühling' uses the contraction 'im' = 'in dem.' The four seasons in German: der Frühling (spring), der Sommer (summer), der Herbst (autumn), der Winter (winter) — all masculine!"
+      },
+      {
+        "id": "eg_wc8",
+        "question": "Der Wind _____ heute besonders stark.",
+        "translation": "(The wind is blowing especially strong today)",
+        "options": [
+          "weht",
+          "bläst",
+          "wehst",
+          "blasen"
+        ],
+        "correct": "weht",
+        "explanation": "'Wehen' (to blow — of wind) conjugates regularly: weht for er/sie/es and for 'der Wind.' While 'blasen' also means 'to blow,' it's used for deliberate blowing (blowing out candles), not weather. This semantic distinction matters! 'Besonders stark' means 'especially strong' — 'besonders' is an intensifying adverb. German weather reports frequently use 'der Wind weht' as a fixed collocation. Note: 'der Wind' is masculine in German."
+      },
+      {
+        "id": "eg_wc9",
+        "question": "Nach dem Regen _____ ein wunderschöner Regenbogen am Himmel.",
+        "translation": "(After the rain a beautiful rainbow appeared in the sky)",
+        "options": [
+          "erschien",
+          "erscheint",
+          "erschienen",
+          "erscheinen"
+        ],
+        "correct": "erschien",
+        "explanation": "'Erscheinen' (to appear) is a strong verb: erschien in Präteritum. The past tense is used here for narrative effect — telling what happened. 'Nach dem Regen' uses 'nach' + dative (dem). 'Wunderschön' is a compound adjective: 'wunder' (wonder) + 'schön' (beautiful) = wonderfully beautiful. German loves compound words! 'Der Regenbogen' (rainbow) is itself a compound: 'Regen' (rain) + 'Bogen' (arc/bow). 'Am Himmel' = 'an dem Himmel' (in the sky), dative with 'an.'"
+      },
+      {
+        "id": "eg_wc10",
+        "question": "Es _____ draußen so neblig, dass man kaum etwas sehen kann.",
+        "translation": "(It is so foggy outside that you can barely see anything)",
+        "options": [
+          "ist",
+          "hat",
+          "wird",
+          "macht"
+        ],
+        "correct": "ist",
+        "explanation": "'Es ist neblig' follows the standard weather pattern: es ist + adjective. 'Neblig' (foggy) derives from 'der Nebel' (fog) + '-ig' suffix — a productive pattern: sonnig (sunny), windig (windy), wolkig (cloudy). The 'so...dass' construction (so...that) creates a result clause. 'Kaum' (barely/hardly) is an important adverb for nuance. 'Man' is the impersonal pronoun meaning 'one/you/people' — very common in German where English would use passive voice."
+      },
+      {
+        "id": "eg_wc11",
+        "question": "Wegen des schlechten _____ wurde das Spiel abgesagt.",
+        "translation": "(Because of the bad weather, the game was cancelled)",
+        "options": [
+          "Wetters",
+          "Wetter",
+          "Wettern",
+          "Wetteren"
+        ],
+        "correct": "Wetters",
+        "explanation": "'Wegen' (because of) takes the genitive case! 'Das Wetter' (neuter) becomes 'des Wetters' in genitive — neuter/masculine nouns add '-s' or '-es' in genitive. The adjective 'schlecht' gets the ending '-en' after the definite article in genitive: 'des schlechten Wetters.' This is strong declension. 'Wurde abgesagt' is passive voice (Vorgangspassiv): werden + past participle. Genitive with 'wegen' is formal; colloquially, some Germans use dative: 'wegen dem schlechten Wetter.'"
+      },
+      {
+        "id": "eg_wc12",
+        "question": "Im Sommer kann es in Deutschland bis zu 35 Grad _____ werden.",
+        "translation": "(In summer it can get up to 35 degrees hot in Germany)",
+        "options": [
+          "heiß",
+          "heißen",
+          "heißer",
+          "heißes"
+        ],
+        "correct": "heiß",
+        "explanation": "After 'werden' (to become), predicative adjectives remain undeclined — they take NO ending. 'Es kann heiß werden' = 'it can get hot.' This is different from attributive adjectives before nouns which must decline. 'Bis zu' (up to) indicates a maximum. The modal 'kann' sends the infinitive 'werden' to the end. German uses Celsius, so 35°C is very hot (95°F)! Weather small talk ('Smalltalk über das Wetter') is just as popular in Germany as in English-speaking countries."
+      },
+      {
+        "id": "eg_wc13",
+        "question": "Gestern hat es den ganzen Tag _____.",
+        "translation": "(Yesterday it snowed all day)",
+        "options": [
+          "geschneit",
+          "schneit",
+          "schneien",
+          "schneite"
+        ],
+        "correct": "geschneit",
+        "explanation": "'Hat geschneit' is the Perfekt (present perfect) of 'schneien' (to snow). Weather verbs use 'haben' as auxiliary in Perfekt — even though they describe events: es hat geregnet, es hat geschneit, es hat gedonnert. 'Den ganzen Tag' (all day) uses accusative for duration — 'den' is accusative masculine (der Tag). This time expression pattern is very productive: die ganze Nacht (all night), das ganze Jahr (all year), die ganze Woche (all week)."
+      },
+      {
+        "id": "eg_wc14",
+        "question": "Der Wetterbericht sagt, dass es morgen _____ soll.",
+        "translation": "(The weather report says that it should clear up tomorrow)",
+        "options": [
+          "aufklaren",
+          "aufklart",
+          "aufgeklart",
+          "klaren"
+        ],
+        "correct": "aufklaren",
+        "explanation": "'Aufklaren' (to clear up — weather) is a separable verb. In the 'dass' subordinate clause, the conjugated verb 'soll' goes to the END, and the infinitive 'aufklaren' precedes it. Separable prefixes stay attached in infinitive form. 'Der Wetterbericht' (weather report) is a compound noun. 'Soll' (should/is supposed to) indicates reported information — what the forecast predicts. This use of 'sollen' for hearsay/reports is distinctly German and has no direct English equivalent."
+      },
+      {
+        "id": "eg_wc15",
+        "question": "Bei _____ Wetter gehe ich gern spazieren.",
+        "translation": "(In nice weather I like to go for a walk)",
+        "options": [
+          "schönem",
+          "schönes",
+          "schöner",
+          "schönen"
+        ],
+        "correct": "schönem",
+        "explanation": "'Bei' takes the dative case. 'Das Wetter' is neuter, so in dative without an article, the adjective takes the strong ending '-em': 'bei schönem Wetter.' Without an article, adjectives must carry the full case signal themselves — this is strong (unpreceded) declension. Compare: 'bei dem schönen Wetter' (with article, weak ending '-en'). 'Spazieren gehen' (to go for a walk) is a fixed verb combination where 'spazieren' is an infinitive used adverbially. This is a beloved German pastime!"
+      }
+    ]
+  },
+  {
+    "key": "at_restaurant",
+    "name": "At the Restaurant",
+    "description": "Im Restaurant",
+    "iconName": "fork.knife",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "eg_rest1",
+        "question": "Ich _____ gern einen Kaffee bestellen.",
+        "translation": "(I would like to order a coffee)",
+        "options": [
+          "möchte",
+          "möchten",
+          "will",
+          "mag"
+        ],
+        "correct": "möchte",
+        "explanation": "'Möchte' (would like) is the polite way to order in German — far more appropriate than 'will' (want), which sounds demanding. 'Ich möchte' is technically Konjunktiv II of 'mögen' but functions as its own modal verb for polite requests. 'Einen Kaffee' is accusative masculine (der Kaffee → einen Kaffee). As a modal verb, 'möchte' sends the infinitive 'bestellen' to the sentence end. This phrase is your survival toolkit in any German restaurant or café!"
+      },
+      {
+        "id": "eg_rest2",
+        "question": "Könnten Sie mir bitte die _____ bringen?",
+        "translation": "(Could you please bring me the menu?)",
+        "options": [
+          "Speisekarte",
+          "Speisenkarte",
+          "Menükarte",
+          "Essenkarte"
+        ],
+        "correct": "Speisekarte",
+        "explanation": "'Die Speisekarte' (menu, literally 'food card') is the standard German word for a restaurant menu. It's a compound: 'Speise' (dish/food) + 'Karte' (card/map). The polite 'Könnten Sie' (Could you — formal) uses Konjunktiv II of 'können.' 'Mir' is dative (indirect object — to me), 'die Speisekarte' is accusative (direct object). The word order follows: Could you [to-me] please [the menu] bring? Infinitive 'bringen' goes to the end after the modal."
+      },
+      {
+        "id": "eg_rest3",
+        "question": "Als Vorspeise _____ ich den Salat.",
+        "translation": "(As a starter, I'll have the salad)",
+        "options": [
+          "nehme",
+          "nehmen",
+          "nimmst",
+          "nimmt"
+        ],
+        "correct": "nehme",
+        "explanation": "'Nehmen' (to take) is used for ordering food: 'Ich nehme...' = 'I'll have...' It's a strong verb with stem change e→i in du/er: du nimmst, er nimmt, but ich nehme (no change for ich!). 'Als Vorspeise' (as a starter) uses 'als' without an article — a common pattern with role/function descriptions. German meal courses: die Vorspeise (starter), die Hauptspeise/das Hauptgericht (main course), die Nachspeise/der Nachtisch (dessert). 'Den Salat' is accusative masculine."
+      },
+      {
+        "id": "eg_rest4",
+        "question": "Die Rechnung, _____!",
+        "translation": "(The bill, please!)",
+        "options": [
+          "bitte",
+          "danke",
+          "gern",
+          "ja"
+        ],
+        "correct": "bitte",
+        "explanation": "'Die Rechnung, bitte!' is the standard way to ask for the bill in a German restaurant. 'Bitte' (please) is the magic word in German politeness — it works for requests, acknowledgments, and even as 'you're welcome' ('Bitte schön!'). 'Die Rechnung' (the bill/check) comes from 'rechnen' (to calculate). In Germany, you typically ask your server directly rather than waiting — they won't bring the bill automatically. Tipping ('Trinkgeld') in Germany is usually 5-10%, not 15-20% as in the US."
+      },
+      {
+        "id": "eg_rest5",
+        "question": "Ist dieser Tisch noch _____?",
+        "translation": "(Is this table still free?)",
+        "options": [
+          "frei",
+          "freie",
+          "freier",
+          "freien"
+        ],
+        "correct": "frei",
+        "explanation": "'Frei' (free/available) is a predicative adjective here — it comes after the verb 'ist' and therefore takes NO ending. This is different from attributive use: 'ein freier Tisch' (a free table) where the adjective declines. 'Noch' (still) implies: is it still unoccupied, or has someone taken it? This question is essential when entering a restaurant in Germany — you often seat yourself rather than waiting to be seated. 'Dieser' (this) is a demonstrative pronoun in nominative masculine."
+      },
+      {
+        "id": "eg_rest6",
+        "question": "Ich bin allergisch _____ Nüsse.",
+        "translation": "(I am allergic to nuts)",
+        "options": [
+          "gegen",
+          "auf",
+          "für",
+          "zu"
+        ],
+        "correct": "gegen",
+        "explanation": "'Allergisch gegen' (allergic to) is a fixed adjective-preposition combination — you must memorize that it takes 'gegen' + accusative, not 'zu' or 'auf.' German preposition usage often differs from English. Other food-related fixed phrases: 'empfindlich gegen' (sensitive to), 'unverträglich für' (intolerable for). 'Die Nüsse' is plural of 'die Nuss.' In Germany, restaurants are legally required to label allergens — look for 'Allergene' on menus. This phrase could literally save your life!"
+      },
+      {
+        "id": "eg_rest7",
+        "question": "Was _____ Sie uns als Hauptgericht empfehlen?",
+        "translation": "(What would you recommend as a main course?)",
+        "options": [
+          "würden",
+          "werden",
+          "wollen",
+          "wünschen"
+        ],
+        "correct": "würden",
+        "explanation": "'Würden Sie empfehlen' (would you recommend) uses Konjunktiv II of 'werden' for polite questions — the most courteous way to ask for recommendations. 'Uns' (us, dative) is the indirect object. 'Als Hauptgericht' (as a main course) uses 'als' for role descriptions. 'Empfehlen' (to recommend) is a strong verb: empfiehlt, empfahl, empfohlen. The infinitive goes to the end. This polite construction is used constantly in German service situations."
+      },
+      {
+        "id": "eg_rest8",
+        "question": "Das Schnitzel schmeckt _____!",
+        "translation": "(The schnitzel tastes excellent!)",
+        "options": [
+          "ausgezeichnet",
+          "ausgezeichnetes",
+          "ausgezeichneter",
+          "ausgezeichneten"
+        ],
+        "correct": "ausgezeichnet",
+        "explanation": "'Schmecken' (to taste) takes an adverb or predicative adjective — no ending needed! 'Ausgezeichnet' (excellent) functions as an adverb modifying how something tastes. Other useful restaurant compliments: 'Das schmeckt hervorragend!' (That tastes outstanding!), 'Sehr lecker!' (Very delicious!). 'Das Schnitzel' is neuter — like most German diminutives and words ending in '-el.' The original Wiener Schnitzel is made from veal (Kalbfleisch), paniert und gebraten (breaded and fried)."
+      },
+      {
+        "id": "eg_rest9",
+        "question": "Wir möchten getrennt _____.",
+        "translation": "(We would like to pay separately)",
+        "options": [
+          "zahlen",
+          "bezahlen",
+          "gezahlt",
+          "zahlend"
+        ],
+        "correct": "zahlen",
+        "explanation": "'Getrennt zahlen' (to pay separately) is the standard phrase when splitting the bill. After 'möchten' (would like), the infinitive 'zahlen' goes to the end. 'Zahlen' and 'bezahlen' both mean 'to pay' — 'zahlen' is used without a direct object or with amounts ('Ich zahle 20 Euro'), while 'bezahlen' takes a direct object ('Ich bezahle die Rechnung'). In Germany, splitting the bill ('getrennt zahlen') is completely normal and not considered rude — just tell the waiter!"
+      },
+      {
+        "id": "eg_rest10",
+        "question": "Haben Sie _____ vegetarische Gerichte?",
+        "translation": "(Do you have vegetarian dishes?)",
+        "options": [
+          "auch",
+          "noch",
+          "schon",
+          "erst"
+        ],
+        "correct": "auch",
+        "explanation": "'Auch' (also/too) is the right choice here — asking if the restaurant also has vegetarian options. 'Noch' would mean 'still' (do you still have...), 'schon' means 'already,' and 'erst' means 'only/not until.' 'Vegetarische Gerichte' uses adjective + plural noun — 'vegetarisch' gets the ending '-e' in nominative/accusative plural. 'Das Gericht' (dish, pl. Gerichte) is neuter. German restaurants increasingly offer vegetarian and vegan options — look for 'V' or plant symbols on menus."
+      },
+      {
+        "id": "eg_rest11",
+        "question": "Zum _____ hätte ich gern ein Stück Apfelstrudel.",
+        "translation": "(For dessert, I would like a piece of apple strudel)",
+        "options": [
+          "Nachtisch",
+          "Nachtische",
+          "Nachtischen",
+          "Nachtischs"
+        ],
+        "correct": "Nachtisch",
+        "explanation": "'Zum' = 'zu dem' (dative contraction). 'Der Nachtisch' (dessert, literally 'after-table') stays in base form after 'zum' because it's a masculine noun in dative without additional ending. 'Hätte gern' (would like — literally 'would have gladly') is an alternative to 'möchte' for polite requests. 'Ein Stück' (a piece of) — note: no preposition needed in German! Compare: 'ein Glas Wein' (a glass of wine), 'eine Tasse Kaffee' (a cup of coffee). 'Apfelstrudel' is a famous Austrian/German pastry."
+      },
+      {
+        "id": "eg_rest12",
+        "question": "Das Essen war so gut, dass ich es jedem _____ würde.",
+        "translation": "(The food was so good that I would recommend it to everyone)",
+        "options": [
+          "empfehlen",
+          "empfehle",
+          "empfohlen",
+          "empfiehlst"
+        ],
+        "correct": "empfehlen",
+        "explanation": "In a 'dass' subordinate clause, the conjugated verb goes to the END. With Konjunktiv II 'würde' + infinitive, the infinitive comes first, then 'würde' at the very end: '...dass ich es jedem empfehlen würde.' This is the standard word order for modal constructions in subordinate clauses. 'Jedem' is dative of 'jeder' (everyone) — dative because 'empfehlen' takes a dative object (recommend TO someone). 'So gut, dass...' creates a result clause."
+      },
+      {
+        "id": "eg_rest13",
+        "question": "Darf ich Sie _____ ein Glas Wein einladen?",
+        "translation": "(May I invite you to a glass of wine?)",
+        "options": [
+          "auf",
+          "zu",
+          "für",
+          "mit"
+        ],
+        "correct": "auf",
+        "explanation": "'Jemanden auf etwas einladen' (to treat/invite someone to something) is a fixed expression using 'auf' + accusative. 'Darf ich' (may I) is the polite way to ask permission. 'Einladen' is a separable verb — but as an infinitive after 'darf,' it stays together. 'Sie' (you, formal — capitalized) shows respect. 'Ein Glas Wein' — no preposition 'of' needed between container and contents in German. This phrase is useful for social dining situations and shows generosity."
+      },
+      {
+        "id": "eg_rest14",
+        "question": "Die Bedienung in diesem Restaurant ist immer sehr _____.",
+        "translation": "(The service in this restaurant is always very friendly)",
+        "options": [
+          "freundlich",
+          "freundliche",
+          "freundlicher",
+          "freundliches"
+        ],
+        "correct": "freundlich",
+        "explanation": "'Freundlich' (friendly) is a predicative adjective after 'ist' — no ending! Compare: 'eine freundliche Bedienung' (attributive, with ending). 'Die Bedienung' means both 'the service' and 'the server/waiter.' 'In diesem Restaurant' uses dative (in + location = dative). 'Immer' (always) and 'sehr' (very) are adverbs that never decline. Complimenting service in German: 'ausgezeichnete Bedienung' (excellent service), 'sehr aufmerksam' (very attentive)."
+      },
+      {
+        "id": "eg_rest15",
+        "question": "Entschuldigung, ich habe eine Reservierung _____ den Namen Müller.",
+        "translation": "(Excuse me, I have a reservation under the name Müller)",
+        "options": [
+          "auf",
+          "unter",
+          "für",
+          "mit"
+        ],
+        "correct": "auf",
+        "explanation": "'Eine Reservierung auf den Namen...' (a reservation under the name...) is a fixed phrase using 'auf' + accusative. German uses 'auf' here where English uses 'under' — a notable difference! 'Entschuldigung' (excuse me) is the standard polite opener. 'Die Reservierung' (reservation) — in spoken German, you might also hear 'Ich habe reserviert' (I have reserved) or 'Ich habe einen Tisch reserviert' (I reserved a table). Always arrive on time — punctuality is highly valued in German culture!"
+      }
+    ]
+  },
+  {
+    "key": "shopping_expressions",
+    "name": "Shopping Expressions",
+    "description": "Einkaufsausdrücke",
+    "iconName": "cart",
+    "color": "#10b981",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "eg_shop1",
+        "question": "Was _____ das?",
+        "translation": "(How much does that cost?)",
+        "options": [
+          "kostet",
+          "kosten",
+          "kostest",
+          "gekostet"
+        ],
+        "correct": "kostet",
+        "explanation": "'Was kostet das?' is the most common way to ask 'how much?' in German shops. 'Das' (that) is the subject, so the verb conjugates in third person singular: 'kostet.' For plural items: 'Was kosten die?' (How much do those cost?). Alternative: 'Wie viel kostet das?' or 'Wie teuer ist das?' (How expensive is that?). 'Kosten' is a regular verb that rarely uses Perfekt in everyday speech — you just ask in present tense. This is your most essential shopping phrase!"
+      },
+      {
+        "id": "eg_shop2",
+        "question": "Kann ich das _____?",
+        "translation": "(Can I try that on?)",
+        "options": [
+          "anprobieren",
+          "probieren",
+          "ausprobieren",
+          "versuchen"
+        ],
+        "correct": "anprobieren",
+        "explanation": "'Anprobieren' specifically means to try on clothing — it's a separable verb (an|probieren). 'Probieren' alone means to taste/sample food. 'Ausprobieren' means to test/try out a device or method. 'Versuchen' means to attempt/try in general. These distinctions matter! After the modal 'kann,' the infinitive stays together: 'anprobieren.' Separable verbs only split in main clauses without modals: 'Ich probiere das an.' In shops, you'll also hear: 'Wo ist die Umkleidekabine?' (Where is the fitting room?)."
+      },
+      {
+        "id": "eg_shop3",
+        "question": "Haben Sie das in einer _____ Größe?",
+        "translation": "(Do you have that in a smaller size?)",
+        "options": [
+          "kleineren",
+          "kleiner",
+          "kleinere",
+          "kleinerem"
+        ],
+        "correct": "kleineren",
+        "explanation": "'In einer kleineren Größe' — 'einer' signals dative feminine (after 'in' for manner), and the comparative adjective 'kleineren' needs the weak ending '-en' after the indefinite article in dative. Comparative formation: klein → kleiner + dative ending -en = kleineren. Sizes in German: XS (extra klein), S (klein), M (mittel), L (groß), XL (extra groß). You can also ask: 'Haben Sie das eine Nummer größer/kleiner?' (Do you have that one size bigger/smaller?)."
+      },
+      {
+        "id": "eg_shop4",
+        "question": "Das ist mir leider zu _____.",
+        "translation": "(That is unfortunately too expensive for me)",
+        "options": [
+          "teuer",
+          "teuere",
+          "teuerer",
+          "teures"
+        ],
+        "correct": "teuer",
+        "explanation": "'Zu teuer' (too expensive) — predicative adjective after 'ist' = no ending. 'Mir' (dative, to/for me) expresses personal opinion: 'Das ist mir zu teuer' = 'That's too expensive for me.' This dative of personal judgment is very German! The 'mir' is optional but adds personal nuance. 'Leider' (unfortunately) softens the refusal — very important for German politeness! Other useful price adjectives: 'günstig' (affordable/reasonable), 'preiswert' (good value), 'billig' (cheap — can sound negative)."
+      },
+      {
+        "id": "eg_shop5",
+        "question": "Ich _____ nur, danke.",
+        "translation": "(I'm just browsing, thanks)",
+        "options": [
+          "schaue mich um",
+          "schaue um mich",
+          "umschaue mich",
+          "schaue mich"
+        ],
+        "correct": "schaue mich um",
+        "explanation": "'Sich umschauen' (to look around/browse) is a separable reflexive verb. In a main clause: 'Ich schaue mich um' — the reflexive pronoun 'mich' stays near the verb, and the prefix 'um' goes to the end. Word order: subject + verb + reflexive + ... + separable prefix. This phrase is essential when shop assistants approach you with 'Kann ich Ihnen helfen?' (Can I help you?). 'Nur' (just/only) signals you don't need assistance. Adding 'danke' makes it polite."
+      },
+      {
+        "id": "eg_shop6",
+        "question": "Nehmen Sie _____ Kreditkarte?",
+        "translation": "(Do you accept credit card?)",
+        "options": [
+          "auch",
+          "nur",
+          "noch",
+          "schon"
+        ],
+        "correct": "auch",
+        "explanation": "'Nehmen Sie auch Kreditkarte?' asks whether credit cards are ALSO accepted (in addition to cash). Germany is still more cash-oriented than many other countries — 'Bargeld' (cash) is king in many smaller shops! 'Auch' (also) is the right word because you're asking if this is an additional payment option. 'EC-Karte' (debit card) is more widely accepted than Kreditkarte in Germany. Useful phrase: 'Kann ich mit Karte zahlen?' (Can I pay by card?)."
+      },
+      {
+        "id": "eg_shop7",
+        "question": "Das Kleid _____ Ihnen ausgezeichnet!",
+        "translation": "(The dress suits you excellently!)",
+        "options": [
+          "steht",
+          "passt",
+          "geht",
+          "sitzt"
+        ],
+        "correct": "steht",
+        "explanation": "'Stehen' + dative means 'to suit/look good on someone' — 'Das steht Ihnen gut!' is a common compliment in German shops. Note the distinction: 'stehen' = suits (looks good), 'passen' = fits (right size), 'sitzen' = sits well (fit/cut). All three take dative! 'Ihnen' is formal dative 'you.' Shop assistants use this to encourage purchases. 'Ausgezeichnet' (excellent) is an adverb here — no ending. 'Das Kleid' (dress) is neuter in German."
+      },
+      {
+        "id": "eg_shop8",
+        "question": "Gibt es _____ einen Rabatt?",
+        "translation": "(Is there perhaps a discount?)",
+        "options": [
+          "vielleicht",
+          "villeicht",
+          "vielleich",
+          "vieleicht"
+        ],
+        "correct": "vielleicht",
+        "explanation": "'Vielleicht' (perhaps/maybe) — watch the spelling! It's a common error to misspell this word. The 'ei' comes first, then 'eicht.' 'Gibt es' (is there / are there) is the impersonal construction with 'es gibt' + accusative: 'einen Rabatt' (masculine accusative). Bargaining is not common in German shops, but asking politely about discounts is acceptable. Look for: 'Angebot' (offer/deal), 'Sonderangebot' (special offer), 'Ausverkauf' (clearance sale), 'Schlussverkauf' (end-of-season sale)."
+      },
+      {
+        "id": "eg_shop9",
+        "question": "Ich hätte gern _____ Kilo Äpfel.",
+        "translation": "(I would like two kilograms of apples)",
+        "options": [
+          "zwei",
+          "zweie",
+          "zweien",
+          "zweier"
+        ],
+        "correct": "zwei",
+        "explanation": "'Zwei' (two) is the cardinal number — it doesn't decline before nouns in most cases! Only in genitive ('zweier Freunde') or dative without article ('mit zweien') does it change. 'Kilo' stays unchanged in plural — no '-s' needed: ein Kilo, zwei Kilo. 'Die Äpfel' is plural of 'der Apfel' — note the umlaut ä! At German markets ('auf dem Markt'), you might also hear: 'Ein Pfund Tomaten, bitte' (a pound of tomatoes). 'Hätte gern' is a polite alternative to 'möchte.'"
+      },
+      {
+        "id": "eg_shop10",
+        "question": "Der Rock passt wie _____.",
+        "translation": "(The skirt fits like a glove — perfectly)",
+        "options": [
+          "angegossen",
+          "gegossen",
+          "angießen",
+          "gießen"
+        ],
+        "correct": "angegossen",
+        "explanation": "'Passen wie angegossen' (to fit like a glove — literally 'like cast on') is a fixed German idiom. 'Angegossen' is the past participle of 'angießen' (to cast on/pour on), referring to metal casting that produces a perfect mold. This is a wonderful example of how German idioms differ from English ones — same meaning, completely different image! Other fit-related expressions: 'wie maßgeschneidert' (like tailor-made), 'das sitzt perfekt' (that fits perfectly). 'Der Rock' means skirt (not rock!)."
+      },
+      {
+        "id": "eg_shop11",
+        "question": "Kann ich das _____, wenn es nicht passt?",
+        "translation": "(Can I return it if it doesn't fit?)",
+        "options": [
+          "umtauschen",
+          "tauschen",
+          "austauschen",
+          "eintauschen"
+        ],
+        "correct": "umtauschen",
+        "explanation": "'Umtauschen' (to exchange/return) is the specific verb for returning purchases. 'Tauschen' = to swap, 'austauschen' = to exchange (ideas/information), 'eintauschen' = to trade in. German consumer law gives you 14 days for online purchases ('Widerrufsrecht'), but in-store returns depend on store policy. After 'kann,' the infinitive stays together. 'Wenn' introduces a conditional clause: 'wenn es nicht passt' (if it doesn't fit) — verb goes to the end of the 'wenn' clause."
+      },
+      {
+        "id": "eg_shop12",
+        "question": "Diese Schuhe sind im _____ um 30 Prozent reduziert.",
+        "translation": "(These shoes are reduced by 30 percent in the sale)",
+        "options": [
+          "Angebot",
+          "Angeboten",
+          "Angebots",
+          "Angebote"
+        ],
+        "correct": "Angebot",
+        "explanation": "'Im Angebot' (on sale/on offer) is a fixed prepositional phrase — 'im' = 'in dem' (dative). 'Das Angebot' (neuter) stays in base form in dative singular after the article 'dem.' 'Um 30 Prozent reduziert' means 'reduced by 30 percent' — 'um' indicates the amount of change. 'Reduziert' is the past participle used as adjective. 'Diese Schuhe' (these shoes — plural) uses the demonstrative 'diese.' German shoe sizes differ from US/UK: US 9 is approximately EU 42."
+      },
+      {
+        "id": "eg_shop13",
+        "question": "Wo finde ich die _____?",
+        "translation": "(Where can I find the fitting rooms?)",
+        "options": [
+          "Umkleidekabinen",
+          "Umkleidekabine",
+          "Umkleiden",
+          "Ankleidezimmer"
+        ],
+        "correct": "Umkleidekabinen",
+        "explanation": "'Die Umkleidekabinen' (fitting rooms, plural) — the plural is most natural since stores have multiple booths. This is a triple compound: 'um' (change) + 'Kleide' (dress/clothe) + 'Kabinen' (cabins/booths). German compound nouns take the gender of the LAST component: die Kabine → die Umkleidekabine. 'Wo finde ich...' (Where do I find...) is the standard way to ask for locations in stores. 'Finden' is a strong verb: fand, gefunden."
+      },
+      {
+        "id": "eg_shop14",
+        "question": "Ich suche ein Geschenk _____ meine Mutter.",
+        "translation": "(I'm looking for a gift for my mother)",
+        "options": [
+          "für",
+          "zu",
+          "an",
+          "auf"
+        ],
+        "correct": "für",
+        "explanation": "'Für' (for) + accusative is the correct preposition for recipients of gifts. 'Meine Mutter' is accusative feminine (die Mutter → meine Mutter). 'Suchen' (to search/look for) takes a direct accusative object: 'ein Geschenk' (neuter accusative). Useful shopping phrases: 'Können Sie mir etwas empfehlen?' (Can you recommend something?), 'Es ist als Geschenk gedacht' (It's meant as a gift), 'Können Sie es einpacken?' (Can you wrap it?)."
+      },
+      {
+        "id": "eg_shop15",
+        "question": "Die Kasse ist dort _____.",
+        "translation": "(The checkout is right over there)",
+        "options": [
+          "drüben",
+          "drüber",
+          "darüben",
+          "rüber"
+        ],
+        "correct": "drüben",
+        "explanation": "'Drüben' (over there) is a locative adverb indicating a position across from the speaker — it implies some distance. 'Dort drüben' (right over there) combines two location words for emphasis and precision. 'Die Kasse' (checkout/register) is feminine. 'Rüber' means 'over' but implies movement (herüber/hinüber shortened), while 'drüben' is static location. At German supermarkets you bag your own groceries, and you need to be fast — there is no bagging area like in some countries!"
+      }
+    ]
+  },
+  {
+    "key": "telephone_phrases",
+    "name": "Telephone Phrases",
+    "description": "Telefonieren",
+    "iconName": "phone",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_tel1",
+        "question": "Guten Tag, hier _____ Frau Schmidt.",
+        "translation": "(Good day, this is Mrs. Schmidt speaking)",
+        "options": [
+          "spricht",
+          "spreche",
+          "sprichst",
+          "gesprochen"
+        ],
+        "correct": "spricht",
+        "explanation": "'Hier spricht [Name]' (This is [Name] speaking) is the standard way Germans answer the phone professionally. 'Spricht' is third person singular because the speaker refers to themselves in third person — a formal telephone convention. In casual contexts, Germans simply say their last name: 'Schmidt!' or 'Hier Schmidt.' Never answer with 'Hallo' in a business call — always identify yourself! This phone etiquette is distinctly German and surprises many English speakers."
+      },
+      {
+        "id": "eg_tel2",
+        "question": "Könnte ich bitte Herrn Meyer _____?",
+        "translation": "(Could I please speak to Mr. Meyer?)",
+        "options": [
+          "sprechen",
+          "spricht",
+          "gesprochen",
+          "sprechend"
+        ],
+        "correct": "sprechen",
+        "explanation": "'Könnte ich sprechen' — after the modal 'könnte' (could), the infinitive 'sprechen' goes to the sentence end. 'Herrn' is the accusative of 'Herr' — masculine weak nouns add '-n' in all cases except nominative! So: Herr Meyer (nom.) → Herrn Meyer (acc./dat.). This is a formal, polite phone request. The word order: modal verb in position 2, everything else in the middle, infinitive at the end. 'Bitte' (please) adds politeness."
+      },
+      {
+        "id": "eg_tel3",
+        "question": "Es tut mir leid, er ist gerade nicht _____.",
+        "translation": "(I'm sorry, he is currently not available)",
+        "options": [
+          "erreichbar",
+          "erreichbare",
+          "erreichbarer",
+          "erreichbaren"
+        ],
+        "correct": "erreichbar",
+        "explanation": "'Erreichbar' (reachable/available) is a predicative adjective after 'ist' — no ending needed! The word is built from 'erreichen' (to reach) + '-bar' (suffix meaning '-able'): erreich-bar = reachable. This productive suffix works like English '-able': machbar (doable), lesbar (readable), essbar (edible). 'Gerade' means 'right now/currently' — very common in phone conversations. 'Es tut mir leid' (I'm sorry — literally 'it does me sorrow') is the standard German apology."
+      },
+      {
+        "id": "eg_tel4",
+        "question": "Kann ich eine Nachricht _____?",
+        "translation": "(Can I leave a message?)",
+        "options": [
+          "hinterlassen",
+          "lassen",
+          "verlassen",
+          "gelassen"
+        ],
+        "correct": "hinterlassen",
+        "explanation": "'Hinterlassen' (to leave behind — a message, a trace) is an inseparable verb with the prefix 'hinter-.' Unlike separable verbs, inseparable prefixes (be-, er-, ver-, zer-, ent-, emp-, miss-, hinter-) NEVER separate! So: 'Ich hinterlasse eine Nachricht' (not 'Ich lasse eine Nachricht hinter'). 'Verlassen' means to leave (a place), 'lassen' alone means to let/allow. After 'kann,' the infinitive stays whole. 'Die Nachricht' (message) is feminine."
+      },
+      {
+        "id": "eg_tel5",
+        "question": "Könnten Sie ihn bitten, mich _____?",
+        "translation": "(Could you ask him to call me back?)",
+        "options": [
+          "zurückzurufen",
+          "zurückrufen",
+          "ruft zurück",
+          "zurückgerufen"
+        ],
+        "correct": "zurückzurufen",
+        "explanation": "'Zurückzurufen' — this is the infinitive with 'zu' of the separable verb 'zurückrufen' (to call back). With separable verbs, 'zu' is inserted BETWEEN the prefix and the verb: zurück-zu-rufen. This happens after 'bitten' (to ask/request), which requires 'zu' + infinitive. Compare: 'Er ruft zurück' (He calls back — separated in main clause) vs. 'ihn bitten, zurückzurufen' (to ask him to call back — 'zu' inserted). This zu-insertion rule applies to all separable verbs!"
+      },
+      {
+        "id": "eg_tel6",
+        "question": "Ich _____ Sie leider nicht verstehen. Die Verbindung ist schlecht.",
+        "translation": "(I unfortunately cannot understand you. The connection is bad)",
+        "options": [
+          "kann",
+          "könnte",
+          "konnte",
+          "können"
+        ],
+        "correct": "kann",
+        "explanation": "'Ich kann Sie nicht verstehen' — present tense 'kann' (can) because the poor connection is happening RIGHT NOW. 'Sie' (formal you, capitalized) is the accusative object. 'Leider' (unfortunately) softens the complaint. 'Die Verbindung' (connection) is feminine. Phone-related vocabulary: 'der Empfang' (reception), 'das Signal' (signal), 'auflegen' (to hang up), 'dranbleiben' (to hold the line). In German phone calls, identifying connection problems directly is considered practical, not rude."
+      },
+      {
+        "id": "eg_tel7",
+        "question": "Ich _____ Sie gern mit der Abteilung verbinden.",
+        "translation": "(I would be happy to connect you with the department)",
+        "options": [
+          "würde",
+          "werde",
+          "will",
+          "wollte"
+        ],
+        "correct": "würde",
+        "explanation": "'Würde... verbinden' (would connect) uses Konjunktiv II for polite offers — essential in professional phone calls. 'Würde' is more polite than 'werde' (will) or 'will' (want). 'Verbinden mit' + dative (to connect with) — 'der Abteilung' is dative feminine. 'Gern' (gladly/happily) adds willingness. Professional phone language in German relies heavily on Konjunktiv II forms: würde, könnte, hätte, wäre. These signal courtesy and professionalism."
+      },
+      {
+        "id": "eg_tel8",
+        "question": "Unter welcher Nummer sind Sie _____?",
+        "translation": "(At what number can you be reached?)",
+        "options": [
+          "erreichbar",
+          "erreichen",
+          "erreicht",
+          "erreichbaren"
+        ],
+        "correct": "erreichbar",
+        "explanation": "'Unter welcher Nummer' (at which number) — 'unter' + dative describes the means of contact. 'Welcher' is dative feminine interrogative (die Nummer). 'Erreichbar' (reachable) is again predicative — no ending after 'sind.' German phone numbers are typically given in pairs: 030 / 12 34 56 is read as 'null-drei-null, eins-zwei, drei-vier, fünf-sechs.' Country code for Germany: +49, Austria: +43, Switzerland: +41. 'Können Sie mir Ihre Nummer geben?' is an alternative way to ask."
+      },
+      {
+        "id": "eg_tel9",
+        "question": "Worum _____ es sich?",
+        "translation": "(What is it about?)",
+        "options": [
+          "handelt",
+          "geht",
+          "dreht",
+          "handeln"
+        ],
+        "correct": "handelt",
+        "explanation": "'Worum handelt es sich?' (What is it about/regarding?) is a formal phone phrase used by receptionists and assistants. 'Sich handeln um' (to be about/concern) is a reflexive verb. 'Worum' = 'um was' (about what) — the 'wo-' question word replaces the preposition + question pronoun. Alternatives: 'Worum geht es?' (more casual), 'In welcher Angelegenheit rufen Sie an?' (very formal — In what matter are you calling?). This gatekeeping phrase is very common in German offices."
+      },
+      {
+        "id": "eg_tel10",
+        "question": "Bitte bleiben Sie am _____, ich verbinde Sie.",
+        "translation": "(Please stay on the line, I'll connect you)",
+        "options": [
+          "Apparat",
+          "Telefon",
+          "Leitung",
+          "Hörer"
+        ],
+        "correct": "Apparat",
+        "explanation": "'Am Apparat bleiben' (to stay on the line — literally 'at the apparatus') is the traditional German phone phrase, still widely used in formal contexts. 'Der Apparat' (apparatus) is an old-fashioned word for telephone. Alternatives: 'Bleiben Sie bitte in der Leitung' (stay on the line), 'Einen Moment bitte' (one moment please). 'Verbinden' (to connect) — 'Ich verbinde Sie' means 'I'll put you through.' Note: no modal verb needed — present tense expresses immediate future action."
+      },
+      {
+        "id": "eg_tel11",
+        "question": "Ich rufe _____ des Inserats in der Zeitung an.",
+        "translation": "(I'm calling regarding the advertisement in the newspaper)",
+        "options": [
+          "wegen",
+          "für",
+          "über",
+          "auf"
+        ],
+        "correct": "wegen",
+        "explanation": "'Wegen' (because of/regarding) + genitive is the standard preposition for stating the reason for a call. 'Des Inserats' — 'das Inserat' (advertisement) in genitive neuter: des Inserats. 'In der Zeitung' — 'der' is dative feminine (die Zeitung → in der Zeitung). 'Anrufen' (to call) is separable: 'Ich rufe an.' German formal letters and calls often begin by stating the purpose immediately: 'Ich rufe an wegen...' or 'Ich schreibe Ihnen bezüglich...' (I'm writing regarding...)."
+      },
+      {
+        "id": "eg_tel12",
+        "question": "Können Sie bitte etwas lauter _____?",
+        "translation": "(Can you please speak a little louder?)",
+        "options": [
+          "sprechen",
+          "reden",
+          "sagen",
+          "gesprochen"
+        ],
+        "correct": "sprechen",
+        "explanation": "'Lauter sprechen' (to speak louder) — 'lauter' is the comparative of 'laut' (loud). After 'können,' the infinitive goes to the end. 'Etwas' here means 'somewhat/a bit' — not 'something'! This dual meaning of 'etwas' is important: 'etwas lauter' (a bit louder), 'etwas langsamer' (a bit slower). Other useful phone requests: 'Können Sie das bitte wiederholen?' (Can you repeat that?), 'Können Sie bitte buchstabieren?' (Can you spell that please?)."
+      },
+      {
+        "id": "eg_tel13",
+        "question": "Dann _____ ich mich morgen noch einmal.",
+        "translation": "(Then I'll call again tomorrow)",
+        "options": [
+          "melde",
+          "melden",
+          "gemeldet",
+          "meldet"
+        ],
+        "correct": "melde",
+        "explanation": "'Sich melden' (to get in touch/call again) is a reflexive verb: 'Ich melde mich' = 'I'll be in touch.' It's softer than 'Ich rufe an' and implies a general intention to reconnect. 'Noch einmal' (once more/again) — 'noch' + 'einmal.' 'Dann' (then) at sentence start triggers V2 word order: 'Dann melde ich mich' — verb in second position, subject after verb. 'Sich melden' is arguably the most versatile German phone and communication verb."
+      },
+      {
+        "id": "eg_tel14",
+        "question": "Ich bin leider in einer _____ und kann gerade nicht sprechen.",
+        "translation": "(I'm unfortunately in a meeting and can't speak right now)",
+        "options": [
+          "Besprechung",
+          "Besprechungen",
+          "Besprechungs",
+          "Besprechungsraum"
+        ],
+        "correct": "Besprechung",
+        "explanation": "'In einer Besprechung' (in a meeting) — 'einer' is dative feminine indefinite article (die Besprechung). 'Besprechung' stays in base form in dative singular after the article. The word comes from 'besprechen' (to discuss): be-sprech-ung. German nominalization with '-ung' is extremely productive: Meinung (opinion), Wohnung (apartment), Erfahrung (experience) — all feminine! 'Gerade' (right now) combined with 'nicht' creates 'can't right now.' Two clauses are joined by 'und.'"
+      },
+      {
+        "id": "eg_tel15",
+        "question": "Vielen Dank _____ Ihren Anruf!",
+        "translation": "(Thank you very much for your call!)",
+        "options": [
+          "für",
+          "zu",
+          "über",
+          "auf"
+        ],
+        "correct": "für",
+        "explanation": "'Vielen Dank für' (many thanks for) + accusative is the standard formal thank-you phrase. 'Ihren Anruf' — 'Ihr' (your, formal) in accusative masculine: Ihren. 'Der Anruf' (the call) comes from 'anrufen.' Professional phone sign-offs: 'Auf Wiederhören!' (Goodbye — on the phone, literally 'until hearing again'), NOT 'Auf Wiedersehen' (that's for in-person). 'Einen schönen Tag noch!' (Have a nice day!). Ending calls politely is just as important as starting them well."
+      }
+    ]
+  },
+  {
+    "key": "formal_writing",
+    "name": "Formal Writing",
+    "description": "Formelles Schreiben",
+    "iconName": "doc.text",
+    "color": "#6366f1",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "eg_fw1",
+        "question": "Sehr _____ Damen und Herren,",
+        "translation": "(Dear Ladies and Gentlemen,)",
+        "options": [
+          "geehrte",
+          "geehrten",
+          "geehrter",
+          "geehrtes"
+        ],
+        "correct": "geehrte",
+        "explanation": "'Sehr geehrte Damen und Herren' is the standard formal German letter/email salutation when you don't know the recipient's name. 'Geehrte' takes the ending '-e' because it modifies the plural 'Damen und Herren' — plural nominative adjective after 'sehr' (treated as unpreceded). When you know the name: 'Sehr geehrter Herr Müller' (masculine -er), 'Sehr geehrte Frau Schmidt' (feminine -e). Note the comma after the greeting — German letters use a comma, NOT a colon like English!"
+      },
+      {
+        "id": "eg_fw2",
+        "question": "Ich beziehe mich _____ Ihr Schreiben vom 15. März.",
+        "translation": "(I am referring to your letter of March 15th)",
+        "options": [
+          "auf",
+          "zu",
+          "über",
+          "an"
+        ],
+        "correct": "auf",
+        "explanation": "'Sich beziehen auf' + accusative (to refer to) is a fixed reflexive verb-preposition combination essential in formal correspondence. 'Ihr Schreiben' (your letter/writing — formal) is neuter accusative. 'Vom' = 'von dem' (dative, from the). Dates in German: '15. März' — ordinal number with period, read as 'fünfzehnter März.' This opening line establishes context in formal letters. Alternative: 'Bezugnehmend auf Ihr Schreiben...' (Referring to your letter...) — very formal participial construction."
+      },
+      {
+        "id": "eg_fw3",
+        "question": "Hiermit _____ ich mich für die Stelle als Projektleiter.",
+        "translation": "(I hereby apply for the position of project manager)",
+        "options": [
+          "bewerbe",
+          "bewerben",
+          "bewirbe",
+          "bewirbt"
+        ],
+        "correct": "bewerbe",
+        "explanation": "'Sich bewerben um/für' (to apply for) is a strong reflexive verb. 'Ich bewerbe mich' — the 'ich' form keeps the 'e': bewerbe (not 'bewirbe'!). The stem change e→i only happens in du/er forms: du bewirbst, er bewirbt. 'Hiermit' (hereby) is classic formal German — it signals the letter's purpose immediately. 'Die Stelle' (position/job) is feminine. 'Als' + noun without article describes the role. German job applications ('Bewerbungen') typically include a cover letter ('Anschreiben'), CV ('Lebenslauf'), and certificates ('Zeugnisse')."
+      },
+      {
+        "id": "eg_fw4",
+        "question": "Für Rückfragen _____ ich Ihnen jederzeit zur Verfügung.",
+        "translation": "(For any questions, I am available to you at any time)",
+        "options": [
+          "stehe",
+          "stehen",
+          "stünde",
+          "gestanden"
+        ],
+        "correct": "stehe",
+        "explanation": "'Jemandem zur Verfügung stehen' (to be available to someone) is a fixed formal expression — literally 'to stand at someone's disposal.' 'Ihnen' is dative formal 'you.' 'Jederzeit' (at any time) is an adverb formed from 'jeder' + 'Zeit.' 'Rückfragen' (follow-up questions) is a compound: 'rück' (back) + 'Fragen.' This sentence is a standard closing formula in German business letters and applications. It signals willingness and professionalism."
+      },
+      {
+        "id": "eg_fw5",
+        "question": "Mit freundlichen _____ verbleibe ich",
+        "translation": "(With kind regards, I remain)",
+        "options": [
+          "Grüßen",
+          "Grüße",
+          "Gruß",
+          "Grüßend"
+        ],
+        "correct": "Grüßen",
+        "explanation": "'Mit freundlichen Grüßen' (with kind regards) is THE standard formal closing in German letters and emails — abbreviated 'MfG.' 'Grüßen' is dative plural of 'der Gruß' (greeting): mit + dative = freundlichen Grüßen. The adjective 'freundlichen' takes the '-en' ending: dative plural after 'mit.' Less formal alternatives: 'Beste Grüße' (best regards), 'Viele Grüße' (many greetings), 'Liebe Grüße' (warm regards — for people you know). Never use 'Liebe Grüße' in a formal business letter!"
+      },
+      {
+        "id": "eg_fw6",
+        "question": "Ich _____ Sie höflichst, den Termin zu bestätigen.",
+        "translation": "(I most politely request you to confirm the appointment)",
+        "options": [
+          "bitte",
+          "bitten",
+          "bat",
+          "gebeten"
+        ],
+        "correct": "bitte",
+        "explanation": "'Ich bitte Sie' (I ask you) — present tense, first person. 'Bitten' is a strong verb: bat (past), gebeten (participle). 'Höflichst' (most politely) uses the superlative form of 'höflich' + adverbial '-st' — extremely formal! 'Zu bestätigen' is an infinitive clause with 'zu' — required after 'bitten.' The comma before 'den Termin zu bestätigen' is mandatory in German (infinitive clauses with 'zu' get commas when they have objects). 'Der Termin' (appointment) is masculine."
+      },
+      {
+        "id": "eg_fw7",
+        "question": "_____ meines Urlaubs bin ich vom 1. bis 15. August nicht erreichbar.",
+        "translation": "(Due to my vacation, I am not reachable from August 1st to 15th)",
+        "options": [
+          "Aufgrund",
+          "Weil",
+          "Wegen",
+          "Denn"
+        ],
+        "correct": "Aufgrund",
+        "explanation": "'Aufgrund' (due to/on account of) + genitive is the most formal alternative to 'wegen.' 'Meines Urlaubs' is genitive masculine (der Urlaub → meines Urlaubs). 'Aufgrund' is preferred in formal writing over 'wegen' which is acceptable but less elevated. 'Vom...bis' (from...to) for date ranges. 'Nicht erreichbar' — the negation 'nicht' comes before the predicative adjective. Out-of-office messages (Abwesenheitsnotiz) in German use this formal structure. 'Weil' and 'Denn' are wrong because they require full clauses, not noun phrases."
+      },
+      {
+        "id": "eg_fw8",
+        "question": "Beiliegend _____ Sie die angeforderten Unterlagen.",
+        "translation": "(Enclosed you will find the requested documents)",
+        "options": [
+          "finden",
+          "findet",
+          "fand",
+          "gefunden"
+        ],
+        "correct": "finden",
+        "explanation": "'Beiliegend finden Sie...' (Enclosed you will find...) is a standard formal letter phrase. 'Sie finden' — formal 'you' with matching verb form. 'Beiliegend' (enclosed) is a present participle used as adverb: bei-lieg-end (lying with). 'Die angeforderten Unterlagen' — 'angefordert' (requested) is a past participle used as adjective with '-en' ending (accusative plural after 'die'). 'Die Unterlagen' (documents, always plural) is essential business vocabulary. Alternative: 'Anbei finden Sie...' (Attached you'll find...)."
+      },
+      {
+        "id": "eg_fw9",
+        "question": "Ich würde es begrüßen, wenn wir _____ zeitnah treffen könnten.",
+        "translation": "(I would welcome it if we could meet soon)",
+        "options": [
+          "uns",
+          "wir",
+          "sich",
+          "euch"
+        ],
+        "correct": "uns",
+        "explanation": "'Sich treffen' (to meet) is reflexive — 'wir' needs the reflexive pronoun 'uns.' In the 'wenn' subordinate clause, 'könnten' (could — Konjunktiv II) goes to the very end. 'Zeitnah' (soon/promptly — literally 'time-near') is formal German for 'bald' (soon). 'Begrüßen' (to welcome) is used formally to express positive reception of an idea. This entire sentence demonstrates triple politeness: 'würde' (would) + 'wenn...könnten' (if we could) + 'begrüßen' (welcome) — peak German formality!"
+      },
+      {
+        "id": "eg_fw10",
+        "question": "Unter _____ der oben genannten Bedingungen stimmen wir dem Vertrag zu.",
+        "translation": "(Subject to the above-mentioned conditions, we agree to the contract)",
+        "options": [
+          "Vorbehalt",
+          "Vorbehalten",
+          "Vorbehalts",
+          "Vorbehalte"
+        ],
+        "correct": "Vorbehalt",
+        "explanation": "'Unter Vorbehalt' (subject to/with reservation) is a fixed formal phrase. 'Der Vorbehalt' (reservation/caveat) stays in base form in this prepositional phrase — dative masculine without article change. 'Der oben genannten Bedingungen' — genitive plural: 'oben genannt' (above-mentioned) is a participial adjective typical of legal/business German. 'Zustimmen' + dative (to agree to): 'dem Vertrag' (dative masculine). This is legal/contractual language — very formal and precise."
+      },
+      {
+        "id": "eg_fw11",
+        "question": "Bezüglich Ihrer Anfrage _____ ich Ihnen Folgendes mitteilen.",
+        "translation": "(Regarding your inquiry, I would like to inform you of the following)",
+        "options": [
+          "möchte",
+          "möchten",
+          "will",
+          "wollte"
+        ],
+        "correct": "möchte",
+        "explanation": "'Bezüglich' (regarding) + genitive is the formal equivalent of 'wegen.' 'Ihrer Anfrage' is genitive feminine (die Anfrage → Ihrer Anfrage). 'Möchte... mitteilen' — 'mitteilen' (to inform/communicate) is separable, but after 'möchte' the infinitive stays together at the end. 'Folgendes' (the following) is a nominalized adjective — neuter because it refers to abstract content. 'Ihnen' is dative (to inform YOU). This opening is standard in formal business responses to inquiries."
+      },
+      {
+        "id": "eg_fw12",
+        "question": "Wir _____ uns, von Ihnen zu hören.",
+        "translation": "(We look forward to hearing from you)",
+        "options": [
+          "freuen",
+          "freut",
+          "gefreut",
+          "freuend"
+        ],
+        "correct": "freuen",
+        "explanation": "'Sich freuen' (to be pleased/look forward to) is reflexive — 'wir freuen uns.' This closing formula expresses anticipation of a response. 'Von Ihnen zu hören' is an infinitive clause: 'zu hören' (to hear) + 'von Ihnen' (from you). The comma before 'von Ihnen' is required (infinitive clause with 'zu' that has dependent elements). Alternatives: 'Wir freuen uns auf Ihre Antwort' (We look forward to your response) — 'auf' + accusative for future-directed anticipation."
+      },
+      {
+        "id": "eg_fw13",
+        "question": "Ich _____ Ihnen für Ihre schnelle Antwort.",
+        "translation": "(I thank you for your quick response)",
+        "options": [
+          "danke",
+          "danken",
+          "bedanke",
+          "gedankt"
+        ],
+        "correct": "danke",
+        "explanation": "'Danken' + dative (to thank someone): 'Ich danke Ihnen.' The person thanked is in DATIVE — this differs from English where 'thank' takes a direct object. 'Für' + accusative gives the reason. 'Schnelle' gets the weak '-e' ending after possessive 'Ihre' in accusative feminine. More formal alternative: 'Ich möchte Ihnen herzlich danken' (I would like to thank you warmly). 'Bedanken' is reflexive and more formal: 'Ich bedanke mich bei Ihnen.' German has many ways to express gratitude at different formality levels."
+      },
+      {
+        "id": "eg_fw14",
+        "question": "Die Frist _____ am 30. Juni ab.",
+        "translation": "(The deadline expires on June 30th)",
+        "options": [
+          "läuft",
+          "lauft",
+          "lauf",
+          "laufend"
+        ],
+        "correct": "läuft",
+        "explanation": "'Ablaufen' (to expire/run out) is a separable verb with the stem change au→äu in the third person: 'läuft ab.' 'Die Frist' (deadline/time limit) is feminine. 'Am 30. Juni' — 'am' = 'an dem' (dative) for specific dates. In formal German, deadlines are strictly observed! 'Fristgerecht' (within the deadline) is an important business concept. Related vocabulary: 'die Verlängerung' (extension), 'fristlos' (without notice — as in termination), 'rechtzeitig' (in time/punctually)."
+      },
+      {
+        "id": "eg_fw15",
+        "question": "Sollten Sie weitere Fragen _____, zögern Sie bitte nicht, mich zu kontaktieren.",
+        "translation": "(Should you have further questions, please do not hesitate to contact me)",
+        "options": [
+          "haben",
+          "habt",
+          "hätten",
+          "gehabt"
+        ],
+        "correct": "haben",
+        "explanation": "'Sollten Sie haben' — this 'Sollten' at clause start replaces 'Wenn/Falls' (if) in formal style. It's Konjunktiv II used as a conditional: 'Should you have...' The verb-first word order creates a conditional clause WITHOUT 'wenn' — a hallmark of elevated formal German. 'Zögern Sie nicht' (don't hesitate) uses the imperative of 'zögern.' 'Weitere' (further/additional) declines as adjective: plural accusative '-e.' This closing formula is found in nearly every formal German business letter and email."
+      }
+    ]
   }
 ]
