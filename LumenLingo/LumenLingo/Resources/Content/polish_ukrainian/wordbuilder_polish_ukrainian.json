@@ -1,0 +1,2102 @@
+[
+  {
+    "key": "fruits_wb",
+    "name": "Owoce",
+    "description": "Popularne owoce po ukraińsku",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "яблуко",
+        "hint": "Jabłko"
+      },
+      {
+        "word": "апельсин",
+        "hint": "Pomarańcza"
+      },
+      {
+        "word": "банан",
+        "hint": "Banan"
+      },
+      {
+        "word": "полуниця",
+        "hint": "Truskawka"
+      },
+      {
+        "word": "виноград",
+        "hint": "Winogrono"
+      },
+      {
+        "word": "лимон",
+        "hint": "Cytryna"
+      },
+      {
+        "word": "кавун",
+        "hint": "Arbuz"
+      },
+      {
+        "word": "персик",
+        "hint": "Brzoskwinia"
+      },
+      {
+        "word": "вишня",
+        "hint": "Wiśnia"
+      },
+      {
+        "word": "ананас",
+        "hint": "Ananas"
+      },
+      {
+        "word": "груша",
+        "hint": "Gruszka"
+      },
+      {
+        "word": "манго",
+        "hint": "Mango"
+      },
+      {
+        "word": "малина",
+        "hint": "Malina"
+      },
+      {
+        "word": "слива",
+        "hint": "Śliwka"
+      },
+      {
+        "word": "чорниця",
+        "hint": "Borówka"
+      }
+    ]
+  },
+  {
+    "key": "vegetables_wb",
+    "name": "Warzywa",
+    "description": "Popularne warzywa po ukraińsku",
+    "iconName": "carrot",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "помідор",
+        "hint": "Pomidor"
+      },
+      {
+        "word": "цибуля",
+        "hint": "Cebula"
+      },
+      {
+        "word": "салат",
+        "hint": "Sałata"
+      },
+      {
+        "word": "морква",
+        "hint": "Marchewka"
+      },
+      {
+        "word": "картопля",
+        "hint": "Ziemniak"
+      },
+      {
+        "word": "часник",
+        "hint": "Czosnek"
+      },
+      {
+        "word": "огірок",
+        "hint": "Ogórek"
+      },
+      {
+        "word": "перець",
+        "hint": "Papryka"
+      },
+      {
+        "word": "шпинат",
+        "hint": "Szpinak"
+      },
+      {
+        "word": "броколі",
+        "hint": "Brokuł"
+      },
+      {
+        "word": "кукурудза",
+        "hint": "Kukurydza"
+      },
+      {
+        "word": "горох",
+        "hint": "Groszek"
+      },
+      {
+        "word": "гриби",
+        "hint": "Grzyby"
+      },
+      {
+        "word": "баклажан",
+        "hint": "Bakłażan"
+      },
+      {
+        "word": "гарбуз",
+        "hint": "Dynia"
+      }
+    ]
+  },
+  {
+    "key": "colors_wb",
+    "name": "Kolory",
+    "description": "Podstawowe kolory po ukraińsku",
+    "iconName": "paintpalette",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "червоний",
+        "hint": "Czerwony"
+      },
+      {
+        "word": "синій",
+        "hint": "Niebieski"
+      },
+      {
+        "word": "зелений",
+        "hint": "Zielony"
+      },
+      {
+        "word": "жовтий",
+        "hint": "Żółty"
+      },
+      {
+        "word": "чорний",
+        "hint": "Czarny"
+      },
+      {
+        "word": "білий",
+        "hint": "Biały"
+      },
+      {
+        "word": "помаранчевий",
+        "hint": "Pomarańczowy"
+      },
+      {
+        "word": "фіолетовий",
+        "hint": "Fioletowy"
+      },
+      {
+        "word": "рожевий",
+        "hint": "Różowy"
+      },
+      {
+        "word": "коричневий",
+        "hint": "Brązowy"
+      },
+      {
+        "word": "сірий",
+        "hint": "Szary"
+      },
+      {
+        "word": "золотий",
+        "hint": "Złoty"
+      },
+      {
+        "word": "срібний",
+        "hint": "Srebrny"
+      },
+      {
+        "word": "блакитний",
+        "hint": "Błękitny"
+      },
+      {
+        "word": "темний",
+        "hint": "Ciemny"
+      }
+    ]
+  },
+  {
+    "key": "family_wb",
+    "name": "Rodzina",
+    "description": "Członkowie rodziny po ukraińsku",
+    "iconName": "person.3",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "мати",
+        "hint": "Matka"
+      },
+      {
+        "word": "батько",
+        "hint": "Ojciec"
+      },
+      {
+        "word": "сестра",
+        "hint": "Siostra"
+      },
+      {
+        "word": "брат",
+        "hint": "Brat"
+      },
+      {
+        "word": "бабуся",
+        "hint": "Babcia"
+      },
+      {
+        "word": "дідусь",
+        "hint": "Dziadek"
+      },
+      {
+        "word": "донька",
+        "hint": "Córka"
+      },
+      {
+        "word": "онук",
+        "hint": "Wnuk"
+      },
+      {
+        "word": "дядько",
+        "hint": "Wujek"
+      },
+      {
+        "word": "тітка",
+        "hint": "Ciotka"
+      },
+      {
+        "word": "чоловік",
+        "hint": "Mąż"
+      },
+      {
+        "word": "дружина",
+        "hint": "Żona"
+      },
+      {
+        "word": "племінник",
+        "hint": "Bratanek"
+      },
+      {
+        "word": "племінниця",
+        "hint": "Bratanica"
+      },
+      {
+        "word": "родина",
+        "hint": "Rodzina"
+      }
+    ]
+  },
+  {
+    "key": "animals_wb",
+    "name": "Zwierzęta",
+    "description": "Popularne zwierzęta po ukraińsku",
+    "iconName": "pawprint",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "собака",
+        "hint": "Pies"
+      },
+      {
+        "word": "кішка",
+        "hint": "Kot"
+      },
+      {
+        "word": "кінь",
+        "hint": "Koń"
+      },
+      {
+        "word": "птах",
+        "hint": "Ptak"
+      },
+      {
+        "word": "риба",
+        "hint": "Ryba"
+      },
+      {
+        "word": "корова",
+        "hint": "Krowa"
+      },
+      {
+        "word": "свиня",
+        "hint": "Świnia"
+      },
+      {
+        "word": "кролик",
+        "hint": "Królik"
+      },
+      {
+        "word": "черепаха",
+        "hint": "Żółw"
+      },
+      {
+        "word": "метелик",
+        "hint": "Motyl"
+      },
+      {
+        "word": "ведмідь",
+        "hint": "Niedźwiedź"
+      },
+      {
+        "word": "слон",
+        "hint": "Słoń"
+      },
+      {
+        "word": "вовк",
+        "hint": "Wilk"
+      },
+      {
+        "word": "лисиця",
+        "hint": "Lis"
+      },
+      {
+        "word": "олень",
+        "hint": "Jeleń"
+      }
+    ]
+  },
+  {
+    "key": "body_parts_wb",
+    "name": "Części ciała",
+    "description": "Części ciała po ukraińsku",
+    "iconName": "figure.stand",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "голова",
+        "hint": "Głowa"
+      },
+      {
+        "word": "рука",
+        "hint": "Ręka"
+      },
+      {
+        "word": "нога",
+        "hint": "Noga"
+      },
+      {
+        "word": "долоня",
+        "hint": "Dłoń"
+      },
+      {
+        "word": "стопа",
+        "hint": "Stopa"
+      },
+      {
+        "word": "серце",
+        "hint": "Serce"
+      },
+      {
+        "word": "спина",
+        "hint": "Plecy"
+      },
+      {
+        "word": "коліно",
+        "hint": "Kolano"
+      },
+      {
+        "word": "плече",
+        "hint": "Ramię"
+      },
+      {
+        "word": "шия",
+        "hint": "Szyja"
+      },
+      {
+        "word": "палець",
+        "hint": "Palec"
+      },
+      {
+        "word": "живіт",
+        "hint": "Brzuch"
+      },
+      {
+        "word": "груди",
+        "hint": "Klatka piersiowa"
+      },
+      {
+        "word": "лікоть",
+        "hint": "Łokieć"
+      },
+      {
+        "word": "щока",
+        "hint": "Policzek"
+      }
+    ]
+  },
+  {
+    "key": "numbers_wb",
+    "name": "Liczby",
+    "description": "Liczby i liczebniki po ukraińsku",
+    "iconName": "number",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "один",
+        "hint": "Jeden"
+      },
+      {
+        "word": "три",
+        "hint": "Trzy"
+      },
+      {
+        "word": "чотири",
+        "hint": "Cztery"
+      },
+      {
+        "word": "шість",
+        "hint": "Sześć"
+      },
+      {
+        "word": "сімка",
+        "hint": "Siódemka"
+      },
+      {
+        "word": "вісім",
+        "hint": "Osiem"
+      },
+      {
+        "word": "десять",
+        "hint": "Dziesięć"
+      },
+      {
+        "word": "двадцять",
+        "hint": "Dwadzieścia"
+      },
+      {
+        "word": "тридцять",
+        "hint": "Trzydzieści"
+      },
+      {
+        "word": "сорок",
+        "hint": "Czterdzieści"
+      },
+      {
+        "word": "сотня",
+        "hint": "Setka"
+      },
+      {
+        "word": "тисяча",
+        "hint": "Tysiąc"
+      },
+      {
+        "word": "мільйон",
+        "hint": "Milion"
+      },
+      {
+        "word": "перший",
+        "hint": "Pierwszy"
+      },
+      {
+        "word": "другий",
+        "hint": "Drugi"
+      }
+    ]
+  },
+  {
+    "key": "greetings_wb",
+    "name": "Pozdrowienia",
+    "description": "Typowe pozdrowienia po ukraińsku",
+    "iconName": "hand.wave",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "привіт",
+        "hint": "Cześć"
+      },
+      {
+        "word": "доброго",
+        "hint": "Dobrego (życzenie)"
+      },
+      {
+        "word": "ранок",
+        "hint": "Poranek"
+      },
+      {
+        "word": "вечір",
+        "hint": "Wieczór"
+      },
+      {
+        "word": "дякую",
+        "hint": "Dziękuję"
+      },
+      {
+        "word": "будь ласка",
+        "hint": "Proszę"
+      },
+      {
+        "word": "вибачте",
+        "hint": "Przepraszam"
+      },
+      {
+        "word": "допобачення",
+        "hint": "Do widzenia"
+      },
+      {
+        "word": "ласкаво",
+        "hint": "Serdecznie"
+      },
+      {
+        "word": "радий",
+        "hint": "Miło (poznać)"
+      },
+      {
+        "word": "вітаю",
+        "hint": "Witam"
+      },
+      {
+        "word": "здоров",
+        "hint": "Siema (nieformalnie)"
+      },
+      {
+        "word": "добраніч",
+        "hint": "Dobranoc"
+      },
+      {
+        "word": "бувай",
+        "hint": "Na razie"
+      },
+      {
+        "word": "щасливо",
+        "hint": "Szczęśliwej (drogi)"
+      }
+    ]
+  },
+  {
+    "key": "food_wb",
+    "name": "Jedzenie",
+    "description": "Popularne jedzenie po ukraińsku",
+    "iconName": "fork.knife",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "хліб",
+        "hint": "Chleb"
+      },
+      {
+        "word": "молоко",
+        "hint": "Mleko"
+      },
+      {
+        "word": "масло",
+        "hint": "Masło"
+      },
+      {
+        "word": "яйце",
+        "hint": "Jajko"
+      },
+      {
+        "word": "каша",
+        "hint": "Kasza"
+      },
+      {
+        "word": "борщ",
+        "hint": "Barszcz"
+      },
+      {
+        "word": "вареники",
+        "hint": "Pierogi"
+      },
+      {
+        "word": "ковбаса",
+        "hint": "Kiełbasa"
+      },
+      {
+        "word": "сметана",
+        "hint": "Śmietana"
+      },
+      {
+        "word": "печиво",
+        "hint": "Ciastko"
+      },
+      {
+        "word": "рис",
+        "hint": "Ryż"
+      },
+      {
+        "word": "макарони",
+        "hint": "Makaron"
+      },
+      {
+        "word": "суп",
+        "hint": "Zupa"
+      },
+      {
+        "word": "сир",
+        "hint": "Ser"
+      },
+      {
+        "word": "мед",
+        "hint": "Miód"
+      }
+    ]
+  },
+  {
+    "key": "clothing_wb",
+    "name": "Ubrania",
+    "description": "Podstawowe ubrania po ukraińsku",
+    "iconName": "tshirt",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "сорочка",
+        "hint": "Koszula"
+      },
+      {
+        "word": "штани",
+        "hint": "Spodnie"
+      },
+      {
+        "word": "сукня",
+        "hint": "Sukienka"
+      },
+      {
+        "word": "куртка",
+        "hint": "Kurtka"
+      },
+      {
+        "word": "взуття",
+        "hint": "Obuwie"
+      },
+      {
+        "word": "шапка",
+        "hint": "Czapka"
+      },
+      {
+        "word": "шкарпетки",
+        "hint": "Skarpetki"
+      },
+      {
+        "word": "рукавиці",
+        "hint": "Rękawiczki"
+      },
+      {
+        "word": "спідниця",
+        "hint": "Spódnica"
+      },
+      {
+        "word": "светр",
+        "hint": "Sweter"
+      },
+      {
+        "word": "краватка",
+        "hint": "Krawat"
+      },
+      {
+        "word": "пальто",
+        "hint": "Płaszcz"
+      },
+      {
+        "word": "черевики",
+        "hint": "Buty"
+      },
+      {
+        "word": "футболка",
+        "hint": "T-shirt"
+      },
+      {
+        "word": "шарф",
+        "hint": "Szalik"
+      }
+    ]
+  },
+  {
+    "key": "house_rooms_wb",
+    "name": "Dom i pokoje",
+    "description": "Pomieszczenia i elementy domu po ukraińsku",
+    "iconName": "house",
+    "color": "#78716c",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "кухня",
+        "hint": "Kuchnia"
+      },
+      {
+        "word": "спальня",
+        "hint": "Sypialnia"
+      },
+      {
+        "word": "вітальня",
+        "hint": "Salon"
+      },
+      {
+        "word": "ванна",
+        "hint": "Łazienka"
+      },
+      {
+        "word": "коридор",
+        "hint": "Korytarz"
+      },
+      {
+        "word": "балкон",
+        "hint": "Balkon"
+      },
+      {
+        "word": "підвал",
+        "hint": "Piwnica"
+      },
+      {
+        "word": "горище",
+        "hint": "Strych"
+      },
+      {
+        "word": "гараж",
+        "hint": "Garaż"
+      },
+      {
+        "word": "сходи",
+        "hint": "Schody"
+      },
+      {
+        "word": "підлога",
+        "hint": "Podłoga"
+      },
+      {
+        "word": "стеля",
+        "hint": "Sufit"
+      },
+      {
+        "word": "вікно",
+        "hint": "Okno"
+      },
+      {
+        "word": "двері",
+        "hint": "Drzwi"
+      },
+      {
+        "word": "дах",
+        "hint": "Dach"
+      }
+    ]
+  },
+  {
+    "key": "weather_wb",
+    "name": "Pogoda",
+    "description": "Zjawiska pogodowe po ukraińsku",
+    "iconName": "cloud.sun",
+    "color": "#0ea5e9",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "сонце",
+        "hint": "Słońce"
+      },
+      {
+        "word": "дощ",
+        "hint": "Deszcz"
+      },
+      {
+        "word": "сніг",
+        "hint": "Śnieg"
+      },
+      {
+        "word": "вітер",
+        "hint": "Wiatr"
+      },
+      {
+        "word": "хмара",
+        "hint": "Chmura"
+      },
+      {
+        "word": "грім",
+        "hint": "Grzmot"
+      },
+      {
+        "word": "блискавка",
+        "hint": "Błyskawica"
+      },
+      {
+        "word": "туман",
+        "hint": "Mgła"
+      },
+      {
+        "word": "мороз",
+        "hint": "Mróz"
+      },
+      {
+        "word": "спека",
+        "hint": "Upał"
+      },
+      {
+        "word": "веселка",
+        "hint": "Tęcza"
+      },
+      {
+        "word": "буря",
+        "hint": "Burza"
+      },
+      {
+        "word": "роса",
+        "hint": "Rosa"
+      },
+      {
+        "word": "іній",
+        "hint": "Szron"
+      },
+      {
+        "word": "злива",
+        "hint": "Ulewa"
+      }
+    ]
+  },
+  {
+    "key": "professions_wb",
+    "name": "Zawody",
+    "description": "Popularne zawody po ukraińsku",
+    "iconName": "briefcase",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "лікар",
+        "hint": "Lekarz"
+      },
+      {
+        "word": "вчитель",
+        "hint": "Nauczyciel"
+      },
+      {
+        "word": "інженер",
+        "hint": "Inżynier"
+      },
+      {
+        "word": "архітектор",
+        "hint": "Architekt"
+      },
+      {
+        "word": "кухар",
+        "hint": "Kucharz"
+      },
+      {
+        "word": "водій",
+        "hint": "Kierowca"
+      },
+      {
+        "word": "пілот",
+        "hint": "Pilot"
+      },
+      {
+        "word": "юрист",
+        "hint": "Prawnik"
+      },
+      {
+        "word": "фермер",
+        "hint": "Rolnik"
+      },
+      {
+        "word": "художник",
+        "hint": "Artysta"
+      },
+      {
+        "word": "журналіст",
+        "hint": "Dziennikarz"
+      },
+      {
+        "word": "програміст",
+        "hint": "Programista"
+      },
+      {
+        "word": "продавець",
+        "hint": "Sprzedawca"
+      },
+      {
+        "word": "пожежник",
+        "hint": "Strażak"
+      },
+      {
+        "word": "перекладач",
+        "hint": "Tłumacz"
+      }
+    ]
+  },
+  {
+    "key": "transport_wb",
+    "name": "Transport",
+    "description": "Środki transportu po ukraińsku",
+    "iconName": "car",
+    "color": "#14b8a6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "автобус",
+        "hint": "Autobus"
+      },
+      {
+        "word": "потяг",
+        "hint": "Pociąg"
+      },
+      {
+        "word": "літак",
+        "hint": "Samolot"
+      },
+      {
+        "word": "велосипед",
+        "hint": "Rower"
+      },
+      {
+        "word": "корабель",
+        "hint": "Statek"
+      },
+      {
+        "word": "метро",
+        "hint": "Metro"
+      },
+      {
+        "word": "трамвай",
+        "hint": "Tramwaj"
+      },
+      {
+        "word": "таксі",
+        "hint": "Taksówka"
+      },
+      {
+        "word": "мотоцикл",
+        "hint": "Motocykl"
+      },
+      {
+        "word": "вантажівка",
+        "hint": "Ciężarówka"
+      },
+      {
+        "word": "гелікоптер",
+        "hint": "Helikopter"
+      },
+      {
+        "word": "яхта",
+        "hint": "Jacht"
+      },
+      {
+        "word": "фургон",
+        "hint": "Furgonetka"
+      },
+      {
+        "word": "скутер",
+        "hint": "Skuter"
+      },
+      {
+        "word": "поромний",
+        "hint": "Prom"
+      }
+    ]
+  },
+  {
+    "key": "school_wb",
+    "name": "Szkoła",
+    "description": "Przedmioty i życie szkolne po ukraińsku",
+    "iconName": "book",
+    "color": "#eab308",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "підручник",
+        "hint": "Podręcznik"
+      },
+      {
+        "word": "зошит",
+        "hint": "Zeszyt"
+      },
+      {
+        "word": "олівець",
+        "hint": "Ołówek"
+      },
+      {
+        "word": "ручка",
+        "hint": "Długopis"
+      },
+      {
+        "word": "дошка",
+        "hint": "Tablica"
+      },
+      {
+        "word": "парта",
+        "hint": "Ławka szkolna"
+      },
+      {
+        "word": "урок",
+        "hint": "Lekcja"
+      },
+      {
+        "word": "перерва",
+        "hint": "Przerwa"
+      },
+      {
+        "word": "клас",
+        "hint": "Klasa"
+      },
+      {
+        "word": "оцінка",
+        "hint": "Ocena"
+      },
+      {
+        "word": "іспит",
+        "hint": "Egzamin"
+      },
+      {
+        "word": "домашнє",
+        "hint": "Praca domowa"
+      },
+      {
+        "word": "бібліотека",
+        "hint": "Biblioteka"
+      },
+      {
+        "word": "розклад",
+        "hint": "Rozkład lekcji"
+      },
+      {
+        "word": "директор",
+        "hint": "Dyrektor"
+      }
+    ]
+  },
+  {
+    "key": "kitchen_utensils_wb",
+    "name": "Przybory kuchenne",
+    "description": "Przybory i naczynia kuchenne po ukraińsku",
+    "iconName": "cup.and.saucer",
+    "color": "#d97706",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "тарілка",
+        "hint": "Talerz"
+      },
+      {
+        "word": "виделка",
+        "hint": "Widelec"
+      },
+      {
+        "word": "ложка",
+        "hint": "Łyżka"
+      },
+      {
+        "word": "чашка",
+        "hint": "Filiżanka"
+      },
+      {
+        "word": "каструля",
+        "hint": "Garnek"
+      },
+      {
+        "word": "сковорода",
+        "hint": "Patelnia"
+      },
+      {
+        "word": "чайник",
+        "hint": "Czajnik"
+      },
+      {
+        "word": "склянка",
+        "hint": "Szklanka"
+      },
+      {
+        "word": "миска",
+        "hint": "Miska"
+      },
+      {
+        "word": "терка",
+        "hint": "Tarka"
+      },
+      {
+        "word": "друшляк",
+        "hint": "Durszlak"
+      },
+      {
+        "word": "ніж",
+        "hint": "Nóż"
+      },
+      {
+        "word": "блюдце",
+        "hint": "Spodek"
+      },
+      {
+        "word": "відкривачка",
+        "hint": "Otwieracz"
+      },
+      {
+        "word": "глечик",
+        "hint": "Dzbanek"
+      }
+    ]
+  },
+  {
+    "key": "sports_wb",
+    "name": "Sport",
+    "description": "Dyscypliny i pojęcia sportowe po ukraińsku",
+    "iconName": "sportscourt",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "футбол",
+        "hint": "Piłka nożna"
+      },
+      {
+        "word": "баскетбол",
+        "hint": "Koszykówka"
+      },
+      {
+        "word": "теніс",
+        "hint": "Tenis"
+      },
+      {
+        "word": "плавання",
+        "hint": "Pływanie"
+      },
+      {
+        "word": "біг",
+        "hint": "Bieganie"
+      },
+      {
+        "word": "волейбол",
+        "hint": "Siatkówka"
+      },
+      {
+        "word": "хокей",
+        "hint": "Hokej"
+      },
+      {
+        "word": "бокс",
+        "hint": "Boks"
+      },
+      {
+        "word": "гімнастика",
+        "hint": "Gimnastyka"
+      },
+      {
+        "word": "лижі",
+        "hint": "Narty"
+      },
+      {
+        "word": "ковзани",
+        "hint": "Łyżwy"
+      },
+      {
+        "word": "шахи",
+        "hint": "Szachy"
+      },
+      {
+        "word": "стрільба",
+        "hint": "Strzelectwo"
+      },
+      {
+        "word": "веслування",
+        "hint": "Wioślarstwo"
+      },
+      {
+        "word": "фехтування",
+        "hint": "Szermierka"
+      }
+    ]
+  },
+  {
+    "key": "music_instruments_wb",
+    "name": "Instrumenty muzyczne",
+    "description": "Instrumenty muzyczne po ukraińsku",
+    "iconName": "music.note",
+    "color": "#a855f7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "гітара",
+        "hint": "Gitara"
+      },
+      {
+        "word": "піаніно",
+        "hint": "Pianino"
+      },
+      {
+        "word": "скрипка",
+        "hint": "Skrzypce"
+      },
+      {
+        "word": "барабан",
+        "hint": "Bęben"
+      },
+      {
+        "word": "флейта",
+        "hint": "Flet"
+      },
+      {
+        "word": "труба",
+        "hint": "Trąbka"
+      },
+      {
+        "word": "саксофон",
+        "hint": "Saksofon"
+      },
+      {
+        "word": "віолончель",
+        "hint": "Wiolonczela"
+      },
+      {
+        "word": "банджо",
+        "hint": "Banjo"
+      },
+      {
+        "word": "арфа",
+        "hint": "Harfa"
+      },
+      {
+        "word": "кларнет",
+        "hint": "Klarnet"
+      },
+      {
+        "word": "акордеон",
+        "hint": "Akordeon"
+      },
+      {
+        "word": "бубон",
+        "hint": "Tamburyn"
+      },
+      {
+        "word": "контрабас",
+        "hint": "Kontrabas"
+      },
+      {
+        "word": "орган",
+        "hint": "Organy"
+      }
+    ]
+  },
+  {
+    "key": "nature_wb",
+    "name": "Przyroda",
+    "description": "Elementy przyrody po ukraińsku",
+    "iconName": "leaf",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ліс",
+        "hint": "Las"
+      },
+      {
+        "word": "річка",
+        "hint": "Rzeka"
+      },
+      {
+        "word": "гора",
+        "hint": "Góra"
+      },
+      {
+        "word": "озеро",
+        "hint": "Jezioro"
+      },
+      {
+        "word": "море",
+        "hint": "Morze"
+      },
+      {
+        "word": "дерево",
+        "hint": "Drzewo"
+      },
+      {
+        "word": "квітка",
+        "hint": "Kwiat"
+      },
+      {
+        "word": "трава",
+        "hint": "Trawa"
+      },
+      {
+        "word": "камінь",
+        "hint": "Kamień"
+      },
+      {
+        "word": "пісок",
+        "hint": "Piasek"
+      },
+      {
+        "word": "водоспад",
+        "hint": "Wodospad"
+      },
+      {
+        "word": "пустеля",
+        "hint": "Pustynia"
+      },
+      {
+        "word": "острів",
+        "hint": "Wyspa"
+      },
+      {
+        "word": "долина",
+        "hint": "Dolina"
+      },
+      {
+        "word": "печера",
+        "hint": "Jaskinia"
+      }
+    ]
+  },
+  {
+    "key": "emotions_wb",
+    "name": "Emocje",
+    "description": "Uczucia i emocje po ukraińsku",
+    "iconName": "heart",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "радість",
+        "hint": "Radość"
+      },
+      {
+        "word": "сум",
+        "hint": "Smutek"
+      },
+      {
+        "word": "страх",
+        "hint": "Strach"
+      },
+      {
+        "word": "гнів",
+        "hint": "Gniew"
+      },
+      {
+        "word": "любов",
+        "hint": "Miłość"
+      },
+      {
+        "word": "надія",
+        "hint": "Nadzieja"
+      },
+      {
+        "word": "здивування",
+        "hint": "Zdziwienie"
+      },
+      {
+        "word": "заздрість",
+        "hint": "Zazdrość"
+      },
+      {
+        "word": "гордість",
+        "hint": "Duma"
+      },
+      {
+        "word": "сором",
+        "hint": "Wstyd"
+      },
+      {
+        "word": "тривога",
+        "hint": "Niepokój"
+      },
+      {
+        "word": "відчай",
+        "hint": "Rozpacz"
+      },
+      {
+        "word": "захоплення",
+        "hint": "Zachwyt"
+      },
+      {
+        "word": "ніжність",
+        "hint": "Czułość"
+      },
+      {
+        "word": "полегшення",
+        "hint": "Ulga"
+      }
+    ]
+  },
+  {
+    "key": "technology_wb",
+    "name": "Technologia",
+    "description": "Słownictwo technologiczne po ukraińsku",
+    "iconName": "desktopcomputer",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "комп'ютер",
+        "hint": "Komputer"
+      },
+      {
+        "word": "телефон",
+        "hint": "Telefon"
+      },
+      {
+        "word": "планшет",
+        "hint": "Tablet"
+      },
+      {
+        "word": "клавіатура",
+        "hint": "Klawiatura"
+      },
+      {
+        "word": "монітор",
+        "hint": "Monitor"
+      },
+      {
+        "word": "принтер",
+        "hint": "Drukarka"
+      },
+      {
+        "word": "навушники",
+        "hint": "Słuchawki"
+      },
+      {
+        "word": "програма",
+        "hint": "Program"
+      },
+      {
+        "word": "мережа",
+        "hint": "Sieć"
+      },
+      {
+        "word": "пароль",
+        "hint": "Hasło"
+      },
+      {
+        "word": "файл",
+        "hint": "Plik"
+      },
+      {
+        "word": "сервер",
+        "hint": "Serwer"
+      },
+      {
+        "word": "зарядка",
+        "hint": "Ładowarka"
+      },
+      {
+        "word": "камера",
+        "hint": "Kamera"
+      },
+      {
+        "word": "екран",
+        "hint": "Ekran"
+      }
+    ]
+  },
+  {
+    "key": "office_wb",
+    "name": "Biuro",
+    "description": "Wyposażenie biurowe po ukraińsku",
+    "iconName": "building.2",
+    "color": "#64748b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "стіл",
+        "hint": "Biurko"
+      },
+      {
+        "word": "крісло",
+        "hint": "Fotel"
+      },
+      {
+        "word": "шафа",
+        "hint": "Szafa"
+      },
+      {
+        "word": "документ",
+        "hint": "Dokument"
+      },
+      {
+        "word": "папір",
+        "hint": "Papier"
+      },
+      {
+        "word": "ножиці",
+        "hint": "Nożyczki"
+      },
+      {
+        "word": "степлер",
+        "hint": "Zszywacz"
+      },
+      {
+        "word": "конверт",
+        "hint": "Koperta"
+      },
+      {
+        "word": "печатка",
+        "hint": "Pieczątka"
+      },
+      {
+        "word": "маркер",
+        "hint": "Marker"
+      },
+      {
+        "word": "скотч",
+        "hint": "Taśma klejąca"
+      },
+      {
+        "word": "календар",
+        "hint": "Kalendarz"
+      },
+      {
+        "word": "лінійка",
+        "hint": "Linijka"
+      },
+      {
+        "word": "скріпка",
+        "hint": "Spinacz"
+      },
+      {
+        "word": "тека",
+        "hint": "Teczka"
+      }
+    ]
+  },
+  {
+    "key": "health_medical_wb",
+    "name": "Zdrowie",
+    "description": "Słownictwo medyczne po ukraińsku",
+    "iconName": "cross.case",
+    "color": "#ef4444",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "лікарня",
+        "hint": "Szpital"
+      },
+      {
+        "word": "аптека",
+        "hint": "Apteka"
+      },
+      {
+        "word": "таблетка",
+        "hint": "Tabletka"
+      },
+      {
+        "word": "рецепт",
+        "hint": "Recepta"
+      },
+      {
+        "word": "температура",
+        "hint": "Temperatura"
+      },
+      {
+        "word": "кашель",
+        "hint": "Kaszel"
+      },
+      {
+        "word": "нежить",
+        "hint": "Katar"
+      },
+      {
+        "word": "біль",
+        "hint": "Ból"
+      },
+      {
+        "word": "щеплення",
+        "hint": "Szczepienie"
+      },
+      {
+        "word": "бинт",
+        "hint": "Bandaż"
+      },
+      {
+        "word": "мазь",
+        "hint": "Maść"
+      },
+      {
+        "word": "діагноз",
+        "hint": "Diagnoza"
+      },
+      {
+        "word": "операція",
+        "hint": "Operacja"
+      },
+      {
+        "word": "здоров'я",
+        "hint": "Zdrowie"
+      },
+      {
+        "word": "алергія",
+        "hint": "Alergia"
+      }
+    ]
+  },
+  {
+    "key": "travel_wb",
+    "name": "Podróże",
+    "description": "Słownictwo podróżnicze po ukraińsku",
+    "iconName": "airplane",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "паспорт",
+        "hint": "Paszport"
+      },
+      {
+        "word": "валіза",
+        "hint": "Walizka"
+      },
+      {
+        "word": "квиток",
+        "hint": "Bilet"
+      },
+      {
+        "word": "готель",
+        "hint": "Hotel"
+      },
+      {
+        "word": "вокзал",
+        "hint": "Dworzec"
+      },
+      {
+        "word": "аеропорт",
+        "hint": "Lotnisko"
+      },
+      {
+        "word": "екскурсія",
+        "hint": "Wycieczka"
+      },
+      {
+        "word": "карта",
+        "hint": "Mapa"
+      },
+      {
+        "word": "віза",
+        "hint": "Wiza"
+      },
+      {
+        "word": "маршрут",
+        "hint": "Trasa"
+      },
+      {
+        "word": "пляж",
+        "hint": "Plaża"
+      },
+      {
+        "word": "музей",
+        "hint": "Muzeum"
+      },
+      {
+        "word": "багаж",
+        "hint": "Bagaż"
+      },
+      {
+        "word": "турист",
+        "hint": "Turysta"
+      },
+      {
+        "word": "сувенір",
+        "hint": "Pamiątka"
+      }
+    ]
+  },
+  {
+    "key": "hobbies_wb",
+    "name": "Hobby",
+    "description": "Zainteresowania i hobby po ukraińsku",
+    "iconName": "star",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "читання",
+        "hint": "Czytanie"
+      },
+      {
+        "word": "малювання",
+        "hint": "Rysowanie"
+      },
+      {
+        "word": "танці",
+        "hint": "Taniec"
+      },
+      {
+        "word": "фотографія",
+        "hint": "Fotografia"
+      },
+      {
+        "word": "кулінарія",
+        "hint": "Gotowanie"
+      },
+      {
+        "word": "садівництво",
+        "hint": "Ogrodnictwo"
+      },
+      {
+        "word": "рибалка",
+        "hint": "Wędkarstwo"
+      },
+      {
+        "word": "в'язання",
+        "hint": "Dzierganie"
+      },
+      {
+        "word": "шиття",
+        "hint": "Szycie"
+      },
+      {
+        "word": "колекція",
+        "hint": "Kolekcja"
+      },
+      {
+        "word": "подорож",
+        "hint": "Podróżowanie"
+      },
+      {
+        "word": "живопис",
+        "hint": "Malarstwo"
+      },
+      {
+        "word": "вишивка",
+        "hint": "Haft"
+      },
+      {
+        "word": "різьблення",
+        "hint": "Rzeźbienie"
+      },
+      {
+        "word": "керамика",
+        "hint": "Ceramika"
+      }
+    ]
+  },
+  {
+    "key": "drinks_beverages_wb",
+    "name": "Napoje",
+    "description": "Napoje i drinki po ukraińsku",
+    "iconName": "cup.and.saucer",
+    "color": "#0891b2",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "кава",
+        "hint": "Kawa"
+      },
+      {
+        "word": "чай",
+        "hint": "Herbata"
+      },
+      {
+        "word": "сік",
+        "hint": "Sok"
+      },
+      {
+        "word": "вода",
+        "hint": "Woda"
+      },
+      {
+        "word": "лимонад",
+        "hint": "Lemoniada"
+      },
+      {
+        "word": "компот",
+        "hint": "Kompot"
+      },
+      {
+        "word": "какао",
+        "hint": "Kakao"
+      },
+      {
+        "word": "коктейль",
+        "hint": "Koktajl"
+      },
+      {
+        "word": "кефір",
+        "hint": "Kefir"
+      },
+      {
+        "word": "йогурт",
+        "hint": "Jogurt"
+      },
+      {
+        "word": "морс",
+        "hint": "Napój owocowy"
+      },
+      {
+        "word": "смузі",
+        "hint": "Smoothie"
+      },
+      {
+        "word": "мінеральна",
+        "hint": "Woda mineralna"
+      },
+      {
+        "word": "квас",
+        "hint": "Kwas chlebowy"
+      },
+      {
+        "word": "узвар",
+        "hint": "Kompot z suszonych owoców"
+      }
+    ]
+  },
+  {
+    "key": "desserts_sweets_wb",
+    "name": "Desery i słodycze",
+    "description": "Desery i słodycze po ukraińsku",
+    "iconName": "birthday.cake",
+    "color": "#f472b6",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "торт",
+        "hint": "Tort"
+      },
+      {
+        "word": "тістечко",
+        "hint": "Ciasteczko"
+      },
+      {
+        "word": "цукерка",
+        "hint": "Cukierek"
+      },
+      {
+        "word": "шоколад",
+        "hint": "Czekolada"
+      },
+      {
+        "word": "морозиво",
+        "hint": "Lody"
+      },
+      {
+        "word": "пиріг",
+        "hint": "Ciasto"
+      },
+      {
+        "word": "пончик",
+        "hint": "Pączek"
+      },
+      {
+        "word": "варення",
+        "hint": "Dżem"
+      },
+      {
+        "word": "зефір",
+        "hint": "Zefir (pianki)"
+      },
+      {
+        "word": "мармелад",
+        "hint": "Marmolada"
+      },
+      {
+        "word": "пряник",
+        "hint": "Piernik"
+      },
+      {
+        "word": "халва",
+        "hint": "Chałwa"
+      },
+      {
+        "word": "рулет",
+        "hint": "Rolada"
+      },
+      {
+        "word": "безе",
+        "hint": "Beza"
+      },
+      {
+        "word": "круасан",
+        "hint": "Rogalik"
+      }
+    ]
+  },
+  {
+    "key": "furniture_wb",
+    "name": "Meble",
+    "description": "Meble domowe po ukraińsku",
+    "iconName": "sofa",
+    "color": "#92400e",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "диван",
+        "hint": "Kanapa"
+      },
+      {
+        "word": "ліжко",
+        "hint": "Łóżko"
+      },
+      {
+        "word": "стілець",
+        "hint": "Krzesło"
+      },
+      {
+        "word": "полиця",
+        "hint": "Półka"
+      },
+      {
+        "word": "комод",
+        "hint": "Komoda"
+      },
+      {
+        "word": "дзеркало",
+        "hint": "Lustro"
+      },
+      {
+        "word": "тумбочка",
+        "hint": "Szafka nocna"
+      },
+      {
+        "word": "килим",
+        "hint": "Dywan"
+      },
+      {
+        "word": "завіса",
+        "hint": "Zasłona"
+      },
+      {
+        "word": "світильник",
+        "hint": "Lampa"
+      },
+      {
+        "word": "вішалка",
+        "hint": "Wieszak"
+      },
+      {
+        "word": "табурет",
+        "hint": "Taboret"
+      },
+      {
+        "word": "етажерка",
+        "hint": "Regał"
+      },
+      {
+        "word": "пуф",
+        "hint": "Pufa"
+      },
+      {
+        "word": "буфет",
+        "hint": "Kredens"
+      }
+    ]
+  },
+  {
+    "key": "tools_wb",
+    "name": "Narzędzia",
+    "description": "Narzędzia i przyrządy po ukraińsku",
+    "iconName": "wrench",
+    "color": "#71717a",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "молоток",
+        "hint": "Młotek"
+      },
+      {
+        "word": "викрутка",
+        "hint": "Śrubokręt"
+      },
+      {
+        "word": "пила",
+        "hint": "Piła"
+      },
+      {
+        "word": "дриль",
+        "hint": "Wiertarka"
+      },
+      {
+        "word": "гайковий",
+        "hint": "Klucz (do nakrętek)"
+      },
+      {
+        "word": "плоскогубці",
+        "hint": "Kombinerki"
+      },
+      {
+        "word": "лопата",
+        "hint": "Łopata"
+      },
+      {
+        "word": "сокира",
+        "hint": "Siekiera"
+      },
+      {
+        "word": "рубанок",
+        "hint": "Hebel"
+      },
+      {
+        "word": "зубило",
+        "hint": "Dłuto"
+      },
+      {
+        "word": "рулетка",
+        "hint": "Miarka (taśma)"
+      },
+      {
+        "word": "рівень",
+        "hint": "Poziomica"
+      },
+      {
+        "word": "шліфувальник",
+        "hint": "Szlifierka"
+      },
+      {
+        "word": "ключ",
+        "hint": "Klucz"
+      },
+      {
+        "word": "цвях",
+        "hint": "Gwóźdź"
+      }
+    ]
+  },
+  {
+    "key": "materials_wb",
+    "name": "Materiały",
+    "description": "Materiały i surowce po ukraińsku",
+    "iconName": "cube",
+    "color": "#78716c",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "деревина",
+        "hint": "Drewno"
+      },
+      {
+        "word": "метал",
+        "hint": "Metal"
+      },
+      {
+        "word": "скло",
+        "hint": "Szkło"
+      },
+      {
+        "word": "пластик",
+        "hint": "Plastik"
+      },
+      {
+        "word": "бетон",
+        "hint": "Beton"
+      },
+      {
+        "word": "цегла",
+        "hint": "Cegła"
+      },
+      {
+        "word": "гума",
+        "hint": "Guma"
+      },
+      {
+        "word": "шкіра",
+        "hint": "Skóra"
+      },
+      {
+        "word": "бавовна",
+        "hint": "Bawełna"
+      },
+      {
+        "word": "шовк",
+        "hint": "Jedwab"
+      },
+      {
+        "word": "вовна",
+        "hint": "Wełna"
+      },
+      {
+        "word": "мармур",
+        "hint": "Marmur"
+      },
+      {
+        "word": "граніт",
+        "hint": "Granit"
+      },
+      {
+        "word": "глина",
+        "hint": "Glina"
+      },
+      {
+        "word": "порцеляна",
+        "hint": "Porcelana"
+      }
+    ]
+  }
+]

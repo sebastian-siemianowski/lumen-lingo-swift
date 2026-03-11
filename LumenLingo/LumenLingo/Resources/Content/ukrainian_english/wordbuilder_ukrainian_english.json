@@ -1,0 +1,2102 @@
+[
+  {
+    "key": "fruits_wb",
+    "name": "Фрукти",
+    "description": "Назви поширених фруктів англійською",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "apple",
+        "hint": "Яблуко"
+      },
+      {
+        "word": "orange",
+        "hint": "Апельсин"
+      },
+      {
+        "word": "banana",
+        "hint": "Банан"
+      },
+      {
+        "word": "grape",
+        "hint": "Виноград"
+      },
+      {
+        "word": "lemon",
+        "hint": "Лимон"
+      },
+      {
+        "word": "mango",
+        "hint": "Манго"
+      },
+      {
+        "word": "peach",
+        "hint": "Персик"
+      },
+      {
+        "word": "cherry",
+        "hint": "Вишня"
+      },
+      {
+        "word": "melon",
+        "hint": "Диня"
+      },
+      {
+        "word": "plum",
+        "hint": "Слива"
+      },
+      {
+        "word": "pear",
+        "hint": "Груша"
+      },
+      {
+        "word": "kiwi",
+        "hint": "Ківі"
+      },
+      {
+        "word": "pineapple",
+        "hint": "Ананас"
+      },
+      {
+        "word": "strawberry",
+        "hint": "Полуниця"
+      },
+      {
+        "word": "watermelon",
+        "hint": "Кавун"
+      }
+    ]
+  },
+  {
+    "key": "vegetables_wb",
+    "name": "Овочі",
+    "description": "Назви поширених овочів англійською",
+    "iconName": "carrot",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "tomato",
+        "hint": "Помідор"
+      },
+      {
+        "word": "onion",
+        "hint": "Цибуля"
+      },
+      {
+        "word": "carrot",
+        "hint": "Морква"
+      },
+      {
+        "word": "potato",
+        "hint": "Картопля"
+      },
+      {
+        "word": "garlic",
+        "hint": "Часник"
+      },
+      {
+        "word": "pepper",
+        "hint": "Перець"
+      },
+      {
+        "word": "cucumber",
+        "hint": "Огірок"
+      },
+      {
+        "word": "cabbage",
+        "hint": "Капуста"
+      },
+      {
+        "word": "corn",
+        "hint": "Кукурудза"
+      },
+      {
+        "word": "spinach",
+        "hint": "Шпинат"
+      },
+      {
+        "word": "pumpkin",
+        "hint": "Гарбуз"
+      },
+      {
+        "word": "mushroom",
+        "hint": "Гриб"
+      },
+      {
+        "word": "lettuce",
+        "hint": "Салат"
+      },
+      {
+        "word": "radish",
+        "hint": "Редиска"
+      },
+      {
+        "word": "beetroot",
+        "hint": "Буряк"
+      }
+    ]
+  },
+  {
+    "key": "colors_wb",
+    "name": "Кольори",
+    "description": "Основні кольори англійською мовою",
+    "iconName": "paintpalette",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "red",
+        "hint": "Червоний"
+      },
+      {
+        "word": "blue",
+        "hint": "Синій"
+      },
+      {
+        "word": "green",
+        "hint": "Зелений"
+      },
+      {
+        "word": "yellow",
+        "hint": "Жовтий"
+      },
+      {
+        "word": "black",
+        "hint": "Чорний"
+      },
+      {
+        "word": "white",
+        "hint": "Білий"
+      },
+      {
+        "word": "crimson",
+        "hint": "Малиновий"
+      },
+      {
+        "word": "purple",
+        "hint": "Фіолетовий"
+      },
+      {
+        "word": "pink",
+        "hint": "Рожевий"
+      },
+      {
+        "word": "brown",
+        "hint": "Коричневий"
+      },
+      {
+        "word": "gray",
+        "hint": "Сірий"
+      },
+      {
+        "word": "golden",
+        "hint": "Золотий"
+      },
+      {
+        "word": "silver",
+        "hint": "Срібний"
+      },
+      {
+        "word": "turquoise",
+        "hint": "Бірюзовий"
+      },
+      {
+        "word": "violet",
+        "hint": "Фіалковий"
+      }
+    ]
+  },
+  {
+    "key": "family_wb",
+    "name": "Сім'я",
+    "description": "Члени родини англійською мовою",
+    "iconName": "figure.2.and.child",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "mother",
+        "hint": "Мати"
+      },
+      {
+        "word": "father",
+        "hint": "Батько"
+      },
+      {
+        "word": "sister",
+        "hint": "Сестра"
+      },
+      {
+        "word": "brother",
+        "hint": "Брат"
+      },
+      {
+        "word": "grandmother",
+        "hint": "Бабуся"
+      },
+      {
+        "word": "grandfather",
+        "hint": "Дідусь"
+      },
+      {
+        "word": "daughter",
+        "hint": "Дочка"
+      },
+      {
+        "word": "son",
+        "hint": "Син"
+      },
+      {
+        "word": "uncle",
+        "hint": "Дядько"
+      },
+      {
+        "word": "aunt",
+        "hint": "Тітка"
+      },
+      {
+        "word": "cousin",
+        "hint": "Двоюрідний брат/сестра"
+      },
+      {
+        "word": "nephew",
+        "hint": "Племінник"
+      },
+      {
+        "word": "niece",
+        "hint": "Племінниця"
+      },
+      {
+        "word": "husband",
+        "hint": "Чоловік"
+      },
+      {
+        "word": "wife",
+        "hint": "Дружина"
+      }
+    ]
+  },
+  {
+    "key": "animals_wb",
+    "name": "Тварини",
+    "description": "Назви поширених тварин англійською",
+    "iconName": "hare",
+    "color": "#eab308",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "dog",
+        "hint": "Собака"
+      },
+      {
+        "word": "cat",
+        "hint": "Кіт"
+      },
+      {
+        "word": "horse",
+        "hint": "Кінь"
+      },
+      {
+        "word": "bird",
+        "hint": "Птах"
+      },
+      {
+        "word": "fish",
+        "hint": "Риба"
+      },
+      {
+        "word": "rabbit",
+        "hint": "Кролик"
+      },
+      {
+        "word": "turtle",
+        "hint": "Черепаха"
+      },
+      {
+        "word": "butterfly",
+        "hint": "Метелик"
+      },
+      {
+        "word": "lion",
+        "hint": "Лев"
+      },
+      {
+        "word": "elephant",
+        "hint": "Слон"
+      },
+      {
+        "word": "monkey",
+        "hint": "Мавпа"
+      },
+      {
+        "word": "bear",
+        "hint": "Ведмідь"
+      },
+      {
+        "word": "wolf",
+        "hint": "Вовк"
+      },
+      {
+        "word": "eagle",
+        "hint": "Орел"
+      },
+      {
+        "word": "dolphin",
+        "hint": "Дельфін"
+      }
+    ]
+  },
+  {
+    "key": "body_parts_wb",
+    "name": "Частини тіла",
+    "description": "Назви частин тіла англійською мовою",
+    "iconName": "figure.stand",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "head",
+        "hint": "Голова"
+      },
+      {
+        "word": "arm",
+        "hint": "Рука (від плеча)"
+      },
+      {
+        "word": "hand",
+        "hint": "Кисть руки"
+      },
+      {
+        "word": "leg",
+        "hint": "Нога"
+      },
+      {
+        "word": "foot",
+        "hint": "Ступня"
+      },
+      {
+        "word": "eye",
+        "hint": "Око"
+      },
+      {
+        "word": "nose",
+        "hint": "Ніс"
+      },
+      {
+        "word": "mouth",
+        "hint": "Рот"
+      },
+      {
+        "word": "ear",
+        "hint": "Вухо"
+      },
+      {
+        "word": "finger",
+        "hint": "Палець"
+      },
+      {
+        "word": "heart",
+        "hint": "Серце"
+      },
+      {
+        "word": "shoulder",
+        "hint": "Плече"
+      },
+      {
+        "word": "knee",
+        "hint": "Коліно"
+      },
+      {
+        "word": "neck",
+        "hint": "Шия"
+      },
+      {
+        "word": "elbow",
+        "hint": "Лікоть"
+      }
+    ]
+  },
+  {
+    "key": "numbers_wb",
+    "name": "Числа",
+    "description": "Числа та кількісні слова англійською",
+    "iconName": "number",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "one",
+        "hint": "Один"
+      },
+      {
+        "word": "two",
+        "hint": "Два"
+      },
+      {
+        "word": "three",
+        "hint": "Три"
+      },
+      {
+        "word": "four",
+        "hint": "Чотири"
+      },
+      {
+        "word": "five",
+        "hint": "П'ять"
+      },
+      {
+        "word": "seven",
+        "hint": "Сім"
+      },
+      {
+        "word": "eight",
+        "hint": "Вісім"
+      },
+      {
+        "word": "nine",
+        "hint": "Дев'ять"
+      },
+      {
+        "word": "ten",
+        "hint": "Десять"
+      },
+      {
+        "word": "twelve",
+        "hint": "Дванадцять"
+      },
+      {
+        "word": "twenty",
+        "hint": "Двадцять"
+      },
+      {
+        "word": "fifty",
+        "hint": "П'ятдесят"
+      },
+      {
+        "word": "hundred",
+        "hint": "Сто"
+      },
+      {
+        "word": "thousand",
+        "hint": "Тисяча"
+      },
+      {
+        "word": "million",
+        "hint": "Мільйон"
+      }
+    ]
+  },
+  {
+    "key": "greetings_wb",
+    "name": "Привітання",
+    "description": "Слова привітання та ввічливості англійською",
+    "iconName": "hand.wave",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "hello",
+        "hint": "Привіт"
+      },
+      {
+        "word": "goodbye",
+        "hint": "До побачення"
+      },
+      {
+        "word": "please",
+        "hint": "Будь ласка"
+      },
+      {
+        "word": "thanks",
+        "hint": "Дякую"
+      },
+      {
+        "word": "sorry",
+        "hint": "Вибачте"
+      },
+      {
+        "word": "welcome",
+        "hint": "Ласкаво просимо"
+      },
+      {
+        "word": "morning",
+        "hint": "Ранок"
+      },
+      {
+        "word": "evening",
+        "hint": "Вечір"
+      },
+      {
+        "word": "night",
+        "hint": "Ніч"
+      },
+      {
+        "word": "friend",
+        "hint": "Друг"
+      },
+      {
+        "word": "cheers",
+        "hint": "Будьмо"
+      },
+      {
+        "word": "farewell",
+        "hint": "Прощавай"
+      },
+      {
+        "word": "pardon",
+        "hint": "Перепрошую"
+      },
+      {
+        "word": "congratulations",
+        "hint": "Вітаю"
+      },
+      {
+        "word": "pleasure",
+        "hint": "Приємно"
+      }
+    ]
+  },
+  {
+    "key": "food_wb",
+    "name": "Їжа",
+    "description": "Назви продуктів харчування англійською",
+    "iconName": "fork.knife",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "bread",
+        "hint": "Хліб"
+      },
+      {
+        "word": "cheese",
+        "hint": "Сир"
+      },
+      {
+        "word": "butter",
+        "hint": "Масло"
+      },
+      {
+        "word": "rice",
+        "hint": "Рис"
+      },
+      {
+        "word": "meat",
+        "hint": "М'ясо"
+      },
+      {
+        "word": "chicken",
+        "hint": "Курка"
+      },
+      {
+        "word": "egg",
+        "hint": "Яйце"
+      },
+      {
+        "word": "milk",
+        "hint": "Молоко"
+      },
+      {
+        "word": "sugar",
+        "hint": "Цукор"
+      },
+      {
+        "word": "salt",
+        "hint": "Сіль"
+      },
+      {
+        "word": "soup",
+        "hint": "Суп"
+      },
+      {
+        "word": "pasta",
+        "hint": "Макарони"
+      },
+      {
+        "word": "salad",
+        "hint": "Салат"
+      },
+      {
+        "word": "sandwich",
+        "hint": "Бутерброд"
+      },
+      {
+        "word": "cereal",
+        "hint": "Каша"
+      }
+    ]
+  },
+  {
+    "key": "clothing_wb",
+    "name": "Одяг",
+    "description": "Назви предметів одягу англійською",
+    "iconName": "tshirt",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "shirt",
+        "hint": "Сорочка"
+      },
+      {
+        "word": "pants",
+        "hint": "Штани"
+      },
+      {
+        "word": "dress",
+        "hint": "Сукня"
+      },
+      {
+        "word": "jacket",
+        "hint": "Куртка"
+      },
+      {
+        "word": "shoes",
+        "hint": "Взуття"
+      },
+      {
+        "word": "hat",
+        "hint": "Капелюх"
+      },
+      {
+        "word": "socks",
+        "hint": "Шкарпетки"
+      },
+      {
+        "word": "scarf",
+        "hint": "Шарф"
+      },
+      {
+        "word": "gloves",
+        "hint": "Рукавички"
+      },
+      {
+        "word": "coat",
+        "hint": "Пальто"
+      },
+      {
+        "word": "boots",
+        "hint": "Чоботи"
+      },
+      {
+        "word": "sweater",
+        "hint": "Светр"
+      },
+      {
+        "word": "skirt",
+        "hint": "Спідниця"
+      },
+      {
+        "word": "belt",
+        "hint": "Пасок"
+      },
+      {
+        "word": "umbrella",
+        "hint": "Парасолька"
+      }
+    ]
+  },
+  {
+    "key": "house_rooms_wb",
+    "name": "Дім і кімнати",
+    "description": "Кімнати та частини будинку англійською",
+    "iconName": "house",
+    "color": "#14b8a6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "kitchen",
+        "hint": "Кухня"
+      },
+      {
+        "word": "bedroom",
+        "hint": "Спальня"
+      },
+      {
+        "word": "bathroom",
+        "hint": "Ванна кімната"
+      },
+      {
+        "word": "garden",
+        "hint": "Сад"
+      },
+      {
+        "word": "garage",
+        "hint": "Гараж"
+      },
+      {
+        "word": "balcony",
+        "hint": "Балкон"
+      },
+      {
+        "word": "hallway",
+        "hint": "Коридор"
+      },
+      {
+        "word": "ceiling",
+        "hint": "Стеля"
+      },
+      {
+        "word": "floor",
+        "hint": "Підлога"
+      },
+      {
+        "word": "window",
+        "hint": "Вікно"
+      },
+      {
+        "word": "door",
+        "hint": "Двері"
+      },
+      {
+        "word": "stairs",
+        "hint": "Сходи"
+      },
+      {
+        "word": "roof",
+        "hint": "Дах"
+      },
+      {
+        "word": "basement",
+        "hint": "Підвал"
+      },
+      {
+        "word": "attic",
+        "hint": "Горище"
+      }
+    ]
+  },
+  {
+    "key": "weather_wb",
+    "name": "Погода",
+    "description": "Слова для опису погоди англійською",
+    "iconName": "cloud.sun",
+    "color": "#0ea5e9",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "rain",
+        "hint": "Дощ"
+      },
+      {
+        "word": "snow",
+        "hint": "Сніг"
+      },
+      {
+        "word": "wind",
+        "hint": "Вітер"
+      },
+      {
+        "word": "storm",
+        "hint": "Буря"
+      },
+      {
+        "word": "cloud",
+        "hint": "Хмара"
+      },
+      {
+        "word": "sunny",
+        "hint": "Сонячний"
+      },
+      {
+        "word": "foggy",
+        "hint": "Туманний"
+      },
+      {
+        "word": "frost",
+        "hint": "Мороз"
+      },
+      {
+        "word": "thunder",
+        "hint": "Грім"
+      },
+      {
+        "word": "lightning",
+        "hint": "Блискавка"
+      },
+      {
+        "word": "rainbow",
+        "hint": "Веселка"
+      },
+      {
+        "word": "humidity",
+        "hint": "Вологість"
+      },
+      {
+        "word": "breeze",
+        "hint": "Легкий вітерець"
+      },
+      {
+        "word": "hail",
+        "hint": "Град"
+      },
+      {
+        "word": "drought",
+        "hint": "Посуха"
+      }
+    ]
+  },
+  {
+    "key": "professions_wb",
+    "name": "Професії",
+    "description": "Назви професій англійською мовою",
+    "iconName": "briefcase",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "doctor",
+        "hint": "Лікар"
+      },
+      {
+        "word": "teacher",
+        "hint": "Вчитель"
+      },
+      {
+        "word": "engineer",
+        "hint": "Інженер"
+      },
+      {
+        "word": "lawyer",
+        "hint": "Адвокат"
+      },
+      {
+        "word": "nurse",
+        "hint": "Медсестра"
+      },
+      {
+        "word": "farmer",
+        "hint": "Фермер"
+      },
+      {
+        "word": "pilot",
+        "hint": "Пілот"
+      },
+      {
+        "word": "chef",
+        "hint": "Шеф-кухар"
+      },
+      {
+        "word": "dentist",
+        "hint": "Стоматолог"
+      },
+      {
+        "word": "artist",
+        "hint": "Художник"
+      },
+      {
+        "word": "mechanic",
+        "hint": "Механік"
+      },
+      {
+        "word": "plumber",
+        "hint": "Сантехнік"
+      },
+      {
+        "word": "surgeon",
+        "hint": "Хірург"
+      },
+      {
+        "word": "accountant",
+        "hint": "Бухгалтер"
+      },
+      {
+        "word": "architect",
+        "hint": "Архітектор"
+      }
+    ]
+  },
+  {
+    "key": "transport_wb",
+    "name": "Транспорт",
+    "description": "Назви видів транспорту англійською",
+    "iconName": "car",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "car",
+        "hint": "Автомобіль"
+      },
+      {
+        "word": "bus",
+        "hint": "Автобус"
+      },
+      {
+        "word": "train",
+        "hint": "Поїзд"
+      },
+      {
+        "word": "plane",
+        "hint": "Літак"
+      },
+      {
+        "word": "bicycle",
+        "hint": "Велосипед"
+      },
+      {
+        "word": "ship",
+        "hint": "Корабель"
+      },
+      {
+        "word": "taxi",
+        "hint": "Таксі"
+      },
+      {
+        "word": "subway",
+        "hint": "Метро"
+      },
+      {
+        "word": "ferry",
+        "hint": "Пором"
+      },
+      {
+        "word": "truck",
+        "hint": "Вантажівка"
+      },
+      {
+        "word": "scooter",
+        "hint": "Скутер"
+      },
+      {
+        "word": "helicopter",
+        "hint": "Гелікоптер"
+      },
+      {
+        "word": "tram",
+        "hint": "Трамвай"
+      },
+      {
+        "word": "yacht",
+        "hint": "Яхта"
+      },
+      {
+        "word": "ambulance",
+        "hint": "Швидка допомога"
+      }
+    ]
+  },
+  {
+    "key": "school_wb",
+    "name": "Школа",
+    "description": "Шкільна лексика англійською мовою",
+    "iconName": "book",
+    "color": "#10b981",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pencil",
+        "hint": "Олівець"
+      },
+      {
+        "word": "notebook",
+        "hint": "Зошит"
+      },
+      {
+        "word": "eraser",
+        "hint": "Ластик"
+      },
+      {
+        "word": "ruler",
+        "hint": "Лінійка"
+      },
+      {
+        "word": "chalk",
+        "hint": "Крейда"
+      },
+      {
+        "word": "desk",
+        "hint": "Парта"
+      },
+      {
+        "word": "homework",
+        "hint": "Домашнє завдання"
+      },
+      {
+        "word": "lesson",
+        "hint": "Урок"
+      },
+      {
+        "word": "exam",
+        "hint": "Іспит"
+      },
+      {
+        "word": "library",
+        "hint": "Бібліотека"
+      },
+      {
+        "word": "classroom",
+        "hint": "Клас"
+      },
+      {
+        "word": "student",
+        "hint": "Учень"
+      },
+      {
+        "word": "subject",
+        "hint": "Предмет"
+      },
+      {
+        "word": "textbook",
+        "hint": "Підручник"
+      },
+      {
+        "word": "diploma",
+        "hint": "Диплом"
+      }
+    ]
+  },
+  {
+    "key": "kitchen_utensils_wb",
+    "name": "Кухонне приладдя",
+    "description": "Кухонний посуд та приладдя англійською",
+    "iconName": "cup.and.saucer",
+    "color": "#d97706",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "plate",
+        "hint": "Тарілка"
+      },
+      {
+        "word": "fork",
+        "hint": "Виделка"
+      },
+      {
+        "word": "knife",
+        "hint": "Ніж"
+      },
+      {
+        "word": "spoon",
+        "hint": "Ложка"
+      },
+      {
+        "word": "cup",
+        "hint": "Чашка"
+      },
+      {
+        "word": "glass",
+        "hint": "Склянка"
+      },
+      {
+        "word": "bowl",
+        "hint": "Миска"
+      },
+      {
+        "word": "kettle",
+        "hint": "Чайник"
+      },
+      {
+        "word": "oven",
+        "hint": "Духовка"
+      },
+      {
+        "word": "fridge",
+        "hint": "Холодильник"
+      },
+      {
+        "word": "saucepan",
+        "hint": "Каструля"
+      },
+      {
+        "word": "blender",
+        "hint": "Блендер"
+      },
+      {
+        "word": "toaster",
+        "hint": "Тостер"
+      },
+      {
+        "word": "colander",
+        "hint": "Дуршлаг"
+      },
+      {
+        "word": "spatula",
+        "hint": "Лопатка"
+      }
+    ]
+  },
+  {
+    "key": "sports_wb",
+    "name": "Спорт",
+    "description": "Назви видів спорту англійською мовою",
+    "iconName": "sportscourt",
+    "color": "#059669",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "football",
+        "hint": "Футбол"
+      },
+      {
+        "word": "tennis",
+        "hint": "Теніс"
+      },
+      {
+        "word": "swimming",
+        "hint": "Плавання"
+      },
+      {
+        "word": "boxing",
+        "hint": "Бокс"
+      },
+      {
+        "word": "running",
+        "hint": "Біг"
+      },
+      {
+        "word": "skiing",
+        "hint": "Лижний спорт"
+      },
+      {
+        "word": "hockey",
+        "hint": "Хокей"
+      },
+      {
+        "word": "volleyball",
+        "hint": "Волейбол"
+      },
+      {
+        "word": "wrestling",
+        "hint": "Боротьба"
+      },
+      {
+        "word": "archery",
+        "hint": "Стрільба з лука"
+      },
+      {
+        "word": "cycling",
+        "hint": "Велоспорт"
+      },
+      {
+        "word": "fencing",
+        "hint": "Фехтування"
+      },
+      {
+        "word": "rowing",
+        "hint": "Веслування"
+      },
+      {
+        "word": "surfing",
+        "hint": "Серфінг"
+      },
+      {
+        "word": "climbing",
+        "hint": "Скелелазіння"
+      }
+    ]
+  },
+  {
+    "key": "music_instruments_wb",
+    "name": "Музичні інструменти",
+    "description": "Назви музичних інструментів англійською",
+    "iconName": "music.note",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "piano",
+        "hint": "Піаніно"
+      },
+      {
+        "word": "guitar",
+        "hint": "Гітара"
+      },
+      {
+        "word": "violin",
+        "hint": "Скрипка"
+      },
+      {
+        "word": "drums",
+        "hint": "Барабани"
+      },
+      {
+        "word": "flute",
+        "hint": "Флейта"
+      },
+      {
+        "word": "trumpet",
+        "hint": "Труба"
+      },
+      {
+        "word": "harp",
+        "hint": "Арфа"
+      },
+      {
+        "word": "cello",
+        "hint": "Віолончель"
+      },
+      {
+        "word": "clarinet",
+        "hint": "Кларнет"
+      },
+      {
+        "word": "saxophone",
+        "hint": "Саксофон"
+      },
+      {
+        "word": "accordion",
+        "hint": "Акордеон"
+      },
+      {
+        "word": "trombone",
+        "hint": "Тромбон"
+      },
+      {
+        "word": "harmonica",
+        "hint": "Губна гармоніка"
+      },
+      {
+        "word": "banjo",
+        "hint": "Банджо"
+      },
+      {
+        "word": "oboe",
+        "hint": "Гобой"
+      }
+    ]
+  },
+  {
+    "key": "nature_wb",
+    "name": "Природа",
+    "description": "Елементи природи англійською мовою",
+    "iconName": "leaf",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "mountain",
+        "hint": "Гора"
+      },
+      {
+        "word": "river",
+        "hint": "Річка"
+      },
+      {
+        "word": "forest",
+        "hint": "Ліс"
+      },
+      {
+        "word": "ocean",
+        "hint": "Океан"
+      },
+      {
+        "word": "island",
+        "hint": "Острів"
+      },
+      {
+        "word": "valley",
+        "hint": "Долина"
+      },
+      {
+        "word": "desert",
+        "hint": "Пустеля"
+      },
+      {
+        "word": "waterfall",
+        "hint": "Водоспад"
+      },
+      {
+        "word": "volcano",
+        "hint": "Вулкан"
+      },
+      {
+        "word": "cliff",
+        "hint": "Скеля"
+      },
+      {
+        "word": "meadow",
+        "hint": "Луг"
+      },
+      {
+        "word": "cave",
+        "hint": "Печера"
+      },
+      {
+        "word": "lake",
+        "hint": "Озеро"
+      },
+      {
+        "word": "sunset",
+        "hint": "Захід сонця"
+      },
+      {
+        "word": "glacier",
+        "hint": "Льодовик"
+      }
+    ]
+  },
+  {
+    "key": "emotions_wb",
+    "name": "Емоції",
+    "description": "Слова для вираження емоцій англійською",
+    "iconName": "heart",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "happy",
+        "hint": "Щасливий"
+      },
+      {
+        "word": "sad",
+        "hint": "Сумний"
+      },
+      {
+        "word": "angry",
+        "hint": "Злий"
+      },
+      {
+        "word": "scared",
+        "hint": "Наляканий"
+      },
+      {
+        "word": "surprised",
+        "hint": "Здивований"
+      },
+      {
+        "word": "excited",
+        "hint": "Схвильований"
+      },
+      {
+        "word": "tired",
+        "hint": "Втомлений"
+      },
+      {
+        "word": "bored",
+        "hint": "Знуджений"
+      },
+      {
+        "word": "jealous",
+        "hint": "Ревнивий"
+      },
+      {
+        "word": "proud",
+        "hint": "Гордий"
+      },
+      {
+        "word": "lonely",
+        "hint": "Самотній"
+      },
+      {
+        "word": "grateful",
+        "hint": "Вдячний"
+      },
+      {
+        "word": "anxious",
+        "hint": "Тривожний"
+      },
+      {
+        "word": "ashamed",
+        "hint": "Присоромлений"
+      },
+      {
+        "word": "hopeful",
+        "hint": "Сповнений надії"
+      }
+    ]
+  },
+  {
+    "key": "technology_wb",
+    "name": "Технології",
+    "description": "Слова зі сфери технологій англійською",
+    "iconName": "desktopcomputer",
+    "color": "#2563eb",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "computer",
+        "hint": "Комп'ютер"
+      },
+      {
+        "word": "keyboard",
+        "hint": "Клавіатура"
+      },
+      {
+        "word": "monitor",
+        "hint": "Монітор"
+      },
+      {
+        "word": "printer",
+        "hint": "Принтер"
+      },
+      {
+        "word": "laptop",
+        "hint": "Ноутбук"
+      },
+      {
+        "word": "phone",
+        "hint": "Телефон"
+      },
+      {
+        "word": "tablet",
+        "hint": "Планшет"
+      },
+      {
+        "word": "camera",
+        "hint": "Камера"
+      },
+      {
+        "word": "software",
+        "hint": "Програмне забезпечення"
+      },
+      {
+        "word": "password",
+        "hint": "Пароль"
+      },
+      {
+        "word": "network",
+        "hint": "Мережа"
+      },
+      {
+        "word": "browser",
+        "hint": "Браузер"
+      },
+      {
+        "word": "charger",
+        "hint": "Зарядний пристрій"
+      },
+      {
+        "word": "speaker",
+        "hint": "Динамік"
+      },
+      {
+        "word": "headphones",
+        "hint": "Навушники"
+      }
+    ]
+  },
+  {
+    "key": "office_wb",
+    "name": "Офіс",
+    "description": "Офісне обладнання та предмети англійською",
+    "iconName": "building.2",
+    "color": "#64748b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "stapler",
+        "hint": "Степлер"
+      },
+      {
+        "word": "paperclip",
+        "hint": "Скріпка"
+      },
+      {
+        "word": "folder",
+        "hint": "Папка"
+      },
+      {
+        "word": "calendar",
+        "hint": "Календар"
+      },
+      {
+        "word": "envelope",
+        "hint": "Конверт"
+      },
+      {
+        "word": "document",
+        "hint": "Документ"
+      },
+      {
+        "word": "meeting",
+        "hint": "Зустріч"
+      },
+      {
+        "word": "report",
+        "hint": "Звіт"
+      },
+      {
+        "word": "deadline",
+        "hint": "Крайній термін"
+      },
+      {
+        "word": "schedule",
+        "hint": "Розклад"
+      },
+      {
+        "word": "invoice",
+        "hint": "Рахунок"
+      },
+      {
+        "word": "contract",
+        "hint": "Контракт"
+      },
+      {
+        "word": "receipt",
+        "hint": "Квитанція"
+      },
+      {
+        "word": "salary",
+        "hint": "Зарплата"
+      },
+      {
+        "word": "colleague",
+        "hint": "Колега"
+      }
+    ]
+  },
+  {
+    "key": "health_medical_wb",
+    "name": "Здоров'я",
+    "description": "Медична лексика англійською мовою",
+    "iconName": "cross.case",
+    "color": "#dc2626",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "fever",
+        "hint": "Температура"
+      },
+      {
+        "word": "cough",
+        "hint": "Кашель"
+      },
+      {
+        "word": "headache",
+        "hint": "Головний біль"
+      },
+      {
+        "word": "medicine",
+        "hint": "Ліки"
+      },
+      {
+        "word": "hospital",
+        "hint": "Лікарня"
+      },
+      {
+        "word": "pharmacy",
+        "hint": "Аптека"
+      },
+      {
+        "word": "bandage",
+        "hint": "Бинт"
+      },
+      {
+        "word": "symptom",
+        "hint": "Симптом"
+      },
+      {
+        "word": "allergy",
+        "hint": "Алергія"
+      },
+      {
+        "word": "vaccine",
+        "hint": "Вакцина"
+      },
+      {
+        "word": "surgery",
+        "hint": "Операція"
+      },
+      {
+        "word": "prescription",
+        "hint": "Рецепт"
+      },
+      {
+        "word": "diagnosis",
+        "hint": "Діагноз"
+      },
+      {
+        "word": "recovery",
+        "hint": "Одужання"
+      },
+      {
+        "word": "vitamin",
+        "hint": "Вітамін"
+      }
+    ]
+  },
+  {
+    "key": "travel_wb",
+    "name": "Подорожі",
+    "description": "Лексика для подорожей англійською",
+    "iconName": "airplane",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "passport",
+        "hint": "Паспорт"
+      },
+      {
+        "word": "luggage",
+        "hint": "Багаж"
+      },
+      {
+        "word": "ticket",
+        "hint": "Квиток"
+      },
+      {
+        "word": "hotel",
+        "hint": "Готель"
+      },
+      {
+        "word": "airport",
+        "hint": "Аеропорт"
+      },
+      {
+        "word": "tourist",
+        "hint": "Турист"
+      },
+      {
+        "word": "suitcase",
+        "hint": "Валіза"
+      },
+      {
+        "word": "journey",
+        "hint": "Подорож"
+      },
+      {
+        "word": "souvenir",
+        "hint": "Сувенір"
+      },
+      {
+        "word": "customs",
+        "hint": "Митниця"
+      },
+      {
+        "word": "boarding",
+        "hint": "Посадка"
+      },
+      {
+        "word": "currency",
+        "hint": "Валюта"
+      },
+      {
+        "word": "itinerary",
+        "hint": "Маршрут"
+      },
+      {
+        "word": "departure",
+        "hint": "Відправлення"
+      },
+      {
+        "word": "arrival",
+        "hint": "Прибуття"
+      }
+    ]
+  },
+  {
+    "key": "hobbies_wb",
+    "name": "Хобі",
+    "description": "Назви захоплень та хобі англійською",
+    "iconName": "star",
+    "color": "#ca8a04",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "painting",
+        "hint": "Малювання"
+      },
+      {
+        "word": "cooking",
+        "hint": "Кулінарія"
+      },
+      {
+        "word": "reading",
+        "hint": "Читання"
+      },
+      {
+        "word": "dancing",
+        "hint": "Танці"
+      },
+      {
+        "word": "gardening",
+        "hint": "Садівництво"
+      },
+      {
+        "word": "fishing",
+        "hint": "Рибалка"
+      },
+      {
+        "word": "knitting",
+        "hint": "В'язання"
+      },
+      {
+        "word": "hiking",
+        "hint": "Піший туризм"
+      },
+      {
+        "word": "photography",
+        "hint": "Фотографія"
+      },
+      {
+        "word": "pottery",
+        "hint": "Гончарство"
+      },
+      {
+        "word": "sewing",
+        "hint": "Шиття"
+      },
+      {
+        "word": "writing",
+        "hint": "Письменництво"
+      },
+      {
+        "word": "singing",
+        "hint": "Спів"
+      },
+      {
+        "word": "drawing",
+        "hint": "Малюнок"
+      },
+      {
+        "word": "camping",
+        "hint": "Кемпінг"
+      }
+    ]
+  },
+  {
+    "key": "drinks_beverages_wb",
+    "name": "Напої",
+    "description": "Назви напоїв англійською мовою",
+    "iconName": "cup.and.saucer",
+    "color": "#0d9488",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "coffee",
+        "hint": "Кава"
+      },
+      {
+        "word": "juice",
+        "hint": "Сік"
+      },
+      {
+        "word": "water",
+        "hint": "Вода"
+      },
+      {
+        "word": "lemonade",
+        "hint": "Лимонад"
+      },
+      {
+        "word": "smoothie",
+        "hint": "Смузі"
+      },
+      {
+        "word": "milkshake",
+        "hint": "Молочний коктейль"
+      },
+      {
+        "word": "cocktail",
+        "hint": "Коктейль"
+      },
+      {
+        "word": "champagne",
+        "hint": "Шампанське"
+      },
+      {
+        "word": "espresso",
+        "hint": "Еспресо"
+      },
+      {
+        "word": "cappuccino",
+        "hint": "Капучіно"
+      },
+      {
+        "word": "kombucha",
+        "hint": "Комбуча"
+      },
+      {
+        "word": "cider",
+        "hint": "Сидр"
+      },
+      {
+        "word": "brandy",
+        "hint": "Бренді"
+      },
+      {
+        "word": "whiskey",
+        "hint": "Віскі"
+      },
+      {
+        "word": "tequila",
+        "hint": "Текіла"
+      }
+    ]
+  },
+  {
+    "key": "desserts_sweets_wb",
+    "name": "Десерти",
+    "description": "Назви десертів та солодощів англійською",
+    "iconName": "birthday.cake",
+    "color": "#db2777",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "chocolate",
+        "hint": "Шоколад"
+      },
+      {
+        "word": "cookie",
+        "hint": "Печиво"
+      },
+      {
+        "word": "cupcake",
+        "hint": "Кекс"
+      },
+      {
+        "word": "pudding",
+        "hint": "Пудинг"
+      },
+      {
+        "word": "pancake",
+        "hint": "Млинець"
+      },
+      {
+        "word": "brownie",
+        "hint": "Брауні"
+      },
+      {
+        "word": "caramel",
+        "hint": "Карамель"
+      },
+      {
+        "word": "muffin",
+        "hint": "Маффін"
+      },
+      {
+        "word": "waffle",
+        "hint": "Вафля"
+      },
+      {
+        "word": "croissant",
+        "hint": "Круасан"
+      },
+      {
+        "word": "doughnut",
+        "hint": "Пончик"
+      },
+      {
+        "word": "marshmallow",
+        "hint": "Зефір"
+      },
+      {
+        "word": "cheesecake",
+        "hint": "Чизкейк"
+      },
+      {
+        "word": "macaron",
+        "hint": "Макарон"
+      },
+      {
+        "word": "tiramisu",
+        "hint": "Тірамісу"
+      }
+    ]
+  },
+  {
+    "key": "furniture_wb",
+    "name": "Меблі",
+    "description": "Назви предметів меблів англійською",
+    "iconName": "sofa",
+    "color": "#92400e",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "chair",
+        "hint": "Стілець"
+      },
+      {
+        "word": "table",
+        "hint": "Стіл"
+      },
+      {
+        "word": "sofa",
+        "hint": "Диван"
+      },
+      {
+        "word": "wardrobe",
+        "hint": "Шафа"
+      },
+      {
+        "word": "bookshelf",
+        "hint": "Книжкова полиця"
+      },
+      {
+        "word": "mattress",
+        "hint": "Матрац"
+      },
+      {
+        "word": "cabinet",
+        "hint": "Шафка"
+      },
+      {
+        "word": "nightstand",
+        "hint": "Тумбочка"
+      },
+      {
+        "word": "armchair",
+        "hint": "Крісло"
+      },
+      {
+        "word": "curtain",
+        "hint": "Завіса"
+      },
+      {
+        "word": "carpet",
+        "hint": "Килим"
+      },
+      {
+        "word": "mirror",
+        "hint": "Дзеркало"
+      },
+      {
+        "word": "pillow",
+        "hint": "Подушка"
+      },
+      {
+        "word": "blanket",
+        "hint": "Ковдра"
+      },
+      {
+        "word": "chandelier",
+        "hint": "Люстра"
+      }
+    ]
+  },
+  {
+    "key": "tools_wb",
+    "name": "Інструменти",
+    "description": "Назви інструментів англійською мовою",
+    "iconName": "wrench",
+    "color": "#78716c",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "hammer",
+        "hint": "Молоток"
+      },
+      {
+        "word": "screwdriver",
+        "hint": "Викрутка"
+      },
+      {
+        "word": "wrench",
+        "hint": "Гайковий ключ"
+      },
+      {
+        "word": "pliers",
+        "hint": "Плоскогубці"
+      },
+      {
+        "word": "drill",
+        "hint": "Дриль"
+      },
+      {
+        "word": "saw",
+        "hint": "Пилка"
+      },
+      {
+        "word": "shovel",
+        "hint": "Лопата"
+      },
+      {
+        "word": "scissors",
+        "hint": "Ножиці"
+      },
+      {
+        "word": "ladder",
+        "hint": "Драбина"
+      },
+      {
+        "word": "chisel",
+        "hint": "Долото"
+      },
+      {
+        "word": "sandpaper",
+        "hint": "Наждачний папір"
+      },
+      {
+        "word": "paintbrush",
+        "hint": "Пензель"
+      },
+      {
+        "word": "measuring",
+        "hint": "Рулетка"
+      },
+      {
+        "word": "toolbox",
+        "hint": "Ящик для інструментів"
+      },
+      {
+        "word": "clamp",
+        "hint": "Затискач"
+      }
+    ]
+  },
+  {
+    "key": "materials_wb",
+    "name": "Матеріали",
+    "description": "Назви матеріалів та речовин англійською",
+    "iconName": "cube",
+    "color": "#475569",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "wood",
+        "hint": "Дерево (матеріал)"
+      },
+      {
+        "word": "metal",
+        "hint": "Метал"
+      },
+      {
+        "word": "steel",
+        "hint": "Сталь"
+      },
+      {
+        "word": "plastic",
+        "hint": "Пластик"
+      },
+      {
+        "word": "cotton",
+        "hint": "Бавовна"
+      },
+      {
+        "word": "leather",
+        "hint": "Шкіра (матеріал)"
+      },
+      {
+        "word": "rubber",
+        "hint": "Гума"
+      },
+      {
+        "word": "concrete",
+        "hint": "Бетон"
+      },
+      {
+        "word": "marble",
+        "hint": "Мармур"
+      },
+      {
+        "word": "copper",
+        "hint": "Мідь"
+      },
+      {
+        "word": "diamond",
+        "hint": "Діамант"
+      },
+      {
+        "word": "ceramic",
+        "hint": "Кераміка"
+      },
+      {
+        "word": "velvet",
+        "hint": "Оксамит"
+      },
+      {
+        "word": "granite",
+        "hint": "Граніт"
+      },
+      {
+        "word": "porcelain",
+        "hint": "Фарфор"
+      }
+    ]
+  }
+]

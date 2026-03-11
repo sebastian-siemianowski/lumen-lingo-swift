@@ -1048,5 +1048,1055 @@
         "hint": "Kampus szkolny"
       }
     ]
+  },
+  {
+    "key": "kitchen_utensils_wb",
+    "name": "Przybory kuchenne",
+    "description": "Nazwy przyborów kuchennych po chińsku",
+    "iconName": "frying.pan",
+    "color": "#78716c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "筷子",
+        "hint": "Pałeczki"
+      },
+      {
+        "word": "勺子",
+        "hint": "Łyżka"
+      },
+      {
+        "word": "叉子",
+        "hint": "Widelec"
+      },
+      {
+        "word": "盘子",
+        "hint": "Talerz"
+      },
+      {
+        "word": "刀具",
+        "hint": "Nóż"
+      },
+      {
+        "word": "水壶",
+        "hint": "Czajnik"
+      },
+      {
+        "word": "锅子",
+        "hint": "Garnek"
+      },
+      {
+        "word": "杯子",
+        "hint": "Kubek"
+      },
+      {
+        "word": "烤箱",
+        "hint": "Piekarnik"
+      },
+      {
+        "word": "冰箱",
+        "hint": "Lodówka"
+      },
+      {
+        "word": "微波炉",
+        "hint": "Mikrofalówka"
+      },
+      {
+        "word": "砧板",
+        "hint": "Deska do krojenia"
+      },
+      {
+        "word": "围裙",
+        "hint": "Fartuch"
+      },
+      {
+        "word": "漏勺",
+        "hint": "Cedzak"
+      },
+      {
+        "word": "平底锅",
+        "hint": "Patelnia"
+      }
+    ]
+  },
+  {
+    "key": "sports_wb",
+    "name": "Sport",
+    "description": "Nazwy dyscyplin sportowych po chińsku",
+    "iconName": "sportscourt",
+    "color": "#10b981",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "足球",
+        "hint": "Piłka nożna"
+      },
+      {
+        "word": "篮球",
+        "hint": "Koszykówka"
+      },
+      {
+        "word": "网球",
+        "hint": "Tenis"
+      },
+      {
+        "word": "排球",
+        "hint": "Siatkówka"
+      },
+      {
+        "word": "游泳",
+        "hint": "Pływanie"
+      },
+      {
+        "word": "跑步",
+        "hint": "Bieganie"
+      },
+      {
+        "word": "乒乓球",
+        "hint": "Tenis stołowy"
+      },
+      {
+        "word": "羽毛球",
+        "hint": "Badminton"
+      },
+      {
+        "word": "棒球",
+        "hint": "Baseball"
+      },
+      {
+        "word": "高尔夫",
+        "hint": "Golf"
+      },
+      {
+        "word": "滑冰",
+        "hint": "Łyżwiarstwo"
+      },
+      {
+        "word": "滑雪",
+        "hint": "Narciarstwo"
+      },
+      {
+        "word": "拳击",
+        "hint": "Boks"
+      },
+      {
+        "word": "武术",
+        "hint": "Sztuki walki"
+      },
+      {
+        "word": "体操",
+        "hint": "Gimnastyka"
+      }
+    ]
+  },
+  {
+    "key": "music_instruments_wb",
+    "name": "Instrumenty muzyczne",
+    "description": "Nazwy instrumentów muzycznych po chińsku",
+    "iconName": "pianokeys",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "钢琴",
+        "hint": "Pianino"
+      },
+      {
+        "word": "吉他",
+        "hint": "Gitara"
+      },
+      {
+        "word": "小提琴",
+        "hint": "Skrzypce"
+      },
+      {
+        "word": "鼓组",
+        "hint": "Perkusja"
+      },
+      {
+        "word": "长笛",
+        "hint": "Flet"
+      },
+      {
+        "word": "二胡",
+        "hint": "Erhu (skrzypce chińskie)"
+      },
+      {
+        "word": "琵琶",
+        "hint": "Pipa (lutnia chińska)"
+      },
+      {
+        "word": "古筝",
+        "hint": "Guzheng (cytra chińska)"
+      },
+      {
+        "word": "萨克斯",
+        "hint": "Saksofon"
+      },
+      {
+        "word": "小号",
+        "hint": "Trąbka"
+      },
+      {
+        "word": "大提琴",
+        "hint": "Wiolonczela"
+      },
+      {
+        "word": "竖琴",
+        "hint": "Harfa"
+      },
+      {
+        "word": "口琴",
+        "hint": "Harmonijka ustna"
+      },
+      {
+        "word": "手风琴",
+        "hint": "Akordeon"
+      },
+      {
+        "word": "唢呐",
+        "hint": "Suona (róg chiński)"
+      }
+    ]
+  },
+  {
+    "key": "nature_wb",
+    "name": "Natura",
+    "description": "Nazwy elementów natury po chińsku",
+    "iconName": "leaf",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "大山",
+        "hint": "Góra"
+      },
+      {
+        "word": "河流",
+        "hint": "Rzeka"
+      },
+      {
+        "word": "湖泊",
+        "hint": "Jezioro"
+      },
+      {
+        "word": "海洋",
+        "hint": "Ocean"
+      },
+      {
+        "word": "森林",
+        "hint": "Las"
+      },
+      {
+        "word": "沙漠",
+        "hint": "Pustynia"
+      },
+      {
+        "word": "草地",
+        "hint": "Łąka"
+      },
+      {
+        "word": "瀑布",
+        "hint": "Wodospad"
+      },
+      {
+        "word": "火山",
+        "hint": "Wulkan"
+      },
+      {
+        "word": "岛屿",
+        "hint": "Wyspa"
+      },
+      {
+        "word": "洞穴",
+        "hint": "Jaskinia"
+      },
+      {
+        "word": "峡谷",
+        "hint": "Kanion"
+      },
+      {
+        "word": "冰川",
+        "hint": "Lodowiec"
+      },
+      {
+        "word": "珊瑚",
+        "hint": "Koral"
+      },
+      {
+        "word": "树林",
+        "hint": "Zagajnik"
+      }
+    ]
+  },
+  {
+    "key": "emotions_wb",
+    "name": "Emocje",
+    "description": "Nazwy emocji i uczuć po chińsku",
+    "iconName": "heart",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "开心",
+        "hint": "Szczęśliwy"
+      },
+      {
+        "word": "难过",
+        "hint": "Smutny"
+      },
+      {
+        "word": "生气",
+        "hint": "Zły (wściekły)"
+      },
+      {
+        "word": "害怕",
+        "hint": "Przestraszony"
+      },
+      {
+        "word": "惊讶",
+        "hint": "Zaskoczony"
+      },
+      {
+        "word": "紧张",
+        "hint": "Zdenerwowany"
+      },
+      {
+        "word": "骄傲",
+        "hint": "Dumny"
+      },
+      {
+        "word": "孤独",
+        "hint": "Samotny"
+      },
+      {
+        "word": "嫉妒",
+        "hint": "Zazdrosny"
+      },
+      {
+        "word": "感动",
+        "hint": "Wzruszony"
+      },
+      {
+        "word": "失望",
+        "hint": "Rozczarowany"
+      },
+      {
+        "word": "兴奋",
+        "hint": "Podekscytowany"
+      },
+      {
+        "word": "焦虑",
+        "hint": "Niespokojny"
+      },
+      {
+        "word": "满足",
+        "hint": "Zadowolony"
+      },
+      {
+        "word": "尴尬",
+        "hint": "Zakłopotany"
+      }
+    ]
+  },
+  {
+    "key": "technology_wb",
+    "name": "Technologia",
+    "description": "Nazwy urządzeń i pojęć technologicznych po chińsku",
+    "iconName": "desktopcomputer",
+    "color": "#2563eb",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "电脑",
+        "hint": "Komputer"
+      },
+      {
+        "word": "手机",
+        "hint": "Telefon komórkowy"
+      },
+      {
+        "word": "键盘",
+        "hint": "Klawiatura"
+      },
+      {
+        "word": "鼠标",
+        "hint": "Myszka (komputerowa)"
+      },
+      {
+        "word": "屏幕",
+        "hint": "Ekran"
+      },
+      {
+        "word": "打印机",
+        "hint": "Drukarka"
+      },
+      {
+        "word": "耳机",
+        "hint": "Słuchawki"
+      },
+      {
+        "word": "摄像头",
+        "hint": "Kamera"
+      },
+      {
+        "word": "密码",
+        "hint": "Hasło"
+      },
+      {
+        "word": "网络",
+        "hint": "Sieć / Internet"
+      },
+      {
+        "word": "软件",
+        "hint": "Oprogramowanie"
+      },
+      {
+        "word": "硬件",
+        "hint": "Sprzęt komputerowy"
+      },
+      {
+        "word": "数据",
+        "hint": "Dane"
+      },
+      {
+        "word": "下载",
+        "hint": "Pobieranie"
+      },
+      {
+        "word": "充电器",
+        "hint": "Ładowarka"
+      }
+    ]
+  },
+  {
+    "key": "office_wb",
+    "name": "Biuro",
+    "description": "Nazwy przedmiotów biurowych po chińsku",
+    "iconName": "building.2",
+    "color": "#475569",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "办公室",
+        "hint": "Biuro"
+      },
+      {
+        "word": "办公桌",
+        "hint": "Biurko"
+      },
+      {
+        "word": "椅子",
+        "hint": "Krzesło"
+      },
+      {
+        "word": "文件",
+        "hint": "Dokument"
+      },
+      {
+        "word": "信封",
+        "hint": "Koperta"
+      },
+      {
+        "word": "订书机",
+        "hint": "Zszywacz"
+      },
+      {
+        "word": "剪刀",
+        "hint": "Nożyczki"
+      },
+      {
+        "word": "胶带",
+        "hint": "Taśma klejąca"
+      },
+      {
+        "word": "回形针",
+        "hint": "Spinacz"
+      },
+      {
+        "word": "日历",
+        "hint": "Kalendarz"
+      },
+      {
+        "word": "计算器",
+        "hint": "Kalkulator"
+      },
+      {
+        "word": "会议",
+        "hint": "Spotkanie"
+      },
+      {
+        "word": "合同",
+        "hint": "Umowa"
+      },
+      {
+        "word": "名片",
+        "hint": "Wizytówka"
+      },
+      {
+        "word": "印章",
+        "hint": "Pieczątka"
+      }
+    ]
+  },
+  {
+    "key": "health_medical_wb",
+    "name": "Zdrowie i medycyna",
+    "description": "Nazwy pojęć medycznych po chińsku",
+    "iconName": "cross.case",
+    "color": "#dc2626",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "医院",
+        "hint": "Szpital"
+      },
+      {
+        "word": "药房",
+        "hint": "Apteka"
+      },
+      {
+        "word": "感冒",
+        "hint": "Przeziębienie"
+      },
+      {
+        "word": "发烧",
+        "hint": "Gorączka"
+      },
+      {
+        "word": "头疼",
+        "hint": "Ból głowy"
+      },
+      {
+        "word": "咳嗽",
+        "hint": "Kaszel"
+      },
+      {
+        "word": "过敏",
+        "hint": "Alergia"
+      },
+      {
+        "word": "处方",
+        "hint": "Recepta"
+      },
+      {
+        "word": "手术",
+        "hint": "Operacja"
+      },
+      {
+        "word": "疫苗",
+        "hint": "Szczepionka"
+      },
+      {
+        "word": "血压",
+        "hint": "Ciśnienie krwi"
+      },
+      {
+        "word": "体检",
+        "hint": "Badanie lekarskie"
+      },
+      {
+        "word": "急救",
+        "hint": "Pierwsza pomoc"
+      },
+      {
+        "word": "绷带",
+        "hint": "Bandaż"
+      },
+      {
+        "word": "药片",
+        "hint": "Tabletka"
+      }
+    ]
+  },
+  {
+    "key": "travel_wb",
+    "name": "Podróże",
+    "description": "Słownictwo podróżnicze po chińsku",
+    "iconName": "airplane",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "护照",
+        "hint": "Paszport"
+      },
+      {
+        "word": "签证",
+        "hint": "Wiza"
+      },
+      {
+        "word": "行李",
+        "hint": "Bagaż"
+      },
+      {
+        "word": "机票",
+        "hint": "Bilet lotniczy"
+      },
+      {
+        "word": "酒店",
+        "hint": "Hotel"
+      },
+      {
+        "word": "旅游",
+        "hint": "Turystyka"
+      },
+      {
+        "word": "景点",
+        "hint": "Atrakcja turystyczna"
+      },
+      {
+        "word": "地图",
+        "hint": "Mapa"
+      },
+      {
+        "word": "导游",
+        "hint": "Przewodnik"
+      },
+      {
+        "word": "纪念品",
+        "hint": "Pamiątka"
+      },
+      {
+        "word": "海关",
+        "hint": "Urząd celny"
+      },
+      {
+        "word": "登机牌",
+        "hint": "Karta pokładowa"
+      },
+      {
+        "word": "预订",
+        "hint": "Rezerwacja"
+      },
+      {
+        "word": "货币",
+        "hint": "Waluta"
+      },
+      {
+        "word": "旅馆",
+        "hint": "Schronisko"
+      }
+    ]
+  },
+  {
+    "key": "hobbies_wb",
+    "name": "Hobby",
+    "description": "Nazwy hobby i zainteresowań po chińsku",
+    "iconName": "star",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "阅读",
+        "hint": "Czytanie"
+      },
+      {
+        "word": "绘画",
+        "hint": "Malarstwo"
+      },
+      {
+        "word": "摄影",
+        "hint": "Fotografia"
+      },
+      {
+        "word": "烹饪",
+        "hint": "Gotowanie"
+      },
+      {
+        "word": "钓鱼",
+        "hint": "Wędkarstwo"
+      },
+      {
+        "word": "园艺",
+        "hint": "Ogrodnictwo"
+      },
+      {
+        "word": "下棋",
+        "hint": "Gra w szachy"
+      },
+      {
+        "word": "集邮",
+        "hint": "Filatelistyka"
+      },
+      {
+        "word": "编织",
+        "hint": "Dzierganie"
+      },
+      {
+        "word": "登山",
+        "hint": "Wspinaczka górska"
+      },
+      {
+        "word": "骑马",
+        "hint": "Jazda konna"
+      },
+      {
+        "word": "潜水",
+        "hint": "Nurkowanie"
+      },
+      {
+        "word": "冲浪",
+        "hint": "Surfing"
+      },
+      {
+        "word": "瑜伽",
+        "hint": "Joga"
+      },
+      {
+        "word": "书法",
+        "hint": "Kaligrafia"
+      }
+    ]
+  },
+  {
+    "key": "drinks_beverages_wb",
+    "name": "Napoje",
+    "description": "Nazwy napojów po chińsku",
+    "iconName": "cup.and.saucer",
+    "color": "#0d9488",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "绿茶",
+        "hint": "Zielona herbata"
+      },
+      {
+        "word": "红茶",
+        "hint": "Czarna herbata"
+      },
+      {
+        "word": "咖啡",
+        "hint": "Kawa"
+      },
+      {
+        "word": "果汁",
+        "hint": "Sok owocowy"
+      },
+      {
+        "word": "可乐",
+        "hint": "Cola"
+      },
+      {
+        "word": "啤酒",
+        "hint": "Piwo"
+      },
+      {
+        "word": "红酒",
+        "hint": "Czerwone wino"
+      },
+      {
+        "word": "豆浆",
+        "hint": "Mleko sojowe"
+      },
+      {
+        "word": "奶茶",
+        "hint": "Herbata z mlekiem"
+      },
+      {
+        "word": "矿泉水",
+        "hint": "Woda mineralna"
+      },
+      {
+        "word": "白酒",
+        "hint": "Baijiu (chiński trunek)"
+      },
+      {
+        "word": "酸奶",
+        "hint": "Jogurt"
+      },
+      {
+        "word": "椰汁",
+        "hint": "Sok kokosowy"
+      },
+      {
+        "word": "柠檬水",
+        "hint": "Lemoniada"
+      },
+      {
+        "word": "热巧克力",
+        "hint": "Gorąca czekolada"
+      }
+    ]
+  },
+  {
+    "key": "desserts_sweets_wb",
+    "name": "Desery i słodycze",
+    "description": "Nazwy deserów i słodyczy po chińsku",
+    "iconName": "birthday.cake",
+    "color": "#f472b6",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "月饼",
+        "hint": "Ciastko księżycowe"
+      },
+      {
+        "word": "汤圆",
+        "hint": "Kulki ryżowe"
+      },
+      {
+        "word": "冰淇淋",
+        "hint": "Lody"
+      },
+      {
+        "word": "巧克力",
+        "hint": "Czekolada"
+      },
+      {
+        "word": "饼干",
+        "hint": "Herbatnik"
+      },
+      {
+        "word": "布丁",
+        "hint": "Budyń"
+      },
+      {
+        "word": "糖果",
+        "hint": "Cukierek"
+      },
+      {
+        "word": "果冻",
+        "hint": "Galaretka"
+      },
+      {
+        "word": "蜂蜜",
+        "hint": "Miód"
+      },
+      {
+        "word": "红豆沙",
+        "hint": "Pasta z czerwonej fasoli"
+      },
+      {
+        "word": "甜甜圈",
+        "hint": "Pączek"
+      },
+      {
+        "word": "麻薯",
+        "hint": "Mochi"
+      },
+      {
+        "word": "蛋挞",
+        "hint": "Tartaletka jajeczna"
+      },
+      {
+        "word": "绿豆糕",
+        "hint": "Ciasto z fasoli mung"
+      },
+      {
+        "word": "杏仁饼",
+        "hint": "Ciastko migdałowe"
+      }
+    ]
+  },
+  {
+    "key": "furniture_wb",
+    "name": "Meble",
+    "description": "Nazwy mebli po chińsku",
+    "iconName": "sofa",
+    "color": "#a16207",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "沙发",
+        "hint": "Kanapa"
+      },
+      {
+        "word": "书架",
+        "hint": "Regał na książki"
+      },
+      {
+        "word": "衣柜",
+        "hint": "Szafa"
+      },
+      {
+        "word": "床铺",
+        "hint": "Łóżko"
+      },
+      {
+        "word": "桌子",
+        "hint": "Stół"
+      },
+      {
+        "word": "抽屉",
+        "hint": "Szuflada"
+      },
+      {
+        "word": "台灯",
+        "hint": "Lampka biurkowa"
+      },
+      {
+        "word": "窗帘",
+        "hint": "Zasłona"
+      },
+      {
+        "word": "地毯",
+        "hint": "Dywan"
+      },
+      {
+        "word": "枕头",
+        "hint": "Poduszka"
+      },
+      {
+        "word": "被子",
+        "hint": "Kołdra"
+      },
+      {
+        "word": "镜子",
+        "hint": "Lustro"
+      },
+      {
+        "word": "花瓶",
+        "hint": "Wazon"
+      },
+      {
+        "word": "相框",
+        "hint": "Ramka na zdjęcia"
+      },
+      {
+        "word": "梳妆台",
+        "hint": "Toaletka"
+      }
+    ]
+  },
+  {
+    "key": "tools_wb",
+    "name": "Narzędzia",
+    "description": "Nazwy narzędzi po chińsku",
+    "iconName": "wrench",
+    "color": "#71717a",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "锤子",
+        "hint": "Młotek"
+      },
+      {
+        "word": "螺丝刀",
+        "hint": "Śrubokręt"
+      },
+      {
+        "word": "扳手",
+        "hint": "Klucz"
+      },
+      {
+        "word": "钳子",
+        "hint": "Szczypce"
+      },
+      {
+        "word": "电钻",
+        "hint": "Wiertarka"
+      },
+      {
+        "word": "锯子",
+        "hint": "Piła"
+      },
+      {
+        "word": "卷尺",
+        "hint": "Miarka"
+      },
+      {
+        "word": "螺丝",
+        "hint": "Śruba"
+      },
+      {
+        "word": "钉子",
+        "hint": "Gwóźdź"
+      },
+      {
+        "word": "胶水",
+        "hint": "Klej"
+      },
+      {
+        "word": "油漆",
+        "hint": "Farba"
+      },
+      {
+        "word": "刷子",
+        "hint": "Pędzel"
+      },
+      {
+        "word": "梯子",
+        "hint": "Drabina"
+      },
+      {
+        "word": "铲子",
+        "hint": "Łopata"
+      },
+      {
+        "word": "水管",
+        "hint": "Rura wodna"
+      }
+    ]
+  },
+  {
+    "key": "materials_wb",
+    "name": "Materiały",
+    "description": "Nazwy materiałów po chińsku",
+    "iconName": "cube",
+    "color": "#57534e",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "木头",
+        "hint": "Drewno"
+      },
+      {
+        "word": "金属",
+        "hint": "Metal"
+      },
+      {
+        "word": "塑料",
+        "hint": "Plastik"
+      },
+      {
+        "word": "玻璃",
+        "hint": "Szkło"
+      },
+      {
+        "word": "橡胶",
+        "hint": "Guma"
+      },
+      {
+        "word": "皮革",
+        "hint": "Skóra (materiał)"
+      },
+      {
+        "word": "棉花",
+        "hint": "Bawełna"
+      },
+      {
+        "word": "丝绸",
+        "hint": "Jedwab"
+      },
+      {
+        "word": "石头",
+        "hint": "Kamień"
+      },
+      {
+        "word": "水泥",
+        "hint": "Cement"
+      },
+      {
+        "word": "钢铁",
+        "hint": "Stal"
+      },
+      {
+        "word": "黄铜",
+        "hint": "Mosiądz"
+      },
+      {
+        "word": "陶瓷",
+        "hint": "Ceramika"
+      },
+      {
+        "word": "竹子",
+        "hint": "Bambus"
+      },
+      {
+        "word": "大理石",
+        "hint": "Marmur"
+      }
+    ]
   }
 ]

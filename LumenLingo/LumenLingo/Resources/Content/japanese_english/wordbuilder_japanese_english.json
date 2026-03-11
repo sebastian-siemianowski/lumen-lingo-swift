@@ -1398,5 +1398,705 @@
         "hint": "きぼうにみちた"
       }
     ]
+  },
+  {
+    "key": "technology_wb",
+    "name": "テクノロジー",
+    "description": "英語のテクノロジー用語を覚えよう",
+    "iconName": "desktopcomputer",
+    "color": "#2563eb",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "computer",
+        "hint": "コンピューター"
+      },
+      {
+        "word": "keyboard",
+        "hint": "キーボード"
+      },
+      {
+        "word": "monitor",
+        "hint": "モニター"
+      },
+      {
+        "word": "printer",
+        "hint": "プリンター"
+      },
+      {
+        "word": "speaker",
+        "hint": "スピーカー"
+      },
+      {
+        "word": "camera",
+        "hint": "カメラ"
+      },
+      {
+        "word": "battery",
+        "hint": "でんち"
+      },
+      {
+        "word": "charger",
+        "hint": "じゅうでんき"
+      },
+      {
+        "word": "software",
+        "hint": "ソフトウェア"
+      },
+      {
+        "word": "network",
+        "hint": "ネットワーク"
+      },
+      {
+        "word": "router",
+        "hint": "ルーター"
+      },
+      {
+        "word": "server",
+        "hint": "サーバー"
+      },
+      {
+        "word": "tablet",
+        "hint": "タブレット"
+      },
+      {
+        "word": "database",
+        "hint": "データベース"
+      },
+      {
+        "word": "wireless",
+        "hint": "ワイヤレス"
+      }
+    ]
+  },
+  {
+    "key": "office_wb",
+    "name": "オフィス",
+    "description": "英語のオフィス用語を覚えよう",
+    "iconName": "building.2",
+    "color": "#64748b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "stapler",
+        "hint": "ホッチキス"
+      },
+      {
+        "word": "calendar",
+        "hint": "カレンダー"
+      },
+      {
+        "word": "folder",
+        "hint": "フォルダー"
+      },
+      {
+        "word": "envelope",
+        "hint": "ふうとう"
+      },
+      {
+        "word": "desktop",
+        "hint": "デスクトップ"
+      },
+      {
+        "word": "meeting",
+        "hint": "かいぎ"
+      },
+      {
+        "word": "cabinet",
+        "hint": "キャビネット"
+      },
+      {
+        "word": "binder",
+        "hint": "バインダー"
+      },
+      {
+        "word": "schedule",
+        "hint": "スケジュール"
+      },
+      {
+        "word": "invoice",
+        "hint": "せいきゅうしょ"
+      },
+      {
+        "word": "receipt",
+        "hint": "レシート"
+      },
+      {
+        "word": "manager",
+        "hint": "マネージャー"
+      },
+      {
+        "word": "deadline",
+        "hint": "しめきり"
+      },
+      {
+        "word": "document",
+        "hint": "しょるい"
+      },
+      {
+        "word": "clipboard",
+        "hint": "クリップボード"
+      }
+    ]
+  },
+  {
+    "key": "health_medical_wb",
+    "name": "健康・医療",
+    "description": "英語の健康・医療用語を覚えよう",
+    "iconName": "cross.case",
+    "color": "#dc2626",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "medicine",
+        "hint": "くすり"
+      },
+      {
+        "word": "pharmacy",
+        "hint": "やっきょく"
+      },
+      {
+        "word": "hospital",
+        "hint": "びょういん"
+      },
+      {
+        "word": "bandage",
+        "hint": "ほうたい"
+      },
+      {
+        "word": "symptom",
+        "hint": "しょうじょう"
+      },
+      {
+        "word": "allergy",
+        "hint": "アレルギー"
+      },
+      {
+        "word": "vitamin",
+        "hint": "ビタミン"
+      },
+      {
+        "word": "vaccine",
+        "hint": "ワクチン"
+      },
+      {
+        "word": "therapy",
+        "hint": "りょうほう"
+      },
+      {
+        "word": "capsule",
+        "hint": "カプセル"
+      },
+      {
+        "word": "checkup",
+        "hint": "けんしん"
+      },
+      {
+        "word": "surgery",
+        "hint": "しゅじゅつ"
+      },
+      {
+        "word": "inhaler",
+        "hint": "きゅうにゅうき"
+      },
+      {
+        "word": "patient",
+        "hint": "かんじゃ"
+      },
+      {
+        "word": "clinical",
+        "hint": "りんしょうの"
+      }
+    ]
+  },
+  {
+    "key": "travel_wb",
+    "name": "旅行",
+    "description": "英語の旅行用語を覚えよう",
+    "iconName": "airplane",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "passport",
+        "hint": "パスポート"
+      },
+      {
+        "word": "luggage",
+        "hint": "にもつ"
+      },
+      {
+        "word": "tourist",
+        "hint": "かんこうきゃく"
+      },
+      {
+        "word": "boarding",
+        "hint": "とうじょう"
+      },
+      {
+        "word": "customs",
+        "hint": "ぜいかん"
+      },
+      {
+        "word": "itinerary",
+        "hint": "りょこうけいかく"
+      },
+      {
+        "word": "souvenir",
+        "hint": "おみやげ"
+      },
+      {
+        "word": "terminal",
+        "hint": "ターミナル"
+      },
+      {
+        "word": "currency",
+        "hint": "つうか"
+      },
+      {
+        "word": "booking",
+        "hint": "よやく"
+      },
+      {
+        "word": "excursion",
+        "hint": "えんそく"
+      },
+      {
+        "word": "landmark",
+        "hint": "めいしょ"
+      },
+      {
+        "word": "departure",
+        "hint": "しゅっぱつ"
+      },
+      {
+        "word": "arrival",
+        "hint": "とうちゃく"
+      },
+      {
+        "word": "suitcase",
+        "hint": "スーツケース"
+      }
+    ]
+  },
+  {
+    "key": "hobbies_wb",
+    "name": "趣味",
+    "description": "英語の趣味に関する言葉を覚えよう",
+    "iconName": "star",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "painting",
+        "hint": "かいが"
+      },
+      {
+        "word": "pottery",
+        "hint": "とうげい"
+      },
+      {
+        "word": "knitting",
+        "hint": "あみもの"
+      },
+      {
+        "word": "gardening",
+        "hint": "えんげい"
+      },
+      {
+        "word": "camping",
+        "hint": "キャンピング"
+      },
+      {
+        "word": "fishing",
+        "hint": "つり"
+      },
+      {
+        "word": "cooking",
+        "hint": "りょうり"
+      },
+      {
+        "word": "reading",
+        "hint": "どくしょ"
+      },
+      {
+        "word": "dancing",
+        "hint": "ダンス"
+      },
+      {
+        "word": "cycling",
+        "hint": "サイクリング"
+      },
+      {
+        "word": "drawing",
+        "hint": "えをかくこと"
+      },
+      {
+        "word": "hiking",
+        "hint": "ハイキング"
+      },
+      {
+        "word": "quilting",
+        "hint": "キルティング"
+      },
+      {
+        "word": "jogging",
+        "hint": "ジョギング"
+      },
+      {
+        "word": "swimming",
+        "hint": "すいえい"
+      }
+    ]
+  },
+  {
+    "key": "drinks_beverages_wb",
+    "name": "飲み物",
+    "description": "英語の飲み物の名前を覚えよう",
+    "iconName": "cup.and.saucer",
+    "color": "#0d9488",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "espresso",
+        "hint": "エスプレッソ"
+      },
+      {
+        "word": "lemonade",
+        "hint": "レモネード"
+      },
+      {
+        "word": "smoothie",
+        "hint": "スムージー"
+      },
+      {
+        "word": "cocktail",
+        "hint": "カクテル"
+      },
+      {
+        "word": "milkshake",
+        "hint": "ミルクシェイク"
+      },
+      {
+        "word": "cappuccino",
+        "hint": "カプチーノ"
+      },
+      {
+        "word": "sparkling",
+        "hint": "たんさんの"
+      },
+      {
+        "word": "beverage",
+        "hint": "のみもの"
+      },
+      {
+        "word": "cinnamon",
+        "hint": "シナモン"
+      },
+      {
+        "word": "hibiscus",
+        "hint": "ハイビスカス"
+      },
+      {
+        "word": "chamomile",
+        "hint": "カモミール"
+      },
+      {
+        "word": "ginger",
+        "hint": "しょうが"
+      },
+      {
+        "word": "matcha",
+        "hint": "まっちゃ"
+      },
+      {
+        "word": "cranberry",
+        "hint": "クランベリー"
+      },
+      {
+        "word": "peppermint",
+        "hint": "ペパーミント"
+      }
+    ]
+  },
+  {
+    "key": "desserts_sweets_wb",
+    "name": "デザート・お菓子",
+    "description": "英語のデザートやお菓子の名前を覚えよう",
+    "iconName": "birthday.cake",
+    "color": "#db2777",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "brownie",
+        "hint": "ブラウニー"
+      },
+      {
+        "word": "cupcake",
+        "hint": "カップケーキ"
+      },
+      {
+        "word": "macaron",
+        "hint": "マカロン"
+      },
+      {
+        "word": "pudding",
+        "hint": "プリン"
+      },
+      {
+        "word": "truffle",
+        "hint": "トリュフ"
+      },
+      {
+        "word": "caramel",
+        "hint": "キャラメル"
+      },
+      {
+        "word": "muffin",
+        "hint": "マフィン"
+      },
+      {
+        "word": "custard",
+        "hint": "カスタード"
+      },
+      {
+        "word": "biscuit",
+        "hint": "ビスケット"
+      },
+      {
+        "word": "sundae",
+        "hint": "サンデー"
+      },
+      {
+        "word": "tiramisu",
+        "hint": "ティラミス"
+      },
+      {
+        "word": "fondant",
+        "hint": "フォンダン"
+      },
+      {
+        "word": "praline",
+        "hint": "プラリネ"
+      },
+      {
+        "word": "croissant",
+        "hint": "クロワッサン"
+      },
+      {
+        "word": "doughnut",
+        "hint": "ドーナツ"
+      }
+    ]
+  },
+  {
+    "key": "furniture_wb",
+    "name": "家具",
+    "description": "英語の家具の名前を覚えよう",
+    "iconName": "sofa",
+    "color": "#92400e",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "bookshelf",
+        "hint": "ほんだな"
+      },
+      {
+        "word": "armchair",
+        "hint": "ひじかけいす"
+      },
+      {
+        "word": "wardrobe",
+        "hint": "ようふくだんす"
+      },
+      {
+        "word": "nightstand",
+        "hint": "ベッドサイドテーブル"
+      },
+      {
+        "word": "dresser",
+        "hint": "ドレッサー"
+      },
+      {
+        "word": "ottoman",
+        "hint": "オットマン"
+      },
+      {
+        "word": "hammock",
+        "hint": "ハンモック"
+      },
+      {
+        "word": "cushion",
+        "hint": "クッション"
+      },
+      {
+        "word": "recliner",
+        "hint": "リクライニングチェア"
+      },
+      {
+        "word": "stool",
+        "hint": "スツール"
+      },
+      {
+        "word": "console",
+        "hint": "コンソール"
+      },
+      {
+        "word": "mattress",
+        "hint": "マットレス"
+      },
+      {
+        "word": "sideboard",
+        "hint": "さいどぼーど"
+      },
+      {
+        "word": "bedframe",
+        "hint": "ベッドフレーム"
+      },
+      {
+        "word": "footrest",
+        "hint": "あしおき"
+      }
+    ]
+  },
+  {
+    "key": "tools_wb",
+    "name": "工具",
+    "description": "英語の工具の名前を覚えよう",
+    "iconName": "wrench",
+    "color": "#78716c",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "hammer",
+        "hint": "ハンマー"
+      },
+      {
+        "word": "screwdriver",
+        "hint": "ドライバー"
+      },
+      {
+        "word": "pliers",
+        "hint": "ペンチ"
+      },
+      {
+        "word": "wrench",
+        "hint": "レンチ"
+      },
+      {
+        "word": "chisel",
+        "hint": "のみ"
+      },
+      {
+        "word": "sandpaper",
+        "hint": "やすり"
+      },
+      {
+        "word": "clamp",
+        "hint": "クランプ"
+      },
+      {
+        "word": "hacksaw",
+        "hint": "かなのこ"
+      },
+      {
+        "word": "drill",
+        "hint": "ドリル"
+      },
+      {
+        "word": "shovel",
+        "hint": "シャベル"
+      },
+      {
+        "word": "mallet",
+        "hint": "きづち"
+      },
+      {
+        "word": "crowbar",
+        "hint": "バール"
+      },
+      {
+        "word": "level",
+        "hint": "すいへいき"
+      },
+      {
+        "word": "plunger",
+        "hint": "ラバーカップ"
+      },
+      {
+        "word": "bolt",
+        "hint": "ボルト"
+      }
+    ]
+  },
+  {
+    "key": "materials_wb",
+    "name": "素材",
+    "description": "英語の素材・材料の名前を覚えよう",
+    "iconName": "cube",
+    "color": "#475569",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "concrete",
+        "hint": "コンクリート"
+      },
+      {
+        "word": "ceramic",
+        "hint": "セラミック"
+      },
+      {
+        "word": "marble",
+        "hint": "だいりせき"
+      },
+      {
+        "word": "bronze",
+        "hint": "ブロンズ"
+      },
+      {
+        "word": "granite",
+        "hint": "みかげいし"
+      },
+      {
+        "word": "leather",
+        "hint": "かわ"
+      },
+      {
+        "word": "silicon",
+        "hint": "シリコン"
+      },
+      {
+        "word": "velvet",
+        "hint": "ベルベット"
+      },
+      {
+        "word": "bamboo",
+        "hint": "たけ"
+      },
+      {
+        "word": "plywood",
+        "hint": "ごうはん"
+      },
+      {
+        "word": "rubber",
+        "hint": "ゴム"
+      },
+      {
+        "word": "copper",
+        "hint": "どう"
+      },
+      {
+        "word": "cotton",
+        "hint": "めん"
+      },
+      {
+        "word": "fiberglass",
+        "hint": "グラスファイバー"
+      },
+      {
+        "word": "aluminum",
+        "hint": "アルミニウム"
+      }
+    ]
   }
 ]

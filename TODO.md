@@ -1160,15 +1160,15 @@ Hint language: Spanish | Word language: English
 | 7 | english_japanese | English | Japanese | 30 | 450 | 30 | 450 | ✅ |
 | 8 | english_polish | English | Polish | 30 | 450 | 30 | 450 | ✅ |
 | 9 | french_english | French | English | 30 | 450 | 30 | 450 | ✅ |
-| 10 | german_polish | German | Polish | 0 | 0 | 30 | 450 | 🔄 |
-| 11 | japanese_english | Japanese | English | 0 | 0 | 30 | 450 | 🔄 |
-| 12 | polish_arabic | Polish | Arabic | 0 | 0 | 30 | 450 | 🔄 |
-| 13 | polish_chinese | Polish | Chinese | 0 | 0 | 30 | 450 | 🔄 |
-| 14 | polish_french | Polish | French | 0 | 0 | 30 | 450 | 🔄 |
-| 15 | polish_japanese | Polish | Japanese | 0 | 0 | 30 | 450 | ⬜ |
-| 16 | polish_ukrainian | Polish | Ukrainian | 0 | 0 | 30 | 450 | ⬜ |
-| 17 | ukrainian_english | Ukrainian | English | 0 | 0 | 30 | 450 | ⬜ |
-| 18 | ukrainian_polish | Ukrainian | Polish | 0 | 0 | 30 | 450 | ⬜ |
+| 10 | german_polish | German | Polish | 30 | 450 | 30 | 450 | ✅ |
+| 11 | japanese_english | Japanese | English | 30 | 450 | 30 | 450 | ✅ |
+| 12 | polish_arabic | Polish | Arabic | 30 | 450 | 30 | 450 | ✅ |
+| 13 | polish_chinese | Polish | Chinese | 30 | 450 | 30 | 450 | ✅ |
+| 14 | polish_french | Polish | French | 30 | 450 | 30 | 450 | ✅ |
+| 15 | polish_japanese | Polish | Japanese | 30 | 450 | 30 | 450 | ✅ |
+| 16 | polish_ukrainian | Polish | Ukrainian | 30 | 450 | 30 | 450 | ✅ |
+| 17 | ukrainian_english | Ukrainian | English | 30 | 450 | 30 | 450 | ✅ |
+| 18 | ukrainian_polish | Ukrainian | Polish | 30 | 450 | 30 | 450 | ✅ |
 
 ### arabic_english — ✅ COMPLETE (30/30 categories, 450 items)
 Hint language: Arabic | Word language: English
@@ -1278,65 +1278,113 @@ Hint language: English | Word language: Arabic
 | 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
 | 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
 
-### german_polish — 🔄 IN PROGRESS (0/30 categories, 0 items)
+### german_polish — ✅ COMPLETE (30/30 categories, 450 items)
 Hint language: German | Word language: Polish
 
 | Batch | Categories | Status |
 |-------|-----------|--------|
-| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ⬜ |
-| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ⬜ |
-| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ⬜ |
-| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ⬜ |
-| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ⬜ |
-| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ⬜ |
+| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ✅ |
+| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ✅ |
+| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ✅ |
+| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
+| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
+| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
 
-### polish_arabic — 🔄 IN PROGRESS (0/30 categories, 0 items)
+### polish_arabic — ✅ COMPLETE (30/30 categories, 450 items)
 Hint language: Polish | Word language: Arabic
 
 | Batch | Categories | Status |
 |-------|-----------|--------|
-| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ⬜ |
-| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ⬜ |
-| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ⬜ |
-| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ⬜ |
-| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ⬜ |
-| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ⬜ |
+| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ✅ |
+| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ✅ |
+| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ✅ |
+| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
+| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
+| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
 
-### polish_chinese — 🔄 IN PROGRESS (0/30 categories, 0 items)
+### polish_chinese — ✅ COMPLETE (30/30 categories, 450 items)
 Hint language: Polish | Word language: Chinese
 
 | Batch | Categories | Status |
 |-------|-----------|--------|
-| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ⬜ |
-| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ⬜ |
-| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ⬜ |
-| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ⬜ |
-| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ⬜ |
-| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ⬜ |
+| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ✅ |
+| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ✅ |
+| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ✅ |
+| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
+| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
+| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
 
-### polish_french — 🔄 IN PROGRESS (0/30 categories, 0 items)
+### polish_french — ✅ COMPLETE (30/30 categories, 450 items)
 Hint language: Polish | Word language: French
 
 | Batch | Categories | Status |
 |-------|-----------|--------|
-| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ⬜ |
-| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ⬜ |
-| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ⬜ |
-| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ⬜ |
-| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ⬜ |
-| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ⬜ |
+| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ✅ |
+| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ✅ |
+| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ✅ |
+| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
+| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
+| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
 
-### japanese_english — 🔄 IN PROGRESS (0/30 categories, 0 items)
+### japanese_english — ✅ COMPLETE (30/30 categories, 450 items)
 Hint language: Japanese | Word language: English
 
 | Batch | Categories | Status |
 |-------|-----------|--------|
-| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ⬜ |
-| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ⬜ |
-| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ⬜ |
-| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ⬜ |
-| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ⬜ |
-| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ⬜ |
+| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ✅ |
+| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ✅ |
+| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ✅ |
+| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
+| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
+| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+
+### polish_japanese — ✅ COMPLETE (30/30 categories, 450 items)
+Hint language: Polish | Word language: Japanese (hiragana/katakana)
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ✅ |
+| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ✅ |
+| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ✅ |
+| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
+| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
+| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+
+### polish_ukrainian — ✅ COMPLETE (30/30 categories, 450 items)
+Hint language: Polish | Word language: Ukrainian (Cyrillic)
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ✅ |
+| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ✅ |
+| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ✅ |
+| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
+| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
+| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+
+### ukrainian_english — ✅ COMPLETE (30/30 categories, 450 items)
+Hint language: Ukrainian | Word language: English
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ✅ |
+| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ✅ |
+| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ✅ |
+| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
+| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
+| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+
+### ukrainian_polish — ✅ COMPLETE (30/30 categories, 450 items)
+Hint language: Ukrainian | Word language: Polish
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ✅ |
+| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ✅ |
+| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ✅ |
+| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
+| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
+| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
 
 ## Special Considerations for Non-Latin Script Pairs
 

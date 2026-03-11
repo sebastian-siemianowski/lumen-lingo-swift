@@ -348,5 +348,1755 @@
         "hint": "Mysz"
       }
     ]
+  },
+  {
+    "key": "body_parts_wb",
+    "name": "Części ciała",
+    "description": "Nazwy części ciała po francusku",
+    "iconName": "figure.stand",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "tête",
+        "hint": "Głowa"
+      },
+      {
+        "word": "bras",
+        "hint": "Ramię"
+      },
+      {
+        "word": "jambe",
+        "hint": "Noga"
+      },
+      {
+        "word": "main",
+        "hint": "Dłoń"
+      },
+      {
+        "word": "pied",
+        "hint": "Stopa"
+      },
+      {
+        "word": "oeil",
+        "hint": "Oko"
+      },
+      {
+        "word": "bouche",
+        "hint": "Usta"
+      },
+      {
+        "word": "oreille",
+        "hint": "Ucho"
+      },
+      {
+        "word": "doigt",
+        "hint": "Palec"
+      },
+      {
+        "word": "coeur",
+        "hint": "Serce"
+      },
+      {
+        "word": "ventre",
+        "hint": "Brzuch"
+      },
+      {
+        "word": "genou",
+        "hint": "Kolano"
+      },
+      {
+        "word": "épaule",
+        "hint": "Ramię/bark"
+      },
+      {
+        "word": "cou",
+        "hint": "Szyja"
+      },
+      {
+        "word": "dos",
+        "hint": "Plecy"
+      }
+    ]
+  },
+  {
+    "key": "numbers_wb",
+    "name": "Liczby",
+    "description": "Podstawowe liczby po francusku",
+    "iconName": "number",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "zéro",
+        "hint": "Zero"
+      },
+      {
+        "word": "trois",
+        "hint": "Trzy"
+      },
+      {
+        "word": "quatre",
+        "hint": "Cztery"
+      },
+      {
+        "word": "cinq",
+        "hint": "Pięć"
+      },
+      {
+        "word": "sept",
+        "hint": "Siedem"
+      },
+      {
+        "word": "huit",
+        "hint": "Osiem"
+      },
+      {
+        "word": "neuf",
+        "hint": "Dziewięć"
+      },
+      {
+        "word": "onze",
+        "hint": "Jedenaście"
+      },
+      {
+        "word": "douze",
+        "hint": "Dwanaście"
+      },
+      {
+        "word": "vingt",
+        "hint": "Dwadzieścia"
+      },
+      {
+        "word": "trente",
+        "hint": "Trzydzieści"
+      },
+      {
+        "word": "quarante",
+        "hint": "Czterdzieści"
+      },
+      {
+        "word": "cinquante",
+        "hint": "Pięćdziesiąt"
+      },
+      {
+        "word": "soixante",
+        "hint": "Sześćdziesiąt"
+      },
+      {
+        "word": "cent",
+        "hint": "Sto"
+      }
+    ]
+  },
+  {
+    "key": "greetings_wb",
+    "name": "Powitania",
+    "description": "Zwroty powitalne po francusku",
+    "iconName": "hand.wave",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "bonjour",
+        "hint": "Dzień dobry"
+      },
+      {
+        "word": "bonsoir",
+        "hint": "Dobry wieczór"
+      },
+      {
+        "word": "salut",
+        "hint": "Cześć"
+      },
+      {
+        "word": "merci",
+        "hint": "Dziękuję"
+      },
+      {
+        "word": "pardon",
+        "hint": "Przepraszam"
+      },
+      {
+        "word": "bienvenue",
+        "hint": "Witamy"
+      },
+      {
+        "word": "enchanté",
+        "hint": "Miło mi"
+      },
+      {
+        "word": "aurevoir",
+        "hint": "Do widzenia"
+      },
+      {
+        "word": "bonne nuit",
+        "hint": "Dobranoc"
+      },
+      {
+        "word": "comment",
+        "hint": "Jak"
+      },
+      {
+        "word": "madame",
+        "hint": "Pani"
+      },
+      {
+        "word": "monsieur",
+        "hint": "Pan"
+      },
+      {
+        "word": "mademoiselle",
+        "hint": "Panna"
+      },
+      {
+        "word": "excusez",
+        "hint": "Przepraszam (formalnie)"
+      },
+      {
+        "word": "félicitations",
+        "hint": "Gratulacje"
+      }
+    ]
+  },
+  {
+    "key": "food_wb",
+    "name": "Jedzenie",
+    "description": "Popularne produkty spożywcze po francusku",
+    "iconName": "fork.knife",
+    "color": "#84cc16",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "pain",
+        "hint": "Chleb"
+      },
+      {
+        "word": "fromage",
+        "hint": "Ser"
+      },
+      {
+        "word": "poulet",
+        "hint": "Kurczak"
+      },
+      {
+        "word": "oeuf",
+        "hint": "Jajko"
+      },
+      {
+        "word": "riz",
+        "hint": "Ryż"
+      },
+      {
+        "word": "soupe",
+        "hint": "Zupa"
+      },
+      {
+        "word": "salade",
+        "hint": "Sałatka"
+      },
+      {
+        "word": "beurre",
+        "hint": "Masło"
+      },
+      {
+        "word": "viande",
+        "hint": "Mięso"
+      },
+      {
+        "word": "porc",
+        "hint": "Wieprzowina"
+      },
+      {
+        "word": "saucisse",
+        "hint": "Kiełbasa"
+      },
+      {
+        "word": "pâtes",
+        "hint": "Makaron"
+      },
+      {
+        "word": "crêpe",
+        "hint": "Naleśnik"
+      },
+      {
+        "word": "confiture",
+        "hint": "Dżem"
+      },
+      {
+        "word": "miel",
+        "hint": "Miód"
+      }
+    ]
+  },
+  {
+    "key": "clothing_wb",
+    "name": "Ubrania",
+    "description": "Nazwy ubrań po francusku",
+    "iconName": "tshirt",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "chemise",
+        "hint": "Koszula"
+      },
+      {
+        "word": "pantalon",
+        "hint": "Spodnie"
+      },
+      {
+        "word": "chaussure",
+        "hint": "But"
+      },
+      {
+        "word": "manteau",
+        "hint": "Płaszcz"
+      },
+      {
+        "word": "chapeau",
+        "hint": "Kapelusz"
+      },
+      {
+        "word": "jupe",
+        "hint": "Spódnica"
+      },
+      {
+        "word": "robe",
+        "hint": "Sukienka"
+      },
+      {
+        "word": "cravate",
+        "hint": "Krawat"
+      },
+      {
+        "word": "ceinture",
+        "hint": "Pasek"
+      },
+      {
+        "word": "gant",
+        "hint": "Rękawiczka"
+      },
+      {
+        "word": "écharpe",
+        "hint": "Szalik"
+      },
+      {
+        "word": "veste",
+        "hint": "Kurtka"
+      },
+      {
+        "word": "pull",
+        "hint": "Sweter"
+      },
+      {
+        "word": "chaussette",
+        "hint": "Skarpetka"
+      },
+      {
+        "word": "botte",
+        "hint": "Kozak"
+      }
+    ]
+  },
+  {
+    "key": "house_rooms_wb",
+    "name": "Dom i pokoje",
+    "description": "Pomieszczenia i elementy domu po francusku",
+    "iconName": "house",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "cuisine",
+        "hint": "Kuchnia"
+      },
+      {
+        "word": "chambre",
+        "hint": "Sypialnia"
+      },
+      {
+        "word": "salon",
+        "hint": "Salon"
+      },
+      {
+        "word": "jardin",
+        "hint": "Ogród"
+      },
+      {
+        "word": "garage",
+        "hint": "Garaż"
+      },
+      {
+        "word": "grenier",
+        "hint": "Strych"
+      },
+      {
+        "word": "cave",
+        "hint": "Piwnica"
+      },
+      {
+        "word": "balcon",
+        "hint": "Balkon"
+      },
+      {
+        "word": "escalier",
+        "hint": "Schody"
+      },
+      {
+        "word": "couloir",
+        "hint": "Korytarz"
+      },
+      {
+        "word": "fenêtre",
+        "hint": "Okno"
+      },
+      {
+        "word": "plafond",
+        "hint": "Sufit"
+      },
+      {
+        "word": "plancher",
+        "hint": "Podłoga"
+      },
+      {
+        "word": "terrasse",
+        "hint": "Taras"
+      },
+      {
+        "word": "entrée",
+        "hint": "Wejście"
+      }
+    ]
+  },
+  {
+    "key": "weather_wb",
+    "name": "Pogoda",
+    "description": "Słownictwo pogodowe po francusku",
+    "iconName": "cloud.sun",
+    "color": "#0ea5e9",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "soleil",
+        "hint": "Słońce"
+      },
+      {
+        "word": "pluie",
+        "hint": "Deszcz"
+      },
+      {
+        "word": "neige",
+        "hint": "Śnieg"
+      },
+      {
+        "word": "nuage",
+        "hint": "Chmura"
+      },
+      {
+        "word": "orage",
+        "hint": "Burza"
+      },
+      {
+        "word": "brouillard",
+        "hint": "Mgła"
+      },
+      {
+        "word": "tempête",
+        "hint": "Wichura"
+      },
+      {
+        "word": "tonnerre",
+        "hint": "Grzmot"
+      },
+      {
+        "word": "éclair",
+        "hint": "Błyskawica"
+      },
+      {
+        "word": "grêle",
+        "hint": "Grad"
+      },
+      {
+        "word": "verglas",
+        "hint": "Gołoledź"
+      },
+      {
+        "word": "chaleur",
+        "hint": "Upał"
+      },
+      {
+        "word": "froid",
+        "hint": "Zimno"
+      },
+      {
+        "word": "humide",
+        "hint": "Wilgotny"
+      },
+      {
+        "word": "averse",
+        "hint": "Ulewa"
+      }
+    ]
+  },
+  {
+    "key": "professions_wb",
+    "name": "Zawody",
+    "description": "Nazwy zawodów po francusku",
+    "iconName": "briefcase",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "médecin",
+        "hint": "Lekarz"
+      },
+      {
+        "word": "professeur",
+        "hint": "Nauczyciel"
+      },
+      {
+        "word": "avocat",
+        "hint": "Prawnik"
+      },
+      {
+        "word": "boulanger",
+        "hint": "Piekarz"
+      },
+      {
+        "word": "pompier",
+        "hint": "Strażak"
+      },
+      {
+        "word": "policier",
+        "hint": "Policjant"
+      },
+      {
+        "word": "cuisinier",
+        "hint": "Kucharz"
+      },
+      {
+        "word": "architecte",
+        "hint": "Architekt"
+      },
+      {
+        "word": "infirmier",
+        "hint": "Pielęgniarz"
+      },
+      {
+        "word": "dentiste",
+        "hint": "Dentysta"
+      },
+      {
+        "word": "comptable",
+        "hint": "Księgowy"
+      },
+      {
+        "word": "pharmacien",
+        "hint": "Aptekarz"
+      },
+      {
+        "word": "journaliste",
+        "hint": "Dziennikarz"
+      },
+      {
+        "word": "plombier",
+        "hint": "Hydraulik"
+      },
+      {
+        "word": "électricien",
+        "hint": "Elektryk"
+      }
+    ]
+  },
+  {
+    "key": "transport_wb",
+    "name": "Transport",
+    "description": "Środki transportu po francusku",
+    "iconName": "car",
+    "color": "#14b8a6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "voiture",
+        "hint": "Samochód"
+      },
+      {
+        "word": "autobus",
+        "hint": "Autobus"
+      },
+      {
+        "word": "avion",
+        "hint": "Samolot"
+      },
+      {
+        "word": "bateau",
+        "hint": "Statek"
+      },
+      {
+        "word": "train",
+        "hint": "Pociąg"
+      },
+      {
+        "word": "vélo",
+        "hint": "Rower"
+      },
+      {
+        "word": "moto",
+        "hint": "Motocykl"
+      },
+      {
+        "word": "tramway",
+        "hint": "Tramwaj"
+      },
+      {
+        "word": "métro",
+        "hint": "Metro"
+      },
+      {
+        "word": "hélicoptère",
+        "hint": "Helikopter"
+      },
+      {
+        "word": "camion",
+        "hint": "Ciężarówka"
+      },
+      {
+        "word": "navire",
+        "hint": "Okręt"
+      },
+      {
+        "word": "fusée",
+        "hint": "Rakieta"
+      },
+      {
+        "word": "taxi",
+        "hint": "Taksówka"
+      },
+      {
+        "word": "trottinette",
+        "hint": "Hulajnoga"
+      }
+    ]
+  },
+  {
+    "key": "school_wb",
+    "name": "Szkoła",
+    "description": "Słownictwo szkolne po francusku",
+    "iconName": "book",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "crayon",
+        "hint": "Ołówek"
+      },
+      {
+        "word": "stylo",
+        "hint": "Długopis"
+      },
+      {
+        "word": "cahier",
+        "hint": "Zeszyt"
+      },
+      {
+        "word": "tableau",
+        "hint": "Tablica"
+      },
+      {
+        "word": "gomme",
+        "hint": "Gumka"
+      },
+      {
+        "word": "règle",
+        "hint": "Linijka"
+      },
+      {
+        "word": "cartable",
+        "hint": "Tornister"
+      },
+      {
+        "word": "ciseaux",
+        "hint": "Nożyczki"
+      },
+      {
+        "word": "bibliothèque",
+        "hint": "Biblioteka"
+      },
+      {
+        "word": "devoirs",
+        "hint": "Praca domowa"
+      },
+      {
+        "word": "examen",
+        "hint": "Egzamin"
+      },
+      {
+        "word": "récréation",
+        "hint": "Przerwa"
+      },
+      {
+        "word": "dictionnaire",
+        "hint": "Słownik"
+      },
+      {
+        "word": "trousse",
+        "hint": "Piórnik"
+      },
+      {
+        "word": "cantine",
+        "hint": "Stołówka"
+      }
+    ]
+  },
+  {
+    "key": "kitchen_utensils_wb",
+    "name": "Przybory kuchenne",
+    "description": "Naczynia i przybory kuchenne po francusku",
+    "iconName": "cup.and.saucer",
+    "color": "#d97706",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "couteau",
+        "hint": "Nóż"
+      },
+      {
+        "word": "fourchette",
+        "hint": "Widelec"
+      },
+      {
+        "word": "cuillère",
+        "hint": "Łyżka"
+      },
+      {
+        "word": "assiette",
+        "hint": "Talerz"
+      },
+      {
+        "word": "casserole",
+        "hint": "Garnek"
+      },
+      {
+        "word": "poêle",
+        "hint": "Patelnia"
+      },
+      {
+        "word": "tasse",
+        "hint": "Filiżanka"
+      },
+      {
+        "word": "verre",
+        "hint": "Szklanka"
+      },
+      {
+        "word": "bouilloire",
+        "hint": "Czajnik"
+      },
+      {
+        "word": "passoire",
+        "hint": "Durszlak"
+      },
+      {
+        "word": "fouet",
+        "hint": "Trzepaczka"
+      },
+      {
+        "word": "louche",
+        "hint": "Chochla"
+      },
+      {
+        "word": "planche",
+        "hint": "Deska do krojenia"
+      },
+      {
+        "word": "ouvre-boîte",
+        "hint": "Otwieracz do puszek"
+      },
+      {
+        "word": "plateau",
+        "hint": "Taca"
+      }
+    ]
+  },
+  {
+    "key": "sports_wb",
+    "name": "Sport",
+    "description": "Dyscypliny sportowe po francusku",
+    "iconName": "sportscourt",
+    "color": "#10b981",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "football",
+        "hint": "Piłka nożna"
+      },
+      {
+        "word": "natation",
+        "hint": "Pływanie"
+      },
+      {
+        "word": "tennis",
+        "hint": "Tenis"
+      },
+      {
+        "word": "cyclisme",
+        "hint": "Kolarstwo"
+      },
+      {
+        "word": "escrime",
+        "hint": "Szermierka"
+      },
+      {
+        "word": "athlétisme",
+        "hint": "Lekkoatletyka"
+      },
+      {
+        "word": "boxe",
+        "hint": "Boks"
+      },
+      {
+        "word": "rugby",
+        "hint": "Rugby"
+      },
+      {
+        "word": "voile",
+        "hint": "Żeglarstwo"
+      },
+      {
+        "word": "équitation",
+        "hint": "Jeździectwo"
+      },
+      {
+        "word": "escalade",
+        "hint": "Wspinaczka"
+      },
+      {
+        "word": "plongée",
+        "hint": "Nurkowanie"
+      },
+      {
+        "word": "handball",
+        "hint": "Piłka ręczna"
+      },
+      {
+        "word": "aviron",
+        "hint": "Wioślarstwo"
+      },
+      {
+        "word": "gymnastique",
+        "hint": "Gimnastyka"
+      }
+    ]
+  },
+  {
+    "key": "music_instruments_wb",
+    "name": "Instrumenty muzyczne",
+    "description": "Nazwy instrumentów muzycznych po francusku",
+    "iconName": "music.note",
+    "color": "#a855f7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "piano",
+        "hint": "Pianino"
+      },
+      {
+        "word": "guitare",
+        "hint": "Gitara"
+      },
+      {
+        "word": "violon",
+        "hint": "Skrzypce"
+      },
+      {
+        "word": "batterie",
+        "hint": "Perkusja"
+      },
+      {
+        "word": "trompette",
+        "hint": "Trąbka"
+      },
+      {
+        "word": "flûte",
+        "hint": "Flet"
+      },
+      {
+        "word": "harpe",
+        "hint": "Harfa"
+      },
+      {
+        "word": "saxophone",
+        "hint": "Saksofon"
+      },
+      {
+        "word": "clarinette",
+        "hint": "Klarnet"
+      },
+      {
+        "word": "violoncelle",
+        "hint": "Wiolonczela"
+      },
+      {
+        "word": "accordéon",
+        "hint": "Akordeon"
+      },
+      {
+        "word": "hautbois",
+        "hint": "Obój"
+      },
+      {
+        "word": "basson",
+        "hint": "Fagot"
+      },
+      {
+        "word": "trombone",
+        "hint": "Puzon"
+      },
+      {
+        "word": "tambour",
+        "hint": "Bęben"
+      }
+    ]
+  },
+  {
+    "key": "nature_wb",
+    "name": "Natura",
+    "description": "Słownictwo przyrodnicze po francusku",
+    "iconName": "leaf.arrow.circlepath",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "forêt",
+        "hint": "Las"
+      },
+      {
+        "word": "montagne",
+        "hint": "Góra"
+      },
+      {
+        "word": "rivière",
+        "hint": "Rzeka"
+      },
+      {
+        "word": "océan",
+        "hint": "Ocean"
+      },
+      {
+        "word": "prairie",
+        "hint": "Łąka"
+      },
+      {
+        "word": "cascade",
+        "hint": "Wodospad"
+      },
+      {
+        "word": "volcan",
+        "hint": "Wulkan"
+      },
+      {
+        "word": "désert",
+        "hint": "Pustynia"
+      },
+      {
+        "word": "glacier",
+        "hint": "Lodowiec"
+      },
+      {
+        "word": "falaise",
+        "hint": "Klif"
+      },
+      {
+        "word": "colline",
+        "hint": "Wzgórze"
+      },
+      {
+        "word": "vallée",
+        "hint": "Dolina"
+      },
+      {
+        "word": "marais",
+        "hint": "Bagno"
+      },
+      {
+        "word": "île",
+        "hint": "Wyspa"
+      },
+      {
+        "word": "rocher",
+        "hint": "Skała"
+      }
+    ]
+  },
+  {
+    "key": "emotions_wb",
+    "name": "Emocje",
+    "description": "Uczucia i emocje po francusku",
+    "iconName": "heart",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "joie",
+        "hint": "Radość"
+      },
+      {
+        "word": "tristesse",
+        "hint": "Smutek"
+      },
+      {
+        "word": "colère",
+        "hint": "Złość"
+      },
+      {
+        "word": "peur",
+        "hint": "Strach"
+      },
+      {
+        "word": "surprise",
+        "hint": "Zaskoczenie"
+      },
+      {
+        "word": "honte",
+        "hint": "Wstyd"
+      },
+      {
+        "word": "fierté",
+        "hint": "Duma"
+      },
+      {
+        "word": "jalousie",
+        "hint": "Zazdrość"
+      },
+      {
+        "word": "espoir",
+        "hint": "Nadzieja"
+      },
+      {
+        "word": "ennui",
+        "hint": "Nuda"
+      },
+      {
+        "word": "bonheur",
+        "hint": "Szczęście"
+      },
+      {
+        "word": "inquiétude",
+        "hint": "Niepokój"
+      },
+      {
+        "word": "gratitude",
+        "hint": "Wdzięczność"
+      },
+      {
+        "word": "nostalgie",
+        "hint": "Tęsknota"
+      },
+      {
+        "word": "courage",
+        "hint": "Odwaga"
+      }
+    ]
+  },
+  {
+    "key": "technology_wb",
+    "name": "Technologia",
+    "description": "Słownictwo technologiczne po francusku",
+    "iconName": "desktopcomputer",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ordinateur",
+        "hint": "Komputer"
+      },
+      {
+        "word": "clavier",
+        "hint": "Klawiatura"
+      },
+      {
+        "word": "écran",
+        "hint": "Ekran"
+      },
+      {
+        "word": "webcam",
+        "hint": "Kamera internetowa"
+      },
+      {
+        "word": "imprimante",
+        "hint": "Drukarka"
+      },
+      {
+        "word": "logiciel",
+        "hint": "Oprogramowanie"
+      },
+      {
+        "word": "réseau",
+        "hint": "Sieć"
+      },
+      {
+        "word": "fichier",
+        "hint": "Plik"
+      },
+      {
+        "word": "mot de passe",
+        "hint": "Hasło"
+      },
+      {
+        "word": "télécharger",
+        "hint": "Pobierać"
+      },
+      {
+        "word": "navigateur",
+        "hint": "Przeglądarka"
+      },
+      {
+        "word": "disque dur",
+        "hint": "Dysk twardy"
+      },
+      {
+        "word": "tablette",
+        "hint": "Tablet"
+      },
+      {
+        "word": "portable",
+        "hint": "Laptop"
+      },
+      {
+        "word": "données",
+        "hint": "Dane"
+      }
+    ]
+  },
+  {
+    "key": "office_wb",
+    "name": "Biuro",
+    "description": "Wyposażenie biurowe po francusku",
+    "iconName": "building.2",
+    "color": "#78716c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "bureau",
+        "hint": "Biurko"
+      },
+      {
+        "word": "chaise",
+        "hint": "Krzesło"
+      },
+      {
+        "word": "agrafeuse",
+        "hint": "Zszywacz"
+      },
+      {
+        "word": "classeur",
+        "hint": "Segregator"
+      },
+      {
+        "word": "enveloppe",
+        "hint": "Koperta"
+      },
+      {
+        "word": "tampon",
+        "hint": "Pieczątka"
+      },
+      {
+        "word": "calendrier",
+        "hint": "Kalendarz"
+      },
+      {
+        "word": "dossier",
+        "hint": "Teczka"
+      },
+      {
+        "word": "réunion",
+        "hint": "Spotkanie"
+      },
+      {
+        "word": "contrat",
+        "hint": "Umowa"
+      },
+      {
+        "word": "facture",
+        "hint": "Faktura"
+      },
+      {
+        "word": "photocopieuse",
+        "hint": "Kserokopiarka"
+      },
+      {
+        "word": "collègue",
+        "hint": "Kolega z pracy"
+      },
+      {
+        "word": "salaire",
+        "hint": "Wynagrodzenie"
+      },
+      {
+        "word": "embauche",
+        "hint": "Zatrudnienie"
+      }
+    ]
+  },
+  {
+    "key": "health_medical_wb",
+    "name": "Zdrowie",
+    "description": "Słownictwo medyczne po francusku",
+    "iconName": "cross.case",
+    "color": "#dc2626",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "hôpital",
+        "hint": "Szpital"
+      },
+      {
+        "word": "pharmacie",
+        "hint": "Apteka"
+      },
+      {
+        "word": "ordonnance",
+        "hint": "Recepta"
+      },
+      {
+        "word": "médicament",
+        "hint": "Lekarstwo"
+      },
+      {
+        "word": "fièvre",
+        "hint": "Gorączka"
+      },
+      {
+        "word": "toux",
+        "hint": "Kaszel"
+      },
+      {
+        "word": "rhume",
+        "hint": "Przeziębienie"
+      },
+      {
+        "word": "blessure",
+        "hint": "Rana"
+      },
+      {
+        "word": "pansement",
+        "hint": "Opatrunek"
+      },
+      {
+        "word": "vaccin",
+        "hint": "Szczepionka"
+      },
+      {
+        "word": "chirurgie",
+        "hint": "Chirurgia"
+      },
+      {
+        "word": "allergie",
+        "hint": "Alergia"
+      },
+      {
+        "word": "douleur",
+        "hint": "Ból"
+      },
+      {
+        "word": "guérison",
+        "hint": "Wyzdrowienie"
+      },
+      {
+        "word": "tension",
+        "hint": "Ciśnienie"
+      }
+    ]
+  },
+  {
+    "key": "travel_wb",
+    "name": "Podróże",
+    "description": "Słownictwo podróżnicze po francusku",
+    "iconName": "airplane",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "valise",
+        "hint": "Walizka"
+      },
+      {
+        "word": "passeport",
+        "hint": "Paszport"
+      },
+      {
+        "word": "billet",
+        "hint": "Bilet"
+      },
+      {
+        "word": "hôtel",
+        "hint": "Hotel"
+      },
+      {
+        "word": "aéroport",
+        "hint": "Lotnisko"
+      },
+      {
+        "word": "gare",
+        "hint": "Dworzec"
+      },
+      {
+        "word": "réservation",
+        "hint": "Rezerwacja"
+      },
+      {
+        "word": "touriste",
+        "hint": "Turysta"
+      },
+      {
+        "word": "excursion",
+        "hint": "Wycieczka"
+      },
+      {
+        "word": "douane",
+        "hint": "Cło"
+      },
+      {
+        "word": "frontière",
+        "hint": "Granica"
+      },
+      {
+        "word": "itinéraire",
+        "hint": "Trasa"
+      },
+      {
+        "word": "hébergement",
+        "hint": "Zakwaterowanie"
+      },
+      {
+        "word": "souvenir",
+        "hint": "Pamiątka"
+      },
+      {
+        "word": "croisière",
+        "hint": "Rejs"
+      }
+    ]
+  },
+  {
+    "key": "hobbies_wb",
+    "name": "Hobby",
+    "description": "Zainteresowania i hobby po francusku",
+    "iconName": "star",
+    "color": "#eab308",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "lecture",
+        "hint": "Czytanie"
+      },
+      {
+        "word": "peinture",
+        "hint": "Malarstwo"
+      },
+      {
+        "word": "jardinage",
+        "hint": "Ogrodnictwo"
+      },
+      {
+        "word": "photographie",
+        "hint": "Fotografia"
+      },
+      {
+        "word": "broderie",
+        "hint": "Haft"
+      },
+      {
+        "word": "randonnée",
+        "hint": "Wędrówka"
+      },
+      {
+        "word": "bricolage",
+        "hint": "Majsterkowanie"
+      },
+      {
+        "word": "pêche",
+        "hint": "Wędkarstwo"
+      },
+      {
+        "word": "dessin",
+        "hint": "Rysowanie"
+      },
+      {
+        "word": "tricot",
+        "hint": "Robienie na drutach"
+      },
+      {
+        "word": "poterie",
+        "hint": "Garncarstwo"
+      },
+      {
+        "word": "couture",
+        "hint": "Szycie"
+      },
+      {
+        "word": "sculpture",
+        "hint": "Rzeźbiarstwo"
+      },
+      {
+        "word": "collection",
+        "hint": "Kolekcjonerstwo"
+      },
+      {
+        "word": "calligraphie",
+        "hint": "Kaligrafia"
+      }
+    ]
+  },
+  {
+    "key": "drinks_beverages_wb",
+    "name": "Napoje",
+    "description": "Napoje i płyny po francusku",
+    "iconName": "cup.and.saucer.fill",
+    "color": "#0ea5e9",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "café",
+        "hint": "Kawa"
+      },
+      {
+        "word": "thé",
+        "hint": "Herbata"
+      },
+      {
+        "word": "jus",
+        "hint": "Sok"
+      },
+      {
+        "word": "lait",
+        "hint": "Mleko"
+      },
+      {
+        "word": "eau",
+        "hint": "Woda"
+      },
+      {
+        "word": "bière",
+        "hint": "Piwo"
+      },
+      {
+        "word": "vin",
+        "hint": "Wino"
+      },
+      {
+        "word": "limonade",
+        "hint": "Lemoniada"
+      },
+      {
+        "word": "chocolat chaud",
+        "hint": "Gorąca czekolada"
+      },
+      {
+        "word": "tisane",
+        "hint": "Herbata ziołowa"
+      },
+      {
+        "word": "cidre",
+        "hint": "Cydr"
+      },
+      {
+        "word": "sirop",
+        "hint": "Syrop"
+      },
+      {
+        "word": "champagne",
+        "hint": "Szampan"
+      },
+      {
+        "word": "infusion",
+        "hint": "Napar"
+      },
+      {
+        "word": "smoothie",
+        "hint": "Koktajl owocowy"
+      }
+    ]
+  },
+  {
+    "key": "desserts_sweets_wb",
+    "name": "Desery i słodycze",
+    "description": "Desery i wyroby cukiernicze po francusku",
+    "iconName": "birthday.cake",
+    "color": "#f472b6",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "gâteau",
+        "hint": "Ciasto"
+      },
+      {
+        "word": "croissant",
+        "hint": "Rogalik"
+      },
+      {
+        "word": "macaron",
+        "hint": "Makaron (ciastko)"
+      },
+      {
+        "word": "millefeuille",
+        "hint": "Napoleonka"
+      },
+      {
+        "word": "tarte",
+        "hint": "Tarta"
+      },
+      {
+        "word": "mousse",
+        "hint": "Mus"
+      },
+      {
+        "word": "brioche",
+        "hint": "Bułka maślana"
+      },
+      {
+        "word": "profiterole",
+        "hint": "Ptysio"
+      },
+      {
+        "word": "madeleine",
+        "hint": "Magdalenka"
+      },
+      {
+        "word": "meringue",
+        "hint": "Beza"
+      },
+      {
+        "word": "bonbon",
+        "hint": "Cukierek"
+      },
+      {
+        "word": "sorbet",
+        "hint": "Sorbet"
+      },
+      {
+        "word": "caramel",
+        "hint": "Karmel"
+      },
+      {
+        "word": "nougat",
+        "hint": "Nugat"
+      },
+      {
+        "word": "beignet",
+        "hint": "Pączek"
+      }
+    ]
+  },
+  {
+    "key": "furniture_wb",
+    "name": "Meble",
+    "description": "Nazwy mebli po francusku",
+    "iconName": "sofa",
+    "color": "#a16207",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "canapé",
+        "hint": "Kanapa"
+      },
+      {
+        "word": "fauteuil",
+        "hint": "Fotel"
+      },
+      {
+        "word": "armoire",
+        "hint": "Szafa"
+      },
+      {
+        "word": "commode",
+        "hint": "Komoda"
+      },
+      {
+        "word": "étagère",
+        "hint": "Półka"
+      },
+      {
+        "word": "table",
+        "hint": "Stół"
+      },
+      {
+        "word": "lit",
+        "hint": "Łóżko"
+      },
+      {
+        "word": "tiroir",
+        "hint": "Szuflada"
+      },
+      {
+        "word": "miroir",
+        "hint": "Lustro"
+      },
+      {
+        "word": "tapis",
+        "hint": "Dywan"
+      },
+      {
+        "word": "rideau",
+        "hint": "Zasłona"
+      },
+      {
+        "word": "lampe",
+        "hint": "Lampa"
+      },
+      {
+        "word": "coussin",
+        "hint": "Poduszka"
+      },
+      {
+        "word": "tabouret",
+        "hint": "Taboret"
+      },
+      {
+        "word": "buffet",
+        "hint": "Kredens"
+      }
+    ]
+  },
+  {
+    "key": "tools_wb",
+    "name": "Narzędzia",
+    "description": "Nazwy narzędzi po francusku",
+    "iconName": "wrench",
+    "color": "#737373",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "marteau",
+        "hint": "Młotek"
+      },
+      {
+        "word": "tournevis",
+        "hint": "Śrubokręt"
+      },
+      {
+        "word": "scie",
+        "hint": "Piła"
+      },
+      {
+        "word": "perceuse",
+        "hint": "Wiertarka"
+      },
+      {
+        "word": "clé",
+        "hint": "Klucz"
+      },
+      {
+        "word": "pince",
+        "hint": "Szczypce"
+      },
+      {
+        "word": "mètre",
+        "hint": "Miara"
+      },
+      {
+        "word": "niveau",
+        "hint": "Poziomica"
+      },
+      {
+        "word": "échelle",
+        "hint": "Drabina"
+      },
+      {
+        "word": "brouette",
+        "hint": "Taczka"
+      },
+      {
+        "word": "rabot",
+        "hint": "Hebel"
+      },
+      {
+        "word": "burin",
+        "hint": "Dłuto"
+      },
+      {
+        "word": "lime",
+        "hint": "Pilnik"
+      },
+      {
+        "word": "pelle",
+        "hint": "Łopata"
+      },
+      {
+        "word": "râteau",
+        "hint": "Grabie"
+      }
+    ]
+  },
+  {
+    "key": "materials_wb",
+    "name": "Materiały",
+    "description": "Nazwy materiałów po francusku",
+    "iconName": "cube",
+    "color": "#57534e",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "bois",
+        "hint": "Drewno"
+      },
+      {
+        "word": "métal",
+        "hint": "Metal"
+      },
+      {
+        "word": "pierre",
+        "hint": "Kamień"
+      },
+      {
+        "word": "céramique",
+        "hint": "Ceramika"
+      },
+      {
+        "word": "plastique",
+        "hint": "Plastik"
+      },
+      {
+        "word": "coton",
+        "hint": "Bawełna"
+      },
+      {
+        "word": "soie",
+        "hint": "Jedwab"
+      },
+      {
+        "word": "laine",
+        "hint": "Wełna"
+      },
+      {
+        "word": "cuir",
+        "hint": "Skóra"
+      },
+      {
+        "word": "caoutchouc",
+        "hint": "Guma"
+      },
+      {
+        "word": "béton",
+        "hint": "Beton"
+      },
+      {
+        "word": "acier",
+        "hint": "Stal"
+      },
+      {
+        "word": "bronze",
+        "hint": "Brąz"
+      },
+      {
+        "word": "porcelaine",
+        "hint": "Porcelana"
+      },
+      {
+        "word": "marbre",
+        "hint": "Marmur"
+      }
+    ]
   }
 ]
