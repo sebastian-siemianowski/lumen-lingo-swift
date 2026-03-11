@@ -47,7 +47,7 @@ Expand all 17 beta language pairs to **105 categories × 15 items = 1,575 items*
 | 11 | polish_arabic | Polish | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 12 | polish_chinese | Polish | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 13 | polish_french | Polish | 105/105 | 1575/1575 | 20/20 | ✅ |
-| 14 | polish_japanese | Polish | 97/105 | 1455/1575 | 18/20 | 🔄 |
+| 14 | polish_japanese | Polish | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 15 | polish_ukrainian | Polish | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 16 | ukrainian_english | Ukrainian | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 17 | ukrainian_polish | Ukrainian | 105/105 | 1575/1575 | 21/21 | ✅ |
@@ -185,8 +185,8 @@ All 20 batches completed. All 105 categories use correct question/_____/options/
 | 19 | exclamation, double_pronoms, ne_expletif, tout_meme_autre, revision_generale | ✅ |
 | 20 | structures_argumentatives, registre_informel | ✅ |
 
-### polish_japanese — 🔄 IN PROGRESS (97/105 categories, 1455 items)
-ID prefixes used: pj_part, pj_verb, pj_adj, pj_neg, pj_q, pj_pol, pj_cnt, pj_te, pj_nadj, pj_loc, pj_time, pj_des, pj_pst, pj_gr, pj_pot, pj_cta, pj_conj, pj_vg, pj_imp, pj_psv, pj_cau, pj_cba, pj_ctr, pj_vol, pj_cmp, pj_sup, pj_adv, pj_nom, pj_rel, pj_quo, pj_hrs, pj_app, pj_obl, pj_per, pj_prh, pj_rkr, pj_rnd, pj_pur, pj_cga, pj_ckd, pj_lst, pj_smn, pj_chn, pj_prp, pj_exp, pj_adh, pj_try, pj_tri, pj_cpv, pj_hon, pj_hum, pj_exi, pj_dik, pj_duf, pj_sen, pj_fwr, pj_inf, pj_ono, pj_num, pj_fam, pj_bod, pj_emo, pj_wea, pj_foo, pj_tra, pj_sho, pj_wrk, pj_edu, pj_tec, pj_spo, pj_hou, pj_trn, pj_med, pj_soc, pj_opi, pj_req, pj_fcl, pj_idi, pj_prv, pj_n5a, pj_n4a, pj_n3a, pj_n2a, pj_n1a, pj_kei, pj_vnc, pj_ajc, pj_cwa, pj_tcl, pj_emq, pj_cap, pj_bna, pj_reg, pj_sur, pj_cer, pj_unc, pj_fco
+### polish_japanese — ✅ COMPLETE (105/105 categories, 1575 items)
+ID prefixes used: pj_part, pj_verb, pj_adj, pj_neg, pj_q, pj_pol, pj_cnt, pj_te, pj_nadj, pj_loc, pj_time, pj_des, pj_pst, pj_gr, pj_pot, pj_cta, pj_conj, pj_vg, pj_imp, pj_psv, pj_cau, pj_cba, pj_ctr, pj_vol, pj_cmp, pj_sup, pj_adv, pj_nom, pj_rel, pj_quo, pj_hrs, pj_app, pj_obl, pj_per, pj_prh, pj_rkr, pj_rnd, pj_pur, pj_cga, pj_ckd, pj_lst, pj_smn, pj_chn, pj_prp, pj_exp, pj_adh, pj_try, pj_tri, pj_cpv, pj_hon, pj_hum, pj_exi, pj_dik, pj_duf, pj_sen, pj_fwr, pj_inf, pj_ono, pj_num, pj_fam, pj_bod, pj_emo, pj_wea, pj_foo, pj_tra, pj_sho, pj_wrk, pj_edu, pj_tec, pj_spo, pj_hou, pj_trn, pj_med, pj_soc, pj_opi, pj_req, pj_fcl, pj_idi, pj_prv, pj_n5a, pj_n4a, pj_n3a, pj_n2a, pj_n1a, pj_kei, pj_vnc, pj_ajc, pj_cwa, pj_tcl, pj_emq, pj_cap, pj_bna, pj_reg, pj_sur, pj_cer, pj_unc, pj_fco, pj_biz, pj_aca, pj_nws, pj_cls, pj_cmk, pj_rsh, pj_art, pj_exs
 
 | Batch | Categories | Status |
 |-------|-----------|--------|
@@ -208,8 +208,8 @@ ID prefixes used: pj_part, pj_verb, pj_adj, pj_neg, pj_q, pj_pol, pj_cnt, pj_te,
 | 16 | jlpt_n2_patterns, jlpt_n1_patterns, keigo_review, verb_noun_collocations, adjective_collocations | ✅ |
 | 17 | counter_words_advanced, temporal_clauses, embedded_questions, causative_passive, benefactive_advanced | ✅ |
 | 18 | expressing_regret, expressing_surprise, expressing_certainty, expressing_uncertainty, formal_correspondence | ✅ |
-| 19 | business_japanese, academic_japanese, newspaper_japanese, classical_remnants, common_mistakes | ⬜ |
-| 20 | register_shifts, environment_nature, arts_culture, science_research, exam_strategies | ⬜ |
+| 19 | business_japanese, academic_japanese, newspaper_japanese, classical_remnants, common_mistakes | ✅ |
+| 20 | register_shifts, arts_culture, exam_strategies | ✅ |
 
 ### polish_ukrainian — ✅ COMPLETE (105/105 categories, 1575 items)
 All 20 batches completed. ID prefixes used: pu_pres, pu_asp, pu_past, pu_fut, pu_case, pu_prep, pu_vc, pu_pp, pu_pos, pu_dem, pu_neg, pu_qt, pu_imp, pu_cond, pu_ref, pu_gn, pu_pl, pu_adj, pu_comp, pu_sup, pu_advb, pu_advm, pu_nc, pu_no, pu_cb, pu_cs, pu_rp, pu_pas, pu_rs, pu_pca, pu_ppas, pu_vn, pu_vm, pu_pvm, pu_ic, pu_voc, pu_inst, pu_gen, pu_dat, pu_acc, pu_loc, pu_cpc, pu_shc, pu_sr, pu_cc, pu_ws, pu_dim, pu_wfp, pu_wfs, pu_cw, pu_ff, pu_ct, pu_te, pu_df, pu_ad, pu_sm, pu_dtd, pu_dir, pu_tt, pu_fr, pu_sp, pu_hb, pu_wo, pu_es, pu_ti, pu_wc, pu_hh, pu_fam, pu_ef, pu_sh, pu_cf, pu_cd, pu_for, pu_inf, pu_pr, pu_oa, pu_ag, pu_ce, pu_cc2, pu_pur, pu_ch, pu_tc, pu_ip, pu_qt2, pu_em, pu_woa, pu_el, pu_ie, pu_ps, pu_col, pu_pe, pu_dm, pu_mc, pu_en, pu_pls, pu_ac, pu_scr, pu_be, pu_cj, pu_aw, pu_coe, pu_exs, pu_rt, pu_rev, pu_rsh

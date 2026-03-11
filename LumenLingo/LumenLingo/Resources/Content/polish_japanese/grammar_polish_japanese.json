@@ -19883,5 +19883,1645 @@
         "explanation": "お祈り申し上げます (oinori moushiagemasu) = 'skromnie modlę się o (Państwa zdrowie)' — standardowe zakończenie formalnego listu. 祈ります = neutralne. 願います = 'proszę'. 思います = 'myślę'. 末筆ながら (mappitsu nagara = 'choć to ostatnie pociągnięcie pędzla...') = elegancka fraza zamykająca. ご健勝 (gokenshou = Państwa zdrowie)."
       }
     ]
+  },
+  {
+    "key": "business_japanese",
+    "name": "Japoński biznesowy (ビジネス日本語)",
+    "description": "Kluczowe wzorce japońskiego biznesowego: ～させていただきます (sasete itadakimasu = pozwolę sobie), ～いたしかねます (itashikanemasu = niestety nie mogę), ～ご了承ください (goryoushou kudasai = proszę o wyrozumiałość), ～承知いたしました (shouchi itashimashita = zrozumiałem [kenjougo]). Bez tych form nie przetrwasz w japońskiej firmie!",
+    "iconName": "briefcase.fill",
+    "color": "blue",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pj_biz1",
+        "question": "ご提案_____ いただき、ありがとうございます (dziękuję za _____ [łaskawe przedstawienie] propozycji)",
+        "translation": "Goteian _____ itadaki, arigatou gozaimasu",
+        "options": [
+          "を",
+          "に",
+          "で",
+          "が"
+        ],
+        "correct": "を",
+        "explanation": "ご提案をいただく (goteian wo itadaku) = 'otrzymać propozycję (z szacunkiem)'. に = kierunek. で = narzędzie. が = podmiot. ご提案をいただきありがとうございます — standardowa formuła podziękowania za propozycję w biznesie. ご提案 (goteian = propozycja z honoryfikiem ご-). をいただく = kenjougo 'skromnie otrzymuję'."
+      },
+      {
+        "id": "pj_biz2",
+        "question": "その件につきましては、_____ (w sprawie tej kwestii, _____)",
+        "translation": "Sono ken ni tsukimashite wa, _____",
+        "options": [
+          "検討させていただきます",
+          "考えます",
+          "見ます",
+          "やってみます"
+        ],
+        "correct": "検討させていただきます",
+        "explanation": "検討させていただきます (kentou sasete itadakimasu) = 'pozwolę sobie rozpatrzyć' — formalna obietnica analizy. 考えます = 'pomyślę' (za proste). 見ます = 'zobaczę' (potoczne). やってみます = 'spróbuję' (kasualny). させていただく to kenjougo causative: 'skromnie przyjmuję pozwolenie, aby...' — DNA japońskiego biznesu!"
+      },
+      {
+        "id": "pj_biz3",
+        "question": "申し訳ございませんが、_____ (bardzo przepraszam, ale _____ [niestety nie możemy tego zrobić])",
+        "translation": "Moushiwake gozaimasen ga, _____",
+        "options": [
+          "いたしかねます",
+          "できません",
+          "しません",
+          "やりません"
+        ],
+        "correct": "いたしかねます",
+        "explanation": "いたしかねます (itashikanemasu) = 'niestety nie jestem w stanie' — kenjougo odmowa. できません = 'nie mogę' (za bezpośrednie). しません = 'nie zrobię' (zbyt ostre). やりません = kasualny. ～かねる (kaneru) = 'nie móc z żalem/z trudnością'. いたす (itasu) = kenjougo する. いたしかねます = 'z żalem nie mogę' — najdelikatniejsza odmowa w biznesie!"
+      },
+      {
+        "id": "pj_biz4",
+        "question": "_____ 、会議は来週に延期いたします (_____, spotkanie zostanie przełożone na przyszły tydzień)",
+        "translation": "_____, kaigi wa raishuu ni enki itashimasu",
+        "options": [
+          "誠に恐れ入りますが",
+          "すみませんが",
+          "ごめんなさい",
+          "悪いですが"
+        ],
+        "correct": "誠に恐れ入りますが",
+        "explanation": "誠に恐れ入りますが (makoto ni osoreirimasu ga) = 'z głębi serca przepraszam, ale...' — formalny wstęp do złej wiadomości. すみませんが = standardowe. ごめんなさい = potoczne. 悪いですが = kasualny. 誠に (makoto ni = naprawdę/szczerze). 恐れ入る (osoreiriru = być zakłopotanym z powodu zawstydzenia). 延期 (enki = przełożenie)."
+      },
+      {
+        "id": "pj_biz5",
+        "question": "承知_____ (zrozumiałem _____)",
+        "translation": "Shouchi _____",
+        "options": [
+          "いたしました",
+          "しました",
+          "です",
+          "しています"
+        ],
+        "correct": "いたしました",
+        "explanation": "承知いたしました (shouchi itashimashita) = 'zrozumiałem (skromnie)' — kenjougo potwierdzenie zrozumienia. しました = neutralne. です = stwierdzenie. しています = ciągłe. 承知 (shouchi = akceptacja/zrozumienie). Gradacja: わかりました (neutralne) < 承知しました (formalne) < 承知いたしました (kenjougo). W biznesie: ZAWSZE 承知いたしました!"
+      },
+      {
+        "id": "pj_biz6",
+        "question": "本日は_____ をいただき、ありがとうございます (dziękuję za _____ [poświęcenie czasu] dzisiaj)",
+        "translation": "Honjitsu wa _____ wo itadaki, arigatou gozaimasu",
+        "options": [
+          "お時間",
+          "時間",
+          "タイム",
+          "お暇"
+        ],
+        "correct": "お時間",
+        "explanation": "お時間をいただく (ojikan wo itadaku) = 'otrzymać czas (od kogoś wyżej)' — standardowe podziękowanie na spotkaniu. 時間 = bez honoryfikuお (za proste). タイム = anglicyzm (za kasualny). お暇 = 'wolny czas' (inne znaczenie). お時間 z お- pokazuje szacunek do czasu rozmówcy. Otwarcie spotkania: 本日はお忙しい中、お時間をいただき..."
+      },
+      {
+        "id": "pj_biz7",
+        "question": "ご質問が_____ 、お気軽にどうぞ (jeśli mają Państwo pytania _____, proszę bez wahania)",
+        "translation": "Goshitsumon ga _____, okigaru ni douzo",
+        "options": [
+          "ございましたら",
+          "あったら",
+          "あれば",
+          "あるなら"
+        ],
+        "correct": "ございましたら",
+        "explanation": "ございましたら (gozaimashitara) = kenjougo 'jeśli istnieją' — od ある → ございます → ございましたら (warunkowy). あったら = neutralne. あれば = neutralne warunkowe. あるなら = kasualny warunek. ございましたら to pełny formalny wzorzec. ご質問 (goshitsumon = pytanie z ご-). お気軽に (okigaru ni = swobodnie)."
+      },
+      {
+        "id": "pj_biz8",
+        "question": "来週の金曜日までに_____ (_____ [dostarczę/przedłożę] to do piątku przyszłego tygodnia)",
+        "translation": "Raishuu no kinyoubi made ni _____",
+        "options": [
+          "ご提出いたします",
+          "出します",
+          "提出します",
+          "出しておきます"
+        ],
+        "correct": "ご提出いたします",
+        "explanation": "ご提出いたします (goteishutsu itashimasu) = 'skromnie przedłożę' — podwójne kenjougo (ご- + いたす). 出します = potoczne. 提出します = neutralne. 出しておきます = potoczno-przygotowawcze. ご + 漢語 + いたす = wzorzec kenjougo dla czasowników sino-japońskich. 提出 (teishutsu = przedłożenie/złożenie dokumentu)."
+      },
+      {
+        "id": "pj_biz9",
+        "question": "お先に_____ (_____ [wychodzę wcześniej] — pożegnanie w biurze)",
+        "translation": "Osaki ni _____",
+        "options": [
+          "失礼いたします",
+          "帰ります",
+          "行きます",
+          "出ます"
+        ],
+        "correct": "失礼いたします",
+        "explanation": "お先に失礼いたします (osaki ni shitsurei itashimasu) = 'przepraszam, że wychodzę pierwszy' — żelazna formuła pożegnania w biurze! 帰ります = 'wracam' (za proste). 行きます = 'idę' (za proste). 出ます = 'wychodzę'. お先に (osaki ni = wcześniej/przed Państwem). 失礼いたします = 'popełniam niegrzeczność'. Odpowiedź: お疲れ様でした (otsukare sama deshita)!"
+      },
+      {
+        "id": "pj_biz10",
+        "question": "この度はご迷惑を_____ 、深くお詫び申し上げます (za _____ [spowodowanie] kłopotu, głęboko przepraszamy)",
+        "translation": "Kono tabi wa gomeiwaku wo _____, fukaku owabi moushiagemasu",
+        "options": [
+          "おかけし",
+          "かけて",
+          "して",
+          "あたえ"
+        ],
+        "correct": "おかけし",
+        "explanation": "ご迷惑をおかけし (gomeiwaku wo okake shi) = 'za sprawienie kłopotu (skromnie)' — kenjougo forma 迷惑をかける. かけて = neutralne. して = za ogólne. あたえ = 'dając'. おかけする = kenjougo od かける (wywoływać/sprawiać). お詫び申し上げます (owabi moushiagemasu) = 'skromnie przepraszam'. この度 (kono tabi = tym razem/z tej okazji)."
+      },
+      {
+        "id": "pj_biz11",
+        "question": "ご了承_____ (proszę o _____ [wyrozumiałość/akceptację])",
+        "translation": "Goryoushou _____",
+        "options": [
+          "くださいますようお願いいたします",
+          "ください",
+          "してください",
+          "お願いします"
+        ],
+        "correct": "くださいますようお願いいたします",
+        "explanation": "ご了承くださいますようお願いいたします = maximum grzeczności przy proszeniu o zrozumienie. ください = standardowe 'proszę'. してください = za proste. お願いします = standardowe. ～くださいますよう = 'ilekroć łaskawie raczą' (sonkeigo). ご了承 (goryoushou = wyrozumiałość). Ta formuła pojawia się w KAŻDYM japońskim ogłoszeniu o zmianie!"
+      },
+      {
+        "id": "pj_biz12",
+        "question": "田中と_____ (_____ [nazywam się] Tanaka — przedstawienie się przez telefon)",
+        "translation": "Tanaka to _____",
+        "options": [
+          "申します",
+          "言います",
+          "です",
+          "呼びます"
+        ],
+        "correct": "申します",
+        "explanation": "～と申します (to moushimasu) = 'nazywam się (skromnie)' — kenjougo od 言う (iu = mówić). 言います = 'mówię się' (neutralne). です = 'jestem'. 呼びます = 'wołam się' (nienaturalne). 申す (mousu) = kenjougo 'mówić'. Przez telefon: はじめまして、○○と申します (hajimemashite, __ to moushimasu = miło mi, nazywam się __)."
+      },
+      {
+        "id": "pj_biz13",
+        "question": "お電話_____ 、ありがとうございます (_____ [dziękuję za telefon])",
+        "translation": "Odenwa _____, arigatou gozaimasu",
+        "options": [
+          "いただきまして",
+          "くれて",
+          "もらって",
+          "して"
+        ],
+        "correct": "いただきまして",
+        "explanation": "お電話いただきまして (odenwa itadakimashite) = 'za łaskawy telefon (skromnie otrzymany)' — kenjougo podzikękowanie za telefon. くれて = potoczne. もらって = neutralne. して = za proste. いただきまして = formalna te-form od いただく. Standardowe odbieranie telefonu w firmie: お電話ありがとうございます、○○株式会社でございます."
+      },
+      {
+        "id": "pj_biz14",
+        "question": "ご都合の_____ 日時をお知らせください (proszę poinformować o _____ [wygodnym] terminie)",
+        "translation": "Gotsugou no _____ nichiji wo oshirase kudasai",
+        "options": [
+          "よろしい",
+          "いい",
+          "よい",
+          "大丈夫な"
+        ],
+        "correct": "よろしい",
+        "explanation": "ご都合のよろしい (gotsugou no yoroshii) = 'wygodny (formalnie)'. いい = 'dobry' (za potoczne). よい = 'dobry' (neutralny). 大丈夫な = 'OK' (za kasualny). よろしい = formalna wersja いい. ご都合 (gotsugou = wygoda/dostępność z ご-). 日時 (nichiji = data i godzina). お知らせください (oshirase kudasai = proszę poinformować)."
+      },
+      {
+        "id": "pj_biz15",
+        "question": "ご注文を_____ (_____ [potwierdzam/przyjmuję] zamówienie)",
+        "translation": "Gochuumon wo _____",
+        "options": [
+          "承りました",
+          "受けました",
+          "もらいました",
+          "取りました"
+        ],
+        "correct": "承りました",
+        "explanation": "承りました (uketamawarimashita) = 'skromnie przyjąłem (zamówienie)' — najwyższy kenjougo od 受ける (ukeru = przyjąć). 受けました = neutralne. もらいました = 'otrzymałem'. 取りました = 'wziąłem'. 承る (uketamawaru) = super-kenjougo łączące 受ける + 承知する + 聞く. W restauracji/sklepie: ご注文承りました！"
+      }
+    ]
+  },
+  {
+    "key": "academic_japanese",
+    "name": "Japoński akademicki (学術日本語)",
+    "description": "Wzorce japońskiego stylu akademickiego i naukowego: ～と考えられる (to kangaerareru = uważa się, że), ～ことが明らかになった (koto ga akiraka ni natta = stało się jasne, że), ～について論じる (ni tsuite ronjiru = dyskutować o), ～に基づく (ni motozuku = opierając się na). Klucz do czytania i pisania po japońsku na poziomie uniwersyteckim!",
+    "iconName": "graduationcap.fill",
+    "color": "indigo",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pj_aca1",
+        "question": "この結果から、_____ と考えられる (na podstawie tych wyników _____, uważa się, że...)",
+        "translation": "Kono kekka kara, _____ to kangaerareru",
+        "options": [
+          "効果がある",
+          "効果がいい",
+          "効果をする",
+          "効果にある"
+        ],
+        "correct": "効果がある",
+        "explanation": "効果がある (kouka ga aru) = 'jest skutek/efekt'. と考えられる (to kangaerareru) = 'uważa się, że' — bierna forma 考える w stylu akademickim. 効果がいい = nienaturalne. 効果をする = nienaturalne. 効果にある = nienaturalne. と考えられる to OBOWIĄZKOWA fraza w japońskich pracach naukowych — unika osobistej opinii!"
+      },
+      {
+        "id": "pj_aca2",
+        "question": "本研究_____ 、環境問題を分析する (w niniejszym badaniu _____, analizujemy problemy środowiskowe)",
+        "translation": "Honkenkyuu _____, kankyou mondai wo bunseki suru",
+        "options": [
+          "では",
+          "には",
+          "とは",
+          "からは"
+        ],
+        "correct": "では",
+        "explanation": "本研究では (honkenkyuu dewa) = 'w niniejszym badaniu' — standardowy sposób określania zakresu w artykule. には = 'w (celu)'. とは = 'definiując'. からは = 'od (punktu)'. では lokalizuje kontekst: 'w ramach TEGO badania'. 本 (hon = niniejszy). 研究 (kenkyuu = badanie). 分析する (bunseki suru = analizować)."
+      },
+      {
+        "id": "pj_aca3",
+        "question": "実験の結果、仮説が_____ ことが明らかになった (z eksperymentu stało się jasne, że hipoteza została _____ [potwierdzona])",
+        "translation": "Jikken no kekka, kasetsu ga _____ koto ga akiraka ni natta",
+        "options": [
+          "証明された",
+          "証明した",
+          "証明する",
+          "証明できた"
+        ],
+        "correct": "証明された",
+        "explanation": "証明された (shoumei sareta) = 'została udowodniona' — bierna, obiektywna perspektywa naukowa. 証明した = aktywna (kto? — brak podmiotu). 証明する = teraźniejszy. 証明できた = potencjalna. W nauce japońskiej: BIERNA jest standardem — unika wskazywania kto zrobił, skupia na wyniku. ことが明らかになった = 'stało się jasne, że'."
+      },
+      {
+        "id": "pj_aca4",
+        "question": "先行研究に_____ 、本研究を進めた (opierając się _____ na wcześniejszych badaniach, przeprowadziliśmy to badanie)",
+        "translation": "Senkou kenkyuu ni _____, honkenkyuu wo susumeta",
+        "options": [
+          "基づいて",
+          "ついて",
+          "よって",
+          "おいて"
+        ],
+        "correct": "基づいて",
+        "explanation": "に基づいて (ni motozuite) = 'opierając się na / na podstawie' — kluczowa fraza akademicka. について = 'o (temacie)'. によって = 'za pomocą / przez'. において = 'w (kontekście)'. 基づく (motozuku = opierać się). 先行研究 (senkou kenkyuu = wcześniejsze badania/przegląd literatury). に基づいて wskazuje fundament argumentacji."
+      },
+      {
+        "id": "pj_aca5",
+        "question": "データ_____ 分析した結果を報告する (_____ [raportuję] wyniki analizy danych)",
+        "translation": "Deeta _____ bunseki shita kekka wo houkoku suru",
+        "options": [
+          "を",
+          "に",
+          "で",
+          "から"
+        ],
+        "correct": "を",
+        "explanation": "データを分析する (deeta wo bunseki suru) = 'analizować dane' — を oznacza obiekt analizy. に = kierunek. で = narzędzie. から = 'z'. を to standardowy particle dla czynności na obiektach w stylu naukowym: データを収集する (shuushuu suru = zbierać), データを処理する (shori suru = przetwarzać), データを分析する."
+      },
+      {
+        "id": "pj_aca6",
+        "question": "この論文は_____ について論じている (ten artykuł _____ [dyskutuje o] temacie X)",
+        "translation": "Kono ronbun wa _____ ni tsuite ronjite iru",
+        "options": [
+          "地球温暖化",
+          "地球温暖化を",
+          "地球温暖化で",
+          "地球温暖化に"
+        ],
+        "correct": "地球温暖化",
+        "explanation": "N + について論じる (ni tsuite ronjiru) = 'dyskutować o / omawiać'. 地球温暖化 (chikyuu ondanka = globalne ocieplenie) — temat bez dodatkowego particla przed について. について = 'na temat / o'. 論じる (ronjiru) = 'dyskutować/rozważać' — akademicki czasownik. 論文 (ronbun = artykuł naukowy/praca). N + について + V to standardowy wzorzec."
+      },
+      {
+        "id": "pj_aca7",
+        "question": "図1に_____ ように、増加傾向が見られる (jak _____ [widać] na rysunku 1, obserwuję się trend wzrostowy)",
+        "translation": "Zu ichi ni _____ you ni, zouka keikou ga mirareru",
+        "options": [
+          "示す",
+          "見る",
+          "ある",
+          "する"
+        ],
+        "correct": "示す",
+        "explanation": "図に示すように (zu ni shimesu you ni) = 'jak pokazano na rysunku' — standardowa fraza do odwoływania się do wykresów. 見る = 'patrzeć' (za nieformalny). ある = 'istnieje'. する = 'robić'. 示す (shimesu = wskazywać/pokazywać) to akademickie 'pokazywać'. 増加傾向 (zouka keikou = trend wzrostowy). が見られる = bierna obserwacyjna."
+      },
+      {
+        "id": "pj_aca8",
+        "question": "本稿の構成は_____ の通りである (struktura tego artykułu jest _____ [jak] następuje)",
+        "translation": "Honkou no kousei wa _____ no toori de aru",
+        "options": [
+          "以下",
+          "下",
+          "次",
+          "後"
+        ],
+        "correct": "以下",
+        "explanation": "以下の通りである (ika no toori de aru) = 'jest jak następuje poniżej' — standardowa fraza strukturalna. 下 = 'dół'. 次 = 'następny'. 後 = 'po'. 以下 (ika = poniżej). の通り (no toori = tak jak). である (de aru) = formalna wersja だ (da). 本稿 (honkou = niniejszy artykuł). 構成 (kousei = struktura/układ)."
+      },
+      {
+        "id": "pj_aca9",
+        "question": "この理論は、山田 (2020) _____ 提唱されたものである (ta teoria została zaproponowana _____ przez Yamadę (2020))",
+        "translation": "Kono riron wa, Yamada (2020) _____ teishou sareta mono de aru",
+        "options": [
+          "によって",
+          "について",
+          "にとって",
+          "において"
+        ],
+        "correct": "によって",
+        "explanation": "N + によって (ni yotte) = 'przez (sprawcę)' — wskazanie autora w cytowaniu. について = 'o'. にとって = 'dla (z perspektywy)'. において = 'w (kontekście)'. によって w biernej = agent (kto zrobił). 提唱する (teishou suru = proponować/postulować). もの + である = 'jest czymś, co...' — formalny opis. Cytowanie: 著者 (年) + によって."
+      },
+      {
+        "id": "pj_aca10",
+        "question": "今後の課題_____ 、さらなる研究が必要である (jako _____ [przyszłe wyzwanie], potrzebne są dalsze badania)",
+        "translation": "Kongo no kadai _____, saranaru kenkyuu ga hitsuyou de aru",
+        "options": [
+          "として",
+          "について",
+          "にとって",
+          "によって"
+        ],
+        "correct": "として",
+        "explanation": "N + として (toshite) = 'jako' — wskazanie roli/statusu. について = 'o'. にとって = 'dla'. によって = 'przez'. 今後の課題 (kongo no kadai = przyszłe wyzwanie/zadanie). として = 'w charakterze'. さらなる (saranaru = dalszy/dodatkowy). 必要である (hitsuyou de aru = jest konieczny) — formalny styl zamiast 必要だ."
+      },
+      {
+        "id": "pj_aca11",
+        "question": "被験者は20名であり、_____ 10名ずつに分けた (było 20 badanych i _____ [podzielono] ich po 10)",
+        "translation": "Hikensha wa nijuu mei de ari, _____ juumei zutsu ni waketa",
+        "options": [
+          "二群に",
+          "二つで",
+          "二個に",
+          "二回で"
+        ],
+        "correct": "二群に",
+        "explanation": "二群に (nigun ni) = 'na dwie grupy' — akademicki termin. 二つで = potoczne. 二個に = do małych przedmiotów. 二回で = 'w dwóch razach'. 群 (gun = grupa) to naukowy klasyfikator grup badawczych. 被験者 (hikensha = badany/uczestnik eksperymentu). であり = formalna łącznikowa forma である. 〜ずつ (zutsu = po... każdy)."
+      },
+      {
+        "id": "pj_aca12",
+        "question": "統計的に_____ 差が認められた (statystycznie _____ [istotna] różnica została potwierdzona)",
+        "translation": "Touketeki ni _____ sa ga mitomerareta",
+        "options": [
+          "有意な",
+          "大きい",
+          "重要な",
+          "特別な"
+        ],
+        "correct": "有意な",
+        "explanation": "有意な (yuui na) = 'istotny statystycznie' — kluczowy termin naukowy. 大きい = 'duży'. 重要な = 'ważny' (ogólny). 特別な = 'specjalny'. 有意 (yuui = statystycznie istotny) pochodzi z 意味がある (imi ga aru = ma znaczenie). 統計的に (touketeki ni = statystycznie). 認められた (mitomerareta = zostało potwierdzone — bierna)."
+      },
+      {
+        "id": "pj_aca13",
+        "question": "以上の_____ から、次のように結論づけることができる (z powyższych _____ [rozważań], można wyciągnąć następujący wniosek)",
+        "translation": "Ijou no _____ kara, tsugi no you ni ketsuronzukeru koto ga dekiru",
+        "options": [
+          "考察",
+          "話",
+          "考え",
+          "意見"
+        ],
+        "correct": "考察",
+        "explanation": "考察 (kousatsu = rozważania/dyskusja) — akademicki termin na sekcję analizującą wyniki. 話 = 'rozmowa' (potoczne). 考え = 'myśl' (za proste). 意見 = 'opinia' (za subiektywne). 考察 to część artykułu naukowego: 序論→方法→結果→考察→結論 (jouron→houhou→kekka→kousatsu→ketsuron). 結論づける (ketsuronzukeru = wyciągać wniosek)."
+      },
+      {
+        "id": "pj_aca14",
+        "question": "本研究の_____ として、サンプル数が少ないことが挙げられる (jako _____ [ograniczenie] tego badania, należy wymienić małą liczbę próbek)",
+        "translation": "Honkenkyuu no _____ toshite, sanpuru suu ga sukunai koto ga agerareru",
+        "options": [
+          "限界",
+          "問題",
+          "弱点",
+          "欠点"
+        ],
+        "correct": "限界",
+        "explanation": "限界 (genkai = ograniczenie/granica) — standardowy termin na 'limitations' w artykule naukowym. 問題 = 'problem' (za ogólny). 弱点 = 'słaby punkt' (za nieformalny). 欠点 = 'wada' (za negatywny). 限界 jest neutralne i obiektywne — idealne do sekcji 'ograniczenia badania'. が挙げられる (ga agerareru = można wymienić — bierna)."
+      },
+      {
+        "id": "pj_aca15",
+        "question": "_____ を踏まえて、新たな仮説を立てた (uwzględniając _____ [wcześniejsze wyniki], postawiłem nową hipotezę)",
+        "translation": "_____ wo fumaete, arata na kasetsu wo tateta",
+        "options": [
+          "先行研究の知見",
+          "前の話",
+          "昔の情報",
+          "古い考え"
+        ],
+        "correct": "先行研究の知見",
+        "explanation": "先行研究の知見 (senkou kenkyuu no chiken) = 'ustalenia wcześniejszych badań' — akademickie odwołanie do literatury. 前の話 = potoczne. 昔の情報 = 'stare informacje'. 古い考え = 'stare pomysły'. 知見 (chiken = ustalenia/odkrycia). を踏まえて (wo fumaete = uwzględniając/opierając się). 仮説を立てる (kasetsu wo tateru = postawić hipotezę)."
+      }
+    ]
+  },
+  {
+    "key": "newspaper_japanese",
+    "name": "Japoński prasowy (新聞日本語)",
+    "description": "Styl japońskich gazet i mediów: skrócone formy, nagłówki, cytowanie, ～という (to iu = mówi się, że), ～とのこと (to no koto = według informacji), ～が判明した (ga hanmei shita = ustalono, że). Czytanie japońskich gazet wymaga znajomości specjalnego stylu — krótszego, gęstszego i bardziej formalnego niż mowa!",
+    "iconName": "newspaper.fill",
+    "color": "gray",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pj_nws1",
+        "question": "首相が辞任する_____ 表明した (premier oświadczył _____, że rezygnuje)",
+        "translation": "Shushou ga jinin suru _____ hyoumei shita",
+        "options": [
+          "意向を",
+          "ことを",
+          "のを",
+          "とを"
+        ],
+        "correct": "意向を",
+        "explanation": "意向を表明する (ikou wo hyoumei suru) = 'wyrazić zamiar' — prasowy wzorzec. ことを = nominalizacja (OK, ale mniej prasowe). のを = potoczna nominalizacja. とを = nienaturalne. 意向 (ikou = zamiar/intencja). 表明する (hyoumei suru = oświadczyć/wyrazić publicznie). 辞任 (jinin = rezygnacja z funkcji). Styl gazet = rzeczowniki sino-japońskie + する."
+      },
+      {
+        "id": "pj_nws2",
+        "question": "事故で3人が死亡、5人が_____ (w wypadku 3 osoby zginęły, 5 _____ [zostało rannych])",
+        "translation": "Jiko de sannin ga shibou, gonin ga _____",
+        "options": [
+          "負傷した",
+          "怪我した",
+          "傷ついた",
+          "痛んだ"
+        ],
+        "correct": "負傷した",
+        "explanation": "負傷した (fushou shita) = 'zostali ranni' — prasowy/formalny termin. 怪我した = 'odnieśli obrażenia' (potoczne). 傷ついた = 'zostali zranieni' (emocjonalny). 痛んだ = 'bolało'. 負傷 (fushou = odniesienie obrażeń) to termin medyczno-prasowy. 死亡 (shibou = zgon — formalny od 死ぬ). Styl prasowy unika potocznych form."
+      },
+      {
+        "id": "pj_nws3",
+        "question": "警察の調べに_____ 、容疑者は犯行を否認している (według _____ policyjnego śledztwa, podejrzany zaprzecza)",
+        "translation": "Keisatsu no shirabe ni _____, yougisha wa hankou wo hinin shite iru",
+        "options": [
+          "よると",
+          "ついて",
+          "おいて",
+          "とって"
+        ],
+        "correct": "よると",
+        "explanation": "N + によると (ni yoru to) = 'według' — cytowanie źródła informacji. について = 'o'. において = 'w'. にとって = 'dla'. によると jest OBOWIĄZKOWE w prasowym cytowaniu źródeł: 警察によると (keisatsu ni yoru to = według policji). 容疑者 (yougisha = podejrzany). 犯行 (hankou = czyn przestępczy). 否認 (hinin = zaprzeczenie)."
+      },
+      {
+        "id": "pj_nws4",
+        "question": "選挙の結果が_____ (wyniki wyborów zostały _____ [ogłoszone])",
+        "translation": "Senkyo no kekka ga _____",
+        "options": [
+          "判明した",
+          "分かった",
+          "知れた",
+          "出てきた"
+        ],
+        "correct": "判明した",
+        "explanation": "判明した (hanmei shita) = 'zostało ustalone/ujawnione' — prasowy od 分かる (wakaru). 分かった = 'zrozumiałem' (potoczne). 知れた = 'stało się znane' (rzadkie). 出てきた = 'wyszło na jaw' (potoczne). 判明する (hanmei suru) to obiektywne, prasowe 'ustalić/stwierdzić'. 選挙 (senkyo = wybory). Nagłówek: 選挙結果判明 (bez した — styl nagłówkowy!)."
+      },
+      {
+        "id": "pj_nws5",
+        "question": "政府は新しい対策を_____ 方針だ (rząd ma _____ [zamiar wprowadzić] nowe środki)",
+        "translation": "Seifu wa atarashii taisaku wo _____ houshin da",
+        "options": [
+          "講じる",
+          "する",
+          "やる",
+          "とる"
+        ],
+        "correct": "講じる",
+        "explanation": "対策を講じる (taisaku wo koujiru) = 'podjąć środki zaradcze' — formalna kolokacja prasowa. する = za ogólne. やる = za potoczne. とる = 'wziąć' (OK, ale mniej formalny). 講じる (koujiru = podjąć/zastosować) łączy się z 対策, 措置 (sochi = zarządzenia). 方針 (houshin = polityka/kierunek). 政府 (seifu = rząd)."
+      },
+      {
+        "id": "pj_nws6",
+        "question": "被害額は約1億円に_____ (szkody _____ [sięgają] około 100 milionów jenów)",
+        "translation": "Higaigaku wa yaku ichiokuen ni _____",
+        "options": [
+          "上る",
+          "なる",
+          "くる",
+          "いく"
+        ],
+        "correct": "上る",
+        "explanation": "N + に上る (ni noboru) = 'sięgać / wynosić (dużą kwotę)' — prasowe wyrażenie do dużych liczb. なる = 'stać się'. くる = 'nadchodzić'. いく = 'iść'. 上る (noboru = wznosić się) w kontekście prasowym = 'sięgać'. 被害額 (higaigaku = kwota szkód). 約 (yaku = około). 1億円 (ichiokuen = 100 milionów jenów)."
+      },
+      {
+        "id": "pj_nws7",
+        "question": "関係者の話_____ 、事件は組織的なものだった (według _____ informacji osób zaangażowanych, sprawa miała charakter zorganizowany)",
+        "translation": "Kankeisha no hanashi _____, jiken wa soshikiteki na mono datta",
+        "options": [
+          "では",
+          "によると",
+          "について",
+          "からは"
+        ],
+        "correct": "では",
+        "explanation": "N + の話では (no hanashi dewa) = 'z wypowiedzi / według relacji' — prasowe cytowanie nieformalnego źródła. によると = 'według' (formalniejsze). について = 'o'. からは = 'od'. 話では (hanashi dewa) = 'z rozmowy/relacji' — mniej formalne niż によると. 関係者 (kankeisha = osoba zaangażowana). 組織的 (soshikiteki = zorganizowany/systematyczny)."
+      },
+      {
+        "id": "pj_nws8",
+        "question": "地震により、多数の家屋が_____ (wskutek trzęsienia ziemi, wiele domów zostało _____)",
+        "translation": "Jishin ni yori, tasuu no kaoku ga _____",
+        "options": [
+          "倒壊した",
+          "壊れた",
+          "落ちた",
+          "なくなった"
+        ],
+        "correct": "倒壊した",
+        "explanation": "倒壊した (toukai shita) = 'zawalić się/runąć (o budynku)' — prasowy termin. 壊れた = 'zepsuło się' (potoczne, do przedmiotów). 落ちた = 'spadło'. なくなった = 'zniknęło/zmarło'. 倒壊 (toukai) = specyficznie zawalenie się budynku. により (ni yori) = formalna forma によって = 'wskutek'. 家屋 (kaoku = dom/budynek — formalnie od 家)."
+      },
+      {
+        "id": "pj_nws9",
+        "question": "犯人は現在も_____ 中だ (sprawca jest obecnie nadal _____ [poszukiwany])",
+        "translation": "Hannin wa genzai mo _____ chuu da",
+        "options": [
+          "逃走",
+          "逃げている",
+          "走っている",
+          "にげ"
+        ],
+        "correct": "逃走",
+        "explanation": "逃走中 (tousouchuu) = 'w trakcie ucieczki/poszukiwany' — prasowe. 逃げている = 'ucieka' (potoczne). 走っている = 'biegnie'. にげ = niekompletne. N + 中 (chuu) = 'w trakcie N' — styl nagłówkowy. 逃走 (tousou = ucieczka). Nagłówek prasowy: 犯人逃走中 (hannin tousouchuu) — bez だ, minimalistycznie."
+      },
+      {
+        "id": "pj_nws10",
+        "question": "大臣は記者会見で、辞任について_____ (minister na konferencji prasowej _____ [odniósł się] do rezygnacji)",
+        "translation": "Daijin wa kishakaiken de, jinin ni tsuite _____",
+        "options": [
+          "言及した",
+          "話した",
+          "言った",
+          "しゃべった"
+        ],
+        "correct": "言及した",
+        "explanation": "言及した (genkyuu shita) = 'odniósł się / wspomniał' — prasowy od 話す (hanasu). 話した = 'powiedział' (neutralne). 言った = 'powiedział' (potoczne). しゃべった = 'gadał' (za potoczne). 言及する (genkyuu suru) = formalnie 'wspomnieć/odnieść się'. 記者会見 (kishakaiken = konferencja prasowa). 大臣 (daijin = minister)."
+      },
+      {
+        "id": "pj_nws11",
+        "question": "この法案は_____ 、来月施行される見通しだ (ta ustawa _____ [zostanie uchwalona] i prawdopodobnie wejdzie w życie w przyszłym miesiącu)",
+        "translation": "Kono houan wa _____, raigetsu shikou sareru mitooshi da",
+        "options": [
+          "可決され",
+          "決まって",
+          "できて",
+          "通って"
+        ],
+        "correct": "可決され",
+        "explanation": "可決される (kaketsu sareru) = 'zostać przegłosowana/uchwalona (ustawa)' — prasowy. 決まって = 'zdecydowana' (potoczne). できて = 'gotowa'. 通って = 'przeszła' (potoczne). 可決 (kaketsu = uchwalenie). 法案 (houan = projekt ustawy). 施行 (shikou = wejście w życie). 見通し (mitooshi = perspektywa/prognoza) — prasowy termin."
+      },
+      {
+        "id": "pj_nws12",
+        "question": "企業の業績が_____ 傾向にある (wyniki firm wykazują _____ [trend wzrostowy])",
+        "translation": "Kigyou no gyouseki ga _____ keikou ni aru",
+        "options": [
+          "改善する",
+          "よくなる",
+          "上がる",
+          "いい"
+        ],
+        "correct": "改善する",
+        "explanation": "改善する傾向にある (kaizen suru keikou ni aru) = 'wykazywać trend poprawy' — prasowy. よくなる = 'poprawiać się' (potoczne). 上がる = 'rosnąć' (neutralne). いい = 'dobry'. 改善 (kaizen = poprawa/ulepszenie — znane na świecie!). 傾向にある (keikou ni aru) = 'mieć tendencję do'. 業績 (gyouseki = wyniki biznesowe). 企業 (kigyou = firma/przedsiębiorstwo)."
+      },
+      {
+        "id": "pj_nws13",
+        "question": "台風の_____ で、交通機関が麻痺している (z powodu _____ tajfunu, komunikacja jest sparaliżowana)",
+        "translation": "Taifuu no _____ de, koutsuu kikan ga mahi shite iru",
+        "options": [
+          "影響",
+          "せい",
+          "ため",
+          "おかげ"
+        ],
+        "correct": "影響",
+        "explanation": "N + の影響で (no eikyou de) = 'z powodu wpływu N' — prasowe wyrażenie przyczynowe. せい = 'wina' (negatywne, potoczne). ため = 'z powodu' (neutralne). おかげ = 'dzięki' (pozytywne). 影響 (eikyou = wpływ) jest neutralne i obiektywne — idealne dla prasy. 交通機関 (koutsuu kikan = środki transportu). 麻痺 (mahi = paraliż)."
+      },
+      {
+        "id": "pj_nws14",
+        "question": "目撃者の証言に_____ 、犯人は黒い服を着ていた (zgodnie z _____ zeznaniami świadków, sprawca miał na sobie czarną odzież)",
+        "translation": "Mokugekisha no shougen ni _____, hannin wa kuroi fuku wo kite ita",
+        "options": [
+          "よれば",
+          "ついて",
+          "おいて",
+          "とって"
+        ],
+        "correct": "よれば",
+        "explanation": "N + によれば (ni yoreba) = 'zgodnie z / według' — warunkowa forma によると. ついて = 'o'. おいて = 'w'. とって = 'dla'. によると i によれば to synonimy w cytowaniu źródeł. よれば jest nieco bardziej formalny/pisemny. 目撃者 (mokugekisha = naoczny świadek). 証言 (shougen = zeznanie)."
+      },
+      {
+        "id": "pj_nws15",
+        "question": "新法は4月1日_____ 施行される (nowa ustawa _____ wchodzi w życie 1 kwietnia)",
+        "translation": "Shinpou wa shigatsu tsuitachi _____ shikou sareru",
+        "options": [
+          "をもって",
+          "から",
+          "に",
+          "で"
+        ],
+        "correct": "をもって",
+        "explanation": "日付 + をもって (wo motte) = 'z dniem / począwszy od' — formalna/prawnicza data wejścia w życie. から = 'od' (neutralne). に = 'na/w'. で = 'w/przy'. をもって to najformalniejsza forma daty startowej: '4月1日をもって' = 'z dniem 1 kwietnia'. 新法 (shinpou = nowa ustawa). 施行 (shikou = wejście w życie). をもって jest też w: 以上をもって (ijou wo motte = na tym kończymy)."
+      }
+    ]
+  },
+  {
+    "key": "classical_remnants",
+    "name": "Ślady klasycznej japońszczyzny (古典の名残)",
+    "description": "Elementy klasycznej japońszczyzny (文語 bungo) zachowane we współczesnym języku: ～ざるを得ない (zaru wo enai = nie mogę nie...), ～ごとし (gotoshi = jakby/niczym), ～なり (nari = jest [formalny]), ～べし (beshi = powinien [klasyczny]). Te formy pojawiają się w przysłowiach, mowach, przepisach prawnych i literaturze!",
+    "iconName": "scroll.fill",
+    "color": "brown",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pj_cls1",
+        "question": "そう言わ_____ を得ない (nie mogę _____ [nie powiedzieć tak] — muszę to przyznać)",
+        "translation": "Sou iwa _____ wo enai",
+        "options": [
+          "ざる",
+          "ない",
+          "れない",
+          "される"
+        ],
+        "correct": "ざる",
+        "explanation": "V-a + ざるを得ない (zaru wo enai) = 'nie mogę nie... / muszę' — klasyczna negacja ざる (= ない) + を得ない (= nie daje się uzyskać). ない = potoczna negacja. れない = bierna/potencjalna negacja. される = bierna. 言う → 言わ + ざる. ざる to klasyczna forma negacji zachowana w tej jednej frazie stałej. Wyjątek: する → せざるを得ない (nie ざる!)."
+      },
+      {
+        "id": "pj_cls2",
+        "question": "光陰矢の_____ (czas mknie _____ [jak] strzała)",
+        "translation": "Kouin ya no _____",
+        "options": [
+          "ごとし",
+          "ようだ",
+          "みたいだ",
+          "らしい"
+        ],
+        "correct": "ごとし",
+        "explanation": "N + の + ごとし (gotoshi) = 'jak / niczym' — klasyczne porównanie zachowane w przysłowiach. ようだ = współczesne 'jak'. みたいだ = potoczne 'jak'. らしい = 'podobno'. 光陰矢のごとし (kouin ya no gotoshi) = 'czas leci jak strzała' — słynne przysłowie. 光陰 (kouin = czas/lata). ごとし jest klasyczne — we współczesnym: ～のように."
+      },
+      {
+        "id": "pj_cls3",
+        "question": "我思う、_____ 我あり (myślę, _____ więc jestem)",
+        "translation": "Ware omou, _____ ware ari",
+        "options": [
+          "ゆえに",
+          "だから",
+          "ので",
+          "から"
+        ],
+        "correct": "ゆえに",
+        "explanation": "ゆえに (yue ni) = 'dlatego / przeto' — klasyczny łącznik przyczynowy (Kartezjusz po japońsku!). だから = potoczne 'dlatego'. ので = 'ponieważ'. から = 'ponieważ'. ゆえに pochodzi od 故に (yue ni = z tego powodu). 我 (ware = ja [archaiczne]). あり = klasyczna forma ある. We współczesnym: ゆえに występuje w formalnych tekstach i mowach."
+      },
+      {
+        "id": "pj_cls4",
+        "question": "言う_____ 及ばず (nie trzeba _____ nawet mówić / to oczywiste)",
+        "translation": "Iu _____ oyobazu",
+        "options": [
+          "に",
+          "も",
+          "が",
+          "は"
+        ],
+        "correct": "に",
+        "explanation": "言うに及ばず (iu ni oyobazu) = 'nie trzeba nawet mówić / to oczywiste' — klasyczne wyrażenie. も = 'też'. が = podmiot. は = temat. 及ぶ (oyobu = sięgać/dotykać) + ず (zu = klasyczne nie). 及ばず = 'nie sięga' = 'nie trzeba'. ず to klasyczna negacja → współczesna ない: 及ばない. Ta fraza jest zachowana w formie klasycznej."
+      },
+      {
+        "id": "pj_cls5",
+        "question": "あるべき姿_____ 求め続ける (dążyć do _____ [idealnego] kształtu [jaki powinien być])",
+        "translation": "Arubeki sugata _____ motome tsuzukeru",
+        "options": [
+          "を",
+          "に",
+          "が",
+          "で"
+        ],
+        "correct": "を",
+        "explanation": "あるべき (arubeki) = 'jaki powinien być / idealny' — klasyczna forma べし (beshi = powinien) + ある. を = dopełniacz bliższy. に = kierunek. が = podmiot. で = narzędzie. べき (beki) pochodzi od klasycznego べし (beshi). あるべき姿 (arubeki sugata = idealny kształt/forma — to, jaki POWINIEN być). 求め続ける (motome tsuzukeru = nieprzerwanie dążyć)."
+      },
+      {
+        "id": "pj_cls6",
+        "question": "やむを_____ ない事情があります (są _____ [nieuniknione] okoliczności)",
+        "translation": "Yamu wo _____ nai jijou ga arimasu",
+        "options": [
+          "得",
+          "え",
+          "でき",
+          "なく"
+        ],
+        "correct": "得",
+        "explanation": "やむを得ない (yamu wo enai) = 'nieunikniony / nie do uniknięcia' — klasyczna fraza stała. え = odczyt 得 (też poprawny zapis). でき = 'móc' (współczesne). なく = nienaturalne tu. やむ (yamu = ustać/skończyć się) + を得ない (wo enai = nie da się uzyskać) = 'nie da się tego uniknąć'. やむを得ず (yamu wo ezu) = przysłówkowa forma z klasycznym ず."
+      },
+      {
+        "id": "pj_cls7",
+        "question": "論ずるに_____ ない (nie _____ [warto] nawet dyskutować)",
+        "translation": "Ronzuru ni _____ nai",
+        "options": [
+          "値し",
+          "なり",
+          "べし",
+          "あり"
+        ],
+        "correct": "値し",
+        "explanation": "論ずるに値しない (ronzuru ni atai shinai) = 'nie wart dyskusji' — formalna fraza z klasycznym 論ずる. なり = 'jest (klasyczne)'. べし = 'powinien'. あり = 'istnieje'. 値する (atai suru = być wartym) + に (ni = do). 論ずる (ronzuru) to klasyczna forma 論じる (ronjiru = dyskutować). Obie formy (-ずる/-じる) istnieją współcześnie."
+      },
+      {
+        "id": "pj_cls8",
+        "question": "初心忘る_____ (nie zapominaj _____ [o początkowych intencjach/duchu nowicjatu])",
+        "translation": "Shoshin wasuru _____",
+        "options": [
+          "べからず",
+          "な",
+          "ないで",
+          "てはいけない"
+        ],
+        "correct": "べからず",
+        "explanation": "V + べからず (bekarazu) = 'nie wolno / nie powinno się' — klasyczny zakaz od べし (beshi = powinien) + ず (zu = nie). な = potoczny zakaz. ないで = 'bez robienia'. てはいけない = współczesny zakaz. 初心忘るべからず (shoshin wasuru bekarazu) = 'nie zapominaj początkowego ducha' — słynne przysłowie Zeamiego (twórca teatru Nō)!"
+      },
+      {
+        "id": "pj_cls9",
+        "question": "芸術は長く、人生は_____ (sztuka jest długa, życie _____ [krótkie])",
+        "translation": "Geijutsu wa nagaku, jinsei wa _____",
+        "options": [
+          "短し",
+          "短い",
+          "みじかし",
+          "短くて"
+        ],
+        "correct": "短し",
+        "explanation": "短し (mijikashi) = 'krótkie' — klasyczna forma I-adj (終止形 shuushikei). 短い (mijikai) = współczesna. みじかし = hiragana zapis 短し. 短くて = te-form. Klasyczne zakończenie I-adj: -し (-shi) zamiast -い (-i). 長し (nagashi = długi), 美し (utsukushi = piękny), 短し (mijikashi = krótki). Przysłowe japońskie często zachowują klasyczną formę."
+      },
+      {
+        "id": "pj_cls10",
+        "question": "知ら_____ ば、聞け (jeśli nie wiesz _____, zapytaj)",
+        "translation": "Shira _____ ba, kike",
+        "options": [
+          "ざれ",
+          "なけれ",
+          "ない",
+          "なく"
+        ],
+        "correct": "ざれ",
+        "explanation": "V-a + ざれば (zareba) = klasyczna forma 'jeśli nie...' — V-a + ざる (negacja) + れば (warunek). なければ = współczesna forma. ない = negacja (bez warunku). なく = negatywna te-form. 知らざれば (shiraza reba) = 'jeśli nie wiesz'. 聞け (kike) = klasyczny rozkazujący od 聞く. Przysłowie: 知らざれば聞け = 'nie wstydzić się pytać'."
+      },
+      {
+        "id": "pj_cls11",
+        "question": "されば_____ 余はどうすべきか (_____ [zatem] co ja powinienem zrobić?)",
+        "translation": "Sareba _____ yo wa dou subeki ka",
+        "options": [
+          "こそ",
+          "もう",
+          "まだ",
+          "いま"
+        ],
+        "correct": "こそ",
+        "explanation": "されば + こそ (sareba koso) = 'właśnie dlatego / tym bardziej' — klasyczna emfaza. もう = 'już'. まだ = 'jeszcze'. いま = 'teraz'. されば (sareba) = 'skoro tak / zatem' — od する klasycznego. こそ = partykuła emfatyczna. 余 (yo) = 'ja' (archaiczne, królewskie). べき (beki) = 'powinien'. Styl literacki i historyczny."
+      },
+      {
+        "id": "pj_cls12",
+        "question": "この法律に_____ 処罰する (ukarać _____ [na mocy] tej ustawy)",
+        "translation": "Kono houritsu ni _____ shobatsu suru",
+        "options": [
+          "基づき",
+          "よって",
+          "ついて",
+          "おいて"
+        ],
+        "correct": "基づき",
+        "explanation": "に基づき (ni motozuki) = 'na mocy / na podstawie' — formalny/prawniczy styl. Renyoukei (連用形) od 基づく. よって = 'przez'. ついて = 'o'. おいて = 'w'. 基づき jest bardziej formalne niż 基づいて (te-form) — typowe w przepisach prawnych. 法律 (houritsu = ustawa). 処罰する (shobatsu suru = ukarać). Styl prawniczy zachowuje klasyczne formy."
+      },
+      {
+        "id": "pj_cls13",
+        "question": "以上を_____ 、報告といたします (powyższe _____ [kończąc na tym], stanowi mój raport)",
+        "translation": "Ijou wo _____, houkoku to itashimasu",
+        "options": [
+          "もちまして",
+          "もって",
+          "使って",
+          "持って"
+        ],
+        "correct": "もちまして",
+        "explanation": "以上をもちまして (ijou wo mochimashite) = 'na powyższym kończąc (formalnie)' — klasyczna formuła zamykająca raport/prezentację. もって = mniej formalny. 使って = 'używając'. 持って = 'trzymając'. をもちまして pochodzi od 以て (motte = za pomocą/z powodu) — klasyczna partykuła zachowana w ceremoniach. いたします = kenjougo od する."
+      },
+      {
+        "id": "pj_cls14",
+        "question": "恐る恐る_____ を進める (bojaźliwie posuwać się _____ [krok po kroku])",
+        "translation": "Osoru osoru _____ wo susumeru",
+        "options": [
+          "足",
+          "歩き",
+          "道",
+          "前"
+        ],
+        "correct": "足",
+        "explanation": "足を進める (ashi wo susumeru) = 'posuwać kroki / iść naprzód' — literackie wyrażenie. 歩き = 'chodzenie'. 道 = 'drogę'. 前 = 'przód'. 恐る恐る (osoru osoru) = 'drżąc ze strachu / bojaźliwie' — podwojone klasyczne 恐る (osoru = bać się). Klasyczne podwojenie tworzy przysłówek: 恐る恐る, 泣く泣く (naku naku = płacząc), 渋々 (shibu shibu = niechętnie)."
+      },
+      {
+        "id": "pj_cls15",
+        "question": "汝の敵を_____ (_____ [kochaj] swoich wrogów)",
+        "translation": "Nanji no teki wo _____",
+        "options": [
+          "愛せよ",
+          "愛して",
+          "愛しなさい",
+          "愛してください"
+        ],
+        "correct": "愛せよ",
+        "explanation": "V-e + よ (yo) = klasyczne nakazujące — bardziej uroczyste niż współczesne. 愛して = 'kochając' (te-form). 愛しなさい = 'kochaj' (nauczycielski rozkaz). 愛してください = 'proszę kochać'. 愛せよ (ai seyo) = 'kochaj!' (klasyczny rozkaz od 愛する). 汝 (nanji = ty [archaiczne]). 敵 (teki = wróg). Biblijna formuła w klasycznym japońskim tłumaczeniu."
+      }
+    ]
+  },
+  {
+    "key": "common_mistakes",
+    "name": "Typowe błędy Polaków (ポーランド人の間違い)",
+    "description": "Najczęstsze błędy popełniane przez polskich uczniów japońskiego: mylenie は/が, niepoprawne użycie particles, false friends między polskim a japońskim, problemy z licznikami, niepoprawna uprzejmość. Te pułapki czekają na KAŻDEGO polskiego ucznia japońskiego!",
+    "iconName": "exclamationmark.octagon.fill",
+    "color": "red",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_cmk1",
+        "question": "私_____ 学生です (jestem _____ studentem — podstawowe przedstawienie się)",
+        "translation": "Watashi _____ gakusei desu",
+        "options": [
+          "は",
+          "が",
+          "を",
+          "の"
+        ],
+        "correct": "は",
+        "explanation": "私は (watashi wa) = 'ja (jako temat)' — は (wa) to partykuła tematu, nie podmiotu! が = podmiot (nowe info/kontrast). を = dopełniacz. の = posesywny. BŁĄD Polaków: mylenie は z が. は = 'co do mnie, jestem studentem'. が = 'TO JA jestem studentem (a nie ktoś inny)'. W przedstawieniu się: ZAWSZE は!"
+      },
+      {
+        "id": "pj_cmk2",
+        "question": "タクシー_____ 行きます (jadę _____ taksówką)",
+        "translation": "Takushii _____ ikimasu",
+        "options": [
+          "で",
+          "に",
+          "を",
+          "は"
+        ],
+        "correct": "で",
+        "explanation": "N + で (de) = 'za pomocą / używając' — で oznacza środek transportu. に = kierunek. を = ścieżkę. は = temat. BŁĄD Polaków: w polskim 'jadę taksówką' = narzędnik (Kim? Czym?). W japońskim: で (de) = narzędzie/środek. バスで (basu de = autobusem), 電車で (densha de = pociągiem), 歩いて (aruite = pieszo — wyjątek!)."
+      },
+      {
+        "id": "pj_cmk3",
+        "question": "日本語_____ 話せますか (czy umiesz _____ mówić po japońsku?)",
+        "translation": "Nihongo _____ hanasemasu ka",
+        "options": [
+          "が",
+          "を",
+          "で",
+          "は"
+        ],
+        "correct": "が",
+        "explanation": "N + が + potencjalna = 'umieć (coś)' — z formą potencjalną (～できる/～える) używamy が, nie を! を = dopełniacz zwykły (z 話す = mówić). で = narzędzie. は = temat. BŁĄD Polaków: 日本語を話せますか (niepoprawne — を z potencjalną). Reguła: forma potencjalna zmienia を → が: 本を読む → 本が読める!"
+      },
+      {
+        "id": "pj_cmk4",
+        "question": "友達_____ 会いました (spotkałem się _____ z przyjacielem)",
+        "translation": "Tomodachi _____ aimashita",
+        "options": [
+          "に",
+          "と",
+          "を",
+          "が"
+        ],
+        "correct": "に",
+        "explanation": "N + に + 会う (au = spotkać) — に oznacza osobę, z którą się spotykasz. と = 'razem z' (OK, ale inna nuansa: wzajemne spotkanie). を = nienaturalne z 会う. が = podmiot. BŁĄD Polaków: w polskim 'spotkałem się Z przyjacielem' = と. Ale japoński 会う wymaga に (jednokierunkowe) lub と (obustronnie). に会う jest standardowe."
+      },
+      {
+        "id": "pj_cmk5",
+        "question": "とても_____ です (jest bardzo _____ [smaczne])",
+        "translation": "Totemo _____ desu",
+        "options": [
+          "おいしい",
+          "おいしいな",
+          "おいしく",
+          "おいしいの"
+        ],
+        "correct": "おいしい",
+        "explanation": "I-adj + です = stwierdzenie. おいしい (oishii = smaczne) kończy się na い — NIE dodajemy な! おいしいな = emfatyczne (zdanie niedokończone). おいしく = przysłówek. おいしいの = pytanie (potoczne). BŁĄD Polaków: mylenie I-adj (smaczne = おいしい) z Na-adj (cichy = 静かな). Reguła: jeśli kończy się na い → I-adj → bez な przed です."
+      },
+      {
+        "id": "pj_cmk6",
+        "question": "猫_____ 二匹います (są _____ dwa koty)",
+        "translation": "Neko _____ nihiki imasu",
+        "options": [
+          "が",
+          "は",
+          "を",
+          "の"
+        ],
+        "correct": "が",
+        "explanation": "N + が + いる = 'istnieje (żywa istota)' — z いる/ある używamy が do wprowadzania nowej informacji. は = temat (znana informacja). を = dopełniacz. の = posesywny. BŁĄD Polaków: 猫はいます (niepoprawne przy wprowadzaniu informacji). Reguła: 'jest X' = Xがいる/ある. 'X (które znacie) jest...' = Xは..."
+      },
+      {
+        "id": "pj_cmk7",
+        "question": "明日学校_____ 行きます (jutro idę _____ do szkoły)",
+        "translation": "Ashita gakkou _____ ikimasu",
+        "options": [
+          "に",
+          "へ",
+          "で",
+          "を"
+        ],
+        "correct": "に",
+        "explanation": "N + に + 行く = 'iść DO (celu)' — に oznacza punkt docelowy ruchu. へ = też OK (kierunek, nie cel). で = 'w (miesjcu czynności)'. を = 'wychodząc Z'. BŁĄD Polaków: mylenie に/へ/で. Reguła: 行く/来る/帰る + に (cel) lub へ (kierunek). 勉強する + で (w szkole). に = precyzyjny cel, へ = ogólny kierunek."
+      },
+      {
+        "id": "pj_cmk8",
+        "question": "先生、すみません。少し_____ か (przepraszam, nauczycielu. Czy mogłabym _____ [zapytać]?)",
+        "translation": "Sensei, sumimasen. Sukoshi _____ ka",
+        "options": [
+          "お聞きしてもいいです",
+          "聞いてもいいです",
+          "質問してもいいです",
+          "聞けますか"
+        ],
+        "correct": "お聞きしてもいいです",
+        "explanation": "お + V-masu + してもいいですか = kenjougo prośba o pozwolenie — wobec sensei MUSIMY użyć kenjougo! 聞いてもいいですか = OK z rówieśnikami. 質問してもいいですか = neutralne formalne. 聞けますか = 'czy umiesz słuchać?' (?). BŁĄD Polaków: brak kenjougo wobec osób wyżej. Wobec sensei: ZAWSZE お聞きする, nie 聞く!"
+      },
+      {
+        "id": "pj_cmk9",
+        "question": "昨日映画を見_____ (wczoraj _____ [oglądałem] film)",
+        "translation": "Kinou eiga wo mi _____",
+        "options": [
+          "ました",
+          "た",
+          "ている",
+          "ました。"
+        ],
+        "correct": "ました",
+        "explanation": "V-masu + ました = przeszła formalna. た = przeszła potoczna. ている = ciągła. BŁĄD Polaków: mieszanie poziomu formalności w jednej wypowiedzi. Jeśli mówisz ます (masu) w jednym zdaniu, WSZYSTKIE zdania muszą być w ます! Nie: 映画を見た。面白かったです。(mix!) → 映画を見ました。面白かったです。"
+      },
+      {
+        "id": "pj_cmk10",
+        "question": "コーヒーを飲み_____ か (czy chciałbyś _____ [wypić] kawę? — oferowanie)",
+        "translation": "Koohii wo nomi _____ ka",
+        "options": [
+          "ませんか",
+          "たいですか",
+          "ますか",
+          "てもいいですか"
+        ],
+        "correct": "ませんか",
+        "explanation": "V-masu + ませんか (masen ka) = 'czy nie chciałby Pan/Pani...?' — uprzejme zaproszenie. たいですか = 'czy chcesz?' (za bezpośrednie w japońskim!). ますか = 'czy robisz?' (pytanie, nie zaproszenie). てもいいですか = 'czy mogę?'. BŁĄD Polaków: 飲みたいですか (chcesz?) — w japońskim pytanie o czyjeś pragnienia jest NIEGRZECZNE! Używaj ませんか."
+      },
+      {
+        "id": "pj_cmk11",
+        "question": "この本は_____ です (ta książka jest _____ [ciekawa])",
+        "translation": "Kono hon wa _____ desu",
+        "options": [
+          "面白い",
+          "面白いです",
+          "面白いだ",
+          "面白いな"
+        ],
+        "correct": "面白い",
+        "explanation": "I-adj + です — NIE dodajemy だ między I-adj a です! 面白いです = redundantne (ale potocznie OK). 面白いだ = BŁĄD! だ nie łączy się z I-adj! 面白いな = emfatyczne. BŁĄD Polaków: *面白いだ (dodawanie だ po I-adj). Reguła: I-adj → 面白いです (bez だ). Na-adj → 静かだ/静かです. Rzeczownik → 学生だ/学生です."
+      },
+      {
+        "id": "pj_cmk12",
+        "question": "りんごを3_____ 下さい (poproszę 3 _____ [sztuki] jabłek)",
+        "translation": "Ringo wo san _____ kudasai",
+        "options": [
+          "つ",
+          "個",
+          "本",
+          "枚"
+        ],
+        "correct": "つ",
+        "explanation": "3 + つ (tsu) = ogólny klasyfikator (mittssu = 3 sztuki). 個 (ko) = do małych/okrągłych (też OK dla jabłek!). 本 (hon) = do długich. 枚 (mai) = do płaskich. BŁĄD Polaków: pomijanie klasyfikatorów lub używanie niewłaściwych. Jabłka: 三つ (mittssu, ogólny) lub 三個 (sanko, licznikowy). Oba poprawne! つ jest bezpieczną opcją gdy nie znasz klasyfikatora."
+      },
+      {
+        "id": "pj_cmk13",
+        "question": "日本_____ 住んでいます (mieszkam _____ w Japonii)",
+        "translation": "Nihon _____ sunde imasu",
+        "options": [
+          "に",
+          "で",
+          "を",
+          "は"
+        ],
+        "correct": "に",
+        "explanation": "N + に + 住む (sumu = mieszkać) — に oznacza miejsce zamieszkania (stan trwały). で = 'w (miejscu czynności)'. を = dopełniacz. は = temat. BŁĄD Polaków: mylenie に i で. Reguła: 住む + に (stan), 働く + で (czynność). Ale: 東京に住んでいる (mieszkam w Tokio) vs 東京で働いている (pracuję w Tokio)."
+      },
+      {
+        "id": "pj_cmk14",
+        "question": "あした_____ パーティーがあります (jutro _____ jest przyjęcie)",
+        "translation": "Ashita _____ paatii ga arimasu",
+        "options": [
+          "は",
+          "に",
+          "で",
+          "が"
+        ],
+        "correct": "は",
+        "explanation": "あした + は = 'jutro (jako temat)'. に = 'w (punkcie czasu)' (też OK, ale mniej naturalne z 明日). で = 'w (miejscu)'. が = podmiot. BŁĄD Polaków: あしたにパーティーがあります — zbyt formalny/nienaturalny. Z 明日, 今日, 今 (teraz): は jest bardziej naturalny niż に. Z dokładnymi godzinami (3時に): に jest wymagane."
+      },
+      {
+        "id": "pj_cmk15",
+        "question": "東京は大阪_____ 大きいです (Tokio jest _____ [od] Osaki większe)",
+        "translation": "Toukyou wa Oosaka _____ ookii desu",
+        "options": [
+          "より",
+          "から",
+          "まで",
+          "と"
+        ],
+        "correct": "より",
+        "explanation": "N + より (yori) = 'od / w porównaniu z' — partykuła porównawcza. から = 'od (miejsca/czasu)'. まで = 'do'. と = 'z'. BŁĄD Polaków: *大阪から大きい (myślenie, że から = 'od' w porównaniach). W japońskim: より (yori) = porównanie, から (kara) = punkt początkowy. Wzorzec: A は B より Adj = 'A jest bardziej Adj niż B'."
+      }
+    ]
+  },
+  {
+    "key": "register_shifts",
+    "name": "Zmiana rejestru (レジスター変換)",
+    "description": "Jak przełączać się między rejestrami japońskiego: ため口 (tameguchi = potoczny) ↔ 敬語 (keigo = grzecznościowy), styl pisany ↔ mówiony, męski ↔ żeński, starszy ↔ młodszy. Kluczowa umiejętność społeczna — KAŻDY Japończyk zmienia rejestr wiele razy dziennie!",
+    "iconName": "arrow.triangle.swap",
+    "color": "purple",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pj_rsh1",
+        "question": "友達: 何食べる？→ 上司: 何を_____ か (kolega: co jesz? → szef: co Pan _____ [będzie jadł]?)",
+        "translation": "Tomodachi: nani taberu? → Joushi: nani wo _____ ka",
+        "options": [
+          "召し上がります",
+          "食べますか",
+          "食うか",
+          "食べるの"
+        ],
+        "correct": "召し上がります",
+        "explanation": "召し上がる (meshiagaru) = sonkeigo od 食べる (taberu = jeść) — najwyższy rejestr wobec szefa. 食べますか = formalne ale nie sonkeigo. 食うか = wulgarnie potoczne. 食べるの = kasualny z pytajną の. Gradacja: 食う (wulg.) < 食べる (potoczny) < 食べます (formalne) < 召し上がる (sonkeigo). Wobec szefa: ZAWSZE sonkeigo!"
+      },
+      {
+        "id": "pj_rsh2",
+        "question": "カジュアル: 知ってる？→ フォーマル: _____ か (kasualny: wiesz? → formalny: czy _____ [wie Pan]?)",
+        "translation": "Kajuaru: shitteru? → Foomaru: _____ ka",
+        "options": [
+          "ご存じです",
+          "知っていますか",
+          "知ってるか",
+          "知るか"
+        ],
+        "correct": "ご存じです",
+        "explanation": "ご存じですか (gozonji desu ka) = sonkeigo od 知っている (shitte iru = wiedzieć). 知っていますか = formalne (OK, ale nie sonkeigo). 知ってるか = męsko-kasualny. 知るか = agresywny ('skąd mam wiedzieć!'). 存じる (zonjiru) = kenjougo/sonkeigo z 知る. ご存じ z ご- = sonkeigo (o wiedzy drugiej osoby)."
+      },
+      {
+        "id": "pj_rsh3",
+        "question": "男性語: 行くぜ！→ 女性語: 行く_____ (męski: idę! → żeński: idę _____)",
+        "translation": "Danseigo: iku ze! → Joseigo: iku _____",
+        "options": [
+          "わ",
+          "ぜ",
+          "ぞ",
+          "さ"
+        ],
+        "correct": "わ",
+        "explanation": "わ (wa) = tradycyjna żeńska partykuła końcowa (miękki ton). ぜ (ze) = męska, asertywna. ぞ (zo) = męska, stanowcza. さ (sa) = męska, nonszalancka. Uwaga: dziś podział męski/żeński się zaciera, młode osoby obu płci mogą używać neutralnych form, ale w anime/dramach i formalnym kontekście podział nadal jest widoczny."
+      },
+      {
+        "id": "pj_rsh4",
+        "question": "書き言葉: ～である → 話し言葉: ～_____ (pisany: ~jest → mówiony: ~_____)",
+        "translation": "Kakikotoba: ~de aru → Hanashikotoba: ~_____",
+        "options": [
+          "だ",
+          "である",
+          "でございます",
+          "なのだ"
+        ],
+        "correct": "だ",
+        "explanation": "だ (da) = potoczna forma łącznika (copula) — styl mówiony. である (de aru) = formalny pisany. でございます (de gozaimasu) = ultra-formalny. なのだ (na no da) = wyjaśniający. Gradacja: だ (mówiony) < です (mówiony-formalny) < である (pisany) < でございます (ultra-formalny). Eseje: である. Rozmowa: だ/です."
+      },
+      {
+        "id": "pj_rsh5",
+        "question": "後輩に: やれよ！→ 先輩に: _____ (do młodszego: rób! → do starszego: _____)",
+        "translation": "Kouhai ni: yare yo! → Senpai ni: _____",
+        "options": [
+          "していただけませんか",
+          "しろよ",
+          "やって",
+          "やれ"
+        ],
+        "correct": "していただけませんか",
+        "explanation": "していただけませんか (shite itadakemasen ka) = 'czy mógłbym prosić o...' — kenjougo prośba do starszego. しろよ = brutalny rozkaz. やって = kasualny 'zrób'. やれ = rozkazujący. いただけませんか = potencjalna negacja od いただく (= skromnie otrzymać). Hierarchia: やれ (rozkaz) < やって (prośba) < してくれませんか < していただけませんか."
+      },
+      {
+        "id": "pj_rsh6",
+        "question": "友達: うん、いいよ → 仕事: _____ (kolega: tak, OK → praca: _____)",
+        "translation": "Tomodachi: un, ii yo → Shigoto: _____",
+        "options": [
+          "はい、承知いたしました",
+          "はい、いいですよ",
+          "うん、いい",
+          "OK"
+        ],
+        "correct": "はい、承知いたしました",
+        "explanation": "はい、承知いたしました (hai, shouchi itashimashita) = 'tak, zrozumiałem (kenjougo)' — biznesowe potwierdzenie. はい、いいですよ = formalne ale zbyt kasualny ton. うん、いい = potoczne. OK = anglicyzm-kasualny. Gradacja akceptacji: うん (potoczny) < はい (formalny) < はい、かしこまりました < はい、承知いたしました (biznesowy)."
+      },
+      {
+        "id": "pj_rsh7",
+        "question": "子供に: 食べなさい → 大人に: _____ (do dziecka: jedz! → do dorosłego: _____)",
+        "translation": "Kodomo ni: tabenasai → Otona ni: _____",
+        "options": [
+          "お召し上がりください",
+          "食べろ",
+          "食べて",
+          "食え"
+        ],
+        "correct": "お召し上がりください",
+        "explanation": "お召し上がりください (omeshiagari kudasai) = 'proszę koszktować (sonkeigo)' — do szanowanego dorosłego. 食べろ = brutalny rozkaz. 食べて = kasualny. 食え = wulgarne. ～なさい (nasai) = łagodny rozkaz (rodzic→dziecko, nauczyciel→uczeń). Dorosły→dorosły: お + sonkeigo + ください. Nigdy ～なさい do osoby starszej!"
+      },
+      {
+        "id": "pj_rsh8",
+        "question": "カジュアル: マジで？→ フォーマル: _____ (kasualny: serio? → formalny: _____ [naprawdę?])",
+        "translation": "Kajuaru: maji de? → Foomaru: _____",
+        "options": [
+          "本当でございますか",
+          "本当？",
+          "マジ？",
+          "嘘でしょ"
+        ],
+        "correct": "本当でございますか",
+        "explanation": "本当でございますか (hontou de gozaimasu ka) = 'czy to naprawdę prawda? (ultra-formalny)'. 本当？ = kasualny. マジ？ = slang (od 真面目 majime). 嘘でしょ = 'to żart'. Gradacja zdziwienia: マジ!? (slang) < 本当？ (kasualny) < 本当ですか (formalny) < 本当でございますか (ultra-formalny). でございます = formalna copula."
+      },
+      {
+        "id": "pj_rsh9",
+        "question": "メール: お忙しいところ恐れ入りますが → 友達LINE: _____ (email: przepraszam za kłopot → LINE do kolegi: _____)",
+        "translation": "Meeru: oisogashii tokoro osoreirimasu ga → Tomodachi LINE: _____",
+        "options": [
+          "ごめんね、ちょっと",
+          "恐れ入りますが",
+          "すみませんが",
+          "申し訳ありませんが"
+        ],
+        "correct": "ごめんね、ちょっと",
+        "explanation": "ごめんね、ちょっと (gomen ne, chotto) = 'sorka, mam sprawę' — kasualny wstęp w wiadomości. 恐れ入りますが = formalny email. すみませんが = neutralny. 申し訳ありませんが = formalny. W LINE/SMS do przyjaciół: ごめんね (przepraszam kasualnie). ちょっと (chotto = chwileczkę/mam coś). Kontrast: email biznesowy vs LINE = zupełnie inny język!"
+      },
+      {
+        "id": "pj_rsh10",
+        "question": "レポート: 調査を行った → 会話: _____ (raport: przeprowadzono badanie → rozmowa: _____)",
+        "translation": "Repooto: chousa wo okonatta → Kaiwa: _____",
+        "options": [
+          "調べたんだ",
+          "調査を実施した",
+          "調査を行った",
+          "リサーチした"
+        ],
+        "correct": "調べたんだ",
+        "explanation": "調べたんだ (shirabeta n da) = 'sprawdziłem (kasualny z のだ)' — styl mówiony. 調査を実施した = formalny pisany. 調査を行った = formalny pisany. リサーチした = anglicyzm. Pisany → mówiony: 調査を行う (chousa wo okonau) → 調べる (shiraberu). Sino-japoński czasownik → yamato-kotoba (rodzimy japoński) = zmiana rejestru."
+      },
+      {
+        "id": "pj_rsh11",
+        "question": "丁寧: ありがとうございます → タメ口: _____ (grzeczny: dziękuję → potoczny: _____)",
+        "translation": "Teinei: arigatou gozaimasu → Tameguchi: _____",
+        "options": [
+          "サンキュー",
+          "ありがとうございます",
+          "感謝します",
+          "ありがたい"
+        ],
+        "correct": "サンキュー",
+        "explanation": "サンキュー (sankyuu) = 'thanks' — ultra-kasualny anglicyzm między przyjaciółmi. ありがとうございます = formalny. 感謝します = oficjalny. ありがたい = 'jestem wdzięczny'. Gradacja: サンキュー/あざす (slang) < ありがとう (kasualny) < ありがとうございます (formalny) < 誠にありがとうございます (ultra-formalny). ため口 (tameguchi = mowa na równi)."
+      },
+      {
+        "id": "pj_rsh12",
+        "question": "ですます体 → だ・である体: 私はそう思います → 私はそう_____ (desu/masu → da/de aru: uważam tak → ja tak _____)",
+        "translation": "Desu masu tai → Da/de aru tai: watashi wa sou omoimasu → watashi wa sou _____",
+        "options": [
+          "思う",
+          "思います",
+          "思っている",
+          "思いました"
+        ],
+        "correct": "思う",
+        "explanation": "思う (omou) = 'myślę (forma słownikowa — styl potoczny/pisany)'. ですます体 (desu/masu tai = styl grzeczny) → だ体 (da tai = styl potoczny): zdejmujemy ます (masu). 思います → 思う. 食べます → 食べる. 行きます → 行く. W dzienniku, eseju, blogu: forma słownikowa. W rozmowie z obcymi: ですます."
+      },
+      {
+        "id": "pj_rsh13",
+        "question": "アナウンス: 電車が参ります → 日常: 電車が_____ (zapowiedź: pociąg nadjeżdża [kenjougo] → codzienność: pociąg _____)",
+        "translation": "Anaunsu: densha ga mairimasu → Nichijou: densha ga _____",
+        "options": [
+          "来るよ",
+          "参ります",
+          "いらっしゃいます",
+          "おいでになります"
+        ],
+        "correct": "来るよ",
+        "explanation": "来るよ (kuru yo) = 'jedzie (kasualny z よ)'. 参ります (mairimasu) = kenjougo od 来る — używane w zapowiedziach publicznych (kolej JR). いらっしゃいます = sonkeigo od 来る. おいでになります = sonkeigo. W codziennej rozmowie o pociągu: 来る (kuru). Zapowiedzi publiczne używają kenjougo, bo firma = poddany, pasażer = gość."
+      },
+      {
+        "id": "pj_rsh14",
+        "question": "若者語: ヤバい → 正式: _____ (slang młodzieżowy: 'łał/super' → formalny: _____)",
+        "translation": "Wakamono-go: yabai → Seishiki: _____",
+        "options": [
+          "素晴らしいです",
+          "すごい",
+          "ヤバい",
+          "半端ない"
+        ],
+        "correct": "素晴らしいです",
+        "explanation": "素晴らしいです (subarashii desu) = 'jest wspaniały (formalny)'. すごい = kasualny 'super'. ヤバい = slang (od 'niebezpieczny' → 'super/straszny'). 半端ない = slang 'niezwykły'. ヤバい (yabai) ma 180° zmianę znaczenia: pierwotnie = 'niebezpieczny/zły', dziś młodzież = 'super/niesamowity'. W formalnym kontekście: 素晴らしい, NIGDY ヤバい!"
+      },
+      {
+        "id": "pj_rsh15",
+        "question": "普通: すみません、道を教えてください → 超丁寧: _____ (zwykłe: przepraszam, proszę wskazać drogę → ultra-grzeczne: _____)",
+        "translation": "Futsuu: sumimasen, michi wo oshiete kudasai → Chouteinei: _____",
+        "options": [
+          "恐れ入りますが、道をお教えいただけますでしょうか",
+          "すみません、道は？",
+          "道を教えてくれ",
+          "道を教えて"
+        ],
+        "correct": "恐れ入りますが、道をお教えいただけますでしょうか",
+        "explanation": "恐れ入りますが、お教えいただけますでしょうか = ultra-grzeczna prośba (kenjougo + potencjalna + でしょうか). 道は？ = za kasualny. 教えてくれ = męski rozkaz. 教えて = kasualny. Gradacja: 教えて < 教えてください < お教えください < お教えいただけますか < お教えいただけますでしょうか. Każdy poziom dodaje dystans i szacunek!"
+      }
+    ]
+  },
+  {
+    "key": "arts_culture",
+    "name": "Sztuka i kultura japońska (芸術と文化)",
+    "description": "Japoński związany ze sztuką i kulturą: 茶道 (sadou = ceremonia herbaty), 書道 (shodou = kaligrafia), 華道 (kadou = ikebana), 武道 (budou = sztuki walki), 能・歌舞伎 (Nō/Kabuki), わびさび (wabi-sabi). Zrozumienie japońskiej kultury wymaga znajomości tych kluczowych terminów i konceptów!",
+    "iconName": "paintbrush.fill",
+    "color": "pink",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pj_art1",
+        "question": "茶道では、「一期_____ 」の精神が大切です (w ceremonii herbaty duch _____ [jedynego spotkania] jest ważny)",
+        "translation": "Sadou dewa, 'ichigo _____' no seishin ga taisetsu desu",
+        "options": [
+          "一会",
+          "一回",
+          "一度",
+          "一番"
+        ],
+        "correct": "一会",
+        "explanation": "一期一会 (ichigo ichie) = 'jedno życie, jedno spotkanie' — filozofia ceremonii herbaty: każde spotkanie jest niepowtarzalne. 一回 = 'jeden raz'. 一度 = 'raz'. 一番 = 'pierwszy/najlepszy'. 一期 (ichigo = jedno życie). 一会 (ichie = jedno spotkanie). Koncepcja z XVI w. (Sen no Rikyū). Oznacza: traktuj każde spotkanie jak jedyne!"
+      },
+      {
+        "id": "pj_art2",
+        "question": "歌舞伎の_____ は、男性が女性の役を演じます (_____ [onnagata] w kabuki to mężczyzna grający kobiecą rolę)",
+        "translation": "Kabuki no _____ wa, dansei ga josei no yaku wo enjimasu",
+        "options": [
+          "女形",
+          "女優",
+          "女性",
+          "女子"
+        ],
+        "correct": "女形",
+        "explanation": "女形 (onnagata/oyama) = aktor grający kobiecą rolę w kabuki — od 1629 r. kobiety mają zakaz występów w kabuki! 女優 (joyuu = aktorka). 女性 (josei = kobieta). 女子 (joshi = dziewczynka). 女形 to specjalizacja aktorska wymagająca lat treningu. Największe gwiazdy kabuki to często 女形. 演じる (enjiru = odgrywać rolę)."
+      },
+      {
+        "id": "pj_art3",
+        "question": "書道で使う_____ は、墨をすって作ります (_____ [tusz] używany w kaligrafii robi się pocierając kamień o kałamarz)",
+        "translation": "Shodou de tsukau _____ wa, sumi wo sutte tsukurimasu",
+        "options": [
+          "墨汁",
+          "インク",
+          "ペンキ",
+          "絵の具"
+        ],
+        "correct": "墨汁",
+        "explanation": "墨汁 (bokujuu) = tusz kaligraficzny (płynny, gotowy do użycia). インク = ink (zachodni). ペンキ = farba (z holenderskiego 'pek'). 絵の具 (enogu = farby malarskie). 墨 (sumi = blok tuszu). 硯 (suzuri = kałamarz do ścierania tuszu). Tradycyjna metoda: ścieranie bloku 墨 z wodą na 硯. 書道 (shodou = droga pisma = kaligrafia)."
+      },
+      {
+        "id": "pj_art4",
+        "question": "「わびさび」の「わび」は、_____ 美しさを意味します (wabi w wabi-sabi oznacza piękno _____)",
+        "translation": "'Wabi-sabi' no 'wabi' wa, _____ utsukushisa wo imi shimasu",
+        "options": [
+          "簡素な",
+          "華やかな",
+          "明るい",
+          "大きな"
+        ],
+        "correct": "簡素な",
+        "explanation": "簡素な (kanso na) = 'prosty/skromny/surowy' — esencja wabi. 華やかな = 'okazały' (przeciwieństwo!). 明るい = 'jasny'. 大きな = 'duży'. 侘び (wabi) = piękno prostoty i niedoskonałości. 寂び (sabi) = piękno przemijania (patyna czasu). わびさび to rdzeń japońskiej estetyki — szanuj niedoskonałość, cenij prostotę, zaakceptuj przemijanie."
+      },
+      {
+        "id": "pj_art5",
+        "question": "能の舞台で使われる_____ は、演者の感情を表します (_____ [maski] używane na scenie Nō wyrażają emocje performera)",
+        "translation": "Nō no butai de tsukawareru _____ wa, ensha no kanjou wo arawashimasu",
+        "options": [
+          "面",
+          "マスク",
+          "仮面",
+          "お面"
+        ],
+        "correct": "面",
+        "explanation": "面 (omote/men) = maska Nō — specjalny termin, NIE マスク ani 仮面! マスク = maska (medyczna/ogólna). 仮面 (kamen = maska na bal). お面 (omen = maska na festiwal). 面 w kontekście Nō = tradycyjna rzeźbiona maska z drewna cyprysowego. Ponad 200 typów 面. Aktor zmienia kąt nachylenia 面 aby wyrazić radość (照らす terasu) lub smutek (曇らす kumorasu)."
+      },
+      {
+        "id": "pj_art6",
+        "question": "華道で_____ を生けるとき、天・地・人の三つの位置を意識します (układając _____ [kwiaty] w ikebanie, świadomie tworzy się trzy pozycje: niebo, ziemia, człowiek)",
+        "translation": "Kadou de _____ wo ikeru toki, ten chi jin no mittsu no ichi wo ishiki shimasu",
+        "options": [
+          "花",
+          "植物",
+          "草",
+          "木"
+        ],
+        "correct": "花",
+        "explanation": "花を生ける (hana wo ikeru) = 'aranżować kwiaty (ikebana)' — 生ける (ikeru) to specyficzny czasownik dla ikebany (≠ 飾る kazaru = dekorować). 植物 = rośliny. 草 = trawa. 木 = drzewo. 華道 (kadou = droga kwiatów = ikebana). 天地人 (ten chi jin = niebo, ziemia, człowiek) — trzy podstawowe linie w aranżacji. 意識する (ishiki suru = być świadomym)."
+      },
+      {
+        "id": "pj_art7",
+        "question": "俳句は五・七・_____ の十七音で構成されます (haiku składa się z 17 sylab w układzie 5-7-_____)",
+        "translation": "Haiku wa go shichi _____ no juunana on de kousei saremasu",
+        "options": [
+          "五",
+          "三",
+          "七",
+          "九"
+        ],
+        "correct": "五",
+        "explanation": "五七五 (go-shichi-go = 5-7-5) = metryczny wzorzec haiku: 5 sylab + 7 sylab + 5 sylab = 17. 三 = 3. 七 = 7. 九 = 9. Haiku wymaga też 季語 (kigo = słowo sezonowe) i 切れ字 (kireji = słowo-cięcie). Słynne haiku Bashō: 古池や / 蛙飛び込む / 水の音 (furuike ya / kawazu tobikomu / mizu no oto = stary staw / żaba skacze / plusk wody)."
+      },
+      {
+        "id": "pj_art8",
+        "question": "相撲で力士が足を高く上げて地面を踏む動作を_____ と言います (w sumo ruch, gdy zapaśnik podnosi nogę wysoko i uderza w ziemię, nazywa się _____)",
+        "translation": "Sumou de rikishi ga ashi wo takaku agete jimen wo fumu dousa wo _____ to iimasu",
+        "options": [
+          "四股",
+          "技",
+          "投げ",
+          "押し"
+        ],
+        "correct": "四股",
+        "explanation": "四股 (shiko) = ritualne tupanie nogami w sumo — oczyszcza ring z złych duchów. 技 (waza = technika). 投げ (nage = rzut). 押し (oshi = pchnięcie). 四股を踏む (shiko wo fumu = wykonywać shiko) to rytuał przed walką. 力士 (rikishi = zapaśnik sumo). 土俵 (dohyou = ring sumo). Inne pojęcia: 横綱 (yokozuna = najwyższa ranga), まわし (mawashi = pas)."
+      },
+      {
+        "id": "pj_art9",
+        "question": "日本庭園の_____ は、砂で水の流れを表現します (_____ [ogród suchy] w ogrodzie japońskim wyraża bieg wody za pomocą piasku)",
+        "translation": "Nihon teien no _____ wa, suna de mizu no nagare wo hyougen shimasu",
+        "options": [
+          "枯山水",
+          "池泉",
+          "回遊",
+          "茶庭"
+        ],
+        "correct": "枯山水",
+        "explanation": "枯山水 (karesansui) = ogród suchy (= 'suche góry i woda') — piasek/żwir zgrabiony w wzory symbolizuje wodę, kamienie = góry. 池泉 (chisen = ogród z jeziorkiem). 回遊 (kaiyuu = ogród spacerowy). 茶庭 (chaniwa = ogród herbaty). Najsłynniejszy: Ryōan-ji w Kioto. 枯 (kare = wyschnięty). 山水 (sansui = krajobraz gór i wody)."
+      },
+      {
+        "id": "pj_art10",
+        "question": "着物を着るとき、_____ を右前にするのが正しいです (przy zakładaniu kimona, _____ [przód prawy] pod spód jest poprawnie)",
+        "translation": "Kimono wo kiru toki, _____ wo migimae ni suru no ga tadashii desu",
+        "options": [
+          "右の衿",
+          "左の衿",
+          "帯",
+          "袖"
+        ],
+        "correct": "右の衿",
+        "explanation": "右の衿 (migi no eri) = prawy kołnierz (= prawa poła pod spodem, lewa na wierzchu). 左の衿 = lewy kołnierz (BŁĄD — tak ubiera się zmarłych!). 帯 (obi = pas). 袖 (sode = rękaw). 右前 (migimae) dosłownie = 'prawy przód' = PRAWA poła NAJPIERW (pod spód). Kluczowa zasada: 右前 (żywi) vs 左前 (zmarli). Odwrotnie = tabu pogrzebowe!"
+      },
+      {
+        "id": "pj_art11",
+        "question": "三味線は_____ 本の弦を持つ日本の伝統楽器です (shamisen to japoński tradycyjny instrument z _____ strunami)",
+        "translation": "Shamisen wa _____ hon no gen wo motsu Nihon no dentou gakki desu",
+        "options": [
+          "三",
+          "四",
+          "六",
+          "二"
+        ],
+        "correct": "三",
+        "explanation": "三 (san = 3) — shamisen ma 3 struny (三味線 = dosłownie 'trzy struny smaku/dźwięku'). 四 = 4. 六 = 6. 二 = 2. 三味線 (shamisen): 三 (san = 3) + 味 (mi = smak) + 線 (sen = linia/struna). Inne tradycyjne instrumenty: 琴 (koto = 13 strun), 尺八 (shakuhachi = flet bambusowy), 太鼓 (taiko = bęben). 伝統楽器 (dentou gakki = tradycyjny instrument)."
+      },
+      {
+        "id": "pj_art12",
+        "question": "浮世絵は江戸時代の_____ 版画です (ukiyo-e to _____ drzeworyty z epoki Edo)",
+        "translation": "Ukiyoe wa Edo jidai no _____ hanga desu",
+        "options": [
+          "木版",
+          "石版",
+          "銅版",
+          "鉄版"
+        ],
+        "correct": "木版",
+        "explanation": "木版 (mokuhan) = drzeworyt — ukiyo-e to technika drzeworytnicza na klockach z drewna wiśni. 石版 = litografia. 銅版 = miedzioryt. 鉄版 = brak takiej techniki. 浮世絵 (ukiyoe) = 'obraz pływającego świata' — sztuka mas w Edo. Słynni artyści: 葛飾北斎 (Katsushika Hokusai — Wielka Fala), 歌川広重 (Utagawa Hiroshige — 53 stacje Tōkaidō)."
+      },
+      {
+        "id": "pj_art13",
+        "question": "武道の「道」は、_____ を意味しています (do [droga] w budō oznacza _____)",
+        "translation": "Budou no 'dou' wa, _____ wo imi shite imasu",
+        "options": [
+          "精神的な修行の道",
+          "戦う方法",
+          "体を鍛えること",
+          "勝つ技"
+        ],
+        "correct": "精神的な修行の道",
+        "explanation": "精神的な修行の道 (seishinteki na shugyou no michi) = 'droga duchowej praktyki' — esencja 道 (dou/michi). 戦う方法 = 'sposób walki'. 体を鍛えること = 'hartowanie ciała'. 勝つ技 = 'technika wygrywania'. 武道 (budou = droga wojownika): 剣道 (kendou = droga miecza), 柔道 (juudou = droga elastyczności), 合気道 (aikidou = droga harmonii). 道 = nie sport, ale duchowa ścieżka!"
+      },
+      {
+        "id": "pj_art14",
+        "question": "お花見は_____ の花を見ながら楽しむ春の行事です (hanami to wiosenne wydarzenie, podczas którego podziwia się kwiaty _____)",
+        "translation": "Ohanami wa _____ no hana wo minagara tanoshimu haru no gyouji desu",
+        "options": [
+          "桜",
+          "梅",
+          "菊",
+          "藤"
+        ],
+        "correct": "桜",
+        "explanation": "桜 (sakura = wiśnia) — お花見 (ohanami) to tradycja podziwiania kwitnących wiśni (marzec-kwiecień). 梅 (ume = śliwa — też podziwiana, ale wcześniej). 菊 (kiku = chryzantema — symbol cesarza). 藤 (fuji = wisteria — maj). Sakura symbolizuje piękno i przemijanie (散る chiru = opadać). 花見 = dosłownie 'oglądanie kwiatów'."
+      },
+      {
+        "id": "pj_art15",
+        "question": "金継ぎは壊れた陶器を_____ で修理する芸術です (kintsugi to sztuka naprawiania rozbitej ceramiki za pomocą _____)",
+        "translation": "Kintsugi wa kowareta touki wo _____ de shuuri suru geijutsu desu",
+        "options": [
+          "金",
+          "銀",
+          "鉄",
+          "木"
+        ],
+        "correct": "金",
+        "explanation": "金 (kin = złoto) — kintsugi (金継ぎ) = 'złote łączenie': naprawianie ceramiki złotym lakierem, czyniąc pęknięcia widocznymi i pięknymi. 銀 = srebro (istnieje 銀継ぎ gintsugi). 鉄 = żelazo. 木 = drewno. Filozofia kintsugi: nie ukrywaj zniszczeń, celebruj historię przedmiotu. Związek z wabi-sabi — piękno niedoskonałości i przemijania."
+      }
+    ]
+  },
+  {
+    "key": "exam_strategies",
+    "name": "Strategie egzaminacyjne JLPT (試験対策)",
+    "description": "Praktyczne porady i wzorce na egzamin JLPT: jak rozpoznawać pułapki w pytaniach, typowe dystraktory, strategie czytania ze zrozumieniem, słuchanie kluczowych słów, zarządzanie czasem. Te wzorce pojawiają się na KAŻDYM egzaminie JLPT od N5 do N1!",
+    "iconName": "checkmark.seal.fill",
+    "color": "green",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_exs1",
+        "question": "JLPT文法: 「Aは_____ 、Bではない」(A jest _____, ale nie B — wzorzec kontrastowy)",
+        "translation": "JLPT bunpou: 'A wa _____, B dewa nai'",
+        "options": [
+          "あるが",
+          "あって",
+          "あるので",
+          "あるから"
+        ],
+        "correct": "あるが",
+        "explanation": "あるが (aru ga) = 'jest, ale...' — が (ga) jako spójnik kontrastowy ('but') jest ULUBIONĄ pułapką JLPT! あって = te-form (przyczyna). あるので = 'ponieważ jest'. あるから = 'bo jest'. Pułapka: が ma DWIE funkcje: 1) partykuła podmiotu, 2) spójnik 'ale'. Na JLPT: czytaj CAŁY kontekst zdania, aby rozróżnić te dwa użycia!"
+      },
+      {
+        "id": "pj_exs2",
+        "question": "JLPT読解: 「つまり」の後に来るのは_____ (w czytaniu JLPT, po つまり [tsumari] następuje _____)",
+        "translation": "JLPT dokkai: 'tsumari' no ato ni kuru no wa _____",
+        "options": [
+          "結論や要約",
+          "新しい話題",
+          "反対意見",
+          "具体例"
+        ],
+        "correct": "結論や要約",
+        "explanation": "結論や要約 (ketsuron ya youyaku) = 'wniosek lub podsumowanie' — つまり (tsumari) = 'innymi słowy / podsumowując'. 新しい話題 = 'nowy temat'. 反対意見 = 'przeciwna opinia'. 具体例 = 'konkretny przykład'. Kluczowe słowa-sygnały na JLPT: つまり (podsumowanie), しかし (kontrast), たとえば (przykład), したがって (wniosek)."
+      },
+      {
+        "id": "pj_exs3",
+        "question": "JLPT聴解: 「ところが」は_____ のサインです (w słuchaniu JLPT, ところが jest sygnałem _____)",
+        "translation": "JLPT choukai: 'tokoro ga' wa _____ no sain desu",
+        "options": [
+          "予想外の展開",
+          "同じ話題の続き",
+          "話題の終わり",
+          "例の紹介"
+        ],
+        "correct": "予想外の展開",
+        "explanation": "予想外の展開 (yosougai no tenkai) = 'nieoczekiwany zwrot' — ところが (tokoro ga) = 'a jednak / tymczasem (wbrew oczekiwaniom)'. 同じ話題の続き = 'kontynuacja'. 話題の終わり = 'koniec tematu'. 例の紹介 = 'wprowadzenie przykładu'. Na JLPT słuchanie: po ところが następuje ODWRÓCENIE oczekiwań — klucz do poprawnej odpowiedzi!"
+      },
+      {
+        "id": "pj_exs4",
+        "question": "この問題の答えは_____ だと思われますが、いかがでしょうか (wydaje się, że odpowiedź na to pytanie to _____, jak Pan sądzi?)",
+        "translation": "Kono mondai no kotae wa _____ da to omowaremasu ga, ikaga deshou ka",
+        "options": [
+          "2番",
+          "正しい",
+          "全部",
+          "何も"
+        ],
+        "correct": "2番",
+        "explanation": "2番 (niban = numer 2) — w JLPT odpowiedzi to zazwyczaj ponumerowane opcje (1番～4番). と思われます (to omowaremasu) = 'wydaje się' (bierna sugestia). いかがでしょうか = 'jak Pan sądzi?' (formalna prośba o opinię). Strategia: na JLPT, eliminuj NAJPIERW odpowiedzi ewidentnie błędne, potem wybieraj z pozostałych. 消去法 (shoukyohou = metoda eliminacji)!"
+      },
+      {
+        "id": "pj_exs5",
+        "question": "JLPT N2文法: 「～にもかかわらず」 = _____ (mimo że...)",
+        "translation": "JLPT N2 bunpou: '~ni mo kakawarazu' = _____",
+        "options": [
+          "～のに",
+          "～ので",
+          "～から",
+          "～ために"
+        ],
+        "correct": "～のに",
+        "explanation": "～にもかかわらず (ni mo kakawarazu) = 'mimo że / pomimo' = ～のに (noni) na wyższym poziomie formalnym. ～ので = 'ponieważ'. ～から = 'bo'. ～ために = 'z powodu'. Strategia: na JLPT musisz znać SYNONIMY na różnych poziomach formalności: のに = kasualny, にもかかわらず = formalny, それにしても = emfatyczny. Samo znaczenie jest takie samo!"
+      },
+      {
+        "id": "pj_exs6",
+        "question": "JLPT読解: 筆者の考えに最も近いものは_____ (w czytaniu: najbliższe opinii autora to _____ [jak znaleźć?])",
+        "translation": "JLPT dokkai: hissha no kangae ni mottomo chikai mono wa _____",
+        "options": [
+          "最後の段落にあることが多い",
+          "最初の文にある",
+          "中間にある",
+          "タイトルから分かる"
+        ],
+        "correct": "最後の段落にあることが多い",
+        "explanation": "最後の段落にあることが多い (saigo no danraku ni aru koto ga ooi) = 'często jest w ostatnim akapicie'. 最初の文 = 'pierwsze zdanie'. 中間 = 'środek'. タイトル = 'tytuł'. Strategia JLPT: opinia autora (筆者の考え hissha no kangae) najczęściej pojawia się w OSTATNIM akapicie, po したがって, つまり, 以上のことから. Szukaj konkluzji!"
+      },
+      {
+        "id": "pj_exs7",
+        "question": "JLPT: 「～ばかりでなく～も」は_____ を表す (ten wzorzec wyraża _____)",
+        "translation": "JLPT: '~bakari de naku ~mo' wa _____ wo arawasu",
+        "options": [
+          "追加・並列",
+          "対比",
+          "原因",
+          "条件"
+        ],
+        "correct": "追加・並列",
+        "explanation": "追加・並列 (tsuika heiretsu) = 'dodawanie/zestawienie' — ～ばかりでなく～も (bakari de naku ~ mo) = 'nie tylko... ale też...'. 対比 = 'kontrast'. 原因 = 'przyczyna'. 条件 = 'warunek'. Synonimy na JLPT: ～だけでなく～も, ～のみならず～も, ～ばかりか～も. Wszystkie = 'nie tylko A, ale też B'. Im wyższy JLPT, tym formalniejszy synonim!"
+      },
+      {
+        "id": "pj_exs8",
+        "question": "JLPT聴解のコツ: 質問が流れる_____ にメモを取ることが重要です (wskazówka słuchania: ważne jest robienie notatek _____ [przed/w trakcie] pytania)",
+        "translation": "JLPT choukai no kotsu: shitsumon ga nagareru _____ ni memo wo toru koto ga juuyou desu",
+        "options": [
+          "前",
+          "後",
+          "間",
+          "時"
+        ],
+        "correct": "前",
+        "explanation": "前 (mae = przed) — musisz notować ZANIM padnie pytanie, bo tekst puszczany jest TYLKO RAZ! 後 = 'po'. 間 = 'w trakcie'. 時 = 'kiedy'. Strategia: na JLPT słuchanie tekst nie jest powtarzany (od N3 wzwyż). Notuj kluczowe słowa/liczby NATYCHMIAST. Najczęstsze pytania: いつ (kiedy), どこ (gdzie), どうして (dlaczego), 何を (co). コツ (kotsu = wskazówka/trick)."
+      },
+      {
+        "id": "pj_exs9",
+        "question": "JLPT語彙: 「急に」と同じ意味の_____ はN2レベルです (_____ [synonim] o tym samym znaczeniu co 急に jest na poziomie N2)",
+        "translation": "JLPT goi: 'kyuu ni' to onaji imi no _____ wa N2 reberu desu",
+        "options": [
+          "突然",
+          "すぐに",
+          "早く",
+          "もうすぐ"
+        ],
+        "correct": "突然",
+        "explanation": "突然 (totsuzen) = 'nagle/niespodziewanie' — formalny synonim 急に (kyuu ni). すぐに = 'natychmiast' (inne znaczenie!). 早く = 'szybko/wcześnie'. もうすぐ = 'wkrótce'. Strategia słownictwa JLPT: na wyższych poziomach pojawiają się FORMALNE SYNONIMY codziennych słów: 急に → 突然, 大体 → おおむね (oomune), とても → 非常に (hijou ni)."
+      },
+      {
+        "id": "pj_exs10",
+        "question": "JLPT: 「～とは限らない」は「_____ 」という意味です (ten wzorzec oznacza _____)",
+        "translation": "JLPT: '~to wa kagiranai' wa '_____ ' to iu imi desu",
+        "options": [
+          "必ずしもそうではない",
+          "全くそうではない",
+          "絶対にそうだ",
+          "きっとそうだ"
+        ],
+        "correct": "必ずしもそうではない",
+        "explanation": "必ずしもそうではない (kanarazu shimo sou dewa nai) = 'niekoniecznie tak jest' — częściowa negacja. 全くそうではない = 'wcale tak nie jest' (totalna negacja). 絶対にそうだ = 'na pewno tak'. きっとそうだ = 'z pewnością tak'. ～とは限らない (to wa kagiranai) = 'nie znaczy, że zawsze...' — PUŁAPKA JLPT: to NIE jest totalna negacja, tylko 'nie zawsze/niekoniecznie'!"
+      },
+      {
+        "id": "pj_exs11",
+        "question": "JLPT読解: 「それ」が指しているものは通常_____ にあります (w czytaniu JLPT, to na co wskazuje それ jest zwykle _____)",
+        "translation": "JLPT dokkai: 'sore' ga sashite iru mono wa tsuujou _____ ni arimasu",
+        "options": [
+          "前の文",
+          "次の文",
+          "段落の最後",
+          "タイトル"
+        ],
+        "correct": "前の文",
+        "explanation": "前の文 (mae no bun = w poprzednim zdaniu) — それ/この/その wskazują na wcześniej wspomniane informacje. 次の文 = 'następne zdanie'. 段落の最後 = 'koniec akapitu'. タイトル = 'tytuł'. Strategia: na JLPT pytania o 「それ」は何を指していますか (na co wskazuje 'to'?) wymagają COFNIĘCIA się do poprzednich zdań. Antyrefencja = cofnij się!"
+      },
+      {
+        "id": "pj_exs12",
+        "question": "JLPT N1文法: 「～を余儀なくされた」= _____ (został zmuszony do...)",
+        "translation": "JLPT N1 bunpou: '~wo yogi naku sareta' = _____",
+        "options": [
+          "～せざるを得なかった",
+          "～したかった",
+          "～できなかった",
+          "～するつもりだった"
+        ],
+        "correct": "～せざるを得なかった",
+        "explanation": "～せざるを得なかった (sezaru wo enakatta) = 'musiałem (nie mogłem nie)' — oba wyrażają przymus. ～したかった = 'chciałem'. ～できなかった = 'nie mogłem'. ～するつもりだった = 'zamierzałem'. を余儀なくされた (wo yogi naku sareta) = dosłownie 'zostałem pozbawiony innego wyjścia'. Na N1: musisz znać PARY SYNONIMÓW na tym samym poziomie formalności!"
+      },
+      {
+        "id": "pj_exs13",
+        "question": "JLPT: 間違いやすい漢字 — 「未」と「末」の違いは_____ です (różnica między 未 a 末 to _____)",
+        "translation": "JLPT: machigaiyasui kanji — 'mi' to 'matsu' no chigai wa _____ desu",
+        "options": [
+          "横線の長さ",
+          "画数",
+          "読み方だけ",
+          "同じ漢字"
+        ],
+        "correct": "横線の長さ",
+        "explanation": "横線の長さ (yousen no nagasa) = 'długość poziomych kresek' — 未 (mi = nie-jeszcze): górna kreska KRÓTSZA. 末 (matsu = koniec): górna kreska DŁUŻSZA. 画数 = 'liczba kresek' (obie mają 5). 読み方だけ = 'tylko odczyt'. 同じ漢字 = 'ten sam kanji'. Pułapka JLPT: 未来 (mirai = przyszłość) ≠ 週末 (shuumatsu = weekend). Jedna kreska robi ogromną różnicę!"
+      },
+      {
+        "id": "pj_exs14",
+        "question": "JLPT時間配分: N2の読解は全体の_____ の時間を使うべきです (na czytanie N2 należy przeznaczyć _____ całego czasu)",
+        "translation": "JLPT jikan haibun: N2 no dokkai wa zentai no _____ no jikan wo tsukau beki desu",
+        "options": [
+          "半分以上",
+          "3分の1",
+          "4分の1",
+          "少しだけ"
+        ],
+        "correct": "半分以上",
+        "explanation": "半分以上 (hanbun ijou = ponad połowę) — czytanie JLPT N2 ma NAJWIĘCEJ pytań i wymaga NAJWIĘCEJ czasu! 3分の1 = 'jedna trzecia'. 4分の1 = 'jedna czwarta'. 少しだけ = 'tylko trochę'. Strategia: 文法 (bunpou = gramatyka) = szybko (znasz lub nie), 読解 (dokkai = czytanie) = wolno (wymaga analizy). Nie spędzaj za dużo czasu na gramatyce! 時間配分 (jikan haibun = zarządzanie czasem)."
+      },
+      {
+        "id": "pj_exs15",
+        "question": "JLPT: 答えが「～ないこともない」の場合、意味は_____ (gdy odpowiedź to ~nai koto mo nai, znaczenie to _____)",
+        "translation": "JLPT: kotae ga '~nai koto mo nai' no baai, imi wa _____",
+        "options": [
+          "弱い肯定",
+          "強い否定",
+          "完全な肯定",
+          "関係ない"
+        ],
+        "correct": "弱い肯定",
+        "explanation": "弱い肯定 (yowai koutei) = 'słabe potwierdzenie/częściowe tak' — podwójna negacja w japońskim ≠ mocne tak! 強い否定 = 'mocna negacja'. 完全な肯定 = 'pełne tak'. 関係ない = 'nieistotne'. ～ないこともない (nai koto mo nai) = dosłownie 'nie jest tak, że nie...' = 'trochę tak / niekoniecznie nie'. PUŁAPKA JLPT: podwójna negacja = OSTROŻNE TAK, nie entuzjastyczne!"
+      }
+    ]
   }
 ]
