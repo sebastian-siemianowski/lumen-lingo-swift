@@ -215,6 +215,16 @@ struct LanguageSelectionView: View {
         NavigationStack {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(spacing: 0) {
+                    // Close button — inline so content flows below
+                    HStack {
+                        SiriCloseButton(isDark: isDark) {
+                            dismiss()
+                        }
+                        Spacer()
+                    }
+                    .padding(.horizontal, 16)
+                    .padding(.top, 8)
+
                     heroSection
                         .padding(.top, 4)
 
@@ -232,40 +242,7 @@ struct LanguageSelectionView: View {
             .background(pageBackground)
             .safeAreaInset(edge: .bottom) { floatingCTA }
             .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button {
-                        dismiss()
-                    } label: {
-                        ZStack {
-                            Circle()
-                                .fill(isDark ? Color(hex: "#1a1a2e") : .white)
-                                .frame(width: 36, height: 36)
-                                .overlay(
-                                    Circle()
-                                        .strokeBorder(
-                                            LinearGradient(
-                                                colors: [.indigo.opacity(0.3), .purple.opacity(0.2)],
-                                                startPoint: .top, endPoint: .bottom
-                                            ),
-                                            lineWidth: 1
-                                        )
-                                )
-                                .shadow(color: .indigo.opacity(isDark ? 0.15 : 0.06), radius: 8, y: 2)
-
-                            Image(systemName: "xmark")
-                                .font(.system(size: 13, weight: .semibold))
-                                .foregroundStyle(
-                                    LinearGradient(
-                                        colors: [.indigo, .purple],
-                                        startPoint: .top, endPoint: .bottom
-                                    )
-                                )
-                        }
-                    }
-                    .buttonStyle(SiriGlowButtonStyle())
-                }
-            }
+            .toolbar(.hidden, for: .navigationBar)
             .onAppear {
                 loadCurrent()
                 withAnimation(.easeOut(duration: 0.7).delay(0.15)) {
@@ -975,55 +952,56 @@ private struct TargetCardView: View {
     }
 }
 
-// MARK: - Siri-style Glow Button Style
+// MARK: - Siri-style Close Button
 
-/// Siri-style rainbow glow button — on press, a translucent iridescent
-/// ring blooms around the button with a soft scale. No grey highlight.
-private struct SiriGlowButtonStyle: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        let pressed = configuration.isPressed
+/// Clean close button — on press, just the xmark glows with a soft flowing
+/// pastel rainbow (like the Siri activation bar). Circle stays unchanged.
+private struct SiriCloseButton: View {
+    let isDark: Bool
+    let action: () -> Void
 
-        configuration.label
-            .scaleEffect(pressed ? 0.9 : 1.0)
-            .background(
-                ZStack {
-                    // Rainbow ring glow — only visible on press
+    @GestureState private var isPressed = false
+
+    var body: some View {
+        ZStack {
+            Circle()
+                .fill(isDark ? Color(hex: "#1a1a2e") : .white)
+                .frame(width: 36, height: 36)
+                .overlay(
                     Circle()
-                        .stroke(
-                            AngularGradient(
-                                colors: [
-                                    .red, .orange, .yellow, .green,
-                                    .cyan, .blue, .indigo, .purple, .pink, .red
-                                ],
-                                center: .center
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: [.indigo.opacity(0.3), .purple.opacity(0.2)],
+                                startPoint: .top, endPoint: .bottom
                             ),
-                            lineWidth: pressed ? 3 : 0
+                            lineWidth: 1
                         )
-                        .frame(width: 44, height: 44)
-                        .blur(radius: pressed ? 6 : 0)
-                        .opacity(pressed ? 0.9 : 0)
+                )
+                .shadow(color: .indigo.opacity(isDark ? 0.15 : 0.06), radius: 8, y: 2)
 
-                    // Soft translucent bloom
-                    Circle()
-                        .fill(
-                            RadialGradient(
-                                colors: pressed
-                                    ? [.white.opacity(0.15), .purple.opacity(0.08), .clear]
-                                    : [.clear, .clear, .clear],
-                                center: .center,
-                                startRadius: 4,
-                                endRadius: 30
-                            )
-                        )
-                        .frame(width: 56, height: 56)
+            Image(systemName: "xmark")
+                .font(.system(size: 13, weight: .semibold))
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: [.indigo, .purple],
+                        startPoint: .top, endPoint: .bottom
+                    )
+                )
+        }
+        .scaleEffect(isPressed ? 0.92 : 1.0)
+        .animation(.spring(response: 0.25, dampingFraction: 0.7), value: isPressed)
+        .gesture(
+            DragGesture(minimumDistance: 0)
+                .updating($isPressed) { _, state, _ in
+                    state = true
                 }
-            )
-            .animation(.easeOut(duration: 0.2), value: pressed)
-            .onChange(of: pressed) { _, isPressed in
-                if isPressed {
-                    let generator = UIImpactFeedbackGenerator(style: .soft)
-                    generator.impactOccurred(intensity: 0.4)
+                .onEnded { value in
+                    let rect = CGRect(x: -10, y: -10, width: 56, height: 56)
+                    if rect.contains(value.location) {
+                        action()
+                    }
                 }
-            }
+        )
+        .sensoryFeedback(.impact(flexibility: .soft, intensity: 0.5), trigger: isPressed)
     }
 }
