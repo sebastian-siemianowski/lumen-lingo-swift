@@ -15920,5 +15920,1015 @@
         "explanation": "'Critiquer' (krytywkowac) — 'les partis d'opposition ont critique' = partie opozycji skrytykowaly. 'L'opposition' = opozycja, 'la majorite' = wiekszosc (rzadzaca). 'Un projet de loi' = projekt ustawy (od rzadu), 'une proposition de loi' = projekt (od parlamentarzystow). Krytyka rzadu to normalna czesc demokracji. 'Critiquer' vs 'contester' (kwestionowac) vs 'denoncer' (denuncjowac/potepiac). W polskim: 'skrytykowac projekt ustawy'."
       }
     ]
+  },
+  {
+    "key": "sciences_recherche",
+    "name": "Sciences et recherche (nauki i badania)",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pf_sci1",
+        "question": "Les scientifiques ont _____ une nouvelle molecule.",
+        "translation": "(Naukowcy odkryli nowa czasteczke)",
+        "options": [
+          "decouvert",
+          "decouvrir",
+          "decouvraient",
+          "decouvrissent"
+        ],
+        "correct": "decouvert",
+        "explanation": "'Decouvrir' (odkrywac) — participe passe: 'decouvert'. Passe compose z 'avoir': ils ont decouvert. Odmiana nieregularna jak 'ouvrir' (ouvrir-ouvert, decouvrir-decouvert, recouvrir-recouvert). W polskim: 'odkryli' — aspekt dokonany, co odpowiada uzyciu passe compose we francuskim. Ten czasownik jest kluczowy w kontekscie naukowym."
+      },
+      {
+        "id": "pf_sci2",
+        "question": "Cette hypothese _____ etre verifiee par des experiences.",
+        "translation": "(Ta hipoteza musi byc zweryfikowana przez doswiadczenia)",
+        "options": [
+          "doit",
+          "doit de",
+          "devoir",
+          "devrait de"
+        ],
+        "correct": "doit",
+        "explanation": "'Devoir' + infinitif (musiec + bezokolicznik) — bez przyimka! 'Elle doit etre verifiee' = musi byc zweryfikowana. UWAGA: nigdy 'doit de' — to blad. Odmiana: je dois, tu dois, il doit, nous devons, vous devez, ils doivent. W kontekscie naukowym 'doit' wyra koniecznosc metodologiczna. Polski odpowiednik 'musi byc' dziala identycznie."
+      },
+      {
+        "id": "pf_sci3",
+        "question": "Le chercheur a publie _____ article dans une revue prestigieuse.",
+        "translation": "(Badacz opublikowal artykul w prestizowym czasopismie)",
+        "options": [
+          "un",
+          "le",
+          "du",
+          "son"
+        ],
+        "correct": "un",
+        "explanation": "'Un article' — rodzajnik nieokreslony, bo mowimy o jednym z wielu artykulow, nie o konkretnym, wczesniej wspomnianym. 'Le article' bylby bledny takze fonetycznie (wymagana elizja: l'article). 'Son article' oznaczaloby 'swoj artykul'. 'Revue' to czasopismo naukowe (zenska: une revue). W polskim nie mamy rodzajnikow — to kluczowa roznica."
+      },
+      {
+        "id": "pf_sci4",
+        "question": "Les resultats de l'experience _____ tres prometteurs.",
+        "translation": "(Wyniki doswiadczenia sa bardzo obiecujace)",
+        "options": [
+          "sont",
+          "est",
+          "etes",
+          "suis"
+        ],
+        "correct": "sont",
+        "explanation": "'Les resultats sont' — podmiot w liczbie mnogiej wymaga 'sont'. Przymiotnik 'prometteur' (obiecujacy) — l.mn. meska: 'prometteurs'. 'Prometteur' pochodzi od 'promettre' (obiecywac). Forma zenska: prometteuse/prometteuses. UWAGA: 'resultat' jest rodzaju meskiego (un resultat), mimo ze w polskim 'wynik' tez jest meski — tu akurat sie zgadza!"
+      },
+      {
+        "id": "pf_sci5",
+        "question": "Il faut analyser ces donnees _____ de tirer des conclusions.",
+        "translation": "(Trzeba przeanalizowac te dane przed wyciagnieciem wnioskow)",
+        "options": [
+          "avant",
+          "apres",
+          "pendant",
+          "depuis"
+        ],
+        "correct": "avant",
+        "explanation": "'Avant de' + infinitif (przed + gerundium/bezokolicznik) — 'avant de tirer' = przed wyciagnieciem. UWAGA: 'avant de' + infinitif = zanim, przed (czynnoscia). 'Apres' + infinitif passe: 'apres avoir tire'. 'Tirer des conclusions' = wyciagac wnioski — wyrazenie idiomatyczne. W polskim 'przed wyciagnieciem' — identyczna logika czasowa."
+      },
+      {
+        "id": "pf_sci6",
+        "question": "La theorie de la relativite _____ par Einstein en 1905.",
+        "translation": "(Teoria wzglednosci zostala opublikowana przez Einsteina w 1905)",
+        "options": [
+          "a ete publiee",
+          "est publiee",
+          "a publie",
+          "publiait"
+        ],
+        "correct": "a ete publiee",
+        "explanation": "'A ete publiee' — strona bierna w passe compose (voix passive au passe compose). Budowa: avoir + ete + participe passe. 'Publiee' z -e bo 'theorie' jest rodzaju zenskiego. Strona bierna: sujet + etre + participe passe + par + agent. W polskim 'zostala opublikowana' — identyczna konstrukcja bierna z 'zostac'. To bardzo wazna paralela!"
+      },
+      {
+        "id": "pf_sci7",
+        "question": "Les chercheurs travaillent _____ ce projet depuis trois ans.",
+        "translation": "(Badacze pracuja nad tym projektem od trzech lat)",
+        "options": [
+          "sur",
+          "dans",
+          "a",
+          "pour"
+        ],
+        "correct": "sur",
+        "explanation": "'Travailler sur' (pracowac nad) — przyimek 'sur' po 'travailler' oznacza temat/projekt. 'Travailler dans' = pracowac w (branzy). 'Travailler a' = pracowac przy (czesto wymiennie z 'sur'). 'Depuis trois ans' = od trzech lat (ciaglosc do teraz, wiec czas terazniejszy!). W polskim 'pracuja nad' — przyimek 'nad' odpowiada 'sur' w tym kontekscie."
+      },
+      {
+        "id": "pf_sci8",
+        "question": "Cette decouverte pourrait _____ a de nouveaux medicaments.",
+        "translation": "(To odkrycie mogloby doprowadzic do nowych lekow)",
+        "options": [
+          "mener",
+          "menant",
+          "mene",
+          "menee"
+        ],
+        "correct": "mener",
+        "explanation": "'Pourrait mener' — conditionnel + infinitif (moglby + bezokolicznik). 'Mener a' = prowadzic do, doprowadzic do. Conditionnel present wyra mozliwosc, hipoteze. Odmiana 'pouvoir' w conditionnel: je pourrais, tu pourrais, il pourrait. 'Medicament' (lek) — meski, l.mn.: medicaments. W polskim 'mogloby doprowadzic' — ta sama struktura warunkowa."
+      },
+      {
+        "id": "pf_sci9",
+        "question": "Le laboratoire _____ equipe des technologies les plus avancees.",
+        "translation": "(Laboratorium jest wyposarzone w najnowocze technologie)",
+        "options": [
+          "est",
+          "a",
+          "fait",
+          "va"
+        ],
+        "correct": "est",
+        "explanation": "'Est equipe de' (jest wyposazony w) — strona bierna statyczna z 'etre'. 'Equipe' — participe passe od 'equiper'. 'Les plus avancees' — superlatif (najnowocze): les + plus + adjectif. 'Avancee' z -es bo 'technologies' jest zenskie l.mn. 'Laboratoire' jest meskie (un laboratoire). W polskim 'jest wyposarzone' — identyczna bierna konstrukcja."
+      },
+      {
+        "id": "pf_sci10",
+        "question": "Nous devons _____ nos resultats a la conference.",
+        "translation": "(Musimy przedstawic nasze wyniki na konferencji)",
+        "options": [
+          "presenter",
+          "presentes",
+          "presentions",
+          "presentant"
+        ],
+        "correct": "presenter",
+        "explanation": "'Devoir' + infinitif — po czasowniku modalnym zawsze bezokolicznik: 'devons presenter'. NIGDY 'devons presentes' (to imieslow). 'A la conference' — przyimek 'a' z rodzajnikiem 'la' (do/na konferencji). 'Presenter des resultats' = przedstawiac wyniki. W polskim 'musimy przedstawic' — identycznie: modalny + bezokolicznik."
+      },
+      {
+        "id": "pf_sci11",
+        "question": "L'experience a _____ des resultats inattendus.",
+        "translation": "(Doswiadczenie dalo nieoczekiwane wyniki)",
+        "options": [
+          "donne",
+          "donner",
+          "donnait",
+          "donnant"
+        ],
+        "correct": "donne",
+        "explanation": "'A donne' — passe compose od 'donner' (dac). Participe passe: donne (regularny -er: donner > donne). 'Inattendu' (nieoczekiwany) = in- + attendu (oczekiwany). Prefiks 'in-' to negacja (jak polski 'nie-'). 'Resultats inattendus' — przymiotnik po rzeczowniku i w l.mn. meskiej. Ta zasada rozmieszczenia przymiotnikow jest kluczowa we francuskim."
+      },
+      {
+        "id": "pf_sci12",
+        "question": "Les donnees _____ etre interpretees avec prudence.",
+        "translation": "(Dane powinny byc interpretowane z ostroznoscia)",
+        "options": [
+          "doivent",
+          "doit",
+          "devons",
+          "devez"
+        ],
+        "correct": "doivent",
+        "explanation": "'Les donnees doivent' — 'donnees' jest l.mn. zenskie, wiec 'doivent' (3 os. l.mn.). UWAGA: 'donnee' jest rodzaju zenskiego (une donnee), w przeciwienstwie do angielskiego 'data'. Odmiana 'devoir': dois, dois, doit, devons, devez, doivent. 'Avec prudence' = z ostroznoscia. W polskim 'dane powinny' — l.mn. jak po francusku."
+      },
+      {
+        "id": "pf_sci13",
+        "question": "Le microscope permet _____ observer des cellules.",
+        "translation": "(Mikroskop pozwala obserwowac komorki)",
+        "options": [
+          "d'",
+          "de",
+          "a",
+          "pour"
+        ],
+        "correct": "d'",
+        "explanation": "'Permettre de' + infinitif (pozwalac + bezokolicznik) — 'd'' przed samogloska 'observer'. ZASADA: 'de' staje sie 'd'' przed samogloska lub niemym h. 'Permettre de' = pozwalac zrobic cos (bez komus — wtedy: 'permettre a qqn de'). 'Cellule' (komorka) — zenskie: une cellule. W polskim 'pozwala obserwowac' — prostsze, bez przyimka."
+      },
+      {
+        "id": "pf_sci14",
+        "question": "Cette etude _____ que le rechauffement climatique s'accelere.",
+        "translation": "(To badanie pokazuje, ze globalne ocieplenie przyspiesza)",
+        "options": [
+          "montre",
+          "montrer",
+          "montrant",
+          "montra"
+        ],
+        "correct": "montre",
+        "explanation": "'Montre que' = pokazuje, ze — 'montrer' w ind. present 3 os. l.poj. 'Le rechauffement climatique' (globalne ocieplenie/ocieplenie klimatyczne). 'S'accelerer' = przyspieszac (zwrotny). UWAGA: po 'montre que' uzywamy indicatif (nie subjonctif!), bo to stwierdzenie faktu. W polskim 'pokazuje, ze' — identyczna konstrukcja z 'ze' odpowiadajacym 'que'."
+      },
+      {
+        "id": "pf_sci15",
+        "question": "Il est essentiel de _____ la methodologie avant de commencer.",
+        "translation": "(Istotne jest zdefiniowanie metodologii przed rozpoczeciem)",
+        "options": [
+          "definir",
+          "definis",
+          "definissant",
+          "defini"
+        ],
+        "correct": "definir",
+        "explanation": "'Il est essentiel de' + infinitif — konstrukcja bezosobowa wyrazajaca koniecznosc. 'Definir' (definiowac) — czasownik 2. grupy (-ir). 'Methodologie' jest zenskie: la methodologie. 'Avant de commencer' = przed rozpoczeciem. Ta formalna konstrukcja 'il est + adj + de + inf' jest bardzo czesta w tekstach naukowych. W polskim 'istotne jest' + bezokolicznik — analogi."
+      }
+    ]
+  },
+  {
+    "key": "arts_culture",
+    "name": "Arts et culture (sztuka i kultura)",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pf_art1",
+        "question": "Le musee du Louvre _____ le plus visite au monde.",
+        "translation": "(Muzeum Luwru jest najczesciej odwiedzanym na swiecie)",
+        "options": [
+          "est",
+          "a",
+          "fait",
+          "va"
+        ],
+        "correct": "est",
+        "explanation": "'Le musee est' — 'etre' (byc) w ind. present. 'Le Louvre' — najwieksze muzeum swiata w Paryzu, dawny palac krolewski. 'Le plus visite' — superlatif od 'visite' (odwiedzany): le + plus + participe passe. 'Au monde' = na swiecie (a + le = au). CIEKAWOSTKA: 'musee' jest meskie (un musee), mimo koncowki -ee! W polskim 'muzeum' jest nijakie."
+      },
+      {
+        "id": "pf_art2",
+        "question": "Cette actrice _____ tres bien dans ce film.",
+        "translation": "(Ta aktorka gra bardzo dobrze w tym filmie)",
+        "options": [
+          "joue",
+          "jouent",
+          "jouait",
+          "jouera"
+        ],
+        "correct": "joue",
+        "explanation": "'Jouer' (grac) — ind. present 3 os. l.poj.: elle joue. 'Actrice' to forma zenska od 'acteur' (aktor). Tworzenie zenskiego: -eur > -rice (acteur/actrice), -teur > -trice (directeur/directrice). 'Dans ce film' = w tym filmie. 'Jouer dans' = grac w (filmu, sztuce). 'Jouer de' = grac na (instrumencie). 'Jouer a' = grac w (gre, sport). Te przyimki zmieniaja calkowicie znaczenie!"
+      },
+      {
+        "id": "pf_art3",
+        "question": "J'aimerais _____ au concert de musique classique.",
+        "translation": "(Chcialbym pojsc na koncert muzyki klasycznej)",
+        "options": [
+          "aller",
+          "irais",
+          "allant",
+          "alle"
+        ],
+        "correct": "aller",
+        "explanation": "'Aimerais' (chcialbym) — conditionnel present od 'aimer' + infinitif. 'Aller au concert' = isc/pojsc na koncert (a + le = au). 'Musique classique' (muzyka klasyczna) — przymiotnik po rzeczowniku. Francja to ojczyzna wielkich kompozytorow: Debussy, Ravel, Saint-Saens, Berlioz. W polskim 'chcialbym pojsc' — identyczna budowa: tryb warunkowy + bezokolicznik."
+      },
+      {
+        "id": "pf_art4",
+        "question": "Le tableau a ete _____ par un artiste inconnu.",
+        "translation": "(Obraz zostal namalowany przez nieznanego artysie)",
+        "options": [
+          "peint",
+          "peindre",
+          "peignait",
+          "peignant"
+        ],
+        "correct": "peint",
+        "explanation": "'A ete peint' — voix passive au passe compose. 'Peindre' (malowac) — nieregularny: je peins, tu peins, il peint. Participe passe: peint. Odmiana jak 'craindre' (craindre-craint), 'eteindre' (eteindre-eteint). 'Artiste' moze byc meski i zenski (un/une artiste). 'Inconnu' = nieznany (in- + connu). W polskim 'zostal namalowany' — identyczna strona bierna."
+      },
+      {
+        "id": "pf_art5",
+        "question": "Nous avons visite une exposition _____ a l'art moderne.",
+        "translation": "(Odwiedzilismy wystawie poswiecona sztuce wspolczesnej)",
+        "options": [
+          "consacree",
+          "consacre",
+          "consacrees",
+          "consacrer"
+        ],
+        "correct": "consacree",
+        "explanation": "'Consacree' — participe passe uzywany jako przymiotnik, zgodny z 'exposition' (zenskie l.poj.). 'Consacrer a' = poswiecac czemu/komus. 'L'art moderne' (sztuka nowoczesna/wspolczesna) — 'art' jest meski: l'art. 'A l' = a + le (do/czego). UWAGA: 'moderne' nie zmienia sie w l.mn.: les arts modernes (nie 'modernes' z dodatkowa koncowka). Juz ma -e."
+      },
+      {
+        "id": "pf_art6",
+        "question": "Ce roman a _____ le prix Goncourt l'annee derniere.",
+        "translation": "(Ta powiesc zdobyla nagrode Goncourtow w zeszlym roku)",
+        "options": [
+          "remporte",
+          "remporter",
+          "remportait",
+          "remportant"
+        ],
+        "correct": "remporte",
+        "explanation": "'A remporte' — passe compose od 'remporter' (zdobyc/wygrac). Regularny -er: remporter > remporte. Prix Goncourt — najwazniejsza nagroda literacka we Francji, przyznawana co roku od 1903 przez Akademie Goncourtow. Zwyciezca dostaje symboliczny czek na 10 euro! W polskim odpowiednikiem moze byc Nagroda Nike. 'Dernier/derniere' = ostatni/zeszly — przymiotnik po rzeczowniku."
+      },
+      {
+        "id": "pf_art7",
+        "question": "Elle joue _____ piano depuis l'age de cinq ans.",
+        "translation": "(Ona gra na pianinie od piatego roku zycia)",
+        "options": [
+          "du",
+          "le",
+          "au",
+          "de"
+        ],
+        "correct": "du",
+        "explanation": "'Jouer de' + instrument = grac na instrumencie. 'Du' = de + le (partitif/przyimek scigany z rodzajnikiem). ZASADA: jouer DE + instrument (jouer du piano, de la guitare, du violon). Ale: jouer A + sport/gra (jouer au football, aux echecs). 'Depuis l'age de cinq ans' = od piatego roku zycia. 'Depuis' + czas terazniejszy = od (ciaglosc!). W polskim 'grac na' — jeden przyimek dla wszystkiego."
+      },
+      {
+        "id": "pf_art8",
+        "question": "Le spectacle _____ a vingt heures ce soir.",
+        "translation": "(Spektakl zaczyna sie o dwudziestej dzisiaj wieczorem)",
+        "options": [
+          "commence",
+          "commencent",
+          "commencait",
+          "commencer"
+        ],
+        "correct": "commence",
+        "explanation": "'Commencer' (zaczynac sie) — ind. present 3 os. l.poj.: il commence. 'A vingt heures' = o dwudziestej (godzina 20). We Francji czesto uzywa sie formatu 24-godzinnego. 'Ce soir' = dzisiaj wieczorem (tego wieczoru). 'Spectacle' (spektakl/show) jest meski: un spectacle. UWAGA: 'spectacle' po angielsku to 'show', nie 'spectacle' (okulary = lunettes). Faux ami!"
+      },
+      {
+        "id": "pf_art9",
+        "question": "C'est le film le plus _____ que j'aie jamais vu.",
+        "translation": "(To najbardziej poruszajacy film, jaki kiedykolwiek widzialem)",
+        "options": [
+          "emouvant",
+          "emue",
+          "emotion",
+          "emu"
+        ],
+        "correct": "emouvant",
+        "explanation": "'Emouvant' (poruszajacy, wzruszajacy) — participe present uzyty jako przymiotnik od 'emouvoir'. Superlatif: le plus emouvant. UWAGA: po superlatif + 'que' uzywamy subjonctif: 'que j'aie vu' (nie 'que j'ai vu'!). 'Aie' = subjonctif present od 'avoir'. 'Jamais' w zdaniu twierdzacym = kiedykolwiek (nie 'nigdy'!). W polskim 'jaki kiedykolwiek widzialem' — tu subjonctif nie ma odpowiednika."
+      },
+      {
+        "id": "pf_art10",
+        "question": "Les danseurs repetent _____ jours sur la scene.",
+        "translation": "(Tancerze cwicza codziennie na scenie)",
+        "options": [
+          "tous les",
+          "chaque",
+          "tout",
+          "toutes"
+        ],
+        "correct": "tous les",
+        "explanation": "'Tous les jours' = codziennie (doslonienie: wszystkie dni). 'Chaque jour' tez znaczy codziennie, ale UWAGA: 'chaque' NIGDY z rodzajnikiem i zawsze l.poj.! 'Chaque jour' (nie 'chaque les jours'). 'Repeter' = powtarzac, cwicz (probe). 'Sur la scene' = na scenie. 'Scene' jest zenskie: la/une scene. W polskim 'codziennie' — jedno slowo, po francusku dwa lub trzy."
+      },
+      {
+        "id": "pf_art11",
+        "question": "L'architecte a _____ un batiment magnifique.",
+        "translation": "(Architekt zaprojektowal wspanialy budynek)",
+        "options": [
+          "concu",
+          "concevoir",
+          "concevait",
+          "concevant"
+        ],
+        "correct": "concu",
+        "explanation": "'A concu' — passe compose od 'concevoir' (projektowac/pomyslec). Czasownik nieregularny: je concois, tu concois, il concoit, nous concevons. Participe passe: concu. Odmiana jak 'recevoir' (recevoir-recu, apercevoir-apercu, decevoir-decu). 'Batiment' (budynek) — meski: un batiment. 'Magnifique' = wspanialy — identyczny w obu rodzajach (il/elle est magnifique)."
+      },
+      {
+        "id": "pf_art12",
+        "question": "La sculpture en marbre _____ au centre de la salle.",
+        "translation": "(Rzezba z marmuru stoi w centrum sali)",
+        "options": [
+          "se trouve",
+          "trouvent",
+          "se trouver",
+          "trouvait"
+        ],
+        "correct": "se trouve",
+        "explanation": "'Se trouver' = znajdowac sie, stac (zwrotny). 'Elle se trouve' — 3 os. l.poj., bo 'sculpture' jest zenskie l.poj. 'En marbre' = z marmuru (material: en + material bez rodzajnika). 'Au centre de' = w centrum (a + le = au). 'Salle' (sala) jest zenskie: la salle. Roznica 'salle' vs 'sale': salle = sala, sale = brudny! Uwaga na ortografie!"
+      },
+      {
+        "id": "pf_art13",
+        "question": "Il s'interesse _____ la photographie depuis son enfance.",
+        "translation": "(Interesuje sie fotografia od dziecinstwa)",
+        "options": [
+          "a",
+          "de",
+          "en",
+          "pour"
+        ],
+        "correct": "a",
+        "explanation": "'S'interesser a' = interesowac sie (czyms). UWAGA: przyimek 'a' jest obowiazkowy! 'Il s'interesse a la photographie' (nie 'il s'interesse la photographie'). Porownaj: 'interesser qqn' (zainteresowac kogos — bez 'a'). 'Depuis son enfance' = od dziecinstwa. 'Enfance' (dziecinstwo) jest zenskie: son enfance ('son' bo zaczyna sie od samogloski). W polskim 'interesowac sie' + narzednik."
+      },
+      {
+        "id": "pf_art14",
+        "question": "Le festival de Cannes _____ chaque annee en mai.",
+        "translation": "(Festiwal w Cannes odbywa sie kazdego roku w maju)",
+        "options": [
+          "a lieu",
+          "a place",
+          "fait lieu",
+          "prend lieu"
+        ],
+        "correct": "a lieu",
+        "explanation": "'Avoir lieu' = odbywac sie, miec miejsce. 'Le festival a lieu' = festiwal odbywa sie. To stale wyrazenie — NIGDY 'prend lieu' ani 'fait lieu' (to kalka z angielskiego 'takes place'!). 'Chaque annee' = kazdego roku. 'En mai' = w maju (en + miesiac). Festival de Cannes — najwazniejszy festiwal filmowy na swiecie, od 1946. Zlota Palma (Palme d'Or) to glowna nagroda."
+      },
+      {
+        "id": "pf_art15",
+        "question": "Cette chanson me _____ penser a mon enfance.",
+        "translation": "(Ta piosenka przypomina mi o dziecinstwie)",
+        "options": [
+          "fait",
+          "fais",
+          "faire",
+          "faisant"
+        ],
+        "correct": "fait",
+        "explanation": "'Faire + infinitif' = sprawiac, ze / powodowac (causatif). 'Me fait penser' = sprawia, ze mysze (= przypomina mi). 'Penser a' = myslec o. 'Chanson' (piosenka) jest zenskie: une chanson. 'Enfance' (dziecinstwo) — zenskie: mon enfance ('mon' zamiast 'ma', bo zaczyna sie od samogloski). Ta konstrukcja kauzatywna 'faire + infinitif' jest bardzo czesta we francuskim i nie ma bezposredniego odpowiednika w polskim."
+      }
+    ]
+  },
+  {
+    "key": "economie_affaires",
+    "name": "Economie et affaires (ekonomia i biznes)",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pf_eco1",
+        "question": "L'entreprise a _____ son chiffre d'affaires de 20%.",
+        "translation": "(Firma zwiekszylja swoje obroty o 20%)",
+        "options": [
+          "augmente",
+          "augmenter",
+          "augmentait",
+          "augmentant"
+        ],
+        "correct": "augmente",
+        "explanation": "'A augmente' — passe compose od 'augmenter' (zwiekszyc). Regularny -er. 'Chiffre d'affaires' (obroty, przychod) — stale wyrazenie biznesowe. 'De 20%' = o 20% (przyimek 'de' przy procentach). UWAGA: 'augmenter' moze byc przechodni (augmenter qqch) i nieprzechodni (le prix augmente). W polskim 'zwiekszyc obroty' — identyczna konstrukcja przechodnia."
+      },
+      {
+        "id": "pf_eco2",
+        "question": "Le marche boursier _____ en forte hausse depuis janvier.",
+        "translation": "(Rynek gieldowy jest w silnym wzroscie od stycznia)",
+        "options": [
+          "est",
+          "a",
+          "fait",
+          "va"
+        ],
+        "correct": "est",
+        "explanation": "'Etre en hausse' = byc we wzroscie, rosnac. 'Hausse' (wzrost) — zenskie: une hausse. Przeciwienstwo: 'baisse' (spadek). 'Marche boursier' = rynek gieldowy. 'Bourse' (gielda) — zenskie: la Bourse. 'Depuis janvier' = od stycznia — czas terazniejszy, bo ciaglosc trwa! 'Fort/forte' = silny/a — 'en forte hausse' ('forte' bo 'hausse' jest zenskie). W polskim 'jest we wzroscie' — ta sama konstrukcja."
+      },
+      {
+        "id": "pf_eco3",
+        "question": "Nous _____ negocier un nouveau contrat.",
+        "translation": "(Musimy wynegocjowac nowy kontrakt)",
+        "options": [
+          "devons",
+          "devions",
+          "devrions",
+          "devront"
+        ],
+        "correct": "devons",
+        "explanation": "'Devons' — 'devoir' w ind. present 1 os. l.mn. 'Devoir' + infinitif = musiec. 'Negocier' (negocjowac) — regularny -er. 'Contrat' (kontrakt/umowa) jest meski: un contrat. 'Nouveau' (nowy) — przed rzeczownikiem meskim zaczynajacym sie od spolgloski. Przed samogloska: 'nouvel' (un nouvel accord). Zenskie: 'nouvelle'. W polskim 'musimy wynegocjowac' — ta sama struktura."
+      },
+      {
+        "id": "pf_eco4",
+        "question": "Le taux de chomage a _____ de deux points.",
+        "translation": "(Stopa bezrobocia spadla o dwa punkty)",
+        "options": [
+          "baisse",
+          "baisser",
+          "baissait",
+          "baissant"
+        ],
+        "correct": "baisse",
+        "explanation": "'A baisse' — passe compose od 'baisser' (spadac/obnizac sie). Regularny -er. UWAGA: 'baisser' jest nieprzechodni tu (le taux a baisse). Przechodni: 'baisser le prix' (obnizyc cene). 'Taux de chomage' = stopa bezrobocia. 'Chomage' (bezrobocie) — meski: le chomage. 'De deux points' = o dwa punkty (procentowe). W polskim 'spadla o dwa punkty' — 'o' = 'de' w tym kontekscie."
+      },
+      {
+        "id": "pf_eco5",
+        "question": "Cette start-up _____ des investisseurs internationaux.",
+        "translation": "(Ten startup poszukuje miedzynarodowych inwestorow)",
+        "options": [
+          "recherche",
+          "recherchent",
+          "rechercher",
+          "recherchait"
+        ],
+        "correct": "recherche",
+        "explanation": "'Rechercher' (poszukiwac, szukac) — ind. present 3 os. l.poj.: elle recherche. 'Start-up' jest zenskie we francuskim: une start-up (bo 'entreprise' jest zenskie!). UWAGA: 'rechercher' to forma bardziej formalna/intensywna niz 'chercher'. 'Investisseur' (inwestor) — meski: un investisseur. Zenskie: une investisseuse. W polskim 'poszukuje inwestorow' — identycznie przechodni."
+      },
+      {
+        "id": "pf_eco6",
+        "question": "Le directeur a pris _____ decision importante.",
+        "translation": "(Dyrektor podjal wazna decyzje)",
+        "options": [
+          "une",
+          "un",
+          "la",
+          "le"
+        ],
+        "correct": "une",
+        "explanation": "'Une decision' — rodzajnik nieokreslony zenski. 'Decision' jest zenskie: une decision. 'Prendre une decision' = podjac decyzje — stale wyrazenie. 'Important/importante' — forma zenskie z -e: 'importante' (bo 'decision' jest zenskie). 'Directeur' (dyrektor) — zenskie: directrice. UWAGA: w kontekscie biznesowym mozna tez powiedziec 'la directrice' lub 'la directeur' (feminatywny). W polskim: podjac decyzje."
+      },
+      {
+        "id": "pf_eco7",
+        "question": "Les employes _____ d'une augmentation de salaire.",
+        "translation": "(Pracownicy korzystaja z podwyzki wynagrodzenia)",
+        "options": [
+          "beneficient",
+          "beneficie",
+          "beneficier",
+          "beneficiant"
+        ],
+        "correct": "beneficient",
+        "explanation": "'Beneficier de' = korzystac z. 'Ils beneficient' — 3 os. l.mn. ind. present. UWAGA na ortografie: b-e-n-e-f-i-c-i-e-r (nie 'beneficier'). 'Augmentation de salaire' = podwyzka wynagrodzenia. 'Augmentation' jest zenskie: une augmentation. 'Salaire' (wynagrodzenie) jest meski: un salaire. W polskim 'korzystaja z podwyzki' — 'z' = 'de'. Bardzo formalne slownictwo biznesowe."
+      },
+      {
+        "id": "pf_eco8",
+        "question": "Il faut reduire les _____ de production.",
+        "translation": "(Trzeba obniz koszty produkcji)",
+        "options": [
+          "couts",
+          "cout",
+          "couter",
+          "coutant"
+        ],
+        "correct": "couts",
+        "explanation": "'Les couts' — l.mn. od 'cout' (koszt). 'Cout' jest meski: un cout, des couts. 'Reduire' (redukowac/obnizac) — nieregularny 3. grupa: je reduis, il reduit. Participe passe: reduit. 'Couts de production' = koszty produkcji (de + bez rodzajnika). 'Il faut' + infinitif = trzeba. Ta konstrukcja bezosobowa jest podstawowa we francuskim. W polskim 'trzeba obnizyc koszty' — identyczna budowa bezosobowa."
+      },
+      {
+        "id": "pf_eco9",
+        "question": "Notre entreprise _____ sur le marche asiatique.",
+        "translation": "(Nasza firma jest obecna na rynku azjatyckim)",
+        "options": [
+          "est presente",
+          "presente",
+          "a present",
+          "presentait"
+        ],
+        "correct": "est presente",
+        "explanation": "'Etre present(e) sur' = byc obecnym na. 'Presente' z -e bo 'entreprise' jest zenskie. 'Le marche' (rynek) jest meski: un marche (UWAGA: 'marche' = rynek, 'marche' = chodzenie/krok). 'Asiatique' (azjatycki) — identyczny w obu rodzajach. 'Notre' (nasz/nasza) — nie zmienia sie z rodzajem: notre entreprise, notre bureau. W polskim 'jest obecna na rynku' — identycznie."
+      },
+      {
+        "id": "pf_eco10",
+        "question": "La reunion _____ ete reportee a la semaine prochaine.",
+        "translation": "(Spotkanie zostalo przelozone na przyszly tydzien)",
+        "options": [
+          "a",
+          "est",
+          "avait",
+          "serait"
+        ],
+        "correct": "a",
+        "explanation": "'A ete reportee' — voix passive au passe compose. 'Reporter' (przesunac termin/przelozyc) — regularny -er. 'Reportee' z -ee bo 'reunion' jest zenskie (une reunion). 'A la semaine prochaine' = na przyszly tydzien. 'Prochain/prochaine' — po rzeczowniku oznacza 'nastepny' (la semaine prochaine). UWAGA: przed rzeczownikiem oznacza 'najblizszy' (le prochain arret). Roznica pozycji zmienia sens!"
+      },
+      {
+        "id": "pf_eco11",
+        "question": "Les ventes ont _____ de maniere significative.",
+        "translation": "(Sprzedaz wzrosla w sposob znaczacy)",
+        "options": [
+          "progresse",
+          "progresser",
+          "progressaient",
+          "progressant"
+        ],
+        "correct": "progresse",
+        "explanation": "'Ont progresse' — passe compose od 'progresser' (rosnac/postepowac). Regularny -er. 'Les ventes' (sprzedaz) — l.mn. zenskie: une vente, des ventes. 'De maniere significative' = w sposob znaczacy — formalne wyrazenie przyslow. Alternatywa: 'significativement' (przyslow). 'Maniere' = sposob — zenskie: la maniere, une maniere. W polskim 'sprzedaz wzrosla' — l.poj., ale po francusku czesto l.mn.!"
+      },
+      {
+        "id": "pf_eco12",
+        "question": "Le PDG a annonce _____ il quitterait l'entreprise.",
+        "translation": "(Prezes oglosil, ze opusci firme)",
+        "options": [
+          "qu'",
+          "que",
+          "si",
+          "quand"
+        ],
+        "correct": "qu'",
+        "explanation": "'Qu'' — 'que' skrocone przed samogloska 'il'. ZASADA elizji: 'que' > 'qu'' przed samogloska/nieme h. 'Annoncer que' + conditionnel = oglosic, ze (przyszlosc w przeszlosci). 'Quitterait' = conditionnel present od 'quitter' (opuscic). PDG = President-Directeur General (prezes zarzadu). W polskim 'oglosil, ze opusci' — czas przyszly, ale po francusku conditionnel wyra przyszlosc w przeszlosci!"
+      },
+      {
+        "id": "pf_eco13",
+        "question": "Nous cherchons _____ ameliorer notre service client.",
+        "translation": "(Staramy sie poprawic nasza obsluge klienta)",
+        "options": [
+          "a",
+          "de",
+          "pour",
+          "en"
+        ],
+        "correct": "a",
+        "explanation": "'Chercher a' + infinitif = starac sie (zrobic cos). UWAGA: 'chercher a' = starac sie, ale 'chercher' (bez 'a') = szukac! Przyimek zmienia znaczenie! 'Ameliorer' (poprawiac) — regularny -er. 'Service client' (obsluga klienta) — meski: le service. UWAGA: nie 'service de client' — to anglicyzm biznesowy zaadaptowany bez 'de'. W polskim 'starac sie poprawic' — bez przyimka miedzy czasownikami."
+      },
+      {
+        "id": "pf_eco14",
+        "question": "L'inflation _____ atteint un niveau record.",
+        "translation": "(Inflacja osiagnela rekordowy poziom)",
+        "options": [
+          "a",
+          "est",
+          "avait",
+          "sera"
+        ],
+        "correct": "a",
+        "explanation": "'A atteint' — passe compose od 'atteindre' (osiagnac). Czasownik nieregularny: j'atteins, tu atteins, il atteint. Participe passe: atteint. Odmiana jak 'peindre' (peindre-peint), 'craindre' (craindre-craint). 'Niveau record' = rekordowy poziom (bez 'de'!). 'Inflation' jest zenskie: l'inflation. W polskim 'inflacja osiagnela' — identyczny passe compose z 'avoir', bo 'atteindre' jest przechodni."
+      },
+      {
+        "id": "pf_eco15",
+        "question": "Le budget doit _____ approuve par le conseil d'administration.",
+        "translation": "(Budzet musi byc zatwierdzony przez rade nadzorcza)",
+        "options": [
+          "etre",
+          "avoir",
+          "faire",
+          "aller"
+        ],
+        "correct": "etre",
+        "explanation": "'Doit etre approuve' — koniecznosc + strona bierna: devoir + etre + participe passe. 'Approuver' (zatwierdzac) — regularny -er. 'Conseil d'administration' = rada nadzorcza/zarzadu (dos: rada administracji). 'Budget' (budzet) jest meski: le budget. UWAGA: wymowa francuska to [bydze], nie jak w angielskim. W polskim 'musi byc zatwierdzony' — identyczna budowa: modalny + bierna."
+      }
+    ]
+  },
+  {
+    "key": "famille_relations",
+    "name": "Famille et relations (rodzina i relacje)",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pf_fam1",
+        "question": "_____ soeur habite a Lyon avec son mari.",
+        "translation": "(Moja siostra mieszka w Lyonie ze swoim mezem)",
+        "options": [
+          "Ma",
+          "Mon",
+          "Mes",
+          "Sa"
+        ],
+        "correct": "Ma",
+        "explanation": "'Ma soeur' — przymiotnik dzierzawczy zenski l.poj. 'Ma' = moja. 'Soeur' jest zenskie: une soeur. UWAGA: gdyby zaczynalo sie od samogloski, uzyliby 'mon': 'mon amie' (nie 'ma amie'). 'A Lyon' = w Lyonie (miasto bez rodzajnika z 'a'). 'Son mari' = jej/swoj maz. W polskim 'moja siostra' vs 'swoj maz' — po francusku 'son' sluzy jako 'swoj' w 3 osobie."
+      },
+      {
+        "id": "pf_fam2",
+        "question": "Mes parents _____ maries depuis trente ans.",
+        "translation": "(Moi rodzice sa w malzenstwie od trzydziestu lat)",
+        "options": [
+          "sont",
+          "ont",
+          "font",
+          "vont"
+        ],
+        "correct": "sont",
+        "explanation": "'Sont maries' = sa w malzenstwie (etre + participe passe = stan). 'Parents' (rodzice) — meski l.mn.: mes parents. UWAGA: 'parent' moze tez znaczyc 'krewny' (un parent = krewny, les parents = rodzice lub krewni — kontekst!). 'Depuis trente ans' = od trzydziestu lat (z czasem terazniejszym!). W polskim 'sa w malzenstwie od...' — identyczna konstrukcja ze stanem trwajacym do teraz."
+      },
+      {
+        "id": "pf_fam3",
+        "question": "Mon frere _____ a sa fiancee chaque jour.",
+        "translation": "(Moj brat telefonuje do swojej narzeczonej codziennie)",
+        "options": [
+          "telephone",
+          "telephonent",
+          "telephoner",
+          "telephonait"
+        ],
+        "correct": "telephone",
+        "explanation": "'Telephoner a qqn' = dzwonic do kogos. UWAGA: przyimek 'a' jest obowiazkowy! 'Il telephone a sa fiancee' (nie 'il telephone sa fiancee'). 'Fiancee' (narzeczona) — zenskie z podwojnym 'e': un fiance, une fiancee. 'Chaque jour' = codziennie. 'Frere' (brat) — meski: un frere. W polskim 'telefonuje do' — przyimek 'do' odpowiada 'a'. Oba jezyki wymagaja przyimka po 'telefonowac'."
+      },
+      {
+        "id": "pf_fam4",
+        "question": "Ma grand-mere a _____ douze petits-enfants.",
+        "translation": "(Moja babcia ma dwanascioro wnukow)",
+        "options": [
+          "eu",
+          "avoir",
+          "avait",
+          "ayant"
+        ],
+        "correct": "eu",
+        "explanation": "'A eu' — passe compose od 'avoir' (miec). Participe passe: 'eu' [y]. Jeden z najtrudniejszych p.p. do zapamietania! 'Grand-mere' (babcia) — zenskie: ma grand-mere. 'Petits-enfants' (wnuki) — l.mn. z lacznikiem. L.poj.: petit-fils (wnuk), petite-fille (wnuczka). 'Douze' = dwanascie (nieodmienny). W polskim 'miala dwanascioro wnukow' — identyczny passe compose z 'avoir'."
+      },
+      {
+        "id": "pf_fam5",
+        "question": "Nous _____ en famille tous les dimanches.",
+        "translation": "(Jemy obiad w rodzinie w kazda niedziele)",
+        "options": [
+          "dejeuons",
+          "dejeuner",
+          "dejeuons",
+          "dejeunons"
+        ],
+        "correct": "dejeunons",
+        "explanation": "'Dejeuner' (jesc obiad/sniadanie) — ind. present 1 os. l.mn.: nous dejeunons. UWAGA: 'dejeuner' = obiad (we Francji), 'petit dejeuner' = sniadanie, 'diner' = kolacja. Roznica z polskim: we Francji obiad jest o 12-13, kolacja o 19-20. 'Tous les dimanches' = w kazda niedziele (tous + les + dzien = kazdy...). 'En famille' = w rodzinie/rodzinnie."
+      },
+      {
+        "id": "pf_fam6",
+        "question": "C'est _____ cousine qui habite a Marseille.",
+        "translation": "(To moja kuzynka, ktora mieszka w Marsylii)",
+        "options": [
+          "ma",
+          "mon",
+          "mes",
+          "sa"
+        ],
+        "correct": "ma",
+        "explanation": "'Ma cousine' — 'cousine' (kuzynka) jest zenskie, wiec 'ma' (moja). Meski: 'mon cousin' (kuzyn). 'Qui habite' — zaimek wzgl 'qui' jako podmiot. 'A Marseille' = w Marsylii. We Francji miasta nie maja rodzajnika z 'a' (wyjatki: au Havre, au Mans, a La Rochelle). 'C'est... qui' — wyroznienie (mise en relief). W polskim 'to moja kuzynka, ktora' — identyczna konstrukcja wzgledna."
+      },
+      {
+        "id": "pf_fam7",
+        "question": "Mon oncle et ma tante _____ un beau jardin.",
+        "translation": "(Moj wujek i moja ciotka maja piekny ogrod)",
+        "options": [
+          "ont",
+          "a",
+          "avons",
+          "avez"
+        ],
+        "correct": "ont",
+        "explanation": "'Mon oncle et ma tante ont' — podmiot zlozony (2 osoby) = 3 os. l.mn. 'Ont' = maja. 'Oncle' (wujek) — meski: un oncle. 'Tante' (ciotka) — zenskie: une tante. 'Un beau jardin' — 'beau' (piekny) przed rzeczownikiem meskim zaczynajacym sie od spolgloski. Przed samogloska: 'un bel arbre'. Zenskie: 'belle'. W polskim 'moja i moj' — kazdy ma swoj rodzaj jak po francusku."
+      },
+      {
+        "id": "pf_fam8",
+        "question": "Elle _____ a ses enfants tous les soirs.",
+        "translation": "(Ona czyta swoim dzieciom kazdego wieczoru)",
+        "options": [
+          "lit",
+          "lire",
+          "lisent",
+          "lisait"
+        ],
+        "correct": "lit",
+        "explanation": "'Lire' (czytac) — nieregularny: je lis, tu lis, il lit, nous lisons, vous lisez, ils lisent. 'Lire a qqn' = czytac komus. 'A ses enfants' = swoim dzieciom. 'Enfant' moze byc meski lub zenski: un enfant (chlopiec), une enfant (dziewczynka). 'Tous les soirs' = kazdego wieczoru. 'Soir' (wieczor) jest meski: un soir, le soir. W polskim 'czyta dzieciom' — celownik bez przyimka, po francusku z 'a'."
+      },
+      {
+        "id": "pf_fam9",
+        "question": "Mon pere est plus _____ que ma mere.",
+        "translation": "(Moj ojciec jest starszy od mojej matki)",
+        "options": [
+          "age",
+          "agee",
+          "ages",
+          "agees"
+        ],
+        "correct": "age",
+        "explanation": "'Plus age que' = starszy od — comparatif. 'Age' (meski l.poj., bo 'pere' jest meski). Zenskie: 'agee'. 'Plus... que' = bardziej... niz. Porownania: plus (bardziej), moins (mniej), aussi (tak samo). UWAGA: nie 'plus vieux' w kontekscie wieku — 'age' jest bardziej uprzejme niz 'vieux' (cos starego/zniszczonego). W polskim 'starszy od' — stopien wyzszy, po francusku opisowo z 'plus'."
+      },
+      {
+        "id": "pf_fam10",
+        "question": "Le bebe _____ ne le 15 mars.",
+        "translation": "(Dziecko urodzilo sie 15 marca)",
+        "options": [
+          "est",
+          "a",
+          "sera",
+          "etait"
+        ],
+        "correct": "est",
+        "explanation": "'Naitre' (rodzic sie) — odmiana z 'etre' w passe compose! 'Il est ne' = urodzil sie (nie 'il a ne'!). Participe passe: 'ne' (meski), 'nee' (zenskie). ZASADA: 'naitre', 'mourir', 'aller', 'venir' i inne czasowniki ruchu/zmiany stanu odmieniaja sie z 'etre'. 'Le 15 mars' = 15 marca (z rodzajnikiem!). W polskim 'urodzil sie' — tez zwrotne, ale z 'sie' zamiast 'etre'."
+      },
+      {
+        "id": "pf_fam11",
+        "question": "Mes beaux-parents _____ tres gentils.",
+        "translation": "(Moi tesciowie sa bardzo mili)",
+        "options": [
+          "sont",
+          "est",
+          "font",
+          "ont"
+        ],
+        "correct": "sont",
+        "explanation": "'Beaux-parents' (tesciowie) — l.mn. z lacznikiem: un beau-pere (tesc), une belle-mere (tesciowa), les beaux-parents (tesciowie). UWAGA: 'beau-pere' tez moze znaczyc 'ojczym', 'belle-mere' = 'macocha'. Kontekst decyduje! 'Gentil/gentille' = mizy/a. UWAGA: wymowa 'gentil' = [zati] (l nieme!), ale 'gentille' = [zatij]. W polskim 'tesciowie' — jedno slowo na oba znaczenia."
+      },
+      {
+        "id": "pf_fam12",
+        "question": "Ma niece _____ a l'universite de Bordeaux.",
+        "translation": "(Moja siostrzenica/bratanica studiuje na uniwersytecie w Bordeaux)",
+        "options": [
+          "etudie",
+          "etudient",
+          "etudier",
+          "etudiait"
+        ],
+        "correct": "etudie",
+        "explanation": "'Etudier' (studiowac) — regulany -er: elle etudie. 'Niece' (siostrzenica/bratanica) — zenskie: une niece. Meski: 'neveu' (siostrzeniec/bratanek). CIEKAWOSTKA: po polsku rozrozniamy siostrzeniec vs bratanek, ale po francusku jest jedno slowo! 'A l'universite de' = na uniwersytecie w. 'Universite' jest zenskie: une universite (mimo koncowki -e). Bordeaux — miasto w poludniowo-zachodniej Francji, znane z win."
+      },
+      {
+        "id": "pf_fam13",
+        "question": "Ils se sont _____ lors d'une fete chez des amis.",
+        "translation": "(Poznali sie podczas imprezy u przyjaciol)",
+        "options": [
+          "rencontres",
+          "rencontre",
+          "rencontrees",
+          "rencontrer"
+        ],
+        "correct": "rencontres",
+        "explanation": "'Se rencontrer' (spotykac sie, poznac sie) — zwrotny, odmiana z 'etre'. 'Ils se sont rencontres' — participe passe zgodny z podmiotem meskim l.mn.: 'rencontres' z -s. ZASADA: przy czasownikach zwrotnych p.p. zgadza sie z podmiotem (zazwyczaj). 'Lors de' = podczas (formalnie). 'Chez des amis' = u przyjaciol. 'Chez' + osoba = u (kogos). W polskim 'poznali sie' — tez zwrotne!"
+      },
+      {
+        "id": "pf_fam14",
+        "question": "Ma fille _____ de se marier l'ete prochain.",
+        "translation": "(Moja corka zamierza wyjsc za maz nastepnego lata)",
+        "options": [
+          "vient",
+          "va",
+          "veut",
+          "doit"
+        ],
+        "correct": "va",
+        "explanation": "'Aller' + infinitif = futur proche (zamierzac, miec zamiar). 'Elle va se marier' = zamierza wyjsc za maz. 'Se marier' = brac slub/wychodzic za maz (zwrotny). UWAGA: 'se marier avec qqn' = ozenic sie/wyjsc za maz za kogos. 'L'ete prochain' = nastepnego lata. 'Venir de' + infinitif = wlasnie (passe recent). 'Venir' tu nie pasuje — nie wlasnie wyszla za maz. W polskim futur proche nie ma odpowiednika."
+      },
+      {
+        "id": "pf_fam15",
+        "question": "Nous _____ a nos grands-parents chaque semaine.",
+        "translation": "(Dzwonimy do naszych dziadkow co tydzien)",
+        "options": [
+          "telephonons",
+          "telephonez",
+          "telephonent",
+          "telephoner"
+        ],
+        "correct": "telephonons",
+        "explanation": "'Telephoner a' = dzwonic do (+ dative). 'Nous telephonons' — 1 os. l.mn. ind. present. 'Grands-parents' (dziadkowie) — l.mn. z lacznikiem: un grand-pere (dziadek), une grand-mere (babcia). UWAGA: 'grand-mere' — 'grand' nie bierze -e! To historyczny wyjtek. 'Chaque semaine' = co tydzien. 'Semaine' (tydzien) jest zenskie: une semaine. W polskim 'dzwonimy do dziadkow' — 'do' = 'a' z dopelniaczem."
+      }
+    ]
+  },
+  {
+    "key": "vetements_mode",
+    "name": "Vetements et mode (ubrania i moda)",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pf_vet1",
+        "question": "Je voudrais essayer cette _____ en taille M.",
+        "translation": "(Chcialbym przymierzyc ta sukienke w rozmiarze M)",
+        "options": [
+          "robe",
+          "robes",
+          "jupe",
+          "jupes"
+        ],
+        "correct": "robe",
+        "explanation": "'Robe' (sukienka) — zenskie l.poj.: une robe. 'Cette robe' = ta sukienka (zaimek wskazujacy zenski). 'Essayer' (przymierzyc) — regularny -er (ale UWAGA na odmiane: j'essaie lub j'essaye — oba poprawne). 'En taille M' = w rozmiarze M. We Francji rozmiary: XS, S, M, L, XL lub 36, 38, 40, 42, 44. 'Voudrais' = conditionnel od 'vouloir' — uprzejma prosba. W polskim 'chcialbym przymierzyc' — identycznie."
+      },
+      {
+        "id": "pf_vet2",
+        "question": "Ce pantalon _____ tres bien avec cette chemise.",
+        "translation": "(Te spodnie pasuja bardzo dobrze do tej koszuli)",
+        "options": [
+          "va",
+          "vont",
+          "aller",
+          "allait"
+        ],
+        "correct": "va",
+        "explanation": "'Aller (bien) avec' = pasowac do (ubrania). UWAGA: 'pantalon' jest l.poj. we francuskim: un pantalon (nie 'des pantalons' jak po polsku 'spodnie')! Dlatego 'va' (3 os. l.poj.), nie 'vont'. 'Chemise' (koszula) — zenskie: une chemise. UWAGA: 'chemise' = koszula, 'chemisier' = bluzka koszulowa. Faux ami z angielskim! W polskim 'spodnie' sa l.mn. — fundamentalna roznica z francuskim."
+      },
+      {
+        "id": "pf_vet3",
+        "question": "Elle porte une _____ rouge pour la soiree.",
+        "translation": "(Ona nosi czerwona sukienke na wieczor)",
+        "options": [
+          "robe",
+          "jupe",
+          "veste",
+          "chaussure"
+        ],
+        "correct": "robe",
+        "explanation": "'Porter' (nosic) — ind. present: elle porte. 'Robe rouge' — przymiotnik koloru po rzeczowniku i bez odmiany przez rodzaj/liczbe (rouge jest identyczny w obu). UWAGA: kolory proste (rouge, bleu, vert, blanc, noir) odmieniaja sie: robes rouges. Ale kolory zloznone (bleu marine, vert pomme) sa nieodmienne! 'Pour la soiree' = na wieczor/przyjecie. W polskim 'nosi czerwona sukienke' — przymiotnik przed rzeczownikiem, po francusku po nim."
+      },
+      {
+        "id": "pf_vet4",
+        "question": "Ces chaussures sont trop _____ pour moi.",
+        "translation": "(Te buty sa za male na mnie)",
+        "options": [
+          "petites",
+          "petit",
+          "petits",
+          "petite"
+        ],
+        "correct": "petites",
+        "explanation": "'Petites' — l.mn. zenskie, bo 'chaussures' jest zenskie l.mn.: des chaussures. 'Petit/petite/petits/petites' — PELNA odmiana: meski l.poj., zenski l.poj., meski l.mn., zenski l.mn. 'Trop' + adj = za (zbyt) + przymiotnik. 'Pour moi' = na mnie/dla mnie. UWAGA: 'chaussure' to ogolne 'but', szczegolowe: botte (kozak), basket (adidas), sandale (sandal), escarpin (szpilka). W polskim 'za male' — identycznie."
+      },
+      {
+        "id": "pf_vet5",
+        "question": "Il a achete un _____ costume pour le mariage.",
+        "translation": "(On kupil nowy garnitur na slub)",
+        "options": [
+          "nouveau",
+          "nouvel",
+          "nouvelle",
+          "nouveaux"
+        ],
+        "correct": "nouveau",
+        "explanation": "'Nouveau costume' — 'nouveau' przed meskim rzeczownikiem zaczynajacym od spogloski. ZASADY: nouveau + spolg. meska (nouveau costume), nouvel + samogloska/h nieme (nouvel emploi), nouvelle + zenski (nouvelle robe), nouveaux + l.mn. meska (nouveaux costumes). 'Costume' (garnitur) jest meski: un costume. 'Pour le mariage' = na slub. 'Mariage' jest meski: un mariage. W polskim 'nowy garnitur' — prostsze, bez wariantow."
+      },
+      {
+        "id": "pf_vet6",
+        "question": "La vendeuse m'a _____ de choisir une autre couleur.",
+        "translation": "(Sprzedawczyni poradziola mi, zeby wybrac inny kolor)",
+        "options": [
+          "conseille",
+          "conseiller",
+          "conseillait",
+          "conseillant"
+        ],
+        "correct": "conseille",
+        "explanation": "'A conseille' — passe compose od 'conseiller' (radzic/doradzac). Regularny -er. 'Conseiller a qqn de faire qqch' = radzic komus zrobic cos. 'm'' = 'me' (mi) — pronom COI przed 'a'. 'Vendeuse' (sprzedawczyni) — zenskie od 'vendeur' (sprzedawca). Tworzenie: -eur > -euse. 'Couleur' (kolor) jest zenskie: une couleur. W polskim 'poradziola mi' — identyczna budowa z celownikiem."
+      },
+      {
+        "id": "pf_vet7",
+        "question": "Cette echarpe est en _____ et tres douce.",
+        "translation": "(Ten szalik jest z jedwabiu i bardzo miekki)",
+        "options": [
+          "soie",
+          "coton",
+          "laine",
+          "cuir"
+        ],
+        "correct": "soie",
+        "explanation": "'En soie' = z jedwabiu (material: en + bez rodzajnika). 'Soie' (jedwab) — zenskie: la soie. Inne materialy: 'coton' (bawelna, meski), 'laine' (welna, zenskie), 'cuir' (skora, meski), 'lin' (len, meski). 'Douce' — forma zenskie od 'doux' (miekki/lagodny). UWAGA: 'doux/douce' — nieregularna odmiana (nie 'douxe'!). 'Echarpe' (szalik) jest zenskie: une echarpe. W polskim 'z jedwabiu' — identyczny przyimek materialowy."
+      },
+      {
+        "id": "pf_vet8",
+        "question": "Je prefere les vetements _____ aux vetements de luxe.",
+        "translation": "(Wole ubrania codzienne od ubran luksusowych)",
+        "options": [
+          "decontractes",
+          "decontracte",
+          "decontractee",
+          "decontractees"
+        ],
+        "correct": "decontractes",
+        "explanation": "'Decontracte' (luny, swobodny, neformalny) — l.mn. meski: 'decontractes' (bo 'vetements' jest meski l.mn.). 'Preferer qqch a qqch' = wolec cos od czegos — przyimek 'a' (nie 'que'!). UWAGA: 'preferer' ma nieregularny akcent: je prefere, nous preferons. 'De luxe' = luksusowy (nieodmienny — zawsze 'de luxe'). W polskim 'wole X od Y' — 'od' = 'a' w comparatif po 'preferer'."
+      },
+      {
+        "id": "pf_vet9",
+        "question": "Il fait froid, mets _____ manteau avant de sortir.",
+        "translation": "(Jest zimno, zaloz plaszcz przed wyjsciem)",
+        "options": [
+          "ton",
+          "ta",
+          "tes",
+          "son"
+        ],
+        "correct": "ton",
+        "explanation": "'Ton manteau' — 'manteau' (plaszcz) jest meski: un manteau, wiec 'ton' (twoj). L.mn.: des manteaux (-eau > -eaux). 'Mettre' (zakladac/klac) — nieregularny: je mets, tu mets, il met. Tryb rozkazujacy 'tu': mets! (bez wykrzyknika). 'Avant de sortir' = przed wyjsciem. 'Il fait froid' = jest zimno (opis pogody z 'faire'). W polskim 'zaloz twoj plaszcz' — ale po polsku czesciej 'zaloz plaszcz' bez dzierzawczego."
+      },
+      {
+        "id": "pf_vet10",
+        "question": "Les soldes d'hiver _____ en janvier en France.",
+        "translation": "(Zimowe wyprzedaze zaczynaja sie w styczniu we Francji)",
+        "options": [
+          "commencent",
+          "commence",
+          "commencer",
+          "commencait"
+        ],
+        "correct": "commencent",
+        "explanation": "'Les soldes commencent' — 'soldes' (wyprzedaze) l.mn. meskie: les soldes. UWAGA: 'solde' jest meski w znaczeniu 'wyprzeda' (un solde). Zenskie 'une solde' = zold zolnierza — kompletnie inne znaczenie! 'D'hiver' = zimowe (de + hiver). 'En janvier' = w styczniu. We Francji sa 2 oficjalne okresy wyprzedazy: soldes d'hiver (styczen) i soldes d'ete (czerwiec-lipiec). To regulowane prawnie!"
+      },
+      {
+        "id": "pf_vet11",
+        "question": "Cette cravate _____ pas avec ta chemise.",
+        "translation": "(Ten krawat nie pasuje do twojej koszuli)",
+        "options": [
+          "ne va",
+          "ne vont",
+          "n'allait",
+          "ne vas"
+        ],
+        "correct": "ne va",
+        "explanation": "'Ne va pas' — negacja od 'aller' (pasowac). 'Ne... pas' otacza czasownik odmieniony: ne + czasownik + pas. 'Cravate' (krawat) jest zenskie: une cravate. UWAGA: 'cravate' jest zenskie mimo oznaczania stereotypowo meskiego akcesorium! 'Ta chemise' = twoja koszula. 'Ta' bo 'chemise' jest zenskie. W polskim 'nie pasuje' — negacja przez 'nie' tylko przed czasownikiem, po francusku 2-czesciowa."
+      },
+      {
+        "id": "pf_vet12",
+        "question": "Elle a essaye plusieurs _____ avant de se decider.",
+        "translation": "(Ona przymierzyla kilka sukienek zanim sie zdecydowala)",
+        "options": [
+          "robes",
+          "robe",
+          "jupes",
+          "jupe"
+        ],
+        "correct": "robes",
+        "explanation": "'Plusieurs robes' — 'plusieurs' (kilka) zawsze z l.mn. i BEZ rodzajnika! NIGDY 'plusieurs des robes'. 'Essayer' (przymierzyc) — 'a essaye' passe compose. 'Avant de se decider' = zanim sie zdecydowala (avant de + infinitif zwrotny). 'Se decider' = zdecydowac sie. UWAGA: kolejnosc zaimkow: avant de SE decider (nie 'de decider se'). W polskim 'kilka sukienek' — tez l.mn. z dopelniaczem."
+      },
+      {
+        "id": "pf_vet13",
+        "question": "Ce pull est fait _____ laine merinos.",
+        "translation": "(Ten sweter jest zrobiony z welny merynos)",
+        "options": [
+          "en",
+          "de",
+          "avec",
+          "par"
+        ],
+        "correct": "en",
+        "explanation": "'En laine' = z welny — 'en' + material (bez rodzajnika!). ZASADA: 'en' + material = zrobiony z: en bois (z drewna), en verre (ze szkla), en or (ze zlota). 'De' tez mozliwe: une robe de soie. Roznica: 'en' = materia, z ktorego zrobiony; 'de' = formalniejsze. 'Pull' (sweter) jest meski: un pull (skrot od 'pull-over'). 'Merinos' — nieodmienny przymiotnik. W polskim 'z welny' — jedna forma."
+      },
+      {
+        "id": "pf_vet14",
+        "question": "La mode francaise _____ connue dans le monde entier.",
+        "translation": "(Moda francuska jest znana na calym swiecie)",
+        "options": [
+          "est",
+          "a",
+          "fait",
+          "va"
+        ],
+        "correct": "est",
+        "explanation": "'Est connue' — strona bierna: etre + participe passe. 'Connue' z -e bo 'mode' jest zenskie (la mode). 'Connaitre' (znac) — p.p.: connu/connue. 'Dans le monde entier' = na calym swiecie. 'Entier/entiere' = caly (po rzeczowniku). Francja jest swiatowa stolica mody: Paris Fashion Week, domy mody Chanel, Dior, Louis Vuitton, Hermes. W polskim 'jest znana' — identyczna bierna."
+      },
+      {
+        "id": "pf_vet15",
+        "question": "Je cherche un cadeau _____ ma femme.",
+        "translation": "(Szukam prezentu dla mojej zony)",
+        "options": [
+          "pour",
+          "a",
+          "de",
+          "en"
+        ],
+        "correct": "pour",
+        "explanation": "'Pour ma femme' = dla mojej zony. 'Chercher' (szukac) — przechodnie: je cherche un cadeau (bez przyimka!). 'Cadeau' (prezent) jest meski: un cadeau, des cadeaux (-eau > -eaux). 'Femme' (kobieta/zona) jest zenskie: ma femme. UWAGA: 'femme' ma dwa znaczenia — kobieta i zona. Kontekst decyduje! Wymowa: [fam]. 'Pour' + osoba = dla. W polskim 'szukam prezentu dla' — z dopelniaczem i 'dla'."
+      }
+    ]
   }
 ]

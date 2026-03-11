@@ -46,7 +46,7 @@ Expand all 17 beta language pairs to **105 categories × 15 items = 1,575 items*
 | 10 | japanese_english | Japanese | 27/105 | 405/1575 | 4/20 | 🔄 |
 | 11 | polish_arabic | Polish | 22/105 | 330/1575 | 3/20 | 🔄 |
 | 12 | polish_chinese | Polish | 105/105 | 1575/1575 | 20/20 | ✅ |
-| 13 | polish_french | Polish | 78/105 | 1170/1575 | 14/20 | 🔄 |
+| 13 | polish_french | Polish | 83/105 | 1245/1575 | 15/20 | 🔄 |
 | 14 | polish_japanese | Polish | 17/105 | 255/1575 | 2/20 | 🔄 |
 | 15 | polish_ukrainian | Polish | 12/105 | 180/1575 | 1/20 | 🔄 |
 | 16 | ukrainian_english | Ukrainian | 43/105 | 645/1575 | 7/20 | 🔄 |
@@ -157,7 +157,7 @@ ID prefixes used: pc_pres, pc_mw, pc_past, pc_asp, pc_mod, pc_par, pc_qw, pc_neg
 | 19 | colors_shapes, family_relationships, sports_hobbies, shopping_money, housing_home | ✅ |
 | 20 | environment_nature, proverbs_sayings, daily_routines | ✅ |
 
-### polish_french — 🔄 IN PROGRESS (78/105 categories, 1170 items)
+### polish_french — 🔄 IN PROGRESS (83/105 categories, 1245 items)
 ID prefixes used: pf_p, pf_a, pf_pc, pf_pr, pf_f, pf_q, pf_adj, pf_neg, pf_gn, pf_pos, pf_dem, pf_etr, pf_av, pf_imp, pf_pcvi, pf_fp, pf_cp, pf_sub, pf_impe, pf_pqp, pf_fa, pf_cpa, pf_ger, pf_pl, pf_pt, pf_adv, pf_comp, pf_sup, pf_cod, pf_coi, pf_ey, pf_rel, pf_ton, pf_acc, pf_vp, pf_di, pf_ct, pf_nega, pf_ext, pf_cl, pf_ci, pf_inf, pf_part, pf_subu, pf_cu, pf_hyp, pf_stys, pf_vpr, pf_plur, pf_acad, pf_plad, pf_quant, pf_apt, pf_dind, pf_conj, pf_idio, pf_virr, pf_psim, pf_ncar, pf_hdat, pf_caus, pf_lprc, pf_dpiy, pf_voy, pf_nour, pf_san, pf_trav, pf_tech, pf_env, pf_edu, pf_spo, pf_sent, pf_met, pf_ach, pf_log, pf_med, pf_jus, pf_pol
 ✅ FORMAT FIX COMPLETE: All 78 categories now use correct question/_____/options/correct/explanation format
 
@@ -177,7 +177,7 @@ ID prefixes used: pf_p, pf_a, pf_pc, pf_pr, pf_f, pf_q, pf_adj, pf_neg, pf_gn, p
 | 12 | voyages_transport, nourriture_restaurant, sante_corps, travail_bureau, technologie | ✅ |
 | 13 | environnement_nature, education, sports_loisirs, sentiments_emotions, meteo_climat | ✅ |
 | 14 | achats_argent, logement_maison, medias_communication, justice_droit, politique_societe | ✅ |
-| 15 | sciences_recherche, arts_culture, economie_affaires, famille_relations, vetements_mode | ⬜ |
+| 15 | sciences_recherche, arts_culture, economie_affaires, famille_relations, vetements_mode | ✅ |
 | 16 | couleurs_formes, nationalites, professions, marqueurs_discours, registre_formel | ⬜ |
 | 17 | subjonctif_passe, subjonctif_imparfait, participe_passe_compose, voix_pronominale_passive, gallicismes | ⬜ |
 | 18 | expressions_avoir, expressions_faire, expressions_etre, verbes_prepositionnels, interrogation_avancee | ⬜ |

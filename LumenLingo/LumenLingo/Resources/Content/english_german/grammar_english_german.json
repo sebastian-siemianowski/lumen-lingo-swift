@@ -13733,5 +13733,1030 @@
         "explanation": "'Sich setzen' (to sit down) uses 'gesetzt' (weak past participle, hat): 'hat sich gesetzt.' 'Neben mich' uses ACCUSATIVE because 'sich setzen' describes movement to a new position. Compare: 'Sie hat sich neben mich gesetzt' (She sat down next to me — action, ACC) vs. 'Sie hat neben mir gesessen' (She was sitting next to me — state, DAT). The reflexive 'sich' confirms this is the action verb. This contrast between 'sich setzen + ACC' and 'sitzen + DAT' perfectly illustrates the German position verb system's core principle: action = ACC, state = DAT."
       }
     ]
+  },
+  {
+    "key": "lassen_constructions",
+    "name": "Lassen Constructions",
+    "description": "Lassen-Konstruktionen",
+    "iconName": "hand.raised",
+    "color": "#f97316",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "eg_las1",
+        "question": "Ich _____ mir die Haare schneiden.",
+        "translation": "(I'm having my hair cut.)",
+        "options": [
+          "lasse",
+          "lässt",
+          "lass",
+          "lassen"
+        ],
+        "correct": "lasse",
+        "explanation": "'Lassen' is one of German's most versatile verbs — here it means 'to have something done' (causative). 'Ich lasse mir die Haare schneiden' = 'I'm having my hair cut' — you're not cutting it yourself, someone else is doing it for you. The structure is: subject + lassen (conjugated) + dative pronoun (mir/dir/sich) + object + infinitive. This is how Germans express getting services done: 'Ich lasse mein Auto reparieren' (I'm having my car repaired). Compare with English 'have/get something done' — German uses one elegant verb: lassen."
+      },
+      {
+        "id": "eg_las2",
+        "question": "Er _____ seinen Sohn allein zu Hause.",
+        "translation": "(He leaves his son alone at home.)",
+        "options": [
+          "lässt",
+          "lasst",
+          "lasse",
+          "lassen"
+        ],
+        "correct": "lässt",
+        "explanation": "'Lassen' in its second major meaning: 'to leave/let.' 'Er lässt seinen Sohn allein' = 'He leaves his son alone.' For 'er/sie/es,' lassen conjugates to 'lässt' with an umlaut — one of those irregular forms you must memorize. This meaning overlaps partly with English 'let': 'Lass mich in Ruhe!' (Leave me alone!). Context determines whether 'lassen' means 'to have done,' 'to leave,' or 'to let.' The verb stem changes: lassen → lässt (du/er), but lass (imperative). This vowel change pattern is typical of strong verbs in German."
+      },
+      {
+        "id": "eg_las3",
+        "question": "_____ uns gehen!",
+        "translation": "(Let's go!)",
+        "options": [
+          "Lass",
+          "Lässt",
+          "Lasse",
+          "Lasst"
+        ],
+        "correct": "Lass",
+        "explanation": "'Lass uns...' is the German equivalent of English 'Let's...' — used constantly in everyday speech. 'Lass uns gehen!' = 'Let's go!' The imperative 'lass' (informal singular) drops the umlaut and the -t ending. For the formal version, you'd say 'Lassen Sie uns gehen.' For informal plural (addressing a group), it's 'Lasst uns gehen!' This construction (lass/lasst + uns + infinitive) is one of the most common uses of lassen in spoken German, appearing in countless everyday situations: 'Lass uns essen!' (Let's eat!), 'Lass uns anfangen!' (Let's begin!)."
+      },
+      {
+        "id": "eg_las4",
+        "question": "Das _____ sich leicht erklären.",
+        "translation": "(That can be easily explained.)",
+        "options": [
+          "lässt",
+          "lasst",
+          "lasse",
+          "lass"
+        ],
+        "correct": "lässt",
+        "explanation": "'Sich lassen + infinitive' is an elegant German construction expressing possibility — equivalent to English 'can be done.' 'Das lässt sich erklären' = 'That can be explained' (literally: 'That lets itself explain'). This reflexive construction is very common and often preferred over passive voice in spoken German. Other examples: 'Das lässt sich machen' (That can be done), 'Das lässt sich nicht ändern' (That can't be changed). It sounds more natural than 'Das kann erklärt werden' (passive). This idiomatic usage makes your German sound native and sophisticated."
+      },
+      {
+        "id": "eg_las5",
+        "question": "Sie hat sich ein Kleid _____ lassen.",
+        "translation": "(She had a dress made.)",
+        "options": [
+          "nähen",
+          "genäht",
+          "nähend",
+          "zunähen"
+        ],
+        "correct": "nähen",
+        "explanation": "In the perfect tense, 'lassen' uses a special construction: instead of the past participle 'gelassen,' it uses the infinitive form when combined with another verb — this is called the 'double infinitive' (Ersatzinfinitiv). 'Sie hat sich ein Kleid nähen lassen' — NOT 'genäht gelassen.' This rule applies to all modal verbs and lassen in perfect tense: the infinitive replaces the past participle. The word order places both infinitives at the end: 'Ich habe mir die Haare schneiden lassen.' This is one of German's trickier grammar points but essential for correct past tense usage with lassen."
+      },
+      {
+        "id": "eg_las6",
+        "question": "_____ mich bitte vorbei!",
+        "translation": "(Let me pass, please!)",
+        "options": [
+          "Lass",
+          "Lässt",
+          "Lassen",
+          "Lasst"
+        ],
+        "correct": "Lass",
+        "explanation": "'Lass mich...' (Let me...) uses the informal singular imperative of lassen. 'Lass mich vorbei!' = 'Let me pass!' In the imperative, lassen loses both its umlaut and the -st ending, becoming simply 'lass.' This is different from 'lasst' (informal plural imperative for 'ihr') and 'lassen Sie' (formal imperative). Common everyday phrases: 'Lass mich mal sehen' (Let me see), 'Lass mich nachdenken' (Let me think), 'Lass mich ausreden!' (Let me finish speaking!). The imperative of lassen is among the most frequently used command forms in colloquial German."
+      },
+      {
+        "id": "eg_las7",
+        "question": "Der Chef _____ die Mitarbeiter früher gehen.",
+        "translation": "(The boss lets the employees leave early.)",
+        "options": [
+          "lässt",
+          "lasst",
+          "lasse",
+          "lassen"
+        ],
+        "correct": "lässt",
+        "explanation": "'Lassen' meaning 'to let/allow' takes a direct object + infinitive without 'zu.' 'Der Chef lässt die Mitarbeiter gehen' = 'The boss lets the employees go.' Unlike English 'allow' (which needs 'to'), German 'lassen' connects directly to the infinitive — no 'zu' needed. This parallels modal verbs (können, dürfen, müssen), which also take bare infinitives. Compare: 'Er erlaubt ihnen zu gehen' (He allows them to go — with zu) vs. 'Er lässt sie gehen' (He lets them go — without zu). Lassen behaves grammatically like a modal verb in this respect."
+      },
+      {
+        "id": "eg_las8",
+        "question": "Wir haben das Auto in der Werkstatt reparieren _____.",
+        "translation": "(We had the car repaired at the workshop.)",
+        "options": [
+          "lassen",
+          "gelassen",
+          "lass",
+          "lässt"
+        ],
+        "correct": "lassen",
+        "explanation": "Perfect tense with causative lassen requires the Ersatzinfinitiv (replacement infinitive): 'haben...reparieren lassen' — NOT 'haben...reparieren gelassen.' When lassen is used with another infinitive in perfect tense, the past participle 'gelassen' is replaced by the infinitive 'lassen.' This creates three verbs at the end: 'Wir haben das Auto reparieren lassen.' The auxiliary verb is always 'haben' (never 'sein') with this construction. This double infinitive rule is shared with modal verbs: 'Ich habe arbeiten müssen' (I had to work). It's a hallmark of advanced German grammar."
+      },
+      {
+        "id": "eg_las9",
+        "question": "Er ließ das Buch auf dem Tisch _____.",
+        "translation": "(He left the book lying on the table.)",
+        "options": [
+          "liegen",
+          "gelegen",
+          "liegend",
+          "liegt"
+        ],
+        "correct": "liegen",
+        "explanation": "'Lassen + position verb' means 'to leave something somewhere.' 'Er ließ das Buch liegen' = 'He left the book lying (there).' 'Ließ' is the simple past (Präteritum) of lassen — irregular: lassen → ließ (not 'lasste'). This construction combines lassen with positional verbs: liegen (lying), stehen (standing), sitzen (sitting), hängen (hanging). 'Sie ließ die Tasche stehen' (She left the bag standing there). The past tense 'ließ' has no umlaut, unlike present 'lässt.' In Präteritum, it conjugates: ich/er ließ, du ließest, wir/sie ließen."
+      },
+      {
+        "id": "eg_las10",
+        "question": "Das Ergebnis lässt nichts zu _____ übrig.",
+        "translation": "(The result leaves nothing to be desired.)",
+        "options": [
+          "wünschen",
+          "gewünscht",
+          "wünschend",
+          "wünsche"
+        ],
+        "correct": "wünschen",
+        "explanation": "'Nichts zu wünschen übrig lassen' is a fixed idiomatic expression meaning 'to leave nothing to be desired' — i.e., it's perfect. This showcases lassen in an idiomatic context where the meaning goes beyond simple 'let/leave/have done.' German has many such fixed expressions with lassen: 'fallen lassen' (to drop), 'stehen lassen' (to leave standing/abandon), 'außer Acht lassen' (to disregard), 'im Stich lassen' (to leave in the lurch). These idioms are essential for fluent German and often cannot be translated word-for-word. Learning them as complete units is the key to mastering lassen."
+      },
+      {
+        "id": "eg_las11",
+        "question": "Ich lasse mir von ihm nichts _____!",
+        "translation": "(I won't let him tell me anything! / I won't be bossed around by him!)",
+        "options": [
+          "sagen",
+          "gesagt",
+          "sagend",
+          "sage"
+        ],
+        "correct": "sagen",
+        "explanation": "'Sich (dativ) von jemandem etwas sagen lassen' means 'to let someone tell you something' — and with negation, it expresses defiance: 'I won't be told what to do!' This construction uses lassen with dative reflexive (mir) + von + person + infinitive. It's very common in spoken German for expressing independence: 'Ich lasse mir nichts vorschreiben!' (I won't be dictated to!). The 'von ihm' identifies who is trying to give orders. Similar structures: 'Ich lasse mir das nicht gefallen' (I won't stand for that). These patterns show lassen's emotional range beyond simple grammar."
+      },
+      {
+        "id": "eg_las12",
+        "question": "_____ Sie mich bitte ausreden!",
+        "translation": "(Please let me finish speaking!)",
+        "options": [
+          "Lassen",
+          "Lasst",
+          "Lass",
+          "Lässt"
+        ],
+        "correct": "Lassen",
+        "explanation": "'Lassen Sie' is the formal imperative (Sie-form) of lassen. 'Lassen Sie mich ausreden!' = 'Let me finish speaking!' (formal/polite). In formal German, the imperative keeps the infinitive form 'lassen' + 'Sie' (capitalized). This contrasts with informal: 'Lass mich ausreden!' (du) or 'Lasst mich ausreden!' (ihr). The three imperative forms of lassen are essential: lass (du), lasst (ihr), lassen Sie (Sie). In professional settings, 'Lassen Sie mich...' is the standard polite way to request permission: 'Lassen Sie mich erklären' (Let me explain), 'Lassen Sie mich nachdenken' (Let me think)."
+      },
+      {
+        "id": "eg_las13",
+        "question": "Wo hast du dein Fahrrad stehen _____?",
+        "translation": "(Where did you leave your bicycle (standing)?)",
+        "options": [
+          "lassen",
+          "gelassen",
+          "lass",
+          "lasst"
+        ],
+        "correct": "lassen",
+        "explanation": "Again the Ersatzinfinitiv rule: 'stehen lassen' in perfect tense uses 'lassen' (not 'gelassen') because it accompanies another infinitive. 'Wo hast du dein Fahrrad stehen lassen?' However, when lassen stands alone without another infinitive, the regular participle 'gelassen' IS used: 'Ich habe ihn gelassen' (I left him alone — no second infinitive). This distinction is crucial: with infinitive → 'lassen' (Ersatzinfinitiv); without infinitive → 'gelassen' (regular participle). Compare: 'Ich habe ihn gehen lassen' vs. 'Ich habe ihn in Ruhe gelassen.'"
+      },
+      {
+        "id": "eg_las14",
+        "question": "Er lässt sich nicht so leicht _____.",
+        "translation": "(He doesn't let himself be fooled so easily.)",
+        "options": [
+          "täuschen",
+          "getäuscht",
+          "täuschend",
+          "täuscht"
+        ],
+        "correct": "täuschen",
+        "explanation": "'Sich lassen + infinitive' expressing passive possibility with a personal subject. 'Er lässt sich nicht täuschen' = 'He can't be fooled / He doesn't allow himself to be deceived.' This reflexive construction can express either possibility ('can be done') or willingness ('allows it to happen'). With negation and a person as subject, it emphasizes the person's resilience: 'Sie lässt sich nicht einschüchtern' (She won't be intimidated). Without negation: 'Er lässt sich leicht überreden' (He's easily persuaded). This construction bridges active and passive meaning elegantly in German."
+      },
+      {
+        "id": "eg_las15",
+        "question": "Die Kinder _____ den Hund im Garten laufen.",
+        "translation": "(The children let the dog run in the garden.)",
+        "options": [
+          "ließen",
+          "lassen",
+          "ließ",
+          "lässt"
+        ],
+        "correct": "ließen",
+        "explanation": "'Ließen' is the Präteritum (simple past) plural form of lassen: wir/sie/Sie ließen. 'Die Kinder ließen den Hund laufen' = 'The children let the dog run.' The complete Präteritum conjugation: ich ließ, du ließest, er/sie/es ließ, wir ließen, ihr ließt, sie/Sie ließen. Notice the vowel change: a→ie (lassen→ließ), typical of strong verbs. In written German and storytelling, Präteritum is preferred over Perfekt: 'Sie ließen ihn gehen' sounds more literary than 'Sie haben ihn gehen lassen.' Mastering both past forms of lassen is essential for well-rounded German expression."
+      }
+    ]
+  },
+  {
+    "key": "modal_particles",
+    "name": "Modal Particles",
+    "description": "Modalpartikeln",
+    "iconName": "sparkles",
+    "color": "#a855f7",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "eg_mp1",
+        "question": "Das ist _____ interessant!",
+        "translation": "(That really is interesting!)",
+        "options": [
+          "ja",
+          "nein",
+          "oder",
+          "aber"
+        ],
+        "correct": "ja",
+        "explanation": "'Ja' as a modal particle (not meaning 'yes') expresses that something is obvious or commonly known — it adds emphasis and shared understanding. 'Das ist ja interessant!' = 'That IS interesting!' (with surprise or emphasis). Modal particles (Modalpartikeln) are tiny words that add emotional nuance, attitude, or speaker perspective. They're the secret sauce of natural German — without them, you sound like a textbook. 'Ja' as particle conveys: 'as you/we know,' 'indeed,' 'surprisingly.' It's unstressed in speech, unlike 'ja' meaning 'yes.' These particles have no direct English equivalent."
+      },
+      {
+        "id": "eg_mp2",
+        "question": "Komm _____ her!",
+        "translation": "(Come here! [with urgency/impatience])",
+        "options": [
+          "mal",
+          "ja",
+          "wohl",
+          "etwa"
+        ],
+        "correct": "mal",
+        "explanation": "'Mal' (short for 'einmal') as a modal particle softens commands or makes them more casual and friendly. 'Komm mal her!' = 'Come here (for a moment)!' Without 'mal,' 'Komm her!' sounds harsh and military. 'Mal' is the most common particle in everyday German — it makes requests feel less demanding: 'Gib mir mal das Salz' (Pass me the salt, would you?), 'Schau mal!' (Look!/Check this out!), 'Warte mal!' (Wait a moment!). It implies brevity or casualness, as if saying 'just quickly.' Mastering 'mal' instantly makes your German sound more natural and less foreign."
+      },
+      {
+        "id": "eg_mp3",
+        "question": "Was machst du _____ hier?",
+        "translation": "(What on earth are you doing here?)",
+        "options": [
+          "denn",
+          "mal",
+          "ja",
+          "schon"
+        ],
+        "correct": "denn",
+        "explanation": "'Denn' as a modal particle (different from 'denn' meaning 'because') adds genuine curiosity or surprise to questions. 'Was machst du denn hier?' = 'What are you doing here (then)?' — with real interest or surprise. Without 'denn,' the question sounds interrogation-like or robotic. 'Denn' appears almost exclusively in questions and signals that you genuinely want to know: 'Wie heißt du denn?' (So what's your name?), 'Was ist denn los?' (What's going on then?). It's the most important question particle — German questions without 'denn' often sound unnaturally blunt to native speakers."
+      },
+      {
+        "id": "eg_mp4",
+        "question": "Das ist _____ schön!",
+        "translation": "(That is really/but beautiful!)",
+        "options": [
+          "aber",
+          "denn",
+          "wohl",
+          "etwa"
+        ],
+        "correct": "aber",
+        "explanation": "'Aber' as a modal particle (not meaning 'but') expresses admiration, surprise, or emphasis — like English 'really' or 'wow.' 'Das ist aber schön!' = 'That IS beautiful!' / 'Wow, that's beautiful!' This is very different from 'aber' as conjunction (but). As a particle, 'aber' intensifies the speaker's reaction: 'Das war aber lecker!' (That was really delicious!), 'Du bist aber groß geworden!' (You've really grown!). It often appears in exclamations and shows genuine emotion. Native speakers use it constantly — it's one of those particles that foreigners often overlook but that makes speech feel alive and authentic."
+      },
+      {
+        "id": "eg_mp5",
+        "question": "Er ist _____ krank.",
+        "translation": "(He's probably sick.)",
+        "options": [
+          "wohl",
+          "mal",
+          "denn",
+          "ja"
+        ],
+        "correct": "wohl",
+        "explanation": "'Wohl' as a modal particle expresses probability or assumption — the speaker thinks something is likely but isn't 100% certain. 'Er ist wohl krank' = 'He's probably sick.' This is different from 'wohl' meaning 'well' (sich wohl fühlen = to feel well). As a particle, 'wohl' signals educated guessing: 'Sie hat wohl keine Zeit' (She probably doesn't have time), 'Das wird wohl stimmen' (That's probably correct). It's softer than 'wahrscheinlich' (probably) and more colloquial. Other probability particles exist (schon, halt), but 'wohl' is the most common for expressing assumptions in everyday German conversation."
+      },
+      {
+        "id": "eg_mp6",
+        "question": "Du bist _____ nicht etwa müde?",
+        "translation": "(You're not tired, are you? [hoping the answer is no])",
+        "options": [
+          "doch",
+          "mal",
+          "ja",
+          "schon"
+        ],
+        "correct": "doch",
+        "explanation": "'Doch' as a modal particle in questions expresses the speaker's hope or expectation of a particular answer. 'Du bist doch nicht müde?' = 'You're not tired, are you?' — hoping the person will say 'No, I'm not.' 'Doch' is Germany's most famous untranslatable word. As a particle, it creates an expectation: 'Du kommst doch morgen?' (You ARE coming tomorrow, right?), 'Das weißt du doch!' (You DO know that!). It signals that the speaker expects confirmation. Different from 'doch' as a contradiction ('Doch!' = 'Yes, I am!' when someone says you aren't). Context determines which 'doch' is being used."
+      },
+      {
+        "id": "eg_mp7",
+        "question": "Mach dir _____ keine Sorgen!",
+        "translation": "(Don't you worry! [reassuring])",
+        "options": [
+          "nur",
+          "aber",
+          "denn",
+          "wohl"
+        ],
+        "correct": "nur",
+        "explanation": "'Nur' as a modal particle in imperatives adds reassurance or encouragement — quite different from 'nur' meaning 'only.' 'Mach dir nur keine Sorgen!' = 'Don't worry!' (reassuringly, like 'don't you worry about a thing'). In commands, 'nur' can be either reassuring or threatening depending on context and tone: 'Ruf nur an!' = 'Go ahead and call!' (encouraging) vs. 'Komm nur her!' = 'Just you come here!' (threatening). This dual nature makes 'nur' tricky — intonation is key. Other reassuring particles: 'ruhig' (calmly): 'Nimm ruhig noch ein Stück!' (Go ahead, take another piece!)."
+      },
+      {
+        "id": "eg_mp8",
+        "question": "Das ist _____ so eine Sache...",
+        "translation": "(Well, that's the thing... [it's complicated])",
+        "options": [
+          "halt",
+          "aber",
+          "denn",
+          "etwa"
+        ],
+        "correct": "halt",
+        "explanation": "'Halt' (or 'eben') as a modal particle expresses resignation, acceptance of unchangeable facts — 'that's just the way it is.' 'Das ist halt so' = 'That's just how it is.' This particle is extremely common in southern German and Austrian German, while northern Germans may prefer 'eben.' Both convey the same resigned acceptance: 'Man muss halt warten' (You just have to wait), 'So ist das eben/halt' (That's just the way things are). There's no good English equivalent — it combines 'just,' 'simply,' and 'well, what can you do?' Using halt/eben authentically is a sign of truly advanced German fluency."
+      },
+      {
+        "id": "eg_mp9",
+        "question": "Hast du das _____ getan?",
+        "translation": "(Did you really do that? [incredulous, hoping no])",
+        "options": [
+          "etwa",
+          "mal",
+          "halt",
+          "nur"
+        ],
+        "correct": "etwa",
+        "explanation": "'Etwa' as a modal particle in questions expresses disbelief or hope that something ISN'T true. 'Hast du das etwa getan?' = 'You didn't actually do that, did you?!' — the speaker is alarmed and doesn't want a 'yes.' This is different from 'etwa' meaning 'approximately' (etwa 20 Leute = about 20 people). As a particle, 'etwa' always carries negative expectation: 'Willst du etwa aufgeben?' (You're not thinking of giving up, are you?), 'Ist das etwa dein Ernst?' (You're not serious, are you?). It's an invaluable tool for expressing shock, disapproval, or concern in conversational German."
+      },
+      {
+        "id": "eg_mp10",
+        "question": "Das wird _____ klappen.",
+        "translation": "(That'll work out, don't worry.)",
+        "options": [
+          "schon",
+          "denn",
+          "aber",
+          "etwa"
+        ],
+        "correct": "schon",
+        "explanation": "'Schon' as a modal particle (not meaning 'already') expresses confidence or reassurance — 'it'll be fine.' 'Das wird schon klappen' = 'It'll work out (don't worry).' This optimistic 'schon' is vastly different from temporal 'schon' (already). As a particle, it reassures: 'Es wird schon gut gehen' (It'll be alright), 'Du schaffst das schon' (You'll manage, don't worry). It can also express reluctant agreement: 'Ja, schon, aber...' (Yes, sure, but...). In concessive contexts, 'schon' acknowledges a point while preparing a 'but': 'Das stimmt schon, aber...' (That's true, but...). Mastering these subtle uses separates fluent from textbook German."
+      },
+      {
+        "id": "eg_mp11",
+        "question": "Sei _____ vorsichtig!",
+        "translation": "(Make sure to be careful! [warning])",
+        "options": [
+          "bloß",
+          "mal",
+          "halt",
+          "wohl"
+        ],
+        "correct": "bloß",
+        "explanation": "'Bloß' (or 'nur') as a modal particle in imperatives adds urgency and warning — stronger than 'mal' (casual) and more emphatic. 'Sei bloß vorsichtig!' = 'Make sure you're careful! / Be careful, I'm warning you!' This intensifying function makes commands feel urgent: 'Fass das bloß nicht an!' (Don't you dare touch that!), 'Sag bloß nichts!' (Don't say a word!). In questions, 'bloß' expresses desperation: 'Was soll ich bloß machen?' (What on earth should I do?). 'Bloß' and 'nur' are interchangeable as particles, though 'bloß' sounds slightly more colloquial and emotional in most regions."
+      },
+      {
+        "id": "eg_mp12",
+        "question": "Das war _____ einmal so.",
+        "translation": "(That's just the way it was. / That was simply the case.)",
+        "options": [
+          "nun",
+          "doch",
+          "ja",
+          "etwa"
+        ],
+        "correct": "nun",
+        "explanation": "'Nun' as a modal particle (related to 'nun einmal' = 'nun mal') expresses acceptance of facts — similar to 'halt/eben' but slightly more formal. 'Das war nun einmal so' = 'That's just the way it was, nothing to be done.' 'Nun mal' or 'nun einmal' is the full form, often shortened in speech: 'Das ist nun mal so' (That's simply how it is). It conveys inevitability without frustration, more philosophical than emotional. Other uses of 'nun': as a conversation opener 'Nun, ...' (Well,...), or temporal 'nun' (now). As a particle, it exclusively signals resigned acceptance of unchangeable circumstances."
+      },
+      {
+        "id": "eg_mp13",
+        "question": "Kannst du _____ leiser sein?",
+        "translation": "(Could you be a bit quieter, please?)",
+        "options": [
+          "mal",
+          "doch",
+          "etwa",
+          "bloß"
+        ],
+        "correct": "mal",
+        "explanation": "'Mal' in polite requests softens what could otherwise be a sharp demand. 'Kannst du mal leiser sein?' = 'Could you be a bit quieter?' — much friendlier than 'Sei leiser!' With 'können + mal,' you create natural, everyday requests: 'Kannst du mal aufmachen?' (Can you open up?), 'Könnten Sie mir mal helfen?' (Could you help me for a moment?). 'Mal' combined with 'könnten' (could) creates the politest request form in spoken German, softer than any textbook formulation. It implies the action is small and brief, reducing the perceived burden on the listener. Essential for sounding polite without being stiff."
+      },
+      {
+        "id": "eg_mp14",
+        "question": "Du hast _____ recht gehabt.",
+        "translation": "(You were right after all / You were right, as it turns out.)",
+        "options": [
+          "doch",
+          "mal",
+          "wohl",
+          "halt"
+        ],
+        "correct": "doch",
+        "explanation": "'Doch' as a particle in statements expresses that the speaker now realizes something was true despite earlier doubt. 'Du hast doch recht gehabt' = 'You were right after all (I see that now).' This acknowledging 'doch' admits a previous wrong assumption: 'Es war doch nicht so schlimm' (It wasn't so bad after all), 'Er ist doch gekommen!' (He came after all!). It creates a contrast between expectation and reality. This is yet another face of 'doch' — making it arguably the most multifunctional word in German: contradiction, expectation, confirmation, and now retrospective acknowledgment. Each use feels subtly different to native ears."
+      },
+      {
+        "id": "eg_mp15",
+        "question": "Wo ist er _____ geblieben?",
+        "translation": "(Where has he gotten to? [wondering])",
+        "options": [
+          "nur",
+          "aber",
+          "halt",
+          "schon"
+        ],
+        "correct": "nur",
+        "explanation": "'Nur' in questions (especially with 'wo/was/wie') expresses wondering or mild frustration — 'where on earth...?' 'Wo ist er nur geblieben?' = 'Where has he gotten to? / Where on earth is he?' This questioning 'nur' signals the speaker is puzzled or impatient: 'Was hat er nur gemeint?' (What could he have meant?), 'Wie konnte das nur passieren?' (How could that possibly happen?). It's different from 'nur' meaning 'only' and from 'nur' in imperatives (reassuring/warning). German modal particles often have three or four distinct functions depending on sentence type — mastering them is the final frontier of German fluency."
+      }
+    ]
+  },
+  {
+    "key": "discourse_markers",
+    "name": "Discourse Markers",
+    "description": "Diskursmarker",
+    "iconName": "text.bubble",
+    "color": "#06b6d4",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_disc1",
+        "question": "_____, ich wollte fragen, ob du morgen Zeit hast.",
+        "translation": "(By the way / Say, I wanted to ask if you have time tomorrow.)",
+        "options": [
+          "Übrigens",
+          "Trotzdem",
+          "Deshalb",
+          "Außerdem"
+        ],
+        "correct": "Übrigens",
+        "explanation": "'Übrigens' (by the way) is one of the most common discourse markers for introducing a new topic or side thought into conversation. It signals: 'This isn't directly related to what we were discussing, but...' Unlike English 'by the way' which can sound casual, 'übrigens' works in both formal and informal German. Placement is flexible: 'Übrigens, ich...' (sentence-initial) or 'Ich wollte übrigens fragen...' (mid-sentence). Discourse markers like these don't change meaning but organize conversation flow — they're the traffic signals of spoken German, guiding listeners through topic changes."
+      },
+      {
+        "id": "eg_disc2",
+        "question": "_____, das Wetter ist heute wirklich schön.",
+        "translation": "(Actually / Anyway, the weather is really nice today.)",
+        "options": [
+          "Jedenfalls",
+          "Nämlich",
+          "Jedoch",
+          "Allerdings"
+        ],
+        "correct": "Jedenfalls",
+        "explanation": "'Jedenfalls' (anyway, in any case, at any rate) redirects conversation back to a main point or steers away from a tangent. 'Jedenfalls, das Wetter ist schön' = 'Anyway, the weather is nice.' It can also mean 'at least': 'Ich war jedenfalls pünktlich' (At least I was on time). This marker is essential for natural conversation management — it says 'let's get back on track' without being rude. Similar markers: 'auf jeden Fall' (definitely/in any case), 'wie auch immer' (however that may be/anyway). These organizational words make the difference between choppy and fluid German conversation."
+      },
+      {
+        "id": "eg_disc3",
+        "question": "Er kommt nicht. Er ist _____ krank.",
+        "translation": "(He's not coming. He's sick, you see.)",
+        "options": [
+          "nämlich",
+          "trotzdem",
+          "jedoch",
+          "übrigens"
+        ],
+        "correct": "nämlich",
+        "explanation": "'Nämlich' is a unique German discourse marker meaning 'you see / namely / the thing is' — it provides the reason or explanation for what was just said. 'Er ist nämlich krank' = 'He's sick, you see.' IMPORTANT: 'nämlich' NEVER starts a sentence — it always comes after the verb in position 3 or later. This is a common mistake for English speakers who want to start with 'Namely,...' Wrong: 'Nämlich ist er krank.' Correct: 'Er ist nämlich krank.' It's an adverb that explains the previous statement: 'Ich kann nicht kommen. Ich habe nämlich einen Termin' (I can't come. I have an appointment, you see)."
+      },
+      {
+        "id": "eg_disc4",
+        "question": "_____ habe ich eine andere Meinung.",
+        "translation": "(However, I have a different opinion.)",
+        "options": [
+          "Allerdings",
+          "Nämlich",
+          "Übrigens",
+          "Sozusagen"
+        ],
+        "correct": "Allerdings",
+        "explanation": "'Allerdings' serves as a discourse marker meaning 'however/though/admittedly' — it introduces a qualification or contrast to what was previously said. 'Allerdings habe ich eine andere Meinung' = 'However, I have a different opinion.' It's softer than 'jedoch' (however) and more conversational. 'Allerdings' can also express emphatic agreement: 'War das schwer?' — 'Allerdings!' (Was that hard? — It sure was!). This dual function makes it versatile: contrastive ('however') or confirmative ('indeed'). In first position, it triggers inversion (verb second): 'Allerdings habe ich...' This is standard V2 word order for German main clauses."
+      },
+      {
+        "id": "eg_disc5",
+        "question": "Ich mag Kaffee. _____ trinke ich auch gern Tee.",
+        "translation": "(I like coffee. Besides, I also like drinking tea.)",
+        "options": [
+          "Außerdem",
+          "Nämlich",
+          "Trotzdem",
+          "Jedenfalls"
+        ],
+        "correct": "Außerdem",
+        "explanation": "'Außerdem' (besides/moreover/in addition) adds information to what was already said — it's additive, building on the previous point. 'Außerdem trinke ich auch Tee' = 'Besides, I also drink tea.' As an adverb in position 1, it triggers verb-second order. 'Außerdem' is more common in spoken German than 'darüber hinaus' (furthermore, which is more formal/written). Other additive markers: 'zudem' (in addition to that), 'dazu' (on top of that), 'obendrein' (on top of everything). These connectors build arguments and lists naturally: 'Es ist billig, außerdem ist die Qualität gut' (It's cheap, plus the quality is good)."
+      },
+      {
+        "id": "eg_disc6",
+        "question": "_____, was ich sagen wollte: Wir treffen uns um 8.",
+        "translation": "(Anyway / So, what I wanted to say: We're meeting at 8.)",
+        "options": [
+          "Also",
+          "Jedoch",
+          "Nämlich",
+          "Obwohl"
+        ],
+        "correct": "Also",
+        "explanation": "'Also' is perhaps the most ubiquitous German discourse marker — but be careful: it does NOT mean 'also' in English! It means 'so/well/right then.' 'Also, was ich sagen wollte...' = 'So, what I wanted to say...' Germans use 'also' to: start explanations ('Also, es ist so:' = 'So, here's the thing:'), summarize ('Also, wir machen das so' = 'Right, we'll do it this way'), fill pauses ('Also...ähm...' = 'Well...um...'). It's a conversation organizer, not an addition marker. The English equivalent of 'also' (= too/as well) is 'auch' in German. This false friend trips up many English speakers."
+      },
+      {
+        "id": "eg_disc7",
+        "question": "Es war schwierig. _____ haben wir es geschafft.",
+        "translation": "(It was difficult. Nevertheless, we managed it.)",
+        "options": [
+          "Trotzdem",
+          "Außerdem",
+          "Übrigens",
+          "Also"
+        ],
+        "correct": "Trotzdem",
+        "explanation": "'Trotzdem' (nevertheless/despite that/still) is a concessive connector — it acknowledges the previous point but presents a contrasting outcome. 'Es war schwierig. Trotzdem haben wir es geschafft.' = 'It was difficult. Nevertheless, we managed.' As a connector adverb in position 1, it triggers inversion. 'Trotzdem' is the spoken equivalent of the more formal 'dennoch' or 'nichtsdestotrotz' (nevertheless). Similar markers: 'immerhin' (at least/after all), 'gleichwohl' (nonetheless — very formal). These concessive markers are essential for balanced argumentation: acknowledging challenges while presenting positive outcomes. It's how mature, nuanced German sounds."
+      },
+      {
+        "id": "eg_disc8",
+        "question": "_____ gesagt bin ich nicht sicher.",
+        "translation": "(Honestly speaking, I'm not sure.)",
+        "options": [
+          "Ehrlich",
+          "Nämlich",
+          "Übrigens",
+          "Jedenfalls"
+        ],
+        "correct": "Ehrlich",
+        "explanation": "'Ehrlich gesagt' (honestly speaking) is a common discourse marker that prefaces an honest or potentially uncomfortable opinion. It signals sincerity and transparency: 'Ehrlich gesagt bin ich nicht sicher' = 'To be honest, I'm not sure.' Similar framing markers: 'offen gesagt' (frankly speaking), 'genau genommen' (strictly speaking), 'im Grunde' (basically/fundamentally), 'unter uns gesagt' (between us). These markers manage the social dynamics of conversation — they prepare the listener for what's coming and frame how it should be received. They're the verbal equivalent of raising your hand before speaking."
+      },
+      {
+        "id": "eg_disc9",
+        "question": "_____ muss man auch die andere Seite sehen.",
+        "translation": "(On the other hand, one must also see the other side.)",
+        "options": [
+          "Andererseits",
+          "Außerdem",
+          "Also",
+          "Nämlich"
+        ],
+        "correct": "Andererseits",
+        "explanation": "'Andererseits' (on the other hand) presents the opposing viewpoint in a balanced argument. It typically pairs with 'einerseits' (on the one hand): 'Einerseits ist es teuer, andererseits ist die Qualität gut' (On one hand it's expensive, on the other the quality is good). Used alone, 'andererseits' signals a shift to a contrasting perspective. This pair (einerseits...andererseits) is fundamental to German academic writing and structured argumentation. Both trigger verb-second order in position 1. Less formal alternatives: 'auf der anderen Seite' (on the other side). These balanced-argument markers show sophisticated thinking in German."
+      },
+      {
+        "id": "eg_disc10",
+        "question": "Wir müssen sparen. _____ sollten wir weniger ausgeben.",
+        "translation": "(We need to save. Therefore, we should spend less.)",
+        "options": [
+          "Deshalb",
+          "Trotzdem",
+          "Übrigens",
+          "Allerdings"
+        ],
+        "correct": "Deshalb",
+        "explanation": "'Deshalb' (therefore/that's why) introduces a consequence or conclusion from what was just said — it's causal-conclusive. 'Wir müssen sparen. Deshalb sollten wir weniger ausgeben.' Similar markers in this group: 'deswegen' (because of that — slightly more colloquial), 'daher' (therefore — slightly more formal), 'darum' (that's why), 'folglich' (consequently — formal/written). All take position 1 with verb inversion. The choice between them is mostly register: 'deshalb/deswegen' for everyday speech, 'daher/folglich' for formal writing. These causal connectors are the backbone of German argumentation and essential for clear, logical German expression."
+      },
+      {
+        "id": "eg_disc11",
+        "question": "Das ist, _____, eine schwierige Situation.",
+        "translation": "(That is, so to speak, a difficult situation.)",
+        "options": [
+          "sozusagen",
+          "trotzdem",
+          "nämlich",
+          "allerdings"
+        ],
+        "correct": "sozusagen",
+        "explanation": "'Sozusagen' (so to speak) hedges or qualifies a statement, indicating the speaker is using an expression figuratively or approximately. 'Das ist sozusagen unmöglich' = 'That's impossible, so to speak.' It sits naturally in mid-sentence position, often set off by commas. Similar hedging markers: 'gewissermaßen' (in a way/as it were), 'quasi' (quasi/sort of — very colloquial), 'praktisch' (practically/virtually). These markers soften absolute statements and show linguistic sophistication — the speaker acknowledges that language is approximate. They're especially common in academic and intellectual German discourse."
+      },
+      {
+        "id": "eg_disc12",
+        "question": "_____, ich muss jetzt los.",
+        "translation": "(Alright then / Well, I have to go now.)",
+        "options": [
+          "Gut",
+          "Nämlich",
+          "Trotzdem",
+          "Deshalb"
+        ],
+        "correct": "Gut",
+        "explanation": "'Gut' as a discourse marker signals a conversation transition or conclusion — it's not evaluating anything as 'good' but rather saying 'alright/okay/right then.' 'Gut, ich muss jetzt los' = 'Right, I need to head off now.' Similar closing/transitioning markers: 'na gut' (alright then), 'so' (right/well), 'na' (well — very colloquial), 'tja' (well... — with resignation). These markers manage conversation endings gracefully: 'So, das war's' (Right, that was it), 'Na gut, bis morgen!' (Alright then, see you tomorrow!). They prevent conversations from ending abruptly, which matters in German social culture."
+      },
+      {
+        "id": "eg_disc13",
+        "question": "Das Projekt war erfolgreich. _____ war es nicht einfach.",
+        "translation": "(The project was successful. Admittedly, it wasn't easy.)",
+        "options": [
+          "Zugegeben",
+          "Übrigens",
+          "Also",
+          "Deshalb"
+        ],
+        "correct": "Zugegeben",
+        "explanation": "'Zugegeben' (admittedly/granted) is a concessive discourse marker that acknowledges a point before presenting a contrasting view. 'Zugegeben, es war nicht einfach' = 'Admittedly, it wasn't easy (but we did it).' It's a past participle used as a discourse marker — literally 'given/admitted.' This transparent, honest acknowledging makes your argument stronger, not weaker. Similar markers: 'zugegebenermaßen' (admittedly — more formal), 'eingestandenermaßen' (confessedly). These concessive openers build trust with the listener by showing you've considered counterarguments. Essential for persuasive speaking and writing in German."
+      },
+      {
+        "id": "eg_disc14",
+        "question": "_____ ist das Problem nicht so groß.",
+        "translation": "(Actually / When you look closely, the problem isn't so big.)",
+        "options": [
+          "Eigentlich",
+          "Trotzdem",
+          "Außerdem",
+          "Nämlich"
+        ],
+        "correct": "Eigentlich",
+        "explanation": "'Eigentlich' (actually/really) is a versatile discourse marker that contrasts appearance with reality or expectation with result. 'Eigentlich ist das Problem nicht so groß' = 'Actually, the problem isn't so big.' It can express: unexpected truth ('Eigentlich mag ich das' = Actually, I like it), polite disagreement ('Eigentlich stimmt das nicht' = Actually, that's not right), or reluctance ('Eigentlich wollte ich nicht...' = Actually, I didn't want to...). 'Eigentlich' is distinctly different from 'wirklich' (really/truly): 'eigentlich' suggests contrast with expectation, while 'wirklich' simply emphasizes truth."
+      },
+      {
+        "id": "eg_disc15",
+        "question": "_____ ist es besser, früh aufzustehen.",
+        "translation": "(In general / Generally, it's better to get up early.)",
+        "options": [
+          "Generell",
+          "Trotzdem",
+          "Nämlich",
+          "Übrigens"
+        ],
+        "correct": "Generell",
+        "explanation": "'Generell' (generally/in general) frames a statement as a broad principle rather than a specific claim. 'Generell ist es besser, früh aufzustehen' = 'Generally, it's better to get up early.' This generalizing marker hedges against exceptions — the speaker acknowledges that this doesn't apply to every case. Similar markers: 'im Allgemeinen' (in general), 'grundsätzlich' (fundamentally — but can imply 'in principle'), 'normalerweise' (normally), 'in der Regel' (as a rule). These markers are essential for academic writing and balanced arguments in German, preventing overgeneralization while still making clear points."
+      }
+    ]
+  },
+  {
+    "key": "linking_words",
+    "name": "Linking Words",
+    "description": "Verbindungswörter",
+    "iconName": "link",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_lw1",
+        "question": "Ich gehe spazieren, _____ es regnet.",
+        "translation": "(I'm going for a walk although it's raining.)",
+        "options": [
+          "obwohl",
+          "weil",
+          "damit",
+          "wenn"
+        ],
+        "correct": "obwohl",
+        "explanation": "'Obwohl' (although/even though) is a concessive subordinating conjunction — it introduces a subordinate clause where the verb goes to the end. 'Ich gehe spazieren, obwohl es regnet' (I'm going walking although it rains). The verb 'regnet' moves to final position after 'obwohl.' This is the key grammatical difference between 'obwohl' (subordinating — verb last) and 'trotzdem' (adverbial — verb second): 'Obwohl es regnet, gehe ich spazieren' vs. 'Es regnet. Trotzdem gehe ich spazieren.' Both express concession, but the clause structure differs fundamentally. Learners must master this verb-position distinction."
+      },
+      {
+        "id": "eg_lw2",
+        "question": "Er lernt Deutsch, _____ er in Deutschland arbeiten will.",
+        "translation": "(He's learning German because he wants to work in Germany.)",
+        "options": [
+          "weil",
+          "obwohl",
+          "damit",
+          "falls"
+        ],
+        "correct": "weil",
+        "explanation": "'Weil' (because) is the most common causal conjunction in German. As a subordinating conjunction, it sends the verb to the end: 'weil er arbeiten will' (because he wants to work). In formal/written German, 'weil' always takes verb-final order. However, in modern spoken German, you'll increasingly hear 'weil' with verb-second order: 'weil er will arbeiten' — this is technically non-standard but extremely common in speech. The formal alternative is 'da' (since/as), which sounds more literary: 'Da er in Deutschland arbeiten will, lernt er Deutsch.' Both 'weil' and 'da' are causal, but 'da' often introduces known reasons."
+      },
+      {
+        "id": "eg_lw3",
+        "question": "Ich lerne fleißig, _____ ich die Prüfung bestehe.",
+        "translation": "(I'm studying hard so that I pass the exam.)",
+        "options": [
+          "damit",
+          "weil",
+          "obwohl",
+          "während"
+        ],
+        "correct": "damit",
+        "explanation": "'Damit' (so that/in order to) expresses purpose — why someone does something. 'Ich lerne, damit ich bestehe' = 'I study so that I pass.' As a subordinating conjunction, verb goes to end. IMPORTANT distinction: 'damit' vs. 'um...zu': When both clauses have the SAME subject, use 'um...zu + infinitive': 'Ich lerne, um die Prüfung zu bestehen' (same person studying and passing). When subjects DIFFER, you MUST use 'damit': 'Ich erkläre es, damit du es verstehst' (I explain so that YOU understand). This same-subject/different-subject rule is a classic exam question in German grammar courses."
+      },
+      {
+        "id": "eg_lw4",
+        "question": "_____ du möchtest, können wir ins Kino gehen.",
+        "translation": "(If you'd like, we can go to the cinema.)",
+        "options": [
+          "Falls",
+          "Weil",
+          "Obwohl",
+          "Damit"
+        ],
+        "correct": "Falls",
+        "explanation": "'Falls' (if/in case) introduces a conditional clause with an element of uncertainty — something that might or might not happen. 'Falls du möchtest, können wir gehen' = 'If you'd like, we can go.' 'Falls' is more specific than 'wenn' (if/when): 'falls' implies the condition is genuinely uncertain, while 'wenn' can also mean 'when/whenever.' Compare: 'Wenn es regnet' (When/If it rains — could be either) vs. 'Falls es regnet' (In case it rains — leaning toward unlikely). For truly hypothetical conditions, 'falls' is clearer than 'wenn.' Both are subordinating conjunctions with verb-final order in their clause."
+      },
+      {
+        "id": "eg_lw5",
+        "question": "Er spielte Gitarre, _____ sie sang.",
+        "translation": "(He played guitar while she sang.)",
+        "options": [
+          "während",
+          "weil",
+          "damit",
+          "obwohl"
+        ],
+        "correct": "während",
+        "explanation": "'Während' (while/whereas) has two functions: temporal (simultaneous actions) and adversative (contrast). Here it's temporal: 'while she sang.' As a subordinating conjunction, verb goes to end: 'während sie sang.' Temporal: 'Während ich kochte, las er Zeitung' (While I cooked, he read the paper) — simultaneous events. Adversative: 'Während er fleißig ist, ist sie faul' (Whereas he is diligent, she is lazy) — contrast. Context usually makes the meaning clear. 'Während' as a conjunction is different from 'während' as a preposition (+ genitive): 'während des Sommers' (during the summer). Same word, different grammar."
+      },
+      {
+        "id": "eg_lw6",
+        "question": "_____ er krank war, ging er zur Arbeit.",
+        "translation": "(Although he was sick, he went to work.)",
+        "options": [
+          "Obwohl",
+          "Weil",
+          "Bevor",
+          "Nachdem"
+        ],
+        "correct": "Obwohl",
+        "explanation": "'Obwohl' at the start of a sentence creates a concessive subordinate clause followed by the main clause with inverted word order. 'Obwohl er krank war, ging er zur Arbeit.' Structure breakdown: subordinate clause (verb last: 'war') + comma + main clause (verb first after comma: 'ging'). This pattern — subordinate clause first, then main clause with inversion — is fundamental to complex German sentence construction. It works the same with all subordinating conjunctions: 'Weil es regnete, blieben wir zu Hause.' The verb in the main clause must immediately follow the comma when the subordinate clause comes first."
+      },
+      {
+        "id": "eg_lw7",
+        "question": "Ich warte, _____ du fertig bist.",
+        "translation": "(I'll wait until you're ready.)",
+        "options": [
+          "bis",
+          "seit",
+          "während",
+          "bevor"
+        ],
+        "correct": "bis",
+        "explanation": "'Bis' (until) defines a temporal endpoint — the action continues up to a certain point. 'Ich warte, bis du fertig bist' = 'I'll wait until you're done.' As a subordinating conjunction, verb goes to end. 'Bis' can also be a preposition: 'bis morgen' (until tomorrow), 'bis 8 Uhr' (until 8 o'clock). The conjunction/preposition distinction matters: 'bis' + clause (subordinating conjunction, verb last) vs. 'bis' + noun/time (preposition, no verb change). Related temporal conjunctions: 'seit/seitdem' (since — ongoing from past), 'bevor' (before), 'nachdem' (after). These temporal connectors are the scaffolding of narrative German."
+      },
+      {
+        "id": "eg_lw8",
+        "question": "_____ ich nach Hause kam, war es schon dunkel.",
+        "translation": "(When I came home, it was already dark.)",
+        "options": [
+          "Als",
+          "Wenn",
+          "Während",
+          "Bevor"
+        ],
+        "correct": "Als",
+        "explanation": "'Als' vs. 'wenn' is one of the trickiest distinctions in German. 'Als' = 'when' for SINGLE events in the PAST. 'Als ich nach Hause kam' = 'When I came home (that one time).' Use 'wenn' for: repeated past events ('Wenn ich ankam, freute er sich immer' = Whenever I arrived, he was always happy), present/future events ('Wenn ich ankomme, rufe ich an' = When I arrive, I'll call). Rule of thumb: single past event → als; everything else → wenn. Both are subordinating conjunctions (verb last). This als/wenn distinction doesn't exist in English, making it one of the most common errors for English-speaking German learners."
+      },
+      {
+        "id": "eg_lw9",
+        "question": "Ich dusche mich, _____ ich frühstücke.",
+        "translation": "(I shower before I have breakfast.)",
+        "options": [
+          "bevor",
+          "nachdem",
+          "bis",
+          "seit"
+        ],
+        "correct": "bevor",
+        "explanation": "'Bevor' (before) establishes temporal sequence — what happens first. 'Ich dusche mich, bevor ich frühstücke' = 'I shower before I have breakfast.' Both clauses can use the same tense in German (unlike 'nachdem,' which requires tense shifting). 'Bevor' = subordinating conjunction (verb last in its clause). Synonym: 'ehe' (before — slightly more literary/formal). Common usage: 'Bevor du gehst, vergiss nicht...' (Before you go, don't forget...). 'Bevor' contrasts with 'nachdem' (after): 'Nachdem ich geduscht hatte, frühstückte ich' (After I had showered, I had breakfast). Note: 'nachdem' requires past perfect in its clause."
+      },
+      {
+        "id": "eg_lw10",
+        "question": "_____ ich gegessen hatte, ging ich spazieren.",
+        "translation": "(After I had eaten, I went for a walk.)",
+        "options": [
+          "Nachdem",
+          "Bevor",
+          "Während",
+          "Als"
+        ],
+        "correct": "Nachdem",
+        "explanation": "'Nachdem' (after) requires a specific tense pattern: the 'nachdem' clause must use a tense ONE STEP FURTHER in the past than the main clause. Past perfect + simple past: 'Nachdem ich gegessen hatte (Plusquamperfekt), ging ich spazieren (Präteritum).' For present contexts: 'Nachdem ich gegessen habe (Perfekt), gehe ich spazieren (Präsens).' This tense-shifting rule is unique to 'nachdem' — it logically marks that one event was completed before the other began. This is a frequent exam topic and a hallmark of grammatically precise German. Other temporal conjunctions (bevor, während) don't require this tense shift."
+      },
+      {
+        "id": "eg_lw11",
+        "question": "Ich gehe nicht raus, _____ es aufhört zu regnen.",
+        "translation": "(I'm not going outside unless it stops raining.)",
+        "options": [
+          "es sei denn",
+          "obwohl",
+          "weil",
+          "damit"
+        ],
+        "correct": "es sei denn",
+        "explanation": "'Es sei denn' (unless) is an important German exception clause — it introduces the one condition under which the previous statement wouldn't apply. 'Ich gehe nicht raus, es sei denn, es hört auf zu regnen' = 'I'm not going out unless it stops raining.' Grammatically, 'es sei denn' uses Konjunktiv I ('sei') in a fixed expression. Despite the subjunctive form, it's used in factual contexts. Alternative: 'außer wenn' (except if) or 'sofern nicht' (provided that not). 'Es sei denn' is common in both spoken and written German and sounds neither too formal nor too casual — it's right in the register sweet spot."
+      },
+      {
+        "id": "eg_lw12",
+        "question": "Je mehr ich lerne, _____ besser verstehe ich.",
+        "translation": "(The more I learn, the better I understand.)",
+        "options": [
+          "desto",
+          "so",
+          "als",
+          "wie"
+        ],
+        "correct": "desto",
+        "explanation": "'Je...desto/umso' (the more...the more) is a correlative construction expressing proportional relationship. 'Je mehr ich lerne, desto besser verstehe ich' = 'The more I study, the better I understand.' Structure: 'je + comparative + verb-last' (subordinate), then 'desto/umso + comparative + verb-second' (main). 'Desto' and 'umso' are interchangeable: 'Je älter, desto/umso weiser.' This construction is powerful for expressing cause-and-effect relationships: 'Je früher du kommst, desto besser' (The earlier you come, the better). Note the verb positions: last in the 'je' clause, second in the 'desto' clause."
+      },
+      {
+        "id": "eg_lw13",
+        "question": "Er ging zur Arbeit, _____ er Fieber hatte.",
+        "translation": "(He went to work even though he had a fever.)",
+        "options": [
+          "obgleich",
+          "weil",
+          "damit",
+          "bevor"
+        ],
+        "correct": "obgleich",
+        "explanation": "'Obgleich' (although/even though) is a more formal synonym of 'obwohl' — both are concessive subordinating conjunctions with verb-last order. 'Obgleich er Fieber hatte, ging er zur Arbeit.' The family of concessive conjunctions from casual to formal: 'obwohl' (standard/most common) > 'obgleich' (formal) > 'obschon' (literary/archaic) > 'wenngleich' (very formal/literary). All follow the same grammar: subordinating, verb at end. In everyday speech, stick with 'obwohl.' In academic writing, 'obgleich' or 'wenngleich' show sophistication. Knowing these registers is key to adapting your German to different contexts."
+      },
+      {
+        "id": "eg_lw14",
+        "question": "_____ du Hilfe brauchst, ruf mich an.",
+        "translation": "(In case / If you need help, call me.)",
+        "options": [
+          "Solltest",
+          "Weil",
+          "Obwohl",
+          "Damit"
+        ],
+        "correct": "Solltest",
+        "explanation": "'Solltest du...' (Should you...) is an elegant conditional construction using inverted Konjunktiv II of 'sollen' — it replaces 'wenn/falls' for a more formal, polished tone. 'Solltest du Hilfe brauchen, ruf mich an' = 'Should you need help, call me.' This construction mirrors English 'Should you need' and is considered elegant in both languages. The structure is: 'Sollte + subject + infinitive' (no 'wenn' needed). Other examples: 'Sollte es regnen, bleiben wir drinnen' (Should it rain, we'll stay inside). This is more formal than 'Wenn es regnet' and shows grammatical sophistication. Common in business correspondence and formal communication."
+      },
+      {
+        "id": "eg_lw15",
+        "question": "Er spricht Deutsch, _____ er Englisch spricht.",
+        "translation": "(He speaks German as well as he speaks English.)",
+        "options": [
+          "so wie",
+          "als",
+          "obwohl",
+          "weil"
+        ],
+        "correct": "so wie",
+        "explanation": "'So...wie' (as...as) creates equal comparisons — fundamental to German comparison structures. 'Er spricht Deutsch so gut, wie er Englisch spricht' = 'He speaks German as well as he speaks English.' Key distinction: 'so...wie' for EQUAL comparison (as...as) vs. 'comparative + als' for UNEQUAL comparison (more...than). 'So groß wie' (as tall as) vs. 'größer als' (taller than). Common error: using 'als' for equal comparisons ('so groß als' — WRONG). This wie/als distinction is non-negotiable in correct German: 'wie' for equality, 'als' for inequality. No exceptions. It's one of the most tested grammar points in German language certification exams."
+      }
+    ]
+  },
+  {
+    "key": "emphasis_structures",
+    "name": "Emphasis Structures",
+    "description": "Betonungsstrukturen",
+    "iconName": "exclamationmark.triangle",
+    "color": "#ef4444",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "eg_emph1",
+        "question": "_____ bin ich, der das gesagt hat.",
+        "translation": "(I am the one who said that.)",
+        "options": [
+          "Ich",
+          "Mich",
+          "Mir",
+          "Mein"
+        ],
+        "correct": "Ich",
+        "explanation": "German uses fronting (Topikalisierung) to emphasize elements by moving them to position 1. 'ICH bin es, der das gesagt hat' = 'I am the one who said that.' In German, almost any sentence element can be moved to position 1 for emphasis — the verb always stays in position 2 (V2 rule). This flexibility doesn't exist in English. Compare neutral: 'Ich habe das gestern gesagt' vs. emphasized: 'GESTERN habe ich das gesagt' (YESTERDAY I said that). Whatever sits in position 1 receives special emphasis or serves as the topic. This V2 with flexible position 1 is one of German's most powerful expressive tools."
+      },
+      {
+        "id": "eg_emph2",
+        "question": "_____ dieses Buch habe ich gelesen, nicht jenes.",
+        "translation": "(THIS book I have read, not that one.)",
+        "options": [
+          "Dieses",
+          "Diese",
+          "Dies",
+          "Diesem"
+        ],
+        "correct": "Dieses",
+        "explanation": "Object fronting for emphasis: moving the accusative object to position 1. 'Dieses Buch habe ich gelesen' places 'dieses Buch' in focus — contrasting it with 'jenes' (that one). Normal order would be: 'Ich habe dieses Buch gelesen.' By fronting the object, the speaker emphasizes WHAT was read, not WHO read it. This contrastive fronting is very common: 'DEN Film mag ich' (THAT film I like), 'DIESEN Fehler mache ich nie wieder' (THIS mistake I'll never make again). The case marking (accusative 'dieses/den') ensures there's no ambiguity about subject vs. object, even with unusual word order."
+      },
+      {
+        "id": "eg_emph3",
+        "question": "Was mich ärgert, _____ seine Arroganz.",
+        "translation": "(What annoys me is his arrogance.)",
+        "options": [
+          "ist",
+          "sein",
+          "sind",
+          "war"
+        ],
+        "correct": "ist",
+        "explanation": "'Was...ist' creates a pseudo-cleft sentence (Sperrsatz) — a topic-comment structure that highlights information. 'Was mich ärgert, ist seine Arroganz' = 'What annoys me is his arrogance.' This puts 'seine Arroganz' into sharp focus as new, important information. The 'was' clause creates suspense, making the listener wait for the key point. Similar patterns: 'Was ich brauche, ist Ruhe' (What I need is quiet), 'Was zählt, ist die Qualität' (What counts is quality). This construction works like English 'What...is...' and is equally powerful in both languages for rhetorical emphasis, especially in speeches, presentations, and persuasive writing."
+      },
+      {
+        "id": "eg_emph4",
+        "question": "Ich habe das _____ getan, nicht er!",
+        "translation": "(I myself did that, not him!)",
+        "options": [
+          "selbst",
+          "selber",
+          "sich",
+          "eigen"
+        ],
+        "correct": "selbst",
+        "explanation": "'Selbst' (or colloquial 'selber') adds emphatic reflexive meaning: 'I MYSELF did that.' 'Ich selbst habe das getan' emphasizes personal involvement. Placement matters: 'Ich habe das selbst gemacht' (I did it myself — emphasis on doing it personally) vs. 'Selbst ich habe das verstanden' (Even I understood that — 'selbst' meaning 'even'). Two distinct meanings: after noun/pronoun = 'myself/yourself' (reflexive emphasis); before noun/pronoun = 'even' (inclusive emphasis). 'Selber' is synonymous with reflexive 'selbst' but considered more colloquial: 'Mach's doch selber!' (Do it yourself then!). Both forms are essential for emphatic German."
+      },
+      {
+        "id": "eg_emph5",
+        "question": "Es ist der Lehrer, _____ uns das erklärt hat.",
+        "translation": "(It is the teacher who explained that to us.)",
+        "options": [
+          "der",
+          "den",
+          "dem",
+          "dessen"
+        ],
+        "correct": "der",
+        "explanation": "'Es ist...der/die/das...' creates a German cleft sentence (Spaltsatz), directly equivalent to English 'It is...who/that...' 'Es ist der Lehrer, der uns das erklärt hat' = 'It is the teacher who explained it to us.' This construction isolates one element for maximum emphasis. The relative pronoun (der/die/das) must agree in gender and number with the focused noun. Examples: 'Es war Maria, die angerufen hat' (It was Maria who called), 'Es sind die Kosten, die mich stören' (It's the costs that bother me). While less common in German than in English, Spaltsätze are powerful rhetorical devices for formal contexts and arguments."
+      },
+      {
+        "id": "eg_emph6",
+        "question": "Nie _____ ich das vergessen!",
+        "translation": "(Never will I forget that!)",
+        "options": [
+          "werde",
+          "will",
+          "kann",
+          "soll"
+        ],
+        "correct": "werde",
+        "explanation": "Negative adverbs in position 1 create dramatic emphasis through inversion. 'Nie werde ich das vergessen!' (Never will I forget that!) sounds more emphatic than 'Ich werde das nie vergessen.' This works with various negative/restrictive adverbs: 'Niemals hätte ich das gedacht' (Never would I have thought that), 'Selten habe ich so gelacht' (Rarely have I laughed so much), 'Kaum war er weg, klingelte das Telefon' (Scarcely was he gone when the phone rang). This construction adds dramatic flair and is common in literature, speeches, and emotional statements. The inversion is natural in German — it follows regular V2 rules."
+      },
+      {
+        "id": "eg_emph7",
+        "question": "Schön _____ es hier!",
+        "translation": "(It IS beautiful here! — How beautiful it is!)",
+        "options": [
+          "ist",
+          "war",
+          "sein",
+          "wird"
+        ],
+        "correct": "ist",
+        "explanation": "Adjective fronting creates exclamatory emphasis. 'Schön ist es hier!' moves the predicate adjective to position 1, making it an exclamation rather than a neutral statement (neutral: 'Es ist schön hier'). This pattern works with many adjectives: 'Toll war das!' (That was great!), 'Interessant ist das!' (That's interesting!), 'Wichtig ist dabei Folgendes...' (What's important here is the following...). In spoken German, intonation reinforces the emphasis. In written German, the unusual position alone creates emphasis. This is a quintessentially German way to express strong feelings — it leverages the language's flexible word order."
+      },
+      {
+        "id": "eg_emph8",
+        "question": "Gerade _____ habe ich an dich gedacht!",
+        "translation": "(Just now / At this very moment I was thinking of you!)",
+        "options": [
+          "eben",
+          "doch",
+          "mal",
+          "halt"
+        ],
+        "correct": "eben",
+        "explanation": "'Gerade eben' (just now/at this very moment) is an intensive temporal expression that creates emphasis on immediacy. 'Gerade eben habe ich an dich gedacht!' = 'I was JUST NOW thinking of you!' 'Gerade' alone means 'just/right now,' and 'eben' intensifies it to 'at this very moment.' Other emphatic temporal phrases: 'ausgerechnet heute' (of all days, today), 'genau in diesem Moment' (at exactly this moment), 'erst gestern' (only/just yesterday). These time-emphasis constructions add drama and coincidence to storytelling: 'Ausgerechnet dann rief er an!' (Of all times, THAT's when he called!). They make narratives vivid and engaging."
+      },
+      {
+        "id": "eg_emph9",
+        "question": "Nicht ich, _____ er hat den Fehler gemacht.",
+        "translation": "(Not I, but HE made the mistake.)",
+        "options": [
+          "sondern",
+          "aber",
+          "und",
+          "oder"
+        ],
+        "correct": "sondern",
+        "explanation": "'Nicht...sondern' (not...but rather) is the German contrastive construction for correcting a wrong assumption. 'Nicht ich, sondern er' = 'Not me, but rather HIM.' This is fundamentally different from 'aber' (but): 'sondern' corrects and replaces, while 'aber' simply contrasts. Rule: use 'sondern' only after negation (nicht/kein) when the second part REPLACES the first: 'Er ist nicht dumm, sondern faul' (He's not stupid, but rather lazy). Use 'aber' for additive contrast: 'Er ist klug, aber faul' (He's smart, but lazy). This nicht/sondern pair is one of the most effective emphasis tools in German argumentation."
+      },
+      {
+        "id": "eg_emph10",
+        "question": "Erst wenn du es _____, wirst du es verstehen.",
+        "translation": "(Only when you experience it will you understand it.)",
+        "options": [
+          "erlebst",
+          "erlebt",
+          "erleben",
+          "erlebte"
+        ],
+        "correct": "erlebst",
+        "explanation": "'Erst wenn...' (only when/not until) creates emphasis on a prerequisite condition. 'Erst wenn du es erlebst, wirst du es verstehen' = 'Only when you experience it will you understand.' 'Erst' adds exclusivity to 'wenn': without 'erst,' it's a simple condition; with 'erst,' it means this is the ONLY way. Similar restrictive emphatic phrases: 'nur wenn' (only if), 'erst dann' (only then), 'erst nachdem' (only after). These structures are powerful in persuasive contexts: 'Erst wenn wir zusammenarbeiten, können wir gewinnen' (Only by working together can we win). The 'erst' elevates a condition from possible to essential."
+      },
+      {
+        "id": "eg_emph11",
+        "question": "Was ich wirklich _____, ist deine Ehrlichkeit.",
+        "translation": "(What I really appreciate is your honesty.)",
+        "options": [
+          "schätze",
+          "schätzt",
+          "schätzen",
+          "geschätzt"
+        ],
+        "correct": "schätze",
+        "explanation": "The 'Was ich...ist...' pseudo-cleft sentence puts maximum focus on the final element. 'Was ich wirklich schätze, ist deine Ehrlichkeit' builds suspense through the relative clause before revealing the key information: 'your honesty.' Adding 'wirklich' (really) intensifies the emphasis further. This pattern is extremely versatile: 'Was mir gefällt, ist die Atmosphäre' (What I like is the atmosphere), 'Was fehlt, ist Geld' (What's missing is money). For plural subjects: 'Was mich stören, sind die Preise' (What bothers me are the prices — note 'sind' agrees with 'Preise'). This construction is equally powerful in conversation and formal writing."
+      },
+      {
+        "id": "eg_emph12",
+        "question": "_____ er das gesagt hat, glaube ich einfach nicht.",
+        "translation": "(THAT he said that, I simply don't believe.)",
+        "options": [
+          "Dass",
+          "Was",
+          "Weil",
+          "Ob"
+        ],
+        "correct": "Dass",
+        "explanation": "Fronting a 'dass' clause creates emphasis on the content of disbelief. 'Dass er das gesagt hat, glaube ich nicht' moves the subordinate clause to position 1, making it the topic and focus: 'The fact THAT he said it — THAT I don't believe.' Normal order would be: 'Ich glaube nicht, dass er das gesagt hat.' The fronted version is more dramatic and colloquial, and common in emotional speech: 'Dass du das vergessen hast!' (I can't believe you forgot that!), 'Dass so etwas passieren konnte!' (That something like this could happen!). Standalone 'dass' exclamations express disbelief or frustration without needing a main clause."
+      },
+      {
+        "id": "eg_emph13",
+        "question": "Auf _____ Fall werde ich das tun!",
+        "translation": "(Under no circumstances will I do that!)",
+        "options": [
+          "keinen",
+          "jeden",
+          "einen",
+          "diesen"
+        ],
+        "correct": "keinen",
+        "explanation": "'Auf keinen Fall' (under no circumstances) is an emphatic negative phrase — much stronger than simple 'nicht.' 'Auf keinen Fall werde ich das tun!' = 'There's absolutely no way I'll do that!' Compare emphasis levels: 'Ich tue das nicht' (I won't do it — neutral) vs. 'Auf keinen Fall tue ich das!' (Absolutely not!). Other emphatic negatives: 'auf gar keinen Fall' (absolutely under no circumstances — intensified with 'gar'), 'niemals' (never), 'unter keinen Umständen' (under no circumstances — formal), 'um nichts in der Welt' (not for anything in the world). These phrases add emotional intensity to refusals and denials."
+      },
+      {
+        "id": "eg_emph14",
+        "question": "Gerade DU solltest das _____ wissen.",
+        "translation": "(YOU of all people should know that better.)",
+        "options": [
+          "besser",
+          "gut",
+          "am besten",
+          "beste"
+        ],
+        "correct": "besser",
+        "explanation": "'Gerade du' (you of all people / especially you) creates personal emphasis — singling out one person as particularly expected to know or act. 'Gerade DU solltest das besser wissen!' = 'YOU of all people should know better!' 'Gerade' before a pronoun means 'especially/particularly' — it implies the person has special reason or obligation: 'Gerade du weißt, wie schwer das ist' (YOU especially know how hard that is). Similar constructions: 'ausgerechnet du' (of all people, you — with more surprise/irony), 'gerade jetzt' (right now of all times). This is powerfully direct and often used in arguments or moral appeals."
+      },
+      {
+        "id": "eg_emph15",
+        "question": "Erst recht _____ ich das jetzt tun!",
+        "translation": "(Now I'm going to do it all the more! / Now more than ever!)",
+        "options": [
+          "werde",
+          "will",
+          "soll",
+          "muss"
+        ],
+        "correct": "werde",
+        "explanation": "'Erst recht' (all the more/now more than ever) is an emphatic expression meaning that opposition or obstacles INCREASE determination rather than decrease it. 'Erst recht werde ich das tun!' = 'Now I'm going to do it even more!' (defiant). It's the opposite of backing down: 'Du willst mich aufhalten? Erst recht mache ich weiter!' (You want to stop me? Now I'll keep going even more!). This expression captures German directness and determination. Related emphatic phrases: 'um so mehr' (all the more), 'jetzt erst recht' (now more than ever — slightly more colloquial). It's a favorite in motivational contexts and arguments."
+      }
+    ]
   }
 ]
