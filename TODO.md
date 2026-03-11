@@ -44,11 +44,11 @@ Expand all 17 beta language pairs to **105 categories × 15 items = 1,575 items*
 | 8 | french_english | French | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 9 | german_polish | German | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 10 | japanese_english | Japanese | 105/105 | 1575/1575 | 20/20 | ✅ |
-| 11 | polish_arabic | Polish | 77/105 | 1155/1575 | 14/20 | 🔄 |
+| 11 | polish_arabic | Polish | 92/105 | 1380/1575 | 17/20 | 🔄 |
 | 12 | polish_chinese | Polish | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 13 | polish_french | Polish | 105/105 | 1575/1575 | 20/20 | ✅ |
-| 14 | polish_japanese | Polish | 42/105 | 630/1575 | 7/20 | 🔄 |
-| 15 | polish_ukrainian | Polish | 67/105 | 1005/1575 | 12/20 | 🔄 |
+| 14 | polish_japanese | Polish | 67/105 | 1005/1575 | 12/20 | 🔄 |
+| 15 | polish_ukrainian | Polish | 87/105 | 1305/1575 | 16/20 | 🔄 |
 | 16 | ukrainian_english | Ukrainian | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 17 | ukrainian_polish | Ukrainian | 105/105 | 1575/1575 | 21/21 | ✅ |
 
@@ -185,8 +185,8 @@ All 20 batches completed. All 105 categories use correct question/_____/options/
 | 19 | exclamation, double_pronoms, ne_expletif, tout_meme_autre, revision_generale | ✅ |
 | 20 | structures_argumentatives, registre_informel | ✅ |
 
-### polish_japanese — 🔄 IN PROGRESS (42/105 categories, 630 items)
-ID prefixes used: pj_part, pj_verb, pj_adj, pj_neg, pj_q, pj_pol, pj_cnt, pj_te, pj_nadj, pj_loc, pj_time, pj_des, pj_pst, pj_gr, pj_pot, pj_cta, pj_conj, pj_vg, pj_imp, pj_psv, pj_cau, pj_cba, pj_ctr, pj_vol, pj_cmp, pj_sup, pj_adv, pj_nom, pj_rel, pj_quo, pj_hrs, pj_app, pj_obl, pj_per, pj_prh, pj_rkr, pj_rnd, pj_pur, pj_cga, pj_ckd, pj_lst, pj_smn
+### polish_japanese — 🔄 IN PROGRESS (72/105 categories, 1080 items)
+ID prefixes used: pj_part, pj_verb, pj_adj, pj_neg, pj_q, pj_pol, pj_cnt, pj_te, pj_nadj, pj_loc, pj_time, pj_des, pj_pst, pj_gr, pj_pot, pj_cta, pj_conj, pj_vg, pj_imp, pj_psv, pj_cau, pj_cba, pj_ctr, pj_vol, pj_cmp, pj_sup, pj_adv, pj_nom, pj_rel, pj_quo, pj_hrs, pj_app, pj_obl, pj_per, pj_prh, pj_rkr, pj_rnd, pj_pur, pj_cga, pj_ckd, pj_lst, pj_smn, pj_chn, pj_prp, pj_exp, pj_adh, pj_try, pj_tri, pj_cpv, pj_hon, pj_hum, pj_exi, pj_dik, pj_duf, pj_sen, pj_fwr, pj_inf, pj_ono, pj_num, pj_fam, pj_bod, pj_emo, pj_wea, pj_foo, pj_tra, pj_sho, pj_wrk, pj_edu, pj_tec, pj_spo, pj_hou, pj_trn
 
 | Batch | Categories | Status |
 |-------|-----------|--------|
@@ -197,12 +197,12 @@ ID prefixes used: pj_part, pj_verb, pj_adj, pj_neg, pj_q, pj_pol, pj_cnt, pj_te,
 | 5 | nominalizers, relative_clauses, quotation_to, hearsay_sou, appearance_you | ✅ |
 | 6 | obligation_nakereba, permission_temo, prohibition_tewa, reason_kara, reason_node | ✅ |
 | 7 | purpose_tame, contrast_ga, contrast_kedo, listing_tari, simultaneous_nagara | ✅ |
-| 8 | change_naru, preparation_oku, experience_koto, advice_hou_ga_ii, trying_miru | 🔄 |
-| 9 | transitive_intransitive, compound_verbs, honorific_speech, humble_speech, existence_iru_aru | ⬜ |
-| 10 | direction_iku_kuru, duration_frequency, sentence_endings, formal_written, informal_speech | ⬜ |
-| 11 | onomatopoeia, numbers_advanced, family_terms, body_health, emotions_feelings | ⬜ |
-| 12 | weather_seasons, food_cooking, travel_directions, shopping_money, work_office | ⬜ |
-| 13 | education_school, technology, sports_hobbies, housing_home, transport | ⬜ |
+| 8 | change_naru, preparation_oku, experience_koto, advice_hou_ga_ii, trying_miru | ✅ |
+| 9 | transitive_intransitive, compound_verbs, honorific_speech, humble_speech, existence_iru_aru | ✅ |
+| 10 | direction_iku_kuru, duration_frequency, sentence_endings, formal_written, informal_speech | ✅ |
+| 11 | onomatopoeia, numbers_advanced, family_terms, body_health, emotions_feelings | ✅ |
+| 12 | weather_seasons, food_cooking, travel_directions, shopping_money, work_office | ✅ |
+| 13 | education_school, technology, sports_hobbies, housing_home, transport | ✅ |
 | 14 | media_communication, socializing, opinions_arguments, requests_invitations, formal_casual | ⬜ |
 | 15 | idiomatic_expressions, proverbs_sayings, jlpt_n5_patterns, jlpt_n4_patterns, jlpt_n3_patterns | ⬜ |
 | 16 | jlpt_n2_patterns, jlpt_n1_patterns, keigo_review, verb_noun_collocations, adjective_collocations | ⬜ |
@@ -211,8 +211,8 @@ ID prefixes used: pj_part, pj_verb, pj_adj, pj_neg, pj_q, pj_pol, pj_cnt, pj_te,
 | 19 | business_japanese, academic_japanese, newspaper_japanese, classical_remnants, common_mistakes | ⬜ |
 | 20 | register_shifts, environment_nature, arts_culture, science_research, exam_strategies | ⬜ |
 
-### polish_ukrainian — 🔄 IN PROGRESS (67/105 categories, 1005 items)
-ID prefixes used: pu_pres, pu_asp, pu_past, pu_fut, pu_case, pu_prep, pu_vc, pu_pp, pu_pos, pu_dem, pu_neg, pu_qt, pu_imp, pu_cond, pu_ref, pu_gn, pu_pl, pu_adj, pu_comp, pu_sup, pu_advb, pu_advm, pu_nc, pu_no, pu_cb, pu_cs, pu_rp, pu_pas, pu_rs, pu_pca, pu_ppas, pu_vn, pu_vm, pu_pvm, pu_ic, pu_voc, pu_inst, pu_gen, pu_dat, pu_acc, pu_loc, pu_cpc, pu_shc, pu_sr, pu_cc, pu_ws, pu_dim, pu_wfp, pu_wfs, pu_cw, pu_ff, pu_ct, pu_te, pu_df, pu_ad, pu_sm, pu_dtd, pu_dir, pu_tt, pu_fr, pu_sp, pu_hb, pu_wo, pu_es, pu_ti, pu_wc, pu_hh
+### polish_ukrainian — 🔄 IN PROGRESS (87/105 categories, 1305 items)
+ID prefixes used: pu_pres, pu_asp, pu_past, pu_fut, pu_case, pu_prep, pu_vc, pu_pp, pu_pos, pu_dem, pu_neg, pu_qt, pu_imp, pu_cond, pu_ref, pu_gn, pu_pl, pu_adj, pu_comp, pu_sup, pu_advb, pu_advm, pu_nc, pu_no, pu_cb, pu_cs, pu_rp, pu_pas, pu_rs, pu_pca, pu_ppas, pu_vn, pu_vm, pu_pvm, pu_ic, pu_voc, pu_inst, pu_gen, pu_dat, pu_acc, pu_loc, pu_cpc, pu_shc, pu_sr, pu_cc, pu_ws, pu_dim, pu_wfp, pu_wfs, pu_cw, pu_ff, pu_ct, pu_te, pu_df, pu_ad, pu_sm, pu_dtd, pu_dir, pu_tt, pu_fr, pu_sp, pu_hb, pu_wo, pu_es, pu_ti, pu_wc, pu_hh, pu_fam, pu_ef, pu_sh, pu_cf, pu_cd, pu_for, pu_inf, pu_pr, pu_oa, pu_ag, pu_ce, pu_cc2, pu_pur, pu_ch, pu_tc, pu_ip, pu_qt2, pu_em, pu_woa, pu_el
 
 | Batch | Categories | Status |
 |-------|-----------|--------|
@@ -228,11 +228,11 @@ ID prefixes used: pu_pres, pu_asp, pu_past, pu_fut, pu_case, pu_prep, pu_vc, pu_
 | 10 | time_expressions, duration_frequency, age_dates, seasons_months, days_time_of_day | ✅ |
 | 11 | asking_directions, travel_transport, food_restaurant, shopping_prices, health_body | ✅ |
 | 12 | work_office, education_school, technology_internet, weather_climate, housing_home | ✅ |
-| 13 | family_relationships, emotions_feelings, sports_hobbies, clothing_fashion, colors_descriptions | 🔄 |
-| 14 | formal_register, informal_register, polite_requests, opinions_arguments, agreeing_disagreeing | ⬜ |
-| 15 | cause_effect, contrast_concession, purpose_result, condition_hypothesis, temporal_clauses | ⬜ |
-| 16 | indefinite_pronouns, quantifiers, emphatic_constructions, word_order_advanced, ellipsis_patterns | ⬜ |
-| 17 | idiomatic_expressions, proverbs_sayings, collocations, phrasal_equivalents, discourse_markers | ⬜ |
+| 13 | family_relationships, emotions_feelings, sports_hobbies, clothing_fashion, colors_descriptions | ✅ |
+| 14 | formal_register, informal_register, polite_requests, opinions_arguments, agreeing_disagreeing | ✅ |
+| 15 | cause_effect, contrast_concession, purpose_result, condition_hypothesis, temporal_clauses | ✅ |
+| 16 | indefinite_pronouns, quantifiers, emphatic_constructions, word_order_advanced, ellipsis_patterns | ✅ |
+| 17 | idiomatic_expressions, proverbs_sayings, collocations, phrasal_equivalents, discourse_markers | 🔄 |
 | 18 | media_communication, environment_nature, politics_society, arts_culture, science_research | ⬜ |
 | 19 | business_economics, crime_justice, academic_writing, common_errors, exam_strategies | ⬜ |
 | 20 | religion_traditions, revision_mixed, register_shifts | ⬜ |
@@ -473,8 +473,8 @@ ID prefixes used: up_pres, up_case, up_fut, up_ci, up_prep, up_pron, up_pt, up_a
 | 20 | common_errors, cyrillic_challenges, word_stress, register_shifts, revision_mixed | ✅ |
 | 21 | exam_strategies, advanced_grammar_review, final_review | ✅ |
 
-### polish_arabic — 🔄 IN PROGRESS (77/105 categories, 1155 items)
-ID prefixes used: pa_pres, pa_art, pa_past, pa_pr, pa_fut, pa_dual, pa_neg, pa_ga, pa_ns, pa_sm, pa_ppd, pa_pos, pa_prep, pa_dem, pa_num, pa_adja, pa_bp, pa_sp, pa_id, pa_bq, pa_tt, pa_cs, pa_vf1, pa_vf23, pa_vf45, pa_vf67, pa_vf8x, pa_hv, pa_dv, pa_dbv, pa_hz, pa_pva, pa_msdr, pa_ap, pa_pp, pa_kas, pa_ias, pa_acc, pa_gen, pa_nom, pa_cond, pa_rel, pa_imp, pa_subj, pa_jus, pa_n100, pa_ord, pa_comp, pa_tc, pa_adv, pa_opa, pa_hal, pa_tam, pa_exc, pa_voc, pa_oat, pa_rs, pa_pat, pa_tnw, pa_dar, pa_dpa, pa_cn, pa_emv, pa_exf, pa_dim, pa_nsb, pa_vns, pa_top, pa_twk, pa_bdl, pa_5n, pa_dpt, pa_waw, pa_fa, pa_thm, pa_nega, pa_lmn
+### polish_arabic — 🔄 IN PROGRESS (92/105 categories, 1380 items)
+ID prefixes used: pa_pres, pa_art, pa_past, pa_pr, pa_fut, pa_dual, pa_neg, pa_ga, pa_ns, pa_sm, pa_ppd, pa_pos, pa_prep, pa_dem, pa_num, pa_adja, pa_bp, pa_sp, pa_id, pa_bq, pa_tt, pa_cs, pa_vf1, pa_vf23, pa_vf45, pa_vf67, pa_vf8x, pa_hv, pa_dv, pa_dbv, pa_hz, pa_pva, pa_msdr, pa_ap, pa_pp, pa_kas, pa_ias, pa_acc, pa_gen, pa_nom, pa_cond, pa_rel, pa_imp, pa_subj, pa_jus, pa_n100, pa_ord, pa_comp, pa_tc, pa_adv, pa_opa, pa_hal, pa_tam, pa_exc, pa_voc, pa_oat, pa_rs, pa_pat, pa_tnw, pa_dar, pa_dpa, pa_cn, pa_emv, pa_exf, pa_dim, pa_nsb, pa_vns, pa_top, pa_twk, pa_bdl, pa_5n, pa_dpt, pa_waw, pa_fa, pa_thm, pa_nega, pa_lmn, pa_man, pa_lls, pa_qp, pa_exp, pa_rp, pa_fma, pa_ma, pa_la, pa_qg, pa_ie, pa_ps, pa_ce, pa_ff, pa_tv, pa_fr
 
 | Batch | Categories | Status |
 |-------|-----------|--------|
@@ -492,9 +492,9 @@ ID prefixes used: pa_pres, pa_art, pa_past, pa_pr, pa_fut, pa_dual, pa_neg, pa_g
 | 12 | emphatic_verbs, exclamatory_form, diminutive_form, nisba_adjective, verbal_vs_nominal_sentences | ✅ |
 | 13 | topicalization, emphasis_tawkid, badal_apposition, five_nouns, diptote_nouns | ✅ |
 | 14 | waw_conjunction, fa_conjunction, thumma_conjunction, negation_advanced, lam_negation | ✅ |
-| 15 | maa_negation, lan_laysa, question_particles, exclamation_particles, restriction_particles | ⬜ |
-| 16 | formal_arabic, media_arabic, literary_arabic, quran_grammar_basics, idiomatic_expressions_ar | ⬜ |
-| 17 | proverbs_sayings_ar, common_errors_polish, false_friends_ar, travel_vocabulary_ar, food_restaurant_ar | ⬜ |
+| 15 | maa_negation, lan_laysa, question_particles, exclamation_particles, restriction_particles | ✅ |
+| 16 | formal_arabic, media_arabic, literary_arabic, quran_grammar_basics, idiomatic_expressions_ar | ✅ |
+| 17 | proverbs_sayings_ar, common_errors_polish, false_friends_ar, travel_vocabulary_ar, food_restaurant_ar | ✅ |
 | 18 | health_body_ar, work_office_ar, technology_internet_ar, environment_nature_ar, education_learning_ar | ⬜ |
 | 19 | sports_hobbies_ar, feelings_emotions_ar, weather_climate_ar, shopping_money_ar, housing_home_ar | ⬜ |
 | 20 | transport_directions_ar, media_communication_ar, exam_strategies_ar | ⬜ |
@@ -523,6 +523,333 @@ ID prefixes used: pa_pres, pa_art, pa_past, pa_pr, pa_fut, pa_dual, pa_neg, pa_g
 Covers: tenses, articles, pronouns, prepositions, ser/estar distinctions, subjunctive, commands, conditionals, passive voice, comparatives, reflexive verbs, idioms, question words, formal/informal register, workplace language, emotions, travel, food, discourse markers, verb patterns, etc.
 
 Each beta pair should adapt this breadth to its own language pair's grammar.
+
+---
+
+---
+
+# Flashcard Content Expansion - Full Parity TODO
+
+## Objective
+Expand all 18 beta language pairs to **100+ categories × 15 items = 1,500+ items** each, matching the main pairs.
+
+## Current State
+- **7 MAIN pairs**: 90-135 categories each (1,350-2,025 items), all 15 items/category ✅
+- **18 BETA pairs**: 20-21 categories each (200-210 items), only 10 items/category — need **~80+ more categories** each AND items upgraded from 10→15 per category
+
+## Scale
+- Total new categories needed: **~1,440+** (18 beta pairs × ~80 categories each)
+- Existing beta items need upgrade: 10→15 items per category (existing 21 categories × 5 extra items × 18 pairs = 1,890 items)
+- Total new items for new categories: **~21,600+** (1,440 categories × 15 items)
+- Target total: ~30,000+ flashcard items across all 25 pairs
+
+## FORMAT RULES
+**All flashcard items MUST follow this JSON structure:**
+```json
+{
+  "id": "unique_id",
+  "front": "Word in source language",
+  "back": "Translation in target language",
+  "difficulty": "easy|medium|hard",
+  "example": "Example sentence using the word (in target language)",
+  "exampleTranslation": "Translation of example (in source language)"
+}
+```
+- `id`: Unique within the entire file — use prefix pattern like `<pair_abbrev>_<category>_<number>`
+- `front`: Word/phrase in the source (native) language
+- `back`: Translation in the target (learning) language
+- `difficulty`: One of `"easy"`, `"medium"`, `"hard"` — distribute ~6 easy, 6 medium, 3 hard per category
+- `example`: **Required** — full example sentence using the word in the target language
+- `exampleTranslation`: **Required** — translation of the example in the source language
+
+**Category structure:**
+```json
+{
+  "key": "unique_category_key",
+  "name": "Display Name (in source language)",
+  "description": "Brief description (in source language)",
+  "iconName": "SFSymbol_name",
+  "color": "#hex_color",
+  "level": "beginner|intermediate|advanced",
+  "items": [ /* 15 FlashcardWord items */ ]
+}
+```
+- `level`: Distribute categories across beginner (~35%), intermediate (~50%), advanced (~15%)
+
+## Status Legend
+- ⬜ Not started | 🔄 In progress | ✅ Complete
+
+## Approach
+- Process one language pair at a time
+- **Max 5 categories per script** at `/tmp/` (atomic, manageable batches)
+- Each batch script appends categories to JSON, validates IDs, and reports count
+- Categories are tailored to each language pair's vocabulary domains
+- 15 items per category, all with examples and example translations
+- Each pair needs ~16 batch scripts (~80 new categories ÷ 5 = ~16 batches) + 1 batch for upgrading existing 21 cats from 10→15 items
+
+## Phase 1: Upgrade Existing Beta Categories (10→15 items)
+Before adding new categories, upgrade existing 20-21 categories from 10 to 15 items each.
+
+| # | Pair | Current Cats | Current Items | Items After Upgrade | Status |
+|---|------|-------------|--------------|-------------------|--------|
+| 1 | arabic_english | 21 | 210 | 315 | ⬜ |
+| 2 | chinese_english | 21 | 210 | 315 | ⬜ |
+| 3 | english_arabic | 21 | 210 | 315 | ⬜ |
+| 4 | english_chinese | 21 | 210 | 315 | ⬜ |
+| 5 | english_french | 21 | 210 | 315 | ⬜ |
+| 6 | english_german | 20 | 200 | 300 | ⬜ |
+| 7 | english_japanese | 21 | 210 | 315 | ⬜ |
+| 8 | english_polish | 21 | 210 | 315 | ⬜ |
+| 9 | french_english | 21 | 210 | 315 | ⬜ |
+| 10 | german_polish | 21 | 210 | 315 | ⬜ |
+| 11 | japanese_english | 21 | 210 | 315 | ⬜ |
+| 12 | polish_arabic | 21 | 210 | 315 | ⬜ |
+| 13 | polish_chinese | 21 | 210 | 315 | ⬜ |
+| 14 | polish_french | 21 | 210 | 315 | ⬜ |
+| 15 | polish_japanese | 21 | 210 | 315 | ⬜ |
+| 16 | polish_ukrainian | 20 | 200 | 300 | ⬜ |
+| 17 | ukrainian_english | 20 | 200 | 300 | ⬜ |
+| 18 | ukrainian_polish | 20 | 200 | 300 | ⬜ |
+
+## Phase 2: Add New Categories (target ~100 total per pair)
+
+| # | Pair | Front Lang | Cats | Items | Target Cats | Target Items | Batches | Status |
+|---|------|-----------|------|-------|------------|-------------|---------|--------|
+| 1 | arabic_english | Arabic | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 2 | chinese_english | Chinese | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 3 | english_arabic | English | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 4 | english_chinese | English | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 5 | english_french | English | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 6 | english_german | English | 20/100 | 200/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 7 | english_japanese | English | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 8 | english_polish | English | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 9 | french_english | French | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 10 | german_polish | German | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 11 | japanese_english | Japanese | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 12 | polish_arabic | Polish | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 13 | polish_chinese | Polish | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 14 | polish_french | Polish | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 15 | polish_japanese | Polish | 21/100 | 210/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 16 | polish_ukrainian | Polish | 20/100 | 200/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 17 | ukrainian_english | Ukrainian | 20/100 | 200/1500 | 100 | 1500 | 0/16 | ⬜ |
+| 18 | ukrainian_polish | Ukrainian | 20/100 | 200/1500 | 100 | 1500 | 0/16 | ⬜ |
+
+## Main Pairs (Complete - Reference)
+
+| Pair | Cats | Items | Items/Cat | Status |
+|------|------|-------|----------|--------|
+| english_spanish | 133 | 1994 | 15 | ✅ |
+| german_english | 90 | 1350 | 15 | ✅ |
+| german_spanish | 100 | 1500 | 15 | ✅ |
+| polish_english | 116 | 1739 | 15 | ✅ |
+| polish_german | 112 | 1680 | 15 | ✅ |
+| polish_spanish | 135 | 2025 | 15 | ✅ |
+| spanish_english | 113 | 1695 | 15 | ✅ |
+
+## Existing Beta Categories (21 categories present in all beta pairs)
+These serve as the baseline and need to be expanded from 10→15 items each:
+1. greetings (beginner)
+2. family (beginner)
+3. numbers (beginner)
+4. colors (beginner)
+5. food (beginner)
+6. house (beginner)
+7. places (beginner)
+8. clothing (beginner)
+9. work (intermediate)
+10. transport (intermediate)
+11. education (intermediate)
+12. nature (intermediate)
+13. emotions (intermediate)
+14. time (beginner)
+15. weather (beginner)
+16. body (intermediate)
+17. activities (intermediate)
+18. learning (advanced)
+19. sports (intermediate)
+20. travel (advanced)
+21. entertainment (advanced)
+
+## New Categories to Add (~79 per pair, tailored to language pair)
+Reference: polish_spanish has 135 categories. Target domains for new categories:
+
+**Beginner (~25 new):** fruits, vegetables, animals, drinks, seasons, daily_routine, meals, desserts, conversations, questions_asking, accessories, pets_animals, beach_sea, everyday_objects, school_supplies, containers_packaging, common_actions, shapes_geometry, measurements_sizes, opposites, leisure_free_time, cafe_coffee, cleaning_housework, bedroom_sleep, children_babies
+
+**Intermediate (~45 new):** professions, restaurant, health, city, hobbies, technology, cooking, office, directions, computers_internet, reading_books, movies_cinema, music_instruments, art_creativity, goals_dreams, friendship, feelings_moods, celebrations, money_shopping, garden_plants, mountains_hiking, mail_post, time_expressions, social_relationships, speed_pace, car_driving, holidays_traditions, music_dance, doctor_medical, beauty_cosmetics, relationships_love, phone_communication, religion_spirituality, problems_solutions, describing_people, apartment_living, personality_traits, learning_education, tools_diy, documents_forms, safety_emergencies, banking_services, nature_environment, internet_technology, professions_jobs
+
+**Advanced (~9 new):** ideas_creativity, opinions_beliefs, work_office_advanced, energy_power, social_gatherings, materials_substances, special_occasions, personality_character, opinions_thoughts
+
+## Quality Criteria
+1. All fields required: `id`, `front`, `back`, `difficulty`, `example`, `exampleTranslation`
+2. `front` in source language, `back` in target language
+3. `example` sentence must use the target-language word in context
+4. `exampleTranslation` must accurately translate the example to source language
+5. No duplicate IDs within or across categories
+6. 15 items per category, difficulty distributed: ~6 easy, ~6 medium, ~3 hard
+7. Progressive difficulty: beginner → intermediate → advanced categories
+8. Categories tailored to source→target language pair vocabulary
+
+---
+
+---
+
+# Wordbuilder Content Expansion - Full Parity TODO
+
+## Objective
+Create wordbuilder content for all 25 language pairs with **30+ categories × 15 items = 450+ items** each. Currently only english_spanish has content (6 categories, 90 items).
+
+## Current State
+- **1 pair has content**: english_spanish — 6 categories, 90 items (5 beginner, 1 intermediate)
+- **24 pairs have NO content**: No wordbuilder JSON files exist
+- **english_spanish is also incomplete**: needs expansion from 6→30+ categories
+
+## Scale
+- Files to create: **24** new wordbuilder JSON files
+- english_spanish expansion: 24+ new categories (360+ items)
+- New pair content: 24 pairs × 30 categories × 15 items = **10,800 items**
+- Total target: ~11,250+ items across all 25 pairs
+
+## FORMAT RULES
+**All wordbuilder items MUST follow this JSON structure:**
+```json
+{
+  "word": "target_language_word",
+  "hint": "Translation/clue in source language"
+}
+```
+- `word`: The word in the **target language** that the player must spell by arranging scrambled letters
+- `hint`: Translation or clue in the **source language** shown to the player
+- Note: `id` is derived from `word` automatically (no explicit `id` field needed)
+- Answer validation is **case-insensitive** in the game
+
+**Category structure:**
+```json
+{
+  "key": "unique_category_key",
+  "name": "Display Name (in source language)",
+  "description": "Brief description (in source language)",
+  "iconName": "sf_symbol_name",
+  "color": "#hex_color",
+  "level": "beginner|intermediate|advanced",
+  "items": [ /* 15 WordBuilderWord items */ ]
+}
+```
+- `level`: Distribute across beginner (~40%), intermediate (~45%), advanced (~15%)
+- Words should be appropriate length for letter-scramble gameplay (4-12 letters ideal)
+- Avoid words that are too short (<3 letters) — not enough scramble challenge
+- Avoid words that are too long (>15 letters) — UI grid max ~8 columns, long words harder to interact with
+
+**File naming:** `wordbuilder_<source>_<target>.json` (flat naming convention)
+
+## Status Legend
+- ⬜ Not started | 🔄 In progress | ✅ Complete
+
+## Approach
+- Process one language pair at a time
+- **Max 5 categories per script** at `/tmp/` (atomic, manageable batches)
+- Each batch script creates/appends categories to JSON, validates, and reports count
+- Categories tailored to each language pair's vocabulary
+- 15 items per category, words of appropriate length for scramble gameplay
+- Each pair needs ~6 batch scripts (30 categories ÷ 5 = 6 batches)
+- Consider script complexity: non-Latin scripts (Arabic, Chinese, Japanese, Ukrainian) need special attention for letter scrambling
+
+## Phase 1: Expand english_spanish (Reference Pair)
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 0 | (existing 6: fruits, vegetables, colors_wb, family_wb, animals, body_parts) | ✅ |
+| 1 | greetings, numbers_wb, food_wb, clothing_wb, house_rooms | ⬜ |
+| 2 | weather_wb, time_wb, professions_wb, transport_wb, school_wb | ⬜ |
+| 3 | kitchen_utensils, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ⬜ |
+| 4 | technology_wb, office_wb, health_medical, travel_wb, hobbies_wb | ⬜ |
+| 5 | drinks_beverages, desserts_sweets, furniture_wb, tools_wb, materials_wb | ⬜ |
+
+## Phase 2: Create All Missing Language Pairs
+
+### Main Pairs (6 missing — no wordbuilder file)
+
+| # | Pair | Hint Lang | Word Lang | Cats | Items | Target Cats | Target Items | Status |
+|---|------|----------|----------|------|-------|------------|-------------|--------|
+| 1 | german_english | German | English | 0 | 0 | 30 | 450 | ⬜ |
+| 2 | german_spanish | German | Spanish | 0 | 0 | 30 | 450 | ⬜ |
+| 3 | polish_english | Polish | English | 0 | 0 | 30 | 450 | ⬜ |
+| 4 | polish_german | Polish | German | 0 | 0 | 30 | 450 | ⬜ |
+| 5 | polish_spanish | Polish | Spanish | 0 | 0 | 30 | 450 | ⬜ |
+| 6 | spanish_english | Spanish | English | 0 | 0 | 30 | 450 | ⬜ |
+
+### Beta Pairs (18 missing — no wordbuilder file)
+
+| # | Pair | Hint Lang | Word Lang | Cats | Items | Target Cats | Target Items | Status |
+|---|------|----------|----------|------|-------|------------|-------------|--------|
+| 1 | arabic_english | Arabic | English | 0 | 0 | 30 | 450 | ⬜ |
+| 2 | chinese_english | Chinese | English | 0 | 0 | 30 | 450 | ⬜ |
+| 3 | english_arabic | English | Arabic | 0 | 0 | 30 | 450 | ⬜ |
+| 4 | english_chinese | English | Chinese | 0 | 0 | 30 | 450 | ⬜ |
+| 5 | english_french | English | French | 0 | 0 | 30 | 450 | ⬜ |
+| 6 | english_german | English | German | 0 | 0 | 30 | 450 | ⬜ |
+| 7 | english_japanese | English | Japanese | 0 | 0 | 30 | 450 | ⬜ |
+| 8 | english_polish | English | Polish | 0 | 0 | 30 | 450 | ⬜ |
+| 9 | french_english | French | English | 0 | 0 | 30 | 450 | ⬜ |
+| 10 | german_polish | German | Polish | 0 | 0 | 30 | 450 | ⬜ |
+| 11 | japanese_english | Japanese | English | 0 | 0 | 30 | 450 | ⬜ |
+| 12 | polish_arabic | Polish | Arabic | 0 | 0 | 30 | 450 | ⬜ |
+| 13 | polish_chinese | Polish | Chinese | 0 | 0 | 30 | 450 | ⬜ |
+| 14 | polish_french | Polish | French | 0 | 0 | 30 | 450 | ⬜ |
+| 15 | polish_japanese | Polish | Japanese | 0 | 0 | 30 | 450 | ⬜ |
+| 16 | polish_ukrainian | Polish | Ukrainian | 0 | 0 | 30 | 450 | ⬜ |
+| 17 | ukrainian_english | Ukrainian | English | 0 | 0 | 30 | 450 | ⬜ |
+| 18 | ukrainian_polish | Ukrainian | Polish | 0 | 0 | 30 | 450 | ⬜ |
+
+## Special Considerations for Non-Latin Script Pairs
+
+### Arabic target (english_arabic, polish_arabic)
+- Arabic letters connect differently based on position — scrambled letters must be individual Unicode characters
+- Words should use common Arabic vocabulary (4-10 characters)
+- Right-to-left rendering handled by iOS; ensure words display correctly when scrambled
+
+### Chinese target (english_chinese, polish_chinese)
+- Chinese characters are individual units — each "letter" tile is one character
+- Words are typically 2-4 characters (ideal for wordbuilder)
+- Use common vocabulary HSK 1-4 level words
+- Pinyin could be included in hint for learner support
+
+### Japanese target (english_japanese, polish_japanese)
+- Use hiragana/katakana words primarily (scrambling kanji individual strokes is not practical)
+- Katakana loanwords are excellent candidates (borrowed from English/other languages)
+- Words typically 3-8 characters in kana
+- Consider mixing hiragana vocabulary and katakana loanwords across categories
+
+### Ukrainian target (polish_ukrainian, ukrainian_polish — Cyrillic)
+- Cyrillic letters work well for scrambling (individual characters like Latin)
+- Words 4-12 characters — similar approach to Latin-script pairs
+- Leverage Polish-Ukrainian cognates where appropriate
+
+## Existing english_spanish Categories (Reference)
+1. fruits (beginner) — 15 items: manzana, naranja, plátano, fresa, uva, limón, sandía, melocotón, cereza, piña, pera, mango, kiwi, coco, ciruela
+2. vegetables (beginner) — 15 items: tomate, cebolla, lechuga, zanahoria, patata, ajo, pepino, pimiento, espinaca, brócoli, maíz, guisante, champiñón, berenjena, calabaza
+3. colors_wb (beginner) — 15 items: rojo, azul, verde, amarillo, negro, blanco, naranja, morado, rosa, marrón, gris, dorado, plateado, celeste, oscuro
+4. family_wb (beginner) — 15 items: madre, padre, hermana, hermano, abuela, abuelo, hijo, hija, primo, sobrino, sobrina, esposo, esposa, cuñado, suegra
+5. animals (beginner) — 15 items: perro, gato, caballo, pájaro, pez, vaca, cerdo, conejo, tortuga, mariposa, león, elefante, mono, oso, ratón
+6. body_parts (intermediate) — 15 items: cabeza, brazo, pierna, mano, pie, ojo, nariz, boca, oreja, dedo, corazón, espalda, rodilla, hombro, cuello
+
+## Target Category Template (30 categories per pair)
+Categories should cover these vocabulary domains:
+
+**Beginner (~12 categories):** fruits, vegetables, colors, family, animals, body_parts, numbers, greetings, food, clothing, house_rooms, weather
+
+**Intermediate (~13 categories):** professions, transport, school, kitchen_utensils, sports, music_instruments, nature, emotions, technology, office, health_medical, travel, hobbies
+
+**Advanced (~5 categories):** drinks_beverages, desserts_sweets, furniture, tools, materials
+
+## Quality Criteria
+1. All items require: `word` (target language), `hint` (source language translation)
+2. Word length: 3-15 characters (4-12 ideal for scramble gameplay)
+3. No duplicate words within a category or across categories in the same file
+4. 15 items per category
+5. Words must be real, commonly-used vocabulary in the target language
+6. Hints should be clear, single-word or short-phrase translations
+7. For non-Latin scripts: ensure individual character splitting works correctly for the scramble mechanic
+8. Progressive difficulty across categories: simpler/shorter words in beginner, longer/complex in advanced
 
 ---
 *Last updated: 2025-07-15*

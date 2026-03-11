@@ -15783,5 +15783,3080 @@
         "explanation": "FUNDAMENTALNA tabela: 1) لَمْ (przeszłość-) → مجزوم (يفعلْ — sukun): لَمْ يذهبْ. 2) لَمَّا (jeszcze nie) → مجزوم: لَمَّا يصلْ. 3) لَنْ (przyszłość-) → منصوب (يفعلَ — fatha): لَنْ يذهبَ. 4) لَا الناهية (zakaz) → مجزوم: لَا تذهبْ. 5) لَا النافية (negacja teraź.) → مرفوع (بدون تأثير): لَا يذهبُ. 5 partykuł — 3 tryby — kluczowe dla poprawnego arabskiego!"
       }
     ]
+  },
+  {
+    "key": "maa_negation",
+    "name": "Negacja z مَا (ما النافية)",
+    "description": "استخدامات ما النافية في الجمل العربية",
+    "iconName": "xmark.square",
+    "color": "#fbbf24",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pa_man1",
+        "question": "_____ ذهبَ إلى المدرسة (On NIE poszedł do szkoły)",
+        "translation": "(On nie poszedł do szkoły)",
+        "options": [
+          "مَا",
+          "لَمْ",
+          "لَنْ",
+          "لَا"
+        ],
+        "correct": "مَا",
+        "explanation": "Poprawnie: 'مَا ذهبَ' (mā dhahaba) = nie poszedł. مَا + czas przeszły = negacja przeszłości. W odróżnieniu od لَمْ: مَا nie zmienia trybu czasownika — łączy się z formą przeszłą bez modyfikacji. Porównaj: مَا ذهبَ (مَا + przeszły) vs لَمْ يذهبْ (لَمْ + teraźniejszy مجزوم). Oba znaczą 'nie poszedł', ale مَا jest prostsza gramatycznie i częstsza w mowie potocznej."
+      },
+      {
+        "id": "pa_man2",
+        "question": "مَا في 'مَا أجملَ السماءَ!' jest:",
+        "translation": "(ما نوع ما في ما أجمل السماء؟)",
+        "options": [
+          "مَا التعجبية (wykrzyknikowa = Jakże piękne niebo!)",
+          "مَا النافية (negacja)",
+          "مَا الاستفهامية (pytanie)",
+          "مَا الموصولة (względna)"
+        ],
+        "correct": "مَا التعجبية (wykrzyknikowa = Jakże piękne niebo!)",
+        "explanation": "UWAGA: nie każde مَا jest negacją! 'مَا أجملَ السماءَ!' = Jakże piękne (jest) niebo! To مَا التعجبية (taʿajjubiyya) = wykrzyknikowa. Wzorzec: مَا أَفْعَلَ + dopełnienie w bierniku. Inne مَا: مَا النافية (nie), مَا الاستفهامية (co?), مَا الموصولة (co/to, co), مَا المصدرية (dopóki/że). Kontekst rozstrzyga — مَا to najbardziej wielofunkcyjne słowo w arabskim!"
+      },
+      {
+        "id": "pa_man3",
+        "question": "مَا w 'مَا هذا؟' jest:",
+        "translation": "(ما نوع ما في ما هذا؟)",
+        "options": [
+          "مَا الاستفهامية (pytająca = Co to?)",
+          "مَا النافية (negacja)",
+          "مَا التعجبية (wykrzyknik)",
+          "مَا الموصولة (względna)"
+        ],
+        "correct": "مَا الاستفهامية (pytająca = Co to?)",
+        "explanation": "مَا الاستفهامية (istifhāmiyya) = مَا pytająca: 'مَا هذا؟' = Co to? Reguła odróżniania: مَا + zdanie pytające (bez czasownika negowanego) = pytanie. مَا + czas przeszły = negacja. مَا + أَفْعَلَ + biernik = wykrzyknik. Inna reguła: مَا الاستفهامية w إضافة traci alif: عَمَّ (= عَنْ + مَا = o co?), فِيمَ (= في + مَا = w czym?), لِمَ (= لِ + مَا = dlaczego?)."
+      },
+      {
+        "id": "pa_man4",
+        "question": "مَا w 'أعجبني مَا كتبتَ' jest:",
+        "translation": "(ما نوع ما في أعجبني ما كتبت؟)",
+        "options": [
+          "مَا الموصولة (względna = to, CO napisałeś)",
+          "مَا النافية (negacja)",
+          "مَا الاستفهامية (pytanie)",
+          "مَا التعجبية (wykrzyknik)"
+        ],
+        "correct": "مَا الموصولة (względna = to, CO napisałeś)",
+        "explanation": "مَا الموصولة (mawṣūla) = مَا zaimek względny: 'أعجبني مَا كتبتَ' = Spodobało mi się TO, CO napisałeś. مَا الموصولة = الذي (to, co). Reguły: مَا + zdanie z czasownikiem w przeszłym = مَا الموصولة (jeśli nie stoi na początku). مَا + zdanie twierdzące (po czasowniku) = najczęściej موصولة. Porównaj: مَا في الكتاب (to, co w książce) — bez czasownika, ale domyślny."
+      },
+      {
+        "id": "pa_man5",
+        "question": "مَا w dialekcie: 'ما بَعْرَفْش' (lewantyjski) = :",
+        "translation": "(ما معنى ما بعرفش؟)",
+        "options": [
+          "Nie wiem (negacja dialektalna)",
+          "Co wiem?",
+          "Jakże wiem!",
+          "To, co wiem"
+        ],
+        "correct": "Nie wiem (negacja dialektalna)",
+        "explanation": "W dialektach lewantyjskich: ما + ب + czasownik + ش = negacja. 'ما بَعْرَفْش' = Nie wiem. ب = prefiks teraźniejszości (dialektalny), ش = wzmocnienie negacji (od شَيْء). W MSA: لا أعرفُ. Dialektalne systemy negacji: 1) Egipski: ما...ش (ما بيعرفش), 2) Lewantyjski: ما...ش (ما بيعرف / ما بعرفش), 3) Marokański: ما...ش (ما كنعرفش). Wszystkie z circumfixem ما...ش."
+      },
+      {
+        "id": "pa_man6",
+        "question": "مَا المصدرية w 'سأدرسُ مَا دمتُ حياً' znaczy:",
+        "translation": "(ما معنى ما المصدرية هنا؟)",
+        "options": [
+          "Będę studiował, DOPÓKI żyję (ما = dopóki)",
+          "Będę studiował to, CO studiowałem",
+          "Nie będę studiował",
+          "Co studiowałem?"
+        ],
+        "correct": "Będę studiował, DOPÓKI żyję (ما = dopóki)",
+        "explanation": "مَا المصدرية الظرفية = مَا masdarowa-okolicznikowa: 'مَا دمتُ' = dopóki trwam = dopóki żyję. مَا + دَامَ = مَا دَامَ = dopóki. To STAŁA konstrukcja — مَا nie jest tu negacją ani pytaniem, lecz tworzy MASDAR OKOLICZNIKOWY (ما + فعل = masdar). Inne: مَا استطعتُ = dopóki mogę/jak mogę. W polskim: 'dopóki/jak długo'. To kolejna funkcja مَا!"
+      },
+      {
+        "id": "pa_man7",
+        "question": "مَا الحجازية w 'مَا هذا بشراً' (Koran) działa jak:",
+        "translation": "(ما عمل ما الحجازية؟)",
+        "options": [
+          "Jak لَيْسَ (podmiot w mianowniku, orzecznik w bierniku)",
+          "Jak إنَّ",
+          "Jak كَانَ",
+          "Bez wpływu na składnię"
+        ],
+        "correct": "Jak لَيْسَ (podmiot w mianowniku, orzecznik w bierniku)",
+        "explanation": "مَا الحجازية (ḥijāziyya) = مَا w dialekcie Hidżazu (Mekka) — działa jak لَيْسَ: podmiot w مرفوع, orzecznik w منصوب. 'مَا هذا بشراً' (Koran) = To nie (jest) człowiekiem (بشراً w bierniku!). W dialekcie Nadżdu (tamīmiyya): مَا NIE wpływa na składnię — مَا هذا بشرٌ (mianownik). To słynny spór plemienny w gramatyce arabskiej. MSA akceptuje obie wersje."
+      },
+      {
+        "id": "pa_man8",
+        "question": "Ile głównych funkcji ma مَا w arabskim?",
+        "translation": "(كم وظيفة رئيسية لـ ما؟)",
+        "options": [
+          "Co najmniej 7",
+          "Tylko 2 (negacja i pytanie)",
+          "Tylko 1 (negacja)",
+          "Dokładnie 4"
+        ],
+        "correct": "Co najmniej 7",
+        "explanation": "مَا ma CO NAJMNIEJ 7 funkcji: 1) نافية (negacja: ما ذهب), 2) استفهامية (pytanie: ما هذا؟), 3) تعجبية (wykrzyknik: ما أجمل!), 4) موصولة (zaimek wzgl.: ما كتبت), 5) مصدرية (masdarowa: ما دمت), 6) زائدة (wtrącone/emfatyczne: إنّما, كَمَا), 7) حجازية (jak ليس). Niektórzy gramatycy wyróżniają jeszcze więcej! مَا to najwszechstronniejsze słowo arabskie."
+      },
+      {
+        "id": "pa_man9",
+        "question": "إنَّما w 'إنَّمَا الأعمالُ بالنيّات' — مَا tu jest:",
+        "translation": "(ما نوع ما في إنَّما؟)",
+        "options": [
+          "مَا الكافة (hamująca — blokuje عمل إنَّ)",
+          "مَا النافية",
+          "مَا الاستفهامية",
+          "مَا الموصولة"
+        ],
+        "correct": "مَا الكافة (hamująca — blokuje عمل إنَّ)",
+        "explanation": "مَا الكافة (kāffa) = مَا hamująca/blokująca. Gdy مَا dołączy do إنَّ → إنَّمَا: إنَّ traci zdolność rządzenia bierniku! 'إنَّمَا الأعمالُ بالنيّات' = Zaprawdę uczynki (są) według intencji. الأعمالُ w MIANOWNIKU (nie bierniku jak po إنَّ). مَا الكافة 'hamuje' (كفّ) wpływ إنَّ na składnię. Znaczenie: إنَّمَا = doprawdy/oto/tylko. Hadis Proroka — jeden z najsłynniejszych."
+      },
+      {
+        "id": "pa_man10",
+        "question": "مَا + czas teraźniejszy: 'مَا يكتبُ الآن' znaczy:",
+        "translation": "(ما معنى ما يكتبُ الآن؟)",
+        "options": [
+          "On NIE pisze teraz",
+          "Co pisze teraz?",
+          "On pisał",
+          "On nie napisał"
+        ],
+        "correct": "On NIE pisze teraz",
+        "explanation": "مَا + czas teraźniejszy = negacja TERAŹNIEJSZOŚCI (rzadsze niż z przeszłym). 'مَا يكتبُ الآن' = Nie pisze teraz. Porównaj: لَا يكتبُ (też = nie pisze — częstsza forma). مَا z teraźniejszym jest bardziej literacka/archaiczna. Standardowo: مَا + przeszły = negacja przeszłości, لَا + teraźniejszy = negacja teraźniejszości. Ale مَا z teraźniejszym jest poprawne i spotykane w klasycznych tekstach."
+      },
+      {
+        "id": "pa_man11",
+        "question": "W zdaniu: مَا كتبتُ الرسالةَ — podmiot (فاعل) to:",
+        "translation": "(ما الفاعل في ما كتبتُ الرسالة؟)",
+        "options": [
+          "Zaimek ukryty w تُ (ja)",
+          "الرسالة (list)",
+          "مَا",
+          "كتب"
+        ],
+        "correct": "Zaimek ukryty w تُ (ja)",
+        "explanation": "Podmiot to -تُ (ja) — końcówka osobowa 1. os. l. poj. مَا to partykuła negująca — NIE jest podmiotem ani żadnym członem zdania. الرسالةَ to dopełnienie bliższe (مفعول به) w bierniku. Analiza: مَا (negacja) + كتبتُ (orzeczenie z podmiotem = ja) + الرسالةَ (dopełnienie). مَا nie wpływa na składnię zdania (w wariancie tamīmiyya) — tylko dodaje negację znaczeniową."
+      },
+      {
+        "id": "pa_man12",
+        "question": "مَا w 'كَمَا قلتُ' jest:",
+        "translation": "(ما نوع ما في كما قلتُ؟)",
+        "options": [
+          "مَا المصدرية (= jak powiedziałem)",
+          "مَا النافية",
+          "مَا الاستفهامية",
+          "مَا الموصولة"
+        ],
+        "correct": "مَا المصدرية (= jak powiedziałem)",
+        "explanation": "كَمَا = كَ (jak) + مَا المصدرية. 'كَمَا قلتُ' = Jak powiedziałem. مَا المصدرية tworzy masdar z zdania: مَا قلتُ = moje powiedzenie. كَ (porównanie) + masdar = jak powiedzenie = jak powiedziałem. Inne z مَا المصدرية: بَعْدَ مَا (po tym jak), قَبْلَ مَا (przed tym jak — dialektalne). W polskim: 'jak' — jedno słowo, w arabskim: كَ + مَا."
+      },
+      {
+        "id": "pa_man13",
+        "question": "مَا في 'مهما فعلتَ' pochodzi od:",
+        "translation": "(ما أصل مهما؟)",
+        "options": [
+          "مَا + مَهْ (cokolwiek — مَا الشرطية)",
+          "مَهْ + مَا (dwa różne słowa)",
+          "مَا النافية",
+          "مَا الاستفهامية"
+        ],
+        "correct": "مَا + مَهْ (cokolwiek — مَا الشرطية)",
+        "explanation": "مَهْمَا (mahmā) = cokolwiek — od مَا الشرطية (warunkowa). 'مَهْمَا فعلتَ' = Cokolwiek zrobisz. Etymologia: مَهْ (wykrzyknik: dość!) + مَا (co) → مَهْمَا (cokolwiek). To مَا الشرطية = مَا warunkowa — KOLEJNA funkcja مَا! Konstrukcja: مَهْمَا + przeszły/teraźn. مجزوم + odpowiedź. W polskim: 'cokolwiek/bez względu na to, co'. Razem z مَنْ (ktokolwiek)."
+      },
+      {
+        "id": "pa_man14",
+        "question": "Jak odróżnić مَا النافية od مَا الموصولة w tekście bez taszkilowania?",
+        "translation": "(كيف نُميّز ما النافية من ما الموصولة؟)",
+        "options": [
+          "Kontekst: مَا + przeszły na początku = negacja; مَا po czasowniku/przyimku = względna",
+          "Nie da się odróżnić",
+          "مَا النافية zawsze na końcu",
+          "مَا الموصولة ma szaddę"
+        ],
+        "correct": "Kontekst: مَا + przeszły na początku = negacja; مَا po czasowniku/przyimku = względna",
+        "explanation": "Reguły rozpoznawania: 1) مَا NA POCZĄTKU + czas przeszły = zwykle negacja: مَا ذهب (nie poszedł). 2) مَا PO czasowniku/przyimku = zwykle względna: رأيت ما كتبت (widziałem to, co napisałeś), بِمَا أمر (z tym, co nakazał). 3) مَا + أَفْعَلَ = wykrzyknik: مَا أجمل! 4) مَا + ? = pytanie: مَا هذا? Kontekst jest KRÓLEM arabskiej gramatyki!"
+      },
+      {
+        "id": "pa_man15",
+        "question": "Która z tych مَا jest NEGACJĄ?",
+        "translation": "(أي ما نافية؟)",
+        "options": [
+          "مَا سافرَ (nie podróżował)",
+          "مَا أجملَ! (jakże piękne!)",
+          "مَا هذا؟ (co to?)",
+          "مَا كتبتَهُ (to, co napisałeś)"
+        ],
+        "correct": "مَا سافرَ (nie podróżował)",
+        "explanation": "مَا سافرَ = nie podróżował — مَا النافية + czas przeszły. Rozpoznanie: مَا + czas przeszły + brak wykrzyknika + brak zaimka/przyimka = NEGACJA. مَا أجملَ = wykrzyknik (wzorzec ما أفعلَ). مَا هذا = pytanie (+ zaimek wskazujący). مَا كتبتَهُ = zaimek względny (po nim zdanie z zaimkiem powrotnym -هُ). Cztery مَا — cztery funkcje — jeden wyraz!"
+      }
+    ]
+  },
+  {
+    "key": "lan_laysa",
+    "name": "لَا/لَيْسَ — negacja stanów",
+    "description": "لا ولَيْسَ في نفي الأحوال والصفات",
+    "iconName": "nosign",
+    "color": "#4ade80",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pa_lls1",
+        "question": "_____ الحياةُ سهلةً (Życie NIE jest łatwe)",
+        "translation": "(Życie nie jest łatwe)",
+        "options": [
+          "لَيْسَتِ",
+          "لَا",
+          "مَا",
+          "لَمْ"
+        ],
+        "correct": "لَيْسَتِ",
+        "explanation": "Poprawnie: 'لَيْسَتِ الحياةُ سهلةً' (laysat il-ḥayātu sahla). لَيْسَ + -تِ (bo الحياة jest żeńska). Podmiot الحياةُ w mianowniku, orzecznik سهلةً w bierniku. لَيْسَ działa jak كَانَ: اسم w مرفوع, خبر w منصوب. W polskim: 'Życie nie jest łatwe' — tu 'łatwe' w mianowniku. W arabskim BIERNIK — bo لَيْسَ rządzi biernikiem orzecznika."
+      },
+      {
+        "id": "pa_lls2",
+        "question": "لَيْسَ أحدٌ هنا — znaczy:",
+        "translation": "(ما معنى ليس أحد هنا؟)",
+        "options": [
+          "Nikogo tu nie ma",
+          "Ktoś tu jest",
+          "Ktoś tu nie jest",
+          "Wszyscy tu są"
+        ],
+        "correct": "Nikogo tu nie ma",
+        "explanation": "Poprawnie: لَيْسَ أحدٌ هنا = Nikogo tu nie ma (dosł.: 'Nie-jest ktoś tutaj'). أحد po negacji = nikt. هنا = tutaj (orzecznik okolicznikowy — nie wymaga biernika). لَيْسَ jest tu jak angielskie 'there is not' — negacja istnienia. Porównaj: لا أحدَ هنا (z لا النافية للجنس) — to samo, ale أحدَ w bierniku bez tanwinu. Obie formy poprawne."
+      },
+      {
+        "id": "pa_lls3",
+        "question": "Odmiana لَيْسَ: 'my NIE jesteśmy' = :",
+        "translation": "(نحن + لَيْسَ = ?)",
+        "options": [
+          "لَسْنَا",
+          "لَيْسْنَا",
+          "لَيْسَنَا",
+          "لَسُنَا"
+        ],
+        "correct": "لَسْنَا",
+        "explanation": "Odmiana لَيْسَ: لَيْسَ (on), لَيْسَتْ (ona), لَسْتُ (ja), لَسْتَ (ty m.), لَسْتِ (ty ż.), لَسْنَا (my), لَسْتُمْ (wy m.), لَسْتُنَّ (wy ż.), لَيْسُوا (oni), لَسْنَ (one). Uwaga: z końcówkami spółgłoskowymi (-تُ, -نَا) → لَسْـ (nie لَيْسْـ). To jak كَانَ → كُنْـ. لَيْسَ jest formalnie CZASOWNIKIEM, więc się odmienia przez osoby — choć nie ma czasu teraźniejszego ani rozkaźnika."
+      },
+      {
+        "id": "pa_lls4",
+        "question": "لَا في 'لَا إلهَ إلّا الله' jest:",
+        "translation": "(ما نوع لا في لا إله إلا الله؟)",
+        "options": [
+          "لَا النافية للجنس (kategoryczna: ŻADNEGO boga oprócz Boga)",
+          "لَا الناهية (zakazująca)",
+          "لَا العاطفة (spójnikowa)",
+          "لَا النافية العادية"
+        ],
+        "correct": "لَا النافية للجنس (kategoryczna: ŻADNEGO boga oprócz Boga)",
+        "explanation": "لَا النافية للجنس = negacja RODZAJOWA/KATEGORYCZNA: 'لَا إلهَ إلّا الله' = Nie ma ŻADNEGO boga oprócz Boga (szahada — wyznanie wiary). إلهَ w bierniku BEZ tanwinu (jak po إنَّ). لَا النافية للجنس działa jak إنَّ: اسم w bierniku, خبر w mianowniku. Tu خبر jest domyślny (موجود = istniejący). Najsłynniejsze zdanie w islamie — i wzorcowy przykład لَا النافية للجنس."
+      },
+      {
+        "id": "pa_lls5",
+        "question": "Różnica: لَا طالبَ (bez tanwinu) vs لَا طالبٌ (z tanwinem):",
+        "translation": "(ما الفرق بين لا طالبَ و لا طالبٌ؟)",
+        "options": [
+          "لَا طالبَ = ŻADEN student (kategoryczna); لَا طالبٌ = żaden student nie... (zwykła)",
+          "Identyczne",
+          "لا طالبَ = pytanie; لا طالبٌ = odpowiedź",
+          "لا طالبَ = przeszły; لا طالبٌ = teraźn."
+        ],
+        "correct": "لَا طالبَ = ŻADEN student (kategoryczna); لَا طالبٌ = żaden student nie... (zwykła)",
+        "explanation": "SUBTELNA różnica: لَا طالبَ في الصف (النافية للجنس) = ŻADEN student w klasie (absolut — cała kategoria 'studentów' zanegowana). لَا طالبٌ مجتهدٌ يرسبُ (النافية العاملة عمل ليس) = Żaden pilny student nie obleje (konkretna cecha). Pisowniowo: bez tanwinu = dla جنس, z tanwinem = عاملة عمل ليس. لا النافية للجنس jest SILNIEJSZA — neguje cały gatunek/kategorię."
+      },
+      {
+        "id": "pa_lls6",
+        "question": "لَيْسَ + بِـ w 'لَيْسَ بِكاذبٍ' — بِـ tu jest:",
+        "translation": "(ما وظيفة الباء في ليس بكاذب؟)",
+        "options": [
+          "باء زائدة (wzmacniająca negację — On NIE jest kłamcą)",
+          "باء الجر (przyimek = w)",
+          "باء السببية (przyczyna)",
+          "باء القسم (przysięga)"
+        ],
+        "correct": "باء زائدة (wzmacniająca negację — On NIE jest kłamcą)",
+        "explanation": "بِـ po لَيْسَ jest 'wtrącona' (زائدة) — WZMACNIA negację. 'لَيْسَ بِكاذبٍ' = On ABSOLUTNIE nie jest kłamcą. Formalnie: كاذبٍ w dopełniaczu (bo po بِـ), ale gramatycznie jest orzecznikiem (خبر) w pozycji بiernika. بِـ الزائدة może pojawiać się po: لَيْسَ, مَا (ḥijāziyya), لَا. Wzmacnia pewność negacji. Bez بِـ: لَيْسَ كاذباً (poprawne, ale mniej emfatyczne)."
+      },
+      {
+        "id": "pa_lls7",
+        "question": "لَا w 'لَا حولَ ولا قوةَ إلا بالله' jest:",
+        "translation": "(ما نوع لا في لا حول ولا قوة؟)",
+        "options": [
+          "لَا النافية للجنس (podwójna — żadnej mocy ani siły oprócz od Boga)",
+          "لَا الناهية",
+          "لَا العاطفة",
+          "لَا النافية العادية"
+        ],
+        "correct": "لَا النافية للجنس (podwójna — żadnej mocy ani siły oprócz od Boga)",
+        "explanation": "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِالله (ḥawqala) — dwie لَا النافية للجنس: حَوْلَ (zdolność/moc) + قُوَّةَ (siła) — oba w bierniku bez tanwinu. Tłumaczenie: Nie ma żadnej mocy ani siły oprócz od Boga. To formuła odmawiania (ذكر) — jedna z najczęstszych w islamie. Gramatycznie: podwójna لَا + wyjątek إلَّا. Wzorcowy przykład kategorycznej negacji."
+      },
+      {
+        "id": "pa_lls8",
+        "question": "Czy لَيْسَ ma czas teraźniejszy (مضارع)?",
+        "translation": "(هل لِلَيْسَ مضارع؟)",
+        "options": [
+          "NIE — لَيْسَ to czasownik ZAMROŻONY (جامد)",
+          "Tak — يَلِيسُ",
+          "Tak — يَلْيَسُ",
+          "Tak — لَيَسُ"
+        ],
+        "correct": "NIE — لَيْسَ to czasownik ZAMROŻONY (جامد)",
+        "explanation": "لَيْسَ to فعل جامد (fiʿl jāmid) = czasownik ZAMROŻONY — ma TYLKO formę przeszłą. Nie ma: czasu teraźniejszego (*يَلِيسُ), rozkaźnika (*اِلِسْ), imiesłowu (*لائس), masdaru (*لَيْس). To wyjątkowe! Inne zamrożone: عَسَى (może/oby), نِعْمَ (doskonały), بِئْسَ (okropny). Funkcjonalnie: لَيْسَ = partykuła negacji, formalnie = застygły czasownik. Hybryda!"
+      },
+      {
+        "id": "pa_lls9",
+        "question": "لَا w 'جاء بلا خوفٍ' (Przyszedł bez strachu) — لَا tu jest:",
+        "translation": "(ما نوع لا في بلا خوف؟)",
+        "options": [
+          "لَا النافية (po przyimku بِـ = bez)",
+          "لَا الناهية (zakazująca)",
+          "لَا النافية للجنس",
+          "لَا العاطفة"
+        ],
+        "correct": "لَا النافية (po przyimku بِـ = bez)",
+        "explanation": "بِلَا (bi-lā) = bez — przyimek بِـ + negacja لَا. 'جاء بلا خوفٍ' = Przyszedł bez strachu. خوفٍ w dopełniaczu (bo po بِـ). بِلَا odpowiada polskiemu 'bez' lub 'بِدُون'. Alternatywy: بِدُونِ خوفٍ (bez strachu), مِنْ غَيْرِ خوفٍ (bez strachu). بِلَا jest najkrótsza i bardzo popularna w MSA i dialektach. لَا tu jest prostym zaprzeczeniem — nie kategoria للجنس."
+      },
+      {
+        "id": "pa_lls10",
+        "question": "لَيْسَ w 'ألَيْسَ كذلك؟' znaczy:",
+        "translation": "(ما معنى أليس كذلك؟)",
+        "options": [
+          "Czyż nie tak? (pytanie retoryczne)",
+          "To nie jest tak",
+          "Tak, zgadza się",
+          "Nie, nie tak"
+        ],
+        "correct": "Czyż nie tak? (pytanie retoryczne)",
+        "explanation": "أَلَيْسَ كذلك؟ = Czyż nie tak? / Prawda? Hamza pytająca (أَ) + لَيْسَ (nie jest) + كذلك (tak). Pytanie retoryczne oczekujące potwierdzenia. Odpowiedź: بَلَى, كذلك (Tak, właśnie tak). أَلَيْسَ jest bardzo częste jako tag question (pytanie potwierdzające) — jak angielskie 'isn't it?', polskie 'prawda?/czyż nie?'. W formalnym MSA i w Koranie."
+      },
+      {
+        "id": "pa_lls11",
+        "question": "لَا + przymiotnik/rzeczownik (bez czasownika): 'لَا بأسَ' znaczy:",
+        "translation": "(ما معنى لا بأس؟)",
+        "options": [
+          "Nie ma problemu / Nic się nie stało",
+          "Problem istnieje",
+          "Czy jest problem?",
+          "Nie rób problemu"
+        ],
+        "correct": "Nie ma problemu / Nic się nie stało",
+        "explanation": "لَا بَأْسَ (lā baʾsa) = Nie ma problemu / Nic się nie stało. بَأْس = problem/zło/beda. لَا + rzeczownik w bierniku (للجنس) = ŻADNEGO problemu. Bardzo częsty zwrot w codziennym arabskim! Inne: لَا شَكَّ (bez wątpienia), لَا بُدَّ (koniecznie/musi być), لَا مانعَ (nie ma przeszkody = OK). Wszystkie z لَا النافية للجنس — zamrożone wyrażenia."
+      },
+      {
+        "id": "pa_lls12",
+        "question": "W 'الولدُ لَيْسَ نائماً' — orzecznik to:",
+        "translation": "(ما خبر ليس في هذه الجملة؟)",
+        "options": [
+          "نائماً (w bierniku — śpiący)",
+          "الولدُ",
+          "لَيْسَ",
+          "Brak orzecznika"
+        ],
+        "correct": "نائماً (w bierniku — śpiący)",
+        "explanation": "الولدُ = اسم (podmiot, مرفوع), لَيْسَ = فعل ناسخ (czasownik kopiujący), نائماً = خبر (orzecznik, منصوب/biernik). Zdanie: Chłopiec nie jest śpiący. Porównaj: الولدُ نائمٌ (Chłopiec jest śpiący — mianownik, bez لَيْسَ). لَيْسَ 'zmienia' przypadek orzecznika z مرفوع na منصوب — to samo co كَانَ. Dlatego لَيْسَ należy do أَفْعَال ناسخة (czasowników kopiujących)."
+      },
+      {
+        "id": "pa_lls13",
+        "question": "لَا الناهية w 'لَا تقلقْ!' wymaga:",
+        "translation": "(ما عمل لا الناهية؟)",
+        "options": [
+          "مجزوم (jussive) — لا تقلقْ (sukun)",
+          "منصوب (biernik)",
+          "مرفوع (mianownik)",
+          "Bez zmiany trybu"
+        ],
+        "correct": "مجزوم (jussive) — لا تقلقْ (sukun)",
+        "explanation": "لَا الناهية (zakazująca) + 2. os. = ZAKAZ: لَا تقلقْ! (lā taqlaq!) = Nie martw się! Tryb مجزوم: sukun na końcu (تقلقْ). Porównaj: لَا يقلقُ (negacja — nie martwi się, مرفوع). Reguła: لَا + 2. os. مجزوم = zakaz. لَا + 3. os. مرفوع = negacja. Forma: identyczny wyraz (لَا), różna funkcja rozpoznawana po OSOBIE i TRYBIE. Ten sam paradoks co في: jeden wyraz, wiele funkcji."
+      },
+      {
+        "id": "pa_lls14",
+        "question": "Kiedy używamy لَيْسَ zamiast لَا?",
+        "translation": "(متى نستخدم ليس بدل لا؟)",
+        "options": [
+          "Do negacji zdań NOMINALNYCH (podmiot + orzecznik)",
+          "Do zakazu",
+          "Do negacji przyszłości",
+          "Do negacji przeszłości"
+        ],
+        "correct": "Do negacji zdań NOMINALNYCH (podmiot + orzecznik)",
+        "explanation": "لَيْسَ to specjalista od zdań NOMINALNYCH: الجو + جميل → لَيْسَ الجوُّ جميلاً (pogoda nie jest piękna). لَا neguje: 1) zdania czasownikowe: لا يكتبُ, 2) kategorycznie: لا شكَّ. Podział: لَيْسَ → stan/cecha (nie jest X), لَا → czynność (nie robi X). W polskim: 'nie jest' (być) vs 'nie' (inne czasowniki). Arabski rozróżnia gramatycznie to, co polskim rozróżnia leksykalnie."
+      },
+      {
+        "id": "pa_lls15",
+        "question": "Pełna tabela لَا: ile typów لَا istnieje?",
+        "translation": "(كم نوعاً رئيسياً لـ لا؟)",
+        "options": [
+          "5 (نافية, ناهية, نافية للجنس, عاطفة, زائدة)",
+          "1 — zawsze negacja",
+          "2 — negacja i zakaz",
+          "3 — negacja, zakaz, spójnik"
+        ],
+        "correct": "5 (نافية, ناهية, نافية للجنس, عاطفة, زائدة)",
+        "explanation": "5 typów لَا: 1) لَا النافية (negująca: لا يكتبُ = nie pisze), 2) لَا الناهية (zakazująca: لا تكتبْ = nie pisz!), 3) لَا النافية للجنس (kategoryczna: لا طالبَ = żaden student), 4) لَا العاطفة (spójnikowa: جاء محمد لا علي = przyszedł Muhammad, nie Ali), 5) لَا الزائدة (wtrącona/emfatyczna: لئلّا = żeby nie). Każda لَا ma inne reguły — rozpoznanie po kontekście!"
+      }
+    ]
+  },
+  {
+    "key": "question_particles",
+    "name": "Partykuły pytające (أدوات الاستفهام)",
+    "description": "أدوات الاستفهام العربية واستخداماتها",
+    "iconName": "questionmark.circle",
+    "color": "#c084fc",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pa_qp1",
+        "question": "_____ أنتَ طالبٌ؟ (Czy jesteś studentem?)",
+        "translation": "(Czy jesteś studentem?)",
+        "options": [
+          "هَلْ",
+          "مَا",
+          "مَنْ",
+          "كَيْفَ"
+        ],
+        "correct": "هَلْ",
+        "explanation": "Poprawnie: 'هَلْ أنتَ طالبٌ؟' = Czy jesteś studentem? هَلْ (hal) = partykuła pytania zamkniętego (tak/nie). Odpowiedź: نَعَمْ (tak) lub لَا (nie). هَلْ nie łączy się z negacją (*هل لا = BŁĄD) ani z przyszłym (*هل سيذهب = BŁĄD w klasycznym). W polskim: 'czy' — używamy wszędzie. W arabskim: هَلْ ma ograniczenia, których polskie 'czy' nie ma."
+      },
+      {
+        "id": "pa_qp2",
+        "question": "_____ جاء؟ (Czy przyszedł?) — z hamzą pytającą",
+        "translation": "(Czy przyszedł?)",
+        "options": [
+          "أَ",
+          "هَلْ",
+          "مَا",
+          "مَنْ"
+        ],
+        "correct": "أَ",
+        "explanation": "Poprawnie: 'أَجاءَ؟' (a-jāʾa?) = Czy przyszedł? Hamza pytająca (أَ) = najstarsza i najbardziej elastyczna partykuła pytania zamkniętego. أَ vs هَلْ: أَ może łączyć się z negacją (أَلَمْ تذهبْ? = Czyż nie poszedłeś?) — هَلْ NIE MOŻE. أَ może łączyć się z przyszłym (أَسيذهبُ? = Czy pójdzie?) — هَلْ NIE MOŻE (w klasycznym). أَ jest wszechstronna, هَلْ ograniczona."
+      },
+      {
+        "id": "pa_qp3",
+        "question": "_____ كتبَ الرسالةَ؟ (KTO napisał list?)",
+        "translation": "(Kto napisał list?)",
+        "options": [
+          "مَنْ",
+          "مَا",
+          "أَيْنَ",
+          "مَتَى"
+        ],
+        "correct": "مَنْ",
+        "explanation": "Poprawnie: 'مَنْ كتبَ الرسالةَ؟' = Kto napisał list? مَنْ (man) = KTO — pytanie o OSOBY. Porównaj: مَا (co) = pytanie o rzeczy/definicje. مَنْ jest nieodmienny (جامد) — nie zmienia formy niezależnie od funkcji: مَنْ جاء? (podmiot), مَنْ رأيتَ? (dopełnienie), لِمَنْ هذا? (po przyimku). W polskim: 'kto' odmienia się: kto/kogo/komu. W arabskim: مَنْ bez odmiany."
+      },
+      {
+        "id": "pa_qp4",
+        "question": "_____ ذهبتَ؟ (DOKĄD poszedłeś?)",
+        "translation": "(Dokąd poszedłeś?)",
+        "options": [
+          "أَيْنَ",
+          "مَتَى",
+          "كَيْفَ",
+          "لِمَاذَا"
+        ],
+        "correct": "أَيْنَ",
+        "explanation": "Poprawnie: 'أَيْنَ ذهبتَ؟' (ayna dhahabta?) = Dokąd/Gdzie poszedłeś? أَيْنَ (ayna) = GDZIE/DOKĄD. W polskim rozróżniamy 'gdzie' (statyczne) i 'dokąd' (dynamiczne). W arabskim: أَيْنَ dla obu! Ale: مِنْ أَيْنَ (skąd), إلى أَيْنَ (dokąd — z przyimkiem). Porównaj: أَيْنَ تسكنُ? (gdzie mieszkasz? — statyczne), أَيْنَ ذهبتَ? (dokąd poszedłeś? — dynamiczne). Kontekst rozstrzyga."
+      },
+      {
+        "id": "pa_qp5",
+        "question": "_____ السفرُ؟ (KIEDY podróż?)",
+        "translation": "(Kiedy podróż?)",
+        "options": [
+          "مَتَى",
+          "أَيْنَ",
+          "كَمْ",
+          "لِمَاذَا"
+        ],
+        "correct": "مَتَى",
+        "explanation": "Poprawnie: 'مَتَى السفرُ؟' (matā as-safaru?) = Kiedy podróż? مَتَى (matā) = KIEDY — pytanie o czas. Odpowiedź: غداً (jutro), بعد أسبوع (za tydzień), في الصيف (latem). مَتَى jest nieoamienna i może stać: 1) z zdaniem nominalnym (مَتَى السفرُ?), 2) z czasownikowym (مَتَى تسافرُ?). Porównaj: أَيَّانَ (ayyana) = kiedy — synonim, ale bardziej podniosły/koranski."
+      },
+      {
+        "id": "pa_qp6",
+        "question": "_____ تعلَّمتَ العربيةَ؟ (JAK nauczyłeś się arabskiego?)",
+        "translation": "(Jak nauczyłeś się arabskiego?)",
+        "options": [
+          "كَيْفَ",
+          "مَاذَا",
+          "لِمَاذَا",
+          "مَتَى"
+        ],
+        "correct": "كَيْفَ",
+        "explanation": "Poprawnie: 'كَيْفَ تعلَّمتَ العربيةَ?' = Jak nauczyłeś się arabskiego? كَيْفَ (kayfa) = JAK — pytanie o sposób/stan. Odpowiedź: بالدراسة (przez naukę), بسهولة (z łatwością). كَيْفَ حالُكَ? (Jak się masz?) — najczestrzy zwrot z كيف. كَيْفَ może też wyrażać zdumienie: كَيْفَ تقولُ هذا?! (Jak możesz to mówić?!). W polskim: 'jak' — identyczna wszechstronność."
+      },
+      {
+        "id": "pa_qp7",
+        "question": "_____ كتاباً قرأتَ؟ (ILE książek przeczytałeś?)",
+        "translation": "(Ile książek przeczytałeś?)",
+        "options": [
+          "كَمْ",
+          "مَنْ",
+          "أَيّ",
+          "مَاذَا"
+        ],
+        "correct": "كَمْ",
+        "explanation": "Poprawnie: 'كَمْ كتاباً قرأتَ?' = Ile książek przeczytałeś? كَمْ (kam) = ILE — pytanie o liczbę. WAŻNE: po كَمْ الاستفهامية → rzeczownik w BIERNIKU l. poj.! كتاباً (nie كُتُبٍ!). To dziwne, bo pytamy o WIELE, a odpowiedź jest w l. poj. bierniku — reguła gramatyczna. Porównaj: كَمْ التعجبية (كَمْ مِنْ كتابٍ = ileż to książek! — z مِنْ + dopełniacz)."
+      },
+      {
+        "id": "pa_qp8",
+        "question": "_____ تدرسُ العربيةَ؟ (DLACZEGO uczysz się arabskiego?)",
+        "translation": "(Dlaczego uczysz się arabskiego?)",
+        "options": [
+          "لِمَاذَا",
+          "كَيْفَ",
+          "مَتَى",
+          "أَيْنَ"
+        ],
+        "correct": "لِمَاذَا",
+        "explanation": "Poprawnie: 'لِمَاذَا تدرسُ العربيةَ?' = Dlaczego uczysz się arabskiego? لِمَاذَا (limādhā) = DLACZEGO — dosłownie: لِـ (dla) + مَاذَا (co) = 'dla czego?'. Synonimy: لِمَ (skrócone), لِأَيِّ سببٍ (z jakiego powodu), مَا السببُ (jaki powód?). لِمَاذَا jest najczęstsze w MSA. Odpowiedź: لِأَنَّ (bo/ponieważ) + zdanie. Struktura: لِمَاذَا → pytanie, لِأَنَّ → odpowiedź."
+      },
+      {
+        "id": "pa_qp9",
+        "question": "أَمْ w 'أَتدرسُ أَمْ تعملُ؟' znaczy:",
+        "translation": "(ما معنى أم هنا؟)",
+        "options": [
+          "CZY... CZY (pytanie rozłączne = Uczysz się czy pracujesz?)",
+          "I... i...",
+          "Ani... ani...",
+          "Jeśli... to..."
+        ],
+        "correct": "CZY... CZY (pytanie rozłączne = Uczysz się czy pracujesz?)",
+        "explanation": "أَمْ (am) = CZY (w pytaniu rozłącznym). أَ...أَمْ = czy X czy Y (WYBRANIE jednej opcji). 'أَتدرسُ أَمْ تعملُ?' = Uczysz się CZY pracujesz? (jedno z dwóch). Porównaj: أَوْ (aw) w pytaniu: 'هل تريدُ شاياً أَوْ قهوةً?' = Chcesz herbatę czy kawę? (propozycja). Różnica: أَمْ wymaga HAMZY pytającej (أَ) na początku, أَوْ może być po هَلْ. أَمْ jest bardziej formalna."
+      },
+      {
+        "id": "pa_qp10",
+        "question": "_____ كتابٍ تُفضِّلُ؟ (KTÓRY/JAKI książkę wolisz?)",
+        "translation": "(Jaką książkę wolisz?)",
+        "options": [
+          "أَيَّ",
+          "مَا",
+          "مَنْ",
+          "كَمْ"
+        ],
+        "correct": "أَيَّ",
+        "explanation": "Poprawnie: 'أَيَّ كتابٍ تُفضِّلُ?' = Jaką/Którą książkę wolisz? أَيّ (ayy) = JAKI/KTÓRY — pytanie o wybór z grupy. UNIKALNA cecha: أَيّ to JEDYNA partykuła pytająca, która się ODMIENIA przez przypadki: أَيُّ (mianownik), أَيَّ (biernik), أَيِّ (dopełniacz). Po أَيّ → rzeczownik w DOPEŁNIACZU (إضافة): أَيَّ كتابٍ (jakiej książki). W polskim: 'jaki/który' — też odmienny."
+      },
+      {
+        "id": "pa_qp11",
+        "question": "_____ تفعلُ هذا؟ (CO robisz?) — forma całościowa",
+        "translation": "(Co robisz?)",
+        "options": [
+          "مَاذَا",
+          "مَا",
+          "مَنْ",
+          "هَلْ"
+        ],
+        "correct": "مَاذَا",
+        "explanation": "Poprawnie: 'مَاذَا تفعلُ?' = Co robisz? مَاذَا (mādhā) = CO — złożenie مَا + ذَا (wskazujące). W codziennym MSA: مَاذَا jest najpopularniejsze. Alternatywy: مَا تفعلُ? (krótsze), مَا الذي تفعلُهُ? (z zaimkiem względnym — bardziej formalne). Reguła: مَاذَا + czasownik (bez zaimka powrotnego). مَا الذي + czasownik + zaimek powrotny. Wszystkie = Co?"
+      },
+      {
+        "id": "pa_qp12",
+        "question": "Szyk w pytaniu: هَلْ + ___:",
+        "translation": "(ما الترتيب بعد هل؟)",
+        "options": [
+          "هَلْ + zdanie (bez zmiany szyku)",
+          "هَلْ + podmiot + orzeczenie (obowiązkowa inwersja)",
+          "هَلْ + dopełnienie + orzeczenie",
+          "هَلْ na końcu zdania"
+        ],
+        "correct": "هَلْ + zdanie (bez zmiany szyku)",
+        "explanation": "Po هَلْ: szyk zdania NIE ZMIENIA SIĘ — هَلْ po prostu dodaje pytanie do normalnego zdania. هَلْ + zdanie nominalne: هَلْ أنتَ طالبٌ? هَلْ + zdanie czasownikowe: هَلْ ذهبتَ? W polskim: 'Czy poszedłeś?' — też bez inwersji. W angielskim: inwersja obowiązkowa ('Did you go?'). Arabski i polski są tu PODOBNE — pytanie przez dodanie partykuły, bez zmiany szyku."
+      },
+      {
+        "id": "pa_qp13",
+        "question": "أَنَّى في 'أَنَّى لكَ هذا؟' znaczy:",
+        "translation": "(ما معنى أنَّى لك هذا؟)",
+        "options": [
+          "SKĄD ci to? / Jak to możliwe?",
+          "Kiedy ci to?",
+          "Dlaczego ci to?",
+          "Ile ci to?"
+        ],
+        "correct": "SKĄD ci to? / Jak to możliwe?",
+        "explanation": "أَنَّى (annā) = SKĄD/JAK — pytanie wyrażające ZDUMIENIE. 'أَنَّى لكَ هذا?' = Skąd to masz? / Jak to możliwe, że to masz? Z Koranu i klasycznej literatury. أَنَّى łączy znaczenie: skąd (مِنْ أَيْنَ) + jak (كَيْفَ) + zdumienie. W MSA rzadsze niż مِنْ أَيْنَ. Inne archaiczne: أَيَّانَ (kiedy — podniosłe), حَيْثُمَا (gdziekolwiek). Te formy to 'bogactwo' arabskiego pytania."
+      },
+      {
+        "id": "pa_qp14",
+        "question": "Pytanie bez partykuły: 'أنتَ مِنْ مصر؟' (z intonacją) jest:",
+        "translation": "(هل يُمكن السؤال بدون أداة؟)",
+        "options": [
+          "Poprawne — intonacja wystarczy (w mowie)",
+          "Błędne — trzeba هَلْ",
+          "Poprawne tylko w dialekcie",
+          "Błędne zawsze"
+        ],
+        "correct": "Poprawne — intonacja wystarczy (w mowie)",
+        "explanation": "W mowie: sama INTONACJA może tworzyć pytanie. 'أنتَ مِنْ مصر؟' (z rosnącą intonacją) = Jesteś z Egiptu? To poprawne w potocznym MSA i we WSZYSTKICH dialektach. W piśmie: dodanie هَلْ/أَ jest standardowe. Porównaj z polskim: 'Jesteś studentem?' — intonacja tworzy pytanie, nie partykuła 'czy'. Arabski i polski: obie strategie pytania (partykuła i intonacja)."
+      },
+      {
+        "id": "pa_qp15",
+        "question": "Ile głównych partykuł pytających (أدوات الاستفهام) ma arabski?",
+        "translation": "(كم أداة استفهام في العربية؟)",
+        "options": [
+          "11 (أ, هل, ما, من, متى, أين, كيف, كم, لماذا, أيّ, أنّى)",
+          "3 (ma, man, hal)",
+          "5 (co, kto, gdzie, kiedy, jak)",
+          "7"
+        ],
+        "correct": "11 (أ, هل, ما, من, متى, أين, كيف, كم, لماذا, أيّ, أنّى)",
+        "explanation": "11 głównych: 1) أَ (hamza — czy), 2) هَلْ (czy), 3) مَا/مَاذَا (co), 4) مَنْ (kto), 5) مَتَى (kiedy), 6) أَيْنَ (gdzie), 7) كَيْفَ (jak), 8) كَمْ (ile), 9) لِمَاذَا/لِمَ (dlaczego), 10) أَيّ (jaki/który), 11) أَنَّى (skąd/jak — archaiczne). Podział: 2 zamknięte (أَ, هَلْ = tak/nie) + 9 otwartych (wymagają informacji w odpowiedzi). W polskim: co, kto, gdzie, kiedy, jak, ile, dlaczego, jaki, czy — 9."
+      }
+    ]
+  },
+  {
+    "key": "exclamation_particles",
+    "name": "Partykuły wykrzyknikowe (أساليب التعجب)",
+    "description": "أدوات التعجب والتأثر في العربية",
+    "iconName": "exclamationmark.2",
+    "color": "#22d3ee",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pa_exp1",
+        "question": "_____ أجملَ السماءَ! (Jakże piękne niebo!)",
+        "translation": "(Jakże piękne niebo!)",
+        "options": [
+          "مَا",
+          "كَمْ",
+          "هَلْ",
+          "إنَّ"
+        ],
+        "correct": "مَا",
+        "explanation": "Poprawnie: 'مَا أجملَ السماءَ!' = Jakże piękne (jest) niebo! Wzorzec pierwszy wykrzyknika: مَا + أَفْعَلَ + dopełnienie w bierniku. مَا أَفْعَلَ to STAŁA formuła — nie można zmienić formy أَفْعَلَ (zawsze 3. os. m. l. poj. przeszły). السماءَ w bierniku (مفعول به). W polskim: 'Jakże piękne!' — przymiotnik. W arabskim: 'Jakże upiękniło!' — dosłownie forma czasownikowa, ale sens przymiotnikowy."
+      },
+      {
+        "id": "pa_exp2",
+        "question": "أَجْمِلْ بِالسماء! — to drugi wzorzec wykrzyknika. Znaczy:",
+        "translation": "(ما معنى أَجْمِلْ بالسماء؟)",
+        "options": [
+          "Jakże piękne (jest) niebo! (= ما أجمل السماء)",
+          "Upiększ niebo!",
+          "Piękne niebo jest",
+          "Niebo jest piekne"
+        ],
+        "correct": "Jakże piękne (jest) niebo! (= ما أجمل السماء)",
+        "explanation": "Wzorzec drugi: أَفْعِلْ بِـ + podmiot. 'أَجْمِلْ بِالسماءِ!' = Jakże piękne niebo! WYGLĄDA jak rozkaz (أَفْعِلْ), ale jest wykrzyknikiem. Reguła: أَفْعِلْ بِـ to zamrożona forma — nie odmienia się. بِالسماءِ: بِـ jest wtrącone (زائدة), السماء to فاعل (podmiot) w mianowniku (choć wygląda jak dopełniacz po بِـ). Oba wzorce = identyczne znaczenie."
+      },
+      {
+        "id": "pa_exp3",
+        "question": "Czy مَا أفعلَ może być użyte z KAŻDYM przymiotnikiem?",
+        "translation": "(هل يُتعجب من كل صفة؟)",
+        "options": [
+          "NIE — tylko z przymiotnikami, które mają formę أفعل/فعلاء",
+          "Tak — z każdym",
+          "Tylko z kolorami",
+          "Tylko z wadami fizycznymi"
+        ],
+        "correct": "NIE — tylko z przymiotnikami, które mają formę أفعل/فعلاء",
+        "explanation": "Ograniczenia: مَا أفعلَ działa TYLKO z przymiotnikami typu فَعِيل/فَعْل, które mają stopień wyższy أفعل. NIE działa z: kolorami (أحمر — *ما أحمرَ!), wadami fizycznymi (أعمى — *ما أعماه!), formami wyższymi niż I. W tych przypadkach: مَا أَشَدَّ حُمْرَتَهُ! (Jakże silna jest jego czerwoność!) — opis pośredni przez أَشَدَّ/أَكْثَرَ."
+      },
+      {
+        "id": "pa_exp4",
+        "question": "يَا لَلْعَجَبِ! znaczy:",
+        "translation": "(ما معنى يا للعجب؟)",
+        "options": [
+          "O zdziwieniu! / Cóż za zdumienie!",
+          "O Zdziwieniu, przyjdź!",
+          "Wy, zdziwieni!",
+          "Nie ma zdziwienia"
+        ],
+        "correct": "O zdziwieniu! / Cóż za zdumienie!",
+        "explanation": "يَا لَلْعَجَبِ! (yā la-l-ʿajabi!) = O zdziwieniu! / Cóż za zdumienie! يَا tu jest partykułą wołacza, ale użytą RETORYCZNIE — nie wołamy zdziwienia, lecz wyrażamy je. لَلْعَجَبِ = لِ + الـ + عَجَب. Inne: يَا لَلْأَسَفِ! (O, jakiż żal!), يَا لَلْحَسْرَةِ! (O, co za pożałowania!). To emocjonalne wykrzykniki — stały element arabskiej retoryki i codziennej mowy."
+      },
+      {
+        "id": "pa_exp5",
+        "question": "سُبْحَانَ الله! jest używane na wyrażenie:",
+        "translation": "(متى نقول سبحان الله؟)",
+        "options": [
+          "Zdumienia/podziwu (Chwała Bogu! / Niech Bóg będzie uwielbiony!)",
+          "Gniewu",
+          "Smutku",
+          "Pytania"
+        ],
+        "correct": "Zdumienia/podziwu (Chwała Bogu! / Niech Bóg będzie uwielbiony!)",
+        "explanation": "سُبْحَانَ الله (subḥāna-llāh) = Chwała Bogu! Używane do wyrażenia: 1) Podziwu: 'سبحان الله' widząc piękny zachód słońca, 2) Zdumienia: 'سبحان الله' słysząc zaskakującą wiadomość, 3) Dezaprobaty: 'سبحان الله' widząc coś dziwnego. Gramatycznie: سُبْحَانَ to masdar w bierniku (منصوب) jako مفعول مطلق. الله w dopełniaczu (إضافة). Jedno z najpopularniejszych arabskich wyrażeń."
+      },
+      {
+        "id": "pa_exp6",
+        "question": "لَعَمْرُكَ! (Na twoje życie!) jest:",
+        "translation": "(ما نوع لعمرك؟)",
+        "options": [
+          "Przysięga/wykrzyknik (= Na twoje życie!)",
+          "Pytanie o wiek",
+          "Negacja życia",
+          "Pozdrowienie"
+        ],
+        "correct": "Przysięga/wykrzyknik (= Na twoje życie!)",
+        "explanation": "لَعَمْرُكَ (laʿamruka) = Na twoje życie! — formuła prZYSIĘGI emocjonalnej i wykrzyknikowej zarazem. لَـ = لام الابتداء (wzmacniająca), عَمْرُ = życie/wiek (w dopełniaczu z zaimkiem: عَمْرُكَ). Gramatycznie: مبتدأ z domyślnym خبر (= قسمي = moja przysięga). Formuła koraniczna i literacka — wyraża SILNE emocje. W potocznym: وَحَيَاتَكَ (na twoje życie — dialektalne)."
+      },
+      {
+        "id": "pa_exp7",
+        "question": "نِعْمَ w 'نِعْمَ الرجلُ!' znaczy:",
+        "translation": "(ما معنى نعم الرجل؟)",
+        "options": [
+          "Doskonały mężczyzna! / Cóż za wspaniały mąż!",
+          "Tak, mężczyzna",
+          "Nie mężczyzna",
+          "Czy mężczyzna?"
+        ],
+        "correct": "Doskonały mężczyzna! / Cóż za wspaniały mąż!",
+        "explanation": "نِعْمَ (niʿma) = doskonały/wspaniały — czasownik POCHWAŁY (فعل مدح). 'نِعْمَ الرجلُ!' = Cóż za doskonały mężczyzna! Nie mylić z نَعَمْ (naʿam) = tak! To INNE słowa. نِعْمَ jest zamrożonym czasownikiem (فعل جامد) — nie odmienia się. Przeciwieństwo: بِئْسَ (biʾsa) = okropny/najgorszy (فعل ذم). Oba w Koranie: نِعْمَ العبدُ (doskonały sługa!)."
+      },
+      {
+        "id": "pa_exp8",
+        "question": "بِئْسَ w 'بِئْسَ الصديقُ!' znaczy:",
+        "translation": "(ما معنى بئس الصديقُ؟)",
+        "options": [
+          "Jakże zły/okropny przyjaciel!",
+          "Dobry przyjaciel",
+          "Czy przyjaciel?",
+          "Nie przyjaciel"
+        ],
+        "correct": "Jakże zły/okropny przyjaciel!",
+        "explanation": "بِئْسَ (biʾsa) = jakże zły/okropny — czasownik NAGANY (فعل ذم). 'بِئْسَ الصديقُ!' = Cóż za okropny przyjaciel! Przeciwieństwo نِعْمَ. Oba: zamrożone (جامد), po nich podmiot w mianowniku z الـ. Koran: 'بِئْسَ المصيرُ' = Jakże zły los (o piekle). Gramatycznie: بِئْسَ/نِعْمَ + فاعل (z الـ) + ewentualnie مخصوص بالمدح/الذم (ten, o kim mowa)."
+      },
+      {
+        "id": "pa_exp9",
+        "question": "كَمْ في 'كَمْ مِنْ كتابٍ قرأتُ!' jest:",
+        "translation": "(ما نوع كم هنا؟)",
+        "options": [
+          "كَمْ الخبرية (wykrzyknikowa = Ileż to książek przeczytałem!)",
+          "كَمْ الاستفهامية (pytająca)",
+          "كَمْ العددية (liczbowa)",
+          "كَمْ الشرطية (warunkowa)"
+        ],
+        "correct": "كَمْ الخبرية (wykrzyknikowa = Ileż to książek przeczytałem!)",
+        "explanation": "كَمْ الخبرية (khabariyya) = كَمْ pochwalcza/informacyjna: 'كَمْ مِنْ كتابٍ قرأتُ!' = Ileż to książek przeczytałem! Różnica od كَمْ الاستفهامية: 1) كَمْ الاستفهامية + biernik l. poj.: كَمْ كتاباً? (ile książek?), 2) كَمْ الخبرية + مِنْ + dopełniacz: كَمْ مِنْ كتابٍ! (ileż to książek!). Kontekst: pytanie (?) = استفهام, wykrzyknik (!) = خبرية."
+      },
+      {
+        "id": "pa_exp10",
+        "question": "لَيْتَ w 'لَيْتَنِي كنتُ هناك!' jest:",
+        "translation": "(ما نوع ليت هنا؟)",
+        "options": [
+          "Partykuła życzeniowa (= Gdybym był tam! / Oby!)",
+          "Negacja (nie byłem tam)",
+          "Pytanie (czy byłem tam?)",
+          "Twierdzenie (byłem tam)"
+        ],
+        "correct": "Partykuła życzeniowa (= Gdybym był tam! / Oby!)",
+        "explanation": "لَيْتَ (layta) = oby/gdyby — partykuła ŻYCZENIOWA (تمنّي) wyrażająca NIEOSIĄGALNE pragnienie. 'لَيْتَنِي كنتُ هناك!' = Gdybym był tam! / Szkoda, że nie byłem! لَيْتَ działa jak إنَّ: اسم w bierniku + خبر w mianowniku. لَيْتَنِي = لَيْتَ + ـنِي (zaimek dopełnieniowy). Porównaj: لَعَلَّ (może — nadzieja realna), لَيْتَ (oby — nadzieja nierealna). Silne emocjonalnie!"
+      },
+      {
+        "id": "pa_exp11",
+        "question": "حَبَّذَا w 'حَبَّذَا العلمُ!' znaczy:",
+        "translation": "(ما معنى حبّذا العلم؟)",
+        "options": [
+          "Jakże wspaniała (jest) wiedza!",
+          "Nie ma wiedzy",
+          "Czy jest wiedza?",
+          "Wiedza jest wystarczająca"
+        ],
+        "correct": "Jakże wspaniała (jest) wiedza!",
+        "explanation": "حَبَّذَا (ḥabbadhā) = jakże wspaniały — złożenie حَبَّ (kochać, doskonałe) + ذَا (wskazujące 'to'). 'حَبَّذَا العلمُ!' = Jakże wspaniała wiedza! To wariant نِعْمَ — pochwała. Przeciwieństwo: لَا حَبَّذَا (= brak pochwały = nagana). حَبَّذَا jest zamrożone — nie odmienia się. W MSA rzadsze, ale w klasycznej literaturze i gramatykach — fundament باب المدح والذم."
+      },
+      {
+        "id": "pa_exp12",
+        "question": "واهاً! / وَيْلَكَ! / يَا لَهْفِي! — to wszystko:",
+        "translation": "(ما القاسم المشترك بين هذه التعبيرات؟)",
+        "options": [
+          "Wykrzykniki emocjonalne (تعجب/تأسف/تحسر)",
+          "Pytania",
+          "Negacje",
+          "Pozdrowienia"
+        ],
+        "correct": "Wykrzykniki emocjonalne (تعجب/تأسف/تحسر)",
+        "explanation": "Wykrzykniki emocjonalne: واهاً (wāhan) = ach! (zachwyt), وَيْلَكَ (waylaka) = biada ci! (groźba/ostrzeżenie), يَا لَهْفِي (yā lahfī) = o, moja tęsknoto! (żal). Arabski ma BOGATE zasoby wykrzykników: هَيْهَاتَ (hayhaata) = daleko/niemożliwe!, صَهْ (ṣah) = cicho!, أُفٍّ (uff) = uf!/dość!. Wiele z nich to أسماء أفعال (rzeczowniki-czasowniki) — unikalna klasa arabska."
+      },
+      {
+        "id": "pa_exp13",
+        "question": "هَيْهَاتَ في 'هَيْهَاتَ هَيْهَاتَ لِمَا تُوعَدُون' (Koran) znaczy:",
+        "translation": "(ما معنى هيهات هيهات؟)",
+        "options": [
+          "Daleko, daleko! / Niemożliwe! (podwójne dla wzmocnienia)",
+          "Bliskiego, bliskiego!",
+          "Chodźcie, chodźcie!",
+          "Tak, tak!"
+        ],
+        "correct": "Daleko, daleko! / Niemożliwe! (podwójne dla wzmocnienia)",
+        "explanation": "هَيْهَاتَ (hayhāta) = daleko!/niemożliwe! — اسم فعل ماض (rzeczownik-czasownik przeszły) = بَعُدَ (jest daleko). Podwojenie (هيهات هيهات) wzmacnia. Z Koranu (Al-Mu'minun 23:36): 'Daleko, daleko (jest spełnienie) tego, co wam obiecano!' Gramatycznie: هيهات to zamrożony wyraz — nie odmienia się. Fatha na końcu to budowa wyrazu, nie deklinacja."
+      },
+      {
+        "id": "pa_exp14",
+        "question": "Wykrzyknik za pomocą إِنَّ: 'إِنَّ هذا لَعَجَبٌ!' znaczy:",
+        "translation": "(ما معنى إنّ هذا لعجبٌ؟)",
+        "options": [
+          "Zaprawdę to jest zdumiewające!",
+          "To nie jest zdumiewające",
+          "Czy to zdumiewające?",
+          "To było zdumiewające"
+        ],
+        "correct": "Zaprawdę to jest zdumiewające!",
+        "explanation": "إِنَّ + لَـ (lam wzmacniające) = silne potwierdzenie/wykrzyknik: 'إِنَّ هذا لَعَجَبٌ!' = Zaprawdę to jest zdumiewające! Budowa: إِنَّ (partykuła emfatyczna) + هذا (podmiot — مبني w pozycji اسم) + لَـ (لام المزحلقة = wzmocnienie) + عَجَبٌ (orzecznik). Ta لَـ jest OBOWIĄZKOWA z إنَّ w pewnych kontekstach — wzmacnia emfazę. To retoryczny wykrzyknik przez إنَّ."
+      },
+      {
+        "id": "pa_exp15",
+        "question": "Ile sposobów wyrażania wykrzyknika (تعجب) ma arabski?",
+        "translation": "(كم طريقة لتعجب في العربية؟)",
+        "options": [
+          "Co najmniej 6 głównych sposobów",
+          "Tylko 1 (ما أفعل)",
+          "Dokładnie 2",
+          "Dokładnie 3"
+        ],
+        "correct": "Co najmniej 6 głównych sposobów",
+        "explanation": "Minimum 6 sposobów wykrzyknika: 1) مَا أَفْعَلَ (ما أجملَ السماء!), 2) أَفْعِلْ بِـ (أَجْمِلْ بالسماء!), 3) نِعْمَ/بِئْسَ (نِعْمَ الرجل!), 4) حَبَّذَا/لا حَبَّذَا, 5) كَمْ الخبرية (كم مِنْ كتابٍ!), 6) سُبْحَانَ/يَا لَـ/هَيْهَاتَ (wyrazy ekspresywne). Plus: إنَّ + لَـ, لَعَمْرُكَ, واهاً. Arabski jest BOGATY w struktury emocjonalne — każda z innym niuansem."
+      }
+    ]
+  },
+  {
+    "key": "restriction_particles",
+    "name": "Partykuły ograniczenia (أساليب الحصر)",
+    "description": "أدوات الحصر والقصر في العربية",
+    "iconName": "target",
+    "color": "#f472b6",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pa_rp1",
+        "question": "مَا... إِلَّا w 'مَا جاء إِلَّا محمدٌ' znaczy:",
+        "translation": "(ما معنى ما جاء إلا محمد؟)",
+        "options": [
+          "Przyszedł TYLKO Muhammad (nikt inny)",
+          "Muhammad nie przyszedł",
+          "Wszyscy oprócz Muhammada przyszli",
+          "Czy Muhammad przyszedł?"
+        ],
+        "correct": "Przyszedł TYLKO Muhammad (nikt inny)",
+        "explanation": "مَا... إِلَّا = TYLKO/JEDYNIE — najczęstsza konstrukcja ograniczenia (حصر/قصر). 'مَا جاء إِلَّا محمدٌ' = Nie przyszedł nikt OPRÓCZ Muhammada = Przyszedł TYLKO Muhammad. Budowa: مَا (negacja) + czasownik + إِلَّا (oprócz/tylko) + wyjątek. محمدٌ w mianowniku jako فاعل (podmiot). W polskim: 'tylko/jedynie/wyłącznie'. Arabski stosuje PODWÓJNĄ konstrukcję: negacja + wyjątek."
+      },
+      {
+        "id": "pa_rp2",
+        "question": "إِنَّمَا w 'إِنَّمَا الأعمالُ بِالنِّيَّات' znaczy:",
+        "translation": "(ما معنى إنما الأعمال بالنيات؟)",
+        "options": [
+          "Zaprawdę uczynki (są) TYLKO według intencji",
+          "Uczynki nie mają intencji",
+          "Czy uczynki mają intencje?",
+          "Uczynki i intencje"
+        ],
+        "correct": "Zaprawdę uczynki (są) TYLKO według intencji",
+        "explanation": "إِنَّمَا (innamā) = zaprawdę TYLKO — partykuła ograniczenia (أداة حصر). 'إِنَّمَا الأعمالُ بِالنِّيَّات' = Uczynki (są oceniane) WYŁĄCZNIE według intencji. HADIS — jeden z najsłynniejszych. Gramatyka: إِنَّمَا = إِنَّ + مَا الكافة (مَا blokuje wpływ إنَّ na składnię). Funkcja: OGRANICZENIE (حصر) — uczynki zależą TYLKO od intencji, nie od niczego innego."
+      },
+      {
+        "id": "pa_rp3",
+        "question": "Różnica: مَا... إِلَّا vs إِنَّمَا:",
+        "translation": "(ما الفرق بين ما...إلا و إنما؟)",
+        "options": [
+          "Tożsame znaczeniowo (= tylko), ale inna konstrukcja składniowa",
+          "Zupełnie inne znaczenie",
+          "مَا...إلا = pytanie, إنما = negacja",
+          "مَا...إلا = przeszłość, إنما = teraźniejszość"
+        ],
+        "correct": "Tożsame znaczeniowo (= tylko), ale inna konstrukcja składniowa",
+        "explanation": "Obie = OGRANICZENIE (حصر), ale struktura inna: مَا جاء إِلَّا محمدٌ (negacja + wyjątek) = إنَّمَا جاء محمدٌ (partykuła + zdanie twierdzące). Znaczenie identyczne: 'Przyszedł TYLKO Muhammad'. Różnice stylistyczne: مَا...إلَّا bardziej emfatyczna/dramatyczna, إنَّمَا bardziej neutralna/informacyjna. W retoryce (بلاغة): wybór formy zależy od siły ograniczenia, kontekstu i stylu."
+      },
+      {
+        "id": "pa_rp4",
+        "question": "لَا... بَلْ w 'لا أحبُّ الشايَ بَلِ القهوةَ' — ograniczenie przez:",
+        "translation": "(ما أسلوب الحصر هنا؟)",
+        "options": [
+          "Negacja + korekta (NIE herbatę, LECZ kawę)",
+          "Negacja podwójna",
+          "Pytanie retoryczne",
+          "Wykrzyknik"
+        ],
+        "correct": "Negacja + korekta (NIE herbatę, LECZ kawę)",
+        "explanation": "لَا... بَلْ = negacja + korekta = ograniczenie (حصر). 'لَا أحبُّ الشايَ بَلِ القهوةَ' = Nie lubię herbaty, LECZ kawę. Budowa: لَا (negacja pierwszej opcji) + بَلْ (korekta na drugą). To trzeci sposób ograniczenia po: 1) مَا...إلَّا, 2) إنَّمَا, 3) negacja + بَلْ/لَكِنْ. Porównaj: لَا... لَكِنْ (nie... ale) — taka sama funkcja, łagodniejsza od بَلْ. Wszystkie trzy = 'nie X, tylko Y'."
+      },
+      {
+        "id": "pa_rp5",
+        "question": "إِلَّا w 'جاء الطلابُ إِلَّا محمداً' (BEZ negacji!) znaczy:",
+        "translation": "(ما معنى جاء الطلاب إلا محمداً — بدون نفي؟)",
+        "options": [
+          "Przyszli studenci OPRÓCZ Muhammada (wyjątek)",
+          "Przyszedł tylko Muhammad",
+          "Nie przyszedł Muhammad",
+          "Przyszli wszyscy"
+        ],
+        "correct": "Przyszli studenci OPRÓCZ Muhammada (wyjątek)",
+        "explanation": "BEZ negacji: إِلَّا = OPRÓCZ (استثناء = wyjątek). 'جاء الطلابُ إِلَّا محمداً' = Studenci przyszli OPRÓCZ Muhammada. محمداً w BIERNIKU (منصوب) — obowiązkowy przypadek z إلَّا w zdaniu twierdzącym pełnym. TO INNA FUNKCJA niż مَا...إلَّا (ograniczenie). Bez negacji: إلَّا = wyjątek (oprócz). Z negacją: مَا...إلَّا = ograniczenie (tylko). Kontekst: negacja → ograniczenie; twierdzenie → wyjątek."
+      },
+      {
+        "id": "pa_rp6",
+        "question": "Po إِلَّا w zdaniu twierdzącym (مُوجَب) wyjątek jest w:",
+        "translation": "(ما إعراب المستثنى في الكلام الموجب؟)",
+        "options": [
+          "Bierniku (منصوب) — obowiązkowo",
+          "Mianowniku",
+          "Dopełniaczu",
+          "Zależy od kontekstu"
+        ],
+        "correct": "Bierniku (منصوب) — obowiązkowo",
+        "explanation": "Reguła: w zdaniu TWIERDZĄCYM (موجب) + إلَّا → wyjątek (مستثنى) ZAWSZE w bierniku: جاء الطلابُ إلَّا محمداً (بiernik). رأيتُ الطلابَ إلَّا محمداً (biernik — choć reszta też w bierniku). مررتُ بالطلابِ إلَّا محمداً (biernik — choć reszta w dopełniaczu!). محمداً ZAWSZE منصوب po إلَّا w zdaniu twierdzącym. W negowanym — inna reguła!"
+      },
+      {
+        "id": "pa_rp7",
+        "question": "Po إِلَّا w zdaniu ZANEGOWANYM (منفي) wyjątek jest w:",
+        "translation": "(ما إعراب المستثنى في الكلام المنفي؟)",
+        "options": [
+          "TAKIM SAMYM przypadku jak wyraz odniesienia (بدل)",
+          "Zawsze w bierniku",
+          "Zawsze w mianowniku",
+          "Zawsze w dopełniaczu"
+        ],
+        "correct": "TAKIM SAMYM przypadku jak wyraz odniesienia (بدل)",
+        "explanation": "W zdaniu ZANEGOWANYM + إلَّا: wyjątek = بدل (apozycja) → TEN SAM przypadek co wyraz odniesienia. 'مَا جاء أحدٌ إلَّا محمدٌ' — محمدٌ w MIANOWNIKU (bo أحدٌ = مرفوع). 'مَا رأيتُ أحداً إلَّا محمداً' — محمداً w BIERNIKU (bo أحداً = منصوب). Reguła: zanegowane → بدل (ten sam przypadek); twierdzące → منصوب (zawsze biernik). TO FUNDAMENTALNA reguła باب الاستثناء."
+      },
+      {
+        "id": "pa_rp8",
+        "question": "غَيْر w 'جاء الطلابُ غَيْرَ محمدٍ' zastępuje:",
+        "translation": "(غير تُعرب كـ...؟)",
+        "options": [
+          "إِلَّا (oprócz — w bierniku jako مستثنى)",
+          "مَا (negacja)",
+          "هَلْ (pytanie)",
+          "إنَّ (emfaza)"
+        ],
+        "correct": "إِلَّا (oprócz — w bierniku jako مستثنى)",
+        "explanation": "غَيْر (ghayr) zastępuje إِلَّا w wyjątkach: 'جاء الطلابُ غَيْرَ محمدٍ' = Studenci przyszli oprócz Muhammada. غَيْرَ w bierniku (jak wyjątek po إلَّا). Po غَيْر → dopełniacz (إضافة): محمدٍ. Różnica: إلَّا jest partykułą (nieodmienną), غَيْر jest RZECZOWNIKIEM (odmiennym). W zdaniu zanegowanym غَيْر przybiera przypadek apozycji: 'مَا جاء غَيْرُ محمدٍ' (mianownik)."
+      },
+      {
+        "id": "pa_rp9",
+        "question": "سِوَى w 'لا أعرفُ سِوَى اللغةِ العربيةِ' znaczy:",
+        "translation": "(ما معنى سوى هنا؟)",
+        "options": [
+          "OPRÓCZ/POZA (= Znam TYLKO arabski)",
+          "Język arabski i inne",
+          "Czy znam arabski?",
+          "Nie znam arabskiego"
+        ],
+        "correct": "OPRÓCZ/POZA (= Znam TYLKO arabski)",
+        "explanation": "سِوَى (siwā) = oprócz/poza — synonim غَيْر i إلَّا. 'لا أعرفُ سِوَى العربيةِ' = Nie znam OPRÓCZ arabskiego = Znam TYLKO arabski. سِوَى + dopełniacz (إضافة): العربيةِ. سِوَى jest RZECZOWNIKIEM (اسم) w bierniku jako مستثنى. Różnica od غَيْر: سِوَى ma STAŁĄ formę (nie odmienia się widocznie — wszystkie przypadki 'domyślne' na alif maqsura)."
+      },
+      {
+        "id": "pa_rp10",
+        "question": "عَدَا / خَلَا / حَاشَا w 'جاء الطلابُ عَدَا محمدٍ/محمداً' to:",
+        "translation": "(ما إعراب ما بعد عدا؟)",
+        "options": [
+          "Dopuszczalny dopełniacz LUB biernik (podwójna analiza)",
+          "Tylko mianownik",
+          "Tylko biernik",
+          "Tylko dopełniacz"
+        ],
+        "correct": "Dopuszczalny dopełniacz LUB biernik (podwójna analiza)",
+        "explanation": "عَدَا/خَلَا/حَاشَا = oprócz — mają PODWÓJNĄ analizę: 1) Jako PRZYIMKI → محمدٍ (dopełniacz): جاء الطلاب عدا محمدٍ; 2) Jako CZASOWNIKI → محمداً (biernik): جاء الطلاب عدا محمداً. Obie wersje poprawne! Z مَا: 'مَا عَدَا محمداً' — TYLKO biernik (bo مَا المصدرية wymusza analizę czasownikową). To unikalna cecha tych trzech wyrazów — hybrydy przyimkowo-czasownikowe."
+      },
+      {
+        "id": "pa_rp11",
+        "question": "Ograniczenie przez PRZESUNIĘCIE: 'الكتابَ قرأتُ (nie الرسالةَ)' — technika to:",
+        "translation": "(ما أسلوب القصر بالتقديم؟)",
+        "options": [
+          "تقديم المفعول (przesunięcie dopełnienia na początek = ograniczenie)",
+          "إنَّمَا",
+          "مَا...إلَّا",
+          "لَا...بَلْ"
+        ],
+        "correct": "تقديم المفعول (przesunięcie dopełnienia na początek = ograniczenie)",
+        "explanation": "W retoryce (بلاغة): przesunięcie (تقديم) elementu na POCZĄTEK zdania = OGRANICZENIE (قصر). 'الكتابَ قرأتُ' = KSIĄŻKĘ przeczytałem (nie list, nie gazetę). Normalny szyk: قرأتُ الكتابَ (przeczytałem książkę — neutralne). Przesunięty szyk: الكتابَ قرأتُ (KSIĄŻKĘ — ograniczenie). To RETORYCZNE ograniczenie, nie gramatyczne. W polskim: akcent zdaniowy pełni tę samą rolę."
+      },
+      {
+        "id": "pa_rp12",
+        "question": "Ile głównych sposobów ograniczenia (حصر/قصر) ma arabski?",
+        "translation": "(كم طريقة رئيسية للحصر والقصر؟)",
+        "options": [
+          "4 główne: مَا...إلَّا, إنَّمَا, negacja+بَلْ/لَكِنْ, تقديم",
+          "Tylko 1 (إلَّا)",
+          "Dokładnie 2",
+          "Dokładnie 3"
+        ],
+        "correct": "4 główne: مَا...إلَّا, إنَّمَا, negacja+بَلْ/لَكِنْ, تقديم",
+        "explanation": "4 główne metody ograniczenia: 1) مَا...إلَّا (negacja + wyjątek: ما جاء إلا محمد), 2) إنَّمَا (partykuła: إنما جاء محمد), 3) لَا...بَلْ/لَكِنْ (negacja + korekta: لا زيد بل محمد), 4) تقديم (przesunięcie: الكتابَ قرأتُ). Wszystkie = 'TYLKO X, nie Y'. Różnice: siła emfazy, formalność, kontekst. بلاغة (retoryka arabska) analizuje niuanse każdej metody."
+      },
+      {
+        "id": "pa_rp13",
+        "question": "Wyjątek odłączony (مُنْقَطِع): 'جاء القومُ إلَّا حصاناً' znaczy:",
+        "translation": "(ما معنى الاستثناء المنقطع؟)",
+        "options": [
+          "Lud przyszedł, ALE koń nie (wyjątek spoza grupy)",
+          "Lud przyszedł z koniem",
+          "Koń przyszedł sam",
+          "Lud nie przyszedł"
+        ],
+        "correct": "Lud przyszedł, ALE koń nie (wyjątek spoza grupy)",
+        "explanation": "Wyjątek odłączony (منقطع): wyjątek NIE NALEŻY do grupy! 'جاء القومُ إلَّا حصاناً' = Lud przyszedł, ale koń nie. Koń nie jest częścią ludu (القوم) — to inna kategoria. W wyjątku odłączonym إلَّا = ale/oprócz tego że. Porównaj: متصل (przyłączony): جاء الطلابُ إلَّا محمداً — Muhammad JEST studentem, tylko nie przyszedł. Różnica: przynależność do grupy."
+      },
+      {
+        "id": "pa_rp14",
+        "question": "Wyjątek pusty (مُفَرَّغ): 'مَا جاء إلَّا محمدٌ' — محمدٌ jest:",
+        "translation": "(ما إعراب محمد في ما جاء إلا محمد؟)",
+        "options": [
+          "Podmiotem (فاعل) w mianowniku — bo brak مستثنى منه",
+          "Wyjątkiem w bierniku",
+          "Orzecznikiem",
+          "Dopełnieniem"
+        ],
+        "correct": "Podmiotem (فاعل) w mianowniku — bo brak مستثنى منه",
+        "explanation": "Wyjątek مُفَرَّغ (opróżniony): zdanie zanegowane, brak wyrazy odniesienia (مستثنى منه). 'مَا جاء إلَّا محمدٌ' — kto jest فاعل? محمدٌ! إلَّا tu jest 'przezroczysta' — محمدٌ przyjmuje przypadek, jakby إلَّا nie było: مَا جاء (kto?) = محمدٌ (فاعل, مرفوع). Porównaj: مَا رأيتُ إلَّا محمداً (بiernik = مفعول به). مَا مررتُ إلَّا بمحمدٍ (dopełniacz = po بِـ)."
+      },
+      {
+        "id": "pa_rp15",
+        "question": "W retoryce: قصر صفة على موصوف vs قصر موصوف على صفة — różnica:",
+        "translation": "(ما الفرق بين النوعين؟)",
+        "options": [
+          "Ograniczenie CECHY do rzeczy vs ograniczenie RZECZY do cechy",
+          "Identyczne",
+          "Pierwszy = I forma, drugi = II forma",
+          "Pierwszy = pytanie, drugi = odpowiedź"
+        ],
+        "correct": "Ograniczenie CECHY do rzeczy vs ograniczenie RZECZY do cechy",
+        "explanation": "Retoryka (بلاغة) wyróżnia: 1) قصر صفة على موصوف = ograniczenie CECHY do jednej RZECZY: 'ما شجاعٌ إلا عليٌّ' = ODWAŻNY jest TYLKO Ali (cecha→osoba); 2) قصر موصوف على صفة = ograniczenie RZECZY do jednej CECHY: 'ما عليٌّ إلا شجاعٌ' = Ali jest TYLKO odważny (osoba→cecha). Ta sama konstrukcja, inna kolejność → inny sens! To fundament arabskiej retoryki (علم المعاني)."
+      }
+    ]
+  },
+  {
+    "key": "formal_arabic",
+    "name": "Arabski formalny (الفصحى المعاصرة)",
+    "description": "خصائص اللغة العربية الفصحى المعاصرة",
+    "iconName": "building.columns",
+    "color": "#60a5fa",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pa_fma1",
+        "question": "MSA (Modern Standard Arabic) po arabsku to:",
+        "translation": "(ما اسم العربية الفصحى المعاصرة؟)",
+        "options": [
+          "الفُصْحَى المُعَاصِرَة (al-fuṣḥā al-muʿāṣira)",
+          "العَامِّيَّة (al-ʿāmmiyya)",
+          "اللَّهجة (al-lahja)",
+          "الكلاسيكية (al-klāsīkiyya)"
+        ],
+        "correct": "الفُصْحَى المُعَاصِرَة (al-fuṣḥā al-muʿāṣira)",
+        "explanation": "الفُصْحَى المُعَاصِرَة (fuṣḥā muʿāṣira) = Współczesna Arabszczyzna Standardowa (MSA). Nazwa: فُصْحَى = najczystsza/najwymowniejsza (stopień najwyższy od فَصِيح = wymowny), مُعَاصِرَة = współczesna. Obok niej: الفصحى التراثية (klasyczna = Koran, wczesna poezja). MSA jest UJEDNOLICONA — używana w mediach, edukacji, dyplomacji we WSZYSTKICH krajach arabskich."
+      },
+      {
+        "id": "pa_fma2",
+        "question": "W formalnym MSA końcówki przypadkowe (إعراب) są:",
+        "translation": "(هل يُستخدم الإعراب في الفصحى؟)",
+        "options": [
+          "Wymawiane w pełni (الطالبُ، الطالبَ، الطالبِ)",
+          "Ignorowane całkowicie",
+          "Wymawiane tylko w dopełniaczu",
+          "Opcjonalne zawsze"
+        ],
+        "correct": "Wymawiane w pełni (الطالبُ، الطالبَ، الطالبِ)",
+        "explanation": "W FORMALNYM MSA: pełny إعراب (iʿrāb) = końcówki odmieniane: الطالبُ (mianownik), الطالبَ (biernik), الطالبِ (dopełniacz). W POTOCZNYM MSA: często upraszczane (pauza = waqf = brak końcówki). W dialektach: BRAK إعراب. Poziomy: 1) Pełny إعراب (wiadomości TV, Koran), 2) Częściowy (wykłady, prezentacje), 3) Zerowy (dialekt). Polak ucząc się MSA musi znać إعراب, ale w mowie codziennej go nie usłyszy."
+      },
+      {
+        "id": "pa_fma3",
+        "question": "Formalna konstrukacja 'Co do...' (أَمَّا... فَـ) — uzupełnij: أَمَّا العلمُ _____ نافعٌ",
+        "translation": "(أكمل: أما العلم... نافع)",
+        "options": [
+          "فَـ (= Co do wiedzy, TO jest pożyteczna)",
+          "لَـ",
+          "مَا",
+          "إِنَّ"
+        ],
+        "correct": "فَـ (= Co do wiedzy, TO jest pożyteczna)",
+        "explanation": "أَمَّا... فَـ = Co do... to... — formalna konstrukcja warunkowa/tematyczna. 'أَمَّا العلمُ فَنافعٌ' = Co do wiedzy, to jest pożyteczna. REGUŁA: po أَمَّا OBOWIĄZUJE فَـ. Opuszczenie فَـ to BŁĄD gramatyczny. Funkcja: wyodrębnia TEMAT z reszty zdania. Bardzo częsta w formalnej mowie, mediach, Koranie. W polskim: 'Co do X, to Y' — podobna struktura, ale bez obowiązkowego spójnika."
+      },
+      {
+        "id": "pa_fma4",
+        "question": "W formalnym MSA zaimek هُوَ/هِيَ jako فصل (rozdzielający) w 'اللهُ هُوَ الرحمنُ' oznacza:",
+        "translation": "(ما وظيفة ضمير الفصل؟)",
+        "options": [
+          "Wzmocnienie = Bóg — TO ON — (jest) Miłosierny (emfaza)",
+          "On jest Bogiem miłosiernym (normalny podmiot)",
+          "Bóg nie jest miłosierny (negacja)",
+          "Kto jest miłosierny? (pytanie)"
+        ],
+        "correct": "Wzmocnienie = Bóg — TO ON — (jest) Miłosierny (emfaza)",
+        "explanation": "ضمير الفصل (ḍamīr al-faṣl) = zaimek ROZDZIELAJĄCY — nie jest podmiotem ani orzecznikiem, lecz WZMACNIA związek między nimi. 'اللهُ هُوَ الرحمنُ' = Bóg — TO ON — (jest) Miłosierny. Funkcje: 1) Emfaza (wzmocnienie), 2) Rozróżnienie خبر od صفة: اللهُ الرحمنُ (Bóg Miłosierny — صفة) vs اللهُ هُوَ الرحمنُ (Bóg JEST Miłosierny — خبر). 3) Ograniczenie (حصر). Czysto formalna analiza."
+      },
+      {
+        "id": "pa_fma5",
+        "question": "Formalny spójnik حَيْثُ (ḥaythu) w 'ذهبتُ حيثُ أرادَ' znaczy:",
+        "translation": "(ما معنى حيث أراد؟)",
+        "options": [
+          "Poszedłem TAM, GDZIE chciał",
+          "Poszedłem, ALE nie chciał",
+          "Poszedłem, BO chciał",
+          "Poszedłem ZANIM chciał"
+        ],
+        "correct": "Poszedłem TAM, GDZIE chciał",
+        "explanation": "حَيْثُ (ḥaythu) = tam gdzie/gdzie — formalne zdanie okolicznikowe miejsca. 'ذهبتُ حيثُ أرادَ' = Poszedłem tam, gdzie chciał. حَيْثُ + zdanie (orzeczenie) = zdanie podrzędne miejsca. FORMALNY MSA: حيثُ إنَّ = ponieważ/skoro (przyczynowe — częste w tekstach akademickich). CZĘSTY BŁĄD: używanie حيثُ jako 'ponieważ' bez إنَّ (*حيث جاء = BŁĄD). Poprawnie: حيثُ إنَّه جاء."
+      },
+      {
+        "id": "pa_fma6",
+        "question": "Formalna partykuła قَدْ + czas przeszły = :",
+        "translation": "(ما وظيفة قد + الماضي؟)",
+        "options": [
+          "Potwierdzenie: قَدْ ذهبَ = RZECZYWIŚCIE poszedł (emfaza)",
+          "Negacja: nie poszedł",
+          "Pytanie: czy poszedł?",
+          "Przyszłość: pójdzie"
+        ],
+        "correct": "Potwierdzenie: قَدْ ذهبَ = RZECZYWIŚCIE poszedł (emfaza)",
+        "explanation": "قَدْ (qad) + czas przeszły = potwierdzenie/emfaza: قَدْ ذهبَ = RZECZYWIŚCIE/FAKTYCZNIE poszedł. ALE: قَدْ + czas teraźniejszy = 'może/czasem': قَدْ يذهبُ = MOŻE pójdzie. PARADOKS: ta sama partykuła, ODWROTNE funkcje! Z przeszłym = pewność (100%), z teraźniejszym = możliwość (~50%). W Koranie: 'قَدْ أفلحَ المؤمنون' = ZAPRAWDĘ odnieśli sukces wierni. Bardzo formalna i częsta."
+      },
+      {
+        "id": "pa_fma7",
+        "question": "Formuła rozpoczynająca listy formalne: بِسْمِ اللهِ الرحمنِ الرحيمِ — gramatycznie:",
+        "translation": "(ما إعراب بسم الله الرحمن الرحيم؟)",
+        "options": [
+          "جار ومجرور + إضافة + صفتان (przyimek + dopełniacz + 2 przymiotniki)",
+          "فعل وفاعل (orzeczenie + podmiot)",
+          "مبتدأ وخبر (podmiot + orzecznik)",
+          "فعل أمر (rozkaz)"
+        ],
+        "correct": "جار ومجرور + إضافة + صفتان (przyimek + dopełniacz + 2 przymiotniki)",
+        "explanation": "Analiza: بِـ (przyimek) + اسْمِ (dopełniacz — w إضافة z الله) + اللهِ (مضاف إليه) + الرحمنِ (صفة 1 = Miłosierny) + الرحيمِ (صفة 2 = Litościwy). Domyślne: أَبْدَأُ بِسْمِ اللهِ (Zaczynam w imię Boga). اسم straciło hamzę (أ) z powodu częstego użycia → بسم (nie بإسم). Najczęstsza formuła arabska — otwiera każdą surę Koranu (oprócz 9.) i każdy formalny dokument."
+      },
+      {
+        "id": "pa_fma8",
+        "question": "Formalna formuła kończąca: وَاللهُ أَعْلَمُ (wa-llāhu aʿlam) znaczy:",
+        "translation": "(ما معنى والله أعلم؟)",
+        "options": [
+          "A Bóg wie lepiej/najlepiej (= nie jestem pewien)",
+          "Bóg nie wie",
+          "Bóg jest wielki",
+          "Niech Bóg pobłogosławi"
+        ],
+        "correct": "A Bóg wie lepiej/najlepiej (= nie jestem pewien)",
+        "explanation": "واللهُ أَعلمُ = A Bóg wie najlepiej — formalna formuła POKORY intelektualnej. Używana po wydaniu opinii religijnej (فتوى), naukowej lub dyskusyjnej. Znaczenie: 'Taka jest moja opinia, ale mogę się mylić — ostateczna wiedza należy do Boga.' Gramatycznie: الله = مبتدأ, أَعلمُ = خبر (stopień wyższy od عَالِم). Porównaj: اللهُ أكبرُ (Bóg jest największy — inna formuła)."
+      },
+      {
+        "id": "pa_fma9",
+        "question": "W formalnym MSA: لَمَّا (lammā) + czas przeszły:",
+        "translation": "(ما معنى لمَّا + الماضي؟)",
+        "options": [
+          "KIEDY/GDY (= Gdy przyszedł...): لَمَّا جاءَ",
+          "Nie przyszedł",
+          "Zanim przyszedł",
+          "Jeśli przyjdzie"
+        ],
+        "correct": "KIEDY/GDY (= Gdy przyszedł...): لَمَّا جاءَ",
+        "explanation": "لَمَّا (lammā) + przeszły = KIEDY/GDY — zdanie czasowe. 'لَمَّا جاءَ محمدٌ قُمْتُ' = Gdy przyszedł Muhammad, wstałem. ALE: لَمَّا ma 2 funkcje: 1) Gdy/Kiedy + przeszły (ظرف زمان), 2) Jeszcze nie (negacja trwająca) + teraźniejszy مجزوم: لَمَّا يذهبْ = Jeszcze nie poszedł. DWIE odwrotne funkcje! Z przeszłym = czas, z teraźniejszym = negacja trwająca. Kontekst rozstrzyga."
+      },
+      {
+        "id": "pa_fma10",
+        "question": "Formalny MSA: إِذْ (idh) vs إِذَا (idhā) — różnica:",
+        "translation": "(ما الفرق بين إذ و إذا؟)",
+        "options": [
+          "إِذْ = GDY (przeszłość); إِذَا = JEŚLI/GDY (przyszłość)",
+          "Identyczne",
+          "إِذْ = jeśli; إِذَا = gdy",
+          "إِذْ = przyszłość; إِذَا = przeszłość"
+        ],
+        "correct": "إِذْ = GDY (przeszłość); إِذَا = JEŚLI/GDY (przyszłość)",
+        "explanation": "إِذْ (idh) = GDY — odnosi się do PRZESZŁOŚCI: إِذْ قالَ (gdy powiedział — w Koranie). إِذَا (idhā) = JEŚLI/GDY — odnosi się do PRZYSZŁOŚCI/POWTARZALNOŚCI: إِذَا جاءَ (gdy/jeśli przyjdzie). Trzecia: إِذًا (idhan) = WIĘC/ZATEM — partykuła skutku: إِذًا سأذهبُ (więc pójdę). Trzy podobne wyrazy, trzy różne funkcje! Kluczowa dystynkcja w formalnym MSA i analizie Koranu."
+      },
+      {
+        "id": "pa_fma11",
+        "question": "Formalna zwrotność: اِسْتَفْعَلَ (X forma) w اِسْتَغْفَرَ (prosić o przebaczenie) — schemat to:",
+        "translation": "(ما وزن استغفر؟)",
+        "options": [
+          "اِسْتَفْعَلَ (= prosić o/szukać czegoś)",
+          "فَعَّلَ",
+          "أَفْعَلَ",
+          "تَفَاعَلَ"
+        ],
+        "correct": "اِسْتَفْعَلَ (= prosić o/szukać czegoś)",
+        "explanation": "اِسْتَفْعَلَ (istaFʿaLa) = X forma = 'prosić o/szukać/uważać za'. اِسْتَغْفَرَ (istaghfara) = szukać przebaczenia (غ-ف-ر = przebaczenie). Inne: اِسْتَعْمَلَ (używać ← ع-م-ل = praca), اِسْتَعْلَمَ (dowiadywać się ← ع-ل-م = wiedza), اِسْتَحْسَنَ (uważać za piękne ← ح-س-ن = piękno). Ta forma jest BARDZO produktywna w formalnym MSA — tworzy nowe słowa regularnie."
+      },
+      {
+        "id": "pa_fma12",
+        "question": "Formalny MSA: الـ + przymiotnik jako RZECZOWNIK — 'الكبيرُ' znaczy:",
+        "translation": "(ما معنى الكبير كاسم؟)",
+        "options": [
+          "Ten wielki / Wielki (substantywizacja)",
+          "Duży przymiotnik",
+          "Nie wielki",
+          "Czy wielki?"
+        ],
+        "correct": "Ten wielki / Wielki (substantywizacja)",
+        "explanation": "W formalnym MSA: الـ + przymiotnik = RZECZOWNIK (substantywizacja). الكبيرُ = Ten wielki/Wielki (osoba lub Bóg — jedno z 99 imion). الصغيرُ = Mały (osoba). الجديدُ = To, co nowe. To samo co w polskim: 'Wielki' (przymiotnik→rzeczownik), 'Stary' (o osobie). Ale w arabskim: częstsze i bardziej formalne. Imiona Boga: الرحمنُ (Miłosierny), القديرُ (Wszechmocny) — przymiotniki jako nazwy."
+      },
+      {
+        "id": "pa_fma13",
+        "question": "Formalna klauzula warunkowa: لَوْ + przeszły... لَـ + przeszły = :",
+        "translation": "(ما معنى لو + ماض... لـ + ماض؟)",
+        "options": [
+          "Gdyby (nierealny): لَوْ جاء لَذهبتُ = Gdyby przyszedł, poszedłbym",
+          "Jeśli przyszedł, poszedłem (realny)",
+          "Nie przyszedł i nie poszedłem",
+          "Przyszedł i poszedłem"
+        ],
+        "correct": "Gdyby (nierealny): لَوْ جاء لَذهبتُ = Gdyby przyszedł, poszedłbym",
+        "explanation": "لَوْ (law) + przeszły... لَـ + przeszły = warunek NIEREALNY (tryb przypuszczający). 'لَوْ جاءَ لَذهبتُ' = Gdyby przyszedł, poszedłbym (ale NIE przyszedł, więc NIE poszedłem). لَوْ = 'gdyby' (w przeszłości — niespełniony). Porównaj: إِنْ (in) = jeśli (realny, przyszły), لَوْ = gdyby (nierealny, przeszły). W polskim: 'gdyby' vs 'jeśli' — identyczna dystynkcja. Koraniczne: لَوْ شاءَ اللهُ (gdyby Bóg chciał)."
+      },
+      {
+        "id": "pa_fma14",
+        "question": "Formalne zakończenie wypowiedzi: وَبِاللهِ التَّوْفِيق znaczy:",
+        "translation": "(ما معنى وبالله التوفيق؟)",
+        "options": [
+          "A od Boga (jest) pomyślne prowadzenie (= Amen / Niech się uda)",
+          "Bóg jest daleko",
+          "Nie ma Boga",
+          "Bóg zakazuje"
+        ],
+        "correct": "A od Boga (jest) pomyślne prowadzenie (= Amen / Niech się uda)",
+        "explanation": "وَبِاللهِ التَّوْفِيقُ = A od Boga (jest) powodzenie/sukces — formalna formuła zamykająca dokumenty, listy, decyzje. التَّوْفِيق (tawfīq) = pomyślne prowadzenie/sukces (od root و-ف-ق = zgadzać się). Sens: 'Mogę się mylić, ale Bóg prowadzi najlepiej.' Porównaj: وَاللهُ أَعْلَمُ (Bóg wie najlepiej — po opinii), وَبِاللهِ التَّوْفِيقُ (Bóg zapewni sukces — po decyzji/planie)."
+      },
+      {
+        "id": "pa_fma15",
+        "question": "Diglossja arabska (ازدواجية لغوية) oznacza:",
+        "translation": "(ما معنى الازدواجية اللغوية؟)",
+        "options": [
+          "Współistnienie فصحى (formalnej) i عامية (dialektu) w jednym społeczeństwie",
+          "Jeden język w całym świecie arabskim",
+          "Arabski nie ma dialektów",
+          "Dialekty zastąpiły فصحى"
+        ],
+        "correct": "Współistnienie فصحى (formalnej) i عامية (dialektu) w jednym społeczeństwie",
+        "explanation": "الازدواجية اللغوية (izdiwājiyya lughawiyya) = diglossja = DWA POZIOMY języka: 1) الفُصحى (fuṣḥā) = wysoki: edukacja, media, Koran, dokumenty; 2) العَامِّيَّة (ʿāmmiyya) = niski: dom, ulica, dzieci. Arabista (nie-Arab) uczy się FUṢḤĀ, ale w kraju arabskim słyszy DIALEKT. Polscy uczniowie arabskiego: muszą znać OBA poziomy! Fuṣḥā daje czytanie — dialekt daje komunikację."
+      }
+    ]
+  },
+  {
+    "key": "media_arabic",
+    "name": "Arabski medialny (لغة الإعلام)",
+    "description": "لغة وسائل الإعلام العربية وأنماطها",
+    "iconName": "newspaper",
+    "color": "#818cf8",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pa_ma1",
+        "question": "Nagłówek gazety: 'اتفاقٌ جديدٌ بين البلدين' — brak ___:",
+        "translation": "(ما المحذوف في العنوان؟)",
+        "options": [
+          "Czasownika (domyślny: تَمَّ/وُقِّعَ = Podpisano/Zawarto nowe porozumienie)",
+          "Podmiotu",
+          "Przymiotnika",
+          "Nic nie brakuje"
+        ],
+        "correct": "Czasownika (domyślny: تَمَّ/وُقِّعَ = Podpisano/Zawarto nowe porozumienie)",
+        "explanation": "Styl NAGŁÓWKOWY: zdania NOMINALNE bez czasownika. 'اتفاقٌ جديدٌ بينَ البلدينِ' = Nowe porozumienie między dwoma krajami. Domyślne: تَمَّ التوقيعُ على اتفاقٍ (Podpisano porozumienie). Media arabskie jak polskie: nagłówki bez czasownika ('Nowe porozumienie' zamiast 'Podpisano nowe porozumienie'). Tanwin wskazuje na nieokreśloność — w mediach MSA jest ZACHOWYWANY pisowniowo."
+      },
+      {
+        "id": "pa_ma2",
+        "question": "Medialny zwrot: أَفَادَ / صَرَّحَ / أَعلَنَ — wszystkie znaczą:",
+        "translation": "(ما القاسم المشترك بين هذه الأفعال؟)",
+        "options": [
+          "Poinformował/Oświadczył/Ogłosił (= synonimy 'media speech verbs')",
+          "Zaprzeczył",
+          "Zapytał",
+          "Przyszedł"
+        ],
+        "correct": "Poinformował/Oświadczył/Ogłosił (= synonimy 'media speech verbs')",
+        "explanation": "Medialny arabski ma WIELE SYNONIMÓW mówienia: أَفَادَ (afāda = poinformował), صَرَّحَ (ṣarraḥa = oświadczył), أَعْلَنَ (aʿlana = ogłosił), أَكَّدَ (akkada = potwierdził), نَفَى (nafā = zaprzeczył), ذَكَرَ (dhakara = wspomniał), أَشَارَ (ashāra = wskazał). Każdy ma NIUANS: صرّح = oficjalnie, أفاد = poinformował, أكّد = z naciskiem. Znajomość tych czasowników = klucz do czytania arabskich wiadomości."
+      },
+      {
+        "id": "pa_ma3",
+        "question": "مِنْ جِهَتِهِ / مِنْ جانبِهِ w wiadomościach znaczy:",
+        "translation": "(ما معنى من جهته / من جانبه؟)",
+        "options": [
+          "Ze swojej strony / Z kolei (= transitional phrase)",
+          "Z jego miasta",
+          "Naprzeciwko niego",
+          "Bez jego wiedzy"
+        ],
+        "correct": "Ze swojej strony / Z kolei (= transitional phrase)",
+        "explanation": "مِنْ جِهَتِهِ / مِنْ جَانِبِهِ = Ze swojej strony / Z kolei — formuły PRZEJŚCIOWE w reportażach. 'صرّحَ الوزيرُ... مِنْ جِهَتِهِ قالَ الرئيسُ...' = Minister oświadczył... Ze swojej strony prezydent powiedział... Funkcja: przejście od jednego rozmówcy do drugiego. Inne: فِي سِيَاقٍ مُتَّصِلٍ (w powiązanym kontekście), مِنْ نَاحِيَةٍ أُخْرَى (z drugiej strony). Styl dziennikarski — formalny, przejrzysty."
+      },
+      {
+        "id": "pa_ma4",
+        "question": "Medialny strona bierna: 'تَمَّ تَوْقِيعُ الاتفاقِيَّة' (dosłownie: zakończyło się podpisanie umowy) = :",
+        "translation": "(ما معنى تم توقيع الاتفاقية؟)",
+        "options": [
+          "Umowę PODPISANO (arabski odpowiednik strony biernej)",
+          "Nie podpisano umowy",
+          "Czy podpisano umowę?",
+          "Podpiszą umowę"
+        ],
+        "correct": "Umowę PODPISANO (arabski odpowiednik strony biernej)",
+        "explanation": "تَمَّ + masdar = medialny ODPOWIEDNIK strony biernej. تَمَّ تَوْقِيعُ = dosłownie: zakończyło się podpisanie = podpisano. W MSA mediów: تَمَّ jest NADUŻYWANE — puryści krytykują ('تَمَّ' jest prawdziwym czasownikiem = 'zakończyło się', nie powinno być tylko 'podpisano'). Alternatywa: وُقِّعَتِ الاتفاقيةُ (prawdziwa strona bierna). Ale تَمَّ + masdar jest DOMINUJĄCE w mediach."
+      },
+      {
+        "id": "pa_ma5",
+        "question": "وَفْقاً لِـ / طِبْقاً لِـ / حَسَبَ — w mediach = :",
+        "translation": "(ما معنى وفقًا لـ / طبقًا لـ / حسب؟)",
+        "options": [
+          "Zgodnie z / Według (= sourcing phrases)",
+          "Wbrew",
+          "Bez",
+          "Na przekór"
+        ],
+        "correct": "Zgodnie z / Według (= sourcing phrases)",
+        "explanation": "Formuły ŹRÓDŁOWE w mediach: وَفْقاً لِـ (wafqan li = zgodnie z), طِبْقاً لِـ (ṭibqan li = stosownie do), حَسَبَ (ḥasaba = według), بِحَسَبِ (bi-ḥasabi = wedle), اسْتِناداً إلى (istinadan ilā = opierając się na). 'وفقاً لمصادرَ مطلعة' = Według dobrze poinformowanych źródeł. Ten zwrot słyszysz w KAŻDYM arabskim serwisie informacyjnym. Kluczowe słownictwo dla czytania prasy."
+      },
+      {
+        "id": "pa_ma6",
+        "question": "نَدَّدَ بِـ / أَدَانَ / اِسْتَنْكَرَ — w mediach = :",
+        "translation": "(ما معنى ندّد / أدان / استنكر؟)",
+        "options": [
+          "Potępił / Osądził / Zaprotestował (= condemnation verbs)",
+          "Pochwalił",
+          "Zaprosił",
+          "Pogratulował"
+        ],
+        "correct": "Potępił / Osądził / Zaprotestował (= condemnation verbs)",
+        "explanation": "Medialny arabski — czasowniki POTĘPIENIA: نَدَّدَ بِـ (naddada bi = potępił), أَدَانَ (adāna = osądził/potępił), اِسْتَنْكَرَ (istankara = wyraził oburzenie), رَفَضَ (rafaḍa = odrzucił), شَجَبَ (shajaba = napiętnował). 'نَدَّدَ الرئيسُ بِالهُجُومِ' = Prezydent potępił atak. Te czasowniki pojawiają się w KAŻDYM konflikcie — klucz do zrozumienia arabskich wiadomości politycznych."
+      },
+      {
+        "id": "pa_ma7",
+        "question": "بَيَانٌ صَحَفِيّ w mediach = :",
+        "translation": "(ما معنى بيان صحفي؟)",
+        "options": [
+          "Komunikat/Oświadczenie prasowe",
+          "Gazeta codzienna",
+          "Dziennikarz prywatny",
+          "Artykuł opiniotwórczy"
+        ],
+        "correct": "Komunikat/Oświadczenie prasowe",
+        "explanation": "بَيَانٌ صَحَفِيّ (bayān ṣaḥafiyy) = komunikat/oświadczenie prasowe. بَيَان = oświadczenie (od بَيَّنَ = wyjaśnić), صَحَفِيّ = prasowy (od صَحِيفَة = gazeta). Inne medialne: مُؤْتَمَر صَحَفِيّ (konferencja prasowa), تَقْرِير (raport), مُقَابَلَة (wywiad), تَحْقِيق (reportaż/śledztwo), افْتِتَاحِيَّة (artykuł wstępny). Słownictwo medialne to ODRĘBNY rejestr arabskiego — formalny, ale współczesny."
+      },
+      {
+        "id": "pa_ma8",
+        "question": "المَنْدُوب / المُرَاسِل / المُحَلِّل — w mediach = :",
+        "translation": "(ما الفرق بين المندوب والمراسل والمحلل؟)",
+        "options": [
+          "Korespondent / Reporter / Analityk (role w mediach)",
+          "Trzy nazwy tego samego stanowiska",
+          "Polityk / Dyplomata / Sędzia",
+          "Czytelnik / Widz / Słuchacz"
+        ],
+        "correct": "Korespondent / Reporter / Analityk (role w mediach)",
+        "explanation": "Role medialne: المَنْدُوب (mandūb = korespondent/delegat), المُرَاسِل (murāsil = reporter/korespondent zagraniczny), المُحَلِّل (muḥallil = analityk), المُذِيع (mudhīʿ = prezenter), المُحَرِّر (muḥarrir = redaktor), الكَاتِب (kātib = publicysta). 'معنا المراسلُ من بيروت' = Z nami korespondent z Bejrutu — typowy zwrot w arabskich wiadomościach telewizyjnych."
+      },
+      {
+        "id": "pa_ma9",
+        "question": "Medialny czas: 'يُتَوَقَّعُ أَنْ...' znaczy:",
+        "translation": "(ما معنى يُتوقع أن؟)",
+        "options": [
+          "Oczekuje się, że... (strona bierna bezosobowa)",
+          "Nie oczekuje się",
+          "Kto oczekuje?",
+          "Oczekiwano, że"
+        ],
+        "correct": "Oczekuje się, że... (strona bierna bezosobowa)",
+        "explanation": "يُتَوَقَّعُ أَنْ (yutawaqqa'u an) = oczekuje się, że — strona bierna BEZOSOBOWA (bez agensa). Inna: يُعتَقَدُ أَنَّ (uważa się, że), يُرَجَّحُ أَنَّ (przypuszcza się, że), يُذكَرُ أَنَّ (wspomina się, że). W polskim: 'oczekuje się / uważa się' — ta sama bezosobowa strona bierna. W arabskim: prefiks يُـ + wzorzec bierny. Bardzo częste w mediach — źródło nieznane lub ukryte."
+      },
+      {
+        "id": "pa_ma10",
+        "question": "عَاجِل! (ʿājil) w wiadomościach = :",
+        "translation": "(ما معنى عاجل في الأخبار؟)",
+        "options": [
+          "PILNE! / Breaking News!",
+          "Spokojne wiadomości",
+          "Stare wiadomości",
+          "Ostatnie wiadomości dnia"
+        ],
+        "correct": "PILNE! / Breaking News!",
+        "explanation": "عَاجِل (ʿājil) = pilne/natychmiastowe. خَبَر عَاجِل = wiadomość pilna = Breaking News. Od root ع-ج-ل = śpieszyć. Inne: أَخْبَار عَاجِلَة (wiadomości pilne), بَثّ مُبَاشِر (transmisja na żywo), آخِرُ الأَخبار (ostatnie wiadomości), أَبْرَزُ الأَحداث (najważniejsze wydarzenia). Te wyrazy NATYCHMIAST identyfikują kontekst medialny — klucz do zrozumienia arabskich kanałów informacyjnych."
+      },
+      {
+        "id": "pa_ma11",
+        "question": "فِي تَطَوُّرٍ لَافِتٍ w mediach = :",
+        "translation": "(ما معنى في تطور لافت؟)",
+        "options": [
+          "W godnym uwagi rozwoju (wydarzeń) / W znaczącym zwrocie",
+          "W powolnym tempie",
+          "Bez zmian",
+          "W normalnym biegu"
+        ],
+        "correct": "W godnym uwagi rozwoju (wydarzeń) / W znaczącym zwrocie",
+        "explanation": "في تَطَوُّرٍ لَافِتٍ = W godnym uwagi rozwoju (wydarzeń) / W znaczącym obrocie spraw. تَطَوُّر = rozwój/ewolucja (od ط-و-ر), لَافِت = przyciągający uwagę (od ل-ف-ت = zwracać uwagę). Inne: فِي تَصْعِيدٍ خَطِيرٍ (w niebezpiecznej eskalacji), فِي خُطْوَةٍ غيرِ مسبوقةٍ (w bezprecedensowym kroku). Te formuły DRAMATYZUJĄ wiadomości — styl medialny arabski jest RETORYCZNY."
+      },
+      {
+        "id": "pa_ma12",
+        "question": "أَسْفَرَتِ المُحادَثاتُ عَنْ... w mediach = :",
+        "translation": "(ما معنى أسفرت المحادثات عن؟)",
+        "options": [
+          "Rozmowy zaowocowały / doprowadziły do...",
+          "Rozmowy się nie odbyły",
+          "Rozmowy rozpoczęły się",
+          "Rozmowy zostały odwołane"
+        ],
+        "correct": "Rozmowy zaowocowały / doprowadziły do...",
+        "explanation": "أَسْفَرَتْ... عَنْ = zaowocowały/ujawniły/doprowadziły do. أَسْفَرَ (asfara) dosłownie = odsłonić twarz (od س-ف-ر = podróżować/odsłaniać). 'أسفرتِ المحادثاتُ عن اتفاقٍ' = Rozmowy doprowadziły do porozumienia. Inne medialne zwroty wynikowe: نَتَجَ عَنْ (wynikło z), أَدَّى إلى (doprowadziło do), تَمَخَّضَ عَنْ (zrodziło). Metaforyczne i formalne — typowy styl medialny."
+      },
+      {
+        "id": "pa_ma13",
+        "question": "المُعَارَضَة / المُوَالَاة w mediach politycznych = :",
+        "translation": "(ما معنى المعارضة والموالاة؟)",
+        "options": [
+          "Opozycja / Lojalność (rządowa) = dwa obozy polityczne",
+          "Pokój / Wojna",
+          "Prawo / Lewo",
+          "Miasto / Wieś"
+        ],
+        "correct": "Opozycja / Lojalność (rządowa) = dwa obozy polityczne",
+        "explanation": "المُعَارَضَة (muʿāraḍa) = opozycja (od ع-ر-ض = sprzeciwiać się). المُوَالَاة (muwālāt) = lojalność/frakcja prorządowa (od و-ل-ي = być bliskim/lojalnym). Medialne: حِزْب (partia), ائتلاف (koalicja), تَيَّار (nurt/prąd), جَبْهَة (front). 'صرّحت المعارضةُ بأنّ...' = Opozycja oświadczyła, że... Kluczowe słownictwo polityczne — niezbędne do czytania arabskiej prasy."
+      },
+      {
+        "id": "pa_ma14",
+        "question": "Na koniec wiadomości: 'إلى ذلكَ...' znaczy:",
+        "translation": "(ما معنى إلى ذلك في الأخبار؟)",
+        "options": [
+          "Ponadto / W innej sprawie (transitional phrase)",
+          "Na zakończenie",
+          "Wbrew temu",
+          "Z tego powodu"
+        ],
+        "correct": "Ponadto / W innej sprawie (transitional phrase)",
+        "explanation": "إلى ذلكَ = Ponadto / Oprócz tego / W innej sprawie — medialny spójnik przejściowy. 'إلى ذلك أعلن الرئيسُ...' = Ponadto prezydent ogłosił... Inne przejściowe: مِنْ جِهَةٍ أُخرى (z drugiej strony), في سياقٍ آخَرَ (w innym kontekście), وكَانَ (a było/wcześniej). Te formuły STRUKTURYZUJĄ reportaże — identyczne funkcjonalnie z polskim 'Tymczasem / Ponadto / Z kolei'."
+      },
+      {
+        "id": "pa_ma15",
+        "question": "Język mediów arabskich jest BLIŻSZY:",
+        "translation": "(لغة الإعلام أقرب إلى ماذا؟)",
+        "options": [
+          "فُصحى z uproszczonym إعراب (MSA lekka)",
+          "Czystej فصحى koranicznej",
+          "Dialektu egipskiego",
+          "Angielskiego"
+        ],
+        "correct": "فُصحى z uproszczonym إعراب (MSA lekka)",
+        "explanation": "Medialny arabski = 'MSA lekka' = fuṣḥā z uproszczeniami: 1) إعراب skrócony (pauza końcowa częstsza), 2) Słownictwo nowoczesne (ديمقراطية = demokracja, تكنولوجيا = technologia), 3) Struktury prostsze niż klasyczne, 4) Wpływy dialektalne minimalne (ale obecne). To TRZECI poziom: między czystą فصحى a dialektem. Polak uczący się arabskiego: media to NAJLEPSZE źródło 'realnego MSA'."
+      }
+    ]
+  },
+  {
+    "key": "literary_arabic",
+    "name": "Arabski literacki (الأدب العربي)",
+    "description": "خصائص اللغة الأدبية والشعرية العربية",
+    "iconName": "book.pages",
+    "color": "#fbbf24",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pa_la1",
+        "question": "البَلَاغَة (al-balāgha) w tradycji arabskiej = :",
+        "translation": "(ما هي البلاغة؟)",
+        "options": [
+          "Retoryka/Stylistyka (nauka o pięknym wyrażaniu)",
+          "Gramatyka",
+          "Fonetyka",
+          "Składnia"
+        ],
+        "correct": "Retoryka/Stylistyka (nauka o pięknym wyrażaniu)",
+        "explanation": "البَلَاغَة (balāgha) = retoryka/stylistyka — nauka o artystycznym wyrażaniu myśli. Trzy działy: 1) عِلم المعاني (semantyka retoryczna — szyk, emfaza), 2) عِلم البيان (obrazowanie — metafora, porównanie), 3) عِلم البديع (ozdoby — aliteracja, antyteza). To UNIKALNA arabska tradycja retoryczna — rozwinięta od VIII w. W polskim odpowiedniki: stylistyka, retoryka, poetyka."
+      },
+      {
+        "id": "pa_la2",
+        "question": "تَشْبِيه (tashbīh) w retoryce = :",
+        "translation": "(ما هو التشبيه؟)",
+        "options": [
+          "Porównanie (X jest JAK Y)",
+          "Metafora",
+          "Metonimia",
+          "Przesada"
+        ],
+        "correct": "Porównanie (X jest JAK Y)",
+        "explanation": "التَّشْبِيه (tashbīh) = porównanie. Elementy: 1) المُشَبَّه (porównywane): 'Twarz', 2) المُشَبَّه بِهِ (do czego): 'księżyc', 3) أداة التشبيه (narzędzie): كَـ/مِثْلَ/كأنَّ (jak), 4) وَجْه الشَّبَه (punkt wspólny): jasność. 'وَجْهُهَا كالقَمَرِ' = Jej twarz (jest) jak księżyc. W polskim: 'piękna jak księżyc'. Arabska retoryka klasyfikuje 8+ typów porównania — od prostych po złożone!"
+      },
+      {
+        "id": "pa_la3",
+        "question": "اِسْتِعَارَة (istiʿāra) w retoryce = :",
+        "translation": "(ما هي الاستعارة؟)",
+        "options": [
+          "Metafora (przenośnia bez 'jak')",
+          "Porównanie z 'jak'",
+          "Powtórzenie",
+          "Pytanie retoryczne"
+        ],
+        "correct": "Metafora (przenośnia bez 'jak')",
+        "explanation": "الاِسْتِعَارَة (istiʿāra) = metafora = porównanie BEZ narzędzia porównania (bez كَـ/مِثْلَ). 'رأيتُ قَمَراً في الفصل' = Widziałem KSIĘŻYC w klasie (= piękną osobę). Nie dosłownie księżyc — metafora! Typy: 1) تصريحية (jawna — wymieniony المشبه به: księżyc), 2) مَكنية (ukryta — domyślny المشبه به). W polskim: 'Ta dziewczyna to księżyc' — metafora. Arabska retoryka rozwija tę klasyfikację bardziej niż europejska."
+      },
+      {
+        "id": "pa_la4",
+        "question": "كِنَايَة (kināya) w retoryce = :",
+        "translation": "(ما هي الكناية؟)",
+        "options": [
+          "Metonimia/Peryfraza (mówienie nie wprost)",
+          "Metafora",
+          "Porównanie",
+          "Ironia"
+        ],
+        "correct": "Metonimia/Peryfraza (mówienie nie wprost)",
+        "explanation": "الكِنَايَة (kināya) = mówienie nie wprost / metonimia-peryfraza. 'طَوِيلُ النَّجَادِ' (długi pasek miecza) = wysoki człowiek. 'كَثِيرُ الرَّمَادِ' (dużo popiołu) = hojny (bo dużo gotuje dla gości). Kināya mówi jedno, a znaczy drugie — ale DOSŁOWNE znaczenie też jest możliwe. Różnica od metafory: metafora = dosłowne znaczenie NIEMOŻLIWE ('księżyc w klasie'), kināya = dosłowne MOŻLIWE, ale przenośne ZAMIERZONE."
+      },
+      {
+        "id": "pa_la5",
+        "question": "الجِنَاس (jināsu) w badīʿ = :",
+        "translation": "(ما هو الجناس؟)",
+        "options": [
+          "Paronomazja/gra słów (wyrazy podobne brzmieniowo, różne znaczeniowo)",
+          "Powtórzenie tego samego wyrazu",
+          "Rym",
+          "Metafora"
+        ],
+        "correct": "Paronomazja/gra słów (wyrazy podobne brzmieniowo, różne znaczeniowo)",
+        "explanation": "الجِنَاس (jināsu) = paronomazja = gra słów o podobnym brzmieniu, ale różnym znaczeniu. تام (pełna): يَحْيَا (żyje) / يَحْيَى (imię Yahya). ناقص (niepełna): مُسْلِم (muzułmanin) / مُسَلِّم (wręczający). Koran: 'وَيَوْمَ تَقُومُ السَّاعَةُ يُقْسِمُ المُجْرِمُونَ مَا لَبِثُوا غَيْرَ سَاعَةٍ' — ساعة (Godzina/Zmartwychwstanie) i ساعة (godzina zegarowa). Mistrzowska gra słów!"
+      },
+      {
+        "id": "pa_la6",
+        "question": "الطِّبَاق (ṭibāq) w badīʿ = :",
+        "translation": "(ما هو الطباق؟)",
+        "options": [
+          "Antyteza (zestawienie przeciwieństw: noc/dzień)",
+          "Powtórzenie",
+          "Rym",
+          "Metafora"
+        ],
+        "correct": "Antyteza (zestawienie przeciwieństw: noc/dzień)",
+        "explanation": "الطِّبَاق (ṭibāq) = antyteza = zestawienie PRZECIWIEŃSTW w jednym zdaniu. 'يُحْيِي وَيُمِيتُ' = Ożywia i uśmierca (Koran). 'اللَّيْلُ وَالنَّهَارُ' = Noc i dzień. إيجابي (pozytywna antyteza): dwa przeciwstawne wyrazy. سلبي (negatywna): ten sam wyraz raz z negacją: يَعْلَمُ وَلَا يَعْلَمُ (wie i nie wie). W polskim: 'To kochać, to nienawidzić' — ta sama figura."
+      },
+      {
+        "id": "pa_la7",
+        "question": "Metr poetycki (بَحْر) w klasycznej poezji arabskiej — ile jest głównych?",
+        "translation": "(كم بحراً شعرياً رئيسياً في الشعر العربي؟)",
+        "options": [
+          "16 (system al-Khalīla ibn Aḥmada)",
+          "2 (krótki i długi)",
+          "5 (jak japońskie haiku)",
+          "32"
+        ],
+        "correct": "16 (system al-Khalīla ibn Aḥmada)",
+        "explanation": "16 metrów (بُحُور) w systemie الخليل بن أحمد (al-Khalīl ibn Aḥmad, VIII w.): الطَّويل, المَدِيد, البَسِيط, الوَافِر, الكَامِل, الهَزَج, الرَّجَز, الرَّمَل, السريع, المنسرح, الخفيف, المضارع, المقتضب, المجتث, المتقارب, المتدارك. Każdy ma stały schemat: فَعُولُنْ, مَفَاعِيلُنْ, إلخ. To NAJBOGATSZY system metryczny na świecie — rozwinięty 300 lat przed europejską prozodią."
+      },
+      {
+        "id": "pa_la8",
+        "question": "القَصِيدَة (qaṣīda) w klasycznej poezji to:",
+        "translation": "(ما هي القصيدة؟)",
+        "options": [
+          "Oda/Poemat z jednym rymem (AA BA CA DA...)",
+          "Wiersz wolny",
+          "Haiku po arabsku",
+          "Proza poetycka"
+        ],
+        "correct": "Oda/Poemat z jednym rymem (AA BA CA DA...)",
+        "explanation": "القَصِيدَة (qaṣīda) = klasyczny arabski poemat: 1) Jeden RYM (قافية) w całym poemacie (np. wszystkie wersy kończą się na -ب), 2) Jeden METR (بحر) w całym poemacie, 3) Każdy wers (بَيْت) dzieli się na: صَدْر (przód) + عَجُز (tył). Typowa qaṣīda: 20-100+ wersów! Początek: نَسِيب (erotyczny wstęp), środek: رِحْلَة (podróż), koniec: مَدْح (pochwała). Najstarsza forma arabskiej poezji."
+      },
+      {
+        "id": "pa_la9",
+        "question": "المُعَلَّقَات (al-muʿallaqāt) = :",
+        "translation": "(ما هي المعلقات؟)",
+        "options": [
+          "7 (lub 10) najsłynniejszych przedislamskich qaṣīd (Wiszące Ody)",
+          "Współczesne wiersze",
+          "Modlitwy islamskie",
+          "Teksty prawnicze"
+        ],
+        "correct": "7 (lub 10) najsłynniejszych przedislamskich qaṣīd (Wiszące Ody)",
+        "explanation": "المُعَلَّقَات (muʿallaqāt) = 'Wiszące (Ody)' — 7 (lub 10) najsłynniejszych qaṣīd z epoki przedislamskiej (الجاهلية). Nazwa: rzekomo 'zawieszone' (عُلِّقَتْ) na ścianach Kaaby. Poeci: اِمْرُؤ القَيْس, طَرَفَة, زُهَيْر, لَبِيد, عَنْتَرَة, عَمْرو بن كُلْثوم, الحارث. To FUNDAMENT arabskiej literatury — odpowiednik Iliady/Odysei. Każdy wykształcony Arab zna przynajmniej fragmenty."
+      },
+      {
+        "id": "pa_la10",
+        "question": "السَّجْع (sajʿ) w prozie arabskiej = :",
+        "translation": "(ما هو السجع؟)",
+        "options": [
+          "Proza rymowana (zdania kończą się regularnym rymem)",
+          "Proza bez rymu",
+          "Poezja bez metrum",
+          "Dialog teatralny"
+        ],
+        "correct": "Proza rymowana (zdania kończą się regularnym rymem)",
+        "explanation": "السَّجْع (sajʿ) = proza rymowana — zdania (فواصل) kończą się rymem, ale bez stałego metrum. Koran: 'وَالضُّحَى · وَاللَّيْلِ إِذَا سَجَى' — rym na -ى. مقامات (maqāmāt) الحريري = arcydzieło sajʿ (XI w.). Koran jest w sajʿ — NIE w poezji (brak metrum), NIE w prozie zwykłej (jest rym). To UNIKALNA forma literacka — między wierszem a prozą."
+      },
+      {
+        "id": "pa_la11",
+        "question": "الشِّعْر الحُرّ (ash-shiʿr al-ḥurr) = :",
+        "translation": "(ما هو الشعر الحر؟)",
+        "options": [
+          "Wiersz wolny (od lat 1940+ — bez stałego rymu i schematu)",
+          "Klasyczna qaṣīda",
+          "Proza",
+          "Dramat"
+        ],
+        "correct": "Wiersz wolny (od lat 1940+ — bez stałego rymu i schematu)",
+        "explanation": "الشِّعْر الحُرّ (shiʿr ḥurr) = wiersz wolny — modernistyczny ruch poetycki od lat 1940. Pionierzy: نَازِك الملائكة (Nāzik al-Malāʾika, Irak, 1947), بَدْر شاكر السَّيَّاب (Badr Shākir as-Sayyāb). Cechy: 1) Zachowuje metrykę (تفعيلة) ale bez stałej liczby stóp, 2) Rym zmienny lub brak, 3) Wers różnej długości. Porównaj z polskim wierszem wolnym (Przyboś, Herbert). Rewolucja literacka arab."
+      },
+      {
+        "id": "pa_la12",
+        "question": "الإِعْجَاز القُرْآني (iʿjāz qurʾānī) = :",
+        "translation": "(ما معنى الإعجاز القرآني؟)",
+        "options": [
+          "Cudowność/Niedoścignioność Koranu (lingwistyczna i retoryczna)",
+          "Tłumaczenie Koranu",
+          "Recytacja Koranu",
+          "Pisanie Koranu"
+        ],
+        "correct": "Cudowność/Niedoścignioność Koranu (lingwistyczna i retoryczna)",
+        "explanation": "الإِعْجَاز (iʿjāz) = cudowność/niedoścignioność — dogmat teologiczny i literacki: Koran jest NIENAŚLADOWALNY językowo. Wyzwanie (تَحَدٍّ): 'Przynieście surę podobną' (Koran 2:23). Aspekty: 1) Lingwistyczny (unikalny styl — ani poezja, ani proza), 2) Retoryczny (figury stylistyczne), 3) Strukturalny (kompozycja). To CENTRALNE pojęcie arabskiej lingwistyki — gramatyka arabska rozwinęła się DZIĘKI studiowaniu Koranu."
+      },
+      {
+        "id": "pa_la13",
+        "question": "1001 Nights po arabsku = :",
+        "translation": "(ما اسم ألف ليلة وليلة بالعربية؟)",
+        "options": [
+          "أَلْفُ لَيْلَةٍ وَلَيْلَة (Alf Layla wa-Layla)",
+          "كتاب الأغاني",
+          "المقامات",
+          "كليلة ودمنة"
+        ],
+        "correct": "أَلْفُ لَيْلَةٍ وَلَيْلَة (Alf Layla wa-Layla)",
+        "explanation": "أَلْفُ لَيْلَةٍ وَلَيْلَة (Alf Layla wa-Layla) = Tysiąc Nocy i jedna Noc. Gramatycznie: ألف + ليلةٍ (إضافة: tysiąc nocy) + وَ (i) + ليلة (jedna noc). Najsłynniejsze dzieło prozy arabskiej — zbiór opowieści z ramą narracyjną (شهرزاد i شهريار). Język: mieszanka فصحى i عامية (w zależności od rękopisu). Aladyn, Ali Baba, Sindbad — wszystkie stąd! Literacki most między Wschodem a Zachodem."
+      },
+      {
+        "id": "pa_la14",
+        "question": "نَجِيب مَحْفُوظ (Nadżib Mahfuz) to:",
+        "translation": "(من هو نجيب محفوظ؟)",
+        "options": [
+          "Egipski pisarz — jedyny Arab z Noblem w literaturze (1988)",
+          "Poeta klasyczny",
+          "Gramatyk z Basry",
+          "Dziennikarz z Al-Jazeery"
+        ],
+        "correct": "Egipski pisarz — jedyny Arab z Noblem w literaturze (1988)",
+        "explanation": "نَجِيب مَحْفُوظ (Najīb Maḥfūẓ, 1911-2006) = egipski powieściopisarz, Nobel 1988 — JEDYNY Arab laureat Nobla w literaturze. Dzieła: ثُلَاثِيَّة القاهرة (Trylogia Kairska), أَوْلَاد حَارَتِنَا (Dzieci naszej ulicy). Styl: realizm, dialog dialektem egipskim, narracja w فصحى. Kontrowersje: atak fundamentalistów (1994). Fundament współczesnej prozy arabskiej — jak Sienkiewicz/Reymont dla polskiej."
+      },
+      {
+        "id": "pa_la15",
+        "question": "مَحْمُود دَرْوِيش (Mahmoud Darwish) jest znany jako:",
+        "translation": "(بماذا يُعرف محمود درويش؟)",
+        "options": [
+          "Palestyński poeta narodowy — ikona poezji oporu",
+          "Iracki dramaturg",
+          "Syryjski powieściopisarz",
+          "Libański dziennikarz"
+        ],
+        "correct": "Palestyński poeta narodowy — ikona poezji oporu",
+        "explanation": "مَحْمُود دَرْوِيش (Maḥmūd Darwīsh, 1941-2008) = 'poeta Palestyny' — ikona شِعر المقاومة (poezji oporu). Najsłynniejszy wiersz: سَجِّلْ أَنَا عَرَبِيّ (Zanotuj! Jestem Arabem). Styl: od wierszy prostych/protestacyjnych do głębokiej symboliki. Darwish łączył politykę z liryzmem — czytany w CAŁYM świecie arabskim. Dla Polaków: porównanie z poezją Czesława Miłosza (wygnanie, pamięć, ojczyzna)."
+      }
+    ]
+  },
+  {
+    "key": "quran_grammar_basics",
+    "name": "Podstawy gramatyki koranicznej (أساسيات النحو القرآني)",
+    "description": "أساسيات الإعراب والنحو في القرآن الكريم",
+    "iconName": "book.closed",
+    "color": "#4ade80",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pa_qg1",
+        "question": "Koran po arabsku = :",
+        "translation": "(ما اسم القرآن بالعربية؟)",
+        "options": [
+          "القُرْآن الكَرِيم (al-Qurʾān al-Karīm = Szlachetny Koran)",
+          "الإنجيل (Ewangelia)",
+          "التوراة (Tora)",
+          "الكتاب المقدس (Biblia)"
+        ],
+        "correct": "القُرْآن الكَرِيم (al-Qurʾān al-Karīm = Szlachetny Koran)",
+        "explanation": "القُرْآن (al-Qurʾān) — od root ق-ر-أ = czytać/recytować. Dosłownie: 'Recytacja.' الكَرِيم = szlachetny/czcigodny. 114 سُوَر (sur = rozdziałów), 6236+ آيَات (ajatów = wersów). Koran jest napisany w arabskim klasycznym VII w. — to FUNDAMENT arabskiej gramatyki. Gramatyka arabska powstała DOSŁOWNIE po to, by poprawnie czytać Koran (بصرة vs كوفة — szkoły gramatyczne)."
+      },
+      {
+        "id": "pa_qg2",
+        "question": "بِسْمِ اللهِ w 'بِسْمِ اللهِ الرحمنِ الرحيمِ' — اسم jest w:",
+        "translation": "(ما إعراب اسم في بسم الله؟)",
+        "options": [
+          "Dopełniaczu (مجرور) — bo po przyimku بِـ i w إضافة z الله",
+          "Mianowniku",
+          "Bierniku",
+          "Bez deklinacji"
+        ],
+        "correct": "Dopełniaczu (مجرور) — bo po przyimku بِـ i w إضافة z الله",
+        "explanation": "بِسْمِ: بِـ (przyimek) wymusza dopełniacz → اسْمِ (مجرور بالكسرة). اللهِ = مضاف إليه (też dopełniacz). الرحمنِ, الرحيمِ = صفات (przymiotniki do الله — zgodne w dopełniaczu). Cały zwrot: جار ومجرور (przyimek + dopełniacz) w pozycji حال lub متعلق بفعل محذوف (أبدأُ = zaczynam). Hamza اسم jest ألف وصل — wymawiana tylko na początku."
+      },
+      {
+        "id": "pa_qg3",
+        "question": "Koraniczne كاف w 'لَيْسَ كَمِثْلِهِ شَيْءٌ' — funkcja:",
+        "translation": "(ما وظيفة الكاف في ليس كمثله شيء؟)",
+        "options": [
+          "كاف زائدة (wtrącone = Nic nie jest JAK On / Nic Mu nie dorówna)",
+          "كاف التشبيه (porównanie)",
+          "كاف الجزاء (kara)",
+          "كاف القسم (przysięga)"
+        ],
+        "correct": "كاف زائدة (wtrącone = Nic nie jest JAK On / Nic Mu nie dorówna)",
+        "explanation": "W 'لَيْسَ كَمِثْلِهِ شَيْءٌ' (Ash-Shūrā 42:11): كَـ jest زائدة (wtrącone/wzmacniające). Logika: gdyby كَـ było porównaniem: 'Nic nie jest jak JAK-ON' — podwójne! مِثْل = jak/podobieństwo. Więc: كَـ tu WZMACNIA negację podobieństwa. Bez كَ: لَيْسَ مِثْلَهُ شَيْءٌ = Nic nie jest Mu podobne. Z كَـ: silniejsze — ABSOLUTNIE nic nie jest podobne. Klasyka koranicznej gramatyki."
+      },
+      {
+        "id": "pa_qg4",
+        "question": "Koraniczne وَاو w 'وَالسَّمَاءِ ذَاتِ البُرُوج' jest:",
+        "translation": "(ما نوع الواو في والسماء ذات البروج؟)",
+        "options": [
+          "وَاو القَسَم (przysięgi = Przysięgam na niebo z gwiazdozbiorami)",
+          "واو العطف (spójnikowe)",
+          "واو الحال (okoliczności)",
+          "واو الاستئناف (nowego zdania)"
+        ],
+        "correct": "وَاو القَسَم (przysięgi = Przysięgam na niebo z gwiazdozbiorami)",
+        "explanation": "وَاو القَسَم (wāw al-qasam) = واو przysięgi — wymaga po sobie DOPEŁNIACZA. 'وَالسَّمَاءِ ذَاتِ البُرُوجِ' (Al-Burūj 85:1) = Na/Przysięgam na niebo z gwiazdozbiorami. السماءِ w dopełniaczu bo po واو القسم. Koran pełen przysiąg: وَالشَّمْسِ (Na słońce), وَاللَّيْلِ (Na noc), وَالفَجْرِ (Na świt). Tylko Bóg przysięga na stworzenie — podkreśla Jego wszechmoc."
+      },
+      {
+        "id": "pa_qg5",
+        "question": "Koraniczny لَا w 'لَا أُقْسِمُ' (Koran 75:1) jest:",
+        "translation": "(ما نوع لا في لا أقسم؟)",
+        "options": [
+          "لَا الزائدة (wtrącone = DOPRAWDĘ przysięgam!) — wzmocnienie, nie negacja",
+          "لَا النافية (negacja = NIE przysięgam)",
+          "لَا الناهية (zakaz = nie przysięgaj!)",
+          "لَا العاطفة (spójnik)"
+        ],
+        "correct": "لَا الزائدة (wtrącone = DOPRAWDĘ przysięgam!) — wzmocnienie, nie negacja",
+        "explanation": "لَا أُقْسِمُ (lā uqsimu) = DOPRAWDĘ przysięgam — paradoks! لَا tu jest زائدة (wtrącone) = NIE neguje, lecz WZMACNIA. Gdyby negowało: 'Nie przysięgam na Dzień Zmartwychwstania' — co nie ma sensu w kontekście (sura Al-Qiyāma). Gramatycy: لَا jest tu emfatyczne — jak polskie 'No, przysięgam!' To typowy przykład koranicznej gramatyki, która zaskakuje nawet native speakerów."
+      },
+      {
+        "id": "pa_qg6",
+        "question": "Koraniczny إِنَّا w 'إِنَّا أَنْزَلْنَاهُ' — مَا (nā) jest:",
+        "translation": "(ما نوع نا في إنّا أنزلناه؟)",
+        "options": [
+          "ضمير جمع المتكلم (my/nas — pluralis majestatis Boga)",
+          "Zaimek 'on'",
+          "Zaimek 'ty'",
+          "Zaimek 'oni'"
+        ],
+        "correct": "ضمير جمع المتكلم (my/nas — pluralis majestatis Boga)",
+        "explanation": "إِنَّا = إِنَّ + نَا (my). 'إِنَّا أَنْزَلْنَاهُ' = Zaprawdę MY go zesłaliśmy (o Koranie, sura Al-Qadr 97:1). نَا = 'my' — to Bóg mówi o Sobie w LICZBIE MNOGIEJ (pluralis majestatis = 'my królewskie'). W Koranie: Bóg używa أَنَا (ja) i نَحْنُ (my) zamiennie. 'My' nie = wielobóstwo, lecz = majestat, potęga, wielkość. W polskim: 'My, król...' — ta sama forma."
+      },
+      {
+        "id": "pa_qg7",
+        "question": "Koraniczny أَلَمْ في 'أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ' (94:1) — funkcja:",
+        "translation": "(ما وظيفة ألم هنا؟)",
+        "options": [
+          "Pytanie retoryczne (= Czyż nie otworzyliśmy twojej piersi? = TAK, otworzyliśmy!)",
+          "Prawdziwe pytanie oczekujące odpowiedzi",
+          "Negacja (nie otworzyliśmy)",
+          "Warunek (jeśli otworzyliśmy)"
+        ],
+        "correct": "Pytanie retoryczne (= Czyż nie otworzyliśmy twojej piersi? = TAK, otworzyliśmy!)",
+        "explanation": "أَلَمْ = أَ (hamza pytająca) + لَمْ (negacja + مجزوم). 'أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ?' = Czyż nie otworzyliśmy twojej piersi? Pytanie retoryczne = POTWIERDZENIE (= TAK, otworzyliśmy!). الاستفهام الإنكاري = pseudo-pytanie = emfatyczne TAK. W Koranie: أَلَمْ jest BARDZO częste — zawsze retoryczne. W polskim: 'Czyż nie pomogłem ci?' = Pomogłem ci! Ta sama technika."
+      },
+      {
+        "id": "pa_qg8",
+        "question": "Koraniczny إِيَّاكَ w 'إِيَّاكَ نَعْبُدُ' (1:5) — funkcja:",
+        "translation": "(ما وظيفة إياك هنا؟)",
+        "options": [
+          "مفعول به مقدم (dopełnienie przesunięte = Ciebie JEDYNEGO czcimy)",
+          "Podmiot",
+          "Orzeczenie",
+          "Przydawka"
+        ],
+        "correct": "مفعول به مقدم (dopełnienie przesunięte = Ciebie JEDYNEGO czcimy)",
+        "explanation": "إِيَّاكَ نَعْبُدُ = Ciebie (jedynego) czcimy. إيّاك = zaimek osobowy oddzielny (izolowany) w bierniku = 'Ciebie.' Przesunięcie na początek (تقديم) = OGRANICZENIE: TYLKO Ciebie, nikogo innego. Normalny szyk: نعبدُكَ (czcimy Cię — neutralne). Z przesunięciem: إيّاكَ نعبدُ (CIEBIE czcimy — emfatyczne/ograniczające). To Al-Fātiḥa (Otwierająca) — najczęściej recytowana sura Koranu."
+      },
+      {
+        "id": "pa_qg9",
+        "question": "Koraniczny ن w 'لَنَسْفَعاً' (96:15) — co to?",
+        "translation": "(ما نون التوكيد في لنسفعاً؟)",
+        "options": [
+          "نون التوكيد الخفيفة (lekka nun emfatyczna = NA PEWNO chwycimy!)",
+          "نون الوقاية (ochronna)",
+          "نون النسوة (żeńska)",
+          "نون المثنى (podwójna)"
+        ],
+        "correct": "نون التوكيد الخفيفة (lekka nun emfatyczna = NA PEWNO chwycimy!)",
+        "explanation": "نون التوكيد الخفيفة (nūn at-tawkīd al-khafīfa) = LEKKA nun emfatyczna — zapisywana jako alif z tanwinem (ـاً), ale wymawiana -an. 'لَنَسْفَعاً بِالنَّاصِيَة' (Al-ʿAlaq 96:15) = NA PEWNO chwycimy za czub! Dwa typy nun emfatycznego: ثقيلة (ciężka = -anna): لَنَسْفَعَنَّ, خفيفة (lekka = -an): لَنَسْفَعاً. Oba wzmacniają przyszłość/groźbę. Typowe w Koranie."
+      },
+      {
+        "id": "pa_qg10",
+        "question": "'الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ' — ten zwrot pojawia się w Koranie:",
+        "translation": "(كم مرة يتكرر الذين آمنوا وعملوا الصالحات؟)",
+        "options": [
+          "Ponad 50 razy (stałe wyrażenie koraniczne)",
+          "Raz",
+          "5 razy",
+          "Tylko w jednej surze"
+        ],
+        "correct": "Ponad 50 razy (stałe wyrażenie koraniczne)",
+        "explanation": "الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ = Ci, którzy uwierzyli i czynili dobro — ponad 50 wystąpień w Koranie! Gramatycznie: الذين (zaimek względny, l.mn.), آمنوا (uwierzyli — صلة الموصول), و (spójnik), عملوا (czynili) + الصالحات (dobre uczynki — مفعول به). To KORANICZNY LEITMOTIV — wiara + czyny = zbawienie. Powtarzalność = retoryczne wzmocnienie."
+      },
+      {
+        "id": "pa_qg11",
+        "question": "Koraniczny عَسَى w 'عَسَى رَبُّكُمْ أَنْ يَرْحَمَكُمْ' znaczy:",
+        "translation": "(ما معنى عسى ربكم أن يرحمكم؟)",
+        "options": [
+          "Może/Oby wasz Pan się nad wami zmiłował",
+          "Wasz Pan się nie zmiłuje",
+          "Wasz Pan się zmiłował",
+          "Wasz Pan nakazał miłosierdzie"
+        ],
+        "correct": "Może/Oby wasz Pan się nad wami zmiłował",
+        "explanation": "عَسَى (ʿasā) = może/oby — NADZIEJA (رجاء). 'عَسَى رَبُّكُمْ أَنْ يَرْحَمَكُمْ' (Al-Isrāʾ 17:8) = Może wasz Pan się nad wami zmiłuje. عَسَى to فعل جامد (zamrożony) — nie odmienia się regularnie. W Koranie: عَسَى od Boga = PEWNOŚĆ (Bóg mówi 'może' = zrobi to). Od człowieka = nadzieja. رَبُّكُمْ = اسم (podmiot), أَنْ يَرْحَمَكُمْ = خبر (orzecznik)."
+      },
+      {
+        "id": "pa_qg12",
+        "question": "Koraniczne taszkīl (تشكيل) — kiedy dodano znaki diakrytyczne?",
+        "translation": "(متى أُضيف التشكيل إلى القرآن؟)",
+        "options": [
+          "Za czasów Umajjadów (VII-VIII w. — po śmierci Proroka)",
+          "Od początku — Prorok napisał z taszkilem",
+          "W XX w.",
+          "Nigdy — Koran nie ma taszliku"
+        ],
+        "correct": "Za czasów Umajjadów (VII-VIII w. — po śmierci Proroka)",
+        "explanation": "Oryginalny zapis Koranu: BEZ KROPEK (إعجام) i BEZ ZNAKÓW SAMOGŁOSKOWYCH (تشكيل). Etapy: 1) أبو الأسود الدؤلي (VII w.) — pierwsze kropki dla samogłosek (inne niż dzisiejsze), 2) الخليل بن أحمد (VIII w.) — system obecny (فتحة, ضمة, كسرة, سكون, شدة, تنوين). Powód: ekspansja islamu — nie-Arabowie potrzebowali pomocy w czytaniu. To KLUCZOWY fakt historii arabskiej gramatyki!"
+      },
+      {
+        "id": "pa_qg13",
+        "question": "Koraniczne القراءات (qirāʾāt) = :",
+        "translation": "(ما هي القراءات القرآنية؟)",
+        "options": [
+          "7 (lub 10) kanonicznych sposobów recytacji Koranu",
+          "Tłumaczenia Koranu na inne języki",
+          "Komentarze do Koranu",
+          "Różne wydania Koranu"
+        ],
+        "correct": "7 (lub 10) kanonicznych sposobów recytacji Koranu",
+        "explanation": "القراءات (qirāʾāt) = kanoniczne warianty RECYTACJI Koranu. 7 głównych (autorzy: نافع, ابن كثير, أبو عمرو, ابن عامر, عاصم, حمزة, الكسائي) + 3 dodatkowe. NIE SĄ to 'różne Korany' — to warianty wymowy/taszkilu. Np.: مَالِكِ يَوْمِ الدِّينِ (Warsh) vs مَلِكِ يَوْمِ الدِّينِ (Ḥafṣ). Obie poprawne! Dominująca: رواية حفص عن عاصم — używana w 95% świata muzułmańskiego."
+      },
+      {
+        "id": "pa_qg14",
+        "question": "Koraniczny التَّقْدِيم والتَّأْخِير w 'إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِين' — dlaczego عبادة przed استعانة?",
+        "translation": "(لماذا قدّم العبادة على الاستعانة؟)",
+        "options": [
+          "Cześć/uwielbienie (عبادة) przed prośbą o pomoc (استعانة) = logika priorytetów",
+          "Przypadkowa kolejność",
+          "Rym wymusza",
+          "Tak łatwiej wymówić"
+        ],
+        "correct": "Cześć/uwielbienie (عبادة) przed prośbą o pomoc (استعانة) = logika priorytetów",
+        "explanation": "Retoryka koraniczna (بلاغة قرآنية): إِيَّاكَ نَعْبُدُ (Ciebie czcimy) PRZED إِيَّاكَ نَسْتَعِينُ (Ciebie prosimy o pomoc). Dlaczego? 1) Cześć Boga (عبادة) ważniejsza od prośby o pomoc (استعانة), 2) Cześć = cel, pomoc = środek — cel przed środkiem, 3) Cześć = bezwarunkowa, pomoc = doraźna. Ten typ analizy (التقديم والتأخير) jest FUNDAMENTEM تفسير (egzegezy) koranicznej."
+      },
+      {
+        "id": "pa_qg15",
+        "question": "Dlaczego gramatyka arabska powstała (motywacja historyczna)?",
+        "translation": "(ما سبب نشأة النحو العربي؟)",
+        "options": [
+          "Ochrona Koranu przed błędami wymowy/zrozumienia (لحن)",
+          "Ciekawość naukowa grecka",
+          "Potrzeby handlowe",
+          "Europejski wpływ"
+        ],
+        "correct": "Ochrona Koranu przed błędami wymowy/zrozumienia (لحن)",
+        "explanation": "اللَّحْن (laḥn) = błąd językowy. Gdy nie-Arabowie (العجم) przyjęli islam, zaczęli popełniać błędy w recytacji Koranu. Legenda: ktoś przeczytał 'رسولَهُ' (Jego posłańca — biernik) zamiast 'رسولُهُ' (Jego posłaniec — mianownik) — zmieniając SENS! Ali ibn Abi Talib nakazał أبو الأسود الدؤلي stworzyć reguły. Stąd: gramatyka arabska = OCHRONA tekstu świętego. Motywacja religijna → nauka lingwistyczna."
+      }
+    ]
+  },
+  {
+    "key": "idiomatic_expressions_ar",
+    "name": "Wyrażenia idiomatyczne (تعبيرات اصطلاحية)",
+    "description": "التعبيرات الاصطلاحية والعبارات الشائعة في العربية",
+    "iconName": "text.bubble",
+    "color": "#c084fc",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pa_ie1",
+        "question": "إن شَاءَ الله (In shāʾa Allāh) znaczy:",
+        "translation": "(ما معنى إن شاء الله؟)",
+        "options": [
+          "Jeśli Bóg zechce / Oby (= odpowiedź na plany przyszłe)",
+          "Bóg nie chce",
+          "Bóg chciał wcześniej",
+          "Dziękuję Bogu"
+        ],
+        "correct": "Jeśli Bóg zechce / Oby (= odpowiedź na plany przyszłe)",
+        "explanation": "إِنْ شَاءَ اللهُ = Jeśli Bóg zechce. إِنْ (jeśli — partykuła warunkowa) + شَاءَ (chciał/zechce) + اللهُ (Bóg). Użycie: 1) Przy KAŻDYM planie: 'Przyjdę jutro, إن شاء الله', 2) Wyraża nadzieję, 3) Pokora wobec przyszłości. Koran (18:23-24): 'Nie mów o niczym: Zrobię to jutro — chyba że [dodasz] إن شاء الله.' NAJCZĘSTSZE wyrażenie w arabskim świecie — nawet nie-muzułmanie go używają."
+      },
+      {
+        "id": "pa_ie2",
+        "question": "الحَمْدُ لله (al-ḥamdu lillāh) używamy gdy:",
+        "translation": "(متى نقول الحمد لله؟)",
+        "options": [
+          "Dziękujemy/chwalimy Boga (po jedzeniu, dobre wieści, zdrowie)",
+          "Przepraszamy",
+          "Żegnamy się",
+          "Pytamy o drogę"
+        ],
+        "correct": "Dziękujemy/chwalimy Boga (po jedzeniu, dobre wieści, zdrowie)",
+        "explanation": "الحَمْدُ لِلّهِ = Chwała Bogu / Dzięki Bogu. الحمد = chwała (مبتدأ), لله = dla Boga (خبر). Użycie: 1) Po jedzeniu, 2) Na pytanie 'Jak się masz?' — 'الحمد لله' = Dobrze, dzięki Bogu, 3) Po usłyszeniu dobrej wiadomości, 4) Po kichnięciu (odpowiedź: يَرْحَمُكَ اللهُ = Niech Bóg się nad tobą zmiłuje). Pierwsze słowa sury Al-Fātiḥa (Otwierającej)."
+      },
+      {
+        "id": "pa_ie3",
+        "question": "مَاشَاءَ الله (māshāʾ Allāh) używamy by:",
+        "translation": "(متى نقول ما شاء الله؟)",
+        "options": [
+          "Wyrazić podziw (ochrona przed złym okiem = ʿajn)",
+          "Wyrazić gniew",
+          "Przeprosić",
+          "Pożegnać się"
+        ],
+        "correct": "Wyrazić podziw (ochrona przed złym okiem = ʿajn)",
+        "explanation": "مَا شَاءَ اللهُ = To, co Bóg chciał (= jak Bóg zechciał). Użycie: 1) Widząc coś pięknego: dziecko, dom, sukces → 'ما شاء الله!', 2) Ochrona przed العَيْن (złym okiem/zazdrością), 3) Podziw: 'ما شاء الله، ابنُكَ ذكيٌّ!' = Mā shāʾ Allāh, twój syn jest mądry! Gramatycznie: مَا (to, co — موصولة) + شَاءَ (chciał) + اللهُ (Bóg). Sens: 'To Bóg sprawił' → ochrona."
+      },
+      {
+        "id": "pa_ie4",
+        "question": "أَسْتَغْفِرُ الله (astaghfiru-llāh) = :",
+        "translation": "(ما معنى أستغفر الله؟)",
+        "options": [
+          "Proszę Boga o przebaczenie (skrucha/zaskoczenie)",
+          "Proszę Boga o pieniądze",
+          "Chwała Bogu",
+          "Bóg jest wielki"
+        ],
+        "correct": "Proszę Boga o przebaczenie (skrucha/zaskoczenie)",
+        "explanation": "أَسْتَغْفِرُ اللهَ = Proszę Boga o przebaczenie. Od اِسْتَغْفَرَ (X forma: prosić o غُفْران = przebaczenie). Użycie: 1) Po grzechu/błędzie: skrucha, 2) Przy zaskoczeniu/osłupieniu: 'أستغفر الله! ماذا فعلتَ?!' = O Boże! Co zrobiłeś?!, 3) Jako odmowa: 'أستغفر الله! لا أستطيع' = Broń Boże! Nie mogę. Wielofunkcyjne — jak polskie 'Boże!' (skrucha, zaskoczenie, odmowa)."
+      },
+      {
+        "id": "pa_ie5",
+        "question": "بَارَكَ اللهُ فِيك (bāraka Allāhu fīk) = :",
+        "translation": "(ما معنى بارك الله فيك؟)",
+        "options": [
+          "Niech Bóg ci błogosławi (podziękowanie/życzenie)",
+          "Bóg cię ukarze",
+          "Bóg ci nie pomoże",
+          "Bóg ci zapłaci"
+        ],
+        "correct": "Niech Bóg ci błogosławi (podziękowanie/życzenie)",
+        "explanation": "بَارَكَ اللهُ فِيكَ = Niech Bóg ci błogosławi. بَارَكَ = pobłogosławił (od ب-ر-ك = błogosławieństwo). Użycie: 1) Jako podziękowanie (= dziękuję bardzo), 2) Jako życzenie (= szczęścia!), 3) Odpowiedź: وَفِيكَ بَارَكَ اللهُ (I w tobie niech Bóg błogosławi). Wariant: اللهُ يبارِكْ فِيكْ (dialektalny = to samo). W polskim: 'Niech Cię Bóg błogosławi' — identyczny zwrot!"
+      },
+      {
+        "id": "pa_ie6",
+        "question": "يَعْطِيكَ العَافِيَة (yaʿṭīk al-ʿāfiya) = :",
+        "translation": "(ما معنى يعطيك العافية؟)",
+        "options": [
+          "Niech Bóg ci da zdrowie/siłę (= Dzięki za pracę!)",
+          "Jesteś chory",
+          "Nie pracuj",
+          "Odpocznij"
+        ],
+        "correct": "Niech Bóg ci da zdrowie/siłę (= Dzięki za pracę!)",
+        "explanation": "يُعْطِيكَ العَافِيَة = Niech (Bóg) ci da zdrowie/siłę. Użycie: mówisz komuś, kto PRACUJE — ochroniarz, kelner, taksówkarz, kolega w pracy. Odpowiedź: اللهُ يُعَافِيك (Niech Bóg ci da zdrowie). W Lewancie (Syrii, Jordanii, Libanie): SUPERCZĘSTE — nie powiedzieć tego komuś pracującemu to NIEUPRZEJMOŚĆ. W polskim: 'Bóg zapłać' (za pracę) — podobna funkcja."
+      },
+      {
+        "id": "pa_ie7",
+        "question": "تَفَضَّلْ (tafaḍḍal) w różnych kontekstach:",
+        "translation": "(ما معنى تفضّل؟)",
+        "options": [
+          "Proszę/Zapraszam/Tu masz (= wielofunkcyjne uprzejme zaproszenie)",
+          "Nie chcę",
+          "Odejdź",
+          "Przepraszam"
+        ],
+        "correct": "Proszę/Zapraszam/Tu masz (= wielofunkcyjne uprzejme zaproszenie)",
+        "explanation": "تَفَضَّلْ (tafaḍḍal) = Proszę/Zapraszam — od تَفَضَّلَ (V forma od ف-ض-ل = łaskawość). Użycie: 1) Podając coś: 'تفضّل' (Tu masz/Proszę), 2) Zapraszając do siadania: 'تفضّل, اجلسْ' (Proszę, usiądź), 3) Wpuszczając: 'تفضّل' (Proszę, wejdź). Formy: تَفَضَّلْ (ty m.), تَفَضَّلِي (ty ż.), تَفَضَّلُوا (wy). W polskim: 'proszę' — ta sama wielofunkcyjność!"
+      },
+      {
+        "id": "pa_ie8",
+        "question": "عَلَى رَاسِي (ʿalā rāsī) dosłownie = na mojej głowie, ale znaczy:",
+        "translation": "(ما معنى على راسي؟)",
+        "options": [
+          "Z wielką przyjemnością / Rozkaz! (= na głowę noszę = zaszczyt)",
+          "Na mojej głowie coś leży",
+          "Boli mnie głowa",
+          "Nie zgadzam się"
+        ],
+        "correct": "Z wielką przyjemnością / Rozkaz! (= na głowę noszę = zaszczyt)",
+        "explanation": "عَلَى رَاسِي (ʿalā rāsī) = Na mojej głowie = Z wielką przyjemnością / Rozkaz / Z honorem. Metafora: niesienie czegoś na głowie = najwyższy szacunek. Użycie: ktoś prosi o przysługę → 'على راسي!' (Oczywiście! Z przyjemnością!). Warianty: عَلَى عَيْنِي (na moim oku = tak samo), عَلَى الرأسِ والعَيْنِ (na głowie i oku = absolutnie tak!). Bardzo częste w dialektach."
+      },
+      {
+        "id": "pa_ie9",
+        "question": "اللهُ أَكْبَر (Allāhu Akbar) gramatycznie to:",
+        "translation": "(ما إعراب الله أكبر؟)",
+        "options": [
+          "مبتدأ + خبر (Bóg [jest] Największy — zdanie nominalne)",
+          "فعل + فاعل (orzeczenie + podmiot)",
+          "نداء (wołacz)",
+          "تعجب (wykrzyknik)"
+        ],
+        "correct": "مبتدأ + خبر (Bóg [jest] Największy — zdanie nominalne)",
+        "explanation": "اللهُ أَكْبَرُ = Bóg (jest) Największy. اللهُ = مبتدأ (podmiot, مرفوع), أَكْبَرُ = خبر (orzecznik, مرفوع). أَكْبَر = stopień wyższy/najwyższy od كَبِير (wielki). Diptot (ممنوع من الصرف) — bez tanwinu. Użycie: adhān (wezwanie na modlitwę), salāt (modlitwa), ogólny wykrzyknik podziwu/zaskoczenia. Najczęstszy zwrot w muzułmańskim świecie — powtarzany ~100 razy dziennie w modlitwach."
+      },
+      {
+        "id": "pa_ie10",
+        "question": "يَا سَلَام! (yā salām!) = :",
+        "translation": "(ما معنى يا سلام؟)",
+        "options": [
+          "O, wspaniale! / Ale pięknie! (podziw/zdumienie)",
+          "Pokój!",
+          "Koniec!",
+          "Cisza!"
+        ],
+        "correct": "O, wspaniale! / Ale pięknie! (podziw/zdumienie)",
+        "explanation": "يَا سَلَامُ! = O, wspaniale! / Ale super! Dosłownie: يَا (wołacz) + سَلَام (pokój). Ale IDIOMATYCZNIE = podziw/zdumienie. Użycie: 'Dostałem awans!' → 'يا سلام! مبروك!' (O, wspaniale! Gratulacje!). Inne: يَا لَطِيف! (O, Łagodny [Boże]! = zaskoczenie/strach), يَا اللهِ! (O Boże! = zdumienie). Arabskie wykrzykniki często zawierają IMIONA BOGA — cecha kulturowa."
+      },
+      {
+        "id": "pa_ie11",
+        "question": "خَلَاص (khalāṣ) w mowie potocznej = :",
+        "translation": "(ما معنى خلاص في اللهجة؟)",
+        "options": [
+          "Koniec/Dość/OK/Gotowe (= wielofunkcyjne zamknięcie)",
+          "Początek",
+          "Być może",
+          "Nigdy"
+        ],
+        "correct": "Koniec/Dość/OK/Gotowe (= wielofunkcyjne zamknięcie)",
+        "explanation": "خَلَاص (khalāṣ) = Koniec/Dość/OK/Gotowe — od خَلَصَ (kończyć się/ocalić). Użycie: 1) Koniec dyskusji: خلاص! (Dość!), 2) Zgoda: خلاص, ماشي (OK, w porządku), 3) Ukończenie: خلاص, خلّصتُ (Gotowe, skończyłem). MSA: خَلاص = ocalenie/zbawienie. Dialektalnie: wielofunkcyjne 'dość/OK'. W polskim: 'Koniec!' / 'Dosyć!' / 'OK!' — jeden wyraz, wiele odcieni."
+      },
+      {
+        "id": "pa_ie12",
+        "question": "يَاللَّا (yallā) pochodzi od:",
+        "translation": "(ما أصل يالله؟)",
+        "options": [
+          "يَا اللهُ (O Boże! → Dalej!/Chodźmy!)",
+          "يَا لَيْلَة (O nocy)",
+          "يَا عَلِي (O Ali)",
+          "يَا لَنَا (O, my)"
+        ],
+        "correct": "يَا اللهُ (O Boże! → Dalej!/Chodźmy!)",
+        "explanation": "يَاللَّا / يَلَّا = od يَا اللهُ (O Boże!) — skrócone z modlitwy ('O Boże, [pomóż]') do codziennego 'Dalej!/Chodźmy!/Ruszaj!'. Użycie: 1) يللا, نروح! (Dalej, chodźmy!), 2) يللا بينا! (Ruszajmy!), 3) يللا خلاص! (No, koniec! Dość!). Znane na CAŁYM świecie — jedno z nielicznych arabskich słów, które weszło do języków europejskich (turecki, hebrajski, i inne)."
+      },
+      {
+        "id": "pa_ie13",
+        "question": "حَبِيبِي / حَبِيبْتِي (ḥabībī / ḥabībtī) dosłownie = :",
+        "translation": "(ما معنى حبيبي؟)",
+        "options": [
+          "Mój ukochany/a (= zwrot czuły, też między przyjaciółmi)",
+          "Mój wróg",
+          "Mój nauczyciel",
+          "Mój sąsiad"
+        ],
+        "correct": "Mój ukochany/a (= zwrot czuły, też między przyjaciółmi)",
+        "explanation": "حَبِيبِي (ḥabībī) = mój ukochany (m.), حَبِيبَتِي (ḥabībatī) = moja ukochana (ż.). Od ح-ب-ب = kochać. ALE: w codziennym użyciu DUŻO SZERZEJ: między przyjaciółmi (m+m), ojciec→syn, klient→sprzedawca (Lewant!). 'اهلاً حبيبي!' = Cześć, drogi! Nie romantyczne — PRZYJACIELSKIE. W polskim: 'kochany/kochanie' — też szerokie. Najbardziej rozpoznawalne arabskie słowo na świecie."
+      },
+      {
+        "id": "pa_ie14",
+        "question": "عَفْواً (ʿafwan) ma DWA konteksty:",
+        "translation": "(ما معاني عفواً؟)",
+        "options": [
+          "1) Proszę/Nie ma za co (po dziękuję) + 2) Przepraszam (przed pytaniem)",
+          "Tylko 'przepraszam'",
+          "Tylko 'proszę'",
+          "Tylko 'witaj'"
+        ],
+        "correct": "1) Proszę/Nie ma za co (po dziękuję) + 2) Przepraszam (przed pytaniem)",
+        "explanation": "عَفْواً (ʿafwan) = 1) Po شُكْراً (dziękuję): عَفواً = Nie ma za co / Proszę (= you're welcome). 2) Przed pytaniem: عَفواً! أَيْنَ المحطة? = Przepraszam! Gdzie stacja? Od ع-ف-و = przebaczenie. Dosłownie: 'przebaczenie' → 'nie trzeba dziękować' → 'proszę'. Porównaj z polskim: 'Proszę' = 1) You're welcome, 2) Here you go, 3) Please — ta sama wielofunkcyjność!"
+      },
+      {
+        "id": "pa_ie15",
+        "question": "اللهُ يِرْحَمُه (Allāh yirḥamu) mówi się o:",
+        "translation": "(متى نقول الله يرحمه؟)",
+        "options": [
+          "Zmarłym (= Niech Bóg się nad nim zmiłuje)",
+          "Chorym",
+          "Noworodku",
+          "Podróżniku"
+        ],
+        "correct": "Zmarłym (= Niech Bóg się nad nim zmiłuje)",
+        "explanation": "اللهُ يِرْحَمُه (Allāhu yarḥamuhu) = Niech Bóg się nad nim zmiłuje — formuła wspomnienia ZMARŁEGO. Gdy wspominasz ktoś, kto odszedł, dodajesz: 'رَحِمَهُ اللهُ' (Niech Bóg się nad nim zmiłuje) lub 'اللهُ يرحمه'. Inne formuły: رَحْمَةُ اللهِ عليه (miłosierdzie Boże nad nim), المرحوم (= zmarły — 'ten, nad którym [Bóg] się zmiłował'). Kulturowy obowiązek — nie można mówić o zmarłym bez tej formuły."
+      }
+    ]
+  },
+  {
+    "key": "proverbs_sayings_ar",
+    "name": "Przysłowia i powiedzenia (أمثال وحكم)",
+    "description": "الأمثال العربية الشائعة وتراكيبها النحوية",
+    "iconName": "quote.bubble",
+    "color": "#22d3ee",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pa_ps1",
+        "question": "مَنْ جَدَّ وَجَدَ (Man jadda wajada) = :",
+        "translation": "(ما معنى من جدّ وجد؟)",
+        "options": [
+          "Kto się stara, ten znajdzie (= Kto szuka, ten znajdzie)",
+          "Kto śpi, ten przegrywa",
+          "Kto idzie, ten wraca",
+          "Kto je, ten żyje"
+        ],
+        "correct": "Kto się stara, ten znajdzie (= Kto szuka, ten znajdzie)",
+        "explanation": "مَنْ جَدَّ وَجَدَ = Kto się stara (جَدَّ = był poważny/starał się), ten znajdzie (وَجَدَ = znalazł). Gramatycznie: مَنْ (zaimek warunkowy = ktokolwiek) + جَدَّ (orzeczenie warunku) + وَجَدَ (odpowiedź warunku). Gra słów (جناس): جَدَّ / وَجَدَ — podobne brzmienie, inne znaczenie! Odpowiednik polski: 'Bez pracy nie ma kołaczy.' Jedno z najczęstszych arabskich przysłów."
+      },
+      {
+        "id": "pa_ps2",
+        "question": "اَلعِلْمُ نُورٌ وَالجَهْلُ ظَلَامٌ = :",
+        "translation": "(ما معنى العلم نور والجهل ظلام؟)",
+        "options": [
+          "Wiedza jest światłem, a ignorancja ciemnością",
+          "Światło jest wiedzą",
+          "Ciemność jest jasna",
+          "Ignorancja jest dobra"
+        ],
+        "correct": "Wiedza jest światłem, a ignorancja ciemnością",
+        "explanation": "العلمُ نورٌ والجهلُ ظلامٌ = Wiedza (jest) światłem, a ignorancja (jest) ciemnością. Dwa zdania nominalne (مبتدأ + خبر) połączone واو. ANTYTEZA (طباق): علم↔جهل (wiedza↔ignorancja), نور↔ظلام (światło↔ciemność). Metafora: wiedza=światło, ignorancja=ciemność — UNIWERSALNA w kulturach! W polskim: 'Wiedza to potęga' (Bacon). Arabskie przysłowie — stała wartość kulturowa."
+      },
+      {
+        "id": "pa_ps3",
+        "question": "الصَّبْرُ مِفْتَاحُ الفَرَج = :",
+        "translation": "(ما معنى الصبر مفتاح الفرج؟)",
+        "options": [
+          "Cierpliwość jest kluczem do ulgi/rozwiązania",
+          "Klucz jest cierpliwy",
+          "Ulga jest cierpliwa",
+          "Nie ma cierpliwości"
+        ],
+        "correct": "Cierpliwość jest kluczem do ulgi/rozwiązania",
+        "explanation": "الصبرُ مفتاحُ الفرجِ = Cierpliwość (jest) kluczem ulgi. الصبر = cierpliwość (مبتدأ), مفتاح = klucz (خبر w إضافة), الفرج = ulga/wyjście z kryzysu. Metafora: cierpliwość jako KLUCZ otwierający drzwi ulgi. W islamie: الصبر to cnota centralna (ponad 90 wzmianek w Koranie). Polski odpowiednik: 'Cierpliwość popłaca' / 'Cierpliwością wszystko zwyciężysz.' Fundament arabskiej etyki."
+      },
+      {
+        "id": "pa_ps4",
+        "question": "اَلعَيْنُ بَصِيرَةٌ وَاليَدُ قَصِيرَةٌ = :",
+        "translation": "(ما معنى العين بصيرة واليد قصيرة؟)",
+        "options": [
+          "Oko widzi (co chce), ale ręka jest krótka (= nie stać mnie)",
+          "Oko jest puste i ręka krótka",
+          "Widzę daleko i sięgam daleko",
+          "Nie widzę i nie sięgam"
+        ],
+        "correct": "Oko widzi (co chce), ale ręka jest krótka (= nie stać mnie)",
+        "explanation": "العينُ بصيرةٌ واليدُ قصيرةٌ = Oko przenikliwe, a ręka krótka. Sens: WIDZĘ, co chcę, ale NIE MOGĘ tego mieć (brak pieniędzy/możliwości). Rym: بَصِيرَة / قَصِيرَة (sajʿ = proza rymowana). Antyteza: widzi (dalekosiężne) vs ręka (krótka). W polskim: 'Apetyt rośnie w miarę jedzenia' / 'Chciałbym, ale nie mogę.' Piękna arabska metonimia — oko=pragnienie, ręka=zdolność."
+      },
+      {
+        "id": "pa_ps5",
+        "question": "مَنْ حَفَرَ حُفْرَةً لِأَخِيهِ وَقَعَ فِيهَا = :",
+        "translation": "(ما معنى من حفر حفرة لأخيه وقع فيها؟)",
+        "options": [
+          "Kto kopie dół pod bliźnim, sam weń wpadnie",
+          "Kto kopie, ten buduje",
+          "Kto pomaga bratu, ten jest dobry",
+          "Kto wpada, ten ucieka"
+        ],
+        "correct": "Kto kopie dół pod bliźnim, sam weń wpadnie",
+        "explanation": "من حفرَ حُفْرَةً لأخيه وقعَ فيها = Kto wykopał dół dla brata (bliźniego), ten sam w niego wpadł. جناس: حَفَرَ / حُفْرَة — ten sam rdzeń ح-ف-ر! مَنْ = zaimek warunkowy, أخيه = brat/bliźni (إضافة z zaimkiem). Identyczne w POLSKIM: 'Kto pod kim dołki kopie, sam w nie wpada.' UNIWERSALNE przysłowie — istnieje w większości kultur świata!"
+      },
+      {
+        "id": "pa_ps6",
+        "question": "اَلطُّيُورُ عَلَى أَشْكَالِهَا تَقَعُ = :",
+        "translation": "(ما معنى الطيور على أشكالها تقع؟)",
+        "options": [
+          "Ptaki zbierają się według swoich gatunków (= Ciągnie swój do swego)",
+          "Ptaki spadają z nieba",
+          "Ptaki są różne",
+          "Ptaki latają wysoko"
+        ],
+        "correct": "Ptaki zbierają się według swoich gatunków (= Ciągnie swój do swego)",
+        "explanation": "الطيورُ على أشكالِها تقعُ = Ptaki lądują/zbierają się według swoich form. الطيور = ptaki, أشكالها = ich formy/gatunki, تقع = ląduje/zbiera się. Sens: ludzie o podobnych charakterach CIĄGNĄ do siebie. W polskim: 'Ciągnie swój do swego' / 'Kruk do kruka ciągnie.' Angielski: 'Birds of a feather flock together.' Gramatycznie: تقديم (przesunięcie — na أشكالها) podkreśla sortowanie."
+      },
+      {
+        "id": "pa_ps7",
+        "question": "الجَارُ قَبْلَ الدَّار = :",
+        "translation": "(ما معنى الجار قبل الدار؟)",
+        "options": [
+          "Sąsiad (ważniejszy jest) przed domem (= Ważniejszy sąsiad niż dom)",
+          "Dom przed sąsiadem",
+          "Sąsiad buduje dom",
+          "Dom jest pusty"
+        ],
+        "correct": "Sąsiad (ważniejszy jest) przed domem (= Ważniejszy sąsiad niż dom)",
+        "explanation": "الجارُ قبلَ الدارِ = Sąsiad przed domem. Sens: przy wyborze domu najpierw sprawdź SĄSIADÓW, potem dom. Rym: الجار / الدار (sajʿ). Bardzo ważne w kulturze arabskiej — sąsiedztwo (جِيرَة) to SPOŁECZNY OBOWIĄZEK. Prorok Muhammad: 'مَنْ كان يُؤمنُ بالله... فَلْيُكرِمْ جارَهُ' = Kto wierzy w Boga, niech szanuje sąsiada. W polskim: 'Z dobrym sąsiadem lepiej niż z dalszą rodziną.'"
+      },
+      {
+        "id": "pa_ps8",
+        "question": "في العَجَلَةِ النَّدَامَة = :",
+        "translation": "(ما معنى في العجلة الندامة؟)",
+        "options": [
+          "W pośpiechu jest żal (= Pośpiech to zły doradca)",
+          "Żal jest szybki",
+          "Pośpiech jest dobry",
+          "Nie ma żalu"
+        ],
+        "correct": "W pośpiechu jest żal (= Pośpiech to zły doradca)",
+        "explanation": "في العَجَلةِ الندامةُ = W pośpiechu (jest) żal. العجلة = pośpiech, الندامة = żal/skrucha. Zdanie nominalne z przesunięciem: خبر (في العجلة) przed مبتدأ (الندامة). Rozszerzenie: 'في العَجَلةِ الندامةُ وفي التأنّي السلامةُ' = W pośpiechu żal, w rozwadze bezpieczeństwo (antyteza + sajʿ). Polski: 'Co nagle, to po diable.' / 'Pośpiech to zły doradca.'"
+      },
+      {
+        "id": "pa_ps9",
+        "question": "أَنَا وَأَخِي عَلَى ابْنِ عَمِّي، وَأَنَا وَابْنُ عَمِّي عَلَى الغَرِيب = :",
+        "translation": "(ما معنى هذا المثل البدوي؟)",
+        "options": [
+          "Ja i brat przeciw kuzynowi, ja i kuzyn przeciw obcemu (= lojalność klanowa)",
+          "Wszyscy są przyjaciółmi",
+          "Nie mam brata",
+          "Obcy jest przyjacielem"
+        ],
+        "correct": "Ja i brat przeciw kuzynowi, ja i kuzyn przeciw obcemu (= lojalność klanowa)",
+        "explanation": "Przysłowie beduińskie: lojalność STOPNIOWANA — najbliższa rodzina→klan→plemię→obcy. أخي = mój brat, ابن عمّي = syn mojego stryja (kuzyn), الغريب = obcy. Ilustruje عَصَبِيَّة (ʿaṣabiyya = solidarność klanowa) — klucz do zrozumienia arabskiej kultury. Ibn Chaldun (XIV w.) uczynił عصبيّة CENTRALNYM pojęciem socjologii. W polskim: 'Koszula bliższa ciału niż kaftan.'"
+      },
+      {
+        "id": "pa_ps10",
+        "question": "رُبَّ أَخٍ لَكَ لَمْ تَلِدْهُ أُمُّكَ = :",
+        "translation": "(ما معنى رب أخ لك لم تلده أمك؟)",
+        "options": [
+          "Niejeden brat twój nie urodzony z twej matki (= Przyjaciel jak brat)",
+          "Nie masz brata",
+          "Matka nie rodzi",
+          "Brat jest obcy"
+        ],
+        "correct": "Niejeden brat twój nie urodzony z twej matki (= Przyjaciel jak brat)",
+        "explanation": "رُبَّ أخٍ لك لم تلده أمُّك = Nieraz (jest) brat twój, którego nie urodziła twoja matka. رُبَّ = nieraz/niejeden (partykuła z tanwinem w dopełniaczu). Sens: prawdziwe braterstwo nie wymaga więzów krwi — PRZYJACIEL może być bliższy niż brat. لم تلدْه = nie urodziła go (لم + مجزوم). W polskim: 'Przyjaciel w potrzebie jest jak brat.' Piękna arabska mądrość o przyjaźni."
+      },
+      {
+        "id": "pa_ps11",
+        "question": "اِتَّقِ شَرَّ مَنْ أَحْسَنْتَ إِلَيْهِ = :",
+        "translation": "(ما معنى اتق شر من أحسنت إليه؟)",
+        "options": [
+          "Strzeż się zła tego, komu dobrze uczyniłeś",
+          "Czyń dobro wszystkim",
+          "Nie bój się nikogo",
+          "Zło jest dobre"
+        ],
+        "correct": "Strzeż się zła tego, komu dobrze uczyniłeś",
+        "explanation": "اتَّقِ شرَّ مَنْ أحسنتَ إليه = Strzeż się zła tego, komu wyświadczyłeś dobro. اتَّقِ = strzeż się (rozkaźnik od اتَّقَى VIII forma), شرّ = zło, من = ten, kto (موصولة), أحسنتَ = uczyniłeś dobro. Sens: ludzie są NIEWDZIĘCZNI — kto otrzymał dobro, może odpłacić złem. Cyniczne, ale realistyczne. W polskim: 'Nie czyń dobrze, nie będziesz miał źle' — ta sama pesymistyczna mądrość."
+      },
+      {
+        "id": "pa_ps12",
+        "question": "الحَاجَةُ أُمُّ الاِخْتِرَاع = :",
+        "translation": "(ما معنى الحاجة أم الاختراع؟)",
+        "options": [
+          "Potrzeba jest matką wynalazku",
+          "Wynalazek nie jest potrzebny",
+          "Matka wynalazła coś",
+          "Potrzeba jest ojcem"
+        ],
+        "correct": "Potrzeba jest matką wynalazku",
+        "explanation": "الحاجةُ أمُّ الاختراعِ = Potrzeba (jest) matką wynalazku. الحاجة = potrzeba (مبتدأ), أمّ = matka (خبر), الاختراع = wynalazek (مضاف إليه). IDENTYCZNE w polskim i angielskim ('Necessity is the mother of invention'). Metafora: potrzeba 'rodzi' wynalazek — jak matka dziecko. To jedno z UNIWERSALNYCH przysłów — istniejących prawie identycznie w wielu kulturach."
+      },
+      {
+        "id": "pa_ps13",
+        "question": "لِكُلِّ مَقَامٍ مَقَال = :",
+        "translation": "(ما معنى لكل مقام مقال؟)",
+        "options": [
+          "Na każdą sytuację odpowiednie słowo (= Dostosuj mowę do kontekstu)",
+          "Każdy mówi to samo",
+          "Nie ma co mówić",
+          "Sytuacja jest trudna"
+        ],
+        "correct": "Na każdą sytuację odpowiednie słowo (= Dostosuj mowę do kontekstu)",
+        "explanation": "لكلِّ مقامٍ مقالٌ = Na każdą sytuację (jest) odpowiednie słowo. جناس: مَقَام (sytuacja, od ق-و-م) / مَقَال (powiedzenie, od ق-و-ل) — podobne brzmienie, inne rdzenie! Sens: mów STOSOWNIE do sytuacji. To FUNDAMENT arabskiej retoryki (بلاغة) — مقتضى الحال (wymóg sytuacji). W polskim: 'Mądrego mowa krótka' częściowo, ale bardziej: 'Stosuj słowa do sytuacji.' Elegancki sajʿ."
+      },
+      {
+        "id": "pa_ps14",
+        "question": "ما كُلُّ ما يَلْمَعُ ذَهَباً = :",
+        "translation": "(ما معنى ما كل ما يلمع ذهباً؟)",
+        "options": [
+          "Nie wszystko co błyszczy jest złotem",
+          "Złoto zawsze błyszczy",
+          "Wszystko jest złotem",
+          "Złoto nie błyszczy"
+        ],
+        "correct": "Nie wszystko co błyszczy jest złotem",
+        "explanation": "ما كلُّ ما يلمعُ ذهباً = Nie wszystko, co błyszczy, (jest) złotem. ما (negacja) + كلّ (wszystko) + ما (zaimek względny = co) + يلمعُ (błyszczy) + ذهباً (złotem — خبر w bierniku po ما الحجازية lub حال). IDENTYCZNE w polskim i angielskim ('Not all that glitters is gold' — Shakespeare). Gramatycznie: podwójne ما — różne funkcje (negacja + zaimek względny)."
+      },
+      {
+        "id": "pa_ps15",
+        "question": "مَنْ طَلَبَ العُلَا سَهِرَ اللَّيَالِي = :",
+        "translation": "(ما معنى من طلب العلا سهر الليالي؟)",
+        "options": [
+          "Kto szuka wyżyn, ten czuwa nocami (= Sukces wymaga poświęcenia)",
+          "Kto śpi, ten wygrywa",
+          "Noc jest długa",
+          "Wyżyny są łatwe"
+        ],
+        "correct": "Kto szuka wyżyn, ten czuwa nocami (= Sukces wymaga poświęcenia)",
+        "explanation": "من طلبَ العُلا سهرَ الليالي = Kto poszukiwał wyżyn (العُلا = wysokość/doskonałość), ten czuwał nocami (سهرَ = nie spał). Z wiersza الإمام الشافعي. من = ktokolwiek (شرطية). Sens: SUKCES wymaga POŚWIĘCENIA — bezsenne noce nauki/pracy. Ciąg dalszy: 'ومن طلبَ العلا من غيرِ كدٍّ أضاعَ العمرَ في طلبِ المحال' = Kto szuka wyżyn bez trudu, marnuje życie na szukanie niemożliwego."
+      }
+    ]
+  },
+  {
+    "key": "common_errors_polish",
+    "name": "Częste błędy Polaków (أخطاء شائعة للبولنديين)",
+    "description": "الأخطاء الشائعة التي يرتكبها المتعلمون البولنديون",
+    "iconName": "exclamationmark.triangle",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pa_ce1",
+        "question": "Polski uczeń napisał: *'أنا يكون سعيد' — co jest BŁĘDNE?",
+        "translation": "(ما الخطأ في أنا يكون سعيد؟)",
+        "options": [
+          "Zbędne 'يكون' — po arabsku: أنا سعيدٌ (bez 'jest')",
+          "Brak podmiotu",
+          "Złe słowo 'سعيد'",
+          "Poprawne zdanie"
+        ],
+        "correct": "Zbędne 'يكون' — po arabsku: أنا سعيدٌ (bez 'jest')",
+        "explanation": "NAJCZĘSTSZY błąd Polaków: dodawanie 'jest' (يكون) w zdaniach nominalnych. W polskim: 'Jestem szczęśliwy' — WYMAGA 'jest'. W arabskim: 'أنا سعيدٌ' — BEZ يكون. Zdanie nominalne (جملة اسمية) w teraźniejszości NIE wymaga łącznika (copula). كانَ/يكونُ używaj TYLKO: 1) W przeszłości: كنتُ سعيداً, 2) W przyszłości: سأكونُ سعيداً, 3) Z حالة (stanem). W teraźniejszości: ZERO!"
+      },
+      {
+        "id": "pa_ce2",
+        "question": "Polski uczeń napisał: *'الكتاب الجميل الكبير' (o JEDNEJ książce) — co jest BŁĘDNE?",
+        "translation": "(ما الخطأ في الكتاب الجميل الكبير؟)",
+        "options": [
+          "Nic! — to POPRAWNE (oba przymiotniki po rzeczowniku)",
+          "Powinno być: الجميل الكتاب الكبير",
+          "Powinno być: الكبير الجميل الكتاب",
+          "Powinno być: الكتاب الكبير والجميل — obowiązkowe واو"
+        ],
+        "correct": "Nic! — to POPRAWNE (oba przymiotniki po rzeczowniku)",
+        "explanation": "To POPRAWNE! W arabskim: rzeczownik + przymiotnik + przymiotnik (bez واو). الكتابُ الجميلُ الكبيرُ = piękna duża książka. Polak może mylić z polskim: 'piękna, duża książka' (przymiotniki PRZED rzeczownikiem). PRAWDZIWY częsty błąd: *'جميل كبير كتاب' (szyk polski!). Arabski szyk: RZECZOWNIK + przymiotnik(i). Przymiotnik ZAWSZE PO rzeczowniku — odwrotnie niż po polsku."
+      },
+      {
+        "id": "pa_ce3",
+        "question": "Polski uczeń powiedział: *'هُوَ طَوِيل' o KOBIECIE — co jest BŁĘDNE?",
+        "translation": "(ما الخطأ في هو طويل عن امرأة؟)",
+        "options": [
+          "Złe rodzaje: powinno być هِيَ طَوِيلَة (żeński zaimek + przymiotnik)",
+          "Nic — poprawne",
+          "Powinno być: أنا طويل",
+          "Powinno być: هم طوال"
+        ],
+        "correct": "Złe rodzaje: powinno być هِيَ طَوِيلَة (żeński zaimek + przymiotnik)",
+        "explanation": "DRUGI najczęstszy błąd: brak zgodności rodzajowej. W polskim: 'Ona jest wysoka' — rodzaj jasny. W arabskim: هِيَ (ona, nie هو!) + طَوِيلَة (żeńska forma, nie طويل!). PODWÓJNA zgodność: 1) Zaimek (هي/هو), 2) Przymiotnik (طويلة/طويل). W polskim: przymiotnik ma rodzaj, ale Polacy ZAPOMINAJĄ o arabskim ta marbuṭa (ة). Reguła: +ة = żeński przymiotnik (z wyjątkami)."
+      },
+      {
+        "id": "pa_ce4",
+        "question": "Polski uczeń napisał: *'أنا ذهبتُ إلى المدرسة' — to jest:",
+        "translation": "(هل أنا ذهبتُ صحيح؟)",
+        "options": [
+          "Poprawne, ale ZBĘDNE أنا — wystarczy ذَهَبْتُ (końcówka -تُ = ja)",
+          "Błędne — trzeba أنا",
+          "Błędne — trzeba نحن",
+          "Błędne — trzeba هو"
+        ],
+        "correct": "Poprawne, ale ZBĘDNE أنا — wystarczy ذَهَبْتُ (końcówka -تُ = ja)",
+        "explanation": "أنا ذهبتُ = NIE BŁĄD, ale ZBĘDNE. W arabskim: ذهبتُ (poszedłem) — końcówka -تُ ZAWIERA podmiot (ja). Dodanie أنا = emfaza ('TO JA poszedłem, nie ktoś inny'). W polskim: 'Ja poszedłem' — 'ja' jest opcjonalne, ale naturalne. Polacy NADUŻYWAJĄ أنا/أنتَ/هُوَ — bo w polskim zaimek jest częściej wyrażany. Reguła: w arabskim zaimek osobowy tylko dla EMFAZY."
+      },
+      {
+        "id": "pa_ce5",
+        "question": "Polski uczeń wymówił: *'كَتَبَ' ze słabym ك — Arabowie usłyszą:",
+        "translation": "(ماذا يسمع العربي إذا نطق البولندي ك ضعيفة؟)",
+        "options": [
+          "Prawdopodobnie poprawnie — ale ق vs ك to KRYTYCZNA różnica",
+          "Nic — nie ma różnicy",
+          "Tylko śmiech",
+          "Złość"
+        ],
+        "correct": "Prawdopodobnie poprawnie — ale ق vs ك to KRYTYCZNA różnica",
+        "explanation": "Polacy: fonetyczne PUŁAPKI: 1) ق (qāf, gardłowe) vs ك (kāf, podniebienne): قَلْب (serce) vs كَلْب (pies)! 2) ح (gardłowe bezgłośne) vs هـ (krtaniowe): حَرَام (zabronione) vs هَرَم (piramida). 3) ع (gardłowe) — nie istnieje w polskim: عَيْن (oko) vs *إين. 4) ط/ص/ض/ظ (emfatyczne) — brak w polskim. Polacy muszą ĆWICZYĆ gardło — arabska fonetyka to inne mięśnie niż polskie!"
+      },
+      {
+        "id": "pa_ce6",
+        "question": "Polski uczeń napisał: *'في شارع' (na ulicy) zamiast:",
+        "translation": "(كيف نقول في الشارع بشكل صحيح؟)",
+        "options": [
+          "في الشَّارِعِ (z الـ — bo konkretna/znana ulica)",
+          "في شارعٍ (poprawne)",
+          "على شارعِ",
+          "من شارعِ"
+        ],
+        "correct": "في الشَّارِعِ (z الـ — bo konkretna/znana ulica)",
+        "explanation": "TRZECI częsty błąd: brak/nadmiar الـ (rodzajnika określonego). W polskim: 'na ulicy' — BEZ rodzajnika (polki nie ma rodzajnika). W arabskim: في الشارعِ (w TEJ ulicy — określona) vs في شارعٍ (w JAKIEJŚ ulicy — nieokreślona). Polacy nie widzą tej różnicy — bo polski nie ma rodzajników! Reguła: jeśli mówisz o KONKRETNEJ/ZNANEJ rzeczy: الـ. Jeśli o JAKIEJŚ: tanwin. Jak angielskie the/a."
+      },
+      {
+        "id": "pa_ce7",
+        "question": "Polski uczeń napisał: *'المعلم يذهب إلى المدرسة' (nauczyciel idzie) — szyk:",
+        "translation": "(هل الترتيب صحيح: المعلم يذهب؟)",
+        "options": [
+          "Poprawne (zdanie nominalne), ALE w zdaniu czasownikowym: يذهبُ المعلمُ",
+          "Błędne — jedyty poprawny szyk",
+          "Nie ma różnicy",
+          "Powinno być: يذهب إلى المعلم"
+        ],
+        "correct": "Poprawne (zdanie nominalne), ALE w zdaniu czasownikowym: يذهبُ المعلمُ",
+        "explanation": "OBA szyku poprawne, ale RÓŻNE konstrukcje: 1) المعلمُ يذهبُ = zdanie NOMINALNE (tematyczne: Nauczyciel — on idzie), 2) يذهبُ المعلمُ = zdanie CZASOWNIKOWE (czynnościowe: Idzie nauczyciel). Polacy preferują szyk SVO (podmiot+orzeczenie+dopełnienie) — bo polski jest SVO. Arabski preferuje VSO (orzeczenie+podmiot+dopełnienie) w zdaniach czasownikowych. Różnica: emfaza i fokus."
+      },
+      {
+        "id": "pa_ce8",
+        "question": "Polski uczeń napisał: *'عندي أخ واحد و أخت واحدة' — błąd w:",
+        "translation": "(هل هناك خطأ في عندي أخ واحد؟)",
+        "options": [
+          "Poprawne! — ale Polacy często zapominają odwrócić rodzaj z liczbami 3-10",
+          "Całkowicie błędne",
+          "أخ powinno być أخي",
+          "واحد powinno być اثنان"
+        ],
+        "correct": "Poprawne! — ale Polacy często zapominają odwrócić rodzaj z liczbami 3-10",
+        "explanation": "To zdanie jest POPRAWNE (1 = واحد/واحدة zgadza się z rodzajem). ALE PUŁAPKA: z liczbami 3-10 rodzaj jest ODWRÓCONY! ثلاثةُ أولادٍ (3 chłopców — ة na liczbie!) vs ثلاثُ بناتٍ (3 dziewcząt — BEZ ة!). Liczba męska → ة, liczba żeńska → bez ة. To ABSOLUTNIE NIEINTUICYJNE dla Polaków! Najtrudniejsza reguła arabskiej gramatyki dla Europejczyków."
+      },
+      {
+        "id": "pa_ce9",
+        "question": "Polski uczeń w dialogu pyta: 'كَيْفَ حالَكَ؟' kobiecie — błąd:",
+        "translation": "(ما الخطأ في كيف حالَكَ لامرأة؟)",
+        "options": [
+          "Powinno być: كَيْفَ حالُكِ (zaimek ـكِ dla kobiety, nie ـكَ)",
+          "Nic — poprawne",
+          "Powinno być: كيف حالهم",
+          "Powinno być: كيف حالنا"
+        ],
+        "correct": "Powinno być: كَيْفَ حالُكِ (zaimek ـكِ dla kobiety, nie ـكَ)",
+        "explanation": "TYPOWY BŁĄD: brak rozróżnienia ـكَ (ty m.) vs ـكِ (ty ż.) w mowie. W polskim: 'Jak się masz?' — JEDNO pytanie bez rodzaju! W arabskim: كيفَ حالُكَ? (do mężczyzny) vs كيفَ حالُكِ? (do kobiety). Zaimki WSZYSTKIE mają rodzaj: -كَ/-كِ (ty), -هُ/-هَا (on/ona), -كُمْ/-كُنَّ (wy m./ż.), -هُمْ/-هُنَّ (oni/one). 12 form zamiast polskich 6! Polacy to lekceważą."
+      },
+      {
+        "id": "pa_ce10",
+        "question": "Polski uczeń pisze od PRAWEJ, ale cyfry:",
+        "translation": "(كيف تُكتب الأرقام في العربية؟)",
+        "options": [
+          "Od LEWEJ do prawej (jak w polskim!) — arabski tekst od prawej, cyfry od lewej",
+          "Od prawej",
+          "Od góry do dołu",
+          "Losowo"
+        ],
+        "correct": "Od LEWEJ do prawej (jak w polskim!) — arabski tekst od prawej, cyfry od lewej",
+        "explanation": "ZASKAKUJĄCE: arabski tekst pisze się od PRAWEJ do LEWEJ (←), ale CYFRY pisze się od LEWEJ do PRAWEJ (→)! ١٢٣ = 123 (czytasz od lewej: sto dwadzieścia trzy). To ODWROTNY kierunek w jednym zdaniu! Polacy: przyzwyczajeni do jednego kierunku (←→). Przy pisaniu mieszanym (tekst + cyfry): mózg musi 'przełączać' kierunek. To wymaga praktyki — ale staje się naturalne."
+      },
+      {
+        "id": "pa_ce11",
+        "question": "Polski uczeń mówi: *'أريدُ أنْ أذهبُ' — błąd w:",
+        "translation": "(ما الخطأ في أريد أن أذهبُ؟)",
+        "options": [
+          "Końcówka أذهبُ — po أنْ musi być أذهبَ (منصوب, nie مرفوع)",
+          "Nic — poprawne",
+          "أريد powinno być أحب",
+          "أن powinno być إن"
+        ],
+        "correct": "Końcówka أذهبُ — po أنْ musi być أذهبَ (منصوب, nie مرفوع)",
+        "explanation": "CZĘSTY BŁĄD ODMIANY: أنْ + czas teraźniejszy wymaga منصوب (biernika): أنْ أذهبَ (fatha, nie ḍamma!). Polacy: nie słyszą różnicy między -u a -a na końcu. Reguła: أنْ/لَنْ/كَيْ/حَتَّى → منصوب (أذهبَ). لَمْ/لا الناهية → مجزوم (أذهبْ). Brak partykuły → مرفوع (أذهبُ). Trzy tryby — trzy końcówki — Polak musi ćwiczyć UCHO."
+      },
+      {
+        "id": "pa_ce12",
+        "question": "Polski uczeń pisze: *'ش' zamiast 'س' — to zmienia:",
+        "translation": "(ما الفرق بين ش و س في الكلمات؟)",
+        "options": [
+          "Kompletnie znaczenie: شَمْس (słońce) vs سَمْس (*nonsens), شَرَبَ (pił) vs سَرَبَ (sączył)",
+          "Nic — podobne",
+          "Tylko wymowę",
+          "Tylko pisownię"
+        ],
+        "correct": "Kompletnie znaczenie: شَمْس (słońce) vs سَمْس (*nonsens), شَرَبَ (pił) vs سَرَبَ (sączył)",
+        "explanation": "PISOWNIA: ش (shin = sz) vs س (sīn = s) — RÓŻNE litery, RÓŻNE znaczenia! شَمْس (shams = słońce) vs سَمْس (*nonsens). شَكَلَ (kształtował) vs سَكَلَ (*nonsens). W polskim: 'sz' i 's' to jasno RÓŻNE dźwięki. Ale w PISANIU arabskim: ش = س + 3 kropki nad. Polacy mogą POMYLIĆ pisownię. Inne pary: ذ/د, ظ/ط, ث/ت — różnice w kropkach = różne litery = różne słowa!"
+      },
+      {
+        "id": "pa_ce13",
+        "question": "Polski uczeń mówi: *'أنا مِنْ بولندا' zamiast:",
+        "translation": "(كيف نقول أنا من بولندا بالعربية؟)",
+        "options": [
+          "أنا مِنْ بُولَنْدَا / أنا بُولَنْدِيّ — oba poprawne (! to zdanie jest AKCEPTOWALNE)",
+          "Tylko أنا بولندي",
+          "Tylko أنا من وارسو",
+          "Trzeba powiedzieć أنا أوروبي"
+        ],
+        "correct": "أنا مِنْ بُولَنْدَا / أنا بُولَنْدِيّ — oba poprawne (! to zdanie jest AKCEPTOWALNE)",
+        "explanation": "To POPRAWNE! أنا من بولندا = Jestem z Polski. بُولَندا lub بُولُونْيَا — oba używane w MSA. Nisba: بُولَنْدِيّ (polski/Polak). ALE: częsty błąd POLSKO-SPECYFICZNY: Polacy mówią *'بولسكا' (Polska!) zamiast بولندا/بولونيا. MSA: بُولَندا (od 'Poland'). بولونيا (od 'Polonia'). NIE: *بولسكا. Nazwy krajów w MSA często pochodzą z angielskiego/francuskiego, nie z języka rodzimego."
+      },
+      {
+        "id": "pa_ce14",
+        "question": "Polski uczeń używa إضافة: *'كِتَاب الطَّالِبِ الجَدِيد' — 'nowy' odnosi się do:",
+        "translation": "(الجديد يعود إلى الكتاب أم الطالب؟)",
+        "options": [
+          "NIEJEDNOZNACZNE! Może = nowa książka studenta LUB książka nowego studenta",
+          "Zawsze do كتاب",
+          "Zawsze do طالب",
+          "Do obu jednocześnie"
+        ],
+        "correct": "NIEJEDNOZNACZNE! Może = nowa książka studenta LUB książka nowego studenta",
+        "explanation": "PUŁAPKA إضافة: كتابُ الطالبِ الجديدُ — الجديد grammatycznie pasuje do OBU! 1) Jeśli الجديد = صفة dla كتاب → nowa książka studenta (الجديد w mianowniku jak كتاب). 2) Jeśli الجديد = صفة dla الطالب → książka nowego studenta (الجديد w dopełniaczu jak الطالب). Rozwiązanie: kontekst lub przeformułowanie: الكتاب الجديد للطالب (nowa książka studenta — jednoznaczne). Polacy: nie mają tego problemu, bo przymiotnik PRZED rzeczownikiem."
+      },
+      {
+        "id": "pa_ce15",
+        "question": "NAJWAŻNIEJSZA rada dla polskiego ucznia arabskiego:",
+        "translation": "(ما أهم نصيحة لطالب بولندي؟)",
+        "options": [
+          "Myśl po ARABSKU, nie tłumacz z polskiego — szyk i logika są ODMIENNE",
+          "Ucz się tylko słówek",
+          "Ignoruj gramatykę",
+          "Ucz się tylko dialektu"
+        ],
+        "correct": "Myśl po ARABSKU, nie tłumacz z polskiego — szyk i logika są ODMIENNE",
+        "explanation": "KLUCZOWA rada: NIE TŁUMACZ dosłownie z polskiego! Arabski ma: 1) INNY szyk (VSO vs SVO), 2) INNĄ logikę zdania (nominalne bez 'jest'), 3) RODZAJ GRAMATYCZNY wszędzie (zaimki, przymiotniki, czasowniki), 4) SYSTEM PRZYPADKÓW (3 × 2 — określony/nieokreślony), 5) RDZEŃ trójliterowy (nie ma odpowiednika w polskim). Polak musi 'przełączyć mózg' — jak z jazdy lewostronną. To NAJTRUDNIEJSZE, ale NAJWAŻNIEJSZE."
+      }
+    ]
+  },
+  {
+    "key": "false_friends_ar",
+    "name": "Fałszywi przyjaciele (أصدقاء مزيفون)",
+    "description": "كلمات متشابهة بمعانٍ مختلفة بين العربية والبولندية",
+    "iconName": "person.2.slash",
+    "color": "#60a5fa",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pa_ff1",
+        "question": "Arabskie كَلْب (kalb) brzmi jak polskie 'kalb/kolba', ale znaczy:",
+        "translation": "(ما معنى كلب بالعربية؟)",
+        "options": [
+          "Pies (nie kolba!)",
+          "Serce",
+          "Duży",
+          "Klucz"
+        ],
+        "correct": "Pies (nie kolba!)",
+        "explanation": "كَلْب (kalb) = PIES — nie mylić z polskim 'kolba'! A قَلْب (qalb) = SERCE — prawie identyczne brzmienie, ZUPEŁNIE inne znaczenie! Różnica: ك (kāf) vs ق (qāf) — tylko punkt artykulacji (podniebienne vs gardłowe). Dla Polaka: oba brzmią jak 'kalb'. PUŁAPKA nr 1 arabskiej fonetyki dla Polaków. Trzeba ćwiczyć ق — głębsze w gardle niż ك."
+      },
+      {
+        "id": "pa_ff2",
+        "question": "Arabskie حَرَام (ḥarām) NIE znaczy:",
+        "translation": "(ما لا يعني حرام؟)",
+        "options": [
+          "Harem (to حَرِيم!)",
+          "Zabronione (religijnie)",
+          "Grzech",
+          "Nienaruszalne"
+        ],
+        "correct": "Harem (to حَرِيم!)",
+        "explanation": "حَرَام (ḥarām) = zabronione/grzeszne (termin islamski). حَرِيم (ḥarīm) = harem (kobieca część domu). Oba od ح-ر-م (chronić/zakazać). W polskim 'harem' → من حَرِيم. Ale Polacy słysząc 'haram' myślą o haremie — BŁĄD! حرام = zakazane jedzenie/zachowanie (np. wieprzowina = حرام). Przeciwieństwo: حَلَال (ḥalāl) = dozwolone. To fundamentalna para pojęć islamskich."
+      },
+      {
+        "id": "pa_ff3",
+        "question": "Arabskie سَلَام (salām) = pokój. A polskie 'salam' (potoczne pozdrowienie) pochodzi od:",
+        "translation": "(من أين الكلمة البولندية سلام؟)",
+        "options": [
+          "السَّلَامُ عَلَيْكُمْ (Pokój z wami — arabskie pozdrowienie)",
+          "Języka łacińskiego",
+          "Języka tureckiego bezpośrednio",
+          "Nie ma związku"
+        ],
+        "correct": "السَّلَامُ عَلَيْكُمْ (Pokój z wami — arabskie pozdrowienie)",
+        "explanation": "Polskie potoczne 'salam' (cześć/hej) pochodzi od arabskiego السَّلَامُ عَلَيْكُمْ (as-salāmu ʿalaykum) = Pokój z wami. Droga: arabski → turecki (Imperium Osmańskie) → polskie kontakty z Turkami (XVII w.). W polskim: 'salam' = żartobliwe/potoczne pozdrowienie. W arabskim: poważ ne pozdrowienie formalne i religijne. Odpowiedź: وَعَلَيْكُمُ السَّلَامُ (I z wami pokój)."
+      },
+      {
+        "id": "pa_ff4",
+        "question": "Arabskie أَلْكُحُول (al-kuḥūl) = alkohol. Ale oryginalne arabskie znaczenie to:",
+        "translation": "(ما المعنى الأصلي لكلمة الكُحول؟)",
+        "options": [
+          "Proszek do oczu (kohl/antimony — kosmetyk oczny)",
+          "Napój alkoholowy",
+          "Whisky",
+          "Wino"
+        ],
+        "correct": "Proszek do oczu (kohl/antimony — kosmetyk oczny)",
+        "explanation": "الكُحُول (al-kuḥūl) oryginalnie = proszek do oczu (الكُحْل = kohl/antimony — czarny proszek do malowania oczu). Droga: arabscy alchemicy destylowali substancje i nazywali czysty destylat الكُحُول → europejskie 'alcohol'. Jedno z WIELU arabskich słów w polskim: algorytm (الخوارزمي), algebra (الجبر), cyfra (صِفر), kawa (قهوة), bawełna (قُطْن), magazyn (مَخْزَن), admiral (أمير البحر)."
+      },
+      {
+        "id": "pa_ff5",
+        "question": "Polskie 'algebra' pochodzi od arabskiego:",
+        "translation": "(من أين كلمة algebra البولندية؟)",
+        "options": [
+          "الجَبْر (al-jabr = łączenie/uzupełnianie — od al-Chwarizmiego)",
+          "الجَبَل (al-jabal = góra)",
+          "الجَبِين (al-jabīn = czoło)",
+          "الجَبَر (al-jabar = tyran)"
+        ],
+        "correct": "الجَبْر (al-jabr = łączenie/uzupełnianie — od al-Chwarizmiego)",
+        "explanation": "Algebra ← الجَبْر (al-jabr) = łączenie/uzupełnianie. Od tytułu dzieła al-Chwarizmiego (IX w.): 'كتاب الجبر والمقابلة' = Księga uzupełniania i równoważenia. الجَبْر dosłownie = nastawianie kości (stąd: ortopeda = مُجَبِّر). Arabscy matematycy utworzyli PODSTAWY algebry, algorytmów (الخوارزمي → algorytm), systemu decymalnego. Połowa polskiej terminologii matematycznej ma arabskie korzenie!"
+      },
+      {
+        "id": "pa_ff6",
+        "question": "Arabskie دِين (dīn) = religia. Ale polskie 'dżin' (gin) pochodzi od:",
+        "translation": "(من أين كلمة gin البولندية؟)",
+        "options": [
+          "جِنّ (jinn = duchy/istoty nadprzyrodzone — NIE od دين!)",
+          "دين (religia)",
+          "جَنَّة (raj)",
+          "جُنُون (szaleństwo)"
+        ],
+        "correct": "جِنّ (jinn = duchy/istoty nadprzyrodzone — NIE od دين!)",
+        "explanation": "UWAGA: دِين (dīn = religia) ≠ جِنّ (jinn = dżin/duchy). Polskie 'dżin' od arabskiego جِنّ (istoty nadprzyrodzone z Koranu i 1001 nocy — lampa Aladyna!). جِنّ od root ج-ن-ن = ukrywać (niewidzialne istoty). دِين od root د-ي-ن = sądzić/religijnie wierzyć. Zupełnie INNE rdzenie, INNE znaczenia. Polacy mogą mylić ze względu na podobne brzmienie dla niewprawnego ucha."
+      },
+      {
+        "id": "pa_ff7",
+        "question": "Arabskie نَهَار (nahār) = :",
+        "translation": "(ما معنى نهار؟)",
+        "options": [
+          "Dzień (pora jasna) — NIE 'nahar' (polski slang)",
+          "Noc",
+          "Rzeka",
+          "Wiatr"
+        ],
+        "correct": "Dzień (pora jasna) — NIE 'nahar' (polski slang)",
+        "explanation": "نَهَار (nahār) = dzień (pora jasna, przeciwieństwo لَيْل = noc). Nie mylić z: نَهْر (nahr) = rzeka (inna samogłoska, inne znaczenie!). Porównaj: نهار = dzień (a-ā), نهر = rzeka (a-brak). Jedna samogłoska zmienia WSZYSTKO. W polskim: brak takich par. W arabskim: system korzeniowy (ن-ه-ر = płynąć → rzeka) vs (ن-ه-ر = jasność → dzień) — TEN SAM rdzeń, ALE inne formy!"
+      },
+      {
+        "id": "pa_ff8",
+        "question": "Arabskie مَدْرَسَة (madrasa) NIE jest:",
+        "translation": "(ما لا تعني مدرسة؟)",
+        "options": [
+          "Szkołą religijną WYŁĄCZNIE (w arabskim = KAŻDA szkoła)",
+          "Szkołą podstawową",
+          "Szkołą średnią",
+          "Uniwersytetem"
+        ],
+        "correct": "Szkołą religijną WYŁĄCZNIE (w arabskim = KAŻDA szkoła)",
+        "explanation": "مَدْرَسَة (madrasa) w arabskim = KAŻDA szkoła (podstawowa, średnia, prywatna — nie tylko religijna!). W polskim/europejskim: 'medresa' → kojarzy się WYŁĄCZNIE ze szkołą islamską/religijną. To FAŁSZYWY PRZYJACIEL semantyczny: słowo weszło do polskiego z ZAWĘŻONYM znaczeniem. Od root د-ر-س (studiować/uczyć się). مَدْرَسَة = miejsce nauki (مَفْعَلَة = wzorzec miejsca)."
+      },
+      {
+        "id": "pa_ff9",
+        "question": "Arabskie جِهَاد (jihād) dosłownie znaczy:",
+        "translation": "(ما المعنى الأصلي لكلمة جهاد؟)",
+        "options": [
+          "Zmaganie/Wysiłek (duchowy lub fizyczny)",
+          "Tylko wojna",
+          "Tylko modlitwa",
+          "Tylko post"
+        ],
+        "correct": "Zmaganie/Wysiłek (duchowy lub fizyczny)",
+        "explanation": "جِهَاد (jihād) = ZMAGANIE/WYSIŁEK — od root ج-ه-د = wkładać wysiłek. W islamie: 1) الجهاد الأكبر (większy jihād) = walka z własnymi słabościami/pokusami, 2) الجهاد الأصغر (mniejszy jihād) = obrona. W polskim/europejskim: 'dżihad' = WYŁĄCZNIE wojna → FAŁSZYWY PRZYJACIEL. Oryginalne arabskie znaczenie: بَذْلُ الجُهْد (wkładanie wysiłku) — może być: nauka, dobre uczynki, cierpliwość."
+      },
+      {
+        "id": "pa_ff10",
+        "question": "Arabskie حَمَّام (ḥammām) w polskim kontekście kojarzy się z:",
+        "translation": "(ما يتبادر إلى ذهن البولندي عند سماع حمّام؟)",
+        "options": [
+          "Łaźnią (hammam), ale po arabsku = też ŁAZIENKA/TOALETA!",
+          "Tylko luksusową łaźnią",
+          "Basenem",
+          "Sauną"
+        ],
+        "correct": "Łaźnią (hammam), ale po arabsku = też ŁAZIENKA/TOALETA!",
+        "explanation": "حَمَّام (ḥammām) w polskim: 'hammam' = orientalna łaźnia (SPA). W arabskim: حمّام = ŁAZIENKA/TOALETA w codziennym użyciu! 'أين الحمّام؟' = Gdzie łazienka? (nie: Gdzie łaźnia turecka?). Od root ح-م-م = gorąco/kąpiel. Polak pytając o حمّام oczekuje luksusu — Arab wskazuje zwykłą toaletę! FAŁSZYWY PRZYJACIEL: to samo słowo, różne oczekiwania kulturowe."
+      },
+      {
+        "id": "pa_ff11",
+        "question": "Arabskie سُلْطَان (sulṭān) w polskim = sułtan (władca), ale w MSA też:",
+        "translation": "(هل سلطان فقط = حاكم؟)",
+        "options": [
+          "Władza/autorytet (abstrakcyjne!) + imię własne (bardzo popularne)",
+          "Tylko tytuł władcy",
+          "Tylko imię",
+          "Tylko kraj"
+        ],
+        "correct": "Władza/autorytet (abstrakcyjne!) + imię własne (bardzo popularne)",
+        "explanation": "سُلْطَان (sulṭān) = 1) Władza/autorytet (abstrakt, nie osoba!): سلطانُ القانونِ = władza prawa. 2) Tytuł: sułtan (historyczny władca). 3) Imię własne: Sultan (popularne arabskie imię). W polskim: 'sułtan' = TYLKO władca turecki/arabski. FAŁSZYWY PRZYJACIEL: w MSA سلطة (sulṭa) = władza (polityczna), سلطان = autorytet (szersze). Polskie zawężenie = wypaczenie sensu."
+      },
+      {
+        "id": "pa_ff12",
+        "question": "Polskie 'kawa' pochodzi od arabskiego:",
+        "translation": "(من أين كلمة kawa البولندية؟)",
+        "options": [
+          "قَهْوَة (qahwa) — pierwotnie = wino, potem napój z kawy",
+          "كَوَا (kawa)",
+          "قَوِيّ (qawiyy = silny)",
+          "كَافِي (kāfī = wystarczający)"
+        ],
+        "correct": "قَهْوَة (qahwa) — pierwotnie = wino, potem napój z kawy",
+        "explanation": "Polskie 'kawa' ← tureckie 'kahve' ← arabskie قَهْوَة (qahwa). Etymologia: قهوة pierwotnie = WINO (lub napój zmniejszający apetyt). Gdy odkryto kawę (Etiopia/Jemen XV w.), przeniesiono nazwę. Droga: Jemen → Turcja → Wenecja → Europa → Polska. W arabskim: قهوة = kawa (dziś), ale historycznie = wino! FAŁSZYWY PRZYJACIEL diachroniczny: to samo słowo zmieniło ZNACZENIE w czasie."
+      },
+      {
+        "id": "pa_ff13",
+        "question": "Arabskie عَرَبِيّ (ʿarabiyy) vs عَرَبِيَّة (ʿarabiyya) — różnica:",
+        "translation": "(ما الفرق بين عربي و عربية؟)",
+        "options": [
+          "عربيّ = arabski/Arab (m.); عربيَّة = arabska/Arabka (ż.) + JĘZYK arabski + SAMOCHÓD",
+          "Identyczne",
+          "عربي = język; عربية = osoba",
+          "عربي = stare; عربية = nowe"
+        ],
+        "correct": "عربيّ = arabski/Arab (m.); عربيَّة = arabska/Arabka (ż.) + JĘZYK arabski + SAMOCHÓD",
+        "explanation": "PUŁAPKA wieloznaczności: عَرَبِيَّة (ʿarabiyya) = 1) Arabska (przymiotnik ż.): امرأة عربيَّة (arabska kobieta), 2) Język arabski: اللغة العربيَّة, 3) SAMOCHÓD (w dialekcie egipskim!): عربيَّة (ʿarabiyya) = wóz/samochód. Więc: عندي عربيَّة = MAM SAMOCHÓD (nie: mam arabskę!). Polak: nie spodziewa się, że 'arabska' = 'samochód'. Kontekst + dialekt = klucz."
+      },
+      {
+        "id": "pa_ff14",
+        "question": "Polskie 'magazyn' pochodzi od arabskiego مَخْزَن (makhzan) = :",
+        "translation": "(ما معنى مخزن بالعربية؟)",
+        "options": [
+          "Magazyn/Skład (miejsce przechowywania) — identyczne!",
+          "Sklep",
+          "Gazeta",
+          "Czasopismo"
+        ],
+        "correct": "Magazyn/Skład (miejsce przechowywania) — identyczne!",
+        "explanation": "مَخْزَن (makhzan) = magazyn/skład. Od root خ-ز-ن = magazynować/przechowywać. مَخْزَن = مَفْعَل (wzorzec miejsca) = miejsce przechowywania. Droga: arabski → włoski 'magazzino' → polskie 'magazyn'. ANGIELSKI: 'magazine' = CZASOPISMO (nie magazyn!) — bo pierwotnie 'magazyn broni' → militar. periodical → czasopismo. To FAŁSZYWY PRZYJACIEL ang-pl, ale nie ar-pl (tu znaczenie się zachowało)!"
+      },
+      {
+        "id": "pa_ff15",
+        "question": "Ile polskich słów ma arabskie pochodzenie?",
+        "translation": "(كم كلمة بولندية من أصل عربي؟)",
+        "options": [
+          "Kilkadziesiąt (przez turecki, włoski, hiszpański)",
+          "0 — nic wspólnego",
+          "Tylko 1-2 słowa",
+          "Ponad 1000"
+        ],
+        "correct": "Kilkadziesiąt (przez turecki, włoski, hiszpański)",
+        "explanation": "Arabskie zapożyczenia w polskim (przez turecki/włoski/hiszpański/łacinę): kawa (قهوة), algebra (الجبر), algorytm (الخوارزمي), cyfra (صفر), zero (صفر), alkohol (الكحول), bawełna (قطن), magazyn (مخزن), admiral (أمير البحر), nadir (نظير), zenit (سمت), sofa (صفة), szach (شاه — perski, ale przez arabski). Polska-arabski: odległy geograficznie, ale BLISKI leksykalnie przez wieki wymiany kulturowej!"
+      }
+    ]
+  },
+  {
+    "key": "travel_vocabulary_ar",
+    "name": "Podróże — słownictwo (مفردات السفر)",
+    "description": "مفردات ونحو السفر والمواصلات بالعربية",
+    "iconName": "airplane",
+    "color": "#818cf8",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_tv1",
+        "question": "أُرِيدُ تَذْكِرَةً إلى _____ (Chcę bilet do Kairu)",
+        "translation": "(Chcę bilet do Kairu)",
+        "options": [
+          "القَاهِرَة",
+          "بيروت",
+          "دمشق",
+          "الرباط"
+        ],
+        "correct": "القَاهِرَة",
+        "explanation": "القَاهِرَة (al-Qāhira) = Kair (stolica Egiptu). Dosłownie: 'Zwycięska' (imiesłów czynny od ق-ه-ر = pokonać). تذكرة (tadhkira) = bilet (od ذ-ك-ر = pamiętać → 'przypomnienie'). Gramatycznie: أريدُ (chcę) + تذكرةً (biernik — مفعول به) + إلى (do — przyimek) + القاهرةِ (dopełniacz po przyimku). Inne miasta: بَيْرُوت (Bejrut), دِمَشْق (Damaszek), الرِّيَاض (Rijad)."
+      },
+      {
+        "id": "pa_tv2",
+        "question": "أَيْنَ _____ ؟ (Gdzie jest lotnisko?)",
+        "translation": "(Gdzie jest lotnisko?)",
+        "options": [
+          "المَطَار",
+          "المَحَطَّة",
+          "المَيْنَاء",
+          "المَتْجَر"
+        ],
+        "correct": "المَطَار",
+        "explanation": "المَطَار (al-maṭār) = lotnisko. Od root ط-ي-ر = latać. مَطَار = مَفْعَل (wzorzec miejsca z formą I) = miejsce latania. Inne: المَحَطَّة (maḥaṭṭa = stacja/dworzec, od ح-ط-ط = stawiać), المِيْنَاء (mīnāʾ = port morski), المَوْقِف (mawqif = przystanek, od و-ق-ف = stać). Gramatycznie: أينَ (przysłówek pytający) + المطارُ (مبتدأ w mianowniku)."
+      },
+      {
+        "id": "pa_tv3",
+        "question": "كَمْ _____ الغُرْفَة لِلَيْلَةٍ وَاحِدَة؟ (Ile kosztuje pokój za jedną noc?)",
+        "translation": "(Ile kosztuje pokój za jedną noc?)",
+        "options": [
+          "سِعْرُ",
+          "وَزْنُ",
+          "طُولُ",
+          "عَرْضُ"
+        ],
+        "correct": "سِعْرُ",
+        "explanation": "كم سعرُ الغرفةِ لليلةٍ واحدةٍ? = Ile (kosztuje = jaka cena) pokój za jedną noc? سِعْر (siʿr) = cena (od س-ع-ر = ustalać cenę). الغرفة (ghurfa) = pokój. لليلةٍ واحدةٍ = za jedną noc (لِـ = za/na, ليلة = noc, واحدة = jedna — żeńska bo ليلة jest żeńska). Odpowiedź: السعرُ مئةُ دولارٍ (cena to sto dolarów)."
+      },
+      {
+        "id": "pa_tv4",
+        "question": "هَلْ يُمْكِنُنِي _____ جَوَاز السَّفَر؟ (Czy mogę zobaczyć paszport?)",
+        "translation": "(Czy mogę zobaczyć paszport?)",
+        "options": [
+          "رُؤْيَة",
+          "أَكْل",
+          "شُرْب",
+          "كِتَابَة"
+        ],
+        "correct": "رُؤْيَة",
+        "explanation": "هل يمكنُني رؤيةُ جوازِ السفرِ? = Czy mogę zobaczyć paszport? جَوَاز السَّفَر (jawāz as-safar) = paszport (dosłownie: 'pozwolenie podróży'). رؤية (ruʾya) = widzenie/zobaczenie (masdar from ر-أ-ى). يمكنُني = jest mi możliwe (يمكن + ـني). Na lotnisku: جواز السفر (paszport), تأشيرة (wiza), بطاقة صعود (karta pokładowa), جمرك (cariat celna)."
+      },
+      {
+        "id": "pa_tv5",
+        "question": "أُرِيدُ غُرْفَةً _____ (Chcę pokój DWUOSOBOWY)",
+        "translation": "(Chcę pokój dwuosobowy)",
+        "options": [
+          "مُزْدَوِجَة",
+          "مُفْرَدَة",
+          "ثُلَاثِيَّة",
+          "فَارِغَة"
+        ],
+        "correct": "مُزْدَوِجَة",
+        "explanation": "غرفة مُزْدَوِجَة (muzdawija) = pokój dwuosobowy (od root ز-و-ج = para). غرفة مُفْرَدَة (mufrada) = pokój jednoosobowy (od ف-ر-د = jeden). Inne: غرفة ثُلَاثِيَّة (trzyosobowy). W hotelu: حَجْز (reservacja), تسجيل الوصول (check-in), تسجيل المغادرة (check-out), خدمة الغرف (room service). Formy od rdzeni: مُفْعَل = imiesłów bierny."
+      },
+      {
+        "id": "pa_tv6",
+        "question": "خُذْنِي إلى _____ مِنْ فَضْلِكَ (Zabierz mnie do centrum, proszę)",
+        "translation": "(Zabierz mnie do centrum)",
+        "options": [
+          "وَسَط المَدِينَة",
+          "المَطَار",
+          "الفُنْدُق",
+          "المَطْعَم"
+        ],
+        "correct": "وَسَط المَدِينَة",
+        "explanation": "خُذْنِي (khudhnī) = zabierz mnie (rozkaźnik od أَخَذَ = brać + ـني = mnie). وَسَط المَدِينَة (wasaṭ al-madīna) = centrum miasta (dosłownie: środek miasta). من فَضْلِكَ = proszę (dosłownie: z twojej łaskawości). W taksówce: كَمْ? (ile?), عَلَى اليَمِين (na prawo), عَلَى اليَسَار (na lewo), عَلَى طُول (prosto), قِفْ هُنَا (zatrzymaj się tutaj)."
+      },
+      {
+        "id": "pa_tv7",
+        "question": "مَتَى يُغَادِرُ _____ ؟ (Kiedy odjeżdża pociąg?)",
+        "translation": "(Kiedy odjeżdża pociąg?)",
+        "options": [
+          "القِطَار",
+          "الطَّائِرَة",
+          "السَّفِينَة",
+          "الحَافِلَة"
+        ],
+        "correct": "القِطَار",
+        "explanation": "القِطَار (al-qiṭār) = pociąg. يُغَادِرُ (yughādiru) = odjeżdża/opuszcza (III forma od غ-د-ر). Inne środki transportu: الطَّائِرَة (samolot — od ط-ي-ر = latać), السَّفِينَة (statek — od س-ف-ن), الحَافِلَة (autobus — od ح-ف-ل = być pełnym), سَيَّارَة (samochód — od س-ي-ر = jechać), تَاكْسِي (taksówka — z angielskiego). Wzorzec: فَعِيلَة/فَاعِلَة = rzeczowniki od rdzeni."
+      },
+      {
+        "id": "pa_tv8",
+        "question": "أَحْتاجُ إلى _____ (Potrzebuję mapy)",
+        "translation": "(Potrzebuję mapy)",
+        "options": [
+          "خَرِيطَة",
+          "صُحُف",
+          "كِتَاب",
+          "قَلَم"
+        ],
+        "correct": "خَرِيطَة",
+        "explanation": "خَرِيطَة (kharīṭa) = mapa. أحتاجُ إلى (aḥtāju ilā) = potrzebuję (VIII forma + przyimek إلى). Podróżnicze: خريطة (mapa), دَلِيل سِيَاحِيّ (przewodnik turystyczny), مَعْلَم سِيَاحِيّ (zabytek — od ع-ل-م), مُتْحَف (muzeum — od ت-ح-ف = dzieło sztuki), سُوق (bazar/rynek), مَسْجِد (meczet — od س-ج-د = kłaniać się), كَنِيسَة (kościół)."
+      },
+      {
+        "id": "pa_tv9",
+        "question": "هَلْ تَتَكَلَّمُ _____؟ (Czy mówisz po angielsku?)",
+        "translation": "(Czy mówisz po angielsku?)",
+        "options": [
+          "الإِنْجِلِيزِيَّة",
+          "العَرَبِيَّة",
+          "الفَرَنْسِيَّة",
+          "الأَلْمَانِيَّة"
+        ],
+        "correct": "الإِنْجِلِيزِيَّة",
+        "explanation": "الإنجليزيَّة (al-injilīziyya) = angielski (język). تتكلَّمُ (tatakallamu) = mówisz (V forma od ك-ل-م). Języki: العَرَبِيَّة (arabski), الفَرَنْسِيَّة (francuski), الأَلْمَانِيَّة (niemiecki), البُولَنْدِيَّة (polski), الإسْبَانِيَّة (hiszpański). Wzorzec: الـ + nisba (-iyya) = nazwa języka. Alternatywa: هل تتحدَّثُ (tatḥaddathu — IV forma alternatywna) = też 'mówisz'."
+      },
+      {
+        "id": "pa_tv10",
+        "question": "أَيْنَ يُمْكِنُنِي _____ العُمْلَة؟ (Gdzie mogę wymienić walutę?)",
+        "translation": "(Gdzie mogę wymienić walutę?)",
+        "options": [
+          "صَرْف",
+          "شِرَاء",
+          "بَيْع",
+          "أَخْذ"
+        ],
+        "correct": "صَرْف",
+        "explanation": "صَرْف العُمْلَة (ṣarf al-ʿumla) = wymiana waluty. صَرْف (ṣarf) = wymiana/zamiana (od ص-ر-ف). العُمْلَة (ʿumla) = waluta (od ع-م-ل = praca/działanie). مَكْتَب الصَّرْف (maktab aṣ-ṣarf) = kantor. Waluty: دِينَار (dinar), دِرْهَم (dirham), رِيَال (rial), جُنَيْه (funt — w Egipcie), لِيرَة (lira — w Libanie/Syrii). Wszystkie od starożytnych monet (dinar ← denarius, dirham ← drachma)."
+      },
+      {
+        "id": "pa_tv11",
+        "question": "_____ مُنْذُ مَتَى وَأَنْتَ هُنَا؟ (Od kiedy tu jesteś?)",
+        "translation": "(Od kiedy tu jesteś?)",
+        "options": [
+          "مُنْذُ (Od/Od kiedy)",
+          "بَعْدَ",
+          "قَبْلَ",
+          "حَتَّى"
+        ],
+        "correct": "مُنْذُ (Od/Od kiedy)",
+        "explanation": "مُنْذُ (mundhu) = OD (czasowe). 'منذُ متى وأنتَ هنا?' = Od kiedy tu jesteś? Inne czasowe: بَعْدَ (po), قَبْلَ (przed), حَتَّى (aż do), خِلَالَ (podczas). منذ + rzeczownik w dopełniaczu: منذُ أسبوعٍ (od tygodnia), منذُ سنتينِ (od dwóch lat). W polskim: 'od' — proste. W arabskim: منذ/مذ — formalne/skrócone."
+      },
+      {
+        "id": "pa_tv12",
+        "question": "هَلْ هُنَاكَ _____ قَرِيبٌ مِنْ هُنَا؟ (Czy jest tu blisko szpital?)",
+        "translation": "(Czy jest szpital blisko?)",
+        "options": [
+          "مُسْتَشْفَى",
+          "مَطْعَم",
+          "فُنْدُق",
+          "مَكْتَبَة"
+        ],
+        "correct": "مُسْتَشْفَى",
+        "explanation": "مُسْتَشْفَى (mustashfā) = szpital. Od X forma root ش-ف-ي (leczyć): اِسْتَشْفَى = szukać leczenia → مُستشفى = miejsce szukania leczenia! هُناك (hunāka) = tam/jest (istnieje). قَريب من (qarīb min) = blisko od. Na nagłe wypadki: إسْعَاف (ambulans), طَبِيب (lekarz), صَيْدَلِيَّة (apteka — od صيدلي = farmaceuta). Wzorzec مُسْتَفْعَل = miejsce X formy."
+      },
+      {
+        "id": "pa_tv13",
+        "question": "أَنَا _____ (Jestem zgubiony/a)",
+        "translation": "(Jestem zgubiony)",
+        "options": [
+          "ضَائِعٌ / ضَائِعَةٌ",
+          "سَعِيدٌ",
+          "تَعْبَانٌ",
+          "جَائِعٌ"
+        ],
+        "correct": "ضَائِعٌ / ضَائِعَةٌ",
+        "explanation": "أنا ضائعٌ (m.) / ضائعةٌ (ż.) = Jestem zgubiony/a. ضائع (ḍāʾiʿ) = imiesłów czynny od ض-ي-ع = zgubić się. Przydatne: أنا ضائعٌ, هل يمكنُكَ مساعدتي؟ (Jestem zgubiony, czy możesz mi pomóc?). Inne stany: تَعْبَان (zmęczony), جَائِع (głodny), عَطْشَان (spragniony), مَرِيض (chory). Szyk: أنا + przymiotnik (zdanie nominalne — BEZ 'jest')."
+      },
+      {
+        "id": "pa_tv14",
+        "question": "الجَوُّ _____ اليَوْمَ (Pogoda jest gorąca dzisiaj)",
+        "translation": "(Pogoda jest gorąca dzisiaj)",
+        "options": [
+          "حَارٌّ",
+          "بَارِدٌ",
+          "مُمْطِرٌ",
+          "مُعْتَدِلٌ"
+        ],
+        "correct": "حَارٌّ",
+        "explanation": "الجوُّ حارٌّ اليومَ = Pogoda jest gorąca dzisiaj. الجو (al-jaww) = pogoda/atmosfera. حارّ (ḥārr) = gorący (od ح-ر-ر = być gorącym). اليوم (al-yawm) = dzisiaj (w bierniku jako ظرف زمان). Pogoda: بارد (zimny), مُمْطِر (deszczowy), مُعْتَدِل (umiarkowany), رَطْب (wilgotny), جَافّ (suchy), مُشمِس (słoneczny). Zdanie nominalne: الجو = مبتدأ, حارّ = خبر."
+      },
+      {
+        "id": "pa_tv15",
+        "question": "شُكْراً جَزِيلاً! الطَّعَامُ كَانَ _____ (Bardzo dziękuję! Jedzenie było pyszne)",
+        "translation": "(Jedzenie było pyszne)",
+        "options": [
+          "لَذِيذاً",
+          "بَارِداً",
+          "غَالِياً",
+          "قَلِيلاً"
+        ],
+        "correct": "لَذِيذاً",
+        "explanation": "الطعامُ كانَ لذيذاً = Jedzenie było pyszne. كان = było (orzeczenie przeszłe kopularne). لذيذاً (ladhīdhan) = pyszne (в bierniku bo خبر كان). شُكراً جزيلاً = bardzo dziękuję (شُكراً = dziękuję, جزيلاً = obfity). Jedzenie: لَذِيذ (pyszny), حَارّ (ostry/gorący), مَالِح (słony), حُلْو (słodki), مُرّ (gorzki). Gramatycznie: كان rządzi بiernikiem orzecznika."
+      }
+    ]
+  },
+  {
+    "key": "food_restaurant_ar",
+    "name": "Jedzenie i restauracja (الطعام والمطعم)",
+    "description": "مفردات الطعام وآداب المطعم بالعربية",
+    "iconName": "fork.knife",
+    "color": "#fbbf24",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pa_fr1",
+        "question": "أَعْطِنِي _____ مِنْ فَضْلِكَ (Daj mi jadłospis, proszę)",
+        "translation": "(Daj mi jadłospis, proszę)",
+        "options": [
+          "قَائِمَة الطَّعَام",
+          "الحِسَاب",
+          "الفَاتُورَة",
+          "المِلْح"
+        ],
+        "correct": "قَائِمَة الطَّعَام",
+        "explanation": "قائمةُ الطعامِ (qāʾimat aṭ-ṭaʿām) = jadłospis (dosłownie: lista jedzenia). أعطِني (aʿṭinī) = daj mi (rozkaźnik od أعطى IV forma + ـني). من فضلِكَ = proszę. W restauracji: قائمة (menu), طَبَق (danie), مُقَبِّلَات (przystawki), طَبَق رَئِيسِيّ (danie główne), حَلْوَيَات (desery), مَشْرُوبَات (napoje). Gramatycznie: إضافة (قائمة + الطعام)."
+      },
+      {
+        "id": "pa_fr2",
+        "question": "أُرِيدُ _____ مَشْوِيّاً (Chcę grillowanego kurczaka)",
+        "translation": "(Chcę grillowanego kurczaka)",
+        "options": [
+          "دَجَاجاً",
+          "سَمَكاً",
+          "لَحْماً",
+          "أَرُزّاً"
+        ],
+        "correct": "دَجَاجاً",
+        "explanation": "دَجَاجاً مَشْوِيّاً (dajājan mashwiyyan) = grillowanego kurczaka. دَجَاج (dajāj) = kurczak, مَشْوِيّ (mashwiyy) = grillowany (od ش-و-ي = grillować). Oba w bierniku (منصوب) bo مفعول به. Mięsa: لَحْم (mięso — ogólnie), لَحْم بَقَر (wołowina), لَحْم غَنَم (baranina), سَمَك (ryba), دَجَاج (kurczak). Przygotowanie: مَشْوِيّ (grill), مَقْلِيّ (smażony), مَسْلُوق (gotowany)."
+      },
+      {
+        "id": "pa_fr3",
+        "question": "هَلْ عِنْدَكُمْ طَعَامٌ _____؟ (Czy macie jedzenie halal?)",
+        "translation": "(Czy macie jedzenie halal?)",
+        "options": [
+          "حَلَال",
+          "حَرَام",
+          "مَمْنُوع",
+          "مَقْبُول"
+        ],
+        "correct": "حَلَال",
+        "explanation": "حَلَال (ḥalāl) = dozwolone (religijnie, w islamie). Przeciwieństwo: حَرَام (ḥarām) = zabronione. W kontekście jedzenia: mięso حلال = ubite zgodnie z islamskimi regułami (ذَبْح = ubój rytualny). Zakazane: wieprzowina (لَحْم خِنْزِير), alkohol (كُحُول/خَمْر). عِنْدَكُمْ = macie (عند + كم = u was). Zdanie: هل (czy) + عندكم (macie) + طعامٌ (jedzenie) + حلال (dozwolone)."
+      },
+      {
+        "id": "pa_fr4",
+        "question": "الحِسَابَ مِنْ فَضْلِكَ (Rachunek, proszę). Co odpowiada kelner?",
+        "translation": "(ماذا يقول النادل عند الحساب؟)",
+        "options": [
+          "تَفَضَّلْ / حَاضِر (Proszę / Zaraz)",
+          "لا (Nie)",
+          "مرحباً (Witam)",
+          "شكراً (Dziękuję)"
+        ],
+        "correct": "تَفَضَّلْ / حَاضِر (Proszę / Zaraz)",
+        "explanation": "الحِسَاب (al-ḥisāb) = rachunek (od ح-س-ب = liczyć). حَاضِر (ḥāḍir) = gotowy/zaraz (= 'jest pod ręką'). تفضَّل (tafaḍḍal) = proszę (podając rachunek). Napiwek: بَقْشِيش (bakshish — z tureckiego/perskiego). Inne: الفَاتُورَة (faktura), بِطَاقَة ائتمان (karta kredytowa), نَقْداً (gotówką), الباقي (reszta). Kultura: w krajach arabskich napiwek jest OCZEKIWANY (5-15%)."
+      },
+      {
+        "id": "pa_fr5",
+        "question": "بِالصِّحَّةِ وَالعَافِيَة! mówi się:",
+        "translation": "(متى نقول بالصحة والعافية؟)",
+        "options": [
+          "Po jedzeniu (= Na zdrowie! / Smacznego!)",
+          "Przed snem",
+          "Na powitanie",
+          "Na pożegnanie"
+        ],
+        "correct": "Po jedzeniu (= Na zdrowie! / Smacznego!)",
+        "explanation": "بِالصِّحَّةِ وَالعَافِيَة (biṣ-ṣiḥḥati wal-ʿāfiya) = Na zdrowie i dobrostan! Mówi się PO jedzeniu (lub podczas). الصِّحَّة = zdrowie (od ص-ح-ح = być zdrowym), العَافِيَة = dobrostan/siła (od ع-ف-ي = być zdrowym). Przed jedzeniem: بِسْمِ اللهِ (W imię Boga). Po jedzeniu: الحمدُ لله (Chwała Bogu). Kulturowo: jedzenie w arabskim świecie to AKT SPOŁECZNY — otoczone formułami i dwustronnymi życzeniami."
+      },
+      {
+        "id": "pa_fr6",
+        "question": "الحُمُّص / الفَلَافِل / التَّبُّولَة — to wszystko:",
+        "translation": "(ما القاسم المشترك بين الحمص والفلافل والتبولة؟)",
+        "options": [
+          "Arabskie dania kuchni lewantyckiej (مطبخ شامي)",
+          "Desery",
+          "Napoje",
+          "Owoce"
+        ],
+        "correct": "Arabskie dania kuchni lewantyckiej (مطبخ شامي)",
+        "explanation": "Kuchnia lewantycka (مطبخ شامي): الحُمُّص (hummus = pasta z ciecierzycy), الفَلَافِل (falafel = smażone kulki z ciecierzycy/bobu), التَّبُّولَة (tabbouleh = sałatka z pietruszki/bulguru). Inne: فَتُّوش (fattoush = sałatka z chlebem), شَاوِرْمَا (shawarma = kebab), بَابَا غَنُّوج (baba ghanoush = pasta z bakłażana). Te dania weszły do ŚWIATOWEJ kuchni — Polacy je znają!"
+      },
+      {
+        "id": "pa_fr7",
+        "question": "أَنَا _____ (Jestem WEGETARIANINEM/-KĄ)",
+        "translation": "(Jestem wegetarianinem)",
+        "options": [
+          "نَبَاتِيّ / نَبَاتِيَّة",
+          "لَحْمِيّ",
+          "سَمْكِيّ",
+          "حَلِيبِيّ"
+        ],
+        "correct": "نَبَاتِيّ / نَبَاتِيَّة",
+        "explanation": "نَبَاتِيّ (nabātiyy) / نَبَاتِيَّة (nabātiyya) = wegetarianin/-ka. Od نَبَات (nabāt) = roślina + ـيّ (nisba = przymiotnikowy sufiks). Inne: لا آكلُ اللَّحمَ (nie jem mięsa), لا آكلُ مُنْتَجَاتٍ حَيَوَانِيَّة (nie jem produktów zwierzęcych = vegan). W krajach arabskich: wegetarianizm jest RZADSZY niż w Polsce — mięso jest kulturowo ważne. Ale: kuchnia arabska ma WIELE dań bezmięsnych (hummus, falafel, foul)!"
+      },
+      {
+        "id": "pa_fr8",
+        "question": "قَهْوَة _____ (Kawa BEZ cukru)",
+        "translation": "(Kawa bez cukru)",
+        "options": [
+          "سَادَة / بِدُونِ سُكَّر",
+          "حُلْوَة",
+          "مُرَّة جِدّاً",
+          "مَعَ حَلِيب"
+        ],
+        "correct": "سَادَة / بِدُونِ سُكَّر",
+        "explanation": "قَهْوَة سَادَة (qahwa sāda) = kawa prosta/bez cukru. سَادَة = prosta/zwykła. بِدُونِ سُكَّر = bez cukru. Arabska kawa (القهوة العربية): stopnie słodyczy: 1) سادَة/مُرَّة (bez cukru/gorzka), 2) على الريحة (minimium cukru — 'na zapach'), 3) مضبوطة (maḍbūṭa = z umiarkowanym cukrem), 4) حلوة/زيادة (słodka/bardzo słodka). Zamówienie kawy to KULTUROWY RYTUAŁ."
+      },
+      {
+        "id": "pa_fr9",
+        "question": "هَلْ هذا _____؟ (Czy to jest ostre/pikantne?)",
+        "translation": "(Czy to jest pikantne?)",
+        "options": [
+          "حَارّ / حِرِّيف",
+          "بَارِد",
+          "حُلْو",
+          "مَالِح"
+        ],
+        "correct": "حَارّ / حِرِّيف",
+        "explanation": "حَارّ (ḥārr) = ostry/gorący (temperatura LUB smak — wieloznaczne!). حِرِّيف (ḥirrīf) = pikantny/ostry (tylko smak — jednoznaczne, dialektalne). Smaki: حُلْو (słodki), مَالِح (słony), حَامِض (kwaśny), مُرّ (gorzki), حارّ/حِرِّيف (ostry/pikantny). W polskim: 'ostry' = smak/nóż/kąt. W arabskim: حادّ = ostry (nóż), حارّ = ostry (smak/temperatura). RÓŻNE słowa na RÓŻNE 'ostrości'!"
+      },
+      {
+        "id": "pa_fr10",
+        "question": "مَا هِيَ الأَطْبَاقُ _____ ؟ (Jakie są dania MIEJSCOWE/LOKALNE?)",
+        "translation": "(Jakie są lokalne dania?)",
+        "options": [
+          "المَحَلِّيَّة",
+          "الأَجْنَبِيَّة",
+          "الغَالِيَة",
+          "المَشْهُورَة"
+        ],
+        "correct": "المَحَلِّيَّة",
+        "explanation": "الأطباق المحلِّيَّة (al-aṭbāq al-maḥalliyya) = dania lokalne/miejscowe. المحلِّيَّة (maḥalliyya) = lokalna (od مَحَلّ = miejsce, + nisba -iyya). Arabski świat ma RÓŻNE kuchnie: مصرية (egipska: كُشَرِي, فُول), لبنانية (libańska: تبّولة, كِبَّة), مغربية (marokańska: طاجين, كُسْكُس), خليجية (zatoka: مَكْبُوس, هَرِيس). Każda z unikalnymi daniami!"
+      },
+      {
+        "id": "pa_fr11",
+        "question": "أَنَا عِنْدِي _____ مِنَ المُكَسَّرَات (Mam ALERGIĘ na orzechy)",
+        "translation": "(Mam alergię na orzechy)",
+        "options": [
+          "حَسَاسِيَّة",
+          "حُبّ",
+          "رَغْبَة",
+          "كَرَاهِيَة"
+        ],
+        "correct": "حَسَاسِيَّة",
+        "explanation": "حَسَاسِيَّة (ḥasāsiyya) = alergia/uczulenie (od ح-س-س = czuć/odczuwać). المُكَسَّرَات (mukassarāt) = orzechy (dosłownie: łamane/kruszone, od ك-س-ر = łamać). Alergeny: قَمْح (pszenica), حَلِيب (mleko), بَيْض (jajka), سِمْسِم (sezam), فُول سُودَانِيّ (orzeszki ziemne). WAŻNE dla bezpieczeństwa podróży! عندي حساسية خطيرة = Mam poważną alergię."
+      },
+      {
+        "id": "pa_fr12",
+        "question": "خُبْز / عَيْش / رَغِيف — wszystkie znaczą:",
+        "translation": "(ما القاسم المشترك؟)",
+        "options": [
+          "Chleb (różne dialekty i odmiany)",
+          "Ryż",
+          "Mięso",
+          "Warzywa"
+        ],
+        "correct": "Chleb (różne dialekty i odmiany)",
+        "explanation": "Chleb w arabskim świecie: خُبْز (khubz = MSA + Lewant), عَيْش (ʿaysh = Egipt — dosłownie = 'życie'!), رَغِيف (raghīf = bochenek). W Egipcie: عَيْش = chleb = życie → FUNDAMENTALNA ROLA chleba. Rodzaje: خُبْز عَرَبِيّ (pita), خُبْز صَاج (cienki na blasze), خُبْز تَنُّور (z pieca), رُقَاق (ultracienki). Chleb to NAJWAŻNIEJSZY element arabskiego posiłku."
+      },
+      {
+        "id": "pa_fr13",
+        "question": "شَاي بِالنَّعْنَاع — to:",
+        "translation": "(ما هو شاي بالنعناع؟)",
+        "options": [
+          "Herbata z miętą (= pijana w CAŁYM Maghrebie)",
+          "Herbata z mlekiem",
+          "Kawa z kardamonem",
+          "Sok z granatu"
+        ],
+        "correct": "Herbata z miętą (= pijana w CAŁYM Maghrebie)",
+        "explanation": "شَاي بِالنَّعْنَاع (shāy bin-naʿnāʿ) = herbata z miętą. شاي (shāy — z chińskiego 'czaj' przez perski!), نعناع (naʿnāʿ = mięta). Napój NARODOWY Maghrebu (Maroko, Tunezja, Algieria). Inne: قهوة عربية بالهَيْل (kawa arabska z kardamonem — Zatoka), عِرْق سُوس (lukrecja — Lewant), تَمْر هِنْدِيّ (tamaryndowiec). Napoje to ELEMENT GOŚCINNOŚCI — odmowa = nieuprzejmość!"
+      },
+      {
+        "id": "pa_fr14",
+        "question": "الأَكْلُ بِاليَدِ _____ = Jedzenie ręką jest:",
+        "translation": "(هل الأكل باليد سنة؟)",
+        "options": [
+          "سُنَّة (tradycją prorockiej) — prawą ręką!",
+          "حَرَام (zakazane)",
+          "مَكْرُوه (niechciane)",
+          "غَرِيب (dziwne)"
+        ],
+        "correct": "سُنَّة (tradycją prorockiej) — prawą ręką!",
+        "explanation": "Jedzenie PRAWĄ ręką to سُنَّة (sunna = tradycja Proroka). Prorok Muhammad jadł prawą ręką, z podłogi, na wspólnym talerzu. Etykieta: 1) بسم الله (przed jedzeniem), 2) Prawą ręką (lewa = nieczysta), 3) Ze swej strony talerza, 4) الحمد لله (po jedzeniu). Dla Polaka: jedzenie widelcem i nożem jest NORMĄ — ale w tradycyjnym arabskim domu: jedzenie ręką jest CZCIGODNE i PREFEROWANE!"
+      },
+      {
+        "id": "pa_fr15",
+        "question": "عَزِيمَة / وَلِيمَة / مَأْدُبَة — różnice:",
+        "translation": "(ما الفرق بين عزيمة وولية ومأدبة؟)",
+        "options": [
+          "Zaproszenie na posiłek / Uczta weselna / Bankiet (różne okazje)",
+          "Identyczne",
+          "Posiłki dnia (śniadanie/obiad/kolacja)",
+          "Rodzaje mięsa"
+        ],
+        "correct": "Zaproszenie na posiłek / Uczta weselna / Bankiet (różne okazje)",
+        "explanation": "عَزِيمَة (ʿazīma) = zaproszenie na posiłek (nieformalne, domowe). وَلِيمَة (walīma) = uczta weselna (konkretna okazja — po ślubie). مَأْدُبَة (maʾduba) = bankiet/przyjęcie (formalne, wielkie). Hierarchia: عزيمة (codzienne) → وليمة (ślubne) → مأدبة (oficjalne). W kulturze arabskiej: GOŚCINNOŚĆ (ضيافة) jest CENTRALNĄ wartością — odmowa zaproszenia to OBRAZA."
+      }
+    ]
   }
 ]
