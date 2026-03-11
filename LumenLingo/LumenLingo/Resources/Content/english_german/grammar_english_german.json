@@ -16808,5 +16808,1030 @@
         "explanation": "'Hat abgebrochen' — Perfekt of separable verb 'abbrechen' (to drop out/break off): ab-ge-brochen. 'Brechen' is a strong verb: brach, gebrochen. The 'ab-' prefix means 'off/away' and changes the meaning: brechen (to break) → abbrechen (to break off, drop out). 'Sein Studium abbrechen' (to drop out of one's studies) is unfortunately common — Germany's university dropout rate is around 30%. 'Und arbeitet jetzt' — present tense for current state. 'Die Industrie' (industry) — same word, similar pronunciation!"
       }
     ]
+  },
+  {
+    "key": "technology_internet",
+    "name": "Technology & Internet",
+    "description": "Technologie und Internet",
+    "iconName": "desktopcomputer",
+    "color": "#3b82f6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_tech1",
+        "question": "Ich muss mein Passwort _____.",
+        "translation": "(I need to change my password)",
+        "options": [
+          "ändern",
+          "ändert",
+          "geändert",
+          "ändernd"
+        ],
+        "correct": "ändern",
+        "explanation": "'Ändern' (to change) goes to the end as infinitive after 'muss.' It's a regular verb: änderte, geändert. In tech context: 'das Passwort ändern' (change password), 'die Einstellungen ändern' (change settings). 'Mein Passwort' — neuter accusative (das Passwort). German tech vocabulary borrows heavily from English but adapts gender: das Passwort (neuter), die E-Mail (feminine), der Computer (masculine), das Internet (neuter). Note: 'ändern' means to modify, while 'wechseln' means to swap/replace entirely."
+      },
+      {
+        "id": "eg_tech2",
+        "question": "Die App _____ sich automatisch aktualisiert.",
+        "translation": "(The app has updated itself automatically)",
+        "options": [
+          "hat",
+          "ist",
+          "wird",
+          "wurde"
+        ],
+        "correct": "hat",
+        "explanation": "'Hat sich aktualisiert' — Perfekt of reflexive verb 'sich aktualisieren' (to update itself). Reflexive verbs always use 'haben' as auxiliary in Perfekt, even with movement/change verbs! 'Automatisch' (automatically) is an adverb — no ending. 'Die App' is feminine in German (derived from 'die Applikation'). 'Aktualisieren' is an '-ieren' verb: no 'ge-' in participle. German tech speakers mix English and German freely: 'downloaden,' 'updaten,' 'liken.' This linguistic blending is called 'Denglisch.'"
+      },
+      {
+        "id": "eg_tech3",
+        "question": "Kannst du mir den Link per E-Mail _____?",
+        "translation": "(Can you send me the link by email?)",
+        "options": [
+          "schicken",
+          "schickt",
+          "geschickt",
+          "schickend"
+        ],
+        "correct": "schicken",
+        "explanation": "'Schicken' (to send) as infinitive after 'kannst.' 'Mir' (dative — to me) + 'den Link' (accusative — the link): double object. 'Per E-Mail' — 'per' + noun without article for means of communication: per Post (by mail), per Fax, per SMS. 'Der Link' is masculine in German. Email vocabulary: 'der Anhang' (attachment), 'der Betreff' (subject line), 'weiterleiten' (to forward), 'die Antwort' (reply). Germans often capitalize 'E-Mail' and it's feminine: 'die E-Mail,' plural 'die E-Mails.'"
+      },
+      {
+        "id": "eg_tech4",
+        "question": "Das Programm ist _____ und muss neu gestartet werden.",
+        "translation": "(The program has crashed and must be restarted)",
+        "options": [
+          "abgestürzt",
+          "gestürzt",
+          "stürzt",
+          "abstürzend"
+        ],
+        "correct": "abgestürzt",
+        "explanation": "'Ist abgestürzt' — Perfekt of separable verb 'abstürzen' (to crash). It uses 'sein' because it describes a change of state! 'Ab-ge-stürzt' — ge- between prefix and stem. 'Muss neu gestartet werden' — passive with modal: must + adverb + participle + werden. 'Neu starten' (to restart) — 'starten' is an '-en' verb borrowed from English. Computer crash vocabulary: 'einfrieren' (to freeze), 'hängen' (to hang), 'der Absturz' (crash — same word as airplane crash!), 'der Fehler' (error/bug)."
+      },
+      {
+        "id": "eg_tech5",
+        "question": "Ich habe meine Daten in der Cloud _____.",
+        "translation": "(I have saved my data in the cloud)",
+        "options": [
+          "gespeichert",
+          "speichern",
+          "speichert",
+          "gespeichern"
+        ],
+        "correct": "gespeichert",
+        "explanation": "'Habe gespeichert' — Perfekt of 'speichern' (to save/store). Regular verb: speicherte, gespeichert. 'Meine Daten' (my data, plural) — 'die Daten' is always plural in German (singular 'das Datum' means 'date'!). 'In der Cloud' — 'die Cloud' (feminine) is used as-is from English. Data management: 'herunterladen' (to download) / 'hochladen' (to upload) — both separable. 'Der Speicherplatz' (storage space), 'die Sicherungskopie' or 'das Backup' (backup). Germans care deeply about 'Datenschutz' (data privacy)!"
+      },
+      {
+        "id": "eg_tech6",
+        "question": "Die Website lässt sich auf meinem Handy nicht richtig _____.",
+        "translation": "(The website cannot be displayed properly on my phone)",
+        "options": [
+          "anzeigen",
+          "angezeigt",
+          "zeigen",
+          "anzeigend"
+        ],
+        "correct": "anzeigen",
+        "explanation": "'Sich lassen' + infinitive means 'can be' — a passive alternative: 'lässt sich anzeigen' = 'can be displayed.' 'Nicht richtig' (not properly) negates the quality. 'Auf meinem Handy' — 'das Handy' (mobile phone) is a uniquely German word! In English, 'handy' means convenient — Germans adopted it for mobile phones. 'Die Website' is feminine. 'Anzeigen' (to display) is separable. Mobile terminology: 'der Bildschirm' (screen), 'das Display,' 'der Touchscreen,' 'die Benachrichtigung' (notification)."
+      },
+      {
+        "id": "eg_tech7",
+        "question": "Du solltest dein Betriebssystem regelmäßig _____.",
+        "translation": "(You should update your operating system regularly)",
+        "options": [
+          "aktualisieren",
+          "aktualisiert",
+          "aktualisierst",
+          "aktualisierend"
+        ],
+        "correct": "aktualisieren",
+        "explanation": "'Aktualisieren' (to update) goes to the end as infinitive after 'solltest.' It's an '-ieren' verb — never separates, no 'ge-' in participle. 'Das Betriebssystem' (operating system) is a compound: 'Betrieb' (operation) + 'System.' 'Regelmäßig' (regularly) is an adverb. German IT terminology mixes native and English: 'herunterladen' or 'downloaden,' 'hochladen' or 'uploaden.' Official German translations exist for most tech terms: 'Rechner' (computer), 'Drucker' (printer), 'Tastatur' (keyboard)."
+      },
+      {
+        "id": "eg_tech8",
+        "question": "Die Internetverbindung ist leider sehr _____.",
+        "translation": "(The internet connection is unfortunately very slow)",
+        "options": [
+          "langsam",
+          "langsame",
+          "langsamer",
+          "langsames"
+        ],
+        "correct": "langsam",
+        "explanation": "'Langsam' (slow) is a predicative adjective after 'ist' — no ending! 'Die Internetverbindung' (internet connection) is a compound: 'Internet' + 'Verbindung' (connection). German compound nouns always take the gender of the LAST element: die Verbindung → die Internetverbindung. 'Leider' (unfortunately) adds a tone of regret. Internet speed vocabulary: 'schnell' (fast), 'stabil' (stable), 'instabil' (unstable), 'die Bandbreite' (bandwidth), 'das WLAN' (WiFi — pronounced 'veh-lahn' in German)."
+      },
+      {
+        "id": "eg_tech9",
+        "question": "Hast du die neue Software schon _____?",
+        "translation": "(Have you already installed the new software?)",
+        "options": [
+          "installiert",
+          "installieren",
+          "installiere",
+          "Installation"
+        ],
+        "correct": "installiert",
+        "explanation": "'Hast installiert' — Perfekt of 'installieren' (to install). An '-ieren' verb: no 'ge-' in past participle! 'Schon' (already) asks whether the action has been completed. 'Die Software' is feminine in German. Installation vocabulary: 'deinstallieren' (to uninstall), 'das Update' (update), 'der Patch' (patch), 'die Version' (version). German IT professionals often code-switch between German and English: 'Kannst du das bitte deployen?' (Can you please deploy that?) — Denglisch in its finest form!"
+      },
+      {
+        "id": "eg_tech10",
+        "question": "Man sollte _____ auf verdächtige E-Mails klicken.",
+        "translation": "(One should never click on suspicious emails)",
+        "options": [
+          "niemals",
+          "nie nicht",
+          "immer",
+          "manchmal"
+        ],
+        "correct": "niemals",
+        "explanation": "'Niemals' (never — emphatic) is stronger than 'nie' (never). Both negate the entire action. 'Auf verdächtige E-Mails klicken' (to click on suspicious emails) — 'klicken auf' + accusative. 'Verdächtig' (suspicious) has the ending '-e' for accusative feminine plural after no article: 'verdächtige E-Mails.' Cybersecurity terms: 'der Virus' (virus), 'die Schadsoftware' (malware), 'das Phishing,' 'der Betrug' (fraud), 'die Firewall.' Internet safety ('Internetsicherheit') is a major topic in German digital education."
+      },
+      {
+        "id": "eg_tech11",
+        "question": "Ich kann mich nicht in mein Konto _____.",
+        "translation": "(I cannot log into my account)",
+        "options": [
+          "einloggen",
+          "loggen",
+          "ausloggen",
+          "eingeloggt"
+        ],
+        "correct": "einloggen",
+        "explanation": "'Sich einloggen' (to log in) is a separable reflexive verb borrowed from English. After 'kann,' the infinitive stays together. 'In mein Konto' — 'mein Konto' (my account) is neuter accusative. 'Nicht' negates 'einloggen.' The opposite: 'sich ausloggen' (to log out). Alternative German terms: 'sich anmelden' (to sign in), 'sich abmelden' (to sign out) — these are more formal. Account vocabulary: 'das Benutzerkonto' (user account), 'der Benutzername' (username), 'das Kennwort' (password — formal)."
+      },
+      {
+        "id": "eg_tech12",
+        "question": "Der Drucker hat kein Papier mehr und muss _____ werden.",
+        "translation": "(The printer has no more paper and must be refilled)",
+        "options": [
+          "nachgefüllt",
+          "gefüllt",
+          "nachfüllen",
+          "aufgefüllt"
+        ],
+        "correct": "nachgefüllt",
+        "explanation": "'Muss nachgefüllt werden' — passive with modal. 'Nachfüllen' (to refill) is separable: nach-ge-füllt. The prefix 'nach-' means 'after/again' — adding more to replenish. 'Der Drucker' (printer) is from 'drucken' (to print) + '-er' suffix for devices/agents. 'Kein...mehr' (no more) is the standard expression for exhaustion: 'kein Papier mehr.' Office equipment: 'der Scanner,' 'der Kopierer' (copier), 'die Patrone/Kartusche' (cartridge), 'der Toner,' 'das Papier' (paper)."
+      },
+      {
+        "id": "eg_tech13",
+        "question": "Wir _____ gerade an einer neuen App.",
+        "translation": "(We are currently working on a new app)",
+        "options": [
+          "arbeiten",
+          "arbeitet",
+          "gearbeitet",
+          "arbeitend"
+        ],
+        "correct": "arbeiten",
+        "explanation": "'Wir arbeiten' — present tense for ongoing work. 'Arbeiten an' + dative (to work on) — 'an einer neuen App' is dative feminine. 'Gerade' (currently/right now) emphasizes the present action. No progressive tense exists in German — 'wir arbeiten' covers both 'we work' and 'we are working.' 'Neu' gets the ending '-en' after 'einer' in dative feminine: 'neuen.' Tech development vocabulary: 'entwickeln' (to develop), 'programmieren' (to program), 'testen' (to test), 'veröffentlichen' (to release/publish)."
+      },
+      {
+        "id": "eg_tech14",
+        "question": "Die Datei lässt sich nicht _____, sie ist zu groß.",
+        "translation": "(The file cannot be sent, it is too large)",
+        "options": [
+          "versenden",
+          "versendet",
+          "senden",
+          "gesendet"
+        ],
+        "correct": "versenden",
+        "explanation": "'Lässt sich nicht versenden' — passive-like construction: 'can't be sent.' 'Versenden' (to send/dispatch) is inseparable (ver-). After 'lässt,' the infinitive goes to the end. 'Die Datei' (the file) is feminine. 'Zu groß' (too large) — 'zu' + adjective means 'too': zu klein (too small), zu teuer (too expensive). Email attachment limits in German often referenced: 'die Dateigrößenbeschränkung' — a magnificent German compound: file + size + limit! File types: 'der Ordner' (folder), 'der Anhang' (attachment)."
+      },
+      {
+        "id": "eg_tech15",
+        "question": "Vergiss nicht, deine _____ regelmäßig zu sichern.",
+        "translation": "(Don't forget to back up your data regularly)",
+        "options": [
+          "Daten",
+          "Datum",
+          "Datei",
+          "Dateien"
+        ],
+        "correct": "Daten",
+        "explanation": "'Die Daten' (data) is always PLURAL in German! The singular 'das Datum' means 'date' (calendar date), NOT a single piece of data. This is a key vocabulary distinction! 'Sichern' (to back up/secure) — 'zu sichern' is the infinitive with 'zu' after 'vergiss nicht' (don't forget). 'Deine Daten' (your data) — possessive + plural. 'Regelmäßig' (regularly) is the adverb. Data security: 'das Backup,' 'die Sicherungskopie' (backup copy), 'die Datensicherung' (data backup), 'wiederherstellen' (to restore)."
+      }
+    ]
+  },
+  {
+    "key": "environment_nature",
+    "name": "Environment & Nature",
+    "description": "Umwelt und Natur",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_env1",
+        "question": "Wir müssen die Umwelt besser _____.",
+        "translation": "(We must protect the environment better)",
+        "options": [
+          "schützen",
+          "schützt",
+          "geschützt",
+          "schützend"
+        ],
+        "correct": "schützen",
+        "explanation": "'Schützen' (to protect) goes to the end as infinitive after 'müssen.' 'Die Umwelt' (the environment) is feminine — a compound: 'um' (around) + 'Welt' (world). 'Besser' (better) is the comparative of 'gut' (good/well). Environmental vocabulary: 'der Umweltschutz' (environmental protection), 'die Nachhaltigkeit' (sustainability), 'der Klimawandel' (climate change), 'die Verschmutzung' (pollution). Germany is a leader in environmental policy — the Green Party (Die Grünen) is a major political force."
+      },
+      {
+        "id": "eg_env2",
+        "question": "In Deutschland wird viel Müll _____.",
+        "translation": "(In Germany a lot of waste is recycled)",
+        "options": [
+          "recycelt",
+          "recyceln",
+          "recycling",
+          "recycelnd"
+        ],
+        "correct": "recycelt",
+        "explanation": "'Wird recycelt' — passive voice (Vorgangspassiv: werden + past participle). 'Recyceln' is borrowed from English but conjugated as a German verb: recycelt (present), recycelte (past), recycelt (participle — no 'ge-' because the stress pattern treats it like an inseparable verb). 'Der Müll' (waste/garbage) is masculine. Germany's recycling system is world-famous: 'Mülltrennung' (waste separation) into gelber Sack (packaging), Papier (paper), Biomüll (organic), Restmüll (residual), Glas (glass — by color!)."
+      },
+      {
+        "id": "eg_env3",
+        "question": "Die Abholzung der Regenwälder _____ ein großes Problem.",
+        "translation": "(The deforestation of rainforests is a major problem)",
+        "options": [
+          "ist",
+          "sind",
+          "hat",
+          "haben"
+        ],
+        "correct": "ist",
+        "explanation": "'Die Abholzung' (deforestation) is singular feminine — takes singular verb 'ist.' Don't be confused by 'der Regenwälder' (genitive plural of Regenwald) — the SUBJECT determines the verb! 'Regenwald' (rainforest) is a compound: 'Regen' (rain) + 'Wald' (forest), plural: Regenwälder. 'Ein großes Problem' — 'groß' gets '-es' ending after 'ein' (neuter nominative). Environmental issues: 'die Erderwärmung' (global warming), 'der Treibhauseffekt' (greenhouse effect), 'die Artenvielfalt' (biodiversity)."
+      },
+      {
+        "id": "eg_env4",
+        "question": "Erneuerbare Energien _____ immer wichtiger.",
+        "translation": "(Renewable energies are becoming more and more important)",
+        "options": [
+          "werden",
+          "wird",
+          "sind",
+          "ist"
+        ],
+        "correct": "werden",
+        "explanation": "'Werden' (to become) + comparative adjective describes a change: 'werden wichtiger' = 'are becoming more important.' 'Erneuerbare Energien' — plural, so 'werden' (not 'wird'). 'Erneuerbar' (renewable) = 'er-' + 'neu' (new) + '-bar' (-able). 'Immer wichtiger' (more and more important) — 'immer' + comparative creates an intensifying progression. Germany's 'Energiewende' (energy transition) aims for carbon neutrality. Sources: 'Solarenergie' (solar), 'Windenergie' (wind), 'Wasserkraft' (hydropower), 'Biomasse' (biomass)."
+      },
+      {
+        "id": "eg_env5",
+        "question": "Der Fluss ist durch industrielle Abwässer _____ worden.",
+        "translation": "(The river has been polluted by industrial wastewater)",
+        "options": [
+          "verschmutzt",
+          "verschmutzen",
+          "schmutzig",
+          "Verschmutzung"
+        ],
+        "correct": "verschmutzt",
+        "explanation": "'Ist verschmutzt worden' — Perfekt Passiv (has been polluted): sein + participle + worden. 'Verschmutzen' (to pollute) is inseparable (ver-): no 'ge-' in participle. 'Durch' + accusative (by — agent in passive). 'Industrielle Abwässer' — 'die Abwässer' (wastewater, plural) with adjective ending '-e.' 'Der Fluss' (river) is masculine. Water vocabulary: 'das Grundwasser' (groundwater), 'das Trinkwasser' (drinking water), 'die Kläranlage' (sewage treatment plant). Germany has strict water quality laws ('Wasserrecht')."
+      },
+      {
+        "id": "eg_env6",
+        "question": "Jeder Einzelne kann _____ Beitrag zum Umweltschutz leisten.",
+        "translation": "(Every individual can make a contribution to environmental protection)",
+        "options": [
+          "einen",
+          "ein",
+          "einer",
+          "einem"
+        ],
+        "correct": "einen",
+        "explanation": "'Einen Beitrag leisten' (to make a contribution) — 'der Beitrag' is masculine, so accusative = 'einen.' 'Beitrag leisten' is a fixed collocation — 'leisten' means 'to perform/accomplish.' 'Jeder Einzelne' (every individual) — 'einzelne' is a nominalized adjective with weak ending after 'jeder.' 'Zum Umweltschutz' = 'zu dem Umweltschutz' (to environmental protection) — dative. This sentence structure is common in environmental advocacy and political speeches. 'Kann' sends infinitive 'leisten' to the end."
+      },
+      {
+        "id": "eg_env7",
+        "question": "Die Bienen _____ vom Aussterben bedroht.",
+        "translation": "(The bees are threatened with extinction)",
+        "options": [
+          "sind",
+          "ist",
+          "werden",
+          "haben"
+        ],
+        "correct": "sind",
+        "explanation": "'Sind bedroht' — Zustandspassiv (state passive): sein + past participle describes a state, not an action. 'Bedroht' (threatened) from 'bedrohen' (inseparable, be-). 'Vom Aussterben' = 'von dem Aussterben' (from extinction) — nominalized infinitive: 'das Aussterben.' 'Die Bienen' (bees) is plural → 'sind.' Biodiversity vocabulary: 'die Art' (species), 'die Artenvielfalt' (biodiversity), 'das Ökosystem' (ecosystem), 'gefährdet' (endangered), 'die Rote Liste' (Red List of endangered species)."
+      },
+      {
+        "id": "eg_env8",
+        "question": "Um den CO2-Ausstoß zu _____, müssen wir weniger Auto fahren.",
+        "translation": "(To reduce CO2 emissions, we must drive less)",
+        "options": [
+          "reduzieren",
+          "reduziert",
+          "reduzierend",
+          "Reduzierung"
+        ],
+        "correct": "reduzieren",
+        "explanation": "'Um...zu + infinitive' (in order to) creates a purpose clause: 'Um zu reduzieren' = 'in order to reduce.' No comma between 'zu' and the infinitive! 'Der CO2-Ausstoß' (CO2 emissions) — compound with hyphen before abbreviation. 'Weniger Auto fahren' (to drive less car) — 'weniger' is comparative of 'wenig' (little). 'Müssen' sends 'fahren' to the end. Transportation impact: 'die Emissionen' (emissions), 'der ökologische Fußabdruck' (ecological footprint), 'klimaneutral' (carbon neutral)."
+      },
+      {
+        "id": "eg_env9",
+        "question": "Im Nationalpark darf man keine Blumen _____.",
+        "translation": "(In the national park you may not pick flowers)",
+        "options": [
+          "pflücken",
+          "pflückt",
+          "gepflückt",
+          "pflückend"
+        ],
+        "correct": "pflücken",
+        "explanation": "'Pflücken' (to pick — flowers/fruit) goes to the end after 'darf.' 'Man darf nicht' (one may not) expresses prohibition. 'Keine Blumen' — 'kein' negates the noun (no flowers). Notice: German uses 'kein' to negate nouns, but 'nicht' to negate verbs: 'Man darf keine Blumen pflücken' = 'Man darf Blumen nicht pflücken' — both work but with slight emphasis difference. Nature protection: 'das Naturschutzgebiet' (nature reserve), 'unter Naturschutz stehen' (to be protected by law), 'der Wanderweg' (hiking trail)."
+      },
+      {
+        "id": "eg_env10",
+        "question": "Durch den Klimawandel steigt der _____ der Meere.",
+        "translation": "(Due to climate change, the sea level is rising)",
+        "options": [
+          "Meeresspiegel",
+          "Meerspiegel",
+          "Spiegelmeer",
+          "Meersspiegel"
+        ],
+        "correct": "Meeresspiegel",
+        "explanation": "'Der Meeresspiegel' (sea level) — a compound with linking '-es-': Meer + es + Spiegel (mirror/level). Many German compounds use linking elements: -s-, -es-, -n-, -en-, -er-. These don't carry meaning but aid pronunciation. 'Steigt' (rises) — 'steigen' is a strong verb: stieg, gestiegen. 'Durch den Klimawandel' — 'durch' + accusative (due to/through). Climate vocabulary: 'die Eisschmelze' (ice melt), 'die Überschwemmung' (flood), 'die Dürre' (drought), 'der Anstieg' (rise/increase)."
+      },
+      {
+        "id": "eg_env11",
+        "question": "Plastiktüten wurden in vielen Geschäften _____.",
+        "translation": "(Plastic bags were banned in many shops)",
+        "options": [
+          "verboten",
+          "verbieten",
+          "verbot",
+          "verbietend"
+        ],
+        "correct": "verboten",
+        "explanation": "'Wurden verboten' — Präteritum Passiv (were banned): wurden + past participle. 'Verbieten' (to ban/forbid) is inseparable (ver-) and strong: verbot, verboten. No 'ge-' in participle! 'Die Plastiktüte' (plastic bag) — compound: Plastik + Tüte (bag). 'In vielen Geschäften' — dative plural after 'in' (location). Germany banned single-use plastic bags in 2022. Eco-vocabulary: 'die Mehrwegtasche' (reusable bag), 'der Jutebeutel' (jute bag), 'Einweg' (disposable), 'Mehrweg' (reusable)."
+      },
+      {
+        "id": "eg_env12",
+        "question": "Die Luft in der Stadt ist weniger _____ als auf dem Land.",
+        "translation": "(The air in the city is less clean than in the countryside)",
+        "options": [
+          "sauber",
+          "saubere",
+          "sauberer",
+          "sauberes"
+        ],
+        "correct": "sauber",
+        "explanation": "'Weniger sauber als' (less clean than) — German forms comparisons with 'weniger...als' (less...than) using the base adjective, NOT the comparative form. Predicative 'sauber' after 'ist' takes no ending. 'Die Luft' (air) is feminine. 'In der Stadt' (in the city) vs. 'auf dem Land' (in the countryside) — different prepositions! 'Auf dem Land' literally means 'on the land.' Air quality: 'die Luftverschmutzung' (air pollution), 'der Feinstaub' (fine particles), 'die Abgase' (exhaust fumes), 'die Luftqualität' (air quality)."
+      },
+      {
+        "id": "eg_env13",
+        "question": "Wir sollten mehr auf nachhaltige Produkte _____.",
+        "translation": "(We should pay more attention to sustainable products)",
+        "options": [
+          "achten",
+          "achtet",
+          "geachtet",
+          "achtend"
+        ],
+        "correct": "achten",
+        "explanation": "'Achten auf' + accusative (to pay attention to) — after 'sollten,' the infinitive goes to the end. 'Nachhaltige Produkte' — adjective 'nachhaltig' (sustainable) with accusative plural ending '-e.' 'Die Nachhaltigkeit' (sustainability) is a key concept in German consumer culture. Sustainable labels: 'Bio' (organic), 'Fairtrade,' 'regional' (local), 'saisonal' (seasonal). 'Sollten' (should) is Konjunktiv II for gentle suggestion. 'Mehr auf' (more to/on) emphasizes increased focus."
+      },
+      {
+        "id": "eg_env14",
+        "question": "Der Sturm hat viele Bäume _____.",
+        "translation": "(The storm uprooted many trees)",
+        "options": [
+          "entwurzelt",
+          "wurzeln",
+          "gewurzelt",
+          "entwurzeln"
+        ],
+        "correct": "entwurzelt",
+        "explanation": "'Hat entwurzelt' — Perfekt of inseparable verb 'entwurzeln' (to uproot). The prefix 'ent-' means 'un-/de-/removal': ent-wurzeln = de-root/uproot. No 'ge-' in participle because 'ent-' is inseparable! 'Viele Bäume' (many trees) — 'der Baum,' plural 'Bäume' (umlaut in plural). 'Der Sturm' (storm) is masculine. Extreme weather: 'das Unwetter' (severe weather), 'der Orkan' (hurricane), 'die Überschwemmung' (flood), 'der Blitz' (lightning), 'der Donner' (thunder). Germany has increasingly experienced extreme weather events."
+      },
+      {
+        "id": "eg_env15",
+        "question": "Wenn jeder seinen Müll richtig _____, wäre die Umwelt sauberer.",
+        "translation": "(If everyone sorted their waste correctly, the environment would be cleaner)",
+        "options": [
+          "trennen würde",
+          "trennt",
+          "getrennt",
+          "trennte"
+        ],
+        "correct": "trennen würde",
+        "explanation": "'Wenn jeder trennen würde' — Konjunktiv II conditional: 'wenn' + subject + infinitive + 'würde.' In subordinate clauses, 'würde' goes to the END. 'Mülltrennung' (waste sorting) is a German institution — every household separates waste! 'Wäre...sauberer' — Konjunktiv II of 'sein' (wäre = would be) + comparative. 'Richtig' (correctly) is an adverb. German waste bins: gelb (yellow — packaging), blau (blue — paper), braun/grün (brown/green — organic), schwarz/grau (black/gray — residual)."
+      }
+    ]
+  },
+  {
+    "key": "sports_hobbies",
+    "name": "Sports & Hobbies",
+    "description": "Sport und Hobbys",
+    "iconName": "sportscourt",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "eg_spo1",
+        "question": "Er _____ jeden Morgen im Park.",
+        "translation": "(He jogs every morning in the park)",
+        "options": [
+          "joggt",
+          "joggen",
+          "joggst",
+          "gejogged"
+        ],
+        "correct": "joggt",
+        "explanation": "'Joggen' (to jog) is an English loanword fully integrated into German: joggt (3rd person), joggte (past), gejoggt (participle). The double 'g' before endings follows German spelling rules. 'Jeden Morgen' (every morning) — accusative time expression. 'Im Park' = 'in dem Park' (dative — location). Sports vocabulary: 'laufen' (to run), 'schwimmen' (to swim), 'radfahren' (to cycle), 'wandern' (to hike). In Germany, sports clubs ('Sportvereine') are the backbone of recreational sports — over 90,000 clubs exist!"
+      },
+      {
+        "id": "eg_spo2",
+        "question": "Fußball ist die beliebteste _____ in Deutschland.",
+        "translation": "(Football/soccer is the most popular sport in Germany)",
+        "options": [
+          "Sportart",
+          "Sport",
+          "Sportarten",
+          "Sportes"
+        ],
+        "correct": "Sportart",
+        "explanation": "'Die Sportart' (type of sport) is the correct word for a specific sport — 'der Sport' is the general concept. 'Beliebteste' is the superlative of 'beliebt' (popular) with weak ending '-e' after 'die.' Football is absolutely dominant in Germany — the Bundesliga is one of the world's top leagues. 'Der Fußball' (football) is a compound: 'Fuß' (foot) + 'Ball' (ball). Other popular German sports: Handball, Tennis, Turnen (gymnastics), Schwimmen (swimming), Skifahren (skiing)."
+      },
+      {
+        "id": "eg_spo3",
+        "question": "Ich spiele seit fünf Jahren _____.",
+        "translation": "(I have been playing tennis for five years)",
+        "options": [
+          "Tennis",
+          "das Tennis",
+          "dem Tennis",
+          "den Tennis"
+        ],
+        "correct": "Tennis",
+        "explanation": "'Tennis spielen' — sports used with 'spielen' (to play) take NO article: Tennis spielen, Fußball spielen, Basketball spielen. But sports with 'machen' or 'treiben' also work: 'Sport treiben/machen.' 'Seit fünf Jahren' — 'seit' + dative for ongoing duration. Remember: German uses PRESENT TENSE with 'seit' where English needs present perfect continuous: 'Ich spiele seit fünf Jahren' = 'I HAVE BEEN playing for five years.' This is one of the most important tense differences!"
+      },
+      {
+        "id": "eg_spo4",
+        "question": "Sie hat bei dem Marathon den dritten _____ belegt.",
+        "translation": "(She took third place in the marathon)",
+        "options": [
+          "Platz",
+          "Platze",
+          "Platzes",
+          "Plätze"
+        ],
+        "correct": "Platz",
+        "explanation": "'Den dritten Platz belegen' (to take/occupy third place) is a fixed expression. 'Platz' stays in base form in accusative (der Platz → den Platz). 'Belegen' here means 'to occupy/take' — it has multiple meanings! 'Dritten' — ordinal adjective with weak ending '-en' after 'den.' 'Bei dem Marathon' — 'bei' + dative for events: 'bei den Olympischen Spielen' (at the Olympic Games). Competition vocabulary: 'das Rennen' (race), 'der Wettkampf' (competition), 'die Medaille' (medal), 'gewinnen' (to win)."
+      },
+      {
+        "id": "eg_spo5",
+        "question": "Am Wochenende gehe ich gern _____.",
+        "translation": "(On weekends I like to go hiking)",
+        "options": [
+          "wandern",
+          "wandere",
+          "gewandert",
+          "wandernd"
+        ],
+        "correct": "wandern",
+        "explanation": "'Gehen' + infinitive describes activities: 'wandern gehen' (to go hiking), 'schwimmen gehen' (to go swimming), 'einkaufen gehen' (to go shopping). Two infinitives together! 'Gern' (gladly/with pleasure) expresses enjoyment — 'Ich gehe gern wandern' = 'I like to go hiking.' 'Am Wochenende' (on the weekend) — 'am' = 'an dem' (dative). Hiking is Germany's national pastime! 'Der Wanderweg' (hiking trail), 'die Wanderschuhe' (hiking boots), 'der Rucksack' (backpack — German gave English this word!)."
+      },
+      {
+        "id": "eg_spo6",
+        "question": "Der Schiedsrichter hat dem Spieler eine gelbe Karte _____.",
+        "translation": "(The referee showed the player a yellow card)",
+        "options": [
+          "gezeigt",
+          "zeigen",
+          "gezeigte",
+          "zeigend"
+        ],
+        "correct": "gezeigt",
+        "explanation": "'Hat gezeigt' — Perfekt of regular verb 'zeigen' (to show). 'Der Schiedsrichter' (referee) is masculine — compound: 'Schieds-' (arbitration) + 'Richter' (judge). 'Dem Spieler' (dative — to the player) + 'eine gelbe Karte' (accusative — a yellow card): double object construction. Football card system: 'gelbe Karte' (yellow — warning), 'gelb-rote Karte' (second yellow), 'rote Karte' (red — ejection). 'Der Spieler' (player) from 'spielen' + '-er.' Football is serious business in Germany!"
+      },
+      {
+        "id": "eg_spo7",
+        "question": "Ich habe mir beim Skifahren das Bein _____.",
+        "translation": "(I broke my leg while skiing)",
+        "options": [
+          "gebrochen",
+          "brechen",
+          "gebrochnt",
+          "brach"
+        ],
+        "correct": "gebrochen",
+        "explanation": "'Habe mir gebrochen' — reflexive Perfekt with DATIVE 'mir' because the body part is the direct object. Compare: 'Ich habe mir das Bein gebrochen' (I broke MY leg — mir = dative) vs. 'Ich habe mich verletzt' (I injured MYSELF — mich = accusative). 'Brechen' is strong: brach, gebrochen. 'Beim Skifahren' = 'bei dem Skifahren' — nominalized infinitive. 'Das Bein' (leg) is neuter. Skiing is hugely popular in Austria, Switzerland, and southern Germany — the Alps are right there!"
+      },
+      {
+        "id": "eg_spo8",
+        "question": "Mein Hobby ist es, Briefmarken zu _____.",
+        "translation": "(My hobby is to collect stamps)",
+        "options": [
+          "sammeln",
+          "gesammelt",
+          "sammelnd",
+          "sammelt"
+        ],
+        "correct": "sammeln",
+        "explanation": "'Zu sammeln' — infinitive with 'zu' after 'es ist' construction. 'Sammeln' (to collect) is regular: sammelte, gesammelt. 'Briefmarken sammeln' (stamp collecting) — 'die Briefmarke' (stamp, literally 'letter mark') is feminine. German hobbies vocabulary: 'stricken' (to knit), 'basteln' (to do crafts), 'malen' (to paint), 'lesen' (to read), 'kochen' (to cook), 'gärtnern' (to garden). 'Das Hobby' takes the plural 'Hobbys' in German (not 'Hobbies' — adapted from English!)."
+      },
+      {
+        "id": "eg_spo9",
+        "question": "Die Mannschaft hat das Spiel mit 3 _____ 1 gewonnen.",
+        "translation": "(The team won the game 3 to 1)",
+        "options": [
+          "zu",
+          "nach",
+          "gegen",
+          "auf"
+        ],
+        "correct": "zu",
+        "explanation": "'3 zu 1' (3 to 1) — German uses 'zu' for sports scores! 'Drei zu eins' is how you say the score. 'Die Mannschaft' (team) is feminine. 'Gewonnen' — Perfekt of strong verb 'gewinnen' (to win): gewann, gewonnen. 'Das Spiel' (game/match) is neuter. Score expressions: 'unentschieden' (draw/tie), 'verlieren' (to lose): verlor, verloren. Football score vocabulary: 'das Tor' (goal), 'der Torschuss' (goal attempt), 'der Elfmeter' (penalty), 'die Halbzeit' (halftime)."
+      },
+      {
+        "id": "eg_spo10",
+        "question": "Um fit zu _____, trainiere ich dreimal pro Woche.",
+        "translation": "(To stay fit, I train three times per week)",
+        "options": [
+          "bleiben",
+          "bleibt",
+          "geblieben",
+          "sein"
+        ],
+        "correct": "bleiben",
+        "explanation": "'Um fit zu bleiben' (in order to stay fit) — purpose clause with 'um...zu' + infinitive. 'Bleiben' (to stay/remain) keeps its infinitive form after 'zu.' 'Fit' is borrowed from English — no ending (predicative). 'Trainiere' — present tense, 1st person of 'trainieren.' 'Dreimal pro Woche' (three times per week) — 'pro' + noun without article for rates. Fitness vocabulary: 'das Fitnessstudio' (gym), 'die Übung' (exercise), 'die Ausdauer' (endurance), 'die Kraft' (strength), 'sich aufwärmen' (to warm up)."
+      },
+      {
+        "id": "eg_spo11",
+        "question": "Mein Bruder ist Mitglied in einem _____.",
+        "translation": "(My brother is a member of a sports club)",
+        "options": [
+          "Sportverein",
+          "Sportvereins",
+          "Sportvereinen",
+          "Sportvereine"
+        ],
+        "correct": "Sportverein",
+        "explanation": "'In einem Sportverein' — 'in' + dative: 'einem' is dative masculine indefinite article. 'Der Sportverein' (sports club) keeps its base form in dative masculine singular. German 'Vereine' (clubs/associations) are central to social life — there are clubs for everything: Sportverein, Musikverein, Schützenverein (shooting club), Karnevalverein. 'Mitglied sein in' + dative (to be a member of). 'Das Mitglied' (member) is neuter. Club membership: 'der Beitrag' (dues), 'die Mitgliedschaft' (membership)."
+      },
+      {
+        "id": "eg_spo12",
+        "question": "Sie hat bei den Olympischen Spielen eine Goldmedaille _____.",
+        "translation": "(She won a gold medal at the Olympic Games)",
+        "options": [
+          "gewonnen",
+          "gewinnen",
+          "gewinnt",
+          "gewinnend"
+        ],
+        "correct": "gewonnen",
+        "explanation": "'Hat gewonnen' — Perfekt of strong verb 'gewinnen' (to win). 'Bei den Olympischen Spielen' (at the Olympic Games) — 'bei' + dative plural. 'Olympischen' gets weak ending '-en' after 'den' (dative plural). 'Eine Goldmedaille' — feminine accusative. German compound medal types: 'Goldmedaille,' 'Silbermedaille,' 'Bronzemedaille.' Germany is consistently among the top Olympic nations. 'Die Olympischen Spiele' is always plural. Related: 'die Weltmeisterschaft/WM' (World Championship), 'die Europameisterschaft/EM.'"
+      },
+      {
+        "id": "eg_spo13",
+        "question": "Beim Yoga muss man tief ein- und _____.",
+        "translation": "(During yoga, you must breathe in and out deeply)",
+        "options": [
+          "ausatmen",
+          "atmen",
+          "einatmen",
+          "geatmet"
+        ],
+        "correct": "ausatmen",
+        "explanation": "'Ein- und ausatmen' — when two separable verbs share the same base verb ('atmen'), German efficiently abbreviates: 'ein-' and 'aus-' + 'atmen.' This is elegant compound verb coordination! 'Tief' (deeply) is an adverb. 'Beim Yoga' = 'bei dem Yoga' (during yoga). After 'muss,' infinitives go to the end. 'Man' (one/you) — impersonal. 'Atmen' (to breathe) is regular. Mind-body activities: 'die Meditation' (meditation), 'die Entspannung' (relaxation), 'das Pilates,' 'das Tai-Chi.' These have become very popular in Germany."
+      },
+      {
+        "id": "eg_spo14",
+        "question": "Das Schwimmbad hat im Winter _____.",
+        "translation": "(The swimming pool is closed in winter)",
+        "options": [
+          "geschlossen",
+          "geöffnet",
+          "offen",
+          "schließen"
+        ],
+        "correct": "geschlossen",
+        "explanation": "'Hat geschlossen' can mean both 'has closed' (Perfekt) and 'is closed' (state — elliptical for 'hat geschlossen'). In context: 'has closed / is closed.' 'Geschlossen' from 'schließen' (strong: schloss, geschlossen). 'Das Schwimmbad' (swimming pool) — compound: 'Schwimm-' + 'Bad' (bath). 'Im Winter' = 'in dem Winter' — seasons use 'im.' Types of pools: 'das Freibad' (outdoor pool), 'das Hallenbad' (indoor pool), 'das Thermalbad' (thermal bath). Many German cities have beautiful historic public pools ('Badeanstalten')."
+      },
+      {
+        "id": "eg_spo15",
+        "question": "Ich lese gern, _____ ich abends auf dem Sofa sitze.",
+        "translation": "(I like to read while I sit on the sofa in the evening)",
+        "options": [
+          "während",
+          "weil",
+          "obwohl",
+          "damit"
+        ],
+        "correct": "während",
+        "explanation": "'Während' (while) introduces a temporal subordinate clause — verb goes to the END: 'während ich auf dem Sofa sitze.' 'Gern' (gladly) with 'lesen' = 'I like to read.' 'Abends' (in the evening) — the '-s' suffix creates time adverbs from nouns: morgens (in the morning), mittags (at noon), abends, nachts (at night). 'Auf dem Sofa' — 'auf' + dative (location). 'Sitzen' (to sit) uses 'haben' in southern German and 'sein' in northern German: 'Ich habe/bin gesessen' — regional variation!"
+      }
+    ]
+  },
+  {
+    "key": "family_relationships",
+    "name": "Family & Relationships",
+    "description": "Familie und Beziehungen",
+    "iconName": "person.3",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "eg_fam1",
+        "question": "Meine _____ hat zwei Kinder und drei Enkelkinder.",
+        "translation": "(My grandmother has two children and three grandchildren)",
+        "options": [
+          "Großmutter",
+          "Großmutters",
+          "Großmütter",
+          "Großmütterin"
+        ],
+        "correct": "Großmutter",
+        "explanation": "'Die Großmutter' (grandmother) keeps its base form as subject (nominative). Compound: 'groß' (great/grand) + 'Mutter' (mother). Family terms: 'der Großvater' (grandfather), 'die Großeltern' (grandparents), 'das Enkelkind' (grandchild), 'der Enkel' (grandson), 'die Enkelin' (granddaughter). 'Zwei Kinder' — 'das Kind,' plural 'Kinder.' 'Drei Enkelkinder' — double compound: Enkel + Kinder. German family vocabulary is logical: Ur-großmutter (great-grandmother), Ur-ur-großmutter (great-great-grandmother)!"
+      },
+      {
+        "id": "eg_fam2",
+        "question": "Mein Bruder und ich _____ uns sehr ähnlich.",
+        "translation": "(My brother and I are very similar)",
+        "options": [
+          "sind",
+          "ist",
+          "bin",
+          "seid"
+        ],
+        "correct": "sind",
+        "explanation": "'Mein Bruder und ich' = 'wir' (we) — takes 'sind.' When listing people including 'ich,' the verb follows the combined subject (we). 'Sich ähnlich sein' (to be similar to each other) — 'sich' is reciprocal here, and 'ähnlich' (similar) is a predicative adjective: no ending. 'Ähnlich' takes dative: 'Er ist mir ähnlich' (He is similar to me). 'Sehr' (very) intensifies. Sibling vocabulary: 'der Bruder' (brother), 'die Schwester' (sister), 'die Geschwister' (siblings — plural), 'der Zwilling' (twin)."
+      },
+      {
+        "id": "eg_fam3",
+        "question": "Meine Eltern haben sich vor 30 Jahren _____.",
+        "translation": "(My parents got married 30 years ago)",
+        "options": [
+          "kennengelernt",
+          "geheiratet",
+          "getrennt",
+          "verliebt"
+        ],
+        "correct": "geheiratet",
+        "explanation": "Context is key: 'vor 30 Jahren' (30 years ago) + talking about marriage = 'geheiratet' (got married). 'Heiraten' is regular: heiratete, geheiratet. 'Sich kennenlernen' (to meet/get to know), 'sich trennen' (to separate), 'sich verlieben' (to fall in love) are all possible but don't fit the 30-year milestone context. 'Die Eltern' (parents — always plural!) 'Vor 30 Jahren' — 'vor' + dative for past time. Marriage vocabulary: 'die Hochzeit' (wedding), 'die Ehe' (marriage), 'der Ehemann/die Ehefrau' (husband/wife)."
+      },
+      {
+        "id": "eg_fam4",
+        "question": "Sie kümmert sich liebevoll _____ ihre kranke Mutter.",
+        "translation": "(She lovingly takes care of her sick mother)",
+        "options": [
+          "um",
+          "für",
+          "über",
+          "nach"
+        ],
+        "correct": "um",
+        "explanation": "'Sich kümmern um' + accusative (to take care of) is a fixed reflexive verb-preposition combination. 'Um' is essential — no other preposition works! 'Ihre kranke Mutter' — accusative feminine: 'kranke' has weak ending '-e' after possessive 'ihre.' 'Liebevoll' (lovingly/caring) is an adverb: 'liebe' (love) + 'voll' (full) = full of love. Care vocabulary: 'pflegen' (to nurse/care for), 'betreuen' (to look after), 'die Fürsorge' (care/welfare), 'fürsorglich' (caring). German has strong family care traditions."
+      },
+      {
+        "id": "eg_fam5",
+        "question": "Wir erwarten unser _____ Kind im Dezember.",
+        "translation": "(We are expecting our first child in December)",
+        "options": [
+          "erstes",
+          "erste",
+          "erster",
+          "ersten"
+        ],
+        "correct": "erstes",
+        "explanation": "'Unser erstes Kind' — 'das Kind' is neuter. After possessive 'unser' (which has no ending for neuter nominative/accusative), the adjective takes mixed declension: '-es' for neuter. This is mixed declension (after ein-words): masculine -er, neuter -es, feminine -e, plural -en. 'Erwarten' (to expect) is inseparable (er-). 'Im Dezember' — months use 'im' (= in dem). Pregnancy vocabulary: 'schwanger' (pregnant), 'die Geburt' (birth), 'das Baby,' 'die Hebamme' (midwife). Germany offers generous parental leave: 'Elternzeit.'"
+      },
+      {
+        "id": "eg_fam6",
+        "question": "Mein Onkel ist der _____ meiner Mutter.",
+        "translation": "(My uncle is my mother's brother)",
+        "options": [
+          "Bruder",
+          "Bruders",
+          "Brüder",
+          "Brüdern"
+        ],
+        "correct": "Bruder",
+        "explanation": "'Der Bruder' (brother) stays in nominative base form — it's the predicate noun after 'ist.' 'Meiner Mutter' is genitive feminine: 'meine' becomes 'meiner' in genitive. German family relationships: 'der Onkel' (uncle), 'die Tante' (aunt), 'der Cousin' (male cousin, pronounced French-style), 'die Cousine/Kusine' (female cousin), 'der Neffe' (nephew), 'die Nichte' (niece). 'Onkel' and 'Tante' are used with first names by children: 'Onkel Hans,' 'Tante Maria.'"
+      },
+      {
+        "id": "eg_fam7",
+        "question": "Die _____ zwischen Eltern und Kindern ist nicht immer einfach.",
+        "translation": "(The relationship between parents and children is not always easy)",
+        "options": [
+          "Beziehung",
+          "Beziehungen",
+          "Beziehungs",
+          "Beziehungsweise"
+        ],
+        "correct": "Beziehung",
+        "explanation": "'Die Beziehung' (relationship) is singular — 'die' article confirms nominative singular. 'Zwischen' (between) + dative: 'Eltern und Kindern' (parents and children — both dative). 'Kindern' gets the dative plural '-n' ending! Almost all German nouns add '-n' in dative plural if they don't already end in '-n.' 'Nicht immer einfach' (not always easy) — 'einfach' is predicative, no ending. Relationship types: 'die Partnerschaft' (partnership), 'die Freundschaft' (friendship), 'die Verwandtschaft' (kinship/relatives)."
+      },
+      {
+        "id": "eg_fam8",
+        "question": "Ich bin nach meinem Vater _____.",
+        "translation": "(I am named after my father)",
+        "options": [
+          "benannt",
+          "genannt",
+          "genommen",
+          "gerufen"
+        ],
+        "correct": "benannt",
+        "explanation": "'Benannt nach' + dative (named after) — 'nach meinem Vater' is dative masculine. 'Benannt' is the past participle of 'benennen' (to name — inseparable: be-). Don't confuse with 'genannt' from 'nennen' (to call/name directly). 'Benennen nach' = named in honor of someone, while 'nennen' = to call someone a name. 'Mein Vater' → 'meinem Vater' (dative after 'nach'). Naming traditions: firstborn sons are sometimes named after fathers or grandfathers. 'Der Vorname' (first name), 'der Nachname/Familienname' (surname)."
+      },
+      {
+        "id": "eg_fam9",
+        "question": "Meine Schwägerin ist die Frau meines _____.",
+        "translation": "(My sister-in-law is my brother's wife)",
+        "options": [
+          "Bruders",
+          "Bruder",
+          "Brüder",
+          "Brüdern"
+        ],
+        "correct": "Bruders",
+        "explanation": "'Meines Bruders' — genitive masculine! Masculine/neuter nouns add '-s' or '-es' in genitive: der Bruder → des Bruders, meines Bruders. 'Die Schwägerin' (sister-in-law) is from 'der Schwager' (brother-in-law) + '-in' feminine suffix. In-law vocabulary: 'die Schwiegermutter' (mother-in-law), 'der Schwiegervater' (father-in-law), 'die Schwiegereltern' (in-laws). 'Schwager/Schwägerin' also covers spouse's siblings. The genitive construction 'die Frau meines Bruders' shows possession — German uses genitive where English uses 's or of."
+      },
+      {
+        "id": "eg_fam10",
+        "question": "Wir haben uns auf einer Party _____.",
+        "translation": "(We met at a party)",
+        "options": [
+          "kennengelernt",
+          "kennengelernen",
+          "kennenlernen",
+          "kennenlernt"
+        ],
+        "correct": "kennengelernt",
+        "explanation": "'Haben kennengelernt' — Perfekt of 'kennenlernen' (to meet/get to know). This compound verb forms one participle: kennen-ge-lernt (ge- inserted in the middle). 'Uns' is reciprocal: 'we got to know each other.' 'Auf einer Party' — 'auf' + dative for events: einer Party (feminine dative). Meeting contexts: 'sich vorstellen' (to introduce oneself), 'Freut mich, Sie kennenzulernen' (Pleased to meet you). Note: 'treffen' means to meet someone you already know; 'kennenlernen' means to meet for the first time!"
+      },
+      {
+        "id": "eg_fam11",
+        "question": "Mein Vater hat mir immer gute _____ gegeben.",
+        "translation": "(My father has always given me good advice)",
+        "options": [
+          "Ratschläge",
+          "Ratschlag",
+          "Ratschlägen",
+          "Rat"
+        ],
+        "correct": "Ratschläge",
+        "explanation": "'Gute Ratschläge' (good pieces of advice) — plural is most natural with 'immer' (always, implying many times). 'Der Ratschlag' (piece of advice), plural: 'Ratschläge' (umlaut!). 'Geben' + dative (mir) + accusative (Ratschläge): double object. Interesting: 'der Rat' (advice — uncountable, like English!) vs. 'der Ratschlag' (a specific piece of advice — countable). 'Gegeben' — Perfekt of strong verb 'geben': gab, gegeben. Family wisdom: 'ein guter Rat ist teuer' (good advice is hard to find — proverb)."
+      },
+      {
+        "id": "eg_fam12",
+        "question": "Die Kinder spielen im Garten, _____ die Eltern kochen.",
+        "translation": "(The children play in the garden while the parents cook)",
+        "options": [
+          "während",
+          "weil",
+          "damit",
+          "obwohl"
+        ],
+        "correct": "während",
+        "explanation": "'Während' (while) introduces a temporal subordinate clause with verb at the end: 'während die Eltern kochen.' It describes simultaneous actions. 'Weil' (because) would give a reason, 'damit' (so that) a purpose, 'obwohl' (although) a concession — all wrong here. 'Im Garten' (in the garden) — dative location. 'Kochen' (to cook) at clause end follows subordinate clause word order. Family life vocabulary: 'das Abendessen' (dinner), 'die Familienzeit' (family time), 'zusammen' (together), 'gemeinsam' (jointly)."
+      },
+      {
+        "id": "eg_fam13",
+        "question": "Meine Tochter _____ ihrem Großvater sehr ähnlich.",
+        "translation": "(My daughter looks very much like her grandfather)",
+        "options": [
+          "sieht",
+          "schaut",
+          "guckt",
+          "blickt"
+        ],
+        "correct": "sieht",
+        "explanation": "'Ähnlich sehen' + dative (to look like/resemble someone): 'sieht ihrem Großvater ähnlich.' 'Ihrem Großvater' is dative masculine after 'ähnlich.' 'Sehen' is a strong verb: sah, gesehen. The stem change e→ie in du/er: du siehst, er/sie sieht. 'Meine Tochter' (my daughter) — 'die Tochter' is feminine. Family resemblance: 'Sie kommt nach ihrer Mutter' (She takes after her mother), 'ganz der Vater!' (just like the father!), 'das Ebenbild' (spitting image)."
+      },
+      {
+        "id": "eg_fam14",
+        "question": "Er hat sich von seiner Frau _____ lassen.",
+        "translation": "(He got divorced from his wife)",
+        "options": [
+          "scheiden",
+          "geschieden",
+          "scheidend",
+          "Scheidung"
+        ],
+        "correct": "scheiden",
+        "explanation": "'Sich scheiden lassen' (to get divorced) — 'lassen' + infinitive construction. 'Hat...scheiden lassen' — when 'lassen' is used with another infinitive in Perfekt, it creates a double infinitive (Ersatzinfinitiv): 'hat scheiden lassen' instead of 'hat scheiden gelassen.' This applies to modals too: 'hat kommen können.' 'Von seiner Frau' — 'von' + dative for separation. Divorce vocabulary: 'die Scheidung' (divorce), 'das Sorgerecht' (custody), 'der Unterhalt' (alimony/support), 'getrennt leben' (to live separately)."
+      },
+      {
+        "id": "eg_fam15",
+        "question": "Wir feiern nächste Woche den Geburtstag _____ Großvaters.",
+        "translation": "(We are celebrating our grandfather's birthday next week)",
+        "options": [
+          "unseres",
+          "unserem",
+          "unser",
+          "unseren"
+        ],
+        "correct": "unseres",
+        "explanation": "'Den Geburtstag unseres Großvaters' — 'unseres Großvaters' is genitive masculine! The possessive 'unser' adds '-es' for genitive masculine/neuter, and the masculine noun adds '-s': Großvater → Großvaters. Genitive chain: birthday OF our grandfather. 'Nächste Woche' (next week) — accusative time expression, no preposition! 'Feiern' (to celebrate) is regular. Birthday traditions: 'Alles Gute zum Geburtstag!' (Happy Birthday!), 'die Geburtstagstorte' (birthday cake). In Germany, the birthday person traditionally brings cake to work/school!"
+      }
+    ]
+  },
+  {
+    "key": "housing_home",
+    "name": "Housing & Home",
+    "description": "Wohnen und Zuhause",
+    "iconName": "house",
+    "color": "#78716c",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "eg_hous1",
+        "question": "Wir _____ in einer kleinen Wohnung im Stadtzentrum.",
+        "translation": "(We live in a small apartment in the city center)",
+        "options": [
+          "wohnen",
+          "wohnt",
+          "leben",
+          "lebt"
+        ],
+        "correct": "wohnen",
+        "explanation": "'Wohnen' (to live/reside) specifically refers to where you DWELL. 'Leben' (to live) is broader and refers to existence or lifestyle. 'Wir wohnen' — present tense. 'In einer kleinen Wohnung' — 'in' + dative (location): 'einer' is dative feminine indefinite, 'kleinen' has weak ending '-en.' 'Im Stadtzentrum' = 'in dem Stadtzentrum' (neuter dative). Housing: 'die Wohnung' (apartment), 'das Haus' (house), 'die WG/Wohngemeinschaft' (shared apartment — extremely common in Germany, especially for students)."
+      },
+      {
+        "id": "eg_hous2",
+        "question": "Die Miete für unsere Wohnung _____ leider gestiegen.",
+        "translation": "(The rent for our apartment has unfortunately gone up)",
+        "options": [
+          "ist",
+          "hat",
+          "wird",
+          "wurde"
+        ],
+        "correct": "ist",
+        "explanation": "'Ist gestiegen' — 'steigen' (to rise) uses 'sein' in Perfekt because it's an intransitive verb of change! Strong verb: stieg, gestiegen. 'Die Miete' (the rent) is feminine. 'Für unsere Wohnung' — 'für' + accusative. 'Leider' (unfortunately) expresses regret. German housing: 'Kaltmiete' (cold rent — without utilities), 'Warmmiete' (warm rent — including heating/water), 'die Nebenkosten' (additional costs — utilities, garbage, etc.). Rising rents ('Mietpreise') are a major issue in German cities, especially Berlin and Munich."
+      },
+      {
+        "id": "eg_hous3",
+        "question": "Ich suche eine Wohnung mit einem großen _____.",
+        "translation": "(I am looking for an apartment with a large balcony)",
+        "options": [
+          "Balkon",
+          "Balkons",
+          "Balkone",
+          "Balkonen"
+        ],
+        "correct": "Balkon",
+        "explanation": "'Mit einem großen Balkon' — 'mit' + dative: 'einem' is dative masculine indefinite, 'großen' has weak ending '-en.' 'Der Balkon' stays in base form in dative masculine singular. 'Suchen' (to search for) takes accusative: 'eine Wohnung.' Apartment features: 'der Balkon' (balcony), 'die Terrasse' (terrace), 'der Keller' (basement), 'der Dachboden' (attic), 'die Einbauküche' (fitted kitchen), 'der Aufzug/Fahrstuhl' (elevator). German apartment listings specify 'Zimmer': '3-Zimmer-Wohnung' means 3 rooms (excluding kitchen/bathroom)."
+      },
+      {
+        "id": "eg_hous4",
+        "question": "Können Sie mir helfen, die Möbel _____?",
+        "translation": "(Can you help me move the furniture?)",
+        "options": [
+          "umzustellen",
+          "stellen",
+          "aufzustellen",
+          "gestellt"
+        ],
+        "correct": "umzustellen",
+        "explanation": "'Umzustellen' — infinitive with 'zu' of separable verb 'umstellen' (to rearrange) : um-zu-stellen. After 'helfen,' the infinitive clause requires 'zu.' 'Die Möbel' (furniture — typically plural in German, singular 'das Möbelstück'). 'Mir' is dative (help ME). Compare: 'umstellen' (to rearrange — separable, accent on 'um') vs. 'umstellen' (to surround — inseparable, accent on 'stellen'). Moving vocabulary: 'umziehen' (to move house), 'der Umzug' (the move), 'einziehen' (to move in), 'ausziehen' (to move out)."
+      },
+      {
+        "id": "eg_hous5",
+        "question": "Das Schlafzimmer liegt _____ dem Badezimmer.",
+        "translation": "(The bedroom is next to the bathroom)",
+        "options": [
+          "neben",
+          "zwischen",
+          "über",
+          "unter"
+        ],
+        "correct": "neben",
+        "explanation": "'Neben' + dative (next to — location): 'dem Badezimmer' (neuter dative). 'Liegen' (to lie/be located) uses 'sein' in Perfekt and describes static position. Room vocabulary using compounds: 'das Schlafzimmer' (bedroom — Schlaf + Zimmer), 'das Badezimmer' (bathroom), 'das Wohnzimmer' (living room), 'das Esszimmer' (dining room), 'das Arbeitszimmer' (study/office), 'die Küche' (kitchen), 'der Flur' (hallway). All room names are neuter (das Zimmer)!"
+      },
+      {
+        "id": "eg_hous6",
+        "question": "Der Vermieter hat den Mietvertrag _____.",
+        "translation": "(The landlord has terminated the lease)",
+        "options": [
+          "gekündigt",
+          "kündigen",
+          "kündigte",
+          "kündigend"
+        ],
+        "correct": "gekündigt",
+        "explanation": "'Hat gekündigt' — Perfekt of regular verb 'kündigen' (to terminate/give notice). 'Den Mietvertrag' (the lease/rental agreement) — masculine accusative. Compound: 'Miet-' (rental) + 'Vertrag' (contract). 'Der Vermieter' (landlord — literally 'the renter-outer') from 'vermieten' (to rent out). The opposite: 'der Mieter' (tenant). German rental law strongly protects tenants! 'Die Kündigungsfrist' (notice period) is typically 3 months. 'Die Kaution' (security deposit) is usually 2-3 months' cold rent."
+      },
+      {
+        "id": "eg_hous7",
+        "question": "Wir haben das Haus letztes Jahr renovieren _____.",
+        "translation": "(We had the house renovated last year)",
+        "options": [
+          "lassen",
+          "gelassen",
+          "ließen",
+          "lassend"
+        ],
+        "correct": "lassen",
+        "explanation": "'Haben renovieren lassen' — double infinitive (Ersatzinfinitiv)! When 'lassen' combines with another infinitive in Perfekt, it uses its infinitive form instead of past participle: 'haben lassen' (not 'haben gelassen'). This also applies to modals: 'habe kommen können.' 'Renovieren' is an '-ieren' verb. 'Letztes Jahr' (last year) — accusative time expression, neuter. Home improvement: 'renovieren' (to renovate), 'sanieren' (to refurbish), 'streichen' (to paint walls), 'tapezieren' (to wallpaper)."
+      },
+      {
+        "id": "eg_hous8",
+        "question": "Die Nachbarn _____ sind sehr freundlich.",
+        "translation": "(The neighbors above us are very friendly)",
+        "options": [
+          "über uns",
+          "auf uns",
+          "unter uns",
+          "neben uns"
+        ],
+        "correct": "über uns",
+        "explanation": "'Die Nachbarn über uns' (the neighbors above us) — 'über' + accusative/dative describes vertical position. In apartment buildings, you reference neighbors by position: 'über uns' (above), 'unter uns' (below), 'neben uns' (next to). 'Freundlich' is predicative after 'sind' — no ending. German apartment living etiquette: 'die Hausordnung' (house rules), 'die Ruhezeiten' (quiet hours — typically 10 PM to 6 AM and Sundays!), 'die Nachtruhe' (nighttime quiet). Being considerate of neighbors is taken very seriously!"
+      },
+      {
+        "id": "eg_hous9",
+        "question": "Ich muss noch die Wäsche _____ und das Bad putzen.",
+        "translation": "(I still need to do the laundry and clean the bathroom)",
+        "options": [
+          "waschen",
+          "gewaschen",
+          "waschend",
+          "wäscht"
+        ],
+        "correct": "waschen",
+        "explanation": "'Waschen' (to wash) goes to the end as infinitive after 'muss.' Strong verb with stem change a→ä: du wäschst, er wäscht. 'Die Wäsche waschen' (to do the laundry) and 'das Bad putzen' (to clean the bathroom) are coordinated with 'und.' 'Noch' (still/yet) implies the chores haven't been done. 'Putzen' (to clean) is for surfaces/rooms. Household chores: 'staubsaugen' (to vacuum), 'bügeln' (to iron), 'aufräumen' (to tidy up), 'abwaschen/spülen' (to do dishes), 'den Müll rausbringen' (to take out the trash)."
+      },
+      {
+        "id": "eg_hous10",
+        "question": "In der Küche steht ein neuer _____.",
+        "translation": "(There is a new refrigerator in the kitchen)",
+        "options": [
+          "Kühlschrank",
+          "Kühlschranks",
+          "Kühlschränke",
+          "Kühlschrankes"
+        ],
+        "correct": "Kühlschrank",
+        "explanation": "'Ein neuer Kühlschrank' — masculine nominative with mixed declension: 'neuer' after 'ein' (no ending on ein for masculine = adjective carries the strong ending -er). 'Stehen' (to stand) describes the position of furniture — German uses position verbs precisely: 'stehen' (standing upright), 'liegen' (lying flat), 'hängen' (hanging). 'Der Kühlschrank' (refrigerator — literally 'cool cupboard') is a compound. Kitchen appliances: 'der Herd' (stove), 'der Backofen' (oven), 'die Spülmaschine' (dishwasher), 'die Mikrowelle' (microwave)."
+      },
+      {
+        "id": "eg_hous11",
+        "question": "Wir ziehen nächsten Monat in eine _____ Wohnung um.",
+        "translation": "(We are moving to a bigger apartment next month)",
+        "options": [
+          "größere",
+          "größer",
+          "große",
+          "größeren"
+        ],
+        "correct": "größere",
+        "explanation": "'Eine größere Wohnung' — comparative adjective 'größer-' with mixed declension after 'eine' (accusative feminine): '-e' ending. Comparative: groß → größer (with umlaut!). 'Umziehen' is separable: 'ziehen um' in main clause. 'Nächsten Monat' — accusative time expression. 'In eine Wohnung' — accusative after 'in' (direction — moving INTO). Moving is common in Germany — average Germans move about 4 times in their life. 'Der Umzug' (the move), 'der Umzugswagen' (moving van), 'Kisten packen' (to pack boxes)."
+      },
+      {
+        "id": "eg_hous12",
+        "question": "Die Heizung funktioniert nicht. Könnten Sie einen Handwerker _____?",
+        "translation": "(The heating isn't working. Could you call a repairman?)",
+        "options": [
+          "rufen",
+          "gerufen",
+          "rufend",
+          "rief"
+        ],
+        "correct": "rufen",
+        "explanation": "'Rufen' (to call) goes to the end after 'könnten.' 'Die Heizung' (the heating) is feminine. 'Funktionieren' (to function/work) — '-ieren' verb. 'Der Handwerker' (repairman/craftsman) is masculine. In German rental law, the landlord is responsible for major repairs! Tenants report issues to the 'Hausverwaltung' (property management). Home maintenance: 'der Installateur/Klempner' (plumber), 'der Elektriker' (electrician), 'der Schlosser' (locksmith). 'Könnten Sie' is the polite Konjunktiv II request form."
+      },
+      {
+        "id": "eg_hous13",
+        "question": "Ich habe die Wände im Wohnzimmer neu _____.",
+        "translation": "(I have freshly painted the walls in the living room)",
+        "options": [
+          "gestrichen",
+          "streichen",
+          "gestrichelt",
+          "strich"
+        ],
+        "correct": "gestrichen",
+        "explanation": "'Habe gestrichen' — Perfekt of strong verb 'streichen' (to paint walls/surfaces): strich, gestrichen. Don't confuse with 'malen' (to paint art/pictures)! 'Streichen' is specifically for surfaces: walls, fences, doors. 'Die Wände' (walls, plural of 'die Wand'). 'Neu' (freshly/newly) functions as adverb. 'Im Wohnzimmer' — dative location. In Germany, when moving out ('Auszug'), tenants are often expected to repaint walls white — this obligation ('Schönheitsreparaturen') is a common source of landlord-tenant disputes!"
+      },
+      {
+        "id": "eg_hous14",
+        "question": "Das Haus hat einen schönen Garten mit alten _____.",
+        "translation": "(The house has a beautiful garden with old trees)",
+        "options": [
+          "Bäumen",
+          "Bäume",
+          "Baum",
+          "Bäumer"
+        ],
+        "correct": "Bäumen",
+        "explanation": "'Mit alten Bäumen' — 'mit' + dative! And dative PLURAL nouns add '-n' if they don't already end in '-n': Bäume → Bäumen. This is the dative plural '-n' rule — one of German's most consistent rules! 'Alten' has weak ending '-en' after no article in dative plural (strong declension would also give '-en' here). 'Der Baum' (tree), plural 'Bäume' (umlaut!). 'Einen schönen Garten' — masculine accusative. German gardens: 'der Schrebergarten/Kleingarten' (allotment garden) is uniquely German — small rented garden plots in cities!"
+      },
+      {
+        "id": "eg_hous15",
+        "question": "Vergiss nicht, die Tür _____, wenn du gehst.",
+        "translation": "(Don't forget to lock the door when you leave)",
+        "options": [
+          "abzuschließen",
+          "abschließen",
+          "zuschließen",
+          "geschlossen"
+        ],
+        "correct": "abzuschließen",
+        "explanation": "'Abzuschließen' — infinitive with 'zu' of separable verb 'abschließen' (to lock): ab-zu-schließen. After 'vergiss nicht' (don't forget), the infinitive requires 'zu' — inserted between prefix and stem for separable verbs. 'Die Tür' (the door) is feminine. 'Wenn du gehst' — temporal clause: 'when you leave.' Home security: 'der Schlüssel' (key), 'das Schloss' (lock), 'die Klingel' (doorbell), 'die Gegensprechanlage' (intercom). German apartment buildings typically have a main entrance door ('Haustür') that is always locked."
+      }
+    ]
   }
 ]

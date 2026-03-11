@@ -39,7 +39,7 @@ Expand all 17 beta language pairs to **105 categories × 15 items = 1,575 items*
 | 3 | english_arabic | English | 83/105 | 1245/1575 | 16/20 | 🔄 |
 | 4 | english_chinese | English | 52/105 | 780/1575 | 9/20 | 🔄 |
 | 5 | english_french | English | 105/105 | 1575/1575 | 21/21 | ✅ |
-| 6 | english_german | English | 82/105 | 1230/1575 | 16/20 | 🔄 |
+| 6 | english_german | English | 87/105 | 1305/1575 | 17/20 | 🔄 |
 | 7 | english_japanese | English | 105/105 | 1575/1575 | 21/21 | ✅ |
 | 8 | french_english | French | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 9 | german_polish | German | 105/105 | 1575/1575 | 20/20 | ✅ |
@@ -289,8 +289,8 @@ All 21 batches completed.
 | 20 | culture_society, sports_leisure, media_communication, politics_law, science_research | ✅ |
 | 21 | revision_generale, common_mistakes, exam_strategies | ✅ |
 
-### english_german — 🔄 IN PROGRESS (82/105 categories, 1230 items)
-ID prefixes used: eg_pres, eg_art, eg_past, eg_order, eg_case, eg_prep, eg_mod, eg_pp, eg_plq, eg_fut, eg_acc, eg_dat, eg_gen, eg_plu, eg_adj, eg_sep, eg_ref, eg_conj, eg_sub, eg_rel, eg_pv, eg_imp, eg_cmp, eg_sup, eg_adv, eg_neg, eg_qf, eg_pos, eg_dem, eg_ind, eg_per, eg_twp, eg_tp, eg_vp, eg_kii, eg_ki, eg_cond, eg_rs, eg_inf, eg_ptc, eg_ng, eg_cn, eg_wn, eg_sv, eg_mx, eg_hvs, eg_wu, eg_da, eg_wo, eg_di, eg_fp, eg_sw, eg_eo, eg_ms, eg_fi, eg_id, eg_ps, eg_te, eg_nq, eg_dm, eg_wf, eg_pf, eg_vpc, eg_apc, eg_npc, eg_es, eg_pov, eg_las, eg_mp, eg_disc, eg_lw, eg_emph, eg_wc, eg_rest, eg_shop, eg_tel, eg_fw, eg_work, eg_emot, eg_trav, eg_hlth, eg_edu
+### english_german — 🔄 IN PROGRESS (87/105 categories, 1305 items)
+ID prefixes used: eg_pres, eg_art, eg_past, eg_order, eg_case, eg_prep, eg_mod, eg_pp, eg_plq, eg_fut, eg_acc, eg_dat, eg_gen, eg_plu, eg_adj, eg_sep, eg_ref, eg_conj, eg_sub, eg_rel, eg_pv, eg_imp, eg_cmp, eg_sup, eg_adv, eg_neg, eg_qf, eg_pos, eg_dem, eg_ind, eg_per, eg_twp, eg_tp, eg_vp, eg_kii, eg_ki, eg_cond, eg_rs, eg_inf, eg_ptc, eg_ng, eg_cn, eg_wn, eg_sv, eg_mx, eg_hvs, eg_wu, eg_da, eg_wo, eg_di, eg_fp, eg_sw, eg_eo, eg_ms, eg_fi, eg_id, eg_ps, eg_te, eg_nq, eg_dm, eg_wf, eg_pf, eg_vpc, eg_apc, eg_npc, eg_es, eg_pov, eg_las, eg_mp, eg_disc, eg_lw, eg_emph, eg_wc, eg_rest, eg_shop, eg_tel, eg_fw, eg_work, eg_emot, eg_trav, eg_hlth, eg_edu, eg_tech, eg_env, eg_spo, eg_fam, eg_hous
 
 | Batch | Categories | Status |
 |-------|-----------|--------|
@@ -310,7 +310,7 @@ ID prefixes used: eg_pres, eg_art, eg_past, eg_order, eg_case, eg_prep, eg_mod, 
 | 14 | lassen_constructions, modal_particles, discourse_markers, linking_words, emphasis_structures | ✅ |
 | 15 | weather_climate, at_restaurant, shopping_expressions, telephone_phrases, formal_writing | ✅ |
 | 16 | workplace_office, emotions_reactions, travel_vacation, health_body, education_school | ✅ |
-| 17 | technology_internet, environment_nature, sports_hobbies, family_relationships, housing_home | ⬜ |
+| 17 | technology_internet, environment_nature, sports_hobbies, family_relationships, housing_home | ✅ |
 | 18 | transport_directions, media_communication, crime_justice, politics_society, science_research | ⬜ |
 | 19 | arts_culture, business_economics, register_formality, academic_writing, colloquial_register | ⬜ |
 | 20 | false_friends, common_errors, passive_alternatives, extended_adjective, verb_patterns, exam_strategies, advanced_word_order, revision_mixed | ⬜ |

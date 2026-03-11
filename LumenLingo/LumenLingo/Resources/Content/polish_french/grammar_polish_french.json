@@ -17940,5 +17940,1015 @@
         "explanation": "'Haute consideration' (najwyzsze powazanie) — najformulszy wariant zamkniecia listu. Hierarchia zamkniec: 'Amicalement' (przyjacielsko — osobisty) < 'Cordialement' (serdecznie — email) < 'Salutations distinguees' (formalny) < 'Sentiments les meilleurs' (bardzo formalny) < 'Haute consideration' (dyplomatyczny/dyrektorski). UWAGA: 'haute' NIE 'grande'! To utarta formula. W polskim: 'Z wyrazami najwyzszego powazania' — tez bardzo formalnie."
       }
     ]
+  },
+  {
+    "key": "subjonctif_passe",
+    "name": "Subjonctif passe",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pf_subp1",
+        "question": "Je suis content que tu _____ venu hier.",
+        "translation": "(Ciesze sie, ze przyszedłes wczoraj)",
+        "options": [
+          "sois",
+          "es",
+          "etais",
+          "seras"
+        ],
+        "correct": "sois",
+        "explanation": "'Que tu sois venu' — subjonctif passe = subjonctif de 'etre/avoir' + participe passe. Uzywamy go, gdy czynnosc w zdaniu podrzednym POPRZEDZA czynnosc w zdaniu glownym. 'Je suis content' (teraz) + 'que tu sois venu' (wczesniej). Tworzenie: que j'aie/tu aies/il ait + participe passe LUB que je sois/tu sois/il soit + participe passe (z 'etre'). W polskim uzylibysmy czasu przeszlego: 'ze przyszedles'."
+      },
+      {
+        "id": "pf_subp2",
+        "question": "Il faut que vous _____ fini avant midi.",
+        "translation": "(Trzeba, zebyscie skonczyli przed poludniem)",
+        "options": [
+          "ayez",
+          "avez",
+          "aviez",
+          "aurez"
+        ],
+        "correct": "ayez",
+        "explanation": "'Que vous ayez fini' — subjonctif passe z 'avoir'. 'Ayez' to subjonctif present od 'avoir' (2os. lm.). Dlaczego subjonctif? Bo 'il faut que' ZAWSZE wymaga subjonctif! Dlaczego passe? Bo 'finir' (skonczyc) musi byc ZAKONCZONE przed 'midi'. Porownaj: 'il faut que vous finissiez' (subj. present — musicie konczyc) vs 'il faut que vous ayez fini' (subj. passe — musicie SKONCZYC). W polskim ta roznica jest w aspekcie: konczyc vs skonczyc."
+      },
+      {
+        "id": "pf_subp3",
+        "question": "Bien que nous _____ partis tot, nous sommes arrives en retard.",
+        "translation": "(Chociaz wyjechalismy wczesnie, przyjechalismy spoznieni)",
+        "options": [
+          "soyons",
+          "sommes",
+          "etions",
+          "serons"
+        ],
+        "correct": "soyons",
+        "explanation": "'Bien que nous soyons partis' — 'bien que' (chociaz) ZAWSZE wymaga subjonctif. Tu subjonctif passe, bo wyjazd (partir) poprzedzil przyjazd (arriver). 'Partir' uzywa 'etre' w czasach zlozonych, wiec: que nous soyons + partis. UWAGA: 'partis' zgadza sie z podmiotem ('nous' = meskie mnogi -> partis). Gdyby byly same kobiety: 'que nous soyons parties'. W polskim aspekt dokonany: 'wyjechalismy' — proste!"
+      },
+      {
+        "id": "pf_subp4",
+        "question": "Je doute qu'elle _____ compris la question.",
+        "translation": "(Watpie, czy zrozumiala pytanie)",
+        "options": [
+          "ait",
+          "a",
+          "avait",
+          "aura"
+        ],
+        "correct": "ait",
+        "explanation": "'Je doute qu'elle ait compris' — 'douter que' (watpic, ze) wymaga subjonctif, bo wyrazamy WATTPLIWOSC. Subjonctif passe, bo 'comprendre' (zrozumiec) odnosi sie do przeszlosci. Tworzenie: qu'elle ait (subj. present od 'avoir') + compris (participe passe). UWAGA: 'douter que' + subjonctif, ale 'ne pas douter que' + indicatif LUB subjonctif! 'Je ne doute pas qu'elle a/ait compris' — obie formy dopuszczalne. W polskim: 'watpie, czy' — prosta konstrukcja."
+      },
+      {
+        "id": "pf_subp5",
+        "question": "C'est dommage que vous n'_____ pas pu venir.",
+        "translation": "(Szkoda, ze nie mogliscie przyjsc)",
+        "options": [
+          "ayez",
+          "avez",
+          "aviez",
+          "auriez"
+        ],
+        "correct": "ayez",
+        "explanation": "'C'est dommage que' (szkoda, ze) wymaga subjonctif — wyrazamy UCZUCIE/OCENE. 'Que vous n'ayez pas pu' — subjonctif passe przeczacy: ne + subj. avoir + pas + participe passe. Kolejnosc z przeczeniem: que + sujet + ne + auxiliaire (subj.) + pas + participe passe. Inne wyrazenia emocji + subjonctif: 'je regrette que' (zaluje), 'je suis triste que' (smutno mi). W polskim: 'szkoda, ze nie mogliscie' — czas przeszly, zero subjonctif."
+      },
+      {
+        "id": "pf_subp6",
+        "question": "Avant que le train _____ arrive, nous etions deja sur le quai.",
+        "translation": "(Zanim pociag przyjechał, bylismy juz na peronie)",
+        "options": [
+          "soit",
+          "est",
+          "etait",
+          "sera"
+        ],
+        "correct": "soit",
+        "explanation": "'Avant que' (zanim) ZAWSZE wymaga subjonctif — bo czynnosc jeszcze nie nastapila w momencie odniesienia. 'Avant que le train soit arrive' — subjonctif passe, bo pociag juz PRZYJECHAŁ (czynnosc zakonczona). 'Le train' uzywa 'etre'? NIE — 'arriver' uzywa 'etre' w czasach zlozonych! Regula DR MRS VANDERTRAMP: aller, arriver, partir, venir, etc. — z 'etre'. UWAGA: po 'apres que' uzywa sie indicatif (nie subjonctif)!"
+      },
+      {
+        "id": "pf_subp7",
+        "question": "Il est possible qu'ils _____ deja mange.",
+        "translation": "(Mozliwe, ze oni juz jedli)",
+        "options": [
+          "aient",
+          "ont",
+          "avaient",
+          "auront"
+        ],
+        "correct": "aient",
+        "explanation": "'Il est possible que' (jest mozliwe, ze) wymaga subjonctif — wyrazamy MOZLIWOSC, nie pewnosc. 'Qu'ils aient mange' — subjonctif passe (que + ils aient + participe passe). UWAGA: 'il est possible que' + subj. vs 'il est probable que' + indicatif! 'Possible' = niepewne -> subjonctif, 'probable' = prawdopodobne -> indicatif. To subtelna ale KLUCZOWA roznica! W polskim obie formy: 'mozliwe/prawdopodobne, ze jedli' — bez roznicy w trybie."
+      },
+      {
+        "id": "pf_subp8",
+        "question": "Je ne crois pas qu'il _____ dit la verite.",
+        "translation": "(Nie sadze, zeby powiedzial prawde)",
+        "options": [
+          "ait",
+          "a",
+          "avait",
+          "aura"
+        ],
+        "correct": "ait",
+        "explanation": "'Ne pas croire que' (nie sadzic, ze) wymaga subjonctif w przeczeniu! UWAGA: 'je crois que' + indicatif (pewnosc), ale 'je ne crois pas que' + subjonctif (watpliwosc)! 'Qu'il ait dit' — subjonctif passe: que + il ait + dit (pp od 'dire'). Ta regula dotyczy wielu czasownikow opinii: croire, penser, estimer, trouver — w twierdzeniu + indicatif, w przeczeniu + subjonctif. W polskim: 'nie sadze, zeby' — 'zeby' + tryb warunkowy/czas przeszly."
+      },
+      {
+        "id": "pf_subp9",
+        "question": "Pourvu qu'elle _____ recu mon message.",
+        "translation": "(Oby otrzymala moja wiadomosc)",
+        "options": [
+          "ait",
+          "a",
+          "avait",
+          "aura"
+        ],
+        "correct": "ait",
+        "explanation": "'Pourvu que' (oby/bylebym) ZAWSZE + subjonctif — wyrazamy ZYCZENIE. 'Pourvu qu'elle ait recu' — subjonctif passe, bo wiadomosc powinna byla juz dotrzec (czynnosc zakonczona). 'Recevoir' -> recu (participe passe). UWAGA: 'pourvu que' moze byc uzywany samodzielnie jako wykrzyknienie: 'Pourvu que ca marche!' (Oby sie udalo!). W polskim 'oby' + czas przeszly: 'oby otrzymala' — bez subjonctif, bo polszczyzna nie ma tego trybu."
+      },
+      {
+        "id": "pf_subp10",
+        "question": "Sans que personne _____ remarque, il a quitte la salle.",
+        "translation": "(Tak, ze nikt nie zauwazyl, wyszedl z sali)",
+        "options": [
+          "ait",
+          "a",
+          "avait",
+          "aura"
+        ],
+        "correct": "ait",
+        "explanation": "'Sans que' (bez tego, zeby/tak, ze nie) + subjonctif. 'Sans que personne ait remarque' — 'personne' tu juz jest przeczeniem, wiec NIE dodajemy 'ne'! UWAGA: 'sans que personne ait' (NIE *'sans que personne n'ait'). 'Personne', 'rien', 'aucun' sa przeczeniami same w sobie po 'sans que'. To czesty blad nawet u natywnych Francuzow! W polskim: 'tak, ze nikt nie zauwazyl' — podwojne przeczenie jest norma."
+      },
+      {
+        "id": "pf_subp11",
+        "question": "Quoiqu'il _____ beaucoup travaille, il a echoue.",
+        "translation": "(Chociaz duzo pracowal, oblal)",
+        "options": [
+          "ait",
+          "a",
+          "avait",
+          "aura"
+        ],
+        "correct": "ait",
+        "explanation": "'Quoique' (chociaz/mimo ze) + subjonctif — synonim 'bien que'. UWAGA: nie myl 'quoique' (1 slowo, chociaz) z 'quoi que' (2 slowa, cokolwiek)! 'Quoiqu'il ait travaille' (chociaz pracowal) vs 'Quoi qu'il fasse' (cokolwiek robi). Oba wymagaja subjonctif, ale znaczenie jest ZUPELNIE inne! Apostrofy: 'quoiqu'il' (elision) — apostrofy przed 'il/elle/on'. W polskim: 'chociaz' i 'cokolwiek' — dwa rozne slowa, latwiej rozroznic."
+      },
+      {
+        "id": "pf_subp12",
+        "question": "A condition que tu _____ termine tes devoirs, tu peux sortir.",
+        "translation": "(Pod warunkiem, ze skonczyles lekcje, mozesz wyjsc)",
+        "options": [
+          "aies",
+          "as",
+          "avais",
+          "auras"
+        ],
+        "correct": "aies",
+        "explanation": "'A condition que' (pod warunkiem, ze) + subjonctif — stawia WARUNEK. Subjonctif passe: que tu aies + termine (pp od 'terminer'). UWAGA: 'aies' — 2os. poj. subjonctif present od 'avoir'. Odmiana: que j'aie, que tu aies, qu'il ait, que nous ayons, que vous ayez, qu'ils aient. Synonim: 'pourvu que' (bylebym), 'a moins que' (chyba ze — tez + subj.). W polskim: 'pod warunkiem, ze skonczyles' — indicatif, zero subjonctif."
+      },
+      {
+        "id": "pf_subp13",
+        "question": "Il est etonnant qu'elle _____ accepte cette offre.",
+        "translation": "(To zaskakujace, ze przyjela te oferte)",
+        "options": [
+          "ait",
+          "a",
+          "avait",
+          "aura"
+        ],
+        "correct": "ait",
+        "explanation": "'Il est etonnant que' (to zaskakujace, ze) + subjonctif — wyrazamy ZDZIWIENIE/OCENE. 'Etonnant' (zaskakujacy) to przymiotnik emocjonalny, wiep + subjonctif. Inne: 'il est surprenant que' (zaskakujace), 'il est bizarre que' (dziwne), 'il est normal que' (normalne). UWAGA: 'il est evident que' + indicatif (bo pewnosc!). Regula: emocja/ocena -> subjonctif, pewnosc/stwierdzenie -> indicatif. W polskim: po prostu 'ze' + czas przeszly."
+      },
+      {
+        "id": "pf_subp14",
+        "question": "Jusqu'a ce que nous _____ trouve une solution, nous continuerons a chercher.",
+        "translation": "(Dopoki nie znajdziemy rozwiazania, bedziemy dalej szukac)",
+        "options": [
+          "ayons",
+          "avons",
+          "avions",
+          "aurons"
+        ],
+        "correct": "ayons",
+        "explanation": "'Jusqu'a ce que' (dopoki nie/az) + subjonctif — bo rezultat jest NIEPWEYNY w momencie mowienia. 'Que nous ayons trouve' — subjonctif passe, bo chodzi o ZNALEZIENIE (czynnosc zakonczona w przyszlosci). 'Ayons' = 1os. lm. subjonctif od 'avoir'. UWAGA: 'jusqu'a ce que' + subjonctif, ale 'depuis que' + indicatif! 'Jusqu'a ce qu'il vienne' (subj.) vs 'depuis qu'il est venu' (ind.). W polskim: 'dopoki nie' + czas przyszly dokonany."
+      },
+      {
+        "id": "pf_subp15",
+        "question": "Je regrette que vous n'_____ pas ete prevenu a temps.",
+        "translation": "(Zaluje, ze nie zostaliscie poinformowani na czas)",
+        "options": [
+          "ayez",
+          "avez",
+          "aviez",
+          "auriez"
+        ],
+        "correct": "ayez",
+        "explanation": "'Regretter que' (zalowac, ze) + subjonctif — emocja ZALU. Subjonctif passe bierny: que vous n'ayez pas ete prevenu. Struktura: subj. avoir + ete + participe passe = subjonctif passe de la voix passive. To NAJTRUDNIEJSZA forma — potrojna zlozona! Przykladowe: 'que j'aie ete invite' (zebym zostal zaproszony). W polskim: 'ze nie zostaliscie' — czas przeszly bierny, bez subjonctif. Subjonctif passe bierny to szyt zaawansowanej gramatyki!"
+      }
+    ]
+  },
+  {
+    "key": "subjonctif_imparfait",
+    "name": "Subjonctif imparfait",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pf_subi1",
+        "question": "Il fallait que je _____ ce livre avant l'examen.",
+        "translation": "(Trzeba bylo, zebym przeczytał te ksiazke przed egzaminem)",
+        "options": [
+          "lusse",
+          "lise",
+          "lisais",
+          "lirais"
+        ],
+        "correct": "lusse",
+        "explanation": "'Que je lusse' — subjonctif imparfait od 'lire' (czytac). Ten czas jest LITERACKI — uzywany prawie wylacznie w literaturze i bardzo formalnym pismie! Tworzenie: 3os. poj. passe simple + koncowki: -sse, -sses, -^t, -ssions, -ssiez, -ssent. 'Il lut' (passe simple) -> que je lusse. W mowie codziennej: 'il fallait que je lise' (subjonctif present). UWAGA: subj. imparfait istnieje glownie w literaturze XIX-wiecznej."
+      },
+      {
+        "id": "pf_subi2",
+        "question": "Je souhaitais qu'il _____ plus souvent.",
+        "translation": "(Chcialam, zeby przychodził czesciej)",
+        "options": [
+          "vint",
+          "vienne",
+          "venait",
+          "viendrait"
+        ],
+        "correct": "vint",
+        "explanation": "'Qu'il vint' — subj. imparfait od 'venir'. 'Vint' ma accent circonflexe na 'i' w 3os. poj.! Passe simple: 'il vint' -> subj. imparfait: qu'il vint (z ^). Regula: 3os. poj. subj. imparfait = passe simple + accent circonflexe na ostatniej samoglosce. 'Qu'il parlat' (od parler), 'qu'il finit' (od finir — tu juz ma 'i'!). W codziennym jezyku powiedzielibysmy: 'qu'il vienne' (subj. present). Subj. imparfait to literacki rejestr."
+      },
+      {
+        "id": "pf_subi3",
+        "question": "Elle doutait qu'il _____ la reponse.",
+        "translation": "(Watpila, czy znal odpowiedz)",
+        "options": [
+          "sut",
+          "sache",
+          "savait",
+          "saurait"
+        ],
+        "correct": "sut",
+        "explanation": "'Qu'il sut' — subj. imparfait od 'savoir' (wiedziec). Passe simple: 'il sut' -> subj. imparfait: qu'il sut (z accent circonflexe: su^t). UWAGA: w druku accent nie zawsze jest widoczny na 'u', ale teoretycznie powinien byc. Odmiana: que je susse, que tu susses, qu'il sut, que nous sussions, que vous sussiez, qu'ils sussent. W codziennym jezyku: 'qu'il sache' (subj. present). Subj. imparfait to element stylu literackiego."
+      },
+      {
+        "id": "pf_subi4",
+        "question": "Il aurait voulu que nous _____ la-bas.",
+        "translation": "(Chcialby, zebysmy tam pojechali)",
+        "options": [
+          "allassions",
+          "allions",
+          "alions",
+          "irions"
+        ],
+        "correct": "allassions",
+        "explanation": "'Que nous allassions' — subj. imparfait od 'aller'. Passe simple: 'il alla' -> rdzen 'all-' + koncowki: -assions (1os. lm.). Pelna odmiana: que j'allasse, que tu allasses, qu'il allat, que nous allassions, que vous allassiez, qu'ils allassent. Brzi napuszone? Tak! Dlatego w zyciu codziennym mowimy: 'que nous allions' (subj. present). Ale w literaturach Prousta, Flauberta, Hugo ten czas jest normalny. W polskim nie ma tak rozbudowanego systemu trybow."
+      },
+      {
+        "id": "pf_subi5",
+        "question": "On craignait qu'il ne _____ trop tard.",
+        "translation": "(Obawiano sie, ze bedzie za pozno)",
+        "options": [
+          "fut",
+          "soit",
+          "etait",
+          "serait"
+        ],
+        "correct": "fut",
+        "explanation": "'Qu'il fut' — subj. imparfait od 'etre'. Passe simple: 'il fut' -> subj. imparfait: qu'il fut (z accent: fu^t). UWAGA: 'ne' przed 'fut' to 'ne expletif' — NIE jest to przeczenie! 'Craindre que... ne...' = obawiac sie, ze. Ten 'ne' jest opcjonalny i formalny, nie zmienia sensu zdania. W polskim nie mamy tego zjawiska. 'Ne expletif' pojawia sie po: craindre, avoir peur, empecher, eviter — tylko w rejsetrze formalnym."
+      },
+      {
+        "id": "pf_subi6",
+        "question": "Le roi ordonna que ses sujets _____ obeissance.",
+        "translation": "(Krol nakazal, zeby poddani okazywali posluszenstwo)",
+        "options": [
+          "fissent",
+          "fassent",
+          "faisaient",
+          "feraient"
+        ],
+        "correct": "fissent",
+        "explanation": "'Qu'ils fissent' — subj. imparfait od 'faire'. Passe simple: 'il fit' -> rdzen 'f-' + koncowki. W kontekscie historycznym/literackim subj. imparfait jest naturalny. Concordance des temps (uzgadnianie czasow): gdy zdanie glowne jest w czasie przeszlym ('ordonna'), zdanie podrzedne POWINNO byc w subj. imparfait (nie present). To regula literacka — w mowie codziennej mowimy: 'que ses sujets fassent'. W polskim: 'zeby okazywali' — bez zmian czasowych."
+      },
+      {
+        "id": "pf_subi7",
+        "question": "Bien qu'il _____ malade, il assistait aux cours.",
+        "translation": "(Chociaz byl chory, uczestniczyl w zajeciach)",
+        "options": [
+          "fut",
+          "soit",
+          "etait",
+          "serait"
+        ],
+        "correct": "fut",
+        "explanation": "'Bien qu'il fut malade' — subj. imparfait w zdaniu z 'bien que'. Concordance des temps: 'il assistait' (imparfait w zdaniu glownym) wymagalby subj. imparfait w zdaniu podrzednym w rejsetrze literackim. W mowie codziennej: 'bien qu'il soit malade' (subj. present). KLUCZOWA REGULA: subj. imparfait zastepuje subj. present, gdy zdanie glowne jest w czasie przeszlym. Ale TYLKO w pismie literackim! W polskim: 'chociaz byl chory' — imparfait = czas przeszly niedokonany."
+      },
+      {
+        "id": "pf_subi8",
+        "question": "Il etait necessaire qu'elle _____ la premiere.",
+        "translation": "(Trzeba bylo, zeby wyszla pierwsza)",
+        "options": [
+          "partit",
+          "parte",
+          "partait",
+          "partirait"
+        ],
+        "correct": "partit",
+        "explanation": "'Qu'elle partit' — subj. imparfait od 'partir'. Passe simple: 'elle partit' -> subj. imparfait: qu'elle partita (z accent: parti^t). Tworzenkie grup koniugacyjnych: 1) -er: parlat, 2) -ir: finit, 3) -re/-oir: zmienne. Koncowki zawsze: -sse, -sses, -^t, -ssions, -ssiez, -ssent. Accent circonflexe TYLKO w 3os. poj. — to mialo odroznic subj. imparfait od passe simple (ktory tez konczy sie na -it/-ut). W polskim: 'zeby wyszla' — prosto!"
+      },
+      {
+        "id": "pf_subi9",
+        "question": "Quoiqu'il _____ fort occupe, il trouvait du temps pour lire.",
+        "translation": "(Chociaz byl bardzo zajety, znajdowal czas na czytanie)",
+        "options": [
+          "fut",
+          "soit",
+          "etait",
+          "serait"
+        ],
+        "correct": "fut",
+        "explanation": "'Quoiqu'il fut fort occupe' — literacki styl. 'Fort' = tres (bardzo) — uzycie literackie/formalne. 'Quoique' (chociaz) + subj. imparfait, bo zdanie glowne w imparfait ('trouvait'). Zwroc uwage na styl: 'fort occupe' zamiast 'tres occupe', subj. imparfait zamiast present — to sa markery rejestru literackiego. W mowie: 'bien qu'il soit tres occupe'. W polskim: 'chociaz byl' (czas przeszly niedokonany) — juz mamy gotowe."
+      },
+      {
+        "id": "pf_subi10",
+        "question": "Je ne pensais pas que cela _____ possible.",
+        "translation": "(Nie sadzilam, ze to bylo mozliwe)",
+        "options": [
+          "fut",
+          "soit",
+          "etait",
+          "serait"
+        ],
+        "correct": "fut",
+        "explanation": "'Que cela fut possible' — subj. imparfait od 'etre' z 'cela' (to). 'Ne pas penser que' + subjonctif (w przeczeniu). Concordance: 'je ne pensais pas' (imparfait) -> 'que cela fut' (subj. imparfait). UWAGA: w rejsetrze codziennym: 'je ne pensais pas que ce soit possible' (subj. present) lub nawet 'que c'etait possible' (indicatif — blad ale czesty!). Poprawnie formalnie: subj. imparfait. W polskim: 'nie sadzilam, ze to mozliwe' — bez trybow."
+      },
+      {
+        "id": "pf_subi11",
+        "question": "Le professeur desirait que chaque eleve _____ son devoir.",
+        "translation": "(Nauczyciel pragnql, zeby kazdy uczen odrobil lekcje)",
+        "options": [
+          "fit",
+          "fasse",
+          "faisait",
+          "ferait"
+        ],
+        "correct": "fit",
+        "explanation": "'Que chaque eleve fit' — subj. imparfait od 'faire'. 'Desirer que' + subjonctif (zyczenie). Z 'desirait' (imparfait) w zdaniu glownym, concordance wymaga subj. imparfait. 'Chaque' (kazdy) — przymiotnik nieokreslony, zawsze z l.poj.! 'Chaque eleve' (kazdy uczen), NIE *'chaque eleves'. 'Devoir' tu = lekcja/zadanie domowe (nie 'musiec'). W polskim: 'zeby odrobil' — tryb warunkowy/przypuszczajacy, najblizszy odpowiednik subjonctif."
+      },
+      {
+        "id": "pf_subi12",
+        "question": "Avant qu'il _____ le temps de reagir, la porte se ferma.",
+        "translation": "(Zanim zdazyl zareagowac, drzwi sie zamknely)",
+        "options": [
+          "eut",
+          "ait",
+          "avait",
+          "aurait"
+        ],
+        "correct": "eut",
+        "explanation": "'Avant qu'il eut le temps' — subj. imparfait od 'avoir'. 'Avant que' + subjonctif (czynnosc jeszcze nienastala). Concordance: 'se ferma' (passe simple) w zdaniu glownym -> subj. imparfait w podrzednym. Passe simple + subj. imparfait = styl literacki (powiesci, opowiadania). UWAGA: 'la porte se ferma' — tu 'se fermer' jest zwrotne, a 'la porte' jest zenska, ale participe nie wystepuje. W polskim: 'zanim zdazyl' — czas przeszly dokonany."
+      },
+      {
+        "id": "pf_subi13",
+        "question": "Encore _____ -il que nous en fussions informes.",
+        "translation": "(Pod warunkiem jednak, ze bylibysmy o tym poinformowani)",
+        "options": [
+          "fallut",
+          "faudrait",
+          "faut",
+          "fallait"
+        ],
+        "correct": "fallut",
+        "explanation": "'Encore fallut-il que' (pod warunkiem jednak, ze) — BARDZO formalna/literacka konstrukcja z inwersja. 'Fallut' = subj. imparfait od 'falloir' (trzeba). 'Que nous en fussions informes' — subj. imparfait od 'etre' + passif. Pelna forme: 'encore fallut-il que' = 'il faudrait encore que' (bardziej potocznie). 'Fussions' = 1os. lm. subj. imparfait od 'etre'. W polskim: 'pod warunkiem, ze bylibysmy poinformowani' — podwojny tryb warunkowy."
+      },
+      {
+        "id": "pf_subi14",
+        "question": "Si seulement il _____ venu, tout aurait ete different.",
+        "translation": "(Gdyby tylko przyszedl, wszystko byloby inaczej)",
+        "options": [
+          "fut",
+          "soit",
+          "etait",
+          "serait"
+        ],
+        "correct": "fut",
+        "explanation": "'Si seulement il fut venu' — subjonctif plus-que-parfait (subj. imparfait de etre + pp) uzywany w LITERACKIM stylu zamiast conditionnel passe. UWAGA: w normalnym jezyku powiedzielibysmy 'S'il etait venu' lub 'Fut-il venu'. Ten uzytek subj. imparfait jako zamiennika conditionnel passe jest typowy dla literaturyy XIX wieku. To NAJTRUDNIEJSZY punkt gramatyki francuskiej! W polskim: 'gdyby przyszedl' — tryb warunkowy, jeden prosty sposob."
+      },
+      {
+        "id": "pf_subi15",
+        "question": "Pour peu qu'il _____ un effort, il aurait reussi.",
+        "translation": "(Wystarczyloby, zeby wlozyl odrobine wysilku, a odnioślby sukces)",
+        "options": [
+          "fit",
+          "fasse",
+          "faisait",
+          "ferait"
+        ],
+        "correct": "fit",
+        "explanation": "'Pour peu que' (wystarczy, ze/bylebym) + subjonctif. 'Pour peu qu'il fit un effort' — subj. imparfait, bo zdanie glowne w conditionnel passe ('aurait reussi'). Concordance des temps literacka: conditionnel passe -> subj. imparfait. 'Pour peu que' wyrazaa minimaalny warunek — 'wystarczyloby niewiele'. W codziennym jezyku: 'pour peu qu'il fasse' (subj. present). W polskim: 'wystarczyloby, zeby wlozyl' — tryb warunkowy + 'zeby'."
+      }
+    ]
+  },
+  {
+    "key": "participe_passe_compose",
+    "name": "Participe passe compose",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pf_ppc1",
+        "question": "_____ termine son travail, elle est partie.",
+        "translation": "(Skonczywszy prace, wyszla)",
+        "options": [
+          "Ayant",
+          "Avoir",
+          "Eu",
+          "Etant"
+        ],
+        "correct": "Ayant",
+        "explanation": "'Ayant termine' — participe passe compose z 'avoir'. Tworzenie: ayant/etant + participe passe. Oznacza 'po tym jak' lub 'skonczywszy'. 'Ayant termine son travail' = 'apres avoir termine son travail' (po skonczeniu pracy). UWAGA: podmiot participe MUSI byc ten sam co zdania glownego! 'Ayant termine' i 'elle est partie' — oba dotycza 'elle'. W polskim: imieslow upr. 'skonczywszy' — bardzo podobna konstrukcja!"
+      },
+      {
+        "id": "pf_ppc2",
+        "question": "_____ arrives en retard, ils ont manque le debut.",
+        "translation": "(Przyjechawszy spoznieni, przegapili poczatek)",
+        "options": [
+          "Etant",
+          "Ayant",
+          "Avoir",
+          "Etre"
+        ],
+        "correct": "Etant",
+        "explanation": "'Etant arrives' — participe passe compose z 'etre'. Czasowniki uzywajace 'etre' w czasach zlozonych (arriver, partir, venir, etc.) tworca participe passe compose z 'etant'. UWAGA: participe passe ZGADZA SIE z podmiotem! 'Etant arrives' (m.lm.) — bo 'ils'. Gdyby 'elles': 'etant arrivees'. W polskim: 'przyjechawszy' — imieslow przyszly czynny, nie zgadza sie z rodzajem (upraszczamy)."
+      },
+      {
+        "id": "pf_ppc3",
+        "question": "_____ mange, le chat s'est endormi.",
+        "translation": "(Najadlszy sie, kot zasnql)",
+        "options": [
+          "Ayant",
+          "Etant",
+          "Avoir",
+          "Etre"
+        ],
+        "correct": "Ayant",
+        "explanation": "'Ayant mange' — participe passe compose od 'manger' (jesc). 'Manger' uzywa 'avoir', wiec: ayant + mange. Participe passe compose zastepczo wyrazenia: 1) 'apres avoir mange' (po jedzeniu), 2) 'quand il a eu mange' (gdy zjadl), 3) 'une fois mange' (po zjedzeniu). Jest KROTSZY i bardziej literacki. UWAGA: 'le chat' jest meski, ale 'mange' z 'avoir' NIE zgadza sie z podmiotem (regula 'avoir'). W polskim: 'najadlszy sie' — imieslow uprzedni."
+      },
+      {
+        "id": "pf_ppc4",
+        "question": "_____ descendue de la voiture, Marie a cherche ses cles.",
+        "translation": "(Wyszedlszy z samochodu, Marie szukala kluczy)",
+        "options": [
+          "Etant",
+          "Ayant",
+          "Avoir",
+          "Etre"
+        ],
+        "correct": "Etant",
+        "explanation": "'Etant descendue' — z 'etre' (descendre uzywa 'etre'). UWAGA: 'descendue' z -e, bo 'Marie' jest zenska! Uzgadnianie z podmiotem jest OBOWIAZKOWE z 'etre'. Porownaj: 'Etant descendu' (m.poj.), 'Etant descendue' (f.poj.), 'Etant descendus' (m.lm.), 'Etant descendues' (f.lm.). Inne czasowniki z 'etre': monter, tomber, naitre, mourir. W polskim: 'wyszedlszy' — forma nie zmienia sie z rodzajem."
+      },
+      {
+        "id": "pf_ppc5",
+        "question": "_____ lu tous les documents, il a pris sa decision.",
+        "translation": "(Przeczytawszy wszystkie dokumenty, podjql decyzje)",
+        "options": [
+          "Ayant",
+          "Etant",
+          "Avoir",
+          "Lisant"
+        ],
+        "correct": "Ayant",
+        "explanation": "'Ayant lu' — participe passe compose od 'lire'. UWAGA: 'lu' jest nieregularnym participe passe! Lire -> lu (NIE *li, *lise). Inne nieregularne pp: dire -> dit, ecrire -> ecrit, prendre -> pris, mettre -> mis, faire -> fait. Participe passe compose wyrazaa UPRZEDNIOSC — czynnosc zakonczona PRZED czynnosciq w zdaniu glownym. 'Ayant lu' (najpierw) -> 'il a pris sa decision' (potem). W polskim: 'przeczytawszy' — imieslow uprzedni, to samo znaczenie."
+      },
+      {
+        "id": "pf_ppc6",
+        "question": "_____ reveille tot, nous avons pu voir le lever du soleil.",
+        "translation": "(Obudziwszy sie wczesnie, moglismy zobaczyc wschod slonca)",
+        "options": [
+          "Nous etant",
+          "Ayant",
+          "Nous avons",
+          "Etant"
+        ],
+        "correct": "Nous etant",
+        "explanation": "'Nous etant reveilles' — participe passe compose od czasownika zwrotnego 'se reveiller'. Czasowniki zwrotne uzywaja 'etre', wiec: zaimek + etant + pp. UWAGA: zaimek zwrotny MUSI byc obecny! 'NOUS etant reveilles' — 'nous' to zaimek zwrotny, nie podmiot (podmiot jest domyslny). Pelna forma: '(Nous), nous etant reveilles tot, (nous) avons pu...'. W polskim: 'obudziwszy sie' — zwrotne imieslow, prostsze."
+      },
+      {
+        "id": "pf_ppc7",
+        "question": "_____ bien reflechi, j'ai decide d'accepter.",
+        "translation": "(Dobrze sie zastanowiwszy, postanowilem przyjqc)",
+        "options": [
+          "Ayant",
+          "Etant",
+          "Avoir",
+          "Reflexi"
+        ],
+        "correct": "Ayant",
+        "explanation": "'Ayant bien reflechi' — participe passe compose od 'reflechir' (zastanawiac sie). UWAGA: mimo ze 'reflechir' moze byc zwrotny ('se reflechir'), tutaj jest uzyty niezwrotnie: 'reflechir a quelque chose' (zastanawiac sie nad czyms). Dlatego 'avoir', nie 'etre'. Roznica: 'ayant reflechi' (po zastanowieniu sie) vs 's'etant reflechi' (odbiwszy sie — np. swiatlo). W polskim: 'zastanowiwszy sie' — imieslow uprzedni zwrotny."
+      },
+      {
+        "id": "pf_ppc8",
+        "question": "Le soleil _____ couche, la nuit est tombee.",
+        "translation": "(Gdy slonce zaszlo, zapadla noc)",
+        "options": [
+          "s'etant",
+          "ayant",
+          "etant",
+          "se"
+        ],
+        "correct": "s'etant",
+        "explanation": "'Le soleil s'etant couche' — participe passe compose od zwrotnego 'se coucher' (zachodzic — o sloncu). Forma z zaimkiem zwrotnym: se + etant + pp. UWAGA: 's'etant couche' — zaimek 'se' w 3os. Podmiot participe ('le soleil') MUSI byc ten sam co zdania glownego? NIE TUTAJ — to jest participiale absolue (dopelniacz absolutny). Podmiot participe (le soleil) jest ROZNY od zdania glownego (la nuit). To WYJATKOWA konstrukcja!"
+      },
+      {
+        "id": "pf_ppc9",
+        "question": "_____ rentree chez elle, Sophie a prepare le diner.",
+        "translation": "(Wrociwszy do domu, Sophie przygotowala kolacje)",
+        "options": [
+          "Etant",
+          "Ayant",
+          "Rentrant",
+          "Etre"
+        ],
+        "correct": "Etant",
+        "explanation": "'Etant rentree' — z 'etre' bo 'rentrer' (wrocic) uzywa 'etre' w czasach zlozonych. 'Rentree' z -e bo 'Sophie' jest zenska. Lista czasownikow z 'etre': aller, venir, arriver, partir, entrer, sortir, monter, descendre, tomber, rester, naitre, mourir, retourner, rentrer, devenir, passer. Mnemotechnika: DR MRS VANDERTRAMP. W polskim: 'wrociwszy' — bez problemu z etre/avoir."
+      },
+      {
+        "id": "pf_ppc10",
+        "question": "_____ ses etudes, Paul a trouve un emploi.",
+        "translation": "(Ukonczywszy studia, Paul znalazl prace)",
+        "options": [
+          "Ayant fini",
+          "Etant fini",
+          "Fini",
+          "Finissant"
+        ],
+        "correct": "Ayant fini",
+        "explanation": "'Ayant fini' — pelna forma participe passe compose. 'Finir' uzywa 'avoir'. UWAGA: nie myl z 'Fini ses etudes' — to jest participiale absolue BEZ 'ayant', ktora jest dopuszczalna ale mniej formalna. 'Ayant fini' jest pelna i poprawna forma. 'Finissant' bylby participe present (koncz-qc, w trakcie konczenia), co zmieniiloby sens! 'Finissant ses etudes' = konczqc studia (w trakcie), 'ayant fini ses etudes' = skonczywszy (PRZED). Roznica aspektu!"
+      },
+      {
+        "id": "pf_ppc11",
+        "question": "Les enfants, _____ joue toute la journee, se sont couches tot.",
+        "translation": "(Dzieci, grqwszy caly dzien, poszly spac wczesnie)",
+        "options": [
+          "ayant",
+          "etant",
+          "ont",
+          "jouant"
+        ],
+        "correct": "ayant",
+        "explanation": "'Ayant joue toute la journee' — participe passe compose wstawiony miedzy podmiot a orzeczenie (apozycja). Interpunkcja: przecinki otaczaja participe (jak wyrazenie w nawiasie). 'Jouer' uzywa 'avoir', wiec 'ayant joue'. 'Se sont couches' — passe compose zwrotny z 'etre'. UWAGA: 'couches' ma -s bo 'les enfants' (l.mn.)! Cala STRUKTURA: podmiot + , participe passe compose , + orzeczenie. W polskim: 'grawszy' — imieslow w apozycji, tak samo."
+      },
+      {
+        "id": "pf_ppc12",
+        "question": "_____ fait ses adieux, elle quitta le pays.",
+        "translation": "(Pozegnawszy sie, opuscila kraj)",
+        "options": [
+          "Ayant",
+          "Etant",
+          "Faisant",
+          "Fait"
+        ],
+        "correct": "Ayant",
+        "explanation": "'Ayant fait ses adieux' — participe passe compose od 'faire' (pp: fait). 'Faire ses adieux' = pozegnac sie (dosłownie: zrobic pozegnania). Kontekst literacki: 'elle quitta' jest w passe simple, co sugeruje rejestr literacki. Participe passe compose jest naturalny w tym rejsetrze. W mowie: 'Apres avoir dit au revoir, elle est partie' (po pozegnaniu wyszla). W polskim: 'pozegnawszy sie' — imieslow uprzedni, elegancki rejestr."
+      },
+      {
+        "id": "pf_ppc13",
+        "question": "_____ sortie du bureau, elle a appele un taxi.",
+        "translation": "(Wyszedlszy z biura, zadzwonila po taksowke)",
+        "options": [
+          "Etant",
+          "Ayant",
+          "Sortant",
+          "Etre"
+        ],
+        "correct": "Etant",
+        "explanation": "'Etant sortie' — z 'etre' bo 'sortir' (wyjsc) jest na liscie DR MRS VANDERTRAMP. 'Sortie' z -e bo podmiot jest zenski (elle, domyslne). UWAGA: 'sortir' moze uzywac 'avoir' gdy jest PRZECHODNI (z dopelnieniem blizszym)! 'Elle a sorti les poubelles' (wyniosla smieci — avoir). Ale 'elle est sortie du bureau' (wyszla z biura — etre, bez dop. blizszego). Ta dwojnosci dotyczy tez: monter, descendre, passer, rentrer. W polskim nie ma tej komplikacji!"
+      },
+      {
+        "id": "pf_ppc14",
+        "question": "L'orage _____ passe, le ciel s'est eclairci.",
+        "translation": "(Gdy burza przeszla, niebo sie rozjasnilo)",
+        "options": [
+          "etant",
+          "ayant",
+          "a",
+          "passant"
+        ],
+        "correct": "etant",
+        "explanation": "'L'orage etant passe' — participiale absolue (podmiot wlasny). Tu podmiot participe ('l'orage') jest INNY niz podmiot zdania glownego ('le ciel'). To specjalna konstrukcja — normaalnie podmiot musi byc ten sam! Participiale absolue = participe z WLASNYM podmiotem. Odpowiada: 'quand l'orage est passe' lub 'une fois l'orage passe'. 'Passer' z 'etre' bo ruch. W polskim: 'gdy burza przeszla' — zdanie podrzedne, prostsze."
+      },
+      {
+        "id": "pf_ppc15",
+        "question": "_____ pris connaissance du rapport, le directeur a convoque une reunion.",
+        "translation": "(Zapoznawszy sie z raportem, dyrektor zwolal zebranie)",
+        "options": [
+          "Ayant",
+          "Etant",
+          "Prenant",
+          "Pris"
+        ],
+        "correct": "Ayant",
+        "explanation": "'Ayant pris connaissance de' (zapoznawszy sie z) — wyrazenie formalne/administracyjne. 'Prendre connaissance de' = zapoznac sie z (dosłownie: wziac wiedze o). 'Pris' jest nieregularnym pp od 'prendre'. Inne wyrazenia z 'prendre': prendre une decision (podjac decyzje), prendre en compte (wziac pod uwage), prendre conscience (uswiadomic sobie). Participe passe compose w rejsetrze administracyjnym jest CZESTY. W polskim: 'zapoznawszy sie' — imieslow uprzedni formalny."
+      }
+    ]
+  },
+  {
+    "key": "voix_pronominale_passive",
+    "name": "Strona zwrotno-bierna",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pf_vpas1",
+        "question": "Ce vin _____ bien en France.",
+        "translation": "(To wino dobrze sie sprzedaje we Francji)",
+        "options": [
+          "se vend",
+          "est vendu",
+          "vend",
+          "se vendent"
+        ],
+        "correct": "se vend",
+        "explanation": "'Se vend' — forma zwrotno-bierna (pronominal passif). 'Ce vin se vend bien' = 'to wino dobrze sie sprzedaje'. Nie znaczy, ze wino sprzedaje SIEBIE, lecz ze JEST SPRZEDAWANE! To specyficzny uzytek zaimka zwrotnego do wyrazenia strony biernej. Porownaj: 'Ce vin est vendu' (voix passive — to wino jest sprzedawane) vs 'Ce vin se vend' (pronominal passif — to wino sie sprzedaje). W polskim: 'sprzedaje sie' — identyczna konstrukcja!"
+      },
+      {
+        "id": "pf_vpas2",
+        "question": "Le francais _____ dans de nombreux pays.",
+        "translation": "(Jezyk francuski mowi sie w wielu krajach)",
+        "options": [
+          "se parle",
+          "est parle",
+          "parle",
+          "se parlent"
+        ],
+        "correct": "se parle",
+        "explanation": "'Le francais se parle' — pronominal passif. Podmiot JEST czyms, co sie Z NIM robi (jezyk jest mowiony = jezyk sie mowi). Ten uzytek jest BARDZO czesty we francuskim — czesciej niz bierna z 'etre'! Typowe konteksty: jezyki ('le polonais se parle en Pologne'), produkty ('ce produit se vend bien'), jedzenie ('ce plat se mange froid'). W polskim uzywaamy tego samego wzorca: 'mowi sie', 'sprzedaje sie'. To latwa analogia dla Polakow!"
+      },
+      {
+        "id": "pf_vpas3",
+        "question": "Cela ne _____ pas.",
+        "translation": "(Tego sie nie robi)",
+        "options": [
+          "se fait",
+          "est fait",
+          "fait",
+          "se font"
+        ],
+        "correct": "se fait",
+        "explanation": "'Cela ne se fait pas' = 'tego sie nie robi' — pronominal passif w przeczeniu. Kolejnosc: ne + se + verbe + pas. Ta konstrukcja czesto wyrazaa normy spoleczne: 'ca ne se dit pas' (tego sie nie mowi), 'ca ne se fait pas' (tego sie nie robi), 'ca se comprend' (to sie rozumie), 'ca se voit' (to sie widzi/to widac). UWAGA: 'cela' (formalne) vs 'ca' (potoczne) — oba poprawne. W polskim: 'tego sie nie robi' — identyczna struktura z zaimkiem 'sie'."
+      },
+      {
+        "id": "pf_vpas4",
+        "question": "Ces gateaux _____ tres facilement.",
+        "translation": "(Te ciastka robi sie bardzo latwo)",
+        "options": [
+          "se font",
+          "sont faits",
+          "font",
+          "se fait"
+        ],
+        "correct": "se font",
+        "explanation": "'Se font' — 3os. lm. bo 'ces gateaux' (te ciastka) sa w l.mn. UWAGA na uzgadnianie! Pronominal passif zgadza sie z podmiotem: 'ce gateau se fait' (l.poj.) vs 'ces gateaux se font' (l.mn.). 'Se faire' w kuchni: 'se fait facilement' (robi sie latwo), 'se prepare en 10 minutes' (przygotowuje sie w 10 minut). W polskim: 'robi sie' jest bezosobowe — nie zmienia formy niezaleznie od liczby. Po francusku MUSI sie zgadzac!"
+      },
+      {
+        "id": "pf_vpas5",
+        "question": "Cette expression ne _____ plus.",
+        "translation": "(Tego wyrazenia juz sie nie uzywa)",
+        "options": [
+          "s'emploie",
+          "est employee",
+          "emploie",
+          "s'emploient"
+        ],
+        "correct": "s'emploie",
+        "explanation": "'Ne s'emploie plus' — pronominal passif z 'ne...plus' (juz nie). 'S'employer' = byc uzywanym. Czesty w jezykoznawstwie: 'ce mot s'emploie rarement' (to slowo jest rzadko uzywane), 'cette forme ne s'utilise qu'a l'ecrit' (ta forma jest uzywana tylko w pismie). UWAGA: 's'emploie' przed samogloska — apostrofy 'se' -> 's''. W polskim: 'juz sie nie uzywa' — identyczna struktura. To jedna z latwiejszych form dla polskich uczniow."
+      },
+      {
+        "id": "pf_vpas6",
+        "question": "Les portes _____ automatiquement.",
+        "translation": "(Drzwi otwieraja sie automatycznie)",
+        "options": [
+          "s'ouvrent",
+          "sont ouvertes",
+          "ouvrent",
+          "s'ouvre"
+        ],
+        "correct": "s'ouvrent",
+        "explanation": "'S'ouvrent' — 3os. lm. bo 'les portes' (drzwi) sa l.mn. UWAGA: 'les portes' sa ZENSKIE l.mn. we francuskim! 's'ouvrent' — 's'ouvrir' to tu pronominal passif (drzwi nie otwieraja sie same z wlasnej woli). Ale moze byc tez pronominal sens moyen (mechanizm sprawia). Roznice syntaktyczne sa subtelne. W polskim: 'drzwi otwieraja sie' — mozemy interpretowac jako zwrotne lub bierne, tak jak po francusku."
+      },
+      {
+        "id": "pf_vpas7",
+        "question": "Ici, le cafe _____ sans sucre.",
+        "translation": "(Tutaj kawe pije sie bez cukru)",
+        "options": [
+          "se boit",
+          "est bu",
+          "boit",
+          "se boivent"
+        ],
+        "correct": "se boit",
+        "explanation": "'Le cafe se boit sans sucre' — pronominal passif wyrazajacy zwyczaj/norme. Nie znaczy, ze kawa PIJE SIEBIE, lecz ze jest PITA w okreslony sposob. Typowe dla opisow kulturowych: 'le the se boit chaud' (herbate pije sie gorqco), 'le champagne se sert frais' (szampan podaje sie schlodzony). UWAGA: 'boire' jest nieregularny: je bois, tu bois, il boit, nous buvons, vous buvez, ils boivent. Subj: que je boive. W polskim: 'pije sie' — bezosobowe."
+      },
+      {
+        "id": "pf_vpas8",
+        "question": "Cet article _____ en cinq minutes.",
+        "translation": "(Ten artykul czyta sie w piec minut)",
+        "options": [
+          "se lit",
+          "est lu",
+          "lit",
+          "se lisent"
+        ],
+        "correct": "se lit",
+        "explanation": "'Se lit' — pronominal passif od 'lire' (czytac). 'Cet article se lit en cinq minutes' = mozna go przeczytac w 5 minut. UWAGA: 'lire' jest nieregularny: je lis, tu lis, il lit, nous lisons, vous lisez, ils lisent. 'Se lire' w pronominal passif jest CZESTY w recenzjach i opisach: 'ce roman se lit d'une traite' (ta powiesc czyta sie jednym tchem), 'ses livres se lisent facilement' (jego ksiazki czyta sie latwo). W polskim: 'czyta sie' — identyczne."
+      },
+      {
+        "id": "pf_vpas9",
+        "question": "Les erreurs _____ souvent dans ce type d'exercice.",
+        "translation": "(Bledy popelnia sie czesto w tego typu cwiczeniu)",
+        "options": [
+          "se commettent",
+          "sont commises",
+          "commettent",
+          "se commet"
+        ],
+        "correct": "se commettent",
+        "explanation": "'Se commettent' — 3os. lm. bo 'les erreurs' (bledy). 'Commettre' (popelnic) jest nieregularny jak 'mettre': je commets, il commet, nous commettons. 'Se commettre' w pronominal passif = 'byc popelnianym'. UWAGA: rejestr formalny! W jezycku codziennym czesciej: 'on fait souvent des erreurs' (robi sie czesto bledy). Pronominal passif jest elegancthiejszy. W polskim: 'popelnia sie' — zwrotna forma bezosobowa."
+      },
+      {
+        "id": "pf_vpas10",
+        "question": "Ce fromage _____ avec du pain.",
+        "translation": "(Te ser je sie z chlebem)",
+        "options": [
+          "se mange",
+          "est mange",
+          "mange",
+          "se mangent"
+        ],
+        "correct": "se mange",
+        "explanation": "'Se mange' — pronominal passif od 'manger'. Typowe w gastronomii: 'ce plat se mange chaud' (to danie je sie na goraco), 'les huitres se mangent crues' (ostrygi je sie surowe). UWAGA: pronominal passif + przymiotnik ZGADZA SIE z podmiotem! 'Ce fromage se mange frais' (ten ser — meski -> frais), 'cette salade se mange froide' (ta salatka — zenska -> froide). W polskim: 'je sie z chlebem' — bezosobowe, bez uzgadniania."
+      },
+      {
+        "id": "pf_vpas11",
+        "question": "La Tour Eiffel _____ de loin.",
+        "translation": "(Wieze Eiffla widac z daleka)",
+        "options": [
+          "se voit",
+          "est vue",
+          "voit",
+          "se voient"
+        ],
+        "correct": "se voit",
+        "explanation": "'Se voit de loin' — pronominal passif od 'voir' (widziec). 'La Tour Eiffel se voit de loin' = Wieze Eiffla widac z daleka (jest widziana). 'Voir' jest nieregularny: je vois, il voit, nous voyons. Pronominal passif z 'voir' jest specialnie czesty: 'ca se voit' (to widac), 'ce changement se voit' (ta zmiana jest widoczna), 'cela ne se voit pas' (tego nie widac). W polskim: 'widac' — bezosobowe slowo, unikalna konstrukja polska!"
+      },
+      {
+        "id": "pf_vpas12",
+        "question": "Ces fleurs ne _____ qu'au printemps.",
+        "translation": "(Te kwiaty znajduje sie tylko wiosna)",
+        "options": [
+          "se trouvent",
+          "sont trouvees",
+          "trouvent",
+          "se trouve"
+        ],
+        "correct": "se trouvent",
+        "explanation": "'Ne se trouvent qu'au printemps' — pronominal passif z restrykcja 'ne...que' (tylko). 'Se trouver' = znajdowac sie/byc znajdowanym. UWAGA: tu 'se trouver' moze byc tez pronominal sens reflexif (znajdowac sie = byc w miejscu). W kontekscie kwiatow: 'se trouvent' = mozna je znalezc = rosna. 'Ne...que' = seulement (tylko). Konstrukcja: ne + se + verbe + que. W polskim: 'znajduje sie' lub 'rosną' — kontekst decyduje."
+      },
+      {
+        "id": "pf_vpas13",
+        "question": "Ce mot ne _____ pas comme ca.",
+        "translation": "(Tego slowa nie wymawia sie tak)",
+        "options": [
+          "se prononce",
+          "est prononce",
+          "prononce",
+          "se prononcent"
+        ],
+        "correct": "se prononce",
+        "explanation": "'Ne se prononce pas comme ca' — pronominal passif od 'prononcer' (wymawiac). Czeste w nauce jezyka: 'ce mot se prononce differemment' (to slowo wymawia sie inaczej), 'la lettre h ne se prononce pas' (litera h nie jest wymawiana). UWAGA: 'prononcer' vs 'annoncer' — oba na -oncer, ale rozne znaczenia! 'Se prononcer' moze tez znaczyc 'wypowiedziec sie' (refleksif): 'il s'est prononce contre' (wypowiedzial sie przeciw). Kontekst rozroznia."
+      },
+      {
+        "id": "pf_vpas14",
+        "question": "Ce tissu _____ tres bien.",
+        "translation": "(Ta tkanina bardzo dobrze sie pierze)",
+        "options": [
+          "se lave",
+          "est lave",
+          "lave",
+          "se lavent"
+        ],
+        "correct": "se lave",
+        "explanation": "'Se lave bien' — pronominal passif od 'laver' (prac). Czeste w opisach produktow: 'ce tissu se lave a 30 degres' (ta tkanina pierze sie w 30 stopniach), 'cette chemise se repasse facilement' (ta koszula latwo sie prasuje). Pronominal passif jest PREFEROWANY nad voix passive w opisach cech przedmiotow. Porownaj: 'ce tissu se lave bien' (naturalnie brzmi) vs 'ce tissu est bien lave' (ktos go pierze — inne znaczenie!). W polskim: 'pierze sie' — bezosobowe."
+      },
+      {
+        "id": "pf_vpas15",
+        "question": "Ce document _____ en trois exemplaires.",
+        "translation": "(Ten dokument drukuje sie w trzech egzemplarzach)",
+        "options": [
+          "s'imprime",
+          "est imprime",
+          "imprime",
+          "s'impriment"
+        ],
+        "correct": "s'imprime",
+        "explanation": "'S'imprime en trois exemplaires' — pronominal passif od 'imprimer' (drukowac). Kontekst administracyjny/biurowy. 'En trois exemplaires' = w trzech kopiach/egzemplarzach. Pronominal passif w kontekscie biurowym: 'ce formulaire se remplit en ligne' (ten formularz wypelnia sie online), 'ce contrat se signe en deux exemplaires' (ta umowa podpisuje sie w dwoch egzemplarzach). W polskim: 'drukuje sie' — bezosobowa forma zwrotna, identyczny wzorzec. Bardzo naturalne dla polskich uczniow!"
+      }
+    ]
+  },
+  {
+    "key": "gallicismes",
+    "name": "Gallicyzmy",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pf_gal1",
+        "question": "Il _____ faire ses devoirs avant de sortir.",
+        "translation": "(Musi odrabiac lekcje przed wyjsciem)",
+        "options": [
+          "faut",
+          "doit",
+          "peut",
+          "va"
+        ],
+        "correct": "faut",
+        "explanation": "'Il faut' (trzeba/musi sie) — bezosobowa konstrukcja obowiqzku. GALLICYZM = konstrukcja typowa TYLKO dla francuskiego, bez odpowiednika w lacinie. 'Il faut' + bezokolicznik: 'il faut faire' (trzeba robic). 'Il faut que' + subjonctif: 'il faut qu'il fasse' (trzeba, zeby robil). UWAGA: 'il' jest tu bezosobowe (jak 'it' w ang. 'it rains')! W polskim: 'trzeba' — tez bezosobowe, wiec analogia jest naturalna. 'Il faut' jest jednym z najczesciej uzywanych wyrazen we francuskim."
+      },
+      {
+        "id": "pf_gal2",
+        "question": "Il _____ beau aujourd'hui.",
+        "translation": "(Dzisiaj jest ladna pogoda)",
+        "options": [
+          "fait",
+          "est",
+          "a",
+          "va"
+        ],
+        "correct": "fait",
+        "explanation": "'Il fait beau' — bezosobowy gallicyzm pogodowy z 'faire'. UWAGA: uzycie 'faire' (robic) do opisu pogody jest TYPOWO FRANCUSKIE! 'Il fait chaud' (jest gorqco), 'il fait froid' (jest zimno), 'il fait du vent' (jest wietrznie), 'il fait nuit' (jest noc). NIE 'il est chaud' (to znaczyloby 'on jest gorqcy'!). W polskim: 'jest ladna pogoda' — uzywa 'byc', nie 'robic'. To fundamentalna roznica, czesty blad poczqtkujqcych!"
+      },
+      {
+        "id": "pf_gal3",
+        "question": "Elle _____ de partir quand le telephone a sonne.",
+        "translation": "(Wlasnie miala wychodzic, gdy zadzwonil telefon)",
+        "options": [
+          "vient",
+          "va",
+          "est",
+          "a"
+        ],
+        "correct": "vient",
+        "explanation": "'Venir de' + infinitif = PASSE RECENT (czas blisko przeszly). 'Elle vient de partir' = 'wlasnie wyszla' (dosłownie: 'przychodzi od wyjscia'). GALLICYZM — ta konstrukcja nie istnieje w zadnym innym jezyku romariskim! 'Je viens de manger' (wlasnie jadlem), 'il vient d'arriver' (wlasnie przyszedl). W polskim: 'wlasnie + czas przeszly' — nie mamy specjalnej konstrukcji. UWAGA: 'venir de' w imparfait: 'elle venait de partir' = 'wlasnie wyszla' (w narracji przeszlej)."
+      },
+      {
+        "id": "pf_gal4",
+        "question": "Nous _____ sortir ce soir.",
+        "translation": "(Idziemy dzis wieczorem wyjsc / Zamierzamy wyjsc)",
+        "options": [
+          "allons",
+          "venons",
+          "sommes",
+          "avons"
+        ],
+        "correct": "allons",
+        "explanation": "'Aller' + infinitif = FUTUR PROCHE (czas blisko przyszly). 'Nous allons sortir' = 'zaraz wyjdziemy / idziemy wyjsc'. 'Aller' (isc) uzywany do wyrazenia BLISKIEJ PRZYSZLOSCI! 'Je vais manger' (zaraz bede jesc), 'il va pleuvoir' (zaraz bedzie padac). UWAGA: futur proche vs futur simple — fp wyraza blizszq i pewniejsza przyszlosc. W polskim: uzywaamy czasu terazniejszego ('idziemy dzis na kino') lub 'zamierzamy'. Nie mamy specjalnej formy."
+      },
+      {
+        "id": "pf_gal5",
+        "question": "Il _____ a beaucoup de monde ici.",
+        "translation": "(Jest tutaj duzo ludzi)",
+        "options": [
+          "y",
+          "en",
+          "le",
+          "la"
+        ],
+        "correct": "y",
+        "explanation": "'Il y a' (jest/sq/znajduje sie) — PODSTAWOWY gallicyzm egzystencjalny. Dosłownie: 'to tam ma'. 'Il y a' NIE zmienia sie w liczbie! 'Il y a un chat' (jest jeden kot), 'il y a des chats' (sq koty) — zawsze 'il y a'! Czasy: 'il y avait' (bylo — imparfait), 'il y a eu' (bylo — pc), 'il y aura' (bedzie). UWAGA: 'il y a' + czas = 'temu': 'il y a deux jours' = dwa dni temu! W polskim: 'jest/sq' — proste. Podwojne znaczenie (istnienie + czas) jest typowo francuskie."
+      },
+      {
+        "id": "pf_gal6",
+        "question": "Qu'est-ce que c'_____ ?",
+        "translation": "(Co to jest?)",
+        "options": [
+          "est",
+          "a",
+          "fait",
+          "va"
+        ],
+        "correct": "est",
+        "explanation": "'Qu'est-ce que c'est?' (Co to jest?) — podwojny gallicyzm pytajny. Rozkladamy: 'que' (co) + 'est-ce que' (czy — inwersja) + 'c'est' (to jest). Trzy sposoby pytania o cos: 1) 'Qu'est-ce que c'est?' (standard), 2) 'C'est quoi?' (potoczny), 3) 'Qu'est ceci?' (formalny/archaiczny). UWAGA: 'est-ce que' moze byc dodane do KAZDEGO pytania: 'Ou est-ce que tu vas?' (Dokad idziesz?). W polskim: 'Co to jest?' — trzy proste slowa, duzo latwiejsze."
+      },
+      {
+        "id": "pf_gal7",
+        "question": "C'est a Pierre _____ jouer.",
+        "translation": "(Kolej Pierre'a na granie / Pierre gra nastepny)",
+        "options": [
+          "de",
+          "a",
+          "pour",
+          "qui"
+        ],
+        "correct": "de",
+        "explanation": "'C'est a Pierre de jouer' = 'kolej Pierre'a' / 'Pierre gra nastepny'. Gallicyzm wyrazajacy KOLEJ/OBOWIAZEK. 'C'est a + osoba + de + infinitif'. Inne przyklady: 'c'est a moi de decider' (to moja kolej, zeby decydowac), 'c'est a vous de choisir' (Panstwa kolej na wybor). UWAGA: nie myl z 'c'est a moi' (to moje — przynaleznosc)! 'C'est a moi' = to moje, 'c'est a moi DE faire' = moja kolej. W polskim: 'kolej na' — inna konstrukcja."
+      },
+      {
+        "id": "pf_gal8",
+        "question": "Il _____ en train de manger.",
+        "translation": "(On wlasnie je / jest w trakcie jedzenia)",
+        "options": [
+          "est",
+          "a",
+          "va",
+          "fait"
+        ],
+        "correct": "est",
+        "explanation": "'Etre en train de' + infinitif = CZYNNOSC W TOKU (odpowiednik ang. progressive tense). 'Il est en train de manger' = 'wlasnie je' / 'jest w trakcie jedzenia'. GALLICYZM — dosłownie: 'jest w biegu robienia'. Uzywany gdy chcemy podkreslić, ze czynnosc TRWA TERAZ. 'Je suis en train de travailler' (wlasnie pracuje — nie przeszkadzaj!). W polskim: 'wlasnie' + czas terazniejszy lub 'jest w trakcie'. Nie mamy specjalnej formy ciqglej jak angielski -ing."
+      },
+      {
+        "id": "pf_gal9",
+        "question": "Il n'y a qu'_____ demander.",
+        "translation": "(Wystarczy poprosic)",
+        "options": [
+          "a",
+          "de",
+          "pour",
+          "en"
+        ],
+        "correct": "a",
+        "explanation": "'Il n'y a qu'a' (wystarczy) — gallicyzm restrykcyjny. 'Il n'y a qu'a demander' = 'wystarczy poprosic'. Dosłownie: 'nie ma nic innego niz poprosic'. 'N'...que' = tylko, 'il y a' = jest, 'a' = do zrobienia. Potoczna forma: 'y'a qu'a' [jaka]. Jest uzywane wyraoajqc niecierpliwosc lub prostote rozwiazania. UWAGA: moze brzmiec lekcewazaco! 'Y'a qu'a faire ceci!' = 'Wystarczy to zrobic!' (= to proste, dlaczego nie robisz?). W polskim: 'wystarczy' — jeden prosty czasownik."
+      },
+      {
+        "id": "pf_gal10",
+        "question": "Il _____ du se depecher.",
+        "translation": "(Musial sie pospieszyc / Nalezalo sie pospieszyc)",
+        "options": [
+          "a",
+          "est",
+          "fait",
+          "va"
+        ],
+        "correct": "a",
+        "explanation": "'Il a du' (musial) — od 'devoir' (musiec) w passe compose. UWAGA: 'du' z accent (du^) = participe passe od 'devoir'. Bez accent: 'du' = rodzajnik partytywny! 'Il a du partir' (musial wyjsc) vs 'il a du pain' (ma chleb). Ta roznica akcentu jest KLUCZOWA i czesto powoduje nieporozumienia. W polskim: 'musial sie pospieszyc' — bez problemu z akcentami. 'Se depecher' = spieszyc sie — czasownik zwrotny."
+      },
+      {
+        "id": "pf_gal11",
+        "question": "Il _____ mieux partir maintenant.",
+        "translation": "(Lepiej teraz wyjsc)",
+        "options": [
+          "vaut",
+          "faut",
+          "fait",
+          "est"
+        ],
+        "correct": "vaut",
+        "explanation": "'Il vaut mieux' (lepiej) — bezosobowy gallicyzm porownawczy. 'Il vaut mieux partir' = 'lepiej wyjsc'. Od 'valoir' (byc wartym). Warianty: 'il vaut mieux' + infinitif (lepiej + bezokolicznik), 'il vaudrait mieux' (conditionnel — byloby lepiej). UWAGA: odmiana 'valoir' jest nieregularna: je vaux, tu vaux, il vaut, nous valons. Synonim: 'il est preferable de' (preferable jest bardziej formalny). W polskim: 'lepiej + bezokolicznik' — prosta konstrukcja."
+      },
+      {
+        "id": "pf_gal12",
+        "question": "Il est _____ de noter que les resultats sont positifs.",
+        "translation": "(Warto zauwazyc, ze wyniki sa pozytywne)",
+        "options": [
+          "a",
+          "de",
+          "pour",
+          "en"
+        ],
+        "correct": "a",
+        "explanation": "'Il est a noter' (warto zauwazyc / nalezy zauwazyc) — formalny gallicyzm bezosobowy. Struktura: 'il est a' + infinitif = 'nalezy/warto/trzeba'. Inne: 'il est a craindre' (nalezy sie obawiac), 'il est a esperer' (nalezy miec nadzieje), 'il est a souligner' (nalezy podkreslic). UWAGA: 'il est a' nie mylić z 'il a'! 'Il est a noter' (warto zauwazyc) vs 'il a note' (on zauważyl). Rejestr: formalny/pisemny. W polskim: 'warto/nalezy' + bezokolicznik."
+      },
+      {
+        "id": "pf_gal13",
+        "question": "Qu'est-ce qu'il _____ comme metier?",
+        "translation": "(Czym sie zajmuje? / Jaki ma zawod?)",
+        "options": [
+          "fait",
+          "est",
+          "a",
+          "va"
+        ],
+        "correct": "fait",
+        "explanation": "'Qu'est-ce qu'il fait comme metier?' (Czym sie zajmuje?) — potoczny gallicyzm. 'Faire comme metier' = wykonywac jako zawod. Inne sposoby pytania o zawod: 'Quel est votre metier?' (formalny), 'Qu'est-ce que vous faites dans la vie?' (neutralny), 'Vous faites quoi?' (potoczny). UWAGA: odpowiedx BEZ rodzajnika: 'Je suis professeur' (NIE *'Je suis un professeur'). 'Comme' = jako. W polskim: 'Czym sie zajmujesz?' lub 'Kim jestes z zawodu?'."
+      },
+      {
+        "id": "pf_gal14",
+        "question": "Ca y _____ , j'ai fini!",
+        "translation": "(Gotowe / Udalo sie, skonczylem!)",
+        "options": [
+          "est",
+          "a",
+          "fait",
+          "va"
+        ],
+        "correct": "est",
+        "explanation": "'Ca y est!' (Gotowe! / Udalo sie!) — IDIOMATYCZNY gallicyzm wyrazajacy ZAKONCZENIE/OSIAGNIECIE. Dosłownie: 'to tam jest'. Bardzo czesty w mowie! 'Ca y est, j'ai compris!' (Juz rozumiem!), 'Ca y est, on est arrives!' (Dotarlismy!). UWAGA: 'y' odnosi sie do celu/stanu. Czasy: 'ca y etait' (bylo gotowe), 'ca y sera' (bedzie gotowe — rzadko). W polskim: 'Gotowe!', 'Udalo sie!' — krotkie wykrzykniki. 'Ca y est' jest jednym z najczesciej uzywanych wyrazen w codziennym francuskim."
+      },
+      {
+        "id": "pf_gal15",
+        "question": "Il s'_____ de savoir si vous etes disponible.",
+        "translation": "(Chodzi o to, zeby wiedziec, czy jestes dostepny)",
+        "options": [
+          "agit",
+          "est",
+          "fait",
+          "va"
+        ],
+        "correct": "agit",
+        "explanation": "'Il s'agit de' (chodzi o) — bezosobowy gallicyzm tematyczny. 'Il s'agit de' + nom/infinitif = 'chodzi o'. Bardzo czesty! 'De quoi s'agit-il?' (O co chodzi?), 'il s'agit d'un probleme grave' (chodzi o powazny problem), 'il ne s'agit pas de ca' (nie o to chodzi). UWAGA: ZAWSZE bezosobowy — 'il' nie moze byc zastanpione inna osoba! NIE: *'je m'agis de'. 'S'agir' istnieje TYLKO w 3os. poj. bezosobowej. W polskim: 'chodzi o' — bezosobowe wyrazenie, dobra analogia."
+      }
+    ]
   }
 ]
