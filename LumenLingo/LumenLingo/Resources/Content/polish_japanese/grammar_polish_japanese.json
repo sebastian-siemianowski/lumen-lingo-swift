@@ -7583,5 +7583,1030 @@
         "explanation": "Nedan ga takai node kau no o yamemashita = cena jest wysoka, więc zrezygnowałem z zakupu. Nedan (値段) = cena, takai (高い) = drogi/wysoki. Kau no o yameru = zrezygnować z kupienia (kau no = kupowanie, yameru = rezygnować). Node po przymiotniku-i brzmi obiektywnie — decyzja oparta na fakcie (cena). Yameru (やめる) to ważny czasownik: przestać/zrezygnować/porzucić."
       }
     ]
+  },
+  {
+    "key": "purpose_tame",
+    "name": "Cel ～ために (tame ni)",
+    "description": "Partykuła ために (tame ni) wyraża cel lub powód działania — 'żeby/w celu/dla'. Łączy się z formą słownikową czasownika: 日本語を勉強するために (nihongo o benkyou suru tame ni = żeby uczyć się japońskiego). Z rzeczownikami: 健康のために (kenkou no tame ni = dla zdrowia). Ważne: ために z formą przeszłą wyraża przyczynę, nie cel.",
+    "iconName": "arrow.right.circle.fill",
+    "color": "green",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_pur1",
+        "question": "日本語を勉強する_____ 東京に行きます (jadę do Tokio, żeby uczyć się japońskiego).",
+        "translation": "(Jadę do Tokio, żeby uczyć się japońskiego)",
+        "options": [
+          "ために",
+          "ので",
+          "から",
+          "のに"
+        ],
+        "correct": "ために",
+        "explanation": "Nihongo o benkyou suru tame ni = żeby uczyć się japońskiego. Tame ni (ために) z formą słownikową wyraża cel. Benkyou suru tame ni Tokyo ni ikimasu = jadę do Tokio w celu nauki japońskiego. Forma słownikowa + tame ni to podstawowa konstrukcja celowa."
+      },
+      {
+        "id": "pj_pur2",
+        "question": "健康の_____ 毎日運動しています (ćwiczę codziennie dla zdrowia).",
+        "translation": "(Ćwiczę codziennie dla zdrowia)",
+        "options": [
+          "ために",
+          "ので",
+          "から",
+          "のに"
+        ],
+        "correct": "ために",
+        "explanation": "Kenkou no tame ni = dla zdrowia. Z rzeczownikami używamy の (no) przed tame ni. Mainichi undou shite imasu = ćwiczę codziennie. Kenkou no tame ni (健康のために) to częste wyrażenie oznaczające 'dla zdrowia/w trosce o zdrowie'."
+      },
+      {
+        "id": "pj_pur3",
+        "question": "試験に合格する_____ 毎晩勉強します (uczę się każdego wieczoru, żeby zdać egzamin).",
+        "translation": "(Uczę się każdego wieczoru, żeby zdać egzamin)",
+        "options": [
+          "ために",
+          "ように",
+          "ので",
+          "から"
+        ],
+        "correct": "ために",
+        "explanation": "Shiken ni goukaku suru tame ni = żeby zdać egzamin. Tame ni z czasownikami wolicjonalnymi (kontrolowanymi) wyraża cel. Maiban benkyou shimasu = uczę się każdego wieczoru. Goukaku suru = zdać (egzamin) — kontrolowane działanie, więc tame ni jest właściwe."
+      },
+      {
+        "id": "pj_pur4",
+        "question": "家族の_____ 一生懸命働いています (pracuję ciężko dla rodziny).",
+        "translation": "(Pracuję ciężko dla rodziny)",
+        "options": [
+          "ために",
+          "として",
+          "について",
+          "によって"
+        ],
+        "correct": "ために",
+        "explanation": "Kazoku no tame ni = dla rodziny. Isshoukenmei hataraite imasu = pracuję ciężko. Rzeczownik + の + ために = dla kogoś/czegoś. To częste wyrażenie motywacji — kazoku no tame ni (家族のために) oznacza 'dla dobra rodziny'."
+      },
+      {
+        "id": "pj_pur5",
+        "question": "将来の_____ 今貯金しています (oszczędzam teraz na przyszłość).",
+        "translation": "(Oszczędzam teraz na przyszłość)",
+        "options": [
+          "ために",
+          "ので",
+          "から",
+          "のに"
+        ],
+        "correct": "ために",
+        "explanation": "Shourai no tame ni = na przyszłość/dla przyszłości. Ima chokin shite imasu = teraz oszczędzam. Shourai (将来) = przyszłość + no tame ni — częsta konstrukcja planowania. Chokin suru (貯金する) = oszczędzać pieniądze."
+      },
+      {
+        "id": "pj_pur6",
+        "question": "新しい車を買う_____ お金を貯めています (oszczędzam pieniądze, żeby kupić nowy samochód).",
+        "translation": "(Oszczędzam pieniądze, żeby kupić nowy samochód)",
+        "options": [
+          "ために",
+          "ように",
+          "のに",
+          "けど"
+        ],
+        "correct": "ために",
+        "explanation": "Atarashii kuruma o kau tame ni = żeby kupić nowy samochód. Okane o tamete imasu = oszczędzam pieniądze. Kau (kupić) jest czasownikiem wolicjonalnym — kontrolowanym, dlatego używamy tame ni. Tameru (貯める) = gromadzić/oszczędzać."
+      },
+      {
+        "id": "pj_pur7",
+        "question": "友達に会う_____ 大阪に行きました (pojechałem do Osaki, żeby spotkać się z przyjacielem).",
+        "translation": "(Pojechałem do Osaki, żeby spotkać się z przyjacielem)",
+        "options": [
+          "ために",
+          "ので",
+          "から",
+          "のに"
+        ],
+        "correct": "ために",
+        "explanation": "Tomodachi ni au tame ni = żeby spotkać się z przyjacielem. Oosaka ni ikimashita = pojechałem do Osaki. Au (会う) = spotkać się — czasownik wolicjonalny. Tame ni wyraża cel podróży — 'w celu spotkania z przyjacielem'."
+      },
+      {
+        "id": "pj_pur8",
+        "question": "日本で働く_____ ビザが必要です (potrzebna jest wiza, żeby pracować w Japonii).",
+        "translation": "(Potrzebna jest wiza, żeby pracować w Japonii)",
+        "options": [
+          "ために",
+          "ように",
+          "ので",
+          "から"
+        ],
+        "correct": "ために",
+        "explanation": "Nihon de hataraku tame ni = żeby pracować w Japonii. Biza ga hitsuyou desu = potrzebna jest wiza. Hataraku (働く) = pracować — cel kontrolowany. Hitsuyou (必要) = potrzebny/konieczny. Tame ni wskazuje cel, dla którego wiza jest wymagana."
+      },
+      {
+        "id": "pj_pur9",
+        "question": "環境の_____ プラスチックを減らしましょう (zmniejszmy plastik dla środowiska).",
+        "translation": "(Zmniejszmy plastik dla środowiska)",
+        "options": [
+          "ために",
+          "ので",
+          "から",
+          "のに"
+        ],
+        "correct": "ために",
+        "explanation": "Kankyou no tame ni = dla środowiska. Purasuchikku o herashimashou = zmniejszmy plastik. Kankyou (環境) = środowisko — rzeczownik, więc のために. Herasu (減らす) = zmniejszyć + mashou = zachęta. To częsta fraza ekologiczna."
+      },
+      {
+        "id": "pj_pur10",
+        "question": "子供の教育の_____ 引っ越しました (przeprowadziliśmy się dla edukacji dzieci).",
+        "translation": "(Przeprowadziliśmy się dla edukacji dzieci)",
+        "options": [
+          "ために",
+          "ので",
+          "から",
+          "のに"
+        ],
+        "correct": "ために",
+        "explanation": "Kodomo no kyouiku no tame ni = dla edukacji dzieci. Hikkoshimashita = przeprowadziliśmy się. Kodomo (子供) = dzieci, kyouiku (教育) = edukacja. Podwójne の: kodomo no kyouiku no tame ni — częsty wzorzec z zagnieżdżonymi rzeczownikami."
+      },
+      {
+        "id": "pj_pur11",
+        "question": "痩せる_____ ジョギングを始めました (zacząłem biegać, żeby schudnąć).",
+        "translation": "(Zacząłem biegać, żeby schudnąć)",
+        "options": [
+          "ために",
+          "ように",
+          "ので",
+          "から"
+        ],
+        "correct": "ために",
+        "explanation": "Yaseru tame ni = żeby schudnąć. Jogingu o hajimemashita = zacząłem biegać. Yaseru (痩せる) = schudnąć — choć wynik nie jest w pełni kontrolowany, cel jest świadomy, więc tame ni. Hajimeru (始める) = zacząć — wskazuje na nowy nawyk."
+      },
+      {
+        "id": "pj_pur12",
+        "question": "安全の_____ シートベルトを締めてください (proszę zapiąć pas bezpieczeństwa dla bezpieczeństwa).",
+        "translation": "(Proszę zapiąć pas dla bezpieczeństwa)",
+        "options": [
+          "ために",
+          "ので",
+          "から",
+          "のに"
+        ],
+        "correct": "ために",
+        "explanation": "Anzen no tame ni = dla bezpieczeństwa. Shiitberuto o shimete kudasai = proszę zapiąć pas. Anzen (安全) = bezpieczeństwo + no tame ni. Shimeru (締める) = zapiąć/zaciągnąć. Częste wyrażenie w transporcie i instrukcjach bezpieczeństwa."
+      },
+      {
+        "id": "pj_pur13",
+        "question": "読書の_____ 新しい眼鏡を買いました (kupiłem nowe okulary do czytania).",
+        "translation": "(Kupiłem nowe okulary do czytania)",
+        "options": [
+          "ために",
+          "ので",
+          "から",
+          "のに"
+        ],
+        "correct": "ために",
+        "explanation": "Dokusho no tame ni = do czytania/dla czytania. Atarashii megane o kaimashita = kupiłem nowe okulary. Dokusho (読書) = czytanie (rzeczownik). Megane (眼鏡) = okulary. Tame ni wyraża cel zakupu — 'okulary przeznaczone do czytania'."
+      },
+      {
+        "id": "pj_pur14",
+        "question": "夢を叶える_____ 努力し続けます (będę nadal się starać, żeby spełnić marzenia).",
+        "translation": "(Będę nadal się starać, żeby spełnić marzenia)",
+        "options": [
+          "ために",
+          "ように",
+          "ので",
+          "から"
+        ],
+        "correct": "ために",
+        "explanation": "Yume o kanaeru tame ni = żeby spełnić marzenia. Doryoku shi tsuzukemasu = będę nadal się starać. Kanaeru (叶える) = spełnić — wolicjonalny. Tsuzukeru (続ける) = kontynuować. Doryoku (努力) = wysiłek/staranie. Motywujące wyrażenie o dążeniu do celów."
+      },
+      {
+        "id": "pj_pur15",
+        "question": "みんなの_____ ケーキを焼きました (upiekłam ciasto dla wszystkich).",
+        "translation": "(Upiekłam ciasto dla wszystkich)",
+        "options": [
+          "ために",
+          "ので",
+          "から",
+          "のに"
+        ],
+        "correct": "ために",
+        "explanation": "Minna no tame ni = dla wszystkich. Keeki o yakimashita = upiekłam ciasto. Minna (みんな) = wszyscy + no tame ni = dla. Yaku (焼く) = piec/grillować. Prosta konstrukcja: osoba + no tame ni = 'robiąc coś dla kogoś'."
+      }
+    ]
+  },
+  {
+    "key": "contrast_ga",
+    "name": "Kontrast ～が (ga)",
+    "description": "Partykuła が (ga) na końcu zdania podrzędnego pełni funkcję kontrastu — 'ale/jednak'. Jest łagodniejsza niż けど i bardziej neutralna. Używa się jej po formie grzecznościowej: 高いですが、おいしいです (takai desu ga, oishii desu = jest drogie, ale smaczne). Ga jest formalna i naturalna w oficjalnych rozmowach, listach i prośbach.",
+    "iconName": "arrow.left.arrow.right",
+    "color": "orange",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_cga1",
+        "question": "すみません_____ 道を教えていただけませんか (przepraszam, ale czy mógłby pan wskazać drogę?).",
+        "translation": "(Przepraszam, ale czy mógłby pan wskazać drogę?)",
+        "options": [
+          "が",
+          "けど",
+          "のに",
+          "でも"
+        ],
+        "correct": "が",
+        "explanation": "Sumimasen ga = przepraszam, ale... Michi o oshiete itadakemasen ka = czy mógłby pan wskazać drogę? Ga (が) po sumimasen to bardzo uprzejma forma wstępu do prośby. Itadakemasen ka = jeszcze grzeczniejsza forma niż kudasai. Typowy wzorzec formalnej prośby."
+      },
+      {
+        "id": "pj_cga2",
+        "question": "日本語は難しい_____ 面白いです (japoński jest trudny, ale ciekawy).",
+        "translation": "(Japoński jest trudny, ale ciekawy)",
+        "options": [
+          "ですが",
+          "ですけど",
+          "のに",
+          "でも"
+        ],
+        "correct": "ですが",
+        "explanation": "Nihongo wa muzukashii desu ga, omoshiroi desu = japoński jest trudny, ale ciekawy. Desu ga (ですが) po przymiotniku-i to formalna konstrukcja kontrastu. Muzukashii (難しい) = trudny, omoshiroi (面白い) = ciekawy/interesujący. Ga łączy dwa sprzeczne opisy."
+      },
+      {
+        "id": "pj_cga3",
+        "question": "この店は高い_____ 料理はおいしいです (ten lokal jest drogi, ale jedzenie jest smaczne).",
+        "translation": "(Ten lokal jest drogi, ale jedzenie jest smaczne)",
+        "options": [
+          "ですが",
+          "ですけど",
+          "のに",
+          "でも"
+        ],
+        "correct": "ですが",
+        "explanation": "Kono mise wa takai desu ga = ten lokal jest drogi, ale... Ryouri wa oishii desu = jedzenie jest smaczne. Ga (が) wyraża łagodny kontrast — uznaje cenę, ale podkreśla jakość. Takai (高い) = drogi, oishii (おいしい) = smaczny."
+      },
+      {
+        "id": "pj_cga4",
+        "question": "お忙しいところ恐れ入ります_____ お願いがあります (przepraszam, że przeszkadzam, ale mam prośbę).",
+        "translation": "(Przepraszam, że przeszkadzam, ale mam prośbę)",
+        "options": [
+          "が",
+          "けど",
+          "のに",
+          "でも"
+        ],
+        "correct": "が",
+        "explanation": "Oisogashii tokoro osore irimasu ga = przepraszam, że przeszkadzam w zajęciach, ale... Onegai ga arimasu = mam prośbę. To bardzo formalna fraza biznesowa. Osore irimasu (恐れ入ります) = jest mi niezmiernie przykro. Ga łączy przeprosiny z prośbą."
+      },
+      {
+        "id": "pj_cga5",
+        "question": "値段は安い_____ 品質がいいです (cena jest niska, ale jakość jest dobra).",
+        "translation": "(Cena jest niska, ale jakość jest dobra)",
+        "options": [
+          "ですが",
+          "ですけど",
+          "のに",
+          "でも"
+        ],
+        "correct": "ですが",
+        "explanation": "Nedan wa yasui desu ga = cena jest niska, ale... Hinshitsu ga ii desu = jakość jest dobra. Nedan (値段) = cena, hinshitsu (品質) = jakość. Ga wyraża pozytywny kontrast — mimo niskiej ceny jakość jest wysoka. Yasui (安い) = tani."
+      },
+      {
+        "id": "pj_cga6",
+        "question": "申し訳ございません_____ 本日は満席でございます (bardzo przepraszam, ale dziś nie ma wolnych miejsc).",
+        "translation": "(Bardzo przepraszam, ale dziś nie ma wolnych miejsc)",
+        "options": [
+          "が",
+          "けど",
+          "のに",
+          "でも"
+        ],
+        "correct": "が",
+        "explanation": "Moushiwake gozaimasen ga = bardzo przepraszam, ale... Honjitsu wa manseki de gozaimasu = dziś mamy pełną salę. Ga po formalnych przeprosinach to standardowa fraza w obsłudze klienta. Manseki (満席) = pełna sala/brak miejsc. Gozaimasu — super-grzeczna forma."
+      },
+      {
+        "id": "pj_cga7",
+        "question": "雨_____ 出かけました (padał deszcz, ale wyszedłem).",
+        "translation": "(Padał deszcz, ale wyszedłem)",
+        "options": [
+          "でしたが",
+          "でしたけど",
+          "なのに",
+          "でも"
+        ],
+        "correct": "でしたが",
+        "explanation": "Ame deshita ga = padał deszcz, ale... Dekakemashita = wyszedłem. Deshita ga (でしたが) = forma przeszła grzeczna + kontrast. Ame (雨) = deszcz. Dekakeru (出かける) = wychodzić. Ga w tym kontekście oznacza 'pomimo deszczu wyszedłem'."
+      },
+      {
+        "id": "pj_cga8",
+        "question": "失礼です_____ お名前をお聞きしてもよろしいですか (przepraszam za śmiałość, ale czy mogę zapytać o pana imię?).",
+        "translation": "(Przepraszam za śmiałość, ale czy mogę zapytać o imię?)",
+        "options": [
+          "が",
+          "けど",
+          "のに",
+          "でも"
+        ],
+        "correct": "が",
+        "explanation": "Shitsurei desu ga = jest to niegrzeczne (z mojej strony), ale... Onamae o okiki shitemo yoroshii desu ka = czy mogę zapytać o pana imię? Shitsurei (失礼) = niegrzeczność. Ga łagodnie wprowadza pytanie po uprzejmym wstępie. Okiki suru = skromna forma pytania."
+      },
+      {
+        "id": "pj_cga9",
+        "question": "この映画は長い_____ 退屈ではありません (ten film jest długi, ale nie jest nudny).",
+        "translation": "(Ten film jest długi, ale nie jest nudny)",
+        "options": [
+          "ですが",
+          "ですけど",
+          "のに",
+          "でも"
+        ],
+        "correct": "ですが",
+        "explanation": "Kono eiga wa nagai desu ga = ten film jest długi, ale... Taikutsu dewa arimasen = nie jest nudny. Nagai (長い) = długi. Taikutsu (退屈) = nuda/nudny. Desu ga — formalna odmiana kontrastu. Dewa arimasen — formalne zaprzeczenie."
+      },
+      {
+        "id": "pj_cga10",
+        "question": "少し遅れます_____ お待ちいただけますか (trochę się spóźnię, ale czy mógłby pan poczekać?).",
+        "translation": "(Trochę się spóźnię, czy mógłby pan poczekać?)",
+        "options": [
+          "が",
+          "けど",
+          "のに",
+          "でも"
+        ],
+        "correct": "が",
+        "explanation": "Sukoshi okuremasu ga = trochę się spóźnię, ale... Omachi itadakemasu ka = czy mógłby pan poczekać? Ga łączy informację o spóźnieniu z grzeczną prośbą. Itadakemasu ka — keigo (honoryfikatywny). Okuremasu (遅れます) = spóźnić się."
+      },
+      {
+        "id": "pj_cga11",
+        "question": "彼は若い_____ 経験が豊富です (on jest młody, ale ma bogate doświadczenie).",
+        "translation": "(On jest młody, ale ma bogate doświadczenie)",
+        "options": [
+          "ですが",
+          "ですけど",
+          "のに",
+          "でも"
+        ],
+        "correct": "ですが",
+        "explanation": "Kare wa wakai desu ga = on jest młody, ale... Keiken ga houfu desu = doświadczenie jest bogate. Wakai (若い) = młody. Keiken (経験) = doświadczenie. Houfu (豊富) = bogaty/obfity. Ga wyraża kontrast między młodością a bogatym doświadczeniem."
+      },
+      {
+        "id": "pj_cga12",
+        "question": "ご存じかもしれません_____ 説明させていただきます (być może pan wie, ale pozwolę sobie wyjaśnić).",
+        "translation": "(Być może pan wie, ale pozwolę sobie wyjaśnić)",
+        "options": [
+          "が",
+          "けど",
+          "のに",
+          "でも"
+        ],
+        "correct": "が",
+        "explanation": "Gosonji kamoshiremasen ga = być może pan wie, ale... Setsumei sasete itadakimasu = pozwolę sobie wyjaśnić. Gosonji (ご存じ) = honoryfikatywne 'wiedzieć'. Sasete itadakimasu = pozwolę sobie (skromna forma). Bardzo formalna fraza prezentacyjna."
+      },
+      {
+        "id": "pj_cga13",
+        "question": "天気は悪い_____ ピクニックに行きましょう (pogoda jest zła, ale chodźmy na piknik).",
+        "translation": "(Pogoda jest zła, ale chodźmy na piknik)",
+        "options": [
+          "ですが",
+          "ですけど",
+          "のに",
+          "でも"
+        ],
+        "correct": "ですが",
+        "explanation": "Tenki wa warui desu ga = pogoda jest zła, ale... Pikunikku ni ikimashou = chodźmy na piknik. Tenki (天気) = pogoda. Warui (悪い) = zły. Desu ga — uznaje negatywny fakt, ale proponuje mimo to wyjście. Mashou = zachęta/propozycja."
+      },
+      {
+        "id": "pj_cga14",
+        "question": "確認したい_____ こちらでよろしいですか (chciałbym potwierdzić — czy to jest w porządku?).",
+        "translation": "(Chciałbym potwierdzić — czy to w porządku?)",
+        "options": [
+          "のですが",
+          "のですけど",
+          "ので",
+          "から"
+        ],
+        "correct": "のですが",
+        "explanation": "Kakunin shitai no desu ga = chciałbym potwierdzić, ale... Kochira de yoroshii desu ka = czy to jest w porządku? No desu ga (のですが) to jeszcze grzeczniejsza forma — dodaje n desu (wyjaśnienie) + ga (łagodne wprowadzenie). Kakunin (確認) = potwierdzenie."
+      },
+      {
+        "id": "pj_cga15",
+        "question": "残念です_____ 今回は参加できません (szkoda, ale tym razem nie mogę uczestniczyć).",
+        "translation": "(Szkoda, ale tym razem nie mogę uczestniczyć)",
+        "options": [
+          "が",
+          "けど",
+          "のに",
+          "でも"
+        ],
+        "correct": "が",
+        "explanation": "Zannen desu ga = szkoda, ale... Konkai wa sanka dekimasen = tym razem nie mogę uczestniczyć. Zannen (残念) = szkoda/żal. Sanka (参加) = uczestnictwo. Ga po wyrażeniu żalu — grzeczna odmowa. Konkai (今回) = tym razem. Częsta fraza odmowy."
+      }
+    ]
+  },
+  {
+    "key": "contrast_kedo",
+    "name": "Kontrast ～けど/けれども",
+    "description": "Partykuła けど (kedo) oznacza 'ale/jednak' i jest mniej formalna niż が (ga). Ma kilka form: けど (nieformalny), けれど (neutralny), けれども (formalny). Łączy się zarówno z formą zwykłą: 疲れたけど楽しかった (tsukareta kedo tanoshikatta = byłem zmęczony, ale było fajnie), jak i grzecznościową. Jest najczęściej używana w codziennej mowie.",
+    "iconName": "arrow.triangle.swap",
+    "color": "purple",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_ckd1",
+        "question": "疲れた_____ 楽しかったです (byłem zmęczony, ale było fajnie).",
+        "translation": "(Byłem zmęczony, ale było fajnie)",
+        "options": [
+          "けど",
+          "が",
+          "のに",
+          "でも"
+        ],
+        "correct": "けど",
+        "explanation": "Tsukareta kedo tanoshikatta desu = byłem zmęczony, ale było fajnie. Kedo (けど) po formie przeszłej zwykłej — nieformalny kontrast. Tsukareta (疲れた) = zmęczyłem się. Tanoshikatta (楽しかった) = było fajnie. Kedo jest naturalny w codziennej rozmowie."
+      },
+      {
+        "id": "pj_ckd2",
+        "question": "食べたい_____ ダイエット中です (chcę jeść, ale jestem na diecie).",
+        "translation": "(Chcę jeść, ale jestem na diecie)",
+        "options": [
+          "けど",
+          "が",
+          "のに",
+          "でも"
+        ],
+        "correct": "けど",
+        "explanation": "Tabetai kedo daietto-chuu desu = chcę jeść, ale jestem na diecie. Kedo po formie -tai (chcę) — naturalny kontrast pragnień i ograniczeń. Tabetai (食べたい) = chcę jeść. Daietto-chuu (ダイエット中) = w trakcie diety. Chuu (中) = w trakcie."
+      },
+      {
+        "id": "pj_ckd3",
+        "question": "あの映画は見た_____ あまり覚えていません (widziałem ten film, ale niewiele pamiętam).",
+        "translation": "(Widziałem ten film, ale niewiele pamiętam)",
+        "options": [
+          "けど",
+          "が",
+          "のに",
+          "でも"
+        ],
+        "correct": "けど",
+        "explanation": "Ano eiga wa mita kedo = widziałem ten film, ale... Amari oboete imasen = niewiele pamiętam. Mita kedo — forma przeszła + kedo. Oboeru (覚える) = pamiętać. Amari...masen = niewiele/nie bardzo. Nieformalny kontrast między faktem a pamięcią."
+      },
+      {
+        "id": "pj_ckd4",
+        "question": "高い_____ 買いたいです (jest drogie, ale chcę kupić).",
+        "translation": "(Jest drogie, ale chcę kupić)",
+        "options": [
+          "けど",
+          "が",
+          "のに",
+          "でも"
+        ],
+        "correct": "けど",
+        "explanation": "Takai kedo kaitai desu = jest drogie, ale chcę kupić. Kedo bezpośrednio po przymiotniku-i w formie zwykłej — codzienny styl. Takai (高い) = drogi. Kaitai (買いたい) = chcę kupić. Kedo jest naturalniejsze w mowie potocznej niż desu ga."
+      },
+      {
+        "id": "pj_ckd5",
+        "question": "ちょっと聞きたいこと がある_____ いい？ (mam coś, o co chcę zapytać — można?).",
+        "translation": "(Mam pytanie — można?)",
+        "options": [
+          "んだけど",
+          "んですが",
+          "のに",
+          "ので"
+        ],
+        "correct": "んだけど",
+        "explanation": "N da kedo (んだけど) = potoczna forma n desu ga. Chotto kikitai koto ga aru n da kedo, ii? = mam coś, o co chcę zapytać, ok? N da kedo to bardzo naturalny sposób wprowadzenia tematu w rozmowie ze znajomym. Ii (いい) = ok/w porządku."
+      },
+      {
+        "id": "pj_ckd6",
+        "question": "日本語は難しい_____ 毎日練習しています (japoński jest trudny, ale ćwiczę codziennie).",
+        "translation": "(Japoński jest trudny, ale ćwiczę codziennie)",
+        "options": [
+          "けれど",
+          "のに",
+          "から",
+          "ので"
+        ],
+        "correct": "けれど",
+        "explanation": "Nihongo wa muzukashii keredo = japoński jest trudny, ale... Mainichi renshuu shite imasu = ćwiczę codziennie. Keredo (けれど) — neutralna forma między kedo i keredomo. Renshuu (練習) = ćwiczenie/praktyka. Muzukashii keredo — uznaje trudność, ale pokazuje determinację."
+      },
+      {
+        "id": "pj_ckd7",
+        "question": "明日は忙しい_____ 夕方なら大丈夫です (jutro jestem zajęty, ale wieczorem jest ok).",
+        "translation": "(Jutro jestem zajęty, ale wieczorem jest ok)",
+        "options": [
+          "けど",
+          "が",
+          "のに",
+          "ので"
+        ],
+        "correct": "けど",
+        "explanation": "Ashita wa isogashii kedo = jutro jestem zajęty, ale... Yuugata nara daijoubu desu = wieczorem jest ok. Isogashii (忙しい) = zajęty. Yuugata (夕方) = wieczór. Nara (なら) = jeśli/w takim razie. Kedo — codzienny kontrast z proponowaną alternatywą."
+      },
+      {
+        "id": "pj_ckd8",
+        "question": "彼女は優しい_____ 時々厳しいです (ona jest miła, ale czasami surowa).",
+        "translation": "(Ona jest miła, ale czasami surowa)",
+        "options": [
+          "けれども",
+          "のに",
+          "ので",
+          "から"
+        ],
+        "correct": "けれども",
+        "explanation": "Kanojo wa yasashii keredomo = ona jest miła, ale... Tokidoki kibishii desu = czasami jest surowa. Keredomo (けれども) — najbardziej formalna wersja kedo. Yasashii (優しい) = miły/łagodny. Kibishii (厳しい) = surowy/wymagający. Tokidoki (時々) = czasami."
+      },
+      {
+        "id": "pj_ckd9",
+        "question": "行きたかった_____ お金がなかった (chciałem jechać, ale nie miałem pieniędzy).",
+        "translation": "(Chciałem jechać, ale nie miałem pieniędzy)",
+        "options": [
+          "けど",
+          "が",
+          "のに",
+          "でも"
+        ],
+        "correct": "けど",
+        "explanation": "Ikitakatta kedo = chciałem jechać, ale... Okane ga nakatta = nie miałem pieniędzy. Ikitakatta (行きたかった) = chciałem jechać (przeszła forma -tai). Nakatta (なかった) = nie było. Kedo po przeszłej — naturalny kontrast między pragnieniem a przeszkodą."
+      },
+      {
+        "id": "pj_ckd10",
+        "question": "この本を読んだ_____ よく分からなかった (przeczytałem tę książkę, ale niewiele zrozumiałem).",
+        "translation": "(Przeczytałem tę książkę, ale niewiele zrozumiałem)",
+        "options": [
+          "けど",
+          "が",
+          "のに",
+          "でも"
+        ],
+        "correct": "けど",
+        "explanation": "Kono hon o yonda kedo = przeczytałem tę książkę, ale... Yoku wakaranakatta = niewiele zrozumiałem. Yonda (読んだ) = przeczytałem (te-form grupy 1). Yoku wakaranai = nie rozumieć dobrze. Kedo — codzienny kontrast w opowiadaniu."
+      },
+      {
+        "id": "pj_ckd11",
+        "question": "寒い_____ 窓を開けてもいいですか (jest zimno, ale czy mogę otworzyć okno?).",
+        "translation": "(Jest zimno, ale czy mogę otworzyć okno?)",
+        "options": [
+          "けど",
+          "が",
+          "のに",
+          "ので"
+        ],
+        "correct": "けど",
+        "explanation": "Samui kedo = jest zimno, ale... Mado o akete mo ii desu ka = czy mogę otworzyć okno? Kedo łączy fakt (zimno) z prośbą o pozwolenie. Samui (寒い) = zimno. Mado (窓) = okno. Akeru (開ける) = otworzyć. Te mo ii desu ka = czy mogę...?"
+      },
+      {
+        "id": "pj_ckd12",
+        "question": "料理は上手じゃない_____ 頑張って作ります (nie gotuję dobrze, ale postaram się ugotować).",
+        "translation": "(Nie gotuję dobrze, ale postaram się)",
+        "options": [
+          "けど",
+          "が",
+          "のに",
+          "から"
+        ],
+        "correct": "けど",
+        "explanation": "Ryouri wa jouzu ja nai kedo = nie gotuję dobrze, ale... Ganbatte tsukurimasu = postaram się ugotować. Jouzu ja nai (上手じゃない) = nie być dobrym w czymś. Ganbaru (頑張る) = starać się. Kedo — skromne przyznanie się z determinacją mimo braku umiejętności."
+      },
+      {
+        "id": "pj_ckd13",
+        "question": "すみません_____ この席は空いていますか (przepraszam, ale czy to miejsce jest wolne?).",
+        "translation": "(Przepraszam, ale czy to miejsce jest wolne?)",
+        "options": [
+          "けど",
+          "が",
+          "のに",
+          "でも"
+        ],
+        "correct": "けど",
+        "explanation": "Sumimasen kedo = przepraszam, ale... (nieformalne). Kono seki wa aite imasu ka = czy to miejsce jest wolne? Kedo po sumimasen — mniej formalne niż ga, naturalne w kawiarni czy pociągu. Seki (席) = miejsce. Aite iru (空いている) = być wolnym/pustym."
+      },
+      {
+        "id": "pj_ckd14",
+        "question": "まだ子供だ_____ しっかりしている (jest jeszcze dzieckiem, ale jest odpowiedzialny).",
+        "translation": "(Jest jeszcze dzieckiem, ale jest odpowiedzialny)",
+        "options": [
+          "けど",
+          "が",
+          "のに",
+          "でも"
+        ],
+        "correct": "けど",
+        "explanation": "Mada kodomo da kedo = jest jeszcze dzieckiem, ale... Shikkari shite iru = jest odpowiedzialny/solidny. Da kedo — forma zwykła + kontrast. Mada (まだ) = jeszcze. Shikkari (しっかり) = solidnie/porządnie. Codzienna obserwacja o dojrzałym dziecku."
+      },
+      {
+        "id": "pj_ckd15",
+        "question": "ちょっと遠い_____ 歩いて行きましょう (trochę daleko, ale chodźmy pieszo).",
+        "translation": "(Trochę daleko, ale chodźmy pieszo)",
+        "options": [
+          "けど",
+          "が",
+          "のに",
+          "でも"
+        ],
+        "correct": "けど",
+        "explanation": "Chotto tooi kedo = trochę daleko, ale... Aruite ikimashou = chodźmy pieszo. Tooi (遠い) = daleki. Aruite (歩いて) = pieszo (te-forma od aruku). Kedo + mashou — uznaje trudność, ale zachęca. Chotto (ちょっと) = trochę — łagodzi stwierdzenie."
+      }
+    ]
+  },
+  {
+    "key": "listing_tari",
+    "name": "Wyliczanie ～たり～たりする",
+    "description": "Konstrukcja ～たり～たりする (tari...tari suru) służy do wyliczania czynności jako przykładów — 'robię takie rzeczy jak...' Tworzymy ją od formy przeszłej + り: 食べたり飲んだりする (tabetari nondari suru = jem, piję i takie tam). Zawsze kończymy する (suru). Podkreśla, że lista nie jest kompletna — są też inne czynności.",
+    "iconName": "list.bullet",
+    "color": "teal",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_lst1",
+        "question": "週末は本を読ん_____ 映画を見たりします (w weekend czytam książki, oglądam filmy itp.).",
+        "translation": "(W weekend czytam książki, oglądam filmy itp.)",
+        "options": [
+          "だり",
+          "で",
+          "たら",
+          "ながら"
+        ],
+        "correct": "だり",
+        "explanation": "Yonda + ri = yondari (読んだり). Hon o yondari eiga o mitari shimasu = czytam książki, oglądam filmy itp. Yomu → yonda → yondari. Miru → mita → mitari. Shimasu na końcu zamyka konstrukcję. Tari wskazuje, że to tylko przykłady — robię też inne rzeczy."
+      },
+      {
+        "id": "pj_lst2",
+        "question": "休みの日は散歩し_____ 買い物したりします (w dzień wolny spaceruję, robię zakupy itp.).",
+        "translation": "(W dzień wolny spaceruję, robię zakupy itp.)",
+        "options": [
+          "たり",
+          "て",
+          "ながら",
+          "たら"
+        ],
+        "correct": "たり",
+        "explanation": "Sanpo shitari = spacerując (jako przykład). Kaimono shitari shimasu = robię zakupy itp. Suru → shita → shitari. Yasumi no hi (休みの日) = dzień wolny. Sanpo (散歩) = spacer. Kaimono (買い物) = zakupy. Shimasu kończy wyliczanie."
+      },
+      {
+        "id": "pj_lst3",
+        "question": "日本で寿司を食べ_____ 温泉に入ったりしたいです (w Japonii chcę jeść sushi, kąpać się w onsenach itp.).",
+        "translation": "(W Japonii chcę jeść sushi, kąpać się w onsenach itp.)",
+        "options": [
+          "たり",
+          "て",
+          "ながら",
+          "たら"
+        ],
+        "correct": "たり",
+        "explanation": "Tabetari (食べたり) = jedząc (jako przykład). Taberu → tabeta → tabetari. Onsen ni haittari shitai desu = chcę kąpać się w onsenach itp. Hairu → haitta → haittari. Shitai (したい) = chcę robić — kończy konstrukcję tari + pragnienie."
+      },
+      {
+        "id": "pj_lst4",
+        "question": "昨日は掃除し_____ 洗濯したりしました (wczoraj sprzątałem, prałem itp.).",
+        "translation": "(Wczoraj sprzątałem, prałem itp.)",
+        "options": [
+          "たり",
+          "て",
+          "ながら",
+          "たら"
+        ],
+        "correct": "たり",
+        "explanation": "Souji shitari (掃除したり) = sprzątając (jako przykład). Sentaku shitari shimashita = prałem itp. Suru → shita → shitari. Souji (掃除) = sprzątanie. Sentaku (洗濯) = pranie. Shimashita — przeszła forma końcowa. Wylicza domowe obowiązki."
+      },
+      {
+        "id": "pj_lst5",
+        "question": "天気が良かっ_____ 悪かったりします (pogoda bywa dobra, bywa zła).",
+        "translation": "(Pogoda bywa raz dobra, raz zła)",
+        "options": [
+          "たり",
+          "て",
+          "たら",
+          "ても"
+        ],
+        "correct": "たり",
+        "explanation": "Yokattari warukattari shimasu = bywa dobra, bywa zła. Ii → yokatta → yokattari. Warui → warukatta → warukattari. Tari z przymiotnikami-i też działa! Opisuje zmienność pogody — raz tak, raz tak. Shimasu zamyka wzorzec."
+      },
+      {
+        "id": "pj_lst6",
+        "question": "音楽を聴い_____ 歌を歌ったりするのが好きです (lubię słuchać muzyki, śpiewać itp.).",
+        "translation": "(Lubię słuchać muzyki, śpiewać itp.)",
+        "options": [
+          "たり",
+          "て",
+          "ながら",
+          "たら"
+        ],
+        "correct": "たり",
+        "explanation": "Kiitari (聴いたり) = słuchając (przykład). Kiku → kiita → kiitari. Uta o utattari suru no ga suki desu = lubię śpiewać itp. Utau → utatta → utattari. Suru no ga suki = lubić robić — nominalizacja z no + suki."
+      },
+      {
+        "id": "pj_lst7",
+        "question": "子供たちは走っ_____ 遊んだりしています (dzieci biegają, bawią się itp.).",
+        "translation": "(Dzieci biegają, bawią się itp.)",
+        "options": [
+          "たり",
+          "て",
+          "ながら",
+          "たら"
+        ],
+        "correct": "たり",
+        "explanation": "Hashittari (走ったり) = biegając (przykład). Hashiru → hashitta → hashittari. Asondari shite imasu = bawią się itp. (w trakcie). Asobu → asonda → asondari. Shite imasu — teraźniejsza ciągła z tari. Kodomotachi (子供たち) = dzieci."
+      },
+      {
+        "id": "pj_lst8",
+        "question": "朝はコーヒーを飲ん_____ パンを食べたりします (rano piję kawę, jem chleb itp.).",
+        "translation": "(Rano piję kawę, jem chleb itp.)",
+        "options": [
+          "だり",
+          "で",
+          "たら",
+          "ながら"
+        ],
+        "correct": "だり",
+        "explanation": "Nondari (飲んだり) = pijąc (przykład). Nomu → nonda → nondari. Pan o tabetari shimasu = jem chleb itp. Uwaga: nomu → nonda (nie nonta!) — grupa 1 z m→n. Asa wa (朝は) = rano. Koohii (コーヒー) = kawa. Pan (パン) = chleb."
+      },
+      {
+        "id": "pj_lst9",
+        "question": "最近は忙しかっ_____ 暇だったりします (ostatnio bywa zajęty, bywa wolno).",
+        "translation": "(Ostatnio bywa zajęto, bywa wolno)",
+        "options": [
+          "たり",
+          "て",
+          "ながら",
+          "たら"
+        ],
+        "correct": "たり",
+        "explanation": "Isogashikattari (忙しかったり) = bywając zajętym. Hima dattari shimasu = bywając wolnym. Przymiotnik-i: isogashii → isogashikatta → isogashikattari. Przymiotnik-na: hima → hima datta → hima dattari. Tari z obiema klasami przymiotników!"
+      },
+      {
+        "id": "pj_lst10",
+        "question": "旅行では写真を撮っ_____ お土産を買ったりしました (w podróży robiłem zdjęcia, kupowałem pamiątki itp.).",
+        "translation": "(W podróży robiłem zdjęcia, kupowałem pamiątki itp.)",
+        "options": [
+          "たり",
+          "て",
+          "ながら",
+          "たら"
+        ],
+        "correct": "たり",
+        "explanation": "Tottari (撮ったり) = robiąc zdjęcia (przykład). Toru → totta → tottari. Omiyage o kattari shimashita = kupowałem pamiątki. Kau → katta → kattari. Ryokou dewa (旅行では) = w podróży. Shashin (写真) = zdjęcie. Omiyage (お土産) = pamiątka."
+      },
+      {
+        "id": "pj_lst11",
+        "question": "日本語を話し_____ 書いたりする練習をしています (ćwiczę mówienie po japońsku, pisanie itp.).",
+        "translation": "(Ćwiczę mówienie i pisanie po japońsku itp.)",
+        "options": [
+          "たり",
+          "て",
+          "ながら",
+          "たら"
+        ],
+        "correct": "たり",
+        "explanation": "Hanashitari (話したり) = mówiąc (przykład). Hanasu → hanashita → hanashitari. Kaitari suru renshuu = ćwiczenie mówienia i pisania. Kaku → kaita → kaitari. Renshuu o shite imasu = ćwiczę. Tari + suru + rzeczownik — złożona konstrukcja."
+      },
+      {
+        "id": "pj_lst12",
+        "question": "猫は寝_____ 遊んだりしています (kot śpi, bawi się itp.).",
+        "translation": "(Kot śpi, bawi się itp.)",
+        "options": [
+          "たり",
+          "て",
+          "ながら",
+          "たら"
+        ],
+        "correct": "たり",
+        "explanation": "Netari (寝たり) = śpiąc (przykład). Neru → neta → netari. Asondari shite imasu = bawi się itp. (w trakcie). Neko wa (猫は) = kot (temat). Krótkie wyliczenie typowych czynności kota — śpi, bawi się i inne rzeczy."
+      },
+      {
+        "id": "pj_lst13",
+        "question": "電車の中でスマホを見_____ 音楽を聴いたりします (w pociągu patrzę na smartfona, słucham muzyki itp.).",
+        "translation": "(W pociągu patrzę na telefon, słucham muzyki itp.)",
+        "options": [
+          "たり",
+          "て",
+          "ながら",
+          "たら"
+        ],
+        "correct": "たり",
+        "explanation": "Mitari (見たり) = patrząc (przykład). Miru → mita → mitari. Ongaku o kiitari shimasu = słucham muzyki itp. Densha no naka de (電車の中で) = w pociągu. Sumaho (スマホ) = smartfon (skrót od スマートフォン). Typowe czynności w transporcie."
+      },
+      {
+        "id": "pj_lst14",
+        "question": "パーティーで踊っ_____ おしゃべりしたりしました (na imprezie tańczyłem, rozmawiałem itp.).",
+        "translation": "(Na imprezie tańczyłem, rozmawiałem itp.)",
+        "options": [
+          "たり",
+          "て",
+          "ながら",
+          "たら"
+        ],
+        "correct": "たり",
+        "explanation": "Odottari (踊ったり) = tańcząc (przykład). Odoru → odotta → odottari. Oshaberi shitari shimashita = rozmawiałem itp. Paatii de (パーティーで) = na imprezie. Oshaberi (おしゃべり) = pogawędka. Shimashita — przeszła zamykająca."
+      },
+      {
+        "id": "pj_lst15",
+        "question": "彼は笑っ_____ 泣いたりして忙しい人です (on się śmieje, płacze — to zapracowana osoba).",
+        "translation": "(On się śmieje, płacze — emocjonalna osoba)",
+        "options": [
+          "たり",
+          "て",
+          "ながら",
+          "たら"
+        ],
+        "correct": "たり",
+        "explanation": "Warattari (笑ったり) = śmiejąc się (przykład). Warau → waratta → warattari. Naitari shite isogashii hito = osoba co się śmieje, płacze — 'zajęta emocjami'. Naku → naita → naitari. Humorystyczne użycie tari — wylicza kontrastowe emocje."
+      }
+    ]
+  },
+  {
+    "key": "simultaneous_nagara",
+    "name": "Jednoczesność ～ながら (nagara)",
+    "description": "Partykuła ながら (nagara) oznacza 'robiąc coś jednocześnie' — 'podczas gdy'. Łączy się z rdzeniem masu-formy: 音楽を聴きながら勉強する (ongaku o kikinagara benkyou suru = uczę się słuchając muzyki). Główna czynność jest na końcu, poboczna przed nagara. Ważne: obie czynności wykonuje ta sama osoba.",
+    "iconName": "arrow.triangle.merge",
+    "color": "indigo",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_smn1",
+        "question": "音楽を聴き_____ 勉強します (uczę się słuchając muzyki).",
+        "translation": "(Uczę się słuchając muzyki)",
+        "options": [
+          "ながら",
+          "たり",
+          "ので",
+          "から"
+        ],
+        "correct": "ながら",
+        "explanation": "Kiki nagara (聴きながら) = słuchając (jednocześnie). Kiku → kiki + nagara. Ongaku o kikinagara benkyou shimasu = uczę się słuchając muzyki. Główna czynność (勉強する) na końcu, poboczna (聴く) + nagara. Rdzeń masu-formy + nagara."
+      },
+      {
+        "id": "pj_smn2",
+        "question": "テレビを見_____ ご飯を食べます (jem jedząc oglądając telewizję).",
+        "translation": "(Jem oglądając telewizję)",
+        "options": [
+          "ながら",
+          "たり",
+          "ので",
+          "から"
+        ],
+        "correct": "ながら",
+        "explanation": "Mi nagara (見ながら) = oglądając. Miru → mi + nagara. Terebi o minagara gohan o tabemasu = jem posiłek oglądając TV. Gohan (ご飯) = posiłek/ryż. Taberu = jeść (główna czynność). Minagara — poboczna czynność towarzysząca jedzeniu."
+      },
+      {
+        "id": "pj_smn3",
+        "question": "歩き_____ 電話で話さないでください (proszę nie rozmawiać przez telefon idąc).",
+        "translation": "(Proszę nie rozmawiać przez telefon idąc)",
+        "options": [
+          "ながら",
+          "たり",
+          "ので",
+          "から"
+        ],
+        "correct": "ながら",
+        "explanation": "Aruki nagara (歩きながら) = idąc. Aruku → aruki + nagara. Denwa de hanasanaide kudasai = proszę nie rozmawiać przez telefon. Aruki nagara — popularna przestroga dotycząca bezpieczeństwa. Naide kudasai = proszę nie (zakaz)."
+      },
+      {
+        "id": "pj_smn4",
+        "question": "コーヒーを飲み_____ 新聞を読みます (czytam gazetę pijąc kawę).",
+        "translation": "(Czytam gazetę pijąc kawę)",
+        "options": [
+          "ながら",
+          "たり",
+          "ので",
+          "から"
+        ],
+        "correct": "ながら",
+        "explanation": "Nomi nagara (飲みながら) = pijąc. Nomu → nomi + nagara. Koohii o nominagara shinbun o yomimasu = czytam gazetę pijąc kawę. Shinbun (新聞) = gazeta. Yomu (読む) = czytać — główna czynność. Typowy opis porannej rutyny."
+      },
+      {
+        "id": "pj_smn5",
+        "question": "笑い_____ 話してくれました (opowiadał mi śmiejąc się).",
+        "translation": "(Opowiadał mi śmiejąc się)",
+        "options": [
+          "ながら",
+          "たり",
+          "ので",
+          "から"
+        ],
+        "correct": "ながら",
+        "explanation": "Warai nagara (笑いながら) = śmiejąc się. Warau → warai + nagara. Hanashite kuremashita = opowiadał mi (z korzyścią dla mnie). Kuremasu — perspektywa odbiorcy, ktoś zrobił coś dla mnie. Nagara opisuje sposób mówienia — z uśmiechem."
+      },
+      {
+        "id": "pj_smn6",
+        "question": "泣き_____ 映画を見ました (oglądałem film płacząc).",
+        "translation": "(Oglądałem film płacząc)",
+        "options": [
+          "ながら",
+          "たり",
+          "ので",
+          "から"
+        ],
+        "correct": "ながら",
+        "explanation": "Naki nagara (泣きながら) = płacząc. Naku → naki + nagara. Eiga o mimashita = oglądałem film. Nakinagara eiga o mimashita — emocjonalne doświadczenie filmowe. Film jest główną czynnością, płacz — reakcją towarzyszącą. Naku (泣く) = płakać."
+      },
+      {
+        "id": "pj_smn7",
+        "question": "走り_____ 水を飲むのは危ないです (picie wody podczas biegu jest niebezpieczne).",
+        "translation": "(Picie wody podczas biegu jest niebezpieczne)",
+        "options": [
+          "ながら",
+          "たり",
+          "ので",
+          "から"
+        ],
+        "correct": "ながら",
+        "explanation": "Hashiri nagara (走りながら) = biegnąc. Hashiru → hashiri + nagara. Mizu o nomu no wa abunai desu = picie wody jest niebezpieczne. No wa — nominalizacja. Abunai (危ない) = niebezpieczny. Nagara w ostrzeżeniu o bezpieczeństwie."
+      },
+      {
+        "id": "pj_smn8",
+        "question": "友達と話し_____ 帰りました (wracałem do domu rozmawiając z przyjacielem).",
+        "translation": "(Wracałem do domu rozmawiając z przyjacielem)",
+        "options": [
+          "ながら",
+          "たり",
+          "ので",
+          "から"
+        ],
+        "correct": "ながら",
+        "explanation": "Hanashi nagara (話しながら) = rozmawiając. Hanasu → hanashi + nagara. Tomodachi to hanashinagara kaerimashita = wracałem rozmawiając z przyjacielem. Kaeru (帰る) = wracać do domu — główna czynność. Hanasu — towarzysząca rozmowa."
+      },
+      {
+        "id": "pj_smn9",
+        "question": "お菓子を食べ_____ 映画を見るのが好きです (lubię oglądać filmy jedząc słodycze).",
+        "translation": "(Lubię oglądać filmy jedząc słodycze)",
+        "options": [
+          "ながら",
+          "たり",
+          "ので",
+          "から"
+        ],
+        "correct": "ながら",
+        "explanation": "Tabe nagara (食べながら) = jedząc. Taberu → tabe + nagara. Okashi o tabenagara eiga o miru no ga suki desu = lubię oglądać filmy jedząc słodycze. Okashi (お菓子) = słodycze. No ga suki = lubić (nominalizacja + suki)."
+      },
+      {
+        "id": "pj_smn10",
+        "question": "考え_____ ゆっくり歩きました (szedłem powoli myśląc/rozmyślając).",
+        "translation": "(Szedłem powoli rozmyślając)",
+        "options": [
+          "ながら",
+          "たり",
+          "ので",
+          "から"
+        ],
+        "correct": "ながら",
+        "explanation": "Kangae nagara (考えながら) = myśląc/rozmyślając. Kangaeru → kangae + nagara. Yukkuri arukimashita = szedłem powoli. Yukkuri (ゆっくり) = powoli. Kangaenagara — odpowiednie dla opisu refleksyjnego spaceru. Aruku = iść — główna czynność."
+      },
+      {
+        "id": "pj_smn11",
+        "question": "料理を作り_____ ラジオを聴いています (gotuję słuchając radia).",
+        "translation": "(Gotuję słuchając radia)",
+        "options": [
+          "ながら",
+          "たり",
+          "ので",
+          "から"
+        ],
+        "correct": "ながら",
+        "explanation": "Tsukuri nagara (作りながら) = gotując. Tsukuru → tsukuri + nagara. Rajio o kiite imasu? Nie! Tu mamy tsukurinagara rajio o kiite imasu — odwrotna kolejność. Ryouri o tsukurinagara = gotując. Ale poprawnie: rajio o kikinagara ryouri o tsukutte imasu. Obie wersje są poprawne — zależy co jest główne."
+      },
+      {
+        "id": "pj_smn12",
+        "question": "メモを取り_____ 授業を聞きました (słuchałem lekcji robiąc notatki).",
+        "translation": "(Słuchałem lekcji robiąc notatki)",
+        "options": [
+          "ながら",
+          "たり",
+          "ので",
+          "から"
+        ],
+        "correct": "ながら",
+        "explanation": "Tori nagara (取りながら) = robiąc (notatki). Toru → tori + nagara. Memo o torinagara jugyou o kikimashita = słuchałem lekcji robiąc notatki. Memo (メモ) = notatki. Jugyou (授業) = lekcja. Kiku (聞く) = słuchać — główna czynność edukacyjna."
+      },
+      {
+        "id": "pj_smn13",
+        "question": "運転し_____ スマホを見るのは法律違反です (patrzenie na telefon podczas prowadzenia jest łamaniem prawa).",
+        "translation": "(Patrzenie na telefon podczas jazdy jest nielegalne)",
+        "options": [
+          "ながら",
+          "たり",
+          "ので",
+          "から"
+        ],
+        "correct": "ながら",
+        "explanation": "Unten shi nagara (運転しながら) = prowadząc. Unten suru → unten shi + nagara. Sumaho o miru no wa houritsu ihan desu = patrzenie na telefon jest łamaniem prawa. Houritsu (法律) = prawo. Ihan (違反) = naruszenie. Poważne ostrzeżenie drogowe."
+      },
+      {
+        "id": "pj_smn14",
+        "question": "踊り_____ 歌うのは難しいです (śpiewanie podczas tańca jest trudne).",
+        "translation": "(Śpiewanie podczas tańca jest trudne)",
+        "options": [
+          "ながら",
+          "たり",
+          "ので",
+          "から"
+        ],
+        "correct": "ながら",
+        "explanation": "Odori nagara (踊りながら) = tańcząc. Odoru → odori + nagara. Utau no wa muzukashii desu = śpiewanie jest trudne. Odorinagara utau = śpiewać tańcząc. No wa — nominalizacja czyni całość podmiotem. Muzukashii (難しい) = trudny."
+      },
+      {
+        "id": "pj_smn15",
+        "question": "彼女は涙を流し_____ 微笑みました (uśmiechnęła się ronząc łzy).",
+        "translation": "(Uśmiechnęła się ronząc łzy)",
+        "options": [
+          "ながら",
+          "たり",
+          "ので",
+          "から"
+        ],
+        "correct": "ながら",
+        "explanation": "Nagashi nagara (流しながら) = ronząc. Nagasu → nagashi + nagara. Namida o nagashinagara hohoemimashita = uśmiechnęła się ronząc łzy. Namida (涙) = łzy. Hohoemu (微笑む) = uśmiechać się delikatnie. Piękny literacki kontrast emocji — łzy i uśmiech jednocześnie."
+      }
+    ]
   }
 ]

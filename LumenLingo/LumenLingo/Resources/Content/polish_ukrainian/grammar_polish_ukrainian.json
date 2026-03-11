@@ -12708,5 +12708,1030 @@
         "explanation": "'Відпочивати' (odpoczywać) — 'від-' (od-) + 'почивати' (spoczywać). Polskie 'odpoczywać' — 'od-' + 'poczywać'. IDENTYCZNA budowa! 'Від-' = 'od-', 'почивати' = 'poczywać'. 'Порадити' (poradzić) — polskie 'poradzić'. Rdzeń 'порад-/porad-' — wspólny! 'Більше' (więcej) — od 'більш' (bardziej). Polskie 'więcej'. Zalecenia lekarza: 'більше відпочивати' (więcej odpoczywać), 'пити воду' (pić wodę), 'менше стресувати' (mniej się stresować). Identyczne porady!"
       }
     ]
+  },
+  {
+    "key": "work_office",
+    "name": "Робота та офіс",
+    "description": "Praca i biuro",
+    "iconName": "briefcase",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pu_wo1",
+        "question": "Він _____ на великому підприємстві вже п'ять років.",
+        "translation": "(On pracuje w dużym przedsiębiorstwie już pięć lat.)",
+        "options": [
+          "працює",
+          "робить",
+          "діє",
+          "служить"
+        ],
+        "correct": "працює",
+        "explanation": "Czasownik 'працювати' (pracować) — najbardziej neutralny dla kontekstu pracy zawodowej. 'Він працює' = On pracuje. W polskim: 'pracować'. Porównaj: працювати/pracować — wspólny rdzeń! 'Робити' (robić) to ogólne 'robić', nie 'pracować'. 'Служити' (służyć) — dla wojska lub służby. 'На підприємстві' — miejscownik z przyimkiem 'на'. W polskim: 'w przedsiębiorstwie' (z 'w'). Ukraiński często używa 'на' tam, gdzie polski 'w'."
+      },
+      {
+        "id": "pu_wo2",
+        "question": "Моя _____ починається о дев'ятій ранку.",
+        "translation": "(Moja zmiana zaczyna się o dziewiątej rano.)",
+        "options": [
+          "зміна",
+          "робота",
+          "праця",
+          "служба"
+        ],
+        "correct": "зміна",
+        "explanation": "'Зміна' (zmiana) — w kontekście pracy oznacza 'zmianę roboczą'. W polskim: 'zmiana' — identyczne! Porównaj: зміна/zmiana — ten sam rdzeń, to samo znaczenie w kontekście pracy. 'Починається о дев'ятій' (zaczyna się o dziewiątej) — czas z przyimkiem 'о'. Polskie: 'o dziewiątej'. 'Ранку' (rano) — dopełniacz od 'ранок'. Polskie: 'rano'. Całe zdanie strukturalnie identyczne z polskim — zmiana kolejności możliwa, ale naturalny szyk jest podobny."
+      },
+      {
+        "id": "pu_wo3",
+        "question": "Вона отримала _____ на посаду менеджера.",
+        "translation": "(Ona dostała awans na stanowisko menedżera.)",
+        "options": [
+          "підвищення",
+          "зниження",
+          "переведення",
+          "звільнення"
+        ],
+        "correct": "підвищення",
+        "explanation": "'Підвищення' (podwyższenie/awans) — od 'підвищити' (podwyższyć). W polskim: 'podwyższenie' lub 'awans'. Porównaj: підвищ-ення / podwyższ-enie — identyczna budowa! Prefiks під-/pod- + -вищ-/-wyższ- + -ення/-enie. 'На посаду' (na stanowisko) — biernik z 'на'. 'Менеджер' — zapożyczenie z angielskiego, identyczne w obu językach. Inne: 'зниження' (obniżenie/degradacja), 'переведення' (przeniesienie), 'звільнення' (zwolnienie)."
+      },
+      {
+        "id": "pu_wo4",
+        "question": "Директор призначив _____ на завтра о десятій.",
+        "translation": "(Dyrektor wyznaczył spotkanie na jutro na dziesiątą.)",
+        "options": [
+          "нараду",
+          "роботу",
+          "зміну",
+          "зарплату"
+        ],
+        "correct": "нараду",
+        "explanation": "'Нарада' (narada/spotkanie służbowe) — formalne zebranie w pracy. W polskim: 'narada' — identyczne! Porównaj: нарад-а / narad-a — ten sam wyraz. 'Призначив' (wyznaczył) — czas przeszły od 'призначити'. Polskie: 'wyznaczył'. 'На завтра о десятій' (na jutro na dziesiątą) — podwójne 'на' dla daty i godziny. W polskim też: 'na jutro na dziesiątą'. Inne spotkania: 'зустріч' (spotkanie ogólne), 'збори' (zebranie), 'конференція' (konferencja)."
+      },
+      {
+        "id": "pu_wo5",
+        "question": "Треба подати _____ до кінця тижня.",
+        "translation": "(Trzeba złożyć raport do końca tygodnia.)",
+        "options": [
+          "звіт",
+          "зміну",
+          "зарплату",
+          "нараду"
+        ],
+        "correct": "звіт",
+        "explanation": "'Звіт' (raport/sprawozdanie) — od 'звітувати' (raportować). W polskim: 'raport' lub 'sprawozdanie'. 'Подати звіт' (złożyć raport) — kolokacja biurowa. 'До кінця тижня' (do końca tygodnia) — dopełniacz z 'до'. Polskie: 'do końca tygodnia' — identyczny przyimek i przypadek! Inne dokumenty biurowe: 'заява' (podanie/wniosek), 'договір' (umowa), 'контракт' (kontrakt), 'наказ' (zarządzenie). Słownictwo biurowe jest często zbliżone w obu językach."
+      },
+      {
+        "id": "pu_wo6",
+        "question": "Мій колега пішов у _____ на два тижні.",
+        "translation": "(Mój kolega poszedł na urlop na dwa tygodnie.)",
+        "options": [
+          "відпустку",
+          "роботу",
+          "офіс",
+          "нараду"
+        ],
+        "correct": "відпустку",
+        "explanation": "'Відпустка' (urlop) — od 'відпустити' (zwolnić/puścić). W polskim: 'urlop' (z niemieckiego). Tu wyrazy mają różne etymologie, ale identyczną funkcję. 'Пішов у відпустку' (poszedł na urlop) — przyimek 'у' + biernik. Polskie: 'poszedł na urlop'. Inne formy: 'бути у відпустці' (być na urlopie — miejscownik), 'вийти з відпустки' (wrócić z urlopu — dopełniacz). 'На два тижні' — biernik trwania. W polskim: 'na dwa tygodnie' — identycznie."
+      },
+      {
+        "id": "pu_wo7",
+        "question": "Сьогодні я маю багато _____ у офісі.",
+        "translation": "(Dzisiaj mam dużo pracy w biurze.)",
+        "options": [
+          "роботи",
+          "робота",
+          "роботу",
+          "роботою"
+        ],
+        "correct": "роботи",
+        "explanation": "'Багато роботи' (dużo pracy) — 'багато' wymaga dopełniacza: робота → роботи. W polskim: 'dużo pracy' — też dopełniacz! 'Praca' → 'pracy'. Porównaj: багато робот-и / dużo prac-y — identyczny mechanizm gramatyczny. 'У офісі' (w biurze) — miejscownik z 'у'. 'Офіс' to zapożyczenie z angielskiego. Tradycyjnie: 'контора' (kontora/biuro). Polskie: 'biuro' (z francuskiego). Różne etymologie, ale w praktyce 'офіс' jest powszechne w obu językach."
+      },
+      {
+        "id": "pu_wo8",
+        "question": "Вона шукає нову _____ з кращою зарплатою.",
+        "translation": "(Ona szuka nowej pracy z lepszą pensją.)",
+        "options": [
+          "роботу",
+          "робота",
+          "роботи",
+          "роботою"
+        ],
+        "correct": "роботу",
+        "explanation": "'Шукати роботу' (szukać pracy) — UWAGA: w ukraińskim 'шукати' + biernik (роботу), w polskim 'szukać' + dopełniacz (pracy)! Różnica rekcji. 'З кращою зарплатою' (z lepszą pensją) — narzędnik z 'з'. 'Зарплата' (зарплата = pensja) — skrót od 'заробітна плата'. W polskim: 'pensja' lub 'wynagrodzenie'. 'Краща' (lepsza) — stopień wyższy od 'хороша'. Polskie: 'lepsza'. Zdanie ma naturalny szyk i jest typowe dla rozmowy o zmianie pracy."
+      },
+      {
+        "id": "pu_wo9",
+        "question": "Мій шеф _____ мене за добру роботу.",
+        "translation": "(Mój szef pochwalił mnie za dobrą pracę.)",
+        "options": [
+          "похвалив",
+          "покарав",
+          "звільнив",
+          "найняв"
+        ],
+        "correct": "похвалив",
+        "explanation": "'Похвалити' (pochwalić) — prefiks по- + хвалити. W polskim: 'pochwalić' — identyczna budowa! по-хвал-ити / po-chwal-ić. 'За добру роботу' (za dobrą pracę) — biernik z 'за'. Polskie: 'za dobrą pracę'. Inne opcje: 'покарав' (ukarał — po+karać), 'звільнив' (zwolnił), 'найняв' (zatrudnił/najął). Porównaj: покар-ав / ukar-ał — prefiks по-/u- + karać. 'Шеф' — wspólne zapożyczenie z niemieckiego/francuskiego, identyczne w obu językach."
+      },
+      {
+        "id": "pu_wo10",
+        "question": "Вони _____ новий проєкт на цьому тижні.",
+        "translation": "(Oni rozpoczęli nowy projekt w tym tygodniu.)",
+        "options": [
+          "розпочали",
+          "закінчили",
+          "скасували",
+          "відклали"
+        ],
+        "correct": "розпочали",
+        "explanation": "'Розпочати' (rozpocząć) — роз+почати. W polskim: 'rozpocząć' — roz+począć. Identyczna budowa! роз-поча-ти / roz-począ-ć. 'Проєкт' (projekt) — uwaga na pisownię z 'є'. W nowej ortografii ukraińskiej (2019): 'проєкт' (nie 'проект'). 'На цьому тижні' (w tym tygodniu) — miejscownik z 'на'. Polskie: 'w tym tygodniu'. Inne: 'закінчили' (zakończyli), 'скасували' (odwołali), 'відклали' (odłożyli)."
+      },
+      {
+        "id": "pu_wo11",
+        "question": "Мені потрібно відправити цей _____ електронною поштою.",
+        "translation": "(Muszę wysłać ten dokument pocztą elektroniczną.)",
+        "options": [
+          "документ",
+          "телефон",
+          "комп'ютер",
+          "принтер"
+        ],
+        "correct": "документ",
+        "explanation": "'Документ' (dokument) — identyczne zapożyczenie w obu językach. 'Відправити' (wysłać/odprawić) — від+правити. Polskie: 'wysłać' lub 'odprawić'. 'Електронною поштою' (pocztą elektroniczną) — narzędnik. 'Електронна пошта' = e-mail. W polskim: 'poczta elektroniczna'. Porównaj: електронн-а пошт-а / elektroniczn-a poczt-a — te same słowa! Potocznie: 'імейл' (e-mail). Biurowe słownictwo jest bardzo zbliżone dzięki wspólnym zapożyczeniom."
+      },
+      {
+        "id": "pu_wo12",
+        "question": "Після роботи я завжди дуже _____.",
+        "translation": "(Po pracy jestem zawsze bardzo zmęczony.)",
+        "options": [
+          "втомлений",
+          "веселий",
+          "голодний",
+          "здоровий"
+        ],
+        "correct": "втомлений",
+        "explanation": "'Втомлений' (zmęczony) — od 'втомити' (zmęczyć). Polskie: 'zmęczony'. Różne rdzenie, ale ta sama struktura. 'Після роботи' (po pracy) — dopełniacz z 'після'. Polskie: 'po pracy'. 'Завжди' (zawsze) — porównaj: завжди/zawsze — bliska forma! Rdzeń '*vьsь-gьda' (wspólny prasłowiański). 'Дуже' (bardzo) — polskie 'dużo/bardzo'. W ukraińskim 'дуже' = 'bardzo' (stopień nasilenia). Polskie 'dużo' = 'wiele' (ilość). Niewielka różnica semantyczna."
+      },
+      {
+        "id": "pu_wo13",
+        "question": "Мій _____ дуже вимогливий, але справедливий.",
+        "translation": "(Mój szef jest bardzo wymagający, ale sprawiedliwy.)",
+        "options": [
+          "керівник",
+          "колега",
+          "клієнт",
+          "партнер"
+        ],
+        "correct": "керівник",
+        "explanation": "'Керівник' (kierownik/szef) — od 'керувати' (kierować). W polskim: 'kierownik' — identyczny rdzeń! керівн-ик / kierown-ik. 'Вимогливий' (wymagający) — od 'вимога' (wymaganie). Polskie: 'wymagający'. 'Справедливий' (sprawiedliwy) — porównaj: справедлив-ий / sprawiedliw-y — identyczne! Zdanie to typowa charakterystyka przełożonego. Inne nazwy: 'начальник' (naczelnik), 'директор' (dyrektor), 'бос' (boss)."
+      },
+      {
+        "id": "pu_wo14",
+        "question": "Вона працює _____ у міжнародній компанії.",
+        "translation": "(Ona pracuje tłumaczką w międzynarodowej firmie.)",
+        "options": [
+          "перекладачкою",
+          "лікаркою",
+          "вчителькою",
+          "продавчинею"
+        ],
+        "correct": "перекладачкою",
+        "explanation": "'Перекладачка' (tłumaczka) — żeńska od 'перекладач' (tłumacz). Narzędnik: 'перекладачкою'. W polskim: 'tłumaczką'. 'Працювати ким?' (pracować jako kto?) — narzędnik w obu językach! 'У міжнародній компанії' (w międzynarodowej firmie) — miejscownik. Porównaj: міжнародн-ій / międzynarodow-ej. 'Компанія' (firma/kompania) — identyczne zapożyczenie. Inne zawody: 'лікарка' (lekarka), 'вчителька' (nauczycielka), 'продавчиня' (sprzedawczyni)."
+      },
+      {
+        "id": "pu_wo15",
+        "question": "На співбесіді мене запитали про мій _____.",
+        "translation": "(Na rozmowie kwalifikacyjnej zapytali mnie o moje doświadczenie.)",
+        "options": [
+          "досвід",
+          "вік",
+          "прізвище",
+          "хобі"
+        ],
+        "correct": "досвід",
+        "explanation": "'Досвід' (doświadczenie) — wspólny rdzeń з 'свід-' (свідчити — świadczyć). W polskim: 'doświadczenie'. 'Співбесіда' (rozmowa kwalifikacyjna) — dosłownie 'współ-rozmowa'. Polskie: 'rozmowa kwalifikacyjna'. 'Запитали про' (zapytali o) — biernik z 'про'. Polskie: 'zapytali o'. Porównaj: запитали про / zapytali o — identyczna struktura. 'Мій досвід' (moje doświadczenie) — biernik = mianownik (męski nieżywotny). Typowe pytanie na rozmowie."
+      }
+    ]
+  },
+  {
+    "key": "education_school",
+    "name": "Освіта та школа",
+    "description": "Edukacja i szkoła",
+    "iconName": "graduationcap",
+    "color": "#22d3ee",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pu_es1",
+        "question": "Мій син ходить до _____ класу.",
+        "translation": "(Mój syn chodzi do piątej klasy.)",
+        "options": [
+          "п'ятого",
+          "п'ять",
+          "п'ятий",
+          "п'ятому"
+        ],
+        "correct": "п'ятого",
+        "explanation": "'До п'ятого класу' (do piątej klasy) — dopełniacz z 'до'. 'П'ятий' → 'п'ятого' (dopełniacz m.). W polskim: 'do piątej klasy' — też dopełniacz! Porównaj: п'ят-ого / piąt-ej — różna końcówka (m. vs ż.), bo 'клас' jest męski w ukraińskim, a 'klasa' żeńska w polskim. 'Ходити до' (chodzić do) — identyczna konstrukcja. System szkolny: 1-11 klasy w Ukrainie (12-letni od reformy). W Polsce: 8 lat szkoły podstawowej + 4 liceum."
+      },
+      {
+        "id": "pu_es2",
+        "question": "На _____ з математики ми вивчали дроби.",
+        "translation": "(Na lekcji matematyki uczyliśmy się ułamków.)",
+        "options": [
+          "уроці",
+          "урок",
+          "уроку",
+          "уроком"
+        ],
+        "correct": "уроці",
+        "explanation": "'На уроці' (na lekcji) — miejscownik z 'на'. 'Урок' → 'уроці'. W polskim: 'na lekcji' (też miejscownik). 'З математики' (z matematyki) — dopełniacz z 'з' (= z/ze). Polskie: 'z matematyki' — identycznie! 'Вивчали дроби' (uczyliśmy się ułamków) — 'вивчати' (uczyć się/studiować). 'Дроби' (ułamki) — od 'дробити' (dzielić na drobne). Polskie: 'drobin-y' → 'ułamki'. Szkolne przedmioty: 'математика', 'фізика', 'хімія', 'біологія' — identyczne w obu językach."
+      },
+      {
+        "id": "pu_es3",
+        "question": "Вчителька поставила мені _____ за контрольну.",
+        "translation": "(Nauczycielka postawiła mi piątkę za sprawdzian.)",
+        "options": [
+          "п'ятірку",
+          "двійку",
+          "одиницю",
+          "трійку"
+        ],
+        "correct": "п'ятірку",
+        "explanation": "'П'ятірка' (piątka) — najwyższa ocena w ukraińskim systemie (dawniej 1-5, teraz 1-12). W polskim: skala 1-6. 'Поставити оцінку' (postawić ocenę) — identyczna kolokacja! 'За контрольну' (za sprawdzian) — biernik z 'за'. 'Контрольна' (sprawdzian) — skrót od 'контрольна робота' (praca kontrolna). Polskie: 'klasówka/sprawdzian'. System ocen: Ukraina (1-12 od 2000 r.), Polska (1-6). 'Бал' (punkt) — ukraiński termin na ocenę. '12 балів' = najwyższy."
+      },
+      {
+        "id": "pu_es4",
+        "question": "Студенти здають _____ наприкінці семестру.",
+        "translation": "(Studenci zdają egzaminy pod koniec semestru.)",
+        "options": [
+          "іспити",
+          "уроки",
+          "заняття",
+          "лекції"
+        ],
+        "correct": "іспити",
+        "explanation": "'Іспит' (egzamin) — lm. 'іспити'. W polskim: 'egzamin' (z łaciny). Ukraiński 'іспит' od 'испытание' (испробовanie). 'Здавати іспити' (zdawać egzaminy) — porównaj: здавати/zdawać — identyczny rdzeń! 'Наприкінці' (pod koniec/na końcu) — на+при+кінці. Polskie: 'pod koniec'. 'Семестр' — identyczne w obu językach (z łaciny). Inne: 'залік' (zaliczenie), 'курсова' (praca kursowa), 'диплом' (dyplom). Akademickie słownictwo jest bardzo zbliżone."
+      },
+      {
+        "id": "pu_es5",
+        "question": "Вона отримала _____ з відзнакою.",
+        "translation": "(Ona otrzymała dyplom z wyróżnieniem.)",
+        "options": [
+          "диплом",
+          "іспит",
+          "залік",
+          "атестат"
+        ],
+        "correct": "диплом",
+        "explanation": "'Диплом' (dyplom) — identyczne zapożyczenie z greckiego. 'З відзнакою' (z wyróżnieniem) — narzędnik z 'з'. Polskie: 'z wyróżnieniem'. 'Відзнака' (wyróżnienie/odznaka) — від+знак-а. Polskie: 'od+znaka' → 'odznaka'. 'Отримати' (otrzymać) — porównaj: отримати/otrzymać — IDENTYCZNE! Rdzeń 'отрим-/otrzym-'. To jeden z najbliższych odpowiedników. Inne dokumenty: 'атестат' (świadectwo maturalne), 'свідоцтво' (świadectwo), 'сертифікат' (certyfikat)."
+      },
+      {
+        "id": "pu_es6",
+        "question": "У нашій школі є великий _____.",
+        "translation": "(W naszej szkole jest duża biblioteka.)",
+        "options": [
+          "бібліотека",
+          "спортзал",
+          "басейн",
+          "стадіон"
+        ],
+        "correct": "бібліотека",
+        "explanation": "'Бібліотека' (biblioteka) — identyczne zapożyczenie z greckiego. Porównaj: бібліотек-а / bibliotek-a. 'У нашій школі' (w naszej szkole) — miejscownik. 'Школа' → 'школі'. Polskie: 'w szkole'. 'Є' (jest) — forma 'бути'. UWAGA: w ukraińskim 'є' jest UŻYWANE w czasie teraźniejszym (w odróżnieniu od polskiego, gdzie 'jest' często pomijane). 'Велика бібліотека' — końcówka przymiotnika: '-а' (ż.r.). Polskie: 'duża biblioteka'."
+      },
+      {
+        "id": "pu_es7",
+        "question": "Він вступив до _____ на факультет права.",
+        "translation": "(On dostał się na uniwersytet na wydział prawa.)",
+        "options": [
+          "університету",
+          "школи",
+          "дитсадка",
+          "ліцею"
+        ],
+        "correct": "університету",
+        "explanation": "'Університет' (uniwersytet) — identyczne zapożyczenie. 'Вступити до' (wstąpić do / dostać się na) — dopełniacz z 'до'. Polskie: 'dostać się na'. 'Факультет права' (wydział prawa) — 'факультет' (wydział — zapożyczenie z łaciny). 'Право' (prawo) — identyczne w obu językach! Porównaj: прав-о / praw-o. System edukacji wyższej: 'бакалавр' (licencjat), 'магістр' (magister), 'доктор' (doktor). Akademicka terminologia jest praktycznie identyczna."
+      },
+      {
+        "id": "pu_es8",
+        "question": "Домашнє _____ потрібно здати до п'ятниці.",
+        "translation": "(Pracę domową trzeba oddać do piątku.)",
+        "options": [
+          "завдання",
+          "урок",
+          "оцінку",
+          "предмет"
+        ],
+        "correct": "завдання",
+        "explanation": "'Домашнє завдання' (praca domowa/zadanie domowe) — 'завдання' (zadanie) od 'завдати' (zadać). Polskie: 'zadanie domowe'. Porównaj: завданн-я / zadan-ie — ten sam rdzeń! 'Здати' (oddać/zdać) — полська: 'zdać/oddać'. 'До п'ятниці' (do piątku) — dopełniacz z 'до'. Polskie: 'do piątku'. 'Потрібно' (trzeba/potrzebno) — porównaj: потрібно / potrzebno (archaicznie) → 'trzeba'. Konstrukcja bezosobowa z 'потрібно' jest identyczna z polskim 'trzeba'."
+      },
+      {
+        "id": "pu_es9",
+        "question": "На перерві діти гралися на _____ біля школи.",
+        "translation": "(Na przerwie dzieci bawiły się na podwórku przy szkole.)",
+        "options": [
+          "подвір'ї",
+          "уроці",
+          "дорозі",
+          "даху"
+        ],
+        "correct": "подвір'ї",
+        "explanation": "'Подвір'я' (podwórze/podwórko) — pod+двір+я. Miejscownik: 'на подвір'ї'. W polskim: 'podwórze/podwórko' — pod+dwór+e. Identyczna budowa! 'На перерві' (na przerwie) — 'перерва' (przerwa). Porównaj: перерв-а / przerw-a — identyczne! 'Діти гралися' (dzieci bawiły się) — 'гратися' (bawić się/grać). 'Біля школи' (przy szkole) — 'біля' + dopełniacz. Polskie: 'przy szkole' (z miejscownikiem). Różna rekcja przyimków."
+      },
+      {
+        "id": "pu_es10",
+        "question": "Мій улюблений _____ у школі — це історія.",
+        "translation": "(Mój ulubiony przedmiot w szkole to historia.)",
+        "options": [
+          "предмет",
+          "урок",
+          "вчитель",
+          "клас"
+        ],
+        "correct": "предмет",
+        "explanation": "'Предмет' (przedmiot) — порównaj: предмет / przedmiot — IDENTYCZNE! Wspólny prasłowiański rdzeń. 'Улюблений' (ulubiony) — у+любл+ений. Polskie: 'ulubiony' — u+lubion-y. Ten sam rdzeń! 'Історія' (historia) — identyczne zapożyczenie z greckiego. Popularne przedmioty: 'математика' (matematyka), 'фізика' (fizyka), 'географія' (geografia), 'література' (literatura), 'біологія' (biologia). Wszystkie praktycznie identyczne w obu językach."
+      },
+      {
+        "id": "pu_es11",
+        "question": "Учні написали _____ з української мови.",
+        "translation": "(Uczniowie napisali dyktando z języka ukraińskiego.)",
+        "options": [
+          "диктант",
+          "іспит",
+          "проєкт",
+          "реферат"
+        ],
+        "correct": "диктант",
+        "explanation": "'Диктант' (dyktando) — wspólne zapożyczenie z łaciny. 'Написали' (napisali) — porównaj: написали / napisali — IDENTYCZNE! Wspólny prefiks на-/na- + pisati/pisać. 'З української мови' (z języka ukraińskiego) — dopełniacz z 'з'. 'Мова' (mowa/język) — polskie 'mowa'. Porównaj: мов-а / mow-a — identyczne! Ale w ukraińskim 'мова' = 'język' (w sensie lingwistycznym) + 'mowa'. Inne prace: 'твір' (wypracowanie), 'реферат' (referat), 'проєкт' (projekt)."
+      },
+      {
+        "id": "pu_es12",
+        "question": "Вона вчиться на _____ курсі медичного університету.",
+        "translation": "(Ona uczy się na trzecim roku uniwersytetu medycznego.)",
+        "options": [
+          "третьому",
+          "третій",
+          "три",
+          "третього"
+        ],
+        "correct": "третьому",
+        "explanation": "'На третьому курсі' (na trzecim roku) — miejscownik: третій → третьому. W polskim: 'na trzecim roku' — identyczny przypadek! 'Вчитися' (uczyć się) — порównaj: вчитися / uczyć się — wspólny rdzeń 'уч-'. 'Медичний університет' (uniwersytet medyczny) — порównaj: медичн-ий / medyczn-y. 'Курс' w ukraińskim = 'rok studiów'. W polskim: 'rok'. Roczniki studiów: 'перший курс' (1. rok), 'другий' (2.), 'третій' (3.)."
+      },
+      {
+        "id": "pu_es13",
+        "question": "_____ нашого класу зібрав гроші на екскурсію.",
+        "translation": "(Wychowawca naszej klasy zebrał pieniądze na wycieczkę.)",
+        "options": [
+          "Класний керівник",
+          "Директор",
+          "Учень",
+          "Охоронець"
+        ],
+        "correct": "Класний керівник",
+        "explanation": "'Класний керівник' (wychowawca klasy) — dosłownie 'klasowy kierownik'. W polskim: 'wychowawca'. 'Зібрав гроші' (zebrał pieniądze) — зібрати від 'збирати'. Polskie: 'zebrał' — identyczne! 'На екскурсію' (na wycieczkę) — biernik z 'на'. 'Екскурсія' (wycieczka/ekskursja) — łacińskie zapożyczenie. Polskie: 'wycieczka'. System: w ukraińskiej szkole 'класний керівник' opiekuje się klasą — odpowiednik polskiego wychowawcy. Rola identyczna."
+      },
+      {
+        "id": "pu_es14",
+        "question": "Після закінчення школи він хоче стати _____.",
+        "translation": "(Po ukończeniu szkoły chce zostać lekarzem.)",
+        "options": [
+          "лікарем",
+          "лікар",
+          "лікаря",
+          "лікарю"
+        ],
+        "correct": "лікарем",
+        "explanation": "'Стати лікарем' (zostać lekarzem) — narzędnik: лікар → лікарем. W polskim: 'zostać lekarzem' — też narzędnik! 'Після закінчення' (po ukończeniu) — 'закінчення' (zakończenie) — porównaj: закінченн-я / zakończeni-e — rdzeń 'кінч-/kończ-'. 'Школи' — dopełniacz. Polskie: 'po ukończeniu szkoły'. Popularne zawody: 'лікар' (lekarz), 'вчитель' (nauczyciel), 'інженер' (inżynier), 'програміст' (programista). Wiele terminów identycznych."
+      },
+      {
+        "id": "pu_es15",
+        "question": "У цьому семестрі ми маємо вивчити десять _____.",
+        "translation": "(W tym semestrze mamy nauczyć się dziesięciu tematów.)",
+        "options": [
+          "тем",
+          "тема",
+          "теми",
+          "темою"
+        ],
+        "correct": "тем",
+        "explanation": "'Десять тем' (dziesięć tematów) — po liczebnikach od 5 wzwyż = dopełniacz lm.: тема → тем. W polskim: 'dziesięć tematów' — też dopełniacz lm.! 'Вивчити' (wyuczyć/nauczyć się) — ви+вчити. 'Маємо вивчити' (mamy nauczyć się) — 'мати' + bezokolicznik = powinność. Polskie: 'mamy nauczyć się'. 'У цьому семестрі' (w tym semestrze) — miejscownik. 'Семестр' — identyczne w obu językach. System 'десять тем' powtarza polską logikę."
+      }
+    ]
+  },
+  {
+    "key": "technology_internet",
+    "name": "Технології та інтернет",
+    "description": "Technologie i internet",
+    "iconName": "desktopcomputer",
+    "color": "#a78bfa",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pu_ti1",
+        "question": "Я не можу _____ до Wi-Fi у цьому кафе.",
+        "translation": "(Nie mogę połączyć się z Wi-Fi w tej kawiarni.)",
+        "options": [
+          "під'єднатися",
+          "зателефонувати",
+          "записатися",
+          "зареєструватися"
+        ],
+        "correct": "під'єднатися",
+        "explanation": "'Під'єднатися' (podłączyć się/połączyć się) — під+єднати+ся. Polskie: 'połączyć się'. 'До Wi-Fi' — dopełniacz z 'до'. 'У цьому кафе' (w tej kawiarni) — 'кафе' (kawiarnia — nieodmienne zapożyczenie z francuskiego). Polskie: 'w tej kawiarni'. Technologiczne słownictwo jest często międzynarodowe: 'Wi-Fi', 'Bluetooth', 'USB' — identyczne w obu językach. 'Під'єднатися до мережі' (podłączyć się do sieci) — typowa konstrukcja IT."
+      },
+      {
+        "id": "pu_ti2",
+        "question": "Вона завантажила нову _____ на свій телефон.",
+        "translation": "(Ona pobrała nową aplikację na swój telefon.)",
+        "options": [
+          "програму",
+          "музику",
+          "фотографію",
+          "книгу"
+        ],
+        "correct": "програму",
+        "explanation": "'Програма' (program/aplikacja) — biernik: програму. W polskim: 'program' lub 'aplikacja'. 'Завантажити' (pobrać/załadować) — за+вантажити (za+ładować). Polskie: 'pobrać'. 'На свій телефон' — biernik kierunkowy. Potocznie: 'додаток' (dodatek/aplikacja) lub 'застосунок' (aplikacja — oficjalny ukraiński termin). 'Аплікація' jest też używane, ale 'застосунок' preferowany. Polskie: 'aplikacja' — zapożyczenie łacińskie. Ukraiński ma rodzimy odpowiednik!"
+      },
+      {
+        "id": "pu_ti3",
+        "question": "Мій комп'ютер _____ дуже повільно працює.",
+        "translation": "(Mój komputer ostatnio bardzo wolno pracuje.)",
+        "options": [
+          "останнім часом",
+          "завтра",
+          "вчора",
+          "вранці"
+        ],
+        "correct": "останнім часом",
+        "explanation": "'Останнім часом' (ostatnio/w ostatnim czasie) — narzędnik: останнім часом. Polskie: 'ostatnio' lub 'w ostatnim czasie'. 'Комп'ютер' (komputer) — z apostrofem! Pisownia z 'ю' po 'п' z apostrofem. Polskie: 'komputer'. 'Повільно' (wolno/powoli) — porównaj: повільн-о / powol-i — wspólny rdzeń! 'Працює' (pracuje) — identyczny rdzeń працювати/pracować. Zdanie o wolnym komputerze — uniwersalny problem, uniwersalne słownictwo!"
+      },
+      {
+        "id": "pu_ti4",
+        "question": "Він _____ свій пароль і не може увійти в акаунт.",
+        "translation": "(On zapomniał swoje hasło i nie może wejść na konto.)",
+        "options": [
+          "забув",
+          "запам'ятав",
+          "записав",
+          "змінив"
+        ],
+        "correct": "забув",
+        "explanation": "'Забути' (zapomnieć) — czas przeszły: 'забув'. Polskie: 'zapomniał'. Porównaj: забу-в / zapomnia-ł — różne rdzenie, ale ten sam prefiks за-/za-. 'Пароль' (hasło) — z francuskiego 'parole'. Polskie: 'hasło'. 'Увійти в акаунт' (wejść na konto) — 'акаунт' (konto — z angielskiego 'account'). Polskie: 'konto'. Inne IT terminy: 'логін' (login), 'реєстрація' (rejestracja), 'авторизація' (autoryzacja). Bezpieczeństwo cyfrowe — ważny temat."
+      },
+      {
+        "id": "pu_ti5",
+        "question": "Мені потрібно _____ цей файл на хмарне сховище.",
+        "translation": "(Muszę przesłać ten plik do chmury/magazynu w chmurze.)",
+        "options": [
+          "завантажити",
+          "видалити",
+          "роздрукувати",
+          "скопіювати"
+        ],
+        "correct": "завантажити",
+        "explanation": "'Завантажити' (załadować/przesłać) — за+вантажити. 'Файл' (plik) — z angielskiego. 'Хмарне сховище' (chmura/magazyn w chmurze) — 'хмара' (chmura) + 'сховище' (magazyn/przechowalnia). Polskie: 'chmura'. 'Хмарний' (chmurowy) — nowy termin technologiczny. Polskie odpowiedniki: 'cloud' / 'chmura'. Inne opcje: 'видалити' (usunąć), 'роздрукувати' (wydrukować — роз+друкувати), 'скопіювати' (skopiować). Bardzo zbliżone prefiksy i rdzenie!"
+      },
+      {
+        "id": "pu_ti6",
+        "question": "Цей _____ має дуже великий екран.",
+        "translation": "(Ten smartfon ma bardzo duży ekran.)",
+        "options": [
+          "смартфон",
+          "годинник",
+          "ключ",
+          "зошит"
+        ],
+        "correct": "смартфон",
+        "explanation": "'Смартфон' (smartfon) — identyczne zapożyczenie z angielskiego. 'Екран' (ekran) — identyczne w obu językach. 'Дуже великий' (bardzo duży) — 'великий' (wielki/duży). Polskie: 'wielki'. Porównaj: велик-ий / wielk-i — identyczne! Rdzeń prasłowiański. Inne urządzenia: 'ноутбук' (laptop), 'планшет' (tablet), 'навушники' (słuchawki — на+вушники, dosłownie: na+uszniki). Polskie: 'słuchawki'. Ukraiński termin jest bardziej dosłowny — od 'вухо' (ucho)."
+      },
+      {
+        "id": "pu_ti7",
+        "question": "Вона веде свій _____ у соціальних мережах.",
+        "translation": "(Ona prowadzi swojego bloga w mediach społecznościowych.)",
+        "options": [
+          "блог",
+          "щоденник",
+          "журнал",
+          "звіт"
+        ],
+        "correct": "блог",
+        "explanation": "'Блог' (blog) — identyczne zapożyczenie z angielskiego. 'Вести блог' (prowadzić bloga) — 'вести' (prowadzić). Polskie: 'prowadzić'. Porównaj: вести / prowadzić — różne rdzenie, ale ukraiński 'вести' jest bliski polskiemu 'wieść'. 'Соціальні мережі' (media/sieci społecznościowe) — 'мережа' (sieć). Polskie: 'media społecznościowe'. 'Соціальний' (społeczny/socjalny). Inne platformy: 'канал' (kanał), 'сторінка' (strona), 'профіль' (profil)."
+      },
+      {
+        "id": "pu_ti8",
+        "question": "Потрібно _____ антивірусну програму.",
+        "translation": "(Trzeba zaktualizować program antywirusowy.)",
+        "options": [
+          "оновити",
+          "видалити",
+          "встановити",
+          "вимкнути"
+        ],
+        "correct": "оновити",
+        "explanation": "'Оновити' (odnowić/zaktualizować) — о+новити (od 'новий' — nowy). Polskie: 'zaktualizować' lub 'odnowić'. 'Антивірусна програма' (program antywirusowy) — 'антивірусний' (antywirusowy). Identyczne zapożyczenia! 'Потрібно' (trzeba) — konstrukcja bezosobowa. Polskie: 'trzeba'. Inne opcje: 'видалити' (usunąć — ви+далити), 'встановити' (zainstalować — в+становити), 'вимкнути' (wyłączyć — ви+мкнути). Prefiksy systematycznie odpowiadają polskim."
+      },
+      {
+        "id": "pu_ti9",
+        "question": "Він _____ повідомлення своєму другові.",
+        "translation": "(On wysłał wiadomość swojemu przyjacielowi.)",
+        "options": [
+          "надіслав",
+          "отримав",
+          "прочитав",
+          "видалив"
+        ],
+        "correct": "надіслав",
+        "explanation": "'Надіслати' (nadosłać/wysłać) — на+діслати. Czas przeszły: 'надіслав'. Polskie: 'wysłał'. 'Повідомлення' (powiadomienie/wiadomość) — по+відомл+ення. Polskie: 'powiadomienie' — po+wiadom+ienie. IDENTYCZNA budowa! 'Своєму другові' (swojemu przyjacielowi) — celownik. 'Друг' (przyjaciel/друг). Polskie: 'druh' (archaicznie) → 'przyjaciel'. Inne opcje: 'отримав' (otrzymał), 'прочитав' (przeczytał), 'видалив' (usunął)."
+      },
+      {
+        "id": "pu_ti10",
+        "question": "Ця _____ має дуже зручний інтерфейс.",
+        "translation": "(Ta strona internetowa ma bardzo wygodny interfejs.)",
+        "options": [
+          "вебсторінка",
+          "книга",
+          "картка",
+          "електронна пошта"
+        ],
+        "correct": "вебсторінка",
+        "explanation": "'Вебсторінка' (strona internetowa) — веб+сторінка. 'Сторінка' (strona/stronica) — identyczny rdzeń! Polskie: 'strona'. 'Зручний' (wygodny/ręczny) — від 'рука' → 'ручний' → 'зручний'. Polskie: 'ręczny' → 'wygodny' (inny rozwój). 'Інтерфейс' (interfejs) — identyczne zapożyczenie. Inne terminy webowe: 'посилання' (link/odsyłacz), 'браузер' (przeglądarka), 'пошукова система' (wyszukiwarka). Terminologia IT stale się rozwija w obu językach."
+      },
+      {
+        "id": "pu_ti11",
+        "question": "Вона _____ фото у свій профіль у Instagram.",
+        "translation": "(Ona dodała zdjęcie do swojego profilu na Instagramie.)",
+        "options": [
+          "додала",
+          "видалила",
+          "приховала",
+          "змінила"
+        ],
+        "correct": "додала",
+        "explanation": "'Додати' (dodać) — до+дати. Czas przeszły ż.: 'додала'. Polskie: 'dodała'. Porównaj: дод-ала / dod-ała — IDENTYCZNE! 'Фото' (zdjęcie/foto) — nieodmienne. 'Профіль' (profil) — identyczne. Media społecznościowe: 'лайк' (like/polubienie), 'підписатися' (zasubskrybować — pod+pisać się), 'коментар' (komentarz), 'поділитися' (udostępnić — po+dzielić się). Wiele terminów to zapożyczenia angielskie, identyczne w obu językach."
+      },
+      {
+        "id": "pu_ti12",
+        "question": "Мій брат працює _____ у великій IT-компанії.",
+        "translation": "(Mój brat pracuje programistą w dużej firmie IT.)",
+        "options": [
+          "програмістом",
+          "водієм",
+          "кухарем",
+          "лікарем"
+        ],
+        "correct": "програмістом",
+        "explanation": "'Програміст' (programista) — narzędnik: 'програмістом'. Polskie: 'programistą'. 'Працювати ким?' (pracować jako kto?) — narzędnik zawodu. Identycznie w polskim! 'У великій IT-компанії' (w dużej firmie IT) — miejscownik. 'IT-компанія' — hybrydowy termin: ang. 'IT' + 'компанія'. Inne zawody IT: 'тестувальник' (tester), 'аналітик' (analityk), 'дизайнер' (designer), 'менеджер проєктів' (project manager). Branża IT używa głównie angielskich terminów."
+      },
+      {
+        "id": "pu_ti13",
+        "question": "Потрібно _____ комп'ютер і увімкнути знову.",
+        "translation": "(Trzeba ponownie uruchomić komputer i włączyć ponownie.)",
+        "options": [
+          "перезавантажити",
+          "продати",
+          "купити",
+          "розібрати"
+        ],
+        "correct": "перезавантажити",
+        "explanation": "'Перезавантажити' (ponownie uruchomić/przeładować) — пере+за+вантажити. Polskie: 'przeładować' / 'zrestartować'. 'Увімкнути' (włączyć) — у+в+імкнути. Polskie: 'włączyć'. 'Знову' (znowu) — порównaj: знову / znowu — IDENTYCZNE! Prasłowiański rdzeń. Inne IT czynności: 'вимкнути' (wyłączyć), 'увімкнути' (włączyć), 'перезавантажити' (zrestartować). Para вимкнути/увімкнути = wyłączyć/włączyć jest fundamentalna w teknologii."
+      },
+      {
+        "id": "pu_ti14",
+        "question": "Він шукає інформацію в _____ для свого проєкту.",
+        "translation": "(On szuka informacji w internecie do swojego projektu.)",
+        "options": [
+          "інтернеті",
+          "книзі",
+          "газеті",
+          "журналі"
+        ],
+        "correct": "інтернеті",
+        "explanation": "'В інтернеті' (w internecie) — miejscownik: інтернет → інтернеті. Polskie: 'w internecie'. Identyczna odmiana i przyimek! 'Шукає інформацію' (szuka informacji) — UWAGA: ukr. 'шукати' + biernik (інформацію), pol. 'szukać' + dopełniacz (informacji). Różna rekcja! 'Для свого проєкту' (dla swojego projektu) — dopełniacz z 'для'. Polskie: 'dla swojego projektu'. 'Інформація' (informacja) — identyczne zapożyczenie z łaciny."
+      },
+      {
+        "id": "pu_ti15",
+        "question": "Ця _____ коштує занадто дорого.",
+        "translation": "(Ta gra komputerowa kosztuje za drogo.)",
+        "options": [
+          "гра",
+          "іграшка",
+          "забавка",
+          "програма"
+        ],
+        "correct": "гра",
+        "explanation": "'Гра' (gra) — porównaj: гр-а / gr-a — IDENTYCZNE! 'Коштувати' (kosztować) — porównaj: коштувати / kosztować — identyczny rdzeń! 'Занадто' (zanadto/za) — polskie: 'za' (nadmiernie). 'Дорого' (drogo) — порównaj: дорого / drogo — identyczne! Całe zdanie: гра коштує занадто дорого / gra kosztuje za drogo — niemal identyczne słowo po słowie. 'Комп'ютерна гра' (gra komputerowa), 'мобільна гра' (gra mobilna), 'онлайн-гра' (gra online)."
+      }
+    ]
+  },
+  {
+    "key": "weather_climate",
+    "name": "Погода і клімат",
+    "description": "Pogoda i klimat",
+    "iconName": "cloud.sun",
+    "color": "#38bdf8",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pu_wc1",
+        "question": "Сьогодні на вулиці дуже _____.",
+        "translation": "(Dzisiaj na dworze jest bardzo ciepło.)",
+        "options": [
+          "тепло",
+          "холодно",
+          "темно",
+          "тихо"
+        ],
+        "correct": "тепло",
+        "explanation": "'Тепло' (ciepło) — porównaj: тепло / ciepło — ten sam prasłowiański rdzeń! 'На вулиці' (na dworze/na ulicy) — dosłownie 'na ulicy', ale w kontekście pogody = 'na dworze'. W polskim: 'na dworze' (nie 'na ulicy'). Różnica w kolokacji! 'Сьогодні' (dzisiaj) — сього+дні (tego+dnia). Polskie: 'dzisiaj' — dzi+siaj. Inne temperatury: 'холодно' (zimno), 'спекотно' (upalnie), 'прохолодно' (chłodno). Pogoda to temat nr 1 w small talku."
+      },
+      {
+        "id": "pu_wc2",
+        "question": "Завтра обіцяють _____ з грозою.",
+        "translation": "(Na jutro zapowiadają deszcz z burzą.)",
+        "options": [
+          "дощ",
+          "сніг",
+          "вітер",
+          "сонце"
+        ],
+        "correct": "дощ",
+        "explanation": "'Дощ' (deszcz) — porównaj: дощ / deszcz — wspólny prasłowiański rdzeń! Różna ewolucja fonetyczna. 'Обіцяють' (obiecują/zapowiadają) — w kontekście pogody: 'zapowiadają'. Polskie: 'obiecują/zapowiadają'. 'З грозою' (z burzą) — narzędnik z 'з'. 'Гроза' (burza) — polskie: 'groza' (strach) — fałszywy przyjaciel! Ukraiński 'гроза' = 'burza'. Polskie 'groza' = 'lęk'. Inne: 'злива' (ulewa), 'мряка' (mżawka), 'зливний дощ' (ulewa)."
+      },
+      {
+        "id": "pu_wc3",
+        "question": "Взимку температура часто опускається нижче _____.",
+        "translation": "(Zimą temperatura często spada poniżej zera.)",
+        "options": [
+          "нуля",
+          "десяти",
+          "двадцяти",
+          "п'яти"
+        ],
+        "correct": "нуля",
+        "explanation": "'Нижче нуля' (poniżej zera) — dopełniacz: нуль → нуля. Polskie: 'poniżej zera' — też dopełniacz! 'Взимку' (zimą) — narzędnik pory roku. Polskie: 'zimą'. 'Опускається' (opuszcza się/spada) — porównaj: опускати-ся / spuszczać się / obniżać się. Prefiks 'o-' wspólny. UWAGA: ukraiński 'взимку' = 'zimą', ale także: 'влітку' (latem), 'восени' (jesienią), 'навесні' (wiosną). W polskim: narzędnik. W ukraińском: specjalne formy przysłówkowe."
+      },
+      {
+        "id": "pu_wc4",
+        "question": "На небі сьогодні жодної _____.",
+        "translation": "(Na niebie dzisiaj ani jednej chmury.)",
+        "options": [
+          "хмари",
+          "хмара",
+          "хмарою",
+          "хмарі"
+        ],
+        "correct": "хмари",
+        "explanation": "'Жодної хмари' (ani jednej chmury) — dopełniacz: хмара → хмари. 'Жодний' (żaden/ani jeden) — porównaj: жодн-ий / żadn-y — wspólny rdzeń! 'На небі' (na niebie) — miejscownik: небо → небі. Polskie: 'na niebie'. 'Небо' (niebo) — porównaj: неб-о / niob-o. 'Хмара' (chmura) — polskie: 'chmura'. Porównaj: хмар-а / chmur-a. Pogodowe niebo: 'хмарно' (pochmurnie), 'ясно' (jasno/pogodnie — порові: ясно/jasno), 'похмуро' (pochmurno)."
+      },
+      {
+        "id": "pu_wc5",
+        "question": "Сильний _____ зламав кілька дерев у парку.",
+        "translation": "(Silny wiatr połamał kilka drzew w parku.)",
+        "options": [
+          "вітер",
+          "дощ",
+          "сніг",
+          "мороз"
+        ],
+        "correct": "вітер",
+        "explanation": "'Вітер' (wiatr) — porównaj: вітер / wiatr — wspólny rdzeń! 'Сильний' (silny) — porównaj: сильн-ий / siln-y — IDENTYCZNE! 'Зламав' (złamał) — porównaj: злам-ав / złam-ał — IDENTYCZNE! Prefiks з-/z- + łam-. 'Кілька дерев' (kilka drzew) — 'дерева' → 'дерев' (dop. lm.). Polskie: 'drzewo' → 'drzew'. 'У парку' (w parku) — identyczne. Zdanie jest perfekcyjne do nauki — niemal każde słowo ma polski odpowiednik."
+      },
+      {
+        "id": "pu_wc6",
+        "question": "Після дощу на небі з'явилася _____.",
+        "translation": "(Po deszczu na niebie pojawiła się tęcza.)",
+        "options": [
+          "веселка",
+          "хмара",
+          "зірка",
+          "блискавка"
+        ],
+        "correct": "веселка",
+        "explanation": "'Веселка' (tęcza) — od 'веселий' (wesoły). Dosłownie: 'wesołka'! W polskim: 'tęcza'. Ukraiński ma poetyczniejszą nazwę — tęcza jest 'wesoła'! 'З'явилася' (pojawiła się) — з+явити+ся. Polskie: 'pojawiła się' — po+jawić się. 'Після дощу' (po deszczu) — dopełniacz z 'після'. Polskie: 'po deszczu'. Inne zjawiska atmosferyczne: 'блискавка' (błyskawica — порównaj: блискавк-а / błyskawic-a), 'грім' (grzmot), 'туман' (mgła/tuman)."
+      },
+      {
+        "id": "pu_wc7",
+        "question": "Вранці був густий _____, і нічого не було видно.",
+        "translation": "(Rano była gęsta mgła i nic nie było widać.)",
+        "options": [
+          "туман",
+          "дощ",
+          "сніг",
+          "вітер"
+        ],
+        "correct": "туман",
+        "explanation": "'Туман' (mgła/tuman) — polskie: 'tuman' (archaicznie) lub 'mgła'. 'Густий' (gęsty) — porównaj: густ-ий / gęst-y — wspólny rdzeń! 'Вранці' (rano) — od 'ранок' (poranek). 'Нічого не було видно' (nic nie było widać) — 'видно' (widać) — порównaj: виднo / widać — identyczne! Zdanie: 'нічого не було видно' / 'nic nie było widać' — identyczne słowo po słowie! Polak może zrozumieć ukraiński niemal dosłownie."
+      },
+      {
+        "id": "pu_wc8",
+        "question": "Влітку в Україні часто буває дуже _____.",
+        "translation": "(Latem na Ukrainie często bywa bardzo gorąco.)",
+        "options": [
+          "спекотно",
+          "холодно",
+          "вітряно",
+          "хмарно"
+        ],
+        "correct": "спекотно",
+        "explanation": "'Спекотно' (upalnie/gorąco) — od 'спека' (upał). Polskie: 'spiekota' — порównай: спек-а / spiekot-a — wspólny rdzeń! 'Влітку' (latem) — przysłówek pory roku. 'В Україні' (na Ukrainie) — UWAGA: w ukraińskim 'в Україні' (w Ukrainie), w polskim 'na Ukrainie'! To delikatna kwestia. 'Часто' (często) — порównay: часто / często — identyczne! 'Буває' (bywa) — порównaj: буває / bywa — identyczne! Rdzeń 'бу-/by-' wspólny."
+      },
+      {
+        "id": "pu_wc9",
+        "question": "Діти ліпили _____ у дворі після снігопаду.",
+        "translation": "(Dzieci lepiły bałwana na podwórku po opadach śniegu.)",
+        "options": [
+          "сніговика",
+          "сніг",
+          "кульку",
+          "кота"
+        ],
+        "correct": "сніговика",
+        "explanation": "'Сніговик' (bałwan śnieżny) — від 'сніг' (śnieg) + суфікс '-овик'. Biernik żywotny: 'сніговика'. W polskim: 'bałwan' (z turkijskiego). 'Ліпити' (lepić) — porównaj: ліпити / lepić — identyczny rdzeń! 'Снігопад' (opad śniegu) — сніг+опад (śnieg+opad). Polskie: 'opad śniegu'. Porównaj: снігопад = śnieg+opad. Inne zimowe zabawy: 'гратися в сніжки' (bawić się w śnieżki), 'кататися на санчатах' (jeździć na sankach). Zimowe słownictwo jest bliskie."
+      },
+      {
+        "id": "pu_wc10",
+        "question": "Сьогодні _____ градусів морозу.",
+        "translation": "(Dzisiaj jest piętnaście stopni mrozu.)",
+        "options": [
+          "п'ятнадцять",
+          "п'ять",
+          "двадцять",
+          "тридцять"
+        ],
+        "correct": "п'ятнадцять",
+        "explanation": "'П'ятнадцять градусів' (piętnaście stopni) — числebnik + dopełniacz lm. 'Градус' → 'градусів'. W polskim: 'piętnaście stopni'. 'Мороз' (mróz) — porównaj: мороз / mróz — identyczne! 'Градусів морозу' (stopni mrozu) — dopełniacz. Polskie: 'stopni mrozu'. Temperatura: '+15' = 'п'ятнадцять градусів тепла' (ciepła), '-15' = 'п'ятнадцять градусів морозу' (mrozu). W polskim: 'piętnaście stopni powyżej/poniżej zera'. Różny sposób wyrażania."
+      },
+      {
+        "id": "pu_wc11",
+        "question": "Восени листя на деревах стає _____.",
+        "translation": "(Jesienią liście na drzewach stają się żółte.)",
+        "options": [
+          "жовтим",
+          "зеленим",
+          "білим",
+          "синім"
+        ],
+        "correct": "жовтим",
+        "explanation": "'Жовтий' (żółty) — narzędnik: 'жовтим'. Porównaj: жовт-ий / żółt-y — identyczny rdzeń! 'Восени' (jesienią) — przysłówek pory roku. 'Листя' (liście) — zbiorowe: 'лист' (liść) → 'листя' (liście — zbiorowo). Polskie: 'liść' → 'liście'. 'На деревах' (na drzewach) — miejscownik lm. 'Стає' (staje się) — porównaj: стає / staje — identycznie! 'Стає жовтим' = 'staje się żółtym'. Jesienne kolory: 'червоний' (czerwony), 'оранжевий' (pomarańczowy)."
+      },
+      {
+        "id": "pu_wc12",
+        "question": "Прогноз _____ на вихідні обіцяє сонце.",
+        "translation": "(Prognoza pogody na weekend zapowiada słońce.)",
+        "options": [
+          "погоди",
+          "погода",
+          "погоду",
+          "погодою"
+        ],
+        "correct": "погоди",
+        "explanation": "'Прогноз погоди' (prognoza pogody) — dopełniacz: погода → погоди. Polskie: 'prognoza pogody' — też dopełniacz! Porównaj: прогноз погод-и / prognoz-a pogod-y — identyczne! 'На вихідні' (na weekend) — 'вихідні' (dosłownie: wyjściowe dni = dni wolne). Polskie: 'weekend'. 'Обіцяє сонце' (zapowiada/obiecuje słońce) — 'обіцяти' (obiecywać). 'Сонце' (słońce) — porównaj: сонц-е / słońc-e — identyczne! Sprawdzanie pogody — codzienna czynność."
+      },
+      {
+        "id": "pu_wc13",
+        "question": "Весною часто йдуть короткі _____.",
+        "translation": "(Wiosną często padają krótkie deszcze.)",
+        "options": [
+          "дощі",
+          "сніги",
+          "грози",
+          "тумани"
+        ],
+        "correct": "дощі",
+        "explanation": "'Дощі' (deszcze) — lm. od 'дощ'. 'Йдуть дощі' (padają deszcze / idą deszcze) — w ukraińskim deszcz 'chodzi/idzie' (як ludzie!). W polskim: deszcz 'pada'. Różna metafora! 'Весною' (wiosną) — narzędnik pory roku. Polskie: 'wiosną'. 'Короткі' (krótkie) — porównaj: коротк-і / krótk-ie — wspólny rdzeń! 'Часто' (często) — identyczne. Porównaj zdanie: Весною часто йдуть короткі дощі / Wiosną często padają krótkie deszcze — struktura podobna, metafora inna."
+      },
+      {
+        "id": "pu_wc14",
+        "question": "Цього року зима була дуже _____.",
+        "translation": "(W tym roku zima była bardzo łagodna.)",
+        "options": [
+          "м'якою",
+          "гарячою",
+          "спекотною",
+          "вітряною"
+        ],
+        "correct": "м'якою",
+        "explanation": "'М'яка зима' (łagodna/miękka zima) — narzędnik: 'м'якою'. W polskim: 'łagodna' lub 'miękka' (zima). 'М'який' (miękki) — porównaj: м'як-ий / miękk-i — identyczne! 'Цього року' (w tym roku/tego roku) — dopełniacz: цей → цього, рік → року. Polskie: 'tego roku' — тож допельнiacz! 'Була' (była) — ж.р. czasu przeszłego. Polskie: 'była'. Porównaj: бул-а / był-a — identyczne! Pogoda i klimat: 'сувора зима' (surowa zima), 'спекотне літо' (upalne lato)."
+      },
+      {
+        "id": "pu_wc15",
+        "question": "На вулиці _____ ожеледиця, будьте обережні!",
+        "translation": "(Na dworze jest gołoledź, bądźcie ostrożni!)",
+        "options": [
+          "утворилася",
+          "зникла",
+          "розтала",
+          "висохла"
+        ],
+        "correct": "утворилася",
+        "explanation": "'Утворилася ожеледиця' (utworzyła się gołoledź) — 'утворитися' (utworzyć się) — у+творити+ся. Polskie: 'utworzyć się'. 'Ожеледиця' (gołoledź) — порównaj: ожелед-иця. 'Будьте обережні' (bądźcie ostrożni) — tryb rozkazujący: 'бути' → 'будьте'. Porównaj: будьте / bądźcie — identyczne! 'Обережний' (ostrożny) — od 'берегти' (strzec). Ostrzeżenia pogodowe: 'штормове попередження' (ostrzeżenie sztormowe), 'сильний мороз' (silny mróz), 'повінь' (powódź)."
+      }
+    ]
+  },
+  {
+    "key": "housing_home",
+    "name": "Житло і дім",
+    "description": "Mieszkanie i dom",
+    "iconName": "house",
+    "color": "#facc15",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pu_hh1",
+        "question": "Ми _____ нову квартиру в центрі міста.",
+        "translation": "(Wynajęliśmy nowe mieszkanie w centrum miasta.)",
+        "options": [
+          "орендували",
+          "купили",
+          "продали",
+          "побудували"
+        ],
+        "correct": "орендували",
+        "explanation": "'Орендувати' (wynająć/arendować) — від 'оренда' (najem/arenda). Polskie: 'arenda' (archaicznie) → 'wynajem'. 'Квартира' (mieszkanie) — w polskim: 'kwatera' lub 'mieszkanie'. 'В центрі міста' (w centrum miasta) — miejscownik z 'в'. Polskie: 'w centrum miasta'. 'Місто' (miasto) — porównaj: міст-о / miast-o — identyczne! Inne: 'купити' (kupić), 'продати' (sprzedać), 'побудувати' (zbudować). Porównaj: побудувати / pobudować — identyczne!"
+      },
+      {
+        "id": "pu_hh2",
+        "question": "У нашій квартирі є три _____ і кухня.",
+        "translation": "(W naszym mieszkaniu są trzy pokoje i kuchnia.)",
+        "options": [
+          "кімнати",
+          "кімната",
+          "кімнат",
+          "кімнатою"
+        ],
+        "correct": "кімнати",
+        "explanation": "'Три кімнати' (trzy pokoje) — po 2, 3, 4 = mianownik lm.: кімната → кімнати. W polskim: 'trzy pokoje'. 'Кімната' (pokój/komnata) — polskie 'komnata' (archaicznie). 'Кухня' (kuchnia) — porównaj: кухн-я / kuchni-a — identyczne! 'У нашій квартирі' (w naszym mieszkaniu) — miejscownik. 'Є' (jest/są) — w ukraińskim 'є' jest UŻYWANE, w polskim często pomijane: 'są trzy pokoje' / 'є три кімнати'."
+      },
+      {
+        "id": "pu_hh3",
+        "question": "На кухні стоїть новий _____.",
+        "translation": "(W kuchni stoi nowa lodówka.)",
+        "options": [
+          "холодильник",
+          "стілець",
+          "стіл",
+          "диван"
+        ],
+        "correct": "холодильник",
+        "explanation": "'Холодильник' (lodówka/chłodziarka) — від 'холод' (chłód) + '-ильник'. Polskie: 'chłodziarka' lub 'lodówka'. 'Холод' (chłód) — porównaj: холод / chłód — wspólny rdzeń! 'Стоїть' (stoi) — porównaj: стоїть / stoi — identyczne! 'На кухні' (w kuchni) — miejscownik z 'на'. Polskie: 'w kuchni'. Sprzęty kuchenne: 'мікрохвильовка' (mikrofalówka), 'плита' (kuchenka), 'посудомийна машина' (zmywarka). Ukraiński tworzy nazwy opisowo."
+      },
+      {
+        "id": "pu_hh4",
+        "question": "Ми хочемо _____ стіни у вітальні.",
+        "translation": "(Chcemy pomalować ściany w salonie.)",
+        "options": [
+          "пофарбувати",
+          "зламати",
+          "прибрати",
+          "помити"
+        ],
+        "correct": "пофарбувати",
+        "explanation": "'Пофарбувати' (pomalować/pofarbować) — по+фарбувати. Polskie: 'pofarbować' lub 'pomalować'. Porównaj: по-фарб-увати / po-farb-ować — identyczny rdzeń 'farb-'! 'Стіни' (ściany) — lm. od 'стіна'. Porównaj: стін-а / ścian-a. 'У вітальні' (w salonie/w gościnnej) — 'вітальня' od 'вітати' (witać). Polskie: 'salon' lub 'pokój gościnny'. 'Вітальня' to dosłownie 'witalna' — pomieszczenie do witania gości. Inne: 'спальня' (sypialnia)."
+      },
+      {
+        "id": "pu_hh5",
+        "question": "Сусіди зверху дуже _____.",
+        "translation": "(Sąsiedzi z góry są bardzo głośni.)",
+        "options": [
+          "гучні",
+          "тихі",
+          "ввічливі",
+          "милі"
+        ],
+        "correct": "гучні",
+        "explanation": "'Гучний' (głośny/hałaśliwy) — від 'гук' (huk/dźwięk). Polskie: 'huk' → 'głośny'. 'Сусіди' (sąsiedzi) — porównaj: сусід-и / sąsiedz-i — wspólny rdzeń! 'Зверху' (z góry/zwyż) — з+верху. Polskie: 'z góry'. Inne: 'тихі' (cisi), 'ввічливі' (uprzejmi), 'милі' (mili — porównaj: мил-і / mil-i — identyczne!). Problem z hałaśliwymi sąsiadami jest uniwersalny. 'Сусідство' (sąsiedztwo) — identyczna budowa z polskim."
+      },
+      {
+        "id": "pu_hh6",
+        "question": "У ванній кімнаті потрібно замінити _____.",
+        "translation": "(W łazience trzeba wymienić kran.)",
+        "options": [
+          "кран",
+          "вікно",
+          "двері",
+          "підлогу"
+        ],
+        "correct": "кран",
+        "explanation": "'Кран' (kran) — identyczne zapożyczenie z niemieckiego. 'Ванна кімната' (łazienka) — dosłownie: 'pokój kąpielowy'. 'Ванна' od 'вана' (wanna). Polskie: 'łazienka'. 'Замінити' (zamienić/wymienić) — за+мінити. Polskie: 'zamienić' — za+mienić. Identyczne! 'Потрібно' (trzeba). Naprawy domowe: 'відремонтувати' (wyremontować), 'замінити' (wymienić/zamienić), 'полагодити' (naprawić). Porównaj: від-ремонтувати / wy-remontować."
+      },
+      {
+        "id": "pu_hh7",
+        "question": "Вона повісила нові _____ на вікна.",
+        "translation": "(Ona powiesiła nowe zasłony w oknach.)",
+        "options": [
+          "штори",
+          "картини",
+          "полиці",
+          "дзеркала"
+        ],
+        "correct": "штори",
+        "explanation": "'Штори' (zasłony/story) — від нім. 'Store'. Polskie: 'story' lub 'zasłony'. 'Повісила' (powiesiła) — по+вісити. Polskie: 'powiesiła'. Porównaj: по-вісил-а / po-wiesił-a — identyczne! 'На вікна' (w oknach/na okna) — biernik z 'на'. 'Вікно' (okno) — porównaj: вікн-о / okn-o — wspólny rdzeń! Elementy wnętrza: 'картина' (obraz/karta), 'полиця' (półka — порівняj: полиц-я / półk-a), 'дзеркало' (lustro/zwierciadło — спільний корінь!)."
+      },
+      {
+        "id": "pu_hh8",
+        "question": "На балконі ми посадили _____.",
+        "translation": "(Na balkonie posadziliśmy kwiaty.)",
+        "options": [
+          "квіти",
+          "дерева",
+          "овочі",
+          "гриби"
+        ],
+        "correct": "квіти",
+        "explanation": "'Квіти' (kwiaty) — lm. od 'квітка'. Porównaj: квіт-и / kwiat-y — wspólny rdzeń! 'Посадили' (posadzili) — по+садити. Polskie: 'posadzili' — porównaj: по-сад-или / po-sadz-ili — identyczne! 'На балконі' (na balkonie) — miejscownik. 'Балкон' (balkon) — identyczne zapożyczenie. Inne rośliny: 'дерева' (drzewa), 'овочі' (warzywa/owoce — FAŁSZYWY PRZYJACIEL! Ukr. 'овочі' = warzywa, pol. 'owoce' = фрукти). 'Гриби' (grzyby)."
+      },
+      {
+        "id": "pu_hh9",
+        "question": "Мій дідусь живе у старому _____ в селі.",
+        "translation": "(Mój dziadek mieszka w starym domu na wsi.)",
+        "options": [
+          "будинку",
+          "квартирі",
+          "хмарочосі",
+          "гуртожитку"
+        ],
+        "correct": "будинку",
+        "explanation": "'Будинок' (budynek/dom) — від 'будувати' (budować). Miejscownik: 'у будинку'. Polskie: 'budynek'. Porównaj: будин-ok / budyn-ek — identyczny rdzeń! 'Дідусь' (dziadek/dziaduś) — zdrobnienie od 'дід'. Polskie: 'dziadek/dziaduś'. 'У селі' (na wsi) — 'село' (wieś). Polskie: 'sioło' (archaicznie). Typy mieszkań: 'квартира' (mieszkanie), 'хмарочос' (wieżowiec — хмара+чос = chmura+czesacz!), 'гуртожиток' (akademik — гурт+ожиток = gromada+żytek)."
+      },
+      {
+        "id": "pu_hh10",
+        "question": "Треба _____ підлогу перед приходом гостей.",
+        "translation": "(Trzeba umyć podłogę przed przyjściem gości.)",
+        "options": [
+          "помити",
+          "зламати",
+          "покласти",
+          "відкрити"
+        ],
+        "correct": "помити",
+        "explanation": "'Помити' (pomyć/umyć) — по+мити. Polskie: 'pomyć'. Porównaj: по-ми-ти / po-my-ć — IDENTYCZNE! 'Підлога' (podłoga) — porównaj: підлог-а / podłog-a — IDENTYCZNE! 'Перед приходом' (przed przyjściem) — narzędnik z 'перед'. 'Прихід' (przyjście) — при+хід. Полське: 'przyjście' — przy+jście. 'Гостей' (gości) — dopełniacz lm.: гість → гостей. Polskie: 'gość' → 'gości'. Sprzątanie: 'прибрати' (uprzątnąć), 'пропилососити' (odkurzyć)."
+      },
+      {
+        "id": "pu_hh11",
+        "question": "У моїй кімнаті стоїть великий _____.",
+        "translation": "(W moim pokoju stoi duża szafa.)",
+        "options": [
+          "шафа",
+          "стілець",
+          "стіл",
+          "холодильник"
+        ],
+        "correct": "шафа",
+        "explanation": "'Шафа' (szafa) — porównaj: шаф-а / szaf-a — IDENTYCZNE! Zapożyczenie z niemieckiego 'Schrank' → 'szafa'. 'У моїй кімнаті' (w moim pokoju) — miejscownik: мій → моїй (ж.р.), кімната → кімнаті. 'Стоїть' (stoi). 'Великий' (wielki/duży). Meble: 'стіл' (stół — стіл/stół!), 'стілець' (krzesło — стілець z '-ець'), 'ліжко' (łóżko — porównaj: ліжк-о / łóżk-o!), 'диван' (kanapa), 'крісло' (fotel). Wiele nazw mebli jest identycznych!"
+      },
+      {
+        "id": "pu_hh12",
+        "question": "Вони щойно _____ до нового будинку.",
+        "translation": "(Oni właśnie przeprowadzili się do nowego domu.)",
+        "options": [
+          "переїхали",
+          "приїхали",
+          "поїхали",
+          "виїхали"
+        ],
+        "correct": "переїхали",
+        "explanation": "'Переїхати' (przeprowadzić się) — пере+їхати. Polskie: 'prze+jechać' / 'prze+prowadzić się'. Prefiks 'пере-' = 'prze-'. 'Щойно' (właśnie/dopiero co). Polskie: 'właśnie'. 'До нового будинку' (do nowego domu) — dopełniacz z 'до'. Inne czasowniki ruchu z domem: 'виїхати' (wyprowadzić się — ви+їхати), 'заїхати' (wjechać), 'приїхати' (przyjechać). System prefiksów ruchu: при-/при- (do), ви-/wy- (z), пере-/prze- (przez)."
+      },
+      {
+        "id": "pu_hh13",
+        "question": "У підвалі нашого будинку є _____.",
+        "translation": "(W piwnicy naszego domu jest garaż.)",
+        "options": [
+          "гараж",
+          "басейн",
+          "сад",
+          "балкон"
+        ],
+        "correct": "гараж",
+        "explanation": "'Гараж' (garaż) — identyczne zapożyczenie z francuskiego. 'Підвал' (piwnica/podwał) — від 'під' + 'вал'. Polskie: 'piwnica'. 'Нашого будинку' (naszego domu) — dopełniacz: наш → нашого, будинок → будинку. Polskie: 'naszego domu'. Części domu: 'дах' (dach — порівняй: дах / dach — IDENTYCZNE!), 'стіна' (ściana), 'підлога' (podłoga), 'стеля' (sufit), 'фундамент' (fundament). Architektoniczne słownictwo ma wiele wspólnych elementów."
+      },
+      {
+        "id": "pu_hh14",
+        "question": "Сусідка попросила _____ цукру.",
+        "translation": "(Sąsiadka poprosiła o trochę cukru.)",
+        "options": [
+          "трохи",
+          "багато",
+          "мало",
+          "кілограм"
+        ],
+        "correct": "трохи",
+        "explanation": "'Трохи' (trochę/troszki) — porównaj: трох-и / troch-ę — identyczny rdzeń! 'Сусідка' (sąsiadka) — ж.р. od 'сусід'. Porównaj: сусідк-а / sąsiadk-a. 'Попросила' (poprosiła) — по+просити. Porównaj: по-просил-а / po-prosił-a — IDENTYCZNE! 'Цукру' (cukru) — dopełniacz: цукор → цукру. Polskie: 'cukier' → 'cukru'. Identyczny! Proszenie sąsiadów o produkty — typowa sytuacja sąsiedzka. 'Трохи цукру' = 'trochę cukru' — perfekcyjna para."
+      },
+      {
+        "id": "pu_hh15",
+        "question": "Ми встановили нове _____ у спальні.",
+        "translation": "(Zamontowaliśmy nowe oświetlenie w sypialni.)",
+        "options": [
+          "освітлення",
+          "вікно",
+          "ліжко",
+          "дзеркало"
+        ],
+        "correct": "освітлення",
+        "explanation": "'Освітлення' (oświetlenie) — о+світл+ення. Polskie: 'oświetlenie' — o+świetl+enie. IDENTYCZNE! Rdzeń 'світл-/świetl-' od 'світло/światło' (światło). 'Встановити' (zamontować/zainstalować) — в+становити. Polskie: 'wstawić/zamontować'. 'У спальні' (w sypialni) — 'спальня' (sypialnia) — від 'спати' (spać). Порівняй: спальн-я / sypialni-a — wspólny rdzeń 'спат/спат'. Elementy domu: 'лампа' (lampa), 'люстра' (żyrandol), 'бра' (kinkiet)."
+      }
+    ]
   }
 ]

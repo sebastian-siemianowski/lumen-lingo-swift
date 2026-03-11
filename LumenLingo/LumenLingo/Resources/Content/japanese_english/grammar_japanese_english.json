@@ -19883,5 +19883,1645 @@
         "explanation": "'take someone to ~'は「〜を（場所に）連れて行く」の定型表現です。'take to school'は学校に送る日常的な動作です。'take'は話し手の場所から離れる方向、'bring'は話し手に近づく方向です。この区別は日本語の「持っていく」と「持ってくる」に似ています。'carry'は運ぶ（物理的に抱える）、'lead'は導くです。日本語の「連れて行く」にそのまま対応する動詞で、家族の日常ルーティンを表す最も基本的な表現です。"
       }
     ]
+  },
+  {
+    "key": "reported_speech_advanced",
+    "name": "Reported Speech (Advanced)",
+    "description": "上級間接話法",
+    "iconName": "quote.bubble.fill",
+    "color": "#fb923c",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "je_rsa1",
+        "question": "She demanded that he _____ immediately.",
+        "translation": "(彼女は彼がすぐに去るよう要求した)",
+        "options": [
+          "leave",
+          "left",
+          "leaves",
+          "leaving"
+        ],
+        "correct": "leave",
+        "explanation": "間接話法の上級パターンとして、'demand that + 主語 + 動詞の原形'があります。これは仮定法現在（subjunctive）と呼ばれ、要求・提案・命令の動詞の後に使われます。日本語では「去るよう要求した」と普通に表現しますが、英語では'demand/suggest/insist that + 原形'という特殊な構文を使います。'She demanded that he leaves'は文法的に誤りです。この仮定法現在はフォーマルな英語で頻繁に使用されます。"
+      },
+      {
+        "id": "je_rsa2",
+        "question": "He suggested that we _____ early.",
+        "translation": "(彼は私たちが早く出発することを提案した)",
+        "options": [
+          "start",
+          "started",
+          "starts",
+          "starting"
+        ],
+        "correct": "start",
+        "explanation": "'suggest that + 主語 + 動詞の原形'は仮定法現在の代表的な用法です。主語が何であっても動詞は原形を使います。'He suggested that we start'（私たちが出発することを提案した）。日本語の「提案した」には特別な動詞形はありませんが、英語ではこの構文で三人称単数でも's'がつきません。'suggest that she go'（彼女が行くことを提案する）のように。アメリカ英語で特に一般的で、イギリス英語では'should start'も可能です。"
+      },
+      {
+        "id": "je_rsa3",
+        "question": "The teacher insisted that every student _____ the assignment.",
+        "translation": "(先生はすべての生徒が課題を提出するよう主張した)",
+        "options": [
+          "submit",
+          "submitted",
+          "submits",
+          "submitting"
+        ],
+        "correct": "submit",
+        "explanation": "'insist that + 主語 + 動詞の原形'も仮定法現在のパターンです。'every student'は三人称単数ですが、仮定法現在では原形'submit'を使います。'submits'は誤りです。日本語の「提出するよう主張した」を英語にする際、この特殊な構文に注意が必要です。他の仮定法現在を取る動詞：'recommend'、'propose'、'request'、'urge'、'require'。フォーマルなビジネスや学術文書で頻出します。"
+      },
+      {
+        "id": "je_rsa4",
+        "question": "She asked me what I _____ doing the following weekend.",
+        "translation": "(彼女は次の週末に何をする予定か聞いた)",
+        "options": [
+          "would be",
+          "will be",
+          "am",
+          "was"
+        ],
+        "correct": "would be",
+        "explanation": "間接話法で未来の計画を報告する場合、'will'は'would'に変わります。また、時間表現も変化します：'next weekend'→'the following weekend'。'She asked me what I would be doing the following weekend'が正しい間接話法です。直接話法'What will you be doing next weekend?'がこのように変化します。日本語では時制の一致が厳密ではありませんが、英語の間接話法では全ての時制を一段過去にずらす必要があります。"
+      },
+      {
+        "id": "je_rsa5",
+        "question": "He wondered whether she _____ the news yet.",
+        "translation": "(彼は彼女がそのニュースをもう聞いたかどうか疑問に思った)",
+        "options": [
+          "had heard",
+          "has heard",
+          "heard",
+          "hears"
+        ],
+        "correct": "had heard",
+        "explanation": "'wonder whether/if'は間接疑問文を導く表現です。直接話法'Has she heard the news?'（現在完了）が間接話法では過去完了'had heard'に変わります。'whether'は'if'と同じ意味で使えますが、よりフォーマルな表現です。時制の一致ルール：現在完了→過去完了。日本語では「聞いたかどうか」と時制変化なしで表現できますが、英語の間接話法では報告動詞が過去形の場合、全ての時制を一段過去にシフトさせます。"
+      },
+      {
+        "id": "je_rsa6",
+        "question": "The manager told us _____ work overtime.",
+        "translation": "(マネージャーは残業しないように言った)",
+        "options": [
+          "not to",
+          "don't",
+          "to not",
+          "not"
+        ],
+        "correct": "not to",
+        "explanation": "間接話法で否定の命令を報告する場合、'not to + 動詞の原形'を使います。直接話法'Don't work overtime'が間接話法では'told us not to work overtime'になります。'told us to not work'は口語では聞かれますが、正式には'not to'の語順が正しいです。日本語の「しないように言った」を英語にする際、'tell + 人 + not to + 動詞'のパターンを使います。命令の間接話法は日常ビジネスで非常に頻繁に使われます。"
+      },
+      {
+        "id": "je_rsa7",
+        "question": "She complained that the room _____ too cold.",
+        "translation": "(彼女は部屋が寒すぎると不満を言った)",
+        "options": [
+          "was",
+          "is",
+          "has been",
+          "were"
+        ],
+        "correct": "was",
+        "explanation": "'complain that...'は不満を間接的に報告する動詞です。直接話法'The room is too cold'が間接話法では'the room was too cold'に変わります。報告動詞が過去形'complained'なので、時制の一致により'is'→'was'となります。ただし、現在もまだ寒い場合は'is'のままでも文法的には許容されます。日本語では「寒すぎると不満を言った」で時制は変わりませんが、英語では報告の時制に合わせる必要があります。"
+      },
+      {
+        "id": "je_rsa8",
+        "question": "He reminded me that the meeting _____ at 3 p.m.",
+        "translation": "(彼は会議が午後3時に始まることを思い出させてくれた)",
+        "options": [
+          "started",
+          "starts",
+          "start",
+          "starting"
+        ],
+        "correct": "started",
+        "explanation": "'remind + 人 + that...'は「〜ということを思い出させる」という間接話法のパターンです。報告動詞'reminded'が過去形なので、時制の一致により'starts'→'started'になります。ただし、まだ未来の事実であれば'starts'も使えます。日本語の「始まることを思い出させた」には時制変化がありませんが、英語では厳密なルールがあります。ビジネスメールでは'I would like to remind you that...'のようによく使われる表現です。"
+      },
+      {
+        "id": "je_rsa9",
+        "question": "She _____ having taken the last piece of cake.",
+        "translation": "(彼女は最後のケーキを取ったことを否定した)",
+        "options": [
+          "denied",
+          "refused",
+          "rejected",
+          "declined"
+        ],
+        "correct": "denied",
+        "explanation": "'deny + 動名詞'は「〜したことを否定する」という間接話法の特殊パターンです。'deny having taken'は完了動名詞で「取ったことを否定する」です。'refuse'は「拒否する」で異なる意味です。'reject'は「却下する」、'decline'は「丁重に断る」です。日本語の「否定した」に対応するのは'deny'のみです。'deny'の後には動名詞が来る（不定詞は不可）という文法規則も重要です。法的・公式な場面でよく使われます。"
+      },
+      {
+        "id": "je_rsa10",
+        "question": "The witness claimed that he _____ anywhere near the scene.",
+        "translation": "(証人は現場の近くにはいなかったと主張した)",
+        "options": [
+          "hadn't been",
+          "hasn't been",
+          "wasn't",
+          "isn't"
+        ],
+        "correct": "hadn't been",
+        "explanation": "'claim that...'は「〜と主張する」という間接話法の動詞です。元の発言'I haven't been anywhere near the scene'（現在完了の否定）が間接話法で過去完了'hadn't been'に変化します。'claim'は事実かどうか不確かな主張を報告するときに使います。'say'や'tell'よりも「信憑性に疑問がある」というニュアンスを含みます。ニュース報道や法的文脈で頻繁に使われる重要な報告動詞です。"
+      },
+      {
+        "id": "je_rsa11",
+        "question": "He warned us _____ the contaminated water.",
+        "translation": "(彼は汚染された水を飲まないよう警告した)",
+        "options": [
+          "not to drink",
+          "don't drink",
+          "to not drink",
+          "not drinking"
+        ],
+        "correct": "not to drink",
+        "explanation": "'warn + 人 + not to + 動詞'は警告の間接話法です。直接話法'Don't drink the contaminated water!'が間接話法では'warned us not to drink'となります。'warn'は危険を知らせる動詞で、'tell'より緊急性が高いニュアンスがあります。否定の間接命令では'not to'の語順が標準です。日本語の「飲まないよう警告した」は自然ですが、英語ではこの特定の構文パターンに従う必要があります。安全指示やリスク伝達で頻出します。"
+      },
+      {
+        "id": "je_rsa12",
+        "question": "She promised that she _____ help us the next day.",
+        "translation": "(彼女は翌日私たちを手伝うと約束した)",
+        "options": [
+          "would",
+          "will",
+          "could",
+          "should"
+        ],
+        "correct": "would",
+        "explanation": "間接話法で'promise'を使う場合、'will'は'would'に変わり、'tomorrow'は'the next day/the following day'に変わります。この二重の変化は間接話法の核心です。直接話法'I will help you tomorrow'→間接話法'She promised she would help us the next day'。日本語では「翌日手伝うと約束した」と単純ですが、英語では時制と時間表現の両方を変換する必要があります。正確な間接話法は上級英語の重要なスキルです。"
+      },
+      {
+        "id": "je_rsa13",
+        "question": "The doctor recommended that she _____ more rest.",
+        "translation": "(医者は彼女がもっと休息を取るよう勧めた)",
+        "options": [
+          "get",
+          "got",
+          "gets",
+          "getting"
+        ],
+        "correct": "get",
+        "explanation": "'recommend that + 主語 + 動詞の原形'は仮定法現在です。医者の助言を報告する典型的な場面です。三人称単数'she'でも原形'get'を使います。'recommend that she gets'は非標準です。日本語の「休息を取るよう勧めた」には特別な動詞形はありませんが、英語のフォーマルな提案・助言文では仮定法現在が必須です。医療、ビジネス、学術環境で「recommend that」構文は極めて頻繁に使われる表現です。"
+      },
+      {
+        "id": "je_rsa14",
+        "question": "He accused her _____ the money.",
+        "translation": "(彼は彼女がお金を盗んだと非難した)",
+        "options": [
+          "of stealing",
+          "to steal",
+          "for stealing",
+          "stealing"
+        ],
+        "correct": "of stealing",
+        "explanation": "'accuse + 人 + of + 動名詞'は「〜したと非難する」という間接話法の特殊構文です。前置詞'of'を使う点に注意してください。'accuse her of stealing'が正しく、'accuse her to steal'や'accuse her for stealing'は誤りです。同様のパターン：'blame someone for doing'、'congratulate someone on doing'。日本語の「盗んだと非難した」を英語にする際、動詞ごとに異なる前置詞パターンを覚える必要があります。法的な文脈で頻出する重要表現です。"
+      },
+      {
+        "id": "je_rsa15",
+        "question": "The chairperson proposed that the meeting _____ postponed.",
+        "translation": "(議長は会議を延期することを提案した)",
+        "options": [
+          "be",
+          "was",
+          "is",
+          "would be"
+        ],
+        "correct": "be",
+        "explanation": "'propose that + 主語 + be + 過去分詞'は仮定法現在の受動態です。'propose that the meeting be postponed'で「会議が延期されることを提案する」。'was'や'is'ではなく原形'be'を使うのが仮定法現在のルールです。これは非常にフォーマルな表現で、取締役会や公式会議で使われます。日本語の「延期することを提案した」は受動態を使いませんが、英語ではフォーマルな場面で仮定法現在＋受動態の組み合わせが好まれます。"
+      }
+    ]
+  },
+  {
+    "key": "passive_voice_advanced",
+    "name": "Passive Voice (Advanced)",
+    "description": "上級受動態表現",
+    "iconName": "arrow.left.arrow.right.circle",
+    "color": "#a78bfa",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "je_pva2_1",
+        "question": "The building is believed _____ over 500 years old.",
+        "translation": "(その建物は500年以上前のものだと信じられている)",
+        "options": [
+          "to be",
+          "being",
+          "that is",
+          "is"
+        ],
+        "correct": "to be",
+        "explanation": "上級受動態の重要パターン：'It is believed that the building is...'を主語を変えて'The building is believed to be...'と書き換えられます。これは「人々は〜と信じている」の受動態で、ニュースや学術文で頻繁に使われます。日本語の「〜と信じられている」にそのまま対応します。同じパターン：'is thought to be'、'is known to be'、'is said to be'。このように主語を前に出すと文がより簡潔で洗練されます。"
+      },
+      {
+        "id": "je_pva2_2",
+        "question": "She is said _____ the best surgeon in the country.",
+        "translation": "(彼女はその国で一番の外科医だと言われている)",
+        "options": [
+          "to be",
+          "being",
+          "that she is",
+          "as"
+        ],
+        "correct": "to be",
+        "explanation": "'is said to be'は「〜と言われている」という受動態表現です。'People say she is the best surgeon'→'She is said to be the best surgeon'と変換できます。この構造は事実を客観的に提示するのに使われ、ジャーナリズムや学術論文で極めて一般的です。日本語の「〜と言われている」に自然に対応しますが、英語では'to be'不定詞を使う点が特徴です。報告する内容が過去なら'is said to have been'になります。"
+      },
+      {
+        "id": "je_pva2_3",
+        "question": "He was made _____ for three hours.",
+        "translation": "(彼は3時間待たされた)",
+        "options": [
+          "to wait",
+          "wait",
+          "waiting",
+          "waited"
+        ],
+        "correct": "to wait",
+        "explanation": "'make someone do'（使役）の受動態では'to'が復活します。能動態'They made him wait'→受動態'He was made to wait'。能動態では'make + 人 + 原形'ですが、受動態では'be made + to + 動詞'となります。この'to'の復活は英語学習者がよく見落とすポイントです。日本語の「待たされた」は受動の使役形で一語で表現できますが、英語では'was made to wait'という構造が必要です。使役受動態は苦情やネガティブな経験を述べるときに使います。"
+      },
+      {
+        "id": "je_pva2_4",
+        "question": "The project is expected _____ by next month.",
+        "translation": "(そのプロジェクトは来月までに完了すると予想されている)",
+        "options": [
+          "to be completed",
+          "completing",
+          "to complete",
+          "completed"
+        ],
+        "correct": "to be completed",
+        "explanation": "'is expected to be completed'は受動態＋不定詞＋受動態という二重構造です。'People expect that the project will be completed'→'The project is expected to be completed'。この文は主語が行為を受ける側なので受動の不定詞'to be completed'を使います。ビジネスのプロジェクト管理で「〜完了予定」を表す際に非常によく使われます。日本語の「完了すると予想されている」に対応する自然なビジネス英語表現です。"
+      },
+      {
+        "id": "je_pva2_5",
+        "question": "The suspect is reported _____ the country.",
+        "translation": "(容疑者は国外に逃亡したと報じられている)",
+        "options": [
+          "to have fled",
+          "to flee",
+          "fleeing",
+          "fled"
+        ],
+        "correct": "to have fled",
+        "explanation": "'is reported to have + 過去分詞'は報告された事実が現在より前に起きた場合に使います。「逃亡した」（過去の行為）が現在報告されているので、完了不定詞'to have fled'を使います。単純に'to flee'にすると「今逃亡する予定」の意味になってしまいます。日本語の「逃亡したと報じられている」では時制の複雑さは見えませんが、英語では完了不定詞で時間関係を正確に表現する必要があります。ニュース報道で頻出する構文です。"
+      },
+      {
+        "id": "je_pva2_6",
+        "question": "The new policy needs _____.",
+        "translation": "(新しい方針は見直す必要がある)",
+        "options": [
+          "to be reviewed",
+          "review",
+          "be reviewed",
+          "reviewing"
+        ],
+        "correct": "to be reviewed",
+        "explanation": "'need to be + 過去分詞'は「〜される必要がある」という受動の必要性を表します。'The policy needs to be reviewed'は格式的な表現です。口語では'needs reviewing'も可能ですが、フォーマルな場面では'needs to be reviewed'が好まれます。日本語の「見直す必要がある」は主語が人でなくても自然ですが、英語では物が主語の場合、受動態で「される必要がある」と表現します。ビジネスや行政の文脈で日常的に使われます。"
+      },
+      {
+        "id": "je_pva2_7",
+        "question": "The children were not allowed _____ outside.",
+        "translation": "(子どもたちは外で遊ぶことを許されなかった)",
+        "options": [
+          "to play",
+          "playing",
+          "play",
+          "played"
+        ],
+        "correct": "to play",
+        "explanation": "'allow someone to do'の受動態は'be allowed to do'です。能動態'They didn't allow the children to play outside'→受動態'The children were not allowed to play outside'。'allow'は受動態で非常によく使われる動詞で、規則やルールを述べる場面で頻出します。'Smoking is not allowed here'（ここでは喫煙は許されていません）も同じパターンです。日本語の「許されなかった」に直接対応する実用的な表現です。"
+      },
+      {
+        "id": "je_pva2_8",
+        "question": "The students were seen _____ in the library.",
+        "translation": "(学生たちは図書館で勉強しているのを目撃された)",
+        "options": [
+          "studying",
+          "to study",
+          "study",
+          "studied"
+        ],
+        "correct": "studying",
+        "explanation": "知覚動詞'see'の受動態では、原形か-ing形を使います。'studying'は行為の最中を表し、「勉強しているところを目撃された」という意味です。'to study'は文法的に不自然です。能動態'Someone saw the students studying'→受動態'The students were seen studying'。知覚動詞（see, hear, notice, observe）は受動態特有のルールがあり、行為の進行を表す場合は-ing形を使います。日本語の目撃表現に近い自然な構文です。"
+      },
+      {
+        "id": "je_pva2_9",
+        "question": "It is thought that the universe _____ about 13.8 billion years ago.",
+        "translation": "(宇宙は約138億年前に始まったと考えられている)",
+        "options": [
+          "began",
+          "begins",
+          "has begun",
+          "begin"
+        ],
+        "correct": "began",
+        "explanation": "'It is thought that...'は「〜と考えられている」という非人称受動態構文です。この形式は客観的な事実や学説を述べる際に使われ、学術論文やニュース記事で極めて頻繁に登場します。宇宙の誕生は過去の一回の出来事なので過去形'began'を使います。'It is thought/believed/known/estimated that...'は全て同じパターンです。日本語の「〜と考えられている」にそのまま対応する科学的・学術的文書の基本表現です。"
+      },
+      {
+        "id": "je_pva2_10",
+        "question": "The letter hasn't been _____ yet.",
+        "translation": "(その手紙はまだ届けられていない)",
+        "options": [
+          "delivered",
+          "delivering",
+          "deliver",
+          "delivery"
+        ],
+        "correct": "delivered",
+        "explanation": "現在完了の受動態は'have/has + been + 過去分詞'です。'hasn't been delivered'は「まだ届けられていない」という未完了の受動を表します。'yet'は否定文で「まだ」を意味し、現在完了と組み合わせて使います。日本語の「まだ届けられていない」は受動と未完了が自然に表現されますが、英語では'have been + 過去分詞'という三語の組み合わせが必要です。日常生活で荷物や書類の状況を確認する際に頻繁に使われます。"
+      },
+      {
+        "id": "je_pva2_11",
+        "question": "The old house is being _____.",
+        "translation": "(その古い家は改装されている最中です)",
+        "options": [
+          "renovated",
+          "renovating",
+          "renovate",
+          "renovation"
+        ],
+        "correct": "renovated",
+        "explanation": "現在進行形の受動態は'is/are + being + 過去分詞'です。'is being renovated'は「現在改装されている最中」という進行中の受動を表します。'is renovated'（単純現在受動）は「定期的に改装される」という反復の意味になり異なります。日本語の「改装されている最中」を正確に英語にするには進行受動態が必要です。この構文は工事、修理、変更が進行中であることを報告する際にビジネスや日常で頻繁に使われます。"
+      },
+      {
+        "id": "je_pva2_12",
+        "question": "He is known _____ a generous person.",
+        "translation": "(彼は寛大な人として知られている)",
+        "options": [
+          "to be",
+          "as being",
+          "being",
+          "for"
+        ],
+        "correct": "to be",
+        "explanation": "'is known to be'は「〜であると知られている」という評判を表す受動態です。'People know him to be generous'→'He is known to be generous'。'is known as'は「〜として知られている」で名称やタイトルに使い、'is known for'は「〜で知られている」で理由に使います。日本語の「〜として知られている」にはこの三つの違いがありませんが、英語では前置詞や構文で微妙にニュアンスが異なります。人物紹介や推薦文でよく使われます。"
+      },
+      {
+        "id": "je_pva2_13",
+        "question": "By the time we arrived, the cake had already been _____.",
+        "translation": "(私たちが着いた時、ケーキはもう食べられていた)",
+        "options": [
+          "eaten",
+          "eating",
+          "eat",
+          "ate"
+        ],
+        "correct": "eaten",
+        "explanation": "過去完了の受動態は'had + been + 過去分詞'です。'had already been eaten'は「すでに食べられていた」という過去のある時点より前に完了した受動を表します。二つの過去の出来事の時間関係を明確にする構文です。「着いた時」（過去）→「食べられた」（それ以前）。日本語では「もう食べられていた」と単純に表現できますが、英語では過去完了受動態で時系列を正確に示す必要があります。"
+      },
+      {
+        "id": "je_pva2_14",
+        "question": "The issue ought to be _____ seriously.",
+        "translation": "(その問題は真剣に扱われるべきだ)",
+        "options": [
+          "taken",
+          "taking",
+          "take",
+          "took"
+        ],
+        "correct": "taken",
+        "explanation": "助動詞＋受動態は'助動詞 + be + 過去分詞'の形です。'ought to be taken'は「扱われるべきだ」という義務の受動態です。同様に：'should be done'、'must be completed'、'can be fixed'、'will be delivered'。助動詞の後は常に'be + 過去分詞'という形になります。日本語の「扱われるべきだ」にそのまま対応します。助動詞と受動態の組み合わせはビジネスや公式文書で必須のスキルで、改善提案や方針文書で頻繁に使われます。"
+      },
+      {
+        "id": "je_pva2_15",
+        "question": "The report is supposed to _____ by Friday.",
+        "translation": "(そのレポートは金曜日までに提出されることになっている)",
+        "options": [
+          "be submitted",
+          "submit",
+          "be submitting",
+          "have submit"
+        ],
+        "correct": "be submitted",
+        "explanation": "'is supposed to be + 過去分詞'は「〜されることになっている」という予定・期待の受動態です。'be submitted'で「提出される」。'supposed to'は義務や期待を表し、受動態と組み合わせることで「〜されるはず」の意味になります。日本語の「提出されることになっている」に正確に対応します。'is supposed to'は日常英語で非常によく使われ、予定や規則を述べる際の定番表現です。期限を伴うビジネスコミュニケーションで特に重要です。"
+      }
+    ]
+  },
+  {
+    "key": "relative_clauses_advanced",
+    "name": "Relative Clauses (Advanced)",
+    "description": "上級関係節",
+    "iconName": "link.circle",
+    "color": "#2dd4bf",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "je_rca1",
+        "question": "The woman, _____ husband is a doctor, lives next door.",
+        "translation": "(夫が医者である女性は隣に住んでいる)",
+        "options": [
+          "whose",
+          "who's",
+          "which",
+          "whom"
+        ],
+        "correct": "whose",
+        "explanation": "'whose'は所有を表す関係代名詞で、人にも物にも使えます。'whose husband'は「その人の夫」で、先行詞'the woman'の所有関係を示します。'who's'は'who is'の短縮形で全く別物です。日本語の「夫が医者である女性」は自然ですが、英語では関係代名詞'whose'でこの所有関係を表現します。コンマで囲まれた非制限用法で、付加的な情報を提供しています。'whose'は中級から上級への重要なステップです。"
+      },
+      {
+        "id": "je_rca2",
+        "question": "The city _____ which I was born is very small.",
+        "translation": "(私が生まれた街はとても小さい)",
+        "options": [
+          "in",
+          "at",
+          "on",
+          "from"
+        ],
+        "correct": "in",
+        "explanation": "'前置詞 + which'は上級関係節のパターンです。'in which I was born'は'I was born in the city'の関係節化です。'which I was born in'とも言えますが、'in which'の方がフォーマルです。日本語の「生まれた街」は単純ですが、英語では前置詞の位置が重要になります。この構文はフォーマルな文書や学術論文で好まれます。前置詞を関係代名詞の前に置くことで文が洗練された印象を与えます。どの前置詞を使うかは元の文に依存します。"
+      },
+      {
+        "id": "je_rca3",
+        "question": "She has two brothers, both of _____ are engineers.",
+        "translation": "(彼女には兄弟が二人いて、二人とも技師です)",
+        "options": [
+          "whom",
+          "which",
+          "who",
+          "them"
+        ],
+        "correct": "whom",
+        "explanation": "'both of whom'は人を先行詞とする分量詞付き関係代名詞です。'of'の後では目的格'whom'を使います。同様のパターン：'some of whom'、'many of whom'、'none of whom'。日本語の「二人とも〜」は関係節を使わず表現できますが、英語ではこのような構文で二つの文を一つに結合します。非制限用法（コンマ付き）で追加情報を提供しています。フォーマルな文章やビジネス文書で頻繁に使われる洗練された表現です。"
+      },
+      {
+        "id": "je_rca4",
+        "question": "The reason _____ she left is still unknown.",
+        "translation": "(彼女が去った理由はまだわからない)",
+        "options": [
+          "why",
+          "which",
+          "that",
+          "because"
+        ],
+        "correct": "why",
+        "explanation": "'the reason why'は「〜の理由」を表す関係副詞の用法です。'why'は理由を表す関係副詞で、先行詞'the reason'と共に使われます。'the reason that'や'the reason for which'も可能ですが、'the reason why'が最も自然です。日本語の「彼女が去った理由」をそのまま英語に置き換えられます。関係副詞には'where'（場所）、'when'（時間）、'why'（理由）があり、それぞれ特定の先行詞と結びつきます。"
+      },
+      {
+        "id": "je_rca5",
+        "question": "This is the hotel _____ we stayed last summer.",
+        "translation": "(これは去年の夏に泊まったホテルです)",
+        "options": [
+          "where",
+          "which",
+          "that",
+          "when"
+        ],
+        "correct": "where",
+        "explanation": "'where'は場所を表す関係副詞です。'where we stayed'は'we stayed at the hotel'の関係節化で、前置詞'at'が不要になります。'which we stayed at'や'at which we stayed'も可能ですが、'where'がより自然です。日本語の「泊まったホテル」は関係節の基本的な使い方です。場所の先行詞（hotel, city, country, place等）には'where'を使うことで、文がすっきりと分かりやすくなります。旅行の話題で頻繁に使われます。"
+      },
+      {
+        "id": "je_rca6",
+        "question": "He did nothing, _____ made the situation worse.",
+        "translation": "(彼は何もしなかった、それが事態を悪化させた)",
+        "options": [
+          "which",
+          "that",
+          "what",
+          "who"
+        ],
+        "correct": "which",
+        "explanation": "先行詞が文全体の場合、関係代名詞'which'を使います。ここでの'which'は'he did nothing'という文全体（節全体）を指しています。'that'は文全体を先行詞にすることができないため使えません。日本語の「それが事態を悪化させた」の「それ」に相当します。非制限用法（コンマ＋which）で前の文全体を受けるパターンは上級英語で非常に重要で、エッセイや報告書で論理的なつながりを示すのに使います。"
+      },
+      {
+        "id": "je_rca7",
+        "question": "The day _____ we first met was unforgettable.",
+        "translation": "(初めて出会った日は忘れられない)",
+        "options": [
+          "when",
+          "which",
+          "where",
+          "that"
+        ],
+        "correct": "when",
+        "explanation": "'when'は時間を表す関係副詞です。先行詞'the day'を修飾して「私たちが初めて出会った日」を表します。'on which we first met'でも同じ意味ですが、'when'の方が自然で簡潔です。日本語の「出会った日」は関係節の基本的な用法です。時間の先行詞（day, time, year, moment等）には'when'を使います。「初めて出会った日は忘れられない」は非常にロマンチックな表現で、物語や回想シーンで効果的に使えます。"
+      },
+      {
+        "id": "je_rca8",
+        "question": "The manager, to _____ I addressed the complaint, was very helpful.",
+        "translation": "(苦情を伝えたマネージャーはとても親切だった)",
+        "options": [
+          "whom",
+          "who",
+          "which",
+          "that"
+        ],
+        "correct": "whom",
+        "explanation": "'前置詞 + whom'はフォーマルな関係節構造です。'to whom I addressed the complaint'は'I addressed the complaint to the manager'の関係節化です。前置詞が関係代名詞の前に来ると、目的格'whom'を使う必要があります。日本語の「苦情を伝えたマネージャー」は単純な修飾ですが、英語では前置詞の位置と格の選択が重要です。このフォーマルな構文はビジネス文書や公式な苦情対応で使われます。"
+      },
+      {
+        "id": "je_rca9",
+        "question": "She is the kind of person _____ everyone admires.",
+        "translation": "(彼女はみんなが尊敬するような人です)",
+        "options": [
+          "whom",
+          "who",
+          "which",
+          "whose"
+        ],
+        "correct": "whom",
+        "explanation": "関係代名詞の目的格'whom'は動詞'admires'の目的語として機能しています。'everyone admires her'→'whom everyone admires'。口語では'who'や省略も可能ですが、フォーマルな文では'whom'が適切です。日本語の「みんなが尊敬する人」に対応します。主格'who'と目的格'whom'の区別は上級文法の重要ポイントです。関係節の中で主語なら'who'、目的語なら'whom'を使い分けます。TOEIC等の試験でも頻出します。"
+      },
+      {
+        "id": "je_rca10",
+        "question": "I'll never forget the moment _____ I heard the news.",
+        "translation": "(そのニュースを聞いた瞬間を決して忘れないだろう)",
+        "options": [
+          "when",
+          "which",
+          "where",
+          "what"
+        ],
+        "correct": "when",
+        "explanation": "'the moment when'は特定の瞬間を表す関係副詞の用法です。'when I heard the news'は「ニュースを聞いた瞬間」を修飾しています。'that'で代用することも可能ですが、時間の先行詞には'when'が最も明確です。日本語の「聞いた瞬間」は自然な関係節修飾です。時間に関する先行詞（moment, time, day, year, occasion等）は'when'で受けるのが原則です。感情的な記憶を語る場面で効果的に使える表現です。"
+      },
+      {
+        "id": "je_rca11",
+        "question": "The town _____ I grew up has changed a lot.",
+        "translation": "(私が育った町はすっかり変わった)",
+        "options": [
+          "where",
+          "which",
+          "that",
+          "when"
+        ],
+        "correct": "where",
+        "explanation": "'where I grew up'は場所の関係副詞節です。'I grew up in the town'の'in the town'を'where'で置き換えます。'in which I grew up'も正しいですがよりフォーマルです。口語では'that I grew up in'も使えます。日本語の「育った町」は日本語の関係節（連体修飾節）として自然です。英語の'where'は場所を表す先行詞の修飾に必須で、「場所＋where＋主語＋動詞」の語順パターンを覚えることが重要です。"
+      },
+      {
+        "id": "je_rca12",
+        "question": "The essay, the conclusion of _____ was brilliant, won first prize.",
+        "translation": "(結論が素晴らしかったそのエッセイは一等賞を取った)",
+        "options": [
+          "which",
+          "that",
+          "whom",
+          "whose"
+        ],
+        "correct": "which",
+        "explanation": "'the conclusion of which'は上級の関係節パターンで、'of which'は物の所有を表します。'whose conclusion'（whoseは物にも使える）と言い換え可能ですが、'of which'はよりフォーマルです。日本語の「結論が素晴らしかったエッセイ」は関係節修飾の典型例です。英語の'前置詞 + which'構文は学術論文やフォーマルな文書で好まれ、洗練された書き方として評価されます。この構文をマスターすると英作文の質が大幅に向上します。"
+      },
+      {
+        "id": "je_rca13",
+        "question": "_____ happened at the party was unexpected.",
+        "translation": "(パーティーで起きたことは予想外だった)",
+        "options": [
+          "What",
+          "Which",
+          "That",
+          "Who"
+        ],
+        "correct": "What",
+        "explanation": "'What'は先行詞を含む関係代名詞で、'the thing(s) which'と同じ意味です。'What happened'は「起きたこと」で、名詞節として文の主語になっています。'Which'は先行詞が必要なので、ここでは使えません。日本語の「起きたこと」の「こと」に'what'が対応します。'what'は関係代名詞と先行詞の二つの機能を兼ね備えた便利な語で、日常会話でも'What I want to say is...'のように頻繁に使います。"
+      },
+      {
+        "id": "je_rca14",
+        "question": "The book, _____ was published in 1925, is still popular today.",
+        "translation": "(1925年に出版されたその本は今でも人気がある)",
+        "options": [
+          "which",
+          "that",
+          "what",
+          "who"
+        ],
+        "correct": "which",
+        "explanation": "非制限用法（コンマ付き）では'which'を使い、'that'は使えません。'which was published in 1925'は追加情報で、本を特定するためではなく補足説明です。制限用法（コンマなし）なら'that'も使えます。日本語の「1925年に出版された本」には制限・非制限の区別がありませんが、英語ではコンマの有無で意味が変わります。非制限用法は書き言葉で重要で、読者に追加情報を自然に提供する手段として多用されます。"
+      },
+      {
+        "id": "je_rca15",
+        "question": "There was nothing _____ I could do to help.",
+        "translation": "(助けるために私ができることは何もなかった)",
+        "options": [
+          "that",
+          "which",
+          "what",
+          "whom"
+        ],
+        "correct": "that",
+        "explanation": "先行詞が'nothing'、'everything'、'anything'、'something'などの不定代名詞の場合、関係代名詞は'that'が強く好まれます。'which'は文法的には可能ですが、不定代名詞の後では'that'が圧倒的に自然です。日本語の「できることは何もなかった」に対応します。同様に、先行詞に最上級や序数詞が含まれる場合も'that'が好まれます。'the first thing that'、'the best movie that'のように。この使い分けは文法試験でも頻出です。"
+      }
+    ]
+  },
+  {
+    "key": "emphasis_fronting",
+    "name": "Emphasis & Fronting",
+    "description": "強調構文と前置",
+    "iconName": "exclamationmark.triangle",
+    "color": "#f59e0b",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "je_ef1",
+        "question": "It was John _____ broke the window.",
+        "translation": "(窓を割ったのはジョンだった)",
+        "options": [
+          "who",
+          "which",
+          "what",
+          "whom"
+        ],
+        "correct": "who",
+        "explanation": "分裂文（cleft sentence）'It was...who/that...'は特定の要素を強調する構文です。'John broke the window'の'John'を強調しています。人を強調する場合は'who'または'that'を使います。日本語の「〜のは〜だ」という強調構文に対応しています。'It was the window that John broke'（割られたのは窓だ）のように他の要素も強調できます。この構文は会話でも文書でも非常に効果的に情報を際立たせます。"
+      },
+      {
+        "id": "je_ef2",
+        "question": "Not only did she pass the exam, _____ she got the highest score.",
+        "translation": "(彼女は試験に合格しただけでなく、最高得点を取った)",
+        "options": [
+          "but",
+          "and",
+          "also",
+          "or"
+        ],
+        "correct": "but",
+        "explanation": "'Not only...but (also)...'は「〜だけでなく〜も」という二重強調の構文です。'Not only'が文頭に来ると倒置が起き、'did she pass'のように疑問文の語順になります。日本語の「〜だけでなく〜も」に対応しますが、英語独特の倒置を伴います。この構文はスピーチやプレゼンで非常に効果的で、二つの達成を印象的に提示します。'but also'の'also'は省略可能ですが、あった方がリズムが良いです。"
+      },
+      {
+        "id": "je_ef3",
+        "question": "_____ no circumstances should you touch the equipment.",
+        "translation": "(いかなる状況でもその装置に触れてはいけない)",
+        "options": [
+          "Under",
+          "In",
+          "At",
+          "On"
+        ],
+        "correct": "Under",
+        "explanation": "'Under no circumstances'は「いかなる状況でも〜ない」という強い否定表現です。否定の副詞句が文頭に来ると倒置が起きます。'you should not touch'→'should you touch'。日本語の「いかなる状況でも」に相当する非常に強い表現です。安全警告やルール説明で使われます。同様のパターン：'On no account'（決して〜ない）、'In no way'（どんな方法でも〜ない）。文頭の否定表現＋倒置は上級英語の重要な構文パターンです。"
+      },
+      {
+        "id": "je_ef4",
+        "question": "What I really need is _____ good night's sleep.",
+        "translation": "(私が本当に必要なのは十分な睡眠です)",
+        "options": [
+          "a",
+          "the",
+          "some",
+          "one"
+        ],
+        "correct": "a",
+        "explanation": "'What I really need is...'は疑似分裂文（pseudo-cleft sentence）で、「私が本当に必要なのは〜です」という強調構文です。'What'で始まる関係節が主語になり、'is'の後に強調したい要素が来ます。日本語の「〜のは〜です」にピッタリ対応する構文です。'a good night's sleep'は不可算に見えますが、「一晩の」という意味で'a'がつきます。この疑似分裂文は日常会話でも「本当に言いたいこと」を明確にする際に非常に便利です。"
+      },
+      {
+        "id": "je_ef5",
+        "question": "Rarely _____ such a beautiful sunset.",
+        "translation": "(こんな美しい夕日はめったに見ない)",
+        "options": [
+          "have I seen",
+          "I have seen",
+          "I see",
+          "do I seen"
+        ],
+        "correct": "have I seen",
+        "explanation": "'Rarely'（めったに〜ない）が文頭に来ると倒置が起きます。'I have rarely seen'→'Rarely have I seen'。否定・準否定の副詞が文頭に来ると疑問文の語順になるルールです。日本語の「めったに見ない」は語順変化しませんが、英語では文頭に否定語を置くことで文学的・修辞的な強調効果を生みます。同様のパターン：'Never have I...'、'Seldom do we...'、'Hardly had I...'。フォーマルな文体で効果的です。"
+      },
+      {
+        "id": "je_ef6",
+        "question": "It is essential that everyone _____ the rules.",
+        "translation": "(全員がルールに従うことが不可欠です)",
+        "options": [
+          "follow",
+          "follows",
+          "followed",
+          "following"
+        ],
+        "correct": "follow",
+        "explanation": "'It is essential that + 主語 + 動詞の原形'は仮定法現在による強調構文です。'everyone'は三人称単数ですが、仮定法現在では原形'follow'を使います。'It is essential/important/vital/necessary that'はすべて同じパターンです。日本語の「〜することが不可欠だ」に対応しますが、英語では仮定法現在という特殊な形が要求されます。ビジネスや規則の文脈で「〜でなければならない」と強く述べる際に使われる重要な構文です。"
+      },
+      {
+        "id": "je_ef7",
+        "question": "Only after finishing the work _____ go home.",
+        "translation": "(仕事を終えた後にだけ帰宅できる)",
+        "options": [
+          "can you",
+          "you can",
+          "you could",
+          "could you"
+        ],
+        "correct": "can you",
+        "explanation": "'Only after...'が文頭に来ると主節で倒置が起きます。'You can go home only after finishing the work'→'Only after finishing the work can you go home'。'Only'で始まる副詞句が文頭に来ると、主節の助動詞と主語が入れ替わります。日本語の「〜した後にだけ」に対応します。'Only when'、'Only if'、'Only by'も同じ倒置パターンです。条件や制限を強調する際に非常に効果的な修辞技法です。"
+      },
+      {
+        "id": "je_ef8",
+        "question": "Little _____ she know what was about to happen.",
+        "translation": "(何が起ころうとしているか彼女はほとんど知らなかった)",
+        "options": [
+          "did",
+          "does",
+          "was",
+          "had"
+        ],
+        "correct": "did",
+        "explanation": "'Little did she know'は「〜とはほとんど知らなかった」という倒置表現です。'She little knew'→'Little did she know'。'little'が否定的意味（ほとんど〜ない）を持つため倒置が起きます。この表現は物語の導入や伏線に使われる文学的な表現で、映画のナレーションでもよく聞きます。日本語の「〜とは知る由もなかった」に相当するドラマチックな表現です。過去の出来事について語る際に効果的に使えます。"
+      },
+      {
+        "id": "je_ef9",
+        "question": "So beautiful _____ the painting that everyone stopped to look.",
+        "translation": "(その絵があまりにも美しかったので全員が立ち止まって見た)",
+        "options": [
+          "was",
+          "is",
+          "were",
+          "did"
+        ],
+        "correct": "was",
+        "explanation": "'So + 形容詞 + 倒置 + that...'は程度の強調構文です。'The painting was so beautiful that...'→'So beautiful was the painting that...'。'so'を文頭に出すことで美しさを劇的に強調しています。日本語の「あまりにも美しかったので」に対応しますが、英語では倒置を使うことでより文学的な印象を与えます。この構文は物語、レビュー、描写文で効果的です。'so...that...'構文自体は中級ですが、倒置を伴うと上級レベルになります。"
+      },
+      {
+        "id": "je_ef10",
+        "question": "The movie was good. _____, it was the best I've ever seen.",
+        "translation": "(映画は良かった。実際、今まで見た中で最高だった)",
+        "options": [
+          "In fact",
+          "However",
+          "Therefore",
+          "Meanwhile"
+        ],
+        "correct": "In fact",
+        "explanation": "'In fact'は「実際のところ」という意味のディスコースマーカーで、前の文を強調・拡大する役割があります。最初に「良かった」と述べ、'In fact'で「実は最高だった」と強調をエスカレートしています。'However'は逆接、'Therefore'は因果、'Meanwhile'は同時を表すので不適切です。日本語の「実際」に対応し、前言を強化・修正する場面で使います。会話でもライティングでも自然に使える汎用性の高い表現です。"
+      },
+      {
+        "id": "je_ef11",
+        "question": "It was in Paris _____ they first met.",
+        "translation": "(彼らが初めて出会ったのはパリだった)",
+        "options": [
+          "that",
+          "where",
+          "which",
+          "when"
+        ],
+        "correct": "that",
+        "explanation": "分裂文で場所を強調する場合、'that'を使います。'They first met in Paris'→'It was in Paris that they first met'。'where'ではなく'that'が正しい点に注意してください。分裂文の構造は常に'It is/was + 強調要素 + that + 残りの文'です。日本語の「出会ったのはパリだった」はそのまま分裂文に対応します。場所を強調することで「パリ」という情報が際立ち、聞き手や読者の印象に強く残ります。"
+      },
+      {
+        "id": "je_ef12",
+        "question": "Never before _____ such a performance.",
+        "translation": "(これまでこのような演技は見たことがなかった)",
+        "options": [
+          "had I witnessed",
+          "I had witnessed",
+          "I witnessed",
+          "have I witness"
+        ],
+        "correct": "had I witnessed",
+        "explanation": "'Never before'が文頭に来ると倒置が起きます。'I had never before witnessed such a performance'→'Never before had I witnessed such a performance'。過去完了の倒置形です。日本語の「これまで見たことがなかった」に強い否定の強調を込めた表現です。'never'を文頭に出すことで否定が劇的に強まります。芸術評論、スポーツ実況、感動的な場面の描写で使われる文学的・修辞的な表現です。"
+      },
+      {
+        "id": "je_ef13",
+        "question": "_____ I known about the problem, I would have helped.",
+        "translation": "(その問題を知っていたら、手伝っていただろう)",
+        "options": [
+          "Had",
+          "Have",
+          "If",
+          "Would"
+        ],
+        "correct": "Had",
+        "explanation": "'Had I known...'は'If I had known...'の倒置形で、'if'を省略した仮定法過去完了です。倒置により文がよりフォーマルでドラマチックになります。日本語の「知っていたら」に対応しますが、英語の倒置版はより洗練された印象を与えます。同じパターン：'Were I you...'（もし私があなたなら）、'Should you need help...'（もし助けが必要なら）。この'if'省略＋倒置は契約書やフォーマルな文書でも使われます。"
+      },
+      {
+        "id": "je_ef14",
+        "question": "What surprised me most _____ her calm reaction.",
+        "translation": "(最も驚いたのは彼女の冷静な反応だった)",
+        "options": [
+          "was",
+          "were",
+          "is",
+          "had been"
+        ],
+        "correct": "was",
+        "explanation": "疑似分裂文'What surprised me most was...'は「最も驚いたのは〜だった」という強調構文です。'What'節が主語で、'was'で繋ぎ、強調したい要素が続きます。日本語の「〜のは〜だった」という構文に完全に対応します。主語（What節）は単数扱いなので動詞は'was'です。疑似分裂文は感想や評価を述べる際に特に効果的で、プレゼンやレビューで「最も印象的だったのは〜」と言いたいとき完璧な構文です。"
+      },
+      {
+        "id": "je_ef15",
+        "question": "Hardly had I sat down _____ the phone rang.",
+        "translation": "(座ったとたんに電話が鳴った)",
+        "options": [
+          "when",
+          "than",
+          "that",
+          "before"
+        ],
+        "correct": "when",
+        "explanation": "'Hardly had...when...'は「〜するやいなや〜」という構文です。'hardly'が文頭に来て倒置が起き、後半は'when'で続けます。同じ意味の構文：'No sooner had I sat down than the phone rang'（こちらは'than'）、'Scarcely had I sat down when...'。日本語の「座ったとたんに」に対応する間髪入れないタイミングを表す表現です。'Hardly...when'と'No sooner...than'の組み合わせは定型なので、セットで覚えることが重要です。"
+      }
+    ]
+  },
+  {
+    "key": "verb_patterns",
+    "name": "Verb Patterns",
+    "description": "動詞のパターン",
+    "iconName": "list.bullet.rectangle",
+    "color": "#c084fc",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "je_vp1",
+        "question": "I don't mind _____ early for the meeting.",
+        "translation": "(会議のために早く来ることは気にしません)",
+        "options": [
+          "coming",
+          "to come",
+          "come",
+          "came"
+        ],
+        "correct": "coming",
+        "explanation": "'mind'は動名詞のみを取る動詞パターンです。'don't mind coming'（来ることを気にしない）。動詞パターンは英語文法の核心で、各動詞がどの形を取るか（動名詞、不定詞、原形、that節）は暗記が必要です。'mind'の後に不定詞は使えません。同じパターンの動詞：enjoy, finish, avoid, suggest, consider。日本語の「〜することを気にしない」は形式にこだわりませんが、英語では動詞ごとの固定パターンに従う必要があります。"
+      },
+      {
+        "id": "je_vp2",
+        "question": "She persuaded him _____ the job.",
+        "translation": "(彼女は彼にその仕事を引き受けるよう説得した)",
+        "options": [
+          "to take",
+          "taking",
+          "take",
+          "took"
+        ],
+        "correct": "to take",
+        "explanation": "'persuade + 人 + to + 動詞'は三部構造の動詞パターンです。'persuade him to take'（彼に引き受けるよう説得する）。この構造を取る動詞：'convince someone to do'、'encourage someone to do'、'force someone to do'、'invite someone to do'。日本語の「〜するよう説得した」に対応しますが、英語では人を目的語として挟む構造になります。この動詞＋人＋to不定詞パターンはビジネスコミュニケーションで極めて重要です。"
+      },
+      {
+        "id": "je_vp3",
+        "question": "The teacher let the students _____ early.",
+        "translation": "(先生は生徒たちを早く帰らせた)",
+        "options": [
+          "leave",
+          "to leave",
+          "leaving",
+          "left"
+        ],
+        "correct": "leave",
+        "explanation": "'let + 人 + 動詞の原形'は使役動詞パターンです。'let'の後には不定詞の'to'をつけません。'let them leave'（彼らを帰らせる）。同じパターンの使役動詞：'make someone do'、'have someone do'。'help'は原形と不定詞の両方可能です。日本語の「帰らせた」は使役形一語ですが、英語では使役動詞＋人＋原形の三語構造になります。'let'は許可、'make'は強制、'have'は依頼のニュアンスがあります。この区別は実用英語で重要です。"
+      },
+      {
+        "id": "je_vp4",
+        "question": "I regret _____ you that the position has been filled.",
+        "translation": "(そのポジションが埋まったことをお伝えするのは残念です)",
+        "options": [
+          "to inform",
+          "informing",
+          "inform",
+          "informed"
+        ],
+        "correct": "to inform",
+        "explanation": "'regret'は動名詞と不定詞で意味が変わる動詞です。'regret to inform'は「〜をお伝えするのは残念です（これから伝える）」、'regret informing'は「伝えたことを後悔する（過去の行為）」。ここではフォーマルな通知で「これからお伝えする」ので不定詞です。'We regret to inform you that...'はビジネスメールの定型表現で、不合格通知や残念な知らせを伝える場合に使います。日本語の「お伝えするのは残念です」に対応する丁寧な表現です。"
+      },
+      {
+        "id": "je_vp5",
+        "question": "They made me _____ the report again.",
+        "translation": "(彼らは私にレポートを書き直させた)",
+        "options": [
+          "rewrite",
+          "to rewrite",
+          "rewriting",
+          "rewritten"
+        ],
+        "correct": "rewrite",
+        "explanation": "'make + 人 + 動詞の原形'は強制の使役パターンです。'made me rewrite'は「私に書き直させた」。'make'の後には原形動詞が来ます（不定詞の'to'は不要）。ただし受動態では'I was made to rewrite'のように'to'が復活します。日本語の「〜させた」に対応しますが、'make'には「強制して〜させる」という強いニュアンスがあります。ビジネスでの指示や要求を表す場面で頻繁に使われる実用的な構文です。"
+      },
+      {
+        "id": "je_vp6",
+        "question": "I can't help _____ when I see puppies.",
+        "translation": "(子犬を見ると微笑まずにはいられない)",
+        "options": [
+          "smiling",
+          "to smile",
+          "smile",
+          "smiled"
+        ],
+        "correct": "smiling",
+        "explanation": "'can't help + 動名詞'は「〜せずにはいられない」という意味の慣用表現です。'can't help smiling'は「微笑まずにはいられない」。'help'の後は動名詞を使います。日本語の「〜ずにはいられない」にぴったり対応する表現で、感情が抑えられない場面で使います。'can't help but smile'（原形）も同じ意味で使えますが、'can't help smiling'の方が一般的です。日常会話で感情を自然に表現する際に非常に便利な構文です。"
+      },
+      {
+        "id": "je_vp7",
+        "question": "He pretended _____ asleep.",
+        "translation": "(彼は寝たふりをした)",
+        "options": [
+          "to be",
+          "being",
+          "be",
+          "been"
+        ],
+        "correct": "to be",
+        "explanation": "'pretend + to + 動詞'は不定詞のみを取るパターンです。'pretend to be asleep'（寝たふりをする）。'pretend doing'は誤りです。'pretend'は「実際にはそうでないことを装う」という意味で、未来志向的（これから演じる）なニュアンスがあるため不定詞と相性が良いです。日本語の「ふりをする」に対応し、日常会話でよく使われます。過去のことを装った場合は'pretended to have done'（完了不定詞）という形もあります。"
+      },
+      {
+        "id": "je_vp8",
+        "question": "Would you like me _____ the door?",
+        "translation": "(ドアを閉めましょうか？)",
+        "options": [
+          "to close",
+          "closing",
+          "close",
+          "closed"
+        ],
+        "correct": "to close",
+        "explanation": "'would like + 人 + to + 動詞'は丁寧な依頼・申し出のパターンです。'Would you like me to close the door?'は「私がドアを閉めることをお望みですか？」→「閉めましょうか？」。この構文は'want someone to do'のより丁寧な形です。日本語の「〜しましょうか？」に対応する非常に実用的な表現です。接客、ビジネス、日常の礼儀正しい会話で欠かせません。'would like to'（自身の希望）と'would like someone to'（他者への依頼）の違いも重要です。"
+      },
+      {
+        "id": "je_vp9",
+        "question": "She appears _____ very happy today.",
+        "translation": "(彼女は今日とても幸せそうに見える)",
+        "options": [
+          "to be",
+          "being",
+          "be",
+          "been"
+        ],
+        "correct": "to be",
+        "explanation": "'appear to + 動詞'は「〜のように見える、〜らしい」という不定詞パターンです。'appear to be happy'（幸せそうに見える）。'seem to be'も同じ意味で使えます。'appear doing'は誤りです。日本語の「〜そうに見える」に対応する客観的な観察を表す表現です。'appear'の後には不定詞のみが来るという動詞パターンは、'seem'、'happen'、'tend'、'prove'なども同様です。ニュース報道で「〜のようだ」と控えめに述べる際にも使われます。"
+      },
+      {
+        "id": "je_vp10",
+        "question": "I heard someone _____ my name.",
+        "translation": "(誰かが私の名前を呼ぶのが聞こえた)",
+        "options": [
+          "call",
+          "to call",
+          "called",
+          "calling"
+        ],
+        "correct": "call",
+        "explanation": "知覚動詞'hear + 人 + 原形動詞'は「〜が〜するのを聞く」というパターンです。原形'call'は行為の全体を聞いた場合、-ing形'calling'は行為の途中を聞いた場合に使います。ここでは名前を呼ぶ行為全体が聞こえたので原形が適切です。知覚動詞：see, hear, watch, feel, notice。不定詞（to call）は使えません。日本語の「呼ぶのが聞こえた」は区別しませんが、英語では全体か途中かで形が変わります。"
+      },
+      {
+        "id": "je_vp11",
+        "question": "I warned her _____ alone at night.",
+        "translation": "(夜に一人で歩かないように警告した)",
+        "options": [
+          "not to walk",
+          "to not walk",
+          "don't walk",
+          "walking"
+        ],
+        "correct": "not to walk",
+        "explanation": "'warn + 人 + not to + 動詞'は否定の不定詞パターンです。肯定なら'warn her to be careful'（気をつけるよう警告する）、否定なら'warn her not to walk'（歩かないよう警告する）。否定語'not'は'to'の前に置きます。日本語の「歩かないように警告した」に対応します。'warn'は危険を知らせる強い動詞で、安全指示や注意喚起で使われます。'advise not to'、'tell not to'、'ask not to'も同じ否定パターンを取ります。"
+      },
+      {
+        "id": "je_vp12",
+        "question": "He managed _____ the deadline despite many difficulties.",
+        "translation": "(多くの困難にもかかわらず締め切りに間に合った)",
+        "options": [
+          "to meet",
+          "meeting",
+          "meet",
+          "met"
+        ],
+        "correct": "to meet",
+        "explanation": "'manage to + 動詞'は「なんとか〜する、苦労して〜を達成する」という不定詞パターンです。'manage to meet the deadline'は「なんとか締め切りに間に合う」。'manage doing'は誤りです。'manage to'には困難を克服したニュアンスが含まれ、単純な'succeeded in doing'とは微妙に異なります。日本語の「なんとか間に合った」に対応する表現で、努力の末の達成を表します。ビジネスでプロジェクトの進捗を報告する際に非常によく使われます。"
+      },
+      {
+        "id": "je_vp13",
+        "question": "She tends _____ late for appointments.",
+        "translation": "(彼女は約束の時間に遅れがちだ)",
+        "options": [
+          "to be",
+          "being",
+          "be",
+          "been"
+        ],
+        "correct": "to be",
+        "explanation": "'tend to + 動詞'は「〜する傾向がある、〜しがちだ」という不定詞パターンです。'tend to be late'（遅れがちだ）。'tend doing'は誤りです。日本語の「〜しがちだ」にぴったり対応する表現で、習慣的な傾向を表す際に使います。学術論文では'tend to'は客観的なデータの傾向を述べるのに使われます。'People tend to underestimate the cost'（人々はコストを過小評価しがちだ）のように、一般的な傾向を論じる場面で非常に頻繁に使用されます。"
+      },
+      {
+        "id": "je_vp14",
+        "question": "The boss had his secretary _____ the documents.",
+        "translation": "(上司は秘書に書類をコピーさせた)",
+        "options": [
+          "copy",
+          "to copy",
+          "copying",
+          "copied"
+        ],
+        "correct": "copy",
+        "explanation": "'have + 人 + 動詞の原形'は使役パターンで「〜に〜させる、〜してもらう」の意味です。'had his secretary copy'（秘書にコピーさせた）。'have'は'make'ほど強制的ではなく、'let'ほど自由でもない中間のニュアンスです。注意：'have + もの + 過去分詞'は「〜を〜してもらう」で異なるパターンです。'I had my car repaired'（車を修理してもらった）。日本語の「させた」に対応しますが、英語ではこの微妙なニュアンスの違いを使い分けます。"
+      },
+      {
+        "id": "je_vp15",
+        "question": "I look forward to _____ from you.",
+        "translation": "(ご連絡をお待ちしております)",
+        "options": [
+          "hearing",
+          "hear",
+          "heard",
+          "be hearing"
+        ],
+        "correct": "hearing",
+        "explanation": "'look forward to + 動名詞'は「〜を楽しみにしている」というパターンです。ここでの'to'は不定詞ではなく前置詞なので、後ろには動名詞(-ing)が来ます。'look forward to hear'は非常に多い誤りです。'I look forward to hearing from you'はビジネスメールの結びの定番表現です。日本語の「ご連絡をお待ちしております」に相当する最も丁寧で一般的な表現です。この'to'が前置詞であることを理解することが上級文法の重要なポイントです。"
+      }
+    ]
+  },
+  {
+    "key": "noun_modifiers",
+    "name": "Noun Modifiers",
+    "description": "名詞修飾語",
+    "iconName": "textformat.abc",
+    "color": "#34d399",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "je_nm1",
+        "question": "She is a _____ woman.",
+        "translation": "(彼女は美しい若い日本人女性です — 形容詞の語順)",
+        "options": [
+          "beautiful young Japanese",
+          "Japanese young beautiful",
+          "young beautiful Japanese",
+          "Japanese beautiful young"
+        ],
+        "correct": "beautiful young Japanese",
+        "explanation": "英語の形容詞の語順には厳密なルールがあります：意見→大きさ→年齢→形→色→出身→素材→目的。'beautiful'（意見）→'young'（年齢）→'Japanese'（出身）の順です。日本語では「美しい若い日本人の女性」のように語順の制約が比較的緩やかですが、英語ではこの順番を間違えると非常に不自然に聞こえます。ネイティブスピーカーは無意識にこの語順を使っていますが、学習者にとっては重要な習得ポイントです。"
+      },
+      {
+        "id": "je_nm2",
+        "question": "I need a _____ bag.",
+        "translation": "(大きな黒い革製のバッグが必要です)",
+        "options": [
+          "big black leather",
+          "black big leather",
+          "leather big black",
+          "black leather big"
+        ],
+        "correct": "big black leather",
+        "explanation": "形容詞の正しい語順：'big'（大きさ）→'black'（色）→'leather'（素材）。'a big black leather bag'が自然な英語です。この語順ルールは英語の形容詞を複数使う際に必須の知識です。日本語の「大きな黒い革製のバッグ」は語順が比較的自由ですが、英語では逸脱すると違和感があります。このルールを「OSASCOMP」（Opinion, Size, Age, Shape, Color, Origin, Material, Purpose）と覚えると便利です。実用的な買い物場面でよく使います。"
+      },
+      {
+        "id": "je_nm3",
+        "question": "The _____ in the garden are beautiful.",
+        "translation": "(庭の花々は美しい)",
+        "options": [
+          "flowers",
+          "flower",
+          "flowering",
+          "flowered"
+        ],
+        "correct": "flowers",
+        "explanation": "名詞修飾の基本として、複数形の正しい使い方があります。庭に複数の花があるので'flowers'（複数形）が正しいです。英語では数の概念が非常に重要で、日本語のように文脈から数を判断するのではなく、明示的に単数・複数を区別する必要があります。'The flowers in the garden'では'in the garden'が名詞'flowers'を後ろから修飾する後置修飾語句です。前置修飾（形容詞）と後置修飾（前置詞句、関係節）の違いを理解することが重要です。"
+      },
+      {
+        "id": "je_nm4",
+        "question": "We visited a _____ castle.",
+        "translation": "(500年前の美しい石造りの城を訪れた)",
+        "options": [
+          "beautiful 500-year-old stone",
+          "500-year-old beautiful stone",
+          "stone beautiful 500-year-old",
+          "beautiful stone 500-year-old"
+        ],
+        "correct": "beautiful 500-year-old stone",
+        "explanation": "複合形容詞'500-year-old'はハイフンで繋がれた年齢の形容詞です。名詞の前では'years'ではなく'year'（単数形）を使います。語順は：'beautiful'（意見）→'500-year-old'（年齢）→'stone'（素材）。日本語の「500年前の美しい石造りの城」は語順が自由ですが、英語では厳密な順序があります。複合形容詞のハイフン使用は書き言葉で特に重要で、'a ten-minute walk'、'a well-known author'のように名詞の前ではハイフンが必要です。"
+      },
+      {
+        "id": "je_nm5",
+        "question": "There is a _____ parking space.",
+        "translation": "(十分な駐車スペースがない — 否定の限定詞)",
+        "options": [
+          "lack of",
+          "few",
+          "no",
+          "none"
+        ],
+        "correct": "no",
+        "explanation": "'no'は名詞を直接修飾する否定の限定詞です。'no parking space'（駐車スペースがない）。'There is no parking space'は'There isn't any parking space'と同じ意味ですが、'no'を使う方が強い否定になります。'none'は代名詞なので名詞の前には置けません。'lack of'は「不足」で文法的に異なります。日本語の「〜がない」を英語にする際、'no + 名詞'と'not any + 名詞'の二通りがあることを覚えましょう。看板や掲示で'No Entry'のように頻繁に使われます。"
+      },
+      {
+        "id": "je_nm6",
+        "question": "He bought a brand-_____ car.",
+        "translation": "(彼は新品の車を買った)",
+        "options": [
+          "new",
+          "fresh",
+          "latest",
+          "recent"
+        ],
+        "correct": "new",
+        "explanation": "'brand-new'は「新品の」という複合形容詞です。ハイフンで二つの語を繋いで一つの形容詞として使います。'brand'は本来「焼印」の意味で、「焼印が新しい」→「全くの新品」というのが語源です。日本語の「新品の」にぴったり対応する表現です。同様の複合形容詞：'well-known'（有名な）、'old-fashioned'（古風な）、'open-minded'（寛容な）。複合形容詞は英語の表現力を豊かにする重要な構造で、ボキャブラリーを増やすのに効果的です。"
+      },
+      {
+        "id": "je_nm7",
+        "question": "The _____ next door is very friendly.",
+        "translation": "(隣に住んでいる家族はとてもフレンドリーだ)",
+        "options": [
+          "family",
+          "families",
+          "family's",
+          "familys"
+        ],
+        "correct": "family",
+        "explanation": "'the family next door'では'next door'が名詞'family'を後ろから修飾しています。ここでは一つの家族を指すので単数'family'です。'family'は集合名詞で、グループとして見る場合は単数扱い、個々のメンバーとして見る場合は複数扱いです。後置修飾の'next door'は場所を表す副詞句で、前置詞なしで名詞の後に直接置かれます。日本語の「隣に住んでいる家族」を英語では「family next door」と簡潔に表現できる点が英語らしい特徴です。"
+      },
+      {
+        "id": "je_nm8",
+        "question": "I read an article about the _____ rising temperatures.",
+        "translation": "(上昇する気温の影響についての記事を読んだ)",
+        "options": [
+          "effects of",
+          "affecting",
+          "effect to",
+          "effected"
+        ],
+        "correct": "effects of",
+        "explanation": "'the effects of rising temperatures'は'of'を使った名詞修飾です。'A of B'は「BのA」で、日本語と逆の語順になります。'effects of'（〜の影響）は学術的な文脈で非常に頻繁に使われる表現です。'rising temperatures'は現在分詞'rising'が名詞'temperatures'を前から修飾しています。分詞による名詞修飾は「進行中の状態」を表し、'a running man'（走っている男）、'growing concern'（増大する懸念）のように使います。"
+      },
+      {
+        "id": "je_nm9",
+        "question": "She wore a dress _____ of silk.",
+        "translation": "(彼女は絹でできたドレスを着ていた)",
+        "options": [
+          "made",
+          "making",
+          "make",
+          "makes"
+        ],
+        "correct": "made",
+        "explanation": "過去分詞による後置修飾：'a dress made of silk'は「絹で作られたドレス」。過去分詞'made'が名詞'dress'を後ろから修飾しています。'made of'は素材がそのまま残っている場合、'made from'は原料が変化している場合に使います。'a dress made of silk'（絹が分かる）vs 'paper made from wood'（木が変化）。日本語の「絹でできた」に対応しますが、英語では'of'と'from'の使い分けが必要です。ファッションや製品説明で頻出する表現です。"
+      },
+      {
+        "id": "je_nm10",
+        "question": "The woman _____ at the reception is the manager.",
+        "translation": "(受付に座っている女性がマネージャーです)",
+        "options": [
+          "sitting",
+          "sat",
+          "sit",
+          "sits"
+        ],
+        "correct": "sitting",
+        "explanation": "現在分詞による後置修飾：'the woman sitting at the reception'は「受付に座っている女性」。現在分詞'-ing'は能動的で進行中の動作を表します。'the woman who is sitting'の簡略形と考えることもできます。単一の分詞なら前置修飾（'a sleeping baby'）、分詞句なら後置修飾（'a woman sitting at the reception'）になります。日本語の「座っている女性」は関係節の修飾で自然ですが、英語では分詞を使ってより簡潔に表現できます。"
+      },
+      {
+        "id": "je_nm11",
+        "question": "He is a _____ efficient worker.",
+        "translation": "(彼は非常に効率的な労働者だ)",
+        "options": [
+          "highly",
+          "high",
+          "higher",
+          "highest"
+        ],
+        "correct": "highly",
+        "explanation": "副詞'highly'が形容詞'efficient'を修飾しています。'highly efficient'（非常に効率的な）。形容詞を修飾するのは副詞の役割で、'high'（形容詞）ではなく'highly'（副詞）を使います。日本語の「非常に効率的な」の「非常に」が副詞として機能しています。同様のパターン：'highly recommended'（強くお勧めの）、'highly unlikely'（極めてありそうにない）。'highly'は抽象的な度合いに使い、物理的な高さには'high'を使います。この区別は重要です。"
+      },
+      {
+        "id": "je_nm12",
+        "question": "I prefer the room _____ the view of the ocean.",
+        "translation": "(海の景色が見える部屋が好みです)",
+        "options": [
+          "with",
+          "has",
+          "having",
+          "which"
+        ],
+        "correct": "with",
+        "explanation": "前置詞句'with the view of the ocean'が名詞'the room'を後ろから修飾しています。'with'は「〜のある、〜付きの」という所有・付帯を表す前置詞として名詞修飾に使えます。'the room with a balcony'（バルコニー付きの部屋）のように。日本語の「海の景色が見える部屋」は関係節修飾ですが、英語では'with'を使った方が簡潔です。ホテルの予約や不動産の説明で'a house with a garden'のように日常的に使われる実用的な表現です。"
+      },
+      {
+        "id": "je_nm13",
+        "question": "The _____ broken window needs to be fixed.",
+        "translation": "(壊れた窓を修理する必要がある)",
+        "options": [
+          "badly",
+          "bad",
+          "worse",
+          "worst"
+        ],
+        "correct": "badly",
+        "explanation": "副詞'badly'が過去分詞'broken'を修飾しています。'badly broken window'は「ひどく壊れた窓」。過去分詞は形容詞的に機能するため、副詞で修飾されます。'bad broken'は形容詞＋形容詞で文法的に不適切です。日本語の「ひどく壊れた」は副詞＋動詞ですが、英語でも同じ構造です。副詞の位置は修飾する語の直前が原則です。'a badly damaged car'（ひどく損傷した車）、'a well-organized event'（よく組織されたイベント）も同じパターンです。"
+      },
+      {
+        "id": "je_nm14",
+        "question": "She gave me something _____ to eat.",
+        "translation": "(彼女は何か美味しいものをくれた)",
+        "options": [
+          "delicious",
+          "deliciously",
+          "deliciousness",
+          "delicioning"
+        ],
+        "correct": "delicious",
+        "explanation": "不定代名詞（something, anything, nothing, someone等）を修飾する形容詞は後ろに置きます。'something delicious'（何か美味しいもの）。通常の名詞修飾では形容詞は前に来ますが（'delicious food'）、不定代名詞の場合は後置が規則です。日本語の「何か美味しいもの」は自然な語順ですが、英語の後置修飾はこのルールを知らないと間違えやすいです。'Is there anything interesting?'（何か面白いことある？）も同じパターンです。"
+      },
+      {
+        "id": "je_nm15",
+        "question": "The _____ involved in the accident were taken to hospital.",
+        "translation": "(事故に巻き込まれた人々は病院に運ばれた)",
+        "options": [
+          "people",
+          "peoples",
+          "person",
+          "persons"
+        ],
+        "correct": "people",
+        "explanation": "'the people involved in the accident'で過去分詞句'involved in the accident'が名詞'people'を後置修飾しています。'people'は'person'の複数形として最も一般的です。'persons'は法律文書などフォーマルな場面で使われます。'involved'は「巻き込まれた」という受動の意味で名詞を修飾しています。前置詞句を伴う分詞は後置修飾になる規則があります。日本語の「巻き込まれた人々」に対応する、ニュース報道で頻繁に使われる表現です。"
+      }
+    ]
+  },
+  {
+    "key": "register_formality",
+    "name": "Register & Formality",
+    "description": "文体とフォーマリティ",
+    "iconName": "person.crop.rectangle",
+    "color": "#64748b",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "je_rf1",
+        "question": "I would be grateful if you _____ send me the report.",
+        "translation": "(レポートを送っていただけると幸いです)",
+        "options": [
+          "could",
+          "can",
+          "will",
+          "do"
+        ],
+        "correct": "could",
+        "explanation": "'I would be grateful if you could...'はビジネスメールで最もフォーマルな依頼表現の一つです。'could'は丁寧さを表す仮定法で、直接的な'can'よりも控えめなニュアンスがあります。日本語の「していただけると幸いです」に相当するビジネス敬語です。この表現はメール、手紙、公式な要請文で使われます。フォーマリティの段階：'Send the report'（命令）→'Can you send...?'（普通の依頼）→'Could you send...?'（丁寧）→'I would be grateful if you could send...'（最も丁寧）。"
+      },
+      {
+        "id": "je_rf2",
+        "question": "_____ you mind closing the window?",
+        "translation": "(窓を閉めていただけますか？)",
+        "options": [
+          "Would",
+          "Do",
+          "Can",
+          "Are"
+        ],
+        "correct": "Would",
+        "explanation": "'Would you mind + 動名詞'は非常に丁寧な依頼表現です。'Would you mind closing the window?'は文字通り「窓を閉めることを気にされますか？」で、間接的に依頼しています。'Do you mind...'も使えますが、'Would'の方がよりフォーマルです。回答する際は「気にしない＝OK」なので'No, not at all'（いいえ、全く気にしません＝どうぞ）が正しい返答です。日本語の「していただけますか」に相当し、職場やフォーマルな場面で必須の丁寧表現です。"
+      },
+      {
+        "id": "je_rf3",
+        "question": "I'm writing to _____ about the delay in delivery.",
+        "translation": "(配達の遅延についてお問い合わせするためにご連絡しています)",
+        "options": [
+          "inquire",
+          "ask",
+          "wonder",
+          "know"
+        ],
+        "correct": "inquire",
+        "explanation": "'inquire'は'ask'のフォーマルな表現です。ビジネスレターやメールで「お問い合わせする」際に使います。'I'm writing to inquire about...'はビジネスメールの典型的な書き出しです。カジュアルな場面では'I'm writing to ask about...'で十分です。日本語の「お問い合わせする」がフォーマル版、「聞く」がカジュアル版に対応します。フォーマル語彙：'inquire'（ask）、'commence'（start）、'terminate'（end）、'purchase'（buy）、'reside'（live）。レジスターの使い分けは社会的能力の指標です。"
+      },
+      {
+        "id": "je_rf4",
+        "question": "I _____ for the inconvenience caused.",
+        "translation": "(ご迷惑をおかけして申し訳ございません)",
+        "options": [
+          "apologize",
+          "am sorry",
+          "regret",
+          "feel bad"
+        ],
+        "correct": "apologize",
+        "explanation": "'I apologize for...'はフォーマルな謝罪表現です。'I'm sorry for...'よりもビジネスや公式な場面で適切です。日本語の「申し訳ございません」に相当するフォーマルな謝罪です。段階：'Sorry'（カジュアル）→'I'm sorry'（一般）→'I apologize'（フォーマル）→'I sincerely apologize'（非常にフォーマル）→'Please accept my sincerest apologies'（最も丁寧）。ビジネスメールでの謝罪は'I apologize for any inconvenience this may have caused'が定型です。"
+      },
+      {
+        "id": "je_rf5",
+        "question": "We would like to _____ you to the annual meeting.",
+        "translation": "(年次総会にご招待申し上げます)",
+        "options": [
+          "invite",
+          "call",
+          "ask",
+          "get"
+        ],
+        "correct": "invite",
+        "explanation": "'We would like to invite you to...'はフォーマルな招待表現です。'would like to'は'want to'のフォーマル版で、丁寧な意向を表します。日本語の「ご招待申し上げます」に対応するビジネス・社交の表現です。カジュアルなら'We'd love to have you at...'。さらにフォーマルなら'You are cordially invited to...'（謹んでご招待申し上げます）。招待の文脈でレジスターを正しく選ぶことは、社会的な場面で非常に重要なスキルです。"
+      },
+      {
+        "id": "je_rf6",
+        "question": "Could you _____ elaborate on that point?",
+        "translation": "(その点をもう少し詳しく説明していただけますか？)",
+        "options": [
+          "please",
+          "just",
+          "maybe",
+          "really"
+        ],
+        "correct": "please",
+        "explanation": "'Could you please...?'は丁寧な依頼にさらに'please'を加えた表現です。'Could you please elaborate?'は「もう少し詳しく説明していただけますか？」。'elaborate on'は「〜について詳しく述べる」というフォーマルな動詞です。日本語の「もう少し詳しく」を英語ではフォーマルに表現できます。会議やプレゼンの質疑応答で頻繁に使われます。'please'の位置は'Could you please...'か'Could you...please?'のどちらも正しいですが、前者がより一般的です。"
+      },
+      {
+        "id": "je_rf7",
+        "question": "I regret to _____ you that your application has been unsuccessful.",
+        "translation": "(残念ながら、あなたの応募は不採用となりましたことをお知らせいたします)",
+        "options": [
+          "inform",
+          "tell",
+          "say",
+          "speak"
+        ],
+        "correct": "inform",
+        "explanation": "'I regret to inform you that...'はフォーマルな通知の定型表現です。悪い知らせを伝える際のビジネス標準フレーズです。'inform'は'tell'のフォーマル版で、公式な通知に使います。'tell'はカジュアルすぎ、'say'は構文が異なります。日本語の「お知らせいたします」に相当する丁寧な表現です。不合格通知、サービス停止通知、値上げ通知など、好ましくない情報を伝達する際にこのフレーズが使われます。ビジネス英語の必須表現です。"
+      },
+      {
+        "id": "je_rf8",
+        "question": "Cheers! That was a _____ party!",
+        "translation": "(乾杯！すごいパーティーだったね！)",
+        "options": [
+          "great",
+          "magnificent",
+          "splendid",
+          "marvelous"
+        ],
+        "correct": "great",
+        "explanation": "カジュアルな場面では'great'が最も自然です。'magnificent'、'splendid'、'marvelous'はフォーマルすぎて友人間では不自然です。日本語でも「すごい」（カジュアル）と「素晴らしい」（フォーマル）を場面で使い分けるように、英語でもレジスターの適切さが重要です。'awesome'、'cool'、'amazing'もカジュアルで若者によく使われます。逆に公式なスピーチでは'magnificent'や'extraordinary'が適切です。場面に合った語彙選択がネイティブらしい英語の鍵です。"
+      },
+      {
+        "id": "je_rf9",
+        "question": "We wish to bring to your _____ the following matter.",
+        "translation": "(以下の件についてご報告申し上げます)",
+        "options": [
+          "attention",
+          "notice",
+          "mind",
+          "knowledge"
+        ],
+        "correct": "attention",
+        "explanation": "'bring to your attention'は「ご注意を促す、ご報告する」というフォーマルな表現です。ビジネスレターや公式文書で問題を提起する際の定型フレーズです。日本語の「ご報告申し上げます」に相当します。'We wish to...'は'We want to...'のフォーマル版です。カジュアルなら'I wanted to let you know about...'で十分です。レジスターの選択は相手との関係、場面、媒体（メール vs 口頭）によって変わります。過度にフォーマルでも不自然になります。"
+      },
+      {
+        "id": "je_rf10",
+        "question": "What's _____? — Not much, just relaxing.",
+        "translation": "(どうしてる？— 別に、リラックスしてるだけ)",
+        "options": [
+          "up",
+          "happening",
+          "going on",
+          "the matter"
+        ],
+        "correct": "up",
+        "explanation": "'What's up?'は非常にカジュアルな挨拶で「どうしてる？元気？」の意味です。友人同士の日常会話で使います。'Not much'（別に）は典型的な返答です。日本語の「どうしてる？」にぴったりの表現です。フォーマリティの段階：'What's up?'（最もカジュアル）→'How's it going?'（カジュアル）→'How are you?'（一般）→'How do you do?'（非常にフォーマル）。場面に適した挨拶を選ぶことはコミュニケーションの基本であり、文化理解にもつながります。"
+      },
+      {
+        "id": "je_rf11",
+        "question": "I am writing to _____ my dissatisfaction with the service.",
+        "translation": "(サービスに対する不満を表明するためにご連絡しています)",
+        "options": [
+          "express",
+          "say",
+          "tell",
+          "show"
+        ],
+        "correct": "express",
+        "explanation": "'express my dissatisfaction'は「不満を表明する」というフォーマルな表現です。苦情の手紙やメールの書き出しに使われます。'say my dissatisfaction'は文法的に不自然です。日本語の「不満を表明する」に対応するビジネス表現です。苦情メールのテンプレート：'I am writing to express my dissatisfaction with...'→問題の詳細→'I would appreciate it if you could...'→'I look forward to hearing from you'。このフォーマルな苦情表現を知っておくことは消費者としての権利行使に重要です。"
+      },
+      {
+        "id": "je_rf12",
+        "question": "I was wondering if you _____ have a moment to discuss this.",
+        "translation": "(これについて少しお時間をいただけないかと思いまして)",
+        "options": [
+          "might",
+          "can",
+          "will",
+          "do"
+        ],
+        "correct": "might",
+        "explanation": "'I was wondering if you might...'は非常に丁寧で控えめな依頼表現です。過去進行形'was wondering'と'might'の組み合わせで最大限の丁寧さを表現しています。直接的な'Can you...'や'Will you...'と比べると、相手に断る余地を与える配慮のある表現です。日本語の「いただけないかと思いまして」という遠回しな敬語表現に対応しています。ビジネスの場面で上司や取引先に依頼する際に効果的で、英語圏の間接的な丁寧さの文化を反映しています。"
+      },
+      {
+        "id": "je_rf13",
+        "question": "Gonna grab some food. _____ come?",
+        "translation": "(ご飯食べに行く。来る？)",
+        "options": [
+          "Wanna",
+          "Would you like to",
+          "Do you wish to",
+          "Might you"
+        ],
+        "correct": "Wanna",
+        "explanation": "'Wanna'は'want to'のカジュアルな口語表現です。テキストメッセージや親しい友人との会話で使います。'Gonna'は'going to'のカジュアル形。日本語のタメ口に相当します。フォーマルな場面では決して使いません。カジュアル英語：'wanna'（want to）、'gonna'（going to）、'gotta'（got to）、'kinda'（kind of）、'lemme'（let me）。これらはネイティブの日常会話で普通に使われますが、書き言葉やフォーマルな場面では避けるべきです。"
+      },
+      {
+        "id": "je_rf14",
+        "question": "Please find _____ the documents you requested.",
+        "translation": "(ご依頼の書類を添付いたしました)",
+        "options": [
+          "attached",
+          "here",
+          "enclosed",
+          "inside"
+        ],
+        "correct": "attached",
+        "explanation": "'Please find attached...'はビジネスメールで添付ファイルを送る際の定型表現です。'attached'は「添付された」で、メールの添付ファイルに使います。郵便なら'enclosed'（同封された）を使います。日本語の「添付いたしました」に対応するビジネスメールの必須フレーズです。よりモダンな表現として'I have attached...'や'Attached are...'も使われます。メールの基本マナーとして、添付ファイルがあることを本文で明示することが重要です。"
+      },
+      {
+        "id": "je_rf15",
+        "question": "I _____ appreciate it if you could respond at your earliest convenience.",
+        "translation": "(お手すきの際にご返信いただけますと幸いです)",
+        "options": [
+          "would",
+          "will",
+          "should",
+          "might"
+        ],
+        "correct": "would",
+        "explanation": "'I would appreciate it if you could...'は最もフォーマルな依頼表現の一つです。'would'は仮定法で丁寧さを、'at your earliest convenience'は「お手すきの際に」という慣用表現です。日本語の「幸いです」に相当するビジネス敬語です。この表現全体がビジネスメールの黄金フレーズで、期限を示しつつ相手に配慮を示します。ただし、急ぎの場合は'at your earliest convenience'が実際には「できるだけ早く」という暗黙の催促になることもあります。"
+      }
+    ]
+  },
+  {
+    "key": "exam_strategies",
+    "name": "Exam Strategies",
+    "description": "試験対策文法",
+    "iconName": "checkmark.seal",
+    "color": "#ef4444",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "je_es1",
+        "question": "Neither the teacher nor the students _____ aware of the change.",
+        "translation": "(先生も生徒も変更に気づいていなかった)",
+        "options": [
+          "were",
+          "was",
+          "is",
+          "has been"
+        ],
+        "correct": "were",
+        "explanation": "'Neither A nor B'の動詞は近い方の名詞（B）に一致します。'students'（複数）が近いので'were'です。これは主語と動詞の一致（subject-verb agreement）の重要なルールで、試験で頻出するトリッキーな問題です。日本語の「〜も〜も〜ない」は動詞の形に影響しませんが、英語では近接一致のルールを厳密に適用する必要があります。同様に'Either A or B'も近い方に合わせます。このルールを知っているかどうかが中級と上級の分かれ目です。"
+      },
+      {
+        "id": "je_es2",
+        "question": "If I _____ you, I would accept the offer.",
+        "translation": "(もし私があなたなら、その提案を受け入れるだろう)",
+        "options": [
+          "were",
+          "was",
+          "am",
+          "be"
+        ],
+        "correct": "were",
+        "explanation": "仮定法過去で'be'動詞は主語に関係なく'were'を使うのが標準的です。'If I were you'は「もし私があなたなら」という非現実の仮定を表します。口語では'If I was'も聞かれますが、試験では'were'が常に正解です。日本語の「もし〜なら」は仮定法の形式変化がありませんが、英語では仮定の種類（事実と異なるか否か）で動詞形が変わります。'If I were you'はアドバイスをする際の定番表現で、日常会話でも非常に頻繁に使われます。"
+      },
+      {
+        "id": "je_es3",
+        "question": "She asked me where I _____.",
+        "translation": "(彼女は私がどこに住んでいるか尋ねた)",
+        "options": [
+          "lived",
+          "live",
+          "living",
+          "do live"
+        ],
+        "correct": "lived",
+        "explanation": "間接疑問文では疑問文の語順ではなく平叙文の語順を使います。直接疑問:「Where do you live?」→間接疑問:「where I lived」。また、報告動詞が過去形'asked'なので時制の一致により'live'→'lived'。語順の変化と時制の一致、二つのルールが同時に適用される試験頻出パターンです。日本語の「どこに住んでいるか」には語順変化がありませんが、英語では間接話法に変わると語順・時制が変わります。"
+      },
+      {
+        "id": "je_es4",
+        "question": "The number of students _____ increased this year.",
+        "translation": "(今年、学生の数は増加した)",
+        "options": [
+          "has",
+          "have",
+          "are",
+          "were"
+        ],
+        "correct": "has",
+        "explanation": "'The number of + 複数名詞'は「〜の数」で単数扱いです。'The number has increased'（数が増加した）。一方、'A number of + 複数名詞'は「多くの〜」で複数扱い：'A number of students have...'。この区別は試験で最もよく出される主語と動詞の一致問題です。日本語の「数が増えた」は単純ですが、英語では'the number of'と'a number of'を混同しないことが重要です。冠詞の'the'と'a'で意味が完全に変わる典型例です。"
+      },
+      {
+        "id": "je_es5",
+        "question": "He speaks English as _____ as his brother does.",
+        "translation": "(彼は兄と同じくらい流暢に英語を話す)",
+        "options": [
+          "fluently",
+          "fluent",
+          "more fluently",
+          "most fluently"
+        ],
+        "correct": "fluently",
+        "explanation": "'as + 原級 + as'は同等比較（「〜と同じくらい」）の構文です。ここでは動詞'speaks'を修飾するので副詞'fluently'（原級）を使います。形容詞'fluent'ではなく副詞が必要です。試験では形容詞と副詞の区別、比較の形（原級、比較級、最上級）がよく問われます。日本語の「同じくらい流暢に」に対応します。'as...as'構文は否定で'not as/so...as'（〜ほど〜ではない）になり、これも試験頻出パターンです。"
+      },
+      {
+        "id": "je_es6",
+        "question": "By the time she arrives, we _____ finished dinner.",
+        "translation": "(彼女が到着するまでに、私たちは夕食を終えているだろう)",
+        "options": [
+          "will have",
+          "have",
+          "had",
+          "are"
+        ],
+        "correct": "will have",
+        "explanation": "'By the time + 現在形, will have + 過去分詞'は未来完了の典型パターンです。未来のある時点までに完了する行為を表します。'By the time she arrives'は時の副詞節なので現在形（未来形ではない）を使います。'will have finished'で「終えているだろう」。試験では時制の正確な使い分けが問われ、未来完了は特に重要です。日本語の「終えているだろう」は未来完了を自然に表現していますが、英語では'will have + 過去分詞'という三語構造が必要です。"
+      },
+      {
+        "id": "je_es7",
+        "question": "He devoted himself to _____ the cause of the disease.",
+        "translation": "(彼はその病気の原因を研究することに専念した)",
+        "options": [
+          "researching",
+          "research",
+          "researched",
+          "be researching"
+        ],
+        "correct": "researching",
+        "explanation": "'devote oneself to + 動名詞'で「〜に専念する」です。ここでの'to'は不定詞の'to'ではなく前置詞なので、後ろには動名詞が来ます。'look forward to doing'と同じ構造です。試験では「toの後は不定詞」と思い込んで原形を選ぶ受験者が多いですが、前置詞の'to'の場合は動名詞です。同様のパターン：'be used to doing'、'be accustomed to doing'、'object to doing'。前置詞toと不定詞toの区別は試験の定番トラップです。"
+      },
+      {
+        "id": "je_es8",
+        "question": "_____ beautiful the music is!",
+        "translation": "(なんて美しい音楽なのでしょう！)",
+        "options": [
+          "How",
+          "What",
+          "What a",
+          "How a"
+        ],
+        "correct": "How",
+        "explanation": "感嘆文には二つのパターンがあります。'How + 形容詞/副詞 + 主語 + 動詞！'と'What + (a/an) + 形容詞 + 名詞 + 主語 + 動詞！'。ここでは'beautiful'（形容詞）だけなので'How'を使います。'What beautiful music!'も可能ですが、構造が異なります。'music'は不可算名詞なので'What a'は使えません。日本語の「なんて〜なのでしょう」に対応する感嘆表現です。試験では'How'と'What'の使い分けが頻出で、名詞の有無が判断基準です。"
+      },
+      {
+        "id": "je_es9",
+        "question": "I wish I _____ harder when I was young.",
+        "translation": "(若い時にもっと勉強していればよかったのに)",
+        "options": [
+          "had studied",
+          "studied",
+          "have studied",
+          "would study"
+        ],
+        "correct": "had studied",
+        "explanation": "'I wish + 仮定法過去完了'は「〜だったらよかったのに」という過去の事実に対する後悔を表します。'wish'の後は時制を一つずらすルールがあり、過去の後悔には仮定法過去完了（had + 過去分詞）を使います。現在の願望なら'I wish I studied more'（仮定法過去）。日本語の「していればよかった」に対応します。試験では'wish'の後の時制選択が問われ、現在の願望→仮定法過去、過去の後悔→仮定法過去完了という区別が重要です。"
+      },
+      {
+        "id": "je_es10",
+        "question": "Not until I got home _____ I realize I had left my keys.",
+        "translation": "(帰宅して初めて鍵を忘れたことに気づいた)",
+        "options": [
+          "did",
+          "do",
+          "was",
+          "had"
+        ],
+        "correct": "did",
+        "explanation": "'Not until...'が文頭に来ると後半で倒置が起きます。'I didn't realize until I got home'→'Not until I got home did I realize'。否定の副詞句が文頭に来ると疑問文の語順になるルールです。'realize'は一般動詞なので助動詞'did'を使って倒置します。日本語の「して初めて気づいた」は倒置なしですが、英語では文頭の否定表現が倒置を要求します。試験では倒置構文が重要な出題ポイントで、否定語の位置と倒置の関係を理解することが必要です。"
+      },
+      {
+        "id": "je_es11",
+        "question": "The more you practice, the _____ you get.",
+        "translation": "(練習すればするほど上手くなる)",
+        "options": [
+          "better",
+          "best",
+          "good",
+          "well"
+        ],
+        "correct": "better",
+        "explanation": "'The + 比較級, the + 比較級'は「〜すればするほど〜」という比例の構文です。'The more you practice, the better you get'（練習するほど上手くなる）。'better'は'good/well'の比較級です。この構文は試験でも日常英語でも非常に頻繁に出現します。日本語の「〜すればするほど〜」にぴったり対応する表現です。注意点：'more'は量や頻度の比較級で、後半の形容詞も比較級にする必要があります。二つの比較級を組み合わせる独特の構文です。"
+      },
+      {
+        "id": "je_es12",
+        "question": "She ran fast _____ not to miss the train.",
+        "translation": "(電車に乗り遅れないように速く走った)",
+        "options": [
+          "so as",
+          "in order",
+          "for",
+          "such"
+        ],
+        "correct": "so as",
+        "explanation": "'so as not to + 動詞'は目的の否定を表す構文で「〜しないように」の意味です。'in order not to'も同じ意味ですが、'so as'の方が簡潔です。肯定なら'so as to'（〜するために）。日本語の「乗り遅れないように」に対応します。試験では目的を表す構文の使い分けが問われます：'to'（最も一般的）、'in order to'（フォーマル）、'so as to'（やや文語的）。否定形は'not to'、'in order not to'、'so as not to'で、'not'の位置に注意が必要です。"
+      },
+      {
+        "id": "je_es13",
+        "question": "She is _____ intelligent a student that she always gets top marks.",
+        "translation": "(彼女はとても知的な学生で、いつもトップの成績を取る)",
+        "options": [
+          "so",
+          "such",
+          "very",
+          "too"
+        ],
+        "correct": "so",
+        "explanation": "'so + 形容詞 + a/an + 名詞 + that...'は「とても〜な〜で、〜だ」という結果構文です。'so intelligent a student that...'の語順に注意してください。通常は'such an intelligent student that...'ですが、'so'を使う場合は形容詞が冠詞の前に来ます。日本語の「とても〜で〜」に対応しますが、英語では'so'と'such'で語順が変わります。試験では語順の正確さが問われる定番問題です。'so...that'と'such...that'の構文と語順の違いは必ず覚えましょう。"
+      },
+      {
+        "id": "je_es14",
+        "question": "_____ you should need any help, please do not hesitate to contact us.",
+        "translation": "(もし何かお手伝いが必要でしたら、遠慮なくご連絡ください)",
+        "options": [
+          "Should",
+          "If",
+          "Would",
+          "Could"
+        ],
+        "correct": "Should",
+        "explanation": "'Should you need...'は'If you should need...'の倒置形で、'if'を省略したフォーマルな仮定表現です。可能性が低いことを丁寧に述べる表現で、ビジネスメールの結びに頻出します。'please do not hesitate to contact us'（遠慮なくご連絡ください）も定型フレーズです。日本語の「もし必要でしたら」のフォーマル版に相当します。試験では倒置による条件文がよく出題され、'Should'、'Were'、'Had'の三つが倒置可能な形として重要です。"
+      },
+      {
+        "id": "je_es15",
+        "question": "He is the tallest _____ the three brothers.",
+        "translation": "(彼は三兄弟の中で一番背が高い)",
+        "options": [
+          "of",
+          "in",
+          "among",
+          "between"
+        ],
+        "correct": "of",
+        "explanation": "最上級の後の前置詞は、グループの場合は'of'、場所や範囲の場合は'in'を使います。'the tallest of the three brothers'（三兄弟の中で一番）のように、具体的なグループの中での比較には'of'です。'the tallest in the class'（クラスの中で一番）は場所的な範囲なので'in'。日本語の「〜の中で一番」は一つの表現ですが、英語では'of'と'in'を使い分けます。試験では最上級＋前置詞の組み合わせが頻出し、グループvs場所の判断が求められます。"
+      }
+    ]
   }
 ]
