@@ -47,6 +47,7 @@ extension AppStrings {
         confirm: "Bestätigen:",
         done: "Fertig",
         languagesAvailable: "Sprachen verfügbar",
+        startYourAdventure: "Starte Dein Abenteuer",
 
         // Categories
         back: "Zurück",

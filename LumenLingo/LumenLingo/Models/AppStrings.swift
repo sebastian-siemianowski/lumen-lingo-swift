@@ -50,6 +50,7 @@ struct AppStrings {
     let confirm: String
     let done: String
     let languagesAvailable: String
+    let startYourAdventure: String
 
     // MARK: - Categories
     let back: String

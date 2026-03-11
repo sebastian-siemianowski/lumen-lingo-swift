@@ -47,6 +47,7 @@ extension AppStrings {
         confirm: "Підтвердити:",
         done: "Готово",
         languagesAvailable: "доступних мов",
+        startYourAdventure: "Почни Свою Пригоду",
 
         // Categories
         back: "Назад",

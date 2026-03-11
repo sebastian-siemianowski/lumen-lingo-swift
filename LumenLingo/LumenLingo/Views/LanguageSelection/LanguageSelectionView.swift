@@ -269,21 +269,21 @@ struct LanguageSelectionView: View {
                 )
             }
 
-            // Ambient orb — shifts subtly with breathing
+            // Ambient orb — shifts subtly with breathing.
+            // Uses a wide soft gradient instead of .blur() for GPU efficiency.
             Ellipse()
                 .fill(
                     RadialGradient(
                         colors: isDark
-                            ? [Color.indigo.opacity(0.08), .clear]
-                            : [Color.indigo.opacity(0.06), .clear],
+                            ? [Color.indigo.opacity(0.07), Color.indigo.opacity(0.03), .clear]
+                            : [Color.indigo.opacity(0.05), Color.indigo.opacity(0.02), .clear],
                         center: .center,
-                        startRadius: 10,
-                        endRadius: 260
+                        startRadius: 5,
+                        endRadius: 340
                     )
                 )
-                .frame(width: 500, height: 400)
+                .frame(width: 650, height: 520)
                 .offset(x: orbPhase * 30 - 15, y: -80 + orbPhase * 20)
-                .blur(radius: 40)
         }
         .ignoresSafeArea()
     }
@@ -348,17 +348,19 @@ struct LanguageSelectionView: View {
 
             // Text label
             VStack(spacing: 6) {
-                Text(selectedSource.displayName)
+                (Text(selectedSource.displayName)
                     .font(.title2.weight(.bold)) +
-                Text("  →  ") // non-breaking spaces around arrow
+                Text("  \u{2192}  ")
                     .font(.title2.weight(.light))
                     .foregroundColor(.secondary) +
                 Text(selectedTarget.name(in: selectedSource))
-                    .font(.title2.weight(.bold))
+                    .font(.title2.weight(.bold)))
+                .contentTransition(.interpolate)
 
                 Text("\(availableTargets.count) \(L.languagesAvailable)")
                     .font(.footnote.weight(.medium))
                     .foregroundStyle(.secondary)
+                    .contentTransition(.numericText())
                     .padding(.horizontal, 14)
                     .padding(.vertical, 5)
                     .background(
@@ -446,20 +448,24 @@ struct LanguageSelectionView: View {
 
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 12) {
-                    ForEach(Array(availableSources.enumerated()), id: \.element) { index, lang in
-                        sourceCard(lang, index: index)
+                    ForEach(availableSources, id: \.self) { lang in
+                        sourceCard(lang, index: 0)
                     }
                 }
+                .scrollTargetLayout()
                 .padding(.horizontal, 20)
             }
+            .scrollTargetBehavior(.viewAligned)
         }
         .opacity(appeared ? 1 : 0)
         .offset(y: appeared ? 0 : 20)
     }
 
+    @ViewBuilder
     private func sourceCard(_ lang: SupportedLanguage, index: Int) -> some View {
         let isSelected = lang == selectedSource
-        return Button {
+
+        Button {
             withAnimation(.spring(response: 0.45, dampingFraction: 0.75)) {
                 selectedSource = lang
                 if selectedTarget == lang || !LanguagePair(source: lang, target: selectedTarget).hasContent {
@@ -471,25 +477,13 @@ struct LanguageSelectionView: View {
                 // Flag badge
                 CountryFlagView(countryCode: lang.countryCode, size: 26)
                     .frame(width: 52, height: 52)
-                    .background(
-                        Circle()
-                            .fill(
-                                isSelected
-                                    ? AnyShapeStyle(
-                                        LinearGradient(
-                                            colors: [.indigo, .purple],
-                                            startPoint: .topLeading,
-                                            endPoint: .bottomTrailing
-                                        ))
-                                    : AnyShapeStyle(isDark ? Color.white.opacity(0.06) : Color.white)
-                            )
-                    )
+                    .background(sourceCardCircle(isSelected: isSelected))
                     .overlay(
                         Circle()
                             .strokeBorder(
                                 isSelected
-                                    ? AnyShapeStyle(Color.white.opacity(0.3))
-                                    : AnyShapeStyle(isDark ? Color.white.opacity(0.08) : Color.black.opacity(0.06)),
+                                    ? Color.white.opacity(0.3)
+                                    : (isDark ? Color.white.opacity(0.08) : Color.black.opacity(0.06)),
                                 lineWidth: 1.5
                             )
                     )
@@ -509,6 +503,23 @@ struct LanguageSelectionView: View {
             .padding(.vertical, 8)
         }
         .buttonStyle(LumenCardPressStyle(accentColor: isSelected ? .indigo : .clear))
+    }
+
+    @ViewBuilder
+    private func sourceCardCircle(isSelected: Bool) -> some View {
+        if isSelected {
+            Circle()
+                .fill(
+                    LinearGradient(
+                        colors: [.indigo, .purple],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                )
+        } else {
+            Circle()
+                .fill(isDark ? Color.white.opacity(0.06) : Color.white)
+        }
     }
 
     // MARK: - Connection Rail
@@ -588,8 +599,17 @@ struct LanguageSelectionView: View {
                     columns: [GridItem(.flexible(), spacing: 10), GridItem(.flexible(), spacing: 10)],
                     spacing: 10
                 ) {
-                    ForEach(Array(availableTargets.enumerated()), id: \.element) { index, lang in
-                        targetCard(lang, index: index)
+                    ForEach(availableTargets, id: \.self) { lang in
+                        TargetCardView(
+                            lang: lang,
+                            selectedSource: selectedSource,
+                            isSelected: lang == selectedTarget,
+                            isDark: isDark
+                        ) {
+                            withAnimation(.spring(response: 0.35, dampingFraction: 0.72)) {
+                                selectedTarget = lang
+                            }
+                        }
                     }
                 }
                 .padding(.horizontal, 16)
@@ -598,109 +618,6 @@ struct LanguageSelectionView: View {
         .animation(.spring(response: 0.5, dampingFraction: 0.85), value: selectedSource)
         .opacity(appeared ? 1 : 0)
         .offset(y: appeared ? 0 : 15)
-    }
-
-    private func targetCard(_ lang: SupportedLanguage, index: Int) -> some View {
-        let isSelected = lang == selectedTarget
-
-        return Button {
-            withAnimation(.spring(response: 0.35, dampingFraction: 0.72)) {
-                selectedTarget = lang
-            }
-        } label: {
-            HStack(spacing: 12) {
-                // Flag with selection ring
-                CountryFlagView(countryCode: lang.countryCode, size: 22)
-                    .frame(width: 38, height: 38)
-                    .background(
-                        Circle()
-                            .fill(
-                                isSelected
-                                    ? AnyShapeStyle(
-                                        LinearGradient(
-                                            colors: [.indigo.opacity(0.2), .purple.opacity(0.15)],
-                                            startPoint: .topLeading, endPoint: .bottomTrailing
-                                        ))
-                                    : AnyShapeStyle(isDark ? Color.white.opacity(0.04) : Color.white.opacity(0.8))
-                            )
-                    )
-                    .overlay(
-                        Circle()
-                            .strokeBorder(
-                                isSelected
-                                    ? AnyShapeStyle(
-                                        LinearGradient(colors: [.indigo, .purple],
-                                                       startPoint: .topLeading, endPoint: .bottomTrailing))
-                                    : AnyShapeStyle(Color.clear),
-                                lineWidth: 2
-                            )
-                    )
-
-                // Dual-line label
-                VStack(alignment: .leading, spacing: 2) {
-                    Text(lang.name(in: selectedSource))
-                        .font(.subheadline.weight(isSelected ? .semibold : .medium))
-                        .foregroundStyle(isSelected
-                                         ? (isDark ? .white : .indigo)
-                                         : .primary)
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.8)
-
-                    Text(lang.displayName)
-                        .font(.caption2.weight(.medium))
-                        .foregroundStyle(isSelected ? .indigo.opacity(0.7) : .secondary)
-                        .lineLimit(1)
-                }
-
-                Spacer(minLength: 0)
-
-                // Checkmark
-                if isSelected {
-                    Image(systemName: "checkmark.circle.fill")
-                        .font(.system(size: 18))
-                        .symbolRenderingMode(.hierarchical)
-                        .foregroundStyle(.indigo)
-                        .transition(.scale.combined(with: .opacity))
-                }
-            }
-            .padding(.leading, 10)
-            .padding(.trailing, 14)
-            .padding(.vertical, 12)
-            .background(targetCardBackground(isSelected: isSelected))
-        }
-        .buttonStyle(LumenCardPressStyle(accentColor: isSelected ? .indigo : .clear))
-    }
-
-    private func targetCardBackground(isSelected: Bool) -> some View {
-        RoundedRectangle(cornerRadius: 16)
-            .fill(
-                isSelected
-                    ? AnyShapeStyle(isDark
-                        ? Color.indigo.opacity(0.12)
-                        : Color.indigo.opacity(0.06))
-                    : AnyShapeStyle(isDark ? Color.white.opacity(0.04) : Color.white.opacity(0.85))
-            )
-            .overlay(
-                RoundedRectangle(cornerRadius: 16)
-                    .strokeBorder(
-                        isSelected
-                            ? AnyShapeStyle(
-                                LinearGradient(
-                                    colors: [.indigo.opacity(isDark ? 0.4 : 0.25), .purple.opacity(isDark ? 0.25 : 0.15)],
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
-                                ))
-                            : AnyShapeStyle(isDark ? Color.white.opacity(0.05) : Color.black.opacity(0.04)),
-                        lineWidth: isSelected ? 1.5 : 0.5
-                    )
-            )
-            .shadow(
-                color: isSelected
-                    ? .indigo.opacity(isDark ? 0.2 : 0.1)
-                    : .black.opacity(isDark ? 0.08 : 0.02),
-                radius: isSelected ? 10 : 3,
-                y: isSelected ? 3 : 1
-            )
     }
 
     // MARK: - Floating CTA
@@ -729,14 +646,29 @@ struct LanguageSelectionView: View {
 
                 Spacer()
 
-                Text(hasChanged ? L.confirm : L.done)
+                Text(hasChanged ? L.startYourAdventure : L.done)
                     .font(.headline)
                     .foregroundStyle(.white)
+                    .contentTransition(.interpolate)
 
-                Image(systemName: hasChanged ? "arrow.right.circle.fill" : "checkmark.circle.fill")
-                    .font(.headline)
-                    .foregroundStyle(.white.opacity(0.8))
-                    .symbolRenderingMode(.hierarchical)
+                Image(systemName: hasChanged ? "chevron.right" : "checkmark.circle.fill")
+                    .font(.system(size: hasChanged ? 13 : 17, weight: .bold))
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [.white, .white.opacity(0.6)],
+                            startPoint: .top, endPoint: .bottom
+                        )
+                    )
+                    .frame(width: 28, height: 28)
+                    .background(
+                        Circle()
+                            .fill(.white.opacity(hasChanged ? 0.15 : 0))
+                    )
+                    .overlay(
+                        Circle()
+                            .strokeBorder(.white.opacity(hasChanged ? 0.2 : 0), lineWidth: 1)
+                    )
+                    .contentTransition(.symbolEffect(.replace))
             }
             .padding(.horizontal, 22)
             .padding(.vertical, 16)
@@ -826,6 +758,125 @@ struct LanguageSelectionView: View {
         } else {
             let pref = LanguagePreference(source: selectedSource, target: selectedTarget)
             modelContext.insert(pref)
+        }
+    }
+}
+
+// MARK: - Target Card (Extracted for Diffing)
+
+/// Isolated struct so SwiftUI can diff each card independently
+/// without re-evaluating the entire grid body.
+private struct TargetCardView: View {
+    let lang: SupportedLanguage
+    let selectedSource: SupportedLanguage
+    let isSelected: Bool
+    let isDark: Bool
+    let onTap: () -> Void
+
+    var body: some View {
+        Button(action: onTap) {
+            HStack(spacing: 12) {
+                // Flag with selection ring
+                CountryFlagView(countryCode: lang.countryCode, size: 22)
+                    .frame(width: 38, height: 38)
+                    .background(flagCircle)
+                    .overlay(flagRing)
+
+                // Dual-line label
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(lang.name(in: selectedSource))
+                        .font(.subheadline.weight(isSelected ? .semibold : .medium))
+                        .foregroundStyle(isSelected
+                                         ? (isDark ? .white : .indigo)
+                                         : .primary)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.8)
+
+                    Text(lang.displayName)
+                        .font(.caption2.weight(.medium))
+                        .foregroundStyle(isSelected ? .indigo.opacity(0.7) : .secondary)
+                        .lineLimit(1)
+                }
+
+                Spacer(minLength: 0)
+
+                // Checkmark
+                if isSelected {
+                    Image(systemName: "checkmark.circle.fill")
+                        .font(.system(size: 18))
+                        .symbolRenderingMode(.hierarchical)
+                        .foregroundStyle(.indigo)
+                        .symbolEffect(.bounce, value: isSelected)
+                        .transition(.scale.combined(with: .opacity))
+                }
+            }
+            .padding(.leading, 10)
+            .padding(.trailing, 14)
+            .padding(.vertical, 12)
+            .background(cardBackground)
+        }
+        .buttonStyle(LumenCardPressStyle(accentColor: isSelected ? .indigo : .clear))
+    }
+
+    @ViewBuilder
+    private var flagCircle: some View {
+        if isSelected {
+            Circle()
+                .fill(
+                    LinearGradient(
+                        colors: [.indigo.opacity(0.2), .purple.opacity(0.15)],
+                        startPoint: .topLeading, endPoint: .bottomTrailing
+                    )
+                )
+        } else {
+            Circle()
+                .fill(isDark ? Color.white.opacity(0.04) : Color.white.opacity(0.8))
+        }
+    }
+
+    @ViewBuilder
+    private var flagRing: some View {
+        if isSelected {
+            Circle()
+                .strokeBorder(
+                    LinearGradient(colors: [.indigo, .purple],
+                                   startPoint: .topLeading, endPoint: .bottomTrailing),
+                    lineWidth: 2
+                )
+        } else {
+            Circle()
+                .strokeBorder(Color.clear, lineWidth: 2)
+        }
+    }
+
+    @ViewBuilder
+    private var cardBackground: some View {
+        if isSelected {
+            RoundedRectangle(cornerRadius: 16)
+                .fill(isDark ? Color.indigo.opacity(0.12) : Color.indigo.opacity(0.06))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16)
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: [.indigo.opacity(isDark ? 0.4 : 0.25), .purple.opacity(isDark ? 0.25 : 0.15)],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            ),
+                            lineWidth: 1.5
+                        )
+                )
+                .shadow(color: .indigo.opacity(isDark ? 0.2 : 0.1), radius: 10, y: 3)
+        } else {
+            RoundedRectangle(cornerRadius: 16)
+                .fill(isDark ? Color.white.opacity(0.04) : Color.white.opacity(0.85))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16)
+                        .strokeBorder(
+                            isDark ? Color.white.opacity(0.05) : Color.black.opacity(0.04),
+                            lineWidth: 0.5
+                        )
+                )
+                .shadow(color: .black.opacity(isDark ? 0.08 : 0.02), radius: 3, y: 1)
         }
     }
 }

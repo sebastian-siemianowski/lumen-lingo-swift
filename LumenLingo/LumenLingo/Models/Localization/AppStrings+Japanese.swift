@@ -47,6 +47,7 @@ extension AppStrings {
         confirm: "確認：",
         done: "完了",
         languagesAvailable: "言語が利用可能",
+        startYourAdventure: "冒険を始めよう",
 
         // Categories
         back: "戻る",

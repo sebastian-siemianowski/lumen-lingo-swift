@@ -47,6 +47,7 @@ extension AppStrings {
         confirm: "确认：",
         done: "完成",
         languagesAvailable: "种语言可用",
+        startYourAdventure: "开启你的冒险",
 
         // Categories
         back: "返回",
