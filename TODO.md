@@ -39,7 +39,7 @@ Expand all 17 beta language pairs to **105 categories × 15 items = 1,575 items*
 | 3 | english_arabic | English | 78/105 | 1170/1575 | 15/20 | 🔄 |
 | 4 | english_chinese | English | 52/105 | 780/1575 | 9/20 | 🔄 |
 | 5 | english_french | English | 105/105 | 1575/1575 | 21/21 | ✅ |
-| 6 | english_german | English | 67/105 | 1005/1575 | 13/20 | 🔄 |
+| 6 | english_german | English | 72/105 | 1080/1575 | 14/20 | 🔄 |
 | 7 | english_japanese | English | 105/105 | 1575/1575 | 21/21 | ✅ |
 | 8 | french_english | French | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 9 | german_polish | German | 105/105 | 1575/1575 | 20/20 | ✅ |
@@ -49,7 +49,7 @@ Expand all 17 beta language pairs to **105 categories × 15 items = 1,575 items*
 | 13 | polish_french | Polish | 83/105 | 1245/1575 | 15/20 | 🔄 |
 | 14 | polish_japanese | Polish | 17/105 | 255/1575 | 2/20 | 🔄 |
 | 15 | polish_ukrainian | Polish | 12/105 | 180/1575 | 1/20 | 🔄 |
-| 16 | ukrainian_english | Ukrainian | 43/105 | 645/1575 | 7/20 | 🔄 |
+| 16 | ukrainian_english | Ukrainian | 48/105 | 720/1575 | 8/20 | 🔄 |
 | 17 | ukrainian_polish | Ukrainian | 102/105 | 1530/1575 | 20/21 | 🔄 |
 
 ### arabic_english — ✅ COMPLETE (105/105 categories, 1575 items)
@@ -289,8 +289,8 @@ All 21 batches completed.
 | 20 | culture_society, sports_leisure, media_communication, politics_law, science_research | ✅ |
 | 21 | revision_generale, common_mistakes, exam_strategies | ✅ |
 
-### english_german — 🔄 IN PROGRESS (67/105 categories, 1005 items)
-ID prefixes used: eg_pres, eg_art, eg_past, eg_order, eg_case, eg_prep, eg_mod, eg_pp, eg_plq, eg_fut, eg_acc, eg_dat, eg_gen, eg_plu, eg_adj, eg_sep, eg_ref, eg_conj, eg_sub, eg_rel, eg_pv, eg_imp, eg_cmp, eg_sup, eg_adv, eg_neg, eg_qf, eg_pos, eg_dem, eg_ind, eg_per, eg_twp, eg_tp, eg_vp, eg_kii, eg_ki, eg_cond, eg_rs, eg_inf, eg_ptc, eg_ng, eg_cn, eg_wn, eg_sv, eg_mx, eg_hvs, eg_wu, eg_da, eg_wo, eg_di, eg_fp, eg_sw, eg_eo, eg_ms, eg_fi, eg_id, eg_ps, eg_te, eg_nq, eg_dm, eg_wf, eg_pf, eg_vpc, eg_apc, eg_npc, eg_es, eg_pov
+### english_german — 🔄 IN PROGRESS (72/105 categories, 1080 items)
+ID prefixes used: eg_pres, eg_art, eg_past, eg_order, eg_case, eg_prep, eg_mod, eg_pp, eg_plq, eg_fut, eg_acc, eg_dat, eg_gen, eg_plu, eg_adj, eg_sep, eg_ref, eg_conj, eg_sub, eg_rel, eg_pv, eg_imp, eg_cmp, eg_sup, eg_adv, eg_neg, eg_qf, eg_pos, eg_dem, eg_ind, eg_per, eg_twp, eg_tp, eg_vp, eg_kii, eg_ki, eg_cond, eg_rs, eg_inf, eg_ptc, eg_ng, eg_cn, eg_wn, eg_sv, eg_mx, eg_hvs, eg_wu, eg_da, eg_wo, eg_di, eg_fp, eg_sw, eg_eo, eg_ms, eg_fi, eg_id, eg_ps, eg_te, eg_nq, eg_dm, eg_wf, eg_pf, eg_vpc, eg_apc, eg_npc, eg_es, eg_pov, eg_las, eg_mp, eg_disc, eg_lw, eg_emph
 
 | Batch | Categories | Status |
 |-------|-----------|--------|
@@ -307,7 +307,7 @@ ID prefixes used: eg_pres, eg_art, eg_past, eg_order, eg_case, eg_prep, eg_mod, 
 | 11 | expressing_opinions, making_suggestions, formal_vs_informal, idiomatic_expressions, proverbs_sayings | ✅ |
 | 12 | time_expressions, numbers_quantities, diminutives, word_formation, prefixes_suffixes | ✅ |
 | 13 | verb_preposition_combos, adjective_preposition_combos, noun_preposition_combos, es_constructions, position_verbs | ✅ |
-| 14 | lassen_constructions, modal_particles, discourse_markers, linking_words, emphasis_structures | ⬜ |
+| 14 | lassen_constructions, modal_particles, discourse_markers, linking_words, emphasis_structures | ✅ |
 | 15 | weather_climate, at_restaurant, shopping_expressions, telephone_phrases, formal_writing | ⬜ |
 | 16 | workplace_office, emotions_reactions, travel_vacation, health_body, education_school | ⬜ |
 | 17 | technology_internet, environment_nature, sports_hobbies, family_relationships, housing_home | ⬜ |
@@ -419,8 +419,8 @@ ID prefixes used: je_art, je_subj, je_pres, je_past, je_fut, je_mod, je_pp, je_p
 | 19 | reported_speech_advanced, passive_voice_advanced, relative_clauses_advanced, emphasis_fronting, verb_patterns | ⬜ |
 | 20 | noun_modifiers, register_formality, exam_strategies | ⬜ |
 
-### ukrainian_english — 🔄 IN PROGRESS (43/105 categories, 645 items)
-ID prefixes used: ue_ps, ue_art, ue_past, ue_fut, ue_q, ue_cm, ue_pp, ue_pc, ue_mv, ue_ppc, ue_paco, ue_ppf, ue_czf, ue_cst, ue_pv, ue_rs, ue_rc, ue_cs, ue_pb, ue_pa, ue_gi, ue_pvb, ue_qt, ue_sva, ue_qn, ue_det, ue_cj, ue_af, ue_am, ue_cu, ue_pos, ue_rp, ue_ip, ue_dem, ue_pva, ue_pva_col, ue_col, ue_wo, ue_cle, ue_inv, ue_wh, ue_ut, ue_wr, ue_hb
+### ukrainian_english — 🔄 IN PROGRESS (48/105 categories, 720 items)
+ID prefixes used: ue_ps, ue_art, ue_past, ue_fut, ue_q, ue_cm, ue_pp, ue_pc, ue_mv, ue_ppc, ue_paco, ue_ppf, ue_czf, ue_cst, ue_pv, ue_rs, ue_rc, ue_cs, ue_pb, ue_pa, ue_gi, ue_pvb, ue_qt, ue_sva, ue_qn, ue_det, ue_cj, ue_af, ue_am, ue_cu, ue_pos, ue_rp, ue_ip, ue_dem, ue_pva, ue_pva_col, ue_col, ue_wo, ue_cle, ue_inv, ue_wh, ue_ut, ue_wr, ue_hb, ue_bst, ue_cau, ue_ptc, ue_nc, ue_ell
 
 | Batch | Categories | Status |
 |-------|-----------|--------|
@@ -431,8 +431,8 @@ ID prefixes used: ue_ps, ue_art, ue_past, ue_fut, ue_q, ue_cm, ue_pp, ue_pc, ue_
 | 5 | adverbs_manner, countable_uncountable, possessives, reflexive_pronouns, indefinite_pronouns | ✅ |
 | 6 | demonstratives, phrasal_verbs_advanced, collocations, word_order, cleft_sentences | ✅ |
 | 7 | inversion, wish_hope, used_to, would_rather, had_better | ✅ |
-| 8 | be_supposed_to, causative_have_get, participle_clauses, noun_clauses, ellipsis | ⬜ |
-| 9 | ellipsis, substitution, emphasis_structures, discourse_markers, linking_words | ⬜ |
+| 8 | be_supposed_to, causative_have_get, participle_clauses, noun_clauses, ellipsis | ✅ |
+| 9 | substitution, emphasis_structures, discourse_markers, linking_words, hedging | ⬜ |
 | 10 | hedging, formal_register, informal_register, academic_writing, expressing_opinions | ⬜ |
 | 11 | making_suggestions, agreeing_disagreeing, requests_offers, complaints_apologies, describing_trends | ⬜ |
 | 12 | describing_processes, cause_effect, contrast_concession, time_expressions, future_forms_advanced | ⬜ |

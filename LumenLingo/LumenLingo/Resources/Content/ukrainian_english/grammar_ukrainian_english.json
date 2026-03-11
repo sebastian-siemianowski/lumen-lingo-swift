@@ -8813,5 +8813,1030 @@
         "explanation": "HAD BETTER MAKE SURE (підсумок теми): 'You'd better MAKE SURE you've locked all the doors'. MAKE SURE = переконатися. HAD BETTER + MAKE SURE = настійна порада перевірити. Підсумок трьох конструкцій: 1) HAD BETTER + V = сильна порада з попередженням, bare infinitive; 2) OUGHT TO + V = м'яка порада, моральний обов'язок, з TO; 3) SHOULD + V = загальна порада, без TO. Шкала сили: MUST > HAD BETTER > SHOULD/OUGHT TO > COULD. В українській: 'Краще переконайся', 'Тобі варто перевірити' — різні ступені настійності."
       }
     ]
+  },
+  {
+    "key": "be_supposed_to",
+    "name": "Be Supposed To",
+    "description": "Очікування та правила (be supposed to)",
+    "iconName": "hand.raised.fill",
+    "color": "#0284c7",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ue_bst1",
+        "question": "You are _____ to wear a uniform at school.",
+        "translation": "(Ти маєш носити форму в школі.)",
+        "options": [
+          "supposed",
+          "suppose",
+          "supposing",
+          "supposes"
+        ],
+        "correct": "supposed",
+        "explanation": "BE SUPPOSED TO + INFINITIVE (правило/очікування): 'You ARE SUPPOSED TO wear a uniform' = 'Від тебе очікується / ти маєш носити форму'. BE SUPPOSED TO виражає зовнішнє очікування — правило, норму, домовленість. Це НЕ особиста думка, а те, що ІНШІ очікують чи що ПРАВИЛА вимагають. 'Students are supposed to arrive on time', 'You're supposed to take off your shoes'. В українській: 'Від тебе очікується', 'Ти маєш', 'Тобі слід' — обов'язок, не внутрішнє бажання. Менш суворе за MUST, більш зовнішнє за SHOULD."
+      },
+      {
+        "id": "ue_bst2",
+        "question": "What time _____ supposed to start?",
+        "translation": "(О котрій годині мало початися?)",
+        "options": [
+          "is it",
+          "does it",
+          "has it",
+          "was it"
+        ],
+        "correct": "is it",
+        "explanation": "IS IT SUPPOSED TO (питальна форма): 'What time IS IT SUPPOSED TO start?' = 'О котрій має початися?'. Питання формується інверсією BE: IS/ARE + S + SUPPOSED TO + V. Ще: 'Are we supposed to bring anything?', 'Am I supposed to know this?', 'Is she supposed to be here?'. Це типове питання для з'ясування планів та очікувань. Часто з відтінком невпевненості: 'Am I supposed to tip?' (чи тут прийнято давати чайові?). В українській: 'Що мало бути?', 'Коли ми маємо...?' — теж зовнішнє очікування."
+      },
+      {
+        "id": "ue_bst3",
+        "question": "You're not _____ to use your phone during the exam.",
+        "translation": "(Тобі не дозволено користуватися телефоном під час іспиту.)",
+        "options": [
+          "supposed",
+          "suppose",
+          "supposing",
+          "supposedly"
+        ],
+        "correct": "supposed",
+        "explanation": "NOT SUPPOSED TO (заборона/правило): 'You're NOT SUPPOSED TO use your phone' = 'Тобі не дозволяється / не слід користуватися'. NOT SUPPOSED TO = м'яка заборона. М'якше за MUSTN'T (сувора заборона), але чіткіше за SHOULDN'T (порада). Підтекст: є правило, і ти його порушуєш або можеш порушити. 'You're not supposed to park here' (тут не можна паркуватися — є знак). 'We're not supposed to talk about it' (нам не слід — домовленість). В українській: 'Не дозволяється', 'Не слід', 'Заборонено' — різні ступені суворості."
+      },
+      {
+        "id": "ue_bst4",
+        "question": "The meeting was _____ to finish at 3, but it went on until 5.",
+        "translation": "(Зустріч мала закінчитися о 3-й, але тривала до 5-ї.)",
+        "options": [
+          "supposed",
+          "suppose",
+          "supposing",
+          "supposedly"
+        ],
+        "correct": "supposed",
+        "explanation": "WAS SUPPOSED TO (план, який не здійснився): 'The meeting WAS SUPPOSED TO finish at 3' = 'Зустріч мала закінчитися о 3-й (але не закінчилася)'. WAS/WERE SUPPOSED TO = минулий план або очікування, яке НЕ ЗБУЛОСЯ. Це ключове використання! 'I was supposed to call her' (мав подзвонити, але не подзвонив). 'They were supposed to arrive at 6' (мали приїхати, але не приїхали). Контраст: 'supposed to' → 'but...'. В українській: 'Мала закінчитися', 'Мав приїхати' — минулий час + 'але...'."
+      },
+      {
+        "id": "ue_bst5",
+        "question": "This medicine is _____ to relieve headaches.",
+        "translation": "(Цей лікарський засіб має полегшувати головний біль.)",
+        "options": [
+          "supposed",
+          "suppose",
+          "supposing",
+          "supposes"
+        ],
+        "correct": "supposed",
+        "explanation": "BE SUPPOSED TO (загальна думка/репутація): 'This medicine IS SUPPOSED TO relieve headaches' = 'Цей лікарський засіб, як вважається, полегшує головний біль'. Ще одне значення BE SUPPOSED TO — 'кажуть, що', 'вважається, що'. Не особистий досвід, а загальне переконання. 'This restaurant is supposed to be excellent' (кажуть, відмінний). 'He's supposed to be very talented' (вважається дуже талановитим). В українській: 'Як кажуть', 'Вважається, що', 'Має бути' — з відтінком чужої думки, не власної."
+      },
+      {
+        "id": "ue_bst6",
+        "question": "I _____ supposed to be on holiday, but I'm working instead.",
+        "translation": "(Я мав бути у відпустці, але замість цього працюю.)",
+        "options": [
+          "am",
+          "was",
+          "have",
+          "do"
+        ],
+        "correct": "am",
+        "explanation": "AM SUPPOSED TO (теперішній контраст з реальністю): 'I AM supposed to be on holiday' = 'Я маю бути у відпустці (але не у відпустці)'. Present tense BE SUPPOSED TO + but... = контраст між планом і реальністю ЗАРАЗ. Це відрізняється від WAS SUPPOSED TO (минулий нездійснений план). 'I'm supposed to be studying' (маю вчитися, але не вчуся). 'She's supposed to be resting' (мала б відпочивати). Часто з легким не вдоволенням чи іронією. В українській: 'Я мав би бути', 'Вона мала б відпочивати' — умовний спосіб."
+      },
+      {
+        "id": "ue_bst7",
+        "question": "How am I _____ to know that?",
+        "translation": "(Звідки мені це знати?)",
+        "options": [
+          "supposed",
+          "suppose",
+          "supposing",
+          "supposedly"
+        ],
+        "correct": "supposed",
+        "explanation": "HOW AM I SUPPOSED TO (риторичне запитання / роздратування): 'How am I SUPPOSED TO know?' = 'Як я можу це знати?' / 'Звідки мені знати?'. Це емоційне, часто роздратоване запитання. Підтекст: 'ви очікуєте від мене чогось нереалістичного'. Ще: 'How am I supposed to finish this in one day?', 'How are we supposed to afford that?'. Часто в суперечках або стресових ситуаціях. В українській: 'Як я маю це знати?!', 'Звідки мені знати?!' — емоційне, з окличним знаком. Дуже природний розмовний зворот."
+      },
+      {
+        "id": "ue_bst8",
+        "question": "The train is _____ to arrive at platform 3.",
+        "translation": "(Поїзд має прибути на платформу 3.)",
+        "options": [
+          "supposed",
+          "suppose",
+          "supposing",
+          "supposes"
+        ],
+        "correct": "supposed",
+        "explanation": "BE SUPPOSED TO для розкладів/планів: 'The train IS SUPPOSED TO arrive at platform 3' = 'Поїзд має / повинен прибути на платформу 3'. Для транспорту, подій, планів — BE SUPPOSED TO вказує на ЗАПЛАНОВАНИЙ порядок. Не 100% гарантія (на відміну від розкладу), а ОЧІКУВАННЯ. Якщо поїзд запізнюється: 'It was supposed to arrive at 5' (мав приїхати о 5-й). Ще: 'The show is supposed to start at 8', 'We're supposed to meet at the café'. В українській: 'Має прибути', 'За розкладом має' — переконання, не факт."
+      },
+      {
+        "id": "ue_bst9",
+        "question": "You're _____ supposed to tell anyone. It's a secret!",
+        "translation": "(Ти нікому не маєш говорити. Це секрет!)",
+        "options": [
+          "not",
+          "no",
+          "none",
+          "never"
+        ],
+        "correct": "not",
+        "explanation": "NOT SUPPOSED TO (збереження секрету): 'You're NOT SUPPOSED TO tell anyone' = 'Тобі не можна нікому розповідати'. NOT SUPPOSED TO для конфіденційної інформації — м'якше за MUSTN'T, але чітко вказує на домовленість чи правило. 'I'm not supposed to tell you this, but...' — класичний зворот перед тим, як хтось все ж розповідає секрет (іронія!). Ще: 'We're not supposed to know about the surprise party'. В українській: 'Тобі не можна', 'Ти не маєш' — заборона-домовленість."
+      },
+      {
+        "id": "ue_bst10",
+        "question": "She was supposed _____ the report yesterday.",
+        "translation": "(Вона мала подати звіт учора.)",
+        "options": [
+          "to submit",
+          "submit",
+          "submitting",
+          "submitted"
+        ],
+        "correct": "to submit",
+        "explanation": "WAS SUPPOSED TO + INFINITIVE (невиконаний обов'язок): 'She was supposed TO SUBMIT the report' = 'Вона мала подати звіт (але не подала)'. Завжди TO + bare infinitive після SUPPOSED. WAS SUPPOSED TO = минулий нездійснений план. Підтекст: щось пішло не так. 'He was supposed to pick us up', 'They were supposed to call back'. Дуже часто в діловому контексті: пропущені дедлайни, невиконані завдання. В українській: 'Мала подати', 'Повинна була подати' — минулий обов'язок + підтекст невиконання."
+      },
+      {
+        "id": "ue_bst11",
+        "question": "This road isn't supposed _____ used by heavy vehicles.",
+        "translation": "(Ця дорога не призначена для важких транспортних засобів.)",
+        "options": [
+          "to be",
+          "to being",
+          "be",
+          "being"
+        ],
+        "correct": "to be",
+        "explanation": "ISN'T SUPPOSED TO BE + V3 (пасивна конструкція): 'This road isn't supposed TO BE USED' = 'Ця дорога не має використовуватися'. BE SUPPOSED TO можна поєднати з пасивним станом: SUPPOSED TO BE + Past Participle. 'This door isn't supposed to be opened', 'These files aren't supposed to be shared'. Це правила та обмеження для об'єктів (не людей). В українській: 'Не призначена для', 'Не має використовуватися' — пасивні конструкції з заборонним відтінком. Формальний стиль."
+      },
+      {
+        "id": "ue_bst12",
+        "question": "We were supposed to go to the beach, but it _____.",
+        "translation": "(Ми мали їхати на пляж, але пішов дощ.)",
+        "options": [
+          "rained",
+          "rains",
+          "raining",
+          "was raining"
+        ],
+        "correct": "rained",
+        "explanation": "WAS SUPPOSED TO + BUT (зруйновані плани): 'We were supposed to go, BUT IT RAINED' = 'Ми мали їхати, але пішов дощ'. Класична структура: WAS SUPPOSED TO + plan, BUT + reason it didn't happen. Past Simple в обох частинах (supposed → plan; rained → reason). Ще: 'I was supposed to cook, but I ordered pizza instead', 'She was supposed to come, but she got sick'. Це оповідальний стиль — розповідь про день, що пішов не за планом. В українській: 'Мали... але...' — контраст плану і реальності."
+      },
+      {
+        "id": "ue_bst13",
+        "question": "What are we _____ to do now?",
+        "translation": "(Що нам тепер робити?)",
+        "options": [
+          "supposed",
+          "suppose",
+          "supposing",
+          "supposedly"
+        ],
+        "correct": "supposed",
+        "explanation": "WHAT ARE WE SUPPOSED TO DO (розгубленість): 'What are we SUPPOSED TO do now?' = 'Що нам тепер робити?'. Це питання в ситуації невизначеності — коли план змінився або виникла проблема. Частий зворот у повсякденному мовленні та фільмах. Ще: 'What am I supposed to say?', 'Where are we supposed to go?', 'Who is supposed to be in charge?'. Тон: від нейтрального до розчарованого. В українській: 'Що нам робити?', 'Як нам бути?' — пряме запитання без складних конструкцій."
+      },
+      {
+        "id": "ue_bst14",
+        "question": "Supposedly, the new restaurant _____ really good food.",
+        "translation": "(Кажуть, новий ресторан має дуже смачну їжу.)",
+        "options": [
+          "has",
+          "have",
+          "having",
+          "had"
+        ],
+        "correct": "has",
+        "explanation": "SUPPOSEDLY (прислівник — 'кажуть, що'): 'SUPPOSEDLY, the restaurant has good food' = 'Кажуть, ресторан має смачну їжу'. SUPPOSEDLY — прислівник від SUPPOSE. Значення: 'як стверджують', 'за словами інших'. Може бути нейтральним ('Supposedly, she's moving') або скептичним ('Supposedly, he's an expert' — 'нібито він експерт'). Різниця: BE SUPPOSED TO = очікування/правило; SUPPOSEDLY = 'кажуть, що' (інша людина). В українській: 'Кажуть, що', 'Нібито', 'За словами' — різні рівні довіри."
+      },
+      {
+        "id": "ue_bst15",
+        "question": "I suppose I _____ apologize for being late.",
+        "translation": "(Мабуть, мені слід вибачитися за запізнення.)",
+        "options": [
+          "should",
+          "supposed",
+          "am supposed",
+          "was supposed"
+        ],
+        "correct": "should",
+        "explanation": "I SUPPOSE + SHOULD (неохоча згода): 'I suppose I SHOULD apologize' = 'Мабуть, мені слід вибачитися'. I SUPPOSE = 'гадаю, мабуть' — вираження невпевненої або неохочої згоди. Це НЕ те саме, що BE SUPPOSED TO! I SUPPOSE = особиста думка, BE SUPPOSED TO = зовнішнє очікування. 'I suppose you're right', 'I suppose we could try', 'I don't suppose you know...'. Підсумок: SUPPOSE (verb) = гадати, вважати; BE SUPPOSED TO = мати, очікуватися; SUPPOSEDLY = кажуть, що. В українській: 'Гадаю', 'Мабуть' — невпевненість."
+      }
+    ]
+  },
+  {
+    "key": "causative_have_get",
+    "name": "Causative (Have/Get)",
+    "description": "Каузативні конструкції (have/get something done)",
+    "iconName": "wrench.and.screwdriver.fill",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ue_cau1",
+        "question": "I had my hair _____ yesterday.",
+        "translation": "(Мені вчора підстригли волосся.)",
+        "options": [
+          "cut",
+          "cutting",
+          "to cut",
+          "cuts"
+        ],
+        "correct": "cut",
+        "explanation": "HAVE + OBJECT + PAST PARTICIPLE (каузатив): 'I had my hair CUT' = 'Я замовив стрижку / мені підстригли'. HAVE + об'єкт + V3 означає, що хтось ІНШИЙ виконує дію ДЛЯ ВАС (зазвичай за плату чи за домовленістю). Ви НЕ стрижете себе самі — ви йдете до перукаря. Ще: 'I had my car repaired' (мені полагодили машину), 'She had her nails done' (їй зробили манікюр). В українській: 'Мені підстригли', 'Мені полагодили' — давальний відмінок + дія, виконана іншим. Дуже поширена конструкція."
+      },
+      {
+        "id": "ue_cau2",
+        "question": "We need to get the roof _____.",
+        "translation": "(Нам потрібно полагодити дах.)",
+        "options": [
+          "repaired",
+          "repair",
+          "repairing",
+          "to repair"
+        ],
+        "correct": "repaired",
+        "explanation": "GET + OBJECT + PAST PARTICIPLE: 'We need to get the roof REPAIRED' = 'Нам потрібно, щоб нам полагодили дах'. GET + об'єкт + V3 = те саме значення, що й HAVE + об'єкт + V3, але більш розмовний стиль. HAVE = формальніший, GET = повсякденніший. 'I need to get my phone fixed' (= I need to have my phone fixed). 'She got her dress cleaned' (= She had her dress cleaned). В розмовній мові GET значно частіший. В українській різниці немає: 'Нам треба полагодити дах' — одна конструкція для обох."
+      },
+      {
+        "id": "ue_cau3",
+        "question": "She had the mechanic _____ her car.",
+        "translation": "(Вона попросила механіка перевірити її машину.)",
+        "options": [
+          "check",
+          "checked",
+          "checking",
+          "to check"
+        ],
+        "correct": "check",
+        "explanation": "HAVE + PERSON + BARE INFINITIVE (каузатив з виконавцем): 'She had the mechanic CHECK her car' = 'Вона наказала/попросила механіка перевірити'. Коли ВКАЗУЄМО ВИКОНАВЦЯ, структура інша: HAVE + person + base verb (без TO, без V3!). Порівняйте: 'I had my car checked' (хтось перевірив — невідомо хто) vs 'I had the mechanic check my car' (конкретна людина). HAVE тут = 'наказати / домовитися, щоб хтось зробив'. В українській: 'Попросила механіка перевірити' — з конкретним виконавцем. Різниця в увазі до того, ХТО робить."
+      },
+      {
+        "id": "ue_cau4",
+        "question": "I got my friend _____ me move to a new flat.",
+        "translation": "(Я попросив друга допомогти мені переїхати.)",
+        "options": [
+          "to help",
+          "help",
+          "helped",
+          "helping"
+        ],
+        "correct": "to help",
+        "explanation": "GET + PERSON + TO + INFINITIVE: 'I got my friend TO HELP me' = 'Мені вдалося переконати друга допомогти'. GET + person + TO + V = переконати, домовитися. На відміну від HAVE (нейтральне), GET підкреслює ЗУСИЛЛЯ переконання. 'I got her to agree' (переконав її погодитися), 'We got the landlord to fix the heating' (домовилися з орендодавцем). Ключова різниця: HAVE + person + V (without TO) vs GET + person + TO + V (with TO). В українській: 'Переконав / домовився, щоб...' — з відтінком зусилля."
+      },
+      {
+        "id": "ue_cau5",
+        "question": "Where can I get this document _____?",
+        "translation": "(Де я можу завірити цей документ?)",
+        "options": [
+          "notarized",
+          "notarize",
+          "notarizing",
+          "to notarize"
+        ],
+        "correct": "notarized",
+        "explanation": "GET + OBJ + V3 (практичне питання): 'Where can I get this document NOTARIZED?' = 'Де я можу це завірити?'. GET + OBJ + V3 в питальній формі — дуже практична конструкція для повсякденних послуг. Ще: 'Where can I get my watch fixed?', 'Where can I get my photos printed?', 'Where can I get this translated?'. Це типове питання в чужому місті або країні. В українській: 'Де я можу завірити...?', 'Де можна полагодити...?' — питання з інфінітивом. Обидні мови — про послуги іншої людини."
+      },
+      {
+        "id": "ue_cau6",
+        "question": "He had his wallet _____ on the bus.",
+        "translation": "(В нього вкрали гаманець в автобусі.)",
+        "options": [
+          "stolen",
+          "steal",
+          "stealing",
+          "to steal"
+        ],
+        "correct": "stolen",
+        "explanation": "HAVE + OBJ + V3 (негативна подія): 'He had his wallet STOLEN' = 'В нього вкрали гаманець'. HAVE + OBJ + V3 може описувати НЕБАЖАНІ події — речі, що сталися з вами без вашого контролю. 'She had her purse snatched', 'I had my car broken into', 'We had our flight cancelled'. Тут HAVE = 'зазнати', не 'замовити'. Контекст підказує значення: 'I had my hair cut' (замовив) vs 'I had my phone stolen' (зазнав). В українській: 'В мене вкрали', 'Мені скасували рейс' — непрямий об'єкт."
+      },
+      {
+        "id": "ue_cau7",
+        "question": "She's getting her flat _____ next week.",
+        "translation": "(Їй ремонтуватимуть квартиру наступного тижня.)",
+        "options": [
+          "renovated",
+          "renovate",
+          "renovating",
+          "to renovate"
+        ],
+        "correct": "renovated",
+        "explanation": "GET + OBJ + V3 (заплановане): 'She's getting her flat RENOVATED next week' = 'Їй ремонтуватимуть квартиру'. GET + OBJ + V3 в Present Continuous = запланована послуга в майбутньому. Ще: 'I'm getting my teeth cleaned tomorrow', 'We're getting the kitchen painted'. Це дуже природний спосіб говорити про заплановані побутові послуги. В діловому спілкуванні: 'We're getting the software updated', 'They're getting the system installed'. В українській: 'Їй ремонтуватимуть' — майбутній час з підтекстом, що хтось інший виконує роботу."
+      },
+      {
+        "id": "ue_cau8",
+        "question": "I must have this report _____ by Friday.",
+        "translation": "(Мені потрібно, щоб цей звіт був готовий до п'ятниці.)",
+        "options": [
+          "finished",
+          "finish",
+          "finishing",
+          "to finish"
+        ],
+        "correct": "finished",
+        "explanation": "MUST HAVE + OBJ + V3 (терміновий обов'язок): 'I must HAVE this report FINISHED by Friday'. HAVE + OBJ + V3 можна комбінувати з модальними дієсловами: MUST HAVE done, NEED TO HAVE done, WANT TO HAVE done. 'I need to have my suit cleaned', 'She wants to have her portrait painted'. MUST тут додає терміновості і обов'язковості. Зверніть увагу: 'I must have it finished' = хтось інший завершить АБО я сам (залежить від контексту). В українській: 'Потрібно, щоб було готове', 'Треба завершити' — обов'язок + дедлайн."
+      },
+      {
+        "id": "ue_cau9",
+        "question": "She couldn't get the computer _____.",
+        "translation": "(Вона не могла увімкнути комп'ютер.)",
+        "options": [
+          "to work",
+          "work",
+          "worked",
+          "working"
+        ],
+        "correct": "to work",
+        "explanation": "GET + OBJ + TO + INFINITIVE (змусити предмет працювати): 'She couldn't get the computer TO WORK' = 'Вона не могла змусити комп'ютер працювати'. GET + object (річ) + TO + V = 'змусити щось працювати/функціонувати'. Це НЕ про послугу, а про зусилля з технікою. 'I can't get the printer to print', 'He couldn't get the door to open', 'We got the engine to start'. Часто з CAN'T/COULDN'T — щось не працює. В українській: 'Не могла увімкнути', 'Не вдалося запустити' — зусилля з технікою."
+      },
+      {
+        "id": "ue_cau10",
+        "question": "You should have your eyes _____ regularly.",
+        "translation": "(Тобі слід регулярно перевіряти зір.)",
+        "options": [
+          "tested",
+          "test",
+          "testing",
+          "to test"
+        ],
+        "correct": "tested",
+        "explanation": "SHOULD HAVE + OBJ + V3 (порада про послугу): 'You should HAVE your eyes TESTED' = 'Тобі слід перевірити зір (у лікаря)'. SHOULD + HAVE + OBJ + V3 = порада скористатися послугою. Ще: 'You should have your blood pressure checked', 'Everyone should have their teeth cleaned twice a year'. Дуже типова медична порада. HAVE тут = 'замовити послугу'. В українській: 'Тобі слід перевірити зір' — інфінітив, без складної каузативної конструкції. Англійська чіткіше вказує, що ВИ не робите це самі."
+      },
+      {
+        "id": "ue_cau11",
+        "question": "The teacher made the students _____ the exercise again.",
+        "translation": "(Вчитель змусив учнів переробити вправу.)",
+        "options": [
+          "do",
+          "to do",
+          "doing",
+          "done"
+        ],
+        "correct": "do",
+        "explanation": "MAKE + PERSON + BARE INFINITIVE (примус): 'The teacher MADE the students DO it again'. MAKE + person + V (without TO) = ЗМУСИТИ. Це сильніший каузатив — немає вибору. 'My boss made me work overtime', 'The rain made us stay inside'. MAKE = примус, HAVE = домовленість/наказ, GET = переконання. Шкала: GET (м'яко) → HAVE (нейтрально) → MAKE (сильно). АЛЕ в пасиві MAKE потребує TO: 'I was MADE TO do it'. В українській: 'Змусив зробити', 'Примусив переробити' — дієслово 'змусити' + інфінітив."
+      },
+      {
+        "id": "ue_cau12",
+        "question": "The joke made everyone _____.",
+        "translation": "(Жарт розсмішив усіх.)",
+        "options": [
+          "laugh",
+          "to laugh",
+          "laughed",
+          "laughing"
+        ],
+        "correct": "laugh",
+        "explanation": "MAKE + PERSON + V (спонтанна реакція): 'The joke made everyone LAUGH'. MAKE + person + V для спонтанних емоційних реакцій: 'The movie made me cry', 'The news made her smile', 'That smell makes me feel sick'. Тут MAKE = 'викликати реакцію', не 'примусити'. Ніхто не ПРИМУШУЄ сміятися — жарт ВИКЛИКАЄ сміх. Це природна причинно-наслідкова конструкція. Дуже частий зворот у розмовній мові. В українській: 'Жарт розсмішив', 'Фільм розплакав мене' — каузативні префікси (роз-)."
+      },
+      {
+        "id": "ue_cau13",
+        "question": "She let her children _____ up late on weekends.",
+        "translation": "(Вона дозволяла дітям пізно лягати на вихідних.)",
+        "options": [
+          "stay",
+          "to stay",
+          "staying",
+          "stayed"
+        ],
+        "correct": "stay",
+        "explanation": "LET + PERSON + BARE INFINITIVE (дозвіл): 'She LET her children STAY up late'. LET + person + V (without TO) = ДОЗВОЛИТИ. Це протилежність MAKE (примус) — тут ДОЗВІЛ. 'Let me help you', 'My parents let me go to the party', 'Don't let anyone see this'. Шкала каузативів: LET (дозвіл) ↔ HAVE/GET (домовленість) ↔ MAKE (примус). В пасиві LET рідко вживається — замість нього BE ALLOWED TO: 'I was allowed to stay'. В українській: 'Дозволяла', 'Дала дозвіл' — дієслово 'дозволити' + інфінітив."
+      },
+      {
+        "id": "ue_cau14",
+        "question": "They had the whole house _____.",
+        "translation": "(Вони пофарбували весь будинок (найнявши когось).)",
+        "options": [
+          "painted",
+          "paint",
+          "painting",
+          "to paint"
+        ],
+        "correct": "painted",
+        "explanation": "HAVE + OBJ + V3 (великий проєкт): 'They had the whole house PAINTED' = 'Вони пофарбували будинок (найнявши маляра)'. HAVE + OBJ + V3 для серйозних проєктів: ремонт, будівництво, послуги. 'We had the garden landscaped', 'They had a swimming pool built', 'She had the entire kitchen redesigned'. Якщо б вони фарбували САМІ, було б: 'They painted the house'. HAVE + V3 чітко вказує: хтось ІНШИЙ працював. В українській різниця менш чітка: 'Вони пофарбували будинок' — непрозоро, хто саме фарбував."
+      },
+      {
+        "id": "ue_cau15",
+        "question": "I'll get him _____ you back as soon as possible.",
+        "translation": "(Я зроблю так, щоб він передзвонив вам якнайшвидше.)",
+        "options": [
+          "to call",
+          "call",
+          "called",
+          "calling"
+        ],
+        "correct": "to call",
+        "explanation": "GET + PERSON + TO + V (підсумок): 'I'll GET him TO CALL you back' = 'Я домовлюся, щоб він передзвонив'. Підсумок усіх каузативних конструкцій: 1) HAVE/GET + OBJ + V3 = послуга (I had/got my car repaired); 2) HAVE + person + V = доручити (I had him check); 3) GET + person + TO V = переконати (I got her to agree); 4) MAKE + person + V = змусити (She made me do it); 5) LET + person + V = дозволити (Let me go). В українській один зворот: 'Зробити так, щоб...' або конкретні дієслова: 'попросити', 'змусити', 'дозволити'."
+      }
+    ]
+  },
+  {
+    "key": "participle_clauses",
+    "name": "Participle Clauses",
+    "description": "Дієприкметникові звороти",
+    "iconName": "text.alignleft",
+    "color": "#0d9488",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ue_ptc1",
+        "question": "_____ the door, she noticed a strange noise.",
+        "translation": "(Відкриваючи двері, вона помітила дивний шум.)",
+        "options": [
+          "Opening",
+          "Opened",
+          "Having opened",
+          "To open"
+        ],
+        "correct": "Opening",
+        "explanation": "PRESENT PARTICIPLE CLAUSE (одночасність): 'OPENING the door, she noticed...' = 'Відкриваючи двері, вона помітила...'. V-ING на початку речення замінює підрядне часу: 'While she was opening the door' → 'Opening the door'. Обидві дії відбуваються ОДНОЧАСНО. Підмет ОБОХ частин повинен бути ОДИН і ТОЙ ЖЕ (she)! Ще: 'Walking home, I saw a rainbow', 'Reading the book, he fell asleep'. В українській: дієприслівник 'Відкриваючи' — ідентична конструкція. Елегантний літературний стиль."
+      },
+      {
+        "id": "ue_ptc2",
+        "question": "_____ finished the exam, the students left the room.",
+        "translation": "(Закінчивши іспит, студенти вийшли з кімнати.)",
+        "options": [
+          "Having",
+          "Have",
+          "Had",
+          "Being"
+        ],
+        "correct": "Having",
+        "explanation": "HAVING + V3 (попередність): 'HAVING FINISHED the exam, the students left' = 'Закінчивши іспит, студенти вийшли'. HAVING + Past Participle = перша дія завершилася ПЕРЕД другою. Замінює: 'After they had finished the exam, they left'. Хронологія: finished → left. Ще: 'Having eaten lunch, we went for a walk', 'Having read the email, she deleted it'. HAVING V3 = 'після того, як...'. В українській: дієприслівник доконаного виду 'Закінчивши' — точний еквівалент. Використовується в формальних текстах."
+      },
+      {
+        "id": "ue_ptc3",
+        "question": "_____ in French, the book was difficult to understand.",
+        "translation": "(Написана французькою, книга була важкою для розуміння.)",
+        "options": [
+          "Written",
+          "Writing",
+          "Having written",
+          "Being writing"
+        ],
+        "correct": "Written",
+        "explanation": "PAST PARTICIPLE CLAUSE (пасивне значення): 'WRITTEN in French, the book was difficult' = 'Написана французькою, книга була складною'. Past Participle (V3) на початку = пасивне значення: книга БУЛА НАПИСАНА (не вона писала!). Замінює: 'Because it was written in French'. Ще: 'Built in 1900, the house needs repair', 'Surrounded by mountains, the village was isolated', 'Seen from above, the city looks beautiful'. В українській: пасивний дієприкметник 'Написана' — прямий відповідник. Дуже стислий стиль."
+      },
+      {
+        "id": "ue_ptc4",
+        "question": "Not _____ what to say, he remained silent.",
+        "translation": "(Не знаючи, що сказати, він мовчав.)",
+        "options": [
+          "knowing",
+          "known",
+          "knew",
+          "to know"
+        ],
+        "correct": "knowing",
+        "explanation": "NOT + V-ING (негативний дієприслівниковий зворот): 'NOT KNOWING what to say' = 'Не знаючи, що сказати'. NOT ставиться ПЕРЕД V-ING. Замінює: 'Because he didn't know what to say'. Ще: 'Not wanting to be rude, she agreed', 'Not having any money, I couldn't buy it', 'Not realizing the danger, they continued'. NOT + V-ING пояснює ПРИЧИНУ основної дії: чому мовчав? — бо не знав. В українській: 'Не знаючи' — ідентична конструкція з часткою 'не'. Природний і елегантний зворот."
+      },
+      {
+        "id": "ue_ptc5",
+        "question": "The man _____ in the corner is my uncle.",
+        "translation": "(Чоловік, що сидить у кутку — мій дядько.)",
+        "options": [
+          "sitting",
+          "sat",
+          "sits",
+          "who sit"
+        ],
+        "correct": "sitting",
+        "explanation": "V-ING як означальний зворот (замість відносного речення): 'The man SITTING in the corner' = 'The man who is sitting in the corner'. V-ING після іменника замінює WHO/WHICH + active verb. Коротше й елегантніше. Ще: 'The girl wearing red is my sister', 'The bus going to London leaves at 5', 'Anyone wanting tickets should call'. Це одне з найчастіших використань дієприкметників — в описах людей і предметів. В українській: 'Чоловік, що сидить' або 'Сидячий чоловік' — обидва правильні."
+      },
+      {
+        "id": "ue_ptc6",
+        "question": "_____ by the news, she started crying.",
+        "translation": "(Вражена новиною, вона заплакала.)",
+        "options": [
+          "Shocked",
+          "Shocking",
+          "Having shocked",
+          "Being shocking"
+        ],
+        "correct": "Shocked",
+        "explanation": "PAST PARTICIPLE для емоцій (причина дії): 'SHOCKED by the news, she started crying'. Емоційні дієприкметники: SHOCKED / SURPRISED / DISAPPOINTED / AMAZED + пасивне значення (ХТО зазнав емоції). Замінює: 'Because she was shocked by the news'. Ще: 'Tired after the journey, he went to bed', 'Bored with the movie, we left early', 'Impressed by her work, the boss promoted her'. В українській: 'Вражена новиною' — пасивний дієприкметник. Розрізняйте: SHOCKED (хто зазнав) vs SHOCKING (що викликає)."
+      },
+      {
+        "id": "ue_ptc7",
+        "question": "The letter, _____ in haste, contained several errors.",
+        "translation": "(Лист, написаний поспіхом, містив кілька помилок.)",
+        "options": [
+          "written",
+          "writing",
+          "wrote",
+          "having written"
+        ],
+        "correct": "written",
+        "explanation": "PAST PARTICIPLE в середині речення (вставний зворот): 'The letter, WRITTEN in haste, contained errors'. V3 між комами — вставний дієприкметниковий зворот. Замінює: 'The letter, which was written in haste'. Пасивне значення: лист БУВ НАПИСАНИЙ (не писав сам). Ще: 'The painting, created in 1850, is priceless', 'The castle, built on a hill, overlooks the town'. Коми виділяють додаткову інформацію (non-defining clause). В українській: 'Лист, написаний поспіхом' — дієприкметниковий зворот із комами."
+      },
+      {
+        "id": "ue_ptc8",
+        "question": "_____ carefully, the instructions are quite clear.",
+        "translation": "(Прочитані уважно, інструкції доволі зрозумілі.)",
+        "options": [
+          "Read",
+          "Reading",
+          "Having read",
+          "Being read"
+        ],
+        "correct": "Read",
+        "explanation": "PAST PARTICIPLE (умовне значення): 'READ carefully, the instructions are clear' = 'Якщо прочитати уважно...'. V3 на початку може мати УМОВНЕ значення: 'If read carefully' → 'Read carefully'. Ще: 'Seen in this light, the problem is simple', 'Taken out of context, the quote is misleading', 'Used correctly, the tool is very effective'. Це стислий академічний стиль — дуже поширений у наукових і технічних текстах. В українській: 'Прочитані уважно' або 'Якщо прочитати' — обидва способи працюють."
+      },
+      {
+        "id": "ue_ptc9",
+        "question": "_____ along the beach, we found some interesting shells.",
+        "translation": "(Гуляючи вздовж пляжу, ми знайшли кілька цікавих мушель.)",
+        "options": [
+          "Walking",
+          "Walked",
+          "Having walked",
+          "To walk"
+        ],
+        "correct": "Walking",
+        "explanation": "V-ING CLAUSE (фон + подія): 'WALKING along the beach, we found shells'. V-ING описує ФОН (прогулянка), а головне речення — ПОДІЮ (знайшли мушлі). Наративний стиль: довша фонова дія + коротка подія. Ще: 'Driving to work, I heard an interesting podcast', 'Looking through old photos, I found a letter'. Це оповідальний стиль — типовий для розповіді про пригоди, подорожі. В українській: 'Гуляючи вздовж пляжу' — дієприслівник недоконаного виду. Ідентична конструкція."
+      },
+      {
+        "id": "ue_ptc10",
+        "question": "The documents _____ on the table belong to my colleague.",
+        "translation": "(Документи, що лежать на столі, належать моєму колезі.)",
+        "options": [
+          "lying",
+          "lain",
+          "laid",
+          "lie"
+        ],
+        "correct": "lying",
+        "explanation": "V-ING як означення (активний стан): 'The documents LYING on the table' = 'documents that are lying'. V-ING після іменника = активне означення. LIE → LYING (лежати). Не плутайте: LIE (лежати) → LYING vs LAY (класти) → LAYING. Ще: 'The people waiting outside', 'The children playing in the park', 'The water running from the tap'. Це стислий спосіб описати ПОТОЧНУ ситуацію об'єкта чи людини. В українській: 'Документи, що лежать' або 'Лежачі документи' — дієприслівник чи дієприкметник."
+      },
+      {
+        "id": "ue_ptc11",
+        "question": "Having _____ lost, we asked for directions.",
+        "translation": "(Заблукавши, ми запитали дорогу.)",
+        "options": [
+          "got",
+          "get",
+          "getting",
+          "gotten"
+        ],
+        "correct": "got",
+        "explanation": "HAVING GOT + V3 / ADJ (минула причина): 'HAVING GOT LOST, we asked for directions' = 'Заблукавши, ми запитали'. HAVING + V3 для дії, яка передувала і СТАЛА ПРИЧИНОЮ головної дії. Спочатку заблукали → потім запитали дорогу. 'Having got lost' = 'After we had got lost'. Ще: 'Having missed the bus, I took a taxi', 'Having failed the test, she studied harder'. Хронологія + причинно-наслідковий зв'язок. В українській: 'Заблукавши' — доконаний дієприслівник, точний відповідник."
+      },
+      {
+        "id": "ue_ptc12",
+        "question": "_____ from the top of the tower, the city looks magnificent.",
+        "translation": "(Побачене з вершини вежі, місто виглядає чудово.)",
+        "options": [
+          "Seen",
+          "Seeing",
+          "Having seen",
+          "Being seen"
+        ],
+        "correct": "Seen",
+        "explanation": "SEEN (пасивний дієприкметник — точка зору): 'SEEN from the top, the city looks magnificent'. SEEN = 'якщо подивитися з'. Пасивне значення: місто ПОБАЧЕНЕ (не місто бачить). Цей зворот часто описує ПЕРСПЕКТИВУ, ТОЧКУ ЗОРУ. Ще: 'Viewed from this angle', 'Seen in context', 'Considered from a different perspective'. Академічний і літературний стиль. УВАГА: підмет (the city) має відповідати — місто побачене (не ми побачили). В українській: 'Побачене' або 'Якщо дивитися' — обидва працюють."
+      },
+      {
+        "id": "ue_ptc13",
+        "question": "_____ with care, this vase could last for centuries.",
+        "translation": "(При обережному поводженні ця ваза може прослужити століття.)",
+        "options": [
+          "Handled",
+          "Handling",
+          "Having handled",
+          "Being handled"
+        ],
+        "correct": "Handled",
+        "explanation": "PAST PARTICIPLE (умова): 'HANDLED with care, this vase could last centuries' = 'Якщо поводитися обережно'. V3 = пасивна умова: IF it is handled with care → Handled with care. Це типовий напис на крихких речах: 'Handle with care!' (Обережно!). Але в дієприкметниковому звороті: 'Handled with care' = 'при обережному поводженні'. Ще: 'Stored properly, food lasts longer', 'Treated fairly, employees work harder'. В українській: 'При обережному поводженні', 'Якщо правильно зберігати' — умовні конструкції."
+      },
+      {
+        "id": "ue_ptc14",
+        "question": "The girl _____ by the window is my best friend.",
+        "translation": "(Дівчина, що стоїть біля вікна — моя найкраща подруга.)",
+        "options": [
+          "standing",
+          "stood",
+          "stands",
+          "stand"
+        ],
+        "correct": "standing",
+        "explanation": "V-ING CLAUSE як опис людини: 'The girl STANDING by the window' = 'The girl who is standing'. Один з найчастіших вжитків — ідентифікація людини: вказуємо КОНКРЕТНУ людину через її дію або позицію. 'The man talking on the phone', 'The woman carrying a red bag', 'The boy running towards us'. Дуже зручно, коли не знаєте ім'я людини. В українській: 'Дівчина, що стоїть біля вікна' — означальне підрядне речення, або 'Дівчина біля вікна' — ще коротше."
+      },
+      {
+        "id": "ue_ptc15",
+        "question": "Having been _____ of the changes, we updated our plans.",
+        "translation": "(Отримавши повідомлення про зміни, ми оновили наші плани.)",
+        "options": [
+          "informed",
+          "informing",
+          "inform",
+          "information"
+        ],
+        "correct": "informed",
+        "explanation": "HAVING BEEN + V3 (пасивна попередність): 'HAVING BEEN INFORMED of the changes, we updated...' = 'Після того, як нас поінформували'. HAVING BEEN + V3 = Perfect Passive Participle — найскладніший дієприкметниковий зворот. Спочатку нас поінформували (пасив) → потім ми оновили (актив). Замінює: 'After we had been informed'. Ще: 'Having been warned, they took precautions', 'Having been rejected, she applied elsewhere'. Академічний, формальний стиль. В українській: 'Отримавши повідомлення' — доконаний дієприслівник."
+      }
+    ]
+  },
+  {
+    "key": "noun_clauses",
+    "name": "Noun Clauses",
+    "description": "Підрядні іменникові речення",
+    "iconName": "text.bubble.fill",
+    "color": "#ea580c",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ue_nc1",
+        "question": "I don't know _____ he said that.",
+        "translation": "(Я не знаю, чому він це сказав.)",
+        "options": [
+          "why",
+          "what",
+          "how",
+          "because"
+        ],
+        "correct": "why",
+        "explanation": "NOUN CLAUSE з WHY (підрядне після дієслова): 'I don't know WHY he said that' = 'Я не знаю, чому він це сказав'. Підрядне іменникове речення виконує роль ДОДАТКА (object) після дієслова KNOW. Починається з WH-слова: WHO, WHAT, WHERE, WHEN, WHY, HOW. Порядок слів у підрядному — ПРЯМИЙ (не питальний!): 'why he said' (не 'why did he say'). Ще: 'I wonder where she lives', 'Tell me what happened'. В українській: 'Я не знаю, чому...' — ідентична конструкція зі сполучником 'чому'."
+      },
+      {
+        "id": "ue_nc2",
+        "question": "_____ surprised me was his generosity.",
+        "translation": "(Що мене здивувало — це його щедрість.)",
+        "options": [
+          "What",
+          "That",
+          "Which",
+          "It"
+        ],
+        "correct": "What",
+        "explanation": "WHAT-CLAUSE як підмет: 'WHAT surprised me WAS his generosity'. WHAT + clause = підрядне іменникове речення як ПІДМЕТ. WHAT = 'те, що / щось, що'. 'What I need is rest', 'What matters is your health', 'What happened was unexpected'. Зверніть увагу: дієслово після WHAT-CLAUSE — в однині (WAS, IS, HAS). Порівняйте з IT-CLEFT: 'It was his generosity that surprised me' (інший фокус). В українській: 'Те, що мене здивувало' — підрядне з 'те, що'. Обидві мови мають цю конструкцію."
+      },
+      {
+        "id": "ue_nc3",
+        "question": "She asked me _____ I was doing.",
+        "translation": "(Вона запитала мене, що я роблю.)",
+        "options": [
+          "what",
+          "that",
+          "did",
+          "do"
+        ],
+        "correct": "what",
+        "explanation": "INDIRECT QUESTION (непряме запитання): 'She asked me WHAT I WAS DOING'. Пряме: 'What are you doing?' → Непряме: 'She asked what I was doing'. КЛЮЧОВЕ правило: ПРЯМИЙ порядок слів! WAS I → I WAS. Інверсія зникає! ❌ 'She asked what was I doing' ✅ 'She asked what I was doing'. Ще: 'He asked where I lived' (не 'where did I live'), 'They wanted to know how much it cost'. В українській: 'Запитала, що я роблю' — порядок слів не змінюється. Англійська складніша через інверсію."
+      },
+      {
+        "id": "ue_nc4",
+        "question": "The fact _____ he lied made her angry.",
+        "translation": "(Факт, що він збрехав, її розлютив.)",
+        "options": [
+          "that",
+          "what",
+          "which",
+          "why"
+        ],
+        "correct": "that",
+        "explanation": "THAT-CLAUSE після іменника (аппозитивне): 'The fact THAT he lied' = 'факт, що він збрехав'. THAT вводить підрядне речення, яке РОЗКРИВАЄ зміст іменника (fact, idea, news, rumor, belief). Це НЕ відносне речення (relative clause)! Різниця: 'The book THAT I read' (relative — який) vs 'The fact THAT he lied' (appositive — що саме). Ще: 'the idea that life exists on Mars', 'the news that she's leaving', 'the belief that hard work pays off'. В українській: 'Факт, що...' — з сполучником 'що'. Ідентична структура."
+      },
+      {
+        "id": "ue_nc5",
+        "question": "It is important _____ everyone understands the rules.",
+        "translation": "(Важливо, щоб усі розуміли правила.)",
+        "options": [
+          "that",
+          "what",
+          "how",
+          "which"
+        ],
+        "correct": "that",
+        "explanation": "IT IS + ADJ + THAT-CLAUSE: 'It is important THAT everyone understands'. IT = формальний підмет, THAT-clause = реальний підмет. THAT можна пропустити в розмовній мові: 'It's important everyone understands' (OK). Типові конструкції: 'It is essential that...', 'It is clear that...', 'It is surprising that...', 'It is unlikely that...'. В формальному стилі після IMPORTANT/ESSENTIAL використовують subjunctive: 'It is important that he BE there' (не 'is'). В українській: 'Важливо, щоб...' — з часткою 'щоб'. Або: 'Важливо, що...' — залежно від значення."
+      },
+      {
+        "id": "ue_nc6",
+        "question": "I believe _____ she will succeed.",
+        "translation": "(Я вірю, що вона досягне успіху.)",
+        "options": [
+          "that",
+          "what",
+          "which",
+          "if"
+        ],
+        "correct": "that",
+        "explanation": "VERB + THAT-CLAUSE (підрядне-додаток): 'I believe THAT she will succeed'. THAT вводить підрядне після дієслів: BELIEVE, THINK, KNOW, HOPE, SAY, FEEL, AGREE. THAT часто можна пропустити: 'I believe she will succeed' — теж правильно. З THAT = формальніше, без THAT = розмовніше. Ще: 'I think (that) you're right', 'She knows (that) it's true', 'We agreed (that) we'd come'. В українській: 'Я вірю, що вона...' — сполучник 'що' обов'язковий (не можна пропустити). Англійська гнучкіша."
+      },
+      {
+        "id": "ue_nc7",
+        "question": "Do you know _____ the meeting starts?",
+        "translation": "(Ти знаєш, коли починається зустріч?)",
+        "options": [
+          "when",
+          "that",
+          "which",
+          "does"
+        ],
+        "correct": "when",
+        "explanation": "EMBEDDED QUESTION з WHEN: 'Do you know WHEN the meeting starts?' Непряме питання після DO YOU KNOW. Зверніть увагу: ПРЯМИЙ порядок слів у підрядному! 'when the meeting STARTS' (не 'when does the meeting start'). Після DO YOU KNOW, CAN YOU TELL ME, COULD YOU EXPLAIN — завжди прямий порядок. Типові ситуації: 'Do you know where she lives?', 'Can you tell me how much it costs?', 'Could you explain why this happened?'. В українській: 'Знаєш, коли починається?' — прямий порядок і там. Простіше!"
+      },
+      {
+        "id": "ue_nc8",
+        "question": "_____ she said was completely true.",
+        "translation": "(Те, що вона сказала, було абсолютно правдою.)",
+        "options": [
+          "What",
+          "That",
+          "Which",
+          "How"
+        ],
+        "correct": "What",
+        "explanation": "WHAT = THE THING THAT (те, що): 'WHAT she said WAS true' = 'Те, що вона сказала, було правдою'. WHAT = 'те, що' (іменник + відносне речення в одному слові). WHAT ≠ THAT! 'WHAT she said' = конкретний зміст. 'THAT she spoke' = сам факт мовлення. 'What I want is peace' (те, що хочу). 'That I want peace is clear' (що хочу — факт очевидний). WHAT заміщує об'єкт: 'I heard WHAT he said' (чув ЩО саме). В українській: 'Те, що вона сказала' — два слова 'те, що' = один WHAT."
+      },
+      {
+        "id": "ue_nc9",
+        "question": "I'm not sure _____ to choose.",
+        "translation": "(Я не впевнений, що обрати.)",
+        "options": [
+          "what",
+          "that",
+          "if",
+          "whether"
+        ],
+        "correct": "what",
+        "explanation": "WH-WORD + TO INFINITIVE: 'I'm not sure WHAT TO choose'. WH + TO + V = скорочена форма noun clause: 'what to choose' = 'what I should choose'. Дуже компактна конструкція! Ще: 'I don't know where to go', 'She can't decide which to buy', 'Tell me how to get there', 'I wonder when to start'. Після: KNOW, DECIDE, WONDER, TELL, SHOW, EXPLAIN, REMEMBER. В українській: 'Що обрати', 'Куди піти' — інфінітив із питальним словом. Така ж коротка форма! Обидні мови — лаконічні."
+      },
+      {
+        "id": "ue_nc10",
+        "question": "I wonder _____ she's coming to the party.",
+        "translation": "(Цікаво, чи прийде вона на вечірку.)",
+        "options": [
+          "whether",
+          "what",
+          "that",
+          "which"
+        ],
+        "correct": "whether",
+        "explanation": "WHETHER/IF (чи): 'I wonder WHETHER she's coming' = 'Цікаво, чи прийде вона'. WHETHER/IF вводять YES/NO питання як підрядні речення. Пряме: 'Is she coming?' → Непряме: 'I wonder whether/if she's coming'. WHETHER = формальніше, IF = розмовніше. WHETHER... OR NOT: 'I don't know whether he'll come or not'. WHETHER можна використовувати після прийменників: 'It depends on whether...' (IF не можна!). В українській: 'Чи прийде вона' — одне слово 'чи'. Простіше за англійську WHETHER/IF."
+      },
+      {
+        "id": "ue_nc11",
+        "question": "Tell me _____ you prefer — tea or coffee.",
+        "translation": "(Скажіть мені, що ви віддаєте перевагу — чай чи каву.)",
+        "options": [
+          "which",
+          "that",
+          "if",
+          "whether"
+        ],
+        "correct": "which",
+        "explanation": "WHICH в підрядному (вибір з обмежених варіантів): 'Tell me WHICH you prefer' = 'Скажіть, який обираєте'. WHICH = 'який саме' (вибір з конкретних варіантів). Різниця: WHAT = з необмежених варіантів ('What do you want?'), WHICH = з обмежених ('Which do you prefer — A or B?'). Ще: 'I can't decide which dress to wear', 'Tell me which way to go'. В підрядному — прямий порядок: 'which you prefer' (не 'which do you prefer'). В українській: 'Який/котрий обираєте' — із займенником 'який'."
+      },
+      {
+        "id": "ue_nc12",
+        "question": "The question is _____ we can afford it.",
+        "translation": "(Питання в тому, чи ми можемо собі це дозволити.)",
+        "options": [
+          "whether",
+          "that",
+          "what",
+          "which"
+        ],
+        "correct": "whether",
+        "explanation": "WHETHER після BE (предикативне): 'The question IS WHETHER we can afford it' = 'Питання в тому, чи...'. NOUN CLAUSE як предикатив (після BE): The question is..., The problem is..., The issue is..., My concern is... + WHETHER/WHAT/HOW. 'The problem is how to fix this', 'The issue is whether they'll agree', 'My concern is what will happen next'. В українській: 'Питання в тому, чи...' — з 'чи' для yes/no або 'як/що' для WH. Обидні мови — ідентична логіка."
+      },
+      {
+        "id": "ue_nc13",
+        "question": "_____ he has achieved is remarkable.",
+        "translation": "(Те, чого він досяг — неймовірно.)",
+        "options": [
+          "What",
+          "That",
+          "Which",
+          "How"
+        ],
+        "correct": "What",
+        "explanation": "WHAT-CLAUSE як підмет (досягнення): 'WHAT he has achieved IS remarkable'. WHAT = 'те, що / все, що'. Тут WHAT = 'те, чого він досяг' — підмет речення. IS REMARKABLE — присудок. Ще: 'What she did was brave', 'What they offered wasn't enough', 'What really counts is your attitude'. Це риторично сильна конструкція — ставить фокус на РЕЗУЛЬТАТ. В українській: 'Те, чого він досяг' — з родовим відмінком після 'досягти'. Обидні мови наголошують на змісті."
+      },
+      {
+        "id": "ue_nc14",
+        "question": "Nobody knows _____ old she really is.",
+        "translation": "(Ніхто не знає, скільки їй насправді років.)",
+        "options": [
+          "how",
+          "what",
+          "that",
+          "which"
+        ],
+        "correct": "how",
+        "explanation": "HOW + ADJ/ADV в підрядному: 'Nobody knows HOW OLD she is' = 'Ніхто не знає, скільки їй років'. HOW + прикметник/прислівник у підрядних: HOW OLD, HOW TALL, HOW MUCH, HOW LONG, HOW FAR, HOW OFTEN. Прямий порядок: 'how old she IS' (не 'how old is she'). Ще: 'I wonder how tall he is', 'Can you estimate how long it takes?', 'You don't know how hard I've worked'. В українській: 'Скільки їй років', 'Який він високий' — різні конструкції для різних HOW-фраз."
+      },
+      {
+        "id": "ue_nc15",
+        "question": "It doesn't matter _____ you choose to do.",
+        "translation": "(Не має значення, що ти оберешь робити.)",
+        "options": [
+          "what",
+          "that",
+          "which",
+          "how"
+        ],
+        "correct": "what",
+        "explanation": "IT DOESN'T MATTER + WH-CLAUSE: 'It doesn't matter WHAT you choose to do'. IT = формальний підмет. WHAT-clause = реальний підмет. Ця конструкція виражає байдужість або відкритість: 'Все одно, що ти оберешь'. Ще: 'It doesn't matter where we go', 'It doesn't matter how long it takes', 'It doesn't matter who says it'. Підсумок noun clauses: 1) після дієслова = додаток; 2) на початку = підмет; 3) після BE = предикатив; 4) після іменника = аппозиція. В українській: 'Не має значення, що...' — з сполучником 'що/де/як'."
+      }
+    ]
+  },
+  {
+    "key": "ellipsis",
+    "name": "Ellipsis & Substitution",
+    "description": "Еліпсис та заміщення (скорочення в мовленні)",
+    "iconName": "scissors",
+    "color": "#6366f1",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ue_ell1",
+        "question": "\"Would you like some coffee?\" — \"Yes, I'd love _____\"",
+        "translation": "(«Хочеш кави?» — «Так, із задоволенням.»)",
+        "options": [
+          "some.",
+          "some coffee.",
+          "to.",
+          "it."
+        ],
+        "correct": "some.",
+        "explanation": "ЕЛІПСИС (пропуск відомого з контексту): 'I'd love SOME' = 'I'd love some coffee'. SOME замінює 'some coffee' — повторювати непотрібно, бо з контексту зрозуміло. Це ЕЛІПСИС — пропуск елементів, які очевидні зі контексту. Англійська дуже активно використовує еліпсис для стислості та природності. Ще: 'Can you swim?' — 'Yes, I can (swim)', 'Will she come?' — 'She might (come)'. В українській: 'Із задоволенням' — теж пропускаємо 'кави'. Природно і ввічливо. Повна форма звучала б штучно."
+      },
+      {
+        "id": "ue_ell2",
+        "question": "She can play the piano and he can _____.",
+        "translation": "(Вона вміє грати на піаніно, і він теж.)",
+        "options": [
+          "too",
+          "play too",
+          "also",
+          "as well"
+        ],
+        "correct": "too",
+        "explanation": "AUXILIARY + TOO (еліпсис після модального дієслова): 'He can TOO' = 'He can play the piano too'. Після модального дієслова пропускаємо основне дієслово і додаємо TOO/ALSO. 'She will come and I will too', 'They can't swim and I can't either'. Пам'ятайте: TOO/ALSO = у стверджувальних, EITHER = у заперечних. Також: SO CAN HE (з інверсією) = те саме: 'She can play and so can he'. В українській: 'І він теж (вміє)' — 'теж' без повторення дієслова. Обидні мови скорочують."
+      },
+      {
+        "id": "ue_ell3",
+        "question": "\"Are you coming tonight?\" — \"I hope _____\"",
+        "translation": "(«Ти прийдеш сьогодні?» — «Сподіваюся, що так.»)",
+        "options": [
+          "so.",
+          "it.",
+          "yes.",
+          "that."
+        ],
+        "correct": "so.",
+        "explanation": "I HOPE SO / I THINK SO (SO заміщує clause): 'I hope SO' = 'I hope I am coming'. SO замінює ціле підрядне речення! Дієслова з SO: THINK, HOPE, BELIEVE, EXPECT, SUPPOSE, GUESS, BE AFRAID. 'Is it going to rain?' — 'I think so'. 'Will they win?' — 'I hope so'. Негативні форми: 'I hope not' (не 'I don't hope so'), АЛЕ 'I don't think so' (обидва OK). В українській: 'Сподіваюся, що так' — 'що так' = SO. Або просто 'Сподіваюся' — ще коротше."
+      },
+      {
+        "id": "ue_ell4",
+        "question": "\"I've never been to Japan.\" — \"Neither have _____\"",
+        "translation": "(«Я ніколи не був у Японії.» — «Я теж ні.»)",
+        "options": [
+          "I.",
+          "I been.",
+          "I not.",
+          "me."
+        ],
+        "correct": "I.",
+        "explanation": "NEITHER + AUX + S (згода з негативним): 'NEITHER HAVE I' = 'Я теж ні'. NEITHER + допоміжне + підмет — короткий спосіб висловити згоду з негативним твердженням. Інверсія! Ще: 'I don't like spiders.' — 'Neither do I.' / 'I can't cook.' — 'Neither can she.' / 'I wasn't there.' — 'Neither was he.' Альтернатива: 'I haven't either' (без інверсії). SO для позитивних: 'I like coffee.' — 'So do I.' В українській: 'Я теж ні' — дуже просто, без інверсії."
+      },
+      {
+        "id": "ue_ell5",
+        "question": "You can come if you want _____.",
+        "translation": "(Можеш прийти, якщо хочеш.)",
+        "options": [
+          "to",
+          "to come",
+          "it",
+          "come"
+        ],
+        "correct": "to",
+        "explanation": "WANT TO / NEED TO / LIKE TO (TO без дієслова): 'If you want TO' = 'If you want to come'. Після WANT, NEED, LIKE, TRY, HAVE та інших — TO зберігається, а дієслово пропускається! 'I didn't want to, but I had to', 'You don't have to if you don't want to', 'I'd love to (come)'. TO тут — «маркер» дієслова, яке зрозуміле з контексту. ❌ 'If you want' (без TO звучить незавершено). ✅ 'If you want to'. В українській: 'Якщо хочеш' — без маркера, просто дієслово."
+      },
+      {
+        "id": "ue_ell6",
+        "question": "She speaks French better than I _____.",
+        "translation": "(Вона розмовляє французькою краще за мене.)",
+        "options": [
+          "do",
+          "speak",
+          "am",
+          "does"
+        ],
+        "correct": "do",
+        "explanation": "AUX замість повтору дієслова (substitution): 'Better than I DO' = 'Better than I speak French'. DO/DOES/DID замінює основне дієслово, щоб уникнути повтору. 'He runs faster than she does', 'I like it more than he did', 'She knows more than I do'. В формальному стилі: 'than I do', в розмовному: 'than me'. Допоміжне дієслово повинно відповідати часу та особі: 'She speaks → does', 'They spoke → did'. В українській: 'Краще за мене' — прийменник, без допоміжного. Англійська потребує DO."
+      },
+      {
+        "id": "ue_ell7",
+        "question": "\"Will the project be finished on time?\" — \"I'm afraid _____\"",
+        "translation": "(«Проєкт буде завершений вчасно?» — «Боюся, що ні.»)",
+        "options": [
+          "not.",
+          "so not.",
+          "it not.",
+          "don't."
+        ],
+        "correct": "not.",
+        "explanation": "I'M AFRAID NOT / I'M AFRAID SO (ввічлива відповідь): 'I'm afraid NOT' = 'Боюся, що ні'. I'M AFRAID замінює повне пояснення і додає ввічливість. SO = так, NOT = ні. 'Is she available?' — 'I'm afraid not.' 'Did we win?' — 'I'm afraid so (it's bad news).' Зверніть увагу: I'M AFRAID SO може бути для ПОГАНИХ новин: 'Is the restaurant closed?' — 'I'm afraid so.' AFRAID тут = 'на жаль', не 'боюся'. В українській: 'Боюся, що ні' / 'На жаль, ні' — ввічливе пом'якшення."
+      },
+      {
+        "id": "ue_ell8",
+        "question": "Although _____ to, she eventually agreed to help.",
+        "translation": "(Хоча спочатку не хотіла, вона врешті погодилася допомогти.)",
+        "options": [
+          "reluctant",
+          "reluctantly",
+          "she reluctant",
+          "being reluctant"
+        ],
+        "correct": "reluctant",
+        "explanation": "ALTHOUGH + ADJ (еліпсис підмета і дієслова): 'Although RELUCTANT to (help)' = 'Although she was reluctant to help'. Після ALTHOUGH, WHILE, WHEN, IF можна пропустити підмет + BE, якщо підмет той самий. 'While (she was) waiting, she read'. 'When (he was) young, he loved sports'. 'If (it is) necessary, we'll change the plan'. Це стислий, елегантний стиль — типовий для письмового мовлення. В українській: 'Хоча й неохоче' — теж скорочення. Обидні мови цінують стислість."
+      },
+      {
+        "id": "ue_ell9",
+        "question": "\"She went to Paris.\" — \"She did? When did she _____?\"",
+        "translation": "(«Вона поїхала в Париж.» — «Правда? Коли вона поїхала?»)",
+        "options": [
+          "go",
+          "went",
+          "going",
+          "gone"
+        ],
+        "correct": "go",
+        "explanation": "ЕЛІПСИС МІСЦЯ/ОБ'ЄКТА: 'When did she GO?' = 'When did she go (to Paris)?'. TO PARIS пропускається — з контексту зрозуміло КУДИ. Це типовий розмовний прийом: 'I bought a new car.' — 'When did you buy IT?' (або навіть 'When did you buy?'). Ще: 'She ate already.' — 'What did she eat?' (пропуск 'for dinner'). Англійська дуже ефективна в розмовній мові — повторюється лише необхідне. В українській: 'Коли поїхала?' — теж без 'в Париж'. Обидні мови — розмовна стислість."
+      },
+      {
+        "id": "ue_ell10",
+        "question": "Some people like summer and _____ prefer winter.",
+        "translation": "(Деякі люди люблять літо, а інші надають перевагу зимі.)",
+        "options": [
+          "others",
+          "other people",
+          "the others",
+          "another"
+        ],
+        "correct": "others",
+        "explanation": "SOME...OTHERS (контрастний еліпсис): 'Some people like summer and OTHERS prefer winter'. OTHERS замість 'other people' — еліпсис іменника. SOME + іменник → OTHERS (без іменника). Ще: 'Some agreed, others disagreed', 'Some stayed, others left'. Це класичний прийом контрастування двох груп. Також: SOME...SOME: 'Some came early, some came late'. ONE...ANOTHER: 'One option is X; another is Y'. В українській: 'Одні...інші' або 'Деякі...інші' — також без повтору іменника."
+      },
+      {
+        "id": "ue_ell11",
+        "question": "\"I think it's going to rain.\" — \"I don't think _____\"",
+        "translation": "(«Думаю, буде дощ.» — «Не думаю.»)",
+        "options": [
+          "so.",
+          "it.",
+          "that.",
+          "not."
+        ],
+        "correct": "so.",
+        "explanation": "I DON'T THINK SO (негативна відповідь з SO): 'I don't think SO' = 'Я не думаю (що буде дощ)'. SO замінює ціле підрядне речення. Для THINK два негативних варіанти: 'I don't think so' (найчастіший) і 'I think not' (формальний). Для HOPE: тільки 'I hope not' (не 'I don't hope so'!). Для BELIEVE: 'I don't believe so' або 'I believe not'. Для SUPPOSE: 'I don't suppose so' або 'I suppose not'. В українській: 'Не думаю' / 'Гадаю, що ні' — SO не потрібен."
+      },
+      {
+        "id": "ue_ell12",
+        "question": "\"Do you know how to swim?\" — \"Yes, but not very _____\"",
+        "translation": "(«Ти вмієш плавати?» — «Так, але не дуже добре.»)",
+        "options": [
+          "well.",
+          "good.",
+          "much.",
+          "far."
+        ],
+        "correct": "well.",
+        "explanation": "ЕЛІПСИС з оцінкою (ADV без дієслова): 'Not very WELL' = 'I can swim, but not very well'. Пропускаємо 'I can swim' — зрозуміло з контексту. WELL = прислівник (як добре виконує дію). Ще: 'Can you cook?' — 'A little.' 'Do you speak Spanish?' — 'Barely.' 'Can she drive?' — 'Quite well.' Короткі відповіді з прислівниками оцінки — дуже природні. В українській: 'Але не дуже добре' — теж пропускаємо 'плаваю'. Повна відповідь звучала б неприродно."
+      },
+      {
+        "id": "ue_ell13",
+        "question": "He promised he would call, but he _____.",
+        "translation": "(Він обіцяв подзвонити, але не подзвонив.)",
+        "options": [
+          "didn't",
+          "hasn't",
+          "won't",
+          "couldn't"
+        ],
+        "correct": "didn't",
+        "explanation": "AUX + NEGATIVE (еліпсис з контрастом): 'He promised, but he DIDN'T (call)'. Допоміжне дієслово в негативній формі замість повного повтору. Контраст: 'обіцяв' → 'не зробив'. Past Simple (promised) → DIDN'T. Ще: 'She said she would come, but she didn't', 'I thought he knew, but he didn't', 'They were supposed to help, but they didn't'. Цей прийом — потужний оповідальний інструмент: створює розчарування чи несподіванку. В українській: 'Але не подзвонив' — повний дієслівний повтор. Англійська стисліша."
+      },
+      {
+        "id": "ue_ell14",
+        "question": "\"I've read the book.\" — \"So have _____\"",
+        "translation": "(«Я прочитав цю книгу.» — «Я теж.»)",
+        "options": [
+          "I.",
+          "I read.",
+          "me.",
+          "me too."
+        ],
+        "correct": "I.",
+        "explanation": "SO + AUX + S (згода з позитивним): 'SO HAVE I' = 'Я теж (прочитав)'. SO + допоміжне + підмет — інверсія для згоди з позитивним твердженням. 'I like chocolate.' — 'So do I.' 'She'll be there.' — 'So will he.' 'They've finished.' — 'So have we.' Допоміжне повинно відповідати вихідному реченню: have → have, will → will, can → can. В розмовній мові також: 'Me too.' (без інверсії). В українській: 'Я теж' — просто 'теж' без інверсії. Англійська SO+AUX — елегантніша форма."
+      },
+      {
+        "id": "ue_ell15",
+        "question": "Let's go to the beach on Saturday, or Sunday if _____.",
+        "translation": "(Ходімо на пляж у суботу, або в неділю, якщо ні.)",
+        "options": [
+          "not",
+          "no",
+          "don't",
+          "won't"
+        ],
+        "correct": "not",
+        "explanation": "IF NOT (максимальний еліпсис): 'Or Sunday IF NOT' = 'or Sunday if Saturday doesn't work'. IF NOT замінює цілу умовну клаузу! Це крайня форма еліпсису — пропускається все, крім IF NOT. Ще: 'I'll try to come, and if not, I'll call you', 'Let's hope for the best, and if not, we'll manage'. IF SO (позитивний): 'Is the shop open? If so, I'll go'. IF NOT (негативний): 'If not, I'll try tomorrow'. В українській: 'Якщо ні' — точний відповідник. Обидні мови використовують цей прийом. Підсумок: еліпсис = стислість + природність."
+      }
+    ]
   }
 ]

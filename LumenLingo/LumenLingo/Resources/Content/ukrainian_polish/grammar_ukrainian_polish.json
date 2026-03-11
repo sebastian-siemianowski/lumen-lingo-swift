@@ -20777,5 +20777,611 @@
         "explanation": "'Nie wiedziałbym' — умовний спосіб: 'wiedział' + 'bym'. 'Gdyby zgasło' — умовне підрядне: 'gdyby' + мин. сер. роду 'zgasło' (бо 'światło' — сер. рід). 'Nagle' (раптом). Максимальна інтеграція: умовний + підрядне + рід + аспект. Повторення всіх ключових конструкцій курсу."
       }
     ]
+  },
+  {
+    "key": "exam_strategies",
+    "name": "Стратегії для іспитів",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "up_exam1",
+        "question": "Proszę _____ odpowiedź na pytanie pełnym zdaniem.",
+        "translation": "(Прошу сформулювати відповідь на питання повним реченням.)",
+        "options": [
+          "sformułować",
+          "formułować",
+          "sformułuje",
+          "formułuję"
+        ],
+        "correct": "sformułować",
+        "explanation": "'Sformułować' (сформулювати) — доконаний вид після 'proszę'. 'Pełnym zdaniem' (повним реченням) — орудний відмінок. 'Odpowiedź' (відповідь) — жін. рід у польській, як і в українській. 'Na pytanie' (на питання) — знахідний. Типова інструкція на іспиті."
+      },
+      {
+        "id": "up_exam2",
+        "question": "Uzasadnij swoją odpowiedź, _____ się do tekstu.",
+        "translation": "(Обгрунтуй свою відповідь, посилаючись на текст.)",
+        "options": [
+          "odwołując",
+          "odwołać",
+          "odwołuj",
+          "odwołany"
+        ],
+        "correct": "odwołując",
+        "explanation": "'Odwołując się' (посилаючись) — дієприcлівник теперішнього часу від 'odwoływać się' (посилатися). 'Uzasadnić' (обгрунтувати) — наказовий спосіб: 'uzasadnij'. 'Do tekstu' (на текст) — родовий. В українській 'посилаючись на' — аналогічний зворот."
+      },
+      {
+        "id": "up_exam3",
+        "question": "Napisz rozprawkę na _____ podany poniżej.",
+        "translation": "(Напиши твір на тему, подану нижче.)",
+        "options": [
+          "temat",
+          "tematu",
+          "tematem",
+          "temacie"
+        ],
+        "correct": "temat",
+        "explanation": "'Na temat' (на тему) — знахідний = називний (чол. рід неживий). 'Rozprawka' (твір, есе) — від 'rozprawiać' (розмірковувати). 'Podany poniżej' (поданий нижче) — дієприкметник. В українській 'розправа' — інше значення (розправа); твір — специфічний термін."
+      },
+      {
+        "id": "up_exam4",
+        "question": "Wybierz _____ poprawną odpowiedź spośród podanych.",
+        "translation": "(Вибери одну правильну відповідь з поданих.)",
+        "options": [
+          "jedną",
+          "jeden",
+          "jedno",
+          "jednej"
+        ],
+        "correct": "jedną",
+        "explanation": "'Jedną odpowiedź' — знахідний жін. роду: 'jedna' → 'jedną'. 'Poprawna odpowiedź' (правильна відповідь) → 'poprawną odpowiedź' (знахідний). 'Spośród' (з-поміж) + родовий: 'podanych' (поданих). В українській 'одну правильну' — так само знахідний."
+      },
+      {
+        "id": "up_exam5",
+        "question": "Określ, jakie środki _____ zastosował autor.",
+        "translation": "(Визнач, які стилістичні засоби застосував автор.)",
+        "options": [
+          "stylistyczne",
+          "stylistyczny",
+          "stylistyczna",
+          "stylistycznie"
+        ],
+        "correct": "stylistyczne",
+        "explanation": "'Środki stylistyczne' (стилістичні засоби) — множина невіроособова. 'Określić' (визначити) → 'określ' (наказовий). 'Zastosować' (застосувати) — 'zastosował' (мин. час чол. роду). В українській 'стилістичні засоби' — ідентичний термін."
+      },
+      {
+        "id": "up_exam6",
+        "question": "Przeczytaj tekst i odpowiedz na _____ pytań.",
+        "translation": "(Прочитай текст і відповідай на всі питання.)",
+        "options": [
+          "wszystkie",
+          "wszystko",
+          "wszelkie",
+          "każde"
+        ],
+        "correct": "wszystkie",
+        "explanation": "'Wszystkie pytania' (всі питання) — знахідний множини. 'Pytań' — родовий множини від 'pytanie'. 'Odpowiedzieć na' (відповісти на) + знахідний. 'Przeczytać' (прочитати) → 'przeczytaj' (наказовий). В українській 'на всі питання' — та сама конструкція."
+      },
+      {
+        "id": "up_exam7",
+        "question": "Podaj dwa _____ potwierdzające twoją tezę.",
+        "translation": "(Подай два аргументи, що підтверджують твою тезу.)",
+        "options": [
+          "argumenty",
+          "argumentów",
+          "argumentami",
+          "argumentom"
+        ],
+        "correct": "argumenty",
+        "explanation": "'Dwa argumenty' — знахідний множини, бо числівник 2-4 + знахідний = називний (невіроособовий). 'Potwierdzające' (що підтверджують) — дієприкметник теперішній. 'Teza' (теза) → 'tezę' (знахідний). В українській 'два аргументи' — ідентична конструкція."
+      },
+      {
+        "id": "up_exam8",
+        "question": "Wyjaśnij znaczenie _____ wyrazu w kontekście zdania.",
+        "translation": "(Поясни значення підкресленого слова в контексті речення.)",
+        "options": [
+          "podkreślonego",
+          "podkreślony",
+          "podkreślone",
+          "podkreślonym"
+        ],
+        "correct": "podkreślonego",
+        "explanation": "'Podkreślonego wyrazu' (підкресленого слова) — родовий відмінок: 'wyraz' → 'wyrazu', 'podkreślony' → 'podkreślonego'. 'Znaczenie' (значення) + родовий. 'W kontekście' (в контексті) — місцевий. В українській 'підкресленого' — той самий родовий відмінок."
+      },
+      {
+        "id": "up_exam9",
+        "question": "Na podstawie tekstu _____ główną myśl autora.",
+        "translation": "(На основі тексту визнач головну думку автора.)",
+        "options": [
+          "określ",
+          "określić",
+          "określam",
+          "określając"
+        ],
+        "correct": "określ",
+        "explanation": "'Określ' (визнач) — наказовий спосіб 2 ос. одн. від 'określić' (визначити). 'Na podstawie' (на основі, на підставі) + родовий: 'tekstu'. 'Główna myśl' (головна думка) → 'główną myśl' (знахідний). В українській 'визнач' — так само наказовий."
+      },
+      {
+        "id": "up_exam10",
+        "question": "Przekształć poniższe zdanie na _____ bierny.",
+        "translation": "(Перетвори подане речення на пасивний стан.)",
+        "options": [
+          "stronę bierną",
+          "strona bierna",
+          "stronie biernej",
+          "strony biernej"
+        ],
+        "correct": "stronę bierną",
+        "explanation": "'Na stronę bierną' (на пасивний стан) — знахідний після 'na'. 'Strona bierna' (пасивний стан, букв. 'бічна сторона') → 'stronę bierną'. 'Przekształcić' (перетворити) → 'przekształć' (наказовий). В українській 'пасивний стан' — інша метафора."
+      },
+      {
+        "id": "up_exam11",
+        "question": "Wstaw brakujące _____ w odpowiedniej formie.",
+        "translation": "(Встав пропущені слова у відповідній формі.)",
+        "options": [
+          "wyrazy",
+          "wyraz",
+          "wyrazów",
+          "wyrazami"
+        ],
+        "correct": "wyrazy",
+        "explanation": "'Brakujące wyrazy' (пропущені слова) — знахідний множини невіроособовий. 'Brakujący' (пропущений, відсутній) — дієприкметник від 'brakować' (бракувати). 'W odpowiedniej formie' (у відповідній формі) — місцевий. 'Wstawić' (вставити) → 'wstaw' (наказовий)."
+      },
+      {
+        "id": "up_exam12",
+        "question": "Porównaj oba teksty, zwracając uwagę na _____ językowe.",
+        "translation": "(Порівняй обидва тексти, звертаючи увагу на мовні засоби.)",
+        "options": [
+          "środki",
+          "środek",
+          "środkiem",
+          "środków"
+        ],
+        "correct": "środki",
+        "explanation": "'Środki językowe' (мовні засоби) — знахідний множини. 'Porównać' (порівняти) → 'porównaj' (наказовий). 'Zwracając uwagę na' (звертаючи увагу на) — дієприcлівниковий зворот. В українській 'мовні засоби' — аналогічний термін."
+      },
+      {
+        "id": "up_exam13",
+        "question": "Zaznacz zdanie, które _____ zawiera błąd.",
+        "translation": "(Позначте речення, яке не містить помилки.)",
+        "options": [
+          "nie",
+          "ani",
+          "nigdy",
+          "bez"
+        ],
+        "correct": "nie",
+        "explanation": "'Nie zawiera błędu' (не містить помилки) — заперечення + родовий: 'błąd' → 'błędu'. 'Zaznaczyć' (позначити) → 'zaznacz' (наказовий). 'Które' (яке) — відносний займенник сер. роду, бо 'zdanie' (речення) — сер. рід. В українській 'не містить' — та сама конструкція."
+      },
+      {
+        "id": "up_exam14",
+        "question": "Dokonaj analizy _____ podanego fragmentu.",
+        "translation": "(Здійсни аналіз складу поданого фрагменту.)",
+        "options": [
+          "składniowej",
+          "składnia",
+          "składniowy",
+          "składni"
+        ],
+        "correct": "składniowej",
+        "explanation": "'Analiza składniowa' (синтаксичний аналіз) → 'analizy składniowej' (родовий жін. роду). 'Dokonać' (здійснити) + родовий: 'analizy'. 'Składnia' (синтаксис) → 'składniowy' (синтаксичний). В українській 'синтаксичний аналіз' — латинське запозичення."
+      },
+      {
+        "id": "up_exam15",
+        "question": "Streść tekst w _____ niż 100 słowach.",
+        "translation": "(Стисни текст менш ніж у 100 словах.)",
+        "options": [
+          "mniej",
+          "więcej",
+          "mniejszy",
+          "malo"
+        ],
+        "correct": "mniej",
+        "explanation": "'W mniej niż 100 słowach' (менш ніж у 100 словах) — порівняльна конструкція. 'Streścić' (стиснути, зреферувати) → 'streść' (наказовий). 'Słowo' (слово) → 'słowach' (місцевий множини). В українській 'менш ніж' — ідентична конструкція."
+      }
+    ]
+  },
+  {
+    "key": "advanced_grammar_review",
+    "name": "Огляд складної граматики",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "up_advg1",
+        "question": "Gdyby nie deszcz, _____ na spacer.",
+        "translation": "(Якби не дощ, ми б пішли на прогулянку.)",
+        "options": [
+          "poszlibyśmy",
+          "poszli",
+          "pójdziemy",
+          "chodzilibyśmy"
+        ],
+        "correct": "poszlibyśmy",
+        "explanation": "'Gdyby' (якби) + умовний спосіб: 'poszlibyśmy' (ми б пішли). 'Pojść' (піти, док.) → 'poszli' + '-byśmy' (1 ос. мн. умовний). 'Na spacer' (на прогулянку) — знахідний. В українській 'якби... ми б пішли' — частка 'б' окремо, в польській '-by' приєднується."
+      },
+      {
+        "id": "up_advg2",
+        "question": "Ten dom, który _____ zbudowany w XIX wieku, jest zabytkiem.",
+        "translation": "(Цей дім, який був збудований у XIX столітті, є пам'яткою.)",
+        "options": [
+          "został",
+          "był",
+          "jest",
+          "będzie"
+        ],
+        "correct": "został",
+        "explanation": "'Został zbudowany' (був збудований) — пасивна конструкція з 'zostać' (бути, стати) + дієприкметник. 'Zabytek' (пам'ятка) — орудний: 'zabytkiem'. 'W XIX wieku' (у XIX столітті) — місцевий. В українській 'був збудований' — з 'бути', в польській — з 'zostać'."
+      },
+      {
+        "id": "up_advg3",
+        "question": "Im więcej czytam, _____ lepiej rozumiem.",
+        "translation": "(Чим більше читаю, тим краще розумію.)",
+        "options": [
+          "tym",
+          "ten",
+          "to",
+          "tak"
+        ],
+        "correct": "tym",
+        "explanation": "'Im... tym...' (чим... тим...) — порівняльна конструкція пропорційності. 'Im więcej' (чим більше), 'tym lepiej' (тим краще). В українській 'чим... тим...' — ідентична структура. 'Więcej' (більше) і 'lepiej' (краще) — порівняльні ступені прислівників."
+      },
+      {
+        "id": "up_advg4",
+        "question": "Będąc _____ Polsce, koniecznie odwiedź Kraków.",
+        "translation": "(Будучи в Польщі, обов'язково відвідай Краків.)",
+        "options": [
+          "w",
+          "na",
+          "do",
+          "z"
+        ],
+        "correct": "w",
+        "explanation": "'W Polsce' (в Польщі) — місцевий відмінок після 'w'. 'Będąc' (будучи) — дієприcлівник від 'być' (бути). 'Koniecznie' (обов'язково) — прислівник. 'Odwiedzić' (відвідати) → 'odwiedź' (наказовий). 'Polska' → 'Polsce' (місцевий). В українській 'в Польщі' — аналогічно."
+      },
+      {
+        "id": "up_advg5",
+        "question": "Choć było trudno, _____ się nie poddał.",
+        "translation": "(Хоча було важко, він не здався.)",
+        "options": [
+          "jednak",
+          "ale",
+          "lecz",
+          "i"
+        ],
+        "correct": "jednak",
+        "explanation": "'Jednak' (однак, проте) — протиставний сполучник. 'Choć' (хоча) — допустовий сполучник. 'Poddać się' (здатися) — 'nie poddał się' (не здався, чол. рід мин. час). В українській 'однак' — спорідненe слово. Конструкція 'хоча... однак...' — ідентична."
+      },
+      {
+        "id": "up_advg6",
+        "question": "Nie tylko przeczytał książkę, _____ też napisał recenzję.",
+        "translation": "(Він не лише прочитав книжку, але й написав рецензію.)",
+        "options": [
+          "ale",
+          "lecz",
+          "i",
+          "oraz"
+        ],
+        "correct": "ale",
+        "explanation": "'Nie tylko... ale też...' (не лише... але й...) — парний сполучник. 'Przeczytał' (прочитав) — мин. час від 'przeczytać'. 'Recenzja' (рецензія) → 'recenzję' (знахідний). В українській 'не лише... але й...' — ідентична конструкція з парним сполучником."
+      },
+      {
+        "id": "up_advg7",
+        "question": "Zostałem _____ przez kolegę do udziału w projekcie.",
+        "translation": "(Я був запрошений колегою до участі в проєкті.)",
+        "options": [
+          "zaproszony",
+          "zaproszeni",
+          "zaproszona",
+          "zaproszenie"
+        ],
+        "correct": "zaproszony",
+        "explanation": "'Zostałem zaproszony' (я був запрошений) — пасив з 'zostać' + дієпричметник чол. роду. 'Przez kolegę' (колегою) — знахідний після 'przez' (виконавець дії у пасиві). 'Do udziału' (до участі) — родовий. В українській 'був запрошений' — з 'бути', а не 'zostać'."
+      },
+      {
+        "id": "up_advg8",
+        "question": "O ile mi wiadomo, spotkanie _____ przełożone.",
+        "translation": "(Наскільки мені відомо, зустріч була перенесена.)",
+        "options": [
+          "zostało",
+          "było",
+          "jest",
+          "będzie"
+        ],
+        "correct": "zostało",
+        "explanation": "'Spotkanie zostało przełożone' (зустріч було перенесено) — 'spotkanie' (зустріч) сер. рід → 'zostało' (сер. рід мин. часу). 'O ile mi wiadomo' (наскільки мені відомо) — вставна конструкція. 'Przełożyć' (перенести) → 'przełożone' (дієпричметник)."
+      },
+      {
+        "id": "up_advg9",
+        "question": "Należy _____, że sytuacja jest skomplikowana.",
+        "translation": "(Слід підкреслити, що ситуація є складною.)",
+        "options": [
+          "podkreślić",
+          "podkreślać",
+          "podkreślając",
+          "podkreślony"
+        ],
+        "correct": "podkreślić",
+        "explanation": "'Należy podkreślić' (слід підкреслити) — безособова конструкція + інфінітив док. виду. 'Należy' (слід, належить) — безособове дієслово. 'Skomplikowany' (складний) — 'skomplikowana' (жін. рід). В українській 'слід підкреслити' — ідентична конструкція."
+      },
+      {
+        "id": "up_advg10",
+        "question": "Ten artykuł jest _____ napisany, że trudno go zrozumieć.",
+        "translation": "(Ця стаття так погано написана, що важко її зрозуміти.)",
+        "options": [
+          "tak źle",
+          "bardzo źle",
+          "za źle",
+          "najgorzej"
+        ],
+        "correct": "tak źle",
+        "explanation": "'Tak... że...' (так... що...) — конструкція насłідку. 'Tak źle napisany' (так погано написаний). 'Żle' (погано) — приcлівник. 'Zrozumieć' (зрозуміти) + 'go' (його, знахідний скорочений). В українській 'так... що...' — ідентична конструкція."
+      },
+      {
+        "id": "up_advg11",
+        "question": "Mimo że padał deszcz, zdecydowaliśmy się _____ na wycieczkę.",
+        "translation": "(Незважаючи на те, що йшов дощ, ми вирішили піти на екскурсію.)",
+        "options": [
+          "pójść",
+          "iść",
+          "chodzić",
+          "poszli"
+        ],
+        "correct": "pójść",
+        "explanation": "'Zdecydować się pójść' (вирішити піти) — док. + інфінітив. 'Mimo że' (незважаючи на те, що) — допустовий сполучник. 'Padał deszcz' (йшов дощ) — безособова конструкція. 'Na wycieczkę' (на екскурсію) — знахідний. В укр. 'піти' = 'pójść', спільний корінь."
+      },
+      {
+        "id": "up_advg12",
+        "question": "To jest najlepsza książka, _____ kiedykolwiek czytałem.",
+        "translation": "(Це найкраща книжка, яку я будь-коли читав.)",
+        "options": [
+          "jaką",
+          "która",
+          "którą",
+          "jakąś"
+        ],
+        "correct": "jaką",
+        "explanation": "'Jaką czytałem' (яку я читав) — знахідний відносного займенника 'jaka' (яка). Після найвищого ступеня вживається 'jaki', а не 'który'. 'Książka' (книжка) жін. рід → 'jaką' (знахідний). 'Kiedykolwiek' (будь-коли). В українській 'яку' — знахідний, так само."
+      },
+      {
+        "id": "up_advg13",
+        "question": "_____ wróci, powie nam o wszystkim.",
+        "translation": "(Щойно повернеться, розповість нам про все.)",
+        "options": [
+          "Jak tylko",
+          "Kiedyś",
+          "Zanim",
+          "Chociaż"
+        ],
+        "correct": "Jak tylko",
+        "explanation": "'Jak tylko' (щойно, як тільки) — часовий сполучник негайності. 'Wrócić' (повернутися) → 'wróci' (3 ос. одн. майб.). 'O wszystkim' (про все) — місцевий прійменниковий зворот. В українській 'щойно... відразу...' — аналогічна конструкція."
+      },
+      {
+        "id": "up_advg14",
+        "question": "Czym _____ się polski od ukraińskiego pod względem gramatyki?",
+        "translation": "(Чим відрізняється польська від української з точки зору граматики?)",
+        "options": [
+          "różni",
+          "rozni",
+          "różnie",
+          "różnią"
+        ],
+        "correct": "różni",
+        "explanation": "'Różnić się' (відрізнятися) → 'różni się' (3 ос. одн.). 'Czym' (чим) — орудний від 'co'. 'Pod względem' (з точки зору) + родовий: 'gramatyki'. 'Ukraiński' (український) → 'od ukraińskiego' (родовий). В українській 'відрізняється' — спільний корінь 'різн-/różn-'."
+      },
+      {
+        "id": "up_advg15",
+        "question": "Zależy mi na _____, żebyś dobrze zdał egzamin.",
+        "translation": "(Мені залежить на тому, щоб ти добре склав іспит.)",
+        "options": [
+          "tym",
+          "to",
+          "tego",
+          "temu"
+        ],
+        "correct": "tym",
+        "explanation": "'Zależy mi na tym' (мені залежить на тому) — 'na' + місцевий: 'to' → 'tym'. 'Żebyś zdał' (щоб ти склав) — умовний з суфіксом '-ś' (2 ос.). 'Zdać egzamin' (скласти іспит) — стійкий зворот. В українській 'залежить на тому' — ідентична конструкція."
+      }
+    ]
+  },
+  {
+    "key": "final_review",
+    "name": "Фінальне повторення",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "up_finr1",
+        "question": "Gdybym _____ więcej czasu, nauczyłbym się lepiej.",
+        "translation": "(Якби я мав більше часу, навчився б краще.)",
+        "options": [
+          "miał",
+          "mam",
+          "będę miał",
+          "miałbym"
+        ],
+        "correct": "miał",
+        "explanation": "'Gdybym miał' (якби я мав) — умовний спосіб: 'gdyby' + '-m' (1 ос.) + минулий час 'miał'. 'Nauczyłbym się' (навчився б) — умовний. Увага: у 'gdybym miał' частка '-bym' вже в 'gdybym', тому 'miał' без '-by'. В українській 'якби мав' — простiша структура."
+      },
+      {
+        "id": "up_finr2",
+        "question": "Przepraszam, czy mógłby pan _____ to powtórzyć?",
+        "translation": "(Перепрошую, чи не могли б ви це повторити?)",
+        "options": [
+          "jeszcze raz",
+          "raz",
+          "znowu",
+          "ponownie"
+        ],
+        "correct": "jeszcze raz",
+        "explanation": "'Jeszcze raz' (ще раз) — стійкий зворот для ввічливого прохання повторити. 'Mógłby pan' (чи міг би пан) — умовний ввічливий. 'Powtórzyć' (повторити) — док. від 'powtarzać'. В українській 'ще раз' — ідентична конструкція."
+      },
+      {
+        "id": "up_finr3",
+        "question": "Powiedziano mi, że spotkanie _____ się o godzinę.",
+        "translation": "(Мені сказали, що зустріч перенеслася на годину.)",
+        "options": [
+          "przesunęło",
+          "przesunął",
+          "przesunęli",
+          "przesunie"
+        ],
+        "correct": "przesunęło",
+        "explanation": "'Przesunęło się' (перенеслося) — середній рід, бо 'spotkanie' (зустріч) — сер. рід. 'Powiedziano mi' (мені сказали) — безособова форма. 'O godzinę' (на годину) — знахідний. В українській 'зустріч' — жін. рід, тому 'перенеслася'."
+      },
+      {
+        "id": "up_finr4",
+        "question": "Bardzo _____ za zaproszenie na kolację.",
+        "translation": "(Дуже дякую за запрошення на вечерю.)",
+        "options": [
+          "dziękuję",
+          "dziękować",
+          "dziękują",
+          "podziękuję"
+        ],
+        "correct": "dziękuję",
+        "explanation": "'Dziękuję za' (дякую за) + знахідний: 'zaproszenie' (запрошення). 'Na kolację' (на вечерю) — 'kolacja' → 'kolację' (знахідний). 'Bardzo dziękuję' (дуже дякую) — посілена подяка. В українській 'дякую за' — ідентична конструкція."
+      },
+      {
+        "id": "up_finr5",
+        "question": "Jeśli będziesz miał _____ problem, zadzwoń do mnie.",
+        "translation": "(Якщо у тебе буде якийсь проблема, зателефонуй мені.)",
+        "options": [
+          "jakikolwiek",
+          "jakiś",
+          "każdy",
+          "jaki"
+        ],
+        "correct": "jakikolwiek",
+        "explanation": "'Jakikolwiek' (будь-який) — неозначений займенник з суфіксом '-kolwiek'. 'Będziesz miał' (будеш мати) — складний майбутній. 'Zadzwonić' (зателефонувати) → 'zadzwoń' (наказовий). В українській 'будь-який' — префікс 'будь-', а в польській суфікс '-kolwiek'."
+      },
+      {
+        "id": "up_finr6",
+        "question": "Nie wiedziałem, że _____ to zrobić.",
+        "translation": "(Я не знав, що можна це зробити.)",
+        "options": [
+          "można",
+          "może",
+          "mogę",
+          "mogłem"
+        ],
+        "correct": "można",
+        "explanation": "'Można' (можна) — безособовий предикатив. 'Nie wiedziałem' (не знав, чол. рід мин. час). 'Że można' (що можна) + інфінітив 'zrobić'. В українській 'можна' — ідентичне безособове слово. Обидві мови використовують безособові конструкції."
+      },
+      {
+        "id": "up_finr7",
+        "question": "Nie mogę się doczekać _____ do Polski.",
+        "translation": "(Не можу дочекатися поїздки до Польщі.)",
+        "options": [
+          "wyjazdu",
+          "wyjazd",
+          "wyjazdem",
+          "wyjazdowi"
+        ],
+        "correct": "wyjazdu",
+        "explanation": "'Doczekać się' (дочекатися) + родовий: 'wyjazd' → 'wyjazdu'. 'Nie mogę się doczekać' (не можу дочекатися) — стійкий зворот нетерпіння. 'Do Polski' (до Польщі) — родовий. В українській 'дочекатися' + родовий — ідентична рекція."
+      },
+      {
+        "id": "up_finr8",
+        "question": "Został wybrany na _____ firmy dzięki swoim kwalifikacjom.",
+        "translation": "(Він був обраний на директора фірми завдяки своїм кваліфікаціям.)",
+        "options": [
+          "dyrektora",
+          "dyrektor",
+          "dyrektorze",
+          "dyrektorem"
+        ],
+        "correct": "dyrektora",
+        "explanation": "'Na dyrektora' (на директора) — знахідний = родовий (живий чол. рід). 'Dzięki' (завдяки) + давальний: 'kwalifikacjom'. 'Zostać wybranym' (бути обраним) — пасив з 'zostać'. В українській 'завдяки' + давальний — ідентична конструкція."
+      },
+      {
+        "id": "up_finr9",
+        "question": "_____ o co chodzi, ale nie wiem, jak to wyjaśnić.",
+        "translation": "(Розумію, про що йдеться, але не знаю, як це пояснити.)",
+        "options": [
+          "Rozumiem",
+          "Rozumiej",
+          "Zrozumiem",
+          "Rozumiałem"
+        ],
+        "correct": "Rozumiem",
+        "explanation": "'Rozumiem' (розумію) — 1 ос. одн. теперішнього часу від 'rozumieć'. 'O co chodzi' (про що йдеться) — безособова конструкція. 'Wyjaśnić' (пояснити) — доконаний вид. В українській 'розумію' — спільний корінь 'розум-/rozum-'."
+      },
+      {
+        "id": "up_finr10",
+        "question": "Okazuje się, że ta informacja nie była _____.",
+        "translation": "(Виявляється, що ця інформація не була правдивою.)",
+        "options": [
+          "prawdziwa",
+          "prawdziwy",
+          "prawdziwe",
+          "prawdziwym"
+        ],
+        "correct": "prawdziwa",
+        "explanation": "'Prawdziwa' — жін. рід, бо 'informacja' — жін. роду. 'Nie była prawdziwa' (не була правдивою) — іменна частина присудка. 'Okazuje się' (виявляється) — безособова конструкція. 'Prawdziwy/-a/-e' (правдивий) від 'prawda' (правда). Спільне слово."
+      },
+      {
+        "id": "up_finr11",
+        "question": "Musisz się bardziej _____, żeby osiągnąć sukces.",
+        "translation": "(Ти мусиш більше старатися, щоб досягти успіху.)",
+        "options": [
+          "starać",
+          "postarać",
+          "starasz",
+          "postaraj"
+        ],
+        "correct": "starać",
+        "explanation": "'Starać się' (старатися) — недоконаний вид, регулярна дія. 'Bardziej' (більше) — порівняльний ступінь. 'Osiągnąć sukces' (досягти успіху) — стійкий зворот. 'Żeby' (щоб) + інфінітив. В українській 'старатися' — ідентичне дієслово."
+      },
+      {
+        "id": "up_finr12",
+        "question": "Zanim podejmiesz decyzję, _____ się dobrze.",
+        "translation": "(Перш ніж приймеш рішення, добре подумай.)",
+        "options": [
+          "zastanów",
+          "zastanowić",
+          "zastanawiaj",
+          "zastanawiam"
+        ],
+        "correct": "zastanów",
+        "explanation": "'Zastanów się' (подумай) — наказовий спосіб від 'zastanowić się' (подумати, заміслитися). 'Zanim' (перш ніж) — часовий сполучник. 'Podjąć decyzję' (прийняти рішення) — стійкий зворот. В українській 'подумай' — простіший наказовий."
+      },
+      {
+        "id": "up_finr13",
+        "question": "Dzięki _____ polskiego, mogę łatwo porozumiewać się z Polakami.",
+        "translation": "(Завдяки знанню польської, я можу легко спілкуватися з поляками.)",
+        "options": [
+          "znajomości",
+          "znajomość",
+          "znanie",
+          "wiedzy"
+        ],
+        "correct": "znajomości",
+        "explanation": "'Dzięki' (завдяки) + давальний: 'znajomość' → 'znajomości'. 'Znajomość' (знання, знайомість) — від 'znający' (обізнаний). 'Porozumiewać się' (спілкуватися, порозуміватися). 'Z Polakami' (з поляками) — орудний множини. В укр. 'завдяки' + давальний — та сама рекція."
+      },
+      {
+        "id": "up_finr14",
+        "question": "Warto _____ polską literaturę, żeby lepiej poznać kulturę.",
+        "translation": "(Варто читати польську літературу, щоб краще пізнати культуру.)",
+        "options": [
+          "czytać",
+          "przeczytać",
+          "czytam",
+          "czytając"
+        ],
+        "correct": "czytać",
+        "explanation": "'Warto czytać' (варто читати) — безособова конструкція + інфінітив недок. виду (загальна порада). 'Warto' (варто) — безособовий предикатив, як українське 'варто'. 'Poznać kulturę' (пізнати культуру) — стійкий зворот. 'Lepiej' (краще) — порівняльний."
+      },
+      {
+        "id": "up_finr15",
+        "question": "Życzę Ci powodzenia w _____ języka polskiego!",
+        "translation": "(Бажаю тобі успіхів у вивченні польської мови!)",
+        "options": [
+          "nauce",
+          "nauka",
+          "nauki",
+          "nauką"
+        ],
+        "correct": "nauce",
+        "explanation": "'W nauce' (у вивченні) — місцевий відмінок: 'nauka' (навчання) → 'nauce'. 'Życzyć' (бажати) + родовий: 'powodzenia' (успіху). 'Ci' (тобі) — скорочений давальний від 'ty'. 'Język polski' (польська мова) → 'języka polskiego' (родовий). Фінальне побажання успіху!"
+      }
+    ]
   }
 ]
