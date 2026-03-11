@@ -16930,5 +16930,1015 @@
         "explanation": "'Pour ma femme' = dla mojej zony. 'Chercher' (szukac) — przechodnie: je cherche un cadeau (bez przyimka!). 'Cadeau' (prezent) jest meski: un cadeau, des cadeaux (-eau > -eaux). 'Femme' (kobieta/zona) jest zenskie: ma femme. UWAGA: 'femme' ma dwa znaczenia — kobieta i zona. Kontekst decyduje! Wymowa: [fam]. 'Pour' + osoba = dla. W polskim 'szukam prezentu dla' — z dopelniaczem i 'dla'."
       }
     ]
+  },
+  {
+    "key": "couleurs_formes",
+    "name": "Kolory i ksztalty",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pf_coul1",
+        "question": "Le ciel est _____ aujourd'hui.",
+        "translation": "(Niebo jest dzisiaj niebieskie)",
+        "options": [
+          "bleu",
+          "bleue",
+          "bleus",
+          "bleues"
+        ],
+        "correct": "bleu",
+        "explanation": "'Bleu' (niebieski) zgadza sie z 'le ciel' (niebo), ktore jest rodzaju meskiego. Przymiotnik opisujacy kolor musi zgadzac sie z rodzajem rzeczownika. W polskim 'niebo' jest nijakie, ale po francusku 'le ciel' jest meskie! Forma zenski to 'bleue', mnoga meska 'bleus', mnoga zenska 'bleues'. To fundamentalna zasada uzgadniania we francuskim."
+      },
+      {
+        "id": "pf_coul2",
+        "question": "La robe _____ est tres jolie.",
+        "translation": "(Czerwona sukienka jest bardzo ladna)",
+        "options": [
+          "rouge",
+          "rouges",
+          "roug",
+          "rougee"
+        ],
+        "correct": "rouge",
+        "explanation": "'Rouge' (czerwony/a) jest jednym z przymiotnikow niezmiennych co do rodzaju — ta sama forma dla meskiego i zenskiego! 'Un livre rouge' (czerwona ksiazka), 'une robe rouge' (czerwona sukienka). Zmienia sie TYLKO w liczbie: 'rouges' w l.mn. W polskim mamy odrebne formy (czerwony/czerwona/czerwone), ale 'rouge' jest latwiejszy."
+      },
+      {
+        "id": "pf_coul3",
+        "question": "Les feuilles sont _____ en automne.",
+        "translation": "(Liscie sa pomaranczowe jesienia)",
+        "options": [
+          "orange",
+          "oranges",
+          "orangee",
+          "orangees"
+        ],
+        "correct": "orange",
+        "explanation": "'Orange' (pomaranczowy) to wyjatek — jest NIEZMIENNY (invariable)! Nie dodajemy -s w l.mn. ani nie zmieniamy formy. Dlaczego? Bo pochodzi od rzeczownika 'une orange' (pomarancza). Inne kolory-rzeczowniki tez sa niezmienne: marron (brazowy, od kasztana), turquoise. UWAGA: 'rose' (rozowy) jest wyjatkiem od tego wyjatku — odmieniamy 'roses'!"
+      },
+      {
+        "id": "pf_coul4",
+        "question": "Il a les yeux _____ .",
+        "translation": "(On ma zielone oczy)",
+        "options": [
+          "verts",
+          "vert",
+          "verte",
+          "vertes"
+        ],
+        "correct": "verts",
+        "explanation": "'Verts' (zielone) — 'les yeux' (oczy) sa rodzaju meskiego w liczbie mnogiej, wiec przymiotnik ma forme 'verts'. 'Vert' (m.poj.), 'verte' (z.poj.), 'verts' (m.mn.), 'vertes' (z.mn.). W polskim 'oczy' sa nijakie, ale po francusku 'un oeil / des yeux' to rodzaj meski. Uwaga na nieregularna liczbe mnoga: oeil -> yeux!"
+      },
+      {
+        "id": "pf_coul5",
+        "question": "Cette table est de forme _____ .",
+        "translation": "(Ten stol ma ksztalt okragly)",
+        "options": [
+          "ronde",
+          "rond",
+          "ronds",
+          "rondes"
+        ],
+        "correct": "ronde",
+        "explanation": "'Ronde' (okragla) — 'cette table' (ten stol) jest rodzaju zenskiego we francuskim. W polskim 'stol' jest meski, ale 'une table' jest zenska! Dlatego uzywamy formy zenskiej przymiotnika: 'ronde' zamiast 'rond'. To czesty blad polskojezycznych uczniow, ktorzy przypisuja rodzaj z polskiego. Formy: rond(m), ronde(f), ronds(m.mn.), rondes(f.mn.)."
+      },
+      {
+        "id": "pf_coul6",
+        "question": "Le _____ est ma couleur preferee.",
+        "translation": "(Zolty to moj ulubiony kolor)",
+        "options": [
+          "jaune",
+          "jeune",
+          "jaunes",
+          "jaunee"
+        ],
+        "correct": "jaune",
+        "explanation": "'Jaune' (zolty) uzyty jako rzeczownik z rodzajnikiem 'le'. Kolory moga byc przymiotnikami LUB rzeczownikami! Jako rzeczownik: 'le jaune' (zolty kolor), 'le bleu' (niebieski kolor). UWAGA: nie myl 'jaune' (zolty) z 'jeune' (mlody) — roznica jednej litery! To jeden z najczestszych bledow ortograficznych wsrod uczniow."
+      },
+      {
+        "id": "pf_coul7",
+        "question": "Cette boite a une forme _____ .",
+        "translation": "(To pudelko ma ksztalt kwadratowy)",
+        "options": [
+          "carree",
+          "carre",
+          "carres",
+          "carrees"
+        ],
+        "correct": "carree",
+        "explanation": "'Carree' (kwadratowa) — 'forme' (ksztalt/forma) jest rodzaju zenskiego, wiec przymiotnik musi byc w formie zenskiej. 'Carre' (m) -> 'carree' (f) — dodajemy -e. Inne ksztalty: triangulaire (trojkatny — ta sama forma m/f!), rectangulaire (prostokatny — tez niezmienny), ovale (owalny — niezmienny). Przymiotniki na -aire i -ale sa czesto jednakowe dla obu rodzajow."
+      },
+      {
+        "id": "pf_coul8",
+        "question": "Les murs sont peints en _____ .",
+        "translation": "(Sciany sa pomalowane na bialo)",
+        "options": [
+          "blanc",
+          "blanche",
+          "blancs",
+          "blanches"
+        ],
+        "correct": "blanc",
+        "explanation": "'Blanc' (bialy) po przyimku 'en' uzywamy formy bazowej (meskiej pojedynczej), niezaleznie od rzeczownika! 'Peint en blanc/bleu/rouge' — po 'en' kolor jest niezmienny. To dlatego, ze 'en blanc' oznacza 'na kolor bialy' (rzeczownik). Ale jako przymiotnik: 'les murs blancs' (biale sciany), 'une maison blanche' (bialy dom). Roznica: 'en' + kolor-rzeczownik vs przymiotnik."
+      },
+      {
+        "id": "pf_coul9",
+        "question": "Le triangle a _____ cotes.",
+        "translation": "(Trojkat ma trzy boki)",
+        "options": [
+          "trois",
+          "troi",
+          "tree",
+          "trais"
+        ],
+        "correct": "trois",
+        "explanation": "'Trois' (trzy) — liczba bokow trojkata. 'Trois' jest niezmienny — nie ma formy zenskiej ani mnogiej. Ksztalty geometryczne po francusku: triangle (trojkat), carre (kwadrat), cercle (kolo), rectangle (prostokat), losange (romb). UWAGA: 'le triangle' jest rodzaju meskiego. W polskim 'trojkat' tez jest meski, wiec tu nie ma problemu z rodzajem!"
+      },
+      {
+        "id": "pf_coul10",
+        "question": "Elle porte un pantalon _____ .",
+        "translation": "(Ona nosi ciemnogranatowe spodnie)",
+        "options": [
+          "bleu marine",
+          "bleu marin",
+          "bleue marine",
+          "bleus marines"
+        ],
+        "correct": "bleu marine",
+        "explanation": "'Bleu marine' (ciemnogranatowy) to kolor zlozony — ZAWSZE niezmienny! Nie dodajemy -e ani -s. Inne kolory zlozone: bleu clair (jasnoniebieski), vert fonce (ciemnozielony), gris perle (perlowoszary). Regula: gdy kolor sklada sie z dwoch slow, OBA zostaja niezmienne. 'Des chaussures bleu marine' (NIE 'bleues marines'). W polskim tworzymy zlozenia latwiej: ciemno+niebieski."
+      },
+      {
+        "id": "pf_coul11",
+        "question": "Cette piece est de forme _____ .",
+        "translation": "(Ten pokoj ma ksztalt prostokatny)",
+        "options": [
+          "rectangulaire",
+          "rectangulaires",
+          "rectangular",
+          "rectangule"
+        ],
+        "correct": "rectangulaire",
+        "explanation": "'Rectangulaire' (prostokatny/a) — przymiotnik zakonczony na '-aire' ma ta sama forme dla rodzaju meskiego i zenskiego! 'Un objet rectangulaire', 'une piece rectangulaire'. Zmienia sie tylko w l.mn.: 'rectangulaires'. Inne przymiotniki na '-aire': circulaire (kolowy), triangulaire (trojkatny), regulaire (regularny). W polskim kazdy ma odrebna forme meski/zenski."
+      },
+      {
+        "id": "pf_coul12",
+        "question": "Les roses sont _____ dans le jardin.",
+        "translation": "(Roze sa rozowe w ogrodzie)",
+        "options": [
+          "roses",
+          "rose",
+          "rosees",
+          "rosies"
+        ],
+        "correct": "roses",
+        "explanation": "'Roses' (rozowe) — 'les roses' (roze) sa w liczbie mnogiej, wiec przymiotnik 'rose' dostaje -s. UWAGA: 'rose' jest wyjatkiem — mimo ze pochodzi od rzeczownika (kwiat roza), odmieniamy go jak normalny przymiotnik! 'Des fleurs roses', 'des rubans roses'. Przypomnij sobie: 'orange' i 'marron' sa NIEZMIENNE, ale 'rose' i 'pourpre' sie odmieniaja. Trzeba to po prostu zapamietac."
+      },
+      {
+        "id": "pf_coul13",
+        "question": "Le _____ est la forme la plus stable.",
+        "translation": "(Trojkat jest najbardziej stabilnym ksztaltem)",
+        "options": [
+          "triangle",
+          "triangulaire",
+          "triangles",
+          "tringle"
+        ],
+        "correct": "triangle",
+        "explanation": "'Le triangle' (trojkat) — jako rzeczownik rodzaju meskiego. 'Triangle' to rzeczownik, 'triangulaire' to przymiotnik. 'Un triangle equilateral' (trojkat rownoboczny), 'une forme triangulaire' (ksztalt trojkatny). W matematyce: 'le perimetre du triangle' (obwod trojkata). Francuska terminologia geometryczna pochodzi z laciny, podobnie jak polska, wiec wiele slow jest podobnych!"
+      },
+      {
+        "id": "pf_coul14",
+        "question": "Sa voiture est _____ fonce.",
+        "translation": "(Jego samochod jest ciemnoszary)",
+        "options": [
+          "gris",
+          "grise",
+          "grises",
+          "grix"
+        ],
+        "correct": "gris",
+        "explanation": "'Gris fonce' (ciemnoszary) — kolor zlozony, wiec NIEZMIENNY. Ale uwaga: 'gris' sam jest normalnym przymiotnikiem! 'Une voiture grise' (szary samochod — forma zenska). Tu jednak mamy 'gris fonce' (zlozenie), wiec obie czesci zostaja niezmienne. Regula: prosty kolor — odmieniaj (gris/grise/gris/grises), kolor zlozony — nie odmieniaj (gris fonce/bleu clair/vert pomme)."
+      },
+      {
+        "id": "pf_coul15",
+        "question": "La Terre a une forme presque _____ .",
+        "translation": "(Ziemia ma ksztalt prawie kulisty)",
+        "options": [
+          "spherique",
+          "sphere",
+          "spheriques",
+          "spherale"
+        ],
+        "correct": "spherique",
+        "explanation": "'Spherique' (kulisty/sferyczny) — przymiotnik naukowy. 'La Terre' (Ziemia) jest rodzaju zenskiego, ale 'spherique' (zakonczenie -ique) jest takie samo dla obu rodzajow! Inne przymiotniki na '-ique': geometrique, symetrique, concentrique. 'Forme' jest zenska, wiec powiemy 'une forme spherique'. Przymiotniki naukowe na '-ique' sa czesto bardzo podobne do polskich: sferyczny, geometryczny, symetryczny."
+      }
+    ]
+  },
+  {
+    "key": "nationalites",
+    "name": "Narodowosci",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pf_nat1",
+        "question": "Marie est _____ , elle vient de Paris.",
+        "translation": "(Marie jest Francuzka, pochodzi z Paryza)",
+        "options": [
+          "francaise",
+          "francais",
+          "francaises",
+          "France"
+        ],
+        "correct": "francaise",
+        "explanation": "'Francaise' (Francuzka) — przymiotnik narodowosci musi zgadzac sie z rodzajem osoby! Marie to kobieta, wiec uzywamy formy zenskiej 'francaise'. Meski: 'francais'. UWAGA: przymiotniki narodowosci pisze sie MALA litera! 'Elle est francaise' (przymiotnik). Ale jako rzeczownik — WIELKA litera: 'une Francaise' (Francuzka). W polskim zawsze wielka: Francuzka/francuski."
+      },
+      {
+        "id": "pf_nat2",
+        "question": "Il habite au Japon, il est _____ .",
+        "translation": "(On mieszka w Japonii, jest Japonczykiem)",
+        "options": [
+          "japonais",
+          "japonaise",
+          "japonaises",
+          "Japon"
+        ],
+        "correct": "japonais",
+        "explanation": "'Japonais' (japonski) — forma meska dla 'il'. Tworzenie narodowosci: Japon -> japonais/japonaise. Wzorzec: kraj na -on czesto daje -onais/-onaise. UWAGA na przyimki z krajami: 'AU Japon' (do/w Japonii — kraje meskie uzywaja 'au'), ale 'EN France' (do/w Francji — kraje zenskie uzywaja 'en'). W polskim mamy jeden przyimek 'w' dla wszystkich krajow, tu trzeba wybierac!"
+      },
+      {
+        "id": "pf_nat3",
+        "question": "Mes voisins sont _____ , ils viennent de Berlin.",
+        "translation": "(Moi sasiedzi sa Niemcami, pochodza z Berlina)",
+        "options": [
+          "allemands",
+          "allemand",
+          "allemandes",
+          "Allemagne"
+        ],
+        "correct": "allemands",
+        "explanation": "'Allemands' (niemieccy) — l.mn. meska, bo 'mes voisins' (moi sasiedzi) sa rodzaju meskiego w l.mn. Odmiana: allemand (m.poj.), allemande (z.poj.), allemands (m.mn.), allemandes (z.mn.). Kraj: 'l'Allemagne' (f) -> przyimek 'EN Allemagne'. Jezyk: 'l'allemand' (mala litera!). Narod: 'les Allemands' (wielka litera!). Trzy uzytcia — trzy zasady pisowni!"
+      },
+      {
+        "id": "pf_nat4",
+        "question": "Anna est _____ , elle vient de Varsovie.",
+        "translation": "(Anna jest Polka, pochodzi z Warszawy)",
+        "options": [
+          "polonaise",
+          "polonais",
+          "polonnaise",
+          "Pologne"
+        ],
+        "correct": "polonaise",
+        "explanation": "'Polonaise' (polska/Polka) — forma zenska. 'Polonais/polonaise' to przymiotnik narodowosci od 'la Pologne' (Polska). UWAGA: podwojna litera — 'polonais' ma jedno 'n', ale 'Pologne' tez jedno 'n'. Czesty blad: *polonnaise (podwojne n). Przyimek: 'EN Pologne' (bo kraj zenski). 'Je viens de Pologne' (Pochodze z Polski). Varsovie = Warszawa po francusku."
+      },
+      {
+        "id": "pf_nat5",
+        "question": "Cette chanteuse est _____ , elle chante en espagnol.",
+        "translation": "(Ta piosenkarka jest Hiszpanka, spiewa po hiszpansku)",
+        "options": [
+          "espagnole",
+          "espagnol",
+          "espagnoles",
+          "Espagne"
+        ],
+        "correct": "espagnole",
+        "explanation": "'Espagnole' (hiszpanska) — forma zenska od 'espagnol'. 'Cette chanteuse' (ta piosenkarka) jest zenska, wiec przymiotnik w formie zenskiej. Tworzenie: espagnol + e = espagnole. Kraj: 'l'Espagne' (f) -> 'EN Espagne'. UWAGA na wymowe: 'espagnol' [espanyol] — 'gn' wymawia sie jak polskie 'ni' w 'koniu'. To samo w: magnifique, montagne, champagne."
+      },
+      {
+        "id": "pf_nat6",
+        "question": "Ils sont _____ , ils habitent a Rome.",
+        "translation": "(Oni sa Wlochami, mieszkaja w Rzymie)",
+        "options": [
+          "italiens",
+          "italien",
+          "italiennes",
+          "Italie"
+        ],
+        "correct": "italiens",
+        "explanation": "'Italiens' (wloscy) — l.mn. meska. Odmiana: italien/italienne/italiens/italiennes. UWAGA na podwojne 'n' w formie zenskiej! 'Italien' -> 'italienne' (nie *italiene). Ta sama regula dotyczy: canadien/canadienne, bresilien/bresilienne, autrichien/autrichienne. Wzorzec: przymiotniki na -ien tworca forme zenska na -ienne. W polskim: Wloch/Wloszka — zupelnie inne slowotworstwo!"
+      },
+      {
+        "id": "pf_nat7",
+        "question": "Ma collegue est _____ , elle vient de Londres.",
+        "translation": "(Moja kolezanka jest Angielka, pochodzi z Londynu)",
+        "options": [
+          "anglaise",
+          "anglais",
+          "anglaises",
+          "Angleterre"
+        ],
+        "correct": "anglaise",
+        "explanation": "'Anglaise' (angielska) — UWAGA na roznice: 'anglais/e' (angielski) vs 'britannique' (brytyjski). 'Angleterre' (Anglia) to tylko czesc Zjednoczonego Krolestwa. 'Le Royaume-Uni' (Zjednoczone Krolestwo) obejmuje tez Szkocje, Walie, Irlandie Pln. Przyimek: 'EN Angleterre', ale 'AU Royaume-Uni'. Po francusku te roznice sa wazne — nie uzywaj 'anglais' mowiac o Szkotach!"
+      },
+      {
+        "id": "pf_nat8",
+        "question": "Cette etudiante est _____ , elle est nee a Pekin.",
+        "translation": "(Ta studentka jest Chinką, urodzila sie w Pekinie)",
+        "options": [
+          "chinoise",
+          "chinois",
+          "chinoises",
+          "Chine"
+        ],
+        "correct": "chinoise",
+        "explanation": "'Chinoise' (chinska) — forma zenska od 'chinois'. Kraj: 'la Chine' (f) -> 'EN Chine'. Stolica: 'Pekin' (nie 'Beijing' — francuski uzywa tradycyjnych nazw). Inne przykladykh: Moscou (Moskwa), Varsovie (Warszawa), Londres (Londyn). Francuski zachowuje wlasne nazwy miast i krajow, tak jak polski! Porownaj: 'Niemcy' (pl) vs 'Allemagne' (fr) vs 'Germany' (eng)."
+      },
+      {
+        "id": "pf_nat9",
+        "question": "Mon ami est _____ , il habite a Lisbonne.",
+        "translation": "(Moj przyjaciel jest Portugalczykiem, mieszka w Lizbonie)",
+        "options": [
+          "portugais",
+          "portugaise",
+          "portugaises",
+          "Portugal"
+        ],
+        "correct": "portugais",
+        "explanation": "'Portugais' (portugalski) — forma meska dla 'mon ami' (moj przyjaciel). Kraj: 'le Portugal' (m) -> 'AU Portugal' (bo kraj meski!). Lisbonne = Lizbona. UWAGA: 'portugais' konczy sie na '-ais' (silent 's') — wymowa [portygE]. Kraje meskie z 'au': au Portugal, au Bresil, au Canada, au Mexique, au Japon. Kraje zenskie z 'en': en France, en Pologne, en Chine, en Italie."
+      },
+      {
+        "id": "pf_nat10",
+        "question": "Elles sont _____ , elles viennent de Moscou.",
+        "translation": "(One sa Rosjankami, pochodza z Moskwy)",
+        "options": [
+          "russes",
+          "russe",
+          "russies",
+          "Russie"
+        ],
+        "correct": "russes",
+        "explanation": "'Russes' (rosyjskie) — l.mn. zenska. 'Russe' jest taki sam dla m i f w l.poj.! 'Il est russe', 'elle est russe'. Zmiana tylko w l.mn.: 'russes'. Kraj: 'la Russie' (f) -> 'EN Russie'. To przymiotnik, ktory nie zmienia sie miedzy rodzajami — podobnie jak 'belge' (belgijski/a), 'suisse' (szwajcarski/a), 'tcheque' (czeski/a). Prosta odmiana!"
+      },
+      {
+        "id": "pf_nat11",
+        "question": "Ce footballeur est _____ , il joue pour le Bresil.",
+        "translation": "(Ten pilkarz jest Brazylijczykiem, gra dla Brazylii)",
+        "options": [
+          "bresilien",
+          "bresilienne",
+          "bresiliens",
+          "Bresil"
+        ],
+        "correct": "bresilien",
+        "explanation": "'Bresilien' (brazylijski) — forma meska poj. Odmiana: bresilien/bresilienne/bresiliens/bresiliennes. UWAGA na koncowke -ien/-ienne — podwojne 'n' w formie zenskiej! Kraj: 'le Bresil' (m) -> 'AU Bresil'. Inne kraje Ameryki Poludniowej: l'Argentine (f, EN Argentine), le Chili (m, AU Chili), la Colombie (f, EN Colombie). Regula: kraje na -e sa zwykle zenskie (wyjatki: le Mexique, le Mozambique)."
+      },
+      {
+        "id": "pf_nat12",
+        "question": "Ma professeure est _____ , elle vient du Caire.",
+        "translation": "(Moja nauczycielka jest Egipcjanka, pochodzi z Kairu)",
+        "options": [
+          "egyptienne",
+          "egyptien",
+          "egyptiennes",
+          "Egypte"
+        ],
+        "correct": "egyptienne",
+        "explanation": "'Egyptienne' (egipska) — forma zenska od 'egyptien'. Podwojne 'n' w formie zenskiej! Kraj: 'l'Egypte' (f) -> 'EN Egypte'. Stolica: 'Le Caire' (Kair) — z rodzajnikiem! 'Il vient DU Caire' (z Kairu — du = de + le). Inne miasta z rodzajnikiem: La Havane (Hawana), Le Havre, La Nouvelle-Orleans. W polskim miasta nie maja rodzajnikow, wiec to czesta pulapka."
+      },
+      {
+        "id": "pf_nat13",
+        "question": "Les touristes _____ adorent la France.",
+        "translation": "(Americanscy turysci uwielbiaja Francje)",
+        "options": [
+          "americains",
+          "americain",
+          "americaines",
+          "Amerique"
+        ],
+        "correct": "americains",
+        "explanation": "'Americains' (amerykanscy) — l.mn. meska. 'Les touristes' (turysci) moze byc meskie lub zenskie, tu kontekst sugeruje meskie. Kraj: 'les Etats-Unis' (m.mn.) -> 'AUX Etats-Unis' (do/w USA — l.mn. z 'aux'!). UWAGA: 'americain' moze oznaczac kogos z calej Ameryki, ale zwykle oznacza 'z USA'. Dla precyzji: 'nord-americain', 'sud-americain', 'latino-americain'."
+      },
+      {
+        "id": "pf_nat14",
+        "question": "Cette actrice est _____ , elle a grandi a Sydney.",
+        "translation": "(Ta aktorka jest Australijka, dorastala w Sydney)",
+        "options": [
+          "australienne",
+          "australien",
+          "australiennes",
+          "Australie"
+        ],
+        "correct": "australienne",
+        "explanation": "'Australienne' (australijska) — forma zenska od 'australien'. Wzorzec -ien/-ienne. Kraj: 'l'Australie' (f) -> 'EN Australie'. UWAGA: kontynenty po francusku sa zenskie: l'Europe, l'Asie, l'Afrique, l'Amerique, l'Oceanie. Przymiotniki: europeen/europeenne, asiatique (niezmienny!), africain/africaine. 'Asiatique' jest wyjatkiem — ta sama forma dla obu rodzajow."
+      },
+      {
+        "id": "pf_nat15",
+        "question": "Son mari est _____ , il est ne a Zurich.",
+        "translation": "(Jej maz jest Szwajcarem, urodzil sie w Zurychu)",
+        "options": [
+          "suisse",
+          "suisses",
+          "suissien",
+          "Suisse"
+        ],
+        "correct": "suisse",
+        "explanation": "'Suisse' (szwajcarski) — przymiotnik NIEZMIENNY co do rodzaju! 'Il est suisse', 'elle est suisse'. Kraj: 'la Suisse' (f) -> 'EN Suisse'. UWAGA: 'la Suisse' (kraj) i 'suisse' (przymiotnik) wygladaja tak samo, ale pisownia rozni sie wielka/mala litera. Inne przymiotniki niezmienne: belge, russe, tcheque, slave. W polskim: Szwajcar/Szwajcarka — formy sa rozne, ale po francusku to proste!"
+      }
+    ]
+  },
+  {
+    "key": "professions",
+    "name": "Zawody",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pf_prof1",
+        "question": "Marie est _____ , elle travaille a l'hopital.",
+        "translation": "(Marie jest lekarka, pracuje w szpitalu)",
+        "options": [
+          "medecin",
+          "medecine",
+          "medecins",
+          "medicin"
+        ],
+        "correct": "medecin",
+        "explanation": "'Medecin' (lekarz/lekarka) — tradycyjnie nie mial formy zenskiej! Mowilo sie 'elle est medecin' (bez rodzajnika i bez zmiany formy). Dzis coraz czesciej uzywa sie 'medecine' jako formy zenskiej, ale forma 'medecin' jest nadal akceptowana dla obu plci. UWAGA: bez rodzajnika po 'etre'! 'Elle est medecin' (NIE *'elle est une medecin'). To fundamentalna roznica z polskim!"
+      },
+      {
+        "id": "pf_prof2",
+        "question": "Mon pere est _____ , il enseigne les mathematiques.",
+        "translation": "(Moj ojciec jest nauczycielem, uczy matematyki)",
+        "options": [
+          "professeur",
+          "professeure",
+          "professeurs",
+          "professer"
+        ],
+        "correct": "professeur",
+        "explanation": "'Professeur' (nauczyciel/profesor) — forma meska. Forma zenska: 'professeure' (z dodanym -e). UWAGA: po 'etre' + zawod NIE uzywamy rodzajnika! 'Il est professeur' (NIE *'il est un professeur'). Ale z przymiotnikiem: 'C'est un bon professeur' (To dobry nauczyciel — tu uzywa sie rodzajnika z 'c'est'). Roznica 'il est' vs 'c'est' to kluczowy punkt gramatyczny!"
+      },
+      {
+        "id": "pf_prof3",
+        "question": "Elle veut devenir _____ pour defendre les gens.",
+        "translation": "(Ona chce zostac prawniczka, zeby bronic ludzi)",
+        "options": [
+          "avocate",
+          "avocat",
+          "avocats",
+          "avocates"
+        ],
+        "correct": "avocate",
+        "explanation": "'Avocate' (prawniczka) — forma zenska od 'avocat' (prawnik). UWAGA na homofon: 'un avocat' oznacza tez 'awokado'! Kontekst rozroznia znaczenie. Po 'devenir' (zostac) tez nie uzywamy rodzajnika: 'devenir avocate' (nie *'devenir une avocate'). Ta regula dotyczy wszystkich czasownikow stanu: etre, devenir, rester + zawod BEZ rodzajnika. W polskim: 'zostac prawniczka' — tez bez rodzajnika, wiec podobnie!"
+      },
+      {
+        "id": "pf_prof4",
+        "question": "Mon frere est _____ , il ecrit des articles.",
+        "translation": "(Moj brat jest dziennikarzem, pisze artykuly)",
+        "options": [
+          "journaliste",
+          "journalistes",
+          "journalist",
+          "journalier"
+        ],
+        "correct": "journaliste",
+        "explanation": "'Journaliste' (dziennikarz/ka) — ta sama forma dla obu rodzajow! Koncowka '-iste' jest zawsze niezmienna: artiste, dentiste, pianiste, touriste, optimiste. Zmienia sie tylko rodzajnik: 'un journaliste' (m), 'une journaliste' (f). Ale po 'etre' bez rodzajnika: 'il est journaliste'. W polskim mamy odrebne formy: dziennikarz/dziennikarka, ale po francusku '-iste' ulatwia sprawe."
+      },
+      {
+        "id": "pf_prof5",
+        "question": "Sa soeur est _____ dans un grand restaurant.",
+        "translation": "(Jego siostra jest kucharka w duzej restauracji)",
+        "options": [
+          "cuisiniere",
+          "cuisinier",
+          "cuisiniers",
+          "cuisinieres"
+        ],
+        "correct": "cuisiniere",
+        "explanation": "'Cuisiniere' (kucharka) — forma zenska od 'cuisinier'. Wzorzec: -ier/-iere (dodajemy accent grave + e). Inne zawody: boulanger/boulangere (piekarz/ka), patissier/patissiere (cukiernik/czka), infirmier/infirmiere (pielegniarz/ka). UWAGA: 'une cuisiniere' oznacza tez 'kuchenke' (sprzet)! Kontekst rozroznia. W polskim tez mamy takie homofoniy: 'pilka' (sportowa/nozna vs instrument), ale tu w innym kontekscie."
+      },
+      {
+        "id": "pf_prof6",
+        "question": "Il reve de devenir _____ et de jouer au theatre.",
+        "translation": "(On marzy o zostaniu aktorem i graniu w teatrze)",
+        "options": [
+          "acteur",
+          "actrice",
+          "acteurs",
+          "actrices"
+        ],
+        "correct": "acteur",
+        "explanation": "'Acteur' (aktor) — forma meska. Forma zenska jest NIEREGULARNA: 'actrice' (aktorka)! Nie dodajemy po prostu -e, lecz cala koncowka sie zmienia: -eur -> -rice. Inne zawody z ta nieregularnoscia: directeur/directrice, traducteur/traductrice, instituteur/institutrice. Ale UWAGA: nie wszystkie -eur tak robia! 'Professeur/professeure', 'ingenieur/ingenieure' — te dodaja zwykle -e."
+      },
+      {
+        "id": "pf_prof7",
+        "question": "Ma mere est _____ , elle dessine des batiments.",
+        "translation": "(Moja mama jest architektka, projektuje budynki)",
+        "options": [
+          "architecte",
+          "architect",
+          "architectes",
+          "architective"
+        ],
+        "correct": "architecte",
+        "explanation": "'Architecte' (architekt/ka) — forma niezmienna dla obu rodzajow, jak zawody na '-iste'! 'Un architecte' (m), 'une architecte' (f). Roznica widoczna tylko w rodzajniku. Inne zawody niezmienne: pilote, diplomate, astronaute, athlete. Po 'etre' bez rodzajnika: 'elle est architecte'. UWAGA: w polskim mamy 'architekt/architektka', ale we francuskim ta sama forma obsluzy oba rodzaje."
+      },
+      {
+        "id": "pf_prof8",
+        "question": "Son oncle est _____ , il repare les voitures.",
+        "translation": "(Jego wujek jest mechanikiem, naprawia samochody)",
+        "options": [
+          "mecanicien",
+          "mecanicienne",
+          "mecaniciens",
+          "mecanique"
+        ],
+        "correct": "mecanicien",
+        "explanation": "'Mecanicien' (mechanik) — forma meska. Zenska: 'mecanicienne' (podwojne 'n'!). Wzorzec -ien/-ienne — ten sam co w narodowosciach (italien/italienne). Inne zawody: musicien/musicienne, technicien/technicienne, pharmacien/pharmacienne, informaticien/informaticienne. UWAGA: 'mecanique' to przymiotnik (mechaniczny) lub rzeczownik (mechanika), NIE zawod!"
+      },
+      {
+        "id": "pf_prof9",
+        "question": "Elle travaille comme _____ dans une ecole primaire.",
+        "translation": "(Ona pracuje jako nauczycielka w szkole podstawowej)",
+        "options": [
+          "institutrice",
+          "instituteur",
+          "instituteurs",
+          "institutrices"
+        ],
+        "correct": "institutrice",
+        "explanation": "'Institutrice' (nauczycielka w szkole podstawowej) — forma zenska od 'instituteur'. Roznica: 'instituteur/institutrice' = nauczyciel w szkole podstawowej, 'professeur/professeure' = nauczyciel w szkole sredniej lub na uczelni. W polskim mowimy po prostu 'nauczycielka' wszedzie, ale po francusku ta roznica jest wazna! 'Comme' (jako) + zawod — tu tez bez rodzajnika."
+      },
+      {
+        "id": "pf_prof10",
+        "question": "Paul est _____ , il vend des medicaments.",
+        "translation": "(Paul jest aptekarzem, sprzedaje leki)",
+        "options": [
+          "pharmacien",
+          "pharmacienne",
+          "pharmaciens",
+          "pharmacie"
+        ],
+        "correct": "pharmacien",
+        "explanation": "'Pharmacien' (aptekarz/farmaceuta) — od 'la pharmacie' (apteka). Zenska forma: 'pharmacienne'. Wzorzec -ien/-ienne. UWAGA: 'la pharmacie' to miejsce (apteka), 'le/la pharmacien/ne' to osoba, 'la pharmacologie' to nauka. We francuskim czesto jedna rodzina slow obejmuje miejsce, osobe i dziedzine. W polskim tez: apteka, aptekarz, farmacja — ale rdzenie sa rozne!"
+      },
+      {
+        "id": "pf_prof11",
+        "question": "Ma cousine est _____ , elle soigne les dents.",
+        "translation": "(Moja kuzynka jest dentystka, leczy zeby)",
+        "options": [
+          "dentiste",
+          "dentist",
+          "dentistes",
+          "dentiaire"
+        ],
+        "correct": "dentiste",
+        "explanation": "'Dentiste' (dentysta/ka) — forma niezmienna (koncowka '-iste'). 'Un/une dentiste'. UWAGA na wymowe: 'dentiste' [dAtist] — 'en' wymawia sie nosowo [A]. Inne zawody medyczne: chirurgien/chirurgienne (chirurg), kinesitherapeute (fizjoterapeuta), ophtalmologue (okulista — tez niezmienny!). 'Soigner les dents' = leczyc zeby, 'se brosser les dents' = myc zeby (z zaimkiem zwrotnym!)."
+      },
+      {
+        "id": "pf_prof12",
+        "question": "Il est _____ , il conduit un camion.",
+        "translation": "(On jest kierowca ciezarowki, prowadzi ciezarowke)",
+        "options": [
+          "chauffeur",
+          "chauffeuse",
+          "chauffeurs",
+          "chauffer"
+        ],
+        "correct": "chauffeur",
+        "explanation": "'Chauffeur' (kierowca) — tradycyjnie tylko forma meska. Forma zenska 'chauffeuse' istnieje, ale 'chauffeur' jest czesciej uzywany dla obu plci. UWAGA: nie myl z 'chauffer' (ogrzewac — bezokolicznik!). Etymologia: 'chauffeur' pierwotnie oznaczal 'palacza' (w lokomotywie parowej). 'Conduire un camion' = prowadzic ciezarowke. 'Un camion' (ciezarowka) jest meski, 'une voiture' (samochod) jest zenska."
+      },
+      {
+        "id": "pf_prof13",
+        "question": "Elle est _____ , elle defend ses clients au tribunal.",
+        "translation": "(Ona jest adwokatka, broni swoich klientow w sadzie)",
+        "options": [
+          "avocate",
+          "avocat",
+          "avocats",
+          "avocate"
+        ],
+        "correct": "avocate",
+        "explanation": "'Avocate' (adwokatka) — regularna forma zenska od 'avocat'. 'Au tribunal' = w sadzie. Slownictwo prawnicze: le juge (sedzia — niezmienny!), le/la procureur/e (prokurator/ka), l'accuse/e (oskarony/a), le temoin (swiadek — niezmienny), le verdict (wyrok). W polskim system prawny jest inny, wiec tlumaczenia sa przyblizone: 'avocat' to bardziej 'adwokat' niz 'prawnik' (juriste)."
+      },
+      {
+        "id": "pf_prof14",
+        "question": "Mon voisin est _____ , il cultive des legumes.",
+        "translation": "(Moj sasiad jest rolnikiem, uprawia warzywa)",
+        "options": [
+          "agriculteur",
+          "agricultrice",
+          "agriculteurs",
+          "agriculture"
+        ],
+        "correct": "agriculteur",
+        "explanation": "'Agriculteur' (rolnik) — zenska forma: 'agricultrice'. Wzorzec -eur/-rice (jak acteur/actrice). Inne zawody rolnicze: eleveur/eleveuse (hodowca), viticulteur/viticulitrice (winiarz), apiculteur/apicultrice (pszczelarz). 'Cultiver' = uprawiac, 'l'agriculture' = rolnictwo. UWAGA: nie myl 'agriculteur' z 'agriculture' — pierwszy to osoba, drugi to dziedzina!"
+      },
+      {
+        "id": "pf_prof15",
+        "question": "Sa fille est _____ , elle ecrit des programmes.",
+        "translation": "(Jego corka jest programistka, pisze programy)",
+        "options": [
+          "programmeuse",
+          "programmeur",
+          "programmeurs",
+          "programmeuses"
+        ],
+        "correct": "programmeuse",
+        "explanation": "'Programmeuse' (programistka) — forma zenska od 'programmeur'. Wzorzec -eur/-euse: vendeur/vendeuse, serveur/serveuse, coiffeur/coiffeuse. UWAGA: nie wszystkie -eur tworca -euse! Porownaj: acteur->actrice (nie *acteuse), professeur->professeure (nie *professeuse). Trzy wzorce zenskie od -eur: 1) -euse (czesciej), 2) -rice (starsze slownictwo), 3) -eure (nowsze). Trzeba zapamietac kazdy osobno!"
+      }
+    ]
+  },
+  {
+    "key": "marqueurs_discours",
+    "name": "Znaczniki dyskursu",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pf_mdisc1",
+        "question": "_____ , je voudrais aborder un point important.",
+        "translation": "(Po pierwsze, chcialbym poruszyc wazna kwestie)",
+        "options": [
+          "D'abord",
+          "Ensuite",
+          "Enfin",
+          "Puis"
+        ],
+        "correct": "D'abord",
+        "explanation": "'D'abord' (po pierwsze/przede wszystkim) — otwiera sekwencje argumentow. Pelna sekwencja: 'd'abord' (po pierwsze), 'ensuite/puis' (nastepnie), 'enfin' (wreszcie/na koncu). W polskim uzywamy 'po pierwsze, po drugie, po trzecie', ale po francusku struktura jest inna: d'abord -> ensuite -> de plus -> enfin. 'D'abord' pochodzi od 'de + abord' (od poczatku). Uzywany w kazdy rejestrze — od codziennego po formalny."
+      },
+      {
+        "id": "pf_mdisc2",
+        "question": "Il pleut, _____ nous restons a la maison.",
+        "translation": "(Pada deszcz, dlatego zostajemy w domu)",
+        "options": [
+          "donc",
+          "mais",
+          "car",
+          "or"
+        ],
+        "correct": "donc",
+        "explanation": "'Donc' (wiec/zatem/dlatego) — wprowadza KONSEKWENCJE/WNIOSEK. Jest jednym z 7 spójnikow wspolrzednych (MAIS, OU, ET, DONC, OR, NI, CAR — akronim: 'Mais ou est donc Ornicar?'). 'Donc' nie wymaga przecinka, ale czesto jest po nim stawiany. Pozycja: po podmiocie ('nous restons donc') lub na poczatku ('donc, nous restons'). W polskim 'wiec' jest bardziej elastyczne pozycyjnie."
+      },
+      {
+        "id": "pf_mdisc3",
+        "question": "Je suis fatigue, _____ je vais continuer.",
+        "translation": "(Jestem zmeczony, ale bede kontynuowac)",
+        "options": [
+          "mais",
+          "donc",
+          "car",
+          "puis"
+        ],
+        "correct": "mais",
+        "explanation": "'Mais' (ale/jednak) — wprowadza PRZECIWSTAWIENIE/KONTRAST. Najczesciej uzywany spojnik przeciwstawny. Odmienniki: 'cependant' (jednakze — bardziej formalny), 'pourtant' (a jednak), 'neanmoins' (niemniej — formalny), 'toutefois' (wszakze). UWAGA: 'mais' laczy zdania wspolrzedne, 'bien que' + subjonctif laczy podrzedne. 'Je suis fatigue MAIS je continue' vs 'BIEN QUE je sois fatigue, je continue'."
+      },
+      {
+        "id": "pf_mdisc4",
+        "question": "_____ , la situation s'est amelioree.",
+        "translation": "(Na szczescie, sytuacja sie poprawila)",
+        "options": [
+          "Heureusement",
+          "Malheureusement",
+          "Certainement",
+          "Probablement"
+        ],
+        "correct": "Heureusement",
+        "explanation": "'Heureusement' (na szczescie) — przyslowek modalny wyrazajacy OCENE MOWIACEGO. Od 'heureux' (szczesliwy) + '-ment'. Para: 'heureusement' (na szczescie) vs 'malheureusement' (niestety). Pozycja: zwykle na poczatku zdania, oddzielony przecinkiem. Inne przyslowki modalne: 'evidemment' (oczywiscie), 'franchement' (szczerze mowiac), 'apparemment' (najwyrazniej). W polskim: 'na szczescie' — przyimek + rzeczownik, ale po francusku to jeden przyslówek."
+      },
+      {
+        "id": "pf_mdisc5",
+        "question": "Le projet est termine. _____ , il reste des details a regler.",
+        "translation": "(Projekt jest skonczony. Jednak zostaly szczegoly do uregulowania)",
+        "options": [
+          "Cependant",
+          "Donc",
+          "Ensuite",
+          "D'abord"
+        ],
+        "correct": "Cependant",
+        "explanation": "'Cependant' (jednakze/jednak) — formalny odpowiednik 'mais'. Uzywany glownie w pismie i rejstrze formalnym. Pozycja: na poczatku zdania + przecinek. Hierarchia formalnosci: mais (codzienny) < pourtant (neutralny) < cependant (formalny) < neanmoins (bardzo formalny) < toutefois (literacki). W polskim 'jednakze' tez jest bardziej formalny niz 'ale'. 'Il reste' = zostaje (konstrukcja bezosobowa)."
+      },
+      {
+        "id": "pf_mdisc6",
+        "question": "Il n'a pas etudie, _____ il a reussi l'examen.",
+        "translation": "(On sie nie uczyl, a mimo to zdal egzamin)",
+        "options": [
+          "pourtant",
+          "donc",
+          "car",
+          "ensuite"
+        ],
+        "correct": "pourtant",
+        "explanation": "'Pourtant' (a jednak/mimo to) — wyrazniejszy kontrast niz 'mais', podkresla NIEOCZEKIWANOSC rezultatu. 'Il n'a pas etudie' (nie uczyl sie) — spodziewamy sie porazki, ale 'pourtant il a reussi' (a jednak zdal). W polskim 'a jednak' pelniy ta sama funkcje. Pozycja: po przecinku lub na poczatku nowego zdania. Synonim: 'malgre tout' (mimo wszystko). Czesto uzywany w argumentacji i narracji."
+      },
+      {
+        "id": "pf_mdisc7",
+        "question": "_____ , nous devons prendre une decision rapidement.",
+        "translation": "(Podsumowujac, musimy szybko podjac decyzje)",
+        "options": [
+          "En somme",
+          "D'abord",
+          "Ensuite",
+          "Par exemple"
+        ],
+        "correct": "En somme",
+        "explanation": "'En somme' (podsumowujac/w sumie) — zamyka argumentacje, wprowadza WNIOSEK KONCOWY. Inne wyrazenia podsumowujace: 'en resume' (podsumowujac), 'en conclusion' (na zakonczenie), 'pour conclure' (aby zakonczyc), 'en definitive' (ostatecznie), 'somme toute' (w koncu). Roznice: 'en somme' = neutralne podsumowanie, 'en conclusion' = bardziej formalne, 'bref' = bardzo skrotowe. W polskim: 'reasumujac', 'podsumowujac', 'slowem'."
+      },
+      {
+        "id": "pf_mdisc8",
+        "question": "_____ , il faut noter que les resultats sont positifs.",
+        "translation": "(Co wiecej, trzeba zauwazyc, ze wyniki sa pozytywne)",
+        "options": [
+          "De plus",
+          "Mais",
+          "Donc",
+          "Or"
+        ],
+        "correct": "De plus",
+        "explanation": "'De plus' (co wiecej/ponadto) — DODAJE nowy argument wzmacniajacy poprzedni. Hierarchia dodawania: 'aussi' (tez — najslabszy), 'de plus' (ponadto — sredni), 'en outre' (nadto — formalny), 'qui plus est' (co wiecej — bardzo formalny). Pozycja: na poczatku zdania + przecinek. UWAGA: nie myl z 'de plus en plus' (coraz bardziej)! 'De plus' = dodaje argument, 'de plus en plus' = wyraz narastania."
+      },
+      {
+        "id": "pf_mdisc9",
+        "question": "J'aime la France, _____ pour sa cuisine.",
+        "translation": "(Lubie Francje, zwlaszcza za jej kuchnie)",
+        "options": [
+          "notamment",
+          "mais",
+          "donc",
+          "cependant"
+        ],
+        "correct": "notamment",
+        "explanation": "'Notamment' (zwlaszcza/w szczegolnosci) — precyzuje, podaje PRZYKLAD lub SZCZEGOL. Synonimy: 'en particulier' (w szczegolnosci), 'surtout' (przede wszystkim — nieco inny odcien), 'particulierement' (szczegolnie). UWAGA: 'notamment' jest bardziej formalny niz 'surtout'. Pozycja: po przecinku w srodku zdania lub na poczatku. W polskim: 'zwlaszcza', 'w szczegolnosci', 'mianowicie' — podobna funkcja."
+      },
+      {
+        "id": "pf_mdisc10",
+        "question": "Le temps est mauvais. _____ , nous irons a la plage.",
+        "translation": "(Pogoda jest zla. Mimo to pojedziemy na plaze)",
+        "options": [
+          "Quand meme",
+          "Par contre",
+          "Donc",
+          "Car"
+        ],
+        "correct": "Quand meme",
+        "explanation": "'Quand meme' (mimo to/i tak) — potoczny odpowiednik 'neanmoins'. Bardzo czesty w jezyku mowionym! Moze wyrazac: 1) przeciwstawienie ('il pleut, quand meme on sort' = pada, ale i tak wychodzemy), 2) zaskoczenie ('quand meme!' = no jednak!), 3) upor ('je vais quand meme essayer' = i tak sprobuje). W polskim 'i tak' lub 'mimo to' — tez wielofunkcyjne. Rejestr: potoczny!"
+      },
+      {
+        "id": "pf_mdisc11",
+        "question": "Il est intelligent. _____ , il est tres paresseux.",
+        "translation": "(Jest inteligentny. Natomiast jest bardzo leniwy)",
+        "options": [
+          "Par contre",
+          "De plus",
+          "Donc",
+          "D'abord"
+        ],
+        "correct": "Par contre",
+        "explanation": "'Par contre' (natomiast/z drugiej strony) — wprowadza KONTRAST bez negatywnego wydxwieku. UWAGA: puryci jezykowi uwazaja 'par contre' za niepoprawny i preferuja 'en revanche'. W praktyce 'par contre' jest powszechnie uzywany. Roznica: 'mais' = ale (opozycja), 'par contre/en revanche' = natomiast (zestawienie). W polskim 'natomiast' jest neutralne — to samo co 'par contre'. Rejestr: neutralny do lekko nieformalnego."
+      },
+      {
+        "id": "pf_mdisc12",
+        "question": "Je suis d'accord avec toi. _____ , il y a un probleme.",
+        "translation": "(Zgadzam sie z toba. Aczkolwiek jest pewien problem)",
+        "options": [
+          "Neanmoins",
+          "Donc",
+          "Ensuite",
+          "Aussi"
+        ],
+        "correct": "Neanmoins",
+        "explanation": "'Neanmoins' (niemniej jednak/aczkolwiek) — bardzo FORMALNY znacznik przeciwstawienia. Hierarchia: mais < pourtant < cependant < neanmoins < toutefois. Uzywany glownie w pismie formalnym, akademickim, prawniczym. Pozycja: na poczatku zdania lub po podmiocie. 'Neanmoins' od laciny 'nec inde minus' (nie mniej z tego powodu). W polskim 'niemniej jednak' jest rownie formalny — dobra odpowiednosc stylistyczna."
+      },
+      {
+        "id": "pf_mdisc13",
+        "question": "Il travaille dur. _____ , il aide aussi les autres.",
+        "translation": "(Ciezko pracuje. Poza tym pomaga tez innym)",
+        "options": [
+          "En outre",
+          "Mais",
+          "Pourtant",
+          "Donc"
+        ],
+        "correct": "En outre",
+        "explanation": "'En outre' (poza tym/ponadto) — FORMALNY odpowiednik 'de plus'. Dodaje nowy argument wspolbrzmiacy z poprzednim. Uzywany w esejach, raportach, prezentacjach. Rejestr: formalny. Synonimy wg formalnosci: aussi (neutralny) < de plus (standardowy) < en outre (formalny) < qui plus est (bardzo formalny) < de surcroit (literacki). W polskim: 'poza tym' jest neutralny, 'ponadto' — formalny, 'nadto' — archaiczny."
+      },
+      {
+        "id": "pf_mdisc14",
+        "question": "_____ , examinons les avantages de cette solution.",
+        "translation": "(Nastepnie, przeanalizujmy zalety tego rozwiazania)",
+        "options": [
+          "Ensuite",
+          "D'abord",
+          "Enfin",
+          "Donc"
+        ],
+        "correct": "Ensuite",
+        "explanation": "'Ensuite' (nastepnie/potem) — drugi element w sekwencji chronologicznej lub argumentacyjnej. Pelna sekwencja: 'premierement...deuxiemement...troisiemement' (formalnie) lub 'd'abord...ensuite...enfin' (neutralnie) lub 'primo...secundo...tertio' (bardzo formalnie). UWAGA: 'ensuite' vs 'puis' — 'puis' jest krotszy i mniej formalny, ale oba znacza 'nastepnie'. W polskim: 'potem' (potoczny) vs 'nastepnie' (formalny)."
+      },
+      {
+        "id": "pf_mdisc15",
+        "question": "_____ , je tiens a remercier tous les participants.",
+        "translation": "(Na zakonczenie, chcialbym podziekowac wszystkim uczestnikom)",
+        "options": [
+          "Pour conclure",
+          "D'abord",
+          "De plus",
+          "Par exemple"
+        ],
+        "correct": "Pour conclure",
+        "explanation": "'Pour conclure' (na zakonczenie/podcumowuijac) — ZAMYKA dyskurs. Uzywany w przemowieniach, prezentacjach, esejach. Synonimy: 'en conclusion' (na zakonczenie), 'pour finir' (na koniec — mniej formalny), 'en dernier lieu' (na koncu), 'enfin' (wreszcie — wielofunkcyjny). 'Je tiens a' = chcialbym/zalezy mi na — elegancka formula. W polskim: 'na zakonczenie' lub 'reasumujac'. Rejestr: od neutralnego do formalnego."
+      }
+    ]
+  },
+  {
+    "key": "registre_formel",
+    "name": "Rejestr formalny",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pf_rfm1",
+        "question": "Je vous _____ de bien vouloir accepter mes excuses.",
+        "translation": "(Prosze Panstwa o laskowe przyjecie moich przeprosin)",
+        "options": [
+          "prie",
+          "demande",
+          "dis",
+          "souhaite"
+        ],
+        "correct": "prie",
+        "explanation": "'Je vous prie de' (Uprzejmie prosze o) — najbardziej formalna formula prosby. Hierarchia uprzejmosci: 'je veux' (chce — bezposredni) < 'je voudrais' (chcialbym — uprzejmy) < 'je vous demande de' (prosze o — formalny) < 'je vous prie de' (uprzejmie prosze — bardzo formalny). 'Bien vouloir' = 'laskowie' — wzmocnienie uprzejmosci. Ta formula jest uzywana w korespondencji urzedowej, prawniczej i dyplomatycznej."
+      },
+      {
+        "id": "pf_rfm2",
+        "question": "Veuillez _____ notre lettre ci-jointe.",
+        "translation": "(Prosze o zapoznanie sie z naszym pismem w zalaczniku)",
+        "options": [
+          "trouver",
+          "voir",
+          "lire",
+          "regarder"
+        ],
+        "correct": "trouver",
+        "explanation": "'Veuillez trouver ci-joint' (Prosze znalezc w zalaczniku) — klasyczna formula korespondencji biznesowej. 'Veuillez' = zechciejcie (imperatif de politesse od 'vouloir'). 'Ci-joint' = w zalaczniku/dolaczony. UWAGA: 'trouver' (znalezc) — nie 'lire' ani 'voir'! To utarta formula. Nowoczesniejsze: 'Vous trouverez ci-joint...' (Znajda Panstwo w zalaczniku...). W polskim: 'W zalaczniku przesylamy...' — inna konstrukcja."
+      },
+      {
+        "id": "pf_rfm3",
+        "question": "Je vous serais _____ de bien vouloir me repondre.",
+        "translation": "(Bylbym Panstwu wdzieczny za laskowa odpowiedz)",
+        "options": [
+          "reconnaissant",
+          "content",
+          "heureux",
+          "satisfait"
+        ],
+        "correct": "reconnaissant",
+        "explanation": "'Je vous serais reconnaissant' (Bylbym wdzieczny) — formalna prosba uzywajaca conditionnel. 'Reconnaissant' (wdzieczny) od 'reconnaitre' (uznawac/byc wdziecznym). UWAGA na czas: 'je serais' (conditionnel) — nie 'je suis' (present)! Conditionnel dodaje uprzejmosci. Hierarchia: 'Repondez-moi' (odpowiedzcie — rozkaz) < 'Pouvez-vous repondre?' (neutralny) < 'Pourriez-vous repondre?' (uprzejmy) < 'Je vous serais reconnaissant de repondre' (bardzo formalny)."
+      },
+      {
+        "id": "pf_rfm4",
+        "question": "Je me _____ de vous informer que votre demande a ete acceptee.",
+        "translation": "(Mam zaszczyt poinformowac Panstwa, ze Panstwa wniosek zostal zaakceptowany)",
+        "options": [
+          "permets",
+          "dis",
+          "veux",
+          "fais"
+        ],
+        "correct": "permets",
+        "explanation": "'Je me permets de' (Pozwalam sobie/Mam zaszczyt) — formalna formula przedstawiania informacji. Dosłownie: 'pozwalam sobie'. Inne formuly formalne: 'J'ai l'honneur de' (Mam zaszczyt — jeszcze bardziej formalny, uzywany w pismach urzedowych), 'Je suis au regret de vous informer' (Z przykroscia informuje — zla wiadomosc). W polskim: 'Uprzejmie informuje' lub 'Mam zaszczyt poinformowac' — podobny poziom formalnosci."
+      },
+      {
+        "id": "pf_rfm5",
+        "question": "Nous vous prions d'agreer l'expression de nos salutations _____ .",
+        "translation": "(Prosimy o przyjecie wyrazow naszych wyroznionych powitalow)",
+        "options": [
+          "distinguees",
+          "bonnes",
+          "grandes",
+          "belles"
+        ],
+        "correct": "distinguees",
+        "explanation": "'Salutations distinguees' (pozdrowienia) — KLASYCZNA formula konczaca listy formalne. Pelna formula: 'Veuillez agreer/accepter l'expression de mes/nos salutations distinguees'. Warianty: 'sentiments distingues' (wyrazniejsze), 'haute consideration' (dyplomatyczne). Hierarchia: 'Cordialement' (serdecznie — email) < 'Sinceres salutations' (szczere pozdrowienia) < 'Salutations distinguees' (formalne) < 'Sentiments distingues' (bardzo formalne). W polskim: 'Z powazaniem'."
+      },
+      {
+        "id": "pf_rfm6",
+        "question": "Suite _____ notre conversation telephonique, je vous envoie le document.",
+        "translation": "(W nawiazaniu do naszej rozmowy telefonicznej, przesylam Panstwu dokument)",
+        "options": [
+          "a",
+          "de",
+          "par",
+          "pour"
+        ],
+        "correct": "a",
+        "explanation": "'Suite a' (w nawiazaniu do/w zwiazku z) — przyimek zlozony uzywany w korespondencji formalnej na poczatku listu. UWAGA: gramatycy dyskutuja, czy 'suite a' jest poprawny — puryci preferuja 'a la suite de' lub 'comme suite a'. Ale 'suite a' jest powszechnie akceptowany w biznesie. Inne otwarcia listow: 'En reponse a' (w odpowiedzi na), 'Comme convenu' (zgodnie z ustaleniami), 'Par la presente' (niniejszym)."
+      },
+      {
+        "id": "pf_rfm7",
+        "question": "Nous avons l'honneur de vous _____ que votre candidature a ete retenue.",
+        "translation": "(Mamy zaszczyt poinformowac Panstwa, ze Panstwa kandydatura zostala przyjeta)",
+        "options": [
+          "informer",
+          "dire",
+          "parler",
+          "montrer"
+        ],
+        "correct": "informer",
+        "explanation": "'Avoir l'honneur de' (miec zaszczyt) + 'informer' (poinformowac) — najwyzszy poziom formalnosci. 'Candidature retenue' = kandydatura przyjeta. Hierarchia formalnosci komunikowania: 'je te dis' (mowie ci — potoczny) < 'je vous informe' (informuje — neutralny) < 'je me permets de vous informer' (formalny) < 'j'ai l'honneur de vous informer' (bardzo formalny). W administracji i dyplomacji ta formula jest obowiazkowa."
+      },
+      {
+        "id": "pf_rfm8",
+        "question": "Je vous adresse mes plus sinceres _____ .",
+        "translation": "(Przekazuje Panstwu moje najszczersze kondolencje)",
+        "options": [
+          "condoleances",
+          "felicitations",
+          "salutations",
+          "remerciements"
+        ],
+        "correct": "condoleances",
+        "explanation": "'Condoleances' (kondolencje) — formalna formula wspoluczcia. ZAWSZE w l.mn.! 'Mes sinceres condoleances' (moje szczere kondolencje), 'toutes mes condoleances' (wszystkie moje kondolencje). Inne formuly: 'Je vous presente mes condoleances' (Skladam kondolencje). W mniej formalnym rejsetrze: 'Je suis desole pour votre perte' (Przykro mi z powodu Panstwa straty). W polskim: 'Skladam szczere kondolencje' — bardzo podobna konstrukcja."
+      },
+      {
+        "id": "pf_rfm9",
+        "question": "Dans l'_____ d'une reponse favorable, je vous prie d'agreer...",
+        "translation": "(W oczekiwaniu na pozytywna odpowiedz, prosze o przyjecie...)",
+        "options": [
+          "attente",
+          "espoir",
+          "envie",
+          "idee"
+        ],
+        "correct": "attente",
+        "explanation": "'Dans l'attente de' (w oczekiwaniu na) — formalna formula zamykajaca list przed frazą grzecznosciowa. Pelna struktura: 'Dans l'attente de votre reponse, je vous prie d'agreer...' Warianty: 'Dans l'espoir que' (z nadzieja, ze — nieco osobisty), 'En attendant votre reponse' (czekajac na odpowiedz — mniej formalny). 'Favorable' = korzystny/pozytywny — UWAGA: nie 'positive'! W rejsetrze formalnym uzywamy 'favorable', nie 'positive'."
+      },
+      {
+        "id": "pf_rfm10",
+        "question": "Je vous saurai _____ de votre comprehension.",
+        "translation": "(Bede wdzieczny za Panstwa zrozumienie)",
+        "options": [
+          "gre",
+          "merci",
+          "bien",
+          "content"
+        ],
+        "correct": "gre",
+        "explanation": "'Savoir gre' (byc wdziecznym) — wyrazenie formalne. 'Je vous saurai gre de' = 'bede Panstwu wdzieczny za'. UWAGA na czas: 'saurai' (futur simple), nie 'serais' — to wyjatek! 'Gre' pochodzi ze starofrancuskiego 'gre' (wdziecznosc/wola). 'De gre ou de force' = dobrowolnie lub sila. Inne formuly wdziecznosci: 'je vous remercie' (dziekuje), 'je vous suis reconnaissant' (jestem wdzieczny), 'je vous saurai gre' (formalne). W polskim: 'bede zobowiazany'."
+      },
+      {
+        "id": "pf_rfm11",
+        "question": "_____ les circonstances, nous avons decide de reporter la reunion.",
+        "translation": "(Ze wzgledu na okolicznosci, postanowilismy przelozyc zebranie)",
+        "options": [
+          "Eu egard aux",
+          "A cause des",
+          "Pour les",
+          "Avec les"
+        ],
+        "correct": "Eu egard aux",
+        "explanation": "'Eu egard a' (ze wzgledu na/biorac pod uwage) — bardzo formalny przyimek zlozony. 'Eu' = participé passe od 'avoir', 'egard' = wzglad. UWAGA: 'eu' jest tu NIEZMIENNY (nie *'eue', *'eus')! Hierarchia formalnosci: 'a cause de' (z powodu — neutralny) < 'en raison de' (z uwagi na — formalny) < 'eu egard a' (ze wzgledu na — bardzo formalny) < 'compte tenu de' (biorac pod uwage — oficjalny). W polskim: 'ze wzgledu na', 'biorac pod uwage'."
+      },
+      {
+        "id": "pf_rfm12",
+        "question": "Nous vous remercions de la _____ que vous avez bien voulu accorder a notre demande.",
+        "translation": "(Dziekujemy za uwage, ktora raczyly Panstwo poswiecic naszej prosbie)",
+        "options": [
+          "bienveillance",
+          "gentillesse",
+          "aide",
+          "attention"
+        ],
+        "correct": "bienveillance",
+        "explanation": "'Bienveillance' (zyczliwosc/laskwosc) — termin epistolarny. 'Bien voulu' = 'raczy' — wyrazenie najwyzszej uprzejmosci. UWAGA: 'bienveillance' vs 'gentillesse' — obie znacza 'zyczliwosc', ale 'bienveillance' jest FORMALNA (korespondencja urzedowa), 'gentillesse' jest NEUTRALNA (codzinna). 'Accorder' = udzielic/przyznac — formalny czasownik. Cala ta formula jest typowa dla listow administracyjnych i prawniczych."
+      },
+      {
+        "id": "pf_rfm13",
+        "question": "Il m'est _____ de participer a cette ceremonie.",
+        "translation": "(Jest mi milo wziac udzial w tej uroczystosci)",
+        "options": [
+          "agreable",
+          "bon",
+          "bien",
+          "content"
+        ],
+        "correct": "agreable",
+        "explanation": "'Il m'est agreable de' (Jest mi milo) — formalna bezosobowa konstruckja grzecznosciowa. 'Agreable' (mily/przyjemny) — formalniejszy niz 'content' lub 'heureux'. Konstrukcja: 'il + pronom indirect + est + adjectif + de + infinitif'. Inne: 'il m'est difficile de...' (trudno mi...), 'il m'est impossible de...' (niemozliwe mi...). W polskim: 'Jest mi milo/przyjemnie' — konstrukcja bezosobowa, podobna do francuskiej."
+      },
+      {
+        "id": "pf_rfm14",
+        "question": "Je vous fais _____ de mon mecontentement.",
+        "translation": "(Wyrżam Panstwu swoje niezadowolenie)",
+        "options": [
+          "part",
+          "dire",
+          "savoir",
+          "noter"
+        ],
+        "correct": "part",
+        "explanation": "'Faire part de' (informowac/zawiadamiac/wyrazac) — formalna formula. 'Faire-part' (rzeczownik) = zawiadomienie (np. 'un faire-part de mariage' = zawiadomienie o slubie). Inne formalne wyrazenia z 'faire': 'faire savoir' (powiadamiac), 'faire observer' (zwrocic uwage), 'faire connaitre' (przedstawic/podac do wiadomosci). W polskim: 'niniejszym informuje' lub 'wyrażam' — rownie formalne. 'Mecontentement' = niezadowolenie."
+      },
+      {
+        "id": "pf_rfm15",
+        "question": "Je vous prie de croire en l'assurance de ma _____ consideration.",
+        "translation": "(Prosze o przyjecie wyrazu mojego najwyzszego powazania)",
+        "options": [
+          "haute",
+          "grande",
+          "bonne",
+          "belle"
+        ],
+        "correct": "haute",
+        "explanation": "'Haute consideration' (najwyzsze powazanie) — najformulszy wariant zamkniecia listu. Hierarchia zamkniec: 'Amicalement' (przyjacielsko — osobisty) < 'Cordialement' (serdecznie — email) < 'Salutations distinguees' (formalny) < 'Sentiments les meilleurs' (bardzo formalny) < 'Haute consideration' (dyplomatyczny/dyrektorski). UWAGA: 'haute' NIE 'grande'! To utarta formula. W polskim: 'Z wyrazami najwyzszego powazania' — tez bardzo formalnie."
+      }
+    ]
   }
 ]

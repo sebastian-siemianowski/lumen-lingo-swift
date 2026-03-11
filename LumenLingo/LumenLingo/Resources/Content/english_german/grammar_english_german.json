@@ -15783,5 +15783,1030 @@
         "explanation": "'Sollten Sie haben' — this 'Sollten' at clause start replaces 'Wenn/Falls' (if) in formal style. It's Konjunktiv II used as a conditional: 'Should you have...' The verb-first word order creates a conditional clause WITHOUT 'wenn' — a hallmark of elevated formal German. 'Zögern Sie nicht' (don't hesitate) uses the imperative of 'zögern.' 'Weitere' (further/additional) declines as adjective: plural accusative '-e.' This closing formula is found in nearly every formal German business letter and email."
       }
     ]
+  },
+  {
+    "key": "workplace_office",
+    "name": "Workplace & Office",
+    "description": "Arbeitsplatz und Büro",
+    "iconName": "building.2",
+    "color": "#475569",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_work1",
+        "question": "Ich muss den Bericht bis morgen _____.",
+        "translation": "(I have to finish the report by tomorrow)",
+        "options": [
+          "fertigstellen",
+          "fertiggestellt",
+          "stellen",
+          "fertig"
+        ],
+        "correct": "fertigstellen",
+        "explanation": "'Fertigstellen' (to finish/complete) is a separable verb — but after the modal 'muss,' the infinitive stays together at the end. In a main clause without modal, it separates: 'Ich stelle den Bericht fertig.' 'Bis morgen' (by tomorrow) — 'bis' sets a deadline. 'Der Bericht' (the report) is masculine. German workplace vocabulary is crucial for professional life: der Abgabetermin (deadline), die Präsentation (presentation), die Besprechung (meeting)."
+      },
+      {
+        "id": "eg_work2",
+        "question": "Könnten Sie mir die Datei per E-Mail _____?",
+        "translation": "(Could you send me the file by email?)",
+        "options": [
+          "schicken",
+          "schickt",
+          "geschickt",
+          "schickend"
+        ],
+        "correct": "schicken",
+        "explanation": "'Schicken' (to send) goes to the end as infinitive after 'könnten' (could). 'Mir' is dative (to me — indirect object), 'die Datei' is accusative (the file — direct object). 'Per E-Mail' (by email) — 'per' + noun without article is standard: per Post (by mail), per Fax (by fax), per Telefon (by phone). 'Die Datei' (file) is feminine — essential office vocabulary. 'Könnten Sie' is Konjunktiv II for polite requests — always use this form with colleagues and superiors."
+      },
+      {
+        "id": "eg_work3",
+        "question": "Die Besprechung _____ um 14 Uhr statt.",
+        "translation": "(The meeting takes place at 2 PM)",
+        "options": [
+          "findet",
+          "finden",
+          "fand",
+          "gefunden"
+        ],
+        "correct": "findet",
+        "explanation": "'Stattfinden' (to take place) is a separable verb: 'findet statt.' The prefix 'statt' goes to the end in main clauses. 'Die Besprechung' (meeting) is feminine — it's from 'besprechen' (to discuss) + '-ung.' German uses 24-hour time in business: '14 Uhr' means 2 PM. 'Um' + time = at (a specific time). Types of meetings: die Sitzung (formal session), die Konferenz (conference), das Meeting (borrowed from English, increasingly common), der Jour fixe (regular meeting, from French)."
+      },
+      {
+        "id": "eg_work4",
+        "question": "Wer ist für dieses Projekt _____?",
+        "translation": "(Who is responsible for this project?)",
+        "options": [
+          "verantwortlich",
+          "verantwortliche",
+          "verantwortlicher",
+          "verantwortlichen"
+        ],
+        "correct": "verantwortlich",
+        "explanation": "'Verantwortlich' (responsible) is a predicative adjective after 'ist' — no ending! 'Für' + accusative is the fixed preposition for 'verantwortlich.' 'Dieses Projekt' — 'dieses' is neuter nominative/accusative demonstrative (das Projekt). In German companies, clear responsibility assignment is valued: 'Wer ist zuständig?' (Who is in charge?). Related: 'die Verantwortung übernehmen' (to take responsibility), 'verantwortungsvoll' (responsible — as character trait)."
+      },
+      {
+        "id": "eg_work5",
+        "question": "Ich bin gerade in einer _____ und rufe Sie später zurück.",
+        "translation": "(I am currently in a meeting and will call you back later)",
+        "options": [
+          "Sitzung",
+          "Sitzungen",
+          "Sitzungs",
+          "Sitzungsraum"
+        ],
+        "correct": "Sitzung",
+        "explanation": "'In einer Sitzung' (in a meeting) — 'einer' is dative feminine indefinite article after 'in' (location). 'Die Sitzung' (meeting/session — literally 'sitting') keeps its base form in dative. 'Gerade' (currently) is essential German filler for 'right now.' 'Zurückrufen' is separable: 'rufe zurück' in main clause. 'Später' (later) is the comparative of 'spät' (late). German office culture values punctuality (Pünktlichkeit) and structured time management."
+      },
+      {
+        "id": "eg_work6",
+        "question": "Der Chef hat die Deadline _____.",
+        "translation": "(The boss has extended the deadline)",
+        "options": [
+          "verlängert",
+          "verlängern",
+          "verlängerte",
+          "verlängernd"
+        ],
+        "correct": "verlängert",
+        "explanation": "'Hat verlängert' — Perfekt tense with inseparable verb 'verlängern' (to extend). Inseparable verbs do NOT get 'ge-' prefix in the past participle: verlängert, not 'geverlängert'! This is a key rule: prefixes be-, er-, ver-, zer-, ent-, emp-, miss- never separate and block 'ge-.' 'Die Deadline' is used in German too (borrowed from English, feminine gender). Alternatives: 'die Frist' (deadline), 'der Abgabetermin' (submission deadline). 'Der Chef' is commonly used for boss."
+      },
+      {
+        "id": "eg_work7",
+        "question": "Sie müssen das Formular in _____ ausfüllen.",
+        "translation": "(You must fill out the form in duplicate)",
+        "options": [
+          "doppelter Ausfertigung",
+          "doppelte Ausfertigung",
+          "doppelten Ausfertigung",
+          "doppeltem Ausfertigung"
+        ],
+        "correct": "doppelter Ausfertigung",
+        "explanation": "'In doppelter Ausfertigung' (in duplicate) — 'in' + dative, and without an article the adjective takes strong dative feminine ending '-er.' 'Die Ausfertigung' (copy/issue) is feminine. 'Ausfüllen' (to fill out) is separable: 'Füllen Sie das Formular aus' (Fill out the form). After 'müssen,' the infinitive stays whole. This phrase is classic German bureaucracy (Bürokratie) — Germany is famous for its paperwork! 'Das Formular' (form) is neuter."
+      },
+      {
+        "id": "eg_work8",
+        "question": "Die Firma hat 500 neue Mitarbeiter _____.",
+        "translation": "(The company has hired 500 new employees)",
+        "options": [
+          "eingestellt",
+          "einstellen",
+          "stellte ein",
+          "einstellend"
+        ],
+        "correct": "eingestellt",
+        "explanation": "'Hat eingestellt' — Perfekt of separable verb 'einstellen' (to hire). Separable verbs form past participle by inserting 'ge-' between prefix and stem: ein-ge-stellt. Compare inseparable 'verlängert' (no ge-) vs. separable 'eingestellt' (ge- inserted). 'Die Firma' or 'das Unternehmen' (company) — both commonly used. 'Der Mitarbeiter' (employee, literally 'co-worker') — plural: 'Mitarbeiter' (no change for masculine). '500 neue' — adjective after number with no article: strong ending '-e.'"
+      },
+      {
+        "id": "eg_work9",
+        "question": "Können Sie die Unterlagen bis Freitag _____?",
+        "translation": "(Can you submit the documents by Friday?)",
+        "options": [
+          "einreichen",
+          "reichen",
+          "durchreichen",
+          "gereicht"
+        ],
+        "correct": "einreichen",
+        "explanation": "'Einreichen' (to submit/file) is a separable verb commonly used in business and administrative contexts. After 'können,' it stays together. 'Die Unterlagen' (documents, always plural) is essential business vocabulary. 'Bis Freitag' (by Friday) — 'bis' + day of week without article. Days in German: Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag/Sonnabend, Sonntag — all masculine! Related: 'abgeben' (to hand in), 'vorlegen' (to present), 'nachreichen' (to submit subsequently)."
+      },
+      {
+        "id": "eg_work10",
+        "question": "Ich habe mich um eine _____ als Ingenieur beworben.",
+        "translation": "(I have applied for a position as an engineer)",
+        "options": [
+          "Stelle",
+          "Stellen",
+          "Steller",
+          "Stellenangebot"
+        ],
+        "correct": "Stelle",
+        "explanation": "'Die Stelle' (position/job) is the standard word for a job opening. 'Sich bewerben um' + accusative (to apply for) — 'eine Stelle' is accusative feminine. 'Als Ingenieur' (as an engineer) — 'als' + profession without article is standard. 'Habe mich beworben' — Perfekt of reflexive verb 'sich bewerben.' The reflexive pronoun 'mich' follows the auxiliary 'habe.' Job hunting vocabulary: 'die Bewerbung' (application), 'das Vorstellungsgespräch' (interview), 'der Lebenslauf' (CV)."
+      },
+      {
+        "id": "eg_work11",
+        "question": "Die neue Kollegin hat sich schnell ins Team _____.",
+        "translation": "(The new colleague has quickly integrated into the team)",
+        "options": [
+          "integriert",
+          "integrieren",
+          "integrierten",
+          "integrierend"
+        ],
+        "correct": "integriert",
+        "explanation": "'Hat sich integriert' — Perfekt of reflexive verb 'sich integrieren.' Verbs ending in '-ieren' (borrowed from French/Latin) never take 'ge-' in past participle: integriert, not 'geintegriert'! This applies to all '-ieren' verbs: telefonieren → telefoniert, studieren → studiert, organisieren → organisiert. 'Ins' = 'in das' (accusative — direction/integration INTO). 'Die Kollegin' is the feminine form of 'der Kollege' (colleague). 'Schnell' (quickly) is an adverb."
+      },
+      {
+        "id": "eg_work12",
+        "question": "Ich habe nächste Woche drei Tage _____.",
+        "translation": "(I have three days off next week)",
+        "options": [
+          "frei",
+          "freie",
+          "freien",
+          "freier"
+        ],
+        "correct": "frei",
+        "explanation": "'Frei haben' (to have time off) — 'frei' is a predicative complement, so no ending! It functions as part of the verb phrase 'frei haben.' 'Nächste Woche' (next week) is an accusative time expression — no preposition needed for 'next/last' + time period in German! 'Drei Tage' (three days) — accusative for duration. German workers enjoy generous vacation: typically 25-30 days per year ('Urlaubstage'). Related: 'der Feierabend' (end of work day), 'die Überstunden' (overtime)."
+      },
+      {
+        "id": "eg_work13",
+        "question": "Der Vertrag _____ am Ende des Monats aus.",
+        "translation": "(The contract expires at the end of the month)",
+        "options": [
+          "läuft",
+          "lauft",
+          "laufen",
+          "gelaufen"
+        ],
+        "correct": "läuft",
+        "explanation": "'Auslaufen' (to expire/run out) is separable: 'läuft aus.' The stem change au→äu applies in 2nd/3rd person singular: du läufst, er/sie/es läuft. 'Am Ende des Monats' — a chain of preposition + genitive: 'am Ende' (at the end) + 'des Monats' (of the month, genitive masculine). 'Der Vertrag' (contract) is masculine. Contract vocabulary: 'kündigen' (to terminate/give notice), 'verlängern' (to extend), 'die Laufzeit' (duration/term), 'die Klausel' (clause)."
+      },
+      {
+        "id": "eg_work14",
+        "question": "Wir sollten dieses Problem so schnell wie möglich _____.",
+        "translation": "(We should solve this problem as quickly as possible)",
+        "options": [
+          "lösen",
+          "löst",
+          "gelöst",
+          "lösend"
+        ],
+        "correct": "lösen",
+        "explanation": "'Sollten' (should — Konjunktiv II for suggestions) sends the infinitive 'lösen' (to solve) to the end. 'So schnell wie möglich' (as quickly as possible) is a fixed comparative structure: so + adjective + wie möglich. This parallels English perfectly! 'Dieses Problem' — 'das Problem' is neuter; 'dieses' is accusative neuter. Problem-solving vocabulary: 'die Lösung' (solution), 'beheben' (to fix), 'angehen' (to tackle), 'in Angriff nehmen' (to take on — idiom)."
+      },
+      {
+        "id": "eg_work15",
+        "question": "Könnten wir das auf die nächste Woche _____?",
+        "translation": "(Could we postpone that to next week?)",
+        "options": [
+          "verschieben",
+          "verschoben",
+          "schieben",
+          "geschoben"
+        ],
+        "correct": "verschieben",
+        "explanation": "'Verschieben' (to postpone) is an inseparable verb (ver- prefix). After 'könnten' (could), the infinitive goes to the end. 'Auf die nächste Woche' (to next week) — 'auf' + accusative for future rescheduling. Note: 'verschieben' is different from 'schieben' (to push physically). Inseparable 'ver-' changes the meaning: schieben = push, verschieben = postpone. Other schedule vocabulary: 'absagen' (to cancel), 'vorrücken' (to move forward), 'umplanen' (to reschedule)."
+      }
+    ]
+  },
+  {
+    "key": "emotions_reactions",
+    "name": "Emotions & Reactions",
+    "description": "Gefühle und Reaktionen",
+    "iconName": "heart.circle",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_emot1",
+        "question": "Ich freue _____ sehr auf die Ferien.",
+        "translation": "(I am very much looking forward to the holidays)",
+        "options": [
+          "mich",
+          "mir",
+          "sich",
+          "uns"
+        ],
+        "correct": "mich",
+        "explanation": "'Sich freuen auf' + accusative (to look forward to) is a reflexive verb. 'Ich' takes the reflexive pronoun 'mich' (accusative). Compare: 'sich freuen über' + accusative (to be happy about something that already happened). This auf/über distinction is crucial! 'Sehr' (very) intensifies the emotion. 'Die Ferien' (holidays/vacation — always plural in German!) is the common word for school holidays. 'Der Urlaub' is used for work vacation."
+      },
+      {
+        "id": "eg_emot2",
+        "question": "Es macht mich _____, dass du nicht gekommen bist.",
+        "translation": "(It makes me sad that you didn't come)",
+        "options": [
+          "traurig",
+          "traurige",
+          "trauriger",
+          "trauriges"
+        ],
+        "correct": "traurig",
+        "explanation": "'Machen' + accusative + predicative adjective (to make someone feel something): 'Es macht mich traurig.' The adjective 'traurig' (sad) takes NO ending because it's predicative — describing the object 'mich.' This construction is very productive: 'Das macht mich glücklich' (That makes me happy), 'Das macht mich wütend' (That makes me angry). 'Dass du nicht gekommen bist' — 'dass' subordinate clause with verb at end: auxiliary 'bist' goes last after past participle 'gekommen.'"
+      },
+      {
+        "id": "eg_emot3",
+        "question": "Ich bin sehr _____ über die guten Ergebnisse.",
+        "translation": "(I am very pleased about the good results)",
+        "options": [
+          "erfreut",
+          "erfreute",
+          "erfreuten",
+          "erfreuend"
+        ],
+        "correct": "erfreut",
+        "explanation": "'Erfreut über' + accusative (pleased about) — 'erfreut' is a past participle used as predicative adjective: no ending after 'bin.' It comes from 'erfreuen' (to please) — the 'er-' prefix is inseparable. 'Die guten Ergebnisse' — 'die' triggers weak adjective ending '-en' in accusative plural. 'Das Ergebnis' (result, pl. Ergebnisse) is neuter. Emotion vocabulary: 'begeistert' (enthusiastic), 'enttäuscht' (disappointed), 'überrascht' (surprised) — all past participles used as adjectives!"
+      },
+      {
+        "id": "eg_emot4",
+        "question": "Sie hat sich furchtbar _____ das Geschenk geärgert.",
+        "translation": "(She was terribly annoyed about the gift)",
+        "options": [
+          "über",
+          "auf",
+          "für",
+          "mit"
+        ],
+        "correct": "über",
+        "explanation": "'Sich ärgern über' + accusative (to be annoyed/angry about) is a fixed reflexive verb-preposition combination. 'Über' is essential here — no other preposition works! 'Furchtbar' (terribly) is an intensifier. 'Das Geschenk' (the gift) is neuter accusative. German has many reflexive emotion verbs with fixed prepositions: 'sich freuen über' (to be happy about), 'sich aufregen über' (to get upset about), 'sich wundern über' (to be surprised about). You MUST memorize which preposition goes with each verb!"
+      },
+      {
+        "id": "eg_emot5",
+        "question": "Das Kind hat vor _____ geweint.",
+        "translation": "(The child cried out of joy)",
+        "options": [
+          "Freude",
+          "Freuden",
+          "Freudes",
+          "freudiger"
+        ],
+        "correct": "Freude",
+        "explanation": "'Vor Freude' (out of joy/from joy) — 'vor' + dative describes the cause of an emotion. 'Die Freude' (joy) keeps its base form in dative feminine without an article. This construction is common: 'vor Angst' (from fear), 'vor Wut' (from rage), 'vor Scham' (from shame), 'vor Aufregung' (from excitement). 'Weinen' (to cry) is regular: weinte, geweint. 'Hat geweint' — emotion verbs use 'haben' in Perfekt. 'Das Kind' (the child) is neuter in German."
+      },
+      {
+        "id": "eg_emot6",
+        "question": "Ich bin total _____ von dem Film.",
+        "translation": "(I am totally fascinated by the movie)",
+        "options": [
+          "begeistert",
+          "begeisterte",
+          "begeisterter",
+          "begeisternder"
+        ],
+        "correct": "begeistert",
+        "explanation": "'Begeistert von' + dative (fascinated/enthusiastic about) — 'begeistert' is predicative after 'bin,' no ending! 'Von dem Film' — 'von' always takes dative: 'dem Film' (masculine dative). 'Total' (totally) is used colloquially as an intensifier — common in spoken German. 'Begeistert' comes from 'begeistern' (to excite/thrill) — past participle used as adjective. Other film reactions: 'gelangweilt' (bored), 'schockiert' (shocked), 'fasziniert' (fascinated), 'bewegt' (moved/touched)."
+      },
+      {
+        "id": "eg_emot7",
+        "question": "Es überrascht mich, _____ er so reagiert hat.",
+        "translation": "(It surprises me that he reacted that way)",
+        "options": [
+          "dass",
+          "das",
+          "weil",
+          "ob"
+        ],
+        "correct": "dass",
+        "explanation": "'Dass' (that) introduces the subordinate clause — the verb 'hat' goes to the END. Don't confuse 'dass' (conjunction — that) with 'das' (article/pronoun — the/that)! Grammar trick: if you can replace it with 'welches/dieses,' it's 'das.' If not, it's 'dass.' 'Überraschen' (to surprise) takes accusative: 'mich.' 'So reagiert hat' — word order in 'dass' clause: adverb + past participle + auxiliary. 'Reagieren' is an '-ieren' verb: no 'ge-' in participle!"
+      },
+      {
+        "id": "eg_emot8",
+        "question": "Sie war so wütend, dass sie das Buch auf den Boden _____.",
+        "translation": "(She was so angry that she threw the book on the floor)",
+        "options": [
+          "warf",
+          "wirft",
+          "geworfen",
+          "warfen"
+        ],
+        "correct": "warf",
+        "explanation": "'Werfen' (to throw) is a strong verb: warf (Präteritum), geworfen (Partizip II). In a 'dass' clause, the conjugated verb goes to the end: '...dass sie das Buch auf den Boden warf.' 'Auf den Boden' — accusative (direction: onto the floor) vs. 'auf dem Boden' (dative: on the floor). This two-way preposition distinction is crucial! 'So wütend, dass...' (so angry that...) is a result clause. 'Wütend' (furious) is stronger than 'ärgerlich' (annoyed)."
+      },
+      {
+        "id": "eg_emot9",
+        "question": "Ich schäme _____ für mein Verhalten gestern.",
+        "translation": "(I am ashamed of my behavior yesterday)",
+        "options": [
+          "mich",
+          "mir",
+          "sich",
+          "uns"
+        ],
+        "correct": "mich",
+        "explanation": "'Sich schämen für' + accusative (to be ashamed of) — reflexive verb with 'mich' for 'ich.' 'Für mein Verhalten' (for my behavior) — 'das Verhalten' (behavior) is neuter accusative. Note: 'Verhalten' is a nominalized infinitive — very common in German: 'das Essen' (food/eating), 'das Leben' (life/living). 'Gestern' (yesterday) is an adverb — no preposition needed! German has many reflexive emotion verbs: 'sich fürchten' (to be afraid), 'sich ekeln' (to feel disgusted)."
+      },
+      {
+        "id": "eg_emot10",
+        "question": "Sie zitterte am ganzen Körper vor _____.",
+        "translation": "(She trembled all over her body with fear)",
+        "options": [
+          "Angst",
+          "Ängste",
+          "Ängsten",
+          "ängstlicher"
+        ],
+        "correct": "Angst",
+        "explanation": "'Vor Angst' (with/from fear) — 'vor' + dative describes the cause. 'Die Angst' (fear) keeps its base form in dative without article. 'Am ganzen Körper' (all over the body — literally 'at the whole body') — 'am' = 'an dem' (dative). 'Ganzen' gets weak '-en' ending after 'dem.' 'Zittern' (to tremble) is regular. The body as fear expression: 'vor Angst erstarren' (to freeze with fear), 'vor Angst schwitzen' (to sweat with fear). fear vocabulary: 'die Furcht' (formal fear), 'die Panik' (panic)."
+      },
+      {
+        "id": "eg_emot11",
+        "question": "Er konnte seine Enttäuschung nicht _____.",
+        "translation": "(He could not hide his disappointment)",
+        "options": [
+          "verbergen",
+          "verbirgt",
+          "verborgen",
+          "verbarg"
+        ],
+        "correct": "verbergen",
+        "explanation": "'Verbergen' (to hide/conceal) is an inseparable strong verb: verbarg (past), verborgen (participle). After 'konnte' (could — past of können), the infinitive goes to the end. 'Seine Enttäuschung' — possessive + feminine noun (die Enttäuschung). 'Nicht' negates the verb phrase: 'konnte nicht verbergen.' 'Enttäuschung' comes from 'enttäuschen' (to disappoint) + '-ung.' German emotional vocabulary is often built from verbs: Begeisterung (enthusiasm), Überraschung (surprise), Verzweiflung (despair)."
+      },
+      {
+        "id": "eg_emot12",
+        "question": "Die Nachricht hat mich zutiefst _____.",
+        "translation": "(The news has deeply moved me)",
+        "options": [
+          "berührt",
+          "berühren",
+          "berührte",
+          "berührend"
+        ],
+        "correct": "berührt",
+        "explanation": "'Hat berührt' — Perfekt of 'berühren' (to touch/move emotionally). Inseparable prefix 'be-' means NO 'ge-' in past participle: berührt, not 'geberührt.' 'Zutiefst' (most deeply/profoundly) is a superlative adverb formed from 'zu' + 'tiefst' — very literary/formal. 'Die Nachricht' (the news/message) is feminine. 'Berühren' has both physical (to touch) and emotional (to move) meanings — context determines which. Emotional intensity scale: 'bewegt' (moved) < 'berührt' (touched) < 'erschüttert' (shaken)."
+      },
+      {
+        "id": "eg_emot13",
+        "question": "Ich kann es kaum _____, dich wiederzusehen!",
+        "translation": "(I can hardly wait to see you again!)",
+        "options": [
+          "erwarten",
+          "erwartet",
+          "warten",
+          "abwarten"
+        ],
+        "correct": "erwarten",
+        "explanation": "'Es kaum erwarten können' (to can hardly wait) is a fixed expression. 'Erwarten' (to expect/await) is inseparable (er-). 'Kaum' (hardly/barely) creates the excitement. 'Dich wiederzusehen' — infinitive clause with 'zu' embedded in the separable verb: wieder-zu-sehen (to see again). 'Dich' is accusative (you, informal). The exclamation mark adds emotional intensity. Compare: 'warten auf' (to wait for — physical waiting) vs. 'erwarten' (to expect/anticipate — mental)."
+      },
+      {
+        "id": "eg_emot14",
+        "question": "Ihr Verhalten hat mich sehr _____.",
+        "translation": "(Her behavior disappointed me very much)",
+        "options": [
+          "enttäuscht",
+          "enttäuschen",
+          "enttäuschte",
+          "enttäuschend"
+        ],
+        "correct": "enttäuscht",
+        "explanation": "'Hat enttäuscht' — Perfekt of inseparable verb 'enttäuschen' (to disappoint). No 'ge-' in participle (ent- prefix)! 'Ihr Verhalten' — 'ihr' can mean 'her,' 'their,' or formal 'your' (Ihr). Context determines meaning — here, lowercase 'ihr' = her/their. 'Mich' is accusative (me — disappointed ME). 'Sehr' (very much) intensifies. Distinguish: 'enttäuscht' (disappointed — result) vs. 'enttäuschend' (disappointing — ongoing quality). This participle difference matters in German!"
+      },
+      {
+        "id": "eg_emot15",
+        "question": "Wir sind _____ erleichtert, dass alles gut gegangen ist.",
+        "translation": "(We are so relieved that everything went well)",
+        "options": [
+          "so",
+          "zu",
+          "ganz",
+          "viel"
+        ],
+        "correct": "so",
+        "explanation": "'So erleichtert' (so relieved) — 'so' intensifies the adjective. 'Erleichtert' (relieved) comes from 'erleichtern' (to relieve, literally 'to make lighter') — the 'er-' prefix + '-t' participle. 'Dass alles gut gegangen ist' — 'dass' clause with verb at end. 'Gegangen ist' — 'gehen' uses 'sein' as auxiliary because it's a movement/change verb. 'Alles' (everything) is neuter singular. Relief expressions: 'Gott sei Dank!' (Thank God!), 'Zum Glück!' (Fortunately!), 'Ein Stein fiel mir vom Herzen' (A weight was lifted — idiom)."
+      }
+    ]
+  },
+  {
+    "key": "travel_vacation",
+    "name": "Travel & Vacation",
+    "description": "Reisen und Urlaub",
+    "iconName": "airplane",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "eg_trav1",
+        "question": "Wir fliegen nächsten Monat _____ Spanien.",
+        "translation": "(We are flying to Spain next month)",
+        "options": [
+          "nach",
+          "zu",
+          "in",
+          "an"
+        ],
+        "correct": "nach",
+        "explanation": "'Nach' + country/city without article (to) — 'nach Spanien' (to Spain). This is the standard direction preposition for countries without articles. Exceptions: countries WITH articles use 'in' + accusative: 'in die Schweiz' (to Switzerland), 'in die Türkei' (to Turkey), 'in die USA' (to the USA). 'Nächsten Monat' — accusative time expression, no preposition needed! 'Fliegen' (to fly) uses 'sein' in Perfekt: 'Wir sind geflogen.' This nach/in distinction is crucial for travel conversations."
+      },
+      {
+        "id": "eg_trav2",
+        "question": "Ich möchte ein Zimmer mit Meerblick _____.",
+        "translation": "(I would like to book a room with a sea view)",
+        "options": [
+          "buchen",
+          "gebucht",
+          "buchend",
+          "bucht"
+        ],
+        "correct": "buchen",
+        "explanation": "'Buchen' (to book/reserve) goes to the end as infinitive after 'möchte.' 'Ein Zimmer' (a room) is neuter accusative. 'Mit Meerblick' (with sea view) — a compound noun: 'Meer' (sea) + 'Blick' (view). German compound nouns are everywhere in travel! 'Einzelzimmer' (single room), 'Doppelzimmer' (double room), 'Frühstücksbuffet' (breakfast buffet). 'Möchte' is the polite way to express wishes — essential for hotel reception conversations."
+      },
+      {
+        "id": "eg_trav3",
+        "question": "Wann _____ der nächste Zug nach München ab?",
+        "translation": "(When does the next train to Munich depart?)",
+        "options": [
+          "fährt",
+          "fahrt",
+          "fähren",
+          "fahren"
+        ],
+        "correct": "fährt",
+        "explanation": "'Abfahren' (to depart) is separable: 'fährt ab.' The stem change a→ä occurs in 2nd/3rd person singular: du fährst, er/sie fährt. 'Der nächste Zug' — masculine nominative with weak adjective ending '-e' after 'der.' 'Nach München' — 'nach' + city for direction. German trains (Deutsche Bahn) are a major transport system. Useful phrases: 'der Bahnsteig' (platform), 'umsteigen' (to change trains), 'die Verspätung' (delay), 'Gleis 5' (Platform 5)."
+      },
+      {
+        "id": "eg_trav4",
+        "question": "Können Sie mir den Weg zum Bahnhof _____?",
+        "translation": "(Can you show me the way to the train station?)",
+        "options": [
+          "zeigen",
+          "gezeigt",
+          "zeigend",
+          "zeigt"
+        ],
+        "correct": "zeigen",
+        "explanation": "'Zeigen' (to show) is a regular verb: zeigte, gezeigt. After 'können,' the infinitive goes to the end. 'Mir' (dative — to me) + 'den Weg' (accusative — the path/way): double object construction. 'Zum Bahnhof' = 'zu dem Bahnhof' (to the train station) — 'zu' + dative for destinations that are buildings/places. 'Der Bahnhof' (train station) — compound: 'Bahn' (rail) + 'Hof' (yard/court). Direction-asking phrases: 'Wie komme ich zum...?' (How do I get to...?)."
+      },
+      {
+        "id": "eg_trav5",
+        "question": "Unser Flug hat drei Stunden _____.",
+        "translation": "(Our flight was delayed by three hours)",
+        "options": [
+          "Verspätung",
+          "Verspätungen",
+          "verspätet",
+          "Verspätungs"
+        ],
+        "correct": "Verspätung",
+        "explanation": "'Verspätung haben' (to be delayed — literally 'to have delay') is a fixed expression. 'Die Verspätung' (delay) is feminine, staying in base form as accusative after 'hat.' 'Drei Stunden Verspätung' — the amount comes before the noun: no preposition needed! 'Unser Flug' (our flight) — 'der Flug' is masculine. Related: 'pünktlich ankommen' (to arrive on time), 'mit Verspätung' (with delay), 'Entschuldigung für die Verspätung' (Sorry for the delay). Germans are famously punctual, making delays particularly frustrating!"
+      },
+      {
+        "id": "eg_trav6",
+        "question": "Ich habe meinen Reisepass zu Hause _____.",
+        "translation": "(I forgot my passport at home)",
+        "options": [
+          "vergessen",
+          "vergisst",
+          "vergas",
+          "vergessend"
+        ],
+        "correct": "vergessen",
+        "explanation": "'Habe vergessen' — Perfekt of strong verb 'vergessen' (to forget): vergaß, vergessen. The past participle 'vergessen' looks identical to the infinitive — no 'ge-' because 'ver-' is inseparable! 'Meinen Reisepass' — masculine accusative (der Reisepass). 'Zu Hause' (at home — location) vs. 'nach Hause' (to home — direction). 'Der Reisepass' is a compound: 'Reise' (travel) + 'Pass' (passport). Travel documents: 'der Personalausweis' (ID card), 'das Visum' (visa)."
+      },
+      {
+        "id": "eg_trav7",
+        "question": "An der Rezeption _____ man ein- und auschecken.",
+        "translation": "(At the reception you can check in and check out)",
+        "options": [
+          "kann",
+          "können",
+          "konnte",
+          "könnten"
+        ],
+        "correct": "kann",
+        "explanation": "'Man kann' — the impersonal pronoun 'man' (one/you/people) always takes 3rd person singular verb forms: man kann, man muss, man sollte. 'An der Rezeption' — 'an' + dative (location): 'der Rezeption' is dative feminine. 'Ein- und auschecken' — when two separable verbs share the same base verb, German abbreviates: 'ein-' and 'aus-' + 'checken.' This is elegant German! 'Checken' is borrowed from English but fully integrated. Hotel vocabulary: 'der Schlüssel' (key), 'das Stockwerk' (floor)."
+      },
+      {
+        "id": "eg_trav8",
+        "question": "Wir haben uns _____ verlaufen und brauchen eine Karte.",
+        "translation": "(We have gotten lost and need a map)",
+        "options": [
+          "total",
+          "totale",
+          "totaler",
+          "totales"
+        ],
+        "correct": "total",
+        "explanation": "'Total' (totally) functions as an adverb modifying 'verlaufen' — adverbs NEVER decline in German! 'Sich verlaufen' (to get lost on foot) is reflexive: 'haben uns verlaufen.' Compare: 'sich verfahren' (to get lost driving), 'sich verfliegen' (to get lost flying — rare). The 'ver-' prefix often indicates going wrong: 'sich versprechen' (to misspeak), 'sich verwählen' (to misdial). 'Brauchen' (to need) takes accusative: 'eine Karte' (a map). In navigation: 'das Navi' = GPS device."
+      },
+      {
+        "id": "eg_trav9",
+        "question": "Die Aussicht vom Gipfel _____ den Aufstieg wert.",
+        "translation": "(The view from the summit is worth the climb)",
+        "options": [
+          "ist",
+          "hat",
+          "war",
+          "wird"
+        ],
+        "correct": "ist",
+        "explanation": "'Etwas wert sein' (to be worth something) — 'wert' is a predicative adjective after 'ist.' 'Den Aufstieg' is accusative (the climb — what it's worth). 'Die Aussicht' (the view) is feminine. 'Vom Gipfel' = 'von dem Gipfel' (from the summit) — 'von' + dative. Mountain hiking (Wandern) is hugely popular in German-speaking countries! Hiking vocabulary: 'der Wanderweg' (hiking trail), 'die Berghütte' (mountain hut), 'die Wanderschuhe' (hiking boots), 'der Rucksack' (backpack — a German word used in English!)."
+      },
+      {
+        "id": "eg_trav10",
+        "question": "Wir müssen vor dem Abflug noch durch den Zoll _____.",
+        "translation": "(We have to go through customs before departure)",
+        "options": [
+          "gehen",
+          "geht",
+          "gegangen",
+          "gehend"
+        ],
+        "correct": "gehen",
+        "explanation": "'Durch den Zoll gehen' (to go through customs) — 'durch' + accusative. After 'müssen,' the infinitive 'gehen' goes to the end. 'Vor dem Abflug' — 'vor' + dative (before, time): 'dem Abflug' is dative masculine. 'Noch' (still/yet) implies this is still needed before departure. Airport vocabulary: 'der Zoll' (customs), 'die Passkontrolle' (passport control), 'das Gate' (gate), 'die Gepäckausgabe' (baggage claim), 'die Sicherheitskontrolle' (security check)."
+      },
+      {
+        "id": "eg_trav11",
+        "question": "Ich suche eine _____ Unterkunft in der Nähe des Zentrums.",
+        "translation": "(I am looking for affordable accommodation near the center)",
+        "options": [
+          "günstige",
+          "günstig",
+          "günstiger",
+          "günstiges"
+        ],
+        "correct": "günstige",
+        "explanation": "'Eine günstige Unterkunft' — 'günstig' (affordable) needs the ending '-e' after the indefinite article 'eine' (accusative feminine). Mixed declension: after ein/eine/ein, adjectives take '-e' in nominative/accusative for masculine and all feminine/neuter. 'Die Unterkunft' (accommodation) is feminine. 'In der Nähe' (near/in the vicinity) + genitive: 'des Zentrums.' Types of accommodation: 'das Hotel,' 'die Pension' (B&B), 'die Ferienwohnung' (vacation apartment), 'die Jugendherberge' (youth hostel)."
+      },
+      {
+        "id": "eg_trav12",
+        "question": "An welchem _____ fährt der Zug nach Berlin ab?",
+        "translation": "(From which platform does the train to Berlin depart?)",
+        "options": [
+          "Gleis",
+          "Gleise",
+          "Gleisen",
+          "Gleises"
+        ],
+        "correct": "Gleis",
+        "explanation": "'An welchem Gleis' — 'welchem' is dative neuter interrogative (das Gleis). 'Das Gleis' (platform/track) stays in base form in dative neuter. 'Abfahren' separates: 'fährt...ab.' The German train system uses 'Gleis' (track/platform): 'Gleis 1, Gleis 2...' Useful station phrases: 'Der Zug nach Berlin fährt von Gleis 5 ab' (The train to Berlin departs from platform 5). 'Die Anzeigentafel' (departure board), 'der Fahrplan' (timetable), 'der Zuschlag' (supplement)."
+      },
+      {
+        "id": "eg_trav13",
+        "question": "Können wir ein Auto _____ der Woche mieten?",
+        "translation": "(Can we rent a car for the week?)",
+        "options": [
+          "für",
+          "seit",
+          "während",
+          "über"
+        ],
+        "correct": "für",
+        "explanation": "'Für die Woche' (for the week) — 'für' + accusative expresses intended duration. 'Mieten' (to rent) goes to the end after 'können.' 'Ein Auto' is neuter accusative. Alternatives for duration: 'eine Woche lang' (for a week), 'auf eine Woche' (for a week — more formal). Car rental vocabulary: 'der Mietwagen' (rental car), 'der Führerschein' (driver's license), 'die Vollkaskoversicherung' (comprehensive insurance), 'der Kilometerstand' (mileage). German Autobahn has sections without speed limits!"
+      },
+      {
+        "id": "eg_trav14",
+        "question": "Die Reise hat uns viele schöne Erinnerungen _____.",
+        "translation": "(The trip has given us many beautiful memories)",
+        "options": [
+          "beschert",
+          "bescheren",
+          "geschert",
+          "bescherend"
+        ],
+        "correct": "beschert",
+        "explanation": "'Hat beschert' — Perfekt of inseparable verb 'bescheren' (to bestow/give). No 'ge-' prefix because 'be-' is inseparable! 'Uns' is dative (to us — indirect object), 'viele schöne Erinnerungen' is accusative plural (direct object). 'Viele schöne' — adjective after 'viele' takes strong ending '-e': parallel declension. 'Die Erinnerung' (memory) → Erinnerungen (plural). 'Bescheren' originally means to give Christmas gifts — it has expanded to any positive bestowal. 'Die Reise' (trip/journey) is feminine."
+      },
+      {
+        "id": "eg_trav15",
+        "question": "Am liebsten reise ich mit dem Zug, _____ man die Landschaft genießen kann.",
+        "translation": "(I prefer to travel by train because you can enjoy the scenery)",
+        "options": [
+          "weil",
+          "denn",
+          "obwohl",
+          "wenn"
+        ],
+        "correct": "weil",
+        "explanation": "'Weil' (because) introduces a subordinate clause — verb goes to the END: 'weil man die Landschaft genießen kann.' Compare 'denn' (also 'because') which is a coordinating conjunction keeping normal word order: 'denn man kann die Landschaft genießen.' 'Am liebsten' (most preferably) is the superlative of 'gern': gern → lieber → am liebsten. 'Mit dem Zug' (by train) — 'mit' + dative for means of transport. 'Genießen' (to enjoy) is a strong verb: genoss, genossen."
+      }
+    ]
+  },
+  {
+    "key": "health_body",
+    "name": "Health & Body",
+    "description": "Gesundheit und Körper",
+    "iconName": "heart.text.square",
+    "color": "#ef4444",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_hlth1",
+        "question": "Mir tut der _____ weh.",
+        "translation": "(My head hurts)",
+        "options": [
+          "Kopf",
+          "Kopfe",
+          "Köpfe",
+          "Kopfes"
+        ],
+        "correct": "Kopf",
+        "explanation": "'Wehtun' (to hurt) takes DATIVE for the person: 'Mir tut...weh.' This is the opposite of English where the body part is possessive ('MY head hurts'). German says literally: 'To me hurts the head.' 'Der Kopf' (head) is nominative — it's the subject! 'Tut' is 3rd person singular. For plural body parts: 'Mir tun die Füße weh' (My feet hurt — tun, plural). Body parts: 'der Arm,' 'das Bein' (leg), 'der Rücken' (back), 'der Bauch' (stomach)."
+      },
+      {
+        "id": "eg_hlth2",
+        "question": "Ich habe seit drei Tagen _____.",
+        "translation": "(I have had a fever for three days)",
+        "options": [
+          "Fieber",
+          "Fiebers",
+          "fiebrig",
+          "Fiebern"
+        ],
+        "correct": "Fieber",
+        "explanation": "'Fieber haben' (to have a fever) — 'das Fieber' (fever) is used WITHOUT an article in this medical expression! Like English 'to have fever.' 'Seit drei Tagen' (for three days) — 'seit' + dative for ongoing duration starting in the past! German uses PRESENT TENSE with 'seit' where English uses present perfect: 'Ich habe seit drei Tagen Fieber' = 'I have HAD a fever for three days.' This seit + present tense pattern is a major grammar difference between German and English!"
+      },
+      {
+        "id": "eg_hlth3",
+        "question": "Der Arzt hat mir ein Rezept _____.",
+        "translation": "(The doctor has prescribed me a prescription)",
+        "options": [
+          "verschrieben",
+          "geschrieben",
+          "beschrieben",
+          "schrieben"
+        ],
+        "correct": "verschrieben",
+        "explanation": "'Verschreiben' (to prescribe) — inseparable prefix 'ver-' changes the meaning of 'schreiben' (to write): verschreiben = to prescribe. No 'ge-' in participle! 'Mir' (dative — to me) + 'ein Rezept' (accusative — a prescription). 'Der Arzt' (doctor) is masculine. Medical vocabulary: 'das Medikament' (medication), 'die Apotheke' (pharmacy), 'die Tablette' (pill/tablet), 'die Salbe' (ointment). In Germany, prescriptions ('Rezepte') can be green (over-the-counter) or pink (prescription-only)."
+      },
+      {
+        "id": "eg_hlth4",
+        "question": "Sie müssen dieses Medikament dreimal _____ einnehmen.",
+        "translation": "(You must take this medication three times daily)",
+        "options": [
+          "täglich",
+          "tägliche",
+          "täglicher",
+          "täglichen"
+        ],
+        "correct": "täglich",
+        "explanation": "'Täglich' (daily) is an adverb — adverbs NEVER decline! It's formed from 'Tag' (day) + '-lich' (suffix meaning '-ly'). Similar patterns: 'wöchentlich' (weekly), 'monatlich' (monthly), 'jährlich' (annually), 'stündlich' (hourly). 'Einnehmen' (to take medication) is different from 'nehmen' (to take generally) — the 'ein-' prefix specifies medicinal intake. After 'müssen,' the infinitive goes to the end. 'Dreimal' (three times) — mal = times: einmal, zweimal, dreimal."
+      },
+      {
+        "id": "eg_hlth5",
+        "question": "Ich bin gegen _____ allergisch.",
+        "translation": "(I am allergic to pollen)",
+        "options": [
+          "Pollen",
+          "Pollens",
+          "Pollenen",
+          "dem Pollen"
+        ],
+        "correct": "Pollen",
+        "explanation": "'Gegen Pollen' — 'gegen' + accusative, and 'die Pollen' (pollen, plural, no article) keeps its base form. 'Allergisch gegen' is the fixed preposition combination (NOT 'auf' or 'zu'!). Allergy season in Germany ('Pollenzeit') typically runs from February (hazel) through September (ragweed). Common allergens: 'Hausstaubmilben' (dust mites), 'Tierhaare' (animal hair), 'Nüsse' (nuts), 'Laktose' (lactose). 'Die Allergie' (allergy) → 'allergisch' (allergic) + 'gegen.'"
+      },
+      {
+        "id": "eg_hlth6",
+        "question": "Der Patient muss sofort _____ werden.",
+        "translation": "(The patient must be operated on immediately)",
+        "options": [
+          "operiert",
+          "operieren",
+          "Operation",
+          "operierend"
+        ],
+        "correct": "operiert",
+        "explanation": "'Muss operiert werden' — this is passive voice with a modal verb: müssen + past participle + werden (infinitive). The structure: modal + participle + werden (at end). 'Operieren' is an '-ieren' verb — no 'ge-' in participle: operiert. 'Sofort' (immediately) is an important medical urgency word. 'Der Patient' (patient) is a weak masculine noun: den Patienten (acc.), dem Patienten (dat.). Hospital vocabulary: 'das Krankenhaus' (hospital), 'die Notaufnahme' (emergency room), 'die Station' (ward)."
+      },
+      {
+        "id": "eg_hlth7",
+        "question": "Ich fühle mich heute nicht _____.",
+        "translation": "(I don't feel well today)",
+        "options": [
+          "wohl",
+          "wohle",
+          "wohler",
+          "wohles"
+        ],
+        "correct": "wohl",
+        "explanation": "'Sich wohl fühlen' (to feel well) — 'wohl' is a predicative adjective/adverb: no ending! 'Sich fühlen' is reflexive: 'ich fühle mich.' 'Nicht wohl' negates the feeling. The 'nicht' comes before 'wohl' because it negates the complement. 'Heute' (today) is an adverb — no preposition needed. Common feeling phrases: 'Mir ist schlecht' (I feel nauseous), 'Mir ist schwindelig' (I feel dizzy), 'Ich bin erschöpft' (I'm exhausted). Note: 'wohl' can also mean 'probably': 'Er ist wohl krank' (He's probably sick)."
+      },
+      {
+        "id": "eg_hlth8",
+        "question": "Gegen Kopfschmerzen hilft es, viel Wasser zu _____.",
+        "translation": "(Against headaches it helps to drink a lot of water)",
+        "options": [
+          "trinken",
+          "trinkt",
+          "getrunken",
+          "trinkend"
+        ],
+        "correct": "trinken",
+        "explanation": "'Zu trinken' — infinitive with 'zu' after 'hilft es' (it helps). 'Gegen Kopfschmerzen' (against headaches) — 'gegen' + accusative. 'Die Kopfschmerzen' (headache, always plural) is a compound: 'Kopf' (head) + 'Schmerzen' (pains). German body pains follow this pattern: 'Kopfschmerzen, Bauchschmerzen (stomachache), Rückenschmerzen (backache), Zahnschmerzen (toothache).' 'Helfen' + dative (to help someone), but here impersonal 'es hilft' + infinitive. 'Viel Wasser' — no article needed."
+      },
+      {
+        "id": "eg_hlth9",
+        "question": "Die Krankenschwester hat mir Blut _____.",
+        "translation": "(The nurse took my blood)",
+        "options": [
+          "abgenommen",
+          "genommen",
+          "abgenehmen",
+          "nehmen"
+        ],
+        "correct": "abgenommen",
+        "explanation": "'Hat abgenommen' — Perfekt of separable verb 'abnehmen' (to take from). In Perfekt, separable verbs put 'ge-' between prefix and stem: ab-ge-nommen. 'Nommen' has the irregular vowel change: nehmen → nahm → genommen. 'Mir' (dative — from me) + 'Blut' (blood — accusative). 'Blut abnehmen' (to draw blood) is a medical collocation. 'Die Krankenschwester' (nurse, literally 'sick sister') is feminine — male nurse: 'der Krankenpfleger.' Body fluids: 'das Blut' (blood), 'der Urin' (urine)."
+      },
+      {
+        "id": "eg_hlth10",
+        "question": "Sie sollten mit dem Rauchen _____.",
+        "translation": "(You should stop smoking)",
+        "options": [
+          "aufhören",
+          "stoppen",
+          "beenden",
+          "enden"
+        ],
+        "correct": "aufhören",
+        "explanation": "'Aufhören mit' + dative (to stop doing something) — 'mit dem Rauchen' uses nominalized infinitive: 'das Rauchen' (smoking) in dative after 'mit.' 'Aufhören' is separable but stays together after 'sollten.' The nominalization pattern is productive: 'mit dem Trinken aufhören' (stop drinking), 'mit dem Essen anfangen' (start eating). 'Sollten' (should — Konjunktiv II) gives polite medical advice. Health advice phrases: 'mehr Sport treiben' (exercise more), 'sich gesünder ernähren' (eat healthier)."
+      },
+      {
+        "id": "eg_hlth11",
+        "question": "Der Verband muss jeden Tag _____ werden.",
+        "translation": "(The bandage must be changed every day)",
+        "options": [
+          "gewechselt",
+          "wechseln",
+          "wechselt",
+          "wechselnd"
+        ],
+        "correct": "gewechselt",
+        "explanation": "'Muss gewechselt werden' — passive with modal: muss + past participle + werden. 'Wechseln' (to change/replace) is regular: gewechselt. 'Jeden Tag' (every day) — accusative masculine time expression. 'Der Verband' (bandage/dressing) is masculine. Medical care vocabulary: 'die Wunde' (wound), 'die Naht' (stitch/suture), 'desinfizieren' (to disinfect), 'die Spritze' (injection/syringe). German healthcare (Krankenversicherung) is mandatory — either public (gesetzlich) or private."
+      },
+      {
+        "id": "eg_hlth12",
+        "question": "Ich habe mir beim Sport das Knie _____.",
+        "translation": "(I injured my knee while doing sports)",
+        "options": [
+          "verletzt",
+          "verletzen",
+          "verletzend",
+          "Verletzung"
+        ],
+        "correct": "verletzt",
+        "explanation": "'Habe mir verletzt' — reflexive Perfekt! 'Sich verletzen' (to injure oneself) uses the dative reflexive 'mir' because the body part 'das Knie' is the direct object. Compare: 'Ich habe mich verletzt' (accusative — I injured myself, generally) vs. 'Ich habe mir das Knie verletzt' (dative — I injured my knee specifically). This dative/accusative reflexive distinction is classic German. 'Beim Sport' = 'bei dem Sport' (while doing sports). 'Das Knie' (knee) is neuter."
+      },
+      {
+        "id": "eg_hlth13",
+        "question": "Die Ärztin hat mich gründlich _____.",
+        "translation": "(The doctor has examined me thoroughly)",
+        "options": [
+          "untersucht",
+          "untersuchen",
+          "untersuchte",
+          "untersuchend"
+        ],
+        "correct": "untersucht",
+        "explanation": "'Hat untersucht' — Perfekt of inseparable verb 'untersuchen' (to examine). No 'ge-' because of inseparable prefix 'unter-'! Wait — 'unter' can be separable OR inseparable depending on meaning! 'Untersuchen' (to examine/investigate) is inseparable; 'untergehen' (to go under/set) is separable. Stress determines it: untersúchen (inseparable, stress on stem) vs. úntergehen (separable, stress on prefix). 'Gründlich' (thoroughly) is an adverb. 'Die Ärztin' is the feminine form of 'der Arzt.'"
+      },
+      {
+        "id": "eg_hlth14",
+        "question": "Er muss regelmäßig seine Blutwerte _____ lassen.",
+        "translation": "(He must have his blood values checked regularly)",
+        "options": [
+          "überprüfen",
+          "überprüft",
+          "prüfen",
+          "geprüft"
+        ],
+        "correct": "überprüfen",
+        "explanation": "'Lassen' + infinitive (to have something done) — 'überprüfen lassen' means 'to have checked.' After 'muss,' both infinitives go to the end: 'muss überprüfen lassen.' 'Regelmäßig' (regularly) is an adverb from 'regelmäßig' — 'Regel' (rule) + 'mäßig' (measured/moderate). 'Die Blutwerte' (blood values/counts) is a medical compound: 'Blut' + 'Werte.' The 'lassen' construction is extremely useful: 'sich die Haare schneiden lassen' (to have one's hair cut), 'das Auto reparieren lassen' (to have the car repaired)."
+      },
+      {
+        "id": "eg_hlth15",
+        "question": "Nach der Operation _____ er sich langsam wieder.",
+        "translation": "(After the operation, he is slowly recovering)",
+        "options": [
+          "erholt",
+          "erholen",
+          "erholte",
+          "erholend"
+        ],
+        "correct": "erholt",
+        "explanation": "'Sich erholen' (to recover) is reflexive with inseparable prefix 'er-.' 'Er erholt sich' — present tense for ongoing recovery. 'Langsam' (slowly) and 'wieder' (again) modify the verb. 'Nach der Operation' — 'nach' + dative (die Operation → der Operation in dative). 'Sich erholen' is used for all types of recovery: physical, mental, from vacation ('sich vom Urlaub erholen' — to recover from vacation, ironic but common!). Recovery vocabulary: 'die Genesung' (recovery), 'genesen' (to recuperate — literary)."
+      }
+    ]
+  },
+  {
+    "key": "education_school",
+    "name": "Education & School",
+    "description": "Bildung und Schule",
+    "iconName": "graduationcap",
+    "color": "#f97316",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_edu1",
+        "question": "Mein Sohn _____ die dritte Klasse der Grundschule.",
+        "translation": "(My son attends third grade at elementary school)",
+        "options": [
+          "besucht",
+          "besuchen",
+          "besuchte",
+          "besuche"
+        ],
+        "correct": "besucht",
+        "explanation": "'Besuchen' (to attend/visit) — in educational context, it means 'to attend' a school or class. Third person singular: 'er besucht.' Inseparable verb — no separation! 'Die dritte Klasse' (third grade/class) — ordinal adjective with weak ending '-e' after 'die.' 'Die Grundschule' (elementary school, literally 'foundation school') covers grades 1-4 in Germany. After that, students are divided into: Gymnasium (academic track), Realschule (intermediate), Hauptschule (basic). This early tracking system is uniquely German."
+      },
+      {
+        "id": "eg_edu2",
+        "question": "Die Schüler müssen bis morgen einen Aufsatz _____.",
+        "translation": "(The students must write an essay by tomorrow)",
+        "options": [
+          "schreiben",
+          "geschrieben",
+          "schreibt",
+          "schreibend"
+        ],
+        "correct": "schreiben",
+        "explanation": "'Schreiben' (to write) goes to the end as infinitive after 'müssen.' 'Die Schüler' (students — school level) vs. 'die Studenten' (students — university level): this distinction matters in German! 'Einen Aufsatz' (an essay) — masculine accusative. 'Bis morgen' (by tomorrow) sets the deadline. School subjects: 'Deutsch' (German), 'Mathematik/Mathe' (Math), 'Geschichte' (History), 'Erdkunde/Geografie' (Geography), 'Naturwissenschaften' (Sciences). German education is largely free, including university!"
+      },
+      {
+        "id": "eg_edu3",
+        "question": "Sie hat ihr Studium mit _____ abgeschlossen.",
+        "translation": "(She completed her studies with distinction)",
+        "options": [
+          "Auszeichnung",
+          "Auszeichnungen",
+          "ausgezeichnet",
+          "zeichnen"
+        ],
+        "correct": "Auszeichnung",
+        "explanation": "'Mit Auszeichnung' (with distinction) — 'mit' + dative. 'Die Auszeichnung' (distinction/award) stays in base form in dative feminine. 'Abschließen' (to complete/finish) is separable: 'hat abgeschlossen' in Perfekt (ge- between prefix and stem). 'Ihr Studium' (her studies) — 'das Studium' is neuter. German university grades: 1.0-1.5 (sehr gut/excellent), 1.6-2.5 (gut/good), 2.6-3.5 (befriedigend/satisfactory), 3.6-4.0 (ausreichend/sufficient), >4.0 (nicht bestanden/failed)."
+      },
+      {
+        "id": "eg_edu4",
+        "question": "Der Professor hält heute eine _____ über Quantenphysik.",
+        "translation": "(The professor is giving a lecture on quantum physics today)",
+        "options": [
+          "Vorlesung",
+          "Vorlesungen",
+          "Lesung",
+          "Vorlesungs"
+        ],
+        "correct": "Vorlesung",
+        "explanation": "'Eine Vorlesung halten' (to give a lecture) — 'halten' here means 'to hold/give.' 'Die Vorlesung' (lecture — literally 'reading before/to') is the standard university lecture format. Don't confuse with 'die Lesung' (a literary reading). 'Über Quantenphysik' — 'über' + accusative for topic: 'about quantum physics.' University vocabulary: 'das Seminar' (seminar — smaller, interactive), 'die Übung' (tutorial), 'die Klausur' (written exam), 'das Semester' (semester). German professors use their titles: 'Herr Professor Doktor...'"
+      },
+      {
+        "id": "eg_edu5",
+        "question": "Ich muss mich für das Sommersemester noch _____.",
+        "translation": "(I still need to register for the summer semester)",
+        "options": [
+          "einschreiben",
+          "schreiben",
+          "anmelden",
+          "beschreiben"
+        ],
+        "correct": "einschreiben",
+        "explanation": "'Sich einschreiben' (to enroll/register at university) is the specific term for university enrollment — separable and reflexive. 'Für das Sommersemester' — 'für' + accusative neuter. 'Noch' (still/yet) implies the deadline hasn't passed. Compare: 'sich anmelden' (to register generally — for courses, events), 'sich einschreiben' (specifically for university enrollment — Immatrikulation). German academic year: Wintersemester (October-March), Sommersemester (April-September). After 'muss,' both infinitives stay whole."
+      },
+      {
+        "id": "eg_edu6",
+        "question": "Die Prüfung war so schwer, dass die _____ der Studenten durchgefallen ist.",
+        "translation": "(The exam was so hard that the majority of students failed)",
+        "options": [
+          "Mehrheit",
+          "Mehrheiten",
+          "mehrheitlich",
+          "Mehrzahl"
+        ],
+        "correct": "Mehrheit",
+        "explanation": "'Die Mehrheit' (the majority) is feminine — as the subject, it takes singular verb: 'ist durchgefallen.' 'Durchfallen' (to fail) is separable: durch-ge-fallen in Perfekt with 'sein' (intransitive verb of change). 'Der Studenten' — genitive plural after 'Mehrheit.' 'So schwer, dass...' (so hard that...) creates a result clause. German exams ('Prüfungen/Klausuren') are often quite challenging. Grading uses 'bestanden' (passed) and 'nicht bestanden/durchgefallen' (failed). Note: 'durchfallen' literally means 'to fall through' — vivid imagery!"
+      },
+      {
+        "id": "eg_edu7",
+        "question": "Er hat ein Stipendium für sein _____ in Deutschland bekommen.",
+        "translation": "(He received a scholarship for his studies in Germany)",
+        "options": [
+          "Studium",
+          "Studien",
+          "Studiums",
+          "Studienfach"
+        ],
+        "correct": "Studium",
+        "explanation": "'Das Studium' (studies/degree program) — accusative neuter after 'für' (for). Note: 'Studium' is singular; 'die Studien' is plural but used differently (academic studies/research). 'Ein Stipendium' (a scholarship) is neuter. 'Bekommen' (to receive) — not 'become'! This infamous false friend trips up many English speakers. 'Bekommen' = receive, 'werden' = become. German scholarships from DAAD (Deutscher Akademischer Austauschdienst) are prestigious. 'Für sein Studium' — 'sein' is possessive (his)."
+      },
+      {
+        "id": "eg_edu8",
+        "question": "Die Hausaufgaben müssen bis Freitag _____ werden.",
+        "translation": "(The homework must be submitted by Friday)",
+        "options": [
+          "abgegeben",
+          "abgeben",
+          "gegeben",
+          "geben"
+        ],
+        "correct": "abgegeben",
+        "explanation": "'Müssen abgegeben werden' — passive with modal: must + past participle + werden. 'Abgeben' (to hand in/submit) is separable: ab-ge-geben (ge- inserted between prefix and stem). 'Die Hausaufgaben' (homework — always plural in German!) is a compound: 'Haus' (home) + 'Aufgaben' (tasks). 'Bis Freitag' (by Friday) — 'bis' + day without article for deadlines. School assignments: 'das Referat' (presentation), 'die Projektarbeit' (project work), 'das Arbeitsblatt' (worksheet)."
+      },
+      {
+        "id": "eg_edu9",
+        "question": "In welchem Fach hast du die _____ Note?",
+        "translation": "(In which subject do you have the best grade?)",
+        "options": [
+          "beste",
+          "bester",
+          "besten",
+          "bestem"
+        ],
+        "correct": "beste",
+        "explanation": "'Die beste Note' — superlative adjective 'best-' with weak ending '-e' after definite article 'die' (accusative feminine). 'Das Fach' (subject) is neuter — 'In welchem Fach' uses dative after 'in' for location/context. German grades go 1 (very good) to 6 (insufficient) in school, 1.0-4.0 at university. So the 'best' grade numerically is the LOWEST! 'Eine Eins' (a one/A) is the dream grade. Common question: 'Welches Fach magst du am liebsten?' (Which subject do you like best?)."
+      },
+      {
+        "id": "eg_edu10",
+        "question": "Nach dem Abitur möchte sie _____ studieren.",
+        "translation": "(After the Abitur she wants to study medicine)",
+        "options": [
+          "Medizin",
+          "Medizine",
+          "medizinisch",
+          "Medizins"
+        ],
+        "correct": "Medizin",
+        "explanation": "'Medizin studieren' (to study medicine) — university subjects are used WITHOUT an article: 'Ich studiere Physik/Jura/Chemie.' 'Das Abitur' (A-levels equivalent) is the German secondary school leaving exam, required for university admission. It's abbreviated 'Abi' colloquially. 'Nach dem Abitur' — 'nach' + dative neuter. 'Möchte studieren' — two verbs: modal + infinitive at end. Popular German study subjects: Medizin (competitive — Numerus Clausus required), Jura (Law), BWL (Business Administration), Informatik (Computer Science)."
+      },
+      {
+        "id": "eg_edu11",
+        "question": "Der Lehrer hat die Klassenarbeit _____ korrigiert.",
+        "translation": "(The teacher has already corrected the class test)",
+        "options": [
+          "schon",
+          "noch",
+          "erst",
+          "immer"
+        ],
+        "correct": "schon",
+        "explanation": "'Schon' (already) indicates completion ahead of expectation. Compare: 'noch' (still — not yet done), 'erst' (only/not until — later than expected), 'immer' (always). These time adverbs create very different meanings! 'Die Klassenarbeit' (class test/exam) is feminine — a compound: 'Klasse' + 'Arbeit.' 'Korrigieren' (to correct) is an '-ieren' verb: no 'ge-' in Perfekt: 'hat korrigiert.' 'Der Lehrer' (teacher, male) / 'die Lehrerin' (teacher, female). German schools have various test types: Klassenarbeit, Test, Klausur."
+      },
+      {
+        "id": "eg_edu12",
+        "question": "An der Universität muss man viel _____ lernen.",
+        "translation": "(At university, one must learn a lot independently)",
+        "options": [
+          "selbstständig",
+          "selbstständige",
+          "selbstständiger",
+          "selbstständiges"
+        ],
+        "correct": "selbstständig",
+        "explanation": "'Selbstständig' (independently) functions as an adverb modifying 'lernen' — adverbs don't decline! The word has a fun spelling issue: both 'selbstständig' and 'selbständig' are correct! 'An der Universität' — 'an' + dative feminine for institution. 'Man' (one/people) takes singular verbs. 'Muss lernen' — modal + infinitive at end. German university culture emphasizes 'akademische Freiheit' (academic freedom) — students organize their own schedules, lecture attendance is often optional but exams are strict."
+      },
+      {
+        "id": "eg_edu13",
+        "question": "Sie hat ihre Masterarbeit _____ dem Thema Künstliche Intelligenz geschrieben.",
+        "translation": "(She wrote her master's thesis on the topic of artificial intelligence)",
+        "options": [
+          "über",
+          "auf",
+          "mit",
+          "für"
+        ],
+        "correct": "über",
+        "explanation": "'Über' + accusative (about/on — a topic) — 'über das Thema' or shortened 'über dem Thema' is the standard preposition for academic topics. Actually, 'über' here takes accusative: 'über das Thema.' 'Die Masterarbeit' (master's thesis) follows the pattern: Bachelorarbeit, Masterarbeit, Doktorarbeit/Dissertation. 'Geschrieben' — Perfekt of 'schreiben' (strong verb: schrieb, geschrieben). 'Künstliche Intelligenz' (artificial intelligence, KI in German — not AI!). German takes in some English academic terms but adapts others."
+      },
+      {
+        "id": "eg_edu14",
+        "question": "Die Bibliothek hat montags bis freitags von 8 _____ 20 Uhr geöffnet.",
+        "translation": "(The library is open Monday to Friday from 8 to 8 PM)",
+        "options": [
+          "bis",
+          "nach",
+          "zu",
+          "um"
+        ],
+        "correct": "bis",
+        "explanation": "'Von...bis...' (from...to...) is the standard construction for operating hours. 'Von 8 bis 20 Uhr' — German uses 24-hour time officially: 20 Uhr = 8 PM. 'Die Bibliothek' (library) is feminine — abbreviated 'die Bib' colloquially. 'Montags bis freitags' — days with '-s' ending mean 'on Mondays/regularly': montags (every Monday), dienstags, etc. 'Geöffnet' (open) is the past participle of 'öffnen' used as predicative adjective. German university libraries often have long hours during exam periods ('Prüfungsphase')."
+      },
+      {
+        "id": "eg_edu15",
+        "question": "Er hat sein Studium _____ und arbeitet jetzt in der Industrie.",
+        "translation": "(He dropped out of his studies and now works in industry)",
+        "options": [
+          "abgebrochen",
+          "gebrochen",
+          "abbrechen",
+          "bricht ab"
+        ],
+        "correct": "abgebrochen",
+        "explanation": "'Hat abgebrochen' — Perfekt of separable verb 'abbrechen' (to drop out/break off): ab-ge-brochen. 'Brechen' is a strong verb: brach, gebrochen. The 'ab-' prefix means 'off/away' and changes the meaning: brechen (to break) → abbrechen (to break off, drop out). 'Sein Studium abbrechen' (to drop out of one's studies) is unfortunately common — Germany's university dropout rate is around 30%. 'Und arbeitet jetzt' — present tense for current state. 'Die Industrie' (industry) — same word, similar pronunciation!"
+      }
+    ]
   }
 ]

@@ -10863,5 +10863,1030 @@
         "explanation": "NOT ENTIRELY CONVINCED (подвійне пом'якшення): 'I'm NOT ENTIRELY CONVINCED' = 'Я не цілком переконаний'. NOT + ENTIRELY = подвійне хеджування: заперечення + 'не цілком' (не 'зовсім не', а 'не повністю'). Ще: 'I'm not altogether sure', 'I'm not wholly in agreement', 'I'm not completely satisfied'. Це ввічливий незгода — м'якший за 'I disagree'. Підсумок hedging: модальні (might, could), прислівники (possibly, arguably), дієслова (seem, suggest, tend), фрази (to some extent). В українській: 'Не цілком переконаний', 'Не зовсім згоден' — пом'якшена незгода."
       }
     ]
+  },
+  {
+    "key": "formal_register",
+    "name": "Formal Register",
+    "description": "Формальний стиль мовлення",
+    "iconName": "briefcase.fill",
+    "color": "#1e3a5f",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ue_fr1",
+        "question": "I am writing to _____ about the recent changes to the policy.",
+        "translation": "(Пишу, щоб запитати про нещодавні зміни в політиці.)",
+        "options": [
+          "inquire",
+          "ask",
+          "wonder",
+          "question"
+        ],
+        "correct": "inquire",
+        "explanation": "INQUIRE (формальний еквівалент ASK): 'I am writing to INQUIRE' = 'Звертаюся із запитом'. У формальному листуванні: INQUIRE замість ASK, PURCHASE замість BUY, REQUIRE замість NEED, ASSIST замість HELP, COMMENCE замість START. Формальна лексика — латинського/французького походження, розмовна — германського. 'I wish to inquire about...' (формально) vs 'I want to ask about...' (розмовно). В українській: теж є регістри — 'запитати' (розм.) vs 'звернутися із запитом' (офіц.)."
+      },
+      {
+        "id": "ue_fr2",
+        "question": "We would like to _____ our sincere apologies for the inconvenience.",
+        "translation": "(Хотіли б висловити наші щирі вибачення за незручності.)",
+        "options": [
+          "extend",
+          "give",
+          "say",
+          "tell"
+        ],
+        "correct": "extend",
+        "explanation": "EXTEND APOLOGIES (формальна колокація): 'EXTEND our sincere apologies'. У формальному стилі дієслова мають специфічні колокації: EXTEND apologies/gratitude/an invitation (висловити), CONVEY regards/condolences (передати), EXPRESS concern/interest (виявити), SUBMIT a request/application (подати). 'Give apologies' — нейтрально, 'Extend apologies' — формально, 'Say sorry' — розмовно. В українській: 'Висловити вибачення' (офіц.) vs 'Попросити вибачення' (нейтр.) vs 'Вибачте' (розм.)."
+      },
+      {
+        "id": "ue_fr3",
+        "question": "Please do not _____ to contact us if you have any further questions.",
+        "translation": "(Будь ласка, не вагайтеся звертатися до нас з будь-якими питаннями.)",
+        "options": [
+          "hesitate",
+          "stop",
+          "wait",
+          "pause"
+        ],
+        "correct": "hesitate",
+        "explanation": "DO NOT HESITATE TO CONTACT (формальне запрошення): 'Please do not HESITATE to contact us'. Фіксований формальний вираз = 'Не вагайтеся звернутися'. Ще формальні кліше: 'I would be grateful if you could...', 'Please find enclosed/attached...', 'We regret to inform you...', 'With reference to your letter of...'. Ці фрази — маркери ділової англійської (Business English). В українській: 'Не вагайтеся звертатися' — калька з англійської, прижилась у діловому стилі."
+      },
+      {
+        "id": "ue_fr4",
+        "question": "The committee has _____ to postpone the meeting until further notice.",
+        "translation": "(Комітет вирішив перенести зустріч до подальшого повідомлення.)",
+        "options": [
+          "resolved",
+          "decided",
+          "chosen",
+          "picked"
+        ],
+        "correct": "resolved",
+        "explanation": "RESOLVE (формальне рішення): 'The committee has RESOLVED to postpone'. RESOLVE = формальне DECIDE, типове для протоколів, офіційних документів. Ще: DETERMINE (визначити), DEEM (вважати), ENDEAVOUR (докладати зусиль), UNDERTAKE (зобов'язатися). 'It was resolved that the policy be amended' — офіційна резолюція. Зверніть увагу: subjunctive 'be amended' (не 'is amended'). В українській: 'Ухвалити' (офіц.) vs 'Вирішити' (нейтр.), 'Постановити' (юрид.)."
+      },
+      {
+        "id": "ue_fr5",
+        "question": "I would be _____ if you could send me the report by Friday.",
+        "translation": "(Був би вдячний, якби ви могли надіслати мені звіт до п'ятниці.)",
+        "options": [
+          "grateful",
+          "happy",
+          "glad",
+          "nice"
+        ],
+        "correct": "grateful",
+        "explanation": "I WOULD BE GRATEFUL IF (формальне прохання): 'I would be GRATEFUL if you could...'. Шкала ввічливості прохань: 'Send me the report' (наказ) < 'Can you send?' (розмовно) < 'Could you send?' (ввічливо) < 'Would you mind sending?' (дуже ввічливо) < 'I would be grateful if you could send' (формально). GRATEFUL = 'вдячний'. Ще: 'I would appreciate it if...', 'Would it be possible to...'. В українській: 'Був би вдячний, якби...' — умовний спосіб для ввічливості, як і в англійській."
+      },
+      {
+        "id": "ue_fr6",
+        "question": "The report _____ that several areas need improvement.",
+        "translation": "(Звіт вказує на те, що кілька сфер потребують вдосконалення.)",
+        "options": [
+          "indicates",
+          "says",
+          "tells",
+          "shows"
+        ],
+        "correct": "indicates",
+        "explanation": "INDICATE (формальне 'вказувати'): 'The report INDICATES that...' Формальні дієслова опису даних: INDICATE (вказувати), DEMONSTRATE (демонструвати), ILLUSTRATE (ілюструвати), REVEAL (виявляти), SUGGEST (свідчити). Нейтральні: SHOW, TELL, SAY. 'The data indicates a trend' (формально) vs 'The data shows a trend' (нейтрально). INDICATE = не прямо, а НЕПРЯМО вказує. В українській: 'Вказує' (нейтр.) vs 'Свідчить' (формально) vs 'Каже' (розм. — не для документів)."
+      },
+      {
+        "id": "ue_fr7",
+        "question": "We _____ acknowledge receipt of your application.",
+        "translation": "(Цим підтверджуємо отримання вашої заявки.)",
+        "options": [
+          "hereby",
+          "here",
+          "now",
+          "so"
+        ],
+        "correct": "hereby",
+        "explanation": "HEREBY (офіційний маркер): 'We HEREBY acknowledge receipt'. HEREBY = 'цим (документом), цим самим' — типовий маркер юридичної та офіційної мови. Ще: HEREIN (тут, у цьому документі), HEREWITH (разом з цим), HEREAFTER (надалі), THEREOF (цього), WHEREIN (де, в якому). 'I hereby declare...', 'The terms herein...'. Ці слова архаїчні в розмові, але живі в юридичних документах. В українській: 'Цим підтверджуємо', 'Даним документом' — офіційні маркери."
+      },
+      {
+        "id": "ue_fr8",
+        "question": "Your application will be processed in _____ course.",
+        "translation": "(Ваша заявка буде опрацьована в належному порядку.)",
+        "options": [
+          "due",
+          "right",
+          "good",
+          "proper"
+        ],
+        "correct": "due",
+        "explanation": "IN DUE COURSE (у належний час): 'Will be processed IN DUE COURSE'. Фіксований формальний вираз = 'у належному порядку / у встановлені терміни'. Ще формальні фрази з DUE: 'due to' (через), 'due diligence' (належна обачливість), 'with due respect' (з належною повагою), 'due consideration' (належний розгляд). IN DUE COURSE = не конкретно коли, але обіцянка, що буде зроблено. В українській: 'У належному порядку', 'Своєчасно' — бюрократичні кліше."
+      },
+      {
+        "id": "ue_fr9",
+        "question": "The undersigned _____ confirm that all information provided is accurate.",
+        "translation": "(Нижчепідписаний цим підтверджує, що вся надана інформація є точною.)",
+        "options": [
+          "does",
+          "do",
+          "shall",
+          "can"
+        ],
+        "correct": "does",
+        "explanation": "THE UNDERSIGNED (юридична самоідентифікація): 'THE UNDERSIGNED DOES confirm...' Emphatic DO + THE UNDERSIGNED — подвійний формальний маркер. THE UNDERSIGNED = 'нижчепідписаний' — юридичний термін для 'Я'. Ще: 'the aforementioned' (вищезгаданий), 'the above-named' (вищеназваний), 'the party of the first part' (сторона першої частини). В юридичних документах уникають 'I', 'you' — замінюють на THE UNDERSIGNED, THE APPLICANT тощо. В українській: 'Нижчепідписаний' — точний еквівалент."
+      },
+      {
+        "id": "ue_fr10",
+        "question": "I regret to _____ you that your application has been unsuccessful.",
+        "translation": "(На жаль, змушений повідомити вас, що ваша заявка була відхилена.)",
+        "options": [
+          "inform",
+          "tell",
+          "say",
+          "speak"
+        ],
+        "correct": "inform",
+        "explanation": "REGRET TO INFORM (формальне повідомлення негативного): 'I REGRET TO INFORM you'. INFORM = формальне TELL. 'Regret to inform' — фіксований вираз для поганих новин: відмова, звільнення, скасування. Порівняйте: 'Sorry to tell you' (розм.) vs 'I regret to inform you' (офіц.). Ще: 'We are sorry to have to inform you...', 'It is with regret that we must advise you...'. В українській: 'На жаль, змушені повідомити' (офіц.) vs 'На жаль, маємо сказати' (нейтр.)."
+      },
+      {
+        "id": "ue_fr11",
+        "question": "It is _____ that all employees attend the training session.",
+        "translation": "(Обов'язковою вимогою є те, щоб усі працівники відвідали тренінг.)",
+        "options": [
+          "mandatory",
+          "needed",
+          "wanted",
+          "good"
+        ],
+        "correct": "mandatory",
+        "explanation": "MANDATORY / COMPULSORY / OBLIGATORY (формальні синоніми 'обов'язковий'): 'It is MANDATORY that all employees attend'. Шкала: MANDATORY/COMPULSORY (юридично обов'язково) > REQUIRED (вимагається) > EXPECTED (очікується) > RECOMMENDED (рекомендується) > OPTIONAL (за бажанням). Зверніть увагу: subjunctive 'attend' (не 'attends') після IT IS MANDATORY THAT. В українській: 'Обов'язковий' (нейтр.), 'Обов'язковою вимогою є' (офіц.), 'Неодмінний' (підсилений)."
+      },
+      {
+        "id": "ue_fr12",
+        "question": "_____ to our previous correspondence, we wish to clarify the matter.",
+        "translation": "(Посилаючись на наше попереднє листування, хочемо прояснити це питання.)",
+        "options": [
+          "With reference",
+          "About",
+          "Regarding to",
+          "According"
+        ],
+        "correct": "With reference",
+        "explanation": "WITH REFERENCE TO (формальне посилання): 'WITH REFERENCE TO our previous correspondence'. Формальні початкові фрази листів: WITH REFERENCE TO (щодо), FURTHER TO (на додаток до), IN RESPONSE TO (у відповідь на), PURSUANT TO (відповідно до — юридичне). 'Further to our telephone conversation...' (формально) vs 'About our phone call...' (розмовно). В українській: 'Посилаючись на', 'Стосовно', 'Щодо', 'Відповідно до' — різні рівні формальності."
+      },
+      {
+        "id": "ue_fr13",
+        "question": "Your prompt attention to this matter would be greatly _____.",
+        "translation": "(Ваша швидка увага до цього питання буде дуже цінуватися.)",
+        "options": [
+          "appreciated",
+          "liked",
+          "wanted",
+          "needed"
+        ],
+        "correct": "appreciated",
+        "explanation": "WOULD BE GREATLY APPRECIATED (формальне прохання-подяка): 'Your attention WOULD BE GREATLY APPRECIATED'. Це passive voice + conditional = максимальна ввічливість і формальність. Безособова форма: не 'I would appreciate' (особиста), а 'would be appreciated' (безособова, об'єктивна). Ще: 'Your cooperation would be most welcome', 'An early reply would be appreciated'. В українській: 'Будемо вдячні за оперативну увагу' — теж непряма, ввічлива конструкція."
+      },
+      {
+        "id": "ue_fr14",
+        "question": "The company shall not be _____ for any damages arising from misuse.",
+        "translation": "(Компанія не несе відповідальності за будь-які збитки, спричинені неправильним використанням.)",
+        "options": [
+          "liable",
+          "guilty",
+          "wrong",
+          "bad"
+        ],
+        "correct": "liable",
+        "explanation": "SHALL NOT BE LIABLE (юридична відмова від відповідальності): 'The company SHALL NOT BE LIABLE'. SHALL = юридичне 'повинен/має', LIABLE = 'відповідальний (юридично)'. В контрактах SHALL ≠ WILL: SHALL = обов'язок, WILL = намір. 'The tenant shall pay rent monthly' (обов'язок). 'The landlord will provide keys' (намір). LIABLE vs RESPONSIBLE: LIABLE = юридична відповідальність, RESPONSIBLE = моральна. В українській: 'Не несе відповідальності' — 'відповідальність' = LIABILITY."
+      },
+      {
+        "id": "ue_fr15",
+        "question": "We look forward to _____ from you at your earliest convenience.",
+        "translation": "(Чекаємо на вашу відповідь за найближчої нагоди.)",
+        "options": [
+          "hearing",
+          "hear",
+          "heard",
+          "to hear"
+        ],
+        "correct": "hearing",
+        "explanation": "LOOK FORWARD TO + V-ING (формальне завершення листа): 'We look forward to HEARING from you'. LOOK FORWARD TO + GERUND (не infinitive!). Типова помилка: ❌ 'look forward to hear'. TO тут — prеposition (не частина інфінітива). Ще: 'I look forward to receiving...', 'We look forward to meeting you'. AT YOUR EARLIEST CONVENIENCE = 'за найближчої нагоди' — формальне прохання відповісти швидко, але ввічливо (не 'answer now!'). В українській: 'Чекаємо на відповідь' — коротше, без герундія."
+      }
+    ]
+  },
+  {
+    "key": "informal_register",
+    "name": "Informal Register",
+    "description": "Розмовний стиль мовлення",
+    "iconName": "bubble.left.fill",
+    "color": "#f97316",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ue_ifr1",
+        "question": "I'm _____ tired. I need a nap.",
+        "translation": "(Я страшенно втомився. Мені потрібно поспати.)",
+        "options": [
+          "dead",
+          "very",
+          "much",
+          "so"
+        ],
+        "correct": "dead",
+        "explanation": "DEAD + ADJ (розмовний інтенсифікатор): 'I'm DEAD tired' = 'Я мертвецьки втомлений'. DEAD = розмовне підсилення: DEAD tired, DEAD serious, DEAD easy, DEAD right, DEAD wrong. Ще розмовні інтенсифікатори: PRETTY (pretty good), TOTALLY (totally awesome), ABSOLUTELY (absolutely brilliant), BLOODY (BrE, bloody awful). Формальні: EXTREMELY, EXCEEDINGLY, REMARKABLY. В українській: 'Мертвецьки втомлений', 'Страшенно' — теж гіперболічні розмовні підсилювачі."
+      },
+      {
+        "id": "ue_ifr2",
+        "question": "_____ gonna rain later, so take an umbrella.",
+        "translation": "(Пізніше піде дощ, тому візьми парасольку.)",
+        "options": [
+          "It's",
+          "Its",
+          "It",
+          "Is"
+        ],
+        "correct": "It's",
+        "explanation": "IT'S GONNA (розмовне скорочення): 'IT'S GONNA rain' = 'It is going to rain'. GONNA = going to (усне скорочення). Ще: WANNA = want to, GOTTA = got to / have got to, HAFTA = have to, LEMME = let me, GIMME = give me, KINDA = kind of, SORTA = sort of. ці скорочення ТІЛЬКИ в розмовній мові та неформальному листуванні. ❌ Не використовуйте в есе, CV, діловому листі. В українській: 'Буде дощ' — немає аналогічних скорочень, але є сленг."
+      },
+      {
+        "id": "ue_ifr3",
+        "question": "That movie was a total _____. I fell asleep.",
+        "translation": "(Той фільм був повним відстоєм. Я заснув.)",
+        "options": [
+          "letdown",
+          "disappointment",
+          "failure",
+          "disaster"
+        ],
+        "correct": "letdown",
+        "explanation": "LETDOWN (розмовне розчарування): 'A total LETDOWN'. LETDOWN = розмовне, DISAPPOINTMENT = нейтральне. Розмовні іменники від phrasal verbs: LETDOWN (let down), SETUP (set up), BREAKDOWN (break down), TURNOFF (turn off), RIP-OFF (rip off), HANGOVER (hang over). 'The party was a letdown', 'That restaurant is a rip-off' (обдурюють з цінами). В українській: 'Відстій', 'Розчарування', 'Облом' — різна розмовність. Мовний регістр має бути доречним."
+      },
+      {
+        "id": "ue_ifr4",
+        "question": "Can you _____ me a hand with this?",
+        "translation": "(Можеш допомогти мені з цим?)",
+        "options": [
+          "give",
+          "lend",
+          "hand",
+          "throw"
+        ],
+        "correct": "give",
+        "explanation": "GIVE ME A HAND (допомогти): 'Can you GIVE me a hand?' = 'Можеш допомогти?'. Розмовні вирази з частинами тіла: GIVE a hand (допомогти), KEEP an eye on (поглядати за), PULL someone's leg (жартувати), COST an arm and a leg (дуже дорого), BITE someone's head off (накричати). Більш формально: 'Could you assist me with this?' Менш формально: 'Help me with this!' В українській: 'Допоможи' (нейтр.), 'Підсоби' (розм.), 'Надай допомогу' (офіц.)."
+      },
+      {
+        "id": "ue_ifr5",
+        "question": "I'm not really _____ that idea. Let's try something else.",
+        "translation": "(Мені не дуже подобається ця ідея. Давай спробуємо щось інше.)",
+        "options": [
+          "into",
+          "to",
+          "for",
+          "with"
+        ],
+        "correct": "into",
+        "explanation": "NOT INTO something (розмовне 'не подобається'): 'I'm not INTO that idea'. BE INTO = бути зацікавленим, любити. 'She's really into yoga', 'He's into cooking', 'I'm not into horror films'. Шкала: LOVE > BE INTO / BE KEEN ON > LIKE > NOT MIND > NOT BE INTO > DISLIKE > HATE. 'Are you into sports?' = 'Ти захоплюєшся спортом?'. Неформальне, але дуже поширене. В українській: 'Я не в темі', 'Мені це не заходить' — сленг, або 'Мене це не цікавить' (нейтр.)."
+      },
+      {
+        "id": "ue_ifr6",
+        "question": "I bumped _____ my old teacher at the supermarket yesterday.",
+        "translation": "(Вчора я випадково зустрів свого старого вчителя в супермаркеті.)",
+        "options": [
+          "into",
+          "to",
+          "at",
+          "on"
+        ],
+        "correct": "into",
+        "explanation": "BUMP INTO (випадково зустріти): 'I BUMPED INTO my teacher'. Розмовні phrasal verbs для зустрічей: BUMP INTO, RUN INTO, COME ACROSS — всі = 'випадково натрапити'. Формально: ENCOUNTER. 'I ran into Sarah at the mall', 'We came across an old photo'. BUMP INTO також = фізично вдаритися: 'I bumped into the table'. Контекст визначає значення. В українській: 'Натрапити', 'Випадково зустріти', 'Наткнутися' — розмовні синоніми. 'Зустріти' — нейтральне."
+      },
+      {
+        "id": "ue_ifr7",
+        "question": "Let's just _____ it by ear and see what happens.",
+        "translation": "(Давай просто діяти за обставинами.)",
+        "options": [
+          "play",
+          "do",
+          "make",
+          "take"
+        ],
+        "correct": "play",
+        "explanation": "PLAY IT BY EAR (діяти спонтанно): 'Let's PLAY IT BY EAR'. Ідіома = 'діяти за обставинами, імпровізувати'. Від музичного терміна: грати на слух, без нот. Ще розмовні ідіоми планування: 'wing it' (імпровізувати), 'go with the flow' (плисти за течією), 'cross that bridge when we come to it' (вирішувати проблеми в міру появи). Формально: 'We'll assess the situation as it develops'. В українській: 'Діяти за обставинами', 'Як піде, так піде', 'На ходу розберемося'."
+      },
+      {
+        "id": "ue_ifr8",
+        "question": "\"How was the concert?\" — \"It was _____!\"",
+        "translation": "(«Як був концерт?» — «Супер!»)",
+        "options": [
+          "awesome",
+          "acceptable",
+          "adequate",
+          "satisfactory"
+        ],
+        "correct": "awesome",
+        "explanation": "AWESOME (розмовне 'чудовий'): 'It was AWESOME!' Розмовні вигуки схвалення: AWESOME, AMAZING, BRILLIANT (BrE), WICKED (BrE slang), COOL, EPIC, SICK (slang = круто). Нейтральні: GREAT, VERY GOOD, EXCELLENT. Формальні: SUPERB, OUTSTANDING, MAGNIFICENT. 'The party was epic!', 'That's so cool!' В AmE 'awesome' — може бути майже порожнім: 'Want coffee?' — 'Awesome!' (= OK). В українській: 'Круто!', 'Супер!', 'Клас!', 'Офігенно!' — розмовні оцінки."
+      },
+      {
+        "id": "ue_ifr9",
+        "question": "I'm gonna _____ out for a bit. Need some fresh air.",
+        "translation": "(Я вийду на трохи. Потрібне свіже повітря.)",
+        "options": [
+          "head",
+          "go",
+          "leave",
+          "walk"
+        ],
+        "correct": "head",
+        "explanation": "HEAD OUT (розмовне 'вирушити'): 'I'm gonna HEAD OUT'. HEAD = дієслово руху (розм.): HEAD OUT (вийти), HEAD OFF (вирушити), HEAD OVER (піти кудись), HEAD HOME (піти додому), HEAD BACK (повернутися). 'I'm heading off now' (я йду), 'Let's head over to the café' (ходімо в кафе). Формально: 'I shall take my leave' / 'I need to depart'. В українській: 'Я піду' (нейтр.), 'Я потягнусь' (розм.), 'Дозвольте відкланятися' (формально)."
+      },
+      {
+        "id": "ue_ifr10",
+        "question": "Don't _____ about it. Everything will be fine.",
+        "translation": "(Не парся. Все буде добре.)",
+        "options": [
+          "sweat",
+          "worry",
+          "think",
+          "care"
+        ],
+        "correct": "sweat",
+        "explanation": "DON'T SWEAT IT (не хвилюйся, розм.): 'Don't SWEAT about it'. SWEAT IT = 'паритися, переживати' (сленг). Ще розмовні фрази заспокоєння: 'No worries!', 'No big deal!', 'Chill out!', 'Take it easy!', 'It's all good!', 'Don't stress!'. Нейтрально: 'Don't worry about it'. Формально: 'Please do not concern yourself'. В українській: 'Не парся!', 'Та забий!', 'Не заморочуйся!' (сленг) vs 'Не хвилюйся' (нейтр.) vs 'Прошу не турбуватися' (офіц.)."
+      },
+      {
+        "id": "ue_ifr11",
+        "question": "That exam was a piece of _____. I finished in 20 minutes.",
+        "translation": "(Той іспит був простий як двері. Я закінчив за 20 хвилин.)",
+        "options": [
+          "cake",
+          "pie",
+          "bread",
+          "cheese"
+        ],
+        "correct": "cake",
+        "explanation": "A PIECE OF CAKE (дуже легко): 'It was A PIECE OF CAKE'. Розмовні ідіоми для 'легко': A PIECE OF CAKE, A BREEZE, A DODDLE (BrE), A WALK IN THE PARK, CHILD'S PLAY, EASY-PEASY. Для 'складно': A NIGHTMARE, A PAIN, A REAL HEADACHE, NO PICNIC. 'The test was a breeze', 'Moving house was a nightmare'. В українській: 'Легко як двічі два', 'Раз плюнути', 'Простий як двері' — ідіоматичні вирази легкості."
+      },
+      {
+        "id": "ue_ifr12",
+        "question": "I'm _____ out with my friends tonight.",
+        "translation": "(Я гуляю з друзями сьогодні ввечері.)",
+        "options": [
+          "hanging",
+          "staying",
+          "being",
+          "going"
+        ],
+        "correct": "hanging",
+        "explanation": "HANG OUT WITH (проводити час, розм.): 'I'm HANGING OUT with friends'. HANG OUT = 'тусуватися, проводити час без конкретної мети'. 'Let's hang out this weekend', 'Where do you usually hang out?'. Ще: CHILL (розслаблятися): 'We just chilled at home'. GRAB (швидко зробити): 'Let's grab a coffee'. CATCH UP (наздогнати новини): 'We should catch up sometime'. В українській: 'Тусуватися', 'Гуляти' (розм.) vs 'Проводити час' (нейтр.) vs 'Спілкуватися' (офіц.)."
+      },
+      {
+        "id": "ue_ifr13",
+        "question": "\"Are you coming to the party?\" — \"_____!\"",
+        "translation": "(«Ти йдеш на вечірку?» — «Звісно!»)",
+        "options": [
+          "You bet",
+          "I confirm",
+          "Affirmative",
+          "Indeed"
+        ],
+        "correct": "You bet",
+        "explanation": "YOU BET! (звісно!, розм.): 'YOU BET!' = 'Ще б пак! Звісно!' Розмовні відповіді 'так': YOU BET!, SURE THING!, TOTALLY!, ABSOLUTELY!, DEFINITELY!, NO DOUBT! Нейтрально: YES, OF COURSE, CERTAINLY. Формально: INDEED, INDUBITABLY, MOST CERTAINLY. 'Want to come?' — 'You bet!' (ентузіазм). 'Is she smart?' — 'You bet she is!' (підкреслення). В українській: 'Ще б пак!', 'А то ж!', 'Звісно!' (розм.) vs 'Так, звичайно' (нейтр.)."
+      },
+      {
+        "id": "ue_ifr14",
+        "question": "I've got tons _____ work to do today.",
+        "translation": "(У мене купа роботи сьогодні.)",
+        "options": [
+          "of",
+          "to",
+          "for",
+          "with"
+        ],
+        "correct": "of",
+        "explanation": "TONS OF (багато, розм.): 'TONS OF work'. Розмовні кількісні вирази: TONS OF, LOADS OF, A BUNCH OF, HEAPS OF, MASSES OF — всі = 'багато/купа'. Нейтрально: A LOT OF, MANY, MUCH. Формально: A GREAT DEAL OF, A CONSIDERABLE AMOUNT OF, NUMEROUS. 'I have loads of homework', 'There were heaps of people', 'She has a bunch of friends'. В українській: 'Купа', 'Тонна', 'Маса' (розм.) vs 'Багато' (нейтр.) vs 'Значна кількість' (офіц.)."
+      },
+      {
+        "id": "ue_ifr15",
+        "question": "He totally _____ up the presentation. It was embarrassing.",
+        "translation": "(Він повністю завалив презентацію. Це було ганебно.)",
+        "options": [
+          "messed",
+          "cleaned",
+          "fixed",
+          "set"
+        ],
+        "correct": "messed",
+        "explanation": "MESS UP (зіпсувати, розм.): 'He MESSED UP the presentation'. MESS UP = розмовне 'зіпсувати, завалити'. Ще: SCREW UP (грубіше), BLOW IT (провалити), BOTCH (зробити погано), FLUNK (завалити іспит — AmE). Нейтрально: MAKE A MISTAKE, FAIL. Формально: ERR, COMMIT AN ERROR. 'I messed up the recipe', 'She screwed up the interview', 'He blew his chance'. В українській: 'Завалити', 'Запороти', 'Злажати' (розм.) vs 'Допустити помилку' (нейтр.)."
+      }
+    ]
+  },
+  {
+    "key": "academic_writing",
+    "name": "Academic Writing",
+    "description": "Академічне письмо",
+    "iconName": "book.closed.fill",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ue_aw1",
+        "question": "This paper _____ to examine the relationship between stress and sleep.",
+        "translation": "(Ця стаття має на меті дослідити зв'язок між стресом і сном.)",
+        "options": [
+          "aims",
+          "wants",
+          "tries",
+          "hopes"
+        ],
+        "correct": "aims",
+        "explanation": "THIS PAPER AIMS TO (академічна мета): 'This paper AIMS TO examine...' Стандартні фрази для введення мети дослідження: 'This paper/study aims to...', 'The purpose of this study is to...', 'This research seeks to...', 'The present investigation examines...'. НЕ 'This paper wants to' (антропоморфізм — стаття не може 'хотіти'). В академічному стилі автор часто 'ховається' за текстом. В українській: 'Ця стаття має на меті...', 'Метою даного дослідження є...'."
+      },
+      {
+        "id": "ue_aw2",
+        "question": "The findings are _____ with previous research in this field.",
+        "translation": "(Результати узгоджуються з попередніми дослідженнями в цій галузі.)",
+        "options": [
+          "consistent",
+          "same",
+          "equal",
+          "similar"
+        ],
+        "correct": "consistent",
+        "explanation": "CONSISTENT WITH (узгоджується з): 'The findings are CONSISTENT WITH previous research'. Академічні колокації для порівняння: CONSISTENT WITH (узгоджується), IN LINE WITH (відповідає), CONTRARY TO (на відміну від), AT ODDS WITH (суперечить), CORROBORATED BY (підтверджується). 'These results are in line with Smith (2020)' — стандартна фраза. НЕ 'the same as' (занадто нефармальне для статті). В українській: 'Узгоджуються з', 'Відповідають', 'Корелюють з' — академічний словник."
+      },
+      {
+        "id": "ue_aw3",
+        "question": "A _____ body of literature supports this hypothesis.",
+        "translation": "(Значний обсяг літератури підтримує цю гіпотезу.)",
+        "options": [
+          "substantial",
+          "big",
+          "huge",
+          "large"
+        ],
+        "correct": "substantial",
+        "explanation": "SUBSTANTIAL (значний — академічне): 'A SUBSTANTIAL body of literature'. Академічні прикметники кількості: SUBSTANTIAL, CONSIDERABLE, SIGNIFICANT, EXTENSIVE, NOTABLE. Розмовні: BIG, HUGE, MASSIVE — НЕ для наукових текстів. 'A considerable number of studies...', 'Extensive research has been conducted...', 'A significant proportion of participants...'. В українській: 'Значний обсяг', 'Суттєва кількість', 'Масштабне дослідження' — академічні еквіваленти."
+      },
+      {
+        "id": "ue_aw4",
+        "question": "The study was _____ out over a period of two years.",
+        "translation": "(Дослідження проводилося протягом двох років.)",
+        "options": [
+          "carried",
+          "done",
+          "made",
+          "taken"
+        ],
+        "correct": "carried",
+        "explanation": "CARRY OUT (провести — дослідження): 'The study was CARRIED OUT over two years'. Академічні колокації з дослідженнями: CARRY OUT/CONDUCT a study/experiment/survey, UNDERTAKE research, PERFORM an analysis, GATHER/COLLECT data, DRAW conclusions. НЕ 'do a study' (розмовно), НЕ 'make research' (помилкова колокація). 'A survey was conducted among 500 participants'. В українській: 'Провести дослідження' (нейтр.), 'Здійснити/реалізувати дослідження' (офіц.)."
+      },
+      {
+        "id": "ue_aw5",
+        "question": "It is worth _____ that this study has several limitations.",
+        "translation": "(Варто зазначити, що це дослідження має кілька обмежень.)",
+        "options": [
+          "noting",
+          "saying",
+          "telling",
+          "speaking"
+        ],
+        "correct": "noting",
+        "explanation": "IT IS WORTH NOTING THAT (варто зазначити): 'It is worth NOTING that...' Академічні вступні фрази: IT IS WORTH NOTING/MENTIONING THAT, IT SHOULD BE NOTED THAT, IT IS IMPORTANT TO NOTE THAT, NOTABLY, IT MUST BE ACKNOWLEDGED THAT. Для обмежень: 'This study has several limitations', 'One limitation of this research is...', 'The findings should be interpreted with caution'. В українській: 'Варто зазначити', 'Слід зауважити', 'Необхідно відмітити' — академічний вступ."
+      },
+      {
+        "id": "ue_aw6",
+        "question": "The data _____ analysed using statistical software.",
+        "translation": "(Дані були проаналізовані за допомогою статистичного програмного забезпечення.)",
+        "options": [
+          "were",
+          "was",
+          "is",
+          "are"
+        ],
+        "correct": "were",
+        "explanation": "DATA + WERE (множина в академічному стилі): 'The data WERE analysed'. В академічному стилі DATA = множина (від латинського datum — однина, data — множина). 'The data show/suggest/indicate...' (множина). В розмовній мові DATA = однина: 'The data is interesting'. Ще латинські множини: CRITERIA (criterion), PHENOMENA (phenomenon), MEDIA (medium), ANALYSES (analysis), HYPOTHESES (hypothesis). В українській: 'Дані' — завжди множина: 'Дані були проаналізовані'."
+      },
+      {
+        "id": "ue_aw7",
+        "question": "_____, the results suggest that early intervention is beneficial.",
+        "translation": "(Загальним висновком є те, що раннє втручання є корисним.)",
+        "options": [
+          "Overall",
+          "So",
+          "Well",
+          "Basically"
+        ],
+        "correct": "Overall",
+        "explanation": "OVERALL (загальний підсумок): 'OVERALL, the results suggest...' Академічні маркери підсумку: OVERALL, IN SUMMARY, TO SUMMARIZE, TAKEN TOGETHER, IN CONCLUSION, ON THE WHOLE, BY AND LARGE. НЕ 'So' (розмовно), НЕ 'Basically' (занадто спрощено). 'Taken together, these findings suggest...', 'In summary, the evidence supports...'. В українській: 'Загалом', 'Підсумовуючи', 'У сукупності' — академічні маркери. НЕ 'Ну, в принципі' (розмовне)."
+      },
+      {
+        "id": "ue_aw8",
+        "question": "Further research is _____ to confirm these findings.",
+        "translation": "(Подальші дослідження необхідні для підтвердження цих результатів.)",
+        "options": [
+          "warranted",
+          "needed",
+          "wanted",
+          "wished"
+        ],
+        "correct": "warranted",
+        "explanation": "WARRANTED (обґрунтовано необхідний): 'Further research is WARRANTED'. WARRANTED = формально-академічне 'необхідний, виправданий'. Стандартна завершальна фраза наукових статей: 'Further research is warranted/needed/required to...'. Ще: 'Future studies should explore...', 'Additional investigation is merited', 'More work is needed in this area'. WARRANTED сильніше за NEEDED — містить обґрунтування. В українській: 'Потребує подальшого дослідження', 'Є підстави для додаткових досліджень'."
+      },
+      {
+        "id": "ue_aw9",
+        "question": "The _____ findings of this study are as follows.",
+        "translation": "(Ключові результати цього дослідження є наступними.)",
+        "options": [
+          "key",
+          "main",
+          "big",
+          "top"
+        ],
+        "correct": "key",
+        "explanation": "KEY FINDINGS (ключові результати): 'The KEY FINDINGS are as follows'. Академічні прикметники для 'головний': KEY, MAIN, PRIMARY, PRINCIPAL, FUNDAMENTAL, CENTRAL, PIVOTAL. НЕ 'big' (розмовно), НЕ 'top' (журналістське). 'The primary objective', 'A fundamental question', 'The central argument', 'A pivotal study'. AS FOLLOWS + двокрапка — стандартний академічний ввід до списку. В українській: 'Ключові', 'Основні', 'Головні', 'Фундаментальні' — академічні прикметники."
+      },
+      {
+        "id": "ue_aw10",
+        "question": "This phenomenon has been _____ documented in the literature.",
+        "translation": "(Це явище добре задокументоване в літературі.)",
+        "options": [
+          "well",
+          "good",
+          "much",
+          "very"
+        ],
+        "correct": "well",
+        "explanation": "WELL-DOCUMENTED (добре задокументований): 'WELL documented in the literature'. Академічні складні прикметники: WELL-DOCUMENTED, WELL-ESTABLISHED, WELL-KNOWN, WIDELY-ACCEPTED, LONG-STANDING, FAR-REACHING, IN-DEPTH, GROUND-BREAKING. НЕ 'very documented' (помилка), НЕ 'good documented' (GOOD — не прислівник). WELL = прислівник від GOOD: 'She speaks well' (не 'good'). В українській: 'Добре задокументований', 'Широко визнаний', 'Ґрунтовний' — складні прикметники."
+      },
+      {
+        "id": "ue_aw11",
+        "question": "The participants _____ recruited through online advertisements.",
+        "translation": "(Учасники були набрані через онлайн-оголошення.)",
+        "options": [
+          "were",
+          "are",
+          "have",
+          "got"
+        ],
+        "correct": "were",
+        "explanation": "PASSIVE VOICE в методології: 'Participants WERE recruited'. В академічному стилі МЕТОДОЛОГІЯ майже завжди в PASSIVE: 'Data were collected', 'Interviews were conducted', 'Samples were analysed'. Чому? Фокус на ПРОЦЕСІ, не на ДОСЛІДНИКОВІ. Уникання 'I' або 'We': ❌ 'I recruited participants' → ✅ 'Participants were recruited'. Але сучасна тенденція — більше active voice: 'We recruited participants' (прийнятно). В українській: 'Учасники були набрані' — теж пасив."
+      },
+      {
+        "id": "ue_aw12",
+        "question": "Smith (2019) _____ that social media affects mental health.",
+        "translation": "(Сміт (2019) стверджує, що соціальні мережі впливають на психічне здоров'я.)",
+        "options": [
+          "argues",
+          "says",
+          "tells",
+          "talks"
+        ],
+        "correct": "argues",
+        "explanation": "REPORTING VERBS (дієслова цитування): 'Smith ARGUES that...' Академічні дієслова цитування: ARGUES (аргументує), CLAIMS (стверджує), SUGGESTS (припускає), MAINTAINS (наполягає), CONTENDS (стверджує з аргументами), PROPOSES (пропонує), ASSERTS (заявляє). НЕ 'says' (занадто нейтральне), НЕ 'tells' (потребує додатку). Вибір дієслова показує ВАШЕ ставлення: 'argues' (нейтральне), 'claims' (ви не зовсім згодні). В українській: 'Стверджує', 'Аргументує', 'Зазначає'."
+      },
+      {
+        "id": "ue_aw13",
+        "question": "_____ to the findings, there is a strong correlation between the two variables.",
+        "translation": "(Відповідно до результатів, між двома змінними існує сильна кореляція.)",
+        "options": [
+          "According",
+          "Due",
+          "Thanks",
+          "Owing"
+        ],
+        "correct": "According",
+        "explanation": "ACCORDING TO (відповідно до): 'ACCORDING TO the findings...' Академічні вирази для посилання на джерела: ACCORDING TO (відповідно до), AS REPORTED BY (як повідомляє), AS DEMONSTRATED BY (як демонструє), IN THE WORDS OF (словами). 'According to Smith (2019), the trend is growing'. Помилка: ❌ 'According to me' — ACCORDING TO = для зовнішніх джерел, для себе: 'In my opinion' або 'I believe'. В українській: 'Відповідно до', 'Згідно з', 'За даними' — академічні посилання."
+      },
+      {
+        "id": "ue_aw14",
+        "question": "The sample _____ of 200 undergraduate students.",
+        "translation": "(Вибірка складалася з 200 студентів бакалаврату.)",
+        "options": [
+          "consisted",
+          "had",
+          "made",
+          "included"
+        ],
+        "correct": "consisted",
+        "explanation": "CONSIST OF (складатися з): 'The sample CONSISTED OF 200 students'. Академічні дієслова опису вибірки: CONSIST OF (складатися з), COMPRISE (містити/включати), INCLUDE (включати), ENCOMPASS (охоплювати). Помилки: ❌ 'is comprised of' (спірне), ✅ 'comprises' або 'is composed of'. 'The study comprised three phases', 'The group included both men and women'. В українській: 'Складалася з', 'Включала', 'Охоплювала' — точні еквіваленти."
+      },
+      {
+        "id": "ue_aw15",
+        "question": "These results have important _____ for future educational policy.",
+        "translation": "(Ці результати мають важливе значення для майбутньої освітньої політики.)",
+        "options": [
+          "implications",
+          "meanings",
+          "reasons",
+          "effects"
+        ],
+        "correct": "implications",
+        "explanation": "IMPLICATIONS (наслідки/значення): 'Important IMPLICATIONS for future policy'. IMPLICATIONS = можливі наслідки або значення результатів. Стандартна секція наукової статті: 'Implications for practice/policy/theory'. IMPLICATIONS vs CONSEQUENCES: IMPLICATIONS = непрямі, потенційні наслідки, CONSEQUENCES = прямі, фактичні результати. 'The findings have theoretical implications', 'The practical implications of this study include...'. В українській: 'Мають значення для', 'Мають наслідки для', 'Впливають на' — академічні фрази результатів."
+      }
+    ]
+  },
+  {
+    "key": "expressing_opinions",
+    "name": "Expressing Opinions",
+    "description": "Висловлення думки (згода, незгода, аргументація)",
+    "iconName": "text.bubble.fill",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ue_eo1",
+        "question": "_____ my opinion, the government should invest more in education.",
+        "translation": "(На мою думку, уряд повинен більше інвестувати в освіту.)",
+        "options": [
+          "In",
+          "On",
+          "At",
+          "By"
+        ],
+        "correct": "In",
+        "explanation": "IN MY OPINION (на мою думку): 'IN MY OPINION, the government should...'. Фіксований вираз: IN + MY/YOUR/HIS + OPINION. НЕ 'On my opinion' (помилка!), НЕ 'To my opinion'. Синоніми: IN MY VIEW, FROM MY PERSPECTIVE, FROM MY POINT OF VIEW, AS I SEE IT, AS FAR AS I'M CONCERNED. Шкала формальності: 'I reckon' (розмовно) < 'I think' (нейтрально) < 'In my opinion' (формально) < 'It is my considered view that' (дуже формально). В українській: 'На мою думку', 'На мій погляд'."
+      },
+      {
+        "id": "ue_eo2",
+        "question": "I _____ agree more. That's exactly what I think.",
+        "translation": "(Я не міг би погодитися більше. Це саме те, що я думаю.)",
+        "options": [
+          "couldn't",
+          "can't",
+          "wouldn't",
+          "shouldn't"
+        ],
+        "correct": "couldn't",
+        "explanation": "I COULDN'T AGREE MORE (повна згода): 'I COULDN'T AGREE MORE' = 'Я повністю згоден'. Подвійне заперечення = ПІДСИЛЕННЯ (не можу погодитися більше = максимально згоден). Фрази повної згоди: COULDN'T AGREE MORE, EXACTLY!, ABSOLUTELY!, YOU'RE SPOT ON!, THAT'S SO TRUE! Часткова згода: 'I see your point, but...', 'That's true to some extent'. В українській: 'Повністю погоджуюся!', 'Абсолютно згоден!', 'Стовідсотково!' — немає аналогу з подвійним запереченням."
+      },
+      {
+        "id": "ue_eo3",
+        "question": "I'm afraid I have to _____ with you on this point.",
+        "translation": "(Боюся, я маю не погодитися з вами в цьому питанні.)",
+        "options": [
+          "disagree",
+          "agree",
+          "talk",
+          "argue"
+        ],
+        "correct": "disagree",
+        "explanation": "I'M AFRAID I HAVE TO DISAGREE (ввічлива незгода): 'I'M AFRAID I have to DISAGREE'. Шкала ввічливості незгоди: 'You're wrong!' (грубо) < 'I disagree' (прямо) < 'I'm not sure about that' (м'яко) < 'I see your point, but...' (дипломатично) < 'I'm afraid I have to disagree' (дуже ввічливо). I'M AFRAID = пом'якшувач (не 'боюся' буквально, а 'на жаль'). В українській: 'Боюся, мушу не погодитися' — калька, працює; 'На жаль, маю інший погляд' — природніше."
+      },
+      {
+        "id": "ue_eo4",
+        "question": "There's no _____ that climate change is a serious issue.",
+        "translation": "(Немає сумніву, що зміна клімату — це серйозна проблема.)",
+        "options": [
+          "doubt",
+          "way",
+          "reason",
+          "question"
+        ],
+        "correct": "doubt",
+        "explanation": "THERE'S NO DOUBT THAT (безсумнівно): 'THERE'S NO DOUBT THAT climate change is...'. Сильні маркери впевненості: THERE'S NO DOUBT, WITHOUT A DOUBT, IT'S BEYOND QUESTION, IT'S UNDENIABLE, THERE'S NO DENYING THAT. 'There's no denying that technology has changed our lives', 'It's undeniable that education is important'. Ці фрази використовуються в есе для СИЛЬНИХ тверджень. В українській: 'Безсумнівно, що...', 'Не викликає сумнівів', 'Безперечний факт' — еквівалентні конструкції."
+      },
+      {
+        "id": "ue_eo5",
+        "question": "That's a valid _____, but I think there are other factors to consider.",
+        "translation": "(Це слушний аргумент, але я думаю, є й інші фактори.)",
+        "options": [
+          "point",
+          "thing",
+          "idea",
+          "word"
+        ],
+        "correct": "point",
+        "explanation": "A VALID POINT (слушний аргумент): 'That's a valid POINT'. Дипломатичне визнання + контраргумент: формула 'Yes, but...'. Фрази: 'You make a valid point, however...', 'That's a fair point, but...', 'I take your point, nevertheless...', 'I see what you mean, but...'. POINT = аргумент, теза. 'What's your point?' (у чому суть?), 'You have a point there' (у тебе є рація). В українській: 'Це слушне зауваження', 'У цьому є рація', 'Згоден, але...'."
+      },
+      {
+        "id": "ue_eo6",
+        "question": "_____ I see it, there are two main problems with this plan.",
+        "translation": "(Як я це бачу, є дві основні проблеми з цим планом.)",
+        "options": [
+          "As",
+          "How",
+          "Like",
+          "When"
+        ],
+        "correct": "As",
+        "explanation": "AS I SEE IT (як я це бачу): 'AS I SEE IT, there are two problems'. Особисті маркери думки: AS I SEE IT, THE WAY I SEE IT, TO MY MIND, PERSONALLY, IF YOU ASK ME. 'The way I see it, we need more time'. 'If you ask me, it's a bad idea'. 'Personally, I think we should wait'. Ці маркери = 'це МОЯ думка, не факт'. В українській: 'Як на мене', 'Я вважаю', 'На мій погляд', 'Якщо моя думка цікавить' — маркери суб'єктивності."
+      },
+      {
+        "id": "ue_eo7",
+        "question": "On the one _____, it saves money; on the other, it reduces quality.",
+        "translation": "(З одного боку, це економить гроші; з іншого — зменшує якість.)",
+        "options": [
+          "hand",
+          "side",
+          "way",
+          "part"
+        ],
+        "correct": "hand",
+        "explanation": "ON THE ONE HAND...ON THE OTHER (HAND) — зважування аргументів: 'ON THE ONE HAND...ON THE OTHER'. Фіксована конструкція для БАЛАНСУ двох протилежних аргументів. Типова для есе: 'On the one hand, X is good because... On the other hand, X causes problems because...'. Ще: WHILE/WHEREAS (одне речення), HOWEVER (два речення). В українській: 'З одного боку...з іншого (боку)' — точний еквівалент. Обидві мови використовують 'рука' / 'hand' / 'бік'."
+      },
+      {
+        "id": "ue_eo8",
+        "question": "I strongly _____ that everyone should have access to free healthcare.",
+        "translation": "(Я переконаний, що кожен повинен мати доступ до безкоштовної медицини.)",
+        "options": [
+          "believe",
+          "think",
+          "know",
+          "say"
+        ],
+        "correct": "believe",
+        "explanation": "I STRONGLY BELIEVE (тверде переконання): 'I STRONGLY BELIEVE that...'. Шкала переконаності: 'I suppose' (слабко) < 'I think' (нейтрально) < 'I believe' (переконано) < 'I strongly believe' (дуже переконано) < 'I'm convinced / I firmly believe' (максимально). С Коллокації: FIRMLY believe, STRONGLY believe, DEEPLY believe, SINCERELY believe. В есе: 'I firmly believe that education is the key to success'. В українській: 'Я глибоко переконаний', 'Я твердо вірю' — інтенсифікатори + дієслова думки."
+      },
+      {
+        "id": "ue_eo9",
+        "question": "It goes without _____ that safety should be our top priority.",
+        "translation": "(Само собою зрозуміло, що безпека повинна бути нашим головним пріоритетом.)",
+        "options": [
+          "saying",
+          "speaking",
+          "telling",
+          "talking"
+        ],
+        "correct": "saying",
+        "explanation": "IT GOES WITHOUT SAYING (само собою зрозуміло): 'IT GOES WITHOUT SAYING that safety is priority'. Ідіома = 'це настільки очевидно, що й казати не потрібно'. Ще: NEEDLESS TO SAY (немає потреби говорити), OBVIOUSLY (очевидно), IT STANDS TO REASON (це логічно). 'Needless to say, she was disappointed', 'It stands to reason that prices will rise'. В українській: 'Само собою зрозуміло', 'Зрозуміло, що', 'Нема потреби казати' — еквівалентні ідіоми."
+      },
+      {
+        "id": "ue_eo10",
+        "question": "I'm entirely in _____ of the proposal.",
+        "translation": "(Я повністю підтримую цю пропозицію.)",
+        "options": [
+          "favour",
+          "side",
+          "support",
+          "agreement"
+        ],
+        "correct": "favour",
+        "explanation": "IN FAVOUR OF (на користь, за): 'I'm IN FAVOUR OF the proposal'. IN FAVOUR OF = 'за, на підтримку'. Протилежне: AGAINST / OPPOSED TO. 'I'm in favour of the plan' vs 'I'm against the plan'. В есе: 'There are strong arguments in favour of...', 'Those in favour argue that...'. Ще: ADVOCATE (відстоювати): 'I advocate for change'. CHAMPION (чемпіонити): 'She champions equal rights'. В українській: 'Я за', 'Підтримую', 'Виступаю на користь' — різні рівні формальності."
+      },
+      {
+        "id": "ue_eo11",
+        "question": "_____ of the matter is that we simply cannot afford it.",
+        "translation": "(Суть справи в тому, що ми просто не можемо собі цього дозволити.)",
+        "options": [
+          "The fact",
+          "A fact",
+          "One fact",
+          "This fact"
+        ],
+        "correct": "The fact",
+        "explanation": "THE FACT OF THE MATTER IS (суть справи): 'THE FACT OF THE MATTER IS that we can't afford it'. Емфатична фраза для підкреслення РЕАЛЬНОСТІ ситуації: 'може хтось не хоче чути, але ось правда'. Ще: THE TRUTH IS, THE REALITY IS, LET'S FACE IT, THE BOTTOM LINE IS. 'Let's face it, we made a mistake', 'The bottom line is we need more money'. В українській: 'Суть справи в тому', 'Правда в тому', 'Факт залишається фактом' — підкреслення реальності."
+      },
+      {
+        "id": "ue_eo12",
+        "question": "I see your point, _____ I don't entirely agree.",
+        "translation": "(Я розумію вашу думку, але не зовсім згоден.)",
+        "options": [
+          "but",
+          "so",
+          "because",
+          "and"
+        ],
+        "correct": "but",
+        "explanation": "I SEE YOUR POINT, BUT (дипломатична незгода): 'I SEE YOUR POINT, BUT I don't entirely agree'. Формула дипломатії: ВИЗНАННЯ + BUT + СВІЙ АРГУМЕНТ. Ще: 'You have a point there, but...', 'I understand where you're coming from, however...', 'That may be true, yet...', 'Fair enough, but...'. Це НЕ слабкість — це НАВИЧКА: спочатку показуєш, що ЧУЄШ співрозмовника, потім — своя позиція. В українській: 'Я розумію вас, але...', 'Згоден частково, проте...'."
+      },
+      {
+        "id": "ue_eo13",
+        "question": "Many people are of the _____ that technology has made life easier.",
+        "translation": "(Багато людей дотримуються думки, що технології полегшили життя.)",
+        "options": [
+          "opinion",
+          "idea",
+          "thought",
+          "mind"
+        ],
+        "correct": "opinion",
+        "explanation": "BE OF THE OPINION (дотримуватися думки): 'Many people are OF THE OPINION that...'. Формальний спосіб сказати 'думати': BE OF THE OPINION = чіткий, зважений, обдуманий погляд. Ще: HOLD THE VIEW THAT (дотримуватися погляду), TAKE THE VIEW THAT (мати погляд), SUBSCRIBE TO THE IDEA THAT (поділяти ідею). 'Many experts hold the view that...' В українській: 'Дотримуватися думки', 'Поділяти погляд', 'Бути переконаним' — формальні маркери."
+      },
+      {
+        "id": "ue_eo14",
+        "question": "For what it's _____, I think you made the right decision.",
+        "translation": "(Якщо моя думка щось значить, я думаю, ти прийняв правильне рішення.)",
+        "options": [
+          "worth",
+          "value",
+          "cost",
+          "price"
+        ],
+        "correct": "worth",
+        "explanation": "FOR WHAT IT'S WORTH (FWIW — якщо моя думка важлива): 'FOR WHAT IT'S WORTH, I think you made the right decision'. Пом'якшувальна фраза = 'можливо, це не так важливо, але ось моя думка'. Скромне, ввічливе введення думки. Ще: 'If I may say so...' (якщо дозволите), 'With all due respect...' (при всій повазі — часто перед незгодою!). В українській: 'Якщо моя думка щось значить', 'Якщо дозволите' — ввічливі маркери."
+      },
+      {
+        "id": "ue_eo15",
+        "question": "It _____ without saying that education should be accessible to all.",
+        "translation": "(Само собою зрозуміло, що освіта повинна бути доступною для всіх.)",
+        "options": [
+          "goes",
+          "runs",
+          "walks",
+          "comes"
+        ],
+        "correct": "goes",
+        "explanation": "IT GOES WITHOUT SAYING (само собою зрозуміло — повторення для закріплення): 'IT GOES without saying'. Підсумок маркерів думки категорії: INTRODUCING opinion: In my opinion, As I see it, Personally. STRONG: I firmly believe, I'm convinced, There's no doubt. AGREEING: I couldn't agree more, Absolutely, You're spot on. DISAGREEING: I'm afraid I disagree, I see your point but, With all due respect. В українській: підсумок — 'На мою думку', 'Повністю погоджуюсь', 'Не погоджуюсь' — всі мають відповідники."
+      }
+    ]
+  },
+  {
+    "key": "making_suggestions",
+    "name": "Making Suggestions",
+    "description": "Пропозиції та рекомендації",
+    "iconName": "lightbulb.fill",
+    "color": "#eab308",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ue_ms1",
+        "question": "Why _____ we go to the cinema tonight?",
+        "translation": "(Чому б нам не піти в кіно сьогодні ввечері?)",
+        "options": [
+          "don't",
+          "not",
+          "won't",
+          "can"
+        ],
+        "correct": "don't",
+        "explanation": "WHY DON'T WE (пропозиція): 'WHY DON'T WE go to the cinema?' = 'Чому б нам не піти?'. WHY DON'T WE/YOU — найпоширеніший спосіб зробити пропозицію. WHY DON'T WE = для СПІЛЬНИХ дій (включає мовця). WHY DON'T YOU = порада для ІНШОЇ людини. 'Why don't you take a break?' (порада), 'Why don't we eat out?' (пропозиція). В українській: 'Чому б (не)...' — ідентична структура. Запитання = м'яка пропозиція, не прямий наказ."
+      },
+      {
+        "id": "ue_ms2",
+        "question": "How _____ going for a walk in the park?",
+        "translation": "(Як щодо прогулянки в парку?)",
+        "options": [
+          "about",
+          "is",
+          "for",
+          "to"
+        ],
+        "correct": "about",
+        "explanation": "HOW ABOUT + V-ING (пропозиція): 'HOW ABOUT going for a walk?' = 'Як щодо прогулянки?'. HOW ABOUT / WHAT ABOUT + noun/V-ING — неформальні пропозиції. 'How about pizza tonight?', 'What about trying the new restaurant?'. Різниця: HOW ABOUT = пропозиція нового, WHAT ABOUT = нагадування про забуте: 'What about the homework?' (а як щодо домашки? — нагадування). В українській: 'Як щодо...?', 'А може...?' — питальні пропозиції."
+      },
+      {
+        "id": "ue_ms3",
+        "question": "I _____ that we postpone the meeting until next week.",
+        "translation": "(Я пропоную перенести зустріч на наступний тиждень.)",
+        "options": [
+          "suggest",
+          "suggest to",
+          "am suggest",
+          "suggesting"
+        ],
+        "correct": "suggest",
+        "explanation": "I SUGGEST + THAT + subjunctive: 'I SUGGEST that we postpone...' SUGGEST + THAT + підрядне без 'to'. ❌ 'I suggest to postpone' (помилка!). ✅ 'I suggest postponing' (+ gerund). ✅ 'I suggest that we postpone' (+ that clause). BrE subjunctive: 'I suggest he go' (не 'goes'). AmE: 'I suggest he should go'. Ще: RECOMMEND, PROPOSE, ADVISE — ті ж правила. В українській: 'Пропоную перенести' — інфінітив, простіше за англійську."
+      },
+      {
+        "id": "ue_ms4",
+        "question": "_____ we try a different approach?",
+        "translation": "(А давайте спробуємо інший підхід?)",
+        "options": [
+          "Shall",
+          "Will",
+          "Do",
+          "Are"
+        ],
+        "correct": "Shall",
+        "explanation": "SHALL WE (формальна пропозиція): 'SHALL WE try a different approach?' SHALL WE + V — ввічлива пропозиція спільної дії. BrE: 'Shall we dance?', 'Shall we leave?', 'Shall I help you?' (пропозиція своєї допомоги). В AmE SHALL рідше — використовують SHOULD WE або LET'S. 'Shall I carry your bag?' = 'Мені нести вашу сумку?' — пропозиція. В українській: 'Давайте спробуємо?' або 'Може, спробуємо?' — без SHALL, але з давайте."
+      },
+      {
+        "id": "ue_ms5",
+        "question": "If I _____ you, I'd talk to the manager directly.",
+        "translation": "(Якби я був на твоєму місці, я б поговорив з менеджером напряму.)",
+        "options": [
+          "were",
+          "am",
+          "was",
+          "be"
+        ],
+        "correct": "were",
+        "explanation": "IF I WERE YOU (порада через умовність): 'IF I WERE YOU, I'd talk to the manager'. Subjunctive WERE (не WAS) для нереальної ситуації: 'я не ти, але ЯКБИ був...'. Це Second Conditional для порад. Ще: 'If I were in your shoes/position...'. Розмовно 'was' теж зустрічається: 'If I was you...' — але WERE граматично правильніше. Ширше: 'If I were you, I'd...', 'If I were king, I'd...'. В українській: 'Якби я був на твоєму місці' — умовний з 'б/би'."
+      },
+      {
+        "id": "ue_ms6",
+        "question": "You _____ try the seafood restaurant on Main Street.",
+        "translation": "(Тобі варто спробувати рибний ресторан на Головній вулиці.)",
+        "options": [
+          "should",
+          "must",
+          "need",
+          "have"
+        ],
+        "correct": "should",
+        "explanation": "YOU SHOULD + V (порада): 'You SHOULD try the restaurant'. SHOULD = 'варто, слід' — найнейтральніший модальний для порад. Шкала сили порад: COULD (м'яка можливість) < SHOULD (рекомендація) < OUGHT TO (сильніша рекомендація) < HAD BETTER (попередження) < MUST (наполеглива). 'You could try...' (можеш), 'You should try...' (варто), 'You'd better hurry' (краще поспіши, бо...), 'You must see a doctor' (обов'язково). В українській: 'Тобі варто', 'Тобі слід', 'Тобі б краще'."
+      },
+      {
+        "id": "ue_ms7",
+        "question": "_____ going to that new Italian place for dinner?",
+        "translation": "(Давай підемо в ту нову італійську закладу на вечерю?)",
+        "options": [
+          "Let's try",
+          "Let's trying",
+          "Let trying",
+          "Lets try"
+        ],
+        "correct": "Let's try",
+        "explanation": "LET'S + V (пряма пропозиція): 'LET'S TRY going to that new place'. LET'S = Let us — найпряміша пропозиція спільної дії. LET'S + bare infinitive (без TO). Негативне: 'Let's not argue', НЕ 'Let's don't argue'. Для підтвердження: 'Let's go, shall we?'. AmE: 'Let's go, OK?'. Ще: 'Let's say...' (скажімо...), 'Let's see...' (подивимось...), 'Let's face it...' (визнаймо). В українській: 'Давай(те)' + дієслово: 'Давай підемо', 'Давайте спробуємо'."
+      },
+      {
+        "id": "ue_ms8",
+        "question": "Have you ever _____ of joining a gym?",
+        "translation": "(Ти не думав записатися в спортзал?)",
+        "options": [
+          "thought",
+          "think",
+          "thinking",
+          "thinks"
+        ],
+        "correct": "thought",
+        "explanation": "HAVE YOU THOUGHT OF (м'яка порада-запитання): 'HAVE YOU THOUGHT OF joining a gym?' = 'Ти не думав записатися?'. Питання замість прямої поради = максимально м'яко: не 'запишись в зал!', а 'а ти думав про це?'. Ще: 'Have you considered...?', 'Have you ever tried...?', 'Has it occurred to you that...?'. Ці фрази залишають СВОБОДУ ВИБОРУ. В українській: 'Ти не думав...?', 'А ти не пробував...?', 'Тобі не спадало на думку...?' — питальні поради."
+      },
+      {
+        "id": "ue_ms9",
+        "question": "It might be a good idea _____ start looking for a new job.",
+        "translation": "(Можливо, варто було б почати шукати нову роботу.)",
+        "options": [
+          "to",
+          "for",
+          "of",
+          "at"
+        ],
+        "correct": "to",
+        "explanation": "IT MIGHT BE A GOOD IDEA TO (м'яка рекомендація): 'IT MIGHT BE A GOOD IDEA TO start looking'. Максимально пом'якшена порада: MIGHT (невпевненість) + GOOD IDEA (позитивне слово) + TO (інфінітив мети). Ще: 'It would be advisable to...', 'It wouldn't hurt to...', 'It's worth considering...'. Шкала: 'You must...' (наказ) > 'You should...' (порада) > 'It might be a good idea to...' (делікатна). В українській: 'Можливо, варто б...' — умовне + 'варто' = делікатність."
+      },
+      {
+        "id": "ue_ms10",
+        "question": "You could always _____ for help if you need it.",
+        "translation": "(Ти завжди можеш попросити про допомогу, якщо потрібно.)",
+        "options": [
+          "ask",
+          "asked",
+          "asking",
+          "to ask"
+        ],
+        "correct": "ask",
+        "explanation": "YOU COULD ALWAYS (м'яка можливість): 'YOU COULD ALWAYS ASK for help'. COULD ALWAYS = 'завжди є можливість'. Ще: 'You could always try calling them', 'We could always postpone it'. ALWAYS тут ≠ 'завжди' (постійно), а = 'є така опція'. Це не наказ, а НАГАДУВАННЯ про можливість. Дуже неформально і дружньо. В українській: 'Ти завжди можеш попросити', 'Завжди є варіант...' — еквівалентна м'якість пропозиції."
+      },
+      {
+        "id": "ue_ms11",
+        "question": "I would _____ taking an umbrella just in case.",
+        "translation": "(Я б рекомендував взяти парасольку про всяк випадок.)",
+        "options": [
+          "recommend",
+          "recommend to",
+          "recommending",
+          "recommended"
+        ],
+        "correct": "recommend",
+        "explanation": "I WOULD RECOMMEND + V-ING (формальна рекомендація): 'I WOULD RECOMMEND taking an umbrella'. RECOMMEND + V-ING (не 'recommend to take'!). ✅ 'I recommend reading this book' ❌ 'I recommend to read'. Але: ✅ 'I recommend that you read' (that clause + subjunctive). WOULD пом'якшує: 'I recommend' (прямо) → 'I would recommend' (ввічливіше). JUST IN CASE = 'про всяк випадок'. В українській: 'Я б порекомендував' — умовне + дієслово. Порядок слів гнучкіший."
+      },
+      {
+        "id": "ue_ms12",
+        "question": "You _____ better hurry or you'll miss the train.",
+        "translation": "(Тобі краще поспішити, а то спізнишся на потяг.)",
+        "options": [
+          "had",
+          "would",
+          "should",
+          "could"
+        ],
+        "correct": "had",
+        "explanation": "YOU HAD BETTER (сильна порада/попередження): 'You HAD BETTER hurry'. HAD BETTER (= 'd better) = порада з ПОПЕРЕДЖЕННЯМ: якщо не зробиш — будуть наслідки. 'You'd better study or you'll fail', 'We'd better leave now'. HAD BETTER ≠ WOULD RATHER: 'I'd better go' (повинен піти) vs 'I'd rather stay' (волію залишитися). Негативне: 'You'd better not be late!' (краще не запізнюйся!). В українській: 'Тобі краще', 'Тобі б краще' — з відтінком попередження."
+      },
+      {
+        "id": "ue_ms13",
+        "question": "_____ I were you, I wouldn't accept that offer.",
+        "translation": "(На твоєму місці я б не приймав цю пропозицію.)",
+        "options": [
+          "If",
+          "When",
+          "Should",
+          "Would"
+        ],
+        "correct": "If",
+        "explanation": "IF I WERE YOU, I WOULDN'T (порада через негативний умовний): 'IF I WERE YOU, I WOULDN'T accept'. Негативна порада: не 'don't accept' (наказ), а 'I wouldn't accept' (м'яко — я б не став). Ще: 'I wouldn't do that if I were you', 'I don't think I'd go there', 'I'd think twice before accepting'. Формально: 'I would advise against accepting'. В українській: 'На твоєму місці я б не...' — умовний спосіб. Однаковий механізм ввічливості."
+      },
+      {
+        "id": "ue_ms14",
+        "question": "It's worth _____ into account all the possible risks.",
+        "translation": "(Варто взяти до уваги всі можливі ризики.)",
+        "options": [
+          "taking",
+          "take",
+          "to take",
+          "took"
+        ],
+        "correct": "taking",
+        "explanation": "IT'S WORTH + V-ING (варто — рекомендація): 'IT'S WORTH TAKING into account'. WORTH + V-ING (не infinitive!). ✅ 'It's worth trying' ❌ 'It's worth to try'. TAKE INTO ACCOUNT = 'взяти до уваги' (формальне). Синоніми: CONSIDER, BEAR IN MIND, KEEP IN MIND, TAKE INTO CONSIDERATION. 'It's worth bearing in mind that...', 'It's worth considering the alternatives'. В українській: 'Варто взяти до уваги', 'Варто врахувати' — 'варто' + інфінітив (простіше)."
+      },
+      {
+        "id": "ue_ms15",
+        "question": "Perhaps you _____ consider taking a few days off.",
+        "translation": "(Можливо, тобі варто подумати про кілька днів відпустки.)",
+        "options": [
+          "might",
+          "must",
+          "need",
+          "have"
+        ],
+        "correct": "might",
+        "explanation": "PERHAPS YOU MIGHT (найм'якша порада): 'PERHAPS you MIGHT consider taking time off'. Потрійне пом'якшення: PERHAPS (можливо) + MIGHT (модальне) + CONSIDER (не прямо). Це максимально делікатна порада — для ситуацій, де пряма порада може образити. Підсумок конструкцій порад від найпрямішої до найм'якшої: 'Do X!' > 'You should X' > 'Why don't you X?' > 'Have you thought of X?' > 'Perhaps you might consider X'. В українській: 'Може, варто б подумати про...' — теж багатошарова."
+      }
+    ]
   }
 ]
