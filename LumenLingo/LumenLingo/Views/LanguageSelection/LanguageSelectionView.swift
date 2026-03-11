@@ -263,6 +263,7 @@ struct LanguageSelectionView: View {
                                 )
                         }
                     }
+                    .buttonStyle(SiriGlowButtonStyle())
                 }
             }
             .onAppear {
@@ -971,5 +972,58 @@ private struct TargetCardView: View {
                 )
                 .shadow(color: .black.opacity(isDark ? 0.08 : 0.02), radius: 3, y: 1)
         }
+    }
+}
+
+// MARK: - Siri-style Glow Button Style
+
+/// Siri-style rainbow glow button — on press, a translucent iridescent
+/// ring blooms around the button with a soft scale. No grey highlight.
+private struct SiriGlowButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        let pressed = configuration.isPressed
+
+        configuration.label
+            .scaleEffect(pressed ? 0.9 : 1.0)
+            .background(
+                ZStack {
+                    // Rainbow ring glow — only visible on press
+                    Circle()
+                        .stroke(
+                            AngularGradient(
+                                colors: [
+                                    .red, .orange, .yellow, .green,
+                                    .cyan, .blue, .indigo, .purple, .pink, .red
+                                ],
+                                center: .center
+                            ),
+                            lineWidth: pressed ? 3 : 0
+                        )
+                        .frame(width: 44, height: 44)
+                        .blur(radius: pressed ? 6 : 0)
+                        .opacity(pressed ? 0.9 : 0)
+
+                    // Soft translucent bloom
+                    Circle()
+                        .fill(
+                            RadialGradient(
+                                colors: pressed
+                                    ? [.white.opacity(0.15), .purple.opacity(0.08), .clear]
+                                    : [.clear, .clear, .clear],
+                                center: .center,
+                                startRadius: 4,
+                                endRadius: 30
+                            )
+                        )
+                        .frame(width: 56, height: 56)
+                }
+            )
+            .animation(.easeOut(duration: 0.2), value: pressed)
+            .onChange(of: pressed) { _, isPressed in
+                if isPressed {
+                    let generator = UIImpactFeedbackGenerator(style: .soft)
+                    generator.impactOccurred(intensity: 0.4)
+                }
+            }
     }
 }
