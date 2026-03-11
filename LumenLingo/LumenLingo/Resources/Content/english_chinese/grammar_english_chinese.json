@@ -19678,5 +19678,1621 @@
         "explanation": "直播带货 (zhíbō dàihuò) means 'livestream commerce / selling products via livestream.' This is a massive industry in China pioneered by influencers like 李佳琦 (Lǐ Jiāqí) and 薇娅 (Wēiyǎ). E-commerce livestream vocabulary: 主播 (zhǔbō, livestreamer/host), 带货 (dàihuò, to promote and sell products), 直播间 (zhíbō jiān, livestream room), 秒杀 (miǎoshā, flash sale). This Chinese innovation has transformed global e-commerce and represents the convergence of entertainment, social media, and shopping."
       }
     ]
+  },
+  {
+    "key": "education_academic",
+    "name": "Education & Academic (教育学术)",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ec_edu1",
+        "question": "她在北京大学_____中文。",
+        "translation": "(She studies Chinese at Peking University.)",
+        "options": [
+          "学习",
+          "教",
+          "工作",
+          "住"
+        ],
+        "correct": "学习",
+        "explanation": "学习 (xuéxí) means 'to study/learn.' Education vocabulary: 大学 (dàxué, university), 学生 (xuéshēng, student), 老师 (lǎoshī, teacher), 课 (kè, class/lesson). 学 and 学习 are both used for 'study,' but 学习 is more formal and emphasizes the process. 在 + place + verb is the standard pattern for specifying where an action happens. Chinese universities are highly competitive — the 高考 (gāokǎo, college entrance exam) determines which university you attend."
+      },
+      {
+        "id": "ec_edu2",
+        "question": "这个学期你_____几门课？",
+        "translation": "(How many courses are you taking this semester?)",
+        "options": [
+          "选了",
+          "买了",
+          "卖了",
+          "做了"
+        ],
+        "correct": "选了",
+        "explanation": "选 (xuǎn) means 'to choose/select,' and 选课 means 'to select courses.' 门 (mén) is the measure word for courses and subjects. 学期 (xuéqī) means 'semester/term.' The 了 after 选 indicates the selection has been completed. Chinese students typically take 5-8 courses per semester. Course registration: 选课 (xuǎnkè), drop a course: 退课 (tuìkè), required course: 必修课 (bìxiūkè), elective: 选修课 (xuǎnxiūkè)."
+      },
+      {
+        "id": "ec_edu3",
+        "question": "明天的考试你_____好了吗？",
+        "translation": "(Are you prepared for tomorrow's exam?)",
+        "options": [
+          "准备",
+          "完成",
+          "开始",
+          "结束"
+        ],
+        "correct": "准备",
+        "explanation": "准备好了 (zhǔnbèi hǎo le) means 'prepared/ready.' The complement 好 indicates completion to a satisfactory state. Exam vocabulary: 考试 (kǎoshì, exam), 复习 (fùxí, review), 成绩 (chéngjì, grades/results), 及格 (jígé, pass), 不及格 (bù jígé, fail). The question particle 吗 at the end makes this a yes/no question. Preparing for exams: 我在复习 (I'm reviewing), 我还没准备好 (I'm not ready yet)."
+      },
+      {
+        "id": "ec_edu4",
+        "question": "请把作业_____给老师。",
+        "translation": "(Please hand in the homework to the teacher.)",
+        "options": [
+          "交",
+          "给",
+          "送",
+          "拿"
+        ],
+        "correct": "交",
+        "explanation": "交 (jiāo) means 'to submit/hand in.' 交作业 is the standard collocation for 'submit homework.' The 把 construction (把 + object + verb) is used here to specify what is being acted upon. Homework terms: 作业 (zuòyè, homework), 论文 (lùnwén, thesis/paper), 报告 (bàogào, report), 交 (submit), 迟交 (chíjiāo, late submission). 给 by itself means 'to give' but 交给 means 'to hand over to.' Always pair 把 with a specific result or direction."
+      },
+      {
+        "id": "ec_edu5",
+        "question": "图书馆里不能_____说话。",
+        "translation": "(You cannot speak loudly in the library.)",
+        "options": [
+          "大声",
+          "小声",
+          "快速",
+          "慢慢"
+        ],
+        "correct": "大声",
+        "explanation": "大声 (dàshēng) means 'loudly.' 大声说话 means 'to speak loudly.' Library rules: 图书馆 (túshūguǎn, library), 安静 (ānjìng, quiet), 借书 (jiè shū, borrow books), 还书 (huán shū, return books). The pattern 不能 + adverb + verb expresses prohibition. 里 after 图书馆 means 'inside.' Chinese libraries have strict quiet rules — even phone calls are discouraged. Useful phrases: 请保持安静 (please keep quiet), 禁止大声喧哗 (no loud noise)."
+      },
+      {
+        "id": "ec_edu6",
+        "question": "我想_____一个学位。",
+        "translation": "(I want to earn a degree.)",
+        "options": [
+          "拿到",
+          "买到",
+          "看到",
+          "找到"
+        ],
+        "correct": "拿到",
+        "explanation": "拿到 (nádào) means 'to obtain/get.' 拿到学位 means 'to earn/obtain a degree.' Degree types: 学士 (xuéshì, bachelor's), 硕士 (shuòshì, master's), 博士 (bóshì, doctorate). The complement 到 after 拿 indicates successful achievement. 想 expresses desire/intention. Education levels: 小学 (primary school), 中学 (middle school), 高中 (high school), 大学 (university), 研究生 (graduate student). Chinese academic system values 学历 (xuélì, educational background) highly."
+      },
+      {
+        "id": "ec_edu7",
+        "question": "老师让我们写一_____文章。",
+        "translation": "(The teacher asked us to write an article.)",
+        "options": [
+          "篇",
+          "个",
+          "本",
+          "张"
+        ],
+        "correct": "篇",
+        "explanation": "篇 (piān) is the measure word for articles, essays, and written works. 让 (ràng) means 'to let/have someone do something' — this is a pivotal sentence structure. Article-related terms: 文章 (wénzhāng, article), 作文 (zuòwén, composition), 论文 (lùnwén, thesis), 日记 (rìjì, diary). Other measure words for writing: 本 for books, 张 for sheets of paper, 封 for letters. Getting the measure word right is essential for natural Chinese."
+      },
+      {
+        "id": "ec_edu8",
+        "question": "这道题太难了，我_____不出来。",
+        "translation": "(This question is too hard, I can't figure it out.)",
+        "options": [
+          "做",
+          "写",
+          "看",
+          "说"
+        ],
+        "correct": "做",
+        "explanation": "做不出来 (zuò bu chūlái) means 'can't solve/work out.' This uses the potential complement structure: verb + 不 + complement. 做题 means 'to do/solve problems.' 太...了 expresses 'too...' The complement 出来 indicates producing a result. Math terms: 加 (jiā, add), 减 (jiǎn, subtract), 乘 (chéng, multiply), 除 (chú, divide), 等于 (děngyú, equals). Potential complements with 不: 看不懂 (can't understand by reading), 听不清 (can't hear clearly)."
+      },
+      {
+        "id": "ec_edu9",
+        "question": "毕业_____，你打算做什么？",
+        "translation": "(After graduation, what do you plan to do?)",
+        "options": [
+          "以后",
+          "以前",
+          "的时候",
+          "之间"
+        ],
+        "correct": "以后",
+        "explanation": "以后 (yǐhòu) means 'after/afterwards.' 毕业以后 means 'after graduating.' Time sequence words: 以前 (yǐqián, before), 以后 (after), 的时候 (de shíhou, when/during). 打算 (dǎsuàn) means 'to plan/intend.' 毕业 (bìyè) means 'to graduate.' Common responses: 找工作 (zhǎo gōngzuò, look for work), 继续学习 (jìxù xuéxí, continue studying), 出国留学 (chūguó liúxué, study abroad). 以后 always follows the event it refers to."
+      },
+      {
+        "id": "ec_edu10",
+        "question": "他的数学成绩_____有进步。",
+        "translation": "(His math grades have improved significantly.)",
+        "options": [
+          "明显",
+          "可能",
+          "一定",
+          "应该"
+        ],
+        "correct": "明显",
+        "explanation": "明显 (míngxiǎn) means 'obviously/significantly.' 明显有进步 means 'has obviously made progress.' Academic subjects: 数学 (shùxué, math), 语文 (yǔwén, Chinese), 英语 (yīngyǔ, English), 物理 (wùlǐ, physics), 化学 (huàxué, chemistry), 历史 (lìshǐ, history). 成绩 (chéngjì) means 'grades/results.' 进步 (jìnbù) means 'progress/improvement.' Adverbs like 明显 placed before the verb phrase modify the entire predicate."
+      },
+      {
+        "id": "ec_edu11",
+        "question": "上课的时候，请_____手机。",
+        "translation": "(During class, please turn off your phone.)",
+        "options": [
+          "关掉",
+          "打开",
+          "拿出",
+          "放下"
+        ],
+        "correct": "关掉",
+        "explanation": "关掉 (guān diào) means 'to turn off/switch off.' The complement 掉 indicates removal or elimination. 上课 (shàngkè) means 'to attend class.' Classroom phrases: 请安静 (please be quiet), 打开书 (open your books), 看黑板 (look at the blackboard), 做笔记 (take notes). The 的时候 phrase creates a temporal clause: 'when/during...' 关 alone means 'to close/turn off' but 关掉 emphasizes completely switching off. Opposite: 打开 (dǎkāi, turn on/open)."
+      },
+      {
+        "id": "ec_edu12",
+        "question": "我们学校有一个很大的_____。",
+        "translation": "(Our school has a very large playground.)",
+        "options": [
+          "操场",
+          "教室",
+          "食堂",
+          "宿舍"
+        ],
+        "correct": "操场",
+        "explanation": "操场 (cāochǎng) means 'playground/sports field.' School facilities: 教室 (jiàoshì, classroom), 食堂 (shítáng, canteen/cafeteria), 宿舍 (sùshè, dormitory), 图书馆 (library), 实验室 (shíyànshì, laboratory). 有 expresses existence/possession. 很大的 is an adjective phrase modifying the noun. Chinese schools typically have morning exercises (早操 zǎocāo) on the 操场. Many have afternoon eye exercises (眼保健操 yǎn bǎojiàn cāo) too."
+      },
+      {
+        "id": "ec_edu13",
+        "question": "这本教材_____多少钱？",
+        "translation": "(How much does this textbook cost?)",
+        "options": [
+          "卖",
+          "买",
+          "花",
+          "给"
+        ],
+        "correct": "卖",
+        "explanation": "卖 (mài) means 'to sell' — asking the sale price. 教材 (jiàocái) means 'textbook/teaching material.' Don't confuse 买 (mǎi, to buy, 3rd tone) with 卖 (mài, to sell, 4th tone) — they're a classic tone pair. 多少钱 (duōshao qián) is the standard 'how much?' question. Study materials: 课本 (kèběn, textbook), 笔记本 (bǐjìběn, notebook), 字典 (zìdiǎn, dictionary), 参考书 (cānkǎo shū, reference book). Tones matter greatly here — wrong tone changes meaning completely."
+      },
+      {
+        "id": "ec_edu14",
+        "question": "她是一位很_____的教授。",
+        "translation": "(She is a very famous professor.)",
+        "options": [
+          "有名",
+          "有钱",
+          "年轻",
+          "漂亮"
+        ],
+        "correct": "有名",
+        "explanation": "有名 (yǒumíng) means 'famous/well-known.' 位 (wèi) is a respectful measure word for people, especially professionals. Academic titles: 教授 (jiàoshòu, professor), 副教授 (fùjiàoshòu, associate professor), 讲师 (jiǎngshī, lecturer), 助教 (zhùjiào, teaching assistant). Using 位 instead of 个 shows respect. 很有名 is a common adjective phrase. Chinese academia values titles — always address professors as 教授 or by their surname + 老师."
+      },
+      {
+        "id": "ec_edu15",
+        "question": "我需要_____两本书。",
+        "translation": "(I need to borrow two books.)",
+        "options": [
+          "借",
+          "还",
+          "买",
+          "看"
+        ],
+        "correct": "借",
+        "explanation": "借 (jiè) means 'to borrow' or 'to lend' depending on context. 借书 means 'borrow books' at a library. Library phrases: 借书证 (jièshūzhèng, library card), 续借 (xùjiè, renew), 罚款 (fákuǎn, fine), 到期 (dàoqī, due date). 借 is interesting because it can mean both 'borrow' and 'lend': 我借你的书 (I borrow your book) vs. 我借你一本书 (I lend you a book). Context determines meaning. 还 (huán) means 'to return.' 两本 uses the measure word 本 for books."
+      }
+    ]
+  },
+  {
+    "key": "sports_hobbies",
+    "name": "Sports & Hobbies (运动爱好)",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ec_sph1",
+        "question": "他每天早上都去_____。",
+        "translation": "(He goes running every morning.)",
+        "options": [
+          "跑步",
+          "睡觉",
+          "吃饭",
+          "上班"
+        ],
+        "correct": "跑步",
+        "explanation": "跑步 (pǎobù) means 'to run/jog.' This is a verb-object compound: 跑 (run) + 步 (step). Common sports: 打篮球 (dǎ lánqiú, play basketball), 踢足球 (tī zúqiú, play soccer), 游泳 (yóuyǒng, swim), 打网球 (dǎ wǎngqiú, play tennis). Note the verb patterns: 打 for ball sports using hands, 踢 for kicking sports. 每天 means 'every day,' 早上 means 'morning.' 都 emphasizes that this happens without exception — a daily routine."
+      },
+      {
+        "id": "ec_sph2",
+        "question": "你喜欢_____什么运动？",
+        "translation": "(What sports do you like to play?)",
+        "options": [
+          "做",
+          "看",
+          "听",
+          "写"
+        ],
+        "correct": "做",
+        "explanation": "做运动 (zuò yùndòng) means 'to do sports/exercise.' 喜欢 (xǐhuan) means 'to like.' The question word 什么 (shénme, what) comes after the verb, unlike English where it comes first. Sport verbs vary: 做运动 (general exercise), 打球 (play ball), 跑步 (run), 游泳 (swim). Also 锻炼 (duànliàn) means 'to work out.' In Chinese, 运动 covers both sports and exercise. Popular in China: 乒乓球 (table tennis), 羽毛球 (badminton), 太极拳 (tai chi)."
+      },
+      {
+        "id": "ec_sph3",
+        "question": "这场比赛谁_____了？",
+        "translation": "(Who won this match?)",
+        "options": [
+          "赢",
+          "输",
+          "看",
+          "玩"
+        ],
+        "correct": "赢",
+        "explanation": "赢 (yíng) means 'to win.' 输 (shū) means 'to lose.' 比赛 (bǐsài) means 'match/competition.' 场 (chǎng) is the measure word for games and performances. Score vocabulary: 比分 (bǐfēn, score), 平局 (píngjú, tie/draw), 冠军 (guànjūn, champion), 决赛 (juésài, final). Chinese sports fans are passionate — especially about 乒乓球 (table tennis, China's 'national sport') and 篮球 (basketball). The 了 indicates the game is already finished."
+      },
+      {
+        "id": "ec_sph4",
+        "question": "我的爱好是_____。",
+        "translation": "(My hobby is painting.)",
+        "options": [
+          "画画",
+          "唱歌",
+          "跳舞",
+          "看书"
+        ],
+        "correct": "画画",
+        "explanation": "画画 (huà huà) means 'to paint/draw.' This is a verb-object reduplication that sounds natural in Chinese. Common hobbies: 唱歌 (chànggē, sing), 跳舞 (tiàowǔ, dance), 看书 (kàn shū, read), 弹琴 (tán qín, play instrument), 下棋 (xià qí, play chess), 摄影 (shèyǐng, photography). 爱好 (àihào) specifically means 'hobby/interest.' Chinese traditional arts: 书法 (shūfǎ, calligraphy), 国画 (guóhuà, Chinese painting), 剪纸 (jiǎnzhǐ, paper cutting)."
+      },
+      {
+        "id": "ec_sph5",
+        "question": "周末我们一起去_____吧。",
+        "translation": "(Let's go hiking together this weekend.)",
+        "options": [
+          "爬山",
+          "上班",
+          "开会",
+          "加班"
+        ],
+        "correct": "爬山",
+        "explanation": "爬山 (pá shān) means 'to hike/climb mountains.' 一起 (yìqǐ) means 'together.' 吧 (ba) at the end makes it a suggestion. Outdoor activities: 爬山 (hiking), 钓鱼 (diàoyú, fishing), 野餐 (yěcān, picnic), 露营 (lùyíng, camping), 骑自行车 (qí zìxíngchē, cycling). Weekend vocabulary: 周末 (zhōumò, weekend), 假期 (jiàqī, vacation), 休息日 (xiūxírì, day off). China has many famous mountains: 泰山 (Mount Tai), 黄山 (Yellow Mountain), 华山 (Mount Hua)."
+      },
+      {
+        "id": "ec_sph6",
+        "question": "他打篮球打得很_____。",
+        "translation": "(He plays basketball very well.)",
+        "options": [
+          "好",
+          "坏",
+          "慢",
+          "少"
+        ],
+        "correct": "好",
+        "explanation": "打得很好 means 'plays very well.' This uses the degree complement structure: verb + 得 + adverb + adjective. Note the verb is repeated: 打篮球打得好 — when an object is present, the verb must be repeated before 得. Alternative: 他篮球打得很好 (topic-comment structure). Sports skill expressions: 打得不错 (plays quite well), 踢得很棒 (kicks great), 跑得很快 (runs very fast). The 得 complement describes how well the action is performed."
+      },
+      {
+        "id": "ec_sph7",
+        "question": "游泳池今天_____人。",
+        "translation": "(The swimming pool has a lot of people today.)",
+        "options": [
+          "很多",
+          "没有",
+          "很少",
+          "几个"
+        ],
+        "correct": "很多",
+        "explanation": "很多人 means 'a lot of people.' 游泳池 (yóuyǒngchí) means 'swimming pool.' This sentence type uses adjective + noun without 的 when describing quantity. Pool/aquatic terms: 游泳 (swimming), 温泉 (wēnquán, hot spring), 海滩 (hǎitān, beach), 水上乐园 (shuǐshàng lèyuán, water park). Chinese swimming pools often require a health certificate (健康证 jiànkāng zhèng) and a swim cap (泳帽 yǒngmào). Note: no verb needed here — adjective + noun can form a complete predicate."
+      },
+      {
+        "id": "ec_sph8",
+        "question": "我想学_____弹吉他。",
+        "translation": "(I want to learn how to play guitar.)",
+        "options": [
+          "怎么",
+          "什么",
+          "哪里",
+          "为什么"
+        ],
+        "correct": "怎么",
+        "explanation": "怎么 (zěnme) means 'how.' 学怎么弹吉他 means 'learn how to play guitar.' Musical instruments: 吉他 (jítā, guitar), 钢琴 (gāngqín, piano), 小提琴 (xiǎotíqín, violin), 二胡 (èrhú, erhu), 琵琶 (pípá, pipa). Verb patterns for instruments: 弹 (tán) for string/keyboard instruments, 吹 (chuī) for wind instruments, 拉 (lā) for bowed instruments, 打 (dǎ) for percussion. 想学 expresses the desire to learn something new."
+      },
+      {
+        "id": "ec_sph9",
+        "question": "她每周去健身房_____三次。",
+        "translation": "(She goes to the gym to exercise three times a week.)",
+        "options": [
+          "锻炼",
+          "休息",
+          "吃饭",
+          "睡觉"
+        ],
+        "correct": "锻炼",
+        "explanation": "锻炼 (duànliàn) means 'to exercise/work out.' 健身房 (jiànshēnfáng) means 'gym/fitness center.' Frequency expression: 每周...三次 means 'three times per week.' Gym vocabulary: 哑铃 (yǎlíng, dumbbells), 跑步机 (pǎobùjī, treadmill), 瑜伽 (yújiā, yoga), 教练 (jiàoliàn, trainer/coach). Chinese fitness culture has grown rapidly — 健身 (jiànshēn, fitness) is increasingly popular. The frequency word 每周 (měi zhōu) means 'every week'; the number + 次 goes after the verb."
+      },
+      {
+        "id": "ec_sph10",
+        "question": "这部电影非常_____看。",
+        "translation": "(This movie is very worth watching.)",
+        "options": [
+          "值得",
+          "应该",
+          "必须",
+          "可以"
+        ],
+        "correct": "值得",
+        "explanation": "值得 (zhíde) means 'to be worth/worthwhile.' 值得看 means 'worth watching.' Entertainment vocabulary: 电影 (diànyǐng, movie), 电视剧 (diànshìjù, TV series), 综艺节目 (zōngyì jiémù, variety show), 纪录片 (jìlùpiàn, documentary). 部 (bù) is the measure word for movies and novels. Chinese cinema is booming — popular genres include 动作片 (dòngzuòpiàn, action), 喜剧 (xǐjù, comedy), 科幻片 (kēhuànpiàn, sci-fi). 非常 is a strong intensifier meaning 'extremely.'"
+      },
+      {
+        "id": "ec_sph11",
+        "question": "下棋的时候要_____想。",
+        "translation": "(When playing chess, you need to think carefully.)",
+        "options": [
+          "仔细",
+          "随便",
+          "快速",
+          "简单"
+        ],
+        "correct": "仔细",
+        "explanation": "仔细 (zǐxì) means 'carefully/attentively.' 下棋 (xià qí) means 'to play chess.' Traditional Chinese board games: 围棋 (wéiqí, Go), 中国象棋 (Zhōngguó xiàngqí, Chinese chess), 五子棋 (wǔzǐqí, Gomoku). The word 要 here means 'should/need to.' Adverbs of manner like 仔细 are placed before the verb. 围棋 (Go) originated in China over 4,000 years ago and remains hugely popular. Strategy games teach patience: 三思而后行 (think three times before acting)."
+      },
+      {
+        "id": "ec_sph12",
+        "question": "我们队_____了这场足球赛。",
+        "translation": "(Our team lost this soccer match.)",
+        "options": [
+          "输",
+          "赢",
+          "看",
+          "踢"
+        ],
+        "correct": "输",
+        "explanation": "输 (shū) means 'to lose.' 队 (duì) means 'team.' Soccer terms: 足球 (zúqiú, soccer/football), 进球 (jìnqiú, score a goal), 守门员 (shǒuményuán, goalkeeper), 裁判 (cáipàn, referee), 犯规 (fànguī, foul). 了 after 输 indicates the loss has already happened. 场 is the measure word for matches. Chinese soccer fans use many colorful expressions: 踢得漂亮 (played beautifully), 加油 (jiāyóu, go! / come on!). The 我们队 structure shows possession without 的."
+      },
+      {
+        "id": "ec_sph13",
+        "question": "你会不会_____自行车？",
+        "translation": "(Can you ride a bicycle?)",
+        "options": [
+          "骑",
+          "开",
+          "坐",
+          "走"
+        ],
+        "correct": "骑",
+        "explanation": "骑 (qí) means 'to ride' — used for bicycles, horses, and motorcycles. Transport verbs: 骑自行车 (ride a bike), 开车 (kāi chē, drive a car), 坐飞机 (zuò fēijī, take a plane), 走路 (zǒulù, walk). The pattern 会不会 is an affirmative-negative question asking about ability. Bicycle culture is huge in China — shared bikes (共享单车 gòngxiǎng dānchē) like Mobike and Hello Bike are everywhere. Don't confuse 骑 (ride astride) with 坐 (sit/ride in a vehicle) or 开 (operate/drive)."
+      },
+      {
+        "id": "ec_sph14",
+        "question": "他对收集邮票很感_____。",
+        "translation": "(He is very interested in collecting stamps.)",
+        "options": [
+          "兴趣",
+          "动",
+          "觉",
+          "谢"
+        ],
+        "correct": "兴趣",
+        "explanation": "感兴趣 (gǎn xìngqù) means 'to be interested in.' The structure is 对 + topic + 感兴趣. Collecting hobbies: 集邮 (jíyóu, stamp collecting), 收藏 (shōucáng, collecting), 古董 (gǔdǒng, antiques), 硬币 (yìngbì, coins). 对 introduces the object of interest. Don't split 感兴趣 incorrectly — 兴趣 is the core noun. Related expressions: 有兴趣 (yǒu xìngqù, have interest), 没兴趣 (méi xìngqù, no interest), 兴趣爱好 (xìngqù àihào, interests and hobbies). Chinese collectors value 古玩 (gǔwán, antiques) highly."
+      },
+      {
+        "id": "ec_sph15",
+        "question": "太极拳是中国的_____运动。",
+        "translation": "(Tai Chi is a traditional Chinese exercise.)",
+        "options": [
+          "传统",
+          "现代",
+          "西方",
+          "外国"
+        ],
+        "correct": "传统",
+        "explanation": "传统 (chuántǒng) means 'traditional.' 太极拳 (tàijíquán) is Tai Chi. Traditional Chinese sports: 太极拳, 武术 (wǔshù, martial arts), 气功 (qìgōng), 舞龙 (wǔlóng, dragon dance), 舞狮 (wǔshī, lion dance). 传统运动 means 'traditional sport/exercise.' Many elderly Chinese practice 太极拳 in parks every morning. Chinese martial arts (功夫 gōngfū / 武术 wǔshù) have influenced global culture through movies and sports. Modern Chinese also enjoy 广场舞 (guǎngchǎngwǔ, square dancing)."
+      }
+    ]
+  },
+  {
+    "key": "shopping_money",
+    "name": "Shopping & Money (购物消费)",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ec_shp1",
+        "question": "这件衣服_____多少钱？",
+        "translation": "(How much does this piece of clothing cost?)",
+        "options": [
+          "卖",
+          "买",
+          "花",
+          "给"
+        ],
+        "correct": "卖",
+        "explanation": "卖 (mài, 4th tone) means 'to sell.' 卖多少钱 asks 'sells for how much?' Shopping basics: 多少钱 (duōshao qián, how much?), 太贵了 (tài guì le, too expensive), 便宜一点 (piányi yìdiǎn, a bit cheaper). The measure word 件 (jiàn) is used for clothing items. Be careful: 买 (mǎi, 3rd tone) means 'to buy,' 卖 (mài, 4th tone) means 'to sell.' In bargaining situations: 可以便宜一点吗？(Can it be a bit cheaper?). Chinese markets expect haggling — start at 50-60% of the asking price."
+      },
+      {
+        "id": "ec_shp2",
+        "question": "我可以用手机_____吗？",
+        "translation": "(Can I pay by mobile phone?)",
+        "options": [
+          "支付",
+          "打电话",
+          "拍照",
+          "上网"
+        ],
+        "correct": "支付",
+        "explanation": "支付 (zhīfù) means 'to pay.' Mobile payment (移动支付 yídòng zhīfù) dominates China. Payment methods: 微信支付 (WeChat Pay), 支付宝 (Zhīfùbǎo, Alipay), 现金 (xiànjīn, cash), 信用卡 (xìnyòngkǎ, credit card), 扫码 (sǎomǎ, scan QR code). China is the world leader in mobile payments — many vendors don't even accept cash. 可以...吗 is a polite way to ask permission. Common phrases: 扫一下 (scan it please), 付款成功 (payment successful)."
+      },
+      {
+        "id": "ec_shp3",
+        "question": "这个商品正在_____。",
+        "translation": "(This product is on sale.)",
+        "options": [
+          "打折",
+          "涨价",
+          "缺货",
+          "下架"
+        ],
+        "correct": "打折",
+        "explanation": "打折 (dǎzhé) means 'to give a discount/on sale.' Chinese discounting: 打八折 means '20% off' (pay 80%), 打五折 means '50% off.' This is the opposite of English where you state the discount amount. Sale terms: 促销 (cùxiāo, promotion), 清仓 (qīngcāng, clearance), 买一送一 (mǎi yī sòng yī, buy one get one free), 限时优惠 (xiànshí yōuhuì, limited-time offer). Online shopping festivals: 双十一 (shuāng shíyī, Singles' Day Nov 11), 双十二, 618 (June 18)."
+      },
+      {
+        "id": "ec_shp4",
+        "question": "请给我一张_____。",
+        "translation": "(Please give me a receipt.)",
+        "options": [
+          "发票",
+          "名片",
+          "传单",
+          "地图"
+        ],
+        "correct": "发票",
+        "explanation": "发票 (fāpiào) means 'receipt/invoice.' In China, 发票 is an official tax receipt — different from a regular 收据 (shōujù, receipt). Shopping documents: 发票 (official invoice), 收据 (receipt), 保修卡 (bǎoxiūkǎ, warranty card), 退款 (tuìkuǎn, refund). Getting 发票 is important for reimbursement (报销 bàoxiāo). 请给我 (please give me) is a polite request pattern. Always ask for 发票 at restaurants if your company reimburses meals — businesses sometimes resist issuing them to avoid taxes."
+      },
+      {
+        "id": "ec_shp5",
+        "question": "这双鞋的_____太大了。",
+        "translation": "(These shoes are too big in size.)",
+        "options": [
+          "尺码",
+          "颜色",
+          "价格",
+          "品牌"
+        ],
+        "correct": "尺码",
+        "explanation": "尺码 (chǐmǎ) means 'size.' 双 (shuāng) is the measure word for pairs (shoes, socks, chopsticks). Shoe/clothing size terms: 大号 (dàhào, large), 中号 (zhōnghào, medium), 小号 (xiǎohào, small), 合适 (héshì, fits well), 试穿 (shì chuān, try on). Chinese sizing often uses Asian standards — different from US/European sizes. Useful phrases: 有没有小一号的？(Do you have one size smaller?), 可以试穿吗？(Can I try it on?). 太...了 pattern expresses 'too...'"
+      },
+      {
+        "id": "ec_shp6",
+        "question": "我想_____这件商品。",
+        "translation": "(I want to return this product.)",
+        "options": [
+          "退",
+          "买",
+          "卖",
+          "送"
+        ],
+        "correct": "退",
+        "explanation": "退 (tuì) means 'to return (merchandise).' 退货 (tuìhuò) means 'to return goods.' Related terms: 换货 (huànhuò, exchange), 退款 (tuìkuǎn, refund), 保修期 (bǎoxiūqī, warranty period), 质量问题 (zhìliàng wèntí, quality issue). When returning items: 我要退货 (I want to return this), 可以退吗？(Can I return it?). Online shopping returns: 七天无理由退货 (7-day no-reason returns) is standard on major platforms like 淘宝 (Taobao) and 京东 (JD.com). Keep the original packaging."
+      },
+      {
+        "id": "ec_shp7",
+        "question": "超市里的东西比商场_____。",
+        "translation": "(Things at the supermarket are cheaper than at the mall.)",
+        "options": [
+          "便宜",
+          "贵",
+          "好",
+          "多"
+        ],
+        "correct": "便宜",
+        "explanation": "便宜 (piányi) means 'cheap/inexpensive.' The comparison structure A 比 B + adjective is used here. Shopping venues: 超市 (chāoshì, supermarket), 商场 (shāngchǎng, shopping mall), 市场 (shìchǎng, market), 网店 (wǎngdiàn, online store), 便利店 (biànlìdiàn, convenience store). Price comparisons: A比B贵 (A is more expensive than B), A比B便宜 (A is cheaper than B). Chinese consumers are savvy — comparing prices across platforms (比价 bǐjià) is common practice."
+      },
+      {
+        "id": "ec_shp8",
+        "question": "你要_____还是塑料袋？",
+        "translation": "(Do you want a paper or plastic bag?)",
+        "options": [
+          "纸袋",
+          "钱包",
+          "书包",
+          "手机"
+        ],
+        "correct": "纸袋",
+        "explanation": "纸袋 (zhǐdài) means 'paper bag.' The A还是B pattern offers a choice between two options. Bag types: 塑料袋 (sùliàodài, plastic bag), 纸袋 (paper bag), 环保袋 (huánbǎo dài, eco-friendly bag), 购物袋 (gòuwù dài, shopping bag). Since 2020, China has restricted 塑料袋 — most stores charge for them. 还是 (háishì) is used in questions to present alternatives: A还是B? (A or B?). Don't confuse with 或者 (huòzhě), which is used in statements, not questions."
+      },
+      {
+        "id": "ec_shp9",
+        "question": "网上买东西可以_____到家。",
+        "translation": "(Things bought online can be delivered to your home.)",
+        "options": [
+          "送",
+          "寄",
+          "带",
+          "拿"
+        ],
+        "correct": "送",
+        "explanation": "送 (sòng) means 'to deliver/send.' 送到家 means 'deliver to home.' Online shopping terms: 下单 (xiàdān, place an order), 快递 (kuàidì, express delivery), 包邮 (bāoyóu, free shipping), 到付 (dàofù, cash on delivery), 签收 (qiānshōu, sign for receipt). China's delivery network is incredibly fast — same-day delivery (当日达 dāngrì dá) is common. Major platforms: 淘宝 (Taobao), 京东 (JD.com), 拼多多 (Pinduoduo). The complement 到 indicates reaching a destination."
+      },
+      {
+        "id": "ec_shp10",
+        "question": "这家店的服务态度非常_____。",
+        "translation": "(This store's service attitude is very good.)",
+        "options": [
+          "好",
+          "坏",
+          "差",
+          "慢"
+        ],
+        "correct": "好",
+        "explanation": "服务态度 (fúwù tàidu) means 'service attitude.' This is a key phrase in Chinese consumer culture. Customer service terms: 服务员 (fúwùyuán, waiter/staff), 客服 (kèfú, customer service), 投诉 (tóusù, complaint), 建议 (jiànyì, suggestion), 满意 (mǎnyì, satisfied). Chinese shoppers value 服务态度 highly — reviews often comment on it. The structure 这家店的 + noun + 非常好 is a standard evaluation pattern. 家 is the measure word for shops, restaurants, and companies."
+      },
+      {
+        "id": "ec_shp11",
+        "question": "我的信用卡_____了。",
+        "translation": "(My credit card has expired.)",
+        "options": [
+          "过期",
+          "丢失",
+          "冻结",
+          "激活"
+        ],
+        "correct": "过期",
+        "explanation": "过期 (guòqī) means 'expired/past the deadline.' Financial terms: 信用卡 (xìnyòngkǎ, credit card), 借记卡 (jièjìkǎ, debit card), 银行卡 (yínhángkǎ, bank card), 有效期 (yǒuxiàoqī, validity period), 账户 (zhànghù, account). 过期了 — the 了 indicates the state change has occurred. In China, 银联 (UnionPay) is the dominant card network. Mobile payments have largely replaced cards — even small street vendors accept 微信支付 (WeChat Pay). Always check 有效期 before traveling."
+      },
+      {
+        "id": "ec_shp12",
+        "question": "今天的菜价_____了。",
+        "translation": "(Vegetable prices went up today.)",
+        "options": [
+          "涨",
+          "降",
+          "跌",
+          "变"
+        ],
+        "correct": "涨",
+        "explanation": "涨 (zhǎng) means 'to rise/increase.' 涨价 (zhǎngjià) means 'price increase.' Price movement terms: 涨 (rise), 降 (jiàng, decrease), 涨价 (price goes up), 降价 (jiàngjià, price goes down), 物价 (wùjià, commodity prices). The 了 indicates the change has happened. Market vocabulary: 菜市场 (càishìchǎng, vegetable market), 早市 (zǎoshì, morning market), 新鲜 (xīnxiān, fresh). Chinese wet markets offer fresher produce than supermarkets and are a daily routine for many families."
+      },
+      {
+        "id": "ec_shp13",
+        "question": "请问这个有没有_____的？",
+        "translation": "(Excuse me, is there a cheaper one?)",
+        "options": [
+          "便宜点",
+          "贵一点",
+          "大一点",
+          "新一点"
+        ],
+        "correct": "便宜点",
+        "explanation": "便宜点的 means 'a cheaper one.' The pattern 有没有 + adjective + 点 + 的 asks if a certain type exists. Bargaining strategies: 太贵了 (too expensive), 便宜一点吧 (make it cheaper), 最低多少？(What's the lowest price?), 能不能打折？(Can you give a discount?). 请问 (qǐngwèn) is a polite opening. In traditional markets, bargaining is expected — start at about half the asking price. At malls and chain stores, prices are usually fixed (不讲价 bù jiǎngjià)."
+      },
+      {
+        "id": "ec_shp14",
+        "question": "他花了很多钱_____了一辆新车。",
+        "translation": "(He spent a lot of money and bought a new car.)",
+        "options": [
+          "买",
+          "卖",
+          "开",
+          "修"
+        ],
+        "correct": "买",
+        "explanation": "买 (mǎi, 3rd tone) means 'to buy.' 花钱 (huā qián) means 'to spend money.' 辆 (liàng) is the measure word for vehicles. Big purchases: 买房 (mǎi fáng, buy a house), 买车 (mǎi chē, buy a car). The structure 花了 + amount + verb shows how much was spent. 很多钱 means 'a lot of money.' Chinese car culture is booming — popular brands include both domestic (比亚迪 BYD, 吉利 Geely) and foreign. 了 appears twice: after 花 and after 买, both indicating completed actions."
+      },
+      {
+        "id": "ec_shp15",
+        "question": "结账的时候记得用_____。",
+        "translation": "(Remember to use your coupon when checking out.)",
+        "options": [
+          "优惠券",
+          "身份证",
+          "会员卡",
+          "银行卡"
+        ],
+        "correct": "优惠券",
+        "explanation": "优惠券 (yōuhuìquàn) means 'coupon/voucher.' 结账 (jiézhàng) means 'to check out/settle the bill.' Discount terms: 优惠券 (coupon), 红包 (hóngbāo, red envelope/digital cash gift), 积分 (jīfēn, points), 满减 (mǎnjiǎn, spend-X-get-Y-off). 记得 (jìde) means 'remember to.' Chinese e-commerce heavily uses coupons — 领券 (lǐngquàn, claim coupons) before buying is a habit. Major shopping events like 双十一 revolve around complex 优惠 (yōuhuì, discount) systems. 的时候 creates a temporal clause."
+      }
+    ]
+  },
+  {
+    "key": "housing_home",
+    "name": "Housing & Home (居住家居)",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ec_hh1",
+        "question": "我想_____一套公寓。",
+        "translation": "(I want to rent an apartment.)",
+        "options": [
+          "租",
+          "买",
+          "卖",
+          "盖"
+        ],
+        "correct": "租",
+        "explanation": "租 (zū) means 'to rent.' 套 (tào) is the measure word for apartments/suites. Housing types: 公寓 (gōngyù, apartment), 别墅 (biéshù, villa), 单间 (dānjiān, studio), 两居室 (liǎng jūshì, two-bedroom). Rental terms: 房租 (fángzū, rent), 押金 (yājīn, deposit), 合同 (hétóng, contract), 中介 (zhōngjiè, agent). The typical deposit structure in China: 押一付三 (one month deposit, three months rent upfront). Online rental platforms: 贝壳找房, 链家, 自如."
+      },
+      {
+        "id": "ec_hh2",
+        "question": "这个房间的_____很好。",
+        "translation": "(This room has very good lighting.)",
+        "options": [
+          "采光",
+          "面积",
+          "价格",
+          "位置"
+        ],
+        "correct": "采光",
+        "explanation": "采光 (cǎiguāng) means 'natural lighting.' When house-hunting in China, 采光 is a top priority. Room features: 面积 (miànjī, area/size), 朝向 (cháoxiàng, facing direction — south-facing is preferred), 楼层 (lóucéng, floor level), 装修 (zhuāngxiū, renovation/décor). Chinese buyers strongly prefer 朝南 (facing south) for better sunlight. The 的 connects the room to its quality. Describing rooms: 宽敞 (kuānchang, spacious), 明亮 (míngliàng, bright), 安静 (ānjìng, quiet)."
+      },
+      {
+        "id": "ec_hh3",
+        "question": "请帮我_____一下空调。",
+        "translation": "(Please help me turn on the air conditioning.)",
+        "options": [
+          "打开",
+          "关上",
+          "修理",
+          "安装"
+        ],
+        "correct": "打开",
+        "explanation": "打开 (dǎkāi) means 'to turn on/open.' Home appliances: 空调 (kōngtiáo, AC), 冰箱 (bīngxiāng, refrigerator), 洗衣机 (xǐyījī, washing machine), 电视 (diànshì, TV), 微波炉 (wēibōlú, microwave). The pattern 请帮我 + verb + 一下 is a polite request. Opposites: 打开 (turn on) vs. 关上 (guānshàng, turn off/close). 一下 softens the request, making it more polite. Chinese homes commonly have AC units in each room rather than central heating/cooling."
+      },
+      {
+        "id": "ec_hh4",
+        "question": "我家住在五_____。",
+        "translation": "(My home is on the fifth floor.)",
+        "options": [
+          "楼",
+          "层",
+          "号",
+          "间"
+        ],
+        "correct": "楼",
+        "explanation": "楼 (lóu) means 'floor/building.' 五楼 means 'fifth floor.' In Chinese buildings, first floor (一楼) is the ground floor. Floor/building terms: 电梯 (diàntī, elevator), 楼梯 (lóutī, stairs), 底楼 (dǐlóu, ground floor), 顶楼 (dǐnglóu, top floor). Note: 楼 and 层 both mean 'floor,' but 楼 is used in everyday speech (五楼) while 层 is used with buildings: 这栋楼有20层 (this building has 20 floors). Many Chinese buildings skip the 4th floor (四 sounds like 死, death)."
+      },
+      {
+        "id": "ec_hh5",
+        "question": "客厅里摆了一_____沙发。",
+        "translation": "(There is a sofa in the living room.)",
+        "options": [
+          "张",
+          "把",
+          "台",
+          "个"
+        ],
+        "correct": "张",
+        "explanation": "张 is the measure word for sofas and other items with a flat surface/spread-out shape. Living room items: 沙发 (shāfā, sofa), 茶几 (chájī, coffee table), 电视柜 (diànshìguì, TV stand), 窗帘 (chuānglián, curtains), 地毯 (dìtǎn, carpet). 客厅 (kètīng) means 'living room.' The verb 摆 (bǎi) means 'to arrange/place.' Other measure words for furniture: 把 for chairs, 张 for tables and beds, 台 for TVs and appliances. Getting measure words right is key to natural Chinese."
+      },
+      {
+        "id": "ec_hh6",
+        "question": "水管_____了，需要修理。",
+        "translation": "(The water pipe is leaking, it needs to be repaired.)",
+        "options": [
+          "漏",
+          "坏",
+          "堵",
+          "破"
+        ],
+        "correct": "漏",
+        "explanation": "漏 (lòu) means 'to leak.' Home repair terms: 水管 (shuǐguǎn, water pipe), 修理 (xiūlǐ, repair), 维修 (wéixiū, maintenance), 水龙头 (shuǐlóngtóu, faucet), 下水道 (xiàshuǐdào, drain). Related problems: 漏水 (leaking water), 堵了 (dǔ le, clogged), 坏了 (huài le, broken). 需要 (xūyào) means 'need.' In Chinese apartments, calling 物业 (wùyè, property management) is the standard response to maintenance issues. The 了 indicates the leak has started/is ongoing."
+      },
+      {
+        "id": "ec_hh7",
+        "question": "这个小区的_____很方便。",
+        "translation": "(This residential area has very convenient transportation.)",
+        "options": [
+          "交通",
+          "环境",
+          "物业",
+          "绿化"
+        ],
+        "correct": "交通",
+        "explanation": "交通 (jiāotōng) means 'transportation.' 小区 (xiǎoqū) means 'residential compound/community.' This is the standard housing unit in Chinese cities — gated communities with shared amenities. Community features: 交通 (transportation), 环境 (huánjìng, environment), 物业 (wùyè, property management), 绿化 (lǜhuà, greenery/landscaping), 停车场 (tíngchēchǎng, parking lot). When choosing a home: 交通方便 (convenient transport) is a top priority. 方便 (fāngbiàn) means 'convenient.'"
+      },
+      {
+        "id": "ec_hh8",
+        "question": "厨房里有一台新的_____。",
+        "translation": "(There is a new refrigerator in the kitchen.)",
+        "options": [
+          "冰箱",
+          "电视",
+          "电脑",
+          "空调"
+        ],
+        "correct": "冰箱",
+        "explanation": "冰箱 (bīngxiāng) means 'refrigerator.' 厨房 (chúfáng) means 'kitchen.' 台 (tái) is the measure word for machines and appliances. Kitchen items: 冰箱 (refrigerator), 微波炉 (microwave), 烤箱 (kǎoxiāng, oven), 抽油烟机 (chōu yóuyānjī, range hood), 煤气灶 (méiqìzào, gas stove). Chinese kitchens are typically smaller than Western ones and center around stir-frying — hence the importance of 抽油烟机. 有 expresses existence here: 'there is.' Chinese cooking involves 炒 (chǎo, stir-fry), 蒸 (zhēng, steam), 煮 (zhǔ, boil)."
+      },
+      {
+        "id": "ec_hh9",
+        "question": "每个月的_____是三千块。",
+        "translation": "(The monthly rent is 3,000 yuan.)",
+        "options": [
+          "房租",
+          "工资",
+          "水费",
+          "电费"
+        ],
+        "correct": "房租",
+        "explanation": "房租 (fángzū) means 'rent.' 块 (kuài) is the colloquial measure word for yuan (Chinese currency). Monthly expenses: 房租 (rent), 水费 (shuǐfèi, water bill), 电费 (diànfèi, electricity bill), 物业费 (wùyèfèi, property management fee), 网费 (wǎngfèi, internet bill). 每个月 means 'every month.' Money expressions: 块 is informal, 元 (yuán) is formal. Rent varies greatly: Beijing/Shanghai averages 5000-8000+ for a one-bedroom, while smaller cities might be 1000-2000. 是 links subject and predicate here."
+      },
+      {
+        "id": "ec_hh10",
+        "question": "搬家的时候需要很多_____。",
+        "translation": "(Moving requires a lot of boxes.)",
+        "options": [
+          "箱子",
+          "袋子",
+          "瓶子",
+          "盘子"
+        ],
+        "correct": "箱子",
+        "explanation": "箱子 (xiāngzi) means 'box/case.' 搬家 (bānjiā) means 'to move (house).' Moving terms: 搬家公司 (bānjiā gōngsī, moving company), 打包 (dǎbāo, pack up), 行李 (xíngli, luggage), 纸箱 (zhǐxiāng, cardboard box). 的时候 marks 'when/during.' Chinese superstitions around moving: choose an auspicious date (黄道吉日 huángdào jírì), bring rice and oil to the new home first (symbolizing abundance). 很多 means 'a lot of.' The pattern 需要 + noun states what is needed."
+      },
+      {
+        "id": "ec_hh11",
+        "question": "这套房子的_____方很好。",
+        "translation": "(This apartment faces a good direction.)",
+        "options": [
+          "朝",
+          "看",
+          "走",
+          "去"
+        ],
+        "correct": "朝",
+        "explanation": "朝向 (cháoxiàng) means 'facing direction.' Here 朝...方 means 'faces... direction.' In Chinese real estate, 朝南 (cháo nán, south-facing) is most desirable for sunlight, especially in northern China. Directions: 朝南 (south), 朝北 (north), 东西朝向 (east-west facing). Chinese architecture traditionally follows 坐北朝南 (sit north, face south) — the emperor's throne faced south. House hunting priorities: 朝向 > 楼层 > 面积. South-facing rooms get winter sun and avoid summer heat in many parts of China."
+      },
+      {
+        "id": "ec_hh12",
+        "question": "阳台上_____了很多花。",
+        "translation": "(Many flowers are planted on the balcony.)",
+        "options": [
+          "种",
+          "放",
+          "挂",
+          "摆"
+        ],
+        "correct": "种",
+        "explanation": "种 (zhòng, 4th tone) means 'to plant/grow.' Don't confuse with 种 (zhǒng, 3rd tone, kind/type). 阳台 (yángtái) means 'balcony.' Gardening terms: 种花 (zhòng huā, grow flowers), 浇水 (jiāo shuǐ, water plants), 花盆 (huāpén, flower pot), 盆栽 (pénzāi, potted plant). Chinese balconies serve multiple purposes: drying clothes (晾衣服 liàng yīfu), growing plants, storage. The 了 indicates the planting has been done. Popular balcony plants: 绿萝 (lǜluó, golden pothos), 吊兰 (diàolán, spider plant)."
+      },
+      {
+        "id": "ec_hh13",
+        "question": "隔壁邻居太_____了。",
+        "translation": "(The neighbors next door are too noisy.)",
+        "options": [
+          "吵",
+          "安静",
+          "客气",
+          "友好"
+        ],
+        "correct": "吵",
+        "explanation": "吵 (chǎo) means 'noisy.' 隔壁 (gébì) means 'next door.' 邻居 (línjū) means 'neighbor.' Community living terms: 吵闹 (chǎonào, noisy), 安静 (ānjìng, quiet), 投诉 (tóusù, complain), 噪音 (zàoyīn, noise). 太...了 (tài...le) expresses 'too...' — a complaint pattern. Chinese apartments have thin walls, making neighbor noise a common issue. Solutions: talk to neighbors directly, contact 物业 (property management), or install 隔音 (géyīn, soundproofing). Being a considerate neighbor matters: 远亲不如近邻 (a near neighbor is better than a distant relative)."
+      },
+      {
+        "id": "ec_hh14",
+        "question": "卫生间的灯_____了。",
+        "translation": "(The bathroom light is broken.)",
+        "options": [
+          "坏",
+          "亮",
+          "开",
+          "关"
+        ],
+        "correct": "坏",
+        "explanation": "坏了 (huài le) means 'broken/out of order.' 卫生间 (wèishēngjiān) means 'bathroom.' Bathroom items: 马桶 (mǎtǒng, toilet), 淋浴 (línyù, shower), 浴缸 (yùgāng, bathtub), 镜子 (jìngzi, mirror), 毛巾 (máojīn, towel). 灯 (dēng) means 'light/lamp.' The 了 with 坏 indicates a change of state — it was working, now it's broken. To report issues: ...坏了 is the standard pattern. Chinese bathrooms often have 蹲厕 (dūncè, squat toilets) in public places, though 坐厕 (zuòcè, sitting toilets) are standard in homes."
+      },
+      {
+        "id": "ec_hh15",
+        "question": "我们家最近_____了新房子。",
+        "translation": "(Our family recently renovated the new house.)",
+        "options": [
+          "装修",
+          "打扫",
+          "清理",
+          "搬进"
+        ],
+        "correct": "装修",
+        "explanation": "装修 (zhuāngxiū) means 'to renovate/decorate.' In China, new apartments are often sold as 毛坯房 (máopī fáng, bare/shell units) — buyers must do their own renovation. Renovation terms: 设计师 (shèjìshī, designer), 水电 (shuǐdiàn, plumbing & electrical), 瓷砖 (cízhuān, tiles), 地板 (dìbǎn, flooring), 墙纸 (qiángzhǐ, wallpaper). 最近 (zuìjìn) means 'recently.' 装修 is a major life event in China — families spend months planning and supervising. 精装修 (jīng zhuāngxiū) means 'fully furnished/finished.'"
+      }
+    ]
+  },
+  {
+    "key": "environment_nature",
+    "name": "Environment & Nature (环境自然)",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ec_env1",
+        "question": "保护_____是每个人的责任。",
+        "translation": "(Protecting the environment is everyone's responsibility.)",
+        "options": [
+          "环境",
+          "动物",
+          "森林",
+          "河流"
+        ],
+        "correct": "环境",
+        "explanation": "环境 (huánjìng) means 'environment.' 保护环境 is the standard phrase for 'protect the environment.' Environmental terms: 污染 (wūrǎn, pollution), 回收 (huíshōu, recycle), 节能 (jiénéng, energy-saving), 可持续 (kě chíxù, sustainable). 责任 (zérèn) means 'responsibility.' China's environmental awareness has grown rapidly — 垃圾分类 (lājī fēnlèi, waste sorting) became mandatory in many cities since 2019. The 是...的 structure emphasizes what something is."
+      },
+      {
+        "id": "ec_env2",
+        "question": "这条河的水_____很严重。",
+        "translation": "(The pollution of this river is very serious.)",
+        "options": [
+          "污染",
+          "清洁",
+          "美丽",
+          "干净"
+        ],
+        "correct": "污染",
+        "explanation": "污染 (wūrǎn) means 'pollution.' Types of pollution: 空气污染 (kōngqì wūrǎn, air pollution), 水污染 (shuǐ wūrǎn, water pollution), 噪音污染 (zàoyīn wūrǎn, noise pollution), 土壤污染 (tǔrǎng wūrǎn, soil pollution). 严重 (yánzhòng) means 'serious/severe.' 条 (tiáo) is the measure word for rivers. China has made major investments in river cleanup — the 长江 (Chángjiāng, Yangtze) and 黄河 (Huánghé, Yellow River) are national priorities. Environmental vocabulary is increasingly common in daily Chinese."
+      },
+      {
+        "id": "ec_env3",
+        "question": "我们应该_____用水。",
+        "translation": "(We should save water.)",
+        "options": [
+          "节约",
+          "浪费",
+          "停止",
+          "增加"
+        ],
+        "correct": "节约",
+        "explanation": "节约 (jiéyuē) means 'to save/conserve.' 节约用水 means 'save water.' Conservation phrases: 节约用电 (save electricity), 节约资源 (conserve resources), 减少浪费 (reduce waste), 低碳生活 (dītàn shēnghuó, low-carbon living). 应该 (yīnggāi) means 'should.' Water scarcity is a real issue in northern China — the 南水北调 (nán shuǐ běi diào, South-to-North Water Diversion) project moves water from south to north. Common slogans: 节约光荣，浪费可耻 (saving is glorious, wasting is shameful)."
+      },
+      {
+        "id": "ec_env4",
+        "question": "这个城市的空气_____越来越好了。",
+        "translation": "(This city's air quality has been getting better and better.)",
+        "options": [
+          "质量",
+          "温度",
+          "湿度",
+          "压力"
+        ],
+        "correct": "质量",
+        "explanation": "质量 (zhìliàng) means 'quality.' 空气质量 means 'air quality.' Air quality terms: PM2.5, 雾霾 (wùmái, smog), AQI (空气质量指数), 蓝天 (lántiān, blue sky), 口罩 (kǒuzhào, mask). 越来越 (yuè lái yuè) means 'more and more' — a progressive change pattern. China has significantly improved air quality in major cities through strict industrial controls and clean energy investments. Beijing's 蓝天保卫战 (Blue Sky Defense Campaign) has been notably successful. 了 marks the observed change."
+      },
+      {
+        "id": "ec_env5",
+        "question": "春天来了，树上_____了新叶子。",
+        "translation": "(Spring is here, new leaves have grown on the trees.)",
+        "options": [
+          "长",
+          "落",
+          "开",
+          "谢"
+        ],
+        "correct": "长",
+        "explanation": "长 (zhǎng) means 'to grow.' Seasons and nature: 春天 (chūntiān, spring), 夏天 (xiàtiān, summer), 秋天 (qiūtiān, autumn), 冬天 (dōngtiān, winter). Tree vocabulary: 叶子 (yèzi, leaves), 树枝 (shùzhī, branches), 树干 (shùgàn, trunk), 花 (huā, flowers). 落 (luò) means 'to fall' (autumn leaves), 开 (kāi) for flowers blooming, 谢 (xiè) for flowers wilting. The two-clause structure shows cause and result. Chinese poetry deeply connects nature and seasons — 春暖花开 (spring warmth brings flowers) is a beloved 成语."
+      },
+      {
+        "id": "ec_env6",
+        "question": "大熊猫是中国的_____动物。",
+        "translation": "(The giant panda is China's national treasure animal.)",
+        "options": [
+          "国宝",
+          "普通",
+          "野生",
+          "可怕"
+        ],
+        "correct": "国宝",
+        "explanation": "国宝 (guóbǎo) means 'national treasure.' 大熊猫 (dà xióngmāo) means 'giant panda.' Endangered animal terms: 保护动物 (bǎohù dòngwù, protected animal), 濒危 (bīnwēi, endangered), 栖息地 (qīxīdì, habitat), 繁殖 (fánzhí, breed/reproduce). The 是...的 structure identifies what something is. China's panda conservation is a success story — their status improved from 'endangered' to 'vulnerable' in 2016. Famous panda bases: 成都大熊猫繁育研究基地. Other Chinese national animals: 金丝猴 (golden monkey), 朱鹮 (crested ibis)."
+      },
+      {
+        "id": "ec_env7",
+        "question": "垃圾要按照_____分类。",
+        "translation": "(Garbage should be sorted by category.)",
+        "options": [
+          "类别",
+          "大小",
+          "颜色",
+          "重量"
+        ],
+        "correct": "类别",
+        "explanation": "类别 (lèibié) means 'category/type.' 垃圾分类 (lājī fēnlèi) means 'waste sorting.' Waste categories: 可回收垃圾 (kě huíshōu, recyclable), 有害垃圾 (yǒuhài, hazardous), 湿垃圾 (shī, wet/food waste), 干垃圾 (gān, dry/other). 按照 (ànzhào) means 'according to.' Shanghai started mandatory sorting in 2019, followed by other cities. Chinese waste bins are color-coded: blue (recyclable), red (hazardous), brown (wet), black (dry). Fines apply for incorrect sorting: 个人最高罚款200元."
+      },
+      {
+        "id": "ec_env8",
+        "question": "台风_____了很多房屋。",
+        "translation": "(The typhoon destroyed many houses.)",
+        "options": [
+          "摧毁",
+          "建造",
+          "修复",
+          "保护"
+        ],
+        "correct": "摧毁",
+        "explanation": "摧毁 (cuīhuǐ) means 'to destroy.' Natural disaster terms: 台风 (táifēng, typhoon), 地震 (dìzhèn, earthquake), 洪水 (hóngshuǐ, flood), 干旱 (gānhàn, drought), 暴风雪 (bàofēngxuě, blizzard). 房屋 (fángwū) means 'houses/buildings.' China experiences various natural disasters — typhoons hit the southeastern coast (台风季 typhoon season July-October). Earthquake-prone areas include Sichuan, Yunnan, and Xinjiang. Emergency terms: 救援 (jiùyuán, rescue), 撤离 (chèlí, evacuate), 预警 (yùjǐng, early warning)."
+      },
+      {
+        "id": "ec_env9",
+        "question": "这座山的_____非常壮观。",
+        "translation": "(The scenery of this mountain is very spectacular.)",
+        "options": [
+          "风景",
+          "天气",
+          "温度",
+          "面积"
+        ],
+        "correct": "风景",
+        "explanation": "风景 (fēngjǐng) means 'scenery/landscape.' 壮观 (zhuàngguān) means 'spectacular/grand.' 座 (zuò) is the measure word for mountains and buildings. Famous Chinese mountains: 泰山 (Tài Shān, Mount Tai), 黄山 (Huáng Shān, Yellow Mountain), 峨眉山 (É Méi Shān), 华山 (Huà Shān). Nature vocabulary: 瀑布 (pùbù, waterfall), 湖泊 (húpō, lake), 草原 (cǎoyuán, grassland), 沙漠 (shāmò, desert). Chinese geography is incredibly diverse — from the Himalayas to tropical Hainan. The word 景色 (jǐngsè) is a synonym of 风景."
+      },
+      {
+        "id": "ec_env10",
+        "question": "夏天这里经常_____。",
+        "translation": "(It often rains here in summer.)",
+        "options": [
+          "下雨",
+          "下雪",
+          "刮风",
+          "打雷"
+        ],
+        "correct": "下雨",
+        "explanation": "下雨 (xià yǔ) means 'to rain.' Weather vocabulary: 下雪 (xià xuě, snow), 刮风 (guā fēng, wind), 打雷 (dǎ léi, thunder), 闪电 (shǎndiàn, lightning), 晴天 (qíngtiān, sunny). 经常 (jīngcháng) means 'often/frequently.' Chinese weather patterns: 梅雨季 (méiyǔ jì, plum rain season) in the Yangtze River region (June-July). The pattern 下 + weather noun describes weather events. Useful phrases: 今天会下雨吗？(Will it rain today?), 带伞 (dài sǎn, bring an umbrella). Southern China is hot and rainy; northern China has distinct four seasons."
+      },
+      {
+        "id": "ec_env11",
+        "question": "太阳能是一种_____能源。",
+        "translation": "(Solar energy is a type of clean energy.)",
+        "options": [
+          "清洁",
+          "污染",
+          "传统",
+          "石化"
+        ],
+        "correct": "清洁",
+        "explanation": "清洁 (qīngjié) means 'clean.' 太阳能 (tàiyángnéng) means 'solar energy.' Renewable energy terms: 风能 (fēngnéng, wind energy), 水力发电 (shuǐlì fādiàn, hydropower), 核能 (hénéng, nuclear energy), 电动车 (diàndòngchē, electric vehicle). 一种 means 'a type of.' China leads globally in solar panel production and installation — also in wind turbines and electric vehicles. Green vocabulary: 绿色 (lǜsè, green/eco), 环保 (huánbǎo, environmental protection), 碳中和 (tàn zhōnghé, carbon neutrality)."
+      },
+      {
+        "id": "ec_env12",
+        "question": "森林里住着很多_____动物。",
+        "translation": "(Many wild animals live in the forest.)",
+        "options": [
+          "野生",
+          "家养",
+          "宠物",
+          "家禽"
+        ],
+        "correct": "野生",
+        "explanation": "野生 (yěshēng) means 'wild.' 森林 (sēnlín) means 'forest.' Animal categories: 野生动物 (wild animals), 家养动物 (jiāyǎng, domestic), 宠物 (chǒngwù, pets), 家禽 (jiāqín, poultry). 住着 — the progressive 着 means 'living/residing' (ongoing state). Chinese wildlife: 东北虎 (Siberian tiger), 雪豹 (snow leopard), 藏羚羊 (Tibetan antelope), 扬子鳄 (Chinese alligator). China has established many 自然保护区 (zìrán bǎohùqū, nature reserves). Wildlife trade ban: 2020年全面禁止野生动物交易."
+      },
+      {
+        "id": "ec_env13",
+        "question": "种树可以_____水土流失。",
+        "translation": "(Planting trees can prevent soil erosion.)",
+        "options": [
+          "防止",
+          "增加",
+          "促进",
+          "制造"
+        ],
+        "correct": "防止",
+        "explanation": "防止 (fángzhǐ) means 'to prevent.' 水土流失 (shuǐtǔ liúshī) means 'soil erosion.' Conservation terms: 种树 (zhòng shù, plant trees), 造林 (zàolín, afforestation), 草地 (cǎodì, grassland), 荒漠化 (huāngmòhuà, desertification). 可以 expresses capability here. China's 三北防护林 (Sanbei Shelterbelt, 'Great Green Wall') is the world's largest afforestation project, combating desertification since 1978. 植树节 (Zhíshù Jié, Tree Planting Day) is March 12 — a national awareness day."
+      },
+      {
+        "id": "ec_env14",
+        "question": "海洋里的塑料垃圾_____海洋生物。",
+        "translation": "(Plastic waste in the ocean harms marine life.)",
+        "options": [
+          "危害",
+          "帮助",
+          "保护",
+          "喂养"
+        ],
+        "correct": "危害",
+        "explanation": "危害 (wēihài) means 'to harm/endanger.' Ocean terms: 海洋 (hǎiyáng, ocean), 塑料 (sùliào, plastic), 海洋生物 (marine life), 珊瑚礁 (shānhújiāo, coral reef), 海龟 (hǎiguī, sea turtle). China is working to reduce 塑料污染 — banning single-use plastics in many contexts. Environmental action: 减塑 (jiǎn sù, reduce plastic), 限塑令 (xiàn sù lìng, plastic restriction order). 里的 connects the location (ocean) to the items (plastic waste). Chinese marine conservation efforts include 海洋保护区 (marine protected areas)."
+      },
+      {
+        "id": "ec_env15",
+        "question": "全球_____变暖是一个严重的问题。",
+        "translation": "(Global climate warming is a serious problem.)",
+        "options": [
+          "气候",
+          "经济",
+          "社会",
+          "人口"
+        ],
+        "correct": "气候",
+        "explanation": "气候 (qìhòu) means 'climate.' 全球气候变暖 means 'global climate warming.' Climate terms: 温室效应 (wēnshì xiàoyìng, greenhouse effect), 碳排放 (tàn páifàng, carbon emissions), 海平面上升 (hǎi píngmiàn shàngshēng, sea level rise), 极端天气 (jíduān tiānqì, extreme weather). 问题 (wèntí) means 'problem.' China pledged 碳达峰 (carbon peak by 2030) and 碳中和 (carbon neutrality by 2060). Understanding climate vocabulary is important as China plays a major role in global environmental discussions."
+      }
+    ]
+  },
+  {
+    "key": "media_communication",
+    "name": "Media & Communication (媒体传播)",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ec_mdc1",
+        "question": "这条新闻在网上_____很快。",
+        "translation": "(This news spread very fast on the internet.)",
+        "options": [
+          "传播",
+          "发布",
+          "删除",
+          "编辑"
+        ],
+        "correct": "传播",
+        "explanation": "传播 (chuánbō) means 'to spread/disseminate.' Media terms: 新闻 (xīnwén, news), 记者 (jìzhě, journalist), 报道 (bàodào, report), 头条 (tóutiáo, headline), 热搜 (rèsōu, trending search). Chinese social media: 微信 (WeChat), 微博 (Weibo), 抖音 (TikTok/Douyin), 小红书 (Xiaohongshu/RED). 条 is the measure word for news items. 传播 vs 发布: 发布 means 'to publish/release' (original posting), while 传播 means 'to spread' (sharing further). Online virality: 刷屏 (shuāpíng, flooding the screen)."
+      },
+      {
+        "id": "ec_mdc2",
+        "question": "请_____我你的微信号。",
+        "translation": "(Please tell me your WeChat ID.)",
+        "options": [
+          "告诉",
+          "问",
+          "看",
+          "听"
+        ],
+        "correct": "告诉",
+        "explanation": "告诉 (gàosu) means 'to tell.' The double-object structure: 告诉 + person + thing. Communication terms: 微信号 (wēixìn hào, WeChat ID), 手机号 (shǒujī hào, phone number), 邮箱 (yóuxiāng, email), 二维码 (èrwéimǎ, QR code). WeChat (微信) is essential in China — it combines messaging, social media, payments, and more. 加微信 (jiā wēixìn) means 'add on WeChat.' This is the standard way Chinese people exchange contact info: 扫一下吧 (scan [my QR code])."
+      },
+      {
+        "id": "ec_mdc3",
+        "question": "他在社交媒体上_____了一张照片。",
+        "translation": "(He posted a photo on social media.)",
+        "options": [
+          "发",
+          "收",
+          "删",
+          "看"
+        ],
+        "correct": "发",
+        "explanation": "发 (fā) means 'to post/send.' Social media actions: 发朋友圈 (fā péngyouquān, post on WeChat Moments), 点赞 (diǎnzàn, like), 评论 (pínglùn, comment), 转发 (zhuǎnfā, repost/share), 关注 (guānzhù, follow). 社交媒体 (shèjiāo méitǐ) means 'social media.' 张 is the measure word for photos. Chinese social media etiquette: don't post others' photos without permission, be careful about political topics. 朋友圈 (Moments) is WeChat's timeline feature — posting: 发朋友圈, reading: 刷朋友圈 (shuā péngyouquān)."
+      },
+      {
+        "id": "ec_mdc4",
+        "question": "这个视频的_____量超过了一百万。",
+        "translation": "(This video's view count exceeded one million.)",
+        "options": [
+          "播放",
+          "下载",
+          "收藏",
+          "分享"
+        ],
+        "correct": "播放",
+        "explanation": "播放量 (bōfàng liàng) means 'view count/play count.' Video platform terms: 播放 (play), 点击 (diǎnjī, click), 订阅 (dìngyuè, subscribe), 弹幕 (dànmù, bullet comments — real-time scrolling comments unique to Chinese video platforms), 直播 (zhíbō, livestream). 超过 (chāoguò) means 'to exceed.' 一百万 = 1,000,000. Chinese video platforms: 哔哩哔哩 (Bilibili), 优酷 (Youku), 腾讯视频 (Tencent Video). 弹幕 is a distinctive Chinese innovation where comments scroll across the video in real-time."
+      },
+      {
+        "id": "ec_mdc5",
+        "question": "他是一个有名的网络_____。",
+        "translation": "(He is a famous internet influencer.)",
+        "options": [
+          "红人",
+          "黑客",
+          "工程师",
+          "设计师"
+        ],
+        "correct": "红人",
+        "explanation": "网络红人 (wǎngluò hóngrén) or 网红 (wǎnghóng) means 'internet celebrity/influencer.' Digital culture terms: 粉丝 (fěnsī, fans — from English 'fans'), 大V (dà V, verified influencer on Weibo), KOL (Key Opinion Leader), 主播 (zhǔbō, streamer/anchor), 带货 (dàihuò, product promotion by influencers). China's influencer economy is massive — top 网红 can earn millions through 直播带货 (livestream selling). 有名 (yǒumíng) means 'famous.' The 的 connects the adjective to the noun."
+      },
+      {
+        "id": "ec_mdc6",
+        "question": "你看了今天的_____了吗？",
+        "translation": "(Did you read today's newspaper?)",
+        "options": [
+          "报纸",
+          "杂志",
+          "小说",
+          "教材"
+        ],
+        "correct": "报纸",
+        "explanation": "报纸 (bàozhǐ) means 'newspaper.' Traditional media: 报纸 (newspaper), 杂志 (zázhì, magazine), 广播 (guǎngbō, radio), 电视 (diànshì, television). 看报纸 means 'read the newspaper' — 看 is used for reading newspapers. While print media has declined, major papers like 人民日报 (People's Daily), 环球时报 (Global Times) remain influential online. 了吗 at the end asks about a completed action. Chinese media landscape: traditional + digital coexist, with digital dominant among younger generations."
+      },
+      {
+        "id": "ec_mdc7",
+        "question": "这部纪录片_____得非常好。",
+        "translation": "(This documentary was filmed very well.)",
+        "options": [
+          "拍",
+          "写",
+          "画",
+          "唱"
+        ],
+        "correct": "拍",
+        "explanation": "拍 (pāi) means 'to film/shoot.' Film terms: 纪录片 (jìlùpiàn, documentary), 电影 (diànyǐng, movie), 导演 (dǎoyǎn, director), 演员 (yǎnyuán, actor), 编剧 (biānjù, screenwriter). The degree complement 得非常好 describes how well the filming was done. 部 (bù) is the measure word for movies and documentaries. Chinese cinema has grown into the world's second-largest market. Notable directors: 张艺谋 (Zhang Yimou), 陈凯歌 (Chen Kaige), 贾樟柯 (Jia Zhangke)."
+      },
+      {
+        "id": "ec_mdc8",
+        "question": "公司需要做一个_____活动。",
+        "translation": "(The company needs to do a promotional event.)",
+        "options": [
+          "宣传",
+          "学习",
+          "体育",
+          "慈善"
+        ],
+        "correct": "宣传",
+        "explanation": "宣传 (xuānchuán) means 'to promote/publicize.' Marketing and PR terms: 宣传活动 (promotional event), 广告 (guǎnggào, advertisement), 品牌 (pǐnpái, brand), 营销 (yíngxiāo, marketing), 策划 (cèhuà, planning/strategize). 公司 (gōngsī) means 'company.' 需要做 means 'needs to do.' Chinese marketing heavily uses digital channels — WeChat Moments ads, Douyin campaigns, KOL partnerships. The measure word 个 is used for 活动. Chinese New Year is the biggest promotional season."
+      },
+      {
+        "id": "ec_mdc9",
+        "question": "他在演讲中_____了很多例子。",
+        "translation": "(He cited many examples in the speech.)",
+        "options": [
+          "举",
+          "说",
+          "写",
+          "做"
+        ],
+        "correct": "举",
+        "explanation": "举例子 (jǔ lìzi) means 'to give/cite examples.' Public speaking terms: 演讲 (yǎnjiǎng, speech/lecture), 发言 (fāyán, to speak/address), 讨论 (tǎolùn, discuss), 辩论 (biànlùn, debate), 总结 (zǒngjié, summarize). 举 literally means 'to raise/lift' — 举例 means 'raise examples.' The 在...中 pattern means 'in/during.' Chinese speech conventions: start formally, use stories and examples, end with a call to action. Connecting phrases: 首先 (first), 其次 (secondly), 最后 (finally)."
+      },
+      {
+        "id": "ec_mdc10",
+        "question": "这个消息是_____的。",
+        "translation": "(This news is fake.)",
+        "options": [
+          "假",
+          "真",
+          "新",
+          "旧"
+        ],
+        "correct": "假",
+        "explanation": "假 (jiǎ) means 'fake/false.' 假消息 or 假新闻 means 'fake news.' Media literacy terms: 谣言 (yáoyán, rumor), 辟谣 (pìyáo, debunk rumors), 事实 (shìshí, facts), 可靠 (kěkào, reliable), 官方 (guānfāng, official). 是...的 emphasizes the quality. China actively combats online misinformation — 辟谣 platforms exist on major social media. 网络谣言 (wǎngluò yáoyán, online rumors) can have legal consequences. Checking 官方消息 (official information) is always recommended."
+      },
+      {
+        "id": "ec_mdc11",
+        "question": "记者正在_____现场报道。",
+        "translation": "(The reporter is doing a live on-scene report.)",
+        "options": [
+          "进行",
+          "结束",
+          "准备",
+          "取消"
+        ],
+        "correct": "进行",
+        "explanation": "进行 (jìnxíng) means 'to carry out/conduct.' 进行现场报道 means 'conducting on-scene reporting.' Journalism terms: 记者 (jìzhě, reporter), 现场 (xiànchǎng, scene/on-site), 采访 (cǎifǎng, interview), 直播 (zhíbō, live broadcast), 特派记者 (tèpài jìzhě, correspondent). 正在 indicates ongoing action (progressive aspect). Chinese news broadcasts: 新闻联播 (Xīnwén Liánbō, CCTV News) is the most-watched news program. 进行 is a formal verb — used in written/broadcast Chinese more than casual speech."
+      },
+      {
+        "id": "ec_mdc12",
+        "question": "你有没有_____过这个播客？",
+        "translation": "(Have you ever listened to this podcast?)",
+        "options": [
+          "听",
+          "看",
+          "读",
+          "写"
+        ],
+        "correct": "听",
+        "explanation": "听 (tīng) means 'to listen.' 播客 (bōkè) means 'podcast.' Audio content: 播客 (podcast), 有声书 (yǒushēng shū, audiobook), 音乐 (yīnyuè, music), 电台 (diàntái, radio station). The 过 particle asks about life experience: 'have you ever...?' Chinese podcast platforms: 喜马拉雅 (Ximalaya), 小宇宙 (Cosmos), Apple Podcasts. Podcasts are growing in China — popular topics include 知识付费 (zhīshí fùfèi, paid knowledge), storytelling, and language learning. 有没有 + verb + 过 is the standard experience question."
+      },
+      {
+        "id": "ec_mdc13",
+        "question": "网上的_____不一定都是真的。",
+        "translation": "(Online information is not necessarily all true.)",
+        "options": [
+          "信息",
+          "商品",
+          "视频",
+          "音乐"
+        ],
+        "correct": "信息",
+        "explanation": "信息 (xìnxī) means 'information.' 不一定 (bù yīdìng) means 'not necessarily.' Digital literacy: 辨别真假 (biànbié zhēnjiǎ, distinguish true from false), 独立思考 (dúlì sīkǎo, think independently), 核实 (héshí, verify), 来源 (láiyuán, source). The structure 不一定都是真的 uses double qualification: 不一定 (not necessarily) + 都 (all). Chinese internet users number over 1 billion — managing information quality is crucial. Common saying: 耳听为虚，眼见为实 (hearing is doubting, seeing is believing)."
+      },
+      {
+        "id": "ec_mdc14",
+        "question": "请把音量_____一点。",
+        "translation": "(Please turn the volume down a bit.)",
+        "options": [
+          "调低",
+          "调高",
+          "打开",
+          "关掉"
+        ],
+        "correct": "调低",
+        "explanation": "调低 (tiáo dī) means 'to turn down/lower.' Audio terms: 音量 (yīnliàng, volume), 声音 (shēngyīn, sound), 话筒 (huàtǒng, microphone), 耳机 (ěrjī, earphones/headphones), 音响 (yīnxiǎng, speakers). 把 construction moves the object before the verb for emphasis. Opposite: 调高 (turn up). 一点 softens the request. Media device operations: 暂停 (zàntíng, pause), 快进 (kuàijìn, fast forward), 倒退 (dàotuì, rewind), 全屏 (quánpíng, full screen). This polite request pattern is very common in daily life."
+      },
+      {
+        "id": "ec_mdc15",
+        "question": "这本杂志每月_____一期。",
+        "translation": "(This magazine is published once a month.)",
+        "options": [
+          "出版",
+          "购买",
+          "阅读",
+          "打印"
+        ],
+        "correct": "出版",
+        "explanation": "出版 (chūbǎn) means 'to publish.' Publishing terms: 出版社 (chūbǎnshè, publishing house), 编辑 (biānjí, editor), 作者 (zuòzhě, author), 发行 (fāxíng, distribute), 版权 (bǎnquán, copyright). 期 (qī) is the measure word for issues/editions. 每月 means 'every month.' Major Chinese magazines: 读者 (Reader), 知音 (Zhiyin), 三联生活周刊 (Lifeweek). Chinese publishing industry produces hundreds of thousands of titles annually. 本 is the measure word for books and magazines. 每 + time + verb + number + measure word is the frequency pattern."
+      }
+    ]
+  },
+  {
+    "key": "arts_culture",
+    "name": "Arts & Culture (艺术文化)",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ec_art1",
+        "question": "中国的_____有几千年的历史。",
+        "translation": "(Chinese calligraphy has several thousand years of history.)",
+        "options": [
+          "书法",
+          "音乐",
+          "舞蹈",
+          "电影"
+        ],
+        "correct": "书法",
+        "explanation": "书法 (shūfǎ) means 'calligraphy.' It's one of the 'Four Arts' (琴棋书画 qín qí shū huà: music, chess, calligraphy, painting). Chinese art forms: 国画 (guóhuà, Chinese painting), 京剧 (jīngjù, Peking opera), 陶瓷 (táocí, ceramics/porcelain), 刺绣 (cìxiù, embroidery). 几千年 means 'several thousand years.' Main calligraphy scripts: 楷书 (regular), 行书 (running), 草书 (cursive), 隶书 (clerical), 篆书 (seal). Calligraphy is considered the highest Chinese art form — expressing personality through brush and ink."
+      },
+      {
+        "id": "ec_art2",
+        "question": "这幅画是用_____画的。",
+        "translation": "(This painting is painted with watercolors.)",
+        "options": [
+          "水彩",
+          "铅笔",
+          "蜡笔",
+          "粉笔"
+        ],
+        "correct": "水彩",
+        "explanation": "水彩 (shuǐcǎi) means 'watercolor.' Art materials: 毛笔 (máobǐ, brush pen), 水墨 (shuǐmò, ink wash), 油画 (yóuhuà, oil painting), 素描 (sùmiáo, sketch), 颜料 (yánliào, pigment/paint). 幅 (fú) is the measure word for paintings and calligraphy. 是...的 emphasizes the method. Chinese painting (国画) traditionally uses 水墨 on 宣纸 (xuānzhǐ, rice paper). Famous painters: 齐白石 (Qi Baishi), 张大千 (Zhang Daqian), 徐悲鸿 (Xu Beihong). Western art terms have been adapted: 油画 literally means 'oil painting.'"
+      },
+      {
+        "id": "ec_art3",
+        "question": "京剧是中国的_____艺术。",
+        "translation": "(Peking opera is China's national art.)",
+        "options": [
+          "国粹",
+          "现代",
+          "外来",
+          "流行"
+        ],
+        "correct": "国粹",
+        "explanation": "国粹 (guócuì) means 'national treasure/quintessence.' 京剧 (jīngjù) means 'Peking Opera' — combining singing, acting, martial arts, and acrobatics. Opera roles: 生 (shēng, male), 旦 (dàn, female), 净 (jìng, painted face), 丑 (chǒu, clown). Face painting (脸谱 liǎnpǔ) uses colors to show character: red = loyalty, white = treachery, black = honesty. Other Chinese opera: 昆曲 (kūnqǔ, Kunqu), 越剧 (yuèjù, Yue opera), 粤剧 (yuèjù, Cantonese opera). UNESCO intangible cultural heritage. The 是...的 structure identifies what something is."
+      },
+      {
+        "id": "ec_art4",
+        "question": "博物馆里_____了很多古代文物。",
+        "translation": "(The museum displays many ancient artifacts.)",
+        "options": [
+          "展出",
+          "出售",
+          "制作",
+          "回收"
+        ],
+        "correct": "展出",
+        "explanation": "展出 (zhǎnchū) means 'to exhibit/display.' Museum terms: 博物馆 (bówùguǎn, museum), 展览 (zhǎnlǎn, exhibition), 文物 (wénwù, cultural relic/artifact), 收藏 (shōucáng, collection), 古迹 (gǔjì, historical site). 古代 (gǔdài) means 'ancient.' Major Chinese museums: 故宫博物院 (Palace Museum/Forbidden City), 国家博物馆 (National Museum), 上海博物馆 (Shanghai Museum). 了 indicates these items are currently on display. China's museums have become increasingly popular — many offer free admission."
+      },
+      {
+        "id": "ec_art5",
+        "question": "春节是中国最重要的_____节日。",
+        "translation": "(Spring Festival is China's most important traditional holiday.)",
+        "options": [
+          "传统",
+          "现代",
+          "西方",
+          "宗教"
+        ],
+        "correct": "传统",
+        "explanation": "传统 (chuántǒng) means 'traditional.' Chinese festivals: 春节 (Chūn Jié, Spring Festival/Chinese New Year), 中秋节 (Zhōngqiū Jié, Mid-Autumn Festival), 端午节 (Duānwǔ Jié, Dragon Boat Festival), 清明节 (Qīngmíng Jié, Tomb Sweeping Day), 元宵节 (Yuánxiāo Jié, Lantern Festival). 最重要的 means 'the most important.' Spring Festival customs: 贴春联 (paste couplets), 放鞭炮 (set off firecrackers), 吃年夜饭 (New Year's Eve dinner), 发红包 (give red envelopes). The festival follows the lunar calendar."
+      },
+      {
+        "id": "ec_art6",
+        "question": "他弹钢琴弹得很_____。",
+        "translation": "(He plays the piano very skillfully.)",
+        "options": [
+          "熟练",
+          "简单",
+          "困难",
+          "容易"
+        ],
+        "correct": "熟练",
+        "explanation": "熟练 (shúliàn) means 'skilled/proficient.' The repeated verb structure: 弹钢琴弹得很熟练 — when an object is present, repeat the verb before 得. Music terms: 钢琴 (gāngqín, piano), 小提琴 (xiǎotíqín, violin), 古琴 (gǔqín, ancient Chinese zither), 琵琶 (pípá, Chinese lute), 二胡 (èrhú, two-stringed fiddle). Traditional Chinese instruments: 古筝 (gǔzhēng, guzheng), 笛子 (dízi, flute), 唢呐 (suǒnà, suona horn). Skill levels: 初学者 (chūxuézhě, beginner), 中级 (intermediate), 专业 (professional)."
+      },
+      {
+        "id": "ec_art7",
+        "question": "这首诗是唐朝_____写的。",
+        "translation": "(This poem was written by a Tang Dynasty poet.)",
+        "options": [
+          "诗人",
+          "画家",
+          "音乐家",
+          "作家"
+        ],
+        "correct": "诗人",
+        "explanation": "诗人 (shīrén) means 'poet.' Literary terms: 诗 (shī, poem), 词 (cí, lyrics/verse form), 散文 (sǎnwén, prose), 小说 (xiǎoshuō, novel), 文学 (wénxué, literature). 唐朝 (Táng Cháo) is the Tang Dynasty (618-907) — the golden age of Chinese poetry. Famous Tang poets: 李白 (Lǐ Bái, 'Immortal Poet'), 杜甫 (Dù Fǔ, 'Sage Poet'), 白居易 (Bái Jūyì). 首 (shǒu) is the measure word for poems and songs. 是...的 emphasizes who wrote it. Chinese children memorize Tang poetry from kindergarten: 唐诗三百首 (300 Tang Poems)."
+      },
+      {
+        "id": "ec_art8",
+        "question": "中国功夫在世界上很_____。",
+        "translation": "(Chinese kung fu is very famous worldwide.)",
+        "options": [
+          "有名",
+          "普通",
+          "古老",
+          "简单"
+        ],
+        "correct": "有名",
+        "explanation": "有名 (yǒumíng) means 'famous.' 功夫 (gōngfū) or 武术 (wǔshù) means 'martial arts.' Martial arts styles: 太极拳 (tàijíquán, Tai Chi), 少林拳 (Shàolín quán, Shaolin boxing), 咏春拳 (yǒngchūn quán, Wing Chun), 形意拳 (xíngyì quán). 在世界上 means 'in the world.' Bruce Lee (李小龙 Lǐ Xiǎolóng) and Jackie Chan (成龙 Chéng Lóng) brought Chinese kung fu to global audiences. The Shaolin Temple (少林寺) is considered the birthplace of many martial arts styles. 功夫 also means 'time/effort' in other contexts."
+      },
+      {
+        "id": "ec_art9",
+        "question": "这个陶瓷花瓶是_____制作的。",
+        "translation": "(This ceramic vase is handmade.)",
+        "options": [
+          "手工",
+          "机器",
+          "工厂",
+          "电脑"
+        ],
+        "correct": "手工",
+        "explanation": "手工 (shǒugōng) means 'handmade/by hand.' Crafts terms: 陶瓷 (táocí, ceramics/porcelain), 花瓶 (huāpíng, vase), 景德镇 (Jǐngdézhèn, China's porcelain capital), 瓷器 (cíqì, porcelain/chinaware), 工艺品 (gōngyìpǐn, handicraft). 是...的 emphasizes the method of production. China's name in English ('China') comes from its famous porcelain (瓷器). Traditional crafts: 剪纸 (jiǎnzhǐ, paper cutting), 泥塑 (nísù, clay sculpture), 漆器 (qīqì, lacquerware), 景泰蓝 (jǐngtàilán, cloisonné)."
+      },
+      {
+        "id": "ec_art10",
+        "question": "中秋节要吃_____。",
+        "translation": "(You should eat mooncakes during the Mid-Autumn Festival.)",
+        "options": [
+          "月饼",
+          "饺子",
+          "粽子",
+          "汤圆"
+        ],
+        "correct": "月饼",
+        "explanation": "月饼 (yuèbǐng) means 'mooncake.' Festival foods: 饺子 (jiǎozi, dumplings — Spring Festival), 粽子 (zòngzi, rice dumplings — Dragon Boat Festival), 汤圆 (tāngyuán, glutinous rice balls — Lantern Festival), 月饼 (mooncakes — Mid-Autumn). 中秋节 (Zhōngqiū Jié) celebrates the full moon and family reunion. 要 here means 'should/it's customary to.' Mooncake flavors: 莲蓉 (liánróng, lotus seed paste), 五仁 (wǔrén, five nuts), 蛋黄 (dànhuáng, salted egg yolk). The festival story involves 嫦娥 (Cháng'é), the Moon Goddess."
+      },
+      {
+        "id": "ec_art11",
+        "question": "他对中国_____非常感兴趣。",
+        "translation": "(He is very interested in Chinese history.)",
+        "options": [
+          "历史",
+          "未来",
+          "天气",
+          "经济"
+        ],
+        "correct": "历史",
+        "explanation": "历史 (lìshǐ) means 'history.' The structure 对...感兴趣 means 'interested in.' Chinese dynasties: 秦 (Qín), 汉 (Hàn), 唐 (Táng), 宋 (Sòng), 元 (Yuán), 明 (Míng), 清 (Qīng). China has over 5,000 years of recorded history — one of the world's oldest continuous civilizations. Historical terms: 朝代 (cháodài, dynasty), 皇帝 (huángdì, emperor), 丝绸之路 (Sīchóu zhī Lù, Silk Road), 长城 (Chángchéng, Great Wall). Understanding history is key to understanding Chinese culture and language."
+      },
+      {
+        "id": "ec_art12",
+        "question": "舞龙是中国_____的传统活动。",
+        "translation": "(Dragon dance is a traditional activity of Chinese New Year.)",
+        "options": [
+          "春节",
+          "中秋",
+          "端午",
+          "清明"
+        ],
+        "correct": "春节",
+        "explanation": "春节 (Chūn Jié) means 'Spring Festival.' 舞龙 (wǔlóng) means 'dragon dance.' Spring Festival activities: 舞龙 (dragon dance), 舞狮 (wǔshī, lion dance), 放鞭炮 (fàng biānpào, firecrackers), 看春晚 (kàn chūnwǎn, watch CCTV New Year's Gala), 拜年 (bàinián, New Year's greetings). The dragon (龙 lóng) symbolizes power and good fortune in Chinese culture. Spring Festival lasts 15 days, ending with 元宵节. The pattern A是B的C identifies the relationship between elements."
+      },
+      {
+        "id": "ec_art13",
+        "question": "茶文化在中国有很_____的传统。",
+        "translation": "(Tea culture has a very long tradition in China.)",
+        "options": [
+          "悠久",
+          "短暂",
+          "新",
+          "少"
+        ],
+        "correct": "悠久",
+        "explanation": "悠久 (yōujiǔ) means 'long-standing/time-honored.' 茶文化 (chá wénhuà) means 'tea culture.' Tea types: 绿茶 (lǜchá, green tea), 红茶 (hóngchá, black tea — literally 'red tea'), 乌龙茶 (wūlóng chá, oolong), 普洱茶 (pǔěr chá, pu-erh), 白茶 (báichá, white tea). Tea etiquette: 功夫茶 (gōngfu chá, ceremonial tea), 茶道 (chádào, tea ceremony), 品茶 (pǐnchá, tea tasting). China is the birthplace of tea — legend credits 神农 (Shénnóng) with its discovery. 很悠久 = very long-standing."
+      },
+      {
+        "id": "ec_art14",
+        "question": "那个画家的作品在国际上得到了_____。",
+        "translation": "(That painter's works gained recognition internationally.)",
+        "options": [
+          "认可",
+          "批评",
+          "忽视",
+          "反对"
+        ],
+        "correct": "认可",
+        "explanation": "认可 (rènkě) means 'recognition/approval.' Art world terms: 画家 (huàjiā, painter), 作品 (zuòpǐn, work/artwork), 展览 (zhǎnlǎn, exhibition), 拍卖 (pāimài, auction), 收藏家 (shōucángjiā, collector). 得到 (dédào) means 'to obtain/receive.' 国际上 means 'internationally.' Chinese contemporary artists like 艾未未 (Ai Weiwei), 蔡国强 (Cai Guoqiang) are internationally renowned. The art market in China has grown enormously — Chinese art auctions regularly break records. 的 connects the artist to their works."
+      },
+      {
+        "id": "ec_art15",
+        "question": "中国的四大_____是非常伟大的发明。",
+        "translation": "(China's Four Great Inventions are very great inventions.)",
+        "options": [
+          "发明",
+          "发现",
+          "成就",
+          "建筑"
+        ],
+        "correct": "发明",
+        "explanation": "四大发明 (sì dà fāmíng) means 'Four Great Inventions': 造纸术 (zàozhǐshù, papermaking), 印刷术 (yìnshuāshù, printing), 火药 (huǒyào, gunpowder), 指南针 (zhǐnánzhēn, compass). 伟大 (wěidà) means 'great/magnificent.' These inventions profoundly influenced world civilization. Modern Chinese also speak of '新四大发明' (New Four Great Inventions): 高铁 (gāotiě, high-speed rail), 移动支付 (mobile payment), 共享单车 (bike-sharing), 网购 (online shopping). Understanding Chinese inventions gives context to cultural pride."
+      }
+    ]
+  },
+  {
+    "key": "common_errors",
+    "name": "Common Errors (常见错误)",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ec_err1",
+        "question": "我很喜欢_____中国菜。(NOT: 我很喜欢吃得中国菜)",
+        "translation": "(I really like to eat Chinese food.)",
+        "options": [
+          "吃",
+          "吃得",
+          "吃了",
+          "吃着"
+        ],
+        "correct": "吃",
+        "explanation": "Common error: adding 得 after verbs before objects. 喜欢吃 (like to eat) is correct — no 得 needed. The 得 particle is only used for degree/manner complements: 吃得很快 (eat very fast), NOT before objects. 喜欢 + verb + object is the correct pattern. Similar errors: 想看电影 (NOT 想看得电影), 会说中文 (NOT 会说得中文). The 得 complement always comes after the verb: 说得好 (speak well), 做得对 (do correctly). This is one of the most frequent mistakes for English speakers learning Chinese."
+      },
+      {
+        "id": "ec_err2",
+        "question": "他比我_____两岁。(NOT: 他比我大两岁了)",
+        "translation": "(He is two years older than me.)",
+        "options": [
+          "大",
+          "大了",
+          "很大",
+          "最大"
+        ],
+        "correct": "大",
+        "explanation": "Common error: adding 了 to comparisons with specific amounts. 比 comparisons with specific differences don't use 了: 他比我大两岁 (correct). Also never use 很 in 比 comparisons: 他比我很大 is WRONG. Correct patterns: A比B + adj + specific amount. You can say 大得多 (much bigger) but not 很大 after 比. The 了 can be used for change over time (他长大了 = he's grown up), but not in comparative structures with specific numbers. This error comes from English influence where 'older' feels like it needs emphasis."
+      },
+      {
+        "id": "ec_err3",
+        "question": "我去_____商店买东西。(NOT: 我去了到商店买东西)",
+        "translation": "(I went to the store to buy things.)",
+        "options": [
+          "了",
+          "了到",
+          "到了",
+          "过"
+        ],
+        "correct": "了",
+        "explanation": "Common error: using 去了到 instead of 去了. The word 到 (arrive/reach) is redundant with 去 (go) in this context. Correct: 我去了商店 or 我到了商店. You can say 去到 in some Cantonese-influenced speech, but in standard Mandarin, choose one: 去了 (went to) or 到了 (arrived at). Movement verbs don't stack: use 去 for going, 到 for arriving. Also: 我去超市 (I go to the supermarket) — 去 can directly take a place object without prepositions. This differs from English 'go TO.'"
+      },
+      {
+        "id": "ec_err4",
+        "question": "这个苹果_____好吃。(NOT: 这个苹果是好吃)",
+        "translation": "(This apple is delicious.)",
+        "options": [
+          "很",
+          "是",
+          "有",
+          "在"
+        ],
+        "correct": "很",
+        "explanation": "Common error: using 是 (is) with adjectives. In Chinese, adjectives are verbs — they don't need 是. 这个苹果很好吃 (This apple is delicious) is correct. Using 是 before adjectives is a major error from English influence. The 很 doesn't always mean 'very' — it can be a neutral filler to balance the sentence. Without 很: 这个苹果好吃 implies a comparison. Only use 是 with nouns: 他是老师 (He is a teacher). Adjective predicates: 天气热 (weather is hot), 她漂亮 (she is pretty) — no 是 needed!"
+      },
+      {
+        "id": "ec_err5",
+        "question": "我在中国住了三_____。(NOT: 我在中国住了三年了了)",
+        "translation": "(I lived in China for three years.)",
+        "options": [
+          "年",
+          "年了了",
+          "个年",
+          "的年"
+        ],
+        "correct": "年",
+        "explanation": "Common error: doubling 了 incorrectly or adding unnecessary measure words. 住了三年 is correct — 年 is already a time word and doesn't need a measure word like 个. The 了 after 住 marks completion. If still living there: 我在中国住了三年了 (two 了's — first for the verb, second for current relevance). But never 了了 together. Time duration words: 年 (year), 个月 (month — needs 个), 天 (day), 小时 (hour), 分钟 (minute). 年, 天 don't need measure words; 月 needs 个."
+      },
+      {
+        "id": "ec_err6",
+        "question": "昨天我_____看了一部电影。(NOT: 昨天我有看了一部电影)",
+        "translation": "(Yesterday I watched a movie.)",
+        "options": [
+          "—",
+          "有",
+          "是",
+          "在"
+        ],
+        "correct": "—",
+        "explanation": "Common error: using 有 before verbs for past tense (influenced by Taiwanese Mandarin or English). In standard Mandarin, past tense uses 了 after the verb, NOT 有 before it. 昨天我看了一部电影 (correct). The blank represents no word needed — 昨天 already sets past context. 有 before verbs (有 + verb) is common in Southern Chinese dialects and Taiwanese Mandarin but considered non-standard in mainland Mandarin. Correct past patterns: time word + verb + 了, or verb + 了 + object. Context often makes 了 optional when time words are present."
+      },
+      {
+        "id": "ec_err7",
+        "question": "我的中文说得不太_____。(NOT: 我的中文说不太好)",
+        "translation": "(My Chinese speaking is not very good.)",
+        "options": [
+          "好",
+          "得好",
+          "很好",
+          "是好"
+        ],
+        "correct": "好",
+        "explanation": "Common error: placing 不太 incorrectly in degree complement structures. The correct word order for negative degree complements: verb + 得 + 不太 + adjective. 说得不太好 is correct — 不太 goes between 得 and the adjective. WRONG: 说不太好 (missing 得), 说得不好太 (wrong order). Degree complement structure: positive — 说得很好 (speaks well); negative — 说得不好 (doesn't speak well), 说得不太好 (doesn't speak very well). The 得 particle is essential and cannot be omitted in degree complements."
+      },
+      {
+        "id": "ec_err8",
+        "question": "我想_____一杯咖啡。(NOT: 我想要喝一杯的咖啡)",
+        "translation": "(I want to have a cup of coffee.)",
+        "options": [
+          "喝",
+          "喝一杯的",
+          "要喝了",
+          "喝的"
+        ],
+        "correct": "喝",
+        "explanation": "Common error: adding unnecessary 的 after measure words, or overcomplicating with 要. 一杯咖啡 (a cup of coffee) — never 一杯的咖啡. Measure word + noun never takes 的 between them. 想喝 (want to drink) is the simplest correct form. Also 想要 is possible but redundant with 想. Correct: 我想喝一杯咖啡. The measure word 杯 (bēi, cup) directly precedes the noun. Other examples: 一本书 (NOT 一本的书), 三个人 (NOT 三个的人). This 的 insertion error is extremely common among learners."
+      },
+      {
+        "id": "ec_err9",
+        "question": "他每天都_____运动。(NOT: 他每天都在运动着)",
+        "translation": "(He exercises every day.)",
+        "options": [
+          "做",
+          "在做着",
+          "做着了",
+          "有在做"
+        ],
+        "correct": "做",
+        "explanation": "Common error: overusing progressive markers 在 and 着 for habitual actions. Habitual actions (every day, every week) use simple verb form with adverbs like 每天, 经常. 在...着 is for actions happening RIGHT NOW: 他在跑步 (he is running NOW). For habits: 他每天跑步 (he runs every day) — no progressive needed. 都 emphasizes 'always/without exception.' Compare: 他在做运动 (progressive, now) vs. 他每天做运动 (habitual). The 都 with 每天 already indicates regularity — adding 在...着 creates an odd double-marking."
+      },
+      {
+        "id": "ec_err10",
+        "question": "这本书我已经看_____了。(NOT: 这本书我已经看了完了)",
+        "translation": "(I have already finished reading this book.)",
+        "options": [
+          "完",
+          "了完",
+          "完了了",
+          "得完"
+        ],
+        "correct": "完",
+        "explanation": "Common error: doubling 了 or misplacing resultative complements. 看完了 (finished reading) is correct — 完 is the result complement meaning 'finish,' and 了 comes at the end. WRONG: 看了完了 (了 in wrong position). Resultative complement structure: verb + complement + 了. Examples: 做完了 (finished doing), 吃完了 (finished eating), 写完了 (finished writing). 已经 (yǐjīng, already) reinforces completeness. The complement 完 must attach directly to the verb — nothing goes between verb and complement."
+      },
+      {
+        "id": "ec_err11",
+        "question": "我会_____一点中文。(NOT: 我会说中文一点)",
+        "translation": "(I can speak a little Chinese.)",
+        "options": [
+          "说",
+          "说中文",
+          "一点说",
+          "说了"
+        ],
+        "correct": "说",
+        "explanation": "Common error: wrong word order for 一点 (a little). Correct: 我会说一点中文 — 一点 comes between the verb and the object. WRONG: 说中文一点 (一点 after the object). 一点 can also go before the verb in some patterns: 有一点难 (a bit difficult). The key rule: 一点 as an adverb of amount goes before the object or adjective it modifies. Correct orders: 说一点中文, 吃一点饭, 喝一点水. Also correct: 我的中文说得不太好 (reorganized sentence). This word order error stems from English 'speak Chinese a little.'"
+      },
+      {
+        "id": "ec_err12",
+        "question": "我对这个问题很感_____。(NOT: 我十分对这个很感兴趣的)",
+        "translation": "(I am very interested in this issue.)",
+        "options": [
+          "兴趣",
+          "趣兴",
+          "兴的趣",
+          "的兴趣"
+        ],
+        "correct": "兴趣",
+        "explanation": "Common error: breaking up fixed expressions or misplacing modifiers. 感兴趣 is a fixed compound — never split it. 对...感兴趣 is the set pattern: 我对这个问题很感兴趣 (correct). WRONG: putting 很 before 对, adding unnecessary 的 at the end, splitting 感兴趣. Fixed expressions must stay intact: 感兴趣 (interested), 感动 (moved/touched), 感谢 (grateful). The structure: subject + 对 + topic + 感兴趣. Adverbs like 很, 非常 go right before 感兴趣, not before 对."
+      },
+      {
+        "id": "ec_err13",
+        "question": "虽然很累，_____我还是会去。(NOT: 虽然很累，所以我还是会去)",
+        "translation": "(Although very tired, I will still go.)",
+        "options": [
+          "但是",
+          "所以",
+          "因为",
+          "而且"
+        ],
+        "correct": "但是",
+        "explanation": "Common error: pairing 虽然 with 所以 instead of 但是. Correct pairs: 虽然...但是/可是 (although...but), 因为...所以 (because...therefore). These are FIXED pairs — mixing them is a common error. 虽然 (suīrán) + 但是 (dànshì) expresses concession: 'although X, but Y.' 还是 (háishì) here means 'still/nevertheless.' WRONG: 虽然...所以 contradicts logic (所以 implies causation, not concession). Other fixed pairs: 不但...而且 (not only...but also), 如果...就 (if...then)."
+      },
+      {
+        "id": "ec_err14",
+        "question": "请你帮我_____一下这个句子。(NOT: 请你帮我翻译给一下这个句子)",
+        "translation": "(Please help me translate this sentence.)",
+        "options": [
+          "翻译",
+          "翻译给",
+          "给翻译",
+          "翻了译"
+        ],
+        "correct": "翻译",
+        "explanation": "Common error: inserting unnecessary 给 or breaking up two-character verbs. 翻译 (fānyì, translate) is one word — never split it as 翻了译. The structure 帮我 + verb + 一下 + object is the standard request pattern. 一下 goes between the verb and object. WRONG: inserting 给 between the verb and 一下. Two-character verbs that cannot be split: 翻译 (translate), 学习 (study), 休息 (rest), 锻炼 (exercise). Verbs that CAN be split (separable verbs): 帮忙 → 帮了个忙, 睡觉 → 睡了一觉."
+      },
+      {
+        "id": "ec_err15",
+        "question": "我没_____去过中国。(NOT: 我没有曾经去过中国)",
+        "translation": "(I have never been to China.)",
+        "options": [
+          "有",
+          "有曾经",
+          "了",
+          "是"
+        ],
+        "correct": "有",
+        "explanation": "Common error: redundantly using 曾经 with 没有...过. 没有 + verb + 过 already means 'have never done.' Adding 曾经 (once/ever) is redundant and unnatural. 我没有去过中国 (I have never been to China) is correct. For positive: 我曾经去过中国 (I've been to China before) or 我去过中国 — either works. But in negative: just 没有...过, never 没有曾经...过. Remember: 没有 (not 没了) is used to negate 过 experiences. This error comes from trying to directly translate English 'I have never ever been.'"
+      }
+    ]
   }
 ]

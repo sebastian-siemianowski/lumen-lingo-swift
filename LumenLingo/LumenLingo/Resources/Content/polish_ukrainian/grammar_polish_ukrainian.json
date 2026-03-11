@@ -9633,5 +9633,3080 @@
         "explanation": "Zdrobnienie od 'рука' (ręka): 'ручка' (rączka). Zmiana к → ч + sufiks '-ка': рук- → руч-ка. W polskim: 'ręka' → 'rączka' (к → cz). Alternacja к → ч w ukraińskim = k → cz w polskim! Identyczny wzorzec. 'Ручка' ma też drugie znaczenie: 'długopis' (=uchwyt, rączka). W polskim: 'rączka' nie oznacza 'długopisu'. To fałszywy przyjaciel semantyczny! 'Ручка' (długopis) — bo trzymasz go w 'рука' (ręce). Ciekawe przesunięcie znaczeniowe."
       }
     ]
+  },
+  {
+    "key": "word_formation_prefixes",
+    "name": "Словотвір: префікси",
+    "description": "Słowotwórstwo: prefiksy",
+    "iconName": "arrow.right.to.line",
+    "color": "#06b6d4",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pu_wfp1",
+        "question": "Префікс 'пере-' у слові 'переписати' означає _____.",
+        "translation": "(Prefiks 'pере-' w słowie 'przepisać' oznacza...)",
+        "options": [
+          "повторення дії",
+          "початок дії",
+          "кінець дії",
+          "заперечення"
+        ],
+        "correct": "повторення дії",
+        "explanation": "Prefiks 'пере-' = polski 'prze-': oznacza powtórzenie lub przeniesienie. 'Переписати' (przepisać) — ponowne napisanie. 'Перечитати' (przeczytać), 'перейти' (przejść), 'перекласти' (przetłumaczyć). Polskie: przepisać, przeczytać, przejść, przetłumaczyć. Korespondencja пере-/prze- jest REGULARNA i niezwykle produktywna. Opanowanie jej pozwala tworzyć i rozumieć setki nowych słów. To jeden z najważniejszych prefiksów."
+      },
+      {
+        "id": "pu_wfp2",
+        "question": "Префікс 'роз-' у слові 'розповісти' означає _____.",
+        "translation": "(Prefiks 'роз-' w słowie 'opowiedzieć' oznacza...)",
+        "options": [
+          "розгортання дії",
+          "зупинку",
+          "початок",
+          "повторення"
+        ],
+        "correct": "розгортання дії",
+        "explanation": "Prefiks 'роз-' = polski 'roz-': oznacza rozwinięcie, rozprzestrzenienie. 'Розповісти' (opowiedzieć — dosł. 'roz-powiedzieć'). 'Розбити' (rozbić), 'розділити' (rozdzielić), 'розуміти' (rozumieć). Polskie: rozbić, rozdzielić, rozumieć. Korespondencja роз-/roz- jest IDEALNA — identyczne znaczenie i funkcja. 'Розуміти' (rozumieć) — wspólny rdzeń 'ум/um' (umysł). Prefiks 'роз-' przed głoskami dźwięcznymi, 'рос-' przed bezdźwięcznymi (jak polskie roz-/ros-)."
+      },
+      {
+        "id": "pu_wfp3",
+        "question": "Префікс 'за-' у слові 'заспівати' означає _____.",
+        "translation": "(Prefiks 'за-' w słowie 'zaśpiewać' oznacza...)",
+        "options": [
+          "початок дії",
+          "кінець дії",
+          "повторення",
+          "заперечення"
+        ],
+        "correct": "початок дії",
+        "explanation": "Prefiks 'за-' = polski 'za-': oznacza POCZĄTEK akcji. 'Заспівати' (zaśpiewać — zacząć śpiewać). 'Заплакати' (zapłakać), 'засміятися' (zaśmiać się), 'заговорити' (zagadać/zacząć mówić). Polskie: zapłakać, zaśmiać się. Korespondencja за-/za- jest regularna. ALE 'за-' ma też inne znaczenia: 'закрити' (zakryć/zamknąć), 'записати' (zapisać). Wieloznaczność prefiksów jest cechą obu języków — kontekst rozstrzyga. 'За-' to najczęstszy prefiks ukraiński."
+      },
+      {
+        "id": "pu_wfp4",
+        "question": "Префікс 'ви-' у слові 'вибрати' означає _____.",
+        "translation": "(Prefiks 'ви-' w słowie 'wybrać' oznacza...)",
+        "options": [
+          "виділення з групи",
+          "повторення",
+          "заперечення",
+          "приєднання"
+        ],
+        "correct": "виділення з групи",
+        "explanation": "Prefiks 'ви-' = polski 'wy-': oznacza wydobycie, wydzielenie. 'Вибрати' (wybrać — wydzielić z grupy). 'Вийти' (wyjść), 'вивчити' (wyuczyć się), 'виконати' (wykonać). Polskie: wybrać, wyjść, wykonać. Korespondencja ви-/wy- jest perfekcyjna! 'Вивчити' (wyuczyć się/nauczyć się) — pol. 'wyuczyć'. 'Виконати' (wykonać) — identyczne! Prefiks 'ви-' jest ZAWSZE pisany z 'и' (nie 'і'). To stała reguła ortograficzna ukraińskiego."
+      },
+      {
+        "id": "pu_wfp5",
+        "question": "Префікс 'під-' у слові 'підтримати' означає _____.",
+        "translation": "(Prefiks 'під-' w słowie 'podtrzymać' oznacza...)",
+        "options": [
+          "дію знизу",
+          "дію зверху",
+          "повну дію",
+          "зворотну дію"
+        ],
+        "correct": "дію знизу",
+        "explanation": "Prefiks 'під-' = polski 'pod-': oznacza działanie od dołu, podtrzymanie. 'Підтримати' (podtrzymać/wesprzeć). 'Підняти' (podnieść), 'підписати' (podpisać), 'підготувати' (przygotować). Polskie: podnieść, podpisać, przygotować. Korespondencja під-/pod- jest regularna. 'Підготувати' (przygotować) — tu polski ma 'przy-', ale ukraiński 'під-'. UWAGA: nie zawsze під-=pod-! Czasem ukraiński під- = polski przy- lub pod-. Kontekst jest ważny."
+      },
+      {
+        "id": "pu_wfp6",
+        "question": "Префікс 'на-' у слові 'написати' означає _____.",
+        "translation": "(Prefiks 'на-' w słowie 'napisać' oznacza...)",
+        "options": [
+          "завершення дії",
+          "початок дії",
+          "повторення",
+          "заперечення"
+        ],
+        "correct": "завершення дії",
+        "explanation": "Prefiks 'на-' = polski 'na-': oznacza dokonanie, umieszczenie na powierzchni. 'Написати' (napisać — dokonać pisania). 'Намалювати' (namalować), 'нагадати' (napomnieć/przypomnieć), 'наповнити' (napełnić). Polskie: napisać, namalować, napełnić. Korespondencja на-/na- jest bardzo regularna. 'Нагадати' (przypomnieć) — tu polski ma 'przy-', nie 'na-'. Częsty wyjątek! Ale 'нагадувати' (nagadywać — archaiczne polskie) zachowuje korespondencję. Prefiksy mają wiele warstw znaczeniowych."
+      },
+      {
+        "id": "pu_wfp7",
+        "question": "Префікс 'до-' у слові 'добігти' означає _____.",
+        "translation": "(Prefiks 'до-' w słowie 'dobiec' oznacza...)",
+        "options": [
+          "досягнення мети",
+          "початок руху",
+          "повторення",
+          "відступ"
+        ],
+        "correct": "досягнення мети",
+        "explanation": "Prefiks 'до-' = polski 'do-': oznacza osiągnięcie celu, doprowadzenie do końca. 'Добігти' (dobiec — dobiec do celu). 'Дочекатися' (doczekać się), 'домовитися' (dogadać się/umówić się), 'дочитати' (doczytać). Polskie: dobiec, doczekać się, doczytać. Korespondencja до-/do- jest idealna! 'Домовитися' (dogadać się) — od 'мова' (mowa). Polskie 'dogadać się' — od 'gadać'. Różne rdzenie, ale identyczny prefiks i sens."
+      },
+      {
+        "id": "pu_wfp8",
+        "question": "Префікс 'з-/с-' у слові 'зробити' означає _____.",
+        "translation": "(Prefiks 'з-/с-' w słowie 'zrobić' oznacza...)",
+        "options": [
+          "завершення",
+          "початок",
+          "повторення",
+          "розділення"
+        ],
+        "correct": "завершення",
+        "explanation": "Prefiks 'з-/с-' = polski 'z-/s-': oznacza zebranie, dokonanie. 'Зробити' (zrobić). 'Зрозуміти' (zrozumieć), 'зібрати' (zebrać), 'спитати' (spytać). Polskie: zrobić, zrozumieć, zebrać, spytać. Korespondencja з-/z- jest regularna! REGUŁA: 'з-' przed dźwięcznymi ('зробити'), 'с-' przed bezdźwięcznymi ('спитати'). W polskim: 'z-' przed dźwięcznymi ('zrobić'), 's-' przed bezdźwięcznymi ('spytać'). IDENTYCZNA reguła ubezdźwięczniania prefiksów w obu językach!"
+      },
+      {
+        "id": "pu_wfp9",
+        "question": "Префікс 'при-' у слові 'прийти' означає _____.",
+        "translation": "(Prefiks 'при-' w słowie 'przyjść' oznacza...)",
+        "options": [
+          "наближення",
+          "віддалення",
+          "повторення",
+          "заперечення"
+        ],
+        "correct": "наближення",
+        "explanation": "Prefiks 'при-' = polski 'przy-': oznacza zbliżenie, przybycie. 'Прийти' (przyjść). 'Принести' (przynieść), 'привітати' (przywitać/powitać), 'приїхати' (przyjechać). Polskie: przyjść, przynieść, przywitać, przyjechać. Korespondencja при-/przy- jest PERFEKCYJNA! Jeden z najregularniejszych par prefiksów. 'Привітати' (przywitać) — od 'вітати' (witać). 'При-' zawsze oznacza ruch KU czemuś. Opanowanie tego prefiksu otwiera zrozumienie dziesiątek czasowników ruchu."
+      },
+      {
+        "id": "pu_wfp10",
+        "question": "Префікс 'об-' у слові 'обійняти' означає _____.",
+        "translation": "(Prefiks 'об-' w słowie 'objąć' oznacza...)",
+        "options": [
+          "охоплення",
+          "відділення",
+          "повторення",
+          "початок"
+        ],
+        "correct": "охоплення",
+        "explanation": "Prefiks 'об-' = polski 'ob-': oznacza objęcie, otoczenie. 'Обійняти' (objąć — dosł. obejnąć). 'Обговорити' (omówić), 'оглянути' (obejrzeć/oglądnąć), 'обрати' (obrać/wybrać). Polskie: objąć, omówić, obejrzeć, obrać. Korespondencja об-/ob- jest regularna! UWAGA: ukraiński 'об-' czasem = polski 'o-': 'обговорити' (omówić), 'описати' (opisać). Wariant 'о-' pojawia się przed spółgłoskami w obu językach. Prefiks 'об-/о-' jest jeden z najstarszych prasłowiańskich."
+      },
+      {
+        "id": "pu_wfp11",
+        "question": "Префікс 'без-' у слові 'безпечний' означає _____.",
+        "translation": "(Prefiks 'без-' w słowie 'bezpieczny' oznacza...)",
+        "options": [
+          "відсутність",
+          "наявність",
+          "надмірність",
+          "розмір"
+        ],
+        "correct": "відсутність",
+        "explanation": "Prefiks 'без-' = polski 'bez-': oznacza brak, nieobecność. 'Безпечний' (bezpieczny — bez zagrożenia/'pieczy'). 'Безкоштовний' (bezpłatny/darmowy), 'безсмертний' (nieśmiertelny/bezsmrtelny), 'безмежний' (bezmierny/bezkresny). Polskie: bezpieczny, bezpłatny. Korespondencja без-/bez- jest IDENTYCZNA! 'Безпечний' — od 'печь' (troska/piecza). Polskie 'bezpieczny' — od 'pieczy'. Ten sam rdzeń! Prefiks negacyjny 'без-' jest jednym z najbardziej przejrzystych — łatwy do zrozumienia."
+      },
+      {
+        "id": "pu_wfp12",
+        "question": "Префікс 'недо-' у слові 'недооцінити' означає _____.",
+        "translation": "(Prefiks 'недо-' w słowie 'niedocenić' oznacza...)",
+        "options": [
+          "неповноту дії",
+          "надмірність",
+          "повторення",
+          "завершення"
+        ],
+        "correct": "неповноту дії",
+        "explanation": "Prefiks 'недо-' = polski 'niedo-': oznacza niepełność, niedostateczność. 'Недооцінити' (niedocenić — nie docenić wystarczająco). 'Недобачити' (niedowidzieć), 'недочути' (niedosłyszeć). Polskie: niedocenić, niedowidzieć, niedosłyszeć. Korespondencja недо-/niedo- jest PERFEKCYJNA! To złożony prefiks: 'не-' (nie) + 'до-' (do). W obu językach oznacza 'nie do końca'. Przeciwstawny: 'пере-' (prze-/nad-) — nadmierna ilość. 'Недооцінити' vs 'переоцінити' (przecenić)."
+      },
+      {
+        "id": "pu_wfp13",
+        "question": "Префікс 'над-' у слові 'надзвичайний' означає _____.",
+        "translation": "(Prefiks 'над-' w słowie 'nadzwyczajny' oznacza...)",
+        "options": [
+          "перевищення",
+          "зменшення",
+          "повторення",
+          "відсутність"
+        ],
+        "correct": "перевищення",
+        "explanation": "Prefiks 'над-' = polski 'nad-': oznacza przekroczenie, przewyższenie. 'Надзвичайний' (nadzwyczajny — ponad zwyczajny). 'Надлюдський' (nadludzki), 'надмірний' (nadmierny), 'надійний' (nadziejny→niezawodny). Polskie: nadzwyczajny, nadludzki, nadmierny. Korespondencja над-/nad- jest regularna! 'Надзвичайний' — від 'звичай' (zwyczaj). Polskie 'nadzwyczajny' — od 'zwyczaj'. IDENTYCZNY rdzeń i prefiks. Piękna paralela słowotwórcza."
+      },
+      {
+        "id": "pu_wfp14",
+        "question": "Префікс 'від-' у слові 'відчинити' означає _____.",
+        "translation": "(Prefiks 'від-' w słowie 'otworzyć' oznacza...)",
+        "options": [
+          "відкриття",
+          "закриття",
+          "повторення",
+          "з'єднання"
+        ],
+        "correct": "відкриття",
+        "explanation": "Prefiks 'від-' = polski 'od-': oznacza otwarcie, oddalenie, odpowiedź. 'Відчинити' (otworzyć/odczynić). 'Відповісти' (odpowiedzieć), 'відкрити' (odkryć), 'відійти' (odejść). Polskie: odpowiedzieć, odkryć, odejść. Korespondencja від-/od- jest regularna ale z wyjątkami! 'Відчинити' (otworzyć) ≠ polskie 'odczynić' (archaiczne). Współczesne 'otworzyć' jest inne. ALE etymologicznie: 'від-чинити' = 'od-czynić'. Staropolskie 'odczynić drzwi' = ukraiński 'відчинити двері'."
+      },
+      {
+        "id": "pu_wfp15",
+        "question": "Префікс 'по-' у слові 'побачити' означає _____.",
+        "translation": "(Prefiks 'по-' w słowie 'zobaczyć' oznacza...)",
+        "options": [
+          "доконаність",
+          "тривалість",
+          "повторення",
+          "заперечення"
+        ],
+        "correct": "доконаність",
+        "explanation": "Prefiks 'по-' = polski 'po-': oznacza dokonanie czynności. 'Побачити' (zobaczyć — dokonane od 'бачити'/widzieć). 'Почути' (posłyszeć/usłyszeć), 'поїхати' (pojechać), 'подарувати' (podarować). Polskie: pojechać, podarować. Korespondencja по-/po- jest częsta. ALE: 'побачити' (zobaczyć) — polski nie ma 'pobaczyć'. 'Почути' — polski ma 'usłyszeć', nie 'posłyszeć'. Prefiksy nie zawsze się odpowiadają — to naturalna rozbieżność ewolucji językowej."
+      }
+    ]
+  },
+  {
+    "key": "word_formation_suffixes",
+    "name": "Словотвір: суфікси",
+    "description": "Słowotwórstwo: sufiksy",
+    "iconName": "textformat.size",
+    "color": "#a855f7",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pu_wfs1",
+        "question": "Суфікс '-ник' у слові 'учитель' замінюється на _____.",
+        "translation": "(Sufiks '-nik' w słowie 'nauczyciel' zastępuje się na...)",
+        "options": [
+          "-тель",
+          "-ник",
+          "-ець",
+          "-ар"
+        ],
+        "correct": "-тель",
+        "explanation": "Sufiks '-тель' tworzy nazwy wykonawców czynności: 'учитель' (nauczyciel — od 'учити'/uczyć). W polskim: '-ciel' — 'nauczyciel'. Porównaj: учи-тель / nauczy-ciel — IDENTYCZNY sufiks! Więcej: 'читач' → ale 'вихователь' (wychowawca), 'слухач' (słuchacz). Ukraiński ma dwa sufiksy agentywne: '-тель' (formalny) i '-ач' (codzienный). Polski: '-ciel' i '-acz'. Korespondencja: -тель/-ciel, -ач/-acz. Regularność pozwala tworzyć nowe słowa."
+      },
+      {
+        "id": "pu_wfs2",
+        "question": "Суфікс '-ість' у слові 'можливість' відповідає polskiemu _____.",
+        "translation": "(Sufiks '-ість' w słowie 'możliwość' odpowiada polskiemu...)",
+        "options": [
+          "-ość",
+          "-ość/-ość",
+          "-nik",
+          "-ka"
+        ],
+        "correct": "-ość",
+        "explanation": "Sufiks '-ість' = polski '-ość': tworzy rzeczowniki abstrakcyjne od przymiotników. 'Можливість' (możliwość) od 'можливий' (możliwy). 'Справедливість' (sprawiedliwość), 'свідомість' (świadomość), 'діяльність' (działalność). Polskie: możliwość, sprawiedliwość, świadomość, działalność. Korespondencja -ість/-ość jest PERFEKCYJNA! To jeden z najproduktywniejszych sufiksów — tworzy setki abstrakcyjnych rzeczowników. Reguła: przymiotnik + '-ість' = rzeczownik."
+      },
+      {
+        "id": "pu_wfs3",
+        "question": "Суфікс '-ння' у слові 'навчання' означає _____.",
+        "translation": "(Sufiks '-ння' w słowie 'uczenie' oznacza...)",
+        "options": [
+          "процес дії",
+          "виконавця",
+          "якість",
+          "місце"
+        ],
+        "correct": "процес дії",
+        "explanation": "Sufiks '-ння' tworzy rzeczowniki procesowe od czasowników: 'навчання' (uczenie/nauka) od 'навчати' (uczyć). W polskim: '-nie/-anie/-enie'. Porównaj: навчан-ня / ucze-nie. Więcej: 'читання' (czytanie), 'писання' (pisanie), 'малювання' (malowanie). Polskie: czytanie, pisanie, malowanie. Korespondencja -ння/-nie jest REGULARNA! UWAGA: ukraiński '-ння' to podwójne 'н' — wymawiane dłużej. Polskie '-nie' ma jedno 'n'. Ta różnica fonetyczna jest ważna dla poprawnej wymowy."
+      },
+      {
+        "id": "pu_wfs4",
+        "question": "Суфікс '-ач' у слові 'глядач' означає _____.",
+        "translation": "(Sufiks '-acz' w słowie 'widz' oznacza...)",
+        "options": [
+          "виконавця дії",
+          "результат",
+          "місце",
+          "якість"
+        ],
+        "correct": "виконавця дії",
+        "explanation": "Sufiks '-ач' tworzy nazwy wykonawców: 'глядач' (widz/oglądacz) od 'глядіти' (oglądać). W polskim: '-acz' — 'oglądacz' (rzadkie). Więcej: 'читач' (czytelnik/czytacz), 'слухач' (słuchacz), 'водолаз' → ale 'викладач' (wykładowca/wykładacz). Polskie: słuchacz, wykładowca. Korespondencja -ач/-acz jest regularna! Ale polski czasem preferuje inne sufiksy: 'глядач' = widz (nie 'oglądacz'). Ukraiński jest tu bardziej regularny — '-ач' od dowolnego czasownika."
+      },
+      {
+        "id": "pu_wfs5",
+        "question": "Суфікс '-ськ-' у слові 'український' означає _____.",
+        "translation": "(Sufiks '-ськ-' w słowie 'ukraiński' oznacza...)",
+        "options": [
+          "належність",
+          "якість",
+          "процес",
+          "місце"
+        ],
+        "correct": "належність",
+        "explanation": "Sufiks '-ськ-' tworzy przymiotniki przynależności: 'український' (ukraiński) od 'Україна'. W polskim: '-ski/-ński'. Porównaj: українськ-ий / ukraiński — IDENTYCZNY sufiks! Więcej: 'польський' (polski), 'міський' (miejski), 'людський' (ludzki). Polskie: polski, miejski, ludzki. Korespondencja '-ськ-'/'-ski' jest perfekcyjna! REGUŁA: od nazw krajów + '-ськ-' = przymiotnik. Od nazw miast + '-ськ-'. Od nazw ludzi + '-ськ-'. Najbardziej produktywny sufiks przymiotnikowy."
+      },
+      {
+        "id": "pu_wfs6",
+        "question": "Суфікс '-к-а' у слові 'студентка' означає _____.",
+        "translation": "(Sufiks '-ka' w słowie 'studentka' oznacza...)",
+        "options": [
+          "жіночий рід",
+          "множину",
+          "зменшення",
+          "збільшення"
+        ],
+        "correct": "жіночий рід",
+        "explanation": "Sufiks '-ка' tworzy formy żeńskie: 'студентка' (studentka) od 'студент'. W polskim: '-ka' — 'studentka'. IDENTYCZNY sufiks i funkcja! Więcej: 'вчитель' → 'вчителька' (nauczycielka), 'ліkар' → 'лікарка' (lekarka), 'друг' → 'подруга' (przyjaciółka). Polskie: nauczycielka, lekarka, przyjaciółka. Korespondencja '-ка'/'-ka' jest regularna. UWAGA: nie wszystkie żeńskie formy używają '-ка': 'героїня' (bohaterka) — sufiks '-ïня'. Polski: '-ini'/'-yni': bohaterini→bohaterka."
+      },
+      {
+        "id": "pu_wfs7",
+        "question": "Суфікс '-лив-' у слові 'щасливий' означає _____.",
+        "translation": "(Sufiks '-liw-' w słowie 'szczęśliwy' oznacza...)",
+        "options": [
+          "наявність якості",
+          "відсутність",
+          "процес",
+          "місце"
+        ],
+        "correct": "наявність якості",
+        "explanation": "Sufiks '-лив-' = polski '-liw-': tworzy przymiotniki oznaczające posiadanie cechy. 'Щасливий' (szczęśliwy) od 'щастя' (szczęście). 'Справедливий' (sprawiedliwy), 'дбайливий' (dbały/troskliwy). Polskie: szczęśliwy, sprawiedliwy. Korespondencja '-лив-'/'-liw-' jest IDEALNA! Reguła: rzeczownik/rdzeń + '-лив-' + końcówka = przymiotnik. Wariant: '-тлив-': 'жартівливий' (żartobliwy). Polskie '-bliw-': żartobliwy. Sufiks wyraża skłonność, predyspozycję do danej cechy."
+      },
+      {
+        "id": "pu_wfs8",
+        "question": "Суфікс '-ств-' у слові 'суспільство' означає _____.",
+        "translation": "(Sufiks '-stw-' w słowie 'społeczeństwo' oznacza...)",
+        "options": [
+          "збірне поняття",
+          "якість",
+          "процес",
+          "виконавця"
+        ],
+        "correct": "збірне поняття",
+        "explanation": "Sufiks '-ств-' = polski '-stw-': tworzy rzeczowniki zbiorowe i abstrakcyjne. 'Суспільство' (społeczeństwo). 'Мистецтво' (мistectwo→sztuka), 'товариство' (towarzystwo), 'багатство' (bogactwo). Polskie: społeczeństwo, towarzystwo, bogactwo. Korespondencja '-ств-'/'-stw-' jest REGULARNA! Reguła: rdzeń + '-ство' = pojęcie zbiorowe. Wariant: '-цтв-': 'мистецтво' (z alternacją). Polskie: '-ctw-': 'rzemieślnictwo'. To jeden z najstarszych sufiksów prasłowiańskich."
+      },
+      {
+        "id": "pu_wfs9",
+        "question": "Суфікс '-ар' у слові 'лікар' означає _____.",
+        "translation": "(Sufiks '-ar' w słowie 'lekarz' oznacza...)",
+        "options": [
+          "фах/професію",
+          "якість",
+          "місце",
+          "процес"
+        ],
+        "correct": "фах/професію",
+        "explanation": "Sufiks '-ар' tworzy nazwy zawodów: 'лікар' (lekarz) od 'лікувати' (leczyć). W polskim: '-arz' — 'lekarz'. Porównaj: лік-ар / lek-arz — IDENTYCZNY sufiks! Więcej: 'шкoляр' (szkolarz→uczeń), 'коваль' → ale 'аптекар' (aptekarz). Polskie: lekarz, aptekarz. '-Ар'/'-arz' to produktywny sufiks zawodowy. UWAGA: ukraiński 'лікар' zachowuje rdzeń 'лік-' (lek), polski 'lekarz' — rdzeń 'lek-'. Wspólne korzenie prasłowiańskie widoczne gołym okiem."
+      },
+      {
+        "id": "pu_wfs10",
+        "question": "Суфікс '-уват-' у слові 'білуватий' означає _____.",
+        "translation": "(Sufiks '-ovat-' w słowie 'białawy' oznacza...)",
+        "options": [
+          "неповну ознаку",
+          "повну якість",
+          "відсутність",
+          "надмірність"
+        ],
+        "correct": "неповну ознаку",
+        "explanation": "Sufiks '-уват-' = polski '-aw-': tworzy przymiotniki oznaczające niepełną cechę. 'Білуватий' (białawy — trochę biały). 'Червонуватий' (czerwonawy), 'синюватий' (sinawy/niebieskawy). Polskie: białawy, czerwonawy. Korespondencja '-уват-'/'-aw-' jest regularna! Reguła: przymiotnik + '-уватий' = 'trochę taki'. 'Солодкуватий' (słodkawy), 'кислуватий' (kwaskowaty). Sufiks wyraża osłabioną intensywność cechy — przybliżone podobieństwo, nie pełną tożsamość."
+      },
+      {
+        "id": "pu_wfs11",
+        "question": "Суфікс '-ець' у слові 'борець' означає _____.",
+        "translation": "(Sufiks '-iec' w słowie 'bojownik' oznacza...)",
+        "options": [
+          "виконавця",
+          "місце",
+          "якість",
+          "процес"
+        ],
+        "correct": "виконавця",
+        "explanation": "Sufiks '-ець' = polski '-ec/-iec': tworzy nazwy wykonawców. 'Борець' (bojownik/borac→walczący) od 'боротися' (walczyć). 'Знавець' (znawca), 'молодець' (молodec/dzielny chłopak), 'продавець' (sprzedawca). Polskie: znawca, młodzieniec. '-Ець'/'-ec' to produktywny sufiks agentywny. 'Молодець' = polska pochwała 'молodец!' (brawo!). Warto znać: w ukraińskim 'молодець' jest bardzo częstym zwrotem aprobaty — używaj go do chwalenia!"
+      },
+      {
+        "id": "pu_wfs12",
+        "question": "Суфікс '-ищ-' у слові 'дворище' означає _____.",
+        "translation": "(Sufiks '-isk-' w słowie 'podwórze' oznacza...)",
+        "options": [
+          "місце",
+          "великий розмір",
+          "виконавця",
+          "якість"
+        ],
+        "correct": "місце",
+        "explanation": "Sufiks '-ищ-' = polski '-isk-/-yszcz-': tworzy nazwy miejsc. 'Дворище' (podwórze/dworzysko) od 'двір' (dwór/podwórze). 'Городище' (grodzisko), 'кладовище' (cmentarzysko→cmentarz), 'пожарище' (pogorzelisko). Polskie: grodzisko, cmentarzysko, pogorzelisko. Korespondencja '-ищ-'/'-isk-' jest regularna! UWAGA: '-ищ-' może też oznaczać dużą wielkość: 'домище' (wielki dom). Polskie '-isko/-ysko': 'domisko'. Dwie funkcje: miejsce ALBO powiększenie."
+      },
+      {
+        "id": "pu_wfs13",
+        "question": "Суфікс '-ив-' у слові 'красивий' відповідає polskiemu _____.",
+        "translation": "(Sufiks '-iw-' w słowie 'piękny' odpowiada polskiemu...)",
+        "options": [
+          "-iw-/-yw-",
+          "-ny",
+          "-ski",
+          "-owy"
+        ],
+        "correct": "-iw-/-yw-",
+        "explanation": "Sufiks '-ив-' = polski '-iw-/-yw-': tworzy przymiotniki jakościowe. 'Красивий' (piękny/красiwy). 'Правдивий' (prawdziwy), 'щасливий' (szczęśliwy — tu '-лив-'), 'ленивий' (leniwy). Polskie: prawdziwy, leniwy. Korespondencja '-ив-'/'-iw-' jest regularna! ALE: 'красивий' (piękny) — polski nie używa 'krasiwy'. To fałszywy przyjaciel: ukraiński zachował formę, polski ją porzucił. Porównaj: 'правдив-ий' / 'prawdziw-y' — idealnie. Sufiksy są wspólne, ale rdzenie się rozjechały."
+      },
+      {
+        "id": "pu_wfs14",
+        "question": "Суфікс '-н-' у слові 'сильний' відповідає polskiemu _____.",
+        "translation": "(Sufiks '-n-' w słowie 'silny' odpowiada polskiemu...)",
+        "options": [
+          "-ny",
+          "-ski",
+          "-owy",
+          "-liwy"
+        ],
+        "correct": "-ny",
+        "explanation": "Sufiks '-н-' = polski '-n-': najprostszy sufiks przymiotnikowy. 'Сильний' (silny). 'Чесний' (uczciwy/czestny→честный), 'вільний' (wolny/swobodny), 'повний' (pełny). Polskie: silny, uczciwy, pełny. '-Н-'/'-n-' to najczęstszy sufiks przymiotnikowy w obu językach. Porównaj: сильн-ий / siln-y — IDENTYCZNIE. 'Вільний' (wolny) — tu rdzeń się zmienił: ukr. 'віль-' vs pol. 'woln-'. Ale sufiks ten sam! Sufiks '-ний/-ний' to fundament ukraińskiej i polskiej adiektywizacji."
+      },
+      {
+        "id": "pu_wfs15",
+        "question": "Суфікс '-ок' у слові 'ранок' означає _____.",
+        "translation": "(Sufiks '-ok' w słowie 'ranek' oznacza...)",
+        "options": [
+          "назву поняття",
+          "збільшення",
+          "зменшення",
+          "професію"
+        ],
+        "correct": "назву поняття",
+        "explanation": "Sufiks '-ок' = polski '-ek/-ok': tworzy rzeczowniki. 'Ранок' (ranek) od 'рано' (rano). 'Вечір' → 'вечірок' (wieczórek→impreza), 'рядок' (rządek/wiersz), 'шматок' (kawałeczek/szmаtek). Polskie: ranek, wieczórek, kawałek. Korespondencja '-ок'/'-ek' jest regularna! UWAGA: wariant '-ок' po twardej, '-ек' po miękkiej — jak w polskim '-ok'/'-ek'. 'Ранок' (ranek) — identyczny rdzeń 'ран-/ran-' i sufiks '-ок/-ek'. Piękna paralela słowotwórcza."
+      }
+    ]
+  },
+  {
+    "key": "compound_words",
+    "name": "Складні слова",
+    "description": "Wyrazy złożone",
+    "iconName": "link",
+    "color": "#14b8a6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pu_cw1",
+        "question": "Слово 'водоспад' складається з частин 'вод-' + '-о-' + _____.",
+        "translation": "(Słowo 'wodospad' składa się z 'wod-' + '-o-' + ...)",
+        "options": [
+          "спад",
+          "спів",
+          "стіл",
+          "спиш"
+        ],
+        "correct": "спад",
+        "explanation": "Wyraz złożony: 'водоспад' (wodospad) = 'вод-' (woda) + '-о-' (łącznik) + 'спад' (spadek). W polskim: 'wodo-spad' — IDENTYCZNA budowa! Łącznik '-о-' w ukraińskim = '-o-' w polskim. Reguła: po twardej spółgłosce łącznik '-о-', po miękkiej '-е-'. W polskim: zawsze '-o-'. 'Водоспад' — woda spada. Kompozycja jest przejrzysta. Więcej: 'parowóz' → 'паровоз' (parowóz). Identyczne złożenia w obu językach."
+      },
+      {
+        "id": "pu_cw2",
+        "question": "Слово 'літак' походить від слів 'літ-' (_____).",
+        "translation": "(Słowo 'samolot' pochodzi od 'літ-' (...))",
+        "options": [
+          "літати",
+          "літо",
+          "літній",
+          "літера"
+        ],
+        "correct": "літати",
+        "explanation": "Wyraz 'літак' (samolot) od 'літати' (latać) + sufiks '-ак'. To nie wyraz złożony, ale derywat od 'літати'. W polskim: 'samo-lot' = złożenie 'sam' + 'lot'. Różne strategie: ukraiński użył sufiksu, polski — złożenia! 'Літак' (ten co lata — latacz). 'Самolot' (sam leci). Oba logiczne, ale różne. UWAGA: ukraiński 'літати' = polskie 'latać' (і→а — historyczna wymiana). 'Літо' (lato) — ten sam rdzeń! Lato = pora, gdy ptaki latają?"
+      },
+      {
+        "id": "pu_cw3",
+        "question": "У слові 'пароплав' друга основа '-плав' означає _____.",
+        "translation": "(W słowie 'parowiec' druga podstawa '-pław' oznacza...)",
+        "options": [
+          "плисти",
+          "падати",
+          "палити",
+          "платити"
+        ],
+        "correct": "плисти",
+        "explanation": "Wyraz złożony: 'пароплав' (parowiec/paropław) = 'пар-' (para) + '-о-' + 'плав' (pływanie). Dosłownie: 'parą pływający'. W polskim: 'parowiec' — od 'para' + sufiks '-owiec'. Różne strategie: ukraiński — złożenie, polski — derywat. Ale pol. 'paroplуw' archaicznie też istniał! 'Плав' od 'плавати' (pływać). Polskie 'pław' — od 'pławić'. Rdzeń wspólny! Więcej złożeń z '-plav': 'підводний плавець' (płetwonurek)."
+      },
+      {
+        "id": "pu_cw4",
+        "question": "Слово 'землетрус' складається з _____.",
+        "translation": "(Słowo 'trzęsienie ziemi' składa się z...)",
+        "options": [
+          "земля + трус",
+          "земля + рус",
+          "зем + летрус",
+          "земле + трус"
+        ],
+        "correct": "земля + трус",
+        "explanation": "Wyraz złożony: 'землетрус' (trzęsienie ziemi) = 'земл-' (ziemia) + '-е-' (łącznik) + 'трус' (trzęsienie/wstrząs). Dosłownie: 'ziemiotrzęs'. W polskim: 'trzęsienie ziemi' — opisowo, nie złożenie! Ukraiński jest tu bardziej zwięzły. Łącznik '-е-' (po miękkiej 'л'!). 'Трус' od 'трусити' (trząść). Polskie 'trzęs-' — ten sam rdzeń! Więcej złożeń z 'земле-': 'землеробство' (rolnictwo/ziemiorobstwo), 'землевласник' (ziemianin)."
+      },
+      {
+        "id": "pu_cw5",
+        "question": "Яка сполучна голосна у слові 'лісостеп'? _____.",
+        "translation": "(Jaka samogłoska łącznikowa w słowie 'лісостеп'?)",
+        "options": [
+          "-о-",
+          "-е-",
+          "-а-",
+          "-и-"
+        ],
+        "correct": "-о-",
+        "explanation": "W 'лісостеп' (lasostep) samogłoska łącznikowa: '-о-'. Reguła: po TWARDEJ spółgłosce łącznik '-о-' (лісо-, водо-, само-), po MIĘKKIEJ: '-е-' (земле-, кораблe-). W polskim: '-o-' w większości złożeń (wodo-spad, samo-lot). Ukraiński jest bardziej precyzyjny: rozróżnia -o-/-e- w zależności od twardości. 'Лісостеп' = 'ліс' (las) + '-о-' + 'степ' (step). Polskie: 'lasostep' (rzadkie). Złożenia geograficzne: 'водосховище' (zbiornik wodny)."
+      },
+      {
+        "id": "pu_cw6",
+        "question": "Слово 'сільгосп' — це скорочення від _____.",
+        "translation": "(Słowo 'sielgosp' to skrót od...)",
+        "options": [
+          "сільське господарство",
+          "сільська госпіталь",
+          "сільський гость",
+          "сільський господар"
+        ],
+        "correct": "сільське господарство",
+        "explanation": "Abbreviatura: 'сільгосп' = 'сільське господарство' (rolnictwo/gospodarstwo wiejskie). To skrót złożeniowy — łączy początek jednego słowa z końcem drugiego. W polskim: 'rolnictwo' (jedno słowo). Ukraiński tworzy wiele takich skrótów: 'заввідділ' (kierownik działu), 'завбібліотеки' (kierownik biblioteki). Polskie nie ma tak rozbudowanego systemu skrótów. 'Господарство' (gospodarstwo) — polskie 'gospodarstwo'. Rdzeń 'господ-' = 'gospod-'."
+      },
+      {
+        "id": "pu_cw7",
+        "question": "Слово 'самоучка' означає особу, яка вчиться _____.",
+        "translation": "(Słowo 'samouk' oznacza osobę, która uczy się...)",
+        "options": [
+          "самостійно",
+          "повільно",
+          "швидко",
+          "обов'язково"
+        ],
+        "correct": "самостійно",
+        "explanation": "Wyraz złożony: 'самоучка' (samouk/samouk-a) = 'сам-' (sam) + '-о-' + 'учити' (uczyć). Osoba, która uczy się samodzielnie. W polskim: 'samouk' — IDENTYCZNE złożenie! 'Само-' jest jednym z najproduktywniejszych pierwszych elementów: 'самолюб' (samolub), 'самогубство' (samobójstwo), 'самовар' (samowar). Polskie: samolub, samobójstwo, samowar. Element 'само-/samo-' jest wspólny dla wszystkich języków słowiańskich."
+      },
+      {
+        "id": "pu_cw8",
+        "question": "Чим є '-е-' у слові 'кораблебудування'? _____.",
+        "translation": "(Czym jest '-e-' w słowie 'korabliebudowanije'?)",
+        "options": [
+          "сполучною голосною",
+          "суфіксом",
+          "префіксом",
+          "закінченням"
+        ],
+        "correct": "сполучною голосною",
+        "explanation": "W 'кораблебудування' (okrętownictwo/budowa okrętów) '-е-' to samogłoska łącznikowa po miękkiej spółgłosce 'л'. Reguła: po miękkiej → '-е-', po twardej → '-о-'. 'Кораблебудування' = 'корабел-' (okręt) + '-е-' + 'будування' (budowanie). W polskim: 'okrętownictwo' — inna budowa. Ale polskie 'statek/koral/korab' — daleki odpowiednik. 'Будування' (budowanie) — polskie 'budowanie'. Rdzeń 'буд-/bud-' jest wspólny."
+      },
+      {
+        "id": "pu_cw9",
+        "question": "Слово 'першокласник' означає учня _____ класу.",
+        "translation": "(Słowo 'pierwszoklasista' oznacza ucznia ... klasy)",
+        "options": [
+          "першого",
+          "останнього",
+          "найкращого",
+          "будь-якого"
+        ],
+        "correct": "першого",
+        "explanation": "Wyraz złożony: 'першокласник' (pierwszoklasista) = 'перш-' (pierwszy) + '-о-' + 'клас' (klasa) + '-ник' (sufiks). Uczeń pierwszej klasy. W polskim: 'pierwszoklasista' — IDENTYCZNE złożenie! Złożenia z liczebnikami: 'п'ятиповерховий' (pięciopiętrowy), 'стоденний' (studniowy/studzienny), 'двомовний' (dwujęzyczny). Polskie: pięciopiętrowy, studzienny, dwujęzyczny. System złożeń z liczebnikami jest identyczny w obu językach."
+      },
+      {
+        "id": "pu_cw10",
+        "question": "Слово 'далекобійний' означає такий, що б'є _____.",
+        "translation": "(Słowo 'dalekobojny' oznacza taki, który bije...)",
+        "options": [
+          "далеко",
+          "близько",
+          "сильно",
+          "часто"
+        ],
+        "correct": "далеко",
+        "explanation": "Wyraz złożony: 'далекобійний' (dalekobijny/dalekobojny) = 'далек-' (daleki) + '-о-' + 'бій' (boj/uderzenie). Strzela daleko. W polskim: 'dalekobojny' — IDENTYCZNE! 'Далеко' (daleko), 'бій' (bój/walka). Rdzeń 'бій/bój' — wspólny prasłowiański. Złożenia z 'далеко-': 'далекоглядний' (dalekowzroczny), 'далекосхідний' (dalekowschodni). Polskie: dalekowzroczny, dalekowschodni. Perfekcyjna korespondencja w złożeniach!"
+      },
+      {
+        "id": "pu_cw11",
+        "question": "Слово 'високоякісний' означає _____.",
+        "translation": "(Słowo 'wysokojakościowy' oznacza...)",
+        "options": [
+          "високої якості",
+          "низької ціни",
+          "великого розміру",
+          "старого зразка"
+        ],
+        "correct": "високої якості",
+        "explanation": "Wyraz złożony: 'високоякісний' (wysokojakościowy) = 'висок-' (wysoki) + '-о-' + 'якість' (jakość). Wysokiej jakości. W polskim: 'wysokojakościowy' — identyczna budowa. Złożenia z 'високо-': 'високопродуктивний' (wysokoproduktywny), 'високоповажний' (wysokopoważany), 'високотехнологічний' (wysokotechnologiczny). Polskie: produktywny, poważany. Element 'високо-/wysoko-' jest produktywny w obu językach. 'Якість' (jakość) — wspólny rdzeń 'як-/jak-'."
+      },
+      {
+        "id": "pu_cw12",
+        "question": "Слово 'хмарочос' означає _____.",
+        "translation": "(Słowo 'chmura-czesze' oznacza...)",
+        "options": [
+          "хмародряп/дмарвіс",
+          "хмару чесати",
+          "хмарний день",
+          "чос хмари"
+        ],
+        "correct": "хмародряп/дмарвіс",
+        "explanation": "Wyraz złożony: 'хмарочос' (wieżowiec/drapacz chmur) = 'хмар-' (chmura) + '-о-' + 'чос' (czesanie/drapanie). Dosłownie: 'chmuro-drapacz'. W polskim: 'drapacz chmur' — odwrócona kolejność! Angielski: 'skyscraper'. Ukraiński: 'хмарочос'. Każdy język tworzy ten wyraz inaczej. 'Хмара' (chmura) — polskie 'chmura' (ten sam rdzeń!). 'Чесати/чосати' (czesać/drapać). Polskie 'czesać'. Porównaj: хмар-о-чос / chmur-o-czos → drapacz chmur."
+      },
+      {
+        "id": "pu_cw13",
+        "question": "Слово 'всесвіт' означає _____.",
+        "translation": "(Słowo 'wszechświat' oznacza...)",
+        "options": [
+          "Всесвіт/Universum",
+          "все свято",
+          "весь світ",
+          "все світло"
+        ],
+        "correct": "Всесвіт/Universum",
+        "explanation": "Wyraz złożony: 'всесвіт' (wszechświat) = 'все-' (wszech/wszystko) + 'світ' (świat). Dosłownie: 'wszystkoświat'. W polskim: 'wszechświat' — IDENTYCZNA budowa! 'Все' = 'wszech' (wszystko), 'світ' = 'świat'. Porównaj: все-світ / wszech-świat. Piękna paralela! 'Світ' (świat) — wspólny rdzeń prasłowiański, oznaczający zarówno 'świat' jak i 'światło'. Stąd: 'всесвіт' łączy ideę 'wszystkiego' i 'światła/świata'. Filozoficzne złożenie!"
+      },
+      {
+        "id": "pu_cw14",
+        "question": "Слово 'чорнозем' означає _____.",
+        "translation": "(Słowo 'czarnoziem' oznacza...)",
+        "options": [
+          "чорну землю",
+          "чисту землю",
+          "мокру землю",
+          "суху землю"
+        ],
+        "correct": "чорну землю",
+        "explanation": "Wyraz złożony: 'чорнозем' (czarnoziem) = 'чорн-' (czarny) + '-о-' + 'зем' (ziemia). Czarna ziemia — najżyźniejsza gleba. W polskim: 'czarnoziem' — IDENTYCZNIE! Ukraina to kraj czarnoziemów — 'житниця Європи' (spichlerz Europy). 'Чорний' (czarny), 'земля' (ziemia). Polskie: czarny, ziemia. Rdzeń 'чорн-/czarn-' i 'зем-/ziem-' — wspólne prasłowiańskie. Złożenia z kolorami: 'білосніжний' (białośnieżny), 'чорноморський' (czarnomorski)."
+      },
+      {
+        "id": "pu_cw15",
+        "question": "Слово 'книгозбірня' означає _____.",
+        "translation": "(Słowo 'zbiór książek' oznacza...)",
+        "options": [
+          "бібліотеку",
+          "книгарню",
+          "школу",
+          "музей"
+        ],
+        "correct": "бібліотеку",
+        "explanation": "Wyraz złożony: 'книгозбірня' (biblioteka) = 'книг-' (książka) + '-о-' + 'збірня' (zbiorcnia/zbiór). Dosłownie: 'książko-zbiorcnia'. W polskim: 'biblioteka' (z greckiego). Ukraiński ma zarówno 'бібліотека' (potoczne) jak i 'книгозбірня' (formalne/ukraińskie). 'Книга' (książka) — polskie 'księga'. 'Збірня' (zbiorcnia) od 'збирати' (zbierać). To piękny przykład ukraińskiego puryzmu językowego — tworzenie rodzimych odpowiedników obcych słów."
+      }
+    ]
+  },
+  {
+    "key": "false_friends",
+    "name": "Фальшиві друзі",
+    "description": "Fałszywi przyjaciele",
+    "iconName": "exclamationmark.triangle",
+    "color": "#ef4444",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pu_ff1",
+        "question": "Ukraińskie 'вродливий' oznacza _____.",
+        "translation": "(Ukraińskie 'вродливий' oznacza...)",
+        "options": [
+          "гарний/piękny",
+          "wrodzony",
+          "urodzony",
+          "wrodzonawy"
+        ],
+        "correct": "гарний/piękny",
+        "explanation": "FAŁSZYWY PRZYJACIEL! Ukraiński 'вродливий' = 'piękny/przystojny', NIE 'wrodzony'! Polskie 'wrodzony' = ukraiński 'вроджений'. Porównaj: 'вродлива жінка' (piękna kobieta) — Polak mógłby pomyśleć 'wrodliwa kobieta' (nonsens). 'Вродливий' pochodzi od 'врода' (uroda) — tu akurat polskie 'uroda' jest bliskie! Ale 'вродливий' ≠ 'wrodzony'. To jedna z najczęstszych pułapek polsko-ukraińskich. Zapamiętaj: вродливий = piękny!"
+      },
+      {
+        "id": "pu_ff2",
+        "question": "Ukraińskie 'чоловік' oznacza _____.",
+        "translation": "(Ukraińskie 'чоловік' oznacza...)",
+        "options": [
+          "мужчину/мужа",
+          "człowieka ogólnie",
+          "chłopca",
+          "chłopa"
+        ],
+        "correct": "мужчину/мужа",
+        "explanation": "FAŁSZYWY PRZYJACIEL! Ukraiński 'чоловік' = 'mężczyzna/mąż', NIE 'człowiek'! Polskie 'człowiek' = ukraiński 'людина'. 'Чоловік' etymologicznie pochodzi od tego samego rdzenia co 'człowiek', ale zawęził znaczenie do 'mężczyzna/mąż'. 'Мій чоловік' = 'mój mąż', NIE 'mój człowiek'. To fundamentalny fałszywy przyjaciel! Każdy Polak uczący się ukraińskiego MUSI to zapamiętać. 'Людина' (człowiek), 'чоловік' (mężczyzna/mąż), 'жінка' (kobieta/żona)."
+      },
+      {
+        "id": "pu_ff3",
+        "question": "Ukraińskie 'лунати' oznacza _____.",
+        "translation": "(Ukraińskie 'лунати' oznacza...)",
+        "options": [
+          "розноситися/brzmieć",
+          "lunatykować",
+          "spacerować",
+          "hulać"
+        ],
+        "correct": "розноситися/brzmieć",
+        "explanation": "FAŁSZYWY PRZYJACIEL! Ukraiński 'лунати' = 'rozbrzmiewać/nieść się (o dźwięku)', NIE 'lunatykować'! 'Лунає музика' = 'rozlega się muzyka'. Polskie 'lunatykować' = ukraiński 'лунатити' (ходити уві сні). 'Лунати' nie ma nic wspólnego z lunatyzmem! To od 'луна' (echo), NIE od 'Луна' (księżyc). W polskim 'luna' = poświata. Kompletnie różne znaczenia. Zapamiętaj: лунати = brzmieć/rozlegać się."
+      },
+      {
+        "id": "pu_ff4",
+        "question": "Ukraińskie 'неділя' oznacza _____.",
+        "translation": "(Ukraińskie 'неділя' oznacza...)",
+        "options": [
+          "воскресіння/niedzielę",
+          "tydzień",
+          "niedzielenie/nie-działanie",
+          "dwa tygodnie"
+        ],
+        "correct": "воскресіння/niedzielę",
+        "explanation": "CZĘŚCIOWY FAŁSZYWY PRZYJACIEL! Ukraiński 'неділя' = 'niedziela' (dzień tygodnia). ALE: w polskim 'niedziela' też = 'niedziela'. Tu OK! Problem: 'ТИЖДЕНЬ' (tydzień) — ukraiński 'tydzień' ≠ polskie 'tydzień' w formie! Polacy mogą mylić 'неділя' z 'nie-dzielenie'. Etymologia: 'неділя' = 'не ділити' (nie dzielić/nie pracować) — dzień odpoczynku. Polskie 'niedziela' — ta sama etymologia! Wspólna słowiańska idea: dzień, w który NIE pracujesz."
+      },
+      {
+        "id": "pu_ff5",
+        "question": "Ukraińskie 'дружина' oznacza _____.",
+        "translation": "(Ukraińskie 'дружина' oznacza...)",
+        "options": [
+          "жінку/żonę",
+          "drużynę",
+          "przyjaciółkę",
+          "dziewczynę"
+        ],
+        "correct": "жінку/żonę",
+        "explanation": "FAŁSZYWY PRZYJACIEL! Ukraiński 'дружина' = 'żona', NIE 'drużyna'! Polskie 'drużyna' = ukraiński 'команда'. 'Моя дружина' = 'moja żona', NIE 'moja drużyna'. Etymologia: od 'друг' (przyjaciel/towarzysz) — żona to 'towarzyszka życia'. Polskie 'drużyna' — też od 'drug/druh' (towarzysz), ale oznacza 'zespół towarzyszy'. Ten sam rdzeń, różne ewolucje! Zapamiętaj: дружина = żona, команда = drużyna."
+      },
+      {
+        "id": "pu_ff6",
+        "question": "Ukraińskie 'місто' oznacza _____.",
+        "translation": "(Ukraińskie 'місто' oznacza...)",
+        "options": [
+          "город/miasto",
+          "miejsce",
+          "mistkę",
+          "most"
+        ],
+        "correct": "город/miasto",
+        "explanation": "To PRAWDZIWY PRZYJACIEL — tu się zgadza! Ukraiński 'місто' = polskie 'miasto'. ALE UWAGA: ukraiński 'місце' = 'miejsce' (NIE 'miasto'!). Polacy mogą mylić 'місто' (miasto) z 'місце' (miejsce). Różnica: 'місто' (город/miasto), 'місце' (место/miejsce). Dodatkowo: ukraiński 'город' = 'ogród/ogródek' (warzywny), NIE 'miasto'! Polskie 'gród' = historyczne 'miasto'. Trzy pułapki w jednym obszarze: місто=miasto, місце=miejsce, город=ogród."
+      },
+      {
+        "id": "pu_ff7",
+        "question": "Ukraińskie 'рожевий' oznacza kolor _____.",
+        "translation": "(Ukraińskie 'рожевий' oznacza kolor...)",
+        "options": [
+          "różowy",
+          "rdzawy",
+          "rudy",
+          "czerwony"
+        ],
+        "correct": "różowy",
+        "explanation": "To PRAWDZIWY PRZYJACIEL! Ukraiński 'рожевий' = polskie 'różowy'. Od 'рожа' (róża). Polskie 'różowy' — od 'róża'. Identyczny rdzeń! ALE: 'рожа' w ukraińskim oznacza głównie roślinę (różę), nie twarz! Polskie dawne 'roża' (twarz/rumieniec) — ukraiński tego znaczenia nie ma. Kolory — prawdziwi i fałszywi przyjaciele: 'червоний' (czerwony) ✓, 'синій' (niebieski — NIE siwy!), 'блакитний' (błękitny) ✓. 'Синій' to fałszywy przyjaciel!"
+      },
+      {
+        "id": "pu_ff8",
+        "question": "Ukraińskie 'запах' oznacza _____.",
+        "translation": "(Ukraińskie 'запах' oznacza...)",
+        "options": [
+          "аромат/zapach",
+          "zachodu",
+          "zapachanie",
+          "zapachu polskiego"
+        ],
+        "correct": "аромат/zapach",
+        "explanation": "To PRAWDZIWY PRZYJACIEL! Ukraiński 'запах' = polskie 'zapach'. Identyczne znaczenie i forma! Od 'пахнути' (pachnieć). Polskie 'pachnieć' — ten sam rdzeń. ALE UWAGA na pochodne: 'запахнути' (zacząć pachnieć) — w ukraińskim OK, ale NIE 'zapaść'! Polskie 'zapaść' (choroba) = ukraiński 'хвороба'. System pułapek jest złożony: nawet gdy rdzeń jest wspólny, derywaty mogą się rozejść. 'Пахощі' (pachnidła/aromaty) — polskie 'pachunie' (archaiczne)."
+      },
+      {
+        "id": "pu_ff9",
+        "question": "Ukraińskie 'склеп' oznacza _____.",
+        "translation": "(Ukraińskie 'склеп' oznacza...)",
+        "options": [
+          "гробівець/grobowiec",
+          "sklep z towarami",
+          "piwnicę",
+          "sklepienie"
+        ],
+        "correct": "гробівець/grobowiec",
+        "explanation": "FAŁSZYWY PRZYJACIEL! Ukraiński 'склеп' = 'grobowiec/krypta', NIE 'sklep'! Polskie 'sklep' (z towarami) = ukraiński 'крамниця' lub 'магазин'. 'Склеп' etymologicznie: od 'sklepiać' (łączyć łukiem). 'Склеп' to sklepione pomieszczenie — podziemne, więc grobowiec. W polskim dawne 'sklep' też = piwnica/grobowiec (stąd 'sklepienie'). Współczesne znaczenie 'sklep' (с товарами) to polska innowacja. Zapamiętaj: крамниця/магазин = sklep!"
+      },
+      {
+        "id": "pu_ff10",
+        "question": "Ukraińskie 'рахувати' oznacza _____.",
+        "translation": "(Ukraińskie 'рахувати' oznacza...)",
+        "options": [
+          "liczyć/рахувати",
+          "rachować konto",
+          "ratować",
+          "rysować"
+        ],
+        "correct": "liczyć/рахувати",
+        "explanation": "PRAWDZIWY PRZYJACIEL (prawie)! Ukraiński 'рахувати' = 'liczyć/rachować'. Polskie dawne 'rachować' = liczyć. Współczesne 'rachować' jest rzadkie (liczyć skąpo). Ale 'rachunek' nadal = obliczenie! 'Рахувати' — codzienne słowo: 'рахувати гроші' (liczyć pieniądze). Polskie: 'liczyć pieniądze' (nie 'rachować'). Rdzeń ten sam: рахув-ати / rachow-ać. Pochodne: 'рахунок' (rachunek), 'калькулятор' → ale 'рахівниця' (liczydło/rachownica)."
+      },
+      {
+        "id": "pu_ff11",
+        "question": "Ukraińskie 'зараз' oznacza _____.",
+        "translation": "(Ukraińskie 'зараз' oznacza...)",
+        "options": [
+          "тепер/teraz",
+          "zaraza",
+          "zaraz potem",
+          "zarazem"
+        ],
+        "correct": "тепер/teraz",
+        "explanation": "FAŁSZYWY PRZYJACIEL! Ukraiński 'зараз' = 'teraz/zaraz', ale z naciskiem na 'TERAZ' (w tym momencie). Polskie 'zaraz' = 'za chwilę'. Ukraiński 'зараз' = NATYCHMIAST, nie 'za chwilę'. 'Я зараз працюю' = 'Pracuję teraz', NIE 'zaraz będę pracować'. Polskie 'teraz' = ukraiński 'зараз/тепер'. Te dwa przysłówki 'зараз/тепер' są synonimami w ukraińskim. UWAGA: 'зараза' (zaraza/wirus) to oddzielne słowo — tu bez pułapki!"
+      },
+      {
+        "id": "pu_ff12",
+        "question": "Ukraińskie 'уродливий' oznacza _____.",
+        "translation": "(Ukraińskie 'уродливий' oznacza...)",
+        "options": [
+          "потворний/brzydki",
+          "urodzajny",
+          "urodzony",
+          "urodziwy"
+        ],
+        "correct": "потворний/brzydki",
+        "explanation": "FAŁSZYWY PRZYJACIEL! Ukraiński 'уродливий' = 'brzydki/szkaradny', NIE 'urodziwy'! Polskie 'urodziwy' (piękny) = ukraiński 'вродливий'. UWAGA: 'вродливий' = piękny, 'уродливий' = brzydki! Jedна litera zmienia значenie na PRZECIWNE! To podwójna pułapka: і 'уродливий' і 'вродливий' wyglądają podobnie do polskiego 'urodziwy', ale mają PRZECIWNE значenia. 'Вродливий' (piękny — od 'врода/uroda'), 'уродливий' (brzydki — od 'урод/potwór'). Zapamiętaj obie!"
+      },
+      {
+        "id": "pu_ff13",
+        "question": "Ukraińskie 'лічити' oznacza _____.",
+        "translation": "(Ukraińskie 'лічити' oznacza...)",
+        "options": [
+          "рахувати/liczyć",
+          "leczyć",
+          "leniuchować",
+          "lizać"
+        ],
+        "correct": "рахувати/liczyć",
+        "explanation": "PRAWDZIWY PRZYJACIEL! Ukraiński 'лічити' = 'liczyć'. Polskie 'liczyć' — IDENTYCZNIE! Rdzeń 'ліч-/licz-' jest wspólny. ALE: w ukraińskim 'лічити' i 'рахувати' są SYNONIMAMI (oba = liczyć). Polskie: 'liczyć' i 'rachować' — niemal synonimy. Porównaj: 'лічити до десяти' (liczyć do dziesięciu). Pochodne: 'лічильник' (licznik), 'полічити' (policzyć). Polskie: licznik, policzyć. Perfekcyjna korespondencja! UWAGA: nie mylić z 'лікувати' (leczyć)!"
+      },
+      {
+        "id": "pu_ff14",
+        "question": "Ukraińskie 'питання' oznacza _____.",
+        "translation": "(Ukraińskie 'питання' oznacza...)",
+        "options": [
+          "запитання/pytanie",
+          "picie/pitie",
+          "jedzenie",
+          "kapanie"
+        ],
+        "correct": "запитання/pytanie",
+        "explanation": "PRAWDZIWY PRZYJACIEL! Ukraiński 'питання' = 'pytanie'. Polskie 'pytanie' — ten sam rdzeń 'пит-/pyt-'. ALE: 'пити' (pić) to INNY rdzeń! Nie mylić: 'питання' (pytanie) od 'питати' (pytać), 'пити' (pić) — od 'пиття' (picie). Dwa różne rdzenie, które wyglądają identycznie! 'Питати' (pytać) — polskie 'pytać'. 'Пити' (pić) — polskie 'pić'. W kontekście: 'Маю питання' (Mam pytanie), nie 'Mam picie'. Kontekst rozstrzyga."
+      },
+      {
+        "id": "pu_ff15",
+        "question": "Ukraińskie 'шукати' oznacza _____.",
+        "translation": "(Ukraińskie 'шукати' oznacza...)",
+        "options": [
+          "шукати/szukać",
+          "sztukować",
+          "stukać",
+          "szuflować"
+        ],
+        "correct": "шукати/szukać",
+        "explanation": "PRAWDZIWY PRZYJACIEL! Ukraiński 'шукати' = polskie 'szukać'. Identyczne znaczenie i (prawie) forma! 'Ш' = 'sz', 'у' = 'u', 'кати' = 'kać'. Porównaj: шук-ати / szuk-ać. Pochodne: 'пошук' (poszukiwanie), 'шукач' (szukacz/poszukiwacz), 'розшук' (poszukiwanie/śledztwo). Polskie: poszukiwanie, szukacz. To jeden z najczystszych prawdziwych przyjaciół — identyczny rdzeń, identyczne znaczenie, identyczna koniugacja. 'Шукаю роботу' = 'Szukam pracy'."
+      }
+    ]
+  },
+  {
+    "key": "cognate_traps",
+    "name": "Пастки когнатів",
+    "description": "Pułapki kognatów",
+    "iconName": "eye.trianglebadge.exclamationmark",
+    "color": "#f97316",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pu_ct1",
+        "question": "Ukraińskie 'город' oznacza _____, NIE miasto.",
+        "translation": "(Ukraińskie 'город' oznacza..., NIE miasto)",
+        "options": [
+          "город/огород",
+          "gród/zamek",
+          "grodzisko",
+          "gródek"
+        ],
+        "correct": "город/огород",
+        "explanation": "PUŁAPKA KOGNATU! Ukraiński 'город' = 'ogród warzywny', NIE 'gród/miasto'! Polskie 'gród' (dawne miasto) = ukraiński 'місто' (miasto) lub historyczne 'город' w sensie 'gródek'. W codziennym ukraińskim: 'город' = ogródek z warzywami. 'Працювати на городі' = 'Pracować w ogródku'. ALE: 'Новгород' (nazwa miasta) — tu 'город' = 'gród'! Historycznie rdzeń 'город/grod' = ogrodzenie. Ukr. zawęził do ogrodu, pol. do grodu. Ogrodzenie → ogród/gród."
+      },
+      {
+        "id": "pu_ct2",
+        "question": "Ukraińskie 'красний' oznacza _____, NIE piękny.",
+        "translation": "(Ukraińskie 'красний' oznacza..., NIE piękny)",
+        "options": [
+          "czerwony (archaicznie)",
+          "piękny",
+          "wspaniały",
+          "straszny"
+        ],
+        "correct": "czerwony (archaicznie)",
+        "explanation": "PUŁAPKA KOGNATU! Ukraiński 'красний' (archaiczne) = 'piękny/czerwony' — w staroukraińskim. Współcześnie: 'красивий' = piękny, 'червоний' = czerwony. W rosyjskim: 'красный' = czerwony, 'красивый' = piękny. W polskim: 'krasny' (archaiczne) = piękny. 'Красна Площадь' = 'Piękny Plac' (nie Czerwony!). 'Красне слівко' (piękne słówko). Rdzeń 'крас-/kras-' oznaczał pierwotnie 'piękno'. Przesunięcie ku 'czerwony' to rosyjska innowacja."
+      },
+      {
+        "id": "pu_ct3",
+        "question": "Ukraińskie 'робота' oznacza _____.",
+        "translation": "(Ukraińskie 'робота' oznacza...)",
+        "options": [
+          "працю/pracę",
+          "robota (robot)",
+          "robotnicę",
+          "robotę domową"
+        ],
+        "correct": "працю/pracę",
+        "explanation": "PRAWDZIWY KOGNAT ale z niuansem! Ukraiński 'робота' = polskie 'robota/praca'. Tu się zgadza! ALE: polskie 'robota' jest potoczne, 'praca' — neutralne. Ukraiński 'робота' jest NEUTRALNE — to standardowe słowo na 'pracę'. 'Шукати роботу' = 'szukać pracy', nie 'szukać roboty'. Ukraiński 'праця' istnieje, ale jest bardziej formalny. Polskie rejestry: robota < praca < zajęcie. Ukraiński: робота (neutralne) = praca (neutralne polskie). Nie zachowuj polskiego pejoratywnego odcienia!"
+      },
+      {
+        "id": "pu_ct4",
+        "question": "Ukraińskie 'гарний' oznacza _____, NIE 'grzeczny'.",
+        "translation": "(Ukraińskie 'гарний' oznacza..., NIE 'grzeczny')",
+        "options": [
+          "piękny/ładny",
+          "garniturowy",
+          "grzeczny",
+          "garnuszek"
+        ],
+        "correct": "piękny/ładny",
+        "explanation": "PUŁAPKA KOGNATU! Ukraiński 'гарний' = 'piękny/ładny/dobry'. NIE 'grzeczny'! Polskie 'grzeczny' = ukraiński 'ввічливий' (grzeczny) lub 'чемний' (grzeczny). 'Гарний' to jedno z najczęstszych ukraińskich słów — wszechstronne: 'гарна погода' (ładna pogoda), 'гарний хлопець' (przystojny chłopak), 'гарна ідея' (dobry pomysł). W polskim potrzebujesz trzech słów: ładny/piękny/dobry. Ukraiński 'гарний' łączy je w jedno. Zapamiętaj: гарний = ładny!"
+      },
+      {
+        "id": "pu_ct5",
+        "question": "Ukraińskie 'кличка' oznacza _____, NIE 'kliczka wojenna'.",
+        "translation": "(Ukraińskie 'кличка' oznacza..., NIE 'kliczka wojenna')",
+        "options": [
+          "прізвисько/przezwisko",
+          "okrzyk",
+          "liczbę",
+          "kłamstwo"
+        ],
+        "correct": "прізвисько/przezwisko",
+        "explanation": "PUŁAPKA KOGNATU! Ukraiński 'кличка' = 'przezwisko/ksywka' (też imię zwierzęcia). NIE 'kliczka' (deminutyw od 'klika')! 'Як кличка твого собаки?' = 'Jak ma na imię twój pies?'. Od 'кликати' (wołać) — 'jak wołasz'. Polskie 'klika' (grupa) = ukraiński 'кліка'. Znany kognat: Witalij Kliczko — 'Кличко' to od 'кличка'. 'Кликати' (wołać/przywoływać). Polskie 'wklikać' — inne znaczenie! Rdzeń 'клик-/klik-' rozjechał się semantycznie."
+      },
+      {
+        "id": "pu_ct6",
+        "question": "Ukraińskie 'рідний' oznacza _____.",
+        "translation": "(Ukraińskie 'рідний' oznacza...)",
+        "options": [
+          "рідний/rodzinny/rodowity",
+          "rzadki",
+          "rzędowy",
+          "rydlowy"
+        ],
+        "correct": "рідний/rodzinny/rodowity",
+        "explanation": "PUŁAPKA KOGNATU! Ukraiński 'рідний' = 'rodzinny/рodzimy/bliski'. NIE 'rzadki'! Polskie 'rzadki' = ukraiński 'рідкий'. UWAGA: 'рідний' (rodzinny) vs 'рідкий' (rzadki) — podobne, ale RÓŻNE! 'Рідна мова' = 'język ojczysty/rodzinny'. 'Рідне місто' = 'rodzinne miasto'. 'Рідні' = 'rodzina/krewni'. To jedno z najpiękniejszych ukraińskich słów — wyraża więź z rodziną, ojczyzną, językiem. Polskie 'rodowity/rodzimy' jest bliskim odpowiednikiem."
+      },
+      {
+        "id": "pu_ct7",
+        "question": "Ukraińskie 'черга' oznacza _____.",
+        "translation": "(Ukraińskie 'черга' oznacza...)",
+        "options": [
+          "чергу/kolejkę",
+          "czargę (targowanie)",
+          "czerhę",
+          "czerń"
+        ],
+        "correct": "чергу/kolejkę",
+        "explanation": "BEZ POLSKIEGO KOGNATU! Ukraiński 'черга' = 'kolejka' (w sklepie, do kasy). W polskim nie ma słowa 'czerha'. 'Стояти в черзі' = 'Stać w kolejce'. 'Черговий' = 'dyżurny' (ten, który jest 'na kolejce'). Pochodne: 'почергово' (po kolei), 'чергувати' (dyżurować). To słowo nie ma oczywistego polskiego odpowiednika, ale 'черга' jest jednym z najczęstszych ukraińskich słów — pojawia się w codziennych sytuacjach: w sklepie, urzędach, szpitalach."
+      },
+      {
+        "id": "pu_ct8",
+        "question": "Ukraińskie 'мешкати' oznacza _____.",
+        "translation": "(Ukraińskie 'мешкати' oznacza...)",
+        "options": [
+          "жити/mieszkać",
+          "mieszać",
+          "meszki mieć",
+          "marszczyć"
+        ],
+        "correct": "жити/mieszkać",
+        "explanation": "PRAWDZIWY KOGNAT! Ukraiński 'мешкати' = polskie 'mieszkać'! Tu się zgadza — identyczne znaczenie. 'Мешкати' = 'жити' (syнonimy). 'Де ви мешкаєte?' = 'Gdzie pani/pan mieszka?'. Pochodne: 'мешканець' (mieszkaniec), 'мешкання' (mieszkanie — rzadkie). ALE: 'кватира' (mieszkanie — potoczne, od niem. Quartier). Polskie 'kwatera' — inna kategoria! 'Квартира' (mieszkanie/кwартira) — popularniejsze. Zapamiętaj: мешкати=mieszkać, квартира=mieszkanie."
+      },
+      {
+        "id": "pu_ct9",
+        "question": "Ukraińskie 'обід' oznacza _____.",
+        "translation": "(Ukraińskie 'обід' oznacza...)",
+        "options": [
+          "обід/обед",
+          "obiad w sensie polskim",
+          "obwód",
+          "obydwa"
+        ],
+        "correct": "обід/обед",
+        "explanation": "PRAWDZIWY KOGNAT, ale z NIUANSEM! Ukraiński 'обід' = polskie 'obiad'. ALE czasy posiłków się różnią! Ukraiński 'обід' — tradycyjnie w godzinach 12-14. Polski 'obiad' — tradycyjnie 14-16 (lub później). 'Обідня перерва' = 'przerwa obiadowa' (12-13). 'Що на обід?' = 'Co na obiad?'. Nazwy posiłków: 'сніданок' (śniadanie — od 'їсти/їдати'), 'обід' (obiad), 'вечеря' (kolacja — od 'вечір'/wieczór). Polskie: śniadanie, obiad, kolacja."
+      },
+      {
+        "id": "pu_ct10",
+        "question": "Ukraińskie 'влада' oznacza _____.",
+        "translation": "(Ukraińskie 'влада' oznacza...)",
+        "options": [
+          "владу/władzę",
+          "własność",
+          "chwałę",
+          "wkład"
+        ],
+        "correct": "владу/władzę",
+        "explanation": "PRAWDZIWY KOGNAT! Ukraiński 'влада' = polskie 'władza'. Rdzeń 'влад-/władz-' — wspólny prasłowiański. 'Влада народу' = 'władza ludu/demokracja'. 'Владіти' (władać) — polskie 'władać'. Pochodne: 'уряд' (rząd — od 'ряд/устрій'), 'держава' (państwo — od 'держати'/dzierżyć). Polskie: 'władza', 'władać', 'rząd'. Ciekawe: 'Володимир' = 'Władymir/Włодziмierz' — 'той, хто воло-діє миром' (ten, kto włada pokojem). Imiona osobowe też są kognatami!"
+      },
+      {
+        "id": "pu_ct11",
+        "question": "Ukraińskie 'свіжий' oznacza _____.",
+        "translation": "(Ukraińskie 'свіжий' oznacza...)",
+        "options": [
+          "свіжий/świeży",
+          "świetny",
+          "cwany",
+          "zwisający"
+        ],
+        "correct": "свіжий/świeży",
+        "explanation": "PRAWDZIWY KOGNAT! Ukraiński 'свіжий' = polskie 'świeży'. Rdzeń 'свіж-/śwież-' — identyczny. 'Свіжий хліб' = 'Świeży chleb'. 'Свіжі овочі' = 'Świeże warzywa'. Pochodne: 'свіжість' (świeżość), 'освіжити' (odświeżyć). Polskie: świeżość, odświeżyć. Perfekcyjna korespondencja! Reguła fonetyczna: ukraiński 'св-' = polski 'św-', ukraiński '-ій' = polski '-y'. 'Святий' (święty), 'свято' (święto), 'свідомий' (świadomy). Wzorzec св-/św- jest regularny."
+      },
+      {
+        "id": "pu_ct12",
+        "question": "Ukraińskie 'повітря' oznacza _____.",
+        "translation": "(Ukraińskie 'повітря' oznacza...)",
+        "options": [
+          "повітря/powietrze",
+          "powitanie",
+          "powieść",
+          "powieki"
+        ],
+        "correct": "повітря/powietrze",
+        "explanation": "PRAWDZIWY KOGNAT! Ukraiński 'повітря' = polskie 'powietrze'. Rdzeń 'повітр-/powietrz-' — wspólny. 'Свіже повітря' = 'Świeże powietrze'. 'Повітряний' (powietrzny), 'повітряна куля' (balon/kula powietrzna). Polskie: powietrzny, balon. Interesujące: 'повітряні сили' (siły powietrzne/lotnictwo). 'Повітря' od 'вітер' (wiatr). Polskie 'powietrze' od 'wiatr'. Identyczna derywacja! Порвняй: повітря = po-wiatr-ze → to, co niesie wiatr."
+      },
+      {
+        "id": "pu_ct13",
+        "question": "Ukraińskie 'близько' oznacza _____.",
+        "translation": "(Ukraińskie 'близько' oznacza...)",
+        "options": [
+          "близько/blisko",
+          "błyszcząco",
+          "bliźniaczo",
+          "bliziutko"
+        ],
+        "correct": "близько/blisko",
+        "explanation": "PRAWDZIWY KOGNAT! Ukraiński 'близько' = polskie 'blisko'. Rdzeń 'близ-/bliз-' — wspólny. 'Живу близько' = 'Mieszkam blisko'. Pochodne: 'ближче' (bliżej), 'найближчий' (najbliższy), 'зблизька' (z bliska), 'наблизитися' (zbliżyć się). Polskie: bliżej, najbliższy, z bliska, zbliżyć się. Korespondencja jest IDEALNA. 'Близький друг' (bliski przyjaciel). Reguła: -зьк- → -sk- (ukraiński zachowuje -зь-, polski upraszcza do -sk-)."
+      },
+      {
+        "id": "pu_ct14",
+        "question": "Ukraińskie 'байдуже' oznacza _____.",
+        "translation": "(Ukraińskie 'байдуже' oznacza...)",
+        "options": [
+          "все одно/obojętnie",
+          "baj-baj",
+          "bajdurzenie",
+          "badylarz"
+        ],
+        "correct": "все одно/obojętnie",
+        "explanation": "BEZ POLSKIEGO KOGNATU! Ukraiński 'байдуже' = 'obojętnie/wszystko jedno'. W polskim nie ma słowa 'bajduże'. 'Мені байдуже' = 'Jest mi obojętne/Nie obchodzi mnie'. To ważne codzienne wyrażenie! 'Байдужість' (obojętność/bajdużyść?). 'Байдужий' (obojętny). Etymologia niepewna — prawdopodobnie od tureckiego. To jedno z ukraińskich słów bez oczywistego polskiego odpowiednika. Zapamiętaj: 'мені байдуже' = 'mnie to nie obchodzi / jest mi obojętne'."
+      },
+      {
+        "id": "pu_ct15",
+        "question": "Ukraińskie 'цікавий' oznacza _____.",
+        "translation": "(Ukraińskie 'цікавий' oznacza...)",
+        "options": [
+          "цікавий/ciekawy",
+          "cichy",
+          "cykowy",
+          "ciskany"
+        ],
+        "correct": "цікавий/ciekawy",
+        "explanation": "PRAWDZIWY KOGNAT! Ukraiński 'цікавий' = polskie 'ciekawy'. Rdzeń 'цікав-/ciekaw-' — identyczny! 'Цікава книга' = 'Ciekawa książka'. Pochodne: 'цікавість' (ciekawość), 'цікавитися' (interesować się/ciekawić się), 'зацікавити' (zainteresować/zaciekawić). Polskie: ciekawość, ciekawić się, zaciekawić. Perfekcyjna korespondencja! 'Мене цікавить...' = 'Interesuje mnie.../Ciekawi mnie...'. To jedno z najczęstszych przymiotników — używaj śmiało!"
+      }
+    ]
+  },
+  {
+    "key": "time_expressions",
+    "name": "Вирази часу",
+    "description": "Wyrażenia czasowe",
+    "iconName": "clock",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pu_te1",
+        "question": "Яка зараз _____? — Третя година.",
+        "translation": "(Która jest teraz godzina? — Trzecia.)",
+        "options": [
+          "година",
+          "хвилина",
+          "день",
+          "ніч"
+        ],
+        "correct": "година",
+        "explanation": "Pytanie o godzinę: 'Яка зараз година?' (Która jest teraz godzina?). 'Година' (godzina) — prawdziwy kognat! Polskie 'godzina' — identyczny rdzeń. Odpowiedź: 'Третя година' (Trzecia godzina). UWAGA: ukraiński używa przymiotnika porządkowego (третя = trzecia), nie liczebnika głównego. Polskie: 'Trzecia' — identycznie! 'Година' ma też znaczenie 'pora/czas': 'нещаслива година' (nieszczęsna godzina/pora). Wieloznaczność jak w polskim!"
+      },
+      {
+        "id": "pu_te2",
+        "question": "Зустрінемося о _____ тридцять.",
+        "translation": "(Spotkamy się o wpół do szóstej / o piątej trzydzieści.)",
+        "options": [
+          "п'ятій",
+          "п'ять",
+          "п'яте",
+          "п'ятого"
+        ],
+        "correct": "п'ятій",
+        "explanation": "Godzina z minutami: 'о п'ятій тридцять' (o piątej trzydzieści). Przyimek 'о' + przymiotnik w miejscowniku (п'ятій). W polskim: 'o piątej trzydzieści' — identyczna konstrukcja! 'О' + miejscownik. 'П'ята' (piąta) → 'п'ятій' (piątej — miejscownik). Alternatywa: 'о пів на шосту' (о wpół na szóstą) — inne podejście do wpół. Polskie: 'o wpół do szóstej'. Ukraiński 'пів на шосту' = dosł. 'pół na szóstą'. Dwa systemy wyrażania połowy."
+      },
+      {
+        "id": "pu_te3",
+        "question": "Потяг відправляється за _____ хвилин.",
+        "translation": "(Pociąg odjeżdża za dwadzieścia minut.)",
+        "options": [
+          "двадцять",
+          "двадцяти",
+          "двадцятьма",
+          "двадцятьох"
+        ],
+        "correct": "двадцять",
+        "explanation": "'За двадцять хвилин' (za dwadzieścia minut) — przyimek 'за' + biernik. 'За' z biernikiem = 'za' (w przyszłości). W polskim: 'za dwadzieścia minut' — identyczna konstrukcja! 'Хвилина' (chwila/minuta) — w polskim 'chwila' = krótki moment, 'minuta' = 60 sekund. W ukraińskim 'хвилина' = 'minuta' (60 sekund). FAŁSZYWY PRZYJACIEL: ukraiński 'хвилина' ≠ polskie 'chwila'! Polskie 'chwila' = ukraiński 'мить/момент'."
+      },
+      {
+        "id": "pu_te4",
+        "question": "Вчора _____ пізно лягти спати.",
+        "translation": "(Wczoraj musiałem późno iść spać.)",
+        "options": [
+          "довелося",
+          "доведеться",
+          "доводиться",
+          "довелась"
+        ],
+        "correct": "довелося",
+        "explanation": "'Вчора довелося' (Wczoraj musiałem/przyszło mi). 'Довестися' (musieć — bezosobowo) w czasie przeszłym: 'довелося'. W polskim: 'musiałem' lub 'przyszło mi'. 'Вчора' (wczoraj) — polskie 'wczoraj'. Porównaj: вчора/wczoraj — identyczny kognat! Przysłówki czasu: 'сьогодні' (dzisiaj), 'вчора' (wczoraj), 'завтра' (jutro), 'позавчора' (przedwczoraj), 'післязавтра' (pojutrze). Polskie: dzisiaj, wczoraj, jutro, przedwczoraj, pojutrze."
+      },
+      {
+        "id": "pu_te5",
+        "question": "Ми приїхали _____ ранку.",
+        "translation": "(Przyjechaliśmy rano / z rana.)",
+        "options": [
+          "зранку",
+          "до ранку",
+          "на ранок",
+          "ранком"
+        ],
+        "correct": "зранку",
+        "explanation": "'Зранку' (z rana/rano) — przyimek 'з' + dopełniacz od 'ранок' (ranek). W polskim: 'z rana' (archaiczne) lub 'rano'. 'Зранку' = dosłownie 'z ranka'. Inne wyrażenia pory dnia: 'вранці' (rano), 'вдень' (w dzień), 'ввечері' (wieczorem), 'вночі' (w nocy). Polskie: rano, w dzień, wieczorem, w nocy. Formy też mogą być: 'ранком' (rankiem — narzędnik), 'вечором' (wieczorem). Polskie 'rankiem', 'wieczorem' — identyczne!"
+      },
+      {
+        "id": "pu_te6",
+        "question": "Повернуся _____ тиждень.",
+        "translation": "(Wrócę za tydzień.)",
+        "options": [
+          "через",
+          "за",
+          "після",
+          "до"
+        ],
+        "correct": "через",
+        "explanation": "'Через тиждень' (za tydzień / po tygodniu). 'Через' = 'za' (w odniesieniu do przyszłości) lub 'przez' (w sensie 'przezwyciężenia'). UWAGA: 'через' ma dwa znaczenia — 'za' (czas) i 'przez' (przestrzeń). 'Через тиждень' (za tydzień), 'через вулицю' (przez ulicę). W polskim: dwa odrębne słowa! 'Za' (czas) і 'przez' (przestrzeń). 'Тиждень' (tydzień) — polskie 'tydzień'. Rdzeń 'тижд-/tydz-' — wspólny prasłowiański."
+      },
+      {
+        "id": "pu_te7",
+        "question": "Зустрінемося о _____ п'ятнадцять.",
+        "translation": "(Spotkamy się o czternastej piętnaście.)",
+        "options": [
+          "чотирнадцятій",
+          "чотирнадцять",
+          "чотирнадцяти",
+          "чотирнадцяте"
+        ],
+        "correct": "чотирнадцятій",
+        "explanation": "Format 24-godzinny: 'о чотирнадцятій п'ятнадцять' (o czternastej piętnaście). Przyimek 'о' + miejscownik przymiotnika porządkowego. W polskim: 'o czternastej piętnaście' — identycznie! Ukraiński używa formatu 24h w oficjalnych kontekstach — jak polski. W codziennej mowie: 'о другій' (po południu) zamiast 'o czternastej'. 'Чотирнадцять' (czternaście) → 'чотирнадцятій' (czternastej). Polskie 'czternaście' → 'czternastej'."
+      },
+      {
+        "id": "pu_te8",
+        "question": "Він приходить _____ вівторок.",
+        "translation": "(On przychodzi we wtorek.)",
+        "options": [
+          "у",
+          "на",
+          "до",
+          "від"
+        ],
+        "correct": "у",
+        "explanation": "'У вівторок' (we wtorek). Przyimek 'у/в' + biernik dla dni tygodnia. W polskim: 'we wtorek' (w + biernik). IDENTYCZNIE! 'Вівторок' (wtorek) — polskie 'wtorek'. Od 'другий' (drugi — drugi dzień). Reguła: 'у' przed spółgłoską, 'в' przed samogłoską (eufonia ukraińska). Polskie: 'we' przed trudną grupą ('we wtorek'), 'w' standardowo ('w piątek'). Obie reguły służą eufonii — ładnemu brzmieniu."
+      },
+      {
+        "id": "pu_te9",
+        "question": "Концерт почнеться _____ восьмій вечора.",
+        "translation": "(Koncert zacznie się o ósmej wieczorem.)",
+        "options": [
+          "о",
+          "у",
+          "на",
+          "з"
+        ],
+        "correct": "о",
+        "explanation": "Godzina: 'о восьмій вечора' (o ósmej wieczorem). Przyimek 'о' + miejscownik. W polskim: 'o ósmej wieczorem' — identycznie! 'Вечір' (wieczór) → 'вечора' (wieczora — dopełniacz). 'Восьма' (ósma) → 'восьмій' (ósmej — miejscownik). System czasowy jest niemal identyczny w obu językach. 'Концерт' (koncert) — internacjonalizm. 'Почнеться' (zacznie się) — od 'почати' (zacząć, rozpocząć). Polskie 'począć/rozpocząć'."
+      },
+      {
+        "id": "pu_te10",
+        "question": "_____ я був у Львові.",
+        "translation": "(Niedawno byłem we Lwowie.)",
+        "options": [
+          "Нещодавно",
+          "Завжди",
+          "Ніколи",
+          "Часто"
+        ],
+        "correct": "Нещодавно",
+        "explanation": "'Нещодавно' (niedawno) — 'не' (nie) + 'що' (co) + 'давно' (dawno). Dosłownie: 'nie-co-dawno'. W polskim: 'niedawno'. Porównaj: не-що-давно / nie-dawno — ukraiński ma dodatkowy element 'що'. Przysłówki częstotliwości i czasu: 'завжди' (zawsze), 'ніколи' (nigdy), 'часто' (często), 'рідко' (rzadko), 'іноді' (czasami). Polskie: zawsze, nigdy, często, rzadko, czasami. 'Давно' (dawno) — polskie 'dawno'. Perfekcyjny kognat!"
+      },
+      {
+        "id": "pu_te11",
+        "question": "Крамниця працює _____ дев'ятої до двадцять першої.",
+        "translation": "(Sklep jest czynny od dziewiątej do dwudziestej pierwszej.)",
+        "options": [
+          "з",
+          "від",
+          "на",
+          "у"
+        ],
+        "correct": "з",
+        "explanation": "'З дев'ятої до двадцять першої' (od dziewiątej do dwudziestej pierwszej). 'З' = 'od' (w kontekście czasu) + dopełniacz. W polskim: 'od' + dopełniacz. 'До' = 'do'. Porównaj: з...до / od...do. Konstrukcja identyczna! 'Крамниця' (sklep) — od 'крам' (towar). Polskie 'kram' — odpowiednik! 'Крамниця' = 'kramnica' (dosłownie). Godziny otwarcia: 'працює з... до...' = 'jest czynny od... do...'."
+      },
+      {
+        "id": "pu_te12",
+        "question": "Він запізнився на _____ хвилин.",
+        "translation": "(On spóźnił się o piętnaście minut.)",
+        "options": [
+          "п'ятнадцять",
+          "п'ятнадцяти",
+          "п'ятнадцятьох",
+          "п'ятнадцяте"
+        ],
+        "correct": "п'ятнадцять",
+        "explanation": "'Запізнився на п'ятнадцять хвилин' (spóźnił się o piętnaście minut). 'На' + biernik = 'o' (różnica). 'Запізнитися' (spóźnić się) — 'за-' (za-) + 'пізно' (późno). W polskim: 'spóźnić się' — od 'późno'. Oba języki tworzą ten czasownik identycznie: 'late' → 'be late'. 'П'ятнадцять' (piętnaście) — polskie 'piętnaście'. 'Хвилин' (minut — dopełniacz lm.) — dopasz liczbę do końcówki. Tu: 5-20 + dopełniacz lm."
+      },
+      {
+        "id": "pu_te13",
+        "question": "До кінця уроку залишилося _____ хвилин.",
+        "translation": "(Do końca lekcji zostało pięć minut.)",
+        "options": [
+          "п'ять",
+          "п'яти",
+          "п'ятьох",
+          "п'яте"
+        ],
+        "correct": "п'ять",
+        "explanation": "'Залишилося п'ять хвилин' (zostało 5 minut). 'Залишитися' (zostać/pozostać). 'П'ять хвилин' — po liczebnikach 5-20: dopełniacz lm. W polskim: 'pięć minut' — identycznie! 'До кінця' (do końca) — polskie 'do końca'. 'Урок' (lekcja) — od 'рок' (los/rok). Polskie 'lekcja' — z łaciny. 'Урок' w polskim = 'urok' (czar) — FAŁSZYWY PRZYJACIEL! Ukraiński 'урок' = lekcja, polski 'urok' = czar. Zapamiętaj!"
+      },
+      {
+        "id": "pu_te14",
+        "question": "Це сталося _____ десятому столітті.",
+        "translation": "(To wydarzyło się w dziesiątym stuleciu.)",
+        "options": [
+          "у",
+          "на",
+          "до",
+          "від"
+        ],
+        "correct": "у",
+        "explanation": "'У десятому столітті' (w dziesiątym stuleciu). 'У/В' + miejscownik = 'w'. 'Столітtenя' (stulecie) — 'сто' (sto) + 'літ' (lat). Polskie: 'stulecie' — 'sto' + 'lecie'. IDENTYCZNIE! 'Десятий' (dziesiąty) → 'десятому' (dziesiątym — miejscownik). 'Сталося' (stało się/wydarzyło się) — od 'стати' (stać się). Polskie 'stało się', 'zdarzyło się'. Wyrażenia historyczne: 'до нашої ери' (przed naszą erą), 'нашої ери' (naszej ery)."
+      },
+      {
+        "id": "pu_te15",
+        "question": "Поспішай, автобус _____ за п'ять хвилин!",
+        "translation": "(Pospiesz się, autobus za pięć minut!)",
+        "options": [
+          "відходить",
+          "приходить",
+          "стоїть",
+          "їде"
+        ],
+        "correct": "відходить",
+        "explanation": "'Відходить за п'ять хвилин' (odjeżdża/odchodzi za 5 minut). 'Відходити' (odchodzić) — 'від-' (od-) + 'ходити' (chodzić). W polskim: 'odjeżdża' (autobus) — ale 'odchodzi' (pociąg). 'Поспішай!' (pospiesz się!) — od 'поспішати' (pospieszyć). Polskie: 'pospiesz się'. Rdzeń 'спіш-/śpiesz-' — wspólny! 'Автобус' (autobus) — internacjonalizm. Wyrażenie pilności: 'за п'ять хвилин' — tworzy poczucie pilności, identycznie jak polskie 'za pięć minut'."
+      }
+    ]
+  },
+  {
+    "key": "duration_frequency",
+    "name": "Тривалість і частота",
+    "description": "Trwanie i częstotliwość",
+    "iconName": "repeat",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pu_df1",
+        "question": "Я вчу українську вже _____ років.",
+        "translation": "(Uczę się ukraińskiego już trzy lata.)",
+        "options": [
+          "три",
+          "трьох",
+          "трьома",
+          "трьом"
+        ],
+        "correct": "три",
+        "explanation": "'Три роки' ale po dopasowaniu: 'три років' (z 'вже' = 'już' + biernik czasu). UWAGA: 'рік' (rok) ma NIEREGULARNĄ odmianę: 1 рік, 2-4 роки, 5+ років. W polskim: 1 rok, 2-4 lata, 5+ lat. Oba języki mają skomplikowaną liczebno-rzeczownikową zgodność! 'Вже' (już) — polskie 'już' (archaiczne 'juże'). 'Вчити' (uczyć) — polskie 'uczyć'. Rdzeń 'уч-/ucz-' wspólny. 'Вчу українську' = 'uczę się ukraińskiego'."
+      },
+      {
+        "id": "pu_df2",
+        "question": "Вона ходить на йогу _____ на тиждень.",
+        "translation": "(Ona chodzi na jogę dwa razy w tygodniu.)",
+        "options": [
+          "двічі",
+          "два",
+          "подвійно",
+          "двом"
+        ],
+        "correct": "двічі",
+        "explanation": "'Двічі на тиждень' (dwa razy w tygodniu). 'Двічі' (dwukrotnie/dwa razy) — przysłówek liczebnikowy. W polskim: 'dwa razy' lub 'dwukrotnie'. Inne: 'один раз' (jeden raz), 'тричі' (trzy razy), 'чотири рази' (cztery razy). Polskie: raz, dwa razy, trzykrotnie, cztery razy. Od 5: 'п'ять разів' (pięć razy). 'На тиждень' (na tydzień/w tygodniu). 'Тиждень' (tydzień) — polskie 'tydzień'. Wspólny prasłowiański rdzeń."
+      },
+      {
+        "id": "pu_df3",
+        "question": "Цей фільм _____ дві години.",
+        "translation": "(Ten film trwa dwie godziny.)",
+        "options": [
+          "триває",
+          "починає",
+          "закінчує",
+          "показує"
+        ],
+        "correct": "триває",
+        "explanation": "'Фільм триває дві години' (Film trwa dwie godziny). 'Тривати' (trwać) — polskie 'trwać'. Rdzeń 'трив-/trw-' — wspólny! Perfekcyjny kognat. 'Дві години' (dwie godziny) — 'дві' (dwie — żeński!) bo 'година' jest żeńska. W polskim: 'dwie godziny' — identycznie! 'Два' (m./n.) vs 'дві' (ż.) — jak polskie 'dwa/dwie'. Czas trwania: 'скільки це триває?' (ile to trwa?) = polskie 'ile to trwa?'. Identyczna konstrukcja."
+      },
+      {
+        "id": "pu_df4",
+        "question": "Я _____ бігаю щоранку.",
+        "translation": "(Ja zawsze biegam każdego ranka.)",
+        "options": [
+          "завжди",
+          "ніколи",
+          "рідко",
+          "іноді"
+        ],
+        "correct": "завжди",
+        "explanation": "'Завжди' (zawsze). Przysłówek częstotliwości — 100% czasu. 'Щоранку' (każdego ranka/co rano) — 'що-' (каżd-) + 'ранку' (ranka). 'Що-' jako prefiks = 'co-/każd-': 'щодня' (codziennie), 'щотижня' (co tydzień), 'щомісяця' (co miesiąc), 'щороку' (co roku). Polskie: codziennie, co tydzień, со miesiąc, co roku. Prefiks 'що-' jest niezwykle produktywny i regularny. 'Бігати' (biegać) — polskie 'biegać'. Rdzeń 'біг-/bieg-' wspólny."
+      },
+      {
+        "id": "pu_df5",
+        "question": "Ми _____ їздимо на море.",
+        "translation": "(My rzadko jeździmy nad morze.)",
+        "options": [
+          "рідко",
+          "завжди",
+          "часто",
+          "щодня"
+        ],
+        "correct": "рідко",
+        "explanation": "'Рідко' (rzadko) — przysłówek niskiej częstotliwości. Polskie 'rzadko' — identyczny rdzeń 'рідк-/rzadk-'! Skala częstotliwości: 'завжди' (zawsze), 'часто' (często), 'іноді' (czasami), 'рідко' (rzadko), 'ніколи' (nigdy). Polskie: zawsze, często, czasami, rzadko, nigdy. 'На море' (nad morze) — UWAGA: ukraiński 'на' = polskie 'nad' (w kontekście morza). 'Їздити' (jeździć) — polskie 'jeździć'. Rdzeń 'їзд-/jeźdź-' wspólny."
+      },
+      {
+        "id": "pu_df6",
+        "question": "Я чекав _____ годину.",
+        "translation": "(Czekałem pół godziny.)",
+        "options": [
+          "пів",
+          "цілу",
+          "одну",
+          "кожну"
+        ],
+        "correct": "пів",
+        "explanation": "'Пів години' (pół godziny). 'Пів' (pół) + dopełniacz. W polskim: 'pół godziny' — identycznie! 'Пів' = 'pół' — perfekcyjny kognat. 'Чекати' (czekać) — polskie 'czekać'. Rdzeń 'чек-/czek-' wspólny. 'Чекав' (czekałem — czas przeszły m.). Inne ułamki czasu: 'чверть години' (kwadrans/ćwierć godziny), 'півтори години' (półtorej godziny). 'Чверть' (ćwierć) — polskie 'ćwierć'. Rdzeń 'чверт-/ćwierć-' wspólny."
+      },
+      {
+        "id": "pu_df7",
+        "question": "Дощ іде вже _____ третій день.",
+        "translation": "(Deszcz pada już trzeci dzień.)",
+        "options": [
+          "вже",
+          "ще",
+          "тут",
+          "там"
+        ],
+        "correct": "вже",
+        "explanation": "'Вже третій день' (już trzeci dzień) — konstrukcja trwania. 'Вже' (już) podkreśla kontynuację. 'Дощ іде' (deszcz idzie/pada) — UWAGA: ukraiński nie mówi 'pada', a 'іде' (idzie)! Polskie 'pada deszcz' (deszcz spada). Ukraiński: 'дощ іде' (deszcz idzie). Różne metafory: polski widzi opadanie, ukraiński — ruch. 'Третій' (trzeci) — polskie 'trzeci'. 'День' (dzień) — polskie 'dzień'. Wspólne rdzenie prasłowiańskie."
+      },
+      {
+        "id": "pu_df8",
+        "question": "Вона буває тут _____ в _____ разів.",
+        "translation": "(Ona bywa tu od czasu do czasu.)",
+        "options": [
+          "час, час",
+          "раз, раз",
+          "день, день",
+          "рік, рік"
+        ],
+        "correct": "час, час",
+        "explanation": "'Час від часу' (od czasu do czasu) — stałe wyrażenie. Dosłownie: 'czas od czasu'. W polskim: 'od czasu do czasu' — prawie identycznie! 'Час' (czas) — polskie 'czas'. Rdzeń wspólny. Inne wyrażenia: 'раз у раз' (raz za razem), 'з часом' (z czasem), 'час від часу' (co jakiś czas). Polskie: raz za razem, z czasem. 'Бувати' (bywać) — polskie 'bywać'. Rdzeń 'бува-/bywa-' — identyczny! Perfekcyjny kognat."
+      },
+      {
+        "id": "pu_df9",
+        "question": "Я _____ раз відвідав Київ.",
+        "translation": "(Odwiedziłem Kijów wiele razy.)",
+        "options": [
+          "багато",
+          "мало",
+          "один",
+          "жоден"
+        ],
+        "correct": "багато",
+        "explanation": "'Багато разів' (wiele razy). 'Багато' (wiele/dużo) — бrak polskiego kognatu. Polskie 'dużo/wiele' = 'багато'. 'Відвідати' (odwiedzić) — polskie 'odwiedzić'. Rdzeń 'відвід-/odwiedz-' — wspólny! 'Київ' (Kijów) — stolicа Ukrainy. 'Раз' (raz) — polskie 'raz'. Identycznie! Kwantyfikatory: 'багато' (wiele), 'мало' (mało), 'кілька' (kilka), 'декілька' (kilka), 'трохи' (trochę). Polskie: wiele, mało, kilka, trochę."
+      },
+      {
+        "id": "pu_df10",
+        "question": "Він працює з _____ до _____ щодня.",
+        "translation": "(On pracuje od rana do wieczora codziennie.)",
+        "options": [
+          "ранку, вечора",
+          "ранок, вечір",
+          "ранком, вечором",
+          "ранки, вечори"
+        ],
+        "correct": "ранку, вечора",
+        "explanation": "'З ранку до вечора' (od rana do wieczora). 'З' + dopełniacz + 'до' + dopełniacz. W polskim: 'od rana do wieczora' — identyczna konstrukcja! 'Ранок' → 'ранку' (dopełniacz). 'Вечір' → 'вечора' (dopełniacz). 'Щодня' (codziennie) = 'що' (co) + 'дня' (dnia). Polskie 'codziennie' — inna budowa, ale to samo znaczenie. 'Працювати' (pracować) — polskie 'pracować'. Rdzeń 'працюв-/pracow-' — wspólny!"
+      },
+      {
+        "id": "pu_df11",
+        "question": "Фестиваль _____ п'ять днів.",
+        "translation": "(Festiwal trwa pięć dni.)",
+        "options": [
+          "триватиме",
+          "починає",
+          "завершує",
+          "показують"
+        ],
+        "correct": "триватиме",
+        "explanation": "'Триватиме п'ять днів' (będzie trwał pięć dni). 'Триватиме' — czas przyszły prosty od 'тривати' (trwać). Forma syntetyczna: 'тривати' + '-ме'. W polskim: 'będzie trwał' — analitycznie. 'П'ять днів' — po 5+: dopełniacz lm. 'День' → 'днів'. W polskim: 'pięć dni' — identycznie! 'Фестиваль' (festiwal) — internacjonalizm. Czas przyszły prosty '-тиме': 'робитиме' (będzie robił), 'читатиме' (będzie czytał)."
+      },
+      {
+        "id": "pu_df12",
+        "question": "Я _____ ходжу в спортзал щотижня.",
+        "translation": "(Ja regularnie chodzę na siłownię co tydzień.)",
+        "options": [
+          "регулярно",
+          "ніколи не",
+          "рідко",
+          "випадково"
+        ],
+        "correct": "регулярно",
+        "explanation": "'Регулярно' (regularnie) — internacjonalizm. 'Щотижня' (co tydzień) — 'що-' + 'тижня' (dop. od 'тиждень'). 'Спортзал' (sala gimnastyczna/siłownia) — skrót od 'спортивний зал'. 'Ходити' (chodzić) — polskie 'chodzić'. Rdzeń 'ход-/chodz-' — wspólny! Forma habitualna: 'ходжу' (chodzę — wielokrotnie). Przysłówki regularności: 'регулярно' (regularnie), 'систематично' (systematycznie), 'постійно' (stale/ciągle). Polskie: regularnie, systematycznie, ciągle."
+      },
+      {
+        "id": "pu_df13",
+        "question": "Вони бачаться _____ два тижні.",
+        "translation": "(Oni widzą się co dwa tygodnie.)",
+        "options": [
+          "кожні",
+          "всі",
+          "деякі",
+          "багато"
+        ],
+        "correct": "кожні",
+        "explanation": "'Кожні два тижні' (co dwa tygodnie/każde dwa tygodnie). 'Кожний' (każdy) — 'кожні' (co/каżde — lm.). W polskim: 'co dwa tygodnie'. Порвняй: 'кожні' = 'co'. 'Бачитися' (widzieć się) — 'бачити' (widzieć/baczyć) + '-ся' (się). Polskie 'baczyć' (uważać — archaiczne). Dzisiejsze 'widzieć się'. Rdzeń 'бач-/bacz-' — wspólny, ale polski zmienił znaczenie! 'Тижні' (tygodnie) — od 'тиждень'. Polskie 'tygodnie' — od 'tydzień'."
+      },
+      {
+        "id": "pu_df14",
+        "question": "Курс _____ три місяці.",
+        "translation": "(Kurs trwa trzy miesiące.)",
+        "options": [
+          "триває",
+          "починає",
+          "запрошує",
+          "навчає"
+        ],
+        "correct": "триває",
+        "explanation": "'Курс триває три місяці' (Kurs trwa trzy miesiące). 'Три місяці' — po 2-4: mianownik lm. 'Місяць' → 'місяці'. W polskim: 'trzy miesiące'. Porównaj: 'місяці/miesiące' — wspólny rdzeń 'місяц-/miesiąc-'! Reguła liczebnikowa: 1 місяць (miesiąc), 2-4 місяці (miesiące), 5-20 місяців (miesięcy). W polskim: 1 miesiąc, 2-4 miesiące, 5+ miesięcy. IDENTYCZNY system odmian!"
+      },
+      {
+        "id": "pu_df15",
+        "question": "Вони _____ зустрічаються по п'ятницях.",
+        "translation": "(Oni zwykle spotykają się w piątki.)",
+        "options": [
+          "зазвичай",
+          "ніколи не",
+          "рідко",
+          "навряд чи"
+        ],
+        "correct": "зазвичай",
+        "explanation": "'Зазвичай' (zazwyczaj/zwykle). Przysłówek częstotliwości — 80-90% czasu. 'По п'ятницях' (w piątki/po piątkach) — konstrukcja 'по' + miejscownik lm. = powtarzalność. W polskim: 'w piątki' (biernik lm.). Różne przyimki, ta sama funkcja. 'Зазвичай' — від 'звичай' (zwyczaj). Polskie 'zazwyczaj' / 'zwykle' — ten sam rdzeń! 'Зустрічатися' (spotykać się) — 'зустріч' (spotkanie) + '-ати' + '-ся'. Polskie 'spotkanie' — inny rdzeń."
+      }
+    ]
+  },
+  {
+    "key": "age_dates",
+    "name": "Вік і дати",
+    "description": "Wiek i daty",
+    "iconName": "calendar",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pu_ad1",
+        "question": "Мені _____ років.",
+        "translation": "(Mam dwadzieścia pięć lat.)",
+        "options": [
+          "двадцять п'ять",
+          "двадцяти п'яти",
+          "двадцятьма п'ятьма",
+          "двадцять п'ятий"
+        ],
+        "correct": "двадцять п'ять",
+        "explanation": "'Мені двадцять п'ять років' (Mam 25 lat). Dosłownie: 'Mi dwadzieścia pięć lat'. Konstrukcja: celownik osoby + liczebnik + 'років'. W polskim: 'Mam 25 lat' — 'mieć' + biernik. Ukraiński: bezosobowo z celownikiem! 'Мені' (mi) — celownik. 'Років' (lat) — dopełniacz lm. od 'рік'. Po 5-20: 'років'. Po 2-4: 'роки'. Po 1: 'рік'. Polskie: lat, lata, rok. Identyczna logika liczebnikowa!"
+      },
+      {
+        "id": "pu_ad2",
+        "question": "Коли ти _____? — Сьомого березня.",
+        "translation": "(Kiedy się urodziłeś? — Siódmego marca.)",
+        "options": [
+          "народився",
+          "приїхав",
+          "пішов",
+          "почав"
+        ],
+        "correct": "народився",
+        "explanation": "'Коли ти народився?' (Kiedy się narodziłeś/urodziłeś?). 'Народитися' (narodzić się/urodzić się). W polskim: 'narodzić się' (uroczysty) lub 'urodzić się' (potoczny). 'Сьомого березня' (siódmego marca) — dopełniacz daty! Reguła dat: liczebnik porządkowy w dopełniaczu + miesiąc w dopełniaczu. W polskim: identycznie! 'Siódmego marca'. 'Березень' (marzec) — od 'береза' (brzoza). Polskie 'marzec' — od Marsa. Różna etymologia, różne nazwy miesięcy!"
+      },
+      {
+        "id": "pu_ad3",
+        "question": "Сьогодні _____ жовтня дві тисячі двадцять п'ятого року.",
+        "translation": "(Dzisiaj jest piętnasty października 2025 roku.)",
+        "options": [
+          "п'ятнадцяте",
+          "п'ятнадцять",
+          "п'ятнадцятий",
+          "п'ятнадцятого"
+        ],
+        "correct": "п'ятнадцяте",
+        "explanation": "Data: 'п'ятнадцяте жовтня' (piętnastego października). W ukraińskim data: liczebnik porządkowy w mianowniku nijakim ('п'ятнадцяте') + miesiąc w dopełniaczu. W polskim: dopełniacz ('piętnastego'). RÓŻNICA: ukraiński — mianownik nijaki, polski — dopełniacz. 'Жовтень' (październik) — od 'жовтий' (żółty — pora żółtych liści). Polskie 'październik' — od 'październik/пакла'. 'Дві тисячі двадцять п'ятого року' = '2025 roku' — dopełniacz."
+      },
+      {
+        "id": "pu_ad4",
+        "question": "Він на три _____ старший за мене.",
+        "translation": "(On jest o trzy lata starszy ode mnie.)",
+        "options": [
+          "роки",
+          "років",
+          "рік",
+          "року"
+        ],
+        "correct": "роки",
+        "explanation": "'На три роки старший' (o trzy lata starszy). Po 2-4: 'роки' (lata — mian. lm.). W polskim: 'o trzy lata'. 'Старший' (starszy) — polskie 'starszy'. Rdzeń 'стар-/starsz-' — wspólny! Porównania wieku: 'старший за мене' (starszy ode mnie), 'молодший за мене' (młodszy ode mnie). Przyimek 'за' + biernik = 'od' + dopełniacz w polskim. 'Молодший' (młodszy) — polskie 'młodszy'. Rdzeń 'молод-/młodsz-' — wspólny."
+      },
+      {
+        "id": "pu_ad5",
+        "question": "Моя бабуся _____ у тисяча дев'ятсот п'ятдесятому році.",
+        "translation": "(Moja babcia urodziła się w 1950 roku.)",
+        "options": [
+          "народилася",
+          "народився",
+          "народилось",
+          "народились"
+        ],
+        "correct": "народилася",
+        "explanation": "'Народилася' (urodziła się) — żeński czas przeszły od 'народитися'. Końcówka '-лася' = '-ła się'. W polskim: 'urodziła się' — '-ła się'. Identyczne! 'Бабуся' (babcia/babunia) — polskie 'babusia'. Zdrobnienie od 'баба'. 'Тисяча дев'ятсот п'ятдесятому' (tysiąc dziewięćset pięćdziesiątym). Rok: 'у ... році' (w ... roku) — miejscownik. W polskim: 'w ... roku' — identycznie! 'Рік' → 'році' (miejscownik)."
+      },
+      {
+        "id": "pu_ad6",
+        "question": "День незалежності України — _____ серпня.",
+        "translation": "(Dzień Niepodległości Ukrainy — dwudziestego czwartego sierpnia.)",
+        "options": [
+          "двадцять четвертого",
+          "двадцять четверте",
+          "двадцять чотири",
+          "двадцять четвертий"
+        ],
+        "correct": "двадцять четвертого",
+        "explanation": "'Двадцять четвертого серпня' (24 sierpnia — dopełniacz). Data w dopełniaczu, gdy odpowiadamy na pytanie 'якого?' (jakiego?). W polskim: 'dwudziestego czwartego sierpnia' — identycznie! 'Серпень' (sierpień) — polskie 'sierpień'. Wspólny rdzeń 'серп-/sierp-'! Od 'серп' (sierp — narzędzie żniwne). Sierpień = miesiąc żniw. 'День незалежності' (Dzień Niepodległości) — 24 sierpnia 1991 roku. Ważna data historyczna!"
+      },
+      {
+        "id": "pu_ad7",
+        "question": "Скільки тобі _____?",
+        "translation": "(Ile masz lat?)",
+        "options": [
+          "років",
+          "роки",
+          "рік",
+          "року"
+        ],
+        "correct": "років",
+        "explanation": "'Скільки тобі років?' (Ile masz lat?). 'Скільки' (ile) + celownik ('тобі' — tobie) + dopełniacz lm. ('років'). W polskim: 'Ile masz lat?' — 'mieć' + biernik. Różna konstrukcja! Ukraiński: bezosobowo z celownikiem. Polski: osobiście z 'mieć'. 'Скільки' (ile) — od 'кільки/kil-'. Polskie 'ile' — inny rdzeń. 'Тобі' (tobie) — polskie 'tobie'. Rdzeń 'тоб-/tob-' — wspólny! Perfekcyjny kognat zaimkowy."
+      },
+      {
+        "id": "pu_ad8",
+        "question": "Ця будівля побудована у _____ столітті.",
+        "translation": "(Ten budynek zbudowano w osiemnastym stuleciu.)",
+        "options": [
+          "вісімнадцятому",
+          "вісімнадцять",
+          "вісімнадцяти",
+          "вісімнадцяте"
+        ],
+        "correct": "вісімнадцятому",
+        "explanation": "'У вісімнадцятому столітті' (w osiemnastym stuleciu). Miejscownik: 'вісімнадцятий' → 'вісімнадцятому'. W polskim: 'w osiemnastym' — identycznie! 'Будівля' (budynek/budowla) — polskie 'budowla'. Rdzeń 'будівл-/budowl-' — wspólny! 'Побудована' (zbudowana) — imiesłów bierny od 'побудувати' (zbudować). Polskie: 'zbudowana'. 'По-' + 'будувати' = 'po-' + 'budować'. Identyczna derywacja prefiksalna!"
+      },
+      {
+        "id": "pu_ad9",
+        "question": "Мій день народження _____.",
+        "translation": "(Moje urodziny są jutro.)",
+        "options": [
+          "завтра",
+          "вчора",
+          "сьогодні",
+          "позавчора"
+        ],
+        "correct": "завтра",
+        "explanation": "'День народження завтра' (urodziny jutro). 'День народження' (dzień narodzin/urodziny) — dosłownie: 'dzień narodzenia'. W polskim: 'urodziny' — od 'urodzić'. 'Завтра' (jutro) — NIE polskie 'zawtra'. Polskie 'jutro' = ukraiński 'завтра'. FAŁSZYWY PRZYJACIEL: 'завтра' wygląda jak polskie 'zawtra' (nie istnieje). Zapamiętaj: завтра = jutro, вчора = wczoraj, сьогодні = dzisiaj, позавчора = przedwczoraj."
+      },
+      {
+        "id": "pu_ad10",
+        "question": "Дитині виповнився _____.",
+        "translation": "(Dziecku skończył się rok.)",
+        "options": [
+          "рік",
+          "роки",
+          "років",
+          "року"
+        ],
+        "correct": "рік",
+        "explanation": "'Виповнився рік' (skończył się rok / ukończył rok). 'Виповнитися' (napełnić się/ukończyć — o wieku). 'Дитині' (dziecku — celownik od 'дитина'/dziecko). W polskim: 'dziecko skończyło rok'. Konstrukcja ukraińska: celownik + 'виповнився/лась' + wiek. To bezosobowa konstrukcja — jak inne wyrażenia wieku. 'Дитина' (dziecko) — polskie 'dziecina' (archaiczne). Rdzeń 'дитин-/dziecin-' — wspólny. 'Рік' (rok) — polskie 'rok'."
+      },
+      {
+        "id": "pu_ad11",
+        "question": "Вона вийшла заміж у _____ років.",
+        "translation": "(Ona wyszła za mąż w dwadzieścia lat.)",
+        "options": [
+          "двадцять",
+          "двадцяти",
+          "двадцятьох",
+          "двадцяте"
+        ],
+        "correct": "двадцять",
+        "explanation": "'Вийти заміж' (wyjść za mąż) — IDENTYCZNE wyrażenie! 'Вийшла заміж у двадцять років' (wyszła za mąż w 20 lat). 'Заміж' — od 'за' + 'муж' (za mężem). Polskie 'za mąż' — TA SAMA budowa! 'У двадцять років' (w dwadzieścia lat) — biernik. Porównanie: мужчiny 'одружуватися' (ożenić się), жеnysk 'вийти заміж' (wyjść za mąż). Polskie: żenić się, wychodzić za mąż. Obie kultury mają asymetrię leksykalną!"
+      },
+      {
+        "id": "pu_ad12",
+        "question": "Новий рік — це _____.",
+        "translation": "(Nowy Rok to...)",
+        "options": [
+          "перше січня",
+          "перший січень",
+          "першого січня",
+          "першому січню"
+        ],
+        "correct": "перше січня",
+        "explanation": "'Перше січня' (pierwszy stycznia) — data w mianowniku nijakim. 'Перший' → 'перше' (nijaki). W polskim: 'pierwszy stycznia'. UWAGA: ukraiński używa nijakiego ('перше'), polski — męskiego ('pierwszy'). To gramatyczna różnica! 'Січень' (styczeń) — polskie 'styczeń'. Rdzeń 'січ-/stycz-' — od 'сікти/stykać' (ciąć). Miesiąc mrozu, który 'tnie'. 'Новий Рік' (Nowy Rok) — polskie 'Nowy Rok'. Identyczny zwrot świąteczny."
+      },
+      {
+        "id": "pu_ad13",
+        "question": "Який _____ сьогодні?",
+        "translation": "(Jaki jest dzisiaj dzień?)",
+        "options": [
+          "день",
+          "дні",
+          "дня",
+          "дню"
+        ],
+        "correct": "день",
+        "explanation": "'Який сьогодні день?' (Jaki jest dzisiaj dzień?) — pytanie o dzień tygodnia. Odpowiedź: 'Сьогодні понеділок' (Dzisiaj poniedziałek). 'День' (dzień) — polskie 'dzień'. 'Який' (jaki) — polskie 'jaki'. Rdzeń 'як-/jak-' — wspólny! Dni tygodnia: 'понеділок' (poniedziałek), 'вівторок' (wtorek), 'середа' (środa), 'четвер' (czwartek), 'п'ятниця' (piątek), 'субота' (sobota), 'неділя' (niedziela). Porównaj z polskimi!"
+      },
+      {
+        "id": "pu_ad14",
+        "question": "Наступного _____ буде свято.",
+        "translation": "(W przyszłym tygodniu będzie święto.)",
+        "options": [
+          "тижня",
+          "тиждень",
+          "тижні",
+          "тижню"
+        ],
+        "correct": "тижня",
+        "explanation": "'Наступного тижня' (następnego tygodnia/w przyszłym tygodniu). Dopełniacz od 'тиждень' → 'тижня'. W polskim: 'w przyszłym tygodniu' (miejscownik) — INNA konstrukcja! Ukraiński: 'наступного' + dopełniacz. Polski: 'w przyszłym' + miejscownik. 'Наступний' (następny) — polskie 'następny'. Rdzeń 'наступ-/następ-' — wspólny! 'Свято' (święto) — polskie 'święto'. Rdzeń 'свят-/święt-' — wspólny. 'Буде' (będzie) — polskie 'będzie'."
+      },
+      {
+        "id": "pu_ad15",
+        "question": "Він пішов на _____ у шістдесят п'ять років.",
+        "translation": "(On poszedł na emeryturę w sześćdziesiąt pięć lat.)",
+        "options": [
+          "пенсію",
+          "відпустку",
+          "роботу",
+          "канікули"
+        ],
+        "correct": "пенсію",
+        "explanation": "'Піти на пенсію' (pójść na emeryturę). 'Пенсія' (emerytura/pensja) — UWAGA: ukraiński 'пенсія' = 'emerytura', NIE 'pensja' (wynagrodzenie). Polskie 'pensja' = wynagrodzenie. Ukraiński 'заробітна плата' = pensja/wynagrodzenie. FAŁSZYWY PRZYJACIEL! 'Шістдесят п'ять' (sześćdziesiąt pięć). Polskie 'sześćdziesiąt pięć'. 'Піти на пенсію' = 'pójść na emeryturę'. Polskie 'przejść na emeryturę' — inny czasownik (przejść vs пійти/pójść)."
+      }
+    ]
+  },
+  {
+    "key": "seasons_months",
+    "name": "Пори року і місяці",
+    "description": "Pory roku i miesiące",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pu_sm1",
+        "question": "Найтепліша пора року — це _____.",
+        "translation": "(Najcieplejsza pora roku to...)",
+        "options": [
+          "літо",
+          "зима",
+          "весна",
+          "осінь"
+        ],
+        "correct": "літо",
+        "explanation": "'Літо' (lato) — najcieplejsza pora. Polskie 'lato' — identyczne! Rdzeń 'літ-/lat-' — wspólny. Pory roku: 'весна' (wiosna), 'літо' (lato), 'осінь' (jesień), 'зима' (zima). Polskie: wiosna, lato, jesień, zima. Kognaty: 'літо/lato' ✓, 'зима/zima' ✓, 'весна/wiosna' ✓ (wes-na). 'Осінь' vs 'jesień' — różne rdzenie! Ukraiński 'осінь' od 'osen' (prasłowiański), polski 'jesień' — od tego samego, ale z j- protetycznym."
+      },
+      {
+        "id": "pu_sm2",
+        "question": "Перший місяць зими — це _____.",
+        "translation": "(Pierwszy miesiąc zimy to...)",
+        "options": [
+          "грудень",
+          "січень",
+          "лютий",
+          "листопад"
+        ],
+        "correct": "грудень",
+        "explanation": "'Грудень' (grudzień) — od 'груда' (gruda/bryła zamarzniętej ziemi). Polskie 'grudzień' — TA SAMA etymologia! Rdzeń 'груд-/grudz-' — wspólny. Miesiące zimowe: 'грудень' (grudzień), 'січень' (styczeń), 'лютий' (luty). Polskie: grudzień, styczeń, luty. Kognaty: 'грудень/grudzień' ✓, 'лютий/luty' ✓ (od 'лютий/luty' — srogi, mroźny). 'Січень/styczeń' — oba od 'siec/ciąć' (tnący mróz). Piękna wspólna terminologia!"
+      },
+      {
+        "id": "pu_sm3",
+        "question": "_____ починається тепла погода.",
+        "translation": "(Wiosną zaczyna się ciepła pogoda.)",
+        "options": [
+          "Навесні",
+          "Взимку",
+          "Восени",
+          "Влітку"
+        ],
+        "correct": "Навесні",
+        "explanation": "'Навесні' (wiosną/na wiosnę). Przysłówek od 'весна'. W polskim: 'wiosną' (narzędnik). Formy przysłówkowe pór roku: 'навесні' (wiosną), 'влітку' (latem), 'восени' (jesienią), 'взимку' (zimą). Polskie: wiosną, latem, jesienią, zimą. Ukraińskie formy mają prefiksy: 'на-', 'в-' + specjalny rdzeń. Polskie — narzędnik. Różne strategie, ten sam sens. 'Тепла погода' (ciepła pogoda) — 'теплий' (ciepły), 'погода' (pogoda). Oba kognaty!"
+      },
+      {
+        "id": "pu_sm4",
+        "question": "Листопад — це _____ місяць осені.",
+        "translation": "(Listopad to ostatni miesiąc jesieni.)",
+        "options": [
+          "останній",
+          "перший",
+          "другий",
+          "середній"
+        ],
+        "correct": "останній",
+        "explanation": "'Листопад' (listopad) — IDENTYCZNIE jak w polskim! 'Лист' (liść) + 'падати' (padać). Listopa — kiedy liście padają. Polskie 'listopad' — TA SAMA budowa! Miesiące jesienne: 'вересень' (wrzesień — od 'верес'/wrzos), 'жовтень' (październik — od 'жовтий'/żółty), 'листопад' (listopad). Polskie: wrzesień (od wrzos), październik (?), listopad. 'Останній' (ostatni) — polskie 'ostatni'. Rdzeń 'остан-/ostatn-' — wspólny!"
+      },
+      {
+        "id": "pu_sm5",
+        "question": "У _____ найдовші ночі.",
+        "translation": "(W grudniu najdłuższe noce.)",
+        "options": [
+          "грудні",
+          "грудень",
+          "грудня",
+          "груднем"
+        ],
+        "correct": "грудні",
+        "explanation": "'У грудні' (w grudniu) — 'у/в' + miejscownik. 'Грудень' → 'грудні'. W polskim: 'w grudniu' — identycznie! Miejscowniki miesięcy: 'у січні' (w styczniu), 'у лютому' (w lutym), 'у березні' (w marcu), 'у квітні' (w kwietniu), 'у травні' (w maju), 'у червні' (w czerwcu). Polskie: w styczniu, w lutym, w marcu, w kwietniu, w maju, w czerwcu. Te same przypadki gramatyczne!"
+      },
+      {
+        "id": "pu_sm6",
+        "question": "Березень — це перший місяць _____.",
+        "translation": "(Marzec to pierwszy miesiąc wiosny.)",
+        "options": [
+          "весни",
+          "літа",
+          "осені",
+          "зими"
+        ],
+        "correct": "весни",
+        "explanation": "'Весни' (wiosny — dopełniacz od 'весна'). 'Березень' (marzec) — od 'береза' (brzoza). Miesiąc, gdy brzozy budzą się z zimowego snu i zaczynają puszczać sok. W polskim: 'marzec' — od Marsa (łacińska nazwa). RÓŻNA etymologia! Ukraińskie nazwy miesięcy są RODZIME (słowiańskie), polskie — częściowo łacińskie. Miesiące wiosenne: 'березень' (marzec), 'квітень' (kwiecień — od 'квіти'/kwiaty), 'травень' (maj — od 'трава'/trawa)."
+      },
+      {
+        "id": "pu_sm7",
+        "question": "Назва місяця 'квітень' походить від слова _____.",
+        "translation": "(Nazwa miesiąca 'квітень' pochodzi od słowa...)",
+        "options": [
+          "квіти",
+          "квиток",
+          "квітка",
+          "кватира"
+        ],
+        "correct": "квіти",
+        "explanation": "'Квітень' (kwiecień) — od 'квіти' (kwiaty). Miesiąc kwitnięcia! Polskie 'kwiecień' — od 'kwiecie/kwiaty'. IDENTYCZNA etymologia! To jeden z pięknych przykładów wspólnej nazwy rodzimej. Porównaj wszystkie miesiące: 'січень' (styczeń — cięcie mrozu), 'лютий' (luty — srogi), 'березень' (marzec — brzozy), 'квітень' (kwiecień — kwiaty), 'травень' (maj — trawa), 'червень' (czerwiec — robak barwierski). Fascynujące nazwy!"
+      },
+      {
+        "id": "pu_sm8",
+        "question": "_____ буває дуже спекотно.",
+        "translation": "(Latem bywa bardzo gorąco.)",
+        "options": [
+          "Влітку",
+          "Взимку",
+          "Навесні",
+          "Восени"
+        ],
+        "correct": "Влітку",
+        "explanation": "'Влітку' (latem). Przysłówek pory roku od 'літо'. 'Спекотно' (upalnie/gorąco) — od 'спека' (upał). Polskie 'piekło' — daleki etymologiczny krewny (od 'piec'). 'Дуже' (bardzo) — polskie 'duże' = wielkie! FAŁSZYWY PRZYJACIEL: 'дуже' = bardzo, NIE duże! Polskie 'bardzo' = ukraiński 'дуже' lub 'барzo' (archaiczne). 'Буває' (bywa) — polskie 'bywa'. Rdzeń 'бува-/bywa-' — perfekcyjny kognat! Identyczne formy habitualne."
+      },
+      {
+        "id": "pu_sm9",
+        "question": "Липень — це другий місяць _____.",
+        "translation": "(Lipiec to drugi miesiąc lata.)",
+        "options": [
+          "літа",
+          "весни",
+          "осені",
+          "зими"
+        ],
+        "correct": "літа",
+        "explanation": "'Літа' (lata — dopełniacz od 'літо'). 'Липень' (lipiec) — od 'липа' (lipa). Miesiąc kwitnienia lip! Polskie 'lipiec' — od 'lipa'. IDENTYCZNA etymologia! Miesiące letnie: 'червень' (czerwiec — od 'червець'/robak barwierski dający czerwony kolor), 'липень' (lipiec — od lipy), 'серпень' (sierpień — od sierpa). Polskie: czerwiec, lipiec, sierpień. WSZYSTKIE trzy mają wspólne etymologie! Piękna wspólnota nazewnicza."
+      },
+      {
+        "id": "pu_sm10",
+        "question": "Вересень — це пора, коли діти йдуть до _____.",
+        "translation": "(Wrzesień to pora, kiedy dzieci idą do szkoły.)",
+        "options": [
+          "школи",
+          "школа",
+          "школу",
+          "школою"
+        ],
+        "correct": "школи",
+        "explanation": "'До школи' (do szkoły) — 'до' + dopełniacz. W polskim: 'do szkoły' — identycznie! 'Вересень' (wrzesień) — od 'верес' (wrzos). Polskie 'wrzesień' — od 'wrzos'. IDENTYCZNA etymologia! Miesiąc kwitnięcia wrzosu. 'Школа' (szkoła) — polskie 'szkoła'. Internacjonalizm z greckiego. 'Діти' (dzieci) — polskie 'dzieci'. Rdzeń 'діт-/dziec-' — wspólny. 'Йдуть' (idą) — polskie 'idą'. Rdzeń 'йд-/id-' — wspólny."
+      },
+      {
+        "id": "pu_sm11",
+        "question": "У якому _____ ти народився?",
+        "translation": "(W jakim miesiącu się urodziłeś?)",
+        "options": [
+          "місяці",
+          "місяць",
+          "місяця",
+          "місяцю"
+        ],
+        "correct": "місяці",
+        "explanation": "'У якому місяці' (w jakim miesiącu) — miejscownik. 'Місяць' → 'місяці'. W polskim: 'w jakim miesiącu' — 'miesiąc' → 'miesiącu'. UWAGA: 'місяць' = zarówno 'miesiąc' jak i 'księżyc'! W polskim: 'miesiąc' и 'księżyc' to RÓŻNE słowa. Ukraiński łączy oba значenia w jednym słowie (jak angielski 'moon/month'). 'Якому' (jakim — miejscownik od 'який'/jaki). Polskie 'jakim' — od 'jaki'. Rdzeń 'як-/jak-' — wspólny."
+      },
+      {
+        "id": "pu_sm12",
+        "question": "Перший сніг зазвичай випадає у _____.",
+        "translation": "(Pierwszy śnieg zazwyczaj pada w listopadzie.)",
+        "options": [
+          "листопаді",
+          "листопад",
+          "листопада",
+          "листопадом"
+        ],
+        "correct": "листопаді",
+        "explanation": "'У листопаді' (w listopadzie) — miejscownik. 'Листопад' → 'листопаді'. W polskim: 'w listopadzie' — 'listopad' → 'listopadzie'. IDENTYCZNE! 'Сніг' (śnieg) — polskie 'śnieg'. Rdzeń 'сніг-/śnieg-' — wspólny! 'Випадає' (wypada) — polskie 'pada' (o śniegu). 'Зазвичай' (zazwyczaj) — polskie 'zazwyczaj'. Rdzeń 'звичай-/zwyczaj-' — wspólny. Trzy kognaty w jednym zdaniu — piękne!"
+      },
+      {
+        "id": "pu_sm13",
+        "question": "_____ найкоротший місяць року.",
+        "translation": "(Luty jest najkrótszym miesiącem roku.)",
+        "options": [
+          "Лютий",
+          "Січень",
+          "Грудень",
+          "Березень"
+        ],
+        "correct": "Лютий",
+        "explanation": "'Лютий' (luty) — najkrótszy miesiąc (28/29 dni). Polskie 'luty' — od 'luty' (srogi, mroźny). Ukraiński 'лютий' — TA SAMA etymologia! 'Luty mróz' — 'лютий мороз'. 'Найкоротший' (najkrótszy) — 'най-' (naj-) + 'коротший' (krótszy). Polskie: 'najkrótszy'. 'Короткий' (krótki) — polskie 'krótki'. Rdzeń 'коротк-/krótk-' — wspólny! 'Рік' (rok) — polskie 'rok'. 'Року' (roku — dopełniacz). Identycznie!"
+      },
+      {
+        "id": "pu_sm14",
+        "question": "Травень — це місяць, коли росте _____.",
+        "translation": "(Maj to miesiąc, kiedy rośnie trawa.)",
+        "options": [
+          "трава",
+          "квіти",
+          "листя",
+          "сніг"
+        ],
+        "correct": "трава",
+        "explanation": "'Травень' (maj) — od 'трава' (trawa). Miesiąc rosnącej trawy! Polskie 'maj' — od łacińskiego 'Maius'. RÓŻNA etymologia! ALE polskie 'trawień' (archaiczne) = maj. Porównaj: 'трава' (trawa) — polskie 'trawa'. Rdzeń 'трав-/traw-' — perfekcyjny kognat! 'Росте' (rośnie) — polskie 'rośnie'. Rdzeń 'рост-/rośn-' od 'рости/rosnąć'. Wspólne korzenie w nazwach miesięcy pokazują bliskie kulturowe związki między narodami słowiańskimi."
+      },
+      {
+        "id": "pu_sm15",
+        "question": "Восени листя на деревах стає _____.",
+        "translation": "(Jesienią liście na drzewach stają się żółte.)",
+        "options": [
+          "жовтим",
+          "зеленим",
+          "білим",
+          "синім"
+        ],
+        "correct": "жовтим",
+        "explanation": "'Жовтим' (żółtym — narzędnik od 'жовтий'/żółty). 'Стати' + narzędnik = 'stać się' + narzędnik. W polskim: 'stają się żółte' — z mianownikiem! Różnica gramatyczna: ukr. — narzędnik, pol. — mianownik. 'Листя' (liście — zbiorowy) — od 'лист' (liść). 'Дерева' (drzewa — lm.) — od 'дерево' (drzewo). Polskie: liście, drzewa. 'Жовтий' (żółty) — polskie 'żółty'. Rdzeń 'жовт-/żółt-' — wspólny! Stąd 'жовтень' (październik — żółty miesiąc)."
+      }
+    ]
+  },
+  {
+    "key": "days_time_of_day",
+    "name": "Дні тижня і час доби",
+    "description": "Dni tygodnia i pora dnia",
+    "iconName": "sun.and.moon",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pu_dtd1",
+        "question": "Перший день робочого тижня — це _____.",
+        "translation": "(Pierwszy dzień roboczego tygodnia to...)",
+        "options": [
+          "понеділок",
+          "вівторок",
+          "середа",
+          "неділя"
+        ],
+        "correct": "понеділок",
+        "explanation": "'Понеділок' (poniedziałek) — od 'по неділі' (po niedzieli). Polskie 'poniedziałek' — TA SAMA etymologia! 'Po niedzieli'. Oba języki traktują niedzielę jako punkt odniesienia. Dni tygodnia to fascynujący zbiór kognatów: понеділок/poniedziałek ✓, вівторок/wtorek ✓, середа/środa ✓, четвер/czwartek ✓, п'ятниця/piątek ✓, субота/sobota ✓, неділя/niedziela ✓. WSZYSTKIE 7 dni to kognaty! Piękna wspólnota słowiańska."
+      },
+      {
+        "id": "pu_dtd2",
+        "question": "Середа — це _____ день тижня.",
+        "translation": "(Środa to środkowy dzień tygodnia.)",
+        "options": [
+          "середній",
+          "перший",
+          "останній",
+          "другий"
+        ],
+        "correct": "середній",
+        "explanation": "'Середа' (środa) — від 'середина' (ередина). Dzień w ŚRODKU tygodnia! Polskie 'środa' — od 'środek'. IDENTYCZNA etymologia! 'Середній' (średni/środkowy) — polskie 'średni' lub 'środkowy'. Rdzeń 'серед-/środ-' — wspólny! Porównaj system: 'середина' (средина/środek), 'середній' (średni), 'посередині' (pośrodku/w środku). Polskie: środek, średni, pośrodku. Ta korespondencja jest regularna i pomaga zapamiętywać ukraińskie słowa."
+      },
+      {
+        "id": "pu_dtd3",
+        "question": "Четвер — це _____ день тижня.",
+        "translation": "(Czwartek to czwarty dzień tygodnia.)",
+        "options": [
+          "четвертий",
+          "третій",
+          "п'ятий",
+          "шостий"
+        ],
+        "correct": "четвертий",
+        "explanation": "'Четвер' (czwartek) — od 'четвертий' (czwarty). Dzień czwarty! Polskie 'czwartek' — od 'czwarty'. IDENTYCZNA etymologia! 'Четвертий' (czwarty) — rdzeń 'четверт-/czwart-' wspólny. System numeryczny w dniach: 'вівторок' (wtorek — drugi), 'середа' (środa — środkowy/trzeci), 'четвер' (czwartek — czwarty), 'п'ятниця' (piątek — piąty). Oba języki numerują dni od poniedziałku. Identyczny system!"
+      },
+      {
+        "id": "pu_dtd4",
+        "question": "Вихідні дні — це _____ і _____.",
+        "translation": "(Dni wolne to sobota i niedziela.)",
+        "options": [
+          "субота, неділя",
+          "п'ятниця, субота",
+          "четвер, п'ятниця",
+          "неділя, понеділок"
+        ],
+        "correct": "субота, неділя",
+        "explanation": "'Субота і неділя' (sobota i niedziela) — дни вихідні (dni wolne). 'Вихідні' (wolne) — od 'виходити' (wychodzić). Dosłownie: 'wy-chodne' — dni wyjścia z pracy. 'Субота' (sobota) — od hebrajskiego 'szabat'. Polskie 'sobota' — TA SAMA etymologia! 'Неділя' (niedziela) — od 'не ділати' (nie działać/nie pracować). Polskie 'niedziela' — TA SAMA etymologia! Oba języki mają identyczne pochodzenie nazw weekendowych dni."
+      },
+      {
+        "id": "pu_dtd5",
+        "question": "Зараз _____, сонце сходить.",
+        "translation": "(Teraz rano, słońce wschodzi.)",
+        "options": [
+          "ранок",
+          "вечір",
+          "ніч",
+          "день"
+        ],
+        "correct": "ранок",
+        "explanation": "'Ранок' (ranek/rano) — pora wschodu słońca. 'Сонце сходить' (słońce wschodzi). Polskie 'ranek' — rdzeń 'ран-/ran-' wspólny! Pory doby: 'ранок' (ranek — 6-12), 'день' (dzień — 12-18), 'вечір' (wieczór — 18-22), 'ніч' (noc — 22-6). Polskie: ranek, dzień, wieczór, noc. Wszystkie kognaty! 'Сходить' (wschodzi — dosł. 'zchodzi') — polskie 'wschodzi'. 'Сходити' ≠ polskie 'schodzić'! Polskie 'schodzić' = ukraiński 'сходити вниз'."
+      },
+      {
+        "id": "pu_dtd6",
+        "question": "Добрий _____! — Привіт!",
+        "translation": "(Dzień dobry! — Cześć!)",
+        "options": [
+          "день",
+          "ранок",
+          "вечір",
+          "ніч"
+        ],
+        "correct": "день",
+        "explanation": "'Добрий день!' (Dzień dobry!) — standardowe pozdrowienie. W polskim: 'Dzień dobry!'. IDENTYCZNIE, ale odwrócona kolejność! Ukr.: przymiotnik + rzeczownik ('добрий день'). Pol.: rzeczownik + przymiotnik ('dzień dobry'). Inne pozdrowienia: 'Доброго ранку!' (Dobrego ranka!), 'Добрий вечір!' (Dobry wieczór!), 'Доброї ночі!' (Dobranoc!). Polskie: Dzień dobry, Dobry wieczór, Dobranoc. 'Привіт!' (Cześć!/Hej!) — od 'привітання' (powitanie)."
+      },
+      {
+        "id": "pu_dtd7",
+        "question": "_____ вечором ми дивилися фільм.",
+        "translation": "(Wczoraj wieczorem oglądaliśmy film.)",
+        "options": [
+          "Вчора",
+          "Сьогодні",
+          "Завтра",
+          "Позавчора"
+        ],
+        "correct": "Вчора",
+        "explanation": "'Вчора ввечері' (wczoraj wieczorem). 'Вчора' (wczoraj) — polskie 'wczoraj'. Perfekcyjny kognat! 'Ввечері' (wieczorem) — przysłówkowa forma od 'вечір'. 'Дивитися' (oglądać/patrzeć/dziwić się) — PUŁAPKA: 'дивитися' = 'oglądać', NIE 'dziwić się'! Polskie 'dziwić się' = ukraiński 'дивуватися'. 'Дивитися фільм' = 'oglądać film'. 'Фільм' (film) — internacjonalizm. Rdzeń 'вчор-/wczor-' — wspólny prasłowiański."
+      },
+      {
+        "id": "pu_dtd8",
+        "question": "О котрій годині ти _____ спати?",
+        "translation": "(O której godzinie kładziesz się spać?)",
+        "options": [
+          "лягаєш",
+          "встаєш",
+          "їси",
+          "працюєш"
+        ],
+        "correct": "лягаєш",
+        "explanation": "'Лягати спати' (kłaść się spać). 'Лягати' (kłaść się/układać się). W polskim: 'kłaść się'. 'О котрій годині' (o której godzinie) — pytanie o czas. 'Котра' (która) — polskie 'która'. Rdzeń 'котр-/któr-' — wspólny! Rutyna dnia: 'вставати' (wstawać), 'снідати' (jeść śniadanie), 'обідати' (jeść obiad), 'вечеряти' (jeść kolację), 'лягати спати' (kłaść się spać). Polskie: wstawać, jeść śniadanie, obiad, kolację, kłaść się."
+      },
+      {
+        "id": "pu_dtd9",
+        "question": "У п'ятницю _____ ми йдемо в ресторан.",
+        "translation": "(W piątek wieczorem idziemy do restauracji.)",
+        "options": [
+          "ввечері",
+          "вранці",
+          "вдень",
+          "вночі"
+        ],
+        "correct": "ввечері",
+        "explanation": "'У п'ятницю ввечері' (w piątek wieczorem). 'П'ятниця' (piątek) — od 'п'ять' (pięć — piąty dzień). Polskie 'piątek' — od 'pięć'. IDENTYCZNA etymologia! 'Ввечері' (wieczorem) — od 'вечір' (wieczór). Formy przysłówkowe pory doby: 'вранmeet' (rano), 'вдень' (w dzień), 'ввечері' (wieczorem), 'вночі' (w nocy). Polskie: rano, w dzień, wieczorem, w nocy. 'Ресторан' (restauracja) — internacjonalizm."
+      },
+      {
+        "id": "pu_dtd10",
+        "question": "Опівночі годинник показує _____.",
+        "translation": "(O północy zegar wskazuje...)",
+        "options": [
+          "дванадцяту",
+          "шосту",
+          "третю",
+          "дев'яту"
+        ],
+        "correct": "дванадцяту",
+        "explanation": "'Опівночі' (o północy) — 'о' + 'північ' (północ). Zegar: 'дванадцята' (dwunasta) — 12:00/00:00. W polskim: 'o północy' — 'о' + 'północ'. IDENTYCZNIE! 'Північ' ma dwa znaczenia: 1) 'północ' (pora — 00:00), 2) 'północ' (kierunek — North). Polskie 'północ' — też oba значenia! 'Годинник' (zegarek/zegar) — od 'година' (godzina). Polskie 'zegarek' — od niem. 'Seiger'. Ukraiński zachował rodzime słowo, polski zapożyczył."
+      },
+      {
+        "id": "pu_dtd11",
+        "question": "Вона працює _____ зміну.",
+        "translation": "(Ona pracuje na nocnej zmianie.)",
+        "options": [
+          "нічну",
+          "денну",
+          "ранкову",
+          "вечірню"
+        ],
+        "correct": "нічну",
+        "explanation": "'Нічна зміна' (nocna zmiana). 'Нічний' (nocny) — od 'ніч' (noc). Polskie 'nocny' — od 'noc'. Rdzeń 'ніч-/noc-' — wspólny! 'Зміна' (zmiana) — polskie 'zmiana'. Rdzeń 'змін-/zmian-' — perfekcyjny kognat! Przymiotniki od pór doby: 'ранковий' (poranny/ranny), 'денний' (dzienny), 'вечірній' (wieczorny), 'нічний' (nocny). Polskie: ranny/poranny, dzienny, wieczorny, nocny. Wszystkie kognaty!"
+      },
+      {
+        "id": "pu_dtd12",
+        "question": "У суботу я зазвичай _____ пізніше.",
+        "translation": "(W sobotę zazwyczaj wstaję później.)",
+        "options": [
+          "встаю",
+          "лягаю",
+          "їду",
+          "працюю"
+        ],
+        "correct": "встаю",
+        "explanation": "'Встаю пізніше' (wstaję później). 'Вставати' (wstawać) — polskie 'wstawać'. Rdzeń 'встав-/wstaw-' — wspólny! 'Пізніше' (później) — od 'пізно' (późno). Polskie 'później'. Rdzeń 'пізн-/późn-' — wspólny! 'Субота' (sobota) — polskie 'sobota'. Od hebrajskiego 'шабат/szabat'. 'Зазвичай' (zazwyczaj). W jednym zdaniu cztery perfekcyjne kognaty: вставати/wstawać, пізніше/później, субота/sobota, зазвичай/zazwyczaj. Piękne!"
+      },
+      {
+        "id": "pu_dtd13",
+        "question": "Другий день тижня — це _____.",
+        "translation": "(Drugi dzień tygodnia to...)",
+        "options": [
+          "вівторок",
+          "понеділок",
+          "середа",
+          "четвер"
+        ],
+        "correct": "вівторок",
+        "explanation": "'Вівторок' (wtorek) — od 'другий' (drugi). Dosłownie: 'wtóry' dzień. Polskie 'wtorek' — od 'wtóry' (archaiczne 'drugi'). IDENTYCZNA etymologia! 'Вів-' = 'wt-' (historyczna zmiana). Archaiczne polskie 'wtóry' = ukraiński 'вторий' (rzadkie). Współczesne: 'другий' (drugi). Porównaj dni numeryczne: вівторок (2.), середа (3./środek), четвер (4.), п'ятниця (5.). Polskie: wtorek (2.), środa (śr.), czwartek (4.), piątek (5.)."
+      },
+      {
+        "id": "pu_dtd14",
+        "question": "Сонце _____ о сьомій ранку.",
+        "translation": "(Słońce wschodzi o siódmej rano.)",
+        "options": [
+          "сходить",
+          "заходить",
+          "падає",
+          "літає"
+        ],
+        "correct": "сходить",
+        "explanation": "'Сходить' (wschodzi) — 'с-' + 'ходити' (z-chodzić, ale w sensie 'wz-chodzić'). Polskie 'wschodzi' — 'wz-' + 'chodzić'. Ten sam prefiks 'pod/wz', ale ukraiński upraszcza do 'с-'. 'Заходить' (zachodzi) — 'за-' + 'ходити'. Polskie 'zachodzi'. 'Сонце сходить/заходить' = 'Słońce wschodzi/zachodzi'. 'О сьомій' (o siódmej) — miejscownik. 'Сьомий' (siódmy) — polskie 'siódmy'. Rdzeń сьом-/siódm- — wspólny!"
+      },
+      {
+        "id": "pu_dtd15",
+        "question": "Доброго _____! — Приємних снів!",
+        "translation": "(Dobrej nocy! — Miłych snów!)",
+        "options": [
+          "вечора",
+          "ранку",
+          "дня",
+          "тижня"
+        ],
+        "correct": "вечора",
+        "explanation": "'Доброго вечора!' (Dobry wieczór! — dosł. 'Dobrego wieczoru!'). UWAGA: ukraiński używa DOPEŁNIACZA w pozdrowieniach wieczornych i nocnych! 'Доброго вечора' (Dobrego wieczora), 'Доброї ночі' (Dobrej nocy). Ale 'Добрий день' (Dzień dobry — MIANOWNIK). W polskim: 'Dobry wieczór' (mianownik), 'Dobranoc' (złożenie). 'Приємних снів!' (Miłych/przyjemnych snów!) — 'сон' (sen) → 'снів' (snów — dopełniacz lm.). Polskie 'snów' — identycznie!"
+      }
+    ]
+  },
+  {
+    "key": "asking_directions",
+    "name": "Запитування дороги",
+    "description": "Pytanie o drogę",
+    "iconName": "map",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pu_dir1",
+        "question": "Підкажіть, _____, як пройти до вокзалу?",
+        "translation": "(Proszę powiedzieć, jak dojść do dworca?)",
+        "options": [
+          "будь ласка",
+          "дякую",
+          "вибачте",
+          "привіт"
+        ],
+        "correct": "будь ласка",
+        "explanation": "'Будь ласка' (proszę) — dosłownie: 'bądź łaska'. W polskim: 'proszę' — od 'prosić'. 'Підказати' (podpowiedzieć) — 'під-' (pod-) + 'казати' (kazać/mówić). W polskim: 'podpowiedzieć'. 'Пройти до' (dojść do/przejść do). 'Вокзал' (dworzec) — z angielskiego 'Vauxhall'. Polskie 'dworzec' — rodzime. 'Як' (jak) — polskie 'jak'. Rdzeń 'як-/jak-' — wspólny!"
+      },
+      {
+        "id": "pu_dir2",
+        "question": "Ідіть _____ до кінця вулиці.",
+        "translation": "(Idźcie prosto do końca ulicy.)",
+        "options": [
+          "прямо",
+          "направо",
+          "наліво",
+          "назад"
+        ],
+        "correct": "прямо",
+        "explanation": "'Прямо' (prosto) — od 'прямий' (prosty). Polskie 'prosto' — od 'prosty'. Rdzeń 'прям-/prost-' — RÓŻNE, ale identyczne значenie! Kierunki: 'прямо' (prosto), 'направо' (na prawo), 'наліво' (na lewo), 'назад' (do tyłu). Polskie: prosto, na prawo, na lewo, do tyłu. 'Вулиця' (ulica) — polskie 'ulica'. Rdzeń 'вулиц-/ulic-' — wspólny! 'Кінець' (koniec) — polskie 'koniec'. Rdzeń 'кінец-/koniec-' — wspólny!"
+      },
+      {
+        "id": "pu_dir3",
+        "question": "Поверніть _____ на перехресті.",
+        "translation": "(Skręćcie na prawo na skrzyżowaniu.)",
+        "options": [
+          "направо",
+          "наліво",
+          "прямо",
+          "назад"
+        ],
+        "correct": "направо",
+        "explanation": "'Направо' (na prawo) — 'на-' + 'право'. W polskim: 'na prawo'. IDENTYCZNIE! 'Повернути' (skręcić/obrócić) — od 'поворот' (skręt/obrót). 'Перехрестя' (skrzyżowanie) — od 'перехрест' (krzyż). Dosłownie: 'prze-krzyżowanie'. Polskie 'skrzyżowanie' — od 'krzyż'. TEN SAM rdzeń 'хрест-/krzyż-'! 'Перехрестя' = polskie 'prze-krzyżowanie' (gdyby istniało). 'На перехресті' — miejscownik. Polskie: 'na skrzyżowaniu'."
+      },
+      {
+        "id": "pu_dir4",
+        "question": "Музей знаходиться _____ від центру.",
+        "translation": "(Muzeum znajduje się niedaleko od centrum.)",
+        "options": [
+          "недалеко",
+          "далеко",
+          "близько",
+          "поруч"
+        ],
+        "correct": "недалеко",
+        "explanation": "'Недалеко від' (niedaleko od). 'Не-' + 'далеко' (daleko). Polskie 'niedaleko' — identyczna budowa! Rdzeń 'далек-/dalek-' — wspólny. Wyrażenia odległości: 'далеко' (daleko), 'недалеко' (niedaleko), 'близько' (blisko), 'поруч' (obok), 'навпроти' (naprzeciwko). Polskie: daleko, niedaleko, blisko, obok, naprzeciwko. 'Знаходитися' (znajdować się) — polskie 'znajdować się'. Rdzeń 'знаход-/znajdow-' — wspólny! 'Музей' (muzeum) — internacjonalizm."
+      },
+      {
+        "id": "pu_dir5",
+        "question": "Пройдіть _____ метрів і побачите банк.",
+        "translation": "(Przejdźcie dwieście metrów i zobaczycie bank.)",
+        "options": [
+          "двісті",
+          "двіста",
+          "двох",
+          "два"
+        ],
+        "correct": "двісті",
+        "explanation": "'Двісті метрів' (dwieście metrów). 'Двісті' (dwieście) — ukr. forma 200. W polskim: 'dwieście'. Rdzeń 'двіст-/dwieśc-' — wspólny! 'Пройти' (przejść) — polskie 'przejść'. Rdzeń 'пройд-/przejdź-' — wspólny. 'Побачити' (zobaczyć) — 'по-' + 'бачити' (baczyć/widzieć). Polskie 'zobaczyć'. 'Бачити' — polskie archaiczne 'baczyć' (uważać). Dzisiejsze znaczenie ukraińskie = 'widzieć'. 'Банк' (bank) — internacjonalizm."
+      },
+      {
+        "id": "pu_dir6",
+        "question": "Аптека знаходиться _____ будинку.",
+        "translation": "(Apteka znajduje się naprzeciwko budynku.)",
+        "options": [
+          "навпроти",
+          "поруч з",
+          "біля",
+          "за"
+        ],
+        "correct": "навпроти",
+        "explanation": "'Навпроти' (naprzeciwko) + dopełniacz. Polskie 'naprzeciwko' — identyczne значenie! 'На-' + 'в-' + 'проти' (проти = przeciw). Polskie: 'na-' + 'przeciw-ko'. Obu formach rdzeń 'проти/przeciw'. Prefiksy lokalizacyjne: 'поруч з' (obok), 'біля' (koło/przy), 'за' (za), 'перед' (przed), 'між' (między). Polskie: obok, koło/przy, za, przed, między. Все kognaty! 'Аптека' (apteka) — polskie 'apteka'. 'Будинок' (budynek) — polskie 'budynek'. Rdzeń 'будин-/budyn-'!"
+      },
+      {
+        "id": "pu_dir7",
+        "question": "Де знаходиться найближча _____?",
+        "translation": "(Gdzie znajduje się najbliższa stacja metra?)",
+        "options": [
+          "станція метро",
+          "зупинка",
+          "вулиця",
+          "площа"
+        ],
+        "correct": "станція метро",
+        "explanation": "'Станція метро' (stacja metra). 'Станція' (stacja) — polskie 'stacja'. Internacjonalizm od łac. 'statio'. 'Метро' (metro) — internacjonalizm. 'Найближча' (najbliższa) — 'най-' (naj-) + 'ближча' (bliższa). Polskie: 'najbliższa'. IDENTYCZNA budowa! 'Де' (gdzie) — polskie 'gdzie'. 'Зупинка' (przystanek) — od 'зупинити' (zatrzymać). Polskie 'przystanek' — od 'przystanąć'. Obie formy od 'zatrzymać się'."
+      },
+      {
+        "id": "pu_dir8",
+        "question": "Вам потрібно _____ міст і повернути праворуч.",
+        "translation": "(Musicie przejść przez most i skręcić w prawo.)",
+        "options": [
+          "перейти",
+          "пройти",
+          "обійти",
+          "зайти"
+        ],
+        "correct": "перейти",
+        "explanation": "'Перейти міст' (przejść przez most). 'Перейти' (przejść przez) — 'пере-' (prze-) + 'йти' (iść). W polskim: 'przejść'. 'Пере-' = 'prze-'. IDENTYCZNY prefiks! 'Міст' (most) — polskie 'most'. Rdzeń 'міст-/most-' — wspólny! 'Повернути праворуч' (skręcić w prawo). 'Праворуч' (na prawo/w prawo) — 'право' + 'руч' (рука — ręka). Dosłownie: 'prawa ręka'. Polskie 'w prawo'. Różne słowa, wspólny rdzeń 'прав-/praw-'!"
+      },
+      {
+        "id": "pu_dir9",
+        "question": "Це _____ звідси?",
+        "translation": "(Czy to daleko stąd?)",
+        "options": [
+          "далеко",
+          "близько",
+          "недалеко",
+          "поруч"
+        ],
+        "correct": "далеко",
+        "explanation": "'Далеко звідси?' (Daleko stąd?). 'Далеко' (daleko) — polskie 'daleko'. Perfekcyjny kognat! 'Звідси' (stąd) — 'звід-' (z-) + 'си' (tu). W polskim: 'stąd'. 'Звідси' = dosłownie 'z-tu'. Inne: 'звідти' (stamtąd), 'звідки' (skąd). Polskie: stąd, stamtąd, skąd. 'Звід-' = 'stąd-/skąd-'. Pytanie o odległość: 'Скільки це йти?' (Ile to iść?), 'Скільки це їхати?' (Ile to jechać?). Polskie: 'Ile tо iść?', 'Ile to jechać?'."
+      },
+      {
+        "id": "pu_dir10",
+        "question": "Зупинка автобуса знаходиться за _____.",
+        "translation": "(Przystanek autobusowy znajduje się za rogiem.)",
+        "options": [
+          "ріжком",
+          "рогом",
+          "кутом",
+          "стіною"
+        ],
+        "correct": "ріжком",
+        "explanation": "'За ріжком' (za rogiem). UWAGA: 'ріг' (róg) i 'ріжок' (rożek — zdrobnienie) oba mogą oznaczać 'narożnik'. 'За ріжком' — potoczne wyrażeize. 'Ріг' (róg) — polskie 'róg'. Rdzeń 'ріг-/róg-' — wspólny! W ukraińskim 'ріг' = 'róg' (narożnik/zakręt), tak jak w polskim. 'Зупинка' (przystanek) — od 'зупинити' (zatrzymać). 'Автобус' (autobus) — internacjonalizm. 'Знаходиться за' — 'znajduje się za' — identyczna konstrukcja!"
+      },
+      {
+        "id": "pu_dir11",
+        "question": "Вибачте, я _____. Де ми зараз?",
+        "translation": "(Przepraszam, zgubiłem się. Gdzie teraz jesteśmy?)",
+        "options": [
+          "заблукав",
+          "запізнився",
+          "забув",
+          "зупинився"
+        ],
+        "correct": "заблукав",
+        "explanation": "'Заблукати' (zgubić się/zabłądzić) — 'за-' + 'блукати' (błądzić). Polskie 'zabłądzić/zgubić się'. Rdzeń 'блук-/błądz-' — wspólny kognat! 'Вибачте' (przepraszam) — od 'вибачити' (wybaczyć). Polskie 'wybaczyć' — IDENTYCZNE! 'Ви-' = 'wy-', 'бачити' = 'baczyć'. Perfekcyjny kognat! 'Де ми зараз?' (Gdzie my teraz?). 'Зараз' (teraz) — polskie 'teraz'. Rdzeń 'зараз-/teraz-' — RÓŻNE! To nie kognat."
+      },
+      {
+        "id": "pu_dir12",
+        "question": "Пошта знаходиться _____ вулиці Шевченка.",
+        "translation": "(Poczta znajduje się na ulicy Szewczenki.)",
+        "options": [
+          "на",
+          "у",
+          "біля",
+          "за"
+        ],
+        "correct": "на",
+        "explanation": "'На вулиці Шевченка' (na ulicy Szewczenki). 'На' + miejscownik — dla ulic. W polskim: 'na ulicy' — identycznie! 'Пошта' (poczta) — polskie 'poczta'. Rdzeń 'пошт-/poczt-' — wspólny! 'Шевченко' — najsłynniejszy ukraiński poeta Тарас Шевченко. Liczne ulice noszą jego imię. 'Вулиця' (ulica) — polskie 'ulica'. W adresach: 'вулиця + dopełniacz nazwy'. Polskie: 'ulica + przymiotnik/dopełniacz'. Podobna struktura adresowa."
+      },
+      {
+        "id": "pu_dir13",
+        "question": "Ідіть уздовж _____ і поверніть наліво.",
+        "translation": "(Idźcie wzdłuż rzeki i skręćcie w lewo.)",
+        "options": [
+          "річки",
+          "річка",
+          "річку",
+          "річкою"
+        ],
+        "correct": "річки",
+        "explanation": "'Уздовж річки' (wzdłuż rzeki) — 'уздовж' + dopełniacz. 'Уздовж' (wzdłuż) — polskie 'wzdłuż'. Rdzeń 'вздовж-/wzdłuż-' — wspólny! 'Річка' (rzeka/rzeczka) → 'річки' (dopełniacz). Polskie: 'rzeka' → 'rzeki'. 'Річка' = polskie zdrobnienie 'rzeczka'. Podstawowa forma: 'ріка' (rzeka). 'Наліво' (na lewo) — polskie 'na lewo'. IDENTYCZNIE! 'Повернути' (skręcić) — od 'поворот' (zwrot/skręt). Polskie 'obrócić/skręcić'."
+      },
+      {
+        "id": "pu_dir14",
+        "question": "Лікарня знаходиться _____ парку.",
+        "translation": "(Szpital znajduje się obok parku.)",
+        "options": [
+          "біля",
+          "під",
+          "над",
+          "перед"
+        ],
+        "correct": "біля",
+        "explanation": "'Біля парку' (obok parku / koło parku). 'Біля' (koło/obok/przy) + dopełniacz. Polskie 'koło/obok/przy'. 'Біля' pochodzi od 'біл-' (blisko). Przyimki lokalizacji: 'біля' (koło), 'поруч з' (obok), 'поряд з' (obok), 'перед' (przed), 'за' (za), 'над' (nad), 'під' (pod). Polskie: koło, obok, przed, za, nad, pod. 'Лікарня' (szpital) — od 'лікар' (lekarz). Polskie 'lekarz' — rdzeń 'лікар-/lekarz-' wspólny!"
+      },
+      {
+        "id": "pu_dir15",
+        "question": "Вам потрібно _____ цю вулицю.",
+        "translation": "(Musicie przejść przez tę ulicę.)",
+        "options": [
+          "перейти",
+          "обійти",
+          "зайти",
+          "вийти"
+        ],
+        "correct": "перейти",
+        "explanation": "'Перейти вулицю' (przejść przez ulicę). 'Перейти' (przejść/przekroczyć) — 'пере-' (prze-) + 'йти' (iść). Polskie 'przejść'. Prefiks 'пере-'/'prze-' — produktywny w obu językach! Porównaj inne: 'перечитати' (przeczytać), 'переписати' (przepisać), 'перекласти' (przetłumaczyć). Polskie: przeczytać, przepisać, przetłumaczyć. 'Пере-' = 'prze-' — regularna korespondencja. 'Цю' (tę — biernik ż.) od 'ця' (ta). Polskie 'tę' — od 'ta'. Identycznie!"
+      }
+    ]
+  },
+  {
+    "key": "travel_transport",
+    "name": "Подорожі і транспорт",
+    "description": "Podróże i transport",
+    "iconName": "airplane",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pu_tt1",
+        "question": "Я хочу купити квиток на _____ до Одеси.",
+        "translation": "(Chcę kupić bilet na pociąg do Odessy.)",
+        "options": [
+          "потяг",
+          "літак",
+          "автобус",
+          "корабель"
+        ],
+        "correct": "потяг",
+        "explanation": "'Потяг' (pociąg) — polskie 'pociąg'. Rdzeń 'потяг-/pociąg-' — wspólny! Od 'тягнути' (ciągnąć). Dosłownie: 'po-ciąg' — to, co ciągnie. 'Квиток' (bilet) — od 'квит' (kwit). Polskie 'kwit' — ten sam rdzeń! Ale polskie 'bilet' — z francuskiego. 'Купити' (kupić) — polskie 'kupić'. Rdzeń 'куп-/kup-' — perfekcyjny kognat! 'До Одеси' (do Odessy) — 'до' + dopełniacz. Polskie 'do Odessy' — identycznie!"
+      },
+      {
+        "id": "pu_tt2",
+        "question": "О котрій _____ відправляється потяг?",
+        "translation": "(O której godzinie odjeżdża pociąg?)",
+        "options": [
+          "годині",
+          "годину",
+          "година",
+          "годинами"
+        ],
+        "correct": "годині",
+        "explanation": "'О котрій годині' (o której godzinie) — місцевик. 'Година' → 'годині'. W polskim: 'o której godzinie' — lugar. 'Відправлятися' (odjeżdżać/wyruszać) — 'від-' (od-) + 'правити' (kierować). W polskim: 'odprawiać' ma inne znaczenie (kontrola). Polskie 'odjeżdżać' — od 'jeżdżać'. 'Котрий' (który) — polskie 'który'. Rdzeń 'котр-/któr-' — wspólny! W ukraińskim 'котрий' i 'який' — obydwa znaczą 'który'."
+      },
+      {
+        "id": "pu_tt3",
+        "question": "Нам потрібно _____ на автобус номер п'ять.",
+        "translation": "(Musimy przesiąść się na autobus numer pięć.)",
+        "options": [
+          "пересісти",
+          "сісти",
+          "зійти",
+          "їхати"
+        ],
+        "correct": "пересісти",
+        "explanation": "'Пересісти' (przesiąść się) — 'пере-' (prze-) + 'сісти' (siąść). Polskie 'przesiąść się' — IDENTYCZNA budowa! 'Пере-' = 'prze-', 'сісти' = 'siąść'. 'Номер п'ять' (numer pięć). 'Номер' (numer) — internacjonalizm. Inne słowa transportowe: 'маршрут' (trasa/marszruta), 'рейс' (kurs/lot), 'квиток' (bilet), 'пасажир' (pasażer). Polskie: trasa, kurs/lot, bilet, pasażer. Wiele internacjonalizmów!"
+      },
+      {
+        "id": "pu_tt4",
+        "question": "Ми _____ літаком до Варшави.",
+        "translation": "(Lecimy samolotem do Warszawy.)",
+        "options": [
+          "летимо",
+          "їдемо",
+          "йдемо",
+          "пливемо"
+        ],
+        "correct": "летимо",
+        "explanation": "'Летіти' (lecieć) — polskie 'lecieć'. Rdzeń 'лет-/lec-' — wspólny! 'Літак' (samolot) — od 'літати' (latać). Polskie 'samolot' = 'sam' + 'lot'. Ukraiński 'літак' = 'latacz'. Różne nazwy, ten sam rdzeń 'літ-/lat-/lot-'. 'До Варшави' (do Warszawy). 'Варшава' (Warszawa) — wprost z polskiego. Środki transportu + narzędnik: 'літаком' (samolotem), 'потягом' (pociągiem), 'автобусом' (autobusem), 'машиною' (samochodem)."
+      },
+      {
+        "id": "pu_tt5",
+        "question": "Квиток в один _____, будь ласка.",
+        "translation": "(Bilet w jedną stronę, proszę.)",
+        "options": [
+          "бік",
+          "кінець",
+          "напрямок",
+          "край"
+        ],
+        "correct": "бік",
+        "explanation": "'В один бік' (w jedną stronę / w jeden bok). 'Бік' (bok/strona) — polskie 'bok'. Rdzeń 'бік-/bok-' — wspólny! Ale polskie wyrażenie: 'w jedną stronę'. Ukraiński używa 'бік' (bok), polski — 'stronę'. Typy biletów: 'в один бік' (w jedną stronę), 'туди й назад' (tam i z powrotem). Polskie: w jedną stronę, tam i z powrotem. 'Туди' (tam — kierunek), 'назад' (z powrotem). Polskie: tam, z powrotem."
+      },
+      {
+        "id": "pu_tt6",
+        "question": "Автобус _____ через десять хвилин.",
+        "translation": "(Autobus przyjeżdża za dziesięć minut.)",
+        "options": [
+          "приїжджає",
+          "відїжджає",
+          "зупиняється",
+          "чекає"
+        ],
+        "correct": "приїжджає",
+        "explanation": "'Приїжджає' (przyjeżdża) — 'при-' (przy-) + 'їжджати' (jeżdżać). Polskie 'przyjeżdża' — IDENTYCZNA budowa! 'При-' = 'przy-', 'їжджати' = 'jeżdżać'. 'Через десять хвилин' (za dziesięć minut). 'Через' tu = 'za' (czas). Polskie 'za' (czas). UWAGA: 'через' = 'za' (czas) lub 'przez' (przestrzeń). Dwie funkcje w jednym słowie! 'Хвилин' (minut — dop. lm.) — od 'хвилина' (minuta). Reguła: 5+ → dopełniacz lm."
+      },
+      {
+        "id": "pu_tt7",
+        "question": "Де можна _____ таксі?",
+        "translation": "(Gdzie można złapać taksówkę?)",
+        "options": [
+          "зловити",
+          "купити",
+          "знайти",
+          "чекати"
+        ],
+        "correct": "зловити",
+        "explanation": "'Зловити таксі' (złapać taksówkę). 'Зловити' (złapać/złowić) — polskie 'złowić'. Rdzeń 'злов-/złow-' — wspólny! Polskie 'złapać taksówkę' — potoczne. 'Таксі' (taksówka) — internacjonalizm. W ukraińskim nieodmienne! 'Де можна' (gdzie można) — polskie 'gdzie można'. 'Де' = 'gdzie', 'можна' = 'można'. 'Можна' (można) — polskie 'można'. Rdzeń 'можн-/możn-' — perfekcyjny kognat! Obie kalkulations identyczne."
+      },
+      {
+        "id": "pu_tt8",
+        "question": "Ми _____ на кораблі через Чорне море.",
+        "translation": "(Płynęliśmy statkiem przez Morze Czarne.)",
+        "options": [
+          "пливли",
+          "летіли",
+          "їхали",
+          "йшли"
+        ],
+        "correct": "пливли",
+        "explanation": "'Пливти' (płynąć) — polskie 'płynąć'. Rdzeń 'плив-/płyn-' — wspólny! 'Корабель' (statek/okręt) — polskie 'korab' (archaiczne). Dzisiejsze polskie 'statek'. 'Чорне море' (Morze Czarne) — 'чорний' (czarny), 'море' (morze). Polskie: 'czarny', 'morze'. Oba kognaty! 'Чорний/czarny' — rdzeń 'чорн-/czarn-' wspólny. 'Через' tu = 'przez' (przestrzeń). 'Пливли' — czas przeszły lm. Polskie 'płynęli/płynęliśmy'."
+      },
+      {
+        "id": "pu_tt9",
+        "question": "На якому _____ ви їдете?",
+        "translation": "(Na jakim peronie jedziecie?)",
+        "options": [
+          "пероні",
+          "перон",
+          "перону",
+          "пероном"
+        ],
+        "correct": "пероні",
+        "explanation": "'На пероні' (na peronie) — miejscownik od 'перон'. Polskie 'peron' — ten sam rdzeń (z francuskiego). 'На якому' (na jakim) — 'який' → 'якому' (miejscownik). Polskie: 'na jakim'. Dworcowe słownictwo: 'вокзал' (dworzec), 'перон' (peron), 'колія' (tor/kolej), 'каса' (kasa), 'зал очікування' (poczekalnia). Polskie: dworzec, peron, tor/kolej, kasa, poczekalnia. 'Каса' (kasa) — polskie 'kasa'. 'Колія' (kolej) — polskie 'kolej'!"
+      },
+      {
+        "id": "pu_tt10",
+        "question": "Я хочу _____ місце біля вікна.",
+        "translation": "(Chcę zarezerwować miejsce przy oknie.)",
+        "options": [
+          "забронювати",
+          "купити",
+          "знайти",
+          "зайняти"
+        ],
+        "correct": "забронювати",
+        "explanation": "'Забронювати' (zarezerwować/zabronić) — od 'бронь' (broń/rezerwacja). Polskie 'zarezerwować'. 'Місце' (miejsce) — polskie 'miejsce'. Rdzeń 'місц-/miejsc-' — wspólny! Perfekcyjny kognat! 'Біля вікна' (przy oknie/koło okna). 'Вікно' (okno) — polskie 'okno'. Rdzeń 'вікн-/okn-' — wspólny! Typy miejsc: 'біля вікна' (przy oknie), 'біля проходу' (przy przejściu), 'верхнє' (górne — w pociągu), 'нижнє' (dolne — w pociągu)."
+      },
+      {
+        "id": "pu_tt11",
+        "question": "Потяг _____ вчасно.",
+        "translation": "(Pociąg przyjechał na czas.)",
+        "options": [
+          "прибув",
+          "запізнився",
+          "зламався",
+          "зупинився"
+        ],
+        "correct": "прибув",
+        "explanation": "'Прибути' (przybyć) — 'при-' (przy-) + 'бути' (być). Polskie 'przybyć' — IDENTYCZNIE! 'При-' = 'przy-', 'бути' = 'być'. 'Вчасно' (na czas/w porę) — 'в-' + 'часно' (od 'час'/czas). Polskie 'w porę' lub 'na czas'. 'В-час-но' = dosłownie 'w-czas-owo'. Rdzeń 'час-/czas-' — wspólny! Antonim: 'запізно/із запізненням' (z opóźnieniem). 'Запізнення' (opóźnienie) — od 'пізно' (późno). Polskie 'opóźnienie' — od 'późno'. Identycznie!"
+      },
+      {
+        "id": "pu_tt12",
+        "question": "Чи є _____ рейси до Кракова?",
+        "translation": "(Czy są bezpośrednie loty do Krakowa?)",
+        "options": [
+          "прямі",
+          "дешеві",
+          "ранкові",
+          "вечірні"
+        ],
+        "correct": "прямі",
+        "explanation": "'Прямі рейси' (bezpośrednie loty/kursy). 'Прямий' (prosty/bezpośredni) — polskie 'prosty'. 'Прямі' — lm. 'Рейс' (lot/kurs/rejs) — polskie 'rejs'. Rdzeń 'рейс-/rejs-' — wspólny! Od niemieckiego 'Reise'. 'Краків' (Kraków) — ukraińska nazwa polskiego miasta. 'До Кракова' — dopełniacz. Polskie: 'do Krakowa'. Pytanie 'Чи є' (czy jest/czy są) — polskie 'czy jest/są'. 'Чи' = 'czy'. Rdzeń 'чи/czy' — wspólny!"
+      },
+      {
+        "id": "pu_tt13",
+        "question": "Пасажири повинні _____ паспорт на контролі.",
+        "translation": "(Pasażerowie muszą pokazać paszport na kontroli.)",
+        "options": [
+          "показати",
+          "сховати",
+          "загубити",
+          "забути"
+        ],
+        "correct": "показати",
+        "explanation": "'Показати' (показać/okazać) — polskie 'pokazać'. Rdzeń 'показ-/pokaz-' — wspólny! Perfekcyjny kognat. 'Пасажир' (pasażer) — polskie 'pasażer'. Internacjonalizm. 'Паспорт' (paszport) — polskie 'paszport'. 'Контроль' (kontrola) — polskie 'kontrola'. 'Повинні' (powinni/muszą) — polskie 'powinni'. Rdzeń 'повинн-/powinn-' — wspólny! W jednym zdaniu aż 4 kognaty: показати/pokazać, пасажир/pasażer, паспорт/paszport, повинні/powinni!"
+      },
+      {
+        "id": "pu_tt14",
+        "question": "Літак _____ о шостій ранку.",
+        "translation": "(Samolot ląduje o szóstej rano.)",
+        "options": [
+          "приземляється",
+          "злітає",
+          "летить",
+          "чекає"
+        ],
+        "correct": "приземляється",
+        "explanation": "'Приземлятися' (lądować/przyziemiać się) — 'при-' (при-) + 'земля' (земля/ziemia) + '-ляти' + '-ся'. Dosłownie: 'przy-ziem-iać się'. Polskie 'lądować' — od 'ląd'. Ale polskie 'przyziemiać się' istnieje! Rdzeń 'земл-/ziem-' — wspólny! 'Злітати' (startować/wzlatywać) — 'з-' + 'літати' (latać). Polskie 'wzlatywać'. 'О шостій ранку' (o szóstej rano). 'Шостий' (szósty) — polskie 'szósty'. Rdzeń 'шост-/szóst-' — wspólny!"
+      },
+      {
+        "id": "pu_tt15",
+        "question": "Нам потрібно _____ на наступній зупинці.",
+        "translation": "(Musimy wysiąść na następnym przystanku.)",
+        "options": [
+          "вийти",
+          "сісти",
+          "пересісти",
+          "зачекати"
+        ],
+        "correct": "вийти",
+        "explanation": "'Вийти' (wyjść/wysiąść) — 'ви-' (wy-) + 'йти' (iść). Polskie 'wyjść/wysiąść'. 'Ви-' = 'wy-'! 'На наступній зупинці' (na następnym przystanku). 'Наступний' (następny) — polskie 'następny'. Rdzeń 'наступ-/następ-' — wspólny! 'Зупинка' (przystanek) — od 'зупинити' (zatrzymać). Polskie 'przystanek' — od 'przystanąć'. Frazy transportowe: 'сісти' (wsiąść), 'вийти' (wysiąść), 'пересісти' (przesiąść się). Polskie: wsiąść, wysiąść, przesiąść się."
+      }
+    ]
+  },
+  {
+    "key": "food_restaurant",
+    "name": "Їжа і ресторан",
+    "description": "Jedzenie i restauracja",
+    "iconName": "fork.knife",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pu_fr1",
+        "question": "Я хотів би _____ столик на двох.",
+        "translation": "(Chciałbym zarezerwować stolik na dwoje.)",
+        "options": [
+          "замовити",
+          "купити",
+          "знайти",
+          "побачити"
+        ],
+        "correct": "замовити",
+        "explanation": "'Замовити столик' (zarezerwować/zamówić stolik). 'Замовити' (zamówić) — polskie 'zamówić'. Rdzeń 'замов-/zamów-' — wspólny! Perfekcyjny kognat. 'Столик' (stolik) — polskie 'stolik'. Zdrobnienie od 'стіл' (stół). Polskie 'stół' → 'stolik'. 'На двох' (na dwoje/dla dwojga). 'Двоє' — zbiorowy liczebnik. Polskie 'dwoje'. Rdzeń 'дво-/dwo-' — wspólny. Frazy restauracyjne: 'замовити столик', 'зробити замовлення' (złożyć zamówienie)."
+      },
+      {
+        "id": "pu_fr2",
+        "question": "Принесіть, будь ласка, _____.",
+        "translation": "(Proszę przynieść menu.)",
+        "options": [
+          "меню",
+          "рахунок",
+          "чай",
+          "воду"
+        ],
+        "correct": "меню",
+        "explanation": "'Меню' (menu) — internacjonalizm z francuskiego. Nieodmienne w ukraińskim! 'Принести' (przynieść) — 'при-' (przy-) + 'нести' (nieść). Polskie 'przynieść' — IDENTYCZNIE! 'При-' = 'przy-', 'нести' = 'nieść'. 'Будь ласка' (proszę). Wyrażenia kelnerskie: 'Що бажаєте?' (Co sobie życzycie?), 'Чи можна рахунок?' (Czy można rachunek?). 'Рахунок' (rachunek) — polskie 'rachunek'. Rdzeń 'рахун-/rachun-' — wspólny!"
+      },
+      {
+        "id": "pu_fr3",
+        "question": "Я б хотів _____ з грибами.",
+        "translation": "(Chciałbym zupę z grzybami.)",
+        "options": [
+          "суп",
+          "салат",
+          "м'ясо",
+          "рибу"
+        ],
+        "correct": "суп",
+        "explanation": "'Суп з грибами' (zupa z grzybami). 'Суп' (zupa) — od francuskiego 'soupe'. Polskie 'zupa' — od niemieckiego 'Suppe'. Oba z tego samego źródła! 'Гриби' (grzyby) — polskie 'grzyby'. Rdzeń 'гриб-/grzyb-' — wspólny! Perfekcyjny kognat. Ukraińska zupa z grzybami — popularne danie. Inne zupy: 'борщ' (barszcz), 'юшка' (zupa rybna/rosół — polskie 'jucha' archaiczne), 'щі' (kapuśniak). 'Борщ' (barszcz) — polskie 'barszcz'. Wspólne danie kuchni!"
+      },
+      {
+        "id": "pu_fr4",
+        "question": "Чи є у вас _____ страви?",
+        "translation": "(Czy macie dania wegetariańskie?)",
+        "options": [
+          "вегетаріанські",
+          "м'ясні",
+          "рибні",
+          "молочні"
+        ],
+        "correct": "вегетаріанські",
+        "explanation": "'Вегетаріанські страви' (dania wegetariańskie). 'Вегетаріанський' (wegetariański) — internacjonalizm. 'Страва' (danie/potrawa) — polskie 'potrawa/strawa'. Rdzeń 'страв-/straw-' — wspólny! Polskie archaiczne 'strawa' = jedzenie. Typy dań: 'закуски' (przystawki/zakąski), 'перші страви' (pierwsze dania — zupy), 'другі страви' (drugie dania — główne), 'десерти' (desery). Polskie: przystawki, zupy, drugie dania, desery."
+      },
+      {
+        "id": "pu_fr5",
+        "question": "Мені, будь ласка, _____ води.",
+        "translation": "(Poproszę szklankę wody.)",
+        "options": [
+          "склянку",
+          "тарілку",
+          "чашку",
+          "пляшку"
+        ],
+        "correct": "склянку",
+        "explanation": "'Склянка води' (szklanka wody). 'Склянка' (szklanka) — polskie 'szklanka'. Rdzeń 'склянк-/szklank-' — wspólny! Od 'скло' (szkło). Polskie 'szkło' — rdzeń 'скл-/szkl-' — wspólny! Naczynia: 'склянка' (szklanka), 'чашка' (filiżanka/czaszka), 'тарілка' (talerz), 'пляшка' (butelka/flaszka). Polskie: szklanka, filiżanka, talerz, butelka/flaszka. 'Пляшка' (flaszka) — polskie 'flaszka'. Rdzeń 'пляшк-/flaszk-' — wspólny!"
+      },
+      {
+        "id": "pu_fr6",
+        "question": "Ця страва дуже _____!",
+        "translation": "(To danie jest bardzo smaczne!)",
+        "options": [
+          "смачна",
+          "солона",
+          "гірка",
+          "кисла"
+        ],
+        "correct": "смачна",
+        "explanation": "'Смачна' (smaczna) — polskie 'smaczna'. Rdzeń 'смачн-/smaczn-' — perfekcyjny kognat! Od 'смак' (smak). Polskie 'smak' — identycznie! Smaki: 'солодкий' (słodki), 'солоний' (słony), 'кислий' (kwaśny/kisły), 'гіркий' (gorzki), 'гострий' (ostry/pikantny). Polskie: słodki, słony, kwaśny, gorzki, ostry. Kognaty: солодкий/słodki ✓, солоний/słony ✓, гіркий/gorzki ✓, гострий/ostry ✓. Ukraiński 'Смачного!' = polskie 'Smacznego!' — identycznie!"
+      },
+      {
+        "id": "pu_fr7",
+        "question": "На сніданок я зазвичай їм _____ з маслом.",
+        "translation": "(Na śniadanie zwykle jem chleb z masłem.)",
+        "options": [
+          "хліб",
+          "м'ясо",
+          "рибу",
+          "суп"
+        ],
+        "correct": "хліб",
+        "explanation": "'Хліб з маслом' (chleb z masłem). 'Хліб' (chleb) — polskie 'chleb'. Rdzeń 'хліб-/chleb-' — wspólny! 'Масло' (masło) — polskie 'masło'. Rdzeń 'масл-/masł-' — wspólny! 'Сніданок' (śniadanie) — od 'снідати' (jeść śniadanie). Polskie 'śniadanie' — od 'śniadać'. Rdzeń 'снід-/śniad-' — wspólny! Posiłki: 'сніданок' (śniadanie), 'обід' (obiad), 'вечеря' (kolacja). Polskie: śniadanie, obiad, kolacja. Wszystkie kognaty!"
+      },
+      {
+        "id": "pu_fr8",
+        "question": "Чи можна _____ рахунок?",
+        "translation": "(Czy można prosić rachunek?)",
+        "options": [
+          "попросити",
+          "побачити",
+          "купити",
+          "знайти"
+        ],
+        "correct": "попросити",
+        "explanation": "'Попросити рахунок' (poprosić о rachunek). 'Попросити' (poprosić) — polskie 'poprosić'. Rdzeń 'попрос-/popros-' — wspólny! 'Рахунок' (rachunek) — polskie 'rachunek'. Rdzeń 'рахун-/rachun-' — wspólny! 'Чи можна' (czy można) — polskie 'czy można'. Formy grzeczne w restauracji: 'Чи можна попросити...' (Czy można poprosić...), 'Будь ласка, принесіть...' (Proszę, przynieście...). Podobna etykieta restauracyjna w obu kulturach."
+      },
+      {
+        "id": "pu_fr9",
+        "question": "Я _____ на молочні продукти.",
+        "translation": "(Mam alergię na produkty mleczne.)",
+        "options": [
+          "алергік",
+          "любитель",
+          "продавець",
+          "працівник"
+        ],
+        "correct": "алергік",
+        "explanation": "'Я алергік на' (Jestem alergikiem na / Mam alergię na). 'Алергік' (alergik) — polskie 'alergik'. Internacjonalizm. 'Молочні продукти' (produkty mleczne). 'Молочний' (mleczny) — od 'молоко' (mleko). Polskie 'mleczny' — od 'mleko'. Rdzeń 'молоч-/mlecz-' — wspólny! 'Продукт' (produkt) — internacjonalizm. Alergie i diety: 'без глютену' (bezglutenowy), 'без лактози' (bezlaktozowy). Polskie: bezglutenowy, bezlaktozowy. Identyczne kalki!"
+      },
+      {
+        "id": "pu_fr10",
+        "question": "На десерт візьму _____ з шоколадом.",
+        "translation": "(Na deser wezmę ciasto z czekoladą.)",
+        "options": [
+          "тістечко",
+          "суп",
+          "салат",
+          "м'ясо"
+        ],
+        "correct": "тістечко",
+        "explanation": "'Тістечко' (ciasteczko) — zdrobnienie od 'тісто' (ciasto). Polskie 'ciasteczko' — zdrobnie od 'ciasto'. Rdzeń 'тіст-/ciast-' — wspólny! 'Десерт' (deser) — internacjonalizm. 'Шоколад' (czekolada) — internacjonalizm. 'Візьму' (wezmę) — od 'взяти' (wziąć). Polskie 'wezmę' — od 'wziąć'. Rdzeń 'взя-/wzią-' — wspólny! UWAGA: 'тісто' = ciasto (masa), 'тістечко' = ciasteczko (wyrób). 'Торт' (tort) — polskie 'tort'."
+      },
+      {
+        "id": "pu_fr11",
+        "question": "Який _____ ви рекомендуєте?",
+        "translation": "(Jaki napój polecacie?)",
+        "options": [
+          "напій",
+          "страву",
+          "десерт",
+          "суп"
+        ],
+        "correct": "напій",
+        "explanation": "'Напій' (napój) — polskie 'napój'. Rdzeń 'напій-/napój-' — wspólny! Od 'пити' (pić). 'Рекомендувати' (rekomendować/polecać) — internacjonalizm. Napoje: 'вода' (woda), 'сік' (sok), 'кава' (kawa), 'чай' (herbata/czaj), 'пиво' (piwo), 'вино' (wino). Polskie: woda, sok, kawa, herbata, piwo, wino. Kognaty: вода/woda ✓, сік/sok ✓, кава/kawa ✓, пиво/piwo ✓, вино/wino ✓. Prawie wszystkie identyczne!"
+      },
+      {
+        "id": "pu_fr12",
+        "question": "Чи можна _____ трохи солі?",
+        "translation": "(Czy można poprosić о trochę soli?)",
+        "options": [
+          "додати",
+          "забрати",
+          "купити",
+          "знайти"
+        ],
+        "correct": "додати",
+        "explanation": "'Додати солі' (dodać soli). 'Додати' (dodać) — polskie 'dodać'. Rdzeń 'додат-/dodać-' — wspólny! 'Сіль' (sól) → 'солі' (soli — dopełniacz). Polskie 'sól' → 'soli'. Rdzeń 'сол-/sol-' — wspólny! 'Трохи' (trochę) — polskie 'trochę'. Rdzeń 'трох-/troch-' — wspólny! Przyprawy: 'сіль' (sól), 'перець' (pieprz), 'цукор' (cukier), 'оцет' (ocet). Polskie: sól, pieprz, cukier, ocet. Wszystkie kognaty!"
+      },
+      {
+        "id": "pu_fr13",
+        "question": "Борщ — це традиційна українська _____.",
+        "translation": "(Barszcz to tradycyjna ukraińska zupa.)",
+        "options": [
+          "страва",
+          "напій",
+          "закуска",
+          "приправа"
+        ],
+        "correct": "страва",
+        "explanation": "'Страва' (potrawa/danie) — polskie 'potrawa/strawa'. Rdzeń 'страв-/straw-' — wspólny! 'Борщ' (barszcz) — polskie 'barszcz'. Wspólne kulturowe danie! Ale UWAGA: ukraiński борщ i polski barszcz to RÓŻNE dania! Ukraiński: gęsta zupa z burakami, kapustą, mięsem, warzywami. Polski: klarowny czerwony bulion z buraków. 'Традиційний' (tradycyjny) — polskie 'tradycyjny'. Internacjonalizm. 'Українська' (ukraińska) — polskie 'ukraińska'."
+      },
+      {
+        "id": "pu_fr14",
+        "question": "Мені, будь ласка, каву з _____.",
+        "translation": "(Poproszę kawę z mlekiem.)",
+        "options": [
+          "молоком",
+          "молоко",
+          "молока",
+          "молоці"
+        ],
+        "correct": "молоком",
+        "explanation": "'З молоком' (z mlekiem) — 'з' + narzędnik. 'Молоко' → 'молоком'. W polskim: 'z mlekiem' — 'mleko' → 'mlekiem'. Identyczna konstrukcja! 'Кава' (kawa) — polskie 'kawa'. Rdzeń 'кав-/kaw-' — wspólny! Sposoby kawy: 'з цукром' (z cukrem), 'без цукру' (bez cukru), 'з молоком' (z mlekiem), 'чорна' (czarna), 'з вершками' (ze śmietanką). Polskie: z cukrem, bez cukru, z mlekiem, czarna, ze śmietanką."
+      },
+      {
+        "id": "pu_fr15",
+        "question": "Ми хочемо _____ вареники з вишнями.",
+        "translation": "(Chcemy zamówić pierogi z wiśniami.)",
+        "options": [
+          "замовити",
+          "купити",
+          "зварити",
+          "спекти"
+        ],
+        "correct": "замовити",
+        "explanation": "'Замовити вареники' (zamówić pierogi). 'Вареники' (pierogi z nadzieniem) — od 'варити' (warzyć/gotować). UWAGA: ukraiński 'вареники' ≠ polskie 'pierogi'! Choć podobne, ukraiński 'вареники' to specyficznie gotowane na parze ciasto z nadzieniem. FAŁSZYWY PRZYJACIEL: polskie 'pierogi' = ukraiński 'вареники'. 'Вишня' (wiśnia) → 'вишнями' (wiśniami — narzędnik lm.). Polskie 'wiśnia' → 'wiśniami'. Rdzeń 'вишн-/wiśn-' — wspólny!"
+      }
+    ]
+  },
+  {
+    "key": "shopping_prices",
+    "name": "Покупки і ціни",
+    "description": "Zakupy i ceny",
+    "iconName": "cart",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pu_sp1",
+        "question": "Скільки _____ ця сукня?",
+        "translation": "(Ile kosztuje ta sukienka?)",
+        "options": [
+          "коштує",
+          "важить",
+          "міряє",
+          "тримає"
+        ],
+        "correct": "коштує",
+        "explanation": "'Скільки коштує' (ile kosztuje). 'Коштувати' (kosztować) — polskie 'kosztować'. Rdzeń 'кошт-/koszt-' — wspólny! ALE UWAGA: polskie 'kosztować' znaczy też 'próbować/smakować'. Ukraiński 'коштувати' = tylko 'kosztować' (mieć cenę). Ukraiński 'куштувати' = 'kosztować/próbować'. Dwie formy! 'Сукня' (suknia/sukienka) — polskie 'suknia'. Rdzeń 'сукн-/sukn-' — wspólny! 'Ця' (ta) — polskie 'ta'. Identycznie!"
+      },
+      {
+        "id": "pu_sp2",
+        "question": "Це занадто _____. Є щось дешевше?",
+        "translation": "(To za drogo. Jest coś tańszego?)",
+        "options": [
+          "дорого",
+          "дешево",
+          "далеко",
+          "близько"
+        ],
+        "correct": "дорого",
+        "explanation": "'Дорого' (drogo) — polskie 'drogo'. Rdzeń 'дорог-/drog-' — wspólny! 'Занадто' (za/zbyt) — polskie 'za' lub 'nazbyt'. 'Дешевше' (tańsze/tańszego) — od 'дешевий' (tani). 'Дешевий' nie ma polskiego kognatu. Polskie 'tani' — inny rdzeń. ALE: 'дешевий' pochodzi od 'деш-' (dostupny). Pary cenowe: 'дорогий' (drogi), 'дешевий' (tani), 'безкоштовний' (bezpłatny), 'дорогший' (droższy), 'дешевший' (tańszy). Polskie: drogi, tani, bezpłatny."
+      },
+      {
+        "id": "pu_sp3",
+        "question": "Чи можна _____ це?",
+        "translation": "(Czy mogę to przymierzyć?)",
+        "options": [
+          "приміряти",
+          "купити",
+          "подивитися",
+          "помацати"
+        ],
+        "correct": "приміряти",
+        "explanation": "'Приміряти' (przymierzyć) — 'при-' (przy-) + 'міряти' (mierzyć). Polskie 'przymierzyć' — IDENTYCZNIE! 'При-' = 'przy-', 'міряти' = 'mierzyć'. 'Чи можна' (czy można). Rdzeń 'чи/czy' і 'можна/można' — oba kognaty! Pytania w sklepie: 'Чи є розмір M?' (Czy jest rozmiar M?), 'Чи є інші кольори?' (Czy są inne kolory?), 'Де переодягальня?' (Gdzie przymierzalnia?). Polskie: Czy jest rozmiar M?, Czy są inne kolory?"
+      },
+      {
+        "id": "pu_sp4",
+        "question": "Я _____ картою, будь ласка.",
+        "translation": "(Zapłacę kartą, proszę.)",
+        "options": [
+          "заплачу",
+          "візьму",
+          "покажу",
+          "поміняю"
+        ],
+        "correct": "заплачу",
+        "explanation": "'Заплатити картою' (zapłacić kartą). 'Заплатити' (zapłacić) — polskie 'zapłacić'. Rdzeń 'заплат-/zapłac-' — wspólny! 'Картою' (kartą — narzędnik od 'карта'). Polskie: 'kartą'. Identycznie! Sposoby płatności: 'готівкою' (gotówką), 'картою' (kartą), 'безконтактно' (bezstykowe). Polskie: gotówką, kartą, bezstykowe. 'Готівка' (gotówka) — polskie 'gotówka'. Rdzeń 'готівк-/gotówk-' — wspólny! Od 'готовий' (gotowy)."
+      },
+      {
+        "id": "pu_sp5",
+        "question": "Де тут найближчий _____?",
+        "translation": "(Gdzie jest tutaj najbliższy supermarket?)",
+        "options": [
+          "супермаркет",
+          "ринок",
+          "магазин",
+          "кіоск"
+        ],
+        "correct": "супермаркет",
+        "explanation": "'Супермаркет' (supermarket) — internacjonalizm. 'Найближчий' (najbliższy) — 'най-' (най-) + 'ближчий' (bliższy). Polskie 'najbliższy' — identycznie! Miejsca zakupów: 'магазин' (sklep), 'супермаркет' (supermarket), 'ринок' (rynek/targ), 'кіоск' (kiosk), 'аптека' (apteka). Polskie: sklep, supermarket, rynek, kiosk, apteka. 'Ринок' (rynek) — polskie 'rynek'. Rdzeń 'ринок-/rynek-' — wspólny! Od niemieckiego 'Ring'."
+      },
+      {
+        "id": "pu_sp6",
+        "question": "Мені потрібен _____ більшого розміру.",
+        "translation": "(Potrzebuję większego rozmiaru.)",
+        "options": [
+          "розмір",
+          "колір",
+          "фасон",
+          "матеріал"
+        ],
+        "correct": "розмір",
+        "explanation": "'Розмір' (rozmiar) — polskie 'rozmiar'. Rdzeń 'розмір-/rozmiar-' — wspólny! 'Більший' (większy) — od 'більш' (bardziej/więcej). 'Більшого' — dopełniacz. Rozmiary: 'маленький' (mały), 'середній' (średni), 'великий' (duży/wielki), 'більший' (większy), 'менший' (mniejszy). Polskie: mały, średni, wielki/duży, większy, mniejszy. 'Потрібен' (potrzebny) — polskie 'potrzebny'. Rdzeń 'потріб-/potrzeb-' — wspólny!"
+      },
+      {
+        "id": "pu_sp7",
+        "question": "Тут є _____ на цей товар?",
+        "translation": "(Czy jest zniżka na ten towar?)",
+        "options": [
+          "знижка",
+          "надбавка",
+          "повернення",
+          "реклама"
+        ],
+        "correct": "знижка",
+        "explanation": "'Знижка' (zniżka) — polskie 'zniżka'. Rdzeń 'зниж-/zniż-' — wspólny! Od 'знизити' (zniżyć). Identyczna derywacja! 'Товар' (towar) — polskie 'towar'. Rdzeń 'товар-/towar-' — wspólny! Handlowe słownictwo: 'розпродаж' (wyprzedaż), 'знижка' (zniżka), 'акція' (promocja/akcja), 'ціна' (cena), 'вартість' (wartość). Polskie: wyprzedaż, zniżka, promocja, cena, wartość. Kognaty: знижка/zniżka ✓, ціна/cena ✓, вартість/wartość ✓."
+      },
+      {
+        "id": "pu_sp8",
+        "question": "Ця _____ дуже гарна. Беру!",
+        "translation": "(Ta bluzka jest bardzo ładna. Biorę!)",
+        "options": [
+          "блузка",
+          "сукня",
+          "куртка",
+          "шапка"
+        ],
+        "correct": "блузка",
+        "explanation": "'Блузка' (bluzka) — polskie 'bluzka'. Rdzeń 'блузк-/bluzk-' — wspólny! Z francuskiego 'blouse'. 'Гарна' (ładna/piękna) — NIE polskie 'harna'. Polskie 'ładna' = ukraiński 'гарна'. 'Беру' (biorę) — polskie 'biorę'. Rdzeń 'бер-/bior-' — wspólny! Odzież: 'сукня' (suknia), 'куртка' (kurtka), 'штани' (spodnie), 'спідниця' (spódnica), 'шапка' (czapka). Polskie: suknia, kurtka, spodnie, spódnica, czapka. Wszystkie kognaty!"
+      },
+      {
+        "id": "pu_sp9",
+        "question": "Де я можу _____ це?",
+        "translation": "(Gdzie mogę to zwrócić?)",
+        "options": [
+          "повернути",
+          "купити",
+          "знайти",
+          "сховати"
+        ],
+        "correct": "повернути",
+        "explanation": "'Повернути' (zwrócić) — polskie 'powrócić' (wrócić). Rdzeń 'поверн-/powróc-' — wspólny, ale ukraiński 'повернути' = 'zwrócić' (oddać), nie 'wrócić'! UWAGA: 'повернути' ma dwa значenia: 1) zwrócić (towar), 2) wrócić (skąd). W polskim 'wrócić' = 'повернутися' (z się). Prawa konsumenta: 'повернення товару' (zwrot towaru), 'обмін' (wymiana), 'гарантія' (gwarancja). Polskie: zwrot towaru, wymiana, gwarancja."
+      },
+      {
+        "id": "pu_sp10",
+        "question": "Дайте мені, будь ласка, _____ хліба.",
+        "translation": "(Proszę dać mi bochenek chleba.)",
+        "options": [
+          "буханець",
+          "шматок",
+          "пакет",
+          "коробку"
+        ],
+        "correct": "буханець",
+        "explanation": "'Буханець хліба' (bochenek chleba). 'Буханець' (bochenek/bochon) — polskie 'bochenek'. Rdzeń 'буханец-/bochenek-' — wspólny! 'Хліб' (chleb) — polskie 'chleb'. Rdzeń 'хліб-/chleb-' — wspólny. 'Дати' (dać) — polskie 'dać'. Rdzeń 'да-/da-' — wspólny! Jednostki miary: 'кілограм' (kilogram), 'літр' (litr), 'пакет' (paczka), 'шматок' (kawałek). Polskie: kilogram, litr, paczka, kawałek."
+      },
+      {
+        "id": "pu_sp11",
+        "question": "Чи є у вас _____ в іншому кольорі?",
+        "translation": "(Czy macie to w innym kolorze?)",
+        "options": [
+          "це",
+          "ось",
+          "там",
+          "тут"
+        ],
+        "correct": "це",
+        "explanation": "'Це' (to) — polskie 'to'. 'В іншому кольорі' (w innym kolorze). 'Інший' (inny) — polskie 'inny'. Rdzeń 'інш-/inn-' — wspólny! 'Колір' (kolor) — polskie 'kolor'. Internacjonalizm. Kolory: 'червоний' (czerwony), 'синій' (niebieski/siny), 'зелений' (zielony), 'чорний' (czarny), 'білий' (biały). Polskie: czerwony, niebieski/siny, zielony, czarny, biały. Kognaty: червоний/czerwony ✓, синій/siny ✓, зелений/zielony ✓, чорний/czarny ✓!"
+      },
+      {
+        "id": "pu_sp12",
+        "question": "Ціна за кілограм яблук — сорок _____.",
+        "translation": "(Cena za kilogram jabłek — czterdzieści hrywien.)",
+        "options": [
+          "гривень",
+          "гривні",
+          "гривня",
+          "гривнею"
+        ],
+        "correct": "гривень",
+        "explanation": "'Сорок гривень' (czterdzieści hrywien). 'Гривня' (hrywna — ukraińska waluta) → 'гривень' (dopełniacz lm. po 5+). Polskie: 'hrywna'. Od starej miary 'гривна' (grzywna — moneta). Polskie 'grzywna' = kara pieniężna. Wspólna etymologia! 'Яблуко' (jabłko) → 'яблук' (jabłek — dopełniacz lm.). Polskie: 'jabłko' → 'jabłek'. Rdzeń 'яблук-/jabłk-' — wspólny! 'Ціна' (cena) — polskie 'cena'. Rdzeń 'цін-/cen-' — wspólny!"
+      },
+      {
+        "id": "pu_sp13",
+        "question": "Я шукаю _____ для дитини.",
+        "translation": "(Szukam prezentu dla dziecka.)",
+        "options": [
+          "подарунок",
+          "іграшку",
+          "книгу",
+          "одяг"
+        ],
+        "correct": "подарунок",
+        "explanation": "'Подарунок' (podarunek/prezent) — polskie 'podarunek'. Rdzeń 'подарун-/podarun-' — wspólny! Od 'дарувати' (darować). Polskie 'darować' — identycznie! 'Шукати' (szukać) — polskie 'szukać'. Rdzeń 'шук-/szuk-' — wspólny! 'Для дитини' (dla dziecka/dzieciny). 'Для' = 'dla' — identycznie! 'Дитина' (dziecko/dziecina) — polskie 'dziecina' (archaiczne). Rdzeń 'дитин-/dziecin-' — wspólny!"
+      },
+      {
+        "id": "pu_sp14",
+        "question": "У цьому магазині великий _____ товарів.",
+        "translation": "(W tym sklepie jest duży wybór towarów.)",
+        "options": [
+          "вибір",
+          "ціна",
+          "продаж",
+          "якість"
+        ],
+        "correct": "вибір",
+        "explanation": "'Вибір' (wybór) — polskie 'wybór'. Rdzeń 'вибір-/wybór-' — wspólny! Od 'вибирати' (wybierać). Polskie 'wybierać'. 'Магазин' (sklep) — od fr. 'magasin'. Polskie 'magazyn' = 'schowek', NIE sklep! FAŁSZYWY PRZYJACIEL: 'магазин' = sklep, nie magazyn! Polskie 'sklep' = ukraiński 'магазин'. 'Товар' (towar) — polskie 'towar'. 'Великий' (wielki/duży) — polskie 'wielki'. Rdzeń 'велик-/wielk-' — wspólny!"
+      },
+      {
+        "id": "pu_sp15",
+        "question": "Чи можна оплатити _____?",
+        "translation": "(Czy można zapłacić gotówką?)",
+        "options": [
+          "готівкою",
+          "картою",
+          "чеком",
+          "переказом"
+        ],
+        "correct": "готівкою",
+        "explanation": "'Готівкою' (gotówką — narzędnik od 'готівка'). 'Готівка' (gotówka) — polskie 'gotówka'. Rdzeń 'готів-/gotów-' — wspólny! Od 'готовий' (gotowy). 'Оплатити' (opłacić/zapłacić) — polskie 'opłacić'. Rdzeń 'оплат-/opłac-' — wspólny! 'Чи можна' (czy można). Trzy kognaty w jednym pytaniu: чи/czy, можна/można, готівкою/gotówką. To pokazuje, jak blisko spokrewnione są ukraiński i polski — komunikacja handlowa jest niemal identyczna!"
+      }
+    ]
+  },
+  {
+    "key": "health_body",
+    "name": "Здоров'я і тіло",
+    "description": "Zdrowie i ciało",
+    "iconName": "heart",
+    "color": "#ef4444",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pu_hb1",
+        "question": "У мене болить _____.",
+        "translation": "(Boli mnie głowa.)",
+        "options": [
+          "голова",
+          "живіт",
+          "горло",
+          "вухо"
+        ],
+        "correct": "голова",
+        "explanation": "'Болить голова' (boli głowa). 'Боліти' (boleć) — polskie 'boleć'. Rdzeń 'бол-/bol-' — wspólny! 'Голова' (głowa) — polskie 'głowa'. Rdzeń 'голов-/głow-' — wspólny! Konstrukcja bólu: 'У мене болить...' (Boli mnie...). Dosłownie: 'u mnie boli'. Polskie: 'boli mnie'. UWAGA: ukraiński 'болить голова' — bezosobowo. Ciało: 'рука' (ręka), 'нога' (noga), 'голова' (głowa), 'живіт' (brzuch/żywot). Polskie: ręka, noga, głowa, brzuch."
+      },
+      {
+        "id": "pu_hb2",
+        "question": "Мені потрібно піти до _____.",
+        "translation": "(Muszę iść do lekarza.)",
+        "options": [
+          "лікаря",
+          "лікарні",
+          "аптеки",
+          "школи"
+        ],
+        "correct": "лікаря",
+        "explanation": "'До лікаря' (do lekarza — dopełniacz). 'Лікар' (lekarz) — polskie 'lekarz'. Rdzeń 'лікар-/lekarz-' — wspólny! Od 'лік' (лek/lekarstwo). UWAGA: 'лікар' = lekarz, 'лікарня' = szpital! Nie pomyl! Medyczne słowa: 'лікар' (lekarz), 'лікарня' (szpital), 'аптека' (apteka), 'ліки' (лeki/lekarstwa), 'рецепт' (recepta). Polskie: lekarz, szpital, apteka, leki, recepta. Kognaty: лікар/lekarz ✓, аптека/apteka ✓, ліки/leki ✓, рецепт/recepta ✓."
+      },
+      {
+        "id": "pu_hb3",
+        "question": "Я маю _____ і нежить.",
+        "translation": "(Mam kaszel i katar.)",
+        "options": [
+          "кашель",
+          "біль",
+          "запалення",
+          "алергію"
+        ],
+        "correct": "кашель",
+        "explanation": "'Кашель' (kaszel) — polskie 'kaszel'. Rdzeń 'кашел-/kaszel-' — wspólny! 'Нежить' (katar/nieżyt) — polskie 'nieżyt' (медycинский termin na katar). Rdzeń 'нежит-/nieżyt-' — wspólny! 'Не-' + 'жити' (жyć) = niezdolność do normalnego funkcjonowania nosa. Objawy przeziębienia: 'температура' (gorączka/temperatura), 'кашель' (kaszel), 'нежить' (katar), 'чхання' (kichanie). Polskie: gorączka, kaszel, katar, kichanie."
+      },
+      {
+        "id": "pu_hb4",
+        "question": "Лікар виписав мені _____.",
+        "translation": "(Lekarz wypisał mi receptę.)",
+        "options": [
+          "рецепт",
+          "ліки",
+          "діагноз",
+          "направлення"
+        ],
+        "correct": "рецепт",
+        "explanation": "'Рецепт' (recepta) — polskie 'recepta'. Internacjonalizm z łaciny. 'Виписати' (wypisać) — polskie 'wypisać'. Rdzeń 'випис-/wypis-' — wspólny! 'Ви-' = 'wy-', 'писати' = 'pisać'. 'Лікар виписав рецепт' = 'Lekarz wypisał receptę'. Procesy medyczne: 'обстеження' (badanie), 'діагноз' (diagnoza), 'лікування' (leczenie), 'рецепт' (recepta), 'операція' (operacja). Polskie: badanie, diagnoza, leczenie, recepta, operacja. Wiele kognatów!"
+      },
+      {
+        "id": "pu_hb5",
+        "question": "В мене висока _____.",
+        "translation": "(Mam wysoką temperaturę/gorączkę.)",
+        "options": [
+          "температура",
+          "тиск",
+          "вага",
+          "зміна"
+        ],
+        "correct": "температура",
+        "explanation": "'Висока температура' (wysoka temperatura/gorączka). 'Високий' (wysoki) — polskie 'wysoki'. Rdzeń 'висок-/wysok-' — wspólny! 'Температура' (temperatura) — internacjonalizm. W ukraińskim 'температура' = zarówno 'temperatura' (ogólnie) jak i 'gorączka'. Polskie rozróżnia: 'temperatura' (ogólna), 'gorączka' (stan chorobowy). Skala: 'нормальна' (normalna — 36.6), 'підвищена' (podwyższona — 37-38), 'висока' (wysoka — 38+)."
+      },
+      {
+        "id": "pu_hb6",
+        "question": "Мені потрібно купити _____ в аптеці.",
+        "translation": "(Muszę kupić lekarstwa w aptece.)",
+        "options": [
+          "ліки",
+          "їжу",
+          "одяг",
+          "книги"
+        ],
+        "correct": "ліки",
+        "explanation": "'Ліки' (leki/lekarstwa) — polskie 'leki'. Rdzeń 'лік-/lek-' — wspólny! 'В аптеці' (w aptece — місцевик). 'Аптека' → 'аптеці'. Polskie: 'w aptece'. Identycznie! Typy lekarstw: 'таблетки' (tabletki), 'сироп' (syrop), 'мазь' (maść), 'краплі' (krople), 'пластир' (plaster). Polskie: tabletki, syrop, maść, krople, plaster. Kognaty: таблетки/tabletki ✓, сироп/syrop ✓, мазь/maść ✓, краплі/krople ✓, пластир/plaster ✓!"
+      },
+      {
+        "id": "pu_hb7",
+        "question": "Мені болять _____.",
+        "translation": "(Bolą mnie zęby.)",
+        "options": [
+          "зуби",
+          "очі",
+          "вуха",
+          "руки"
+        ],
+        "correct": "зуби",
+        "explanation": "'Зуби' (zęby — mian. lm.) — od 'зуб' (ząb). Polskie 'ząb' → 'zęby'. Rdzeń 'зуб-/ząb-' — wspólny! 'Болять' (bolą — lm.) — po lm. rzeczownika. Części ciała: 'зуб' (ząb), 'око' (oko), 'вухо' (ucho), 'ніс' (nos), 'рот' (usta/gęba). Polskie: ząb, oko, ucho, nos, usta. Kognaty: зуб/ząb ✓, око/oko ✓, вухо/ucho ✓, ніс/nos ✓. Rdzeń prasłowiański zachowany w obu językach!"
+      },
+      {
+        "id": "pu_hb8",
+        "question": "Вона зламала _____ під час катання на лижах.",
+        "translation": "(Ona złamała nogę podczas jazdy na nartach.)",
+        "options": [
+          "ногу",
+          "руку",
+          "палець",
+          "ребро"
+        ],
+        "correct": "ногу",
+        "explanation": "'Зламати ногу' (złamać nogę). 'Зламати' (złamać) — polskie 'złamać'. Rdzeń 'злам-/złam-' — wspólny! 'Нога' (noga) — polskie 'noga'. Rdzeń 'ног-/nog-' — wspólny! 'Катання на лижах' (jazda na nartach). 'Лижі' (narty/łyżwy) — PUŁAPKA: 'лижі' = narty, NIE łyżwy! Polskie 'łyżwy' = ukraiński 'ковзани'. FAŁSZYWY PRZYJACIEL! 'Під час' (podczas) — polskie 'podczas'. Rdzeń 'під час-/podczas-' — wspólny!"
+      },
+      {
+        "id": "pu_hb9",
+        "question": "Потрібно _____ тиск.",
+        "translation": "(Trzeba zmierzyć ciśnienie.)",
+        "options": [
+          "виміряти",
+          "побачити",
+          "почути",
+          "відчути"
+        ],
+        "correct": "виміряти",
+        "explanation": "'Виміряти тиск' (zmierzyć ciśnienie). 'Виміряти' (wymierzyć/zmierzyć) — 'ви-' (wy-) + 'міряти' (mierzyć). Polskie 'wymierzyć/zmierzyć'. 'Тиск' (ciśnienie) — od 'тиснути' (cisnąć). Polskie 'ciśnienie' — od 'cisnąć'. Wspólny rdzeń! Badania medyczne: 'виміряти тиск' (zmierzyć ciśnienie), 'здати аналізи' (oddać анализы), 'зробити рентген' (zrobić rentgen). Polskie: zmierzyć ciśnienie, oddać badania, zrobić rentgen."
+      },
+      {
+        "id": "pu_hb10",
+        "question": "У мене _____ на пилок.",
+        "translation": "(Mam alergię na pyłki.)",
+        "options": [
+          "алергія",
+          "реакція",
+          "біль",
+          "запалення"
+        ],
+        "correct": "алергія",
+        "explanation": "'Алергія на пилок' (alergia na pyłki). 'Алергія' (alergia) — polskie 'alergia'. Internacjonalizm. 'Пилок' (pyłek) — polskie 'pyłek'. Rdzeń 'пилок-/pyłek-' — wspólny! Od 'пил' (pył). Polskie 'pył' — identycznie! Alergeny: 'пилок' (pyłki), 'пил' (kurz/pył), 'шерсть тварин' (sierść zwierząt), 'молочні продукти' (produkty mleczne). Polskie: pyłki, kurz, sierść zwierząt, produkty mleczne. Rdzeń 'пил/pył' — wspólny!"
+      },
+      {
+        "id": "pu_hb11",
+        "question": "Серце _____ дуже швидко.",
+        "translation": "(Serce bije bardzo szybko.)",
+        "options": [
+          "б'ється",
+          "працює",
+          "рухається",
+          "болить"
+        ],
+        "correct": "б'ється",
+        "explanation": "'Серце б'ється' (serce bije). 'Б'ється' (bije się) — od 'бити' (bić). Polskie 'bić' — rdzeń 'бит-/bić-' — wspólny! 'Серце' (serce) — polskie 'serce'. Rdzeń 'серц-/serc-' — perfekcyjny kognat! 'Швидко' (szybko) — NIE polskie 'szwidko'. Polskie 'szybko' = ukraiński 'швидко'. Rdzeń 'швидк-/szybk-' — wspólny! Narządy: 'серце' (serce), 'легені' (płuca), 'печінка' (wątroba), 'нирки' (nerki). Polskie: serce, płuca, wątroba, nerki."
+      },
+      {
+        "id": "pu_hb12",
+        "question": "Прийміть ці таблетки _____ рази на день.",
+        "translation": "(Proszę brać te tabletki trzy razy dziennie.)",
+        "options": [
+          "три",
+          "трьох",
+          "трьома",
+          "трьом"
+        ],
+        "correct": "три",
+        "explanation": "'Три рази на день' (trzy razy dziennie). 'Три' (trzy) — polskie 'trzy'. Rdzeń 'тр-/trz-' — wspólny! 'Рази' (razy) — od 'раз' (raz). Polskie 'razy' — identycznie! 'Таблетка' (tabletka) — polskie 'tabletka'. Internacjonalizm. 'Прийняти' (przyjąć) — polskie 'przyjąć'. Rdzeń 'прийня-/przyjа-' — wspólny! Dawkowanie: 'раз на день' (raz dziennie), 'двічі на день' (dwa razy dziennie), 'тричі на день' (trzy razy dziennie). Identyczny system!"
+      },
+      {
+        "id": "pu_hb13",
+        "question": "Він почувається _____.",
+        "translation": "(On czuje się źle.)",
+        "options": [
+          "погано",
+          "добре",
+          "чудово",
+          "нормально"
+        ],
+        "correct": "погано",
+        "explanation": "'Почуватися погано' (czuć się źle). 'Почуватися' (poczuć się) — polskie 'poczuć się'. Rdzeń 'почува-/poczuw-' — wspólny! 'Погано' (źle/poganie) — polskie archaiczne 'pogano' (źle). Dzisiejsze polskie 'źle'. Rdzeń 'поган-/pogan-' — wspólny historycznie! Skala samopoczucia: 'чудово' (wspaniale), 'добре' (dobrze), 'нормально' (normalnie), 'погано' (źle), 'жахливо' (okropnie). Polskie: wspaniale, dobrze, normalnie, źle, okropnie."
+      },
+      {
+        "id": "pu_hb14",
+        "question": "Мені потрібна _____ допомога!",
+        "translation": "(Potrzebuję pilnej pomocy!)",
+        "options": [
+          "термінова",
+          "маленька",
+          "звичайна",
+          "останція"
+        ],
+        "correct": "термінова",
+        "explanation": "'Термінова допомога' (pilna pomoc / nagła pomoc). 'Терміновий' (pilny/terminowy) — polskie 'terminowy'. Rdzeń 'термін-/termin-' — wspólny! Ale UWAGA: ukraiński 'терміновий' = 'pilny/nagły', polskie 'terminowy' = 'w terminie'. Różnica znaczeniowa! 'Допомога' (pomoc) — 'до-' + 'помога'. Polskie 'pomoc'. Rdzeń 'помог-/pomoc-' — wspólny! Nagłe sytuacje: 'швидка (допомога)' (ambulans/pogotowie), 'поліція' (policja), 'пожежна' (straż pożarna)."
+      },
+      {
+        "id": "pu_hb15",
+        "question": "Лікар порадив мені більше _____.",
+        "translation": "(Lekarz poradził mi więcej odpoczywać.)",
+        "options": [
+          "відпочивати",
+          "працювати",
+          "їсти",
+          "спати"
+        ],
+        "correct": "відпочивати",
+        "explanation": "'Відпочивати' (odpoczywać) — 'від-' (od-) + 'почивати' (spoczywać). Polskie 'odpoczywać' — 'od-' + 'poczywać'. IDENTYCZNA budowa! 'Від-' = 'od-', 'почивати' = 'poczywać'. 'Порадити' (poradzić) — polskie 'poradzić'. Rdzeń 'порад-/porad-' — wspólny! 'Більше' (więcej) — od 'більш' (bardziej). Polskie 'więcej'. Zalecenia lekarza: 'більше відпочивати' (więcej odpoczywać), 'пити воду' (pić wodę), 'менше стресувати' (mniej się stresować). Identyczne porady!"
+      }
+    ]
   }
 ]

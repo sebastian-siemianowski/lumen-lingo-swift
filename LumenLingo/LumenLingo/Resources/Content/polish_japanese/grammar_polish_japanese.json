@@ -4508,5 +4508,3080 @@
         "explanation": "Minna ga sansei sureba kettei shimasu = jeśli wszyscy się zgadzają, podejmiemy decyzję. Sansei suru (zgadzać się) → sansei sureba. Minna (みんな) = wszyscy, kettei suru (決定する) = decydować. Ba-forma jest naturalna dla warunków proceduralnych i formalnych decyzji. To typowe zdanie z zebrań: warunkowe podejście do decyzji. Sansei (賛成) = zgoda, hantai (反対) = sprzeciw."
       }
     ]
+  },
+  {
+    "key": "conditional_tara",
+    "name": "Forma warunkowa ～たら",
+    "description": "Forma ～たら (tara) to jedna z najczęściej używanych konstrukcji warunkowych w języku japońskim. Tworzy się ją od formy przeszłej (た) + ら. Jest wszechstronna — może wyrażać warunki realne, hipotetyczne, a także zaskoczenie rezultatem. W porównaniu z ば (ba), たら jest bardziej potoczna i elastyczna, szczególnie w mowie codziennej.",
+    "iconName": "arrow.triangle.branch",
+    "color": "blue",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_ctr1",
+        "question": "雨が降っ_____ 家にいます (jeśli będzie padać, zostanę w domu).",
+        "translation": "(Jeśli będzie padać, zostanę w domu)",
+        "options": [
+          "たら",
+          "ば",
+          "と",
+          "ので"
+        ],
+        "correct": "たら",
+        "explanation": "Ame ga futtara ie ni imasu = jeśli spadnie deszcz, zostanę w domu. Furu (降る, padać) → futta (forma przeszła) + ら = futtara. Tara jest naturalnym wyborem dla warunków w mowie codziennej. Ie (家) = dom, iru (いる) = być/pozostawać. Warunkowa tara jest najbardziej uniwersalna spośród japońskich form warunkowych."
+      },
+      {
+        "id": "pj_ctr2",
+        "question": "安かっ_____ 買います (jeśli będzie tanie, kupię).",
+        "translation": "(Jeśli będzie tanie, kupię)",
+        "options": [
+          "たら",
+          "ば",
+          "て",
+          "のに"
+        ],
+        "correct": "たら",
+        "explanation": "Yasukattara kaimasu = jeśli będzie tanie, kupię. Yasui (安い, tani) → yasukatta (przeszła) + ら = yasukattara. Przymiotniki i-kończące tworzą tara od formy przeszłej: -katta + ra. Kau (買う) = kupować. To typowe zdanie przy zakupach — warunek cenowy wyrażony naturalnie formą tara."
+      },
+      {
+        "id": "pj_ctr3",
+        "question": "暇だっ_____ 遊びに来てください (jeśli będziesz miał wolne, przyjdź).",
+        "translation": "(Jeśli będziesz miał wolne, przyjdź)",
+        "options": [
+          "たら",
+          "ば",
+          "なら",
+          "と"
+        ],
+        "correct": "たら",
+        "explanation": "Hima dattara asobi ni kite kudasai = jeśli będziesz miał wolne, przyjdź się pobawić. Hima (暇, wolny czas) + dattara (forma warunkowa od da). Przymiotniki na-kończące i rzeczowniki: da → dattara. Asobi ni kuru = przyjść w odwiedziny. Kudasai dodaje grzecznościowy ton prośbie."
+      },
+      {
+        "id": "pj_ctr4",
+        "question": "駅に着い_____ 電話してください (kiedy dojdziesz na stację, zadzwoń).",
+        "translation": "(Kiedy dojdziesz na stację, zadzwoń)",
+        "options": [
+          "たら",
+          "ば",
+          "て",
+          "ながら"
+        ],
+        "correct": "たら",
+        "explanation": "Eki ni tsuitara denwa shite kudasai = kiedy dojdziesz na stację, zadzwoń. Tsuku (着く, docierać) → tsuita + ら = tsuitara. Tara może wyrażać nie tylko warunek, ale też następstwo czasowe (kiedy/gdy). Eki (駅) = stacja, denwa suru (電話する) = dzwonić. To praktyczne zdanie orientacyjne."
+      },
+      {
+        "id": "pj_ctr5",
+        "question": "日本に行っ_____ お寺を見たいです (jak pojadę do Japonii, chcę zobaczyć świątynie).",
+        "translation": "(Jak pojadę do Japonii, chcę zobaczyć świątynie)",
+        "options": [
+          "たら",
+          "ば",
+          "と",
+          "ので"
+        ],
+        "correct": "たら",
+        "explanation": "Nihon ni ittara otera o mitai desu = jak pojadę do Japonii, chcę zobaczyć świątynie. Iku (行く) → itta + ら = ittara. Tara łączy przyszły warunek z osobistym pragnieniem (mitai = chcę zobaczyć). Otera (お寺) = świątynia (o- to honoryfikatywny prefiks). Mitai = chcieć zobaczyć (miru + tai)."
+      },
+      {
+        "id": "pj_ctr6",
+        "question": "お金があっ_____ 新しい車を買います (gdybym miał pieniądze, kupiłbym nowy samochód).",
+        "translation": "(Gdybym miał pieniądze, kupiłbym nowy samochód)",
+        "options": [
+          "たら",
+          "ば",
+          "のに",
+          "ても"
+        ],
+        "correct": "たら",
+        "explanation": "Okane ga attara atarashii kuruma o kaimasu = gdybym miał pieniądze, kupiłbym nowy samochód. Aru (ある, być/mieć) → atta + ら = attara. Tara może wyrażać warunki hipotetyczne. Okane (お金) = pieniądze, atarashii (新しい) = nowy, kuruma (車) = samochód. Kontekst decyduje, czy tara jest realna czy hipotetyczna."
+      },
+      {
+        "id": "pj_ctr7",
+        "question": "食べ_____ おいしかったです (jak zjadłem, było pyszne).",
+        "translation": "(Jak zjadłem, było pyszne — ku mojemu zaskoczeniu)",
+        "options": [
+          "たら",
+          "ば",
+          "て",
+          "と"
+        ],
+        "correct": "たら",
+        "explanation": "Tabetara oishikatta desu = jak zjadłem, okazało się pyszne. Taberu (食べる) → tabeta + ら = tabetara. Tara w formie przeszłej + przeszły rezultat wyraża zaskoczenie odkryciem. Oishii (おいしい) = pyszny → oishikatta (było pyszne). To unikatowa funkcja tara — wyrażanie niespodziewanego rezultatu."
+      },
+      {
+        "id": "pj_ctr8",
+        "question": "窓を開け_____ 鳥が飛んできました (kiedy otworzyłem okno, przyleciał ptak).",
+        "translation": "(Kiedy otworzyłem okno, przyleciał ptak)",
+        "options": [
+          "たら",
+          "ば",
+          "て",
+          "と"
+        ],
+        "correct": "たら",
+        "explanation": "Mado o aketara tori ga tonde kimashita = kiedy otworzyłem okno, przyleciał ptak. Akeru (開ける) → aketa + ら = aketara. Tara opisuje tu zaskakujące następstwo — gdy otworzyłem okno, niespodziewanie przyleciał ptak. Tori (鳥) = ptak, tondeiku (飛んでいく) = odlecieć, tondekuru (飛んでくる) = przylecieć."
+      },
+      {
+        "id": "pj_ctr9",
+        "question": "分からなかっ_____ 先生に聞いてください (jeśli nie rozumiesz, zapytaj nauczyciela).",
+        "translation": "(Jeśli nie rozumiesz, zapytaj nauczyciela)",
+        "options": [
+          "たら",
+          "ば",
+          "て",
+          "のに"
+        ],
+        "correct": "たら",
+        "explanation": "Wakaranakattara sensei ni kiite kudasai = jeśli nie rozumiesz, zapytaj nauczyciela. Wakaru (わかる) → wakaranai (przeczenie) → wakaranakatta + ら = wakaranakattara. Negacja + tara: -nakatta + ra. Sensei (先生) = nauczyciel, kiku (聞く) = pytać/słuchać. Przydatne zdanie w klasie."
+      },
+      {
+        "id": "pj_ctr10",
+        "question": "彼が来なかっ_____ 私が行きます (jeśli on nie przyjdzie, ja pójdę).",
+        "translation": "(Jeśli on nie przyjdzie, ja pójdę)",
+        "options": [
+          "たら",
+          "ば",
+          "と",
+          "ても"
+        ],
+        "correct": "たら",
+        "explanation": "Kare ga konakattara watashi ga ikimasu = jeśli on nie przyjdzie, ja pójdę. Kuru (来る, przychodzić) → konai (przeczenie) → konakatta + ら = konakattara. Kuru to czasownik nieregularny. Kare (彼) = on, watashi (私) = ja. Plan awaryjny wyrażony formą warunkową tara."
+      },
+      {
+        "id": "pj_ctr11",
+        "question": "よかっ_____ 一緒に行きましょう (jeśli chcesz, chodźmy razem).",
+        "translation": "(Jeśli chcesz / jeśli to OK, chodźmy razem)",
+        "options": [
+          "たら",
+          "ば",
+          "て",
+          "のに"
+        ],
+        "correct": "たら",
+        "explanation": "Yokattara issho ni ikimashou = jeśli to w porządku, chodźmy razem. Yoi/ii (良い/いい, dobry) → yokatta + ら = yokattara. Yokattara to powszechne wyrażenie grzecznościowe: 'jeśli ci to odpowiada'. Issho ni (一緒に) = razem, ikimashou (行きましょう) = chodźmy. Bardzo naturalne zaproszenie w języku japońskim."
+      },
+      {
+        "id": "pj_ctr12",
+        "question": "時間があっ_____ 映画を見ましょう (jeśli będziemy mieć czas, obejrzyjmy film).",
+        "translation": "(Jeśli będziemy mieć czas, obejrzyjmy film)",
+        "options": [
+          "たら",
+          "ば",
+          "なら",
+          "と"
+        ],
+        "correct": "たら",
+        "explanation": "Jikan ga attara eiga o mimashou = jeśli będziemy mieć czas, obejrzyjmy film. Aru (ある) → atta + ら = attara. Jikan (時間) = czas, eiga (映画) = film, mimashou = obejrzyjmy (volitional form). Tara + zaproszenie to naturalne połączenie: warunek + propozycja wspólnego działania."
+      },
+      {
+        "id": "pj_ctr13",
+        "question": "明日天気がよかっ_____ ピクニックに行きます (jeśli jutro będzie ładna pogoda, pójdziemy na piknik).",
+        "translation": "(Jeśli jutro będzie ładna pogoda, pójdziemy na piknik)",
+        "options": [
+          "たら",
+          "ば",
+          "と",
+          "ても"
+        ],
+        "correct": "たら",
+        "explanation": "Ashita tenki ga yokattara pikunikku ni ikimasu = jeśli jutro będzie ładna pogoda, pójdziemy na piknik. Yoi (良い) → yokatta + ら. Ashita (明日) = jutro, tenki (天気) = pogoda. Tara jest idealny do planów uzależnionych od warunków pogodowych. Pikunikku to zapożyczenie z angielskiego 'picnic'."
+      },
+      {
+        "id": "pj_ctr14",
+        "question": "薬を飲ん_____ 少し楽になりました (po wzięciu lekarstwa poczułem się trochę lepiej).",
+        "translation": "(Po wzięciu lekarstwa trochę ulżyło)",
+        "options": [
+          "だら",
+          "だば",
+          "で",
+          "だと"
+        ],
+        "correct": "だら",
+        "explanation": "Kusuri o nondara sukoshi raku ni narimashita = po wzięciu lekarstwa trochę ulżyło. Nomu (飲む) → nonda + ら = nondara. Uwaga: przy czasownikach z formą przeszłą na -da, tara to -dara. Kusuri (薬) = lekarstwo, raku (楽) = wygodny/lekki, naru (なる) = stawać się. Sukoshi (少し) = trochę."
+      },
+      {
+        "id": "pj_ctr15",
+        "question": "二十歳になっ_____ お酒が飲めます (kiedy skończysz 20 lat, możesz pić alkohol).",
+        "translation": "(Kiedy skończysz 20 lat, możesz pić alkohol)",
+        "options": [
+          "たら",
+          "ば",
+          "と",
+          "ても"
+        ],
+        "correct": "たら",
+        "explanation": "Hatachi ni nattara osake ga nomemasu = kiedy skończysz 20 lat, możesz pić alkohol. Naru (なる, stawać się) → natta + ら = nattara. Hatachi (二十歳) = 20 lat (specjalne odczytanie). Osake (お酒) = alkohol (z honoryfikatywnym o-). Nomeru = móc pić (forma potencjalna od nomu). W Japonii wiek pełnoletności to 20 lat."
+      }
+    ]
+  },
+  {
+    "key": "volitional_form",
+    "name": "Forma wolicjonalna ～よう/～おう",
+    "description": "Forma wolicjonalna (意向形, ikoukei) wyraża zamiar, propozycję lub zaproszenie — odpowiada polskiemu 'zróbmy' lub 'zamierzam'. Dla czasowników grupy I: ostatnia sylaba zmienia się na rząd -ou. Dla grupy II: -ru → -you. W formie grzecznościowej używa się ～ましょう. Ta forma jest kluczowa do wyrażania planów i zapraszania innych do wspólnego działania.",
+    "iconName": "hand.raised.fill",
+    "color": "green",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_vol1",
+        "question": "一緒に映画を見_____ (obejrzyjmy razem film).",
+        "translation": "(Obejrzyjmy razem film)",
+        "options": [
+          "ましょう",
+          "ました",
+          "ません",
+          "ます"
+        ],
+        "correct": "ましょう",
+        "explanation": "Issho ni eiga o mimashou = obejrzyjmy razem film. Mashou (ましょう) to grzeczna forma wolicjonalna — zapraszanie do wspólnego działania. Issho ni (一緒に) = razem, eiga (映画) = film, miru (見る) = oglądać. Mashou jest standardowym sposobem zapraszania w sytuacjach formalnych i półformalnych."
+      },
+      {
+        "id": "pj_vol2",
+        "question": "明日早く起き_____ (wstańmy jutro wcześnie).",
+        "translation": "(Wstańmy jutro wcześnie)",
+        "options": [
+          "よう",
+          "ます",
+          "たい",
+          "ない"
+        ],
+        "correct": "よう",
+        "explanation": "Ashita hayaku okiyou = wstańmy jutro wcześnie. Okiru (起きる, wstawać, grupa II) → okiyou (forma wolicjonalna). Grupa II: -ru → -you. Ashita (明日) = jutro, hayaku (早く) = wcześnie (przysłówek od hayai). Forma よう jest nieformalna — używana między przyjaciółmi lub w monologu wewnętrznym."
+      },
+      {
+        "id": "pj_vol3",
+        "question": "日本語を勉強し_____ (uczmy się japońskiego).",
+        "translation": "(Uczmy się japońskiego)",
+        "options": [
+          "ましょう",
+          "ました",
+          "ている",
+          "ません"
+        ],
+        "correct": "ましょう",
+        "explanation": "Nihongo o benkyou shimashou = uczmy się japońskiego. Benkyou suru (勉強する) → benkyou shimashou (grzeczna wolicjonalna). Nihongo (日本語) = język japoński. Suru-czasowniki (する) tworzą wolicjonalną: suru → shiyou (nieformalna), shimashō (grzeczna). To zachęta do wspólnej nauki."
+      },
+      {
+        "id": "pj_vol4",
+        "question": "ここで休_____ (odpocznijmy tutaj).",
+        "translation": "(Odpocznijmy tutaj)",
+        "options": [
+          "もう",
+          "みます",
+          "んだ",
+          "まない"
+        ],
+        "correct": "もう",
+        "explanation": "Koko de yasumou = odpocznijmy tutaj. Yasumu (休む, odpoczywać, grupa I) → yasumou. Grupa I z kończącą -mu: mu → mou. Koko (ここ) = tutaj, de (で) = partykuła miejsca akcji. Forma wolicjonalna grupy I zamienia ostatnią sylabę na rząd -ou: -mu→-mou, -ku→-kou, -su→-sou itd."
+      },
+      {
+        "id": "pj_vol5",
+        "question": "タクシーで行_____ (pojedźmy taksówką — propozycja).",
+        "translation": "(Pojedźmy taksówką)",
+        "options": [
+          "こう",
+          "きます",
+          "った",
+          "かない"
+        ],
+        "correct": "こう",
+        "explanation": "Takushii de ikou = jedźmy taksówką. Iku (行く, iść/jechać, grupa I) → ikou (wolicjonalna). Uwaga: iku jest wyjątkowy — forma wolicjonalna to ikou (nie ikiou). Takushii (タクシー) = taksówka (z ang. taxi). De (で) oznacza środek transportu. Ikou jest bardzo potoczne i naturalne — proponowanie transportu."
+      },
+      {
+        "id": "pj_vol6",
+        "question": "昼ご飯を食べ_____ (zjedzmy lunch).",
+        "translation": "(Zjedzmy lunch)",
+        "options": [
+          "よう",
+          "ない",
+          "ます",
+          "たい"
+        ],
+        "correct": "よう",
+        "explanation": "Hirugohan o tabeyou = zjedzmy lunch. Taberu (食べる, jeść, grupa II) → tabeyou. Grupa II: -ru → -you. Hirugohan (昼ご飯) = lunch (hiru = południe, gohan = posiłek). To naturalne zaproszenie na wspólny posiłek pomiędzy bliskimi osobami. Asagohan = śniadanie, bangohan = kolacja."
+      },
+      {
+        "id": "pj_vol7",
+        "question": "今日は泳_____ と思います (zamierzam dziś pływać).",
+        "translation": "(Zamierzam dziś pływać)",
+        "options": [
+          "ごう",
+          "ぎます",
+          "いだ",
+          "がない"
+        ],
+        "correct": "ごう",
+        "explanation": "Kyou wa oyogou to omoimasu = zamierzam dziś pływać. Oyogu (泳ぐ, pływać, grupa I) → oyogou. Grupa I z -gu: gu → gou. Wolicjonalna + to omou (と思う) = zamierzam/myślę, że zrobię. Kyou (今日) = dziś. To ważna konstrukcja: volitional + to omou wyraża osobisty zamiar."
+      },
+      {
+        "id": "pj_vol8",
+        "question": "コーヒーを飲_____ (napijmy się kawy — propozycja).",
+        "translation": "(Napijmy się kawy)",
+        "options": [
+          "もう",
+          "みます",
+          "んだ",
+          "まない"
+        ],
+        "correct": "もう",
+        "explanation": "Koohii o nomou = napijmy się kawy. Nomu (飲む, pić, grupa I) → nomou. Koohii (コーヒー) = kawa (kat. zapożyczenie z ang./hol.). Forma wolicjonalna jest naturalnym sposobem proponowania wspólnych czynności. Ocha o nomou = napijmy się herbaty — herbata (お茶) jest kulturowo ważniejsza w Japonii."
+      },
+      {
+        "id": "pj_vol9",
+        "question": "来年日本に行_____ と思っています (zamierzam w przyszłym roku pojechać do Japonii).",
+        "translation": "(Zamierzam w przyszłym roku pojechać do Japonii)",
+        "options": [
+          "こう",
+          "きます",
+          "った",
+          "かない"
+        ],
+        "correct": "こう",
+        "explanation": "Rainen nihon ni ikou to omotte imasu = zamierzam w przyszłym roku pojechać do Japonii. Volitional + to omotte iru wyraża trwały zamiar (silniejszy niż + to omou). Rainen (来年) = w przyszłym roku, Nihon (日本) = Japonia. Omotte iru (myślę ciągle) vs omou (myślę teraz)."
+      },
+      {
+        "id": "pj_vol10",
+        "question": "窓を開け_____ か (czy otworzyć okno?).",
+        "translation": "(Czy mam otworzyć okno?)",
+        "options": [
+          "ましょう",
+          "ました",
+          "ません",
+          "ます"
+        ],
+        "correct": "ましょう",
+        "explanation": "Mado o akemashou ka = czy mam otworzyć okno? Mashou ka to grzeczna propozycja/pytanie-oferta. Akeru (開ける) → akemashou ka. Mado (窓) = okno. Mashou ka jest łagodniejsze niż mashou — oferujesz pomoc, pytając o zgodę. Bardzo przydatne w codziennych sytuacjach grzecznościowych."
+      },
+      {
+        "id": "pj_vol11",
+        "question": "そろそろ帰_____ (pora już wracać).",
+        "translation": "(Pora wracać do domu)",
+        "options": [
+          "ろう",
+          "ります",
+          "った",
+          "らない"
+        ],
+        "correct": "ろう",
+        "explanation": "Sorosoro kaerou = pora już wracać. Kaeru (帰る, wracać do domu, grupa I) → kaerou. Grupa I z -ru: ru → rou. Sorosoro (そろそろ) = powoli/niedługo/pora — wyraża, że nadszedł odpowiedni moment. To bardzo naturalne japońskie zdanie, sygnalizujące zamiar zakończenia spotkania."
+      },
+      {
+        "id": "pj_vol12",
+        "question": "新しい言葉を覚え_____ (zapamiętajmy nowe słowa).",
+        "translation": "(Nauczmy się nowych słów)",
+        "options": [
+          "よう",
+          "ます",
+          "ない",
+          "たい"
+        ],
+        "correct": "よう",
+        "explanation": "Atarashii kotoba o oboeyou = nauczmy się nowych słów. Oboeru (覚える, zapamiętywać, grupa II) → oboeyou. Atarashii (新しい) = nowy, kotoba (言葉) = słowo/słowa. Oboeru jest kluczowym czasownikiem w nauce języków — zapamiętywać, uczyć się na pamięć. Forma wolicjonalna tu motywuje do wspólnej nauki."
+      },
+      {
+        "id": "pj_vol13",
+        "question": "公園を散歩し_____ (przespacerujmy się po parku).",
+        "translation": "(Przespacerujmy się po parku)",
+        "options": [
+          "ましょう",
+          "ました",
+          "ません",
+          "ている"
+        ],
+        "correct": "ましょう",
+        "explanation": "Kouen o sanpo shimashou = przespacerujmy się po parku. Sanpo suru (散歩する, spacerować) → sanpo shimashou. Kouen (公園) = park, o (を) = partykuła wskazująca trasę spaceru. Sanpo to popularne japońskie hobby. Shimashou zachowuje grzeczny ton zaproszenia."
+      },
+      {
+        "id": "pj_vol14",
+        "question": "もう少し頑張_____ (postarajmy się jeszcze trochę).",
+        "translation": "(Postarajmy się jeszcze trochę)",
+        "options": [
+          "ろう",
+          "ります",
+          "った",
+          "らない"
+        ],
+        "correct": "ろう",
+        "explanation": "Mou sukoshi ganbarou = postarajmy się jeszcze trochę. Ganbaru (頑張る, starać się, grupa I) → ganbarou. Mou sukoshi (もう少し) = jeszcze trochę. Ganbaru to jeden z najważniejszych japońskich czasowników kulturowo — wyrażanie wysiłku i determinacji. Ganbare! = dawaj! Ganbarou = dajmy z siebie wszystko!"
+      },
+      {
+        "id": "pj_vol15",
+        "question": "何を食べ_____ か迷っています (nie mogę się zdecydować, co zjeść).",
+        "translation": "(Waham się, co zjeść)",
+        "options": [
+          "よう",
+          "ます",
+          "たい",
+          "ない"
+        ],
+        "correct": "よう",
+        "explanation": "Nani o tabeyou ka mayotte imasu = nie mogę się zdecydować, co zjeść. Tabeyou ka = co zjeść (wolicjonalna + ka = pytanie retoryczne/wahanie). Mayou (迷う) = wahać się, gubić się. Nani (何) = co. Volitional + ka + mayou to naturalne wyrażenie niezdecydowania. Mayotte imasu = ciągle się waham."
+      }
+    ]
+  },
+  {
+    "key": "comparison",
+    "name": "Porównania ～より/～ほど",
+    "description": "Porównania w japońskim działają inaczej niż w polskim — nie odmieniamy przymiotnika, ale używamy partykuł より (yori = niż/od) i ほど (hodo = aż tak). Podstawowa struktura: A は B より [przymiotnik] = A jest [przymiotnik]-sze niż B. Negacja porównania używa ほど: A は B ほど [przymiotnik-neg] = A nie jest tak [przymiotnik] jak B. Nie ma stopniowania przymiotników jak w polskim!",
+    "iconName": "arrow.left.arrow.right",
+    "color": "orange",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_cmp1",
+        "question": "東京は大阪_____ 大きいです (Tokio jest większe niż Osaka).",
+        "translation": "(Tokio jest większe niż Osaka)",
+        "options": [
+          "より",
+          "ほど",
+          "まで",
+          "から"
+        ],
+        "correct": "より",
+        "explanation": "Toukyou wa Oosaka yori ookii desu = Tokio jest większe niż Osaka. Yori (より) = niż/od — podstawowa partykuła porównawcza. Ookii (大きい) = duży/wielki. W japońskim nie stopniujemy przymiotników (nie ma form jak większy/największy). A wa B yori + przymiotnik = A jest bardziej [przymiotnik] niż B."
+      },
+      {
+        "id": "pj_cmp2",
+        "question": "夏_____ 冬の方が好きです (wolę zimę od lata).",
+        "translation": "(Wolę zimę od lata)",
+        "options": [
+          "より",
+          "ほど",
+          "まで",
+          "でも"
+        ],
+        "correct": "より",
+        "explanation": "Natsu yori fuyu no hou ga suki desu = wolę zimę od lata. Natsu (夏) = lato, fuyu (冬) = zima. No hou ga (の方が) = bardziej/raczej — wzmacnia preferencję. A yori B no hou ga suki = wolę B od A. Suki (好き) = lubić. Ta konstrukcja jest kluczowa do wyrażania preferencji w japońskim."
+      },
+      {
+        "id": "pj_cmp3",
+        "question": "日本語は英語_____ 難しいです (japoński jest trudniejszy niż angielski).",
+        "translation": "(Japoński jest trudniejszy niż angielski)",
+        "options": [
+          "より",
+          "ほど",
+          "まで",
+          "から"
+        ],
+        "correct": "より",
+        "explanation": "Nihongo wa eigo yori muzukashii desu = japoński jest trudniejszy niż angielski. Eigo (英語) = angielski, nihongo (日本語) = japoński, muzukashii (難しい) = trudny. Yori wskazuje punkt odniesienia porównania. Dla Polaków ważne: w japońskim przymiotnik się nie zmienia — yori robi całą robotę porównawczą."
+      },
+      {
+        "id": "pj_cmp4",
+        "question": "この本はあの本_____ おもしろいです (ta książka jest ciekawsza niż tamta).",
+        "translation": "(Ta książka jest ciekawsza niż tamta)",
+        "options": [
+          "より",
+          "ほど",
+          "まで",
+          "とは"
+        ],
+        "correct": "より",
+        "explanation": "Kono hon wa ano hon yori omoshiroi desu = ta książka jest ciekawsza niż tamta. Kono (この) = ten/ta, ano (あの) = tamten/tamta, hon (本) = książka, omoshiroi (おもしろい) = ciekawy/zabawny. Demonstratives kono/sono/ano pomagają wskazać porównywane obiekty. Przymiotnik pozostaje w formie podstawowej."
+      },
+      {
+        "id": "pj_cmp5",
+        "question": "電車はバス_____ 速いです (pociąg jest szybszy niż autobus).",
+        "translation": "(Pociąg jest szybszy niż autobus)",
+        "options": [
+          "より",
+          "ほど",
+          "まで",
+          "から"
+        ],
+        "correct": "より",
+        "explanation": "Densha wa basu yori hayai desu = pociąg jest szybszy niż autobus. Densha (電車) = pociąg elektryczny, basu (バス) = autobus (z ang. bus), hayai (速い) = szybki. Japońskie pociągi (shinkansen!) są słynne z szybkości i punktualności. Yori zawsze stoi po obiekcie porównania."
+      },
+      {
+        "id": "pj_cmp6",
+        "question": "私は兄_____ 背が高いです (jestem wyższy niż mój brat).",
+        "translation": "(Jestem wyższy niż brat)",
+        "options": [
+          "より",
+          "ほど",
+          "まで",
+          "から"
+        ],
+        "correct": "より",
+        "explanation": "Watashi wa ani yori se ga takai desu = jestem wyższy niż brat. Ani (兄) = starszy brat, se (背) = wzrost, takai (高い) = wysoki. Se ga takai = być wysokim (dosłownie: wzrost jest wysoki). Porównania cech fizycznych używają naturalnie partykuły yori. Otouto (弟) = młodszy brat."
+      },
+      {
+        "id": "pj_cmp7",
+        "question": "数学は英語_____ 難しくないです (matematyka nie jest tak trudna jak angielski).",
+        "translation": "(Matematyka nie jest tak trudna jak angielski)",
+        "options": [
+          "ほど",
+          "より",
+          "まで",
+          "でも"
+        ],
+        "correct": "ほど",
+        "explanation": "Suugaku wa eigo hodo muzukashikunai desu = matematyka nie jest tak trudna jak angielski. Hodo (ほど) + negacja = 'nie tak ... jak'. To kluczowa różnica: yori w zdaniach twierdzących, hodo w przecząch. Suugaku (数学) = matematyka, muzukashikunai = nie jest trudna. A wa B hodo + neg = A nie jest tak jak B."
+      },
+      {
+        "id": "pj_cmp8",
+        "question": "今日は昨日_____ 寒くないです (dziś nie jest tak zimno jak wczoraj).",
+        "translation": "(Dziś nie jest tak zimno jak wczoraj)",
+        "options": [
+          "ほど",
+          "より",
+          "まで",
+          "から"
+        ],
+        "correct": "ほど",
+        "explanation": "Kyou wa kinou hodo samukunai desu = dziś nie jest tak zimno jak wczoraj. Kinou (昨日) = wczoraj, kyou (今日) = dziś, samui (寒い) = zimno → samukunai (nie jest zimno). Hodo + negacja to negacja porównania: 'nie dorównuje pod tym względem'. Ważne: hodo nie oznacza 'mniej' — tylko 'nie aż tak'."
+      },
+      {
+        "id": "pj_cmp9",
+        "question": "犬と猫とどちらが好きですか。_____ の方が好きです (wolę koty).",
+        "translation": "(Wolę koty — odpowiedź na pytanie)",
+        "options": [
+          "猫",
+          "犬",
+          "どちら",
+          "どれ"
+        ],
+        "correct": "猫",
+        "explanation": "Inu to neko to dochira ga suki desu ka / Neko no hou ga suki desu = co wolisz — psy czy koty? / Wolę koty. Dochira (どちら) = które z dwóch. A to B to dochira ga suki = które wolisz, A czy B? Odpowiedź: X no hou ga suki desu. Inu (犬) = pies, neko (猫) = kot. To standardowe pytanie porównawcze."
+      },
+      {
+        "id": "pj_cmp10",
+        "question": "このレストランはあのレストラン_____ おいしいです (ta restauracja jest smaczniejsza niż tamta).",
+        "translation": "(Ta restauracja jest lepsza niż tamta)",
+        "options": [
+          "より",
+          "ほど",
+          "まで",
+          "でも"
+        ],
+        "correct": "より",
+        "explanation": "Kono resutoran wa ano resutoran yori oishii desu = ta restauracja jest smaczniejsza niż tamta. Resutoran (レストラン) = restauracja (z fr. restaurant), oishii (おいしい) = smaczny/pyszny. Kono vs ano wskazuje bliskość: kono = ten tutaj, ano = tamten tam. Yori jasno wyrażą przewagę jednej nad drugą."
+      },
+      {
+        "id": "pj_cmp11",
+        "question": "バスは電車_____ 安いです (autobus jest tańszy niż pociąg).",
+        "translation": "(Autobus jest tańszy niż pociąg)",
+        "options": [
+          "より",
+          "ほど",
+          "まで",
+          "から"
+        ],
+        "correct": "より",
+        "explanation": "Basu wa densha yori yasui desu = autobus jest tańszy niż pociąg. Yasui (安い) = tani. Takai (高い) = drogi/wysoki (dwa znaczenia!). W Japonii rzeczywiście pociągi są droższe, ale szybsze i wygodniejsze od autobusów. Porównania cen to praktyczne użycie yori w życiu codziennym."
+      },
+      {
+        "id": "pj_cmp12",
+        "question": "何が一番好き_____ (co lubisz najbardziej? — pytanie).",
+        "translation": "(Co lubisz najbardziej?)",
+        "options": [
+          "ですか",
+          "です",
+          "でした",
+          "でしょう"
+        ],
+        "correct": "ですか",
+        "explanation": "Nani ga ichiban suki desu ka = co lubisz najbardziej? Ichiban (一番) = numer jeden/najbardziej — używane do tworzenia superlatywu. W japońskim nie ma stopnia najwyższego przymiotnika. Zamiast tego: ichiban + przymiotnik = najbardziej [przymiotnik]. Nani (何) = co. To fundamentalne pytanie o preferencje."
+      },
+      {
+        "id": "pj_cmp13",
+        "question": "東京と大阪と京都の中で、京都が一_____ きれいです (spośród Tokio, Osaki i Kioto, Kioto jest najpiękniejsze).",
+        "translation": "(Kioto jest najpiękniejsze z tych trzech)",
+        "options": [
+          "番",
+          "番目",
+          "つ",
+          "度"
+        ],
+        "correct": "番",
+        "explanation": "...no naka de, Kyouto ga ichiban kirei desu = spośród ..., Kioto jest najpiękniejsze. No naka de (の中で) = spośród/wśród — używane przy porównywaniu trzech lub więcej rzeczy. Ichiban (一番) = najbardziej. Kirei (きれい) = piękny/czysty (przymiotnik-na). Kyouto jest rzeczywiście słynne z historycznej piękności."
+      },
+      {
+        "id": "pj_cmp14",
+        "question": "日本料理の中で寿司が一番_____ です (spośród japońskich potraw sushi jest najsmaczniejsze).",
+        "translation": "(Sushi jest najsmaczniejsze z japońskich potraw)",
+        "options": [
+          "おいしい",
+          "おいしく",
+          "おいしくて",
+          "おいしさ"
+        ],
+        "correct": "おいしい",
+        "explanation": "Nihon ryouri no naka de sushi ga ichiban oishii desu = wśród kuchni japońskiej sushi jest najsmaczniejsze. Nihon ryouri (日本料理) = kuchnia japońska, sushi (寿司) = sushi. Przymiotnik w superlatywie nie zmienia formy — ichiban + podstawowa forma przymiotnika. Ryouri (料理) = gotowanie/kuchnia. Inne popularne: ramen, tempura, sukiyaki."
+      },
+      {
+        "id": "pj_cmp15",
+        "question": "このビルはあのビル_____ 高くないです (ten budynek nie jest tak wysoki jak tamten).",
+        "translation": "(Ten budynek nie jest tak wysoki jak tamten)",
+        "options": [
+          "ほど",
+          "より",
+          "まで",
+          "でも"
+        ],
+        "correct": "ほど",
+        "explanation": "Kono biru wa ano biru hodo takakunai desu = ten budynek nie jest tak wysoki jak tamten. Biru (ビル) = budynek/wieżowiec (z ang. building), takai (高い) = wysoki → takakunai = nie jest wysoki. Hodo + negacja to formuła: A wa B hodo [neg] = A nie jest aż tak [przymiotnik] jak B. Łagodniejsze niż bezpośrednie porównanie z yori."
+      }
+    ]
+  },
+  {
+    "key": "superlatives",
+    "name": "Stopień najwyższy 一番",
+    "description": "W japońskim nie istnieje forma gramatyczna stopnia najwyższego przymiotnika — zamiast tego używa się słowa 一番 (ichiban, dosłownie 'numer jeden') przed przymiotnikiem. Do wskazania grupy porównywanej służy ～の中で (no naka de, 'spośród'). Ichiban działa zarówno z przymiotnikami -i, jak i -na, oraz z przysłówkami. To prosta, ale niezwykle przydatna konstrukcja.",
+    "iconName": "trophy.fill",
+    "color": "yellow",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_sup1",
+        "question": "世界で一番大_____ 国はロシアです (największym krajem na świecie jest Rosja).",
+        "translation": "(Największym krajem na świecie jest Rosja)",
+        "options": [
+          "きい",
+          "きく",
+          "きな",
+          "きさ"
+        ],
+        "correct": "きい",
+        "explanation": "Sekai de ichiban ookii kuni wa Roshia desu = największym krajem na świecie jest Rosja. Sekai (世界) = świat, de (で) = w/na (partykuła zakresu), ichiban (一番) = najbardziej/numer jeden, ookii (大きい) = duży. Kuni (国) = kraj. Przymiotnik po ichiban pozostaje w formie podstawowej bez żadnych zmian."
+      },
+      {
+        "id": "pj_sup2",
+        "question": "クラスで一番_____ 人は誰ですか (kto jest najwyższy w klasie?).",
+        "translation": "(Kto jest najwyższy w klasie?)",
+        "options": [
+          "背が高い",
+          "背が高く",
+          "背が高くて",
+          "背の高さ"
+        ],
+        "correct": "背が高い",
+        "explanation": "Kurasu de ichiban se ga takai hito wa dare desu ka = kto jest najwyższy w klasie? Kurasu (クラス) = klasa, se ga takai = wysoki (dosłownie: wzrost jest wysoki), hito (人) = osoba, dare (誰) = kto. Ichiban + se ga takai = najwyższy. Pytanie o superlatyw: ...de ichiban [przymiotnik] no wa dare/nani desu ka."
+      },
+      {
+        "id": "pj_sup3",
+        "question": "日本で一番有_____ な山は富士山です (najbardziej znaną górą w Japonii jest Fudżi).",
+        "translation": "(Najbardziej znana góra w Japonii to Fuji)",
+        "options": [
+          "名",
+          "明",
+          "目",
+          "鳴"
+        ],
+        "correct": "名",
+        "explanation": "Nihon de ichiban yuumei na yama wa Fujisan desu = najbardziej znaną górą Japonii jest góra Fuji. Yuumei (有名) = sławny/znany — przymiotnik-na, więc potrzebuje na przed rzeczownikiem. Yama (山) = góra, -san (山) w Fujisan to honoryfikatywne odczytanie kanji góry. Fuji (3776m) to symbol Japonii."
+      },
+      {
+        "id": "pj_sup4",
+        "question": "果物の中で何が一番好き_____ (jakie owoce lubisz najbardziej?).",
+        "translation": "(Jakie owoce lubisz najbardziej?)",
+        "options": [
+          "ですか",
+          "です",
+          "でした",
+          "でしょう"
+        ],
+        "correct": "ですか",
+        "explanation": "Kudamono no naka de nani ga ichiban suki desu ka = jakie owoce lubisz najbardziej? Kudamono (果物) = owoce, no naka de (の中で) = spośród/wśród. Suki (好き) = lubić. Nani (何) = co/jaki. Typowe pytanie o preferencje w ramach kategorii. Popularne japońskie owoce: momo (桃, brzoskwinia), ichigo (いちご, truskawka), mikan (みかん, mandarynka)."
+      },
+      {
+        "id": "pj_sup5",
+        "question": "一年で一番_____ 月は何月ですか (który miesiąc jest najcieplejszy w roku?).",
+        "translation": "(Który miesiąc jest najcieplejszy?)",
+        "options": [
+          "暑い",
+          "暑く",
+          "暑くて",
+          "暑さ"
+        ],
+        "correct": "暑い",
+        "explanation": "Ichinen de ichiban atsui tsuki wa nangatsu desu ka = który miesiąc jest najgoręcej w roku? Ichinen (一年) = rok, atsui (暑い) = gorący (pogoda), tsuki (月) = miesiąc. Nangatsu (何月) = który miesiąc. W Japonii najgoręcej jest w sierpniu (hachigatsu). Atsui (暑い) = gorąca pogoda vs atsui (熱い) = gorący przedmiot."
+      },
+      {
+        "id": "pj_sup6",
+        "question": "この店で一番_____ なのはケーキです (najsmaczniejsze w tej cukierni jest ciasto).",
+        "translation": "(Najsmaczniejsze tutaj jest ciasto)",
+        "options": [
+          "おいしい",
+          "おいしく",
+          "おいしくて",
+          "おいしさ"
+        ],
+        "correct": "おいしい",
+        "explanation": "Kono mise de ichiban oishii no wa keeki desu = najsmaczniejszy w tym sklepie jest tort. Mise (店) = sklep/restauracja, oishii (おいしい) = smaczny, keeki (ケーキ) = ciasto/tort (z ang. cake). No wa (のは) = nominalizator — zamienia zdanie w temat. Japońska kultura cukiernicza jest niezwykle rozwinięta."
+      },
+      {
+        "id": "pj_sup7",
+        "question": "兄弟の中で私が一番年_____ です (spośród rodzeństwa jestem najmłodszy).",
+        "translation": "(Jestem najmłodszy z rodzeństwa)",
+        "options": [
+          "下",
+          "上",
+          "長",
+          "少"
+        ],
+        "correct": "下",
+        "explanation": "Kyoudai no naka de watashi ga ichiban toshishita desu = spośród rodzeństwa jestem najmłodszy. Kyoudai (兄弟) = rodzeństwo, toshishita (年下) = młodszy (dosłownie: wiek-dół). Toshiue (年上) = starszy (wiek-góra). W japońskiej kulturze hierarchia wiekowa jest bardzo ważna — nawet rodzeństwo ma specjalne słowa: ani (starszy brat), otouto (młodszy brat)."
+      },
+      {
+        "id": "pj_sup8",
+        "question": "スポーツの中でサッカーが一番_____ です (spośród sportów piłka nożna jest najpopularniejsza).",
+        "translation": "(Piłka nożna jest najpopularniejsza)",
+        "options": [
+          "人気",
+          "人間",
+          "人数",
+          "人口"
+        ],
+        "correct": "人気",
+        "explanation": "Supootsu no naka de sakkaa ga ichiban ninki desu = piłka nożna jest najpopularniejszym sportem. Ninki (人気) = popularność/popularny — przymiotnik-na. Supootsu (スポーツ) = sport, sakkaa (サッカー) = piłka nożna. W Japonii popularne są też yakyuu (野球, baseball) i sumou (相撲, sumo). Ninki ga aru = być popularnym."
+      },
+      {
+        "id": "pj_sup9",
+        "question": "今まで行った中で一番_____ 場所はどこですか (jakie najpiękniejsze miejsce odwiedziłeś?).",
+        "translation": "(Jakie najpiękniejsze miejsce odwiedziłeś?)",
+        "options": [
+          "きれいな",
+          "きれいに",
+          "きれいく",
+          "きれいで"
+        ],
+        "correct": "きれいな",
+        "explanation": "Ima made itta naka de ichiban kirei na basho wa doko desu ka = jakie najpiękniejsze miejsce odwiedziłeś? Ima made (今まで) = do teraz, itta (行った) = odwiedziłem (przeszła od iku). Basho (場所) = miejsce, doko (どこ) = gdzie. Kirei na (きれいな) = piękny — przymiotnik-na wymaga na przed rzeczownikiem."
+      },
+      {
+        "id": "pj_sup10",
+        "question": "家族の中でお母さんが一番料理が上_____ です (w rodzinie mama najlepiej gotuje).",
+        "translation": "(Mama gotuje najlepiej w rodzinie)",
+        "options": [
+          "手",
+          "品",
+          "達",
+          "等"
+        ],
+        "correct": "手",
+        "explanation": "Kazoku no naka de okaasan ga ichiban ryouri ga jouzu desu = mama najlepiej gotuje w rodzinie. Kazoku (家族) = rodzina, okaasan (お母さん) = mama, ryouri (料理) = gotowanie, jouzu (上手) = umiejętny/dobry w czymś. Jouzu to przymiotnik-na. Heta (下手) = nieumiejętny. Jouzu/heta to ważna para w japońskim."
+      },
+      {
+        "id": "pj_sup11",
+        "question": "四季の中で_____ が一番好きですか (którą porę roku lubisz najbardziej?).",
+        "translation": "(Którą porę roku lubisz?)",
+        "options": [
+          "どれ",
+          "どこ",
+          "いつ",
+          "だれ"
+        ],
+        "correct": "どれ",
+        "explanation": "Shiki no naka de dore ga ichiban suki desu ka = którą z czterech pór roku lubisz najbardziej? Shiki (四季) = cztery pory roku, dore (どれ) = które (z trzech lub więcej). Haru (春, wiosna), natsu (夏, lato), aki (秋, jesień), fuyu (冬, zima). Japonia słynie z wyraźnych czterech pór roku, zwłaszcza hanami (podziwianie kwiatów wiśni wiosną)."
+      },
+      {
+        "id": "pj_sup12",
+        "question": "このクラスで一番日本語が上_____ なのは誰ですか (kto w klasie najlepiej mówi po japońsku?).",
+        "translation": "(Kto najlepiej mówi po japońsku w klasie?)",
+        "options": [
+          "手",
+          "品",
+          "達",
+          "等"
+        ],
+        "correct": "手",
+        "explanation": "Kono kurasu de ichiban nihongo ga jouzu na no wa dare desu ka = kto najlepiej mówi po japońsku w klasie? Jouzu na no wa (上手なのは) = ten, kto jest dobry w... Dare (誰) = kto. Nihongo ga jouzu = być dobrym w japońskim. Uwaga: nie mów jouzu do Japończyka o jego japońskim — to niegrzeczne! Jouzu jest dla umiejętności wyuczonych."
+      },
+      {
+        "id": "pj_sup13",
+        "question": "日本の食べ物の中でラーメンが一番_____ です (ramen jest najsmaczniejszy wśród japońskich potraw).",
+        "translation": "(Ramen jest najsmaczniejszy)",
+        "options": [
+          "おいしい",
+          "おいしく",
+          "おいしさ",
+          "おいしくて"
+        ],
+        "correct": "おいしい",
+        "explanation": "Nihon no tabemono no naka de raamen ga ichiban oishii desu = ramen jest najsmaczniejszy wśród japońskich potraw. Tabemono (食べ物) = jedzenie, raamen (ラーメン) = ramen (zupa z makaronem). Ramen pochodzi z Chin, ale Japonia stworzyła niezliczone regionalne odmiany: shoyu, miso, tonkotsu, shio. Każdy region ma swoją specjalność."
+      },
+      {
+        "id": "pj_sup14",
+        "question": "今日は一年で一番_____ 日です (dziś jest najkrótszy dzień w roku).",
+        "translation": "(Dziś jest najkrótszy dzień w roku)",
+        "options": [
+          "短い",
+          "短く",
+          "短くて",
+          "短さ"
+        ],
+        "correct": "短い",
+        "explanation": "Kyou wa ichinen de ichiban mijikai hi desu = dziś jest najkrótszy dzień w roku. Mijikai (短い) = krótki, hi (日) = dzień. Nagai (長い) = długi — antonim. Najkrótszy dzień to przesilenie zimowe (冬至, touji), ok. 22 grudnia. Ichiban + przymiotnik-i nie zmienia formy przymiotnika — to jedna z prostszych konstrukcji japońskich."
+      },
+      {
+        "id": "pj_sup15",
+        "question": "三人の中で田中さんが一番_____ です (spośród trzech osób pan Tanaka jest najstarszy).",
+        "translation": "(Pan Tanaka jest najstarszy z trójki)",
+        "options": [
+          "年上",
+          "年下",
+          "若い",
+          "小さい"
+        ],
+        "correct": "年上",
+        "explanation": "Sannin no naka de Tanaka-san ga ichiban toshiue desu = spośród trzech osób pan Tanaka jest najstarszy. Sannin (三人) = trzy osoby, toshiue (年上) = starszy wiekiem. Tanaka (田中) to jedno z najczęstszych japońskich nazwisk (dosłownie: w środku pola ryżowego). San (さん) = pan/pani — uniwersalny honoryfikat. Hierarchia wiekowa jest fundamentalna w japońskim społeczeństwie."
+      }
+    ]
+  },
+  {
+    "key": "adverbs_basic",
+    "name": "Przysłówki podstawowe",
+    "description": "Przysłówki w japońskim tworzy się z przymiotników: przymiotniki -i tracą -i i zyskują -ku (速い hayai → 速く hayaku), a przymiotniki -na zamieniają -na na -ni (静かな shizuka na → 静かに shizuka ni). Istnieją też przysłówki niepochodzące od przymiotników, jak もう (mou, już), まだ (mada, jeszcze), いつも (itsumo, zawsze). Przysłówki stoją przed czasownikiem, który modyfikują.",
+    "iconName": "textformat.abc",
+    "color": "purple",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_adv1",
+        "question": "もっとゆっくり話し_____ ください (proszę mówić wolniej).",
+        "translation": "(Proszę mówić wolniej)",
+        "options": [
+          "て",
+          "た",
+          "ない",
+          "ます"
+        ],
+        "correct": "て",
+        "explanation": "Motto yukkuri hanashite kudasai = proszę mówić wolniej. Yukkuri (ゆっくり) = powoli/wolno — przysłówek niezwiązany z przymiotnikiem. Motto (もっと) = bardziej/więcej. Hanasu (話す) = mówić → hanashite (te-forma). To jedno z najważniejszych zdań dla uczących się japońskiego — prośba o wolniejsze mówienie."
+      },
+      {
+        "id": "pj_adv2",
+        "question": "日本語を_____ 勉強しています (pilnie uczę się japońskiego).",
+        "translation": "(Pilnie uczę się japońskiego)",
+        "options": [
+          "一生懸命",
+          "一番",
+          "一度",
+          "一緒"
+        ],
+        "correct": "一生懸命",
+        "explanation": "Nihongo o isshoukenmei benkyou shite imasu = pilnie uczę się japońskiego. Isshoukenmei (一生懸命) = z całych sił/pilnie — jeden z najważniejszych japońskich przysłówków. Dosłownie znaczy 'ryzykując życiem'. Wyraża pełne zaangażowanie i wysiłek. Benkyou suru = uczyć się. To przysłówek oddający japońską wartość wytrwałości."
+      },
+      {
+        "id": "pj_adv3",
+        "question": "彼女は_____ 歌います (ona pięknie śpiewa).",
+        "translation": "(Ona pięknie śpiewa)",
+        "options": [
+          "きれいに",
+          "きれいな",
+          "きれいで",
+          "きれいく"
+        ],
+        "correct": "きれいに",
+        "explanation": "Kanojo wa kirei ni utaimasu = ona pięknie śpiewa. Kirei (きれい) to przymiotnik-na → przysłówek: kirei ni (きれいに). Przymiotniki-na zamieniają na na ni, by stać się przysłówkami. Utau (歌う) = śpiewać. Kanojo (彼女) = ona. Ważna zasada: -na adjectives → -ni adverbs (shizuka ni, kirei ni, jouzu ni itp.)."
+      },
+      {
+        "id": "pj_adv4",
+        "question": "電車が_____ 来ました (pociąg szybko przyjechał).",
+        "translation": "(Pociąg szybko przyjechał)",
+        "options": [
+          "早く",
+          "早い",
+          "早くて",
+          "早さ"
+        ],
+        "correct": "早く",
+        "explanation": "Densha ga hayaku kimashita = pociąg szybko przyjechał. Hayai (早い/速い) → hayaku (przysłówek). Przymiotniki-i tracą -i i zyskują -ku. Densha (電車) = pociąg, kuru (来る) → kimashita (przeszła grzeczna). Hayai ma dwa kanji: 早い = wcześnie, 速い = szybko. Kontekst decyduje o znaczeniu. Japońskie pociągi słyną z punktualności."
+      },
+      {
+        "id": "pj_adv5",
+        "question": "_____ 宿題を出してください (proszę oddać pracę domową do jutra).",
+        "translation": "(Proszę oddać pracę domową do jutra)",
+        "options": [
+          "明日までに",
+          "明日まで",
+          "明日から",
+          "明日に"
+        ],
+        "correct": "明日までに",
+        "explanation": "Ashita made ni shukudai o dashite kudasai = proszę oddać pracę domową do jutra. Made ni (までに) = do (terminu) — przysłówek ograniczający czas. Ashita (明日) = jutro, shukudai (宿題) = praca domowa, dasu (出す) = oddawać/wyjmować. Made ni vs made: made ni = przed terminem (punkt graniczny), made = aż do (trwanie)."
+      },
+      {
+        "id": "pj_adv6",
+        "question": "子供たちは_____ 遊んでいます (dzieci wesoło się bawią).",
+        "translation": "(Dzieci wesoło się bawią)",
+        "options": [
+          "楽しく",
+          "楽しい",
+          "楽しくて",
+          "楽しさ"
+        ],
+        "correct": "楽しく",
+        "explanation": "Kodomotachi wa tanoshiku asonde imasu = dzieci wesoło się bawią. Tanoshii (楽しい, wesoły) → tanoshiku (przysłówek). Kodomotachi (子供たち) = dzieci (-tachi to pluralizator). Asobu (遊ぶ) = bawić się → asonde iru = bawią się (trwająca czynność). Przysłówki-ku modyfikują czasownik, opisując sposób wykonywania czynności."
+      },
+      {
+        "id": "pj_adv7",
+        "question": "彼はいつも_____ 学校に来ます (on zawsze przychodzi do szkoły wcześnie).",
+        "translation": "(On zawsze przychodzi wcześnie do szkoły)",
+        "options": [
+          "早く",
+          "早い",
+          "早くて",
+          "早さ"
+        ],
+        "correct": "早く",
+        "explanation": "Kare wa itsumo hayaku gakkou ni kimasu = on zawsze przychodzi wcześnie do szkoły. Itsumo (いつも) = zawsze — przysłówek częstotliwości. Hayaku (早く) = wcześnie. Gakkou (学校) = szkoła. Dwa przysłówki mogą wystąpić razem — itsumo (kiedy?) + hayaku (jak?). Inne przysłówki częstotliwości: tokidoki (時々, czasami), yoku (よく, często)."
+      },
+      {
+        "id": "pj_adv8",
+        "question": "_____ 日本に行ったことがありますか (czy kiedykolwiek byłeś w Japonii?).",
+        "translation": "(Czy kiedykolwiek byłeś w Japonii?)",
+        "options": [
+          "今まで",
+          "今から",
+          "今日は",
+          "今後"
+        ],
+        "correct": "今まで",
+        "explanation": "Ima made Nihon ni itta koto ga arimasu ka = czy kiedykolwiek byłeś w Japonii? Ima made (今まで) = do teraz/kiedykolwiek. Itta koto ga aru = mieć doświadczenie (zrobienia czegoś). Ima (今) = teraz, made (まで) = do. To konstrukcja pytania o doświadczenia życiowe — bardzo przydatna w rozmowach."
+      },
+      {
+        "id": "pj_adv9",
+        "question": "部屋を_____ 掃除してください (proszę czysto posprzątać pokój).",
+        "translation": "(Proszę dokładnie posprzątać pokój)",
+        "options": [
+          "きれいに",
+          "きれいな",
+          "きれいで",
+          "きれい"
+        ],
+        "correct": "きれいに",
+        "explanation": "Heya o kirei ni souji shite kudasai = proszę czysto posprzątać pokój. Kirei ni (きれいに) = czysto/porządnie (przysłówek od kirei-na). Heya (部屋) = pokój, souji suru (掃除する) = sprzątać. Kirei może znaczyć zarówno 'piękny', jak i 'czysty' — w kontekście sprzątania to 'czysty/porządny'."
+      },
+      {
+        "id": "pj_adv10",
+        "question": "_____ 食べないでください (proszę nie jeść tak szybko).",
+        "translation": "(Proszę nie jeść tak szybko)",
+        "options": [
+          "そんなに早く",
+          "そんなに早い",
+          "そんなに早くて",
+          "そんなに早さ"
+        ],
+        "correct": "そんなに早く",
+        "explanation": "Sonna ni hayaku tabenaide kudasai = proszę nie jeść tak szybko. Sonna ni (そんなに) = tak/aż tak — przysłówek stopnia. Hayaku (早く) = szybko. Tabenaide kudasai = proszę nie jeść (-naide kudasai = proszę nie). To grzeczna prośba o zmianę zachowania. Japończycy tradycyjnie jedzą spokojnie i z szacunkiem do jedzenia."
+      },
+      {
+        "id": "pj_adv11",
+        "question": "この問題は_____ 難しいです (ten problem jest dość trudny).",
+        "translation": "(Ten problem jest całkiem trudny)",
+        "options": [
+          "かなり",
+          "あまり",
+          "ぜんぜん",
+          "ちっとも"
+        ],
+        "correct": "かなり",
+        "explanation": "Kono mondai wa kanari muzukashii desu = ten problem jest dość/całkiem trudny. Kanari (かなり) = dość/całkiem/znacznie — przysłówek stopnia. Mondai (問題) = problem/pytanie. Inne przysłówki stopnia: totemo (とても, bardzo), sukoshi (少し, trochę), amari (あまり, nie bardzo + neg). Kanari jest silniejsze niż sukoshi, ale słabsze niż totemo."
+      },
+      {
+        "id": "pj_adv12",
+        "question": "日本語は_____ 上手ですね (mówisz naprawdę dobrze po japońsku!).",
+        "translation": "(Naprawdę dobrze mówisz po japońsku!)",
+        "options": [
+          "本当に",
+          "本当の",
+          "本当で",
+          "本当な"
+        ],
+        "correct": "本当に",
+        "explanation": "Nihongo wa hontou ni jouzu desu ne = naprawdę dobrze mówisz po japońsku! Hontou ni (本当に) = naprawdę/szczerze — przysłówek wzmacniający. Hontou (本当) = prawda. Jouzu (上手) = umiejętny/biegły. Ne (ね) = partykuła potwierdzająca (prawda?). Uwaga: ten komplement do obcokrajowca jest częsty, ale czasem kontrowersyjny — może sugerować niskie oczekiwania."
+      },
+      {
+        "id": "pj_adv13",
+        "question": "彼は_____ 遅刻します (on często się spóźnia).",
+        "translation": "(On często się spóźnia)",
+        "options": [
+          "よく",
+          "いつも",
+          "ぜんぜん",
+          "あまり"
+        ],
+        "correct": "よく",
+        "explanation": "Kare wa yoku chikoku shimasu = on często się spóźnia. Yoku (よく) = często/dobrze — wieloznaczny przysłówek! Od yoi/ii (良い, dobry) → yoku, ale też samodzielny przysłówek 'często'. Chikoku suru (遅刻する) = spóźniać się. Chikoku jest poważnie traktowane w Japonii — punktualność to podstawa kulturowa. Itsumo = zawsze, tokidoki = czasami."
+      },
+      {
+        "id": "pj_adv14",
+        "question": "_____ 寝ないで勉強しました (uczyłem się całą noc, nie śpiąc).",
+        "translation": "(Uczyłem się całą noc bez snu)",
+        "options": [
+          "一晩中",
+          "一日中",
+          "一年中",
+          "一生"
+        ],
+        "correct": "一晩中",
+        "explanation": "Hitoban juu nenaide benkyou shimashita = uczyłem się całą noc bez snu. Hitoban juu (一晩中) = całą noc. Nenaide (寝ないで) = nie śpiąc (naide = bez robienia). Benkyou suru = uczyć się. Ichinichi juu (一日中) = cały dzień, ichinen juu (一年中) = cały rok. Juu (中) po okresie czasu = przez cały ten czas."
+      },
+      {
+        "id": "pj_adv15",
+        "question": "お父さんは_____ 帰ってきません (tata jeszcze nie wrócił).",
+        "translation": "(Tata jeszcze nie wrócił)",
+        "options": [
+          "まだ",
+          "もう",
+          "いつも",
+          "ぜんぜん"
+        ],
+        "correct": "まだ",
+        "explanation": "Otousan wa mada kaette kimasen = tata jeszcze nie wrócił. Mada (まだ) = jeszcze (+ negacja = jeszcze nie). Mou (もう) = już (+ twierdzenie = już zrobił). Mada vs mou to ważna para: mada tabete imasen = jeszcze nie jadłem, mou tabemashita = już jadłem. Kaette kuru (帰ってくる) = wracać (do domu). Otousan (お父さん) = tata."
+      }
+    ]
+  },
+  {
+    "key": "nominalizers",
+    "name": "Nominalizatory こと/の",
+    "description": "Nominalizatory こと (koto) i の (no) zamieniają zdanie w rzeczownik, umożliwiając użycie go jako podmiotu lub dopełnienia. こと jest bardziej formalne i abstrakcyjne, の — bardziej potoczne i emocjonalne. Kluczowe konstrukcje: ～ことができる (umieć), ～ことがある (mieć doświadczenie), ～のが好き (lubić robienie). Zrozumienie różnicy między koto i no jest niezbędne na poziomie średniozaawansowanym.",
+    "iconName": "text.justify.leading",
+    "color": "teal",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_nom1",
+        "question": "日本語を話す_____ ができます (umiem mówić po japońsku).",
+        "translation": "(Umiem mówić po japońsku)",
+        "options": [
+          "こと",
+          "の",
+          "もの",
+          "ため"
+        ],
+        "correct": "こと",
+        "explanation": "Nihongo o hanasu koto ga dekimasu = umiem mówić po japońsku. Koto ga dekiru (ことができる) = umieć/być w stanie — formalna alternatywa dla formy potencjalnej. Hanasu (話す) = mówić. Koto nominalizuje zdanie hanasu (mówić) → hanasu koto (mówienie). Dekiru (できる) = móc. Ta konstrukcja jest bardziej formalna niż forma potencjalna hanaseru."
+      },
+      {
+        "id": "pj_nom2",
+        "question": "日本に行った_____ があります (byłem kiedyś w Japonii).",
+        "translation": "(Mam doświadczenie pojechania do Japonii)",
+        "options": [
+          "こと",
+          "の",
+          "もの",
+          "ため"
+        ],
+        "correct": "こと",
+        "explanation": "Nihon ni itta koto ga arimasu = byłem kiedyś w Japonii. Koto ga aru (ことがある) = mieć doświadczenie — zawsze z formą przeszłą czasownika. Itta (行った) = pojechałem. Ta konstrukcja opisuje doświadczenia życiowe. Arimasu to forma grzeczna od aru. Nihon (日本) = Japonia. Ważne: zawsze past tense + koto ga aru, nigdy present."
+      },
+      {
+        "id": "pj_nom3",
+        "question": "音楽を聞く_____ が好きです (lubię słuchać muzyki).",
+        "translation": "(Lubię słuchać muzyki)",
+        "options": [
+          "の",
+          "こと",
+          "もの",
+          "ため"
+        ],
+        "correct": "の",
+        "explanation": "Ongaku o kiku no ga suki desu = lubię słuchać muzyki. No (の) jest preferowany z przymiotnikami emocjonalnymi: suki (lubić), kirai (nie lubić), jouzu (biegły), heta (słaby w). Ongaku (音楽) = muzyka, kiku (聞く) = słuchać. No jest bardziej naturalny niż koto w codziennej mowie z wyrażeniami uczuć i preferencji."
+      },
+      {
+        "id": "pj_nom4",
+        "question": "泳ぐ_____ が上手です (jest dobry w pływaniu).",
+        "translation": "(Jest dobry w pływaniu)",
+        "options": [
+          "の",
+          "こと",
+          "もの",
+          "ため"
+        ],
+        "correct": "の",
+        "explanation": "Oyogu no ga jouzu desu = jest dobry w pływaniu. Oyogu (泳ぐ) = pływać. Jouzu (上手) = biegły/umiejętny. Z jouzu i heta naturalniej brzmi no niż koto. No ga jouzu = być dobrym w (robieniu czegoś). Heta (下手) = słaby w czymś — antonim jouzu. Polacy mogą kojarzyć no z polskim 'to' w 'pływanie to jego mocna strona'."
+      },
+      {
+        "id": "pj_nom5",
+        "question": "毎日運動する_____ は大切です (codzienne ćwiczenia są ważne).",
+        "translation": "(Codzienne ćwiczenia są ważne)",
+        "options": [
+          "こと",
+          "の",
+          "もの",
+          "ため"
+        ],
+        "correct": "こと",
+        "explanation": "Mainichi undou suru koto wa taisetsu desu = codzienne ćwiczenia są ważne. Koto jest preferowany w zdaniach o ogólnych prawdach i zasadach. Mainichi (毎日) = codziennie, undou suru (運動する) = ćwiczyć, taisetsu (大切) = ważny. Koto nominalizuje ogólną koncepcję, no byłby zbyt osobisty. Koto dla prawd uniwersalnych, no dla osobistych doświadczeń."
+      },
+      {
+        "id": "pj_nom6",
+        "question": "彼が来る_____ を知っていますか (czy wiesz, że on przyjdzie?).",
+        "translation": "(Czy wiesz, że on przyjdzie?)",
+        "options": [
+          "こと",
+          "の",
+          "もの",
+          "ため"
+        ],
+        "correct": "こと",
+        "explanation": "Kare ga kuru koto o shitte imasu ka = czy wiesz, że on przyjdzie? Koto o shiru (ことを知る) = wiedzieć, że... Kuru (来る) = przychodzić. Shitte iru (知っている) = wiedzieć (stan). Koto jest wymagany z shiru (wiedzieć) — tworzy zdanie podrzędne pełniące rolę dopełnienia. Kare (彼) = on."
+      },
+      {
+        "id": "pj_nom7",
+        "question": "約束を忘れない_____ にしてください (proszę pilnuj, żeby nie zapomnieć o obietnicy).",
+        "translation": "(Proszę postaraj się nie zapomnieć obietnicy)",
+        "options": [
+          "よう",
+          "こと",
+          "の",
+          "ため"
+        ],
+        "correct": "よう",
+        "explanation": "Yakusoku o wasurenai you ni shite kudasai = proszę postaraj się nie zapomnieć obietnicy. You ni suru (ようにする) = starać się/pilnować, żeby. Yakusoku (約束) = obietnica/umówienie, wasureru (忘れる) = zapominać → wasurenai (nie zapominać). You jest nominalizatorem stylu/sposobu: 'w taki sposób, żeby'. Shite kudasai = proszę robić."
+      },
+      {
+        "id": "pj_nom8",
+        "question": "日本語を勉強する_____ にしました (zdecydowałem się uczyć japońskiego).",
+        "translation": "(Zdecydowałem się uczyć japońskiego)",
+        "options": [
+          "こと",
+          "の",
+          "もの",
+          "ため"
+        ],
+        "correct": "こと",
+        "explanation": "Nihongo o benkyou suru koto ni shimashita = zdecydowałem się uczyć japońskiego. Koto ni suru (ことにする) = zdecydować się — ważna konstrukcja decyzyjna. Benkyou suru (勉強する) = uczyć się. Shimashita = przeszła grzeczna. Koto ni suru = ja decyduję, koto ni naru = zostało zdecydowane (bezosobowo). Ta para jest fundamentalna w japońskim."
+      },
+      {
+        "id": "pj_nom9",
+        "question": "来月から東京に住む_____ になりました (od przyszłego miesiąca będę mieszkać w Tokio — tak się złożyło).",
+        "translation": "(Zapadła decyzja, że zamieszkam w Tokio)",
+        "options": [
+          "こと",
+          "の",
+          "もの",
+          "ため"
+        ],
+        "correct": "こと",
+        "explanation": "Raigetsu kara Toukyou ni sumu koto ni narimashita = od przyszłego miesiąca zamieszkam w Tokio. Koto ni naru (ことになる) = zostało postanowione/tak się złożyło — wydarzenie poza naszą kontrolą. Raigetsu (来月) = przyszły miesiąc, sumu (住む) = mieszkać. Japończycy preferują koto ni naru nad koto ni suru — to skromniejsze i bardziej harmonijne."
+      },
+      {
+        "id": "pj_nom10",
+        "question": "子供が泣いている_____ が聞こえます (słychać, jak dziecko płacze).",
+        "translation": "(Słychać płaczące dziecko)",
+        "options": [
+          "の",
+          "こと",
+          "もの",
+          "ため"
+        ],
+        "correct": "の",
+        "explanation": "Kodomo ga naite iru no ga kikoemasu = słychać, jak dziecko płacze. No jest wymagany z czasownikami percepcji: kikoeru (聞こえる, słychać), mieru (見える, widać). Kodomo (子供) = dziecko, naku (泣く) = płakać → naite iru = płacze (trwa). Kikoeru = słychać (mimowolnie), kiku = słuchać (świadomie). Z percepcją zawsze no, nie koto."
+      },
+      {
+        "id": "pj_nom11",
+        "question": "遅刻しない_____ に気をつけてください (proszę uważaj, żeby się nie spóźnić).",
+        "translation": "(Uważaj, żeby się nie spóźnić)",
+        "options": [
+          "よう",
+          "こと",
+          "の",
+          "ため"
+        ],
+        "correct": "よう",
+        "explanation": "Chikoku shinai you ni ki o tsukete kudasai = proszę uważaj, żeby się nie spóźnić. You ni ki o tsukeru (ように気をつける) = uważać, żeby. Chikoku suru (遅刻する) = spóźniać się → shinai (nie robić). Ki o tsukeru (気をつける) = uważać (dosłownie: zwracać uwagę/duszę). W japońskiej kulturze punktualność jest niezwykle ważna."
+      },
+      {
+        "id": "pj_nom12",
+        "question": "テレビを見ながら食べる_____ はやめましょう (przestańmy jeść, oglądając telewizję).",
+        "translation": "(Przestańmy jeść przed telewizorem)",
+        "options": [
+          "の",
+          "こと",
+          "もの",
+          "ため"
+        ],
+        "correct": "の",
+        "explanation": "Terebi o minagara taberu no wa yamemashou = przestańmy jeść przed telewizorem. No wa ... yameru = przestać robić coś. Terebi (テレビ) = telewizja, minagara (見ながら) = oglądając (jednocześnie), yameru (やめる) = przestać/zrezygnować. No jest naturalniejsze niż koto w mowie potocznej do opisu konkretnych nawyków do zmiany."
+      },
+      {
+        "id": "pj_nom13",
+        "question": "趣味は本を読む_____ です (moim hobby jest czytanie książek).",
+        "translation": "(Moim hobby jest czytanie książek)",
+        "options": [
+          "こと",
+          "の",
+          "もの",
+          "ため"
+        ],
+        "correct": "こと",
+        "explanation": "Shumi wa hon o yomu koto desu = moim hobby jest czytanie książek. Shumi (趣味) = hobby/zainteresowanie, hon (本) = książka, yomu (読む) = czytać. Z desu (copula) na końcu zdania preferowany jest koto. Shumi wa ... koto desu to standardowe zdanie przedstawiające hobby. Japończycy często pytają o shumi na początku znajomości."
+      },
+      {
+        "id": "pj_nom14",
+        "question": "彼女が歌っている_____ を見ました (widziałem, jak ona śpiewała).",
+        "translation": "(Widziałem, jak ona śpiewała)",
+        "options": [
+          "の",
+          "こと",
+          "もの",
+          "ため"
+        ],
+        "correct": "の",
+        "explanation": "Kanojo ga utatte iru no o mimashita = widziałem, jak ona śpiewała. Z czasownikami percepcji wizualnej (miru = widzieć) używamy no, nie koto. Utau (歌う) = śpiewać → utatte iru = śpiewa (ciągłość). Mimashita = widziałem. No o miru = widzieć jak ktoś coś robi — bezpośrednia obserwacja. Koto byłoby zbyt abstrakcyjne."
+      },
+      {
+        "id": "pj_nom15",
+        "question": "早く寝る_____ が大事です (ważne jest, żeby wcześnie chodzić spać).",
+        "translation": "(Ważne jest wczesne chodzenie spać)",
+        "options": [
+          "こと",
+          "の",
+          "もの",
+          "ため"
+        ],
+        "correct": "こと",
+        "explanation": "Hayaku neru koto ga daiji desu = ważne jest wczesne chodzenie spać. Daiji (大事) = ważny (synonim taisetsu). Hayaku (早く) = wcześnie, neru (寝る) = spać/iść spać. Koto jest naturalny z daiji/taisetsu przy wyrażaniu ogólnych zasad życiowych. To typowa japońska rada zdrowotna. Neru koto = czynność spania (abstrakcyjna koncepcja)."
+      }
+    ]
+  },
+  {
+    "key": "relative_clauses",
+    "name": "Zdania przydawkowe",
+    "description": "Zdania przydawkowe (関係節, kankeissetsu) w japońskim nie używają zaimków względnych jak 'który/która' w polskim. Zamiast tego zdanie modyfikujące stoi PRZED rzeczownikiem, który opisuje. Np. 'książka, którą czytam' = 私が読んでいる本 (watashi ga yonde iru hon). Czasownik w formie zwykłej (nie w -masu) + rzeczownik. To fundamentalna struktura zaawansowanego japońskiego.",
+    "iconName": "link",
+    "color": "indigo",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_rel1",
+        "question": "昨日_____ 映画はおもしろかったです (film, który wczoraj obejrzałem, był ciekawy).",
+        "translation": "(Film, który wczoraj obejrzałem, był ciekawy)",
+        "options": [
+          "見た",
+          "見る",
+          "見て",
+          "見ます"
+        ],
+        "correct": "見た",
+        "explanation": "Kinou mita eiga wa omoshirokatta desu = film, który wczoraj obejrzałem, był ciekawy. Mita (見た) = obejrzałem — forma przeszła zwykła (plain past) przed rzeczownikiem tworzy zdanie przydawkowe. NIGDY forma -masu w zdaniach przydawkowych! Eiga (映画) = film. W japońskim nie ma 'który' — całe zdanie stoi przed rzeczownikiem."
+      },
+      {
+        "id": "pj_rel2",
+        "question": "東京に_____ 友達に会いました (spotkałem przyjaciela mieszkającego w Tokio).",
+        "translation": "(Spotkałem przyjaciela, który mieszka w Tokio)",
+        "options": [
+          "住んでいる",
+          "住んでいます",
+          "住んで",
+          "住む"
+        ],
+        "correct": "住んでいる",
+        "explanation": "Toukyou ni sunde iru tomodachi ni aimashita = spotkałem przyjaciela mieszkającego w Tokio. Sunde iru (住んでいる) = mieszka (ciągłość, forma zwykła) — modyfikuje tomodachi (友達, przyjaciel). Au (会う) = spotykać → aimashita. Kluczowe: forma zwykła (sunde iru), NIE grzeczna (sunde imasu) w zdaniu przydawkowym."
+      },
+      {
+        "id": "pj_rel3",
+        "question": "母が_____ ケーキはおいしいです (ciasto, które robi mama, jest pyszne).",
+        "translation": "(Ciasto robione przez mamę jest pyszne)",
+        "options": [
+          "作った",
+          "作る",
+          "作って",
+          "作ります"
+        ],
+        "correct": "作った",
+        "explanation": "Haha ga tsukutta keeki wa oishii desu = ciasto, które mama zrobiła, jest pyszne. Tsukuru (作る) = robić → tsukutta (przeszła zwykła). Haha (母) = moja mama (skromna forma), okaasan (お母さん) = twoja mama/mama (ogólnie). Keeki (ケーキ) = ciasto. Japońskie zdania przydawkowe mogą być bardzo długie — cała historia przed jednym rzeczownikiem."
+      },
+      {
+        "id": "pj_rel4",
+        "question": "日本語を_____ 人が増えています (przybywa ludzi uczących się japońskiego).",
+        "translation": "(Przybywa ludzi uczących się japońskiego)",
+        "options": [
+          "勉強している",
+          "勉強します",
+          "勉強して",
+          "勉強した"
+        ],
+        "correct": "勉強している",
+        "explanation": "Nihongo o benkyou shite iru hito ga fuete imasu = przybywa ludzi uczących się japońskiego. Benkyou shite iru (勉強している) = uczą się (ciągłość, zwykła). Hito (人) = osoba/ludzie, fueru (増える) = przybywać → fuete iru = przybywa. Zdanie przydawkowe: nihongo o benkyou shite iru = uczący się japońskiego, modyfikuje hito."
+      },
+      {
+        "id": "pj_rel5",
+        "question": "去年_____ 旅行は楽しかったです (podróż, którą odbyłem w zeszłym roku, była fajna).",
+        "translation": "(Ubiegłoroczna podróż była fajna)",
+        "options": [
+          "行った",
+          "行く",
+          "行って",
+          "行きます"
+        ],
+        "correct": "行った",
+        "explanation": "Kyonen itta ryokou wa tanoshikatta desu = podróż, którą odbyłem w zeszłym roku, była fajna. Kyonen (去年) = w zeszłym roku, iku (行く) → itta (przeszła zwykła). Ryokou (旅行) = podróż, tanoshii (楽しい) = wesoły/fajny → tanoshikatta (było fajnie). Itta ryokou = podróż, na którą pojechałem. Kyonen itta = na którą pojechałem w zeszłym roku."
+      },
+      {
+        "id": "pj_rel6",
+        "question": "赤い帽子を_____ 人は田中さんです (osoba nosząca czerwony kapelusz to pan Tanaka).",
+        "translation": "(Osoba w czerwonym kapeluszu to pan Tanaka)",
+        "options": [
+          "かぶっている",
+          "かぶっています",
+          "かぶって",
+          "かぶる"
+        ],
+        "correct": "かぶっている",
+        "explanation": "Akai boushi o kabutte iru hito wa Tanaka-san desu = osoba nosząca czerwony kapelusz to pan Tanaka. Kaburu (かぶる) = nosić (na głowie) → kabutte iru (nosi teraz). Akai (赤い) = czerwony, boushi (帽子) = kapelusz/czapka. Kabutte iru hito = osoba, która nosi. W japońskim różne słowa na 'nosić' zależą od części ciała: kiru (ubranie), haku (buty), kakeru (okulary)."
+      },
+      {
+        "id": "pj_rel7",
+        "question": "先生が_____ 本を読みました (przeczytałem książkę, którą polecił nauczyciel).",
+        "translation": "(Przeczytałem książkę poleconą przez nauczyciela)",
+        "options": [
+          "すすめた",
+          "すすめる",
+          "すすめて",
+          "すすめます"
+        ],
+        "correct": "すすめた",
+        "explanation": "Sensei ga susumeta hon o yomimashita = przeczytałem książkę poleconą przez nauczyciela. Susumeru (すすめる) = polecać → susumeta (polecił, przeszła zwykła). Sensei (先生) = nauczyciel, hon (本) = książka, yomu (読む) = czytać. Sensei ga susumeta = którą nauczyciel polecił — modyfikuje hon. Ga zamiast wa w zdaniu przydawkowym."
+      },
+      {
+        "id": "pj_rel8",
+        "question": "私が_____ レストランは安くておいしいです (restauracja, do której chodzę, jest tania i smaczna).",
+        "translation": "(Restauracja, do której chodzę, jest tania i pyszna)",
+        "options": [
+          "よく行く",
+          "よく行きます",
+          "よく行って",
+          "よく行った"
+        ],
+        "correct": "よく行く",
+        "explanation": "Watashi ga yoku iku resutoran wa yasukute oishii desu = restauracja, do której często chodzę, jest tania i smaczna. Yoku iku (よく行く) = często chodzę (teraźniejsza zwykła). Yasukute (安くて) = tania i... (te-forma łącząca). Oishii (おいしい) = smaczny. Yoku iku modyfikuje resutoran — moja ulubiona restauracja, ta do której regularnie chodzę."
+      },
+      {
+        "id": "pj_rel9",
+        "question": "日本で_____ 写真を見せてください (pokaż mi zdjęcia, które zrobiłeś w Japonii).",
+        "translation": "(Pokaż mi zdjęcia z Japonii)",
+        "options": [
+          "撮った",
+          "撮る",
+          "撮って",
+          "撮ります"
+        ],
+        "correct": "撮った",
+        "explanation": "Nihon de totta shashin o misete kudasai = pokaż mi zdjęcia zrobione w Japonii. Toru (撮る) = fotografować → totta (zrobiłem). Shashin (写真) = zdjęcie, miseru (見せる) = pokazywać → misete kudasai = proszę pokaż. Nihon de totta shashin = zdjęcia, które zrobiłeś w Japonii. De (で) = partykuła miejsca akcji."
+      },
+      {
+        "id": "pj_rel10",
+        "question": "隣に_____ 人は誰ですか (kim jest osoba siedząca obok?).",
+        "translation": "(Kim jest osoba siedząca obok?)",
+        "options": [
+          "座っている",
+          "座っています",
+          "座って",
+          "座る"
+        ],
+        "correct": "座っている",
+        "explanation": "Tonari ni suwatte iru hito wa dare desu ka = kim jest osoba siedząca obok? Suwaru (座る) = siedzieć → suwatte iru = siedzi (stan). Tonari (隣) = obok, dare (誰) = kto. Suwatte iru hito = osoba, która siedzi. Stan ciągły (te-iru) naturalnie opisuje kogoś w danym momencie. Ten typ pytania jest przydatny na spotkaniach i imprezach."
+      },
+      {
+        "id": "pj_rel11",
+        "question": "ここは私が_____ 大学です (to jest uniwersytet, na który chodziłem).",
+        "translation": "(To jest uniwersytet, na który chodziłem)",
+        "options": [
+          "通っていた",
+          "通っています",
+          "通って",
+          "通う"
+        ],
+        "correct": "通っていた",
+        "explanation": "Koko wa watashi ga kayotte ita daigaku desu = to uniwersytet, na który chodziłem. Kayou (通う) = dojeżdżać/uczęszczać → kayotte ita (chodziłem, przeszła ciągła). Daigaku (大学) = uniwersytet. Kayotte ita = na który uczęszczałem (w przeszłości). Koko (ここ) = tutaj. Przeszła forma ciągła wskazuje na zakończony okres regularnego działania."
+      },
+      {
+        "id": "pj_rel12",
+        "question": "明日_____ 試験は難しいそうです (egzamin, który jutro będzie, jest podobno trudny).",
+        "translation": "(Jutrzejszy egzamin jest podobno trudny)",
+        "options": [
+          "ある",
+          "あります",
+          "あって",
+          "あった"
+        ],
+        "correct": "ある",
+        "explanation": "Ashita aru shiken wa muzukashii sou desu = egzamin, który jutro będzie, jest podobno trudny. Aru (ある) = być/odbywać się (forma zwykła teraźniejsza). Shiken (試験) = egzamin, muzukashii (難しい) = trudny. Sou desu (そうです) = podobno/słyszałem, że. Ashita aru = który jest/będzie jutro — przyszłość wyrażona formą teraźniejszą w zdaniu przydawkowym."
+      },
+      {
+        "id": "pj_rel13",
+        "question": "弟が_____ 絵は上手です (rysunek, który narysował młodszy brat, jest dobry).",
+        "translation": "(Rysunek brata jest dobry)",
+        "options": [
+          "描いた",
+          "描く",
+          "描いて",
+          "描きます"
+        ],
+        "correct": "描いた",
+        "explanation": "Otouto ga kaita e wa jouzu desu = rysunek narysowany przez młodszego brata jest dobry. Kaku (描く) = rysować → kaita (narysował). Otouto (弟) = młodszy brat, e (絵) = rysunek/obraz. Jouzu (上手) = umiejętny/dobrze zrobiony. Otouto ga kaita = który młodszy brat narysował. W zdaniu przydawkowym podmiot oznaczony jest ga, nie wa."
+      },
+      {
+        "id": "pj_rel14",
+        "question": "窓から_____ 景色がきれいです (widok widziany z okna jest piękny).",
+        "translation": "(Widok z okna jest piękny)",
+        "options": [
+          "見える",
+          "見えます",
+          "見えて",
+          "見えた"
+        ],
+        "correct": "見える",
+        "explanation": "Mado kara mieru keshiki ga kirei desu = widok widoczny z okna jest piękny. Mieru (見える) = być widocznym (mimowolne widzenie). Mado (窓) = okno, kara (から) = z/od, keshiki (景色) = widok/krajobraz, kirei (きれい) = piękny. Mado kara mieru = widoczny z okna — modyfikuje keshiki. Mieru vs miru: mieru = widać (naturalnie), miru = patrzeć (świadomie)."
+      },
+      {
+        "id": "pj_rel15",
+        "question": "昨日_____ 店はもう閉まっています (sklep, do którego wczoraj chodziłem, jest już zamknięty).",
+        "translation": "(Wczorajszy sklep jest już zamknięty)",
+        "options": [
+          "行った",
+          "行く",
+          "行って",
+          "行きます"
+        ],
+        "correct": "行った",
+        "explanation": "Kinou itta mise wa mou shimatte imasu = sklep, do którego wczoraj chodziłem, jest już zamknięty. Itta (行った) = poszedłem. Mise (店) = sklep, shimaru (閉まる) = zamykać się → shimatte iru = jest zamknięty (stan). Mou (もう) = już. Kinou itta mise = sklep, do którego wczoraj poszedłem. Shimatte iru opisuje aktualny stan (zamknięty)."
+      }
+    ]
+  },
+  {
+    "key": "quotation_to",
+    "name": "Cytowanie と (to omou, to iu)",
+    "description": "Partykuła と (to) służy do cytowania — zarówno dosłownego (co ktoś powiedział), jak i pośredniego (co ktoś myśli). Kluczowe konstrukcje: ～と言う (to iu, mówić że), ～と思う (to omou, myśleć że), ～と聞く (to kiku, słyszeć że). Przed と stoi zdanie w formie zwykłej (plain form). Ta konstrukcja jest niezwykle ważna w codziennej komunikacji japońskiej.",
+    "iconName": "quote.bubble.fill",
+    "color": "pink",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_quo1",
+        "question": "日本語は難しい_____ 思います (myślę, że japoński jest trudny).",
+        "translation": "(Myślę, że japoński jest trudny)",
+        "options": [
+          "と",
+          "を",
+          "が",
+          "に"
+        ],
+        "correct": "と",
+        "explanation": "Nihongo wa muzukashii to omoimasu = myślę, że japoński jest trudny. To omou (と思う) = myśleć, że — fundamentalna konstrukcja wyrażania opinii. Przed to stoi zdanie w formie zwykłej: muzukashii (trudny, forma zwykła, nie muzukashii desu). Omoimasu = myślę (grzeczna). W japońskim to omou jest grzeczniejsze niż bezpośrednie stwierdzenie."
+      },
+      {
+        "id": "pj_quo2",
+        "question": "先生は明日テストがある_____ 言いました (nauczyciel powiedział, że jutro będzie test).",
+        "translation": "(Nauczyciel powiedział, że jutro jest test)",
+        "options": [
+          "と",
+          "を",
+          "が",
+          "に"
+        ],
+        "correct": "と",
+        "explanation": "Sensei wa ashita tesuto ga aru to iimashita = nauczyciel powiedział, że jutro będzie test. To iu (と言う) = mówić, że. Aru (ある) = być/istnieć — forma zwykła przed to. Tesuto (テスト) = test (z ang.), sensei (先生) = nauczyciel. Iimashita = powiedział (przeszła grzeczna od iu). Przed と zawsze forma zwykła, nawet w grzecznej wypowiedzi."
+      },
+      {
+        "id": "pj_quo3",
+        "question": "彼女は来ない_____ 思います (myślę, że ona nie przyjdzie).",
+        "translation": "(Myślę, że ona nie przyjdzie)",
+        "options": [
+          "と",
+          "を",
+          "が",
+          "に"
+        ],
+        "correct": "と",
+        "explanation": "Kanojo wa konai to omoimasu = myślę, że ona nie przyjdzie. Konai (来ない) = nie przyjdzie — przeczenie od kuru (来る, przychodzić). To omou z negacją: konai (forma zwykła przecząca) + to omou. Kanojo (彼女) = ona. Ważne: negację stawiamy w cytowanym zdaniu, nie w omou: konai to omou (myślę, że nie), nie kuru to omowanai."
+      },
+      {
+        "id": "pj_quo4",
+        "question": "「おはようございます」_____ 言ってください (proszę powiedzieć 'dzień dobry').",
+        "translation": "(Proszę powiedzieć 'dzień dobry')",
+        "options": [
+          "と",
+          "を",
+          "が",
+          "に"
+        ],
+        "correct": "と",
+        "explanation": "Ohayou gozaimasu to itte kudasai = proszę powiedzieć 'dzień dobry'. Cytat dosłowny w cudzysłowie japońskim 「」 + to iu. Itte kudasai = proszę powiedzieć (te-forma od iu + kudasai). Ohayou gozaimasu (おはようございます) = dzień dobry (rano). Dosłowne cytaty zachowują oryginalną formę — nawet grzeczną formę wewnątrz cytatu."
+      },
+      {
+        "id": "pj_quo5",
+        "question": "天気予報によると、明日は雨だ_____ です (według prognozy pogody, jutro ma padać).",
+        "translation": "(Według prognozy jutro będzie deszcz)",
+        "options": [
+          "そう",
+          "よう",
+          "らしい",
+          "みたい"
+        ],
+        "correct": "そう",
+        "explanation": "Tenki yohou ni yoru to, ashita wa ame da sou desu = według prognozy pogody, jutro ma padać. Sou desu (そうです) po zdaniu = 'podobno/słyszałem, że'. Tenki yohou (天気予報) = prognoza pogody, ni yoru to (によると) = według. Ame (雨) = deszcz. Sou desu (hearsay) różni się od sou desu (wygląda na) — zależy od formy przed sou."
+      },
+      {
+        "id": "pj_quo6",
+        "question": "この映画はおもしろかった_____ 聞きました (słyszałem, że ten film był ciekawy).",
+        "translation": "(Słyszałem, że ten film był ciekawy)",
+        "options": [
+          "と",
+          "を",
+          "が",
+          "に"
+        ],
+        "correct": "と",
+        "explanation": "Kono eiga wa omoshirokatta to kikimashita = słyszałem, że ten film był ciekawy. To kiku (と聞く) = słyszeć, że. Omoshirokatta (おもしろかった) = był ciekawy — przeszła forma zwykła przymiotnika-i. Kikimashita (聞きました) = słyszałem. Kiku ma dwa znaczenia: słuchać (muzyki) i słyszeć (informacji). To kiku = dowiadywać się od kogoś."
+      },
+      {
+        "id": "pj_quo7",
+        "question": "田中さんはもう帰った_____ 思います (myślę, że pan Tanaka już wrócił do domu).",
+        "translation": "(Myślę, że Tanaka już wyszedł)",
+        "options": [
+          "と",
+          "を",
+          "が",
+          "に"
+        ],
+        "correct": "と",
+        "explanation": "Tanaka-san wa mou kaetta to omoimasu = myślę, że pan Tanaka już wrócił. Kaetta (帰った) = wrócił — przeszła zwykła. Mou (もう) = już. To omou z przeszłością: kaetta to omou = myślę, że już wrócił. To omoimasu wyraża niepewną opinię — delikatniejsze niż bezpośrednie stwierdzenie. W japońskim lepiej jest być niepewnym niż kategorycznym."
+      },
+      {
+        "id": "pj_quo8",
+        "question": "日本語で「ありがとう」は何_____ 意味ですか (co znaczy 'arigatou' po japońsku?).",
+        "translation": "(Co znaczy 'arigatou'?)",
+        "options": [
+          "という",
+          "との",
+          "とは",
+          "とも"
+        ],
+        "correct": "という",
+        "explanation": "Nihongo de arigatou wa nani to iu imi desu ka = co znaczy 'arigatou'? To iu (という) = zwane/nazywane — łączy nazwę z objaśnieniem. Imi (意味) = znaczenie, nani (何) = co. To iu jest niezwykle wszechstronne: X to iu Y = Y zwane X. Arigatou (ありがとう) = dziękuję — jedno z najważniejszych słów. Pochodzi od arigatai (rzadki/cenny)."
+      },
+      {
+        "id": "pj_quo9",
+        "question": "彼は医者になりたい_____ 言っていました (on mówił, że chce zostać lekarzem).",
+        "translation": "(On mówił, że chce być lekarzem)",
+        "options": [
+          "と",
+          "を",
+          "が",
+          "に"
+        ],
+        "correct": "と",
+        "explanation": "Kare wa isha ni naritai to itte imashita = on mówił, że chce zostać lekarzem. Itte iru (言っている) = mówi (ciągle/wielokrotnie) → itte imashita (mówił). Isha (医者) = lekarz, naritai (なりたい) = chcę zostać (naru + tai). To iu w formie ciągłej sugeruje, że powtarzał to wielokrotnie. Naritai to forma pragnienia od naru (stawać się)."
+      },
+      {
+        "id": "pj_quo10",
+        "question": "新聞に大きな地震があった_____ 書いてあります (w gazecie napisano, że było duże trzęsienie ziemi).",
+        "translation": "(W gazecie jest napisane o wielkim trzęsieniu ziemi)",
+        "options": [
+          "と",
+          "を",
+          "が",
+          "に"
+        ],
+        "correct": "と",
+        "explanation": "Shinbun ni ookina jishin ga atta to kaite arimasu = w gazecie jest napisane, że było duże trzęsienie ziemi. Kaite aru (書いてある) = jest napisane (stan rezultatu). Shinbun (新聞) = gazeta, ookina (大きな) = duży (odmiana ookii), jishin (地震) = trzęsienie ziemi. To kaite aru = jest napisane, że. Japonia jest krajem trzęsień ziemi — temat ważny kulturowo."
+      },
+      {
+        "id": "pj_quo11",
+        "question": "今日は暑くなる_____ 思います (myślę, że dziś zrobi się gorąco).",
+        "translation": "(Myślę, że dziś będzie gorąco)",
+        "options": [
+          "と",
+          "を",
+          "が",
+          "に"
+        ],
+        "correct": "と",
+        "explanation": "Kyou wa atsuku naru to omoimasu = myślę, że dziś zrobi się gorąco. Atsui (暑い) → atsuku naru (stanie się gorąco). Naru (なる) = stawać się — w formie zwykłej przed to. Kyou (今日) = dziś. Przymiotnik-i + ku naru = stawać się [przymiotnikiem]. Omoimasu wyraża osobistą opinię/przewidywanie — bardziej skromny niż stwierdzenie pewnego faktu."
+      },
+      {
+        "id": "pj_quo12",
+        "question": "「すみません」_____ 日本人はよく言います (Japończycy często mówią 'sumimasen').",
+        "translation": "(Japończycy często mówią 'przepraszam')",
+        "options": [
+          "と",
+          "を",
+          "が",
+          "に"
+        ],
+        "correct": "と",
+        "explanation": "Sumimasen to nihonjin wa yoku iimasu = Japończycy często mówią sumimasen. Sumimasen (すみません) = przepraszam/dziękuję — wielofunkcyjne wyrażenie. Nihonjin (日本人) = Japończyk/Japończycy, yoku (よく) = często. Sumimasen jest jednym z najczęściej używanych słów w Japonii — służy jako przeprosiny, podziękowanie i zwrócenie uwagi. Kulturowo kluczowe."
+      },
+      {
+        "id": "pj_quo13",
+        "question": "あの人は親切だ_____ 思います (myślę, że ta osoba jest miła).",
+        "translation": "(Myślę, że tamta osoba jest życzliwa)",
+        "options": [
+          "と",
+          "を",
+          "が",
+          "に"
+        ],
+        "correct": "と",
+        "explanation": "Ano hito wa shinsetsu da to omoimasu = myślę, że tamta osoba jest miła. Shinsetsu (親切) = życzliwy/miły — przymiotnik-na. Przed to: da (forma zwykła copula), nie desu! Shinsetsu da to omou, nie shinsetsu desu to omou. Ano hito (あの人) = tamta osoba. Ważna zasada: przymiotniki-na i rzeczowniki używają da (nie desu) przed to."
+      },
+      {
+        "id": "pj_quo14",
+        "question": "母に電話して_____ 言われました (mama mi kazała zadzwonić).",
+        "translation": "(Mama mi kazała zadzwonić)",
+        "options": [
+          "と",
+          "を",
+          "が",
+          "に"
+        ],
+        "correct": "と",
+        "explanation": "Haha ni denwa shite to iwaremashita = mama mi kazała zadzwonić. Iwareru (言われる) = zostać powiedzianym — bierna od iu (mówić). Denwa shite = zadzwoń (polecenie w te-formie). Haha (母) = mama. To + bierna od iu = ktoś mi powiedział (dosłownie: zostałem powiedzianym). Ta konstrukcja jest naturalna w japońskim — bierność wskazuje, kto otrzymał polecenie."
+      },
+      {
+        "id": "pj_quo15",
+        "question": "この料理は何_____ いいますか (jak nazywa się ta potrawa?).",
+        "translation": "(Jak się nazywa ta potrawa?)",
+        "options": [
+          "と",
+          "を",
+          "が",
+          "に"
+        ],
+        "correct": "と",
+        "explanation": "Kono ryouri wa nani to iimasu ka = jak się nazywa ta potrawa? Nani to iu (何という) = jak się nazywa. Ryouri (料理) = potrawa/danie. Iimasu (言います) = mówi się (grzeczna od iu). To iu w pytaniu o nazwę: X wa nani to iimasu ka = jak nazywamy X? To niezwykle przydatne pytanie przy odkrywaniu japońskiej kuchni — Japonia ma tysiące lokalnych specjałów."
+      }
+    ]
+  },
+  {
+    "key": "hearsay_sou",
+    "name": "Mówi się, że ～そうです",
+    "description": "Konstrukcja ～そうです (sou desu) w znaczeniu 'słyszałem, że' / 'podobno' przekazuje informację z drugiej ręki. Łączy się z formą zwykłą zdania: 雨が降るそうです (ame ga furu sou desu = podobno będzie padać). UWAGA: nie mylić z ～そう w znaczeniu 'wygląda na' (np. おいしそう = wygląda na pyszne), które łączy się z rdzeniem przymiotnika/czasownika! To dwa różne そう.",
+    "iconName": "ear.fill",
+    "color": "cyan",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_hrs1",
+        "question": "明日は雨が降る_____ です (podobno jutro będzie padać).",
+        "translation": "(Słyszałem, że jutro będzie padać)",
+        "options": [
+          "そう",
+          "よう",
+          "みたい",
+          "らしい"
+        ],
+        "correct": "そう",
+        "explanation": "Ashita wa ame ga furu sou desu = podobno jutro będzie padać. Furu (降る) = padać (forma zwykła) + sou desu = podobno/słyszałem. Ame (雨) = deszcz. Hearsay sou desu łączy się z PEŁNĄ formą zwykłą (furu sou desu), w przeciwieństwie do appearance sou (furi-sou = wygląda, jakby miało padać). To kluczowa różnica — zapamiętaj ją!"
+      },
+      {
+        "id": "pj_hrs2",
+        "question": "あの映画はおもしろい_____ です (podobno tamten film jest ciekawy).",
+        "translation": "(Słyszałem, że tamten film jest ciekawy)",
+        "options": [
+          "そう",
+          "よう",
+          "みたい",
+          "らしい"
+        ],
+        "correct": "そう",
+        "explanation": "Ano eiga wa omoshiroi sou desu = podobno tamten film jest ciekawy. Omoshiroi (おもしろい) = ciekawy — pełna forma przymiotnika + sou desu (hearsay). Gdyby było omoshiro-sou, znaczyłoby 'wygląda na ciekawy' (appearance). Ano (あの) = tamten. To rozróżnienie jest jedną z najtrudniejszych rzeczy dla uczących się japońskiego."
+      },
+      {
+        "id": "pj_hrs3",
+        "question": "田中さんは先月結婚した_____ です (podobno pan Tanaka ożenił się w zeszłym miesiącu).",
+        "translation": "(Słyszałem, że Tanaka się ożenił)",
+        "options": [
+          "そう",
+          "よう",
+          "みたい",
+          "らしい"
+        ],
+        "correct": "そう",
+        "explanation": "Tanaka-san wa sengetsu kekkon shita sou desu = podobno Tanaka ożenił się w zeszłym miesiącu. Kekkon suru (結婚する) = żenić się/wychodzić za mąż → kekkon shita (ożenił się, przeszła). Sengetsu (先月) = w zeszłym miesiącu. Sou desu z przeszłą formą: shita sou desu = podobno zrobił. Kekkon (結婚) = małżeństwo/ślub."
+      },
+      {
+        "id": "pj_hrs4",
+        "question": "新しいレストランの料理はおいしくない_____ です (podobno jedzenie w nowej restauracji nie jest smaczne).",
+        "translation": "(Słyszałem, że nowa restauracja nie jest dobra)",
+        "options": [
+          "そう",
+          "よう",
+          "みたい",
+          "らしい"
+        ],
+        "correct": "そう",
+        "explanation": "Atarashii resutoran no ryouri wa oishikunai sou desu = podobno jedzenie w nowej restauracji nie jest smaczne. Oishikunai (おいしくない) = nie jest smaczne — przeczenie zwykłe + sou desu. Atarashii (新しい) = nowy. Hearsay sou desu z negacją: -nai sou desu. Ryouri (料理) = kuchnia/jedzenie. Plotki i opinie z drugiej ręki wyrażone przez sou desu."
+      },
+      {
+        "id": "pj_hrs5",
+        "question": "日本の夏はとても暑い_____ です (słyszałem, że lato w Japonii jest bardzo gorące).",
+        "translation": "(Podobno japońskie lata są bardzo gorące)",
+        "options": [
+          "そう",
+          "よう",
+          "みたい",
+          "らしい"
+        ],
+        "correct": "そう",
+        "explanation": "Nihon no natsu wa totemo atsui sou desu = podobno lato w Japonii jest bardzo gorące. Atsui (暑い) = gorący (pogoda) + sou desu = podobno. Totemo (とても) = bardzo. Natsu (夏) = lato. Japońskie lata rzeczywiście są gorące i wilgotne — tsuyu (梅雨, pora deszczowa) trwa od czerwca do lipca. Sou desu tu przekazuje informację, której sam nie doświadczyłeś."
+      },
+      {
+        "id": "pj_hrs6",
+        "question": "このケーキ、おいし_____ ですね (to ciasto wygląda na pyszne — ocena wzrokowa).",
+        "translation": "(To ciasto wygląda na pyszne!)",
+        "options": [
+          "そう",
+          "いそう",
+          "くそう",
+          "さそう"
+        ],
+        "correct": "そう",
+        "explanation": "Kono keeki, oishi-sou desu ne = to ciasto wygląda na pyszne. UWAGA: tu oishi-sou (bez -i!) to appearance sou, NIE hearsay. Oishii → oishi + sou = wygląda na pyszne (ocena wzrokowa). Hearsay byłoby: oishii sou desu (z pełnym oishii). Porównaj: oishi-sou (wygląda pysznie) vs oishii sou desu (podobno pyszne). Ta różnica jest kluczowa!"
+      },
+      {
+        "id": "pj_hrs7",
+        "question": "天気予報によると、来週は寒くなる_____ です (według prognozy, w przyszłym tygodniu ma być zimniej).",
+        "translation": "(Według prognozy przyszły tydzień będzie chłodny)",
+        "options": [
+          "そう",
+          "よう",
+          "みたい",
+          "らしい"
+        ],
+        "correct": "そう",
+        "explanation": "Tenki yohou ni yoru to, raishuu wa samuku naru sou desu = według prognozy pogody, przyszły tydzień będzie chłodniejszy. Ni yoru to (によると) = według — wskazuje źródło informacji. Raishuu (来週) = przyszły tydzień, samuku naru = stanie się zimno. Sou desu po cytowaniu źródła (ni yoru to) jest naturalne. Tenki yohou (天気予報) = prognoza pogody."
+      },
+      {
+        "id": "pj_hrs8",
+        "question": "あの店は来月閉まる_____ です (podobno tamten sklep zamknie się w przyszłym miesiącu).",
+        "translation": "(Słyszałem, że tamten sklep zamknie się w przyszłym miesiącu)",
+        "options": [
+          "そう",
+          "よう",
+          "みたい",
+          "らしい"
+        ],
+        "correct": "そう",
+        "explanation": "Ano mise wa raigetsu shimaru sou desu = podobno tamten sklep zamknie się w przyszłym miesiącu. Shimaru (閉まる) = zamykać się (przechodni: shimeru = zamykać). Raigetsu (来月) = przyszły miesiąc. Mise (店) = sklep. Sou desu przekazuje informację usłyszaną — być może od sąsiada, z gazety lub ze słyszenia. Nie potwierdzasz osobiście."
+      },
+      {
+        "id": "pj_hrs9",
+        "question": "彼は大学を卒業した_____ と聞きました (słyszałem, że on ukończył uniwersytet).",
+        "translation": "(Dowiedziałem się, że ukończył studia)",
+        "options": [
+          "の",
+          "こと",
+          "もの",
+          "そう"
+        ],
+        "correct": "の",
+        "explanation": "Kare wa daigaku o sotsugyou shita no da to kikimashita = słyszałem, że on ukończył uniwersytet. Sotsugyou suru (卒業する) = kończyć (szkołę) → shita. Daigaku (大学) = uniwersytet. No da to kiku — inna konstrukcja hearsay, bardziej formalna. Kiku (聞く) = słyszeć. Alternatywa dla sou desu: to kiku/to kiita = słyszałem, że."
+      },
+      {
+        "id": "pj_hrs10",
+        "question": "ニュースによると、台風が来る_____ です (według wiadomości, nadchodzi tajfun).",
+        "translation": "(Według wiadomości nadciąga tajfun)",
+        "options": [
+          "そう",
+          "よう",
+          "みたい",
+          "らしい"
+        ],
+        "correct": "そう",
+        "explanation": "Nyuusu ni yoru to, taifuu ga kuru sou desu = według wiadomości, nadchodzi tajfun. Nyuusu (ニュース) = wiadomości (z ang. news), taifuu (台風) = tajfun. Kuru (来る) = przychodzić/nadchodzić. Japonia doświadcza wielu tajfunów (sierpień-październik). Ni yoru to + sou desu to silna kombinacja: podajesz źródło i zaznaczasz, że to informacja z drugiej ręki."
+      },
+      {
+        "id": "pj_hrs11",
+        "question": "この薬はよく効く_____ です (podobno to lekarstwo dobrze działa).",
+        "translation": "(Słyszałem, że to lekarstwo jest skuteczne)",
+        "options": [
+          "そう",
+          "よう",
+          "みたい",
+          "らしい"
+        ],
+        "correct": "そう",
+        "explanation": "Kono kusuri wa yoku kiku sou desu = podobno to lekarstwo dobrze działa. Kiku (効く) = działać/być skutecznym (inny kanji niż 聞く = słuchać!). Kusuri (薬) = lekarstwo, yoku (よく) = dobrze. Sou desu przekazuje rekomendację zasłyszaną. Kiku (効く) jest ważny w kontekście medycznym i dla polecania produktów."
+      },
+      {
+        "id": "pj_hrs12",
+        "question": "北海道の冬は雪がたくさん降る_____ です (podobno na Hokkaido zimą jest dużo śniegu).",
+        "translation": "(Słyszałem, że na Hokkaido pada dużo śniegu)",
+        "options": [
+          "そう",
+          "よう",
+          "みたい",
+          "らしい"
+        ],
+        "correct": "そう",
+        "explanation": "Hokkaidou no fuyu wa yuki ga takusan furu sou desu = podobno na Hokkaido zimą pada dużo śniegu. Hokkaidou (北海道) = Hokkaido (najbardziej północna wyspa). Yuki (雪) = śnieg, takusan (たくさん) = dużo, furu (降る) = padać. Hokkaido słynie z festiwali śniegowych (Sapporo Yuki Matsuri). Sou desu naturalnie opisuje fakty geograficzne, których sam nie doświadczyłeś."
+      },
+      {
+        "id": "pj_hrs13",
+        "question": "あの先生は厳しい_____ です (podobno tamten nauczyciel jest surowy).",
+        "translation": "(Słyszałem, że tamten nauczyciel jest surowy)",
+        "options": [
+          "そう",
+          "よう",
+          "みたい",
+          "らしい"
+        ],
+        "correct": "そう",
+        "explanation": "Ano sensei wa kibishii sou desu = podobno tamten nauczyciel jest surowy. Kibishii (厳しい) = surowy/rygorystyczny. Sensei (先生) = nauczyciel. Sou desu po pełnym przymiotniku (kibishii) = hearsay. Gdyby kibishii → kibishi-sou, znaczyłoby 'wygląda na surowego' (appearance). Opinia z drugiej ręki często kształtuje reputację — sou desu to naturalny sposób jej przekazywania."
+      },
+      {
+        "id": "pj_hrs14",
+        "question": "彼女は来年アメリカに留学する_____ です (podobno ona w przyszłym roku jedzie na studia do Ameryki).",
+        "translation": "(Słyszałem, że jedzie na studia do Ameryki)",
+        "options": [
+          "そう",
+          "よう",
+          "みたい",
+          "らしい"
+        ],
+        "correct": "そう",
+        "explanation": "Kanojo wa rainen Amerika ni ryuugaku suru sou desu = podobno ona jedzie w przyszłym roku na studia do USA. Ryuugaku suru (留学する) = studiować za granicą, Amerika (アメリカ) = Ameryka/USA, rainen (来年) = przyszły rok. Ryuugaku (留学) to ważne doświadczenie w japońskim społeczeństwie. Sou desu przekazuje czyjś plan usłyszany pośrednio."
+      },
+      {
+        "id": "pj_hrs15",
+        "question": "日本では電車がいつも時間通りに来る_____ です (podobno w Japonii pociągi zawsze przyjeżdżają na czas).",
+        "translation": "(Słyszałem, że w Japonii pociągi są zawsze punktualne)",
+        "options": [
+          "そう",
+          "よう",
+          "みたい",
+          "らしい"
+        ],
+        "correct": "そう",
+        "explanation": "Nihon dewa densha ga itsumo jikan doori ni kuru sou desu = podobno w Japonii pociągi zawsze przyjeżdżają na czas. Jikan doori ni (時間通りに) = zgodnie z rozkładem/punktualnie. Itsumo (いつも) = zawsze. Densha (電車) = pociąg. To kultowy fakt o Japonii — opóźnienie nawet o minutę skutkuje oficjalnym przepraszaniem. Sou desu idealnie pasuje do przekazywania informacji kulturowych."
+      }
+    ]
+  },
+  {
+    "key": "appearance_you",
+    "name": "Wygląda na ～ようだ/～みたいだ",
+    "description": "Konstrukcje ～ようだ (you da) i ～みたいだ (mitai da) wyrażają wrażenie oparte na obserwacji: 'wygląda na', 'wydaje się', 'jakby'. ようだ jest bardziej formalne, みたいだ bardziej potoczne. Łączą się z formą zwykłą zdań, -na z przymiotnikami-na, の z rzeczownikami. Te konstrukcje pozwalają taktownie wyrażać opinie i obserwacje — kluczowa umiejętność w japońskiej komunikacji.",
+    "iconName": "eye.fill",
+    "color": "brown",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pj_app1",
+        "question": "彼は疲れている_____ です (wygląda na to, że jest zmęczony).",
+        "translation": "(Wygląda na zmęczonego)",
+        "options": [
+          "よう",
+          "そう",
+          "らしい",
+          "はず"
+        ],
+        "correct": "よう",
+        "explanation": "Kare wa tsukarete iru you desu = wygląda na to, że jest zmęczony. Tsukareru (疲れる) = męczyć się → tsukarete iru = jest zmęczony. You da (ようだ) wyraża wrażenie oparte na obserwacji — widzisz, że ktoś wygląda na zmęczonego. Kare (彼) = on. You desu jest grzeczną formą you da. Obserwacja + you desu jest taktowna — nie stwierdzasz faktu, a wrażenie."
+      },
+      {
+        "id": "pj_app2",
+        "question": "外は寒い_____ です (wygląda na to, że na zewnątrz jest zimno).",
+        "translation": "(Wygląda na to, że na dworze jest zimno)",
+        "options": [
+          "みたい",
+          "そう",
+          "らしい",
+          "はず"
+        ],
+        "correct": "みたい",
+        "explanation": "Soto wa samui mitai desu = wygląda na to, że na zewnątrz jest zimno. Mitai da (みたいだ) = wygląda na / wydaje się — bardziej potoczne niż you da. Soto (外) = na zewnątrz, samui (寒い) = zimno. Przymiotnik-i + mitai desu. Mitai desu bazuje na obserwacji — widzisz ludzi w kurtkach, śnieg za oknem. Bardziej naturalne w mowie codziennej niż you desu."
+      },
+      {
+        "id": "pj_app3",
+        "question": "この料理は辛い_____ です (ta potrawa wygląda na ostrą).",
+        "translation": "(Ta potrawa wygląda na ostrą)",
+        "options": [
+          "みたい",
+          "そう",
+          "らしい",
+          "はず"
+        ],
+        "correct": "みたい",
+        "explanation": "Kono ryouri wa karai mitai desu = ta potrawa wygląda na ostrą. Karai (辛い) = ostry (smak pikantny). Ryouri (料理) = potrawa. Mitai desu tu bazuje na wyglądzie dania — widzisz czerwień, chili. Uwaga: karai (辛い) vs tsurai (辛い) — te same kanji, ale karai = pikantny, tsurai = bolesny/ciężki. Kontekst decyduje!"
+      },
+      {
+        "id": "pj_app4",
+        "question": "雨が降っている_____ です (wygląda na to, że pada deszcz).",
+        "translation": "(Wydaje się, że pada)",
+        "options": [
+          "よう",
+          "そう",
+          "らしい",
+          "はず"
+        ],
+        "correct": "よう",
+        "explanation": "Ame ga futte iru you desu = wygląda na to, że pada deszcz. Futte iru (降っている) = pada (trwająca akcja). You desu oparty na pośredniej obserwacji — słyszysz dźwięk deszczu, widzisz mokre parasole, ale nie widzisz bezpośrednio. Ame (雨) = deszcz. You da sugeruje wnioskowanie z dowodów, nie bezpośrednią obserwację. To subtelna różnica z mitai da (bardziej bezpośrednie)."
+      },
+      {
+        "id": "pj_app5",
+        "question": "彼女は日本人の_____ に日本語を話します (ona mówi po japońsku jak Japonka).",
+        "translation": "(Mówi po japońsku jak Japonka)",
+        "options": [
+          "よう",
+          "みたい",
+          "そう",
+          "らしい"
+        ],
+        "correct": "よう",
+        "explanation": "Kanojo wa nihonjin no you ni nihongo o hanashimasu = ona mówi po japońsku jak Japonka. You ni (ように) = jak/jakby — przysłówkowe użycie you. Nihonjin (日本人) = Japończyk/Japonka + no you ni = jak Japończyk. Hanasu (話す) = mówić. Rzeczownik + no you ni = jak [rzeczownik]. To komplementarne porównanie — mówi tak naturalnie, jakby była rodzimą Japonką."
+      },
+      {
+        "id": "pj_app6",
+        "question": "この問題は簡単な_____ ですが、実は難しいです (ten problem wygląda na łatwy, ale jest trudny).",
+        "translation": "(Wygląda na łatwy, ale jest trudny)",
+        "options": [
+          "よう",
+          "みたい",
+          "そう",
+          "らしい"
+        ],
+        "correct": "よう",
+        "explanation": "Kono mondai wa kantan na you desu ga, jitsu wa muzukashii desu = wygląda na łatwy, ale jest trudny. Kantan (簡単) = łatwy — przymiotnik-na + na you desu. Jitsu wa (実は) = w rzeczywistości, muzukashii (難しい) = trudny. Ga (が) = ale. You desu z kontrastem: pozory vs rzeczywistość. Jitsu wa to przydatne wyrażenie do ujawniania prawdy."
+      },
+      {
+        "id": "pj_app7",
+        "question": "彼はお金持ち_____ です (on wygląda na bogatego).",
+        "translation": "(Wygląda na zamożnego)",
+        "options": [
+          "みたい",
+          "そう",
+          "らしい",
+          "はず"
+        ],
+        "correct": "みたい",
+        "explanation": "Kare wa okanemochi mitai desu = wygląda na bogatego. Okanemochi (お金持ち) = bogaty/zamożny (rzeczownik). Rzeczownik + mitai desu = wygląda jak/na. Kare (彼) = on. Mitai da z rzeczownikami nie wymaga no (w przeciwieństwie do you da: okanemochi no you da). Mitai jest prostsze i potoczniejsze. Obserwacja oparta na wyglądzie, zachowaniu."
+      },
+      {
+        "id": "pj_app8",
+        "question": "子供のようにたくさん_____ 人ですね (to jest osoba, która je dużo jak dziecko).",
+        "translation": "(Je dużo jak dziecko)",
+        "options": [
+          "食べる",
+          "食べます",
+          "食べて",
+          "食べた"
+        ],
+        "correct": "食べる",
+        "explanation": "Kodomo no you ni takusan taberu hito desu ne = to osoba, która je dużo jak dziecko. Kodomo (子供) = dziecko + no you ni = jak dziecko. Takusan (たくさん) = dużo. Taberu (食べる) = jeść (forma zwykła w zdaniu przydawkowym). You ni jako przysłówek: robić coś w sposób podobny do X. Ne (ね) = prawda? To humorystyczne porównanie — łączy you ni z zdaniem przydawkowym."
+      },
+      {
+        "id": "pj_app9",
+        "question": "道に迷った_____ です (wygląda na to, że się zgubiłem).",
+        "translation": "(Wygląda na to, że się zgubiłem)",
+        "options": [
+          "みたい",
+          "そう",
+          "らしい",
+          "はず"
+        ],
+        "correct": "みたい",
+        "explanation": "Michi ni mayotta mitai desu = wygląda na to, że się zgubiłem. Michi (道) = droga, mayou (迷う) = gubić się → mayotta (zgubiłem się). Mitai desu tu wyraża niepewną samoocenę — 'chyba się zgubiłem', co jest łagodniejsze niż bezpośrednie stwierdzenie. W japońskim łagodzenie stwierdzeń jest bardzo cenione. Michi ni mayou = zgubić drogę."
+      },
+      {
+        "id": "pj_app10",
+        "question": "この花は本物の_____ にきれいです (ten kwiat jest piękny jak prawdziwy).",
+        "translation": "(Ten kwiat jest piękny jak prawdziwy)",
+        "options": [
+          "よう",
+          "みたい",
+          "そう",
+          "らしい"
+        ],
+        "correct": "よう",
+        "explanation": "Kono hana wa honmono no you ni kirei desu = ten kwiat jest piękny jak prawdziwy. Honmono (本物) = prawdziwy/autentyczny. Hana (花) = kwiat. No you ni = jak. Kirei (きれい) = piękny. Tu you ni porównuje sztuczny kwiat do prawdziwego. Japonia słynie z kunsztownych sztucznych kwiatów (造花, zouka), ale też z prawdziwych: sakura, ume, kiku."
+      },
+      {
+        "id": "pj_app11",
+        "question": "電車が遅れている_____ です (wygląda na to, że pociąg się spóźni).",
+        "translation": "(Wydaje się, że pociąg ma opóźnienie)",
+        "options": [
+          "よう",
+          "そう",
+          "らしい",
+          "はず"
+        ],
+        "correct": "よう",
+        "explanation": "Densha ga okurete iru you desu = wygląda na to, że pociąg ma opóźnienie. Okureru (遅れる) = spóźniać się → okurete iru = jest opóźniony. You desu oparty na obserwacji: widzisz tablicę informacyjną lub tłum na peronie. W Japonii opóźnienia pociągów są rzadkie i zawsze oficjalnie wyjaśniane. Densha (電車) = pociąg elektryczny."
+      },
+      {
+        "id": "pj_app12",
+        "question": "彼女はうれしい_____ です (wygląda na to, że jest zadowolona).",
+        "translation": "(Wygląda na szczęśliwą)",
+        "options": [
+          "みたい",
+          "そう",
+          "らしい",
+          "はず"
+        ],
+        "correct": "みたい",
+        "explanation": "Kanojo wa ureshii mitai desu = wygląda na to, że jest zadowolona. Ureshii (うれしい) = szczęśliwy/zadowolony. Przymiotnik-i + mitai desu. Kanojo (彼女) = ona. Mitai desu bazuje na obserwacji wyrazu twarzy, zachowania. Porównaj: ureshii mitai (wygląda na szczęśliwą) vs ureshi-sou (appearance sou, wygląda na zadowoloną — bardziej bezpośrednia obserwacja wyrazu twarzy)."
+      },
+      {
+        "id": "pj_app13",
+        "question": "まるで夢の_____ です (to jest jak sen).",
+        "translation": "(To zupełnie jak sen)",
+        "options": [
+          "よう",
+          "みたい",
+          "そう",
+          "らしい"
+        ],
+        "correct": "よう",
+        "explanation": "Marude yume no you desu = to zupełnie jak sen. Marude (まるで) = zupełnie/całkiem — wzmacnia porównanie (zawsze z you/mitai). Yume (夢) = sen/marzenie. Marude + you da to silne porównanie: 'zupełnie jakby'. To poetyczne wyrażenie używane przy niezwykłych doświadczeniach. Marude jest silniejsze niż samo you — podkreśla uderzające podobieństwo."
+      },
+      {
+        "id": "pj_app14",
+        "question": "明日は天気がいい_____ です (wydaje się, że jutro będzie ładna pogoda).",
+        "translation": "(Wygląda na to, że jutro będzie ładna pogoda)",
+        "options": [
+          "みたい",
+          "そう",
+          "らしい",
+          "はず"
+        ],
+        "correct": "みたい",
+        "explanation": "Ashita wa tenki ga ii mitai desu = wydaje się, że jutro będzie ładna pogoda. Tenki ga ii (天気がいい) = ładna pogoda. Ii (いい/良い) = dobry. Ashita (明日) = jutro. Mitai desu tu bazuje na obserwacji nieba wieczorem lub sprawdzeniu prognozy. Mitai jest bardziej naturalny niż you w potocznej rozmowie o pogodzie."
+      },
+      {
+        "id": "pj_app15",
+        "question": "この本は子供向け_____ ですが、大人も楽しめます (ta książka wygląda na skierowaną do dzieci, ale dorośli też mogą się nią cieszyć).",
+        "translation": "(Wygląda jakby dla dzieci, ale dorośli też się zachwycą)",
+        "options": [
+          "みたい",
+          "よう",
+          "そう",
+          "らしい"
+        ],
+        "correct": "みたい",
+        "explanation": "Kono hon wa kodomumuke mitai desu ga, otona mo tanoshimemasu = wygląda na książkę dla dzieci, ale dorośli też mogą się cieszyć. Kodomumuke (子供向け) = skierowany do dzieci (-muke = skierowany do). Otona (大人) = dorosły. Tanoshimeru (楽しめる) = móc się cieszyć (forma potencjalna). Mitai desu wyraża pozorne wrażenie, które ga (ale) kwestionuje."
+      }
+    ]
+  },
+  {
+    "key": "obligation_nakereba",
+    "name": "Obowiązek ～なければならない",
+    "description": "Konstrukcja ～なければならない (nakereba naranai) oznacza 'musieć' — dosłownie 'jeśli nie zrobię, nie będzie dobrze'. Tworzy się ją od formy przeczącej: -nai → -nakereba naranai. Krótsza, potoczna wersja to ～なきゃ (nakya). Istnieje też ～なくてはいけない (nakute wa ikenai) o tym samym znaczeniu. To kluczowa konstrukcja do wyrażania obowiązków, zasad i konieczności.",
+    "iconName": "exclamationmark.triangle.fill",
+    "color": "red",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_obl1",
+        "question": "毎日薬を飲ま_____ ならない (muszę codziennie brać lekarstwo).",
+        "translation": "(Muszę codziennie brać lekarstwo)",
+        "options": [
+          "なければ",
+          "なくて",
+          "ないで",
+          "なかった"
+        ],
+        "correct": "なければ",
+        "explanation": "Mainichi kusuri o nomanakereba naranai = muszę codziennie brać lekarstwo. Nomu (飲む) → nomanai (przeczenie) → nomanakereba naranai (muszę brać). Kusuri (薬) = lekarstwo, mainichi (毎日) = codziennie. Naranai (ならない) = nie może być (dosłownie: nie stanie się). Cała konstrukcja: 'jeśli nie wezmę, nie będzie dobrze' → 'muszę wziąć'."
+      },
+      {
+        "id": "pj_obl2",
+        "question": "宿題をし_____ いけません (musisz odrobić pracę domową).",
+        "translation": "(Musisz odrobić zadanie domowe)",
+        "options": [
+          "なくては",
+          "なくて",
+          "ないで",
+          "なかった"
+        ],
+        "correct": "なくては",
+        "explanation": "Shukudai o shinakute wa ikemasen = musisz odrobić pracę domową. Suru → shinai → shinakute wa ikemasen (alternatywna forma obowiązku). Shukudai (宿題) = praca domowa. Ikemasen (いけません) = nie wolno/nie może tak być — grzeczna forma ikenai. Shinakute wa ikenai ≈ shinakereba naranai, ale nakute wa jest nieco łagodniejsze. Obie formy są powszechne."
+      },
+      {
+        "id": "pj_obl3",
+        "question": "明日早く起き_____ ならない (muszę jutro wcześnie wstać).",
+        "translation": "(Muszę jutro wcześnie wstać)",
+        "options": [
+          "なければ",
+          "なくて",
+          "ないで",
+          "なかった"
+        ],
+        "correct": "なければ",
+        "explanation": "Ashita hayaku okinakereba naranai = muszę jutro wcześnie wstać. Okiru (起きる, grupa II) → okinai → okinakereba naranai. Ashita (明日) = jutro, hayaku (早く) = wcześnie. Grupa II: -ru → -nai → -nakereba naranai. Obowiązek wstania wcześnie jest powszechny w japońskiej kulturze — szkoły i praca zaczynają się wcześnie."
+      },
+      {
+        "id": "pj_obl4",
+        "question": "パスポートを持ってい_____ ならない (musisz mieć paszport).",
+        "translation": "(Musisz mieć przy sobie paszport)",
+        "options": [
+          "なければ",
+          "なくて",
+          "ないで",
+          "なかった"
+        ],
+        "correct": "なければ",
+        "explanation": "Pasupooto o motte inakereba naranai = musisz mieć paszport. Motsu (持つ) = trzymać/mieć → motte iru = mieć przy sobie → motte inakereba naranai. Pasupooto (パスポート) = paszport (z ang.). Motte iru (持っている) = posiadać/mieć → przeczenie: motte inai → motte inakereba. W Japonii obcokrajowcy muszą nosić dokument tożsamości."
+      },
+      {
+        "id": "pj_obl5",
+        "question": "試験のために勉強し_____ (muszę się uczyć na egzamin — potoczne).",
+        "translation": "(Muszę się pouczyć na egzamin)",
+        "options": [
+          "なきゃ",
+          "なくちゃ",
+          "ないで",
+          "なかった"
+        ],
+        "correct": "なきゃ",
+        "explanation": "Shiken no tame ni benkyou shinakya = muszę się uczyć na egzamin. Shinakya (しなきゃ) to potoczne skrócenie od shinakereba (naranai). Shiken (試験) = egzamin, tame ni (ために) = w celu/dla. Potoczne formy: nakya (なきゃ) od nakereba, nakucha (なくちゃ) od nakute wa. Młodzi Japończycy prawie zawsze używają skróconych form w mowie codziennej."
+      },
+      {
+        "id": "pj_obl6",
+        "question": "会議に出_____ ならないので、早く帰ります (muszę iść na zebranie, więc wcześnie wrócę).",
+        "translation": "(Muszę być na spotkaniu, więc wcześnie wracam)",
+        "options": [
+          "なければ",
+          "なくて",
+          "ないで",
+          "なかった"
+        ],
+        "correct": "なければ",
+        "explanation": "Kaigi ni denakereba naranai node, hayaku kaerimasu = muszę być na zebraniu, więc wcześnie wrócę. Deru (出る) = wychodzić/uczestniczyć → denai → denakereba naranai. Kaigi (会議) = zebranie/spotkanie. Node (ので) = ponieważ/więc. Kaeru (帰る) = wracać. Nakereba naranai + node łączy obowiązek z konsekwencją."
+      },
+      {
+        "id": "pj_obl7",
+        "question": "ルールを守ら_____ いけません (trzeba przestrzegać zasad).",
+        "translation": "(Trzeba przestrzegać zasad)",
+        "options": [
+          "なくては",
+          "なくて",
+          "ないで",
+          "なかった"
+        ],
+        "correct": "なくては",
+        "explanation": "Ruuru o mamoranakute wa ikemasen = trzeba przestrzegać zasad. Mamoru (守る) = chronić/przestrzegać → mamoranai → mamoranakute wa ikemasen. Ruuru (ルール) = zasady (z ang. rule). Ikemasen jest grzeczniejsze niż ikenai. Mamoru to ważny czasownik: 'chronić' i 'przestrzegać'. Yakusoku o mamoru = dotrzymywać obietnicy, ruuru o mamoru = przestrzegać zasad."
+      },
+      {
+        "id": "pj_obl8",
+        "question": "この書類にサインし_____ なりません (musi pan podpisać ten dokument).",
+        "translation": "(Musi Pan/Pani podpisać ten dokument)",
+        "options": [
+          "なければ",
+          "なくて",
+          "ないで",
+          "なかった"
+        ],
+        "correct": "なければ",
+        "explanation": "Kono shorui ni sain shinakereba narimasen = musi pan podpisać ten dokument. Sain suru (サインする) = podpisywać (z ang. sign) → shinai → shinakereba. Shorui (書類) = dokument. Narimasen (なりません) = grzeczna forma naranai. W formalnym japońskim nakereba narimasen jest standardem — urzędy, biura, szpitale. Inkan (印鑑, pieczątka) jest tradycyjnie ważniejsza niż podpis."
+      },
+      {
+        "id": "pj_obl9",
+        "question": "日本では靴を脱が_____ ならない場所が多いです (w Japonii jest wiele miejsc, gdzie trzeba zdejmować buty).",
+        "translation": "(W Japonii trzeba często zdejmować buty)",
+        "options": [
+          "なければ",
+          "なくて",
+          "ないで",
+          "なかった"
+        ],
+        "correct": "なければ",
+        "explanation": "Nihon dewa kutsu o nuganakebreba naranai basho ga ooi desu = w Japonii jest dużo miejsc, gdzie trzeba zdejmować buty. Nugu (脱ぐ) = zdejmować (ubranie/buty) → nuganai → nuganakereba naranai. Kutsu (靴) = buty, basho (場所) = miejsce, ooi (多い) = liczny. W japońskich domach, świątyniach i niektórych restauracjach trzeba zdejmować buty — to fundamentalna zasada kulturowa."
+      },
+      {
+        "id": "pj_obl10",
+        "question": "レポートを来週までに出さ_____ なりません (raport musi być oddany do przyszłego tygodnia).",
+        "translation": "(Raport trzeba oddać do przyszłego tygodnia)",
+        "options": [
+          "なければ",
+          "なくて",
+          "ないで",
+          "なかった"
+        ],
+        "correct": "なければ",
+        "explanation": "Repooto o raishuu made ni dasanakereba narimasen = raport musi być oddany do przyszłego tygodnia. Dasu (出す) = oddawać/wyjmować → dasanai → dasanakereba. Repooto (レポート) = raport (z ang. report), raishuu (来週) = przyszły tydzień, made ni (までに) = do (termin). Narimasen — grzeczna forma obowiązku, typowa w środowisku akademickim i zawodowym."
+      },
+      {
+        "id": "pj_obl11",
+        "question": "子供は九時までに寝_____ いけません (dzieci muszą iść spać do dziewiątej).",
+        "translation": "(Dzieci muszą iść spać przed dziewiątą)",
+        "options": [
+          "なくては",
+          "なくて",
+          "ないで",
+          "なかった"
+        ],
+        "correct": "なくては",
+        "explanation": "Kodomo wa kuji made ni nenakute wa ikemasen = dzieci muszą iść spać do dziewiątej. Neru (寝る) → nenai → nenakute wa ikemasen. Kuji (九時) = godzina dziewiąta, made ni (までに) = do. Kodomo (子供) = dziecko/dzieci. Japońskie dzieci rzeczywiście chodzą spać wcześnie — dyscyplina jest ważna. Ikemasen + made ni wyraża obowiązek z terminem."
+      },
+      {
+        "id": "pj_obl12",
+        "question": "税金を払わ_____ ならない (trzeba płacić podatki).",
+        "translation": "(Trzeba płacić podatki)",
+        "options": [
+          "なければ",
+          "なくて",
+          "ないで",
+          "なかった"
+        ],
+        "correct": "なければ",
+        "explanation": "Zeikin o harawanakereba naranai = trzeba płacić podatki. Harau (払う) = płacić → harawanai → harawanakereba naranai. Zeikin (税金) = podatki. Naranai bez narimasen — nieformalny ton, stwierdzenie ogólnej zasady. Japonia ma system shinkoku (申告, deklaracja podatkowa) dla samozatrudnionych. Harau jest ważnym czasownikiem finansowym."
+      },
+      {
+        "id": "pj_obl13",
+        "question": "もっと野菜を食べ_____ (powinienem jeść więcej warzyw — potoczne).",
+        "translation": "(Muszę jeść więcej warzyw)",
+        "options": [
+          "なきゃ",
+          "なくちゃ",
+          "ないで",
+          "なかった"
+        ],
+        "correct": "なきゃ",
+        "explanation": "Motto yasai o tabenakya = muszę jeść więcej warzyw. Taberu → tabenai → tabenakya (potoczne). Yasai (野菜) = warzywa, motto (もっと) = więcej. Nakya to skrót od nakereba (naranai), bardzo potoczny. Japońska dieta tradycyjnie jest bogata w warzywa — nasu (bakłażan), daikon (rzodkiew), hourensou (szpinak). Zdrowe jedzenie to ważny temat."
+      },
+      {
+        "id": "pj_obl14",
+        "question": "この薬は食後に飲ま_____ ならないそうです (podobno to lekarstwo trzeba brać po jedzeniu).",
+        "translation": "(Podobno to lekarstwo trzeba brać po posiłku)",
+        "options": [
+          "なければ",
+          "なくて",
+          "ないで",
+          "なかった"
+        ],
+        "correct": "なければ",
+        "explanation": "Kono kusuri wa shokugo ni nomanakereba naranai sou desu = podobno to lekarstwo trzeba brać po jedzeniu. Shokugo (食後) = po posiłku (shoku = jedzenie, go = po). Nomanakereba naranai + sou desu = obowiązek + hearsay. Kusuri (薬) = lekarstwo. Shokuzen (食前) = przed posiłkiem. Japońskie apteczki mają bardzo precyzyjne instrukcje dawkowania — shokugo, shokuzen, shokukan (między posiłkami)."
+      },
+      {
+        "id": "pj_obl15",
+        "question": "運転する時はシートベルトをし_____ いけません (prowadząc, musisz mieć zapięty pas).",
+        "translation": "(Przy prowadzeniu musisz zapiąć pasy)",
+        "options": [
+          "なくては",
+          "なくて",
+          "ないで",
+          "なかった"
+        ],
+        "correct": "なくては",
+        "explanation": "Unten suru toki wa shiitoberuto o shinakute wa ikemasen = prowadząc, musisz zapiąć pasy. Unten suru (運転する) = prowadzić samochód, toki (時) = kiedy/czas. Shiitoberuto (シートベルト) = pas bezpieczeństwa (z ang. seat belt). Shinakute wa ikemasen = musisz zrobić. O suru = zakładać (pas). W Japonii pasy bezpieczeństwa są obowiązkowe od 1985 roku — surowe kary za ich niezapinanie."
+      }
+    ]
+  },
+  {
+    "key": "permission_temo",
+    "name": "Pozwolenie ～てもいい",
+    "description": "Konstrukcja ～てもいいです (temo ii desu) oznacza 'wolno/można' — dosłownie 'nawet jeśli zrobisz, jest OK'. Forma: te-forma + mo ii. Pytanie o pozwolenie: ～てもいいですか (temo ii desu ka). Odmowa: ～てはいけません (tewa ikemasen). To kluczowa para konstrukcji w codziennym japońskim — pozwolenie vs zakaz. Niezbędna w sytuacjach społecznych i formalnychnych.",
+    "iconName": "checkmark.circle.fill",
+    "color": "green",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_per1",
+        "question": "ここで写真を撮っ_____ いいですか (czy mogę tu robić zdjęcia?).",
+        "translation": "(Czy mogę tu fotografować?)",
+        "options": [
+          "ても",
+          "ては",
+          "てから",
+          "ており"
+        ],
+        "correct": "ても",
+        "explanation": "Koko de shashin o totte mo ii desu ka = czy mogę tu robić zdjęcia? Toru (撮る) = fotografować → totte (te-forma) + mo ii = wolno. Shashin (写真) = zdjęcie. Koko de (ここで) = tutaj. Temo ii desu ka to standardowe pytanie o pozwolenie — uprzejme i powszechne. W japońskich muzach i świątyniach fotografowanie bywa ograniczone — pytaj zawsze!"
+      },
+      {
+        "id": "pj_per2",
+        "question": "この席に座っ_____ いいですか (czy mogę usiąść na tym miejscu?).",
+        "translation": "(Czy mogę tu usiąść?)",
+        "options": [
+          "ても",
+          "ては",
+          "てから",
+          "ており"
+        ],
+        "correct": "ても",
+        "explanation": "Kono seki ni suwatte mo ii desu ka = czy mogę usiąść na tym miejscu? Suwaru (座る) = siadać → suwatte + mo ii desu ka. Seki (席) = miejsce (siedzące). To przydatne pytanie w pociągach, kawiarniach i restauracjach. W Japonii seki o jiyuu ni (自由席) = wolne miejsca, shitei seki (指定席) = miejsca przydzielone."
+      },
+      {
+        "id": "pj_per3",
+        "question": "窓を開け_____ いいですよ (możesz otworzyć okno — pozwolenie).",
+        "translation": "(Śmiało, otwórz okno)",
+        "options": [
+          "ても",
+          "ては",
+          "てから",
+          "ており"
+        ],
+        "correct": "ても",
+        "explanation": "Mado o akete mo ii desu yo = możesz otworzyć okno. Akeru (開ける) = otwierać → akete + mo ii. Yo (よ) dodaje ton zapewnienia: 'naprawdę możesz'. Mado (窓) = okno. Odpowiedź na pytanie temo ii desu ka: Hai, ...temo ii desu yo (tak, możesz) lub Sumimasen, chotto... (przepraszam, raczej nie...). Yo i ne to kluczowe partykuły końcowe."
+      },
+      {
+        "id": "pj_per4",
+        "question": "もう帰っ_____ いいですか (czy mogę już iść do domu?).",
+        "translation": "(Czy mogę już wracać?)",
+        "options": [
+          "ても",
+          "ては",
+          "てから",
+          "ており"
+        ],
+        "correct": "ても",
+        "explanation": "Mou kaette mo ii desu ka = czy mogę już iść do domu? Kaeru (帰る) = wracać → kaette + mo ii desu ka. Mou (もう) = już. To typowe pytanie ucznia do nauczyciela lub pracownika do szefa. W japońskiej kulturze pracy, wychodzenie przed innymi (seniorami) jest społecznie delikatne — osaki ni shitsurei shimasu (お先に失礼します) = przepraszam, wychodzę wcześniej."
+      },
+      {
+        "id": "pj_per5",
+        "question": "辞書を使っ_____ いいですか (czy mogę używać słownika?).",
+        "translation": "(Czy mogę używać słownika?)",
+        "options": [
+          "ても",
+          "ては",
+          "てから",
+          "ており"
+        ],
+        "correct": "ても",
+        "explanation": "Jisho o tsukatte mo ii desu ka = czy mogę używać słownika? Tsukau (使う) = używać → tsukatte + mo ii. Jisho (辞書) = słownik. Typowe pytanie na egzaminie lub w klasie. Denshi jisho (電子辞書) = słownik elektroniczny, kami no jisho (紙の辞書) = słownik papierowy. W Japonii denshi jisho są popularne wśród uczniów — małe, poręczne urządzenia."
+      },
+      {
+        "id": "pj_per6",
+        "question": "このパソコンを使っ_____ いいですよ (możesz użyć tego komputera).",
+        "translation": "(Możesz użyć tego komputera)",
+        "options": [
+          "ても",
+          "ては",
+          "てから",
+          "ており"
+        ],
+        "correct": "ても",
+        "explanation": "Kono pasokon o tsukatte mo ii desu yo = możesz użyć tego komputera. Pasokon (パソコン) = komputer osobisty (skrót od paasonaru konpyuutaa). Tsukatte mo ii = wolno użyć. Yo (よ) = pewność/zapewnienie. Mo ii desu yo to uprzejme udzielanie pozwolenia. Japończycy skracają słowa zapożyczone: pasokon, rimokon (リモコン, pilot), sumaho (スマホ, smartfon)."
+      },
+      {
+        "id": "pj_per7",
+        "question": "ここでタバコを吸っ_____ いいですか (czy mogę tu palić?).",
+        "translation": "(Czy tu wolno palić?)",
+        "options": [
+          "ても",
+          "ては",
+          "てから",
+          "ており"
+        ],
+        "correct": "ても",
+        "explanation": "Koko de tabako o sutte mo ii desu ka = czy mogę tu palić? Tabako (タバコ) = papieros/tytoń, suu (吸う) = palić/wdychać → sutte. W Japonii kitsuen (喫煙) = palenie, kin'en (禁煙) = zakaz palenia. Wiele miejsc publicznych w Japonii jest kin'en. Odpowiedź odmowna: sumimasen, koko wa kin'en desu = przepraszam, tu jest zakaz palenia. Palenie na ulicy jest też często zakazane."
+      },
+      {
+        "id": "pj_per8",
+        "question": "遅れ_____ いいですか (czy mogę się spóźnić?).",
+        "translation": "(Czy mogę się spóźnić?)",
+        "options": [
+          "ても",
+          "ては",
+          "てから",
+          "ており"
+        ],
+        "correct": "ても",
+        "explanation": "Okurete mo ii desu ka = czy mogę się spóźnić? Okureru (遅れる) = spóźniać się → okurete + mo ii. Spóźnianie się w Japonii jest poważnie traktowane — pytanie to jest dość odważne. Zwykle dodaje się powód: densha ga okureta node (電車が遅れたので) = ponieważ pociąg się spóźnił. Chikoku (遅刻) = spóźnienie (termin formalny)."
+      },
+      {
+        "id": "pj_per9",
+        "question": "クレジットカードで払っ_____ いいですか (czy mogę zapłacić kartą kredytową?).",
+        "translation": "(Czy mogę zapłacić kartą?)",
+        "options": [
+          "ても",
+          "ては",
+          "てから",
+          "ており"
+        ],
+        "correct": "ても",
+        "explanation": "Kurejitto kaado de haratte mo ii desu ka = czy mogę zapłacić kartą kredytową? Harau (払う) = płacić → haratte. Kurejitto kaado (クレジットカード) = karta kredytowa. De (で) = za pomocą. W Japonii genkin (現金, gotówka) była długo preferowana, ale karty i paypay stają się powszechne. Suica, Pasmo to popularne karty elektroniczne do płatności."
+      },
+      {
+        "id": "pj_per10",
+        "question": "質問し_____ いいですか (czy mogę zadać pytanie?).",
+        "translation": "(Czy mogę zadać pytanie?)",
+        "options": [
+          "ても",
+          "ては",
+          "てから",
+          "ており"
+        ],
+        "correct": "ても",
+        "explanation": "Shitsumon shite mo ii desu ka = czy mogę zadać pytanie? Shitsumon suru (質問する) = zadawać pytanie → shite + mo ii. Shitsumon (質問) = pytanie. To fundamentalne zdanie w klasie i na spotkaniach. W japońskiej kulturze pytania są mniej spontaniczne niż w polskiej — czeka się na odpowiedni moment. Sensei, shitsumon shite mo ii desu ka = nauczycielu, czy mogę zadać pytanie?"
+      },
+      {
+        "id": "pj_per11",
+        "question": "エアコンをつけ_____ いいですか (czy mogę włączyć klimatyzację?).",
+        "translation": "(Czy mogę włączyć klimatyzację?)",
+        "options": [
+          "ても",
+          "ては",
+          "てから",
+          "ており"
+        ],
+        "correct": "ても",
+        "explanation": "Eakon o tsukete mo ii desu ka = czy mogę włączyć klimatyzację? Tsukeru (つける) = włączać → tsukete. Eakon (エアコン) = klimatyzacja (z ang. air conditioner). Tsukeru vs keru: tsukeru = włączać, kesu (消す) = wyłączać. W gorących japońskich latach eakon jest niezbędny. To praktyczne pytanie w biurach, gdzie temperatura jest często dyskutowana."
+      },
+      {
+        "id": "pj_per12",
+        "question": "お菓子を食べ_____ いいですよ (możesz zjeść słodycze).",
+        "translation": "(Możesz zjeść ciasteczka)",
+        "options": [
+          "ても",
+          "ては",
+          "てから",
+          "ており"
+        ],
+        "correct": "ても",
+        "explanation": "Okashi o tabete mo ii desu yo = możesz zjeść słodycze. Okashi (お菓子) = słodycze/ciastka (z o- honoryfikatywnym). Tabete mo ii desu yo = wolno ci jeść. O-kashi obejmuje szeroki zakres: wagashi (和菓子, japońskie słodycze tradycyjne), yougashi (洋菓子, słodycze zachodnie), senbei (煎餅, krakersy ryżowe). Japońska kultura omiyage (お土産, prezenty z podróży) często obejmuje lokalne okashi."
+      },
+      {
+        "id": "pj_per13",
+        "question": "少し休ん_____ いいですか (czy mogę trochę odpocząć?).",
+        "translation": "(Czy mogę chwilę odpocząć?)",
+        "options": [
+          "でも",
+          "ではい",
+          "でから",
+          "でおり"
+        ],
+        "correct": "でも",
+        "explanation": "Sukoshi yasunde mo ii desu ka = czy mogę trochę odpocząć? Yasumu (休む) = odpoczywać → yasunde (te-forma) + mo ii. Sukoshi (少し) = trochę. Yasumu to ważny czasownik: odpoczywać, brać wolne od pracy. Yasumi (休み) = dzień wolny/przerwa. Uwaga na te-formę: yasumu → yasunde (grupa I z -mu: -mu → -nde)."
+      },
+      {
+        "id": "pj_per14",
+        "question": "日本語で話し_____ いいですか (czy mogę mówić po japońsku?).",
+        "translation": "(Czy mogę mówić po japońsku?)",
+        "options": [
+          "ても",
+          "ては",
+          "てから",
+          "ており"
+        ],
+        "correct": "ても",
+        "explanation": "Nihongo de hanashite mo ii desu ka = czy mogę mówić po japońsku? Hanasu (話す) → hanashite + mo ii. Nihongo de (日本語で) = po japońsku (de = za pomocą/w języku). To pytanie pokazuje chęć ćwiczenia japońskiego — Japończycy zwykle bardzo się cieszą, gdy obcokrajowcy próbują mówić po japońsku. Ganbatte! (頑張って!) = powodzenia!"
+      },
+      {
+        "id": "pj_per15",
+        "question": "荷物をここに置い_____ いいですか (czy mogę tu zostawić bagaż?).",
+        "translation": "(Czy mogę tu zostawić bagaż?)",
+        "options": [
+          "ても",
+          "ては",
+          "てから",
+          "ており"
+        ],
+        "correct": "ても",
+        "explanation": "Nimotsu o koko ni oite mo ii desu ka = czy mogę tu zostawić bagaż? Oku (置く) = kłaść/zostawiać → oite + mo ii. Nimotsu (荷物) = bagaż/paczka. Koko ni (ここに) = tutaj. W Japonii coin lockers (コインロッカー, koin rokkaa) na stacjach są popularne do przechowywania bagażu. Przydatne pytanie w hotelach, restauracjach i na stacjach."
+      }
+    ]
+  },
+  {
+    "key": "prohibition_tewa",
+    "name": "Zakaz ～てはいけない",
+    "description": "Konstrukcja ～てはいけない (tewa ikenai) oznacza 'nie wolno' / 'zakazane jest'. Forma: te-forma + wa ikenai/ikemasen. To silny zakaz — używany przez rodziców, nauczycieli, w regulaminach. Łagodniejsza wersja: ～ないでください (naide kudasai = proszę nie robić). W potocznej mowie: ～ちゃだめ (cha dame). Zrozumienie zakazu jest kluczowe do nawigowania japońskimi zasadami społecznymi.",
+    "iconName": "xmark.circle.fill",
+    "color": "red",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_prh1",
+        "question": "ここで泳い_____ いけません (tu nie wolno pływać).",
+        "translation": "(Tu nie wolno pływać)",
+        "options": [
+          "では",
+          "ても",
+          "てから",
+          "ており"
+        ],
+        "correct": "では",
+        "explanation": "Koko de oyoide wa ikemasen = tu nie wolno pływać. Oyogu (泳ぐ) = pływać → oyoide (te-forma) + wa ikemasen. Koko de (ここで) = tutaj. Ikemasen (いけません) = grzeczna forma ikenai (nie wolno). De wa to formalna postać gramatyczna — w potocznej mowie: oyoija dame (泳いじゃだめ). Dame (だめ) = nie wolno/bezcelowe."
+      },
+      {
+        "id": "pj_prh2",
+        "question": "授業中にスマホを使っ_____ いけません (nie wolno używać smartfona podczas lekcji).",
+        "translation": "(Nie wolno używać smartfona na lekcji)",
+        "options": [
+          "ては",
+          "ても",
+          "てから",
+          "ており"
+        ],
+        "correct": "ては",
+        "explanation": "Jugyouchuu ni sumaho o tsukatte wa ikemasen = nie wolno używać smartfona podczas lekcji. Jugyouchuu (授業中) = podczas lekcji (-chuu = w trakcie). Sumaho (スマホ) = smartfon (skrót od sumaatofon). Tsukau (使う) → tsukatte wa ikemasen. Te wa ikemasen to formalny zakaz — typowy w regulaminach szkolnych. Japońskie szkoły mają surowe zasady dotyczące smartfonów."
+      },
+      {
+        "id": "pj_prh3",
+        "question": "図書館で大きい声で話し_____ いけません (nie wolno głośno rozmawiać w bibliotece).",
+        "translation": "(Nie wolno głośno mówić w bibliotece)",
+        "options": [
+          "ては",
+          "ても",
+          "てから",
+          "ており"
+        ],
+        "correct": "ては",
+        "explanation": "Toshokan de ookii koe de hanashite wa ikemasen = nie wolno głośno mówić w bibliotece. Toshokan (図書館) = biblioteka, ookii koe de (大きい声で) = głośnym głosem. Hanasu (話す) → hanashite wa ikemasen. Koe (声) = głos. W japońskich bibliotekach cisza jest surowo przestrzegana. Shizuka ni (静かに) = cicho — popularne napomnienie."
+      },
+      {
+        "id": "pj_prh4",
+        "question": "この公園でゴミを捨て_____ いけません (nie wolno śmiecić w tym parku).",
+        "translation": "(Nie wolno wyrzucać śmieci w parku)",
+        "options": [
+          "ては",
+          "ても",
+          "てから",
+          "ており"
+        ],
+        "correct": "ては",
+        "explanation": "Kono kouen de gomi o sutete wa ikemasen = nie wolno wyrzucać śmieci w tym parku. Suteru (捨てる) = wyrzucać → sutete wa ikemasen. Gomi (ゴミ) = śmieci, kouen (公園) = park. Japonia jest znana z czystości — śmieci zabiera się do domu. Gomi no bunbetsu (ゴミの分別) = segregacja śmieci — bardzo szczegółowa w Japonii: moeru gomi (spalalne), moenai gomi (niespalne), shigen gomi (surowce)."
+      },
+      {
+        "id": "pj_prh5",
+        "question": "電車の中で電話をかけ_____ だめです (nie powinno się dzwonić w pociągu).",
+        "translation": "(Nie powinno się dzwonić w pociągu)",
+        "options": [
+          "ちゃ",
+          "ては",
+          "ても",
+          "てから"
+        ],
+        "correct": "ちゃ",
+        "explanation": "Densha no naka de denwa o kakecha dame desu = nie powinno się dzwonić w pociągu. Kakeru (かける) → kakete wa → kakecha (potoczny skrót). Dame (だめ) = nie wolno/bezcelowe — mniej formalny niż ikemasen. Cha dame (ちゃだめ) to potoczna forma tewa ikenai. W japońskich pociągach rozmawianie przez telefon jest uważane za nieuprzejme — manaa moodo (マナーモード, tryb cichy) jest normą."
+      },
+      {
+        "id": "pj_prh6",
+        "question": "嘘をつい_____ いけません (nie wolno kłamać).",
+        "translation": "(Nie wolno kłamać)",
+        "options": [
+          "ては",
+          "ても",
+          "てから",
+          "ており"
+        ],
+        "correct": "ては",
+        "explanation": "Uso o tsuite wa ikemasen = nie wolno kłamać. Uso o tsuku (嘘をつく) = kłamać (dosłownie: przylepiać kłamstwo). Uso (嘘) = kłamstwo, tsuku (つく) = przylepiać/mówić. Tewa ikemasen to stanowczy zakaz — typowe napomnienie rodzica lub nauczyciela. Uso mo houben (嘘も方便) = japońskie przysłowie: kłamstwo też jest środkiem (czasem białe kłamstwo jest akceptowalne)."
+      },
+      {
+        "id": "pj_prh7",
+        "question": "ここに車を止め_____ いけません (nie wolno tu parkować).",
+        "translation": "(Nie wolno tu parkować)",
+        "options": [
+          "ては",
+          "ても",
+          "てから",
+          "ており"
+        ],
+        "correct": "ては",
+        "explanation": "Koko ni kuruma o tomete wa ikemasen = nie wolno tu parkować. Tomeru (止める) = zatrzymywać/parkować → tomete wa ikemasen. Kuruma (車) = samochód. Chuusha kinshi (駐車禁止) = zakaz parkowania — powszechny znak w Japonii. Kinshi (禁止) = zakaz — często na znakach: shashin satsuei kinshi (写真撮影禁止, zakaz fotografowania), tachiiri kinshi (立入禁止, wstęp wzbroniony)."
+      },
+      {
+        "id": "pj_prh8",
+        "question": "他の人の物に触っ_____ いけません (nie wolno dotykać rzeczy innych osób).",
+        "translation": "(Nie dotykaj cudzych rzeczy)",
+        "options": [
+          "ては",
+          "ても",
+          "てから",
+          "ており"
+        ],
+        "correct": "ては",
+        "explanation": "Hoka no hito no mono ni sawatte wa ikemasen = nie wolno dotykać rzeczy innych osób. Sawaru (触る) = dotykać → sawatte. Hoka no hito (他の人) = inne osoby, mono (物) = rzecz. Te wa ikemasen to zasada wychowawcza. Sawaru wyraża bezpośredni kontakt fizyczny. W japońskich muzeach i sklepach: te o furenaide kudasai (手を触れないでください) = proszę nie dotykać."
+      },
+      {
+        "id": "pj_prh9",
+        "question": "試験中にカンニングし_____ いけません (nie wolno ściągać podczas egzaminu).",
+        "translation": "(Nie wolno ściągać na egzaminie)",
+        "options": [
+          "ては",
+          "ても",
+          "てから",
+          "ており"
+        ],
+        "correct": "ては",
+        "explanation": "Shikenchuu ni kanningu shite wa ikemasen = nie wolno ściągać podczas egzaminu. Kanningu (カンニング) = ściąganie (z ang. cunning, choć w angielskim inaczej). Shikenchuu (試験中) = podczas egzaminu. Kanningu suru → shite wa ikemasen. W Japonii ściąganie (kanningu) jest surowo karane — może skutkować wydaleniem. Shiken (試験) = egzamin."
+      },
+      {
+        "id": "pj_prh10",
+        "question": "赤信号で渡っ_____ だめです (nie wolno przechodzić na czerwonym świetle).",
+        "translation": "(Nie wolno przechodzić na czerwonym)",
+        "options": [
+          "ちゃ",
+          "ては",
+          "ても",
+          "てから"
+        ],
+        "correct": "ちゃ",
+        "explanation": "Akashingou de watacha dame desu = nie wolno przechodzić na czerwonym. Wataru (渡る) = przechodzić → watatte wa → watacha (potoczne). Akashingou (赤信号) = czerwone światło. Dame (だめ) = nie wolno. Cha dame to potoczna forma. Japończycy są znani z cierpliwego czekania na zielone światło nawet na pustej ulicy — to kwestia szacunku do zasad."
+      },
+      {
+        "id": "pj_prh11",
+        "question": "お酒を飲んで運転し_____ いけません (nie wolno prowadzić po alkoholu).",
+        "translation": "(Nie wolno prowadzić po alkoholu)",
+        "options": [
+          "ては",
+          "ても",
+          "てから",
+          "ており"
+        ],
+        "correct": "ては",
+        "explanation": "Osake o nonde unten shite wa ikemasen = nie wolno prowadzić po alkoholu. Unten suru (運転する) = prowadzić samochód, osake (お酒) = alkohol, nomu (飲む) = pić → nonde (te-forma). Inshu unten (飲酒運転) = jazda po alkoholu — w Japonii karana bardzo surowo: do 5 lat więzienia. Nawet pasażerowie i barman mogą ponosić odpowiedzialność!"
+      },
+      {
+        "id": "pj_prh12",
+        "question": "この部屋に入っ_____ いけません (nie wolno wchodzić do tego pokoju).",
+        "translation": "(Nie wolno wchodzić do tego pokoju)",
+        "options": [
+          "ては",
+          "ても",
+          "てから",
+          "ており"
+        ],
+        "correct": "ては",
+        "explanation": "Kono heya ni haitte wa ikemasen = nie wolno wchodzić do tego pokoju. Hairu (入る) = wchodzić → haitte wa ikemasen. Heya (部屋) = pokój. Tachiiri kinshi (立入禁止) = wstęp wzbroniony — popularne na znakach w Japonii. Hairu jest czasownikiem grupy I (uwaga: mimo końcówki -iru, to grupa I!). Haitte = te-forma od hairu."
+      },
+      {
+        "id": "pj_prh13",
+        "question": "食べ物を_____ にしないでください (proszę nie marnować jedzenia).",
+        "translation": "(Proszę nie marnować jedzenia)",
+        "options": [
+          "むだ",
+          "だめ",
+          "いけない",
+          "よく"
+        ],
+        "correct": "むだ",
+        "explanation": "Tabemono o muda ni shinaide kudasai = proszę nie marnować jedzenia. Muda ni suru (無駄にする) = marnować. Tabemono (食べ物) = jedzenie. Shinaide kudasai = proszę nie robić — łagodniejsza forma zakazu niż tewa ikemasen. Mottainai (もったいない) = szkoda marnować — głęboko zakorzenione japońskie pojęcie szacunku do zasobów i jedzenia."
+      },
+      {
+        "id": "pj_prh14",
+        "question": "人の悪口を言っ_____ いけません (nie wolno mówić źle o innych).",
+        "translation": "(Nie wolno obmawiać innych)",
+        "options": [
+          "ては",
+          "ても",
+          "てから",
+          "ており"
+        ],
+        "correct": "ては",
+        "explanation": "Hito no warukuchi o itte wa ikemasen = nie wolno mówić źle o innych. Warukuchi (悪口) = plotki/obmowa (dosłownie: złe usta). Iu (言う) = mówić → itte wa ikemasen. Hito (人) = osoba/ludzie. Warukuchi o iu = obmawiać — zachowanie surowo oceniane w harmonijnym japońskim społeczeństwie. Wa (和, harmonia) jest fundamentalną wartością japońską — ijime (いじめ, znęcanie się) jest poważnym problemem."
+      },
+      {
+        "id": "pj_prh15",
+        "question": "約束を破っ_____ いけません (nie wolno łamać obietnic).",
+        "translation": "(Nie wolno łamać obietnic)",
+        "options": [
+          "ては",
+          "ても",
+          "てから",
+          "ており"
+        ],
+        "correct": "ては",
+        "explanation": "Yakusoku o yabotte wa ikemasen = nie wolno łamać obietnic. Yaburu (破る) = łamać/zrywać → yabotte wa ikemasen. Yakusoku (約束) = obietnica/umówienie. Yakusoku o mamoru (約束を守る) = dotrzymywać obietnicy — antonim. W japońskiej kulturze yakusoku jest traktowane bardzo poważnie — niedotrzymanie obietnicy niszczy zaufanie (shinrai, 信頼). Kodowa (言葉) = słowo, które ma wagę."
+      }
+    ]
+  },
+  {
+    "key": "reason_kara",
+    "name": "Przyczyna ～から (bo/ponieważ)",
+    "description": "Partykuła から (kara) po zdaniu oznacza 'ponieważ/bo' i jest jednym z najczęściej używanych sposobów wyrażania przyczyny w japońskim. Zdanie przyczynowe + から + zdanie wynikowe. から jest bardziej subiektywne i bezpośrednie niż ので (node). Można też używać から na końcu zdania: ～ですから (dlatego...). から jest naturalne w mowie potocznej i w wyrażaniu osobistych opinii.",
+    "iconName": "arrow.right.circle.fill",
+    "color": "orange",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_rkr1",
+        "question": "雨が降っている_____ 傘を持って行きましょう (pada, więc weźmy parasol).",
+        "translation": "(Pada, więc weźmy parasol)",
+        "options": [
+          "から",
+          "ので",
+          "のに",
+          "けど"
+        ],
+        "correct": "から",
+        "explanation": "Ame ga futte iru kara kasa o motte ikimashou = pada, więc weźmy parasol. Kara (から) = bo/ponieważ. Ame ga futte iru = pada deszcz (ciągłość). Kasa (傘) = parasol, motte iku (持って行く) = zabrać ze sobą. Kara jest naturalny w mowie codziennej dla wyrażania bezpośredniej przyczyny i skutku. Bardziej potoczny niż node."
+      },
+      {
+        "id": "pj_rkr2",
+        "question": "お腹が空いた_____ 何か食べましょう (zgłodniałem, więc zjedzmy coś).",
+        "translation": "(Jestem głodny, zjedzmy coś)",
+        "options": [
+          "から",
+          "ので",
+          "のに",
+          "けど"
+        ],
+        "correct": "から",
+        "explanation": "Onaka ga suita kara nanika tabemashou = zgłodniałem, więc zjedzmy coś. Onaka ga suku (お腹が空く) = być głodnym → suita (zgłodniałem). Nanika (何か) = coś. Kara łączy przyczynę (głód) ze skutkiem (propozycja jedzenia). Suita to forma przeszła — w japońskim głód wyraża się jako 'brzuch się opróżnił'. Onaka ga ippai = jestem najedzony."
+      },
+      {
+        "id": "pj_rkr3",
+        "question": "明日試験がある_____ 今日は勉強します (jutro mam egzamin, więc dziś się uczę).",
+        "translation": "(Jutro mam egzamin, więc uczę się)",
+        "options": [
+          "から",
+          "ので",
+          "のに",
+          "けど"
+        ],
+        "correct": "から",
+        "explanation": "Ashita shiken ga aru kara kyou wa benkyou shimasu = jutro mam egzamin, więc dziś się uczę. Shiken (試験) = egzamin, aru (ある) = być/istnieć. Kara w formie zwykłej (aru kara) jest naturalnie potoczna. Benkyou suru (勉強する) = uczyć się. Kyou (今日) = dziś. Kara tu wyraża logiczny związek: przyczyna → konsekwencja w osobistym planie."
+      },
+      {
+        "id": "pj_rkr4",
+        "question": "危ない_____ 気をつけてください (to niebezpieczne, więc proszę uważać).",
+        "translation": "(To niebezpieczne, więc proszę uważać)",
+        "options": [
+          "から",
+          "ので",
+          "のに",
+          "けど"
+        ],
+        "correct": "から",
+        "explanation": "Abunai kara ki o tsukete kudasai = to niebezpieczne, więc proszę uważać. Abunai (危ない) = niebezpieczny. Ki o tsukeru (気をつける) = uważać. Kara po przymiotniku-i: abunai kara (bo jest niebezpieczne). To typowe ostrzeżenie — abunai! samo w sobie jest okrzykiem 'uwaga!'. Ki o tsukete (気をつけて) to powszechne pożegnanie = 'uważaj na siebie'."
+      },
+      {
+        "id": "pj_rkr5",
+        "question": "日本語が好きだ_____ 毎日勉強しています (lubię japoński, więc codziennie się uczę).",
+        "translation": "(Lubię japoński, więc codziennie się uczę)",
+        "options": [
+          "から",
+          "ので",
+          "のに",
+          "けど"
+        ],
+        "correct": "から",
+        "explanation": "Nihongo ga suki da kara mainichi benkyou shite imasu = lubię japoński, więc codziennie się uczę. Suki da (好きだ) = lubię — przymiotnik-na w formie zwykłej + kara. WAŻNE: po przymiotnikach-na i rzeczownikach: da + kara (nie desu kara w formie zwykłej). Mainichi (毎日) = codziennie. Benkyou shite iru = uczę się (ciągłość). Motywacja osobista wyrażona przez kara."
+      },
+      {
+        "id": "pj_rkr6",
+        "question": "電車が遅れた_____ 遅刻しました (pociąg się spóźnił, więc ja się spóźniłem).",
+        "translation": "(Pociąg się spóźnił, więc ja się spóźniłem)",
+        "options": [
+          "から",
+          "ので",
+          "のに",
+          "けど"
+        ],
+        "correct": "から",
+        "explanation": "Densha ga okureta kara chikoku shimashita = pociąg się spóźnił, więc ja się spóźniłem. Okureru (遅れる) = spóźniać się → okureta (spóźnił się). Chikoku suru (遅刻する) = spóźniać się (formalny termin). Densha (電車) = pociąg. W Japonii koleje wydają ensha chien shoumeisho (電車遅延証明書, zaświadczenie o opóźnieniu pociągu) — oficjalny dokument tłumaczący spóźnienie!"
+      },
+      {
+        "id": "pj_rkr7",
+        "question": "疲れた_____ 少し休みましょう (jestem zmęczony, więc odpocznijmy trochę).",
+        "translation": "(Jestem zmęczony, odpoczniemy chwilę)",
+        "options": [
+          "から",
+          "ので",
+          "のに",
+          "けど"
+        ],
+        "correct": "から",
+        "explanation": "Tsukareta kara sukoshi yasumimashou = jestem zmęczony, więc odpocznijmy trochę. Tsukareru (疲れる) = męczyć się → tsukareta (zmęczyłem się). Sukoshi (少し) = trochę, yasumu (休む) = odpoczywać → yasumimashou (odpocznijmy). Kara po formie przeszłej: tsukareta kara. Propozycja odpoczynku — mashou łagodnie sugeruje wspólne działanie."
+      },
+      {
+        "id": "pj_rkr8",
+        "question": "寒い_____ 窓を閉めてください (zimno, więc proszę zamknąć okno).",
+        "translation": "(Zimno, więc proszę zamknąć okno)",
+        "options": [
+          "から",
+          "ので",
+          "のに",
+          "けど"
+        ],
+        "correct": "から",
+        "explanation": "Samui kara mado o shimete kudasai = zimno, więc proszę zamknąć okno. Samui (寒い) = zimno (pogoda/temperatura). Shimeru (閉める) = zamykać → shimete kudasai = proszę zamknąć. Mado (窓) = okno. Kara po przymiotniku-i jest bezpośredni — prośba z podaną przyczyną. W japońskiej kulturze podawanie powodu prośby jest uprzejme i oczekiwane."
+      },
+      {
+        "id": "pj_rkr9",
+        "question": "まだ子供です_____ お酒は飲めません (jeszcze jest dzieckiem, więc nie może pić alkoholu).",
+        "translation": "(Jest jeszcze dzieckiem, więc nie może pić)",
+        "options": [
+          "から",
+          "ので",
+          "のに",
+          "けど"
+        ],
+        "correct": "から",
+        "explanation": "Mada kodomo desu kara osake wa nomemasen = jeszcze jest dzieckiem, więc nie może pić alkoholu. Mada (まだ) = jeszcze, kodomo (子供) = dziecko. Desu kara = bo jest (grzeczna forma + kara — dopuszczalna w mowie grzecznej). Nomeru (飲める) → nomemasen (nie może pić, potencjalna przeczna). Osake (お酒) = alkohol. Wiek picia w Japonii: 20 lat."
+      },
+      {
+        "id": "pj_rkr10",
+        "question": "日曜日だ_____ 銀行は休みです (to niedziela, więc bank jest zamknięty).",
+        "translation": "(Jest niedziela, więc bank nie działa)",
+        "options": [
+          "から",
+          "ので",
+          "のに",
+          "けど"
+        ],
+        "correct": "から",
+        "explanation": "Nichiyoubi da kara ginkou wa yasumi desu = to niedziela, więc bank jest zamknięty. Nichiyoubi (日曜日) = niedziela + da kara (bo jest). Ginkou (銀行) = bank, yasumi (休み) = dzień wolny/zamknięte. Da kara — forma zwykła copula + kara. Japońskie banki mają ograniczone godziny i są zamknięte w weekendy, ale ATM (ATMu, エーティーエム) są dostępne w konbini (コンビニ, convenience stores)."
+      },
+      {
+        "id": "pj_rkr11",
+        "question": "時間がない_____ タクシーで行きましょう (nie mamy czasu, więc jedźmy taksówką).",
+        "translation": "(Nie mamy czasu, jedźmy taksówką)",
+        "options": [
+          "から",
+          "ので",
+          "のに",
+          "けど"
+        ],
+        "correct": "から",
+        "explanation": "Jikan ga nai kara takushii de ikimashou = nie mamy czasu, więc jedźmy taksówką. Jikan (時間) = czas, nai (ない) = nie ma. Takushii (タクシー) = taksówka. Nai kara = bo nie ma. Japońskie taksówki są drogie, ale czyste i bezpieczne — drzwi otwierają się automatycznie! Kierowca nosi rękawiczki. Jikan ga nai to powszechne wyrażenie presji czasowej."
+      },
+      {
+        "id": "pj_rkr12",
+        "question": "この本は図書館の_____ 大切にしてください (ta książka jest z biblioteki, więc proszę o nią dbać).",
+        "translation": "(Ta książka jest biblioteczna, więc proszę ją szanować)",
+        "options": [
+          "だから",
+          "なので",
+          "なのに",
+          "だけど"
+        ],
+        "correct": "だから",
+        "explanation": "Kono hon wa toshokan no da kara taisetsu ni shite kudasai = ta książka jest z biblioteki, więc proszę o nią dbać. Toshokan no (図書館の) = biblioteczna. Da kara = bo jest. Taisetsu ni suru (大切にする) = dbać/szanować. Shite kudasai = proszę robić. Dakara (だから) na początku zdania = 'dlatego' — przyczynowo-skutkowy łącznik bardzo częsty w mowie codziennej."
+      },
+      {
+        "id": "pj_rkr13",
+        "question": "安かった_____ たくさん買いました (było tanie, więc kupiłem dużo).",
+        "translation": "(Było tanie, więc kupiłem dużo)",
+        "options": [
+          "から",
+          "ので",
+          "のに",
+          "けど"
+        ],
+        "correct": "から",
+        "explanation": "Yasukatta kara takusan kaimashita = było tanie, więc kupiłem dużo. Yasui (安い) → yasukatta (było tanie, przeszła) + kara. Takusan (たくさん) = dużo, kau (買う) = kupować → kaimashita. Kara po przeszłej formie przymiotnika to naturalne wytłumaczenie zakupów. Japonia ma sezon wyprzedaży: hatsu uri (初売り, noworoczna wyprzedaż) i bargein (バーゲン, letnio-zimowe wyprzedaże)."
+      },
+      {
+        "id": "pj_rkr14",
+        "question": "道が分からなかった_____ 人に聞きました (nie znałem drogi, więc zapytałem kogoś).",
+        "translation": "(Nie znałem drogi, więc zapytałem)",
+        "options": [
+          "から",
+          "ので",
+          "のに",
+          "けど"
+        ],
+        "correct": "から",
+        "explanation": "Michi ga wakaranakatta kara hito ni kikimashita = nie znałem drogi, więc zapytałem kogoś. Michi (道) = droga, wakaru (分かる) → wakaranakatta (nie wiedziałem). Hito ni kiku (人に聞く) = pytać kogoś. Kara po przeszłej przeczenia: wakaranakatta kara. Japończycy są zazwyczaj bardzo pomocni, gdy ktoś ma problem z drogą — teinei ni oshiete kureru (uprzejmie wyjaśniają)."
+      },
+      {
+        "id": "pj_rkr15",
+        "question": "あした休みだ_____ 今夜は遅くまで起きています (jutro dzień wolny, więc dziś będę do późna).",
+        "translation": "(Jutro dzień wolny, więc siedzę do późna)",
+        "options": [
+          "から",
+          "ので",
+          "のに",
+          "けど"
+        ],
+        "correct": "から",
+        "explanation": "Ashita yasumi da kara konya wa osoku made okite imasu = jutro wolne, więc dziś będę do późna. Yasumi (休み) = dzień wolny + da kara. Konya (今夜) = dziś wieczorem, osoku made (遅くまで) = do późna. Okite iru (起きている) = nie spać/być na nogach. Typowe zdanie weekendowe. Kindan no yoru fukashi (禁断の夜更かし) = zakazane zarywanie nocy — żartobliwe wyrażenie młodych Japończyków."
+      }
+    ]
+  },
+  {
+    "key": "reason_node",
+    "name": "Przyczyna ～ので (formalna)",
+    "description": "Partykuła ので (node) oznacza 'ponieważ/jako że' i jest bardziej formalna, obiektywna i grzeczna niż から (kara). Łączy się z formą zwykłą, ale przymiotniki-na i rzeczowniki wymagają な (na) zamiast だ (da): 静かなので (shizuka na node). ので jest preferowane w sytuacjach formalnych, w pracy, w prośbach i gdy chcemy brzmieć grzecznie i taktownie.",
+    "iconName": "text.bubble.fill",
+    "color": "blue",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_rnd1",
+        "question": "電車が遅れた_____ 遅刻してしまいました (pociąg się spóźnił, więc niestety spóźniłem się).",
+        "translation": "(Pociąg się spóźnił, więc niestety się spóźniłem)",
+        "options": [
+          "ので",
+          "から",
+          "のに",
+          "けど"
+        ],
+        "correct": "ので",
+        "explanation": "Densha ga okureta node chikoku shite shimaimashita = pociąg się spóźnił, więc niestety się spóźniłem. Node (ので) jest grzeczniejsze niż kara — lepsze do tłumaczenia się z powodu spóźnienia. Shimau (してしまう) = niestety/przypadkiem — wyraża żal. Okureta node (przeszła + node) to formalna konstrukcja przyczynowa. Node jest preferowane w przeprosinach i wyjaśnieniach."
+      },
+      {
+        "id": "pj_rnd2",
+        "question": "頭が痛い_____ 早く帰ってもいいですか (boli mnie głowa, więc czy mogę wcześniej wrócić?).",
+        "translation": "(Boli mnie głowa, czy mogę iść wcześniej?)",
+        "options": [
+          "ので",
+          "から",
+          "のに",
+          "けど"
+        ],
+        "correct": "ので",
+        "explanation": "Atama ga itai node hayaku kaette mo ii desu ka = boli mnie głowa, czy mogę wcześniej wrócić? Atama (頭) = głowa, itai (痛い) = boli. Node tu jest idealny — grzeczna prośba z podaniem obiektywnego powodu (ból głowy). Kaette mo ii desu ka = czy mogę wrócić. Node w pytaniach grzecznościowych brzmi łagodniej i bardziej uprzejmie niż kara."
+      },
+      {
+        "id": "pj_rnd3",
+        "question": "明日は祝日な_____ 会社は休みです (jutro jest święto, więc firma jest zamknięta).",
+        "translation": "(Jutro święto, więc zamknięte)",
+        "options": [
+          "ので",
+          "から",
+          "のに",
+          "けど"
+        ],
+        "correct": "ので",
+        "explanation": "Ashita wa shukujitsu na node kaisha wa yasumi desu = jutro jest święto, więc firma jest zamknięta. Shukujitsu (祝日) = święto państwowe + na node (nie da node!). WAŻNE: rzeczowniki i przymiotniki-na używają na node, nie da node. Kaisha (会社) = firma, yasumi (休み) = zamknięte. Japonia ma 16 dni świątecznych — gdy święto wypada w niedzielę, poniedziałek jest wolny (furikae kyuujitsu, 振替休日)."
+      },
+      {
+        "id": "pj_rnd4",
+        "question": "この部屋は静かな_____ よく眠れます (ten pokój jest cichy, więc dobrze się śpi).",
+        "translation": "(Pokój jest cichy, więc można dobrze spać)",
+        "options": [
+          "ので",
+          "から",
+          "のに",
+          "けど"
+        ],
+        "correct": "ので",
+        "explanation": "Kono heya wa shizuka na node yoku nemuremas = pokój jest cichy, więc dobrze się śpi. Shizuka (静か) = cichy — przymiotnik-na + na node. Nemureru (眠れる) = móc spać (potencjalna od nemuru). Yoku (よく) = dobrze. Heya (部屋) = pokój. Na node po przymiotnikach-na to kluczowa reguła — na zamiast da przed node. Shizuka na node vs shizuka da kara."
+      },
+      {
+        "id": "pj_rnd5",
+        "question": "道が混んでいる_____ バスは遅れるかもしれません (ulice są zakorkowane, więc autobus może się spóźnić).",
+        "translation": "(Drogi są zakorkowane, więc autobus może się opóźnić)",
+        "options": [
+          "ので",
+          "から",
+          "のに",
+          "けど"
+        ],
+        "correct": "ので",
+        "explanation": "Michi ga konde iru node basu wa okureru kamoshiremasen = drogi są zakorkowane, więc autobus może się spóźnić. Komu (混む) = być zatłoczonym → konde iru. Kamoshiremasen (かもしれません) = może/być może. Node + kamoshiremasen to ostrożna, grzeczna konstrukcja: przyczyna + niepewna konsekwencja. Michi (道) = droga/ulica."
+      },
+      {
+        "id": "pj_rnd6",
+        "question": "体の調子が悪い_____ 今日は休みます (źle się czuję, więc dziś nie przyjdę).",
+        "translation": "(Niedobrze się czuję, biorę wolne)",
+        "options": [
+          "ので",
+          "から",
+          "のに",
+          "けど"
+        ],
+        "correct": "ので",
+        "explanation": "Karada no choushi ga warui node kyou wa yasumimasu = źle się czuję, więc dziś nie przyjdę (do pracy/szkoły). Karada (体) = ciało, choushi (調子) = kondycja, warui (悪い) = zły. Yasumu (休む) = brać wolne. Node jest preferowane przy zgłaszaniu nieobecności — brzmi grzecznie i obiektywnie. W Japonii dzwoni się rano do firmy/szkoły, żeby zgłosić kekkin (欠勤, nieobecność)."
+      },
+      {
+        "id": "pj_rnd7",
+        "question": "漢字が分からない_____ ひらがなで書いてください (nie znam kanji, więc proszę napisać hiragana).",
+        "translation": "(Nie znam kanji, proszę pisać hiragana)",
+        "options": [
+          "ので",
+          "から",
+          "のに",
+          "けど"
+        ],
+        "correct": "ので",
+        "explanation": "Kanji ga wakaranai node hiragana de kaite kudasai = nie znam kanji, proszę napisać hiragana. Kanji (漢字) = znaki chińskie, hiragana (ひらがな) = alfabet hiragana. Wakaranai (分からない) = nie rozumiem/nie znam. Kaku (書く) = pisać → kaite kudasai. Node w prośbie z wyjaśnieniem brzmi uprzejme. Kluczowe zdanie dla uczących się japońskiego."
+      },
+      {
+        "id": "pj_rnd8",
+        "question": "この映画は人気な_____ チケットがなかなか買えません (ten film jest popularny, więc trudno kupić bilety).",
+        "translation": "(Film jest popularny, trudno dostać bilety)",
+        "options": [
+          "ので",
+          "から",
+          "のに",
+          "けど"
+        ],
+        "correct": "ので",
+        "explanation": "Kono eiga wa ninki na node chiketto ga nakanaka kaemasen = ten film jest popularny, więc trudno kupić bilety. Ninki (人気) = popularny — przymiotnik-na + na node. Nakanaka (なかなか) + negacja = trudno/niełatwo. Chiketto (チケット) = bilet (z ang. ticket). Kaemasen = nie mogę kupić (potencjalna przecząca). Nakanaka to przydatny przysłówek: z negacją = trudno, z twierdzeniem = całkiem dobrze."
+      },
+      {
+        "id": "pj_rnd9",
+        "question": "子供が寝ている_____ 静かにしてください (dziecko śpi, więc proszę o ciszę).",
+        "translation": "(Dziecko śpi, proszę o ciszę)",
+        "options": [
+          "ので",
+          "から",
+          "のに",
+          "けど"
+        ],
+        "correct": "ので",
+        "explanation": "Kodomo ga nete iru node shizuka ni shite kudasai = dziecko śpi, więc proszę o ciszę. Neru (寝る) = spać → nete iru = śpi. Shizuka ni suru (静かにする) = zachować ciszę. Node w prośbie jest łagodniejsze i bardziej taktowne niż kara. Kodomo (子供) = dziecko. Shizuka ni shite kudasai to bardzo naturalna prośba w japońskim domu."
+      },
+      {
+        "id": "pj_rnd10",
+        "question": "日本語はまだ上手じゃない_____ もっと練習したいです (jeszcze nie mówię dobrze po japońsku, więc chcę więcej ćwiczyć).",
+        "translation": "(Nie mówię jeszcze dobrze, chcę ćwiczyć)",
+        "options": [
+          "ので",
+          "から",
+          "のに",
+          "けど"
+        ],
+        "correct": "ので",
+        "explanation": "Nihongo wa mada jouzu ja nai node motto renshuu shitai desu = jeszcze nie mówię dobrze, więc chcę ćwiczyć. Jouzu ja nai (上手じゃない) = nie jestem dobry. Renshuu suru (練習する) = ćwiczyć → shitai = chcę. Motto (もっと) = więcej. Ja nai node — negacja przymiotnika-na + node. To skromne i ambitne zdanie — japońska kultura ceni kenkyou (謙虚, skromność)."
+      },
+      {
+        "id": "pj_rnd11",
+        "question": "急いでいる_____ すみませんが先に行かせてください (spieszę się, więc przepraszam, proszę pozwolić mi iść pierwszy).",
+        "translation": "(Spieszę się, czy mogę iść pierwszy?)",
+        "options": [
+          "ので",
+          "から",
+          "のに",
+          "けど"
+        ],
+        "correct": "ので",
+        "explanation": "Isoide iru node sumimasen ga saki ni ikasete kudasai = spieszę się, przepraszam, proszę pozwolić mi iść pierwszy. Isogu (急ぐ) = spieszyć się → isoide iru. Saki ni (先に) = przed/pierwszy. Ikaseru (行かせる) = pozwolić iść (forma causative). Node + sumimasen ga to wyjątkowo grzeczna forma prośby z przeprosinami. Sumimasen ga = przepraszam, ale..."
+      },
+      {
+        "id": "pj_rnd12",
+        "question": "雪が降っている_____ 道が滑りやすいです (pada śnieg, więc droga jest śliska).",
+        "translation": "(Pada śnieg, więc droga jest śliska)",
+        "options": [
+          "ので",
+          "から",
+          "のに",
+          "けど"
+        ],
+        "correct": "ので",
+        "explanation": "Yuki ga futte iru node michi ga suberiyasui desu = pada śnieg, więc droga jest śliska. Yuki (雪) = śnieg, suberu (滑る) = ślizgać się + yasui (やすい) = łatwo [się robi]. Suberiyasui = łatwo się ślizga/śliska. Michi (道) = droga. Node łączy obiektywną przyczynę ze skutkiem. -yasui to przydatny sufiks: wakariyasui (わかりやすい) = łatwy do zrozumienia."
+      },
+      {
+        "id": "pj_rnd13",
+        "question": "初めてな_____ よく分かりません (to mój pierwszy raz, więc nie bardzo rozumiem).",
+        "translation": "(To pierwszy raz, więc nie bardzo rozumiem)",
+        "options": [
+          "ので",
+          "から",
+          "のに",
+          "けど"
+        ],
+        "correct": "ので",
+        "explanation": "Hajimete na node yoku wakarimasen = to pierwszy raz, więc nie bardzo rozumiem. Hajimete (初めて) = po raz pierwszy — przymiotnik-na + na node. Yoku (よく) + neg = nie bardzo. Wakarimasen (分かりません) = nie rozumiem. To przydatne zdanie usprawiedliwiające brak doświadczenia. Hajimete + node brzmi skromnie i prosi o cierpliwość — bardzo cenione w japońskiej kulturze."
+      },
+      {
+        "id": "pj_rnd14",
+        "question": "お客様が来る_____ 部屋を片付けましょう (goście przyjdą, więc posprzątajmy pokój).",
+        "translation": "(Goście przyjdą, więc sprzątamy)",
+        "options": [
+          "ので",
+          "から",
+          "のに",
+          "けど"
+        ],
+        "correct": "ので",
+        "explanation": "Okyakusama ga kuru node heya o katazukemashou = goście przyjdą, więc posprzątajmy pokój. Okyakusama (お客様) = gość (bardzo grzeczna forma). Katazukeru (片付ける) = sprzątać/porządkować. Node tu podaje obiektywny powód sprzątania. Japońska gościnność (omotenashi, おもてなし) wymaga idealnie czystego domu. Heya o katazukeru = porządkować pokój."
+      },
+      {
+        "id": "pj_rnd15",
+        "question": "値段が高い_____ 買うのをやめました (cena jest wysoka, więc zrezygnowałem z zakupu).",
+        "translation": "(Za drogie, więc nie kupiłem)",
+        "options": [
+          "ので",
+          "から",
+          "のに",
+          "けど"
+        ],
+        "correct": "ので",
+        "explanation": "Nedan ga takai node kau no o yamemashita = cena jest wysoka, więc zrezygnowałem z zakupu. Nedan (値段) = cena, takai (高い) = drogi/wysoki. Kau no o yameru = zrezygnować z kupienia (kau no = kupowanie, yameru = rezygnować). Node po przymiotniku-i brzmi obiektywnie — decyzja oparta na fakcie (cena). Yameru (やめる) to ważny czasownik: przestać/zrezygnować/porzucić."
+      }
+    ]
   }
 ]
