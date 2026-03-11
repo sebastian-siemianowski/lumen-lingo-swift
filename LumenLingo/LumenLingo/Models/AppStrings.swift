@@ -48,6 +48,8 @@ struct AppStrings {
     let imLearning: String
     let noLanguagesAvailable: String
     let confirm: String
+    let done: String
+    let languagesAvailable: String
 
     // MARK: - Categories
     let back: String

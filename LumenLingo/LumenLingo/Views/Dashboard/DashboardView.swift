@@ -35,6 +35,14 @@ struct DashboardView: View {
         return "\(src) → \(tgt)"
     }
 
+    private var currentSourceCode: String {
+        languagePrefs.first.flatMap { SupportedLanguage(rawValue: $0.sourceLanguage) }?.countryCode ?? "GB"
+    }
+
+    private var currentTargetCode: String {
+        languagePrefs.first.flatMap { SupportedLanguage(rawValue: $0.targetLanguage) }?.countryCode ?? "ES"
+    }
+
     var body: some View {
         ZStack(alignment: .bottom) {
             ScrollView {
@@ -83,27 +91,29 @@ struct DashboardView: View {
             showLanguageSheet = true
         } label: {
             HStack(spacing: 8) {
-                Image(systemName: "globe")
-                    .font(.system(size: 14))
-                    .foregroundStyle(Color(hex: "#667eea"))
+                ZStack {
+                    CountryFlagView(countryCode: currentTargetCode, size: 14)
+                        .offset(x: 4, y: 3)
+
+                    CountryFlagView(countryCode: currentSourceCode, size: 14)
+                        .shadow(color: .black.opacity(0.15), radius: 1, y: 1)
+                }
+                .frame(width: 26, height: 20)
 
                 Text(currentLanguagePair)
-                    .font(.system(size: 13, weight: .semibold))
-                    .foregroundStyle(isDark ? .white.opacity(0.85) : .caribbeanInk)
+                    .font(.subheadline.weight(.medium))
+                    .foregroundStyle(isDark ? .white.opacity(0.9) : .primary)
 
                 Image(systemName: "chevron.down")
-                    .font(.system(size: 10, weight: .bold))
-                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
+                    .font(.system(size: 10, weight: .semibold))
+                    .foregroundStyle(isDark ? .white.opacity(0.35) : .secondary)
             }
-            .padding(.horizontal, 14)
-            .padding(.vertical, 8)
+            .padding(.horizontal, 12)
+            .padding(.vertical, 7)
             .background(
                 Capsule()
                     .fill(.ultraThinMaterial)
-                    .overlay(
-                        Capsule()
-                            .strokeBorder(.white.opacity(0.1), lineWidth: 1)
-                    )
+                    .shadow(color: .black.opacity(isDark ? 0.15 : 0.08), radius: 6, y: 2)
             )
         }
         .buttonStyle(LumenPressStyle(weight: .medium))

@@ -45,6 +45,8 @@ extension AppStrings {
         imLearning: "学習中の言語",
         noLanguagesAvailable: "このソース言語で利用できる言語はありません。",
         confirm: "確認：",
+        done: "完了",
+        languagesAvailable: "言語が利用可能",
 
         // Categories
         back: "戻る",

@@ -172,12 +172,11 @@ struct CountryFlagView: View {
 
 // MARK: - Language Selection View
 
-/// Full-screen language pair picker.
-/// Source language on the left, target on the right.
+/// Premium language pair picker — Apple Fitness+/Music-inspired.
+/// Hero preview card, horizontal source chips, rich target grid, floating CTA.
 struct LanguageSelectionView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var modelContext
-    @Environment(\.colorScheme) private var colorScheme
     @Environment(\.localization) private var localization
 
     private var L: AppStrings { localization.strings }
@@ -188,16 +187,13 @@ struct LanguageSelectionView: View {
     @State private var selectedTarget: SupportedLanguage = .spanish
 
     private var currentPref: LanguagePreference? { languagePrefs.first }
-    private var isDark: Bool { colorScheme == .dark }
 
-    /// All languages that can be a source.
     private var availableSources: [SupportedLanguage] {
         SupportedLanguage.allCases.filter { lang in
             LanguagePair.withContent.contains { $0.source == lang }
         }
     }
 
-    /// All targets that have content for the selected source.
     private var availableTargets: [SupportedLanguage] {
         SupportedLanguage.allCases.filter { target in
             guard target != selectedSource else { return false }
@@ -205,250 +201,299 @@ struct LanguageSelectionView: View {
         }
     }
 
-
+    private var hasChanged: Bool {
+        guard let pref = currentPref else { return true }
+        return pref.sourceLanguageEnum != selectedSource || pref.targetLanguageEnum != selectedTarget
+    }
 
     var body: some View {
         NavigationStack {
-            ZStack {
-                // Background
-                Group {
-                    if isDark {
-                        LinearGradient(
-                            colors: [Color(hex: "#0a0a1a"), Color(hex: "#0d1530"), Color(hex: "#0a0a1a")],
-                            startPoint: .top,
-                            endPoint: .bottom
-                        )
-                    } else {
-                        LinearGradient(
-                            colors: [Color(hex: "#C494FC"), Color(hex: "#F472B6"), Color(hex: "#FB923C")],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        )
-                    }
-                }
-                .ignoresSafeArea()
+            ScrollView {
+                VStack(spacing: 28) {
+                    heroCard
+                        .padding(.top, 8)
 
-                ScrollView {
-                    VStack(spacing: 28) {
-                        headerSection
-                        sourceLanguageSection
-                        directionArrow
-                        targetLanguageSection
-                        confirmButton
-                        Spacer(minLength: 80)
-                    }
-                    .padding(.horizontal, 16)
-                    .padding(.top, 12)
+                    sourceStrip
+
+                    targetGrid
                 }
+                .padding(.bottom, 100)
+            }
+            .background(Color(.systemGroupedBackground))
+            .safeAreaInset(edge: .bottom) {
+                confirmBar
             }
             .navigationTitle(L.languages)
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbarColorScheme(isDark ? .dark : .light, for: .navigationBar)
+            .navigationBarTitleDisplayMode(.large)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button(L.cancel) { dismiss() }
-                        .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
                 }
             }
             .onAppear { loadCurrent() }
+            .sensoryFeedback(.selection, trigger: selectedSource)
+            .sensoryFeedback(.selection, trigger: selectedTarget)
         }
     }
 
-    // MARK: - Header
+    // MARK: - Hero Card
 
-    private var headerSection: some View {
-        VStack(spacing: 8) {
-            Image(systemName: "globe")
-                .font(.system(size: 36))
-                .foregroundStyle(
-                    LinearGradient(
-                        colors: [.cyan, .purple],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
+    private var heroCard: some View {
+        VStack(spacing: 16) {
+            HStack(spacing: 24) {
+                flagBadge(selectedSource.countryCode, size: 56)
+
+                Image(systemName: "arrow.right")
+                    .font(.title3.weight(.medium))
+                    .foregroundStyle(
+                        LinearGradient(colors: [.indigo, .purple],
+                                       startPoint: .leading, endPoint: .trailing)
                     )
-                )
-            Text(L.chooseYourLanguages)
-                .font(.title3.bold())
-                .foregroundStyle(
-                    LinearGradient(
-                        colors: [Color(hex: "#6366f1"), Color(hex: "#a855f7")],
-                        startPoint: .leading,
-                        endPoint: .trailing
-                    )
-                )
-            Text(L.selectWhatYouKnow)
-                .font(.subheadline)
-                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
-        }
-        .padding(.top, 8)
-    }
 
-    // MARK: - Source Language
+                flagBadge(selectedTarget.countryCode, size: 56)
+            }
 
-    private var sourceLanguageSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Label(L.iSpeak, systemImage: "person.wave.2.fill")
-                .font(.headline)
-                .foregroundStyle(
-                    LinearGradient(
-                        colors: [Color(hex: "#6366f1"), Color(hex: "#8b5cf6")],
-                        startPoint: .leading,
-                        endPoint: .trailing
-                    )
-                )
+            VStack(spacing: 4) {
+                Text("\(selectedSource.displayName)  →  \(selectedTarget.name(in: selectedSource))")
+                    .font(.title3.weight(.semibold))
 
-            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
-                ForEach(availableSources, id: \.self) { lang in
-                    languageCard(lang, isSelected: lang == selectedSource) {
-                        withAnimation(.spring(response: 0.35)) {
-                            selectedSource = lang
-                            // Reset target if same as source
-                            if selectedTarget == lang {
-                                selectedTarget = SupportedLanguage.allCases.first { $0 != lang } ?? .spanish
-                            }
-                        }
-                    }
-                }
+                Text("\(availableTargets.count) \(L.languagesAvailable)")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
             }
         }
-        .padding(18)
-        .background(glassCard)
+        .padding(24)
+        .frame(maxWidth: .infinity)
+        .background(
+            RoundedRectangle(cornerRadius: 20)
+                .fill(.regularMaterial)
+                .shadow(color: .black.opacity(0.06), radius: 16, y: 6)
+        )
+        .padding(.horizontal)
+        .animation(.spring(response: 0.5, dampingFraction: 0.8), value: selectedSource)
+        .animation(.spring(response: 0.5, dampingFraction: 0.8), value: selectedTarget)
     }
 
-    // MARK: - Arrow
-
-    private var directionArrow: some View {
-        Image(systemName: "arrow.down.circle.fill")
-            .font(.system(size: 32))
-            .foregroundStyle(
-                LinearGradient(
-                    colors: [.cyan, .purple],
-                    startPoint: .top,
-                    endPoint: .bottom
-                )
+    private func flagBadge(_ code: String, size: CGFloat) -> some View {
+        CountryFlagView(countryCode: code, size: size * 0.5)
+            .frame(width: size, height: size)
+            .background(
+                Circle()
+                    .fill(.ultraThinMaterial)
+                    .shadow(color: .black.opacity(0.06), radius: 8, y: 3)
             )
-            .shadow(color: .cyan.opacity(0.3), radius: 8)
+            .overlay(Circle().strokeBorder(.quaternary, lineWidth: 1))
     }
 
-    // MARK: - Target Language
+    // MARK: - Source Strip
 
-    private var targetLanguageSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Label(L.imLearning, systemImage: "book.fill")
-                .font(.headline)
-                .foregroundStyle(
-                    LinearGradient(
-                        colors: [Color(hex: "#a855f7"), Color(hex: "#d946ef")],
-                        startPoint: .leading,
-                        endPoint: .trailing
+    private var sourceStrip: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            sectionLabel(L.iSpeak, icon: "person.wave.2.fill")
+                .padding(.horizontal)
+
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 16) {
+                    ForEach(availableSources, id: \.self) { lang in
+                        sourceChip(lang)
+                    }
+                }
+                .padding(.horizontal)
+            }
+        }
+    }
+
+    private func sourceChip(_ lang: SupportedLanguage) -> some View {
+        let isSelected = lang == selectedSource
+        return Button {
+            withAnimation(.spring(response: 0.4, dampingFraction: 0.8)) {
+                selectedSource = lang
+                if selectedTarget == lang || !LanguagePair(source: lang, target: selectedTarget).hasContent {
+                    selectedTarget = availableTargetsFor(lang).first ?? .spanish
+                }
+            }
+        } label: {
+            VStack(spacing: 8) {
+                CountryFlagView(countryCode: lang.countryCode, size: 24)
+                    .frame(width: 52, height: 52)
+                    .background(
+                        Circle()
+                            .fill(isSelected
+                                  ? AnyShapeStyle(LinearGradient(
+                                      colors: [.indigo.opacity(0.12), .purple.opacity(0.12)],
+                                      startPoint: .top, endPoint: .bottom))
+                                  : AnyShapeStyle(Color(.tertiarySystemGroupedBackground)))
                     )
-                )
+                    .overlay(
+                        Circle()
+                            .strokeBorder(
+                                isSelected
+                                    ? AnyShapeStyle(LinearGradient(
+                                        colors: [.indigo, .purple],
+                                        startPoint: .topLeading, endPoint: .bottomTrailing))
+                                    : AnyShapeStyle(Color.clear),
+                                lineWidth: 2.5
+                            )
+                    )
+                    .shadow(color: isSelected ? .indigo.opacity(0.25) : .clear, radius: 8, y: 3)
+
+                Text(lang.displayName)
+                    .font(.caption.weight(isSelected ? .semibold : .medium))
+                    .foregroundStyle(isSelected ? .primary : .secondary)
+            }
+        }
+        .buttonStyle(SelectionButtonStyle())
+    }
+
+    // MARK: - Target Grid
+
+    private var targetGrid: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            sectionLabel(L.imLearning, icon: "book.fill")
+                .padding(.horizontal)
 
             if availableTargets.isEmpty {
-                Text(L.noLanguagesAvailable)
-                    .font(.subheadline)
-                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
-                    .frame(maxWidth: .infinity, alignment: .center)
-                    .padding(20)
+                ContentUnavailableView {
+                    Label(L.noLanguagesAvailable, systemImage: "globe.desk")
+                }
+                .padding(.vertical, 20)
             } else {
-                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
+                LazyVGrid(
+                    columns: [GridItem(.flexible(), spacing: 12), GridItem(.flexible(), spacing: 12)],
+                    spacing: 12
+                ) {
                     ForEach(availableTargets, id: \.self) { lang in
-                        languageCard(lang, isSelected: lang == selectedTarget, translatedIn: selectedSource) {
-                            withAnimation(.spring(response: 0.35)) {
-                                selectedTarget = lang
-                            }
-                        }
+                        targetCard(lang)
                     }
                 }
+                .padding(.horizontal)
             }
         }
-        .padding(18)
-        .background(glassCard)
+        .animation(.spring(response: 0.45, dampingFraction: 0.85), value: selectedSource)
     }
 
-    // MARK: - Confirm
+    private func targetCard(_ lang: SupportedLanguage) -> some View {
+        let isSelected = lang == selectedTarget
+        return Button {
+            withAnimation(.spring(response: 0.35, dampingFraction: 0.75)) {
+                selectedTarget = lang
+            }
+        } label: {
+            HStack(spacing: 10) {
+                CountryFlagView(countryCode: lang.countryCode, size: 22)
 
-    private var confirmButton: some View {
+                Text(lang.name(in: selectedSource))
+                    .font(.subheadline.weight(isSelected ? .semibold : .medium))
+                    .foregroundStyle(isSelected ? .white : .primary)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.8)
+
+                Spacer(minLength: 0)
+
+                if isSelected {
+                    Image(systemName: "checkmark")
+                        .font(.subheadline.weight(.bold))
+                        .foregroundStyle(.white.opacity(0.9))
+                        .transition(.scale.combined(with: .opacity))
+                }
+            }
+            .padding(.horizontal, 14)
+            .padding(.vertical, 13)
+            .background(
+                RoundedRectangle(cornerRadius: 14)
+                    .fill(
+                        isSelected
+                            ? AnyShapeStyle(LinearGradient(
+                                colors: [.purple, .indigo],
+                                startPoint: .topLeading, endPoint: .bottomTrailing))
+                            : AnyShapeStyle(Color(.secondarySystemGroupedBackground))
+                    )
+                    .shadow(
+                        color: isSelected ? .purple.opacity(0.25) : .black.opacity(0.03),
+                        radius: isSelected ? 10 : 4,
+                        y: isSelected ? 4 : 2
+                    )
+            )
+        }
+        .buttonStyle(SelectionButtonStyle())
+    }
+
+    // MARK: - Confirm Bar
+
+    private var confirmBar: some View {
         Button {
             savePair()
             dismiss()
         } label: {
-            HStack(spacing: 8) {
-                Image(systemName: "checkmark.circle.fill")
-                Text(L.confirm)
-                    .fontWeight(.semibold)
-                CountryFlagView(countryCode: selectedSource.countryCode, size: 16)
+            HStack(spacing: 10) {
+                CountryFlagView(countryCode: selectedSource.countryCode, size: 18)
+
                 Image(systemName: "arrow.right")
-                    .font(.caption.bold())
-                CountryFlagView(countryCode: selectedTarget.countryCode, size: 16)
+                    .font(.caption2.weight(.bold))
+                    .foregroundStyle(.white.opacity(0.6))
+
+                CountryFlagView(countryCode: selectedTarget.countryCode, size: 18)
+
+                Spacer()
+
+                Text(hasChanged ? L.confirm : L.done)
+                    .font(.headline)
+
+                Image(systemName: "checkmark.circle.fill")
+                    .font(.headline)
             }
             .foregroundStyle(.white)
+            .padding(.horizontal, 20)
+            .padding(.vertical, 15)
             .frame(maxWidth: .infinity)
-            .padding(.vertical, 14)
             .background(
-                Capsule()
+                RoundedRectangle(cornerRadius: 16)
                     .fill(
                         LinearGradient(
-                            colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                            colors: hasChanged ? [.indigo, .purple] : [Color(.systemGray2), Color(.systemGray3)],
                             startPoint: .leading,
                             endPoint: .trailing
                         )
                     )
+                    .shadow(color: hasChanged ? .indigo.opacity(0.35) : .clear, radius: 16, y: 6)
             )
-            .shadow(color: Color(hex: "#764ba2").opacity(0.4), radius: 12, y: 4)
         }
-        .padding(.top, 8)
+        .buttonStyle(SelectionButtonStyle())
+        .disabled(!hasChanged)
+        .padding(.horizontal, 20)
+        .padding(.vertical, 12)
+        .background(
+            Rectangle()
+                .fill(.ultraThinMaterial)
+                .ignoresSafeArea()
+        )
+        .animation(.spring(response: 0.4, dampingFraction: 0.8), value: hasChanged)
+        .animation(.spring(response: 0.4, dampingFraction: 0.8), value: selectedSource)
+        .animation(.spring(response: 0.4, dampingFraction: 0.8), value: selectedTarget)
     }
 
-    // MARK: - Language Card
+    // MARK: - Shared Components
 
-    private func languageCard(_ lang: SupportedLanguage, isSelected: Bool, translatedIn contextLang: SupportedLanguage? = nil, action: @escaping () -> Void) -> some View {
-        let label = contextLang.map { lang.name(in: $0) } ?? lang.displayName
-        return Button(action: action) {
-            HStack(spacing: 8) {
-                CountryFlagView(countryCode: lang.countryCode, size: 18)
-                Text(label)
-                    .font(.subheadline.bold())
-                    .foregroundStyle(isSelected ? .white : (colorScheme == .dark ? .white.opacity(0.7) : .caribbeanInk))
-                    .lineLimit(1)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(12)
-            .background(
-                RoundedRectangle(cornerRadius: 14)
-                    .fill(isSelected
-                        ? AnyShapeStyle(
-                            LinearGradient(
-                                colors: [Color(hex: "#667eea").opacity(0.5), Color(hex: "#764ba2").opacity(0.4)],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                        : AnyShapeStyle(.white.opacity(0.06))
-                    )
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 14)
-                            .strokeBorder(
-                                isSelected ? Color(hex: "#667eea").opacity(0.6) : .white.opacity(0.06),
-                                lineWidth: isSelected ? 1.5 : 1
-                            )
-                    )
-            )
-            .scaleEffect(isSelected ? 1.02 : 1.0)
+    private func sectionLabel(_ title: String, icon: String) -> some View {
+        Label {
+            Text(title)
+                .font(.headline)
+        } icon: {
+            Image(systemName: icon)
+                .foregroundStyle(
+                    LinearGradient(colors: [.indigo, .purple],
+                                   startPoint: .leading, endPoint: .trailing)
+                )
         }
-        .buttonStyle(LumenCardPressStyle(accentColor: isSelected ? .purple : .white))
     }
 
     // MARK: - Helpers
 
-    private var glassCard: some View {
-        RoundedRectangle(cornerRadius: 22)
-            .fill(.ultraThinMaterial)
-            .overlay(
-                RoundedRectangle(cornerRadius: 22)
-                    .strokeBorder(.white.opacity(colorScheme == .dark ? 0.08 : 0.15), lineWidth: 1)
-            )
-            .shadow(color: .black.opacity(0.1), radius: 15, y: 5)
+    private func availableTargetsFor(_ source: SupportedLanguage) -> [SupportedLanguage] {
+        SupportedLanguage.allCases.filter { target in
+            guard target != source else { return false }
+            return LanguagePair(source: source, target: target).hasContent
+        }
     }
 
     private func loadCurrent() {
@@ -466,5 +511,16 @@ struct LanguageSelectionView: View {
             let pref = LanguagePreference(source: selectedSource, target: selectedTarget)
             modelContext.insert(pref)
         }
+    }
+}
+
+// MARK: - Selection Button Style
+
+private struct SelectionButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .scaleEffect(configuration.isPressed ? 0.96 : 1)
+            .opacity(configuration.isPressed ? 0.85 : 1)
+            .animation(.spring(response: 0.3, dampingFraction: 0.7), value: configuration.isPressed)
     }
 }

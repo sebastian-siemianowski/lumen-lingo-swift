@@ -45,6 +45,8 @@ extension AppStrings {
         imLearning: "Я вивчаю",
         noLanguagesAvailable: "Немає доступних мов для цього джерела.",
         confirm: "Підтвердити:",
+        done: "Готово",
+        languagesAvailable: "доступних мов",
 
         // Categories
         back: "Назад",
