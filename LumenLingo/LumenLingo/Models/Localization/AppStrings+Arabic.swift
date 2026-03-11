@@ -44,8 +44,6 @@ extension AppStrings {
         iSpeak: "أتحدّث",
         imLearning: "أتعلّم",
         noLanguagesAvailable: "لا تتوفر لغات لهذا المصدر.",
-        betaLanguagePairs: "أزواج لغات تجريبية",
-        showExperimentalPairs: "عرض الأزواج التجريبية ذات المحتوى المحدود",
         confirm: "تأكيد:",
 
         // Categories
@@ -126,7 +124,6 @@ extension AppStrings {
         // Profile
         appearance: "المظهر",
         sound: "الصوت",
-        beta: "تجريبي",
         sync: "المزامنة",
         signOut: "تسجيل الخروج",
         darkLight: "داكن/فاتح",
@@ -161,18 +158,6 @@ extension AppStrings {
         levelUpFanfares: "احتفالات الترقية ومكافآت السلسلة",
         ambientAudio: "الصوت المحيطي",
         backgroundAtmospheric: "أصوات الخلفية الجوية",
-
-        // Beta Languages
-        betaLanguages: "لغات تجريبية",
-        experimentalLanguagePairs: "أزواج لغات تجريبية",
-        experimentalFeatures: "ميزات تجريبية",
-        betaLimitedContent: "قد تحتوي اللغات التجريبية على محتوى محدود أو بعض الأخطاء في الترجمة.",
-        coreLanguages: "اللغات الأساسية",
-        alwaysOn: "مفعّل دائمًا",
-        active: "نشط",
-        experimentalLanguagesSection: "اللغات التجريبية",
-        on: "مفعّل",
-        off: "معطّل",
 
         // Sync
         cloudSync: "المزامنة السحابية",

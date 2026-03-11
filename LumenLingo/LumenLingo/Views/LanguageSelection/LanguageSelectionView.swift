@@ -173,7 +173,7 @@ struct CountryFlagView: View {
 // MARK: - Language Selection View
 
 /// Full-screen language pair picker.
-/// Source language on the left, target on the right, with beta-pair toggle.
+/// Source language on the left, target on the right.
 struct LanguageSelectionView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var modelContext
@@ -183,46 +183,25 @@ struct LanguageSelectionView: View {
     private var L: AppStrings { localization.strings }
 
     @Query private var languagePrefs: [LanguagePreference]
-    @Query private var betaPairs: [EnabledBetaPair]
 
     @State private var selectedSource: SupportedLanguage = .english
     @State private var selectedTarget: SupportedLanguage = .spanish
-    @State private var showBeta = false
 
     private var currentPref: LanguagePreference? { languagePrefs.first }
     private var isDark: Bool { colorScheme == .dark }
 
-    /// Only show languages that appear as a source in at least one built-in pair.
+    /// All languages that can be a source.
     private var availableSources: [SupportedLanguage] {
         SupportedLanguage.allCases.filter { lang in
-            LanguagePair.builtIn.contains { $0.source == lang }
+            LanguagePair.withContent.contains { $0.source == lang }
         }
     }
 
-    /// Targets where the pair (either direction) is built-in – always visible.
-    private var builtInTargets: [SupportedLanguage] {
+    /// All targets that have content for the selected source.
+    private var availableTargets: [SupportedLanguage] {
         SupportedLanguage.allCases.filter { target in
             guard target != selectedSource else { return false }
-            let pair = LanguagePair(source: selectedSource, target: target)
-            let pairReverse = LanguagePair(source: target, target: selectedSource)
-            return pair.isBuiltIn || pairReverse.isBuiltIn
-        }
-    }
-
-    /// Targets that are NOT built-in but have content or are explicitly enabled.
-    private var betaTargets: [SupportedLanguage] {
-        SupportedLanguage.allCases.filter { target in
-            guard target != selectedSource else { return false }
-            let pair = LanguagePair(source: selectedSource, target: target)
-            let pairReverse = LanguagePair(source: target, target: selectedSource)
-            if pair.isBuiltIn || pairReverse.isBuiltIn { return false }
-            let hasContent = Bundle.main.url(forResource: "flashcards_\(pair.key)", withExtension: "json") != nil
-                || Bundle.main.url(forResource: "grammar_\(pair.key)", withExtension: "json") != nil
-                || Bundle.main.url(forResource: "flashcards_\(pair.key)", withExtension: "json", subdirectory: "Content/\(pair.key)") != nil
-            if hasContent { return true }
-            return betaPairs.contains {
-                $0.sourceLanguage == selectedSource.rawValue && $0.targetLanguage == target.rawValue
-            }
+            return LanguagePair(source: selectedSource, target: target).hasContent
         }
     }
 
@@ -255,15 +234,9 @@ struct LanguageSelectionView: View {
                         sourceLanguageSection
                         directionArrow
                         targetLanguageSection
-                        betaToggleSection
-                        if showBeta {
-                            betaTargetSection
-                                .transition(.opacity.combined(with: .move(edge: .top)))
-                        }
                         confirmButton
                         Spacer(minLength: 80)
                     }
-                    .animation(.easeInOut(duration: 0.3), value: showBeta)
                     .padding(.horizontal, 16)
                     .padding(.top, 12)
                 }
@@ -357,7 +330,7 @@ struct LanguageSelectionView: View {
             .shadow(color: .cyan.opacity(0.3), radius: 8)
     }
 
-    // MARK: - Target Language (Built-in)
+    // MARK: - Target Language
 
     private var targetLanguageSection: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -371,7 +344,7 @@ struct LanguageSelectionView: View {
                     )
                 )
 
-            if builtInTargets.isEmpty {
+            if availableTargets.isEmpty {
                 Text(L.noLanguagesAvailable)
                     .font(.subheadline)
                     .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
@@ -379,7 +352,7 @@ struct LanguageSelectionView: View {
                     .padding(20)
             } else {
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
-                    ForEach(builtInTargets, id: \.self) { lang in
+                    ForEach(availableTargets, id: \.self) { lang in
                         languageCard(lang, isSelected: lang == selectedTarget, translatedIn: selectedSource) {
                             withAnimation(.spring(response: 0.35)) {
                                 selectedTarget = lang
@@ -390,64 +363,6 @@ struct LanguageSelectionView: View {
             }
         }
         .padding(18)
-        .background(glassCard)
-    }
-
-    // MARK: - Beta Target Languages
-
-    private var betaTargetSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Label(L.betaLanguagePairs, systemImage: "flask.fill")
-                .font(.headline)
-                .foregroundStyle(
-                    LinearGradient(
-                        colors: [.orange, Color(hex: "#f59e0b")],
-                        startPoint: .leading,
-                        endPoint: .trailing
-                    )
-                )
-
-            if betaTargets.isEmpty {
-                Text(L.noLanguagesAvailable)
-                    .font(.subheadline)
-                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
-                    .frame(maxWidth: .infinity, alignment: .center)
-                    .padding(20)
-            } else {
-                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
-                    ForEach(betaTargets, id: \.self) { lang in
-                        languageCard(lang, isSelected: lang == selectedTarget, translatedIn: selectedSource) {
-                            withAnimation(.spring(response: 0.35)) {
-                                selectedTarget = lang
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .padding(18)
-        .background(glassCard)
-    }
-
-    // MARK: - Beta Toggle
-
-    private var betaToggleSection: some View {
-        Toggle(isOn: $showBeta) {
-            HStack(spacing: 8) {
-                Image(systemName: "flask.fill")
-                    .foregroundStyle(.orange)
-                VStack(alignment: .leading, spacing: 2) {
-                    Text(L.betaLanguagePairs)
-                        .font(.subheadline.bold())
-                        .foregroundStyle(isDark ? .white : .caribbeanInk)
-                    Text(L.showExperimentalPairs)
-                        .font(.caption2)
-                        .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
-                }
-            }
-        }
-        .toggleStyle(SwitchToggleStyle(tint: .cyan))
-        .padding(16)
         .background(glassCard)
     }
 

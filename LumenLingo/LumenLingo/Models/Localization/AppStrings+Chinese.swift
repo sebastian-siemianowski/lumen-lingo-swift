@@ -44,8 +44,6 @@ extension AppStrings {
         iSpeak: "我会说",
         imLearning: "我正在学习",
         noLanguagesAvailable: "该源语言暂无可用语言。",
-        betaLanguagePairs: "测试版语言对",
-        showExperimentalPairs: "显示内容有限的实验性语言对",
         confirm: "确认：",
 
         // Categories
@@ -126,7 +124,6 @@ extension AppStrings {
         // Profile
         appearance: "外观",
         sound: "声音",
-        beta: "测试版",
         sync: "同步",
         signOut: "退出登录",
         darkLight: "深色/浅色",
@@ -161,18 +158,6 @@ extension AppStrings {
         levelUpFanfares: "升级庆祝和连续奖励",
         ambientAudio: "环境音效",
         backgroundAtmospheric: "背景氛围音效",
-
-        // Beta Languages
-        betaLanguages: "测试版语言",
-        experimentalLanguagePairs: "实验性语言对",
-        experimentalFeatures: "实验性功能",
-        betaLimitedContent: "测试版语言可能内容有限或偶有翻译偏差。",
-        coreLanguages: "核心语言",
-        alwaysOn: "始终开启",
-        active: "已激活",
-        experimentalLanguagesSection: "实验性语言",
-        on: "开",
-        off: "关",
 
         // Sync
         cloudSync: "云同步",

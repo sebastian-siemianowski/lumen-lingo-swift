@@ -3,8 +3,8 @@ import SwiftData
 
 // MARK: - Profile View (React-Parity Overhaul)
 
-/// Full React-parity profile screen with 5 top-level tabs
-/// (Appearance, Sound, Beta, Sync, Sign Out) and 4 appearance sub-tabs
+/// Full React-parity profile screen with 4 top-level tabs
+/// (Appearance, Sound, Sync, Sign Out) and 4 appearance sub-tabs
 /// (Dark/Light, Breathing Orbs, Quantum Flow, Nebula Drift).
 struct ProfileView: View {
     @Environment(\.modelContext) private var modelContext
@@ -43,7 +43,6 @@ struct ProfileView: View {
     enum ProfileTab: String, CaseIterable {
         case appearance = "Appearance"
         case sound = "Sound"
-        case beta = "Beta"
         case sync = "Sync"
         case signOut = "Sign Out"
     }
@@ -285,7 +284,6 @@ struct ProfileView: View {
         switch tab {
         case .appearance: return "paintbrush.fill"
         case .sound: return "speaker.wave.2.fill"
-        case .beta: return "flask.fill"
         case .sync: return "arrow.triangle.2.circlepath"
         case .signOut: return "rectangle.portrait.and.arrow.right"
         }
@@ -295,7 +293,6 @@ struct ProfileView: View {
         switch tab {
         case .appearance: return L.appearance
         case .sound: return L.sound
-        case .beta: return L.beta
         case .sync: return L.sync
         case .signOut: return L.signOut
         }
@@ -310,8 +307,6 @@ struct ProfileView: View {
             appearanceSettings
         case .sound:
             soundTab
-        case .beta:
-            betaTab
         case .sync:
             syncTab
         case .signOut:
@@ -524,14 +519,6 @@ struct ProfileView: View {
     private var soundTab: some View {
         settingsCard(tint: Color(hex: "#ec4899")) {
             SoundSettingsView()
-        }
-    }
-
-    // MARK: - Beta Tab (Delegated)
-
-    private var betaTab: some View {
-        settingsCard(tint: .cyan) {
-            BetaLanguagesView()
         }
     }
 

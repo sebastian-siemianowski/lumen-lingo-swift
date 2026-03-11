@@ -299,22 +299,6 @@ struct LanguagePair: Equatable, Hashable, Codable {
         "\(source.displayName) \u{2192} \(target.displayName)"
     }
 
-    /// Built-in (non-beta) language pairs — the core supported pairs
-    static let builtIn: [LanguagePair] = [
-        .init(source: .english, target: .spanish),
-        .init(source: .spanish, target: .english),
-        .init(source: .polish, target: .english),
-        .init(source: .polish, target: .spanish),
-        .init(source: .polish, target: .german),
-        .init(source: .german, target: .english),
-        .init(source: .german, target: .spanish),
-    ]
-
-    /// Check if a pair is built-in by key
-    static func isBuiltInKey(_ key: String) -> Bool {
-        builtIn.contains { $0.key == key }
-    }
-
     /// All possible combinations where content might exist
     static let allAvailable: [LanguagePair] = SupportedLanguage.allCases.flatMap { source in
         SupportedLanguage.allCases.compactMap { target in
@@ -322,8 +306,38 @@ struct LanguagePair: Equatable, Hashable, Codable {
         }
     }
 
-    var isBuiltIn: Bool {
-        Self.builtIn.contains(self)
+    /// All language pairs that have bundled content (flashcards, grammar, wordbuilder)
+    static let withContent: [LanguagePair] = [
+        .init(source: .arabic, target: .english),
+        .init(source: .chinese, target: .english),
+        .init(source: .english, target: .arabic),
+        .init(source: .english, target: .chinese),
+        .init(source: .english, target: .french),
+        .init(source: .english, target: .german),
+        .init(source: .english, target: .japanese),
+        .init(source: .english, target: .polish),
+        .init(source: .english, target: .spanish),
+        .init(source: .french, target: .english),
+        .init(source: .german, target: .english),
+        .init(source: .german, target: .polish),
+        .init(source: .german, target: .spanish),
+        .init(source: .japanese, target: .english),
+        .init(source: .polish, target: .arabic),
+        .init(source: .polish, target: .chinese),
+        .init(source: .polish, target: .english),
+        .init(source: .polish, target: .french),
+        .init(source: .polish, target: .german),
+        .init(source: .polish, target: .japanese),
+        .init(source: .polish, target: .spanish),
+        .init(source: .polish, target: .ukrainian),
+        .init(source: .spanish, target: .english),
+        .init(source: .ukrainian, target: .english),
+        .init(source: .ukrainian, target: .polish),
+    ]
+
+    /// Check if a pair has bundled content
+    var hasContent: Bool {
+        Self.withContent.contains(self)
     }
 }
 

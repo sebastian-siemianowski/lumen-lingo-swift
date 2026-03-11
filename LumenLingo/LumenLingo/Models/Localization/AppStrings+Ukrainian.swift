@@ -44,8 +44,6 @@ extension AppStrings {
         iSpeak: "Я говорю",
         imLearning: "Я вивчаю",
         noLanguagesAvailable: "Немає доступних мов для цього джерела.",
-        betaLanguagePairs: "Бета-мовні пари",
-        showExperimentalPairs: "Показати експериментальні пари з обмеженим вмістом",
         confirm: "Підтвердити:",
 
         // Categories
@@ -126,7 +124,6 @@ extension AppStrings {
         // Profile
         appearance: "Вигляд",
         sound: "Звук",
-        beta: "Бета",
         sync: "Синхронізація",
         signOut: "Вийти",
         darkLight: "Темна/Світла",
@@ -161,18 +158,6 @@ extension AppStrings {
         levelUpFanfares: "Фанфари за підвищення рівня та серії",
         ambientAudio: "Фонове аудіо",
         backgroundAtmospheric: "Фонові атмосферні звуки",
-
-        // Beta Languages
-        betaLanguages: "Бета-мови",
-        experimentalLanguagePairs: "Експериментальні мовні пари",
-        experimentalFeatures: "Експериментальні функції",
-        betaLimitedContent: "Бета-мови можуть мати обмежений вміст або випадкові неточності в перекладі.",
-        coreLanguages: "Основні мови",
-        alwaysOn: "Завжди увімкнено",
-        active: "Активно",
-        experimentalLanguagesSection: "Експериментальні мови",
-        on: "Увімк.",
-        off: "Вимк.",
 
         // Sync
         cloudSync: "Хмарна синхронізація",

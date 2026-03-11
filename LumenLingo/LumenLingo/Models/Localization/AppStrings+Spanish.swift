@@ -44,8 +44,6 @@ extension AppStrings {
         iSpeak: "Yo hablo",
         imLearning: "Estoy aprendiendo",
         noLanguagesAvailable: "No hay idiomas disponibles para este origen.",
-        betaLanguagePairs: "Pares de Idiomas Beta",
-        showExperimentalPairs: "Mostrar pares experimentales con contenido limitado",
         confirm: "Confirmar:",
 
         // Categories
@@ -126,7 +124,6 @@ extension AppStrings {
         // Profile
         appearance: "Apariencia",
         sound: "Sonido",
-        beta: "Beta",
         sync: "Sincronizar",
         signOut: "Cerrar Sesión",
         darkLight: "Oscuro/Claro",
@@ -163,17 +160,6 @@ extension AppStrings {
         backgroundAtmospheric: "Sonidos atmosféricos de fondo",
 
         // Beta Languages
-        betaLanguages: "Idiomas Beta",
-        experimentalLanguagePairs: "Pares de idiomas experimentales",
-        experimentalFeatures: "Funciones Experimentales",
-        betaLimitedContent: "Los idiomas beta pueden tener contenido limitado o peculiaridades de traducción ocasionales.",
-        coreLanguages: "Idiomas Principales",
-        alwaysOn: "Siempre activo",
-        active: "Activo",
-        experimentalLanguagesSection: "Idiomas Experimentales",
-        on: "Sí",
-        off: "No",
-
         // Sync
         cloudSync: "Sincronización en la Nube",
         backupRestore: "Respalda y restaura tu progreso",

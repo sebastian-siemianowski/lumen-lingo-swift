@@ -21,7 +21,6 @@ struct LumenLingoApp: App {
             LanguagePreference.self,
             FavoriteCategory.self,
             MasteredContent.self,
-            EnabledBetaPair.self,
         ])
     }
 }

@@ -273,7 +273,7 @@ struct MembershipView: View {
     }
 
     static let comparisonFeatures: [ComparisonFeature] = [
-        .init(name: "Language Pairs", values: ["3 core", "7 core", "25+ beta", "25+ beta"]),
+        .init(name: "Language Pairs", values: ["3 pairs", "12 pairs", "25 pairs", "25 pairs"]),
         .init(name: "Practice Time", values: ["30 min/day", "Unlimited", "Unlimited", "Unlimited"]),
         .init(name: "Game Modes", values: ["All 3", "All 3", "All 3", "All 3"]),
         .init(name: "Progress Tracking", values: ["Basic", "Advanced", "Advanced", "Advanced"]),

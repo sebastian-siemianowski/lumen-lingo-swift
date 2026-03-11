@@ -44,8 +44,6 @@ extension AppStrings {
         iSpeak: "話せる言語",
         imLearning: "学習中の言語",
         noLanguagesAvailable: "このソース言語で利用できる言語はありません。",
-        betaLanguagePairs: "ベータ言語ペア",
-        showExperimentalPairs: "コンテンツが限定的な実験的ペアを表示",
         confirm: "確認：",
 
         // Categories
@@ -126,7 +124,6 @@ extension AppStrings {
         // Profile
         appearance: "外観",
         sound: "サウンド",
-        beta: "ベータ",
         sync: "同期",
         signOut: "サインアウト",
         darkLight: "ダーク/ライト",
@@ -161,18 +158,6 @@ extension AppStrings {
         levelUpFanfares: "レベルアップファンファーレと連続ボーナス",
         ambientAudio: "アンビエントオーディオ",
         backgroundAtmospheric: "バックグラウンド環境サウンド",
-
-        // Beta Languages
-        betaLanguages: "ベータ言語",
-        experimentalLanguagePairs: "実験的な言語ペア",
-        experimentalFeatures: "実験的な機能",
-        betaLimitedContent: "ベータ言語はコンテンツが限定的であったり、翻訳に不備がある場合があります。",
-        coreLanguages: "コア言語",
-        alwaysOn: "常にオン",
-        active: "有効",
-        experimentalLanguagesSection: "実験的な言語",
-        on: "オン",
-        off: "オフ",
 
         // Sync
         cloudSync: "クラウド同期",

@@ -47,8 +47,6 @@ struct AppStrings {
     let iSpeak: String
     let imLearning: String
     let noLanguagesAvailable: String
-    let betaLanguagePairs: String
-    let showExperimentalPairs: String
     let confirm: String
 
     // MARK: - Categories
@@ -129,7 +127,6 @@ struct AppStrings {
     // MARK: - Profile
     let appearance: String
     let sound: String
-    let beta: String
     let sync: String
     let signOut: String
     let darkLight: String
@@ -164,18 +161,6 @@ struct AppStrings {
     let levelUpFanfares: String
     let ambientAudio: String
     let backgroundAtmospheric: String
-
-    // MARK: - Beta Languages
-    let betaLanguages: String
-    let experimentalLanguagePairs: String
-    let experimentalFeatures: String
-    let betaLimitedContent: String
-    let coreLanguages: String
-    let alwaysOn: String
-    let active: String
-    let experimentalLanguagesSection: String
-    let on: String
-    let off: String
 
     // MARK: - Sync
     let cloudSync: String

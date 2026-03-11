@@ -44,8 +44,6 @@ extension AppStrings {
         iSpeak: "I speak",
         imLearning: "I'm learning",
         noLanguagesAvailable: "No languages available for this source.",
-        betaLanguagePairs: "Beta Language Pairs",
-        showExperimentalPairs: "Show experimental pairs with limited content",
         confirm: "Confirm:",
 
         // Categories
@@ -126,7 +124,6 @@ extension AppStrings {
         // Profile
         appearance: "Appearance",
         sound: "Sound",
-        beta: "Beta",
         sync: "Sync",
         signOut: "Sign Out",
         darkLight: "Dark/Light",
@@ -161,18 +158,6 @@ extension AppStrings {
         levelUpFanfares: "Level-up fanfares & streak bonuses",
         ambientAudio: "Ambient Audio",
         backgroundAtmospheric: "Background atmospheric sounds",
-
-        // Beta Languages
-        betaLanguages: "Beta Languages",
-        experimentalLanguagePairs: "Experimental language pairs",
-        experimentalFeatures: "Experimental Features",
-        betaLimitedContent: "Beta languages may have limited content or occasional translation quirks.",
-        coreLanguages: "Core Languages",
-        alwaysOn: "Always on",
-        active: "Active",
-        experimentalLanguagesSection: "Experimental Languages",
-        on: "On",
-        off: "Off",
 
         // Sync
         cloudSync: "Cloud Sync",

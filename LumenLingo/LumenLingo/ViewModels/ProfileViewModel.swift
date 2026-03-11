@@ -97,7 +97,6 @@ final class ProfileViewModel {
 final class LanguageSelectionViewModel {
     var sourceLanguage: SupportedLanguage = .english
     var targetLanguage: SupportedLanguage = .spanish
-    var enabledBetaPairs: Set<String> = []
 
     private let progressService: ProgressService
 
@@ -106,15 +105,7 @@ final class LanguageSelectionViewModel {
     }
 
     var availablePairs: [LanguagePair] {
-        var pairs = LanguagePair.builtIn
-
-        // Add enabled beta pairs
-        let betaPairs = LanguagePair.allAvailable.filter { pair in
-            !pair.isBuiltIn && enabledBetaPairs.contains(pair.key)
-        }
-        pairs.append(contentsOf: betaPairs)
-
-        return pairs
+        LanguagePair.withContent
     }
 
     var isValidPair: Bool {
@@ -125,12 +116,6 @@ final class LanguageSelectionViewModel {
         let pref = progressService.getLanguagePreference()
         sourceLanguage = SupportedLanguage(rawValue: pref.sourceLanguage) ?? .english
         targetLanguage = SupportedLanguage(rawValue: pref.targetLanguage) ?? .spanish
-
-        // Load beta pairs
-        if let data = UserDefaults.standard.data(forKey: "enabled_beta_pairs"),
-           let pairs = try? JSONDecoder().decode(Set<String>.self, from: data) {
-            enabledBetaPairs = pairs
-        }
     }
 
     func selectLanguagePair() {
@@ -139,17 +124,6 @@ final class LanguageSelectionViewModel {
         TranslationService.shared.setLanguage(sourceLanguage.rawValue)
         HapticsService.success()
         AudioService.shared.playWhoosh()
-    }
-
-    func toggleBetaPair(_ pair: LanguagePair) {
-        if enabledBetaPairs.contains(pair.key) {
-            enabledBetaPairs.remove(pair.key)
-        } else {
-            enabledBetaPairs.insert(pair.key)
-        }
-        if let data = try? JSONEncoder().encode(enabledBetaPairs) {
-            UserDefaults.standard.set(data, forKey: "enabled_beta_pairs")
-        }
     }
 }
 

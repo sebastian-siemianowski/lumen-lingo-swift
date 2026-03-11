@@ -311,15 +311,4 @@ final class MasteredContent {
     }
 }
 
-// MARK: - Beta Language Pair (SwiftData)
 
-@Model
-final class EnabledBetaPair {
-    var sourceLanguage: String
-    var targetLanguage: String
-
-    init(sourceLanguage: String, targetLanguage: String) {
-        self.sourceLanguage = sourceLanguage
-        self.targetLanguage = targetLanguage
-    }
-}
