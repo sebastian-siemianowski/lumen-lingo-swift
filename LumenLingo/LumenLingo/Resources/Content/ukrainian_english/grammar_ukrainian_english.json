@@ -11888,5 +11888,1030 @@
         "explanation": "PERHAPS YOU MIGHT (найм'якша порада): 'PERHAPS you MIGHT consider taking time off'. Потрійне пом'якшення: PERHAPS (можливо) + MIGHT (модальне) + CONSIDER (не прямо). Це максимально делікатна порада — для ситуацій, де пряма порада може образити. Підсумок конструкцій порад від найпрямішої до найм'якшої: 'Do X!' > 'You should X' > 'Why don't you X?' > 'Have you thought of X?' > 'Perhaps you might consider X'. В українській: 'Може, варто б подумати про...' — теж багатошарова."
       }
     ]
+  },
+  {
+    "key": "agreeing_disagreeing",
+    "name": "Agreeing & Disagreeing",
+    "description": "Згода та незгода (конструкції та фрази)",
+    "iconName": "hand.thumbsup.fill",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ue_ad1",
+        "question": "I completely _____ with everything you've said.",
+        "translation": "(Я повністю погоджуюсь з усім, що ви сказали.)",
+        "options": [
+          "agree",
+          "accept",
+          "admit",
+          "allow"
+        ],
+        "correct": "agree",
+        "explanation": "AGREE WITH + person / AGREE ON + topic: 'I completely AGREE WITH you'. AGREE WITH someone (з кимось), AGREE ON something (щодо чогось), AGREE TO do something (погодитися зробити), AGREE THAT (погодитися, що). ❌ 'I am agree' (поширена помилка — AGREE = дієслово, не прикметник). ✅ 'I agree', 'I don't agree'. В українській: 'Погоджуюсь з вами' (з + орудний) — прийменникова конструкція, як і AGREE WITH."
+      },
+      {
+        "id": "ue_ad2",
+        "question": "That's _____ what I was thinking!",
+        "translation": "(Це саме те, що я думав!)",
+        "options": [
+          "exactly",
+          "mostly",
+          "partly",
+          "nearly"
+        ],
+        "correct": "exactly",
+        "explanation": "THAT'S EXACTLY WHAT I WAS THINKING (повна згода): 'THAT'S EXACTLY what I was thinking!' Фрази ентузіастичної згоди: EXACTLY!, PRECISELY!, THAT'S EXACTLY IT!, MY THOUGHTS EXACTLY!, YOU TOOK THE WORDS RIGHT OUT OF MY MOUTH! (ти вимовив мої слова!). Підсилювачі: ABSOLUTELY, TOTALLY, COMPLETELY, ENTIRELY. В українській: 'Саме так!', 'Стовідсотково!', 'Ти прочитав мої думки!' — емоційні маркери повної згоди."
+      },
+      {
+        "id": "ue_ad3",
+        "question": "I'm not _____ sure I agree with that.",
+        "translation": "(Я не зовсім впевнений, що згоден з цим.)",
+        "options": [
+          "entirely",
+          "always",
+          "never",
+          "often"
+        ],
+        "correct": "entirely",
+        "explanation": "NOT ENTIRELY SURE (м'яка незгода): 'I'm NOT ENTIRELY SURE I agree'. Пом'якшена незгода через подвійне хеджування: NOT + ENTIRELY. Ще м'які: 'I'm not so sure about that', 'I have my doubts', 'I'm in two minds about it' (вагаюсь), 'I don't entirely share your view'. Прямі: 'I disagree', 'I don't think so', 'I beg to differ' (формально). В українській: 'Не зовсім впевнений', 'Маю сумніви', 'Не до кінця поділяю вашу думку' — делікатна незгода."
+      },
+      {
+        "id": "ue_ad4",
+        "question": "You've got a _____ there, but have you considered the cost?",
+        "translation": "(У вас є рація, але чи врахували ви вартість?)",
+        "options": [
+          "point",
+          "case",
+          "idea",
+          "thought"
+        ],
+        "correct": "point",
+        "explanation": "YOU'VE GOT A POINT (часткова згода): 'You've got A POINT there, but...' Формула часткової згоди: визнання + BUT + контраргумент. Ще: 'You may be right, but...', 'That's true to an extent, but...', 'I take your point, however...', 'Fair enough, but...'. Це дипломатичний прийом: показуєте повагу до думки, потім вводите свою. В українській: 'У вас є рація, але...', 'Частково згоден, проте...', 'Це слушно, однак...'."
+      },
+      {
+        "id": "ue_ad5",
+        "question": "I beg to _____. The situation is much more complex.",
+        "translation": "(Дозвольте не погодитись. Ситуація набагато складніша.)",
+        "options": [
+          "differ",
+          "disagree",
+          "oppose",
+          "reject"
+        ],
+        "correct": "differ",
+        "explanation": "I BEG TO DIFFER (формальна незгода): 'I BEG TO DIFFER'. Фіксований вираз = 'дозвольте не погодитись'. Дуже ввічливо, але ТВЕРДА незгода. BEG = 'просити/благати' — створює відчуття ввічливого протесту. Ще формальна незгода: 'With all due respect, I must disagree', 'I'm afraid I take a different view'. Прямі: 'No way!' (ні за що!), 'Rubbish!' (нісенітниця! — BrE), 'That's nonsense!' В українській: 'Дозвольте не погодитись', 'Маю іншу думку' — формальне."
+      },
+      {
+        "id": "ue_ad6",
+        "question": "I _____ see your point, but I think there's a better solution.",
+        "translation": "(Я розумію вашу точку зору, але думаю, є краще рішення.)",
+        "options": [
+          "can",
+          "might",
+          "should",
+          "would"
+        ],
+        "correct": "can",
+        "explanation": "I CAN SEE YOUR POINT (визнання перед незгодою): 'I CAN SEE YOUR POINT, but...' Часткове визнання: 'I can see where you're coming from' (розумію звідки це), 'I understand your concern' (розумію ваше занепокоєння), 'That's a fair observation' (це слушне спостереження). Потім BUT або HOWEVER вводить свій аргумент. Це дебатний прийом: спочатку ВИЗНАЙ, потім ВІДПОВІДАЙ. В українській: 'Я розумію вашу позицію, але...', 'Я бачу ваш аргумент, проте...'."
+      },
+      {
+        "id": "ue_ad7",
+        "question": "\"Working from home is more productive.\" — \"I _____ so.\"",
+        "translation": "(«Працювати вдома продуктивніше.» — «Не думаю.»)",
+        "options": [
+          "don't think",
+          "not think",
+          "think not",
+          "am not think"
+        ],
+        "correct": "don't think",
+        "explanation": "I DON'T THINK SO (м'яка незгода): 'I DON'T THINK SO'. Перенос заперечення (transferred negation): англійська заперечує THINK, не підрядне. 'I don't think it's right' (не 'I think it's not right'). Це АНГЛІЙСЬКА особливість — в українській: 'Я думаю, що це неправильно' (заперечення в підрядному). Ще: 'I don't believe so', 'I don't suppose so', 'I'm not so sure'. В українській: 'Не думаю', 'Навряд', 'Сумніваюсь' — коротші маркери."
+      },
+      {
+        "id": "ue_ad8",
+        "question": "That's a very good point. I'm in complete _____ with you.",
+        "translation": "(Це дуже слушна думка. Я повністю згоден з вами.)",
+        "options": [
+          "agreement",
+          "agreeing",
+          "agreed",
+          "agree"
+        ],
+        "correct": "agreement",
+        "explanation": "IN AGREEMENT WITH (формальна згода): 'I'm in complete AGREEMENT with you'. BE IN AGREEMENT = формальний еквівалент AGREE. Ще формальна згода: 'I concur (with your assessment)' (дуже формально), 'I share your view', 'I endorse this position'. IN COMPLETE/FULL/TOTAL AGREEMENT = повна згода. 'The board is in agreement on this matter'. В українській: 'У повній згоді', 'Цілком поділяю вашу думку', 'Солідарний з вашою позицією' — формальні маркери."
+      },
+      {
+        "id": "ue_ad9",
+        "question": "I'm _____ you to some extent, but not entirely.",
+        "translation": "(Я з вами до певної міри, але не повністю.)",
+        "options": [
+          "with",
+          "for",
+          "to",
+          "by"
+        ],
+        "correct": "with",
+        "explanation": "I'M WITH YOU (розмовна згода): 'I'M WITH YOU to some extent'. BE WITH someone = розмовне 'погоджуватися, підтримувати'. 'I'm with you on this' (підтримую). 'Are you with me?' (ти зі мною? — ти розумієш?). TO SOME EXTENT = 'до певної міри' — часткова згода. Ще розмовна згода: 'I hear you', 'Same here', 'Tell me about it!' (не питання, а 'в мене теж так!'). В українській: 'Я з вами' (підтримую), 'Почасти згоден', 'Аналогічно' — розмовні."
+      },
+      {
+        "id": "ue_ad10",
+        "question": "I'm sorry, but I _____ accept that argument.",
+        "translation": "(Вибачте, але я не можу прийняти цей аргумент.)",
+        "options": [
+          "can't",
+          "don't",
+          "won't",
+          "shouldn't"
+        ],
+        "correct": "can't",
+        "explanation": "I CAN'T ACCEPT THAT (сильна незгода): 'I CAN'T ACCEPT that argument'. CAN'T ACCEPT = 'не можу прийняти' — вказує на НЕМОЖЛИВІСТЬ погодитись (не просто небажання). Шкала: 'I'm not sure' (м'яко) < 'I don't agree' (прямо) < 'I can't accept that' (категорично) < 'That's completely wrong' (грубо). I'M SORRY, BUT — пом'якшувач перед незгодою. В українській: 'Не можу прийняти цей аргумент', 'Змушений не погодитися' — різна сила."
+      },
+      {
+        "id": "ue_ad11",
+        "question": "\"Don't you think it's too expensive?\" — \"_____!\"",
+        "translation": "(«Ти не думаєш, що це занадто дорого?» — «Ще б пак!»)",
+        "options": [
+          "You bet",
+          "Not sure",
+          "Maybe",
+          "Perhaps"
+        ],
+        "correct": "You bet",
+        "explanation": "YOU BET! (емоційна згода): 'YOU BET!' = 'Ще б пак! Звісно!' Емоційні фрази згоди: YOU BET!, ABSOLUTELY!, TOTALLY!, COULDN'T AGREE MORE!, TELL ME ABOUT IT! (і не кажи!), YOU CAN SAY THAT AGAIN! (можеш повторити! = повністю згоден). Всі передають ЕНТУЗІАЗМ згоди, не просто нейтральне 'так'. В українській: 'Ще б пак!', 'Не те слово!', 'А то ж!', 'І не кажи!' — емоційні маркери згоди."
+      },
+      {
+        "id": "ue_ad12",
+        "question": "While I _____ your concern, I don't think it's a major issue.",
+        "translation": "(Хоча я поділяю ваше занепокоєння, не вважаю це великою проблемою.)",
+        "options": [
+          "share",
+          "have",
+          "get",
+          "make"
+        ],
+        "correct": "share",
+        "explanation": "SHARE YOUR CONCERN (визнання + незгода): 'While I SHARE YOUR CONCERN...'. SHARE = 'поділяти' (думку, занепокоєння). Дипломатична формула: WHILE + визнання + головне речення з незгодою. 'While I appreciate your efforts, I must point out...', 'While I respect your opinion, I believe...'. WHILE = ALTHOUGH тут (допустовий сполучник). В українській: 'Хоча я поділяю ваше занепокоєння', 'Попри те, що розумію вас' — 'поділяти' = SHARE."
+      },
+      {
+        "id": "ue_ad13",
+        "question": "I _____ to disagree. The evidence clearly shows otherwise.",
+        "translation": "(Змушений не погодитися. Докази чітко свідчать про інше.)",
+        "options": [
+          "have",
+          "want",
+          "need",
+          "try"
+        ],
+        "correct": "have",
+        "explanation": "I HAVE TO DISAGREE (вимушена незгода): 'I HAVE TO DISAGREE'. HAVE TO = 'змушений' — створює враження, що незгода не добровільна, а вимушена фактами. Ввічливіше за 'I disagree': 'не я хочу не погоджуватися, але факти змушують'. Ще: 'I'm afraid I must disagree', 'I'm forced to disagree', 'I feel I must take issue with that'. В українській: 'Змушений не погодитися', 'Маю не погодитися' — теж з відтінком вимушеності."
+      },
+      {
+        "id": "ue_ad14",
+        "question": "We're on the same _____ about this issue.",
+        "translation": "(Ми на одній хвилі в цьому питанні.)",
+        "options": [
+          "page",
+          "book",
+          "line",
+          "side"
+        ],
+        "correct": "page",
+        "explanation": "ON THE SAME PAGE (повна згода, ідіома): 'We're ON THE SAME PAGE'. = 'ми на одній хвилі, маємо спільне бачення'. Ідіоми згоди: ON THE SAME PAGE, SEE EYE TO EYE (бачити очі в очі = погоджуватись), BE OF ONE MIND (однодумці). 'We don't see eye to eye on politics' (ми не погоджуємося). 'Let's make sure we're all on the same page' (переконаймося, що всі розуміють). В українській: 'На одній хвилі', 'Одної думки', 'Бачити очі в очі' — теж ідіоми."
+      },
+      {
+        "id": "ue_ad15",
+        "question": "I see _____ you're coming from, but I have a different perspective.",
+        "translation": "(Я розумію вашу позицію, але маю інший погляд.)",
+        "options": [
+          "where",
+          "what",
+          "how",
+          "when"
+        ],
+        "correct": "where",
+        "explanation": "I SEE WHERE YOU'RE COMING FROM (розуміння позиції): 'I SEE WHERE YOU'RE COMING FROM' = 'Я розумію, звідки це йде / вашу позицію'. Розмовна фраза визнання чужої точки зору перед незгодою. Ще: 'I get what you mean', 'I understand your position', 'I appreciate your view'. Підсумок: Пряма згода (exactly!), Часткова (to some extent), Визнання (I see your point), М'яка незгода (I'm not sure), Тверда незгода (I have to disagree). В українській: 'Я розумію вашу позицію', 'Бачу вашу логіку'."
+      }
+    ]
+  },
+  {
+    "key": "requests_offers",
+    "name": "Requests & Offers",
+    "description": "Прохання та пропозиції допомоги",
+    "iconName": "hand.raised.fill",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ue_ro1",
+        "question": "_____ you mind closing the window?",
+        "translation": "(Ви не заперечуєте зачинити вікно?)",
+        "options": [
+          "Would",
+          "Do",
+          "Can",
+          "Are"
+        ],
+        "correct": "Would",
+        "explanation": "WOULD YOU MIND + V-ING (ввічливе прохання): 'WOULD YOU MIND closing the window?' Відповіді: 'No, not at all' (не заперечую = так, зачиню) — УВАГА: 'No' = згода! 'Yes, I would mind' = відмова. Це часто плутає учнів. WOULD YOU MIND = DO YOU MIND (трохи менш формально). Ще: 'Would you mind if I opened the window?' (прохання дозволу — Past tense!). В українській: 'Ви не проти...?', 'Ви не заперечуєте...?' — теж заперечна форма = ввічливість."
+      },
+      {
+        "id": "ue_ro2",
+        "question": "Could you _____ do me a favour?",
+        "translation": "(Чи не могли б ви зробити мені послугу?)",
+        "options": [
+          "possibly",
+          "perhaps",
+          "maybe",
+          "probably"
+        ],
+        "correct": "possibly",
+        "explanation": "COULD YOU POSSIBLY (підсилена ввічливість): 'COULD YOU POSSIBLY do me a favour?' POSSIBLY додає ще один рівень ввічливості до COULD YOU. Шкала: 'Do me a favour' (наказ) < 'Can you?' (розмовне) < 'Could you?' (ввічливе) < 'Could you possibly?' (дуже ввічливе) < 'I was wondering if you could possibly?' (максимально). POSSIBLY = 'можливо' — натякає, що ви НЕ ОЧІКУЄТЕ, а ПРОСИТЕ. В українській: 'Чи не могли б ви' — умовне + заперечення = ввічливість."
+      },
+      {
+        "id": "ue_ro3",
+        "question": "_____ I help you with those bags?",
+        "translation": "(Допомогти вам з тими сумками?)",
+        "options": [
+          "Shall",
+          "Will",
+          "Do",
+          "Am"
+        ],
+        "correct": "Shall",
+        "explanation": "SHALL I + V (пропозиція допомоги): 'SHALL I help you?' = 'Допомогти вам?' SHALL I = пропозиція СВОЄЇ допомоги (BrE). SHALL WE = пропозиція спільної дії. 'Shall I carry that for you?', 'Shall I get you a drink?'. В AmE рідше — використовують: 'Can I help?', 'Do you want me to...?', 'Would you like me to...?'. В українській: 'Допомогти вам?', 'Піднести?' — інфінітив-питання без підмета. Простіше за англійську."
+      },
+      {
+        "id": "ue_ro4",
+        "question": "I wonder if you _____ lend me your notes for the exam.",
+        "translation": "(Цікаво, чи могли б ви позичити мені ваші нотатки до іспиту.)",
+        "options": [
+          "could",
+          "can",
+          "will",
+          "should"
+        ],
+        "correct": "could",
+        "explanation": "I WONDER IF YOU COULD (непряме прохання): 'I WONDER IF YOU COULD lend me...' I WONDER IF = 'цікаво, чи...' — створює ДИСТАНЦІЮ між прямим проханням і мовцем. Ще непрямі: 'I don't suppose you could...?', 'You wouldn't happen to have...?', 'There's no chance you could...?'. Всі з негативним або питальним відтінком = 'я не очікую, але може бути?'. В українській: 'Мені було б цікаво, чи не могли б ви...' — багатошарова ввічливість."
+      },
+      {
+        "id": "ue_ro5",
+        "question": "Would you like me _____ pick you up from the airport?",
+        "translation": "(Хочеш, щоб я забрав тебе з аеропорту?)",
+        "options": [
+          "to",
+          "for",
+          "at",
+          "if"
+        ],
+        "correct": "to",
+        "explanation": "WOULD YOU LIKE ME TO (пропозиція): 'WOULD YOU LIKE ME TO pick you up?' Структура: WOULD + person + LIKE + object + TO + V. 'Would you like me to call a taxi?', 'Would you like us to wait?'. Більш розмовне: 'Do you want me to...?', 'Shall I...?' (BrE). В ресторані: 'Would you like to order?', 'Would you like some more water?'. В українській: 'Хочеш, щоб я...?', 'Тобі підвезти?' — конструкція 'щоб я + минулий час'."
+      },
+      {
+        "id": "ue_ro6",
+        "question": "I'd really _____ it if you could reply by Friday.",
+        "translation": "(Я був би дуже вдячний, якби ви могли відповісти до п'ятниці.)",
+        "options": [
+          "appreciate",
+          "like",
+          "want",
+          "need"
+        ],
+        "correct": "appreciate",
+        "explanation": "I'D APPRECIATE IT IF (формальне прохання): 'I'D REALLY APPRECIATE IT IF you could reply'. APPRECIATE = 'цінувати, бути вдячним'. IT обов'язковий: ❌ 'I'd appreciate if...' → ✅ 'I'd appreciate IT if...'. Ще формальні: 'I should be most grateful if...', 'It would be most helpful if...'. Розмовні: 'I'd love it if you could...'. В українській: 'Був би дуже вдячний, якби...' — умовний + 'вдячний'. Більш стислий формат, ніж англійська."
+      },
+      {
+        "id": "ue_ro7",
+        "question": "Do you _____ if I use your phone?",
+        "translation": "(Ви не проти, якщо я скористаюся вашим телефоном?)",
+        "options": [
+          "mind",
+          "care",
+          "worry",
+          "bother"
+        ],
+        "correct": "mind",
+        "explanation": "DO YOU MIND IF I (прохання дозволу): 'DO YOU MIND IF I use your phone?' = 'Ви не проти, якщо я...?' Past tense = формальніше: 'Would you mind if I USED...?' (Past Subjunctive). Відповідь: 'No, go ahead' (ні, будь ласка = дозвіл). 'Not at all' (зовсім не проти). Помилка: 'Yes' = 'Так, я проти' (відмова!). В українській: 'Ви не проти, якщо я...?', 'Нічого, якщо я...?' — заперечна форма = ввічливість."
+      },
+      {
+        "id": "ue_ro8",
+        "question": "Let me _____ you with that heavy box.",
+        "translation": "(Дозвольте допомогти вам з тією важкою коробкою.)",
+        "options": [
+          "help",
+          "to help",
+          "helping",
+          "helped"
+        ],
+        "correct": "help",
+        "explanation": "LET ME HELP YOU (пряма пропозиція): 'LET ME HELP YOU with that'. LET ME + bare infinitive (без TO!). LET ME = 'дозвольте мені' — пряма, тепла пропозиція. 'Let me get that for you', 'Let me show you the way', 'Let me know if you need anything'. LET ME KNOW = 'дайте знати' — дуже поширена ввічлива фраза. В українській: 'Дозвольте допомогти', 'Давайте я допоможу', 'Дайте мені' — імперативні пропозиції."
+      },
+      {
+        "id": "ue_ro9",
+        "question": "Is there any _____ you could finish this by tomorrow?",
+        "translation": "(Чи є якась можливість, що ви закінчите це до завтра?)",
+        "options": [
+          "chance",
+          "way",
+          "hope",
+          "time"
+        ],
+        "correct": "chance",
+        "explanation": "IS THERE ANY CHANCE (м'яке прохання): 'IS THERE ANY CHANCE you could finish?' = 'Чи є шанс, що...?' М'яке прохання через СУМНІВ: 'я не впевнений, що це можливо, але може?'. Ще: 'Any chance of getting a discount?', 'Is there any possibility of...?'. Розмовне: 'Any chance you could...?'. Це менш прямо, ніж 'Could you finish by tomorrow?' — натякає на ТРУДНОЩІ. В українській: 'Чи є можливість...?', 'Є шанс, що...?' — аналогічна непрямість."
+      },
+      {
+        "id": "ue_ro10",
+        "question": "_____ you be so kind as to send me the document?",
+        "translation": "(Чи не будете ви настільки ласкаві надіслати мені документ?)",
+        "options": [
+          "Would",
+          "Will",
+          "Can",
+          "Should"
+        ],
+        "correct": "Would",
+        "explanation": "WOULD YOU BE SO KIND AS TO (дуже формальне прохання): 'WOULD YOU BE SO KIND AS TO send me...' Максимальна ввічливість — для листів, офіційних звернень. Ще: 'I would be most obliged if you could...', 'May I trouble you to...?', 'I should be grateful if you would...'. Ці фрази звучать АРХАЇЧНО в розмовній мові, але нормально в офіційному листуванні. В українській: 'Чи не будете настільки ласкаві...' — теж архаїчно-ввічливе звернення."
+      },
+      {
+        "id": "ue_ro11",
+        "question": "Can I _____ you a lift to the station?",
+        "translation": "(Можу підвезти тебе до станції?)",
+        "options": [
+          "give",
+          "take",
+          "make",
+          "do"
+        ],
+        "correct": "give",
+        "explanation": "GIVE SOMEONE A LIFT (підвезти): 'Can I GIVE YOU A LIFT?' = 'Можу підвезти?'. BrE: GIVE A LIFT. AmE: GIVE A RIDE. Розмовні пропозиції: 'Can I give you a hand?' (допомогти), 'Can I get you something?' (принести), 'Can I fix you a drink?' (зробити напій). CAN I більш розмовне, ніж 'May I?' або 'Shall I?'. В українській: 'Підвезти тебе?', 'Підкинути до станції?' — стисліші розмовні пропозиції."
+      },
+      {
+        "id": "ue_ro12",
+        "question": "I don't suppose you _____ have a pen I could borrow?",
+        "translation": "(Випадково не маєте ручку, яку можна позичити?)",
+        "options": [
+          "would",
+          "could",
+          "should",
+          "might"
+        ],
+        "correct": "would",
+        "explanation": "I DON'T SUPPOSE YOU WOULD (максимально непряме прохання): 'I DON'T SUPPOSE you would have a pen?' Заперечення + припущення = 'я не очікую, але може?'. Ще: 'You wouldn't happen to have...?', 'I don't suppose there's any chance of...?'. Ці конструкції типово БРИТАНСЬКІ — створюють відчуття скромності. В AmE більш прямо: 'Do you have a pen?' В українській: 'Випадково не маєте...?', 'Це не в вас, бо...?' — непрямі прохання."
+      },
+      {
+        "id": "ue_ro13",
+        "question": "I was hoping you _____ be able to help me with something.",
+        "translation": "(Я сподівався, що ви зможете мені допомогти з дечим.)",
+        "options": [
+          "might",
+          "must",
+          "shall",
+          "will"
+        ],
+        "correct": "might",
+        "explanation": "I WAS HOPING YOU MIGHT (делікатне прохання): 'I WAS HOPING you MIGHT be able to help'. WAS HOPING (Past Continuous) + MIGHT = подвійна дистанція. Минулий час + модальне невпевненості = максимальна делікатність. Ще: 'I was wondering if...', 'I thought perhaps you could...', 'I was going to ask if...'. Всі використовують МИНУЛИЙ ЧАС для ввічливості (не для часу!). В українській: 'Я сподівався, що можливо...' — минулий + невпевненість."
+      },
+      {
+        "id": "ue_ro14",
+        "question": "Would it be _____ if I left a bit early today?",
+        "translation": "(Це буде нормально, якщо я піду трохи раніше сьогодні?)",
+        "options": [
+          "alright",
+          "good",
+          "nice",
+          "fine"
+        ],
+        "correct": "alright",
+        "explanation": "WOULD IT BE ALRIGHT IF (прохання дозволу): 'WOULD IT BE ALRIGHT IF I left early?' ALRIGHT/OK/POSSIBLE + IF = прохання дозволу через питання про прийнятність. Past tense (LEFT, не LEAVE) після IF = ввічливість. 'Would it be OK if I opened the window?', 'Would it be possible to reschedule?'. Розмовніше: 'Is it OK if I leave early?', 'Mind if I go?'. В українській: 'Нічого, якщо я піду...?', 'Це нормально, якщо я...?' — прохання дозволу."
+      },
+      {
+        "id": "ue_ro15",
+        "question": "Please feel _____ to ask if you need any help.",
+        "translation": "(Будь ласка, не соромтесь запитати, якщо потрібна допомога.)",
+        "options": [
+          "free",
+          "good",
+          "happy",
+          "welcome"
+        ],
+        "correct": "free",
+        "explanation": "FEEL FREE TO (запрошення): 'Please FEEL FREE TO ask'. = 'Не соромтесь'. Відкриті пропозиції: FEEL FREE TO (не соромтесь), DON'T HESITATE TO (не вагайтесь), PLEASE DON'T BE SHY ABOUT (не соромтесь). 'Feel free to call anytime', 'Feel free to help yourself' (частуйтесь). В діловому: 'Please feel free to contact us'. Підсумок: прохання (Could you?), пропозиція (Shall I?), дозвіл (Would it be OK?), відкрита (Feel free to). В українській: 'Не соромтесь', 'Сміливо звертайтесь'."
+      }
+    ]
+  },
+  {
+    "key": "complaints_apologies",
+    "name": "Complaints & Apologies",
+    "description": "Скарги та вибачення",
+    "iconName": "exclamationmark.bubble.fill",
+    "color": "#ef4444",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ue_ca1",
+        "question": "I'd like to make a _____ about the service I received.",
+        "translation": "(Я хотів би подати скаргу на отримане обслуговування.)",
+        "options": [
+          "complaint",
+          "complain",
+          "complaining",
+          "complained"
+        ],
+        "correct": "complaint",
+        "explanation": "MAKE A COMPLAINT (подати скаргу): 'I'd like to MAKE A COMPLAINT'. COMPLAINT (іменник) vs COMPLAIN (дієслово). MAKE/FILE/LODGE a complaint — колокації. 'I wish to complain about...' (дієслово), 'I have a complaint regarding...' (іменник). LODGE = дуже формально (юридичне). Ще: 'I'd like to raise a concern' (висловити занепокоєння — м'якше). В українській: 'Подати скаргу', 'Скаржитися' — іменник vs дієслово, як в англійській."
+      },
+      {
+        "id": "ue_ca2",
+        "question": "I'm terribly _____ for the inconvenience caused.",
+        "translation": "(Мені страшенно шкода за завдані незручності.)",
+        "options": [
+          "sorry",
+          "sad",
+          "upset",
+          "bad"
+        ],
+        "correct": "sorry",
+        "explanation": "I'M TERRIBLY SORRY (сильне вибачення): 'I'm TERRIBLY SORRY for the inconvenience'. Шкала вибачень: 'Sorry' (розмовне) < 'I'm sorry' (нейтральне) < 'I'm very sorry' (підсилене) < 'I'm terribly/awfully sorry' (сильне) < 'I sincerely/deeply apologize' (формальне). TERRIBLY = 'жахливо' — парадокс: слово з негативним значенням підсилює вибачення. FOR THE INCONVENIENCE CAUSED = стандартна ділова фраза. В українській: 'Мені дуже шкода', 'Щиро перепрошую', 'Прошу вибачення'."
+      },
+      {
+        "id": "ue_ca3",
+        "question": "This is _____ unacceptable. I want to speak to the manager.",
+        "translation": "(Це абсолютно неприйнятно. Я хочу поговорити з менеджером.)",
+        "options": [
+          "totally",
+          "a bit",
+          "somewhat",
+          "fairly"
+        ],
+        "correct": "totally",
+        "explanation": "TOTALLY UNACCEPTABLE (категорична скарга): 'This is TOTALLY UNACCEPTABLE'. Мовні маркери сильних скарг: TOTALLY/COMPLETELY/ABSOLUTELY UNACCEPTABLE, OUTRAGEOUS, DISGRACEFUL, APPALLING. 'I WANT TO SPEAK TO THE MANAGER' — фраза, що стала мемом ('Karen'). Ефективніше: 'I'd like to discuss this with someone in charge'. В українській: 'Абсолютно неприйнятно', 'Це обурливо', 'Це ганебно' — категоричні маркери скарги."
+      },
+      {
+        "id": "ue_ca4",
+        "question": "Please accept our sincerest _____ for the delay.",
+        "translation": "(Прийміть наші найщиріші вибачення за затримку.)",
+        "options": [
+          "apologies",
+          "sorry",
+          "regrets",
+          "forgiveness"
+        ],
+        "correct": "apologies",
+        "explanation": "ACCEPT OUR APOLOGIES (формальне вибачення): 'Please ACCEPT OUR SINCEREST APOLOGIES'. Ділові вибачення: 'We sincerely apologize for...', 'We regret any inconvenience...', 'Please accept our apologies for...'. APOLOGIES (множина) в формальному стилі, APOLOGY (однина) — рідше. 'I owe you an apology' (я винен тобі вибачення). В українській: 'Прийміть наші вибачення', 'Перепрошуємо за незручності' — стандартні ділові формули."
+      },
+      {
+        "id": "ue_ca5",
+        "question": "I'm writing to express my _____ with the product.",
+        "translation": "(Пишу, щоб висловити своє незадоволення продуктом.)",
+        "options": [
+          "dissatisfaction",
+          "unhappiness",
+          "anger",
+          "sadness"
+        ],
+        "correct": "dissatisfaction",
+        "explanation": "EXPRESS DISSATISFACTION (формальна скарга в листі): 'I'm writing to EXPRESS MY DISSATISFACTION'. Формальні вступи скарг: 'I am writing to express my dissatisfaction/concern/disappointment with...', 'I wish to draw your attention to...', 'I am writing to bring to your attention...'. DISSATISFACTION більш формальне, ніж UNHAPPINESS (= нещастя, не для скарг). В українській: 'Висловити своє незадоволення', 'Звернути вашу увагу на...' — ділові формули скарг."
+      },
+      {
+        "id": "ue_ca6",
+        "question": "It won't happen _____. I can assure you of that.",
+        "translation": "(Це більше не повториться. Можу вас запевнити.)",
+        "options": [
+          "again",
+          "more",
+          "twice",
+          "once"
+        ],
+        "correct": "again",
+        "explanation": "IT WON'T HAPPEN AGAIN (обіцянка після вибачення): 'It won't happen AGAIN. I can assure you.' Формула вибачення: 1) Визнання: 'I'm sorry for...'. 2) Причина: 'This was due to...'. 3) Обіцянка: 'It won't happen again'. 4) Компенсація: 'To make up for this, we will...'. I CAN ASSURE YOU = 'Можу запевнити' — підсилює обіцянку. В українській: 'Це більше не повториться', 'Запевняю вас' — ідентична структура вибачення."
+      },
+      {
+        "id": "ue_ca7",
+        "question": "I've been waiting for over an hour. This is _____ ridiculous.",
+        "translation": "(Я чекаю вже більше години. Це просто смішно.)",
+        "options": [
+          "absolutely",
+          "a little",
+          "somewhat",
+          "slightly"
+        ],
+        "correct": "absolutely",
+        "explanation": "ABSOLUTELY RIDICULOUS (емоційна скарга): 'This is ABSOLUTELY RIDICULOUS'. Розмовні пари інтенсифікатор + скарга: ABSOLUTELY ridiculous/terrible/shocking, COMPLETELY unacceptable/outrageous, UTTERLY disgraceful/appalling. В розмовній мові емоції підсилюються STRONGLY: 'This is beyond a joke!' (це вже не смішно!), 'I've had enough!' (мені вже досить!). В українській: 'Це просто смішно!', 'Це ні в які ворота!', 'Це вже занадто!' — емоційні скарги."
+      },
+      {
+        "id": "ue_ca8",
+        "question": "I do apologize for any _____ this may have caused.",
+        "translation": "(Перепрошую за будь-які незручності, які це могло спричинити.)",
+        "options": [
+          "inconvenience",
+          "trouble",
+          "problem",
+          "issue"
+        ],
+        "correct": "inconvenience",
+        "explanation": "APOLOGIZE FOR ANY INCONVENIENCE (стандартна ділова формула): 'I do APOLOGIZE for any INCONVENIENCE'. DO APOLOGIZE — emphatic DO підсилює вибачення. INCONVENIENCE = 'незручність' — дуже формальне, стандартне слово для ділових вибачень. MAY HAVE CAUSED = 'могло спричинити' — пом'якшення (не визнає на 100%, що спричинило). В українській: 'Перепрошуємо за можливі незручності' — калька, що прижилась. 'Можливі' = MAY HAVE."
+      },
+      {
+        "id": "ue_ca9",
+        "question": "The hotel room was _____ from what was advertised.",
+        "translation": "(Готельний номер відрізнявся від того, що рекламувалося.)",
+        "options": [
+          "different",
+          "other",
+          "another",
+          "opposite"
+        ],
+        "correct": "different",
+        "explanation": "DIFFERENT FROM (відрізнявся від): 'The room was DIFFERENT FROM what was advertised'. DIFFERENT FROM (стандарт) = DIFFERENT TO (BrE) = DIFFERENT THAN (AmE). В скаргах: описуємо розбіжність між обіцяним і отриманим. Ще: 'The product did not match the description', 'This is not what I ordered', 'The quality fell short of expectations'. В українській: 'Відрізнявся від рекламованого', 'Не відповідав опису', 'Якість не виправдала очікувань'."
+      },
+      {
+        "id": "ue_ca10",
+        "question": "I'm sorry. I didn't _____ to offend you.",
+        "translation": "(Вибачте. Я не мав наміру вас образити.)",
+        "options": [
+          "mean",
+          "want",
+          "try",
+          "plan"
+        ],
+        "correct": "mean",
+        "explanation": "I DIDN'T MEAN TO (ненавмисність): 'I didn't MEAN TO offend you' = 'Я не мав наміру'. MEAN TO = 'мати намір'. Це ключова фраза вибачення: визнає, що дія відбулась, але без наміру. 'I didn't mean to upset you', 'I didn't mean it that way', 'I didn't mean any harm'. Ще: 'It was unintentional', 'It was a misunderstanding'. В українській: 'Я не мав наміру', 'Я не хотів образити', 'Це було ненавмисно' — відмежування від злого умислу."
+      },
+      {
+        "id": "ue_ca11",
+        "question": "I'm afraid there seems to have been a _____.",
+        "translation": "(Боюся, здається, сталося непорозуміння.)",
+        "options": [
+          "misunderstanding",
+          "mistake",
+          "problem",
+          "confusion"
+        ],
+        "correct": "misunderstanding",
+        "explanation": "THERE SEEMS TO HAVE BEEN A MISUNDERSTANDING (м'яка скарга): 'There SEEMS TO HAVE BEEN a misunderstanding'. Потрійне пом'якшення: I'M AFRAID + SEEMS TO + HAVE BEEN = максимально делікатна скарга. MISUNDERSTANDING = 'непорозуміння' — не звинувачує нікого. М'яке: 'There seems to be a problem' → Сильніше: 'There IS a problem'. В українській: 'Здається, сталося непорозуміння' — без 'боюся' (I'M AFRAID), але теж м'яко."
+      },
+      {
+        "id": "ue_ca12",
+        "question": "To _____ up for the mistake, we'd like to offer you a refund.",
+        "translation": "(Щоб компенсувати помилку, ми хотіли б запропонувати вам відшкодування.)",
+        "options": [
+          "make",
+          "give",
+          "pay",
+          "do"
+        ],
+        "correct": "make",
+        "explanation": "MAKE UP FOR (компенсувати): 'To MAKE UP FOR the mistake'. MAKE UP FOR = 'компенсувати, загладити'. Phrasal verb для виправлення ситуації. 'I want to make up for missing your birthday', 'How can we make it up to you?'. Ще: COMPENSATE FOR (формальне), ATONE FOR (дуже формальне, часто моральне). REFUND = 'повернення грошей'. В українській: 'Щоб компенсувати', 'Щоб загладити', 'На виправлення ситуації' — фрази відшкодування."
+      },
+      {
+        "id": "ue_ca13",
+        "question": "I _____ your pardon. That was very rude of me.",
+        "translation": "(Прошу вибачення. Це було дуже грубо з мого боку.)",
+        "options": [
+          "beg",
+          "ask",
+          "want",
+          "need"
+        ],
+        "correct": "beg",
+        "explanation": "I BEG YOUR PARDON (формальне вибачення): 'I BEG YOUR PARDON'. Три значення: 1) Вибачення: 'I beg your pardon, that was rude'. 2) Перепитування: 'I beg your pardon?' (=What?). 3) Обурення: 'I BEG your PARDON?!' (наголос на PARDON = 'Що ви собі дозволяєте?!'). Контекст і ІНТОНАЦІЯ визначають значення. В розмовній мові: 'Pardon?' (перепитування), 'Sorry!' (вибачення). В українській: 'Прошу вибачення', 'Перепрошую', 'Що, пробачте?' — різні функції."
+      },
+      {
+        "id": "ue_ca14",
+        "question": "The service was _____ poor that I'll never come back.",
+        "translation": "(Обслуговування було настільки поганим, що я ніколи не повернуся.)",
+        "options": [
+          "so",
+          "very",
+          "much",
+          "too"
+        ],
+        "correct": "so",
+        "explanation": "SO...THAT (результативна конструкція в скарзі): 'The service was SO poor THAT I'll never come back'. SO + ADJ + THAT + result = 'настільки...що'. Ефективна конструкція для скарг: описує ПРИЧИНУ і НАСЛІДОК. 'The food was so bad that I couldn't eat it', 'The noise was so loud that I couldn't sleep'. SUCH + NOUN: 'It was such poor service that...' (не 'so poor service'). В українській: 'Настільки...що' — ідентична конструкція. 'Настільки поганим, що...'."
+      },
+      {
+        "id": "ue_ca15",
+        "question": "I hope we can put this _____ us and move forward.",
+        "translation": "(Сподіваюся, ми можемо залишити це позаду і рухатися далі.)",
+        "options": [
+          "behind",
+          "before",
+          "beside",
+          "between"
+        ],
+        "correct": "behind",
+        "explanation": "PUT SOMETHING BEHIND US (залишити позаду): 'Put this BEHIND us and move forward'. Фрази примирення після конфлікту: PUT BEHIND US (залишити позаду), LET BYGONES BE BYGONES (хто старе пом'яне, тому око геть), WATER UNDER THE BRIDGE (вода під мостом = минуле), BURY THE HATCHET (закопати сокиру = помиритися). Підсумок: скарга (I'd like to complain), вибачення (I sincerely apologize), компенсація (to make up for), примирення (put behind us). В українській: 'Залишити це позаду', 'Хто старе згадає...'."
+      }
+    ]
+  },
+  {
+    "key": "describing_trends",
+    "name": "Describing Trends",
+    "description": "Опис тенденцій та змін",
+    "iconName": "chart.line.uptrend.xyaxis",
+    "color": "#0d9488",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ue_dt1",
+        "question": "Sales have _____ sharply over the past year.",
+        "translation": "(Продажі різко зросли за останній рік.)",
+        "options": [
+          "increased",
+          "increasing",
+          "increase",
+          "increases"
+        ],
+        "correct": "increased",
+        "explanation": "HAVE INCREASED (Present Perfect для тренду): 'Sales HAVE INCREASED sharply'. Present Perfect = тренд, що почався в минулому і актуальний зараз. Дієслова зростання: INCREASE, RISE, GROW, GO UP, SURGE, SOAR, ROCKET, SKYROCKET. Шкала: go up (нейтрально) < increase/rise (стандартно) < surge (різко) < soar/rocket (стрімко) < skyrocket (рекордно). В українській: 'Зросли', 'Збільшилися', 'Піднялися' — дієслова зростання без градації."
+      },
+      {
+        "id": "ue_dt2",
+        "question": "There has been a _____ decline in the number of visitors.",
+        "translation": "(Спостерігається поступове зменшення кількості відвідувачів.)",
+        "options": [
+          "gradual",
+          "sudden",
+          "quick",
+          "fast"
+        ],
+        "correct": "gradual",
+        "explanation": "A GRADUAL DECLINE (поступове зменшення): 'A GRADUAL DECLINE in visitors'. Прикметники швидкості зміни: GRADUAL/STEADY (поступово), MODERATE (помірно), RAPID/SHARP (швидко), SUDDEN/DRAMATIC (раптово). Дієслова зменшення: DECLINE, DECREASE, DROP, FALL, PLUNGE, PLUMMET. Шкала: go down < decrease/decline < drop/fall < plunge < plummet. В українській: 'Поступове зменшення', 'Різке падіння', 'Стрімке зниження' — прикметник + іменник."
+      },
+      {
+        "id": "ue_dt3",
+        "question": "The price of oil _____ by 20% last month.",
+        "translation": "(Ціна на нафту впала на 20% минулого місяця.)",
+        "options": [
+          "fell",
+          "has fallen",
+          "falls",
+          "falling"
+        ],
+        "correct": "fell",
+        "explanation": "FELL BY 20% (Past Simple для завершеного періоду): 'The price FELL BY 20% last month'. Past Simple = КОНКРЕТНИЙ завершений період (last month). Present Perfect = до ЗАРАЗ (has fallen this year). BY 20% = 'на 20%' — точна цифра. TO $50 = 'до $50' — кінцевий рівень. FROM $60 TO $50 = 'з $60 до $50' — діапазон. В українській: 'Впала на 20%', 'Знизилася до $50' — прийменники 'на' / 'до' = BY / TO."
+      },
+      {
+        "id": "ue_dt4",
+        "question": "The unemployment rate _____ remained stable since January.",
+        "translation": "(Рівень безробіття залишався стабільним з січня.)",
+        "options": [
+          "has",
+          "have",
+          "is",
+          "was"
+        ],
+        "correct": "has",
+        "explanation": "HAS REMAINED STABLE (стабільність): 'The rate HAS REMAINED stable since January'. Фрази стабільності: REMAIN STABLE/CONSTANT/UNCHANGED, LEVEL OFF (вирівнятися), PLATEAU (вийти на плато), STAY THE SAME, HOLD STEADY. 'Prices have levelled off', 'Growth has plateaued', 'The figures remain unchanged'. SINCE + point in time = Present Perfect. В українській: 'Залишався стабільним', 'Тримався на тому ж рівні', 'Вирівнявся' — дієслова стабільності."
+      },
+      {
+        "id": "ue_dt5",
+        "question": "The graph shows a _____ upward trend in the data.",
+        "translation": "(Графік показує чітку висхідну тенденцію в даних.)",
+        "options": [
+          "clear",
+          "foggy",
+          "dark",
+          "light"
+        ],
+        "correct": "clear",
+        "explanation": "A CLEAR UPWARD TREND (чітка висхідна тенденція): 'A CLEAR UPWARD TREND'. Напрямки тренду: UPWARD/RISING (висхідний), DOWNWARD/FALLING (низхідний), FLUCTUATING (коливний). Структури: 'The graph SHOWS a trend', 'There IS a trend', 'We can SEE/OBSERVE a trend'. CLEAR, MARKED, NOTICEABLE, DISTINCT = помітний тренд. SLIGHT, MARGINAL = незначний. В українській: 'Чітка висхідна тенденція', 'Помітний тренд зростання' — іменник + прикметники."
+      },
+      {
+        "id": "ue_dt6",
+        "question": "Prices _____ dramatically in the first quarter.",
+        "translation": "(Ціни різко коливалися в першому кварталі.)",
+        "options": [
+          "fluctuated",
+          "stabilized",
+          "remained",
+          "levelled"
+        ],
+        "correct": "fluctuated",
+        "explanation": "FLUCTUATE (коливатися): 'Prices FLUCTUATED dramatically'. FLUCTUATE = нестабільність, вгору-вниз. FLUCTUATION (іменник). 'The exchange rate has been fluctuating', 'There were significant fluctuations'. Ще: VARY (варіюватися), OSCILLATE (осцилювати — технічне), SWING (коливатися — розмовне). DRAMATICALLY = різко. SLIGHTLY = незначно. WILDLY = хаотично. В українській: 'Коливалися', 'Були нестабільними', 'Хиталися' — дієслова нестабільності."
+      },
+      {
+        "id": "ue_dt7",
+        "question": "The number of students _____ to rise over the next decade.",
+        "translation": "(Очікується, що кількість студентів зростатиме протягом наступного десятиліття.)",
+        "options": [
+          "is expected",
+          "expects",
+          "expected",
+          "expecting"
+        ],
+        "correct": "is expected",
+        "explanation": "IS EXPECTED TO (прогноз): 'The number IS EXPECTED TO rise'. Конструкції прогнозу: IS EXPECTED/PREDICTED/FORECAST/PROJECTED TO + V. 'Sales are projected to double', 'The population is forecast to reach 10 billion'. Ще: 'It is anticipated that...', 'According to projections...'. Passive voice тому, що хто саме очікує — неважливо. В українській: 'Очікується, що зросте', 'Прогнозується зростання' — безособові конструкції прогнозу."
+      },
+      {
+        "id": "ue_dt8",
+        "question": "There was a _____ increase in temperatures during July.",
+        "translation": "(Спостерігалося значне підвищення температури протягом липня.)",
+        "options": [
+          "significant",
+          "small",
+          "tiny",
+          "slight"
+        ],
+        "correct": "significant",
+        "explanation": "A SIGNIFICANT INCREASE (значне зростання): 'A SIGNIFICANT INCREASE in temperatures'. Прикметники масштабу зміни: SIGNIFICANT/CONSIDERABLE/SUBSTANTIAL (значний), MODERATE (помірний), SLIGHT/MARGINAL/MINOR (незначний), NEGLIGIBLE (мізерний). 'A considerable improvement', 'A marginal decline', 'A negligible change'. Вибір прикметника = ваша ОЦІНКА масштабу. В українській: 'Значне', 'Суттєве', 'Помірне', 'Незначне', 'Мізерне' — градація як в англійській."
+      },
+      {
+        "id": "ue_dt9",
+        "question": "The data suggests that the trend will _____ in the coming years.",
+        "translation": "(Дані свідчать, що тенденція збережеться в найближчі роки.)",
+        "options": [
+          "continue",
+          "stop",
+          "end",
+          "finish"
+        ],
+        "correct": "continue",
+        "explanation": "THE TREND WILL CONTINUE (продовження тренду): 'The trend will CONTINUE'. Фрази тривалості тренду: CONTINUE, PERSIST (тривати), CARRY ON (продовжувати — розмовне), BE SET TO CONTINUE (готовий тривати). 'This pattern is likely to persist', 'The upward trend looks set to continue'. Протилежне: REVERSE (розвернутися), 'The trend has reversed', 'There has been a reversal'. В українській: 'Збережеться', 'Триватиме', 'Продовжиться' — дієслова тривалості."
+      },
+      {
+        "id": "ue_dt10",
+        "question": "The company's profits _____ a peak in 2023.",
+        "translation": "(Прибутки компанії досягли піку в 2023 році.)",
+        "options": [
+          "reached",
+          "arrived",
+          "came",
+          "went"
+        ],
+        "correct": "reached",
+        "explanation": "REACH A PEAK (досягти піку): 'Profits REACHED A PEAK in 2023'. Ключові точки графіка: PEAK (пік, максимум), TROUGH (западина, мінімум), TURNING POINT (поворотний момент). 'Sales peaked in March' (дієслово), 'There was a peak in sales' (іменник). Протилежне: 'hit a low/trough', 'bottomed out' (досягти дна). В українській: 'Досягли піку', 'Досягли максимуму', 'Вийшли на пік' — колокації з 'пік/максимум'."
+      },
+      {
+        "id": "ue_dt11",
+        "question": "_____ the course of five years, the population doubled.",
+        "translation": "(Протягом п'яти років населення подвоїлося.)",
+        "options": [
+          "Over",
+          "At",
+          "In",
+          "On"
+        ],
+        "correct": "Over",
+        "explanation": "OVER THE COURSE OF (протягом): 'OVER THE COURSE OF five years'. Часові маркери трендів: OVER/DURING the period, BETWEEN 2020 AND 2025, FROM...TO, IN THE PERIOD, THROUGHOUT the decade. DOUBLE (подвоїтися), TRIPLE (потроїтися), QUADRUPLE (почетверитися), HALVE (зменшитися вдвічі). 'The value tripled over ten years'. В українській: 'Протягом', 'За п'ять років', 'Впродовж' — прийменники тривалості."
+      },
+      {
+        "id": "ue_dt12",
+        "question": "There was a _____ recovery in the housing market after the crisis.",
+        "translation": "(Після кризи спостерігалося повільне відновлення ринку нерухомості.)",
+        "options": [
+          "slow",
+          "fast",
+          "quick",
+          "swift"
+        ],
+        "correct": "slow",
+        "explanation": "A SLOW RECOVERY (повільне відновлення): 'A SLOW RECOVERY in the housing market'. Етапи економічного циклу: GROWTH (зростання), PEAK (пік), DECLINE/RECESSION (спад), TROUGH (дно), RECOVERY (відновлення), BOOM (бум). 'The economy is in recovery', 'A V-shaped recovery' (швидке), 'An L-shaped recovery' (повільне). В українській: 'Повільне відновлення', 'Стагнація', 'Рецесія', 'Бум' — багато запозичень з англійської."
+      },
+      {
+        "id": "ue_dt13",
+        "question": "Internet usage has grown _____ since the early 2000s.",
+        "translation": "(Використання Інтернету значно зросло з початку 2000-х.)",
+        "options": [
+          "enormously",
+          "slightly",
+          "barely",
+          "hardly"
+        ],
+        "correct": "enormously",
+        "explanation": "GROWN ENORMOUSLY (зросло значно): 'Usage has GROWN ENORMOUSLY'. Прислівники масштабу зміни: ENORMOUSLY/DRAMATICALLY/SIGNIFICANTLY (значно), MODERATELY (помірно), SLIGHTLY/MARGINALLY (незначно), STEADILY (стабільно), SHARPLY/STEEPLY (різко). 'Costs have risen dramatically', 'Demand has grown steadily', 'Profits fell sharply'. Прислівник обирається за МАСШТАБОМ зміни. В українській: 'Значно', 'Різко', 'Поступово', 'Незначно' — прислівники масштабу."
+      },
+      {
+        "id": "ue_dt14",
+        "question": "Compared _____ last year, exports have increased by 15%.",
+        "translation": "(Порівняно з минулим роком, експорт збільшився на 15%.)",
+        "options": [
+          "to",
+          "with",
+          "at",
+          "for"
+        ],
+        "correct": "to",
+        "explanation": "COMPARED TO / COMPARED WITH (порівняно з): 'COMPARED TO last year, exports increased'. COMPARED TO = COMPARED WITH (обидва правильні). Ще: IN COMPARISON WITH, RELATIVE TO, AS OPPOSED TO. 'Compared to 2020, sales are up 30%', 'In comparison with other countries, the rate is low'. BY 15% = НА 15% (зміна). TO — кінцевий рівень: 'Exports rose to $5 million'. В українській: 'Порівняно з', 'У порівнянні з', 'На відміну від' — порівняльні маркери."
+      },
+      {
+        "id": "ue_dt15",
+        "question": "The chart _____ that there is a strong correlation between education and income.",
+        "translation": "(Діаграма показує, що існує сильна кореляція між освітою та доходом.)",
+        "options": [
+          "illustrates",
+          "says",
+          "tells",
+          "speaks"
+        ],
+        "correct": "illustrates",
+        "explanation": "THE CHART ILLUSTRATES (діаграма ілюструє): 'The chart ILLUSTRATES that...' Дієслова для опису графіків: SHOW (показувати), ILLUSTRATE (ілюструвати), INDICATE (вказувати), REVEAL (виявляти), DEMONSTRATE (демонструвати), DEPICT (зображувати). НЕ 'says' або 'tells' (графіки не 'кажуть'). CORRELATION = кореляція (зв'язок). Підсумок: зростання (increase), спад (decline), стабільність (remain stable), коливання (fluctuate), пік (peak). В українській: 'Ілюструє', 'Демонструє', 'Показує' — дієслова візуалізації."
+      }
+    ]
+  },
+  {
+    "key": "describing_processes",
+    "name": "Describing Processes",
+    "description": "Опис процесів та процедур",
+    "iconName": "gearshape.2.fill",
+    "color": "#64748b",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ue_dp1",
+        "question": "The first _____ in the process is to gather all the necessary materials.",
+        "translation": "(Перший крок у процесі — зібрати всі необхідні матеріали.)",
+        "options": [
+          "step",
+          "walk",
+          "move",
+          "jump"
+        ],
+        "correct": "step",
+        "explanation": "THE FIRST STEP (перший крок): 'The first STEP in the process is to...'. Слова для етапів: STEP (крок), STAGE (етап), PHASE (фаза), LEVEL (рівень). STEP = конкретна дія. STAGE/PHASE = більший період. 'Step 1: Gather materials. Step 2: Prepare the workspace.' 'The project is in its final stage/phase'. В українській: 'Крок', 'Етап', 'Фаза', 'Стадія' — ідентична ієрархія. 'Перший крок' = конкретна дія."
+      },
+      {
+        "id": "ue_dp2",
+        "question": "_____, the ingredients are mixed together thoroughly.",
+        "translation": "(Спочатку інгредієнти ретельно змішуються.)",
+        "options": [
+          "First",
+          "After",
+          "Then",
+          "Finally"
+        ],
+        "correct": "First",
+        "explanation": "FIRST / FIRSTLY (на початку процесу): 'FIRST, the ingredients are mixed'. Маркери послідовності: FIRST(LY) (спочатку), THEN/NEXT (потім), AFTER THAT/SUBSEQUENTLY (після цього), FOLLOWING THIS (після цього — формальне), FINALLY/LASTLY (нарешті). Пасивний стан типовий для описів процесів: 'are mixed' (хто змішує — неважливо). В українській: 'Спочатку', 'Потім', 'Після цього', 'Нарешті' — маркери послідовності."
+      },
+      {
+        "id": "ue_dp3",
+        "question": "Once the mixture has cooled, it is _____ into moulds.",
+        "translation": "(Щойно суміш охолоне, її заливають у форми.)",
+        "options": [
+          "poured",
+          "threw",
+          "put",
+          "placed"
+        ],
+        "correct": "poured",
+        "explanation": "ONCE...IS POURED (часова послідовність): 'ONCE the mixture has cooled, it IS POURED'. ONCE = 'щойно, як тільки' — часовий з'єднувач для послідовних кроків. Ще: WHEN, AS SOON AS, AFTER, BEFORE. 'Once the paint is dry, apply a second coat', 'Before assembling, check all parts'. Passive voice: 'it is poured' (хто ллє — неважливо). В українській: 'Щойно охолоне', 'Як тільки', 'Після того, як' — часові сполучники."
+      },
+      {
+        "id": "ue_dp4",
+        "question": "The product _____ through several quality checks before packaging.",
+        "translation": "(Продукт проходить кілька перевірок якості перед пакуванням.)",
+        "options": [
+          "goes",
+          "goes to",
+          "goes for",
+          "goes at"
+        ],
+        "correct": "goes",
+        "explanation": "GOES THROUGH (проходити через): 'The product GOES THROUGH quality checks'. GO THROUGH = 'проходити (етапи, перевірки)'. Ще: UNDERGO (проходити — формально): 'The product undergoes testing'. PASS THROUGH (проходити через): 'Water passes through the filter'. 'Before packaging' = BEFORE + V-ING (не 'before to package'). В українській: 'Проходить через', 'Піддається' (формально), 'Зазнає' — дієслова проходження етапів."
+      },
+      {
+        "id": "ue_dp5",
+        "question": "The raw materials are then _____ to the factory by truck.",
+        "translation": "(Потім сировину доставляють на завод вантажівкою.)",
+        "options": [
+          "transported",
+          "carried",
+          "taken",
+          "moved"
+        ],
+        "correct": "transported",
+        "explanation": "ARE TRANSPORTED (доставляються): 'Materials are TRANSPORTED to the factory'. TRANSPORT = формальне 'доставляти'. В описах промислових процесів: TRANSPORT, CONVEY (конвеєром), TRANSFER (переносити), DELIVER (доставляти кінцевому). BY TRUCK/RAIL/AIR/SEA = 'вантажівкою/потягом/літаком/морем'. Passive voice домінує в технічних описах. В українській: 'Доставляються', 'Транспортуються', 'Перевозяться' — пасивні форми."
+      },
+      {
+        "id": "ue_dp6",
+        "question": "At this _____, the liquid is heated to 100 degrees Celsius.",
+        "translation": "(На цьому етапі рідину нагрівають до 100 градусів Цельсія.)",
+        "options": [
+          "stage",
+          "step",
+          "time",
+          "moment"
+        ],
+        "correct": "stage",
+        "explanation": "AT THIS STAGE (на цьому етапі): 'AT THIS STAGE, the liquid is heated'. STAGE = період/фаза процесу (ширше за STEP). AT THIS STAGE/POINT = маркер конкретного моменту в послідовності. 'At this point in the process...', 'During this stage...', 'At the final stage...'. HEAT TO = 'нагріти до' (температура). COOL TO = 'охолодити до'. В українській: 'На цьому етапі', 'На цій стадії', 'У цей момент' — маркери етапів."
+      },
+      {
+        "id": "ue_dp7",
+        "question": "The water is _____ through a series of filters to remove impurities.",
+        "translation": "(Воду пропускають через серію фільтрів для видалення домішок.)",
+        "options": [
+          "passed",
+          "past",
+          "passing",
+          "passes"
+        ],
+        "correct": "passed",
+        "explanation": "IS PASSED THROUGH (пропускається через): 'Water IS PASSED through filters'. PASS THROUGH = 'проходити/пропускати через'. В процесі очищення: FILTER (фільтрувати), PURIFY (очищувати), DISTIL (дистилювати), SEPARATE (розділяти). TO REMOVE IMPURITIES = 'для видалення домішок' — мета процесу. A SERIES OF = 'серія, ряд' + plural noun. В українській: 'Пропускається через', 'Фільтрується', 'Очищується' — пасивні дієприкметники."
+      },
+      {
+        "id": "ue_dp8",
+        "question": "_____ the process is complete, the final product is inspected.",
+        "translation": "(Після того, як процес завершено, кінцевий продукт перевіряється.)",
+        "options": [
+          "Once",
+          "While",
+          "During",
+          "Until"
+        ],
+        "correct": "Once",
+        "explanation": "ONCE THE PROCESS IS COMPLETE (після завершення): 'ONCE the process is COMPLETE, the product is inspected'. ONCE = 'щойно/після того як' — ідеальне для послідовності. IS COMPLETE / HAS BEEN COMPLETED — обидва правильні. INSPECT = 'перевіряти' (формально). CHECK = 'перевіряти' (нейтрально). EXAMINE = 'досліджувати' (формально). В українській: 'Після того, як процес завершено', 'Щойно процес завершиться' — часові зв'язки."
+      },
+      {
+        "id": "ue_dp9",
+        "question": "The _____ product is then packaged and shipped to retailers.",
+        "translation": "(Потім готовий продукт пакується та відправляється в магазини.)",
+        "options": [
+          "finished",
+          "finishing",
+          "finish",
+          "finishes"
+        ],
+        "correct": "finished",
+        "explanation": "FINISHED PRODUCT (готовий продукт): 'The FINISHED PRODUCT is packaged and shipped'. FINISHED = 'готовий, завершений' (прикметник від дієприкметника). Ще: FINAL PRODUCT, END PRODUCT. IS PACKAGED AND SHIPPED = два пасивних дієслова в ланцюжку (і пакується, і відправляється). TO RETAILERS = 'в магазини/роздрібну мережу'. В українській: 'Готовий продукт', 'Кінцевий продукт' — прикметник + іменник. 'Пакується та відправляється'."
+      },
+      {
+        "id": "ue_dp10",
+        "question": "This process _____ of three main stages.",
+        "translation": "(Цей процес складається з трьох основних етапів.)",
+        "options": [
+          "consists",
+          "includes",
+          "contains",
+          "has"
+        ],
+        "correct": "consists",
+        "explanation": "CONSISTS OF (складається з): 'This process CONSISTS OF three stages'. CONSIST OF = 'складатися з' (класичне для опису структури). Ще: COMPRISE (включати), BE MADE UP OF (складатися з — розмовніше), INVOLVE (включати/передбачати). 'The procedure involves several steps', 'The system is made up of three components'. В українській: 'Складається з', 'Включає', 'Передбачає' — дієслова структури. CONSIST не має пасивної форми."
+      },
+      {
+        "id": "ue_dp11",
+        "question": "_____ to this, the surface must be thoroughly cleaned.",
+        "translation": "(Перед цим поверхню потрібно ретельно очистити.)",
+        "options": [
+          "Prior",
+          "After",
+          "During",
+          "While"
+        ],
+        "correct": "Prior",
+        "explanation": "PRIOR TO (формальне 'перед'): 'PRIOR TO THIS, the surface must be cleaned'. PRIOR TO = формальне BEFORE. В інструкціях і технічних текстах: 'Prior to assembly, check all parts', 'Prior to use, read the manual'. Ще формальні: SUBSEQUENT TO (після), FOLLOWING / ENSUING (наступний). Шкала: BEFORE (нейтрально) < PRIOR TO (формально) < PRECEDING (дуже формально). В українській: 'Перед цим' (нейтрально), 'Попередньо' / 'До цього' (формально)."
+      },
+      {
+        "id": "ue_dp12",
+        "question": "The mixture is _____ stirred for approximately ten minutes.",
+        "translation": "(Суміш безперервно перемішують протягом приблизно десяти хвилин.)",
+        "options": [
+          "continuously",
+          "never",
+          "rarely",
+          "sometimes"
+        ],
+        "correct": "continuously",
+        "explanation": "CONTINUOUSLY (безперервно): 'The mixture IS CONTINUOUSLY STIRRED'. CONTINUOUSLY = 'безперервно' (без зупинки). CONTINUALLY = 'постійно' (з перервами). STIR = 'перемішувати'. APPROXIMATELY = 'приблизно' — типово для наукових описів (FOR APPROXIMATELY 10 MINUTES). Ще: FOR ABOUT, FOR ROUGHLY, FOR AROUND. Passive voice: 'is stirred' — хто мішає не важливо. В українській: 'Безперервно', 'Постійно', 'Протягом приблизно' — прислівники тривалості."
+      },
+      {
+        "id": "ue_dp13",
+        "question": "The next step _____ applying a thin coat of paint.",
+        "translation": "(Наступний крок — нанесення тонкого шару фарби.)",
+        "options": [
+          "involves",
+          "is involved",
+          "involving",
+          "involve"
+        ],
+        "correct": "involves",
+        "explanation": "THE NEXT STEP INVOLVES + V-ING (наступний крок передбачає): 'The next step INVOLVES applying paint'. INVOLVE + V-ING = 'передбачати, включати'. ❌ 'involves to apply' (помилка!). Ще структури: 'The next step IS TO apply...' (інфінітив), 'The next step IS applying...' (герундій), 'Next, apply a coat of paint' (наказовий — в інструкціях). В українській: 'Передбачає нанесення', 'Полягає в нанесенні' — герундій = віддієслівний іменник."
+      },
+      {
+        "id": "ue_dp14",
+        "question": "_____, the components are assembled by hand.",
+        "translation": "(Нарешті, компоненти збираються вручну.)",
+        "options": [
+          "Finally",
+          "First",
+          "Before",
+          "While"
+        ],
+        "correct": "Finally",
+        "explanation": "FINALLY (нарешті — кінцевий етап): 'FINALLY, the components are assembled'. FINALLY = LASTLY = IN THE END = AT THE END OF THE PROCESS. BY HAND = 'вручну' (не машиною). ASSEMBLE = 'збирати, монтувати'. Ще: MANUFACTURE (виробляти), CONSTRUCT (будувати), FABRICATE (виготовляти — промислове). В українській: 'Нарешті', 'На завершення', 'На останньому етапі' — маркери фіналу процесу."
+      },
+      {
+        "id": "ue_dp15",
+        "question": "The entire process takes _____ three to four weeks.",
+        "translation": "(Весь процес займає приблизно три-чотири тижні.)",
+        "options": [
+          "approximately",
+          "exactly",
+          "always",
+          "never"
+        ],
+        "correct": "approximately",
+        "explanation": "TAKES APPROXIMATELY (займає приблизно): 'The process TAKES APPROXIMATELY three weeks'. TAKE + time = 'займати час'. APPROXIMATELY / ROUGHLY / ABOUT / AROUND = 'приблизно'. 'The entire process takes about a month', 'Each stage lasts roughly two days'. LAST = 'тривати' (для етапів). Підсумок описів процесів: послідовність (first, then, finally), пасив (is mixed, is heated), часові зв'язки (once, prior to), тривалість (takes, lasts). В українській: 'Займає приблизно', 'Триває близько' — дієслова тривалості + прислівники наближення."
+      }
+    ]
   }
 ]

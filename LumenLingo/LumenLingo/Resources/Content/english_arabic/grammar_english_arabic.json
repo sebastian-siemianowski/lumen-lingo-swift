@@ -16263,5 +16263,955 @@
         "explanation": "حَقيبَتي (my suitcase/luggage) is nominative — subject (فاعل) of ضَاعَت (was lost/got lost, feminine past). The ي possessive suffix hides the case ending but the grammatical role is still nominative. في المَطَارِ (at the airport) is locative. ضَاعَ (to be lost) is intransitive. Lost luggage vocabulary: حَقيبَة (suitcase), أَمتِعَة (luggage, plural of مَتاع), مَكتَب الأَمتِعَةِ المَفقودَةِ (lost baggage office), بَطاقَة الأَمتِعَة (luggage tag). This is a critical travel emergency scenario to practice in Arabic."
       }
     ]
+  },
+  {
+    "key": "technology",
+    "name": "Technology (التكنولوجيا)",
+    "description": "Modern technology vocabulary and grammar structures in Arabic",
+    "iconName": "desktopcomputer",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ea_tk1",
+        "question": "أَحتاجُ إِلى _____ جَديدٍ لِلعَمَلِ (I need a new computer for work)",
+        "options": [
+          "حاسوبٍ",
+          "حاسوبٌ",
+          "حاسوبًا",
+          "الحاسوبِ"
+        ],
+        "correct": "حاسوبٍ",
+        "explanation": "حاسوبٍ (a computer) is genitive after إِلى. جَديدٍ (new) agrees in case (genitive), gender (masculine), and definiteness (indefinite). لِلعَمَلِ (for work) uses لِ + genitive. حاسوب comes from حَسَبَ (to calculate) — it literally means 'calculator.' Arabic technology terms often derive from classical roots: حاسوب (computer), طابِعَة (printer, from طَبَعَ to print), شاشَة (screen). Some regions prefer كُمبيوتر (borrowed from English)."
+      },
+      {
+        "id": "ea_tk2",
+        "question": "هَل يُمكِنُكَ _____ هَذا المَلَفَّ؟ (Can you download this file?)",
+        "options": [
+          "تَحميلُ",
+          "تَحميلَ",
+          "تَحميلٍ",
+          "يُحَمِّلُ"
+        ],
+        "correct": "تَحميلُ",
+        "explanation": "تَحميلُ (downloading) is a masdar (Form II of حَمَّلَ) functioning as the فاعل of يُمكِنُ (is possible). المَلَفّ (the file) is a passive participle from لَفَّ (to wrap/fold), used metaphorically for digital files. Arabic internet terminology blends native and borrowed words: تَحميل (download), رَفع (upload — literally 'lifting'), حَذف (delete — literally 'erasing'), نَسخ (copy — literally 'copying/transcribing'). يُمكِنُكَ + masdar is a polite ability expression."
+      },
+      {
+        "id": "ea_tk3",
+        "question": "الإِنتِرنِت _____ في بَعضِ المَناطِقِ (The internet is slow in some areas)",
+        "options": [
+          "بَطيءٌ",
+          "بَطيئًا",
+          "بَطيءٍ",
+          "البَطيءُ"
+        ],
+        "correct": "بَطيءٌ",
+        "explanation": "بَطيءٌ (slow) is the خبر in nominative. الإِنتِرنِت (the internet) is a borrowed word treated as masculine in Arabic. في بَعضِ المَناطِقِ (in some areas) — بَعض (some) is مُضاف, المَناطِق (areas/regions, broken plural of مِنطَقَة) is مُضاف إليه. Internet speed adjectives: بَطيء (slow), سَريع (fast), مُستَقِرّ (stable), مُنقَطِع (disconnected). Arabic handles borrowed tech terms by adding Arabic morphology: إِنتِرنِت gets ال for definiteness."
+      },
+      {
+        "id": "ea_tk4",
+        "question": "أَرسَلتُ _____ إِلكترونِيًّا إِلى المُديرِ (I sent an email to the manager)",
+        "options": [
+          "بَريدًا",
+          "بَريدٌ",
+          "بَريدٍ",
+          "البَريدَ"
+        ],
+        "correct": "بَريدًا",
+        "explanation": "بَريدًا (mail/email) is accusative — direct object of أَرسَلتُ (I sent). إِلكترونِيًّا (electronic) is a nisba adjective with borrowed root, agreeing in accusative. إِلى المُديرِ (to the manager) — المُدير is an active participle from أَدارَ (Form IV: to manage). Communication technology vocabulary: بَريد إِلكترونيّ (email), رِسالَة نَصِّيَّة (text message), مُكالَمَة مَرئِيَّة (video call), رِسالَة صَوتِيَّة (voice message). Arabic adapts foreign adjectives with nisba suffix."
+      },
+      {
+        "id": "ea_tk5",
+        "question": "يَجِبُ أَن تُحَدِّثَ _____ بِانتِظامٍ (You must update the software regularly)",
+        "options": [
+          "البَرنامَجَ",
+          "البَرنامَجُ",
+          "البَرنامَجِ",
+          "بَرنامَجًا"
+        ],
+        "correct": "البَرنامَجَ",
+        "explanation": "البَرنامَجَ (the program/software) is accusative — direct object of تُحَدِّثَ (update, Form II subjunctive after أَن). تُحَدِّثَ comes from حَدَّثَ (to make new/update). بِانتِظامٍ (regularly) uses بِ + masdar. بَرنامَج is originally from Persian (بَرنامه) and forms a rare broken plural: بَرامِج (programs). Software terms: تَطبيق (app/application), نِظام تَشغيل (operating system), تَحديث (update), مُتَصَفِّح (browser — from تَصَفَّحَ Form V: to browse)."
+      },
+      {
+        "id": "ea_tk6",
+        "question": "نَسيتُ _____ الخَاصَّةَ بِحِسابي (I forgot the password for my account)",
+        "options": [
+          "كَلِمَةَ المُرورِ",
+          "كَلِمَةُ المُرورِ",
+          "كَلِمَةِ المُرورِ",
+          "كَلِمَةً"
+        ],
+        "correct": "كَلِمَةَ المُرورِ",
+        "explanation": "كَلِمَةَ المُرورِ (the password — literally 'word of passage') is accusative as the direct object of نَسيتُ (I forgot). It's an idāfa: كَلِمَة (word, accusative) + المُرور (passage, genitive). الخَاصَّة (the specific/private) is an adjective modifying كَلِمَة and also accusative. بِحِسابي (for my account) — حِساب (account) with possessive ي. Security vocabulary: كَلِمَة مُرور (password), اِسم مُستَخدِم (username), تَوثيق (authentication), حِماية (protection)."
+      },
+      {
+        "id": "ea_tk7",
+        "question": "_____ الذَّكِيَّةُ غَيَّرَت حَياتَنا (Smartphones changed our lives)",
+        "options": [
+          "الهَواتِفُ",
+          "الهَواتِفَ",
+          "الهَواتِفِ",
+          "هَواتِفٌ"
+        ],
+        "correct": "الهَواتِفُ",
+        "explanation": "الهَواتِفُ (the phones) is nominative as the مُبتدأ. الذَّكِيَّةُ (smart, feminine singular) agrees with الهَواتِف — non-human broken plurals take feminine singular adjective agreement. غَيَّرَت (changed, Form II feminine past) also uses feminine singular for the same reason. حَياتَنا (our lives) is accusative direct object with possessive نا (our). هَواتِف is the broken plural of هاتِف (telephone — literally 'caller,' active participle from هَتَفَ to call out)."
+      },
+      {
+        "id": "ea_tk8",
+        "question": "تَمَّ _____ التَّطبيقِ بِنَجاحٍ (The app was installed successfully)",
+        "options": [
+          "تَثبيتُ",
+          "تَثبيتَ",
+          "تَثبيتِ",
+          "تَثبيتٌ"
+        ],
+        "correct": "تَثبيتُ",
+        "explanation": "تَثبيتُ (installation) is nominative — it's the فاعل of تَمَّ (was completed). تَمَّ + masdar is a passive-like construction meaning 'X was done.' التَّطبيقِ (the app) is genitive as مُضاف إليه. بِنَجاحٍ (successfully) uses بِ + masdar. تَثبيت is the masdar of Form II ثَبَّتَ (to install/fix), from ثَبَتَ (to be firm). App-related masdars: تَحميل (downloading), تَثبيت (installation), تَحديث (updating), حَذف (deletion). تَمَّ + masdar is extremely common in formal Arabic tech writing."
+      },
+      {
+        "id": "ea_tk9",
+        "question": "لا أَستَطيعُ _____ إِلى شَبَكَةِ الوَايفاي (I cannot connect to the WiFi network)",
+        "options": [
+          "الاِتِّصالَ",
+          "الاِتِّصالُ",
+          "الاِتِّصالِ",
+          "اِتِّصالًا"
+        ],
+        "correct": "الاِتِّصالَ",
+        "explanation": "الاِتِّصالَ (the connection/connecting) is accusative — direct object of أَستَطيعُ (I can). اِتِّصال is the masdar of Form VIII اِتَّصَلَ (to connect). شَبَكَةِ (network) is genitive as مُضاف إليه after إِلى. الوَايفاي is a borrowed term. لا + present indicative = simple negation. Network vocabulary: شَبَكَة (network), إِشارَة (signal), اِتِّصال (connection), مَوجِّه (router — active participle of Form II وَجَّهَ to direct). Notice how شَبَكَة (net/web) comes from classical Arabic."
+      },
+      {
+        "id": "ea_tk10",
+        "question": "حَمَّلتُ _____ جَديدًا عَلى هاتِفي (I downloaded a new app on my phone)",
+        "options": [
+          "تَطبيقًا",
+          "تَطبيقٌ",
+          "تَطبيقٍ",
+          "التَّطبيقَ"
+        ],
+        "correct": "تَطبيقًا",
+        "explanation": "تَطبيقًا (an application) is accusative — direct object of حَمَّلتُ (I downloaded, Form II). جَديدًا (new) agrees in accusative. عَلى هاتِفي (on my phone) — هاتِف with possessive ي. تَطبيق is the masdar of Form II طَبَّقَ (to apply), repurposed for 'app' in modern Arabic. حَمَّلَ (Form II: to load/download) vs حَمَلَ (Form I: to carry) — the intensive doubles the middle radical. App store vocabulary: تَطبيق مَجَّانيّ (free app), تَطبيق مَدفوع (paid app), تَقييم (rating)."
+      },
+      {
+        "id": "ea_tk11",
+        "question": "يُمكِنُكَ حِفظُ _____ عَلى السَّحابَةِ (You can save the data on the cloud)",
+        "options": [
+          "البَياناتِ",
+          "البَياناتُ",
+          "البَياناتَ",
+          "بَياناتٍ"
+        ],
+        "correct": "البَياناتِ",
+        "explanation": "البَياناتِ (the data) is genitive — مُضاف إليه of حِفظ (saving). البَيانات is a sound feminine plural of بَيان (statement/datum), taking kasra in genitive. عَلى السَّحابَةِ (on the cloud) — سَحابَة means 'cloud' literally, now also used for cloud computing. حِفظ (saving/preserving) is the masdar of حَفِظَ (to save/memorize). Data vocabulary: بَيانات (data), مِلَفّ (file), مُجَلَّد (folder), نُسخَة اِحتِياطِيَّة (backup). Arabic elegantly repurposed سَحابَة for cloud technology."
+      },
+      {
+        "id": "ea_tk12",
+        "question": "الطَّابِعَةُ لا _____ بِشَكلٍ صَحيحٍ (The printer is not working properly)",
+        "options": [
+          "تَعمَلُ",
+          "يَعمَلُ",
+          "عَمِلَت",
+          "تَعمَلينَ"
+        ],
+        "correct": "تَعمَلُ",
+        "explanation": "تَعمَلُ (it/she works) uses the feminine prefix تَ- to match الطَّابِعَة (the printer, feminine). لا + present indicative = simple negation of current state. بِشَكلٍ صَحيحٍ (in a correct manner — properly) uses بِ + noun + adjective for adverbial meaning. الطَّابِعَة (printer) is an active participle of طَبَعَ (to print/stamp) with ة for instrument/machine nouns. Tech troubleshooting: لا تَعمَلُ (not working), مُعَطَّلَة (broken/out of order), بَطيئَة (slow), تَحتاجُ إِصلاحًا (needs repair)."
+      },
+      {
+        "id": "ea_tk13",
+        "question": "شَحنُ _____ يَستَغرِقُ ساعَتَينِ (Charging the battery takes two hours)",
+        "options": [
+          "البَطَّارِيَّةِ",
+          "البَطَّارِيَّةُ",
+          "البَطَّارِيَّةَ",
+          "بَطَّارِيَّةٍ"
+        ],
+        "correct": "البَطَّارِيَّةِ",
+        "explanation": "البَطَّارِيَّةِ (the battery) is genitive as مُضاف إليه of شَحن (charging). شَحن is the masdar of شَحَنَ (to charge/load). يَستَغرِقُ (takes/requires — Form X) from غَرِقَ (to drown/sink). ساعَتَينِ (two hours) is accusative dual — the ين- ending for dual accusative/genitive. Battery vocabulary: شَحن (charging), بَطَّارِيَّة (battery — borrowed), شَاحِن (charger — active participle), مُنخَفِضَة (low). Time duration with يَستَغرِقُ is standard for tech contexts."
+      },
+      {
+        "id": "ea_tk14",
+        "question": "يَجِبُ _____ الجِهازَ قَبلَ الاِستِخدامِ (You must restart the device before use)",
+        "options": [
+          "إِعادَةُ تَشغيلِ",
+          "إِعادَةَ تَشغيلِ",
+          "إِعادَةِ تَشغيلِ",
+          "إِعادَةٌ"
+        ],
+        "correct": "إِعادَةُ تَشغيلِ",
+        "explanation": "إِعادَةُ (restarting — literally 're-doing') is nominative as the فاعل of يَجِبُ (must). تَشغيلِ (operating) is genitive in an idāfa chain with إِعادَة. الجِهازَ (the device) is accusative — direct object of the implied action. قَبلَ الاِستِخدامِ (before use) is temporal. إِعادَة (re-doing) is the masdar of Form IV أَعادَ (to redo). تَشغيل (operating) is the masdar of Form II شَغَّلَ (to operate). Device verbs: تَشغيل (turning on), إِيقاف (turning off), إِعادَة تَشغيل (restart)."
+      },
+      {
+        "id": "ea_tk15",
+        "question": "اِستَخدِمْ _____ لِحِمايَةِ بَياناتِكَ (Use encryption to protect your data)",
+        "options": [
+          "التَّشفيرَ",
+          "التَّشفيرُ",
+          "التَّشفيرِ",
+          "تَشفيرًا"
+        ],
+        "correct": "التَّشفيرَ",
+        "explanation": "التَّشفيرَ (the encryption) is accusative — direct object of the imperative اِستَخدِمْ (use! Form X). تَشفير is the masdar of Form II شَفَّرَ (to encrypt/encode), from شِفرَة (code/cipher). لِحِمايَةِ (for protecting) uses لِ + masdar. بَياناتِكَ (your data) is مُضاف إليه. Cybersecurity vocabulary: تَشفير (encryption), قِرصَنَة (hacking — from قُرصان pirate), فَيروس (virus — borrowed), جِدار ناريّ (firewall — literally 'fire wall'). Arabic creates elegant tech terms from classical roots."
+      }
+    ]
+  },
+  {
+    "key": "education_learning",
+    "name": "Education & Learning (التعليم والتعلم)",
+    "description": "Academic and educational vocabulary with Arabic grammar structures",
+    "iconName": "graduationcap.fill",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ea_ed1",
+        "question": "يَدرُسُ _____ في الجَامِعَةِ (He studies medicine at the university)",
+        "options": [
+          "الطِّبَّ",
+          "الطِّبُّ",
+          "الطِّبِّ",
+          "طِبًّا"
+        ],
+        "correct": "الطِّبَّ",
+        "explanation": "الطِّبَّ (medicine) is accusative — direct object of يَدرُسُ (he studies). في الجَامِعَةِ (at the university) — الجَامِعَة (university) is an active participle-turned-noun from جَمَعَ (to gather), originally meaning 'the comprehensive/gathering [institution].' Academic subjects: الطِّبّ (medicine), الهَندَسَة (engineering), الحُقوق (law), الأَدَب (literature), العُلوم (sciences), الاقتِصاد (economics). Arabic uses the definite article with academic subjects when studying them generally: يَدرُسُ الطِّبَّ."
+      },
+      {
+        "id": "ea_ed2",
+        "question": "المُعَلِّمَةُ _____ الدَّرسَ لِلطُّلَّابِ (The teacher explains the lesson to the students)",
+        "options": [
+          "تَشرَحُ",
+          "يَشرَحُ",
+          "شَرَحَت",
+          "تَشرَحينَ"
+        ],
+        "correct": "تَشرَحُ",
+        "explanation": "تَشرَحُ (she explains) uses the feminine prefix تَ- to agree with المُعَلِّمَة (female teacher). الدَّرسَ (the lesson) is accusative direct object. لِلطُّلَّابِ (for/to the students) — الطُّلَّاب is the broken plural of طَالِب (student, active participle of طَلَبَ to seek). Education verbs: شَرَحَ (explained), عَلَّمَ (taught), دَرَسَ (studied), فَهِمَ (understood), حَفِظَ (memorized), اِمتَحَنَ (tested). SVO word order here requires full gender agreement on the verb."
+      },
+      {
+        "id": "ea_ed3",
+        "question": "نَجَحَ الطَّالِبُ في _____ النِّهائِيِّ (The student passed the final exam)",
+        "options": [
+          "الاِمتِحانِ",
+          "الاِمتِحانُ",
+          "الاِمتِحانَ",
+          "اِمتِحانٍ"
+        ],
+        "correct": "الاِمتِحانِ",
+        "explanation": "الاِمتِحانِ (the exam) is genitive after في. نَجَحَ في (passed/succeeded in) requires في + genitive — unlike English, Arabic doesn't directly transitize 'pass.' النِّهائِيِّ (final) is a nisba adjective agreeing in genitive, definite, masculine. اِمتِحان is the masdar of Form VIII اِمتَحَنَ (to test/examine). Exam vocabulary: اِمتِحان (exam), اِختِبار (test), نَتيجَة (result), عَلامَة/دَرَجَة (mark/grade), رُسوب (failure). نَجَحَ في is the standard Arabic expression for academic success."
+      },
+      {
+        "id": "ea_ed4",
+        "question": "يَجِبُ أَن تَقرَأَ _____ قَبلَ المُحاضَرَةِ (You must read the book before the lecture)",
+        "options": [
+          "الكِتابَ",
+          "الكِتابُ",
+          "الكِتابِ",
+          "كِتابًا"
+        ],
+        "correct": "الكِتابَ",
+        "explanation": "الكِتابَ (the book) is accusative — direct object of تَقرَأَ (read, subjunctive after أَن). قَبلَ المُحاضَرَةِ (before the lecture) — قَبلَ is a ظرف زمان (accusative), المُحاضَرَة (lecture) is genitive as مُضاف إليه. المُحاضَرَة is the masdar مكان/زمان of Form III حاضَرَ (to lecture). Learning materials: كِتاب (book), دَفتَر (notebook), قَلَم (pen), مَرجِع (reference), مُذَكِّرَة (notes/handout). يَجِبُ أَن + subjunctive is the standard obligation expression."
+      },
+      {
+        "id": "ea_ed5",
+        "question": "حَصَلَت عَلى _____ في الرِّياضِيَّاتِ (She got an excellent grade in mathematics)",
+        "options": [
+          "دَرَجَةٍ مُمتازَةٍ",
+          "دَرَجَةٌ مُمتازَةٌ",
+          "دَرَجَةً مُمتازَةً",
+          "الدَّرَجَةِ"
+        ],
+        "correct": "دَرَجَةٍ مُمتازَةٍ",
+        "explanation": "دَرَجَةٍ مُمتازَةٍ (an excellent grade) is genitive after عَلى. حَصَلَت عَلى (she obtained — Form I with عَلى for acquiring) is the standard expression for getting grades/awards. في الرِّياضِيَّاتِ (in mathematics) — الرِّياضِيَّات is a sound feminine plural with nisba from رِياضَة (exercise/discipline). School subjects: رِياضِيَّات (math), عُلوم (science), تَاريخ (history), جُغرافيا (geography), فِيزياء (physics), كيمياء (chemistry). Both noun and adjective are genitive and indefinite."
+      },
+      {
+        "id": "ea_ed6",
+        "question": "_____ يَبدَأُ في الساعَةِ الثَّامِنَةِ (The class starts at eight o'clock)",
+        "options": [
+          "الصَّفُّ",
+          "الصَّفَّ",
+          "الصَّفِّ",
+          "صَفٌّ"
+        ],
+        "correct": "الصَّفُّ",
+        "explanation": "الصَّفُّ (the class/row) is nominative as the مُبتدأ. يَبدَأُ (it starts) is masculine present tense — verbal خبر. في الساعَةِ الثَّامِنَةِ (at eight o'clock — literally 'in the eighth hour') — الثَّامِنَة is an ordinal number adjective agreeing with ساعَة in feminine, definite, genitive. School schedule vocabulary: صَفّ/حِصَّة (class/period), اِستِراحَة (break), جَدوَل (schedule), فَصل دِراسِيّ (semester). Time with الساعَة + ordinal is the standard Arabic clock expression."
+      },
+      {
+        "id": "ea_ed7",
+        "question": "سَلَّمتُ _____ إِلى الأُستاذِ (I submitted the assignment to the professor)",
+        "options": [
+          "الوَاجِبَ",
+          "الوَاجِبُ",
+          "الوَاجِبِ",
+          "واجِبًا"
+        ],
+        "correct": "الوَاجِبَ",
+        "explanation": "الوَاجِبَ (the assignment/homework) is accusative — direct object of سَلَّمتُ (I submitted/handed in, Form II). إِلى الأُستاذِ (to the professor) — أُستاذ is borrowed from Persian. سَلَّمَ (Form II: to hand over/deliver) from سَلِمَ (to be safe). الوَاجِب is an active participle meaning 'what is obligatory,' repurposed for homework/assignment. Submission vocabulary: سَلَّمَ (submitted), قَدَّمَ (presented), أَرسَلَ (sent), أَنجَزَ (completed). The professor can be أُستاذ/أُستاذَة (m/f) or دُكتور/دُكتورَة."
+      },
+      {
+        "id": "ea_ed8",
+        "question": "المَكتَبَةُ _____ كُتُبًا كَثيرَةً (The library contains many books)",
+        "options": [
+          "تَضُمُّ",
+          "يَضُمُّ",
+          "ضَمَّت",
+          "تَضُمُّونَ"
+        ],
+        "correct": "تَضُمُّ",
+        "explanation": "تَضُمُّ (it contains, feminine) — feminine prefix تَ- matches المَكتَبَة (the library, feminine). كُتُبًا (books, accusative) is the broken plural of كِتَاب, serving as direct object. كَثيرَةً (many, feminine accusative) agrees with كُتُب — non-human plurals take feminine singular. المَكتَبَة (library) is a place noun from كَتَبَ (to write), pattern مَفعَلَة for places. Library vocabulary: مَرجِع (reference), رَفّ (shelf), فِهرِس (catalog/index), إِعارَة (borrowing), قَاعَة مُطالَعَة (reading room)."
+      },
+      {
+        "id": "ea_ed9",
+        "question": "تَخَرَّجَ مِنَ _____ بِتَفَوُّقٍ (He graduated from the university with distinction)",
+        "options": [
+          "الجَامِعَةِ",
+          "الجَامِعَةُ",
+          "الجَامِعَةَ",
+          "جَامِعَةٍ"
+        ],
+        "correct": "الجَامِعَةِ",
+        "explanation": "الجَامِعَةِ (the university) is genitive after مِن. تَخَرَّجَ مِن (graduated from, Form V) — تَخَرَّجَ is reflexive of خَرَّجَ (Form II: to graduate someone). بِتَفَوُّقٍ (with distinction) — تَفَوُّق is the masdar of Form V تَفَوَّقَ (to excel). Education milestones: تَخَرَّجَ (graduated), اِلتَحَقَ بِ (enrolled in), حَصَلَ عَلى شَهادَة (obtained a degree), أَكمَلَ (completed). Degrees: بَكالوريوس (bachelor's), ماجِستير (master's), دُكتوراه (doctorate)."
+      },
+      {
+        "id": "ea_ed10",
+        "question": "سَأُقَدِّمُ _____ أَمامَ الصَّفِّ غَدًا (I will give a presentation in front of the class tomorrow)",
+        "options": [
+          "عَرضًا",
+          "عَرضٌ",
+          "عَرضٍ",
+          "العَرضَ"
+        ],
+        "correct": "عَرضًا",
+        "explanation": "عَرضًا (a presentation) is accusative — direct object of سَأُقَدِّمُ (I will present, Form II with future سَ-). أَمامَ (in front of) is a ظرف مكان in accusative. الصَّفِّ (the class) is genitive as مُضاف إليه. غَدًا (tomorrow) is adverbial accusative. عَرض (presentation/showing) is the masdar of عَرَضَ (to present/display). Presentation vocabulary: عَرض تَقديمِيّ (presentation), شَريحَة (slide), نِقاش (discussion), سُؤال (question), إِجابَة (answer). أَمامَ + genitive for 'in front of.'"
+      },
+      {
+        "id": "ea_ed11",
+        "question": "الطُّلَّابُ _____ لِلاِمتِحانِ بِجِدٍّ (The students are studying hard for the exam)",
+        "options": [
+          "يَستَعِدُّونَ",
+          "يَستَعِدُّ",
+          "اِستَعَدُّوا",
+          "تَستَعِدُّ"
+        ],
+        "correct": "يَستَعِدُّونَ",
+        "explanation": "يَستَعِدُّونَ (they are preparing, masculine plural) — Form X اِستَعَدَّ (to prepare oneself) from عَدَّ (to count/prepare). Since الطُّلَّاب is a human plural, the verb takes full masculine plural agreement (unlike non-human plurals). لِلاِمتِحانِ (for the exam) uses لِ + genitive. بِجِدٍّ (with seriousness/hard) — جِدّ means earnestness. Study verbs: اِستَعَدَّ (prepared), ذَاكَرَ (reviewed/studied, Form III), رَاجَعَ (revised, Form III), حَفِظَ (memorized), فَهِمَ (understood)."
+      },
+      {
+        "id": "ea_ed12",
+        "question": "حَصَلَ عَلى _____ في الأَدَبِ العَرَبيِّ (He obtained a master's degree in Arabic literature)",
+        "options": [
+          "المَاجِستيرِ",
+          "المَاجِستيرُ",
+          "المَاجِستيرَ",
+          "ماجِستيرٍ"
+        ],
+        "correct": "المَاجِستيرِ",
+        "explanation": "المَاجِستيرِ (the master's degree) is genitive after عَلى. حَصَلَ عَلى (obtained — Form I with عَلى) is standard for academic achievements. في الأَدَبِ العَرَبيِّ (in Arabic literature) — الأَدَب (literature) is genitive after في, العَرَبيّ (Arabic, nisba adjective) agrees. المَاجِستير is borrowed from Latin 'magister.' Arabic academic degrees mix Arabic and borrowed terms: بَكالوريوس (bachelor's — Latin), ماجِستير (master's), دُكتوراه (doctorate — Latin), دِبلوم (diploma — Greek)."
+      },
+      {
+        "id": "ea_ed13",
+        "question": "تَتَكَوَّنُ المَادَّةُ الدِّراسِيَّةُ مِن عَشَرَةِ _____ (The course material consists of ten chapters)",
+        "options": [
+          "فُصولٍ",
+          "فُصولٌ",
+          "فُصولًا",
+          "الفُصولِ"
+        ],
+        "correct": "فُصولٍ",
+        "explanation": "فُصولٍ (chapters) is genitive plural — the تَمييز (specification) for the number عَشَرَة, which requires genitive plural for numbers 3-10. تَتَكَوَّنُ مِن (consists of, Form V) — feminine verb matches المَادَّة (the subject/material, feminine). الدِّراسِيَّة (academic, nisba from دِراسَة) is an adjective. فُصول is the broken plural of فَصل (chapter/semester/season). Number rule: 3-10 + genitive plural with gender polarity. Arabic textbook structure: فَصل (chapter), وَحدَة (unit), دَرس (lesson), صَفحَة (page)."
+      },
+      {
+        "id": "ea_ed14",
+        "question": "المُعَلِّمُ يُشَجِّعُ _____ عَلى المُشارَكَةِ (The teacher encourages the students to participate)",
+        "options": [
+          "الطُّلَّابَ",
+          "الطُّلَّابُ",
+          "الطُّلَّابِ",
+          "طُلَّابًا"
+        ],
+        "correct": "الطُّلَّابَ",
+        "explanation": "الطُّلَّابَ (the students) is accusative — direct object of يُشَجِّعُ (he encourages, Form II). عَلى المُشارَكَةِ (to participate/on participation) — المُشارَكَة is the masdar of Form III شارَكَ (to participate). يُشَجِّعُ (Form II: to encourage) from شَجَّعَ, derived from شُجاع (brave). Teaching methodology verbs: شَجَّعَ (encouraged), حَفَّزَ (motivated), أَرشَدَ (guided), ساعَدَ (helped), وَجَّهَ (directed). Positive education vocabulary reflects modern pedagogical approaches."
+      },
+      {
+        "id": "ea_ed15",
+        "question": "سَجَّلتُ في _____ لِتَعَلُّمِ البَرمَجَةِ (I enrolled in a course to learn programming)",
+        "options": [
+          "دَورَةٍ",
+          "دَورَةٌ",
+          "دَورَةً",
+          "الدَّورَةِ"
+        ],
+        "correct": "دَورَةٍ",
+        "explanation": "دَورَةٍ (a course) is genitive after في. سَجَّلَ في (enrolled/registered in, Form II) — from سِجِلّ (record/register). لِتَعَلُّمِ (for learning) uses لِ + masdar of Form V تَعَلَّمَ (to learn). البَرمَجَةِ (programming) is genitive as مُضاف إليه. Course types: دَورَة تَدريبِيَّة (training course), دَورَة مُكَثَّفَة (intensive course), دَورَة عَبرَ الإِنتِرنِت (online course), وَرشَة عَمَل (workshop). Modern education vocabulary is critical for professional Arabic."
+      }
+    ]
+  },
+  {
+    "key": "work_office",
+    "name": "Work & Office (العمل والمكتب)",
+    "description": "Professional workplace vocabulary and formal Arabic structures",
+    "iconName": "building.2.fill",
+    "color": "#64748b",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ea_wk1",
+        "question": "عِندي _____ مَعَ المُديرِ في الثالِثَةِ (I have a meeting with the manager at three)",
+        "options": [
+          "اِجتِماعٌ",
+          "اِجتِماعًا",
+          "اِجتِماعٍ",
+          "الاِجتِماعُ"
+        ],
+        "correct": "اِجتِماعٌ",
+        "explanation": "اِجتِماعٌ (a meeting) is the مُبتدأ مُؤَخَّر (delayed subject) in nominative — عِندي (I have) is the fronted خبر. مَعَ المُديرِ (with the manager) — المُدير is genitive after مَعَ. في الثالِثَةِ (at three) — ordinal with definite article for time. اِجتِماع is the masdar of Form VIII اِجتَمَعَ (to gather/meet). Business meeting vocabulary: اِجتِماع (meeting), مُؤتَمَر (conference), نِقاش (discussion), جَدوَل أَعمال (agenda — literally 'work schedule'). عِندي + noun is the 'have' construction."
+      },
+      {
+        "id": "ea_wk2",
+        "question": "قَدَّمتُ _____ لِلحُصولِ عَلى الوَظيفَةِ (I submitted a resume to get the job)",
+        "options": [
+          "سيرَةً ذاتِيَّةً",
+          "سيرَةٌ ذاتِيَّةٌ",
+          "سيرَةِ ذاتِيَّةٍ",
+          "السِّيرَةَ"
+        ],
+        "correct": "سيرَةً ذاتِيَّةً",
+        "explanation": "سيرَةً ذاتِيَّةً (a CV/resume — literally 'self-biography') is accusative — direct object of قَدَّمتُ (I submitted, Form II). ذاتِيَّة (personal/self, nisba from ذات 'self') is an adjective agreeing in accusative, feminine, indefinite. لِلحُصولِ (for obtaining) — حُصول is masdar of حَصَلَ. عَلى الوَظيفَةِ (on the job) — وَظيفَة means job/function. Job application vocabulary: سيرَة ذاتِيَّة (CV), طَلَب تَوظيف (job application), مُقابَلَة (interview), خِبرَة (experience)."
+      },
+      {
+        "id": "ea_wk3",
+        "question": "المُديرُ _____ بِالمُوَظَّفينَ لِأَدائِهِم المُمتَازِ (The manager praised the employees for their excellent performance)",
+        "options": [
+          "أَشادَ",
+          "أَشادوا",
+          "يُشيدُ",
+          "أَشادَت"
+        ],
+        "correct": "أَشادَ",
+        "explanation": "أَشادَ (he praised, Form IV) — the masculine verb agrees with المُديرُ (the manager). أَشادَ بِ (praised — literally 'raised/elevated with') takes بِ + the person praised. بِالمُوَظَّفينَ (the employees) is genitive after بِ — sound masculine plural with ين-. لِأَدائِهِم (for their performance) — أَداء (performance, masdar of أَدَّى Form II) with هِم possessive. المُمتَازِ (excellent) agrees in genitive. Form IV أَفعَلَ verbs for praise: أَشادَ بِ (praised), أَثنَى عَلى (commended), أَعجَبَ بِ (admired)."
+      },
+      {
+        "id": "ea_wk4",
+        "question": "يَبدَأُ _____ الرَّسمِيُّ في الثَّامِنَةِ صَباحًا (Official work starts at eight in the morning)",
+        "options": [
+          "الدَّوامُ",
+          "الدَّوامَ",
+          "الدَّوامِ",
+          "دَوامٌ"
+        ],
+        "correct": "الدَّوامُ",
+        "explanation": "الدَّوامُ (the work shift/duty) is the فاعل in nominative after يَبدَأُ. الرَّسمِيُّ (official) is an adjective agreeing in nominative, definite, masculine. في الثَّامِنَةِ (at eight) uses ordinal for clock time. صَباحًا (in the morning) is adverbial accusative. الدَّوام comes from دَاوَمَ (Form III: to continue/persist regularly) — it means the regular work schedule. Work schedule terms: دَوام كامِل (full-time), دَوام جُزئِيّ (part-time), عُطلَة (holiday/vacation), إِجازَة (leave/break)."
+      },
+      {
+        "id": "ea_wk5",
+        "question": "طَلَبَ المُديرُ مِنَ المُوَظَّفِ كِتابَةَ _____ (The manager asked the employee to write a report)",
+        "options": [
+          "تَقريرٍ",
+          "تَقريرٌ",
+          "تَقريرًا",
+          "التَّقريرِ"
+        ],
+        "correct": "تَقريرٍ",
+        "explanation": "تَقريرٍ (a report) is genitive — مُضاف إليه of كِتابَة (writing). كِتابَة (writing) is the masdar of كَتَبَ in accusative as the direct object of طَلَبَ (requested). مِنَ المُوَظَّفِ (from the employee) identifies who was asked. تَقرير is the masdar of Form II قَرَّرَ (to decide/report). Office document vocabulary: تَقرير (report), مُذَكِّرَة (memo), عَقد (contract), فاتورَة (invoice), مَحضَر (minutes of meeting). The idāfa كِتابَةَ تَقريرٍ elegantly combines two masdars."
+      },
+      {
+        "id": "ea_wk6",
+        "question": "تَمَّت _____ المُوَظَّفِ الجَديدِ (The new employee's promotion was completed)",
+        "options": [
+          "تَرقِيَةُ",
+          "تَرقِيَةَ",
+          "تَرقِيَةِ",
+          "تَرقِيَةٌ"
+        ],
+        "correct": "تَرقِيَةُ",
+        "explanation": "تَرقِيَةُ (the promotion) is nominative — فاعل of تَمَّت (was completed, feminine). المُوَظَّفِ (the employee) is genitive as مُضاف إليه. الجَديدِ (the new) agrees in genitive, definite, masculine. تَرقِيَة is the masdar of Form II رَقَّى (to promote), from رَقِيَ (to rise/ascend). Career progression vocabulary: تَرقِيَة (promotion), زِيادَة (raise), مُكافَأَة (bonus/reward), تَقييم (evaluation), أَداء (performance). تَمَّ/تَمَّت + masdar is the standard formal Arabic passive construction."
+      },
+      {
+        "id": "ea_wk7",
+        "question": "يَجِبُ أَن نَنتَهيَ مِن _____ قَبلَ نِهايَةِ الأُسبوعِ (We must finish the project before the end of the week)",
+        "options": [
+          "المَشروعِ",
+          "المَشروعُ",
+          "المَشروعَ",
+          "مَشروعٍ"
+        ],
+        "correct": "المَشروعِ",
+        "explanation": "المَشروعِ (the project) is genitive after مِن. نَنتَهيَ مِن (to finish — literally 'to end from') is subjunctive after أَن. قَبلَ نِهايَةِ الأُسبوعِ (before the end of the week) — a triple idāfa chain. المَشروع is a passive participle from شَرَعَ (to begin/undertake), meaning 'that which is undertaken.' Project management vocabulary: مَشروع (project), مُهِمَّة (task), مَوعِد نِهائِيّ (deadline), خُطَّة (plan), هَدَف (goal/objective)."
+      },
+      {
+        "id": "ea_wk8",
+        "question": "وَقَّعَ المُديرُ عَلى _____ الجَديدِ (The manager signed the new contract)",
+        "options": [
+          "العَقدِ",
+          "العَقدُ",
+          "العَقدَ",
+          "عَقدٍ"
+        ],
+        "correct": "العَقدِ",
+        "explanation": "العَقدِ (the contract) is genitive after عَلى. وَقَّعَ عَلى (signed — literally 'placed a mark on') is Form II from وَقَعَ (to fall/occur). الجَديدِ (the new) agrees in genitive, definite, masculine. عَقد originally means 'tying/knotting' (from عَقَدَ to tie) — a contract binds parties together. Legal/business vocabulary: عَقد (contract), اِتِّفاقِيَّة (agreement), شُروط (terms/conditions), تَوقيع (signature), شَاهِد (witness). وَقَّعَ عَلى is the standard Arabic expression for signing documents."
+      },
+      {
+        "id": "ea_wk9",
+        "question": "الشَّرِكَةُ تَبحَثُ عَن _____ لِهَذا المَنصِبِ (The company is looking for candidates for this position)",
+        "options": [
+          "مُرَشَّحينَ",
+          "مُرَشَّحٌ",
+          "مُرَشَّحونَ",
+          "المُرَشَّحينَ"
+        ],
+        "correct": "مُرَشَّحينَ",
+        "explanation": "مُرَشَّحينَ (candidates) is genitive — after عَن, the sound masculine plural takes ين-. تَبحَثُ عَن (is searching for) uses feminine verb for الشَّرِكَة (the company, feminine). لِهَذا المَنصِبِ (for this position) — المَنصِب (position/post) is from نَصَبَ (to install/establish). مُرَشَّح is a passive participle of Form II رَشَّحَ (to nominate/recommend). Hiring vocabulary: مُرَشَّح (candidate), مُقابَلَة (interview), تَوظيف (hiring), مُتَقَدِّم (applicant — active participle Form V). Sound masculine plurals: ون- nominative, ين- genitive/accusative."
+      },
+      {
+        "id": "ea_wk10",
+        "question": "_____ الشَّهرِيُّ يُصرَفُ في نِهايَةِ كُلِّ شَهرٍ (The monthly salary is paid at the end of every month)",
+        "options": [
+          "الرَّاتِبُ",
+          "الرَّاتِبَ",
+          "الرَّاتِبِ",
+          "راتِبٌ"
+        ],
+        "correct": "الرَّاتِبُ",
+        "explanation": "الرَّاتِبُ (the salary) is nominative — نائب فاعل (deputy subject in passive voice). يُصرَفُ (is disbursed/paid) is passive of صَرَفَ (to spend/disburse). الشَّهرِيُّ (monthly, nisba from شَهر) is an adjective in nominative. في نِهايَةِ كُلِّ شَهرٍ (at the end of every month) — triple genitive chain. راتِب comes from رَتَّبَ (to arrange regularly) — a regular/fixed payment. Compensation vocabulary: راتِب (salary), أَجر (wage), مُكافَأَة (bonus), عِلاوَة (allowance), خَصم (deduction)."
+      },
+      {
+        "id": "ea_wk11",
+        "question": "قَدَّمَ المُوَظَّفُ _____ مِنَ العَمَلِ (The employee submitted his resignation from work)",
+        "options": [
+          "اِستِقالَتَهُ",
+          "اِستِقالَتُهُ",
+          "اِستِقالَتِهِ",
+          "اِستِقالَةً"
+        ],
+        "correct": "اِستِقالَتَهُ",
+        "explanation": "اِستِقالَتَهُ (his resignation) is accusative — direct object of قَدَّمَ (he submitted, Form II). The هُ (his) is a possessive suffix. مِنَ العَمَلِ (from work) uses مِن + genitive. اِستِقالَة is the masdar of Form X اِستَقالَ (to resign — literally 'to request removal/relief'). The Form X pattern اِستَفعَلَ often means 'to seek/request' the base meaning: اِستَقالَ (seek to quit), اِستَفسَرَ (seek to inquire), اِستَعلَمَ (seek to learn). Employment transitions: اِستِقالَة (resignation), فَصل (dismissal), تَقاعُد (retirement)."
+      },
+      {
+        "id": "ea_wk12",
+        "question": "عَقَدنا _____ عَبرَ الإِنتِرنِتِ (We held a meeting via the internet)",
+        "options": [
+          "اِجتِماعًا",
+          "اِجتِماعٌ",
+          "اِجتِماعٍ",
+          "الاِجتِماعَ"
+        ],
+        "correct": "اِجتِماعًا",
+        "explanation": "اِجتِماعًا (a meeting) is accusative — direct object of عَقَدنا (we held/convened). عَقَدَ (to hold/convene — literally 'to tie') is used specifically for meetings and conferences. عَبرَ الإِنتِرنِتِ (via the internet) — عَبرَ is a preposition meaning 'across/via.' Remote work vocabulary: اِجتِماع عَن بُعد (remote meeting), عَمَل مِن المَنزِلِ (work from home), مُكالَمَة فيديو (video call), مَنَصَّة إِلكترونِيَّة (digital platform). عَقَدَ اِجتِماعًا is the idiomatic expression for holding meetings."
+      },
+      {
+        "id": "ea_wk13",
+        "question": "حَصَلتُ عَلى _____ مَرَضِيَّةٍ لِمُدَّةِ أُسبوعٍ (I got sick leave for a week)",
+        "options": [
+          "إِجازَةٍ",
+          "إِجازَةٌ",
+          "إِجازَةً",
+          "الإِجازَةِ"
+        ],
+        "correct": "إِجازَةٍ",
+        "explanation": "إِجازَةٍ (a leave/vacation) is genitive after عَلى. مَرَضِيَّةٍ (sick/medical — nisba from مَرَض) agrees in genitive, feminine, indefinite. لِمُدَّةِ أُسبوعٍ (for a period of a week) — مُدَّة (duration) + أُسبوع (week) in idāfa. إِجازَة is from أَجازَ (Form IV: to permit), originally meaning 'permission.' Types of leave: إِجازَة سَنَوِيَّة (annual leave), إِجازَة مَرَضِيَّة (sick leave), إِجازَة أُمومَة (maternity leave), إِجازَة رَسمِيَّة (public holiday)."
+      },
+      {
+        "id": "ea_wk14",
+        "question": "يُقَدِّمُ القِسمُ _____ فَصلِيَّةً عَن الأَداءِ (The department presents quarterly reports on performance)",
+        "options": [
+          "تَقاريرَ",
+          "تَقاريرٌ",
+          "تَقاريرُ",
+          "التَّقاريرَ"
+        ],
+        "correct": "تَقاريرَ",
+        "explanation": "تَقاريرَ (reports) is accusative — direct object of يُقَدِّمُ (presents, Form II). تَقارير is a diptote broken plural of تَقرير — it takes fatḥa for genitive/accusative and no tanwīn. فَصلِيَّةً (quarterly — nisba from فَصل 'season/quarter') agrees in accusative, feminine singular (non-human plural agreement). عَن الأَداءِ (about performance) uses عَن + genitive. Diptote plurals (مَمنوع من الصرف) are common in business Arabic: تَقارير, مَشاريع (projects), مَباني (buildings)."
+      },
+      {
+        "id": "ea_wk15",
+        "question": "تَمَّ تَعيينُ _____ جَديدٍ لِلإِدارَةِ المَالِيَّةِ (A new director was appointed for the financial department)",
+        "options": [
+          "مُديرٍ",
+          "مُديرٌ",
+          "مُديرًا",
+          "المُديرِ"
+        ],
+        "correct": "مُديرٍ",
+        "explanation": "مُديرٍ (a director) is genitive — مُضاف إليه of تَعيين (appointment). تَمَّ تَعيينُ (the appointment was completed — passive construction). جَديدٍ (new) agrees in genitive, indefinite, masculine. لِلإِدارَةِ المَالِيَّةِ (for the financial department) — الإِدارَة (administration/department) is masdar from أَدارَ (to manage). المَالِيَّة (financial, nisba from مال/money). Management vocabulary: تَعيين (appointment), إِدارَة (management), قِسم (section/department), فَرع (branch). تَمَّ + masdar is the most common formal passive in Modern Standard Arabic."
+      }
+    ]
+  },
+  {
+    "key": "emotions_feelings",
+    "name": "Emotions & Feelings (المشاعر والعواطف)",
+    "description": "Expressing emotions and feelings using Arabic grammar structures",
+    "iconName": "heart.text.square.fill",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ea_ef1",
+        "question": "أَنا _____ جِدًّا بِنَجاحِكَ (I am very happy about your success)",
+        "options": [
+          "سَعيدٌ",
+          "سَعيدًا",
+          "سَعيدٍ",
+          "السَّعيدُ"
+        ],
+        "correct": "سَعيدٌ",
+        "explanation": "سَعيدٌ (happy) is the خبر in nominative. أَنَا (I) is the مُبتدأ. جِدًّا (very) is adverbial accusative. بِنَجاحِكَ (about your success) — بِ for cause + نَجاح (success, masdar) + كَ (your). Emotion adjectives follow standard agreement: سَعيد/سَعيدَة (happy m/f), حَزين/حَزينَة (sad), غاضِب/غاضِبَة (angry), خائِف/خائِفَة (afraid), مُتَحَمِّس/مُتَحَمِّسَة (excited). Arabic expresses emotions with nominal sentences: أَنا + adjective, or with أَشعُرُ بِ (I feel)."
+      },
+      {
+        "id": "ea_ef2",
+        "question": "أَشعُرُ بِ_____ شَديدٍ بَعدَ الاِمتِحانِ (I feel intense anxiety after the exam)",
+        "options": [
+          "قَلَقٍ",
+          "قَلَقٌ",
+          "قَلَقًا",
+          "القَلَقِ"
+        ],
+        "correct": "قَلَقٍ",
+        "explanation": "قَلَقٍ (anxiety/worry) is genitive after بِ. أَشعُرُ بِ (I feel, with بِ for the feeling) is the standard construction. شَديدٍ (intense, masculine) agrees with قَلَق (masculine) in genitive and indefinite. بَعدَ الاِمتِحانِ (after the exam) — بَعدَ is temporal ظرف. Emotion nouns: قَلَق (anxiety), فَرَح (joy), حُزن (sadness), غَضَب (anger), خَوف (fear), حَماس (enthusiasm). Arabic uses بِ after شَعَرَ to introduce the feeling experienced."
+      },
+      {
+        "id": "ea_ef3",
+        "question": "كَانَ _____ عِندَما سَمِعَ الخَبَرَ (He was sad when he heard the news)",
+        "options": [
+          "حَزينًا",
+          "حَزينٌ",
+          "حَزينٍ",
+          "الحَزينُ"
+        ],
+        "correct": "حَزينًا",
+        "explanation": "حَزينًا (sad) is the predicate of كَانَ — خبر كان takes accusative. عِندَما (when) introduces a temporal clause. سَمِعَ (he heard) is past tense. الخَبَرَ (the news) is accusative direct object. حَزين is from حَزِنَ (to be sad), pattern فَعيل for permanent states: سَعيد (happy), حَزين (sad), كَريم (generous), جَميل (beautiful). When emotions are narrated in the past, كَانَ + accusative adjective is the standard structure. The time clause with عِندَما adds context."
+      },
+      {
+        "id": "ea_ef4",
+        "question": "الأَطفَالُ _____ مِن الظَّلامِ (The children are afraid of the dark)",
+        "options": [
+          "يَخافونَ",
+          "يَخافُ",
+          "خَافوا",
+          "تَخافُ"
+        ],
+        "correct": "يَخافونَ",
+        "explanation": "يَخافونَ (they are afraid, masculine plural) — full plural agreement because الأَطفَال (children) is a human plural. مِن الظَّلامِ (of the dark) — خَافَ مِن is the standard construction for 'fear of.' يَخافُ is Form I from خَوف (fear), a hollow verb (و in the root): خَافَ ← يَخافُ (the وَاو appears as alif in past, disappears in present). Human plural agreement rule: unlike non-human plurals (feminine singular), human plurals take full number agreement: الرِّجالُ يَعمَلونَ, النِّساءُ يَعمَلنَ."
+      },
+      {
+        "id": "ea_ef5",
+        "question": "شَعَرتُ بِ_____ عِندَما رَأَيتُ المَنظَرَ (I felt amazement when I saw the view)",
+        "options": [
+          "الدَّهشَةِ",
+          "دَهشَةٍ",
+          "الدَّهشَةُ",
+          "دَهشَةً"
+        ],
+        "correct": "الدَّهشَةِ",
+        "explanation": "الدَّهشَةِ (the amazement) is genitive after بِ. شَعَرتُ بِ (I felt) uses past tense for a completed emotional experience. عِندَما رَأَيتُ (when I saw) — رَأَى is a defective verb with special conjugation. المَنظَرَ (the view/scenery) is accusative direct object — from نَظَرَ (to look). الدَّهشَة (astonishment) is from دُهِشَ (to be astonished, passive of دَهَشَ). Amazement expressions: دَهشَة (amazement), إِعجَاب (admiration), ذُهول (stunned), اِندِهاش (astonishment, Form VII masdar). Arabic has rich vocabulary for gradations of awe."
+      },
+      {
+        "id": "ea_ef6",
+        "question": "لا أَستَطيعُ أَن أُخفيَ _____ (I cannot hide my happiness)",
+        "options": [
+          "سَعادَتي",
+          "سَعادَةٌ",
+          "سَعادَتَكَ",
+          "السَّعادَةَ"
+        ],
+        "correct": "سَعادَتي",
+        "explanation": "سَعادَتي (my happiness) is accusative — direct object of أُخفيَ (to hide, subjunctive after أَن). The ي possessive suffix masks the case ending. أُخفيَ is Form IV from خَفِيَ (to be hidden) — the causative: to make hidden = to hide. لا أَستَطيعُ أَن (I cannot) uses negation + ability + subjunctive. سَعادَة (happiness) is the masdar/abstract noun from سَعُدَ (to be fortunate). Emotion abstract nouns: سَعادَة (happiness), حُزن (sadness), غَضَب (anger), خَوف (fear), حُبّ (love), كُره (hatred)."
+      },
+      {
+        "id": "ea_ef7",
+        "question": "هِيَ _____ مِن نَتيجَةِ الاِمتِحانِ (She is disappointed with the exam result)",
+        "options": [
+          "مُحبَطَةٌ",
+          "مُحبَطًا",
+          "مُحبَطَةً",
+          "المُحبَطَةُ"
+        ],
+        "correct": "مُحبَطَةٌ",
+        "explanation": "مُحبَطَةٌ (disappointed/frustrated, feminine) is the خبر in nominative. هِيَ (she) is the مُبتدأ. مِن نَتيجَةِ الاِمتِحانِ (with the exam result) — مِن for the cause of disappointment. مُحبَطَة is a passive participle (Form IV of أَحبَطَ: to frustrate). Negative emotions as passive participles: مُحبَط (frustrated), مُكتَئِب (depressed), مُرهَق (exhausted), مُتَوَتِّر (stressed), مُنزَعِج (annoyed). Arabic often uses passive participles for emotional states caused by external factors."
+      },
+      {
+        "id": "ea_ef8",
+        "question": "أَحَسَّ بِ_____ تِجاهَ صَديقِهِ (He felt gratitude toward his friend)",
+        "options": [
+          "اِمتِنانٍ",
+          "اِمتِنانٌ",
+          "اِمتِنانًا",
+          "الاِمتِنانِ"
+        ],
+        "correct": "اِمتِنانٍ",
+        "explanation": "اِمتِنانٍ (gratitude) is genitive after بِ. أَحَسَّ بِ (he felt — from أَحَسَّ Form IV of حَسَّ) is an alternative to شَعَرَ بِ for emotional experience. تِجاهَ (toward) is a ظرف مكان used as preposition. صَديقِهِ (his friend) is genitive. اِمتِنان is the masdar of Form VIII اِمتَنَّ (to feel grateful/obliged). Gratitude vocabulary: شُكر (thanks), اِمتِنان (gratitude), تَقدير (appreciation), عِرفَان (recognition). Arabic has several subtle gradations of thankfulness, each from different roots."
+      },
+      {
+        "id": "ea_ef9",
+        "question": "يَشعُرُ بِالوَحدَةِ مُنذُ أَن _____ أَصدِقَاؤُهُ (He feels lonely since his friends left)",
+        "options": [
+          "غادَرَ",
+          "غادَروا",
+          "يُغادِرُ",
+          "غادَرَت"
+        ],
+        "correct": "غادَرَ",
+        "explanation": "غادَرَ (left, Form III, masculine singular) — in a verbal sentence (VSO order), when the subject follows the verb, the verb stays SINGULAR regardless of the subject's number. أَصدِقَاؤُهُ (his friends) is the subject in nominative — broken plural of صَديق. مُنذُ أَن (since) introduces a past time clause. بِالوَحدَةِ (with loneliness) — الوَحدَة from وَحدَ (to be alone). This VSO singular verb rule is one of Arabic's fundamental agreement rules: the verb only shows full number agreement in SVO order."
+      },
+      {
+        "id": "ea_ef10",
+        "question": "شُعورٌ _____ اِنتابَني فَجأَةً (A strange feeling came over me suddenly)",
+        "options": [
+          "غَريبٌ",
+          "غَريبًا",
+          "غَريبٍ",
+          "الغَريبُ"
+        ],
+        "correct": "غَريبٌ",
+        "explanation": "غَريبٌ (strange) is an adjective modifying شُعورٌ — both nominative and indefinite. اِنتابَني (came over me / seized me, Form VIII) — from نَوبَة (turn/bout). فَجأَةً (suddenly) is adverbial accusative. شُعور (feeling) is the masdar of شَعَرَ (to feel). غَريب (strange) is from غَرُبَ (to be foreign/strange) — the same root as غَرب (west), reflecting the idea that foreign/western things were strange. Adjective agreement with indefinite nouns: both take tanwīn and match in case."
+      },
+      {
+        "id": "ea_ef11",
+        "question": "إِنَّني _____ بِعَمَلي هَذا العامَ (Indeed I am satisfied with my work this year)",
+        "options": [
+          "رَاضٍ",
+          "رَاضِيٌ",
+          "رَاضِيًا",
+          "الرَّاضي"
+        ],
+        "correct": "رَاضٍ",
+        "explanation": "رَاضٍ (satisfied) is the خبر of إِنَّ in nominative — but as a defective noun (اسم منقوص), it drops the final ي and takes tanwīn kasra in nominative/genitive when indefinite: رَاضٍ. بِعَمَلي (with my work) uses بِ for the object of satisfaction. هَذا العَامَ (this year) is adverbial accusative. رَاضٍ is the active participle of رَضِيَ (to be pleased/satisfied). Defective nouns in emotions: رَاضٍ (satisfied), شاكٍ (complaining), باكٍ (crying), ساعٍ (striving). The ي reappears with ال: الرَّاضي."
+      },
+      {
+        "id": "ea_ef12",
+        "question": "_____ قَلبَها عِندَما سَمِعَت الخَبَرَ (Joy filled her heart when she heard the news)",
+        "options": [
+          "مَلَأَ الفَرَحُ",
+          "مَلَأَت الفَرَحَ",
+          "يَملَأُ الفَرَحُ",
+          "مَلَأَ فَرَحٌ"
+        ],
+        "correct": "مَلَأَ الفَرَحُ",
+        "explanation": "مَلَأَ الفَرَحُ (joy filled) — مَلَأَ (he/it filled) with الفَرَحُ (joy) as the فاعل in nominative. قَلبَها (her heart) is the accusative direct object. This poetic construction personifies فَرَح (joy) as an agent that fills the heart. عِندَما سَمِعَت (when she heard — feminine past). Arabic emotional expressions are often metaphorical: مَلَأَ قَلبَهُ فَرَحٌ (joy filled his heart), اِنقَبَضَ صَدرُهُ (his chest tightened — anxiety), طَارَ مِن الفَرَحِ (he flew from joy — extreme happiness). These show Arabic's rich figurative language for emotions."
+      },
+      {
+        "id": "ea_ef13",
+        "question": "الأُمُّ _____ عَلى أَطفالِها (The mother worries about her children)",
+        "options": [
+          "تَقلَقُ",
+          "يَقلَقُ",
+          "قَلِقَت",
+          "تَقلَقينَ"
+        ],
+        "correct": "تَقلَقُ",
+        "explanation": "تَقلَقُ (she worries) uses the feminine prefix تَ- matching الأُمّ (the mother, feminine). عَلى أَطفالِها (about her children) — قَلِقَ عَلى means 'to worry about.' أَطفالِها (her children) is genitive after عَلى with possessive ها. قَلِقَ (to worry) follows the pattern فَعِلَ for emotional verbs. Parental emotion expressions: تَقلَقُ عَلى (worries about), تَهتَمُّ بِ (cares about), تَحنُّ إِلى (yearns for), تَفتَخِرُ بِ (is proud of). Prepositions after emotion verbs carry specific meanings in Arabic."
+      },
+      {
+        "id": "ea_ef14",
+        "question": "شَعَرَ بِـ_____ بَالِغَةٍ تِجاهَ جارِهِ (He felt deep sympathy toward his neighbor)",
+        "options": [
+          "عاطِفَةٍ",
+          "عاطِفَةٌ",
+          "عاطِفَةً",
+          "العاطِفَةِ"
+        ],
+        "correct": "عاطِفَةٍ",
+        "explanation": "عاطِفَةٍ (sympathy/emotion) is genitive after بِ. بَالِغَةٍ (deep/intense/reaching, feminine) agrees in genitive and feminine. تِجاهَ (toward) is used for direction of emotions + genitive. جارِهِ (his neighbor) — defective noun, final ي hidden. عاطِفَة is an active participle used as a noun meaning 'emotion/sympathy/compassion,' from عَطَفَ (to bend/turn — metaphorically, to show kindness). Compassion vocabulary: عَطف (sympathy), رَحمَة (mercy), شَفَقَة (compassion), تَعاطُف (empathy, Form VI masdar)."
+      },
+      {
+        "id": "ea_ef15",
+        "question": "يَشعُرُ بِالفَخرِ _____ أَنجَزَ المَهَمَّةَ (He feels pride because he completed the task)",
+        "options": [
+          "لِأَنَّهُ",
+          "بِأَنَّهُ",
+          "عَلى أَنَّهُ",
+          "حَيثُ"
+        ],
+        "correct": "لِأَنَّهُ",
+        "explanation": "لِأَنَّهُ (because he) — لِأَنَّ introduces a causal clause, with هُ as the subject pronoun attached to أَنَّ. أَنجَزَ (completed, Form IV — to accomplish) المَهَمَّةَ (the task, accusative). بِالفَخرِ (with pride) — فَخر is the masdar of فَخَرَ (to be proud). Causal connectors: لِأَنَّ (because), بِسَبَبِ (due to), نَظَرًا لِ (given that), بِفَضلِ (thanks to). Expressing reasons for emotions is essential for nuanced Arabic communication. لِأَنَّ is the most common causal conjunction in Modern Standard Arabic."
+      }
+    ]
+  },
+  {
+    "key": "family_relations",
+    "name": "Family Relations (العلاقات الأسرية)",
+    "description": "Family vocabulary and kinship terms with Arabic grammar structures",
+    "iconName": "person.3.fill",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ea_fm1",
+        "question": "_____ يَعمَلُ في شَرِكَةٍ كَبيرَةٍ (My father works at a large company)",
+        "options": [
+          "أَبي",
+          "أَبٌ",
+          "أُبُّ",
+          "الأَبُ"
+        ],
+        "correct": "أَبي",
+        "explanation": "أَبي (my father) is nominative as the مُبتدأ — but أَب is one of the الأسماء الخمسة (five nouns) that show case with long vowels before possessives: أَبوكَ (nominative), أَباكَ (accusative), أَبيكَ (genitive). However, with ي (my), it becomes أَبي in all cases (the long vowel merges with ي). The five nouns: أَب (father), أَخ (brother), حَم (father-in-law), فو (mouth), ذو (possessor). يَعمَلُ (he works) is the verbal خبر. Family terms are among the first words learned in Arabic."
+      },
+      {
+        "id": "ea_fm2",
+        "question": "أُمّي هِيَ _____ شَخصٍ في حَياتي (My mother is the most important person in my life)",
+        "options": [
+          "أَهَمُّ",
+          "أَهَمَّ",
+          "أَهَمٍّ",
+          "الأَهَمُّ"
+        ],
+        "correct": "أَهَمُّ",
+        "explanation": "أَهَمُّ (most important) is the elative form (أَفعَل) of هَامّ (important), functioning as the خبر in nominative. As a diptote in an idāfa with شَخصٍ, it takes no tanwīn. شَخصٍ (person) is genitive as مُضاف إليه. في حَياتي (in my life) — حَياة (life) with possessive ي. أُمّ (mother) has a special possessive form: أُمّي. Arabic family superlatives are common: أَكبَر أَخ (oldest brother), أَصغَر أُخت (youngest sister). The أَفعَل pattern can function as both comparative and superlative."
+      },
+      {
+        "id": "ea_fm3",
+        "question": "عِندي ثَلاثَةُ _____ وَأُختَانِ (I have three brothers and two sisters)",
+        "options": [
+          "إِخوَةٍ",
+          "إِخوَةٌ",
+          "إِخوَةً",
+          "الإِخوَةِ"
+        ],
+        "correct": "إِخوَةٍ",
+        "explanation": "إِخوَةٍ (brothers) is genitive — the counted noun for numbers 3-10 must be genitive plural. ثَلَاثَةُ takes tā' marbūṭa because إِخوَة is masculine (gender polarity rule). وَأُختَانِ (and two sisters) — dual nominative form with ان-. إِخوَة is the broken plural of أَخ (brother) specifically for siblings (vs إِخوان for brotherhood/brethren). Family counting: تَوأَمان (twins, dual), أَبناء (sons/children), بَنات (daughters). Number + genitive plural is mandatory for 3-10 in Arabic."
+      },
+      {
+        "id": "ea_fm4",
+        "question": "تَزَوَّجَ _____ مِن طَبيبَةٍ (My brother married a doctor)",
+        "options": [
+          "أَخي",
+          "أَخٌ",
+          "الأَخُ",
+          "أَخوكَ"
+        ],
+        "correct": "أَخي",
+        "explanation": "أَخي (my brother) is nominative as فاعل of تَزَوَّجَ (he married, Form V). أَخ is another of the أسماء خمسة (five nouns) — with ي it becomes أَخي in all cases. مِن طَبيبَةٍ (a female doctor) — تَزَوَّجَ مِن is the standard construction for 'married [someone].' تَزَوَّجَ (Form V: تَفَعَّلَ) is reflexive of زَوَّجَ (to marry someone off). Marriage vocabulary: زَواج (marriage), عُرس (wedding), خَطيب/خَطيبَة (fiancé/fiancée), زَوج/زَوجَة (husband/wife). Arabic kinship terms are extremely precise."
+      },
+      {
+        "id": "ea_fm5",
+        "question": "جَدَّتي _____ قِصَصًا لِلأَطفَالِ كُلَّ لَيلَةٍ (My grandmother tells stories to children every night)",
+        "options": [
+          "تَروي",
+          "يَروي",
+          "رَوَت",
+          "تَرويانِ"
+        ],
+        "correct": "تَروي",
+        "explanation": "تَروي (she narrates/tells) — feminine present tense matching جَدَّتي (my grandmother, feminine). قِصَصًا (stories) is accusative direct object — broken plural of قِصَّة. لِلأَطفَالِ (for children) uses لِ + genitive. كُلَّ لَيلَةٍ (every night) is adverbial accusative. جَدَّة (grandmother) is the feminine of جَدّ (grandfather). رَوَى (to narrate/tell) is a defective verb (roots ending in ي). Extended family: جَدّ/جَدَّة (grandfather/grandmother), عَمّ/عَمَّة (paternal uncle/aunt), خَال/خَالَة (maternal uncle/aunt)."
+      },
+      {
+        "id": "ea_fm6",
+        "question": "زَارَنا _____ وَزَوجَتُهُ في العيدِ (My uncle and his wife visited us during the holiday)",
+        "options": [
+          "عَمّي",
+          "عَمٌّ",
+          "العَمُّ",
+          "عَمُّكَ"
+        ],
+        "correct": "عَمّي",
+        "explanation": "عَمّي (my paternal uncle) is nominative as فاعل of زَارَنا (visited us). وَزَوجَتُهُ (and his wife) is coordinated with وَ, also nominative. في العيدِ (during the holiday) — العيد is genitive after في. عَمّ (paternal uncle) is distinct from خَال (maternal uncle) — Arabic distinguishes paternal and maternal sides precisely: عَمّ/عَمَّة (paternal uncle/aunt), خَال/خَالَة (maternal uncle/aunt), اِبن عَمّ (paternal cousin male), بِنت عَمّ (paternal cousin female). This distinction is culturally significant."
+      },
+      {
+        "id": "ea_fm7",
+        "question": "وُلِدَ _____ الجَديدُ في المُستَشفَى (The new baby was born at the hospital)",
+        "options": [
+          "المَولودُ",
+          "المَولودَ",
+          "المَولودِ",
+          "مَولودٌ"
+        ],
+        "correct": "المَولودُ",
+        "explanation": "المَولودُ (the newborn) is nominative — نائِب فاعل in passive voice. وُلِدَ (was born) is passive of وَلَدَ (to give birth). الجَديدُ (new) agrees in nominative, definite, masculine. في المُستَشفَى (at the hospital) is locative. مَولود is a passive participle of وَلَدَ — literally 'one who was born.' Birth vocabulary: مَولود (newborn), وِلَادَة (birth/delivery), حَامِل (pregnant — active participle), تَوَأم (twin). Arabic passive voice naturally expresses the baby's perspective — the baby 'was born.'"
+      },
+      {
+        "id": "ea_fm8",
+        "question": "أَبناءُ _____ يَلعَبونَ في الحَديقَةِ (My uncle's children are playing in the garden)",
+        "options": [
+          "خَالي",
+          "خَالٌ",
+          "الخَالِ",
+          "خَالُكَ"
+        ],
+        "correct": "خَالي",
+        "explanation": "خَالي (my maternal uncle) is genitive — مُضاف إليه of أَبناء (children/sons). يَلعَبونَ (they are playing, masculine plural) — full human plural agreement. في الحَديقَةِ (in the garden). خَال (maternal uncle) specifically refers to the mother's brother — Arabic is one of the most precise languages in kinship terminology. أَبناء (children) is the broken plural of اِبن (son). Children of relatives: اِبن/بِنت عَمّ (paternal cousin), اِبن/بِنت خَال (maternal cousin). These terms are used daily in Arab family life."
+      },
+      {
+        "id": "ea_fm9",
+        "question": "حَماتي _____ الطَّبخَ بِمَهارَةٍ (My mother-in-law loves cooking skillfully)",
+        "options": [
+          "تُحِبُّ",
+          "يُحِبُّ",
+          "أَحَبَّت",
+          "تُحِبُّونَ"
+        ],
+        "correct": "تُحِبُّ",
+        "explanation": "تُحِبُّ (she loves, Form IV) uses the feminine prefix تُ- matching حَماتي (my mother-in-law, feminine). الطَّبخَ (cooking) is accusative direct object. بِمَهارَةٍ (skillfully — literally 'with skill'). حَماة (mother-in-law) is related to حَم (father-in-law — one of the five nouns). أَحَبَّ (Form IV: to love) from حَبَّ. In-law vocabulary: حَماة (mother-in-law), حَمو (father-in-law), صِهر (son-in-law/brother-in-law), كَنَّة (daughter-in-law). In-law relationships have specific Arabic terms reflecting social importance."
+      },
+      {
+        "id": "ea_fm10",
+        "question": "تَجتَمِعُ _____ كُلَّ أُسبوعٍ (The family gathers every week)",
+        "options": [
+          "العائِلَةُ",
+          "العائِلَةَ",
+          "العائِلَةِ",
+          "عائِلَةٌ"
+        ],
+        "correct": "العائِلَةُ",
+        "explanation": "العائِلَةُ (the family) is nominative — فاعل of تَجتَمِعُ (gathers, Form VIII feminine). كُلَّ أُسبوعٍ (every week) is adverbial accusative. العائِلَة is an active participle of عَالَ (to support/sustain) — literally 'the one who sustains.' اِجتَمَعَ (Form VIII: to gather) — reflexive/mutual meaning. Family gathering vocabulary: لَمَّة عائِلِيَّة (family gathering), عَشاء عائِلِيّ (family dinner), مُناسَبَة (occasion/event), اِحتِفال (celebration). Weekly family gatherings are a cornerstone of Arab culture."
+      },
+      {
+        "id": "ea_fm11",
+        "question": "أَختي الكُبرَى تَهتَمُّ بِ_____ الصِّغارِ (My older sister takes care of the young ones)",
+        "options": [
+          "الأَطفَالِ",
+          "الأَطفَالُ",
+          "الأَطفَالَ",
+          "أَطفَالٍ"
+        ],
+        "correct": "الأَطفَالِ",
+        "explanation": "الأَطفَالِ (the children) is genitive after بِ. تَهتَمُّ بِ (takes care of / pays attention to — Form VIII) is a common verb + preposition combination. الصِّغارِ (the small/young ones) is an adjective agreeing in genitive, definite. الكُبرَى (the oldest/elder, feminine superlative) is the feminine of الأَكبَر — used as an adjective for أُخت (sister). Sibling vocabulary: أُخت كُبرَى (older sister), أَخ أَكبَر (older brother), أُخت صُغرَى (younger sister), أَخ أَصغَر (younger brother). Familial responsibility terms are culturally important."
+      },
+      {
+        "id": "ea_fm12",
+        "question": "أَبي وَأُمّي _____ كَثيرًا (My parents sacrificed a lot)",
+        "options": [
+          "ضَحَّيَا",
+          "ضَحَّى",
+          "يُضَحّونَ",
+          "ضَحَّت"
+        ],
+        "correct": "ضَحَّيَا",
+        "explanation": "ضَحَّيَا (they both sacrificed, Form II dual) — the dual verb ending ا- is used because the subject is two people (أَبي وَأُمّي). The dual is mandatory when referring to exactly two subjects. كَثيرًا (a lot) is adverbial accusative. ضَحَّى (Form II: to sacrifice) from ضَحِيَّة (sacrifice/offering). The dual verb forms: ضَحَّيَا (past), يُضَحِّيانِ (present). Arabic requires dual verb forms — using plural for exactly two subjects is grammatically incorrect. Parental value vocabulary: تَضحِيَة (sacrifice), تَربِيَة (upbringing), رِعايَة (care)."
+      },
+      {
+        "id": "ea_fm13",
+        "question": "أَنجَبَت أُختي _____ جَميلَةً (My sister gave birth to a beautiful girl)",
+        "options": [
+          "طِفلَةً",
+          "طِفلَةٌ",
+          "طِفلَةٍ",
+          "الطِّفلَةَ"
+        ],
+        "correct": "طِفلَةً",
+        "explanation": "طِفلَةً (a girl/baby girl) is accusative — direct object of أَنجَبَت (she gave birth to, Form IV feminine past). جَميلَةً (beautiful, feminine) agrees in accusative. أَنجَبَ (Form IV: to beget/give birth) from نَجَبَ. طِفلَة is the feminine of طِفل (child). The tā' marbūṭa distinguishes gender: طِفل (boy), طِفلَة (girl). Birth announcement vocabulary: أَنجَبَ (gave birth), بَارَكَ اللهُ (God bless), مُبارَك (congratulations), مَبروك (colloquial congratulations). Form IV أَفعَلَ often has a causative meaning."
+      },
+      {
+        "id": "ea_fm14",
+        "question": "يُشبِهُ الوَلَدُ _____ كَثيرًا (The boy resembles his grandfather a lot)",
+        "options": [
+          "جَدَّهُ",
+          "جَدُّهُ",
+          "جَدِّهِ",
+          "جَدٌّ"
+        ],
+        "correct": "جَدَّهُ",
+        "explanation": "جَدَّهُ (his grandfather) is accusative — direct object of يُشبِهُ (he resembles, Form IV). الوَلَدُ (the boy) is nominative فاعل. يُشبِهُ (to resemble) is transitive — it takes a direct object without a preposition. جَدّ (grandfather) with هُ possessive. كَثيرًا (a lot) is adverbial. The double dāl in جَدّ makes it distinctive from جَدّة (grandmother — feminine). Family resemblance expressions: يُشبِهُ (resembles — looks like), وَرِثَ مِن (inherited from), عَلى غِرارِ (in the manner of)."
+      },
+      {
+        "id": "ea_fm15",
+        "question": "العَلاقَةُ بَينَ _____ قَوِيَّةٌ جِدًّا (The relationship between the siblings is very strong)",
+        "options": [
+          "الإِخوَةِ",
+          "الإِخوَةُ",
+          "الإِخوَةَ",
+          "إِخوَةٍ"
+        ],
+        "correct": "الإِخوَةِ",
+        "explanation": "الإِخوَةِ (the siblings/brothers) is genitive — بَينَ is a ظرف مكان followed by genitive. العَلاقَةُ (the relationship) is the مُبتدأ in nominative. قَوِيَّةٌ (strong, feminine) is the خبر. جِدًّا (very) intensifies. بَينَ + genitive for 'between/among.' Relationship vocabulary: عَلاقَة (relationship), رَابِطَة (bond), صِلَة (connection), قَرابَة (kinship/closeness). الإِخوَة specifically means siblings/brothers (kinship), while إِخوان can mean brothers in faith/brotherhood. Family bond language reflects Arabic's emphasis on kinship ties."
+      }
+    ]
   }
 ]
