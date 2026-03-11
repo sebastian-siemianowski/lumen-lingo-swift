@@ -48,6 +48,7 @@ extension AppStrings {
         done: "Готово",
         languagesAvailable: "доступних мов",
         startYourAdventure: "Почни Свою Пригоду",
+        keepLearning: "Продовжуй Вчитися",
 
         // Categories
         back: "Назад",

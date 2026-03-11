@@ -231,14 +231,38 @@ struct LanguageSelectionView: View {
             }
             .background(pageBackground)
             .safeAreaInset(edge: .bottom) { floatingCTA }
-            .navigationTitle(L.languages)
-            .navigationBarTitleDisplayMode(.large)
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button(L.cancel) {
+                    Button {
                         dismiss()
+                    } label: {
+                        ZStack {
+                            Circle()
+                                .fill(isDark ? Color(hex: "#1a1a2e") : .white)
+                                .frame(width: 36, height: 36)
+                                .overlay(
+                                    Circle()
+                                        .strokeBorder(
+                                            LinearGradient(
+                                                colors: [.indigo.opacity(0.3), .purple.opacity(0.2)],
+                                                startPoint: .top, endPoint: .bottom
+                                            ),
+                                            lineWidth: 1
+                                        )
+                                )
+                                .shadow(color: .indigo.opacity(isDark ? 0.15 : 0.06), radius: 8, y: 2)
+
+                            Image(systemName: "xmark")
+                                .font(.system(size: 13, weight: .semibold))
+                                .foregroundStyle(
+                                    LinearGradient(
+                                        colors: [.indigo, .purple],
+                                        startPoint: .top, endPoint: .bottom
+                                    )
+                                )
+                        }
                     }
-                    .foregroundStyle(isDark ? .white.opacity(0.8) : .indigo)
                 }
             }
             .onAppear {
@@ -318,25 +342,29 @@ struct LanguageSelectionView: View {
                     // Animated center orb
                     ZStack {
                         Circle()
-                            .fill(
-                                RadialGradient(
-                                    colors: [
-                                        .indigo.opacity(isDark ? 0.5 : 0.3),
-                                        .purple.opacity(isDark ? 0.3 : 0.15),
-                                        .clear
-                                    ],
-                                    center: .center,
-                                    startRadius: 2,
-                                    endRadius: 20
-                                )
+                            .fill(isDark ? Color(hex: "#1a1a2e") : .white)
+                            .frame(width: 36, height: 36)
+                            .overlay(
+                                Circle()
+                                    .strokeBorder(
+                                        LinearGradient(
+                                            colors: [.indigo.opacity(0.3), .purple.opacity(0.2)],
+                                            startPoint: .top, endPoint: .bottom
+                                        ),
+                                        lineWidth: 1
+                                    )
                             )
-                            .frame(width: 40, height: 40)
+                            .shadow(color: .indigo.opacity(isDark ? 0.15 : 0.06), radius: 8, y: 2)
                             .scaleEffect(0.9 + orbPhase * 0.2)
 
                         Image(systemName: "arrow.right")
-                            .font(.system(size: 14, weight: .bold))
-                            .foregroundStyle(.white)
-                            .shadow(color: .indigo.opacity(0.5), radius: 4)
+                            .font(.system(size: 13, weight: .semibold))
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: [.indigo, .purple],
+                                    startPoint: .top, endPoint: .bottom
+                                )
+                            )
                     }
 
                     Spacer().frame(width: 60)
@@ -649,47 +677,58 @@ struct LanguageSelectionView: View {
                 if hasChanged {
                     TimelineView(.animation(minimumInterval: 1.0 / 30.0)) { context in
                         let t = context.date.timeIntervalSinceReferenceDate
-                        let phase = CGFloat(t.truncatingRemainder(dividingBy: 3.5) / 3.5)
+                        let phase = CGFloat(t.truncatingRemainder(dividingBy: 5.0) / 5.0)
 
+                        // Invisible text sets the natural size, then the shimmer
+                        // gradient is masked to that exact text shape and clipped.
                         Text(L.startYourAdventure)
                             .font(.headline.weight(.bold))
-                            .foregroundStyle(.clear)
+                            .hidden()
                             .overlay {
                                 cosmicGradient
-                                    .frame(width: 600)
-                                    .offset(x: (phase - 0.5) * 400)
-                                    .mask {
-                                        Text(L.startYourAdventure)
-                                            .font(.headline.weight(.bold))
-                                    }
+                                    .frame(width: 1200)
+                                    .offset(x: phase * 600 - 300)
                             }
+                            .mask {
+                                Text(L.startYourAdventure)
+                                    .font(.headline.weight(.bold))
+                            }
+                            .clipped()
                     }
                     .transition(.opacity)
                 } else {
-                    Text(L.done)
+                    Text(L.keepLearning)
                         .font(.headline.weight(.bold))
                         .foregroundStyle(.white)
                         .contentTransition(.interpolate)
                 }
 
-                Image(systemName: hasChanged ? "chevron.right" : "checkmark.circle.fill")
-                    .font(.system(size: hasChanged ? 13 : 17, weight: .bold))
-                    .foregroundStyle(
-                        LinearGradient(
-                            colors: [.white, .white.opacity(0.6)],
-                            startPoint: .top, endPoint: .bottom
+                ZStack {
+                    Circle()
+                        .fill(.white.opacity(0.12))
+                        .frame(width: 36, height: 36)
+                        .overlay(
+                            Circle()
+                                .strokeBorder(
+                                    LinearGradient(
+                                        colors: [.white.opacity(0.35), .white.opacity(0.1)],
+                                        startPoint: .top, endPoint: .bottom
+                                    ),
+                                    lineWidth: 1
+                                )
                         )
-                    )
-                    .frame(width: 28, height: 28)
-                    .background(
-                        Circle()
-                            .fill(.white.opacity(hasChanged ? 0.15 : 0))
-                    )
-                    .overlay(
-                        Circle()
-                            .strokeBorder(.white.opacity(hasChanged ? 0.2 : 0), lineWidth: 1)
-                    )
-                    .contentTransition(.symbolEffect(.replace))
+                        .shadow(color: .black.opacity(0.15), radius: 8, y: 2)
+
+                    Image(systemName: hasChanged ? "chevron.right" : "checkmark")
+                        .font(.system(size: 13, weight: .semibold))
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [.white, .white.opacity(0.7)],
+                                startPoint: .top, endPoint: .bottom
+                            )
+                        )
+                }
+                .contentTransition(.symbolEffect(.replace))
             }
             .padding(.horizontal, 22)
             .padding(.vertical, 16)
@@ -713,19 +752,31 @@ struct LanguageSelectionView: View {
 
     // MARK: - Cosmic Shimmer Gradient
 
+    // Cosmic gradient — light colors only so text contrasts against the dark
+    // CTA background. Two identical 600pt tiles (1200pt total). Travel = 600pt
+    // centered (offset -300…+300) so the gradient always covers the text.
     private var cosmicGradient: some View {
         LinearGradient(
             colors: [
-                Color(hex: "#7C3AED"),
-                Color(hex: "#A855F7"),
+                // Tile 1
+                .white,
+                Color(hex: "#E0C3FC"),   // soft lavender
+                Color(hex: "#F9A8D4"),   // light pink
+                .white,
+                Color(hex: "#C7D2FE"),   // light periwinkle
+                Color(hex: "#FDE68A"),   // soft gold
+                .white,
+                Color(hex: "#E0C3FC"),   // soft lavender
+                // Tile 2 (identical repeat)
+                .white,
                 Color(hex: "#E0C3FC"),
+                Color(hex: "#F9A8D4"),
                 .white,
-                Color(hex: "#818CF8"),
-                Color(hex: "#6366F1"),
-                Color(hex: "#A855F7"),
-                Color(hex: "#EC4899"),
+                Color(hex: "#C7D2FE"),
+                Color(hex: "#FDE68A"),
                 .white,
-                Color(hex: "#7C3AED")
+                Color(hex: "#E0C3FC"),
+                .white
             ],
             startPoint: .leading,
             endPoint: .trailing

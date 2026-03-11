@@ -48,6 +48,7 @@ extension AppStrings {
         done: "完了",
         languagesAvailable: "言語が利用可能",
         startYourAdventure: "冒険を始めよう",
+        keepLearning: "学び続けよう",
 
         // Categories
         back: "戻る",

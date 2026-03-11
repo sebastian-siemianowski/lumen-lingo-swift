@@ -48,6 +48,7 @@ extension AppStrings {
         done: "تم",
         languagesAvailable: "لغات متاحة",
         startYourAdventure: "ابدأ مغامرتك",
+        keepLearning: "واصل التعلّم",
 
         // Categories
         back: "رجوع",

@@ -51,6 +51,7 @@ struct AppStrings {
     let done: String
     let languagesAvailable: String
     let startYourAdventure: String
+    let keepLearning: String
 
     // MARK: - Categories
     let back: String
