@@ -44,7 +44,7 @@ Expand all 17 beta language pairs to **105 categories × 15 items = 1,575 items*
 | 8 | french_english | French | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 9 | german_polish | German | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 10 | japanese_english | Japanese | 105/105 | 1575/1575 | 20/20 | ✅ |
-| 11 | polish_arabic | Polish | 97/105 | 1455/1575 | 18/20 | 🔄 |
+| 11 | polish_arabic | Polish | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 12 | polish_chinese | Polish | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 13 | polish_french | Polish | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 14 | polish_japanese | Polish | 97/105 | 1455/1575 | 18/20 | 🔄 |
@@ -473,8 +473,8 @@ ID prefixes used: up_pres, up_case, up_fut, up_ci, up_prep, up_pron, up_pt, up_a
 | 20 | common_errors, cyrillic_challenges, word_stress, register_shifts, revision_mixed | ✅ |
 | 21 | exam_strategies, advanced_grammar_review, final_review | ✅ |
 
-### polish_arabic — 🔄 IN PROGRESS (97/105 categories, 1455 items)
-ID prefixes used: pa_pres, pa_art, pa_past, pa_pr, pa_fut, pa_dual, pa_neg, pa_ga, pa_ns, pa_sm, pa_ppd, pa_pos, pa_prep, pa_dem, pa_num, pa_adja, pa_bp, pa_sp, pa_id, pa_bq, pa_tt, pa_cs, pa_vf1, pa_vf23, pa_vf45, pa_vf67, pa_vf8x, pa_hv, pa_dv, pa_dbv, pa_hz, pa_pva, pa_msdr, pa_ap, pa_pp, pa_kas, pa_ias, pa_acc, pa_gen, pa_nom, pa_cond, pa_rel, pa_imp, pa_subj, pa_jus, pa_n100, pa_ord, pa_comp, pa_tc, pa_adv, pa_opa, pa_hal, pa_tam, pa_exc, pa_voc, pa_oat, pa_rs, pa_pat, pa_tnw, pa_dar, pa_dpa, pa_cn, pa_emv, pa_exf, pa_dim, pa_nsb, pa_vns, pa_top, pa_twk, pa_bdl, pa_5n, pa_dpt, pa_waw, pa_fa, pa_thm, pa_nega, pa_lmn, pa_man, pa_lls, pa_qp, pa_exp, pa_rp, pa_fma, pa_ma, pa_la, pa_qg, pa_ie, pa_ps, pa_ce, pa_ff, pa_tv, pa_fr, pa_hb, pa_wo, pa_ti, pa_en, pa_el
+### polish_arabic — ✅ COMPLETE (105/105 categories, 1575 items)
+ID prefixes used: pa_pres, pa_art, pa_past, pa_pr, pa_fut, pa_dual, pa_neg, pa_ga, pa_ns, pa_sm, pa_ppd, pa_pos, pa_prep, pa_dem, pa_num, pa_adja, pa_bp, pa_sp, pa_id, pa_bq, pa_tt, pa_cs, pa_vf1, pa_vf23, pa_vf45, pa_vf67, pa_vf8x, pa_hv, pa_dv, pa_dbv, pa_hz, pa_pva, pa_msdr, pa_ap, pa_pp, pa_kas, pa_ias, pa_acc, pa_gen, pa_nom, pa_cond, pa_rel, pa_imp, pa_subj, pa_jus, pa_n100, pa_ord, pa_comp, pa_tc, pa_adv, pa_opa, pa_hal, pa_tam, pa_exc, pa_voc, pa_oat, pa_rs, pa_pat, pa_tnw, pa_dar, pa_dpa, pa_cn, pa_emv, pa_exf, pa_dim, pa_nsb, pa_vns, pa_top, pa_twk, pa_bdl, pa_5n, pa_dpt, pa_waw, pa_fa, pa_thm, pa_nega, pa_lmn, pa_man, pa_lls, pa_qp, pa_exp, pa_rp, pa_fma, pa_ma, pa_la, pa_qg, pa_ie, pa_ps, pa_ce, pa_ff, pa_tv, pa_fr, pa_hb, pa_wo, pa_ti, pa_en, pa_el, pa_sh, pa_fe, pa_wc, pa_spm, pa_hh, pa_td, pa_mc, pa_es
 
 | Batch | Categories | Status |
 |-------|-----------|--------|
@@ -496,8 +496,8 @@ ID prefixes used: pa_pres, pa_art, pa_past, pa_pr, pa_fut, pa_dual, pa_neg, pa_g
 | 16 | formal_arabic, media_arabic, literary_arabic, quran_grammar_basics, idiomatic_expressions_ar | ✅ |
 | 17 | proverbs_sayings_ar, common_errors_polish, false_friends_ar, travel_vocabulary_ar, food_restaurant_ar | ✅ |
 | 18 | health_body_ar, work_office_ar, technology_internet_ar, environment_nature_ar, education_learning_ar | ✅ |
-| 19 | sports_hobbies_ar, feelings_emotions_ar, weather_climate_ar, shopping_money_ar, housing_home_ar | ⬜ |
-| 20 | transport_directions_ar, media_communication_ar, exam_strategies_ar | ⬜ |
+| 19 | sports_hobbies_ar, feelings_emotions_ar, weather_climate_ar, shopping_money_ar, housing_home_ar | ✅ |
+| 20 | transport_directions_ar, media_communication_ar, exam_strategies_ar | ✅ |
 
 ## Main Pairs (Complete - Reference)
 
