@@ -44,11 +44,11 @@ Expand all 17 beta language pairs to **105 categories × 15 items = 1,575 items*
 | 8 | french_english | French | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 9 | german_polish | German | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 10 | japanese_english | Japanese | 105/105 | 1575/1575 | 20/20 | ✅ |
-| 11 | polish_arabic | Polish | 92/105 | 1380/1575 | 17/20 | 🔄 |
+| 11 | polish_arabic | Polish | 97/105 | 1455/1575 | 18/20 | 🔄 |
 | 12 | polish_chinese | Polish | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 13 | polish_french | Polish | 105/105 | 1575/1575 | 20/20 | ✅ |
-| 14 | polish_japanese | Polish | 67/105 | 1005/1575 | 12/20 | 🔄 |
-| 15 | polish_ukrainian | Polish | 87/105 | 1305/1575 | 16/20 | 🔄 |
+| 14 | polish_japanese | Polish | 97/105 | 1455/1575 | 18/20 | 🔄 |
+| 15 | polish_ukrainian | Polish | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 16 | ukrainian_english | Ukrainian | 105/105 | 1575/1575 | 20/20 | ✅ |
 | 17 | ukrainian_polish | Ukrainian | 105/105 | 1575/1575 | 21/21 | ✅ |
 
@@ -185,8 +185,8 @@ All 20 batches completed. All 105 categories use correct question/_____/options/
 | 19 | exclamation, double_pronoms, ne_expletif, tout_meme_autre, revision_generale | ✅ |
 | 20 | structures_argumentatives, registre_informel | ✅ |
 
-### polish_japanese — 🔄 IN PROGRESS (72/105 categories, 1080 items)
-ID prefixes used: pj_part, pj_verb, pj_adj, pj_neg, pj_q, pj_pol, pj_cnt, pj_te, pj_nadj, pj_loc, pj_time, pj_des, pj_pst, pj_gr, pj_pot, pj_cta, pj_conj, pj_vg, pj_imp, pj_psv, pj_cau, pj_cba, pj_ctr, pj_vol, pj_cmp, pj_sup, pj_adv, pj_nom, pj_rel, pj_quo, pj_hrs, pj_app, pj_obl, pj_per, pj_prh, pj_rkr, pj_rnd, pj_pur, pj_cga, pj_ckd, pj_lst, pj_smn, pj_chn, pj_prp, pj_exp, pj_adh, pj_try, pj_tri, pj_cpv, pj_hon, pj_hum, pj_exi, pj_dik, pj_duf, pj_sen, pj_fwr, pj_inf, pj_ono, pj_num, pj_fam, pj_bod, pj_emo, pj_wea, pj_foo, pj_tra, pj_sho, pj_wrk, pj_edu, pj_tec, pj_spo, pj_hou, pj_trn
+### polish_japanese — 🔄 IN PROGRESS (97/105 categories, 1455 items)
+ID prefixes used: pj_part, pj_verb, pj_adj, pj_neg, pj_q, pj_pol, pj_cnt, pj_te, pj_nadj, pj_loc, pj_time, pj_des, pj_pst, pj_gr, pj_pot, pj_cta, pj_conj, pj_vg, pj_imp, pj_psv, pj_cau, pj_cba, pj_ctr, pj_vol, pj_cmp, pj_sup, pj_adv, pj_nom, pj_rel, pj_quo, pj_hrs, pj_app, pj_obl, pj_per, pj_prh, pj_rkr, pj_rnd, pj_pur, pj_cga, pj_ckd, pj_lst, pj_smn, pj_chn, pj_prp, pj_exp, pj_adh, pj_try, pj_tri, pj_cpv, pj_hon, pj_hum, pj_exi, pj_dik, pj_duf, pj_sen, pj_fwr, pj_inf, pj_ono, pj_num, pj_fam, pj_bod, pj_emo, pj_wea, pj_foo, pj_tra, pj_sho, pj_wrk, pj_edu, pj_tec, pj_spo, pj_hou, pj_trn, pj_med, pj_soc, pj_opi, pj_req, pj_fcl, pj_idi, pj_prv, pj_n5a, pj_n4a, pj_n3a, pj_n2a, pj_n1a, pj_kei, pj_vnc, pj_ajc, pj_cwa, pj_tcl, pj_emq, pj_cap, pj_bna, pj_reg, pj_sur, pj_cer, pj_unc, pj_fco
 
 | Batch | Categories | Status |
 |-------|-----------|--------|
@@ -203,16 +203,16 @@ ID prefixes used: pj_part, pj_verb, pj_adj, pj_neg, pj_q, pj_pol, pj_cnt, pj_te,
 | 11 | onomatopoeia, numbers_advanced, family_terms, body_health, emotions_feelings | ✅ |
 | 12 | weather_seasons, food_cooking, travel_directions, shopping_money, work_office | ✅ |
 | 13 | education_school, technology, sports_hobbies, housing_home, transport | ✅ |
-| 14 | media_communication, socializing, opinions_arguments, requests_invitations, formal_casual | ⬜ |
-| 15 | idiomatic_expressions, proverbs_sayings, jlpt_n5_patterns, jlpt_n4_patterns, jlpt_n3_patterns | ⬜ |
-| 16 | jlpt_n2_patterns, jlpt_n1_patterns, keigo_review, verb_noun_collocations, adjective_collocations | ⬜ |
-| 17 | counter_words_advanced, temporal_clauses, embedded_questions, causative_passive, benefactive_advanced | ⬜ |
-| 18 | expressing_regret, expressing_surprise, expressing_certainty, expressing_uncertainty, formal_correspondence | ⬜ |
+| 14 | media_communication, socializing, opinions_arguments, requests_invitations, formal_casual | ✅ |
+| 15 | idiomatic_expressions, proverbs_sayings, jlpt_n5_patterns, jlpt_n4_patterns, jlpt_n3_patterns | ✅ |
+| 16 | jlpt_n2_patterns, jlpt_n1_patterns, keigo_review, verb_noun_collocations, adjective_collocations | ✅ |
+| 17 | counter_words_advanced, temporal_clauses, embedded_questions, causative_passive, benefactive_advanced | ✅ |
+| 18 | expressing_regret, expressing_surprise, expressing_certainty, expressing_uncertainty, formal_correspondence | ✅ |
 | 19 | business_japanese, academic_japanese, newspaper_japanese, classical_remnants, common_mistakes | ⬜ |
 | 20 | register_shifts, environment_nature, arts_culture, science_research, exam_strategies | ⬜ |
 
-### polish_ukrainian — 🔄 IN PROGRESS (87/105 categories, 1305 items)
-ID prefixes used: pu_pres, pu_asp, pu_past, pu_fut, pu_case, pu_prep, pu_vc, pu_pp, pu_pos, pu_dem, pu_neg, pu_qt, pu_imp, pu_cond, pu_ref, pu_gn, pu_pl, pu_adj, pu_comp, pu_sup, pu_advb, pu_advm, pu_nc, pu_no, pu_cb, pu_cs, pu_rp, pu_pas, pu_rs, pu_pca, pu_ppas, pu_vn, pu_vm, pu_pvm, pu_ic, pu_voc, pu_inst, pu_gen, pu_dat, pu_acc, pu_loc, pu_cpc, pu_shc, pu_sr, pu_cc, pu_ws, pu_dim, pu_wfp, pu_wfs, pu_cw, pu_ff, pu_ct, pu_te, pu_df, pu_ad, pu_sm, pu_dtd, pu_dir, pu_tt, pu_fr, pu_sp, pu_hb, pu_wo, pu_es, pu_ti, pu_wc, pu_hh, pu_fam, pu_ef, pu_sh, pu_cf, pu_cd, pu_for, pu_inf, pu_pr, pu_oa, pu_ag, pu_ce, pu_cc2, pu_pur, pu_ch, pu_tc, pu_ip, pu_qt2, pu_em, pu_woa, pu_el
+### polish_ukrainian — ✅ COMPLETE (105/105 categories, 1575 items)
+All 20 batches completed. ID prefixes used: pu_pres, pu_asp, pu_past, pu_fut, pu_case, pu_prep, pu_vc, pu_pp, pu_pos, pu_dem, pu_neg, pu_qt, pu_imp, pu_cond, pu_ref, pu_gn, pu_pl, pu_adj, pu_comp, pu_sup, pu_advb, pu_advm, pu_nc, pu_no, pu_cb, pu_cs, pu_rp, pu_pas, pu_rs, pu_pca, pu_ppas, pu_vn, pu_vm, pu_pvm, pu_ic, pu_voc, pu_inst, pu_gen, pu_dat, pu_acc, pu_loc, pu_cpc, pu_shc, pu_sr, pu_cc, pu_ws, pu_dim, pu_wfp, pu_wfs, pu_cw, pu_ff, pu_ct, pu_te, pu_df, pu_ad, pu_sm, pu_dtd, pu_dir, pu_tt, pu_fr, pu_sp, pu_hb, pu_wo, pu_es, pu_ti, pu_wc, pu_hh, pu_fam, pu_ef, pu_sh, pu_cf, pu_cd, pu_for, pu_inf, pu_pr, pu_oa, pu_ag, pu_ce, pu_cc2, pu_pur, pu_ch, pu_tc, pu_ip, pu_qt2, pu_em, pu_woa, pu_el, pu_ie, pu_ps, pu_col, pu_pe, pu_dm, pu_mc, pu_en, pu_pls, pu_ac, pu_scr, pu_be, pu_cj, pu_aw, pu_coe, pu_exs, pu_rt, pu_rev, pu_rsh
 
 | Batch | Categories | Status |
 |-------|-----------|--------|
@@ -232,10 +232,10 @@ ID prefixes used: pu_pres, pu_asp, pu_past, pu_fut, pu_case, pu_prep, pu_vc, pu_
 | 14 | formal_register, informal_register, polite_requests, opinions_arguments, agreeing_disagreeing | ✅ |
 | 15 | cause_effect, contrast_concession, purpose_result, condition_hypothesis, temporal_clauses | ✅ |
 | 16 | indefinite_pronouns, quantifiers, emphatic_constructions, word_order_advanced, ellipsis_patterns | ✅ |
-| 17 | idiomatic_expressions, proverbs_sayings, collocations, phrasal_equivalents, discourse_markers | 🔄 |
-| 18 | media_communication, environment_nature, politics_society, arts_culture, science_research | ⬜ |
-| 19 | business_economics, crime_justice, academic_writing, common_errors, exam_strategies | ⬜ |
-| 20 | religion_traditions, revision_mixed, register_shifts | ⬜ |
+| 17 | idiomatic_expressions, proverbs_sayings, collocations, phrasal_equivalents, discourse_markers | ✅ |
+| 18 | media_communication, environment_nature, politics_society, arts_culture, science_research | ✅ |
+| 19 | business_economics, crime_justice, academic_writing, common_errors, exam_strategies | ✅ |
+| 20 | religion_traditions, revision_mixed, register_shifts | ✅ |
 
 ### french_english — ✅ COMPLETE (105/105 categories, 1575 items)
 All 20 batches completed. ID prefixes used: fe_ps, fe_pc, fe_past, fe_fut, fe_q, fe_neg, fe_pp, fe_ppc, fe_paco, fe_ppf, fe_ar, fe_mv, fe_pn, fe_poa, fe_ppl, fe_pt, fe_tia, fe_cu, fe_sa, fe_mml, fe_comp, fe_sup, fe_af, fe_am, fe_cc, fe_csub, fe_imp, fe_op, fe_dp, fe_rp, fe_ip, fe_poss, fe_czf, fe_cst, fe_pv, fe_rs, fe_qt, fe_rc, fe_gi, fe_pvb, fe_pva, fe_cau, fe_ut, fe_md, fe_st, fe_wi, fe_sva, fe_sya, fe_fc, fe_fp, fe_ppc, fe_ao, fe_te, fe_ss, fe_en, fe_ee, fe_ban, fe_mc, fe_inv, fe_ptcl, fe_cs, fe_edl, fe_dm, fe_hl, fe_fir, fe_ci, fe_ff, fe_col, fe_nt, fe_eo, fe_mr, fe_ab, fe_ob, fe_pe, fe_trv, fe_fd, fe_hb, fe_wb, fe_td, fe_env, fe_edl, fe_spl, fe_ws, fe_shm, fe_hh, fe_tra, fe_emo, fe_fam, fe_dr, fe_det, fe_quant, fe_wf, fe_vp, fe_lw, fe_pun, fe_ep, fe_rq, fe_eq, fe_eco, fe_prl, fe_exs, fe_tel, fe_desc, fe_caj, fe_rev
@@ -473,8 +473,8 @@ ID prefixes used: up_pres, up_case, up_fut, up_ci, up_prep, up_pron, up_pt, up_a
 | 20 | common_errors, cyrillic_challenges, word_stress, register_shifts, revision_mixed | ✅ |
 | 21 | exam_strategies, advanced_grammar_review, final_review | ✅ |
 
-### polish_arabic — 🔄 IN PROGRESS (92/105 categories, 1380 items)
-ID prefixes used: pa_pres, pa_art, pa_past, pa_pr, pa_fut, pa_dual, pa_neg, pa_ga, pa_ns, pa_sm, pa_ppd, pa_pos, pa_prep, pa_dem, pa_num, pa_adja, pa_bp, pa_sp, pa_id, pa_bq, pa_tt, pa_cs, pa_vf1, pa_vf23, pa_vf45, pa_vf67, pa_vf8x, pa_hv, pa_dv, pa_dbv, pa_hz, pa_pva, pa_msdr, pa_ap, pa_pp, pa_kas, pa_ias, pa_acc, pa_gen, pa_nom, pa_cond, pa_rel, pa_imp, pa_subj, pa_jus, pa_n100, pa_ord, pa_comp, pa_tc, pa_adv, pa_opa, pa_hal, pa_tam, pa_exc, pa_voc, pa_oat, pa_rs, pa_pat, pa_tnw, pa_dar, pa_dpa, pa_cn, pa_emv, pa_exf, pa_dim, pa_nsb, pa_vns, pa_top, pa_twk, pa_bdl, pa_5n, pa_dpt, pa_waw, pa_fa, pa_thm, pa_nega, pa_lmn, pa_man, pa_lls, pa_qp, pa_exp, pa_rp, pa_fma, pa_ma, pa_la, pa_qg, pa_ie, pa_ps, pa_ce, pa_ff, pa_tv, pa_fr
+### polish_arabic — 🔄 IN PROGRESS (97/105 categories, 1455 items)
+ID prefixes used: pa_pres, pa_art, pa_past, pa_pr, pa_fut, pa_dual, pa_neg, pa_ga, pa_ns, pa_sm, pa_ppd, pa_pos, pa_prep, pa_dem, pa_num, pa_adja, pa_bp, pa_sp, pa_id, pa_bq, pa_tt, pa_cs, pa_vf1, pa_vf23, pa_vf45, pa_vf67, pa_vf8x, pa_hv, pa_dv, pa_dbv, pa_hz, pa_pva, pa_msdr, pa_ap, pa_pp, pa_kas, pa_ias, pa_acc, pa_gen, pa_nom, pa_cond, pa_rel, pa_imp, pa_subj, pa_jus, pa_n100, pa_ord, pa_comp, pa_tc, pa_adv, pa_opa, pa_hal, pa_tam, pa_exc, pa_voc, pa_oat, pa_rs, pa_pat, pa_tnw, pa_dar, pa_dpa, pa_cn, pa_emv, pa_exf, pa_dim, pa_nsb, pa_vns, pa_top, pa_twk, pa_bdl, pa_5n, pa_dpt, pa_waw, pa_fa, pa_thm, pa_nega, pa_lmn, pa_man, pa_lls, pa_qp, pa_exp, pa_rp, pa_fma, pa_ma, pa_la, pa_qg, pa_ie, pa_ps, pa_ce, pa_ff, pa_tv, pa_fr, pa_hb, pa_wo, pa_ti, pa_en, pa_el
 
 | Batch | Categories | Status |
 |-------|-----------|--------|
@@ -495,7 +495,7 @@ ID prefixes used: pa_pres, pa_art, pa_past, pa_pr, pa_fut, pa_dual, pa_neg, pa_g
 | 15 | maa_negation, lan_laysa, question_particles, exclamation_particles, restriction_particles | ✅ |
 | 16 | formal_arabic, media_arabic, literary_arabic, quran_grammar_basics, idiomatic_expressions_ar | ✅ |
 | 17 | proverbs_sayings_ar, common_errors_polish, false_friends_ar, travel_vocabulary_ar, food_restaurant_ar | ✅ |
-| 18 | health_body_ar, work_office_ar, technology_internet_ar, environment_nature_ar, education_learning_ar | ⬜ |
+| 18 | health_body_ar, work_office_ar, technology_internet_ar, environment_nature_ar, education_learning_ar | ✅ |
 | 19 | sports_hobbies_ar, feelings_emotions_ar, weather_climate_ar, shopping_money_ar, housing_home_ar | ⬜ |
 | 20 | transport_directions_ar, media_communication_ar, exam_strategies_ar | ⬜ |
 
