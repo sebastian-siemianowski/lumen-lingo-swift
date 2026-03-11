@@ -7278,5 +7278,655 @@
         "exampleTranslation": "Proszę uważać na bezpieczeństwo online."
       }
     ]
+  },
+  {
+    "key": "reading_books",
+    "name": "Książki i czytanie",
+    "description": "Słownictwo związane z literaturą i czytaniem",
+    "iconName": "book.fill",
+    "color": "#8B4513",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_book_1",
+        "front": "Książka",
+        "back": "本 (ほん)",
+        "difficulty": "easy",
+        "example": "本を読んでいます。",
+        "exampleTranslation": "Czytam książkę."
+      },
+      {
+        "id": "pj_book_2",
+        "front": "Powieść",
+        "back": "小説 (しょうせつ)",
+        "difficulty": "medium",
+        "example": "小説を書きました。",
+        "exampleTranslation": "Napisałem powieść."
+      },
+      {
+        "id": "pj_book_3",
+        "front": "Autor",
+        "back": "著者 (ちょしゃ)",
+        "difficulty": "medium",
+        "example": "著者は有名です。",
+        "exampleTranslation": "Autor jest słynny."
+      },
+      {
+        "id": "pj_book_4",
+        "front": "Strona",
+        "back": "ページ",
+        "difficulty": "easy",
+        "example": "百ページ読みました。",
+        "exampleTranslation": "Przeczytałem sto stron."
+      },
+      {
+        "id": "pj_book_5",
+        "front": "Biblioteka",
+        "back": "図書館 (としょかん)",
+        "difficulty": "medium",
+        "example": "図書館で勉強します。",
+        "exampleTranslation": "Uczę się w bibliotece."
+      },
+      {
+        "id": "pj_book_6",
+        "front": "Księgarnia",
+        "back": "本屋 (ほんや)",
+        "difficulty": "easy",
+        "example": "本屋に行きました。",
+        "exampleTranslation": "Poszedłem do księgarni."
+      },
+      {
+        "id": "pj_book_7",
+        "front": "Wiersz",
+        "back": "詩 (し)",
+        "difficulty": "medium",
+        "example": "美しい詩を読みました。",
+        "exampleTranslation": "Przeczytałem piękny wiersz."
+      },
+      {
+        "id": "pj_book_8",
+        "front": "Bajka",
+        "back": "童話 (どうわ)",
+        "difficulty": "medium",
+        "example": "子供に童話を読みます。",
+        "exampleTranslation": "Czytam dziecku bajkę."
+      },
+      {
+        "id": "pj_book_9",
+        "front": "Rozdział",
+        "back": "章 (しょう)",
+        "difficulty": "medium",
+        "example": "第一章を読みました。",
+        "exampleTranslation": "Przeczytałem pierwszy rozdział."
+      },
+      {
+        "id": "pj_book_10",
+        "front": "Komiks",
+        "back": "漫画 (まんが)",
+        "difficulty": "easy",
+        "example": "漫画が好きです。",
+        "exampleTranslation": "Lubię komiksy."
+      },
+      {
+        "id": "pj_book_11",
+        "front": "Okładka",
+        "back": "表紙 (ひょうし)",
+        "difficulty": "hard",
+        "example": "表紙がきれいです。",
+        "exampleTranslation": "Okładka jest ładna."
+      },
+      {
+        "id": "pj_book_12",
+        "front": "Słownik",
+        "back": "辞書 (じしょ)",
+        "difficulty": "easy",
+        "example": "辞書で調べました。",
+        "exampleTranslation": "Sprawdziłem w słowniku."
+      },
+      {
+        "id": "pj_book_13",
+        "front": "Gazeta",
+        "back": "新聞 (しんぶん)",
+        "difficulty": "easy",
+        "example": "新聞を読みます。",
+        "exampleTranslation": "Czytam gazetę."
+      },
+      {
+        "id": "pj_book_14",
+        "front": "Czasopismo",
+        "back": "雑誌 (ざっし)",
+        "difficulty": "medium",
+        "example": "雑誌を買いました。",
+        "exampleTranslation": "Kupiłem czasopismo."
+      },
+      {
+        "id": "pj_book_15",
+        "front": "Zakładka",
+        "back": "しおり",
+        "difficulty": "hard",
+        "example": "しおりをはさみました。",
+        "exampleTranslation": "Włożyłem zakładkę."
+      }
+    ]
+  },
+  {
+    "key": "movies_cinema",
+    "name": "Kino i filmy",
+    "description": "Słownictwo filmowe i kinowe",
+    "iconName": "film.fill",
+    "color": "#E74C3C",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_movie_1",
+        "front": "Film",
+        "back": "映画 (えいが)",
+        "difficulty": "easy",
+        "example": "映画を見ました。",
+        "exampleTranslation": "Oglądałem film."
+      },
+      {
+        "id": "pj_movie_2",
+        "front": "Kino",
+        "back": "映画館 (えいがかん)",
+        "difficulty": "easy",
+        "example": "映画館に行きましょう。",
+        "exampleTranslation": "Chodźmy do kina."
+      },
+      {
+        "id": "pj_movie_3",
+        "front": "Aktor",
+        "back": "俳優 (はいゆう)",
+        "difficulty": "medium",
+        "example": "この俳優が好きです。",
+        "exampleTranslation": "Lubię tego aktora."
+      },
+      {
+        "id": "pj_movie_4",
+        "front": "Reżyser",
+        "back": "監督 (かんとく)",
+        "difficulty": "hard",
+        "example": "監督は有名です。",
+        "exampleTranslation": "Reżyser jest słynny."
+      },
+      {
+        "id": "pj_movie_5",
+        "front": "Bilet",
+        "back": "チケット",
+        "difficulty": "easy",
+        "example": "チケットを買いました。",
+        "exampleTranslation": "Kupiłem bilet."
+      },
+      {
+        "id": "pj_movie_6",
+        "front": "Napisy",
+        "back": "字幕 (じまく)",
+        "difficulty": "medium",
+        "example": "字幕付きで見ます。",
+        "exampleTranslation": "Oglądam z napisami."
+      },
+      {
+        "id": "pj_movie_7",
+        "front": "Scena",
+        "back": "シーン",
+        "difficulty": "easy",
+        "example": "このシーンが好きです。",
+        "exampleTranslation": "Lubię tę scenę."
+      },
+      {
+        "id": "pj_movie_8",
+        "front": "Komedia",
+        "back": "コメディ",
+        "difficulty": "easy",
+        "example": "コメディが好きです。",
+        "exampleTranslation": "Lubię komedie."
+      },
+      {
+        "id": "pj_movie_9",
+        "front": "Horror",
+        "back": "ホラー",
+        "difficulty": "easy",
+        "example": "ホラーは苦手です。",
+        "exampleTranslation": "Nie lubię horrorów."
+      },
+      {
+        "id": "pj_movie_10",
+        "front": "Animacja",
+        "back": "アニメ",
+        "difficulty": "easy",
+        "example": "日本のアニメが好きです。",
+        "exampleTranslation": "Lubię japońskie animacje."
+      },
+      {
+        "id": "pj_movie_11",
+        "front": "Popcorn",
+        "back": "ポップコーン",
+        "difficulty": "easy",
+        "example": "ポップコーンを買います。",
+        "exampleTranslation": "Kupię popcorn."
+      },
+      {
+        "id": "pj_movie_12",
+        "front": "Recenzja",
+        "back": "レビュー",
+        "difficulty": "medium",
+        "example": "レビューを読みました。",
+        "exampleTranslation": "Przeczytałem recenzję."
+      },
+      {
+        "id": "pj_movie_13",
+        "front": "Zwiastun",
+        "back": "予告編 (よこくへん)",
+        "difficulty": "hard",
+        "example": "予告編を見ました。",
+        "exampleTranslation": "Obejrzałem zwiastun."
+      },
+      {
+        "id": "pj_movie_14",
+        "front": "Miejsca",
+        "back": "席 (せき)",
+        "difficulty": "easy",
+        "example": "前の席がいいです。",
+        "exampleTranslation": "Wolę miejsca z przodu."
+      },
+      {
+        "id": "pj_movie_15",
+        "front": "Efekty specjalne",
+        "back": "特殊効果 (とくしゅこうか)",
+        "difficulty": "hard",
+        "example": "特殊効果がすごいです。",
+        "exampleTranslation": "Efekty specjalne są niesamowite."
+      }
+    ]
+  },
+  {
+    "key": "music_instruments",
+    "name": "Muzyka i instrumenty",
+    "description": "Instrumenty muzyczne i świat muzyki",
+    "iconName": "music.note",
+    "color": "#8E44AD",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_mus_1",
+        "front": "Muzyka",
+        "back": "音楽 (おんがく)",
+        "difficulty": "easy",
+        "example": "音楽を聴きます。",
+        "exampleTranslation": "Słucham muzyki."
+      },
+      {
+        "id": "pj_mus_2",
+        "front": "Piosenka",
+        "back": "歌 (うた)",
+        "difficulty": "easy",
+        "example": "この歌が好きです。",
+        "exampleTranslation": "Lubię tę piosenkę."
+      },
+      {
+        "id": "pj_mus_3",
+        "front": "Pianino",
+        "back": "ピアノ",
+        "difficulty": "easy",
+        "example": "ピアノを弾きます。",
+        "exampleTranslation": "Gram na pianinie."
+      },
+      {
+        "id": "pj_mus_4",
+        "front": "Gitara",
+        "back": "ギター",
+        "difficulty": "easy",
+        "example": "ギターを練習しています。",
+        "exampleTranslation": "Ćwiczę na gitarze."
+      },
+      {
+        "id": "pj_mus_5",
+        "front": "Skrzypce",
+        "back": "バイオリン",
+        "difficulty": "medium",
+        "example": "バイオリンの音がきれいです。",
+        "exampleTranslation": "Dźwięk skrzypiec jest piękny."
+      },
+      {
+        "id": "pj_mus_6",
+        "front": "Bęben",
+        "back": "ドラム",
+        "difficulty": "easy",
+        "example": "ドラムを叩きます。",
+        "exampleTranslation": "Gram na bębnie."
+      },
+      {
+        "id": "pj_mus_7",
+        "front": "Flet",
+        "back": "フルート",
+        "difficulty": "medium",
+        "example": "フルートを吹きます。",
+        "exampleTranslation": "Gram na flecie."
+      },
+      {
+        "id": "pj_mus_8",
+        "front": "Koncert",
+        "back": "コンサート",
+        "difficulty": "easy",
+        "example": "コンサートに行きました。",
+        "exampleTranslation": "Poszedłem na koncert."
+      },
+      {
+        "id": "pj_mus_9",
+        "front": "Orkiestra",
+        "back": "オーケストラ",
+        "difficulty": "medium",
+        "example": "オーケストラの演奏を聞きました。",
+        "exampleTranslation": "Słuchałem występu orkiestry."
+      },
+      {
+        "id": "pj_mus_10",
+        "front": "Melodia",
+        "back": "メロディー",
+        "difficulty": "easy",
+        "example": "美しいメロディーです。",
+        "exampleTranslation": "To piękna melodia."
+      },
+      {
+        "id": "pj_mus_11",
+        "front": "Rytm",
+        "back": "リズム",
+        "difficulty": "medium",
+        "example": "リズムに乗って踊ります。",
+        "exampleTranslation": "Tańczę w rytm."
+      },
+      {
+        "id": "pj_mus_12",
+        "front": "Śpiewać",
+        "back": "歌う (うたう)",
+        "difficulty": "easy",
+        "example": "歌を歌います。",
+        "exampleTranslation": "Śpiewam piosenkę."
+      },
+      {
+        "id": "pj_mus_13",
+        "front": "Słuchawki",
+        "back": "イヤホン",
+        "difficulty": "easy",
+        "example": "イヤホンで音楽を聴きます。",
+        "exampleTranslation": "Słucham muzyki na słuchawkach."
+      },
+      {
+        "id": "pj_mus_14",
+        "front": "Kompozytor",
+        "back": "作曲家 (さっきょくか)",
+        "difficulty": "hard",
+        "example": "有名な作曲家です。",
+        "exampleTranslation": "To słynny kompozytor."
+      },
+      {
+        "id": "pj_mus_15",
+        "front": "Chr",
+        "back": "合唱 (がっしょう)",
+        "difficulty": "hard",
+        "example": "合唱団で歌っています。",
+        "exampleTranslation": "Śpiewam w chórze."
+      }
+    ]
+  },
+  {
+    "key": "art_creativity",
+    "name": "Sztuka i kreatywność",
+    "description": "Sztuki piękne i twórczość",
+    "iconName": "paintbrush.fill",
+    "color": "#F39C12",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pj_art_1",
+        "front": "Sztuka",
+        "back": "芸術 (げいじゅつ)",
+        "difficulty": "medium",
+        "example": "芸術が好きです。",
+        "exampleTranslation": "Lubię sztukę."
+      },
+      {
+        "id": "pj_art_2",
+        "front": "Obraz",
+        "back": "絵 (え)",
+        "difficulty": "easy",
+        "example": "絵を描きました。",
+        "exampleTranslation": "Namalowałem obraz."
+      },
+      {
+        "id": "pj_art_3",
+        "front": "Rzeźba",
+        "back": "彫刻 (ちょうこく)",
+        "difficulty": "hard",
+        "example": "彫刻を見ました。",
+        "exampleTranslation": "Zobaczyłem rzeźbę."
+      },
+      {
+        "id": "pj_art_4",
+        "front": "Galeria",
+        "back": "ギャラリー",
+        "difficulty": "easy",
+        "example": "ギャラリーを訪れました。",
+        "exampleTranslation": "Odwiedziłem galerię."
+      },
+      {
+        "id": "pj_art_5",
+        "front": "Wystawa",
+        "back": "展覧会 (てんらんかい)",
+        "difficulty": "medium",
+        "example": "展覧会に行きました。",
+        "exampleTranslation": "Poszedłem na wystawę."
+      },
+      {
+        "id": "pj_art_6",
+        "front": "Pędzel",
+        "back": "筆 (ふで)",
+        "difficulty": "medium",
+        "example": "筆で絵を描きます。",
+        "exampleTranslation": "Maluję pędzlem."
+      },
+      {
+        "id": "pj_art_7",
+        "front": "Farba",
+        "back": "絵の具 (えのぐ)",
+        "difficulty": "medium",
+        "example": "絵の具を買いました。",
+        "exampleTranslation": "Kupiłem farby."
+      },
+      {
+        "id": "pj_art_8",
+        "front": "Płótno",
+        "back": "キャンバス",
+        "difficulty": "medium",
+        "example": "キャンバスに描きます。",
+        "exampleTranslation": "Maluję na płótnie."
+      },
+      {
+        "id": "pj_art_9",
+        "front": "Inspiracja",
+        "back": "インスピレーション",
+        "difficulty": "medium",
+        "example": "インスピレーションを受けました。",
+        "exampleTranslation": "Poczułem inspirację."
+      },
+      {
+        "id": "pj_art_10",
+        "front": "Twórczość",
+        "back": "創造力 (そうぞうりょく)",
+        "difficulty": "hard",
+        "example": "創造力が豊かです。",
+        "exampleTranslation": "Ma bogatą twórczość."
+      },
+      {
+        "id": "pj_art_11",
+        "front": "Projekt",
+        "back": "デザイン",
+        "difficulty": "easy",
+        "example": "新しいデザインを考えました。",
+        "exampleTranslation": "Wymyśliłem nowy projekt."
+      },
+      {
+        "id": "pj_art_12",
+        "front": "Fotografia",
+        "back": "写真術 (しゃしんじゅつ)",
+        "difficulty": "hard",
+        "example": "写真術を学んでいます。",
+        "exampleTranslation": "Uczę się fotografii."
+      },
+      {
+        "id": "pj_art_13",
+        "front": "Artysta",
+        "back": "芸術家 (げいじゅつか)",
+        "difficulty": "medium",
+        "example": "有名な芸術家です。",
+        "exampleTranslation": "To słynny artysta."
+      },
+      {
+        "id": "pj_art_14",
+        "front": "Arcydzieło",
+        "back": "傑作 (けっさく)",
+        "difficulty": "hard",
+        "example": "これは傑作です。",
+        "exampleTranslation": "To jest arcydzieło."
+      },
+      {
+        "id": "pj_art_15",
+        "front": "Wyobraźnia",
+        "back": "想像力 (そうぞうりょく)",
+        "difficulty": "hard",
+        "example": "想像力が豊かです。",
+        "exampleTranslation": "Ma bogatą wyobraźnię."
+      }
+    ]
+  },
+  {
+    "key": "goals_dreams",
+    "name": "Cele i marzenia",
+    "description": "Plany, cele życiowe i marzenia",
+    "iconName": "star.fill",
+    "color": "#F1C40F",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pj_goal_1",
+        "front": "Cel",
+        "back": "目標 (もくひょう)",
+        "difficulty": "easy",
+        "example": "目標を立てました。",
+        "exampleTranslation": "Ustawiłem sobie cel."
+      },
+      {
+        "id": "pj_goal_2",
+        "front": "Marzenie",
+        "back": "夢 (ゆめ)",
+        "difficulty": "easy",
+        "example": "夢があります。",
+        "exampleTranslation": "Mam marzenie."
+      },
+      {
+        "id": "pj_goal_3",
+        "front": "Sukces",
+        "back": "成功 (せいこう)",
+        "difficulty": "medium",
+        "example": "成功を収めました。",
+        "exampleTranslation": "Osiągnąłem sukces."
+      },
+      {
+        "id": "pj_goal_4",
+        "front": "Porażka",
+        "back": "失敗 (しっぱい)",
+        "difficulty": "medium",
+        "example": "失敗から学びました。",
+        "exampleTranslation": "Nauczyłem się z porażki."
+      },
+      {
+        "id": "pj_goal_5",
+        "front": "Wysiłek",
+        "back": "努力 (どりょく)",
+        "difficulty": "medium",
+        "example": "努力が大切です。",
+        "exampleTranslation": "Wysiłek jest ważny."
+      },
+      {
+        "id": "pj_goal_6",
+        "front": "Plan",
+        "back": "計画 (けいかく)",
+        "difficulty": "medium",
+        "example": "計画を立てました。",
+        "exampleTranslation": "Zrobiłem plan."
+      },
+      {
+        "id": "pj_goal_7",
+        "front": "Przyszłość",
+        "back": "将来 (しょうらい)",
+        "difficulty": "medium",
+        "example": "将来の夢は何ですか。",
+        "exampleTranslation": "Jakie jest twoje marzenie na przyszłość?"
+      },
+      {
+        "id": "pj_goal_8",
+        "front": "Ambicja",
+        "back": "野心 (やしん)",
+        "difficulty": "hard",
+        "example": "野心があります。",
+        "exampleTranslation": "Ma ambicję."
+      },
+      {
+        "id": "pj_goal_9",
+        "front": "Motywacja",
+        "back": "モチベーション",
+        "difficulty": "medium",
+        "example": "モチベーションが高いです。",
+        "exampleTranslation": "Ma wysoką motywację."
+      },
+      {
+        "id": "pj_goal_10",
+        "front": "Wyzwanie",
+        "back": "挑戦 (ちょうせん)",
+        "difficulty": "hard",
+        "example": "新しい挑戦が好きです。",
+        "exampleTranslation": "Lubię nowe wyzwania."
+      },
+      {
+        "id": "pj_goal_11",
+        "front": "Osiągnięcie",
+        "back": "達成 (たっせい)",
+        "difficulty": "medium",
+        "example": "目標を達成しました。",
+        "exampleTranslation": "Osiągnąłem cel."
+      },
+      {
+        "id": "pj_goal_12",
+        "front": "Determinacja",
+        "back": "決意 (けつい)",
+        "difficulty": "hard",
+        "example": "強い決意を持っています。",
+        "exampleTranslation": "Ma silną determinację."
+      },
+      {
+        "id": "pj_goal_13",
+        "front": "Rozwój",
+        "back": "成長 (せいちょう)",
+        "difficulty": "easy",
+        "example": "成長したいです。",
+        "exampleTranslation": "Chcę się rozwijać."
+      },
+      {
+        "id": "pj_goal_14",
+        "front": "Pewność siebie",
+        "back": "自信 (じしん)",
+        "difficulty": "medium",
+        "example": "自信を持ってください。",
+        "exampleTranslation": "Proszę mieć pewność siebie."
+      },
+      {
+        "id": "pj_goal_15",
+        "front": "Spełnienie",
+        "back": "充実 (じゅうじつ)",
+        "difficulty": "hard",
+        "example": "充実した人生を送りたいです。",
+        "exampleTranslation": "Chcę wieść spełnione życie."
+      }
+    ]
   }
 ]

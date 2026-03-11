@@ -630,7 +630,7 @@ Before adding new categories, upgrade existing 20-21 categories from 10 to 15 it
 | 13 | polish_chinese | Polish | 100/100 | 1500/1500 | 100 | 1500 | 16/16 | ✅ |
 | 14 | polish_french | Polish | 100/100 | 1500/1500 | 100 | 1500 | 16/16 | ✅ |
 | 15 | polish_japanese | Polish | 46/100 | 690/1500 | 100 | 1500 | 5/16 | 🔄 |
-| 16 | polish_ukrainian | Polish | 95/100 | 1425/1500 | 100 | 1500 | 15/16 | 🔄 |
+| 16 | polish_ukrainian | Polish | 100/100 | 1500/1500 | 100 | 1500 | 16/16 | ✅ |
 | 17 | ukrainian_english | Ukrainian | 100/100 | 1500/1500 | 100 | 1500 | 16/16 | ✅ |
 | 18 | ukrainian_polish | Ukrainian | 100/100 | 1500/1500 | 100 | 1500 | 16/16 | ✅ |
 
@@ -941,7 +941,7 @@ Front language: Polish, Back language: Japanese. Target: 100 categories, 1500 it
 
 ---
 
-### polish_ukrainian (Flashcards) — 🔄 IN PROGRESS
+### polish_ukrainian (Flashcards) — ✅ COMPLETE (100/100 categories, 1500 items)
 Front language: Polish, Back language: Ukrainian. Target: 100 categories, 1500 items.
 
 | Batch | Categories | Status |
@@ -962,7 +962,7 @@ Front language: Polish, Back language: Ukrainian. Target: 100 categories, 1500 i
 | 13 | personality_traits, learning_education, tools_diy, documents_forms, safety_emergencies | ✅ |
 | 14 | banking_services, nature_environment, internet_technology, professions_jobs, ideas_creativity | ✅ |
 | 15 | opinions_beliefs, work_office_advanced, energy_power, social_gatherings, materials_substances | ✅ |
-| 16 | special_occasions, personality_character, opinions_thoughts, ukrainian_culture | ⬜ |
+| 16 | special_occasions, personality_character, opinions_thoughts, ukrainian_culture, law_justice | ✅ |
 
 ---
 

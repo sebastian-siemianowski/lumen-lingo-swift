@@ -12348,5 +12348,655 @@
         "exampleTranslation": "Krawężniki są z granitu."
       }
     ]
+  },
+  {
+    "key": "special_occasions",
+    "name": "Okazje specjalne",
+    "description": "Ważne wydarzenia i uroczystości",
+    "iconName": "gift.fill",
+    "color": "#be123c",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pu_spec_1",
+        "front": "Urodziny",
+        "back": "День народження",
+        "difficulty": "easy",
+        "example": "С днем народження! Бажаю щастя!",
+        "exampleTranslation": "Wszystkiego najlepszego! Życzę szczęścia!"
+      },
+      {
+        "id": "pu_spec_2",
+        "front": "Ślub",
+        "back": "Весілля",
+        "difficulty": "easy",
+        "example": "Весілля відбудеться в червні.",
+        "exampleTranslation": "Ślub odbędzie się w czerwcu."
+      },
+      {
+        "id": "pu_spec_3",
+        "front": "Rocznica",
+        "back": "Річниця",
+        "difficulty": "easy",
+        "example": "Сьогодні наша десята річниця.",
+        "exampleTranslation": "Dzisiaj nasza dziesiąta rocznica."
+      },
+      {
+        "id": "pu_spec_4",
+        "front": "Chrzest",
+        "back": "Хрестини",
+        "difficulty": "easy",
+        "example": "Хрестини дитини будуть у неділю.",
+        "exampleTranslation": "Chrzest dziecka będzie w niedzielę."
+      },
+      {
+        "id": "pu_spec_5",
+        "front": "Pogrzeb",
+        "back": "Похорон",
+        "difficulty": "easy",
+        "example": "Похорон відбувся тихо і гідно.",
+        "exampleTranslation": "Pogrzeb odbył się cicho i z godnością."
+      },
+      {
+        "id": "pu_spec_6",
+        "front": "Gratulacje",
+        "back": "Вітання",
+        "difficulty": "easy",
+        "example": "Прийміть мої щирі вітання!",
+        "exampleTranslation": "Przyjmij moje serdeczne gratulacje!"
+      },
+      {
+        "id": "pu_spec_7",
+        "front": "Obchody",
+        "back": "Святкування",
+        "difficulty": "medium",
+        "example": "Святкування тривало до ранку.",
+        "exampleTranslation": "Obchody trwały do rana."
+      },
+      {
+        "id": "pu_spec_8",
+        "front": "Zaręczyny",
+        "back": "Заручини",
+        "difficulty": "medium",
+        "example": "Заручини відбулися на Різдво.",
+        "exampleTranslation": "Zaręczyny odbyły się na Boże Narodzenie."
+      },
+      {
+        "id": "pu_spec_9",
+        "front": "Kondolencje",
+        "back": "Співчуття",
+        "difficulty": "medium",
+        "example": "Прийміть мої щирі співчуття.",
+        "exampleTranslation": "Przyjmij moje szczere kondolencje."
+      },
+      {
+        "id": "pu_spec_10",
+        "front": "Ceremonia",
+        "back": "Церемонія",
+        "difficulty": "medium",
+        "example": "Церемонія була дуже зворушливою.",
+        "exampleTranslation": "Ceremonia była bardzo wzruszająca."
+      },
+      {
+        "id": "pu_spec_11",
+        "front": "Panna młoda",
+        "back": "Наречена",
+        "difficulty": "medium",
+        "example": "Наречена виглядала прекрасно.",
+        "exampleTranslation": "Panna młoda wyglądała pięknie."
+      },
+      {
+        "id": "pu_spec_12",
+        "front": "Pan młody",
+        "back": "Наречений",
+        "difficulty": "medium",
+        "example": "Наречений чекав біля вівтаря.",
+        "exampleTranslation": "Pan młody czekał przy ołtarzu."
+      },
+      {
+        "id": "pu_spec_13",
+        "front": "Jubileusz",
+        "back": "Ювілей",
+        "difficulty": "hard",
+        "example": "Ювілей компанії відзначили урочисто.",
+        "exampleTranslation": "Jubileusz firmy uczczono uroczyście."
+      },
+      {
+        "id": "pu_spec_14",
+        "front": "Wieczór panieński",
+        "back": "Дівич-вечір",
+        "difficulty": "hard",
+        "example": "Дівич-вечір пройшов весело.",
+        "exampleTranslation": "Wieczór panieński był bardzo udany."
+      },
+      {
+        "id": "pu_spec_15",
+        "front": "Miesiąc miodowy",
+        "back": "Медовий місяць",
+        "difficulty": "hard",
+        "example": "Медовий місяць провели в Італії.",
+        "exampleTranslation": "Miesiąc miodowy spędzili we Włoszech."
+      }
+    ]
+  },
+  {
+    "key": "personality_character",
+    "name": "Charakter osobowości",
+    "description": "Zaawansowane cechy osobowości",
+    "iconName": "theatermasks.fill",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pu_char_1",
+        "front": "Pewny siebie",
+        "back": "Впевнений у собі",
+        "difficulty": "easy",
+        "example": "Впевнена у собі людина досягає успіху.",
+        "exampleTranslation": "Pewna siebie osoba odnosi sukces."
+      },
+      {
+        "id": "pu_char_2",
+        "front": "Nieśmiały",
+        "back": "Сором'язливий",
+        "difficulty": "easy",
+        "example": "Сором'язливий хлопець боїться виступати.",
+        "exampleTranslation": "Nieśmiały chłopak boi się wystąpień."
+      },
+      {
+        "id": "pu_char_3",
+        "front": "Życzliwy",
+        "back": "Доброзичливий",
+        "difficulty": "easy",
+        "example": "Доброзичлива сусідка завжди вітається.",
+        "exampleTranslation": "Życzliwa sąsiadka zawsze się wita."
+      },
+      {
+        "id": "pu_char_4",
+        "front": "Zazdrosny",
+        "back": "Заздрісний",
+        "difficulty": "easy",
+        "example": "Заздрісний колега не радіє чужим успіхам.",
+        "exampleTranslation": "Zazdrosny kolega nie cieszy się z cudzych sukcesów."
+      },
+      {
+        "id": "pu_char_5",
+        "front": "Optymista",
+        "back": "Оптиміст",
+        "difficulty": "easy",
+        "example": "Оптиміст бачить добре в усьому.",
+        "exampleTranslation": "Optymista widzi dobro we wszystkim."
+      },
+      {
+        "id": "pu_char_6",
+        "front": "Pesymista",
+        "back": "Песиміст",
+        "difficulty": "easy",
+        "example": "Песиміст завжди очікує найгіршого.",
+        "exampleTranslation": "Pesymista zawsze oczekuje najgorszego."
+      },
+      {
+        "id": "pu_char_7",
+        "front": "Empatyczny",
+        "back": "Емпатичний",
+        "difficulty": "medium",
+        "example": "Емпатична людина розуміє чужі почуття.",
+        "exampleTranslation": "Empatyczna osoba rozumie cudze uczucia."
+      },
+      {
+        "id": "pu_char_8",
+        "front": "Chaotyczny",
+        "back": "Хаотичний",
+        "difficulty": "medium",
+        "example": "Хаотичний працівник не дотримується плану.",
+        "exampleTranslation": "Chaotyczny pracownik nie trzyma się planu."
+      },
+      {
+        "id": "pu_char_9",
+        "front": "Wymagający",
+        "back": "Вимогливий",
+        "difficulty": "medium",
+        "example": "Вимогливий шеф очікує ідеальних результатів.",
+        "exampleTranslation": "Wymagający szef oczekuje idealnych wyników."
+      },
+      {
+        "id": "pu_char_10",
+        "front": "Lojalny",
+        "back": "Лояльний",
+        "difficulty": "medium",
+        "example": "Лояльний друг ніколи не зрадить.",
+        "exampleTranslation": "Lojalny przyjaciel nigdy nie zdradzi."
+      },
+      {
+        "id": "pu_char_11",
+        "front": "Spontaniczny",
+        "back": "Спонтанний",
+        "difficulty": "medium",
+        "example": "Спонтанна подорож — найкраща пригода.",
+        "exampleTranslation": "Spontaniczna podróż to najlepsza przygoda."
+      },
+      {
+        "id": "pu_char_12",
+        "front": "Konsekwentny",
+        "back": "Послідовний",
+        "difficulty": "medium",
+        "example": "Послідовна людина завжди виконує обіцянки.",
+        "exampleTranslation": "Konsekwentna osoba zawsze dotrzymuje obietnic."
+      },
+      {
+        "id": "pu_char_13",
+        "front": "Wyrozumiały",
+        "back": "Поблажливий",
+        "difficulty": "hard",
+        "example": "Поблажливий батько прощає помилки.",
+        "exampleTranslation": "Wyrozumiały ojciec wybacza błędy."
+      },
+      {
+        "id": "pu_char_14",
+        "front": "Bezinteresowny",
+        "back": "Безкорисливий",
+        "difficulty": "hard",
+        "example": "Безкорислива допомога цінується найбільше.",
+        "exampleTranslation": "Bezinteresowna pomoc jest ceniona najbardziej."
+      },
+      {
+        "id": "pu_char_15",
+        "front": "Perfekcjonista",
+        "back": "Перфекціоніст",
+        "difficulty": "hard",
+        "example": "Перфекціоніст ніколи не задоволений результатом.",
+        "exampleTranslation": "Perfekcjonista nigdy nie jest zadowolony z wyniku."
+      }
+    ]
+  },
+  {
+    "key": "opinions_thoughts",
+    "name": "Myśli i opinie",
+    "description": "Wyrażanie myśli i refleksji",
+    "iconName": "brain.head.profile",
+    "color": "#0f766e",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pu_thgt_1",
+        "front": "Myśleć",
+        "back": "Думати",
+        "difficulty": "easy",
+        "example": "Я думаю про майбутнє.",
+        "exampleTranslation": "Myślę o przyszłości."
+      },
+      {
+        "id": "pu_thgt_2",
+        "front": "Rozumieć",
+        "back": "Розуміти",
+        "difficulty": "easy",
+        "example": "Я розумію твою точку зору.",
+        "exampleTranslation": "Rozumiem twój punkt widzenia."
+      },
+      {
+        "id": "pu_thgt_3",
+        "front": "Pamiętać",
+        "back": "Пам'ятати",
+        "difficulty": "easy",
+        "example": "Пам'ятай про наші домовленості.",
+        "exampleTranslation": "Pamiętaj o naszych ustaleniach."
+      },
+      {
+        "id": "pu_thgt_4",
+        "front": "Zapomnieć",
+        "back": "Забути",
+        "difficulty": "easy",
+        "example": "Не забудь купити хліб.",
+        "exampleTranslation": "Nie zapomnij kupić chleba."
+      },
+      {
+        "id": "pu_thgt_5",
+        "front": "Decydować",
+        "back": "Вирішувати",
+        "difficulty": "easy",
+        "example": "Ти повинен сам вирішувати.",
+        "exampleTranslation": "Musisz sam decydować."
+      },
+      {
+        "id": "pu_thgt_6",
+        "front": "Wiedzieć",
+        "back": "Знати",
+        "difficulty": "easy",
+        "example": "Я знаю відповідь на це питання.",
+        "exampleTranslation": "Znam odpowiedź na to pytanie."
+      },
+      {
+        "id": "pu_thgt_7",
+        "front": "Zastanawiać się",
+        "back": "Розмірковувати",
+        "difficulty": "medium",
+        "example": "Розмірковую над цією проблемою.",
+        "exampleTranslation": "Zastanawiam się nad tym problemem."
+      },
+      {
+        "id": "pu_thgt_8",
+        "front": "Wyciągać wnioski",
+        "back": "Робити висновки",
+        "difficulty": "medium",
+        "example": "Треба робити висновки з помилок.",
+        "exampleTranslation": "Trzeba wyciągać wnioski z błędów."
+      },
+      {
+        "id": "pu_thgt_9",
+        "front": "Porównywać",
+        "back": "Порівнювати",
+        "difficulty": "medium",
+        "example": "Порівнюючи два варіанти, другий кращий.",
+        "exampleTranslation": "Porównując dwie opcje, druga jest lepsza."
+      },
+      {
+        "id": "pu_thgt_10",
+        "front": "Analizować",
+        "back": "Аналізувати",
+        "difficulty": "medium",
+        "example": "Аналізуйте дані перед рішенням.",
+        "exampleTranslation": "Analizuj dane przed podjęciem decyzji."
+      },
+      {
+        "id": "pu_thgt_11",
+        "front": "Zakładać",
+        "back": "Припускати",
+        "difficulty": "medium",
+        "example": "Припускаю, що він запізниться.",
+        "exampleTranslation": "Zakładam, że się spóźni."
+      },
+      {
+        "id": "pu_thgt_12",
+        "front": "Przekonywać",
+        "back": "Переконувати",
+        "difficulty": "medium",
+        "example": "Він намагається переконувати колег.",
+        "exampleTranslation": "Próbuje przekonywać kolegów."
+      },
+      {
+        "id": "pu_thgt_13",
+        "front": "Wnioskować",
+        "back": "Умовиводити",
+        "difficulty": "hard",
+        "example": "З фактів можна умовиводити правильний висновок.",
+        "exampleTranslation": "Z faktów można wnioskować prawidłowy wniosek."
+      },
+      {
+        "id": "pu_thgt_14",
+        "front": "Refleksja",
+        "back": "Рефлексія",
+        "difficulty": "hard",
+        "example": "Рефлексія допомагає зрозуміти себе.",
+        "exampleTranslation": "Refleksja pomaga zrozumieć siebie."
+      },
+      {
+        "id": "pu_thgt_15",
+        "front": "Światopogląd",
+        "back": "Світогляд",
+        "difficulty": "hard",
+        "example": "Його світогляд формувався роками.",
+        "exampleTranslation": "Jego światopogląd kształtował się latami."
+      }
+    ]
+  },
+  {
+    "key": "ukrainian_culture",
+    "name": "Kultura ukraińska",
+    "description": "Tradycje i kultura Ukrainy",
+    "iconName": "star.fill",
+    "color": "#1d4ed8",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pu_ukrc_1",
+        "front": "Wyshywanka",
+        "back": "Вишиванка",
+        "difficulty": "easy",
+        "example": "Вишиванка — символ української культури.",
+        "exampleTranslation": "Wyshywanka to symbol kultury ukraińskiej."
+      },
+      {
+        "id": "pu_ukrc_2",
+        "front": "Barszcz",
+        "back": "Борщ",
+        "difficulty": "easy",
+        "example": "Борщ — найпопулярніша страва.",
+        "exampleTranslation": "Barszcz to najpopularniejsza potrawa."
+      },
+      {
+        "id": "pu_ukrc_3",
+        "front": "Pierogi",
+        "back": "Вареники",
+        "difficulty": "easy",
+        "example": "Вареники з вишнями дуже смачні.",
+        "exampleTranslation": "Pierogi z wiśniami są bardzo smaczne."
+      },
+      {
+        "id": "pu_ukrc_4",
+        "front": "Tryzub",
+        "back": "Тризуб",
+        "difficulty": "easy",
+        "example": "Тризуб — герб України.",
+        "exampleTranslation": "Tryzub to herb Ukrainy."
+      },
+      {
+        "id": "pu_ukrc_5",
+        "front": "Kozak",
+        "back": "Козак",
+        "difficulty": "easy",
+        "example": "Козаки — символ свободи.",
+        "exampleTranslation": "Kozacy to symbol wolności."
+      },
+      {
+        "id": "pu_ukrc_6",
+        "front": "Kolęda",
+        "back": "Колядка",
+        "difficulty": "easy",
+        "example": "На Різдво співають колядки.",
+        "exampleTranslation": "Na Boże Narodzenie śpiewa się kolędy."
+      },
+      {
+        "id": "pu_ukrc_7",
+        "front": "Pisanka",
+        "back": "Писанка",
+        "difficulty": "medium",
+        "example": "Писанка — великодня прикраса яйця.",
+        "exampleTranslation": "Pisanka to wielkanocna ozdoba jajka."
+      },
+      {
+        "id": "pu_ukrc_8",
+        "front": "Hopak",
+        "back": "Гопак",
+        "difficulty": "medium",
+        "example": "Гопак — енергійний козацький танець.",
+        "exampleTranslation": "Hopak to energiczny taniec kozacki."
+      },
+      {
+        "id": "pu_ukrc_9",
+        "front": "Bandura",
+        "back": "Бандура",
+        "difficulty": "medium",
+        "example": "Бандура — традиційний український інструмент.",
+        "exampleTranslation": "Bandura to tradycyjny instrument ukraiński."
+      },
+      {
+        "id": "pu_ukrc_10",
+        "front": "Szewczenko",
+        "back": "Шевченко",
+        "difficulty": "medium",
+        "example": "Шевченко — найвеличніший український поет.",
+        "exampleTranslation": "Szewczenko to największy ukraiński poeta."
+      },
+      {
+        "id": "pu_ukrc_11",
+        "front": "Wigilia (ukraińska)",
+        "back": "Святвечір",
+        "difficulty": "medium",
+        "example": "На Святвечір готують дванадцять страв.",
+        "exampleTranslation": "Na wigilię przygotowuje się dwanaście potraw."
+      },
+      {
+        "id": "pu_ukrc_12",
+        "front": "Pampuszki",
+        "back": "Пампушки",
+        "difficulty": "medium",
+        "example": "Пампушки з часником подають до борщу.",
+        "exampleTranslation": "Pampuszki z czosnkiem podaje się do barszczu."
+      },
+      {
+        "id": "pu_ukrc_13",
+        "front": "Sobór",
+        "back": "Собор",
+        "difficulty": "hard",
+        "example": "Софійський собор — пам'ятка архітектури.",
+        "exampleTranslation": "Sobór Sofijski to zabytek architektury."
+      },
+      {
+        "id": "pu_ukrc_14",
+        "front": "Czumak",
+        "back": "Чумак",
+        "difficulty": "hard",
+        "example": "Чумаки перевозили сіль і рибу.",
+        "exampleTranslation": "Czumacy przewozili sól i ryby."
+      },
+      {
+        "id": "pu_ukrc_15",
+        "front": "Kobzar",
+        "back": "Кобзар",
+        "difficulty": "hard",
+        "example": "Кобзарі — мандрівні музиканти та поети.",
+        "exampleTranslation": "Kobzarze to wędrowni muzycy i poeci."
+      }
+    ]
+  },
+  {
+    "key": "law_justice",
+    "name": "Prawo i sprawiedliwość",
+    "description": "System prawny i sądownictwo",
+    "iconName": "scale.3d",
+    "color": "#1e3a5f",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pu_law_1",
+        "front": "Prawo",
+        "back": "Право",
+        "difficulty": "easy",
+        "example": "Кожна людина має право на свободу.",
+        "exampleTranslation": "Każdy człowiek ma prawo do wolności."
+      },
+      {
+        "id": "pu_law_2",
+        "front": "Sąd",
+        "back": "Суд",
+        "difficulty": "easy",
+        "example": "Справу розглядає суд.",
+        "exampleTranslation": "Sprawę rozpatruje sąd."
+      },
+      {
+        "id": "pu_law_3",
+        "front": "Sędzia",
+        "back": "Суддя",
+        "difficulty": "easy",
+        "example": "Суддя виніс вирок.",
+        "exampleTranslation": "Sędzia wydał wyrok."
+      },
+      {
+        "id": "pu_law_4",
+        "front": "Adwokat",
+        "back": "Адвокат",
+        "difficulty": "easy",
+        "example": "Адвокат захищає клієнта.",
+        "exampleTranslation": "Adwokat broni klienta."
+      },
+      {
+        "id": "pu_law_5",
+        "front": "Świadek",
+        "back": "Свідок",
+        "difficulty": "easy",
+        "example": "Свідок дав свідчення в суді.",
+        "exampleTranslation": "Świadek złożył zeznania w sądzie."
+      },
+      {
+        "id": "pu_law_6",
+        "front": "Kara",
+        "back": "Покарання",
+        "difficulty": "easy",
+        "example": "Покарання має бути справедливим.",
+        "exampleTranslation": "Kara powinna być sprawiedliwa."
+      },
+      {
+        "id": "pu_law_7",
+        "front": "Dowód",
+        "back": "Доказ",
+        "difficulty": "medium",
+        "example": "Поліція зібрала докази.",
+        "exampleTranslation": "Policja zebrała dowody."
+      },
+      {
+        "id": "pu_law_8",
+        "front": "Przestępstwo",
+        "back": "Злочин",
+        "difficulty": "medium",
+        "example": "Злочин був розкритий за тиждень.",
+        "exampleTranslation": "Przestępstwo zostało wykryte w ciągu tygodnia."
+      },
+      {
+        "id": "pu_law_9",
+        "front": "Wyrok",
+        "back": "Вирок",
+        "difficulty": "medium",
+        "example": "Вирок буде оголошений у п'ятницю.",
+        "exampleTranslation": "Wyrok zostanie ogłoszony w piątek."
+      },
+      {
+        "id": "pu_law_10",
+        "front": "Umowa",
+        "back": "Договір",
+        "difficulty": "medium",
+        "example": "Договір підписаний обома сторонами.",
+        "exampleTranslation": "Umowa podpisana przez obie strony."
+      },
+      {
+        "id": "pu_law_11",
+        "front": "Grzywna",
+        "back": "Штраф",
+        "difficulty": "medium",
+        "example": "За порушення нарахований штраф.",
+        "exampleTranslation": "Za wykroczenie naliczono grzywnę."
+      },
+      {
+        "id": "pu_law_12",
+        "front": "Zezwolenie",
+        "back": "Дозвіл",
+        "difficulty": "medium",
+        "example": "Потрібен дозвіл на будівництво.",
+        "exampleTranslation": "Potrzebne jest zezwolenie na budowę."
+      },
+      {
+        "id": "pu_law_13",
+        "front": "Apelacja",
+        "back": "Апеляція",
+        "difficulty": "hard",
+        "example": "Апеляція подана до вищого суду.",
+        "exampleTranslation": "Apelacja złożona do wyższego sądu."
+      },
+      {
+        "id": "pu_law_14",
+        "front": "Konstytucja",
+        "back": "Конституція",
+        "difficulty": "hard",
+        "example": "Конституція гарантує основні права громадян.",
+        "exampleTranslation": "Konstytucja gwarantuje podstawowe prawa obywateli."
+      },
+      {
+        "id": "pu_law_15",
+        "front": "Prawomocny",
+        "back": "Правочинний",
+        "difficulty": "hard",
+        "example": "Правочинний вирок не підлягає оскарженню.",
+        "exampleTranslation": "Prawomocny wyrok nie podlega zaskarżeniu."
+      }
+    ]
   }
 ]
