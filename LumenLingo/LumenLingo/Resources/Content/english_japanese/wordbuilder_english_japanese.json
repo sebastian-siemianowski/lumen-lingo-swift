@@ -362,16 +362,16 @@
         "hint": "Head"
       },
       {
-        "word": "て",
-        "hint": "Hand"
+        "word": "うで",
+        "hint": "Arm"
       },
       {
         "word": "あし",
         "hint": "Foot / Leg"
       },
       {
-        "word": "め",
-        "hint": "Eye"
+        "word": "ひたい",
+        "hint": "Forehead"
       },
       {
         "word": "みみ",
@@ -432,8 +432,8 @@
         "hint": "One"
       },
       {
-        "word": "に",
-        "hint": "Two"
+        "word": "ふたつ",
+        "hint": "Two (counter)"
       },
       {
         "word": "さん",
@@ -444,8 +444,8 @@
         "hint": "Four"
       },
       {
-        "word": "ご",
-        "hint": "Five"
+        "word": "いつつ",
+        "hint": "Five (counter)"
       },
       {
         "word": "ろく",
@@ -696,6 +696,1406 @@
       {
         "word": "てぶくろ",
         "hint": "Gloves"
+      }
+    ]
+  },
+  {
+    "key": "house_rooms_wb",
+    "name": "House & Rooms",
+    "description": "Learn to spell parts of the house in Japanese",
+    "iconName": "house",
+    "color": "#78716c",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "いえ",
+        "hint": "House / Home"
+      },
+      {
+        "word": "へや",
+        "hint": "Room"
+      },
+      {
+        "word": "だいどころ",
+        "hint": "Kitchen"
+      },
+      {
+        "word": "トイレ",
+        "hint": "Toilet / Bathroom"
+      },
+      {
+        "word": "げんかん",
+        "hint": "Entrance / Entryway"
+      },
+      {
+        "word": "にわ",
+        "hint": "Garden / Yard"
+      },
+      {
+        "word": "まど",
+        "hint": "Window"
+      },
+      {
+        "word": "ドア",
+        "hint": "Door"
+      },
+      {
+        "word": "かいだん",
+        "hint": "Stairs"
+      },
+      {
+        "word": "やね",
+        "hint": "Roof"
+      },
+      {
+        "word": "ベランダ",
+        "hint": "Balcony / Veranda"
+      },
+      {
+        "word": "おふろ",
+        "hint": "Bathtub / Bath"
+      },
+      {
+        "word": "しんしつ",
+        "hint": "Bedroom"
+      },
+      {
+        "word": "いま",
+        "hint": "Living room"
+      },
+      {
+        "word": "ガレージ",
+        "hint": "Garage"
+      }
+    ]
+  },
+  {
+    "key": "weather_wb",
+    "name": "Weather",
+    "description": "Learn to spell weather-related words in Japanese",
+    "iconName": "cloud.sun",
+    "color": "#0ea5e9",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "てんき",
+        "hint": "Weather"
+      },
+      {
+        "word": "はれ",
+        "hint": "Clear / Sunny"
+      },
+      {
+        "word": "くもり",
+        "hint": "Cloudy"
+      },
+      {
+        "word": "あめ",
+        "hint": "Rain"
+      },
+      {
+        "word": "ゆき",
+        "hint": "Snow"
+      },
+      {
+        "word": "かぜ",
+        "hint": "Wind"
+      },
+      {
+        "word": "たいふう",
+        "hint": "Typhoon"
+      },
+      {
+        "word": "かみなり",
+        "hint": "Thunder / Lightning"
+      },
+      {
+        "word": "にじ",
+        "hint": "Rainbow"
+      },
+      {
+        "word": "きり",
+        "hint": "Fog / Mist"
+      },
+      {
+        "word": "つゆ",
+        "hint": "Rainy season"
+      },
+      {
+        "word": "きおん",
+        "hint": "Temperature"
+      },
+      {
+        "word": "あつい",
+        "hint": "Hot (weather)"
+      },
+      {
+        "word": "さむい",
+        "hint": "Cold (weather)"
+      },
+      {
+        "word": "すずしい",
+        "hint": "Cool / Refreshing"
+      }
+    ]
+  },
+  {
+    "key": "professions_wb",
+    "name": "Professions",
+    "description": "Learn to spell profession names in Japanese",
+    "iconName": "briefcase",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "いしゃ",
+        "hint": "Doctor"
+      },
+      {
+        "word": "せんせい",
+        "hint": "Teacher"
+      },
+      {
+        "word": "エンジニア",
+        "hint": "Engineer"
+      },
+      {
+        "word": "かんごし",
+        "hint": "Nurse"
+      },
+      {
+        "word": "けいさつかん",
+        "hint": "Police officer"
+      },
+      {
+        "word": "しょうぼうし",
+        "hint": "Firefighter"
+      },
+      {
+        "word": "コック",
+        "hint": "Cook / Chef"
+      },
+      {
+        "word": "うんてんしゅ",
+        "hint": "Driver"
+      },
+      {
+        "word": "べんごし",
+        "hint": "Lawyer"
+      },
+      {
+        "word": "かいしゃいん",
+        "hint": "Company employee"
+      },
+      {
+        "word": "デザイナー",
+        "hint": "Designer"
+      },
+      {
+        "word": "やくざいし",
+        "hint": "Pharmacist"
+      },
+      {
+        "word": "プログラマー",
+        "hint": "Programmer"
+      },
+      {
+        "word": "はいゆう",
+        "hint": "Actor / Actress"
+      },
+      {
+        "word": "かしゅ",
+        "hint": "Singer"
+      }
+    ]
+  },
+  {
+    "key": "transport_wb",
+    "name": "Transportation",
+    "description": "Learn to spell transportation words in Japanese",
+    "iconName": "car",
+    "color": "#14b8a6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "くるま",
+        "hint": "Car"
+      },
+      {
+        "word": "でんしゃ",
+        "hint": "Train"
+      },
+      {
+        "word": "バス",
+        "hint": "Bus"
+      },
+      {
+        "word": "ひこうき",
+        "hint": "Airplane"
+      },
+      {
+        "word": "じてんしゃ",
+        "hint": "Bicycle"
+      },
+      {
+        "word": "タクシー",
+        "hint": "Taxi"
+      },
+      {
+        "word": "ふね",
+        "hint": "Ship / Boat"
+      },
+      {
+        "word": "しんかんせん",
+        "hint": "Bullet train"
+      },
+      {
+        "word": "バイク",
+        "hint": "Motorcycle"
+      },
+      {
+        "word": "ちかてつ",
+        "hint": "Subway / Metro"
+      },
+      {
+        "word": "えき",
+        "hint": "Station"
+      },
+      {
+        "word": "くうこう",
+        "hint": "Airport"
+      },
+      {
+        "word": "きっぷ",
+        "hint": "Ticket"
+      },
+      {
+        "word": "ヘリコプター",
+        "hint": "Helicopter"
+      },
+      {
+        "word": "トラック",
+        "hint": "Truck"
+      }
+    ]
+  },
+  {
+    "key": "school_wb",
+    "name": "School",
+    "description": "Learn to spell school-related words in Japanese",
+    "iconName": "book",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "がっこう",
+        "hint": "School"
+      },
+      {
+        "word": "きょうしつ",
+        "hint": "Classroom"
+      },
+      {
+        "word": "せいと",
+        "hint": "Student / Pupil"
+      },
+      {
+        "word": "しゅくだい",
+        "hint": "Homework"
+      },
+      {
+        "word": "しけん",
+        "hint": "Exam / Test"
+      },
+      {
+        "word": "きょうかしょ",
+        "hint": "Textbook"
+      },
+      {
+        "word": "ノート",
+        "hint": "Notebook"
+      },
+      {
+        "word": "えんぴつ",
+        "hint": "Pencil"
+      },
+      {
+        "word": "こくばん",
+        "hint": "Blackboard"
+      },
+      {
+        "word": "としょかん",
+        "hint": "Library"
+      },
+      {
+        "word": "たいいくかん",
+        "hint": "Gymnasium"
+      },
+      {
+        "word": "じゅぎょう",
+        "hint": "Lesson / Class"
+      },
+      {
+        "word": "すうがく",
+        "hint": "Mathematics"
+      },
+      {
+        "word": "れきし",
+        "hint": "History"
+      },
+      {
+        "word": "かがく",
+        "hint": "Science"
+      }
+    ]
+  },
+  {
+    "key": "kitchen_utensils_wb",
+    "name": "Kitchen Items",
+    "description": "Learn to spell kitchen utensil names in Japanese",
+    "iconName": "cup.and.saucer",
+    "color": "#b45309",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "おさら",
+        "hint": "Plate / Dish"
+      },
+      {
+        "word": "コップ",
+        "hint": "Cup / Glass"
+      },
+      {
+        "word": "はし",
+        "hint": "Chopsticks"
+      },
+      {
+        "word": "スプーン",
+        "hint": "Spoon"
+      },
+      {
+        "word": "フォーク",
+        "hint": "Fork"
+      },
+      {
+        "word": "ナイフ",
+        "hint": "Knife"
+      },
+      {
+        "word": "なべ",
+        "hint": "Pot / Saucepan"
+      },
+      {
+        "word": "フライパン",
+        "hint": "Frying pan"
+      },
+      {
+        "word": "れいぞうこ",
+        "hint": "Refrigerator"
+      },
+      {
+        "word": "でんしレンジ",
+        "hint": "Microwave oven"
+      },
+      {
+        "word": "やかん",
+        "hint": "Kettle"
+      },
+      {
+        "word": "ちゃわん",
+        "hint": "Rice bowl / Teacup"
+      },
+      {
+        "word": "おぼん",
+        "hint": "Tray"
+      },
+      {
+        "word": "まないた",
+        "hint": "Cutting board"
+      },
+      {
+        "word": "ほうちょう",
+        "hint": "Kitchen knife"
+      }
+    ]
+  },
+  {
+    "key": "sports_wb",
+    "name": "Sports",
+    "description": "Learn to spell sports names in Japanese",
+    "iconName": "sportscourt",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "サッカー",
+        "hint": "Soccer / Football"
+      },
+      {
+        "word": "やきゅう",
+        "hint": "Baseball"
+      },
+      {
+        "word": "テニス",
+        "hint": "Tennis"
+      },
+      {
+        "word": "バスケットボール",
+        "hint": "Basketball"
+      },
+      {
+        "word": "すいえい",
+        "hint": "Swimming"
+      },
+      {
+        "word": "じゅうどう",
+        "hint": "Judo"
+      },
+      {
+        "word": "からて",
+        "hint": "Karate"
+      },
+      {
+        "word": "バレーボール",
+        "hint": "Volleyball"
+      },
+      {
+        "word": "ゴルフ",
+        "hint": "Golf"
+      },
+      {
+        "word": "スキー",
+        "hint": "Skiing"
+      },
+      {
+        "word": "マラソン",
+        "hint": "Marathon"
+      },
+      {
+        "word": "すもう",
+        "hint": "Sumo wrestling"
+      },
+      {
+        "word": "けんどう",
+        "hint": "Kendo (sword fighting)"
+      },
+      {
+        "word": "たいそう",
+        "hint": "Gymnastics"
+      },
+      {
+        "word": "ボクシング",
+        "hint": "Boxing"
+      }
+    ]
+  },
+  {
+    "key": "music_instruments_wb",
+    "name": "Musical Instruments",
+    "description": "Learn to spell musical instrument names in Japanese",
+    "iconName": "music.note",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ピアノ",
+        "hint": "Piano"
+      },
+      {
+        "word": "ギター",
+        "hint": "Guitar"
+      },
+      {
+        "word": "バイオリン",
+        "hint": "Violin"
+      },
+      {
+        "word": "ドラム",
+        "hint": "Drums"
+      },
+      {
+        "word": "フルート",
+        "hint": "Flute"
+      },
+      {
+        "word": "トランペット",
+        "hint": "Trumpet"
+      },
+      {
+        "word": "たいこ",
+        "hint": "Japanese drum (Taiko)"
+      },
+      {
+        "word": "しゃみせん",
+        "hint": "Shamisen (3-string)"
+      },
+      {
+        "word": "サックス",
+        "hint": "Saxophone"
+      },
+      {
+        "word": "チェロ",
+        "hint": "Cello"
+      },
+      {
+        "word": "ハーモニカ",
+        "hint": "Harmonica"
+      },
+      {
+        "word": "オルガン",
+        "hint": "Organ"
+      },
+      {
+        "word": "こと",
+        "hint": "Koto (Japanese harp)"
+      },
+      {
+        "word": "ウクレレ",
+        "hint": "Ukulele"
+      },
+      {
+        "word": "クラリネット",
+        "hint": "Clarinet"
+      }
+    ]
+  },
+  {
+    "key": "nature_wb",
+    "name": "Nature",
+    "description": "Learn to spell nature-related words in Japanese",
+    "iconName": "leaf",
+    "color": "#15803d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "やま",
+        "hint": "Mountain"
+      },
+      {
+        "word": "かわ",
+        "hint": "River"
+      },
+      {
+        "word": "うみ",
+        "hint": "Sea / Ocean"
+      },
+      {
+        "word": "もり",
+        "hint": "Forest"
+      },
+      {
+        "word": "さくら",
+        "hint": "Cherry blossom"
+      },
+      {
+        "word": "はやし",
+        "hint": "Grove / Woods"
+      },
+      {
+        "word": "そら",
+        "hint": "Sky"
+      },
+      {
+        "word": "ほし",
+        "hint": "Star"
+      },
+      {
+        "word": "つき",
+        "hint": "Moon"
+      },
+      {
+        "word": "たいよう",
+        "hint": "Sun"
+      },
+      {
+        "word": "いし",
+        "hint": "Stone / Rock"
+      },
+      {
+        "word": "すな",
+        "hint": "Sand"
+      },
+      {
+        "word": "みずうみ",
+        "hint": "Lake"
+      },
+      {
+        "word": "たき",
+        "hint": "Waterfall"
+      },
+      {
+        "word": "しま",
+        "hint": "Island"
+      }
+    ]
+  },
+  {
+    "key": "emotions_wb",
+    "name": "Emotions",
+    "description": "Learn to spell emotion words in Japanese",
+    "iconName": "heart",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "うれしい",
+        "hint": "Happy / Glad"
+      },
+      {
+        "word": "かなしい",
+        "hint": "Sad"
+      },
+      {
+        "word": "おこる",
+        "hint": "Angry / To get angry"
+      },
+      {
+        "word": "たのしい",
+        "hint": "Fun / Enjoyable"
+      },
+      {
+        "word": "こわい",
+        "hint": "Scary / Afraid"
+      },
+      {
+        "word": "さびしい",
+        "hint": "Lonely"
+      },
+      {
+        "word": "はずかしい",
+        "hint": "Embarrassed / Shy"
+      },
+      {
+        "word": "おどろく",
+        "hint": "Surprised / To be surprised"
+      },
+      {
+        "word": "しんぱい",
+        "hint": "Worried / Anxiety"
+      },
+      {
+        "word": "やさしい",
+        "hint": "Kind / Gentle"
+      },
+      {
+        "word": "つまらない",
+        "hint": "Boring"
+      },
+      {
+        "word": "なつかしい",
+        "hint": "Nostalgic"
+      },
+      {
+        "word": "くやしい",
+        "hint": "Frustrated / Vexed"
+      },
+      {
+        "word": "すてき",
+        "hint": "Wonderful / Lovely"
+      },
+      {
+        "word": "わくわく",
+        "hint": "Excited / Thrilled"
+      }
+    ]
+  },
+  {
+    "key": "technology_wb",
+    "name": "Technology",
+    "description": "Learn to spell technology words in Japanese",
+    "iconName": "desktopcomputer",
+    "color": "#2563eb",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "パソコン",
+        "hint": "Personal computer"
+      },
+      {
+        "word": "スマートフォン",
+        "hint": "Smartphone"
+      },
+      {
+        "word": "インターネット",
+        "hint": "Internet"
+      },
+      {
+        "word": "メール",
+        "hint": "Email"
+      },
+      {
+        "word": "カメラ",
+        "hint": "Camera"
+      },
+      {
+        "word": "テレビ",
+        "hint": "Television"
+      },
+      {
+        "word": "プリンター",
+        "hint": "Printer"
+      },
+      {
+        "word": "マウス",
+        "hint": "Mouse (computer)"
+      },
+      {
+        "word": "キーボード",
+        "hint": "Keyboard"
+      },
+      {
+        "word": "ソフトウェア",
+        "hint": "Software"
+      },
+      {
+        "word": "アプリ",
+        "hint": "App / Application"
+      },
+      {
+        "word": "データ",
+        "hint": "Data"
+      },
+      {
+        "word": "ロボット",
+        "hint": "Robot"
+      },
+      {
+        "word": "でんち",
+        "hint": "Battery"
+      },
+      {
+        "word": "ウェブサイト",
+        "hint": "Website"
+      }
+    ]
+  },
+  {
+    "key": "office_wb",
+    "name": "Office",
+    "description": "Learn to spell office-related words in Japanese",
+    "iconName": "building.2",
+    "color": "#475569",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "かいぎ",
+        "hint": "Meeting / Conference"
+      },
+      {
+        "word": "しごと",
+        "hint": "Work / Job"
+      },
+      {
+        "word": "でんわ",
+        "hint": "Telephone"
+      },
+      {
+        "word": "しょるい",
+        "hint": "Documents / Papers"
+      },
+      {
+        "word": "つくえ",
+        "hint": "Desk"
+      },
+      {
+        "word": "いす",
+        "hint": "Chair"
+      },
+      {
+        "word": "コピー",
+        "hint": "Copy"
+      },
+      {
+        "word": "ファイル",
+        "hint": "File"
+      },
+      {
+        "word": "スケジュール",
+        "hint": "Schedule"
+      },
+      {
+        "word": "めいし",
+        "hint": "Business card"
+      },
+      {
+        "word": "きゅうりょう",
+        "hint": "Salary / Pay"
+      },
+      {
+        "word": "じょうし",
+        "hint": "Boss / Superior"
+      },
+      {
+        "word": "どうりょう",
+        "hint": "Colleague"
+      },
+      {
+        "word": "ざんぎょう",
+        "hint": "Overtime work"
+      },
+      {
+        "word": "カレンダー",
+        "hint": "Calendar"
+      }
+    ]
+  },
+  {
+    "key": "health_medical_wb",
+    "name": "Health & Medical",
+    "description": "Learn to spell health and medical words in Japanese",
+    "iconName": "cross.case",
+    "color": "#dc2626",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "びょういん",
+        "hint": "Hospital"
+      },
+      {
+        "word": "くすり",
+        "hint": "Medicine / Drug"
+      },
+      {
+        "word": "ねつ",
+        "hint": "Fever / Temperature"
+      },
+      {
+        "word": "いたみ",
+        "hint": "Pain / Ache"
+      },
+      {
+        "word": "けが",
+        "hint": "Injury / Wound"
+      },
+      {
+        "word": "ちゅうしゃ",
+        "hint": "Injection / Shot"
+      },
+      {
+        "word": "けんこう",
+        "hint": "Health"
+      },
+      {
+        "word": "アレルギー",
+        "hint": "Allergy"
+      },
+      {
+        "word": "ずつう",
+        "hint": "Headache"
+      },
+      {
+        "word": "はいしゃ",
+        "hint": "Dentist"
+      },
+      {
+        "word": "しんさつ",
+        "hint": "Medical examination"
+      },
+      {
+        "word": "レントゲン",
+        "hint": "X-ray"
+      },
+      {
+        "word": "マスク",
+        "hint": "Face mask"
+      },
+      {
+        "word": "たいおん",
+        "hint": "Body temperature"
+      },
+      {
+        "word": "にゅういん",
+        "hint": "Hospitalization"
+      }
+    ]
+  },
+  {
+    "key": "travel_wb",
+    "name": "Travel",
+    "description": "Learn to spell travel-related words in Japanese",
+    "iconName": "airplane",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "りょこう",
+        "hint": "Travel / Trip"
+      },
+      {
+        "word": "ホテル",
+        "hint": "Hotel"
+      },
+      {
+        "word": "パスポート",
+        "hint": "Passport"
+      },
+      {
+        "word": "かんこう",
+        "hint": "Sightseeing / Tourism"
+      },
+      {
+        "word": "おみやげ",
+        "hint": "Souvenir"
+      },
+      {
+        "word": "ちず",
+        "hint": "Map"
+      },
+      {
+        "word": "にもつ",
+        "hint": "Luggage / Baggage"
+      },
+      {
+        "word": "よやく",
+        "hint": "Reservation / Booking"
+      },
+      {
+        "word": "ガイド",
+        "hint": "Guide"
+      },
+      {
+        "word": "スーツケース",
+        "hint": "Suitcase"
+      },
+      {
+        "word": "りょかん",
+        "hint": "Japanese inn"
+      },
+      {
+        "word": "おんせん",
+        "hint": "Hot spring"
+      },
+      {
+        "word": "しゃしん",
+        "hint": "Photograph"
+      },
+      {
+        "word": "けしき",
+        "hint": "Scenery / View"
+      },
+      {
+        "word": "みやげもの",
+        "hint": "Gift / Present"
+      }
+    ]
+  },
+  {
+    "key": "hobbies_wb",
+    "name": "Hobbies",
+    "description": "Learn to spell hobby-related words in Japanese",
+    "iconName": "star",
+    "color": "#eab308",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "えいが",
+        "hint": "Movie / Film"
+      },
+      {
+        "word": "おんがく",
+        "hint": "Music"
+      },
+      {
+        "word": "どくしょ",
+        "hint": "Reading (books)"
+      },
+      {
+        "word": "りょうり",
+        "hint": "Cooking"
+      },
+      {
+        "word": "さんぽ",
+        "hint": "Walk / Stroll"
+      },
+      {
+        "word": "ダンス",
+        "hint": "Dance"
+      },
+      {
+        "word": "つり",
+        "hint": "Fishing"
+      },
+      {
+        "word": "キャンプ",
+        "hint": "Camping"
+      },
+      {
+        "word": "カラオケ",
+        "hint": "Karaoke"
+      },
+      {
+        "word": "ゲーム",
+        "hint": "Game"
+      },
+      {
+        "word": "さどう",
+        "hint": "Tea ceremony"
+      },
+      {
+        "word": "ガーデニング",
+        "hint": "Gardening"
+      },
+      {
+        "word": "いけばな",
+        "hint": "Flower arranging (Ikebana)"
+      },
+      {
+        "word": "しょどう",
+        "hint": "Calligraphy"
+      },
+      {
+        "word": "おりがみ",
+        "hint": "Origami (paper folding)"
+      }
+    ]
+  },
+  {
+    "key": "drinks_beverages_wb",
+    "name": "Drinks & Beverages",
+    "description": "Learn to spell drink and beverage names in Japanese",
+    "iconName": "cup.and.saucer",
+    "color": "#0d9488",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "みず",
+        "hint": "Water"
+      },
+      {
+        "word": "おちゃ",
+        "hint": "Tea (green tea)"
+      },
+      {
+        "word": "コーヒー",
+        "hint": "Coffee"
+      },
+      {
+        "word": "ジュース",
+        "hint": "Juice"
+      },
+      {
+        "word": "ぎゅうにゅう",
+        "hint": "Milk"
+      },
+      {
+        "word": "ビール",
+        "hint": "Beer"
+      },
+      {
+        "word": "ワイン",
+        "hint": "Wine"
+      },
+      {
+        "word": "にほんしゅ",
+        "hint": "Japanese sake"
+      },
+      {
+        "word": "こうちゃ",
+        "hint": "Black tea"
+      },
+      {
+        "word": "ココア",
+        "hint": "Cocoa / Hot chocolate"
+      },
+      {
+        "word": "ラムネ",
+        "hint": "Ramune (Japanese soda)"
+      },
+      {
+        "word": "むぎちゃ",
+        "hint": "Barley tea"
+      },
+      {
+        "word": "しょうちゅう",
+        "hint": "Shochu (distilled spirit)"
+      },
+      {
+        "word": "レモネード",
+        "hint": "Lemonade"
+      },
+      {
+        "word": "ミルクティー",
+        "hint": "Milk tea"
+      }
+    ]
+  },
+  {
+    "key": "desserts_sweets_wb",
+    "name": "Desserts & Sweets",
+    "description": "Learn to spell dessert and sweet names in Japanese",
+    "iconName": "birthday.cake",
+    "color": "#f472b6",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ケーキ",
+        "hint": "Cake"
+      },
+      {
+        "word": "チョコレート",
+        "hint": "Chocolate"
+      },
+      {
+        "word": "アイスクリーム",
+        "hint": "Ice cream"
+      },
+      {
+        "word": "クッキー",
+        "hint": "Cookie"
+      },
+      {
+        "word": "だいふく",
+        "hint": "Mochi stuffed with filling"
+      },
+      {
+        "word": "ようかん",
+        "hint": "Sweet bean jelly"
+      },
+      {
+        "word": "せんべい",
+        "hint": "Rice cracker"
+      },
+      {
+        "word": "ドーナツ",
+        "hint": "Doughnut"
+      },
+      {
+        "word": "プリン",
+        "hint": "Pudding / Flan"
+      },
+      {
+        "word": "たいやき",
+        "hint": "Fish-shaped cake"
+      },
+      {
+        "word": "だんご",
+        "hint": "Sweet rice dumplings"
+      },
+      {
+        "word": "カステラ",
+        "hint": "Castella sponge cake"
+      },
+      {
+        "word": "わがし",
+        "hint": "Japanese sweets"
+      },
+      {
+        "word": "パフェ",
+        "hint": "Parfait"
+      },
+      {
+        "word": "クレープ",
+        "hint": "Crepe"
+      }
+    ]
+  },
+  {
+    "key": "furniture_wb",
+    "name": "Furniture",
+    "description": "Learn to spell furniture names in Japanese",
+    "iconName": "sofa",
+    "color": "#a16207",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ソファー",
+        "hint": "Sofa / Couch"
+      },
+      {
+        "word": "ベッド",
+        "hint": "Bed"
+      },
+      {
+        "word": "たんす",
+        "hint": "Dresser / Chest of drawers"
+      },
+      {
+        "word": "テーブル",
+        "hint": "Table"
+      },
+      {
+        "word": "ほんだな",
+        "hint": "Bookshelf"
+      },
+      {
+        "word": "カーテン",
+        "hint": "Curtain"
+      },
+      {
+        "word": "ふとん",
+        "hint": "Futon (Japanese bedding)"
+      },
+      {
+        "word": "たたみ",
+        "hint": "Tatami mat"
+      },
+      {
+        "word": "かがみ",
+        "hint": "Mirror"
+      },
+      {
+        "word": "でんき",
+        "hint": "Light / Lamp"
+      },
+      {
+        "word": "カーペット",
+        "hint": "Carpet"
+      },
+      {
+        "word": "こたつ",
+        "hint": "Kotatsu (heated table)"
+      },
+      {
+        "word": "ざぶとん",
+        "hint": "Floor cushion"
+      },
+      {
+        "word": "クローゼット",
+        "hint": "Closet"
+      },
+      {
+        "word": "たな",
+        "hint": "Shelf"
+      }
+    ]
+  },
+  {
+    "key": "tools_wb",
+    "name": "Tools",
+    "description": "Learn to spell tool names in Japanese",
+    "iconName": "wrench",
+    "color": "#71717a",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ハンマー",
+        "hint": "Hammer"
+      },
+      {
+        "word": "ドライバー",
+        "hint": "Screwdriver"
+      },
+      {
+        "word": "ペンチ",
+        "hint": "Pliers"
+      },
+      {
+        "word": "のこぎり",
+        "hint": "Saw"
+      },
+      {
+        "word": "かなづち",
+        "hint": "Hammer (Japanese)"
+      },
+      {
+        "word": "ねじ",
+        "hint": "Screw"
+      },
+      {
+        "word": "くぎ",
+        "hint": "Nail"
+      },
+      {
+        "word": "スパナ",
+        "hint": "Wrench / Spanner"
+      },
+      {
+        "word": "はさみ",
+        "hint": "Scissors"
+      },
+      {
+        "word": "ものさし",
+        "hint": "Ruler"
+      },
+      {
+        "word": "テープ",
+        "hint": "Tape"
+      },
+      {
+        "word": "ロープ",
+        "hint": "Rope"
+      },
+      {
+        "word": "ブラシ",
+        "hint": "Brush"
+      },
+      {
+        "word": "バケツ",
+        "hint": "Bucket"
+      },
+      {
+        "word": "やすり",
+        "hint": "File / Rasp"
+      }
+    ]
+  },
+  {
+    "key": "materials_wb",
+    "name": "Materials",
+    "description": "Learn to spell material names in Japanese",
+    "iconName": "cube",
+    "color": "#9333ea",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "きん",
+        "hint": "Gold"
+      },
+      {
+        "word": "ぎん",
+        "hint": "Silver"
+      },
+      {
+        "word": "てつ",
+        "hint": "Iron"
+      },
+      {
+        "word": "どう",
+        "hint": "Copper"
+      },
+      {
+        "word": "ガラス",
+        "hint": "Glass"
+      },
+      {
+        "word": "プラスチック",
+        "hint": "Plastic"
+      },
+      {
+        "word": "もめん",
+        "hint": "Cotton"
+      },
+      {
+        "word": "きぬ",
+        "hint": "Silk"
+      },
+      {
+        "word": "ぬの",
+        "hint": "Cloth / Fabric"
+      },
+      {
+        "word": "ゴム",
+        "hint": "Rubber"
+      },
+      {
+        "word": "コンクリート",
+        "hint": "Concrete"
+      },
+      {
+        "word": "せともの",
+        "hint": "Ceramics / Pottery"
+      },
+      {
+        "word": "たけ",
+        "hint": "Bamboo"
+      },
+      {
+        "word": "ダイヤモンド",
+        "hint": "Diamond"
+      },
+      {
+        "word": "アルミ",
+        "hint": "Aluminum"
       }
     ]
   }

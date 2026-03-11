@@ -1748,5 +1748,355 @@
         "hint": "خياطة"
       }
     ]
+  },
+  {
+    "key": "drinks_beverages_wb",
+    "name": "مشروبات",
+    "description": "أسماء المشروبات بالإنجليزية",
+    "iconName": "cup.and.saucer",
+    "color": "#0d9488",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "water",
+        "hint": "ماء"
+      },
+      {
+        "word": "juice",
+        "hint": "عصير"
+      },
+      {
+        "word": "coffee",
+        "hint": "قهوة"
+      },
+      {
+        "word": "milk",
+        "hint": "حليب"
+      },
+      {
+        "word": "lemonade",
+        "hint": "عصير ليمون"
+      },
+      {
+        "word": "smoothie",
+        "hint": "عصير مخفوق"
+      },
+      {
+        "word": "cocoa",
+        "hint": "كاكاو"
+      },
+      {
+        "word": "milkshake",
+        "hint": "ميلك شيك"
+      },
+      {
+        "word": "espresso",
+        "hint": "إسبريسو"
+      },
+      {
+        "word": "mineral",
+        "hint": "مياه معدنية"
+      },
+      {
+        "word": "herbal",
+        "hint": "أعشاب"
+      },
+      {
+        "word": "cider",
+        "hint": "عصير تفاح"
+      },
+      {
+        "word": "sparkling",
+        "hint": "مياه فوارة"
+      },
+      {
+        "word": "cappuccino",
+        "hint": "كابتشينو"
+      },
+      {
+        "word": "latte",
+        "hint": "لاتيه"
+      }
+    ]
+  },
+  {
+    "key": "desserts_sweets_wb",
+    "name": "حلويات",
+    "description": "أسماء الحلويات والمعجنات بالإنجليزية",
+    "iconName": "birthday.cake",
+    "color": "#db2777",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "cake",
+        "hint": "كعكة"
+      },
+      {
+        "word": "cookie",
+        "hint": "بسكويت"
+      },
+      {
+        "word": "chocolate",
+        "hint": "شوكولاتة"
+      },
+      {
+        "word": "pudding",
+        "hint": "بودينغ"
+      },
+      {
+        "word": "brownie",
+        "hint": "براوني"
+      },
+      {
+        "word": "muffin",
+        "hint": "مافن"
+      },
+      {
+        "word": "donut",
+        "hint": "دونات"
+      },
+      {
+        "word": "waffle",
+        "hint": "وافل"
+      },
+      {
+        "word": "cupcake",
+        "hint": "كب كيك"
+      },
+      {
+        "word": "tart",
+        "hint": "فطيرة"
+      },
+      {
+        "word": "candy",
+        "hint": "حلوى"
+      },
+      {
+        "word": "fudge",
+        "hint": "حلوى الفدج"
+      },
+      {
+        "word": "caramel",
+        "hint": "كراميل"
+      },
+      {
+        "word": "custard",
+        "hint": "كاسترد"
+      },
+      {
+        "word": "croissant",
+        "hint": "كرواسون"
+      }
+    ]
+  },
+  {
+    "key": "furniture_wb",
+    "name": "أثاث",
+    "description": "أسماء قطع الأثاث المنزلي بالإنجليزية",
+    "iconName": "sofa",
+    "color": "#92400e",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "chair",
+        "hint": "كرسي"
+      },
+      {
+        "word": "table",
+        "hint": "طاولة"
+      },
+      {
+        "word": "sofa",
+        "hint": "أريكة"
+      },
+      {
+        "word": "bed",
+        "hint": "سرير"
+      },
+      {
+        "word": "shelf",
+        "hint": "رف"
+      },
+      {
+        "word": "closet",
+        "hint": "خزانة ملابس"
+      },
+      {
+        "word": "drawer",
+        "hint": "درج"
+      },
+      {
+        "word": "mirror",
+        "hint": "مرآة"
+      },
+      {
+        "word": "cabinet",
+        "hint": "خزانة"
+      },
+      {
+        "word": "curtain",
+        "hint": "ستارة"
+      },
+      {
+        "word": "carpet",
+        "hint": "سجادة"
+      },
+      {
+        "word": "pillow",
+        "hint": "وسادة"
+      },
+      {
+        "word": "blanket",
+        "hint": "بطانية"
+      },
+      {
+        "word": "lamp",
+        "hint": "مصباح"
+      },
+      {
+        "word": "mattress",
+        "hint": "فراش"
+      }
+    ]
+  },
+  {
+    "key": "tools_wb",
+    "name": "أدوات",
+    "description": "أسماء الأدوات والعدد بالإنجليزية",
+    "iconName": "wrench",
+    "color": "#a16207",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "hammer",
+        "hint": "مطرقة"
+      },
+      {
+        "word": "drill",
+        "hint": "مثقاب"
+      },
+      {
+        "word": "wrench",
+        "hint": "مفتاح ربط"
+      },
+      {
+        "word": "pliers",
+        "hint": "كماشة"
+      },
+      {
+        "word": "saw",
+        "hint": "منشار"
+      },
+      {
+        "word": "screw",
+        "hint": "برغي"
+      },
+      {
+        "word": "nail",
+        "hint": "مسمار"
+      },
+      {
+        "word": "shovel",
+        "hint": "مجرفة"
+      },
+      {
+        "word": "bucket",
+        "hint": "دلو"
+      },
+      {
+        "word": "ladder",
+        "hint": "سلم"
+      },
+      {
+        "word": "axe",
+        "hint": "فأس"
+      },
+      {
+        "word": "chisel",
+        "hint": "إزميل"
+      },
+      {
+        "word": "clamp",
+        "hint": "ملزمة"
+      },
+      {
+        "word": "level",
+        "hint": "ميزان مائي"
+      },
+      {
+        "word": "sandpaper",
+        "hint": "ورق صنفرة"
+      }
+    ]
+  },
+  {
+    "key": "materials_wb",
+    "name": "مواد",
+    "description": "أسماء المواد والخامات بالإنجليزية",
+    "iconName": "cube",
+    "color": "#6d28d9",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "wood",
+        "hint": "خشب"
+      },
+      {
+        "word": "metal",
+        "hint": "معدن"
+      },
+      {
+        "word": "glass",
+        "hint": "زجاج"
+      },
+      {
+        "word": "stone",
+        "hint": "حجر"
+      },
+      {
+        "word": "cotton",
+        "hint": "قطن"
+      },
+      {
+        "word": "leather",
+        "hint": "جلد"
+      },
+      {
+        "word": "silk",
+        "hint": "حرير"
+      },
+      {
+        "word": "rubber",
+        "hint": "مطاط"
+      },
+      {
+        "word": "plastic",
+        "hint": "بلاستيك"
+      },
+      {
+        "word": "ceramic",
+        "hint": "سيراميك"
+      },
+      {
+        "word": "bronze",
+        "hint": "برونز"
+      },
+      {
+        "word": "copper",
+        "hint": "نحاس"
+      },
+      {
+        "word": "marble",
+        "hint": "رخام"
+      },
+      {
+        "word": "velvet",
+        "hint": "مخمل"
+      },
+      {
+        "word": "concrete",
+        "hint": "خرسانة"
+      }
+    ]
   }
 ]

@@ -1398,5 +1398,705 @@
         "hint": "Embarrassed"
       }
     ]
+  },
+  {
+    "key": "technology_wb",
+    "name": "Technology",
+    "description": "Technology and digital vocabulary in Chinese",
+    "iconName": "desktopcomputer",
+    "color": "#2563eb",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "电脑",
+        "hint": "Computer"
+      },
+      {
+        "word": "手机",
+        "hint": "Mobile phone"
+      },
+      {
+        "word": "键盘",
+        "hint": "Keyboard"
+      },
+      {
+        "word": "鼠标",
+        "hint": "Mouse (computer)"
+      },
+      {
+        "word": "屏幕",
+        "hint": "Screen"
+      },
+      {
+        "word": "打印机",
+        "hint": "Printer"
+      },
+      {
+        "word": "耳机",
+        "hint": "Headphones"
+      },
+      {
+        "word": "摄像头",
+        "hint": "Camera / Webcam"
+      },
+      {
+        "word": "密码",
+        "hint": "Password"
+      },
+      {
+        "word": "网络",
+        "hint": "Network / Internet"
+      },
+      {
+        "word": "软件",
+        "hint": "Software"
+      },
+      {
+        "word": "硬件",
+        "hint": "Hardware"
+      },
+      {
+        "word": "数据",
+        "hint": "Data"
+      },
+      {
+        "word": "下载",
+        "hint": "Download"
+      },
+      {
+        "word": "充电器",
+        "hint": "Charger"
+      }
+    ]
+  },
+  {
+    "key": "office_wb",
+    "name": "Office",
+    "description": "Office supplies and workplace vocabulary in Chinese",
+    "iconName": "building.2",
+    "color": "#475569",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "办公室",
+        "hint": "Office"
+      },
+      {
+        "word": "办公桌",
+        "hint": "Office desk"
+      },
+      {
+        "word": "椅子",
+        "hint": "Chair"
+      },
+      {
+        "word": "文件",
+        "hint": "Document"
+      },
+      {
+        "word": "信封",
+        "hint": "Envelope"
+      },
+      {
+        "word": "订书机",
+        "hint": "Stapler"
+      },
+      {
+        "word": "剪刀",
+        "hint": "Scissors"
+      },
+      {
+        "word": "胶带",
+        "hint": "Tape"
+      },
+      {
+        "word": "回形针",
+        "hint": "Paper clip"
+      },
+      {
+        "word": "日历",
+        "hint": "Calendar"
+      },
+      {
+        "word": "计算器",
+        "hint": "Calculator"
+      },
+      {
+        "word": "会议",
+        "hint": "Meeting"
+      },
+      {
+        "word": "合同",
+        "hint": "Contract"
+      },
+      {
+        "word": "名片",
+        "hint": "Business card"
+      },
+      {
+        "word": "笔记本",
+        "hint": "Notebook"
+      }
+    ]
+  },
+  {
+    "key": "health_medical_wb",
+    "name": "Health & Medical",
+    "description": "Health and medical vocabulary in Chinese",
+    "iconName": "cross.case",
+    "color": "#dc2626",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "医院",
+        "hint": "Hospital"
+      },
+      {
+        "word": "药房",
+        "hint": "Pharmacy"
+      },
+      {
+        "word": "感冒",
+        "hint": "Cold (illness)"
+      },
+      {
+        "word": "发烧",
+        "hint": "Fever"
+      },
+      {
+        "word": "头疼",
+        "hint": "Headache"
+      },
+      {
+        "word": "咳嗽",
+        "hint": "Cough"
+      },
+      {
+        "word": "过敏",
+        "hint": "Allergy"
+      },
+      {
+        "word": "处方",
+        "hint": "Prescription"
+      },
+      {
+        "word": "手术",
+        "hint": "Surgery"
+      },
+      {
+        "word": "疫苗",
+        "hint": "Vaccine"
+      },
+      {
+        "word": "血压",
+        "hint": "Blood pressure"
+      },
+      {
+        "word": "体检",
+        "hint": "Physical exam"
+      },
+      {
+        "word": "急救",
+        "hint": "First aid"
+      },
+      {
+        "word": "绷带",
+        "hint": "Bandage"
+      },
+      {
+        "word": "药片",
+        "hint": "Pill / Tablet"
+      }
+    ]
+  },
+  {
+    "key": "travel_wb",
+    "name": "Travel",
+    "description": "Travel and tourism vocabulary in Chinese",
+    "iconName": "airplane",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "护照",
+        "hint": "Passport"
+      },
+      {
+        "word": "签证",
+        "hint": "Visa"
+      },
+      {
+        "word": "行李",
+        "hint": "Luggage"
+      },
+      {
+        "word": "机票",
+        "hint": "Plane ticket"
+      },
+      {
+        "word": "酒店",
+        "hint": "Hotel"
+      },
+      {
+        "word": "旅游",
+        "hint": "Tourism"
+      },
+      {
+        "word": "景点",
+        "hint": "Scenic spot"
+      },
+      {
+        "word": "地图",
+        "hint": "Map"
+      },
+      {
+        "word": "导游",
+        "hint": "Tour guide"
+      },
+      {
+        "word": "纪念品",
+        "hint": "Souvenir"
+      },
+      {
+        "word": "海关",
+        "hint": "Customs"
+      },
+      {
+        "word": "登机牌",
+        "hint": "Boarding pass"
+      },
+      {
+        "word": "预订",
+        "hint": "Reservation"
+      },
+      {
+        "word": "货币",
+        "hint": "Currency"
+      },
+      {
+        "word": "旅馆",
+        "hint": "Inn / Hostel"
+      }
+    ]
+  },
+  {
+    "key": "hobbies_wb",
+    "name": "Hobbies",
+    "description": "Hobbies and leisure activities in Chinese",
+    "iconName": "star",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "阅读",
+        "hint": "Reading"
+      },
+      {
+        "word": "绘画",
+        "hint": "Painting"
+      },
+      {
+        "word": "摄影",
+        "hint": "Photography"
+      },
+      {
+        "word": "烹饪",
+        "hint": "Cooking"
+      },
+      {
+        "word": "钓鱼",
+        "hint": "Fishing"
+      },
+      {
+        "word": "园艺",
+        "hint": "Gardening"
+      },
+      {
+        "word": "下棋",
+        "hint": "Playing chess"
+      },
+      {
+        "word": "集邮",
+        "hint": "Stamp collecting"
+      },
+      {
+        "word": "编织",
+        "hint": "Knitting"
+      },
+      {
+        "word": "登山",
+        "hint": "Mountain climbing"
+      },
+      {
+        "word": "骑马",
+        "hint": "Horse riding"
+      },
+      {
+        "word": "潜水",
+        "hint": "Diving"
+      },
+      {
+        "word": "冲浪",
+        "hint": "Surfing"
+      },
+      {
+        "word": "瑜伽",
+        "hint": "Yoga"
+      },
+      {
+        "word": "书法",
+        "hint": "Calligraphy"
+      }
+    ]
+  },
+  {
+    "key": "drinks_beverages_wb",
+    "name": "Drinks & Beverages",
+    "description": "Beverage and drink names in Chinese",
+    "iconName": "cup.and.saucer",
+    "color": "#0d9488",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "绿茶",
+        "hint": "Green tea"
+      },
+      {
+        "word": "红茶",
+        "hint": "Black tea"
+      },
+      {
+        "word": "咖啡",
+        "hint": "Coffee"
+      },
+      {
+        "word": "果汁",
+        "hint": "Fruit juice"
+      },
+      {
+        "word": "可乐",
+        "hint": "Cola"
+      },
+      {
+        "word": "啤酒",
+        "hint": "Beer"
+      },
+      {
+        "word": "红酒",
+        "hint": "Red wine"
+      },
+      {
+        "word": "豆浆",
+        "hint": "Soy milk"
+      },
+      {
+        "word": "奶茶",
+        "hint": "Milk tea"
+      },
+      {
+        "word": "矿泉水",
+        "hint": "Mineral water"
+      },
+      {
+        "word": "白酒",
+        "hint": "Baijiu (Chinese liquor)"
+      },
+      {
+        "word": "酸奶",
+        "hint": "Yogurt drink"
+      },
+      {
+        "word": "椰汁",
+        "hint": "Coconut juice"
+      },
+      {
+        "word": "柠檬水",
+        "hint": "Lemonade"
+      },
+      {
+        "word": "热巧克力",
+        "hint": "Hot chocolate"
+      }
+    ]
+  },
+  {
+    "key": "desserts_sweets_wb",
+    "name": "Desserts & Sweets",
+    "description": "Dessert and sweet treat names in Chinese",
+    "iconName": "birthday.cake",
+    "color": "#f472b6",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "月饼",
+        "hint": "Mooncake"
+      },
+      {
+        "word": "汤圆",
+        "hint": "Glutinous rice balls"
+      },
+      {
+        "word": "冰淇淋",
+        "hint": "Ice cream"
+      },
+      {
+        "word": "巧克力",
+        "hint": "Chocolate"
+      },
+      {
+        "word": "饼干",
+        "hint": "Cookie / Biscuit"
+      },
+      {
+        "word": "布丁",
+        "hint": "Pudding"
+      },
+      {
+        "word": "糖果",
+        "hint": "Candy"
+      },
+      {
+        "word": "果冻",
+        "hint": "Jelly"
+      },
+      {
+        "word": "蜂蜜",
+        "hint": "Honey"
+      },
+      {
+        "word": "红豆沙",
+        "hint": "Red bean paste"
+      },
+      {
+        "word": "甜甜圈",
+        "hint": "Donut"
+      },
+      {
+        "word": "麻薯",
+        "hint": "Mochi"
+      },
+      {
+        "word": "蛋挞",
+        "hint": "Egg tart"
+      },
+      {
+        "word": "绿豆糕",
+        "hint": "Mung bean cake"
+      },
+      {
+        "word": "杏仁饼",
+        "hint": "Almond cookie"
+      }
+    ]
+  },
+  {
+    "key": "furniture_wb",
+    "name": "Furniture",
+    "description": "Furniture and home furnishing names in Chinese",
+    "iconName": "sofa",
+    "color": "#a16207",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "沙发",
+        "hint": "Sofa"
+      },
+      {
+        "word": "书架",
+        "hint": "Bookshelf"
+      },
+      {
+        "word": "衣柜",
+        "hint": "Wardrobe"
+      },
+      {
+        "word": "床铺",
+        "hint": "Bed"
+      },
+      {
+        "word": "桌子",
+        "hint": "Table"
+      },
+      {
+        "word": "抽屉",
+        "hint": "Drawer"
+      },
+      {
+        "word": "台灯",
+        "hint": "Desk lamp"
+      },
+      {
+        "word": "窗帘",
+        "hint": "Curtain"
+      },
+      {
+        "word": "地毯",
+        "hint": "Carpet"
+      },
+      {
+        "word": "枕头",
+        "hint": "Pillow"
+      },
+      {
+        "word": "被子",
+        "hint": "Quilt / Blanket"
+      },
+      {
+        "word": "镜子",
+        "hint": "Mirror"
+      },
+      {
+        "word": "花瓶",
+        "hint": "Vase"
+      },
+      {
+        "word": "相框",
+        "hint": "Picture frame"
+      },
+      {
+        "word": "梳妆台",
+        "hint": "Vanity / Dressing table"
+      }
+    ]
+  },
+  {
+    "key": "tools_wb",
+    "name": "Tools",
+    "description": "Common tools and hardware in Chinese",
+    "iconName": "wrench",
+    "color": "#71717a",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "锤子",
+        "hint": "Hammer"
+      },
+      {
+        "word": "螺丝刀",
+        "hint": "Screwdriver"
+      },
+      {
+        "word": "扳手",
+        "hint": "Wrench"
+      },
+      {
+        "word": "钳子",
+        "hint": "Pliers"
+      },
+      {
+        "word": "电钻",
+        "hint": "Electric drill"
+      },
+      {
+        "word": "锯子",
+        "hint": "Saw"
+      },
+      {
+        "word": "卷尺",
+        "hint": "Tape measure"
+      },
+      {
+        "word": "螺丝",
+        "hint": "Screw"
+      },
+      {
+        "word": "钉子",
+        "hint": "Nail"
+      },
+      {
+        "word": "胶水",
+        "hint": "Glue"
+      },
+      {
+        "word": "油漆",
+        "hint": "Paint"
+      },
+      {
+        "word": "刷子",
+        "hint": "Brush"
+      },
+      {
+        "word": "梯子",
+        "hint": "Ladder"
+      },
+      {
+        "word": "铲子",
+        "hint": "Shovel"
+      },
+      {
+        "word": "水管",
+        "hint": "Water pipe"
+      }
+    ]
+  },
+  {
+    "key": "materials_wb",
+    "name": "Materials",
+    "description": "Common materials and substances in Chinese",
+    "iconName": "cube",
+    "color": "#57534e",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "木头",
+        "hint": "Wood"
+      },
+      {
+        "word": "金属",
+        "hint": "Metal"
+      },
+      {
+        "word": "塑料",
+        "hint": "Plastic"
+      },
+      {
+        "word": "玻璃",
+        "hint": "Glass"
+      },
+      {
+        "word": "橡胶",
+        "hint": "Rubber"
+      },
+      {
+        "word": "皮革",
+        "hint": "Leather"
+      },
+      {
+        "word": "棉花",
+        "hint": "Cotton"
+      },
+      {
+        "word": "丝绸",
+        "hint": "Silk"
+      },
+      {
+        "word": "石头",
+        "hint": "Stone"
+      },
+      {
+        "word": "水泥",
+        "hint": "Cement"
+      },
+      {
+        "word": "钢铁",
+        "hint": "Steel"
+      },
+      {
+        "word": "黄铜",
+        "hint": "Brass"
+      },
+      {
+        "word": "陶瓷",
+        "hint": "Ceramic"
+      },
+      {
+        "word": "竹子",
+        "hint": "Bamboo"
+      },
+      {
+        "word": "大理石",
+        "hint": "Marble"
+      }
+    ]
   }
 ]

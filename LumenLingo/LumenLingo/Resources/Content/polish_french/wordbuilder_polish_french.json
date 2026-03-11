@@ -1,0 +1,352 @@
+[
+  {
+    "key": "fruits_wb",
+    "name": "Owoce",
+    "description": "Popularne owoce po francusku",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "pomme",
+        "hint": "Jabłko"
+      },
+      {
+        "word": "orange",
+        "hint": "Pomarańcza"
+      },
+      {
+        "word": "banane",
+        "hint": "Banan"
+      },
+      {
+        "word": "fraise",
+        "hint": "Truskawka"
+      },
+      {
+        "word": "raisin",
+        "hint": "Winogrono"
+      },
+      {
+        "word": "citron",
+        "hint": "Cytryna"
+      },
+      {
+        "word": "cerise",
+        "hint": "Wiśnia"
+      },
+      {
+        "word": "ananas",
+        "hint": "Ananas"
+      },
+      {
+        "word": "poire",
+        "hint": "Gruszka"
+      },
+      {
+        "word": "mangue",
+        "hint": "Mango"
+      },
+      {
+        "word": "prune",
+        "hint": "Śliwka"
+      },
+      {
+        "word": "abricot",
+        "hint": "Morela"
+      },
+      {
+        "word": "melon",
+        "hint": "Melon"
+      },
+      {
+        "word": "framboise",
+        "hint": "Malina"
+      },
+      {
+        "word": "myrtille",
+        "hint": "Borówka"
+      }
+    ]
+  },
+  {
+    "key": "vegetables_wb",
+    "name": "Warzywa",
+    "description": "Podstawowe warzywa po francusku",
+    "iconName": "carrot",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "tomate",
+        "hint": "Pomidor"
+      },
+      {
+        "word": "oignon",
+        "hint": "Cebula"
+      },
+      {
+        "word": "laitue",
+        "hint": "Sałata"
+      },
+      {
+        "word": "carotte",
+        "hint": "Marchewka"
+      },
+      {
+        "word": "pomme de terre",
+        "hint": "Ziemniak"
+      },
+      {
+        "word": "poivron",
+        "hint": "Papryka"
+      },
+      {
+        "word": "concombre",
+        "hint": "Ogórek"
+      },
+      {
+        "word": "haricot",
+        "hint": "Fasola"
+      },
+      {
+        "word": "chou",
+        "hint": "Kapusta"
+      },
+      {
+        "word": "betterave",
+        "hint": "Burak"
+      },
+      {
+        "word": "radis",
+        "hint": "Rzodkiewka"
+      },
+      {
+        "word": "courgette",
+        "hint": "Cukinia"
+      },
+      {
+        "word": "aubergine",
+        "hint": "Bakłażan"
+      },
+      {
+        "word": "brocoli",
+        "hint": "Brokuł"
+      },
+      {
+        "word": "artichaut",
+        "hint": "Karczoch"
+      }
+    ]
+  },
+  {
+    "key": "colors_wb",
+    "name": "Kolory",
+    "description": "Nazwy kolorów po francusku",
+    "iconName": "paintpalette",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "rouge",
+        "hint": "Czerwony"
+      },
+      {
+        "word": "bleu",
+        "hint": "Niebieski"
+      },
+      {
+        "word": "vert",
+        "hint": "Zielony"
+      },
+      {
+        "word": "jaune",
+        "hint": "Żółty"
+      },
+      {
+        "word": "noir",
+        "hint": "Czarny"
+      },
+      {
+        "word": "blanc",
+        "hint": "Biały"
+      },
+      {
+        "word": "doré",
+        "hint": "Złoty"
+      },
+      {
+        "word": "violet",
+        "hint": "Fioletowy"
+      },
+      {
+        "word": "rose",
+        "hint": "Różowy"
+      },
+      {
+        "word": "marron",
+        "hint": "Brązowy"
+      },
+      {
+        "word": "gris",
+        "hint": "Szary"
+      },
+      {
+        "word": "turquoise",
+        "hint": "Turkusowy"
+      },
+      {
+        "word": "beige",
+        "hint": "Beżowy"
+      },
+      {
+        "word": "argent",
+        "hint": "Srebrny"
+      },
+      {
+        "word": "pourpre",
+        "hint": "Purpurowy"
+      }
+    ]
+  },
+  {
+    "key": "family_wb",
+    "name": "Rodzina",
+    "description": "Członkowie rodziny po francusku",
+    "iconName": "person.3",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "mère",
+        "hint": "Matka"
+      },
+      {
+        "word": "père",
+        "hint": "Ojciec"
+      },
+      {
+        "word": "soeur",
+        "hint": "Siostra"
+      },
+      {
+        "word": "frère",
+        "hint": "Brat"
+      },
+      {
+        "word": "grand-mère",
+        "hint": "Babcia"
+      },
+      {
+        "word": "grand-père",
+        "hint": "Dziadek"
+      },
+      {
+        "word": "fils",
+        "hint": "Syn"
+      },
+      {
+        "word": "fille",
+        "hint": "Córka"
+      },
+      {
+        "word": "cousin",
+        "hint": "Kuzyn"
+      },
+      {
+        "word": "oncle",
+        "hint": "Wujek"
+      },
+      {
+        "word": "tante",
+        "hint": "Ciocia"
+      },
+      {
+        "word": "mari",
+        "hint": "Mąż"
+      },
+      {
+        "word": "femme",
+        "hint": "Żona"
+      },
+      {
+        "word": "neveu",
+        "hint": "Bratanek"
+      },
+      {
+        "word": "nièce",
+        "hint": "Bratanica"
+      }
+    ]
+  },
+  {
+    "key": "animals_wb",
+    "name": "Zwierzęta",
+    "description": "Popularne zwierzęta po francusku",
+    "iconName": "hare",
+    "color": "#eab308",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "chien",
+        "hint": "Pies"
+      },
+      {
+        "word": "chat",
+        "hint": "Kot"
+      },
+      {
+        "word": "cheval",
+        "hint": "Koń"
+      },
+      {
+        "word": "oiseau",
+        "hint": "Ptak"
+      },
+      {
+        "word": "poisson",
+        "hint": "Ryba"
+      },
+      {
+        "word": "vache",
+        "hint": "Krowa"
+      },
+      {
+        "word": "cochon",
+        "hint": "Świnia"
+      },
+      {
+        "word": "lapin",
+        "hint": "Królik"
+      },
+      {
+        "word": "tortue",
+        "hint": "Żółw"
+      },
+      {
+        "word": "papillon",
+        "hint": "Motyl"
+      },
+      {
+        "word": "lion",
+        "hint": "Lew"
+      },
+      {
+        "word": "girafe",
+        "hint": "Żyrafa"
+      },
+      {
+        "word": "serpent",
+        "hint": "Wąż"
+      },
+      {
+        "word": "canard",
+        "hint": "Kaczka"
+      },
+      {
+        "word": "souris",
+        "hint": "Mysz"
+      }
+    ]
+  }
+]

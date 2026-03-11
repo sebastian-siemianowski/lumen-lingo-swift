@@ -9878,5 +9878,1305 @@
         "exampleTranslation": "Wyznałem miłość."
       }
     ]
+  },
+  {
+    "key": "phone_communication",
+    "name": "Telefon i komunikacja",
+    "description": "Rozmowy telefoniczne i komunikatory",
+    "iconName": "phone.fill",
+    "color": "#2ECC71",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_phone_1",
+        "front": "Telefon",
+        "back": "電話 (でんわ)",
+        "difficulty": "easy",
+        "example": "電話をかけます。",
+        "exampleTranslation": "Dzwonię."
+      },
+      {
+        "id": "pj_phone_2",
+        "front": "Wiadomość",
+        "back": "メッセージ",
+        "difficulty": "easy",
+        "example": "メッセージを送りました。",
+        "exampleTranslation": "Wysłałem wiadomość."
+      },
+      {
+        "id": "pj_phone_3",
+        "front": "Ładowarka",
+        "back": "充電器 (じゅうでんき)",
+        "difficulty": "medium",
+        "example": "充電器を貸してください。",
+        "exampleTranslation": "Proszę pożyczyć ładowarkę."
+      },
+      {
+        "id": "pj_phone_4",
+        "front": "Numer telefonu",
+        "back": "電話番号 (でんわばんごう)",
+        "difficulty": "medium",
+        "example": "電話番号を教えてください。",
+        "exampleTranslation": "Proszę podać numer telefonu."
+      },
+      {
+        "id": "pj_phone_5",
+        "front": "Połączenie",
+        "back": "通話 (つうわ)",
+        "difficulty": "medium",
+        "example": "通話中です。",
+        "exampleTranslation": "Rozmawiam przez telefon."
+      },
+      {
+        "id": "pj_phone_6",
+        "front": "SMS",
+        "back": "ショートメール",
+        "difficulty": "easy",
+        "example": "ショートメールを送ります。",
+        "exampleTranslation": "Wysyłam SMS-a."
+      },
+      {
+        "id": "pj_phone_7",
+        "front": "Odebrać telefon",
+        "back": "電話に出る (でんわにでる)",
+        "difficulty": "medium",
+        "example": "電話に出てください。",
+        "exampleTranslation": "Proszę odebrać telefon."
+      },
+      {
+        "id": "pj_phone_8",
+        "front": "Rozłączyć się",
+        "back": "電話を切る (でんわをきる)",
+        "difficulty": "medium",
+        "example": "電話を切ります。",
+        "exampleTranslation": "Rozłączam się."
+      },
+      {
+        "id": "pj_phone_9",
+        "front": "Bateria",
+        "back": "バッテリー",
+        "difficulty": "easy",
+        "example": "バッテリーがないです。",
+        "exampleTranslation": "Bateria jest rozładowana."
+      },
+      {
+        "id": "pj_phone_10",
+        "front": "Aplikacja",
+        "back": "アプリ",
+        "difficulty": "easy",
+        "example": "アプリをダウンロードしました。",
+        "exampleTranslation": "Pobrałem aplikację."
+      },
+      {
+        "id": "pj_phone_11",
+        "front": "Nieodebrane połączenie",
+        "back": "不在着信 (ふざいちゃくしん)",
+        "difficulty": "hard",
+        "example": "不在着信がありました。",
+        "exampleTranslation": "Miałem nieodebrane połączenie."
+      },
+      {
+        "id": "pj_phone_12",
+        "front": "Wi-Fi",
+        "back": "ワイファイ",
+        "difficulty": "easy",
+        "example": "ワイファイにつなげます。",
+        "exampleTranslation": "Połączę się z Wi-Fi."
+      },
+      {
+        "id": "pj_phone_13",
+        "front": "Wideorozmowa",
+        "back": "ビデオ通話 (ビデオつうわ)",
+        "difficulty": "medium",
+        "example": "ビデオ通話しましょう。",
+        "exampleTranslation": "Porozmawiajmy przez wideo."
+      },
+      {
+        "id": "pj_phone_14",
+        "front": "Ekran",
+        "back": "画面 (がめん)",
+        "difficulty": "easy",
+        "example": "画面が割れました。",
+        "exampleTranslation": "Ekran się stłukł."
+      },
+      {
+        "id": "pj_phone_15",
+        "front": "Hasło",
+        "back": "パスワード",
+        "difficulty": "easy",
+        "example": "パスワードを入れてください。",
+        "exampleTranslation": "Proszę wpisać hasło."
+      }
+    ]
+  },
+  {
+    "key": "religion_spirituality",
+    "name": "Religia i duchowość",
+    "description": "Wierzenia religijne i praktyki duchowe",
+    "iconName": "hands.sparkles.fill",
+    "color": "#8E44AD",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pj_relig_1",
+        "front": "Świątynia",
+        "back": "神社 (じんじゃ)",
+        "difficulty": "medium",
+        "example": "神社に行きました。",
+        "exampleTranslation": "Poszedłem do świątyni."
+      },
+      {
+        "id": "pj_relig_2",
+        "front": "Kościół",
+        "back": "教会 (きょうかい)",
+        "difficulty": "medium",
+        "example": "教会に行きます。",
+        "exampleTranslation": "Idę do kościoła."
+      },
+      {
+        "id": "pj_relig_3",
+        "front": "Modlitwa",
+        "back": "お祈り (おいのり)",
+        "difficulty": "easy",
+        "example": "お祈りをします。",
+        "exampleTranslation": "Modlę się."
+      },
+      {
+        "id": "pj_relig_4",
+        "front": "Medytacja",
+        "back": "瞑想 (めいそう)",
+        "difficulty": "medium",
+        "example": "毎日瞑想します。",
+        "exampleTranslation": "Codziennie medytuję."
+      },
+      {
+        "id": "pj_relig_5",
+        "front": "Dusza",
+        "back": "魂 (たましい)",
+        "difficulty": "medium",
+        "example": "魂が安らぎます。",
+        "exampleTranslation": "Dusza jest spokojna."
+      },
+      {
+        "id": "pj_relig_6",
+        "front": "Wiara",
+        "back": "信仰 (しんこう)",
+        "difficulty": "hard",
+        "example": "信仰が深いです。",
+        "exampleTranslation": "Ma głęboką wiarę."
+      },
+      {
+        "id": "pj_relig_7",
+        "front": "Bóg",
+        "back": "神 (かみ)",
+        "difficulty": "easy",
+        "example": "神を信じます。",
+        "exampleTranslation": "Wierzę w Boga."
+      },
+      {
+        "id": "pj_relig_8",
+        "front": "Buddyzm",
+        "back": "仏教 (ぶっきょう)",
+        "difficulty": "medium",
+        "example": "仏教について学びます。",
+        "exampleTranslation": "Uczę się o buddyzmie."
+      },
+      {
+        "id": "pj_relig_9",
+        "front": "Święty tekst",
+        "back": "経典 (きょうてん)",
+        "difficulty": "hard",
+        "example": "経典を読みます。",
+        "exampleTranslation": "Czytam święty tekst."
+      },
+      {
+        "id": "pj_relig_10",
+        "front": "Mnich",
+        "back": "僧 (そう)",
+        "difficulty": "medium",
+        "example": "僧に会いました。",
+        "exampleTranslation": "Spotkałem mnicha."
+      },
+      {
+        "id": "pj_relig_11",
+        "front": "Pokora",
+        "back": "謙虚 (けんきょ)",
+        "difficulty": "hard",
+        "example": "謙虚であるべきです。",
+        "exampleTranslation": "Trzeba być pokornym."
+      },
+      {
+        "id": "pj_relig_12",
+        "front": "Błogosławieństwo",
+        "back": "祝福 (しゅくふく)",
+        "difficulty": "hard",
+        "example": "祝福を受けました。",
+        "exampleTranslation": "Otrzymałem błogosławieństwo."
+      },
+      {
+        "id": "pj_relig_13",
+        "front": "Spokój wewnętrzny",
+        "back": "内なる平和 (うちなるへいわ)",
+        "difficulty": "hard",
+        "example": "内なる平和を求めます。",
+        "exampleTranslation": "Szukam wewnętrznego spokoju."
+      },
+      {
+        "id": "pj_relig_14",
+        "front": "Joga",
+        "back": "ヨガ",
+        "difficulty": "easy",
+        "example": "ヨガをしています。",
+        "exampleTranslation": "Ćwiczę jogę."
+      },
+      {
+        "id": "pj_relig_15",
+        "front": "Harmonia",
+        "back": "調和 (ちょうわ)",
+        "difficulty": "medium",
+        "example": "調和を大切にします。",
+        "exampleTranslation": "Cenię harmonię."
+      }
+    ]
+  },
+  {
+    "key": "problems_solutions",
+    "name": "Problemy i rozwiązania",
+    "description": "Rozwiązywanie problemów codziennych",
+    "iconName": "wrench.and.screwdriver.fill",
+    "color": "#F39C12",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_prob_1",
+        "front": "Problem",
+        "back": "問題 (もんだい)",
+        "difficulty": "easy",
+        "example": "問題があります。",
+        "exampleTranslation": "Mam problem."
+      },
+      {
+        "id": "pj_prob_2",
+        "front": "Rozwiązanie",
+        "back": "解決 (かいけつ)",
+        "difficulty": "medium",
+        "example": "解決しました。",
+        "exampleTranslation": "Rozwiązałem problem."
+      },
+      {
+        "id": "pj_prob_3",
+        "front": "Błąd",
+        "back": "間違い (まちがい)",
+        "difficulty": "easy",
+        "example": "間違いをしました。",
+        "exampleTranslation": "Popełniłem błąd."
+      },
+      {
+        "id": "pj_prob_4",
+        "front": "Pomoc",
+        "back": "助け (たすけ)",
+        "difficulty": "easy",
+        "example": "助けてください。",
+        "exampleTranslation": "Proszę o pomoc."
+      },
+      {
+        "id": "pj_prob_5",
+        "front": "Awaria",
+        "back": "故障 (こしょう)",
+        "difficulty": "hard",
+        "example": "故障が起きました。",
+        "exampleTranslation": "Doszło do awarii."
+      },
+      {
+        "id": "pj_prob_6",
+        "front": "Naprawa",
+        "back": "修理 (しゅうり)",
+        "difficulty": "medium",
+        "example": "修理してください。",
+        "exampleTranslation": "Proszę naprawić."
+      },
+      {
+        "id": "pj_prob_7",
+        "front": "Reklamacja",
+        "back": "クレーム",
+        "difficulty": "medium",
+        "example": "クレームを出します。",
+        "exampleTranslation": "Składam reklamację."
+      },
+      {
+        "id": "pj_prob_8",
+        "front": "Spóźnienie",
+        "back": "遅れ (おくれ)",
+        "difficulty": "easy",
+        "example": "遅れてすみません。",
+        "exampleTranslation": "Przepraszam za spóźnienie."
+      },
+      {
+        "id": "pj_prob_9",
+        "front": "Zagubienie",
+        "back": "紛失 (ふんしつ)",
+        "difficulty": "hard",
+        "example": "財布を紛失しました。",
+        "exampleTranslation": "Zgubiłem portfel."
+      },
+      {
+        "id": "pj_prob_10",
+        "front": "Przepraszam",
+        "back": "すみません",
+        "difficulty": "easy",
+        "example": "すみませんでした。",
+        "exampleTranslation": "Przepraszam."
+      },
+      {
+        "id": "pj_prob_11",
+        "front": "Skarga",
+        "back": "苦情 (くじょう)",
+        "difficulty": "hard",
+        "example": "苦情を言います。",
+        "exampleTranslation": "Składam skargę."
+      },
+      {
+        "id": "pj_prob_12",
+        "front": "Pilny",
+        "back": "緊急 (きんきゅう)",
+        "difficulty": "medium",
+        "example": "緊急です。",
+        "exampleTranslation": "To pilne."
+      },
+      {
+        "id": "pj_prob_13",
+        "front": "Porada",
+        "back": "相談 (そうだん)",
+        "difficulty": "medium",
+        "example": "相談してもいいですか。",
+        "exampleTranslation": "Czy mogę poprosić o poradę?"
+      },
+      {
+        "id": "pj_prob_14",
+        "front": "Przeszkoda",
+        "back": "障害 (しょうがい)",
+        "difficulty": "hard",
+        "example": "障害を乗り越えました。",
+        "exampleTranslation": "Pokonałem przeszkodę."
+      },
+      {
+        "id": "pj_prob_15",
+        "front": "Poprawa",
+        "back": "改善 (かいぜん)",
+        "difficulty": "medium",
+        "example": "改善します。",
+        "exampleTranslation": "Poprawiam."
+      }
+    ]
+  },
+  {
+    "key": "describing_people",
+    "name": "Opisywanie osób",
+    "description": "Wygląd i cechy ludzi",
+    "iconName": "person.text.rectangle.fill",
+    "color": "#E67E22",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "pj_desc_1",
+        "front": "Wysoki",
+        "back": "背が高い (せがたかい)",
+        "difficulty": "easy",
+        "example": "彼は背が高いです。",
+        "exampleTranslation": "On jest wysoki."
+      },
+      {
+        "id": "pj_desc_2",
+        "front": "Niski",
+        "back": "背が低い (せがひくい)",
+        "difficulty": "easy",
+        "example": "彼女は背が低いです。",
+        "exampleTranslation": "Ona jest niska."
+      },
+      {
+        "id": "pj_desc_3",
+        "front": "Szczupły",
+        "back": "痩せている (やせている)",
+        "difficulty": "easy",
+        "example": "痩せている人です。",
+        "exampleTranslation": "To szczupła osoba."
+      },
+      {
+        "id": "pj_desc_4",
+        "front": "Miły",
+        "back": "優しい (やさしい)",
+        "difficulty": "easy",
+        "example": "優しい人です。",
+        "exampleTranslation": "To miła osoba."
+      },
+      {
+        "id": "pj_desc_5",
+        "front": "Inteligentny",
+        "back": "賢い (かしこい)",
+        "difficulty": "easy",
+        "example": "彼は賢いです。",
+        "exampleTranslation": "On jest inteligentny."
+      },
+      {
+        "id": "pj_desc_6",
+        "front": "Zabawny",
+        "back": "面白い (おもしろい)",
+        "difficulty": "easy",
+        "example": "面白い人です。",
+        "exampleTranslation": "To zabawna osoba."
+      },
+      {
+        "id": "pj_desc_7",
+        "front": "Przystojny",
+        "back": "イケメン",
+        "difficulty": "easy",
+        "example": "イケメンな人です。",
+        "exampleTranslation": "To przystojny mężczyzna."
+      },
+      {
+        "id": "pj_desc_8",
+        "front": "Piękna",
+        "back": "美しい (うつくしい)",
+        "difficulty": "easy",
+        "example": "美しい人です。",
+        "exampleTranslation": "To piękna osoba."
+      },
+      {
+        "id": "pj_desc_9",
+        "front": "Młody",
+        "back": "若い (わかい)",
+        "difficulty": "easy",
+        "example": "若い人です。",
+        "exampleTranslation": "To młoda osoba."
+      },
+      {
+        "id": "pj_desc_10",
+        "front": "Stary",
+        "back": "年をとった (としをとった)",
+        "difficulty": "medium",
+        "example": "年をとった人です。",
+        "exampleTranslation": "To starsza osoba."
+      },
+      {
+        "id": "pj_desc_11",
+        "front": "Silny",
+        "back": "強い (つよい)",
+        "difficulty": "easy",
+        "example": "強い人です。",
+        "exampleTranslation": "To silna osoba."
+      },
+      {
+        "id": "pj_desc_12",
+        "front": "Cichy",
+        "back": "静か (しずか)",
+        "difficulty": "easy",
+        "example": "静かな人です。",
+        "exampleTranslation": "To cicha osoba."
+      },
+      {
+        "id": "pj_desc_13",
+        "front": "Energiczny",
+        "back": "元気 (げんき)",
+        "difficulty": "easy",
+        "example": "元気な人です。",
+        "exampleTranslation": "To energiczna osoba."
+      },
+      {
+        "id": "pj_desc_14",
+        "front": "Utalentowany",
+        "back": "才能がある (さいのうがある)",
+        "difficulty": "medium",
+        "example": "才能がある人です。",
+        "exampleTranslation": "To utalentowana osoba."
+      },
+      {
+        "id": "pj_desc_15",
+        "front": "Uprzejmy",
+        "back": "礼儀正しい (れいぎただしい)",
+        "difficulty": "hard",
+        "example": "礼儀正しい人です。",
+        "exampleTranslation": "To uprzejma osoba."
+      }
+    ]
+  },
+  {
+    "key": "apartment_living",
+    "name": "Mieszkanie i życie codzienne",
+    "description": "Wynajem mieszkań i życie lokatorskie",
+    "iconName": "building.2.fill",
+    "color": "#795548",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_apt_1",
+        "front": "Mieszkanie",
+        "back": "アパート",
+        "difficulty": "easy",
+        "example": "アパートに住んでいます。",
+        "exampleTranslation": "Mieszkam w mieszkaniu."
+      },
+      {
+        "id": "pj_apt_2",
+        "front": "Czynsz",
+        "back": "家賃 (やちん)",
+        "difficulty": "medium",
+        "example": "家賃を払います。",
+        "exampleTranslation": "Płacę czynsz."
+      },
+      {
+        "id": "pj_apt_3",
+        "front": "Sąsiad",
+        "back": "隣人 (りんじん)",
+        "difficulty": "medium",
+        "example": "隣人が優しいです。",
+        "exampleTranslation": "Sąsiad jest miły."
+      },
+      {
+        "id": "pj_apt_4",
+        "front": "Piętro",
+        "back": "階 (かい)",
+        "difficulty": "easy",
+        "example": "三階に住んでいます。",
+        "exampleTranslation": "Mieszkam na trzecim piętrze."
+      },
+      {
+        "id": "pj_apt_5",
+        "front": "Winda",
+        "back": "エレベーター",
+        "difficulty": "easy",
+        "example": "エレベーターに乗ります。",
+        "exampleTranslation": "Jadę windą."
+      },
+      {
+        "id": "pj_apt_6",
+        "front": "Klucz",
+        "back": "鍵 (かぎ)",
+        "difficulty": "easy",
+        "example": "鍵を忘れました。",
+        "exampleTranslation": "Zapomniałem klucza."
+      },
+      {
+        "id": "pj_apt_7",
+        "front": "Przeprowadzka",
+        "back": "引っ越し (ひっこし)",
+        "difficulty": "hard",
+        "example": "引っ越しします。",
+        "exampleTranslation": "Przeprowadzam się."
+      },
+      {
+        "id": "pj_apt_8",
+        "front": "Balkon",
+        "back": "バルコニー",
+        "difficulty": "easy",
+        "example": "バルコニーに出ます。",
+        "exampleTranslation": "Wychodzę na balkon."
+      },
+      {
+        "id": "pj_apt_9",
+        "front": "Parking",
+        "back": "駐車場 (ちゅうしゃじょう)",
+        "difficulty": "medium",
+        "example": "駐車場に車を止めます。",
+        "exampleTranslation": "Parkuję na parkingu."
+      },
+      {
+        "id": "pj_apt_10",
+        "front": "Umowa najmu",
+        "back": "賃貸契約 (ちんたいけいやく)",
+        "difficulty": "hard",
+        "example": "賃貸契約を結びました。",
+        "exampleTranslation": "Podpisałem umowę najmu."
+      },
+      {
+        "id": "pj_apt_11",
+        "front": "Odpad",
+        "back": "ゴミ",
+        "difficulty": "easy",
+        "example": "ゴミを出します。",
+        "exampleTranslation": "Wynoszę śmieci."
+      },
+      {
+        "id": "pj_apt_12",
+        "front": "Pranie",
+        "back": "洗濯 (せんたく)",
+        "difficulty": "easy",
+        "example": "洗濯をします。",
+        "exampleTranslation": "Robię pranie."
+      },
+      {
+        "id": "pj_apt_13",
+        "front": "Remont",
+        "back": "リフォーム",
+        "difficulty": "medium",
+        "example": "リフォーム中です。",
+        "exampleTranslation": "Trwa remont."
+      },
+      {
+        "id": "pj_apt_14",
+        "front": "Widok z okna",
+        "back": "窓からの景色 (まどからのけしき)",
+        "difficulty": "medium",
+        "example": "窓からの景色が素整らしいです。",
+        "exampleTranslation": "Widok z okna jest piękny."
+      },
+      {
+        "id": "pj_apt_15",
+        "front": "Ręcznik",
+        "back": "タオル",
+        "difficulty": "easy",
+        "example": "タオルを使います。",
+        "exampleTranslation": "Używam ręcznika."
+      }
+    ]
+  },
+  {
+    "key": "personality_traits",
+    "name": "Cechy charakteru",
+    "description": "Cechy osobowości i temperamentu",
+    "iconName": "brain.head.profile",
+    "color": "#607D8B",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_pers_1",
+        "front": "Odważny",
+        "back": "勇敢 (ゆうかん)",
+        "difficulty": "medium",
+        "example": "勇敢な人です。",
+        "exampleTranslation": "To odważna osoba."
+      },
+      {
+        "id": "pj_pers_2",
+        "front": "Cierpliwy",
+        "back": "忍耐強い (にんたいづよい)",
+        "difficulty": "hard",
+        "example": "忍耐強い人です。",
+        "exampleTranslation": "To cierpliwa osoba."
+      },
+      {
+        "id": "pj_pers_3",
+        "front": "Leniwy",
+        "back": "怠け者 (なまけもの)",
+        "difficulty": "medium",
+        "example": "怠け者ではだめです。",
+        "exampleTranslation": "Nie wolno być leniwym."
+      },
+      {
+        "id": "pj_pers_4",
+        "front": "Pracowity",
+        "back": "勤勉 (きんべん)",
+        "difficulty": "medium",
+        "example": "勤勉な人です。",
+        "exampleTranslation": "To pracowita osoba."
+      },
+      {
+        "id": "pj_pers_5",
+        "front": "Lojalny",
+        "back": "忠実 (ちゅうじつ)",
+        "difficulty": "hard",
+        "example": "忠実な友人です。",
+        "exampleTranslation": "To lojalny przyjaciel."
+      },
+      {
+        "id": "pj_pers_6",
+        "front": "Optymistyczny",
+        "back": "楽観的 (らっかんてき)",
+        "difficulty": "medium",
+        "example": "楽観的な人です。",
+        "exampleTranslation": "To optymistyczna osoba."
+      },
+      {
+        "id": "pj_pers_7",
+        "front": "Pesymistyczny",
+        "back": "悲観的 (ひかんてき)",
+        "difficulty": "hard",
+        "example": "悲観的にならないでください。",
+        "exampleTranslation": "Nie bądź pesymistyczny."
+      },
+      {
+        "id": "pj_pers_8",
+        "front": "Hojny",
+        "back": "気前がいい (きまえがいい)",
+        "difficulty": "medium",
+        "example": "気前がいい人です。",
+        "exampleTranslation": "To hojna osoba."
+      },
+      {
+        "id": "pj_pers_9",
+        "front": "Skąpy",
+        "back": "ケチ",
+        "difficulty": "easy",
+        "example": "ケチな人です。",
+        "exampleTranslation": "To skąpa osoba."
+      },
+      {
+        "id": "pj_pers_10",
+        "front": "Łagodny",
+        "back": "穏やか (おだやか)",
+        "difficulty": "easy",
+        "example": "穏やかな人です。",
+        "exampleTranslation": "To łagodna osoba."
+      },
+      {
+        "id": "pj_pers_11",
+        "front": "Uparty",
+        "back": "頑固 (がんこ)",
+        "difficulty": "hard",
+        "example": "頑固な人です。",
+        "exampleTranslation": "To uparta osoba."
+      },
+      {
+        "id": "pj_pers_12",
+        "front": "Pewny siebie",
+        "back": "自信がある (じしんがある)",
+        "difficulty": "medium",
+        "example": "自信がある人です。",
+        "exampleTranslation": "To pewna siebie osoba."
+      },
+      {
+        "id": "pj_pers_13",
+        "front": "Niesmiały",
+        "back": "恥ずかしがり屋 (はずかしがりや)",
+        "difficulty": "medium",
+        "example": "恥ずかしがり屋です。",
+        "exampleTranslation": "Jestem nieśmiały."
+      },
+      {
+        "id": "pj_pers_14",
+        "front": "Ambitny",
+        "back": "野心的 (やしんてき)",
+        "difficulty": "hard",
+        "example": "野心的な人です。",
+        "exampleTranslation": "To ambitna osoba."
+      },
+      {
+        "id": "pj_pers_15",
+        "front": "Towarzyski",
+        "back": "社交的 (しゃこうてき)",
+        "difficulty": "medium",
+        "example": "社交的な人です。",
+        "exampleTranslation": "To towarzyska osoba."
+      }
+    ]
+  },
+  {
+    "key": "learning_education",
+    "name": "Nauka i edukacja",
+    "description": "Uczelnie i proces nauki",
+    "iconName": "graduationcap.fill",
+    "color": "#3F51B5",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_ledu_1",
+        "front": "Uniwersytet",
+        "back": "大学 (だいがく)",
+        "difficulty": "easy",
+        "example": "大学に通っています。",
+        "exampleTranslation": "Chodzę na uniwersytet."
+      },
+      {
+        "id": "pj_ledu_2",
+        "front": "Wykład",
+        "back": "講義 (こうぎ)",
+        "difficulty": "medium",
+        "example": "講義を聴きます。",
+        "exampleTranslation": "Słucham wykładu."
+      },
+      {
+        "id": "pj_ledu_3",
+        "front": "Egzamin",
+        "back": "試験 (しけん)",
+        "difficulty": "medium",
+        "example": "試験を受けます。",
+        "exampleTranslation": "Zdaję egzamin."
+      },
+      {
+        "id": "pj_ledu_4",
+        "front": "Dyplom",
+        "back": "卒業証書 (そつぎょうしょうしょ)",
+        "difficulty": "hard",
+        "example": "卒業証書をもらいました。",
+        "exampleTranslation": "Otrzymałem dyplom."
+      },
+      {
+        "id": "pj_ledu_5",
+        "front": "Student",
+        "back": "学生 (がくせい)",
+        "difficulty": "easy",
+        "example": "学生です。",
+        "exampleTranslation": "Jestem studentem."
+      },
+      {
+        "id": "pj_ledu_6",
+        "front": "Profesor",
+        "back": "教授 (きょうじゅ)",
+        "difficulty": "medium",
+        "example": "教授に質問します。",
+        "exampleTranslation": "Pytam profesora."
+      },
+      {
+        "id": "pj_ledu_7",
+        "front": "Stypendium",
+        "back": "奨学金 (しょうがくきん)",
+        "difficulty": "hard",
+        "example": "奨学金をもらいました。",
+        "exampleTranslation": "Otrzymałem stypendium."
+      },
+      {
+        "id": "pj_ledu_8",
+        "front": "Praca domowa",
+        "back": "宿題 (しゅくだい)",
+        "difficulty": "easy",
+        "example": "宿題をします。",
+        "exampleTranslation": "Odrabiam pracę domową."
+      },
+      {
+        "id": "pj_ledu_9",
+        "front": "Ocena",
+        "back": "成績 (せいせき)",
+        "difficulty": "medium",
+        "example": "成績が良いです。",
+        "exampleTranslation": "Mam dobre oceny."
+      },
+      {
+        "id": "pj_ledu_10",
+        "front": "Seminarium",
+        "back": "ゼミナール",
+        "difficulty": "easy",
+        "example": "ゼミナールに参加します。",
+        "exampleTranslation": "Uczestniczę w seminarium."
+      },
+      {
+        "id": "pj_ledu_11",
+        "front": "Biblioteka",
+        "back": "図書館 (としょかん)",
+        "difficulty": "easy",
+        "example": "図書館で勉強します。",
+        "exampleTranslation": "Uczę się w bibliotece."
+      },
+      {
+        "id": "pj_ledu_12",
+        "front": "Praca dyplomowa",
+        "back": "論文 (ろんぶん)",
+        "difficulty": "hard",
+        "example": "論文を書いています。",
+        "exampleTranslation": "Piszę pracę dyplomową."
+      },
+      {
+        "id": "pj_ledu_13",
+        "front": "Notatki",
+        "back": "ノート",
+        "difficulty": "easy",
+        "example": "ノートを取ります。",
+        "exampleTranslation": "Robię notatki."
+      },
+      {
+        "id": "pj_ledu_14",
+        "front": "Kurs",
+        "back": "コース",
+        "difficulty": "easy",
+        "example": "新しいコースを始めました。",
+        "exampleTranslation": "Zacząłem nowy kurs."
+      },
+      {
+        "id": "pj_ledu_15",
+        "front": "Wiedza",
+        "back": "知識 (ちしき)",
+        "difficulty": "medium",
+        "example": "知識を深めます。",
+        "exampleTranslation": "Pogłębiam wiedzę."
+      }
+    ]
+  },
+  {
+    "key": "tools_diy",
+    "name": "Narzędzia i majsterkowanie",
+    "description": "Narzędzia domowe i prace ręczne",
+    "iconName": "hammer.fill",
+    "color": "#FF5722",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pj_tool_1",
+        "front": "Młotek",
+        "back": "ハンマー",
+        "difficulty": "easy",
+        "example": "ハンマーを使います。",
+        "exampleTranslation": "Używam młotka."
+      },
+      {
+        "id": "pj_tool_2",
+        "front": "Śrubokręt",
+        "back": "ドライバー",
+        "difficulty": "easy",
+        "example": "ドライバーが必要です。",
+        "exampleTranslation": "Potrzebuję śrubokręta."
+      },
+      {
+        "id": "pj_tool_3",
+        "front": "Gwóźdź",
+        "back": "釘 (くぎ)",
+        "difficulty": "easy",
+        "example": "釘を打ちます。",
+        "exampleTranslation": "Wbijam gwóźdź."
+      },
+      {
+        "id": "pj_tool_4",
+        "front": "Piła",
+        "back": "のこぎり",
+        "difficulty": "easy",
+        "example": "のこぎりで切ります。",
+        "exampleTranslation": "Tnę piłą."
+      },
+      {
+        "id": "pj_tool_5",
+        "front": "Klej",
+        "back": "接着剤 (せっちゃくざい)",
+        "difficulty": "hard",
+        "example": "接着剤でくっつけます。",
+        "exampleTranslation": "Kleję klejem."
+      },
+      {
+        "id": "pj_tool_6",
+        "front": "Farba",
+        "back": "ペンキ",
+        "difficulty": "easy",
+        "example": "ペンキを塗ります。",
+        "exampleTranslation": "Maluję farbą."
+      },
+      {
+        "id": "pj_tool_7",
+        "front": "Miarka",
+        "back": "メジャー",
+        "difficulty": "easy",
+        "example": "メジャーで測ります。",
+        "exampleTranslation": "Mierzę miarką."
+      },
+      {
+        "id": "pj_tool_8",
+        "front": "Śruba",
+        "back": "ネジ",
+        "difficulty": "easy",
+        "example": "ネジを締めます。",
+        "exampleTranslation": "Dokręcam śrubę."
+      },
+      {
+        "id": "pj_tool_9",
+        "front": "Wiertarka",
+        "back": "ドリル",
+        "difficulty": "easy",
+        "example": "ドリルで穴を開けます。",
+        "exampleTranslation": "Wiercę wiertarką."
+      },
+      {
+        "id": "pj_tool_10",
+        "front": "Papier ścierny",
+        "back": "紙やすり (かみやすり)",
+        "difficulty": "medium",
+        "example": "紙やすりで磨きます。",
+        "exampleTranslation": "Szlifuję papierem ściernym."
+      },
+      {
+        "id": "pj_tool_11",
+        "front": "Kleszcze",
+        "back": "ペンチ",
+        "difficulty": "easy",
+        "example": "ペンチでつかみます。",
+        "exampleTranslation": "Chwytam kleszczami."
+      },
+      {
+        "id": "pj_tool_12",
+        "front": "Drabina",
+        "back": "はしご",
+        "difficulty": "easy",
+        "example": "はしごに登ります。",
+        "exampleTranslation": "Wchodzę po drabinie."
+      },
+      {
+        "id": "pj_tool_13",
+        "front": "Taśma",
+        "back": "テープ",
+        "difficulty": "easy",
+        "example": "テープで貼ります。",
+        "exampleTranslation": "Kleję taśmą."
+      },
+      {
+        "id": "pj_tool_14",
+        "front": "Latarka",
+        "back": "懐中電灯 (かいちゅうでんとう)",
+        "difficulty": "hard",
+        "example": "懐中電灯をつけます。",
+        "exampleTranslation": "Włączam latarkę."
+      },
+      {
+        "id": "pj_tool_15",
+        "front": "Skrzynka z narzędziami",
+        "back": "工具箱 (こうぐばこ)",
+        "difficulty": "medium",
+        "example": "工具箱を持ってきます。",
+        "exampleTranslation": "Przynoszę skrzynkę z narzędziami."
+      }
+    ]
+  },
+  {
+    "key": "documents_forms",
+    "name": "Dokumenty i formularze",
+    "description": "Sprawy urzędowe i dokumentacja",
+    "iconName": "doc.text.fill",
+    "color": "#78909C",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pj_docs_1",
+        "front": "Paszport",
+        "back": "パスポート",
+        "difficulty": "easy",
+        "example": "パスポートを見せてください。",
+        "exampleTranslation": "Proszę pokazać paszport."
+      },
+      {
+        "id": "pj_docs_2",
+        "front": "Dowód osobisty",
+        "back": "身分証明書 (みぶんしょうめいしょ)",
+        "difficulty": "hard",
+        "example": "身分証明書が必要です。",
+        "exampleTranslation": "Potrzebny jest dowód osobisty."
+      },
+      {
+        "id": "pj_docs_3",
+        "front": "Formularz",
+        "back": "用紙 (ようし)",
+        "difficulty": "easy",
+        "example": "用紙に記入してください。",
+        "exampleTranslation": "Proszę wypełnić formularz."
+      },
+      {
+        "id": "pj_docs_4",
+        "front": "Podpis",
+        "back": "署名 (しょめい)",
+        "difficulty": "medium",
+        "example": "署名をお願いします。",
+        "exampleTranslation": "Proszę o podpis."
+      },
+      {
+        "id": "pj_docs_5",
+        "front": "Urząd",
+        "back": "役所 (やくしょ)",
+        "difficulty": "medium",
+        "example": "役所に行きました。",
+        "exampleTranslation": "Poszedłem do urzędu."
+      },
+      {
+        "id": "pj_docs_6",
+        "front": "Wiza",
+        "back": "ビザ",
+        "difficulty": "easy",
+        "example": "ビザを申請しました。",
+        "exampleTranslation": "Złożyłem wniosek o wizę."
+      },
+      {
+        "id": "pj_docs_7",
+        "front": "Zaświadczenie",
+        "back": "証明書 (しょうめいしょ)",
+        "difficulty": "hard",
+        "example": "証明書をもらいました。",
+        "exampleTranslation": "Otrzymałem zaświadczenie."
+      },
+      {
+        "id": "pj_docs_8",
+        "front": "Kopia",
+        "back": "コピー",
+        "difficulty": "easy",
+        "example": "コピーをとってください。",
+        "exampleTranslation": "Proszę zrobić kopię."
+      },
+      {
+        "id": "pj_docs_9",
+        "front": "Termin",
+        "back": "締め切り (しめきり)",
+        "difficulty": "medium",
+        "example": "締め切りはいつですか。",
+        "exampleTranslation": "Kiedy jest termin?"
+      },
+      {
+        "id": "pj_docs_10",
+        "front": "Ubezpieczenie",
+        "back": "保険 (ほけん)",
+        "difficulty": "medium",
+        "example": "保険に入りました。",
+        "exampleTranslation": "Wykupiłem ubezpieczenie."
+      },
+      {
+        "id": "pj_docs_11",
+        "front": "Wniosek",
+        "back": "申請書 (しんせいしょ)",
+        "difficulty": "hard",
+        "example": "申請書を提出しました。",
+        "exampleTranslation": "Złożyłem wniosek."
+      },
+      {
+        "id": "pj_docs_12",
+        "front": "Tłumaczenie",
+        "back": "翻訳 (ほんやく)",
+        "difficulty": "medium",
+        "example": "翻訳が必要です。",
+        "exampleTranslation": "Potrzebne jest tłumaczenie."
+      },
+      {
+        "id": "pj_docs_13",
+        "front": "Podatek",
+        "back": "税金 (ぜいきん)",
+        "difficulty": "medium",
+        "example": "税金を払います。",
+        "exampleTranslation": "Płacę podatek."
+      },
+      {
+        "id": "pj_docs_14",
+        "front": "Zezwolenie",
+        "back": "許可 (きょか)",
+        "difficulty": "hard",
+        "example": "許可を得ました。",
+        "exampleTranslation": "Otrzymałem zezwolenie."
+      },
+      {
+        "id": "pj_docs_15",
+        "front": "Rejestracja",
+        "back": "登録 (とうろく)",
+        "difficulty": "medium",
+        "example": "登録しました。",
+        "exampleTranslation": "Zarejestrowałem się."
+      }
+    ]
+  },
+  {
+    "key": "safety_emergencies",
+    "name": "Bezpieczeństwo i nagłe wypadki",
+    "description": "Sytuacje awaryjne i bezpieczeństwo",
+    "iconName": "exclamationmark.triangle.fill",
+    "color": "#FF0000",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pj_safe_1",
+        "front": "Pomoc!",
+        "back": "助けて (たすけて)",
+        "difficulty": "easy",
+        "example": "助けてください！",
+        "exampleTranslation": "Pomocy!"
+      },
+      {
+        "id": "pj_safe_2",
+        "front": "Policja",
+        "back": "警察 (けいさつ)",
+        "difficulty": "easy",
+        "example": "警察を呼びました。",
+        "exampleTranslation": "Wezwałem policję."
+      },
+      {
+        "id": "pj_safe_3",
+        "front": "Karetka",
+        "back": "救急車 (きゅうきゅうしゃ)",
+        "difficulty": "medium",
+        "example": "救急車を呼んでください。",
+        "exampleTranslation": "Proszę wezwać karetkę."
+      },
+      {
+        "id": "pj_safe_4",
+        "front": "Straż pożarna",
+        "back": "消防車 (しょうぼうしゃ)",
+        "difficulty": "medium",
+        "example": "消防車が来ました。",
+        "exampleTranslation": "Przyjechała straż pożarna."
+      },
+      {
+        "id": "pj_safe_5",
+        "front": "Pożar",
+        "back": "火事 (かじ)",
+        "difficulty": "easy",
+        "example": "火事です！",
+        "exampleTranslation": "Pożar!"
+      },
+      {
+        "id": "pj_safe_6",
+        "front": "Trzęsienie ziemi",
+        "back": "地震 (じしん)",
+        "difficulty": "medium",
+        "example": "地震がありました。",
+        "exampleTranslation": "Było trzęsienie ziemi."
+      },
+      {
+        "id": "pj_safe_7",
+        "front": "Ewakuacja",
+        "back": "避難 (ひなん)",
+        "difficulty": "hard",
+        "example": "避難してください。",
+        "exampleTranslation": "Proszę się ewakuować."
+      },
+      {
+        "id": "pj_safe_8",
+        "front": "Wyjście ewakuacyjne",
+        "back": "非常口 (ひじょうぐち)",
+        "difficulty": "hard",
+        "example": "非常口はどこですか。",
+        "exampleTranslation": "Gdzie jest wyjście ewakuacyjne?"
+      },
+      {
+        "id": "pj_safe_9",
+        "front": "Niebezpieczny",
+        "back": "危険 (きけん)",
+        "difficulty": "easy",
+        "example": "危険です！",
+        "exampleTranslation": "Niebezpieczeństwo!"
+      },
+      {
+        "id": "pj_safe_10",
+        "front": "Apteczka",
+        "back": "救急箱 (きゅうきゅうばこ)",
+        "difficulty": "hard",
+        "example": "救急箱を持ってきてください。",
+        "exampleTranslation": "Proszę przynieść apteczkę."
+      },
+      {
+        "id": "pj_safe_11",
+        "front": "Złodziej",
+        "back": "泥棒 (どろぼう)",
+        "difficulty": "medium",
+        "example": "泥棒が入りました。",
+        "exampleTranslation": "Włamał się złodziej."
+      },
+      {
+        "id": "pj_safe_12",
+        "front": "Gaśnica",
+        "back": "消火器 (しょうかき)",
+        "difficulty": "hard",
+        "example": "消火器を使います。",
+        "exampleTranslation": "Używam gaśnicy."
+      },
+      {
+        "id": "pj_safe_13",
+        "front": "Pierwsza pomoc",
+        "back": "応急処置 (おうきゅうしょち)",
+        "difficulty": "hard",
+        "example": "応急処置をしました。",
+        "exampleTranslation": "Udzieliłem pierwszej pomocy."
+      },
+      {
+        "id": "pj_safe_14",
+        "front": "Ostrzeżenie",
+        "back": "警告 (けいこく)",
+        "difficulty": "medium",
+        "example": "警告に注意してください。",
+        "exampleTranslation": "Proszę uważać na ostrzeżenia."
+      },
+      {
+        "id": "pj_safe_15",
+        "front": "Bezpieczny",
+        "back": "安全 (あんぜん)",
+        "difficulty": "easy",
+        "example": "安全な場所に行ってください。",
+        "exampleTranslation": "Proszę iść w bezpieczne miejsce."
+      }
+    ]
   }
 ]

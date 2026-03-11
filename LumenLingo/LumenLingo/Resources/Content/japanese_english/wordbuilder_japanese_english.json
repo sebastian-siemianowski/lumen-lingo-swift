@@ -1,0 +1,1402 @@
+[
+  {
+    "key": "fruits_wb",
+    "name": "果物",
+    "description": "英語の果物の名前を覚えよう",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "apple",
+        "hint": "りんご"
+      },
+      {
+        "word": "orange",
+        "hint": "オレンジ"
+      },
+      {
+        "word": "banana",
+        "hint": "バナナ"
+      },
+      {
+        "word": "grape",
+        "hint": "ぶどう"
+      },
+      {
+        "word": "lemon",
+        "hint": "レモン"
+      },
+      {
+        "word": "mango",
+        "hint": "マンゴー"
+      },
+      {
+        "word": "peach",
+        "hint": "もも"
+      },
+      {
+        "word": "cherry",
+        "hint": "さくらんぼ"
+      },
+      {
+        "word": "melon",
+        "hint": "メロン"
+      },
+      {
+        "word": "plum",
+        "hint": "すもも"
+      },
+      {
+        "word": "pear",
+        "hint": "なし"
+      },
+      {
+        "word": "strawberry",
+        "hint": "いちご"
+      },
+      {
+        "word": "pineapple",
+        "hint": "パイナップル"
+      },
+      {
+        "word": "watermelon",
+        "hint": "すいか"
+      },
+      {
+        "word": "kiwi",
+        "hint": "キウイ"
+      }
+    ]
+  },
+  {
+    "key": "vegetables_wb",
+    "name": "野菜",
+    "description": "英語の野菜の名前を覚えよう",
+    "iconName": "carrot",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "tomato",
+        "hint": "トマト"
+      },
+      {
+        "word": "onion",
+        "hint": "たまねぎ"
+      },
+      {
+        "word": "carrot",
+        "hint": "にんじん"
+      },
+      {
+        "word": "potato",
+        "hint": "じゃがいも"
+      },
+      {
+        "word": "garlic",
+        "hint": "にんにく"
+      },
+      {
+        "word": "pepper",
+        "hint": "ピーマン"
+      },
+      {
+        "word": "spinach",
+        "hint": "ほうれんそう"
+      },
+      {
+        "word": "corn",
+        "hint": "とうもろこし"
+      },
+      {
+        "word": "lettuce",
+        "hint": "レタス"
+      },
+      {
+        "word": "cabbage",
+        "hint": "キャベツ"
+      },
+      {
+        "word": "cucumber",
+        "hint": "きゅうり"
+      },
+      {
+        "word": "pumpkin",
+        "hint": "かぼちゃ"
+      },
+      {
+        "word": "mushroom",
+        "hint": "きのこ"
+      },
+      {
+        "word": "celery",
+        "hint": "セロリ"
+      },
+      {
+        "word": "radish",
+        "hint": "だいこん"
+      }
+    ]
+  },
+  {
+    "key": "colors_wb",
+    "name": "色",
+    "description": "英語の色の名前を覚えよう",
+    "iconName": "paintpalette",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "red",
+        "hint": "赤"
+      },
+      {
+        "word": "blue",
+        "hint": "青"
+      },
+      {
+        "word": "green",
+        "hint": "緑"
+      },
+      {
+        "word": "yellow",
+        "hint": "黄色"
+      },
+      {
+        "word": "black",
+        "hint": "黒"
+      },
+      {
+        "word": "white",
+        "hint": "白"
+      },
+      {
+        "word": "crimson",
+        "hint": "深紅色"
+      },
+      {
+        "word": "purple",
+        "hint": "紫"
+      },
+      {
+        "word": "brown",
+        "hint": "茶色"
+      },
+      {
+        "word": "pink",
+        "hint": "ピンク"
+      },
+      {
+        "word": "gray",
+        "hint": "灰色"
+      },
+      {
+        "word": "silver",
+        "hint": "銀色"
+      },
+      {
+        "word": "golden",
+        "hint": "金色"
+      },
+      {
+        "word": "violet",
+        "hint": "すみれ色"
+      },
+      {
+        "word": "scarlet",
+        "hint": "緋色"
+      }
+    ]
+  },
+  {
+    "key": "family_wb",
+    "name": "家族",
+    "description": "英語の家族に関する単語を覚えよう",
+    "iconName": "person.3",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "mother",
+        "hint": "お母さん"
+      },
+      {
+        "word": "father",
+        "hint": "お父さん"
+      },
+      {
+        "word": "sister",
+        "hint": "姉・妹"
+      },
+      {
+        "word": "brother",
+        "hint": "兄・弟"
+      },
+      {
+        "word": "daughter",
+        "hint": "娘"
+      },
+      {
+        "word": "parent",
+        "hint": "親"
+      },
+      {
+        "word": "uncle",
+        "hint": "おじ"
+      },
+      {
+        "word": "aunt",
+        "hint": "おば"
+      },
+      {
+        "word": "cousin",
+        "hint": "いとこ"
+      },
+      {
+        "word": "nephew",
+        "hint": "おい"
+      },
+      {
+        "word": "niece",
+        "hint": "めい"
+      },
+      {
+        "word": "husband",
+        "hint": "夫"
+      },
+      {
+        "word": "wife",
+        "hint": "妻"
+      },
+      {
+        "word": "grandpa",
+        "hint": "おじいちゃん"
+      },
+      {
+        "word": "grandma",
+        "hint": "おばあちゃん"
+      }
+    ]
+  },
+  {
+    "key": "animals_wb",
+    "name": "動物",
+    "description": "英語の動物の名前を覚えよう",
+    "iconName": "hare",
+    "color": "#eab308",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "cat",
+        "hint": "ねこ"
+      },
+      {
+        "word": "dog",
+        "hint": "いぬ"
+      },
+      {
+        "word": "rabbit",
+        "hint": "うさぎ"
+      },
+      {
+        "word": "horse",
+        "hint": "うま"
+      },
+      {
+        "word": "elephant",
+        "hint": "ぞう"
+      },
+      {
+        "word": "tiger",
+        "hint": "とら"
+      },
+      {
+        "word": "monkey",
+        "hint": "さる"
+      },
+      {
+        "word": "dolphin",
+        "hint": "イルカ"
+      },
+      {
+        "word": "penguin",
+        "hint": "ペンギン"
+      },
+      {
+        "word": "giraffe",
+        "hint": "キリン"
+      },
+      {
+        "word": "turtle",
+        "hint": "かめ"
+      },
+      {
+        "word": "eagle",
+        "hint": "わし"
+      },
+      {
+        "word": "whale",
+        "hint": "くじら"
+      },
+      {
+        "word": "panda",
+        "hint": "パンダ"
+      },
+      {
+        "word": "koala",
+        "hint": "コアラ"
+      }
+    ]
+  },
+  {
+    "key": "body_parts_wb",
+    "name": "体の部分",
+    "description": "英語の体に関する単語を覚えよう",
+    "iconName": "figure.stand",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "head",
+        "hint": "あたま"
+      },
+      {
+        "word": "hand",
+        "hint": "て"
+      },
+      {
+        "word": "finger",
+        "hint": "ゆび"
+      },
+      {
+        "word": "shoulder",
+        "hint": "かた"
+      },
+      {
+        "word": "knee",
+        "hint": "ひざ"
+      },
+      {
+        "word": "elbow",
+        "hint": "ひじ"
+      },
+      {
+        "word": "chest",
+        "hint": "むね"
+      },
+      {
+        "word": "stomach",
+        "hint": "おなか"
+      },
+      {
+        "word": "ankle",
+        "hint": "くるぶし"
+      },
+      {
+        "word": "wrist",
+        "hint": "てくび"
+      },
+      {
+        "word": "throat",
+        "hint": "のど"
+      },
+      {
+        "word": "tongue",
+        "hint": "した"
+      },
+      {
+        "word": "tooth",
+        "hint": "は"
+      },
+      {
+        "word": "muscle",
+        "hint": "きんにく"
+      },
+      {
+        "word": "heart",
+        "hint": "しんぞう"
+      }
+    ]
+  },
+  {
+    "key": "numbers_wb",
+    "name": "数字",
+    "description": "英語の数字の書き方を覚えよう",
+    "iconName": "number",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "three",
+        "hint": "3（さん）"
+      },
+      {
+        "word": "four",
+        "hint": "4（よん）"
+      },
+      {
+        "word": "five",
+        "hint": "5（ご）"
+      },
+      {
+        "word": "seven",
+        "hint": "7（なな）"
+      },
+      {
+        "word": "eight",
+        "hint": "8（はち）"
+      },
+      {
+        "word": "nine",
+        "hint": "9（きゅう）"
+      },
+      {
+        "word": "eleven",
+        "hint": "11（じゅういち）"
+      },
+      {
+        "word": "twelve",
+        "hint": "12（じゅうに）"
+      },
+      {
+        "word": "twenty",
+        "hint": "20（にじゅう）"
+      },
+      {
+        "word": "thirty",
+        "hint": "30（さんじゅう）"
+      },
+      {
+        "word": "fifty",
+        "hint": "50（ごじゅう）"
+      },
+      {
+        "word": "hundred",
+        "hint": "百（ひゃく）"
+      },
+      {
+        "word": "thousand",
+        "hint": "千（せん）"
+      },
+      {
+        "word": "million",
+        "hint": "百万（ひゃくまん）"
+      },
+      {
+        "word": "billion",
+        "hint": "十億（じゅうおく）"
+      }
+    ]
+  },
+  {
+    "key": "greetings_wb",
+    "name": "あいさつ",
+    "description": "英語のあいさつ表現を覚えよう",
+    "iconName": "hand.wave",
+    "color": "#14b8a6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "hello",
+        "hint": "こんにちは"
+      },
+      {
+        "word": "goodbye",
+        "hint": "さようなら"
+      },
+      {
+        "word": "thanks",
+        "hint": "ありがとう"
+      },
+      {
+        "word": "please",
+        "hint": "お願いします"
+      },
+      {
+        "word": "sorry",
+        "hint": "ごめんなさい"
+      },
+      {
+        "word": "welcome",
+        "hint": "ようこそ"
+      },
+      {
+        "word": "morning",
+        "hint": "朝（おはよう）"
+      },
+      {
+        "word": "evening",
+        "hint": "夕方（こんばんは）"
+      },
+      {
+        "word": "cheers",
+        "hint": "乾杯"
+      },
+      {
+        "word": "pardon",
+        "hint": "すみません"
+      },
+      {
+        "word": "congrats",
+        "hint": "おめでとう"
+      },
+      {
+        "word": "bless",
+        "hint": "祝福する"
+      },
+      {
+        "word": "greet",
+        "hint": "あいさつする"
+      },
+      {
+        "word": "farewell",
+        "hint": "お別れ"
+      },
+      {
+        "word": "salute",
+        "hint": "敬礼する"
+      }
+    ]
+  },
+  {
+    "key": "food_wb",
+    "name": "食べ物",
+    "description": "英語の食べ物の名前を覚えよう",
+    "iconName": "fork.knife",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "bread",
+        "hint": "パン"
+      },
+      {
+        "word": "cheese",
+        "hint": "チーズ"
+      },
+      {
+        "word": "butter",
+        "hint": "バター"
+      },
+      {
+        "word": "chicken",
+        "hint": "鶏肉（とりにく）"
+      },
+      {
+        "word": "salmon",
+        "hint": "さけ"
+      },
+      {
+        "word": "pasta",
+        "hint": "パスタ"
+      },
+      {
+        "word": "salad",
+        "hint": "サラダ"
+      },
+      {
+        "word": "steak",
+        "hint": "ステーキ"
+      },
+      {
+        "word": "sandwich",
+        "hint": "サンドイッチ"
+      },
+      {
+        "word": "pancake",
+        "hint": "パンケーキ"
+      },
+      {
+        "word": "cereal",
+        "hint": "シリアル"
+      },
+      {
+        "word": "yogurt",
+        "hint": "ヨーグルト"
+      },
+      {
+        "word": "noodle",
+        "hint": "めん類（めんるい）"
+      },
+      {
+        "word": "sausage",
+        "hint": "ソーセージ"
+      },
+      {
+        "word": "waffle",
+        "hint": "ワッフル"
+      }
+    ]
+  },
+  {
+    "key": "clothing_wb",
+    "name": "衣類",
+    "description": "英語の衣類の名前を覚えよう",
+    "iconName": "tshirt",
+    "color": "#6366f1",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "shirt",
+        "hint": "シャツ"
+      },
+      {
+        "word": "jacket",
+        "hint": "ジャケット"
+      },
+      {
+        "word": "scarf",
+        "hint": "マフラー"
+      },
+      {
+        "word": "gloves",
+        "hint": "手ぶくろ"
+      },
+      {
+        "word": "boots",
+        "hint": "ブーツ"
+      },
+      {
+        "word": "sweater",
+        "hint": "セーター"
+      },
+      {
+        "word": "dress",
+        "hint": "ドレス"
+      },
+      {
+        "word": "skirt",
+        "hint": "スカート"
+      },
+      {
+        "word": "socks",
+        "hint": "くつした"
+      },
+      {
+        "word": "belt",
+        "hint": "ベルト"
+      },
+      {
+        "word": "helmet",
+        "hint": "ヘルメット"
+      },
+      {
+        "word": "uniform",
+        "hint": "制服（せいふく）"
+      },
+      {
+        "word": "slippers",
+        "hint": "スリッパ"
+      },
+      {
+        "word": "sandals",
+        "hint": "サンダル"
+      },
+      {
+        "word": "pajamas",
+        "hint": "パジャマ"
+      }
+    ]
+  },
+  {
+    "key": "house_rooms_wb",
+    "name": "家の部屋",
+    "description": "家や部屋に関する英語の単語を覚えよう",
+    "iconName": "house",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "kitchen",
+        "hint": "台所（だいどころ）"
+      },
+      {
+        "word": "bedroom",
+        "hint": "寝室（しんしつ）"
+      },
+      {
+        "word": "bathroom",
+        "hint": "浴室（よくしつ）"
+      },
+      {
+        "word": "garden",
+        "hint": "庭（にわ）"
+      },
+      {
+        "word": "garage",
+        "hint": "車庫（しゃこ）"
+      },
+      {
+        "word": "balcony",
+        "hint": "バルコニー"
+      },
+      {
+        "word": "hallway",
+        "hint": "廊下（ろうか）"
+      },
+      {
+        "word": "ceiling",
+        "hint": "天井（てんじょう）"
+      },
+      {
+        "word": "chimney",
+        "hint": "煙突（えんとつ）"
+      },
+      {
+        "word": "staircase",
+        "hint": "階段（かいだん）"
+      },
+      {
+        "word": "basement",
+        "hint": "地下室（ちかしつ）"
+      },
+      {
+        "word": "window",
+        "hint": "窓（まど）"
+      },
+      {
+        "word": "doorbell",
+        "hint": "ドアベル"
+      },
+      {
+        "word": "carpet",
+        "hint": "カーペット"
+      },
+      {
+        "word": "curtain",
+        "hint": "カーテン"
+      }
+    ]
+  },
+  {
+    "key": "weather_wb",
+    "name": "天気",
+    "description": "英語の天気に関する単語を覚えよう",
+    "iconName": "cloud.sun",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "sunny",
+        "hint": "晴れ（はれ）"
+      },
+      {
+        "word": "cloudy",
+        "hint": "くもり"
+      },
+      {
+        "word": "rainy",
+        "hint": "雨（あめ）"
+      },
+      {
+        "word": "windy",
+        "hint": "風がつよい"
+      },
+      {
+        "word": "storm",
+        "hint": "嵐（あらし）"
+      },
+      {
+        "word": "thunder",
+        "hint": "雷（かみなり）"
+      },
+      {
+        "word": "foggy",
+        "hint": "霧（きり）がかった"
+      },
+      {
+        "word": "frost",
+        "hint": "霜（しも）"
+      },
+      {
+        "word": "rainbow",
+        "hint": "虹（にじ）"
+      },
+      {
+        "word": "breeze",
+        "hint": "そよ風（そよかぜ）"
+      },
+      {
+        "word": "drought",
+        "hint": "干ばつ（かんばつ）"
+      },
+      {
+        "word": "blizzard",
+        "hint": "吹雪（ふぶき）"
+      },
+      {
+        "word": "humid",
+        "hint": "むしあつい"
+      },
+      {
+        "word": "forecast",
+        "hint": "天気予報（てんきよほう）"
+      },
+      {
+        "word": "climate",
+        "hint": "気候（きこう）"
+      }
+    ]
+  },
+  {
+    "key": "professions_wb",
+    "name": "職業",
+    "description": "英語の職業の名前を覚えよう",
+    "iconName": "briefcase",
+    "color": "#64748b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "doctor",
+        "hint": "医者（いしゃ）"
+      },
+      {
+        "word": "teacher",
+        "hint": "先生（せんせい）"
+      },
+      {
+        "word": "engineer",
+        "hint": "エンジニア"
+      },
+      {
+        "word": "lawyer",
+        "hint": "弁護士（べんごし）"
+      },
+      {
+        "word": "dentist",
+        "hint": "歯医者（はいしゃ）"
+      },
+      {
+        "word": "pilot",
+        "hint": "パイロット"
+      },
+      {
+        "word": "nurse",
+        "hint": "看護師（かんごし）"
+      },
+      {
+        "word": "farmer",
+        "hint": "農家（のうか）"
+      },
+      {
+        "word": "artist",
+        "hint": "芸術家（げいじゅつか）"
+      },
+      {
+        "word": "baker",
+        "hint": "パン屋（パンや）"
+      },
+      {
+        "word": "plumber",
+        "hint": "配管工（はいかんこう）"
+      },
+      {
+        "word": "surgeon",
+        "hint": "外科医（げかい）"
+      },
+      {
+        "word": "cashier",
+        "hint": "レジ係（レジがかり）"
+      },
+      {
+        "word": "mechanic",
+        "hint": "整備士（せいびし）"
+      },
+      {
+        "word": "librarian",
+        "hint": "司書（ししょ）"
+      }
+    ]
+  },
+  {
+    "key": "transport_wb",
+    "name": "乗り物",
+    "description": "英語の乗り物の名前を覚えよう",
+    "iconName": "car",
+    "color": "#0ea5e9",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "train",
+        "hint": "電車（でんしゃ）"
+      },
+      {
+        "word": "bicycle",
+        "hint": "自転車（じてんしゃ）"
+      },
+      {
+        "word": "airplane",
+        "hint": "飛行機（ひこうき）"
+      },
+      {
+        "word": "subway",
+        "hint": "地下鉄（ちかてつ）"
+      },
+      {
+        "word": "ferry",
+        "hint": "フェリー"
+      },
+      {
+        "word": "taxi",
+        "hint": "タクシー"
+      },
+      {
+        "word": "scooter",
+        "hint": "スクーター"
+      },
+      {
+        "word": "truck",
+        "hint": "トラック"
+      },
+      {
+        "word": "helicopter",
+        "hint": "ヘリコプター"
+      },
+      {
+        "word": "canoe",
+        "hint": "カヌー"
+      },
+      {
+        "word": "rocket",
+        "hint": "ロケット"
+      },
+      {
+        "word": "sailboat",
+        "hint": "帆船（はんせん）"
+      },
+      {
+        "word": "tram",
+        "hint": "路面電車（ろめんでんしゃ）"
+      },
+      {
+        "word": "ambulance",
+        "hint": "救急車（きゅうきゅうしゃ）"
+      },
+      {
+        "word": "carriage",
+        "hint": "馬車（ばしゃ）"
+      }
+    ]
+  },
+  {
+    "key": "school_wb",
+    "name": "学校",
+    "description": "学校に関する英語の単語を覚えよう",
+    "iconName": "book",
+    "color": "#f43f5e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "pencil",
+        "hint": "えんぴつ"
+      },
+      {
+        "word": "eraser",
+        "hint": "消しゴム（けしゴム）"
+      },
+      {
+        "word": "notebook",
+        "hint": "ノート"
+      },
+      {
+        "word": "ruler",
+        "hint": "定規（じょうぎ）"
+      },
+      {
+        "word": "backpack",
+        "hint": "リュックサック"
+      },
+      {
+        "word": "chalk",
+        "hint": "チョーク"
+      },
+      {
+        "word": "marker",
+        "hint": "マーカー"
+      },
+      {
+        "word": "student",
+        "hint": "生徒（せいと）"
+      },
+      {
+        "word": "homework",
+        "hint": "宿題（しゅくだい）"
+      },
+      {
+        "word": "lesson",
+        "hint": "授業（じゅぎょう）"
+      },
+      {
+        "word": "diploma",
+        "hint": "卒業証書（そつぎょうしょうしょ）"
+      },
+      {
+        "word": "campus",
+        "hint": "キャンパス"
+      },
+      {
+        "word": "scissors",
+        "hint": "はさみ"
+      },
+      {
+        "word": "textbook",
+        "hint": "教科書（きょうかしょ）"
+      },
+      {
+        "word": "library",
+        "hint": "図書館（としょかん）"
+      }
+    ]
+  },
+  {
+    "key": "kitchen_utensils_wb",
+    "name": "台所用品",
+    "description": "台所で使う英語の単語を覚えよう",
+    "iconName": "cup.and.saucer",
+    "color": "#78716c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "spoon",
+        "hint": "スプーン"
+      },
+      {
+        "word": "fork",
+        "hint": "フォーク"
+      },
+      {
+        "word": "knife",
+        "hint": "ナイフ"
+      },
+      {
+        "word": "plate",
+        "hint": "お皿（おさら）"
+      },
+      {
+        "word": "bowl",
+        "hint": "ボウル"
+      },
+      {
+        "word": "kettle",
+        "hint": "やかん"
+      },
+      {
+        "word": "oven",
+        "hint": "オーブン"
+      },
+      {
+        "word": "blender",
+        "hint": "ミキサー"
+      },
+      {
+        "word": "spatula",
+        "hint": "フライ返し（フライがえし）"
+      },
+      {
+        "word": "grater",
+        "hint": "おろし金（おろしがね）"
+      },
+      {
+        "word": "whisk",
+        "hint": "泡立て器（あわだてき）"
+      },
+      {
+        "word": "strainer",
+        "hint": "ざる"
+      },
+      {
+        "word": "apron",
+        "hint": "エプロン"
+      },
+      {
+        "word": "ladle",
+        "hint": "おたま"
+      },
+      {
+        "word": "tongs",
+        "hint": "トング"
+      }
+    ]
+  },
+  {
+    "key": "sports_wb",
+    "name": "スポーツ",
+    "description": "英語のスポーツの名前を覚えよう",
+    "iconName": "sportscourt",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "soccer",
+        "hint": "サッカー"
+      },
+      {
+        "word": "tennis",
+        "hint": "テニス"
+      },
+      {
+        "word": "hockey",
+        "hint": "ホッケー"
+      },
+      {
+        "word": "boxing",
+        "hint": "ボクシング"
+      },
+      {
+        "word": "surfing",
+        "hint": "サーフィン"
+      },
+      {
+        "word": "archery",
+        "hint": "アーチェリー"
+      },
+      {
+        "word": "fencing",
+        "hint": "フェンシング"
+      },
+      {
+        "word": "skiing",
+        "hint": "スキー"
+      },
+      {
+        "word": "rugby",
+        "hint": "ラグビー"
+      },
+      {
+        "word": "cricket",
+        "hint": "クリケット"
+      },
+      {
+        "word": "wrestling",
+        "hint": "レスリング"
+      },
+      {
+        "word": "badminton",
+        "hint": "バドミントン"
+      },
+      {
+        "word": "marathon",
+        "hint": "マラソン"
+      },
+      {
+        "word": "javelin",
+        "hint": "やり投げ（やりなげ）"
+      },
+      {
+        "word": "rowing",
+        "hint": "ボート競技（ボートきょうぎ）"
+      }
+    ]
+  },
+  {
+    "key": "music_instruments_wb",
+    "name": "楽器",
+    "description": "英語の楽器の名前を覚えよう",
+    "iconName": "music.note",
+    "color": "#d946ef",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "piano",
+        "hint": "ピアノ"
+      },
+      {
+        "word": "guitar",
+        "hint": "ギター"
+      },
+      {
+        "word": "violin",
+        "hint": "バイオリン"
+      },
+      {
+        "word": "trumpet",
+        "hint": "トランペット"
+      },
+      {
+        "word": "drums",
+        "hint": "ドラム"
+      },
+      {
+        "word": "flute",
+        "hint": "フルート"
+      },
+      {
+        "word": "harp",
+        "hint": "ハープ"
+      },
+      {
+        "word": "cello",
+        "hint": "チェロ"
+      },
+      {
+        "word": "clarinet",
+        "hint": "クラリネット"
+      },
+      {
+        "word": "saxophone",
+        "hint": "サクソフォン"
+      },
+      {
+        "word": "oboe",
+        "hint": "オーボエ"
+      },
+      {
+        "word": "trombone",
+        "hint": "トロンボーン"
+      },
+      {
+        "word": "accordion",
+        "hint": "アコーディオン"
+      },
+      {
+        "word": "banjo",
+        "hint": "バンジョー"
+      },
+      {
+        "word": "harmonica",
+        "hint": "ハーモニカ"
+      }
+    ]
+  },
+  {
+    "key": "nature_wb",
+    "name": "自然",
+    "description": "自然に関する英語の単語を覚えよう",
+    "iconName": "leaf",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "mountain",
+        "hint": "山（やま）"
+      },
+      {
+        "word": "river",
+        "hint": "川（かわ）"
+      },
+      {
+        "word": "forest",
+        "hint": "森（もり）"
+      },
+      {
+        "word": "ocean",
+        "hint": "海（うみ）"
+      },
+      {
+        "word": "desert",
+        "hint": "砂漠（さばく）"
+      },
+      {
+        "word": "island",
+        "hint": "島（しま）"
+      },
+      {
+        "word": "volcano",
+        "hint": "火山（かざん）"
+      },
+      {
+        "word": "glacier",
+        "hint": "氷河（ひょうが）"
+      },
+      {
+        "word": "waterfall",
+        "hint": "滝（たき）"
+      },
+      {
+        "word": "meadow",
+        "hint": "牧草地（ぼくそうち）"
+      },
+      {
+        "word": "canyon",
+        "hint": "峡谷（きょうこく）"
+      },
+      {
+        "word": "coral",
+        "hint": "さんご"
+      },
+      {
+        "word": "pebble",
+        "hint": "小石（こいし）"
+      },
+      {
+        "word": "creek",
+        "hint": "小川（おがわ）"
+      },
+      {
+        "word": "cliff",
+        "hint": "がけ"
+      }
+    ]
+  },
+  {
+    "key": "emotions_wb",
+    "name": "感情",
+    "description": "感情を表す英語の単語を覚えよう",
+    "iconName": "heart",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "happy",
+        "hint": "うれしい"
+      },
+      {
+        "word": "angry",
+        "hint": "おこった"
+      },
+      {
+        "word": "scared",
+        "hint": "こわい"
+      },
+      {
+        "word": "lonely",
+        "hint": "さびしい"
+      },
+      {
+        "word": "proud",
+        "hint": "ほこらしい"
+      },
+      {
+        "word": "nervous",
+        "hint": "きんちょうした"
+      },
+      {
+        "word": "jealous",
+        "hint": "うらやましい"
+      },
+      {
+        "word": "curious",
+        "hint": "きょうみしんしんの"
+      },
+      {
+        "word": "grateful",
+        "hint": "かんしゃしている"
+      },
+      {
+        "word": "confused",
+        "hint": "こんらんした"
+      },
+      {
+        "word": "relieved",
+        "hint": "あんしんした"
+      },
+      {
+        "word": "excited",
+        "hint": "わくわくした"
+      },
+      {
+        "word": "bored",
+        "hint": "たいくつした"
+      },
+      {
+        "word": "ashamed",
+        "hint": "はずかしい"
+      },
+      {
+        "word": "hopeful",
+        "hint": "きぼうにみちた"
+      }
+    ]
+  }
+]

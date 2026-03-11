@@ -1700,8 +1700,8 @@
         "hint": "Cooking"
       },
       {
-        "word": "سباحة",
-        "hint": "Swimming"
+        "word": "غوص",
+        "hint": "Diving"
       },
       {
         "word": "تصوير",
@@ -1744,8 +1744,358 @@
         "hint": "Meditation"
       },
       {
-        "word": "سفر",
-        "hint": "Traveling"
+        "word": "تخييم",
+        "hint": "Camping"
+      }
+    ]
+  },
+  {
+    "key": "drinks_beverages_wb",
+    "name": "Drinks & Beverages",
+    "description": "Common drinks and beverages in Arabic",
+    "iconName": "cup.and.saucer",
+    "color": "#0d9488",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ماء",
+        "hint": "Water"
+      },
+      {
+        "word": "شاي",
+        "hint": "Tea"
+      },
+      {
+        "word": "قهوة",
+        "hint": "Coffee"
+      },
+      {
+        "word": "عصير",
+        "hint": "Juice"
+      },
+      {
+        "word": "لبن",
+        "hint": "Yogurt drink / Buttermilk"
+      },
+      {
+        "word": "مشروب",
+        "hint": "Drink / Beverage"
+      },
+      {
+        "word": "ليمونادة",
+        "hint": "Lemonade"
+      },
+      {
+        "word": "كاكاو",
+        "hint": "Cocoa / Hot chocolate"
+      },
+      {
+        "word": "نعناع",
+        "hint": "Mint (tea)"
+      },
+      {
+        "word": "زنجبيل",
+        "hint": "Ginger (drink)"
+      },
+      {
+        "word": "سحلب",
+        "hint": "Sahlab (hot drink)"
+      },
+      {
+        "word": "تمر",
+        "hint": "Date (fruit for drinks)"
+      },
+      {
+        "word": "قرفة",
+        "hint": "Cinnamon (drink)"
+      },
+      {
+        "word": "كركديه",
+        "hint": "Hibiscus (drink)"
+      },
+      {
+        "word": "يانسون",
+        "hint": "Anise (drink)"
+      }
+    ]
+  },
+  {
+    "key": "desserts_sweets_wb",
+    "name": "Desserts & Sweets",
+    "description": "Desserts and sweet treats in Arabic",
+    "iconName": "birthday.cake",
+    "color": "#f472b6",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "كعكة",
+        "hint": "Cake"
+      },
+      {
+        "word": "بسكويت",
+        "hint": "Biscuit / Cookie"
+      },
+      {
+        "word": "شوكولاتة",
+        "hint": "Chocolate"
+      },
+      {
+        "word": "بوظة",
+        "hint": "Ice cream"
+      },
+      {
+        "word": "حلوى",
+        "hint": "Candy / Sweets"
+      },
+      {
+        "word": "كنافة",
+        "hint": "Kunafa (pastry)"
+      },
+      {
+        "word": "بقلاوة",
+        "hint": "Baklava"
+      },
+      {
+        "word": "قطايف",
+        "hint": "Qatayef (pancakes)"
+      },
+      {
+        "word": "هريسة",
+        "hint": "Harissa (semolina cake)"
+      },
+      {
+        "word": "معمول",
+        "hint": "Maamoul (cookies)"
+      },
+      {
+        "word": "عسل",
+        "hint": "Honey"
+      },
+      {
+        "word": "مربى",
+        "hint": "Jam / Marmalade"
+      },
+      {
+        "word": "فطيرة",
+        "hint": "Pie / Pastry"
+      },
+      {
+        "word": "بودينغ",
+        "hint": "Pudding"
+      },
+      {
+        "word": "مهلبية",
+        "hint": "Muhallabia (milk pudding)"
+      }
+    ]
+  },
+  {
+    "key": "furniture_wb",
+    "name": "Furniture",
+    "description": "Furniture and home furnishings in Arabic",
+    "iconName": "sofa",
+    "color": "#a16207",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "سرير",
+        "hint": "Bed"
+      },
+      {
+        "word": "طاولة",
+        "hint": "Table"
+      },
+      {
+        "word": "أريكة",
+        "hint": "Sofa / Couch"
+      },
+      {
+        "word": "خزانة",
+        "hint": "Wardrobe / Cabinet"
+      },
+      {
+        "word": "رف",
+        "hint": "Shelf"
+      },
+      {
+        "word": "مرآة",
+        "hint": "Mirror"
+      },
+      {
+        "word": "وسادة",
+        "hint": "Pillow / Cushion"
+      },
+      {
+        "word": "بساط",
+        "hint": "Carpet / Rug"
+      },
+      {
+        "word": "ستارة",
+        "hint": "Curtain"
+      },
+      {
+        "word": "مصباح",
+        "hint": "Lamp"
+      },
+      {
+        "word": "خزنة",
+        "hint": "Chest / Storage box"
+      },
+      {
+        "word": "حامل",
+        "hint": "Stand / Rack"
+      },
+      {
+        "word": "مزهرية",
+        "hint": "Vase"
+      },
+      {
+        "word": "غطاء",
+        "hint": "Blanket / Cover"
+      },
+      {
+        "word": "منضدة",
+        "hint": "Nightstand / Side table"
+      }
+    ]
+  },
+  {
+    "key": "tools_wb",
+    "name": "Tools",
+    "description": "Common tools and equipment in Arabic",
+    "iconName": "wrench.and.screwdriver",
+    "color": "#71717a",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "مطرقة",
+        "hint": "Hammer"
+      },
+      {
+        "word": "مفتاح",
+        "hint": "Wrench / Key"
+      },
+      {
+        "word": "منشار",
+        "hint": "Saw"
+      },
+      {
+        "word": "مثقاب",
+        "hint": "Drill"
+      },
+      {
+        "word": "مسمار",
+        "hint": "Nail"
+      },
+      {
+        "word": "برغي",
+        "hint": "Screw"
+      },
+      {
+        "word": "مفك",
+        "hint": "Screwdriver"
+      },
+      {
+        "word": "كماشة",
+        "hint": "Pliers"
+      },
+      {
+        "word": "شريط",
+        "hint": "Tape / Measuring tape"
+      },
+      {
+        "word": "فرشاة",
+        "hint": "Brush"
+      },
+      {
+        "word": "سلم",
+        "hint": "Ladder"
+      },
+      {
+        "word": "دلو",
+        "hint": "Bucket"
+      },
+      {
+        "word": "مجرفة",
+        "hint": "Shovel / Trowel"
+      },
+      {
+        "word": "ملزمة",
+        "hint": "Vise / Clamp"
+      },
+      {
+        "word": "مبرد",
+        "hint": "File (metal tool)"
+      }
+    ]
+  },
+  {
+    "key": "materials_wb",
+    "name": "Materials",
+    "description": "Common materials and substances in Arabic",
+    "iconName": "cube",
+    "color": "#57534e",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "خشب",
+        "hint": "Wood"
+      },
+      {
+        "word": "حديد",
+        "hint": "Iron"
+      },
+      {
+        "word": "زجاج",
+        "hint": "Glass"
+      },
+      {
+        "word": "قطن",
+        "hint": "Cotton"
+      },
+      {
+        "word": "حرير",
+        "hint": "Silk"
+      },
+      {
+        "word": "جلد",
+        "hint": "Leather"
+      },
+      {
+        "word": "صوف",
+        "hint": "Wool"
+      },
+      {
+        "word": "نحاس",
+        "hint": "Copper"
+      },
+      {
+        "word": "ذهب",
+        "hint": "Gold"
+      },
+      {
+        "word": "فضة",
+        "hint": "Silver"
+      },
+      {
+        "word": "رخام",
+        "hint": "Marble"
+      },
+      {
+        "word": "بلاستيك",
+        "hint": "Plastic"
+      },
+      {
+        "word": "مطاط",
+        "hint": "Rubber"
+      },
+      {
+        "word": "إسمنت",
+        "hint": "Cement"
+      },
+      {
+        "word": "طين",
+        "hint": "Clay / Mud"
       }
     ]
   }

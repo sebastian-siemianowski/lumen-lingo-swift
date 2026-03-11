@@ -1,0 +1,1052 @@
+[
+  {
+    "key": "fruits_wb",
+    "name": "Owoce",
+    "description": "Popularne owoce po arabsku",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "تفاحة",
+        "hint": "Jabłko"
+      },
+      {
+        "word": "برتقالة",
+        "hint": "Pomarańcza"
+      },
+      {
+        "word": "موزة",
+        "hint": "Banan"
+      },
+      {
+        "word": "فراولة",
+        "hint": "Truskawka"
+      },
+      {
+        "word": "عنب",
+        "hint": "Winogrono"
+      },
+      {
+        "word": "ليمون",
+        "hint": "Cytryna"
+      },
+      {
+        "word": "بطيخ",
+        "hint": "Arbuz"
+      },
+      {
+        "word": "خوخ",
+        "hint": "Brzoskwinia"
+      },
+      {
+        "word": "كرز",
+        "hint": "Wiśnia"
+      },
+      {
+        "word": "أناناس",
+        "hint": "Ananas"
+      },
+      {
+        "word": "كمثرى",
+        "hint": "Gruszka"
+      },
+      {
+        "word": "مانجو",
+        "hint": "Mango"
+      },
+      {
+        "word": "تين",
+        "hint": "Figa"
+      },
+      {
+        "word": "رمان",
+        "hint": "Granat"
+      },
+      {
+        "word": "مشمش",
+        "hint": "Morela"
+      }
+    ]
+  },
+  {
+    "key": "vegetables_wb",
+    "name": "Warzywa",
+    "description": "Popularne warzywa po arabsku",
+    "iconName": "carrot",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "طماطم",
+        "hint": "Pomidor"
+      },
+      {
+        "word": "بصل",
+        "hint": "Cebula"
+      },
+      {
+        "word": "خس",
+        "hint": "Sałata"
+      },
+      {
+        "word": "جزر",
+        "hint": "Marchew"
+      },
+      {
+        "word": "بطاطس",
+        "hint": "Ziemniak"
+      },
+      {
+        "word": "ثوم",
+        "hint": "Czosnek"
+      },
+      {
+        "word": "خيار",
+        "hint": "Ogórek"
+      },
+      {
+        "word": "فلفل",
+        "hint": "Papryka"
+      },
+      {
+        "word": "سبانخ",
+        "hint": "Szpinak"
+      },
+      {
+        "word": "بروكلي",
+        "hint": "Brokuł"
+      },
+      {
+        "word": "ذرة",
+        "hint": "Kukurydza"
+      },
+      {
+        "word": "بازلاء",
+        "hint": "Groszek"
+      },
+      {
+        "word": "فطر",
+        "hint": "Grzyb"
+      },
+      {
+        "word": "باذنجان",
+        "hint": "Bakłażan"
+      },
+      {
+        "word": "قرع",
+        "hint": "Dynia"
+      }
+    ]
+  },
+  {
+    "key": "colors_wb",
+    "name": "Kolory",
+    "description": "Nazwy kolorów po arabsku",
+    "iconName": "paintpalette",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "أحمر",
+        "hint": "Czerwony"
+      },
+      {
+        "word": "أزرق",
+        "hint": "Niebieski"
+      },
+      {
+        "word": "أخضر",
+        "hint": "Zielony"
+      },
+      {
+        "word": "أصفر",
+        "hint": "Żółty"
+      },
+      {
+        "word": "أسود",
+        "hint": "Czarny"
+      },
+      {
+        "word": "أبيض",
+        "hint": "Biały"
+      },
+      {
+        "word": "برتقالي",
+        "hint": "Pomarańczowy"
+      },
+      {
+        "word": "بنفسجي",
+        "hint": "Fioletowy"
+      },
+      {
+        "word": "وردي",
+        "hint": "Różowy"
+      },
+      {
+        "word": "بني",
+        "hint": "Brązowy"
+      },
+      {
+        "word": "رمادي",
+        "hint": "Szary"
+      },
+      {
+        "word": "ذهبي",
+        "hint": "Złoty"
+      },
+      {
+        "word": "فضي",
+        "hint": "Srebrny"
+      },
+      {
+        "word": "سماوي",
+        "hint": "Błękitny"
+      },
+      {
+        "word": "داكن",
+        "hint": "Ciemny"
+      }
+    ]
+  },
+  {
+    "key": "family_wb",
+    "name": "Rodzina",
+    "description": "Członkowie rodziny po arabsku",
+    "iconName": "person.3",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "أم",
+        "hint": "Mama"
+      },
+      {
+        "word": "أب",
+        "hint": "Tata"
+      },
+      {
+        "word": "أخت",
+        "hint": "Siostra"
+      },
+      {
+        "word": "أخ",
+        "hint": "Brat"
+      },
+      {
+        "word": "جدة",
+        "hint": "Babcia"
+      },
+      {
+        "word": "جد",
+        "hint": "Dziadek"
+      },
+      {
+        "word": "ابن",
+        "hint": "Syn"
+      },
+      {
+        "word": "ابنة",
+        "hint": "Córka"
+      },
+      {
+        "word": "عم",
+        "hint": "Wujek (od ojca)"
+      },
+      {
+        "word": "خالة",
+        "hint": "Ciocia (od matki)"
+      },
+      {
+        "word": "زوج",
+        "hint": "Mąż"
+      },
+      {
+        "word": "زوجة",
+        "hint": "Żona"
+      },
+      {
+        "word": "حفيد",
+        "hint": "Wnuk"
+      },
+      {
+        "word": "عائلة",
+        "hint": "Rodzina"
+      },
+      {
+        "word": "طفل",
+        "hint": "Dziecko"
+      }
+    ]
+  },
+  {
+    "key": "animals_wb",
+    "name": "Zwierzęta",
+    "description": "Popularne zwierzęta po arabsku",
+    "iconName": "hare",
+    "color": "#eab308",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "كلب",
+        "hint": "Pies"
+      },
+      {
+        "word": "قطة",
+        "hint": "Kot"
+      },
+      {
+        "word": "حصان",
+        "hint": "Koń"
+      },
+      {
+        "word": "عصفور",
+        "hint": "Ptak"
+      },
+      {
+        "word": "سمكة",
+        "hint": "Ryba"
+      },
+      {
+        "word": "بقرة",
+        "hint": "Krowa"
+      },
+      {
+        "word": "خروف",
+        "hint": "Owca"
+      },
+      {
+        "word": "أرنب",
+        "hint": "Królik"
+      },
+      {
+        "word": "سلحفاة",
+        "hint": "Żółw"
+      },
+      {
+        "word": "فراشة",
+        "hint": "Motyl"
+      },
+      {
+        "word": "أسد",
+        "hint": "Lew"
+      },
+      {
+        "word": "فيل",
+        "hint": "Słoń"
+      },
+      {
+        "word": "قرد",
+        "hint": "Małpa"
+      },
+      {
+        "word": "دب",
+        "hint": "Niedźwiedź"
+      },
+      {
+        "word": "نمر",
+        "hint": "Tygrys"
+      }
+    ]
+  },
+  {
+    "key": "body_parts_wb",
+    "name": "Części ciała",
+    "description": "Części ciała po arabsku",
+    "iconName": "figure.stand",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "رأس",
+        "hint": "Głowa"
+      },
+      {
+        "word": "ذراع",
+        "hint": "Ramię"
+      },
+      {
+        "word": "ساق",
+        "hint": "Noga"
+      },
+      {
+        "word": "يد",
+        "hint": "Ręka/dłoń"
+      },
+      {
+        "word": "قدم",
+        "hint": "Stopa"
+      },
+      {
+        "word": "عين",
+        "hint": "Oko"
+      },
+      {
+        "word": "أنف",
+        "hint": "Nos"
+      },
+      {
+        "word": "فم",
+        "hint": "Usta"
+      },
+      {
+        "word": "أذن",
+        "hint": "Ucho"
+      },
+      {
+        "word": "إصبع",
+        "hint": "Palec"
+      },
+      {
+        "word": "قلب",
+        "hint": "Serce"
+      },
+      {
+        "word": "ظهر",
+        "hint": "Plecy"
+      },
+      {
+        "word": "ركبة",
+        "hint": "Kolano"
+      },
+      {
+        "word": "كتف",
+        "hint": "Ramię/bark"
+      },
+      {
+        "word": "رقبة",
+        "hint": "Szyja"
+      }
+    ]
+  },
+  {
+    "key": "numbers_wb",
+    "name": "Liczby",
+    "description": "Liczby po arabsku (zapis słowny)",
+    "iconName": "number",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "واحد",
+        "hint": "Jeden"
+      },
+      {
+        "word": "اثنان",
+        "hint": "Dwa"
+      },
+      {
+        "word": "ثلاثة",
+        "hint": "Trzy"
+      },
+      {
+        "word": "أربعة",
+        "hint": "Cztery"
+      },
+      {
+        "word": "خمسة",
+        "hint": "Pięć"
+      },
+      {
+        "word": "ستة",
+        "hint": "Sześć"
+      },
+      {
+        "word": "سبعة",
+        "hint": "Siedem"
+      },
+      {
+        "word": "ثمانية",
+        "hint": "Osiem"
+      },
+      {
+        "word": "تسعة",
+        "hint": "Dziewięć"
+      },
+      {
+        "word": "عشرة",
+        "hint": "Dziesięć"
+      },
+      {
+        "word": "عشرون",
+        "hint": "Dwadzieścia"
+      },
+      {
+        "word": "خمسون",
+        "hint": "Pięćdziesiąt"
+      },
+      {
+        "word": "مئة",
+        "hint": "Sto"
+      },
+      {
+        "word": "ألف",
+        "hint": "Tysiąc"
+      },
+      {
+        "word": "مليون",
+        "hint": "Milion"
+      }
+    ]
+  },
+  {
+    "key": "greetings_wb",
+    "name": "Powitania",
+    "description": "Zwroty powitalne po arabsku",
+    "iconName": "hand.wave",
+    "color": "#14b8a6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "مرحبا",
+        "hint": "Cześć"
+      },
+      {
+        "word": "سلام",
+        "hint": "Pokój (pozdrowienie)"
+      },
+      {
+        "word": "صباح",
+        "hint": "Poranek/rano"
+      },
+      {
+        "word": "مساء",
+        "hint": "Wieczór"
+      },
+      {
+        "word": "شكرا",
+        "hint": "Dziękuję"
+      },
+      {
+        "word": "عفوا",
+        "hint": "Przepraszam"
+      },
+      {
+        "word": "نعم",
+        "hint": "Tak"
+      },
+      {
+        "word": "أهلا",
+        "hint": "Witaj"
+      },
+      {
+        "word": "وداعا",
+        "hint": "Do widzenia"
+      },
+      {
+        "word": "تصبح",
+        "hint": "Dobranoc (życzenie)"
+      },
+      {
+        "word": "كيف",
+        "hint": "Jak"
+      },
+      {
+        "word": "حال",
+        "hint": "Stan/samopoczucie"
+      },
+      {
+        "word": "سعيد",
+        "hint": "Szczęśliwy"
+      },
+      {
+        "word": "لطيف",
+        "hint": "Miły"
+      },
+      {
+        "word": "تشرفنا",
+        "hint": "Miło poznać"
+      }
+    ]
+  },
+  {
+    "key": "food_wb",
+    "name": "Jedzenie",
+    "description": "Popularne potrawy po arabsku",
+    "iconName": "fork.knife",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "خبز",
+        "hint": "Chleb"
+      },
+      {
+        "word": "أرز",
+        "hint": "Ryż"
+      },
+      {
+        "word": "دجاج",
+        "hint": "Kurczak"
+      },
+      {
+        "word": "لحم",
+        "hint": "Mięso"
+      },
+      {
+        "word": "سمك",
+        "hint": "Ryba (potrawa)"
+      },
+      {
+        "word": "بيض",
+        "hint": "Jajko"
+      },
+      {
+        "word": "جبن",
+        "hint": "Ser"
+      },
+      {
+        "word": "حليب",
+        "hint": "Mleko"
+      },
+      {
+        "word": "زبدة",
+        "hint": "Masło"
+      },
+      {
+        "word": "ملح",
+        "hint": "Sól"
+      },
+      {
+        "word": "سكر",
+        "hint": "Cukier"
+      },
+      {
+        "word": "زيت",
+        "hint": "Olej"
+      },
+      {
+        "word": "حساء",
+        "hint": "Zupa"
+      },
+      {
+        "word": "سلطة",
+        "hint": "Sałatka"
+      },
+      {
+        "word": "معكرونة",
+        "hint": "Makaron"
+      }
+    ]
+  },
+  {
+    "key": "clothing_wb",
+    "name": "Ubrania",
+    "description": "Nazwy ubrań po arabsku",
+    "iconName": "tshirt",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "قميص",
+        "hint": "Koszula"
+      },
+      {
+        "word": "بنطلون",
+        "hint": "Spodnie"
+      },
+      {
+        "word": "فستان",
+        "hint": "Sukienka"
+      },
+      {
+        "word": "حذاء",
+        "hint": "But"
+      },
+      {
+        "word": "جوارب",
+        "hint": "Skarpetki"
+      },
+      {
+        "word": "قبعة",
+        "hint": "Czapka"
+      },
+      {
+        "word": "معطف",
+        "hint": "Płaszcz"
+      },
+      {
+        "word": "سترة",
+        "hint": "Kurtka"
+      },
+      {
+        "word": "تنورة",
+        "hint": "Spódnica"
+      },
+      {
+        "word": "وشاح",
+        "hint": "Szalik"
+      },
+      {
+        "word": "قفازات",
+        "hint": "Rękawiczki"
+      },
+      {
+        "word": "حزام",
+        "hint": "Pasek"
+      },
+      {
+        "word": "نظارة",
+        "hint": "Okulary"
+      },
+      {
+        "word": "ربطة",
+        "hint": "Krawat"
+      },
+      {
+        "word": "حقيبة",
+        "hint": "Torba"
+      }
+    ]
+  },
+  {
+    "key": "house_rooms_wb",
+    "name": "Dom i pokoje",
+    "description": "Pomieszczenia domowe po arabsku",
+    "iconName": "house",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "مطبخ",
+        "hint": "Kuchnia"
+      },
+      {
+        "word": "غرفة",
+        "hint": "Pokój"
+      },
+      {
+        "word": "حمام",
+        "hint": "Łazienka"
+      },
+      {
+        "word": "صالون",
+        "hint": "Salon"
+      },
+      {
+        "word": "سرير",
+        "hint": "Łóżko"
+      },
+      {
+        "word": "باب",
+        "hint": "Drzwi"
+      },
+      {
+        "word": "نافذة",
+        "hint": "Okno"
+      },
+      {
+        "word": "سقف",
+        "hint": "Sufit"
+      },
+      {
+        "word": "أرضية",
+        "hint": "Podłoga"
+      },
+      {
+        "word": "جدار",
+        "hint": "Ściana"
+      },
+      {
+        "word": "درج",
+        "hint": "Schody"
+      },
+      {
+        "word": "شرفة",
+        "hint": "Balkon"
+      },
+      {
+        "word": "حديقة",
+        "hint": "Ogród"
+      },
+      {
+        "word": "مرآب",
+        "hint": "Garaż"
+      },
+      {
+        "word": "سطح",
+        "hint": "Dach"
+      }
+    ]
+  },
+  {
+    "key": "weather_wb",
+    "name": "Pogoda",
+    "description": "Słownictwo pogodowe po arabsku",
+    "iconName": "cloud.sun",
+    "color": "#0ea5e9",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "شمس",
+        "hint": "Słońce"
+      },
+      {
+        "word": "مطر",
+        "hint": "Deszcz"
+      },
+      {
+        "word": "ثلج",
+        "hint": "Śnieg"
+      },
+      {
+        "word": "رياح",
+        "hint": "Wiatr"
+      },
+      {
+        "word": "سحاب",
+        "hint": "Chmura"
+      },
+      {
+        "word": "عاصفة",
+        "hint": "Burza"
+      },
+      {
+        "word": "حرارة",
+        "hint": "Temperatura"
+      },
+      {
+        "word": "برد",
+        "hint": "Zimno"
+      },
+      {
+        "word": "رطوبة",
+        "hint": "Wilgotność"
+      },
+      {
+        "word": "ضباب",
+        "hint": "Mgła"
+      },
+      {
+        "word": "صقيع",
+        "hint": "Mróz"
+      },
+      {
+        "word": "قوس",
+        "hint": "Tęcza (łuk)"
+      },
+      {
+        "word": "جليد",
+        "hint": "Lód"
+      },
+      {
+        "word": "غروب",
+        "hint": "Zachód słońca"
+      },
+      {
+        "word": "شروق",
+        "hint": "Wschód słońca"
+      }
+    ]
+  },
+  {
+    "key": "professions_wb",
+    "name": "Zawody",
+    "description": "Nazwy zawodów po arabsku",
+    "iconName": "briefcase",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "طبيب",
+        "hint": "Lekarz"
+      },
+      {
+        "word": "معلم",
+        "hint": "Nauczyciel"
+      },
+      {
+        "word": "مهندس",
+        "hint": "Inżynier"
+      },
+      {
+        "word": "محامي",
+        "hint": "Prawnik"
+      },
+      {
+        "word": "طباخ",
+        "hint": "Kucharz"
+      },
+      {
+        "word": "شرطي",
+        "hint": "Policjant"
+      },
+      {
+        "word": "ممرضة",
+        "hint": "Pielęgniarka"
+      },
+      {
+        "word": "صحفي",
+        "hint": "Dziennikarz"
+      },
+      {
+        "word": "فنان",
+        "hint": "Artysta"
+      },
+      {
+        "word": "مزارع",
+        "hint": "Rolnik"
+      },
+      {
+        "word": "طيار",
+        "hint": "Pilot"
+      },
+      {
+        "word": "بائع",
+        "hint": "Sprzedawca"
+      },
+      {
+        "word": "سائق",
+        "hint": "Kierowca"
+      },
+      {
+        "word": "نجار",
+        "hint": "Stolarz"
+      },
+      {
+        "word": "خياط",
+        "hint": "Krawiec"
+      }
+    ]
+  },
+  {
+    "key": "transport_wb",
+    "name": "Transport",
+    "description": "Środki transportu po arabsku",
+    "iconName": "car",
+    "color": "#64748b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "سيارة",
+        "hint": "Samochód"
+      },
+      {
+        "word": "حافلة",
+        "hint": "Autobus"
+      },
+      {
+        "word": "قطار",
+        "hint": "Pociąg"
+      },
+      {
+        "word": "طائرة",
+        "hint": "Samolot"
+      },
+      {
+        "word": "دراجة",
+        "hint": "Rower"
+      },
+      {
+        "word": "سفينة",
+        "hint": "Statek"
+      },
+      {
+        "word": "مترو",
+        "hint": "Metro"
+      },
+      {
+        "word": "تاكسي",
+        "hint": "Taksówka"
+      },
+      {
+        "word": "شاحنة",
+        "hint": "Ciężarówka"
+      },
+      {
+        "word": "قارب",
+        "hint": "Łódka"
+      },
+      {
+        "word": "مروحية",
+        "hint": "Helikopter"
+      },
+      {
+        "word": "دراجة نارية",
+        "hint": "Motocykl"
+      },
+      {
+        "word": "عبارة",
+        "hint": "Prom"
+      },
+      {
+        "word": "ترام",
+        "hint": "Tramwaj"
+      },
+      {
+        "word": "إسعاف",
+        "hint": "Karetka"
+      }
+    ]
+  },
+  {
+    "key": "school_wb",
+    "name": "Szkoła",
+    "description": "Słownictwo szkolne po arabsku",
+    "iconName": "book",
+    "color": "#10b981",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "كتاب",
+        "hint": "Książka"
+      },
+      {
+        "word": "قلم",
+        "hint": "Długopis"
+      },
+      {
+        "word": "دفتر",
+        "hint": "Zeszyt"
+      },
+      {
+        "word": "مدرسة",
+        "hint": "Szkoła"
+      },
+      {
+        "word": "صف",
+        "hint": "Klasa"
+      },
+      {
+        "word": "سبورة",
+        "hint": "Tablica"
+      },
+      {
+        "word": "حقيبة مدرسية",
+        "hint": "Plecak szkolny"
+      },
+      {
+        "word": "ممحاة",
+        "hint": "Gumka"
+      },
+      {
+        "word": "مسطرة",
+        "hint": "Linijka"
+      },
+      {
+        "word": "واجب",
+        "hint": "Zadanie domowe"
+      },
+      {
+        "word": "امتحان",
+        "hint": "Egzamin"
+      },
+      {
+        "word": "درس",
+        "hint": "Lekcja"
+      },
+      {
+        "word": "طالب",
+        "hint": "Uczeń"
+      },
+      {
+        "word": "مكتبة",
+        "hint": "Biblioteka"
+      },
+      {
+        "word": "شهادة",
+        "hint": "Świadectwo"
+      }
+    ]
+  }
+]

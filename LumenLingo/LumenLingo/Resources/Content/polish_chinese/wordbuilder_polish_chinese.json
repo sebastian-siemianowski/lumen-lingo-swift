@@ -1,0 +1,1052 @@
+[
+  {
+    "key": "fruits_wb",
+    "name": "Owoce",
+    "description": "Nazwy popularnych owoców po chińsku",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "苹果",
+        "hint": "Jabłko"
+      },
+      {
+        "word": "橙子",
+        "hint": "Pomarańcza"
+      },
+      {
+        "word": "香蕉",
+        "hint": "Banan"
+      },
+      {
+        "word": "草莓",
+        "hint": "Truskawka"
+      },
+      {
+        "word": "葡萄",
+        "hint": "Winogrono"
+      },
+      {
+        "word": "柠檬",
+        "hint": "Cytryna"
+      },
+      {
+        "word": "西瓜",
+        "hint": "Arbuz"
+      },
+      {
+        "word": "桃子",
+        "hint": "Brzoskwinia"
+      },
+      {
+        "word": "樱桃",
+        "hint": "Wiśnia"
+      },
+      {
+        "word": "菠萝",
+        "hint": "Ananas"
+      },
+      {
+        "word": "梨子",
+        "hint": "Gruszka"
+      },
+      {
+        "word": "芒果",
+        "hint": "Mango"
+      },
+      {
+        "word": "蓝莓",
+        "hint": "Borówka"
+      },
+      {
+        "word": "椰子",
+        "hint": "Kokos"
+      },
+      {
+        "word": "李子",
+        "hint": "Śliwka"
+      }
+    ]
+  },
+  {
+    "key": "vegetables_wb",
+    "name": "Warzywa",
+    "description": "Nazwy popularnych warzyw po chińsku",
+    "iconName": "carrot",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "番茄",
+        "hint": "Pomidor"
+      },
+      {
+        "word": "洋葱",
+        "hint": "Cebula"
+      },
+      {
+        "word": "生菜",
+        "hint": "Sałata"
+      },
+      {
+        "word": "胡萝卜",
+        "hint": "Marchewka"
+      },
+      {
+        "word": "土豆",
+        "hint": "Ziemniak"
+      },
+      {
+        "word": "大蒜",
+        "hint": "Czosnek"
+      },
+      {
+        "word": "黄瓜",
+        "hint": "Ogórek"
+      },
+      {
+        "word": "辣椒",
+        "hint": "Papryka chili"
+      },
+      {
+        "word": "菠菜",
+        "hint": "Szpinak"
+      },
+      {
+        "word": "西兰花",
+        "hint": "Brokuł"
+      },
+      {
+        "word": "玉米",
+        "hint": "Kukurydza"
+      },
+      {
+        "word": "豌豆",
+        "hint": "Groszek"
+      },
+      {
+        "word": "蘑菇",
+        "hint": "Pieczarka"
+      },
+      {
+        "word": "茄子",
+        "hint": "Bakłażan"
+      },
+      {
+        "word": "南瓜",
+        "hint": "Dynia"
+      }
+    ]
+  },
+  {
+    "key": "colors_wb",
+    "name": "Kolory",
+    "description": "Nazwy kolorów po chińsku",
+    "iconName": "paintpalette",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "红色",
+        "hint": "Czerwony"
+      },
+      {
+        "word": "蓝色",
+        "hint": "Niebieski"
+      },
+      {
+        "word": "绿色",
+        "hint": "Zielony"
+      },
+      {
+        "word": "黄色",
+        "hint": "Żółty"
+      },
+      {
+        "word": "黑色",
+        "hint": "Czarny"
+      },
+      {
+        "word": "白色",
+        "hint": "Biały"
+      },
+      {
+        "word": "橙色",
+        "hint": "Pomarańczowy"
+      },
+      {
+        "word": "紫色",
+        "hint": "Fioletowy"
+      },
+      {
+        "word": "粉色",
+        "hint": "Różowy"
+      },
+      {
+        "word": "棕色",
+        "hint": "Brązowy"
+      },
+      {
+        "word": "灰色",
+        "hint": "Szary"
+      },
+      {
+        "word": "金色",
+        "hint": "Złoty"
+      },
+      {
+        "word": "银色",
+        "hint": "Srebrny"
+      },
+      {
+        "word": "天蓝",
+        "hint": "Błękitny"
+      },
+      {
+        "word": "深色",
+        "hint": "Ciemny"
+      }
+    ]
+  },
+  {
+    "key": "family_wb",
+    "name": "Rodzina",
+    "description": "Nazwy członków rodziny po chińsku",
+    "iconName": "person.3",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "妈妈",
+        "hint": "Mama"
+      },
+      {
+        "word": "爸爸",
+        "hint": "Tata"
+      },
+      {
+        "word": "姐姐",
+        "hint": "Starsza siostra"
+      },
+      {
+        "word": "哥哥",
+        "hint": "Starszy brat"
+      },
+      {
+        "word": "奶奶",
+        "hint": "Babcia (ze strony ojca)"
+      },
+      {
+        "word": "爷爷",
+        "hint": "Dziadek (ze strony ojca)"
+      },
+      {
+        "word": "儿子",
+        "hint": "Syn"
+      },
+      {
+        "word": "女儿",
+        "hint": "Córka"
+      },
+      {
+        "word": "丈夫",
+        "hint": "Mąż"
+      },
+      {
+        "word": "妻子",
+        "hint": "Żona"
+      },
+      {
+        "word": "弟弟",
+        "hint": "Młodszy brat"
+      },
+      {
+        "word": "妹妹",
+        "hint": "Młodsza siostra"
+      },
+      {
+        "word": "叔叔",
+        "hint": "Wujek"
+      },
+      {
+        "word": "阿姨",
+        "hint": "Ciocia"
+      },
+      {
+        "word": "孩子",
+        "hint": "Dziecko"
+      }
+    ]
+  },
+  {
+    "key": "animals_wb",
+    "name": "Zwierzęta",
+    "description": "Nazwy popularnych zwierząt po chińsku",
+    "iconName": "pawprint",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "小狗",
+        "hint": "Pies"
+      },
+      {
+        "word": "小猫",
+        "hint": "Kot"
+      },
+      {
+        "word": "马匹",
+        "hint": "Koń"
+      },
+      {
+        "word": "小鸟",
+        "hint": "Ptak"
+      },
+      {
+        "word": "金鱼",
+        "hint": "Rybka"
+      },
+      {
+        "word": "奶牛",
+        "hint": "Krowa"
+      },
+      {
+        "word": "猪猪",
+        "hint": "Świnia"
+      },
+      {
+        "word": "兔子",
+        "hint": "Królik"
+      },
+      {
+        "word": "乌龟",
+        "hint": "Żółw"
+      },
+      {
+        "word": "蝴蝶",
+        "hint": "Motyl"
+      },
+      {
+        "word": "狮子",
+        "hint": "Lew"
+      },
+      {
+        "word": "大象",
+        "hint": "Słoń"
+      },
+      {
+        "word": "猴子",
+        "hint": "Małpa"
+      },
+      {
+        "word": "熊猫",
+        "hint": "Panda"
+      },
+      {
+        "word": "老鼠",
+        "hint": "Mysz"
+      }
+    ]
+  },
+  {
+    "key": "body_parts_wb",
+    "name": "Części ciała",
+    "description": "Nazwy części ciała po chińsku",
+    "iconName": "figure.stand",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "头发",
+        "hint": "Włosy"
+      },
+      {
+        "word": "眼睛",
+        "hint": "Oczy"
+      },
+      {
+        "word": "鼻子",
+        "hint": "Nos"
+      },
+      {
+        "word": "嘴巴",
+        "hint": "Usta"
+      },
+      {
+        "word": "耳朵",
+        "hint": "Ucho"
+      },
+      {
+        "word": "手指",
+        "hint": "Palec"
+      },
+      {
+        "word": "心脏",
+        "hint": "Serce"
+      },
+      {
+        "word": "背部",
+        "hint": "Plecy"
+      },
+      {
+        "word": "膝盖",
+        "hint": "Kolano"
+      },
+      {
+        "word": "肩膀",
+        "hint": "Ramię"
+      },
+      {
+        "word": "脖子",
+        "hint": "Szyja"
+      },
+      {
+        "word": "牙齿",
+        "hint": "Ząb"
+      },
+      {
+        "word": "舌头",
+        "hint": "Język (organ)"
+      },
+      {
+        "word": "手臂",
+        "hint": "Ręka (ramię)"
+      },
+      {
+        "word": "脚趾",
+        "hint": "Palec u nogi"
+      }
+    ]
+  },
+  {
+    "key": "numbers_wb",
+    "name": "Liczby",
+    "description": "Liczby zapisane po chińsku",
+    "iconName": "number",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "一百",
+        "hint": "Sto"
+      },
+      {
+        "word": "二十",
+        "hint": "Dwadzieścia"
+      },
+      {
+        "word": "三十",
+        "hint": "Trzydzieści"
+      },
+      {
+        "word": "四十",
+        "hint": "Czterdzieści"
+      },
+      {
+        "word": "五十",
+        "hint": "Pięćdziesiąt"
+      },
+      {
+        "word": "六十",
+        "hint": "Sześćdziesiąt"
+      },
+      {
+        "word": "七十",
+        "hint": "Siedemdziesiąt"
+      },
+      {
+        "word": "八十",
+        "hint": "Osiemdziesiąt"
+      },
+      {
+        "word": "九十",
+        "hint": "Dziewięćdziesiąt"
+      },
+      {
+        "word": "一千",
+        "hint": "Tysiąc"
+      },
+      {
+        "word": "两百",
+        "hint": "Dwieście"
+      },
+      {
+        "word": "三百",
+        "hint": "Trzysta"
+      },
+      {
+        "word": "五百",
+        "hint": "Pięćset"
+      },
+      {
+        "word": "一万",
+        "hint": "Dziesięć tysięcy"
+      },
+      {
+        "word": "十一",
+        "hint": "Jedenaście"
+      }
+    ]
+  },
+  {
+    "key": "greetings_wb",
+    "name": "Powitania",
+    "description": "Popularne zwroty grzecznościowe po chińsku",
+    "iconName": "hand.wave",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "你好",
+        "hint": "Cześć"
+      },
+      {
+        "word": "谢谢",
+        "hint": "Dziękuję"
+      },
+      {
+        "word": "再见",
+        "hint": "Do widzenia"
+      },
+      {
+        "word": "早上好",
+        "hint": "Dzień dobry (rano)"
+      },
+      {
+        "word": "晚安",
+        "hint": "Dobranoc"
+      },
+      {
+        "word": "对不起",
+        "hint": "Przepraszam"
+      },
+      {
+        "word": "没关系",
+        "hint": "Nie ma sprawy"
+      },
+      {
+        "word": "请问",
+        "hint": "Proszę (pytanie)"
+      },
+      {
+        "word": "欢迎",
+        "hint": "Witamy"
+      },
+      {
+        "word": "恭喜",
+        "hint": "Gratulacje"
+      },
+      {
+        "word": "加油",
+        "hint": "Dawaj! (zachęta)"
+      },
+      {
+        "word": "干杯",
+        "hint": "Na zdrowie! (toast)"
+      },
+      {
+        "word": "抱歉",
+        "hint": "Wybacz"
+      },
+      {
+        "word": "辛苦了",
+        "hint": "Dobra robota (docenienie)"
+      },
+      {
+        "word": "保重",
+        "hint": "Trzymaj się"
+      }
+    ]
+  },
+  {
+    "key": "food_wb",
+    "name": "Jedzenie",
+    "description": "Nazwy popularnych potraw i produktów po chińsku",
+    "iconName": "fork.knife",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "米饭",
+        "hint": "Ryż"
+      },
+      {
+        "word": "面条",
+        "hint": "Makaron"
+      },
+      {
+        "word": "面包",
+        "hint": "Chleb"
+      },
+      {
+        "word": "鸡蛋",
+        "hint": "Jajko"
+      },
+      {
+        "word": "牛奶",
+        "hint": "Mleko"
+      },
+      {
+        "word": "黄油",
+        "hint": "Masło"
+      },
+      {
+        "word": "奶酪",
+        "hint": "Ser"
+      },
+      {
+        "word": "鸡肉",
+        "hint": "Kurczak (mięso)"
+      },
+      {
+        "word": "牛肉",
+        "hint": "Wołowina"
+      },
+      {
+        "word": "猪肉",
+        "hint": "Wieprzowina"
+      },
+      {
+        "word": "沙拉",
+        "hint": "Sałatka"
+      },
+      {
+        "word": "汤品",
+        "hint": "Zupa"
+      },
+      {
+        "word": "饺子",
+        "hint": "Pierogi (chińskie)"
+      },
+      {
+        "word": "豆腐",
+        "hint": "Tofu"
+      },
+      {
+        "word": "酱油",
+        "hint": "Sos sojowy"
+      }
+    ]
+  },
+  {
+    "key": "clothing_wb",
+    "name": "Ubrania",
+    "description": "Nazwy ubrań i akcesoriów po chińsku",
+    "iconName": "tshirt",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "衬衫",
+        "hint": "Koszula"
+      },
+      {
+        "word": "裤子",
+        "hint": "Spodnie"
+      },
+      {
+        "word": "裙子",
+        "hint": "Spódnica"
+      },
+      {
+        "word": "外套",
+        "hint": "Płaszcz"
+      },
+      {
+        "word": "帽子",
+        "hint": "Czapka"
+      },
+      {
+        "word": "鞋子",
+        "hint": "Buty"
+      },
+      {
+        "word": "袜子",
+        "hint": "Skarpetki"
+      },
+      {
+        "word": "围巾",
+        "hint": "Szalik"
+      },
+      {
+        "word": "手套",
+        "hint": "Rękawiczki"
+      },
+      {
+        "word": "领带",
+        "hint": "Krawat"
+      },
+      {
+        "word": "睡衣",
+        "hint": "Piżama"
+      },
+      {
+        "word": "毛衣",
+        "hint": "Sweter"
+      },
+      {
+        "word": "背心",
+        "hint": "Kamizelka"
+      },
+      {
+        "word": "短裤",
+        "hint": "Szorty"
+      },
+      {
+        "word": "雨衣",
+        "hint": "Płaszcz przeciwdeszczowy"
+      }
+    ]
+  },
+  {
+    "key": "house_rooms_wb",
+    "name": "Dom i pokoje",
+    "description": "Nazwy pomieszczeń i elementów domu po chińsku",
+    "iconName": "house",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "厨房",
+        "hint": "Kuchnia"
+      },
+      {
+        "word": "卧室",
+        "hint": "Sypialnia"
+      },
+      {
+        "word": "客厅",
+        "hint": "Salon"
+      },
+      {
+        "word": "浴室",
+        "hint": "Łazienka"
+      },
+      {
+        "word": "阳台",
+        "hint": "Balkon"
+      },
+      {
+        "word": "花园",
+        "hint": "Ogród"
+      },
+      {
+        "word": "车库",
+        "hint": "Garaż"
+      },
+      {
+        "word": "楼梯",
+        "hint": "Schody"
+      },
+      {
+        "word": "窗户",
+        "hint": "Okno"
+      },
+      {
+        "word": "门口",
+        "hint": "Drzwi (wejście)"
+      },
+      {
+        "word": "屋顶",
+        "hint": "Dach"
+      },
+      {
+        "word": "墙壁",
+        "hint": "Ściana"
+      },
+      {
+        "word": "地板",
+        "hint": "Podłoga"
+      },
+      {
+        "word": "走廊",
+        "hint": "Korytarz"
+      },
+      {
+        "word": "地下室",
+        "hint": "Piwnica"
+      }
+    ]
+  },
+  {
+    "key": "weather_wb",
+    "name": "Pogoda",
+    "description": "Słownictwo pogodowe po chińsku",
+    "iconName": "cloud.sun",
+    "color": "#0ea5e9",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "太阳",
+        "hint": "Słońce"
+      },
+      {
+        "word": "下雨",
+        "hint": "Deszcz"
+      },
+      {
+        "word": "下雪",
+        "hint": "Śnieg"
+      },
+      {
+        "word": "多云",
+        "hint": "Pochmurno"
+      },
+      {
+        "word": "刮风",
+        "hint": "Wietrznie"
+      },
+      {
+        "word": "雷电",
+        "hint": "Burza"
+      },
+      {
+        "word": "彩虹",
+        "hint": "Tęcza"
+      },
+      {
+        "word": "温度",
+        "hint": "Temperatura"
+      },
+      {
+        "word": "天气",
+        "hint": "Pogoda"
+      },
+      {
+        "word": "大雾",
+        "hint": "Mgła"
+      },
+      {
+        "word": "冰雹",
+        "hint": "Grad"
+      },
+      {
+        "word": "晴天",
+        "hint": "Pogodny dzień"
+      },
+      {
+        "word": "暴风",
+        "hint": "Sztorm"
+      },
+      {
+        "word": "霜冻",
+        "hint": "Mróz"
+      },
+      {
+        "word": "潮湿",
+        "hint": "Wilgotno"
+      }
+    ]
+  },
+  {
+    "key": "professions_wb",
+    "name": "Zawody",
+    "description": "Nazwy zawodów po chińsku",
+    "iconName": "briefcase",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "医生",
+        "hint": "Lekarz"
+      },
+      {
+        "word": "老师",
+        "hint": "Nauczyciel"
+      },
+      {
+        "word": "工程师",
+        "hint": "Inżynier"
+      },
+      {
+        "word": "护士",
+        "hint": "Pielęgniarka"
+      },
+      {
+        "word": "律师",
+        "hint": "Prawnik"
+      },
+      {
+        "word": "厨师",
+        "hint": "Kucharz"
+      },
+      {
+        "word": "司机",
+        "hint": "Kierowca"
+      },
+      {
+        "word": "警察",
+        "hint": "Policjant"
+      },
+      {
+        "word": "消防员",
+        "hint": "Strażak"
+      },
+      {
+        "word": "记者",
+        "hint": "Dziennikarz"
+      },
+      {
+        "word": "演员",
+        "hint": "Aktor"
+      },
+      {
+        "word": "歌手",
+        "hint": "Piosenkarz"
+      },
+      {
+        "word": "画家",
+        "hint": "Malarz"
+      },
+      {
+        "word": "农民",
+        "hint": "Rolnik"
+      },
+      {
+        "word": "商人",
+        "hint": "Biznesmen"
+      }
+    ]
+  },
+  {
+    "key": "transport_wb",
+    "name": "Transport",
+    "description": "Środki transportu po chińsku",
+    "iconName": "car",
+    "color": "#14b8a6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "汽车",
+        "hint": "Samochód"
+      },
+      {
+        "word": "公交车",
+        "hint": "Autobus"
+      },
+      {
+        "word": "火车",
+        "hint": "Pociąg"
+      },
+      {
+        "word": "飞机",
+        "hint": "Samolot"
+      },
+      {
+        "word": "轮船",
+        "hint": "Statek"
+      },
+      {
+        "word": "自行车",
+        "hint": "Rower"
+      },
+      {
+        "word": "出租车",
+        "hint": "Taksówka"
+      },
+      {
+        "word": "地铁",
+        "hint": "Metro"
+      },
+      {
+        "word": "摩托车",
+        "hint": "Motocykl"
+      },
+      {
+        "word": "直升机",
+        "hint": "Helikopter"
+      },
+      {
+        "word": "电动车",
+        "hint": "Samochód elektryczny"
+      },
+      {
+        "word": "卡车",
+        "hint": "Ciężarówka"
+      },
+      {
+        "word": "帆船",
+        "hint": "Żaglówka"
+      },
+      {
+        "word": "救护车",
+        "hint": "Karetka"
+      },
+      {
+        "word": "滑板",
+        "hint": "Deskorolka"
+      }
+    ]
+  },
+  {
+    "key": "school_wb",
+    "name": "Szkoła",
+    "description": "Słownictwo szkolne po chińsku",
+    "iconName": "book",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "学生",
+        "hint": "Uczeń"
+      },
+      {
+        "word": "课本",
+        "hint": "Podręcznik"
+      },
+      {
+        "word": "铅笔",
+        "hint": "Ołówek"
+      },
+      {
+        "word": "黑板",
+        "hint": "Tablica"
+      },
+      {
+        "word": "作业",
+        "hint": "Zadanie domowe"
+      },
+      {
+        "word": "考试",
+        "hint": "Egzamin"
+      },
+      {
+        "word": "教室",
+        "hint": "Sala lekcyjna"
+      },
+      {
+        "word": "图书馆",
+        "hint": "Biblioteka"
+      },
+      {
+        "word": "书包",
+        "hint": "Plecak szkolny"
+      },
+      {
+        "word": "橡皮",
+        "hint": "Gumka"
+      },
+      {
+        "word": "尺子",
+        "hint": "Linijka"
+      },
+      {
+        "word": "笔记本",
+        "hint": "Zeszyt"
+      },
+      {
+        "word": "粉笔",
+        "hint": "Kreda"
+      },
+      {
+        "word": "课程",
+        "hint": "Lekcja (kurs)"
+      },
+      {
+        "word": "校园",
+        "hint": "Kampus szkolny"
+      }
+    ]
+  }
+]
