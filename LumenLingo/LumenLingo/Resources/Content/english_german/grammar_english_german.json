@@ -17833,5 +17833,1030 @@
         "explanation": "'Abzuschließen' — infinitive with 'zu' of separable verb 'abschließen' (to lock): ab-zu-schließen. After 'vergiss nicht' (don't forget), the infinitive requires 'zu' — inserted between prefix and stem for separable verbs. 'Die Tür' (the door) is feminine. 'Wenn du gehst' — temporal clause: 'when you leave.' Home security: 'der Schlüssel' (key), 'das Schloss' (lock), 'die Klingel' (doorbell), 'die Gegensprechanlage' (intercom). German apartment buildings typically have a main entrance door ('Haustür') that is always locked."
       }
     ]
+  },
+  {
+    "key": "transport_directions",
+    "name": "Transport & Directions",
+    "description": "Verkehr & Wegbeschreibung",
+    "iconName": "bus.fill",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "eg_trans1",
+        "question": "Wie _____ ich zum Bahnhof?",
+        "translation": "(How do I get to the train station?)",
+        "options": [
+          "komme",
+          "gehe",
+          "fahre",
+          "laufe"
+        ],
+        "correct": "komme",
+        "explanation": "'Wie komme ich zum...?' is the standard German phrase for asking directions. While 'gehen' means to walk and 'fahren' means to drive, 'kommen' is used generically for 'getting to' a destination. The preposition 'zu' contracts with the masculine article 'dem' to form 'zum' (zu + dem). This is one of the most essential travel phrases in German — memorize it as a fixed expression."
+      },
+      {
+        "id": "eg_trans2",
+        "question": "Der Zug _____ um 14:30 Uhr ab.",
+        "translation": "(The train departs at 2:30 PM.)",
+        "options": [
+          "fährt",
+          "geht",
+          "kommt",
+          "läuft"
+        ],
+        "correct": "fährt",
+        "explanation": "'Abfahren' is the separable verb for 'to depart' (for vehicles). The prefix 'ab-' separates and goes to the end: 'Der Zug fährt ab.' German uses the 24-hour clock in schedules — 14:30 means 2:30 PM. For trains and buses, always use 'abfahren' (depart) and 'ankommen' (arrive). Notice 'fahren' has a stem-vowel change: a→ä for du/er/sie."
+      },
+      {
+        "id": "eg_trans3",
+        "question": "Biegen Sie an der nächsten Kreuzung _____ ab.",
+        "translation": "(Turn right at the next intersection.)",
+        "options": [
+          "rechts",
+          "recht",
+          "richtig",
+          "gerade"
+        ],
+        "correct": "rechts",
+        "explanation": "'Rechts abbiegen' means 'to turn right.' 'Rechts' is the directional adverb (right), while 'recht' means 'right/correct' as an adjective. 'Abbiegen' is the separable verb for turning. Common direction words: rechts (right), links (left), geradeaus (straight ahead), zurück (back). 'Die Kreuzung' means intersection. In formal directions, use 'Sie' form: 'Biegen Sie... ab.'"
+      },
+      {
+        "id": "eg_trans4",
+        "question": "Ich muss am nächsten Halt _____.",
+        "translation": "(I need to get off at the next stop.)",
+        "options": [
+          "aussteigen",
+          "einsteigen",
+          "umsteigen",
+          "absteigen"
+        ],
+        "correct": "aussteigen",
+        "explanation": "'Aussteigen' means 'to get off/out' of a vehicle. German has precise verbs for public transport: 'einsteigen' (get on/in), 'aussteigen' (get off/out), 'umsteigen' (transfer/change). These separable verbs split in main clauses but stay together after modals like 'muss': 'Ich muss aussteigen.' 'Der Halt' or 'die Haltestelle' means the stop. Master these three verbs for smooth navigation of German public transport."
+      },
+      {
+        "id": "eg_trans5",
+        "question": "Die Straßenbahn _____ alle zehn Minuten.",
+        "translation": "(The tram comes every ten minutes.)",
+        "options": [
+          "kommt",
+          "fährt",
+          "geht",
+          "läuft"
+        ],
+        "correct": "kommt",
+        "explanation": "'Kommen' is used for scheduled arrivals — 'Die Straßenbahn kommt alle zehn Minuten' (the tram comes every ten minutes). 'Alle zehn Minuten' is the German way to say 'every ten minutes.' German cities have excellent public transport: Straßenbahn (tram), U-Bahn (subway), S-Bahn (commuter rail), Bus. Each has its own schedule and 'Fahrplan' (timetable)."
+      },
+      {
+        "id": "eg_trans6",
+        "question": "Gehen Sie _____ bis zur Ampel.",
+        "translation": "(Go straight ahead to the traffic light.)",
+        "options": [
+          "geradeaus",
+          "gerade",
+          "direkt",
+          "recht"
+        ],
+        "correct": "geradeaus",
+        "explanation": "'Geradeaus' means 'straight ahead' and is one word in German. Don't confuse it with 'gerade' (just now/straight as adjective). 'Die Ampel' is the traffic light. 'Bis zu' means 'up to/until' and contracts with articles: 'bis zur' (feminine). Direction phrases often start with imperatives: 'Gehen Sie...' (Go...), 'Biegen Sie ab...' (Turn...), 'Nehmen Sie...' (Take...). These are essential for navigating German cities."
+      },
+      {
+        "id": "eg_trans7",
+        "question": "Ich hätte gern eine _____ nach München.",
+        "translation": "(I would like a ticket to Munich.)",
+        "options": [
+          "Fahrkarte",
+          "Karte",
+          "Ticket",
+          "Billett"
+        ],
+        "correct": "Fahrkarte",
+        "explanation": "'Die Fahrkarte' is the standard German word for a travel ticket. While 'Ticket' is increasingly used colloquially, 'Fahrkarte' remains the proper term at counters and machines. 'Ich hätte gern...' (I would like...) is the polite way to request something — it uses Konjunktiv II of 'haben.' Related terms: Einzelfahrkarte (single ticket), Tageskarte (day pass), Monatskarte (monthly pass), Hin- und Rückfahrkarte (round trip ticket)."
+      },
+      {
+        "id": "eg_trans8",
+        "question": "Das Flugzeug _____ um 18 Uhr.",
+        "translation": "(The airplane lands at 6 PM.)",
+        "options": [
+          "landet",
+          "landstet",
+          "fliegt",
+          "kommt"
+        ],
+        "correct": "landet",
+        "explanation": "'Landen' means 'to land' and is conjugated regularly: ich lande, du landest, er/sie/es landet. 'Das Flugzeug' (the airplane) is a compound noun: Flug (flight) + Zeug (thing/craft). Related aviation vocabulary: starten/abfliegen (take off), der Flughafen (airport), das Gate (gate), die Landebahn (runway). German uses 24-hour time in schedules, so 18 Uhr = 6 PM."
+      },
+      {
+        "id": "eg_trans9",
+        "question": "Die U-Bahn-Station ist _____ der Ecke.",
+        "translation": "(The subway station is around the corner.)",
+        "options": [
+          "um",
+          "an",
+          "in",
+          "auf"
+        ],
+        "correct": "um",
+        "explanation": "'Um die Ecke' (around the corner) is a fixed expression using the preposition 'um' with accusative. 'Die Ecke' (corner) is feminine. Prepositions of location are crucial for directions: um die Ecke (around the corner), an der Kreuzung (at the intersection), gegenüber dem Park (across from the park), neben der Kirche (next to the church). Each preposition demands its specific case."
+      },
+      {
+        "id": "eg_trans10",
+        "question": "Fährst du mit dem Bus oder mit der _____?",
+        "translation": "(Are you taking the bus or the tram?)",
+        "options": [
+          "Straßenbahn",
+          "Straßebahn",
+          "Strassenbahn",
+          "Straßenbus"
+        ],
+        "correct": "Straßenbahn",
+        "explanation": "'Die Straßenbahn' (tram/streetcar) is a compound noun: Straße (street) + n (linking letter) + Bahn (rail). The 'ß' (Eszett) appears after long vowels. 'Mit dem/der' uses dative case after the preposition 'mit.' Transportation modes with 'mit': mit dem Bus, mit der U-Bahn, mit dem Zug, mit dem Auto, mit dem Fahrrad. The article changes based on the noun's gender."
+      },
+      {
+        "id": "eg_trans11",
+        "question": "Der Stau auf der _____ ist drei Kilometer lang.",
+        "translation": "(The traffic jam on the highway is three kilometers long.)",
+        "options": [
+          "Autobahn",
+          "Autostraße",
+          "Schnellweg",
+          "Hauptstraße"
+        ],
+        "correct": "Autobahn",
+        "explanation": "'Die Autobahn' is Germany's famous highway system, known for sections without speed limits. It's a compound: Auto (car) + Bahn (track/road). 'Der Stau' (traffic jam) is a common word in traffic reports. Related terms: die Ausfahrt (exit), die Auffahrt (on-ramp), die Raststätte (rest stop), die Baustelle (construction site). Germany's Autobahn network is one of the densest highway systems in Europe."
+      },
+      {
+        "id": "eg_trans12",
+        "question": "Entschuldigung, wo ist die nächste _____?",
+        "translation": "(Excuse me, where is the nearest bus stop?)",
+        "options": [
+          "Haltestelle",
+          "Halteplatz",
+          "Halteort",
+          "Haltepunkt"
+        ],
+        "correct": "Haltestelle",
+        "explanation": "'Die Haltestelle' (stop/station for buses and trams) is a compound: halten (to stop) + Stelle (place). This is different from 'der Bahnhof' (train station). 'Entschuldigung' (excuse me) is the polite way to approach strangers for directions. For subway stops, you can also say 'U-Bahn-Station.' Always use 'nächste' (nearest) with the correct adjective ending for the gender."
+      },
+      {
+        "id": "eg_trans13",
+        "question": "Wir müssen hier _____ und die Linie 5 nehmen.",
+        "translation": "(We must transfer here and take line 5.)",
+        "options": [
+          "umsteigen",
+          "aussteigen",
+          "einsteigen",
+          "absteigen"
+        ],
+        "correct": "umsteigen",
+        "explanation": "'Umsteigen' means 'to transfer/change' between transport lines. The prefix 'um-' indicates a change or switch. After modal verbs like 'müssen,' the infinitive stays together: 'Wir müssen umsteigen.' 'Die Linie' (line) refers to a specific route number. German public transport networks are well-connected, and transfers are usually seamless with coordinated schedules (Anschluss)."
+      },
+      {
+        "id": "eg_trans14",
+        "question": "Das Taxi _____ vor dem Hotel.",
+        "translation": "(The taxi is waiting in front of the hotel.)",
+        "options": [
+          "wartet",
+          "steht",
+          "hält",
+          "parkt"
+        ],
+        "correct": "wartet",
+        "explanation": "'Warten' means 'to wait' and is the natural choice when a taxi is waiting for someone. 'Vor dem Hotel' uses dative after 'vor' because it indicates location (no movement). Compare: 'stehen' (to stand — emphasizes position), 'halten' (to stop briefly), 'parken' (to park — longer duration). German distinguishes these precisely: a taxi 'wartet' (waits actively), a car 'parkt' (is parked)."
+      },
+      {
+        "id": "eg_trans15",
+        "question": "Können Sie mich am Hauptbahnhof _____?",
+        "translation": "(Can you drop me off at the main train station?)",
+        "options": [
+          "absetzen",
+          "abstellen",
+          "ablegen",
+          "abgeben"
+        ],
+        "correct": "absetzen",
+        "explanation": "'Absetzen' means 'to drop off' (a person from a vehicle). It's a separable verb: 'Setzen Sie mich bitte ab.' The 'Hauptbahnhof' (main train station, abbreviated Hbf) is the central station in every German city. Other transport verbs with 'ab-': abfahren (depart), abholen (pick up), abbiegen (turn). 'Können Sie...' is the polite request form using the modal verb 'können.'"
+      }
+    ]
+  },
+  {
+    "key": "media_communication",
+    "name": "Media & Communication",
+    "description": "Medien & Kommunikation",
+    "iconName": "newspaper.fill",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "eg_med1",
+        "question": "Die Nachrichten _____ jeden Abend um 20 Uhr gesendet.",
+        "translation": "(The news is broadcast every evening at 8 PM.)",
+        "options": [
+          "werden",
+          "sind",
+          "haben",
+          "sein"
+        ],
+        "correct": "werden",
+        "explanation": "'Werden + Partizip II' forms the passive voice: 'werden gesendet' (are broadcast). 'Die Nachrichten' (the news) is always plural in German, unlike English. 'Senden' (to broadcast/send) has the past participle 'gesendet.' The passive is common in media language for objective reporting. 'Jeden Abend' uses accusative for time expressions. German TV news (Tagesschau, heute) traditionally air at 20:00."
+      },
+      {
+        "id": "eg_med2",
+        "question": "Der Journalist hat einen Artikel über die Wahl _____.",
+        "translation": "(The journalist wrote an article about the election.)",
+        "options": [
+          "geschrieben",
+          "geschreibt",
+          "schrieb",
+          "geschreiben"
+        ],
+        "correct": "geschrieben",
+        "explanation": "'Schreiben' (to write) is a strong verb with the past participle 'geschrieben' (ge- + schrieb + -en). In perfect tense with 'hat': 'hat geschrieben.' Don't confuse the past participle with the simple past 'schrieb.' 'Über die Wahl' (about the election) uses accusative after 'über.' German journalism vocabulary: der Bericht (report), die Schlagzeile (headline), die Pressemitteilung (press release)."
+      },
+      {
+        "id": "eg_med3",
+        "question": "Hast du die _____ schon gelesen?",
+        "translation": "(Have you already read the newspaper?)",
+        "options": [
+          "Zeitung",
+          "Zeitschrift",
+          "Magazin",
+          "Journal"
+        ],
+        "correct": "Zeitung",
+        "explanation": "'Die Zeitung' is a daily newspaper, while 'die Zeitschrift' is a magazine/periodical and 'das Magazin' is a glossy magazine. German distinguishes these clearly. Famous German newspapers: die Süddeutsche Zeitung, die Frankfurter Allgemeine Zeitung (FAZ), die Bild. 'Schon' (already) typically sits between auxiliary and participle: 'schon gelesen.' Reading German news is excellent language practice."
+      },
+      {
+        "id": "eg_med4",
+        "question": "Die Sendung wird _____ ausgestrahlt.",
+        "translation": "(The program is broadcast live.)",
+        "options": [
+          "live",
+          "lebendig",
+          "lebend",
+          "direkt"
+        ],
+        "correct": "live",
+        "explanation": "German uses the English loanword 'live' (pronounced 'laif') for live broadcasts. While 'direkt' can also mean 'live' in broadcast context, 'live' is the standard media term. 'Die Sendung' (program/broadcast) and 'ausstrahlen' (to broadcast/air) are core media vocabulary. German absorbs many English media terms: der Podcast, streamen, der Livestream, die Show. This reflects English influence on German media culture."
+      },
+      {
+        "id": "eg_med5",
+        "question": "Er hat die Nachricht per E-Mail _____.",
+        "translation": "(He sent the message by email.)",
+        "options": [
+          "verschickt",
+          "geschickt",
+          "gesendet",
+          "versendet"
+        ],
+        "correct": "verschickt",
+        "explanation": "'Verschicken' (to send/dispatch) uses the inseparable prefix 'ver-,' so the past participle has no 'ge-': 'verschickt.' Compare: 'schicken' → 'geschickt' (sent), 'senden' → 'gesendet' (sent/broadcast). 'Per E-Mail' uses 'per' (by/via) — in German, 'E-Mail' can be feminine (die) or neuter (das), though 'die E-Mail' is more common. The prefix 'ver-' often adds a sense of completion or dispatching."
+      },
+      {
+        "id": "eg_med6",
+        "question": "Die Werbung _____ überall zu sehen.",
+        "translation": "(The advertisement is visible everywhere.)",
+        "options": [
+          "ist",
+          "wird",
+          "hat",
+          "kann"
+        ],
+        "correct": "ist",
+        "explanation": "'Ist... zu sehen' (is to be seen/visible) is a passive alternative construction: 'sein + zu + Infinitiv.' It expresses possibility or necessity passively. 'Die Werbung' means advertising/advertisement. 'Überall' (everywhere) is a common adverb. Other 'sein + zu' examples: 'ist zu hören' (can be heard), 'ist zu erwarten' (is to be expected). This construction is more elegant than a standard passive in formal writing."
+      },
+      {
+        "id": "eg_med7",
+        "question": "Ich _____ mir jeden Abend die Nachrichten an.",
+        "translation": "(I watch the news every evening.)",
+        "options": [
+          "schaue",
+          "sehe",
+          "gucke",
+          "blicke"
+        ],
+        "correct": "schaue",
+        "explanation": "'Sich etwas anschauen' or 'sich etwas ansehen' (to watch/look at something) is a reflexive separable verb. 'Ich schaue mir... an' — note the dative reflexive 'mir' and the separated prefix 'an.' Regional variations exist: 'anschauen' (southern Germany/Austria), 'ansehen' (standard), 'angucken' (northern Germany, colloquial). The dative reflexive indicates watching for oneself."
+      },
+      {
+        "id": "eg_med8",
+        "question": "Der Podcast hat über eine Million _____.",
+        "translation": "(The podcast has over a million listeners.)",
+        "options": [
+          "Hörer",
+          "Zuhörer",
+          "Hörende",
+          "Hörige"
+        ],
+        "correct": "Hörer",
+        "explanation": "'Der Hörer' (listener) comes from 'hören' (to hear/listen). In media context, 'Hörer' refers to radio/podcast listeners, while 'Zuhörer' implies active, attentive listening (like at a lecture). 'Hörende' is a gender-neutral participle form gaining popularity. Don't confuse with 'Hörige' (serf/devotee). German compounds: Hörbuch (audiobook), Kopfhörer (headphones), Hörspiel (radio play)."
+      },
+      {
+        "id": "eg_med9",
+        "question": "Die sozialen _____ beeinflussen die öffentliche Meinung.",
+        "translation": "(Social media influence public opinion.)",
+        "options": [
+          "Medien",
+          "Netzwerke",
+          "Kanäle",
+          "Plattformen"
+        ],
+        "correct": "Medien",
+        "explanation": "'Soziale Medien' is the German equivalent of 'social media.' 'Die Medien' (media) is always plural — the singular 'das Medium' is rarely used in this context. 'Beeinflussen' (to influence) is inseparable (be- prefix). 'Die öffentliche Meinung' (public opinion) is a key phrase in political discourse. German forms the adjective 'öffentlich' from 'die Öffentlichkeit' (the public). Media literacy (Medienkompetenz) is taught in German schools."
+      },
+      {
+        "id": "eg_med10",
+        "question": "Der Bericht wurde von mehreren Zeitungen _____.",
+        "translation": "(The report was published by several newspapers.)",
+        "options": [
+          "veröffentlicht",
+          "öffentlicht",
+          "veröffentlichen",
+          "geöffentlicht"
+        ],
+        "correct": "veröffentlicht",
+        "explanation": "'Veröffentlichen' (to publish) has the inseparable prefix 'ver-,' so no 'ge-' in the past participle: 'veröffentlicht.' It derives from 'öffentlich' (public) — making something public. 'Von mehreren Zeitungen' uses dative after passive 'von' (by). The passive 'wurde... veröffentlicht' (was published) is extremely common in academic and media German. Related: die Veröffentlichung (publication), der Verlag (publishing house)."
+      },
+      {
+        "id": "eg_med11",
+        "question": "Sie hat ein Video auf YouTube _____.",
+        "translation": "(She uploaded a video to YouTube.)",
+        "options": [
+          "hochgeladen",
+          "aufgeladen",
+          "geladen",
+          "hinaufgeladen"
+        ],
+        "correct": "hochgeladen",
+        "explanation": "'Hochladen' (to upload) is a separable verb: hoch (up) + laden (to load). Past participle: 'hochgeladen' — the 'ge-' goes between prefix and stem. Compare: 'herunterladen' (to download) → 'heruntergeladen.' Don't confuse with 'aufladen' (to charge a battery). Digital German vocabulary uses many such compounds: abspeichern (save), weiterleiten (forward), löschen (delete). These separable verbs follow standard rules."
+      },
+      {
+        "id": "eg_med12",
+        "question": "Die Schlagzeile hat viel _____ erregt.",
+        "translation": "(The headline attracted a lot of attention.)",
+        "options": [
+          "Aufmerksamkeit",
+          "Achtung",
+          "Beachtung",
+          "Beobachtung"
+        ],
+        "correct": "Aufmerksamkeit",
+        "explanation": "'Aufmerksamkeit erregen' (to attract attention) is a fixed collocation. 'Die Aufmerksamkeit' literally means 'up-noticing-ness.' Compare: 'Achtung' (caution/attention as warning), 'Beachtung' (notice/consideration), 'Beobachtung' (observation). 'Die Schlagzeile' (headline) literally means 'striking line.' German uses many such precise distinctions between related concepts that English covers with one word."
+      },
+      {
+        "id": "eg_med13",
+        "question": "Der Film _____ nächste Woche im Kino.",
+        "translation": "(The movie starts next week in the cinema.)",
+        "options": [
+          "läuft",
+          "spielt",
+          "zeigt",
+          "geht"
+        ],
+        "correct": "läuft",
+        "explanation": "'Laufen' (to run) is used idiomatically for movies showing in cinemas: 'Der Film läuft im Kino.' This is a fixed expression — you wouldn't say 'spielt' or 'zeigt' for a movie screening. 'Nächste Woche' (next week) uses accusative for time. German cinema vocabulary: die Vorstellung (showing), die Leinwand (screen), der Vorspann (opening credits), der Abspann (end credits), die Vorpremiere (preview)."
+      },
+      {
+        "id": "eg_med14",
+        "question": "Kannst du die Lautstärke bitte _____?",
+        "translation": "(Can you please turn down the volume?)",
+        "options": [
+          "leiser machen",
+          "kleinern",
+          "weniger machen",
+          "niedrigen"
+        ],
+        "correct": "leiser machen",
+        "explanation": "'Leiser machen' (to make quieter) or 'leiser stellen' (to turn down) is how Germans say 'turn down the volume.' 'Die Lautstärke' (volume) is a compound: laut (loud) + Stärke (strength). The comparative 'leiser' (quieter) comes from 'leise' (quiet). Opposite: 'lauter machen/stellen' (turn up). German often uses 'adjective + machen' where English uses specific verbs: größer machen (enlarge), kürzer machen (shorten)."
+      },
+      {
+        "id": "eg_med15",
+        "question": "Der Moderator hat die Gäste zum Thema _____.",
+        "translation": "(The host interviewed the guests on the topic.)",
+        "options": [
+          "befragt",
+          "gefragt",
+          "erfragt",
+          "ausgefragt"
+        ],
+        "correct": "befragt",
+        "explanation": "'Befragen' (to interview/question formally) is inseparable (be- prefix) → past participle 'befragt' without 'ge-.' Compare: 'fragen' → 'gefragt' (asked casually), 'ausfragen' → 'ausgefragt' (interrogated), 'erfragen' → 'erfragt' (inquired). 'Der Moderator' (host/presenter) is the standard term for TV/radio presenters. 'Zum Thema' (on the topic) uses dative contraction. Each prefix adds a specific nuance to the base verb."
+      }
+    ]
+  },
+  {
+    "key": "crime_justice",
+    "name": "Crime & Justice",
+    "description": "Kriminalität & Justiz",
+    "iconName": "building.columns.fill",
+    "color": "#64748b",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "eg_crim1",
+        "question": "Der Verdächtige wurde von der Polizei _____.",
+        "translation": "(The suspect was arrested by the police.)",
+        "options": [
+          "verhaftet",
+          "gefangen",
+          "gestoppt",
+          "gehalten"
+        ],
+        "correct": "verhaftet",
+        "explanation": "'Verhaften' (to arrest) is inseparable (ver- prefix), so past participle is 'verhaftet' without 'ge-.' This is the legal/police term for arrest. 'Der Verdächtige' (the suspect) is an adjectival noun that declines like an adjective. 'Von der Polizei' uses dative in passive constructions. Related legal terms: die Festnahme (arrest as noun), in Untersuchungshaft nehmen (to remand in custody), der Haftbefehl (arrest warrant)."
+      },
+      {
+        "id": "eg_crim2",
+        "question": "Das Gericht hat den Angeklagten für _____ befunden.",
+        "translation": "(The court found the defendant guilty.)",
+        "options": [
+          "schuldig",
+          "schuld",
+          "schuldung",
+          "schuldbar"
+        ],
+        "correct": "schuldig",
+        "explanation": "'Schuldig' (guilty) is the adjective form. 'Für schuldig befinden' (to find guilty) is a legal fixed expression. Don't confuse with 'schuld sein' (to be at fault — predicative only). 'Das Gericht' (the court), 'der Angeklagte' (the defendant/accused) — another adjectival noun. German legal system vocabulary: der Richter (judge), der Staatsanwalt (prosecutor), der Verteidiger (defense attorney), das Urteil (verdict/sentence)."
+      },
+      {
+        "id": "eg_crim3",
+        "question": "Der Zeuge hat vor Gericht _____.",
+        "translation": "(The witness testified in court.)",
+        "options": [
+          "ausgesagt",
+          "gesprochen",
+          "geredet",
+          "erzählt"
+        ],
+        "correct": "ausgesagt",
+        "explanation": "'Aussagen' (to testify/make a statement) is a separable verb — 'ausgesagt' in past participle. This is the legal term for giving testimony. 'Vor Gericht' (in court/before the court) uses dative after 'vor.' 'Der Zeuge' (witness, masc.) / 'die Zeugin' (witness, fem.) — note the weak masculine noun ending. Related: die Aussage (testimony/statement), der Eid (oath), unter Eid (under oath)."
+      },
+      {
+        "id": "eg_crim4",
+        "question": "Der Dieb wurde auf frischer _____ ertappt.",
+        "translation": "(The thief was caught red-handed.)",
+        "options": [
+          "Tat",
+          "Sache",
+          "Handlung",
+          "Aktion"
+        ],
+        "correct": "Tat",
+        "explanation": "'Auf frischer Tat ertappt' (caught in the act/red-handed) is a fixed legal expression. 'Die Tat' (the deed/act) is used in criminal contexts. 'Der Dieb' (thief) has an irregular plural: 'die Diebe.' 'Ertappen' means 'to catch/discover someone doing something wrong.' Related crime vocabulary: der Einbruch (burglary), der Raub (robbery), der Betrug (fraud), die Straftat (criminal offense). German distinguishes Diebstahl (theft) from Raub (robbery with force)."
+      },
+      {
+        "id": "eg_crim5",
+        "question": "Die Strafe für dieses Vergehen ist eine _____ von 500 Euro.",
+        "translation": "(The penalty for this offense is a fine of 500 euros.)",
+        "options": [
+          "Geldstrafe",
+          "Geldbuße",
+          "Bezahlung",
+          "Kosten"
+        ],
+        "correct": "Geldstrafe",
+        "explanation": "'Die Geldstrafe' (fine as criminal penalty) is a compound: Geld (money) + Strafe (punishment). 'Die Geldbuße' is used for administrative fines (Ordnungswidrigkeit). 'Das Vergehen' is a minor criminal offense (misdemeanor), vs. 'das Verbrechen' (felony). German criminal law distinguishes: Ordnungswidrigkeit (infraction), Vergehen (misdemeanor), Verbrechen (felony). Each carries different penalty ranges."
+      },
+      {
+        "id": "eg_crim6",
+        "question": "Der Anwalt hat _____ gegen das Urteil eingelegt.",
+        "translation": "(The lawyer filed an appeal against the verdict.)",
+        "options": [
+          "Berufung",
+          "Anruf",
+          "Aufruf",
+          "Beschwerde"
+        ],
+        "correct": "Berufung",
+        "explanation": "'Berufung einlegen' (to file an appeal) is a fixed legal expression. Don't confuse 'die Berufung' (appeal in law) with 'der Beruf' (profession). 'Das Urteil' (verdict/judgment) is a core legal term. Deutsche Gerichtsbarkeit (German judiciary) has multiple levels: Amtsgericht (local court), Landgericht (regional court), Oberlandesgericht (Higher Regional Court), Bundesgerichtshof (Federal Court of Justice)."
+      },
+      {
+        "id": "eg_crim7",
+        "question": "Die Ermittlungen in dem Fall dauern noch _____.",
+        "translation": "(The investigation in the case is still ongoing.)",
+        "options": [
+          "an",
+          "fort",
+          "weiter",
+          "auf"
+        ],
+        "correct": "an",
+        "explanation": "'Andauern' (to continue/last) is a separable verb — 'dauern noch an' (are still ongoing). 'Die Ermittlungen' (investigations) is always plural in this legal context. 'Der Fall' (the case) functions like English 'case.' 'Noch' (still) emphasizes continuation. Related: die Ermittlungsbehörde (investigating authority), der Ermittler (investigator), das Ermittlungsverfahren (investigation proceedings). German crime novels (Krimis) are hugely popular."
+      },
+      {
+        "id": "eg_crim8",
+        "question": "Der Angeklagte hat die Tat _____.",
+        "translation": "(The defendant confessed to the crime.)",
+        "options": [
+          "gestanden",
+          "geständigt",
+          "bekannt",
+          "gesagt"
+        ],
+        "correct": "gestanden",
+        "explanation": "'Gestehen' (to confess) has the irregular past participle 'gestanden.' 'Die Tat gestehen' means to confess to the crime. Don't confuse with 'stehen' (to stand) which also has 'gestanden' as past participle — context makes it clear. 'Das Geständnis' (confession) is the noun form. Legal principle: 'Im Zweifel für den Angeklagten' (in dubio pro reo / innocent until proven guilty) is fundamental to German law."
+      },
+      {
+        "id": "eg_crim9",
+        "question": "Der Häftling wurde nach fünf Jahren aus dem Gefängnis _____.",
+        "translation": "(The prisoner was released from prison after five years.)",
+        "options": [
+          "entlassen",
+          "freigelassen",
+          "gelöst",
+          "befreit"
+        ],
+        "correct": "entlassen",
+        "explanation": "'Entlassen' (to release/discharge) is inseparable (ent- prefix), past participle: 'entlassen' (no ge-!). 'Der Häftling' (prisoner/inmate) comes from 'die Haft' (custody/imprisonment). 'Das Gefängnis' (prison) is neuter. 'Freilassen' (to set free) is also correct but more general. 'Aus dem Gefängnis' uses dative after 'aus.' German prison vocabulary: die Bewährung (probation), vorzeitige Entlassung (early release), lebenslänglich (life sentence)."
+      },
+      {
+        "id": "eg_crim10",
+        "question": "Die Polizei sucht nach dem _____ des Überfalls.",
+        "translation": "(The police are searching for the perpetrator of the assault.)",
+        "options": [
+          "Täter",
+          "Tater",
+          "Macher",
+          "Verursacher"
+        ],
+        "correct": "Täter",
+        "explanation": "'Der Täter' (perpetrator/offender) derives from 'die Tat' (deed/act). The umlaut ä is essential — 'Tater' doesn't exist. 'Suchen nach' (to search for) requires dative: 'nach dem Täter.' 'Der Überfall' (assault/robbery/raid) uses the prefix 'über-.' German criminal vocabulary: Tatort (crime scene), Tatwaffe (murder weapon), Tatmotiv (motive), Tathergang (sequence of events). The TV show 'Tatort' is Germany's longest-running crime series."
+      },
+      {
+        "id": "eg_crim11",
+        "question": "Das Opfer hat eine Anzeige bei der Polizei _____.",
+        "translation": "(The victim filed a report with the police.)",
+        "options": [
+          "erstattet",
+          "gemacht",
+          "gegeben",
+          "gestellt"
+        ],
+        "correct": "erstattet",
+        "explanation": "'Eine Anzeige erstatten' (to file a police report) is a fixed legal expression. 'Erstatten' is inseparable (er- prefix), past participle: 'erstattet.' 'Das Opfer' (victim) is neuter regardless of the person's gender. 'Bei der Polizei' uses dative after 'bei.' This phrase is essential if you ever need to report a crime in Germany. Related: die Strafanzeige (criminal complaint), Anzeige gegen Unbekannt (report against unknown persons)."
+      },
+      {
+        "id": "eg_crim12",
+        "question": "Der Richter hat eine _____ von zwei Jahren verhängt.",
+        "translation": "(The judge imposed a sentence of two years.)",
+        "options": [
+          "Freiheitsstrafe",
+          "Gefängnisstrafe",
+          "Zeitstrafe",
+          "Haftstrafe"
+        ],
+        "correct": "Freiheitsstrafe",
+        "explanation": "'Die Freiheitsstrafe' (custodial sentence, literally: freedom-punishment) is the official legal term for a prison sentence. While 'Gefängnisstrafe' and 'Haftstrafe' are used colloquially, 'Freiheitsstrafe' is the correct legal terminology. 'Verhängen' (to impose a sentence) is inseparable → 'verhängt.' 'Der Richter' (judge) passes sentence after the trial (die Verhandlung). German sentencing also includes 'Bewährungsstrafe' (suspended sentence)."
+      },
+      {
+        "id": "eg_crim13",
+        "question": "Die Beweise _____ eindeutig auf den Verdächtigen hin.",
+        "translation": "(The evidence clearly points to the suspect.)",
+        "options": [
+          "deuten",
+          "zeigen",
+          "weisen",
+          "sprechen"
+        ],
+        "correct": "deuten",
+        "explanation": "'Hindeuten auf' (to point to/indicate) is a separable verb with the prefix 'hin-.' 'Die Beweise' (evidence, plural) is always plural in legal German. 'Eindeutig' (clearly/unambiguously) is a compound adjective: ein (one) + deutig (meaning). Compare: 'hinweisen auf' (to point out, more direct), 'sprechen für' (to speak for). German legal discourse values precision: Indiz (circumstantial evidence), Beweis (proof/evidence), Beweismittel (means of evidence)."
+      },
+      {
+        "id": "eg_crim14",
+        "question": "Der Verbrecher ist aus dem Gefängnis _____.",
+        "translation": "(The criminal escaped from prison.)",
+        "options": [
+          "ausgebrochen",
+          "geflüchtet",
+          "entkommen",
+          "weggelaufen"
+        ],
+        "correct": "ausgebrochen",
+        "explanation": "'Ausbrechen' (to break out/escape) is the standard term for prison escapes: 'aus dem Gefängnis ausbrechen.' Past participle: 'ausgebrochen' (strong verb). Compare: 'flüchten' → 'geflüchtet' (to flee — more general), 'entkommen' → 'entkommen' (to escape — inseparable, no ge-). 'Der Verbrecher' (criminal) comes from 'das Verbrechen' (crime/felony). Related: der Ausbruchsversuch (escape attempt), die Flucht (flight/escape)."
+      },
+      {
+        "id": "eg_crim15",
+        "question": "Das Gesetz _____ die Rechte der Bürger.",
+        "translation": "(The law protects the rights of citizens.)",
+        "options": [
+          "schützt",
+          "beschützt",
+          "verteidigt",
+          "bewahrt"
+        ],
+        "correct": "schützt",
+        "explanation": "'Schützen' (to protect) is the standard legal term for law protecting rights. Compare: 'beschützen' (to protect a person — more personal/physical), 'verteidigen' (to defend — active), 'bewahren' (to preserve). 'Das Gesetz' (the law) — plural: 'die Gesetze.' 'Die Rechte' (rights) from 'das Recht' (right/law). 'Der Bürger' (citizen) forms the genitive plural without change. The German Grundgesetz (Basic Law/constitution) is the supreme legal document."
+      }
+    ]
+  },
+  {
+    "key": "politics_society",
+    "name": "Politics & Society",
+    "description": "Politik & Gesellschaft",
+    "iconName": "person.3.fill",
+    "color": "#dc2626",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "eg_pol1",
+        "question": "Die Bundeskanzlerin hat eine wichtige Rede _____.",
+        "translation": "(The Chancellor gave an important speech.)",
+        "options": [
+          "gehalten",
+          "gemacht",
+          "gesagt",
+          "gesprochen"
+        ],
+        "correct": "gehalten",
+        "explanation": "'Eine Rede halten' (to give/deliver a speech) is a fixed collocation. 'Halten' (to hold) has many idiomatic uses in German beyond its literal meaning. 'Die Bundeskanzlerin' is the feminine form of 'der Bundeskanzler' (Federal Chancellor) — the head of government in Germany. 'Wichtig' (important) is an essential adjective. German political titles: Bundespräsident (Federal President), Bundesminister (Federal Minister)."
+      },
+      {
+        "id": "eg_pol2",
+        "question": "Bei der Wahl haben 70 Prozent der Bürger ihre Stimme _____.",
+        "translation": "(In the election, 70 percent of citizens cast their vote.)",
+        "options": [
+          "abgegeben",
+          "gegeben",
+          "gemacht",
+          "geworfen"
+        ],
+        "correct": "abgegeben",
+        "explanation": "'Seine Stimme abgeben' (to cast one's vote) is the standard election expression. 'Abgeben' is separable: past participle 'abgegeben.' 'Die Wahl' (election/choice) can mean both. 'Die Stimme' means both 'voice' and 'vote.' 'Bei der Wahl' uses dative. German elections: Bundestagswahl (federal election), Landtagswahl (state election), Kommunalwahl (local election). Voter turnout (Wahlbeteiligung) is typically high in Germany."
+      },
+      {
+        "id": "eg_pol3",
+        "question": "Die Regierung hat ein neues Gesetz _____.",
+        "translation": "(The government passed a new law.)",
+        "options": [
+          "verabschiedet",
+          "beschlossen",
+          "gemacht",
+          "bestimmt"
+        ],
+        "correct": "verabschiedet",
+        "explanation": "'Ein Gesetz verabschieden' (to pass/enact a law) is the correct political term. 'Verabschieden' is inseparable (ver-), past participle: 'verabschiedet' (no ge-). Don't confuse with 'sich verabschieden' (to say goodbye). 'Die Regierung' (government) is the executive branch. 'Beschließen' (to decide/resolve) is also used but more general. The legislative process: Gesetzentwurf (bill) → Lesung (reading) → Verabschiedung (passing) → Verkündung (promulgation)."
+      },
+      {
+        "id": "eg_pol4",
+        "question": "Die Demonstration _____ friedlich.",
+        "translation": "(The demonstration proceeded peacefully.)",
+        "options": [
+          "verlief",
+          "lief",
+          "ging",
+          "war"
+        ],
+        "correct": "verlief",
+        "explanation": "'Verlaufen' (to proceed/unfold) is the standard verb for describing how events transpired. Past tense: 'verlief' (inseparable, strong verb). 'Friedlich' (peacefully) comes from 'der Frieden' (peace). 'Die Demonstration' or colloquially 'die Demo' — the right to demonstrate (Demonstrationsrecht) is guaranteed by the German Grundgesetz (Article 8). Related: der Protest, die Kundgebung (rally), der Marsch (march)."
+      },
+      {
+        "id": "eg_pol5",
+        "question": "Die Partei hat ihren _____ für die nächste Wahl vorgestellt.",
+        "translation": "(The party presented its candidate for the next election.)",
+        "options": [
+          "Kandidaten",
+          "Kandidat",
+          "Kandidater",
+          "Kandidating"
+        ],
+        "correct": "Kandidaten",
+        "explanation": "'Der Kandidat' is a weak (n-declension) noun — in accusative, it becomes 'den Kandidaten.' Weak nouns add '-n' or '-en' in all cases except nominative singular. Other weak nouns in politics: der Präsident → den Präsidenten, der Demokrat → den Demokraten. 'Vorstellen' (to present/introduce) is separable. German political parties: CDU, SPD, Grüne, FDP, Linke, AfD. The multi-party system often requires coalition building."
+      },
+      {
+        "id": "eg_pol6",
+        "question": "Die Bürger _____ gegen die neuen Steuererhöhungen.",
+        "translation": "(The citizens are protesting against the new tax increases.)",
+        "options": [
+          "protestieren",
+          "protestiert",
+          "protestierten",
+          "protestiere"
+        ],
+        "correct": "protestieren",
+        "explanation": "'Protestieren gegen' (to protest against) takes accusative. In present tense, third person plural: 'die Bürger protestieren.' 'Die Steuererhöhung' (tax increase) is a triple compound: Steuer (tax) + Erhöhung (increase). German loves such compounds: Steuererklärung (tax return), Steuersenkung (tax cut), Steuerpflicht (tax obligation). Compound nouns take the gender of the last component."
+      },
+      {
+        "id": "eg_pol7",
+        "question": "Im Bundestag wird über den Haushalt _____.",
+        "translation": "(The budget is being debated in the Bundestag.)",
+        "options": [
+          "debattiert",
+          "gesprochen",
+          "geredet",
+          "diskutiert"
+        ],
+        "correct": "debattiert",
+        "explanation": "'Debattieren' (to debate) is the formal parliamentary term. 'Wird debattiert' is present passive. 'Der Bundestag' is Germany's federal parliament (lower house). 'Der Haushalt' means both 'household' and 'budget' in political context. 'Im Bundestag' = 'in dem Bundestag.' The German parliament sits in the Reichstag building in Berlin. Related: der Bundesrat (upper house), die Sitzung (session), der Abgeordnete (member of parliament)."
+      },
+      {
+        "id": "eg_pol8",
+        "question": "Die Meinungsfreiheit ist ein _____ Recht.",
+        "translation": "(Freedom of expression is a fundamental right.)",
+        "options": [
+          "grundlegendes",
+          "grundliches",
+          "gründliches",
+          "grundiges"
+        ],
+        "correct": "grundlegendes",
+        "explanation": "'Grundlegend' (fundamental/basic) comes from 'Grund' (foundation) + 'legend' (laying). With neuter 'Recht,' the strong adjective ending is '-es': 'ein grundlegendes Recht.' Don't confuse with 'gründlich' (thorough). 'Die Meinungsfreiheit' (freedom of expression/opinion) is protected by Article 5 of the Grundgesetz. German compound: Meinung (opinion) + Freiheit (freedom). These Grundrechte (fundamental rights) are outlined in Articles 1-19."
+      },
+      {
+        "id": "eg_pol9",
+        "question": "Die Koalition _____ aus drei Parteien.",
+        "translation": "(The coalition consists of three parties.)",
+        "options": [
+          "besteht",
+          "steht",
+          "kommt",
+          "setzt"
+        ],
+        "correct": "besteht",
+        "explanation": "'Bestehen aus' (to consist of) requires dative: 'aus drei Parteien.' 'Bestehen' is inseparable (be- prefix). German coalition governments are common since no single party usually wins a majority. Famous coalitions: Große Koalition (grand coalition — CDU+SPD), Ampelkoalition (traffic light — SPD+Grüne+FDP), Jamaika-Koalition (CDU+Grüne+FDP, named after the flag colors). Koalitionsvertrag (coalition agreement) outlines shared policies."
+      },
+      {
+        "id": "eg_pol10",
+        "question": "Der Staat muss die Gleichberechtigung aller Bürger _____.",
+        "translation": "(The state must ensure equal rights for all citizens.)",
+        "options": [
+          "gewährleisten",
+          "gewähren",
+          "garantieren",
+          "versichern"
+        ],
+        "correct": "gewährleisten",
+        "explanation": "'Gewährleisten' (to ensure/guarantee) is inseparable, past participle: 'gewährleistet.' It's more formal and legally binding than 'garantieren.' 'Die Gleichberechtigung' (equal rights) is a compound: gleich (equal) + Berechtigung (entitlement). 'Aller Bürger' uses genitive plural. Article 3 of the Grundgesetz establishes: 'Alle Menschen sind vor dem Gesetz gleich' (All people are equal before the law). German values precision in legal language."
+      },
+      {
+        "id": "eg_pol11",
+        "question": "Die Flüchtlinge haben in Deutschland _____ beantragt.",
+        "translation": "(The refugees applied for asylum in Germany.)",
+        "options": [
+          "Asyl",
+          "Zuflucht",
+          "Schutz",
+          "Hilfe"
+        ],
+        "correct": "Asyl",
+        "explanation": "'Asyl beantragen' (to apply for asylum) is a fixed expression. 'Beantragen' (to apply for/request) is inseparable (be- prefix). 'Der Flüchtling' (refugee) adds '-e' for plural: 'die Flüchtlinge.' Article 16a of the Grundgesetz: 'Politisch Verfolgte genießen Asylrecht' (Politically persecuted persons have the right of asylum). Related: das Asylverfahren (asylum procedure), der Asylbewerber (asylum seeker), die Aufenthaltserlaubnis (residence permit)."
+      },
+      {
+        "id": "eg_pol12",
+        "question": "Die Europäische Union _____ 27 Mitgliedstaaten.",
+        "translation": "(The European Union has 27 member states.)",
+        "options": [
+          "umfasst",
+          "enthält",
+          "beinhaltet",
+          "fasst"
+        ],
+        "correct": "umfasst",
+        "explanation": "'Umfassen' (to comprise/encompass) is inseparable (um- prefix), fitting for describing the scope of an organization. 'Der Mitgliedstaat' (member state) is a compound: Mitglied (member) + Staat (state). Germany is a founding member of the EU. Related: der Binnenmarkt (internal market), die Europawahl (European election), der EU-Gipfel (EU summit). Germany's relationship with the EU is central to German political discourse."
+      },
+      {
+        "id": "eg_pol13",
+        "question": "Die Ministerin _____ sich für den Umweltschutz ein.",
+        "translation": "(The minister advocates for environmental protection.)",
+        "options": [
+          "setzt",
+          "stellt",
+          "gibt",
+          "legt"
+        ],
+        "correct": "setzt",
+        "explanation": "'Sich einsetzen für' (to advocate for/commit to) is a reflexive separable verb. The prefix 'ein-' separates: 'setzt sich... ein.' 'Die Ministerin' is the feminine of 'der Minister.' 'Der Umweltschutz' (environmental protection): Umwelt (environment) + Schutz (protection). This verb is essential for political discourse — it conveys active commitment. 'Sich einsetzen' is stronger than 'befürworten' (to support/endorse)."
+      },
+      {
+        "id": "eg_pol14",
+        "question": "Die Verhandlungen zwischen den Ländern waren _____.",
+        "translation": "(The negotiations between the countries were successful.)",
+        "options": [
+          "erfolgreich",
+          "erfolgend",
+          "erfolgt",
+          "erfolgbar"
+        ],
+        "correct": "erfolgreich",
+        "explanation": "'Erfolgreich' (successful) derives from 'der Erfolg' (success) + '-reich' (rich in). Don't confuse with 'erfolgt' (occurred — past participle of 'erfolgen'). 'Die Verhandlungen' (negotiations) is always plural. 'Zwischen den Ländern' uses dative after 'zwischen' (between — location). In political context, 'Land' means both 'country' and 'federal state.' Adjective endings: 'waren erfolgreich' — predicate adjectives don't decline."
+      },
+      {
+        "id": "eg_pol15",
+        "question": "Der Präsident hat die _____ des neuen Botschafters angenommen.",
+        "translation": "(The president accepted the credentials of the new ambassador.)",
+        "options": [
+          "Beglaubigung",
+          "Bescheinigung",
+          "Bestätigung",
+          "Berechtigung"
+        ],
+        "correct": "Beglaubigung",
+        "explanation": "'Die Beglaubigung' (credentials/accreditation) is the diplomatic term for an ambassador's official papers. 'Beglaubigen' (to certify/accredit) is inseparable (be- prefix). 'Der Botschafter' (ambassador) works at 'die Botschaft' (embassy). 'Annehmen' (to accept) is separable: 'hat angenommen.' German diplomatic vocabulary: der Diplomat, das Konsulat (consulate), der Außenminister (foreign minister), die Außenpolitik (foreign policy)."
+      }
+    ]
+  },
+  {
+    "key": "science_research",
+    "name": "Science & Research",
+    "description": "Wissenschaft & Forschung",
+    "iconName": "atom",
+    "color": "#06b6d4",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "eg_sci1",
+        "question": "Die Wissenschaftler haben eine neue Studie _____.",
+        "translation": "(The scientists published a new study.)",
+        "options": [
+          "veröffentlicht",
+          "geöffentlicht",
+          "veröffentlichen",
+          "öffentlicht"
+        ],
+        "correct": "veröffentlicht",
+        "explanation": "'Veröffentlichen' (to publish) is inseparable (ver- prefix), past participle: 'veröffentlicht' (no ge-). 'Die Studie' (study) is feminine. 'Der Wissenschaftler' (scientist) derives from 'die Wissenschaft' (science/knowledge). German academic publishing: die Fachzeitschrift (specialist journal), der Aufsatz (paper/essay), die Abhandlung (treatise). Germany has a strong tradition of scientific research, with institutions like the Max-Planck-Gesellschaft."
+      },
+      {
+        "id": "eg_sci2",
+        "question": "Das Experiment hat interessante _____ geliefert.",
+        "translation": "(The experiment yielded interesting results.)",
+        "options": [
+          "Ergebnisse",
+          "Ergebnissen",
+          "Resultat",
+          "Ergeben"
+        ],
+        "correct": "Ergebnisse",
+        "explanation": "'Die Ergebnisse' (results) is the plural of 'das Ergebnis.' The neuter '-nis' ending forms plural with '-nisse' (→ Ergebnisse). 'Ergebnisse liefern' (to yield/deliver results) is a common academic collocation. 'Liefern' (to deliver) + past participle 'geliefert.' 'Das Experiment' uses the Latin-derived word directly. German academic vocabulary: die Hypothese (hypothesis), die Methode (method), die Analyse (analysis), die Schlussfolgerung (conclusion)."
+      },
+      {
+        "id": "eg_sci3",
+        "question": "Die Forschung auf diesem _____ hat große Fortschritte gemacht.",
+        "translation": "(Research in this field has made great progress.)",
+        "options": [
+          "Gebiet",
+          "Feld",
+          "Bereich",
+          "Raum"
+        ],
+        "correct": "Gebiet",
+        "explanation": "'Das Gebiet' (field/area/domain) is the most common academic term for a research field. While 'Feld' and 'Bereich' can work, 'Gebiet' is preferred in scientific contexts. 'Fortschritte machen' (to make progress) is a fixed expression — 'der Fortschritt' (progress) is usually plural in this phrase. 'Die Forschung' (research) comes from 'forschen' (to research). German research institutions: Fraunhofer, Helmholtz, Leibniz-Gemeinschaft."
+      },
+      {
+        "id": "eg_sci4",
+        "question": "Die Hypothese konnte durch die Daten _____ werden.",
+        "translation": "(The hypothesis could be confirmed by the data.)",
+        "options": [
+          "bestätigt",
+          "bestatigt",
+          "bestättigt",
+          "bestätiget"
+        ],
+        "correct": "bestätigt",
+        "explanation": "'Bestätigen' (to confirm/verify) is inseparable (be- prefix), past participle: 'bestätigt.' 'Konnte... werden' is the passive with modal verb in past tense. 'Die Hypothese' follows Greek origin. 'Die Daten' (data) is always plural in German (singular 'das Datum' means date). Scientific method terms: aufstellen (to formulate), überprüfen (to verify), widerlegen (to refute), belegen (to substantiate). Passive voice dominates German academic writing."
+      },
+      {
+        "id": "eg_sci5",
+        "question": "Der Professor _____ an der Universität Heidelberg.",
+        "translation": "(The professor teaches at Heidelberg University.)",
+        "options": [
+          "lehrt",
+          "lernt",
+          "unterrichtet",
+          "studiert"
+        ],
+        "correct": "lehrt",
+        "explanation": "'Lehren' (to teach — at university level) vs. 'lernen' (to learn) — a critical distinction! 'Unterrichten' means to teach at school level. 'Studieren' means to study (at university). 'An der Universität' uses dative after 'an' (location). German academic titles matter: Professor/Professorin, Dozent/Dozentin (lecturer), Privatdozent (qualified lecturer). German universities (Heidelberg, founded 1386, is Germany's oldest) have a rich academic tradition."
+      },
+      {
+        "id": "eg_sci6",
+        "question": "Die Ergebnisse müssen noch _____ werden.",
+        "translation": "(The results still need to be analyzed.)",
+        "options": [
+          "ausgewertet",
+          "gewertet",
+          "bewertet",
+          "verwertet"
+        ],
+        "correct": "ausgewertet",
+        "explanation": "'Auswerten' (to analyze/evaluate data) is the scientific term for data analysis. Separable verb — past participle: 'ausgewertet.' Compare: 'bewerten' (to evaluate/grade — inseparable), 'verwerten' (to utilize/exploit), 'werten' (to value/judge). 'Müssen... werden' is passive with modal: 'must be analyzed.' 'Noch' (still/yet) indicates the analysis hasn't happened yet. Die Auswertung (analysis/evaluation) is the noun form."
+      },
+      {
+        "id": "eg_sci7",
+        "question": "Die Zelle _____ sich alle 24 Stunden.",
+        "translation": "(The cell divides every 24 hours.)",
+        "options": [
+          "teilt",
+          "trennt",
+          "spaltet",
+          "bricht"
+        ],
+        "correct": "teilt",
+        "explanation": "'Sich teilen' (to divide — reflexive) is the biological term for cell division. 'Die Zellteilung' (cell division) is a key biology concept. 'Alle 24 Stunden' (every 24 hours) uses 'alle + time period.' Compare: 'trennen' (to separate — objects), 'spalten' (to split — physical), 'brechen' (to break). German biology vocabulary: die Zelle (cell), der Zellkern (nucleus), die DNA/DNS (DNA), das Chromosom (chromosome), die Mitose (mitosis)."
+      },
+      {
+        "id": "eg_sci8",
+        "question": "Der Klimawandel ist eine der größten _____ unserer Zeit.",
+        "translation": "(Climate change is one of the greatest challenges of our time.)",
+        "options": [
+          "Herausforderungen",
+          "Forderungen",
+          "Anforderungen",
+          "Aufforderungen"
+        ],
+        "correct": "Herausforderungen",
+        "explanation": "'Die Herausforderung' (challenge) comes from 'herausfordern' (to challenge). Don't confuse: 'Forderung' (demand), 'Anforderung' (requirement), 'Aufforderung' (request/prompt). 'Der Klimawandel' (climate change): Klima + Wandel (change). 'Eine der größten' (one of the greatest) uses genitive plural. Superlative 'größten' from 'groß' → 'größer' → 'am größten.' German environmental vocabulary: Treibhauseffekt (greenhouse effect), Erderwärmung (global warming)."
+      },
+      {
+        "id": "eg_sci9",
+        "question": "Die künstliche _____ verändert viele Bereiche unseres Lebens.",
+        "translation": "(Artificial intelligence is transforming many areas of our lives.)",
+        "options": [
+          "Intelligenz",
+          "Klugheit",
+          "Weisheit",
+          "Vernunft"
+        ],
+        "correct": "Intelligenz",
+        "explanation": "'Die künstliche Intelligenz' (artificial intelligence, KI) is the German equivalent of 'AI.' 'Künstlich' (artificial) from 'die Kunst' (art/skill). 'Verändern' (to change/transform) is inseparable (ver-). Compare: 'Klugheit' (cleverness), 'Weisheit' (wisdom), 'Vernunft' (reason) — each has a specific philosophical meaning in German. Technology terms often use English: Machine Learning, Big Data, but 'KI' is preferred over 'AI' in German."
+      },
+      {
+        "id": "eg_sci10",
+        "question": "Die Impfung hat sich als sehr _____ erwiesen.",
+        "translation": "(The vaccination proved to be very effective.)",
+        "options": [
+          "wirksam",
+          "wirkend",
+          "wirklich",
+          "wirkungsvoll"
+        ],
+        "correct": "wirksam",
+        "explanation": "'Wirksam' (effective/efficacious) from 'wirken' (to have an effect) + '-sam' (suffix indicating tendency). 'Sich erweisen als' (to prove to be) is a reflexive inseparable verb. 'Die Impfung' (vaccination) from 'impfen' (to vaccinate). Don't confuse: 'wirklich' (really/actual), 'wirkungsvoll' (effective — more emphasis on visible results). Medical German: die Nebenwirkung (side effect), die Wirksamkeit (efficacy), der Impfstoff (vaccine)."
+      },
+      {
+        "id": "eg_sci11",
+        "question": "Die Forscher _____ an einem neuen Medikament.",
+        "translation": "(The researchers are working on a new medication.)",
+        "options": [
+          "arbeiten",
+          "forschen",
+          "suchen",
+          "studieren"
+        ],
+        "correct": "arbeiten",
+        "explanation": "'Arbeiten an' (to work on) + dative is the standard phrase for ongoing work on a project. 'Die Forscher' (researchers) from 'forschen' (to research). 'Das Medikament' (medication) is neuter. While 'forschen' means research in general, 'arbeiten an' specifies working on a concrete project. German pharmaceutical terms: die Arznei (medicine), das Heilmittel (remedy), die klinische Studie (clinical trial), die Zulassung (approval)."
+      },
+      {
+        "id": "eg_sci12",
+        "question": "Die Temperatur ist um fünf Grad _____.",
+        "translation": "(The temperature rose by five degrees.)",
+        "options": [
+          "gestiegen",
+          "gesteiget",
+          "gesteigt",
+          "gestiegt"
+        ],
+        "correct": "gestiegen",
+        "explanation": "'Steigen' (to rise/climb) is a strong verb: steigen → stieg → gestiegen. It uses 'sein' as auxiliary: 'ist gestiegen.' 'Um fünf Grad' (by five degrees) — 'um' indicates the amount of change. 'Der Grad' (degree) stays singular after numbers: 'fünf Grad' (not 'Grade'). Compare: 'sinken' → 'gesunken' (to fall), 'zunehmen' → 'zugenommen' (to increase), 'abnehmen' → 'abgenommen' (to decrease). These verbs are essential for describing scientific measurements."
+      },
+      {
+        "id": "eg_sci13",
+        "question": "Die Entdeckung wurde _____ gemacht.",
+        "translation": "(The discovery was made by chance.)",
+        "options": [
+          "zufällig",
+          "zufallend",
+          "zufällisch",
+          "zufallisch"
+        ],
+        "correct": "zufällig",
+        "explanation": "'Zufällig' (by chance/accidentally) from 'der Zufall' (chance/coincidence). The umlaut and '-ig' ending are correct: zufällig. 'Die Entdeckung' (discovery) from 'entdecken' (to discover — inseparable). Many famous scientific discoveries were 'zufällig': Röntgenstrahlen (X-rays, discovered by Wilhelm Röntgen), Aspirin (developed by Bayer). German has given the world many scientific terms: Kindergarten, Angst, Zeitgeist, Wanderlust, and technical compounds."
+      },
+      {
+        "id": "eg_sci14",
+        "question": "Das Labor muss regelmäßig _____ werden.",
+        "translation": "(The laboratory must be cleaned regularly.)",
+        "options": [
+          "gereinigt",
+          "gereinigen",
+          "reinigt",
+          "bereinigt"
+        ],
+        "correct": "gereinigt",
+        "explanation": "'Reinigen' (to clean/purify) past participle: 'gereinigt.' 'Muss... werden' is passive with modal verb. 'Das Labor' (laboratory) is shortened from 'das Laboratorium.' 'Regelmäßig' (regularly) from 'die Regel' (rule) + 'mäßig' (in accordance with). Compare: 'bereinigen' (to resolve/rectify — a situation), 'säubern' (to clean — more general), 'desinfizieren' (to disinfect). Lab vocabulary: das Reagenzglas (test tube), das Mikroskop, der Brenner (burner)."
+      },
+      {
+        "id": "eg_sci15",
+        "question": "Die Theorie _____ bisher nicht widerlegt werden.",
+        "translation": "(The theory has not been refuted so far.)",
+        "options": [
+          "konnte",
+          "könnte",
+          "kann",
+          "wurde"
+        ],
+        "correct": "konnte",
+        "explanation": "'Konnte... widerlegt werden' (could not be refuted) combines past modal 'konnte' with passive infinitive 'widerlegt werden.' 'Widerlegen' (to refute/disprove) is inseparable (wider- prefix), past participle: 'widerlegt.' 'Bisher' (so far/until now) indicates the time frame. 'Die Theorie' (theory) follows Greek origin. Scientific discourse: bestätigen (confirm), widerlegen (refute), belegen (substantiate), hinterfragen (question/challenge). Passive with modals is typical of academic German."
+      }
+    ]
   }
 ]

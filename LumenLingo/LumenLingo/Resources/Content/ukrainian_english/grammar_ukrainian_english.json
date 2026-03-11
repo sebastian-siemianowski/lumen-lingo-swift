@@ -12913,5 +12913,1030 @@
         "explanation": "TAKES APPROXIMATELY (займає приблизно): 'The process TAKES APPROXIMATELY three weeks'. TAKE + time = 'займати час'. APPROXIMATELY / ROUGHLY / ABOUT / AROUND = 'приблизно'. 'The entire process takes about a month', 'Each stage lasts roughly two days'. LAST = 'тривати' (для етапів). Підсумок описів процесів: послідовність (first, then, finally), пасив (is mixed, is heated), часові зв'язки (once, prior to), тривалість (takes, lasts). В українській: 'Займає приблизно', 'Триває близько' — дієслова тривалості + прислівники наближення."
       }
     ]
+  },
+  {
+    "key": "cause_effect",
+    "name": "Cause & Effect",
+    "description": "Причина та наслідок",
+    "iconName": "arrow.right.arrow.left",
+    "color": "#b45309",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ue_cef1",
+        "question": "The match was cancelled _____ the heavy rain.",
+        "translation": "(Матч скасували через сильний дощ.)",
+        "options": [
+          "due to",
+          "due for",
+          "due at",
+          "due with"
+        ],
+        "correct": "due to",
+        "explanation": "DUE TO + NOUN (причина, формальне): 'Cancelled DUE TO the heavy rain' = 'через сильний дощ'. DUE TO = формальний прийменник причини. Синоніми: OWING TO (формальний), BECAUSE OF (нейтральний), ON ACCOUNT OF (формальний). DUE TO зазвичай стоїть ПІСЛЯ дієслова-зв'язки: 'The delay was due to traffic'. Також після іменника: 'cancellation due to rain'. В українській: 'Через', 'Внаслідок', 'Завдяки' (позитивне) — прийменники причини з родовим відмінком."
+      },
+      {
+        "id": "ue_cef2",
+        "question": "She was so tired _____ she fell asleep immediately.",
+        "translation": "(Вона була настільки втомлена, що одразу заснула.)",
+        "options": [
+          "that",
+          "than",
+          "then",
+          "what"
+        ],
+        "correct": "that",
+        "explanation": "SO...THAT (наслідковий зв'язок): 'SO tired THAT she fell asleep'. SO + adj/adv + THAT + clause = причина настільки сильна, що призвела до наслідку. Варіації: SO + adj (so tired that...), SO + adv (so quickly that...), SO + much/many (so much rain that...). Паралельна конструкція: SUCH + noun + THAT: 'Such heavy rain that the match was cancelled'. В українській: 'Настільки...що' = SO...THAT. 'Така сильна злива, що' = SUCH...THAT. Ідентична логіка."
+      },
+      {
+        "id": "ue_cef3",
+        "question": "Traffic was heavy. _____, we arrived late.",
+        "translation": "(Рух був інтенсивний. Як наслідок, ми приїхали пізно.)",
+        "options": [
+          "As a result",
+          "As a matter",
+          "As a rule",
+          "As a whole"
+        ],
+        "correct": "As a result",
+        "explanation": "AS A RESULT (наслідок): 'AS A RESULT, we arrived late' = 'Як наслідок'. AS A RESULT = нейтральний маркер наслідку між двома реченнями. Шкала формальності наслідкових маркерів: HENCE (дуже формально) > CONSEQUENTLY/THEREFORE (формально) > AS A RESULT (нейтрально) > SO/THAT'S WHY (розмовно). З'єднання: крапка або крапка з комою + AS A RESULT + кома. В українській: 'Як наслідок', 'В результаті', 'Тому' — маркери наслідку різного регістру."
+      },
+      {
+        "id": "ue_cef4",
+        "question": "He didn't study; _____, he failed the exam.",
+        "translation": "(Він не вчився; отже, він провалив іспит.)",
+        "options": [
+          "consequently",
+          "although",
+          "despite",
+          "whereas"
+        ],
+        "correct": "consequently",
+        "explanation": "CONSEQUENTLY (формальний наслідок): 'CONSEQUENTLY, he failed'. CONSEQUENTLY = 'отже, відповідно' — формальний маркер наслідку. Часто в академічних і ділових текстах: 'The budget was cut. Consequently, several projects were cancelled.' Порівняйте: THEREFORE = логічний висновок, CONSEQUENTLY = наслідок подій, AS A RESULT = загальний наслідок. В українській: 'Отже', 'Відповідно', 'Як наслідок' — різні маркери причинно-наслідкового зв'язку."
+      },
+      {
+        "id": "ue_cef5",
+        "question": "The accident was caused _____ careless driving.",
+        "translation": "(Аварія сталася через необережне водіння.)",
+        "options": [
+          "by",
+          "from",
+          "with",
+          "for"
+        ],
+        "correct": "by",
+        "explanation": "CAUSED BY (пасивна причина): 'The accident WAS CAUSED BY careless driving'. WAS CAUSED BY = пасивна конструкція причини. Активне: 'Careless driving caused the accident'. Інші конструкції: RESULT FROM (формально): 'The accident resulted from carelessness'. STEM FROM: 'Problems stem from poor management'. ARISE FROM: 'Difficulties arise from miscommunication'. В українській: 'Спричинено', 'Викликано', 'Зумовлено' — пасивні дієприкметники причини з прийменником."
+      },
+      {
+        "id": "ue_cef6",
+        "question": "_____ his illness, he couldn't attend the meeting.",
+        "translation": "(Через свою хворобу він не зміг бути присутнім на зустрічі.)",
+        "options": [
+          "Because of",
+          "Because",
+          "Although",
+          "Despite"
+        ],
+        "correct": "Because of",
+        "explanation": "BECAUSE OF + NOUN (причина з іменником): 'BECAUSE OF his illness'. Ключова різниця: BECAUSE + clause (речення): 'Because he was ill, he couldn't attend'. BECAUSE OF + noun (іменник): 'Because of his illness, he couldn't attend'. ❌ 'Because of he was ill' — НЕПРАВИЛЬНО. ❌ 'Because his illness' — НЕПРАВИЛЬНО. DUE TO = формальніший за BECAUSE OF, але граматично ідентичний. В українській: 'Через хворобу' (+ іменник), 'Через те, що він хворів' (+ речення) — різні конструкції."
+      },
+      {
+        "id": "ue_cef7",
+        "question": "The government raised taxes. This led _____ widespread protests.",
+        "translation": "(Уряд підвищив податки. Це призвело до масових протестів.)",
+        "options": [
+          "to",
+          "for",
+          "in",
+          "at"
+        ],
+        "correct": "to",
+        "explanation": "LEAD TO + NOUN (призводити до): 'This LED TO protests'. LEAD TO = 'призводити до'. Типова конструкція причинно-наслідкових ланцюжків в академічному стилі: 'A leads to B, which in turn leads to C'. Ще: RESULT IN: 'The policy resulted in job losses'. GIVE RISE TO (формально): 'Inequality gives rise to social unrest'. BRING ABOUT: 'The reforms brought about significant changes'. В українській: 'Призвело до', 'Спричинило', 'Привело до' — дієслово + прийменник 'до'."
+      },
+      {
+        "id": "ue_cef8",
+        "question": "She passed the exam _____ to her hard work.",
+        "translation": "(Вона склала іспит завдяки наполегливій праці.)",
+        "options": [
+          "thanks",
+          "due",
+          "owing",
+          "because"
+        ],
+        "correct": "thanks",
+        "explanation": "THANKS TO (позитивна причина): 'THANKS TO her hard work'. THANKS TO = 'завдяки' — вживається коли причина має ПОЗИТИВНИЙ результат. DUE TO/BECAUSE OF — нейтральні (для будь-якого результату). THANKS TO = тільки позитив: ✅ 'Thanks to your help, I passed'. ❌ 'Thanks to the rain, we got wet' (краще: 'Because of the rain'). NO THANKS TO = іронічно: 'I passed, no thanks to him' (= він НЕ допоміг). В українській: 'Завдяки' = позитив, 'Через' = нейтральне/негативне."
+      },
+      {
+        "id": "ue_cef9",
+        "question": "The concert was cancelled on _____ of the bad weather.",
+        "translation": "(Концерт був скасований через погану погоду.)",
+        "options": [
+          "account",
+          "behalf",
+          "top",
+          "part"
+        ],
+        "correct": "account",
+        "explanation": "ON ACCOUNT OF (формальна причина): 'Cancelled ON ACCOUNT OF the bad weather'. ON ACCOUNT OF = дуже формальний синонім BECAUSE OF. Типово в юридичних документах, офіційних повідомленнях: 'The flight was delayed on account of fog'. Порівняйте: ON BEHALF OF = 'від імені' (інше значення!): 'I speak on behalf of the team'. ON TOP OF = 'крім того / на додаток': 'On top of that, he was rude'. В українській: 'З огляду на', 'Внаслідок', 'У зв'язку з' — офіційні причинні конструкції."
+      },
+      {
+        "id": "ue_cef10",
+        "question": "It was _____ a cold day that the pipes froze.",
+        "translation": "(Був настільки холодний день, що труби замерзли.)",
+        "options": [
+          "such",
+          "so",
+          "too",
+          "very"
+        ],
+        "correct": "such",
+        "explanation": "SUCH...THAT (наслідок з іменником): 'SUCH a cold day THAT the pipes froze'. SUCH + (a/an) + adj + noun + THAT. Порівняйте: SO + adj/adv + THAT: 'So cold that...'. SUCH + noun phrase + THAT: 'Such a cold day that...'. Правило: SO перед прикметником/прислівником, SUCH перед іменниковою фразою. SO MUCH/MANY + noun: 'So much snow that...'. SUCH + uncountable: 'Such terrible weather that...' (без a/an). В українській: 'Такий холодний день, що...' — 'такий' = SUCH."
+      },
+      {
+        "id": "ue_cef11",
+        "question": "_____ the fact that he was tired, he continued working.",
+        "translation": "(Незважаючи на те, що він був втомлений, він продовжив працювати.)",
+        "options": [
+          "Despite",
+          "Because",
+          "Due to",
+          "Thanks to"
+        ],
+        "correct": "Despite",
+        "explanation": "DESPITE THE FACT THAT (допуст з clause): 'DESPITE THE FACT THAT he was tired'. DESPITE + noun / V-ING — базова форма. Але коли потрібен clause → DESPITE THE FACT THAT + clause. Еквівалент: ALTHOUGH he was tired (простіше). DESPITE THE FACT THAT = формальніше, акцентованіше. В академічних текстах: 'Despite the fact that the sample size was small, the results were significant'. В українській: 'Незважаючи на те, що' — допустова конструкція з підрядним реченням."
+      },
+      {
+        "id": "ue_cef12",
+        "question": "Pollution has increased. _____, many species are endangered.",
+        "translation": "(Забруднення зросло. Таким чином, багато видів перебувають під загрозою зникнення.)",
+        "options": [
+          "Thus",
+          "Although",
+          "Besides",
+          "Yet"
+        ],
+        "correct": "Thus",
+        "explanation": "THUS (формальний наслідок): 'THUS, many species are endangered'. THUS = 'таким чином, отже' — дуже формальний, типово для академічного стилю. THUS може стояти на початку речення, в середині або перед дієсловом: 'The costs were thus reduced'. Без коми в середині: 'He thus proved his theory'. В академічних есе THUS часто підсумовує логічний ланцюжок. В українській: 'Таким чином', 'Тож', 'Відтак' — формальні маркери наслідку з відтінком підсумку."
+      },
+      {
+        "id": "ue_cef13",
+        "question": "The bridge collapsed _____ a result of poor maintenance.",
+        "translation": "(Міст обвалився внаслідок поганого обслуговування.)",
+        "options": [
+          "as",
+          "in",
+          "by",
+          "for"
+        ],
+        "correct": "as",
+        "explanation": "AS A RESULT OF + NOUN (причина → наслідок): 'Collapsed AS A RESULT OF poor maintenance'. AS A RESULT OF = 'внаслідок, в результаті'. Порівняйте: AS A RESULT (без OF) = маркер між реченнями: 'It rained. As a result, we stayed home.' AS A RESULT OF + noun = прийменник причини: 'As a result of the rain, we stayed home.' Часто в офіційних звітах: 'The failure occurred as a result of a manufacturing defect.' В українській: 'Внаслідок', 'В результаті' + родовий відмінок."
+      },
+      {
+        "id": "ue_cef14",
+        "question": "She spoke too quietly. _____, nobody could hear her.",
+        "translation": "(Вона говорила надто тихо. Ось чому ніхто не міг її почути.)",
+        "options": [
+          "That's why",
+          "That's how",
+          "That's when",
+          "That's what"
+        ],
+        "correct": "That's why",
+        "explanation": "THAT'S WHY (розмовний наслідок): 'THAT'S WHY nobody could hear her' = 'Ось чому'. THAT'S WHY = найрозповсюдніший маркер наслідку в РОЗМОВНІЙ мові. Шкала: THAT'S WHY/SO (розмовно) → AS A RESULT (нейтрально) → THEREFORE/CONSEQUENTLY (формально) → HENCE/THUS (дуже формально). 'I was tired. That's why I went to bed early.' Зворотній: THAT'S BECAUSE = 'тому що': 'I went early. That's because I was tired.' В українській: 'Ось чому', 'Тому' — розмовні наслідкові маркери."
+      },
+      {
+        "id": "ue_cef15",
+        "question": "His success can be _____ to years of dedication.",
+        "translation": "(Його успіх можна пояснити роками самовідданої праці.)",
+        "options": [
+          "attributed",
+          "contributed",
+          "distributed",
+          "substituted"
+        ],
+        "correct": "attributed",
+        "explanation": "BE ATTRIBUTED TO (формальна причина): 'Success can be ATTRIBUTED TO dedication'. ATTRIBUTE TO = 'приписувати, пояснювати чимось'. Формальний спосіб вказати причину: 'The decline is attributed to economic factors'. Не плутайте: ATTRIBUTE TO = пояснювати причину, CONTRIBUTE TO = робити внесок, DISTRIBUTE = розподіляти. Підсумок причинно-наслідкових конструкцій: причина → because of/due to/owing to; наслідок → so/therefore/consequently/as a result. В українській: 'Пояснюється', 'Зумовлений', 'Зобов'язаний' — пасивні конструкції причини."
+      }
+    ]
+  },
+  {
+    "key": "contrast_concession",
+    "name": "Contrast & Concession",
+    "description": "Протиставлення та поступка",
+    "iconName": "arrow.left.arrow.right",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ue_cc1",
+        "question": "_____ being very tired, she continued to work.",
+        "translation": "(Незважаючи на те, що була дуже втомлена, вона продовжила працювати.)",
+        "options": [
+          "Despite",
+          "Although",
+          "Because",
+          "Since"
+        ],
+        "correct": "Despite",
+        "explanation": "DESPITE + V-ING (допуст з герундієм): 'DESPITE BEING tired'. DESPITE + noun / V-ING — НІКОЛИ + clause. ✅ 'Despite being tired' ✅ 'Despite the rain' ❌ 'Despite she was tired'. Для clause використовуйте ALTHOUGH: 'Although she was tired'. DESPITE = IN SPITE OF (повний синонім). Порядок: 'Despite X, she continued' або 'She continued despite X'. В українській: 'Незважаючи на втому' (+ іменник), 'Попри те, що була втомлена' (+ clause) — різні конструкції."
+      },
+      {
+        "id": "ue_cc2",
+        "question": "The hotel was expensive. _____, the rooms were very small.",
+        "translation": "(Готель був дорогий. Крім того, кімнати були дуже маленькі.)",
+        "options": [
+          "Moreover",
+          "Therefore",
+          "Instead",
+          "Otherwise"
+        ],
+        "correct": "Moreover",
+        "explanation": "MOREOVER (додавання негативного): 'The hotel was expensive. MOREOVER, the rooms were small'. MOREOVER тут додає ще один НЕГАТИВНИЙ факт до вже негативного. MOREOVER = 'більш того, крім того' — додавання аргументу в тому ж напрямку (позитив до позитиву, або негатив до негативу). Не плутайте з HOWEVER (контраст): 'The hotel was expensive. However, the rooms were comfortable' (зміна напрямку). В українській: 'Крім того', 'Більш того', 'До того ж' — підсилення додаванням."
+      },
+      {
+        "id": "ue_cc3",
+        "question": "She's very young. _____, she's already a successful entrepreneur.",
+        "translation": "(Вона дуже молода. Тим не менш, вона вже успішна підприємниця.)",
+        "options": [
+          "Nevertheless",
+          "Therefore",
+          "Moreover",
+          "Furthermore"
+        ],
+        "correct": "Nevertheless",
+        "explanation": "NEVERTHELESS (формальна поступка): 'NEVERTHELESS, she's already successful'. NEVERTHELESS = 'тим не менш' — дуже формальний маркер контрасту. Результат суперечить очікуванню: молода → очікуємо недосвідчену → але успішна. Синоніми за формальністю: NEVERTHELESS/NONETHELESS (дуже формально) > HOWEVER (формально) > STILL/YET (нейтрально) > EVEN SO/ALL THE SAME (розмовно) > BUT (найрозмовніше). В українській: 'Тим не менш', 'Проте', 'Однак', 'Все ж' — різні регістри."
+      },
+      {
+        "id": "ue_cc4",
+        "question": "_____ the risks involved, they decided to proceed with the plan.",
+        "translation": "(Попри ризики, вони вирішили діяти за планом.)",
+        "options": [
+          "In spite of",
+          "In case of",
+          "In place of",
+          "In favour of"
+        ],
+        "correct": "In spite of",
+        "explanation": "IN SPITE OF + NOUN (допуст): 'IN SPITE OF the risks'. IN SPITE OF = DESPITE — абсолютні синоніми. IN SPITE OF трохи розмовніше за DESPITE. Обидва + noun / V-ING, ніколи + clause. 'In spite of the difficulties, we succeeded'. Для clause: IN SPITE OF THE FACT THAT: 'In spite of the fact that it rained, we went out'. Не плутайте: IN CASE OF = 'у разі' (умова): 'In case of fire, exit the building'. В українській: 'Попри', 'Незважаючи на', 'Всупереч' — допустові прийменники."
+      },
+      {
+        "id": "ue_cc5",
+        "question": "He's rich, _____ he's not happy.",
+        "translation": "(Він багатий, але не щасливий.)",
+        "options": [
+          "yet",
+          "so",
+          "for",
+          "nor"
+        ],
+        "correct": "yet",
+        "explanation": "YET (несподіваний контраст): 'He's rich, YET he's not happy'. YET як сполучник = BUT з відтінком НЕСПОДІВАНКИ. Сильніше за BUT: BUT = просто контраст, YET = контраст + здивування. 'She's young, yet very experienced.' 'The task was simple, yet nobody completed it.' YET як прислівник = 'ще': 'I haven't finished yet'. Розрізняйте за позицією: YET (сполучник) — між клаузами, YET (прислівник) — в кінці. В українській: 'Але', 'Проте', 'Однак' — але без спеціального 'несподіваного' варіанту."
+      },
+      {
+        "id": "ue_cc6",
+        "question": "She studied French, _____ her brother studied German.",
+        "translation": "(Вона вивчала французьку, тоді як її брат — німецьку.)",
+        "options": [
+          "whereas",
+          "because",
+          "therefore",
+          "unless"
+        ],
+        "correct": "whereas",
+        "explanation": "WHEREAS (формальне протиставлення): 'She studied French, WHEREAS her brother studied German'. WHEREAS = 'тоді як' — формальний сполучник ПРЯМОГО протиставлення двох рівноправних фактів. A vs B, без оцінки, без несподіванки — просто контраст. 'She likes coffee, whereas he prefers tea'. В юридичних документах WHEREAS = 'беручи до уваги, що' (інше значення!). В українській: 'Тоді як', 'В той час як' — точні еквіваленти для формального протиставлення."
+      },
+      {
+        "id": "ue_cc7",
+        "question": "Even _____ he apologized, she still wouldn't forgive him.",
+        "translation": "(Навіть коли він вибачився, вона все одно не прощала його.)",
+        "options": [
+          "though",
+          "if",
+          "so",
+          "when"
+        ],
+        "correct": "though",
+        "explanation": "EVEN THOUGH (підсилена допуст): 'EVEN THOUGH he apologized, she wouldn't forgive'. EVEN THOUGH = найсильніша допустова конструкція. Шкала: THOUGH (м'яко) < ALTHOUGH (нейтрально) < EVEN THOUGH (емфатично). EVEN THOUGH підкреслює СИЛЬНУ несподіванку: 'Навіть попри те, що...'. Не плутайте: EVEN IF = гіпотетично ('Even if he apologized, she wouldn't forgive' — він ще НЕ вибачився). EVEN THOUGH = реально (він ВИБАЧИВСЯ). В українській: 'Навіть попри те, що', 'Хоча навіть' — підсилена допуст."
+      },
+      {
+        "id": "ue_cc8",
+        "question": "The government claims the economy is growing. _____, many people are struggling financially.",
+        "translation": "(Уряд стверджує, що економіка зростає. На противагу цьому, багато людей мають фінансові труднощі.)",
+        "options": [
+          "On the contrary",
+          "On the other hand",
+          "On the whole",
+          "On the spot"
+        ],
+        "correct": "On the contrary",
+        "explanation": "ON THE CONTRARY (заперечення попереднього): 'ON THE CONTRARY, many people are struggling'. ON THE CONTRARY = 'Навпаки / На противагу' — ЗАПЕРЕЧУЄ або ПРОТИРІЧИТЬ попередньому твердженню. Не плутайте: ON THE CONTRARY = 'навпаки' (заперечення). ON THE OTHER HAND = 'з іншого боку' (інша перспектива, без заперечення). 'He's not lazy. On the contrary, he works 12 hours a day.' В українській: 'Навпаки', 'На противагу', 'Зовсім ні' — маркери заперечення попереднього."
+      },
+      {
+        "id": "ue_cc9",
+        "question": "This car is small. _____, it's very fuel-efficient.",
+        "translation": "(Ця машина маленька. З іншого боку, вона дуже економічна.)",
+        "options": [
+          "On the other hand",
+          "On the contrary",
+          "In contrast",
+          "In addition"
+        ],
+        "correct": "On the other hand",
+        "explanation": "ON THE OTHER HAND (інша точка зору): 'ON THE OTHER HAND, it's fuel-efficient'. ON THE OTHER HAND = 'з іншого боку' — представляє АЛЬТЕРНАТИВНУ перспективу, не заперечуючи попередню. Факт 1 (маленька) = правда. Факт 2 (економічна) = теж правда. Обидва співіснують. Часто з ON THE ONE HAND: 'On the one hand, it's small. On the other hand, it's efficient.' В українській: 'З іншого боку', 'З другого боку' — ідентична конструкція для балансування аргументів."
+      },
+      {
+        "id": "ue_cc10",
+        "question": "He went to work _____ he was feeling unwell.",
+        "translation": "(Він пішов на роботу, хоча почувався погано.)",
+        "options": [
+          "even though",
+          "because",
+          "so that",
+          "in order to"
+        ],
+        "correct": "even though",
+        "explanation": "EVEN THOUGH + CLAUSE (реальна допуст): 'He went EVEN THOUGH he was unwell'. EVEN THOUGH вводить РЕАЛЬНИЙ факт: він ДІЙСНО почувався погано, але все одно пішов. Порівняйте: EVEN IF = гіпотетично: 'He would go even if he were unwell' (ми НЕ знаємо, чи він хворий). EVEN THOUGH = фактично: 'He went even though he was unwell' (він ДІЙСНО хворий). Це одна з найчастіших помилок — змішування EVEN IF та EVEN THOUGH. В українській: 'Хоча' (реальне), 'Навіть якби' (гіпотетичне)."
+      },
+      {
+        "id": "ue_cc11",
+        "question": "_____ her lack of experience, she got the job.",
+        "translation": "(Попри відсутність досвіду, вона отримала роботу.)",
+        "options": [
+          "Notwithstanding",
+          "Nevertheless",
+          "Because of",
+          "Thanks to"
+        ],
+        "correct": "Notwithstanding",
+        "explanation": "NOTWITHSTANDING (дуже формальна допуст): 'NOTWITHSTANDING her lack of experience' = 'попри / незважаючи на'. NOTWITHSTANDING = дуже формальний синонім DESPITE. Може стояти перед або після іменника: 'Notwithstanding the difficulties' або 'The difficulties notwithstanding'. Типово в юридичних документах: 'Any provision to the contrary notwithstanding'. В діловому стилі: 'Notwithstanding the above, we agree to proceed'. В українській: 'Попри', 'Незважаючи на', 'Всупереч' — ці прийменники менш диференційовані за формальністю."
+      },
+      {
+        "id": "ue_cc12",
+        "question": "The weather was terrible. We had a great time, _____.",
+        "translation": "(Погода була жахлива. Ми чудово провели час, однак.)",
+        "options": [
+          "though",
+          "therefore",
+          "because",
+          "moreover"
+        ],
+        "correct": "though",
+        "explanation": "THOUGH (в кінці речення, розмовний контраст): 'We had a great time, THOUGH'. THOUGH в кінці речення = розмовний маркер допуску. Типово в BrE. Значення: 'однак, проте' — м'яке зауваження. 'The food wasn't great. The service was good, though.' 'I don't really like it. It's useful, though.' ALTHOUGH в кінці = ❌ НЕПРАВИЛЬНО. Тільки THOUGH може стояти в кінці. В українській: 'Однак', 'Правда' (в кінці): 'Добре провели час, правда' — аналогічна функція."
+      },
+      {
+        "id": "ue_cc13",
+        "question": "Much _____ she wanted to help, there was nothing she could do.",
+        "translation": "(Як би сильно вона не хотіла допомогти, вона нічого не могла зробити.)",
+        "options": [
+          "as",
+          "so",
+          "like",
+          "than"
+        ],
+        "correct": "as",
+        "explanation": "MUCH AS (допуст з інверсією): 'MUCH AS she wanted to help'. MUCH AS = 'як би не' — літературна/формальна допустова конструкція. Ще: 'Much as I admire him, I disagree with his views'. 'Much as I'd like to stay, I have to leave'. Також: HARD AS, TRY AS, ADJ + AS: 'Hard as he tried, he couldn't succeed'. 'Young as she is, she's very mature' = 'Though she is young'. В українській: 'Як би (не)...', 'Хоч як...' — допустові конструкції з інверсією."
+      },
+      {
+        "id": "ue_cc14",
+        "question": "I like the design. _____, the quality could be better.",
+        "translation": "(Мені подобається дизайн. Тим не менш, якість могла б бути кращою.)",
+        "options": [
+          "Having said that",
+          "In addition",
+          "Furthermore",
+          "Likewise"
+        ],
+        "correct": "Having said that",
+        "explanation": "HAVING SAID THAT (м'яка поступка): 'HAVING SAID THAT, the quality could be better'. HAVING SAID THAT / THAT SAID = 'Тим не менш / Сказавши це'. М'яке протиставлення: ви ВИЗНАЄТЕ позитив, але додаєте застереження. Менш різке, ніж HOWEVER. Ще: 'The food was good. That said, it was a bit overpriced.' В розмовній мові: 'But having said that...'. В українській: 'Втім', 'Сказавши це', 'Разом з тим' — м'яке зауваження після позитивного твердження."
+      },
+      {
+        "id": "ue_cc15",
+        "question": "_____ I understand your concerns, I believe we should proceed.",
+        "translation": "(Хоча я розумію ваші занепокоєння, вважаю, що нам слід продовжити.)",
+        "options": [
+          "While",
+          "Because",
+          "Since",
+          "Until"
+        ],
+        "correct": "While",
+        "explanation": "WHILE (допуст — 'хоча'): 'WHILE I understand your concerns'. WHILE тут = ALTHOUGH/THOUGH, НЕ 'поки'. WHILE в значенні допуску = 'хоча, попри те що'. Типово на початку речення в дипломатичній мові: 'While I appreciate your efforts, the results are unsatisfactory.' Підсумок контрастних маркерів: прийменник (despite/in spite of) + noun; сполучник (although/though/while) + clause; маркер (however/nevertheless/yet) + нове речення. В українській: 'Хоча', 'Попри те, що' — допустові сполучники."
+      }
+    ]
+  },
+  {
+    "key": "time_expressions",
+    "name": "Time Expressions",
+    "description": "Часові вирази та конструкції",
+    "iconName": "clock.fill",
+    "color": "#0284c7",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ue_te1",
+        "question": "I haven't seen her _____ last Christmas.",
+        "translation": "(Я не бачив її з минулого Різдва.)",
+        "options": [
+          "since",
+          "for",
+          "from",
+          "during"
+        ],
+        "correct": "since",
+        "explanation": "SINCE + МОМЕНТ (з певного моменту): 'Haven't seen her SINCE last Christmas'. SINCE = 'з' — вказує на ПОЧАТКОВУ ТОЧКУ часу. SINCE + конкретний момент: SINCE Monday, SINCE 2020, SINCE I was a child. Завжди з PERFECT tenses: ✅ 'I have lived here since 2020'. ❌ 'I live here since 2020'. Порівняйте: SINCE = момент початку, FOR = тривалість: 'Since 2020' (з 2020), 'For 4 years' (4 роки). В українській: 'З' + родовий відмінок: 'З минулого Різдва'."
+      },
+      {
+        "id": "ue_te2",
+        "question": "I have been waiting _____ two hours.",
+        "translation": "(Я чекаю вже дві години.)",
+        "options": [
+          "for",
+          "since",
+          "during",
+          "while"
+        ],
+        "correct": "for",
+        "explanation": "FOR + ТРИВАЛІСТЬ (протягом): 'Waiting FOR two hours'. FOR = 'протягом' — вказує на ТРИВАЛІСТЬ часу. FOR + період: FOR five minutes, FOR a week, FOR years, FOR ages. З PERFECT tenses (триває): 'I have studied for 3 years'. З PAST (завершилося): 'I lived there for 10 years' (зараз не живу). Порівняйте: FOR = тривалість (how long?), SINCE = початок (since when?). ❌ 'I wait here for two hours' — потрібен Perfect. В українській: '(Вже) дві години' — часто без прийменника."
+      },
+      {
+        "id": "ue_te3",
+        "question": "_____ the meeting, several important decisions were made.",
+        "translation": "(Під час зустрічі було прийнято кілька важливих рішень.)",
+        "options": [
+          "During",
+          "While",
+          "For",
+          "When"
+        ],
+        "correct": "During",
+        "explanation": "DURING + NOUN (під час): 'DURING the meeting'. DURING = 'під час, протягом' + ІМЕННИК (не clause!). ✅ 'During the lecture'. ❌ 'During I was lecturing'. Для clause → WHILE: 'While I was lecturing'. DURING vs FOR: DURING = 'коли саме' (during the meeting), FOR = 'скільки часу' (for two hours). DURING = вказує НА ЯКОМУ тлі відбулася дія. В українській: 'Під час зустрічі', 'Протягом зустрічі' — прийменник + родовий відмінок."
+      },
+      {
+        "id": "ue_te4",
+        "question": "I'll call you _____ I get home.",
+        "translation": "(Я зателефоную тобі, як тільки повернуся додому.)",
+        "options": [
+          "as soon as",
+          "as long as",
+          "as far as",
+          "as well as"
+        ],
+        "correct": "as soon as",
+        "explanation": "AS SOON AS (негайно після): 'I'll call AS SOON AS I get home'. AS SOON AS = 'як тільки, щойно'. Важливе правило: AS SOON AS + PRESENT (не Future!): ✅ 'As soon as I arrive, I'll call you'. ❌ 'As soon as I will arrive'. Це правило для всіх часових сполучників: WHEN, AS SOON AS, BEFORE, AFTER, UNTIL, BY THE TIME — всі з Present для майбутнього. В українській: 'Як тільки', 'Щойно', 'Тільки-но' — часові сполучники. Теж з теперішнім: 'Як тільки прийду' (не 'буду приходити')."
+      },
+      {
+        "id": "ue_te5",
+        "question": "We'll stay here _____ the rain stops.",
+        "translation": "(Ми будемо тут, поки дощ не припиниться.)",
+        "options": [
+          "until",
+          "while",
+          "since",
+          "during"
+        ],
+        "correct": "until",
+        "explanation": "UNTIL / TILL (до моменту): 'We'll stay UNTIL the rain stops'. UNTIL = 'поки не, до того як'. Дія ТРИВАЄ до моменту: 'Wait until I come back'. TILL = розмовний синонім UNTIL. BY = 'до' (дедлайн): 'Finish by Friday' (до п'ятниці, крайній термін). UNTIL vs BY: UNTIL = дія ТРИВАЛА до моменту, BY = дія ЗАВЕРШЕНА до моменту. 'I worked until 6 PM' (працював до 6-ї), 'I'll finish by 6 PM' (закінчу до 6-ї). В українській: 'Поки не', 'До того як' — часові конструкції."
+      },
+      {
+        "id": "ue_te6",
+        "question": "She read a book _____ she was waiting for the bus.",
+        "translation": "(Вона читала книгу, поки чекала на автобус.)",
+        "options": [
+          "while",
+          "during",
+          "until",
+          "by"
+        ],
+        "correct": "while",
+        "explanation": "WHILE + CLAUSE (одночасність): 'WHILE she was waiting'. WHILE = 'поки, в той час як' + CLAUSE (речення з підметом і дієсловом). ✅ 'While I was reading'. ❌ 'While my reading'. Для noun → DURING: ✅ 'During my reading'. WHILE часто з Past Continuous: 'While I was cooking, he was watching TV'. Дві одночасні дії. Скорочена форма: 'While waiting' (дієприслівниковий зворот). В українській: 'Поки', 'В той час як', 'Під час того, як' — різні часові сполучники."
+      },
+      {
+        "id": "ue_te7",
+        "question": "_____ the time we arrived, the concert had already started.",
+        "translation": "(На той час, коли ми приїхали, концерт вже почався.)",
+        "options": [
+          "By",
+          "At",
+          "On",
+          "In"
+        ],
+        "correct": "By",
+        "explanation": "BY THE TIME + CLAUSE (до моменту): 'BY THE TIME we arrived'. BY THE TIME = 'на той час, коли / до того часу, як'. Зазвичай з Past Perfect: 'By the time we arrived, the concert HAD started' (Past Perfect — раніше). Або з Future Perfect: 'By the time you arrive, I WILL HAVE finished' (до твого приїзду я вже закінчу). Логіка: BY THE TIME = дедлайн + завершеність. В українській: 'На той час, коли', 'До того, як' — часові конструкції з ефектом 'вже було зроблено'."
+      },
+      {
+        "id": "ue_te8",
+        "question": "I always have coffee first thing _____ the morning.",
+        "translation": "(Я завжди п'ю каву першим ділом вранці.)",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "by"
+        ],
+        "correct": "in",
+        "explanation": "IN / ON / AT (прийменники часу): 'First thing IN THE MORNING'. IN = великі періоди: in the morning, in January, in 2024, in summer, in the afternoon. ON = дні та дати: on Monday, on July 4th, on my birthday. AT = моменти: at 3 o'clock, at noon, at midnight, at Christmas (BrE). Виняток: AT night (не in the night), AT the weekend (BrE) / ON the weekend (AmE). В українській: 'Вранці', 'В понеділок', 'О третій' — прийменники відрізняються від англійських."
+      },
+      {
+        "id": "ue_te9",
+        "question": "I'll finish the report _____ Friday at the latest.",
+        "translation": "(Я закінчу звіт найпізніше до п'ятниці.)",
+        "options": [
+          "by",
+          "until",
+          "on",
+          "since"
+        ],
+        "correct": "by",
+        "explanation": "BY + ДЕДЛАЙН (до певного моменту): 'BY FRIDAY at the latest'. BY = 'до' — вказує на КРАЙНІЙ ТЕРМІН завершення. Дія буде ЗАВЕРШЕНА до цього моменту. 'Submit the form by December 31st', 'I need it by tomorrow'. BY vs UNTIL: BY = завершеність ('finish BY 5' = закінчити до 5-ї), UNTIL = тривалість ('work UNTIL 5' = працювати до 5-ї). 'I'll be here until 5' (буду тут до 5), 'I'll finish by 5' (закінчу до 5). В українській: 'До п'ятниці' — одне 'до' для обох значень."
+      },
+      {
+        "id": "ue_te10",
+        "question": "_____ I had finished dinner, I watched TV.",
+        "translation": "(Після того, як я повечеряв, я подивився телевізор.)",
+        "options": [
+          "After",
+          "Before",
+          "While",
+          "Since"
+        ],
+        "correct": "After",
+        "explanation": "AFTER + CLAUSE (послідовність): 'AFTER I had finished dinner'. AFTER = 'після того, як'. AFTER + Past Perfect (had finished) = чітка послідовність: спочатку повечеряв, потім дивився ТБ. Також: AFTER + V-ING: 'After finishing dinner' (коротше). AFTER + noun: 'After dinner' (найкоротше). Зворотнє: BEFORE: 'Before I watched TV, I had dinner'. В українській: 'Після того, як повечеряв' або 'Пообідавши' (дієприслівник) — різні варіанти."
+      },
+      {
+        "id": "ue_te11",
+        "question": "He has been playing piano _____ he was five years old.",
+        "translation": "(Він грає на фортепіано з п'яти років.)",
+        "options": [
+          "since",
+          "for",
+          "when",
+          "while"
+        ],
+        "correct": "since",
+        "explanation": "SINCE + CLAUSE (з моменту коли): 'SINCE he was five'. SINCE може вводити clause (з підметом і дієсловом): 'since I moved here', 'since she graduated'. Або момент: 'since 2020', 'since Monday'. Завжди з Present Perfect / Present Perfect Continuous в головному реченні: 'He HAS BEEN playing since...'. Чому не Past? Бо дія ПОЧАЛАСЬ тоді і ПРОДОВЖУЄТЬСЯ зараз. В українській: 'З п'яти років', 'Відтоді як йому було п'ять' — прийменник 'з' + момент."
+      },
+      {
+        "id": "ue_te12",
+        "question": "She left the office early _____ as to avoid the traffic.",
+        "translation": "(Вона пішла з офісу рано, щоб уникнути пробок.)",
+        "options": [
+          "so",
+          "such",
+          "in",
+          "quite"
+        ],
+        "correct": "so",
+        "explanation": "SO AS TO + V (мета, формальне): 'She left early SO AS TO avoid traffic'. SO AS TO = IN ORDER TO = формальне 'щоб'. Шкала формальності: TO (нейтральне) < IN ORDER TO (формальне) < SO AS TO (дуже формальне). Негативна: SO AS NOT TO, IN ORDER NOT TO: 'She whispered so as not to wake the baby'. Ще: FOR + V-ING: 'This brush is for cleaning' (призначення). В українській: 'Щоб', 'Для того, щоб', 'Задля того, щоб' — різна формальність фінальних сполучників."
+      },
+      {
+        "id": "ue_te13",
+        "question": "I'll wait here _____ you come back.",
+        "translation": "(Я чекатиму тут, поки ти повернешся.)",
+        "options": [
+          "until",
+          "by",
+          "since",
+          "during"
+        ],
+        "correct": "until",
+        "explanation": "UNTIL + PRESENT (для майбутнього): 'I'll wait UNTIL you come back'. Правило часових сполучників: після UNTIL, WHEN, AS SOON AS, BEFORE, AFTER — PRESENT SIMPLE для майбутнього. ✅ 'Until you come back' ❌ 'Until you will come back'. Це загальне правило: часовий сполучник заміщує will. 'When she arrives' (не 'when she will arrive'). В українській: 'Поки ти повернешся' — теперішній час з відтінком майбутнього. Обидні мови уникають 'буде' після часових сполучників."
+      },
+      {
+        "id": "ue_te14",
+        "question": "The last time I _____ him was three years ago.",
+        "translation": "(Останній раз я бачив його три роки тому.)",
+        "options": [
+          "saw",
+          "have seen",
+          "see",
+          "had seen"
+        ],
+        "correct": "saw",
+        "explanation": "THE LAST TIME + PAST SIMPLE: 'The last time I SAW him'. THE LAST TIME = 'останній раз' — з Past Simple, бо це КОНКРЕТНИЙ момент у минулому. ❌ 'The last time I have seen him' — неправильно з Present Perfect. Ще: AGO: 'three years AGO' = 'три роки тому' — теж Past Simple. IT'S BEEN + FOR/SINCE: 'It's been three years since I saw him' = Present Perfect з SINCE. В українській: 'Останній раз бачив' — минулий час. 'Вже три роки, як не бачив' — давноминулий відтінок."
+      },
+      {
+        "id": "ue_te15",
+        "question": "She had _____ finished cooking when the guests arrived.",
+        "translation": "(Вона щойно закінчила готувати, коли прийшли гості.)",
+        "options": [
+          "just",
+          "yet",
+          "already",
+          "still"
+        ],
+        "correct": "just",
+        "explanation": "JUST (щойно): 'She HAD JUST finished'. JUST з Past Perfect = 'щойно' — дія завершилась БЕЗПОСЕРЕДНЬО перед іншою. JUST vs ALREADY vs YET vs STILL: JUST = щойно (вчинок ТІЛЬКИ-НО стався). ALREADY = вже (раніше ніж очікувалося). YET = ще (у питаннях/запереченнях). STILL = все ще (тривалість). 'I've just arrived' (щойно), 'I've already eaten' (вже), 'Have you finished yet?' (ще?), 'I'm still waiting' (все ще). В українській: 'Щойно', 'Вже', 'Ще', 'Все ще' — часові прислівники."
+      }
+    ]
+  },
+  {
+    "key": "future_forms_advanced",
+    "name": "Future Forms Advanced",
+    "description": "Просунуті форми майбутнього часу",
+    "iconName": "arrow.right.circle.fill",
+    "color": "#2563eb",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ue_ffa1",
+        "question": "By this time next year, I _____ graduated from university.",
+        "translation": "(На цей час наступного року я вже закінчу університет.)",
+        "options": [
+          "will have",
+          "will be",
+          "am going to",
+          "shall"
+        ],
+        "correct": "will have",
+        "explanation": "FUTURE PERFECT (WILL HAVE + V3): 'I WILL HAVE graduated'. Future Perfect = дія ЗАВЕРШИТЬСЯ до певного моменту в майбутньому. Маркери: BY + час/дата: 'By Friday', 'By 2030', 'By the time you arrive'. 'By next month, we will have lived here for 10 years.' Формула: WILL + HAVE + Past Participle. В українській: 'Вже закінчу' — майбутній доконаний (з 'вже'). Англійська розрізняє Future Simple (will do) і Future Perfect (will have done), українська — доконаний/недоконаний."
+      },
+      {
+        "id": "ue_ffa2",
+        "question": "This time tomorrow, I _____ on the beach.",
+        "translation": "(Завтра о цій порі я буду лежати на пляжі.)",
+        "options": [
+          "will be lying",
+          "will lie",
+          "am lying",
+          "lie"
+        ],
+        "correct": "will be lying",
+        "explanation": "FUTURE CONTINUOUS (WILL BE + V-ING): 'I WILL BE LYING on the beach'. Future Continuous = в процесі дії в конкретний момент у майбутньому. Маркери: THIS TIME TOMORROW, AT 5 O'CLOCK, WHEN YOU ARRIVE. 'This time next week, I'll be skiing in the Alps.' Ще: ввічливість — 'Will you be using the car tonight?' (ввічливіше за 'Will you use?'). Наміри: 'I'll be seeing John later' (я так чи інакше побачу). В українській: 'Буду лежати' — складний майбутній з 'буду' + інфінітив."
+      },
+      {
+        "id": "ue_ffa3",
+        "question": "The meeting is _____ to start at 9 AM sharp.",
+        "translation": "(Зустріч має розпочатися рівно о 9-й ранку.)",
+        "options": [
+          "due",
+          "owing",
+          "bound",
+          "about"
+        ],
+        "correct": "due",
+        "explanation": "BE DUE TO + V (запланований час): 'The meeting IS DUE TO start at 9'. BE DUE TO = формальне 'має розпочатися' — за розкладом, планом, графіком. Часто для транспорту, подій: 'The train is due to arrive at 10:30', 'The report is due to be published tomorrow'. Не плутайте: DUE TO (причина) = 'через': 'cancelled due to rain'. BE DUE TO (час) = 'має': 'due to start'. В українській: 'Має розпочатися', 'Повинна розпочатися' — модальне дієслово з інфінітивом."
+      },
+      {
+        "id": "ue_ffa4",
+        "question": "She _____ about to leave when the phone rang.",
+        "translation": "(Вона збиралася йти, коли задзвонив телефон.)",
+        "options": [
+          "was",
+          "is",
+          "had",
+          "will be"
+        ],
+        "correct": "was",
+        "explanation": "BE ABOUT TO + V (от-от): 'She WAS ABOUT TO leave'. BE ABOUT TO = 'от-от, збиратися' — дія ОСЬ-ОСЬ станеться. В теперішньому: 'I'm about to go' (я ось-ось піду). В минулому: 'I was about to call when she arrived' (я вже збирався зателефонувати). Не вживається з часовими маркерами: ❌ 'I'm about to leave tomorrow'. ✅ 'I'm about to leave' (зараз, цієї миті). В українській: 'Збиралася йти', 'Мала на меті піти', 'Ось-ось мала піти' — незавершена дія з відтінком наміру."
+      },
+      {
+        "id": "ue_ffa5",
+        "question": "By the end of this course, you _____ all the grammar rules.",
+        "translation": "(До кінця цього курсу ви вивчите всі граматичні правила.)",
+        "options": [
+          "will have learned",
+          "will learn",
+          "are learning",
+          "have learned"
+        ],
+        "correct": "will have learned",
+        "explanation": "FUTURE PERFECT з BY THE END OF: 'You WILL HAVE LEARNED'. BY THE END OF + період = маркер Future Perfect. 'By the end of the day/week/month/year'. Визначає КРАЙНІЙ момент завершення дії. 'By the end of this year, I will have saved $10,000.' 'By the time she's 30, she will have visited 20 countries.' Порівняйте: 'I will learn' (простий факт) vs 'I will have learned' (завершеність до моменту). В українській: 'Вивчите' (доконаний) — один вид вираження замість структури WILL HAVE."
+      },
+      {
+        "id": "ue_ffa6",
+        "question": "_____ you be attending the conference next week?",
+        "translation": "(Ви будете на конференції наступного тижня?)",
+        "options": [
+          "Will",
+          "Do",
+          "Are",
+          "Have"
+        ],
+        "correct": "Will",
+        "explanation": "WILL YOU BE + V-ING (ввічливе запитання): 'WILL YOU BE ATTENDING?' Future Continuous у питаннях = ввічливий спосіб запитати про плани БЕЗ тиску. 'Will you attend?' = можливий тиск (чи ти підеш?). 'Will you be attending?' = нейтральне цікавлення (ти плануєш бути?). Ще: 'Will you be using the car?' (не 'Will you use?'). Ідеально для ділового спілкування: не нав'язує, а просто запитує. В українській: 'Ви будете присутні?' — без граматичної ввічливості через V-ING."
+      },
+      {
+        "id": "ue_ffa7",
+        "question": "The company is _____ the verge of bankruptcy.",
+        "translation": "(Компанія на межі банкрутства.)",
+        "options": [
+          "on",
+          "at",
+          "in",
+          "by"
+        ],
+        "correct": "on",
+        "explanation": "BE ON THE VERGE OF + NOUN/V-ING (на межі): 'ON THE VERGE OF bankruptcy'. ON THE VERGE OF = 'на межі, на порозі' — дія от-от станеться. 'On the verge of tears' (ось-ось заплаче), 'On the verge of a breakthrough' (на порозі прориву), 'On the verge of collapse' (на межі краху). Синоніми: ON THE BRINK OF (частіше негативне), ON THE POINT OF (нейтральне). В українській: 'На межі', 'На порозі', 'На грані' — прийменникова конструкція з подібною метафорою."
+      },
+      {
+        "id": "ue_ffa8",
+        "question": "We _____ to visit them next Sunday.",
+        "translation": "(Ми збираємося відвідати їх наступної неділі.)",
+        "options": [
+          "are going",
+          "will",
+          "shall",
+          "would"
+        ],
+        "correct": "are going",
+        "explanation": "BE GOING TO + V (намір/план): 'We ARE GOING TO visit them'. BE GOING TO = наміри та плани, прийняті ДО моменту мовлення. Відмінність від WILL: WILL = рішення В МОМЕНТ мовлення ('Oh, I'll help you!'). GOING TO = рішення ЗАЗДАЛЕГІДЬ ('I'm going to paint the room — I've already bought the paint'). Ще: GOING TO = evidence-based prediction: 'Look at those clouds! It's going to rain.' В українській: 'Збираємося', 'Плануємо' — дієслово наміру. Нема структурної різниці з 'will'."
+      },
+      {
+        "id": "ue_ffa9",
+        "question": "By next month, she _____ been working here for 20 years.",
+        "translation": "(Наступного місяця буде 20 років, як вона тут працює.)",
+        "options": [
+          "will have",
+          "will be",
+          "has",
+          "had"
+        ],
+        "correct": "will have",
+        "explanation": "FUTURE PERFECT CONTINUOUS (WILL HAVE BEEN + V-ING): 'She WILL HAVE BEEN working'. Найскладніший час — тривалість до майбутнього моменту. 'By June, I will have been studying English for 5 years.' Наголос на ТРИВАЛОСТІ, а не на завершенні. Future Perfect = завершеність (will have done). Future Perfect Continuous = тривалість (will have been doing). 'By Friday, I will have finished' (закінчу). 'By Friday, I will have been working for 5 days' (працюватиму вже 5 днів). В українській: 'Буде 20 років, як працює' — описовий."
+      },
+      {
+        "id": "ue_ffa10",
+        "question": "The train _____ at 10:15 according to the timetable.",
+        "translation": "(Поїзд відправляється о 10:15 за розкладом.)",
+        "options": [
+          "leaves",
+          "will leave",
+          "is leaving",
+          "is going to leave"
+        ],
+        "correct": "leaves",
+        "explanation": "PRESENT SIMPLE для розкладу: 'The train LEAVES at 10:15'. Present Simple для ФІКСОВАНОГО розкладу: транспорт, розклади, програми. 'The film starts at 8', 'The shop opens at 9', 'Our flight departs at noon'. Це НЕ Present Continuous (плани людини) і НЕ WILL (рішення/передбачення). Розклад = незмінний факт → Present Simple. Present Continuous = особистий план: 'I'm leaving at 10'. В українській: 'Поїзд відправляється' — теперішній для розкладу, як в англійській."
+      },
+      {
+        "id": "ue_ffa11",
+        "question": "I _____ seeing the dentist at 3 PM tomorrow.",
+        "translation": "(Завтра о 3-й я йду до стоматолога.)",
+        "options": [
+          "am",
+          "will be",
+          "shall be",
+          "have been"
+        ],
+        "correct": "am",
+        "explanation": "PRESENT CONTINUOUS для особистих планів: 'I AM SEEING the dentist'. Present Continuous = ОСОБИСТІ домовленості та плани на майбутнє. 'We're having dinner with friends tonight', 'She's flying to London on Friday'. Плани з конкретним часом/місцем, зазвичай вже підтверджені. Порівняйте: 'I'm meeting John' (домовлено), 'I'm going to meet John' (намір), 'I'll meet John' (рішення зараз). В українській: 'Завтра я іду до стоматолога' — теперішній час для запланованої дії."
+      },
+      {
+        "id": "ue_ffa12",
+        "question": "Don't worry. Everything _____ be fine.",
+        "translation": "(Не хвилюйся. Все буде добре.)",
+        "options": [
+          "will",
+          "is going to",
+          "shall",
+          "is about to"
+        ],
+        "correct": "will",
+        "explanation": "WILL для спонтанних обіцянок/запевнень: 'Everything WILL be fine'. WILL тут = запевнення, обіцянка. WILL для: 1) Обіцянок: 'I will help you'. 2) Запевнень: 'Everything will be OK'. 3) Спонтанних рішень: 'The phone's ringing — I'll get it'. 4) Передбачень: 'I think it will rain'. SHALL (I/we) — пропозиції: 'Shall we dance?', 'Shall I open the window?'. SHALL = 'чи не хочеш, щоб я...?' В українській: 'Все буде добре' — простий майбутній. Немає різниці між WILL і GOING TO."
+      },
+      {
+        "id": "ue_ffa13",
+        "question": "Look at those dark clouds! It _____ to rain.",
+        "translation": "(Подивись на ті хмари! Зараз піде дощ.)",
+        "options": [
+          "is going",
+          "will",
+          "shall",
+          "is about"
+        ],
+        "correct": "is going",
+        "explanation": "BE GOING TO для очевидного передбачення: 'IT IS GOING TO rain'. GOING TO = передбачення на основі ОЧЕВИДНИХ ОЗНАК (evidence). Я БАЧУ хмари → IT'S GOING TO rain. Порівняйте: 'I think it WILL rain tomorrow' (думка, без доказів). 'Look! It's GOING TO rain' (бачу докази). GOING TO = є sign/evidence ЗАРАЗ. WILL = загальна думка/припущення. 'She's going to have a baby!' (бачу, що вагітна). 'I think she'll have a baby one day' (мій прогноз). В українській: 'Зараз піде дощ' — без граматичного маркера evidence."
+      },
+      {
+        "id": "ue_ffa14",
+        "question": "This time next month, we _____ in our new house.",
+        "translation": "(Цього часу наступного місяця ми будемо жити в нашому новому будинку.)",
+        "options": [
+          "will be living",
+          "will live",
+          "live",
+          "have lived"
+        ],
+        "correct": "will be living",
+        "explanation": "FUTURE CONTINUOUS з THIS TIME NEXT...: 'We WILL BE LIVING'. THIS TIME NEXT + period = точний маркер Future Continuous. Дія ТРИВАТИМЕ в цей конкретний момент у майбутньому. 'This time next year, I'll be working in Paris.' 'This time tomorrow, we'll be relaxing on holiday.' Акцент на АТМОСФЕРІ, ПРОЦЕСІ, а не на факті. 'I'll live there' = факт. 'I'll be living there' = я уявляю себе ТАМ. В українській: 'Будемо жити' — складний майбутній. Без різниці Future Simple / Continuous."
+      },
+      {
+        "id": "ue_ffa15",
+        "question": "The President is _____ to make a statement later today.",
+        "translation": "(Президент має зробити заяву пізніше сьогодні.)",
+        "options": [
+          "expected",
+          "waited",
+          "hoped",
+          "wished"
+        ],
+        "correct": "expected",
+        "explanation": "BE EXPECTED TO (очікувана подія): 'The President IS EXPECTED TO make a statement'. BE EXPECTED TO = 'очікується, що'. Формальне повідомлення про заплановану/прогнозовану дію. Часто в новинах: 'Temperatures are expected to rise', 'The company is expected to announce...'. Ще офіційні форми майбутнього: BE SET TO ('The deal is set to close'), BE LIKELY TO ('Prices are likely to fall'), BE PREDICTED TO. Підсумок: WILL/GOING TO (базові), Continuous/Perfect (нюанси), BE DUE/EXPECTED/SET TO (формальні). В українській: 'Очікується, що', 'Має зробити' — безособовий та модальний."
+      }
+    ]
+  },
+  {
+    "key": "narrative_tenses",
+    "name": "Narrative Tenses",
+    "description": "Наративні часи (оповідь, розповідь)",
+    "iconName": "book.fill",
+    "color": "#92400e",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ue_nt1",
+        "question": "She _____ down the street when she noticed a strange man.",
+        "translation": "(Вона йшла вулицею, коли помітила дивного чоловіка.)",
+        "options": [
+          "was walking",
+          "walked",
+          "had walked",
+          "has walked"
+        ],
+        "correct": "was walking",
+        "explanation": "PAST CONTINUOUS (тло розповіді): 'She WAS WALKING down the street'. В наративі Past Continuous = ТЛО, фон, обстановка. Past Simple = ПОДІЯ, дія. 'I was walking (тло) when I saw (подія) a cat'. Формула наративу: WHILE/AS + Past Continuous (тло), Past Simple (подія). 'While she was reading, the phone rang.' Це як кіно: Past Continuous = панорамна зйомка, Past Simple = різка дія. В українській: 'Йшла' (недоконаний = тло) vs 'Помітила' (доконаний = подія)."
+      },
+      {
+        "id": "ue_nt2",
+        "question": "By the time the police arrived, the thief _____.",
+        "translation": "(На той час, коли приїхала поліція, злодій вже втік.)",
+        "options": [
+          "had escaped",
+          "escaped",
+          "was escaping",
+          "has escaped"
+        ],
+        "correct": "had escaped",
+        "explanation": "PAST PERFECT (раніша дія): 'The thief HAD ESCAPED'. Past Perfect = дія, яка ПЕРЕДУВАЛА іншій минулій дії. Злодій СПОЧАТКУ втік → ПОТІМ приїхала поліція. HAS escaped = Present Perfect (зараз). HAD escaped = Past Perfect (до іншого минулого). Маркери: BY THE TIME, BEFORE, AFTER, WHEN (already/just), EARLIER. 'When I arrived, they had already left.' В наративі Past Perfect = флешбек, зворотній кадр. В українській: 'Вже втік' (доконаний + 'вже') — простий минулий. Окремого давноминулого часу НЕМАЄ."
+      },
+      {
+        "id": "ue_nt3",
+        "question": "It _____ raining all morning and the streets were flooded.",
+        "translation": "(Дощ ішов весь ранок, і вулиці були затоплені.)",
+        "options": [
+          "had been",
+          "was",
+          "has been",
+          "is"
+        ],
+        "correct": "had been",
+        "explanation": "PAST PERFECT CONTINUOUS (тривалість до минулого моменту): 'It HAD BEEN raining all morning'. Past Perfect Continuous = дія ТРИВАЛА до певного минулого моменту, і її НАСЛІДКИ видно. Дощ ішов → вулиці затоплені (наслідок). 'She was tired because she had been working all day.' 'His eyes were red because he had been crying.' Формула: HAD BEEN + V-ING. Наголос на ТРИВАЛОСТІ і ВИДИМИХ НАСЛІДКАХ. В українській: 'Ішов весь ранок' — минулий час + обставина тривалості."
+      },
+      {
+        "id": "ue_nt4",
+        "question": "He suddenly _____ and left the room without saying a word.",
+        "translation": "(Він раптом встав і вийшов з кімнати, не сказавши ні слова.)",
+        "options": [
+          "stood up",
+          "was standing up",
+          "had stood up",
+          "stands up"
+        ],
+        "correct": "stood up",
+        "explanation": "PAST SIMPLE (послідовність дій): 'He STOOD UP and LEFT'. Past Simple в наративі = ланцюжок ПОСЛІДОВНИХ дій. Одна за одною: stood up → left → said nothing. Це основний час розповіді: швидкий, динамічний, хронологічний. 'She opened the door, walked in, sat down, and smiled.' Кожне дієслово = нова дія в хронологічній послідовності. Як кадри фільму. В українській: 'Встав, вийшов, не сказавши' — доконані дієслова в послідовності. Ідентична логіка."
+      },
+      {
+        "id": "ue_nt5",
+        "question": "While I _____ in the park, I found a gold ring.",
+        "translation": "(Коли я гуляв у парку, я знайшов золоту каблучку.)",
+        "options": [
+          "was jogging",
+          "jogged",
+          "had jogged",
+          "jog"
+        ],
+        "correct": "was jogging",
+        "explanation": "WHILE + PAST CONTINUOUS (паралельне тло): 'WHILE I WAS JOGGING'. WHILE + Past Continuous = тривала дія, під час якої стався раптовий подій. Формула: WHILE/AS + Past Continuous, Past Simple. 'While I was sleeping, someone knocked.' 'As she was driving, she heard a loud bang.' WHILE зазвичай з Past Continuous (тривале), WHEN зазвичай з Past Simple (раптове). 'While I was cooking, when the bell rang'. В українській: 'Коли/Поки гуляв (недоконаний)' — недоконаний аспект = тло."
+      },
+      {
+        "id": "ue_nt6",
+        "question": "She told me she _____ never been to Paris before.",
+        "translation": "(Вона мені сказала, що ніколи раніше не була в Парижі.)",
+        "options": [
+          "had",
+          "has",
+          "was",
+          "would"
+        ],
+        "correct": "had",
+        "explanation": "PAST PERFECT у непрямій мові: 'She told me she HAD NEVER BEEN'. В непрямій мові (reported speech) Present Perfect → Past Perfect: Direct: 'I HAVE never been to Paris'. Indirect: 'She said she HAD never been to Paris'. Зсув часів: Present → Past, Past → Past Perfect, Present Perfect → Past Perfect. В наративі це створює 'шар глибини': оповідач у минулому говорить про ще більш минуле. В українській: 'Сказала, що ніколи не була' — без зсуву часів. Один минулий."
+      },
+      {
+        "id": "ue_nt7",
+        "question": "The sun _____ brightly and birds were singing in the trees.",
+        "translation": "(Сонце яскраво світило, і пташки співали на деревах.)",
+        "options": [
+          "was shining",
+          "shone",
+          "had shone",
+          "shines"
+        ],
+        "correct": "was shining",
+        "explanation": "PAST CONTINUOUS для ОПИСУ СЦЕНИ: 'The sun WAS SHINING and birds WERE SINGING'. Past Continuous створює КАРТИНУ, панораму, декорації оповіді. Відкриваючий опис: 'It was a cold winter evening. Snow was falling softly. People were hurrying home.' Кілька Past Continuous = одночасні тлові дії. Потім Past Simple зламає тло: '...when suddenly she heard a scream.' В українській: 'Сонце світило, пташки співали' — недоконаний аспект = опис сцени."
+      },
+      {
+        "id": "ue_nt8",
+        "question": "I realized I _____ my wallet at home.",
+        "translation": "(Я зрозумів, що залишив гаманець вдома.)",
+        "options": [
+          "had left",
+          "left",
+          "have left",
+          "was leaving"
+        ],
+        "correct": "had left",
+        "explanation": "PAST PERFECT для ретроспективного усвідомлення: 'I realized I HAD LEFT my wallet'. Past Perfect тут = дія (забув гаманець) РАНІШЕ за іншу минулу (зрозумів). Типова наративна ситуація: персонаж УСВІДОМЛЮЄ щось, що СТАЛОСЯ РАНІШЕ. 'She discovered that someone had broken into her house.' 'He noticed that the letter had disappeared.' В українській: 'Зрозумів, що залишив' — обидва дієслова в минулому, але 'залишив' = раніше (без HAD)."
+      },
+      {
+        "id": "ue_nt9",
+        "question": "No sooner _____ he arrived than it started to rain.",
+        "translation": "(Не встиг він прибути, як почався дощ.)",
+        "options": [
+          "had",
+          "has",
+          "did",
+          "was"
+        ],
+        "correct": "had",
+        "explanation": "NO SOONER...THAN (наративна конструкція): 'NO SOONER HAD he arrived THAN it started raining'. NO SOONER + інверсія + Past Perfect + THAN + Past Simple. = 'Не встиг...як'. Літературний прийом для драматичного збігу: дві дії практично одночасні. Ще: HARDLY/SCARCELY...WHEN: 'Hardly had she sat down when the phone rang'. Формальний стиль — не для побутових розмов. В українській: 'Не встиг...як', 'Ледве...як' — аналогічні конструкції з різким переходом."
+      },
+      {
+        "id": "ue_nt10",
+        "question": "They _____ for hours when they finally found the right road.",
+        "translation": "(Вони їхали годинами, коли нарешті знайшли правильну дорогу.)",
+        "options": [
+          "had been driving",
+          "drove",
+          "were driving",
+          "have driven"
+        ],
+        "correct": "had been driving",
+        "explanation": "PAST PERFECT CONTINUOUS (тривале до моменту): 'They HAD BEEN DRIVING for hours'. Past Perfect Continuous = дія ТРИВАЛА протягом часу ДО іншої минулої дії. FOR HOURS + Past Perfect Continuous = акцент на тривалості та зусиллях. 'She had been studying for weeks before the exam.' 'We had been waiting for an hour when the bus finally came.' HAD BEEN + V-ING + FOR/SINCE = маркер тривалості ДО минулого моменту. В українській: 'Їхали годинами' — минулий недоконаний + обставина."
+      },
+      {
+        "id": "ue_nt11",
+        "question": "As she _____ the door, she heard a strange noise behind her.",
+        "translation": "(Коли вона відчиняла двері, то почула дивний шум за спиною.)",
+        "options": [
+          "was opening",
+          "opened",
+          "had opened",
+          "opens"
+        ],
+        "correct": "was opening",
+        "explanation": "AS + PAST CONTINUOUS (момент перериву): 'AS she WAS OPENING'. AS = WHILE (тут) — тривала дія переривається раптовою. AS/WHILE + Past Continuous = тло, яке перериває Past Simple. 'As I was leaving, the phone rang.' 'As we were crossing the road, a car appeared.' Це класична наративна формула створення напруги: повільна дія → раптовий перелом. В літературі: 'As she was reaching for the handle, the door burst open.' В українській: 'Коли відчиняла' (недоконаний = тло)."
+      },
+      {
+        "id": "ue_nt12",
+        "question": "She woke up, _____ out of bed, and rushed to the kitchen.",
+        "translation": "(Вона прокинулась, вистрибнула з ліжка і побігла на кухню.)",
+        "options": [
+          "jumped",
+          "was jumping",
+          "had jumped",
+          "jumps"
+        ],
+        "correct": "jumped",
+        "explanation": "PAST SIMPLE CHAIN (ланцюжок дій): 'Woke up, JUMPED out, rushed'. Кілька Past Simple підряд = швидка послідовність дій. Це ДИНАМІКА наративу — кожне дієслово = новий кадр. 'He grabbed his keys, ran to the car, and drove away.' 'She picked up the phone, dialed the number, and waited.' Чим коротше речення, тим динамічніше. Ритм: 'She stopped. Listened. Ran.' В українській: 'Прокинулась, вистрибнула, побігла' — доконані дієслова в ланцюжку."
+      },
+      {
+        "id": "ue_nt13",
+        "question": "Hardly _____ she sat down when someone knocked on the door.",
+        "translation": "(Ледве вона встигла сісти, як хтось постукав у двері.)",
+        "options": [
+          "had",
+          "has",
+          "did",
+          "was"
+        ],
+        "correct": "had",
+        "explanation": "HARDLY...WHEN (літературна конструкція): 'HARDLY HAD she sat down WHEN someone knocked'. HARDLY/SCARCELY + інверсія (HAD + S) + Past Perfect + WHEN + Past Simple. Синонім NO SOONER...THAN. HARDLY...WHEN = 'Ледве...коли'. SCARCELY...WHEN = ще формальніше. Порядок: HARDLY/SCARCELY (початок) → інверсія → WHEN (подія). Звичайний порядок: 'She had hardly sat down when someone knocked.' Емфатичний: 'Hardly had she sat down when...' В українській: 'Ледве встигла...як', 'Тільки-но...коли'."
+      },
+      {
+        "id": "ue_nt14",
+        "question": "The children _____ playing in the garden all afternoon, so they were exhausted.",
+        "translation": "(Діти гралися в саду весь день, тому були вимотані.)",
+        "options": [
+          "had been",
+          "were",
+          "are",
+          "have been"
+        ],
+        "correct": "had been",
+        "explanation": "PAST PERFECT CONTINUOUS для пояснення стану: 'The children HAD BEEN PLAYING'. Past Perfect Continuous пояснює ПРИЧИНУ минулого стану: вони ГРАЛИСЯ (тривало) → тому БУЛИ вимотані (стан). 'He was out of breath because he had been running.' 'Her eyes were red because she had been crying.' Формула: СТАН (Past Simple) + BECAUSE + ПРИЧИНА (Past Perfect Continuous). В наративі це показує 'передісторію' стану. В українській: 'Гралися весь день' + 'тому були вимотані' — без Past Perfect."
+      },
+      {
+        "id": "ue_nt15",
+        "question": "It was 1985. John _____ in London for three years and loved every moment.",
+        "translation": "(Був 1985 рік. Джон жив у Лондоні вже три роки і насолоджувався кожною миттю.)",
+        "options": [
+          "had been living",
+          "was living",
+          "lived",
+          "has lived"
+        ],
+        "correct": "had been living",
+        "explanation": "PAST PERFECT CONTINUOUS у наративному контексті: '1985. John HAD BEEN LIVING in London for three years'. Наратор встановлює точку ('1985'), потім Past Perfect Continuous показує, що ТРИВАЛА дія ПОЧАЛАСЬ РАНІШЕ і ПРОДОВЖУВАЛАСЬ до цього моменту (for three years). Це створює ГЛИБИНУ наративу: минуле в минулому. Підсумок наративних часів: Past Simple = послідовність і події. Past Continuous = тло і обстановка. Past Perfect = раніша дія ('флешбек'). Past Perfect Continuous = тривала раніша дія. В українській: 'Жив вже три роки' — один час + 'вже'."
+      }
+    ]
   }
 ]

@@ -5533,5 +5533,1030 @@
         "explanation": "'usually'は頻度約80%で「たいてい」を意味し、例外はあるが大部分の場合に当てはまることを表します。'We usually have meetings on Fridays'は「たいてい金曜日に会議がある」で、金曜日以外の日もある可能性を残しています。'always'なら100%、'usually'なら80%程度です。日本語の「たいてい」「普段は」に正確に対応する使い勝手の良い副詞です。ビジネスでも使いやすく、習慣や予定を伝える際の基本表現として必須です。"
       }
     ]
+  },
+  {
+    "key": "adverbs_manner",
+    "name": "Adverbs of Manner",
+    "description": "様態の副詞",
+    "iconName": "figure.run",
+    "color": "#c084fc",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "je_am1",
+        "question": "She speaks English _____.",
+        "translation": "(彼女は流暢に英語を話します)",
+        "options": [
+          "fluently",
+          "fluent",
+          "fluence",
+          "fluential"
+        ],
+        "correct": "fluently",
+        "explanation": "様態の副詞は「どのように」行動するかを説明します。形容詞'fluent'に'-ly'を付けて副詞'fluently'にします。日本語では「流暢に」のように形容詞に「に」を付けますが、英語では'-ly'が一般的な副詞の作り方です。副詞は動詞を修飾するため、'speaks fluently'のように動詞の後に置くのが基本です。形容詞と副詞の区別は英語の重要な文法ポイントで、正しく使い分けることで表現が格段に自然になります。"
+      },
+      {
+        "id": "je_am2",
+        "question": "He drives very _____.",
+        "translation": "(彼はとても注意深く運転します)",
+        "options": [
+          "carefully",
+          "careful",
+          "careless",
+          "caring"
+        ],
+        "correct": "carefully",
+        "explanation": "'careful'（注意深い）は形容詞で、'carefully'（注意深く）が副詞です。動詞'drives'を修飾するには副詞が必要です。'He is careful'（彼は注意深い＝形容詞で主語を説明）と'He drives carefully'（彼は注意深く運転する＝副詞で動詞を修飾）の違いを理解しましょう。日本語では「注意深い」も「注意深く」も似ていますが、英語では語尾が変わります。'-ly'を付ける規則は多くの形容詞に適用できる便利なパターンです。"
+      },
+      {
+        "id": "je_am3",
+        "question": "The children played _____ in the park.",
+        "translation": "(子どもたちは公園で楽しそうに遊びました)",
+        "options": [
+          "happily",
+          "happy",
+          "happiness",
+          "happier"
+        ],
+        "correct": "happily",
+        "explanation": "'happy'→'happily'の変換には注意が必要です。'y'で終わる形容詞は'y'を'i'に変えて'-ly'を付けます。'happy'→'happily'、'easy'→'easily'、'angry'→'angrily'です。このスペリングルールは間違えやすいので注意しましょう。'The children played happily'は「子どもたちが楽しそうに遊んだ」という場面を副詞で豊かに描写しています。副詞を加えると文がはるかに表現豊かになり、より自然な英語になります。"
+      },
+      {
+        "id": "je_am4",
+        "question": "Please walk _____ in the hospital.",
+        "translation": "(病院では静かに歩いてください)",
+        "options": [
+          "quietly",
+          "quiet",
+          "quite",
+          "quietness"
+        ],
+        "correct": "quietly",
+        "explanation": "'quiet'（静かな）の副詞形は'quietly'（静かに）です。注意：'quite'（かなり、とても）とは全く別の単語です。'quiet'と'quite'は日本語話者にとって混同しやすい単語です。'quietly'は行動の仕方を表し、'Walk quietly'は「静かに歩いて」という指示です。病院やfigure書館などの場面でよく使われる表現です。'Be quiet'（静かにして＝形容詞）と'Walk quietly'（静かに歩いて＝副詞）の使い分けも重要です。"
+      },
+      {
+        "id": "je_am5",
+        "question": "She sings _____.",
+        "translation": "(彼女は美しく歌います)",
+        "options": [
+          "beautifully",
+          "beautiful",
+          "beauty",
+          "beautify"
+        ],
+        "correct": "beautifully",
+        "explanation": "'beautiful'（美しい）の副詞形は'beautifully'（美しく）です。'-ful'で終わる形容詞には'-ly'をそのまま追加します：'wonderful'→'wonderfully'、'hopeful'→'hopefully'、'careful'→'carefully'。'She sings beautifully'は歌い方の質を描写する表現です。日本語の「美しく歌う」と構造は似ていますが、英語では副詞が文末に来ることが多いです。副詞の位置は文の意味を変えることもあるので注意が必要です。"
+      },
+      {
+        "id": "je_am6",
+        "question": "He answered the question _____.",
+        "translation": "(彼は正しくその質問に答えました)",
+        "options": [
+          "correctly",
+          "correct",
+          "correction",
+          "corrected"
+        ],
+        "correct": "correctly",
+        "explanation": "'correct'（正しい）の副詞形は'correctly'（正しく）です。動作の正確さを表す副詞として頻繁に使われます。'He answered correctly'（正しく答えた）は試験や面接の場面で使う重要な表現です。'The answer is correct'（答えが正しい＝形容詞）と'He answered correctly'（正しく答えた＝副詞）という使い分けが重要です。日本語では「正しく」「正しい」と語尾で区別しますが、英語では'-ly'の有無で区別するという対応関係を理解しましょう。"
+      },
+      {
+        "id": "je_am7",
+        "question": "The dog ran _____ toward its owner.",
+        "translation": "(犬は嬉しそうに飼い主に向かって走りました)",
+        "options": [
+          "eagerly",
+          "eager",
+          "eagerness",
+          "eagered"
+        ],
+        "correct": "eagerly",
+        "explanation": "'eager'（熱心な、嬉しそうな）の副詞形は'eagerly'（熱心に、嬉しそうに）です。犬が飼い主を見て走るという生き生きとした場面描写に最適な副詞です。'eagerly'は期待や興奮を込めた行動を表します。'await eagerly'（楽しみに待つ）、'listen eagerly'（熱心に聞く）のように使います。日本語の「嬉しそうに」「わくわくしながら」に相当する表現で、文章に感情的なニュアンスを加える効果があります。"
+      },
+      {
+        "id": "je_am8",
+        "question": "She did well on the test, but he did _____.",
+        "translation": "(彼女はテストで良い成績でしたが、彼はひどい成績でした)",
+        "options": [
+          "badly",
+          "bad",
+          "worse",
+          "worst"
+        ],
+        "correct": "badly",
+        "explanation": "'bad'（悪い）の副詞形は'badly'（悪く、ひどく）です。不規則変化ではなく、規則的に'-ly'を付けるパターンです。ただし注意：'good'の副詞形は'goodly'ではなく不規則な'well'です。'bad'→'badly'は規則的、'good'→'well'は不規則という対比を覚えてください。'She did well'と'He did badly'の対比は自然な英語表現です。'badly'は「ひどく」以外にも'I badly need...'（切実に必要）という使い方もあります。"
+      },
+      {
+        "id": "je_am9",
+        "question": "He works _____ to support his family.",
+        "translation": "(彼は家族を養うために懸命に働いています)",
+        "options": [
+          "hard",
+          "hardly",
+          "harder",
+          "hardest"
+        ],
+        "correct": "hard",
+        "explanation": "注意！'hard'は形容詞と副詞の両方として使える特殊な単語です。'He works hard'（懸命に働く）の'hard'は副詞です。一方、'hardly'は「ほとんど〜ない」という全く別の意味です！'He hardly works'は「彼はほとんど働かない」で、正反対の意味になります。これは英語学習者が最もよく間違える副詞の一つです。'hard=一生懸命に'、'hardly=ほとんど〜ない'。この区別は絶対に覚えてください。試験にも頻出です。"
+      },
+      {
+        "id": "je_am10",
+        "question": "The old man walked _____ across the street.",
+        "translation": "(老人はゆっくりと通りを渡りました)",
+        "options": [
+          "slowly",
+          "slow",
+          "slower",
+          "slowness"
+        ],
+        "correct": "slowly",
+        "explanation": "'slow'（遅い）の副詞形は'slowly'（ゆっくりと）です。ただし口語では'slow'を副詞として使うこともあります（'Drive slow'）。正式には'slowly'が正しい副詞形です。'The old man walked slowly'は動作の速度を描写する典型的な副詞の使い方です。副詞は文の情景を豊かにする力があります。'walked slowly across the street'と言うだけで、老人の姿が目に浮かぶような描写力を持っています。文章力の向上に副詞は欠かせません。"
+      },
+      {
+        "id": "je_am11",
+        "question": "She whispered _____ so no one could hear.",
+        "translation": "(誰にも聞こえないように彼女はそっとささやきました)",
+        "options": [
+          "softly",
+          "soft",
+          "softer",
+          "softness"
+        ],
+        "correct": "softly",
+        "explanation": "'soft'（柔らかい、穏やかな）の副詞形は'softly'（柔らかく、そっと）です。'whispered softly'は「そっとささやいた」という繊細な動作を表す美しい表現です。副詞を動詞の後に置くことで、動作の様子を生き生きと描写できます。'speak softly'（穏やかに話す）、'touch softly'（そっと触れる）のように、力加減や音量を表す場面で頻繁に使われます。日本語の「そっと」「やさしく」に対応する重要な副詞です。"
+      },
+      {
+        "id": "je_am12",
+        "question": "The athlete trained _____ for the competition.",
+        "translation": "(そのアスリートは大会に向けて激しくトレーニングしました)",
+        "options": [
+          "intensely",
+          "intense",
+          "intensity",
+          "intensive"
+        ],
+        "correct": "intensely",
+        "explanation": "'intense'（強烈な、激しい）の副詞形は'intensely'（激しく、強烈に）です。'intensive'（集中的な）は別の形容詞なので混同に注意してください。'trained intensely'は訓練の激しさを表現しています。スポーツや仕事の文脈でよく使われる副詞です。'intensely'は感情にも使えます：'intensely passionate'（激しく情熱的な）。日本語の「激しく」「集中的に」に相当し、強い程度を表す力強い副詞として活用できます。"
+      },
+      {
+        "id": "je_am13",
+        "question": "The baby slept _____ through the night.",
+        "translation": "(赤ちゃんは一晩中ぐっすり眠りました)",
+        "options": [
+          "peacefully",
+          "peaceful",
+          "peace",
+          "peacefulness"
+        ],
+        "correct": "peacefully",
+        "explanation": "'peaceful'（平和な、穏やかな）の副詞形は'peacefully'（穏やかに、安らかに）です。'slept peacefully'は「ぐっすり安らかに眠った」という心地よい状態を描写する表現です。'-ful'で終わる形容詞は'-ly'を加えるだけで副詞になります。このパターンは非常に生産的で多くの単語に適用できます：'grateful'→'gratefully'、'peaceful'→'peacefully'、'grateful'→'gratefully'。副詞を使いこなすことで英語の描写力が格段に向上します。"
+      },
+      {
+        "id": "je_am14",
+        "question": "He _____ finished the project on time.",
+        "translation": "(彼はなんとか期限内にプロジェクトを終えました)",
+        "options": [
+          "barely",
+          "bare",
+          "bearing",
+          "bareness"
+        ],
+        "correct": "barely",
+        "explanation": "'barely'（かろうじて、ぎりぎり）は準否定の副詞です。'barely finished'は「かろうじて終えた」「ぎりぎり終えた」という意味です。'hardly'（ほとんど〜ない）や'scarcely'（ほとんど〜ない）と同様、否定的なニュアンスを持ちます。'barely'は動詞の前に置くのが一般的です。日本語の「やっと」「かろうじて」「ぎりぎり」に相当する表現で、成功したが余裕がなかったことを伝える日常的に重要な副詞です。"
+      },
+      {
+        "id": "je_am15",
+        "question": "The teacher explained the lesson _____.",
+        "translation": "(先生はその授業を明確に説明しました)",
+        "options": [
+          "clearly",
+          "clear",
+          "clarity",
+          "cleared"
+        ],
+        "correct": "clearly",
+        "explanation": "'clear'（明確な）の副詞形は'clearly'（明確に）です。'explained clearly'は「わかりやすく説明した」という意味で、教育やビジネスの場面で頻繁に使われます。'speak clearly'（はっきり話す）、'think clearly'（明晰に考える）、'see clearly'（はっきり見える）など、多くの動詞と組み合わせられる汎用性の高い副詞です。日本語の「はっきりと」「明確に」に対応し、コミュニケーションの質を表現するのに不可欠な副詞です。"
+      }
+    ]
+  },
+  {
+    "key": "countable_uncountable",
+    "name": "Countable & Uncountable Nouns",
+    "description": "可算名詞と不可算名詞",
+    "iconName": "number",
+    "color": "#facc15",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "je_cu1",
+        "question": "Can I have _____ water, please?",
+        "translation": "(お水をいただけますか？)",
+        "options": [
+          "some",
+          "a",
+          "many",
+          "few"
+        ],
+        "correct": "some",
+        "explanation": "'water'は不可算名詞なので、'a water'とは言えません。不可算名詞には'some'、'much'、'a lot of'などの数量詞を使います。日本語では「水」に「一つの」を付けることはありませんが、英語では可算・不可算の区別が文法の根幹に関わります。不可算名詞の例：water, milk, rice, bread, information, advice, furniture, luggage。これらは全て数えられないものとして扱い、複数形にもしません。日本語にはない概念なので特に注意が必要です。"
+      },
+      {
+        "id": "je_cu2",
+        "question": "There are _____ apples on the table.",
+        "translation": "(テーブルの上にたくさんのりんごがあります)",
+        "options": [
+          "many",
+          "much",
+          "a lot",
+          "any"
+        ],
+        "correct": "many",
+        "explanation": "'apples'は可算名詞の複数形なので、'many'を使います。'much'は不可算名詞に使います。'many apples'（たくさんのりんご＝可算）vs 'much water'（たくさんの水＝不可算）。日本語の「たくさん」は数えられるものにも数えられないものにも使えますが、英語では名詞の種類によって使い分けが必要です。'a lot of'は可算・不可算の両方に使える便利な表現で、迷ったときはこれを使うとよいでしょう。"
+      },
+      {
+        "id": "je_cu3",
+        "question": "I need _____ information about the course.",
+        "translation": "(コースに関する情報が必要です)",
+        "options": [
+          "some",
+          "an",
+          "many",
+          "a few"
+        ],
+        "correct": "some",
+        "explanation": "'information'は不可算名詞です。'an information'や'informations'は誤りです。日本語話者がよく間違える不可算名詞の代表格です。不可算名詞を数えたい場合は、'a piece of information'（一つの情報）のように数量詞を使います。他にも'a piece of advice'（一つのアドバイス）、'a piece of furniture'（一つの家具）のパターンがあります。日本語では普通に「一つの情報」と言えますが、英語では必ずこの構造を使う必要があります。"
+      },
+      {
+        "id": "je_cu4",
+        "question": "She doesn't have _____ money.",
+        "translation": "(彼女はあまりお金を持っていません)",
+        "options": [
+          "much",
+          "many",
+          "few",
+          "a lot"
+        ],
+        "correct": "much",
+        "explanation": "'money'は不可算名詞なので、否定文では'much'を使います。'many money'は誤りです。否定文で'much'、肯定文では'a lot of'を使うのが自然です。'She doesn't have much money'（あまり持っていない）は否定文での典型的な使い方です。'much'は肯定文ではやや堅い表現になるため、'She has a lot of money'の方が日常的です。不可算名詞の否定文='not much'というパターンを覚えておきましょう。"
+      },
+      {
+        "id": "je_cu5",
+        "question": "How _____ chairs do we need?",
+        "translation": "(椅子はいくつ必要ですか？)",
+        "options": [
+          "many",
+          "much",
+          "any",
+          "some"
+        ],
+        "correct": "many",
+        "explanation": "'chairs'は可算名詞の複数形なので、数を聞くときは'How many'を使います。'How much'は不可算名詞に使います。'How many chairs?'（椅子はいくつ？＝可算）vs 'How much water?'（水はどれくらい？＝不可算）。日本語では「いくつ」「どれくらい」と言い換えますが、英語では名詞の種類で使い分けが決まります。'How many + 可算名詞の複数形'、'How much + 不可算名詞'のパターンは基本中の基本です。"
+      },
+      {
+        "id": "je_cu6",
+        "question": "I'd like two _____ of bread.",
+        "translation": "(パンを2枚ください)",
+        "options": [
+          "slices",
+          "breads",
+          "pieces of bread",
+          "bread"
+        ],
+        "correct": "slices",
+        "explanation": "'bread'は不可算名詞なので、数えるには'slice'（薄切り）や'loaf'（一斤）などの単位語を使います。'two slices of bread'（パンを2枚）が正解です。'two breads'は誤りです。不可算名詞を数えるための単位語は名詞ごとに異なります：'a slice of bread/cake'、'a glass of water/milk'、'a cup of tea/coffee'、'a piece of advice/information'。日本語では助数詞（枚、杯、個など）を使いますが、英語でも似た仕組みがあるのです。"
+      },
+      {
+        "id": "je_cu7",
+        "question": "There is _____ traffic today.",
+        "translation": "(今日は交通量がとても多いです)",
+        "options": [
+          "a lot of",
+          "many",
+          "a few",
+          "several"
+        ],
+        "correct": "a lot of",
+        "explanation": "'traffic'は不可算名詞です。'many traffic'や'a traffic'は誤りです。'a lot of'は可算・不可算の両方に使える万能表現で、ここでは不可算名詞'traffic'に使っています。日本語話者が不可算名詞と知らずによく間違える単語として、traffic（交通量）、homework（宿題）、luggage/baggage（荷物）、furniture（家具）、equipment（設備）などがあります。これらは全て複数形にできず、'much'や'a lot of'で量を表します。"
+      },
+      {
+        "id": "je_cu8",
+        "question": "She gave me _____ good advice.",
+        "translation": "(彼女は良いアドバイスをくれました)",
+        "options": [
+          "some",
+          "an",
+          "a",
+          "many"
+        ],
+        "correct": "some",
+        "explanation": "'advice'は不可算名詞の代表格です。'an advice'や'advices'は誤りです。一つのアドバイスを表すには'a piece of advice'を使います。'She gave me some good advice'は「いくつかの良いアドバイスをくれた」という自然な表現です。不可算名詞でも'some'を使えば自然に量を表現できます。興味深いことに、'advice'は不可算ですが、動詞形の'advise'は可算・不可算の問題なく使えます。品詞による違いにも注目しましょう。"
+      },
+      {
+        "id": "je_cu9",
+        "question": "We have _____ homework to do tonight.",
+        "translation": "(今夜やるべき宿題がたくさんあります)",
+        "options": [
+          "a lot of",
+          "many",
+          "a few",
+          "several"
+        ],
+        "correct": "a lot of",
+        "explanation": "'homework'は不可算名詞です。'many homeworks'は誤りです。'a lot of homework'（たくさんの宿題）が正しい表現です。日本語では「宿題が3つある」と数えられますが、英語では'three homework assignments'のように'assignment'（課題）を使って数えます。'homework'自体は抽象的な概念として不可算扱いです。同様に'work'（仕事）も不可算で、'job'や'task'が可算の対応語です。この対応関係を理解することが重要です。"
+      },
+      {
+        "id": "je_cu10",
+        "question": "Could you pass me _____ salt?",
+        "translation": "(塩を取ってもらえますか？)",
+        "options": [
+          "the",
+          "a",
+          "an",
+          "many"
+        ],
+        "correct": "the",
+        "explanation": "'salt'は不可算名詞ですが、食卓にある特定の塩を指す場合は定冠詞'the'を使います。'the salt'は「そこにある塩」という特定の塩を指しています。不可算名詞でも'the'は使えます。定冠詞は可算・不可算に関係なく、「特定のもの」を指すときに使います。'Pass me the salt'は食卓での定番表現です。不可算名詞＋定冠詞の組み合わせは正しい用法であることを覚えておきましょう。初学者がよく迷うポイントです。"
+      },
+      {
+        "id": "je_cu11",
+        "question": "I bought _____ new furniture for the apartment.",
+        "translation": "(アパートに新しい家具を買いました)",
+        "options": [
+          "some",
+          "a",
+          "many",
+          "few"
+        ],
+        "correct": "some",
+        "explanation": "'furniture'は不可算名詞です。'a furniture'や'furnitures'は誤りです。一つの家具は'a piece of furniture'と言います。'some new furniture'（いくつかの新しい家具）が正解です。日本語では「椅子を2つ買った」のように家具を数えますが、英語の'furniture'は集合的な概念として不可算扱いです。個別の家具なら'a chair'、'a desk'、'a sofa'と可算名詞で表現します。'furniture'は全体を指す集合名詞という位置づけです。"
+      },
+      {
+        "id": "je_cu12",
+        "question": "There are only _____ eggs left.",
+        "translation": "(卵はほんの数個しか残っていません)",
+        "options": [
+          "a few",
+          "a little",
+          "much",
+          "little"
+        ],
+        "correct": "a few",
+        "explanation": "'eggs'は可算名詞の複数形なので、'a few'（少数の、いくつかの）を使います。'a little'は不可算名詞に使います。'a few eggs'（卵が少しある＝肯定的）vs 'few eggs'（卵がほとんどない＝否定的）の違いも重要です。'a'があるかないかで意味が変わります。'a few'=「少しある」（肯定的）、'few'=「ほとんどない」（否定的）。同様に'a little water'=「少しある」、'little water'=「ほとんどない」です。"
+      },
+      {
+        "id": "je_cu13",
+        "question": "We have _____ time before the train leaves.",
+        "translation": "(電車が出るまで少し時間があります)",
+        "options": [
+          "a little",
+          "a few",
+          "many",
+          "few"
+        ],
+        "correct": "a little",
+        "explanation": "'time'（時間）は不可算名詞なので、'a little'（少しの）を使います。'a little time'は「少し時間がある」という肯定的な表現です。'little time'（ほとんど時間がない）とは微妙にニュアンスが異なります。可算名詞には'a few/few'、不可算名詞には'a little/little'を使います。この四つ組（a few, few, a little, little）の使い分けは英語学習の重要な壁の一つで、確実にマスターする必要があります。"
+      },
+      {
+        "id": "je_cu14",
+        "question": "He doesn't have _____ experience in this field.",
+        "translation": "(彼はこの分野での経験があまりありません)",
+        "options": [
+          "much",
+          "many",
+          "a few",
+          "several"
+        ],
+        "correct": "much",
+        "explanation": "'experience'は文脈によって可算にも不可算にもなる注意が必要な名詞です。「経験・経歴」という抽象概念としては不可算で、'much experience'（多くの経験）を使います。一方、特定の出来事としての「体験」は可算で、'a wonderful experience'（素晴らしい体験）のように使えます。ここでは「分野での経験値」という抽象的な意味なので不可算です。このような二重性を持つ名詞は他にも多数あります。"
+      },
+      {
+        "id": "je_cu15",
+        "question": "I don't have _____ luggage with me.",
+        "translation": "(荷物はあまり持っていません)",
+        "options": [
+          "much",
+          "many",
+          "a few",
+          "several"
+        ],
+        "correct": "much",
+        "explanation": "'luggage'（荷物）は不可算名詞です。'a luggage'や'luggages'は誤りです。一つの荷物を表すには'a piece of luggage'や'a suitcase'（スーツケース）を使います。'I don't have much luggage'は旅行の場面でよく使われる表現です。同義語の'baggage'も不可算です。日本語では「荷物を3つ持っている」と数えられますが、英語では'three pieces of luggage'または'three bags'のように言い換えが必要です。"
+      }
+    ]
+  },
+  {
+    "key": "possessives",
+    "name": "Possessives",
+    "description": "所有格と所有代名詞",
+    "iconName": "person.crop.circle",
+    "color": "#4ade80",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "je_pos1",
+        "question": "This is _____ book.",
+        "translation": "(これは私の本です)",
+        "options": [
+          "my",
+          "me",
+          "mine",
+          "I"
+        ],
+        "correct": "my",
+        "explanation": "物の前に置いて所有を表す場合は所有格'my'を使います。'my book'（私の本）のように名詞の前に置きます。日本語の「私の」に直接対応します。'me'は目的格（「私を」）、'mine'は所有代名詞（「私のもの」）、'I'は主格（「私は」）です。英語の代名詞は格変化が豊富で、日本語の「が・を・に・の」に似た使い分けがあります。所有格は最も基本的で頻繁に使われる形の一つです。正しく使い分けることが自然な英語への第一歩です。"
+      },
+      {
+        "id": "je_pos2",
+        "question": "The book is _____.",
+        "translation": "(その本は私のものです)",
+        "options": [
+          "mine",
+          "my",
+          "me",
+          "I"
+        ],
+        "correct": "mine",
+        "explanation": "所有代名詞'mine'は「私のもの」を意味し、名詞の代わりに使います。'The book is mine'='The book is my book'。名詞を繰り返さなくて済む便利な表現です。各人称の所有代名詞：mine（私の）、yours（あなたの）、his（彼の）、hers（彼女の）、ours（私たちの）、theirs（彼らの）。注意：'its'には所有代名詞形がありません。所有格（my, your...）は名詞の前、所有代名詞（mine, yours...）は単独で使うという使い分けが重要です。"
+      },
+      {
+        "id": "je_pos3",
+        "question": "Is this _____ car?",
+        "translation": "(これはあなたの車ですか？)",
+        "options": [
+          "your",
+          "yours",
+          "you",
+          "you're"
+        ],
+        "correct": "your",
+        "explanation": "名詞'car'の前に置くので所有格'your'を使います。'your car'（あなたの車）。よくある間違いは'you're'（you areの短縮形）との混同です。'you're'=「あなたは〜です」、'your'=「あなたの」。この同音異義語の混同は英語のネイティブスピーカーでさえ間違えることがあるほど一般的です。確認方法：'you are'に置き換えて意味が通れば'you're'、通らなければ'your'です。'Is this you are car?'は意味不明なので'your'が正解です。"
+      },
+      {
+        "id": "je_pos4",
+        "question": "The dog wagged _____ tail.",
+        "translation": "(犬はしっぽを振りました)",
+        "options": [
+          "its",
+          "it's",
+          "his",
+          "their"
+        ],
+        "correct": "its",
+        "explanation": "'its'（この犬の）は中性の所有格で、動物や物に使います。最も注意すべき点：'its'（所有格）と'it's'（it isの短縮形）は全く異なります。アポストロフィの有無で意味が変わります。'The dog wagged its tail'（犬がしっぽを振った）。'it's = it is'なので、'The dog wagged it is tail'は意味不明です。この'its'と'it's'の混同は英語で最もよくあるスペリングミスの一つです。アポストロフィ=短縮形と覚えてください。"
+      },
+      {
+        "id": "je_pos5",
+        "question": "Those are _____ shoes, not mine.",
+        "translation": "(あれは彼女の靴であって、私のではありません)",
+        "options": [
+          "her",
+          "hers",
+          "she",
+          "she's"
+        ],
+        "correct": "her",
+        "explanation": "名詞'shoes'の前に置くので所有格'her'を使います。'her shoes'（彼女の靴）。もし名詞なしで「彼女のもの」と言いたい場合は所有代名詞'hers'を使います：'Those shoes are hers'。また、'she's'は'she is'または'she has'の短縮形であり、所有格ではありません。日本語では全て「彼女の」で済みますが、英語では名詞が続くかどうかで'her'と'hers'を使い分ける必要があります。"
+      },
+      {
+        "id": "je_pos6",
+        "question": "That's _____ house over there.",
+        "translation": "(あそこにあるのが彼らの家です)",
+        "options": [
+          "their",
+          "they're",
+          "there",
+          "theirs"
+        ],
+        "correct": "their",
+        "explanation": "'their'（彼らの）は複数の所有格です。'they're'（they areの短縮形）、'there'（あそこに）との三つ巴の混同は英語で最も有名な同音異義語の問題です。判別法：'they are'に置き換えて意味が通れば'they're'、場所を示すなら'there'、所有なら'their'。'That's their house'（それは彼らの家）が正解。'That's they are house'は不自然、'That's there house'は誤りです。この三語の区別をマスターすることは英語力の基本です。"
+      },
+      {
+        "id": "je_pos7",
+        "question": "The children cleaned _____ room.",
+        "translation": "(子どもたちは自分たちの部屋を掃除しました)",
+        "options": [
+          "their",
+          "they're",
+          "there",
+          "them"
+        ],
+        "correct": "their",
+        "explanation": "複数の人が所有するものを表すには'their'を使います。'their room'（彼らの部屋）。注意点として、英語では一人一つずつの所有物でも'their rooms'（複数）か'their room'（共有）かで意味が変わります。'The children cleaned their room'は共有の一部屋を掃除した場合、'their rooms'は各自の部屋を掃除した場合です。日本語では「自分たちの部屋」で曖昧にできますが、英語では単数・複数で明確に区別します。"
+      },
+      {
+        "id": "je_pos8",
+        "question": "This is John_____ jacket.",
+        "translation": "(これはジョンのジャケットです)",
+        "options": [
+          "'s",
+          "s'",
+          "s",
+          "'"
+        ],
+        "correct": "'s",
+        "explanation": "人名の所有格はアポストロフィ＋sで表します。'John's jacket'（ジョンのジャケット）。日本語の「の」に相当する表現です。ルール：単数名詞→'s（John's）、複数名詞で-s終わり→s'（the students' books）、複数名詞で-s以外→'s（the children's toys）。固有名詞が-sで終わる場合は'James's'と'James''の両方が認められます。所有格のアポストロフィの位置は英語のライティングで最も間違えやすいルールの一つです。"
+      },
+      {
+        "id": "je_pos9",
+        "question": "Is this pen _____?",
+        "translation": "(このペンはあなたのですか？)",
+        "options": [
+          "yours",
+          "your",
+          "you",
+          "you're"
+        ],
+        "correct": "yours",
+        "explanation": "名詞なしで所有を示す場合は所有代名詞'yours'を使います。'Is this pen yours?'=「このペンはあなたのものですか？」。'your'は名詞の前でのみ使用し、文末で単独では使えません。'Is this your pen?'（所有格＋名詞）='Is this pen yours?'（所有代名詞）。所有代名詞のリスト：mine, yours, his, hers, ours, theirs。注意：所有代名詞にはアポストロフィを付けません。'your's'は誤りです。"
+      },
+      {
+        "id": "je_pos10",
+        "question": "_____ idea is better than mine.",
+        "translation": "(彼のアイデアの方が私のより良いです)",
+        "options": [
+          "His",
+          "He",
+          "Him",
+          "He's"
+        ],
+        "correct": "His",
+        "explanation": "'his'は所有格と所有代名詞の両方の機能を持つ特殊な形です。'His idea'（彼のアイデア＝所有格）と'The idea is his'（そのアイデアは彼のもの＝所有代名詞）の両方で使えます。他の人称では形が異なります（my/mine、her/hers）が、'his'だけは一つの形で両方をカバーします。'He's'は'He is'または'He has'の短縮形なので所有には使えません。'He's idea'は文法的に誤りです。"
+      },
+      {
+        "id": "je_pos11",
+        "question": "A friend of _____ told me the news.",
+        "translation": "(私の友人の一人がそのニュースを教えてくれました)",
+        "options": [
+          "mine",
+          "my",
+          "me",
+          "I"
+        ],
+        "correct": "mine",
+        "explanation": "'a friend of mine'は「私の友人の一人」を意味する定型表現です。'a friend of my'は誤りです。'of'の後は所有代名詞（mine, yours, hers等）を使います。これは「二重所有格」と呼ばれる構造で、'my friend'とほぼ同じ意味ですが、多くの友人の中の一人であることを暗示します。'a colleague of his'（彼の同僚の一人）、'a neighbor of ours'（私たちの隣人の一人）のように使います。日常会話で頻繁に登場する重要パターンです。"
+      },
+      {
+        "id": "je_pos12",
+        "question": "My sister and _____ went shopping.",
+        "translation": "(姉と私は買い物に行きました)",
+        "options": [
+          "I",
+          "me",
+          "my",
+          "mine"
+        ],
+        "correct": "I",
+        "explanation": "主語の位置では'I'を使います。'My sister and I'が正解です。'My sister and me'は口語では使われますが、文法的には正しくありません（主語なので主格が必要）。確認方法：'My sister'を取り除いて'I went shopping'が自然かチェックします。'Me went shopping'は不自然なので'I'が正しいとわかります。逆に目的語なら'My sister and me'が正解です：'He invited my sister and me.'（'He invited I'は不自然）。"
+      },
+      {
+        "id": "je_pos13",
+        "question": "We painted the house _____.",
+        "translation": "(私たちは自分たちで家を塗りました)",
+        "options": [
+          "ourselves",
+          "our",
+          "ours",
+          "us"
+        ],
+        "correct": "ourselves",
+        "explanation": "'ourselves'は再帰代名詞で、「私たち自身で」という意味です。'We painted the house ourselves'は「業者に頼まず自分たちで塗った」ことを強調しています。再帰代名詞は主語を強調する用法（強調用法）と、主語と目的語が同一の場合（再帰用法）があります。ここでは強調用法です。再帰代名詞の一覧：myself, yourself, himself, herself, itself, ourselves, yourselves, themselves。所有格や所有代名詞とは全く異なる機能を持っています。"
+      },
+      {
+        "id": "je_pos14",
+        "question": "The cat licked _____ paw.",
+        "translation": "(猫は自分の前足をなめました)",
+        "options": [
+          "its",
+          "it's",
+          "his",
+          "their"
+        ],
+        "correct": "its",
+        "explanation": "動物の所有格は通常'its'を使います。ペットの場合は'his'や'her'を使うこともありますが、一般的には'its'が安全です。'The cat licked its paw'（猫が前足をなめた）。もう一度強調：'its'（所有格、アポストロフィなし）と'it's'（it isの短縮形、アポストロフィあり）を混同しないことが大切です。「所有代名詞にはアポストロフィを付けない」というルールを覚えましょう：his, hers, its, ours, yours, theirs。"
+      },
+      {
+        "id": "je_pos15",
+        "question": "The students must bring _____ own textbooks.",
+        "translation": "(学生は各自の教科書を持参しなければなりません)",
+        "options": [
+          "their",
+          "there",
+          "they're",
+          "them"
+        ],
+        "correct": "their",
+        "explanation": "'their own'は「彼ら自身の」を意味する強調的な所有表現です。'own'を加えることで所有の強調ができます。'my own room'（自分だけの部屋）、'her own car'（彼女自身の車）のように使います。'their own textbooks'は「各自が自分の教科書を」という個別所有を強調しています。'their'、'there'、'they're'の三語の区別は英語の永遠の課題です。文脈から判断する習慣をつけることが上達への近道です。"
+      }
+    ]
+  },
+  {
+    "key": "reflexive_pronouns",
+    "name": "Reflexive Pronouns",
+    "description": "再帰代名詞",
+    "iconName": "arrow.uturn.left.circle",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_rp1",
+        "question": "I taught _____ to play the guitar.",
+        "translation": "(私は独学でギターを弾けるようになりました)",
+        "options": [
+          "myself",
+          "me",
+          "my",
+          "mine"
+        ],
+        "correct": "myself",
+        "explanation": "再帰代名詞'myself'は主語と目的語が同じ人物のときに使います。'I taught myself'は「私が私自身に教えた」→「独学で学んだ」です。日本語の「自分で」に相当します。再帰代名詞は'-self'（単数）または'-selves'（複数）で終わります。一人称：myself/ourselves、二人称：yourself/yourselves、三人称：himself/herself/itself/themselves。英語では主語と目的語が同一の場合、目的格ではなく再帰代名詞を使うのがルールです。"
+      },
+      {
+        "id": "je_rp2",
+        "question": "She looked at _____ in the mirror.",
+        "translation": "(彼女は鏡で自分を見ました)",
+        "options": [
+          "herself",
+          "her",
+          "hers",
+          "she"
+        ],
+        "correct": "herself",
+        "explanation": "'herself'は三人称女性の再帰代名詞です。'She looked at herself'は「彼女が自分自身を見た」で、主語と目的語が同一人物です。もし'She looked at her'と言うと、「彼女が別の女性を見た」という意味になります。この区別は重要です。日本語では「自分を見た」と「彼女を見た」で区別しますが、英語では代名詞の形（herself vs her）で区別します。再帰代名詞を正しく使うことで、文の意味が明確になります。"
+      },
+      {
+        "id": "je_rp3",
+        "question": "The children enjoyed _____ at the beach.",
+        "translation": "(子どもたちはビーチで楽しみました)",
+        "options": [
+          "themselves",
+          "them",
+          "their",
+          "theirs"
+        ],
+        "correct": "themselves",
+        "explanation": "'enjoy oneself'は「楽しむ」を意味する重要な再帰動詞表現です。'The children enjoyed themselves'は「子どもたちが楽しんだ」です。英語では'enjoy'の後に必ず目的語が必要で、他に目的語がない場合は再帰代名詞を使います。'I enjoyed myself'（楽しかった）、'Did you enjoy yourselves?'（楽しかったですか？）のように使います。日本語の「楽しむ」は目的語不要ですが、英語では必ず何かを目的語に取る他動詞です。"
+      },
+      {
+        "id": "je_rp4",
+        "question": "He cut _____ while shaving.",
+        "translation": "(彼はひげを剃っているときに自分を切ってしまいました)",
+        "options": [
+          "himself",
+          "him",
+          "his",
+          "he"
+        ],
+        "correct": "himself",
+        "explanation": "'himself'は三人称男性の再帰代名詞です。'He cut himself'は「彼が自分自身を切った」で、動作の主体と対象が同じです。'He cut him'だと「彼が別の男性を切った」という全く異なる意味になります。日本語では文脈で判断しますが、英語では代名詞の形で明確に区別します。再帰代名詞は日常の怪我を描写するときにもよく使われます：'She burned herself'（やけどした）、'I hurt myself'（自分を傷つけた）。"
+      },
+      {
+        "id": "je_rp5",
+        "question": "We should be proud of _____.",
+        "translation": "(私たちは自分たちを誇りに思うべきです)",
+        "options": [
+          "ourselves",
+          "us",
+          "our",
+          "ours"
+        ],
+        "correct": "ourselves",
+        "explanation": "'ourselves'は一人称複数の再帰代名詞です。'We should be proud of ourselves'は「私たちが自分たち自身を誇りに思うべき」で、主語'we'と前置詞の目的語が同一です。'be proud of oneself'は定型表現として覚えましょう。前置詞の後にも再帰代名詞が使えます：'by myself'（一人で）、'for ourselves'（自分たちのために）。日本語の「自分たち」に対応する表現ですが、英語では人称と数に合わせて正確に形を変えます。"
+      },
+      {
+        "id": "je_rp6",
+        "question": "Help _____ to some cake.",
+        "translation": "(ケーキをご自由にどうぞ)",
+        "options": [
+          "yourself",
+          "you",
+          "your",
+          "yours"
+        ],
+        "correct": "yourself",
+        "explanation": "'Help yourself'は「どうぞご自由に」という意味の重要な定型表現です。直訳は「自分自身を助けて」ですが、食べ物や飲み物を勧める際の丁寧な表現として使います。複数の相手には'Help yourselves'と言います。'yourself'は二人称単数の再帰代名詞です。他にも'Make yourself at home'（くつろいでください）、'Introduce yourself'（自己紹介してください）など、日常会話で再帰代名詞を使う定型表現は非常に多くあります。"
+      },
+      {
+        "id": "je_rp7",
+        "question": "Did you do all the work by _____?",
+        "translation": "(全部一人でやったのですか？)",
+        "options": [
+          "yourself",
+          "you",
+          "your",
+          "yours"
+        ],
+        "correct": "yourself",
+        "explanation": "'by oneself'は「一人で、独力で」を意味する重要な前置詞句です。'by yourself'は「あなた一人で」です。'alone'と似た意味ですが、'by oneself'は「誰の助けもなく」というニュアンスが強いです。'She lives by herself'（一人暮らし）、'I did it by myself'（自力でやった）のように使います。'by'＋再帰代名詞のパターンは非常に頻繁に使われる表現で、独立性や自律性を強調する場面で活躍します。日常英語で必須の表現です。"
+      },
+      {
+        "id": "je_rp8",
+        "question": "The door opened by _____.",
+        "translation": "(ドアが勝手に開きました)",
+        "options": [
+          "itself",
+          "it",
+          "its",
+          "it's"
+        ],
+        "correct": "itself",
+        "explanation": "'by itself'は「ひとりでに、勝手に」を意味します。物や機械が自動的に動く場合に使います。'The door opened by itself'は「誰も触れていないのにドアが開いた」という不思議な状況を描写しています。'itself'は中性三人称の再帰代名詞です。注意：'it's'（it isの短縮形）や'its'（所有格）とは全く異なります。'The computer turned off by itself'（パソコンが勝手に切れた）のように、日常的に使われる便利な表現です。"
+      },
+      {
+        "id": "je_rp9",
+        "question": "They blame _____ for the accident.",
+        "translation": "(彼らはその事故について自分たちを責めています)",
+        "options": [
+          "themselves",
+          "them",
+          "their",
+          "theirs"
+        ],
+        "correct": "themselves",
+        "explanation": "'blame oneself'は「自分を責める」を意味する再帰動詞表現です。'They blame themselves'は「彼らが自分たち自身を責めている」で、主語と目的語が同一です。'They blame them'だと「彼らが別のグループを責めている」という意味になります。この区別は英語コミュニケーションで非常に重要です。再帰代名詞を使うことで「自分自身に向けた行為」であることが明確になります。心理的な動詞と再帰代名詞の組み合わせは頻出です。"
+      },
+      {
+        "id": "je_rp10",
+        "question": "Let me introduce _____.",
+        "translation": "(自己紹介させてください)",
+        "options": [
+          "myself",
+          "me",
+          "my",
+          "mine"
+        ],
+        "correct": "myself",
+        "explanation": "'introduce oneself'は「自己紹介する」を意味する必須の再帰動詞表現です。'Let me introduce myself'はビジネスでもカジュアルでも使える万能な自己紹介の切り出し方です。'introduce'は「紹介する」で、自分自身を紹介する場合は再帰代名詞が必要です。'Let me introduce me'は文法的に誤りです。日本語の「自己紹介」という概念を英語にすると'self-introduction'ですが、動詞表現では'introduce myself'が圧倒的に自然です。"
+      },
+      {
+        "id": "je_rp11",
+        "question": "The manager _____ approved the proposal.",
+        "translation": "(マネージャー自身がその提案を承認しました)",
+        "options": [
+          "himself",
+          "him",
+          "his",
+          "he"
+        ],
+        "correct": "himself",
+        "explanation": "ここでの'himself'は強調用法です。再帰代名詞の二つ目の役割で、主語の行為を強調します。'The manager himself approved'は「マネージャーが他でもなく自ら承認した」という強調です。日本語の「自ら」「自身で」に相当します。強調の再帰代名詞は主語の直後、または文末に置けます：'I myself saw it' = 'I saw it myself'。再帰用法（主語＝目的語）と強調用法（主語の強調）の二つの機能を区別して理解することが重要です。"
+      },
+      {
+        "id": "je_rp12",
+        "question": "We found _____ lost in the forest.",
+        "translation": "(気がつくと私たちは森の中で迷っていました)",
+        "options": [
+          "ourselves",
+          "us",
+          "our",
+          "ours"
+        ],
+        "correct": "ourselves",
+        "explanation": "'find oneself'は「（気がつくと）〜の状態になっている」を意味する慣用表現です。'We found ourselves lost'は「気がつくと迷っていた」という予期しない状況の発見を表します。直訳的な「自分たちを見つけた」ではなく、慣用的な意味で使われます。'I found myself smiling'（気がつくと微笑んでいた）、'She found herself alone'（気がつくと一人だった）のように使います。このような再帰代名詞の慣用表現は英語に多数あります。"
+      },
+      {
+        "id": "je_rp13",
+        "question": "You should take care of _____.",
+        "translation": "(体に気をつけてね)",
+        "options": [
+          "yourself",
+          "you",
+          "your",
+          "yours"
+        ],
+        "correct": "yourself",
+        "explanation": "'take care of oneself'は「自分の体を大切にする、健康に気をつける」を意味する日常的定型表現です。別れ際の挨拶として'Take care of yourself!'（お体に気をつけて！）は非常によく使われます。短縮して'Take care!'とも言います。再帰代名詞を使った慣用表現の一つで、相手への思いやりを示す温かい表現です。日本語の「お体に気をつけて」に完璧に対応する表現として覚えておくと便利です。"
+      },
+      {
+        "id": "je_rp14",
+        "question": "The cat can clean _____ very well.",
+        "translation": "(猫はとても上手に自分の体をきれいにできます)",
+        "options": [
+          "itself",
+          "it",
+          "its",
+          "it's"
+        ],
+        "correct": "itself",
+        "explanation": "動物が自分自身に対して行う動作には再帰代名詞を使います。'The cat can clean itself'は「猫が自分の体を舐めてきれいにする」ことを表しています。'itself'は中性三人称の再帰代名詞で、動物や物に使います。ペットの猫なら'himself/herself'を使う人もいますが、一般的な記述では'itself'が標準です。再帰代名詞は人間だけでなく動物や機械にも適用される重要な文法項目です。「自らの体で自らに行う」動作全般に使えます。"
+      },
+      {
+        "id": "je_rp15",
+        "question": "Don't be so hard on _____.",
+        "translation": "(あまり自分に厳しくしないで)",
+        "options": [
+          "yourself",
+          "you",
+          "your",
+          "yours"
+        ],
+        "correct": "yourself",
+        "explanation": "'be hard on oneself'は「自分に厳しくする、自分を責める」を意味する慣用表現です。'Don't be so hard on yourself'は「自分を責めすぎないで」という慰めの言葉としてよく使われます。前置詞'on'の後に再帰代名詞を置くパターンです。再帰代名詞を使った慣用表現は非常に多く、'believe in yourself'（自分を信じて）、'be honest with yourself'（自分に正直になって）、'express yourself'（自己表現する）など、日常会話で頻出します。"
+      }
+    ]
+  },
+  {
+    "key": "indefinite_pronouns",
+    "name": "Indefinite Pronouns",
+    "description": "不定代名詞",
+    "iconName": "person.3",
+    "color": "#2dd4bf",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_ip1",
+        "question": "_____ wants to be happy.",
+        "translation": "(みんな幸せになりたいです)",
+        "options": [
+          "Everyone",
+          "All",
+          "Anyone",
+          "People"
+        ],
+        "correct": "Everyone",
+        "explanation": "'everyone'は「全員、みんな」を意味する不定代名詞です。重要ポイント：意味は複数ですが、文法的には三人称単数扱いです。そのため'wants'（三単現のs付き）を使います。'Everyone want'は誤りです。日本語の「みんな」は複数のイメージですが、英語の'everyone'は文法上は単数です。同様のルール：everybody, someone, somebody, anyone, anybody, no one, nobody も全て三人称単数扱い。この文法的な単数扱いは日本語話者にとって直感に反するため特に注意が必要です。"
+      },
+      {
+        "id": "je_ip2",
+        "question": "Is there _____ I can help you with?",
+        "translation": "(何かお手伝いできることはありますか？)",
+        "options": [
+          "anything",
+          "something",
+          "nothing",
+          "everything"
+        ],
+        "correct": "anything",
+        "explanation": "'anything'は疑問文・否定文で使う「何か、何でも」を意味する不定代名詞です。肯定文では'something'を使います。'Is there anything...?'は相手にサービスを提供する丁寧な表現です。基本ルール：肯定文='something'、疑問文・否定文='anything'。ただし例外として、相手に何かを勧めるときは疑問文でも'something'を使います：'Would you like something to drink?'（何か飲みませんか？）。この使い分けは英語の重要な基礎ルールです。"
+      },
+      {
+        "id": "je_ip3",
+        "question": "There is _____ in the fridge. We need to go shopping.",
+        "translation": "(冷蔵庫には何もありません。買い物に行かなければ)",
+        "options": [
+          "nothing",
+          "anything",
+          "something",
+          "everything"
+        ],
+        "correct": "nothing",
+        "explanation": "'nothing'は「何もない」を意味する不定代名詞で、それ自体が否定を含みます。そのため'There is nothing'（何もない）で否定文になり、'There isn't nothing'（二重否定）は標準英語では誤りです。'nothing'='not anything'の関係を覚えましょう。'There is nothing in the fridge'='There isn't anything in the fridge'。日本語の「何もない」は否定形ですが、英語の'nothing'は肯定文の中で否定を作るという構造の違いに注意してください。"
+      },
+      {
+        "id": "je_ip4",
+        "question": "_____ called while you were out.",
+        "translation": "(あなたが外出中に誰かが電話してきました)",
+        "options": [
+          "Someone",
+          "Anyone",
+          "No one",
+          "Everyone"
+        ],
+        "correct": "Someone",
+        "explanation": "'someone'は肯定文で「誰か」を意味する不定代名詞です。'Someone called'は「誰かが電話した」で、特定できないが確かに誰かがいたことを示します。疑問文なら'Did anyone call?'、否定文なら'No one called'を使います。'someone'='somebody'でほぼ同じ意味です。'someone'は文語的、'somebody'は口語的な傾向がありますが、実際にはほぼ互換的に使われます。重要：文法的に単数扱いで'Someone called'（三単現のed形）です。"
+      },
+      {
+        "id": "je_ip5",
+        "question": "I looked everywhere but found _____.",
+        "translation": "(どこを探しても何も見つかりませんでした)",
+        "options": [
+          "nothing",
+          "something",
+          "anything",
+          "everything"
+        ],
+        "correct": "nothing",
+        "explanation": "'nothing'は「何もない」を意味し、文を否定にする力を持っています。'found nothing'は「何も見つからなかった」です。'found anything'に変えたい場合は否定語'didn't'が必要：'I didn't find anything'。どちらも同じ意味ですが、'found nothing'の方がやや文語的で力強い表現です。日本語では「何も見つからなかった」と否定形ですが、英語では'found nothing'のように肯定文型で否定を表現できる点が特徴的です。"
+      },
+      {
+        "id": "je_ip6",
+        "question": "Would you like _____ to drink?",
+        "translation": "(何か飲みませんか？)",
+        "options": [
+          "something",
+          "anything",
+          "nothing",
+          "everything"
+        ],
+        "correct": "something",
+        "explanation": "通常、疑問文では'anything'を使いますが、提案や申し出の疑問文では'something'を使います。'Would you like something to drink?'は「飲み物はいかがですか？」という丁寧な申し出です。'Yes'の答えを期待する疑問文では'something'を使うのがルールです。'Would you like anything?'でも通じますが、'something'の方がより温かみのある提案になります。この例外ルールは接客英語やおもてなしの場面で非常に重要です。"
+      },
+      {
+        "id": "je_ip7",
+        "question": "_____ of the students passed the exam.",
+        "translation": "(全員の学生が試験に合格しました)",
+        "options": [
+          "All",
+          "Every",
+          "Each",
+          "Everyone"
+        ],
+        "correct": "All",
+        "explanation": "'all of the students'は「全員の学生」を意味します。'all'は後に'of the＋複数名詞'が続く構造で使えます。'every'は'of'構造では使えません。'Every student'（各学生＝単数扱い）と'All students'（全学生＝複数扱い）の違いに注意してください。'All of the students passed'は複数形動詞'passed'を使います。一方、'Every student passed'は単数扱いです。'all', 'every', 'each'の微妙な違いを理解することが中級英語への重要なステップです。"
+      },
+      {
+        "id": "je_ip8",
+        "question": "_____ of us knows the answer.",
+        "translation": "(私たちの誰もその答えを知りません)",
+        "options": [
+          "None",
+          "No",
+          "Not",
+          "Nothing"
+        ],
+        "correct": "None",
+        "explanation": "'none'は「誰も〜ない」「何も〜ない」を意味する不定代名詞です。'None of us knows'は「私たちの誰も知らない」です。'none'は可算名詞にも不可算名詞にも使えます。文法的には単数扱い（none = not one）が正式ですが、口語では複数扱いも一般的です：'None of them know'。'no'は形容詞で名詞の前に置きます（'No student passed'）、'none'は代名詞で単独で使います。この使い分けは重要な文法ポイントです。"
+      },
+      {
+        "id": "je_ip9",
+        "question": "_____ can learn a foreign language with enough practice.",
+        "translation": "(十分な練習があれば誰でも外国語を学べます)",
+        "options": [
+          "Anyone",
+          "Someone",
+          "No one",
+          "Everyone"
+        ],
+        "correct": "Anyone",
+        "explanation": "'anyone'は肯定文で「誰でも」という意味で使われることがあります。これは疑問文・否定文での「誰か」とは異なる用法です。'Anyone can learn'は「誰でも学べる」という一般的な可能性を表します。'any-'系の単語は肯定文では「〜でも」という意味になります：'anything is possible'（何でも可能）、'anywhere is fine'（どこでもいい）。日本語の「誰でも」「何でも」「どこでも」に対応する使い方です。"
+      },
+      {
+        "id": "je_ip10",
+        "question": "I'll go _____ you go.",
+        "translation": "(あなたが行くところならどこでも行きます)",
+        "options": [
+          "wherever",
+          "everywhere",
+          "anywhere",
+          "somewhere"
+        ],
+        "correct": "wherever",
+        "explanation": "'wherever'は「〜するところはどこでも」を意味する関係副詞です。厳密には不定代名詞ではありませんが、不定の場所を表す重要語です。'wherever you go'は「あなたがどこに行こうとも」です。'wherever' = 'no matter where'（どこであろうと）。同様のパターン：'whatever'（何でも）、'whenever'（いつでも）、'whoever'（誰でも）。これらは接続詞として二つの節をつなぐ役割を果たし、英語の複文構造の基礎をなす重要な語群です。"
+      },
+      {
+        "id": "je_ip11",
+        "question": "_____ is here yet. We're too early.",
+        "translation": "(まだ誰もいません。早すぎました)",
+        "options": [
+          "Nobody",
+          "Anybody",
+          "Somebody",
+          "Everybody"
+        ],
+        "correct": "Nobody",
+        "explanation": "'nobody'は「誰もいない」を意味する不定代名詞で、'no one'と同義です。'Nobody is here'は「誰もここにいない」で、'nobody'自体が否定を含むため'isn't'は不要です。'Nobody isn't here'は二重否定で誤りです。'nobody' = 'not anybody'の関係を理解しましょう。文法的に単数扱いなので'Nobody is'（are ではない）です。'nobody'と'no one'はほぼ同じですが、'nobody'はやや口語的、'no one'はやや文語的な傾向があります。"
+      },
+      {
+        "id": "je_ip12",
+        "question": "There's _____ wrong with my computer.",
+        "translation": "(パソコンに何か問題があります)",
+        "options": [
+          "something",
+          "anything",
+          "nothing",
+          "everything"
+        ],
+        "correct": "something",
+        "explanation": "肯定文で「何か」を表すには'something'を使います。'There's something wrong'は「何か問題がある」という日常的な表現です。'something' + 形容詞の語順に注意してください。'something wrong'（何か問題のあること）='wrong something'とはなりません。不定代名詞を修飾する形容詞は後ろに置きます：'something important'（何か重要なこと）、'nothing special'（特別なことは何もない）、'anyone interested'（興味のある人は誰か）。"
+      },
+      {
+        "id": "je_ip13",
+        "question": "_____ student must wear a uniform.",
+        "translation": "(すべての学生が制服を着なければなりません)",
+        "options": [
+          "Every",
+          "All",
+          "Any",
+          "Each"
+        ],
+        "correct": "Every",
+        "explanation": "'every'は「すべての」を意味しますが、'all'とは異なり後に単数名詞が来ます。'Every student'（すべての学生＝各個人を強調）vs 'All students'（全学生＝集団として）。'every'は個々を意識した「すべて」で、単数扱いです。'Every student must wear'（三人称単数 ）。'each'も似ていますが、'each'はより個別性を強調します。'every'は全体の網羅性、'each'は一人一人の個別性を表します。この微妙な違いを理解することが上級英語への道です。"
+      },
+      {
+        "id": "je_ip14",
+        "question": "I have _____ to tell you.",
+        "translation": "(あなたに言わなければならないことがあります)",
+        "options": [
+          "something",
+          "anything",
+          "nothing",
+          "everything"
+        ],
+        "correct": "something",
+        "explanation": "'something to tell you'は「あなたに言うべき何か」を意味します。不定代名詞＋to不定詞のパターンです。'something to do'（何かすること）、'nothing to eat'（食べるものが何もない）、'anywhere to go'（行く場所）のように使います。この構造は日常会話で極めて頻繁に現れます。日本語の「何か〜するもの」に対応し、簡潔で自然な英語表現を作れます。'I have something important to tell you'のように形容詞も挿入できます。"
+      },
+      {
+        "id": "je_ip15",
+        "question": "She didn't say _____ about the meeting.",
+        "translation": "(彼女は会議について何も言いませんでした)",
+        "options": [
+          "anything",
+          "something",
+          "nothing",
+          "everything"
+        ],
+        "correct": "anything",
+        "explanation": "否定文では'anything'を使い、'didn't say anything'で「何も言わなかった」を表します。'She said nothing'と同じ意味ですが、構造が異なります。否定の動詞（didn't）＋'anything' = 肯定の動詞＋'nothing'。どちらも正しいですが、'didn't say anything'は口語的で自然、'said nothing'はやや文語的で強調的です。'something'は否定文では通常使いません（'She didn't say something'は不自然）。否定文='any-'系という基本ルールを確実に身につけましょう。"
+      }
+    ]
   }
 ]
