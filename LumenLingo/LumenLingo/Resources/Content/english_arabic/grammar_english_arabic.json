@@ -19113,5 +19113,1335 @@
         "explanation": "وَرَعَاكُم (and He cared for you — past tense used as prayer/دُعَاء). حَفِظَكُم (He protected you — also prayer form). اللهُ (God — nominative فاعل shared between both verbs). These past-tense verbs function as wishes/prayers (الماضي الدُّعَائِيّ): the past tense expresses certainty of the wish. Formal letter closing prayers: حَفِظَكُم اللهُ وَرَعَاكُم (may God protect and care for you), أَطالَ اللهُ بَقَاءَكُم (may God prolong your life), أَدَامَ اللهُ عِزَّكُم (may God perpetuate your honor). These are culturally essential in Arabic formal communication."
       }
     ]
+  },
+  {
+    "key": "coordinating_conjunctions_advanced",
+    "name": "Advanced Coordinating Conjunctions (حروف العطف المتقدمة)",
+    "description": "Master the full range of Arabic coordinating conjunctions and their nuanced usage",
+    "iconName": "link",
+    "color": "#6366f1",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ea_cca1",
+        "question": "جَاءَ مُحَمَّدٌ _____ عَلِيٌّ مَعًا (Muhammad and Ali came together)",
+        "options": [
+          "وَ",
+          "فَ",
+          "ثُمَّ",
+          "أَو"
+        ],
+        "correct": "وَ",
+        "explanation": "وَ (and) is the most fundamental coordinating conjunction (حرف عطف) in Arabic, indicating simple connection without implying order or sequence. It joins two nouns, verbs, or sentences. Here, عَلِيٌّ follows مُحَمَّدٌ in nominative because the معطوف (conjoined element) takes the same case as the معطوف عليه (the element it joins). مَعًا (together) confirms simultaneity. وَ is distinct from فَ (then/so) and ثُمَّ (then, with delay)."
+      },
+      {
+        "id": "ea_cca2",
+        "question": "دَخَلَ الطُّلَّابُ _____ جَلَسوا فَورًا (The students entered and immediately sat down)",
+        "options": [
+          "فَ",
+          "وَ",
+          "ثُمَّ",
+          "أَم"
+        ],
+        "correct": "فَ",
+        "explanation": "فَ (then/so, immediately after) indicates quick succession — the sitting followed the entering without delay. This is the key distinction from وَ (simple conjunction) and ثُمَّ (delayed sequence). فَ also carries a causal or consequential nuance: because they entered, they sat. فَورًا (immediately) reinforces the speed. In Arabic grammar, فَ is called حرف عطف يفيد الترتيب والتعقيب — it shows ordered sequence with immediate follow-up. This conjunction is critical for narrative Arabic."
+      },
+      {
+        "id": "ea_cca3",
+        "question": "أَكَلنَا الطَّعَامَ _____ شَرِبنَا القَهوَةَ (We ate the food then [after a while] drank coffee)",
+        "options": [
+          "ثُمَّ",
+          "فَ",
+          "وَ",
+          "أَو"
+        ],
+        "correct": "ثُمَّ",
+        "explanation": "ثُمَّ (then, after a delay) indicates sequential order with a gap in time — they ate first, then after some time, they had coffee. Compare: فَ would imply immediate succession, وَ would imply no particular order. ثُمَّ is called حرف عطف يفيد الترتيب والتراخي — ordered sequence WITH delay. This is one of Arabic's most important temporal distinctions that doesn't exist in English. The three form a hierarchy: وَ (no order), فَ (ordered + immediate), ثُمَّ (ordered + delayed)."
+      },
+      {
+        "id": "ea_cca4",
+        "question": "هَل تُريدُ شَايًا _____ قَهوَةً؟ (Do you want tea or coffee?)",
+        "options": [
+          "أَم",
+          "أَو",
+          "وَ",
+          "فَ"
+        ],
+        "correct": "أَم",
+        "explanation": "أَم (or — in questions offering two specific choices) is used after هَل or أَ to present mutually exclusive options. This is different from أَو (or — in statements or open questions). أَم is called مُتَّصِلَة (connected) because it connects two specified alternatives in a question. Compare: أَتُريدُ شَايًا أَم قَهوَةً؟ (tea OR coffee — choose one) vs. هَل تُريدُ شَايًا أَو شَيئًا آخَرَ؟ (tea or something else — open). The أَم/أَو distinction is a hallmark of precise Arabic expression."
+      },
+      {
+        "id": "ea_cca5",
+        "question": "اِقرَأ كِتابًا _____ مَقالَةً (Read a book or an article)",
+        "options": [
+          "أَو",
+          "أَم",
+          "وَ",
+          "لَكِن"
+        ],
+        "correct": "أَو",
+        "explanation": "أَو (or — in statements/non-exclusive) appears in non-interrogative contexts or when the choice is open/non-exclusive. Here it's an imperative suggestion — either option is fine. أَو can mean: التَّخيير (choice: اِجلِس أَو قِف — sit or stand), الإِباحَة (permission: كُل تُفَّاحًا أَو بُرتُقالًا — eat apple or orange, both OK), الشَّكّ (doubt: جَاءَ زَيدٌ أَو عَمرٌ — Zayd or Amr came, I'm not sure which). Context determines which meaning applies."
+      },
+      {
+        "id": "ea_cca6",
+        "question": "الجَوُّ جَميلٌ _____ بَارِدٌ (The weather is beautiful but cold)",
+        "options": [
+          "لَكِنَّ",
+          "وَ",
+          "فَ",
+          "ثُمَّ"
+        ],
+        "correct": "لَكِنَّ",
+        "explanation": "لَكِنَّ (but/however) is an adversative conjunction showing contrast — the weather is beautiful, contrary to what you might expect, it's cold. لَكِنَّ is one of إِنَّ وَأَخَوَاتُها (إنّ and its sisters), so technically it puts its subject in accusative. But in this sentence it functions as a light conjunction لَكِنْ (with sukūn, not شدّة) connecting two predicates. The heavier لَكِنَّ introduces a full clause: الجَوُّ جَميلٌ لَكِنَّ البَردَ شَديدٌ. Adversative conjunctions add sophistication to Arabic expression."
+      },
+      {
+        "id": "ea_cca7",
+        "question": "مَا جَاءَ زَيدٌ _____ عَمرٌو (Not Zayd came, but rather Amr)",
+        "options": [
+          "بَل",
+          "لَكِن",
+          "وَ",
+          "فَ"
+        ],
+        "correct": "بَل",
+        "explanation": "بَل (rather/but instead) is a corrective conjunction — it negates or replaces what came before. After negation (مَا جَاءَ زَيدٌ), بَل corrects: 'not Zayd, but Amr.' After affirmative: جَاءَ زَيدٌ بَل عَمرٌو means 'Zayd came — no, rather Amr came' (retracting the first statement). بَل is called حرف إِضراب (retraction particle). It's stronger than لَكِن because it completely replaces rather than merely contrasts. عَمرٌو takes nominative matching the معطوف عليه زَيدٌ."
+      },
+      {
+        "id": "ea_cca8",
+        "question": "نَجَحَ الطَّالِبُ _____ اجتَهَدَ كَثيرًا (The student succeeded because he worked hard)",
+        "options": [
+          "إِذ",
+          "وَ",
+          "ثُمَّ",
+          "أَو"
+        ],
+        "correct": "إِذ",
+        "explanation": "إِذ (since/because/when) is a causal-temporal conjunction that can explain why something happened. Here it gives the reason: he succeeded BECAUSE he worked hard. إِذ can also be temporal: كُنتُ سَعيدًا إِذ رَأَيتُهُ (I was happy when I saw him). It's a ظرف زمان مَبنيّ (indeclinable time adverb) that often carries causal force. The sentence after إِذ provides the explanation or temporal backdrop. اجتَهَدَ (he strived, Form VIII) shows the effort that led to success."
+      },
+      {
+        "id": "ea_cca9",
+        "question": "لا تَأكُل كَثيرًا _____ تَمرَضَ (Don't eat too much lest you get sick)",
+        "options": [
+          "فَ",
+          "وَ",
+          "ثُمَّ",
+          "أَو"
+        ],
+        "correct": "فَ",
+        "explanation": "فَ here is فَاءُ السَّبَبِيَّة (the فَ of causality/consequence) — after a negative imperative, it introduces the subjunctive verb indicating the feared consequence. تَمرَضَ is subjunctive (fatḥa ending) because فَ after a request/prohibition + أَن (implied) triggers subjunctive. This is different from فَ العاطِفة (conjunctive فَ). Arabic has multiple types of فَ: فَ العاطِفة (sequential), فَ السَّبَبِيَّة (causal), فَ الفَصيحَة (explanatory), and فَ الجَزاء (conditional response)."
+      },
+      {
+        "id": "ea_cca10",
+        "question": "جَاءَ الأُستَاذُ وَ_____ المُديرُ (The teacher came and also the principal)",
+        "options": [
+          "كَذَلِكَ",
+          "أَيضًا",
+          "لَكِن",
+          "بَل"
+        ],
+        "correct": "كَذَلِكَ",
+        "explanation": "كَذَلِكَ (likewise/also) reinforces the conjunction وَ to emphasize that the principal ALSO came. While وَ alone would suffice, كَذَلِكَ adds emphasis meaning 'and likewise.' Arabic has several emphatic addition words: كَذَلِكَ (likewise), أَيضًا (also — adverbial), بِالإِضافَةِ إِلى (in addition to), فَضلًا عَن (moreover). كَذَلِكَ literally means 'like that' (كَ + ذَلِكَ). المُديرُ takes nominative matching الأُستَاذُ as the conjoined element through واو العطف."
+      },
+      {
+        "id": "ea_cca11",
+        "question": "سَأُسافِرُ غَدًا _____ بَعدَ غَدٍ (I will travel tomorrow or the day after)",
+        "options": [
+          "أَو",
+          "وَ",
+          "فَ",
+          "أَم"
+        ],
+        "correct": "أَو",
+        "explanation": "أَو (or) is used in this declarative statement expressing uncertainty about timing. The speaker doesn't know the exact day. This is أَو للشَّكّ (or of doubt). Compare with أَم which requires a preceding interrogative particle. أَو connects two ظرف زمان (time adverbs): غَدًا and بَعدَ غَدٍ. بَعدَ غَدٍ (the day after tomorrow — literally 'after tomorrow') is an idāfa construction. In casual Arabic, أَو is the default 'or' — أَم is reserved specifically for disjunctive questions."
+      },
+      {
+        "id": "ea_cca12",
+        "question": "نَامَ الطِّفلُ _____ بَكَى كَثيرًا (The child slept after he cried a lot)",
+        "options": [
+          "بَعدَما",
+          "فَ",
+          "وَ",
+          "ثُمَّ"
+        ],
+        "correct": "بَعدَما",
+        "explanation": "بَعدَما (after — temporal conjunction) connects two clauses where the first action (sleeping) follows the second (crying). بَعدَما = بَعدَ + ما (the masdariyya ما that turns a verb into a masdar). Similar compound conjunctions: قَبلَما (before), عِندَما (when), بَينَما (while), حينَما (when). These are technically ظرف + ما المصدرية. Unlike ثُمَّ which coordinates, بَعدَما subordinates — making the crying clause dependent. This distinction between coordination and subordination is essential in advanced Arabic."
+      },
+      {
+        "id": "ea_cca13",
+        "question": "لا أُريدُ لا شَايًا _____ قَهوَةً (I want neither tea nor coffee)",
+        "options": [
+          "وَلا",
+          "وَ",
+          "أَو",
+          "أَم"
+        ],
+        "correct": "وَلا",
+        "explanation": "وَلا (nor/and not) creates a negative coordination: neither X nor Y. The structure لا...وَلا mirrors English 'neither...nor.' Both nouns take accusative as objects of أُريدُ. وَلا is the negative counterpart of وَ — it's a conjunction (واو العطف) combined with لا النَّافِيَة. Other negative correlation patterns: لَم...وَلَم (didn't...and didn't), لَن...وَلَن (won't...and won't). Arabic uses this double negation for emphatic denial, common in formal and literary Arabic."
+      },
+      {
+        "id": "ea_cca14",
+        "question": "اِجتَهِد في دِراسَتِكَ _____ تَنجَحَ (Study hard so that you succeed)",
+        "options": [
+          "لِ",
+          "فَ",
+          "وَ",
+          "ثُمَّ"
+        ],
+        "correct": "لِ",
+        "explanation": "لِ (so that/in order to) is لام التَّعليل (the lām of purpose/cause) followed by the subjunctive: تَنجَحَ (you succeed, subjunctive with fatḥa). This is different from لام الأمر (imperative lām: لِيَذهَبْ — let him go, jussive). The purpose lām answers 'why?' — study hard WHY? So that you succeed. Other purpose particles: كَي (so that), لِكَي (in order that), حَتَّى (until/so that). All trigger the subjunctive mood. This purpose construction is fundamental for expressing goals and intentions."
+      },
+      {
+        "id": "ea_cca15",
+        "question": "حَضَرَ جَميعُ الطُّلَّابِ _____ طَالِبًا وَاحِدًا (All students attended except one student)",
+        "options": [
+          "إِلَّا",
+          "وَ",
+          "بَل",
+          "حَتَّى"
+        ],
+        "correct": "إِلَّا",
+        "explanation": "إِلَّا (except) is the primary exception particle in Arabic. After a complete affirmative sentence, the excepted noun (المُستَثنَى) takes accusative: طَالِبًا وَاحِدًا. This is الاستِثناء التَّامّ المُوجَب (complete affirmative exception). Compare: مَا حَضَرَ أَحَدٌ إِلَّا طَالِبٌ (no one attended except a student — after negation, the excepted can follow the case of the مُستَثنَى مِنه). Other exception words: غَير, سِوَى, عَدَا, خَلَا, حَاشَا. Exception is a rich grammar topic in Arabic."
+      }
+    ]
+  },
+  {
+    "key": "subordinating_conjunctions",
+    "name": "Subordinating Conjunctions (أدوات الربط التابعة)",
+    "description": "Arabic subordinating conjunctions that create dependent clauses and complex sentences",
+    "iconName": "arrow.triangle.branch",
+    "color": "#8b5cf6",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ea_sc1",
+        "question": "سَأَنتَظِرُ _____ تَعودَ (I will wait until you return)",
+        "options": [
+          "حَتَّى",
+          "وَ",
+          "فَ",
+          "ثُمَّ"
+        ],
+        "correct": "حَتَّى",
+        "explanation": "حَتَّى (until/so that) is a subordinating conjunction that triggers the subjunctive: تَعودَ (you return, subjunctive with fatḥa). حَتَّى has three functions: 1) غاية (endpoint): سِرتُ حَتَّى المَدينَةِ (I walked until the city — preposition + genitive), 2) تَعليل (purpose): اِجتَهِدْ حَتَّى تَنجَحَ (study hard so you succeed — + subjunctive), 3) عاطِفة (conjunction — rare). Here it's temporal/purposive. The subjunctive after حَتَّى shows futurity and intent."
+      },
+      {
+        "id": "ea_sc2",
+        "question": "_____ جَاءَ المُعَلِّمُ سَكَتَ الطُّلَّابُ (When the teacher came, the students fell silent)",
+        "options": [
+          "لَمَّا",
+          "إِذا",
+          "لَو",
+          "مَا"
+        ],
+        "correct": "لَمَّا",
+        "explanation": "لَمَّا (when — for past events) introduces a temporal clause describing a specific past occurrence. Unlike إِذا (when/if — for future or habitual), لَمَّا is exclusively for completed past actions. لَمَّا + past tense + past tense is the pattern: لَمَّا وَصَلَ هَطَلَ المَطَرُ (when he arrived, rain fell). لَمَّا is called ظرف زمان for past events. It's different from لَمَّا النَّافِيَة (لَم + مَا = hasn't yet): لَمَّا يَصِل (he hasn't arrived yet). Context distinguishes the two."
+      },
+      {
+        "id": "ea_sc3",
+        "question": "_____ تَدرُسْ تَنجَحْ (If you study, you will succeed)",
+        "options": [
+          "إِن",
+          "إِذا",
+          "لَو",
+          "لَمَّا"
+        ],
+        "correct": "إِن",
+        "explanation": "إِن (if — conditional particle) is a جازِمَة (jussive-triggering particle) that puts BOTH the condition verb and the response verb in jussive: تَدرُسْ (sukūn) and تَنجَحْ (sukūn). إِن is the primary conditional particle for real/possible conditions. Compare: إِذا (when/if — takes past tense, more certain), لَو (if — counterfactual/impossible conditions, takes past tense). The jussive mood after إِن is a hallmark of classical Arabic grammar and appears in formal/literary Arabic and the Quran."
+      },
+      {
+        "id": "ea_sc4",
+        "question": "_____ كُنتُ مَكانَكَ لَفَعَلتُ ذَلِكَ (If I were in your place, I would have done that)",
+        "options": [
+          "لَو",
+          "إِن",
+          "إِذا",
+          "لَمَّا"
+        ],
+        "correct": "لَو",
+        "explanation": "لَو (if — counterfactual) introduces impossible or hypothetical conditions about the past or present. لَو + past tense + لَ + past tense is the pattern. كُنتُ مَكانَكَ (I were in your place) is unreal — the speaker ISN'T in that place. لَفَعَلتُ (I would have done) — the لَ is called لام الجواب (response lām). لَو is distinct from إِن (real/possible conditions) and إِذا (certain/expected conditions). لَو never implies the condition might be true, making it perfect for regret, wishes, and hypotheticals."
+      },
+      {
+        "id": "ea_sc5",
+        "question": "أُحِبُّ العَرَبِيَّةَ _____ لُغَةً جَميلَةً (I love Arabic because it is a beautiful language)",
+        "options": [
+          "لِأَنَّها",
+          "وَ",
+          "فَ",
+          "بَل"
+        ],
+        "correct": "لِأَنَّها",
+        "explanation": "لِأَنَّها (because it is) combines لِ (for/because) + أَنَّ (that — one of إنّ's sisters) + ها (it/she). أَنَّ puts its subject in accusative — here the pronoun suffix ها serves as the subject. لُغَةً جَميلَةً (a beautiful language) is the خبر of أَنَّ in accusative. Causal subordinators: لِأَنَّ (because), بِسَبَبِ (because of), نَظَرًا لِ (given that), بِمَا أَنَّ (since). لِأَنَّ is the most common way to express cause in Modern Standard Arabic."
+      },
+      {
+        "id": "ea_sc6",
+        "question": "_____ كَانَ الأَمرُ صَعبًا فَلَن نَستَسلِمَ (Even though the matter is difficult, we will not give up)",
+        "options": [
+          "مَهمَا",
+          "لَو",
+          "إِذا",
+          "حَتَّى"
+        ],
+        "correct": "مَهمَا",
+        "explanation": "مَهمَا (whatever/no matter what/even though) is a concessive-conditional particle. مَهمَا كَانَ الأَمرُ (whatever the matter may be) creates a concessive clause: regardless of difficulty, we won't surrender. مَهمَا is classified as اسم شرط جازم (conditional noun triggering jussive) but here with كَان it takes past tense. فَلَن (then will not) — the فَ is فاء الجزاء (response فَ). نَستَسلِمَ (we surrender, Form X: اِستَسلَمَ) is subjunctive after لَن. Concessive structures add rhetorical power."
+      },
+      {
+        "id": "ea_sc7",
+        "question": "لَن أَخرُجَ _____ يَتَوَقَّفَ المَطَرُ (I won't go out until the rain stops)",
+        "options": [
+          "حَتَّى",
+          "وَ",
+          "فَ",
+          "ثُمَّ"
+        ],
+        "correct": "حَتَّى",
+        "explanation": "حَتَّى (until) here introduces a temporal endpoint — the going-out depends on the rain stopping. يَتَوَقَّفَ (it stops, Form V) is subjunctive after حَتَّى (fatḥa ending). The negative لَن + present = 'will not' in the main clause. حَتَّى + subjunctive always points to a future/anticipated event. Compare with حَتَّى + past tense (indicative): مَشَيتُ حَتَّى وَصَلتُ (I walked until I arrived — completed). This temporal subordination creates sophisticated sentence structures essential for fluent Arabic."
+      },
+      {
+        "id": "ea_sc8",
+        "question": "_____ دَرَستَ بِجِدٍّ حَصَلتَ عَلى نَتيجَةٍ جَيِّدَةٍ (Whenever you study seriously, you get a good result)",
+        "options": [
+          "كُلَّما",
+          "إِذا",
+          "لَو",
+          "إِن"
+        ],
+        "correct": "كُلَّما",
+        "explanation": "كُلَّما (whenever/every time that) introduces a repeated temporal-conditional clause. كُلَّ (every) + ما (what/that) creates an iterative conjunction: every time X happens, Y follows. Both verbs are in past tense (habitual past). كُلَّما is accusative as ظرف زمان (time adverb). بِجِدٍّ (seriously — with seriousness) uses بِ + masdar. حَصَلتَ عَلى (you obtained/got) takes عَلى for its complement. كُلَّما is indispensable for expressing habitual correlations and repeated patterns in Arabic."
+      },
+      {
+        "id": "ea_sc9",
+        "question": "تَعَلَّمتُ العَرَبِيَّةَ _____ أُسافِرَ إِلى مِصرَ (I learned Arabic in order to travel to Egypt)",
+        "options": [
+          "لِكَي",
+          "وَ",
+          "فَ",
+          "بَل"
+        ],
+        "correct": "لِكَي",
+        "explanation": "لِكَي (in order to/so that) is a purpose conjunction triggering the subjunctive: أُسافِرَ (I travel, subjunctive with fatḥa). لِكَي = لِ (for) + كَي (that/so that) — both purpose particles combined for emphasis. Purpose particles in Arabic: لِ (to), كَي (so that), لِكَي (in order to), لِأَجلِ أَن (for the sake of). All require the subjunctive verb. مِصرَ (Egypt) is diptote (no tanwīn, genitive with fatḥa). Purpose clauses are subordinate — they depend on the main clause."
+      },
+      {
+        "id": "ea_sc10",
+        "question": "سَأُساعِدُكَ _____ أَنَّكَ صَديقي (I will help you since you are my friend)",
+        "options": [
+          "بِمَا أَنَّ",
+          "وَ",
+          "فَ",
+          "ثُمَّ"
+        ],
+        "correct": "بِمَا أَنَّ",
+        "explanation": "بِمَا أَنَّ (since/given that) is a causal subordinator — stronger and more formal than لِأَنَّ. بِمَا = بِ + ما (by what), أَنَّ (that). The suffix كَ on أَنَّ is the accusative subject: أَنَّكَ (that you are). صَديقي (my friend) is the خبر of أَنَّ. Other formal causal expressions: نَظَرًا لِكَونِ (given that), بِالنَّظَرِ إِلى أَنَّ (considering that), مِن حَيثُ أَنَّ (in that). These elevated causal forms appear in academic writing, journalism, and formal speech."
+      },
+      {
+        "id": "ea_sc11",
+        "question": "_____ ذَهَبتَ فَأَنَا مَعَكَ (Wherever you go, I am with you)",
+        "options": [
+          "أَينَما",
+          "إِذا",
+          "لَو",
+          "حَتَّى"
+        ],
+        "correct": "أَينَما",
+        "explanation": "أَينَما (wherever) is a conditional adverb of place using ما الشرطية (conditional ما added to أَينَ). It creates a spatial condition: in ANY place you go. أَينَما is a جازِم (jussive trigger) but with past tense here, the jussive is not visible. فَأَنَا مَعَكَ (then I am with you) — فَ is فاء الجزاء (response فَ, required when the response is a nominal sentence). Other conditional adverbs: حَيثُما (wherever), مَتَى (whenever), كَيفَما (however). They combine question words with ما for universality."
+      },
+      {
+        "id": "ea_sc12",
+        "question": "أَخبِرني _____ تَنتَهي (Tell me when you finish)",
+        "options": [
+          "مَتَى",
+          "لَمَّا",
+          "لَو",
+          "بَل"
+        ],
+        "correct": "مَتَى",
+        "explanation": "مَتَى (when) here functions as an indirect question word introducing a noun clause: 'tell me WHEN you finish.' مَتَى has dual roles: 1) interrogative (مَتَى تَعودُ؟ — when do you return?), 2) conditional (مَتَى تَدرُسْ تَنجَحْ — whenever you study, you succeed — jussive). Here it's an interrogative in indirect speech. تَنتَهي (you finish, Form VIII) is indicative since it's a reported question, not a conditional. Arabic indirect questions keep the question word but change intonation."
+      },
+      {
+        "id": "ea_sc13",
+        "question": "سَأَبقَى هُنَا _____ تَأتي (I will stay here while/as long as you come)",
+        "options": [
+          "مَا دَامَ",
+          "حَتَّى",
+          "لَو",
+          "إِن"
+        ],
+        "correct": "مَا دَامَ",
+        "explanation": "مَا دَامَ (as long as/while) introduces a conditional-temporal clause. مَا here is مَا المَصدَرِيَّة الظَّرفِيَّة (masdariyya/adverbial ما) — it turns the verb into a time expression. دَامَ (it lasted/continued) is one of كَانَ's sisters (الأَفعال النَّاقِصة): its subject is nominative, predicate accusative. But after ما المصدرية, the whole مَا دَامَ clause functions as a time adverb. This is a deeply grammatical construction showing how Arabic creates temporal clauses from incomplete verbs."
+      },
+      {
+        "id": "ea_sc14",
+        "question": "لا أُحِبُّ هَذا المَكانَ _____ أَنَّهُ مُزعِجٌ (I don't like this place because it is noisy)",
+        "options": [
+          "لِ",
+          "وَ",
+          "فَ",
+          "بَل"
+        ],
+        "correct": "لِ",
+        "explanation": "لِ (because/for — causal preposition) followed by أَنَّ creates a causal clause: لِأَنَّهُ (because it is). أَنَّهُ = أَنَّ + هُ (pronoun suffix as subject of أَنَّ). مُزعِجٌ (noisy/annoying, active participle of Form IV أَزعَجَ) is the خبر of أَنَّ in nominative. This لِ is لام التَّعليل (lām of reasoning/cause). It can combine with: أَنَّ (لِأَنَّ — because), كَي (لِكَي — in order to), أَجل (لِأَجلِ — for the sake of). The causal لِ is one of Arabic's most frequent subordinating elements."
+      },
+      {
+        "id": "ea_sc15",
+        "question": "_____ أَنَّكَ مَريضٌ اِبقَ في البَيتِ (Since you are sick, stay at home)",
+        "options": [
+          "بِمَا",
+          "إذ",
+          "لَو",
+          "مَهمَا"
+        ],
+        "correct": "بِمَا",
+        "explanation": "بِمَا (since/given that) + أَنَّ creates the causal conjunction بِمَا أَنَّ. أَنَّكَ مَريضٌ = أَنَّ + كَ (your being sick) — the clause functions as the causal premise. اِبقَ (stay!, imperative of بَقِيَ — defective verb, the final ي drops in imperative). في البَيتِ (at home) is locative. بِمَا أَنَّ is more formal than لِأَنَّ and appears at sentence beginnings for greater rhetorical effect. It implies 'given the established fact that...' — suggesting the reason is undeniable and well-known."
+      }
+    ]
+  },
+  {
+    "key": "false_friends",
+    "name": "False Friends (الأصدقاء الزائفون)",
+    "description": "Arabic words that look or sound similar but have different meanings — common traps for learners",
+    "iconName": "exclamationmark.triangle.fill",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ea_ff1",
+        "question": "الوَلَدُ _____ الكِتابَ بِاهتِمامٍ (The boy read the book with interest)",
+        "options": [
+          "قَرَأَ",
+          "قَرَّرَ",
+          "قَارَنَ",
+          "قَرَعَ"
+        ],
+        "correct": "قَرَأَ",
+        "explanation": "قَرَأَ (he read) vs. قَرَّرَ (he decided, Form II) vs. قَارَنَ (he compared, Form III) vs. قَرَعَ (he knocked). All share some letters but have completely different meanings. قَرَأَ is Form I from root ق-ر-أ (reading). قَرَّرَ is Form II from ق-ر-ر (decision/settling) — the doubled middle letter changes meaning entirely. بِاهتِمامٍ (with interest/care) uses بِ + masdar of Form VIII اِهتَمَّ (to be interested). Distinguishing similar-sounding roots is crucial for accurate Arabic comprehension."
+      },
+      {
+        "id": "ea_ff2",
+        "question": "_____ الرَّجُلُ مِنَ الحُفرَةِ (The man came out of the hole)",
+        "options": [
+          "خَرَجَ",
+          "خَرَّجَ",
+          "أَخرَجَ",
+          "خَرِجَ"
+        ],
+        "correct": "خَرَجَ",
+        "explanation": "خَرَجَ (he went out, intransitive) vs. خَرَّجَ (he graduated/trained someone, Form II transitive) vs. أَخرَجَ (he took out/extracted, Form IV transitive). The same root خ-ر-ج produces radically different meanings across verb forms. خَرَجَ مِن (went out from) is intransitive — the man moved himself. أَخرَجَ الشَّيءَ (took out the thing) is transitive — someone moved something. خَرَّجَ الطُّلَّابَ (graduated the students). This demonstrates how Arabic verb forms systematically modify base meanings."
+      },
+      {
+        "id": "ea_ff3",
+        "question": "_____ صَوتٌ غَريبٌ مِنَ الخَارِجِ (A strange sound was heard from outside)",
+        "options": [
+          "سُمِعَ",
+          "سَمِعَ",
+          "سَمَّعَ",
+          "اِستَمَعَ"
+        ],
+        "correct": "سُمِعَ",
+        "explanation": "سُمِعَ (was heard — passive voice) vs. سَمِعَ (he heard — active Form I) vs. سَمَّعَ (he made someone hear — Form II causative) vs. اِستَمَعَ (he listened attentively — Form X). The passive سُمِعَ is needed because صَوتٌ (a sound) is the نائب فاعل (deputy subject) — sounds are heard, not hearing. The vowel pattern distinguishes active فَعِلَ from passive فُعِلَ. غَريبٌ (strange) agrees with صَوتٌ. من الخَارِجِ (from outside). These four forms of سمع are a classic false-friend set."
+      },
+      {
+        "id": "ea_ff4",
+        "question": "هَذا _____ مُفيدٌ لِلصِّحَّةِ (This food is beneficial for health)",
+        "options": [
+          "غِذاءٌ",
+          "غَذاءٌ",
+          "غَداءٌ",
+          "عَشاءٌ"
+        ],
+        "correct": "غِذاءٌ",
+        "explanation": "غِذاءٌ (nourishment/food — general) vs. غَداءٌ (lunch — midday meal). These two are classic false friends: غِذاء (with kasra on غ) means nutritious food/sustenance in general, while غَداء (with fatḥa on غ) means specifically lunch. The vowel difference is critical: غِ vs. غَ. عَشاءٌ (dinner) is a third meal word. مُفيدٌ (beneficial, active participle of Form IV أَفادَ) modifies the food. لِلصِّحَّةِ (for health) uses لِ + genitive. Vowel precision in Arabic is meaning-critical."
+      },
+      {
+        "id": "ea_ff5",
+        "question": "_____ الأُستاذُ الدَّرسَ لِلطُّلَّابِ (The teacher explained the lesson to the students)",
+        "options": [
+          "شَرَحَ",
+          "سَرَحَ",
+          "صَرَحَ",
+          "فَرَحَ"
+        ],
+        "correct": "شَرَحَ",
+        "explanation": "شَرَحَ (he explained) vs. سَرَحَ (he wandered/daydreamed) vs. صَرَحَ (he declared openly) vs. فَرَحَ (he rejoiced). These four verbs differ by their first letter only but have completely unrelated meanings. شَرَحَ is from root ش-ر-ح (explaining/opening), سَرَحَ from س-ر-ح (roaming), صَرَحَ from ص-ر-ح (being frank), فَرَحَ from ف-ر-ح (happiness). Arabic's root system means changing one consonant creates an entirely new word family. This is why precise pronunciation matters."
+      },
+      {
+        "id": "ea_ff6",
+        "question": "الطَّبيبُ _____ المَريضَ بِعِنايَةٍ (The doctor examined the patient carefully)",
+        "options": [
+          "فَحَصَ",
+          "فَحَشَ",
+          "فَخَصَ",
+          "فَخَرَ"
+        ],
+        "correct": "فَحَصَ",
+        "explanation": "فَحَصَ (he examined/inspected) vs. فَحَشَ — actually not a common verb, but فاحِش means obscene. فَخَرَ (he boasted/was proud). These consonant-swap pairs trap learners: ص and ش sound similar to non-native ears, as do خ and ح. فَحَصَ المَريضَ (examined the patient) is standard medical Arabic. بِعِنايَةٍ (with care) uses بِ + masdar. Arabic emphatic consonants (ص vs. س, ط vs. ت, ض vs. د, ظ vs. ذ) create meaning distinctions that must be mastered for clear communication."
+      },
+      {
+        "id": "ea_ff7",
+        "question": "لا تَخلِط بَينَ _____ وَالحَرامِ (Don't confuse the lawful and the forbidden)",
+        "options": [
+          "الحَلالِ",
+          "الحِلالِ",
+          "الهِلالِ",
+          "الجَلالِ"
+        ],
+        "correct": "الحَلالِ",
+        "explanation": "الحَلالِ (the lawful/permissible) vs. الهِلالِ (the crescent moon) vs. الجَلالِ (the majesty/grandeur). These words differ by one consonant or vowel but have drastically different meanings. حَلال (ح-ل-ل: to be lawful) vs. هِلال (ه-ل-ل: crescent/new moon) vs. جَلال (ج-ل-ل: majesty). لا تَخلِط (don't confuse) is a negative imperative. بَينَ...وَ (between...and) is the standard comparison structure. This set shows how Arabic's minimal pairs create distinct semantic fields from similar sounds."
+      },
+      {
+        "id": "ea_ff8",
+        "question": "_____ المُعَلِّمُ الطُّلَّابَ مِن أَخطائِهِم (The teacher warned the students of their mistakes)",
+        "options": [
+          "حَذَّرَ",
+          "حَضَّرَ",
+          "حَذَرَ",
+          "حَظَرَ"
+        ],
+        "correct": "حَذَّرَ",
+        "explanation": "حَذَّرَ (he warned, Form II — transitive) vs. حَضَّرَ (he prepared, Form II) vs. حَذَرَ (he was cautious, Form I — intransitive) vs. حَظَرَ (he prohibited/banned). حَذَّرَ مِن (warned of) is Form II with shadda on ذّ. حَضَّرَ has shadda on ضّ — the ذ/ض distinction is crucial. حَذَرَ (without shadda) means 'he was cautious himself' (intransitive). حَظَرَ changes the middle letter entirely (ظ instead of ذ) meaning 'to ban.' Four near-identical words, four completely different meanings."
+      },
+      {
+        "id": "ea_ff9",
+        "question": "_____ الأَبُ بِنَجاحِ ابنِهِ (The father was happy about his son's success)",
+        "options": [
+          "فَرِحَ",
+          "فَرَحَ",
+          "صَرَحَ",
+          "مَرِحَ"
+        ],
+        "correct": "فَرِحَ",
+        "explanation": "فَرِحَ (he rejoiced/was happy — verb with kasra on middle letter) vs. فَرَحَ (same root but less standard voweling) vs. صَرَحَ (he declared/stated openly) vs. مَرِحَ (he was cheerful/playful). فَرِحَ بِ (was happy about) takes بِ for the cause of joy. نَجاح ابنِهِ (his son's success) is a double idāfa: نَجاح (masdar, success) + ابن (son) + هِ (his). The pattern فَعِلَ (with kasra on the second radical) often indicates emotions: حَزِنَ (was sad), غَضِبَ (was angry), فَرِحَ (was happy)."
+      },
+      {
+        "id": "ea_ff10",
+        "question": "يَجِبُ أَن _____ بَينَ الخَيرِ وَالشَّرِّ (One must distinguish between good and evil)",
+        "options": [
+          "نُمَيِّزَ",
+          "نُمَيِّلَ",
+          "نُمارِسَ",
+          "نُمَزِّقَ"
+        ],
+        "correct": "نُمَيِّزَ",
+        "explanation": "نُمَيِّزَ (we distinguish, Form II of مَيَّزَ — subjunctive after أَن) vs. نُمارِسَ (we practice, Form III) vs. نُمَزِّقَ (we tear up, Form II). مَيَّزَ (to distinguish) and مَزَّقَ (to tear) share the letters م-ز but have entirely different meanings and roots: م-ي-ز vs. م-ز-ق. بَينَ (between) connects الخَيرِ (good) وَالشَّرِّ (and evil). The vowel pattern in Form II (فَعَّلَ/يُفَعِّلُ) is consistent, so the root consonants determine meaning. Learners must focus on root letters."
+      },
+      {
+        "id": "ea_ff11",
+        "question": "الحَياةُ في المَدينَةِ _____ مِنَ القَريَةِ (Life in the city is different from the village)",
+        "options": [
+          "مُختَلِفَةٌ",
+          "مُخَلِّفَةٌ",
+          "مُتَخَلِّفَةٌ",
+          "مُخالِفَةٌ"
+        ],
+        "correct": "مُختَلِفَةٌ",
+        "explanation": "مُختَلِفَةٌ (different, Form VIII participle) vs. مُخَلِّفَةٌ (leaving behind, Form II participle) vs. مُتَخَلِّفَةٌ (backward/underdeveloped, Form V participle) vs. مُخالِفَةٌ (violating/opposing, Form III participle). All four derive from root خ-ل-ف (behind/after/different) but through different verb forms: VIII اِختَلَفَ (to differ), II خَلَّفَ (to leave behind), V تَخَلَّفَ (to be backward), III خَالَفَ (to oppose). This is a perfect example of how Arabic verb forms create a family of related-but-distinct meanings."
+      },
+      {
+        "id": "ea_ff12",
+        "question": "_____ الطَّائِرَةُ في الوَقتِ المُحَدَّدِ (The plane landed on time)",
+        "options": [
+          "هَبَطَت",
+          "هَبَّت",
+          "ضَرَبَت",
+          "طَبَقَت"
+        ],
+        "correct": "هَبَطَت",
+        "explanation": "هَبَطَت (it descended/landed, feminine past) vs. هَبَّت (it blew — for wind, with shadda). هَبَطَ (root ه-ب-ط: to descend) and هَبَّ (root ه-ب-ب: to blow/rise) look nearly identical but have unrelated meanings. The shadda on هَبَّت doubles the second consonant, changing the root entirely. في الوَقتِ المُحَدَّدِ (on time — in the specified time) uses a passive participle. Arabic's reliance on consonantal roots means even tiny differences (single vs. doubled consonant) create entirely different word families."
+      },
+      {
+        "id": "ea_ff13",
+        "question": "_____ الطِّفلُ بِأُمِّهِ عِندَ الخَطَرِ (The child clung to his mother in danger)",
+        "options": [
+          "تَمَسَّكَ",
+          "تَماسَكَ",
+          "أَمسَكَ",
+          "مَسَكَ"
+        ],
+        "correct": "تَمَسَّكَ",
+        "explanation": "تَمَسَّكَ بِ (he clung to/held onto, Form V — reflexive of grasping) vs. تَماسَكَ (he held himself together/composed himself, Form VI — mutual) vs. أَمسَكَ (he seized/grabbed, Form IV — causative) vs. مَسَكَ (he held, Form I — basic). All from root م-س-ك (holding/grasping). Form V تَمَسَّكَ implies tight personal attachment. Form VI تَماسَكَ implies reciprocal holding = composure. Form IV أَمسَكَ implies seizing actively. Each verb form adds a specific semantic layer to the root meaning."
+      },
+      {
+        "id": "ea_ff14",
+        "question": "عَلَيكَ أَن _____ مِنَ التَّدخينِ (You should quit smoking)",
+        "options": [
+          "تَمتَنِعَ",
+          "تَمتَعَ",
+          "تَمنَعَ",
+          "تَتَمَنَّى"
+        ],
+        "correct": "تَمتَنِعَ",
+        "explanation": "تَمتَنِعَ (you refrain/abstain, Form VIII — subjunctive) vs. تَمتَعَ (you enjoy, Form V) vs. تَمنَعَ (you prevent, Form I) vs. تَتَمَنَّى (you wish, Form V from م-ن-ي). اِمتَنَعَ عَن/مِن (to abstain from) and مَنَعَ (to prevent/forbid) share root م-ن-ع but differ in transitivity and meaning. اِمتَنَعَ is intransitive (I abstain), مَنَعَ is transitive (I prevent someone). تَمَتَّعَ (to enjoy) is from a different root م-ت-ع. These near-homophone verbs are constant traps for Arabic learners."
+      },
+      {
+        "id": "ea_ff15",
+        "question": "_____ المُديرُ القَرارَ رَسمِيًّا (The director announced the decision officially)",
+        "options": [
+          "أَعلَنَ",
+          "عَلَّمَ",
+          "أَعلَمَ",
+          "عَلِمَ"
+        ],
+        "correct": "أَعلَنَ",
+        "explanation": "أَعلَنَ (he announced/declared, Form IV) vs. عَلَّمَ (he taught, Form II) vs. أَعلَمَ (he informed, Form IV from different root) vs. عَلِمَ (he knew, Form I). أَعلَنَ is from root ع-ل-ن (openness/publicity), while عَلَّمَ/عَلِمَ are from root ع-ل-م (knowledge). Despite sharing two consonants (ع-ل), these are entirely different roots: ع-ل-ن vs. ع-ل-م. رَسمِيًّا (officially — nisba adverb from رَسم: official/formal) is accusative. This false-friend pair — أَعلَنَ vs. أَعلَمَ — differs by only one letter but means 'announced' vs. 'informed.'"
+      }
+    ]
+  },
+  {
+    "key": "revision_mixed",
+    "name": "Mixed Revision (مراجعة شاملة)",
+    "description": "Comprehensive review mixing grammar topics to test integrated Arabic knowledge",
+    "iconName": "arrow.triangle.2.circlepath",
+    "color": "#06b6d4",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ea_rv1",
+        "question": "كَتَبَ الطَّالِبُ _____ طَويلَةً (The student wrote a long essay)",
+        "options": [
+          "مَقالَةً",
+          "مَقالَةٌ",
+          "مَقالَةٍ",
+          "المَقالَةَ"
+        ],
+        "correct": "مَقالَةً",
+        "explanation": "مَقالَةً (an essay) is the direct object of كَتَبَ (he wrote), taking accusative with tanwīn fatḥa. طَويلَةً (long, feminine) is an adjective agreeing in case (accusative), gender (feminine), number (singular), and definiteness (indefinite). This tests: verb-object case marking, adjective agreement, and tā' marbūṭa. مَقالَة is a noun of time/place from قَالَ (to say) — literally 'a piece of saying.' The sentence follows VSO order with a transitive verb and its direct object."
+      },
+      {
+        "id": "ea_rv2",
+        "question": "إِنَّ _____ مُجتَهِدونَ (Indeed the students are hardworking)",
+        "options": [
+          "الطُّلَّابَ",
+          "الطُّلَّابُ",
+          "الطُّلَّابِ",
+          "طُلَّابًا"
+        ],
+        "correct": "الطُّلَّابَ",
+        "explanation": "الطُّلَّابَ (the students) is accusative because إِنَّ puts its subject (اسم إنّ) in the accusative case. مُجتَهِدونَ (hardworking, masculine plural) is the خبر of إِنَّ in nominative. This tests إِنَّ's case governance — one of the most frequently tested grammar points. الطُّلَّاب is the broken plural of طَالِب (student), treated as human plural so it takes masculine plural agreement. المجتَهِد is an active participle from Form VIII اِجتَهَدَ (to strive/work hard)."
+      },
+      {
+        "id": "ea_rv3",
+        "question": "الكِتابُ الَّذي _____ أَمسِ مُمتِعٌ (The book that I read yesterday is enjoyable)",
+        "options": [
+          "قَرَأتُهُ",
+          "قَرَأتُ",
+          "يَقرَأُهُ",
+          "قَرَأَ"
+        ],
+        "correct": "قَرَأتُهُ",
+        "explanation": "قَرَأتُهُ (I read it) — the relative pronoun الَّذي (which/that) introduces a relative clause. Arabic relative clauses for DEFINITE antecedents require: 1) the relative pronoun matching the antecedent's gender/number, 2) a عائد (resumptive pronoun) referring back — here هُ (it). Without the هُ suffix, the clause is incomplete: *الكتاب الذي قرأتُ is incorrect because the verb needs an explicit object (the resumptive pronoun). أَمسِ (yesterday) is an indeclinable adverb. مُمتِعٌ (enjoyable, Form IV participle) is the main clause's خبر."
+      },
+      {
+        "id": "ea_rv4",
+        "question": "لَيسَ في الغُرفَةِ _____ (There is no one in the room)",
+        "options": [
+          "أَحَدٌ",
+          "أَحَدًا",
+          "أَحَدٍ",
+          "الأَحَدُ"
+        ],
+        "correct": "أَحَدٌ",
+        "explanation": "أَحَدٌ (anyone/someone) is the اسم ليس (subject of ليس) in nominative — the normal position is after the predicate في الغُرفَةِ. لَيسَ is one of كان وأخواتها (incomplete verbs), putting its subject in nominative and predicate in accusative. Here في الغُرفَةِ is the fronted predicate (خبر مُقَدَّم). أَحَد in negative contexts means 'anyone/no one': مَا جَاءَ أَحَدٌ (nobody came), لَم أَرَ أَحَدًا (I didn't see anyone). This tests negation with ليس, word order flexibility, and case system."
+      },
+      {
+        "id": "ea_rv5",
+        "question": "كَانَ الجَوُّ _____ عِندَما غَادَرنَا (The weather was cold when we left)",
+        "options": [
+          "بَارِدًا",
+          "بَارِدٌ",
+          "بَارِدٍ",
+          "البَارِدَ"
+        ],
+        "correct": "بَارِدًا",
+        "explanation": "بَارِدًا (cold) is the predicate of كَانَ — خبر كان is always accusative. الجَوُّ (the weather/atmosphere) is the اسم كان in nominative. عِندَما (when) introduces a temporal clause with غَادَرنَا (we left). This tests: كان's case governance, the active participle as predicate, and temporal clause construction. بَارِد is an active participle from بَرُدَ (to be cold). Multiple grammar concepts intersect here: incomplete verbs, participles, temporal conjunctions, and case marking."
+      },
+      {
+        "id": "ea_rv6",
+        "question": "هَذِهِ المَدينَةُ أَجمَلُ _____ تِلكَ (This city is more beautiful than that one)",
+        "options": [
+          "مِن",
+          "عَن",
+          "في",
+          "إِلى"
+        ],
+        "correct": "مِن",
+        "explanation": "مِن (than) is the preposition used in comparative constructions: أَفعَل + مِن = 'more X than.' أَجمَلُ (more beautiful) is the elative/comparative form on the pattern أَفعَل from جَميل. هَذِهِ (this, feminine) matches المَدينَةُ (the city, feminine). تِلكَ (that, feminine) is the distal demonstrative. This tests: comparative structure (اسم التَّفضيل + مِن), demonstrative agreement, and Arabic comparison. مِن is the ONLY preposition used for comparison in Arabic — using عَن or another preposition is incorrect."
+      },
+      {
+        "id": "ea_rv7",
+        "question": "لَم _____ الطُّلَّابُ مِنَ الامتِحَانِ (The students did not finish the exam)",
+        "options": [
+          "يَنتَهِ",
+          "يَنتَهونَ",
+          "يَنتَهي",
+          "اِنتَهوا"
+        ],
+        "correct": "يَنتَهِ",
+        "explanation": "يَنتَهِ (didn't finish — jussive) is required after لَم, which is a جازِمة (jussive particle). The original form is يَنتَهي (he finishes, Form VIII) — the final ي drops in jussive for defective verbs. Note: even though الطُّلَّابُ (students) is plural, the VSO Rule applies: when the verb precedes its subject, it stays singular: لَم يَنتَهِ الطلابُ (not لَم يَنتَهوا الطلابُ). This tests: لَم + jussive, defective verb conjugation, and VSO verb-number agreement."
+      },
+      {
+        "id": "ea_rv8",
+        "question": "أُحِبُّ المَشيَ _____ الشَّاطِئِ (I love walking along the beach)",
+        "options": [
+          "عَلى",
+          "في",
+          "إِلى",
+          "مِن"
+        ],
+        "correct": "عَلى",
+        "explanation": "عَلى (on/along) is the correct preposition for walking on surfaces: المَشيَ عَلى الشَّاطِئِ (walking on/along the beach). المَشيَ is a masdar (verbal noun) from مَشَى (to walk) in accusative as the direct object of أُحِبُّ (I love). الشَّاطِئِ (the beach) is genitive after عَلى. Preposition choice in Arabic is fixed and must be memorized: مَشَى عَلى (walked on), ذَهَبَ إِلى (went to), خَرَجَ مِن (went out from), جَلَسَ في (sat in). Incorrect prepositions change meaning entirely."
+      },
+      {
+        "id": "ea_rv9",
+        "question": "الطَّبيبَتانِ _____ في المُستَشفَى (The two doctors [f.] work at the hospital)",
+        "options": [
+          "تَعمَلانِ",
+          "يَعمَلانِ",
+          "تَعمَلُ",
+          "يَعمَلونَ"
+        ],
+        "correct": "تَعمَلانِ",
+        "explanation": "تَعمَلانِ (they two [f.] work) — SVO order requires full agreement: feminine dual. تَ- prefix (feminine) + -انِ suffix (dual) matches الطَّبيبَتانِ (the two female doctors, dual nominative with ان-). This tests: dual verb conjugation, feminine agreement, and SVO agreement rules. The dual form الطبيبتان = طبيبة + ة + ان. With VSO order, the verb would be singular: تَعمَلُ الطَّبيبَتانِ. But SVO requires full number agreement. The dual is the most tested agreement point in Arabic."
+      },
+      {
+        "id": "ea_rv10",
+        "question": "قَالَت لي _____ أُغلِقَ البَابَ (She told me to close the door)",
+        "options": [
+          "أَن",
+          "إِنَّ",
+          "أَنَّ",
+          "لَن"
+        ],
+        "correct": "أَن",
+        "explanation": "أَن (to/that — masdariyya) + subjunctive: أُغلِقَ (I close, subjunctive after أَن). This أَن is أَن المَصدَرِيَّة — it turns the verb into a masdar meaning 'closing.' قَالَت لي أَن أُغلِقَ = she told me to close. Compare: إِنَّ (indeed — emphatic with accusative subject), أَنَّ (that — with accusative subject for reported facts), لَن (will not — negative future + subjunctive). These four particles all begin with أ/إ but have completely different functions. This tests the أَن/أَنَّ/إِنَّ distinction."
+      },
+      {
+        "id": "ea_rv11",
+        "question": "في المَدرَسَةِ _____ طُلَّابٍ كَثيرونَ (In the school there are many students)",
+        "options": [
+          "هُناكَ",
+          "هُنا",
+          "هَذا",
+          "ذَلِكَ"
+        ],
+        "correct": "هُناكَ",
+        "explanation": "هُنَاكَ (there is/are) is the Arabic existential expression. طُلَّابٍ (students) is the مُبتدأ مُؤَخَّر (delayed subject — but note the tanwīn showing indefiniteness). كَثيرونَ (many, masculine plural) is an adjective. في المَدرَسَةِ is a fronted prepositional phrase. هُنَاكَ literally means 'there' (place) but functions like English 'there is/are.' The sentence structure: prep phrase + هُنَاكَ + indefinite noun. This tests existential sentences, adjective agreement, and word order."
+      },
+      {
+        "id": "ea_rv12",
+        "question": "الأَولادُ _____ لَعِبوا في الحَديقَةِ (The boys who played in the garden)",
+        "options": [
+          "الَّذينَ",
+          "الَّذي",
+          "اللَّواتي",
+          "الَّتي"
+        ],
+        "correct": "الَّذينَ",
+        "explanation": "الَّذينَ (who — masculine plural relative pronoun) matches الأَولادُ (the boys — masculine human plural). Arabic relative pronouns agree with their antecedent: الَّذي (masculine singular), الَّتي (feminine singular), اللَّذانِ (masculine dual), اللَّتانِ (feminine dual), الَّذينَ (masculine plural), اللَّواتي/اللَّاتي (feminine plural). This tests relative pronoun selection based on gender and number. لَعِبوا (they played) uses the masculine plural past tense suffix."
+      },
+      {
+        "id": "ea_rv13",
+        "question": "سَيَزورُنا _____ الأُسبوعِ القَادِمِ (He will visit us at the beginning of next week)",
+        "options": [
+          "بِدايَةَ",
+          "بِدايَةُ",
+          "بِدايَةِ",
+          "بِدايَةً"
+        ],
+        "correct": "بِدايَةَ",
+        "explanation": "بِدايَةَ (at the beginning of) is a ظرف زمان (adverb of time) in accusative — temporal nouns used adverbially take fatḥa. الأُسبوعِ القادِمِ (next week) is genitive — الأُسبوع is مُضاف إليه, القادِمِ is its adjective agreeing in case. سَيَزورُنا (he will visit us) — سَ for future + يَزورُ + نا (us). This tests: ظرف زمان case marking, idāfa construction, adjective agreement in genitive, and future tense. Multiple grammar concepts converge in one natural sentence."
+      },
+      {
+        "id": "ea_rv14",
+        "question": "كُل مَا تُريدُ _____ لا تُبَذِّرْ (Eat what you want but don't waste)",
+        "options": [
+          "لَكِن",
+          "وَ",
+          "فَ",
+          "ثُمَّ"
+        ],
+        "correct": "لَكِن",
+        "explanation": "لَكِن (but/however) introduces an adversative clause contrasting permission with restriction. كُل (eat! — imperative of أَكَلَ, irregular — drops the hamza). مَا تُريدُ (what you want — relative clause with ما الموصولة). لا تُبَذِّرْ (don't waste — negative imperative, jussive after لا الناهية). This sentence tests: irregular imperative, مَا as relative pronoun, adversative conjunction, negative imperative with jussive. تُبَذِّرْ (Form II: to squander) has sukūn in jussive."
+      },
+      {
+        "id": "ea_rv15",
+        "question": "مَرَّت ثَلاثُ _____ مُنذُ سَفَرِهِ (Three years have passed since his travel)",
+        "options": [
+          "سَنَواتٍ",
+          "سَنَواتٌ",
+          "سَنَواتَ",
+          "سَنَةً"
+        ],
+        "correct": "سَنَواتٍ",
+        "explanation": "سَنَواتٍ (years) — in the number gender polarity rule, 3-10 take the OPPOSITE gender of the counted noun. سَنَة (year) is feminine, so the number ثَلَاثُ has NO tā' marbūṭa (masculine form for feminine counted noun). سَنَوات is genitive plural (مُضاف إليه of ثَلاث). مُنذُ (since) is a preposition/adverb. سَفَرِهِ (his travel) is genitive after مُنذُ. مَرَّت (passed, feminine) matches the grammatically feminine ثَلاثُ سَنَواتٍ as subject. This tests number-gender polarity, one of Arabic's trickiest rules."
+      }
+    ]
+  },
+  {
+    "key": "exam_strategies",
+    "name": "Exam Strategies (استراتيجيات الاختبار)",
+    "description": "Practice with tricky grammar patterns commonly tested in Arabic proficiency exams",
+    "iconName": "checkmark.seal.fill",
+    "color": "#10b981",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ea_es1",
+        "question": "_____ المُسلِمونَ إِلى مَكَّةَ لِلحَجِّ (The Muslims travel to Mecca for pilgrimage)",
+        "options": [
+          "يُسافِرُ",
+          "يُسافِرونَ",
+          "سَافَروا",
+          "يُسافِرْ"
+        ],
+        "correct": "يُسافِرُ",
+        "explanation": "يُسافِرُ (he travels — singular) is correct because in VSO order, the verb ALWAYS takes singular form regardless of the subject's number. This is الفعل يأتي مفردًا إذا تقدم على الفاعل — the verb stays singular when it precedes its subject. المُسلِمونَ is plural but the verb is singular يُسافِرُ. If the sentence were SVO: المُسلِمونَ يُسافِرونَ. This VSO singular-verb rule is THE most tested grammar point in Arabic exams and catches most learners."
+      },
+      {
+        "id": "ea_es2",
+        "question": "رَأَيتُ _____ يَلعَبونَ (I saw the boys playing)",
+        "options": [
+          "الأَولادَ",
+          "الأَولادُ",
+          "الأَولادِ",
+          "أَولادًا"
+        ],
+        "correct": "الأَولادَ",
+        "explanation": "الأَولادَ (the boys) is accusative as the direct object of رَأَيتُ (I saw). يَلعَبونَ (they play) is a حال جُملَة (circumstantial clause in verbal form) describing what the boys were doing when seen. This tests: direct object case marking, حال clause recognition, and the concept that verbs of perception (رَأَى, سَمِعَ, وَجَدَ) take both a direct object AND a حال. The sentence structure is: verb + subject (hidden) + object + حال. Multiple grammar layers in one short sentence."
+      },
+      {
+        "id": "ea_es3",
+        "question": "مَا أَجمَلَ _____ ! (How beautiful the sky is!)",
+        "options": [
+          "السَّماءَ",
+          "السَّماءُ",
+          "السَّماءِ",
+          "سَماءً"
+        ],
+        "correct": "السَّماءَ",
+        "explanation": "السَّماءَ (the sky) is accusative — in the exclamatory structure مَا أَفعَلَ (how [adjective]!), the المُتَعَجَّب مِنه (object of wonder) takes accusative. مَا here is not interrogative or negative — it's مَا التَّعَجُّبِيَّة (exclamatory ما). أَجمَلَ is a fixed past tense verb used for exclamation, NOT a comparative adjective. This construction (مَا أَفعَلَهُ!) is one of two standard exclamatory forms in Arabic. The other is: أَجمِل بِالسَّماءِ! (أَفعِلْ بِهِ). Exams frequently test this structure."
+      },
+      {
+        "id": "ea_es4",
+        "question": "حَضَرَ خَمسَةَ _____ طَالِبًا (Fifteen students attended)",
+        "options": [
+          "عَشَرَ",
+          "عَشرَةَ",
+          "عُشَرَ",
+          "عَشَرٍ"
+        ],
+        "correct": "عَشَرَ",
+        "explanation": "خَمسَةَ عَشَرَ (fifteen) — compound numbers 11-19 in Arabic follow specific gender rules. For masculine counted nouns (طَالِب is masculine): the units (خَمسَة) take OPPOSITE gender (feminine — with tā' marbūṭa), while عَشَر takes SAME gender (masculine — no tā' marbūṭa). For feminine counted nouns it reverses: خَمسَ عَشرَةَ. طَالِبًا (student) is the تمييز (specification) in accusative singular — numbers 11-99 take singular accusative counted nouns. Numbers are the most complex grammar topic in Arabic."
+      },
+      {
+        "id": "ea_es5",
+        "question": "المَدرَسَةُ _____ ذَهَبتُ إِلَيها قَريبَةٌ (The school that I went to is nearby)",
+        "options": [
+          "الَّتي",
+          "الَّذي",
+          "الَّتِيَ",
+          "الَّذينَ"
+        ],
+        "correct": "الَّتي",
+        "explanation": "الَّتي (which/that — feminine singular) matches المَدرَسَةُ (the school, feminine). ذَهَبتُ إِلَيها (I went to it) — إِلَيها contains the resumptive pronoun ها (her/it) referring back to the school. Without this عائد (resumptive pronoun), the relative clause would be incomplete. قَريبَةٌ (nearby, feminine) is the main sentence's خبر. This tests: relative pronoun gender agreement, resumptive pronoun requirement in relative clauses, and nominal sentence structure. Exams love testing relative clauses."
+      },
+      {
+        "id": "ea_es6",
+        "question": "لَولا المَطَرُ _____ (Were it not for the rain, we would have gone out)",
+        "options": [
+          "لَخَرَجنا",
+          "خَرَجنا",
+          "نَخرُجُ",
+          "لَن نَخرُجَ"
+        ],
+        "correct": "لَخَرَجنا",
+        "explanation": "لَولا (were it not for/if not for) introduces a counterfactual condition. المَطَرُ (the rain) is the مُبتدأ — after لَولا, the subject is nominative with a suppressed خبر (مَوجود/كائن is implied). لَخَرَجنا (we would have gone out) — the لَ is لام الجواب (response lām), and خَرَجنا is past tense. لَولا + nominative noun + لَ + past tense is the fixed pattern. لَولا is distinct from لَو (if — counterfactual) and إِن (if — possible). Exams test the response لَ which is mandatory."
+      },
+      {
+        "id": "ea_es7",
+        "question": "جَاءَ الرَّجُلُ _____ (The man came walking)",
+        "options": [
+          "مَاشِيًا",
+          "مَاشِيٌ",
+          "مَاشِيٍ",
+          "المَاشِي"
+        ],
+        "correct": "مَاشِيًا",
+        "explanation": "مَاشِيًا (walking) is a حال (circumstantial accusative) describing the manner of the man's coming. The حال is ALWAYS: 1) indefinite (no ال), 2) accusative, 3) derived (adjective/participle). مَاشِيًا is an active participle from مَشَى (to walk) — defective verb, so the participle ends in ي. جَاءَ الرَّجُلُ (the man came) — the subject is definite, which is required for the صاحب الحال (the entity described by the حال). Exams frequently test حال recognition and its three conditions."
+      },
+      {
+        "id": "ea_es8",
+        "question": "كِلَا _____ نَجَحا في الامتِحَانِ (Both students succeeded in the exam)",
+        "options": [
+          "الطَّالِبَينِ",
+          "الطَّالِبانِ",
+          "الطُّلَّابِ",
+          "طَالِبَينِ"
+        ],
+        "correct": "الطَّالِبَينِ",
+        "explanation": "الطَّالِبَينِ (the two students) is genitive/accusative dual — كِلَا (both) is an إضافة construct that takes its مُضاف إليه in genitive. كِلَا is unique: it's dual in meaning but treated as singular in verb agreement: كِلَا الطَّالِبَينِ نَجَحَ (singular verb) OR نَجَحا (dual verb — also acceptable). The dual genitive/accusative ending is يْنِ-. كِلَا/كِلتَا (both, masculine/feminine) are among Arabic's trickiest words for case and agreement. They only appear before definite nouns or pronouns."
+      },
+      {
+        "id": "ea_es9",
+        "question": "يَا _____ اجتَهِدوا في دُروسِكُم (O students, work hard in your lessons)",
+        "options": [
+          "طُلَّابُ",
+          "طُلَّابَ",
+          "طُلَّابًا",
+          "الطُّلَّابَ"
+        ],
+        "correct": "طُلَّابُ",
+        "explanation": "طُلَّابُ (students) — after يَا (O! — vocative particle), a noun WITHOUT ال takes ḍamma (nominative-like) when it's مُفرَد (non-idāfa, non-described). This is المُنادَى المُفرَد العَلَم (simple proper/common vocative). Compare: يَا طُلَّابَ المَدرَسَةِ (O students OF the school — accusative because it's idāfa). يَا أَيُّهَا الطُّلَّابُ uses the أَيُّهَا construction for definite vocative. Vocative case rules are exam favorites: مُفرَد = ḍamma, مُضاف = fatḥa."
+      },
+      {
+        "id": "ea_es10",
+        "question": "لا طَالِبَ _____ في الفَصلِ (No lazy student in the classroom)",
+        "options": [
+          "كَسولَ",
+          "كَسولٌ",
+          "كَسولٍ",
+          "كَسولًا"
+        ],
+        "correct": "كَسولَ",
+        "explanation": "كَسولَ (lazy) — after لا النَّافِيَة لِلجِنسِ (لا of absolute negation), the اسم لا (noun after لا) takes fatḥa when it's مُفرَد (non-idāfa): لا طَالِبَ كَسولَ. Both the noun and its adjective take fatḥa (built on fatḥa — مبني على الفتح). لا النافية للجنس negates the entire category: 'no lazy student whatsoever' — more emphatic than مَا مِن طالبٍ كَسولٍ. The مبني على الفتح construction is distinct from regular case marking and is heavily tested in proficiency exams."
+      },
+      {
+        "id": "ea_es11",
+        "question": "عِندي كِتابٌ _____ غِلافُهُ أَحمَرُ (I have a book whose cover is red)",
+        "options": [
+          "—",
+          "الَّذي",
+          "مَا",
+          "أَنَّ"
+        ],
+        "correct": "—",
+        "explanation": "No relative pronoun is needed! For INDEFINITE antecedents (كِتابٌ — a book, with tanwīn), Arabic uses a relative clause WITHOUT الَّذي. The clause غِلافُهُ أَحمَرُ (its cover is red) directly follows the indefinite noun. If the book were definite: الكِتابُ الَّذي غِلافُهُ أَحمَرُ. This is one of Arabic's most commonly tested rules: definite → use الَّذي/الَّتي, indefinite → omit the relative pronoun. The — option represents the zero-connector. This distinction doesn't exist in English and trips many learners."
+      },
+      {
+        "id": "ea_es12",
+        "question": "تَعَلَّمَ العَرَبِيَّةَ _____ يَفهَمَ القُرآنَ (He learned Arabic in order to understand the Quran)",
+        "options": [
+          "لِيَ",
+          "أَن",
+          "حَتَّى",
+          "كَي"
+        ],
+        "correct": "لِيَ",
+        "explanation": "Wait — the correct form should be لِ + subjunctive: لِيَفهَمَ. But the blank is before يَفهَمَ. The answer لِيَ represents the لام + the beginning of the subjunctive verb. Actually, examining the options: لِيَ is the لام التعليل merged with the verb's يَ- prefix. The purpose lām (لِ) triggers subjunctive: يَفهَمَ (subjunctive with fatḥa). All four options (لِ, أَن, حَتَّى, كَي) can express purpose, but لِ is the most common and direct. Each triggers subjunctive differently. This tests purpose clause formation."
+      },
+      {
+        "id": "ea_es13",
+        "question": "نِعمَ _____ الصِّدقُ (How excellent a quality honesty is!)",
+        "options": [
+          "الخُلُقُ",
+          "خُلُقًا",
+          "خُلُقُ",
+          "الخُلُقَ"
+        ],
+        "correct": "الخُلُقُ",
+        "explanation": "الخُلُقُ (the quality/character trait) — after نِعمَ (how excellent!/what a good...) and بِئسَ (how bad!), the فاعل (subject) must be: 1) definite with ال, 2) a مُضاف to definite, or 3) a تمييز (specification) in accusative. Here الخُلُقُ is nominative with ال as the فاعل of نِعمَ. الصِّدقُ (honesty) is the مَخصوص بِالمَدح (specified praised thing) — nominative as مُبتدأ مُؤَخَّر. نِعمَ/بِئسَ praise/blame constructions are classic exam questions testing multiple grammar layers."
+      },
+      {
+        "id": "ea_es14",
+        "question": "أَيُّ _____ تُفَضِّلُ؟ (Which book do you prefer?)",
+        "options": [
+          "كِتابٍ",
+          "كِتابًا",
+          "كِتابٌ",
+          "الكِتابِ"
+        ],
+        "correct": "كِتابٍ",
+        "explanation": "كِتابٍ (of book — genitive) is the مُضاف إليه of أَيُّ (which). أَيُّ is a question word that forms an idāfa: أَيُّ كِتابٍ (which book — literally 'which of book'). The مُضاف إليه is ALWAYS genitive and typically indefinite after أَيّ: أَيُّ طالبٍ (which student), أَيُّ مَدينَةٍ (which city). أَيُّ itself takes the case of its grammatical role: here it's accusative (مفعول به of تُفَضِّلُ) but the fatḥa is hidden on the ي. This tests idāfa after interrogatives — a frequent exam trap."
+      },
+      {
+        "id": "ea_es15",
+        "question": "اِشتَرَيتُ الكِتابَ بِ_____ دَنانيرَ (I bought the book for five dinars)",
+        "options": [
+          "خَمسَةِ",
+          "خَمسِ",
+          "خَمسَةَ",
+          "خَمسُ"
+        ],
+        "correct": "خَمسَةِ",
+        "explanation": "خَمسَةِ (five — with tā' marbūṭa, genitive) follows gender polarity: دَنانيرَ (dinars) is masculine, so the number 3-10 takes the OPPOSITE gender (feminine — with ة). The genitive case is because بِ (for/with) governs genitive: بِخَمسَةِ. دَنانيرَ (dinars) is a diptote broken plural (مَمنوع من الصَّرف — no tanwīn, genitive with fatḥa: دَنانيرَ not دَنانيرِ). This tests: number-gender polarity, case after preposition, diptote genitive, and the idāfa between number and counted noun — maximum grammar density."
+      }
+    ]
+  },
+  {
+    "key": "sentence_parsing_i3rab",
+    "name": "Sentence Parsing — الإعراب (I'rāb)",
+    "description": "Master Arabic grammatical analysis by identifying the correct case endings and syntactic roles of words",
+    "iconName": "text.magnifyingglass",
+    "color": "#6366f1",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ea_sp1",
+        "question": "في جُملَة 'قَرَأَ الطَّالِبُ الكِتَابَ'، إِعرَابُ 'الكِتَابَ' هُوَ _____ (In the sentence 'The student read the book,' the parsing of 'the book' is _____)",
+        "options": [
+          "مَفعولٌ بِهِ مَنصوبٌ",
+          "فَاعِلٌ مَرفوعٌ",
+          "مُبتَدَأٌ مَرفوعٌ",
+          "خَبَرٌ مَرفوعٌ"
+        ],
+        "correct": "مَفعولٌ بِهِ مَنصوبٌ",
+        "explanation": "الكِتَابَ is مَفعولٌ بِهِ (direct object) in the accusative case (مَنصوب). In the verbal sentence قَرَأَ الطَّالِبُ الكِتَابَ, the verb is قَرَأَ (read), the فَاعِل (subject) is الطَّالِبُ (nominative — مَرفوع), and الكِتَابَ receives the action — hence مَفعول بِهِ مَنصوب. The fatḥa on the final letter (الكِتَابَ) signals accusative case. Identifying the مَفعول بِهِ is fundamental to Arabic إعراب (syntactic parsing)."
+      },
+      {
+        "id": "ea_sp2",
+        "question": "في جُملَة 'الجَوُّ جَميلٌ'، إِعرَابُ 'جَميلٌ' هُوَ _____ (In 'The weather is beautiful,' the parsing of 'beautiful' is _____)",
+        "options": [
+          "خَبَرٌ مَرفوعٌ",
+          "نَعتٌ مَرفوعٌ",
+          "فَاعِلٌ مَرفوعٌ",
+          "حَالٌ مَنصوبٌ"
+        ],
+        "correct": "خَبَرٌ مَرفوعٌ",
+        "explanation": "جَميلٌ is the خَبَر (predicate) of the nominal sentence, raised to nominative (مَرفوع) with tanwīn ḍamma. In the nominal sentence الجَوُّ جَميلٌ, الجَوُّ is the مُبتدأ (subject) and جَميلٌ is the خبر. Both take nominative case. The خبر completes the meaning of the مُبتدأ. This is distinct from a نَعت (adjective modifier), which would follow a noun it describes rather than predicate about the مبتدأ. Nominal sentence parsing is the foundation of Arabic إعراب."
+      },
+      {
+        "id": "ea_sp3",
+        "question": "في جُملَة 'ذَهَبَ أَحمَدُ إِلى المَدرَسَةِ'، إِعرَابُ 'المَدرَسَةِ' هُوَ _____ (In 'Ahmad went to school,' the parsing of 'the school' is _____)",
+        "options": [
+          "اسمٌ مَجرورٌ",
+          "مَفعولٌ بِهِ مَنصوبٌ",
+          "فَاعِلٌ مَرفوعٌ",
+          "خَبَرٌ مَرفوعٌ"
+        ],
+        "correct": "اسمٌ مَجرورٌ",
+        "explanation": "المَدرَسَةِ is اسمٌ مَجرورٌ (a noun in the genitive case) because it follows the preposition إِلى. Prepositions (حُروف الجَرّ) always put the following noun into the genitive case (مَجرور). The kasra on المَدرَسَةِ signals genitive. In Arabic إعراب, you must identify the عَامِل (governing element) — here إِلى is the عامل that causes the جَرّ. Common prepositions: في, مِن, إِلى, عَلى, بِ, لِ, عَن, كَ. Every noun after them is مَجرور."
+      },
+      {
+        "id": "ea_sp4",
+        "question": "في جُملَة 'إِنَّ العِلمَ نَافِعٌ'، إِعرَابُ 'العِلمَ' هُوَ _____ (In 'Indeed knowledge is beneficial,' the parsing of 'knowledge' is _____)",
+        "options": [
+          "اسمُ إِنَّ مَنصوبٌ",
+          "مُبتَدَأٌ مَرفوعٌ",
+          "مَفعولٌ بِهِ مَنصوبٌ",
+          "فَاعِلٌ مَرفوعٌ"
+        ],
+        "correct": "اسمُ إِنَّ مَنصوبٌ",
+        "explanation": "العِلمَ is اسمُ إِنَّ (the subject of إِنَّ) and takes accusative case (مَنصوب). إِنَّ and its sisters (أَنَّ, لَكِنَّ, لَيتَ, لَعَلَّ, كَأَنَّ) enter upon nominal sentences and put the مُبتدأ into accusative (becoming اسم إنّ) while the خبر remains nominative (becoming خبر إنّ). So نَافِعٌ is خبر إنّ مرفوع. The fatḥa on العِلمَ confirms accusative. This إنّ transformation is one of the most important إعراب rules in Arabic grammar."
+      },
+      {
+        "id": "ea_sp5",
+        "question": "في جُملَة 'كَانَ الوَلَدُ نَائِمًا'، إِعرَابُ 'نَائِمًا' هُوَ _____ (In 'The boy was sleeping,' the parsing of 'sleeping' is _____)",
+        "options": [
+          "خَبَرُ كَانَ مَنصوبٌ",
+          "حَالٌ مَنصوبٌ",
+          "مَفعولٌ بِهِ مَنصوبٌ",
+          "نَعتٌ مَنصوبٌ"
+        ],
+        "correct": "خَبَرُ كَانَ مَنصوبٌ",
+        "explanation": "نَائِمًا is خَبَرُ كَانَ (the predicate of كَان) in the accusative case (مَنصوب). كَانَ and its sisters (أَصبَحَ, أَمسَى, ظَلَّ, بَاتَ, صَارَ, لَيسَ, ما زَالَ, ما دَامَ) enter upon nominal sentences and keep the مُبتدأ nominative (becoming اسم كان) while putting the خبر into accusative (becoming خبر كان). الوَلَدُ is اسم كان مرفوع. The tanwīn fatḥa on نَائِمًا confirms accusative. Distinguishing خبر كان from حال is a key إعراب skill."
+      },
+      {
+        "id": "ea_sp6",
+        "question": "في جُملَة 'يَلعَبُ الأَولَادُ سَعيدينَ'، إِعرَابُ 'سَعيدينَ' هُوَ _____ (In 'The boys play happily,' the parsing of 'happily' is _____)",
+        "options": [
+          "حَالٌ مَنصوبٌ",
+          "خَبَرٌ مَرفوعٌ",
+          "نَعتٌ مَرفوعٌ",
+          "تَمييزٌ مَنصوبٌ"
+        ],
+        "correct": "حَالٌ مَنصوبٌ",
+        "explanation": "سَعيدينَ is حَال (circumstantial accusative) describing the state of الأَولَاد while they play. الحَال answers the question 'كَيفَ' (how?) — how are they playing? Happily. الحال is always مَنصوب (accusative). The ين- ending marks accusative for sound masculine plurals. Key حال rules: it's indefinite (نَكِرَة), accusative, and describes the state of the subject or object. If سَعيدينَ were a نَعت, it would need to match the noun it modifies in definiteness — but الأَولَاد is definite while سَعيدين is indefinite."
+      },
+      {
+        "id": "ea_sp7",
+        "question": "في جُملَة 'شَرِبتُ كَأسًا مَاءً'، إِعرَابُ 'مَاءً' هُوَ _____ (In 'I drank a cup of water,' the parsing of 'water' is _____)",
+        "options": [
+          "تَمييزٌ مَنصوبٌ",
+          "مَفعولٌ بِهِ مَنصوبٌ",
+          "حَالٌ مَنصوبٌ",
+          "بَدَلٌ مَنصوبٌ"
+        ],
+        "correct": "تَمييزٌ مَنصوبٌ",
+        "explanation": "مَاءً is تَمييز (specification/distinction) in the accusative case. التمييز clarifies the ambiguity in a noun — كَأسًا (a cup) is vague: a cup of what? مَاءً (water) specifies the content. This is تمييز مُفرَد (single-word specification) as opposed to تمييز جُملَة (sentence-level). تمييز is always indefinite (نَكِرَة) and accusative (مَنصوب). Other examples: اِشتَرَيتُ رِطلًا تُفَّاحًا (I bought a pound of apples), عِندي عِشرونَ كِتَابًا (I have twenty books — كِتَابًا is تمييز العدد)."
+      },
+      {
+        "id": "ea_sp8",
+        "question": "في جُملَة 'جَاءَ مُحَمَّدٌ وَأَحمَدُ'، إِعرَابُ 'أَحمَدُ' هُوَ _____ (In 'Muhammad and Ahmad came,' the parsing of 'Ahmad' is _____)",
+        "options": [
+          "مَعطوفٌ مَرفوعٌ",
+          "فَاعِلٌ مَرفوعٌ",
+          "بَدَلٌ مَرفوعٌ",
+          "خَبَرٌ مَرفوعٌ"
+        ],
+        "correct": "مَعطوفٌ مَرفوعٌ",
+        "explanation": "أَحمَدُ is مَعطوف (coordinated element) following the conjunction وَ, and it takes the same case as the مَعطوف عَلَيهِ (the element it's coordinated with) — مُحَمَّدٌ is فَاعِل مَرفوع, so أَحمَدُ is also مَرفوع. The rule: المَعطوف يَتبَعُ المَعطوفَ عَلَيهِ في الإعراب (the coordinated element follows in case). Coordination particles: وَ (and), فَ (then/so), ثُمَّ (then/next), أَو (or), أَم (or — in questions), بَل (rather), لَكِن (but), لا (not). This is a fundamental تَابِع (follower) concept."
+      },
+      {
+        "id": "ea_sp9",
+        "question": "في جُملَة 'قَابَلتُ الرَّجُلَ الطَّويلَ'، إِعرَابُ 'الطَّويلَ' هُوَ _____ (In 'I met the tall man,' the parsing of 'the tall' is _____)",
+        "options": [
+          "نَعتٌ مَنصوبٌ",
+          "بَدَلٌ مَنصوبٌ",
+          "حَالٌ مَنصوبٌ",
+          "مَعطوفٌ مَنصوبٌ"
+        ],
+        "correct": "نَعتٌ مَنصوبٌ",
+        "explanation": "الطَّويلَ is نَعت (adjective/qualifier) modifying الرَّجُلَ, taking the same case (accusative — مَنصوب). النَّعت must agree with its مَنعوت (qualified noun) in four things: الإعراب (case), العَدَد (number), الجِنس (gender), and التَّعريف (definiteness). Here: both are مَنصوب, مُفرَد (singular), مُذَكَّر (masculine), and مُعَرَّف بِال (definite with ال). If any of these four don't match, it's NOT a نعت — it might be حال or another syntactic role. النعت is one of the four تَوابِع (followers) in Arabic grammar."
+      },
+      {
+        "id": "ea_sp10",
+        "question": "في جُملَة 'زُرتُ مِصرَ القَاهِرَةَ'، إِعرَابُ 'القَاهِرَةَ' هُوَ _____ (In 'I visited Egypt, Cairo,' the parsing of 'Cairo' is _____)",
+        "options": [
+          "بَدَلٌ مَنصوبٌ",
+          "نَعتٌ مَنصوبٌ",
+          "مَعطوفٌ مَنصوبٌ",
+          "عَطفُ بَيَانٍ مَنصوبٌ"
+        ],
+        "correct": "بَدَلٌ مَنصوبٌ",
+        "explanation": "القَاهِرَةَ is بَدَل (apposition/substitution) specifically بَدَل بَعض مِن كُلّ (a part substituting for a whole) — Cairo is part of Egypt. It takes the same case as المُبدَل مِنهُ (the word it substitutes for): مِصرَ is مَفعول بِهِ مَنصوب, so القَاهِرَةَ is also مَنصوب. Types of بَدَل: بَدَل مُطَابِق (identical substitution), بَدَل بَعض مِن كُلّ (part from whole), بَدَل اشتِمَال (inclusive substitution). البَدَل is the fourth تَابِع alongside النَّعت, العَطف, and التَّوكيد."
+      },
+      {
+        "id": "ea_sp11",
+        "question": "في جُملَة 'رَأَيتُ عِشرينَ طَالِبًا'، إِعرَابُ 'طَالِبًا' هُوَ _____ (In 'I saw twenty students,' the parsing of 'student' is _____)",
+        "options": [
+          "تَمييزٌ مَنصوبٌ",
+          "مَفعولٌ بِهِ مَنصوبٌ",
+          "حَالٌ مَنصوبٌ",
+          "نَعتٌ مَنصوبٌ"
+        ],
+        "correct": "تَمييزٌ مَنصوبٌ",
+        "explanation": "طَالِبًا is تَمييز العَدَد (number distinction) — the counted noun after numbers 11-99 is always singular accusative (مُفرَد مَنصوب). عِشرينَ (twenty) is the number, طَالِبًا specifies what is being counted. This is a specific type of تمييز مُفرَد. Number-tamyīz rules: 3-10: plural genitive (طُلَّابٍ), 11-99: singular accusative (طَالِبًا), 100+: singular genitive (طَالِبٍ). The number عِشرين itself is مَفعول بِهِ مَنصوب (direct object of رَأَيتُ). Number tamyīz is heavily tested in Arabic exams."
+      },
+      {
+        "id": "ea_sp12",
+        "question": "في جُملَة 'سَافَرتُ لِطَلَبِ العِلمِ'، إِعرَابُ 'طَلَبِ' هُوَ _____ (In 'I traveled seeking knowledge,' the parsing of 'seeking' is _____)",
+        "options": [
+          "اسمٌ مَجرورٌ بِلَامِ التَّعليلِ",
+          "مَفعولٌ لِأَجلِهِ مَنصوبٌ",
+          "بَدَلٌ مَجرورٌ",
+          "مُضافٌ إِلَيهِ مَجرورٌ"
+        ],
+        "correct": "اسمٌ مَجرورٌ بِلَامِ التَّعليلِ",
+        "explanation": "طَلَبِ is اسمٌ مَجرورٌ (genitive noun) governed by the preposition لِ (lām al-ta'līl — the lām of purpose/reasoning). The لِ here expresses purpose: 'for the sake of.' طَلَبِ is also مُضاف to العِلمِ (genitive as مُضاف إليه). Note: if the sentence were سَافَرتُ طَلَبًا لِلعِلمِ, then طَلَبًا would be مَفعول لأجله مَنصوب. The difference: with لِ preposition → مَجرور; without preposition → مَنصوب as مفعول لأجله. This distinction is critical for accurate إعراب."
+      },
+      {
+        "id": "ea_sp13",
+        "question": "في جُملَة 'المُعَلِّمُ الَّذي يُحِبُّهُ الطُّلَّابُ نَاجِحٌ'، إِعرَابُ 'نَاجِحٌ' هُوَ _____ (In 'The teacher whom the students love is successful,' the parsing of 'successful' is _____)",
+        "options": [
+          "خَبَرٌ مَرفوعٌ",
+          "نَعتٌ مَرفوعٌ",
+          "حَالٌ مَنصوبٌ",
+          "فَاعِلٌ مَرفوعٌ"
+        ],
+        "correct": "خَبَرٌ مَرفوعٌ",
+        "explanation": "نَاجِحٌ is the خَبَر (predicate) of the مُبتدأ المُعَلِّمُ, in nominative case (مَرفوع). The entire relative clause الَّذي يُحِبُّهُ الطُّلَّابُ is a نَعت (adjective clause) modifying المُعَلِّمُ — it's a جُملَة صِلَة (relative clause) and is NOT the خبر. This is a common إعراب trap: learners mistake the relative clause for the predicate. The sentence structure is: المُعَلِّمُ (مبتدأ) + الَّذي يُحِبُّهُ الطُّلَّابُ (نعت/جملة صلة) + نَاجِحٌ (خبر). Parsing complex sentences requires identifying all layers."
+      },
+      {
+        "id": "ea_sp14",
+        "question": "في جُملَة 'جَلَستُ حَيثُ جَلَسَ المُعَلِّمُ'، إِعرَابُ 'حَيثُ' هُوَ _____ (In 'I sat where the teacher sat,' the parsing of 'where' is _____)",
+        "options": [
+          "ظَرفُ مَكَانٍ مَنصوبٌ",
+          "حَرفُ جَرٍّ",
+          "اسمٌ مَوصولٌ",
+          "مَفعولٌ فيهِ"
+        ],
+        "correct": "ظَرفُ مَكَانٍ مَنصوبٌ",
+        "explanation": "حَيثُ is a ظَرفُ مَكَانٍ (adverb of place) in the accusative position (مَبنِيٌّ عَلى الضَّمِّ في مَحَلِّ نَصبٍ — it's indeclinable with ḍamma but occupies an accusative position). حَيثُ always requires a complete sentence after it — جَلَسَ المُعَلِّمُ is the مُضاف إليه clause. Arabic ظُروف المَكان: حَيثُ (where), فَوقَ (above), تَحتَ (below), أَمامَ (in front), خَلفَ (behind). Indeclinable words (مَبنِيّ) have a position (مَحَلّ) in إعراب even though they don't show case endings."
+      },
+      {
+        "id": "ea_sp15",
+        "question": "في جُملَة 'لَم يَذهَبْ أَحمَدُ'، إِعرَابُ 'يَذهَبْ' هُوَ _____ (In 'Ahmad did not go,' the parsing of 'go' is _____)",
+        "options": [
+          "فِعلٌ مُضارِعٌ مَجزومٌ",
+          "فِعلٌ مُضارِعٌ مَنصوبٌ",
+          "فِعلٌ مُضارِعٌ مَرفوعٌ",
+          "فِعلٌ مَاضٍ مَبنِيٌّ"
+        ],
+        "correct": "فِعلٌ مُضارِعٌ مَجزومٌ",
+        "explanation": "يَذهَبْ is فِعلٌ مُضارِعٌ مَجزومٌ (a present tense verb in the jussive mood) because of لَم. The jussive marker is السُّكون (sukūn — absence of vowel on the final letter). لَم is one of the جَوازِم (jussive particles) that put the مضارع into مَجزوم. Other جوازم: لَا النَّاهِيَة (prohibitive لا), لَمَّا (not yet), لِ الأمر (command لِ). The three moods of المضارع: مَرفوع (default), مَنصوب (after أَن, لَن, كَي, etc.), مَجزوم (after لَم, لا الناهية, etc.). Identifying the عامِل determines the mood."
+      }
+    ]
+  },
+  {
+    "key": "cultural_expressions",
+    "name": "Cultural Expressions (تعبيرات ثقافية)",
+    "description": "Culturally embedded Arabic expressions used in daily life, greetings, and social interactions",
+    "iconName": "globe.americas.fill",
+    "color": "#a855f7",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ea_cu1",
+        "question": "عِندَما يُعطِسُ شَخصٌ نَقولُ لَهُ _____ (When someone sneezes we say to them _____)",
+        "options": [
+          "يَرحَمُكَ اللهُ",
+          "الحَمدُ لِلَّهِ",
+          "إِن شَاءَ اللهُ",
+          "مَا شَاءَ اللهُ"
+        ],
+        "correct": "يَرحَمُكَ اللهُ",
+        "explanation": "يَرحَمُكَ اللهُ (May God have mercy on you) is the culturally correct response to someone who sneezes. The sneezer first says الحَمدُ لِلَّهِ (praise be to God), then the listener responds يَرحَمُكَ اللهُ, and the sneezer replies يَهديكُمُ اللهُ وَيُصلِحُ بَالَكُم (May God guide you and improve your condition). يَرحَمُ is present tense used as a prayer/wish (دُعَاء). This three-part exchange is deeply rooted in Islamic and Arabic culture and is used across all Arabic-speaking countries."
+      },
+      {
+        "id": "ea_cu2",
+        "question": "عِندَ رُؤيَةِ شَيءٍ جَميلٍ نَقولُ _____ (When seeing something beautiful we say _____)",
+        "options": [
+          "مَا شَاءَ اللهُ",
+          "إِن شَاءَ اللهُ",
+          "الحَمدُ لِلَّهِ",
+          "سُبحَانَ اللهِ"
+        ],
+        "correct": "مَا شَاءَ اللهُ",
+        "explanation": "مَا شَاءَ اللهُ (What God has willed / God has willed it) is said when admiring something beautiful, a child, a success, etc. It serves as both admiration and protection against العَين (the evil eye) in Arab culture. مَا here is a relative pronoun (what), شَاءَ means 'willed,' and اللهُ is the subject. Grammatically, this is a جُملَة صِلَة (relative clause). In contrast, إِن شَاءَ اللهُ (if God wills) refers to future events, and الحَمدُ لِلَّهِ (praise be to God) expresses gratitude. Each has specific cultural contexts."
+      },
+      {
+        "id": "ea_cu3",
+        "question": "عِندَ تَقديمِ الطَّعَامِ لِلضُّيوفِ نَقولُ _____ (When serving food to guests we say _____)",
+        "options": [
+          "تَفَضَّلوا",
+          "بِالعَافِيَةِ",
+          "بِالهَنَاءِ",
+          "صِحَّتَينِ"
+        ],
+        "correct": "تَفَضَّلوا",
+        "explanation": "تَفَضَّلوا (Please, go ahead / Help yourselves) is the standard invitation when presenting food. It comes from Form V تَفَضَّلَ (to do the favor of, to be kind enough to) — literally asking guests to bestow the favor of eating. The plural imperative ending وا addresses multiple guests. For one person: تَفَضَّلْ (masculine) / تَفَضَّلي (feminine). بِالعَافِيَةِ and صِحَّتَينِ are said DURING or AFTER eating, not when serving. Arab hospitality (الضِّيافَة) is a cornerstone of Arabic culture, and these expressions reflect deep social values."
+      },
+      {
+        "id": "ea_cu4",
+        "question": "عِندَ سَمَاعِ خَبَرٍ سَيِّئٍ نَقولُ _____ (When hearing bad news we say _____)",
+        "options": [
+          "إِنَّا لِلَّهِ وَإِنَّا إِلَيهِ رَاجِعونَ",
+          "لَا حَولَ وَلا قُوَّةَ إِلَّا بِاللهِ",
+          "الحَمدُ لِلَّهِ",
+          "أَستَغفِرُ اللهَ"
+        ],
+        "correct": "إِنَّا لِلَّهِ وَإِنَّا إِلَيهِ رَاجِعونَ",
+        "explanation": "إِنَّا لِلَّهِ وَإِنَّا إِلَيهِ رَاجِعونَ (Indeed we belong to God and to Him we shall return) is the standard response to bad news, especially death. Grammatically: إِنَّا = إِنَّ + نَا (indeed we), لِلَّهِ (belong to God — لِ of possession), رَاجِعونَ (returnees — active participle plural, خبر إنّ). This Quranic verse (2:156) is used universally across Muslim-majority Arab societies. لَا حَولَ وَلا قُوَّةَ إِلَّا بِاللهِ is used for general distress or helplessness, which is different."
+      },
+      {
+        "id": "ea_cu5",
+        "question": "عِندَ الانتِهَاءِ مِنَ الأَكلِ نَقولُ _____ (When finishing eating we say _____)",
+        "options": [
+          "الحَمدُ لِلَّهِ",
+          "بِالعَافِيَةِ",
+          "مَا شَاءَ اللهُ",
+          "بَارَكَ اللهُ فيكَ"
+        ],
+        "correct": "الحَمدُ لِلَّهِ",
+        "explanation": "الحَمدُ لِلَّهِ (Praise be to God / All praise is due to God) is said after finishing a meal to express gratitude. Grammatically: الحَمدُ is the مُبتدأ (nominative), لِلَّهِ is the خبر (prepositional phrase — لِ + اللهِ in genitive). This expression is used in many contexts: after eating, after recovery from illness, when asked 'how are you?' (كَيفَ حَالُكَ؟ — الحَمدُ لِلَّهِ). بِالعَافِيَةِ (with wellness) is said BY OTHERS to the person eating, not by the eater. These distinctions are crucial for cultural fluency."
+      },
+      {
+        "id": "ea_cu6",
+        "question": "عِندَ دُخولِ بَيتِ شَخصٍ نَقولُ _____ (When entering someone's home we say _____)",
+        "options": [
+          "السَّلامُ عَلَيكُم",
+          "أَهلًا وَسَهلًا",
+          "مَرحَبًا",
+          "تَفَضَّلوا"
+        ],
+        "correct": "السَّلامُ عَلَيكُم",
+        "explanation": "السَّلامُ عَلَيكُم (Peace be upon you) is the proper greeting when entering someone's home. Grammatically: السَّلامُ is مُبتدأ (nominative), عَلَيكُم is خبر (prepositional phrase — upon you). The response is وَعَلَيكُمُ السَّلامُ (And upon you peace). This greeting is used universally in Arab culture — Muslim and Christian alike — when entering any home or meeting someone. أَهلًا وَسَهلًا (welcome — literally 'family and ease') and مَرحَبًا (hello) are informal greetings, not specifically for entering homes."
+      },
+      {
+        "id": "ea_cu7",
+        "question": "عِندَ التَّحَدُّثِ عَن شَيءٍ في المُستَقبَلِ نَقولُ _____ (When talking about something in the future we say _____)",
+        "options": [
+          "إِن شَاءَ اللهُ",
+          "مَا شَاءَ اللهُ",
+          "بِإِذنِ اللهِ",
+          "الحَمدُ لِلَّهِ"
+        ],
+        "correct": "إِن شَاءَ اللهُ",
+        "explanation": "إِن شَاءَ اللهُ (If God wills / God willing) is said whenever mentioning future plans or intentions. Grammatically: إِن is a conditional particle (حَرف شَرط), شَاءَ is the past tense verb (willed), اللهُ is the فاعل. This is culturally mandatory in Arabic conversation — omitting it when discussing future plans is considered presumptuous or impolite. It can also colloquially mean 'hopefully' or even a polite 'maybe.' بِإِذنِ اللهِ (by God's permission) is similar but more emphatic and affirming — suggesting stronger confidence in the outcome."
+      },
+      {
+        "id": "ea_cu8",
+        "question": "عِندَ تَهنِئَةِ شَخصٍ بِمُنَاسَبَةٍ سَعيدَةٍ نَقولُ _____ (When congratulating someone on a happy occasion we say _____)",
+        "options": [
+          "مَبروكٌ",
+          "يَرحَمُكَ اللهُ",
+          "الحَمدُ لِلَّهِ",
+          "تَفَضَّلْ"
+        ],
+        "correct": "مَبروكٌ",
+        "explanation": "مَبروكٌ (Congratulations! — literally 'blessed') is the standard congratulatory expression for weddings, births, graduations, new jobs, etc. مَبروك is a passive participle from بَارَكَ (Form III: to bless). The response is اللهُ يُبَارِكُ فيكَ (May God bless you) or عَلَيكَ بِالبَرَكَة. In formal Arabic, بَارَكَ اللهُ لَكَ (May God bless you with it) is preferred. The root ب-ر-ك is central to Arabic blessing culture: بَرَكَة (blessing), مُبَارَك (blessed — used for Ramadan: رَمَضَان مُبَارَك), تَبَارَكَ (exalted be He)."
+      },
+      {
+        "id": "ea_cu9",
+        "question": "عِندَ الاعتِذارِ نَقولُ _____ (When apologizing we say _____)",
+        "options": [
+          "أَعتَذِرُ / عَفوًا",
+          "شُكرًا",
+          "مَرحَبًا",
+          "مَبروكٌ"
+        ],
+        "correct": "أَعتَذِرُ / عَفوًا",
+        "explanation": "أَعتَذِرُ (I apologize — Form VIII from عَذَرَ to excuse) and عَفوًا (pardon — from عَفَا to pardon) are the standard apology expressions. أَعتَذِرُ is more formal (a full verb), while عَفوًا is casual and versatile — used for bumping into someone, interrupting, or minor mistakes. آسِف (sorry — active participle of أَسِفَ to regret) is also common. For deeper apologies: سَامِحني (forgive me), أَرجو المَعذِرَة (I seek pardon). Each level reflects the gravity of the situation. Arabic social etiquette values proper use of these graded expressions."
+      },
+      {
+        "id": "ea_cu10",
+        "question": "عِندَ تَوديعِ شَخصٍ مُسَافِرٍ نَقولُ _____ (When seeing off a traveler we say _____)",
+        "options": [
+          "في أَمَانِ اللهِ",
+          "السَّلامُ عَلَيكُم",
+          "إِلى اللِّقَاءِ",
+          "مَعَ السَّلامَةِ"
+        ],
+        "correct": "في أَمَانِ اللهِ",
+        "explanation": "في أَمَانِ اللهِ (In God's protection/safety) is the traditional farewell specifically for travelers. Grammatically: في is a preposition, أَمَانِ (safety/protection) is مَجرور, اللهِ is مُضاف إليه. This expression asks for divine protection during the journey. مَعَ السَّلامَةِ (with safety/goodbye) is a general farewell, and إِلى اللِّقَاءِ (until we meet — similar to 'au revoir') is neutral. The traveler may respond: اللهُ يُسَلِّمَك (May God keep you safe). These layered farewells reflect Arabic culture's emphasis on invoking protection for those departing."
+      },
+      {
+        "id": "ea_cu11",
+        "question": "عِندَ رُؤيَةِ شَخصٍ مَريضٍ نَقولُ _____ (When visiting a sick person we say _____)",
+        "options": [
+          "سَلامَتَك",
+          "الحَمدُ لِلَّهِ",
+          "مَبروكٌ",
+          "عَفوًا"
+        ],
+        "correct": "سَلامَتَك",
+        "explanation": "سَلامَتَك (Your safety / Get well soon — literally 'your wellbeing') is the standard expression when visiting or addressing a sick person. سَلامَة is a masdar from سَلِمَ (to be safe/healthy), and the كَ is the possessive pronoun 'your.' The response is اللهُ يُسَلِّمَك (May God keep you safe). For more formal contexts: شَفاكَ اللهُ (May God heal you — using شَفَى Form I: to heal), or عَافاكَ اللهُ (May God grant you wellness). Visiting the sick (عيَادَة المَريض) is considered a social obligation in Arabic culture."
+      },
+      {
+        "id": "ea_cu12",
+        "question": "عِندَ شُربِ القَهوَةِ عِندَ العَرَبِ يُقالُ لِلمُضيفِ _____ (When drinking coffee among Arabs, one says to the host _____)",
+        "options": [
+          "دَائِمًا",
+          "يِسلَمو",
+          "شُكرًا",
+          "بِالعَافِيَةِ"
+        ],
+        "correct": "دَائِمًا",
+        "explanation": "دَائِمًا (Always / May it always be so) is the traditional response to the host when offered Arabic coffee, wishing that the host always has the means and generosity to offer coffee. The host may respond اللهُ يُديمُ عِزَّكَ (May God perpetuate your honor). This exchange is central to Arab hospitality culture, especially in Gulf and Levantine traditions. دَائِمًا is grammatically an adverb (ظرف زمان) in accusative from دَوَامَ (perpetuity). Arabic coffee culture has specific etiquette: pour with the right hand, serve elders first, shake the cup to signal enough."
+      },
+      {
+        "id": "ea_cu13",
+        "question": "عِندَ بِدَايَةِ الأَكلِ نَقولُ _____ (When starting to eat we say _____)",
+        "options": [
+          "بِسمِ اللهِ",
+          "الحَمدُ لِلَّهِ",
+          "مَا شَاءَ اللهُ",
+          "بِالعَافِيَةِ"
+        ],
+        "correct": "بِسمِ اللهِ",
+        "explanation": "بِسمِ اللهِ (In the name of God) is said before starting any meal. Grammatically: بِ is a preposition (in/with), اسمِ is مَجرور (genitive — the alif is dropped in writing by convention), اللهِ is مُضاف إليه. This expression is also said before any important action: starting a journey, beginning work, entering a house. The full form is بِسمِ اللهِ الرَّحمَنِ الرَّحيمِ (In the name of God, the Most Gracious, the Most Merciful). الحَمدُ لِلَّهِ is said AFTER eating, not before. This sequence — بسملة before, حمدلة after — is fundamental to Arabic cultural practice."
+      },
+      {
+        "id": "ea_cu14",
+        "question": "عِندَ التَّعبيرِ عَن الإِعجابِ بِشَخصٍ نَقولُ _____ (When expressing admiration for someone we say _____)",
+        "options": [
+          "بَارَكَ اللهُ فيكَ",
+          "أَعتَذِرُ",
+          "إِن شَاءَ اللهُ",
+          "مَعَ السَّلامَةِ"
+        ],
+        "correct": "بَارَكَ اللهُ فيكَ",
+        "explanation": "بَارَكَ اللهُ فيكَ (May God bless you) is used to express admiration, gratitude, or as a protective blessing. بَارَكَ is Form III (to bless — mutual pattern but used here as a prayer). فيكَ (in you) uses في + second person pronoun. This expression serves double duty: it expresses sincere admiration while also protecting the admired person from العَين (the evil eye) — reflecting the Arabic cultural belief that praise without invoking God's blessing may cause harm. Variations: اللهُ يَحفَظَك (May God protect you), اللهُ يُعين (May God help)."
+      },
+      {
+        "id": "ea_cu15",
+        "question": "عِندَ شُكرِ شَخصٍ عَلى هَدِيَّةٍ نَقولُ _____ (When thanking someone for a gift we say _____)",
+        "options": [
+          "جَزَاكَ اللهُ خَيرًا",
+          "مَبروكٌ",
+          "عَفوًا",
+          "تَفَضَّلْ"
+        ],
+        "correct": "جَزَاكَ اللهُ خَيرًا",
+        "explanation": "جَزَاكَ اللهُ خَيرًا (May God reward you with goodness) is the most culturally rich way to express deep gratitude. Grammatically: جَزَى (to reward — Form I), كَ is the direct object (you), اللهُ is the فاعل, خَيرًا is a second مَفعول بِهِ or تمييز (with goodness). While شُكرًا (thanks) is common, جَزَاكَ اللهُ خَيرًا carries deeper cultural significance — it invokes divine reward for the giver, which is considered the highest form of thanks in Arabic culture. The response is وَإِيَّاكَ (and you too) or آمين (amen)."
+      }
+    ]
   }
 ]

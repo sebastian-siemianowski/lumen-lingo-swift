@@ -18038,5 +18038,2055 @@
         "explanation": "GREEN WITH ENVY/JEALOUSY = 'зелений від заздрості/ревнощів'. Кольори емоцій в англійській: GREEN = заздрість. RED = злість ('see red' = побачити червоне = розлютитися). BLUE = сум ('feeling blue' = сумно). WHITE = страх ('white as a sheet' = білий як стіна). BLACK = злість ('black mood'). TICKLED PINK = дуже задоволений. В українській: 'Зелений від заздрості' — збігається! 'Побіліти від страху' — теж! Але 'red' = злість (англ.) vs 'червоніти' = соромитися (укр.) — різниця!"
       }
     ]
+  },
+  {
+    "key": "weather_climate",
+    "name": "Weather & Climate",
+    "description": "Погода та клімат (лексика та конструкції)",
+    "iconName": "cloud.sun.fill",
+    "color": "#2563eb",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ue_wc1",
+        "question": "It _____ heavily all day yesterday.",
+        "translation": "(Вчора цілий день йшов сильний дощ.)",
+        "options": [
+          "rained",
+          "raining",
+          "was rain",
+          "rain"
+        ],
+        "correct": "rained",
+        "explanation": "IT + дієслово погоди (Past Simple): 'IT RAINED heavily'. В англійській погоду описують через безособове IT: IT rains, IT snows, IT's windy. Це 'dummy subject' — IT не має реального значення, просто заповнює позицію підмета. В українській: 'Йшов дощ' — без підмета або 'було дощливо'. Англійська ПОТРЕБУЄ підмет завжди, тому IT. Past Simple = rained (вчора, завершена дія). Ще: 'It snowed', 'It thundered', 'It hailed'."
+      },
+      {
+        "id": "ue_wc2",
+        "question": "It's absolutely _____ outside. Take a warm coat.",
+        "translation": "(Надворі лютий мороз. Візьми теплу куртку.)",
+        "options": [
+          "freezing",
+          "frozen",
+          "freeze",
+          "froze"
+        ],
+        "correct": "freezing",
+        "explanation": "FREEZING (extreme adjective для COLD): 'It's FREEZING outside'. FREEZING = дуже холодно (extreme form of COLD). Пари температурних прикметників: COLD → FREEZING, HOT → BOILING/SCORCHING, WARM → MILD. 'It's boiling today!' (спекотно). 'A scorching summer day' (палюче). FROZEN = замерзлий (стан): 'The lake is frozen'. FREEZING = дуже холодно (відчуття). В українській: 'Лютий мороз', 'Пече сонце' — метафори. Англійська: FREEZING, BOILING — гіперболи."
+      },
+      {
+        "id": "ue_wc3",
+        "question": "The weather forecast says it will be _____ tomorrow.",
+        "translation": "(Прогноз погоди каже, що завтра буде сонячно.)",
+        "options": [
+          "sunny",
+          "sun",
+          "sunned",
+          "sunning"
+        ],
+        "correct": "sunny",
+        "explanation": "SUNNY (прикметник від SUN): 'It will be SUNNY'. Погодні прикметники: SUN → SUNNY, CLOUD → CLOUDY, RAIN → RAINY, WIND → WINDY, FOG → FOGGY, STORM → STORMY, SNOW → SNOWY, ICE → ICY. Суфікс -Y перетворює іменник на прикметник погоди. В прогнозах: 'It will be partly cloudy with sunny spells'. SPELL = період: 'a cold spell', 'a dry spell'. В українській: 'Сонячно', 'Хмарно', 'Вітряно' — прислівники (не прикметники). Інша граматика, той же зміст."
+      },
+      {
+        "id": "ue_wc4",
+        "question": "There's a thick _____ this morning. I can barely see the road.",
+        "translation": "(Сьогодні вранці густий туман. Я ледь бачу дорогу.)",
+        "options": [
+          "fog",
+          "foggy",
+          "mist",
+          "haze"
+        ],
+        "correct": "fog",
+        "explanation": "FOG vs MIST vs HAZE (види обмеженої видимості): FOG = густий туман (видимість < 1 км). MIST = легкий/тонкий туман (видимість > 1 км). HAZE = серпанок, імла (від спеки або забруднення). 'A thick fog', 'A morning mist', 'A heat haze'. FOG = небезпечний для руху, MIST = романтичний, HAZE = спекотний. SMOG = smoke + fog (забруднення). В українській: 'Туман' (загальне), 'Імла' (легкий), 'Серпанок' (тонкий). Англійська розрізняє точніше."
+      },
+      {
+        "id": "ue_wc5",
+        "question": "The temperature will _____ to minus ten degrees tonight.",
+        "translation": "(Температура впаде до мінус десяти градусів сьогодні вночі.)",
+        "options": [
+          "drop",
+          "fall down",
+          "go under",
+          "decrease at"
+        ],
+        "correct": "drop",
+        "explanation": "TEMPERATURE DROPS/FALLS/RISES (дієслова температури): 'The temperature will DROP to -10°'. Дієслова для температури: DROP/FALL (впасти), RISE (піднятися), REACH (досягти), HOVER AROUND (коливатися біля). 'Temperatures will rise to 30°C', 'It reached 40° yesterday'. Прийменник: DROP TO (до), RISE TO (до), FALL BY (на): 'dropped by 5 degrees' (впала НА 5). В українській: 'Впаде до', 'Піднімется до', 'Коливатиметься біля' — ідентичні конструкції."
+      },
+      {
+        "id": "ue_wc6",
+        "question": "We had a terrible _____ last night with thunder and lightning.",
+        "translation": "(Минулої ночі була жахлива гроза з громом і блискавкою.)",
+        "options": [
+          "storm",
+          "stormy",
+          "storms",
+          "storming"
+        ],
+        "correct": "storm",
+        "explanation": "STORM (буря/гроза): 'A terrible STORM'. Типи бурь: THUNDERSTORM (гроза), SNOWSTORM/BLIZZARD (хуртовина), HAILSTORM (градова буря), WINDSTORM/GALE (буревій), HURRICANE/TYPHOON (ураган), TORNADO (торнадо). THUNDER = грім, LIGHTNING = блискавка (БЛИСКАВКА, не МОЛНІЯ — це русизм!). 'Thunder and lightning' — завжди в цьому порядку. В українській: 'Гроза' = thunderstorm, 'Буря' = storm, 'Хуговій' = blizzard."
+      },
+      {
+        "id": "ue_wc7",
+        "question": "It's very _____ today. Hold on to your hat!",
+        "translation": "(Сьогодні дуже вітряно. Тримай капелюха!)",
+        "options": [
+          "windy",
+          "winding",
+          "wind",
+          "blowy"
+        ],
+        "correct": "windy",
+        "explanation": "WINDY (вітряний): 'It's very WINDY'. Не плутайте: WINDY = /ˈwɪndi/ (вітряний) vs WINDING = /ˈwaɪndɪŋ/ (звивистий): 'A winding road'. Рівні вітру: BREEZE (легкий вітерець), WIND (вітер), GALE (сильний вітер), HURRICANE (ураганний). Прикметники: BREEZY (легкий вітерець), WINDY (вітряно), GUSTY (поривчастий), BLUSTERY (шквалистий). В українській: 'Вітряно', 'Вітрище' (підсилення). 'Звивиста дорога' — зовсім інше слово."
+      },
+      {
+        "id": "ue_wc8",
+        "question": "Global warming is causing the _____ to change rapidly.",
+        "translation": "(Глобальне потепління спричиняє швидку зміну клімату.)",
+        "options": [
+          "climate",
+          "weather",
+          "season",
+          "temperature"
+        ],
+        "correct": "climate",
+        "explanation": "CLIMATE vs WEATHER — ключова різниця! WEATHER = погода (щоденна, змінна): 'What's the weather like today?' CLIMATE = клімат (довготривалий, середній): 'The climate in Ukraine is continental'. Правило: WEATHER = дні/тижні, CLIMATE = роки/десятиліття. 'Climate change' (зміна клімату), NOT 'weather change'. 'Weather forecast' (прогноз погоди), NOT 'climate forecast'. В українській: 'Погода' vs 'Клімат' — така ж різниця. Але учні часто плутають в англійській."
+      },
+      {
+        "id": "ue_wc9",
+        "question": "I love autumn when the _____ turn red and gold.",
+        "translation": "(Я люблю осінь, коли листя стає червоним і золотим.)",
+        "options": [
+          "leaves",
+          "leafs",
+          "leaf",
+          "leaved"
+        ],
+        "correct": "leaves",
+        "explanation": "LEAVES (множина LEAF): LEAF → LEAVES (F → VES). Пори року та погодна лексика: SPRING (весна) — BLOSSOM (цвітіння), SHOWER (злива). SUMMER (літо) — HEATWAVE (спека), DROUGHT (посуха). AUTUMN/FALL (осінь) — LEAVES FALL, HARVEST. WINTER (зима) — FROST (мороз), SLEET (мокрий сніг). AUTUMN (BrE) vs FALL (AmE). В українській: 'Листя' (збірне, однина!) vs LEAVES (множина). Граматична різниця: укр. 'листя падає' (однина), англ. 'leaves fall' (множина)."
+      },
+      {
+        "id": "ue_wc10",
+        "question": "_____ is expected in the mountains this weekend.",
+        "translation": "(На вихідних у горах очікується снігопад.)",
+        "options": [
+          "Snowfall",
+          "Snow fall",
+          "Snowing",
+          "Snow falling"
+        ],
+        "correct": "Snowfall",
+        "explanation": "SNOWFALL (снігопад — одне складене слово): 'SNOWFALL is expected'. Погодні складені іменники: SNOWFALL (снігопад), RAINFALL (опади), DOWNPOUR (злива), HEATWAVE (спека), COLD SNAP (раптове похолодання), FROST BITE (обмороження). В прогнозах: 'Heavy snowfall is expected', 'Rainfall totals of 20mm'. PRECIPITATION (осади — формальний, науковий термін). В українській: 'Снігопад', 'Зливи', 'Спека' — теж складені або прості слова."
+      },
+      {
+        "id": "ue_wc11",
+        "question": "The sun _____ at 6:30 AM tomorrow.",
+        "translation": "(Завтра сонце зійде о 6:30 ранку.)",
+        "options": [
+          "rises",
+          "raises",
+          "rise",
+          "raise"
+        ],
+        "correct": "rises",
+        "explanation": "RISE vs RAISE — класична помилка! RISE (rose, risen) = підніматися САМОСТІЙНО (непехідне): 'The sun RISES', 'Prices RISE', 'Smoke RISES'. RAISE (raised, raised) = піднімати ЩОСЬ (перехідне, потребує об'єкт): 'RAISE your hand', 'RAISE prices', 'RAISE children'. Сонце RISES (само), ви RAISE руку (дію). 'The river has risen' vs 'They raised the flag'. В українській: 'Сонце сходить' (як RISE). 'Підняти руку' (як RAISE). Різниця та ж."
+      },
+      {
+        "id": "ue_wc12",
+        "question": "It's _____ outside. You can see the clouds but no rain.",
+        "translation": "(Надворі хмарно. Видно хмари, але дощу немає.)",
+        "options": [
+          "overcast",
+          "overcasting",
+          "overcasted",
+          "over cloud"
+        ],
+        "correct": "overcast",
+        "explanation": "OVERCAST (суцільна хмарність): 'It's OVERCAST'. Відтінки хмарності: CLEAR/CLOUDLESS (безхмарно), PARTLY CLOUDY (мінлива хмарність), MOSTLY CLOUDY (переважно хмарно), OVERCAST (суцільна хмарність), GLOOMY/GREY (похмуро). OVERCAST = весь небо вкрито хмарами, але дощ не обов'язково. DULL (тьмяний, нудний день — BrE). В прогнозах: 'Overcast with occasional bright spells'. В українській: 'Хмарно', 'Затягнуте небо', 'Похмуро'."
+      },
+      {
+        "id": "ue_wc13",
+        "question": "Be careful — the roads are very _____ this morning.",
+        "translation": "(Будь обережний — дороги сьогодні вранці дуже слизькі.)",
+        "options": [
+          "icy",
+          "ice",
+          "iced",
+          "icing"
+        ],
+        "correct": "icy",
+        "explanation": "ICY (крижаний/слизький): 'The roads are ICY'. ICY = вкритий льодом, слизький (прикметник). ICE = лід (іменник). ICED = з льодом (для напоїв): 'iced tea', 'iced coffee'. ICING = глазур (на торті): 'icing on the cake'. Зимова лексика: BLACK ICE (ожеледиця — невидимий лід на дорозі), SLEET (мокрий сніг), SLUSH (сніжна каша), FROST (іній). В українській: 'Ожеледиця', 'Слизько', 'Ґололід'. BLACK ICE = найнебезпечніше — невидимий!"
+      },
+      {
+        "id": "ue_wc14",
+        "question": "There will be scattered _____ throughout the afternoon.",
+        "translation": "(Вдень місцями будуть зливи.)",
+        "options": [
+          "showers",
+          "shower",
+          "rains",
+          "rainy"
+        ],
+        "correct": "showers",
+        "explanation": "SHOWERS (короткі дощі): 'Scattered SHOWERS'. В прогнозах: SHOWERS = короткі, переривчасті дощі. RAIN = тривалий дощ. DRIZZLE = мряка (дрібний дощик). DOWNPOUR = злива (раптова, сильна). SCATTERED SHOWERS = місцями дощі. HEAVY RAIN = сильний дощ. LIGHT RAIN/DRIZZLE = легкий дощ. 'April showers bring May flowers' (прислів'я). В українській: 'Зливи', 'Дощі', 'Мряка', 'Злива' — аналогічна градація. Прогноз = формальний регістр."
+      },
+      {
+        "id": "ue_wc15",
+        "question": "What's the weather _____ today?",
+        "translation": "(Яка сьогодні погода?)",
+        "options": [
+          "like",
+          "look",
+          "about",
+          "of"
+        ],
+        "correct": "like",
+        "explanation": "WHAT'S THE WEATHER LIKE? — фіксоване питання про погоду. Не 'How is the weather?' (хоча зрозуміло). Стандартне: 'What's the weather LIKE today?' Відповіді: 'It's sunny/cloudy/rainy', 'It's warm/cold/hot'. HOW'S THE WEATHER? — теж можливо, але менш типово. LIKE тут = 'який' (порівняння): 'What's your new job like?' (Яка твоя нова робота?). В українській: 'Яка погода?' — пряме питання без 'like'. Англійська потребує прийменник LIKE для опису."
+      }
+    ]
+  },
+  {
+    "key": "shopping_money",
+    "name": "Shopping & Money",
+    "description": "Покупки та гроші (лексика та фрази)",
+    "iconName": "cart.fill",
+    "color": "#16a34a",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ue_sm1",
+        "question": "How much does this _____?",
+        "translation": "(Скільки це коштує?)",
+        "options": [
+          "cost",
+          "costs",
+          "price",
+          "worth"
+        ],
+        "correct": "cost",
+        "explanation": "HOW MUCH DOES THIS COST? (питання про ціну): COST = 'коштувати' (дієслово). PRICE = 'ціна' (іменник): 'What's the price?' WORTH = 'вартий' (прикметник): 'It's worth $50'. Питання: 'How much does it cost?' = 'How much is it?' = 'What's the price?'. Всі три = 'Скільки коштує?'. В магазині: 'How much is this?' (найпростіше). COST не змінюється: cost-cost-cost (минулий час = cost). В українській: 'Скільки коштує?' — одна конструкція для всіх ситуацій."
+      },
+      {
+        "id": "ue_sm2",
+        "question": "I'd like to pay by _____, please.",
+        "translation": "(Я хотів би заплатити карткою, будь ласка.)",
+        "options": [
+          "card",
+          "cash",
+          "money",
+          "check"
+        ],
+        "correct": "card",
+        "explanation": "PAY BY CARD / PAY IN CASH (способи оплати): 'Pay BY card' (карткою), 'Pay IN cash' (готівкою). Прийменники різні! BY card/cheque vs IN cash. 'Do you take card?' (Ви приймаєте картки?). Ще: CONTACTLESS (безконтактно), ONLINE, BY BANK TRANSFER. 'Cash or card?' — питання касира. DEBIT CARD (дебетова) vs CREDIT CARD (кредитна). В українській: 'Карткою' (орудний відмінок) або 'Готівкою'. Простіша граматика, різні прийменники в англійській."
+      },
+      {
+        "id": "ue_sm3",
+        "question": "The shop is having a huge _____. Everything is 50% off!",
+        "translation": "(У магазині величезний розпродаж. На все знижка 50%!)",
+        "options": [
+          "sale",
+          "sell",
+          "discount",
+          "deal"
+        ],
+        "correct": "sale",
+        "explanation": "SALE (розпродаж): 'A huge SALE'. SALE vs SELL: SALE = розпродаж/продаж (іменник), SELL = продавати (дієслово). ON SALE = 1) у продажу: 'Tickets go on sale Monday', 2) зі знижкою (AmE): '50% off — on sale now!'. FOR SALE = продається: 'House for sale'. DISCOUNT = знижка: 'a 20% discount'. DEAL/BARGAIN = вигідна покупка: 'What a bargain!' В українській: 'Розпродаж', 'Знижка', 'Акція'. 'Акція' в англійській = PROMOTION/SPECIAL OFFER."
+      },
+      {
+        "id": "ue_sm4",
+        "question": "Can I try this _____ before I buy it?",
+        "translation": "(Чи можу я це приміряти перед покупкою?)",
+        "options": [
+          "on",
+          "out",
+          "up",
+          "in"
+        ],
+        "correct": "on",
+        "explanation": "TRY ON (приміряти одяг): 'Can I TRY this ON?' TRY ON = приміряти одяг/взуття. TRY OUT = спробувати/протестувати (продукт, ідею). 'Try on these shoes' vs 'Try out this new app'. Фразове дієслово — роздільне: 'Try IT on' (займенник між). 'Where's the fitting room?' / 'Where can I try this on?' В магазині: 'Can I try this on?' → 'The fitting room is over there.' В українській: 'Приміряти' — одне слово. В англійській: TRY ON — дві частини."
+      },
+      {
+        "id": "ue_sm5",
+        "question": "I'm just _____, thank you. I'm not looking for anything specific.",
+        "translation": "(Я просто дивлюся, дякую. Не шукаю нічого конкретного.)",
+        "options": [
+          "browsing",
+          "buying",
+          "searching",
+          "looking for"
+        ],
+        "correct": "browsing",
+        "explanation": "I'M JUST BROWSING (стандартна відповідь у магазині): Коли продавець питає 'Can I help you?', стандартна відповідь: 'I'm just browsing/looking, thanks'. BROWSE = дивитися без наміру купити. WINDOW SHOPPING = дивитися вітрини. 'Can I help you?' — 'No thanks, I'm just looking.' Також: 'I'm looking for...' (шукаю щось конкретне). В українській: 'Я просто дивлюся' — ідентична фраза. Ввічливість магазинного діалогу однакова в обох культурах."
+      },
+      {
+        "id": "ue_sm6",
+        "question": "Could I have the _____, please? I want to return this item.",
+        "translation": "(Чи можу я отримати чек, будь ласка? Хочу повернути цей товар.)",
+        "options": [
+          "receipt",
+          "recipe",
+          "bill",
+          "check"
+        ],
+        "correct": "receipt",
+        "explanation": "RECEIPT (чек/квитанція): 'Could I have the RECEIPT?' RECEIPT = /rɪˈsiːt/ (P мовчить!) — касовий чек. Не плутайте: RECEIPT (чек) vs RECIPE (рецепт кулінарний) vs BILL (рахунок в ресторані) vs CHECK (AmE для рахунку). 'Keep the receipt for returns' (збережіть чек для повернення). REFUND = повернення грошей: 'Can I get a refund?' EXCHANGE = обмін: 'Can I exchange this for a smaller size?' В українській: 'Чек' = receipt або bill залежно від контексту."
+      },
+      {
+        "id": "ue_sm7",
+        "question": "I can't _____ that car. It's too expensive for me.",
+        "translation": "(Я не можу собі дозволити ту машину. Вона занадто дорога для мене.)",
+        "options": [
+          "afford",
+          "effort",
+          "offer",
+          "effect"
+        ],
+        "correct": "afford",
+        "explanation": "AFFORD (мати фінансову можливість): 'I can't AFFORD that car'. CAN'T AFFORD = 'не можу собі дозволити'. Завжди з CAN/CAN'T: 'Can you afford it?', 'We can't afford to eat out every night'. Не плутайте: AFFORD (дозволити собі), EFFORT (зусилля), OFFER (пропонувати), EFFECT (ефект). AFFORD + to + V: 'I can't afford TO buy a house'. AFFORDABLE = доступний за ціною: 'affordable housing'. В українській: 'Дозволити собі' — фраза, не одне слово як AFFORD."
+      },
+      {
+        "id": "ue_sm8",
+        "question": "Do you have this in a different _____?",
+        "translation": "(Чи є це в іншому розмірі?)",
+        "options": [
+          "size",
+          "number",
+          "measure",
+          "volume"
+        ],
+        "correct": "size",
+        "explanation": "SIZE (розмір одягу/взуття): 'In a different SIZE'. Розміри одягу: SMALL (S), MEDIUM (M), LARGE (L), EXTRA LARGE (XL). 'What size are you?' 'I'm a medium.' Взуття: 'Size 42' (EUR) = 'Size 8' (UK) = 'Size 9' (US). Різні системи розмірів! 'Do you have this in a larger size?' 'Do you have this in blue?' (колір). В українській: 'Розмір' — так само. Але системи розмірів різні в різних країнах — завжди уточнюйте."
+      },
+      {
+        "id": "ue_sm9",
+        "question": "She _____ a fortune on designer clothes last month.",
+        "translation": "(Вона витратила цілий стан на дизайнерський одяг минулого місяця.)",
+        "options": [
+          "spent",
+          "spend",
+          "costed",
+          "paid"
+        ],
+        "correct": "spent",
+        "explanation": "SPEND money ON something (витрачати): 'She SPENT a fortune ON clothes'. SPEND-SPENT-SPENT (нерегулярне). SPEND + money + ON + noun: 'spend £50 on shoes'. SPEND + time + V-ING: 'spend hours shopping'. PAY FOR = платити за: 'I paid for dinner'. COST = коштувати (суб'єкт = товар): 'The dress cost £200'. SPEND (людина витрачає) vs COST (річ коштує). В українській: 'Витратити на' = SPEND ON. 'Коштувати' = COST. Аналогічна логіка."
+      },
+      {
+        "id": "ue_sm10",
+        "question": "I always look for good _____ when I go shopping.",
+        "translation": "(Я завжди шукаю вигідні пропозиції, коли ходжу за покупками.)",
+        "options": [
+          "deals",
+          "steals",
+          "prices",
+          "trades"
+        ],
+        "correct": "deals",
+        "explanation": "DEALS/BARGAINS (вигідні пропозиції): 'Good DEALS'. DEAL = вигідна пропозиція: 'What a great deal!'. BARGAIN = вигідна покупка: 'This coat was a real bargain'. Різниця: DEAL = пропозиція (може бути спеціальна ціна), BARGAIN = конкретна покупка за хорошою ціною. 'A good deal on flights' (вигідна ціна на квитки). BUY ONE GET ONE FREE (BOGOF) = купи один — другий безкоштовно. В українській: 'Вигідна пропозиція', 'Акція', 'Знижка'. 'Вигідна покупка' = BARGAIN."
+      },
+      {
+        "id": "ue_sm11",
+        "question": "The total comes _____ £45.99.",
+        "translation": "(Загальна сума складає £45.99.)",
+        "options": [
+          "to",
+          "at",
+          "for",
+          "in"
+        ],
+        "correct": "to",
+        "explanation": "COME TO (сума дорівнює): 'The total COMES TO £45.99'. COME TO = 'складає, дорівнює' (для суми). 'That comes to $30 altogether.' Фрази касира: 'That'll be £20' (= That will be). 'Would you like a bag?' 'Do you need a receipt?' 'Cash or card?' Відповіді покупця: 'Here you go' (подаючи гроші/картку). 'Keep the change' (залиште решту). В українській: 'Загальна сума...' або '(Все) разом буде...' — без прийменника TO."
+      },
+      {
+        "id": "ue_sm12",
+        "question": "This jacket is way too _____. Let's find something cheaper.",
+        "translation": "(Ця куртка занадто дорога. Давай знайдемо щось дешевше.)",
+        "options": [
+          "expensive",
+          "expansive",
+          "expend",
+          "expenditure"
+        ],
+        "correct": "expensive",
+        "explanation": "EXPENSIVE vs CHEAP (ціна): 'Way too EXPENSIVE'. Шкала ціни: DIRT CHEAP (копійки) < CHEAP/INEXPENSIVE < REASONABLE/AFFORDABLE < PRICEY (дорогуватий) < EXPENSIVE/COSTLY < OVERPRICED (завищена ціна) < EXTORTIONATE (грабіжна ціна). WAY TOO = 'набагато занадто' (підсилювач). 'Way too expensive' > 'too expensive'. DEAR = дорогий (BrE, неформальне): 'That's a bit dear'. В українській: 'Дорого', 'Дешево', 'За копійки', 'Заоблачна ціна' — аналогічна шкала."
+      },
+      {
+        "id": "ue_sm13",
+        "question": "I need to _____ some money from the ATM.",
+        "translation": "(Мені потрібно зняти гроші з банкомата.)",
+        "options": [
+          "withdraw",
+          "draw",
+          "take out",
+          "remove"
+        ],
+        "correct": "withdraw",
+        "explanation": "WITHDRAW money (зняти гроші): 'WITHDRAW from ATM'. WITHDRAW = формальне. TAKE OUT = розмовне: 'I need to take out some cash'. ATM (AmE) = CASHPOINT/CASH MACHINE (BrE). Банківська лексика: DEPOSIT (покласти на рахунок), WITHDRAW (зняти), TRANSFER (перевести), BALANCE (баланс), STATEMENT (виписка). 'Check your balance', 'Make a deposit', 'Transfer funds'. В українській: 'Зняти гроші', 'Покласти на рахунок', 'Переказати'. Банкомат = ATM/банкомат."
+      },
+      {
+        "id": "ue_sm14",
+        "question": "Could you give me a _____ on this if I buy two?",
+        "translation": "(Чи можете ви мені дати знижку, якщо я куплю два?)",
+        "options": [
+          "discount",
+          "decrease",
+          "reduce",
+          "lower"
+        ],
+        "correct": "discount",
+        "explanation": "DISCOUNT (знижка — іменник): 'Give me a DISCOUNT'. DISCOUNT = знижка на ціну. 'A 10% discount', 'Student discount', 'Get a discount'. Не плутайте: DISCOUNT (знижка — NOUN) vs REDUCE (зменшити ціну — VERB). 'The price has been reduced' = 'Ціну знижено'. HALF PRICE = за півціни. 'Buy one get one free' = 2 за ціною 1. В українській: 'Знижка', 'Акція', 'Зробити знижку'. Торг: 'Can you do any better on the price?' (Чи можна дешевше?)."
+      },
+      {
+        "id": "ue_sm15",
+        "question": "I'm saving _____ for a new laptop.",
+        "translation": "(Я відкладаю гроші на новий ноутбук.)",
+        "options": [
+          "up",
+          "on",
+          "in",
+          "at"
+        ],
+        "correct": "up",
+        "explanation": "SAVE UP (for) — відкладати гроші: 'SAVING UP FOR a laptop'. SAVE UP = накопичувати поступово. SAVE = зберегти/заощадити: 'Save money every month'. SAVE UP = цілеспрямоване накопичення НА ЩОСЬ. 'I've been saving up for months'. Фінансова лексика: SAVE (заощаджувати), SPEND (витрачати), WASTE (марнувати), INVEST (інвестувати), LEND (позичити КОМУСЬ), BORROW (позичити В КОГОСЬ). LEND vs BORROW — одна з найчастіших помилок! В українській: 'Відкладати на', 'Заощаджувати', 'Збирати на'."
+      }
+    ]
+  },
+  {
+    "key": "housing_home",
+    "name": "Housing & Home",
+    "description": "Житло та дім (лексика та конструкції)",
+    "iconName": "house.fill",
+    "color": "#92400e",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ue_hh1",
+        "question": "We _____ into our new flat last weekend.",
+        "translation": "(Ми переїхали в нашу нову квартиру минулих вихідних.)",
+        "options": [
+          "moved",
+          "move",
+          "moving",
+          "have move"
+        ],
+        "correct": "moved",
+        "explanation": "MOVE INTO (переїхати В): 'We MOVED INTO our new flat'. Фразові дієслова з MOVE: MOVE IN (заселитися), MOVE OUT (виїхати), MOVE INTO (переїхати в), MOVE OUT OF (виїхати з). 'When are you moving in?' 'I need to move out by Friday.' FLAT (BrE) = APARTMENT (AmE). Ще: STUDIO (студія), BEDSIT (кімната з ліжком), MAISONETTE (дворівнева квартира — BrE). В українській: 'Переїхати в', 'Виїхати з' — прості дієслова з прийменниками."
+      },
+      {
+        "id": "ue_hh2",
+        "question": "The _____ is very high in this area. I can barely afford it.",
+        "translation": "(Оренда тут дуже висока. Я ледве можу собі її дозволити.)",
+        "options": [
+          "rent",
+          "renting",
+          "rental",
+          "hiring"
+        ],
+        "correct": "rent",
+        "explanation": "RENT (оренда/орендна плата): 'The RENT is high'. RENT = іменник (орендна плата) І дієслово (орендувати). 'Pay the rent' (заплатити оренду). 'Rent a flat' (орендувати квартиру). LANDLORD/LANDLADY = орендодавець. TENANT = орендар. LEASE = договір оренди. DEPOSIT = застава/депозит. 'Sign a lease', 'Pay a deposit'. MORTGAGE = іпотека: 'Pay the mortgage'. В українській: 'Оренда', 'Орендувати', 'Орендодавець', 'Орендар' — ідентична структура."
+      },
+      {
+        "id": "ue_hh3",
+        "question": "Can you help me _____ the furniture in the living room?",
+        "translation": "(Чи можеш ти допомогти мені розставити меблі у вітальні?)",
+        "options": [
+          "arrange",
+          "range",
+          "set",
+          "fix"
+        ],
+        "correct": "arrange",
+        "explanation": "ARRANGE furniture (розставити меблі): Кімнати в будинку: LIVING ROOM/LOUNGE (вітальня), BEDROOM (спальня), KITCHEN (кухня), BATHROOM (ванна), DINING ROOM (їдальня), HALL/HALLWAY (коридор), ATTIC (горище), BASEMENT/CELLAR (підвал), STUDY (кабінет), UTILITY ROOM (господарча кімната). Меблі (FURNITURE — незлічуване!): 'A PIECE of furniture' (не 'a furniture'!). В українській: 'Меблі' = множина. В англійській: FURNITURE = однина, незлічуване."
+      },
+      {
+        "id": "ue_hh4",
+        "question": "The house has a beautiful _____ with roses and a big lawn.",
+        "translation": "(У будинку є гарний сад з трояндами та великий газон.)",
+        "options": [
+          "garden",
+          "yard",
+          "park",
+          "field"
+        ],
+        "correct": "garden",
+        "explanation": "GARDEN (BrE) vs YARD (AmE): В BrE GARDEN = ділянка біля дому з рослинами, газоном. В AmE YARD = ділянка (BACKYARD = задній двір, FRONT YARD = перед дім). GARDEN в AmE = лише гряди з рослинами. LAWN = газон. HEDGE = живопліт. FENCE = паркан. PATIO = тераса/майданчик. SHED = сарай/будка. GREENHOUSE = теплиця. В українській: 'Сад' (з деревами), 'Город' (овочі), 'Двір' (ділянка). Англійська не розрізняє 'сад' і 'город'."
+      },
+      {
+        "id": "ue_hh5",
+        "question": "We need to _____ the kitchen. It's very old and outdated.",
+        "translation": "(Нам потрібно відремонтувати кухню. Вона дуже стара та застаріла.)",
+        "options": [
+          "renovate",
+          "innovate",
+          "decorate",
+          "generate"
+        ],
+        "correct": "renovate",
+        "explanation": "RENOVATE (капітально відремонтувати): 'RENOVATE the kitchen'. RENOVATE = капітальний ремонт (стіни, підлога, техніка). REDECORATE = перефарбувати/оновити оздоблення. DO UP = відремонтувати (розмовне): 'We're doing up the bathroom'. MAKEOVER = оновлення вигляду. DIY = Do It Yourself (своїми руками). 'She's very good at DIY.' REFURBISH = відновити (для будівель, офісів). В українській: 'Ремонт', 'Зробити ремонт', 'Оновити'. 'Євроремонт' — не має еквівалента в англійській!"
+      },
+      {
+        "id": "ue_hh6",
+        "question": "Please _____ the lights when you leave the room.",
+        "translation": "(Будь ласка, вимкни світло, коли виходиш з кімнати.)",
+        "options": [
+          "turn off",
+          "turn on",
+          "turn up",
+          "turn down"
+        ],
+        "correct": "turn off",
+        "explanation": "TURN OFF / TURN ON (вимкнути/ввімкнути): Побутові фразові дієслова: TURN ON (ввімкнути), TURN OFF (вимкнути), TURN UP (зробити гучніше/тепліше), TURN DOWN (зробити тихіше/холодніше), PLUG IN (підключити до розетки), UNPLUG (витягнути з розетки). 'Turn on the TV', 'Turn off the heater', 'Turn up the volume', 'Turn down the music'. SWITCH ON/OFF = те ж саме (BrE). В українській: 'Ввімкнути/Вимкнути', 'Зробити гучніше/тихіше' — прості дієслова."
+      },
+      {
+        "id": "ue_hh7",
+        "question": "The _____ is leaking. We need to call a plumber.",
+        "translation": "(Кран тече. Потрібно викликати сантехніка.)",
+        "options": [
+          "tap",
+          "top",
+          "pipe",
+          "tube"
+        ],
+        "correct": "tap",
+        "explanation": "TAP (BrE) vs FAUCET (AmE) = кран: 'The TAP is leaking'. Домашні проблеми: LEAK (тече), BLOCK/CLOG (засмітило): 'The drain is blocked'. BREAK DOWN (зламатися): 'The washing machine broke down'. Спеціалісти: PLUMBER (сантехнік), ELECTRICIAN (електрик), CARPENTER (тесляр), PAINTER/DECORATOR (маляр), LOCKSMITH (слюсар). 'Call a plumber' = 'Викликати сантехніка'. В українській: 'Кран тече' — ідентична конструкція. 'Сантехнік' = PLUMBER."
+      },
+      {
+        "id": "ue_hh8",
+        "question": "I live on the third _____ of an apartment building.",
+        "translation": "(Я живу на третьому поверсі багатоповерхового будинку.)",
+        "options": [
+          "floor",
+          "story",
+          "level",
+          "stage"
+        ],
+        "correct": "floor",
+        "explanation": "FLOOR (поверх — для адреси): 'On the third FLOOR'. FLOOR = поверх (де ви живете): 'I live on the 5th floor'. STOREY (BrE) / STORY (AmE) = поверх (при описі будівлі): 'A 10-storey building'. GROUND FLOOR (BrE) = FIRST FLOOR (AmE) = перший поверх! FIRST FLOOR (BrE) = SECOND FLOOR (AmE) = другий! Це джерело плутанини: BrE рахує від 0 (ground), AmE — від 1. В українській: 'Перший поверх' = як AmE. BrE 'first floor' = наш другий!"
+      },
+      {
+        "id": "ue_hh9",
+        "question": "Could you _____ the door, please? Someone is knocking.",
+        "translation": "(Чи можеш ти відчинити двері, будь ласка? Хтось стукає.)",
+        "options": [
+          "answer",
+          "open",
+          "reply",
+          "respond"
+        ],
+        "correct": "answer",
+        "explanation": "ANSWER THE DOOR (відчинити двері на стук): 'ANSWER the door'. В англійській: ANSWER = не тільки 'відповісти', а й 'відчинити'! ANSWER THE DOOR = відчинити на стук. ANSWER THE PHONE = взяти трубку. GET THE DOOR (розмовне) = те ж саме. 'Can you get the door?' Ще: LOCK (замкнути), UNLOCK (відімкнути), SLAM (гримнути дверима), SHUT/CLOSE (зачинити). В українській: 'Відчинити двері' (не 'відповісти на двері'). Хибний друг конструкцій!"
+      },
+      {
+        "id": "ue_hh10",
+        "question": "The _____ in this building is very slow. Let's take the stairs.",
+        "translation": "(Ліфт у цій будівлі дуже повільний. Давай підемо сходами.)",
+        "options": [
+          "lift",
+          "elevator",
+          "escalator",
+          "stairs"
+        ],
+        "correct": "lift",
+        "explanation": "LIFT (BrE) vs ELEVATOR (AmE) = ліфт. ESCALATOR = ескалатор (рухомі сходи). STAIRS = сходи (звичайні, нерухомі). 'Take the lift/elevator to the 5th floor.' 'Take the stairs — it's only two floors.' BrE/AmE відмінності в будівлі: FLAT/APARTMENT, GARDEN/YARD, LIFT/ELEVATOR, GROUND FLOOR/FIRST FLOOR, CAR PARK/PARKING LOT, POSTBOX/MAILBOX. В українській: 'Ліфт' (з англійської LIFT), 'Ескалатор', 'Сходи' — прямі відповідники."
+      },
+      {
+        "id": "ue_hh11",
+        "question": "She put the dirty clothes in the washing _____.",
+        "translation": "(Вона поклала брудний одяг у пральну машину.)",
+        "options": [
+          "machine",
+          "cleaner",
+          "washer",
+          "dryer"
+        ],
+        "correct": "machine",
+        "explanation": "WASHING MACHINE (пральна машина): Побутова техніка: WASHING MACHINE (пральна), DISHWASHER (посудомийна), DRYER/TUMBLE DRYER (сушильна), FRIDGE (холодильник), FREEZER (морозилка), OVEN (духовка), MICROWAVE (мікрохвильовка), TOASTER (тостер), KETTLE (чайник), VACUUM CLEANER/HOOVER (BrE) (пилосос). DO THE LAUNDRY = прати. DO THE WASHING-UP (BrE) = мити посуд. В українській: подібні складені слова: 'пральна машина', 'посудомийна машина'."
+      },
+      {
+        "id": "ue_hh12",
+        "question": "We need to _____ the house before the guests arrive.",
+        "translation": "(Нам потрібно прибрати будинок перед приїздом гостей.)",
+        "options": [
+          "tidy up",
+          "tidy in",
+          "tidy at",
+          "tidy for"
+        ],
+        "correct": "tidy up",
+        "explanation": "TIDY UP (прибрати, навести порядок): 'TIDY UP the house'. Домашні обов'язки: TIDY UP/CLEAN UP (прибрати), HOOVER/VACUUM (пилососити), MOP (мити підлогу шваброю), DUST (витирати пил), DO THE WASHING (прати), IRON (прасувати), TAKE OUT THE RUBBISH/TRASH (винести сміття). DO THE CHORES = робити хатню роботу. HOUSEWORK = хатня робота (незлічуване). В українській: 'Прибрати', 'Пилососити', 'Мити', 'Прасувати' — аналогічні окремі дієслова."
+      },
+      {
+        "id": "ue_hh13",
+        "question": "The _____ needs to be fixed. We have no hot water.",
+        "translation": "(Бойлер потрібно полагодити. У нас немає гарячої води.)",
+        "options": [
+          "boiler",
+          "heater",
+          "cooker",
+          "radiator"
+        ],
+        "correct": "boiler",
+        "explanation": "BOILER (бойлер/водонагрівач): 'The BOILER needs fixing'. Системи в будинку: BOILER (бойлер — нагріває воду і опалення), RADIATOR (батарея/радіатор), HEATER (обігрівач), AIR CONDITIONING (кондиціонер), CENTRAL HEATING (центральне опалення). 'Turn up the heating' (зробити тепліше). COOKER (BrE) = STOVE (AmE) = плита. Не плутайте: COOKER = плита, NOT 'кухар' (= COOK). В українській: 'Бойлер', 'Батарея', 'Обігрівач' — більшість запозичені."
+      },
+      {
+        "id": "ue_hh14",
+        "question": "I'm looking for a furnished _____ to rent near the city centre.",
+        "translation": "(Я шукаю мебльовану квартиру в оренду біля центру міста.)",
+        "options": [
+          "flat",
+          "ground",
+          "place",
+          "room"
+        ],
+        "correct": "flat",
+        "explanation": "FURNISHED FLAT (мебльована квартира): FURNISHED = з меблями, UNFURNISHED = без меблів. Типи житла: FLAT/APARTMENT (квартира), HOUSE (будинок), DETACHED HOUSE (окремий), SEMI-DETACHED (половина будинку), TERRACED HOUSE (рядний), BUNGALOW (одноповерховий), COTTAGE (котедж), MANSION (особняк), PENTHOUSE (пентхаус). В українській: 'Квартира', 'Будинок', 'Котедж'. 'Хрущовка', 'п'ятиповерхівка' — специфічно українські, без еквіваленту."
+      },
+      {
+        "id": "ue_hh15",
+        "question": "The neighbours are very noisy. They _____ loud music every night.",
+        "translation": "(Сусіди дуже шумні. Вони щовечора грають гучну музику.)",
+        "options": [
+          "play",
+          "make",
+          "do",
+          "give"
+        ],
+        "correct": "play",
+        "explanation": "PLAY music (грати музику): Колокації зі звуками: PLAY music (грати), MAKE noise (шуміти — не 'do noise'!), TURN DOWN the music (зробити тихіше). Проблеми з сусідами: 'The neighbours are noisy', 'They play loud music', 'They have parties late at night'. Скарги: 'Could you keep the noise down?' (Чи могли б ви бути тихіше?). NEIGHBOUR (BrE) / NEIGHBOR (AmE). В українській: 'Грати музику', 'Шуміти' — аналогічні колокації."
+      }
+    ]
+  },
+  {
+    "key": "transport_directions",
+    "name": "Transport & Directions",
+    "description": "Транспорт та напрямки руху",
+    "iconName": "bus.fill",
+    "color": "#0369a1",
+    "level": "beginner",
+    "items": [
+      {
+        "id": "ue_td1",
+        "question": "Excuse me, how do I _____ to the train station?",
+        "translation": "(Вибачте, як дістатися до залізничного вокзалу?)",
+        "options": [
+          "get",
+          "go",
+          "arrive",
+          "reach"
+        ],
+        "correct": "get",
+        "explanation": "HOW DO I GET TO...? (як дістатися?): Стандартне питання про дорогу. GET TO = дістатися до місця. 'How do I get to the airport?' 'How do I get to your office?' Ще: 'Could you tell me the way to...?', 'Is it far from here?', 'Which way is the station?' GO TO = йти до (процес), GET TO = дістатися (результат), ARRIVE AT/IN = прибути. ARRIVE AT (точка: station), ARRIVE IN (місто/країна). В українській: 'Як дістатися до...?' — ідентична конструкція з GET TO."
+      },
+      {
+        "id": "ue_td2",
+        "question": "Turn left at the traffic _____ and the hospital is on your right.",
+        "translation": "(Поверніть ліворуч на світлофорі, і лікарня буде праворуч.)",
+        "options": [
+          "lights",
+          "light",
+          "signal",
+          "lamp"
+        ],
+        "correct": "lights",
+        "explanation": "TRAFFIC LIGHTS (світлофор — завжди множина!): 'At the traffic LIGHTS'. TRAFFIC LIGHTS = завжди PLURAL в BrE ('light' можливо в AmE). Навігаційні фрази: TURN LEFT/RIGHT (поверніть ліворуч/праворуч), GO STRAIGHT ON (їдьте прямо), AT THE CROSSROADS (на перехресті), AT THE JUNCTION (на розвилці), AT THE ROUNDABOUT (на кільці). ON YOUR LEFT/RIGHT = 'зліва/справа від вас'. В українській: 'Світлофор' (однина) vs TRAFFIC LIGHTS (множина). Граматична різниця."
+      },
+      {
+        "id": "ue_td3",
+        "question": "I usually go to work _____ bus.",
+        "translation": "(Я зазвичай їжджу на роботу автобусом.)",
+        "options": [
+          "by",
+          "on",
+          "in",
+          "with"
+        ],
+        "correct": "by",
+        "explanation": "BY + TRANSPORT (без артикля): 'Go BY bus'. BY bus, BY car, BY train, BY plane, BY bike, BY taxi. Без THE! ❌ 'by the bus'. АЛЕ: ON FOOT (пішки — не 'by foot'!). IN A CAR (конкретна машина): 'I came in John's car'. ON A BUS/TRAIN (на конкретному): 'I'm on the bus now'. BY = як вид транспорту (загальне). ON/IN = на конкретному транспорті. В українській: 'Автобусом' (орудний відмінок) — без прийменника. Англійська потребує BY."
+      },
+      {
+        "id": "ue_td4",
+        "question": "The museum is _____ the library and the post office.",
+        "translation": "(Музей знаходиться між бібліотекою та поштою.)",
+        "options": [
+          "between",
+          "among",
+          "beside",
+          "across"
+        ],
+        "correct": "between",
+        "explanation": "BETWEEN (між двома): 'BETWEEN the library AND the post office'. BETWEEN = між ДВОМА конкретними об'єктами. AMONG = серед БАГАТЬОХ: 'among the crowd'. Прийменники місця: BETWEEN (між), OPPOSITE (навпроти), NEXT TO/BESIDE (поруч), NEAR/CLOSE TO (біля), BEHIND (позаду), IN FRONT OF (попереду), ACROSS FROM (через дорогу). 'The bank is opposite the park', 'The shop is next to the café'. В українській: 'Між', 'Навпроти', 'Поруч' — аналогічні прийменники."
+      },
+      {
+        "id": "ue_td5",
+        "question": "Go _____ on this road for about 200 metres.",
+        "translation": "(Їдьте прямо цією дорогою близько 200 метрів.)",
+        "options": [
+          "straight",
+          "right",
+          "forward",
+          "direct"
+        ],
+        "correct": "straight",
+        "explanation": "GO STRAIGHT (їхати прямо): 'Go STRAIGHT on'. STRAIGHT = прямо, без поворотів. GO STRAIGHT ON/AHEAD. Ще напрямки: TURN LEFT/RIGHT (повернути), GO PAST (проїхати повз), TAKE THE FIRST/SECOND LEFT (перший/другий поворот ліворуч), GO THROUGH (проїхати через), CROSS THE ROAD (перейти дорогу), GO ALONG (їхати вздовж). 'Go along this street, take the second right, and it's on your left.' В українській: 'Прямо', 'Повернути', 'Проїхати повз' — аналогічні."
+      },
+      {
+        "id": "ue_td6",
+        "question": "I missed my _____ and had to wait for the next one.",
+        "translation": "(Я пропустив свій потяг і мав чекати на наступний.)",
+        "options": [
+          "train",
+          "catch",
+          "travel",
+          "trip"
+        ],
+        "correct": "train",
+        "explanation": "MISS A TRAIN/BUS/FLIGHT (пропустити транспорт): 'I MISSED my train'. MISS = запізнитися і не сісти. CATCH = встигнути: 'I need to catch the 8:15 train'. GET ON/OFF = сісти/зійти: 'Get on at Oxford Street, get off at Baker Street'. CHANGE (trains) = пересісти: 'Change at Victoria'. DIRECT TRAIN = прямий (без пересадок). В українській: 'Запізнився на потяг', 'Встигнути на автобус', 'Пересісти' — ідентичні конструкції."
+      },
+      {
+        "id": "ue_td7",
+        "question": "Is this the right _____ for the airport?",
+        "translation": "(Це правильна платформа для аеропорту?)",
+        "options": [
+          "platform",
+          "station",
+          "stop",
+          "terminal"
+        ],
+        "correct": "platform",
+        "explanation": "PLATFORM (платформа — для поїзда): Транспортні терміни: PLATFORM (залізнична платформа), STOP (зупинка автобуса/трамвая), TERMINAL (термінал аеропорту), GATE (вихід на посадку), STATION (вокзал/станція), DEPOT (депо). 'Platform 2 for the London train'. 'The bus stop is around the corner'. 'Go to Gate 15'. 'Departures' (відправлення) vs 'Arrivals' (прибуття). В українській: 'Платформа', 'Зупинка', 'Термінал' — більшість запозичені з англійської/французської."
+      },
+      {
+        "id": "ue_td8",
+        "question": "We got stuck in a traffic _____ for two hours.",
+        "translation": "(Ми застрягли у пробці на дві години.)",
+        "options": [
+          "jam",
+          "block",
+          "stop",
+          "hold"
+        ],
+        "correct": "jam",
+        "explanation": "TRAFFIC JAM (пробка): 'Stuck in a TRAFFIC JAM'. JAM = буквально 'заклинювання'. Дорожні проблеми: TRAFFIC JAM (пробка), RUSH HOUR (година пік), CONGESTION (затори — формальне), ROADWORKS (дорожні роботи), DETOUR/DIVERSION (об'їзд), ACCIDENT/CRASH (аварія). 'There's heavy traffic on the M25'. HEAVY TRAFFIC = інтенсивний рух. LIGHT TRAFFIC = невеликий рух. В українській: 'Пробка', 'Затор', 'Година пік' — 'пробка' найрозмовніше."
+      },
+      {
+        "id": "ue_td9",
+        "question": "I'd like a _____ ticket to Manchester, please.",
+        "translation": "(Я хотів би квиток туди й назад до Манчестера, будь ласка.)",
+        "options": [
+          "return",
+          "single",
+          "round",
+          "double"
+        ],
+        "correct": "return",
+        "explanation": "RETURN TICKET (BrE) vs ROUND-TRIP TICKET (AmE) = туди й назад. SINGLE (BrE) = ONE-WAY (AmE) = тільки в один бік. 'A return to London, please.' 'A single to Oxford, please.' Ще на вокзалі: 'Which platform?' 'Is this train direct?' 'Do I need to change?' 'When's the next train to...?' PEAK (пік — дорожче) vs OFF-PEAK (не пік — дешевше). В українській: 'В один бік', 'Туди й назад' — описові фрази. RETURN = стисліше."
+      },
+      {
+        "id": "ue_td10",
+        "question": "You need to _____ at the next stop and take the number 5 bus.",
+        "translation": "(Вам потрібно зійти на наступній зупинці і сісти на автобус №5.)",
+        "options": [
+          "get off",
+          "get on",
+          "get in",
+          "get out"
+        ],
+        "correct": "get off",
+        "explanation": "GET ON/OFF (для громадського транспорту): 'GET OFF at the next stop'. GET ON = сісти на (автобус, потяг, літак, велосипед). GET OFF = зійти з. GET IN = сісти в (таксі, машину). GET OUT OF = вийти з (таксі, машини). Правило: ON/OFF для ВЕЛИКОГО транспорту (стоїте/ходите всередині), IN/OUT для МАЛЕНЬКОГО (сидите). 'Get on the bus' vs 'Get in the car'. В українській: 'Сісти на автобус', 'Зійти', 'Сісти в машину' — аналогічна логіка."
+      },
+      {
+        "id": "ue_td11",
+        "question": "The post office is just _____ the corner.",
+        "translation": "(Пошта знаходиться за рогом.)",
+        "options": [
+          "around",
+          "in",
+          "at",
+          "on"
+        ],
+        "correct": "around",
+        "explanation": "AROUND THE CORNER (за рогом): 'Just AROUND the corner'. Прийменники напрямку: AROUND/ROUND the corner (за рогом), ALONG the road (вздовж дороги), THROUGH the tunnel (через тунель), OVER/ACROSS the bridge (через міст), PAST the church (повз церкву), UP/DOWN the hill (вгору/вниз пагорбом). 'Go along the road, past the park, and it's around the corner.' В українській: 'За рогом', 'Вздовж', 'Через', 'Повз' — прийменники подібні."
+      },
+      {
+        "id": "ue_td12",
+        "question": "Can I have a _____ fare to the city centre, please?",
+        "translation": "(Чи можу я дитячий квиток до центру, будь ласка?)",
+        "options": [
+          "child",
+          "children",
+          "kid",
+          "young"
+        ],
+        "correct": "child",
+        "explanation": "CHILD FARE (дитячий тариф): Типи тарифів: ADULT FARE (дорослий), CHILD FARE (дитячий), STUDENT FARE (студентський), SENIOR/PENSIONER FARE (пенсіонерський), CONCESSIONARY FARE (пільговий). FARE = вартість проїзду (не TICKET!): 'What's the fare to town?' FARE = ціна, TICKET = документ. 'The bus fare is £2', 'I bought a ticket'. В українській: 'Тариф', 'Вартість проїзду', 'Квиток' — аналогічне розрізнення."
+      },
+      {
+        "id": "ue_td13",
+        "question": "The nearest underground _____ is about five minutes' walk.",
+        "translation": "(Найближча станція метро — приблизно п'ять хвилин пішки.)",
+        "options": [
+          "station",
+          "stop",
+          "platform",
+          "terminal"
+        ],
+        "correct": "station",
+        "explanation": "UNDERGROUND STATION (станція метро): UNDERGROUND (BrE) = SUBWAY (AmE) = METRO (загальне) = метро. THE TUBE (London). 'Take the underground to Oxford Circus'. MAP = METRO MAP (схема метро). LINE = лінія: 'Take the Central Line'. Відстань: 'five minutes' walk' (п'ять хвилин пішки — присвійний!). НЕ 'five minutes walking'. 'Ten minutes' drive' (десять хвилин їзди). В українській: 'Метро', 'Станція метро'. 'П'ять хвилин ходьби'."
+      },
+      {
+        "id": "ue_td14",
+        "question": "I need to _____ a taxi. Can you call one for me?",
+        "translation": "(Мені потрібно викликати таксі. Чи можете ви замовити мені одне?)",
+        "options": [
+          "book",
+          "order",
+          "buy",
+          "hire"
+        ],
+        "correct": "book",
+        "explanation": "BOOK A TAXI (замовити таксі): BOOK = замовити заздалегідь. HAIL A TAXI = зупинити на вулиці (піднявши руку). CALL A TAXI = зателефонувати і замовити. CATCH A TAXI = сісти в таксі. UBER/GRAB = замовити через додаток. 'Hail a black cab in London', 'Book an Uber'. TAXI (загальне) = CAB (AmE/BrE) = MINICAB (BrE, приватне). DRIVER = водій, CABBIE (розмовне). В українській: 'Замовити таксі', 'Зловити таксі' — ідентичні конструкції."
+      },
+      {
+        "id": "ue_td15",
+        "question": "Is there a car _____ near the shopping centre?",
+        "translation": "(Чи є автостоянка поблизу торгового центру?)",
+        "options": [
+          "park",
+          "parking",
+          "lot",
+          "stand"
+        ],
+        "correct": "park",
+        "explanation": "CAR PARK (BrE) vs PARKING LOT (AmE) = автостоянка: 'Is there a CAR PARK nearby?' Стоянка: CAR PARK (BrE), PARKING LOT (AmE), MULTI-STOREY CAR PARK (багатоповерхова стоянка), UNDERGROUND CAR PARK (підземна). PARKING = процес паркування: 'No parking' (паркування заборонено). PARK = дієслово: 'Park the car here'. Ще: PARKING METER (паркомат), PARKING TICKET (штраф). В українській: 'Стоянка', 'Паркінг', 'Парковка' — запозичення з англійської."
+      }
+    ]
+  },
+  {
+    "key": "media_communication",
+    "name": "Media & Communication",
+    "description": "ЗМІ та комунікація (лексика та фрази)",
+    "iconName": "antenna.radiowaves.left.and.right",
+    "color": "#6d28d9",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ue_mcom1",
+        "question": "Did you read the _____ about the election results?",
+        "translation": "(Ти читав статтю про результати виборів?)",
+        "options": [
+          "article",
+          "history",
+          "essay",
+          "story"
+        ],
+        "correct": "article",
+        "explanation": "ARTICLE (стаття в газеті/журналі/онлайн): 'Read the ARTICLE'. Типи медіа-текстів: ARTICLE (стаття), HEADLINE (заголовок), EDITORIAL (редакційна стаття), COLUMN (колонка), REVIEW (рецензія), INTERVIEW (інтерв'ю), REPORT (звіт/репортаж), FEATURE (великий матеріал). 'A newspaper article', 'Read the headlines', 'Write a review'. В українській: 'Стаття', 'Заголовок', 'Колонка', 'Рецензія' — більшість запозичені. STORY = розповідь/новина (не 'історія' в цьому контексті)."
+      },
+      {
+        "id": "ue_mcom2",
+        "question": "The news _____ very shocking. I couldn't believe it.",
+        "translation": "(Новина була дуже шокуючою. Я не міг повірити.)",
+        "options": [
+          "was",
+          "were",
+          "are",
+          "have been"
+        ],
+        "correct": "was",
+        "explanation": "NEWS IS (однина!): 'The news WAS shocking'. NEWS = НЕЗЛІЧУВАНЕ, ОДНИНА! ❌ 'The news were' ❌ 'A news'. Правильно: 'A piece of news', 'Some news', 'The news is good'. Інші непередбачувані незлічувані: INFORMATION (not 'informations'), ADVICE (not 'advices'), FURNITURE (not 'furnitures'), EQUIPMENT (not 'equipments'). 'A piece of advice/information/news'. В українській: 'Новина' (злічуване) vs NEWS (незлічуване). Серйозне граматичне джерело помилок."
+      },
+      {
+        "id": "ue_mcom3",
+        "question": "She _____ a photo of the sunset and posted it online.",
+        "translation": "(Вона зробила фото заходу сонця і опублікувала його онлайн.)",
+        "options": [
+          "took",
+          "made",
+          "did",
+          "got"
+        ],
+        "correct": "took",
+        "explanation": "TAKE A PHOTO (зробити фото): 'She TOOK a photo'. TAKE = зробити фото/відео: 'Take a photo/picture/selfie/video'. Не 'make a photo'! В соціальних мережах: POST (опублікувати), SHARE (поширити), LIKE (лайкнути), COMMENT (прокоментувати), FOLLOW (підписатися), UNFOLLOW (відписатися), BLOCK (заблокувати), TAG (позначити). 'She posted a story', 'He shared a meme'. В українській: 'Зробити фото' (зробити, не взяти). TAKE = 'взяти', але для фото = 'зробити'."
+      },
+      {
+        "id": "ue_mcom4",
+        "question": "I don't watch TV anymore. I prefer to _____ shows online.",
+        "translation": "(Я більше не дивлюся телевізор. Я волію дивитися шоу онлайн.)",
+        "options": [
+          "stream",
+          "flow",
+          "wave",
+          "beam"
+        ],
+        "correct": "stream",
+        "explanation": "STREAM (стрімити/дивитися потоком): 'STREAM shows online'. STREAM = дивитися контент через інтернет у реальному часі. STREAMING SERVICES: Netflix, YouTube, Spotify. Медіа-дієслова: STREAM (стрімити), DOWNLOAD (завантажити), UPLOAD (залити), SUBSCRIBE (підписатися), BINGE-WATCH (дивитися запоєм): 'I binge-watched the whole series in one weekend'. PODCAST = подкаст. VLOG = відеоблог. В українській: 'Стрімити', 'Завантажити', 'Підписатися' — калька або запозичення з англійської."
+      },
+      {
+        "id": "ue_mcom5",
+        "question": "She works as a _____ for a national newspaper.",
+        "translation": "(Вона працює журналісткою в національній газеті.)",
+        "options": [
+          "journalist",
+          "journalism",
+          "journal",
+          "journalist's"
+        ],
+        "correct": "journalist",
+        "explanation": "JOURNALIST (журналіст): Медіа-професії: JOURNALIST (журналіст), REPORTER (репортер), CORRESPONDENT (кореспондент), EDITOR (редактор), ANCHOR/PRESENTER (ведучий), COLUMNIST (колумніст), PHOTOGRAPHER (фотограф), CAMERAMAN/CAMERA OPERATOR (оператор). JOURNALIST = загальний термін. REPORTER = виїжджає на місце подій. CORRESPONDENT = з конкретного напрямку/країни: 'War correspondent', 'Foreign correspondent'. В українській: аналогічні професії та назви."
+      },
+      {
+        "id": "ue_mcom6",
+        "question": "Stop _____ through your phone during dinner!",
+        "translation": "(Перестань гортати телефон під час вечері!)",
+        "options": [
+          "scrolling",
+          "rolling",
+          "turning",
+          "sliding"
+        ],
+        "correct": "scrolling",
+        "explanation": "SCROLL (гортати стрічку): 'Stop SCROLLING through your phone'. Дії з телефоном: SCROLL (гортати), SWIPE (свайпнути), TAP (натиснути), PINCH TO ZOOM (стиснути для збільшення), TYPE (набирати), SEND (надіслати), DELETE (видалити), SCREENSHOT (зробити скріншот). 'Swipe right' (свайпнути вправо — Tinder!). DOOMSCROLLING = нав'язливе гортання негативних новин. В українській: 'Гортати', 'Свайпнути' — частково запозичені, частково свої."
+      },
+      {
+        "id": "ue_mcom7",
+        "question": "The documentary was _____ on Channel 4 last night.",
+        "translation": "(Документальний фільм показували на Channel 4 вчора ввечері.)",
+        "options": [
+          "broadcast",
+          "broadcasted",
+          "broadcasting",
+          "broad cast"
+        ],
+        "correct": "broadcast",
+        "explanation": "BROADCAST (транслювати — нерегулярне!): BROADCAST-BROADCAST-BROADCAST — не змінюється! 'The match was BROADCAST live'. 'The news is broadcast at 6 PM'. BROADCASTER = мовник/телекомпанія: BBC, CNN. LIVE (наживо) vs PRE-RECORDED (записане). ON AIR = у прямому ефірі. 'We're live on air!' Ще: 'Watch live', 'Live stream', 'Breaking news' (термінові новини). В українській: 'Транслювати', 'В прямому ефірі', 'Мовник'."
+      },
+      {
+        "id": "ue_mcom8",
+        "question": "She has over a million _____ on her YouTube channel.",
+        "translation": "(У неї понад мільйон підписників на YouTube-каналі.)",
+        "options": [
+          "subscribers",
+          "subscriptions",
+          "followers",
+          "viewers"
+        ],
+        "correct": "subscribers",
+        "explanation": "SUBSCRIBERS (підписники — YouTube): SUBSCRIBER = підписник (YouTube, newsletter). FOLLOWER = підписник (Instagram, Twitter). VIEWER = глядач. LISTENER = слухач (podcasts, radio). Різниця: SUBSCRIBER = підписався на канал, FOLLOWER = слідкує за акаунтом, VIEWER = просто дивиться. 'Gain followers', 'Lose subscribers', 'Go viral' (стати вірусним). INFLUENCER = інфлюенсер. В українській: 'Підписники', 'Фоловери', 'Глядачі' — запозичення або калька."
+      },
+      {
+        "id": "ue_mcom9",
+        "question": "I need to _____ my phone. The battery is almost dead.",
+        "translation": "(Мені потрібно зарядити телефон. Батарея майже сіла.)",
+        "options": [
+          "charge",
+          "load",
+          "fill",
+          "power"
+        ],
+        "correct": "charge",
+        "explanation": "CHARGE (зарядити): 'I need to CHARGE my phone'. CHARGE = зарядити електронний пристрій. CHARGER = зарядний пристрій. BATTERY = батарея/акумулятор. 'The battery is dead/flat' (батарея сіла). 'Low battery' (низький заряд). 'Fully charged' (повністю заряджений). PLUG IN = підключити до розетки. WIRELESS CHARGING = бездротова зарядка. POWER BANK = зовнішній акумулятор. В українській: 'Зарядити', 'Зарядка', 'Батарея сіла' — аналогічні конструкції."
+      },
+      {
+        "id": "ue_mcom10",
+        "question": "Be careful what you share online. It can affect your _____.",
+        "translation": "(Будь обережний з тим, що ділишся онлайн. Це може вплинути на твою репутацію.)",
+        "options": [
+          "reputation",
+          "repetition",
+          "registration",
+          "regulation"
+        ],
+        "correct": "reputation",
+        "explanation": "REPUTATION (репутація): 'Affect your REPUTATION'. Не плутайте: REPUTATION (репутація), REPETITION (повторення), REGISTRATION (реєстрація), REGULATION (регулювання). Онлайн-безпека: PRIVACY (конфіденційність), SECURITY (безпека), DATA PROTECTION (захист даних), CYBERBULLYING (кібербулінг), FAKE NEWS (фейкові новини), MISINFORMATION (дезінформація). 'Protect your privacy online', 'Don't share personal information'. В українській: більшість термінів = запозичення з англійської."
+      },
+      {
+        "id": "ue_mcom11",
+        "question": "He _____ me a voice message instead of calling.",
+        "translation": "(Він надіслав мені голосове повідомлення замість дзвінка.)",
+        "options": [
+          "sent",
+          "send",
+          "sended",
+          "sending"
+        ],
+        "correct": "sent",
+        "explanation": "SEND-SENT-SENT (надіслати — нерегулярне): 'He SENT me a voice message'. SEND = надіслати (повідомлення, лист, файл). Двоє додатків: SEND + indirect object + direct object: 'Send ME a message' або 'Send a message TO ME'. Комунікація: SEND a message/email/text, RECEIVE (отримати), REPLY (відповісти), FORWARD (переслати), CC (копія), BCC (прихована копія). VOICE MESSAGE = голосове. TEXT (MESSAGE) = текстове. В українській: 'Надіслати', 'Отримати', 'Переслати' — аналогічні дієслова."
+      },
+      {
+        "id": "ue_mcom12",
+        "question": "The interview will be _____ live on television tonight.",
+        "translation": "(Інтерв'ю транслюватиметься наживо по телебаченню сьогодні ввечері.)",
+        "options": [
+          "shown",
+          "showed",
+          "showing",
+          "show"
+        ],
+        "correct": "shown",
+        "explanation": "SHOWN (Past Participle пасив): 'The interview will be SHOWN live'. SHOW-SHOWED-SHOWN (нерегулярне). В медіа: BE SHOWN/BROADCAST/AIRED = транслювати. 'The programme will be shown at 9 PM.' 'The match is being shown live.' AIR = транслювати: 'The episode airs on Friday'. ON AIR = в ефірі. Ще: PREMIERE = прем'єра: 'The film premiers next week'. В українській: 'Транслюватиметься', 'Покажуть' — стандартне майбутнє або пасив."
+      },
+      {
+        "id": "ue_mcom13",
+        "question": "She always checks her social _____ first thing in the morning.",
+        "translation": "(Вона завжди перевіряє соцмережі першим ділом вранці.)",
+        "options": [
+          "media",
+          "network",
+          "platform",
+          "account"
+        ],
+        "correct": "media",
+        "explanation": "SOCIAL MEDIA (соціальні мережі — НЕЗЛІЧУВАНЕ в цьому контексті): 'Check social MEDIA'. SOCIAL MEDIA = загальний термін. SOCIAL NETWORK = одна конкретна мережа, хоча часто = synomym. Платформи: FACEBOOK, INSTAGRAM, TWITTER/X, TIKTOK, LINKEDIN. 'She's very active on social media.' 'I deleted my social media accounts.' MEDIA = також ЗМІ загалом: 'The media reports...' (MEDIA з множинним дієсловом). В українській: 'Соцмережі', 'медіа' — запозичення."
+      },
+      {
+        "id": "ue_mcom14",
+        "question": "He was caught spreading _____ news about the company.",
+        "translation": "(Його спіймали на поширенні фейкових новин про компанію.)",
+        "options": [
+          "fake",
+          "false",
+          "wrong",
+          "lie"
+        ],
+        "correct": "fake",
+        "explanation": "FAKE NEWS (фейкові новини): 'Spreading FAKE news'. FAKE = підроблений, несправжній. FAKE NEWS = навмисно хибні новини для маніпуляції. Різниця: FAKE (навмисно підроблене), FALSE (неправдиве — може бути ненавмисно), MISLEADING (вводить в оману). MISINFORMATION = ненавмисна хибна інформація. DISINFORMATION = навмисна хибна інформація. PROPAGANDA = пропаганда. FACT-CHECK = перевірити факти. В українській: 'Фейк', 'Фейкові новини', 'Дезінформація' — запозичення."
+      },
+      {
+        "id": "ue_mcom15",
+        "question": "I _____ to a really interesting podcast about science.",
+        "translation": "(Я слухаю дуже цікавий подкаст про науку.)",
+        "options": [
+          "listen",
+          "hear",
+          "sound",
+          "listen at"
+        ],
+        "correct": "listen",
+        "explanation": "LISTEN TO (слухати навмисно): 'I LISTEN TO a podcast'. LISTEN TO = активне, навмисне слухання. HEAR = пасивне сприйняття звуку: 'I heard a noise' (почув — без наміру). LISTEN TO + obj: 'listen to music/a podcast/the radio'. ❌ 'listen music' (потрібен TO!). HEAR = без прийменника: 'I heard the news'. Підсумок медіа-дієслів: WATCH TV/videos, LISTEN TO radio/podcasts, READ articles/books. В українській: 'Слухати' (активне) vs 'Чути' (пасивне) — така ж різниця."
+      }
+    ]
+  },
+  {
+    "key": "crime_justice",
+    "name": "Crime & Justice",
+    "description": "Злочинність та правосуддя (лексика)",
+    "iconName": "lock.shield.fill",
+    "color": "#991b1b",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ue_cj2_1",
+        "question": "The police _____ the suspect near the train station.",
+        "translation": "(Поліція затримала підозрюваного біля залізничної станції.)",
+        "options": [
+          "arrested",
+          "judged",
+          "sentenced",
+          "convicted"
+        ],
+        "correct": "arrested",
+        "explanation": "ARREST (затримати): Процес правосуддя: ARREST (затримання) → CHARGE (пред'явлення обвинувачення) → TRIAL (суд) → CONVICT/ACQUIT (визнати винним/невинним) → SENTENCE (винесення вироку). 'The police ARRESTED him' = 'Поліція його затримала'. Не плутайте: ARREST ≠ DETAIN. DETAIN = тримати під вартою (тимчасово), ARREST = офіційне затримання. В українській: 'Затримати', 'Арештувати' — різні процедури, хоча в побуті часто плутають."
+      },
+      {
+        "id": "ue_cj2_2",
+        "question": "The jury found the defendant _____.",
+        "translation": "(Присяжні визнали підсудного невинним.)",
+        "options": [
+          "not guilty",
+          "not quilty",
+          "innocent",
+          "free"
+        ],
+        "correct": "not guilty",
+        "explanation": "NOT GUILTY (юридичний вердикт): 'Found NOT GUILTY' = офіційна юридична формула. NOT GUILTY ≠ INNOCENT: NOT GUILTY = 'провина не доведена' (юридично), INNOCENT = 'невинний' (фактично). Людина може бути NOT GUILTY (недостатньо доказів), але не INNOCENT (насправді зробила). GUILTY = винний. VERDICT = вердикт. JURY = присяжні. В українській: 'Невинний' використовується для обох, але юридично: 'Визнати невинуватим' / 'Виправдати'."
+      },
+      {
+        "id": "ue_cj2_3",
+        "question": "He was _____ to five years in prison for robbery.",
+        "translation": "(Його засудили до п'яти років ув'язнення за пограбування.)",
+        "options": [
+          "sentenced",
+          "arrested",
+          "charged",
+          "accused"
+        ],
+        "correct": "sentenced",
+        "explanation": "SENTENCE (TO) — засудити до: 'SENTENCED TO five years'. SENTENCE = вирок суду (noun) і винести вирок (verb). Types: PRISON SENTENCE (тюремний строк), SUSPENDED SENTENCE (умовний строк), LIFE SENTENCE (довічне), COMMUNITY SERVICE (громадські роботи), FINE (штраф). 'He was sentenced to 10 years' = 'Його засудили до 10 років'. В українській: 'Засудити до', 'Вирок' — пряма паралель. ROBBERY vs BURGLARY: robbery = з погрозою, burglary = проникнення."
+      },
+      {
+        "id": "ue_cj2_4",
+        "question": "The _____ presented strong evidence against the accused.",
+        "translation": "(Прокурор надав сильні докази проти обвинуваченого.)",
+        "options": [
+          "prosecutor",
+          "defendant",
+          "witness",
+          "judge"
+        ],
+        "correct": "prosecutor",
+        "explanation": "PROSECUTOR (прокурор) — сторони в суді: PROSECUTOR (прокурор — обвинувачення), DEFENCE LAWYER / ATTORNEY (адвокат — захист), JUDGE (суддя), JURY (присяжні), DEFENDANT (підсудний), WITNESS (свідок), PLAINTIFF (позивач — цивільна справа). 'The prosecution rests' = 'Обвинувачення закінчило'. THE ACCUSED = підсудний (формальне). В українській: 'Прокурор', 'Адвокат', 'Суддя', 'Присяжні' — структура подібна, але немає присяжних в українському суді."
+      },
+      {
+        "id": "ue_cj2_5",
+        "question": "Shoplifting is a common type of _____.",
+        "translation": "(Крадіжка з магазину — поширений вид злочину.)",
+        "options": [
+          "crime",
+          "criminal",
+          "criminality",
+          "crimination"
+        ],
+        "correct": "crime",
+        "explanation": "CRIME (злочин) — види: THEFT (крадіжка), ROBBERY (пограбування з погрозою), BURGLARY (проникнення), SHOPLIFTING (крадіжка з магазину), FRAUD (шахрайство), ARSON (підпал), ASSAULT (напад), MURDER (вбивство), MANSLAUGHTER (ненавмисне вбивство). CRIME = загальне. OFFENCE = правопорушення (менш серйозне). FELONY (AmE) = тяжкий злочин, MISDEMEANOR = легкий. В українській: 'Злочин', 'Правопорушення', 'Крадіжка', 'Шахрайство' — юридична термінологія."
+      },
+      {
+        "id": "ue_cj2_6",
+        "question": "The witness was asked to _____ an oath before testifying.",
+        "translation": "(Свідка попросили скласти присягу перед дачею показань.)",
+        "options": [
+          "take",
+          "make",
+          "do",
+          "give"
+        ],
+        "correct": "take",
+        "explanation": "TAKE AN OATH (скласти присягу): Юридичні колокації: TAKE AN OATH (скласти присягу), GIVE EVIDENCE (давати показання), STAND TRIAL (постати перед судом), PRESS CHARGES (висунути звинувачення), PLEAD GUILTY/NOT GUILTY (визнати себе винним/невинним). 'Do you swear to tell the truth?' — присяга свідка. 'I plead not guilty, Your Honour'. В українській: 'Скласти присягу', 'Давати показання', 'Постати перед судом' — точні відповідники."
+      },
+      {
+        "id": "ue_cj2_7",
+        "question": "The detective was investigating a case of _____.",
+        "translation": "(Детектив розслідував справу про шахрайство.)",
+        "options": [
+          "fraud",
+          "frauding",
+          "fraudness",
+          "fraudment"
+        ],
+        "correct": "fraud",
+        "explanation": "FRAUD (шахрайство): FRAUD = обман з метою отримання вигоди. Types: IDENTITY FRAUD (крадіжка особистості), TAX FRAUD (податкове шахрайство), INSURANCE FRAUD (страхове), BANK FRAUD (банківське), CYBER FRAUD (кіберзлочинність). FRAUDSTER/SCAMMER = шахрай. TO DEFRAUD = обманути. 'He was charged with fraud' = 'Його звинуватили у шахрайстві'. В українській: 'Шахрайство', 'Шахрай', 'Обман' — пряма юридична паралель."
+      },
+      {
+        "id": "ue_cj2_8",
+        "question": "The judge decided to _____ the prisoner on bail.",
+        "translation": "(Суддя вирішив звільнити ув'язненого під заставу.)",
+        "options": [
+          "release",
+          "free",
+          "let",
+          "open"
+        ],
+        "correct": "release",
+        "explanation": "RELEASE ON BAIL (звільнити під заставу): BAIL = застава (грошова гарантія появи в суді). 'Released on bail' = 'Звільнений під заставу'. 'Bail was set at £10,000'. TO POST BAIL = внести заставу. TO DENY BAIL = відмовити в заставі. REMAND = тримання під вартою до суду: 'Remanded in custody'. PAROLE = умовно-дострокове звільнення: 'Released on parole'. В українській: 'Застава', 'Звільнити під заставу', 'Умовно-дострокове' — юридичні терміни."
+      },
+      {
+        "id": "ue_cj2_9",
+        "question": "The suspect had a strong _____ and couldn't have committed the crime.",
+        "translation": "(У підозрюваного було сильне алібі, і він не міг вчинити злочин.)",
+        "options": [
+          "alibi",
+          "excuse",
+          "reason",
+          "proof"
+        ],
+        "correct": "alibi",
+        "explanation": "ALIBI (алібі — доказ знаходження в іншому місці): 'He had a strong ALIBI' = 'У нього було сильне алібі'. ALIBI = доказ, що людина була в ІНШОМУ МІСЦІ під час злочину. Від латинського 'alibi' = 'в іншому місці'. Не плутайте з EXCUSE (виправдання). ALIBI = фактичний доказ, EXCUSE = пояснення. 'His alibi was confirmed by CCTV footage'. В українській: 'Алібі' — запозичення з тим самим значенням. Незмінюване слово середнього роду."
+      },
+      {
+        "id": "ue_cj2_10",
+        "question": "Breaking and _____ is a serious criminal offence.",
+        "translation": "(Проникнення зі зломом — серйозний кримінальний злочин.)",
+        "options": [
+          "entering",
+          "entry",
+          "going",
+          "coming"
+        ],
+        "correct": "entering",
+        "explanation": "BREAKING AND ENTERING (зламування та проникнення): Фіксований юридичний вираз. BREAK INTO = проникнути: 'Someone broke into our house'. BURGLAR = зломник. BURGLARY = крадіжка зі зломом. TRESPASS = незаконне проникнення (без крадіжки). VANDALISM = вандалізм. ARSON = підпал. Серйозність: TRESPASS < VANDALISM < BURGLARY < ROBBERY < ARSON. В українській: 'Крадіжка зі зломом', 'Проникнення', 'Вандалізм' — різні ступені тяжкості."
+      },
+      {
+        "id": "ue_cj2_11",
+        "question": "She decided to _____ a complaint with the police.",
+        "translation": "(Вона вирішила подати скаргу до поліції.)",
+        "options": [
+          "file",
+          "make",
+          "do",
+          "put"
+        ],
+        "correct": "file",
+        "explanation": "FILE A COMPLAINT (подати скаргу): Юридичні дієслова-колокації: FILE a complaint/lawsuit (подати скаргу/позов), PRESS charges (висунути обвинувачення), LODGE an appeal (подати апеляцію), DROP charges (зняти обвинувачення). TO SUE = подати в суд (цивільний): 'She sued the company for damages'. LAWSUIT = позов. CLAIM = претензія. В українській: 'Подати скаргу', 'Подати позов', 'Позиватися' — аналогічна система юридичних дій."
+      },
+      {
+        "id": "ue_cj2_12",
+        "question": "The crime rate in this area has _____ significantly.",
+        "translation": "(Рівень злочинності в цьому районі значно знизився.)",
+        "options": [
+          "decreased",
+          "reduced",
+          "descended",
+          "declined"
+        ],
+        "correct": "decreased",
+        "explanation": "CRIME RATE (рівень злочинності): Колокації зі статистикою злочинності: CRIME RATE (рівень), CRIME WAVE (хвиля), CRIME PREVENTION (запобігання), CRIME SCENE (місце злочину), CRIME SPREE (серія злочинів), ORGANISED CRIME (організована злочинність). 'The crime rate decreased/dropped/fell'. 'Crime is on the rise/decline'. В українській: 'Рівень злочинності', 'Хвиля злочинності', 'Місце злочину' — калькуються з англійської. Статистичні тренди: зросла/знизилася."
+      },
+      {
+        "id": "ue_cj2_13",
+        "question": "He was found guilty of _____ and sentenced to community service.",
+        "translation": "(Його визнали винним у вандалізмі та засудили до громадських робіт.)",
+        "options": [
+          "vandalism",
+          "vandalise",
+          "vandal",
+          "vandalous"
+        ],
+        "correct": "vandalism",
+        "explanation": "VANDALISM (вандалізм) — покарання: COMMUNITY SERVICE (громадські роботи), FINE (штраф), PROBATION (випробувальний термін), PRISON (тюрма), SUSPENDED SENTENCE (умовний строк), CAUTION (попередження). Minor offences → fine/community service. Serious crimes → prison. 'He was given a £500 fine', 'She was put on probation for 2 years'. В українській: 'Громадські роботи', 'Штраф', 'Умовний строк', 'Випробувальний термін' — аналогічна система покарань."
+      },
+      {
+        "id": "ue_cj2_14",
+        "question": "The police set up a _____ to catch the criminals.",
+        "translation": "(Поліція влаштувала пастку, щоб зловити злочинців.)",
+        "options": [
+          "trap",
+          "trick",
+          "trip",
+          "trial"
+        ],
+        "correct": "trap",
+        "explanation": "SET UP A TRAP (влаштувати пастку): Поліцейська лексика: SET UP A TRAP (пастка), STAKE OUT (стежити), UNDERCOVER (під прикриттям), RAID (рейд/обшук), MANHUNT (розшук), WANTED (розшукуваний), SUSPECT (підозрюваний), WITNESS (свідок), INFORMANT (інформатор). 'The police conducted a raid on the warehouse'. 'He's on the Most Wanted list'. В українській: 'Пастка', 'Стеження', 'Під прикриттям', 'Обшук', 'Розшук' — поліцейська термінологія."
+      },
+      {
+        "id": "ue_cj2_15",
+        "question": "The lawyer argued that the evidence was _____.",
+        "translation": "(Адвокат стверджував, що докази є недопустимими.)",
+        "options": [
+          "inadmissible",
+          "unacceptable",
+          "impossible",
+          "incredible"
+        ],
+        "correct": "inadmissible",
+        "explanation": "INADMISSIBLE EVIDENCE (недопустимі докази): Юридичні прикметники: INADMISSIBLE (недопустимий), CIRCUMSTANTIAL (непрямий), FORENSIC (криміналістичний), COMPELLING (переконливий), CONCLUSIVE (остаточний). 'Circumstantial evidence' = 'Непрямі докази'. 'Forensic evidence' = 'Криміналістичні докази'. 'The evidence was deemed inadmissible in court'. Підсумок: англійська юридична система має свою унікальну лексику, яку потрібно вчити як фіксовані вирази."
+      }
+    ]
+  },
+  {
+    "key": "politics_society",
+    "name": "Politics & Society",
+    "description": "Політика та суспільство (лексика)",
+    "iconName": "building.columns.fill",
+    "color": "#1e3a5f",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ue_pso1",
+        "question": "The country held a general _____ last November.",
+        "translation": "(Країна провела загальні вибори минулого листопада.)",
+        "options": [
+          "election",
+          "selection",
+          "collection",
+          "election's"
+        ],
+        "correct": "election",
+        "explanation": "ELECTION (вибори): Types: GENERAL ELECTION (загальні парламентські), LOCAL ELECTION (місцеві), BY-ELECTION (довибори), PRESIDENTIAL ELECTION (президентські). 'Hold/call an election' = 'Провести/оголосити вибори'. VOTE = голосувати, BALLOT = бюлетень, POLLING STATION = виборча дільниця. 'The election was held on November 5th'. В українській: 'Вибори', 'Голосування', 'Виборча дільниця', 'Бюлетень' — пряма юридична паралель. ELECTION завжди однина в англійській (elections — множина)."
+      },
+      {
+        "id": "ue_pso2",
+        "question": "The _____ debated the new healthcare bill.",
+        "translation": "(Парламент обговорив новий законопроєкт про охорону здоров'я.)",
+        "options": [
+          "parliament",
+          "president",
+          "premier",
+          "palace"
+        ],
+        "correct": "parliament",
+        "explanation": "PARLIAMENT (парламент): Політична система UK: PARLIAMENT = парламент (HOUSE OF COMMONS + HOUSE OF LORDS). MP = Member of Parliament = депутат. PM = Prime Minister = прем'єр-міністр. CABINET = кабінет міністрів. BILL = законопроєкт, ACT/LAW = закон (після прийняття). US: CONGRESS (SENATE + HOUSE OF REPRESENTATIVES). 'The bill was passed by Parliament'. В українській: 'Верховна Рада', 'Депутат', 'Законопроєкт' — інша назва, подібна функція."
+      },
+      {
+        "id": "ue_pso3",
+        "question": "The government announced a new _____ on immigration.",
+        "translation": "(Уряд оголосив нову політику щодо імміграції.)",
+        "options": [
+          "policy",
+          "politics",
+          "police",
+          "polity"
+        ],
+        "correct": "policy",
+        "explanation": "POLICY vs POLITICS vs POLICE: Три схожих слова! POLICY = конкретна стратегія/рішення: 'immigration policy', 'company policy'. POLITICS = політика як сфера діяльності: 'She's interested in politics'. POLITICAL = прикметник. POLITICIAN = політик. POLICE = поліція (зовсім інше!). В українській: 'Політика' = і policy, і politics. Контекст визначає: 'Нова політика щодо...' = POLICY. 'Він цікавиться політикою' = POLITICS. Різниця критична!"
+      },
+      {
+        "id": "ue_pso4",
+        "question": "Citizens have the right to freedom of _____.",
+        "translation": "(Громадяни мають право на свободу слова.)",
+        "options": [
+          "speech",
+          "speak",
+          "speaking",
+          "word"
+        ],
+        "correct": "speech",
+        "explanation": "FREEDOM OF SPEECH (свобода слова): Права людини: FREEDOM OF SPEECH (слова), FREEDOM OF RELIGION (віросповідання), FREEDOM OF THE PRESS (преси), RIGHT TO VOTE (голосу), RIGHT TO EDUCATION (освіти), HUMAN RIGHTS (права людини), CIVIL LIBERTIES (громадянські свободи). 'Freedom of expression' = ширше, ніж speech. В українській: 'Свобода слова', 'Права людини', 'Громадянські свободи' — міжнародні концепції з паралельною термінологією."
+      },
+      {
+        "id": "ue_pso5",
+        "question": "The opposition party _____ the government's decision.",
+        "translation": "(Опозиційна партія розкритикувала рішення уряду.)",
+        "options": [
+          "criticised",
+          "criminal",
+          "created",
+          "credited"
+        ],
+        "correct": "criticised",
+        "explanation": "CRITICISE (BrE) / CRITICIZE (AmE) — критикувати: Політична лексика: OPPOSITION (опозиція), RULING PARTY (правляча партія), COALITION (коаліція), MAJORITY (більшість), MINORITY (меншість). 'The opposition criticised the policy' = 'Опозиція розкритикувала'. CONDEMN = засудити (сильніше). PRAISE = хвалити (протилежне). SUPPORT vs OPPOSE: підтримувати vs протистояти. В українській: 'Опозиція', 'Коаліція', 'Критикувати' — інтернаціональна лексика."
+      },
+      {
+        "id": "ue_pso6",
+        "question": "The protesters demanded social _____ for all citizens.",
+        "translation": "(Протестувальники вимагали соціальної справедливості для всіх громадян.)",
+        "options": [
+          "justice",
+          "just",
+          "justly",
+          "justify"
+        ],
+        "correct": "justice",
+        "explanation": "SOCIAL JUSTICE (соціальна справедливість): Суспільні поняття: SOCIAL JUSTICE (соціальна справедливість), EQUALITY (рівність), INEQUALITY (нерівність), DISCRIMINATION (дискримінація), DIVERSITY (різноманітність), INCLUSION (інклюзія). 'Fight for justice' = 'Боротися за справедливість'. JUSTICE = справедливість (абстрактне) + правосуддя (юридичне). В українській: 'Справедливість', 'Рівність', 'Дискримінація' — міжнародні концепції."
+      },
+      {
+        "id": "ue_pso7",
+        "question": "The referendum _____ in favour of the new constitution.",
+        "translation": "(Референдум підтримав нову конституцію.)",
+        "options": [
+          "voted",
+          "selected",
+          "elected",
+          "picked"
+        ],
+        "correct": "voted",
+        "explanation": "REFERENDUM (референдум): REFERENDUM = пряме голосування громадян з конкретного питання. 'Call a referendum', 'Hold a referendum'. VOTE IN FAVOUR OF = проголосувати за. VOTE AGAINST = проти. TURNOUT = явка: 'Voter turnout was 75%'. ABSTAIN = утриматися. В українській: 'Референдум', 'Голосувати за/проти', 'Явка виборців', 'Утриматися' — практично ідентична термінологія. Конституція = CONSTITUTION."
+      },
+      {
+        "id": "ue_pso8",
+        "question": "The minister was accused of _____.",
+        "translation": "(Міністра звинуватили в корупції.)",
+        "options": [
+          "corruption",
+          "corrupting",
+          "corruptive",
+          "corrupt"
+        ],
+        "correct": "corruption",
+        "explanation": "CORRUPTION (корупція): Types: BRIBERY (хабарництво), EMBEZZLEMENT (розкрадання), NEPOTISM (непотизм/кумівство), CRONYISM (кумівство), MONEY LAUNDERING (відмивання грошей). 'Accused of corruption' = 'Звинувачений у корупції'. BRIBE = хабар (noun) / давати хабар (verb). 'He was caught taking bribes'. TRANSPARENCY = прозорість (протилежне). В українській: 'Корупція', 'Хабарництво', 'Розкрадання' — актуальна лексика з однаковими латинськими коренями."
+      },
+      {
+        "id": "ue_pso9",
+        "question": "Everyone should have equal access to _____.",
+        "translation": "(Кожен повинен мати рівний доступ до освіти.)",
+        "options": [
+          "education",
+          "educating",
+          "educated",
+          "educator"
+        ],
+        "correct": "education",
+        "explanation": "EDUCATION (освіта): Суспільні блага: EDUCATION (освіта), HEALTHCARE (охорона здоров'я), HOUSING (житло), WELFARE (соціальне забезпечення), SOCIAL SERVICES (соціальні служби), PUBLIC TRANSPORT (громадський транспорт). 'Access to education' = 'Доступ до освіти'. EQUAL ACCESS = рівний доступ. THE WELFARE STATE = соціальна держава. В українській: 'Освіта', 'Охорона здоров'я', 'Соціальне забезпечення' — базові суспільні поняття."
+      },
+      {
+        "id": "ue_pso10",
+        "question": "The new law aims to reduce _____ between rich and poor.",
+        "translation": "(Новий закон має на меті зменшити нерівність між багатими та бідними.)",
+        "options": [
+          "inequality",
+          "equality",
+          "equity",
+          "inequity"
+        ],
+        "correct": "inequality",
+        "explanation": "INEQUALITY (нерівність): EQUALITY vs EQUITY vs INEQUALITY: EQUALITY = рівність (однакові умови для всіх), EQUITY = справедливість (різні умови для досягнення рівного результату), INEQUALITY = нерівність. 'Income inequality' = 'Нерівність доходів'. 'Gender equality' = 'Гендерна рівність'. GAP = розрив: 'The gap between rich and poor'. В українській: 'Нерівність', 'Рівність', 'Справедливість' — ці концепції перекладаються, але EQUITY = специфічне поняття."
+      },
+      {
+        "id": "ue_pso11",
+        "question": "The charity works to help _____ communities.",
+        "translation": "(Благодійна організація працює, щоб допомогти маргіналізованим спільнотам.)",
+        "options": [
+          "marginalised",
+          "marginal",
+          "marginally",
+          "margined"
+        ],
+        "correct": "marginalised",
+        "explanation": "MARGINALISED (BrE) / MARGINALIZED (AmE): MARGINALISED COMMUNITIES = маргіналізовані спільноти — витіснені на узбіччя суспільства. Суспільна лексика: VULNERABLE (вразливий), UNDERPRIVILEGED (знедолений), DISADVANTAGED (у несприятливому становищі), MARGINALISED (маргіналізований), DISENFRANCHISED (позбавлений прав). 'Support for marginalised groups'. В українській: 'Маргіналізований', 'Вразливий', 'Знедолений' — сучасна соціальна термінологія."
+      },
+      {
+        "id": "ue_pso12",
+        "question": "The diplomat negotiated a peace _____.",
+        "translation": "(Дипломат домовився про мирну угоду.)",
+        "options": [
+          "treaty",
+          "treat",
+          "treatment",
+          "treating"
+        ],
+        "correct": "treaty",
+        "explanation": "TREATY (міжнародна угода/договір): Types: PEACE TREATY (мирний договір), TRADE AGREEMENT (торговельна угода), ALLIANCE (альянс), CEASEFIRE (перемир'я), ARMISTICE (перемир'я — формальне). NEGOTIATE = вести переговори. DIPLOMACY = дипломатія. DIPLOMAT = дипломат. EMBASSY = посольство. AMBASSADOR = посол. 'The treaty was signed by both nations'. В українській: 'Договір', 'Угода', 'Перемир'я', 'Посольство' — міжнародна дипломатична лексика."
+      },
+      {
+        "id": "ue_pso13",
+        "question": "The government imposed economic _____ on the country.",
+        "translation": "(Уряд наклав економічні санкції на країну.)",
+        "options": [
+          "sanctions",
+          "punishments",
+          "penalties",
+          "restrictions"
+        ],
+        "correct": "sanctions",
+        "explanation": "SANCTIONS (санкції): SANCTIONS = міжнародні обмежувальні заходи: 'Economic sanctions', 'Trade sanctions', 'Impose sanctions', 'Lift sanctions' (зняти). EMBARGO = заборона торгівлі: 'Arms embargo'. BLOCKADE = блокада. TARIFF = мито. 'The UN imposed sanctions on the regime'. Цікаво: SANCTION (однина) може = ДОЗВІЛ: 'Give sanction to' = 'Дозволити'. Протилежні значення! В українській: 'Санкції', 'Ембарго', 'Блокада' — актуальна геополітична лексика."
+      },
+      {
+        "id": "ue_pso14",
+        "question": "Thousands of people joined the _____ against climate change.",
+        "translation": "(Тисячі людей приєдналися до протесту проти зміни клімату.)",
+        "options": [
+          "protest",
+          "protect",
+          "project",
+          "prospect"
+        ],
+        "correct": "protest",
+        "explanation": "PROTEST (протест): PROTEST = DEMONSTRATION = RALLY. PROTESTER/DEMONSTRATOR = протестувальник. MARCH = марш. STRIKE = страйк. BOYCOTT = бойкот. PETITION = петиція. 'Join a protest', 'Go on strike', 'Sign a petition', 'Stage a demonstration'. PEACEFUL PROTEST = мирний протест. RIOT = бунт (насильницький). В українській: 'Протест', 'Демонстрація', 'Мітинг', 'Страйк', 'Бойкот' — більшість слів інтернаціональні."
+      },
+      {
+        "id": "ue_pso15",
+        "question": "The constitution guarantees the _____ of the individual.",
+        "translation": "(Конституція гарантує права особистості.)",
+        "options": [
+          "rights",
+          "writes",
+          "rites",
+          "rigs"
+        ],
+        "correct": "rights",
+        "explanation": "RIGHTS (права): RIGHTS vs WRITES vs RITES — три омоніми! RIGHTS = права: 'Human rights', 'Civil rights'. WRITES = пише (3rd person). RITES = обряди: 'Religious rites'. 'The right to vote' = 'Право голосу'. CONSTITUTIONAL RIGHTS = конституційні права. Підсумок політичної лексики: ELECTION, PARLIAMENT, POLICY, RIGHTS — ключові для розуміння новин англійською. В українській: 'Права людини', 'Конституційні права' — юридична термінологія збігається завдяки спільним латинським коренням."
+      }
+    ]
+  },
+  {
+    "key": "science_research",
+    "name": "Science & Research",
+    "description": "Наука та дослідження (лексика)",
+    "iconName": "atom",
+    "color": "#0369a1",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ue_sr1",
+        "question": "The scientist conducted an _____ to test the hypothesis.",
+        "translation": "(Вчений провів експеримент, щоб перевірити гіпотезу.)",
+        "options": [
+          "experiment",
+          "experience",
+          "expedition",
+          "explanation"
+        ],
+        "correct": "experiment",
+        "explanation": "EXPERIMENT vs EXPERIENCE: Хибний друг! EXPERIMENT = науковий дослід. EXPERIENCE = досвід або враження. 'Conduct/carry out an experiment' = 'Провести експеримент'. 'A life-changing experience' = 'Досвід, що змінює життя'. В українській 'експеримент' = EXPERIMENT, 'досвід' = EXPERIENCE. Але 'досвід' іноді вживається замість 'експеримент' — в англійській це НЕМОЖЛИВО. HYPOTHESIS = гіпотеза, THEORY = теорія (підтверджена)."
+      },
+      {
+        "id": "ue_sr2",
+        "question": "The research team published their _____ in a scientific journal.",
+        "translation": "(Дослідницька група опублікувала свої результати в науковому журналі.)",
+        "options": [
+          "findings",
+          "founds",
+          "foundings",
+          "fund"
+        ],
+        "correct": "findings",
+        "explanation": "FINDINGS (результати дослідження): 'Publish findings' = 'Опублікувати результати'. FINDINGS = результати (множина, не 'founds'!). Наукова лексика: RESEARCH (дослідження — незлічуване!), STUDY (дослідження — злічуване), FINDINGS (результати), DATA (дані), CONCLUSION (висновок). ❌ 'a research' → ✅ 'a study', 'a piece of research'. В українській: 'Дослідження', 'Результати', 'Дані', 'Висновки' — наукова термінологія, але 'дослідження' — злічуване."
+      },
+      {
+        "id": "ue_sr3",
+        "question": "The data _____ that the new treatment is effective.",
+        "translation": "(Дані свідчать про те, що нове лікування ефективне.)",
+        "options": [
+          "suggest",
+          "suggests",
+          "suggest's",
+          "suggesting"
+        ],
+        "correct": "suggest",
+        "explanation": "DATA + PLURAL VERB: 'The data SUGGEST...' DATA = множина від DATUM (латинське). Формально: 'The data ARE/SUGGEST/SHOW'. Але в сучасній розмовній: 'The data IS/SUGGESTS' — теж прийнятно. Академічний стиль = множина: 'These data suggest...'. Ще: CRITERIA (мн.) від CRITERION (одн.), PHENOMENA (мн.) від PHENOMENON (одн.). В українській: 'Дані свідчать' — множина, як формальна англійська. Граматичний збіг."
+      },
+      {
+        "id": "ue_sr4",
+        "question": "They developed a new _____ to solve the problem.",
+        "translation": "(Вони розробили новий метод для розв'язання проблеми.)",
+        "options": [
+          "method",
+          "methodology",
+          "methodical",
+          "methodist"
+        ],
+        "correct": "method",
+        "explanation": "METHOD vs METHODOLOGY: METHOD = конкретний спосіб/прийом ('a research method'). METHODOLOGY = система/теорія методів ('research methodology'). METHOD = 'як саме' (конкретне), METHODOLOGY = 'чому саме цей підхід' (теоретичне). APPROACH = підхід, TECHNIQUE = техніка, PROCEDURE = процедура. 'A new method of analysis' = 'Новий метод аналізу'. В українській: 'Метод', 'Методологія', 'Підхід', 'Техніка' — різниця така ж."
+      },
+      {
+        "id": "ue_sr5",
+        "question": "The _____ of this study is to investigate the effects of pollution.",
+        "translation": "(Мета цього дослідження — дослідити вплив забруднення.)",
+        "options": [
+          "aim",
+          "arm",
+          "aim's",
+          "aimed"
+        ],
+        "correct": "aim",
+        "explanation": "AIM / OBJECTIVE / PURPOSE (мета дослідження): 'The AIM of this study is to investigate...' Академічна мова: AIM = мета (загальна), OBJECTIVE = конкретна ціль, PURPOSE = призначення. 'The aim is to examine...', 'The objective is to measure...', 'The purpose of this paper is...'. SCOPE = обсяг/масштаб: 'Beyond the scope of this study'. В українській: 'Мета дослідження', 'Об'єкт дослідження', 'Предмет дослідження' — стандартні академічні формулювання."
+      },
+      {
+        "id": "ue_sr6",
+        "question": "The results of the experiment were _____.",
+        "translation": "(Результати експерименту були захоплюючими / значущими.)",
+        "options": [
+          "significant",
+          "signified",
+          "signaling",
+          "signing"
+        ],
+        "correct": "significant",
+        "explanation": "SIGNIFICANT (статистично значущий): В науці SIGNIFICANT = 'статистично значущий' (не просто 'важливий'!). 'Statistically significant results' = p < 0.05. В побутовій мові SIGNIFICANT = 'суттєвий, важливий'. INSIGNIFICANT = незначний. Наукові оцінки: SIGNIFICANT, REMARKABLE, NOTEWORTHY, NEGLIGIBLE (мізерний), MARGINAL (граничний). В українській: 'Значущий' (наукове), 'Суттєвий', 'Помітний' — різні рівні значущості."
+      },
+      {
+        "id": "ue_sr7",
+        "question": "The researchers used a control _____ in their study.",
+        "translation": "(Дослідники використали контрольну групу у своєму дослідженні.)",
+        "options": [
+          "group",
+          "club",
+          "team",
+          "unit"
+        ],
+        "correct": "group",
+        "explanation": "CONTROL GROUP (контрольна група): Наукова методологія: CONTROL GROUP (контрольна група — без впливу), EXPERIMENTAL GROUP (експериментальна — з впливом), VARIABLE (змінна), SAMPLE (вибірка), SAMPLE SIZE (розмір вибірки), RANDOM SAMPLE (випадкова вибірка), DOUBLE-BLIND (подвійне сліпе). 'The control group received a placebo'. В українській: 'Контрольна група', 'Вибірка', 'Змінна' — наукова методологічна термінологія збігається."
+      },
+      {
+        "id": "ue_sr8",
+        "question": "Further research is _____ to confirm these results.",
+        "translation": "(Потрібні подальші дослідження для підтвердження цих результатів.)",
+        "options": [
+          "needed",
+          "needing",
+          "need",
+          "needs"
+        ],
+        "correct": "needed",
+        "explanation": "FURTHER RESEARCH IS NEEDED (потрібні подальші дослідження): Стандартна формула завершення наукової статті. RESEARCH = НЕЗЛІЧУВАНЕ: ❌ 'researches' (множина), ❌ 'a research' (невизначений артикль). ✅ 'some research', 'further research', 'a piece of research', 'research studies'. 'Carry out / conduct research' = 'Проводити дослідження'. В українській: 'Дослідження' — може бути злічуване: 'два дослідження'. В англійській — тільки 'two studies'."
+      },
+      {
+        "id": "ue_sr9",
+        "question": "The _____ between the two variables was statistically significant.",
+        "translation": "(Кореляція між двома змінними була статистично значущою.)",
+        "options": [
+          "correlation",
+          "relation",
+          "collection",
+          "correction"
+        ],
+        "correct": "correlation",
+        "explanation": "CORRELATION (кореляція): CORRELATION ≠ CAUSATION! CORRELATION = зв'язок між змінними (A і B рухаються разом). CAUSATION = причинно-наслідковий зв'язок (A СПРИЧИНЯЄ B). 'Correlation does not imply causation' = золоте правило статистики. 'A strong/weak correlation'. 'There is a positive/negative correlation between X and Y'. В українській: 'Кореляція', 'Причинно-наслідковий зв'язок' — молодіжна наукова лексика. 'Кореляція не означає причинності'."
+      },
+      {
+        "id": "ue_sr10",
+        "question": "The team made a groundbreaking _____ in cancer research.",
+        "translation": "(Команда зробила революційне відкриття в дослідженні раку.)",
+        "options": [
+          "discovery",
+          "invention",
+          "disclosure",
+          "recovery"
+        ],
+        "correct": "discovery",
+        "explanation": "DISCOVERY vs INVENTION: DISCOVERY = відкриття того, що ІСНУВАЛО (але не було відомо): 'Discovery of penicillin'. INVENTION = винахід того, що НЕ ІСНУВАЛО: 'Invention of the telephone'. Columbus = DISCOVERED America (вона існувала). Bell = INVENTED the telephone (його не було). BREAKTHROUGH = прорив. GROUNDBREAKING = революційний. В українській: 'Відкриття' vs 'Винахід' — та сама різниця. 'Прорив', 'Революційний' — калькуються."
+      },
+      {
+        "id": "ue_sr11",
+        "question": "The peer _____ process ensures quality in academic publishing.",
+        "translation": "(Процес рецензування забезпечує якість наукових публікацій.)",
+        "options": [
+          "review",
+          "revision",
+          "preview",
+          "viewing"
+        ],
+        "correct": "review",
+        "explanation": "PEER REVIEW (рецензування): PEER REVIEW = оцінка роботи іншими вченими з тієї ж галузі. PEER = рівний, колега. 'A peer-reviewed journal' = 'Рецензований журнал'. REVIEWER = рецензент. REVISE = переробити (після рецензії): 'Revise and resubmit'. REJECT = відхилити. ACCEPT = прийняти. В українській: 'Рецензування', 'Рецензент', 'Рецензований журнал' — наукова видавнича лексика, переважно з латині."
+      },
+      {
+        "id": "ue_sr12",
+        "question": "The laboratory _____ showed promising results.",
+        "translation": "(Лабораторні тести показали обнадійливі результати.)",
+        "options": [
+          "tests",
+          "testing",
+          "test's",
+          "tested"
+        ],
+        "correct": "tests",
+        "explanation": "LABORATORY TESTS (лабораторні тести): LAB (скорочення) = LABORATORY. Фази: LABORATORY TEST (лабораторний) → CLINICAL TRIAL (клінічний) → PEER REVIEW → PUBLICATION. 'Promising results' = 'Обнадійливі результати'. TRIAL = випробування (медичне). TEST = тест (загальне). EXPERIMENT = експеримент (науковий). В українській: 'Лабораторний тест', 'Клінічне випробування' — медично-наукова термінологія."
+      },
+      {
+        "id": "ue_sr13",
+        "question": "The theory was supported by _____ evidence.",
+        "translation": "(Теорія була підтверджена емпіричними доказами.)",
+        "options": [
+          "empirical",
+          "imperial",
+          "empirial",
+          "empowered"
+        ],
+        "correct": "empirical",
+        "explanation": "EMPIRICAL (емпіричний — заснований на спостереженні): EMPIRICAL ≠ IMPERIAL! EMPIRICAL = 'заснований на досвіді/спостереженні': 'empirical evidence', 'empirical data'. IMPERIAL = 'імперський': 'the Imperial Palace'. THEORETICAL (теоретичний) vs EMPIRICAL (емпіричний) — ключова опозиція в науці. 'Empirical research' = дослідження через спостереження та експерименти. В українській: 'Емпіричний', 'Теоретичний' — латинські запозичення."
+      },
+      {
+        "id": "ue_sr14",
+        "question": "The scientist proposed a new _____ to explain the phenomenon.",
+        "translation": "(Вчений запропонував нову теорію для пояснення явища.)",
+        "options": [
+          "theory",
+          "theorem",
+          "therapy",
+          "theme"
+        ],
+        "correct": "theory",
+        "explanation": "THEORY (теорія): В науці THEORY ≠ 'здогадка'. Наукова THEORY = перевірена, підтверджена система пояснень (Theory of Relativity, Theory of Evolution). HYPOTHESIS = ще не підтверджена гіпотеза. LAW = закон (математична формула: Law of Gravity). THEOREM = теорема (математично доведена). 'Propose/put forward a theory'. В українській: 'Теорія', 'Гіпотеза', 'Закон', 'Теорема' — всі запозичені з грецької/латини."
+      },
+      {
+        "id": "ue_sr15",
+        "question": "The study was funded by a research _____.",
+        "translation": "(Дослідження було профінансоване дослідним грантом.)",
+        "options": [
+          "grant",
+          "grand",
+          "granted",
+          "granting"
+        ],
+        "correct": "grant",
+        "explanation": "RESEARCH GRANT (дослідний грант): GRANT = фінансування наукового проєкту. 'Apply for a grant' = 'Подати заявку на грант'. FUNDING = фінансування (загальне). SCHOLARSHIP = стипендія (для студентів). FELLOWSHIP = грант/стипендія (для дослідників). 'The research was funded by...' = 'Дослідження було профінансоване...' Підсумок наукової лексики: experiment, hypothesis, method, findings, data, correlation, significant, peer review. В українській: 'Грант', 'Фінансування', 'Стипендія' — міжнародна академічна лексика."
+      }
+    ]
+  },
+  {
+    "key": "arts_culture",
+    "name": "Arts & Culture",
+    "description": "Мистецтво та культура (лексика)",
+    "iconName": "paintpalette.fill",
+    "color": "#9333ea",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "ue_ac1",
+        "question": "The _____ at the gallery was very impressive.",
+        "translation": "(Виставка в галереї була дуже вражаючою.)",
+        "options": [
+          "exhibition",
+          "exhibit",
+          "exhibiting",
+          "exhibited"
+        ],
+        "correct": "exhibition",
+        "explanation": "EXHIBITION (виставка): EXHIBITION (BrE) = EXHIBIT (AmE) = виставка. 'An art exhibition', 'A photography exhibition'. EXHIBIT (BrE) = окремий експонат: 'This exhibit is from the 15th century'. GALLERY = галерея, MUSEUM = музей. 'The exhibition features works by Monet'. В українській: 'Виставка', 'Експонат', 'Галерея' — мистецька лексика. EXHIBITION = загальне, EXHIBIT = окремий предмет або вся виставка (AmE)."
+      },
+      {
+        "id": "ue_ac2",
+        "question": "The _____ directed a critically acclaimed film last year.",
+        "translation": "(Режисер зняв фільм, схвалений критиками, минулого року.)",
+        "options": [
+          "director",
+          "conductor",
+          "composer",
+          "producer"
+        ],
+        "correct": "director",
+        "explanation": "DIRECTOR vs CONDUCTOR vs COMPOSER vs PRODUCER: DIRECTOR = кіно/театральний режисер. CONDUCTOR = диригент (оркестру). COMPOSER = композитор (пише музику). PRODUCER = продюсер (фінансує/організовує). 'Film director' = 'Кінорежисер'. 'Orchestra conductor' = 'Диригент оркестру'. 'Music producer' = 'Музичний продюсер'. В українській: 'Режисер', 'Диригент', 'Композитор', 'Продюсер' — усі запозичення, що збігаються з англійськими."
+      },
+      {
+        "id": "ue_ac3",
+        "question": "She plays the violin in the city _____.",
+        "translation": "(Вона грає на скрипці в міському оркестрі.)",
+        "options": [
+          "orchestra",
+          "band",
+          "group",
+          "choir"
+        ],
+        "correct": "orchestra",
+        "explanation": "ORCHESTRA vs BAND vs CHOIR: ORCHESTRA = оркестр (класична музика): SYMPHONY ORCHESTRA. BAND = група/ансамбль (рок, поп, джаз): 'rock band', 'jazz band'. CHOIR = хор (вокальний). ENSEMBLE = ансамбль (камерний). 'She's in the orchestra' = 'Вона в оркестрі'. 'He plays in a band' = 'Він грає в гурті'. Дієслова: PLAY an instrument, SING in a choir, CONDUCT an orchestra. В українській: 'Оркестр', 'Гурт/Група', 'Хор' — музична лексика."
+      },
+      {
+        "id": "ue_ac4",
+        "question": "The _____ painted a beautiful landscape of the countryside.",
+        "translation": "(Художник намалював гарний пейзаж сільської місцевості.)",
+        "options": [
+          "artist",
+          "artisan",
+          "artistic",
+          "artifact"
+        ],
+        "correct": "artist",
+        "explanation": "ARTIST vs ARTISAN: ARTIST = митець (живопис, музика, танець): 'a visual artist', 'a performing artist'. ARTISAN = ремісник (ручна робота): 'artisan bread', 'artisan craftsman'. ARTIFACT/ARTEFACT = артефакт (давній предмет). LANDSCAPE = пейзаж (жанр). PORTRAIT = портрет. STILL LIFE = натюрморт. ABSTRACT = абстрактне мистецтво. В українській: 'Художник', 'Митець', 'Ремісник' — різні слова. 'Пейзаж', 'Портрет', 'Натюрморт' — французькі запозичення."
+      },
+      {
+        "id": "ue_ac5",
+        "question": "The _____ received a standing ovation after the performance.",
+        "translation": "(Актори отримали овацію стоячи після виступу.)",
+        "options": [
+          "cast",
+          "caste",
+          "cost",
+          "case"
+        ],
+        "correct": "cast",
+        "explanation": "CAST (акторський склад): CAST = всі актори вистави/фільму. CAST vs CASTE vs COST vs CASE — чотири різні слова! CAST = акторський склад + відливати (метал) + кидати (fishing cast). CASTE = каста. STANDING OVATION = овація стоячи (найвища похвала). CURTAIN CALL = вихід на поклони. 'An all-star cast' = 'Зірковий акторський склад'. В українській: 'Акторський склад', 'Каст' (калька), 'Овація' — театральна лексика."
+      },
+      {
+        "id": "ue_ac6",
+        "question": "The novel is a work of _____.",
+        "translation": "(Роман є художнім твором.)",
+        "options": [
+          "fiction",
+          "friction",
+          "fraction",
+          "function"
+        ],
+        "correct": "fiction",
+        "explanation": "FICTION (художня література) vs NON-FICTION (документальна): FICTION = вигадані історії: novels, short stories, poetry. NON-FICTION = фактичні тексти: biography, history, science. LITERARY FICTION = серйозна проза. GENRE FICTION = жанрова (thriller, romance, sci-fi). FICTION ≠ FRICTION (тертя). Жанри: THRILLER, MYSTERY, ROMANCE, SCIENCE FICTION (sci-fi), FANTASY, HORROR. В українській: 'Художня література', 'Нон-фікшн' — 'fiction' стає запозиченням."
+      },
+      {
+        "id": "ue_ac7",
+        "question": "The museum has a permanent _____ of ancient artifacts.",
+        "translation": "(Музей має постійну колекцію давніх артефактів.)",
+        "options": [
+          "collection",
+          "collecting",
+          "collector",
+          "collective"
+        ],
+        "correct": "collection",
+        "explanation": "COLLECTION (колекція): PERMANENT COLLECTION = постійна колекція (vs TEMPORARY EXHIBITION = тимчасова виставка). CURATOR = куратор (відповідальний за колекцію). ARCHIVE = архів. RESTORATION = реставрація. 'The museum's collection includes works by Picasso'. 'The painting is being restored'. В українській: 'Колекція', 'Куратор', 'Реставрація', 'Архів' — музейна термінологія, переважно з латини/французької."
+      },
+      {
+        "id": "ue_ac8",
+        "question": "The play received mixed _____ from critics.",
+        "translation": "(П'єса отримала суперечливі відгуки від критиків.)",
+        "options": [
+          "reviews",
+          "revisions",
+          "previews",
+          "revenues"
+        ],
+        "correct": "reviews",
+        "explanation": "REVIEWS (відгуки/рецензії): REVIEW = рецензія, відгук. MIXED REVIEWS = суперечливі (і позитивні, і негативні). RAVE REVIEWS = захоплені. SCATHING REVIEWS = нищівні. CRITIC = критик. CRITIQUE = критичний аналіз. 'The film got rave reviews' = 'Фільм отримав захоплені відгуки'. Не плутайте: REVIEW (оцінка) vs PREVIEW (попередній перегляд) vs REVISION (перегляд/виправлення). В українській: 'Рецензія', 'Відгук', 'Критик' — літературна критика."
+      },
+      {
+        "id": "ue_ac9",
+        "question": "The ballet _____ danced gracefully across the stage.",
+        "translation": "(Балерина витончено танцювала по сцені.)",
+        "options": [
+          "dancer",
+          "dance",
+          "dancing",
+          "danced"
+        ],
+        "correct": "dancer",
+        "explanation": "BALLET DANCER (артист балету): Виконавські мистецтва: BALLET (балет), OPERA (опера), THEATRE/THEATER (театр), MUSICAL (мюзикл), MIME (пантоміма), STAND-UP COMEDY (стендап). Виконавці: DANCER, SINGER, ACTOR/ACTRESS, PERFORMER, ENTERTAINER. CHOREOGRAPHER = хореограф. REHEARSAL = репетиція. 'The dancers rehearsed for weeks'. В українській: 'Балерина/Танцівник', 'Хореограф', 'Репетиція' — виконавське мистецтво."
+      },
+      {
+        "id": "ue_ac10",
+        "question": "The _____ sculpted a magnificent statue from marble.",
+        "translation": "(Скульптор вирізьбив чудову статую з мармуру.)",
+        "options": [
+          "sculptor",
+          "sculpture",
+          "sculpted",
+          "sculpting"
+        ],
+        "correct": "sculptor",
+        "explanation": "SCULPTOR (скульптор) vs SCULPTURE (скульптура): SCULPTOR = людина, SCULPTURE = твір мистецтва. 'Michelangelo was a great sculptor'. 'The sculpture is made of bronze'. Матеріали: MARBLE (мармур), BRONZE (бронза), CLAY (глина), STONE (камінь), WOOD (дерево). CARVE = різьбити, MOULD = ліпити, CAST = відливати. В українській: 'Скульптор' / 'Скульптура' — пряма паралель. 'Різьбити', 'Ліпити', 'Відливати'."
+      },
+      {
+        "id": "ue_ac11",
+        "question": "The photographer won an award for her stunning _____.",
+        "translation": "(Фотографка виграла нагороду за свій приголомшливий портрет.)",
+        "options": [
+          "portrait",
+          "portrayal",
+          "portray",
+          "portrait's"
+        ],
+        "correct": "portrait",
+        "explanation": "PORTRAIT (портрет) vs PORTRAYAL (зображення/інтерпретація): PORTRAIT = зображення людини (фото, картина). PORTRAYAL = інтерпретація/роль: 'her portrayal of Queen Elizabeth' = 'її зображення/роль королеви'. PORTRAY = зображати: 'The film portrays life in the 1920s'. LANDSCAPE (пейзаж) — горизонтальний формат. PORTRAIT — вертикальний формат (також у друку!). В українській: 'Портрет', 'Зображення', 'Інтерпретація' — мистецька лексика."
+      },
+      {
+        "id": "ue_ac12",
+        "question": "The audience applauded the _____ enthusiastically.",
+        "translation": "(Аудиторія захоплено аплодувала виступу.)",
+        "options": [
+          "performance",
+          "performing",
+          "performer",
+          "performed"
+        ],
+        "correct": "performance",
+        "explanation": "PERFORMANCE (виступ/вистава): PERFORMANCE = 1) виступ: 'a live performance', 2) виконання: 'job performance', 3) продуктивність: 'computer performance'. AUDIENCE = глядачі/слухачі (як група): 'The audience WAS/WERE impressed'. SPECTATOR = глядач (одного). VIEWER = телеглядач. LISTENER = слухач (радіо). В українській: 'Виступ', 'Аудиторія', 'Глядач' — нюанси тих же слів. 'Аудиторія' = і 'глядачі', і 'кімната'."
+      },
+      {
+        "id": "ue_ac13",
+        "question": "The documentary explored the cultural _____ of the region.",
+        "translation": "(Документальний фільм досліджував культурну спадщину регіону.)",
+        "options": [
+          "heritage",
+          "heresy",
+          "hero",
+          "heredity"
+        ],
+        "correct": "heritage",
+        "explanation": "HERITAGE (спадщина): CULTURAL HERITAGE = культурна спадщина. WORLD HERITAGE SITE = об'єкт Всесвітньої спадщини ЮНЕСКО. HERITAGE ≠ HEREDITY (спадковість — біологічне). TRADITION = традиція. LEGACY = спадок (від конкретної людини/епохи). HERITAGE = ширше, колективне. 'Preserving our cultural heritage'. В українській: 'Спадщина', 'Традиція', 'Спадок' — культурна термінологія. 'Об'єкт Всесвітньої спадщини'."
+      },
+      {
+        "id": "ue_ac14",
+        "question": "She is a talented _____ who has written several bestsellers.",
+        "translation": "(Вона талановита авторка, яка написала кілька бестселерів.)",
+        "options": [
+          "author",
+          "writer",
+          "novelist",
+          "all are correct"
+        ],
+        "correct": "all are correct",
+        "explanation": "AUTHOR vs WRITER vs NOVELIST: Всі правильні, але з різними відтінками! AUTHOR = автор (будь-якого тексту, формальне). WRITER = письменник (загальне). NOVELIST = романіст (пише романи). PLAYWRIGHT = драматург. POET = поет. ESSAYIST = есеїст. SCREENWRITER = сценарист. 'She's a published author' (формально). 'She's a great writer' (загально). 'She's a bestselling novelist'. В українській: 'Автор', 'Письменник/ця', 'Романіст/ка' — різні нюанси."
+      },
+      {
+        "id": "ue_ac15",
+        "question": "The mural was painted as a form of street _____.",
+        "translation": "(Мурал був намальований як форма вуличного мистецтва.)",
+        "options": [
+          "art",
+          "artist",
+          "artistic",
+          "artery"
+        ],
+        "correct": "art",
+        "explanation": "STREET ART (вуличне мистецтво): Форми мистецтва: STREET ART (вуличне), FINE ART (образотворче), CONTEMPORARY ART (сучасне), MODERN ART (модерне), PERFORMING ARTS (виконавські), VISUAL ARTS (візуальні), DECORATIVE ARTS (декоративні), APPLIED ARTS (прикладні). MURAL = мурал (великий настінний малюнок). GRAFFITI = графіті. Підсумок: мистецька лексика = багато французьких та латинських запозичень, що збігаються з українськими."
+      }
+    ]
+  },
+  {
+    "key": "business_economics",
+    "name": "Business & Economics",
+    "description": "Бізнес та економіка (лексика)",
+    "iconName": "chart.line.uptrend.xyaxis",
+    "color": "#166534",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ue_be1",
+        "question": "The company's _____ increased by 15% last quarter.",
+        "translation": "(Дохід компанії зріс на 15% минулого кварталу.)",
+        "options": [
+          "revenue",
+          "revenge",
+          "review",
+          "revolve"
+        ],
+        "correct": "revenue",
+        "explanation": "REVENUE (дохід): REVENUE = загальний дохід від продажів (до витрат). PROFIT = прибуток (після витрат). INCOME = дохід (загальне/особистий). TURNOVER (BrE) = оборот. 'Revenue increased by 15%' = 'Дохід зріс на 15%'. REVENUE ≠ PROFIT: Revenue $1M - Costs $800K = Profit $200K. GROSS PROFIT = валовий, NET PROFIT = чистий. В українській: 'Дохід', 'Прибуток', 'Оборот', 'Виручка' — фінансова термінологія."
+      },
+      {
+        "id": "ue_be2",
+        "question": "The _____ market crashed due to global uncertainty.",
+        "translation": "(Фондовий ринок впав через глобальну невизначеність.)",
+        "options": [
+          "stock",
+          "store",
+          "stork",
+          "stuck"
+        ],
+        "correct": "stock",
+        "explanation": "STOCK MARKET (фондовий ринок): STOCK = акція (share). STOCK MARKET = STOCK EXCHANGE = фондовий ринок/біржа. CRASH = обвал. BULL MARKET = ринок на підйомі (бичачий). BEAR MARKET = ринок на спаді (ведмежий). SHARES = акції (BrE). STOCKS = акції (AmE). INVEST = інвестувати. INVESTOR = інвестор. PORTFOLIO = портфель. В українській: 'Фондовий ринок', 'Акція', 'Інвестор', 'Портфель' — фінансова лексика з англійської/французької."
+      },
+      {
+        "id": "ue_be3",
+        "question": "She _____ her own business at the age of 25.",
+        "translation": "(Вона заснувала власний бізнес у 25 років.)",
+        "options": [
+          "started",
+          "begun",
+          "opened",
+          "created"
+        ],
+        "correct": "started",
+        "explanation": "START A BUSINESS (заснувати/почати бізнес): Колокації: START/SET UP/LAUNCH a business (заснувати), RUN a business (вести), GROW a business (розвивати), CLOSE DOWN a business (закрити). ENTREPRENEUR = підприємець. START-UP = стартап. FOUNDER = засновник. CEO = генеральний директор. 'She started her own business' = 'Вона заснувала свій бізнес'. В українській: 'Заснувати бізнес', 'Вести бізнес', 'Підприємець', 'Стартап' — ділова лексика."
+      },
+      {
+        "id": "ue_be4",
+        "question": "The bank offered a very competitive interest _____.",
+        "translation": "(Банк запропонував дуже конкурентну відсоткову ставку.)",
+        "options": [
+          "rate",
+          "rating",
+          "ratio",
+          "rates"
+        ],
+        "correct": "rate",
+        "explanation": "INTEREST RATE (відсоткова ставка): RATE vs RATIO vs RATING: INTEREST RATE = відсоткова ставка. EXCHANGE RATE = обмінний курс. RATIO = співвідношення (numbers: 2:1). RATING = рейтинг/оцінка (credit rating). 'The interest rate was lowered to 2%'. 'The exchange rate is 1 USD = 41 UAH'. В українській: 'Ставка', 'Курс', 'Співвідношення', 'Рейтинг' — різні слова для різних «rate». Контекст критичний."
+      },
+      {
+        "id": "ue_be5",
+        "question": "The company decided to _____ 200 workers due to budget cuts.",
+        "translation": "(Компанія вирішила звільнити 200 працівників через скорочення бюджету.)",
+        "options": [
+          "lay off",
+          "lay down",
+          "lay out",
+          "lay on"
+        ],
+        "correct": "lay off",
+        "explanation": "LAY OFF (скоротити/звільнити): LAY OFF = звільнити через економічні причини (не провину). FIRE/SACK = звільнити за провину. MAKE REDUNDANT (BrE) = скоротити. RESIGN = піти у відставку (добровільно). RETIRE = вийти на пенсію. HIRE/RECRUIT = найняти. 'The company laid off 200 employees'. 'She was made redundant'. В українській: 'Скоротити', 'Звільнити', 'Піти у відставку' — різні причини звільнення."
+      },
+      {
+        "id": "ue_be6",
+        "question": "The inflation _____ has been rising steadily this year.",
+        "translation": "(Рівень інфляції стабільно зростає цього року.)",
+        "options": [
+          "rate",
+          "level",
+          "grade",
+          "rank"
+        ],
+        "correct": "rate",
+        "explanation": "INFLATION RATE (рівень інфляції): Економічні показники: INFLATION RATE (інфляція), UNEMPLOYMENT RATE (безробіття), GDP (ВВП — Gross Domestic Product), RECESSION (рецесія), DEPRESSION (депресія — глибша), DEFLATION (дефляція). 'Inflation has risen to 5%'. BOOM = підйом, BUST = спад: 'Boom and bust cycle'. В українській: 'Інфляція', 'Безробіття', 'ВВП', 'Рецесія' — інтернаціональна макроекономічна лексика."
+      },
+      {
+        "id": "ue_be7",
+        "question": "The two companies announced a _____.",
+        "translation": "(Дві компанії оголосили про злиття.)",
+        "options": [
+          "merger",
+          "merging",
+          "merged",
+          "merge"
+        ],
+        "correct": "merger",
+        "explanation": "MERGER (злиття): Корпоративні трансакції: MERGER = злиття (два = одне). ACQUISITION = поглинання (купівля іншої компанії). M&A = Mergers and Acquisitions. TAKEOVER = поглинання (часто вороже). HOSTILE TAKEOVER = вороже поглинання. JOINT VENTURE = спільне підприємство. 'The merger was valued at $5 billion'. В українській: 'Злиття', 'Поглинання', 'Спільне підприємство' — корпоративна лексика."
+      },
+      {
+        "id": "ue_be8",
+        "question": "The company is looking for new _____ opportunities abroad.",
+        "translation": "(Компанія шукає нові інвестиційні можливості за кордоном.)",
+        "options": [
+          "investment",
+          "investigate",
+          "investor",
+          "invention"
+        ],
+        "correct": "investment",
+        "explanation": "INVESTMENT (інвестиція): INVEST = інвестувати, INVESTMENT = інвестиція, INVESTOR = інвестор. 'Foreign direct investment (FDI)' = 'Прямі іноземні інвестиції'. RETURN ON INVESTMENT (ROI) = дохідність інвестиції. PORTFOLIO = портфель інвестицій. DIVERSIFY = диверсифікувати. 'A sound/wise investment'. В українській: 'Інвестиція', 'Інвестор', 'Портфель', 'Диверсифікація' — фінансова термінологія з латини."
+      },
+      {
+        "id": "ue_be9",
+        "question": "The new product was launched with a big marketing _____.",
+        "translation": "(Новий продукт був запущений з великою маркетинговою кампанією.)",
+        "options": [
+          "campaign",
+          "camp",
+          "champion",
+          "camping"
+        ],
+        "correct": "campaign",
+        "explanation": "MARKETING CAMPAIGN (маркетингова кампанія): Маркетинг: CAMPAIGN (кампанія), STRATEGY (стратегія), BRAND (бренд), ADVERTISEMENT/AD (реклама), TARGET MARKET (цільовий ринок), MARKET RESEARCH (дослідження ринку), LAUNCH (запуск). 'Launch a product' = 'Запустити продукт'. 'An advertising campaign'. В українській: 'Кампанія', 'Стратегія', 'Бренд', 'Реклама', 'Цільовий ринок' — маркетингова лексика, переважно запозичення."
+      },
+      {
+        "id": "ue_be10",
+        "question": "The budget _____ left the country in a difficult situation.",
+        "translation": "(Бюджетний дефіцит поставив країну у складне становище.)",
+        "options": [
+          "deficit",
+          "default",
+          "defence",
+          "defeat"
+        ],
+        "correct": "deficit",
+        "explanation": "BUDGET DEFICIT (бюджетний дефіцит): DEFICIT = витрати > доходи. SURPLUS = доходи > витрати. BALANCED BUDGET = збалансований бюджет. NATIONAL DEBT = державний борг. 'The budget deficit reached $1 trillion'. AUSTERITY = жорстка економія: 'Austerity measures'. DEFAULT = невиконання зобов'язань: 'The country defaulted on its debt'. В українській: 'Дефіцит', 'Профіцит', 'Державний борг', 'Жорстка економія' — бюджетна лексика."
+      },
+      {
+        "id": "ue_be11",
+        "question": "The CEO presented the annual _____ at the shareholders' meeting.",
+        "translation": "(Генеральний директор представив річний звіт на зборах акціонерів.)",
+        "options": [
+          "report",
+          "record",
+          "receipt",
+          "result"
+        ],
+        "correct": "report",
+        "explanation": "ANNUAL REPORT (річний звіт): ANNUAL = щорічний. SHAREHOLDERS = акціонери. BOARD OF DIRECTORS = рада директорів. AGM = Annual General Meeting (щорічні загальні збори). QUARTERLY REPORT = квартальний звіт. FINANCIAL STATEMENT = фінансовий звіт. BALANCE SHEET = баланс. 'The annual report showed strong growth'. В українській: 'Річний звіт', 'Акціонери', 'Рада директорів', 'Баланс' — корпоративна звітність."
+      },
+      {
+        "id": "ue_be12",
+        "question": "Supply and _____ determine the price of goods.",
+        "translation": "(Попит і пропозиція визначають ціну товарів.)",
+        "options": [
+          "demand",
+          "command",
+          "expand",
+          "depend"
+        ],
+        "correct": "demand",
+        "explanation": "SUPPLY AND DEMAND (попит і пропозиція): Базовий економічний закон: коли DEMAND (попит) зростає, PRICE (ціна) зростає; коли SUPPLY (пропозиція) зростає, ціна падає. 'High demand, low supply = high prices'. MARKET FORCES = ринкові сили. COMPETITION = конкуренція. MONOPOLY = монополія. MARKET ECONOMY = ринкова економіка. В українській: 'Попит і пропозиція', 'Ринкові сили', 'Конкуренція' — базові економічні поняття."
+      },
+      {
+        "id": "ue_be13",
+        "question": "The company went _____ due to heavy debts.",
+        "translation": "(Компанія збанкрутувала через великі борги.)",
+        "options": [
+          "bankrupt",
+          "broken",
+          "bust",
+          "both a and c"
+        ],
+        "correct": "both a and c",
+        "explanation": "GO BANKRUPT / GO BUST (збанкрутувати): BANKRUPT = формальне/юридичне. BUST = розмовне. 'The company went bankrupt/bust'. BANKRUPTCY = банкрутство. INSOLVENT = неплатоспроможний (формальне). LIQUIDATION = ліквідація. BAILOUT = фінансова допомога (порятунок): 'The government bailed out the bank'. DEBT = борг. В українській: 'Збанкрутувати', 'Банкрутство', 'Ліквідація', 'Борг' — фінансово-юридична лексика."
+      },
+      {
+        "id": "ue_be14",
+        "question": "She works in the human _____ department.",
+        "translation": "(Вона працює у відділі кадрів.)",
+        "options": [
+          "resources",
+          "relations",
+          "rights",
+          "results"
+        ],
+        "correct": "resources",
+        "explanation": "HUMAN RESOURCES (HR — відділ кадрів): HR = Human Resources = управління персоналом. RECRUIT = наймати. INTERVIEW = співбесіда. CV/RESUME = резюме. SALARY = зарплата. BENEFITS = соціальний пакет. PROMOTION = підвищення. APPRAISAL = оцінка роботи. 'The HR department handles recruitment'. V українській: 'Відділ кадрів', 'HR', 'Резюме', 'Зарплата', 'Підвищення' — ділова лексика, HR часто залишають англійською."
+      },
+      {
+        "id": "ue_be15",
+        "question": "The entrepreneur pitched her idea to the _____.",
+        "translation": "(Підприємниця презентувала свою ідею інвесторам.)",
+        "options": [
+          "investors",
+          "inventers",
+          "investigators",
+          "invaders"
+        ],
+        "correct": "investors",
+        "explanation": "PITCH TO INVESTORS (презентувати інвесторам): PITCH = подати ідею/презентувати (бізнес). 'Pitch an idea' = 'Презентувати ідею'. STARTUP = стартап. VENTURE CAPITAL = венчурний капітал. ANGEL INVESTOR = бізнес-ангел. CROWDFUNDING = краудфандинг. SEED MONEY = стартовий капітал. Підсумок бізнес-лексики: revenue, profit, invest, market, competition — базові поняття для розуміння ділової англійської. В українській: 'Пітч', 'Стартап', 'Венчурний капітал' — сучасна бізнес-лексика."
+      }
+    ]
   }
 ]

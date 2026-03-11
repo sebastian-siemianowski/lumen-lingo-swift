@@ -11683,5 +11683,2055 @@
         "explanation": "'I'm not sure I agree'は「同意するかどうか確信がない」という控えめな不同意表現です。完全に反対するのではなく、「まだ納得していない」という中間的な立場を示します。日本語の「同意しかねます」「ちょっと賛成しかねます」に対応します。直接的な'I disagree'より何倍も柔らかい表現で、英語圏のビジネスコミュニケーションで最も好まれる反対意見の切り出し方の一つです。'certain'、'clear'、'positive'も文法的には可能ですが、'sure'が最も自然です。"
       }
     ]
+  },
+  {
+    "key": "requests_offers",
+    "name": "Requests & Offers",
+    "description": "依頼と申し出の表現",
+    "iconName": "hand.raised",
+    "color": "#60a5fa",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_ro1",
+        "question": "_____ you pass me the salt, please?",
+        "translation": "(塩を取っていただけますか？)",
+        "options": [
+          "Could",
+          "Should",
+          "Must",
+          "Shall"
+        ],
+        "correct": "Could",
+        "explanation": "'Could you...?'は丁寧な依頼表現の代表格です。'Can you...?'よりも丁寧で、ビジネスから日常まで幅広く使えます。日本語の「〜していただけますか？」に相当します。'Could'は'can'の過去形ですが、ここでは過去の意味はなく丁寧さを表す仮定法的用法です。英語では助動詞を変えることで丁寧さのレベルを調整します。最もカジュアルな'Can you...?'から、丁寧な'Could you...?'、最も丁寧な'Would you mind...?'まで段階があります。"
+      },
+      {
+        "id": "je_ro2",
+        "question": "Would you _____ opening the window?",
+        "translation": "(窓を開けていただけませんか？)",
+        "options": [
+          "mind",
+          "like",
+          "want",
+          "prefer"
+        ],
+        "correct": "mind",
+        "explanation": "'Would you mind...?'は最も丁寧な依頼表現の一つです。直訳すると「〜することを気にしますか？」で、「いいえ（気にしません）」が肯定的な返事です。日本語話者がつまずきやすいのは、この表現への「はい」の答えが「気にする＝嫌です」になること。'Would you mind opening the window?'に対して'No, not at all.'（いいえ、全く構いません）が正しい承諾です。ビジネスメールや接客英語で頻繁に使われる重要表現です。"
+      },
+      {
+        "id": "je_ro3",
+        "question": "_____ I help you with those bags?",
+        "translation": "(その荷物をお手伝いしましょうか？)",
+        "options": [
+          "Shall",
+          "Will",
+          "Must",
+          "Could"
+        ],
+        "correct": "Shall",
+        "explanation": "'Shall I...?'は申し出（オファー）の表現です。日本語の「〜しましょうか？」に対応します。自分から進んで何かをしたいと申し出る場合に使います。'Shall I help you?'（手伝いましょうか？）、'Shall I carry that?'（それを運びましょうか？）のように使います。イギリス英語では特に一般的で、アメリカ英語では'Can I help you?'や'Would you like me to help?'の方がよく使われます。親切心を示す重要な表現です。"
+      },
+      {
+        "id": "je_ro4",
+        "question": "I _____ like a cup of coffee, please.",
+        "translation": "(コーヒーを一杯いただきたいです)",
+        "options": [
+          "would",
+          "will",
+          "should",
+          "must"
+        ],
+        "correct": "would",
+        "explanation": "'I would like...'は'I want...'の丁寧な言い方で、注文や希望を伝える際に使います。'I'd like a cup of coffee'は「コーヒーをお願いします」という意味です。レストランやカフェで注文する際の基本表現で、'I want...'は直接的すぎるため、大人の英語では'I would like...'を使うのがマナーです。短縮形'I'd like'も頻繁に使われます。日本語の「〜をいただきたいのですが」に相当する上品な表現です。"
+      },
+      {
+        "id": "je_ro5",
+        "question": "Do you _____ me to call a taxi?",
+        "translation": "(タクシーを呼びましょうか？)",
+        "options": [
+          "want",
+          "like",
+          "need",
+          "wish"
+        ],
+        "correct": "want",
+        "explanation": "'Do you want me to...?'はカジュアルな申し出の表現です。「私が〜しましょうか？」という意味で、友人や親しい間柄で使います。より丁寧にしたい場合は'Would you like me to...?'です。'Do you want me to call a taxi?'（タクシー呼ぼうか？）はカジュアルな場面で自然に使えます。日本語では「〜しようか？」に相当します。英語の丁寧さは使う表現で決まるため、場面に応じた使い分けが重要です。"
+      },
+      {
+        "id": "je_ro6",
+        "question": "Would you be _____ enough to hold the door?",
+        "translation": "(ドアを押さえていただけますか？)",
+        "options": [
+          "kind",
+          "nice",
+          "good",
+          "fine"
+        ],
+        "correct": "kind",
+        "explanation": "'Would you be kind enough to...?'は非常にフォーマルで丁寧な依頼表現です。直訳は「〜するほど親切でいらっしゃいますか？」で、相手の善意に訴えかけるニュアンスがあります。ビジネスの正式な場面やフォーマルな手紙で使われます。日本語の「恐れ入りますが、〜していただけますでしょうか」に近い丁寧さです。同様の表現に'Would you be so kind as to...'もあります。日常会話では丁寧すぎることもありますが、場面を選べば大変印象が良くなります。"
+      },
+      {
+        "id": "je_ro7",
+        "question": "I was _____ if you could lend me your notes.",
+        "translation": "(ノートを貸していただけないかと思いまして)",
+        "options": [
+          "wondering",
+          "thinking",
+          "asking",
+          "hoping"
+        ],
+        "correct": "wondering",
+        "explanation": "'I was wondering if you could...'は非常に丁寧で間接的な依頼表現です。過去進行形を使うことで、さらに控えめな印象を与えます。直訳は「〜していただけるかどうか思っていたのですが」で、相手に断る余地を十分に残す表現です。日本語の「〜していただけないかと思いまして」に近いニュアンスです。大学やビジネスの場面で使うと、礼儀正しく知的な印象を与えます。メールの依頼文でも頻繁に使われる上級表現です。"
+      },
+      {
+        "id": "je_ro8",
+        "question": "_____ you like some more tea?",
+        "translation": "(お茶のおかわりはいかがですか？)",
+        "options": [
+          "Would",
+          "Could",
+          "Should",
+          "Must"
+        ],
+        "correct": "Would",
+        "explanation": "'Would you like...?'は何かを提供する際の丁寧な表現です。'Do you want...?'の丁寧版で、おもてなしの場面で使います。'Would you like some more tea?'は「お茶をもう一杯いかがですか？」という意味です。答え方は'Yes, please.'（はい、お願いします）または'No, thank you.'（いいえ、結構です）です。日本語の「〜はいかがですか？」に対応し、接客英語の最も基本的な表現の一つです。"
+      },
+      {
+        "id": "je_ro9",
+        "question": "I'll _____ care of the bill.",
+        "translation": "(お会計は私が持ちます)",
+        "options": [
+          "take",
+          "make",
+          "get",
+          "have"
+        ],
+        "correct": "take",
+        "explanation": "'I'll take care of...'は「私が〜を引き受けます」という申し出の表現です。'take care of'は「面倒を見る、処理する」という意味の重要な句動詞です。レストランで「払いは私が持つ」と言いたい時に'I'll take care of the bill'と言えます。同様に'I'll take care of the arrangements'（手配は私がします）のように使います。日本語の「任せてください」に近いニュアンスで、積極的に責任を引き受ける姿勢を示せる便利な表現です。"
+      },
+      {
+        "id": "je_ro10",
+        "question": "_____ you mind if I sit here?",
+        "translation": "(ここに座ってもよろしいですか？)",
+        "options": [
+          "Would",
+          "Could",
+          "Should",
+          "Must"
+        ],
+        "correct": "Would",
+        "explanation": "'Would you mind if I...?'は許可を求める丁寧な表現です。直訳は「私が〜したら気にしますか？」です。'Would you mind if I sat here?'（仮定法過去）がより正式ですが、'Would you mind if I sit here?'も広く使われます。答え方に注意：'No, not at all.'が「どうぞ」、'Yes, I would.'が「困ります」です。日本語は「座ってもいいですか→どうぞ」と自然ですが、英語は否定で答えるのが承諾なので混乱しやすい表現です。"
+      },
+      {
+        "id": "je_ro11",
+        "question": "Let me _____ you a hand with that.",
+        "translation": "(それ、手伝いましょう)",
+        "options": [
+          "give",
+          "take",
+          "make",
+          "have"
+        ],
+        "correct": "give",
+        "explanation": "'Let me give you a hand'は「手伝わせてください」というカジュアルな申し出の表現です。'give someone a hand'は「手伝う」の口語表現で、'help'と同義です。'Let me...'で始めることで、自発的な申し出のニュアンスが出ます。日本語の「手伝いましょう」に相当しますが、より親しみやすい響きがあります。'Do you need a hand?'（手伝いが必要？）も同じ'hand'を使った関連表現です。日常英語で非常によく使われます。"
+      },
+      {
+        "id": "je_ro12",
+        "question": "I'd be happy _____ help you move.",
+        "translation": "(引っ越しのお手伝いを喜んでいたします)",
+        "options": [
+          "to",
+          "for",
+          "with",
+          "by"
+        ],
+        "correct": "to",
+        "explanation": "'I'd be happy to...'は「喜んで〜します」という積極的な申し出の表現です。'I'd be glad to...'や'I'd be delighted to...'も同様の意味で使えます。ビジネスメールでの返信によく使われ、'I'd be happy to assist you with that'（喜んでお手伝いいたします）は定番フレーズです。日本語の「喜んで」に相当し、前向きな態度を示す好印象な表現です。依頼への返答として使えば、協力的な姿勢を効果的に伝えられます。"
+      },
+      {
+        "id": "je_ro13",
+        "question": "Is there _____ I can do for you?",
+        "translation": "(何かお手伝いできることはありますか？)",
+        "options": [
+          "anything",
+          "something",
+          "nothing",
+          "everything"
+        ],
+        "correct": "anything",
+        "explanation": "'Is there anything I can do for you?'は汎用的な申し出の表現です。日本語の「何かできることはありますか？」に対応します。疑問文・否定文では'something'ではなく'anything'を使うのが基本ルールです。カスタマーサービスや接客で頻繁に使われます。より丁寧なバリエーションとして'Is there anything else I can help you with?'もあります。困っている人に声をかける際の自然な表現で、相手への配慮を示す素晴らしいフレーズです。"
+      },
+      {
+        "id": "je_ro14",
+        "question": "I don't _____ to be rude, but could you keep it down?",
+        "translation": "(失礼なつもりはないのですが、静かにしていただけますか？)",
+        "options": [
+          "mean",
+          "want",
+          "try",
+          "need"
+        ],
+        "correct": "mean",
+        "explanation": "'I don't mean to be rude, but...'は角の立たない依頼の前置き表現です。直訳は「失礼なつもりはないのですが」で、批判的な依頼や苦情を伝える際のクッション言葉として機能します。日本語の「恐れ入りますが」「申し訳ないのですが」に近いニュアンスです。'mean to'は「〜するつもりである」という意味で、意図がないことを先に伝えてから依頼するテクニックです。英語圏のコミュニケーションで非常に重要な配慮表現です。"
+      },
+      {
+        "id": "je_ro15",
+        "question": "If you _____ be so kind, could you show me the way?",
+        "translation": "(もしよろしければ、道を教えていただけますか？)",
+        "options": [
+          "would",
+          "could",
+          "should",
+          "might"
+        ],
+        "correct": "would",
+        "explanation": "'If you would be so kind'は非常にフォーマルで丁寧な依頼の前置きです。直訳は「もしそれほど親切にしていただけるなら」で、相手の好意に頼る控えめな表現です。日本語の「もしよろしければ」「ご親切にも」に近いニュアンスです。ホテルの受付や正式な場面で使うと非常に洗練された印象を与えます。日常会話では丁寧すぎることもありますが、知っておくと礼儀正しいコミュニケーションに役立つ上級表現です。"
+      }
+    ]
+  },
+  {
+    "key": "complaints_apologies",
+    "name": "Complaints & Apologies",
+    "description": "苦情と謝罪の表現",
+    "iconName": "exclamationmark.bubble",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_ca1",
+        "question": "I'm sorry _____ the inconvenience.",
+        "translation": "(ご不便をおかけして申し訳ございません)",
+        "options": [
+          "for",
+          "about",
+          "of",
+          "with"
+        ],
+        "correct": "for",
+        "explanation": "'I'm sorry for...'は謝罪の最も基本的な表現です。'for'の後には名詞または動名詞が来ます。'I'm sorry for the inconvenience'はビジネスでよく使われる定型フレーズです。日本語の「〜して申し訳ございません」に相当します。'I'm sorry about...'も使えますが、'for'の方がフォーマルです。謝罪の度合いは表現によって変わり、'I apologize for...'はさらにフォーマル、'My apologies for...'は最もフォーマルな謝罪表現です。"
+      },
+      {
+        "id": "je_ca2",
+        "question": "I'd like to make a _____ about the service.",
+        "translation": "(サービスについて苦情を申し上げたいのですが)",
+        "options": [
+          "complaint",
+          "problem",
+          "trouble",
+          "issue"
+        ],
+        "correct": "complaint",
+        "explanation": "'make a complaint'は「苦情を述べる」という定型表現です。'complaint'は苦情・不満を意味する名詞で、動詞形は'complain'です。'I'd like to make a complaint about...'は丁寧に苦情を伝える際の標準的な言い方です。日本語の「苦情を申し上げたい」に相当します。より直接的には'I want to complain about...'ですが、'I'd like to...'を使うことで丁寧さが加わります。英語圏では苦情も丁寧に述べることが効果的な結果につながります。"
+      },
+      {
+        "id": "je_ca3",
+        "question": "I do apologize _____ any misunderstanding.",
+        "translation": "(誤解がありましたことを深くお詫びいたします)",
+        "options": [
+          "for",
+          "about",
+          "of",
+          "with"
+        ],
+        "correct": "for",
+        "explanation": "'I do apologize for...'の'do'は強調のための助動詞です。通常の'I apologize for...'より強い謝意を示します。日本語の「深くお詫びいたします」に相当するフォーマルな謝罪表現です。'do'による強調は英語の重要な技法で、'I do understand'（本当に理解しています）、'I do appreciate it'（本当に感謝しています）のように肯定文で使います。ビジネスメールやカスタマーサービスで誠意を示す際に非常に効果的な表現です。"
+      },
+      {
+        "id": "je_ca4",
+        "question": "I'm afraid there's been a _____ with my order.",
+        "translation": "(注文に間違いがあったようなのですが)",
+        "options": [
+          "mistake",
+          "fault",
+          "guilt",
+          "blame"
+        ],
+        "correct": "mistake",
+        "explanation": "'I'm afraid...'は悪い知らせや苦情を柔らかく伝える際の前置き表現です。直訳は「恐れ入りますが」で、日本語の「申し訳ないのですが」に近いクッション言葉です。'There's been a mistake with my order'は「注文に間違いがありました」を婉曲に表現しています。英語圏では直接「あなたが間違えた」と言うのではなく、'there's been a mistake'と受動的に表現することで、相手を責めずに問題を指摘できます。これは非常に重要なコミュニケーション戦略です。"
+      },
+      {
+        "id": "je_ca5",
+        "question": "Please accept my sincerest _____.",
+        "translation": "(心よりお詫び申し上げます)",
+        "options": [
+          "apologies",
+          "sorries",
+          "regrets",
+          "pardons"
+        ],
+        "correct": "apologies",
+        "explanation": "'Please accept my sincerest apologies'は最もフォーマルな謝罪表現の一つです。公式な場面、ビジネス文書、重大なミスへの謝罪に使われます。'apologies'と複数形にすることでより深い謝意を示します。日本語の「心よりお詫び申し上げます」に相当する最上級の謝罪です。'sincere'（誠実な）の最上級'sincerest'を使うことで、最大限の誠意を表現しています。フォーマルな手紙やメールでの必須表現です。"
+      },
+      {
+        "id": "je_ca6",
+        "question": "This is not _____ I expected.",
+        "translation": "(これは期待していたものと違います)",
+        "options": [
+          "what",
+          "that",
+          "which",
+          "how"
+        ],
+        "correct": "what",
+        "explanation": "'This is not what I expected'は期待との相違を伝える苦情表現です。直接的な批判を避けながら不満を表現できます。'what I expected'は「私が期待したもの」という名詞節で、'what'は関係代名詞として機能しています。日本語の「期待していたものと違う」に対応します。レストランやホテルで品質に不満がある場合に使える表現です。'This is not what I ordered'（注文したものと違います）も同じパターンの実用的な表現です。"
+      },
+      {
+        "id": "je_ca7",
+        "question": "I'm terribly sorry. It won't happen _____.",
+        "translation": "(大変申し訳ございません。二度と起こりません)",
+        "options": [
+          "again",
+          "more",
+          "longer",
+          "ever"
+        ],
+        "correct": "again",
+        "explanation": "'It won't happen again'は「二度と起こりません」という約束を含む謝罪フレーズです。謝罪に加えて再発防止を約束することで、より誠意のある対応を示します。日本語の「今後このようなことがないよう致します」に相当します。'terribly sorry'は'very sorry'よりも強い謝罪を表し、副詞'terribly'が「ひどく」という強調の役割を果たしています。カスタマーサービスやビジネスシーンで信頼回復のために使われる重要な謝罪パターンです。"
+      },
+      {
+        "id": "je_ca8",
+        "question": "I have no _____ but to complain to the manager.",
+        "translation": "(マネージャーに苦情を言うしかありません)",
+        "options": [
+          "choice",
+          "way",
+          "chance",
+          "option"
+        ],
+        "correct": "choice",
+        "explanation": "'I have no choice but to...'は「〜するしかない」という強い不満を表す表現です。他の選択肢がないことを強調し、深刻な苦情の際に使われます。日本語の「〜せざるを得ない」に相当します。'but'はここで「〜以外に」の意味で、'I have no choice but to complain'は「苦情を言う以外に選択肢がない」を意味します。この表現を使うと、問題が深刻で他の解決策を試したが効果がなかったというニュアンスが伝わります。"
+      },
+      {
+        "id": "je_ca9",
+        "question": "I _____ to say that I'm very disappointed.",
+        "translation": "(残念ながら、大変失望しています)",
+        "options": [
+          "regret",
+          "sorry",
+          "apologize",
+          "afraid"
+        ],
+        "correct": "regret",
+        "explanation": "'I regret to say...'は悪い感情を伝える際のフォーマルな前置きです。直訳は「〜と言わざるを得ないことを残念に思います」で、日本語の「残念ながら」に相当します。'regret'は'sorry'よりもフォーマルで深い後悔を表します。'I regret to inform you that...'はビジネスレター起句の定番で、否定的な内容を伝える際に使います。'disappointed'（失望した）と組み合わせることで、強い不満を品格ある形で表現できる上級テクニックです。"
+      },
+      {
+        "id": "je_ca10",
+        "question": "I _____ have been more careful.",
+        "translation": "(もっと注意すべきでした)",
+        "options": [
+          "should",
+          "would",
+          "could",
+          "must"
+        ],
+        "correct": "should",
+        "explanation": "'I should have been more careful'は過去の行動への反省・後悔を表す表現です。'should have + 過去分詞'は「〜すべきだった（のにしなかった）」という意味の重要構文です。日本語の「〜すべきでした」に対応します。自分の過失を認める謝罪の場面で使えます。'I should have checked earlier'（もっと早く確認すべきでした）、'I should have told you sooner'（もっと早く言うべきでした）のように、反省を込めた表現として日常的に使われます。"
+      },
+      {
+        "id": "je_ca11",
+        "question": "I understand your _____, and I'm working on it.",
+        "translation": "(ご懸念は理解しており、対応中です)",
+        "options": [
+          "concern",
+          "angry",
+          "upset",
+          "mad"
+        ],
+        "correct": "concern",
+        "explanation": "'I understand your concern'は相手の不満を受け止める際の重要な表現です。苦情に対して感情的にならず、相手の気持ちを認めてから対応策を提示するパターンです。'concern'（懸念）は'complaint'（苦情）より柔らかい表現で、問題を建設的に捉える姿勢を示します。日本語の「ご懸念は承知しております」に相当します。カスタマーサポートの基本テクニックとして、まず共感を示してから解決策を提案する流れは英語圏のビジネスで極めて重要です。"
+      },
+      {
+        "id": "je_ca12",
+        "question": "I owe you an _____.",
+        "translation": "(お詫びしなければなりません)",
+        "options": [
+          "apology",
+          "excuse",
+          "pardon",
+          "forgiveness"
+        ],
+        "correct": "apology",
+        "explanation": "'I owe you an apology'は「謝罪する義務がある」「お詫びしなければならない」という意味の表現です。'owe'は「〜を借りている、〜する義務がある」で、謝罪が未払いの負債のように残っていることを表します。日本語の「お詫びしなければなりません」に当たります。この表現は謝罪が遅れた場合や、以前の行動を反省して改めて謝る場合に特に適しています。'I think I owe you an apology for what I said yesterday'のように使います。"
+      },
+      {
+        "id": "je_ca13",
+        "question": "It was entirely my _____.",
+        "translation": "(すべて私の過ちです)",
+        "options": [
+          "fault",
+          "mistake",
+          "error",
+          "wrong"
+        ],
+        "correct": "fault",
+        "explanation": "'It was entirely my fault'は全面的に自分の責任を認める表現です。'fault'は「過失、責任」を意味し、'mistake'（間違い）とは微妙に異なります。'fault'は責任の所在を示し、'mistake'は行為そのものを指します。'entirely'（完全に）を加えることで、言い訳なしの潔い謝罪になります。日本語の「すべて私が悪いです」に相当します。責任を明確にすることは英語圏では誠実さの表れと見なされ、信頼回復に効果的です。"
+      },
+      {
+        "id": "je_ca14",
+        "question": "I didn't _____ to offend you.",
+        "translation": "(あなたを怒らせるつもりはありませんでした)",
+        "options": [
+          "mean",
+          "want",
+          "try",
+          "plan"
+        ],
+        "correct": "mean",
+        "explanation": "'I didn't mean to...'は「〜するつもりはなかった」という意図の否定を表す謝罪表現です。'mean to'は「〜するつもりである」で、その否定は意図的でなかったことを強調します。'offend'は「気分を害する」という意味です。日本語の「悪気はなかったのです」に近いニュアンスです。誤解や不意の失言を謝る際に非常によく使われます。'I didn't mean to hurt your feelings'（あなたの気持ちを傷つけるつもりはなかった）も同パターンの頻出表現です。"
+      },
+      {
+        "id": "je_ca15",
+        "question": "I'm writing to express my _____ with the product.",
+        "translation": "(製品への不満をお伝えするためにお便りしています)",
+        "options": [
+          "dissatisfaction",
+          "unhappiness",
+          "sadness",
+          "anger"
+        ],
+        "correct": "dissatisfaction",
+        "explanation": "'express my dissatisfaction'はフォーマルな苦情文書の定型表現です。'dissatisfaction'（不満足）は'satisfaction'（満足）の反対語で、公式な苦情を述べる際に使われます。日本語の「不満を表明する」に相当します。苦情のメールや手紙は'I'm writing to...'で始めるのが標準的な書き出しです。ビジネス英語では感情的な言葉（'angry', 'furious'）を避け、'dissatisfaction'や'disappointment'のような客観的な語を選ぶことで、プロフェッショナルな印象を保てます。"
+      }
+    ]
+  },
+  {
+    "key": "describing_trends",
+    "name": "Describing Trends",
+    "description": "傾向・変化を描写する表現",
+    "iconName": "chart.line.uptrend.xyaxis",
+    "color": "#4ade80",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "je_dt1",
+        "question": "Sales have _____ significantly this year.",
+        "translation": "(今年、売上が大幅に増加しました)",
+        "options": [
+          "increased",
+          "increasing",
+          "increase",
+          "increases"
+        ],
+        "correct": "increased",
+        "explanation": "'have increased'は現在完了形で、過去から現在に至る変化を表します。'significantly'（大幅に）は変化の程度を示す副詞です。トレンドを表す際は、動詞（increase/decrease/rise/fall）と程度の副詞を組み合わせます。日本語の「増加した」に対応しますが、英語では現在完了形を使うことで「今の時点Gで増えている状態」を強調しています。ビジネスプレゼンテーションやレポートで必須の表現パターンです。"
+      },
+      {
+        "id": "je_dt2",
+        "question": "There has been a sharp _____ in prices.",
+        "translation": "(価格が急激に上昇しました)",
+        "options": [
+          "rise",
+          "raise",
+          "arise",
+          "risen"
+        ],
+        "correct": "rise",
+        "explanation": "'a sharp rise in...'は「〜の急激な上昇」を表す名詞パターンです。'rise'は自動詞「上がる」の名詞形で、'raise'（他動詞「上げる」）と混同しやすい要注意語です。形容詞で変化の速さを示します：'sharp'（急激な）、'gradual'（緩やかな）、'steady'（着実な）、'slight'（わずかな）。日本語の「急上昇」に対応します。'There has been a...'構文は変化を客観的に報告する際のフレームワークとして非常に有用です。"
+      },
+      {
+        "id": "je_dt3",
+        "question": "The number of users has _____ declined.",
+        "translation": "(ユーザー数は徐々に減少しています)",
+        "options": [
+          "gradually",
+          "sudden",
+          "quick",
+          "fast"
+        ],
+        "correct": "gradually",
+        "explanation": "'gradually'は「徐々に、段階的に」を意味する副詞で、変化のペースを表します。トレンド描写では変化の速度を副詞で示すことが重要です。'gradually'（徐々に）、'rapidly'（急速に）、'steadily'（着実に）、'dramatically'（劇的に）、'slightly'（わずかに）。日本語の「徐々に」に対応します。グラフの変化を説明する際には、これらの副詞を正確に使い分けることで、データの特徴を的確に伝えることができます。学術的・ビジネス的な文脈で不可欠です。"
+      },
+      {
+        "id": "je_dt4",
+        "question": "Unemployment _____ to its lowest point in a decade.",
+        "translation": "(失業率は10年間で最低水準まで下がりました)",
+        "options": [
+          "fell",
+          "felt",
+          "fallen",
+          "falling"
+        ],
+        "correct": "fell",
+        "explanation": "'fell'は'fall'の過去形で、「下がった」を意味します。'fall - fell - fallen'の不規則変化に注意してください。'to its lowest point'は「最低水準まで」という到達点を示します。トレンド描写で使われる'fall'は、'decrease'や'decline'と同義ですが、よりドラマチックな印象を与えます。'in a decade'は「10年間で」という期間を示します。数値の減少を表す際は'fall/drop/decrease/decline'を使い分け、文章に変化をつけることが重要です。"
+      },
+      {
+        "id": "je_dt5",
+        "question": "The graph shows a _____ increase in temperatures.",
+        "translation": "(グラフは気温の着実な上昇を示しています)",
+        "options": [
+          "steady",
+          "steadily",
+          "stead",
+          "steadied"
+        ],
+        "correct": "steady",
+        "explanation": "'steady'は形容詞で「着実な、安定した」を意味します。名詞の前に置いて'a steady increase'（着実な増加）のように使います。副詞'steadily'と混同しないよう注意が必要です。'The graph shows a steady increase'では形容詞が必要で、'temperatures increased steadily'では副詞が必要です。品詞の正しい使い分けはトレンド描写の基本です。日本語の「着実な上昇」に対応し、変化が一定のペースで続いていることを表します。"
+      },
+      {
+        "id": "je_dt6",
+        "question": "Profits _____ by 20% last quarter.",
+        "translation": "(利益は前四半期に20%増加しました)",
+        "options": [
+          "grew",
+          "grown",
+          "grow",
+          "growing"
+        ],
+        "correct": "grew",
+        "explanation": "'grew'は'grow'の過去形で、増加・成長を表します。'by 20%'は「20%分だけ」という変化の幅を示す前置詞句です。変化の幅を示す際には'by'を使い、到達点を示す際には'to'を使い分けます。'grew by 20%'（20%増加した）vs 'grew to 20%'（20%まで成長した）。この'by'と'to'の区別はデータ分析やビジネスレポートで極めて重要です。日本語の「20%増加した」に対応しますが、英語では前置詞で意味が大きく変わります。"
+      },
+      {
+        "id": "je_dt7",
+        "question": "The population has remained relatively _____.",
+        "translation": "(人口は比較的安定しています)",
+        "options": [
+          "stable",
+          "stability",
+          "stabilize",
+          "stably"
+        ],
+        "correct": "stable",
+        "explanation": "'stable'は形容詞で「安定した、変動のない」を意味します。'remain'の後には形容詞（補語）が来るため、'stable'が正解です。'remain'は「〜のままである」というリンキング動詞で、be動詞と同様に形容詞を取ります。'relatively'（比較的）は程度を和らげる副詞です。日本語の「比較的安定している」に対応します。データに大きな変動がない場合、'stable', 'constant', 'unchanged'などの形容詞で状態を描写します。"
+      },
+      {
+        "id": "je_dt8",
+        "question": "There was a dramatic _____ in demand.",
+        "translation": "(需要が劇的に落ち込みました)",
+        "options": [
+          "drop",
+          "dropping",
+          "dropped",
+          "drops"
+        ],
+        "correct": "drop",
+        "explanation": "'a dramatic drop'は「劇的な落ち込み」を表す名詞パターンです。'drop'は動詞「落ちる」とちょう名詞「落ち込み」の両方で使えます。'dramatic'は「劇的な」で、変化が非常に大きいことを強調します。トレンド描写では'There was a...'構文で名詞を使うか、主語＋動詞で直接表現するかの二つのスタイルがあります。名詞パターンの方がフォーマルで、学術論文やプレゼンテーションに適しています。日本語では「劇的な減少」に相当します。"
+      },
+      {
+        "id": "je_dt9",
+        "question": "The trend is expected to _____ in the coming years.",
+        "translation": "(この傾向は今後数年間続くと予想されます)",
+        "options": [
+          "continue",
+          "continued",
+          "continuing",
+          "continues"
+        ],
+        "correct": "continue",
+        "explanation": "'is expected to + 動詞の原形'は将来の予測を表す受動態パターンです。「〜すると予想されている」という意味で、客観的な予測を述べる際に使います。'continue'（続く）はトレンドの持続を表します。'in the coming years'は「今後数年間」です。予測表現には他にも'is likely to...'、'is projected to...'、'is forecast to...'があり、確信度の違いで使い分けます。データ分析と未来予測を結びつけるアカデミックな表現です。"
+      },
+      {
+        "id": "je_dt10",
+        "question": "The data _____ that people are exercising more.",
+        "translation": "(データは、人々がより運動するようになっていることを示しています)",
+        "options": [
+          "suggests",
+          "suggest",
+          "suggesting",
+          "suggested"
+        ],
+        "correct": "suggests",
+        "explanation": "'data'は英語では単数扱いも複数扱いも可能ですが、現代英語では単数扱いが一般的です。そのため'suggests'（三人称単数）が正解です。'suggest'は「示唆する」で、断定を避けた学術的な表現です。'show'（示す）や'indicate'（示す）よりも控えめで、データの解釈に幅を持たせます。日本語の「〜を示唆している」に対応し、研究発表やレポートで重要な動詞です。データに基づく議論では'suggest'が非常に頻繁に使われます。"
+      },
+      {
+        "id": "je_dt11",
+        "question": "Housing prices peaked _____ 2021.",
+        "translation": "(住宅価格は2021年にピークに達しました)",
+        "options": [
+          "in",
+          "at",
+          "on",
+          "by"
+        ],
+        "correct": "in",
+        "explanation": "'peaked in 2021'は「2021年にピークに達した」を表します。年には前置詞'in'を使います。'peak'は動詞として「最高点に達する」、名詞として「頂点」の両方で使えます。トレンド描写では'peak'（頂点）と'bottom out'（底を打つ）が対になる重要表現です。'hit a peak'も同義です。変化の最高点・最低点を示す表現は、グラフの説明やデータ分析で不可欠です。日本語の「ピークに達した」にそのまま対応するため覚えやすい表現です。"
+      },
+      {
+        "id": "je_dt12",
+        "question": "The economy has been _____ recovering since the pandemic.",
+        "translation": "(パンデミック以来、経済は徐々に回復しています)",
+        "options": [
+          "slowly",
+          "slow",
+          "slower",
+          "slowest"
+        ],
+        "correct": "slowly",
+        "explanation": "'slowly'は副詞で「ゆっくりと」を意味し、回復のペースを表します。'has been recovering'は現在完了進行形で、パンデミック以来の継続的な過程を示します。'since the pandemic'は起点を示す前置詞句です。回復のトレンドを描写する際は速度（slowly/rapidly/steadily）と時間軸（since/over the past year）を組み合わせるのが効果的です。日本語の「徐々に回復している」に対応し、経済ニュースなどで頻出する重要パターンです。"
+      },
+      {
+        "id": "je_dt13",
+        "question": "Online shopping _____ more popular over the last decade.",
+        "translation": "(オンラインショッピングは過去10年間でより人気になりました)",
+        "options": [
+          "has become",
+          "became",
+          "becomes",
+          "becoming"
+        ],
+        "correct": "has become",
+        "explanation": "'has become'は現在完了形で、「〜になった（今もその状態）」を表します。'over the last decade'（過去10年間で）は現在完了形とよく一緒に使われる時間表現です。'more popular'は比較級で「より人気のある」です。過去からの変化が現在に影響を及ぼしている場合は現在完了形が最適です。'became'（過去形）では過去の一点を指し、現在との関連性が薄くなります。トレンド描写における時制選択は正確さの要です。"
+      },
+      {
+        "id": "je_dt14",
+        "question": "The chart _____ a clear upward trend.",
+        "translation": "(チャートは明確な上昇傾向を示しています)",
+        "options": [
+          "illustrates",
+          "illustrate",
+          "illustrated",
+          "illustrating"
+        ],
+        "correct": "illustrates",
+        "explanation": "'illustrate'は「示す、描写する」を意味する動詞で、グラフや図表がデータを視覚的に表現していることを述べる際に使います。三人称単数の'chart'が主語なので'illustrates'です。トレンド描写でグラフを参照する動詞のバリエーション：'show'（示す）、'illustrate'（描写する）、'depict'（描く）、'reveal'（明らかにする）、'highlight'（強調する）。'upward trend'は「上昇傾向」で、反対は'downward trend'（下降傾向）です。"
+      },
+      {
+        "id": "je_dt15",
+        "question": "Compared _____ last year, exports have doubled.",
+        "translation": "(去年と比較して、輸出は倍増しました)",
+        "options": [
+          "to",
+          "with",
+          "for",
+          "by"
+        ],
+        "correct": "to",
+        "explanation": "'compared to'は「〜と比較して」を意味する前置詞句です。'compared with'も同義で使えますが、'compared to'の方が一般的です。'have doubled'は「倍増した」で、具体的な倍率を現在完了形で表します。トレンドの比較に使う表現として頻出です。'triple'（3倍になる）、'quadruple'（4倍になる）も同パターンです。日本語の「〜と比較して」に対応し、プレゼンテーションやレポートで二つの期間を比較する際の基本的な構文として不可欠です。"
+      }
+    ]
+  },
+  {
+    "key": "describing_processes",
+    "name": "Describing Processes",
+    "description": "プロセス・手順を説明する表現",
+    "iconName": "list.number",
+    "color": "#a78bfa",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "je_dp1",
+        "question": "_____, you need to gather all the materials.",
+        "translation": "(まず、すべての材料を集める必要があります)",
+        "options": [
+          "First",
+          "Firstly",
+          "At first",
+          "The first"
+        ],
+        "correct": "First",
+        "explanation": "'First'は手順の最初のステップを示す順序副詞です。プロセス説明では'First... Then... Next... Finally...'の流れが基本です。'Firstly'もフォーマルな場面で使えますが、'First'の方が自然で一般的です。注意：'At first'は「最初は（後で変わった）」という意味で、手順の「まず」とは異なります。日本語の「まず」に対応しますが、'At first'との混同は日本語話者に非常に多い誤りです。プロセス説明の基本を確実にマスターしましょう。"
+      },
+      {
+        "id": "je_dp2",
+        "question": "The next _____ is to mix the ingredients together.",
+        "translation": "(次のステップは材料を混ぜ合わせることです)",
+        "options": [
+          "step",
+          "stage",
+          "move",
+          "turn"
+        ],
+        "correct": "step",
+        "explanation": "'step'は「手順」「ステップ」を意味し、プロセスの個々の段階を表します。'The next step is to...'は「次のステップは〜することです」というプロセス説明の定型表現です。'step'と'stage'は似ていますが、'step'は具体的な行動、'stage'はより大きな段階を指す傾向があります。日本語の「次のステップ」にそのまま対応します。手順書やマニュアルの記述で最も頻繁に使われる基本的な語彙です。"
+      },
+      {
+        "id": "je_dp3",
+        "question": "The water is _____ heated to 100 degrees.",
+        "translation": "(水は100度まで加熱されます)",
+        "options": [
+          "then",
+          "than",
+          "them",
+          "those"
+        ],
+        "correct": "then",
+        "explanation": "'then'は「次に、それから」を意味する接続副詞で、プロセスの次のステップに進む際に使います。受動態'is heated'（加熱される）を使うことで、動作の主体ではなくプロセス自体に焦点を当てています。科学的・技術的なプロセス説明では受動態が標準的に使われます。日本語の「次に〜される」に対応します。'First, the water is collected. Then, it is heated.'のように、受動態と順序副詞を組み合わせるのがプロセス描写の王道パターンです。"
+      },
+      {
+        "id": "je_dp4",
+        "question": "_____ completion, the form is submitted to HR.",
+        "translation": "(完了後、書類は人事部に提出されます)",
+        "options": [
+          "Upon",
+          "After",
+          "In",
+          "At"
+        ],
+        "correct": "Upon",
+        "explanation": "'Upon completion'は「完了次第」「完成した時点で」を意味するフォーマルな前置詞句です。'upon'は'on'のフォーマル版で、公式文書やビジネスプロセスの記述で使われます。'After completion'も同義ですが、'upon'はより即時性のニュアンスがあります。日本語の「完了し次第」に対応します。ビジネスメールや契約書で頻出する表現で、'Upon receipt of payment'（支払い受領次第）、'Upon approval'（承認次第）のようにも使えます。"
+      },
+      {
+        "id": "je_dp5",
+        "question": "Make sure the surface is clean _____ applying the paint.",
+        "translation": "(ペンキを塗る前に表面がきれいであることを確認してください)",
+        "options": [
+          "before",
+          "after",
+          "while",
+          "during"
+        ],
+        "correct": "before",
+        "explanation": "'before + 動名詞'は「〜する前に」を意味し、手順の前提条件を示します。'before applying'は「塗る前に」です。プロセス説明では前提条件や注意事項を'before'で示すことが重要です。'Make sure...'は「〜であることを確認する」という注意喚起の定型表現です。日本語の「〜する前に確認してください」に対応します。マニュアルや取扱説明書では安全上の注意として'Before -ing, ensure/make sure...'のパターンが多用されます。"
+      },
+      {
+        "id": "je_dp6",
+        "question": "The mixture should be stirred _____ it thickens.",
+        "translation": "(とろみがつくまで混合物をかき混ぜるべきです)",
+        "options": [
+          "until",
+          "while",
+          "during",
+          "before"
+        ],
+        "correct": "until",
+        "explanation": "'until'は「〜するまで」を意味する接続詞で、動作の終了条件を示します。'until it thickens'は「とろみがつくまで」です。プロセス説明では動作の継続時間や停止の条件を明確にすることが重要です。'should be stirred'は受動態＋'should'で「かき混ぜるべきです」という指示を表します。料理レシピのような手順書では'until'が非常に頻繁に使われ、状態変化の到達点を示します。日本語の「〜するまで」にぴったり対応する便利な接続詞です。"
+      },
+      {
+        "id": "je_dp7",
+        "question": "Once the installation is _____, restart your computer.",
+        "translation": "(インストールが完了したら、コンピュータを再起動してください)",
+        "options": [
+          "complete",
+          "completed",
+          "completing",
+          "completes"
+        ],
+        "correct": "complete",
+        "explanation": "'Once...is complete'は「一度〜が完了したら」を意味し、次のステップへの移行条件を示します。'complete'はここでは形容詞で「完了した」の意味です。'completed'（過去分詞）も使えますが、形容詞としての'complete'がこの構文ではより自然です。'Once'は'when'と似ていますが、「一度〜したら」というニュアンスで、条件達成の確実性を強調します。IT関連の手順説明で頻出し、日本語の「〜が完了したら」に対応する重要なパターンです。"
+      },
+      {
+        "id": "je_dp8",
+        "question": "The product goes _____ several quality checks.",
+        "translation": "(製品はいくつかの品質検査を通ります)",
+        "options": [
+          "through",
+          "over",
+          "into",
+          "across"
+        ],
+        "correct": "through",
+        "explanation": "'go through'は「〜を通過する、経験する」を意味する句動詞で、プロセスの各段階を通過することを表します。'several quality checks'は「いくつかの品質検査」です。プロセス全体の流れを俯瞰する表現として'go through'は非常に便利です。日本語の「〜を経る」に対応します。'The application goes through three stages'（申請は3段階を経る）のように、プロセスの全体像を説明する際に使えます。製造業やビジネスプロセスの説明で不可欠な表現です。"
+      },
+      {
+        "id": "je_dp9",
+        "question": "_____ the meantime, prepare the other components.",
+        "translation": "(その間に、他の部品を準備してください)",
+        "options": [
+          "In",
+          "At",
+          "On",
+          "By"
+        ],
+        "correct": "In",
+        "explanation": "'In the meantime'は「その間に」を意味する副詞句で、並行して行うべきタスクを示す際に使います。プロセス説明では、待ち時間中に別の作業を行う場合にこの表現が役立ちます。日本語の「その間に」にぴったり対応します。'Meanwhile'も同義で、より短い表現です。'While waiting for the paint to dry, in the meantime, prepare the second coat'のように、効率的な手順を示す際に使われます。プロセスの並行処理を説明するのに最適な表現です。"
+      },
+      {
+        "id": "je_dp10",
+        "question": "The final _____ is to review all the documents.",
+        "translation": "(最終段階は全ての書類を確認することです)",
+        "options": [
+          "stage",
+          "step",
+          "level",
+          "point"
+        ],
+        "correct": "stage",
+        "explanation": "'stage'は「段階」を意味し、プロセスの大きな区切りを表します。'The final stage'は「最終段階」で、プロセスの締めくくりを示します。'step'が具体的な一つの行動を指すのに対し、'stage'はより広い段階を指します。例えば、建設プロジェクトには「設計段階(design stage)」「建設段階(construction stage)」「検査段階(inspection stage)」があります。日本語の「最終段階」に対応し、プロセスの全体構造を説明する際に重要な語彙です。"
+      },
+      {
+        "id": "je_dp11",
+        "question": "It is _____ to wear safety goggles during this process.",
+        "translation": "(この工程中は安全ゴーグルの着用が不可欠です)",
+        "options": [
+          "essential",
+          "essence",
+          "essentially",
+          "essentials"
+        ],
+        "correct": "essential",
+        "explanation": "'It is essential to...'は「〜することが不可欠です」という重要性の強調表現です。'essential'は形容詞で「不可欠な、必須の」を意味します。プロセス説明における安全上の注意事項や必須条件を示す際に使います。日本語の「〜することが不可欠です」に対応します。同様の表現として'It is crucial to...'、'It is vital to...'、'It is important to...'があり、重要度の強さで使い分けます。マニュアルや安全指示書で頻繁に使われる構文です。"
+      },
+      {
+        "id": "je_dp12",
+        "question": "The data is _____ analyzed using specialized software.",
+        "translation": "(データは専用ソフトウェアを使って分析されます)",
+        "options": [
+          "then",
+          "than",
+          "the",
+          "that"
+        ],
+        "correct": "then",
+        "explanation": "'then'は時間的な順序を示す副詞で、「次に」「それから」を意味します。受動態'is analyzed'と組み合わせて、プロセスの次のステップを客観的に述べています。'using specialized software'は手段を表す分詞構文（〜を使って）です。科学・技術的なプロセス記述では、受動態＋手段の説明が標準的なスタイルです。日本語の「次に〜を使って分析される」に対応し、研究論文の方法論セクションで頻出するパターンです。"
+      },
+      {
+        "id": "je_dp13",
+        "question": "This process _____ of three main phases.",
+        "translation": "(このプロセスは3つの主要な段階で構成されています)",
+        "options": [
+          "consists",
+          "contains",
+          "includes",
+          "composes"
+        ],
+        "correct": "consists",
+        "explanation": "'consists of'は「〜から成る」「〜で構成される」を意味する重要な動詞句です。プロセスの全体構造を最初に概説する際に使います。注意：'consist'は受動態にしません。'is consisted of'は誤りで、常に能動態'consists of'です。'is composed of'や'is made up of'は受動態で同じ意味を表せます。日本語の「〜で構成されている」に対応し、プロセス説明の冒頭で全体像を示す際の定石表現です。"
+      },
+      {
+        "id": "je_dp14",
+        "question": "_____ that, the components are assembled by hand.",
+        "translation": "(その後、部品は手作業で組み立てられます)",
+        "options": [
+          "After",
+          "Before",
+          "During",
+          "Until"
+        ],
+        "correct": "After",
+        "explanation": "'After that'は「その後」を意味し、プロセスの次のステップに移行する際の接続表現です。'are assembled'は受動態で「組み立てられる」、'by hand'は「手作業で」を意味します。プロセス説明では'After that'の他にも'Following this'、'Subsequently'、'Next'などの遷移表現があり、フォーマルさの度合いで使い分けます。日本語の「その後」に対応し、手順書や工程説明で次のステップへ移る際に不可欠な表現です。"
+      },
+      {
+        "id": "je_dp15",
+        "question": "The _____ product is then packaged and shipped.",
+        "translation": "(完成品はその後、梱包されて出荷されます)",
+        "options": [
+          "finished",
+          "finishing",
+          "finish",
+          "finishes"
+        ],
+        "correct": "finished",
+        "explanation": "'finished product'は「完成品」を意味する定型表現です。'finished'は過去分詞が形容詞として使われ、「完了した、仕上がった」を表します。プロセスの最終段階として'package'（梱包する）と'ship'（出荷する）が受動態で使われています。'is packaged and shipped'のように二つの受動態を'and'で結ぶのは、連続する工程を効率的に記述するテクニックです。日本語の「完成品は梱包・出荷される」に対応する製造業の基本用語です。"
+      }
+    ]
+  },
+  {
+    "key": "cause_effect",
+    "name": "Cause & Effect",
+    "description": "原因と結果の表現",
+    "iconName": "arrow.right.arrow.left",
+    "color": "#fb923c",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "je_cef1",
+        "question": "The match was cancelled _____ the heavy rain.",
+        "translation": "(大雨のため試合は中止になりました)",
+        "options": [
+          "due to",
+          "because",
+          "since",
+          "so"
+        ],
+        "correct": "due to",
+        "explanation": "'due to'は「〜のせいで、〜が原因で」を意味する前置詞句で、後に名詞句が続きます。'because of'と同義ですが、'due to'はよりフォーマルです。注意：'because'は接続詞なので後に文（主語＋動詞）が来ます。'due to the heavy rain'（大雨のせいで）のように名詞句と組み合わせます。日本語の「〜のため」に対応し、原因を述べる際の基本表現です。'due to'と'because of'と'because'の使い分けは試験でも頻出の重要ポイントです。"
+      },
+      {
+        "id": "je_cef2",
+        "question": "She studied hard. _____, she passed the exam.",
+        "translation": "(彼女は一生懸命勉強した。その結果、試験に合格した)",
+        "options": [
+          "As a result",
+          "Because",
+          "Due to",
+          "Since"
+        ],
+        "correct": "As a result",
+        "explanation": "'As a result'は「その結果として」を意味する接続副詞句で、前の文の結果を述べる際に使います。二つの文をピリオドで分けた後、'As a result'で結果をつなげるのが標準パターンです。日本語の「その結果」にぴったり対応します。同様の結果表現：'Consequently'（その結果）、'Therefore'（従って）、'As a consequence'（結果として）、'Hence'（それゆえ）。フォーマルさの度合いが異なるため、文脈に応じて選択することが重要です。"
+      },
+      {
+        "id": "je_cef3",
+        "question": "Traffic jams are often _____ by road construction.",
+        "translation": "(渋滞はしばしば道路工事によって引き起こされます)",
+        "options": [
+          "caused",
+          "causing",
+          "cause",
+          "causes"
+        ],
+        "correct": "caused",
+        "explanation": "'caused by'は「〜によって引き起こされる」を意味する受動態の因果表現です。'cause'は「引き起こす」という動詞で、因果関係を直接的に表す最も基本的な語です。受動態にすることで結果側を主語にし、原因を'by'以下で示します。日本語の「〜によって引き起こされる」に対応します。科学的な文脈では'Smoking causes cancer'のような能動態も使われますが、客観的な説明では受動態'is caused by'の方がフォーマルです。"
+      },
+      {
+        "id": "je_cef4",
+        "question": "The project failed _____ a lack of funding.",
+        "translation": "(資金不足のためプロジェクトは失敗しました)",
+        "options": [
+          "because of",
+          "because",
+          "so",
+          "therefore"
+        ],
+        "correct": "because of",
+        "explanation": "'because of'は「〜のせいで」を意味する前置詞句で、後に名詞句が来ます。'because of a lack of funding'（資金不足のせいで）のように使います。'because'は接続詞で文が続きますが、'because of'は前置詞句で名詞が続きます。'because we lacked funding'と言い換えることもできます。日本語の「〜のせいで」に対応し、原因を示す最も一般的な表現の一つです。ビジネスと日常の両方で頻繁に使われます。"
+      },
+      {
+        "id": "je_cef5",
+        "question": "_____ the economy improves, unemployment may decrease.",
+        "translation": "(経済が改善すれば、失業率は減少するかもしれません)",
+        "options": [
+          "If",
+          "Because",
+          "Although",
+          "Despite"
+        ],
+        "correct": "If",
+        "explanation": "'If'は条件を表す接続詞で、因果関係の条件付きバージョンを作ります。「もし〜なら、〜だろう」というパターンです。ここでは'may'（かもしれない）と組み合わせて、不確実な因果関係を表しています。因果関係は常に確実とは限らず、'if'や'may/might/could'を使って可能性として述べることも重要です。日本語の「〜すれば、〜かもしれない」に対応し、予測や推論を述べる際の基本的な条件表現です。"
+      },
+      {
+        "id": "je_cef6",
+        "question": "The accident _____ in three people being injured.",
+        "translation": "(その事故で3人が負傷しました)",
+        "options": [
+          "resulted",
+          "caused",
+          "affected",
+          "effected"
+        ],
+        "correct": "resulted",
+        "explanation": "'result in'は「〜という結果になる」を意味する重要な動詞句です。原因が主語になり、結果を'in'以下で示します。逆方向の'result from'は「〜が原因で生じる」です。'The accident resulted in injuries'（事故が負傷という結果を招いた）と'The injuries resulted from the accident'（負傷は事故が原因で生じた）は同じ因果関係を逆方向から述べています。日本語の「〜の結果となった」に対応し、フォーマルな報告書で頻繁に使われます。"
+      },
+      {
+        "id": "je_cef7",
+        "question": "_____ his hard work, he was promoted.",
+        "translation": "(彼の努力のおかげで、昇進しました)",
+        "options": [
+          "Thanks to",
+          "Despite",
+          "Although",
+          "In spite of"
+        ],
+        "correct": "Thanks to",
+        "explanation": "'Thanks to'は「〜のおかげで」を意味する前置詞句で、肯定的な原因を示す際に使います。'due to'や'because of'と似ていますが、'thanks to'は結果が良いことを暗示します。ただし皮肉として否定的な状況にも使えます。日本語の「〜のおかげで」に対応します。ビジネスで成功の理由を述べる際に使える好感度の高い表現です。'Thanks to modern technology'（現代技術のおかげで）のように物事に対しても使用でき、感謝のニュアンスを含みます。"
+      },
+      {
+        "id": "je_cef8",
+        "question": "The storm caused widespread _____ to the crops.",
+        "translation": "(嵐は農作物に広範な被害をもたらしました)",
+        "options": [
+          "damage",
+          "damages",
+          "damaging",
+          "damaged"
+        ],
+        "correct": "damage",
+        "explanation": "'cause damage to...'は「〜に被害をもたらす」を意味する因果表現の定型パターンです。'damage'は不可算名詞として「損害、被害」を表し、'damages'は法律用語で「損害賠償金」を意味する別の語です。'widespread'（広範な）は被害の規模を示す形容詞です。物質的な被害には'damage'、人的被害には'harm'や'injury'を使い分けます。日本語の「被害をもたらす」に対応し、災害や事故の報告で不可欠な表現です。"
+      },
+      {
+        "id": "je_cef9",
+        "question": "She was tired. _____, she decided to go home early.",
+        "translation": "(彼女は疲れていた。そのため、早く帰ることにした)",
+        "options": [
+          "Therefore",
+          "However",
+          "Moreover",
+          "Furthermore"
+        ],
+        "correct": "Therefore",
+        "explanation": "'Therefore'は「そのため、従って」を意味する接続副詞で、前の文からの論理的帰結を示します。フォーマルな表現で、学術論文やビジネス文書で頻繁に使われます。カジュアルな場面では'So'が一般的です。日本語の「そのため」「従って」に対応します。接続副詞の後にはコンマを入れるのがルールです。他の結果を示す副詞：'Consequently'（結果として）、'Hence'（それゆえ）、'Thus'（このようにして）。論理的な文章構成に不可欠な語彙です。"
+      },
+      {
+        "id": "je_cef10",
+        "question": "Deforestation has _____ to climate change.",
+        "translation": "(森林伐採は気候変動につながっています)",
+        "options": [
+          "contributed",
+          "caused",
+          "resulted",
+          "affected"
+        ],
+        "correct": "contributed",
+        "explanation": "'contribute to'は「〜に寄与する、〜の一因となる」を意味する動詞句です。'cause'が直接的な因果関係を示すのに対し、'contribute to'は複数ある原因の一つであることを示します。'Deforestation has contributed to climate change'は「森林伐採は気候変動の一因となっている」で、他の要因もあることを暗示しています。日本語の「〜の一因となる」に対応し、複雑な因果関係を正確に表現する際に不可欠な学術的表現です。"
+      },
+      {
+        "id": "je_cef11",
+        "question": "_____ of her illness, she couldn't attend the meeting.",
+        "translation": "(病気のため、彼女は会議に出席できませんでした)",
+        "options": [
+          "On account",
+          "Because",
+          "Therefore",
+          "As a result"
+        ],
+        "correct": "On account",
+        "explanation": "'On account of'は「〜のせいで、〜の理由で」を意味するフォーマルな前置詞句です。'because of'や'due to'と同義ですが、よりフォーマルで書き言葉的です。後に名詞句が続きます。日本語の「〜が原因で」に対応します。因果関係を表す前置詞句のバリエーションを豊かにすることで、文章の質が向上します。レポートや正式な通知文で使われることが多く、同じ表現の繰り返しを避ける際のリフレーズの選択肢としても重要です。"
+      },
+      {
+        "id": "je_cef12",
+        "question": "The new policy led _____ significant improvements.",
+        "translation": "(新しい方針は大幅な改善をもたらしました)",
+        "options": [
+          "to",
+          "for",
+          "in",
+          "with"
+        ],
+        "correct": "to",
+        "explanation": "'lead to'は「〜をもたらす、〜につながる」を意味する重要な因果表現です。過去形は'led to'です。原因が主語、結果が'to'の後に来ます。'result in'と似た意味ですが、'lead to'の方がカジュアルで幅広い文脈で使えます。日本語の「〜につながった」「〜をもたらした」に対応します。ニュース記事や学術論文で頻出し、'This discovery led to new treatments'（この発見が新しい治療法につながった）のように使います。"
+      },
+      {
+        "id": "je_cef13",
+        "question": "The delay was _____ the result of poor planning.",
+        "translation": "(遅延は計画の不備による結果でした)",
+        "options": [
+          "largely",
+          "large",
+          "larger",
+          "largest"
+        ],
+        "correct": "largely",
+        "explanation": "'largely'は「主に、大部分は」を意味する副詞で、程度を表します。因果関係の強さを修飾する際に使い、「完全にではないが主に」というニュアンスを加えます。日本語の「主に」「大部分」に対応します。因果関係を断定しすぎず、適度な留保を入れる表現方法として重要です。'partly'（部分的に）、'mainly'（主に）、'entirely'（完全に）なども同様に因果の程度を示す副詞として使い分けることで、より正確な原因分析を表現できます。"
+      },
+      {
+        "id": "je_cef14",
+        "question": "Pollution can _____ serious health problems.",
+        "translation": "(汚染は深刻な健康問題を引き起こす可能性があります)",
+        "options": [
+          "bring about",
+          "bring up",
+          "bring in",
+          "bring out"
+        ],
+        "correct": "bring about",
+        "explanation": "'bring about'は「引き起こす、もたらす」を意味する句動詞で、'cause'のフォーマルな同義語です。'cause'が最も直接的な因果表現なのに対し、'bring about'はやや間接的で、変化や結果が徐々にもたらされるニュアンスがあります。'bring up'（育てる/話題にする）、'bring in'（導入する）とは全く異なる意味なので混同に注意です。日本語の「もたらす」に対応し、因果関係を表現する語彙の幅を広げる重要な句動詞です。"
+      },
+      {
+        "id": "je_cef15",
+        "question": "_____ that prices have risen, many people are cutting back on spending.",
+        "translation": "(物価が上がったため、多くの人が支出を抑えています)",
+        "options": [
+          "Given",
+          "Despite",
+          "Although",
+          "Unless"
+        ],
+        "correct": "Given",
+        "explanation": "'Given that...'は「〜を考慮すると、〜であることから」を意味する接続表現で、既知の事実を前提として結果を述べる際に使います。'because'と似ていますが、'given that'は前提条件が客観的事実であることを強調します。日本語の「〜であることを考えると」に対応します。アカデミックな文章やビジネス分析で頻繁に使われるフォーマルな因果表現です。'Given the circumstances'（状況を考えると）のように前置詞としても使え、非常に汎用性の高い表現です。"
+      }
+    ]
+  },
+  {
+    "key": "contrast_concession",
+    "name": "Contrast & Concession",
+    "description": "対比と譲歩の表現",
+    "iconName": "arrow.left.arrow.right",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_cc1",
+        "question": "_____ it was raining, we went out.",
+        "translation": "(雨が降っていたにもかかわらず、私たちは出かけました)",
+        "options": [
+          "Although",
+          "Because",
+          "Since",
+          "When"
+        ],
+        "correct": "Although",
+        "explanation": "'Although'は「〜にもかかわらず」「〜だけれども」という譲歩を表す接続詞です。日本語の「〜けれども」「〜のに」に相当します。'Although it was raining, we went out'は「雨が降っていたにもかかわらず出かけた」という意味です。'Though'もほぼ同じ意味で使えますが、'Although'の方がやや正式な表現です。'Even though'はさらに強い譲歩を表します。対比の接続詞を正しく使い分けることで、論理的な英文が書けるようになります。"
+      },
+      {
+        "id": "je_cc2",
+        "question": "She is rich. _____, she is not happy.",
+        "translation": "(彼女は金持ちです。しかしながら、幸せではありません)",
+        "options": [
+          "However",
+          "Therefore",
+          "Moreover",
+          "Because"
+        ],
+        "correct": "However",
+        "explanation": "'However'は「しかしながら」という対比を表す副詞です。二つの文を対比させるときに使います。'However'は文頭、文中、文末に置くことができますが、前後にコンマが必要です。日本語の「しかし」「けれども」に相当しますが、'but'より正式な表現です。学術文章やビジネスメールでは'but'より'However'が好まれます。'Nevertheless'や'Nonetheless'も類似の意味ですが、さらに正式度が高くなります。論理的な文章を書く上で必須の表現です。"
+      },
+      {
+        "id": "je_cc3",
+        "question": "He studied hard. _____, he failed the exam.",
+        "translation": "(彼は一生懸命勉強しました。それにもかかわらず、試験に落ちました)",
+        "options": [
+          "Nevertheless",
+          "Therefore",
+          "Furthermore",
+          "Meanwhile"
+        ],
+        "correct": "Nevertheless",
+        "explanation": "'Nevertheless'は「それにもかかわらず」「それでもなお」という強い譲歩を表す副詞です。'However'よりも正式度が高く、予想に反する結果を強調します。日本語の「にもかかわらず」に最も近い表現です。'He studied hard. Nevertheless, he failed'は「努力したのに失敗した」という意外性を強く表現しています。学術論文やフォーマルなプレゼンテーションで頻繁に使われます。'Nonetheless'も同義で使えます。"
+      },
+      {
+        "id": "je_cc4",
+        "question": "_____ the bad weather, the event was successful.",
+        "translation": "(悪天候にもかかわらず、イベントは成功しました)",
+        "options": [
+          "Despite",
+          "Because of",
+          "Due to",
+          "Thanks to"
+        ],
+        "correct": "Despite",
+        "explanation": "'Despite'は「〜にもかかわらず」という譲歩を表す前置詞です。後ろに名詞や動名詞が来ます。'Despite the bad weather'（悪天候にもかかわらず）のように使います。'In spite of'と同じ意味ですが、'Despite'の方が簡潔です。注意：'Despite of'は誤りです。'Although'は接続詞なので後に文が来ますが、'Despite'は前置詞なので後に名詞が来ます。この違いは非常に重要で、試験でも頻出のポイントです。正確に使い分けましょう。"
+      },
+      {
+        "id": "je_cc5",
+        "question": "The test was difficult. _____, most students passed.",
+        "translation": "(テストは難しかったです。それでも、ほとんどの生徒が合格しました)",
+        "options": [
+          "Still",
+          "So",
+          "Thus",
+          "Hence"
+        ],
+        "correct": "Still",
+        "explanation": "'Still'は副詞として「それでも」「にもかかわらず」という譲歩の意味で使えます。「まだ」以外にもこの対比的な使い方があることは日本語話者にとって新鮮かもしれません。'The test was difficult. Still, most students passed'は「テストは難しかったがそれでも合格した」という意味です。'Yet'も同様に「それでもなお」の意味で使えます。これらのシンプルな語が持つ多義性を理解することで、英語の表現力が大幅に向上します。"
+      },
+      {
+        "id": "je_cc6",
+        "question": "She is young, _____ she is very responsible.",
+        "translation": "(彼女は若いですが、とても責任感があります)",
+        "options": [
+          "yet",
+          "so",
+          "because",
+          "since"
+        ],
+        "correct": "yet",
+        "explanation": "'yet'は接続詞として「しかし」「けれども」という対比を表すことができます。'but'と似ていますが、'yet'は予想に反する意外な事実を強調するニュアンスがあります。'She is young, yet she is very responsible'は「若いのに責任感がある」という驚きを含んでいます。'but'は単純な対比、'yet'は予想とのギャップを示します。日本語の「若いのに」「若いけれども」に相当し、文学的な表現としても好まれます。"
+      },
+      {
+        "id": "je_cc7",
+        "question": "_____ she tried her best, she couldn't finish on time.",
+        "translation": "(最善を尽くしたにもかかわらず、彼女は時間内に終わらせることができませんでした)",
+        "options": [
+          "Even though",
+          "Because",
+          "Since",
+          "Now that"
+        ],
+        "correct": "Even though",
+        "explanation": "'Even though'は'Although'よりも強い譲歩を表します。「〜であるにもかかわらず」「たとえ〜でも」という強い対比を示します。'Even though she tried her best'は「最善を尽くしたにもかかわらず」です。注意：'Even though'と'Even if'は異なります。'Even though'は実際に起きた事実、'Even if'は仮定の状況に使います。この区別は日本語話者が混同しやすいポイントです。実際の事実＝'Even though'、仮定＝'Even if'と覚えてください。"
+      },
+      {
+        "id": "je_cc8",
+        "question": "He is very talented. _____ the other hand, he is lazy.",
+        "translation": "(彼はとても才能があります。一方で、怠惰です)",
+        "options": [
+          "On",
+          "In",
+          "At",
+          "By"
+        ],
+        "correct": "On",
+        "explanation": "'On the other hand'は「一方で」「他方では」という対比を表す定型表現です。二つの異なる側面を比較するときに使います。「一方で〜、他方で〜」という日本語表現にぴったり対応します。'On one hand...on the other hand'のパターンで使うこともあります。これは議論や意見を述べるときに非常に有用な表現で、バランスの取れた視点を示すことができます。ディベートやエッセイライティングでは必須の表現技術です。"
+      },
+      {
+        "id": "je_cc9",
+        "question": "The movie was long. _____, it was very entertaining.",
+        "translation": "(映画は長かったです。それにもかかわらず、とても面白かったです)",
+        "options": [
+          "Nonetheless",
+          "Therefore",
+          "Consequently",
+          "Accordingly"
+        ],
+        "correct": "Nonetheless",
+        "explanation": "'Nonetheless'は「それにもかかわらず」という強い譲歩を表す副詞です。'Nevertheless'と完全に同義で、どちらを使っても構いません。'The movie was long. Nonetheless, it was very entertaining'は「長かったがとても面白かった」という予想に反する評価を示しています。フォーマルな文章でよく使われ、学術論文やレポートでの対比表現として重要です。日常会話では'still'や'but'の方が自然ですが、書き言葉では効果的です。"
+      },
+      {
+        "id": "je_cc10",
+        "question": "I like tea, _____ my sister prefers coffee.",
+        "translation": "(私はお茶が好きですが、姉はコーヒーを好みます)",
+        "options": [
+          "whereas",
+          "because",
+          "therefore",
+          "moreover"
+        ],
+        "correct": "whereas",
+        "explanation": "'whereas'は「〜である一方で」「〜に対して」という対比を表す接続詞です。二つの事実を直接比較するときに使います。'I like tea, whereas my sister prefers coffee'は「私はお茶が好きだが姉はコーヒーが好き」という対照を明確に示します。'while'も同様の対比に使えますが、'whereas'はより正式で、対比のニュアンスがより強くなります。契約書や法律文書でもよく使われる表現です。"
+      },
+      {
+        "id": "je_cc11",
+        "question": "_____ his lack of experience, he got the job.",
+        "translation": "(経験不足にもかかわらず、彼は仕事を得ました)",
+        "options": [
+          "In spite of",
+          "Because of",
+          "As a result of",
+          "On account of"
+        ],
+        "correct": "In spite of",
+        "explanation": "'In spite of'は「〜にもかかわらず」という譲歩を表す前置詞句です。'Despite'と完全に同じ意味で使えます。'In spite of his lack of experience'は「経験不足にもかかわらず」です。'Despite'より少し口語的ですが、どちらもフォーマルな文章に使えます。後ろに名詞や動名詞が来ることに注意してください。'In spite of the fact that...'と接続詞的に使うこともできますが、この場合は'Although'を使う方がより簡潔です。"
+      },
+      {
+        "id": "je_cc12",
+        "question": "The food was expensive. _____, the service was poor.",
+        "translation": "(食べ物は高かったです。さらに悪いことに、サービスも悪かったです)",
+        "options": [
+          "What's more",
+          "However",
+          "On the contrary",
+          "In contrast"
+        ],
+        "correct": "What's more",
+        "explanation": "'What's more'は「さらに」「その上」という追加情報を加える表現です。ここでは対比ではなく、否定的な要素を重ねています。日本語の「おまけに」「さらに悪いことに」に相当します。'Moreover'や'Furthermore'と似た機能ですが、'What's more'はより口語的で日常会話向きです。追加の情報が同じ方向性（ここでは両方否定的）であるときに使用します。文章の説得力を高める効果的なつなぎ表現です。"
+      },
+      {
+        "id": "je_cc13",
+        "question": "He didn't study. _____, he passed the exam.",
+        "translation": "(彼は勉強しませんでした。驚くべきことに、試験に合格しました)",
+        "options": [
+          "Surprisingly",
+          "Consequently",
+          "Predictably",
+          "Naturally"
+        ],
+        "correct": "Surprisingly",
+        "explanation": "'Surprisingly'は「驚くべきことに」という副詞で、予想外の結果を導入するときに使います。対比の一種として、期待と結果のギャップを表します。'He didn't study. Surprisingly, he passed'は「勉強しなかったのに驚くべきことに合格した」です。類似表現に'Unexpectedly'（予想外にも）、'Amazingly'（驚くべきことに）があります。このような態度を示す副詞は、話者の感情や評価を文に加える機能があり、表現力を高めます。"
+      },
+      {
+        "id": "je_cc14",
+        "question": "The plan sounds good in theory. _____ practice, it may not work.",
+        "translation": "(その計画は理論上は良さそうです。実際には、うまくいかないかもしれません)",
+        "options": [
+          "In",
+          "On",
+          "At",
+          "By"
+        ],
+        "correct": "In",
+        "explanation": "'in theory...in practice'は「理論的には〜、実際には〜」という対比を表す定型表現です。理想と現実のギャップを示すときに非常に便利です。日本語の「理論上は〜だが実際には〜」にぴったり対応します。'In theory, it should work. In practice, it doesn't'のように使います。ビジネスや学術の場面でよく使われ、計画やアイデアを批判的に検討するときの重要な表現フレームです。'Theoretically...practically'も同様に使えます。"
+      },
+      {
+        "id": "je_cc15",
+        "question": "She is not lazy. _____ the contrary, she works very hard.",
+        "translation": "(彼女は怠惰ではありません。それどころか、とても一生懸命働きます)",
+        "options": [
+          "On",
+          "In",
+          "At",
+          "To"
+        ],
+        "correct": "On",
+        "explanation": "'On the contrary'は「それどころか」「むしろ逆に」という強い反論を表す表現です。前の文を否定した後に、正反対の事実を述べるときに使います。'She is not lazy. On the contrary, she works very hard'は「怠惰どころか、懸命に働く」です。'In contrast'との違いは、'On the contrary'は直前の発言を完全否定する場合、'In contrast'は単に二つの異なる事実を並べる場合に使うことです。この区別は上級者にも間違えやすいポイントです。"
+      }
+    ]
+  },
+  {
+    "key": "time_expressions",
+    "name": "Time Expressions",
+    "description": "時間に関する表現",
+    "iconName": "calendar",
+    "color": "#facc15",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "je_te1",
+        "question": "I have _____ finished my homework.",
+        "translation": "(私はちょうど宿題を終えたところです)",
+        "options": [
+          "just",
+          "yet",
+          "already",
+          "still"
+        ],
+        "correct": "just",
+        "explanation": "'just'は現在完了形と共に「ちょうど〜したところ」という意味で使います。'I have just finished'は「たった今終えたところ」です。時間的に非常に近い過去を表します。日本語の「ちょうど」「たった今」に相当します。文中の位置は'have'と過去分詞の間が標準です。'just now'は過去形と使うこともあります（特にアメリカ英語）。完了形の時間副詞は'just'、'already'、'yet'、'still'の4つが最も重要で、それぞれ微妙にニュアンスが異なります。"
+      },
+      {
+        "id": "je_te2",
+        "question": "Have you finished your work _____?",
+        "translation": "(もう仕事は終わりましたか？)",
+        "options": [
+          "yet",
+          "just",
+          "already",
+          "still"
+        ],
+        "correct": "yet",
+        "explanation": "'yet'は疑問文と否定文で「もう」「まだ」の意味で使います。疑問文では「もう〜しましたか？」、否定文では「まだ〜していない」を表します。'Have you finished yet?'（もう終わりましたか？）、'I haven't finished yet'（まだ終わっていない）です。文末に置くのが標準です。日本語の「もう」は肯定にも否定にも疑問にも使えますが、英語では'already'（肯定）と'yet'（疑問・否定）を使い分ける必要があります。"
+      },
+      {
+        "id": "je_te3",
+        "question": "She has _____ read that book three times.",
+        "translation": "(彼女はもうその本を3回読んでいます)",
+        "options": [
+          "already",
+          "yet",
+          "just",
+          "still"
+        ],
+        "correct": "already",
+        "explanation": "'already'は肯定文で「もう」「すでに」の意味で使います。予想より早く完了したニュアンスを含みます。'She has already read it three times'は「もう3回も読んでいる」という驚きを含んでいます。文中の位置は通常'have/has'と過去分詞の間ですが、文末に置くこともでき、その場合は驚きがより強調されます。'already'と'yet'の使い分けは、肯定文='already'、疑問文・否定文='yet'という基本ルールを覚えてください。"
+      },
+      {
+        "id": "je_te4",
+        "question": "He _____ hasn't replied to my email.",
+        "translation": "(彼はまだ私のメールに返信していません)",
+        "options": [
+          "still",
+          "yet",
+          "already",
+          "just"
+        ],
+        "correct": "still",
+        "explanation": "'still'は「まだ（依然として）」という継続を表す副詞です。否定文で使うと「まだ〜していない」という未完了を強調します。'He still hasn't replied'は「いまだに返信していない」という苛立ちや驚きを含みます。'yet'も否定文で「まだ」ですが、'still'の方が継続期間が長いことを強調します。'He hasn't replied yet'（まだ返信していない＝普通の報告）vs 'He still hasn't replied'（いまだに返信していない＝強い不満）の差を感じてください。"
+      },
+      {
+        "id": "je_te5",
+        "question": "I used to live in Osaka, but _____ I live in Tokyo.",
+        "translation": "(以前は大阪に住んでいましたが、今は東京に住んでいます)",
+        "options": [
+          "now",
+          "then",
+          "before",
+          "once"
+        ],
+        "correct": "now",
+        "explanation": "'now'は「今」「現在」を表す最も基本的な時間副詞です。過去と対比して現在の状況を述べるとき特に効果的です。'used to...but now'は「以前は〜だったが今は〜」という変化を表す重要なパターンです。日本語の「今は」に直接対応します。'now'は文頭、文中、文末のどこにでも置けますが、この対比パターンでは通常文の後半で使います。シンプルな語ですが、時制の対比を明確にする上で極めて重要な役割を果たします。"
+      },
+      {
+        "id": "je_te6",
+        "question": "I'll see you the day _____ tomorrow.",
+        "translation": "(あさってお会いしましょう)",
+        "options": [
+          "after",
+          "before",
+          "from",
+          "of"
+        ],
+        "correct": "after",
+        "explanation": "'the day after tomorrow'は「あさって」を意味する定型表現です。日本語では一語「あさって」で済みますが、英語では三語のフレーズです。同様に、'the day before yesterday'は「おととい」です。英語には「あさって」や「おととい」に相当する一語がないため、このような説明的な表現を使います。時間に関する英語特有の表現は日本語との発想がかなり異なるので、定型表現として丸ごと覚えるのが効果的です。"
+      },
+      {
+        "id": "je_te7",
+        "question": "I haven't seen her _____ ages.",
+        "translation": "(長い間彼女に会っていません)",
+        "options": [
+          "for",
+          "since",
+          "in",
+          "during"
+        ],
+        "correct": "for",
+        "explanation": "'for ages'は「長い間」「非常に長期間」という意味の口語表現です。'ages'は比喩的に「長い時間」を表しています。現在完了形との組み合わせで「ずっと〜していない」という長期間の状態を表します。似た表現に'for a long time'（長い間）、'for years'（何年も）があります。'since'は起点を示すため'since ages'とは言えません。'for'は期間の長さを表し、'since'は具体的な時点を表す、という基本ルールの応用です。"
+      },
+      {
+        "id": "je_te8",
+        "question": "She visits her grandparents _____ a month.",
+        "translation": "(彼女は月に一度祖父母を訪ねます)",
+        "options": [
+          "once",
+          "one",
+          "first",
+          "single"
+        ],
+        "correct": "once",
+        "explanation": "'once a month'は「月に一回」という頻度を表す定型表現です。'once'=1回、'twice'=2回、'three times'=3回のパターンです。'a month'は「ひと月あたり」を意味し、'a'は'per'と同じ「〜あたり」の意味です。日本語の「月に一度」にそのまま対応します。頻度の表現は日常会話で非常によく使われます。'once a week'（週に一度）、'twice a year'（年に二回）など、この基本パターンを覚えれば多くの場面で応用できます。"
+      },
+      {
+        "id": "je_te9",
+        "question": "We arrived _____ time for the concert.",
+        "translation": "(コンサートに間に合いました)",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "by"
+        ],
+        "correct": "in",
+        "explanation": "'in time'は「間に合って」「時間内に」という意味の重要な表現です。'on time'（時間通りに）との違いに注意してください。'in time for the concert'は「コンサートに間に合った」ですが、必ずしもぴったりの時間ではありません。'on time'は「予定通り正確に」です。'We arrived in time'（間に合った）vs 'We arrived on time'（時間通りに到着した）。この2つの前置詞の違いが意味を大きく変えます。日常的に使い分けが必要な表現です。"
+      },
+      {
+        "id": "je_te10",
+        "question": "_____ then, I have been more careful.",
+        "translation": "(それ以来、もっと注意深くなりました)",
+        "options": [
+          "Since",
+          "From",
+          "After",
+          "Until"
+        ],
+        "correct": "Since",
+        "explanation": "'Since then'は「それ以来」という意味で、過去の特定の出来事から現在まで続く変化を表します。現在完了形と組み合わせて使います。'Since then, I have been more careful'は「あのとき以来、より注意深くなった」です。'then'は以前に述べた時点を指す代名詞的な副詞です。'since'は時間の起点を表し、そこから現在まで状態が続いていることを暗示します。過去の経験とその影響を語るときに非常によく使われる表現パターンです。"
+      },
+      {
+        "id": "je_te11",
+        "question": "He _____ works at the same company.",
+        "translation": "(彼はまだ同じ会社で働いています)",
+        "options": [
+          "still",
+          "yet",
+          "already",
+          "just"
+        ],
+        "correct": "still",
+        "explanation": "'still'は肯定文で「まだ（依然として）」という継続を表します。'He still works there'は「彼はまだそこで働いている」です。変化が予想されるのに変化がない状況を表すことが多いです。'still'の文中での位置は一般動詞の前、be動詞の後が基本です。'He is still working'（まだ働いている）、'He still lives there'（まだそこに住んでいる）。日本語の「まだ」に対応しますが、英語では'still'の位置で意味のニュアンスが変わることがあります。"
+      },
+      {
+        "id": "je_te12",
+        "question": "I'll call you _____ I get home.",
+        "translation": "(家に着いたら電話します)",
+        "options": [
+          "as soon as",
+          "until",
+          "by the time",
+          "while"
+        ],
+        "correct": "as soon as",
+        "explanation": "'as soon as'は「〜するとすぐに」「〜したらすぐ」という意味の接続詞です。時の副詞節を導き、「ある行動が完了した直後に別の行動をする」ことを表します。'I'll call you as soon as I get home'は「家に着いたらすぐ電話する」です。重要なルール：未来の内容でも'as soon as'の後は現在形を使います。'as soon as I will get'は誤りです。これは英語の時制ルールの中でも特に重要で、時を表す副詞節では未来形を使わないという原則です。"
+      },
+      {
+        "id": "je_te13",
+        "question": "She'll wait _____ you arrive.",
+        "translation": "(あなたが到着するまで彼女は待ちます)",
+        "options": [
+          "until",
+          "by",
+          "since",
+          "during"
+        ],
+        "correct": "until",
+        "explanation": "'until'（='till'）は「〜まで（ずっと）」という継続の終点を表す接続詞・前置詞です。'She'll wait until you arrive'は「あなたが到着するまで待つ」です。'by'との違いが重要：'until'は状態の継続（〜まで待ち続ける）、'by'は期限（〜までに完了する）です。'until'の後の時の副詞節では現在形を使います（未来形は不可）。日本語の「〜まで」に対応しますが、英語では'until'と'by'を状況に応じて使い分ける必要があります。"
+      },
+      {
+        "id": "je_te14",
+        "question": "_____ the time we arrived, the movie had started.",
+        "translation": "(私たちが到着した頃には、映画は始まっていました)",
+        "options": [
+          "By",
+          "Until",
+          "Since",
+          "After"
+        ],
+        "correct": "By",
+        "explanation": "'By the time'は「〜する頃には」「〜するまでに」という意味で、ある時点での完了を表す接続詞句です。'By the time we arrived, the movie had started'は「到着した頃にはもう始まっていた」です。過去の文脈では過去完了形と組み合わせます。未来の文脈では'By the time you get here, I will have finished'のように未来完了形と使います。'By'は期限や完了のニュアンスを持ち、「その時点では既に」という意味合いを含みます。"
+      },
+      {
+        "id": "je_te15",
+        "question": "I _____ go to that restaurant. The food is always good.",
+        "translation": "(私はよくあのレストランに行きます。食べ物はいつもおいしいです)",
+        "options": [
+          "often",
+          "never",
+          "seldom",
+          "rarely"
+        ],
+        "correct": "often",
+        "explanation": "'often'は「よく」「頻繁に」という頻度を表す副詞です。頻度の高い順に並べると：always（100%）> usually（90%）> often（70%）> sometimes（50%）> occasionally（30%）> seldom/rarely（10%）> never（0%）となります。'I often go'は「よく行く」です。頻度副詞は一般動詞の前、be動詞の後に置くのが基本です。日本語の「よく」に対応しますが、英語では頻度の程度を副詞で細かく表現できます。正確に使い分けましょう。"
+      }
+    ]
+  },
+  {
+    "key": "future_forms_advanced",
+    "name": "Future Forms (Advanced)",
+    "description": "未来表現の高度な使い分け",
+    "iconName": "arrow.right.circle",
+    "color": "#22d3ee",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "je_ffa1",
+        "question": "This time next week, I _____ on a beach in Hawaii.",
+        "translation": "(来週の今頃、私はハワイのビーチにいるでしょう)",
+        "options": [
+          "will be lying",
+          "will lie",
+          "am lying",
+          "lie"
+        ],
+        "correct": "will be lying",
+        "explanation": "未来進行形'will be + -ing'は「未来のある時点で進行中の動作」を表します。'This time next week'（来週の今頃）という未来の特定時点を示す表現と組み合わせるのが典型的です。日本語の「〜しているだろう」に相当します。未来進行形は単なる予定ではなく、その時間帯にまさに進行中であることを強調します。'will lie'（横になるだろう）は一回の動作、'will be lying'（横になっているだろう）は継続中の状態を表す違いがあります。"
+      },
+      {
+        "id": "je_ffa2",
+        "question": "By next year, they _____ married for 20 years.",
+        "translation": "(来年までに、彼らは結婚して20年になります)",
+        "options": [
+          "will have been",
+          "will be",
+          "are",
+          "have been"
+        ],
+        "correct": "will have been",
+        "explanation": "未来完了形'will have + 過去分詞'は「未来のある時点までに完了している動作・状態」を表します。'By next year'（来年までに）は未来の期限を示し、その時点での達成を強調します。'will have been married for 20 years'は「結婚して20年経っているだろう」です。日本語の「〜してしまっているだろう」に近い表現です。未来完了は日本語にない時制概念なので難しいですが、期限を示す'by'との組み合わせで理解しやすくなります。"
+      },
+      {
+        "id": "je_ffa3",
+        "question": "Look at those clouds! It _____ rain.",
+        "translation": "(あの雲を見て！雨が降りそうだ)",
+        "options": [
+          "is going to",
+          "will",
+          "is",
+          "shall"
+        ],
+        "correct": "is going to",
+        "explanation": "'be going to'には「根拠に基づく予測」の用法があります。現在見える証拠（暗い雲）から判断して「雨が降りそう」と予測するとき、'be going to'が適切です。'will'は根拠なしの一般的な予測や、その場での意思決定に使います。'It's going to rain'（証拠がある予測）vs 'It will rain tomorrow'（一般的な予測）。この使い分けは日本語にはない概念なので、英語特有の思考パターンとして理解することが重要です。状況証拠がある＝'be going to'です。"
+      },
+      {
+        "id": "je_ffa4",
+        "question": "The train _____ at 9:15 tomorrow morning.",
+        "translation": "(電車は明日の朝9時15分に出発します)",
+        "options": [
+          "leaves",
+          "will leave",
+          "is leaving",
+          "is going to leave"
+        ],
+        "correct": "leaves",
+        "explanation": "時刻表やスケジュールに基づく予定は現在形で表現します。'The train leaves at 9:15'（電車は9:15に出発する）のように、確定した未来の出来事を現在形で述べます。これは日本語の「出発します」と似た感覚です。公共交通機関の時刻、映画の上映時間、イベントの開始時間などに使います。'will leave'も誤りではありませんが、時刻表の内容を述べるときは現在形が最も自然です。英語には未来を表す方法が複数あり、場面で使い分けることが重要です。"
+      },
+      {
+        "id": "je_ffa5",
+        "question": "I _____ dinner with my boss tonight.",
+        "translation": "(今夜、上司と夕食をとる予定です)",
+        "options": [
+          "am having",
+          "will have",
+          "have",
+          "had"
+        ],
+        "correct": "am having",
+        "explanation": "現在進行形で確定した近い未来の予定を表すことができます。'I am having dinner with my boss tonight'は「今夜上司と夕食の予定がある」という確定した個人的なアレンジメントを示します。'will have'は計画性が低い場合や、その場での意思決定の場合に使います。日本語では両方「〜する予定です」で表現しますが、英語では確定度の違いで表現を変えます。すでに予約済みなど確定した予定＝現在進行形、未確定＝'will'という使い分けです。"
+      },
+      {
+        "id": "je_ffa6",
+        "question": "She _____ 30 next month.",
+        "translation": "(彼女は来月30歳になります)",
+        "options": [
+          "will be",
+          "is being",
+          "is going to be",
+          "has been"
+        ],
+        "correct": "will be",
+        "explanation": "年齢の変化など、自然に起こる確実な未来の出来事には'will'を使います。'She will be 30 next month'は「来月30歳になる」という避けられない事実を述べています。'is going to be'も使えますが、年齢のような自然な変化には'will'の方が標準的です。'will'の用法の一つに「予測・確実な未来の事実」があり、天気、年齢、自然現象など制御できない変化に使います。日本語の「〜になる」にシンプルに対応する表現です。"
+      },
+      {
+        "id": "je_ffa7",
+        "question": "I _____ help you with your project. Don't worry.",
+        "translation": "(プロジェクトを手伝いますよ。心配しないで)",
+        "options": [
+          "will",
+          "am going to",
+          "am",
+          "shall"
+        ],
+        "correct": "will",
+        "explanation": "'will'にはその場での自発的な意思決定・申し出を表す用法があります。'I will help you'は「手伝いますよ」という瞬間的な決意を示しています。これは事前に計画していたこととは異なり、今この瞬間に決めたことです。'I'm going to help you'は「（以前から）手伝うつもりだ」という事前の計画を示します。この'will'の「即座の決定」用法は日常会話で極めて重要です。レストランで'I'll have the pasta'（パスタにします）のように使います。"
+      },
+      {
+        "id": "je_ffa8",
+        "question": "By the time you wake up, I _____ already _____.",
+        "translation": "(あなたが起きる頃には、私はもう出発しているでしょう)",
+        "options": [
+          "will have ... left",
+          "will ... leave",
+          "am ... leaving",
+          "have ... left"
+        ],
+        "correct": "will have ... left",
+        "explanation": "未来完了形'will have + 過去分詞'は「未来のある時点までに完了している動作」を表します。'By the time you wake up, I will have already left'は「あなたが起きる頃にはもう出発してしまっている」です。'by the time'は「〜する頃には」という未来の基準時点を設定し、その時点までの完了を示します。注意：'by the time'の後は現在形を使い、主節に'will have'を使います。この組み合わせは上級英語の重要な構文です。"
+      },
+      {
+        "id": "je_ffa9",
+        "question": "We _____ to move to Osaka next spring.",
+        "translation": "(来春、大阪に引っ越す予定です)",
+        "options": [
+          "are planning",
+          "will plan",
+          "planned",
+          "plan"
+        ],
+        "correct": "are planning",
+        "explanation": "'be planning to'は「〜する予定である」「〜を計画している」という意味で、確定した計画を表します。現在進行形の'are planning'は、既に具体的な計画が進行中であることを示します。'will'よりも確実性が高く、準備が進んでいるニュアンスがあります。日本語の「〜する予定です」に最も近い表現の一つです。未来表現の選択肢は多いですが、計画の確実性に応じて使い分けましょう。確定度の高い順に：現在進行形＞'be going to'＞'will'です。"
+      },
+      {
+        "id": "je_ffa10",
+        "question": "The meeting _____ about to start when he arrived.",
+        "translation": "(彼が到着したとき、会議はまさに始まるところでした)",
+        "options": [
+          "was",
+          "is",
+          "will be",
+          "has been"
+        ],
+        "correct": "was",
+        "explanation": "'be about to'は「まさに〜しようとしている」という差し迫った未来を表す表現です。'was about to start'は過去の時点で「まさに始まるところだった」です。'be about to'は非常に近い未来（数秒〜数分以内）を示し、'going to'よりも切迫感があります。日本語の「まさに〜するところだった」に対応します。'I'm about to leave'（もう出ようとしている）、'The movie is about to begin'（映画がまもなく始まる）のように日常的に使われます。"
+      },
+      {
+        "id": "je_ffa11",
+        "question": "Don't call me between 3 and 4. I _____ a meeting.",
+        "translation": "(3時から4時の間は電話しないで。会議中です)",
+        "options": [
+          "will be having",
+          "will have",
+          "am having",
+          "have"
+        ],
+        "correct": "will be having",
+        "explanation": "未来進行形'will be + -ing'は「未来のある時間帯に進行中の活動」を表します。'I will be having a meeting'は「会議をしている最中だろう」です。'between 3 and 4'という具体的な時間帯を指定しているため、その間ずっと進行中であることを示す未来進行形が最適です。'I will have a meeting'（会議がある）は事実の述べ方、'I will be having'（会議中だろう）は進行中の状態を描写しています。この違いを理解することで表現力が向上します。"
+      },
+      {
+        "id": "je_ffa12",
+        "question": "_____ you be using the car this afternoon?",
+        "translation": "(今日の午後、車を使いますか？)",
+        "options": [
+          "Will",
+          "Do",
+          "Are",
+          "Have"
+        ],
+        "correct": "Will",
+        "explanation": "未来進行形の疑問文は'Will you be + -ing?'の形で、丁寧に相手の予定を尋ねるときに使います。'Will you be using the car?'は「車を使う予定ですか？」という婉曲的な質問です。'Will you use the car?'よりも押しつけがましくなく、相手の予定を確認するだけのニュアンスになります。ビジネスシーンや丁寧な場面でよく使われます。未来進行形の疑問文は要求ではなく純粋な情報確認であることを暗示するため、非常に丁寧な表現になります。"
+      },
+      {
+        "id": "je_ffa13",
+        "question": "I _____ to study medicine at university.",
+        "translation": "(大学で医学を勉強するつもりです)",
+        "options": [
+          "intend",
+          "will intend",
+          "am intending",
+          "intended"
+        ],
+        "correct": "intend",
+        "explanation": "'intend to'は「〜するつもりである」「〜する意図がある」という意志を表す動詞です。'I intend to study medicine'は「医学を学ぶつもりだ」という明確な意思を示します。'plan to'と似ていますが、'intend'はより強い決意を含みます。フォーマルな発表や真剣な場面で使われることが多いです。日本語の「〜するつもりです」に対応し、'am going to'や'will'よりも決意の強さが明確に伝わります。未来表現の中でも意思の強度を表す重要な動詞です。"
+      },
+      {
+        "id": "je_ffa14",
+        "question": "He is _____ to arrive at any moment.",
+        "translation": "(彼はいつ到着してもおかしくない状況です)",
+        "options": [
+          "due",
+          "going",
+          "about",
+          "supposed"
+        ],
+        "correct": "due",
+        "explanation": "'be due to'は「〜する予定である」「〜することになっている」という意味で、スケジュールに基づく予定を表します。'due to arrive at any moment'は「いつ到着してもおかしくない」「間もなく到着するはず」です。交通機関やイベントの予定を述べるときによく使われます。'The train is due at 9:15'（電車は9:15着の予定）のように使います。'be supposed to'とは異なり、'be due to'はスケジュール的な予定を表し、義務のニュアンスはありません。"
+      },
+      {
+        "id": "je_ffa15",
+        "question": "By 2030, scientists _____ a cure for the disease.",
+        "translation": "(2030年までに、科学者たちはその病気の治療法を見つけているかもしれません)",
+        "options": [
+          "may have found",
+          "found",
+          "find",
+          "are finding"
+        ],
+        "correct": "may have found",
+        "explanation": "'may have + 過去分詞'は未来完了の推量で「〜しているかもしれない」を表します。'By 2030, scientists may have found a cure'は「2030年までに治療法を見つけているかもしれない」です。'will have found'なら確信のある予測ですが、'may have found'は可能性としての予測です。助動詞と完了形の組み合わせは高度な文法ですが、ニュアンス豊かな表現が可能になります。科学やビジネスの将来予測で頻繁に使われる重要な構文です。"
+      }
+    ]
+  },
+  {
+    "key": "narrative_tenses",
+    "name": "Narrative Tenses",
+    "description": "物語の時制",
+    "iconName": "book",
+    "color": "#a78bfa",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "je_nt1",
+        "question": "She _____ walking home when she saw a strange light.",
+        "translation": "(彼女は家に歩いて帰っている途中で不思議な光を見ました)",
+        "options": [
+          "was",
+          "is",
+          "has been",
+          "had been"
+        ],
+        "correct": "was",
+        "explanation": "物語の時制では、過去進行形（was/were + -ing）を使って背景状況・進行中の動作を描写します。'She was walking home'は「彼女は歩いて帰っている最中だった」という背景です。そこに過去形'saw'で突然の出来事を挿入します。物語の基本パターン：過去進行形（背景）＋過去形（出来事）です。日本語では「歩いていると〜を見た」のように表現しますが、英語では二つの異なる時制を使い分けて時間の流れを立体的に表現します。"
+      },
+      {
+        "id": "je_nt2",
+        "question": "He _____ already left when I arrived at the station.",
+        "translation": "(私が駅に着いたとき、彼はもう出発していました)",
+        "options": [
+          "had",
+          "has",
+          "was",
+          "did"
+        ],
+        "correct": "had",
+        "explanation": "過去完了形（had + 過去分詞）は「過去のある時点よりも前に起きた出来事」を表します。'He had already left when I arrived'は「私が着いた時点ですでに出発していた」です。基準時点（arrived）よりも前の時点を示すために過去完了を使います。物語では時系列を前後させるときに不可欠です。日本語の「〜していた」に近いですが、英語では明確に「過去の中の過去」を時制で区別します。出来事の時間的前後関係を正確に伝えるための重要な文法です。"
+      },
+      {
+        "id": "je_nt3",
+        "question": "They _____ for two hours before the bus finally came.",
+        "translation": "(バスがやっと来るまで、彼らは2時間待っていました)",
+        "options": [
+          "had been waiting",
+          "were waiting",
+          "waited",
+          "have waited"
+        ],
+        "correct": "had been waiting",
+        "explanation": "過去完了進行形（had been + -ing）は「過去のある時点まで続いていた動作」を表します。'had been waiting for two hours'は「2時間ずっと待ち続けていた」です。過去完了形よりもさらに動作の継続性を強調します。'before the bus came'が基準時点で、そこまでの長い待ち時間を生き生きと描写しています。物語の中で登場人物の経験や苦労を表現するのに最適です。日本語の「ずっと〜していた」に相当する上級の時制表現です。"
+      },
+      {
+        "id": "je_nt4",
+        "question": "As I _____ the door, the phone rang.",
+        "translation": "(ドアを開けようとしていたとき、電話が鳴りました)",
+        "options": [
+          "was opening",
+          "opened",
+          "had opened",
+          "have opened"
+        ],
+        "correct": "was opening",
+        "explanation": "過去進行形'was opening'は動作の途中（プロセス）を表します。ドアを開ける動作の最中に電話が鳴った、という同時進行の場面です。'opened'（過去形）にすると「開けた、そして電話が鳴った」と連続する二つの完了した動作になります。過去進行形は動作を「映画のスローモーション」のように途中経過として描写します。物語を生き生きと語るとき、この「進行中の動作に別の出来事が割り込む」パターンは非常によく使われます。"
+      },
+      {
+        "id": "je_nt5",
+        "question": "It _____ dark, so we decided to go home.",
+        "translation": "(暗くなってきたので、帰ることにしました)",
+        "options": [
+          "was getting",
+          "got",
+          "had got",
+          "gets"
+        ],
+        "correct": "was getting",
+        "explanation": "'was getting dark'は過去進行形で「暗くなりつつあった」という変化の過程を表しています。'got dark'（暗くなった）は変化の完了を示しますが、'was getting dark'は徐々に暗くなっていた過程を描写します。物語では、状況の変化を背景として描写し、その状況が決断のきっかけとなる、というパターンがよく使われます。日本語の「暗くなってきたので」のニュアンスを英語で再現するには過去進行形が最適です。雰囲気の描写力が高まります。"
+      },
+      {
+        "id": "je_nt6",
+        "question": "I suddenly realized I _____ my wallet at home.",
+        "translation": "(突然、家に財布を忘れてきたことに気づきました)",
+        "options": [
+          "had left",
+          "left",
+          "was leaving",
+          "have left"
+        ],
+        "correct": "had left",
+        "explanation": "「気づいた」時点（realized）よりも前に「忘れた」（had left）行為が起きています。この時間的前後関係を示すために過去完了形を使います。'had left my wallet at home'は基準時点より前の行為です。物語の中で「何かに後から気づく」場面では、この過去完了形＋過去形の組み合わせが必須です。フラッシュバック（時間を遡る描写）の文法的基盤でもあります。日本語では「忘れてきた」と一つの表現ですが、英語では二つの時制で時間差を表現します。"
+      },
+      {
+        "id": "je_nt7",
+        "question": "The sun _____ shining and the birds were singing.",
+        "translation": "(太陽が輝いていて、鳥たちが歌っていました)",
+        "options": [
+          "was",
+          "is",
+          "had been",
+          "will be"
+        ],
+        "correct": "was",
+        "explanation": "物語の冒頭で場面設定をするとき、過去進行形を並列して使います。'The sun was shining and the birds were singing'は典型的な物語の導入部で、美しい情景を描写しています。複数の過去進行形を並べることで、同時に進行していた複数の要素を描写できます。英語の小説や物語は多くの場合、このような情景描写で始まります。日本語の「太陽が輝いていて、鳥が歌っていた」と同じ効果ですが、英語では過去進行形で動的な場面を生き生きと表現します。"
+      },
+      {
+        "id": "je_nt8",
+        "question": "After she _____ dinner, she went for a walk.",
+        "translation": "(夕食を食べた後、彼女は散歩に出かけました)",
+        "options": [
+          "had eaten",
+          "ate",
+          "was eating",
+          "has eaten"
+        ],
+        "correct": "had eaten",
+        "explanation": "'After she had eaten dinner, she went for a walk'は時間の順序が明確です。'after'があるため過去形'ate'でも理解できますが、過去完了形'had eaten'の方がより正確に時間的前後関係を示します。物語で出来事を時系列で述べるとき、'after/before/when/as soon as'などの接続詞と過去完了形の組み合わせは非常に効果的です。日本語では「食べた後に」で済みますが、英語では時制で時間関係を二重に示すことで明確性が増します。"
+      },
+      {
+        "id": "je_nt9",
+        "question": "He told me that he _____ to Paris the year before.",
+        "translation": "(彼は前の年にパリに行ったと私に言いました)",
+        "options": [
+          "had been",
+          "went",
+          "has been",
+          "goes"
+        ],
+        "correct": "had been",
+        "explanation": "間接話法（reported speech）の中で過去完了形を使い、「話した時点よりもさらに前の出来事」を表します。直接話法:'I went to Paris last year' → 間接話法:'He told me that he had been to Paris the year before.'。過去形→過去完了形、'last year'→'the year before'と変化します。物語では登場人物の過去の経験を他のキャラクターに語らせる場面でこのパターンが頻出します。時制の後退（backshift）は物語の時間軸を操作する重要な技術です。"
+      },
+      {
+        "id": "je_nt10",
+        "question": "While I _____ TV, someone knocked on the door.",
+        "translation": "(テレビを見ているとき、誰かがドアをノックしました)",
+        "options": [
+          "was watching",
+          "watched",
+          "had watched",
+          "am watching"
+        ],
+        "correct": "was watching",
+        "explanation": "'While + 過去進行形'は物語の中で「進行中の活動に割り込み」が起きるパターンです。'While I was watching TV'（テレビを見ている間に）が背景、'someone knocked'（誰かがノックした）が突発的な出来事です。'While'は「〜している間に」という同時性を表し、過去進行形と非常に相性が良い接続詞です。この'while + 過去進行形 + 過去形'は英語の物語文体の最も基本的なパターンの一つで、小説からエッセイまであらゆるジャンルで使われます。"
+      },
+      {
+        "id": "je_nt11",
+        "question": "She _____ like she had seen a ghost.",
+        "translation": "(彼女はまるで幽霊を見たかのような顔をしていました)",
+        "options": [
+          "looked",
+          "was looking",
+          "had looked",
+          "has looked"
+        ],
+        "correct": "looked",
+        "explanation": "ここでの'looked'は「〜のように見えた」という状態を過去形で表しています。'looked like she had seen a ghost'は「幽霊を見たかのような表情だった」という比喩表現です。'like'以下の過去完了形は「その表情の原因となった出来事がさらに前に起きた」ことを示しています。物語の中で登場人物の外見や表情を描写して心理状態を暗示するテクニックです。英語の物語では' looked/seemed/appeared + like/as if'のパターンで心理描写を行いますします。"
+      },
+      {
+        "id": "je_nt12",
+        "question": "The moment I _____ the door, I knew something was wrong.",
+        "translation": "(ドアを開けた瞬間、何かがおかしいとわかりました)",
+        "options": [
+          "opened",
+          "was opening",
+          "had opened",
+          "have opened"
+        ],
+        "correct": "opened",
+        "explanation": "'The moment'は「〜した瞬間に」という接続詞的な表現で、二つの出来事がほぼ同時に起きたことを示します。'The moment I opened the door, I knew...'は「ドアを開けた瞬間にわかった」です。ここでは両方の動作がほぼ同時なので、両方とも過去形を使います。過去完了は不要です。物語でサスペンスや緊張感を生み出すのに効果的な構文です。'The instant'、'The second'も同様に使えます。日本語の「〜した瞬間」に直接対応する重要な表現です。"
+      },
+      {
+        "id": "je_nt13",
+        "question": "He _____ to call her all day, but her phone was off.",
+        "translation": "(彼は一日中彼女に電話しようとしていましたが、電話の電源が切れていました)",
+        "options": [
+          "had been trying",
+          "tried",
+          "was trying",
+          "has tried"
+        ],
+        "correct": "had been trying",
+        "explanation": "過去完了進行形'had been trying'は「それまでずっと〜し続けていた」という長期間の努力を表します。'all day'（一日中）という期間の長さを強調する表現と組み合わせることで、繰り返し試みていた粘り強さが伝わります。'but her phone was off'は結果的に連絡がつかなかった理由です。物語の中で登場人物の苦労や努力を描写するとき、過去完了進行形は最大限の効果を発揮します。読者の共感を引き出す強力な文法的ツールです。"
+      },
+      {
+        "id": "je_nt14",
+        "question": "It _____ for hours when we finally arrived.",
+        "translation": "(私たちがやっと到着したとき、何時間も雨が降り続いていました)",
+        "options": [
+          "had been raining",
+          "was raining",
+          "rained",
+          "has rained"
+        ],
+        "correct": "had been raining",
+        "explanation": "'had been raining for hours'は「何時間も降り続いていた」という過去のある時点までの継続を表す過去完了進行形です。'when we finally arrived'が基準時点で、到着時にはすでに何時間も雨が降っていたことを示しています。天候の描写は物語の雰囲気作りに不可欠で、過去完了進行形は累積的な時間の経過を生き生きと伝えます。'for hours'のような期間表現との組み合わせが典型的で、物語の場面に奥行きを与える精密な時制表現です。"
+      },
+      {
+        "id": "je_nt15",
+        "question": "Once upon a time, there _____ a beautiful princess.",
+        "translation": "(昔々、美しいお姫様がいました)",
+        "options": [
+          "was",
+          "is",
+          "had been",
+          "has been"
+        ],
+        "correct": "was",
+        "explanation": "'Once upon a time, there was...'は「昔々、〜がいました」という物語の最も有名な書き出しです。過去形'was'で物語の世界を設定します。日本語の「昔々あるところに〜がいました」に対応する定型表現です。童話や民話では必ずといっていいほどこの書き出しが使われます。'there was/were'は存在を表す構文で、物語に新しい登場人物や要素を導入するときの基本型です。このシンプルな過去形が物語全体の時間軸を設定し、読者を物語の世界へ導きます。"
+      }
+    ]
+  },
+  {
+    "key": "mixed_conditionals",
+    "name": "Mixed Conditionals",
+    "description": "混合条件文",
+    "iconName": "arrow.triangle.branch",
+    "color": "#fb923c",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "je_mc1",
+        "question": "If I _____ harder at school, I would have a better job now.",
+        "translation": "(学校でもっと頑張っていたら、今もっといい仕事に就いているのに)",
+        "options": [
+          "had studied",
+          "studied",
+          "would study",
+          "study"
+        ],
+        "correct": "had studied",
+        "explanation": "混合条件文（第3条件＋第2条件の混合）は「過去の仮定が現在に影響を与える」パターンです。If節：過去完了形（過去の仮定）、主節：would + 動詞の原形（現在の結果の仮定）。'If I had studied harder, I would have a better job now'は「あの時もっと勉強していたら、今は良い仕事があるのに」です。時制が異なる節を組み合わせることで、過去の行為が現在にどう影響しているかを表現できます。日本語の「〜していたら今〜なのに」にぴったりです。"
+      },
+      {
+        "id": "je_mc2",
+        "question": "If she _____ taller, she would have been accepted into the team.",
+        "translation": "(もし彼女がもっと背が高かったら、チームに入れていたのに)",
+        "options": [
+          "were",
+          "had been",
+          "is",
+          "was being"
+        ],
+        "correct": "were",
+        "explanation": "この混合条件文は「現在の状態の仮定＋過去の結果の仮定」（第2条件＋第3条件の混合）です。If節：仮定法過去（現在の仮定）、主節：would have + 過去分詞（過去の結果の仮定）。'If she were taller'は現在の状態の仮定（実際には背が低い）、'would have been accepted'は過去の結果の仮定です。「現在こうであれば、過去にこうなっていただろう」という論理を表現します。注意：仮定法では'was'の代わりに'were'を使うのが正式です。"
+      },
+      {
+        "id": "je_mc3",
+        "question": "If I _____ you, I would have accepted the offer.",
+        "translation": "(もし私があなたなら、そのオファーを受けていたでしょう)",
+        "options": [
+          "were",
+          "had been",
+          "am",
+          "was"
+        ],
+        "correct": "were",
+        "explanation": "'If I were you'は仮定法の最も有名な表現で「もし私があなたなら」です。ここでは混合条件文として使われ、If節は現在の仮定（第2条件）、主節は過去の結果の仮定（第3条件）です。「もし私があなたの立場なら（現在の仮定）、オファーを受けていただろう（過去の仮定結果）」という意味です。'If I were you'は時代を超えた定番表現で、アドバイスを与えるときにも使われます。仮定法は日本語の「〜なら」に近いですが、英語では時制操作が必要です。"
+      },
+      {
+        "id": "je_mc4",
+        "question": "If he hadn't missed the train, he _____ here now.",
+        "translation": "(もし彼が電車に乗り遅れなかったら、今ここにいるのに)",
+        "options": [
+          "would be",
+          "will be",
+          "is",
+          "was"
+        ],
+        "correct": "would be",
+        "explanation": "「過去の仮定→現在の仮定結果」のパターンです。If節：過去完了形'hadn't missed'（過去に起きなかったことの仮定）、主節：'would be'（現在の仮定結果）。'If he hadn't missed the train, he would be here now'は「電車に乗り遅れなかったら今ここにいるのに」という後悔を含む表現です。'now'が加わることで、仮定の結果が現在に関するものであることを明確にしています。日常会話でも遅刻や失敗の言い訳として自然に使われる構文です。"
+      },
+      {
+        "id": "je_mc5",
+        "question": "She wouldn't be so tired if she _____ to bed earlier last night.",
+        "translation": "(昨夜もっと早く寝ていたら、彼女はこんなに疲れていないのに)",
+        "options": [
+          "had gone",
+          "went",
+          "goes",
+          "would go"
+        ],
+        "correct": "had gone",
+        "explanation": "主節'wouldn't be so tired'は現在の仮定結果（第2条件）、If節'had gone to bed earlier'は過去の仮定（第3条件）です。「昨夜早く寝ていたら（過去の仮定）→今疲れていないのに（現在の結果の仮定）」という因果関係を表現します。混合条件文は過去と現在を橋渡しする強力な表現で、過去の選択が現在にどう影響しているかを述べるのに最適です。日本語の「〜していたら今〜なのに」に直接対応する非常に実用的な構文です。"
+      },
+      {
+        "id": "je_mc6",
+        "question": "If they _____ more careful, the accident wouldn't have happened.",
+        "translation": "(もし彼らがもっと注意深かったら、事故は起きなかったでしょう)",
+        "options": [
+          "had been",
+          "were",
+          "are",
+          "would be"
+        ],
+        "correct": "had been",
+        "explanation": "この文は標準的な第3条件文（仮定法過去完了）です。If節：'had been more careful'（過去の仮定）、主節：'wouldn't have happened'（過去の仮定結果）。しかし'were'を使って混合条件文にすると「もし彼らが（普段から）注意深い人なら（現在の性格の仮定）、事故は起きなかったでしょう」という意味になります。文脈によって第3条件と混合条件の両方の解釈が可能ですが、ここでは過去の具体的状況を指すため'had been'が最適です。"
+      },
+      {
+        "id": "je_mc7",
+        "question": "I wouldn't have this problem if I _____ more organized.",
+        "translation": "(もしもっと整理整頓ができる人なら、この問題を抱えていないのに)",
+        "options": [
+          "were",
+          "had been",
+          "am",
+          "was being"
+        ],
+        "correct": "were",
+        "explanation": "主節'wouldn't have this problem'は現在の仮定結果、If節'were more organized'は現在の性格・特性の仮定です。これは第2条件文です。「もし自分がもっと整理整頓できる人間なら（性格の仮定）、今この問題はないのに」という意味です。ただし'had been'を使うと「過去にもっと整理整頓していたら」という過去の行為の仮定になり、混合条件文になります。どちらの解釈を意図するかによって'were'か'had been'かが決まります。文脈判断力が試される問題です。"
+      },
+      {
+        "id": "je_mc8",
+        "question": "If I had taken the job in London, I _____ living in England now.",
+        "translation": "(もしロンドンの仕事を受けていたら、今イングランドに住んでいるのに)",
+        "options": [
+          "would be",
+          "will be",
+          "am",
+          "had been"
+        ],
+        "correct": "would be",
+        "explanation": "過去の選択の仮定（If I had taken）が現在の状況に影響する混合条件文です。'now'が明確に現在の時点を示しているため、主節は'would be'（第2条件の形）になります。「ロンドンの仕事を受けていたら（過去の仮定）、今イングランドに住んでいるだろう（現在の結果の仮定）」。人生の分岐点について語るときによく使われる構文で、「あの時こうしていれば今こうなっていた」という後悔や想像を表現するのに最適な英語表現です。"
+      },
+      {
+        "id": "je_mc9",
+        "question": "If you _____ so much coffee, you wouldn't have trouble sleeping.",
+        "translation": "(もしそんなにコーヒーを飲まなければ、睡眠に問題を抱えないのに)",
+        "options": [
+          "didn't drink",
+          "hadn't drunk",
+          "don't drink",
+          "won't drink"
+        ],
+        "correct": "didn't drink",
+        "explanation": "これは標準的な第2条件文です。If節：'didn't drink'（現在の習慣の仮定）、主節：'wouldn't have trouble'（現在の結果の仮定）。「コーヒーを飲みすぎなければ（現在の習慣の仮定）→睡眠に問題がないのに（現在の結果）」です。しかし'hadn't drunk'にすると「昨夜あんなにコーヒーを飲まなければ（過去の仮定）→今睡眠に問題がないのに」と混合条件文になります。習慣vs一回の行為、どちらを仮定するかで時制が変わります。"
+      },
+      {
+        "id": "je_mc10",
+        "question": "He would know the answer if he _____ attention in class.",
+        "translation": "(もし授業で注意を払っていたら、答えを知っているのに)",
+        "options": [
+          "had paid",
+          "paid",
+          "pays",
+          "would pay"
+        ],
+        "correct": "had paid",
+        "explanation": "主節'would know the answer'は現在の仮定結果（今答えを知っているはず）、If節'had paid attention'は過去の仮定（以前の授業で注意を払っていたら）です。混合条件文の典型的な用法で、「過去にちゃんとしていたら今こうだったのに」という後悔を表現しています。'paid'（第2条件）にすると「普段から注意を払う人なら」という一般的な性格の仮定になります。過去の具体的な行動を指す場合は'had paid'が適切です。"
+      },
+      {
+        "id": "je_mc11",
+        "question": "If we hadn't moved to this city, our children _____ different schools.",
+        "translation": "(もしこの街に引っ越していなかったら、子供たちは違う学校に通っているのに)",
+        "options": [
+          "would be attending",
+          "attended",
+          "will attend",
+          "have attended"
+        ],
+        "correct": "would be attending",
+        "explanation": "'would be attending'は'would be + -ing'の形で、仮定の現在進行中の状況を表します。「引っ越していなかったら（過去の仮定）→今は違う学校に通っているだろう（現在の進行中の仮定）」です。'would attend'（通うだろう）でも可ですが、'would be attending'は今まさに通学中であるという臨場感を加えます。混合条件文の主節で進行形を使うことで、仮定の世界をより生き生きと描写できます。高度ですが自然な英語表現です。"
+      },
+      {
+        "id": "je_mc12",
+        "question": "If she _____ English, she could apply for the position.",
+        "translation": "(もし彼女が英語を話せたら、そのポジションに応募できるのに)",
+        "options": [
+          "spoke",
+          "had spoken",
+          "speaks",
+          "will speak"
+        ],
+        "correct": "spoke",
+        "explanation": "標準的な第2条件文です。'spoke'は仮定法過去で、現在の仮定を表しています。「英語を話せたら（現在の能力の仮定）→応募できるのに（現在の結果の仮定）」。'could'は'would be able to'の意味で可能性を表します。もし'had spoken'にすると「以前に英語を話していたら（過去の仮定）」となり混合条件文になります。スキルや能力に関する仮定では、現在持っていない能力を想像するので第2条件文が自然です。就職や転職の場面でよく使われる表現です。"
+      },
+      {
+        "id": "je_mc13",
+        "question": "If I hadn't eaten so much, I _____ hungry for dinner.",
+        "translation": "(もしあんなに食べなかったら、今は夕食が食べたいのに)",
+        "options": [
+          "would be",
+          "would have been",
+          "was",
+          "am"
+        ],
+        "correct": "would be",
+        "explanation": "過去の過食（had eaten）が現在の食欲に影響する混合条件文です。「あんなに食べなかったら（過去の仮定）→今お腹が空いているはず（現在の結果の仮定）」。'would be hungry'は現在の仮定結果です。'would have been'にすると「その時お腹が空いていたはず」と過去の結果の仮定になり、第3条件文になります。'now'や'today'のような時間表現がなくても文脈から現在の話であることがわかります。日常の食事や健康の場面で使える身近な混合条件文です。"
+      },
+      {
+        "id": "je_mc14",
+        "question": "We _____ lost now if we had followed the map.",
+        "translation": "(もし地図に従っていたら、今迷子になっていないのに)",
+        "options": [
+          "wouldn't be",
+          "won't be",
+          "aren't",
+          "haven't been"
+        ],
+        "correct": "wouldn't be",
+        "explanation": "'wouldn't be lost now'は現在の仮定結果の否定（今迷子ではないのに）、'if we had followed the map'は過去の仮定（地図に従っていたら）です。「地図通りに行っていたら（過去の仮定）→今迷っていないのに（現在の結果の仮定）」。混合条件文の否定形です。'now'が現在時制の指標として機能しています。旅行やドライブの場面で実際に使われそうな自然な例文です。過去の判断ミスを現在の困った状況と結びつけて表現しています。"
+      },
+      {
+        "id": "je_mc15",
+        "question": "If he _____ the truth, he wouldn't be in trouble now.",
+        "translation": "(もし彼が真実を話していたら、今困っていないのに)",
+        "options": [
+          "had told",
+          "told",
+          "tells",
+          "would tell"
+        ],
+        "correct": "had told",
+        "explanation": "'had told the truth'（真実を話していたら＝過去の仮定）→'wouldn't be in trouble now'（今困っていないのに＝現在の仮定結果）。過去の行動が現在に影響する典型的な混合条件文です。嘘をついた過去の行為が、現在のトラブルの原因になっているという因果関係を仮定で表現しています。混合条件文は実生活で驚くほど多用され、「あの時〜していれば今〜なのに」というパターンは人間の思考に非常に自然です。この構文をマスターすれば上級者の仲間入りです。"
+      }
+    ]
   }
 ]

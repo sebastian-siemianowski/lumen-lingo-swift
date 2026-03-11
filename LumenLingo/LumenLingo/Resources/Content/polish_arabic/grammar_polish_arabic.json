@@ -9633,5 +9633,2055 @@
         "explanation": "System: 1) Porządkowe 1-10: oddzielne formy na فاعِل (أوَّل, ثانٍ, ثالث...عاشر) + formy żeńskie (أولى, ثانية, ثالثة...). 2) Porządkowe 11-19: złożone + nieodmienne (الحاديَ عشرَ, الثانيَ عشرَ... التاسعَ عشرَ). 3) Od 20: BRAK odrębnych form — używamy liczebników GŁÓWNYCH jako porządkowych: الصفحةُ العشرونَ (str. 20.). Prostota rośnie z wielkością liczby!"
       }
     ]
+  },
+  {
+    "key": "comparative_superlative",
+    "name": "Stopień wyższy i najwyższy (أَفْعَل)",
+    "description": "التفضيل - صيغة أَفْعَل في المقارنة",
+    "iconName": "arrow.up.right",
+    "color": "#4ade80",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pa_comp1",
+        "question": "محمد _____ من أحمد (Muhammad jest wyższy od Ahmeda)",
+        "translation": "(Muhammad jest wyższy od Ahmeda)",
+        "options": [
+          "أَطْوَلُ",
+          "طَوِيلُ",
+          "الأَطْوَلُ",
+          "طُولُ"
+        ],
+        "correct": "أَطْوَلُ",
+        "explanation": "Poprawnie: 'أَطْوَلُ' (aṭwalu) = wyższy/dłuższy. Stopień wyższy w arabskim: wzorzec أَفْعَل (afʿal). Od طَوِيل (wysoki): أَطْوَل. Konstrukcja: X أَفْعَلُ مِنْ Y = X jest bardziej... niż Y. W polskim używamy '-szy/-iejszy' (wyższy), w arabskim zawsze ten sam wzorzec أَفْعَل. UWAGA: forma أَفْعَل jest NIEZMIENNA (nieodmienna przez przypadki w stopniu wyższym)."
+      },
+      {
+        "id": "pa_comp2",
+        "question": "هذا البيت _____ من ذلك (Ten dom jest większy od tamtego)",
+        "translation": "(Ten dom jest większy od tamtego)",
+        "options": [
+          "أَكْبَرُ",
+          "كَبِيرُ",
+          "الكَبِيرُ",
+          "كِبَارُ"
+        ],
+        "correct": "أَكْبَرُ",
+        "explanation": "Poprawnie: 'أَكْبَرُ' (akbaru) = większy. Od كَبِير (duży/wielki): أَكْبَر. Konstrukcja porównawcza: هذا أَكْبَرُ مِنْ ذلك. Przyimek مِنْ jest OBOWIĄZKOWY w porównaniu (= 'niż/od'). Bez مِنْ forma أَفْعَل staje się stopniem najwyższym: الأَكْبَر = największy (z rodzajnikiem) lub أَكْبَرُ + dopełniacz: أَكْبَرُ بيتٍ = największy dom."
+      },
+      {
+        "id": "pa_comp3",
+        "question": "Stopień najwyższy 'جَمِيل' (piękny) z rodzajnikiem:",
+        "translation": "(ما أفعل التفضيل مع ال؟)",
+        "options": [
+          "الأَجْمَلُ",
+          "أَجْمَلُ",
+          "جَمِيلُ",
+          "المَجْمُولُ"
+        ],
+        "correct": "الأَجْمَلُ",
+        "explanation": "Poprawnie: 'الأَجْمَلُ' (al-ajmalu) = najpiękniejszy. Stopień najwyższy = أَفْعَل + الـ (rodzajnik). Trzy sposoby tworzenia superlatywu: 1) الأَفْعَلُ: الأَجْمَلُ (najpiękniejszy — określony); 2) أَفْعَلُ + dopełniacz: أَجْمَلُ مدينةٍ (najpiękniejsze miasto); 3) أَفْعَلُ + نكرة منصوبة: ... W polskim: 'naj-' + stopień wyższy. W arabskim: ten sam wzorzec, różni się tylko kontekstem."
+      },
+      {
+        "id": "pa_comp4",
+        "question": "هي _____ طالبة في الصف (Ona jest najlepszą studentką w klasie)",
+        "translation": "(Ona jest najlepszą studentką w klasie)",
+        "options": [
+          "أَفْضَلُ",
+          "فَضِيلَةُ",
+          "الفُضْلَى",
+          "فَاضِلَةُ"
+        ],
+        "correct": "أَفْضَلُ",
+        "explanation": "Poprawnie: 'أَفْضَلُ' (afḍalu) = najlepsza. Od فَاضِل (wybitny/cnotliwy): أَفْضَل. WAŻNE: forma أَفْعَل jest JEDNAWE dla obu rodzajów w funkcji porównawczej: هو أَفْضَلُ / هي أَفْضَلُ (nie ma formy żeńskiej *فُضْلَى w porównaniu z مِنْ). Ale w superlatywie z الـ: المرأة الفُضْلَى (forma żeńska فُعْلَى). To subtelna różnica!"
+      },
+      {
+        "id": "pa_comp5",
+        "question": "Stopień wyższy od 'حَسَن' (dobry) to:",
+        "translation": "(ما أفعل التفضيل من حَسَن؟)",
+        "options": [
+          "أَحْسَنُ",
+          "حَسَنُ",
+          "أَحْسَنَ",
+          "مُحَسَّنُ"
+        ],
+        "correct": "أَحْسَنُ",
+        "explanation": "Poprawnie: 'أَحْسَنُ' (aḥsanu) = lepszy/najlepszy. Od حَسَن (dobry/piękny). Rdzeń: ح-س-ن. Wzorzec: أَفْعَل. Ten przymiotnik jest bardzo częsty: أَحْسَنَ اللهُ إليكَ (Niech Bóg ci wynagrodzi). Uwaga: 'أَحْسَنَ' (z fathą na końcu) to też czasownik formy IV = udoskonalił/zrobił dobrze. Kontekst rozstrzyga: أَحْسَنُ (przymiotnik, ḍamma) vs. أَحْسَنَ (czasownik, fatha)."
+      },
+      {
+        "id": "pa_comp6",
+        "question": "Które przymiotniki NIE tworzą formy أَفْعَل?",
+        "translation": "(أي صفات لا تأتي على أَفْعَل؟)",
+        "options": [
+          "Kolory i wady fizyczne (أَعْرَج = kulawy)",
+          "Przymiotniki od rdzeni trójspółgłoskowych",
+          "Przymiotniki opisujące rozmiar",
+          "Przymiotniki opisujące wiek"
+        ],
+        "correct": "Kolory i wady fizyczne (أَعْرَج = kulawy)",
+        "explanation": "Kolory i wady fizyczne już MAJĄ formę أَفْعَل jako swoją PODSTAWOWĄ formę: أَحْمَر (czerwony), أَعْرَج (kulawy), أَعْمَى (ślepy). Nie mogą tworzyć drugiej formy أَفْعَل do porównania! Zamiast tego: أَكْثَرُ حُمْرَةً (bardziej czerwony — dosł. 'więcej czerwoności') lub أَشَدُّ حُمْرَةً (intensywniej czerwony). To obejście: nie da się zastosować wzorca أَفْعَل dwa razy."
+      },
+      {
+        "id": "pa_comp7",
+        "question": "القاهرة أَكْبَرُ مِنْ عَمّان — znaczy:",
+        "translation": "(ما ترجمة هذه الجملة؟)",
+        "options": [
+          "Kair jest większy od Ammanu",
+          "Kair jest największy w Ammanie",
+          "Amman jest większy od Kairu",
+          "Kair i Amman są duże"
+        ],
+        "correct": "Kair jest większy od Ammanu",
+        "explanation": "Poprawnie: 'القاهرة أَكْبَرُ مِنْ عَمّان' = Kair jest większy od Ammanu. Konstrukcja: PODMIOT + أَفْعَلُ + مِنْ + PORÓWNYWANY. القاهرة = Kair (r. żeński, ale أَكْبَرُ nie zmienia formy!). مِنْ عَمّان = od/niż Amman. Szyk jest stały: to co jest 'więcej' stoi PRZED مِنْ, to co jest 'mniej' PO مِنْ."
+      },
+      {
+        "id": "pa_comp8",
+        "question": "هذا _____ كتابٍ قرأتُه (To jest najlepszа książka, którą czytałem)",
+        "translation": "(To jest najlepsza książka, którą czytałem)",
+        "options": [
+          "أَحْسَنُ",
+          "الأَحْسَنُ",
+          "حَسَنُ",
+          "أَحْسَنَ"
+        ],
+        "correct": "أَحْسَنُ",
+        "explanation": "Poprawnie: 'أَحْسَنُ كتابٍ' = najlepsza książka. Superlativ z إضافة (dopełniacz): أَفْعَلُ + rzeczownik w dopełniaczu nieokreślony. أَحْسَنُ كتابٍ (najlepsza książka), أَكْبَرُ مدينةٍ (największe miasto). BEZ rodzajnika الـ na أَفْعَل! Bo jest w إضافة. To drugi sposób wyrażania superlatywu — bardzo popularny w MSA."
+      },
+      {
+        "id": "pa_comp9",
+        "question": "Forma żeńska superlatywu (z الـ) od أَكْبَر to:",
+        "translation": "(ما مؤنث الأكبر مع ال؟)",
+        "options": [
+          "الكُبْرَى",
+          "الأَكْبَرَة",
+          "الكَبِيرَة",
+          "الأَكْبَرُ"
+        ],
+        "correct": "الكُبْرَى",
+        "explanation": "Poprawnie: 'الكُبْرَى' (al-kubrā) = największa. Forma żeńska superlatywu: فُعْلَى (fuʿlā). أَكْبَر → كُبْرَى, أَصْغَر → صُغْرَى, أَفْضَل → فُضْلَى, أَحْسَن → حُسْنَى. L. mn.: كُبَر / فُضَل (rzadko) lub الكُبْرَيَات. UWAGA: forma فُعْلَى pojawia się TYLKO z الـ w superlatywie: المدينة الكُبْرَى (największe miasto). Bez الـ: أَكْبَرُ مدينةٍ."
+      },
+      {
+        "id": "pa_comp10",
+        "question": "هو _____ مني سناً (On jest starszy ode mnie wiekiem)",
+        "translation": "(On jest starszy ode mnie wiekiem)",
+        "options": [
+          "أَكْبَرُ",
+          "كَبِيرٌ",
+          "الأَكْبَرُ",
+          "كُبْرَى"
+        ],
+        "correct": "أَكْبَرُ",
+        "explanation": "Poprawnie: 'أَكْبَرُ مني سِنًّا' = starszy ode mnie wiekiem. Dodatkowe uściślenie: تَمْيِيز (specyfikacja) — سِنًّا (wiekiem) w bierniku wyjaśnia, pod jakim względem ktoś jest 'większy'. Bez سِنًّا zdanie znaczyłoby po prostu 'większy ode mnie' (rozmiarem). To ważny mechanizm: أَفْعَلُ + مِنْ + تَمْيِيز. Inne: أَكْثَرُ عِلْمًا (bardziej uczony)."
+      },
+      {
+        "id": "pa_comp11",
+        "question": "Jak powiedzieć 'bardziej interesujący' (od مُهِمّ)?",
+        "translation": "(كيف نقول أكثر أهمية؟)",
+        "options": [
+          "أَهَمُّ",
+          "أَمْهَمُ",
+          "مُهِمُّ أَكْثَر",
+          "أَكْثَرُ مُهِمّ"
+        ],
+        "correct": "أَهَمُّ",
+        "explanation": "Poprawnie: 'أَهَمُّ' (ahammu) = ważniejszy/bardziej interesujący. Od مُهِمّ — ale rdzeń to ه-م-م (مضعّف). Wzorzec أَفْعَل z podwojonym: أَهَمُّ (z szaddą). Inne podwojone: أَقَلُّ (mniejszy, od قَلِيل/قَلَّ), أَحَبُّ (droższy/bardziej kochany, od حَبَّ), أَشَدُّ (silniejszy/intensywniejszy, od شَدَّ). Forma podwojonego superlatywu zachowuje szaddę."
+      },
+      {
+        "id": "pa_comp12",
+        "question": "هذه المدينة هي الأَجْمَلُ — forma żeńska to:",
+        "translation": "(ما مؤنث الأجمل؟)",
+        "options": [
+          "الجُمْلَى",
+          "الأَجْمَلَة",
+          "الجَمِيلَة",
+          "الأَجْمِلَة"
+        ],
+        "correct": "الجُمْلَى",
+        "explanation": "Poprawnie: 'الجُمْلَى' — forma فُعْلَى od أَجْمَل. Ale UWAGA: ta forma jest rzadko używana w praktyce! Zazwyczaj mówi się: هي الأَجْمَلُ (forma męska jako niezmienna) lub الأَكْثَرُ جَمَالاً. W współczesnym MSA formy فُعْلَى są ograniczone do kilku popularnych: الكُبْرَى, الصُّغْرَى, العُظْمَى (najwspanialsza), الأُولَى (pierwsza/najważniejsza). Reszta — rzadka."
+      },
+      {
+        "id": "pa_comp13",
+        "question": "Jak powiedzieć 'bardziej skomplikowany' (od مُعَقَّد)?",
+        "translation": "(كيف نقول أكثر تعقيداً؟)",
+        "options": [
+          "أَكْثَرُ تَعْقِيدًا",
+          "أَعْقَدُ",
+          "مُعَقَّدُ أَكْثَر",
+          "أَمْعَقُ"
+        ],
+        "correct": "أَكْثَرُ تَعْقِيدًا",
+        "explanation": "Poprawnie: 'أَكْثَرُ تَعْقِيدًا' = bardziej skomplikowany. Przymiotniki od form wyższych (II-X) NIE tworzą أَفْعَل bezpośrednio! Obejście: أَكْثَرُ + masdar w bierniku: أَكْثَرُ تَعْقِيدًا (więcej komplikacji). Tak samo: أَكْثَرُ تَقَدُّمًا (bardziej zaawansowany), أَكْثَرُ اهْتِمَامًا (bardziej zainteresowany). Wyjątki: niektóre popularne jak أَهَمُّ są akceptowane."
+      },
+      {
+        "id": "pa_comp14",
+        "question": "الله أَكْبَر — znaczy:",
+        "translation": "(ما معنى الله أكبر؟)",
+        "options": [
+          "Bóg jest największy",
+          "Bóg jest duży",
+          "Bóg jest większy od...",
+          "Duży Bóg"
+        ],
+        "correct": "Bóg jest największy",
+        "explanation": "Poprawnie: 'اللهُ أَكْبَرُ' (Allāhu akbar) = Bóg jest największy. Chociaż gramatycznie أَكْبَرُ to stopień wyższy ('większy'), tu bez مِنْ rozumie się jako ABSOLUTNY superlativ: 'największy (ze wszystkiego)'. To tzw. التفضيل المطلق — porównanie absolutne bez drugiego członu. Użycie liturgiczne: takbīr (تكبير) — wypowiadany w modlitwie, adhanie, i przy różnych okazjach."
+      },
+      {
+        "id": "pa_comp15",
+        "question": "Które zdanie jest poprawne gramatycznie?",
+        "translation": "(أي جملة صحيحة نحوياً؟)",
+        "options": [
+          "هذا أَجْمَلُ مِنْ ذلك",
+          "هذا الأَجْمَلُ مِنْ ذلك",
+          "هذا جَمِيلٌ مِنْ ذلك",
+          "هذا أَجْمَلَ مِنْ ذلك"
+        ],
+        "correct": "هذا أَجْمَلُ مِنْ ذلك",
+        "explanation": "Poprawnie: 'هذا أَجْمَلُ مِنْ ذلك' = To jest piękniejsze od tamtego. Reguły: 1) BEZ الـ w porównaniu z مِنْ: أَجْمَلُ مِنْ (nie *الأَجْمَلُ مِنْ); 2) مِنْ jest obowiązkowe (nie można użyć samego جَمِيلٌ); 3) أَفْعَلُ kończy się na ḍamma (مرفوع), nie fatha! Fatha (*أَجْمَلَ) sugerowałaby biernik lub czasownik formy IV."
+      }
+    ]
+  },
+  {
+    "key": "temporal_clauses",
+    "name": "Zdania okolicznikowe czasu",
+    "description": "الجمل الظرفية - عندما، حين، بعدما",
+    "iconName": "clock.arrow.circlepath",
+    "color": "#c084fc",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pa_tc1",
+        "question": "_____ وصلتُ، بدأ المطرُ (Kiedy przyjechałem, zaczął padać deszcz)",
+        "translation": "(Kiedy przyjechałem, zaczął padać deszcz)",
+        "options": [
+          "عِنْدَمَا",
+          "لِأَنَّ",
+          "لَكِنَّ",
+          "حَتَّى"
+        ],
+        "correct": "عِنْدَمَا",
+        "explanation": "Poprawnie: 'عِنْدَمَا' (ʿindamā) = kiedy/gdy. Spójnik czasowy wprowadzający zdanie podrzędne. عِنْدَ (przy/u) + مَا (co) = 'w momencie gdy'. Po عِنْدَمَا używamy czasu PRZESZŁEGO (nawet jeśli po polsku użylibyśmy 'kiedy przyjadę'). Inne spójniki czasowe: حِينَمَا (kiedy), لَمَّا (kiedy/gdy — bardziej literackie), إِذَا (kiedy/jeśli — przyszłość)."
+      },
+      {
+        "id": "pa_tc2",
+        "question": "_____ أكلنا، خرجنا (Po tym jak zjedliśmy, wyszliśmy)",
+        "translation": "(Po tym jak zjedliśmy, wyszliśmy)",
+        "options": [
+          "بَعْدَمَا",
+          "قَبْلَمَا",
+          "عِنْدَمَا",
+          "بَيْنَمَا"
+        ],
+        "correct": "بَعْدَمَا",
+        "explanation": "Poprawnie: 'بَعْدَمَا' (baʿdamā) = po tym jak. بَعْدَ (po) + مَا (co) = 'po tym co'. Po بَعْدَمَا — czas PRZESZŁY: بَعْدَمَا أكلنا (po tym jak zjedliśmy). Alternatywa: بَعْدَ أَنْ + czas teraźn. tryb łączący: بَعْدَ أَنْ نَأْكُلَ (po tym jak zjemy). Porównaj z polskim: 'po jedzeniu' (rzeczownik) lub 'po tym jak zjedliśmy' (zdanie)."
+      },
+      {
+        "id": "pa_tc3",
+        "question": "_____ كنتُ أدرسُ، رنَّ الهاتفُ (Podczas gdy uczyłem się, zadzwonił telefon)",
+        "translation": "(Podczas gdy uczyłem się, zadzwonił telefon)",
+        "options": [
+          "بَيْنَمَا",
+          "بَعْدَمَا",
+          "قَبْلَمَا",
+          "لِأَنَّ"
+        ],
+        "correct": "بَيْنَمَا",
+        "explanation": "Poprawnie: 'بَيْنَمَا' (baynamā) = podczas gdy/w czasie gdy. بَيْنَ (między) + مَا. Wyraża JEDNOCZESNOŚĆ dwóch czynności. Po بَيْنَمَا zwykle كَانَ + teraźniejszy (czas przeszły ciągły): بَيْنَمَا كُنْتُ أَدْرُسُ = podczas gdy uczyłem się. To odpowiednik polskiego 'podczas gdy' lub angielskiego 'while'. Alternatywa: فِيمَا (w tym czasie gdy)."
+      },
+      {
+        "id": "pa_tc4",
+        "question": "_____ تخرجَ، سافرَ (Zanim ukończył studia, podróżował)",
+        "translation": "(Zanim ukończył studia, podróżował)",
+        "options": [
+          "قَبْلَ أَنْ",
+          "بَعْدَ أَنْ",
+          "عِنْدَمَا",
+          "بَيْنَمَا"
+        ],
+        "correct": "قَبْلَ أَنْ",
+        "explanation": "Poprawnie: 'قَبْلَ أَنْ' (qabla an) = zanim. قَبْلَ (przed) + أَنْ + czasownik w trybie ŁĄCZĄCYM (منصوب): قَبْلَ أَنْ يَتَخَرَّجَ (zanim ukończył/ukończy). WAŻNE: po أَنْ czas. teraźniejszy z fathą na końcu: يَتَخَرَّجَ (nie يَتَخَرَّجُ). Alternatywna forma: قَبْلَمَا + czas przeszły: قَبْلَمَا تَخَرَّجَ. Obie poprawne, pierwsza bardziej formalna."
+      },
+      {
+        "id": "pa_tc5",
+        "question": "سأنتظرُ _____ تأتيَ (Będę czekał, aż przyjdziesz)",
+        "translation": "(Będę czekał, aż przyjdziesz)",
+        "options": [
+          "حَتَّى",
+          "لِأَنَّ",
+          "لَكِنَّ",
+          "عِنْدَمَا"
+        ],
+        "correct": "حَتَّى",
+        "explanation": "Poprawnie: 'حَتَّى' (ḥattā) = aż/dopóki. Po حَتَّى czas teraźniejszy w trybie łączącym (منصوب): حَتَّى تَأْتِيَ (aż przyjdziesz — z fathą). حَتَّى ma wiele funkcji: 1) spójnik celu: درسَ حَتَّى نَجَحَ (uczył się aż zdał); 2) przyimek: مِنَ الصباحِ حَتَّى المساءِ (od rana do wieczora); 3) partykuła: حَتَّى أنتَ! (nawet ty!). Kontekst rozstrzyga."
+      },
+      {
+        "id": "pa_tc6",
+        "question": "_____ رآها، أحبَّها (Gdy tylko ją zobaczył, pokochał ją)",
+        "translation": "(Gdy tylko ją zobaczył, pokochał ją)",
+        "options": [
+          "لَمَّا",
+          "لِأَنَّ",
+          "إِذَنْ",
+          "هَلْ"
+        ],
+        "correct": "لَمَّا",
+        "explanation": "Poprawnie: 'لَمَّا' (lammā) = gdy/gdy tylko. Spójnik czasowy wyrażający NATYCHMIASTOWOŚĆ — jedno wydarzenie nastąpiło zaraz po drugim. Po لَمَّا ZAWSZE czas przeszły: لَمَّا رَآهَا (gdy ją zobaczył). Różnica od عِنْدَمَا: لَمَّا podkreśla bezpośredni związek przyczynowo-skutkowy, عِنْدَمَا jest bardziej neutralne. لَمَّا jest też bardziej literackie."
+      },
+      {
+        "id": "pa_tc7",
+        "question": "أدرسُ كُلَّ يومٍ _____ أنجحَ (Uczę się codziennie, żeby zdać)",
+        "translation": "(Uczę się codziennie, żeby zdać)",
+        "options": [
+          "لِكَيْ",
+          "لَمَّا",
+          "بَيْنَمَا",
+          "قَبْلَمَا"
+        ],
+        "correct": "لِكَيْ",
+        "explanation": "Poprawnie: 'لِكَيْ' (likay) = żeby/aby. Spójnik celu (nie czasowy, ale często mylony z czasowymi). Po لِكَيْ czas teraźniejszy w trybie łączącym: لِكَيْ أَنْجَحَ (żeby zdać). Alternatywy wyrażenia celu: لِـ + czas. teraź. (لِأَنْجَحَ), كَيْ (aby), حَتَّى (aby/żeby), لِأَجْلِ أَنْ (w celu). W polskim: 'żeby/aby' + bezokolicznik lub czas przeszły."
+      },
+      {
+        "id": "pa_tc8",
+        "question": "_____ الأستاذُ الدرسَ، سألَ الطلابَ (Kiedy nauczyciel skończył lekcję, zapytał uczniów)",
+        "translation": "(Kiedy nauczyciel skończył lekcję, zapytał uczniów)",
+        "options": [
+          "حِينَمَا أَنْهَى",
+          "حَتَّى",
+          "لِأَنَّ",
+          "بِدُونِ"
+        ],
+        "correct": "حِينَمَا أَنْهَى",
+        "explanation": "Poprawnie: 'حِينَمَا' (ḥīnamā) = kiedy/w chwili gdy. حِين (chwila/pora) + مَا. Synonim عِنْدَمَا, ale nieco bardziej formalny. Po حِينَمَا czas przeszły: حِينَمَا أَنْهَى = kiedy zakończył. Inne warianty: حِينَ (bez مَا) + zdanie, في حِينِ أَنَّ (podczas gdy — formalne). Wszystkie spójniki z مَا: عِنْدَمَا, بَعْدَمَا, قَبْلَمَا, بَيْنَمَا, حِينَمَا."
+      },
+      {
+        "id": "pa_tc9",
+        "question": "سأتصلُ بك _____ أصلَ (Zadzwonię do ciebie, kiedy dotrę)",
+        "translation": "(Zadzwonię do ciebie, kiedy dotrę)",
+        "options": [
+          "عِنْدَمَا",
+          "لَمَّا",
+          "بَعْدَمَا",
+          "قَبْلَمَا"
+        ],
+        "correct": "عِنْدَمَا",
+        "explanation": "Poprawnie: 'عِنْدَمَا أَصِلَ' = kiedy dotrę. UWAGA: mimo że mówimy o PRZYSZŁOŚCI, po عِنْدَمَا w MSA czas przeszły LUB teraźniejszy (bez سَوْفَ/سَـ!): عِنْدَمَا أَصِلُ / عِنْدَمَا وَصَلْتُ. Nigdy: *عِنْدَمَا سَأَصِلُ. To jak w angielskim 'when I arrive' (nie *when I will arrive). لَمَّا odnosi się TYLKO do przeszłości — nie pasuje do przyszłych planów."
+      },
+      {
+        "id": "pa_tc10",
+        "question": "_____ يكبرَ، سيفهمُ (Kiedy dorośnie, zrozumie)",
+        "translation": "(Kiedy dorośnie, zrozumie)",
+        "options": [
+          "عِنْدَمَا",
+          "لَمَّا",
+          "مُنْذُ",
+          "إلَّا"
+        ],
+        "correct": "عِنْدَمَا",
+        "explanation": "Poprawnie: 'عِنْدَمَا يَكْبَرَ' = kiedy dorośnie. Dla zdarzeń przyszłych: عِنْدَمَا / إِذَا + czas. teraźniejszy (bez سَـ). إِذَا jest częściej używane dla przyszłości z elementem warunkowym: إِذَا كَبِرَ (jeśli/kiedy dorośnie). W zdaniu głównym: سَيَفْهَمُ (zrozumie — z سَـ). Różnica: عِنْدَمَا = pewność (kiedy), إِذَا = możliwość (jeśli/kiedy)."
+      },
+      {
+        "id": "pa_tc11",
+        "question": "لَمْ أَرَهُ _____ سافرَ (Nie widziałem go, odkąd wyjechał)",
+        "translation": "(Nie widziałem go, odkąd wyjechał)",
+        "options": [
+          "مُنْذُ أَنْ",
+          "حَتَّى",
+          "قَبْلَ أَنْ",
+          "بَعْدَ أَنْ"
+        ],
+        "correct": "مُنْذُ أَنْ",
+        "explanation": "Poprawnie: 'مُنْذُ أَنْ' (mundhu an) = odkąd. مُنْذُ (od/odkąd) + أَنْ + czas przeszły: مُنْذُ أَنْ سَافَرَ (odkąd wyjechał). مُنْذُ może być też przyimkiem: مُنْذُ سَنَةٍ (od roku), مُنْذُ الصباحِ (od rana). Synonim: مُذْ (skrócona forma, literacka). W polskim: 'od(ąd)', 'od czasu gdy'. Użycie z przyszłością jest rzadkie."
+      },
+      {
+        "id": "pa_tc12",
+        "question": "كُلَّمَا درسَ _____ (Za każdym razem gdy się uczył, zdawał)",
+        "translation": "(Za każdym razem gdy się uczył, zdawał)",
+        "options": [
+          "نجحَ",
+          "يَنْجَحُ",
+          "سَيَنْجَحُ",
+          "أَنْ يَنْجَحَ"
+        ],
+        "correct": "نجحَ",
+        "explanation": "Poprawnie: 'كُلَّمَا دَرَسَ نَجَحَ' = za każdym razem gdy się uczył, zdawał. كُلَّمَا (kullamā) = ilekroć/za każdym razem gdy. ZAWSZE z czasem PRZESZŁYM w OBU częściach zdania: كُلَّمَا + przeszły, ... przeszły. Nigdy: *كُلَّمَا يَدْرُسُ. To wyraża powtarzalność w przeszłości. W polskim: 'ilekroć/za każdym razem gdy' — podobna konstrukcja."
+      },
+      {
+        "id": "pa_tc13",
+        "question": "سأعملُ _____ أتقاعدَ (Będę pracował, dopóki nie przejdę na emeryturę)",
+        "translation": "(Będę pracował, dopóki nie przejdę na emeryturę)",
+        "options": [
+          "إِلَى أَنْ",
+          "مُنْذُ أَنْ",
+          "لِأَنَّ",
+          "بِمَا أَنَّ"
+        ],
+        "correct": "إِلَى أَنْ",
+        "explanation": "Poprawnie: 'إِلَى أَنْ' (ilā an) = dopóki (nie)/aż. إِلَى (do) + أَنْ + czas. teraź. łączący: إِلَى أَنْ أَتَقَاعَدَ (aż przejdę na emeryturę). Podobne do حَتَّى, ale إِلَى أَنْ podkreśla punkt KOŃCOWY, حَتَّى może wyrażać też cel. Inne: رَيْثَمَا (dopóki — literackie), مَا دَامَ (tak długo jak): مَا دُمْتُ حَيًّا (tak długo jak żyję)."
+      },
+      {
+        "id": "pa_tc14",
+        "question": "ما إِنْ جلسَ _____ قامَ (Ledwo usiadł, a już wstał)",
+        "translation": "(Ledwo usiadł, a już wstał)",
+        "options": [
+          "حَتَّى",
+          "لِأَنَّ",
+          "لَكِنَّ",
+          "إِذَنْ"
+        ],
+        "correct": "حَتَّى",
+        "explanation": "Poprawnie: 'مَا إِنْ جَلَسَ حَتَّى قَامَ' = Ledwo usiadł, a już wstał. Konstrukcja: مَا إِنْ + przeszły + حَتَّى + przeszły = 'ledwo... a już...'. Wyraża natychmiastową sekwencję. Alternatywa: مَا كَادَ يَجْلِسُ حَتَّى قَامَ (nie zdążył usiąść, a już wstał). To jeden z elegantszych zwrotów arabskiej stylistyki. W polskim: 'ledwo... a już...' / 'nie zdążył... gdy...'"
+      },
+      {
+        "id": "pa_tc15",
+        "question": "Który spójnik wyraża JEDNOCZESNOŚĆ?",
+        "translation": "(أي أداة تدل على التزامن؟)",
+        "options": [
+          "بَيْنَمَا (podczas gdy)",
+          "بَعْدَمَا (po tym jak)",
+          "قَبْلَمَا (zanim)",
+          "لِكَيْ (żeby)"
+        ],
+        "correct": "بَيْنَمَا (podczas gdy)",
+        "explanation": "Poprawnie: 'بَيْنَمَا' = podczas gdy — wyraża jednoczesność dwóch czynności. Podsumowanie spójników czasowych: JEDNOCZESNOŚĆ: بَيْنَمَا, فِيمَا; KOLEJNOŚĆ: بَعْدَمَا (po), قَبْلَمَا/قَبْلَ أَنْ (przed); PUNKT CZASOWY: عِنْدَمَا, حِينَمَا, لَمَّا (kiedy); GRANICA: حَتَّى, إِلَى أَنْ (aż); POCZĄTEK: مُنْذُ أَنْ (odkąd); POWTARZALNOŚĆ: كُلَّمَا (ilekroć); CEL: لِكَيْ, لِـ (żeby)."
+      }
+    ]
+  },
+  {
+    "key": "adverbs_arabic",
+    "name": "Przysłówki arabskie (الظروف)",
+    "description": "ظروف الزمان والمكان والحال في العربية",
+    "iconName": "text.word.spacing",
+    "color": "#22d3ee",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pa_adv1",
+        "question": "ذهبتُ _____ (Poszedłem wczoraj)",
+        "translation": "(Poszedłem wczoraj)",
+        "options": [
+          "أَمْسِ",
+          "غَدًا",
+          "الآنَ",
+          "دَائِمًا"
+        ],
+        "correct": "أَمْسِ",
+        "explanation": "Poprawnie: 'أَمْسِ' (amsi) = wczoraj. To przysłówek czasu (ظرف زمان). Nieodmienny, kończy się na kasrze (مبني على الكسر). Z rodzajnikiem: الأَمْسِ (literacka forma). UWAGA: 'أَمْسِ' bez الـ jest nieokreślony i nieodmienny; z الـ staje się odmienny. W polskim 'wczoraj' też jest nieodmienne. Powiązane: أَوَّلَ أَمْسِ (przedwczoraj)."
+      },
+      {
+        "id": "pa_adv2",
+        "question": "سأسافرُ _____ (Pojadę jutro)",
+        "translation": "(Pojadę jutro)",
+        "options": [
+          "غَدًا",
+          "أَمْسِ",
+          "الآنَ",
+          "هُنَا"
+        ],
+        "correct": "غَدًا",
+        "explanation": "Poprawnie: 'غَدًا' (ghadan) = jutro. Przysłówek czasu w bierniku (منصوب) — tanwin fatha (ً). Wiele przysłówków arabskich to rzeczowniki w BIERNIKU: غَدًا (jutro), صَبَاحًا (rano), مَسَاءً (wieczorem), لَيْلاً (nocą). To tzw. ظرف زمان lub مفعول فيه — biernik wyraża okoliczność czasową. W polskim: 'jutro, rano, wieczorem' — też nieodmienne."
+      },
+      {
+        "id": "pa_adv3",
+        "question": "هو يدرسُ _____ (On uczy się teraz)",
+        "translation": "(On uczy się teraz)",
+        "options": [
+          "الآنَ",
+          "غَدًا",
+          "أَمْسِ",
+          "أَبَدًا"
+        ],
+        "correct": "الآنَ",
+        "explanation": "Poprawnie: 'الآنَ' (al-āna) = teraz. Przysłówek czasu, nieodmienny (مبني على الفتح). Zawsze z rodzajnikiem الـ. Pochodzi od أَوَان (pora/czas). Synonimy: حَالِيًّا (obecnie — od حَال = stan), في الوقتِ الحاضرِ (w chwili obecnej — formalnie). W polskim: 'teraz/obecnie' — też nieodmienne."
+      },
+      {
+        "id": "pa_adv4",
+        "question": "هو _____ مشغول (On jest zawsze zajęty)",
+        "translation": "(On jest zawsze zajęty)",
+        "options": [
+          "دَائِمًا",
+          "أَحْيَانًا",
+          "نَادِرًا",
+          "أَبَدًا"
+        ],
+        "correct": "دَائِمًا",
+        "explanation": "Poprawnie: 'دَائِمًا' (dāʾiman) = zawsze. Od دَائِم (trwały/ciągły — imiesłów czynny od دَامَ). W bierniku jako przysłówek. Hierarchia częstotliwości: دَائِمًا (zawsze) > غَالِبًا (zazwyczaj) > كَثِيرًا (często) > أَحْيَانًا (czasami) > نَادِرًا (rzadko) > أَبَدًا (nigdy — z przeczeniem). W polskim podobna hierarchia: zawsze > zwykle > często > czasami > rzadko > nigdy."
+      },
+      {
+        "id": "pa_adv5",
+        "question": "الكتاب _____ (Książka jest tutaj)",
+        "translation": "(Książka jest tutaj)",
+        "options": [
+          "هُنَا",
+          "هُنَاكَ",
+          "فَوْقَ",
+          "تَحْتَ"
+        ],
+        "correct": "هُنَا",
+        "explanation": "Poprawnie: 'هُنَا' (hunā) = tutaj. Przysłówek MIEJSCA (ظرف مكان). Nieodmienny. Porównaj: هُنَا (tu) vs. هُنَاكَ/هُنَالِكَ (tam). Para ta odpowiada polskiemu 'tu/tam'. Inne przysłówki miejsca: فَوْقَ (nad/na górze), تَحْتَ (pod/na dole), أَمَامَ (przed/z przodu), وَرَاءَ/خَلْفَ (za/z tyłu), بَيْنَ (między), حَوْلَ (wokół)."
+      },
+      {
+        "id": "pa_adv6",
+        "question": "يتكلمُ العربيةَ _____ (Mówi po arabsku biegle/dobrze)",
+        "translation": "(Mówi po arabsku biegle)",
+        "options": [
+          "جَيِّدًا",
+          "جَيِّدٌ",
+          "الجَيِّد",
+          "جَوَّدَ"
+        ],
+        "correct": "جَيِّدًا",
+        "explanation": "Poprawnie: 'جَيِّدًا' (jayyidan) = dobrze. Przymiotnik w BIERNIKU jako przysłówek sposobu (حال). To fundamentalna reguła: w arabskim nie ma osobnej klasy przysłówków sposobu — przymiotnik + tanwin fatha = przysłówek! سَرِيعًا (szybko), بَطِيئًا (wolno), كَثِيرًا (dużo), قَلِيلاً (mało). W polskim: przymiotnik + '-o/-e' (szybko, dobrze)."
+      },
+      {
+        "id": "pa_adv7",
+        "question": "يذهبُ _____ إلى المكتبة (Chodzi czasami do biblioteki)",
+        "translation": "(Chodzi czasami do biblioteki)",
+        "options": [
+          "أَحْيَانًا",
+          "دَائِمًا",
+          "أَبَدًا",
+          "فَوْرًا"
+        ],
+        "correct": "أَحْيَانًا",
+        "explanation": "Poprawnie: 'أَحْيَانًا' (aḥyānan) = czasami. L. mn. od حِين (pora/czas) w bierniku. Dosłownie: 'w pewnych porach'. Porównaj: في بَعْضِ الأَحْيَانِ (w niektórych czasach — formalniejsze). Pozycja przysłówka w zdaniu: po czasowniku: يَذْهَبُ أَحْيَانًا, lub na początku: أَحْيَانًا يَذْهَبُ (z emfazą). W polskim: 'czasami/niekiedy' — pozycja też swobodna."
+      },
+      {
+        "id": "pa_adv8",
+        "question": "الكتاب _____ الطاولة (Książka jest na stole)",
+        "translation": "(Książka jest na stole)",
+        "options": [
+          "فَوْقَ",
+          "تَحْتَ",
+          "أَمَامَ",
+          "وَرَاءَ"
+        ],
+        "correct": "فَوْقَ",
+        "explanation": "Poprawnie: 'فَوْقَ' (fawqa) = nad/na. Przysłówek miejsca używany jako przyimek. فَوْقَ + dopełniacz: فَوْقَ الطاولةِ (na stole). UWAGA: فَوْقَ to ظرف مكان (okolicznik miejsca) pełniący funkcję شبه جملة (quasi-zdania). W polskim: 'na stole' = przyimek 'na' + miejscownik. Arabski nie HAS miejscownika — używa dopełniacza po przysłówkach miejsca."
+      },
+      {
+        "id": "pa_adv9",
+        "question": "لَنْ أفعلَ ذلك _____ (Nigdy tego nie zrobię)",
+        "translation": "(Nigdy tego nie zrobię)",
+        "options": [
+          "أَبَدًا",
+          "دَائِمًا",
+          "أَحْيَانًا",
+          "الآنَ"
+        ],
+        "correct": "أَبَدًا",
+        "explanation": "Poprawnie: 'أَبَدًا' (abadan) = nigdy (z przeczeniem) / kiedykolwiek. Od أَبَد (wieczność). UWAGA: أَبَدًا zmienia znaczenie w zależności od kontekstu: z PRZECZENIEM = nigdy: لَنْ أَفْعَلَ أَبَدًا (nigdy nie zrobię); BEZ przeczenia = zawsze/na wieki: خَالِدِينَ فِيهَا أَبَدًا (przebywając w nim wiecznie — koraniczne). W polskim 'nigdy' jest zawsze negatywne."
+      },
+      {
+        "id": "pa_adv10",
+        "question": "جلسَ _____ أخيه (Usiadł obok brata)",
+        "translation": "(Usiadł obok brata)",
+        "options": [
+          "بِجَانِبِ",
+          "فَوْقَ",
+          "تَحْتَ",
+          "وَرَاءَ"
+        ],
+        "correct": "بِجَانِبِ",
+        "explanation": "Poprawnie: 'بِجَانِبِ' (bijānibi) = obok/przy boku. جَانِب (bok/strona) + بِـ (w/przy). To wyrażenie przyimkowe pełniące funkcję przysłówka miejsca. Inne: بِالقُرْبِ مِنْ (blisko), بِالبَعِيدِ عَنْ (daleko od), إِلَى جَانِبِ (obok/oprócz). W polskim 'obok' to przyimek; w arabskim często wyrażenie z rzeczownikiem: جَانِب = strona/bok."
+      },
+      {
+        "id": "pa_adv11",
+        "question": "Jak powiedzieć 'szybko' po arabsku?",
+        "translation": "(كيف نقول بسرعة؟)",
+        "options": [
+          "بِسُرْعَةٍ / سَرِيعًا",
+          "سَرِيعٌ",
+          "السَّرِيعُ",
+          "أَسْرَعُ"
+        ],
+        "correct": "بِسُرْعَةٍ / سَرِيعًا",
+        "explanation": "Dwa sposoby tworzenia przysłówków sposobu: 1) بِـ + masdar: بِسُرْعَةٍ (z szybkością = szybko), بِهُدُوءٍ (ze spokojem = spokojnie); 2) przymiotnik + tanwin fatha: سَرِيعًا (szybko), هَادِئًا (spokojnie). Oba poprawne! Forma z بِـ jest bardziej formalna. W polskim: 'szybko' (przysłówek), 'z szybkością' (wyrażenie przyimkowe) — też oba możliwe."
+      },
+      {
+        "id": "pa_adv12",
+        "question": "وصلَ _____ (Przybył natychmiast/od razu)",
+        "translation": "(Przybył natychmiast)",
+        "options": [
+          "فَوْرًا",
+          "غَدًا",
+          "أَمْسِ",
+          "بَعْدَ ذلك"
+        ],
+        "correct": "فَوْرًا",
+        "explanation": "Poprawnie: 'فَوْرًا' (fawran) = natychmiast/od razu. Od فَوْر (moment/natychmiast). W bierniku jako przysłówek. Synonimy: حَالاً (od razu), في الحالِ (natychmiast), مُبَاشَرَةً (bezpośrednio/natychmiast), تَوًّا (właśnie teraz). Zwrot: عَلَى الفَوْرِ (natychmiast — z przyimkiem عَلَى). W polskim: 'natychmiast/zaraz/od razu'."
+      },
+      {
+        "id": "pa_adv13",
+        "question": "يأتي _____ (Przychodzi codziennie)",
+        "translation": "(Przychodzi codziennie)",
+        "options": [
+          "يَوْمِيًّا",
+          "أُسْبُوعِيًّا",
+          "شَهْرِيًّا",
+          "سَنَوِيًّا"
+        ],
+        "correct": "يَوْمِيًّا",
+        "explanation": "Poprawnie: 'يَوْمِيًّا' (yawmiyyan) = codziennie. Od يَوْم (dzień) + نسبة (-iyy) + tanwin fatha. Przysłówki częstotliwości przez نسبة: يَوْمِيًّا (codziennie), أُسْبُوعِيًّا (co tydzień), شَهْرِيًّا (co miesiąc), سَنَوِيًّا (co rok). Alternatywa: كُلَّ يَوْمٍ (każdego dnia), كُلَّ أُسْبُوعٍ (co tydzień). Obie formy popularne w MSA."
+      },
+      {
+        "id": "pa_adv14",
+        "question": "هو _____ غنيٌّ (On jest bardzo bogaty)",
+        "translation": "(On jest bardzo bogaty)",
+        "options": [
+          "جِدًّا",
+          "جِدٌّ",
+          "أَجَدُّ",
+          "مُجِدٌّ"
+        ],
+        "correct": "جِدًّا",
+        "explanation": "Poprawnie: 'جِدًّا' (jiddan) = bardzo. Jeden z najczęstszych przysłówków. Stoi PO przymiotniku: غَنِيٌّ جِدًّا (bardzo bogaty), كَبِيرٌ جِدًّا (bardzo duży). UWAGA: 'مُجِدٌّ' = pilny/pracowity (imiesłów czynny od أَجَدَّ IV) — to zupełnie inne słowo! Alternatywy 'bardzo': لِلْغَايَةِ (niezwykle), كَثِيرًا (bardzo — z czasownikami), بِشَكْلٍ كَبِيرٍ (w dużym stopniu)."
+      },
+      {
+        "id": "pa_adv15",
+        "question": "Który wyraz jest przysłówkiem MIEJSCA?",
+        "translation": "(أي كلمة ظرف مكان؟)",
+        "options": [
+          "وَرَاءَ (za/z tyłu)",
+          "غَدًا (jutro)",
+          "دَائِمًا (zawsze)",
+          "فَوْرًا (natychmiast)"
+        ],
+        "correct": "وَرَاءَ (za/z tyłu)",
+        "explanation": "Poprawnie: 'وَرَاءَ' (warāʾa) = za/z tyłu — przysłówek MIEJSCA (ظرف مكان). Pozostałe to przysłówki CZASU (ظرف زمان): غَدًا (jutro), lub sposobu/częstotliwości: دَائِمًا (zawsze), فَوْرًا (natychmiast). Przysłówki miejsca: فَوْقَ (nad), تَحْتَ (pod), أَمَامَ (przed), وَرَاءَ/خَلْفَ (za), يَمِينَ (prawo), يَسَارَ/شِمَالَ (lewo), بَيْنَ (między)."
+      }
+    ]
+  },
+  {
+    "key": "object_pronouns_attached",
+    "name": "Zaimki dopełnieniowe dołączane",
+    "description": "ضمائر المفعول المتصلة بالأفعال",
+    "iconName": "link",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pa_opa1",
+        "question": "رأيتُ_____ (Widziałem go)",
+        "translation": "(Widziałem go)",
+        "options": [
+          "ـهُ",
+          "ـها",
+          "ـكَ",
+          "ـي"
+        ],
+        "correct": "ـهُ",
+        "explanation": "Poprawnie: 'رَأَيْتُهُ' (raʾaytuhu) = widziałem go. Zaimek dołączany ـهُ (-hu) = go/jego. W arabskim zaimki dopełnieniowe DOŁĄCZANE SIĘ do końca czasownika jako sufiksy. Nie stoją osobno jak w polskim! Pełna lista: ـنِي (mnie), ـكَ (cię m.), ـكِ (cię ż.), ـهُ (go), ـهَا (ją), ـنَا (nas), ـكُمْ (was), ـهُمْ (ich)."
+      },
+      {
+        "id": "pa_opa2",
+        "question": "ساعدتُ_____ (Pomogłem jej)",
+        "translation": "(Pomogłem jej)",
+        "options": [
+          "ـهَا",
+          "ـهُ",
+          "ـكَ",
+          "ـنَا"
+        ],
+        "correct": "ـهَا",
+        "explanation": "Poprawnie: 'سَاعَدْتُهَا' (sāʿadtuhā) = pomogłem jej. ـهَا (-hā) = ją/jej. WAŻNE: po kasrze lub ي: ـهُ zmienia się na ـهِ: فِيهِ (w nim), بِهِ (z/przez niego). Ale ـهَا NIE zmienia się: فِيهَا (w niej), بِهَا (z/przez nią). Ta asymetria dotyczy tylko ـهُ → ـهِ. W polskim: 'ją/jej/nią' — trzy formy zależnie od przypadka. W arabskim: zawsze ـهَا."
+      },
+      {
+        "id": "pa_opa3",
+        "question": "هل تعرفُ_____؟ (Czy znasz mnie?)",
+        "translation": "(Czy znasz mnie?)",
+        "options": [
+          "ـنِي",
+          "ـكَ",
+          "ـهُ",
+          "ـنَا"
+        ],
+        "correct": "ـنِي",
+        "explanation": "Poprawnie: 'هَلْ تَعْرِفُنِي؟' (hal taʿrifunī?) = Czy znasz mnie? ـنِي (-nī) = mnie. UWAGA: w trybie rozkazującym i z بعض الأفعال: ـنِي (pełna forma) lub ـنْ (skrócona, rzadka). Po nun energetycznym: ـنَّنِي (podwójna nun). Porównaj polski: 'mnie/mi' (dwie formy zależnie od kontekstu). Arabski: zawsze ـنِي po czasownikach."
+      },
+      {
+        "id": "pa_opa4",
+        "question": "سأزورُ_____ غداً (Odwiedzę cię jutro — do mężczyzny)",
+        "translation": "(Odwiedzę cię jutro — do mężczyzny)",
+        "options": [
+          "ـكَ",
+          "ـكِ",
+          "ـهُ",
+          "ـكُمْ"
+        ],
+        "correct": "ـكَ",
+        "explanation": "Poprawnie: 'سَأَزُورُكَ' (saʾazūruka) = odwiedzę cię. ـكَ (-ka) = cię (m.). WAŻNE: rozróżnienie płci: ـكَ (cię m.) vs. ـكِ (cię ż.). W polskim 'cię' jest jednakowe dla obu płci! W arabskim KAŻDY zaimek 2. osoby rozróżnia płeć: أَنْتَ/ـكَ (m.) vs. أَنْتِ/ـكِ (ż.). W l. mn.: ـكُمْ (was m./mieszane), ـكُنَّ (was ż.)."
+      },
+      {
+        "id": "pa_opa5",
+        "question": "المعلم علَّمَ_____ (Nauczyciel nauczył nas)",
+        "translation": "(Nauczyciel nauczył nas)",
+        "options": [
+          "ـنَا",
+          "ـنِي",
+          "ـهُمْ",
+          "ـكُمْ"
+        ],
+        "correct": "ـنَا",
+        "explanation": "Poprawnie: 'عَلَّمَنَا' (ʿallamanā) = nauczył nas. ـنَا (-nā) = nas. UWAGA: ـنَا jest identyczne w formie z końcówką podmiotu 1. os. l. mn.! عَلَّمْنَا = my nauczyliśmy (ـنَا jako podmiot), عَلَّمَنَا = on nauczył nas (ـنَا jako dopełnienie). Różnica: samogłoska PRZED ـنَا: sukun (عَلَّمْنَا — my) vs. fatha (عَلَّمَنَا — nas). Subtélne, ale kluczowe!"
+      },
+      {
+        "id": "pa_opa6",
+        "question": "الأستاذ سألَ_____ (Profesor zapytał ich m.)",
+        "translation": "(Profesor zapytał ich)",
+        "options": [
+          "ـهُمْ",
+          "ـهُنَّ",
+          "ـنَا",
+          "ـكُمْ"
+        ],
+        "correct": "ـهُمْ",
+        "explanation": "Poprawnie: 'سَأَلَهُمْ' (saʾalahum) = zapytał ich. ـهُمْ (-hum) = ich (m./mieszane). Po kasrze: ـهِمْ: بِهِمْ (z nimi), فِيهِمْ (wśród nich). Pełna lista 3. os.: ـهُ (go), ـهَا (ją), ـهُمَا (ich dwoje), ـهُمْ (ich m.), ـهُنَّ (ich ż.). Forma dualis ـهُمَا jest unikalna dla arabskiego — nie istnieje w polskim."
+      },
+      {
+        "id": "pa_opa7",
+        "question": "أحبُّ_____ (Kocham cię — do kobiety)",
+        "translation": "(Kocham cię — do kobiety)",
+        "options": [
+          "ـكِ",
+          "ـكَ",
+          "ـهَا",
+          "ـنِي"
+        ],
+        "correct": "ـكِ",
+        "explanation": "Poprawnie: 'أُحِبُّكِ' (uḥibbuki) = kocham cię (ż.). ـكِ (-ki) = cię (ż.). Do mężczyzny: أُحِبُّكَ (uḥibbuka). UWAGA na wymowę: أُحِبُّ to forma I z podwojeniem (rdzeń ح-ب-ب, مضعّف). Zaimek dołączany przychodzi PO podwojeniu: أُحِبُّ + كِ. Jeśli dodajemy dwa zaimki (pośredni + bezpośredni): أَعْطَيْتُكِهَا (dałem ci ją) — rzadkie, ale poprawne."
+      },
+      {
+        "id": "pa_opa8",
+        "question": "Dwa zaimki dołączane: 'أَعْطَانِيهِ' znaczy:",
+        "translation": "(ماذا يعني أعطانيه؟)",
+        "options": [
+          "Dał mi go/to",
+          "Dał mu mnie",
+          "Dałem mu to",
+          "Dali nam go"
+        ],
+        "correct": "Dał mi go/to",
+        "explanation": "Poprawnie: 'أَعْطَانِيهِ' = dał mi go. أَعْطَى (dał) + نِي (mi) + هِ (go). Kolejność: BLIŻSZY zaimek (komu?) + DALSZY (co?). Reguła kolejności: 1) sufiks 1. os. przed 2. os. przed 3. os; 2) sufiks oznaczający osobę przed sufiksem oznaczającym rzecz. W polskim: 'dał mi go' — dwa osobne słowa. W arabskim: wszystko w jednym wyrazie!"
+      },
+      {
+        "id": "pa_opa9",
+        "question": "إِنَّ_____ مجتهدٌ (Zaprawdę, on jest pilny)",
+        "translation": "(Zaprawdę, on jest pilny)",
+        "options": [
+          "ـهُ",
+          "هُوَ",
+          "ـهِ",
+          "إِيَّاهُ"
+        ],
+        "correct": "ـهُ",
+        "explanation": "Poprawnie: 'إِنَّهُ' (innahu) = zaprawdę on... Zaimek dołączany po إِنَّ: إِنَّنِي (zaprawdę ja), إِنَّكَ (ty m.), إِنَّهُ (on), إِنَّهَا (ona), إِنَّنَا (my), إِنَّهُمْ (oni). UWAGA: po إِنَّ zaimek jest w BIERNIKU (jako اسم إنّ), nie mianowniku! Dlatego forma dołączana, nie wolnostojąca (هُوَ). Porównaj: هُوَ مُجْتَهِدٌ (on jest pilny) vs. إِنَّهُ مُجْتَهِدٌ (zaprawdę, on jest pilny)."
+      },
+      {
+        "id": "pa_opa10",
+        "question": "Zaimek osobny w bierniku (إِيَّاهُ) używamy:",
+        "translation": "(متى نستخدم إيّاه؟)",
+        "options": [
+          "Gdy chcemy podkreślić dopełnienie (emfaza)",
+          "Zawsze zamiast ـهُ",
+          "Tylko w pytaniach",
+          "Tylko w przeczeniach"
+        ],
+        "correct": "Gdy chcemy podkreślić dopełnienie (emfaza)",
+        "explanation": "Poprawnie: إِيَّاهُ to WOLNOSTOJĄCY zaimek w bierniku — używany dla EMFAZY lub gdy zaimek stoi PRZED czasownikiem. Normalnie: رَأَيْتُهُ (widziałem go). Emfatycznie: إِيَّاهُ رَأَيْتُ (JEGO widziałem!). Lista: إِيَّايَ (mnie), إِيَّاكَ (ciebie m.), إِيَّاهُ (jego), إِيَّاهَا (ją), إِيَّانَا (nas), إِيَّاكُمْ (was), إِيَّاهُمْ (ich). Koraniczne: إِيَّاكَ نَعْبُدُ (Ciebie czcimy)."
+      },
+      {
+        "id": "pa_opa11",
+        "question": "كتبتُ لَ_____ رسالةً (Napisałem mu list)",
+        "translation": "(Napisałem mu list)",
+        "options": [
+          "ـهُ",
+          "ـها",
+          "ـي",
+          "ـنَا"
+        ],
+        "correct": "ـهُ",
+        "explanation": "Poprawnie: 'كَتَبْتُ لَهُ رِسَالَةً' = napisałem mu list. Tu ـهُ dołącza się do PRZYIMKA لَـ (dla/do): لَهُ = dla niego/mu. Zaimki dołączane łączą się też z przyimkami: لِي (mi), لَكَ (tobie m.), لَهُ (jemu), لَهَا (jej), لَنَا (nam), لَكُمْ (wam), لَهُمْ (im). UWAGA: لِي (z kasrą) ale لَهُ (z fathą) — przyimek zmienia samogłoskę!"
+      },
+      {
+        "id": "pa_opa12",
+        "question": "أخبرَ_____ بالنتيجة (Poinformował ją o wyniku)",
+        "translation": "(Poinformował ją o wyniku)",
+        "options": [
+          "ـهَا",
+          "ـهُ",
+          "إِيَّاهَا",
+          "ـكِ"
+        ],
+        "correct": "ـهَا",
+        "explanation": "Poprawnie: 'أَخْبَرَهَا' (akhbarahā) = poinformował ją. أَخْبَرَ (forma IV od خ-ب-ر = informowanie) + هَا (ją). Konstrukcja: أَخْبَرَ + osoba (مفعول به أول) + بِـ + treść (مفعول به ثاني): أَخْبَرَهَا بِالنَّتِيجَةِ. Niektóre czasowniki biorą DWA dopełnienia: أَعْطَى (dał), عَلَّمَ (nauczył), أَخْبَرَ (poinformował). Drugie dopełnienie może być zdaniem: أَخْبَرَهَا أَنَّ... (poinformował ją, że...)."
+      },
+      {
+        "id": "pa_opa13",
+        "question": "لا تنسَ_____ (Nie zapomnij o nas!)",
+        "translation": "(Nie zapomnij o nas!)",
+        "options": [
+          "ـنَا",
+          "ـنِي",
+          "ـهُمْ",
+          "ـكُمْ"
+        ],
+        "correct": "ـنَا",
+        "explanation": "Poprawnie: 'لَا تَنْسَنَا' (lā tansanā) = nie zapomnij o nas. Rozkaz przeczony: لَا + czas teraźniejszy w مجزوم: تَنْسَ (od نَسِيَ — ناقص, ي odpada w مجزوم). Zaimek ـنَا dołączony na końcu. UWAGA: نَسِيَ jest przechodni: نَسِيتُكَ (zapomniałem cię), nie *نَسِيتُ عَنْكَ. W polskim: 'zapomnieć O kimś' (z przyimkiem), w arabskim: 'zapomnieć kogoś' (bez przyimka)."
+      },
+      {
+        "id": "pa_opa14",
+        "question": "Co znaczy 'سأريكَ'?",
+        "translation": "(ماذا يعني سأريكَ؟)",
+        "options": [
+          "Pokażę ci (m.)",
+          "Zobaczyłem cię",
+          "Widzisz mnie",
+          "Pokażę jej"
+        ],
+        "correct": "Pokażę ci (m.)",
+        "explanation": "Poprawnie: 'سَأُرِيكَ' = pokażę ci. Rozbior: سَـ (przyszłość) + أُرِي (czas teraź. formy IV od ر-أ-ي, 1. os.) + كَ (tobie m.). أَرَى (forma IV) = pokazał (kauzatywne od رَأَى = zobaczyć). Teraźniejszy: يُرِي (pokazuje). Z zaimkiem: سَأُرِيكَ (pokażę ci m.), سَأُرِيكِ (ci ż.), سَأُرِيهِ (mu). Wielowarstwowe: przyszłość + forma IV + zaimek — typowe dla MSA."
+      },
+      {
+        "id": "pa_opa15",
+        "question": "Które zdanie ma BŁĘDNĄ kolejność zaimków?",
+        "translation": "(أي جملة خاطئة في ترتيب الضمائر؟)",
+        "options": [
+          "أَعْطَاهُنِي (dał go mi)",
+          "أَعْطَانِيهِ (dał mi go)",
+          "سَأَلَنِي (zapytał mnie)",
+          "رَآهُمْ (widział ich)"
+        ],
+        "correct": "أَعْطَاهُنِي (dał go mi)",
+        "explanation": "Poprawnie: 'أَعْطَاهُنِي' jest BŁĘDNE — zaimek osoby bliższej (نِي = mi) musi stać PRZED zaimkiem rzeczy (هُ = go): أَعْطَانِيهِ (dał mi go), NIE *أَعْطَاهُنِي. Reguła kolejności: 1. os. > 2. os. > 3. os.; osoba > rzecz. Wyjątek: jeśli oba zaimki to 3. os., kolejność jest swobodniejsza, ale zwyczajowo dopełnienie bliższe (komu?) przed dalszym (co?)."
+      }
+    ]
+  },
+  {
+    "key": "hal_circumstantial",
+    "name": "Okolicznik stanu (الحال)",
+    "description": "الجملة الحالية - وصف حال الفاعل أو المفعول",
+    "iconName": "figure.walk",
+    "color": "#60a5fa",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pa_hal1",
+        "question": "جاء الولدُ _____ (Chłopiec przyszedł biegnąc)",
+        "translation": "(Chłopiec przyszedł biegnąc)",
+        "options": [
+          "رَاكِضًا",
+          "رَاكِضٌ",
+          "الرَّاكِضُ",
+          "يَرْكُضُ"
+        ],
+        "correct": "رَاكِضًا",
+        "explanation": "Poprawnie: 'رَاكِضًا' (rākiḍan) = biegnąc. To حال (ḥāl) = okolicznik stanu — opisuje STAN podmiotu w momencie czynności. Reguły حال: 1) BIERNIK (منصوب) — zawsze tanwin fatha; 2) NIEOKREŚLONY — bez الـ; 3) Zgadza się z opisywanym w rodzaju i liczbie: رَاكِضًا (m.), رَاكِضَةً (ż.). W polskim: imiesłów 'biegnąc' lub wyrażenie 'w biegu'."
+      },
+      {
+        "id": "pa_hal2",
+        "question": "رأيتُ الطفلَ _____ (Widziałem dziecko śpiące)",
+        "translation": "(Widziałem dziecko śpiące)",
+        "options": [
+          "نَائِمًا",
+          "نَائِمٌ",
+          "النَّائِمُ",
+          "نَوْمًا"
+        ],
+        "correct": "نَائِمًا",
+        "explanation": "Poprawnie: 'نَائِمًا' (nāʾiman) = śpiące (okolicznik stanu). Tu حال opisuje DOPEŁNIENIE (الطفلَ), nie podmiot! Reguła: حال może opisywać podmiot LUB dopełnienie: جاءَ الولدُ رَاكِضًا (podmiot biegnąc), رأيتُ الطفلَ نائِمًا (dopełnienie — śpiące). Skąd wiemy, kogo opisuje? Z SENSU zdania. W polskim: 'widziałem dziecko śpiące' — przymiotnik przy dopełnieniu."
+      },
+      {
+        "id": "pa_hal3",
+        "question": "خرجتْ _____ (Ona wyszła uśmiechnięta)",
+        "translation": "(Ona wyszła uśmiechnięta)",
+        "options": [
+          "مُبْتَسِمَةً",
+          "مُبْتَسِمًا",
+          "مُبْتَسِمَةٌ",
+          "الْمُبْتَسِمَةُ"
+        ],
+        "correct": "مُبْتَسِمَةً",
+        "explanation": "Poprawnie: 'مُبْتَسِمَةً' (mubtasimatan) = uśmiechnięta. حال musi się zgadzać z opisywanym w RODZAJU: podmiot هي → مُبْتَسِمَةً (ż. + biernik). Gdyby podmiot był męski: مُبْتَسِمًا (m. + biernik). مُبْتَسِم = uśmiechnięty (imiesłów czynny formy VIII od ب-س-م = uśmiech). W polskim: 'uśmiechnięta' — przymiotnik w mianowniku, w arabskim: حال w BIERNIKU."
+      },
+      {
+        "id": "pa_hal4",
+        "question": "جلسَ _____ يقرأُ (Usiadł czytając — zdanie حالية)",
+        "translation": "(Usiadł, czytając)",
+        "options": [
+          "وَهُوَ",
+          "وَهِيَ",
+          "لِأَنَّ",
+          "حَتَّى"
+        ],
+        "correct": "وَهُوَ",
+        "explanation": "Poprawnie: 'جَلَسَ وَهُوَ يَقْرَأُ' = usiadł, a on czytał (= usiadł czytając). To جملة حالية = zdanie okolicznikowe stanu. Wprowadzane przez وَ (waw al-ḥāl): وَ + zaimek + zdanie nominalne/werbalne. WAŻNE: ta وَ NIE jest spójnikiem 'i' — to واو الحال (waw stanu). Inne przykłady: دخلَ وَهُوَ يبكي (wszedł płacząc), خرجتْ وَهِيَ تضحكُ (wyszła śmiejąc się)."
+      },
+      {
+        "id": "pa_hal5",
+        "question": "دخلَ البيتَ _____ بابُه مفتوحٌ (Wszedł do domu, którego drzwi były otwarte)",
+        "translation": "(Wszedł do domu, a jego drzwi były otwarte)",
+        "options": [
+          "وَ",
+          "لِأَنَّ",
+          "حِينَمَا",
+          "ثُمَّ"
+        ],
+        "correct": "وَ",
+        "explanation": "Poprawnie: 'دَخَلَ البيتَ وَبابُهُ مَفْتوحٌ' = wszedł do domu, a drzwi były otwarte. Tu واو الحال + zdanie nominalne (بابُهُ مفتوحٌ) opisuje STAN domu, nie podmiotu. حال może opisywać też okoliczności towarzyszące, nie tylko stan osoby. To jak w polskim: imiesłów przysłówkowy lub zdanie wtrącone: 'wszedł do domu z otwartymi drzwiami'."
+      },
+      {
+        "id": "pa_hal6",
+        "question": "شربتُ الشايَ _____ (Wypiłem herbatę gorącą)",
+        "translation": "(Wypiłem herbatę gorącą)",
+        "options": [
+          "سَاخِنًا",
+          "سَاخِنٌ",
+          "السَّاخِنُ",
+          "سُخُونَةً"
+        ],
+        "correct": "سَاخِنًا",
+        "explanation": "Poprawnie: 'سَاخِنًا' (sākhinan) = gorącą (حال opisujący stan herbaty). Biernik. Tu حال opisuje dopełnienie (الشاي): w jakim stanie była herbata, gdy ją pił? Gorąca. Porównaj z نعت (przydawką): شربتُ الشايَ السَّاخِنَ = wypiłem gorącą herbatę (przydawka — z الـ, w bierniku). Różnica: حال = stan tymczasowy, نعت = cecha stała."
+      },
+      {
+        "id": "pa_hal7",
+        "question": "عادَ مِنَ العملِ _____ (Wrócił z pracy zmęczony)",
+        "translation": "(Wrócił z pracy zmęczony)",
+        "options": [
+          "مُتْعَبًا",
+          "مُتْعَبٌ",
+          "التَّعَبُ",
+          "تَعِبًا"
+        ],
+        "correct": "مُتْعَبًا",
+        "explanation": "Poprawnie: 'مُتْعَبًا' (mutʿaban) = zmęczony (حال). Od أَتْعَبَ (forma IV = zmęczyć) → مُتْعَب (imiesłów bierny IV = zmęczony). Porównaj: تَعِبَ (forma I = zmęczyć się) → تَعِبٌ (zmęczony — przymiotnik). Obie formy poprawne jako حال: مُتْعَبًا (bardziej = 'wyczerpany przez coś') vs. تَعِبًا (bardziej = 'czujący zmęczenie'). Subtelna różnica kauzatywna!"
+      },
+      {
+        "id": "pa_hal8",
+        "question": "Które zdanie zawiera حال w formie zdania?",
+        "translation": "(أي جملة فيها حال جملة؟)",
+        "options": [
+          "جاءَ وَهُوَ يَبْكِي (przyszedł płacząc)",
+          "جاءَ راكِضًا (przyszedł biegnąc)",
+          "جاءَ مُسْرِعًا (przyszedł pospiesznie)",
+          "جاءَ وَحِيدًا (przyszedł sam)"
+        ],
+        "correct": "جاءَ وَهُوَ يَبْكِي (przyszedł płacząc)",
+        "explanation": "Poprawnie: 'جاءَ وَهُوَ يَبْكِي' — tu حال to ZDANIE (جملة حالية), nie pojedynczy wyraz. واو الحال + هُوَ (podmiot) + يَبْكِي (orzeczenie) = pełne zdanie opisujące stan. Pozostałe: رَاكِضًا, مُسْرِعًا, وَحِيدًا — to حال مفردة (pojedyncze wyrazy w bierniku). Trzy typy حال: 1) مفردة (wyraz), 2) جملة فعلية (zdanie werbalne), 3) جملة اسمية (zdanie nominalne)."
+      },
+      {
+        "id": "pa_hal9",
+        "question": "سافرَ _____ الليل (Podróżował nocą — حال z przyimkiem)",
+        "translation": "(Podróżował nocą / pod osłoną nocy)",
+        "options": [
+          "في جُنْحِ",
+          "وَهُوَ",
+          "رَاكِبًا",
+          "مُسَافِرًا"
+        ],
+        "correct": "في جُنْحِ",
+        "explanation": "Poprawnie: 'في جُنْحِ الليلِ' = pod osłoną nocy. To حال شبه جملة — quasi-zdanie pełniące funkcję حال. شبه جملة to: 1) جار ومجرور (przyimek + dopełniacz): في الليلِ, على السريرِ; 2) ظرف (przysłówek): أمامَ المسجدِ. Przykład: جاءَ الرجلُ على حصانِه (mężczyzna przyszedł na koniu) — في/على + rzeczownik = حال."
+      },
+      {
+        "id": "pa_hal10",
+        "question": "لا تأكُلْ _____ (Nie jedz stojąc)",
+        "translation": "(Nie jedz stojąc)",
+        "options": [
+          "وَاقِفًا",
+          "وَاقِفٌ",
+          "الوَاقِفُ",
+          "وُقُوفًا"
+        ],
+        "correct": "وَاقِفًا",
+        "explanation": "Poprawnie: 'وَاقِفًا' (wāqifan) = stojąc (حال). Imiesłów czynny od وَقَفَ (stanął) w bierniku. Rozkaz z حال: لا تأكُلْ وَاقِفًا = nie jedz stojąc. Tu حال opisuje stan podmiotu (أنتَ — ukryte 'ty') podczas jedzenia. Hadis: نهى النبيُّ عن الشربِ قائِمًا (Prorok zakazał picia stojąc) — قَائِمًا = stojąc (حال z imiesłowu czynnego od قَامَ)."
+      },
+      {
+        "id": "pa_hal11",
+        "question": "Opisywany przez حال musi być:",
+        "translation": "(صاحب الحال يجب أن يكون...)",
+        "options": [
+          "Określony (معرفة)",
+          "Nieokreślony (نكرة)",
+          "W bierniku (منصوب)",
+          "W dopełniaczu (مجرور)"
+        ],
+        "correct": "Określony (معرفة)",
+        "explanation": "KLUCZOWA reguła: صاحب الحال (ten, kogo opisuje حال) musi być OKREŚLONY (معرفة): zaimek, imię własne, lub z الـ. جاءَ الولدُ رَاكِضًا ✓ (الولدُ = określony). *جاءَ ولدٌ رَاكِضًا ✗ (ولدٌ = nieokreślony — BŁĄD!). Natomiast sam حال musi być NIEOKREŚLONY: رَاكِضًا (bez الـ). Odwrotna reguła niż przydawka (نعت), która zgadza się z opisywanym w określoności!"
+      },
+      {
+        "id": "pa_hal12",
+        "question": "قَدِمَ الضيوفُ _____ (Goście przyszli uśmiechnięci — l. mn.)",
+        "translation": "(Goście przyszli uśmiechnięci)",
+        "options": [
+          "مُبْتَسِمِينَ",
+          "مُبْتَسِمًا",
+          "مُبْتَسِمُونَ",
+          "المُبْتَسِمِينَ"
+        ],
+        "correct": "مُبْتَسِمِينَ",
+        "explanation": "Poprawnie: 'مُبْتَسِمِينَ' (mubtasimīna) = uśmiechnięci (حال l. mn. m. w bierniku). حال w l. mn.: جمع مذكر سالم → ـِينَ (biernik/dopełniacz l. mn. zdrowej m.). NIE: مُبْتَسِمُونَ (to mianownik!). NIE: المُبْتَسِمِينَ (to z الـ — حال musi być bez!). Odmiana حال: مُبْتَسِمًا (l. poj. m.), مُبْتَسِمَةً (l. poj. ż.), مُبْتَسِمِينَ (l. mn. m.), مُبْتَسِمَاتٍ (l. mn. ż.)."
+      },
+      {
+        "id": "pa_hal13",
+        "question": "Jaka jest różnica: الولدُ الراكضُ vs. الولدُ راكِضًا?",
+        "translation": "(ما الفرق بين النعت والحال؟)",
+        "options": [
+          "نعت = cecha stała; حال = stan tymczasowy",
+          "Brak różnicy",
+          "نعت = biernik; حال = mianownik",
+          "نعت = nieokreślony; حال = określony"
+        ],
+        "correct": "نعت = cecha stała; حال = stan tymczasowy",
+        "explanation": "KLUCZOWE rozróżnienie: النعت (przydawka) = cecha STAŁA, DEFINIUJĄCA: الولدُ الراكضُ (chłopiec-biegacz, ten który biega). الحال = stan TYMCZASOWY, w MOMENCIE czynności: جاءَ الولدُ راكِضًا (przyszedł w stanie biegnięcia — teraz biegł). Formalnie: نعت zgadza się w określoności: الولدُ الراكضُ (oba z الـ). حال jest nieokreślony: راكِضًا (bez الـ, biernik)."
+      },
+      {
+        "id": "pa_hal14",
+        "question": "رجعَ مِنَ الحربِ _____ (Wrócił z wojny żywy)",
+        "translation": "(Wrócił z wojny żywy)",
+        "options": [
+          "حَيًّا",
+          "حَيٌّ",
+          "الحَيُّ",
+          "حَيَاةً"
+        ],
+        "correct": "حَيًّا",
+        "explanation": "Poprawnie: 'حَيًّا' (ḥayyan) = żywy (حال). W bierniku (tanwin fatha). حَيّ (żywy) to przymiotnik od حَيَاة (życie). Rdzeń: ح-ي-ي (podwojone ناقص — wyjątkowo trudna kombinacja!). Porównaj: حَيَاةً (życie — jako مفعول لأجله: dla życia) vs. حَيًّا (żywy — jako حال: w stanie życia)."
+      },
+      {
+        "id": "pa_hal15",
+        "question": "Który element w zdaniu: 'شربَ الماءَ بارِدًا' jest حال?",
+        "translation": "(ما الحال في الجملة؟)",
+        "options": [
+          "بَارِدًا (zimna)",
+          "الماءَ (woda)",
+          "شَرِبَ (pił)",
+          "Brak حال"
+        ],
+        "correct": "بَارِدًا (zimna)",
+        "explanation": "Poprawnie: 'بَارِدًا' (bāridan) = zimna — to حال opisujący stan dopełnienia (الماء). Rozbiór: شَرِبَ (orzeczenie) + الماءَ (dopełnienie — określone, z الـ) + بَارِدًا (حال — nieokreślone, biernik). Tłumaczenie: 'Pił wodę (będącą) zimną' = wypił zimną wodę. Gdyby było: شَرِبَ الماءَ البارِدَ — to نعت (przydawka), nie حال. Różnica: z الـ = nعت, bez الـ = حال."
+      }
+    ]
+  },
+  {
+    "key": "tamyiz_specification",
+    "name": "Dopełnienie specyfikacji (التمييز)",
+    "description": "التمييز — تحديد المعنى المبهم",
+    "iconName": "text.magnifyingglass",
+    "color": "#4ade80",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pa_tam1",
+        "question": "اِشْتَرَيْتُ كيلوغراماً _____ (Kupiłem kilogram jabłek)",
+        "translation": "(Kupiłem kilogram jabłek)",
+        "options": [
+          "تُفَّاحاً",
+          "تُفَّاحٌ",
+          "التُّفَّاحَ",
+          "تُفَّاحِ"
+        ],
+        "correct": "تُفَّاحاً",
+        "explanation": "Poprawnie: 'تُفَّاحاً' (tuffāḥan) w bierniku nieokreślonym. التمييز (tamyīz = specyfikacja) to rzeczownik w BIERNIKU nieokreślonym, który precyzuje znaczenie niejednoznacznego wyrazu. Po miarach/wagach/liczbach: كيلوغراماً تُفَّاحاً (kilogram jabłek). W polskim: dopełniacz (kilogram CZEGO? — jabłek). W arabskim: biernik (منصوب) nieokreślony (نكرة). To KLUCZOWA różnica między systemami!"
+      },
+      {
+        "id": "pa_tam2",
+        "question": "عِنْدِي عِشْرُونَ _____ (Mam dwadzieścia książek)",
+        "translation": "(Mam dwadzieścia książek)",
+        "options": [
+          "كِتَاباً",
+          "كُتُبٍ",
+          "الكِتَابَ",
+          "كِتَابٌ"
+        ],
+        "correct": "كِتَاباً",
+        "explanation": "Poprawnie: 'كِتَاباً' (kitāban) — tamyīz po liczebnikach 11-99: rzeczownik w BIERNIKU l. pojedynczej. عِشْرُونَ كِتَاباً = dwadzieścia książek. Porównaj z liczbami 3-10: عَشَرَةُ كُتُبٍ (dopełniacz l. mn.!). System liczbowy arabski jest złożony: 3-10 + dopełniacz l. mn., 11-99 + biernik l. poj. (tamyīz), 100+ + dopełniacz l. poj. W polskim zawsze dopełniacz."
+      },
+      {
+        "id": "pa_tam3",
+        "question": "هو أَكْبَرُ مِنِّي _____ (On jest ode mnie starszy o rok)",
+        "translation": "(On jest ode mnie starszy o rok)",
+        "options": [
+          "سَنَةً",
+          "سَنَةٌ",
+          "سَنَةٍ",
+          "السَّنَةَ"
+        ],
+        "correct": "سَنَةً",
+        "explanation": "Poprawnie: 'سَنَةً' (sanatan) — tamyīz po stopniu wyższym (أَفْعَل). Precyzuje, W CZYM jest większy: أَكْبَرُ سَنَةً = starszy O ROK. Inne: أَكْثَرُ عَدَداً (liczniejszy), أَحْسَنُ وَجْهاً (ładniejszy twarzą), أَطْوَلُ قَامَةً (wyższy wzrostem). W polskim: narzędnik (wzrostem) lub 'pod względem' + dopełniacz. W arabskim: zawsze biernik tamyīz."
+      },
+      {
+        "id": "pa_tam4",
+        "question": "طَابَ المكانُ _____ (Miejsce jest przyjemne klimatem)",
+        "translation": "(Miejsce jest przyjemne klimatem)",
+        "options": [
+          "مُنَاخاً",
+          "مُنَاخٌ",
+          "المُنَاخَ",
+          "مُنَاخِ"
+        ],
+        "correct": "مُنَاخاً",
+        "explanation": "Poprawnie: 'مُنَاخاً' (munākhan) — tamyīz zdaniowy (تمييز جملة/نسبة). Nie specyfikuje jednego wyrazu, lecz CAŁE zdanie: 'طَابَ المكانُ' jest ogólne (w czym przyjemne?), 'مُنَاخاً' precyzuje (klimatem). Inne: اِمْتَلَأَتِ الغُرْفَةُ نَاساً (pokój zapełnił się LUDŹMI), اِزْدَادَ عِلْماً (powiększył się w WIEDZY). Tamyīz zdaniowy jest PRZESUNIĘTY — pochodzi z podmiotu/dopełnienia."
+      },
+      {
+        "id": "pa_tam5",
+        "question": "Różnica: شَرِبْتُ كَأْسَ المَاءِ vs. شَرِبْتُ كَأْساً مَاءً:",
+        "translation": "(ما الفرق بين التركيبين؟)",
+        "options": [
+          "Idafa (określone) vs. tamyīz (nieokreślone)",
+          "To samo znaczenie",
+          "Pierwsza poprawna, druga błędna",
+          "Liczba pojedyncza vs. mnoga"
+        ],
+        "correct": "Idafa (określone) vs. tamyīz (nieokreślone)",
+        "explanation": "KLUCZOWA różnica: كَأْسَ المَاءِ = szklankę (tego) wody — idafa, określone, konkretna szklanka. كَأْساً مَاءً = szklankę wody — tamyīz, nieokreślone, jakaś szklanka czegoś. Praktycznie: oba tłumaczą się podobnie. Gramatycznie: idafa ma dopełniacz (المَاءِ), tamyīz biernik (مَاءً). W MSA tamyīz po miarach jest częstszy. W polskim: 'szklanka wody' — dwuznaczne (obie struktury)."
+      },
+      {
+        "id": "pa_tam6",
+        "question": "كَمْ _____ في الفصل؟ (Ilu jest studentów w klasie?)",
+        "translation": "(Ilu jest studentów w klasie?)",
+        "options": [
+          "طَالِباً",
+          "طُلَّابٍ",
+          "الطَّالِبَ",
+          "طَالِبٌ"
+        ],
+        "correct": "طَالِباً",
+        "explanation": "Poprawnie: 'طَالِباً' — po كَمْ pytającym: tamyīz w BIERNIKU l. poj. كَمْ طَالِباً = ilu studentów? Porównaj: كَمْ wykrzyknikowe (= ile!/wiele!): كَمْ طُلَّابٍ نَجَحُوا! = Ilu studentów zdało! (dopełniacz l. mn.). Dwie كَمْ: 1) pytająca + biernik l. poj., 2) wykrzyknikowa + dopełniacz l. mn. To ważne rozróżnienie w zaawansowanej gramatyce!"
+      },
+      {
+        "id": "pa_tam7",
+        "question": "لَهُ عِشْرُونَ عاماً — 'عاماً' jest:",
+        "translation": "(ما إعراب عاماً؟)",
+        "options": [
+          "Tamyīz (تمييز) — biernik",
+          "Podmiot (فاعل) — mianownik",
+          "Dopełnienie (مفعول) — biernik",
+          "Przydawka (نعت)"
+        ],
+        "correct": "Tamyīz (تمييز) — biernik",
+        "explanation": "Poprawnie: 'عاماً' (ʿāman) = tamyīz po liczebniku عِشْرُونَ. Precyzuje: dwadzieścia CZEGO? — lat. Tamyīz po liczebnikach 11-99 jest l. poj. w bierniku. Często mylony z مفعول به (dopełnienie bliższe), ale tamyīz odpowiada na pytanie 'czego?' / 'pod jakim względem?', a مفعول به na 'co?'. مِنْ + dopełniacz jest alternatywą: عِشْرُونَ مِن الأعوام (rzadziej)."
+      },
+      {
+        "id": "pa_tam8",
+        "question": "اِشْتَعَلَ الرَّأسُ _____ (Głowa zapłonęła siwizną = posiwiałem)",
+        "translation": "(Głowa zapłonęła siwizną — wyrażenie koraniczne)",
+        "options": [
+          "شَيْباً",
+          "شَيْبٌ",
+          "الشَّيْبَ",
+          "شَيْبِ"
+        ],
+        "correct": "شَيْباً",
+        "explanation": "Poprawnie: 'شَيْباً' (shayban) — tamyīz zdaniowy z Koranu (Sura 19:4). Oryginalne zdanie: 'اِشْتَعَلَ الرَّأسُ شَيْباً' = głowa zapłonęła siwizną (= posiwiałem). 'شَيْباً' precyzuje CZYM zapłonęła głowa. Gramatyczny mechanizm: شَيْبُ الرَّأسِ اشْتَعَلَ → اِشْتَعَلَ الرَّأسُ شَيْباً (podmiot idafy → tamyīz). To jeden z najpiękniejszych przykładów tamyīz w literaturze!"
+      },
+      {
+        "id": "pa_tam9",
+        "question": "فَجَّرْنَا الأَرْضَ _____ (Sprawiliśmy, że ziemia wytrysnęła źródłami — Koran)",
+        "translation": "(Sprawiliśmy, że ziemia wytrysnęła źródłami)",
+        "options": [
+          "عُيُوناً",
+          "عُيُونٌ",
+          "العُيُونَ",
+          "عُيُونِ"
+        ],
+        "correct": "عُيُوناً",
+        "explanation": "Poprawnie: 'عُيُوناً' (ʿuyūnan) — tamyīz. Z Koranu (54:12): 'فَجَّرْنَا الأَرْضَ عُيُوناً' = sprawiliśmy że ziemia wytrysnęła źródłami. Tamyīz może być w l. mn. gdy kontekst tego wymaga. Mechanizm transformacji: فَجَّرْنَا عُيُونَ الأَرْضِ → فَجَّرْنَا الأَرْضَ عُيُوناً (dopełnienie idafy → tamyīz). To zaawansowana struktura retoryczna — częsta w Koranie."
+      },
+      {
+        "id": "pa_tam10",
+        "question": "هو أَحْسَنُ النَّاسِ _____ (On jest najlepszym z ludzi charakterem)",
+        "translation": "(On jest najlepszym z ludzi charakterem)",
+        "options": [
+          "خُلُقاً",
+          "خُلُقٌ",
+          "الخُلُقَ",
+          "خُلُقِ"
+        ],
+        "correct": "خُلُقاً",
+        "explanation": "Poprawnie: 'خُلُقاً' (khuluqan) — tamyīz po stopniu najwyższym. أَحْسَنُ النَّاسِ خُلُقاً = najlepszy z ludzi POD WZGLĘDEM charakteru. Konstrukcja: أَفْعَلُ + dopełniacz (kogo?) + tamyīz (pod jakim względem?). Inne: أَكْثَرُ العَرَبِ عَدَداً (najliczniejsi z Arabów), أَشَدُّهُمْ ذَكَاءً (najbystrzejszy z nich). W polskim: narzędnik lub 'pod względem'."
+      },
+      {
+        "id": "pa_tam11",
+        "question": "Tamyīz jest zawsze w:",
+        "translation": "(ما إعراب التمييز دائماً؟)",
+        "options": [
+          "Bierniku nieokreślonym (منصوب نكرة)",
+          "Mianowniku (مرفوع)",
+          "Dopełniaczu (مجرور)",
+          "Bierniku określonym (منصوب معرفة)"
+        ],
+        "correct": "Bierniku nieokreślonym (منصوب نكرة)",
+        "explanation": "Tamyīz jest ZAWSZE: 1) w bierniku (منصوب) — końcówka -اً (-an), 2) nieokreślony (نكرة) — bez الـ. NIGDY nie może być określony (*التُّفَّاحَ) ani w innym przypadku (*تُفَّاحٍ). Te dwa warunki odróżniają tamyīz od innych funkcji biernikowych. W polskim: dopełniacz lub narzędnik (kilogram JABŁEK, starszy WIEKIEM). W arabskim: jeden przypadek — biernik nieokreślony."
+      },
+      {
+        "id": "pa_tam12",
+        "question": "مَلَأَ الكَأسَ _____ (Napełnił szklankę wodą)",
+        "translation": "(Napełnił szklankę wodą)",
+        "options": [
+          "مَاءً",
+          "مَاءٌ",
+          "المَاءَ",
+          "مَاءِ"
+        ],
+        "correct": "مَاءً",
+        "explanation": "Poprawnie: 'مَاءً' (māʾan) — tamyīz po czasowniku oznaczającym napełnianie/opróżnianie. مَلَأَ الكَأسَ مَاءً = napełnił szklankę WODĄ. Inne: فَرَّغَ الخِزَانَةَ ثِيَاباً (opróżnił szafę z ubrań), غَرَسَ الحَدِيقَةَ أَشْجَاراً (zasadził ogród DRZEWAMI). Typ: tamyīz zdaniowy — precyzuje relację między czasownikiem a dopełnieniem."
+      },
+      {
+        "id": "pa_tam13",
+        "question": "Tamyīz vs. ḥāl (حال) — główna różnica:",
+        "translation": "(الفرق بين التمييز والحال)",
+        "options": [
+          "Tamyīz = nieokreślony rzeczownik, ḥāl = nieokreślony przymiotnik/zdanie",
+          "To samo",
+          "Tamyīz w dopełniaczu, ḥāl w bierniku",
+          "Ḥāl tylko z podmiotem"
+        ],
+        "correct": "Tamyīz = nieokreślony rzeczownik, ḥāl = nieokreślony przymiotnik/zdanie",
+        "explanation": "KLUCZOWA różnica: tamyīz odpowiada na 'co?' / 'pod jakim względem?' — jest RZECZOWNIKIEM: كِتَاباً, سَنَةً. Ḥāl odpowiada na 'jak?' / 'w jakim stanie?' — jest PRZYMIOTNIKIEM, zdaniem lub wyrażeniem: فَرِحاً (radośnie), وَهُوَ يَضْحَكُ (śmiejąc się). Oba w bierniku nieokreślonym! Ale: tamyīz = rzeczownik (co), ḥāl = przymiotnik/zdanie (jak)."
+      },
+      {
+        "id": "pa_tam14",
+        "question": "اِزْدَادَ الأمرُ _____ (Sprawa stała się bardziej skomplikowana)",
+        "translation": "(Sprawa stała się bardziej skomplikowana)",
+        "options": [
+          "تَعْقِيداً",
+          "تَعْقِيدٌ",
+          "التَّعْقِيدَ",
+          "تَعْقِيدِ"
+        ],
+        "correct": "تَعْقِيداً",
+        "explanation": "Poprawnie: 'تَعْقِيداً' (taʿqīdan) — tamyīz po czasowniku wzrostu/zmiany. اِزْدَادَ (forma VIII) = zwiększył się, powiększył się. Tamyīz precyzuje W CZYM: تَعْقِيداً = w skomplikowaniu. Podobne: اِزْدَادَ حَجْماً (powiększył się objętością), اِزْدَادَ عِلْماً (powiększył się wiedzą), نَقَصَ وَزْناً (zmniejszył się wagą). Masdar jako tamyīz jest bardzo częsty."
+      },
+      {
+        "id": "pa_tam15",
+        "question": "Które zdanie zawiera tamyīz?",
+        "translation": "(أي جملة تحتوي على تمييز؟)",
+        "options": [
+          "شَرِبْتُ لِتْراً حَلِيباً (wypiłem litr mleka)",
+          "شَرِبْتُ الحَلِيبَ (wypiłem mleko)",
+          "الحَلِيبُ بَارِدٌ (mleko jest zimne)",
+          "شَرِبْتُ حَلِيباً (wypiłem mleko)"
+        ],
+        "correct": "شَرِبْتُ لِتْراً حَلِيباً (wypiłem litr mleka)",
+        "explanation": "Poprawnie: 'شَرِبْتُ لِتْراً حَلِيباً' — حَلِيباً jest tamyīz, precyzuje: litr CZEGO? → mleka. الحَلِيبَ w drugim zdaniu to مفعول به (dopełnienie bliższe). الحَلِيبُ w trzecim to مبتدأ (podmiot zdania imiennego). حَلِيباً w czwartym to مفعول به nieokreślony. Tamyīz wymaga KONTEKSTU niejednoznaczności — coś wymaga doprecyzowania!"
+      }
+    ]
+  },
+  {
+    "key": "exceptions_ila",
+    "name": "Wyjątki i إلّا (الاِسْتِثْنَاء)",
+    "description": "أسلوب الاستثناء — إلّا/غير/سوى",
+    "iconName": "xmark.circle",
+    "color": "#c084fc",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pa_exc1",
+        "question": "حَضَرَ الطُلّابُ إلّا _____ (Przyszli studenci oprócz Alego)",
+        "translation": "(Przyszli studenci oprócz Alego)",
+        "options": [
+          "عَلِيّاً",
+          "عَلِيٌّ",
+          "عَلِيٍّ",
+          "عَلِيَّ"
+        ],
+        "correct": "عَلِيّاً",
+        "explanation": "Poprawnie: 'عَلِيّاً' (ʿAliyyan) — w bierniku. Po إلّا w zdaniu PEŁNYM twierdzącym: wyraz po إلّا jest w BIERNIKU. Reguła: إلّا + biernik (منصوب) gdy zdanie jest: 1) twierdzące (مُوجَب), 2) pełne (تامّ = wyraz ogólny obecny, tu: الطُلّابُ). To KLUCZOWA reguła wyjątków. W polskim: 'oprócz Alego' — przyimek + dopełniacz. W arabskim: إلّا + biernik."
+      },
+      {
+        "id": "pa_exc2",
+        "question": "مَا حَضَرَ أَحَدٌ إلّا _____ (Nikt nie przyszedł oprócz Zayda)",
+        "translation": "(Nikt nie przyszedł oprócz Zayda)",
+        "options": [
+          "زَيْدٌ / زَيْداً",
+          "زَيْداً (tylko)",
+          "زَيْدٍ (tylko)",
+          "زَيْدَ (tylko)"
+        ],
+        "correct": "زَيْدٌ / زَيْداً",
+        "explanation": "W zdaniu PRZECZĄCYM pełnym: wyraz po إلّا może być w BIERNIKU (زَيْداً — jak w twierdzącym) LUB podążać za deklinacją wyrazu ogólnego (بَدَل — apozycja): أَحَدٌ jest w mianowniku → زَيْدٌ (mianownik jako بدل). Obie formy poprawne! مَا جَاءَ أَحَدٌ إلّا زَيْدٌ (بدل) = مَا جَاءَ أَحَدٌ إلّا زَيْداً (منصوب). To zaawansowana gramatyka — dwie analizy tego samego zdania!"
+      },
+      {
+        "id": "pa_exc3",
+        "question": "مَا جَاءَ إلّا _____ (Nikt nie przyszedł oprócz Muhammada) — zdanie NIEPEŁNE przeczące",
+        "translation": "(Nikt nie przyszedł oprócz Muhammada)",
+        "options": [
+          "مُحَمَّدٌ",
+          "مُحَمَّداً",
+          "مُحَمَّدِ",
+          "مُحَمَّدَ"
+        ],
+        "correct": "مُحَمَّدٌ",
+        "explanation": "Poprawnie: 'مُحَمَّدٌ' (Muḥammadun) — w MIANOWNIKU! W zdaniu NIEPEŁNYM przeczącym (ناقص منفيّ): brak wyrazu ogólnego (nie ma 'أَحَدٌ'), więc wyraz po إلّا przejmuje funkcję gramatyczną w zdaniu. Tu: مُحَمَّدٌ = podmiot (فاعل) → mianownik. مَا جَاءَ إلّا مُحَمَّدٌ = 'Przyszedł tylko Muhammad'. إلّا jest tu jakby 'niewidzialna' — nie wpływa na deklinację."
+      },
+      {
+        "id": "pa_exc4",
+        "question": "مَا قَرَأْتُ إلّا _____ (Nie przeczytałem oprócz książki = przeczytałem tylko książkę)",
+        "translation": "(Przeczytałem tylko książkę)",
+        "options": [
+          "كِتَاباً",
+          "كِتَابٌ",
+          "كِتَابِ",
+          "الكِتَابَ"
+        ],
+        "correct": "كِتَاباً",
+        "explanation": "Poprawnie: 'كِتَاباً' (kitāban) — w BIERNIKU. Zdanie niepełne (ناقص): brak wyrazu ogólnego. Funkcja: كِتَاباً = dopełnienie bliższe (مفعول به) → biernik. مَا قَرَأْتُ إلّا كِتَاباً = nie przeczytałem nic oprócz książki = przeczytałem TYLKO książkę. Porównaj: مَا جَاءَ إلّا مُحَمَّدٌ (mianownik — podmiot) vs. مَا قَرَأْتُ إلّا كِتَاباً (biernik — dopełnienie). Funkcja decyduje!"
+      },
+      {
+        "id": "pa_exc5",
+        "question": "حَضَرَ الجَمِيعُ غَيْرَ _____ (Przyszli wszyscy oprócz dyrektora)",
+        "translation": "(Przyszli wszyscy oprócz dyrektora)",
+        "options": [
+          "المُدِيرِ",
+          "المُدِيرَ",
+          "المُدِيرُ",
+          "مُدِيراً"
+        ],
+        "correct": "المُدِيرِ",
+        "explanation": "Poprawnie: 'المُدِيرِ' — dopełniacz po غَيْرَ (ghayra). غَيْرَ to rzeczownik w bierniku (jak wyraz po إلّا), ale wyraz ZA NIM jest w DOPEŁNIACZU (idafa!). غَيْرَ المُدِيرِ = oprócz dyrektora. Różnica: إلّا jest PARTYKUŁĄ (nie odmienia się), غَيْرَ jest RZECZOWNIKIEM (tworzy idafę). W polskim: obie tłumaczą się jako 'oprócz/poza'."
+      },
+      {
+        "id": "pa_exc6",
+        "question": "لَا أُرِيدُ سِوَى _____ (Nie chcę nic oprócz sukcesu)",
+        "translation": "(Nie chcę nic oprócz sukcesu)",
+        "options": [
+          "النَّجَاحِ",
+          "النَّجَاحَ",
+          "النَّجَاحُ",
+          "نَجَاحاً"
+        ],
+        "correct": "النَّجَاحِ",
+        "explanation": "Poprawnie: 'النَّجَاحِ' (an-najāḥi) — dopełniacz po سِوَى (siwā). سِوَى działa jak غَيْرَ — tworzy idafę. Ale: سِوَى jest NIEODMIENNA (mabni) — zawsze na fathie. لَا أُرِيدُ سِوَى النَّجَاحِ = nie chcę nic oprócz sukcesu. Trzy sposoby wyrażenia wyjątku: إلّا + biernik, غَيْرَ + dopełniacz, سِوَى + dopełniacz. Rejestr: إلّا (neutralna), سِوَى (literacka)."
+      },
+      {
+        "id": "pa_exc7",
+        "question": "Wszystkie trzy نawykowe sposoby wyrażenia wyjątku to:",
+        "translation": "(ما أدوات الاستثناء الثلاثة؟)",
+        "options": [
+          "إلّا, غَيْر, سِوَى",
+          "إلّا, لَيْسَ, بَلْ",
+          "مِنْ, عَنْ, فِي",
+          "لَا, لَمْ, لَنْ"
+        ],
+        "correct": "إلّا, غَيْر, سِوَى",
+        "explanation": "Trzy główne narzędzia wyjątku: 1) إلّا (illa) — partykuła, najczęstsza, wyraz po niej w bierniku lub wg funkcji; 2) غَيْر (ghayr) — rzeczownik, tworzy idafę, sam w bierniku jak wyraz po إلّا; 3) سِوَى (siwā) — nieodmienna, tworzy idafę, bardziej literacka. Dodatkowe (rzadsze): عَدَا (ʿadā), خَلَا (khalā), حَاشَا (ḥāshā) — działają jak przyimki lub czasowniki."
+      },
+      {
+        "id": "pa_exc8",
+        "question": "جَاءَ القَوْمُ عَدَا _____ (Przyszedł lud oprócz Bakra)",
+        "translation": "(Przyszedł lud oprócz Bakra)",
+        "options": [
+          "بَكْرٍ / بَكْراً",
+          "بَكْرٌ (tylko)",
+          "بَكْرَ (tylko)",
+          "البَكْرِ"
+        ],
+        "correct": "بَكْرٍ / بَكْراً",
+        "explanation": "Poprawnie: obie formy! عَدَا (ʿadā) może działać jako: 1) PRZYIMEK → wyraz w dopełniaczu: عَدَا بَكْرٍ; 2) CZASOWNIK → wyraz w bierniku: عَدَا بَكْراً. Z مَا: مَا عَدَا بَكْراً (tylko biernik — مَا wymusza interpretację czasownikową). خَلَا i حَاشَا działają identycznie. To pokazuje elastyczność arabskiej składni — jeden wyraz, dwie analizy!"
+      },
+      {
+        "id": "pa_exc9",
+        "question": "لَيْسَ في القاعة أَحَدٌ إلّا _____ (W sali nie ma nikogo oprócz nauczyciela)",
+        "translation": "(W sali nie ma nikogo oprócz nauczyciela)",
+        "options": [
+          "المُعَلِّمَ / المُعَلِّمُ",
+          "المُعَلِّمِ (tylko)",
+          "مُعَلِّماً (tylko)",
+          "المُعَلِّمَ (tylko)"
+        ],
+        "correct": "المُعَلِّمَ / المُعَلِّمُ",
+        "explanation": "Zdanie pełne (تامّ) z لَيْسَ (przeczenie): dwie opcje — 1) المُعَلِّمَ (biernik — standardowy حكم إلّا); 2) المُعَلِّمُ (mianownik — بدل od أَحَدٌ). W zdaniu przeczącym pełnym OBE formy poprawne. Gramаtycy spierali się od wieków — szkoła z Basry preferowała بدل (mianownik), szkoła z Kufy biernik. Nowoczesna gramatyka akceptuje obie."
+      },
+      {
+        "id": "pa_exc10",
+        "question": "ما الفرق: إلّا vs. إلَى؟",
+        "translation": "(Jaka jest różnica między إلّا a إلَى?)",
+        "options": [
+          "إلّا = oprócz/tylko, إلَى = do/w kierunku",
+          "To samo słowo",
+          "إلّا = do, إلَى = oprócz",
+          "Oba = oprócz"
+        ],
+        "correct": "إلّا = oprócz/tylko, إلَى = do/w kierunku",
+        "explanation": "UWAGA na częstą pomyłkę! إلّا (illā) = oprócz, z wyjątkiem, tylko. إلَى (ilā) = do, w kierunku (przyimek). Wymowa: إلّا ma szaddę (podwojone ل) + fatḥę na alif. إلَى ma jedno ل + fatḥę na ي. W piśmie: إلّا (z szaddą i ا), إلَى (z ى). W polskim: 'oprócz' vs. 'do' — kompletnie inne, ale w arabskim pisownia podobna!"
+      },
+      {
+        "id": "pa_exc11",
+        "question": "لَمْ يَبْقَ مِنَ الطعام إلّا _____ (Nie zostało z jedzenia oprócz chleba)",
+        "translation": "(Nie zostało z jedzenia oprócz odrobiny)",
+        "options": [
+          "القَلِيلُ",
+          "القَلِيلَ",
+          "قَلِيلاً",
+          "القَلِيلِ"
+        ],
+        "correct": "القَلِيلُ",
+        "explanation": "Poprawnie: 'القَلِيلُ' — mianownik! To zdanie NIEPEŁNE przeczące (ناقص منفيّ): brak wyrazu ogólnego (nie ma 'شيءٌ'). القَلِيلُ przejmuje funkcję فاعل (podmiot od يَبْقَ) → mianownik. لَمْ يَبْقَ إلّا القَلِيلُ = nie zostało nic oprócz odrobiny = zostało TYLKO trochę. Pamiętaj: w ناقص منفيّ wyrаz po إلّا bierze deklinację swojej funkcji w zdaniu!"
+      },
+      {
+        "id": "pa_exc12",
+        "question": "كُلُّ شَيْءٍ هَالِكٌ إلّا _____ (Wszystko zginie oprócz Jego oblicza — Koran)",
+        "translation": "(Wszystko zginie oprócz Jego oblicza — Koran 28:88)",
+        "options": [
+          "وَجْهَهُ",
+          "وَجْهُهُ",
+          "وَجْهِهِ",
+          "وُجُوهَهُ"
+        ],
+        "correct": "وَجْهَهُ",
+        "explanation": "Poprawnie: 'وَجْهَهُ' (wajhahu) — biernik. Z Koranu (28:88): 'كُلُّ شَيْءٍ هَالِكٌ إلّا وَجْهَهُ' = Wszystko jest przemijające oprócz Jego oblicza. Zdanie pełne twierdzące: كُلُّ شَيْءٍ = wyraz ogólny → wyraz po إلّا w BIERNIKU: وَجْهَهُ. وَجْه = oblicze/twarz + ـهُ (zaimek 3. os. m. = Jego). To jeden z najczęściej cytowanych wersetów."
+      },
+      {
+        "id": "pa_exc13",
+        "question": "نَجَحَ الطُّلّابُ إلّا طَالِبَيْنِ — 'طَالِبَيْنِ' jest w:",
+        "translation": "(ما إعراب طَالِبَيْنِ؟)",
+        "options": [
+          "Bierniku (مثنى — -َيْنِ = biernik/dopełniacz)",
+          "Mianowniku",
+          "Dopełniaczu",
+          "Formie nieokreślonej"
+        ],
+        "correct": "Bierniku (مثنى — -َيْنِ = biernik/dopełniacz)",
+        "explanation": "Poprawnie: 'طَالِبَيْنِ' w bierniku — l. podwójna (مثنى). W l. podwójnej: mianownik = -َانِ (طَالِبَانِ), biernik/dopełniacz = -َيْنِ (طَالِبَيْنِ). Po إلّا w zdaniu pełnym twierdzącym: biernik → طَالِبَيْنِ (nie *طَالِبَانِ). To samo w l. mn. m.: mianownik -ُونَ, biernik/dopełniacz -ِينَ: إلّا طَالِبِينَ."
+      },
+      {
+        "id": "pa_exc14",
+        "question": "إنَّمَا jest ekwiwalentem:",
+        "translation": "(إنَّمَا تُعادِل أيّ تعبير؟)",
+        "options": [
+          "مَا...إلّا (tylko/nie...oprócz)",
+          "إنَّ + مَا (zaiste co)",
+          "لَكِن (ale)",
+          "لَمْ (nie)"
+        ],
+        "correct": "مَا...إلّا (tylko/nie...oprócz)",
+        "explanation": "Poprawnie: إنَّمَا (innamā) = tylko/jedynie — ekwiwalent أسلوب الحصر (ograniczenia). إنَّمَا العلمُ بالتعلّمِ = Wiedza jest TYLKO przez naukę = مَا العلمُ إلّا بالتعلّمِ. ALE: إنَّمَا NIE zmienia deklinacji! Po إنَّمَا: normalny szyk zdania. Po إلّا: reguły wyjątku. إنَّمَا jest stylistycznie bardziej elegancka i częsta w Koranie: 'إنَّمَا المُؤمِنُونَ إخْوَةٌ' = wierzący są JEDYNIE braćmi."
+      },
+      {
+        "id": "pa_exc15",
+        "question": "Które zdanie jest BŁĘDNE gramatycznie?",
+        "translation": "(أي جملة خاطئة نحوياً؟)",
+        "options": [
+          "حَضَرَ إلّا زَيْداً (⬜ zdanie twierdzące niepełne bez podmiotu)",
+          "حَضَرَ الجميعُ إلّا زَيْداً",
+          "مَا حَضَرَ إلّا زَيْدٌ",
+          "مَا حَضَرَ أحدٌ إلّا زَيْداً"
+        ],
+        "correct": "حَضَرَ إلّا زَيْداً (⬜ zdanie twierdzące niepełne bez podmiotu)",
+        "explanation": "BŁĘDNE: 'حَضَرَ إلّا زَيْداً' — zdanie twierdzące (موجب) NIE MOŻE być niepełne (ناقص)! Jeśli nie ma wyrazu ogólnego, zdanie MUSI być przeczące: مَا حَضَرَ إلّا زَيْدٌ (OK). Twierdzące wymaga wyrazu ogólnego: حَضَرَ الجميعُ إلّا زَيْداً (OK). Reguła: تامّ موجب ✅, تامّ منفيّ ✅, ناقص منفيّ ✅, ناقص موجب ❌."
+      }
+    ]
+  },
+  {
+    "key": "vocative_case",
+    "name": "Wołacz (النِّدَاء)",
+    "description": "أسلوب النداء — يا/أيّها/أيّتها",
+    "iconName": "megaphone",
+    "color": "#22d3ee",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pa_voc1",
+        "question": "_____ مُحَمَّدُ! (O Muhammadzie!)",
+        "translation": "(O Muhammadzie!)",
+        "options": [
+          "يَا",
+          "أَيَا",
+          "هَيَا",
+          "وَا"
+        ],
+        "correct": "يَا",
+        "explanation": "Poprawnie: 'يَا' (yā) — najczęstsza partykuła wołacza. يَا مُحَمَّدُ! = O Muhammadzie! W arabskim wołacz (النِّدَاء) używa partykuły + imię. يَا jest NIEODMIENNA i używana w 99% przypadków. Inne (rzadsze): أَيَا (daleki wołacz), هَيَا (daleki), أَ (bliski), أَيْ (bliski). W polskim: wołacz to osobny przypadek (Muhammadzie!). W arabskim: يَا + standardowa forma."
+      },
+      {
+        "id": "pa_voc2",
+        "question": "يَا طَالِبُ! — 'طَالِبُ' jest w:",
+        "translation": "(ما إعراب طَالِبُ في النداء؟)",
+        "options": [
+          "Bierniku/wołaczu (مبنيّ على الضمّ) — bo to wołacz prosty",
+          "Mianowniku (مرفوع)",
+          "Dopełniaczu (مجرور)",
+          "Bierniku (منصوب)"
+        ],
+        "correct": "Bierniku/wołaczu (مبنيّ على الضمّ) — bo to wołacz prosty",
+        "explanation": "Poprawnie: 'طَالِبُ' to منادى مفرد (wołacz prosty/nieidafowy). Reguła: wołacz prosty określony jest مبنيّ على الضمّ (budowany na ḍammie) — wygląda jak mianownik, ale GRAMATYCZNIE jest w bierniku (w miejscu biernika). To ważna subtelność: ḍamma na końcu wołacza prostego nie równa się regule mianownika. To specjalna forma wołacza."
+      },
+      {
+        "id": "pa_voc3",
+        "question": "يَا طَالِبَ العِلْم! — 'طَالِبَ' jest w:",
+        "translation": "(ما إعراب طَالِبَ العلم في النداء؟)",
+        "options": [
+          "Bierniku (منصوب) — bo to wołacz idafowy",
+          "Mianowniku",
+          "Dopełniaczu",
+          "Wołaczu na ḍammie"
+        ],
+        "correct": "Bierniku (منصوب) — bo to wołacz idafowy",
+        "explanation": "Poprawnie: 'طَالِبَ' w bierniku! KLUCZOWA różnica: يَا طَالِبُ! (prosty → ḍamma) vs. يَا طَالِبَ العِلْمِ! (idafa/dodany → fatha = biernik). Reguła: wołacz المنادى المضاف (z idafą) lub المنادى الشبيه بالمضاف (quasi-idafowy) jest w BIERNIKU (منصوب). Tylko wołacz prosty (مفرد) jest na ḍammie. To jedna z najważniejszych reguł wołacza!"
+      },
+      {
+        "id": "pa_voc4",
+        "question": "يَا أَيُّهَا _____ ! (O ludzie!)",
+        "translation": "(O ludzie!)",
+        "options": [
+          "النَّاسُ",
+          "النَّاسَ",
+          "نَاسُ",
+          "النَّاسِ"
+        ],
+        "correct": "النَّاسُ",
+        "explanation": "Poprawnie: 'النَّاسُ' (an-nāsu) — z الـ! Wyraz z rodzajnikiem الـ NIE MOŻE stać bezpośrednio po يَا (*يَا النَّاسُ ❌). Trzeba dodać أَيُّهَا (dla r.m.) lub أَيَّتُهَا (dla r.ż.): يَا أَيُّهَا النَّاسُ! النَّاسُ po أَيُّهَا jest w MIANOWNIKU jako نعت/بدل. Frazа يَا أَيُّهَا النَّاسُ jest niezwykle częsta w Koranie — jedno z najsłynniejszych wyrażeń."
+      },
+      {
+        "id": "pa_voc5",
+        "question": "يَا أَيَّتُهَا _____ ! (O duszo spokojna! — Koran)",
+        "translation": "(O duszo spokojna! — Koran 89:27)",
+        "options": [
+          "النَّفْسُ المُطْمَئِنَّةُ",
+          "النَّفْسَ المُطْمَئِنَّةَ",
+          "نَفْسُ المُطْمَئِنَّةِ",
+          "النَّفْسِ"
+        ],
+        "correct": "النَّفْسُ المُطْمَئِنَّةُ",
+        "explanation": "Poprawnie: 'النَّفْسُ المُطْمَئِنَّةُ' — oba w mianowniku. Z Koranu (89:27): يَا أَيَّتُهَا النَّفْسُ المُطْمَئِنَّةُ = O duszo spokojna! أَيَّتُهَا (z تاء) → dla r. żeńskiego. النَّفْسُ = نعت (przydawka) do أَيَّتُهَا. المُطْمَئِنَّةُ = przydawka do النَّفْسُ. Cała konstrukcja w mianowniku. To jeden z najpiękniejszych wersetów — zwrot do duszy wierzącego."
+      },
+      {
+        "id": "pa_voc6",
+        "question": "يَا مُعَلِّمِي! — znaczy:",
+        "translation": "(ماذا يعني يَا مُعَلِّمِي؟)",
+        "options": [
+          "O mój nauczycielu!",
+          "O nauczyciele!",
+          "O nauczycieli!",
+          "Nauczycielu!"
+        ],
+        "correct": "O mój nauczycielu!",
+        "explanation": "Poprawnie: 'يَا مُعَلِّمِي' (yā muʿallimī) = O mój nauczycielu! مُعَلِّم + ي (zaimek dzierżawczy 1. os. = mój). W wołaczu z zaimkiem ي: dozwolone (يَا مُعَلِّمِي), ale bardziej elegancko: يَا مُعَلِّمَتِي (z tā marbūṭa → tā maftūḥa). W polskim: 'mój nauczycielu!' — wołacz. W arabskim: idafa z zaimkiem = wołacz idafowy → biernik."
+      },
+      {
+        "id": "pa_voc7",
+        "question": "يَا رَبِّ! — skrócona forma od:",
+        "translation": "(ما الأصل في يَا ربِّ؟)",
+        "options": [
+          "يَا رَبِّي (z opuszczoną ي)",
+          "يَا رَبُّ",
+          "يَا رَابِّ",
+          "يَا رُبَّ"
+        ],
+        "correct": "يَا رَبِّي (z opuszczoną ي)",
+        "explanation": "Poprawnie: يَا رَبِّ = يَا رَبِّي (yā rabbī) z opuszczoną ي. W wołaczu dozwolone jest usunięcie ي (zaimku 1. os.) i pozostawienie kasry: يَا رَبِّ = O mój Panie! To bardzo częste w modlitwie i suplikacjach. Inne: يَا أُمِّ (= يَا أُمِّي, o matko!), يَا أَبِ (= يَا أَبِي, o ojcze!). Forma skrócona jest bardziej emocjonalna i poetycka."
+      },
+      {
+        "id": "pa_voc8",
+        "question": "يَا ذَا الجَلَالِ وَالإِكْرَامِ — 'ذَا' jest w:",
+        "translation": "(ما إعراب ذَا في هذا النداء؟)",
+        "options": [
+          "Bierniku (منصوب) — منادى مضاف",
+          "Mianowniku",
+          "Dopełniaczu",
+          "Nieodmiennym"
+        ],
+        "correct": "Bierniku (منصوب) — منادى مضاف",
+        "explanation": "Poprawnie: 'ذَا' w bierniku — to منادى مضاف (wołacz z idafą). ذَا الجَلَالِ = posiadaczu majestatu. ذُو (mianownik) → ذَا (biernik) → ذِي (dopełniacz). To jeden z 'pięciu imion' (الأسماء الخمسة) odmienianych przez samogłoski. يَا ذَا الجَلَالِ وَالإِكْرَامِ = O Posiadaczu majestatu i szlachetności! — zwrot do Boga w modlitwie."
+      },
+      {
+        "id": "pa_voc9",
+        "question": "يَا أَرْضُ اِبْلَعِي مَاءَكِ! (O ziemio, pochłoń swoją wodę! — Koran 11:44)",
+        "translation": "(ما إعراب أَرْضُ؟)",
+        "options": [
+          "Wołacz prosty — مبنيّ على الضمّ",
+          "Mianownik — podmiot",
+          "Biernik — dopełnienie",
+          "Dopełniacz"
+        ],
+        "correct": "Wołacz prosty — مبنيّ على الضمّ",
+        "explanation": "Poprawnie: 'أَرْضُ' — wołacz prosty (منادى مفرد عَلَم → مبنيّ على الضمّ). Z Koranu (11:44): يَا أَرْضُ اِبْلَعِي مَاءَكِ وَيَا سَمَاءُ أَقْلِعِي = O ziemio, pochłoń swoją wodę, i o niebo, przestań! Ten werset jest uważany za ARCYDZIEŁO retoryki arabskiej (بلاغة) — zawiera wołacz, rozkaz, personifikację i paralelizm w jednym zdaniu."
+      },
+      {
+        "id": "pa_voc10",
+        "question": "يَا حَسَنَاً! — co to za wołacz?",
+        "translation": "(ما نوع هذا النداء؟)",
+        "options": [
+          "Wołacz nieokreślony (منادى نكرة غير مقصودة) — biernik",
+          "Wołacz prosty — ḍamma",
+          "Wołacz idafowy",
+          "Błędna forma"
+        ],
+        "correct": "Wołacz nieokreślony (منادى نكرة غير مقصودة) — biernik",
+        "explanation": "Poprawnie: يَا حَسَنَاً = O coś pięknego! / O jakiż piękny! Wołacz nieokreślony nieintencjonalny (نكرة غير مقصودة) jest w BIERNIKU: حَسَناً (fatha + tanwīn). Porównaj: يَا رَجُلُ! (O człowiecze! — określony, intencjonalny → ḍamma) vs. يَا رَجُلاً! (O jakiż człowiek! — nieokreślony → biernik). Nieokreślony wołacz = wykrzyknienie/zdziwienie, nie bezpośredni zwrot."
+      },
+      {
+        "id": "pa_voc11",
+        "question": "يَا عَبْدَ اللهِ! — 'عَبْدَ' jest w bierniku, bo:",
+        "translation": "(لماذا عَبْدَ منصوب؟)",
+        "options": [
+          "To wołacz z idafą (منادى مضاف)",
+          "To dopełnienie bliższe",
+          "To tamyīz",
+          "To ḥāl"
+        ],
+        "correct": "To wołacz z idafą (منادى مضاف)",
+        "explanation": "Poprawnie: عَبْدَ = wołacz idafowy (منادى مضاف). عَبْدَ اللهِ = Sługo Boga (= ʿAbdullāh — imię!). Idafa: عَبْد + الله (dopełniacz). Wołacz idafowy ZAWSZE w bierniku. Inne: يَا أَبَا بَكْرٍ (O Abū Bakrze!), يَا أُمَّ المُؤمِنِينَ (O Matko wierzących!). Kunya (كُنْيَة = patronimik) w wołaczu: أَبُو → أَبَا (biernik), أُمُّ → أُمَّ (biernik)."
+      },
+      {
+        "id": "pa_voc12",
+        "question": "Forma wołacza dla اللهُ (Bóg) to:",
+        "translation": "(ما صيغة نداء الله؟)",
+        "options": [
+          "اللَّهُمَّ!",
+          "يَا اللهُ!",
+          "يَا إلَهُ!",
+          "أَيُّهَا اللهُ!"
+        ],
+        "correct": "اللَّهُمَّ!",
+        "explanation": "Poprawnie: 'اللَّهُمَّ' (Allāhumma) = O Boże! To WYJĄTKOWA forma — jedyny wyraz w arabskim, który łączy الـ + wołacz BEZ يَا. Zamiast يَا dodaje się مَّ na końcu: اللهُ + مَّ = اللَّهُمَّ. *يَا اللهُ jest rzadkie/dyskusyjne. اللَّهُمَّ jest NIEZWYKLE częste w modlitwie: اللَّهُمَّ اغْفِرْ لِي = O Boże, przebacz mi! To jedyny wyraz z taką formacją w całym języku."
+      },
+      {
+        "id": "pa_voc13",
+        "question": "يَا أَبَتِ! / يَا أُمَّتِ! — co oznacza ـتِ?",
+        "translation": "(ما وظيفة التاء في يا أبتِ؟)",
+        "options": [
+          "Zastępuje ي dzierżawcze (= mój ojcze/moja matko)",
+          "Końcówka żeńska",
+          "Końcówka l. mn.",
+          "Nic — ozdobna"
+        ],
+        "correct": "Zastępuje ي dzierżawcze (= mój ojcze/moja matko)",
+        "explanation": "Poprawnie: ـتِ w يَا أَبَتِ zastępuje ي (zaimek 1. os.). يَا أَبَتِ = يَا أَبِي = O mój ojcze! Z Koranu (Sura Yūsuf): 'يَا أَبَتِ إِنِّي رَأَيْتُ...' = O ojcze mój, widziałem... To specjalna forma wołacza poetycko-koranicznego. يَا أُمَّتِ = O moja matko! (rzadziej). Ta forma jest bardziej emocjonalna niż يَا أَبِي."
+      },
+      {
+        "id": "pa_voc14",
+        "question": "وَا مُعْتَصِمَاه! — 'وَا' oznacza:",
+        "translation": "(ما معنى وَا في وَا معتصماه؟)",
+        "options": [
+          "Partykuła lamentu/wezwania o pomoc (نُدْبَة)",
+          "To samo co يَا",
+          "Spójnik 'i'",
+          "Partykuła pytająca"
+        ],
+        "correct": "Partykuła lamentu/wezwania o pomoc (نُدْبَة)",
+        "explanation": "Poprawnie: وَا (wā) = partykuła lamentu (نُدْبَة). وَا مُعْتَصِمَاه! = O al-Muʿtaṣimie! (wołanie o pomoc). Historycznie: kobieta w Amorium wezwała kalifa al-Muʿtaṣima, który ruszył z armią. Gramatycznie: نُدْبَة używa وَا (nie يَا) + alif-ha na końcu: -َاه. To forma wyrażająca ból, żal lub desperackie wezwanie — nie zwykły wołacz."
+      },
+      {
+        "id": "pa_voc15",
+        "question": "Który wołacz jest poprawny?",
+        "translation": "(أي نداء صحيح؟)",
+        "options": [
+          "يَا طَالِبَ المعرفةِ!",
+          "يَا الطَّالِبُ!",
+          "يَا طَالِبٍ!",
+          "يَا الطَّالِبَ!"
+        ],
+        "correct": "يَا طَالِبَ المعرفةِ!",
+        "explanation": "Poprawnie: يَا طَالِبَ المعرفةِ! = O poszukiwaczu wiedzy! Wołacz idafowy w bierniku: طَالِبَ. BŁĘDNE: *يَا الطَّالِبُ (الـ bezpośrednio po يَا ❌ — trzeba أَيُّهَا), *يَا طَالِبٍ (dopełniacz po يَا ❌), *يَا الطَّالِبَ (الـ po يَا ❌). Reguły: يَا + prosty → ḍamma, يَا + idafa → biernik, يَا + الـ → trzeba أَيُّهَا/أَيَّتُهَا."
+      }
+    ]
+  },
+  {
+    "key": "oath_expressions",
+    "name": "Przysięga (القَسَم)",
+    "description": "أسلوب القسم — والله/بالله/تالله",
+    "iconName": "hand.raised",
+    "color": "#f472b6",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "pa_oat1",
+        "question": "_____ لَأَجْتَهِدَنَّ! (Na Boga, będę się starał!)",
+        "translation": "(Na Boga, będę się starał!)",
+        "options": [
+          "وَاللهِ",
+          "وَاللهُ",
+          "وَاللهَ",
+          "بِاللهَ"
+        ],
+        "correct": "وَاللهِ",
+        "explanation": "Poprawnie: 'وَاللهِ' (wallāhi) — przysięga z و (wāw al-qasam). و jest przyimkiem przysięgi + wyraz w DOPEŁNIACZU: اللهِ. Odpowiedź na przysięgę (جواب القسم) musi mieć لَـ + nun dobitny (نون التوكيد): لَأَجْتَهِدَنَّ (forma dobitna). W polskim: 'Na Boga!' — przyimek 'na' + biernik. W arabskim: و/بِ/تَ + dopełniacz. Trzy przyimki przysięgi!"
+      },
+      {
+        "id": "pa_oat2",
+        "question": "_____ لَا أَكْذِبُ! (Na Boga, nie kłamię!)",
+        "translation": "(Na Boga, nie kłamię!)",
+        "options": [
+          "بِاللهِ",
+          "بِاللهُ",
+          "بِاللهَ",
+          "مَعَ اللهِ"
+        ],
+        "correct": "بِاللهِ",
+        "explanation": "Poprawnie: 'بِاللهِ' (billāhi) — przysięga z بِ (bā al-qasam). بِ + dopełniacz. Uwaga na odpowiedź: لَا أَكْذِبُ (czas teraźniejszy + przeczenie). Reguły جواب القسم: 1) twierdzący przyszły: لَـ + نون التوكيد (لَأَفْعَلَنَّ); 2) twierdzący teraźniejszy: إنَّ + لَـ (إنِّي لَأَفْعَلُ); 3) przeczący: لَا + teraźniejszy (لَا أَفْعَلُ). Różne odpowiedzi = różne reguły!"
+      },
+      {
+        "id": "pa_oat3",
+        "question": "_____ لَقَدْ جِئْتُمْ شَيْئاً إِدّاً! (Na Boga, uczyniliście rzecz straszną! — Koran)",
+        "translation": "(Na Boga, uczyniliście rzecz straszną! — Koran 19:89)",
+        "options": [
+          "تَاللهِ",
+          "تَاللهُ",
+          "تَاللهَ",
+          "وَاللهِ"
+        ],
+        "correct": "تَاللهِ",
+        "explanation": "Poprawnie: 'تَاللهِ' (tallāhi) — przysięga z تَ (tā al-qasam). Najrzadszy z trzech przyimków. تَ używa się TYLKO z wyrazem الله (nie z innymi): *تَالقرآنِ ❌, ale وَالقرآنِ ✅. Z Koranu (19:89): silna przysięga wyrażająca szok. لَقَدْ = لَـ (przysięga) + قَدْ (potwierdzenie) — podwójne wzmocnienie. W polskim: 'Na Boga!' — jedno wyrażenie; w arabskim: trzy warianty z niuansami."
+      },
+      {
+        "id": "pa_oat4",
+        "question": "وَالعَصْرِ إِنَّ الإنسانَ لَفِي خُسْرٍ — 'وَالعَصْرِ' to:",
+        "translation": "(ما إعراب والعصرِ؟)",
+        "options": [
+          "Przysięga — و القسم + dopełniacz",
+          "Spójnik + podmiot",
+          "Wołacz",
+          "Okolicznik czasu"
+        ],
+        "correct": "Przysięga — و القسم + dopełniacz",
+        "explanation": "Poprawnie: 'وَالعَصْرِ' — przysięga koraniczna (Sura 103). و = wāw al-qasam (przyimek przysięgi), العَصْرِ w dopełniaczu = 'na czas/epokę'. Odpowiedź: إِنَّ الإنسانَ لَفِي خُسْرٍ (zaiste człowiek jest na stracie). إِنَّ + لَـ = wzorzec odpowiedzi przysięgi dla zdania imiennego. Koran często przysięga na elementy natury: وَالشَّمْسِ (na słońce), وَاللَّيْلِ (na noc)."
+      },
+      {
+        "id": "pa_oat5",
+        "question": "Odpowiedź przysięgi (جواب القسم) dla przyszłości twierdzenia wymaga:",
+        "translation": "(ما حكم جواب القسم في المستقبل المثبت؟)",
+        "options": [
+          "لَـ + نون التوكيد (لَأَفْعَلَنَّ)",
+          "مَا + فعل (ما أفعل)",
+          "لَنْ + فعل (لن أفعل)",
+          "سَوْفَ فقط"
+        ],
+        "correct": "لَـ + نون التوكيد (لَأَفْعَلَنَّ)",
+        "explanation": "Poprawnie: twierdzący przyszły po przysięgi: لَـ (lām al-qasam) + czas. teraź. + نون التوكيد الثقيلة (ـنَّ): وَاللهِ لَأَدْرُسَنَّ = Na Boga, BĘDĘ studiował! نون التوكيد zmienia samogłoskę: يَدْرُسُ → يَدْرُسَنَّ (fatha przed نَّ). Dwa typy: ثقيلة (-نَّ, podwojona, częstsza) i خفيفة (-نْ, lekka, rzadsza). W polskim nie ma odpowiednika — dobitność wyrażamy intonacją."
+      },
+      {
+        "id": "pa_oat6",
+        "question": "أُقْسِمُ بِاللهِ znaczy:",
+        "translation": "(ماذا يعني أُقْسِمُ بِالله؟)",
+        "options": [
+          "Przysięgam na Boga (forma czasownikowa)",
+          "Pytam Boga",
+          "Modlę się do Boga",
+          "Wierzę w Boga"
+        ],
+        "correct": "Przysięgam na Boga (forma czasownikowa)",
+        "explanation": "Poprawnie: 'أُقْسِمُ بِاللهِ' (uqsimu billāhi) = przysięgam na Boga. أَقْسَمَ (forma IV od ق-س-م) = przysiągł. To przysięga CZASOWNIKOWA (قسم بالفعل) — oprócz przyimkowej (قسم بالحرف: وَاللهِ). Obie formy poprawne, ale وَاللهِ jest krótsza i częstsza w mowie. أُقْسِمُ jest bardziej formalna. W Koranie: لَا أُقْسِمُ بِهَذَا البَلَدِ = przysięgam na to miasto (لَا tu jest wzmacniające, nie przeczące!)."
+      },
+      {
+        "id": "pa_oat7",
+        "question": "وَحَيَاتِكَ! znaczy:",
+        "translation": "(ماذا يعني وحياتك؟)",
+        "options": [
+          "Na twoje życie! (przysięga)",
+          "Z twoim życiem!",
+          "Dla twojego życia!",
+          "O twoje życie! (wołacz)"
+        ],
+        "correct": "Na twoje życie! (przysięga)",
+        "explanation": "Poprawnie: 'وَحَيَاتِكَ' (wa-ḥayātika) = Na twoje życie! — przysięga z و + dopełniacz. W arabskim można przysięgać na różne rzeczy: على حياتي (na moje życie), وَرَأسِي (na moją głowę), وَشَرَفِي (na mój honor). W islamie: przysięganie na coś INNEGO niż Bóg jest teologicznie dyskusyjne. Koran przysięga na stworzenia (وَالشَّمْسِ), ale to przywilej Boga."
+      },
+      {
+        "id": "pa_oat8",
+        "question": "لَعَمْرُكَ إِنَّهُمْ لَفِي سَكْرَتِهِمْ (Koran 15:72) — لَعَمْرُكَ to:",
+        "translation": "(ما معنى لَعَمْرُكَ؟)",
+        "options": [
+          "Na twoje życie! (przysięga z لَـ)",
+          "Twoje lata!",
+          "Na twoją wiedzę!",
+          "Z twoim wiekiem!"
+        ],
+        "correct": "Na twoje życie! (przysięga z لَـ)",
+        "explanation": "Poprawnie: 'لَعَمْرُكَ' = Na twoje życie! عَمْر = życie (w kontekście przysięgi, różne od عُمْر = wiek). لَـ = lām al-ibtidāʾ (lām rozpoczynająca). To przysięga skierowana do Proroka. Odpowiedź: إِنَّهُمْ لَفِي سَكْرَتِهِمْ = zaiste oni są w swoim upojeniu. Struktura: لَعَمْرُكَ jest خبر (orzeczeniem) ukrytego مبتدأ: (قَسَمِي) لَعَمْرُكَ = (moja przysięga to) twoje życie."
+      },
+      {
+        "id": "pa_oat9",
+        "question": "Przysięga z لَا + czas przeszły: وَاللهِ لَقَدْ نَجَحَ — znaczy:",
+        "translation": "(ماذا يعني والله لقد نجح؟)",
+        "options": [
+          "Na Boga, on NAPRAWDĘ zdał!",
+          "Na Boga, nie zdał!",
+          "Na Boga, zda!",
+          "Boże, niech zda!"
+        ],
+        "correct": "Na Boga, on NAPRAWDĘ zdał!",
+        "explanation": "Poprawnie: لَقَدْ نَجَحَ — przysięga potwierdzająca PRZESZŁOŚĆ. Wzorzec: لَـ (lām przysięgi) + قَدْ (potwierdzenie) + czas przeszły. لَقَدْ = 'zaiste/naprawdę już'. لَـ wzmacnia, قَدْ potwierdza, razem: absolutna pewność o przeszłym zdarzeniu. W polskim: 'Na Boga, on NAPRAWDĘ zdał!' — podwójne nacisk. Porównaj przyszły: لَيَنْجَحَنَّ (na pewno zda — z نون التوكيد)."
+      },
+      {
+        "id": "pa_oat10",
+        "question": "وَالَّذِي نَفْسِي بِيَدِهِ — to przysięga przez:",
+        "translation": "(بماذا يُقسم في هذه العبارة؟)",
+        "options": [
+          "Tego, w którego ręku jest ma dusza (= Bóg)",
+          "Swoją duszę",
+          "Swoją rękę",
+          "Proroka"
+        ],
+        "correct": "Tego, w którego ręku jest ma dusza (= Bóg)",
+        "explanation": "Poprawnie: 'وَالَّذِي نَفْسِي بِيَدِهِ' = Na Tego, w którego ręku jest moja dusza (= Bóg). Bardzo częsta forma przysięgi w hadisach (wypowiedziach Proroka). الَّذِي = który (zaimek względny), نَفْسِي = moja dusza, بِيَدِهِ = w Jego ręku. Forma peryfrastyczna — zamiast powiedzieć wprost 'Bóg', używa opisu. W polskim: 'Jak Boga kocham!' — też peryfrastyczna przysięga."
+      },
+      {
+        "id": "pa_oat11",
+        "question": "Przysięga z czasem przeszłym przeczącym: وَاللهِ مَا فَعَلْتُ — znaczy:",
+        "translation": "(ماذا يعني والله ما فعلتُ؟)",
+        "options": [
+          "Na Boga, nie zrobiłem tego!",
+          "Na Boga, zrobiłem to!",
+          "Na Boga, zrobię to!",
+          "Boże, co zrobiłem!"
+        ],
+        "correct": "Na Boga, nie zrobiłem tego!",
+        "explanation": "Poprawnie: مَا فَعَلْتُ = nie zrobiłem. W odpowiedzi przysięgi: przeczenie przeszłe = مَا + czas przeszły. BEZ لَـ (لَـ jest tylko w twierdzeniu). Porównaj: twierdzenie przeszłe: لَقَدْ فَعَلْتُ (zrobiłem), przeczenie przeszłe: مَا فَعَلْتُ (nie zrobiłem), twierdzenie przyszłe: لَأَفْعَلَنَّ (zrobię), przeczenie przyszłe: لَا أَفْعَلُ (nie zrobię). Cztery wzorce odpowiedzi!"
+      },
+      {
+        "id": "pa_oat12",
+        "question": "Sura 91 zaczyna się: وَالشَّمْسِ وَضُحَاهَا — ile przysiąg jest w niej?",
+        "translation": "(كم قسماً في بداية سورة الشمس؟)",
+        "options": [
+          "11 przysiąg (najdłuższy ciąg w Koranie)",
+          "3 przysięgi",
+          "1 przysięga",
+          "7 przysiąg"
+        ],
+        "correct": "11 przysiąg (najdłuższy ciąg w Koranie)",
+        "explanation": "Poprawnie: Sura 91 (الشمس) ma 11 przysiąg pod rząd — NAJDŁUŻSZY ciąg w Koranie! وَالشَّمْسِ (na słońce), وَالقَمَرِ (na księżyc), وَالنَّهَارِ (na dzień), وَاللَّيْلِ (na noc), وَالسَّمَاءِ (na niebo), وَالأَرْضِ (na ziemię), وَنَفْسٍ (na duszę)... Odpowiedź (جواب): قَدْ أَفْلَحَ مَنْ زَكَّاهَا = zaiste prosperował ten, kto ją oczyścił. 11 przysiąg → 1 odpowiedź!"
+      },
+      {
+        "id": "pa_oat13",
+        "question": "أَيْمُنُ اللهِ — staroarabska forma przysięgi, znaczy:",
+        "translation": "(ماذا تعني أيمن الله؟)",
+        "options": [
+          "Na prawa/przysięgi Boga! (= przysięgam)",
+          "Prawo Boga!",
+          "Wiara Boga!",
+          "Bóg jest prawy!"
+        ],
+        "correct": "Na prawa/przysięgi Boga! (= przysięgam)",
+        "explanation": "Poprawnie: 'أَيْمُنُ اللهِ' (aymunu llāhi) — archaiczna forma: أَيْمُن = l. mn. od يَمِين (prawica/przysięga). Dosł.: 'przysięgi Boga'. Skrócone do إِيمِ اللهِ w potocznym. W Koranie nie występuje, ale w hadisach i klasycznej prozie tak. Etymologia: يَمِين = prawica → przysięga (bo przysięgano podnosząc prawą rękę, jak w wielu kulturach, w tym polskiej — 'podnoszę rękę')."
+      },
+      {
+        "id": "pa_oat14",
+        "question": "Czy w arabskim KAŻDY wyraz po و na początku sury jest przysięga?",
+        "translation": "(هل كل واو في بداية السورة واو قسم؟)",
+        "options": [
+          "Nie — و może być spójnik (عاطفة), nie tylko przysięga",
+          "Tak — zawsze przysięga",
+          "Nie — nigdy przysięga",
+          "Tylko z الله"
+        ],
+        "correct": "Nie — و może być spójnik (عاطفة), nie tylko przysięga",
+        "explanation": "WAŻNE: و na początku zdania to albo وَاو القسم (przysięga) albo وَاو العطف (spójnik 'i'). Jak odróżnić? 1) Przysięga: + dopełniacz + odpowiedź z لَـ/إنَّ; 2) Spójnik: łączy dwa zdania/wyrazy. W Koranie na początku sury: zwykle przysięga (koraniczny kontekst). Ale وَقَالَ = 'i powiedział' — to spójnik. Kontekst decyduje!"
+      },
+      {
+        "id": "pa_oat15",
+        "question": "حَلَفَ بِاللهِ أَنَّهُ صَادِقٌ — 'حَلَفَ' to:",
+        "translation": "(ما معنى حَلَفَ؟)",
+        "options": [
+          "Przysiągł (forma I od ح-ل-ف)",
+          "Zmienił (od خ-ل-ف)",
+          "Obrócił się",
+          "Zaprzeczył"
+        ],
+        "correct": "Przysiągł (forma I od ح-ل-ف)",
+        "explanation": "Poprawnie: 'حَلَفَ' (ḥalafa) = przysiągł. Rdzeń: ح-ل-ف (przysięga). حَلَفَ بِاللهِ أَنَّهُ صَادِقٌ = przysiągł na Boga, że jest prawdomówny. Synonimy: أَقْسَمَ (forma IV od ق-س-م), آلَى (od أ-ل-ي). Rzeczownik: حَلِف/حِلْف (sojusz/przymierze — bo zawierany pod przysięgą), يَمِين (przysięga/prawica), قَسَم (przysięga). Porównaj: خَلَفَ (خ nie ح) = następował/zastępował — inny rdzeń!"
+      }
+    ]
+  },
+  {
+    "key": "root_system",
+    "name": "System rdzeni (الجُذُور)",
+    "description": "نظام الجذور الثلاثية والرباعية",
+    "iconName": "tree",
+    "color": "#fbbf24",
+    "level": "intermediate",
+    "items": [
+      {
+        "id": "pa_rs1",
+        "question": "Rdzeń ك-ت-ب oznacza:",
+        "translation": "(ما معنى جذر ك-ت-ب؟)",
+        "options": [
+          "Pisanie/zapisywanie",
+          "Czytanie",
+          "Mówienie",
+          "Chodzenie"
+        ],
+        "correct": "Pisanie/zapisywanie",
+        "explanation": "Poprawnie: ك-ت-ب (k-t-b) = pisanie. Z tego rdzenia: كَتَبَ (pisał), كِتَاب (książka), كَاتِب (pisarz), مَكْتَب (biuro/biurko), مَكْتَبَة (biblioteka), كِتَابَة (pisanie), كُتُب (książki), مَكْتُوب (napisany), اِسْتَكْتَبَ (poprosił o napisanie). JEDEN rdzeń → DZIESIĄTKI wyrazów! To fundament arabskiego — rdzeń niesie ZNACZENIE PODSTAWOWE, wzorce dodają niuanse."
+      },
+      {
+        "id": "pa_rs2",
+        "question": "Większość rdzeni arabskich ma:",
+        "translation": "(كم حرفاً في معظم الجذور العربية؟)",
+        "options": [
+          "3 spółgłoski (trójspółgłoskowe)",
+          "2 spółgłoski",
+          "4 spółgłoski",
+          "5 spółgłosek"
+        ],
+        "correct": "3 spółgłoski (trójspółgłoskowe)",
+        "explanation": "Poprawnie: ~85% rdzeni arabskich to rdzenie TRÓJSPÓŁGŁOSKOWE (ثُلَاثِيّ): ك-ت-ب, ع-ل-م, ق-ر-أ. Istnieją też CZTEROSPÓŁGŁOSKOWE (رُبَاعِيّ): ت-ر-ج-م (tłumaczenie), ز-ل-ز-ل (trzęsienie). Rzadko pięciospółgłoskowe: ع-ن-ك-ب (pająk). W polskim: rdzenie nie są tak systematyczne — 'pisać/pismo/pisarz' mają wspólny rdzeń 'pis-', ale system jest mniej regularny niż arabski."
+      },
+      {
+        "id": "pa_rs3",
+        "question": "Z rdzenia ع-ل-م pochodzi:",
+        "translation": "(ماذا يأتي من جذر ع-ل-م؟)",
+        "options": [
+          "عِلْم (wiedza), عَالِم (uczony), مَعْلُومَات (informacje)",
+          "عَمَل (praca), عَامِل (robotnik)",
+          "عَالَم (świat), عُمْر (wiek)",
+          "عِلْم (wiedza), عَمَل (praca)"
+        ],
+        "correct": "عِلْم (wiedza), عَالِم (uczony), مَعْلُومَات (informacje)",
+        "explanation": "Poprawnie: ع-ل-م (ʿ-l-m) = wiedza/poznanie. Pochodne: عِلْم (wiedza), عَالِم (uczony — imiesłów czynny), مَعْلُوم (znany — imiesłów bierny), مَعْلُومَات (informacje), تَعْلِيم (nauczanie — masdar II), مُعَلِّم (nauczyciel — imiesłów II), عَلَّمَ (nauczył — forma II), تَعَلَّمَ (nauczył się — V). Uwaga: عَالَم (świat) to TEN SAM rdzeń! Świat = to, co jest poznawane."
+      },
+      {
+        "id": "pa_rs4",
+        "question": "Jak znaleźć rdzeń wyrazu 'مُسْتَشْفَى' (szpital)?",
+        "translation": "(ما جذر مستشفى؟)",
+        "options": [
+          "ش-ف-ي (leczenie) — odejmij مُسْتَ i ى",
+          "م-ش-ف (odkrywanie)",
+          "س-ش-ف (badanie)",
+          "ش-ف-ع (wstawianie się)"
+        ],
+        "correct": "ش-ف-ي (leczenie) — odejmij مُسْتَ i ى",
+        "explanation": "Poprawnie: rdzeń مُسْتَشْفَى to ش-ف-ي (shafā = wyleczył). Analiza: مُسْتَفْعَل → مُسْتَشْفَى = 'miejsce, gdzie szuka się leczenia'. Prefiks مُسْتَـ = wzorzec formy X (اِسْتَفْعَلَ). Jak wyodrębnić rdzeń? 1) Zidentyfikuj wzorzec (مُسْتَفْعَل), 2) Podstaw litery: مُسْتَـ(ش)ـ(فَ)ـ(ى) → ش-ف-ي. To jak łamigłówka — odejmij 'narzędzia gramatyczne', zostaje rdzeń!"
+      },
+      {
+        "id": "pa_rs5",
+        "question": "Rdzeń wyrazu 'اِسْتِقْلَال' (niepodległość) to:",
+        "translation": "(ما جذر اِسْتِقْلال؟)",
+        "options": [
+          "ق-ل-ل (mało/niezależność)",
+          "س-ق-ل (polerowanie)",
+          "ق-ل-ع (wyrywanie)",
+          "ق-ل-د (naśladowanie)"
+        ],
+        "correct": "ق-ل-ل (mało/niezależność)",
+        "explanation": "Poprawnie: ق-ل-ل (q-l-l) = mało/niezależnie. اِسْتَقَلَّ (forma X) = uniezależnił się (dosł.: uznał się za niezależnego/osobnego). اِسْتِقْلَال = masdar X = niepodległość. Wzorzec: اِسْتِفْعَال → اِسْتِقْلَال. Rdzeń podwojony: ق-ل-ل (ل powtórzone). قَلِيل = mało, قَلَّ = zmniejszył się, أَقَلَّ = zmniejszył, اِسْتَقَلَّ = uniezależnił się. Semantyczny łańcuch: mało → osobno → niezależnie!"
+      },
+      {
+        "id": "pa_rs6",
+        "question": "Które wyrazy mają TEN SAM rdzeń?",
+        "translation": "(أي كلمات لها نفس الجذر؟)",
+        "options": [
+          "سَلَام, إِسْلَام, مُسْلِم",
+          "سَلَام, سَمَاء, سَلِيم",
+          "إِسْلَام, إِلْهَام, إِقْدَام",
+          "مُسْلِم, مُعَلِّم, مُسَافِر"
+        ],
+        "correct": "سَلَام, إِسْلَام, مُسْلِم",
+        "explanation": "Poprawnie: rdzeń س-ل-م (s-l-m) = pokój/poddanie/bezpieczeństwo. سَلَام (pokój — masdar), إِسْلَام (islam = poddanie się Bogu — masdar IV), مُسْلِم (muzułmanin = poddający się — imiesłów IV), سَلَامَة (bezpieczeństwo), تَسْلِيم (oddanie — masdar II), اِسْتِسْلَام (kapitulacja — masdar X), سَلِيم (zdrowy/nienaruszony). Jeden rdzeń — cała rodzina semantyczna!"
+      },
+      {
+        "id": "pa_rs7",
+        "question": "Litery م, ا, ت, س, ن, و, ي na początku/końcu wyrazu są zazwyczaj:",
+        "translation": "(حروف الزيادة — ما هي؟)",
+        "options": [
+          "Literami dodanymi (زَائِدَة) — nie częścią rdzenia",
+          "Zawsze częścią rdzenia",
+          "Samogłoskami",
+          "Błędami"
+        ],
+        "correct": "Literami dodanymi (زَائِدَة) — nie częścią rdzenia",
+        "explanation": "Poprawnie: م, ا, ت, س, ن, و, ي — zapamiętaj je jako 'سَأَلْتُمُونِيهَا' (spytaliście mnie o nią). To litery DODANE (حُرُوف الزِيَادَة) — pojawiają się we wzorcach, ale NIE są częścią rdzenia. Np.: مَكْتَب: م = dodane, ك-ت-ب = rdzeń. اِسْتَخْرَجَ: اِسْتَ = dodane, خ-ر-ج = rdzeń. Jak znaleźć rdzeń? Odejmij حُرُوف الزِيَادَة. ALE: te litery MOGĄ być częścią rdzenia (نَامَ: ن jest rdzeniowe!)."
+      },
+      {
+        "id": "pa_rs8",
+        "question": "Rdzeń wyrazu 'مَدْرَسَة' (szkoła) to:",
+        "translation": "(ما جذر مدرسة؟)",
+        "options": [
+          "د-ر-س (studiowanie)",
+          "م-د-ر (zarządzanie)",
+          "د-ر-ج (stopień)",
+          "م-ر-س (ćwiczenie)"
+        ],
+        "correct": "د-ر-س (studiowanie)",
+        "explanation": "Poprawnie: د-ر-س (d-r-s) = studiowanie/uczenie się. مَدْرَسَة → wzorzec مَفْعَلَة = miejsce czynności. م = dodane (preambuła miejsca), ة = dodane (żeńskie). Rdzeń: د-ر-س. Z tego rdzenia: دَرَسَ (studiował), دَرْس (lekcja), مُدَرِّس (nauczyciel — II), تَدْرِيس (nauczanie — masdar II), دِرَاسَة (studia), دِرَاسِيّ (akademicki). مَفْعَل/مَفْعَلَة = wzorzec nazw MIEJSC: مَكْتَب, مَطْبَخ, مَسْجِد."
+      },
+      {
+        "id": "pa_rs9",
+        "question": "Czym różni się rdzeń od wzorca (وَزْن)?",
+        "translation": "(ما الفرق بين الجذر والوزن؟)",
+        "options": [
+          "Rdzeń = znaczenie podstawowe, wzorzec = kategoria gramatyczna",
+          "To samo",
+          "Rdzeń jest dłuższy",
+          "Wzorzec jest rzadszy"
+        ],
+        "correct": "Rdzeń = znaczenie podstawowe, wzorzec = kategoria gramatyczna",
+        "explanation": "KLUCZOWE rozróżnienie: RDZEŃ (جَذْر) = 3-4 spółgłoski niosące ZNACZENIE: ك-ت-ب = pisanie. WZORZEC (وَزْن) = szablon samogłosek/dodanych liter niosący KATEGORIĘ: فَاعِل = wykonawca czynności, مَفْعُول = obiekt czynności, فِعَال = masdar. Rdzeń × wzorzec = wyraz: ك-ت-ب × فَاعِل = كَاتِب (pisarz), ك-ت-ب × مَفْعُول = مَكْتُوب (napisany). To jak współrzędne: rdzeń = oś znaczenia, wzorzec = oś funkcji!"
+      },
+      {
+        "id": "pa_rs10",
+        "question": "Rdzeń ج-م-ع oznacza:",
+        "translation": "(ما معنى جذر ج-م-ع؟)",
+        "options": [
+          "Zbieranie/łączenie",
+          "Słuchanie",
+          "Piękno",
+          "Głód"
+        ],
+        "correct": "Zbieranie/łączenie",
+        "explanation": "Poprawnie: ج-م-ع (j-m-ʿ) = zbieranie/łączenie. جَمَعَ (zebrał), جَامِع (meczet piątkowy/zbiorczy), جَمْع (zbieranie/l. mnoga), مَجْمُوعَة (grupa/kolekcja), جَامِعَة (uniwersytet = 'zbierająca'), جُمْعَة (piątek = dzień zgromadzenia), اِجْتِمَاع (spotkanie — VII), مُجْتَمَع (społeczeństwo — imiesłów VIII), إِجْمَاع (konsensus — masdar IV). Rdzeń niesamowicie produktywny!"
+      },
+      {
+        "id": "pa_rs11",
+        "question": "Rdzeń wyrazu 'تَارِيخ' (historia) to:",
+        "translation": "(ما جذر تاريخ؟)",
+        "options": [
+          "أ-ر-خ (datowanie)",
+          "ت-ر-خ",
+          "ت-ا-ر",
+          "ر-و-خ"
+        ],
+        "correct": "أ-ر-خ (datowanie)",
+        "explanation": "Poprawnie: أ-ر-خ (ʾ-r-kh) = datowanie. تَارِيخ → wzorzec تَفْعِيل (masdar formy II): أَرَّخَ (forma II) = datował/zapisał datę → تَأْرِيخ → uproszczone: تَارِيخ. Uwaga: ت na początku = dodana (z wzorca), NIE część rdzenia! Alif (أ) na początku rdzenia jest 'ukryta' w formie تَارِيخ. To pułapka — początkowa ت wygląda jak rdzenikowa, ale jest częścią wzorca."
+      },
+      {
+        "id": "pa_rs12",
+        "question": "Ile rdzeni ma język arabski (szacunkowo)?",
+        "translation": "(كم جذراً في اللغة العربية تقريباً؟)",
+        "options": [
+          "~10 000 rdzeni trójspółgłoskowych",
+          "~500",
+          "~100 000",
+          "~1 000"
+        ],
+        "correct": "~10 000 rdzeni trójspółgłoskowych",
+        "explanation": "Szacunkowo: ~10 000 rdzeni trójspółgłoskowych (+~2000 czterospółgłoskowych). Z każdego rdzenia: 10-50+ wyrazów. Łączny słownik: >100 000 wyrazów. Porównaj z polskim: ~150 000 haseł, ale rdzenie nie są tak systematycznie zorganizowane. Matematycznie: 28 liter × 28 × 28 = 21 952 możliwych kombinacji, ale nie wszystkie istnieją (~45% wypełnione). System rdzeni to GENIALNA kompresja — mała liczba 'atomów' → ogromna liczba wyrazów."
+      },
+      {
+        "id": "pa_rs13",
+        "question": "Rdzeń ح-ر-م oznacza:",
+        "translation": "(ما معنى جذر ح-ر-م؟)",
+        "options": [
+          "Zakazywanie/świętość",
+          "Kochanie",
+          "Wyjazd",
+          "Pisanie"
+        ],
+        "correct": "Zakazywanie/świętość",
+        "explanation": "Poprawnie: ح-ر-م (ḥ-r-m) = zakazywanie/to, co chronione/święte. حَرَمَ (zakazał), حَرَام (zabronione), حَرِيم (harem = strefa chroniona), مُحَرَّم (miesiąc Muḥarram = 'zakazany' — walka zakazana), إِحْرَام (stan pielgrzymkowy), حُرْمَة (świętość/nienaruszalność), مَحْرَم (krewny zakazany do małżeństwa). Fascynujące: 'zakaz' i 'świętość' to TEN SAM rdzeń — co święte jest zakazane do naruszenia!"
+      },
+      {
+        "id": "pa_rs14",
+        "question": "Wyrazy مَلِك (król), مِلْك (posiadłość), مَالِك (właściciel) mają rdzeń:",
+        "translation": "(ما الجذر المشترك؟)",
+        "options": [
+          "م-ل-ك (panowanie/posiadanie)",
+          "م-ل-ق (pochlebstwo)",
+          "م-ل-أ (napełnianie)",
+          "ل-ك-م (bicie)"
+        ],
+        "correct": "م-ل-ك (panowanie/posiadanie)",
+        "explanation": "Poprawnie: م-ل-ك (m-l-k) = panowanie/posiadanie. مَلِك (król), مَلِكَة (królowa), مُلْك (królestwo), مِلْك (posiadłość), مَالِك (właściciel), مَمْلَكَة (królestwo/monarchia), تَمَلُّك (posiadanie), مَمْلُوك (niewolnik — dosł. 'posiadany'), مَلَاك (anioł — dosł. 'zwiastun'). W polskim: 'król/królestwo/królewski' — ten sam rdzeń 'król-', ale mniej systematyczny niż arabski."
+      },
+      {
+        "id": "pa_rs15",
+        "question": "Jaki rdzeń łączy: كَلِمَة (słowo), تَكَلَّمَ (mówił), مُتَكَلِّم (mówca)?",
+        "translation": "(ما الجذر المشترك؟)",
+        "options": [
+          "ك-ل-م (mowa/mówienie)",
+          "ك-ل-ف (kosztowanie)",
+          "ك-م-ل (doskonałość)",
+          "ل-ك-م (bicie)"
+        ],
+        "correct": "ك-ل-م (mowa/mówienie)",
+        "explanation": "Poprawnie: ك-ل-م (k-l-m) = mowa. كَلِمَة (słowo), كَلَام (mowa/dyskurs), تَكَلَّمَ (mówił — forma V), مُتَكَلِّم (mówca/1. osoba gram. — imiesłów V), كَلَّمَ (rozmawiał z — forma II). Ciekawostka: عِلْم الكَلَام = teologia islamska (dosł. 'nauka mowy/dyskursu'). W gramatyce: المُتَكَلِّم = 1. osoba (ja/my), bo 'mówca'. Rdzeń w kulturze arabskiej = fundament myślenia językowego!"
+      }
+    ]
   }
 ]

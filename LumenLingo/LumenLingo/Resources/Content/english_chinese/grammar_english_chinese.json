@@ -15638,5 +15638,2025 @@
         "explanation": "以免影响 = 'so as not to affect/disturb.' This is a standard cinema/theater announcement pattern: 请关闭手机以免影响他人 (please turn off phones so as not to disturb others). Compare purpose words: 为了 (in order to — positive goal), 以便 (so that — positive goal, formal), 以免 (so as not to — negative/avoidance goal), 免得 (miǎnde, lest — colloquial negative). 免得 is the casual version of 以免: 快走吧，免得迟到 (let's go quickly, lest we be late)."
       }
     ]
+  },
+  {
+    "key": "passive_advanced",
+    "name": "Advanced Passive Constructions (高级被动句)",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ec_pav1",
+        "question": "那栋楼_____拆掉了。",
+        "translation": "(That building was demolished.)",
+        "options": [
+          "被",
+          "把",
+          "让",
+          "给"
+        ],
+        "correct": "被",
+        "explanation": "被 (bèi) is the standard passive marker. 被拆掉了 = 'was demolished.' In Chinese, 被 sentences traditionally carry a negative or unpleasant connotation — something bad happened to the subject. 拆掉 = 'tear down/demolish' (拆 tear + 掉 resultative complement). The 了 marks completion. Passive pattern: Subject + 被 + (agent) + verb + complement. When the agent is unknown or unimportant, it can be omitted as here."
+      },
+      {
+        "id": "ec_pav2",
+        "question": "蛋糕_____妹妹吃完了。",
+        "translation": "(The cake was finished by little sister.)",
+        "options": [
+          "被",
+          "把",
+          "给",
+          "让"
+        ],
+        "correct": "被",
+        "explanation": "被 + agent + verb + complement: 被妹妹吃完了 = 'was eaten up by little sister.' The agent (妹妹) appears between 被 and the verb. 吃完 = 'eat up/finish eating' (吃 eat + 完 finish). Compare: 蛋糕被吃完了 (cake was eaten up — no agent) vs. 蛋糕被妹妹吃完了 (cake was eaten up by little sister — agent specified). The 被 passive requires a result complement or 了 to show completion."
+      },
+      {
+        "id": "ec_pav3",
+        "question": "他的手机_____偷走了。",
+        "translation": "(His phone was stolen.)",
+        "options": [
+          "被",
+          "把",
+          "让",
+          "叫"
+        ],
+        "correct": "被",
+        "explanation": "被偷走了 = 'was stolen away.' In Chinese, passive constructions almost always need a complement after the verb: 偷走 (steal away), not just 偷. The 走 complement indicates the item was taken away. This is a critical rule: bare 被 + verb is usually insufficient — you need 被 + verb + complement/了."
+      },
+      {
+        "id": "ec_pav4",
+        "question": "花瓶_____孩子打碎了。",
+        "translation": "(The vase was broken by the child.)",
+        "options": [
+          "让",
+          "把",
+          "被",
+          "给"
+        ],
+        "correct": "让",
+        "explanation": "让 (ràng) in passive use = 'was (done) by.' 让孩子打碎了 = 'was broken by the child.' 让 as a passive marker is more colloquial than 被. Hierarchy of formality: 被 (standard/formal) > 让 (colloquial) > 叫 (very colloquial). All three follow the same pattern: subject + 让/叫/给 + agent + verb + complement."
+      },
+      {
+        "id": "ec_pav5",
+        "question": "作业_____老师批改完了。",
+        "translation": "(The homework was corrected by the teacher.)",
+        "options": [
+          "被",
+          "把",
+          "让",
+          "给"
+        ],
+        "correct": "被",
+        "explanation": "被老师批改完了 = 'was corrected/graded by the teacher.' 批改 (pīgǎi) = 'correct/grade (assignments).' This is a neutral/positive 被 sentence — modern Chinese increasingly uses 被 for neutral situations, unlike traditional grammar where 被 implied misfortune."
+      },
+      {
+        "id": "ec_pav6",
+        "question": "这件事_____大家知道了。",
+        "translation": "(This matter became known to everyone.)",
+        "options": [
+          "叫",
+          "被",
+          "把",
+          "让"
+        ],
+        "correct": "叫",
+        "explanation": "叫 (jiào) as passive marker = 'was (done) by.' 叫大家知道了 = 'became known to everyone.' 叫 is the most colloquial passive marker, primarily used in spoken Chinese and northern dialects. The formality ladder: 被 (written/formal) → 让 (spoken/standard) → 叫 (spoken/colloquial)."
+      },
+      {
+        "id": "ec_pav7",
+        "question": "新方案已经_____通过了。",
+        "translation": "(The new plan has already been approved.)",
+        "options": [
+          "被",
+          "把",
+          "让",
+          "叫"
+        ],
+        "correct": "被",
+        "explanation": "已经被通过了 = 'has already been approved.' Adverb placement in passive: Subject + 已经/没有/都 + 被 + verb + complement. Common adverbs with passives: 已经被 (already was), 没有被 (was not), 都被 (all were), 又被 (again was)."
+      },
+      {
+        "id": "ec_pav8",
+        "question": "衣服_____风吹干了。",
+        "translation": "(The clothes were dried by the wind.)",
+        "options": [
+          "给",
+          "把",
+          "被",
+          "让"
+        ],
+        "correct": "给",
+        "explanation": "给 (gěi) as passive marker = 'was (done) by.' 给风吹干了 = 'was blown dry by the wind.' 给 in passive voice is highly colloquial, common in northern Chinese dialects. Its primary meaning is 'to give,' making it the most semantically distant passive marker. 吹干 = 'blow dry' (吹 blow + 干 dry)."
+      },
+      {
+        "id": "ec_pav9",
+        "question": "他_____认为是最好的选手。",
+        "translation": "(He is considered the best player.)",
+        "options": [
+          "被",
+          "把",
+          "让",
+          "叫"
+        ],
+        "correct": "被",
+        "explanation": "被认为 = 'is considered/regarded as.' This is a fixed passive expression common in formal Chinese. Similar fixed 被 expressions: 被称为 (is called/known as), 被视为 (is regarded as), 被认定为 (is determined to be), 被公认为 (is universally recognized as)."
+      },
+      {
+        "id": "ec_pav10",
+        "question": "那个消息_____证实了。",
+        "translation": "(That news has been confirmed.)",
+        "options": [
+          "已被",
+          "已把",
+          "已让",
+          "已叫"
+        ],
+        "correct": "已被",
+        "explanation": "已被证实了 = 'has already been confirmed.' 已 (yǐ) is the literary/shortened form of 已经 (already), commonly combined with 被 in formal writing. 已被 is a staple of news language, academic writing, and official documents. Contrast: spoken 已经被 vs. written 已被."
+      },
+      {
+        "id": "ec_pav11",
+        "question": "窗户_____打破了，谁干的？",
+        "translation": "(The window was broken — who did it?)",
+        "options": [
+          "被",
+          "把",
+          "让",
+          "给"
+        ],
+        "correct": "被",
+        "explanation": "被打破了 = 'was broken.' Agentless passive: when we don't know or don't care who did it, the agent is omitted. Pattern: Subject + 被 + verb + complement. The follow-up question 谁干的 (who did it?) confirms the agent is unknown. 打破 = 'hit-break' (打 hit + 破 broken)."
+      },
+      {
+        "id": "ec_pav12",
+        "question": "他没有_____邀请参加晚会。",
+        "translation": "(He wasn't invited to the party.)",
+        "options": [
+          "被",
+          "把",
+          "让",
+          "叫"
+        ],
+        "correct": "被",
+        "explanation": "没有被邀请 = 'was not invited.' Negative passive: 没有 + 被 + verb. Important rule: use 没有 (not 不) for negating completed passive actions. Compare: 没有被邀请 (wasn't invited — specific event) vs. 不被接受 (is not accepted — general state)."
+      },
+      {
+        "id": "ec_pav13",
+        "question": "这首歌_____很多人喜欢。",
+        "translation": "(This song is liked by many people.)",
+        "options": [
+          "被",
+          "受",
+          "把",
+          "让"
+        ],
+        "correct": "受",
+        "explanation": "受 (shòu) = 'receive/be subjected to' — a literary/formal passive marker. 受很多人喜欢 = 'is liked by many people.' 受 differs from 被: 受 emphasizes 'receiving' an action and is often used with positive or neutral verbs. Common 受 passives: 受欢迎 (be popular), 受关注 (receive attention), 受批评 (be criticized)."
+      },
+      {
+        "id": "ec_pav14",
+        "question": "这个问题值得_____重视。",
+        "translation": "(This problem deserves to be taken seriously.)",
+        "options": [
+          "被",
+          "把",
+          "让",
+          "给"
+        ],
+        "correct": "被",
+        "explanation": "值得被重视 = 'deserves to be taken seriously.' 值得 (zhíde) + 被 + verb combines 'deserve/worth' with passive voice. However, 值得 can also directly take a verb without 被: 值得重视. The 被 version emphasizes that someone should do the action."
+      },
+      {
+        "id": "ec_pav15",
+        "question": "房间_____打扫得干干净净的。",
+        "translation": "(The room was cleaned spotlessly.)",
+        "options": [
+          "被",
+          "把",
+          "让",
+          "叫"
+        ],
+        "correct": "被",
+        "explanation": "被打扫得干干净净的 = 'was cleaned until spotlessly clean.' This combines passive (被) with a degree complement (得 + description). Pattern: Subject + 被 + verb + 得 + description. 干干净净 is AABB reduplication of 干净 (clean), intensifying it to 'spotlessly clean.' The 的 at the end softens the description."
+      }
+    ]
+  },
+  {
+    "key": "reduplication",
+    "name": "Reduplication Patterns (重叠形式)",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ec_red1",
+        "question": "你去_____吧，很好玩的。",
+        "translation": "(Go try it, it's really fun.)",
+        "options": [
+          "试试",
+          "试了",
+          "试过",
+          "试着"
+        ],
+        "correct": "试试",
+        "explanation": "Verb reduplication (AA pattern): 试试 = 'try a little/give it a try.' Reduplicating a single-syllable verb softens the action, making it sound casual, tentative, or brief. Pattern: V → VV. Common examples: 看看 (take a look), 想想 (think about it), 说说 (talk about it). The reduplication implies 'do it briefly/casually.'"
+      },
+      {
+        "id": "ec_red2",
+        "question": "请_____你的名字。",
+        "translation": "(Please write down your name.)",
+        "options": [
+          "写一写",
+          "写写",
+          "写了",
+          "写过"
+        ],
+        "correct": "写一写",
+        "explanation": "V一V pattern: 写一写 = 'write it (briefly/casually).' Inserting 一 between reduplicated verbs adds a sense of 'just do it once/for a moment.' V一V and VV are largely interchangeable but V一V sounds slightly more polite/tentative. For two-syllable verbs, only ABAB works: 讨论讨论 (discuss it), not *讨一论."
+      },
+      {
+        "id": "ec_red3",
+        "question": "孩子们高_____地跑回家。",
+        "translation": "(The children ran home happily.)",
+        "options": [
+          "高兴兴",
+          "高高兴兴",
+          "高兴了",
+          "高兴的"
+        ],
+        "correct": "高高兴兴",
+        "explanation": "AABB adjective reduplication: 高高兴兴 from 高兴 (happy). AABB intensifies the adjective and adds a vivid, descriptive quality. Common AABB patterns: 干干净净 (spotlessly clean), 漂漂亮亮 (beautifully), 清清楚楚 (crystal clear). Rule: AABB reduplication works with two-syllable adjectives where both characters are meaningful."
+      },
+      {
+        "id": "ec_red4",
+        "question": "她的皮肤_____的。",
+        "translation": "(Her skin is fair/white.)",
+        "options": [
+          "白白",
+          "白了白",
+          "白过",
+          "白着"
+        ],
+        "correct": "白白",
+        "explanation": "AA adjective reduplication: 白白 = 'nicely white/fair.' For single-syllable adjectives, AA reduplication intensifies and adds a pleasant, vivid quality. Common AA adjectives: 红红 (nicely red), 大大 (big and impressive), 小小 (cute and small), 圆圆 (round and cute). Often used with 的: 白白的, 圆圆的, 甜甜的."
+      },
+      {
+        "id": "ec_red5",
+        "question": "我们_____这个方案吧。",
+        "translation": "(Let's discuss this plan [briefly].)",
+        "options": [
+          "讨论讨论",
+          "讨论了",
+          "讨论过",
+          "讨论着"
+        ],
+        "correct": "讨论讨论",
+        "explanation": "ABAB verb reduplication: 讨论讨论 = 'discuss it (briefly/casually).' For two-syllable verbs, reduplication follows ABAB pattern, not AABB. This is a crucial rule! Correct: 讨论讨论, 研究研究, 考虑考虑. Wrong: *讨讨论论. The ABAB pattern softens requests and suggestions."
+      },
+      {
+        "id": "ec_red6",
+        "question": "街上人_____的。",
+        "translation": "(The street is crowded with people.)",
+        "options": [
+          "来来往往",
+          "来去来去",
+          "来了往了",
+          "来着往着"
+        ],
+        "correct": "来来往往",
+        "explanation": "AABB from paired verbs: 来来往往 = 'coming and going' from 来往 (come and go). Some AABB patterns derive from verb pairs: 进进出出 (going in and out), 上上下下 (going up and down), 说说笑笑 (chatting and laughing). These create a vivid image of repeated or continuous action."
+      },
+      {
+        "id": "ec_red7",
+        "question": "让我_____，明天给你答复。",
+        "translation": "(Let me think about it, I'll give you an answer tomorrow.)",
+        "options": [
+          "想想",
+          "想了",
+          "想着",
+          "想过"
+        ],
+        "correct": "想想",
+        "explanation": "想想 = 'think about it (for a bit).' The VV reduplication here softens what could be a rejection into a polite deferral. This is a key pragmatic function: reduplication makes actions sound less serious and more polite. Social situations: 我想想 (let me think — polite hesitation), 等等我 (wait for me a moment — casual plea)."
+      },
+      {
+        "id": "ec_red8",
+        "question": "这条路_____的，很难走。",
+        "translation": "(This road is winding/crooked.)",
+        "options": [
+          "弯弯曲曲",
+          "弯曲弯曲",
+          "弯了曲了",
+          "弯着曲着"
+        ],
+        "correct": "弯弯曲曲",
+        "explanation": "AABB from 弯曲 (winding/crooked): 弯弯曲曲 emphasizes the twisting quality vividly. Key distinction: Adjective AB → AABB (弯曲 → 弯弯曲曲). Verb AB → ABAB (讨论 → 讨论讨论). Mixing these up is a common learner error. More AABB adjectives: 整整齐齐 (neat and tidy), 马马虎虎 (so-so/careless)."
+      },
+      {
+        "id": "ec_red9",
+        "question": "请你_____这个问题。",
+        "translation": "(Please consider this issue [for a moment].)",
+        "options": [
+          "考虑考虑",
+          "考考虑虑",
+          "考虑了",
+          "考虑着"
+        ],
+        "correct": "考虑考虑",
+        "explanation": "考虑考虑 = 'consider it (briefly).' ABAB reduplication of two-syllable verb 考虑 (kǎolǜ, consider). Remember: verbs → ABAB, adjectives → AABB. Adding 请 (please) plus ABAB reduplication creates a very polite request. Politeness stack: 考虑 → 考虑考虑 → 请考虑考虑 → 请您考虑考虑."
+      },
+      {
+        "id": "ec_red10",
+        "question": "她穿得_____的，真好看。",
+        "translation": "(She is dressed beautifully.)",
+        "options": [
+          "漂漂亮亮",
+          "漂亮漂亮",
+          "漂亮了",
+          "漂亮着"
+        ],
+        "correct": "漂漂亮亮",
+        "explanation": "漂漂亮亮 from 漂亮 (pretty/beautiful) — AABB adjective reduplication. Used with 得 (degree complement): 穿得漂漂亮亮的 = 'dressed up beautifully.' Structure: verb + 得 + AABB + 的. More examples: 收拾得干干净净的 (tidied up spotlessly), 写得清清楚楚的 (written clearly)."
+      },
+      {
+        "id": "ec_red11",
+        "question": "这事你_____就行了。",
+        "translation": "(Just mention it briefly and that's fine.)",
+        "options": [
+          "说说",
+          "说了",
+          "说过",
+          "说着"
+        ],
+        "correct": "说说",
+        "explanation": "说说就行了 = 'just mention it and that's enough.' VV + 就行了 is a practical pattern meaning 'just do it briefly and it's fine.' This minimizes the effort required. Examples: 看看就行了 (just take a look), 试试就行了 (just try it), 问问就行了 (just ask)."
+      },
+      {
+        "id": "ec_red12",
+        "question": "老师慢_____地解释了一遍。",
+        "translation": "(The teacher explained it slowly and carefully.)",
+        "options": [
+          "慢慢",
+          "慢了慢",
+          "慢吞吞",
+          "慢着慢着"
+        ],
+        "correct": "慢慢",
+        "explanation": "慢慢 = 'slowly' — AA adverb reduplication from 慢 (slow). When AA adjectives combine with 地, they function as adverbs: 慢慢地 = 'slowly', 好好地 = 'properly/well', 快快地 = 'quickly', 轻轻地 = 'gently/lightly', 静静地 = 'quietly.' The reduplication adds deliberateness."
+      },
+      {
+        "id": "ec_red13",
+        "question": "你一个一个_____来。",
+        "translation": "(Come one by one.)",
+        "options": [
+          "地",
+          "的",
+          "得",
+          "着"
+        ],
+        "correct": "地",
+        "explanation": "一个一个地来 = 'come one by one.' The pattern 一A一A (one-A-one-A) is a special reduplication for quantities showing distribution or sequence. Examples: 一件一件 (piece by piece), 一步一步 (step by step), 一天一天 (day by day). The 地 marks it as an adverb modifying the verb 来."
+      },
+      {
+        "id": "ec_red14",
+        "question": "他把房间收拾得_____的。",
+        "translation": "(He tidied the room until it was spotless.)",
+        "options": [
+          "干干净净",
+          "干净干净",
+          "干净了",
+          "很干净"
+        ],
+        "correct": "干干净净",
+        "explanation": "干干净净 from 干净 (clean): AABB emphasizing thoroughness. Pattern: 把 + object + verb + 得 + AABB + 的. This combines 把 construction, degree complement (得), and AABB reduplication — three grammar points in one sentence! Compare: 收拾干净了 (tidied up — factual) vs. 收拾得干干净净的 (tidied until spotless — vivid)."
+      },
+      {
+        "id": "ec_red15",
+        "question": "这件事我们_____再说。",
+        "translation": "(Let's talk about this slowly/carefully.)",
+        "options": [
+          "慢慢",
+          "慢了",
+          "慢着",
+          "慢过"
+        ],
+        "correct": "慢慢",
+        "explanation": "慢慢再说 = 'take our time to discuss it later' — a very common conversational phrase. 慢慢 (slowly/gradually) + 再说 (discuss later/talk about it again) together means 'no rush, we'll deal with it in time.' Related patterns: 慢慢来 (take your time), 慢慢吃 (eat slowly/enjoy your meal), 慢慢走 (walk slowly/take care going)."
+      }
+    ]
+  },
+  {
+    "key": "rhetorical_questions",
+    "name": "Rhetorical Questions (反问句)",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ec_rhq1",
+        "question": "这_____不是很好吗？",
+        "translation": "(Isn't this great? [Of course it is!])",
+        "options": [
+          "难道",
+          "到底",
+          "究竟",
+          "居然"
+        ],
+        "correct": "难道",
+        "explanation": "难道 (nándào) = 'could it be that...?' — the most common rhetorical question marker. Pattern: 难道 + statement + 吗？ The expected answer is always the opposite of what's literally asked. 难道 signals the listener that this is rhetorical, not a real question."
+      },
+      {
+        "id": "ec_rhq2",
+        "question": "谁_____想失败呢？",
+        "translation": "(Who would want to fail? [Nobody!])",
+        "options": [
+          "会",
+          "能",
+          "该",
+          "要"
+        ],
+        "correct": "会",
+        "explanation": "谁会想...呢？ = 'Who would want to...?' — rhetorical question using 谁 (who). The implied answer is 'nobody.' Common 谁 rhetorical questions: 谁知道呢 (who knows? = nobody knows), 谁说的 (who said that? = that's wrong). These are powerful persuasion tools in Chinese argumentation."
+      },
+      {
+        "id": "ec_rhq3",
+        "question": "我_____说过这样的话？",
+        "translation": "(When did I ever say such a thing? [I never did!])",
+        "options": [
+          "什么时候",
+          "为什么",
+          "怎么",
+          "哪里"
+        ],
+        "correct": "什么时候",
+        "explanation": "什么时候 + past verb = 'When did I ever...?' — implies 'I never did.' Using question words in rhetorical questions creates strong denial. Compare: 我什么时候说过 (when did I ever say — I never said), 我哪里知道 (how would I know — I don't know)."
+      },
+      {
+        "id": "ec_rhq4",
+        "question": "这_____能怪我呢？",
+        "translation": "(How can you blame me for this? [You can't!])",
+        "options": [
+          "怎么",
+          "什么",
+          "哪里",
+          "为什么"
+        ],
+        "correct": "怎么",
+        "explanation": "怎么能...呢？ = 'How can...?' — rhetorical question implying impossibility or unfairness. 怎么 (zěnme) in rhetorical use expresses disbelief or indignation. Common patterns: 怎么能这样 (how can you be like this!), 怎么会不知道 (how could you not know!)."
+      },
+      {
+        "id": "ec_rhq5",
+        "question": "这种事_____可能是真的？",
+        "translation": "(How could this possibly be true? [It can't be!])",
+        "options": [
+          "怎么",
+          "什么",
+          "为什么",
+          "难道"
+        ],
+        "correct": "怎么",
+        "explanation": "怎么可能 = 'how is it possible' — a fixed rhetorical expression. 怎么可能 is so common it functions almost as an interjection meaning 'impossible!/no way!' Often used with exaggerated tone to express shock and disbelief."
+      },
+      {
+        "id": "ec_rhq6",
+        "question": "连这个_____不会，还想当老师？",
+        "translation": "(You can't even do this, and you want to be a teacher?)",
+        "options": [
+          "都",
+          "也",
+          "就",
+          "才"
+        ],
+        "correct": "都",
+        "explanation": "连...都不会 = 'can't even...' — a devastating rhetorical pattern. The 连...都/也 (even) construction combined with a rhetorical question creates scathing criticism. Pattern: 连 + [easy thing] + 都 + negative + ，还想 + [ambitious thing]？"
+      },
+      {
+        "id": "ec_rhq7",
+        "question": "你_____觉得这样做对吗？",
+        "translation": "(Do you really think this is right? [It's not!])",
+        "options": [
+          "真",
+          "很",
+          "太",
+          "最"
+        ],
+        "correct": "真",
+        "explanation": "你真觉得 = 'do you really think' — using 真 (really/truly) to challenge someone's belief. This implies strong disagreement. Pattern: 你真 + 觉得/以为/认为 + [statement] + 吗？ 真 adds an incredulous tone — the speaker is surprised someone could hold such a view."
+      },
+      {
+        "id": "ec_rhq8",
+        "question": "我_____骗过你？",
+        "translation": "(Have I ever lied to you? [Never!])",
+        "options": [
+          "哪次",
+          "几次",
+          "每次",
+          "那次"
+        ],
+        "correct": "哪次",
+        "explanation": "哪次 = 'which time' — rhetorical use implies 'no time/never.' 我哪次骗过你 = 'When have I ever lied to you?' (= I've never lied to you). Question words (哪, 谁, 什么) in rhetorical questions deny the action entirely. The 过 emphasizes 'ever in the past.'"
+      },
+      {
+        "id": "ec_rhq9",
+        "question": "难道你_____这样算了？",
+        "translation": "(Are you really going to let it go just like that?)",
+        "options": [
+          "就",
+          "才",
+          "都",
+          "又"
+        ],
+        "correct": "就",
+        "explanation": "难道你就这样算了 = 'Are you really going to just let it go?' — a challenging rhetorical question urging action. 就 (jiù) = 'just/simply' — implying the inaction is too easy/unacceptable. 算了 (suànle) = 'forget about it.' Used to motivate someone to fight back or not give up."
+      },
+      {
+        "id": "ec_rhq10",
+        "question": "这_____不明摆着的吗？",
+        "translation": "(Isn't this obvious? [Of course it is!])",
+        "options": [
+          "不是",
+          "难道",
+          "怎么",
+          "哪里"
+        ],
+        "correct": "不是",
+        "explanation": "不是...吗？ = 'Isn't it...?' — the simplest rhetorical pattern. Adding 不是 before any statement and 吗 after creates a basic rhetorical question. Examples: 这不是很简单吗？(Isn't this simple?), 不是说好了吗？(Didn't we agree?). 明摆着 = 'obviously/clearly laid out.'"
+      },
+      {
+        "id": "ec_rhq11",
+        "question": "你以为你是_____？",
+        "translation": "(Who do you think you are?)",
+        "options": [
+          "谁",
+          "什么",
+          "哪个",
+          "怎样"
+        ],
+        "correct": "谁",
+        "explanation": "你以为你是谁 = 'Who do you think you are?' — a sharp rhetorical attack. 以为 (yǐwéi) = 'mistakenly think/assume' — already implies the person is wrong. Using 谁 rhetorically denies their importance. These are confrontational expressions — use with extreme caution in real life!"
+      },
+      {
+        "id": "ec_rhq12",
+        "question": "有什么_____的呢？",
+        "translation": "(What's there to be afraid of? [Nothing!])",
+        "options": [
+          "好怕",
+          "可怕",
+          "怕了",
+          "怕过"
+        ],
+        "correct": "好怕",
+        "explanation": "有什么好 + verb + 的 = 'What's there to be [verb] about?' — a dismissive rhetorical pattern. 有什么好怕的 = 'What's there to be afraid of?' Common examples: 有什么好笑的 (what's funny about it?), 有什么好看的 (what's worth looking at?). 好 here means 'worth doing/reason to do.'"
+      },
+      {
+        "id": "ec_rhq13",
+        "question": "这么简单的题，_____做不出来？",
+        "translation": "(Such a simple problem, how could you not solve it?)",
+        "options": [
+          "还",
+          "就",
+          "才",
+          "又"
+        ],
+        "correct": "还",
+        "explanation": "还做不出来 = 'still can't solve it' — 还 (hái, still) in rhetorical questions expresses disbelief. The logic: 'it's so simple, and STILL you can't do it?' Rhetorical 还 patterns: 还不快走 (why aren't you going yet = hurry up!), 还说呢 (you still dare to say = look who's talking!)."
+      },
+      {
+        "id": "ec_rhq14",
+        "question": "这_____用我说吗？",
+        "translation": "(Do I even need to say this? [It's obvious!])",
+        "options": [
+          "还",
+          "才",
+          "就",
+          "又"
+        ],
+        "correct": "还",
+        "explanation": "还用...吗 = 'is there still need to...?' — implies the answer is obvious. 还用我说吗 = 'Do I need to say it?' (= it's self-evident). Common pattern: 还用 + verb + 吗？ Examples: 还用问吗 (need I ask? = obviously), 还用解释吗 (need to explain? = self-explanatory)."
+      },
+      {
+        "id": "ec_rhq15",
+        "question": "我_____不想去？只是没时间。",
+        "translation": "(It's not that I don't want to go — I just don't have time.)",
+        "options": [
+          "难道",
+          "到底",
+          "究竟",
+          "居然"
+        ],
+        "correct": "难道",
+        "explanation": "难道不想去？ = 'Could it be that I don't want to go?' — self-directed rhetorical question for clarification. The follow-up 只是没时间 provides the real reason. Pattern: 难道我 + [denied assumption]？ + 只是/但是 + [real reason]. Sophisticated argumentative Chinese for self-defense."
+      }
+    ]
+  },
+  {
+    "key": "double_negation",
+    "name": "Double Negation (双重否定)",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ec_dbn1",
+        "question": "你_____来参加。",
+        "translation": "(You must come and participate.)",
+        "options": [
+          "不能不",
+          "不能",
+          "能不",
+          "不会不"
+        ],
+        "correct": "不能不",
+        "explanation": "不能不 = 'cannot not' = 'must.' Double negation creates strong affirmation. 不能不来 = 'must come.' Hierarchy: 来吧 (come — suggestion) < 要来 (should come) < 必须来 (must come) < 不能不来 (cannot not come — emphatic obligation)."
+      },
+      {
+        "id": "ec_dbn2",
+        "question": "我_____承认他说得对。",
+        "translation": "(I have to admit he's right.)",
+        "options": [
+          "不得不",
+          "不会不",
+          "不能不",
+          "不用不"
+        ],
+        "correct": "不得不",
+        "explanation": "不得不 (bùdébù) = 'have no choice but to' = 'must/have to.' This is the most common double negation for reluctant obligation. 不得不 vs. 不能不: 不得不 (forced by circumstances — reluctant) vs. 不能不 (logically cannot avoid — rational). Examples: 不得不说 (have to say), 不得不放弃 (have to give up)."
+      },
+      {
+        "id": "ec_dbn3",
+        "question": "没有人_____失败。",
+        "translation": "(Nobody doesn't fear failure. = Everyone fears failure.)",
+        "options": [
+          "不害怕",
+          "害怕",
+          "不会",
+          "很害怕"
+        ],
+        "correct": "不害怕",
+        "explanation": "没有人不 = 'nobody doesn't' = 'everyone does.' Pattern: 没有 + noun + 不 + verb. This is a universal affirmation via double negation. More emphatic than 大家都害怕. Examples: 没有人不知道 (everyone knows), 没有人不喜欢 (everyone likes)."
+      },
+      {
+        "id": "ec_dbn4",
+        "question": "他_____会帮你的。",
+        "translation": "(He will definitely help you.)",
+        "options": [
+          "不会不",
+          "不能不",
+          "不得不",
+          "不用不"
+        ],
+        "correct": "不会不",
+        "explanation": "不会不 = 'won't not' = 'definitely will.' 不会不帮你 = 'will definitely help.' The double negation implies the speaker knows the person well enough to guarantee their behavior. Stronger personal assurance than 一定."
+      },
+      {
+        "id": "ec_dbn5",
+        "question": "这件事_____跟你说。",
+        "translation": "(I must not fail to tell you about this.)",
+        "options": [
+          "不可以不",
+          "不可以",
+          "不能",
+          "不会"
+        ],
+        "correct": "不可以不",
+        "explanation": "不可以不 = 'must not not' = 'absolutely must.' The most formal double negation for obligation. 不可以不 often appears in rules, regulations, and serious warnings. Formality scale: 不能不 (standard) → 不得不 (circumstantial) → 不可以不 (formal/strong)."
+      },
+      {
+        "id": "ec_dbn6",
+        "question": "你说得很有道理，我_____赞同。",
+        "translation": "(What you said makes sense. I can't help but agree.)",
+        "options": [
+          "不能不",
+          "不会不",
+          "不用不",
+          "不要不"
+        ],
+        "correct": "不能不",
+        "explanation": "不能不赞同 = 'cannot not agree' = 'must agree.' The double negation expresses logical compulsion — the argument is so strong that disagreement is impossible. Related: 不能不佩服 (can't help but admire), 不能不重视 (can't help but take seriously)."
+      },
+      {
+        "id": "ec_dbn7",
+        "question": "没有_____不散的宴席。",
+        "translation": "(There is no feast that doesn't end. = All good things must end.)",
+        "options": [
+          "不",
+          "很",
+          "太",
+          "最"
+        ],
+        "correct": "不",
+        "explanation": "没有不散的宴席 — a famous Chinese proverb meaning 'all feasts come to an end.' Double negation: 没有 (not have) + 不散 (not ending) = they all end. Similar: 没有过不去的坎 (no hurdle that can't be crossed), 没有不透风的墙 (no wall that doesn't let wind through)."
+      },
+      {
+        "id": "ec_dbn8",
+        "question": "做作业时，你_____认真。",
+        "translation": "(When doing homework, you must be serious.)",
+        "options": [
+          "不可不",
+          "不可",
+          "不能",
+          "不会"
+        ],
+        "correct": "不可不",
+        "explanation": "不可不 = literary 'must not not' = 'must.' 不可不 is classical Chinese surviving in modern formal usage. Elegance scale: 不能不 (spoken) → 不可不 (literary) → 不得不 (circumstantial). 不可不 often appears in advice books and classical quotations: 不可不知 (must know), 不可不防 (must guard against)."
+      },
+      {
+        "id": "ec_dbn9",
+        "question": "这么好的机会，_____把握。",
+        "translation": "(Such a great opportunity — you must seize it.)",
+        "options": [
+          "不可不",
+          "不可",
+          "不要",
+          "不能"
+        ],
+        "correct": "不可不",
+        "explanation": "不可不把握 = 'must not fail to seize.' This motivational pattern: 这么好的 + noun + ，不可不/不能不 + verb creates emphatic advice. The double negation makes the advice feel urgent and undeniable — stronger than simple 要 or 应该."
+      },
+      {
+        "id": "ec_dbn10",
+        "question": "这个问题我们_____重视。",
+        "translation": "(We must take this problem seriously.)",
+        "options": [
+          "不得不",
+          "不能",
+          "不要",
+          "不会"
+        ],
+        "correct": "不得不",
+        "explanation": "不得不重视 = 'have no choice but to take seriously.' 不得不 here expresses that external circumstances force acknowledgment. Compare: 我们要重视 (we should — suggestion), 我们必须重视 (we must — obligation), 我们不得不重视 (we have to — forced by reality)."
+      },
+      {
+        "id": "ec_dbn11",
+        "question": "非_____才能成功。",
+        "translation": "(You must work hard to succeed.)",
+        "options": [
+          "努力不可",
+          "努力",
+          "不努力",
+          "很努力"
+        ],
+        "correct": "努力不可",
+        "explanation": "非...不可 = 'must/nothing but...will do.' 非努力不可 = 'nothing but effort will work.' 非(fēi)...不可(bùkě) is a classical double negation — among the most forceful obligation expressions. Examples: 非去不可 (absolutely must go), 非做不可 (absolutely must do). It's the language of ultimatums and firm resolutions."
+      },
+      {
+        "id": "ec_dbn12",
+        "question": "他的表现_____让人满意。",
+        "translation": "(His performance can't help but satisfy people.)",
+        "options": [
+          "不能不",
+          "不能",
+          "不会",
+          "不得"
+        ],
+        "correct": "不能不",
+        "explanation": "不能不让人满意 = 'can't not make people satisfied' = 'inevitably satisfies.' Using double negation for praise sounds more objective and measured than direct praise. Examples: 不能不佩服 (can't help but admire), 不得不承认她很棒 (have to admit she's great). The reluctance paradoxically strengthens the compliment."
+      },
+      {
+        "id": "ec_dbn13",
+        "question": "这部电影你_____看。",
+        "translation": "(You absolutely must watch this movie.)",
+        "options": [
+          "非看不可",
+          "不看",
+          "很看",
+          "看不看"
+        ],
+        "correct": "非看不可",
+        "explanation": "非看不可 = 'nothing but watching will do' = 'absolutely must watch.' Recommendation strength ladder: 你可以看 (you could watch) < 你应该看 (you should watch) < 你一定要看 (you really should watch) < 非看不可 (you MUST watch). It's the language of bucket lists and strongest endorsements."
+      },
+      {
+        "id": "ec_dbn14",
+        "question": "没有_____的事情。",
+        "translation": "(There's nothing that can't be done. = Nothing is impossible.)",
+        "options": [
+          "做不到",
+          "做到",
+          "不做",
+          "做了"
+        ],
+        "correct": "做不到",
+        "explanation": "没有做不到的事情 = 'There's nothing that can't be done.' Double negation: 没有 (there isn't) + 做不到 (can't do) = everything is possible. This motivational formula is very popular: 没有学不会的技能 (no skill that can't be learned), 没有解决不了的问题 (no unsolvable problem)."
+      },
+      {
+        "id": "ec_dbn15",
+        "question": "这种行为_____受到惩罚。",
+        "translation": "(This kind of behavior must be punished.)",
+        "options": [
+          "不能不",
+          "不能",
+          "不会",
+          "不要"
+        ],
+        "correct": "不能不",
+        "explanation": "不能不受到惩罚 = 'cannot not receive punishment' = 'must be punished.' In legal/moral contexts, double negation conveys absolute necessity. Compare: 应该受到惩罚 (should — opinion), 必须受到惩罚 (must — command), 不能不受到惩罚 (cannot not — logical necessity)."
+      }
+    ]
+  },
+  {
+    "key": "correlative_conjunctions",
+    "name": "Correlative Conjunctions (关联词)",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ec_ccj1",
+        "question": "他_____聪明_____勤奋。",
+        "translation": "(He is both smart and hardworking.)",
+        "options": [
+          "既...又...",
+          "不但...而且...",
+          "虽然...但是...",
+          "因为...所以..."
+        ],
+        "correct": "既...又...",
+        "explanation": "既...又... (jì...yòu...) = 'both...and...' — connects two equal qualities. This is the most balanced correlative for two positive attributes. Compare: 既...又 treats both equally, while 不但...而且 escalates (the second is more important). Use for parallel praise: 既便宜又好吃 (both cheap and tasty)."
+      },
+      {
+        "id": "ec_ccj2",
+        "question": "_____你不去，我也不去。",
+        "translation": "(If you don't go, I won't go either.)",
+        "options": [
+          "要是",
+          "虽然",
+          "因为",
+          "不但"
+        ],
+        "correct": "要是",
+        "explanation": "要是...（就/也）... = 'if...(then)...' — the most common spoken conditional. Conditional correlatives: 要是...就 (if — spoken), 如果...就 (if — standard), 假如...就 (if — formal), 只要...就 (as long as). 要是 is distinctly colloquial — use it in conversation, not in essays."
+      },
+      {
+        "id": "ec_ccj3",
+        "question": "他_____没来上课，_____没交作业。",
+        "translation": "(He neither came to class nor submitted homework.)",
+        "options": [
+          "既...也...",
+          "不但...而且...",
+          "虽然...但是...",
+          "因为...所以..."
+        ],
+        "correct": "既...也...",
+        "explanation": "既...也... = 'neither...nor...' (with negatives). With negative verbs: 既没来也没交 = 'neither came nor submitted.' 又 and 也 are largely interchangeable in the 既 pattern, but 也 is slightly more natural with negatives."
+      },
+      {
+        "id": "ec_ccj4",
+        "question": "_____下雨，我们_____去。",
+        "translation": "(Even if it rains, we'll still go.)",
+        "options": [
+          "即使...也...",
+          "如果...就...",
+          "因为...所以...",
+          "虽然...但是..."
+        ],
+        "correct": "即使...也...",
+        "explanation": "即使...也... (jíshǐ...yě...) = 'even if...still...' — concessive conditional. Key difference: 虽然...但是 (although — for real/known situations) vs. 即使...也 (even if — for hypothetical/future situations). This distinction is test-critical!"
+      },
+      {
+        "id": "ec_ccj5",
+        "question": "他_____学习好，_____很懂礼貌。",
+        "translation": "(Not only does he study well, but he's also very polite.)",
+        "options": [
+          "不但...而且...",
+          "既...又...",
+          "虽然...但是...",
+          "因为...所以..."
+        ],
+        "correct": "不但...而且...",
+        "explanation": "不但...而且... = 'not only...but also...' — the most important progressive correlative. Rule: the 而且 clause should be MORE impressive. Wrong: 不但会说中文，而且会说英文. Right: 不但会说英文，而且会说五种语言. This escalation logic is crucial."
+      },
+      {
+        "id": "ec_ccj6",
+        "question": "_____你喜欢_____不喜欢，都得做。",
+        "translation": "(Whether you like it or not, you have to do it.)",
+        "options": [
+          "不管...还是...",
+          "如果...就...",
+          "虽然...但是...",
+          "因为...所以..."
+        ],
+        "correct": "不管...还是...",
+        "explanation": "不管...还是... = 'regardless of whether...or...' — concessive universal. Similar patterns: 无论...都 (no matter what — formal), 不管...都 (regardless — spoken). These combine with question words: 不管谁都 (no matter who), 不管怎么都 (no matter how)."
+      },
+      {
+        "id": "ec_ccj7",
+        "question": "_____多学多练，_____能学好中文。",
+        "translation": "(Only by studying and practicing more can you learn Chinese well.)",
+        "options": [
+          "只有...才...",
+          "只要...就...",
+          "不但...而且...",
+          "因为...所以..."
+        ],
+        "correct": "只有...才...",
+        "explanation": "只有...才... = 'only if...then...' — exclusive condition. Key distinction: 只有...才 (ONLY this condition — exclusive) vs. 只要...就 (as long as — sufficient). 才 implies difficulty/exclusivity; 就 implies ease/sufficiency. This contrast is exam-critical."
+      },
+      {
+        "id": "ec_ccj8",
+        "question": "_____努力学习，_____能通过考试。",
+        "translation": "(As long as you study hard, you can pass the exam.)",
+        "options": [
+          "只要...就...",
+          "只有...才...",
+          "不但...而且...",
+          "虽然...但是..."
+        ],
+        "correct": "只要...就...",
+        "explanation": "只要...就... = 'as long as/provided that...then...' — sufficient condition. This is optimistic and encouraging — it says the condition is ENOUGH for success. Compare: 只要 (as long as — sufficient, optimistic) vs. 只有 (only if — necessary, demanding)."
+      },
+      {
+        "id": "ec_ccj9",
+        "question": "他_____很累，_____坚持跑完了。",
+        "translation": "(Although he was very tired, he still persisted and finished running.)",
+        "options": [
+          "虽然...但是...",
+          "因为...所以...",
+          "不但...而且...",
+          "既...又..."
+        ],
+        "correct": "虽然...但是...",
+        "explanation": "虽然...但是... = 'although...but...' — the fundamental concessive. Chinese REQUIRES both parts (虽然 AND 但是), unlike English where 'although' alone suffices. Variants: 虽然...可是 (spoken), 虽然...却 (literary), 虽然...不过 (mild)."
+      },
+      {
+        "id": "ec_ccj10",
+        "question": "_____天气好，我们_____去爬山。",
+        "translation": "(If the weather is good, we'll go hiking.)",
+        "options": [
+          "如果...就...",
+          "虽然...但是...",
+          "因为...所以...",
+          "不但...而且..."
+        ],
+        "correct": "如果...就...",
+        "explanation": "如果...就... = 'if...then...' — the standard conditional. Formality scale: 要是...就 (spoken) → 如果...就 (standard) → 假如...就 (formal) → 倘若...就 (literary). 就 marks the result clause and is usually required."
+      },
+      {
+        "id": "ec_ccj11",
+        "question": "_____他有才华，_____很谦虚。",
+        "translation": "(Not only is he talented, but he's also very humble.)",
+        "options": [
+          "不仅...而且...",
+          "既...又...",
+          "虽然...但是...",
+          "因为...所以..."
+        ],
+        "correct": "不仅...而且...",
+        "explanation": "不仅...而且... = 'not only...but also...' — slightly more formal variant of 不但...而且. Formality: 不但...而且 (standard) → 不仅...而且 (slightly formal) → 不光...还 (colloquial). In writing, 不仅...而且 is preferred for its elevated register."
+      },
+      {
+        "id": "ec_ccj12",
+        "question": "他_____不道歉，_____指责别人。",
+        "translation": "(Not only did he not apologize, he even blamed others.)",
+        "options": [
+          "不但...反而...",
+          "虽然...但是...",
+          "因为...所以...",
+          "既...又..."
+        ],
+        "correct": "不但...反而...",
+        "explanation": "不但...反而... = 'not only not...but on the contrary...' — unexpected reversal. 反而 (on the contrary) replaces 而且 when the result is OPPOSITE of what's expected. Compare: 不但...而且 (escalation in same direction) vs. 不但...反而 (escalation in opposite direction). Key for expressing outrage and irony."
+      },
+      {
+        "id": "ec_ccj13",
+        "question": "_____是你做的_____是我做的？",
+        "translation": "(Was it done by you or by me?)",
+        "options": [
+          "是...还是...",
+          "不是...就是...",
+          "既...又...",
+          "要么...要么..."
+        ],
+        "correct": "是...还是...",
+        "explanation": "是...还是... = 'is it...or...' — alternative question. Compare: 是...还是 (question — asking which) vs. 不是...就是 (statement — one must be true) vs. 要么...要么 (statement — choose one). Example: 是茶还是咖啡？(asking preference) vs. 不是茶就是咖啡 (unknown which)."
+      },
+      {
+        "id": "ec_ccj14",
+        "question": "她一边_____，一边_____。",
+        "translation": "(She listens to music while studying.)",
+        "options": [
+          "听音乐...学习...",
+          "学习了...听了...",
+          "在听...在学...",
+          "听着...学着..."
+        ],
+        "correct": "听音乐...学习...",
+        "explanation": "一边...一边... = 'while...at the same time...' — simultaneous actions. Both actions must be doable simultaneously by the same person. Compare: 一边...一边 (simultaneous — same subject), 一面...一面 (formal simultaneous). The most common pattern for multitasking."
+      },
+      {
+        "id": "ec_ccj15",
+        "question": "他_____迟到_____早退。",
+        "translation": "(He either arrives late or leaves early.)",
+        "options": [
+          "不是...就是...",
+          "是...还是...",
+          "既...又...",
+          "要么...要么..."
+        ],
+        "correct": "不是...就是...",
+        "explanation": "不是...就是... = 'if not...then...' / 'either...or...' — habitual alternation. This implies a negative pattern. Compare: 不是...就是 (habitual, often negative), 要么...要么 (choice/either-or — neutral), 或者...或者 (alternatives — neutral). Perfect for expressing exasperation."
+      }
+    ]
+  },
+  {
+    "key": "complement_patterns_adv",
+    "name": "Advanced Complement Patterns (高级补语)",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ec_cpa1",
+        "question": "他跑_____我都追不上。",
+        "translation": "(He runs so fast that I can't catch up.)",
+        "options": [
+          "得",
+          "了",
+          "过",
+          "着"
+        ],
+        "correct": "得",
+        "explanation": "得 (de) introduces degree/result complements after a verb. 跑得... describes *how* the running turned out. This is the cornerstone of Mandarin complement grammar. Without 得, you cannot attach a descriptive clause to a verb. Compare: 跑了 (ran — completed), 跑得快 (runs fast — describes manner). The complement after 得 can be a single adjective or an entire clause."
+      },
+      {
+        "id": "ec_cpa2",
+        "question": "这首歌她唱_____非常好听。",
+        "translation": "(She sings this song very beautifully.)",
+        "options": [
+          "得",
+          "了",
+          "的",
+          "着"
+        ],
+        "correct": "得",
+        "explanation": "Verb + 得 + complement describes the result or manner of an action. 唱得非常好听 means 'sings so that it sounds very beautiful.' The topic 这首歌 is fronted. This pattern is essential for giving evaluations in Chinese: 做得好 (did well), 写得漂亮 (wrote beautifully), 说得对 (said correctly)."
+      },
+      {
+        "id": "ec_cpa3",
+        "question": "他把房间打扫_____干干净净。",
+        "translation": "(He cleaned the room spotlessly.)",
+        "options": [
+          "得",
+          "了",
+          "的",
+          "过"
+        ],
+        "correct": "得",
+        "explanation": "把 + Object + Verb + 得 + Complement combines the 把-construction with a degree complement. 打扫得干干净净 means 'cleaned to the point of being spotless.' 干干净净 is a reduplicated form of 干净 (clean), intensifying the meaning. This pattern emphasizes thoroughness of the action's result."
+      },
+      {
+        "id": "ec_cpa4",
+        "question": "她高兴_____跳了起来。",
+        "translation": "(She was so happy that she jumped up.)",
+        "options": [
+          "得",
+          "了",
+          "的",
+          "过"
+        ],
+        "correct": "得",
+        "explanation": "Adjective + 得 + result clause: 高兴得跳了起来 means 'so happy that (she) jumped up.' This is the extent complement pattern — the clause after 得 shows the consequence of the degree. It's like English 'so...that...'. More examples: 累得睡着了 (so tired she fell asleep), 急得哭了 (so anxious she cried)."
+      },
+      {
+        "id": "ec_cpa5",
+        "question": "我吃_____太饱了，走不动。",
+        "translation": "(I ate so much I'm too full and can't walk.)",
+        "options": [
+          "得",
+          "了",
+          "的",
+          "着"
+        ],
+        "correct": "得",
+        "explanation": "吃得太饱了 uses the degree complement to describe the excessive result of eating. 走不动 is a potential complement meaning 'unable to walk.' This sentence chains two complement types: degree (得) and potential (不动). Chinese relies heavily on complements rather than adverbs to express results — a key difference from English."
+      },
+      {
+        "id": "ec_cpa6",
+        "question": "他说中文说_____很流利。",
+        "translation": "(He speaks Chinese very fluently.)",
+        "options": [
+          "得",
+          "了",
+          "的",
+          "着"
+        ],
+        "correct": "得",
+        "explanation": "When a verb has an object, the verb is repeated before 得: 说中文说得很流利. You cannot say *说中文得很流利 — the direct object blocks 得. The doubled verb pattern is: V + Object + V + 得 + Complement. This is a fundamental structural rule in Mandarin complement grammar."
+      },
+      {
+        "id": "ec_cpa7",
+        "question": "这道题难_____我做了两个小时。",
+        "translation": "(This problem was so difficult that I spent two hours on it.)",
+        "options": [
+          "得",
+          "了",
+          "的",
+          "着"
+        ],
+        "correct": "得",
+        "explanation": "难得... shows the extent of difficulty via a result clause. The complement after 得 provides evidence or consequence: '(so) difficult that I worked on it for two hours.' This extent pattern lets you give vivid, concrete descriptions instead of abstract adjectives. 难得要命 (difficult to death) is a common exaggeration."
+      },
+      {
+        "id": "ec_cpa8",
+        "question": "风刮_____树都倒了。",
+        "translation": "(The wind blew so hard that the trees fell down.)",
+        "options": [
+          "得",
+          "了",
+          "的",
+          "过"
+        ],
+        "correct": "得",
+        "explanation": "刮得树都倒了 — the complement clause 树都倒了 (even the trees toppled) shows the extreme result of the wind blowing. 都 here emphasizes 'even (the trees).' This vivid, result-showing pattern is very natural in Chinese storytelling and weather descriptions. The entire post-得 clause acts as the complement."
+      },
+      {
+        "id": "ec_cpa9",
+        "question": "她紧张_____手一直在发抖。",
+        "translation": "(She was so nervous that her hands kept shaking.)",
+        "options": [
+          "得",
+          "了",
+          "的",
+          "过"
+        ],
+        "correct": "得",
+        "explanation": "紧张得手一直在发抖 — '(so) nervous that her hands kept trembling.' 一直在 means 'keeps/continuously.' This complement pattern is natural for describing emotional or physical states and their visible symptoms. It's far more expressive than simply saying 很紧张 (very nervous)."
+      },
+      {
+        "id": "ec_cpa10",
+        "question": "弟弟长_____跟爸爸一样高了。",
+        "translation": "(Little brother has grown to be as tall as dad.)",
+        "options": [
+          "得",
+          "了",
+          "的",
+          "过"
+        ],
+        "correct": "得",
+        "explanation": "长得跟爸爸一样高 — 'grown to be as tall as dad.' Here 得 links the verb 长 (grow) to the result description using a comparison structure (跟...一样). This shows how complements can contain complex structures including comparisons, negation, or time expressions."
+      },
+      {
+        "id": "ec_cpa11",
+        "question": "他把字写_____很漂亮。",
+        "translation": "(He wrote the characters very beautifully.)",
+        "options": [
+          "得",
+          "了",
+          "的",
+          "过"
+        ],
+        "correct": "得",
+        "explanation": "把字写得很漂亮 — the 把 construction moves the object before the verb, and 得 introduces the complement describing the result. This is the full pattern: 把 + Object + Verb + 得 + Complement. It emphasizes what was done to the object and how well. Essential for formal descriptions of completed actions."
+      },
+      {
+        "id": "ec_cpa12",
+        "question": "昨天的考试，她考_____不太好。",
+        "translation": "(She didn't do very well on yesterday's exam.)",
+        "options": [
+          "得",
+          "了",
+          "的",
+          "着"
+        ],
+        "correct": "得",
+        "explanation": "考得不太好 — 'tested/performed not too well.' The complement after 得 can be negative: 不太好, 不怎么样, 很差. This is how you give negative evaluations politely. 不太好 is softer than 很差 (very bad). The topic 昨天的考试 is fronted for context."
+      },
+      {
+        "id": "ec_cpa13",
+        "question": "我们玩_____很开心。",
+        "translation": "(We had a great time.)",
+        "options": [
+          "得",
+          "了",
+          "的",
+          "着"
+        ],
+        "correct": "得",
+        "explanation": "玩得很开心 — 'played/had fun to the point of being very happy.' This is the standard way to describe how an experience turned out. 开心 (happy/joyful) is the complement. Common patterns: 过得愉快 (had a pleasant time), 聊得开心 (chatted happily), 吃得满意 (ate satisfactorily)."
+      },
+      {
+        "id": "ec_cpa14",
+        "question": "老师讲_____很清楚，我都听懂了。",
+        "translation": "(The teacher explained very clearly, and I understood everything.)",
+        "options": [
+          "得",
+          "了",
+          "的",
+          "过"
+        ],
+        "correct": "得",
+        "explanation": "讲得很清楚 uses 得 complement to evaluate the quality of explanation. 听懂了 is a resultative complement (hear + understand + completed). This sentence demonstrates two complement types: degree (得很清楚) and resultative (听懂). Mandarin heavily relies on these complements to convey meaning that English handles with adverbs."
+      },
+      {
+        "id": "ec_cpa15",
+        "question": "他激动_____说不出话来。",
+        "translation": "(He was so excited he couldn't speak.)",
+        "options": [
+          "得",
+          "了",
+          "的",
+          "过"
+        ],
+        "correct": "得",
+        "explanation": "激动得说不出话来 — '(so) excited that (he) couldn't get words out.' 说不出话来 is a complex potential complement (说不出 = unable to speak out, 话 = words, 来 = directional). This shows the extent of emotion through a concrete consequence. The full complement after 得 acts as a vivid illustration of the emotional state."
+      }
+    ]
+  },
+  {
+    "key": "expressing_degree",
+    "name": "Expressing Degree (程度表达)",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ec_edg1",
+        "question": "今天热_____要命。",
+        "translation": "(It's unbearably hot today.)",
+        "options": [
+          "得",
+          "了",
+          "的",
+          "着"
+        ],
+        "correct": "得",
+        "explanation": "得要命 (de yàomìng) = 'to death / unbearably' — an extreme degree expression. 热得要命 means 'hot to the point of dying' (figuratively). This is one of the most common degree intensifiers in spoken Chinese. Similar: 累得要命 (exhausted), 忙得要命 (crazy busy), 饿得要命 (starving)."
+      },
+      {
+        "id": "ec_edg2",
+        "question": "这个蛋糕_____好吃了！",
+        "translation": "(This cake is so delicious!)",
+        "options": [
+          "太",
+          "很",
+          "最",
+          "更"
+        ],
+        "correct": "太",
+        "explanation": "太...了 (tài...le) = 'too / so (exclamatory)' — when used with positive adjectives and 了, it expresses enthusiastic praise rather than complaint. 太好吃了 = 'so delicious!' Without 了, 太 means 'too (excessive)': 太贵 (too expensive). With 了, the meaning shifts to excited emphasis. This distinction is unique to Chinese."
+      },
+      {
+        "id": "ec_edg3",
+        "question": "她跳舞跳得_____漂亮了！",
+        "translation": "(She dances so beautifully!)",
+        "options": [
+          "太",
+          "很",
+          "最",
+          "更"
+        ],
+        "correct": "太",
+        "explanation": "太...了 wraps around the complement adjective for exclamatory degree. 跳得太漂亮了 = 'dances so beautifully!' Note the doubled verb pattern: 跳舞跳得... (dance + dance-得). 太 before an adjective inside a 得-complement creates an emphatic evaluation that sounds natural and enthusiastic."
+      },
+      {
+        "id": "ec_edg4",
+        "question": "这件事_____重要了，你不能忘记。",
+        "translation": "(This matter is extremely important — you can't forget.)",
+        "options": [
+          "非常",
+          "很",
+          "太",
+          "最"
+        ],
+        "correct": "非常",
+        "explanation": "非常 (fēicháng) = 'extremely / very much' — more formal and emphatic than 很. While 很 is often semantically weak (almost a grammatical placeholder), 非常 carries genuine intensity. Use 非常 in formal contexts: 非常感谢 (thank you very much), 非常抱歉 (extremely sorry). It precedes adjectives directly."
+      },
+      {
+        "id": "ec_edg5",
+        "question": "弟弟比我_____两岁。",
+        "translation": "(My younger brother is two years younger than me.)",
+        "options": [
+          "小",
+          "少",
+          "矮",
+          "短"
+        ],
+        "correct": "小",
+        "explanation": "In age comparisons, 小 means 'younger (by X years).' 比我小两岁 = 'younger than me by two years.' Chinese uses specific measure words with comparatives: 大/小 (older/younger), 高/矮 (taller/shorter), 多/少 (more/less). The structure is: A 比 B + Adj + Amount."
+      },
+      {
+        "id": "ec_edg6",
+        "question": "这道菜辣_____不得了。",
+        "translation": "(This dish is incredibly spicy.)",
+        "options": [
+          "得",
+          "了",
+          "的",
+          "着"
+        ],
+        "correct": "得",
+        "explanation": "得不得了 (de bùdéliǎo) = 'extremely / incredibly' — literally 'to an unmanageable degree.' It's a stronger intensifier than 得很. 辣得不得了 = 'spicy beyond belief.' Similar to 得要命 but slightly more formal. Can follow any adjective: 开心得不得了, 累得不得了. Very natural in spoken Mandarin."
+      },
+      {
+        "id": "ec_edg7",
+        "question": "他对这个问题_____不关心。",
+        "translation": "(He doesn't care about this issue at all.)",
+        "options": [
+          "一点也",
+          "很",
+          "非常",
+          "太"
+        ],
+        "correct": "一点也",
+        "explanation": "一点也不 (yìdiǎn yě bù) = 'not at all / not even a little bit.' This is the strongest way to negate in Chinese. 一点也不关心 = 'doesn't care even a little.' Variants: 一点儿也不, 一点儿都不 (都 can replace 也). Compare: 不太关心 (doesn't much care — mild); 一点也不 (absolute zero — strong)."
+      },
+      {
+        "id": "ec_edg8",
+        "question": "这本书_____有意思。",
+        "translation": "(This book is quite interesting.)",
+        "options": [
+          "挺",
+          "很",
+          "太",
+          "最"
+        ],
+        "correct": "挺",
+        "explanation": "挺 (tǐng) = 'quite / pretty (colloquial)' — a casual intensifier common in everyday speech. 挺有意思 sounds relaxed and natural, less formal than 非常有意思. 挺 conveys moderate positive emphasis. Northern Mandarin speakers use it frequently. Compare: 挺好的 (pretty good), 挺不错 (quite decent). Written Chinese prefers 很 or 非常."
+      },
+      {
+        "id": "ec_edg9",
+        "question": "我对中文_____感兴趣。",
+        "translation": "(I'm extremely interested in Chinese.)",
+        "options": [
+          "极其",
+          "很",
+          "挺",
+          "有点"
+        ],
+        "correct": "极其",
+        "explanation": "极其 (jíqí) = 'extremely / exceedingly' — the most formal and strongest single-word intensifier. Used in written and formal spoken Chinese. 极其感兴趣 sounds educated and deliberate. Compare intensity levels: 有点 (a bit) < 很 (very) < 非常 (very much) < 极其 (exceedingly) < ...得要命 (to death)."
+      },
+      {
+        "id": "ec_edg10",
+        "question": "这里的风景美_____了。",
+        "translation": "(The scenery here is extremely beautiful.)",
+        "options": [
+          "极",
+          "很",
+          "太",
+          "更"
+        ],
+        "correct": "极",
+        "explanation": "Adjective + 极了 (jí le) = 'extremely / to the utmost.' 美极了 = 'beautiful to the extreme.' This is a compact, emphatic degree expression. 极 means 'extreme/pole.' Common uses: 好极了 (fantastic), 棒极了 (awesome), 糟糕极了 (terrible). More literary than 太...了 but used in speech too."
+      },
+      {
+        "id": "ec_edg11",
+        "question": "他_____有点儿不高兴。",
+        "translation": "(He seems a little unhappy.)",
+        "options": [
+          "好像",
+          "非常",
+          "太",
+          "极其"
+        ],
+        "correct": "好像",
+        "explanation": "好像 (hǎoxiàng) + 有点儿 combines hedging ('seems like') with mild degree ('a little'). 好像有点儿不高兴 = 'seems a bit unhappy.' This double-softening is very common in Chinese for tactful observations about others' emotions. It avoids directness, which is culturally preferred when discussing negative feelings."
+      },
+      {
+        "id": "ec_edg12",
+        "question": "这次考试_____难，很多人没通过。",
+        "translation": "(This exam was especially difficult — many people didn't pass.)",
+        "options": [
+          "特别",
+          "很",
+          "太",
+          "最"
+        ],
+        "correct": "特别",
+        "explanation": "特别 (tèbié) = 'especially / particularly' — emphasizes that something exceeds normal expectations. 特别难 implies this exam was harder than typical exams. Often followed by evidence: 很多人没通过 justifies the claim. 特别 can modify verbs too: 特别喜欢 (especially like), 特别想 (especially want)."
+      },
+      {
+        "id": "ec_edg13",
+        "question": "我只是_____知道一点点。",
+        "translation": "(I merely know just a tiny bit.)",
+        "options": [
+          "稍微",
+          "非常",
+          "特别",
+          "极其"
+        ],
+        "correct": "稍微",
+        "explanation": "稍微 (shāowēi) = 'slightly / a little bit' — the mildest degree modifier. 稍微知道一点点 doubles down on smallness. Use 稍微 for polite minimization: 稍微等一下 (wait just a moment), 稍微有点贵 (slightly expensive). In this sentence, 只是 (just/merely) + 稍微 + 一点点 creates triple minimization — very humble."
+      },
+      {
+        "id": "ec_edg14",
+        "question": "他中文说得_____好，像中国人一样。",
+        "translation": "(He speaks Chinese remarkably well, like a native.)",
+        "options": [
+          "相当",
+          "有点",
+          "稍微",
+          "太"
+        ],
+        "correct": "相当",
+        "explanation": "相当 (xiāngdāng) = 'quite / considerably / remarkably' — carries genuine emphasis. 相当好 is stronger than 很好. Originally means 'equivalent to / comparable,' which gives it a nuance of 'good enough to be compared to a high standard.' 像中国人一样 (like a Chinese person) illustrates the degree. Common in both formal and casual speech."
+      },
+      {
+        "id": "ec_edg15",
+        "question": "今天的作业_____多。",
+        "translation": "(Today's homework is just so much.)",
+        "options": [
+          "实在太",
+          "有点",
+          "稍微",
+          "不太"
+        ],
+        "correct": "实在太",
+        "explanation": "实在太 (shízài tài) = 'truly too much / really excessively' — combines 实在 (truly/really) with 太 for maximum emphasis. 实在太多 = 'genuinely/truly too much.' 实在 adds sincerity and frustration. Compare: 太多 (too much — could be mild), 实在太多 (really, truly too much — unmistakable emphasis). Very natural in complaints."
+      }
+    ]
+  },
+  {
+    "key": "expressing_condition",
+    "name": "Expressing Condition (条件表达)",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ec_ecd1",
+        "question": "_____你努力学习，就一定能成功。",
+        "translation": "(As long as you study hard, you'll definitely succeed.)",
+        "options": [
+          "只要",
+          "只有",
+          "除非",
+          "无论"
+        ],
+        "correct": "只要",
+        "explanation": "只要 (zhǐyào) = 'as long as / provided that' — sets a sufficient condition. 只要...就... means 'if only X, then Y will follow.' The condition doesn't have to be difficult — it just needs to be met. Compare: 只要 (sufficient condition — just do X) vs. 只有 (necessary condition — X is the only way). 只要 is more optimistic and encouraging."
+      },
+      {
+        "id": "ec_ecd2",
+        "question": "_____多练习，才能提高。",
+        "translation": "(Only by practicing more can you improve.)",
+        "options": [
+          "只有",
+          "只要",
+          "除非",
+          "如果"
+        ],
+        "correct": "只有",
+        "explanation": "只有 (zhǐyǒu) = 'only if / only when' — sets a necessary condition. 只有...才... means 'only if X, then Y is possible.' This is more restrictive than 只要: there is NO other path. 只有多练习才能提高 = 'improvement is impossible without more practice.' The 才 (only then) is the essential partner of 只有."
+      },
+      {
+        "id": "ec_ecd3",
+        "question": "_____下雨，我们就不去了。",
+        "translation": "(If it rains, we won't go.)",
+        "options": [
+          "要是",
+          "只有",
+          "除非",
+          "无论"
+        ],
+        "correct": "要是",
+        "explanation": "要是 (yàoshi) = 'if (colloquial)' — the most casual conditional. 要是...就... is the informal version of 如果...就... Use 要是 in everyday speech and 如果 in writing or formal contexts. Both mean the same thing, but 要是 sounds more natural in conversation. 要是下雨就不去 = casual planning language."
+      },
+      {
+        "id": "ec_ecd4",
+        "question": "_____他来，我们就不去了。",
+        "translation": "(Unless he comes, we won't go. / We'll go only if he comes.)",
+        "options": [
+          "除非",
+          "只要",
+          "如果",
+          "要是"
+        ],
+        "correct": "除非",
+        "explanation": "除非 (chúfēi) = 'unless / only if' — expresses a condition that is the sole exception. 除非他来 = 'unless he comes (nothing else will change the outcome).' 除非 can pair with 才 or 否则: 除非他来，否则我们不去 (unless he comes, otherwise we won't go). It's stronger and more absolute than 只有."
+      },
+      {
+        "id": "ec_ecd5",
+        "question": "_____天气怎么样，我们都要去。",
+        "translation": "(No matter what the weather is, we'll go.)",
+        "options": [
+          "不管",
+          "只要",
+          "除非",
+          "要是"
+        ],
+        "correct": "不管",
+        "explanation": "不管 (bùguǎn) = 'no matter / regardless of' — introduces unconditional statements. 不管...都/也... means 'no matter X, still Y.' 不管天气怎么样 = 'regardless of the weather.' Also: 不管谁来 (no matter who comes), 不管多贵 (no matter how expensive). 无论 is the formal equivalent."
+      },
+      {
+        "id": "ec_ecd6",
+        "question": "_____你同意不同意，我都要去。",
+        "translation": "(Whether you agree or not, I'm going.)",
+        "options": [
+          "不管",
+          "只要",
+          "除非",
+          "如果"
+        ],
+        "correct": "不管",
+        "explanation": "不管 + A不A (affirmative-negative) pattern: 不管你同意不同意 = 'regardless of whether you agree or not.' This A-not-A structure within 不管 covers all possibilities. The 都 in the main clause means 'in all cases.' Other examples: 不管去不去 (whether going or not), 不管好不好 (whether good or not)."
+      },
+      {
+        "id": "ec_ecd7",
+        "question": "如果明天不下雨，我们_____去公园。",
+        "translation": "(If it doesn't rain tomorrow, we'll go to the park.)",
+        "options": [
+          "就",
+          "才",
+          "都",
+          "也"
+        ],
+        "correct": "就",
+        "explanation": "如果...就... is the standard conditional pair. 就 (jiù) means 'then / in that case.' It connects the condition to the result. Compare 就 vs 才: 就 implies natural consequence (if X then naturally Y); 才 implies X is a prerequisite (only after X can Y happen). 就 is neutral; 才 adds restriction."
+      },
+      {
+        "id": "ec_ecd8",
+        "question": "_____你们怎么说，我也不会改变主意。",
+        "translation": "(No matter what you say, I won't change my mind.)",
+        "options": [
+          "无论",
+          "只要",
+          "除非",
+          "如果"
+        ],
+        "correct": "无论",
+        "explanation": "无论 (wúlùn) = 'no matter what / regardless' — the formal version of 不管. 无论...也/都... is used in writing, speeches, and formal conversation. 无论你怎么说 = 'regardless of what you say.' 无论 carries more weight and determination than 不管. Common in essays and official statements."
+      },
+      {
+        "id": "ec_ecd9",
+        "question": "_____明天有时间，我就去看你。",
+        "translation": "(If I have time tomorrow, I'll come see you.)",
+        "options": [
+          "假如",
+          "只有",
+          "除非",
+          "不管"
+        ],
+        "correct": "假如",
+        "explanation": "假如 (jiǎrú) = 'supposing / if' — a more literary conditional than 如果. Used in formal writing, hypothetical scenarios, and philosophical discussions. 假如明天有时间 = 'supposing I have time tomorrow.' Slightly more tentative than 如果, suggesting the condition is less certain. Formal hierarchy: 假如 > 如果 > 要是 (most casual)."
+      },
+      {
+        "id": "ec_ecd10",
+        "question": "_____努力工作，就能赚到钱。",
+        "translation": "(Only by working hard can you earn money.)",
+        "options": [
+          "只有",
+          "只要",
+          "要是",
+          "假如"
+        ],
+        "correct": "只有",
+        "explanation": "只有努力工作，才能赚到钱 — here 就 replaces 才 in a looser construction, but the meaning remains: hard work is the necessary condition. 只有...才/就... emphasizes there is no shortcut. This is motivational language commonly seen in Chinese self-improvement contexts, parenting advice, and school mottos."
+      },
+      {
+        "id": "ec_ecd11",
+        "question": "即使失败了，我_____不会放弃。",
+        "translation": "(Even if I fail, I still won't give up.)",
+        "options": [
+          "也",
+          "就",
+          "才",
+          "都"
+        ],
+        "correct": "也",
+        "explanation": "即使...也... (jíshǐ...yě...) = 'even if...still...' — concessive conditional. The speaker acknowledges a negative possibility but insists the main clause holds. 即使失败也不放弃 = determination despite adversity. 即使 is more formal than 就算 (informal equivalent). 也 (still/also) conveys persistence."
+      },
+      {
+        "id": "ec_ecd12",
+        "question": "_____你不告诉我，我也知道。",
+        "translation": "(Even if you don't tell me, I know anyway.)",
+        "options": [
+          "就算",
+          "只要",
+          "除非",
+          "只有"
+        ],
+        "correct": "就算",
+        "explanation": "就算 (jiùsuàn) = 'even if (informal)' — the casual equivalent of 即使. 就算...也... is very common in spoken Chinese. 就算你不告诉我 = 'even if you don't tell me.' It implies: 'go ahead and try to hide it — I know regardless.' More confrontational/confident than 即使, which is more dignified."
+      },
+      {
+        "id": "ec_ecd13",
+        "question": "_____是谁，都必须遵守规定。",
+        "translation": "(Whoever it is must follow the rules.)",
+        "options": [
+          "不论",
+          "只要",
+          "除非",
+          "假如"
+        ],
+        "correct": "不论",
+        "explanation": "不论 (bùlùn) = 'regardless of / no matter' — formal synonym of 不管/无论. 不论是谁 = 'regardless of who it is.' Often seen in regulations, laws, and formal announcements. 不论 + question word (谁/什么/哪里/怎么) creates universal statements: 不论在哪里 (wherever), 不论怎样 (however)."
+      },
+      {
+        "id": "ec_ecd14",
+        "question": "你_____有问题，随时可以问我。",
+        "translation": "(If you have any questions, feel free to ask me anytime.)",
+        "options": [
+          "要是",
+          "除非",
+          "只有",
+          "不管"
+        ],
+        "correct": "要是",
+        "explanation": "要是有问题 = 'if you have questions' — casual, friendly conditional. 随时可以 means 'at any time you can.' This is a standard helpful/hospitable phrase. 要是 is the natural choice here because the tone is conversational and welcoming. Using 如果 would sound unnecessarily formal for this kind of offer."
+      },
+      {
+        "id": "ec_ecd15",
+        "question": "_____万一下雨，我们就改在室内。",
+        "translation": "(In case it rains, we'll move it indoors.)",
+        "options": [
+          "万一",
+          "如果",
+          "只要",
+          "除非"
+        ],
+        "correct": "万一",
+        "explanation": "万一 (wànyī) = 'in case / if by any chance' — literally 'one in ten thousand.' Used for unlikely but possible scenarios that need contingency plans. 万一下雨 = 'if by some chance it rains.' 万一 implies low probability but high importance of preparation. Very practical in everyday planning: 万一迟到 (in case of being late), 万一出问题 (in case something goes wrong)."
+      }
+    ]
+  },
+  {
+    "key": "expressing_contrast",
+    "name": "Expressing Contrast (对比表达)",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ec_ect1",
+        "question": "_____他很聪明，_____学习不努力。",
+        "translation": "(Although he is smart, he doesn't study hard.)",
+        "options": [
+          "虽然...但是...",
+          "因为...所以...",
+          "不但...而且...",
+          "既...又..."
+        ],
+        "correct": "虽然...但是...",
+        "explanation": "虽然...但是... (suīrán...dànshì...) = 'although...but...' — the most common contrast/concession pair. Unlike English where you use either 'although' OR 'but,' Chinese typically uses BOTH together. 虽然 introduces the conceded fact, 但是 introduces the contrasting reality. This double-marking is a hallmark of Chinese grammar."
+      },
+      {
+        "id": "ec_ect2",
+        "question": "他的中文说得很好，_____写得不太好。",
+        "translation": "(He speaks Chinese well, but doesn't write very well.)",
+        "options": [
+          "但是",
+          "所以",
+          "而且",
+          "因为"
+        ],
+        "correct": "但是",
+        "explanation": "但是 (dànshì) = 'but / however' — can be used alone (without 虽然) when the contrast is light or the first clause already implies concession. 说得很好但写得不太好 is a natural comparison between two skills. The contrast is between speaking ability and writing ability. 但是 is the standard written form; 可是 is slightly more casual."
+      },
+      {
+        "id": "ec_ect3",
+        "question": "这个餐厅的菜很好吃，_____太贵了。",
+        "translation": "(This restaurant's food is delicious, but it's too expensive.)",
+        "options": [
+          "不过",
+          "所以",
+          "而且",
+          "因为"
+        ],
+        "correct": "不过",
+        "explanation": "不过 (búguò) = 'but / however (mild)' — a softer contrast than 但是. 不过 introduces a minor objection or qualification that doesn't fully negate the first point. 很好吃不过太贵 = 'tasty, but (the only thing is) too expensive.' Use 不过 for gentle critique; 但是 for stronger opposition; 然而 for formal/literary contrast."
+      },
+      {
+        "id": "ec_ect4",
+        "question": "他学习努力，_____成绩却不好。",
+        "translation": "(He studies hard, yet his grades aren't good.)",
+        "options": [
+          "却",
+          "就",
+          "才",
+          "都"
+        ],
+        "correct": "却",
+        "explanation": "却 (què) = 'yet / but unexpectedly' — an adverb that marks surprising contrast. Unlike 但是 (conjunction), 却 goes INSIDE the second clause, before the verb. 成绩却不好 = 'grades unexpectedly aren't good.' 却 adds a tone of surprise or irony — the result contradicts what you'd expect. Very common in written Chinese and storytelling."
+      },
+      {
+        "id": "ec_ect5",
+        "question": "我喜欢咖啡，_____我弟弟喜欢茶。",
+        "translation": "(I like coffee, while my brother likes tea.)",
+        "options": [
+          "而",
+          "但是",
+          "所以",
+          "因为"
+        ],
+        "correct": "而",
+        "explanation": "而 (ér) = 'while / whereas / but' — a literary conjunction for parallel contrast between two different subjects. 我喜欢咖啡而弟弟喜欢茶 contrasts two people's preferences without judgment. 而 is more formal than 但是 and specifically marks comparison between parallel items. Very common in academic writing and formal speech."
+      },
+      {
+        "id": "ec_ect6",
+        "question": "这件衣服好看_____好看，就是太贵了。",
+        "translation": "(This outfit is nice, sure, but it's just too expensive.)",
+        "options": [
+          "是",
+          "的",
+          "了",
+          "得"
+        ],
+        "correct": "是",
+        "explanation": "Adj + 是 + Adj, 就是... pattern: repeating the adjective with 是 concedes the positive point, then 就是 introduces the objection. 好看是好看，就是太贵 = 'nice, sure, but too expensive.' This is a very natural spoken pattern for balanced criticism. It shows you acknowledge the good while raising the concern. Quite diplomatic."
+      },
+      {
+        "id": "ec_ect7",
+        "question": "他不是懒，_____是不知道怎么做。",
+        "translation": "(He's not lazy; rather, he doesn't know how to do it.)",
+        "options": [
+          "而",
+          "但",
+          "就",
+          "才"
+        ],
+        "correct": "而",
+        "explanation": "不是A，而是B = 'not A, but rather B' — corrective contrast. This pattern explicitly replaces one interpretation with another. 不是懒而是不知道 corrects a misunderstanding. 而是 works as a unit here meaning 'but rather / instead.' This is essential for clarifying misunderstandings and making precise distinctions."
+      },
+      {
+        "id": "ec_ect8",
+        "question": "_____别人怎么想，我有我的看法。",
+        "translation": "(Regardless of what others think, I have my own opinion.)",
+        "options": [
+          "不管",
+          "虽然",
+          "因为",
+          "如果"
+        ],
+        "correct": "不管",
+        "explanation": "不管别人怎么想 = 'regardless of what others think.' This combines unconditional structure (不管) with contrast (having your own opinion). The contrast is between others' views and your own. 我有我的看法 emphasizes independence — the repeated 我 (my own) is emphatic. This pattern sounds confident and self-assured."
+      },
+      {
+        "id": "ec_ect9",
+        "question": "这本书_____没有那本好看。",
+        "translation": "(This book isn't as good-looking as that one.)",
+        "options": [
+          "没有",
+          "不是",
+          "不如",
+          "不像"
+        ],
+        "correct": "没有",
+        "explanation": "A 没有 B + Adj = 'A is not as [adj] as B' — negative comparison. 这本没有那本好看 directly compares two books. 没有 in comparisons means 'doesn't reach the level of.' Compare: 不如 (inferior to — broader), 没有 (not as...as — specific attribute). This is the standard way to make negative comparisons in Mandarin."
+      },
+      {
+        "id": "ec_ect10",
+        "question": "他的想法跟我的_____。",
+        "translation": "(His idea is different from mine.)",
+        "options": [
+          "不一样",
+          "一样",
+          "差不多",
+          "相同"
+        ],
+        "correct": "不一样",
+        "explanation": "A 跟 B 不一样 = 'A is different from B.' This is the basic structure for expressing difference. 不一样 (not the same) is the most common way to say 'different.' Compare: 不同 (different — formal), 不一样 (not the same — everyday), 有区别 (there are distinctions — analytical). 跟 can be replaced by 和 or 与 (more formal)."
+      },
+      {
+        "id": "ec_ect11",
+        "question": "她口语很好，_____，写作还需要提高。",
+        "translation": "(She speaks well; however, her writing still needs improvement.)",
+        "options": [
+          "然而",
+          "所以",
+          "而且",
+          "因为"
+        ],
+        "correct": "然而",
+        "explanation": "然而 (rán'ér) = 'however / nevertheless' — formal written contrast. More literary than 但是, commonly found in essays, news, and academic writing. 然而 signals a significant shift: the first clause sets up positive expectations, 然而 introduces the contrasting reality. It carries a stronger sense of unexpectedness than 但是."
+      },
+      {
+        "id": "ec_ect12",
+        "question": "这两种方法_____有优点，也各有缺点。",
+        "translation": "(Both methods have advantages and disadvantages.)",
+        "options": [
+          "各",
+          "都",
+          "全",
+          "每"
+        ],
+        "correct": "各",
+        "explanation": "各 (gè) = 'each / respectively' — emphasizes individual differences within a group. 各有优点各有缺点 = 'each has its own advantages and disadvantages.' 各 is key for balanced comparisons: 各有特色 (each has its character), 各不相同 (each is different). It implies variety and individuality, not uniformity."
+      },
+      {
+        "id": "ec_ect13",
+        "question": "与其在家等着，_____自己去看看。",
+        "translation": "(Rather than wait at home, might as well go see for yourself.)",
+        "options": [
+          "不如",
+          "不要",
+          "不能",
+          "不会"
+        ],
+        "correct": "不如",
+        "explanation": "与其A，不如B = 'rather than A, better to B' — expresses preference through contrast. 与其等不如去 = 'instead of waiting, better to go.' 与其 (yǔqí) marks the rejected option; 不如 (bùrú) introduces the preferred alternative. This is a decisive, action-oriented pattern used when choosing between two options."
+      },
+      {
+        "id": "ec_ect14",
+        "question": "他看起来年轻，_____已经四十岁了。",
+        "translation": "(He looks young, but is actually already forty.)",
+        "options": [
+          "其实",
+          "所以",
+          "因为",
+          "而且"
+        ],
+        "correct": "其实",
+        "explanation": "其实 (qíshí) = 'actually / in fact' — reveals truth that contrasts with appearance. 看起来年轻其实四十岁 = appearance vs. reality contrast. 其实 is not a conjunction but an adverb that naturally creates contrast by introducing surprising facts. Very common in conversations when correcting assumptions or sharing insider knowledge."
+      },
+      {
+        "id": "ec_ect15",
+        "question": "这个方案虽然可行，_____成本太高。",
+        "translation": "(Although this plan is feasible, the cost is too high.)",
+        "options": [
+          "但",
+          "就",
+          "才",
+          "又"
+        ],
+        "correct": "但",
+        "explanation": "但 (dàn) = shortened form of 但是, used especially in written Chinese and more concise speech. 虽然可行但成本太高 — a classic 虽然...但... concessive construction in business/professional context. 但 without 是 sounds slightly more literary and crisp. In formal writing, 但 is often preferred over 但是 for conciseness."
+      }
+    ]
+  },
+  {
+    "key": "expressing_emphasis",
+    "name": "Expressing Emphasis (强调表达)",
+    "level": "advanced",
+    "items": [
+      {
+        "id": "ec_eem1",
+        "question": "我_____是昨天到的北京。",
+        "translation": "(It was yesterday that I arrived in Beijing.)",
+        "options": [
+          "是",
+          "就",
+          "才",
+          "都"
+        ],
+        "correct": "是",
+        "explanation": "是...的 (shì...de) cleft construction for emphasis: 是昨天到的 emphasizes WHEN (yesterday). The 是 highlights the focused element, and 的 closes the construction. What appears between 是 and 的 is the emphasized information. You can emphasize time, place, manner, or agent: 是坐飞机来的 (it was by plane), 是在上海买的 (it was in Shanghai)."
+      },
+      {
+        "id": "ec_eem2",
+        "question": "这件事_____他做的。",
+        "translation": "(It was HE who did this.)",
+        "options": [
+          "是",
+          "就",
+          "才",
+          "都"
+        ],
+        "correct": "是",
+        "explanation": "是他做的 emphasizes the agent — 'it was HE (not someone else) who did it.' The 是...的 structure is the primary way to add emphasis in Chinese, functioning like English cleft sentences ('it is/was...that/who...'). Without 是...的, the same sentence would be neutral: 他做了这件事. With it, the focus shifts to the doer."
+      },
+      {
+        "id": "ec_eem3",
+        "question": "我_____在这家店买的这本书。",
+        "translation": "(It was at this store that I bought this book.)",
+        "options": [
+          "是",
+          "就",
+          "才",
+          "都"
+        ],
+        "correct": "是",
+        "explanation": "是...的 emphasizing place: 是在这家店买的 = 'it was at this store (that I bought it).' The preposition phrase 在这家店 sits between 是 and the verb. When emphasizing location, the pattern is: 是 + 在 + place + verb + 的. This answers the implied question 'where did you buy it?' with focused information."
+      },
+      {
+        "id": "ec_eem4",
+        "question": "我们_____要完成这个任务！",
+        "translation": "(We MUST accomplish this task!)",
+        "options": [
+          "一定",
+          "可能",
+          "也许",
+          "大概"
+        ],
+        "correct": "一定",
+        "explanation": "一定 (yīdìng) = 'definitely / certainly / must' — adds emphatic certainty or strong determination. 一定要完成 = 'must definitely finish.' 一定 can express: (1) strong will: 我一定去 (I'll definitely go), (2) prediction: 他一定会来 (he'll surely come), (3) command: 你一定要小心 (you absolutely must be careful). It's the go-to word for emphatic assertions."
+      },
+      {
+        "id": "ec_eem5",
+        "question": "_____他自己说的，不是我编的。",
+        "translation": "(HE himself said it — I didn't make it up.)",
+        "options": [
+          "是",
+          "就",
+          "才",
+          "都"
+        ],
+        "correct": "是",
+        "explanation": "是他自己说的 — emphasis on the source (he himself). 自己 (zìjǐ = self/himself) further intensifies the emphasis. The 是...的 construction plus 自己 creates a strong assertion of provenance. 不是我编的 (I didn't fabricate it) uses the same construction in negative form. This contrast between 是X做的 and 不是Y做的 is very common in arguments."
+      },
+      {
+        "id": "ec_eem6",
+        "question": "这个_____就是我要找的东西。",
+        "translation": "(This is precisely the thing I've been looking for.)",
+        "options": [
+          "就",
+          "才",
+          "也",
+          "还"
+        ],
+        "correct": "就",
+        "explanation": "就是 (jiùshì) = 'precisely / exactly' — adds emphatic precision. 就是我要找的 = 'is exactly what I was looking for.' 就 before 是 intensifies the identification. Without 就: 这是我要找的 (neutral); with 就: 这就是我要找的 (emphatic, with a sense of satisfied discovery). 就 narrows focus: 'this and nothing else.'"
+      },
+      {
+        "id": "ec_eem7",
+        "question": "我_____说了三遍了，你怎么还不懂？",
+        "translation": "(I've ALREADY said it three times — how do you still not understand?)",
+        "options": [
+          "都",
+          "才",
+          "就",
+          "也"
+        ],
+        "correct": "都",
+        "explanation": "都...了 = 'already (to such an extent)' — emphasizes that something has reached an excessive point. 都说了三遍了 = 'have already said it three times (isn't that enough?).' 都 here means 'even/already' and carries frustration. It implies 'given that X has already happened, Y should follow.' Very emotional and common in arguments."
+      },
+      {
+        "id": "ec_eem8",
+        "question": "他_____是出了名的聪明。",
+        "translation": "(He is famously smart. / Everyone knows he's clever.)",
+        "options": [
+          "可",
+          "就",
+          "才",
+          "都"
+        ],
+        "correct": "可",
+        "explanation": "可 (kě) as an emphatic adverb = 'really / truly / certainly' — intensifies the statement. 可是出了名的聪明 = 'truly is famously smart.' This spoken-Chinese 可 (different from 可是 'but') adds strong affirmation. Often heard: 可不是嘛 (isn't that the truth!), 这可不行 (this really won't do). A distinctly oral emphasis marker."
+      },
+      {
+        "id": "ec_eem9",
+        "question": "谁_____知道这件事！",
+        "translation": "(Everyone knows about this!)",
+        "options": [
+          "都",
+          "也",
+          "就",
+          "才"
+        ],
+        "correct": "都",
+        "explanation": "谁都 = 'everyone' — 都 after a question word creates a universal statement. 谁都知道 = 'who-all know' = 'everyone knows.' This is emphatic because it's all-inclusive. Other patterns: 哪里都 (everywhere), 什么都 (everything), 怎么都 (no matter how). The question word + 都 structure is one of Chinese's most elegant emphasis mechanisms."
+      },
+      {
+        "id": "ec_eem10",
+        "question": "连小孩子_____懂这个道理。",
+        "translation": "(Even children understand this principle.)",
+        "options": [
+          "都",
+          "也",
+          "就",
+          "才"
+        ],
+        "correct": "都",
+        "explanation": "连...都... (lián...dōu...) = 'even...all...' — the strongest emphasis pattern. 连小孩子都懂 = 'even children understand (so surely adults do too).' 连 marks the unexpected extreme case; 都 confirms it includes even that case. This pattern argues by extreme example: if the least likely case is true, all other cases must be. Powerfully persuasive."
+      },
+      {
+        "id": "ec_eem11",
+        "question": "她到底去_____没去？",
+        "translation": "(Did she go or not, in the end?)",
+        "options": [
+          "还是",
+          "或者",
+          "就是",
+          "而是"
+        ],
+        "correct": "还是",
+        "explanation": "到底 (dàodǐ) + A还是B = 'in the end / ultimately, A or B?' — emphatic question demanding a definitive answer. 到底 adds urgency and impatience: 'I need to know once and for all.' 去还是没去 is an A-or-B question. 到底 is the key emphasis word — it transforms a neutral question into an insistent demand for clarity."
+      },
+      {
+        "id": "ec_eem12",
+        "question": "这_____不是开玩笑的事。",
+        "translation": "(This is absolutely not a joking matter.)",
+        "options": [
+          "可",
+          "就",
+          "才",
+          "也"
+        ],
+        "correct": "可",
+        "explanation": "可不是... = 'really is not / absolutely not' — emphatic negation. 可不是开玩笑的 = 'this is truly/absolutely not something to joke about.' The 可 here strengthens the negation emphatically. In questions, 可 also intensifies: 你可知道？(do you REALLY know?). This oral emphasis particle adds emotional weight to any statement."
+      },
+      {
+        "id": "ec_eem13",
+        "question": "我怎么_____想不起来他的名字。",
+        "translation": "(No matter how hard I try, I can't recall his name.)",
+        "options": [
+          "也",
+          "就",
+          "才",
+          "都"
+        ],
+        "correct": "也",
+        "explanation": "怎么也 V不 = 'no matter how, cannot V' — emphatic inability. 怎么也想不起来 = 'cannot remember no matter what.' The combination of question word 怎么 + 也 + negative potential complement expresses frustration at inability despite effort. Very natural for expressing being stuck: 怎么也找不到 (can't find it no matter what)."
+      },
+      {
+        "id": "ec_eem14",
+        "question": "就连老师_____不会做这道题。",
+        "translation": "(Even the teacher can't solve this problem.)",
+        "options": [
+          "都",
+          "也",
+          "就",
+          "才"
+        ],
+        "correct": "都",
+        "explanation": "就连...都... = intensified version of 连...都... The 就 before 连 adds extra emphasis. 就连老师都不会 = 'even the teacher — yes, even the teacher — can't do it.' 就连 is the emphatic upgrade: 连 alone is already strong, 就连 is the absolute strongest form. Used when the listener might doubt the extreme claim."
+      },
+      {
+        "id": "ec_eem15",
+        "question": "他_____没有来过中国。",
+        "translation": "(He has never once been to China.)",
+        "options": [
+          "从来",
+          "已经",
+          "曾经",
+          "一直"
+        ],
+        "correct": "从来",
+        "explanation": "从来 (cónglái) = 'never (emphatic) / all along' — emphasizes the absolute absence of experience. 从来没有来过 = 'has never ever been.' 从来 + 没/不 is the strongest form of 'never': 从来不喝酒 (never drinks alcohol — absolute statement). Without 从来: 没来过 (hasn't been — neutral). With 从来: 从来没来过 (has NEVER been — emphatic)."
+      }
+    ]
   }
 ]
