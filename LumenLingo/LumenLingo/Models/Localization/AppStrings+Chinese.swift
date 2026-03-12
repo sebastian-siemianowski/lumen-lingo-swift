@@ -234,6 +234,12 @@ extension AppStrings {
         vivid: "鲜明",
         driftSpeed: "漂移速度",
         frozen: "冻结",
+        nebulaDescLagoon: "缥缈的粉紫色云雾中，新生的恒星在星际尘柱间燃起光芒",
+        nebulaDescCelestial: "无垠的绿松石色发光气体海洋，闪烁着青色与深碧的星光倒影",
+        nebulaDescAndromeda: "万亿颗太阳悬浮在星系边缘，琥珀色的光芒消融于深邃的靛蓝星空",
+        nebulaDescSolarAurora: "金色的带电粒子丝带穿过磁场倾泻而下，为虚空涂上温暖的色调",
+        nebulaDescSpiralHalo: "千亿颗恒星在完美和谐中旋转，紫色的光芒勾勒出引力的轨迹",
+        nebulaDescStarburst: "一圈灿烂的恒星急速诞生，电蓝与品红的弧光迸发着璀璨能量",
 
         // Membership
         plansAndPricing: "套餐与价格",

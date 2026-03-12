@@ -129,7 +129,7 @@ struct NebulaDriftSettingsView: View {
                 ForEach(NebulaPreset.allCases) { preset in
                     SchemeCardView(
                         name: preset.displayName,
-                        description: preset.description,
+                        description: preset.localizedDescription(L),
                         previewColors: preset.previewColors,
                         isSelected: profile?.nebulaPresetEnum == preset,
                         previewHeight: 70

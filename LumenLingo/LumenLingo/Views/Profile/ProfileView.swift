@@ -463,54 +463,6 @@ struct ProfileView: View {
                 }
             }
 
-            Divider()
-                .overlay(isDark ? Color.white.opacity(0.06) : Color.black.opacity(0.06))
-
-            // Animation speed slider
-            SettingsSliderView(
-                label: L.animationSpeed,
-                iconName: "gauge.with.dots.needle.67percent",
-                value: Binding(
-                    get: { profile?.animationSpeed ?? 1.0 },
-                    set: { profile?.animationSpeed = $0 }
-                ),
-                range: 0.2...2.0,
-                step: 0.1,
-                presets: [
-                    (0.5, L.slow, "tortoise"),
-                    (1.0, L.normal, "gauge.medium"),
-                    (1.5, L.fast, "hare"),
-                ]
-            )
-
-            // Language pair quick-change
-            HStack(spacing: 12) {
-                Image(systemName: "globe")
-                    .font(.system(size: 16))
-                    .foregroundStyle(.cyan)
-
-                let langPref = languagePrefs.first
-                let srcLang = langPref?.sourceLanguageEnum ?? .english
-                let tgtLang = langPref?.targetLanguageEnum ?? .spanish
-                VStack(alignment: .leading, spacing: 2) {
-                    Text(L.languagePair)
-                        .font(.system(size: 15, weight: .medium))
-                        .foregroundStyle(isDark ? .white : .caribbeanInk)
-                    Text("\(srcLang.displayName) → \(tgtLang.name(in: srcLang))")
-                        .font(.system(size: 12))
-                        .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
-                }
-
-                Spacer()
-
-                Image(systemName: "chevron.right")
-                    .font(.system(size: 12, weight: .bold))
-                    .foregroundStyle(isDark ? .white.opacity(0.3) : .caribbeanMist)
-            }
-            .contentShape(Rectangle())
-            .lumenNavigationPress(accentColor: .cyan, scale: 0.97) {
-                showLanguageSelector = true
-            }
         }
     }
 

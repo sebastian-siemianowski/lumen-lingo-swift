@@ -633,23 +633,16 @@ enum NebulaPreset: String, CaseIterable, Identifiable {
         }
     }
 
-    var description: String {
+    func localizedDescription(_ L: AppStrings) -> String {
         switch self {
-        case .lagoonNebula:
-            return "Ethereal cosmic clouds where newborn stars ignite"
-        case .celestialLagoon:
-            return "Infinite turquoise ocean of luminous serenity"
-        case .edgeOfAndromeda:
-            return "A trillion suns suspended in eternal dance"
-        case .solarAurora:
-            return "Golden ribbons dancing across the cosmic void"
-        case .spiralHaloGalaxy:
-            return "A hundred billion stars in cosmic harmony"
-        case .starburstRing:
-            return "Brilliant ring of star formation in radiance"
+        case .lagoonNebula: return L.nebulaDescLagoon
+        case .celestialLagoon: return L.nebulaDescCelestial
+        case .edgeOfAndromeda: return L.nebulaDescAndromeda
+        case .solarAurora: return L.nebulaDescSolarAurora
+        case .spiralHaloGalaxy: return L.nebulaDescSpiralHalo
+        case .starburstRing: return L.nebulaDescStarburst
         }
     }
-
     var iconName: String {
         switch self {
         case .lagoonNebula: return "cloud.fog.fill"

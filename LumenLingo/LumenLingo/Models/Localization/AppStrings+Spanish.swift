@@ -235,6 +235,12 @@ extension AppStrings {
         vivid: "Vívido",
         driftSpeed: "Velocidad de Deriva",
         frozen: "Congelado",
+        nebulaDescLagoon: "Nubes etéreas rosa y violeta donde estrellas recién nacidas se encienden entre pilares de polvo cósmico",
+        nebulaDescCelestial: "Un océano turquesa infinito de gas luminoso, resplandeciente con reflejos de luz estelar cian y verde azulado",
+        nebulaDescAndromeda: "Un billón de soles suspendidos al borde de la galaxia, luz ámbar disolviéndose en el espacio índigo",
+        nebulaDescSolarAurora: "Cintas doradas de partículas cargadas que caen por campos magnéticos, pintando el vacío con calidez",
+        nebulaDescSpiralHalo: "Cien mil millones de estrellas en espiral perfecta, su brillo violeta trazando senderos gravitacionales",
+        nebulaDescStarburst: "Un anillo brillante de rápida formación estelar, arcos azul eléctrico y magenta ardiendo con energía radiante",
 
         // Membership
         plansAndPricing: "Planes y Precios",

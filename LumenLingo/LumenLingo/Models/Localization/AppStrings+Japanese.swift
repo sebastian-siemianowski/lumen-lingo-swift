@@ -234,6 +234,12 @@ extension AppStrings {
         vivid: "鮮やか",
         driftSpeed: "ドリフト速度",
         frozen: "静止",
+        nebulaDescLagoon: "淡いピンクと紫の雲の中で生まれたばかりの星が星間塵の柱の中で輝きを放つ",
+        nebulaDescCelestial: "無限に広がるターコイズ色の輝くガスの海、シアンとティールの星明かりが揺らめく",
+        nebulaDescAndromeda: "銀河の果てに浮かぶ一兆の太陽、琥珀色の光が深い藍色の宇宙に溶けてゆく",
+        nebulaDescSolarAurora: "帯電した粒子の金色のリボンが磁場を流れ落ち、虚空をあたたかく彩る",
+        nebulaDescSpiralHalo: "千億の星が完璧な調和を描きながら渦を巻き、紫の輝きが重力の軌跡をたどる",
+        nebulaDescStarburst: "急速な星形成の輝くリング、エレクトリックブルーとマゼンタのアークが眩い光を放つ",
 
         // Membership
         plansAndPricing: "プランと料金",

@@ -234,6 +234,12 @@ extension AppStrings {
         vivid: "Żywa",
         driftSpeed: "Szybkość dryfu",
         frozen: "Zamrożona",
+        nebulaDescLagoon: "Eteryczne różowo-fioletowe obłoki, gdzie nowo narodzone gwiazdy rozbłyskują w filarach kosmicznego pyłu",
+        nebulaDescCelestial: "Nieskończony turkusowy ocean świecącego gazu, mieniący się cyjanowymi i morskimi refleksami gwiezdnego światła",
+        nebulaDescAndromeda: "Bilion słońc zawieszonych na krawędzi galaktyki, bursztynowe światło rozpływa się w głębokim indygo kosmosu",
+        nebulaDescSolarAurora: "Złote wstęgi naładowanych cząstek spływają przez pola magnetyczne, malując próżnię ciepłem i blaskiem",
+        nebulaDescSpiralHalo: "Sto miliardów gwiazd wiruje w doskonałej harmonii, ich fioletowa poświata kreśli grawitacyjne ścieżki",
+        nebulaDescStarburst: "Olśniewający pierścień szybkiej formacji gwiezdnej, łuki elektrycznego błękitu i magenty pełne energii",
 
         // Membership
         plansAndPricing: "Plany i cennik",

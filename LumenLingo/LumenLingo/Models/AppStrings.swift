@@ -241,6 +241,12 @@ struct AppStrings {
     let frozen: String
     // flowing reused
     // swift_ reused
+    let nebulaDescLagoon: String
+    let nebulaDescCelestial: String
+    let nebulaDescAndromeda: String
+    let nebulaDescSolarAurora: String
+    let nebulaDescSpiralHalo: String
+    let nebulaDescStarburst: String
 
     // MARK: - Membership
     let plansAndPricing: String

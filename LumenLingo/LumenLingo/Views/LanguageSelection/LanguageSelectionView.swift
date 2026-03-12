@@ -689,7 +689,17 @@ struct LanguageSelectionView: View {
                     } else {
                         Text(L.startYourAdventure)
                             .font(.headline.weight(.bold))
-                            .foregroundStyle(.white)
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: [
+                                        Color(red: 255/255, green: 255/255, blue: 240/255), // warm ivory
+                                        .white,
+                                        Color(red: 255/255, green: 200/255, blue: 220/255)  // rose blush
+                                    ],
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                )
+                            )
                             .shadow(color: .white.opacity(0.5), radius: 4)
                             .transition(.opacity)
                     }
