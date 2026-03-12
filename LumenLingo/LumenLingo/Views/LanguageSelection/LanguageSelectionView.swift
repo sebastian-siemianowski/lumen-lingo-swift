@@ -655,17 +655,23 @@ struct LanguageSelectionView: View {
                 if hasChanged {
                     TimelineView(.animation(minimumInterval: 1.0 / 30.0)) { context in
                         let t = context.date.timeIntervalSinceReferenceDate
-                        let phase = CGFloat(t.truncatingRemainder(dividingBy: 4.0) / 4.0)
+                        let phase = CGFloat(t.truncatingRemainder(dividingBy: 3.0) / 3.0)
 
                         Text(L.startYourAdventure)
                             .font(.headline.weight(.bold))
-                            .foregroundStyle(
+                            .foregroundStyle(Color.white)
+                            .hidden()
+                            .overlay {
                                 LinearGradient(
                                     colors: SiriCloseButton.siriColors,
-                                    startPoint: UnitPoint(x: phase - 0.5, y: 0),
-                                    endPoint: UnitPoint(x: phase + 0.5, y: 1)
+                                    startPoint: UnitPoint(x: -0.5 + phase * 2, y: 0.5),
+                                    endPoint: UnitPoint(x: 0.5 + phase * 2, y: 0.5)
                                 )
-                            )
+                                .mask {
+                                    Text(L.startYourAdventure)
+                                        .font(.headline.weight(.bold))
+                                }
+                            }
                             .shadow(color: Color(hex: "#FF9FF3").opacity(0.3), radius: 4)
                     }
                     .transition(.opacity)
@@ -747,10 +753,10 @@ struct LanguageSelectionView: View {
                     // Diffused rainbow glow — AI bloom
                     RoundedRectangle(cornerRadius: 18)
                         .stroke(
-                            LinearGradient(
+                            AngularGradient(
                                 colors: SiriCloseButton.siriColors,
-                                startPoint: UnitPoint(x: phase - 0.5, y: 0),
-                                endPoint: UnitPoint(x: phase + 0.5, y: 1)
+                                center: .center,
+                                angle: .degrees(phase * 360)
                             ),
                             lineWidth: 4
                         )
@@ -760,10 +766,10 @@ struct LanguageSelectionView: View {
                     // Crisp rainbow border
                     RoundedRectangle(cornerRadius: 18)
                         .strokeBorder(
-                            LinearGradient(
+                            AngularGradient(
                                 colors: SiriCloseButton.siriColors,
-                                startPoint: UnitPoint(x: phase - 0.5, y: 0),
-                                endPoint: UnitPoint(x: phase + 0.5, y: 1)
+                                center: .center,
+                                angle: .degrees(phase * 360)
                             ),
                             lineWidth: 1.5
                         )
@@ -977,12 +983,12 @@ private struct SiriCloseButton: View {
         Color(hex: "#FF6B6B"),
     ]
 
-    /// Flowing gradient that shifts smoothly based on a 0…1 phase.
-    private static func flowingGradient(phase: Double) -> LinearGradient {
-        LinearGradient(
+    /// Flowing gradient that rotates smoothly — AngularGradient wraps at 360° with zero seam.
+    private static func flowingGradient(phase: Double) -> AngularGradient {
+        AngularGradient(
             colors: siriColors,
-            startPoint: UnitPoint(x: phase - 0.5, y: 0),
-            endPoint: UnitPoint(x: phase + 0.5, y: 1)
+            center: .center,
+            angle: .degrees(phase * 360)
         )
     }
 
