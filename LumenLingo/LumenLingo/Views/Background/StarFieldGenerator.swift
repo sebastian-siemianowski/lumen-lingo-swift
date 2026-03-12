@@ -1484,6 +1484,139 @@ enum StarFieldGenerator {
     // ============================================================
     
     // ============================================================
+    // MARK: - Lagoon Gas Cloud Particles (pre-computed for GPU)
+    // Eliminates 13 seededRandom (sin) calls per particle per pixel.
+    // spiralDist/spiralTheta repurposed for velocity direction X/Y.
+    // ============================================================
+
+    static func lagoonGasClouds() -> [GasCloudData] {
+        var clouds: [GasCloudData] = []
+        for i in 0..<55 {
+            let sm = i * 49
+            let rx = sRand(sm, 1)
+            let ry = sRand(sm, 2)
+            let ridgePos = rx + ry
+
+            var colorR: Float, colorG: Float, colorB: Float
+            var sizePx: Float
+            var baseAlpha: Float
+
+            if ridgePos < 0.8 {
+                let cc = sRand(sm, 3)
+                if cc > 0.6 {
+                    colorR = 255.0/255; colorG = 180.0/255; colorB = 80.0/255
+                } else if cc > 0.3 {
+                    colorR = 220.0/255; colorG = 100.0/255; colorB = 50.0/255
+                } else {
+                    colorR = 180.0/255; colorG = 60.0/255; colorB = 40.0/255
+                }
+                sizePx = 180.0 + sRand(sm, 4) * 350.0
+                baseAlpha = 0.06 + sRand(sm, 5) * 0.09
+            } else if ridgePos > 1.2 {
+                let cc = sRand(sm, 3)
+                if cc > 0.5 {
+                    colorR = 100.0/255; colorG = 220.0/255; colorB = 255.0/255
+                } else {
+                    colorR = 20.0/255; colorG = 100.0/255; colorB = 120.0/255
+                }
+                sizePx = 130.0 + sRand(sm, 4) * 240.0
+                baseAlpha = 0.05 + sRand(sm, 5) * 0.07
+            } else {
+                colorR = 255.0/255; colorG = 180.0/255; colorB = 80.0/255
+                sizePx = 110.0 + sRand(sm, 4) * 180.0
+                baseAlpha = 0.08 + sRand(sm, 5) * 0.11
+            }
+
+            let depth = sRand(sm, 9)
+            let phase = sRand(sm, 8) * 6.283185
+            let flowFreq: Float = 0.18 + sRand(sm, 10) * 0.35
+            let flowBaseMul: Float = 45.0 + sRand(sm, 11) * 35.0
+            let pulseFreq: Float = 0.15 + sRand(sm, 12) * 0.25
+            let pulsePhase = phase + sRand(sm, 13) * 6.283185
+            let velDirX = sRand(sm, 6) - 0.5
+            let velDirY = sRand(sm, 7) - 0.5
+
+            clouds.append(GasCloudData(
+                basePosX: rx, basePosY: ry,
+                depth: depth, sizePx: sizePx,
+                colorR: colorR, colorG: colorG, colorB: colorB,
+                baseAlpha: baseAlpha,
+                phase: phase,
+                flowFreq: flowFreq, flowBaseMul: flowBaseMul,
+                pulseFreq: pulseFreq, pulsePhase: pulsePhase,
+                spiralDist: velDirX, spiralTheta: velDirY
+            ))
+        }
+        return clouds
+    }
+
+    // ============================================================
+    // MARK: - Celestial Lagoon Gas Cloud Particles (pre-computed)
+    // Same pattern as Lagoon but with aqua/cyan/teal palette.
+    // ============================================================
+
+    static func celestialGasClouds() -> [GasCloudData] {
+        var clouds: [GasCloudData] = []
+        for i in 0..<55 {
+            let sm = i * 53
+            let rx = sRand(sm, 1)
+            let ry = sRand(sm, 2)
+
+            var colorR: Float, colorG: Float, colorB: Float
+            var sizePx: Float
+            var baseAlpha: Float
+
+            let cc = sRand(sm, 3)
+            if cc < 0.22 {
+                colorR = 15.0/255; colorG = 200.0/255; colorB = 230.0/255
+                sizePx = 150.0 + sRand(sm, 4) * 300.0
+                baseAlpha = 0.05 + sRand(sm, 5) * 0.08
+            } else if cc < 0.42 {
+                colorR = 40.0/255; colorG = 180.0/255; colorB = 200.0/255
+                sizePx = 140.0 + sRand(sm, 4) * 280.0
+                baseAlpha = 0.05 + sRand(sm, 5) * 0.07
+            } else if cc < 0.58 {
+                colorR = 30.0/255; colorG = 150.0/255; colorB = 180.0/255
+                sizePx = 130.0 + sRand(sm, 4) * 260.0
+                baseAlpha = 0.04 + sRand(sm, 5) * 0.07
+            } else if cc < 0.72 {
+                colorR = 70.0/255; colorG = 235.0/255; colorB = 220.0/255
+                sizePx = 160.0 + sRand(sm, 4) * 320.0
+                baseAlpha = 0.05 + sRand(sm, 5) * 0.09
+            } else if cc < 0.85 {
+                colorR = 50.0/255; colorG = 160.0/255; colorB = 148.0/255
+                sizePx = 120.0 + sRand(sm, 4) * 220.0
+                baseAlpha = 0.04 + sRand(sm, 5) * 0.06
+            } else {
+                colorR = 45.0/255; colorG = 215.0/255; colorB = 200.0/255
+                sizePx = 155.0 + sRand(sm, 4) * 310.0
+                baseAlpha = 0.05 + sRand(sm, 5) * 0.08
+            }
+
+            let depth = sRand(sm, 9)
+            let phase = sRand(sm, 8) * 6.283185
+            let flowFreq: Float = 0.14 + sRand(sm, 10) * 0.30
+            let flowBaseMul: Float = 40.0 + sRand(sm, 11) * 30.0
+            let pulseFreq: Float = 0.25
+            let pulsePhase = phase
+            let velDirX = sRand(sm, 6) - 0.5
+            let velDirY = sRand(sm, 7) - 0.5
+
+            clouds.append(GasCloudData(
+                basePosX: rx, basePosY: ry,
+                depth: depth, sizePx: sizePx,
+                colorR: colorR, colorG: colorG, colorB: colorB,
+                baseAlpha: baseAlpha,
+                phase: phase,
+                flowFreq: flowFreq, flowBaseMul: flowBaseMul,
+                pulseFreq: pulseFreq, pulsePhase: pulsePhase,
+                spiralDist: velDirX, spiralTheta: velDirY
+            ))
+        }
+        return clouds
+    }
+
+    // ============================================================
     // MARK: - Spiral Halo Gas Cloud Particles (pre-computed for GPU)
     // Matches the seededRandom-based particle placement that was
     // previously computed per-pixel in SpiralHaloPreset.metal.

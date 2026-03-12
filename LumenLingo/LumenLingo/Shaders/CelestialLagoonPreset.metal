@@ -29,7 +29,8 @@ vertex float4 celestialBgVertex(uint vid [[vertex_id]]) {
 
 fragment float4 celestialBgFragment(
     float4 position [[position]],
-    constant CosmicUniforms& u [[buffer(0)]]
+    constant CosmicUniforms& u [[buffer(0)]],
+    constant GasCloudData* gasClouds [[buffer(1)]]
 ) {
     float2 uv = position.xy / u.resolution;
     float t = u.time * u.speed;
@@ -146,8 +147,8 @@ fragment float4 celestialBgFragment(
 
     // ================================================================
     // 3.  GAS CLOUD PARTICLES  (55 — the MAIN nebula visual)
-    //     Deep parallax, multi-harmonic liquid flow, turbulence.
-    //     Aqua/cyan/teal/turquoise palette matching React.
+    //     Pre-computed particle data from CPU buffer eliminates
+    //     ~715 redundant sin() calls per pixel per frame.
     // ================================================================
     {
         float refWidth = 1170.0;
@@ -162,62 +163,19 @@ fragment float4 celestialBgFragment(
         float4 gasCanvas = float4(0.0);
 
         for (int i = 0; i < 55; i++) {
-            float rx = seededRandom(i * 53, 1);
-            float ry = seededRandom(i * 53, 2);
-
-            float3 pColor;
-            float  pSizePx;
-            float  pAlpha;
-            float pDepth = seededRandom(i * 53, 9);
-
-            // Color palette: aqua/cyan/teal/turquoise/mint
-            float cc = seededRandom(i * 53, 3);
-            if (cc < 0.22) {
-                // Bright aqua
-                pColor = rgb(15, 200, 230);
-                pSizePx = 150.0 + seededRandom(i * 53, 4) * 300.0;
-                pAlpha = 0.05 + seededRandom(i * 53, 5) * 0.08;
-            } else if (cc < 0.42) {
-                // Cyan
-                pColor = rgb(40, 180, 200);
-                pSizePx = 140.0 + seededRandom(i * 53, 4) * 280.0;
-                pAlpha = 0.05 + seededRandom(i * 53, 5) * 0.07;
-            } else if (cc < 0.58) {
-                // Teal
-                pColor = rgb(30, 150, 180);
-                pSizePx = 130.0 + seededRandom(i * 53, 4) * 260.0;
-                pAlpha = 0.04 + seededRandom(i * 53, 5) * 0.07;
-            } else if (cc < 0.72) {
-                // Mint cyan
-                pColor = rgb(70, 235, 220);
-                pSizePx = 160.0 + seededRandom(i * 53, 4) * 320.0;
-                pAlpha = 0.05 + seededRandom(i * 53, 5) * 0.09;
-            } else if (cc < 0.85) {
-                // Deep teal
-                pColor = rgb(50, 160, 148);
-                pSizePx = 120.0 + seededRandom(i * 53, 4) * 220.0;
-                pAlpha = 0.04 + seededRandom(i * 53, 5) * 0.06;
-            } else {
-                // Turquoise
-                pColor = rgb(45, 215, 200);
-                pSizePx = 155.0 + seededRandom(i * 53, 4) * 310.0;
-                pAlpha = 0.05 + seededRandom(i * 53, 5) * 0.08;
-            }
-
-            float pSize = (pSizePx / refWidth) * sizeScale;
-
-            // --- Dynamic 3D Movement ---
-            float phase  = seededRandom(i * 53, 8) * 6.283185;
-            float parallaxMul = 0.25 + pDepth * 0.75;
+            GasCloudData p = gasClouds[i];
+            float rx = p.basePosX;
+            float ry = p.basePosY;
+            float pSize = (p.sizePx / refWidth) * sizeScale;
+            float parallaxMul = 0.25 + p.depth * 0.75;
 
             // A. Parallax camera drift
             float gdX = camDX * parallaxMul;
             float gdY = camDY * parallaxMul;
 
             // B. Multi-harmonic liquid flow (oceanic, flowing)
-            float flowFreq = 0.14 + seededRandom(i * 53, 10) * 0.30;
-            float flowTime = t * flowFreq + phase;
-            float flowBase = (40.0 + seededRandom(i * 53, 11) * 30.0)
+            float flowTime = t * p.flowFreq + p.phase;
+            float flowBase = p.flowBaseMul
                            / refWidth * sizeScale * parallaxMul * speedAmp;
             float flowX = sin(flowTime) * flowBase
                         + sin(flowTime * 1.5 + 1.4) * flowBase * 0.20;
@@ -226,22 +184,23 @@ fragment float4 celestialBgFragment(
 
             // C. Smooth turbulence (gentle ocean currents)
             float turbAmp = 45.0 / refWidth * sizeScale * parallaxMul * speedAmp;
-            float noiseX = sin(t * 0.12 + ry * 3.8 + phase) * turbAmp
-                         + sin(t * 0.30 + ry * 2.2 + phase * 1.6) * turbAmp * 0.18;
-            float noiseY = cos(t * 0.10 + rx * 3.5 + phase * 1.3) * turbAmp
-                         + cos(t * 0.26 + rx * 2.5 + phase * 2.0) * turbAmp * 0.16;
+            float noiseX = sin(t * 0.12 + ry * 3.8 + p.phase) * turbAmp
+                         + sin(t * 0.30 + ry * 2.2 + p.phase * 1.6) * turbAmp * 0.18;
+            float noiseY = cos(t * 0.10 + rx * 3.5 + p.phase * 1.3) * turbAmp
+                         + cos(t * 0.26 + rx * 2.5 + p.phase * 2.0) * turbAmp * 0.16;
 
-            // D. Constant velocity drift
+            // D. Constant velocity drift (spiralDist/spiralTheta = velDirX/Y)
             float velScale = 3.5 / refWidth * sizeScale;
-            float vx = (seededRandom(i * 53, 6) - 0.5) * velScale * t;
-            float vy = (seededRandom(i * 53, 7) - 0.5) * velScale * t;
+            float vx = p.spiralDist * velScale * t;
+            float vy = p.spiralTheta * velScale * t;
 
             // E. Size & alpha pulsation
-            float pulse = sin(t * 0.25 + phase);
+            float pulse = sin(t * p.pulseFreq + p.pulsePhase);
             float intBoost = 0.7 + intensity * 0.6;
             float sz    = pSize * (1.0 + pulse * 0.18);
-            float alpha = pAlpha * intBoost * (1.0 + pulse * 0.25);
+            float alpha = p.baseAlpha * intBoost * (1.0 + pulse * 0.25);
 
+            float3 pColor = float3(p.colorR, p.colorG, p.colorB);
             float2 pos  = float2(rx + gdX + flowX + noiseX + vx,
                                  ry + gdY + flowY + noiseY + vy);
             float2 diff = uv - pos;

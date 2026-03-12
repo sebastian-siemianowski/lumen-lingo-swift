@@ -61,7 +61,7 @@ fragment float4 starburstBgFragment(
     float iHalo = gaussian2D(uv, float2(0.5, 0.5), float2(0.06, 0.06));
     col = screenBlend(col, innerHalo, iHalo * 0.10 * u.intensity);
     
-    // ---- Ring Gas Structure (~200 particles) ----
+    // ---- Ring Gas Structure (~80 particles) ----
     float ringRadius = 0.35;
     float ringSpread = 0.09;
     float ringRotation = t * 0.013; // Very slow rotation
