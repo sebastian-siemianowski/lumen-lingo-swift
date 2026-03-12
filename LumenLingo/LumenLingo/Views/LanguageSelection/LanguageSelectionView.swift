@@ -264,8 +264,14 @@ struct LanguageSelectionView: View {
             if isDark {
                 Color(hex: "#09090F")
             } else {
+                // Caribbean sunset gradient — matches app-wide light-mode palette
                 LinearGradient(
-                    colors: [Color(hex: "#F8F6FF"), Color(hex: "#FFF8FA"), Color(hex: "#F5F3FF")],
+                    stops: [
+                        .init(color: Color(red: 196/255, green: 148/255, blue: 252/255), location: 0),
+                        .init(color: Color(red: 220/255, green: 131/255, blue: 217/255), location: 0.35),
+                        .init(color: Color(red: 244/255, green: 114/255, blue: 182/255), location: 0.6),
+                        .init(color: Color(red: 251/255, green: 146/255, blue: 60/255), location: 1.0)
+                    ],
                     startPoint: .topLeading,
                     endPoint: .bottomTrailing
                 )
@@ -278,7 +284,7 @@ struct LanguageSelectionView: View {
                     RadialGradient(
                         colors: isDark
                             ? [Color.indigo.opacity(0.07), Color.indigo.opacity(0.03), .clear]
-                            : [Color.indigo.opacity(0.05), Color.indigo.opacity(0.02), .clear],
+                            : [Color.white.opacity(0.15), Color.white.opacity(0.05), .clear],
                         center: .center,
                         startRadius: 5,
                         endRadius: 340
@@ -320,7 +326,7 @@ struct LanguageSelectionView: View {
                     // Animated center orb
                     ZStack {
                         Circle()
-                            .fill(isDark ? Color(hex: "#1a1a2e") : .white)
+                            .fill(isDark ? Color(hex: "#1a1a2e") : Color.white.opacity(0.45))
                             .frame(width: 36, height: 36)
                             .overlay(
                                 Circle()
@@ -332,7 +338,7 @@ struct LanguageSelectionView: View {
                                         lineWidth: 1
                                     )
                             )
-                            .shadow(color: .indigo.opacity(isDark ? 0.15 : 0.06), radius: 8, y: 2)
+                            .shadow(color: .indigo.opacity(isDark ? 0.15 : 0.1), radius: 8, y: 2)
                             .scaleEffect(0.9 + orbPhase * 0.2)
 
                         Image(systemName: "arrow.right")
@@ -355,23 +361,25 @@ struct LanguageSelectionView: View {
             // Text label
             VStack(spacing: 6) {
                 (Text(selectedSource.displayName)
-                    .font(.title2.weight(.bold)) +
+                    .font(.title2.weight(.bold))
+                    .foregroundColor(isDark ? .white : Color(red: 45/255, green: 22/255, blue: 62/255)) +
                 Text("  \u{2192}  ")
                     .font(.title2.weight(.light))
-                    .foregroundColor(.secondary) +
+                    .foregroundColor(isDark ? .secondary : Color(red: 140/255, green: 96/255, blue: 136/255)) +
                 Text(selectedTarget.name(in: selectedSource))
-                    .font(.title2.weight(.bold)))
+                    .font(.title2.weight(.bold))
+                    .foregroundColor(isDark ? .white : Color(red: 45/255, green: 22/255, blue: 62/255)))
                 .contentTransition(.interpolate)
 
                 Text("\(availableTargets.count) \(L.languagesAvailable)")
                     .font(.footnote.weight(.medium))
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(isDark ? .secondary : Color(red: 100/255, green: 58/255, blue: 100/255))
                     .contentTransition(.numericText())
                     .padding(.horizontal, 14)
                     .padding(.vertical, 5)
                     .background(
                         Capsule()
-                            .fill(isDark ? .white.opacity(0.06) : .black.opacity(0.04))
+                            .fill(isDark ? .white.opacity(0.06) : .white.opacity(0.3))
                     )
             }
         }
@@ -405,7 +413,7 @@ struct LanguageSelectionView: View {
                 .frame(width: 64, height: 64)
                 .background(
                     Circle()
-                        .fill(isDark ? Color(hex: "#1a1a2e") : .white)
+                        .fill(isDark ? Color(hex: "#1a1a2e") : Color.white.opacity(0.5))
                 )
                 .overlay(
                     Circle()
@@ -422,27 +430,27 @@ struct LanguageSelectionView: View {
                             lineWidth: 2
                         )
                 )
-                .shadow(color: .indigo.opacity(isDark ? 0.3 : 0.12), radius: 12, y: 4)
+                .shadow(color: .indigo.opacity(isDark ? 0.3 : 0.15), radius: 12, y: 4)
         }
     }
 
     private var heroBackground: some View {
         RoundedRectangle(cornerRadius: 24)
-            .fill(isDark ? .ultraThinMaterial : .regularMaterial)
+            .fill(isDark ? .ultraThinMaterial : .ultraThinMaterial)
             .overlay(
                 RoundedRectangle(cornerRadius: 24)
                     .strokeBorder(
                         LinearGradient(
                             colors: isDark
                                 ? [.white.opacity(0.08), .white.opacity(0.02)]
-                                : [.white.opacity(0.9), .white.opacity(0.3)],
+                                : [.white.opacity(0.6), .white.opacity(0.2)],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         ),
                         lineWidth: 1
                     )
             )
-            .shadow(color: isDark ? .indigo.opacity(0.08) : .black.opacity(0.04), radius: 24, y: 10)
+            .shadow(color: isDark ? .indigo.opacity(0.08) : Color(red: 100/255, green: 58/255, blue: 100/255).opacity(0.12), radius: 24, y: 10)
     }
 
     // MARK: - Source Section
@@ -502,7 +510,9 @@ struct LanguageSelectionView: View {
                 // Name
                 Text(lang.displayName)
                     .font(.caption.weight(isSelected ? .bold : .medium))
-                    .foregroundStyle(isSelected ? .primary : .secondary)
+                    .foregroundStyle(isSelected
+                                     ? (isDark ? .white : Color(red: 45/255, green: 22/255, blue: 62/255))
+                                     : (isDark ? .secondary : Color(red: 100/255, green: 58/255, blue: 100/255)))
                     .lineLimit(1)
             }
             .frame(width: 72)
@@ -524,7 +534,7 @@ struct LanguageSelectionView: View {
                 )
         } else {
             Circle()
-                .fill(isDark ? Color.white.opacity(0.06) : Color.white)
+                .fill(isDark ? Color.white.opacity(0.06) : Color.white.opacity(0.5))
         }
     }
 
@@ -544,7 +554,7 @@ struct LanguageSelectionView: View {
 
             ZStack {
                 Circle()
-                    .fill(isDark ? Color(hex: "#1a1a2e") : .white)
+                    .fill(isDark ? Color(hex: "#1a1a2e") : Color.white.opacity(0.45))
                     .frame(width: 36, height: 36)
                     .overlay(
                         Circle()
@@ -556,7 +566,7 @@ struct LanguageSelectionView: View {
                                 lineWidth: 1
                             )
                     )
-                    .shadow(color: .indigo.opacity(isDark ? 0.15 : 0.06), radius: 8, y: 2)
+                    .shadow(color: .indigo.opacity(isDark ? 0.15 : 0.1), radius: 8, y: 2)
 
                 Image(systemName: "arrow.down")
                     .font(.system(size: 13, weight: .semibold))
@@ -805,7 +815,7 @@ struct LanguageSelectionView: View {
 
             Text(title)
                 .font(.title3.weight(.semibold))
-                .foregroundStyle(.primary)
+                .foregroundStyle(isDark ? .white : Color(red: 45/255, green: 22/255, blue: 62/255))
         }
     }
 
@@ -862,13 +872,15 @@ private struct TargetCardView: View {
                         .font(.subheadline.weight(isSelected ? .semibold : .medium))
                         .foregroundStyle(isSelected
                                          ? (isDark ? .white : .indigo)
-                                         : .primary)
+                                         : (isDark ? .white.opacity(0.85) : Color(red: 45/255, green: 22/255, blue: 62/255)))
                         .lineLimit(1)
                         .minimumScaleFactor(0.8)
 
                     Text(lang.displayName)
                         .font(.caption2.weight(.medium))
-                        .foregroundStyle(isSelected ? .indigo.opacity(0.7) : .secondary)
+                        .foregroundStyle(isSelected
+                                         ? .indigo.opacity(0.7)
+                                         : (isDark ? .white.opacity(0.5) : Color(red: 140/255, green: 96/255, blue: 136/255)))
                         .lineLimit(1)
                 }
 
@@ -904,7 +916,7 @@ private struct TargetCardView: View {
                 )
         } else {
             Circle()
-                .fill(isDark ? Color.white.opacity(0.04) : Color.white.opacity(0.8))
+                .fill(isDark ? Color.white.opacity(0.04) : Color.white.opacity(0.4))
         }
     }
 
@@ -942,15 +954,15 @@ private struct TargetCardView: View {
                 .shadow(color: .indigo.opacity(isDark ? 0.2 : 0.1), radius: 10, y: 3)
         } else {
             RoundedRectangle(cornerRadius: 16)
-                .fill(isDark ? Color.white.opacity(0.04) : Color.white.opacity(0.85))
+                .fill(isDark ? Color.white.opacity(0.04) : Color.white.opacity(0.35))
                 .overlay(
                     RoundedRectangle(cornerRadius: 16)
                         .strokeBorder(
-                            isDark ? Color.white.opacity(0.05) : Color.black.opacity(0.04),
+                            isDark ? Color.white.opacity(0.05) : Color.white.opacity(0.3),
                             lineWidth: 0.5
                         )
                 )
-                .shadow(color: .black.opacity(isDark ? 0.08 : 0.02), radius: 3, y: 1)
+                .shadow(color: isDark ? .black.opacity(0.08) : Color(red: 100/255, green: 58/255, blue: 100/255).opacity(0.06), radius: 3, y: 1)
         }
     }
 }
@@ -1013,7 +1025,7 @@ private struct SiriCloseButton: View {
                 Circle()
                     .fill(
                         (isDark ? Color(hex: "#1a1a2e") : Color.white)
-                            .opacity(0.85)
+                            .opacity(isDark ? 0.85 : 0.5)
                     )
                     .frame(width: 36, height: 36)
                     .overlay(
