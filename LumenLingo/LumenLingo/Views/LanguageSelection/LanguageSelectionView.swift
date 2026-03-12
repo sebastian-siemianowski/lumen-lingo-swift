@@ -663,28 +663,36 @@ struct LanguageSelectionView: View {
                 Spacer()
 
                 if hasChanged {
-                    TimelineView(.animation(minimumInterval: 1.0 / 30.0)) { context in
-                        let t = context.date.timeIntervalSinceReferenceDate
-                        let phase = CGFloat(t.truncatingRemainder(dividingBy: 3.0) / 3.0)
+                    if isDark {
+                        TimelineView(.animation(minimumInterval: 1.0 / 30.0)) { context in
+                            let t = context.date.timeIntervalSinceReferenceDate
+                            let phase = CGFloat(t.truncatingRemainder(dividingBy: 3.0) / 3.0)
 
+                            Text(L.startYourAdventure)
+                                .font(.headline.weight(.bold))
+                                .foregroundStyle(Color.white)
+                                .hidden()
+                                .overlay {
+                                    LinearGradient(
+                                        colors: SiriCloseButton.siriColors,
+                                        startPoint: UnitPoint(x: -0.5 + phase * 2, y: 0.5),
+                                        endPoint: UnitPoint(x: 0.5 + phase * 2, y: 0.5)
+                                    )
+                                    .mask {
+                                        Text(L.startYourAdventure)
+                                            .font(.headline.weight(.bold))
+                                    }
+                                }
+                                .shadow(color: Color(hex: "#FF9FF3").opacity(0.3), radius: 4)
+                        }
+                        .transition(.opacity)
+                    } else {
                         Text(L.startYourAdventure)
                             .font(.headline.weight(.bold))
-                            .foregroundStyle(Color.white)
-                            .hidden()
-                            .overlay {
-                                LinearGradient(
-                                    colors: SiriCloseButton.siriColors,
-                                    startPoint: UnitPoint(x: -0.5 + phase * 2, y: 0.5),
-                                    endPoint: UnitPoint(x: 0.5 + phase * 2, y: 0.5)
-                                )
-                                .mask {
-                                    Text(L.startYourAdventure)
-                                        .font(.headline.weight(.bold))
-                                }
-                            }
-                            .shadow(color: Color(hex: "#FF9FF3").opacity(0.3), radius: 4)
+                            .foregroundStyle(.white)
+                            .shadow(color: .white.opacity(0.5), radius: 4)
+                            .transition(.opacity)
                     }
-                    .transition(.opacity)
                 } else {
                     Text(L.keepLearning)
                         .font(.headline.weight(.bold))
@@ -752,8 +760,14 @@ struct LanguageSelectionView: View {
                     .fill(
                         LinearGradient(
                             colors: hasChanged
-                                ? [Color(hex: "#4F46E5"), Color(hex: "#7C3AED")]
-                                : [Color(.systemGray3), Color(.systemGray4)],
+                                ? (isDark
+                                    ? [Color(hex: "#4F46E5"), Color(hex: "#7C3AED")]
+                                    : [Color(red: 220/255, green: 131/255, blue: 217/255),
+                                       Color(red: 244/255, green: 114/255, blue: 182/255)])
+                                : (isDark
+                                    ? [Color(hex: "#2D1B69"), Color(hex: "#1B2A5C")]
+                                    : [Color(red: 168/255, green: 85/255, blue: 247/255).opacity(0.55),
+                                       Color(red: 220/255, green: 131/255, blue: 217/255).opacity(0.55)]),
                             startPoint: .leading,
                             endPoint: .trailing
                         )
@@ -787,7 +801,9 @@ struct LanguageSelectionView: View {
                     RoundedRectangle(cornerRadius: 18)
                         .strokeBorder(
                             LinearGradient(
-                                colors: [.white.opacity(0.25), .white.opacity(0.05)],
+                                colors: isDark
+                                    ? [.indigo.opacity(0.3), .purple.opacity(0.15)]
+                                    : [.white.opacity(0.5), .white.opacity(0.2)],
                                 startPoint: .top, endPoint: .bottom
                             ),
                             lineWidth: 1
@@ -795,7 +811,9 @@ struct LanguageSelectionView: View {
                 }
             }
             .shadow(
-                color: hasChanged ? Color(hex: "#4F46E5").opacity(0.4) : .clear,
+                color: hasChanged
+                    ? (isDark ? Color(hex: "#4F46E5") : Color(red: 244/255, green: 114/255, blue: 182/255)).opacity(0.4)
+                    : (isDark ? Color.indigo.opacity(0.15) : Color(red: 168/255, green: 85/255, blue: 247/255).opacity(0.15)),
                 radius: hasChanged ? 20 : 0,
                 y: hasChanged ? 8 : 0
             )
