@@ -159,10 +159,13 @@ fragment float4 solarAuroraBgFragment(
     // AURORA RIBBONS: 9 vertical curtains
     // Each ribbon = tall vertical column of colored light
     // with bright core at ~30% from base, ethereal fade upward
-    // Key differences from prior versions:
-    //   • Soft edges via smoothstep (no hard if-else cutoff)
+    // Features:
+    //   • Soft edges via smoothstep (no hard cutoff)
     //   • Width-proportional alpha (wider ribbons = brighter)
-    //   • Subtle turbulence in drift for organic feel
+    //   • Outer glow halo extending beyond ribbon for atmospheric softness
+    //   • Dual-harmonic shimmer for richer traveling light
+    //   • Intensity scales ribbon brightness + height
+    //   • Depth-based color cooling (deeper ribbons shift bluer)
     // ═══════════════════════════════════════════════════
 
     // Palette anchors
@@ -199,6 +202,10 @@ fragment float4 solarAuroraBgFragment(
             ribbonColor = mix(c2, c3, ct);
         }
 
+        // Depth-based color cooling: deeper ribbons shift slightly bluer
+        // (aurora at higher altitude appears cooler/more violet)
+        ribbonColor = mix(ribbonColor, ribbonColor * float3(0.85, 0.9, 1.15), rb.depth * 0.3);
+
         // ── Geometry displacement (6 types, exact React formulas) ──
         float yOffset = 0.0;
         int geomType = rb.geomType;
@@ -232,18 +239,37 @@ fragment float4 solarAuroraBgFragment(
         float ribbonY = rb.baseHeight + yOffset;
 
         // Dynamic segment height — varies along x for organic breathing
+        // Intensity scales height: more energetic aurora = taller curtains
         float heightNoise = sin(x * M_PI_F * 4.0 + rTime * 0.7) * 0.4
                           + cos(x * M_PI_F * 2.0 - rTime * 0.2) * 0.3 + 0.3;
-        float segH = (0.26 + heightNoise * 0.11) * (1.0 - rb.depth * 0.3);
+        float segH = (0.26 + heightNoise * 0.11) * (1.0 - rb.depth * 0.3)
+                   * (0.8 + u.intensity * 0.4);
 
         float topY = ribbonY - segH;
 
-        // ── SOFT EDGES: smoothstep boundaries instead of hard if-else ──
-        // Softening zone ~0.008 UV ≈ CSS blur(0.8px) equivalent
-        float softZone = 0.008;
+        // ── OUTER GLOW HALO ──
+        // Extends beyond main ribbon for atmospheric light diffusion
+        float glowExtend = segH * 0.25;
+        float glowTopY = topY - glowExtend;
+        float glowBotY = ribbonY + glowExtend * 0.5;
+        float glowSoft = 0.025;
+        float inGlowBot = smoothstep(glowBotY + glowSoft, glowBotY - glowSoft, uv.y);
+        float inGlowTop = smoothstep(glowTopY - glowSoft, glowTopY + glowSoft, uv.y);
+        float inGlow = inGlowBot * inGlowTop;
+
+        // ── SOFT EDGES: smoothstep boundaries ──
+        // Wider softening zone for more ethereal aurora feel
+        float softZone = 0.015;
         float inBottom = smoothstep(ribbonY + softZone, ribbonY - softZone, uv.y);
         float inTop    = smoothstep(topY - softZone,    topY + softZone,    uv.y);
         float inRibbon = inBottom * inTop;
+
+        float depthFade = 1.0 - rb.depth * 0.5;
+
+        // Outer glow: faint ribbon color in the halo zone (only where main ribbon isn't)
+        float glowOnly = max(inGlow - inRibbon, 0.0);
+        float outerGlowA = rb.width * 12.0 * depthFade * u.intensity * glowOnly;
+        ribbonAccum += ribbonColor * outerGlowA;
 
         if (inRibbon > 0.001) {
             // Normalized vertical position (0=base, 1=top)
@@ -253,14 +279,19 @@ fragment float4 solarAuroraBgFragment(
             float gradAlpha;
             float3 gradColor = auroraVerticalGradient(vt, ribbonColor, gradAlpha);
 
-            // Traveling shimmer: 12 spatial cycles, flowing at ribbon speed
-            float shimmer = 0.85 + (sin(x * 12.0 - rTime * rb.flowSpeed) * 0.5 + 0.5) * 0.35;
+            // Dual-harmonic shimmer: primary traveling pulse + secondary counter-flow
+            // Creates richer, more organic traveling light patterns
+            float shimPrimary = sin(x * 12.0 - rTime * rb.flowSpeed);
+            float shimSecondary = sin(x * 5.0 + rTime * rb.flowSpeed * 0.7);
+            float shimCombined = shimPrimary + shimSecondary * 0.3;
+            float shimmer = 0.85 + (shimCombined * 0.5 + 0.5)
+                          * (0.25 + u.intensity * 0.2);
 
             // Width-proportional alpha: wider ribbons have more overlapping
             // React segments → more accumulated brightness
-            // Formula: 0.018 per segment × (width/0.01 × 14) overlap ≈ width × 25.2
-            float depthFade = 1.0 - rb.depth * 0.5;
-            float alpha = rb.width * 30.0 * depthFade * gradAlpha * shimmer * inRibbon;
+            // React: alpha = 0.018 * intensity * (1-depth*0.5) * shimmer
+            float alpha = rb.width * 30.0 * depthFade * gradAlpha * shimmer
+                        * inRibbon * u.intensity;
 
             // Additive accumulation (matches React's globalCompositeOperation='lighter')
             ribbonAccum += gradColor * alpha;
