@@ -91,14 +91,20 @@ fragment float4 starburstBgFragment(
     }
 
     // ================================================================
-    // 2. ATMOSPHERIC WASH — radial-gradient(circle, rgba(125,44,255,0.04)
-    //    0%, transparent 60%)  screen blend
+    // 2. ATMOSPHERIC WASH — deep cosmic purple gradient fill
     // ================================================================
     {
-        float wd = gd / 0.60;
+        // Primary violet wash — wider, stronger
+        float wd = gd / 0.75;
         float wg = max(0.0, 1.0 - wd);
         wg *= wg;
-        col = screenBlend(col, rgb(125, 44, 255), wg * 0.04 * u.intensity);
+        col = screenBlend(col, rgb(100, 38, 200), wg * 0.08 * u.intensity);
+
+        // Deep indigo secondary wash — fills mid-field
+        float wd2 = gd / 0.55;
+        float wg2 = max(0.0, 1.0 - wd2);
+        wg2 = wg2 * wg2 * wg2;
+        col = screenBlend(col, rgb(60, 20, 140), wg2 * 0.12 * u.intensity);
     }
 
     // ================================================================
@@ -111,8 +117,8 @@ fragment float4 starburstBgFragment(
         float po = 0.70; // parent opacity
 
         // ── IRIS MICRO-FIBERS ──
-        // Dozens of bright radial streaks radiating outward from
-        // the pupil edge, like muscle fibers of a real eye iris.
+        // Subtle purple radial streaks through deep violet haze,
+        // defined mainly by dark gap channels (like a real iris).
         {
             float irisInner = 0.11;
             float irisOuter = 0.48;
@@ -142,27 +148,30 @@ fragment float4 starburstBgFragment(
                 // Combine: max blend gives overlapping streaks
                 float fibers = max(max(f1, f2), max(f3 * 0.7, f4 * 0.5));
 
-                // Mild angular variation (mostly uniform around the circle)
+                // Mild angular variation
                 float sectorVar = 0.75 + 0.25 * sin(a * 3.0 + 2.1)
                                               * sin(a * 5.0 - 0.8);
 
-                // Radial brightness: peaks just off pupil edge, gentle fade
+                // Gentle radial fade
                 float radialFade = (1.0 - irisR * 0.5);
                 radialFade *= radialFade;
 
-                // Color: bright white/lavender near pupil, violet outward
-                float3 fiberColor = mix(rgb(230, 220, 255), rgb(140, 90, 230), irisR);
-                float blueTint = f3 * (1.0 - irisR) * 0.4;
-                fiberColor = mix(fiberColor, rgb(220, 225, 255), blueTint);
+                // Colors: deep cosmic purple tones — NOT white
+                // Near pupil: muted lilac, further out: deep violet
+                float3 fiberColor = mix(rgb(160, 130, 210), rgb(100, 55, 180), irisR);
+                // Subtle blue-purple tint on fine fibers
+                float blueTint = f3 * (1.0 - irisR) * 0.3;
+                fiberColor = mix(fiberColor, rgb(130, 140, 200), blueTint);
 
-                float fiberAlpha = fibers * sectorVar * radialFade * irisBand * 0.55;
+                float fiberAlpha = fibers * sectorVar * radialFade * irisBand * 0.35;
                 col = screenBlend(col, fiberColor, fiberAlpha * u.intensity);
 
-                // Dark gaps between fibers — strong contrast
+                // Dark gap channels — the key visual feature
+                // Deep near-black gaps create the striated iris texture
                 float gaps = 1.0 - max(max(f1, f2), f3 * 0.6);
-                gaps = smoothstep(0.2, 0.6, gaps);
-                float gapDarken = gaps * irisBand * radialFade * 0.25;
-                col = multiplyBlend(col, rgb(4, 2, 14), gapDarken * u.intensity);
+                gaps = smoothstep(0.15, 0.55, gaps);
+                float gapDarken = gaps * irisBand * radialFade * 0.35;
+                col = multiplyBlend(col, rgb(3, 1, 10), gapDarken * u.intensity);
             }
         }
 
@@ -181,12 +190,12 @@ fragment float4 starburstBgFragment(
             }
         }
 
-        // (f) Lavender-white mist near the ring for richer perceived depth
+        // (f) Deep violet mist near the ring — rich gradient, not white
         {
-            float ringBand = gaussian(dist - 0.37, 0.10) * (1.0 - smoothstep(0.10, 0.22, gd));
+            float ringBand = gaussian(dist - 0.37, 0.12) * (1.0 - smoothstep(0.10, 0.22, gd));
             float cloudNoise = 0.5 + 0.5 * sin(angle * 3.0 - dist * 7.0 + elapsed * 0.018);
-            float3 nc = mix(rgb(185, 145, 255), rgb(235, 220, 255), cloudNoise);
-            col = screenBlend(col, nc, ringBand * 0.14 * u.intensity);
+            float3 nc = mix(rgb(110, 65, 190), rgb(160, 120, 220), cloudNoise);
+            col = screenBlend(col, nc, ringBand * 0.16 * u.intensity);
         }
 
         // (g) Full-field chroma nebula veil — stronger than the React base
@@ -208,14 +217,15 @@ fragment float4 starburstBgFragment(
                         + smoothstep(0.58, 0.90, cloudC) * 0.28;
 
             float magentaMix = smoothstep(0.46, 0.80, cloudB);
-            float cyanMix = smoothstep(0.62, 0.90, cloudC) * 0.62;
-            float pearlMix = smoothstep(0.78, 0.95, cloudA) * 0.16;
+            float cyanMix = smoothstep(0.62, 0.90, cloudC) * 0.40;
+            float pearlMix = smoothstep(0.78, 0.95, cloudA) * 0.08;
 
-            float3 nebulaColor = mix(rgb(84, 34, 198), rgb(224, 86, 220), magentaMix);
-            nebulaColor = mix(nebulaColor, rgb(64, 178, 246), cyanMix);
-            nebulaColor = mix(nebulaColor, rgb(236, 226, 255), pearlMix);
+            // Deeper, richer purple palette — less pink/cyan/pearl
+            float3 nebulaColor = mix(rgb(65, 25, 160), rgb(160, 60, 190), magentaMix);
+            nebulaColor = mix(nebulaColor, rgb(50, 120, 200), cyanMix);
+            nebulaColor = mix(nebulaColor, rgb(180, 160, 230), pearlMix);
 
-            col = screenBlend(col, nebulaColor, cloudMask * fieldBias * vapor * 0.11 * u.intensity);
+            col = screenBlend(col, nebulaColor, cloudMask * fieldBias * vapor * 0.15 * u.intensity);
         }
 
         // (h) Additional image-driven side blooms to make the nebula read
@@ -225,23 +235,30 @@ fragment float4 starburstBgFragment(
             float rightBloom = gaussian2D(uv, float2(0.79, 0.31), float2(0.27, 0.24));
             float bottomBloom = gaussian2D(uv, float2(0.36, 0.80), float2(0.29, 0.19));
 
-            col = screenBlend(col, rgb(176, 84, 238), leftBloom * 0.10 * u.intensity);
-            col = screenBlend(col, rgb(146, 74, 228), rightBloom * 0.09 * u.intensity);
-            col = screenBlend(col, rgb(74, 148, 236), bottomBloom * 0.06 * u.intensity);
+            col = screenBlend(col, rgb(120, 55, 200), leftBloom * 0.13 * u.intensity);
+            col = screenBlend(col, rgb(100, 50, 190), rightBloom * 0.12 * u.intensity);
+            col = screenBlend(col, rgb(55, 100, 190), bottomBloom * 0.08 * u.intensity);
         }
 
-        // Extra: broad violet under-glow filling the mid-field
-        //     (compensates for the many small star halos in React
-        //      that collectively tint the mid-range purple)
+        // Deep cosmic underglow — rich purple gradient filling mid-field
         {
-            float3 nc = rgb(120, 60, 200);
-            float nd2 = gd / 0.70; // extends to ~70% of farthest corner
+            float3 nc = rgb(80, 40, 170);
+            float nd2 = gd / 0.80; // extends further
             if (nd2 < 1.0) {
-                float na = 0.08 * (1.0 - nd2) * (1.0 - nd2);
-                // Ring-band boost: stronger where the ring is
-                float ringB = gaussian(dist - 0.35, 0.12);
-                na += ringB * 0.05;
+                float na = 0.12 * (1.0 - nd2) * (1.0 - nd2);
+                float ringB = gaussian(dist - 0.35, 0.14);
+                na += ringB * 0.07;
                 col = screenBlend(col, nc, na * u.intensity);
+            }
+        }
+
+        // Extra: very deep indigo gradient in outer halo
+        {
+            float3 nc2 = rgb(40, 18, 110);
+            float od = gd / 0.90;
+            if (od < 1.0) {
+                float oa = 0.06 * (1.0 - od);
+                col = screenBlend(col, nc2, oa * u.intensity);
             }
         }
     }
