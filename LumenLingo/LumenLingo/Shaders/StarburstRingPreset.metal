@@ -110,98 +110,59 @@ fragment float4 starburstBgFragment(
     {
         float po = 0.70; // parent opacity
 
-        // (a) Deep violet — w:80vw h:70vw  left:-10% top:-10%
-        //     center UV ≈ (0.30, 0.25/ar mapped), radii cover most of viewport
+        // ── IRIS MICRO-FIBERS ──
+        // Dozens of bright radial streaks radiating outward from
+        // the pupil edge, like muscle fibers of a real eye iris.
         {
-            float3 nc = rgb(140, 100, 220);
-            float2 c2 = float2(0.30, 0.22);
-            float2 r2 = float2(0.42, 0.38);  // large spread
-            float2 o = (uv - c2) / r2;
-            float a = atan2(o.y, o.x);
-            float nd = length(o);
-            // Organic shape distortion (border-radius simulation)
-            nd += sin(a * 3.0 + 1.2) * 0.10
-                + sin(a * 5.0 - 0.8) * 0.05
-                + sin(a * 8.0 + 2.7) * 0.025;
-            if (nd < 1.0) {
-                // Gradient: alpha 0.15 center → 0.05 at 50% → 0 at 100%
-                float na;
-                if (nd < 0.50) {
-                    na = mix(0.20, 0.07, nd / 0.50);
-                } else {
-                    na = mix(0.07, 0.0, (nd - 0.50) / 0.50);
-                }
-                // Simulate 60px blur with squared falloff
-                float blur = 1.0 - nd;
-                blur = blur * blur * (1.25 - blur * 0.25);
-                na *= blur;
-                col = screenBlend(col, nc, na * po * 1.08 * u.intensity);
-            }
-        }
+            float irisInner = 0.11;
+            float irisOuter = 0.48;
+            float irisBand = smoothstep(irisInner, irisInner + 0.02, dist)
+                           * (1.0 - smoothstep(irisOuter - 0.05, irisOuter, dist));
 
-        // (b) Magenta — w:70vw h:80vw  right:-15% top:10%
-        {
-            float3 nc = rgb(180, 80, 200);
-            float2 c2 = float2(0.78, 0.48);
-            float2 r2 = float2(0.38, 0.42);
-            float2 o = (uv - c2) / r2;
-            float a = atan2(o.y, o.x);
-            float nd = length(o);
-            nd += sin(a * 4.0 + 2.5) * 0.08
-                + sin(a * 7.0) * 0.04
-                + sin(a * 9.0 - 0.6) * 0.02;
-            if (nd < 1.0) {
-                float na;
-                if (nd < 0.50) {
-                    na = mix(0.16, 0.05, nd / 0.50);
-                } else {
-                    na = mix(0.05, 0.0, (nd - 0.50) / 0.50);
-                }
-                float blur = 1.0 - nd;
-                blur = blur * blur * (1.25 - blur * 0.25);
-                na *= blur;
-                col = screenBlend(col, nc, na * po * 0.96 * u.intensity);
-            }
-        }
+            if (irisBand > 0.001) {
+                float irisR = (dist - irisInner) / (irisOuter - irisInner);
+                float a = angle;
 
-        // (c) Blue-violet — w:90vw h:60vw  left:5% bottom:-15%
-        {
-            float3 nc = rgb(100, 120, 200);
-            float2 c2 = float2(0.50, 0.82);
-            float2 r2 = float2(0.48, 0.34);
-            float2 o = (uv - c2) / r2;
-            float a = atan2(o.y, o.x);
-            float nd = length(o);
-            nd += sin(a * 3.0 + 4.0) * 0.11
-                + sin(a * 6.0 + 1.5) * 0.05
-                + sin(a * 10.0 - 0.7) * 0.02;
-            if (nd < 1.0) {
-                float na;
-                if (nd < 0.50) {
-                    na = mix(0.13, 0.04, nd / 0.50);
-                } else {
-                    na = mix(0.04, 0.0, (nd - 0.50) / 0.50);
-                }
-                float blur = 1.0 - nd;
-                blur = blur * blur * (1.20 - blur * 0.20);
-                na *= blur;
-                col = screenBlend(col, nc, na * po * 0.84 * u.intensity);
-            }
-        }
+                // Layer 1: ~36 fibers (primary)
+                float f1 = sin(a * 36.0 + 0.0) * 0.5 + 0.5;
+                f1 = smoothstep(0.58, 0.82, f1);
 
-        // (d) Cyan — w:60vw h:50vw  left:-5% bottom:10%
-        {
-            float3 nc = rgb(80, 160, 220);
-            float2 c2 = float2(0.25, 0.62);
-            float2 r2 = float2(0.32, 0.28);
-            float2 o = (uv - c2) / r2;
-            float a = atan2(o.y, o.x);
-            float nd = length(o);
-            nd += sin(a * 5.0 + 3.3) * 0.08 + sin(a * 9.0 - 0.5) * 0.025;
-            if (nd < 1.0) {
-                float na = 0.11 * (1.0 - nd);
-                na *= (1.0 - nd) * (1.15 - (1.0 - nd) * 0.15);
-                col = screenBlend(col, nc, na * po * 0.72 * u.intensity);
+                // Layer 2: ~28 fibers (secondary, offset)
+                float f2 = sin(a * 28.0 + 1.7) * 0.5 + 0.5;
+                f2 = smoothstep(0.62, 0.86, f2);
+
+                // Layer 3: ~48 very fine fibers
+                float f3 = sin(a * 48.0 + 3.1) * 0.5 + 0.5;
+                f3 = smoothstep(0.65, 0.88, f3);
+
+                // Layer 4: ~18 broader fibers for variety
+                float f4 = sin(a * 18.0 + 5.4) * 0.5 + 0.5;
+                f4 = smoothstep(0.50, 0.78, f4);
+
+                // Combine: max blend gives overlapping streaks
+                float fibers = max(max(f1, f2), max(f3 * 0.7, f4 * 0.5));
+
+                // Mild angular variation (mostly uniform around the circle)
+                float sectorVar = 0.75 + 0.25 * sin(a * 3.0 + 2.1)
+                                              * sin(a * 5.0 - 0.8);
+
+                // Radial brightness: peaks just off pupil edge, gentle fade
+                float radialFade = (1.0 - irisR * 0.5);
+                radialFade *= radialFade;
+
+                // Color: bright white/lavender near pupil, violet outward
+                float3 fiberColor = mix(rgb(230, 220, 255), rgb(140, 90, 230), irisR);
+                float blueTint = f3 * (1.0 - irisR) * 0.4;
+                fiberColor = mix(fiberColor, rgb(220, 225, 255), blueTint);
+
+                float fiberAlpha = fibers * sectorVar * radialFade * irisBand * 0.55;
+                col = screenBlend(col, fiberColor, fiberAlpha * u.intensity);
+
+                // Dark gaps between fibers — strong contrast
+                float gaps = 1.0 - max(max(f1, f2), f3 * 0.6);
+                gaps = smoothstep(0.2, 0.6, gaps);
+                float gapDarken = gaps * irisBand * radialFade * 0.25;
+                col = multiplyBlend(col, rgb(4, 2, 14), gapDarken * u.intensity);
             }
         }
 
