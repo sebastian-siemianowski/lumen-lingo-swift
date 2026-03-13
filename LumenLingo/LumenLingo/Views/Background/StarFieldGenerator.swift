@@ -1410,8 +1410,17 @@ enum StarFieldGenerator {
                 }
             }
             
-            // ── Alpha — opacity from React: 0.1 + rand * 0.7 ──
-            let baseAlpha: Float = (0.10 + rand(7) * 0.70) * (1.0 - z * 0.25)
+            // ── Alpha — tuned toward the reference image while staying React-close ──
+            // The supplied reference reads with a denser ring and a dimmer loose field,
+            // so bias opacity by spatial zone.
+            let zoneAlphaBoost: Float
+            switch zone {
+            case 0: zoneAlphaBoost = 1.12   // core cluster slightly brighter
+            case 1: zoneAlphaBoost = 1.22   // ring is the hero structure
+            case 2: zoneAlphaBoost = 0.96   // halo stays soft
+            default: zoneAlphaBoost = 0.80  // field must not overpower the ring
+            }
+            let baseAlpha: Float = (0.10 + rand(7) * 0.70) * (1.0 - z * 0.25) * zoneAlphaBoost
             baseColor.w = min(baseAlpha, 1.0)
             
             // ── Twinkle — slower for elegance ──

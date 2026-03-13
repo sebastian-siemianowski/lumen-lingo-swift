@@ -80,8 +80,17 @@ vertex StarVertexOut starburstStarVertex(
         alpha = min(1.0, alpha * 1.1);
     }
 
+    float ringRadiusNorm = star.motionParams.x;
+    float ringBandBoost = isOrbital
+        ? smoothstep(0.20, 0.28, ringRadiusNorm) * (1.0 - smoothstep(0.54, 0.62, ringRadiusNorm))
+        : 0.0;
+    float coreBoost = isOrbital ? (1.0 - smoothstep(0.10, 0.16, ringRadiusNorm)) : 0.0;
+
+    alpha = min(1.0, alpha * (1.0 + ringBandBoost * 0.22 + coreBoost * 0.12));
+
     float breathe = 1.0 + (breatheEase - 0.5) * breatheRange;
     float scaledBase = star.baseSize * (minDim / 1000.0) * breathe;
+    scaledBase *= 1.0 + ringBandBoost * 0.18 + coreBoost * 0.10;
 
     float quadScale = scaledBase;
     if (star.starType == 3) {
