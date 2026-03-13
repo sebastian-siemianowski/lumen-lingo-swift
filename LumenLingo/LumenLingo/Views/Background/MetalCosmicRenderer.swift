@@ -125,10 +125,21 @@ final class MetalCosmicRenderer: NSObject, MTKViewDelegate {
             desc.colorAttachments[0].isBlendingEnabled = true
             desc.colorAttachments[0].rgbBlendOperation = .add
             desc.colorAttachments[0].alphaBlendOperation = .add
-            desc.colorAttachments[0].sourceRGBBlendFactor = .one        // premultiplied src
-            desc.colorAttachments[0].destinationRGBBlendFactor = .one   // additive
-            desc.colorAttachments[0].sourceAlphaBlendFactor = .one
-            desc.colorAttachments[0].destinationAlphaBlendFactor = .one
+            if index == 5 {
+                // Starburst React canvas uses source-over internally, then the whole
+                // canvas is screen-blended against the dark background. We cannot do a
+                // true screen composite without an intermediate texture, but source-over
+                // is much closer than raw additive for the dense ring clusters.
+                desc.colorAttachments[0].sourceRGBBlendFactor = .one
+                desc.colorAttachments[0].destinationRGBBlendFactor = .oneMinusSourceAlpha
+                desc.colorAttachments[0].sourceAlphaBlendFactor = .one
+                desc.colorAttachments[0].destinationAlphaBlendFactor = .oneMinusSourceAlpha
+            } else {
+                desc.colorAttachments[0].sourceRGBBlendFactor = .one        // premultiplied src
+                desc.colorAttachments[0].destinationRGBBlendFactor = .one   // additive
+                desc.colorAttachments[0].sourceAlphaBlendFactor = .one
+                desc.colorAttachments[0].destinationAlphaBlendFactor = .one
+            }
             
             do {
                 starPipelines[index] = try device.makeRenderPipelineState(descriptor: desc)

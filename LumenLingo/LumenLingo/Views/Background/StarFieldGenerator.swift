@@ -1323,12 +1323,13 @@ enum StarFieldGenerator {
             
             if sr > 0.985 {
                 // Massive Super-Giants (1.5%) — very rare
+                // React hero stars use anamorphic/lens-flare sprites, not JWST spikes.
                 sizeClass = 2.5
-                starType = 1 // hero
+                starType = 3 // hero anamorphic
             } else if sr > 0.95 {
                 // Large Bright Stars (3.5%)
                 sizeClass = 1.5
-                starType = 1 // hero
+                starType = 3 // hero anamorphic
             } else if sr > 0.85 {
                 // Medium normal (10%)
                 sizeClass = 1.0
@@ -1416,25 +1417,15 @@ enum StarFieldGenerator {
             // ── Twinkle — slower for elegance ──
             let twinkleSpeed: Float = 0.10 + rand(11) * 0.50
             
-            // ── Orbital motion — Keplerian for core/ring/halo ──
+            // ── Motion payload — encoded to match React MicrostarCanvas ──
+            // Orbital stars: angle + radius + orbitalSpeed
+            // Field stars: tiny driftX/driftY with wrap
             let isOrbital = zone < 3 // core, ring, halo orbit; field doesn't
             let orbitalSpeed: Float = isOrbital
                 ? (0.01 + rand(9) * 0.02) * (0.3 / (dist + 0.1))
                 : 0.0
-            
-            // Zone tint — ring and core get violet/magenta tint
-            let tintStrength: Float
-            let tintColor: SIMD4<Float>
-            if isRing {
-                tintStrength = 0.08 + z * 0.06
-                tintColor = SIMD4(154.0/255, 86.0/255, 255.0/255, 1)
-            } else if zone == 0 {
-                tintStrength = 0.10 + z * 0.05
-                tintColor = SIMD4(217.0/255, 196.0/255, 255.0/255, 1)
-            } else {
-                tintStrength = 0
-                tintColor = SIMD4(0, 0, 0, 0)
-            }
+            let driftX = (rand(12) - 0.5) * 0.05
+            let driftY = (rand(13) - 0.5) * 0.05
             
             stars.append(StarData(
                 position: SIMD2(rx, ry),
@@ -1445,12 +1436,12 @@ enum StarFieldGenerator {
                 twinklePhase: rand(10) * .pi * 2,
                 twinkleAmp: 0.15,
                 starType: starType,
-                driftAngle: ringAngle,
-                driftSpeed: orbitalSpeed * 50.0,
-                motionParams: SIMD2(Float(zone), dist),
-                rotationFactor: 0,
-                zoneTintStrength: tintStrength,
-                zoneTintColor: tintColor
+                driftAngle: isOrbital ? ringAngle : driftX,
+                driftSpeed: isOrbital ? orbitalSpeed : driftY,
+                motionParams: SIMD2(isOrbital ? dist : 0.0, isOrbital ? 1.0 : 0.0),
+                rotationFactor: isOrbital ? 1.0 : 0.0,
+                zoneTintStrength: 0,
+                zoneTintColor: SIMD4(0, 0, 0, 0)
             ))
         }
         
@@ -1478,6 +1469,9 @@ enum StarFieldGenerator {
                 color = SIMD4(246.0/255, 201.0/255, 255.0/255, opacity) // Soft magenta
             }
             
+            let driftX = (sRand(seed, 11) - 0.5) * 0.05
+            let driftY = (sRand(seed, 12) - 0.5) * 0.05
+
             stars.append(StarData(
                 position: SIMD2(rx, ry),
                 baseSize: size,
@@ -1487,9 +1481,9 @@ enum StarFieldGenerator {
                 twinklePhase: sRand(seed, 7) * .pi * 2,
                 twinkleAmp: 0.10,
                 starType: 0,
-                driftAngle: sRand(seed, 8) * .pi * 2,
-                driftSpeed: 0.03 + sRand(seed, 9) * 0.08,
-                motionParams: SIMD2(0, 0.1 + sRand(seed, 10) * 0.15),
+                driftAngle: driftX,
+                driftSpeed: driftY,
+                motionParams: SIMD2(0, 0),
                 rotationFactor: 0,
                 zoneTintStrength: 0,
                 zoneTintColor: SIMD4(0, 0, 0, 0)
@@ -1772,39 +1766,46 @@ enum StarFieldGenerator {
 
     // ============================================================
     // MARK: - Starburst Ring Gas Particles (pre-computed for GPU)
-    // Eliminates 400 seededRandom (sin) calls per pixel per frame.
+    // 200 particles matching React's gasParticles count for dense ring.
+    // Evenly distributed base angles with small jitter (React pattern).
     // ============================================================
 
     static func starburstRingGasClouds() -> [GasCloudData] {
         var clouds: [GasCloudData] = []
         let ringRadius: Float = 0.35
         let ringSpread: Float = 0.09
+        let count = 200
 
-        for i in 0..<80 {
-            let angle = sRand(55, i * 5) * Float.pi * 2.0
-            let radius = ringRadius + (sRand(55, i * 5 + 1) - 0.5) * ringSpread * 2.0
-            let size = (0.03 + sRand(55, i * 5 + 2) * 0.05) * 1170.0 // store as reference px
+        for i in 0..<count {
+            // Evenly distributed base angle + small jitter (matches React)
+            let baseAngle = Float(i) / Float(count) * Float.pi * 2.0
+            let jitter = sRand(55, i * 7) * 0.1 // ±0.1 rad ≈ ±5.7°
+            let angle = baseAngle + jitter
 
-            let cc = sRand(55, i * 5 + 3)
+            let radius = ringRadius + (sRand(55, i * 7 + 1) - 0.5) * ringSpread * 2.0
+            let size = (40.0 + sRand(55, i * 7 + 2) * 50.0) // 40-90 reference px (React range)
+
+            let cc = sRand(55, i * 7 + 3)
             var colorR: Float, colorG: Float, colorB: Float
-            if cc < 0.25 {
-                colorR = 125.0/255; colorG = 44.0/255; colorB = 255.0/255
-            } else if cc < 0.50 {
-                colorR = 208.0/255; colorG = 75.0/255; colorB = 255.0/255
-            } else if cc < 0.70 {
-                colorR = 75.0/255; colorG = 216.0/255; colorB = 255.0/255
-            } else if cc < 0.85 {
-                colorR = 154.0/255; colorG = 86.0/255; colorB = 255.0/255
+            if cc < 0.20 {
+                colorR = 125.0/255; colorG = 44.0/255; colorB = 255.0/255  // violetGas
+            } else if cc < 0.40 {
+                colorR = 208.0/255; colorG = 75.0/255; colorB = 255.0/255  // magentaGas
+            } else if cc < 0.60 {
+                colorR = 75.0/255; colorG = 216.0/255; colorB = 255.0/255  // neonBlue
+            } else if cc < 0.80 {
+                colorR = 154.0/255; colorG = 86.0/255; colorB = 255.0/255  // innerHalo
             } else {
                 colorR = 217.0/255; colorG = 196.0/255; colorB = 255.0/255 // coreGlow
             }
 
-            let pulsePhase = sRand(55, i * 5 + 4) * Float.pi * 2.0
-            let stretch: Float = 1.5 + sRand(55, i * 5 + 5) * 1.5 // 1.5-3.0
-            let wobbleSpeed: Float = 0.5 + sRand(55, i * 5 + 6)   // 0.5-1.5
+            let pulsePhase = sRand(55, i * 7 + 4) * Float.pi * 2.0
+            let stretch: Float = 1.5 + sRand(55, i * 7 + 5) * 1.5 // 1.5-3.0
+            let wobbleSpeed: Float = 0.5 + sRand(55, i * 7 + 6)   // 0.5-1.5
+            let speed: Float = 0.02 + sRand(55, i * 7 + 7) * 0.04 // orbit speed multiplier
 
             clouds.append(GasCloudData(
-                basePosX: radius, basePosY: 0,
+                basePosX: radius, basePosY: speed,
                 depth: wobbleSpeed, sizePx: size,
                 colorR: colorR, colorG: colorG, colorB: colorB,
                 baseAlpha: 0.03,
@@ -1819,7 +1820,8 @@ enum StarFieldGenerator {
 
     // ============================================================
     // MARK: - Starburst Accretion Particles (pre-computed for GPU)
-    // Eliminates 240 seededRandom (sin) calls per pixel per frame.
+    // 160 particles matching React's accretionDisk count for dense
+    // inner eye with Keplerian orbital speeds.
     // ============================================================
 
     static func starburstAccretionClouds() -> [GasCloudData] {
@@ -1829,21 +1831,22 @@ enum StarFieldGenerator {
             (200.0/255, 230.0/255, 255.0/255),   // blue-white
             (230.0/255, 210.0/255, 255.0/255)    // lavender
         ]
+        let count = 160
 
-        for i in 0..<60 {
-            let angle = sRand(77, i * 4) * Float.pi * 2.0
-            let rNorm = pow(sRand(77, i * 4 + 1), 1.8) // power distribution: dense near center
+        for i in 0..<count {
+            let angle = sRand(77, i * 6) * Float.pi * 2.0
+            let rNorm = pow(sRand(77, i * 6 + 1), 1.8) // power distribution: dense near center
             let radius: Float = 0.13 + rNorm * 0.20
-            let size = (12.0 + sRand(77, i * 4 + 2) * 18.0) // reference px
+            let size = (12.0 + sRand(77, i * 6 + 2) * 18.0) // reference px
 
-            // Keplerian speed
-            let speed: Float = 0.3 + sRand(77, i * 4 + 3) * 0.5
+            // Keplerian speed — inner particles orbit faster
+            let speed: Float = 0.3 + sRand(77, i * 6 + 3) * 0.5
             let orbSpeed = speed * (1.0 + (1.0 - rNorm) * 2.5)
 
-            let colorIdx = Int(sRand(77, i * 4 + 4) * 3.0) % 3
+            let colorIdx = Int(sRand(77, i * 6 + 4) * 3.0) % 3
             let color = colors[colorIdx]
             
-            let phase = sRand(77, i * 4 + 5) * Float.pi * 2.0
+            let phase = sRand(77, i * 6 + 5) * Float.pi * 2.0
 
             clouds.append(GasCloudData(
                 basePosX: radius, basePosY: 0,
