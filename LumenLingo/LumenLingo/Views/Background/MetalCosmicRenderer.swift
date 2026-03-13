@@ -30,6 +30,10 @@ final class MetalCosmicRenderer: NSObject, MTKViewDelegate {
     
     // Pre-computed gas cloud particle buffers (per-preset)
     private var gasCloudBuffers: [Int: MTLBuffer] = [:]
+    // Secondary particle buffers (e.g., accretion disk for Starburst)
+    private var secondaryBuffers: [Int: MTLBuffer] = [:]
+    // Aurora ribbon buffer (preset 2)
+    private var auroraRibbonBuffer: MTLBuffer?
     
     // Timing
     private let startTime = CACurrentMediaTime()
@@ -186,12 +190,31 @@ final class MetalCosmicRenderer: NSObject, MTKViewDelegate {
             (0, StarFieldGenerator.lagoonGasClouds()),
             (1, StarFieldGenerator.celestialGasClouds()),
             (3, StarFieldGenerator.spiralHaloGasClouds()),
+            (5, StarFieldGenerator.starburstRingGasClouds()),
         ]
         for entry in presetClouds {
             guard !entry.clouds.isEmpty else { continue }
             gasCloudBuffers[entry.index] = device.makeBuffer(
                 bytes: entry.clouds,
                 length: MemoryLayout<GasCloudData>.stride * entry.clouds.count,
+                options: .storageModeShared
+            )
+        }
+        // Secondary buffers (accretion disk for Starburst)
+        let accretion = StarFieldGenerator.starburstAccretionClouds()
+        if !accretion.isEmpty {
+            secondaryBuffers[5] = device.makeBuffer(
+                bytes: accretion,
+                length: MemoryLayout<GasCloudData>.stride * accretion.count,
+                options: .storageModeShared
+            )
+        }
+        // Aurora ribbon buffer
+        let ribbons = StarFieldGenerator.auroraRibbons()
+        if !ribbons.isEmpty {
+            auroraRibbonBuffer = device.makeBuffer(
+                bytes: ribbons,
+                length: MemoryLayout<AuroraRibbonData>.stride * ribbons.count,
                 options: .storageModeShared
             )
         }
@@ -242,6 +265,14 @@ final class MetalCosmicRenderer: NSObject, MTKViewDelegate {
             // Pass pre-computed gas cloud buffer for presets that use it
             if let gasBuf = gasCloudBuffers[presetIdx] {
                 encoder.setFragmentBuffer(gasBuf, offset: 0, index: 1)
+            }
+            // Pass secondary buffer (e.g., accretion disk for Starburst)
+            if let secBuf = secondaryBuffers[presetIdx] {
+                encoder.setFragmentBuffer(secBuf, offset: 0, index: 2)
+            }
+            // Pass aurora ribbon buffer for Solar Aurora preset
+            if presetIdx == 2, let auroraBuf = auroraRibbonBuffer {
+                encoder.setFragmentBuffer(auroraBuf, offset: 0, index: 1)
             }
             encoder.drawPrimitives(type: .triangle, vertexStart: 0, vertexCount: 3)
         }

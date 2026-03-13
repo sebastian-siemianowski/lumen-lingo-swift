@@ -68,7 +68,7 @@ fragment float4 celestialBgFragment(
             float2 center = float2(0.28 + breathe, 0.30 - breathe2);
             float2 nd = (uv - center) / float2(0.55, 0.48);
             float  d  = length(nd);
-            float  g  = exp(-d * d * 0.6);
+            float  g  = 1.0 - smoothstep(0.0, 1.29, d); // approximates exp(-d*d*0.6)
 
             float3 s1 = mix(rgb(25, 200, 210), rgb(35, 210, 220), tempCycle * 0.3);
             float3 s2 = mix(rgb(20, 165, 180), rgb(28, 175, 190), tempCycle * 0.3);
@@ -89,7 +89,7 @@ fragment float4 celestialBgFragment(
             float2 center = float2(0.42 - breathe2, 0.45 + breathe * 0.7);
             float2 nd = (uv - center) / float2(0.50, 0.44);
             float  d  = length(nd);
-            float  g  = exp(-d * d * 0.70);
+            float  g  = 1.0 - smoothstep(0.0, 1.15, d); // approximates exp(-d*d*0.70)
 
             float3 s1 = mix(rgb(100, 235, 240), rgb(120, 245, 250), tempCycle * 0.2);
             float3 s2 = mix(rgb(70, 200, 215), rgb(85, 215, 225), tempCycle * 0.2);
@@ -110,7 +110,7 @@ fragment float4 celestialBgFragment(
             float2 center = float2(0.72 - breathe, 0.70 + breathe2);
             float2 nd = (uv - center) / float2(0.58, 0.50);
             float  d  = length(nd);
-            float  g  = exp(-d * d * 0.50);
+            float  g  = 1.0 - smoothstep(0.0, 1.41, d); // approximates exp(-d*d*0.50)
 
             float3 s1 = mix(rgb(60, 220, 210), rgb(80, 235, 225), tempCycle * 0.2);
             float3 c; float a;
@@ -132,7 +132,7 @@ fragment float4 celestialBgFragment(
             float2 center = float2(0.65 + breathe2, 0.30 - breathe);
             float2 nd = (uv - center) / float2(0.38, 0.34);
             float  d  = length(nd);
-            float  g  = exp(-d * d * 0.9);
+            float  g  = 1.0 - smoothstep(0.0, 1.05, d); // approximates exp(-d*d*0.9)
             float3 c; float a;
             if (d < 0.50) {
                 c = mix(rgb(160, 130, 180), rgb(140, 110, 155), d / 0.50);
@@ -161,6 +161,8 @@ fragment float4 celestialBgFragment(
                     + cos(t * 0.14) * 10.0 / refWidth * sizeScale * speedAmp;
 
         float4 gasCanvas = float4(0.0);
+        float intBoost = 0.7 + intensity * 0.6;
+        float velScale = 3.5 / refWidth * sizeScale;
 
         for (int i = 0; i < 55; i++) {
             GasCloudData p = gasClouds[i];
@@ -190,13 +192,11 @@ fragment float4 celestialBgFragment(
                          + cos(t * 0.26 + rx * 2.5 + p.phase * 2.0) * turbAmp * 0.16;
 
             // D. Constant velocity drift (spiralDist/spiralTheta = velDirX/Y)
-            float velScale = 3.5 / refWidth * sizeScale;
             float vx = p.spiralDist * velScale * t;
             float vy = p.spiralTheta * velScale * t;
 
             // E. Size & alpha pulsation
             float pulse = sin(t * p.pulseFreq + p.pulsePhase);
-            float intBoost = 0.7 + intensity * 0.6;
             float sz    = pSize * (1.0 + pulse * 0.18);
             float alpha = p.baseAlpha * intBoost * (1.0 + pulse * 0.25);
 

@@ -73,7 +73,7 @@ fragment float4 lagoonBgFragment(
             float2 center = float2(0.25 + drift.x, 0.25 - drift.y);
             float2 nd = (uv - center) / float2(0.55, 0.45);
             float  d  = length(nd);
-            float  g  = exp(-d * d * 0.6);
+            float  g  = 1.0 - smoothstep(0.0, 1.29, d); // approximates exp(-d*d*0.6)
 
             float3 s1 = mix(rgb(200, 85, 40), rgb(200, 100, 80), tempCycle * 0.3);
             float3 s2 = mix(rgb(160, 60, 28), rgb(170, 70, 50), tempCycle * 0.3);
@@ -96,7 +96,7 @@ fragment float4 lagoonBgFragment(
             float2 center = float2(0.38 - drift.x, 0.40 + drift.y);
             float2 nd = (uv - center) / float2(0.48, 0.42);
             float  d  = length(nd);
-            float  g  = exp(-d * d * 0.75);
+            float  g  = 1.0 - smoothstep(0.0, 1.15, d); // approximates exp(-d*d*0.75)
 
             float3 s1 = mix(rgb(255, 180, 80), rgb(255, 200, 110), tempCycle * 0.2);
             float3 s2 = mix(rgb(235, 150, 65), rgb(240, 165, 85), tempCycle * 0.2);
@@ -118,7 +118,7 @@ fragment float4 lagoonBgFragment(
             float2 center = float2(0.75 - drift.x, 0.75 + drift.y);
             float2 nd = (uv - center) / float2(0.62, 0.52);
             float  d  = length(nd);
-            float  g  = exp(-d * d * 0.45);
+            float  g  = 1.0 - smoothstep(0.0, 1.49, d); // approximates exp(-d*d*0.45)
 
             float3 s1 = mix(rgb(100, 220, 255), rgb(120, 230, 245), tempCycle * 0.2);
             float3 c; float a;
@@ -140,7 +140,7 @@ fragment float4 lagoonBgFragment(
             float2 center = float2(0.58 + drift.x, 0.52 - drift.y);
             float2 nd = (uv - center) / float2(0.42, 0.38);
             float  d  = length(nd);
-            float  g  = exp(-d * d * 0.9);
+            float  g  = 1.0 - smoothstep(0.0, 1.05, d); // approximates exp(-d*d*0.9)
             float3 c; float a;
             if (d < 0.50) {
                 c = mix(rgb(20, 130, 160), rgb(15, 95, 125), d / 0.50);
@@ -168,6 +168,8 @@ fragment float4 lagoonBgFragment(
                     + cos(t * 0.17) * 12.0 / refWidth * sizeScale * speedAmp;
 
         float4 gasCanvas = float4(0.0);
+        float intBoost = 0.7 + intensity * 0.6;
+        float velScale = 4.5 / refWidth * sizeScale;
 
         for (int i = 0; i < 55; i++) {
             GasCloudData p = gasClouds[i];
@@ -197,13 +199,11 @@ fragment float4 lagoonBgFragment(
                          + cos(t * 0.32 + rx * 2.8 + p.phase * 2.1) * turbAmp * 0.18;
 
             // D. Constant velocity drift (spiralDist/spiralTheta = velDirX/Y)
-            float velScale = 4.5 / refWidth * sizeScale;
             float vx = p.spiralDist * velScale * t;
             float vy = p.spiralTheta * velScale * t;
 
             // E. Size & alpha modulation — phase-staggered (NOT uniform breathing)
             float pulse = sin(t * p.pulseFreq + p.pulsePhase);
-            float intBoost = 0.7 + intensity * 0.6;
             float sz    = pSize * (1.0 + pulse * 0.10);
             float alpha = p.baseAlpha * intBoost * (1.0 + pulse * 0.15);
 

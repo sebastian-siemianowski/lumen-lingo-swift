@@ -14,6 +14,12 @@ static float seededRandom(int seed, int n) {
     return fract(x);
 }
 
+// Fast variant using fast::sin — lower precision but sufficient for non-visual params
+static float seededRandomFast(int seed, int n) {
+    float x = fast::sin(float(seed) * 9999.0 + float(n) * 7919.0) * 10000.0;
+    return fract(x);
+}
+
 // ============================================================
 // MARK: - 3D Simplex Noise (Ashima / Stefan Gustavson)
 // ============================================================
@@ -207,6 +213,27 @@ struct GasCloudData {
     float spiralDist;    // >0 for arm particles needing rotation
     float spiralTheta;   // Spiral arm angle (for rotation reconstruction)
     float _pad0;         // Padding to 64 bytes (16 floats)
+};
+
+// ============================================================
+// MARK: - Pre-computed Aurora Ribbon Data
+// Used by SolarAuroraPreset to avoid per-pixel seededRandom calls.
+// Filled once on CPU, passed as buffer to fragment shader.
+// ============================================================
+
+struct AuroraRibbonData {
+    float baseHeight;    // Y center (0.2-0.65)
+    float speed;         // Animation speed
+    float drift;         // Horizontal drift factor
+    float colorOffset;   // Color cycle phase
+    float amplitude;     // Wave amplitude
+    float frequency;     // Wave frequency
+    float width;         // Ribbon width in UV
+    float flowSpeed;     // Traveling shimmer speed
+    float segHeight;     // Segment height (vertical extent)
+    int   geomType;      // 0-5 geometry type
+    float depth;         // Layer depth (0..1)
+    float _pad0;         // Padding to 48 bytes (12 floats)
 };
 
 #endif /* CosmicNoise_h */

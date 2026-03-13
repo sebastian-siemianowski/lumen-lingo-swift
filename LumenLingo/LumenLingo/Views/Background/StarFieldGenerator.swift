@@ -47,6 +47,26 @@ struct GasCloudData {
 }
 
 // ============================================================
+// MARK: - Aurora Ribbon Data (GPU Buffer Layout)
+// Must match Metal AuroraRibbonData struct exactly (12 floats = 48 bytes)
+// ============================================================
+
+struct AuroraRibbonData {
+    var baseHeight: Float    // Y center (0.2-0.65)
+    var speed: Float         // Animation speed
+    var drift: Float         // Horizontal drift factor
+    var colorOffset: Float   // Color cycle phase
+    var amplitude: Float     // Wave amplitude
+    var frequency: Float     // Wave frequency
+    var width: Float         // Ribbon width in UV
+    var flowSpeed: Float     // Traveling shimmer speed
+    var segHeight: Float     // Segment height (vertical extent)
+    var geomType: Int32      // 0-5 geometry type
+    var depth: Float         // Layer depth (0..1)
+    var _pad0: Float = 0     // Padding to 48 bytes
+}
+
+// ============================================================
 // MARK: - Star Field Generator
 // Generates per-preset star arrays matching React distributions
 // ============================================================
@@ -1708,6 +1728,134 @@ enum StarFieldGenerator {
             ))
         }
 
+        return clouds
+    }
+
+    // ============================================================
+    // MARK: - Solar Aurora Ribbons (pre-computed for GPU)
+    // Eliminates 54 seededRandom (sin) calls per pixel per frame.
+    // ============================================================
+
+    static func auroraRibbons() -> [AuroraRibbonData] {
+        var ribbons: [AuroraRibbonData] = []
+        let geomTypes: [Int32] = [0, 1, 2, 3, 4, 5, 0, 1, 3] // smooth/fold/spiral/s-curve/drape/ripple cycle
+
+        for i in 0..<9 {
+            let fi = Float(i)
+            let depth = fi / 8.0
+            let baseHeight = 0.2 + (sin(fi * 99.0) * 0.5 + 0.5) * 0.45
+            let speed: Float = 0.15 + sRand(31, i * 7 + 5) * 0.35
+            let drift = (sRand(31, i * 7 + 6) - 0.5) * 0.3
+            let amplitude: Float = 0.08 + sRand(31, i * 7 + 1) * 0.18
+            let frequency: Float = 0.3 + sRand(31, i * 7 + 2) * 1.2
+            let width: Float = 0.006 + sRand(31, i * 7 + 3) * 0.008
+            let flowSpeed: Float = 0.5 + sRand(31, i * 7 + 5) * 1.5
+            let colorOffset = sRand(31, i * 7 + 4) * Float.pi * 2.0
+            let segHeight: Float = 0.26 + sRand(31, i * 7) * 0.11 // 26-37% of screen
+
+            ribbons.append(AuroraRibbonData(
+                baseHeight: baseHeight,
+                speed: speed,
+                drift: drift,
+                colorOffset: colorOffset,
+                amplitude: amplitude,
+                frequency: frequency,
+                width: width,
+                flowSpeed: flowSpeed,
+                segHeight: segHeight,
+                geomType: geomTypes[i],
+                depth: depth
+            ))
+        }
+        return ribbons
+    }
+
+    // ============================================================
+    // MARK: - Starburst Ring Gas Particles (pre-computed for GPU)
+    // Eliminates 400 seededRandom (sin) calls per pixel per frame.
+    // ============================================================
+
+    static func starburstRingGasClouds() -> [GasCloudData] {
+        var clouds: [GasCloudData] = []
+        let ringRadius: Float = 0.35
+        let ringSpread: Float = 0.09
+
+        for i in 0..<80 {
+            let angle = sRand(55, i * 5) * Float.pi * 2.0
+            let radius = ringRadius + (sRand(55, i * 5 + 1) - 0.5) * ringSpread * 2.0
+            let size = (0.03 + sRand(55, i * 5 + 2) * 0.05) * 1170.0 // store as reference px
+
+            let cc = sRand(55, i * 5 + 3)
+            var colorR: Float, colorG: Float, colorB: Float
+            if cc < 0.25 {
+                colorR = 125.0/255; colorG = 44.0/255; colorB = 255.0/255
+            } else if cc < 0.50 {
+                colorR = 208.0/255; colorG = 75.0/255; colorB = 255.0/255
+            } else if cc < 0.70 {
+                colorR = 75.0/255; colorG = 216.0/255; colorB = 255.0/255
+            } else if cc < 0.85 {
+                colorR = 154.0/255; colorG = 86.0/255; colorB = 255.0/255
+            } else {
+                colorR = 217.0/255; colorG = 196.0/255; colorB = 255.0/255 // coreGlow
+            }
+
+            let pulsePhase = sRand(55, i * 5 + 4) * Float.pi * 2.0
+            let stretch: Float = 1.5 + sRand(55, i * 5 + 5) * 1.5 // 1.5-3.0
+            let wobbleSpeed: Float = 0.5 + sRand(55, i * 5 + 6)   // 0.5-1.5
+
+            clouds.append(GasCloudData(
+                basePosX: radius, basePosY: 0,
+                depth: wobbleSpeed, sizePx: size,
+                colorR: colorR, colorG: colorG, colorB: colorB,
+                baseAlpha: 0.03,
+                phase: angle,
+                flowFreq: stretch, flowBaseMul: 0,
+                pulseFreq: 0.8, pulsePhase: pulsePhase,
+                spiralDist: 0, spiralTheta: 0
+            ))
+        }
+        return clouds
+    }
+
+    // ============================================================
+    // MARK: - Starburst Accretion Particles (pre-computed for GPU)
+    // Eliminates 240 seededRandom (sin) calls per pixel per frame.
+    // ============================================================
+
+    static func starburstAccretionClouds() -> [GasCloudData] {
+        var clouds: [GasCloudData] = []
+        let colors: [(Float, Float, Float)] = [
+            (255.0/255, 255.0/255, 255.0/255),   // white
+            (200.0/255, 230.0/255, 255.0/255),   // blue-white
+            (230.0/255, 210.0/255, 255.0/255)    // lavender
+        ]
+
+        for i in 0..<60 {
+            let angle = sRand(77, i * 4) * Float.pi * 2.0
+            let rNorm = pow(sRand(77, i * 4 + 1), 1.8) // power distribution: dense near center
+            let radius: Float = 0.13 + rNorm * 0.20
+            let size = (12.0 + sRand(77, i * 4 + 2) * 18.0) // reference px
+
+            // Keplerian speed
+            let speed: Float = 0.3 + sRand(77, i * 4 + 3) * 0.5
+            let orbSpeed = speed * (1.0 + (1.0 - rNorm) * 2.5)
+
+            let colorIdx = Int(sRand(77, i * 4 + 4) * 3.0) % 3
+            let color = colors[colorIdx]
+            
+            let phase = sRand(77, i * 4 + 5) * Float.pi * 2.0
+
+            clouds.append(GasCloudData(
+                basePosX: radius, basePosY: 0,
+                depth: rNorm, sizePx: size,
+                colorR: color.0, colorG: color.1, colorB: color.2,
+                baseAlpha: 0.025,
+                phase: angle,
+                flowFreq: orbSpeed, flowBaseMul: 0,
+                pulseFreq: 0, pulsePhase: phase,
+                spiralDist: 0, spiralTheta: 0
+            ))
+        }
         return clouds
     }
 
