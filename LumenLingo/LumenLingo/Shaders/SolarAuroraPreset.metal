@@ -156,16 +156,11 @@ fragment float4 solarAuroraBgFragment(
     }
 
     // ═══════════════════════════════════════════════════
-    // AURORA RIBBONS: 9 vertical curtains
-    // Each ribbon = tall vertical column of colored light
-    // with bright core at ~30% from base, ethereal fade upward
-    // Features:
-    //   • Soft edges via smoothstep (no hard cutoff)
-    //   • Width-proportional alpha (wider ribbons = brighter)
-    //   • Outer glow halo extending beyond ribbon for atmospheric softness
-    //   • Dual-harmonic shimmer for richer traveling light
-    //   • Intensity scales ribbon brightness + height
-    //   • Depth-based color cooling (deeper ribbons shift bluer)
+    // AURORA RIBBONS: 9 vertical curtains spanning full screen
+    // Each ribbon is a continuous curtain of light evaluated at
+    // every pixel — NO wrapping/fract() (which caused vertical
+    // line seams). Sin/cos functions are continuous everywhere,
+    // so drift just shifts the phase seamlessly.
     // ═══════════════════════════════════════════════════
 
     // Palette anchors
@@ -180,16 +175,16 @@ fragment float4 solarAuroraBgFragment(
         float rTime = t * rb.speed + float(r) * 10.0;
 
         // ── Drift (horizontal sliding) ──
-        // Oscillation (±10% viewport) + linear drift + subtle turbulence
+        // Oscillation (±10% viewport) + slow linear drift
         float driftX = sin(rTime * 0.1) * 0.1
                      + rTime * 0.0427 * rb.drift;
 
-        // Ribbon-local x [0..1] (pixel mapped to ribbon space, wrapping)
-        float x = fract(uv.x - driftX);
+        // Continuous x — NO fract(). Sin/cos handle any input seamlessly,
+        // so the ribbon always spans the full screen with no wrap seam.
+        float x = uv.x - driftX;
 
-        // Subtle turbulence (organic irregularity, ±2.5% viewport)
-        float turbX = sin(x * 11.7 + rTime * 0.1) * 0.0256;
-        x = fract(x + turbX);
+        // Subtle turbulence (organic irregularity) — additive, no wrapping
+        x += sin(x * M_PI_F * 6.0 + rTime * 0.1) * 0.02;
 
         // ── Color via cosine interpolation ──
         float rawCycle = sin(rTime * 0.15 + rb.colorOffset) * 0.5 + 0.5;
@@ -202,35 +197,28 @@ fragment float4 solarAuroraBgFragment(
             ribbonColor = mix(c2, c3, ct);
         }
 
-        // Depth-based color cooling: deeper ribbons shift slightly bluer
-        // (aurora at higher altitude appears cooler/more violet)
+        // Depth-based color cooling: deeper ribbons shift bluer
         ribbonColor = mix(ribbonColor, ribbonColor * float3(0.85, 0.9, 1.15), rb.depth * 0.3);
 
-        // ── Geometry displacement (6 types, exact React formulas) ──
+        // ── Geometry displacement (6 types) ──
         float yOffset = 0.0;
         int geomType = rb.geomType;
 
         if (geomType == 0) {
-            // smooth: gentle undulation, 1 cycle
             yOffset = sin(x * M_PI_F * 2.0 + rTime * 0.35) * 0.055
                     + cos(x * M_PI_F * 2.0 - rTime * 0.1)  * 0.025;
         } else if (geomType == 1) {
-            // fold: accordion pleats, 3 cycles, upward
             float foldPhase = x * M_PI_F * 6.0 + rTime * 0.12;
             float fold = sin(foldPhase);
             yOffset = -abs(fold) * 0.03;
         } else if (geomType == 2) {
-            // spiral: corkscrew, 2 cycles
             float spiralT = x * M_PI_F * 4.0 + rTime * 0.25;
             yOffset = sin(spiralT) * 0.065;
         } else if (geomType == 3) {
-            // s-curve: wide meandering S
             yOffset = sin(x * M_PI_F * 2.0 + rTime * 0.22) * 0.09;
         } else if (geomType == 4) {
-            // drape: hanging catenary (always pushes down)
             yOffset = abs(sin(x * M_PI_F * 2.0 + rTime * 0.09)) * 0.11;
         } else {
-            // ripple: high-freq detail + slow undulation
             yOffset = sin(x * M_PI_F * 10.0 - rTime * 0.7) * 0.018
                     + sin(x * M_PI_F * 4.0  + rTime * 0.2)  * 0.025;
         }
@@ -238,69 +226,78 @@ fragment float4 solarAuroraBgFragment(
         // ── Vertical positioning ──
         float ribbonY = rb.baseHeight + yOffset;
 
-        // Dynamic segment height — varies along x for organic breathing
-        // Intensity scales height: more energetic aurora = taller curtains
+        // Dynamic height — varies along x for organic breathing curtains
         float heightNoise = sin(x * M_PI_F * 4.0 + rTime * 0.7) * 0.4
                           + cos(x * M_PI_F * 2.0 - rTime * 0.2) * 0.3 + 0.3;
-        float segH = (0.26 + heightNoise * 0.11) * (1.0 - rb.depth * 0.3)
+        // Intensity grows curtains taller; base slightly larger for more presence
+        float segH = (0.30 + heightNoise * 0.14) * (1.0 - rb.depth * 0.25)
                    * (0.8 + u.intensity * 0.4);
 
         float topY = ribbonY - segH;
 
         // ── OUTER GLOW HALO ──
-        // Extends beyond main ribbon for atmospheric light diffusion
-        float glowExtend = segH * 0.25;
+        // Wide atmospheric glow around each curtain
+        float glowExtend = segH * 0.35;
         float glowTopY = topY - glowExtend;
-        float glowBotY = ribbonY + glowExtend * 0.5;
-        float glowSoft = 0.025;
+        float glowBotY = ribbonY + glowExtend * 0.4;
+        float glowSoft = 0.035;
         float inGlowBot = smoothstep(glowBotY + glowSoft, glowBotY - glowSoft, uv.y);
         float inGlowTop = smoothstep(glowTopY - glowSoft, glowTopY + glowSoft, uv.y);
         float inGlow = inGlowBot * inGlowTop;
 
-        // ── SOFT EDGES: smoothstep boundaries ──
-        // Wider softening zone for more ethereal aurora feel
-        float softZone = 0.015;
+        // ── SOFT EDGES ──
+        float softZone = 0.02;
         float inBottom = smoothstep(ribbonY + softZone, ribbonY - softZone, uv.y);
         float inTop    = smoothstep(topY - softZone,    topY + softZone,    uv.y);
         float inRibbon = inBottom * inTop;
 
         float depthFade = 1.0 - rb.depth * 0.5;
 
-        // Outer glow: faint ribbon color in the halo zone (only where main ribbon isn't)
+        // Outer glow contribution (atmospheric light scatter)
         float glowOnly = max(inGlow - inRibbon, 0.0);
-        float outerGlowA = rb.width * 12.0 * depthFade * u.intensity * glowOnly;
+        float outerGlowA = rb.width * 15.0 * depthFade * u.intensity * glowOnly;
         ribbonAccum += ribbonColor * outerGlowA;
 
         if (inRibbon > 0.001) {
-            // Normalized vertical position (0=base, 1=top)
             float vt = saturate((ribbonY - uv.y) / segH);
 
-            // 5-stop vertical gradient (aurora curtain profile)
+            // 5-stop vertical gradient — aurora curtain profile
             float gradAlpha;
             float3 gradColor = auroraVerticalGradient(vt, ribbonColor, gradAlpha);
 
-            // Dual-harmonic shimmer: primary traveling pulse + secondary counter-flow
-            // Creates richer, more organic traveling light patterns
+            // ── Vertical ray structure ──
+            // Real aurora has fine vertical striations from magnetic field lines.
+            // High-freq x-dependent modulation creates faint vertical ray texture.
+            float rayPhase = x * M_PI_F * 40.0 + float(r) * 7.3;
+            float rays = 0.85 + sin(rayPhase) * 0.15;
+
+            // ── Traveling shimmer (energy flow) ──
             float shimPrimary = sin(x * 12.0 - rTime * rb.flowSpeed);
             float shimSecondary = sin(x * 5.0 + rTime * rb.flowSpeed * 0.7);
-            float shimCombined = shimPrimary + shimSecondary * 0.3;
-            float shimmer = 0.85 + (shimCombined * 0.5 + 0.5)
-                          * (0.25 + u.intensity * 0.2);
+            float shimmer = 0.85 + (shimPrimary * 0.5 + 0.5) * (0.25 + u.intensity * 0.2)
+                          + shimSecondary * 0.06;
 
-            // Width-proportional alpha: wider ribbons have more overlapping
-            // React segments → more accumulated brightness
-            // React: alpha = 0.018 * intensity * (1-depth*0.5) * shimmer
+            // Width-proportional alpha (wider ribbons = brighter from more overlap)
             float alpha = rb.width * 30.0 * depthFade * gradAlpha * shimmer
-                        * inRibbon * u.intensity;
+                        * rays * inRibbon * u.intensity;
 
-            // Additive accumulation (matches React's globalCompositeOperation='lighter')
             ribbonAccum += gradColor * alpha;
         }
     }
 
-    // Canvas compositing: clamp accumulated ribbons × 0.95 opacity, screen blend
+    // Canvas compositing: screen blend with 0.95 canvas opacity
     ribbonAccum = clamp(ribbonAccum * 0.95, 0.0, 1.0);
     col = screenBlend(col, ribbonAccum, 1.0);
+
+    // ═══════════════════════════════════════════════════
+    // Warm horizon glow — aurora near the horizon has a warm
+    // reddish/amber undertone from atmospheric scattering
+    // ═══════════════════════════════════════════════════
+    {
+        float horizonBand = exp(-pow((uv.y - 0.52) * 4.0, 2.0));
+        float horizonA = horizonBand * 0.025 * u.intensity;
+        col = screenBlend(col, rgb(180, 80, 50), horizonA);
+    }
 
     // ═══════════════════════════════════════════════════
     // Bottom Volumetric Glow (from canvas)
