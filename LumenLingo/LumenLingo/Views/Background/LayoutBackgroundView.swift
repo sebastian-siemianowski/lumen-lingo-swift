@@ -33,8 +33,17 @@ struct LayoutBackgroundView: View {
 
     private var profile: UserProfile? { profiles.first }
 
+    private var debugForcedPreset: NebulaPreset? {
+        guard let raw = ProcessInfo.processInfo.environment["LL_DEBUG_FORCE_NEBULA"] else { return nil }
+        return NebulaPreset(rawValue: raw)
+    }
+
+    private var debugIsolateCosmic: Bool {
+        ProcessInfo.processInfo.environment["LL_DEBUG_ISOLATE_COSMIC"] == "1"
+    }
+
     private var nebulaPreset: NebulaPreset {
-        previewPreset ?? profile?.nebulaPresetEnum ?? .lagoonNebula
+        previewPreset ?? debugForcedPreset ?? profile?.nebulaPresetEnum ?? .lagoonNebula
     }
     private var orbScheme: BreathingOrbScheme {
         previewOrbScheme ?? profile?.orbScheme ?? .barcelonaNights
@@ -43,13 +52,13 @@ struct LayoutBackgroundView: View {
         previewQuantumScene ?? profile?.quantumScene ?? .dubaiCelestialMirage
     }
     private var showOrbs: Bool {
-        profile?.breathingOrbsEnabled ?? true
+        debugIsolateCosmic ? false : (profile?.breathingOrbsEnabled ?? true)
     }
     private var showQuantumFlow: Bool {
-        profile?.quantumFlowEnabled ?? true
+        debugIsolateCosmic ? false : (profile?.quantumFlowEnabled ?? true)
     }
     private var showCosmic: Bool {
-        profile?.nebulaDriftEnabled ?? true
+        debugIsolateCosmic ? true : (profile?.nebulaDriftEnabled ?? true)
     }
     private var orbIntensity: Double {
         profile?.orbIntensity ?? 1.0

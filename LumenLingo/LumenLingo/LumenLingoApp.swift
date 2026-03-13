@@ -8,12 +8,31 @@ struct LumenLingoApp: App {
     @State private var themeManager = ThemeManager()
     @State private var localizationManager = LocalizationManager()
 
+    private var debugBackgroundOnly: Bool {
+        ProcessInfo.processInfo.environment["LL_DEBUG_BACKGROUND_ONLY"] == "1"
+    }
+
+    private var debugForcedNebula: NebulaPreset {
+        guard let raw = ProcessInfo.processInfo.environment["LL_DEBUG_FORCE_NEBULA"],
+              let preset = NebulaPreset(rawValue: raw) else {
+            return .starburstRing
+        }
+        return preset
+    }
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(themeManager)
-                .environment(\.localization, localizationManager)
-                .preferredColorScheme(themeManager.colorScheme)
+            Group {
+                if debugBackgroundOnly {
+                    Color.clear
+                        .cosmicBackground(preset: debugForcedNebula)
+                } else {
+                    ContentView()
+                }
+            }
+            .environment(themeManager)
+            .environment(\.localization, localizationManager)
+            .preferredColorScheme(themeManager.colorScheme)
         }
         .modelContainer(for: [
             UserProfile.self,

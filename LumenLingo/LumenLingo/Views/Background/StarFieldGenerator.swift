@@ -1775,7 +1775,8 @@ enum StarFieldGenerator {
 
     // ============================================================
     // MARK: - Starburst Ring Gas Particles (pre-computed for GPU)
-    // 200 particles matching React's gasParticles count for dense ring.
+    // Reduced from the React-equivalent 200 for fullscreen Metal cost.
+    // Keep enough density for the ring, but avoid excessive per-pixel work.
     // Evenly distributed base angles with small jitter (React pattern).
     // ============================================================
 
@@ -1783,7 +1784,7 @@ enum StarFieldGenerator {
         var clouds: [GasCloudData] = []
         let ringRadius: Float = 0.35
         let ringSpread: Float = 0.09
-        let count = 200
+        let count = 144
 
         for i in 0..<count {
             // Evenly distributed base angle + small jitter (matches React)
@@ -1829,8 +1830,8 @@ enum StarFieldGenerator {
 
     // ============================================================
     // MARK: - Starburst Accretion Particles (pre-computed for GPU)
-    // 160 particles matching React's accretionDisk count for dense
-    // inner eye with Keplerian orbital speeds.
+    // Reduced from the React-equivalent 160 for fullscreen Metal cost
+    // while preserving the luminous inner eye structure.
     // ============================================================
 
     static func starburstAccretionClouds() -> [GasCloudData] {
@@ -1840,7 +1841,7 @@ enum StarFieldGenerator {
             (200.0/255, 230.0/255, 255.0/255),   // blue-white
             (230.0/255, 210.0/255, 255.0/255)    // lavender
         ]
-        let count = 160
+        let count = 96
 
         for i in 0..<count {
             let angle = sRand(77, i * 6) * Float.pi * 2.0

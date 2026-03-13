@@ -30,7 +30,10 @@ fragment float4 starburstBgFragment(
 ) {
     float2 uv = position.xy / u.resolution;
     float2 centered = uv - 0.5;
-    float dist = length(centered);
+    float minDim = min(u.resolution.x, u.resolution.y);
+    float2 isotropic = (centered * u.resolution) / minDim;
+    float dist = length(isotropic);
+    float angle = atan2(isotropic.y, isotropic.x);
 
     // Pixel-space distance for CSS circle gradient mapping
     float2 pixOff = centered * u.resolution;
@@ -67,7 +70,7 @@ fragment float4 starburstBgFragment(
     // Harder abyss pupil + explicit 11%..14% purple transition ring.
     {
         float pupilRound = 1.0 - smoothstep(0.102, 0.112, gd);
-        float pupilEllipse = length(float2(centered.x / 0.90, centered.y / 1.10));
+        float pupilEllipse = dist;
         float pupilOval = 1.0 - smoothstep(0.112, 0.145, pupilEllipse);
         float pupil = max(pupilRound, pupilOval);
         col = mix(col, float3(0.0), pupil);
@@ -82,6 +85,9 @@ fragment float4 starburstBgFragment(
 
         float innerShadowShell = smoothstep(0.135, 0.175, pupilEllipse) * (1.0 - smoothstep(0.215, 0.290, pupilEllipse));
         col = multiplyBlend(col, rgb(9, 4, 22), innerShadowShell * 0.28 * u.intensity);
+
+        float coreVoid = 1.0 - smoothstep(0.0, 0.20, dist);
+        col = mix(col, float3(0.0), coreVoid * 0.84);
     }
 
     // ================================================================
@@ -129,7 +135,7 @@ fragment float4 starburstBgFragment(
                 float blur = 1.0 - nd;
                 blur = blur * blur * (1.25 - blur * 0.25);
                 na *= blur;
-                col = screenBlend(col, nc, na * po * 0.92 * u.intensity);
+                col = screenBlend(col, nc, na * po * 1.08 * u.intensity);
             }
         }
 
@@ -154,7 +160,7 @@ fragment float4 starburstBgFragment(
                 float blur = 1.0 - nd;
                 blur = blur * blur * (1.25 - blur * 0.25);
                 na *= blur;
-                col = screenBlend(col, nc, na * po * 0.82 * u.intensity);
+                col = screenBlend(col, nc, na * po * 0.96 * u.intensity);
             }
         }
 
@@ -179,7 +185,7 @@ fragment float4 starburstBgFragment(
                 float blur = 1.0 - nd;
                 blur = blur * blur * (1.20 - blur * 0.20);
                 na *= blur;
-                col = screenBlend(col, nc, na * po * 0.72 * u.intensity);
+                col = screenBlend(col, nc, na * po * 0.84 * u.intensity);
             }
         }
 
@@ -195,7 +201,7 @@ fragment float4 starburstBgFragment(
             if (nd < 1.0) {
                 float na = 0.11 * (1.0 - nd);
                 na *= (1.0 - nd) * (1.15 - (1.0 - nd) * 0.15);
-                col = screenBlend(col, nc, na * po * 0.58 * u.intensity);
+                col = screenBlend(col, nc, na * po * 0.72 * u.intensity);
             }
         }
 
@@ -210,16 +216,57 @@ fragment float4 starburstBgFragment(
             if (nd < 1.0) {
                 float na = mix(0.10, 0.0, nd);
                 na *= (1.0 - nd) * (1.0 - nd);
-                col = screenBlend(col, nc, na * 0.62 * u.intensity);
+                col = screenBlend(col, nc, na * 0.78 * u.intensity);
             }
         }
 
         // (f) Lavender-white mist near the ring for richer perceived depth
         {
             float ringBand = gaussian(dist - 0.37, 0.10) * (1.0 - smoothstep(0.10, 0.22, gd));
-            float cloudNoise = warpedFBM(float3(centered * 2.2, elapsed * 0.02), elapsed, 4) * 0.5 + 0.5;
+            float cloudNoise = 0.5 + 0.5 * sin(angle * 3.0 - dist * 7.0 + elapsed * 0.018);
             float3 nc = mix(rgb(185, 145, 255), rgb(235, 220, 255), cloudNoise);
-            col = screenBlend(col, nc, ringBand * 0.10 * u.intensity);
+            col = screenBlend(col, nc, ringBand * 0.14 * u.intensity);
+        }
+
+        // (g) Full-field chroma nebula veil — stronger than the React base
+        //     because the reference image has much richer visible cloud colour.
+        {
+            float cloudMask = smoothstep(0.20, 0.38, dist) * (1.0 - smoothstep(1.02, 1.22, dist));
+
+            float cloudA = fbm(float3(isotropic * float2(1.45, 1.10) * 1.55, 11.0 + elapsed * 0.004), 3, 2.0, 0.5) * 0.5 + 0.5;
+            float cloudB = fbm(float3((isotropic + float2(0.24, -0.12)) * float2(1.20, 1.55) * 1.40, 23.0 + elapsed * 0.003), 3, 2.0, 0.5) * 0.5 + 0.5;
+            float cloudC = 0.5 + 0.5 * sin(isotropic.x * 2.8 - isotropic.y * 2.1 + elapsed * 0.010 + cloudA * 2.4);
+
+            float leftField = gaussian2D(uv, float2(0.21, 0.50), float2(0.30, 0.26));
+            float upperRightField = gaussian2D(uv, float2(0.77, 0.28), float2(0.28, 0.24));
+            float lowerField = gaussian2D(uv, float2(0.44, 0.78), float2(0.34, 0.22));
+            float fieldBias = 0.42 + leftField * 0.55 + upperRightField * 0.48 + lowerField * 0.32;
+
+            float vapor = smoothstep(0.50, 0.86, cloudA) * 0.50
+                        + smoothstep(0.54, 0.88, cloudB) * 0.36
+                        + smoothstep(0.58, 0.90, cloudC) * 0.28;
+
+            float magentaMix = smoothstep(0.46, 0.80, cloudB);
+            float cyanMix = smoothstep(0.62, 0.90, cloudC) * 0.62;
+            float pearlMix = smoothstep(0.78, 0.95, cloudA) * 0.16;
+
+            float3 nebulaColor = mix(rgb(84, 34, 198), rgb(224, 86, 220), magentaMix);
+            nebulaColor = mix(nebulaColor, rgb(64, 178, 246), cyanMix);
+            nebulaColor = mix(nebulaColor, rgb(236, 226, 255), pearlMix);
+
+            col = screenBlend(col, nebulaColor, cloudMask * fieldBias * vapor * 0.11 * u.intensity);
+        }
+
+        // (h) Additional image-driven side blooms to make the nebula read
+        //     immediately, especially on the left and upper-right of frame.
+        {
+            float leftBloom = gaussian2D(uv, float2(0.20, 0.47), float2(0.24, 0.26));
+            float rightBloom = gaussian2D(uv, float2(0.79, 0.31), float2(0.27, 0.24));
+            float bottomBloom = gaussian2D(uv, float2(0.36, 0.80), float2(0.29, 0.19));
+
+            col = screenBlend(col, rgb(176, 84, 238), leftBloom * 0.10 * u.intensity);
+            col = screenBlend(col, rgb(146, 74, 228), rightBloom * 0.09 * u.intensity);
+            col = screenBlend(col, rgb(74, 148, 236), bottomBloom * 0.06 * u.intensity);
         }
 
         // Extra: broad violet under-glow filling the mid-field
@@ -243,7 +290,7 @@ fragment float4 starburstBgFragment(
     //    wall around it with pale violet/white haze like the reference.
     // ================================================================
     {
-        float pupilEllipse = length(float2(centered.x / 0.90, centered.y / 1.10));
+            float pupilEllipse = dist;
         float shellInner = gaussian(pupilEllipse - 0.180, 0.030);
         float shellMid = gaussian(pupilEllipse - 0.235, 0.045);
         float shellOuter = gaussian(pupilEllipse - 0.315, 0.080);
@@ -251,6 +298,11 @@ fragment float4 starburstBgFragment(
         col = screenBlend(col, rgb(228, 236, 255), shellInner * 0.10 * u.intensity);
         col = screenBlend(col, rgb(154, 86, 255), shellMid * 0.14 * u.intensity);
         col = screenBlend(col, rgb(96, 52, 190), shellOuter * 0.08 * u.intensity);
+
+        float ringLift = gaussian(dist - 0.355, 0.050);
+        float ringHue = 0.5 + 0.5 * sin(angle * 1.2 + elapsed * 0.04);
+        float3 ringColor = mix(rgb(214, 86, 255), rgb(86, 174, 246), ringHue * 0.30);
+        col = screenBlend(col, ringColor, ringLift * 0.16 * u.intensity);
     }
 
     // ================================================================
@@ -270,7 +322,7 @@ fragment float4 starburstBgFragment(
     float3 canvasRGB = float3(0.0);
     float  canvasA   = 0.0;
 
-    for (int i = 0; i < 200; i++) {
+    for (int i = 0; i < 144; i++) {
         GasCloudData p = ringGas[i];
 
         // React-exact angle: p.angle + globalRot * p.speed + subtleDrift
@@ -279,11 +331,11 @@ fragment float4 starburstBgFragment(
         float pSize = p.sizePx / 800.0;  // resolution-independent
 
         // Position (before wave perturbation — used for pre-filter)
-        float2 pPos = float2(0.5 + cos(particleAngle) * particleR,
-                              0.5 + sin(particleAngle) * particleR);
+        float2 pPos = float2(cos(particleAngle) * particleR,
+                      sin(particleAngle) * particleR);
 
         // Manhattan pre-filter
-        float2 diff = abs(uv - pPos);
+        float2 diff = abs(isotropic - pPos);
         if (diff.x + diff.y > pSize * 3.5) continue;
 
         // Fluid dynamics: 3 wave frequencies
@@ -293,13 +345,13 @@ fragment float4 starburstBgFragment(
         particleR += wA + wB + wC;
 
         // Final position
-        pPos = float2(0.5 + cos(particleAngle) * particleR,
-                       0.5 + sin(particleAngle) * particleR);
+        pPos = float2(cos(particleAngle) * particleR,
+                   sin(particleAngle) * particleR);
 
         // Tangential stretch ellipse
         float2 tang = float2(-sin(particleAngle), cos(particleAngle));
         float2 rad  = float2( tang.y, -tang.x);
-        float2 tp   = uv - pPos;
+        float2 tp   = isotropic - pPos;
         float stretchF = p.flowFreq; // 1.5-3.0
         float deepBr   = sin(elapsed * 0.8 + p.pulsePhase) * 0.1;
         float sBr      = 1.0 + deepBr * 0.15;
@@ -338,29 +390,40 @@ fragment float4 starburstBgFragment(
     col = screenBlend(col, canvasRGB, canvasA);
 
     // ================================================================
-    // 5b. OUTER RADIAL PLUMES — the reference image has broad,
-    //     feathery purple lobes radiating from the ring into the nebula.
-    //     They are wide, soft, and more floral than spiky.
+    // 5b. OUTER NEBULA FLOW — soft rotating gaseous streaks, not hard rays.
+    //     Built from broad polar wave fields for better performance.
     // ================================================================
     {
-        float angle = atan2(centered.y, centered.x);
-        float outerBand = smoothstep(0.24, 0.34, dist) * (1.0 - smoothstep(0.92, 1.12, dist));
+        float outerBand = smoothstep(0.24, 0.34, dist) * (1.0 - smoothstep(0.96, 1.18, dist));
         if (outerBand > 0.001) {
-            float lobeA = sin(angle * 6.0 + sin(angle * 2.0 + 0.8) * 1.0 + elapsed * 0.010) * 0.5 + 0.5;
-            float lobeB = sin(angle * 9.0 - sin(angle * 4.0 - 1.2) * 0.8 - elapsed * 0.008) * 0.5 + 0.5;
-            float lobeC = sin(angle * 13.0 + elapsed * 0.014) * 0.5 + 0.5;
-            float plumeMask = pow(saturate(lobeA * 0.55 + lobeB * 0.30 + lobeC * 0.15), 2.1);
+            float flowAngle = angle + elapsed * 0.010;
+            float waveA = 0.5 + 0.5 * sin(flowAngle * 3.2 - dist * 8.4 + sin(flowAngle * 1.8 - elapsed * 0.012) * 1.4);
+            float waveB = 0.5 + 0.5 * sin(flowAngle * 5.0 + dist * 6.6 - elapsed * 0.016 + cos(flowAngle * 2.3) * 0.8);
+            float flowA = waveA;
+            float flowB = waveB;
 
-            float radialShape = gaussian(dist - 0.44, 0.12) * 0.5
-                              + gaussian(dist - 0.58, 0.20)
-                              + gaussian(dist - 0.74, 0.24) * 0.7;
-            float plumeStrength = plumeMask * radialShape * outerBand;
+            float leftMass = gaussian2D(uv, float2(0.19, 0.48), float2(0.22, 0.24));
+            float rightMass = gaussian2D(uv, float2(0.79, 0.33), float2(0.25, 0.22));
+            float lowerMass = gaussian2D(uv, float2(0.38, 0.80), float2(0.24, 0.16));
+            float massBias = 0.28 + leftMass * 0.80 + rightMass * 0.68 + lowerMass * 0.36;
 
-            float plumeNoise = warpedFBM(float3(cos(angle) * 1.2, sin(angle) * 1.2, elapsed * 0.012 + dist * 1.8), elapsed, 3);
-            float plumeMix = plumeNoise * 0.5 + 0.5;
-            float3 plumeColor = mix(rgb(108, 72, 210), rgb(182, 150, 255), plumeMix);
+            float streakField = smoothstep(0.58, 0.88, flowA * 0.62 + flowB * 0.38);
+            float radialShape = gaussian(dist - 0.47, 0.11) * 0.40
+                              + gaussian(dist - 0.61, 0.18)
+                              + gaussian(dist - 0.79, 0.24) * 0.76;
+            float plumeStrength = streakField * radialShape * outerBand * massBias;
 
-            col = screenBlend(col, plumeColor, plumeStrength * 0.20 * u.intensity);
+            float colorShift = 0.5 + 0.5 * sin(elapsed * 0.05 + angle * 1.4 + flowB * 2.6);
+            float cyanShift = smoothstep(0.76, 0.96, flowA) * 0.42;
+            float pearlShift = smoothstep(0.86, 0.98, flowB) * 0.10;
+            float3 plumeColor = mix(rgb(102, 54, 212), rgb(208, 98, 244), colorShift);
+            plumeColor = mix(plumeColor, rgb(70, 176, 244), cyanShift);
+            plumeColor = mix(plumeColor, rgb(236, 228, 255), pearlShift);
+
+            col = screenBlend(col, plumeColor, plumeStrength * 0.16 * u.intensity);
+
+            float softWash = radialShape * outerBand * (0.06 + flowA * 0.05) * (0.50 + massBias * 0.34);
+            col = screenBlend(col, mix(rgb(102, 64, 212), rgb(184, 100, 240), colorShift), softWash * u.intensity);
         }
     }
 
@@ -373,7 +436,7 @@ fragment float4 starburstBgFragment(
     float3 accRGB = float3(0.0);
     float  accA   = 0.0;
 
-    for (int i = 0; i < 160; i++) {
+    for (int i = 0; i < 96; i++) {
         GasCloudData p = accretion[i];
         float rNorm = p.depth;
         float aR    = p.basePosX * eyeBr;
@@ -381,19 +444,19 @@ fragment float4 starburstBgFragment(
         // React-exact angle: p.angle + globalRot * rotSpeed * 0.8 + subtleDrift
         float aAngle = p.phase + globalRot * p.flowFreq * 0.8 + subtleDrift;
 
-        float2 aPos = float2(0.5 + cos(aAngle) * aR,
-                              0.5 + sin(aAngle) * aR);
+        float2 aPos = float2(cos(aAngle) * aR,
+                      sin(aAngle) * aR);
         float aSize = (p.sizePx / 800.0) * (0.8 + sin(elapsed * 0.4 + p.pulsePhase) * 0.2);
 
         // Manhattan pre-filter
-        float2 aDiff = abs(uv - aPos);
+        float2 aDiff = abs(isotropic - aPos);
         if (aDiff.x + aDiff.y > aSize * 5.0) continue;
 
         // Spaghettification
         float stretch = 1.5 + (1.0 - rNorm) * 2.5;
         float2 tang = float2(-sin(aAngle), cos(aAngle));
         float2 rad  = float2( tang.y, -tang.x);
-        float2 tp   = uv - aPos;
+        float2 tp   = isotropic - aPos;
         float along  = abs(dot(tp, tang)) / (aSize * stretch);
         float across = abs(dot(tp, rad))  / aSize;
         float d = sqrt(along * along + across * across);
@@ -425,37 +488,40 @@ fragment float4 starburstBgFragment(
     col = screenBlend(col, accRGB, accA);
 
     // ================================================================
-    // 6b. INNER IRIS / RADIAL SPOKES — this is where the reference
-    //     image really sings: bright soft streaks feathering outward
-    //     from the abyss, with dark channels between them.
+    // 6b. INNER IRIS NEBULA STREAKS — soft gaseous filaments rotating
+    //     around the abyss, no hard sunburst spokes.
     // ================================================================
     {
-        float angle = atan2(centered.y, centered.x);
-        float spokeBand = smoothstep(0.11, 0.15, dist) * (1.0 - smoothstep(0.35, 0.44, dist));
-        if (spokeBand > 0.001) {
-            float angleWarp = sin(angle * 7.0 + elapsed * 0.20) * 0.35
-                            + sin(angle * 13.0 - elapsed * 0.11) * 0.18;
-            float spokeA = pow(max(0.0, sin(angle * 48.0 + angleWarp + elapsed * 0.03)), 10.0);
-            float spokeB = pow(max(0.0, sin(angle * 30.0 - angleWarp * 1.3 - elapsed * 0.02)), 7.0);
-            float spokeC = pow(max(0.0, sin(angle * 18.0 + angleWarp * 0.6 + elapsed * 0.01) * 0.5 + 0.5), 3.5) * 0.45;
-            float spokeMask = saturate(max(spokeA, spokeB) + spokeC) * spokeBand;
+        float irisBand = smoothstep(0.12, 0.16, dist) * (1.0 - smoothstep(0.36, 0.46, dist));
+        if (irisBand > 0.001) {
+            float irisAngle = angle + elapsed * 0.016;
+            float irisFlowA = 0.5 + 0.5 * sin(irisAngle * 4.2 - dist * 13.0 + sin(irisAngle * 2.0 + elapsed * 0.012) * 1.0);
+            float irisFlowB = 0.5 + 0.5 * sin(irisAngle * 6.8 + dist * 9.5 - elapsed * 0.018 + cos(irisAngle * 1.3) * 0.7);
 
-            float radialFade = gaussian(dist - 0.18, 0.035) * 0.8
-                             + gaussian(dist - 0.24, 0.055)
-                             + gaussian(dist - 0.31, 0.075) * 0.55;
-            float innerFade = 1.0 - smoothstep(0.12, 0.18, dist);
-            float spokeNoise = warpedFBM(float3(cos(angle) * 1.8, sin(angle) * 1.8, elapsed * 0.02 + dist * 3.0), elapsed, 3) * 0.5 + 0.5;
+            float filamentField = smoothstep(0.60, 0.88, irisFlowA * 0.64 + irisFlowB * 0.36);
+            float filamentBias = 0.72 + 0.28 * sin(angle * 2.4 + irisFlowB * 2.3 - elapsed * 0.012);
+            float streakMask = filamentField * filamentBias * irisBand;
 
-            // Bright misty spokes
-            float3 spokeColor = mix(rgb(225, 232, 255), rgb(154, 86, 255), 0.48 + spokeNoise * 0.14);
-            col = screenBlend(col, spokeColor, spokeMask * radialFade * 0.28 * u.intensity);
+            float radialFade = gaussian(dist - 0.175, 0.028) * 0.55
+                             + gaussian(dist - 0.225, 0.050)
+                             + gaussian(dist - 0.300, 0.080) * 0.75;
 
-            float hotIris = gaussian(dist - 0.175, 0.020) * (0.35 + spokeMask * 0.65);
-            col = screenBlend(col, rgb(240, 242, 255), hotIris * 0.14 * u.intensity);
+            float colorShift = 0.5 + 0.5 * sin(elapsed * 0.06 + angle * 1.2 + irisFlowA * 3.0);
+            float blueHint = smoothstep(0.84, 0.97, irisFlowB) * 0.20;
+            float pearlHint = smoothstep(0.84, 0.98, irisFlowA) * 0.24;
+            float3 streakColor = mix(rgb(162, 98, 240), rgb(226, 232, 255), colorShift);
+            streakColor = mix(streakColor, rgb(90, 150, 232), blueHint);
+            streakColor = mix(streakColor, rgb(242, 240, 255), pearlHint);
 
-            // Dark channels between spokes to sharpen the iris structure
-            float gapMask = (1.0 - max(spokeA, spokeB)) * spokeBand * radialFade;
-            col = multiplyBlend(col, rgb(10, 6, 24), gapMask * 0.18 * u.intensity * (1.0 - innerFade * 0.4));
+            col = screenBlend(col, streakColor, streakMask * radialFade * 0.26 * u.intensity);
+
+            float hotInnerRim = gaussian(dist - 0.168, 0.017) * (0.30 + streakMask * 0.70);
+            float outerMist = gaussian(dist - 0.255, 0.060) * filamentField;
+            col = screenBlend(col, rgb(238, 236, 255), hotInnerRim * 0.16 * u.intensity);
+            col = screenBlend(col, mix(rgb(176, 138, 255), rgb(118, 88, 224), colorShift), outerMist * 0.09 * u.intensity);
+
+            float softChannels = smoothstep(0.10, 0.46, 1.0 - filamentField) * radialFade;
+            col = multiplyBlend(col, rgb(12, 7, 26), softChannels * 0.07 * u.intensity);
         }
     }
 
@@ -471,8 +537,8 @@ fragment float4 starburstBgFragment(
             float dSize = (50.0 + seededRandom(91, i * 4 + 2) * 40.0) / 800.0;
             float dOp   = 0.1 + seededRandom(91, i * 4 + 3) * 0.1;
 
-            float2 dPos = float2(0.5 + cos(dAngle) * dR, 0.5 + sin(dAngle) * dR);
-            float dd = length(uv - dPos) / (dSize * 1.5);
+            float2 dPos = float2(cos(dAngle) * dR, sin(dAngle) * dR);
+            float dd = length(isotropic - dPos) / (dSize * 1.5);
             if (dd < 1.0) {
                 col = multiplyBlend(col, dc, (1.0 - dd) * 0.6 * dOp * u.intensity);
             }
@@ -511,11 +577,11 @@ fragment float4 starburstBgFragment(
     {
         float ringMask = gaussian(dist - ringRadius, 0.09 * 0.8);
         if (ringMask > 0.01) {
-            float3 gp = float3(centered * 4.0, elapsed * 0.05);
-            float gn  = warpedFBM(gp, elapsed, 4);
+            float3 gp = float3(isotropic * 4.0, elapsed * 0.03);
+            float gn  = fbm(gp, 3, 2.0, 0.5);
             float gd2 = pow(gn * 0.5 + 0.5, 2.0) * ringMask;
             float3 rc = mix(rgb(154, 86, 255), rgb(208, 75, 255), gn * 0.5 + 0.5);
-            col = screenBlend(col, rc, gd2 * 0.12 * u.intensity);
+            col = screenBlend(col, rc, gd2 * 0.16 * u.intensity);
         }
     }
 
