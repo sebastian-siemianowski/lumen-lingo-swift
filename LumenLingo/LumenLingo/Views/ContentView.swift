@@ -104,6 +104,7 @@ struct ContentView: View {
             .toolbarColorScheme(themeManager.isDarkMode ? .dark : .light, for: .tabBar)
         }
         .background(vstackBackground)
+        .animation(.easeInOut(duration: 0.45), value: themeManager.isDarkMode)
         .onAppear {
             setupServices()
             localization.update(from: languagePrefs)
@@ -121,7 +122,9 @@ struct ContentView: View {
         }
         .onChange(of: themeManager.isDarkMode) { _, _ in
             let wantTransparent = selectedTab == .dashboard && themeManager.isDarkMode
-            applyTabBarAppearance(transparent: wantTransparent)
+            UIView.animate(withDuration: 0.45) {
+                applyTabBarAppearance(transparent: wantTransparent)
+            }
         }
         .onChange(of: profile?.soundEnabled) { _, _ in
             if let profile { audioService.syncFromProfile(profile) }
@@ -372,6 +375,7 @@ struct LumenLingoNavBar: View {
                 .fill(isDark ? .white.opacity(0.06) : Color(red: 0.45, green: 0.22, blue: 0.62).opacity(0.06))
                 .frame(height: 0.5)
         }
+        .animation(.easeInOut(duration: 0.45), value: isDark)
         .onAppear {
             withAnimation(.easeInOut(duration: 3.0).repeatForever(autoreverses: true)) {
                 wobble = 5

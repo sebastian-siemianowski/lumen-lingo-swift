@@ -93,31 +93,28 @@ struct LayoutBackgroundView: View {
                 baseGradient
 
                 // Layer 0b: Accent overlay — purple/orange corners (light only)
-                if !isDark {
-                    LinearGradient(
-                        stops: [
-                            .init(color: Color(red: 168/255, green: 85/255, blue: 247/255).opacity(0.2), location: 0),
-                            .init(color: .clear, location: 0.5),
-                            .init(color: Color(red: 251/255, green: 146/255, blue: 60/255).opacity(0.2), location: 1),
-                        ],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    )
-                }
+                LinearGradient(
+                    stops: [
+                        .init(color: Color(red: 168/255, green: 85/255, blue: 247/255).opacity(0.2), location: 0),
+                        .init(color: .clear, location: 0.5),
+                        .init(color: Color(red: 251/255, green: 146/255, blue: 60/255).opacity(0.2), location: 1),
+                    ],
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing
+                )
+                .opacity(isDark ? 0 : 1)
 
                 // Layer 0c: Dynamic shimmer — sunlight on water (light only)
-                if !isDark {
-                    LinearGradient(
-                        stops: [
-                            .init(color: Color.white.opacity(0.12), location: 0),
-                            .init(color: .clear, location: 0.5),
-                            .init(color: Color(red: 251/255, green: 146/255, blue: 60/255).opacity(0.08), location: 1),
-                        ],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    )
-                    .opacity(0.6)
-                }
+                LinearGradient(
+                    stops: [
+                        .init(color: Color.white.opacity(0.12), location: 0),
+                        .init(color: .clear, location: 0.5),
+                        .init(color: Color(red: 251/255, green: 146/255, blue: 60/255).opacity(0.08), location: 1),
+                    ],
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing
+                )
+                .opacity(isDark ? 0 : 0.6)
 
                 // Layer 1: Breathing orbs (respects user toggle + active state)
                 if showOrbs && isActive {
@@ -142,42 +139,40 @@ struct LayoutBackgroundView: View {
                 }
 
                 // Layer 4: Center depth vignette (light only — subtle 5% black at edges)
-                if !isDark {
-                    RadialGradient(
-                        colors: [
-                            .clear,
-                            Color.black.opacity(0.05)
-                        ],
-                        center: .center,
-                        startRadius: 0,
-                        endRadius: max(geometry.size.width, geometry.size.height) * 0.7
-                    )
-                }
+                RadialGradient(
+                    colors: [
+                        .clear,
+                        Color.black.opacity(0.05)
+                    ],
+                    center: .center,
+                    startRadius: 0,
+                    endRadius: max(geometry.size.width, geometry.size.height) * 0.7
+                )
+                .opacity(isDark ? 0 : 1)
 
                 // Layer 5: Atmospheric haze — Caribbean humidity (light only)
-                if !isDark {
-                    Color.white.opacity(0.04)
-                        .blendMode(.softLight)
-                        .blur(radius: 0.5)
-                }
+                Color.white.opacity(0.04)
+                    .blendMode(.softLight)
+                    .blur(radius: 0.5)
+                    .opacity(isDark ? 0 : 1)
 
                 // Layer 6: Vertical depth — brighter sky, grounded bottom (light only)
-                if !isDark {
-                    LinearGradient(
-                        stops: [
-                            .init(color: Color.white.opacity(0.08), location: 0),
-                            .init(color: .clear, location: 0.35),
-                            .init(color: .clear, location: 0.65),
-                            .init(color: Color.black.opacity(0.03), location: 1.0),
-                        ],
-                        startPoint: .top,
-                        endPoint: .bottom
-                    )
-                }
+                LinearGradient(
+                    stops: [
+                        .init(color: Color.white.opacity(0.08), location: 0),
+                        .init(color: .clear, location: 0.35),
+                        .init(color: .clear, location: 0.65),
+                        .init(color: Color.black.opacity(0.03), location: 1.0),
+                    ],
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+                .opacity(isDark ? 0 : 1)
 
                 // Layer 7: Top-level fog/overlay (dark only)
                 topOverlay
             }
+            .animation(.easeInOut(duration: 0.5), value: isDark)
             .ignoresSafeArea()
         }
     }
@@ -206,20 +201,20 @@ struct LayoutBackgroundView: View {
     private var topOverlay: some View {
         ZStack {
             // Subtle grain/texture effect (noise approximation)
-            if colorScheme == .dark {
-                Color.black.opacity(0.05)
-                    .blendMode(.overlay)
+            Color.black.opacity(0.05)
+                .blendMode(.overlay)
+                .opacity(colorScheme == .dark ? 1 : 0)
 
-                // Bottom safe area fade
-                LinearGradient(
-                    stops: [
-                        .init(color: .clear, location: 0.85),
-                        .init(color: Color(red: 2/255, green: 1/255, blue: 6/255).opacity(0.3), location: 1.0),
-                    ],
-                    startPoint: .top,
-                    endPoint: .bottom
-                )
-            }
+            // Bottom safe area fade
+            LinearGradient(
+                stops: [
+                    .init(color: .clear, location: 0.85),
+                    .init(color: Color(red: 2/255, green: 1/255, blue: 6/255).opacity(0.3), location: 1.0),
+                ],
+                startPoint: .top,
+                endPoint: .bottom
+            )
+            .opacity(colorScheme == .dark ? 1 : 0)
         }
     }
 }

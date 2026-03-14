@@ -441,6 +441,7 @@ struct ProfileView: View {
                     .font(.system(size: 20))
                     .foregroundStyle(Color(hex: "#8b5cf6"))
                     .contentTransition(.symbolEffect(.replace))
+                    .frame(width: 24, height: 24)
 
                 VStack(alignment: .leading, spacing: 2) {
                     Text(L.darkMode)
@@ -449,7 +450,11 @@ struct ProfileView: View {
                     Text(isDark ? L.cosmicDarkTheme : L.lightModeActive)
                         .font(.system(size: 13))
                         .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
+                        .contentTransition(.numericText())
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.8)
                 }
+                .animation(.easeInOut(duration: 0.35), value: isDark)
 
                 Spacer()
 
@@ -462,6 +467,7 @@ struct ProfileView: View {
                     themeManager.toggleDarkMode(profile: profile)
                 }
             }
+            .animation(.easeInOut(duration: 0.45), value: isDark)
 
         }
     }
