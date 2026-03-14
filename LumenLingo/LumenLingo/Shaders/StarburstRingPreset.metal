@@ -94,24 +94,27 @@ fragment float4 starburstBgFragment(
         col = multiplyBlend(col, rgb(9, 4, 22), innerShadowShell * 0.28 * u.intensity);
 
         float coreVoid = 1.0 - smoothstep(0.0, 0.20, irregularDist);
-        col = mix(col, float3(0.0), coreVoid * 0.84);
+        col = mix(col, float3(0.0), coreVoid * 0.97);
     }
 
     // ================================================================
     // 2. ATMOSPHERIC WASH — deep cosmic purple gradient fill
     // ================================================================
     {
+        // Mask to keep the center black
+        float centerMask = smoothstep(0.12, 0.22, gd);
+
         // Primary violet wash — wider, stronger
         float wd = gd / 0.75;
         float wg = max(0.0, 1.0 - wd);
         wg *= wg;
-        col = screenBlend(col, rgb(100, 38, 200), wg * 0.08 * u.intensity);
+        col = screenBlend(col, rgb(100, 38, 200), wg * 0.08 * u.intensity * centerMask);
 
         // Deep indigo secondary wash — fills mid-field
         float wd2 = gd / 0.55;
         float wg2 = max(0.0, 1.0 - wd2);
         wg2 = wg2 * wg2 * wg2;
-        col = screenBlend(col, rgb(60, 20, 140), wg2 * 0.12 * u.intensity);
+        col = screenBlend(col, rgb(60, 20, 140), wg2 * 0.12 * u.intensity * centerMask);
     }
 
     // ================================================================
@@ -288,6 +291,12 @@ fragment float4 starburstBgFragment(
         float ringHue = 0.5 + 0.5 * sin(angle * 1.2 + elapsed * 0.04);
         float3 ringColor = mix(rgb(214, 86, 255), rgb(86, 174, 246), ringHue * 0.30);
         col = screenBlend(col, ringColor, ringLift * 0.16 * u.intensity);
+    }
+
+    // ── Re-enforce black iris after all cloud/shell layers ──
+    {
+        float centerBlack = 1.0 - smoothstep(0.0, 0.30, dist);
+        col = mix(col, float3(0.0), centerBlack);
     }
 
     // ================================================================
