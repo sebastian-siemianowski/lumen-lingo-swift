@@ -67,11 +67,18 @@ fragment float4 starburstBgFragment(
         }
     }
 
-    // Harder abyss pupil + explicit 11%..14% purple transition ring.
+    // Irregular liquid-tunnel abyss — organic wobbling edge.
     {
+        // Angular noise for liquid-tunnel irregularity
+        float tunnelNoise = sin(angle * 3.0 + elapsed * 0.02) * 0.012
+                          + sin(angle * 7.0 - elapsed * 0.015) * 0.008
+                          + sin(angle * 11.0 + elapsed * 0.008) * 0.005
+                          + sin(angle * 5.0 - elapsed * 0.025) * 0.010;
+        float irregularDist = dist + tunnelNoise;
+
         float pupilRound = 1.0 - smoothstep(0.102, 0.112, gd);
         float pupilEllipse = dist;
-        float pupilOval = 1.0 - smoothstep(0.112, 0.145, pupilEllipse);
+        float pupilOval = 1.0 - smoothstep(0.112, 0.145, irregularDist);
         float pupil = max(pupilRound, pupilOval);
         col = mix(col, float3(0.0), pupil);
 
@@ -86,7 +93,7 @@ fragment float4 starburstBgFragment(
         float innerShadowShell = smoothstep(0.135, 0.175, pupilEllipse) * (1.0 - smoothstep(0.215, 0.290, pupilEllipse));
         col = multiplyBlend(col, rgb(9, 4, 22), innerShadowShell * 0.28 * u.intensity);
 
-        float coreVoid = 1.0 - smoothstep(0.0, 0.20, dist);
+        float coreVoid = 1.0 - smoothstep(0.0, 0.20, irregularDist);
         col = mix(col, float3(0.0), coreVoid * 0.84);
     }
 
@@ -391,17 +398,25 @@ fragment float4 starburstBgFragment(
                               + gaussian(dist - 0.79, 0.24) * 0.76;
             float plumeStrength = streakField * radialShape * outerBand * massBias;
 
+            // Multi-coloured rays — cosmic palette with violet, teal, rose, cyan
             float colorShift = 0.5 + 0.5 * sin(elapsed * 0.05 + angle * 1.4 + flowB * 2.6);
+            float colorShift2 = 0.5 + 0.5 * sin(angle * 2.3 + elapsed * 0.03 + flowA * 1.8);
             float cyanShift = smoothstep(0.76, 0.96, flowA) * 0.42;
+            float roseShift = smoothstep(0.72, 0.94, flowB) * 0.25;
+            float tealShift = smoothstep(0.78, 0.96, flowA * flowB) * 0.20;
             float pearlShift = smoothstep(0.86, 0.98, flowB) * 0.10;
             float3 plumeColor = mix(rgb(102, 54, 212), rgb(208, 98, 244), colorShift);
             plumeColor = mix(plumeColor, rgb(70, 176, 244), cyanShift);
+            plumeColor = mix(plumeColor, rgb(200, 90, 160), roseShift * colorShift2);
+            plumeColor = mix(plumeColor, rgb(50, 170, 190), tealShift * (1.0 - colorShift));
             plumeColor = mix(plumeColor, rgb(236, 228, 255), pearlShift);
 
             col = screenBlend(col, plumeColor, plumeStrength * 0.16 * u.intensity);
 
             float softWash = radialShape * outerBand * (0.06 + flowA * 0.05) * (0.50 + massBias * 0.34);
-            col = screenBlend(col, mix(rgb(102, 64, 212), rgb(184, 100, 240), colorShift), softWash * u.intensity);
+            float3 washColor = mix(rgb(102, 64, 212), rgb(184, 100, 240), colorShift);
+            washColor = mix(washColor, rgb(50, 140, 190), colorShift2 * 0.25);
+            col = screenBlend(col, washColor, softWash * u.intensity);
         }
     }
 
