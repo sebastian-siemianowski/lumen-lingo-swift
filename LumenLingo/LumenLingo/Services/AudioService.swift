@@ -61,7 +61,7 @@ final class AudioService {
     private var ambientPlayer: AVAudioPlayer?
     private var ambientFadeTimer: Timer?
     private var wasAmbientPlaying = false
-    private var currentAmbientPreset: AmbientPreset?
+    private var currentSoundscape: Soundscape?
 
     // MARK: - Adaptive State
 
@@ -205,8 +205,8 @@ final class AudioService {
 
     private func handleForeground() {
         sessionStartTime = Date()
-        if wasAmbientPlaying, let preset = currentAmbientPreset {
-            startAmbient(preset: preset)
+        if wasAmbientPlaying, let soundscape = currentSoundscape {
+            startSoundscape(soundscape)
         }
     }
 
@@ -1328,17 +1328,17 @@ final class AudioService {
                  waveform: .wood, envelope: .dew, richness: 0.12)
     }
 
-    // MARK: - Ambient Soundscapes (Epic 7)
+    // MARK: - Soundscapes (Ambient Audio Engine)
 
-    /// Story 7.1: Start ambient drone — entry ceremony (Story 7.5)
-    func startAmbient(preset: AmbientPreset) {
+    /// Start a soundscape — fades in over 3 seconds
+    func startSoundscape(_ soundscape: Soundscape) {
         guard isEnabled, ambientSoundsEnabled else { return }
         configureSessionIfNeeded()
-        currentAmbientPreset = preset
+        currentSoundscape = soundscape
 
         cacheQueue.async { [weak self] in
             guard let self else { return }
-            let data = self.generateAmbientData(preset: preset)
+            let data = self.generateSoundscapeData(soundscape.ambientConfig)
             DispatchQueue.main.async {
                 do {
                     self.ambientPlayer?.stop()
@@ -1348,34 +1348,46 @@ final class AudioService {
                     player.prepareToPlay()
                     player.play()
                     self.ambientPlayer = player
-                    // 3-second fade-in (Story 7.1.4)
                     self.fadeAmbient(to: self.ambientVolume * self.masterVolume * 10,
                                     duration: 3.0)
                 } catch {
-                    print("⚠️ Ambient playback error: \(error)")
+                    print("⚠️ Soundscape playback error: \(error)")
                 }
             }
         }
     }
 
-    /// Stop ambient with fade — exit ceremony (Story 7.5)
+    /// Legacy entry point for backward compatibility
+    func startAmbient(preset: AmbientPreset) {
+        // Map legacy presets to new soundscapes
+        let soundscape: Soundscape
+        switch preset {
+        case .celestialLibrary, .cosmicDrift: soundscape = .observatoryNight
+        case .oceanMorning, .tranquilWaves: soundscape = .dominicanBeach
+        case .mountainSilence, .deepFocus: soundscape = .desertNightSky
+        case .gardenRain, .stellarMeditation: soundscape = .rainyWindow
+        }
+        startSoundscape(soundscape)
+    }
+
+    /// Stop ambient with fade
     func stopAmbient(fadeDuration: TimeInterval = 2.0) {
         fadeAmbient(to: 0, duration: fadeDuration) { [weak self] in
             self?.ambientPlayer?.stop()
             self?.ambientPlayer = nil
-            self?.currentAmbientPreset = nil
+            self?.currentSoundscape = nil
         }
     }
 
-    /// Story 7.3: Crossfade to new preset
-    func crossfadeAmbient(to preset: AmbientPreset) {
+    /// Crossfade to a different soundscape
+    func crossfadeSoundscape(to soundscape: Soundscape) {
         stopAmbient(fadeDuration: 1.5)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.6) { [weak self] in
-            self?.startAmbient(preset: preset)
+            self?.startSoundscape(soundscape)
         }
     }
 
-    /// Story 7.4: Context-aware ambient volume ducking
+    /// Context-aware ambient volume ducking
     func setAmbientContext(_ context: String) {
         guard ambientPlayer?.isPlaying == true else { return }
         switch context {
@@ -1386,6 +1398,16 @@ final class AudioService {
         default:
             fadeAmbient(to: ambientVolume * masterVolume * 8, duration: 0.5)
         }
+    }
+
+    /// Whether a soundscape is currently playing
+    var isSoundscapePlaying: Bool {
+        ambientPlayer?.isPlaying == true
+    }
+
+    /// The currently active soundscape
+    var activeSoundscape: Soundscape? {
+        currentSoundscape
     }
 
     private func fadeAmbient(to volume: Float, duration: TimeInterval,
@@ -1413,13 +1435,12 @@ final class AudioService {
         }
     }
 
-    /// Story 7.1: Ambient drone with breathing modulation
-    private func generateAmbientData(preset: AmbientPreset) -> Data {
+    /// Generate ambient drone data with per-soundscape breath & harmonic rates
+    private func generateSoundscapeData(_ config: Soundscape.AmbientConfig) -> Data {
         let duration: TimeInterval = 8.0
         let numSamples = Int(Double(sampleRate) * duration)
         var samples = [Int16](repeating: 0, count: numSamples)
 
-        let config = preset.config
         var phase1: Float = 0
         var phase2: Float = 0
         var phase3: Float = 0
@@ -1434,12 +1455,12 @@ final class AudioService {
             if phase2 > 2.0 * Float.pi { phase2 -= 2.0 * Float.pi }
             if phase3 > 2.0 * Float.pi { phase3 -= 2.0 * Float.pi }
 
-            // Story 7.1.2: Breathing modulation — room breathes ±10% over 6s
-            let breathMod = 1.0 + sin(2.0 * Float.pi * t / 6.0) * 0.10
+            // Per-soundscape breathing modulation
+            let breathMod = 1.0 + sin(2.0 * Float.pi * t / config.breathRate) * 0.10
 
-            // Story 7.1.1: Non-repeating harmonic movement
-            let harmLfo = sin(2.0 * Float.pi * t / 12.0) * 0.3 + 0.7
-            let moveLfo = sin(2.0 * Float.pi * t / 18.0) * 0.5 + 0.5
+            // Per-soundscape harmonic movement
+            let harmLfo = sin(2.0 * Float.pi * t / config.harmRate) * 0.3 + 0.7
+            let moveLfo = sin(2.0 * Float.pi * t / (config.harmRate * 1.5)) * 0.5 + 0.5
 
             let drone = sin(phase1) * config.amp1 * breathMod
                 + sin(phase2) * config.amp2 * harmLfo
@@ -1990,49 +2011,15 @@ final class AudioService {
     }
 }
 
-// MARK: - Ambient Preset (Story 7.3)
+// MARK: - Legacy Ambient Preset (backward compatibility)
 
 enum AmbientPreset: String, CaseIterable {
-    case celestialLibrary   // Default: warm room filled with starlight
-    case oceanMorning       // Gentle oceanic waves
-    case mountainSilence    // Sparse, contemplative
-    case gardenRain         // Soft rain on glass
-
-    // Legacy compatibility
+    case celestialLibrary
+    case oceanMorning
+    case mountainSilence
+    case gardenRain
     case cosmicDrift
     case deepFocus
     case tranquilWaves
     case stellarMeditation
-
-    struct Config {
-        let freq1: Float, amp1: Float
-        let freq2: Float, amp2: Float
-        let freq3: Float, amp3: Float
-    }
-
-    var config: Config {
-        switch self {
-        case .celestialLibrary, .cosmicDrift:
-            // C3 + G3 foundation with slow harmonic wandering
-            return Config(freq1: 131, amp1: 0.35, freq2: 196, amp2: 0.20, freq3: 262, amp3: 0.12)
-        case .oceanMorning, .tranquilWaves:
-            // Low A2 with gentle pitch oscillation
-            return Config(freq1: 110, amp1: 0.40, freq2: 165, amp2: 0.18, freq3: 220, amp3: 0.10)
-        case .mountainSilence, .deepFocus:
-            // Sparse D3, spends time in silence
-            return Config(freq1: 147, amp1: 0.30, freq2: 196, amp2: 0.10, freq3: 262, amp3: 0.06)
-        case .gardenRain, .stellarMeditation:
-            // C3 with filtered noise character
-            return Config(freq1: 131, amp1: 0.32, freq2: 147, amp2: 0.15, freq3: 196, amp3: 0.10)
-        }
-    }
-
-    var displayName: String {
-        switch self {
-        case .celestialLibrary, .cosmicDrift: return "Celestial Library"
-        case .oceanMorning, .tranquilWaves: return "Ocean Morning"
-        case .mountainSilence, .deepFocus: return "Mountain Silence"
-        case .gardenRain, .stellarMeditation: return "Garden Rain"
-        }
-    }
 }

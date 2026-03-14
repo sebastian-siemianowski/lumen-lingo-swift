@@ -42,6 +42,7 @@ final class UserProfile {
     var uiSoundsEnabled: Bool = true
     var achievementSoundsEnabled: Bool = true
     var ambientSoundsEnabled: Bool = false
+    var selectedSoundscape: String = ""
     var hapticsEnabled: Bool = true
     var adaptiveAudioEnabled: Bool = true
     var gameSoundsVolume: Float = 1.0
@@ -89,6 +90,12 @@ final class UserProfile {
         set { quantumFlowScene = newValue.rawValue }
     }
 
+    /// Typed accessor for selected soundscape (nil = none selected)
+    var soundscapeEnum: Soundscape? {
+        get { Soundscape(rawValue: selectedSoundscape) }
+        set { selectedSoundscape = newValue?.rawValue ?? "" }
+    }
+
     init(
         totalXP: Int = 0,
         dailyStreak: Int = 0,
@@ -121,6 +128,7 @@ final class UserProfile {
         uiSoundsEnabled: Bool = true,
         achievementSoundsEnabled: Bool = true,
         ambientSoundsEnabled: Bool = false,
+        selectedSoundscape: String = "",
         hapticsEnabled: Bool = true,
         adaptiveAudioEnabled: Bool = true,
         gameSoundsVolume: Float = 1.0,
@@ -159,6 +167,7 @@ final class UserProfile {
         self.uiSoundsEnabled = uiSoundsEnabled
         self.achievementSoundsEnabled = achievementSoundsEnabled
         self.ambientSoundsEnabled = ambientSoundsEnabled
+        self.selectedSoundscape = selectedSoundscape
         self.hapticsEnabled = hapticsEnabled
         self.adaptiveAudioEnabled = adaptiveAudioEnabled
         self.gameSoundsVolume = gameSoundsVolume

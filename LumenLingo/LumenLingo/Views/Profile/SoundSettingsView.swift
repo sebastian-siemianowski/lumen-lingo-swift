@@ -52,15 +52,12 @@ struct SoundSettingsView: View {
                 profile?.achievementSoundsEnabled.toggle()
             }
 
-            standaloneSoundToggle(
-                icon: "waveform",
-                color: .indigo,
-                title: L.ambientAudio,
-                subtitle: L.backgroundAtmospheric,
-                isOn: profile?.ambientSoundsEnabled ?? false
-            ) {
-                profile?.ambientSoundsEnabled.toggle()
-            }
+            Divider()
+                .overlay(isDark ? Color.white.opacity(0.06) : Color.black.opacity(0.06))
+                .padding(.horizontal, 8)
+
+            // Soundscapes section (replaces simple ambient toggle)
+            SoundscapesSettingsView()
 
             Divider()
                 .overlay(isDark ? Color.white.opacity(0.06) : Color.black.opacity(0.06))
@@ -158,15 +155,16 @@ struct SoundSettingsView: View {
                 p.uiSoundsEnabled = false
                 p.achievementSoundsEnabled = false
                 p.ambientSoundsEnabled = false
+                AudioService.shared.stopAmbient()
             } else {
-                // Turn everything on except ambient
+                // Turn everything on except ambient/soundscapes
                 p.gamesSoundsEnabled = true
                 p.flashcardsSoundsEnabled = true
                 p.grammarSoundsEnabled = true
                 p.wordBuilderSoundsEnabled = true
                 p.uiSoundsEnabled = true
                 p.achievementSoundsEnabled = true
-                // Ambient stays off by default
+                // Soundscapes stay off by default
             }
         }
     }
@@ -334,16 +332,6 @@ struct SoundSettingsView: View {
                 value: Binding(
                     get: { profile?.achievementSoundsVolume ?? 1.0 },
                     set: { profile?.achievementSoundsVolume = $0 }
-                )
-            )
-
-            volumeSlider(
-                icon: "waveform",
-                color: .indigo,
-                title: "Ambient",
-                value: Binding(
-                    get: { profile?.ambientVolume ?? 0.3 },
-                    set: { profile?.ambientVolume = $0 }
                 )
             )
         }
