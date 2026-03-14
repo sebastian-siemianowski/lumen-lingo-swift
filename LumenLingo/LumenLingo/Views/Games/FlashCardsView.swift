@@ -618,16 +618,16 @@ struct FlashCardsView: View {
     // MARK: - Action Buttons
 
     private var actionButtons: some View {
-        HStack(spacing: 14) {
+        HStack(spacing: 12) {
             // Still Learning
             Button {
                 handleAnswer(correct: false)
             } label: {
-                HStack(spacing: 10) {
+                HStack(spacing: 8) {
                     Image(systemName: "arrow.counterclockwise")
-                        .font(.system(size: 14, weight: .bold))
+                        .font(.system(size: 12, weight: .bold))
                         .foregroundStyle(.white)
-                        .frame(width: 32, height: 32)
+                        .frame(width: 28, height: 28)
                         .background(
                             Circle()
                                 .fill(.white.opacity(0.20))
@@ -638,12 +638,14 @@ struct FlashCardsView: View {
                         )
 
                     Text(L.stillLearning)
-                        .font(.subheadline.bold())
+                        .font(.system(size: 13, weight: .bold))
                         .foregroundStyle(.white)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.6)
                 }
-                .padding(.horizontal, 20)
-                .padding(.vertical, 14)
-                .frame(maxWidth: .infinity)
+                .padding(.horizontal, 12)
+                .padding(.vertical, 12)
+                .frame(maxWidth: .infinity, minHeight: 48)
                 .background(
                     RoundedRectangle(cornerRadius: 28)
                         .fill(
@@ -676,11 +678,11 @@ struct FlashCardsView: View {
             Button {
                 handleAnswer(correct: true)
             } label: {
-                HStack(spacing: 10) {
+                HStack(spacing: 8) {
                     Image(systemName: "checkmark")
-                        .font(.system(size: 14, weight: .bold))
+                        .font(.system(size: 12, weight: .bold))
                         .foregroundStyle(.white)
-                        .frame(width: 32, height: 32)
+                        .frame(width: 28, height: 28)
                         .background(
                             Circle()
                                 .fill(.white.opacity(0.20))
@@ -691,12 +693,14 @@ struct FlashCardsView: View {
                         )
 
                     Text(L.gotIt)
-                        .font(.subheadline.bold())
+                        .font(.system(size: 13, weight: .bold))
                         .foregroundStyle(.white)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.6)
                 }
-                .padding(.horizontal, 20)
-                .padding(.vertical, 14)
-                .frame(maxWidth: .infinity)
+                .padding(.horizontal, 12)
+                .padding(.vertical, 12)
+                .frame(maxWidth: .infinity, minHeight: 48)
                 .background(
                     RoundedRectangle(cornerRadius: 28)
                         .fill(
