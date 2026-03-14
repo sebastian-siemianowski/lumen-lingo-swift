@@ -293,9 +293,9 @@ fragment float4 starburstBgFragment(
         col = screenBlend(col, ringColor, ringLift * 0.16 * u.intensity);
     }
 
-    // ── Re-enforce black iris after all cloud/shell layers ──
+    // ── Re-enforce black center after all cloud/shell layers ──
     {
-        float centerBlack = 1.0 - smoothstep(0.0, 0.30, dist);
+        float centerBlack = 1.0 - smoothstep(0.0, 0.16, dist);
         col = mix(col, float3(0.0), centerBlack);
     }
 
