@@ -20,11 +20,11 @@ final class ThemeManager {
     func toggleDarkMode(profile: UserProfile?) {
         guard !isTransitioning else { return }
         isTransitioning = true
-        withAnimation(.spring(response: 0.55, dampingFraction: 0.86)) {
+        withAnimation(.easeInOut(duration: 0.5)) {
             isDarkMode.toggle()
         }
         profile?.darkMode = isDarkMode
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.65) { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) { [weak self] in
             self?.isTransitioning = false
         }
     }

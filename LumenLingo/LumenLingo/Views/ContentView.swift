@@ -104,7 +104,6 @@ struct ContentView: View {
             .toolbarColorScheme(themeManager.isDarkMode ? .dark : .light, for: .tabBar)
         }
         .background(vstackBackground)
-        .animation(.easeInOut(duration: 0.45), value: themeManager.isDarkMode)
         .onAppear {
             setupServices()
             localization.update(from: languagePrefs)
@@ -375,7 +374,7 @@ struct LumenLingoNavBar: View {
                 .fill(isDark ? .white.opacity(0.06) : Color(red: 0.45, green: 0.22, blue: 0.62).opacity(0.06))
                 .frame(height: 0.5)
         }
-        .animation(.easeInOut(duration: 0.45), value: isDark)
+        .animation(.easeInOut(duration: 0.5), value: isDark)
         .onAppear {
             withAnimation(.easeInOut(duration: 3.0).repeatForever(autoreverses: true)) {
                 wobble = 5

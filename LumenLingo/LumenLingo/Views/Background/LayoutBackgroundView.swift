@@ -91,30 +91,13 @@ struct LayoutBackgroundView: View {
             ZStack {
                 // Layer 0: Base gradient
                 baseGradient
+                    .animation(.easeInOut(duration: 0.5), value: isDark)
 
-                // Layer 0b: Accent overlay — purple/orange corners (light only)
-                LinearGradient(
-                    stops: [
-                        .init(color: Color(red: 168/255, green: 85/255, blue: 247/255).opacity(0.2), location: 0),
-                        .init(color: .clear, location: 0.5),
-                        .init(color: Color(red: 251/255, green: 146/255, blue: 60/255).opacity(0.2), location: 1),
-                    ],
-                    startPoint: .topLeading,
-                    endPoint: .bottomTrailing
-                )
-                .opacity(isDark ? 0 : 1)
-
-                // Layer 0c: Dynamic shimmer — sunlight on water (light only)
-                LinearGradient(
-                    stops: [
-                        .init(color: Color.white.opacity(0.12), location: 0),
-                        .init(color: .clear, location: 0.5),
-                        .init(color: Color(red: 251/255, green: 146/255, blue: 60/255).opacity(0.08), location: 1),
-                    ],
-                    startPoint: .topLeading,
-                    endPoint: .bottomTrailing
-                )
-                .opacity(isDark ? 0 : 0.6)
+                // Light-mode accent overlays (single compositing group)
+                lightAccentOverlays
+                    .opacity(isDark ? 0 : 1)
+                    .animation(.easeInOut(duration: 0.5), value: isDark)
+                    .allowsHitTesting(false)
 
                 // Layer 1: Breathing orbs (respects user toggle + active state)
                 if showOrbs && isActive {
@@ -138,41 +121,16 @@ struct LayoutBackgroundView: View {
                     .opacity(isDark ? 0.8 : 0.25)
                 }
 
-                // Layer 4: Center depth vignette (light only — subtle 5% black at edges)
-                RadialGradient(
-                    colors: [
-                        .clear,
-                        Color.black.opacity(0.05)
-                    ],
-                    center: .center,
-                    startRadius: 0,
-                    endRadius: max(geometry.size.width, geometry.size.height) * 0.7
-                )
-                .opacity(isDark ? 0 : 1)
-
-                // Layer 5: Atmospheric haze — Caribbean humidity (light only)
-                Color.white.opacity(0.04)
-                    .blendMode(.softLight)
-                    .blur(radius: 0.5)
+                // Light-mode depth overlays (single compositing group)
+                lightDepthOverlays(size: geometry.size)
                     .opacity(isDark ? 0 : 1)
-
-                // Layer 6: Vertical depth — brighter sky, grounded bottom (light only)
-                LinearGradient(
-                    stops: [
-                        .init(color: Color.white.opacity(0.08), location: 0),
-                        .init(color: .clear, location: 0.35),
-                        .init(color: .clear, location: 0.65),
-                        .init(color: Color.black.opacity(0.03), location: 1.0),
-                    ],
-                    startPoint: .top,
-                    endPoint: .bottom
-                )
-                .opacity(isDark ? 0 : 1)
+                    .animation(.easeInOut(duration: 0.5), value: isDark)
+                    .allowsHitTesting(false)
 
                 // Layer 7: Top-level fog/overlay (dark only)
                 topOverlay
+                    .animation(.easeInOut(duration: 0.5), value: isDark)
             }
-            .animation(.easeInOut(duration: 0.5), value: isDark)
             .ignoresSafeArea()
         }
     }
@@ -216,6 +174,60 @@ struct LayoutBackgroundView: View {
             )
             .opacity(colorScheme == .dark ? 1 : 0)
         }
+    }
+
+    /// Light-mode accent gradients consolidated into one compositing group
+    private var lightAccentOverlays: some View {
+        ZStack {
+            LinearGradient(
+                stops: [
+                    .init(color: Color(red: 168/255, green: 85/255, blue: 247/255).opacity(0.2), location: 0),
+                    .init(color: .clear, location: 0.5),
+                    .init(color: Color(red: 251/255, green: 146/255, blue: 60/255).opacity(0.2), location: 1),
+                ],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+
+            LinearGradient(
+                stops: [
+                    .init(color: Color.white.opacity(0.12), location: 0),
+                    .init(color: .clear, location: 0.5),
+                    .init(color: Color(red: 251/255, green: 146/255, blue: 60/255).opacity(0.08), location: 1),
+                ],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+            .opacity(0.6)
+        }
+        .compositingGroup()
+    }
+
+    /// Light-mode depth/haze overlays consolidated into one compositing group
+    private func lightDepthOverlays(size: CGSize) -> some View {
+        ZStack {
+            RadialGradient(
+                colors: [.clear, Color.black.opacity(0.05)],
+                center: .center,
+                startRadius: 0,
+                endRadius: max(size.width, size.height) * 0.7
+            )
+
+            Color.white.opacity(0.04)
+                .blendMode(.softLight)
+
+            LinearGradient(
+                stops: [
+                    .init(color: Color.white.opacity(0.08), location: 0),
+                    .init(color: .clear, location: 0.35),
+                    .init(color: .clear, location: 0.65),
+                    .init(color: Color.black.opacity(0.03), location: 1.0),
+                ],
+                startPoint: .top,
+                endPoint: .bottom
+            )
+        }
+        .compositingGroup()
     }
 }
 

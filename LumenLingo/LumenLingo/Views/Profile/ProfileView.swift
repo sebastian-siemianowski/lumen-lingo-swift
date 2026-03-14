@@ -454,7 +454,6 @@ struct ProfileView: View {
                         .lineLimit(1)
                         .minimumScaleFactor(0.8)
                 }
-                .animation(.easeInOut(duration: 0.35), value: isDark)
 
                 Spacer()
 
@@ -467,7 +466,6 @@ struct ProfileView: View {
                     themeManager.toggleDarkMode(profile: profile)
                 }
             }
-            .animation(.easeInOut(duration: 0.45), value: isDark)
 
         }
     }

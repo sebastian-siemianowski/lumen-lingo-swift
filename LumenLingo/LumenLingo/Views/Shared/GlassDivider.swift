@@ -689,71 +689,19 @@ struct GlassPanelWrapper<Content: View>: View {
 
     var body: some View {
         ZStack {
-            // Combined foggy aura (dark mode only, cross-fade)
-            RoundedRectangle(cornerRadius: cornerRadius + 14)
-                .fill(
-                    .radialGradient(
-                        colors: [
-                            resolvedTint.opacity(0.28),
-                            Color(red: 70/255, green: 200/255, blue: 220/255).opacity(0.14),
-                            .clear
-                        ],
-                        center: .top,
-                        startRadius: 0,
-                        endRadius: 190
-                    )
-                )
-                .blur(radius: 14)
-                .padding(-16)
+            // Dark-only decorative layers — rasterized into single GPU texture
+            darkDecoration
                 .opacity(isDark ? 1 : 0)
-
-            // Crisp edge highlight (border glow, dark mode)
-            RoundedRectangle(cornerRadius: cornerRadius + 1)
-                .strokeBorder(
-                    LinearGradient(
-                        colors: [
-                            Color(red: 100/255, green: 200/255, blue: 240/255).opacity(0.45),
-                            Color(red: 140/255, green: 120/255, blue: 220/255).opacity(0.25),
-                            Color(red: 100/255, green: 80/255, blue: 180/255).opacity(0.12),
-                            Color(red: 140/255, green: 120/255, blue: 220/255).opacity(0.20),
-                            Color(red: 80/255, green: 180/255, blue: 220/255).opacity(0.30)
-                        ],
-                        startPoint: .top,
-                        endPoint: .bottom
-                    ),
-                    lineWidth: 1.5
-                )
-                .padding(-1)
-                .opacity(isDark ? 1 : 0)
-
-            // Winter mist overlays (dark mode)
-            winterMistOverlay
-                .opacity(isDark ? 1 : 0)
+                .allowsHitTesting(false)
 
             // BASE: Frosted glass material
             RoundedRectangle(cornerRadius: cornerRadius)
                 .fill(.ultraThinMaterial)
                 .opacity(isDark ? 0.55 : 1.0)
 
-            // Semi-transparent dark tint (cross-fade)
+            // Dark tint overlay
             RoundedRectangle(cornerRadius: cornerRadius)
-                .fill(Color(red: 20/255, green: 14/255, blue: 38/255).opacity(0.45))
-                .opacity(isDark ? 1 : 0)
-
-            // Combined color tint + inner shadow (cross-fade)
-            RoundedRectangle(cornerRadius: cornerRadius)
-                .fill(
-                    LinearGradient(
-                        colors: [
-                            resolvedTint.opacity(0.10),
-                            .clear,
-                            resolvedTint.opacity(0.06)
-                        ],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    )
-                )
-                .opacity(isDark ? 1 : 0)
+                .fill(Color(red: 20/255, green: 14/255, blue: 38/255).opacity(isDark ? 0.45 : 0))
 
             // Inner highlight
             RoundedRectangle(cornerRadius: cornerRadius)
@@ -776,7 +724,7 @@ struct GlassPanelWrapper<Content: View>: View {
                     lineWidth: 1
                 )
 
-            // Light mode: top wash (cross-fade)
+            // Light mode: top wash
             VStack {
                 LinearGradient(
                     colors: [.white.opacity(0.10), .clear],
@@ -788,6 +736,7 @@ struct GlassPanelWrapper<Content: View>: View {
             }
             .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
             .opacity(isDark ? 0 : 1)
+            .allowsHitTesting(false)
 
             // Content
             content()
@@ -795,7 +744,63 @@ struct GlassPanelWrapper<Content: View>: View {
         }
         .shadow(color: .black.opacity(isDark ? 0.06 : 0.08), radius: 20, y: 8)
         .shadow(color: .black.opacity(0.04), radius: 6, y: 3)
-        .animation(.easeInOut(duration: 0.45), value: isDark)
+        .animation(.easeInOut(duration: 0.5), value: isDark)
+    }
+    private var darkDecoration: some View {
+        ZStack {
+            // Foggy aura
+            RoundedRectangle(cornerRadius: cornerRadius + 14)
+                .fill(
+                    .radialGradient(
+                        colors: [
+                            resolvedTint.opacity(0.28),
+                            Color(red: 70/255, green: 200/255, blue: 220/255).opacity(0.14),
+                            .clear
+                        ],
+                        center: .top,
+                        startRadius: 0,
+                        endRadius: 190
+                    )
+                )
+                .blur(radius: 14)
+                .padding(-16)
+
+            // Edge highlight
+            RoundedRectangle(cornerRadius: cornerRadius + 1)
+                .strokeBorder(
+                    LinearGradient(
+                        colors: [
+                            Color(red: 100/255, green: 200/255, blue: 240/255).opacity(0.45),
+                            Color(red: 140/255, green: 120/255, blue: 220/255).opacity(0.25),
+                            Color(red: 100/255, green: 80/255, blue: 180/255).opacity(0.12),
+                            Color(red: 140/255, green: 120/255, blue: 220/255).opacity(0.20),
+                            Color(red: 80/255, green: 180/255, blue: 220/255).opacity(0.30)
+                        ],
+                        startPoint: .top,
+                        endPoint: .bottom
+                    ),
+                    lineWidth: 1.5
+                )
+                .padding(-1)
+
+            // Winter mist
+            winterMistOverlay
+
+            // Color tint
+            RoundedRectangle(cornerRadius: cornerRadius)
+                .fill(
+                    LinearGradient(
+                        colors: [
+                            resolvedTint.opacity(0.10),
+                            .clear,
+                            resolvedTint.opacity(0.06)
+                        ],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                )
+        }
+        .compositingGroup()
     }
 
     // MARK: - Winter Mist
