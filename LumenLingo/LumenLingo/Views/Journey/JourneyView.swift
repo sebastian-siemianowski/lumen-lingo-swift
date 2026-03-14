@@ -45,11 +45,11 @@ struct JourneyView: View {
                 // Streak section
                 streakSection
 
-                // Reset progress
-                resetProgressButton
-
                 // Wisdom quote
                 quoteCard
+
+                // Reset progress
+                resetProgressButton
 
                 Spacer(minLength: 80)
             }
