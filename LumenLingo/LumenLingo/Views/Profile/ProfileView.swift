@@ -467,6 +467,12 @@ struct ProfileView: View {
                     enabledIcon: "moon.fill",
                     disabledIcon: "sun.max.fill"
                 ) {
+                    HapticsService.shared.toggleSwitch()
+                    if themeManager.isDarkMode {
+                        AudioService.shared.playToggleOff()
+                    } else {
+                        AudioService.shared.playToggleOn()
+                    }
                     themeManager.toggleDarkMode(profile: profile)
                 }
             }

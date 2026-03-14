@@ -79,10 +79,14 @@ struct NebulaDriftSettingsView: View {
             PremiumToggle(
                 isOn: profile?.nebulaDriftEnabled ?? false,
                 onToggle: {
+                    HapticsService.shared.toggleSwitch()
                     profile?.nebulaDriftEnabled.toggle()
                     if profile?.nebulaDriftEnabled == true {
+                        AudioService.shared.playToggleOn()
                         profile?.breathingOrbsEnabled = false
                         profile?.quantumFlowEnabled = false
+                    } else {
+                        AudioService.shared.playToggleOff()
                     }
                 }
             )

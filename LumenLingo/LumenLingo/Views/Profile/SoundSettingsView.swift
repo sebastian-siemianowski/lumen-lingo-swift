@@ -132,6 +132,11 @@ struct SoundSettingsView: View {
                 disabledIcon: "speaker.slash.fill"
             ) {
                 HapticsService.shared.toggleSwitch()
+                if profile?.soundEnabled == true {
+                    AudioService.shared.playToggleOff()
+                } else {
+                    AudioService.shared.playToggleOn()
+                }
                 handleMasterToggle()
             }
         }
@@ -192,6 +197,11 @@ struct SoundSettingsView: View {
                     enabledColor: .green
                 ) {
                     HapticsService.shared.toggleSwitch()
+                    if profile?.gamesSoundsEnabled == true {
+                        AudioService.shared.playToggleOff()
+                    } else {
+                        AudioService.shared.playToggleOn()
+                    }
                     handleGamesParentToggle()
                 }
             }
@@ -276,6 +286,12 @@ struct SoundSettingsView: View {
             Spacer()
 
             PremiumToggle(isOn: isOn, enabledColor: color) {
+                HapticsService.shared.toggleSwitch()
+                if isOn {
+                    AudioService.shared.playToggleOff()
+                } else {
+                    AudioService.shared.playToggleOn()
+                }
                 withAnimation { action() }
             }
         }

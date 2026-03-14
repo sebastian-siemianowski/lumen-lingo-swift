@@ -77,10 +77,14 @@ struct BreathingOrbsSettingsView: View {
             PremiumToggle(
                 isOn: profile?.breathingOrbsEnabled ?? true,
                 onToggle: {
+                    HapticsService.shared.toggleSwitch()
                     profile?.breathingOrbsEnabled.toggle()
                     if profile?.breathingOrbsEnabled == true {
+                        AudioService.shared.playToggleOn()
                         profile?.quantumFlowEnabled = false
                         profile?.nebulaDriftEnabled = false
+                    } else {
+                        AudioService.shared.playToggleOff()
                     }
                 }
             )
@@ -109,7 +113,13 @@ struct BreathingOrbsSettingsView: View {
             PremiumToggle(
                 isOn: profile?.orbRaveMode ?? false,
                 onToggle: {
+                    HapticsService.shared.toggleSwitch()
                     profile?.orbRaveMode.toggle()
+                    if profile?.orbRaveMode == true {
+                        AudioService.shared.playToggleOn()
+                    } else {
+                        AudioService.shared.playToggleOff()
+                    }
                 }
             )
         }

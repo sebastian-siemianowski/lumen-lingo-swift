@@ -76,10 +76,14 @@ struct QuantumFlowSettingsView: View {
             PremiumToggle(
                 isOn: profile?.quantumFlowEnabled ?? true,
                 onToggle: {
+                    HapticsService.shared.toggleSwitch()
                     profile?.quantumFlowEnabled.toggle()
                     if profile?.quantumFlowEnabled == true {
+                        AudioService.shared.playToggleOn()
                         profile?.breathingOrbsEnabled = false
                         profile?.nebulaDriftEnabled = false
+                    } else {
+                        AudioService.shared.playToggleOff()
                     }
                 }
             )
@@ -108,7 +112,13 @@ struct QuantumFlowSettingsView: View {
             PremiumToggle(
                 isOn: profile?.quantumRaveMode ?? false,
                 onToggle: {
+                    HapticsService.shared.toggleSwitch()
                     profile?.quantumRaveMode.toggle()
+                    if profile?.quantumRaveMode == true {
+                        AudioService.shared.playToggleOn()
+                    } else {
+                        AudioService.shared.playToggleOff()
+                    }
                 }
             )
         }
