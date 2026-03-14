@@ -658,9 +658,9 @@ struct DashboardGameCard: View {
                     iconView
 
                     // Title + Description
-                    VStack(alignment: .leading, spacing: 6) {
+                    VStack(alignment: .leading, spacing: 4) {
                         Text(title)
-                            .font(.system(size: 19, weight: .bold))
+                            .font(.system(size: 16, weight: .bold))
                             .foregroundStyle(
                                 LinearGradient(
                                     colors: [colorScheme.primary, colorScheme.secondary],
@@ -670,23 +670,23 @@ struct DashboardGameCard: View {
                             )
 
                         Text(description)
-                            .font(.system(size: 14, weight: .medium))
+                            .font(.system(size: 12, weight: .medium))
                             .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
-                            .lineLimit(3)
+                            .lineLimit(2)
                             .fixedSize(horizontal: false, vertical: true)
                     }
                 }
-                .padding(.top, 24)
-                .padding(.horizontal, 20)
+                .padding(.top, 20)
+                .padding(.horizontal, 16)
 
                 // CTA row — premium gradient capsule
                 HStack {
                     Spacer()
-                    HStack(spacing: 8) {
+                    HStack(spacing: 6) {
                         Text(cta)
-                            .font(.system(size: 13, weight: .bold))
+                            .font(.system(size: 12, weight: .bold))
                         Image(systemName: "arrow.right")
-                            .font(.system(size: 11, weight: .bold))
+                            .font(.system(size: 10, weight: .bold))
                     }
                     .foregroundStyle(.white)
                     .padding(.horizontal, 16)
@@ -717,9 +717,9 @@ struct DashboardGameCard: View {
                     )
                     .shadow(color: colorScheme.primary.opacity(0.35), radius: 10, y: 3)
                 }
-                .padding(.top, 14)
-                .padding(.trailing, 20)
-                .padding(.bottom, 20)
+                .padding(.top, 10)
+                .padding(.trailing, 16)
+                .padding(.bottom, 16)
             }
         }
         .background(
@@ -769,19 +769,19 @@ struct DashboardGameCard: View {
             // Pulsing glow background orbs
             Circle()
                 .fill(colorScheme.primary.opacity(0.15))
-                .frame(width: 56, height: 56)
+                .frame(width: 48, height: 48)
                 .scaleEffect(1.0 + iconPulse * 0.15)
                 .blur(radius: 8)
 
             Circle()
                 .fill(colorScheme.secondary.opacity(0.1))
-                .frame(width: 48, height: 48)
+                .frame(width: 40, height: 40)
                 .scaleEffect(1.0 + iconPulse * 0.1)
                 .blur(radius: 6)
                 .offset(x: 4, y: 4)
 
             // Icon container
-            RoundedRectangle(cornerRadius: 14)
+            RoundedRectangle(cornerRadius: 12)
                 .fill(
                     LinearGradient(
                         colors: colorScheme.gradient,
@@ -789,10 +789,10 @@ struct DashboardGameCard: View {
                         endPoint: .bottomTrailing
                     )
                 )
-                .frame(width: 48, height: 48)
+                .frame(width: 40, height: 40)
                 .overlay(
                     // Inner glow highlight
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 12)
                         .fill(
                             LinearGradient(
                                 colors: [.white.opacity(0.25), .clear],
@@ -802,14 +802,14 @@ struct DashboardGameCard: View {
                         )
                 )
                 .overlay(
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 12)
                         .strokeBorder(.white.opacity(0.2), lineWidth: 1)
                 )
                 .shadow(color: colorScheme.primary.opacity(0.4 + iconPulse * 0.2), radius: 12)
 
             // Icon symbol
             Image(systemName: icon)
-                .font(.system(size: 22, weight: .medium))
+                .font(.system(size: 18, weight: .medium))
                 .foregroundStyle(.white)
                 .shadow(color: .white.opacity(0.3), radius: 2)
         }

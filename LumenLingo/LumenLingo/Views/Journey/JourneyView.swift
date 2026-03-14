@@ -282,36 +282,34 @@ struct JourneyView: View {
             }
         }()
 
-        return HStack(spacing: 14) {
+        return HStack(spacing: 10) {
             ZStack {
-                RoundedRectangle(cornerRadius: 12)
+                RoundedRectangle(cornerRadius: 10)
                     .fill(
                         LinearGradient(colors: colors, startPoint: .topLeading, endPoint: .bottomTrailing)
                     )
-                    .frame(width: 44, height: 44)
+                    .frame(width: 38, height: 38)
 
                 Image(systemName: gameTypeIcon(type))
-                    .font(.system(size: 18))
+                    .font(.system(size: 16))
                     .foregroundStyle(.white)
             }
 
-            VStack(alignment: .leading, spacing: 4) {
+            VStack(alignment: .leading, spacing: 6) {
                 Text(type.displayName)
                     .font(.subheadline.bold())
                     .foregroundStyle(isDark ? .white : .caribbeanInk)
 
-                HStack(spacing: 8) {
-                    Text("\(records.count) \(L.sessions.lowercased())")
-                    Text("·")
-                    Text("\(totalScore) \(L.xp)")
-                    Text("·")
-                    Text("\(Int(accuracy))% \(L.accuracy.lowercased())")
+                HStack(spacing: 0) {
+                    statPill(value: "\(records.count)", label: L.sessions.lowercased())
+                    Spacer(minLength: 4)
+                    statPill(value: "\(totalScore)", label: L.xp)
+                    Spacer(minLength: 4)
+                    statPill(value: "\(Int(accuracy))%", label: L.accuracy.lowercased())
                 }
-                .font(.caption)
-                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
             }
 
-            Spacer()
+            Spacer(minLength: 0)
         }
         .padding(12)
         .background(
@@ -322,6 +320,18 @@ struct JourneyView: View {
                         .strokeBorder(isDark ? .white.opacity(0.06) : .black.opacity(0.06), lineWidth: 1)
                 )
         )
+    }
+
+    private func statPill(value: String, label: String) -> some View {
+        VStack(spacing: 1) {
+            Text(value)
+                .font(.system(size: 13, weight: .bold))
+                .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanInk)
+            Text(label)
+                .font(.system(size: 9))
+                .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanPlum)
+        }
+        .frame(maxWidth: .infinity)
     }
 
     // MARK: - Streak Section
