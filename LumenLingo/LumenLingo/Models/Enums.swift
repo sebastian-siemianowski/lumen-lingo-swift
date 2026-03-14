@@ -677,12 +677,12 @@ enum SoundscapeCategory: String, CaseIterable, Identifiable {
 
     var id: String { rawValue }
 
-    var emoji: String {
+    var icon: String {
         switch self {
-        case .cozy: return "☕"
-        case .nature: return "🌿"
-        case .atmospheric: return "✨"
-        case .travel: return "🌍"
+        case .cozy: return "cup.and.saucer.fill"
+        case .nature: return "leaf.fill"
+        case .atmospheric: return "sparkles"
+        case .travel: return "globe.americas.fill"
         }
     }
 

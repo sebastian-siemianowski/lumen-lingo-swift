@@ -104,8 +104,9 @@ struct SoundscapesSettingsView: View {
         VStack(alignment: .leading, spacing: 8) {
             // Category header
             HStack(spacing: 6) {
-                Text(category.emoji)
-                    .font(.system(size: 14))
+                Image(systemName: category.icon)
+                    .font(.system(size: 12))
+                    .foregroundStyle(categoryColor(category))
                 Text(category.displayName)
                     .font(.system(size: 14, weight: .semibold))
                     .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanMist)
@@ -301,6 +302,15 @@ struct SoundscapesSettingsView: View {
                     AudioService.shared.startSoundscape(soundscape)
                 }
             }
+        }
+    }
+
+    private func categoryColor(_ category: SoundscapeCategory) -> Color {
+        switch category {
+        case .cozy: return .orange
+        case .nature: return .green
+        case .atmospheric: return .indigo
+        case .travel: return .cyan
         }
     }
 }

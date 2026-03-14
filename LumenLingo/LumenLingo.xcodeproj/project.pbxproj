@@ -91,6 +91,7 @@
 		89075F39060121315E6E3CEB /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D0AFE49B5144D47E971846 /* CategoriesView.swift */; };
 		8EDBE1142ECA02BB7746D49D /* SettingsSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5378AC5EFC25C439C4A702 /* SettingsSliderView.swift */; };
 		8FD42E0FBEF65F2708A0E743 /* wordbuilder_ukrainian_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AA4C3A2FAD3E75B5E387A20 /* wordbuilder_ukrainian_polish.json */; };
+		8FEBFEC7B5CC7FC50DC881CB /* SoundControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B566D3C1FF38C5EE6E7F5DE0 /* SoundControlsView.swift */; };
 		943EECD12689FFF2888436EA /* SpiralHaloPreset.metal in Sources */ = {isa = PBXBuildFile; fileRef = DB8D135B47E89CA45DF67B97 /* SpiralHaloPreset.metal */; };
 		96AB7329C4F494D16175E2C5 /* grammar_japanese_english.json in Resources */ = {isa = PBXBuildFile; fileRef = C2522C1400407731C720E317 /* grammar_japanese_english.json */; };
 		98324CC583C1F2E99D1EC600 /* wordbuilder_polish_english.json in Resources */ = {isa = PBXBuildFile; fileRef = A4DD27AFCE378D73D79D9A34 /* wordbuilder_polish_english.json */; };
@@ -140,6 +141,7 @@
 		D6C1FF69FC5BCBFCE19E86D4 /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3766F4844525AE0B8F693647 /* LocalizationManager.swift */; };
 		D944A99D79DAE4DB61D4A0CA /* AndromedaStars.metal in Sources */ = {isa = PBXBuildFile; fileRef = 16CBC7FA67305C12DB95778D /* AndromedaStars.metal */; };
 		D967A286882D8393059BCD01 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178728D2894F28CD3D7CA335 /* ExtensionsTests.swift */; };
+		DA5D7E3A29DCD0F484920BDA /* SoundMixerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F5C299F7CF3AB7152E80AD /* SoundMixerView.swift */; };
 		DA7EACF50CDA6F892FAE9972 /* SchemeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013FEB67D3F0AB101B4EF0A /* SchemeCardView.swift */; };
 		DB65812358EE3AD37B86CC9A /* AppStrings+German.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AF276C24F43C677FE4579A /* AppStrings+German.swift */; };
 		DD489C4BF4E066DA2A33B94E /* grammar_ukrainian_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = F0AE02E5AA944BBF9A1E7BB2 /* grammar_ukrainian_polish.json */; };
@@ -190,6 +192,7 @@
 		11F2243A3F5171B5E1D1731A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1229A638A337B4432FA3EC1D /* SoundscapesSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundscapesSettingsView.swift; sourceTree = "<group>"; };
 		12F5A0006F1BE35C07723FF8 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		12F5C299F7CF3AB7152E80AD /* SoundMixerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundMixerView.swift; sourceTree = "<group>"; };
 		1529F75859B9520B053C7083 /* grammar_polish_german.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_polish_german.json; sourceTree = "<group>"; };
 		16CBC7FA67305C12DB95778D /* AndromedaStars.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = AndromedaStars.metal; sourceTree = "<group>"; };
 		178728D2894F28CD3D7CA335 /* ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
@@ -299,6 +302,7 @@
 		B3982631873ABBAD71CBA185 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		B3C1358AD4F62005FA1B3DBF /* wordbuilder_polish_french.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_polish_french.json; sourceTree = "<group>"; };
 		B4865403B88C2BF7DFD72D5E /* wordbuilder_english_japanese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_english_japanese.json; sourceTree = "<group>"; };
+		B566D3C1FF38C5EE6E7F5DE0 /* SoundControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundControlsView.swift; sourceTree = "<group>"; };
 		B70A4CC223AB0F0CBD300360 /* LiquidGlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassCard.swift; sourceTree = "<group>"; };
 		B976B6034B6375FEF0CFE513 /* AppStrings+Ukrainian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStrings+Ukrainian.swift"; sourceTree = "<group>"; };
 		C0A16D5C93EC371A3F0F50EF /* wordbuilder_english_german.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_english_german.json; sourceTree = "<group>"; };
@@ -850,6 +854,8 @@
 				7013FEB67D3F0AB101B4EF0A /* SchemeCardView.swift */,
 				6A5378AC5EFC25C439C4A702 /* SettingsSliderView.swift */,
 				802BDCE7BA03C328A26964AF /* SignOutView.swift */,
+				B566D3C1FF38C5EE6E7F5DE0 /* SoundControlsView.swift */,
+				12F5C299F7CF3AB7152E80AD /* SoundMixerView.swift */,
 				1229A638A337B4432FA3EC1D /* SoundscapesSettingsView.swift */,
 				00AC10073EF860BE9CC25D85 /* SoundSettingsView.swift */,
 				F1079AD7C7C0B803C74DDCC7 /* SyncStatusView.swift */,
@@ -1115,6 +1121,8 @@
 				078F0B02324FE9D3A556A23A /* SolarAuroraPreset.metal in Sources */,
 				A9DF7EC0313E9EC8BEEDAA12 /* SolarAuroraStars.metal in Sources */,
 				A597B5030071EAC72D59777A /* SolarAuroraView.swift in Sources */,
+				8FEBFEC7B5CC7FC50DC881CB /* SoundControlsView.swift in Sources */,
+				DA5D7E3A29DCD0F484920BDA /* SoundMixerView.swift in Sources */,
 				01500500A4FD056AB4F66B62 /* SoundSettingsView.swift in Sources */,
 				29353E7CFC6BBCEF606A0978 /* SoundscapesSettingsView.swift in Sources */,
 				943EECD12689FFF2888436EA /* SpiralHaloPreset.metal in Sources */,

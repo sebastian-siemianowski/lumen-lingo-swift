@@ -24,6 +24,7 @@ struct ProfileView: View {
 
     @State private var activeTab: ProfileTab = .appearance
     @State private var activeAppearanceSubTab: AppearanceSubTab = .darkLight
+    @State private var activeSoundSubTab: SoundSubTab = .controls
     @State private var showLanguageSelector = false
 
     private var isDark: Bool { colorScheme == .dark }
@@ -37,8 +38,10 @@ struct ProfileView: View {
     // Tab transition direction
     @State private var tabDirection: Int = 0
     @State private var subTabDirection: Int = 0
+    @State private var soundSubTabDirection: Int = 0
     @Namespace private var tabIndicator
     @Namespace private var subTabIndicator
+    @Namespace private var soundSubTabIndicator
 
     enum ProfileTab: String, CaseIterable {
         case appearance = "Appearance"
@@ -52,6 +55,12 @@ struct ProfileView: View {
         case breathingOrbs = "Orbs"
         case quantumFlow = "Quantum"
         case nebulaDrift = "Nebula"
+    }
+
+    enum SoundSubTab: String, CaseIterable {
+        case controls = "Controls"
+        case soundscapes = "Soundscapes"
+        case mixer = "Mixer"
     }
 
     var body: some View {
@@ -480,11 +489,111 @@ struct ProfileView: View {
         }
     }
 
-    // MARK: - Sound Tab (Delegated)
+    // MARK: - Sound Tab (3 Sub-Tabs)
 
     private var soundTab: some View {
-        settingsCard(tint: Color(hex: "#ec4899")) {
-            SoundSettingsView()
+        VStack(spacing: 16) {
+            // Sub-tab bar
+            soundSubTabBar
+
+            // Sub-tab content in glass card
+            settingsCard(tint: soundSubTabTint) {
+                Group {
+                    switch activeSoundSubTab {
+                    case .controls:
+                        SoundControlsView()
+                    case .soundscapes:
+                        SoundscapesSettingsView()
+                    case .mixer:
+                        SoundMixerView()
+                    }
+                }
+                .transition(.asymmetric(
+                    insertion: .opacity.combined(with: .offset(x: CGFloat(soundSubTabDirection * 20))),
+                    removal: .opacity.combined(with: .offset(x: CGFloat(-soundSubTabDirection * 20)))
+                ))
+                .id(activeSoundSubTab)
+            }
+        }
+    }
+
+    private var soundSubTabBar: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 3) {
+                ForEach(SoundSubTab.allCases, id: \.self) { subTab in
+                    Button {
+                        let oldIndex = SoundSubTab.allCases.firstIndex(of: activeSoundSubTab) ?? 0
+                        let newIndex = SoundSubTab.allCases.firstIndex(of: subTab) ?? 0
+                        soundSubTabDirection = newIndex > oldIndex ? 1 : -1
+                        AudioService.shared.playTabSwitch()
+                        HapticsService.shared.tabSwitch()
+                        withAnimation(.spring(response: 0.3, dampingFraction: 0.8)) {
+                            activeSoundSubTab = subTab
+                        }
+                    } label: {
+                        HStack(spacing: 4) {
+                            Image(systemName: soundSubTabIcon(for: subTab))
+                                .font(.system(size: 10))
+                            Text(soundSubTabName(subTab))
+                                .font(.system(size: 11, weight: .medium))
+                        }
+                        .foregroundStyle(
+                            activeSoundSubTab == subTab
+                                ? (isDark ? .white : Color(hex: "#9d174d"))
+                                : (isDark ? .white.opacity(0.4) : .caribbeanInk.opacity(0.65))
+                        )
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 6)
+                        .background {
+                            if activeSoundSubTab == subTab {
+                                Capsule()
+                                    .fill(
+                                        isDark
+                                            ? AnyShapeStyle(Color(hex: "#ec4899").opacity(0.15))
+                                            : AnyShapeStyle(Color(hex: "#be185d").opacity(0.14))
+                                    )
+                                    .overlay(
+                                        Capsule().strokeBorder(
+                                            isDark ? Color(hex: "#ec4899").opacity(0.25) : Color(hex: "#be185d").opacity(0.30),
+                                            lineWidth: 1
+                                        )
+                                    )
+                                    .matchedGeometryEffect(id: "soundSubTabIndicator", in: soundSubTabIndicator)
+                            }
+                        }
+                    }
+                    .buttonStyle(LumenPressStyle(weight: .soft))
+                }
+            }
+            .padding(3)
+            .background(
+                Capsule()
+                    .fill(isDark ? .white.opacity(0.04) : Color(hex: "#be185d").opacity(0.07))
+            )
+        }
+    }
+
+    private func soundSubTabIcon(for subTab: SoundSubTab) -> String {
+        switch subTab {
+        case .controls: return "speaker.wave.2.fill"
+        case .soundscapes: return "headphones"
+        case .mixer: return "slider.horizontal.3"
+        }
+    }
+
+    private func soundSubTabName(_ subTab: SoundSubTab) -> String {
+        switch subTab {
+        case .controls: return "Controls"
+        case .soundscapes: return "Soundscapes"
+        case .mixer: return "Mixer"
+        }
+    }
+
+    private var soundSubTabTint: Color {
+        switch activeSoundSubTab {
+        case .controls: return Color(hex: "#ec4899")
+        case .soundscapes: return Color(hex: "#8B5CF6")
+        case .mixer: return .teal
         }
     }
 
