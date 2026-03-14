@@ -107,6 +107,7 @@ struct AppStrings {
     let correct: String
     let toReview: String
     let playAgain: String
+    let nextCategory: String
     let backToCategories: String
 
     // MARK: - Journey

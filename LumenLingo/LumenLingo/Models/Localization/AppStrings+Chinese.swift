@@ -104,6 +104,7 @@ extension AppStrings {
         correct: "正确",
         toReview: "待复习",
         playAgain: "再玩一次",
+        nextCategory: "下一个分类",
         backToCategories: "返回分类",
 
         // Journey

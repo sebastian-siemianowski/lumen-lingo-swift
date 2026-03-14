@@ -103,8 +103,7 @@ extension AppStrings {
         accuracy: "الدقة",
         correct: "صحيح",
         toReview: "للمراجعة",
-        playAgain: "العب مجددًا",
-        backToCategories: "العودة إلى الفئات",
+        playAgain: "العب مجددًا",        nextCategory: "الفئة التالية",        backToCategories: "العودة إلى الفئات",
 
         // Journey
         yourLearningJourney: "رحلتك التعليمية",

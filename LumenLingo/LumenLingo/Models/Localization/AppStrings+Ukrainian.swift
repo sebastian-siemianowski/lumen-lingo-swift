@@ -104,6 +104,7 @@ extension AppStrings {
         correct: "Правильно",
         toReview: "На повторення",
         playAgain: "Грати знову",
+        nextCategory: "Наступна категорія",
         backToCategories: "До категорій",
 
         // Journey

@@ -161,11 +161,11 @@ struct ContentView: View {
         case .wordBuilderCategories:
             CategoriesView(gameType: .wordBuilder, navigationPath: $navigationPath)
         case .flashcardsGame(let categoryId):
-            FlashCardsView(categoryId: categoryId, hideTabBar: $hideTabBar)
+            FlashCardsView(categoryId: categoryId, hideTabBar: $hideTabBar, navigationPath: $navigationPath)
         case .grammarGame(let categoryId):
-            GrammarView(categoryId: categoryId, hideTabBar: $hideTabBar)
+            GrammarView(categoryId: categoryId, hideTabBar: $hideTabBar, navigationPath: $navigationPath)
         case .wordBuilderGame(let categoryId):
-            WordBuilderView(categoryId: categoryId, hideTabBar: $hideTabBar)
+            WordBuilderView(categoryId: categoryId, hideTabBar: $hideTabBar, navigationPath: $navigationPath)
         case .languageSelection:
             LanguageSelectionView()
         }

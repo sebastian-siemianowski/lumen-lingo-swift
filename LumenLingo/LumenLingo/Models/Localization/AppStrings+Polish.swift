@@ -104,6 +104,7 @@ extension AppStrings {
         correct: "Poprawne",
         toReview: "Do powtórki",
         playAgain: "Zagraj ponownie",
+        nextCategory: "Następna kategoria",
         backToCategories: "Wróć do kategorii",
 
         // Journey

@@ -104,6 +104,7 @@ extension AppStrings {
         correct: "正解",
         toReview: "復習",
         playAgain: "もう一度プレイ",
+        nextCategory: "次のカテゴリー",
         backToCategories: "カテゴリーに戻る",
 
         // Journey
