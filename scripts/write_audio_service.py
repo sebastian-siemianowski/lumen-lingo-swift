@@ -1,4 +1,13 @@
-import AVFoundation
+#!/usr/bin/env python3
+"""Write the new comprehensive AudioService.swift"""
+import os
+
+TARGET = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+    "LumenLingo", "LumenLingo", "Services", "AudioService.swift"
+)
+
+CONTENT = r'''import AVFoundation
 import Foundation
 import UIKit
 
@@ -66,6 +75,8 @@ final class AudioService {
 
     private var consecutiveCorrect: Int = 0
     private var currentMood: PerformanceMood = .neutral
+
+    // MARK: - Sound Cache
 
     private var soundCache: [String: Data] = [:]
     private let cacheQueue = DispatchQueue(label: "audio.cache", qos: .userInitiated)
@@ -1410,3 +1421,20 @@ enum AmbientPreset: String, CaseIterable {
         }
     }
 }
+
+// MARK: - Performance Mood
+
+enum PerformanceMood {
+    case struggling
+    case neutral
+    case confident
+    case onFire
+}
+'''
+
+with open(TARGET, 'w') as f:
+    f.write(CONTENT)
+
+with open(TARGET) as f:
+    lines = f.readlines()
+print(f"SUCCESS: Written {len(CONTENT)} chars, {len(lines)} lines to {TARGET}")

@@ -423,6 +423,7 @@ struct LumenNavigationPressModifier: ViewModifier {
                 }
                 let g = UIImpactFeedbackGenerator(style: .soft)
                 g.impactOccurred(intensity: 0.7)
+                AudioService.shared.playGameCardTap()
 
                 // 2) Bouncy spring-back after brief hold
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.10) {

@@ -187,12 +187,14 @@ struct CategoriesView: View {
                         withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
                             currentPage += 1
                         }
-                        HapticsService.light()
+                        HapticsService.shared.tabSwitch()
+                        AudioService.shared.playPageChange()
                     } else if horizontal > 40, currentPage > 0 {
                         withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
                             currentPage -= 1
                         }
-                        HapticsService.light()
+                        HapticsService.shared.tabSwitch()
+                        AudioService.shared.playPageChange()
                     }
                 }
         )
@@ -346,9 +348,10 @@ struct CategoriesView: View {
                 // after system isPressed goes false
                 pressedCardId = item.id
 
-                // Haptic — soft, premium feel
+                // Haptic + sound — soft, premium feel
                 let g = UIImpactFeedbackGenerator(style: .soft)
                 g.impactOccurred(intensity: 0.7)
+                AudioService.shared.playCategoryTap()
 
                 // Phase 2: Bouncy spring-back after held 140ms
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.14) {
@@ -434,9 +437,15 @@ struct CategoriesView: View {
 
                 // Heart / favorite button
                 Button {
+                    let wasFavorite = favoriteIds.contains(item.id)
                     withAnimation(.spring(response: 0.35, dampingFraction: 0.5)) {
-                        HapticsService.light()
+                        HapticsService.shared.favoriteToggle()
                         toggleFavorite(item.id)
+                    }
+                    if wasFavorite {
+                        AudioService.shared.playFavoriteRemove()
+                    } else {
+                        AudioService.shared.playFavoriteAdd()
                     }
                 } label: {
                     Image(systemName: fav ? "heart.fill" : "heart")

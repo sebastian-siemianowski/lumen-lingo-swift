@@ -110,6 +110,8 @@ struct MembershipView: View {
 
     private var comparisonToggle: some View {
         Button {
+            AudioService.shared.playPanelExpand()
+            HapticsService.shared.buttonPress()
             withAnimation(.spring(response: 0.4)) { showComparison.toggle() }
         } label: {
             HStack {
@@ -431,6 +433,7 @@ struct TierCardView: View {
                     }
                     let g = UIImpactFeedbackGenerator(style: .medium)
                     g.impactOccurred()
+                    AudioService.shared.playTierSelect()
                     // Spring-back
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.10) {
                         withAnimation(.spring(response: 0.30, dampingFraction: 0.50)) {

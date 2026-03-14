@@ -482,6 +482,7 @@ struct LanguageSelectionView: View {
         let isSelected = lang == selectedSource
 
         Button {
+            AudioService.shared.playLanguageHover()
             withAnimation(.spring(response: 0.45, dampingFraction: 0.75)) {
                 selectedSource = lang
                 if selectedTarget == lang || !LanguagePair(source: lang, target: selectedTarget).hasContent {
@@ -625,6 +626,7 @@ struct LanguageSelectionView: View {
                             isSelected: lang == selectedTarget,
                             isDark: isDark
                         ) {
+                            AudioService.shared.playLanguageHover()
                             withAnimation(.spring(response: 0.35, dampingFraction: 0.72)) {
                                 selectedTarget = lang
                             }
@@ -643,6 +645,8 @@ struct LanguageSelectionView: View {
 
     private var floatingCTA: some View {
         Button {
+            AudioService.shared.playLanguageConfirmed()
+            HapticsService.shared.correctAnswer()
             withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
                 savePair()
             }

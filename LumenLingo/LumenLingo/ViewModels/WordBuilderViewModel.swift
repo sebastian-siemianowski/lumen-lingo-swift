@@ -113,7 +113,7 @@ final class WordBuilderViewModel {
         scrambledLetters[scrambledIndex].isPlaced = true
 
         audioService.playTilePlace()
-        HapticsService.light()
+        HapticsService.shared.tileSnap()
     }
 
     func removePlacedLetter(at index: Int) {
@@ -125,7 +125,7 @@ final class WordBuilderViewModel {
         }
 
         audioService.playTilePick()
-        HapticsService.light()
+        HapticsService.shared.tileReturn()
     }
 
     func checkAnswer() {
@@ -161,10 +161,11 @@ final class WordBuilderViewModel {
         }
 
         audioService.playWordCorrect()
-        HapticsService.success()
+        HapticsService.shared.correctAnswer()
 
         if currentStreak >= 3 {
             audioService.playStreakBonus()
+            HapticsService.shared.streakBuilding(count: currentStreak)
         }
 
         // Auto-advance after delay
@@ -181,7 +182,7 @@ final class WordBuilderViewModel {
         currentStreak = 0
 
         audioService.playLetterWrong()
-        HapticsService.error()
+        HapticsService.shared.wrongAnswer()
     }
 
     func skipWord() {

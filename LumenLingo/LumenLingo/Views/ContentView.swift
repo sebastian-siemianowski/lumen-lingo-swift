@@ -108,14 +108,18 @@ struct ContentView: View {
             setupServices()
             localization.update(from: languagePrefs)
             themeManager.syncFromProfile(profile)
-            if let profile { audioService.syncFromProfile(profile) }
-            // Delay to ensure UITabBar exists in the hierarchy
+            if let profile {
+                audioService.syncFromProfile(profile)
+                hapticsService.syncFromProfile(profile)
+            }
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                 let wantTransparent = selectedTab == .dashboard && themeManager.isDarkMode
                 applyTabBarAppearance(transparent: wantTransparent)
             }
         }
         .onChange(of: selectedTab) { _, newTab in
+            AudioService.shared.playTabSwitch()
+            HapticsService.shared.tabSwitch()
             let wantTransparent = newTab == .dashboard && themeManager.isDarkMode
             applyTabBarAppearance(transparent: wantTransparent)
         }

@@ -597,13 +597,16 @@ struct GrammarView: View {
             correctCount += 1
             score += 10
             streak += 1
-            audioService.playWarmPulse()
-            hapticsService.success()
+            audioService.playGrammarCorrect(consecutiveCount: streak)
+            HapticsService.shared.correctAnswer()
+            if streak >= 3 {
+                HapticsService.shared.streakBuilding(count: streak)
+            }
         } else {
             wrongCount += 1
             streak = 0
-            audioService.playSoftNudge()
-            hapticsService.warning()
+            audioService.playGrammarWrong()
+            HapticsService.shared.wrongAnswer()
         }
     }
 
@@ -639,7 +642,7 @@ struct GrammarView: View {
         )
         progressService.recordGameSession(result)
         audioService.playCelebration()
-        hapticsService.success()
+        HapticsService.shared.celebrate()
 
         withAnimation(.spring(response: 0.6)) {
             isGameComplete = true

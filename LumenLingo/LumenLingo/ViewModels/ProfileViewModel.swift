@@ -99,7 +99,10 @@ final class ProfileViewModel {
     func loadData() {
         isLoading = true
         userProfile = progressService.getOrCreateProfile()
-        AudioService.shared.isEnabled = userProfile?.soundEnabled ?? true
+        if let p = userProfile {
+            AudioService.shared.syncFromProfile(p)
+            HapticsService.shared.syncFromProfile(p)
+        }
         isLoading = false
     }
 
@@ -143,8 +146,8 @@ final class LanguageSelectionViewModel {
         guard isValidPair else { return }
         progressService.setLanguagePreference(source: sourceLanguage, target: targetLanguage)
         TranslationService.shared.setLanguage(sourceLanguage.rawValue)
-        HapticsService.success()
-        AudioService.shared.playWhoosh()
+        HapticsService.shared.correctAnswer()
+        AudioService.shared.playLanguageConfirmed()
     }
 }
 

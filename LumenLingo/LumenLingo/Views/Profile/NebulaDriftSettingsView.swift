@@ -79,12 +79,10 @@ struct NebulaDriftSettingsView: View {
             PremiumToggle(
                 isOn: profile?.nebulaDriftEnabled ?? false,
                 onToggle: {
-                    withAnimation {
-                        profile?.nebulaDriftEnabled.toggle()
-                        if profile?.nebulaDriftEnabled == true {
-                            profile?.breathingOrbsEnabled = false
-                            profile?.quantumFlowEnabled = false
-                        }
+                    profile?.nebulaDriftEnabled.toggle()
+                    if profile?.nebulaDriftEnabled == true {
+                        profile?.breathingOrbsEnabled = false
+                        profile?.quantumFlowEnabled = false
                     }
                 }
             )

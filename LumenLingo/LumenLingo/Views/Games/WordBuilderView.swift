@@ -477,7 +477,7 @@ struct WordBuilderView: View {
 
         placeLetter(letterToPlace)
         audioService.playHintSparkle()
-        hapticsService.medium()
+        HapticsService.shared.hintReveal()
     }
 
     // MARK: - Action Buttons
@@ -681,8 +681,8 @@ struct WordBuilderView: View {
         undoStack.append(slotIndex)
         clearIdleHint()
 
-        audioService.playPlink()
-        hapticsService.lightImpact()
+        audioService.playTilePlace()
+        HapticsService.shared.tileSnap()
     }
 
     private func removeLetter(at index: Int, letter: ScrambledLetter) {
@@ -693,7 +693,7 @@ struct WordBuilderView: View {
             }
         }
         undoStack.removeAll { $0 == index }
-        hapticsService.lightImpact()
+        HapticsService.shared.tileReturn()
     }
 
     private func undoLastLetter() {
@@ -711,7 +711,8 @@ struct WordBuilderView: View {
             isCorrect = nil
         }
         undoStack.removeAll()
-        hapticsService.lightImpact()
+        audioService.playLetterClear()
+        HapticsService.shared.tileReturn()
     }
 
     // MARK: - Idle Hint System
@@ -757,10 +758,11 @@ struct WordBuilderView: View {
 
             if streak >= 3 {
                 audioService.playStreakBonus()
+                HapticsService.shared.streakBuilding(count: streak)
             } else {
                 audioService.playWordCorrect()
             }
-            hapticsService.success()
+            HapticsService.shared.correctAnswer()
 
             // Mark mastered
             let progressService = ProgressService(modelContext: modelContext)
@@ -780,8 +782,8 @@ struct WordBuilderView: View {
         } else {
             wrongCount += 1
             streak = 0
-            audioService.playSoftNudge()
-            hapticsService.error()
+            audioService.playLetterWrong()
+            HapticsService.shared.wrongAnswer()
 
             // Shake animation
             withAnimation(.spring(response: 0.1, dampingFraction: 0.2)) {
@@ -838,7 +840,7 @@ struct WordBuilderView: View {
         )
         progressService.recordGameSession(result)
         audioService.playCelebration()
-        hapticsService.success()
+        HapticsService.shared.celebrate()
 
         withAnimation(.spring(response: 0.6)) {
             isGameComplete = true

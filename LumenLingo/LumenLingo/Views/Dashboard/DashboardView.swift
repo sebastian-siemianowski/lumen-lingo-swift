@@ -88,6 +88,8 @@ struct DashboardView: View {
 
     private var languageSelector: some View {
         Button {
+            AudioService.shared.playLanguageHover()
+            HapticsService.shared.buttonPress()
             showLanguageSheet = true
         } label: {
             HStack(spacing: 8) {

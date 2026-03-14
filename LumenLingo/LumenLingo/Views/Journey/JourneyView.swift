@@ -560,8 +560,9 @@ struct JourneyView: View {
         let available = allQuotes.indices.filter { !shownQuoteIndices.contains($0) }
         guard let nextIdx = available.randomElement() else { return }
 
-        // Haptic — soft impact for that satisfying feel
-        HapticsService.light()
+        // Haptic + sound — soft impact for that satisfying feel
+        HapticsService.shared.tabSwitch()
+        AudioService.shared.playQuoteShuffle()
 
         // Phase 1: Press in + glow burst + fade out
         withAnimation(.spring(response: 0.18, dampingFraction: 0.6)) {

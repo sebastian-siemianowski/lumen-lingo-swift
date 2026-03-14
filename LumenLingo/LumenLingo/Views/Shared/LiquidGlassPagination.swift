@@ -110,7 +110,8 @@ struct LiquidGlassPagination: View {
 
         return Button {
             guard page != currentPage else { return }
-            HapticsService.light()
+            HapticsService.shared.tabSwitch()
+            AudioService.shared.playPageChange()
             onPageChange(page)
         } label: {
             ZStack {
@@ -165,7 +166,8 @@ struct LiquidGlassPagination: View {
 
         return Button {
             guard isEnabled else { return }
-            HapticsService.light()
+            HapticsService.shared.tabSwitch()
+            AudioService.shared.playPageChange()
             let newPage = direction == .backward ? currentPage - 1 : currentPage + 1
             onPageChange(newPage)
         } label: {

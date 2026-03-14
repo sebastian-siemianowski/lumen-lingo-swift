@@ -77,12 +77,10 @@ struct BreathingOrbsSettingsView: View {
             PremiumToggle(
                 isOn: profile?.breathingOrbsEnabled ?? true,
                 onToggle: {
-                    withAnimation {
-                        profile?.breathingOrbsEnabled.toggle()
-                        if profile?.breathingOrbsEnabled == true {
-                            profile?.quantumFlowEnabled = false
-                            profile?.nebulaDriftEnabled = false
-                        }
+                    profile?.breathingOrbsEnabled.toggle()
+                    if profile?.breathingOrbsEnabled == true {
+                        profile?.quantumFlowEnabled = false
+                        profile?.nebulaDriftEnabled = false
                     }
                 }
             )
@@ -111,7 +109,7 @@ struct BreathingOrbsSettingsView: View {
             PremiumToggle(
                 isOn: profile?.orbRaveMode ?? false,
                 onToggle: {
-                    withAnimation { profile?.orbRaveMode.toggle() }
+                    profile?.orbRaveMode.toggle()
                 }
             )
         }

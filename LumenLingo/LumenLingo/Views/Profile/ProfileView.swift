@@ -233,6 +233,8 @@ struct ProfileView: View {
                         let oldIndex = ProfileTab.allCases.firstIndex(of: activeTab) ?? 0
                         let newIndex = ProfileTab.allCases.firstIndex(of: tab) ?? 0
                         tabDirection = newIndex > oldIndex ? 1 : -1
+                        AudioService.shared.playProfileTabSwitch()
+                        HapticsService.shared.tabSwitch()
                         withAnimation(.spring(response: 0.3, dampingFraction: 0.8)) {
                             activeTab = tab
                         }
@@ -352,6 +354,8 @@ struct ProfileView: View {
                         let oldIndex = availableAppearanceSubTabs.firstIndex(of: activeAppearanceSubTab) ?? 0
                         let newIndex = availableAppearanceSubTabs.firstIndex(of: subTab) ?? 0
                         subTabDirection = newIndex > oldIndex ? 1 : -1
+                        AudioService.shared.playTabSwitch()
+                        HapticsService.shared.tabSwitch()
                         withAnimation(.spring(response: 0.3, dampingFraction: 0.8)) {
                             activeAppearanceSubTab = subTab
                         }

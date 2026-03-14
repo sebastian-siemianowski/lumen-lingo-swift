@@ -783,8 +783,8 @@ struct FlashCardsView: View {
     private func flipCard() {
         guard !isFlipped else { return }
 
-        audioService.playPlink()
-        hapticsService.lightImpact()
+        audioService.playCardFlipEnhanced()
+        HapticsService.shared.cardFlip()
 
         // Gentle press-in
         withAnimation(.easeOut(duration: 0.1)) {
@@ -847,13 +847,12 @@ struct FlashCardsView: View {
             correctCount += 1
             score += 10
             streak += 1
-            audioService.playWarmPulse()
+            audioService.playSwipeRight()
+            HapticsService.shared.correctAnswer()
 
-            // Varied haptics based on streak
-            if streak >= 5 && streak % 5 == 0 {
-                hapticsService.success()
-            } else {
-                hapticsService.lightImpact()
+            // Streak haptics on milestones
+            if streak >= 3 {
+                HapticsService.shared.streakBuilding(count: streak)
             }
 
             // Animate score counter
@@ -898,8 +897,8 @@ struct FlashCardsView: View {
         } else {
             wrongCount += 1
             streak = 0
-            audioService.playSoftNudge()
-            hapticsService.lightImpact()
+            audioService.playSwipeLeft()
+            HapticsService.shared.wrongAnswer()
 
             // Orange glow around the card
             answerGlow = .orange
@@ -1013,7 +1012,7 @@ struct FlashCardsView: View {
         progressService.recordGameSession(result)
 
         audioService.playCelebration()
-        hapticsService.success()
+        HapticsService.shared.celebrate()
 
         withAnimation(.spring(response: 0.6)) {
             isGameComplete = true

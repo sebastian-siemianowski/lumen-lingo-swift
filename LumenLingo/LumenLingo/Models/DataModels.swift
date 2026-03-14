@@ -35,13 +35,19 @@ final class UserProfile {
     var nebulaDriftSpeed: Double
 
     // Per-category sound toggles (React parity)
-    var gamesSoundsEnabled: Bool
-    var flashcardsSoundsEnabled: Bool
-    var grammarSoundsEnabled: Bool
-    var wordBuilderSoundsEnabled: Bool
-    var uiSoundsEnabled: Bool
-    var achievementSoundsEnabled: Bool
-    var ambientSoundsEnabled: Bool
+    var gamesSoundsEnabled: Bool = true
+    var flashcardsSoundsEnabled: Bool = true
+    var grammarSoundsEnabled: Bool = true
+    var wordBuilderSoundsEnabled: Bool = true
+    var uiSoundsEnabled: Bool = true
+    var achievementSoundsEnabled: Bool = true
+    var ambientSoundsEnabled: Bool = false
+    var hapticsEnabled: Bool = true
+    var adaptiveAudioEnabled: Bool = true
+    var gameSoundsVolume: Float = 1.0
+    var uiSoundsVolume: Float = 1.0
+    var achievementSoundsVolume: Float = 1.0
+    var ambientVolume: Float = 0.3
 
     var currentLevel: Int {
         (totalXP / 100) + 1
@@ -114,7 +120,13 @@ final class UserProfile {
         wordBuilderSoundsEnabled: Bool = true,
         uiSoundsEnabled: Bool = true,
         achievementSoundsEnabled: Bool = true,
-        ambientSoundsEnabled: Bool = false
+        ambientSoundsEnabled: Bool = false,
+        hapticsEnabled: Bool = true,
+        adaptiveAudioEnabled: Bool = true,
+        gameSoundsVolume: Float = 1.0,
+        uiSoundsVolume: Float = 1.0,
+        achievementSoundsVolume: Float = 1.0,
+        ambientVolume: Float = 0.3
     ) {
         self.totalXP = totalXP
         self.dailyStreak = dailyStreak
@@ -147,6 +159,12 @@ final class UserProfile {
         self.uiSoundsEnabled = uiSoundsEnabled
         self.achievementSoundsEnabled = achievementSoundsEnabled
         self.ambientSoundsEnabled = ambientSoundsEnabled
+        self.hapticsEnabled = hapticsEnabled
+        self.adaptiveAudioEnabled = adaptiveAudioEnabled
+        self.gameSoundsVolume = gameSoundsVolume
+        self.uiSoundsVolume = uiSoundsVolume
+        self.achievementSoundsVolume = achievementSoundsVolume
+        self.ambientVolume = ambientVolume
     }
 }
 
