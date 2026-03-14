@@ -154,14 +154,35 @@ final class AudioService {
     private func prewarmSounds() {
         cacheQueue.async { [weak self] in
             guard let self else { return }
-            let warmList: [(key: String, freq: Float, endFreq: Float?, dur: TimeInterval, vol: Float, wf: Waveform, env: Envelope, rich: Float)] = [
-                ("cardFlip", Freq.C4, Freq.E4, 0.13, 0.022, .wood, .dew, 0.45),
+
+            // Chord-based prewarm: cardFlip, tilePick, tilePlace use generateChordWAVData
+            let chordItems: [(key: String, notes: [(frequency: Float, amplitude: Float)],
+                              dur: TimeInterval, vol: Float, wf: Waveform, env: Envelope, rich: Float)] = [
+                ("cardFlip",
+                 [(Freq.C4, 1.0), (Freq.E4, 0.7), (Freq.G4, 0.55)],
+                 0.24, 0.020, .wood, .dew, 0.35),
+                ("tilePick",
+                 [(Freq.E3, 0.3), (Freq.E4, 1.0)],
+                 0.16, 0.018, .wood, .dew, 0.35),
+                ("tilePlace",
+                 [(Freq.G3, 0.3), (Freq.D4, 0.5), (Freq.G4, 1.0)],
+                 0.16, 0.021, .wood, .dew, 0.36),
+            ]
+            for item in chordItems {
+                let data = self.generateChordWAVData(
+                    notes: item.notes, duration: item.dur, volume: item.vol,
+                    waveform: item.wf, envelope: item.env, richness: item.rich
+                )
+                DispatchQueue.main.async { self.soundCache[item.key] = data }
+            }
+
+            // Single-tone prewarm (UI sounds)
+            let toneItems: [(key: String, freq: Float, endFreq: Float?, dur: TimeInterval,
+                             vol: Float, wf: Waveform, env: Envelope, rich: Float)] = [
                 ("buttonTap", Freq.D5, nil, 0.03, 0.015, .glass, .spark, 0.10),
-                ("tilePick", Freq.E4, nil, 0.10, 0.020, .wood, .dew, 0.42),
-                ("tilePlace", Freq.G4, nil, 0.11, 0.023, .wood, .dew, 0.48),
                 ("tabSwitch", Freq.C5, nil, 0.04, 0.008, .glass, .petal, 0.0),
             ]
-            for item in warmList {
+            for item in toneItems {
                 let data = self.generateWAVData(
                     frequency: item.freq, endFrequency: item.endFreq,
                     duration: item.dur, volume: item.vol, waveform: item.wf,
@@ -235,122 +256,161 @@ final class AudioService {
     // ║                                                            ║
     // ║  Frequencies: C major pentatonic only, ceiling 784Hz       ║
     // ║  (G5), absolute max 1047Hz (C6) for rare celebrations.     ║
-    // ║  Harmonics rolled off above 1kHz, zero above 2kHz.         ║
+    // ║  Harmonics rolled off above 3kHz, zero above 6kHz.         ║
+    // ║  3-voice chorus (±6-8 cents) for Wood/Bell warmth.         ║
+    // ║  Vibrato (5Hz, ±4-6 cents) for organic pitch life.         ║
+    // ║  Per-harmonic decay: bright attacks → warm sustains.       ║
+    // ║  Chord generation: true multi-note fusion in single WAV.   ║
     // ╚══════════════════════════════════════════════════════════════╝
 
     // MARK: - Flashcard Sounds (Epic 2)
 
-    /// Story 2.1: Card appears — warm wooden tap, like a marimba welcoming you
-    /// G4 (392Hz), Wood, Dew envelope — a single warm note that says "here I am"
+    /// Story 2.1: Card appears — warm two-note wooden greeting
+    /// G3+G4 octave doubling, Wood, Dew — a resonant marimba welcome
     func playCardAppear() {
         guard isEnabled, gameSoundsEnabled, flashcardsSoundsEnabled else { return }
         guard canPlay("cardAppear", cooldown: 0.15) else { return }
-        playTone(frequency: Freq.G4, duration: 0.14,
-                 volume: gameVol(0.36), waveform: .wood, envelope: .dew, richness: 0.40)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.G3, 0.5), (Freq.G4, 1.0)],
+            duration: 0.22, volume: gameVol(0.38),
+            waveform: .wood, envelope: .dew, richness: 0.38)
+        playFromData(chordData)
     }
 
-    /// Story 2.2: Card flip — rising warmth like turning a page in the sun
-    /// C4→E4 (262→330Hz), Wood, Dew — a rising major third, pure joy
+    /// Story 2.2: Card flip — C major triad blooming open
+    /// C4+E4+G4 simultaneous chord, Wood — warm, full, like a door opening to sunlight
     func playCardFlipEnhanced() {
         guard isEnabled, gameSoundsEnabled, flashcardsSoundsEnabled else { return }
         guard canPlay("cardFlip", cooldown: 0.1) else { return }
         if let cached = soundCache["cardFlip"] {
             playFromData(cached)
         } else {
-            playTone(frequency: Freq.C4, endFrequency: Freq.E4, duration: 0.13,
-                     volume: gameVol(0.44), waveform: .wood, envelope: .dew, richness: 0.45)
+            let chordData = generateChordWAVData(
+                notes: [(Freq.C4, 1.0), (Freq.E4, 0.7), (Freq.G4, 0.55)],
+                duration: 0.24, volume: gameVol(0.40),
+                waveform: .wood, envelope: .dew, richness: 0.35)
+            playFromData(chordData)
         }
     }
 
-    /// Story 2.8: Plink → Glow — warm wooden knock
-    /// A4 (440Hz), Wood, Dew — a gentle marimba tap in the warm register
+    /// Story 2.8: Plink → Glow — warm double-octave marimba tap
+    /// A3+A4, Wood, Dew — deep resonance with bright top
     func playPlink() {
         guard isEnabled, gameSoundsEnabled else { return }
         guard canPlay("plink", cooldown: 0.08) else { return }
-        playTone(frequency: Freq.A4, duration: 0.12,
-                 volume: gameVol(0.40), waveform: .wood, envelope: .dew, richness: 0.45)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.A3, 0.4), (Freq.A4, 1.0)],
+            duration: 0.20, volume: gameVol(0.38),
+            waveform: .wood, envelope: .dew, richness: 0.35)
+        playFromData(chordData)
     }
 
-    /// Story 2.3: Swipe right (correct) — joyous rising steel-drum phrase
-    /// Two-note arpeggio: C4→G4, Bell with rich harmonics — a little celebration
+    /// Story 2.3: Swipe right (correct) — C major triad with shimmering bell overtones
+    /// C4+E4+G4+C5 full voicing, Bell — a complete joyous chord, not just two thin notes
     func playSwipeRight() {
         guard isEnabled, gameSoundsEnabled, flashcardsSoundsEnabled else { return }
         guard canPlay("swipeRight", cooldown: 0.12) else { return }
-        // Rising perfect fifth — the most joyous interval in music
-        playTone(frequency: Freq.C4, duration: 0.15,
-                 volume: gameVol(0.50), waveform: .bell, envelope: .dew, richness: 0.50)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.06) { [weak self] in
-            self?.playTone(frequency: Freq.G4, duration: 0.18,
-                           volume: self?.gameVol(0.56) ?? 0.028,
-                           waveform: .bell, envelope: .dew, richness: 0.55)
-        }
+        // C major chord with octave warmth
+        let chordData = generateChordWAVData(
+            notes: [(Freq.C3, 0.2), (Freq.C4, 1.0), (Freq.E4, 0.7), (Freq.G4, 0.55), (Freq.C5, 0.3)],
+            duration: 0.32, volume: gameVol(0.46),
+            waveform: .bell, envelope: .dew, richness: 0.40)
+        playFromData(chordData)
     }
 
-    /// Story 2.4: Swipe left (still learning) — warm gentle nudge, not cold
-    /// G4→E4 (392→330Hz), Wood, Dew — falling third but *warm*, like "no worries"
+    /// Story 2.4: Swipe left (still learning) — warm A minor chord, compassionate
+    /// A3+C4+E4 Am chord, Wood — "it's okay, try again" in music
     func playSwipeLeft() {
         guard isEnabled, gameSoundsEnabled, flashcardsSoundsEnabled else { return }
         guard canPlay("swipeLeft", cooldown: 0.12) else { return }
-        playTone(frequency: Freq.G4, endFrequency: Freq.E4, duration: 0.12,
-                 volume: gameVol(0.32), waveform: .wood, envelope: .dew, richness: 0.35)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.A3, 0.6), (Freq.C4, 0.4), (Freq.E4, 0.3)],
+            duration: 0.22, volume: gameVol(0.28),
+            waveform: .wood, envelope: .dew, richness: 0.32)
+        playFromData(chordData)
     }
 
-    /// Story 2.5: Mastery progression — climbing the warm scale like sunrise
-    /// All Wood→Bell, rich harmonics throughout — every level feels warm and earned
+    /// Story 2.5: Mastery progression — ascending chord complexity like sunrise
+    /// Builds from open fifth → triad → seventh → full voicing as mastery grows
     func playMasteryProgress(level: Int) {
         guard isEnabled, gameSoundsEnabled, flashcardsSoundsEnabled else { return }
         guard canPlay("mastery", cooldown: 0.15) else { return }
-        let freq: Float
-        let rich: Float
+        let notes: [(frequency: Float, amplitude: Float)]
         let wf: Waveform
+        let rich: Float
         switch level {
-        case 0...2:  freq = Freq.C4; wf = .wood; rich = 0.40
-        case 3...4:  freq = Freq.E4; wf = .wood; rich = 0.45
-        case 5...6:  freq = Freq.G4; wf = .bell; rich = 0.50
-        default:     freq = Freq.A4; wf = .bell; rich = 0.55
+        case 0...2:
+            // Open fifth — simple, warm, beginning of journey
+            notes = [(Freq.C4, 1.0), (Freq.G4, 0.6)]
+            wf = .wood; rich = 0.32
+        case 3...4:
+            // Full triad — growing confidence
+            notes = [(Freq.C4, 1.0), (Freq.E4, 0.7), (Freq.G4, 0.55)]
+            wf = .wood; rich = 0.36
+        case 5...6:
+            // Add octave doubling — bell shimmer appears
+            notes = [(Freq.C3, 0.2), (Freq.C4, 1.0), (Freq.E4, 0.7), (Freq.G4, 0.55)]
+            wf = .bell; rich = 0.40
+        default:
+            // Full voicing — mastery achieved
+            notes = [(Freq.C3, 0.2), (Freq.C4, 1.0), (Freq.E4, 0.7), (Freq.G4, 0.55), (Freq.C5, 0.3)]
+            wf = .bell; rich = 0.45
         }
-        playTone(frequency: freq, duration: 0.15, volume: gameVol(0.44),
-                 waveform: wf, envelope: .dew, richness: rich)
+        let chordData = generateChordWAVData(
+            notes: notes, duration: 0.28, volume: gameVol(0.42),
+            waveform: wf, envelope: .dew, richness: rich)
+        playFromData(chordData)
     }
 
-    /// Story 2.6: Next category — warm wooden scroll, like flipping through vacation photos
-    /// C4→E4 (262→330Hz), Wood, Dew
+    /// Story 2.6: Next category — warm wooden chord scroll
+    /// C4+E4 third, Wood, Dew
     func playCategoryNext() {
         guard isEnabled, gameSoundsEnabled else { return }
         guard canPlay("catNext", cooldown: 0.2) else { return }
-        playTone(frequency: Freq.C4, endFrequency: Freq.E4, duration: 0.10,
-                 volume: gameVol(0.30), waveform: .wood, envelope: .dew, richness: 0.35)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.C4, 1.0), (Freq.E4, 0.6)],
+            duration: 0.16, volume: gameVol(0.30),
+            waveform: .wood, envelope: .dew, richness: 0.30)
+        playFromData(chordData)
     }
 
     /// Previous category
-    /// E4→C4 (330→262Hz), Wood, Dew
+    /// E4+C4 (inverted), Wood, Dew
     func playCategoryPrev() {
         guard isEnabled, gameSoundsEnabled else { return }
         guard canPlay("catPrev", cooldown: 0.2) else { return }
-        playTone(frequency: Freq.E4, endFrequency: Freq.C4, duration: 0.10,
-                 volume: gameVol(0.30), waveform: .wood, envelope: .dew, richness: 0.35)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.C3, 0.15), (Freq.C4, 0.6), (Freq.E4, 1.0)],
+            duration: 0.16, volume: gameVol(0.28),
+            waveform: .wood, envelope: .dew, richness: 0.30)
+        playFromData(chordData)
     }
 
-    /// Story 2.7: XP gain — bright bell sparkle like a coin dropping in the sun
-    /// G4 (392Hz), Bell, Spark — warm register, rich, quick
+    /// Story 2.7: XP gain — shimmering bell chord like coins on a steel drum
+    /// G4+C5 fifth, Bell, Spark — bright, rich, celebratory
     func playXPGain(amount: Int) {
         guard isEnabled, achievementSoundsEnabled else { return }
         guard canPlay("xpGain", cooldown: 0.3) else { return }
-        playTone(frequency: Freq.G4, duration: 0.08, volume: achieveVol(0.36),
-                 waveform: .bell, envelope: .spark, richness: 0.45)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.G4, 1.0), (Freq.C5, 0.5)],
+            duration: 0.16, volume: achieveVol(0.36),
+            waveform: .bell, envelope: .spark, richness: 0.35)
+        playFromData(chordData)
     }
 
     // MARK: - Word Builder Sounds (Epic 3)
 
-    /// Story 3.1: Tile picked — a warm wooden pluck, like picking a mango
-    /// E4 (330Hz), Wood, Dew — warm snap with rich body
+    /// Story 3.1: Tile picked — warm double-octave wooden pluck
+    /// E3+E4 octave pair, Wood, Dew — resonant like a real marimba bar
     func playTilePick(position: Int, total: Int) {
         guard isEnabled, gameSoundsEnabled, wordBuilderSoundsEnabled else { return }
         guard canPlay("tilePick", cooldown: 0.04) else { return }
-        let richVariation = Float(position) / max(Float(total), 1) * 0.08
-        playTone(frequency: Freq.E4, duration: 0.10,
-                 volume: gameVol(0.40), waveform: .wood, envelope: .dew,
-                 richness: 0.42 + richVariation)
+        let richVariation = Float(position) / max(Float(total), 1) * 0.06
+        let chordData = generateChordWAVData(
+            notes: [(Freq.E3, 0.3), (Freq.E4, 1.0)],
+            duration: 0.16, volume: gameVol(0.36),
+            waveform: .wood, envelope: .dew, richness: 0.35 + richVariation)
+        playFromData(chordData)
     }
 
     /// Tile pick (no position)
@@ -360,147 +420,185 @@ final class AudioService {
         if let cached = soundCache["tilePick"] {
             playFromData(cached)
         } else {
-            playTone(frequency: Freq.E4, duration: 0.10,
-                     volume: gameVol(0.40), waveform: .wood, envelope: .dew, richness: 0.42)
+            let chordData = generateChordWAVData(
+                notes: [(Freq.E3, 0.3), (Freq.E4, 1.0)],
+                duration: 0.16, volume: gameVol(0.36),
+                waveform: .wood, envelope: .dew, richness: 0.35)
+            playFromData(chordData)
         }
     }
 
-    /// Story 3.3: Tile returned — warm little knock back, like setting down a shell
-    /// D4 (294Hz), Wood, Dew — lower than pick, still warm
+    /// Story 3.3: Tile returned — gentle D minor voicing, like setting something down softly
+    /// D3+D4+A4, Wood, Dew — open fifth with low warmth
     func playTileReturn(position: Int = 0, total: Int = 1) {
         guard isEnabled, gameSoundsEnabled, wordBuilderSoundsEnabled else { return }
         guard canPlay("tileReturn", cooldown: 0.04) else { return }
-        playTone(frequency: Freq.D4, duration: 0.09,
-                 volume: gameVol(0.32), waveform: .wood, envelope: .dew, richness: 0.38)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.D3, 0.25), (Freq.D4, 1.0)],
+            duration: 0.14, volume: gameVol(0.28),
+            waveform: .wood, envelope: .dew, richness: 0.30)
+        playFromData(chordData)
     }
 
-    /// Story 3.2: Slot filled — satisfying wooden snap, like a puzzle piece clicking home
-    /// G4 (392Hz), Wood, Dew — solid, warm, "yes that fits"
+    /// Story 3.2: Slot filled — satisfying G major snap, like a puzzle piece clicking
+    /// G3+G4+D4, Wood, Dew — open fifth voicing, warm and complete
     func playSlotFill(slotIndex: Int, totalSlots: Int) {
         guard isEnabled, gameSoundsEnabled, wordBuilderSoundsEnabled else { return }
         guard canPlay("slotFill", cooldown: 0.03) else { return }
-        playTone(frequency: Freq.G4, duration: 0.11,
-                 volume: gameVol(0.46), waveform: .wood, envelope: .dew, richness: 0.48)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.G3, 0.3), (Freq.D4, 0.5), (Freq.G4, 1.0)],
+            duration: 0.16, volume: gameVol(0.42),
+            waveform: .wood, envelope: .dew, richness: 0.36)
+        playFromData(chordData)
     }
 
-    /// Story 3.2: Tile snap into place — same satisfying click
-    /// G4 (392Hz), Wood, Dew
+    /// Story 3.2: Tile snap into place — same satisfying chord
     func playTilePlace() {
         guard isEnabled, gameSoundsEnabled else { return }
         guard canPlay("tilePlace", cooldown: 0.04) else { return }
         if let cached = soundCache["tilePlace"] {
             playFromData(cached)
         } else {
-            playTone(frequency: Freq.G4, duration: 0.11,
-                     volume: gameVol(0.46), waveform: .wood, envelope: .dew, richness: 0.48)
+            let chordData = generateChordWAVData(
+                notes: [(Freq.G3, 0.3), (Freq.D4, 0.5), (Freq.G4, 1.0)],
+                duration: 0.16, volume: gameVol(0.42),
+                waveform: .wood, envelope: .dew, richness: 0.36)
+            playFromData(chordData)
         }
     }
 
-    /// Story 3.4: Word completed — joyous ascending marimba run, like a steel drum melody
-    /// C4→E4→G4→A4, Wood/Bell blend — each note richer, building to delight
+    /// Story 3.4: Word completed — ascending arpeggio resolving into luminous chord
+    /// Rising C→E→G, then full C+E+G+C5 chord resolution — the musical payoff
     func playWordComplete(length: Int) {
         guard isEnabled, gameSoundsEnabled, wordBuilderSoundsEnabled else { return }
         guard canPlay("wordComplete", cooldown: 0.3) else { return }
-        let notes: [(freq: Float, delay: TimeInterval, vol: Float, wf: Waveform, rich: Float)] = [
-            (Freq.C4, 0,     gameVol(0.44), .wood, 0.42),
-            (Freq.E4, 0.05,  gameVol(0.50), .wood, 0.48),
-            (Freq.G4, 0.10,  gameVol(0.56), .bell, 0.52),
-            (Freq.A4, 0.15,  gameVol(0.60), .bell, 0.55),
+        // Ascending arpeggio approach
+        let runNotes: [(freq: Float, delay: TimeInterval)] = [
+            (Freq.C4, 0),
+            (Freq.E4, 0.06),
+            (Freq.G4, 0.12),
         ]
-        for note in notes {
+        for note in runNotes {
             DispatchQueue.main.asyncAfter(deadline: .now() + note.delay) { [weak self] in
-                self?.playTone(frequency: note.freq, duration: 0.14,
-                               volume: note.vol, waveform: note.wf,
-                               envelope: .dew, richness: note.rich)
+                self?.playTone(frequency: note.freq, duration: 0.10,
+                               volume: self?.gameVol(0.36) ?? 0.018,
+                               waveform: .wood, envelope: .dew, richness: 0.38)
             }
         }
-        // For 6+ letter words, add a warm bass resonance
+        // Resolve into full shimmering chord
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.18) { [weak self] in
+            guard let self else { return }
+            let chordData = self.generateChordWAVData(
+                notes: [(Freq.C3, 0.2), (Freq.C4, 1.0), (Freq.E4, 0.7),
+                         (Freq.G4, 0.55), (Freq.C5, 0.3)],
+                duration: 0.38, volume: self.gameVol(0.46),
+                waveform: .bell, envelope: .dew, richness: 0.42)
+            self.playFromData(chordData)
+        }
+        // Long words: add sub-bass resonance
         if length >= 6 {
-            playTone(frequency: Freq.C3, duration: 0.25, volume: gameVol(0.20),
-                     waveform: .wood, envelope: .dew, richness: 0.40)
+            playTone(frequency: Freq.C3, duration: 0.35, volume: gameVol(0.18),
+                     waveform: .wood, envelope: .petal, richness: 0.45)
         }
     }
 
-    /// Story 3.5: Word correct — warm major chord, like a sunny ¡sí!
-    /// C4+E4+G4 simultaneous, Bell — full, resonant, joyous
+    /// Story 3.5: Word correct — radiant C major chord with octave doubling
+    /// C3+C4+E4+G4+C5, Bell — all notes mixed in one buffer for true harmonic fusion
     func playWordCorrect() {
         guard isEnabled, gameSoundsEnabled else { return }
         guard canPlay("wordCorrect", cooldown: 0.2) else { return }
-        // Simultaneous warm major triad
-        playTone(frequency: Freq.C4, duration: 0.18, volume: gameVol(0.50),
-                 waveform: .bell, envelope: .dew, richness: 0.50)
-        playTone(frequency: Freq.E4, duration: 0.18, volume: gameVol(0.40),
-                 waveform: .bell, envelope: .dew, richness: 0.45)
-        playTone(frequency: Freq.G4, duration: 0.18, volume: gameVol(0.36),
-                 waveform: .bell, envelope: .dew, richness: 0.42)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.C3, 0.2), (Freq.C4, 1.0), (Freq.E4, 0.7),
+                     (Freq.G4, 0.55), (Freq.C5, 0.3)],
+            duration: 0.32, volume: gameVol(0.44),
+            waveform: .bell, envelope: .dew, richness: 0.40)
+        playFromData(chordData)
     }
 
-    /// Story 3.6: Word wrong — warm "not quite" — like a friend saying "try again"
-    /// A3 (220Hz), Wood, Dew — low, warm, unhurried, not punishing
+    /// Story 3.6: Word wrong — gentle A minor chord, warm and forgiving
+    /// A2+A3+C4+E4, Wood — minor quality = reflective, not punishing
     func playWordWrong() {
         guard isEnabled, gameSoundsEnabled, wordBuilderSoundsEnabled else { return }
         guard canPlay("wordWrong", cooldown: 0.15) else { return }
-        playTone(frequency: Freq.A3, duration: 0.14,
-                 volume: gameVol(0.30), waveform: .wood, envelope: .dew, richness: 0.35)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.A2, 0.15), (Freq.A3, 0.6), (Freq.C4, 0.4), (Freq.E4, 0.25)],
+            duration: 0.24, volume: gameVol(0.26),
+            waveform: .wood, envelope: .dew, richness: 0.30)
+        playFromData(chordData)
     }
 
-    /// Letter cleared from slot — soft wooden release
-    /// D4 (294Hz), Wood, Dew
+    /// Letter cleared from slot — gentle wooden fifth release
+    /// D3+D4, Wood, Dew
     func playLetterClear(index: Int = 0, total: Int = 1) {
         guard isEnabled, gameSoundsEnabled, wordBuilderSoundsEnabled else { return }
         guard canPlay("letterClear", cooldown: 0.03) else { return }
-        playTone(frequency: Freq.D4, duration: 0.08, volume: gameVol(0.28),
-                 waveform: .wood, envelope: .dew, richness: 0.35)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.D3, 0.25), (Freq.D4, 1.0)],
+            duration: 0.14, volume: gameVol(0.26),
+            waveform: .wood, envelope: .dew, richness: 0.28)
+        playFromData(chordData)
     }
 
-    /// Story 3.7: Hint available — gentle bell tap, "psst, over here"
-    /// A4 (440Hz), Bell, Dew — warm, not clinical
+    /// Story 3.7: Hint available — shimmering bell fifth, "look over here"
+    /// A4+E4, Bell, Dew
     func playHintAvailable() {
         guard isEnabled, gameSoundsEnabled, wordBuilderSoundsEnabled else { return }
         guard canPlay("hintAvail", cooldown: 0.5) else { return }
-        playTone(frequency: Freq.A4, duration: 0.10, volume: gameVol(0.28),
-                 waveform: .bell, envelope: .dew, richness: 0.40)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.E4, 0.5), (Freq.A4, 1.0)],
+            duration: 0.18, volume: gameVol(0.28),
+            waveform: .bell, envelope: .dew, richness: 0.32)
+        playFromData(chordData)
     }
 
-    /// Story 3.7: Hint revealed — warm descending wooden run
-    /// G4→E4→C4, Wood, Dew — each note warm and present
+    /// Story 3.7: Hint revealed — descending bell chord cascade
+    /// G4 chord → E4 chord → C4 chord, each with octave doubling
     func playHintReveal(position: Int = 0) {
         guard isEnabled, gameSoundsEnabled, wordBuilderSoundsEnabled else { return }
         guard canPlay("hintReveal", cooldown: 0.1) else { return }
-        let notes: [(freq: Float, delay: TimeInterval, vol: Float)] = [
-            (Freq.G4, 0,    gameVol(0.36)),
-            (Freq.E4, 0.04, gameVol(0.32)),
-            (Freq.C4, 0.08, gameVol(0.28)),
+        let steps: [(notes: [(Float, Float)], delay: TimeInterval)] = [
+            ([(Freq.G3, 0.3), (Freq.G4, 1.0)], 0),
+            ([(Freq.E3, 0.3), (Freq.E4, 1.0)], 0.06),
+            ([(Freq.C3, 0.3), (Freq.C4, 1.0)], 0.12),
         ]
-        for note in notes {
-            DispatchQueue.main.asyncAfter(deadline: .now() + note.delay) { [weak self] in
-                self?.playTone(frequency: note.freq, duration: 0.10,
-                               volume: note.vol, waveform: .wood,
-                               envelope: .dew, richness: 0.40)
+        for step in steps {
+            DispatchQueue.main.asyncAfter(deadline: .now() + step.delay) { [weak self] in
+                guard let self else { return }
+                let chordData = self.generateChordWAVData(
+                    notes: step.notes.map { (frequency: $0.0, amplitude: $0.1) },
+                    duration: 0.16, volume: self.gameVol(0.30),
+                    waveform: .wood, envelope: .dew, richness: 0.32)
+                self.playFromData(chordData)
             }
         }
     }
 
-    /// Story 3.7: Hint sparkle — bright bell accent
-    /// E4 (330Hz), Bell, Spark — in the warm register
+    /// Story 3.7: Hint sparkle — bright bell chord
+    /// E4+G4, Bell, Spark
     func playHintSparkle() {
         guard isEnabled, gameSoundsEnabled else { return }
         guard canPlay("hintSparkle", cooldown: 0.15) else { return }
-        playTone(frequency: Freq.E4, duration: 0.07, volume: gameVol(0.24),
-                 waveform: .bell, envelope: .spark, richness: 0.42)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.E4, 1.0), (Freq.G4, 0.6)],
+            duration: 0.14, volume: gameVol(0.24),
+            waveform: .bell, envelope: .spark, richness: 0.32)
+        playFromData(chordData)
     }
 
-    /// Skip word — breezy pass, like a wave rolling by
-    /// E4→C4 (330→262Hz), Wood, Dew — warm, unhurried
+    /// Skip word — gentle descending wooden fifth
+    /// E4+C4, Wood, Dew
     func playSkipWord() {
         guard isEnabled, gameSoundsEnabled, wordBuilderSoundsEnabled else { return }
         guard canPlay("skipWord", cooldown: 0.3) else { return }
-        playTone(frequency: Freq.E4, endFrequency: Freq.C4, duration: 0.12,
-                 volume: gameVol(0.32), waveform: .wood, envelope: .dew, richness: 0.38)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.C4, 0.5), (Freq.E4, 1.0)],
+            duration: 0.18, volume: gameVol(0.28),
+            waveform: .wood, envelope: .dew, richness: 0.30)
+        playFromData(chordData)
     }
 
-    /// Timer tick — gentle wooden pulse, increases warmth with urgency
-    /// C4/D4/E4 by urgency, Wood, Dew — never cold or clinical
+    /// Timer tick — wooden pulse with increasing harmonic tension
+    /// Octave-doubled notes, Wood, Dew
     func playTimerTick(secondsRemaining: Int) {
         guard isEnabled, gameSoundsEnabled, wordBuilderSoundsEnabled else { return }
         guard canPlay("timerTick", cooldown: 0.8) else { return }
@@ -513,125 +611,167 @@ final class AudioService {
         } else {
             freq = Freq.C4; vol = gameVol(0.20)
         }
-        playTone(frequency: freq, duration: 0.06, volume: vol,
-                 waveform: .wood, envelope: .dew, richness: 0.30)
+        // Octave-doubled for body
+        let chordData = generateChordWAVData(
+            notes: [(freq * 0.5, 0.3), (freq, 1.0)],
+            duration: 0.12, volume: vol,
+            waveform: .wood, envelope: .dew, richness: 0.25)
+        playFromData(chordData)
     }
 
-    /// Timer expired — warm settling, like a wave receding
-    /// E4→C4 (330→262Hz), Wood, Dew — warm and complete
+    /// Timer expired — resolving wooden chord, like a wave settling
+    /// E4+C4 with bass, Wood, Dew
     func playTimerExpired() {
         guard isEnabled, gameSoundsEnabled, wordBuilderSoundsEnabled else { return }
         guard canPlay("timerExpired", cooldown: 0.5) else { return }
-        playTone(frequency: Freq.E4, endFrequency: Freq.C4, duration: 0.18,
-                 volume: gameVol(0.34), waveform: .wood, envelope: .dew, richness: 0.40)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.C3, 0.2), (Freq.C4, 0.6), (Freq.E4, 1.0)],
+            duration: 0.28, volume: gameVol(0.30),
+            waveform: .wood, envelope: .dew, richness: 0.32)
+        playFromData(chordData)
     }
 
     // MARK: - Grammar Sounds (Epic 4)
 
-    /// Story 4.1: Question appears — warm marimba invitation
-    /// G4 (392Hz), Wood, Dew — solid and warm, says "your turn"
+    /// Story 4.1: Question appears — inviting G major chord
+    /// G3+G4+D4, Wood, Dew — open voicing that says "your turn"
     func playQuestionAppear() {
         guard isEnabled, gameSoundsEnabled, grammarSoundsEnabled else { return }
         guard canPlay("questionAppear", cooldown: 0.2) else { return }
-        playTone(frequency: Freq.G4, duration: 0.13, volume: gameVol(0.36),
-                 waveform: .wood, envelope: .dew, richness: 0.42)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.G3, 0.3), (Freq.D4, 0.5), (Freq.G4, 1.0)],
+            duration: 0.20, volume: gameVol(0.34),
+            waveform: .wood, envelope: .dew, richness: 0.35)
+        playFromData(chordData)
     }
 
-    /// Story 4.2: Answer selected — confident wooden tap
-    /// A4 (440Hz), Wood, Dew — definite and warm, "I choose this!"
+    /// Story 4.2: Answer selected — confident octave-doubled tap
+    /// A3+A4, Wood, Dew — definite with warm body
     func playAnswerSelect() {
         guard isEnabled, gameSoundsEnabled, grammarSoundsEnabled else { return }
         guard canPlay("answerSelect", cooldown: 0.06) else { return }
-        playTone(frequency: Freq.A4, duration: 0.09, volume: gameVol(0.40),
-                 waveform: .wood, envelope: .dew, richness: 0.42)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.A3, 0.3), (Freq.A4, 1.0)],
+            duration: 0.16, volume: gameVol(0.36),
+            waveform: .wood, envelope: .dew, richness: 0.35)
+        playFromData(chordData)
     }
 
-    /// Story 4.3: Grammar correct — warm rising celebration, streak builds richness
-    /// G4→A4/C5/E5 by streak, Bell, Dew — brighter and richer with each consecutive win
+    /// Story 4.3: Grammar correct — chords that grow richer with streaks
+    /// Streak 1: C major triad. Streak 3+: add extensions. Streak 5+: full voicing with bass
     func playGrammarCorrect(consecutiveCount: Int = 1) {
         guard isEnabled, gameSoundsEnabled, grammarSoundsEnabled else { return }
         guard canPlay("grammarCorrect", cooldown: 0.1) else { return }
         consecutiveCorrect = consecutiveCount
-        let targetFreq: Float
+        let notes: [(frequency: Float, amplitude: Float)]
         let rich: Float
         if consecutiveCount >= 5 {
-            targetFreq = Freq.E4; rich = 0.60
+            // Full voicing with bass — musical triumph
+            notes = [(Freq.C3, 0.2), (Freq.C4, 1.0), (Freq.E4, 0.7),
+                     (Freq.G4, 0.55), (Freq.C5, 0.35)]
+            rich = 0.45
         } else if consecutiveCount >= 3 {
-            targetFreq = Freq.C5; rich = 0.52   // Rare octave above only for streak
+            // Triad with octave doubling — building confidence
+            notes = [(Freq.C3, 0.18), (Freq.C4, 1.0), (Freq.E4, 0.7), (Freq.G4, 0.55)]
+            rich = 0.40
         } else {
-            targetFreq = Freq.A4; rich = 0.45
+            // Clean C major triad — simple joy
+            notes = [(Freq.C4, 1.0), (Freq.E4, 0.7), (Freq.G4, 0.5)]
+            rich = 0.36
         }
-        playTone(frequency: Freq.G4, endFrequency: targetFreq, duration: 0.15,
-                 volume: gameVol(0.54), waveform: .bell, envelope: .dew, richness: rich)
-        // 5+ streak: add warm resonance bed
-        if consecutiveCount >= 5 {
-            playTone(frequency: Freq.C4, duration: 0.22, volume: gameVol(0.20),
-                     waveform: .wood, envelope: .dew, richness: 0.40)
-        }
+        let chordData = generateChordWAVData(
+            notes: notes, duration: 0.28, volume: gameVol(0.46),
+            waveform: .bell, envelope: .dew, richness: rich)
+        playFromData(chordData)
     }
 
-    /// Story 4.4: Grammar wrong — warm low note, like a gentle "hmm, not that one"
-    /// A3 (220Hz), Wood, Dew — deep, warm, forgiving
+    /// Story 4.4: Grammar wrong — gentle A minor chord, reflective warmth
+    /// A2+A3+C4+E4, Wood — minor quality shows "not quite" without punishment
     func playGrammarWrong() {
         guard isEnabled, gameSoundsEnabled, grammarSoundsEnabled else { return }
         guard canPlay("grammarWrong", cooldown: 0.15) else { return }
         consecutiveCorrect = 0
-        playTone(frequency: Freq.A3, duration: 0.14,
-                 volume: gameVol(0.30), waveform: .wood, envelope: .dew, richness: 0.35)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.A2, 0.15), (Freq.A3, 0.6), (Freq.C4, 0.4), (Freq.E4, 0.25)],
+            duration: 0.24, volume: gameVol(0.26),
+            waveform: .wood, envelope: .dew, richness: 0.30)
+        playFromData(chordData)
         enforceSilence(duration: 0.08)
     }
 
-    /// Story 4.5: Explanation revealed — warm rising phrase, like opening a window
-    /// C4→E4 (262→330Hz), Wood, Dew — warm and inviting
+    /// Story 4.5: Explanation revealed — warm ascending chord pair
+    /// C major followed by G major voicing — like opening understanding
     func playExplanationReveal() {
         guard isEnabled, gameSoundsEnabled, grammarSoundsEnabled else { return }
         guard canPlay("explanationReveal", cooldown: 0.3) else { return }
-        playTone(frequency: Freq.C4, endFrequency: Freq.E4, duration: 0.14,
-                 volume: gameVol(0.32), waveform: .wood, envelope: .dew, richness: 0.40)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.C3, 0.15), (Freq.C4, 1.0), (Freq.E4, 0.6)],
+            duration: 0.22, volume: gameVol(0.30),
+            waveform: .wood, envelope: .dew, richness: 0.32)
+        playFromData(chordData)
     }
 
-    /// Panel expand — warm wooden unfold
-    /// C4→E4, Wood, Dew
+    /// Panel expand — rising wooden chord
+    /// C4+E4, Wood, Dew
     func playPanelExpand() {
         guard isEnabled, uiSoundsEnabled else { return }
         guard canPlay("panelExpand", cooldown: 0.15) else { return }
-        playTone(frequency: Freq.C4, endFrequency: Freq.E4, duration: 0.10,
-                 volume: uiVol(0.32), waveform: .wood, envelope: .dew, richness: 0.38)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.C4, 1.0), (Freq.E4, 0.6)],
+            duration: 0.16, volume: uiVol(0.30),
+            waveform: .wood, envelope: .dew, richness: 0.30)
+        playFromData(chordData)
     }
 
-    /// Panel collapse — warm wooden fold
-    /// E4→C4, Wood, Dew
+    /// Panel collapse — settling wooden chord
+    /// E4+C4 (inversed voicing), Wood, Dew
     func playPanelCollapse() {
         guard isEnabled, uiSoundsEnabled else { return }
         guard canPlay("panelCollapse", cooldown: 0.15) else { return }
-        playTone(frequency: Freq.E4, endFrequency: Freq.C4, duration: 0.10,
-                 volume: uiVol(0.32), waveform: .wood, envelope: .dew, richness: 0.38)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.C3, 0.15), (Freq.C4, 0.6), (Freq.E4, 1.0)],
+            duration: 0.16, volume: uiVol(0.28),
+            waveform: .wood, envelope: .dew, richness: 0.30)
+        playFromData(chordData)
     }
 
-    /// "Got It!" success — warm ascending marimba phrase
-    /// C4→E4→G4, Wood, Dew — rich and joyous
+    /// "Got It!" success — rising arpeggio into shimmering chord
+    /// C→E→G approach, then full C+E+G chord bloom
     func playWarmPulse() {
         guard isEnabled, gameSoundsEnabled else { return }
         guard canPlay("warmPulse", cooldown: 0.1) else { return }
-        let notes: [(freq: Float, delay: TimeInterval)] = [
-            (Freq.C4, 0), (Freq.E4, 0.05), (Freq.G4, 0.10),
+        // Quick ascending approach
+        let runNotes: [(freq: Float, delay: TimeInterval)] = [
+            (Freq.C4, 0), (Freq.E4, 0.04), (Freq.G4, 0.08),
         ]
-        for note in notes {
+        for note in runNotes {
             DispatchQueue.main.asyncAfter(deadline: .now() + note.delay) { [weak self] in
-                self?.playTone(frequency: note.freq, duration: 0.16,
-                               volume: self?.gameVol(0.50) ?? 0.025,
-                               waveform: .wood, envelope: .dew, richness: 0.48)
+                self?.playTone(frequency: note.freq, duration: 0.08,
+                               volume: self?.gameVol(0.30) ?? 0.015,
+                               waveform: .wood, envelope: .dew, richness: 0.35)
             }
+        }
+        // Chord bloom
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.12) { [weak self] in
+            guard let self else { return }
+            let chordData = self.generateChordWAVData(
+                notes: [(Freq.C4, 1.0), (Freq.E4, 0.7), (Freq.G4, 0.55)],
+                duration: 0.28, volume: self.gameVol(0.42),
+                waveform: .bell, envelope: .dew, richness: 0.38)
+            self.playFromData(chordData)
         }
     }
 
-    /// "Still Learning" nudge — warm low wooden note
-    /// A3 (220Hz), Wood, Dew — gentle and supportive
+    /// "Still Learning" nudge — gentle A minor chord
+    /// A3+C4, Wood — warm, supportive
     func playSoftNudge() {
         guard isEnabled, gameSoundsEnabled else { return }
         guard canPlay("softNudge", cooldown: 0.1) else { return }
-        playTone(frequency: Freq.A3, duration: 0.14,
-                 volume: gameVol(0.30), waveform: .wood, envelope: .dew, richness: 0.35)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.A3, 0.7), (Freq.C4, 0.4)],
+            duration: 0.20, volume: gameVol(0.26),
+            waveform: .wood, envelope: .dew, richness: 0.28)
+        playFromData(chordData)
     }
 
     /// Performance-based mood
@@ -639,13 +779,16 @@ final class AudioService {
         currentMood = mood
     }
 
-    /// Adaptive: acknowledge improvement — warm rising wooden glow
-    /// G4→A4, Wood, Dew — gentle warmth
+    /// Adaptive: acknowledge improvement — warm ascending wooden chord
+    /// G3+G4 → A3+A4, Wood, Dew
     func playPerformanceImproved() {
         guard isEnabled, gameSoundsEnabled, adaptiveAudioEnabled else { return }
         guard canPlay("perfImproved", cooldown: 2.0) else { return }
-        playTone(frequency: Freq.G4, endFrequency: Freq.A4, duration: 0.18,
-                 volume: gameVol(0.44), waveform: .wood, envelope: .dew, richness: 0.48)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.G3, 0.3), (Freq.G4, 1.0), (Freq.D4, 0.4)],
+            duration: 0.24, volume: gameVol(0.40),
+            waveform: .wood, envelope: .dew, richness: 0.36)
+        playFromData(chordData)
     }
 
     // MARK: - Navigation & UI Sounds (Epic 5)
@@ -717,18 +860,23 @@ final class AudioService {
                  waveform: .glass, envelope: .dew, richness: 0.15)
     }
 
-    /// Streak alive notification
-    /// E4→G4 (330→392Hz), Wood, Dew, Murmur tier
+    /// Streak alive notification — warm wooden chord pair
+    /// E3+E4 → G3+G4, Wood, Dew
     func playStreakAlive() {
         guard isEnabled, achievementSoundsEnabled else { return }
         guard canPlay("streakAlive", cooldown: 1.0) else { return }
-        let notes: [(Float, TimeInterval)] = [(Freq.E4, 0), (Freq.G4, 0.06)]
-        for (freq, delay) in notes {
-            DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
-                self?.playTone(frequency: freq, duration: 0.12,
-                               volume: self?.achieveVol(0.36) ?? 0.018,
-                               waveform: .wood, envelope: .dew, richness: 0.30)
-            }
+        let chordData1 = generateChordWAVData(
+            notes: [(Freq.E3, 0.3), (Freq.E4, 1.0)],
+            duration: 0.18, volume: achieveVol(0.34),
+            waveform: .wood, envelope: .dew, richness: 0.32)
+        playFromData(chordData1)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.08) { [weak self] in
+            guard let self else { return }
+            let chordData2 = self.generateChordWAVData(
+                notes: [(Freq.G3, 0.3), (Freq.G4, 1.0)],
+                duration: 0.20, volume: self.achieveVol(0.38),
+                waveform: .wood, envelope: .dew, richness: 0.35)
+            self.playFromData(chordData2)
         }
     }
 
@@ -856,18 +1004,16 @@ final class AudioService {
 
     // MARK: - Journey & Progress Sounds
 
-    /// Journey screen arrival
-    /// C4→E4→G4 chord, Glass, Petal, Murmur tier
+    /// Journey screen arrival — full C major chord, warm welcome
+    /// C3+C4+E4+G4, Bell, Petal
     func playJourneyArrival() {
         guard isEnabled, uiSoundsEnabled else { return }
         guard canPlay("journeyArrival", cooldown: 0.5) else { return }
-        let chord: [(Float, TimeInterval)] = [(Freq.C4, 0), (Freq.E4, 0.03), (Freq.G4, 0.06)]
-        for (freq, delay) in chord {
-            DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
-                self?.playTone(frequency: freq, duration: 0.20, volume: self?.uiVol(0.28) ?? 0.014,
-                               waveform: .glass, envelope: .petal, richness: 0.20)
-            }
-        }
+        let chordData = generateChordWAVData(
+            notes: [(Freq.C3, 0.2), (Freq.C4, 1.0), (Freq.E4, 0.7), (Freq.G4, 0.5)],
+            duration: 0.32, volume: uiVol(0.28),
+            waveform: .bell, envelope: .petal, richness: 0.35)
+        playFromData(chordData)
     }
 
     /// Streak display (scales with days)
@@ -877,37 +1023,39 @@ final class AudioService {
         if days >= 30 {
             playStreakMilestone(days: days)
         } else if days >= 7 {
-            let notes: [(Float, TimeInterval)] = [(Freq.E4, 0), (Freq.G4, 0.05), (Freq.C5, 0.10)]
-            for (freq, delay) in notes {
-                DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
-                    self?.playTone(frequency: freq, duration: 0.15,
-                                   volume: self?.achieveVol(0.44) ?? 0.022,
-                                   waveform: .wood, envelope: .dew, richness: 0.30)
-                }
-            }
+            let chordData = generateChordWAVData(
+                notes: [(Freq.E3, 0.15), (Freq.E4, 1.0), (Freq.G4, 0.6), (Freq.C5, 0.3)],
+                duration: 0.28, volume: achieveVol(0.40),
+                waveform: .wood, envelope: .dew, richness: 0.36)
+            playFromData(chordData)
         } else if days >= 1 {
-            playTone(frequency: Freq.E4, duration: 0.12, volume: achieveVol(0.36),
-                     waveform: .wood, envelope: .dew, richness: 0.25)
+            let chordData = generateChordWAVData(
+                notes: [(Freq.E3, 0.2), (Freq.E4, 1.0)],
+                duration: 0.18, volume: achieveVol(0.34),
+                waveform: .wood, envelope: .dew, richness: 0.30)
+            playFromData(chordData)
         }
     }
 
-    /// Milestone unlocked — same descending chime as achievement
-    /// G5→E5→C5, Bell, Spark/Dew, Celebrate tier
+    /// Milestone unlocked — shimmering bell chord cascade
     func playMilestoneUnlocked() {
         guard isEnabled, achievementSoundsEnabled else { return }
         guard canPlay("milestoneUnlocked", cooldown: 0.5) else { return }
         guard canCelebrate() else { return }
-        let notes: [(freq: Float, delay: TimeInterval, vol: Float, rich: Float, env: Envelope, dur: TimeInterval)] = [
-            (Freq.G5, 0,    0.042, 0.40, .spark, 0.08),
-            (Freq.E5, 0.04, 0.038, 0.35, .spark, 0.08),
-            (Freq.C5, 0.08, 0.035, 0.30, .dew,   0.12),
-        ]
-        for note in notes {
-            DispatchQueue.main.asyncAfter(deadline: .now() + note.delay) { [weak self] in
-                self?.playTone(frequency: note.freq, duration: note.dur,
-                               volume: note.vol, waveform: .bell,
-                               envelope: note.env, richness: note.rich)
-            }
+        // Bright bell chord
+        let chordData1 = generateChordWAVData(
+            notes: [(Freq.G4, 1.0), (Freq.C5, 0.6)],
+            duration: 0.14, volume: achieveVol(0.44),
+            waveform: .bell, envelope: .spark, richness: 0.38)
+        playFromData(chordData1)
+        // Resolving full chord
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.08) { [weak self] in
+            guard let self else { return }
+            let chordData2 = self.generateChordWAVData(
+                notes: [(Freq.C3, 0.15), (Freq.C4, 1.0), (Freq.E4, 0.7), (Freq.G4, 0.5)],
+                duration: 0.28, volume: self.achieveVol(0.48),
+                waveform: .bell, envelope: .dew, richness: 0.40)
+            self.playFromData(chordData2)
         }
         enforceSilence(duration: 0.4)
     }
@@ -998,53 +1146,55 @@ final class AudioService {
                  waveform: .glass, envelope: .spark, richness: 0.05)
     }
 
-    /// Language pair confirmed
-    /// C4→E4→G4, Wood, Dew, Murmur tier
+    /// Language pair confirmed — warm C major chord bloom
     func playLanguageConfirmed() {
         guard isEnabled, uiSoundsEnabled else { return }
         guard canPlay("langConfirmed", cooldown: 0.3) else { return }
-        let notes: [(Float, TimeInterval)] = [(Freq.C4, 0), (Freq.E4, 0.06), (Freq.G4, 0.12)]
-        for (freq, delay) in notes {
-            DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
-                self?.playTone(frequency: freq, duration: 0.15,
-                               volume: self?.uiVol(0.36) ?? 0.018,
-                               waveform: .wood, envelope: .dew, richness: 0.30)
-            }
-        }
+        let chordData = generateChordWAVData(
+            notes: [(Freq.C3, 0.15), (Freq.C4, 1.0), (Freq.E4, 0.7), (Freq.G4, 0.5)],
+            duration: 0.28, volume: uiVol(0.34),
+            waveform: .wood, envelope: .dew, richness: 0.36)
+        playFromData(chordData)
     }
 
-    /// First-ever language selected — welcome chime
-    /// C4→D4→E4→G4→A4, Bell, Petal, Speak tier
+    /// First-ever language selected — ascending arpeggio into radiant chord
     func playFirstLanguageSelected() {
         guard isEnabled, achievementSoundsEnabled else { return }
         guard canPlay("firstLang", cooldown: 1.0) else { return }
-        let welcome: [(Float, TimeInterval)] = [
-            (Freq.C4, 0), (Freq.D4, 0.10), (Freq.E4, 0.20),
-            (Freq.G4, 0.30), (Freq.A4, 0.40),
+        // Quick ascending approach
+        let welcome: [(freq: Float, delay: TimeInterval)] = [
+            (Freq.C4, 0), (Freq.E4, 0.08), (Freq.G4, 0.16),
         ]
         for (freq, delay) in welcome {
             DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
-                self?.playTone(frequency: freq, duration: 0.22,
-                               volume: self?.achieveVol(0.56) ?? 0.028,
-                               waveform: .bell, envelope: .petal, richness: 0.50)
+                self?.playTone(frequency: freq, duration: 0.14,
+                               volume: self?.achieveVol(0.44) ?? 0.022,
+                               waveform: .bell, envelope: .spark, richness: 0.50)
             }
+        }
+        // Resolving celebration chord
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.24) { [weak self] in
+            guard let self else { return }
+            let chordData = self.generateChordWAVData(
+                notes: [(Freq.C3, 0.2), (Freq.C4, 1.0), (Freq.E4, 0.7),
+                         (Freq.G4, 0.55), (Freq.A4, 0.35), (Freq.C5, 0.2)],
+                duration: 0.42, volume: self.achieveVol(0.50),
+                waveform: .bell, envelope: .petal, richness: 0.42)
+            self.playFromData(chordData)
         }
     }
 
     // MARK: - Membership & IAP
 
-    /// Membership page arrival — warm chord
-    /// C4→E4→G4, Glass, Petal, Murmur tier
+    /// Membership page arrival — warm C major chord welcome
     func playMembershipArrival() {
         guard isEnabled, uiSoundsEnabled else { return }
         guard canPlay("memberArrival", cooldown: 0.5) else { return }
-        let chord: [(Float, TimeInterval)] = [(Freq.C4, 0), (Freq.E4, 0.04), (Freq.G4, 0.08)]
-        for (freq, delay) in chord {
-            DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
-                self?.playTone(frequency: freq, duration: 0.25, volume: self?.uiVol(0.28) ?? 0.014,
-                               waveform: .glass, envelope: .petal, richness: 0.20)
-            }
-        }
+        let chordData = generateChordWAVData(
+            notes: [(Freq.C3, 0.15), (Freq.C4, 1.0), (Freq.E4, 0.6), (Freq.G4, 0.4)],
+            duration: 0.32, volume: uiVol(0.28),
+            waveform: .bell, envelope: .petal, richness: 0.32)
+        playFromData(chordData)
     }
 
     /// Tier card selected
@@ -1070,21 +1220,18 @@ final class AudioService {
                  volume: uiVol(0.24), waveform: .glass, envelope: .dew, richness: 0.15)
     }
 
-    /// Story 6.7: Purchase successful — simultaneous golden chord
-    /// C4+E4+G4+C5, Bell, Dew, Celebrate tier
+    /// Story 6.7: Purchase successful — radiant full chord
+    /// C3+C4+E4+G4+C5, Bell, Dew, Celebrate tier
     func playPurchaseSuccess() {
         guard isEnabled, achievementSoundsEnabled else { return }
         guard canPlay("purchaseSuccess", cooldown: 1.0) else { return }
         guard canCelebrate() else { return }
-        // Simultaneous major chord with octave doubling
-        playTone(frequency: Freq.C4, duration: 0.30, volume: 0.015,
-                 waveform: .bell, envelope: .dew, richness: 0.40)
-        playTone(frequency: Freq.E4, duration: 0.30, volume: 0.012,
-                 waveform: .bell, envelope: .dew, richness: 0.40)
-        playTone(frequency: Freq.G4, duration: 0.30, volume: 0.010,
-                 waveform: .bell, envelope: .dew, richness: 0.40)
-        playTone(frequency: Freq.C5, duration: 0.30, volume: 0.005,
-                 waveform: .bell, envelope: .dew, richness: 0.40)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.C3, 0.2), (Freq.C4, 1.0), (Freq.E4, 0.7),
+                     (Freq.G4, 0.55), (Freq.C5, 0.35)],
+            duration: 0.42, volume: achieveVol(0.52),
+            waveform: .bell, envelope: .dew, richness: 0.42)
+        playFromData(chordData)
         enforceSilence(duration: 0.5)
     }
 
@@ -1180,145 +1327,179 @@ final class AudioService {
         guard isEnabled, achievementSoundsEnabled else { return }
         guard canPlay("streakMile", cooldown: 1.0) else { return }
         guard canCelebrate() else { return }
-        // Pulse 1: A3, Wood, Dew
-        playTone(frequency: Freq.A3, duration: 0.10, volume: 0.025,
-                 waveform: .wood, envelope: .dew, richness: 0.25)
-        // Pulse 2: pitch varies by streak length, 150ms gap
-        let pulse2Freq: Float
+        // First chord: warm foundation
+        let chordData1 = generateChordWAVData(
+            notes: [(Freq.A2, 0.15), (Freq.A3, 0.6), (Freq.C4, 0.4), (Freq.E4, 0.3)],
+            duration: 0.20, volume: achieveVol(0.46),
+            waveform: .wood, envelope: .dew, richness: 0.36)
+        playFromData(chordData1)
+        // Second chord: resolution
+        let notes2: [(frequency: Float, amplitude: Float)]
         if days >= 30 {
-            pulse2Freq = Freq.A4   // Octave — mastery
+            notes2 = [(Freq.C3, 0.2), (Freq.C4, 1.0), (Freq.E4, 0.7), (Freq.G4, 0.55), (Freq.C5, 0.35)]
         } else if days >= 14 {
-            pulse2Freq = Freq.E4   // Wider — confidence
+            notes2 = [(Freq.C3, 0.18), (Freq.C4, 1.0), (Freq.E4, 0.7), (Freq.G4, 0.5)]
         } else if days >= 7 {
-            pulse2Freq = Freq.C4   // Rising — growing
+            notes2 = [(Freq.C4, 1.0), (Freq.E4, 0.7), (Freq.G4, 0.5)]
         } else {
-            pulse2Freq = Freq.A3   // Same — simple heartbeat
+            notes2 = [(Freq.C4, 1.0), (Freq.G4, 0.5)]
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) { [weak self] in
-            self?.playTone(frequency: pulse2Freq, duration: 0.10, volume: 0.030,
-                           waveform: .wood, envelope: .dew, richness: 0.35)
+            guard let self else { return }
+            let chordData2 = self.generateChordWAVData(
+                notes: notes2, duration: 0.32, volume: self.achieveVol(0.50),
+                waveform: .bell, envelope: .dew, richness: 0.42)
+            self.playFromData(chordData2)
         }
-        enforceSilence(duration: 0.3)
+        enforceSilence(duration: 0.5)
     }
 
-    /// Story 6.2: Level up — 5-note ascending pentatonic tower
-    /// C4→D4→E4→G4→A4, Bell, Spark (last Dew), Celebrate tier
+    /// Story 6.2: Level up — ascending chord cascade resolving into full voicing
     func playLevelUp(level: Int = 1) {
         guard isEnabled, achievementSoundsEnabled else { return }
         guard canPlay("levelUp", cooldown: 1.0) else { return }
         guard canCelebrate() else { return }
-        let notes: [(freq: Float, delay: TimeInterval, vol: Float, rich: Float, env: Envelope, dur: TimeInterval)] = [
-            (Freq.C4, 0,    0.020, 0.25, .spark, 0.10),
-            (Freq.D4, 0.05, 0.025, 0.28, .spark, 0.10),
-            (Freq.E4, 0.10, 0.030, 0.32, .spark, 0.10),
-            (Freq.G4, 0.15, 0.035, 0.36, .spark, 0.10),
-            (Freq.A4, 0.20, 0.040, 0.40, .dew,   0.30),  // Final note lingers
+        // Ascending approach: each step is a richer chord
+        let steps: [(notes: [(Float, Float)], delay: TimeInterval, dur: TimeInterval)] = [
+            ([(Freq.C4, 1.0)], 0, 0.10),
+            ([(Freq.C4, 0.6), (Freq.E4, 1.0)], 0.06, 0.10),
+            ([(Freq.C4, 0.5), (Freq.E4, 0.8), (Freq.G4, 1.0)], 0.12, 0.12),
         ]
-        for note in notes {
-            DispatchQueue.main.asyncAfter(deadline: .now() + note.delay) { [weak self] in
-                self?.playTone(frequency: note.freq, duration: note.dur,
-                               volume: note.vol, waveform: .bell,
-                               envelope: note.env, richness: note.rich)
+        for step in steps {
+            DispatchQueue.main.asyncAfter(deadline: .now() + step.delay) { [weak self] in
+                guard let self else { return }
+                let data = self.generateChordWAVData(
+                    notes: step.notes.map { (frequency: $0.0, amplitude: $0.1) },
+                    duration: step.dur, volume: self.achieveVol(0.44),
+                    waveform: .bell, envelope: .spark, richness: 0.38)
+                self.playFromData(data)
             }
         }
-        // Resonance bed: quiet sustained C3
-        playTone(frequency: Freq.C3, duration: 0.60, volume: 0.005,
-                 waveform: .glass, envelope: .petal, richness: 0.05)
-        enforceSilence(duration: 0.6)
+        // Final resolution: full voicing
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.20) { [weak self] in
+            guard let self else { return }
+            let chordData = self.generateChordWAVData(
+                notes: [(Freq.C3, 0.2), (Freq.C4, 1.0), (Freq.E4, 0.7),
+                         (Freq.G4, 0.55), (Freq.A4, 0.35), (Freq.C5, 0.2)],
+                duration: 0.42, volume: self.achieveVol(0.50),
+                waveform: .bell, envelope: .dew, richness: 0.42)
+            self.playFromData(chordData)
+        }
+        enforceSilence(duration: 0.7)
     }
 
-    /// Story 6.5: Daily goal complete — sunset chord (simultaneous)
-    /// C4+E4+G4, Wood, Petal, Speak tier
+    /// Story 6.5: Daily goal complete — warm sunset chord
+    /// Full C major voicing, Wood+Bell blend, Petal
     func playDailyGoalComplete() {
         guard isEnabled, achievementSoundsEnabled else { return }
         guard canPlay("dailyGoal", cooldown: 1.0) else { return }
         guard canCelebrate() else { return }
-        // Simultaneous major chord — warm, complete, peaceful
-        playTone(frequency: Freq.C4, duration: 0.25, volume: 0.012,
-                 waveform: .wood, envelope: .petal, richness: 0.20)
-        playTone(frequency: Freq.E4, duration: 0.25, volume: 0.010,
-                 waveform: .wood, envelope: .petal, richness: 0.25)
-        playTone(frequency: Freq.G4, duration: 0.25, volume: 0.008,
-                 waveform: .wood, envelope: .petal, richness: 0.20)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.C3, 0.2), (Freq.C4, 1.0), (Freq.E4, 0.7),
+                     (Freq.G4, 0.55), (Freq.C5, 0.25)],
+            duration: 0.38, volume: achieveVol(0.48),
+            waveform: .bell, envelope: .petal, richness: 0.40)
+        playFromData(chordData)
         enforceSilence(duration: 0.5)
     }
 
-    /// Story 6.4: Achievement notification — descending chime cascade
-    /// G5→E5→C5, Bell, Spark (last Dew), Celebrate tier
+    /// Story 6.4: Achievement notification — shimmering descending chord cascade
     func playAchievementUnlocked(type: String = "") {
         guard isEnabled, achievementSoundsEnabled else { return }
         guard canPlay("achieveUnlock", cooldown: 0.5) else { return }
         guard canCelebrate() else { return }
-        let notes: [(freq: Float, delay: TimeInterval, vol: Float, rich: Float, env: Envelope, dur: TimeInterval)] = [
-            (Freq.G5, 0,    0.042, 0.40, .spark, 0.08),
-            (Freq.E5, 0.04, 0.038, 0.35, .spark, 0.08),
-            (Freq.C5, 0.08, 0.035, 0.30, .dew,   0.12),  // Final note lingers
-        ]
-        for note in notes {
-            DispatchQueue.main.asyncAfter(deadline: .now() + note.delay) { [weak self] in
-                self?.playTone(frequency: note.freq, duration: note.dur,
-                               volume: note.vol, waveform: .bell,
-                               envelope: note.env, richness: note.rich)
-            }
+        // High bell chord
+        let chordData1 = generateChordWAVData(
+            notes: [(Freq.G4, 1.0), (Freq.C5, 0.6)],
+            duration: 0.14, volume: achieveVol(0.44),
+            waveform: .bell, envelope: .spark, richness: 0.38)
+        playFromData(chordData1)
+        // Resolving full chord
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.08) { [weak self] in
+            guard let self else { return }
+            let chordData2 = self.generateChordWAVData(
+                notes: [(Freq.C3, 0.15), (Freq.C4, 1.0), (Freq.E4, 0.7), (Freq.G4, 0.5)],
+                duration: 0.28, volume: self.achieveVol(0.48),
+                waveform: .bell, envelope: .dew, richness: 0.40)
+            self.playFromData(chordData2)
         }
         enforceSilence(duration: 0.4)
     }
 
-    /// Story 6.6: Celebration — rapid ascending bloom (rare)
-    /// C5→E5→G5→C6, Bell, Spark (last Dew), Celebrate tier
+    /// Story 6.6: Celebration — rapid ascending bloom resolving into full chord (rare)
     func playCelebration() {
         guard isEnabled, achievementSoundsEnabled else { return }
         guard canPlay("celebration", cooldown: 0.5) else { return }
         guard canCelebrate() else { return }
-        let notes: [(freq: Float, delay: TimeInterval, vol: Float, rich: Float, env: Envelope, dur: TimeInterval)] = [
-            (Freq.C5, 0,     0.030, 0.35, .spark, 0.06),
-            (Freq.E5, 0.025, 0.035, 0.38, .spark, 0.06),
-            (Freq.G5, 0.05,  0.038, 0.40, .spark, 0.06),
-            (Freq.C6, 0.075, 0.040, 0.42, .dew,   0.10),  // Final note lingers
+        // Quick ascending sparkles
+        let sparkles: [(freq: Float, delay: TimeInterval)] = [
+            (Freq.C5, 0), (Freq.E5, 0.03), (Freq.G5, 0.06),
         ]
-        for note in notes {
-            DispatchQueue.main.asyncAfter(deadline: .now() + note.delay) { [weak self] in
-                self?.playTone(frequency: note.freq, duration: note.dur,
-                               volume: note.vol, waveform: .bell,
-                               envelope: note.env, richness: note.rich)
+        for s in sparkles {
+            DispatchQueue.main.asyncAfter(deadline: .now() + s.delay) { [weak self] in
+                self?.playTone(frequency: s.freq, duration: 0.06,
+                               volume: self?.achieveVol(0.40) ?? 0.020,
+                               waveform: .bell, envelope: .spark, richness: 0.50)
             }
         }
-        enforceSilence(duration: 0.5)
+        // Resolving celebration chord — the payoff
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.10) { [weak self] in
+            guard let self else { return }
+            let chordData = self.generateChordWAVData(
+                notes: [(Freq.C3, 0.15), (Freq.C4, 1.0), (Freq.E4, 0.7),
+                         (Freq.G4, 0.55), (Freq.C5, 0.35), (Freq.E5, 0.15)],
+                duration: 0.42, volume: self.achieveVol(0.52),
+                waveform: .bell, envelope: .dew, richness: 0.42)
+            self.playFromData(chordData)
+        }
+        enforceSilence(duration: 0.6)
     }
 
-    /// Streak bonus — ascending encouragement
-    /// C4→E4→G4→A4, Wood, Dew, Speak tier
+    /// Streak bonus — ascending arpeggio with chord resolution
     func playStreakBonus() {
         guard isEnabled, achievementSoundsEnabled else { return }
         guard canPlay("streakBonus", cooldown: 0.3) else { return }
         let arpeggio: [(freq: Float, delay: TimeInterval)] = [
-            (Freq.C4, 0), (Freq.E4, 0.08), (Freq.G4, 0.16), (Freq.A4, 0.24),
+            (Freq.C4, 0), (Freq.E4, 0.06), (Freq.G4, 0.12),
         ]
         for note in arpeggio {
             DispatchQueue.main.asyncAfter(deadline: .now() + note.delay) { [weak self] in
-                self?.playTone(frequency: note.freq, duration: 0.18,
-                               volume: self?.achieveVol(0.56) ?? 0.028,
+                self?.playTone(frequency: note.freq, duration: 0.12,
+                               volume: self?.achieveVol(0.44) ?? 0.022,
                                waveform: .wood, envelope: .dew, richness: 0.35)
             }
         }
+        // Chord resolution
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.18) { [weak self] in
+            guard let self else { return }
+            let chordData = self.generateChordWAVData(
+                notes: [(Freq.C4, 1.0), (Freq.E4, 0.7), (Freq.G4, 0.5), (Freq.A4, 0.35)],
+                duration: 0.28, volume: self.achieveVol(0.46),
+                waveform: .bell, envelope: .dew, richness: 0.38)
+            self.playFromData(chordData)
+        }
     }
 
-    /// Correct letter placed
-    /// E4→G4, Wood, Spark, Murmur tier
+    /// Correct letter placed — warm octave-doubled confirmation
     func playLetterCorrect() {
         guard isEnabled, gameSoundsEnabled else { return }
         guard canPlay("letterCorrect", cooldown: 0.04) else { return }
-        playTone(frequency: Freq.E4, endFrequency: Freq.G4, duration: 0.08,
-                 volume: gameVol(0.28), waveform: .wood, envelope: .spark, richness: 0.25)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.E3, 0.2), (Freq.E4, 1.0), (Freq.G4, 0.4)],
+            duration: 0.14, volume: gameVol(0.28),
+            waveform: .wood, envelope: .spark, richness: 0.30)
+        playFromData(chordData)
     }
 
-    /// Wrong letter placed — gentle, non-punishing
-    /// A3 (220Hz), Glass, Petal, Murmur tier
+    /// Wrong letter placed — gentle A minor nudge
     func playLetterWrong() {
         guard isEnabled, gameSoundsEnabled else { return }
         guard canPlay("letterWrong", cooldown: 0.1) else { return }
-        playTone(frequency: Freq.A3, endFrequency: Freq.G3, duration: 0.08,
-                 volume: gameVol(0.28), waveform: .glass, envelope: .petal, richness: 0.10)
+        let chordData = generateChordWAVData(
+            notes: [(Freq.A3, 0.7), (Freq.C4, 0.4)],
+            duration: 0.12, volume: gameVol(0.26),
+            waveform: .wood, envelope: .dew, richness: 0.38)
+        playFromData(chordData)
     }
 
     // MARK: - Ambient Soundscapes (Epic 7)
@@ -1641,6 +1822,15 @@ final class AudioService {
     }
 
     // MARK: - WAV Data Generation (Stories 1.2, 1.4, 1.5)
+    //
+    // Architecture: Each note is rendered with MULTIPLE detuned voices (chorus)
+    // to simulate the natural doubling of real acoustic instruments.
+    // Wood = marimba/wooden bar: 3 voices ±6 cents, strong partials at 1:2:3:4:5:6
+    // Bell = steel drum/gamelan: 3 voices ±8 cents, inharmonic partials (2.76, 4.07, 5.40)
+    // Glass = clean crystalline: 2 voices ±4 cents, sparse harmonics
+    //
+    // Per-harmonic natural decay makes attacks bright and sustains warm,
+    // exactly as real percussion behaves. Vibrato adds organic life.
 
     private func generateWAVData(
         frequency: Float,
@@ -1677,7 +1867,6 @@ final class AudioService {
         }
 
         // Proportional scaling: if ADR envelope > 95% of duration, scale to fit
-        // This prevents short sounds from clipping the envelope and producing pops
         let durationMs = Float(duration * 1000.0)
         let totalADRMs = attackMs + decayMs + releaseMs
         if totalADRMs > durationMs * 0.95 {
@@ -1694,8 +1883,6 @@ final class AudioService {
         let decayStart = attackSamples
         let releaseStart = max(numSamples - releaseSamples, decayStart + decaySamples)
 
-        // Compute envelope level at release start for smooth transition
-        // (handles case where decay is truncated by an early release)
         let releaseLevel: Float
         if releaseStart < decayStart + decaySamples {
             let partialDT = Float(releaseStart - decayStart) / Float(decaySamples)
@@ -1704,46 +1891,103 @@ final class AudioService {
             releaseLevel = sustainLevel
         }
 
-        // Harmonic content based on waveform character (Appendix C)
+        // ── Chorus voices ──
+        // Gentle detuning creates natural thickness without audible beating.
+        // Much subtler than a real ensemble — just enough to avoid clinical purity.
+        let voiceDetunings: [Float] // cents
+        switch waveform {
+        case .glass: voiceDetunings = [-1.5, 1.5]      // 2 voices, barely-there shimmer
+        case .wood:  voiceDetunings = [-2.5, 0, 2.5]   // 3 voices, gentle warmth
+        case .bell:  voiceDetunings = [-3, 0, 3]        // 3 voices, subtle shimmer
+        }
+        let voiceCount = voiceDetunings.count
+
+        // ── Vibrato ──
+        // Very gentle — only on sounds long enough to benefit (>0.18s).
+        // Bells get NO vibrato — they ring, they don't waver.
+        let vibratoRate: Float = 4.0  // Hz — slower = more natural
+        let vibratoDepthCents: Float
+        let vibratoOnsetSamples: Int
+        if duration < 0.18 {
+            // Short sounds: no vibrato, it just sounds wobbly
+            vibratoDepthCents = 0
+            vibratoOnsetSamples = numSamples
+        } else {
+            switch waveform {
+            case .glass: vibratoDepthCents = 2;   vibratoOnsetSamples = Int(0.06 * Float(sampleRate))
+            case .wood:  vibratoDepthCents = 3;   vibratoOnsetSamples = Int(0.08 * Float(sampleRate))
+            case .bell:  vibratoDepthCents = 0;   vibratoOnsetSamples = numSamples // bells don't waver
+            }
+        }
+
+        // ── Harmonic content ──
+        // Warmer, rounder spectra. The fundamental dominates with gentle color
+        // from upper partials. Less is more — clarity over complexity.
         let harmonics: [(multiplier: Float, amplitude: Float)]
         switch waveform {
         case .glass:
+            // Crystalline: nearly pure with the faintest octave color
             harmonics = [
                 (1.0, 1.0),
-                (2.0, 0.08 * richness * 3),
-                (3.0, 0.03 * richness * 3),
-                (5.0, 0.005 * richness * 3),
+                (2.0, 0.10 * richness),
+                (3.0, 0.04 * richness),
             ]
         case .wood:
+            // Warm wooden bar: strong fundamental, gentle octave warmth,
+            // mild odd harmonics for body. Sounds like a soft marimba.
             harmonics = [
-                (1.0, 1.0),
-                (2.0, 0.15 * richness * 2.5),
-                (3.0, 0.08 * richness * 2.5),
-                (4.0, 0.04 * richness * 2.5),
-                (5.0, 0.02 * richness * 2.5),
+                (1.0,  1.0),
+                (2.0,  0.40 * richness),     // Warm octave presence
+                (3.0,  0.20 * richness),     // Gentle fifth color
+                (4.0,  0.25 * richness),     // Soft double octave
+                (5.0,  0.08 * richness),     // Faint upper color
             ]
         case .bell:
+            // Gentle chime / kalimba — mild inharmonicity for shimmer
+            // without the harsh metallic clang of aggressive steel drum ratios
             harmonics = [
-                (1.0, 1.0),
-                (2.003, 0.20 * richness * 2.5),
-                (3.007, 0.12 * richness * 2.5),
-                (4.01, 0.06 * richness * 2.5),
-                (5.02, 0.04 * richness * 2.5),
-                (6.03, 0.015 * richness * 2.5),
+                (1.0,   1.0),
+                (2.0,   0.45 * richness),    // Warm octave
+                (2.4,   0.20 * richness),    // Gentle inharmonic shimmer
+                (3.0,   0.15 * richness),    // Soft twelfth
+                (4.2,   0.08 * richness),    // Faint high color
             ]
         }
 
+        // ── Per-harmonic decay rates ──
+        // Gentle natural decay — upper partials fade a bit faster, creating
+        // a warm sustain without harsh transient stacking on chords.
+        let harmonicDecayRate: Float
+        switch waveform {
+        case .glass: harmonicDecayRate = 0.2
+        case .wood:  harmonicDecayRate = 0.4
+        case .bell:  harmonicDecayRate = 0.3
+        }
+
         var samples = [Int16](repeating: 0, count: numSamples)
-        var phases = [Float](repeating: 0, count: harmonics.count)
+
+        // Phase accumulators: one per voice per harmonic
+        var phases = [[Float]](repeating: [Float](repeating: 0, count: harmonics.count),
+                               count: voiceCount)
 
         for i in 0..<numSamples {
             let t = Float(i) / Float(numSamples)
-            let currentFreq = (startFreq + (endFreq - startFreq) * t) * detuneFactor
+            let baseFreq = (startFreq + (endFreq - startFreq) * t) * detuneFactor
 
-            // ADSR envelope with smooth transitions (Story 1.2.2)
+            // Vibrato: subtle pitch modulation with delayed onset
+            let vibratoMod: Float
+            if vibratoDepthCents > 0 && i > vibratoOnsetSamples && numSamples > vibratoOnsetSamples {
+                let vibratoT = Float(i - vibratoOnsetSamples) / Float(numSamples - vibratoOnsetSamples)
+                let rampIn = min(vibratoT * 4.0, 1.0)
+                let vibrato = sin(2.0 * Float.pi * vibratoRate * Float(i) / Float(sampleRate))
+                vibratoMod = pow(2.0, vibrato * vibratoDepthCents * rampIn / 1200.0)
+            } else {
+                vibratoMod = 1.0
+            }
+
+            // ADSR envelope
             let env: Float
             if i < attackSamples {
-                // Attack: 0 → 1.0
                 let aT = Float(i) / Float(attackSamples)
                 switch envelope {
                 case .petal: env = sin(aT * Float.pi * 0.5)
@@ -1751,11 +1995,9 @@ final class AudioService {
                 case .spark: env = aT * aT
                 }
             } else if i < releaseStart {
-                // Decay: 1.0 → sustainLevel (cosine ease for smooth transition)
                 let dT = min(Float(i - decayStart) / Float(decaySamples), 1.0)
                 env = sustainLevel + (1.0 - sustainLevel) * cos(dT * Float.pi * 0.5)
             } else {
-                // Release: releaseLevel → 0
                 let rT = min(Float(i - releaseStart) / Float(releaseSamples), 1.0)
                 switch envelope {
                 case .petal: env = releaseLevel * cos(rT * Float.pi * 0.5)
@@ -1764,35 +2006,111 @@ final class AudioService {
                 }
             }
 
-            // Sum harmonics with frequency ceiling rolloff (Principle 1, Story 1.1.2)
-            // Smooth low-pass: full below 1kHz, linear rolloff to zero at 2kHz
-            // Prevents harsh harmonics in the ear's peak sensitivity range (2–4kHz)
-            var sample: Float = 0
+            // Sum all chorus voices × all harmonics
+            var totalSample: Float = 0
             var totalAmp: Float = 0
-            for h in 0..<harmonics.count {
-                let harmFreq = currentFreq * harmonics[h].multiplier
 
-                let rolloff: Float
-                if harmFreq <= 1000 {
-                    rolloff = 1.0
-                } else if harmFreq < 2000 {
-                    rolloff = (2000 - harmFreq) / 1000.0
-                } else {
-                    rolloff = 0
+            for v in 0..<voiceCount {
+                let voiceDetune = pow(2.0, voiceDetunings[v] / 1200.0)
+                let voiceFreq = baseFreq * vibratoMod * voiceDetune
+
+                for h in 0..<harmonics.count {
+                    let harmFreq = voiceFreq * harmonics[h].multiplier
+
+                    // Harmonic rolloff: full below 2.5kHz, gentle roll to zero at 5kHz
+                    // Warm ceiling — high enough to retain character, low enough to avoid shrillness
+                    let rolloff: Float
+                    if harmFreq <= 2500 {
+                        rolloff = 1.0
+                    } else if harmFreq < 5000 {
+                        rolloff = (5000 - harmFreq) / 2500.0
+                    } else {
+                        rolloff = 0
+                    }
+
+                    // Per-harmonic natural decay: higher overtones fade faster
+                    // Creates bright attack → warm sustain (like real percussion)
+                    let harmonicDecay = exp(-t * (harmonics[h].multiplier - 1.0) * harmonicDecayRate)
+
+                    let amp = harmonics[h].amplitude * rolloff * harmonicDecay
+                    phases[v][h] += 2.0 * Float.pi * harmFreq / Float(sampleRate)
+                    if phases[v][h] > 2.0 * Float.pi { phases[v][h] -= 2.0 * Float.pi }
+                    totalSample += sin(phases[v][h]) * amp
+                    totalAmp += amp
                 }
-
-                let amp = harmonics[h].amplitude * rolloff
-                phases[h] += 2.0 * Float.pi * harmFreq / Float(sampleRate)
-                if phases[h] > 2.0 * Float.pi { phases[h] -= 2.0 * Float.pi }
-                sample += sin(phases[h]) * amp
-                totalAmp += amp
             }
 
-            // Normalize by total harmonic amplitude
-            if totalAmp > 0 { sample /= totalAmp }
+            if totalAmp > 0 { totalSample /= totalAmp }
 
-            let value = sample * volume * env * 32767.0
+            let value = totalSample * volume * env * 32767.0
             samples[i] = Int16(clamping: Int(value))
+        }
+
+        return buildWAVData(samples: samples)
+    }
+
+    // MARK: - Chord WAV Generation
+    //
+    // Mixes multiple simultaneous notes into ONE audio buffer with proper
+    // phase relationships. This creates true chords where harmonics interact
+    // naturally — beating, reinforcement, and the emergent warmth that
+    // separate AVAudioPlayers can never achieve.
+
+    private func generateChordWAVData(
+        notes: [(frequency: Float, amplitude: Float)],
+        duration: TimeInterval,
+        volume: Float,
+        waveform: Waveform,
+        envelope: Envelope = .dew,
+        richness: Float = 0.3
+    ) -> Data {
+        guard !notes.isEmpty else { return Data() }
+
+        // Generate each note's WAV as raw float samples, then mix
+        let numSamples = Int(Double(sampleRate) * duration)
+        guard numSamples > 0 else { return Data() }
+
+        // Accumulate all notes into a float buffer
+        var mixBuffer = [Float](repeating: 0, count: numSamples)
+
+        for note in notes {
+            let noteData = generateWAVData(
+                frequency: note.frequency,
+                endFrequency: nil,
+                duration: duration,
+                volume: 1.0, // normalized — we'll scale after mixing
+                waveform: waveform,
+                envelope: envelope,
+                richness: richness
+            )
+
+            // Extract Int16 samples from WAV data (skip 44-byte header)
+            let headerSize = 44
+            guard noteData.count > headerSize else { continue }
+            let sampleCount = min((noteData.count - headerSize) / 2, numSamples)
+
+            noteData.withUnsafeBytes { rawBuffer in
+                let base = rawBuffer.baseAddress!.advanced(by: headerSize)
+                    .assumingMemoryBound(to: Int16.self)
+                for s in 0..<sampleCount {
+                    mixBuffer[s] += Float(base[s]) / 32767.0 * note.amplitude
+                }
+            }
+        }
+
+        // Find peak for normalization (prevent clipping)
+        var peak: Float = 0
+        for s in 0..<numSamples {
+            let abs = mixBuffer[s] < 0 ? -mixBuffer[s] : mixBuffer[s]
+            if abs > peak { peak = abs }
+        }
+        let normalize = peak > 0 ? 1.0 / peak : 1.0
+
+        // Convert to Int16 with final volume
+        var samples = [Int16](repeating: 0, count: numSamples)
+        for s in 0..<numSamples {
+            let value = mixBuffer[s] * normalize * volume * 32767.0
+            samples[s] = Int16(clamping: Int(value))
         }
 
         return buildWAVData(samples: samples)
