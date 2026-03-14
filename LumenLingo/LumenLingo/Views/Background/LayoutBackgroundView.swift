@@ -91,12 +91,12 @@ struct LayoutBackgroundView: View {
             ZStack {
                 // Layer 0: Base gradient
                 baseGradient
-                    .animation(.easeInOut(duration: 0.5), value: isDark)
+                    .animation(.smooth(duration: 0.65), value: isDark)
 
                 // Light-mode accent overlays (single compositing group)
                 lightAccentOverlays
                     .opacity(isDark ? 0 : 1)
-                    .animation(.easeInOut(duration: 0.5), value: isDark)
+                    .animation(.smooth(duration: 0.65), value: isDark)
                     .allowsHitTesting(false)
 
                 // Layer 1: Breathing orbs (respects user toggle + active state)
@@ -124,12 +124,12 @@ struct LayoutBackgroundView: View {
                 // Light-mode depth overlays (single compositing group)
                 lightDepthOverlays(size: geometry.size)
                     .opacity(isDark ? 0 : 1)
-                    .animation(.easeInOut(duration: 0.5), value: isDark)
+                    .animation(.smooth(duration: 0.65), value: isDark)
                     .allowsHitTesting(false)
 
                 // Layer 7: Top-level fog/overlay (dark only)
                 topOverlay
-                    .animation(.easeInOut(duration: 0.5), value: isDark)
+                    .animation(.smooth(duration: 0.65), value: isDark)
             }
             .ignoresSafeArea()
         }

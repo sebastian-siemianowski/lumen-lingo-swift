@@ -744,7 +744,7 @@ struct GlassPanelWrapper<Content: View>: View {
         }
         .shadow(color: .black.opacity(isDark ? 0.06 : 0.08), radius: 20, y: 8)
         .shadow(color: .black.opacity(0.04), radius: 6, y: 3)
-        .animation(.easeInOut(duration: 0.5), value: isDark)
+        .animation(.smooth(duration: 0.65), value: isDark)
     }
     private var darkDecoration: some View {
         ZStack {
