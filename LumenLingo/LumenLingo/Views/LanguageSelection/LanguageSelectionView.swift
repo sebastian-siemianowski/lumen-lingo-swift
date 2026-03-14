@@ -361,14 +361,16 @@ struct LanguageSelectionView: View {
             // Text label
             VStack(spacing: 6) {
                 (Text(selectedSource.displayName)
-                    .font(.title2.weight(.bold))
+                    .font(.title3.weight(.bold))
                     .foregroundColor(isDark ? .white : Color(red: 45/255, green: 22/255, blue: 62/255)) +
                 Text("  \u{2192}  ")
-                    .font(.title2.weight(.light))
+                    .font(.title3.weight(.light))
                     .foregroundColor(isDark ? .secondary : Color(red: 140/255, green: 96/255, blue: 136/255)) +
                 Text(selectedTarget.name(in: selectedSource))
-                    .font(.title2.weight(.bold))
+                    .font(.title3.weight(.bold))
                     .foregroundColor(isDark ? .white : Color(red: 45/255, green: 22/255, blue: 62/255)))
+                .lineLimit(1)
+                .minimumScaleFactor(0.75)
                 .contentTransition(.interpolate)
 
                 Text("\(availableTargets.count) \(L.languagesAvailable)")
@@ -509,11 +511,12 @@ struct LanguageSelectionView: View {
 
                 // Name
                 Text(lang.displayName)
-                    .font(.caption.weight(isSelected ? .bold : .medium))
+                    .font(.caption2.weight(isSelected ? .bold : .medium))
                     .foregroundStyle(isSelected
                                      ? (isDark ? .white : Color(red: 45/255, green: 22/255, blue: 62/255))
                                      : (isDark ? .secondary : Color(red: 100/255, green: 58/255, blue: 100/255)))
                     .lineLimit(1)
+                    .minimumScaleFactor(0.7)
             }
             .frame(width: 72)
             .padding(.vertical, 8)
@@ -887,22 +890,22 @@ private struct TargetCardView: View {
 
     var body: some View {
         Button(action: onTap) {
-            HStack(spacing: 12) {
+            HStack(spacing: 8) {
                 // Flag with selection ring
-                CountryFlagView(countryCode: lang.countryCode, size: 22)
-                    .frame(width: 38, height: 38)
+                CountryFlagView(countryCode: lang.countryCode, size: 18)
+                    .frame(width: 32, height: 32)
                     .background(flagCircle)
                     .overlay(flagRing)
 
                 // Dual-line label
                 VStack(alignment: .leading, spacing: 2) {
                     Text(lang.name(in: selectedSource))
-                        .font(.subheadline.weight(isSelected ? .semibold : .medium))
+                        .font(.footnote.weight(isSelected ? .semibold : .medium))
                         .foregroundStyle(isSelected
                                          ? (isDark ? .white : .indigo)
                                          : (isDark ? .white.opacity(0.85) : Color(red: 45/255, green: 22/255, blue: 62/255)))
                         .lineLimit(1)
-                        .minimumScaleFactor(0.8)
+                        .minimumScaleFactor(0.7)
 
                     Text(lang.displayName)
                         .font(.caption2.weight(.medium))
@@ -910,6 +913,7 @@ private struct TargetCardView: View {
                                          ? .indigo.opacity(0.7)
                                          : (isDark ? .white.opacity(0.5) : Color(red: 140/255, green: 96/255, blue: 136/255)))
                         .lineLimit(1)
+                        .minimumScaleFactor(0.7)
                 }
 
                 Spacer(minLength: 0)
@@ -917,16 +921,16 @@ private struct TargetCardView: View {
                 // Checkmark
                 if isSelected {
                     Image(systemName: "checkmark.circle.fill")
-                        .font(.system(size: 18))
+                        .font(.system(size: 16))
                         .symbolRenderingMode(.hierarchical)
                         .foregroundStyle(.indigo)
                         .symbolEffect(.bounce, value: isSelected)
                         .transition(.scale.combined(with: .opacity))
                 }
             }
-            .padding(.leading, 10)
-            .padding(.trailing, 14)
-            .padding(.vertical, 12)
+            .padding(.leading, 8)
+            .padding(.trailing, 10)
+            .padding(.vertical, 10)
             .background(cardBackground)
         }
         .buttonStyle(LumenCardPressStyle(accentColor: isSelected ? .indigo : .clear))
