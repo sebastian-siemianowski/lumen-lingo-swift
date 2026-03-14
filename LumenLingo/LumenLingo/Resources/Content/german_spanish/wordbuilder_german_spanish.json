@@ -2098,5 +2098,4905 @@
         "hint": "Malerpinsel"
       }
     ]
+  },
+  {
+    "key": "daily_routine_wb",
+    "name": "Tagesablauf",
+    "description": "Alltägliche Aktivitäten und Routinen auf Spanisch",
+    "iconName": "sunrise",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "despertar",
+        "hint": "Aufwachen"
+      },
+      {
+        "word": "duchar",
+        "hint": "Duschen"
+      },
+      {
+        "word": "vestirse",
+        "hint": "Sich anziehen"
+      },
+      {
+        "word": "desayuno",
+        "hint": "Frühstück"
+      },
+      {
+        "word": "almuerzo",
+        "hint": "Mittagessen"
+      },
+      {
+        "word": "cenar",
+        "hint": "Abendessen"
+      },
+      {
+        "word": "dormir",
+        "hint": "Schlafen"
+      },
+      {
+        "word": "trabajar",
+        "hint": "Arbeiten"
+      },
+      {
+        "word": "cocinar",
+        "hint": "Kochen"
+      },
+      {
+        "word": "limpiar",
+        "hint": "Putzen"
+      },
+      {
+        "word": "pasear",
+        "hint": "Spazieren"
+      },
+      {
+        "word": "lavar",
+        "hint": "Waschen"
+      },
+      {
+        "word": "planchar",
+        "hint": "Bügeln"
+      },
+      {
+        "word": "comprar",
+        "hint": "Einkaufen"
+      },
+      {
+        "word": "descansar",
+        "hint": "Ausruhen"
+      }
+    ]
+  },
+  {
+    "key": "shopping_wb",
+    "name": "Einkaufen",
+    "description": "Einkaufs- und Geschäftsbegriffe auf Spanisch",
+    "iconName": "cart",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "tienda",
+        "hint": "Geschäft"
+      },
+      {
+        "word": "precio",
+        "hint": "Preis"
+      },
+      {
+        "word": "oferta",
+        "hint": "Angebot"
+      },
+      {
+        "word": "caja",
+        "hint": "Kasse"
+      },
+      {
+        "word": "bolsa",
+        "hint": "Tüte"
+      },
+      {
+        "word": "recibo",
+        "hint": "Quittung"
+      },
+      {
+        "word": "moneda",
+        "hint": "Münze"
+      },
+      {
+        "word": "billete",
+        "hint": "Geldschein"
+      },
+      {
+        "word": "cambio",
+        "hint": "Wechselgeld"
+      },
+      {
+        "word": "tarjeta",
+        "hint": "Karte"
+      },
+      {
+        "word": "mercado",
+        "hint": "Markt"
+      },
+      {
+        "word": "rebaja",
+        "hint": "Rabatt"
+      },
+      {
+        "word": "cliente",
+        "hint": "Kunde"
+      },
+      {
+        "word": "estante",
+        "hint": "Regal"
+      },
+      {
+        "word": "carrito",
+        "hint": "Einkaufswagen"
+      }
+    ]
+  },
+  {
+    "key": "restaurant_wb",
+    "name": "Restaurant",
+    "description": "Begriffe rund um das Essen im Restaurant",
+    "iconName": "fork.knife",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "camarero",
+        "hint": "Kellner"
+      },
+      {
+        "word": "cuenta",
+        "hint": "Rechnung"
+      },
+      {
+        "word": "propina",
+        "hint": "Trinkgeld"
+      },
+      {
+        "word": "reservar",
+        "hint": "Reservieren"
+      },
+      {
+        "word": "carta",
+        "hint": "Speisekarte"
+      },
+      {
+        "word": "plato",
+        "hint": "Teller / Gericht"
+      },
+      {
+        "word": "postre",
+        "hint": "Nachtisch"
+      },
+      {
+        "word": "entrada",
+        "hint": "Vorspeise"
+      },
+      {
+        "word": "bebida",
+        "hint": "Getränk"
+      },
+      {
+        "word": "pedido",
+        "hint": "Bestellung"
+      },
+      {
+        "word": "tenedor",
+        "hint": "Gabel"
+      },
+      {
+        "word": "cuchara",
+        "hint": "Löffel"
+      },
+      {
+        "word": "servilleta",
+        "hint": "Serviette"
+      },
+      {
+        "word": "mantel",
+        "hint": "Tischdecke"
+      },
+      {
+        "word": "terraza",
+        "hint": "Terrasse"
+      }
+    ]
+  },
+  {
+    "key": "garden_wb",
+    "name": "Garten",
+    "description": "Garten- und Pflanzenbegriffe auf Spanisch",
+    "iconName": "leaf.circle",
+    "color": "#16a34a",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "jardín",
+        "hint": "Garten"
+      },
+      {
+        "word": "flor",
+        "hint": "Blume"
+      },
+      {
+        "word": "árbol",
+        "hint": "Baum"
+      },
+      {
+        "word": "hierba",
+        "hint": "Gras"
+      },
+      {
+        "word": "semilla",
+        "hint": "Samen"
+      },
+      {
+        "word": "regar",
+        "hint": "Gießen"
+      },
+      {
+        "word": "tierra",
+        "hint": "Erde"
+      },
+      {
+        "word": "maceta",
+        "hint": "Blumentopf"
+      },
+      {
+        "word": "raíz",
+        "hint": "Wurzel"
+      },
+      {
+        "word": "hoja",
+        "hint": "Blatt"
+      },
+      {
+        "word": "tallo",
+        "hint": "Stängel"
+      },
+      {
+        "word": "abono",
+        "hint": "Dünger"
+      },
+      {
+        "word": "césped",
+        "hint": "Rasen"
+      },
+      {
+        "word": "valla",
+        "hint": "Zaun"
+      },
+      {
+        "word": "sombra",
+        "hint": "Schatten"
+      }
+    ]
+  },
+  {
+    "key": "bathroom_wb",
+    "name": "Badezimmer",
+    "description": "Badezimmer und Hygieneartikel auf Spanisch",
+    "iconName": "drop",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "ducha",
+        "hint": "Dusche"
+      },
+      {
+        "word": "bañera",
+        "hint": "Badewanne"
+      },
+      {
+        "word": "espejo",
+        "hint": "Spiegel"
+      },
+      {
+        "word": "toalla",
+        "hint": "Handtuch"
+      },
+      {
+        "word": "jabón",
+        "hint": "Seife"
+      },
+      {
+        "word": "grifo",
+        "hint": "Wasserhahn"
+      },
+      {
+        "word": "lavabo",
+        "hint": "Waschbecken"
+      },
+      {
+        "word": "champú",
+        "hint": "Shampoo"
+      },
+      {
+        "word": "cepillo",
+        "hint": "Bürste"
+      },
+      {
+        "word": "pasta",
+        "hint": "Zahnpasta"
+      },
+      {
+        "word": "secador",
+        "hint": "Föhn"
+      },
+      {
+        "word": "alfombra",
+        "hint": "Badvorleger"
+      },
+      {
+        "word": "inodoro",
+        "hint": "Toilette"
+      },
+      {
+        "word": "azulejo",
+        "hint": "Kachel / Fliese"
+      },
+      {
+        "word": "cortina",
+        "hint": "Duschvorhang"
+      }
+    ]
+  },
+  {
+    "key": "cinema_wb",
+    "name": "Kino",
+    "description": "Film- und Kinobegriffe auf Spanisch",
+    "iconName": "film",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "película",
+        "hint": "Film"
+      },
+      {
+        "word": "pantalla",
+        "hint": "Leinwand"
+      },
+      {
+        "word": "butaca",
+        "hint": "Kinosessel"
+      },
+      {
+        "word": "estreno",
+        "hint": "Premiere"
+      },
+      {
+        "word": "taquilla",
+        "hint": "Kinokasse"
+      },
+      {
+        "word": "actriz",
+        "hint": "Schauspielerin"
+      },
+      {
+        "word": "director",
+        "hint": "Regisseur"
+      },
+      {
+        "word": "escena",
+        "hint": "Szene"
+      },
+      {
+        "word": "guión",
+        "hint": "Drehbuch"
+      },
+      {
+        "word": "rodaje",
+        "hint": "Dreharbeiten"
+      },
+      {
+        "word": "cámara",
+        "hint": "Kamera"
+      },
+      {
+        "word": "cartel",
+        "hint": "Plakat"
+      },
+      {
+        "word": "género",
+        "hint": "Genre"
+      },
+      {
+        "word": "comedia",
+        "hint": "Komödie"
+      },
+      {
+        "word": "suspense",
+        "hint": "Spannung / Thriller"
+      }
+    ]
+  },
+  {
+    "key": "art_wb",
+    "name": "Kunst",
+    "description": "Kunst- und Kreativbegriffe auf Spanisch",
+    "iconName": "paintbrush",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pintura",
+        "hint": "Malerei / Gemälde"
+      },
+      {
+        "word": "escultura",
+        "hint": "Skulptur"
+      },
+      {
+        "word": "dibujo",
+        "hint": "Zeichnung"
+      },
+      {
+        "word": "lienzo",
+        "hint": "Leinwand"
+      },
+      {
+        "word": "pincel",
+        "hint": "Pinsel"
+      },
+      {
+        "word": "galería",
+        "hint": "Galerie"
+      },
+      {
+        "word": "museo",
+        "hint": "Museum"
+      },
+      {
+        "word": "retrato",
+        "hint": "Porträt"
+      },
+      {
+        "word": "paisaje",
+        "hint": "Landschaft"
+      },
+      {
+        "word": "paleta",
+        "hint": "Palette"
+      },
+      {
+        "word": "acuarela",
+        "hint": "Aquarell"
+      },
+      {
+        "word": "grabado",
+        "hint": "Radierung / Grafik"
+      },
+      {
+        "word": "boceto",
+        "hint": "Skizze"
+      },
+      {
+        "word": "taller",
+        "hint": "Atelier / Werkstatt"
+      },
+      {
+        "word": "mural",
+        "hint": "Wandgemälde"
+      }
+    ]
+  },
+  {
+    "key": "dance_wb",
+    "name": "Tanz",
+    "description": "Tanz- und Bewegungsbegriffe auf Spanisch",
+    "iconName": "figure.dance",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "bailar",
+        "hint": "Tanzen"
+      },
+      {
+        "word": "ritmo",
+        "hint": "Rhythmus"
+      },
+      {
+        "word": "pareja",
+        "hint": "Paar / Partner"
+      },
+      {
+        "word": "ensayo",
+        "hint": "Probe"
+      },
+      {
+        "word": "coreografía",
+        "hint": "Choreografie"
+      },
+      {
+        "word": "pista",
+        "hint": "Tanzfläche"
+      },
+      {
+        "word": "salsa",
+        "hint": "Salsa"
+      },
+      {
+        "word": "tango",
+        "hint": "Tango"
+      },
+      {
+        "word": "flamenco",
+        "hint": "Flamenco"
+      },
+      {
+        "word": "vals",
+        "hint": "Walzer"
+      },
+      {
+        "word": "paso",
+        "hint": "Schritt"
+      },
+      {
+        "word": "giro",
+        "hint": "Drehung"
+      },
+      {
+        "word": "compás",
+        "hint": "Takt"
+      },
+      {
+        "word": "escenario",
+        "hint": "Bühne"
+      },
+      {
+        "word": "aplauso",
+        "hint": "Applaus"
+      }
+    ]
+  },
+  {
+    "key": "photography_wb",
+    "name": "Fotografie",
+    "description": "Fotografie- und Bildbegriffe auf Spanisch",
+    "iconName": "camera",
+    "color": "#78716c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "fotografía",
+        "hint": "Fotografie / Foto"
+      },
+      {
+        "word": "objetivo",
+        "hint": "Objektiv"
+      },
+      {
+        "word": "enfoque",
+        "hint": "Fokus / Schärfe"
+      },
+      {
+        "word": "disparo",
+        "hint": "Auslöser / Aufnahme"
+      },
+      {
+        "word": "retoque",
+        "hint": "Retusche"
+      },
+      {
+        "word": "trípode",
+        "hint": "Stativ"
+      },
+      {
+        "word": "exposición",
+        "hint": "Belichtung"
+      },
+      {
+        "word": "paisaje",
+        "hint": "Landschaftsfoto"
+      },
+      {
+        "word": "ángulo",
+        "hint": "Winkel"
+      },
+      {
+        "word": "flash",
+        "hint": "Blitz"
+      },
+      {
+        "word": "fondo",
+        "hint": "Hintergrund"
+      },
+      {
+        "word": "nitidez",
+        "hint": "Schärfe"
+      },
+      {
+        "word": "sombra",
+        "hint": "Schatten"
+      },
+      {
+        "word": "contraste",
+        "hint": "Kontrast"
+      },
+      {
+        "word": "álbum",
+        "hint": "Album"
+      }
+    ]
+  },
+  {
+    "key": "crafts_wb",
+    "name": "Handwerk",
+    "description": "Handarbeits- und Bastelbegriffe auf Spanisch",
+    "iconName": "scissors",
+    "color": "#d97706",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "tijeras",
+        "hint": "Schere"
+      },
+      {
+        "word": "aguja",
+        "hint": "Nadel"
+      },
+      {
+        "word": "hilo",
+        "hint": "Faden"
+      },
+      {
+        "word": "pegamento",
+        "hint": "Kleber"
+      },
+      {
+        "word": "tela",
+        "hint": "Stoff"
+      },
+      {
+        "word": "patrón",
+        "hint": "Muster / Schnittmuster"
+      },
+      {
+        "word": "bordado",
+        "hint": "Stickerei"
+      },
+      {
+        "word": "cerámica",
+        "hint": "Keramik"
+      },
+      {
+        "word": "arcilla",
+        "hint": "Ton / Lehm"
+      },
+      {
+        "word": "molde",
+        "hint": "Form"
+      },
+      {
+        "word": "tejer",
+        "hint": "Stricken"
+      },
+      {
+        "word": "ganchillo",
+        "hint": "Häkeln"
+      },
+      {
+        "word": "madera",
+        "hint": "Holz"
+      },
+      {
+        "word": "pintura",
+        "hint": "Farbe / Lack"
+      },
+      {
+        "word": "barniz",
+        "hint": "Lack / Firnis"
+      }
+    ]
+  },
+  {
+    "key": "geography_wb",
+    "name": "Geografie",
+    "description": "Geografie- und Länderbegriffe auf Spanisch",
+    "iconName": "globe.americas",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "continente",
+        "hint": "Kontinent"
+      },
+      {
+        "word": "frontera",
+        "hint": "Grenze"
+      },
+      {
+        "word": "capital",
+        "hint": "Hauptstadt"
+      },
+      {
+        "word": "desierto",
+        "hint": "Wüste"
+      },
+      {
+        "word": "volcán",
+        "hint": "Vulkan"
+      },
+      {
+        "word": "llanura",
+        "hint": "Ebene"
+      },
+      {
+        "word": "península",
+        "hint": "Halbinsel"
+      },
+      {
+        "word": "cordillera",
+        "hint": "Gebirgskette"
+      },
+      {
+        "word": "hemisferio",
+        "hint": "Hemisphäre"
+      },
+      {
+        "word": "ecuador",
+        "hint": "Äquator"
+      },
+      {
+        "word": "archipiélago",
+        "hint": "Archipel"
+      },
+      {
+        "word": "meseta",
+        "hint": "Hochebene"
+      },
+      {
+        "word": "glaciar",
+        "hint": "Gletscher"
+      },
+      {
+        "word": "selva",
+        "hint": "Dschungel"
+      },
+      {
+        "word": "sabana",
+        "hint": "Savanne"
+      }
+    ]
+  },
+  {
+    "key": "astronomy_wb",
+    "name": "Astronomie",
+    "description": "Weltraum- und Astronomiebegriffe auf Spanisch",
+    "iconName": "star",
+    "color": "#1e3a5f",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "estrella",
+        "hint": "Stern"
+      },
+      {
+        "word": "planeta",
+        "hint": "Planet"
+      },
+      {
+        "word": "galaxia",
+        "hint": "Galaxie"
+      },
+      {
+        "word": "cometa",
+        "hint": "Komet"
+      },
+      {
+        "word": "eclipse",
+        "hint": "Finsternis"
+      },
+      {
+        "word": "órbita",
+        "hint": "Umlaufbahn"
+      },
+      {
+        "word": "asteroide",
+        "hint": "Asteroid"
+      },
+      {
+        "word": "satélite",
+        "hint": "Satellit"
+      },
+      {
+        "word": "nebulosa",
+        "hint": "Nebel"
+      },
+      {
+        "word": "constelación",
+        "hint": "Sternbild"
+      },
+      {
+        "word": "gravedad",
+        "hint": "Schwerkraft"
+      },
+      {
+        "word": "telescopio",
+        "hint": "Teleskop"
+      },
+      {
+        "word": "cohete",
+        "hint": "Rakete"
+      },
+      {
+        "word": "universo",
+        "hint": "Universum"
+      },
+      {
+        "word": "meteorito",
+        "hint": "Meteorit"
+      }
+    ]
+  },
+  {
+    "key": "ocean_wb",
+    "name": "Ozean",
+    "description": "Meeres- und Ozeanbegriffe auf Spanisch",
+    "iconName": "water.waves",
+    "color": "#0077b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "océano",
+        "hint": "Ozean"
+      },
+      {
+        "word": "marea",
+        "hint": "Gezeiten"
+      },
+      {
+        "word": "ola",
+        "hint": "Welle"
+      },
+      {
+        "word": "corriente",
+        "hint": "Strömung"
+      },
+      {
+        "word": "arrecife",
+        "hint": "Riff"
+      },
+      {
+        "word": "profundidad",
+        "hint": "Tiefe"
+      },
+      {
+        "word": "costa",
+        "hint": "Küste"
+      },
+      {
+        "word": "bahía",
+        "hint": "Bucht"
+      },
+      {
+        "word": "faro",
+        "hint": "Leuchtturm"
+      },
+      {
+        "word": "ancla",
+        "hint": "Anker"
+      },
+      {
+        "word": "barco",
+        "hint": "Schiff"
+      },
+      {
+        "word": "puerto",
+        "hint": "Hafen"
+      },
+      {
+        "word": "ballena",
+        "hint": "Wal"
+      },
+      {
+        "word": "tiburón",
+        "hint": "Hai"
+      },
+      {
+        "word": "delfín",
+        "hint": "Delfin"
+      }
+    ]
+  },
+  {
+    "key": "mountains_wb",
+    "name": "Berge",
+    "description": "Berg- und Wanderbegriffe auf Spanisch",
+    "iconName": "mountain.2",
+    "color": "#6b7280",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "montaña",
+        "hint": "Berg"
+      },
+      {
+        "word": "cumbre",
+        "hint": "Gipfel"
+      },
+      {
+        "word": "sendero",
+        "hint": "Wanderweg"
+      },
+      {
+        "word": "refugio",
+        "hint": "Berghütte"
+      },
+      {
+        "word": "mochila",
+        "hint": "Rucksack"
+      },
+      {
+        "word": "escalada",
+        "hint": "Klettern"
+      },
+      {
+        "word": "acantilado",
+        "hint": "Klippe"
+      },
+      {
+        "word": "cascada",
+        "hint": "Wasserfall"
+      },
+      {
+        "word": "valle",
+        "hint": "Tal"
+      },
+      {
+        "word": "ladera",
+        "hint": "Hang"
+      },
+      {
+        "word": "nieve",
+        "hint": "Schnee"
+      },
+      {
+        "word": "brújula",
+        "hint": "Kompass"
+      },
+      {
+        "word": "altitud",
+        "hint": "Höhe"
+      },
+      {
+        "word": "bosque",
+        "hint": "Wald"
+      },
+      {
+        "word": "riachuelo",
+        "hint": "Bach"
+      }
+    ]
+  },
+  {
+    "key": "camping_wb",
+    "name": "Camping",
+    "description": "Camping- und Outdoor-Begriffe auf Spanisch",
+    "iconName": "tent",
+    "color": "#84cc16",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "tienda",
+        "hint": "Zelt"
+      },
+      {
+        "word": "hoguera",
+        "hint": "Lagerfeuer"
+      },
+      {
+        "word": "linterna",
+        "hint": "Taschenlampe"
+      },
+      {
+        "word": "cantimplora",
+        "hint": "Feldflasche"
+      },
+      {
+        "word": "hamaca",
+        "hint": "Hängematte"
+      },
+      {
+        "word": "leña",
+        "hint": "Brennholz"
+      },
+      {
+        "word": "navaja",
+        "hint": "Taschenmesser"
+      },
+      {
+        "word": "cuerda",
+        "hint": "Seil"
+      },
+      {
+        "word": "mapa",
+        "hint": "Karte / Landkarte"
+      },
+      {
+        "word": "saco",
+        "hint": "Schlafsack"
+      },
+      {
+        "word": "fogata",
+        "hint": "Feuer"
+      },
+      {
+        "word": "colchoneta",
+        "hint": "Isomatte"
+      },
+      {
+        "word": "insectos",
+        "hint": "Insekten"
+      },
+      {
+        "word": "estrella",
+        "hint": "Stern (am Himmel)"
+      },
+      {
+        "word": "amanecer",
+        "hint": "Sonnenaufgang"
+      }
+    ]
+  },
+  {
+    "key": "law_wb",
+    "name": "Recht",
+    "description": "Rechts- und Justizbegriffe auf Spanisch",
+    "iconName": "scale.3d",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "abogado",
+        "hint": "Anwalt"
+      },
+      {
+        "word": "juicio",
+        "hint": "Gerichtsverfahren"
+      },
+      {
+        "word": "tribunal",
+        "hint": "Gericht"
+      },
+      {
+        "word": "sentencia",
+        "hint": "Urteil"
+      },
+      {
+        "word": "testigo",
+        "hint": "Zeuge"
+      },
+      {
+        "word": "demanda",
+        "hint": "Klage"
+      },
+      {
+        "word": "prueba",
+        "hint": "Beweis"
+      },
+      {
+        "word": "culpable",
+        "hint": "Schuldig"
+      },
+      {
+        "word": "inocente",
+        "hint": "Unschuldig"
+      },
+      {
+        "word": "condena",
+        "hint": "Verurteilung"
+      },
+      {
+        "word": "contrato",
+        "hint": "Vertrag"
+      },
+      {
+        "word": "derecho",
+        "hint": "Recht / Gesetz"
+      },
+      {
+        "word": "delito",
+        "hint": "Vergehen / Straftat"
+      },
+      {
+        "word": "multa",
+        "hint": "Geldstrafe"
+      },
+      {
+        "word": "recurso",
+        "hint": "Berufung"
+      }
+    ]
+  },
+  {
+    "key": "politics_wb",
+    "name": "Politik",
+    "description": "Politik- und Verwaltungsbegriffe auf Spanisch",
+    "iconName": "building.columns",
+    "color": "#1e40af",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "gobierno",
+        "hint": "Regierung"
+      },
+      {
+        "word": "elección",
+        "hint": "Wahl"
+      },
+      {
+        "word": "partido",
+        "hint": "Partei"
+      },
+      {
+        "word": "parlamento",
+        "hint": "Parlament"
+      },
+      {
+        "word": "democracia",
+        "hint": "Demokratie"
+      },
+      {
+        "word": "candidato",
+        "hint": "Kandidat"
+      },
+      {
+        "word": "votación",
+        "hint": "Abstimmung"
+      },
+      {
+        "word": "constitución",
+        "hint": "Verfassung"
+      },
+      {
+        "word": "ministro",
+        "hint": "Minister"
+      },
+      {
+        "word": "senado",
+        "hint": "Senat"
+      },
+      {
+        "word": "campaña",
+        "hint": "Wahlkampf"
+      },
+      {
+        "word": "debate",
+        "hint": "Debatte"
+      },
+      {
+        "word": "reforma",
+        "hint": "Reform"
+      },
+      {
+        "word": "ciudadano",
+        "hint": "Bürger"
+      },
+      {
+        "word": "libertad",
+        "hint": "Freiheit"
+      }
+    ]
+  },
+  {
+    "key": "economy_wb",
+    "name": "Wirtschaft",
+    "description": "Wirtschafts- und Finanzbegriffe auf Spanisch",
+    "iconName": "chart.line.uptrend.xyaxis",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "mercado",
+        "hint": "Markt"
+      },
+      {
+        "word": "inversión",
+        "hint": "Investition"
+      },
+      {
+        "word": "inflación",
+        "hint": "Inflation"
+      },
+      {
+        "word": "comercio",
+        "hint": "Handel"
+      },
+      {
+        "word": "empresa",
+        "hint": "Unternehmen"
+      },
+      {
+        "word": "ganancia",
+        "hint": "Gewinn"
+      },
+      {
+        "word": "deuda",
+        "hint": "Schulden"
+      },
+      {
+        "word": "impuesto",
+        "hint": "Steuer"
+      },
+      {
+        "word": "exportar",
+        "hint": "Exportieren"
+      },
+      {
+        "word": "importar",
+        "hint": "Importieren"
+      },
+      {
+        "word": "moneda",
+        "hint": "Währung"
+      },
+      {
+        "word": "presupuesto",
+        "hint": "Haushalt / Budget"
+      },
+      {
+        "word": "empleo",
+        "hint": "Beschäftigung"
+      },
+      {
+        "word": "consumo",
+        "hint": "Konsum"
+      },
+      {
+        "word": "crecimiento",
+        "hint": "Wachstum"
+      }
+    ]
+  },
+  {
+    "key": "banking_wb",
+    "name": "Bankwesen",
+    "description": "Bank- und Geldbegriffe auf Spanisch",
+    "iconName": "banknote",
+    "color": "#047857",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "cuenta",
+        "hint": "Konto"
+      },
+      {
+        "word": "préstamo",
+        "hint": "Kredit / Darlehen"
+      },
+      {
+        "word": "interés",
+        "hint": "Zinsen"
+      },
+      {
+        "word": "hipoteca",
+        "hint": "Hypothek"
+      },
+      {
+        "word": "ahorro",
+        "hint": "Ersparnis"
+      },
+      {
+        "word": "cajero",
+        "hint": "Geldautomat"
+      },
+      {
+        "word": "depósito",
+        "hint": "Einzahlung"
+      },
+      {
+        "word": "retiro",
+        "hint": "Abhebung"
+      },
+      {
+        "word": "sucursal",
+        "hint": "Filiale"
+      },
+      {
+        "word": "cheque",
+        "hint": "Scheck"
+      },
+      {
+        "word": "saldo",
+        "hint": "Kontostand"
+      },
+      {
+        "word": "comisión",
+        "hint": "Gebühr"
+      },
+      {
+        "word": "divisa",
+        "hint": "Devisen"
+      },
+      {
+        "word": "plazo",
+        "hint": "Laufzeit / Frist"
+      },
+      {
+        "word": "transacción",
+        "hint": "Transaktion"
+      }
+    ]
+  },
+  {
+    "key": "insurance_wb",
+    "name": "Versicherung",
+    "description": "Versicherungsbegriffe auf Spanisch",
+    "iconName": "shield",
+    "color": "#4338ca",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "seguro",
+        "hint": "Versicherung"
+      },
+      {
+        "word": "póliza",
+        "hint": "Versicherungspolice"
+      },
+      {
+        "word": "cobertura",
+        "hint": "Deckung"
+      },
+      {
+        "word": "siniestro",
+        "hint": "Schadensfall"
+      },
+      {
+        "word": "prima",
+        "hint": "Prämie"
+      },
+      {
+        "word": "beneficiario",
+        "hint": "Begünstigter"
+      },
+      {
+        "word": "riesgo",
+        "hint": "Risiko"
+      },
+      {
+        "word": "vigencia",
+        "hint": "Gültigkeit"
+      },
+      {
+        "word": "reclamación",
+        "hint": "Anspruch / Reklamation"
+      },
+      {
+        "word": "renovar",
+        "hint": "Verlängern"
+      },
+      {
+        "word": "exclusión",
+        "hint": "Ausschluss"
+      },
+      {
+        "word": "franquicia",
+        "hint": "Selbstbeteiligung"
+      },
+      {
+        "word": "asegurado",
+        "hint": "Versicherter"
+      },
+      {
+        "word": "indemnización",
+        "hint": "Entschädigung"
+      },
+      {
+        "word": "accidente",
+        "hint": "Unfall"
+      }
+    ]
+  },
+  {
+    "key": "cooking_wb",
+    "name": "Kochen",
+    "description": "Koch- und Küchenbegriffe auf Spanisch",
+    "iconName": "flame",
+    "color": "#ea580c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "hervir",
+        "hint": "Kochen / Sieden"
+      },
+      {
+        "word": "freír",
+        "hint": "Braten / Frittieren"
+      },
+      {
+        "word": "hornear",
+        "hint": "Backen (im Ofen)"
+      },
+      {
+        "word": "asar",
+        "hint": "Grillen / Braten"
+      },
+      {
+        "word": "cortar",
+        "hint": "Schneiden"
+      },
+      {
+        "word": "mezclar",
+        "hint": "Mischen"
+      },
+      {
+        "word": "pelar",
+        "hint": "Schälen"
+      },
+      {
+        "word": "receta",
+        "hint": "Rezept"
+      },
+      {
+        "word": "sartén",
+        "hint": "Pfanne"
+      },
+      {
+        "word": "ingrediente",
+        "hint": "Zutat"
+      },
+      {
+        "word": "olla",
+        "hint": "Topf"
+      },
+      {
+        "word": "batir",
+        "hint": "Rühren / Schlagen"
+      },
+      {
+        "word": "rallar",
+        "hint": "Reiben"
+      },
+      {
+        "word": "picar",
+        "hint": "Hacken / Würfeln"
+      },
+      {
+        "word": "sazonar",
+        "hint": "Würzen"
+      }
+    ]
+  },
+  {
+    "key": "baking_wb",
+    "name": "Backen",
+    "description": "Back- und Konditorei-Begriffe auf Spanisch",
+    "iconName": "birthday.cake",
+    "color": "#c2410c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "harina",
+        "hint": "Mehl"
+      },
+      {
+        "word": "levadura",
+        "hint": "Hefe"
+      },
+      {
+        "word": "hornear",
+        "hint": "Backen"
+      },
+      {
+        "word": "galleta",
+        "hint": "Keks"
+      },
+      {
+        "word": "bizcocho",
+        "hint": "Biskuit"
+      },
+      {
+        "word": "merengue",
+        "hint": "Baiser"
+      },
+      {
+        "word": "glaseado",
+        "hint": "Glasur"
+      },
+      {
+        "word": "relleno",
+        "hint": "Füllung"
+      },
+      {
+        "word": "molde",
+        "hint": "Backform"
+      },
+      {
+        "word": "hojaldre",
+        "hint": "Blätterteig"
+      },
+      {
+        "word": "crema",
+        "hint": "Creme / Sahne"
+      },
+      {
+        "word": "rodillo",
+        "hint": "Nudelholz"
+      },
+      {
+        "word": "bandeja",
+        "hint": "Backblech"
+      },
+      {
+        "word": "amasar",
+        "hint": "Kneten"
+      },
+      {
+        "word": "espolvorear",
+        "hint": "Bestäuben / Bestreuen"
+      }
+    ]
+  },
+  {
+    "key": "spices_wb",
+    "name": "Gewürze",
+    "description": "Gewürze und Kräuter auf Spanisch",
+    "iconName": "leaf.arrow.triangle.circlepath",
+    "color": "#b45309",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pimienta",
+        "hint": "Pfeffer"
+      },
+      {
+        "word": "canela",
+        "hint": "Zimt"
+      },
+      {
+        "word": "comino",
+        "hint": "Kreuzkümmel"
+      },
+      {
+        "word": "jengibre",
+        "hint": "Ingwer"
+      },
+      {
+        "word": "cilantro",
+        "hint": "Koriander"
+      },
+      {
+        "word": "perejil",
+        "hint": "Petersilie"
+      },
+      {
+        "word": "orégano",
+        "hint": "Oregano"
+      },
+      {
+        "word": "albahaca",
+        "hint": "Basilikum"
+      },
+      {
+        "word": "romero",
+        "hint": "Rosmarin"
+      },
+      {
+        "word": "tomillo",
+        "hint": "Thymian"
+      },
+      {
+        "word": "azafrán",
+        "hint": "Safran"
+      },
+      {
+        "word": "nuez",
+        "hint": "Muskatnuss"
+      },
+      {
+        "word": "clavo",
+        "hint": "Nelke"
+      },
+      {
+        "word": "pimentón",
+        "hint": "Paprikapulver"
+      },
+      {
+        "word": "laurel",
+        "hint": "Lorbeer"
+      }
+    ]
+  },
+  {
+    "key": "dairy_wb",
+    "name": "Milchprodukte",
+    "description": "Milch- und Molkereiprodukte auf Spanisch",
+    "iconName": "cup.and.saucer",
+    "color": "#fbbf24",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "leche",
+        "hint": "Milch"
+      },
+      {
+        "word": "queso",
+        "hint": "Käse"
+      },
+      {
+        "word": "yogur",
+        "hint": "Joghurt"
+      },
+      {
+        "word": "mantequilla",
+        "hint": "Butter"
+      },
+      {
+        "word": "nata",
+        "hint": "Sahne"
+      },
+      {
+        "word": "helado",
+        "hint": "Eiscreme"
+      },
+      {
+        "word": "cuajada",
+        "hint": "Quark"
+      },
+      {
+        "word": "requesón",
+        "hint": "Hüttenkäse"
+      },
+      {
+        "word": "batido",
+        "hint": "Milchshake"
+      },
+      {
+        "word": "flan",
+        "hint": "Karamellpudding"
+      },
+      {
+        "word": "suero",
+        "hint": "Molke"
+      },
+      {
+        "word": "fundido",
+        "hint": "Geschmolzen"
+      },
+      {
+        "word": "rallado",
+        "hint": "Gerieben"
+      },
+      {
+        "word": "cremoso",
+        "hint": "Cremig"
+      },
+      {
+        "word": "curado",
+        "hint": "Gereift"
+      }
+    ]
+  },
+  {
+    "key": "meat_wb",
+    "name": "Fleisch",
+    "description": "Fleisch- und Wurstwaren auf Spanisch",
+    "iconName": "fork.knife.circle",
+    "color": "#dc2626",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "carne",
+        "hint": "Fleisch"
+      },
+      {
+        "word": "pollo",
+        "hint": "Hähnchen"
+      },
+      {
+        "word": "cerdo",
+        "hint": "Schwein"
+      },
+      {
+        "word": "ternera",
+        "hint": "Kalbfleisch"
+      },
+      {
+        "word": "cordero",
+        "hint": "Lamm"
+      },
+      {
+        "word": "jamón",
+        "hint": "Schinken"
+      },
+      {
+        "word": "chorizo",
+        "hint": "Chorizo-Wurst"
+      },
+      {
+        "word": "salchicha",
+        "hint": "Wurst"
+      },
+      {
+        "word": "tocino",
+        "hint": "Speck"
+      },
+      {
+        "word": "costilla",
+        "hint": "Rippe"
+      },
+      {
+        "word": "filete",
+        "hint": "Filet / Steak"
+      },
+      {
+        "word": "pechuga",
+        "hint": "Brust (Huhn)"
+      },
+      {
+        "word": "chuleta",
+        "hint": "Kotelett"
+      },
+      {
+        "word": "asado",
+        "hint": "Braten"
+      },
+      {
+        "word": "embutido",
+        "hint": "Aufschnitt"
+      }
+    ]
+  },
+  {
+    "key": "pets_wb",
+    "name": "Haustiere",
+    "description": "Haustiere und Pflege auf Spanisch",
+    "iconName": "pawprint",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "perro",
+        "hint": "Hund"
+      },
+      {
+        "word": "gato",
+        "hint": "Katze"
+      },
+      {
+        "word": "conejo",
+        "hint": "Kaninchen"
+      },
+      {
+        "word": "hámster",
+        "hint": "Hamster"
+      },
+      {
+        "word": "tortuga",
+        "hint": "Schildkröte"
+      },
+      {
+        "word": "pez",
+        "hint": "Fisch"
+      },
+      {
+        "word": "jaula",
+        "hint": "Käfig"
+      },
+      {
+        "word": "correa",
+        "hint": "Leine"
+      },
+      {
+        "word": "collar",
+        "hint": "Halsband"
+      },
+      {
+        "word": "veterinario",
+        "hint": "Tierarzt"
+      },
+      {
+        "word": "vacuna",
+        "hint": "Impfung"
+      },
+      {
+        "word": "comedero",
+        "hint": "Fressnapf"
+      },
+      {
+        "word": "juguete",
+        "hint": "Spielzeug"
+      },
+      {
+        "word": "raza",
+        "hint": "Rasse"
+      },
+      {
+        "word": "cachorro",
+        "hint": "Welpe"
+      }
+    ]
+  },
+  {
+    "key": "birds_wb",
+    "name": "Vögel",
+    "description": "Vogelarten und verwandte Begriffe auf Spanisch",
+    "iconName": "bird",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "águila",
+        "hint": "Adler"
+      },
+      {
+        "word": "paloma",
+        "hint": "Taube"
+      },
+      {
+        "word": "búho",
+        "hint": "Eule"
+      },
+      {
+        "word": "loro",
+        "hint": "Papagei"
+      },
+      {
+        "word": "gorrión",
+        "hint": "Spatz"
+      },
+      {
+        "word": "cisne",
+        "hint": "Schwan"
+      },
+      {
+        "word": "halcón",
+        "hint": "Falke"
+      },
+      {
+        "word": "cuervo",
+        "hint": "Rabe"
+      },
+      {
+        "word": "golondrina",
+        "hint": "Schwalbe"
+      },
+      {
+        "word": "flamenco",
+        "hint": "Flamingo"
+      },
+      {
+        "word": "gaviota",
+        "hint": "Möwe"
+      },
+      {
+        "word": "pingüino",
+        "hint": "Pinguin"
+      },
+      {
+        "word": "nido",
+        "hint": "Nest"
+      },
+      {
+        "word": "pluma",
+        "hint": "Feder"
+      },
+      {
+        "word": "pico",
+        "hint": "Schnabel"
+      }
+    ]
+  },
+  {
+    "key": "insects_wb",
+    "name": "Insekten",
+    "description": "Insekten und kleine Tiere auf Spanisch",
+    "iconName": "ant",
+    "color": "#65a30d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "hormiga",
+        "hint": "Ameise"
+      },
+      {
+        "word": "abeja",
+        "hint": "Biene"
+      },
+      {
+        "word": "mariposa",
+        "hint": "Schmetterling"
+      },
+      {
+        "word": "mosquito",
+        "hint": "Mücke"
+      },
+      {
+        "word": "araña",
+        "hint": "Spinne"
+      },
+      {
+        "word": "escarabajo",
+        "hint": "Käfer"
+      },
+      {
+        "word": "mosca",
+        "hint": "Fliege"
+      },
+      {
+        "word": "libélula",
+        "hint": "Libelle"
+      },
+      {
+        "word": "grillo",
+        "hint": "Grille"
+      },
+      {
+        "word": "oruga",
+        "hint": "Raupe"
+      },
+      {
+        "word": "avispa",
+        "hint": "Wespe"
+      },
+      {
+        "word": "mariquita",
+        "hint": "Marienkäfer"
+      },
+      {
+        "word": "saltamontes",
+        "hint": "Heuschrecke"
+      },
+      {
+        "word": "luciérnaga",
+        "hint": "Glühwürmchen"
+      },
+      {
+        "word": "polilla",
+        "hint": "Motte"
+      }
+    ]
+  },
+  {
+    "key": "marine_life_wb",
+    "name": "Meerestiere",
+    "description": "Meerestiere und Unterwasserwelt auf Spanisch",
+    "iconName": "fish",
+    "color": "#0284c7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pulpo",
+        "hint": "Tintenfisch / Oktopus"
+      },
+      {
+        "word": "medusa",
+        "hint": "Qualle"
+      },
+      {
+        "word": "cangrejo",
+        "hint": "Krabbe"
+      },
+      {
+        "word": "estrella",
+        "hint": "Seestern"
+      },
+      {
+        "word": "langosta",
+        "hint": "Hummer"
+      },
+      {
+        "word": "camarón",
+        "hint": "Garnele"
+      },
+      {
+        "word": "tortuga",
+        "hint": "Meeresschildkröte"
+      },
+      {
+        "word": "morsa",
+        "hint": "Walross"
+      },
+      {
+        "word": "foca",
+        "hint": "Robbe"
+      },
+      {
+        "word": "calamar",
+        "hint": "Kalmar"
+      },
+      {
+        "word": "coral",
+        "hint": "Koralle"
+      },
+      {
+        "word": "alga",
+        "hint": "Alge"
+      },
+      {
+        "word": "ostra",
+        "hint": "Auster"
+      },
+      {
+        "word": "mejillón",
+        "hint": "Muschel"
+      },
+      {
+        "word": "erizo",
+        "hint": "Seeigel"
+      }
+    ]
+  },
+  {
+    "key": "farm_animals_wb",
+    "name": "Bauernhoftiere",
+    "description": "Nutztiere und Bauernhofbegriffe auf Spanisch",
+    "iconName": "hare",
+    "color": "#92400e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "vaca",
+        "hint": "Kuh"
+      },
+      {
+        "word": "caballo",
+        "hint": "Pferd"
+      },
+      {
+        "word": "cerdo",
+        "hint": "Schwein"
+      },
+      {
+        "word": "gallina",
+        "hint": "Huhn"
+      },
+      {
+        "word": "oveja",
+        "hint": "Schaf"
+      },
+      {
+        "word": "cabra",
+        "hint": "Ziege"
+      },
+      {
+        "word": "burro",
+        "hint": "Esel"
+      },
+      {
+        "word": "toro",
+        "hint": "Stier"
+      },
+      {
+        "word": "pato",
+        "hint": "Ente"
+      },
+      {
+        "word": "ganso",
+        "hint": "Gans"
+      },
+      {
+        "word": "granja",
+        "hint": "Bauernhof"
+      },
+      {
+        "word": "establo",
+        "hint": "Stall"
+      },
+      {
+        "word": "cosecha",
+        "hint": "Ernte"
+      },
+      {
+        "word": "tractor",
+        "hint": "Traktor"
+      },
+      {
+        "word": "corral",
+        "hint": "Gehege"
+      }
+    ]
+  },
+  {
+    "key": "feelings_wb",
+    "name": "Gefühle",
+    "description": "Tiefere Gefühle und Stimmungen auf Spanisch",
+    "iconName": "heart",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "alegría",
+        "hint": "Freude"
+      },
+      {
+        "word": "tristeza",
+        "hint": "Traurigkeit"
+      },
+      {
+        "word": "orgullo",
+        "hint": "Stolz"
+      },
+      {
+        "word": "vergüenza",
+        "hint": "Scham"
+      },
+      {
+        "word": "envidia",
+        "hint": "Neid"
+      },
+      {
+        "word": "soledad",
+        "hint": "Einsamkeit"
+      },
+      {
+        "word": "ternura",
+        "hint": "Zärtlichkeit"
+      },
+      {
+        "word": "nostalgia",
+        "hint": "Sehnsucht"
+      },
+      {
+        "word": "gratitud",
+        "hint": "Dankbarkeit"
+      },
+      {
+        "word": "angustia",
+        "hint": "Angst / Beklemmung"
+      },
+      {
+        "word": "emoción",
+        "hint": "Aufregung"
+      },
+      {
+        "word": "asombro",
+        "hint": "Staunen"
+      },
+      {
+        "word": "culpa",
+        "hint": "Schuld"
+      },
+      {
+        "word": "alivio",
+        "hint": "Erleichterung"
+      },
+      {
+        "word": "esperanza",
+        "hint": "Hoffnung"
+      }
+    ]
+  },
+  {
+    "key": "personality_wb",
+    "name": "Persönlichkeit",
+    "description": "Charaktereigenschaften auf Spanisch",
+    "iconName": "person.text.rectangle",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "amable",
+        "hint": "Freundlich"
+      },
+      {
+        "word": "valiente",
+        "hint": "Mutig"
+      },
+      {
+        "word": "honesto",
+        "hint": "Ehrlich"
+      },
+      {
+        "word": "generoso",
+        "hint": "Großzügig"
+      },
+      {
+        "word": "tímido",
+        "hint": "Schüchtern"
+      },
+      {
+        "word": "egoísta",
+        "hint": "Egoistisch"
+      },
+      {
+        "word": "paciente",
+        "hint": "Geduldig"
+      },
+      {
+        "word": "curioso",
+        "hint": "Neugierig"
+      },
+      {
+        "word": "fiel",
+        "hint": "Treu"
+      },
+      {
+        "word": "orgulloso",
+        "hint": "Stolz"
+      },
+      {
+        "word": "perezoso",
+        "hint": "Faul"
+      },
+      {
+        "word": "terco",
+        "hint": "Stur"
+      },
+      {
+        "word": "sensible",
+        "hint": "Sensibel"
+      },
+      {
+        "word": "creativo",
+        "hint": "Kreativ"
+      },
+      {
+        "word": "prudente",
+        "hint": "Vorsichtig / Besonnen"
+      }
+    ]
+  },
+  {
+    "key": "relationships_wb",
+    "name": "Beziehungen",
+    "description": "Beziehungs- und Sozialbegriffe auf Spanisch",
+    "iconName": "person.2",
+    "color": "#db2777",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "amistad",
+        "hint": "Freundschaft"
+      },
+      {
+        "word": "pareja",
+        "hint": "Partner / Paar"
+      },
+      {
+        "word": "novio",
+        "hint": "Freund (Partner)"
+      },
+      {
+        "word": "esposa",
+        "hint": "Ehefrau"
+      },
+      {
+        "word": "divorcio",
+        "hint": "Scheidung"
+      },
+      {
+        "word": "cariño",
+        "hint": "Zuneigung"
+      },
+      {
+        "word": "confianza",
+        "hint": "Vertrauen"
+      },
+      {
+        "word": "convivencia",
+        "hint": "Zusammenleben"
+      },
+      {
+        "word": "compromiso",
+        "hint": "Verpflichtung / Verlobung"
+      },
+      {
+        "word": "vecino",
+        "hint": "Nachbar"
+      },
+      {
+        "word": "colega",
+        "hint": "Kollege"
+      },
+      {
+        "word": "compañero",
+        "hint": "Kamerad / Begleiter"
+      },
+      {
+        "word": "conocido",
+        "hint": "Bekannter"
+      },
+      {
+        "word": "rival",
+        "hint": "Rivale"
+      },
+      {
+        "word": "aliado",
+        "hint": "Verbündeter"
+      }
+    ]
+  },
+  {
+    "key": "communication_wb",
+    "name": "Kommunikation",
+    "description": "Kommunikations- und Gesprächsbegriffe auf Spanisch",
+    "iconName": "bubble.left.and.bubble.right",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "mensaje",
+        "hint": "Nachricht"
+      },
+      {
+        "word": "llamada",
+        "hint": "Anruf"
+      },
+      {
+        "word": "reunión",
+        "hint": "Besprechung"
+      },
+      {
+        "word": "discurso",
+        "hint": "Rede"
+      },
+      {
+        "word": "acuerdo",
+        "hint": "Vereinbarung"
+      },
+      {
+        "word": "malentendido",
+        "hint": "Missverständnis"
+      },
+      {
+        "word": "opinión",
+        "hint": "Meinung"
+      },
+      {
+        "word": "pregunta",
+        "hint": "Frage"
+      },
+      {
+        "word": "respuesta",
+        "hint": "Antwort"
+      },
+      {
+        "word": "idioma",
+        "hint": "Sprache"
+      },
+      {
+        "word": "traducir",
+        "hint": "Übersetzen"
+      },
+      {
+        "word": "explicar",
+        "hint": "Erklären"
+      },
+      {
+        "word": "susurrar",
+        "hint": "Flüstern"
+      },
+      {
+        "word": "gritar",
+        "hint": "Schreien"
+      },
+      {
+        "word": "negociar",
+        "hint": "Verhandeln"
+      }
+    ]
+  },
+  {
+    "key": "gestures_wb",
+    "name": "Gesten",
+    "description": "Gesten und Körpersprache auf Spanisch",
+    "iconName": "hand.raised",
+    "color": "#f97316",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "sonrisa",
+        "hint": "Lächeln"
+      },
+      {
+        "word": "abrazo",
+        "hint": "Umarmung"
+      },
+      {
+        "word": "saludo",
+        "hint": "Gruß / Begrüßung"
+      },
+      {
+        "word": "guiño",
+        "hint": "Zwinkern"
+      },
+      {
+        "word": "despedida",
+        "hint": "Verabschiedung"
+      },
+      {
+        "word": "asentir",
+        "hint": "Nicken"
+      },
+      {
+        "word": "negar",
+        "hint": "Kopfschütteln"
+      },
+      {
+        "word": "señalar",
+        "hint": "Zeigen"
+      },
+      {
+        "word": "aplaudir",
+        "hint": "Klatschen"
+      },
+      {
+        "word": "estrechar",
+        "hint": "Händeschütteln"
+      },
+      {
+        "word": "reverencia",
+        "hint": "Verbeugung"
+      },
+      {
+        "word": "encogerse",
+        "hint": "Achselzucken"
+      },
+      {
+        "word": "fruncir",
+        "hint": "Stirnrunzeln"
+      },
+      {
+        "word": "bostezar",
+        "hint": "Gähnen"
+      },
+      {
+        "word": "suspirar",
+        "hint": "Seufzen"
+      }
+    ]
+  },
+  {
+    "key": "architecture_wb",
+    "name": "Architektur",
+    "description": "Architektur- und Gebäudebegriffe auf Spanisch",
+    "iconName": "building.2",
+    "color": "#64748b",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "edificio",
+        "hint": "Gebäude"
+      },
+      {
+        "word": "fachada",
+        "hint": "Fassade"
+      },
+      {
+        "word": "columna",
+        "hint": "Säule"
+      },
+      {
+        "word": "balcón",
+        "hint": "Balkon"
+      },
+      {
+        "word": "cúpula",
+        "hint": "Kuppel"
+      },
+      {
+        "word": "bóveda",
+        "hint": "Gewölbe"
+      },
+      {
+        "word": "plano",
+        "hint": "Grundriss"
+      },
+      {
+        "word": "cimiento",
+        "hint": "Fundament"
+      },
+      {
+        "word": "tejado",
+        "hint": "Dach"
+      },
+      {
+        "word": "escalera",
+        "hint": "Treppe"
+      },
+      {
+        "word": "arco",
+        "hint": "Bogen"
+      },
+      {
+        "word": "puente",
+        "hint": "Brücke"
+      },
+      {
+        "word": "torre",
+        "hint": "Turm"
+      },
+      {
+        "word": "ventanal",
+        "hint": "Fensterfront"
+      },
+      {
+        "word": "cornisa",
+        "hint": "Gesims"
+      }
+    ]
+  },
+  {
+    "key": "construction_wb",
+    "name": "Bauwesen",
+    "description": "Bau- und Konstruktionsbegriffe auf Spanisch",
+    "iconName": "hammer",
+    "color": "#78716c",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ladrillo",
+        "hint": "Ziegel"
+      },
+      {
+        "word": "cemento",
+        "hint": "Zement"
+      },
+      {
+        "word": "andamio",
+        "hint": "Gerüst"
+      },
+      {
+        "word": "grúa",
+        "hint": "Kran"
+      },
+      {
+        "word": "obrero",
+        "hint": "Bauarbeiter"
+      },
+      {
+        "word": "excavadora",
+        "hint": "Bagger"
+      },
+      {
+        "word": "hormigón",
+        "hint": "Beton"
+      },
+      {
+        "word": "azulejo",
+        "hint": "Fliese"
+      },
+      {
+        "word": "yeso",
+        "hint": "Gips"
+      },
+      {
+        "word": "viga",
+        "hint": "Balken"
+      },
+      {
+        "word": "pilar",
+        "hint": "Pfeiler"
+      },
+      {
+        "word": "encofrado",
+        "hint": "Schalung"
+      },
+      {
+        "word": "tabique",
+        "hint": "Trennwand"
+      },
+      {
+        "word": "demoler",
+        "hint": "Abreißen"
+      },
+      {
+        "word": "cañería",
+        "hint": "Rohrleitung"
+      }
+    ]
+  },
+  {
+    "key": "electricity_wb",
+    "name": "Elektrizität",
+    "description": "Strom- und Elektrobegriffe auf Spanisch",
+    "iconName": "bolt",
+    "color": "#eab308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "enchufe",
+        "hint": "Steckdose"
+      },
+      {
+        "word": "cable",
+        "hint": "Kabel"
+      },
+      {
+        "word": "interruptor",
+        "hint": "Schalter"
+      },
+      {
+        "word": "bombilla",
+        "hint": "Glühbirne"
+      },
+      {
+        "word": "fusible",
+        "hint": "Sicherung"
+      },
+      {
+        "word": "voltaje",
+        "hint": "Spannung"
+      },
+      {
+        "word": "corriente",
+        "hint": "Strom"
+      },
+      {
+        "word": "batería",
+        "hint": "Batterie"
+      },
+      {
+        "word": "generador",
+        "hint": "Generator"
+      },
+      {
+        "word": "circuito",
+        "hint": "Stromkreis"
+      },
+      {
+        "word": "resistencia",
+        "hint": "Widerstand"
+      },
+      {
+        "word": "conductor",
+        "hint": "Leiter"
+      },
+      {
+        "word": "transformador",
+        "hint": "Transformator"
+      },
+      {
+        "word": "cortocircuito",
+        "hint": "Kurzschluss"
+      },
+      {
+        "word": "aislante",
+        "hint": "Isolierung"
+      }
+    ]
+  },
+  {
+    "key": "plumbing_wb",
+    "name": "Sanitär",
+    "description": "Sanitär- und Installationsbegriffe auf Spanisch",
+    "iconName": "wrench",
+    "color": "#3b82f6",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "tubería",
+        "hint": "Rohr / Leitung"
+      },
+      {
+        "word": "grifo",
+        "hint": "Wasserhahn"
+      },
+      {
+        "word": "desagüe",
+        "hint": "Abfluss"
+      },
+      {
+        "word": "válvula",
+        "hint": "Ventil"
+      },
+      {
+        "word": "cisterna",
+        "hint": "Spülkasten"
+      },
+      {
+        "word": "caldera",
+        "hint": "Heizkessel"
+      },
+      {
+        "word": "presión",
+        "hint": "Druck"
+      },
+      {
+        "word": "filtro",
+        "hint": "Filter"
+      },
+      {
+        "word": "acometida",
+        "hint": "Zuleitung"
+      },
+      {
+        "word": "sifón",
+        "hint": "Siphon"
+      },
+      {
+        "word": "junta",
+        "hint": "Dichtung"
+      },
+      {
+        "word": "llave",
+        "hint": "Absperrhahn"
+      },
+      {
+        "word": "alcantarillado",
+        "hint": "Kanalisation"
+      },
+      {
+        "word": "fontanero",
+        "hint": "Klempner"
+      },
+      {
+        "word": "fuga",
+        "hint": "Leck"
+      }
+    ]
+  },
+  {
+    "key": "gardening_tools_wb",
+    "name": "Gartengeräte",
+    "description": "Gartengeräte und Werkzeuge auf Spanisch",
+    "iconName": "leaf.fill",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pala",
+        "hint": "Schaufel"
+      },
+      {
+        "word": "rastrillo",
+        "hint": "Rechen"
+      },
+      {
+        "word": "podadora",
+        "hint": "Gartenschere"
+      },
+      {
+        "word": "regadera",
+        "hint": "Gießkanne"
+      },
+      {
+        "word": "manguera",
+        "hint": "Schlauch"
+      },
+      {
+        "word": "carretilla",
+        "hint": "Schubkarre"
+      },
+      {
+        "word": "guantes",
+        "hint": "Handschuhe"
+      },
+      {
+        "word": "semillero",
+        "hint": "Anzuchtbeet"
+      },
+      {
+        "word": "abono",
+        "hint": "Dünger"
+      },
+      {
+        "word": "tijeras",
+        "hint": "Heckenschere"
+      },
+      {
+        "word": "invernadero",
+        "hint": "Gewächshaus"
+      },
+      {
+        "word": "azada",
+        "hint": "Hacke"
+      },
+      {
+        "word": "compost",
+        "hint": "Kompost"
+      },
+      {
+        "word": "cortacésped",
+        "hint": "Rasenmäher"
+      },
+      {
+        "word": "pulverizador",
+        "hint": "Sprühgerät"
+      }
+    ]
+  },
+  {
+    "key": "medicine_wb",
+    "name": "Medizin",
+    "description": "Medizinische Fachbegriffe auf Spanisch",
+    "iconName": "stethoscope",
+    "color": "#dc2626",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "diagnóstico",
+        "hint": "Diagnose"
+      },
+      {
+        "word": "síntoma",
+        "hint": "Symptom"
+      },
+      {
+        "word": "cirugía",
+        "hint": "Chirurgie"
+      },
+      {
+        "word": "operación",
+        "hint": "Operation"
+      },
+      {
+        "word": "consulta",
+        "hint": "Sprechstunde"
+      },
+      {
+        "word": "enfermera",
+        "hint": "Krankenschwester"
+      },
+      {
+        "word": "urgencias",
+        "hint": "Notaufnahme"
+      },
+      {
+        "word": "inyección",
+        "hint": "Spritze"
+      },
+      {
+        "word": "radiografía",
+        "hint": "Röntgenbild"
+      },
+      {
+        "word": "análisis",
+        "hint": "Blutuntersuchung"
+      },
+      {
+        "word": "paciente",
+        "hint": "Patient"
+      },
+      {
+        "word": "tratamiento",
+        "hint": "Behandlung"
+      },
+      {
+        "word": "receta",
+        "hint": "Rezept (ärztlich)"
+      },
+      {
+        "word": "ambulancia",
+        "hint": "Krankenwagen"
+      },
+      {
+        "word": "vendaje",
+        "hint": "Verband"
+      }
+    ]
+  },
+  {
+    "key": "pharmacy_wb",
+    "name": "Apotheke",
+    "description": "Apotheken- und Arzneimittelbegriffe auf Spanisch",
+    "iconName": "pills",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "farmacia",
+        "hint": "Apotheke"
+      },
+      {
+        "word": "pastilla",
+        "hint": "Tablette"
+      },
+      {
+        "word": "jarabe",
+        "hint": "Sirup"
+      },
+      {
+        "word": "pomada",
+        "hint": "Salbe"
+      },
+      {
+        "word": "cápsula",
+        "hint": "Kapsel"
+      },
+      {
+        "word": "dosis",
+        "hint": "Dosis"
+      },
+      {
+        "word": "prospecto",
+        "hint": "Beipackzettel"
+      },
+      {
+        "word": "antibiótico",
+        "hint": "Antibiotikum"
+      },
+      {
+        "word": "analgésico",
+        "hint": "Schmerzmittel"
+      },
+      {
+        "word": "vitamina",
+        "hint": "Vitamin"
+      },
+      {
+        "word": "alergia",
+        "hint": "Allergie"
+      },
+      {
+        "word": "receta",
+        "hint": "Rezept"
+      },
+      {
+        "word": "termómetro",
+        "hint": "Thermometer"
+      },
+      {
+        "word": "gotas",
+        "hint": "Tropfen"
+      },
+      {
+        "word": "vacuna",
+        "hint": "Impfstoff"
+      }
+    ]
+  },
+  {
+    "key": "fitness_wb",
+    "name": "Fitness",
+    "description": "Fitness- und Trainingsbegriffe auf Spanisch",
+    "iconName": "figure.run",
+    "color": "#f97316",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "gimnasio",
+        "hint": "Fitnessstudio"
+      },
+      {
+        "word": "entrenamiento",
+        "hint": "Training"
+      },
+      {
+        "word": "músculo",
+        "hint": "Muskel"
+      },
+      {
+        "word": "pesas",
+        "hint": "Gewichte"
+      },
+      {
+        "word": "cardio",
+        "hint": "Ausdauer / Cardio"
+      },
+      {
+        "word": "estirar",
+        "hint": "Dehnen"
+      },
+      {
+        "word": "correr",
+        "hint": "Laufen / Rennen"
+      },
+      {
+        "word": "sentadilla",
+        "hint": "Kniebeuge"
+      },
+      {
+        "word": "flexión",
+        "hint": "Liegestütz"
+      },
+      {
+        "word": "bicicleta",
+        "hint": "Fahrrad"
+      },
+      {
+        "word": "cinta",
+        "hint": "Laufband"
+      },
+      {
+        "word": "abdominales",
+        "hint": "Bauchmuskeln"
+      },
+      {
+        "word": "descanso",
+        "hint": "Ruhepause"
+      },
+      {
+        "word": "repetición",
+        "hint": "Wiederholung"
+      },
+      {
+        "word": "resistencia",
+        "hint": "Ausdauer"
+      }
+    ]
+  },
+  {
+    "key": "yoga_wb",
+    "name": "Yoga",
+    "description": "Yoga- und Meditationsbegriffe auf Spanisch",
+    "iconName": "figure.mind.and.body",
+    "color": "#a855f7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "postura",
+        "hint": "Haltung / Pose"
+      },
+      {
+        "word": "respiración",
+        "hint": "Atmung"
+      },
+      {
+        "word": "meditación",
+        "hint": "Meditation"
+      },
+      {
+        "word": "equilibrio",
+        "hint": "Gleichgewicht"
+      },
+      {
+        "word": "flexibilidad",
+        "hint": "Flexibilität"
+      },
+      {
+        "word": "esterilla",
+        "hint": "Yogamatte"
+      },
+      {
+        "word": "relajación",
+        "hint": "Entspannung"
+      },
+      {
+        "word": "concentración",
+        "hint": "Konzentration"
+      },
+      {
+        "word": "energía",
+        "hint": "Energie"
+      },
+      {
+        "word": "armonía",
+        "hint": "Harmonie"
+      },
+      {
+        "word": "bienestar",
+        "hint": "Wohlbefinden"
+      },
+      {
+        "word": "columna",
+        "hint": "Wirbelsäule"
+      },
+      {
+        "word": "estiramiento",
+        "hint": "Dehnung"
+      },
+      {
+        "word": "mantra",
+        "hint": "Mantra"
+      },
+      {
+        "word": "consciencia",
+        "hint": "Bewusstsein"
+      }
+    ]
+  },
+  {
+    "key": "mental_health_wb",
+    "name": "Psychische Gesundheit",
+    "description": "Begriffe der psychischen Gesundheit auf Spanisch",
+    "iconName": "brain.head.profile",
+    "color": "#6366f1",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ansiedad",
+        "hint": "Angststörung"
+      },
+      {
+        "word": "depresión",
+        "hint": "Depression"
+      },
+      {
+        "word": "estrés",
+        "hint": "Stress"
+      },
+      {
+        "word": "terapia",
+        "hint": "Therapie"
+      },
+      {
+        "word": "psicólogo",
+        "hint": "Psychologe"
+      },
+      {
+        "word": "autoestima",
+        "hint": "Selbstwertgefühl"
+      },
+      {
+        "word": "trauma",
+        "hint": "Trauma"
+      },
+      {
+        "word": "resiliencia",
+        "hint": "Resilienz"
+      },
+      {
+        "word": "insomnio",
+        "hint": "Schlaflosigkeit"
+      },
+      {
+        "word": "fobia",
+        "hint": "Phobie"
+      },
+      {
+        "word": "empatía",
+        "hint": "Empathie"
+      },
+      {
+        "word": "burnout",
+        "hint": "Burnout"
+      },
+      {
+        "word": "bienestar",
+        "hint": "Wohlbefinden"
+      },
+      {
+        "word": "ánimo",
+        "hint": "Gemütszustand"
+      },
+      {
+        "word": "superación",
+        "hint": "Überwindung"
+      }
+    ]
+  },
+  {
+    "key": "vehicles_wb",
+    "name": "Fahrzeuge",
+    "description": "Fahrzeugarten und Autobegriffe auf Spanisch",
+    "iconName": "car",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "coche",
+        "hint": "Auto"
+      },
+      {
+        "word": "camión",
+        "hint": "Lastwagen"
+      },
+      {
+        "word": "autobús",
+        "hint": "Bus"
+      },
+      {
+        "word": "motocicleta",
+        "hint": "Motorrad"
+      },
+      {
+        "word": "furgoneta",
+        "hint": "Lieferwagen"
+      },
+      {
+        "word": "todoterreno",
+        "hint": "Geländewagen"
+      },
+      {
+        "word": "volante",
+        "hint": "Lenkrad"
+      },
+      {
+        "word": "maletero",
+        "hint": "Kofferraum"
+      },
+      {
+        "word": "parabrisas",
+        "hint": "Windschutzscheibe"
+      },
+      {
+        "word": "retrovisor",
+        "hint": "Rückspiegel"
+      },
+      {
+        "word": "cinturón",
+        "hint": "Sicherheitsgurt"
+      },
+      {
+        "word": "matrícula",
+        "hint": "Kennzeichen"
+      },
+      {
+        "word": "neumático",
+        "hint": "Reifen"
+      },
+      {
+        "word": "gasolina",
+        "hint": "Benzin"
+      },
+      {
+        "word": "aparcamiento",
+        "hint": "Parkplatz"
+      }
+    ]
+  },
+  {
+    "key": "aviation_wb",
+    "name": "Luftfahrt",
+    "description": "Flug- und Luftfahrtbegriffe auf Spanisch",
+    "iconName": "airplane",
+    "color": "#0369a1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "avión",
+        "hint": "Flugzeug"
+      },
+      {
+        "word": "piloto",
+        "hint": "Pilot"
+      },
+      {
+        "word": "aeropuerto",
+        "hint": "Flughafen"
+      },
+      {
+        "word": "pasajero",
+        "hint": "Passagier"
+      },
+      {
+        "word": "equipaje",
+        "hint": "Gepäck"
+      },
+      {
+        "word": "embarque",
+        "hint": "Boarding"
+      },
+      {
+        "word": "despegue",
+        "hint": "Start"
+      },
+      {
+        "word": "aterrizaje",
+        "hint": "Landung"
+      },
+      {
+        "word": "turbulencia",
+        "hint": "Turbulenz"
+      },
+      {
+        "word": "tripulación",
+        "hint": "Besatzung"
+      },
+      {
+        "word": "escala",
+        "hint": "Zwischenstopp"
+      },
+      {
+        "word": "pista",
+        "hint": "Landebahn"
+      },
+      {
+        "word": "cabina",
+        "hint": "Kabine"
+      },
+      {
+        "word": "altura",
+        "hint": "Flughöhe"
+      },
+      {
+        "word": "helicóptero",
+        "hint": "Hubschrauber"
+      }
+    ]
+  },
+  {
+    "key": "shipping_wb",
+    "name": "Schifffahrt",
+    "description": "Schifffahrts- und Seeverkehrsbegriffe auf Spanisch",
+    "iconName": "ferry",
+    "color": "#0e7490",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "barco",
+        "hint": "Schiff"
+      },
+      {
+        "word": "capitán",
+        "hint": "Kapitän"
+      },
+      {
+        "word": "puerto",
+        "hint": "Hafen"
+      },
+      {
+        "word": "muelle",
+        "hint": "Kai / Pier"
+      },
+      {
+        "word": "navegación",
+        "hint": "Navigation"
+      },
+      {
+        "word": "brújula",
+        "hint": "Kompass"
+      },
+      {
+        "word": "ancla",
+        "hint": "Anker"
+      },
+      {
+        "word": "cubierta",
+        "hint": "Deck"
+      },
+      {
+        "word": "proa",
+        "hint": "Bug"
+      },
+      {
+        "word": "popa",
+        "hint": "Heck"
+      },
+      {
+        "word": "contenedor",
+        "hint": "Container"
+      },
+      {
+        "word": "carga",
+        "hint": "Fracht"
+      },
+      {
+        "word": "marinero",
+        "hint": "Matrose"
+      },
+      {
+        "word": "velero",
+        "hint": "Segelboot"
+      },
+      {
+        "word": "crucero",
+        "hint": "Kreuzfahrt"
+      }
+    ]
+  },
+  {
+    "key": "cycling_wb",
+    "name": "Radfahren",
+    "description": "Fahrrad- und Radfahrbegriffe auf Spanisch",
+    "iconName": "bicycle",
+    "color": "#16a34a",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "bicicleta",
+        "hint": "Fahrrad"
+      },
+      {
+        "word": "pedal",
+        "hint": "Pedal"
+      },
+      {
+        "word": "cadena",
+        "hint": "Kette"
+      },
+      {
+        "word": "manillar",
+        "hint": "Lenker"
+      },
+      {
+        "word": "sillín",
+        "hint": "Sattel"
+      },
+      {
+        "word": "freno",
+        "hint": "Bremse"
+      },
+      {
+        "word": "rueda",
+        "hint": "Rad"
+      },
+      {
+        "word": "casco",
+        "hint": "Helm"
+      },
+      {
+        "word": "carril",
+        "hint": "Radweg"
+      },
+      {
+        "word": "velocidad",
+        "hint": "Geschwindigkeit"
+      },
+      {
+        "word": "pinchazo",
+        "hint": "Platten / Reifenpanne"
+      },
+      {
+        "word": "candado",
+        "hint": "Schloss"
+      },
+      {
+        "word": "chaleco",
+        "hint": "Warnweste"
+      },
+      {
+        "word": "marcha",
+        "hint": "Gang / Schaltung"
+      },
+      {
+        "word": "timbre",
+        "hint": "Klingel"
+      }
+    ]
+  },
+  {
+    "key": "trains_wb",
+    "name": "Züge",
+    "description": "Eisenbahn- und Zugbegriffe auf Spanisch",
+    "iconName": "tram",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "tren",
+        "hint": "Zug"
+      },
+      {
+        "word": "estación",
+        "hint": "Bahnhof"
+      },
+      {
+        "word": "andén",
+        "hint": "Bahnsteig"
+      },
+      {
+        "word": "billete",
+        "hint": "Fahrkarte"
+      },
+      {
+        "word": "vagón",
+        "hint": "Waggon"
+      },
+      {
+        "word": "pasajero",
+        "hint": "Fahrgast"
+      },
+      {
+        "word": "horario",
+        "hint": "Fahrplan"
+      },
+      {
+        "word": "retraso",
+        "hint": "Verspätung"
+      },
+      {
+        "word": "transbordo",
+        "hint": "Umsteigen"
+      },
+      {
+        "word": "locomotora",
+        "hint": "Lokomotive"
+      },
+      {
+        "word": "vía",
+        "hint": "Gleis"
+      },
+      {
+        "word": "asiento",
+        "hint": "Sitzplatz"
+      },
+      {
+        "word": "revisor",
+        "hint": "Schaffner"
+      },
+      {
+        "word": "taquilla",
+        "hint": "Fahrkartenschalter"
+      },
+      {
+        "word": "expreso",
+        "hint": "Schnellzug"
+      }
+    ]
+  },
+  {
+    "key": "mathematics_wb",
+    "name": "Mathematik",
+    "description": "Mathematische Begriffe auf Spanisch",
+    "iconName": "x.squareroot",
+    "color": "#2563eb",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ecuación",
+        "hint": "Gleichung"
+      },
+      {
+        "word": "fracción",
+        "hint": "Bruch"
+      },
+      {
+        "word": "porcentaje",
+        "hint": "Prozent"
+      },
+      {
+        "word": "promedio",
+        "hint": "Durchschnitt"
+      },
+      {
+        "word": "geometría",
+        "hint": "Geometrie"
+      },
+      {
+        "word": "triángulo",
+        "hint": "Dreieck"
+      },
+      {
+        "word": "círculo",
+        "hint": "Kreis"
+      },
+      {
+        "word": "cuadrado",
+        "hint": "Quadrat"
+      },
+      {
+        "word": "ángulo",
+        "hint": "Winkel"
+      },
+      {
+        "word": "fórmula",
+        "hint": "Formel"
+      },
+      {
+        "word": "raíz",
+        "hint": "Wurzel (math.)"
+      },
+      {
+        "word": "potencia",
+        "hint": "Potenz"
+      },
+      {
+        "word": "suma",
+        "hint": "Addition / Summe"
+      },
+      {
+        "word": "resta",
+        "hint": "Subtraktion"
+      },
+      {
+        "word": "multiplicar",
+        "hint": "Multiplizieren"
+      }
+    ]
+  },
+  {
+    "key": "physics_wb",
+    "name": "Physik",
+    "description": "Physikalische Begriffe auf Spanisch",
+    "iconName": "atom",
+    "color": "#3b82f6",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "fuerza",
+        "hint": "Kraft"
+      },
+      {
+        "word": "energía",
+        "hint": "Energie"
+      },
+      {
+        "word": "velocidad",
+        "hint": "Geschwindigkeit"
+      },
+      {
+        "word": "gravedad",
+        "hint": "Schwerkraft"
+      },
+      {
+        "word": "presión",
+        "hint": "Druck"
+      },
+      {
+        "word": "temperatura",
+        "hint": "Temperatur"
+      },
+      {
+        "word": "magnetismo",
+        "hint": "Magnetismus"
+      },
+      {
+        "word": "fricción",
+        "hint": "Reibung"
+      },
+      {
+        "word": "densidad",
+        "hint": "Dichte"
+      },
+      {
+        "word": "partícula",
+        "hint": "Teilchen"
+      },
+      {
+        "word": "onda",
+        "hint": "Welle"
+      },
+      {
+        "word": "masa",
+        "hint": "Masse"
+      },
+      {
+        "word": "aceleración",
+        "hint": "Beschleunigung"
+      },
+      {
+        "word": "reflexión",
+        "hint": "Reflexion"
+      },
+      {
+        "word": "espectro",
+        "hint": "Spektrum"
+      }
+    ]
+  },
+  {
+    "key": "chemistry_wb",
+    "name": "Chemie",
+    "description": "Chemie- und Laborbegriffe auf Spanisch",
+    "iconName": "flask",
+    "color": "#10b981",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "molécula",
+        "hint": "Molekül"
+      },
+      {
+        "word": "átomo",
+        "hint": "Atom"
+      },
+      {
+        "word": "elemento",
+        "hint": "Element"
+      },
+      {
+        "word": "reacción",
+        "hint": "Reaktion"
+      },
+      {
+        "word": "solución",
+        "hint": "Lösung"
+      },
+      {
+        "word": "compuesto",
+        "hint": "Verbindung"
+      },
+      {
+        "word": "ácido",
+        "hint": "Säure"
+      },
+      {
+        "word": "laboratorio",
+        "hint": "Labor"
+      },
+      {
+        "word": "probeta",
+        "hint": "Reagenzglas"
+      },
+      {
+        "word": "sustancia",
+        "hint": "Substanz"
+      },
+      {
+        "word": "mezcla",
+        "hint": "Mischung"
+      },
+      {
+        "word": "oxígeno",
+        "hint": "Sauerstoff"
+      },
+      {
+        "word": "hidrógeno",
+        "hint": "Wasserstoff"
+      },
+      {
+        "word": "carbono",
+        "hint": "Kohlenstoff"
+      },
+      {
+        "word": "catalizador",
+        "hint": "Katalysator"
+      }
+    ]
+  },
+  {
+    "key": "biology_wb",
+    "name": "Biologie",
+    "description": "Biologische Begriffe auf Spanisch",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "célula",
+        "hint": "Zelle"
+      },
+      {
+        "word": "organismo",
+        "hint": "Organismus"
+      },
+      {
+        "word": "evolución",
+        "hint": "Evolution"
+      },
+      {
+        "word": "especie",
+        "hint": "Art / Spezies"
+      },
+      {
+        "word": "genético",
+        "hint": "Genetisch"
+      },
+      {
+        "word": "fotosíntesis",
+        "hint": "Fotosynthese"
+      },
+      {
+        "word": "bacteria",
+        "hint": "Bakterie"
+      },
+      {
+        "word": "virus",
+        "hint": "Virus"
+      },
+      {
+        "word": "tejido",
+        "hint": "Gewebe"
+      },
+      {
+        "word": "órgano",
+        "hint": "Organ"
+      },
+      {
+        "word": "ecosistema",
+        "hint": "Ökosystem"
+      },
+      {
+        "word": "hábitat",
+        "hint": "Lebensraum"
+      },
+      {
+        "word": "cromosoma",
+        "hint": "Chromosom"
+      },
+      {
+        "word": "nutriente",
+        "hint": "Nährstoff"
+      },
+      {
+        "word": "reproducción",
+        "hint": "Fortpflanzung"
+      }
+    ]
+  },
+  {
+    "key": "science_wb",
+    "name": "Wissenschaft",
+    "description": "Allgemeine Wissenschaftsbegriffe auf Spanisch",
+    "iconName": "magnifyingglass",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "experimento",
+        "hint": "Experiment"
+      },
+      {
+        "word": "hipótesis",
+        "hint": "Hypothese"
+      },
+      {
+        "word": "investigación",
+        "hint": "Forschung"
+      },
+      {
+        "word": "descubrimiento",
+        "hint": "Entdeckung"
+      },
+      {
+        "word": "teoría",
+        "hint": "Theorie"
+      },
+      {
+        "word": "microscopio",
+        "hint": "Mikroskop"
+      },
+      {
+        "word": "datos",
+        "hint": "Daten"
+      },
+      {
+        "word": "resultado",
+        "hint": "Ergebnis"
+      },
+      {
+        "word": "método",
+        "hint": "Methode"
+      },
+      {
+        "word": "observación",
+        "hint": "Beobachtung"
+      },
+      {
+        "word": "conclusión",
+        "hint": "Schlussfolgerung"
+      },
+      {
+        "word": "variable",
+        "hint": "Variable"
+      },
+      {
+        "word": "análisis",
+        "hint": "Analyse"
+      },
+      {
+        "word": "evidencia",
+        "hint": "Beweis"
+      },
+      {
+        "word": "muestra",
+        "hint": "Probe / Stichprobe"
+      }
+    ]
+  },
+  {
+    "key": "festivals_wb",
+    "name": "Feste",
+    "description": "Feste und Feierlichkeiten auf Spanisch",
+    "iconName": "party.popper",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "carnaval",
+        "hint": "Karneval"
+      },
+      {
+        "word": "desfile",
+        "hint": "Umzug / Parade"
+      },
+      {
+        "word": "disfraz",
+        "hint": "Kostüm"
+      },
+      {
+        "word": "máscara",
+        "hint": "Maske"
+      },
+      {
+        "word": "fiesta",
+        "hint": "Fest / Party"
+      },
+      {
+        "word": "verbena",
+        "hint": "Volksfest"
+      },
+      {
+        "word": "feria",
+        "hint": "Jahrmarkt / Messe"
+      },
+      {
+        "word": "cohete",
+        "hint": "Feuerwerksrakete"
+      },
+      {
+        "word": "confeti",
+        "hint": "Konfetti"
+      },
+      {
+        "word": "globo",
+        "hint": "Luftballon"
+      },
+      {
+        "word": "orquesta",
+        "hint": "Orchester"
+      },
+      {
+        "word": "procesión",
+        "hint": "Prozession"
+      },
+      {
+        "word": "hoguera",
+        "hint": "Feuer (Festfeuer)"
+      },
+      {
+        "word": "tradición",
+        "hint": "Tradition"
+      },
+      {
+        "word": "guirnalda",
+        "hint": "Girlande"
+      }
+    ]
+  },
+  {
+    "key": "traditions_wb",
+    "name": "Traditionen",
+    "description": "Kulturelle Traditionen und Bräuche auf Spanisch",
+    "iconName": "book.closed",
+    "color": "#b45309",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "costumbre",
+        "hint": "Brauch / Sitte"
+      },
+      {
+        "word": "herencia",
+        "hint": "Erbe / Erbschaft"
+      },
+      {
+        "word": "folclore",
+        "hint": "Folklore"
+      },
+      {
+        "word": "leyenda",
+        "hint": "Legende"
+      },
+      {
+        "word": "artesanía",
+        "hint": "Kunsthandwerk"
+      },
+      {
+        "word": "ceremonia",
+        "hint": "Zeremonie"
+      },
+      {
+        "word": "vestimenta",
+        "hint": "Tracht / Kleidung"
+      },
+      {
+        "word": "gastronomía",
+        "hint": "Gastronomie"
+      },
+      {
+        "word": "patrimonio",
+        "hint": "Kulturerbe"
+      },
+      {
+        "word": "ritual",
+        "hint": "Ritual"
+      },
+      {
+        "word": "superstición",
+        "hint": "Aberglaube"
+      },
+      {
+        "word": "antepasado",
+        "hint": "Vorfahre"
+      },
+      {
+        "word": "generación",
+        "hint": "Generation"
+      },
+      {
+        "word": "recuerdo",
+        "hint": "Erinnerung"
+      },
+      {
+        "word": "identidad",
+        "hint": "Identität"
+      }
+    ]
+  },
+  {
+    "key": "weddings_wb",
+    "name": "Hochzeit",
+    "description": "Hochzeits- und Heiratsbegriffe auf Spanisch",
+    "iconName": "heart.circle",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "boda",
+        "hint": "Hochzeit"
+      },
+      {
+        "word": "novio",
+        "hint": "Bräutigam"
+      },
+      {
+        "word": "novia",
+        "hint": "Braut"
+      },
+      {
+        "word": "anillo",
+        "hint": "Ring"
+      },
+      {
+        "word": "invitado",
+        "hint": "Gast"
+      },
+      {
+        "word": "banquete",
+        "hint": "Festmahl"
+      },
+      {
+        "word": "ramo",
+        "hint": "Blumenstrauß"
+      },
+      {
+        "word": "velo",
+        "hint": "Schleier"
+      },
+      {
+        "word": "ceremonia",
+        "hint": "Zeremonie"
+      },
+      {
+        "word": "padrino",
+        "hint": "Trauzeuge"
+      },
+      {
+        "word": "madrina",
+        "hint": "Trauzeugin"
+      },
+      {
+        "word": "alianza",
+        "hint": "Ehering"
+      },
+      {
+        "word": "recepción",
+        "hint": "Empfang"
+      },
+      {
+        "word": "matrimonio",
+        "hint": "Ehe"
+      },
+      {
+        "word": "compromiso",
+        "hint": "Verlobung"
+      }
+    ]
+  },
+  {
+    "key": "holidays_wb",
+    "name": "Feiertage",
+    "description": "Feiertags- und Urlaubsbegriffe auf Spanisch",
+    "iconName": "calendar",
+    "color": "#dc2626",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "navidad",
+        "hint": "Weihnachten"
+      },
+      {
+        "word": "pascua",
+        "hint": "Ostern"
+      },
+      {
+        "word": "nochebuena",
+        "hint": "Heiligabend"
+      },
+      {
+        "word": "nochevieja",
+        "hint": "Silvester"
+      },
+      {
+        "word": "regalo",
+        "hint": "Geschenk"
+      },
+      {
+        "word": "villancico",
+        "hint": "Weihnachtslied"
+      },
+      {
+        "word": "belén",
+        "hint": "Krippe"
+      },
+      {
+        "word": "vacaciones",
+        "hint": "Ferien / Urlaub"
+      },
+      {
+        "word": "festivo",
+        "hint": "Feiertag"
+      },
+      {
+        "word": "calendario",
+        "hint": "Kalender"
+      },
+      {
+        "word": "brindis",
+        "hint": "Toast / Anstoßen"
+      },
+      {
+        "word": "adorno",
+        "hint": "Schmuck / Deko"
+      },
+      {
+        "word": "reunión",
+        "hint": "Zusammenkunft"
+      },
+      {
+        "word": "felicidad",
+        "hint": "Glück"
+      },
+      {
+        "word": "deseo",
+        "hint": "Wunsch"
+      }
+    ]
+  },
+  {
+    "key": "celebrations_wb",
+    "name": "Feiern",
+    "description": "Feier- und Partybegriffe auf Spanisch",
+    "iconName": "sparkles",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "cumpleaños",
+        "hint": "Geburtstag"
+      },
+      {
+        "word": "sorpresa",
+        "hint": "Überraschung"
+      },
+      {
+        "word": "invitación",
+        "hint": "Einladung"
+      },
+      {
+        "word": "pastel",
+        "hint": "Kuchen / Torte"
+      },
+      {
+        "word": "vela",
+        "hint": "Kerze"
+      },
+      {
+        "word": "felicitación",
+        "hint": "Glückwunsch"
+      },
+      {
+        "word": "aniversario",
+        "hint": "Jubiläum"
+      },
+      {
+        "word": "brindis",
+        "hint": "Anstoßen"
+      },
+      {
+        "word": "espectáculo",
+        "hint": "Vorstellung / Show"
+      },
+      {
+        "word": "decoración",
+        "hint": "Dekoration"
+      },
+      {
+        "word": "música",
+        "hint": "Musik"
+      },
+      {
+        "word": "diversión",
+        "hint": "Spaß / Unterhaltung"
+      },
+      {
+        "word": "aperitivo",
+        "hint": "Appetithäppchen"
+      },
+      {
+        "word": "piñata",
+        "hint": "Piñata"
+      },
+      {
+        "word": "recuerdo",
+        "hint": "Andenken / Souvenir"
+      }
+    ]
+  },
+  {
+    "key": "fashion_wb",
+    "name": "Mode",
+    "description": "Mode- und Stilbegriffe auf Spanisch",
+    "iconName": "tshirt",
+    "color": "#d946ef",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "diseño",
+        "hint": "Design / Entwurf"
+      },
+      {
+        "word": "tendencia",
+        "hint": "Trend"
+      },
+      {
+        "word": "pasarela",
+        "hint": "Laufsteg"
+      },
+      {
+        "word": "modelo",
+        "hint": "Model / Modell"
+      },
+      {
+        "word": "elegante",
+        "hint": "Elegant"
+      },
+      {
+        "word": "estampado",
+        "hint": "Bedruckt / Muster"
+      },
+      {
+        "word": "colección",
+        "hint": "Kollektion"
+      },
+      {
+        "word": "sastre",
+        "hint": "Schneider"
+      },
+      {
+        "word": "talla",
+        "hint": "Größe"
+      },
+      {
+        "word": "botón",
+        "hint": "Knopf"
+      },
+      {
+        "word": "cremallera",
+        "hint": "Reißverschluss"
+      },
+      {
+        "word": "bolsillo",
+        "hint": "Tasche (Kleidung)"
+      },
+      {
+        "word": "manga",
+        "hint": "Ärmel"
+      },
+      {
+        "word": "cuello",
+        "hint": "Kragen"
+      },
+      {
+        "word": "dobladillo",
+        "hint": "Saum"
+      }
+    ]
+  },
+  {
+    "key": "textiles_wb",
+    "name": "Textilien",
+    "description": "Stoff- und Textilbegriffe auf Spanisch",
+    "iconName": "rectangle.grid.1x2",
+    "color": "#9333ea",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "algodón",
+        "hint": "Baumwolle"
+      },
+      {
+        "word": "seda",
+        "hint": "Seide"
+      },
+      {
+        "word": "lana",
+        "hint": "Wolle"
+      },
+      {
+        "word": "cuero",
+        "hint": "Leder"
+      },
+      {
+        "word": "lino",
+        "hint": "Leinen"
+      },
+      {
+        "word": "poliéster",
+        "hint": "Polyester"
+      },
+      {
+        "word": "terciopelo",
+        "hint": "Samt"
+      },
+      {
+        "word": "satén",
+        "hint": "Satin"
+      },
+      {
+        "word": "encaje",
+        "hint": "Spitze"
+      },
+      {
+        "word": "punto",
+        "hint": "Strick"
+      },
+      {
+        "word": "tejido",
+        "hint": "Gewebe / Stoff"
+      },
+      {
+        "word": "fibra",
+        "hint": "Faser"
+      },
+      {
+        "word": "elástico",
+        "hint": "Elastisch"
+      },
+      {
+        "word": "bordado",
+        "hint": "Stickerei"
+      },
+      {
+        "word": "flecos",
+        "hint": "Fransen"
+      }
+    ]
+  },
+  {
+    "key": "jewelry_wb",
+    "name": "Schmuck",
+    "description": "Schmuck- und Edelsteinbegriffe auf Spanisch",
+    "iconName": "diamond",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "anillo",
+        "hint": "Ring"
+      },
+      {
+        "word": "collar",
+        "hint": "Halskette"
+      },
+      {
+        "word": "pulsera",
+        "hint": "Armband"
+      },
+      {
+        "word": "pendiente",
+        "hint": "Ohrring"
+      },
+      {
+        "word": "diamante",
+        "hint": "Diamant"
+      },
+      {
+        "word": "oro",
+        "hint": "Gold"
+      },
+      {
+        "word": "plata",
+        "hint": "Silber"
+      },
+      {
+        "word": "perla",
+        "hint": "Perle"
+      },
+      {
+        "word": "rubí",
+        "hint": "Rubin"
+      },
+      {
+        "word": "esmeralda",
+        "hint": "Smaragd"
+      },
+      {
+        "word": "zafiro",
+        "hint": "Saphir"
+      },
+      {
+        "word": "broche",
+        "hint": "Brosche"
+      },
+      {
+        "word": "cadena",
+        "hint": "Kette"
+      },
+      {
+        "word": "colgante",
+        "hint": "Anhänger"
+      },
+      {
+        "word": "joyero",
+        "hint": "Schmuckkästchen"
+      }
+    ]
+  },
+  {
+    "key": "cosmetics_wb",
+    "name": "Kosmetik",
+    "description": "Kosmetik- und Schönheitspflege auf Spanisch",
+    "iconName": "paintbrush.pointed",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "maquillaje",
+        "hint": "Make-up / Schminke"
+      },
+      {
+        "word": "labial",
+        "hint": "Lippenstift"
+      },
+      {
+        "word": "rímel",
+        "hint": "Wimperntusche"
+      },
+      {
+        "word": "sombra",
+        "hint": "Lidschatten"
+      },
+      {
+        "word": "crema",
+        "hint": "Creme"
+      },
+      {
+        "word": "perfume",
+        "hint": "Parfüm"
+      },
+      {
+        "word": "esmalte",
+        "hint": "Nagellack"
+      },
+      {
+        "word": "corrector",
+        "hint": "Concealer"
+      },
+      {
+        "word": "bronceador",
+        "hint": "Selbstbräuner"
+      },
+      {
+        "word": "exfoliante",
+        "hint": "Peeling"
+      },
+      {
+        "word": "mascarilla",
+        "hint": "Gesichtsmaske"
+      },
+      {
+        "word": "sérum",
+        "hint": "Serum"
+      },
+      {
+        "word": "hidratante",
+        "hint": "Feuchtigkeitscreme"
+      },
+      {
+        "word": "colorete",
+        "hint": "Rouge"
+      },
+      {
+        "word": "delineador",
+        "hint": "Eyeliner"
+      }
+    ]
+  },
+  {
+    "key": "hairstyles_wb",
+    "name": "Frisuren",
+    "description": "Frisur- und Haarpflegebegriffe auf Spanisch",
+    "iconName": "comb",
+    "color": "#a16207",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "cabello",
+        "hint": "Haar"
+      },
+      {
+        "word": "peinado",
+        "hint": "Frisur"
+      },
+      {
+        "word": "trenza",
+        "hint": "Zopf / Flechte"
+      },
+      {
+        "word": "flequillo",
+        "hint": "Pony"
+      },
+      {
+        "word": "rizado",
+        "hint": "Lockig"
+      },
+      {
+        "word": "liso",
+        "hint": "Glatt"
+      },
+      {
+        "word": "coleta",
+        "hint": "Pferdeschwanz"
+      },
+      {
+        "word": "moño",
+        "hint": "Dutt"
+      },
+      {
+        "word": "mechas",
+        "hint": "Strähnchen"
+      },
+      {
+        "word": "teñir",
+        "hint": "Färben"
+      },
+      {
+        "word": "corte",
+        "hint": "Schnitt"
+      },
+      {
+        "word": "secador",
+        "hint": "Föhn"
+      },
+      {
+        "word": "plancha",
+        "hint": "Glätteisen"
+      },
+      {
+        "word": "peluquero",
+        "hint": "Friseur"
+      },
+      {
+        "word": "champú",
+        "hint": "Shampoo"
+      }
+    ]
+  },
+  {
+    "key": "environment_wb",
+    "name": "Umwelt",
+    "description": "Umwelt- und Naturbegriffe auf Spanisch",
+    "iconName": "globe.europe.africa",
+    "color": "#059669",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "contaminación",
+        "hint": "Verschmutzung"
+      },
+      {
+        "word": "bosque",
+        "hint": "Wald"
+      },
+      {
+        "word": "atmósfera",
+        "hint": "Atmosphäre"
+      },
+      {
+        "word": "biodiversidad",
+        "hint": "Biodiversität"
+      },
+      {
+        "word": "deforestación",
+        "hint": "Abholzung"
+      },
+      {
+        "word": "extinción",
+        "hint": "Aussterben"
+      },
+      {
+        "word": "conservación",
+        "hint": "Naturschutz"
+      },
+      {
+        "word": "humedal",
+        "hint": "Feuchtgebiet"
+      },
+      {
+        "word": "capa",
+        "hint": "Schicht (Ozon etc.)"
+      },
+      {
+        "word": "fauna",
+        "hint": "Tierwelt"
+      },
+      {
+        "word": "flora",
+        "hint": "Pflanzenwelt"
+      },
+      {
+        "word": "residuos",
+        "hint": "Abfall"
+      },
+      {
+        "word": "vertedero",
+        "hint": "Müllhalde"
+      },
+      {
+        "word": "plaguicida",
+        "hint": "Pestizid"
+      },
+      {
+        "word": "emisión",
+        "hint": "Emission"
+      }
+    ]
+  },
+  {
+    "key": "recycling_wb",
+    "name": "Recycling",
+    "description": "Recycling- und Abfallbegriffe auf Spanisch",
+    "iconName": "arrow.3.trianglepath",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "reciclaje",
+        "hint": "Recycling"
+      },
+      {
+        "word": "contenedor",
+        "hint": "Container / Behälter"
+      },
+      {
+        "word": "separar",
+        "hint": "Trennen"
+      },
+      {
+        "word": "vidrio",
+        "hint": "Glas"
+      },
+      {
+        "word": "plástico",
+        "hint": "Plastik"
+      },
+      {
+        "word": "cartón",
+        "hint": "Karton / Pappe"
+      },
+      {
+        "word": "basura",
+        "hint": "Müll"
+      },
+      {
+        "word": "orgánico",
+        "hint": "Organisch / Bio"
+      },
+      {
+        "word": "reutilizar",
+        "hint": "Wiederverwenden"
+      },
+      {
+        "word": "reducir",
+        "hint": "Reduzieren"
+      },
+      {
+        "word": "envase",
+        "hint": "Verpackung"
+      },
+      {
+        "word": "aluminio",
+        "hint": "Aluminium"
+      },
+      {
+        "word": "compostaje",
+        "hint": "Kompostierung"
+      },
+      {
+        "word": "ecológico",
+        "hint": "Ökologisch"
+      },
+      {
+        "word": "desechable",
+        "hint": "Einweg"
+      }
+    ]
+  },
+  {
+    "key": "energy_wb",
+    "name": "Energie",
+    "description": "Energie- und Stromerzeugung auf Spanisch",
+    "iconName": "bolt.fill",
+    "color": "#eab308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "solar",
+        "hint": "Solar"
+      },
+      {
+        "word": "eólica",
+        "hint": "Windkraft"
+      },
+      {
+        "word": "nuclear",
+        "hint": "Kernkraft"
+      },
+      {
+        "word": "renovable",
+        "hint": "Erneuerbar"
+      },
+      {
+        "word": "turbina",
+        "hint": "Turbine"
+      },
+      {
+        "word": "hidroeléctrica",
+        "hint": "Wasserkraft"
+      },
+      {
+        "word": "combustible",
+        "hint": "Brennstoff"
+      },
+      {
+        "word": "petróleo",
+        "hint": "Erdöl"
+      },
+      {
+        "word": "carbón",
+        "hint": "Kohle"
+      },
+      {
+        "word": "reactor",
+        "hint": "Reaktor"
+      },
+      {
+        "word": "biomasa",
+        "hint": "Biomasse"
+      },
+      {
+        "word": "eficiencia",
+        "hint": "Effizienz"
+      },
+      {
+        "word": "panel",
+        "hint": "Solarpanel"
+      },
+      {
+        "word": "central",
+        "hint": "Kraftwerk"
+      },
+      {
+        "word": "consumo",
+        "hint": "Verbrauch"
+      }
+    ]
+  },
+  {
+    "key": "climate_wb",
+    "name": "Klima",
+    "description": "Klima- und Wetterbegriffe auf Spanisch",
+    "iconName": "thermometer.sun",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "calentamiento",
+        "hint": "Erwärmung"
+      },
+      {
+        "word": "invernadero",
+        "hint": "Treibhaus(effekt)"
+      },
+      {
+        "word": "sequía",
+        "hint": "Dürre"
+      },
+      {
+        "word": "inundación",
+        "hint": "Überschwemmung"
+      },
+      {
+        "word": "huracán",
+        "hint": "Hurrikan"
+      },
+      {
+        "word": "tornado",
+        "hint": "Tornado"
+      },
+      {
+        "word": "glaciar",
+        "hint": "Gletscher"
+      },
+      {
+        "word": "deshielo",
+        "hint": "Eisschmelze"
+      },
+      {
+        "word": "temperatura",
+        "hint": "Temperatur"
+      },
+      {
+        "word": "precipitación",
+        "hint": "Niederschlag"
+      },
+      {
+        "word": "tropical",
+        "hint": "Tropisch"
+      },
+      {
+        "word": "polar",
+        "hint": "Polar"
+      },
+      {
+        "word": "humedad",
+        "hint": "Feuchtigkeit"
+      },
+      {
+        "word": "estacional",
+        "hint": "Saisonal"
+      },
+      {
+        "word": "pronóstico",
+        "hint": "Vorhersage"
+      }
+    ]
+  },
+  {
+    "key": "sustainability_wb",
+    "name": "Nachhaltigkeit",
+    "description": "Nachhaltigkeits- und Ökologiebegriffe auf Spanisch",
+    "iconName": "leaf.circle.fill",
+    "color": "#15803d",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "sostenible",
+        "hint": "Nachhaltig"
+      },
+      {
+        "word": "huella",
+        "hint": "Fußabdruck (ökolog.)"
+      },
+      {
+        "word": "recursos",
+        "hint": "Ressourcen"
+      },
+      {
+        "word": "desarrollo",
+        "hint": "Entwicklung"
+      },
+      {
+        "word": "equidad",
+        "hint": "Gleichheit / Gerechtigkeit"
+      },
+      {
+        "word": "conciencia",
+        "hint": "Bewusstsein"
+      },
+      {
+        "word": "orgánico",
+        "hint": "Biologisch / Organisch"
+      },
+      {
+        "word": "comercio",
+        "hint": "Fairer Handel"
+      },
+      {
+        "word": "impacto",
+        "hint": "Auswirkung"
+      },
+      {
+        "word": "agricultura",
+        "hint": "Landwirtschaft"
+      },
+      {
+        "word": "renovable",
+        "hint": "Erneuerbar"
+      },
+      {
+        "word": "transición",
+        "hint": "Wende / Übergang"
+      },
+      {
+        "word": "movilidad",
+        "hint": "Mobilität"
+      },
+      {
+        "word": "comunidad",
+        "hint": "Gemeinschaft"
+      },
+      {
+        "word": "preservar",
+        "hint": "Bewahren / Erhalten"
+      }
+    ]
   }
 ]

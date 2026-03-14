@@ -2098,5 +2098,4905 @@
         "hint": "Aluminium"
       }
     ]
+  },
+  {
+    "key": "daily_routine_wb",
+    "name": "Tagesablauf",
+    "description": "Alltägliche Aktivitäten auf Englisch",
+    "iconName": "sunrise",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "breakfast",
+        "hint": "Frühstück"
+      },
+      {
+        "word": "shower",
+        "hint": "Dusche"
+      },
+      {
+        "word": "morning",
+        "hint": "Morgen"
+      },
+      {
+        "word": "evening",
+        "hint": "Abend"
+      },
+      {
+        "word": "lunch",
+        "hint": "Mittagessen"
+      },
+      {
+        "word": "dinner",
+        "hint": "Abendessen"
+      },
+      {
+        "word": "alarm",
+        "hint": "Wecker"
+      },
+      {
+        "word": "tooth",
+        "hint": "Zahn"
+      },
+      {
+        "word": "sleep",
+        "hint": "Schlaf"
+      },
+      {
+        "word": "exercise",
+        "hint": "Übung / Sport"
+      },
+      {
+        "word": "commute",
+        "hint": "Pendeln"
+      },
+      {
+        "word": "schedule",
+        "hint": "Zeitplan"
+      },
+      {
+        "word": "routine",
+        "hint": "Routine / Ablauf"
+      },
+      {
+        "word": "chores",
+        "hint": "Hausarbeiten"
+      },
+      {
+        "word": "nap",
+        "hint": "Nickerchen"
+      }
+    ]
+  },
+  {
+    "key": "shopping_wb",
+    "name": "Einkaufen",
+    "description": "Begriffe rund ums Einkaufen",
+    "iconName": "cart",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "basket",
+        "hint": "Korb"
+      },
+      {
+        "word": "receipt",
+        "hint": "Quittung"
+      },
+      {
+        "word": "cashier",
+        "hint": "Kassierer"
+      },
+      {
+        "word": "discount",
+        "hint": "Rabatt"
+      },
+      {
+        "word": "price",
+        "hint": "Preis"
+      },
+      {
+        "word": "wallet",
+        "hint": "Geldbörse"
+      },
+      {
+        "word": "shelf",
+        "hint": "Regal"
+      },
+      {
+        "word": "bargain",
+        "hint": "Schnäppchen"
+      },
+      {
+        "word": "brand",
+        "hint": "Marke"
+      },
+      {
+        "word": "change",
+        "hint": "Wechselgeld"
+      },
+      {
+        "word": "queue",
+        "hint": "Warteschlange"
+      },
+      {
+        "word": "refund",
+        "hint": "Rückerstattung"
+      },
+      {
+        "word": "store",
+        "hint": "Geschäft"
+      },
+      {
+        "word": "aisle",
+        "hint": "Gang (im Laden)"
+      },
+      {
+        "word": "sample",
+        "hint": "Probe / Muster"
+      }
+    ]
+  },
+  {
+    "key": "restaurant_wb",
+    "name": "Restaurant",
+    "description": "Wörter für den Restaurantbesuch",
+    "iconName": "fork.knife",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "waiter",
+        "hint": "Kellner"
+      },
+      {
+        "word": "menu",
+        "hint": "Speisekarte"
+      },
+      {
+        "word": "appetizer",
+        "hint": "Vorspeise"
+      },
+      {
+        "word": "dessert",
+        "hint": "Nachtisch"
+      },
+      {
+        "word": "course",
+        "hint": "Gang (Essen)"
+      },
+      {
+        "word": "beverage",
+        "hint": "Getränk"
+      },
+      {
+        "word": "reservation",
+        "hint": "Reservierung"
+      },
+      {
+        "word": "cutlery",
+        "hint": "Besteck"
+      },
+      {
+        "word": "napkin",
+        "hint": "Serviette"
+      },
+      {
+        "word": "portion",
+        "hint": "Portion"
+      },
+      {
+        "word": "chef",
+        "hint": "Koch / Küchenchef"
+      },
+      {
+        "word": "bill",
+        "hint": "Rechnung"
+      },
+      {
+        "word": "steak",
+        "hint": "Steak"
+      },
+      {
+        "word": "salad",
+        "hint": "Salat"
+      },
+      {
+        "word": "gratuity",
+        "hint": "Trinkgeld"
+      }
+    ]
+  },
+  {
+    "key": "garden_wb",
+    "name": "Garten",
+    "description": "Gartenbegriffe auf Englisch",
+    "iconName": "leaf.circle",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "flower",
+        "hint": "Blume"
+      },
+      {
+        "word": "soil",
+        "hint": "Erde / Boden"
+      },
+      {
+        "word": "fence",
+        "hint": "Zaun"
+      },
+      {
+        "word": "lawn",
+        "hint": "Rasen"
+      },
+      {
+        "word": "hedge",
+        "hint": "Hecke"
+      },
+      {
+        "word": "compost",
+        "hint": "Kompost"
+      },
+      {
+        "word": "seedling",
+        "hint": "Setzling"
+      },
+      {
+        "word": "weed",
+        "hint": "Unkraut"
+      },
+      {
+        "word": "harvest",
+        "hint": "Ernte"
+      },
+      {
+        "word": "sprinkler",
+        "hint": "Rasensprenger"
+      },
+      {
+        "word": "mulch",
+        "hint": "Mulch / Rindenmulch"
+      },
+      {
+        "word": "petal",
+        "hint": "Blütenblatt"
+      },
+      {
+        "word": "trellis",
+        "hint": "Spalier / Rankgitter"
+      },
+      {
+        "word": "shrub",
+        "hint": "Strauch"
+      },
+      {
+        "word": "bloom",
+        "hint": "Blüte"
+      }
+    ]
+  },
+  {
+    "key": "bathroom_wb",
+    "name": "Badezimmer",
+    "description": "Gegenstände im Badezimmer",
+    "iconName": "drop",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "mirror",
+        "hint": "Spiegel"
+      },
+      {
+        "word": "towel",
+        "hint": "Handtuch"
+      },
+      {
+        "word": "faucet",
+        "hint": "Wasserhahn"
+      },
+      {
+        "word": "bathtub",
+        "hint": "Badewanne"
+      },
+      {
+        "word": "toilet",
+        "hint": "Toilette"
+      },
+      {
+        "word": "sink",
+        "hint": "Waschbecken"
+      },
+      {
+        "word": "shampoo",
+        "hint": "Shampoo"
+      },
+      {
+        "word": "razor",
+        "hint": "Rasierer"
+      },
+      {
+        "word": "cabinet",
+        "hint": "Schrank"
+      },
+      {
+        "word": "drain",
+        "hint": "Abfluss"
+      },
+      {
+        "word": "curtain",
+        "hint": "Vorhang (Dusch-)"
+      },
+      {
+        "word": "scale",
+        "hint": "Waage"
+      },
+      {
+        "word": "sponge",
+        "hint": "Schwamm"
+      },
+      {
+        "word": "tile",
+        "hint": "Fliese"
+      },
+      {
+        "word": "soap",
+        "hint": "Seife"
+      }
+    ]
+  },
+  {
+    "key": "cinema_wb",
+    "name": "Kino & Film",
+    "description": "Begriffe aus der Filmwelt",
+    "iconName": "film",
+    "color": "#a855f7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "screen",
+        "hint": "Leinwand / Bildschirm"
+      },
+      {
+        "word": "trailer",
+        "hint": "Filmvorschau"
+      },
+      {
+        "word": "actor",
+        "hint": "Schauspieler"
+      },
+      {
+        "word": "actress",
+        "hint": "Schauspielerin"
+      },
+      {
+        "word": "director",
+        "hint": "Regisseur"
+      },
+      {
+        "word": "subtitle",
+        "hint": "Untertitel"
+      },
+      {
+        "word": "scene",
+        "hint": "Szene"
+      },
+      {
+        "word": "plot",
+        "hint": "Handlung"
+      },
+      {
+        "word": "comedy",
+        "hint": "Komödie"
+      },
+      {
+        "word": "thriller",
+        "hint": "Thriller / Krimi"
+      },
+      {
+        "word": "sequel",
+        "hint": "Fortsetzung"
+      },
+      {
+        "word": "premiere",
+        "hint": "Premiere"
+      },
+      {
+        "word": "popcorn",
+        "hint": "Popcorn"
+      },
+      {
+        "word": "audience",
+        "hint": "Publikum"
+      },
+      {
+        "word": "script",
+        "hint": "Drehbuch"
+      }
+    ]
+  },
+  {
+    "key": "art_wb",
+    "name": "Kunst",
+    "description": "Kunstbegriffe auf Englisch",
+    "iconName": "paintbrush",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "painting",
+        "hint": "Gemälde"
+      },
+      {
+        "word": "sculpture",
+        "hint": "Skulptur"
+      },
+      {
+        "word": "canvas",
+        "hint": "Leinwand"
+      },
+      {
+        "word": "gallery",
+        "hint": "Galerie"
+      },
+      {
+        "word": "portrait",
+        "hint": "Porträt"
+      },
+      {
+        "word": "sketch",
+        "hint": "Skizze"
+      },
+      {
+        "word": "palette",
+        "hint": "Palette"
+      },
+      {
+        "word": "mosaic",
+        "hint": "Mosaik"
+      },
+      {
+        "word": "exhibit",
+        "hint": "Ausstellung"
+      },
+      {
+        "word": "mural",
+        "hint": "Wandgemälde"
+      },
+      {
+        "word": "pastel",
+        "hint": "Pastellfarbe"
+      },
+      {
+        "word": "pencil",
+        "hint": "Bleistift"
+      },
+      {
+        "word": "crayon",
+        "hint": "Buntstift / Kreide"
+      },
+      {
+        "word": "frame",
+        "hint": "Rahmen"
+      },
+      {
+        "word": "easel",
+        "hint": "Staffelei"
+      }
+    ]
+  },
+  {
+    "key": "dance_wb",
+    "name": "Tanz",
+    "description": "Tanzbegriffe auf Englisch",
+    "iconName": "figure.dance",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ballet",
+        "hint": "Ballett"
+      },
+      {
+        "word": "rhythm",
+        "hint": "Rhythmus"
+      },
+      {
+        "word": "partner",
+        "hint": "Partner"
+      },
+      {
+        "word": "stage",
+        "hint": "Bühne"
+      },
+      {
+        "word": "waltz",
+        "hint": "Walzer"
+      },
+      {
+        "word": "pirouette",
+        "hint": "Pirouette"
+      },
+      {
+        "word": "tempo",
+        "hint": "Tempo"
+      },
+      {
+        "word": "posture",
+        "hint": "Haltung"
+      },
+      {
+        "word": "tango",
+        "hint": "Tango"
+      },
+      {
+        "word": "routine",
+        "hint": "Choreografie / Ablauf"
+      },
+      {
+        "word": "graceful",
+        "hint": "Anmutig"
+      },
+      {
+        "word": "rehearsal",
+        "hint": "Probe"
+      },
+      {
+        "word": "costume",
+        "hint": "Kostüm"
+      },
+      {
+        "word": "movement",
+        "hint": "Bewegung"
+      },
+      {
+        "word": "twirl",
+        "hint": "Drehung / Wirbel"
+      }
+    ]
+  },
+  {
+    "key": "photography_wb",
+    "name": "Fotografie",
+    "description": "Fotografie-Begriffe auf Englisch",
+    "iconName": "camera",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "lens",
+        "hint": "Objektiv / Linse"
+      },
+      {
+        "word": "shutter",
+        "hint": "Verschluss / Auslöser"
+      },
+      {
+        "word": "exposure",
+        "hint": "Belichtung"
+      },
+      {
+        "word": "tripod",
+        "hint": "Stativ"
+      },
+      {
+        "word": "flash",
+        "hint": "Blitz"
+      },
+      {
+        "word": "aperture",
+        "hint": "Blende"
+      },
+      {
+        "word": "portrait",
+        "hint": "Porträtfoto"
+      },
+      {
+        "word": "zoom",
+        "hint": "Zoom / Vergrößerung"
+      },
+      {
+        "word": "filter",
+        "hint": "Filter"
+      },
+      {
+        "word": "focus",
+        "hint": "Fokus / Schärfe"
+      },
+      {
+        "word": "viewfinder",
+        "hint": "Sucher"
+      },
+      {
+        "word": "panorama",
+        "hint": "Panorama"
+      },
+      {
+        "word": "snapshot",
+        "hint": "Schnappschuss"
+      },
+      {
+        "word": "pixel",
+        "hint": "Pixel / Bildpunkt"
+      },
+      {
+        "word": "contrast",
+        "hint": "Kontrast"
+      }
+    ]
+  },
+  {
+    "key": "crafts_wb",
+    "name": "Basteln & Handarbeit",
+    "description": "Bastel- und Handarbeitsbegriffe",
+    "iconName": "scissors",
+    "color": "#d97706",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "needle",
+        "hint": "Nadel"
+      },
+      {
+        "word": "thread",
+        "hint": "Faden"
+      },
+      {
+        "word": "fabric",
+        "hint": "Stoff"
+      },
+      {
+        "word": "pattern",
+        "hint": "Muster / Schnittmuster"
+      },
+      {
+        "word": "knitting",
+        "hint": "Stricken"
+      },
+      {
+        "word": "scissors",
+        "hint": "Schere"
+      },
+      {
+        "word": "glue",
+        "hint": "Kleber"
+      },
+      {
+        "word": "ribbon",
+        "hint": "Band / Schleife"
+      },
+      {
+        "word": "yarn",
+        "hint": "Garn / Wolle"
+      },
+      {
+        "word": "stencil",
+        "hint": "Schablone"
+      },
+      {
+        "word": "beads",
+        "hint": "Perlen"
+      },
+      {
+        "word": "embroidery",
+        "hint": "Stickerei"
+      },
+      {
+        "word": "pottery",
+        "hint": "Töpferei"
+      },
+      {
+        "word": "origami",
+        "hint": "Origami / Papierfalten"
+      },
+      {
+        "word": "crochet",
+        "hint": "Häkeln"
+      }
+    ]
+  },
+  {
+    "key": "geography_wb",
+    "name": "Geografie",
+    "description": "Geografische Begriffe auf Englisch",
+    "iconName": "globe.europe.africa",
+    "color": "#2563eb",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "continent",
+        "hint": "Kontinent"
+      },
+      {
+        "word": "island",
+        "hint": "Insel"
+      },
+      {
+        "word": "desert",
+        "hint": "Wüste"
+      },
+      {
+        "word": "volcano",
+        "hint": "Vulkan"
+      },
+      {
+        "word": "valley",
+        "hint": "Tal"
+      },
+      {
+        "word": "peninsula",
+        "hint": "Halbinsel"
+      },
+      {
+        "word": "glacier",
+        "hint": "Gletscher"
+      },
+      {
+        "word": "plateau",
+        "hint": "Hochebene"
+      },
+      {
+        "word": "canyon",
+        "hint": "Schlucht"
+      },
+      {
+        "word": "equator",
+        "hint": "Äquator"
+      },
+      {
+        "word": "border",
+        "hint": "Grenze"
+      },
+      {
+        "word": "cliff",
+        "hint": "Klippe"
+      },
+      {
+        "word": "delta",
+        "hint": "Flussdelta"
+      },
+      {
+        "word": "lagoon",
+        "hint": "Lagune"
+      },
+      {
+        "word": "tundra",
+        "hint": "Tundra"
+      }
+    ]
+  },
+  {
+    "key": "astronomy_wb",
+    "name": "Astronomie",
+    "description": "Weltraum-Begriffe auf Englisch",
+    "iconName": "star",
+    "color": "#1e3a5f",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "planet",
+        "hint": "Planet"
+      },
+      {
+        "word": "galaxy",
+        "hint": "Galaxie"
+      },
+      {
+        "word": "comet",
+        "hint": "Komet"
+      },
+      {
+        "word": "asteroid",
+        "hint": "Asteroid"
+      },
+      {
+        "word": "orbit",
+        "hint": "Umlaufbahn"
+      },
+      {
+        "word": "telescope",
+        "hint": "Teleskop"
+      },
+      {
+        "word": "eclipse",
+        "hint": "Finsternis"
+      },
+      {
+        "word": "nebula",
+        "hint": "Nebel (Weltraum)"
+      },
+      {
+        "word": "meteor",
+        "hint": "Meteor / Sternschnuppe"
+      },
+      {
+        "word": "satellite",
+        "hint": "Satellit"
+      },
+      {
+        "word": "gravity",
+        "hint": "Schwerkraft"
+      },
+      {
+        "word": "crater",
+        "hint": "Krater"
+      },
+      {
+        "word": "cosmos",
+        "hint": "Kosmos / Weltall"
+      },
+      {
+        "word": "constellation",
+        "hint": "Sternbild"
+      },
+      {
+        "word": "lunar",
+        "hint": "Mond- (Adjektiv)"
+      }
+    ]
+  },
+  {
+    "key": "ocean_wb",
+    "name": "Meer & Ozean",
+    "description": "Begriffe rund ums Meer",
+    "iconName": "water.waves",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "wave",
+        "hint": "Welle"
+      },
+      {
+        "word": "coral",
+        "hint": "Koralle"
+      },
+      {
+        "word": "tide",
+        "hint": "Gezeiten"
+      },
+      {
+        "word": "anchor",
+        "hint": "Anker"
+      },
+      {
+        "word": "shore",
+        "hint": "Ufer / Küste"
+      },
+      {
+        "word": "current",
+        "hint": "Strömung"
+      },
+      {
+        "word": "dolphin",
+        "hint": "Delfin"
+      },
+      {
+        "word": "seaweed",
+        "hint": "Seetang"
+      },
+      {
+        "word": "harbor",
+        "hint": "Hafen"
+      },
+      {
+        "word": "reef",
+        "hint": "Riff"
+      },
+      {
+        "word": "whale",
+        "hint": "Wal"
+      },
+      {
+        "word": "pearl",
+        "hint": "Perle"
+      },
+      {
+        "word": "lighthouse",
+        "hint": "Leuchtturm"
+      },
+      {
+        "word": "submarine",
+        "hint": "U-Boot"
+      },
+      {
+        "word": "starfish",
+        "hint": "Seestern"
+      }
+    ]
+  },
+  {
+    "key": "mountains_wb",
+    "name": "Berge & Wandern",
+    "description": "Bergsteiger-Begriffe auf Englisch",
+    "iconName": "mountain.2",
+    "color": "#78716c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "summit",
+        "hint": "Gipfel"
+      },
+      {
+        "word": "trail",
+        "hint": "Wanderweg"
+      },
+      {
+        "word": "boulder",
+        "hint": "Felsblock"
+      },
+      {
+        "word": "altitude",
+        "hint": "Höhe"
+      },
+      {
+        "word": "compass",
+        "hint": "Kompass"
+      },
+      {
+        "word": "backpack",
+        "hint": "Rucksack"
+      },
+      {
+        "word": "ridge",
+        "hint": "Grat / Kamm"
+      },
+      {
+        "word": "slope",
+        "hint": "Hang / Abhang"
+      },
+      {
+        "word": "waterfall",
+        "hint": "Wasserfall"
+      },
+      {
+        "word": "cabin",
+        "hint": "Hütte"
+      },
+      {
+        "word": "footpath",
+        "hint": "Fußweg"
+      },
+      {
+        "word": "avalanche",
+        "hint": "Lawine"
+      },
+      {
+        "word": "peak",
+        "hint": "Berggipfel"
+      },
+      {
+        "word": "ravine",
+        "hint": "Schlucht / Klamm"
+      },
+      {
+        "word": "cliff",
+        "hint": "Felswand / Klippe"
+      }
+    ]
+  },
+  {
+    "key": "camping_wb",
+    "name": "Camping",
+    "description": "Camping-Begriffe auf Englisch",
+    "iconName": "tent",
+    "color": "#65a30d",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "tent",
+        "hint": "Zelt"
+      },
+      {
+        "word": "campfire",
+        "hint": "Lagerfeuer"
+      },
+      {
+        "word": "sleeping",
+        "hint": "Schlafsack (... bag)"
+      },
+      {
+        "word": "lantern",
+        "hint": "Laterne"
+      },
+      {
+        "word": "firewood",
+        "hint": "Brennholz"
+      },
+      {
+        "word": "cooler",
+        "hint": "Kühlbox"
+      },
+      {
+        "word": "hammock",
+        "hint": "Hängematte"
+      },
+      {
+        "word": "canteen",
+        "hint": "Feldflasche"
+      },
+      {
+        "word": "matches",
+        "hint": "Streichhölzer"
+      },
+      {
+        "word": "insects",
+        "hint": "Insekten"
+      },
+      {
+        "word": "flashlight",
+        "hint": "Taschenlampe"
+      },
+      {
+        "word": "campsite",
+        "hint": "Campingplatz"
+      },
+      {
+        "word": "bonfire",
+        "hint": "Lagerfeuer (groß)"
+      },
+      {
+        "word": "marshmallow",
+        "hint": "Marshmallow"
+      },
+      {
+        "word": "hiking",
+        "hint": "Wandern"
+      }
+    ]
+  },
+  {
+    "key": "law_wb",
+    "name": "Recht & Gesetz",
+    "description": "Juristische Begriffe auf Englisch",
+    "iconName": "building.columns",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "judge",
+        "hint": "Richter"
+      },
+      {
+        "word": "lawyer",
+        "hint": "Anwalt"
+      },
+      {
+        "word": "trial",
+        "hint": "Gerichtsverhandlung"
+      },
+      {
+        "word": "verdict",
+        "hint": "Urteil"
+      },
+      {
+        "word": "witness",
+        "hint": "Zeuge"
+      },
+      {
+        "word": "evidence",
+        "hint": "Beweis"
+      },
+      {
+        "word": "guilty",
+        "hint": "Schuldig"
+      },
+      {
+        "word": "innocent",
+        "hint": "Unschuldig"
+      },
+      {
+        "word": "sentence",
+        "hint": "Strafe / Urteil"
+      },
+      {
+        "word": "contract",
+        "hint": "Vertrag"
+      },
+      {
+        "word": "lawsuit",
+        "hint": "Klage / Prozess"
+      },
+      {
+        "word": "statute",
+        "hint": "Gesetz / Satzung"
+      },
+      {
+        "word": "appeal",
+        "hint": "Berufung"
+      },
+      {
+        "word": "custody",
+        "hint": "Sorgerecht / Gewahrsam"
+      },
+      {
+        "word": "bail",
+        "hint": "Kaution"
+      }
+    ]
+  },
+  {
+    "key": "politics_wb",
+    "name": "Politik",
+    "description": "Politische Begriffe auf Englisch",
+    "iconName": "person.3",
+    "color": "#dc2626",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "election",
+        "hint": "Wahl"
+      },
+      {
+        "word": "parliament",
+        "hint": "Parlament"
+      },
+      {
+        "word": "president",
+        "hint": "Präsident"
+      },
+      {
+        "word": "democracy",
+        "hint": "Demokratie"
+      },
+      {
+        "word": "campaign",
+        "hint": "Wahlkampf"
+      },
+      {
+        "word": "candidate",
+        "hint": "Kandidat"
+      },
+      {
+        "word": "ballot",
+        "hint": "Stimmzettel"
+      },
+      {
+        "word": "cabinet",
+        "hint": "Kabinett"
+      },
+      {
+        "word": "diplomat",
+        "hint": "Diplomat"
+      },
+      {
+        "word": "policy",
+        "hint": "Politik / Richtlinie"
+      },
+      {
+        "word": "senate",
+        "hint": "Senat"
+      },
+      {
+        "word": "coalition",
+        "hint": "Koalition"
+      },
+      {
+        "word": "reform",
+        "hint": "Reform"
+      },
+      {
+        "word": "citizen",
+        "hint": "Bürger"
+      },
+      {
+        "word": "mayor",
+        "hint": "Bürgermeister"
+      }
+    ]
+  },
+  {
+    "key": "economy_wb",
+    "name": "Wirtschaft",
+    "description": "Wirtschaftsbegriffe auf Englisch",
+    "iconName": "chart.line.uptrend.xyaxis",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "market",
+        "hint": "Markt"
+      },
+      {
+        "word": "profit",
+        "hint": "Gewinn"
+      },
+      {
+        "word": "revenue",
+        "hint": "Umsatz / Einnahmen"
+      },
+      {
+        "word": "inflation",
+        "hint": "Inflation"
+      },
+      {
+        "word": "budget",
+        "hint": "Budget / Haushalt"
+      },
+      {
+        "word": "export",
+        "hint": "Export / Ausfuhr"
+      },
+      {
+        "word": "import",
+        "hint": "Import / Einfuhr"
+      },
+      {
+        "word": "surplus",
+        "hint": "Überschuss"
+      },
+      {
+        "word": "deficit",
+        "hint": "Defizit"
+      },
+      {
+        "word": "trade",
+        "hint": "Handel"
+      },
+      {
+        "word": "supply",
+        "hint": "Angebot / Vorrat"
+      },
+      {
+        "word": "demand",
+        "hint": "Nachfrage"
+      },
+      {
+        "word": "subsidy",
+        "hint": "Subvention"
+      },
+      {
+        "word": "tariff",
+        "hint": "Zoll / Tarif"
+      },
+      {
+        "word": "venture",
+        "hint": "Unternehmen / Wagnis"
+      }
+    ]
+  },
+  {
+    "key": "banking_wb",
+    "name": "Bankwesen",
+    "description": "Bank- und Finanzbegriffe",
+    "iconName": "banknote",
+    "color": "#0d9488",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "account",
+        "hint": "Konto"
+      },
+      {
+        "word": "mortgage",
+        "hint": "Hypothek"
+      },
+      {
+        "word": "interest",
+        "hint": "Zinsen"
+      },
+      {
+        "word": "deposit",
+        "hint": "Einzahlung"
+      },
+      {
+        "word": "withdraw",
+        "hint": "Abheben"
+      },
+      {
+        "word": "savings",
+        "hint": "Ersparnisse"
+      },
+      {
+        "word": "transfer",
+        "hint": "Überweisung"
+      },
+      {
+        "word": "balance",
+        "hint": "Kontostand"
+      },
+      {
+        "word": "currency",
+        "hint": "Währung"
+      },
+      {
+        "word": "credit",
+        "hint": "Kredit"
+      },
+      {
+        "word": "dividend",
+        "hint": "Dividende"
+      },
+      {
+        "word": "exchange",
+        "hint": "Wechsel / Tausch"
+      },
+      {
+        "word": "invoice",
+        "hint": "Rechnung"
+      },
+      {
+        "word": "pension",
+        "hint": "Rente / Pension"
+      },
+      {
+        "word": "bond",
+        "hint": "Anleihe"
+      }
+    ]
+  },
+  {
+    "key": "insurance_wb",
+    "name": "Versicherung",
+    "description": "Versicherungsbegriffe auf Englisch",
+    "iconName": "shield",
+    "color": "#4f46e5",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "premium",
+        "hint": "Prämie / Beitrag"
+      },
+      {
+        "word": "coverage",
+        "hint": "Deckung / Versicherungsschutz"
+      },
+      {
+        "word": "deductible",
+        "hint": "Selbstbeteiligung"
+      },
+      {
+        "word": "claim",
+        "hint": "Anspruch / Schadensmeldung"
+      },
+      {
+        "word": "liability",
+        "hint": "Haftung"
+      },
+      {
+        "word": "beneficiary",
+        "hint": "Begünstigter"
+      },
+      {
+        "word": "policyholder",
+        "hint": "Versicherungsnehmer"
+      },
+      {
+        "word": "reimbursement",
+        "hint": "Erstattung"
+      },
+      {
+        "word": "insurer",
+        "hint": "Versicherer"
+      },
+      {
+        "word": "exclusion",
+        "hint": "Ausschluss"
+      },
+      {
+        "word": "renewal",
+        "hint": "Verlängerung / Erneuerung"
+      },
+      {
+        "word": "adjuster",
+        "hint": "Schadenregulierer"
+      },
+      {
+        "word": "indemnity",
+        "hint": "Entschädigung"
+      },
+      {
+        "word": "copayment",
+        "hint": "Zuzahlung"
+      },
+      {
+        "word": "underwriter",
+        "hint": "Zeichner / Risikoprüfer"
+      }
+    ]
+  },
+  {
+    "key": "cooking_wb",
+    "name": "Kochen",
+    "description": "Kochbegriffe auf Englisch",
+    "iconName": "frying.pan",
+    "color": "#ea580c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "recipe",
+        "hint": "Rezept"
+      },
+      {
+        "word": "boil",
+        "hint": "Kochen / Sieden"
+      },
+      {
+        "word": "fry",
+        "hint": "Braten"
+      },
+      {
+        "word": "chop",
+        "hint": "Hacken / Schneiden"
+      },
+      {
+        "word": "stir",
+        "hint": "Rühren / Umrühren"
+      },
+      {
+        "word": "grill",
+        "hint": "Grillen"
+      },
+      {
+        "word": "simmer",
+        "hint": "Köcheln"
+      },
+      {
+        "word": "roast",
+        "hint": "Braten (im Ofen)"
+      },
+      {
+        "word": "steam",
+        "hint": "Dampfgaren"
+      },
+      {
+        "word": "blend",
+        "hint": "Mixen / Pürieren"
+      },
+      {
+        "word": "season",
+        "hint": "Würzen"
+      },
+      {
+        "word": "marinate",
+        "hint": "Marinieren"
+      },
+      {
+        "word": "drain",
+        "hint": "Abtropfen / Abgießen"
+      },
+      {
+        "word": "whisk",
+        "hint": "Schneebesen / Schlagen"
+      },
+      {
+        "word": "preheat",
+        "hint": "Vorheizen"
+      }
+    ]
+  },
+  {
+    "key": "baking_wb",
+    "name": "Backen",
+    "description": "Backbegriffe auf Englisch",
+    "iconName": "birthday.cake",
+    "color": "#d97706",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "flour",
+        "hint": "Mehl"
+      },
+      {
+        "word": "dough",
+        "hint": "Teig"
+      },
+      {
+        "word": "yeast",
+        "hint": "Hefe"
+      },
+      {
+        "word": "crust",
+        "hint": "Kruste"
+      },
+      {
+        "word": "frosting",
+        "hint": "Glasur / Zuckerguss"
+      },
+      {
+        "word": "muffin",
+        "hint": "Muffin"
+      },
+      {
+        "word": "pastry",
+        "hint": "Gebäck"
+      },
+      {
+        "word": "knead",
+        "hint": "Kneten"
+      },
+      {
+        "word": "sprinkle",
+        "hint": "Bestreuen"
+      },
+      {
+        "word": "batter",
+        "hint": "Teig (flüssiger)"
+      },
+      {
+        "word": "vanilla",
+        "hint": "Vanille"
+      },
+      {
+        "word": "cinnamon",
+        "hint": "Zimt"
+      },
+      {
+        "word": "rolling",
+        "hint": "Ausrollen (... pin)"
+      },
+      {
+        "word": "loaf",
+        "hint": "Laib (Brot)"
+      },
+      {
+        "word": "glaze",
+        "hint": "Glasur"
+      }
+    ]
+  },
+  {
+    "key": "spices_wb",
+    "name": "Gewürze",
+    "description": "Gewürze und Kräuter auf Englisch",
+    "iconName": "leaf.arrow.circlepath",
+    "color": "#b45309",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pepper",
+        "hint": "Pfeffer"
+      },
+      {
+        "word": "oregano",
+        "hint": "Oregano"
+      },
+      {
+        "word": "thyme",
+        "hint": "Thymian"
+      },
+      {
+        "word": "basil",
+        "hint": "Basilikum"
+      },
+      {
+        "word": "ginger",
+        "hint": "Ingwer"
+      },
+      {
+        "word": "nutmeg",
+        "hint": "Muskatnuss"
+      },
+      {
+        "word": "parsley",
+        "hint": "Petersilie"
+      },
+      {
+        "word": "turmeric",
+        "hint": "Kurkuma"
+      },
+      {
+        "word": "cumin",
+        "hint": "Kreuzkümmel"
+      },
+      {
+        "word": "paprika",
+        "hint": "Paprika (Gewürz)"
+      },
+      {
+        "word": "clove",
+        "hint": "Nelke"
+      },
+      {
+        "word": "saffron",
+        "hint": "Safran"
+      },
+      {
+        "word": "rosemary",
+        "hint": "Rosmarin"
+      },
+      {
+        "word": "mint",
+        "hint": "Minze"
+      },
+      {
+        "word": "chili",
+        "hint": "Chili"
+      }
+    ]
+  },
+  {
+    "key": "dairy_wb",
+    "name": "Milchprodukte",
+    "description": "Milchprodukte auf Englisch",
+    "iconName": "cup.and.saucer",
+    "color": "#fbbf24",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "milk",
+        "hint": "Milch"
+      },
+      {
+        "word": "cheese",
+        "hint": "Käse"
+      },
+      {
+        "word": "butter",
+        "hint": "Butter"
+      },
+      {
+        "word": "cream",
+        "hint": "Sahne"
+      },
+      {
+        "word": "yogurt",
+        "hint": "Joghurt"
+      },
+      {
+        "word": "whey",
+        "hint": "Molke"
+      },
+      {
+        "word": "cottage",
+        "hint": "Hüttenkäse (... cheese)"
+      },
+      {
+        "word": "cheddar",
+        "hint": "Cheddar-Käse"
+      },
+      {
+        "word": "ricotta",
+        "hint": "Ricotta"
+      },
+      {
+        "word": "custard",
+        "hint": "Pudding / Vanillesauce"
+      },
+      {
+        "word": "gelato",
+        "hint": "Speiseeis (ital.)"
+      },
+      {
+        "word": "whipped",
+        "hint": "Geschlagen (... cream)"
+      },
+      {
+        "word": "skimmed",
+        "hint": "Entrahmt (... milk)"
+      },
+      {
+        "word": "curd",
+        "hint": "Quark / Bruch"
+      },
+      {
+        "word": "milkshake",
+        "hint": "Milchshake"
+      }
+    ]
+  },
+  {
+    "key": "meat_wb",
+    "name": "Fleisch & Fisch",
+    "description": "Fleisch- und Fischsorten auf Englisch",
+    "iconName": "fish",
+    "color": "#b91c1c",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "chicken",
+        "hint": "Hähnchen"
+      },
+      {
+        "word": "beef",
+        "hint": "Rindfleisch"
+      },
+      {
+        "word": "pork",
+        "hint": "Schweinefleisch"
+      },
+      {
+        "word": "lamb",
+        "hint": "Lamm"
+      },
+      {
+        "word": "turkey",
+        "hint": "Truthahn"
+      },
+      {
+        "word": "salmon",
+        "hint": "Lachs"
+      },
+      {
+        "word": "tuna",
+        "hint": "Thunfisch"
+      },
+      {
+        "word": "shrimp",
+        "hint": "Garnele"
+      },
+      {
+        "word": "sausage",
+        "hint": "Wurst"
+      },
+      {
+        "word": "bacon",
+        "hint": "Speck"
+      },
+      {
+        "word": "venison",
+        "hint": "Wildfleisch"
+      },
+      {
+        "word": "lobster",
+        "hint": "Hummer"
+      },
+      {
+        "word": "fillet",
+        "hint": "Filet"
+      },
+      {
+        "word": "drumstick",
+        "hint": "Hähnchenschenkel"
+      },
+      {
+        "word": "trout",
+        "hint": "Forelle"
+      }
+    ]
+  },
+  {
+    "key": "pets_wb",
+    "name": "Haustiere",
+    "description": "Haustier-Begriffe auf Englisch",
+    "iconName": "pawprint",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "puppy",
+        "hint": "Welpe"
+      },
+      {
+        "word": "kitten",
+        "hint": "Kätzchen"
+      },
+      {
+        "word": "hamster",
+        "hint": "Hamster"
+      },
+      {
+        "word": "parrot",
+        "hint": "Papagei"
+      },
+      {
+        "word": "goldfish",
+        "hint": "Goldfisch"
+      },
+      {
+        "word": "rabbit",
+        "hint": "Kaninchen"
+      },
+      {
+        "word": "turtle",
+        "hint": "Schildkröte"
+      },
+      {
+        "word": "collar",
+        "hint": "Halsband"
+      },
+      {
+        "word": "leash",
+        "hint": "Leine"
+      },
+      {
+        "word": "kennel",
+        "hint": "Hundehütte"
+      },
+      {
+        "word": "aquarium",
+        "hint": "Aquarium"
+      },
+      {
+        "word": "feeder",
+        "hint": "Futternapf"
+      },
+      {
+        "word": "grooming",
+        "hint": "Pflege / Fellpflege"
+      },
+      {
+        "word": "veterinary",
+        "hint": "Tierärztlich"
+      },
+      {
+        "word": "cage",
+        "hint": "Käfig"
+      }
+    ]
+  },
+  {
+    "key": "birds_wb",
+    "name": "Vögel",
+    "description": "Vogelarten auf Englisch",
+    "iconName": "bird",
+    "color": "#14b8a6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "eagle",
+        "hint": "Adler"
+      },
+      {
+        "word": "sparrow",
+        "hint": "Spatz"
+      },
+      {
+        "word": "robin",
+        "hint": "Rotkehlchen"
+      },
+      {
+        "word": "penguin",
+        "hint": "Pinguin"
+      },
+      {
+        "word": "flamingo",
+        "hint": "Flamingo"
+      },
+      {
+        "word": "peacock",
+        "hint": "Pfau"
+      },
+      {
+        "word": "falcon",
+        "hint": "Falke"
+      },
+      {
+        "word": "swallow",
+        "hint": "Schwalbe"
+      },
+      {
+        "word": "pigeon",
+        "hint": "Taube"
+      },
+      {
+        "word": "crane",
+        "hint": "Kranich"
+      },
+      {
+        "word": "pelican",
+        "hint": "Pelikan"
+      },
+      {
+        "word": "seagull",
+        "hint": "Möwe"
+      },
+      {
+        "word": "finch",
+        "hint": "Fink"
+      },
+      {
+        "word": "heron",
+        "hint": "Reiher"
+      },
+      {
+        "word": "magpie",
+        "hint": "Elster"
+      }
+    ]
+  },
+  {
+    "key": "insects_wb",
+    "name": "Insekten",
+    "description": "Insektenarten auf Englisch",
+    "iconName": "ant",
+    "color": "#84cc16",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "butterfly",
+        "hint": "Schmetterling"
+      },
+      {
+        "word": "ladybug",
+        "hint": "Marienkäfer"
+      },
+      {
+        "word": "beetle",
+        "hint": "Käfer"
+      },
+      {
+        "word": "dragonfly",
+        "hint": "Libelle"
+      },
+      {
+        "word": "mosquito",
+        "hint": "Mücke / Moskito"
+      },
+      {
+        "word": "cricket",
+        "hint": "Grille"
+      },
+      {
+        "word": "firefly",
+        "hint": "Glühwürmchen"
+      },
+      {
+        "word": "caterpillar",
+        "hint": "Raupe"
+      },
+      {
+        "word": "grasshopper",
+        "hint": "Heuschrecke"
+      },
+      {
+        "word": "wasp",
+        "hint": "Wespe"
+      },
+      {
+        "word": "moth",
+        "hint": "Motte / Nachtfalter"
+      },
+      {
+        "word": "termite",
+        "hint": "Termite"
+      },
+      {
+        "word": "cockroach",
+        "hint": "Kakerlake"
+      },
+      {
+        "word": "flea",
+        "hint": "Floh"
+      },
+      {
+        "word": "mantis",
+        "hint": "Gottesanbeterin"
+      }
+    ]
+  },
+  {
+    "key": "marine_life_wb",
+    "name": "Meereslebewesen",
+    "description": "Meerestiere auf Englisch",
+    "iconName": "tortoise",
+    "color": "#0284c7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "octopus",
+        "hint": "Krake / Oktopus"
+      },
+      {
+        "word": "jellyfish",
+        "hint": "Qualle"
+      },
+      {
+        "word": "seahorse",
+        "hint": "Seepferdchen"
+      },
+      {
+        "word": "stingray",
+        "hint": "Stachelrochen"
+      },
+      {
+        "word": "shark",
+        "hint": "Hai"
+      },
+      {
+        "word": "oyster",
+        "hint": "Auster"
+      },
+      {
+        "word": "clam",
+        "hint": "Muschel / Venusmuschel"
+      },
+      {
+        "word": "walrus",
+        "hint": "Walross"
+      },
+      {
+        "word": "squid",
+        "hint": "Tintenfisch"
+      },
+      {
+        "word": "crab",
+        "hint": "Krabbe"
+      },
+      {
+        "word": "urchin",
+        "hint": "Seeigel"
+      },
+      {
+        "word": "manatee",
+        "hint": "Seekuh"
+      },
+      {
+        "word": "narwhal",
+        "hint": "Narwal"
+      },
+      {
+        "word": "otter",
+        "hint": "Otter (See-)"
+      },
+      {
+        "word": "moray",
+        "hint": "Muräne"
+      }
+    ]
+  },
+  {
+    "key": "farm_animals_wb",
+    "name": "Bauernhoftiere",
+    "description": "Tiere auf dem Bauernhof",
+    "iconName": "hare",
+    "color": "#92400e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "rooster",
+        "hint": "Hahn"
+      },
+      {
+        "word": "donkey",
+        "hint": "Esel"
+      },
+      {
+        "word": "goat",
+        "hint": "Ziege"
+      },
+      {
+        "word": "sheep",
+        "hint": "Schaf"
+      },
+      {
+        "word": "mare",
+        "hint": "Stute"
+      },
+      {
+        "word": "piglet",
+        "hint": "Ferkel"
+      },
+      {
+        "word": "calf",
+        "hint": "Kalb"
+      },
+      {
+        "word": "barn",
+        "hint": "Scheune"
+      },
+      {
+        "word": "stable",
+        "hint": "Stall"
+      },
+      {
+        "word": "pasture",
+        "hint": "Weide"
+      },
+      {
+        "word": "tractor",
+        "hint": "Traktor"
+      },
+      {
+        "word": "scarecrow",
+        "hint": "Vogelscheuche"
+      },
+      {
+        "word": "haystack",
+        "hint": "Heuhaufen"
+      },
+      {
+        "word": "silo",
+        "hint": "Silo"
+      },
+      {
+        "word": "foal",
+        "hint": "Fohlen"
+      }
+    ]
+  },
+  {
+    "key": "feelings_wb",
+    "name": "Gefühle",
+    "description": "Gefühls-Ausdrücke auf Englisch",
+    "iconName": "heart",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "anxious",
+        "hint": "Ängstlich"
+      },
+      {
+        "word": "grateful",
+        "hint": "Dankbar"
+      },
+      {
+        "word": "jealous",
+        "hint": "Eifersüchtig"
+      },
+      {
+        "word": "lonely",
+        "hint": "Einsam"
+      },
+      {
+        "word": "confused",
+        "hint": "Verwirrt"
+      },
+      {
+        "word": "proud",
+        "hint": "Stolz"
+      },
+      {
+        "word": "nervous",
+        "hint": "Nervös"
+      },
+      {
+        "word": "bored",
+        "hint": "Gelangweilt"
+      },
+      {
+        "word": "excited",
+        "hint": "Aufgeregt / Begeistert"
+      },
+      {
+        "word": "ashamed",
+        "hint": "Beschämt"
+      },
+      {
+        "word": "content",
+        "hint": "Zufrieden"
+      },
+      {
+        "word": "furious",
+        "hint": "Wütend"
+      },
+      {
+        "word": "hopeful",
+        "hint": "Hoffnungsvoll"
+      },
+      {
+        "word": "nostalgic",
+        "hint": "Nostalgisch"
+      },
+      {
+        "word": "relieved",
+        "hint": "Erleichtert"
+      }
+    ]
+  },
+  {
+    "key": "personality_wb",
+    "name": "Persönlichkeit",
+    "description": "Persönlichkeitsmerkmale auf Englisch",
+    "iconName": "person.crop.circle",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "generous",
+        "hint": "Großzügig"
+      },
+      {
+        "word": "stubborn",
+        "hint": "Stur / Eigensinnig"
+      },
+      {
+        "word": "humble",
+        "hint": "Bescheiden"
+      },
+      {
+        "word": "curious",
+        "hint": "Neugierig"
+      },
+      {
+        "word": "reliable",
+        "hint": "Zuverlässig"
+      },
+      {
+        "word": "patient",
+        "hint": "Geduldig"
+      },
+      {
+        "word": "ambitious",
+        "hint": "Ehrgeizig"
+      },
+      {
+        "word": "cheerful",
+        "hint": "Fröhlich / Heiter"
+      },
+      {
+        "word": "honest",
+        "hint": "Ehrlich"
+      },
+      {
+        "word": "loyal",
+        "hint": "Loyal / Treu"
+      },
+      {
+        "word": "creative",
+        "hint": "Kreativ"
+      },
+      {
+        "word": "optimistic",
+        "hint": "Optimistisch"
+      },
+      {
+        "word": "cautious",
+        "hint": "Vorsichtig"
+      },
+      {
+        "word": "witty",
+        "hint": "Witzig / Geistreich"
+      },
+      {
+        "word": "empathetic",
+        "hint": "Einfühlsam"
+      }
+    ]
+  },
+  {
+    "key": "relationships_wb",
+    "name": "Beziehungen",
+    "description": "Beziehungsbegriffe auf Englisch",
+    "iconName": "person.2",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "friend",
+        "hint": "Freund"
+      },
+      {
+        "word": "colleague",
+        "hint": "Kollege"
+      },
+      {
+        "word": "neighbor",
+        "hint": "Nachbar"
+      },
+      {
+        "word": "partner",
+        "hint": "Partner"
+      },
+      {
+        "word": "spouse",
+        "hint": "Ehepartner"
+      },
+      {
+        "word": "fiancee",
+        "hint": "Verlobte"
+      },
+      {
+        "word": "acquaintance",
+        "hint": "Bekannter"
+      },
+      {
+        "word": "companion",
+        "hint": "Begleiter / Gefährte"
+      },
+      {
+        "word": "rival",
+        "hint": "Rivale / Konkurrent"
+      },
+      {
+        "word": "mentor",
+        "hint": "Mentor"
+      },
+      {
+        "word": "guardian",
+        "hint": "Vormund / Beschützer"
+      },
+      {
+        "word": "sibling",
+        "hint": "Geschwister"
+      },
+      {
+        "word": "ancestor",
+        "hint": "Vorfahre / Ahne"
+      },
+      {
+        "word": "nephew",
+        "hint": "Neffe"
+      },
+      {
+        "word": "niece",
+        "hint": "Nichte"
+      }
+    ]
+  },
+  {
+    "key": "communication_wb",
+    "name": "Kommunikation",
+    "description": "Kommunikationsbegriffe auf Englisch",
+    "iconName": "bubble.left.and.bubble.right",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "debate",
+        "hint": "Debatte"
+      },
+      {
+        "word": "speech",
+        "hint": "Rede"
+      },
+      {
+        "word": "whisper",
+        "hint": "Flüstern"
+      },
+      {
+        "word": "negotiate",
+        "hint": "Verhandeln"
+      },
+      {
+        "word": "compliment",
+        "hint": "Kompliment"
+      },
+      {
+        "word": "apologize",
+        "hint": "Entschuldigen"
+      },
+      {
+        "word": "persuade",
+        "hint": "Überzeugen"
+      },
+      {
+        "word": "announce",
+        "hint": "Ankündigen"
+      },
+      {
+        "word": "explain",
+        "hint": "Erklären"
+      },
+      {
+        "word": "translate",
+        "hint": "Übersetzen"
+      },
+      {
+        "word": "summarize",
+        "hint": "Zusammenfassen"
+      },
+      {
+        "word": "interrupt",
+        "hint": "Unterbrechen"
+      },
+      {
+        "word": "respond",
+        "hint": "Antworten"
+      },
+      {
+        "word": "greet",
+        "hint": "Begrüßen"
+      },
+      {
+        "word": "discuss",
+        "hint": "Besprechen"
+      }
+    ]
+  },
+  {
+    "key": "gestures_wb",
+    "name": "Gesten & Ausdruck",
+    "description": "Körpersprache und Gesten",
+    "iconName": "hand.wave",
+    "color": "#f97316",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "nod",
+        "hint": "Nicken"
+      },
+      {
+        "word": "shrug",
+        "hint": "Achselzucken"
+      },
+      {
+        "word": "wink",
+        "hint": "Zwinkern"
+      },
+      {
+        "word": "frown",
+        "hint": "Stirnrunzeln"
+      },
+      {
+        "word": "yawn",
+        "hint": "Gähnen"
+      },
+      {
+        "word": "clap",
+        "hint": "Klatschen"
+      },
+      {
+        "word": "bow",
+        "hint": "Verbeugung"
+      },
+      {
+        "word": "wave",
+        "hint": "Winken"
+      },
+      {
+        "word": "point",
+        "hint": "Zeigen"
+      },
+      {
+        "word": "squeeze",
+        "hint": "Drücken / Quetschen"
+      },
+      {
+        "word": "thumbs",
+        "hint": "Daumen (... up)"
+      },
+      {
+        "word": "handshake",
+        "hint": "Händedruck"
+      },
+      {
+        "word": "embrace",
+        "hint": "Umarmung"
+      },
+      {
+        "word": "gesture",
+        "hint": "Geste"
+      },
+      {
+        "word": "stretch",
+        "hint": "Strecken / Dehnen"
+      }
+    ]
+  },
+  {
+    "key": "architecture_wb",
+    "name": "Architektur",
+    "description": "Architekturbegriffe auf Englisch",
+    "iconName": "building.2",
+    "color": "#64748b",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "column",
+        "hint": "Säule"
+      },
+      {
+        "word": "facade",
+        "hint": "Fassade"
+      },
+      {
+        "word": "balcony",
+        "hint": "Balkon"
+      },
+      {
+        "word": "terrace",
+        "hint": "Terrasse"
+      },
+      {
+        "word": "dome",
+        "hint": "Kuppel"
+      },
+      {
+        "word": "pillar",
+        "hint": "Pfeiler"
+      },
+      {
+        "word": "arch",
+        "hint": "Bogen"
+      },
+      {
+        "word": "staircase",
+        "hint": "Treppenhaus"
+      },
+      {
+        "word": "ceiling",
+        "hint": "Decke"
+      },
+      {
+        "word": "beam",
+        "hint": "Balken / Träger"
+      },
+      {
+        "word": "skylight",
+        "hint": "Dachfenster / Oberlicht"
+      },
+      {
+        "word": "corridor",
+        "hint": "Korridor / Flur"
+      },
+      {
+        "word": "basement",
+        "hint": "Keller"
+      },
+      {
+        "word": "attic",
+        "hint": "Dachboden"
+      },
+      {
+        "word": "blueprint",
+        "hint": "Bauplan"
+      }
+    ]
+  },
+  {
+    "key": "construction_wb",
+    "name": "Bauwesen",
+    "description": "Bau-Begriffe auf Englisch",
+    "iconName": "hammer",
+    "color": "#a16207",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "concrete",
+        "hint": "Beton"
+      },
+      {
+        "word": "scaffold",
+        "hint": "Gerüst"
+      },
+      {
+        "word": "crane",
+        "hint": "Kran"
+      },
+      {
+        "word": "foundation",
+        "hint": "Fundament"
+      },
+      {
+        "word": "insulation",
+        "hint": "Dämmung / Isolierung"
+      },
+      {
+        "word": "mortar",
+        "hint": "Mörtel"
+      },
+      {
+        "word": "plywood",
+        "hint": "Sperrholz"
+      },
+      {
+        "word": "rebar",
+        "hint": "Bewehrungsstahl"
+      },
+      {
+        "word": "excavation",
+        "hint": "Ausgrabung"
+      },
+      {
+        "word": "gravel",
+        "hint": "Kies / Schotter"
+      },
+      {
+        "word": "demolition",
+        "hint": "Abriss"
+      },
+      {
+        "word": "ventilation",
+        "hint": "Belüftung"
+      },
+      {
+        "word": "cladding",
+        "hint": "Verkleidung"
+      },
+      {
+        "word": "guttering",
+        "hint": "Dachrinne"
+      },
+      {
+        "word": "survey",
+        "hint": "Vermessung"
+      }
+    ]
+  },
+  {
+    "key": "electricity_wb",
+    "name": "Elektrizität",
+    "description": "Elektro-Begriffe auf Englisch",
+    "iconName": "bolt",
+    "color": "#eab308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "voltage",
+        "hint": "Spannung"
+      },
+      {
+        "word": "circuit",
+        "hint": "Stromkreis"
+      },
+      {
+        "word": "outlet",
+        "hint": "Steckdose"
+      },
+      {
+        "word": "switch",
+        "hint": "Schalter"
+      },
+      {
+        "word": "fuse",
+        "hint": "Sicherung"
+      },
+      {
+        "word": "cable",
+        "hint": "Kabel"
+      },
+      {
+        "word": "socket",
+        "hint": "Buchse / Steckdose"
+      },
+      {
+        "word": "wiring",
+        "hint": "Verkabelung"
+      },
+      {
+        "word": "transformer",
+        "hint": "Transformator"
+      },
+      {
+        "word": "generator",
+        "hint": "Generator"
+      },
+      {
+        "word": "battery",
+        "hint": "Batterie"
+      },
+      {
+        "word": "conductor",
+        "hint": "Leiter"
+      },
+      {
+        "word": "ampere",
+        "hint": "Ampere"
+      },
+      {
+        "word": "resistor",
+        "hint": "Widerstand"
+      },
+      {
+        "word": "electrode",
+        "hint": "Elektrode"
+      }
+    ]
+  },
+  {
+    "key": "plumbing_wb",
+    "name": "Sanitär & Klempnerei",
+    "description": "Sanitärbegriffe auf Englisch",
+    "iconName": "wrench",
+    "color": "#475569",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "pipe",
+        "hint": "Rohr"
+      },
+      {
+        "word": "valve",
+        "hint": "Ventil"
+      },
+      {
+        "word": "gasket",
+        "hint": "Dichtung"
+      },
+      {
+        "word": "washer",
+        "hint": "Unterlegscheibe / Dichtung"
+      },
+      {
+        "word": "plunger",
+        "hint": "Saugglocke / Pömpel"
+      },
+      {
+        "word": "wrench",
+        "hint": "Schraubenschlüssel"
+      },
+      {
+        "word": "coupling",
+        "hint": "Kupplung / Verbindung"
+      },
+      {
+        "word": "thermostat",
+        "hint": "Thermostat"
+      },
+      {
+        "word": "boiler",
+        "hint": "Heizkessel"
+      },
+      {
+        "word": "radiator",
+        "hint": "Heizkörper"
+      },
+      {
+        "word": "sealant",
+        "hint": "Dichtmittel"
+      },
+      {
+        "word": "nozzle",
+        "hint": "Düse"
+      },
+      {
+        "word": "cistern",
+        "hint": "Spülkasten"
+      },
+      {
+        "word": "fixture",
+        "hint": "Armatur"
+      },
+      {
+        "word": "drainage",
+        "hint": "Entwässerung"
+      }
+    ]
+  },
+  {
+    "key": "gardening_tools_wb",
+    "name": "Gartengeräte",
+    "description": "Gartengeräte auf Englisch",
+    "iconName": "leaf.fill",
+    "color": "#15803d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "shovel",
+        "hint": "Schaufel"
+      },
+      {
+        "word": "rake",
+        "hint": "Rechen / Harke"
+      },
+      {
+        "word": "pruner",
+        "hint": "Gartenschere"
+      },
+      {
+        "word": "hose",
+        "hint": "Gartenschlauch"
+      },
+      {
+        "word": "wheelbarrow",
+        "hint": "Schubkarre"
+      },
+      {
+        "word": "trowel",
+        "hint": "Handschaufel / Kelle"
+      },
+      {
+        "word": "spade",
+        "hint": "Spaten"
+      },
+      {
+        "word": "watering",
+        "hint": "Gieß- (... can)"
+      },
+      {
+        "word": "mower",
+        "hint": "Rasenmäher"
+      },
+      {
+        "word": "trimmer",
+        "hint": "Rasentrimmer"
+      },
+      {
+        "word": "gloves",
+        "hint": "Handschuhe"
+      },
+      {
+        "word": "shears",
+        "hint": "Heckenschere"
+      },
+      {
+        "word": "sprayer",
+        "hint": "Sprühgerät"
+      },
+      {
+        "word": "cultivator",
+        "hint": "Grubber / Kultivator"
+      },
+      {
+        "word": "edger",
+        "hint": "Rasenkantenschneider"
+      }
+    ]
+  },
+  {
+    "key": "medicine_wb",
+    "name": "Medizin",
+    "description": "Medizinische Begriffe auf Englisch",
+    "iconName": "cross.case",
+    "color": "#dc2626",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "symptom",
+        "hint": "Symptom"
+      },
+      {
+        "word": "diagnosis",
+        "hint": "Diagnose"
+      },
+      {
+        "word": "surgery",
+        "hint": "Operation / Chirurgie"
+      },
+      {
+        "word": "therapy",
+        "hint": "Therapie"
+      },
+      {
+        "word": "vaccine",
+        "hint": "Impfstoff"
+      },
+      {
+        "word": "infection",
+        "hint": "Infektion"
+      },
+      {
+        "word": "fracture",
+        "hint": "Bruch / Fraktur"
+      },
+      {
+        "word": "allergy",
+        "hint": "Allergie"
+      },
+      {
+        "word": "bandage",
+        "hint": "Verband / Bandage"
+      },
+      {
+        "word": "stethoscope",
+        "hint": "Stethoskop"
+      },
+      {
+        "word": "injection",
+        "hint": "Spritze / Injektion"
+      },
+      {
+        "word": "antibiotic",
+        "hint": "Antibiotikum"
+      },
+      {
+        "word": "chronic",
+        "hint": "Chronisch"
+      },
+      {
+        "word": "ambulance",
+        "hint": "Krankenwagen"
+      },
+      {
+        "word": "prescription",
+        "hint": "Rezept (ärztlich)"
+      }
+    ]
+  },
+  {
+    "key": "pharmacy_wb",
+    "name": "Apotheke",
+    "description": "Apotheken-Begriffe auf Englisch",
+    "iconName": "pills",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "tablet",
+        "hint": "Tablette"
+      },
+      {
+        "word": "capsule",
+        "hint": "Kapsel"
+      },
+      {
+        "word": "ointment",
+        "hint": "Salbe"
+      },
+      {
+        "word": "syrup",
+        "hint": "Sirup"
+      },
+      {
+        "word": "dosage",
+        "hint": "Dosierung"
+      },
+      {
+        "word": "painkiller",
+        "hint": "Schmerzmittel"
+      },
+      {
+        "word": "vitamin",
+        "hint": "Vitamin"
+      },
+      {
+        "word": "supplement",
+        "hint": "Nahrungsergänzung"
+      },
+      {
+        "word": "pharmacist",
+        "hint": "Apotheker"
+      },
+      {
+        "word": "cough",
+        "hint": "Husten"
+      },
+      {
+        "word": "inhaler",
+        "hint": "Inhalator"
+      },
+      {
+        "word": "thermometer",
+        "hint": "Thermometer"
+      },
+      {
+        "word": "plaster",
+        "hint": "Pflaster"
+      },
+      {
+        "word": "lotion",
+        "hint": "Lotion"
+      },
+      {
+        "word": "disinfectant",
+        "hint": "Desinfektionsmittel"
+      }
+    ]
+  },
+  {
+    "key": "fitness_wb",
+    "name": "Fitness",
+    "description": "Fitness-Begriffe auf Englisch",
+    "iconName": "figure.run",
+    "color": "#f97316",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "treadmill",
+        "hint": "Laufband"
+      },
+      {
+        "word": "dumbbell",
+        "hint": "Hantel"
+      },
+      {
+        "word": "squat",
+        "hint": "Kniebeuge"
+      },
+      {
+        "word": "pushup",
+        "hint": "Liegestütz"
+      },
+      {
+        "word": "cardio",
+        "hint": "Cardio / Ausdauertraining"
+      },
+      {
+        "word": "warmup",
+        "hint": "Aufwärmen"
+      },
+      {
+        "word": "stamina",
+        "hint": "Ausdauer"
+      },
+      {
+        "word": "plank",
+        "hint": "Plank / Unterarmstütz"
+      },
+      {
+        "word": "bench",
+        "hint": "Bank (Hantelbank)"
+      },
+      {
+        "word": "lunge",
+        "hint": "Ausfallschritt"
+      },
+      {
+        "word": "trainer",
+        "hint": "Trainer"
+      },
+      {
+        "word": "barbell",
+        "hint": "Langhantel"
+      },
+      {
+        "word": "cooldown",
+        "hint": "Abkühlen / Auslaufen"
+      },
+      {
+        "word": "muscle",
+        "hint": "Muskel"
+      },
+      {
+        "word": "endurance",
+        "hint": "Ausdauer / Durchhaltevermögen"
+      }
+    ]
+  },
+  {
+    "key": "yoga_wb",
+    "name": "Yoga & Meditation",
+    "description": "Yoga-Begriffe auf Englisch",
+    "iconName": "figure.mind.and.body",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "posture",
+        "hint": "Haltung / Pose"
+      },
+      {
+        "word": "breathe",
+        "hint": "Atmen"
+      },
+      {
+        "word": "mindful",
+        "hint": "Achtsam"
+      },
+      {
+        "word": "flexible",
+        "hint": "Flexibel"
+      },
+      {
+        "word": "balance",
+        "hint": "Gleichgewicht"
+      },
+      {
+        "word": "mantra",
+        "hint": "Mantra"
+      },
+      {
+        "word": "chakra",
+        "hint": "Chakra"
+      },
+      {
+        "word": "stretch",
+        "hint": "Dehnen / Strecken"
+      },
+      {
+        "word": "peaceful",
+        "hint": "Friedlich"
+      },
+      {
+        "word": "inhale",
+        "hint": "Einatmen"
+      },
+      {
+        "word": "exhale",
+        "hint": "Ausatmen"
+      },
+      {
+        "word": "warrior",
+        "hint": "Krieger (Yoga-Pose)"
+      },
+      {
+        "word": "lotus",
+        "hint": "Lotus (Sitzposition)"
+      },
+      {
+        "word": "harmony",
+        "hint": "Harmonie"
+      },
+      {
+        "word": "awareness",
+        "hint": "Bewusstsein / Achtsamkeit"
+      }
+    ]
+  },
+  {
+    "key": "mental_health_wb",
+    "name": "Psychische Gesundheit",
+    "description": "Begriffe zur psychischen Gesundheit",
+    "iconName": "brain.head.profile",
+    "color": "#6366f1",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "anxiety",
+        "hint": "Angst / Angststörung"
+      },
+      {
+        "word": "resilience",
+        "hint": "Resilienz / Belastbarkeit"
+      },
+      {
+        "word": "burnout",
+        "hint": "Burnout / Erschöpfung"
+      },
+      {
+        "word": "coping",
+        "hint": "Bewältigung"
+      },
+      {
+        "word": "counselor",
+        "hint": "Berater / Therapeut"
+      },
+      {
+        "word": "trauma",
+        "hint": "Trauma"
+      },
+      {
+        "word": "wellbeing",
+        "hint": "Wohlbefinden"
+      },
+      {
+        "word": "disorder",
+        "hint": "Störung"
+      },
+      {
+        "word": "phobia",
+        "hint": "Phobie"
+      },
+      {
+        "word": "recovery",
+        "hint": "Genesung / Erholung"
+      },
+      {
+        "word": "stress",
+        "hint": "Stress"
+      },
+      {
+        "word": "compassion",
+        "hint": "Mitgefühl"
+      },
+      {
+        "word": "gratitude",
+        "hint": "Dankbarkeit"
+      },
+      {
+        "word": "journal",
+        "hint": "Tagebuch"
+      },
+      {
+        "word": "boundary",
+        "hint": "Grenze (persönliche)"
+      }
+    ]
+  },
+  {
+    "key": "vehicles_wb",
+    "name": "Fahrzeuge",
+    "description": "Fahrzeugtypen auf Englisch",
+    "iconName": "car",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "truck",
+        "hint": "Lastwagen"
+      },
+      {
+        "word": "motorcycle",
+        "hint": "Motorrad"
+      },
+      {
+        "word": "scooter",
+        "hint": "Roller"
+      },
+      {
+        "word": "trailer",
+        "hint": "Anhänger"
+      },
+      {
+        "word": "ambulance",
+        "hint": "Krankenwagen"
+      },
+      {
+        "word": "convertible",
+        "hint": "Cabrio"
+      },
+      {
+        "word": "minivan",
+        "hint": "Kleinbus"
+      },
+      {
+        "word": "sedan",
+        "hint": "Limousine"
+      },
+      {
+        "word": "vehicle",
+        "hint": "Fahrzeug"
+      },
+      {
+        "word": "dashboard",
+        "hint": "Armaturenbrett"
+      },
+      {
+        "word": "engine",
+        "hint": "Motor"
+      },
+      {
+        "word": "bumper",
+        "hint": "Stoßstange"
+      },
+      {
+        "word": "windshield",
+        "hint": "Windschutzscheibe"
+      },
+      {
+        "word": "steering",
+        "hint": "Lenkung (... wheel)"
+      },
+      {
+        "word": "exhaust",
+        "hint": "Auspuff"
+      }
+    ]
+  },
+  {
+    "key": "aviation_wb",
+    "name": "Luftfahrt",
+    "description": "Luftfahrtbegriffe auf Englisch",
+    "iconName": "airplane",
+    "color": "#0ea5e9",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "runway",
+        "hint": "Start- / Landebahn"
+      },
+      {
+        "word": "cockpit",
+        "hint": "Cockpit"
+      },
+      {
+        "word": "turbulence",
+        "hint": "Turbulenz"
+      },
+      {
+        "word": "altitude",
+        "hint": "Flughöhe"
+      },
+      {
+        "word": "fuselage",
+        "hint": "Rumpf (Flugzeug)"
+      },
+      {
+        "word": "boarding",
+        "hint": "Einsteigen / Boarding"
+      },
+      {
+        "word": "departure",
+        "hint": "Abflug"
+      },
+      {
+        "word": "terminal",
+        "hint": "Terminal"
+      },
+      {
+        "word": "propeller",
+        "hint": "Propeller"
+      },
+      {
+        "word": "landing",
+        "hint": "Landung"
+      },
+      {
+        "word": "hangar",
+        "hint": "Hangar / Flugzeughalle"
+      },
+      {
+        "word": "steward",
+        "hint": "Steward / Flugbegleiter"
+      },
+      {
+        "word": "overhead",
+        "hint": "Gepäckfach (... bin)"
+      },
+      {
+        "word": "customs",
+        "hint": "Zoll"
+      },
+      {
+        "word": "passport",
+        "hint": "Reisepass"
+      }
+    ]
+  },
+  {
+    "key": "shipping_wb",
+    "name": "Schifffahrt",
+    "description": "Schifffahrtsbegriffe auf Englisch",
+    "iconName": "ferry",
+    "color": "#1d4ed8",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "vessel",
+        "hint": "Schiff / Gefäß"
+      },
+      {
+        "word": "harbor",
+        "hint": "Hafen"
+      },
+      {
+        "word": "cargo",
+        "hint": "Fracht / Ladung"
+      },
+      {
+        "word": "captain",
+        "hint": "Kapitän"
+      },
+      {
+        "word": "anchor",
+        "hint": "Anker"
+      },
+      {
+        "word": "deck",
+        "hint": "Deck"
+      },
+      {
+        "word": "stern",
+        "hint": "Heck"
+      },
+      {
+        "word": "porthole",
+        "hint": "Bullauge"
+      },
+      {
+        "word": "lifeboat",
+        "hint": "Rettungsboot"
+      },
+      {
+        "word": "voyage",
+        "hint": "Reise / Seereise"
+      },
+      {
+        "word": "freight",
+        "hint": "Fracht"
+      },
+      {
+        "word": "buoy",
+        "hint": "Boje"
+      },
+      {
+        "word": "mast",
+        "hint": "Mast"
+      },
+      {
+        "word": "hull",
+        "hint": "Rumpf (Schiff)"
+      },
+      {
+        "word": "pier",
+        "hint": "Pier / Anlegestelle"
+      }
+    ]
+  },
+  {
+    "key": "cycling_wb",
+    "name": "Radfahren",
+    "description": "Fahrradbegriffe auf Englisch",
+    "iconName": "bicycle",
+    "color": "#65a30d",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "pedal",
+        "hint": "Pedal"
+      },
+      {
+        "word": "helmet",
+        "hint": "Helm"
+      },
+      {
+        "word": "chain",
+        "hint": "Kette"
+      },
+      {
+        "word": "handlebar",
+        "hint": "Lenker"
+      },
+      {
+        "word": "saddle",
+        "hint": "Sattel"
+      },
+      {
+        "word": "spoke",
+        "hint": "Speiche"
+      },
+      {
+        "word": "brake",
+        "hint": "Bremse"
+      },
+      {
+        "word": "gear",
+        "hint": "Gang / Schaltung"
+      },
+      {
+        "word": "tire",
+        "hint": "Reifen"
+      },
+      {
+        "word": "pump",
+        "hint": "Luftpumpe"
+      },
+      {
+        "word": "fender",
+        "hint": "Schutzblech"
+      },
+      {
+        "word": "kickstand",
+        "hint": "Fahrradständer"
+      },
+      {
+        "word": "basket",
+        "hint": "Korb"
+      },
+      {
+        "word": "reflector",
+        "hint": "Reflektor"
+      },
+      {
+        "word": "bell",
+        "hint": "Klingel"
+      }
+    ]
+  },
+  {
+    "key": "trains_wb",
+    "name": "Eisenbahn",
+    "description": "Zugbegriffe auf Englisch",
+    "iconName": "tram",
+    "color": "#b91c1c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "platform",
+        "hint": "Bahnsteig"
+      },
+      {
+        "word": "conductor",
+        "hint": "Schaffner"
+      },
+      {
+        "word": "carriage",
+        "hint": "Waggon"
+      },
+      {
+        "word": "locomotive",
+        "hint": "Lokomotive"
+      },
+      {
+        "word": "timetable",
+        "hint": "Fahrplan"
+      },
+      {
+        "word": "commuter",
+        "hint": "Pendler"
+      },
+      {
+        "word": "sleeper",
+        "hint": "Schlafwagen / Schwelle"
+      },
+      {
+        "word": "junction",
+        "hint": "Knotenpunkt / Kreuzung"
+      },
+      {
+        "word": "signal",
+        "hint": "Signal"
+      },
+      {
+        "word": "freight",
+        "hint": "Güterzug (... train)"
+      },
+      {
+        "word": "express",
+        "hint": "Schnellzug"
+      },
+      {
+        "word": "station",
+        "hint": "Bahnhof"
+      },
+      {
+        "word": "tunnel",
+        "hint": "Tunnel"
+      },
+      {
+        "word": "crossing",
+        "hint": "Bahnübergang"
+      },
+      {
+        "word": "ticket",
+        "hint": "Fahrkarte"
+      }
+    ]
+  },
+  {
+    "key": "mathematics_wb",
+    "name": "Mathematik",
+    "description": "Mathematische Begriffe auf Englisch",
+    "iconName": "function",
+    "color": "#4338ca",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "equation",
+        "hint": "Gleichung"
+      },
+      {
+        "word": "fraction",
+        "hint": "Bruch"
+      },
+      {
+        "word": "diameter",
+        "hint": "Durchmesser"
+      },
+      {
+        "word": "triangle",
+        "hint": "Dreieck"
+      },
+      {
+        "word": "formula",
+        "hint": "Formel"
+      },
+      {
+        "word": "decimal",
+        "hint": "Dezimalzahl"
+      },
+      {
+        "word": "average",
+        "hint": "Durchschnitt"
+      },
+      {
+        "word": "multiply",
+        "hint": "Multiplizieren"
+      },
+      {
+        "word": "subtract",
+        "hint": "Subtrahieren"
+      },
+      {
+        "word": "geometry",
+        "hint": "Geometrie"
+      },
+      {
+        "word": "angle",
+        "hint": "Winkel"
+      },
+      {
+        "word": "radius",
+        "hint": "Radius"
+      },
+      {
+        "word": "addition",
+        "hint": "Addition"
+      },
+      {
+        "word": "graph",
+        "hint": "Diagramm / Graph"
+      },
+      {
+        "word": "volume",
+        "hint": "Volumen"
+      }
+    ]
+  },
+  {
+    "key": "physics_wb",
+    "name": "Physik",
+    "description": "Physik-Begriffe auf Englisch",
+    "iconName": "atom",
+    "color": "#2563eb",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "momentum",
+        "hint": "Impuls"
+      },
+      {
+        "word": "friction",
+        "hint": "Reibung"
+      },
+      {
+        "word": "velocity",
+        "hint": "Geschwindigkeit"
+      },
+      {
+        "word": "particle",
+        "hint": "Teilchen / Partikel"
+      },
+      {
+        "word": "electron",
+        "hint": "Elektron"
+      },
+      {
+        "word": "neutron",
+        "hint": "Neutron"
+      },
+      {
+        "word": "proton",
+        "hint": "Proton"
+      },
+      {
+        "word": "spectrum",
+        "hint": "Spektrum"
+      },
+      {
+        "word": "wavelength",
+        "hint": "Wellenlänge"
+      },
+      {
+        "word": "quantum",
+        "hint": "Quant / Quantum"
+      },
+      {
+        "word": "magnet",
+        "hint": "Magnet"
+      },
+      {
+        "word": "density",
+        "hint": "Dichte"
+      },
+      {
+        "word": "pressure",
+        "hint": "Druck"
+      },
+      {
+        "word": "inertia",
+        "hint": "Trägheit"
+      },
+      {
+        "word": "entropy",
+        "hint": "Entropie"
+      }
+    ]
+  },
+  {
+    "key": "chemistry_wb",
+    "name": "Chemie",
+    "description": "Chemie-Begriffe auf Englisch",
+    "iconName": "flask",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "molecule",
+        "hint": "Molekül"
+      },
+      {
+        "word": "element",
+        "hint": "Element"
+      },
+      {
+        "word": "compound",
+        "hint": "Verbindung"
+      },
+      {
+        "word": "reaction",
+        "hint": "Reaktion"
+      },
+      {
+        "word": "catalyst",
+        "hint": "Katalysator"
+      },
+      {
+        "word": "solution",
+        "hint": "Lösung"
+      },
+      {
+        "word": "acid",
+        "hint": "Säure"
+      },
+      {
+        "word": "alkaline",
+        "hint": "Alkalisch / Basisch"
+      },
+      {
+        "word": "oxidation",
+        "hint": "Oxidation"
+      },
+      {
+        "word": "crystal",
+        "hint": "Kristall"
+      },
+      {
+        "word": "isotope",
+        "hint": "Isotop"
+      },
+      {
+        "word": "formula",
+        "hint": "Formel (chemische)"
+      },
+      {
+        "word": "carbon",
+        "hint": "Kohlenstoff"
+      },
+      {
+        "word": "hydrogen",
+        "hint": "Wasserstoff"
+      },
+      {
+        "word": "nitrogen",
+        "hint": "Stickstoff"
+      }
+    ]
+  },
+  {
+    "key": "biology_wb",
+    "name": "Biologie",
+    "description": "Biologie-Begriffe auf Englisch",
+    "iconName": "leaf.arrow.triangle.circlepath",
+    "color": "#16a34a",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "cell",
+        "hint": "Zelle"
+      },
+      {
+        "word": "organism",
+        "hint": "Organismus"
+      },
+      {
+        "word": "chromosome",
+        "hint": "Chromosom"
+      },
+      {
+        "word": "evolution",
+        "hint": "Evolution"
+      },
+      {
+        "word": "species",
+        "hint": "Art / Spezies"
+      },
+      {
+        "word": "ecosystem",
+        "hint": "Ökosystem"
+      },
+      {
+        "word": "nucleus",
+        "hint": "Zellkern"
+      },
+      {
+        "word": "protein",
+        "hint": "Protein / Eiweiß"
+      },
+      {
+        "word": "membrane",
+        "hint": "Membran"
+      },
+      {
+        "word": "bacteria",
+        "hint": "Bakterien"
+      },
+      {
+        "word": "enzyme",
+        "hint": "Enzym"
+      },
+      {
+        "word": "genetic",
+        "hint": "Genetisch"
+      },
+      {
+        "word": "habitat",
+        "hint": "Lebensraum"
+      },
+      {
+        "word": "predator",
+        "hint": "Raubtier / Jäger"
+      },
+      {
+        "word": "photosynthesis",
+        "hint": "Fotosynthese"
+      }
+    ]
+  },
+  {
+    "key": "science_wb",
+    "name": "Wissenschaft allgemein",
+    "description": "Allgemeine Wissenschaftsbegriffe",
+    "iconName": "graduationcap",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "experiment",
+        "hint": "Experiment / Versuch"
+      },
+      {
+        "word": "hypothesis",
+        "hint": "Hypothese"
+      },
+      {
+        "word": "research",
+        "hint": "Forschung"
+      },
+      {
+        "word": "theory",
+        "hint": "Theorie"
+      },
+      {
+        "word": "discovery",
+        "hint": "Entdeckung"
+      },
+      {
+        "word": "laboratory",
+        "hint": "Labor"
+      },
+      {
+        "word": "microscope",
+        "hint": "Mikroskop"
+      },
+      {
+        "word": "analysis",
+        "hint": "Analyse"
+      },
+      {
+        "word": "evidence",
+        "hint": "Beweis / Nachweis"
+      },
+      {
+        "word": "conclusion",
+        "hint": "Schlussfolgerung"
+      },
+      {
+        "word": "variable",
+        "hint": "Variable"
+      },
+      {
+        "word": "method",
+        "hint": "Methode"
+      },
+      {
+        "word": "data",
+        "hint": "Daten"
+      },
+      {
+        "word": "sample",
+        "hint": "Probe / Stichprobe"
+      },
+      {
+        "word": "observe",
+        "hint": "Beobachten"
+      }
+    ]
+  },
+  {
+    "key": "festivals_wb",
+    "name": "Feste & Feiern",
+    "description": "Festbegriffe auf Englisch",
+    "iconName": "party.popper",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "carnival",
+        "hint": "Karneval"
+      },
+      {
+        "word": "parade",
+        "hint": "Parade / Umzug"
+      },
+      {
+        "word": "fireworks",
+        "hint": "Feuerwerk"
+      },
+      {
+        "word": "costume",
+        "hint": "Kostüm / Verkleidung"
+      },
+      {
+        "word": "lantern",
+        "hint": "Laterne"
+      },
+      {
+        "word": "confetti",
+        "hint": "Konfetti"
+      },
+      {
+        "word": "pageant",
+        "hint": "Festzug / Schau"
+      },
+      {
+        "word": "streamer",
+        "hint": "Luftschlange"
+      },
+      {
+        "word": "bonfire",
+        "hint": "Freudenfeuer"
+      },
+      {
+        "word": "spectacle",
+        "hint": "Spektakel"
+      },
+      {
+        "word": "concert",
+        "hint": "Konzert"
+      },
+      {
+        "word": "garland",
+        "hint": "Girlande"
+      },
+      {
+        "word": "ceremony",
+        "hint": "Zeremonie"
+      },
+      {
+        "word": "crowd",
+        "hint": "Menschenmenge"
+      },
+      {
+        "word": "banner",
+        "hint": "Banner / Transparent"
+      }
+    ]
+  },
+  {
+    "key": "traditions_wb",
+    "name": "Traditionen",
+    "description": "Traditionsbegriffe auf Englisch",
+    "iconName": "book.closed",
+    "color": "#92400e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "heritage",
+        "hint": "Erbe / Kulturerbe"
+      },
+      {
+        "word": "custom",
+        "hint": "Brauch / Sitte"
+      },
+      {
+        "word": "folklore",
+        "hint": "Folklore / Volkskunde"
+      },
+      {
+        "word": "ritual",
+        "hint": "Ritual"
+      },
+      {
+        "word": "legacy",
+        "hint": "Vermächtnis"
+      },
+      {
+        "word": "ancestor",
+        "hint": "Vorfahre"
+      },
+      {
+        "word": "culture",
+        "hint": "Kultur"
+      },
+      {
+        "word": "legend",
+        "hint": "Legende / Sage"
+      },
+      {
+        "word": "proverb",
+        "hint": "Sprichwort"
+      },
+      {
+        "word": "blessing",
+        "hint": "Segen"
+      },
+      {
+        "word": "heirloom",
+        "hint": "Erbstück"
+      },
+      {
+        "word": "mythology",
+        "hint": "Mythologie"
+      },
+      {
+        "word": "superstition",
+        "hint": "Aberglaube"
+      },
+      {
+        "word": "pilgrimage",
+        "hint": "Pilgerreise"
+      },
+      {
+        "word": "chronicle",
+        "hint": "Chronik"
+      }
+    ]
+  },
+  {
+    "key": "weddings_wb",
+    "name": "Hochzeit",
+    "description": "Hochzeitsbegriffe auf Englisch",
+    "iconName": "heart.circle",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "bride",
+        "hint": "Braut"
+      },
+      {
+        "word": "groom",
+        "hint": "Bräutigam"
+      },
+      {
+        "word": "bouquet",
+        "hint": "Brautstrauß"
+      },
+      {
+        "word": "vows",
+        "hint": "Ehegelübde"
+      },
+      {
+        "word": "chapel",
+        "hint": "Kapelle"
+      },
+      {
+        "word": "reception",
+        "hint": "Empfang / Feier"
+      },
+      {
+        "word": "honeymoon",
+        "hint": "Flitterwochen"
+      },
+      {
+        "word": "altar",
+        "hint": "Altar"
+      },
+      {
+        "word": "bridesmaid",
+        "hint": "Brautjungfer"
+      },
+      {
+        "word": "registry",
+        "hint": "Standesamt / Register"
+      },
+      {
+        "word": "tiara",
+        "hint": "Diadem"
+      },
+      {
+        "word": "toast",
+        "hint": "Trinkspruch"
+      },
+      {
+        "word": "engagement",
+        "hint": "Verlobung"
+      },
+      {
+        "word": "veil",
+        "hint": "Schleier"
+      },
+      {
+        "word": "confetti",
+        "hint": "Konfetti (Hochzeit)"
+      }
+    ]
+  },
+  {
+    "key": "holidays_wb",
+    "name": "Feiertage",
+    "description": "Feiertags-Begriffe auf Englisch",
+    "iconName": "gift",
+    "color": "#dc2626",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "christmas",
+        "hint": "Weihnachten"
+      },
+      {
+        "word": "easter",
+        "hint": "Ostern"
+      },
+      {
+        "word": "halloween",
+        "hint": "Halloween"
+      },
+      {
+        "word": "present",
+        "hint": "Geschenk"
+      },
+      {
+        "word": "ornament",
+        "hint": "Schmuck / Verzierung"
+      },
+      {
+        "word": "wreath",
+        "hint": "Kranz"
+      },
+      {
+        "word": "candle",
+        "hint": "Kerze"
+      },
+      {
+        "word": "stocking",
+        "hint": "Weihnachtsstrumpf"
+      },
+      {
+        "word": "reindeer",
+        "hint": "Rentier"
+      },
+      {
+        "word": "turkey",
+        "hint": "Truthahn (Festessen)"
+      },
+      {
+        "word": "mistletoe",
+        "hint": "Mistelzweig"
+      },
+      {
+        "word": "pumpkin",
+        "hint": "Kürbis"
+      },
+      {
+        "word": "caroling",
+        "hint": "Weihnachtslieder singen"
+      },
+      {
+        "word": "nativity",
+        "hint": "Krippe / Geburt Christi"
+      },
+      {
+        "word": "advent",
+        "hint": "Advent"
+      }
+    ]
+  },
+  {
+    "key": "celebrations_wb",
+    "name": "Feierlichkeiten",
+    "description": "Begriffe für besondere Anlässe",
+    "iconName": "sparkles",
+    "color": "#d946ef",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "birthday",
+        "hint": "Geburtstag"
+      },
+      {
+        "word": "anniversary",
+        "hint": "Jahrestag / Jubiläum"
+      },
+      {
+        "word": "graduation",
+        "hint": "Abschlussfeier"
+      },
+      {
+        "word": "retirement",
+        "hint": "Ruhestand"
+      },
+      {
+        "word": "surprise",
+        "hint": "Überraschung"
+      },
+      {
+        "word": "invitation",
+        "hint": "Einladung"
+      },
+      {
+        "word": "balloon",
+        "hint": "Luftballon"
+      },
+      {
+        "word": "catering",
+        "hint": "Catering / Bewirtung"
+      },
+      {
+        "word": "gathering",
+        "hint": "Zusammenkunft / Treffen"
+      },
+      {
+        "word": "reunion",
+        "hint": "Wiedersehen / Treffen"
+      },
+      {
+        "word": "festive",
+        "hint": "Festlich"
+      },
+      {
+        "word": "champagne",
+        "hint": "Champagner / Sekt"
+      },
+      {
+        "word": "applause",
+        "hint": "Applaus / Beifall"
+      },
+      {
+        "word": "tribute",
+        "hint": "Hommage / Ehrung"
+      },
+      {
+        "word": "souvenir",
+        "hint": "Andenken / Souvenir"
+      }
+    ]
+  },
+  {
+    "key": "fashion_wb",
+    "name": "Mode",
+    "description": "Modebegriffe auf Englisch",
+    "iconName": "tshirt",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "designer",
+        "hint": "Designer / Modeschöpfer"
+      },
+      {
+        "word": "runway",
+        "hint": "Laufsteg"
+      },
+      {
+        "word": "outfit",
+        "hint": "Outfit / Kleidung"
+      },
+      {
+        "word": "trend",
+        "hint": "Trend"
+      },
+      {
+        "word": "boutique",
+        "hint": "Boutique"
+      },
+      {
+        "word": "vintage",
+        "hint": "Vintage / Retro"
+      },
+      {
+        "word": "wardrobe",
+        "hint": "Kleiderschrank / Garderobe"
+      },
+      {
+        "word": "accessory",
+        "hint": "Accessoire"
+      },
+      {
+        "word": "tailored",
+        "hint": "Maßgeschneidert"
+      },
+      {
+        "word": "elegant",
+        "hint": "Elegant"
+      },
+      {
+        "word": "casual",
+        "hint": "Lässig / Leger"
+      },
+      {
+        "word": "formal",
+        "hint": "Formell"
+      },
+      {
+        "word": "fabric",
+        "hint": "Stoff"
+      },
+      {
+        "word": "collection",
+        "hint": "Kollektion"
+      },
+      {
+        "word": "pleated",
+        "hint": "Plissiert / Gefaltet"
+      }
+    ]
+  },
+  {
+    "key": "textiles_wb",
+    "name": "Textilien",
+    "description": "Textilarten auf Englisch",
+    "iconName": "rectangle.on.rectangle.angled",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "cotton",
+        "hint": "Baumwolle"
+      },
+      {
+        "word": "silk",
+        "hint": "Seide"
+      },
+      {
+        "word": "leather",
+        "hint": "Leder"
+      },
+      {
+        "word": "linen",
+        "hint": "Leinen"
+      },
+      {
+        "word": "velvet",
+        "hint": "Samt"
+      },
+      {
+        "word": "polyester",
+        "hint": "Polyester"
+      },
+      {
+        "word": "denim",
+        "hint": "Denim / Jeansstoff"
+      },
+      {
+        "word": "cashmere",
+        "hint": "Kaschmir"
+      },
+      {
+        "word": "suede",
+        "hint": "Wildleder"
+      },
+      {
+        "word": "satin",
+        "hint": "Satin"
+      },
+      {
+        "word": "tweed",
+        "hint": "Tweed"
+      },
+      {
+        "word": "corduroy",
+        "hint": "Cord / Kord"
+      },
+      {
+        "word": "fleece",
+        "hint": "Fleece / Vlies"
+      },
+      {
+        "word": "chiffon",
+        "hint": "Chiffon"
+      },
+      {
+        "word": "nylon",
+        "hint": "Nylon"
+      }
+    ]
+  },
+  {
+    "key": "jewelry_wb",
+    "name": "Schmuck",
+    "description": "Schmuckbegriffe auf Englisch",
+    "iconName": "diamond",
+    "color": "#db2777",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "necklace",
+        "hint": "Halskette"
+      },
+      {
+        "word": "bracelet",
+        "hint": "Armband"
+      },
+      {
+        "word": "earring",
+        "hint": "Ohrring"
+      },
+      {
+        "word": "pendant",
+        "hint": "Anhänger"
+      },
+      {
+        "word": "diamond",
+        "hint": "Diamant"
+      },
+      {
+        "word": "emerald",
+        "hint": "Smaragd"
+      },
+      {
+        "word": "sapphire",
+        "hint": "Saphir"
+      },
+      {
+        "word": "ruby",
+        "hint": "Rubin"
+      },
+      {
+        "word": "brooch",
+        "hint": "Brosche"
+      },
+      {
+        "word": "anklet",
+        "hint": "Fußkettchen"
+      },
+      {
+        "word": "cufflink",
+        "hint": "Manschettenknopf"
+      },
+      {
+        "word": "gem",
+        "hint": "Edelstein"
+      },
+      {
+        "word": "pearl",
+        "hint": "Perle"
+      },
+      {
+        "word": "charm",
+        "hint": "Anhänger / Charm"
+      },
+      {
+        "word": "clasp",
+        "hint": "Verschluss / Schließe"
+      }
+    ]
+  },
+  {
+    "key": "cosmetics_wb",
+    "name": "Kosmetik",
+    "description": "Kosmetik-Begriffe auf Englisch",
+    "iconName": "sparkle",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "mascara",
+        "hint": "Wimperntusche"
+      },
+      {
+        "word": "lipstick",
+        "hint": "Lippenstift"
+      },
+      {
+        "word": "foundation",
+        "hint": "Grundierung / Foundation"
+      },
+      {
+        "word": "concealer",
+        "hint": "Abdeckstift"
+      },
+      {
+        "word": "blush",
+        "hint": "Rouge"
+      },
+      {
+        "word": "eyeshadow",
+        "hint": "Lidschatten"
+      },
+      {
+        "word": "eyeliner",
+        "hint": "Eyeliner"
+      },
+      {
+        "word": "moisturizer",
+        "hint": "Feuchtigkeitscreme"
+      },
+      {
+        "word": "powder",
+        "hint": "Puder"
+      },
+      {
+        "word": "bronzer",
+        "hint": "Bronzer / Bräunungspuder"
+      },
+      {
+        "word": "primer",
+        "hint": "Primer / Grundierung"
+      },
+      {
+        "word": "perfume",
+        "hint": "Parfüm"
+      },
+      {
+        "word": "cleanser",
+        "hint": "Reinigungsmittel"
+      },
+      {
+        "word": "toner",
+        "hint": "Gesichtswasser / Toner"
+      },
+      {
+        "word": "serum",
+        "hint": "Serum"
+      }
+    ]
+  },
+  {
+    "key": "hairstyles_wb",
+    "name": "Frisuren",
+    "description": "Frisur-Begriffe auf Englisch",
+    "iconName": "comb",
+    "color": "#a855f7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ponytail",
+        "hint": "Pferdeschwanz"
+      },
+      {
+        "word": "braids",
+        "hint": "Zöpfe"
+      },
+      {
+        "word": "bangs",
+        "hint": "Pony (Frisur)"
+      },
+      {
+        "word": "curly",
+        "hint": "Lockig"
+      },
+      {
+        "word": "straight",
+        "hint": "Glatt (Haare)"
+      },
+      {
+        "word": "highlights",
+        "hint": "Strähnchen"
+      },
+      {
+        "word": "trim",
+        "hint": "Nachschneiden"
+      },
+      {
+        "word": "fringe",
+        "hint": "Pony / Fransen"
+      },
+      {
+        "word": "updo",
+        "hint": "Hochsteckfrisur"
+      },
+      {
+        "word": "layers",
+        "hint": "Stufen (Schnitt)"
+      },
+      {
+        "word": "bob",
+        "hint": "Bob (Frisur)"
+      },
+      {
+        "word": "blowout",
+        "hint": "Föhnfrisur"
+      },
+      {
+        "word": "dye",
+        "hint": "Färben"
+      },
+      {
+        "word": "parting",
+        "hint": "Scheitel"
+      },
+      {
+        "word": "conditioner",
+        "hint": "Spülung / Conditioner"
+      }
+    ]
+  },
+  {
+    "key": "environment_wb",
+    "name": "Umwelt",
+    "description": "Umweltbegriffe auf Englisch",
+    "iconName": "leaf.circle.fill",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pollution",
+        "hint": "Verschmutzung"
+      },
+      {
+        "word": "emission",
+        "hint": "Emission / Ausstoß"
+      },
+      {
+        "word": "deforestation",
+        "hint": "Abholzung"
+      },
+      {
+        "word": "biodiversity",
+        "hint": "Artenvielfalt"
+      },
+      {
+        "word": "conservation",
+        "hint": "Naturschutz"
+      },
+      {
+        "word": "wildlife",
+        "hint": "Tierwelt / Wildtiere"
+      },
+      {
+        "word": "wetland",
+        "hint": "Feuchtgebiet"
+      },
+      {
+        "word": "ozone",
+        "hint": "Ozon"
+      },
+      {
+        "word": "erosion",
+        "hint": "Erosion / Abtragung"
+      },
+      {
+        "word": "habitat",
+        "hint": "Lebensraum"
+      },
+      {
+        "word": "landfill",
+        "hint": "Mülldeponie"
+      },
+      {
+        "word": "pesticide",
+        "hint": "Pestizid / Schädlingsmittel"
+      },
+      {
+        "word": "organic",
+        "hint": "Biologisch / Organisch"
+      },
+      {
+        "word": "endangered",
+        "hint": "Gefährdet / Bedroht"
+      },
+      {
+        "word": "ecosystem",
+        "hint": "Ökosystem"
+      }
+    ]
+  },
+  {
+    "key": "recycling_wb",
+    "name": "Recycling",
+    "description": "Recycling-Begriffe auf Englisch",
+    "iconName": "arrow.3.trianglepath",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "recycle",
+        "hint": "Recyceln / Wiederverwerten"
+      },
+      {
+        "word": "compost",
+        "hint": "Kompost"
+      },
+      {
+        "word": "waste",
+        "hint": "Abfall / Müll"
+      },
+      {
+        "word": "reusable",
+        "hint": "Wiederverwendbar"
+      },
+      {
+        "word": "container",
+        "hint": "Behälter / Container"
+      },
+      {
+        "word": "sorting",
+        "hint": "Sortieren / Trennung"
+      },
+      {
+        "word": "landfill",
+        "hint": "Deponie"
+      },
+      {
+        "word": "biodegradable",
+        "hint": "Biologisch abbaubar"
+      },
+      {
+        "word": "aluminum",
+        "hint": "Aluminium"
+      },
+      {
+        "word": "cardboard",
+        "hint": "Karton / Pappe"
+      },
+      {
+        "word": "packaging",
+        "hint": "Verpackung"
+      },
+      {
+        "word": "upcycling",
+        "hint": "Upcycling"
+      },
+      {
+        "word": "disposal",
+        "hint": "Entsorgung"
+      },
+      {
+        "word": "refillable",
+        "hint": "Nachfüllbar"
+      },
+      {
+        "word": "reduce",
+        "hint": "Reduzieren / Verringern"
+      }
+    ]
+  },
+  {
+    "key": "energy_wb",
+    "name": "Energie",
+    "description": "Energiebegriffe auf Englisch",
+    "iconName": "bolt.fill",
+    "color": "#eab308",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "solar",
+        "hint": "Solar / Sonnen-"
+      },
+      {
+        "word": "windmill",
+        "hint": "Windmühle"
+      },
+      {
+        "word": "turbine",
+        "hint": "Turbine"
+      },
+      {
+        "word": "nuclear",
+        "hint": "Nuklear / Atom-"
+      },
+      {
+        "word": "renewable",
+        "hint": "Erneuerbar"
+      },
+      {
+        "word": "fossil",
+        "hint": "Fossil"
+      },
+      {
+        "word": "biomass",
+        "hint": "Biomasse"
+      },
+      {
+        "word": "geothermal",
+        "hint": "Geothermisch"
+      },
+      {
+        "word": "efficient",
+        "hint": "Effizient / Sparsam"
+      },
+      {
+        "word": "hydropower",
+        "hint": "Wasserkraft"
+      },
+      {
+        "word": "petroleum",
+        "hint": "Erdöl"
+      },
+      {
+        "word": "kilowatt",
+        "hint": "Kilowatt"
+      },
+      {
+        "word": "reactor",
+        "hint": "Reaktor"
+      },
+      {
+        "word": "charger",
+        "hint": "Ladegerät"
+      },
+      {
+        "word": "capacity",
+        "hint": "Kapazität / Leistung"
+      }
+    ]
+  },
+  {
+    "key": "climate_wb",
+    "name": "Klima",
+    "description": "Klimabegriffe auf Englisch",
+    "iconName": "thermometer.sun",
+    "color": "#f97316",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "greenhouse",
+        "hint": "Treibhaus (... effect)"
+      },
+      {
+        "word": "drought",
+        "hint": "Dürre"
+      },
+      {
+        "word": "flooding",
+        "hint": "Überschwemmung"
+      },
+      {
+        "word": "heatwave",
+        "hint": "Hitzewelle"
+      },
+      {
+        "word": "blizzard",
+        "hint": "Schneesturm"
+      },
+      {
+        "word": "hurricane",
+        "hint": "Hurrikan"
+      },
+      {
+        "word": "monsoon",
+        "hint": "Monsun"
+      },
+      {
+        "word": "tornado",
+        "hint": "Tornado"
+      },
+      {
+        "word": "iceberg",
+        "hint": "Eisberg"
+      },
+      {
+        "word": "forecast",
+        "hint": "Vorhersage"
+      },
+      {
+        "word": "humidity",
+        "hint": "Luftfeuchtigkeit"
+      },
+      {
+        "word": "tropics",
+        "hint": "Tropen"
+      },
+      {
+        "word": "permafrost",
+        "hint": "Permafrost / Dauerfrostboden"
+      },
+      {
+        "word": "wildfire",
+        "hint": "Waldbrand / Lauffeuer"
+      },
+      {
+        "word": "tsunami",
+        "hint": "Tsunami"
+      }
+    ]
+  },
+  {
+    "key": "sustainability_wb",
+    "name": "Nachhaltigkeit",
+    "description": "Nachhaltigkeitsbegriffe auf Englisch",
+    "iconName": "globe.americas",
+    "color": "#047857",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "sustainable",
+        "hint": "Nachhaltig"
+      },
+      {
+        "word": "footprint",
+        "hint": "Fußabdruck (ökologisch)"
+      },
+      {
+        "word": "ethical",
+        "hint": "Ethisch"
+      },
+      {
+        "word": "fairtrade",
+        "hint": "Fairer Handel"
+      },
+      {
+        "word": "renewable",
+        "hint": "Erneuerbar"
+      },
+      {
+        "word": "emission",
+        "hint": "Emission / Ausstoß"
+      },
+      {
+        "word": "neutral",
+        "hint": "Neutral (klima-)"
+      },
+      {
+        "word": "awareness",
+        "hint": "Bewusstsein"
+      },
+      {
+        "word": "compostable",
+        "hint": "Kompostierbar"
+      },
+      {
+        "word": "ecological",
+        "hint": "Ökologisch"
+      },
+      {
+        "word": "responsible",
+        "hint": "Verantwortungsvoll"
+      },
+      {
+        "word": "initiative",
+        "hint": "Initiative"
+      },
+      {
+        "word": "efficient",
+        "hint": "Effizient"
+      },
+      {
+        "word": "vegan",
+        "hint": "Vegan"
+      },
+      {
+        "word": "minimal",
+        "hint": "Minimal / Minimalistisch"
+      }
+    ]
   }
 ]

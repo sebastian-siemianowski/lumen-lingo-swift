@@ -2098,5 +2098,4875 @@
         "hint": "Marmur"
       }
     ]
+  },
+  {
+    "key": "daily_routine_wb",
+    "name": "Codzienna rutyna",
+    "description": "Czynności dnia codziennego po chińsku",
+    "iconName": "sunrise",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "起床",
+        "hint": "Wstawać"
+      },
+      {
+        "word": "洗脸",
+        "hint": "Myć twarz"
+      },
+      {
+        "word": "刷牙",
+        "hint": "Myć zęby"
+      },
+      {
+        "word": "穿衣",
+        "hint": "Ubierać się"
+      },
+      {
+        "word": "早餐",
+        "hint": "Śniadanie"
+      },
+      {
+        "word": "上班",
+        "hint": "Iść do pracy"
+      },
+      {
+        "word": "午饭",
+        "hint": "Obiad"
+      },
+      {
+        "word": "休息",
+        "hint": "Odpoczywać"
+      },
+      {
+        "word": "散步",
+        "hint": "Spacerować"
+      },
+      {
+        "word": "洗澡",
+        "hint": "Brać prysznic"
+      },
+      {
+        "word": "睡觉",
+        "hint": "Spać"
+      },
+      {
+        "word": "锻炼",
+        "hint": "Ćwiczyć"
+      },
+      {
+        "word": "做饭",
+        "hint": "Gotować"
+      },
+      {
+        "word": "回家",
+        "hint": "Wracać do domu"
+      },
+      {
+        "word": "晚餐",
+        "hint": "Kolacja"
+      }
+    ]
+  },
+  {
+    "key": "shopping_wb",
+    "name": "Zakupy",
+    "description": "Słownictwo związane z zakupami po chińsku",
+    "iconName": "cart",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "商店",
+        "hint": "Sklep"
+      },
+      {
+        "word": "价格",
+        "hint": "Cena"
+      },
+      {
+        "word": "折扣",
+        "hint": "Zniżka"
+      },
+      {
+        "word": "收银台",
+        "hint": "Kasa"
+      },
+      {
+        "word": "购物车",
+        "hint": "Wózek sklepowy"
+      },
+      {
+        "word": "试衣间",
+        "hint": "Przymierzalnia"
+      },
+      {
+        "word": "超市",
+        "hint": "Supermarket"
+      },
+      {
+        "word": "钱包",
+        "hint": "Portfel"
+      },
+      {
+        "word": "发票",
+        "hint": "Rachunek"
+      },
+      {
+        "word": "信用卡",
+        "hint": "Karta kredytowa"
+      },
+      {
+        "word": "现金",
+        "hint": "Gotówka"
+      },
+      {
+        "word": "打折",
+        "hint": "Promocja"
+      },
+      {
+        "word": "顾客",
+        "hint": "Klient"
+      },
+      {
+        "word": "市场",
+        "hint": "Rynek"
+      },
+      {
+        "word": "退货",
+        "hint": "Zwrot towaru"
+      }
+    ]
+  },
+  {
+    "key": "restaurant_wb",
+    "name": "Restauracja",
+    "description": "Słownictwo restauracyjne po chińsku",
+    "iconName": "fork.knife",
+    "color": "#ef4444",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "菜单",
+        "hint": "Menu"
+      },
+      {
+        "word": "服务员",
+        "hint": "Kelner"
+      },
+      {
+        "word": "点菜",
+        "hint": "Zamawiać jedzenie"
+      },
+      {
+        "word": "账单",
+        "hint": "Rachunek"
+      },
+      {
+        "word": "小费",
+        "hint": "Napiwek"
+      },
+      {
+        "word": "筷子",
+        "hint": "Pałeczki"
+      },
+      {
+        "word": "勺子",
+        "hint": "Łyżka"
+      },
+      {
+        "word": "盘子",
+        "hint": "Talerz"
+      },
+      {
+        "word": "杯子",
+        "hint": "Kubek"
+      },
+      {
+        "word": "预订",
+        "hint": "Rezerwacja"
+      },
+      {
+        "word": "座位",
+        "hint": "Miejsce siedzące"
+      },
+      {
+        "word": "甜点",
+        "hint": "Deser"
+      },
+      {
+        "word": "前菜",
+        "hint": "Przystawka"
+      },
+      {
+        "word": "主菜",
+        "hint": "Danie główne"
+      },
+      {
+        "word": "外卖",
+        "hint": "Jedzenie na wynos"
+      }
+    ]
+  },
+  {
+    "key": "garden_wb",
+    "name": "Ogród",
+    "description": "Słownictwo ogrodnicze po chińsku",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "花园",
+        "hint": "Ogród"
+      },
+      {
+        "word": "浇水",
+        "hint": "Podlewać"
+      },
+      {
+        "word": "种子",
+        "hint": "Nasiono"
+      },
+      {
+        "word": "土壤",
+        "hint": "Gleba"
+      },
+      {
+        "word": "花盆",
+        "hint": "Doniczka"
+      },
+      {
+        "word": "杂草",
+        "hint": "Chwast"
+      },
+      {
+        "word": "肥料",
+        "hint": "Nawóz"
+      },
+      {
+        "word": "篱笆",
+        "hint": "Płot"
+      },
+      {
+        "word": "草坪",
+        "hint": "Trawnik"
+      },
+      {
+        "word": "修剪",
+        "hint": "Przycinać"
+      },
+      {
+        "word": "铲子",
+        "hint": "Łopata"
+      },
+      {
+        "word": "花坛",
+        "hint": "Klomb"
+      },
+      {
+        "word": "温室",
+        "hint": "Szklarnia"
+      },
+      {
+        "word": "树篱",
+        "hint": "Żywopłot"
+      },
+      {
+        "word": "堆肥",
+        "hint": "Kompost"
+      }
+    ]
+  },
+  {
+    "key": "bathroom_wb",
+    "name": "Łazienka",
+    "description": "Przedmioty i czynności w łazience po chińsku",
+    "iconName": "drop",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "浴缸",
+        "hint": "Wanna"
+      },
+      {
+        "word": "淋浴",
+        "hint": "Prysznic"
+      },
+      {
+        "word": "镜子",
+        "hint": "Lustro"
+      },
+      {
+        "word": "毛巾",
+        "hint": "Ręcznik"
+      },
+      {
+        "word": "牙刷",
+        "hint": "Szczoteczka do zębów"
+      },
+      {
+        "word": "牙膏",
+        "hint": "Pasta do zębów"
+      },
+      {
+        "word": "肥皂",
+        "hint": "Mydło"
+      },
+      {
+        "word": "洗发水",
+        "hint": "Szampon"
+      },
+      {
+        "word": "马桶",
+        "hint": "Toaleta"
+      },
+      {
+        "word": "水龙头",
+        "hint": "Kran"
+      },
+      {
+        "word": "洗手池",
+        "hint": "Umywalka"
+      },
+      {
+        "word": "吹风机",
+        "hint": "Suszarka do włosów"
+      },
+      {
+        "word": "剃须刀",
+        "hint": "Maszynka do golenia"
+      },
+      {
+        "word": "浴帘",
+        "hint": "Zasłona prysznicowa"
+      },
+      {
+        "word": "地垫",
+        "hint": "Dywanik łazienkowy"
+      }
+    ]
+  },
+  {
+    "key": "cinema_wb",
+    "name": "Kino",
+    "description": "Słownictwo filmowe po chińsku",
+    "iconName": "film",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "电影",
+        "hint": "Film"
+      },
+      {
+        "word": "导演",
+        "hint": "Reżyser"
+      },
+      {
+        "word": "演员",
+        "hint": "Aktor"
+      },
+      {
+        "word": "银幕",
+        "hint": "Ekran"
+      },
+      {
+        "word": "字幕",
+        "hint": "Napisy"
+      },
+      {
+        "word": "票房",
+        "hint": "Kasa biletowa"
+      },
+      {
+        "word": "剧本",
+        "hint": "Scenariusz"
+      },
+      {
+        "word": "观众",
+        "hint": "Widownia"
+      },
+      {
+        "word": "首映",
+        "hint": "Premiera"
+      },
+      {
+        "word": "纪录片",
+        "hint": "Film dokumentalny"
+      },
+      {
+        "word": "喜剧",
+        "hint": "Komedia"
+      },
+      {
+        "word": "悲剧",
+        "hint": "Dramat"
+      },
+      {
+        "word": "动画片",
+        "hint": "Film animowany"
+      },
+      {
+        "word": "恐怖片",
+        "hint": "Horror"
+      },
+      {
+        "word": "预告片",
+        "hint": "Zwiastun"
+      }
+    ]
+  },
+  {
+    "key": "art_wb",
+    "name": "Sztuka",
+    "description": "Słownictwo artystyczne po chińsku",
+    "iconName": "paintbrush",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "画家",
+        "hint": "Malarz"
+      },
+      {
+        "word": "雕塑",
+        "hint": "Rzeźba"
+      },
+      {
+        "word": "画布",
+        "hint": "Płótno"
+      },
+      {
+        "word": "颜料",
+        "hint": "Farba"
+      },
+      {
+        "word": "画廊",
+        "hint": "Galeria"
+      },
+      {
+        "word": "展览",
+        "hint": "Wystawa"
+      },
+      {
+        "word": "素描",
+        "hint": "Szkic"
+      },
+      {
+        "word": "水彩",
+        "hint": "Akwarela"
+      },
+      {
+        "word": "油画",
+        "hint": "Obraz olejny"
+      },
+      {
+        "word": "版画",
+        "hint": "Grafika"
+      },
+      {
+        "word": "陶瓷",
+        "hint": "Ceramika"
+      },
+      {
+        "word": "肖像",
+        "hint": "Portret"
+      },
+      {
+        "word": "风景画",
+        "hint": "Pejzaż"
+      },
+      {
+        "word": "博物馆",
+        "hint": "Muzeum"
+      },
+      {
+        "word": "创作",
+        "hint": "Tworzenie"
+      }
+    ]
+  },
+  {
+    "key": "dance_wb",
+    "name": "Taniec",
+    "description": "Słownictwo taneczne po chińsku",
+    "iconName": "figure.dance",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "舞蹈",
+        "hint": "Taniec"
+      },
+      {
+        "word": "芭蕾",
+        "hint": "Balet"
+      },
+      {
+        "word": "编舞",
+        "hint": "Choreografia"
+      },
+      {
+        "word": "舞台",
+        "hint": "Scena"
+      },
+      {
+        "word": "排练",
+        "hint": "Próba"
+      },
+      {
+        "word": "节奏",
+        "hint": "Rytm"
+      },
+      {
+        "word": "舞伴",
+        "hint": "Partner taneczny"
+      },
+      {
+        "word": "旋转",
+        "hint": "Obrót"
+      },
+      {
+        "word": "表演",
+        "hint": "Występ"
+      },
+      {
+        "word": "探戈",
+        "hint": "Tango"
+      },
+      {
+        "word": "华尔兹",
+        "hint": "Walc"
+      },
+      {
+        "word": "街舞",
+        "hint": "Breakdance"
+      },
+      {
+        "word": "民族舞",
+        "hint": "Taniec ludowy"
+      },
+      {
+        "word": "舞鞋",
+        "hint": "Buty do tańca"
+      },
+      {
+        "word": "动作",
+        "hint": "Ruch"
+      }
+    ]
+  },
+  {
+    "key": "photography_wb",
+    "name": "Fotografia",
+    "description": "Słownictwo fotograficzne po chińsku",
+    "iconName": "camera",
+    "color": "#64748b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "相机",
+        "hint": "Aparat"
+      },
+      {
+        "word": "镜头",
+        "hint": "Obiektyw"
+      },
+      {
+        "word": "闪光灯",
+        "hint": "Lampa błyskowa"
+      },
+      {
+        "word": "三脚架",
+        "hint": "Statyw"
+      },
+      {
+        "word": "快门",
+        "hint": "Migawka"
+      },
+      {
+        "word": "曝光",
+        "hint": "Ekspozycja"
+      },
+      {
+        "word": "对焦",
+        "hint": "Ostrość"
+      },
+      {
+        "word": "构图",
+        "hint": "Kompozycja"
+      },
+      {
+        "word": "自拍",
+        "hint": "Selfie"
+      },
+      {
+        "word": "风景照",
+        "hint": "Zdjęcie krajobrazowe"
+      },
+      {
+        "word": "肖像照",
+        "hint": "Zdjęcie portretowe"
+      },
+      {
+        "word": "黑白",
+        "hint": "Czarno-białe"
+      },
+      {
+        "word": "滤镜",
+        "hint": "Filtr"
+      },
+      {
+        "word": "底片",
+        "hint": "Negatyw"
+      },
+      {
+        "word": "像素",
+        "hint": "Piksel"
+      }
+    ]
+  },
+  {
+    "key": "crafts_wb",
+    "name": "Rękodzieło",
+    "description": "Słownictwo rękodzielnicze po chińsku",
+    "iconName": "scissors",
+    "color": "#a855f7",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "编织",
+        "hint": "Szydełkowanie"
+      },
+      {
+        "word": "针线",
+        "hint": "Igła i nitka"
+      },
+      {
+        "word": "刺绣",
+        "hint": "Haft"
+      },
+      {
+        "word": "折纸",
+        "hint": "Origami"
+      },
+      {
+        "word": "手工",
+        "hint": "Rękodzieło"
+      },
+      {
+        "word": "珠子",
+        "hint": "Koraliki"
+      },
+      {
+        "word": "织布",
+        "hint": "Tkanie"
+      },
+      {
+        "word": "粘土",
+        "hint": "Glina"
+      },
+      {
+        "word": "缝纫",
+        "hint": "Szycie"
+      },
+      {
+        "word": "纽扣",
+        "hint": "Guzik"
+      },
+      {
+        "word": "拼贴",
+        "hint": "Kolaż"
+      },
+      {
+        "word": "剪纸",
+        "hint": "Wycinanka"
+      },
+      {
+        "word": "蜡烛",
+        "hint": "Świeca"
+      },
+      {
+        "word": "丝带",
+        "hint": "Wstążka"
+      },
+      {
+        "word": "图案",
+        "hint": "Wzór"
+      }
+    ]
+  },
+  {
+    "key": "geography_wb",
+    "name": "Geografia",
+    "description": "Pojęcia geograficzne po chińsku",
+    "iconName": "globe.asia.australia",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "大陆",
+        "hint": "Kontynent"
+      },
+      {
+        "word": "岛屿",
+        "hint": "Wyspa"
+      },
+      {
+        "word": "沙漠",
+        "hint": "Pustynia"
+      },
+      {
+        "word": "河流",
+        "hint": "Rzeka"
+      },
+      {
+        "word": "湖泊",
+        "hint": "Jezioro"
+      },
+      {
+        "word": "平原",
+        "hint": "Równina"
+      },
+      {
+        "word": "半岛",
+        "hint": "Półwysep"
+      },
+      {
+        "word": "火山",
+        "hint": "Wulkan"
+      },
+      {
+        "word": "峡谷",
+        "hint": "Kanion"
+      },
+      {
+        "word": "冰川",
+        "hint": "Lodowiec"
+      },
+      {
+        "word": "赤道",
+        "hint": "Równik"
+      },
+      {
+        "word": "边界",
+        "hint": "Granica"
+      },
+      {
+        "word": "首都",
+        "hint": "Stolica"
+      },
+      {
+        "word": "海峡",
+        "hint": "Cieśnina"
+      },
+      {
+        "word": "瀑布",
+        "hint": "Wodospad"
+      }
+    ]
+  },
+  {
+    "key": "astronomy_wb",
+    "name": "Astronomia",
+    "description": "Słownictwo astronomiczne po chińsku",
+    "iconName": "star",
+    "color": "#1e3a5f",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "星星",
+        "hint": "Gwiazda"
+      },
+      {
+        "word": "月亮",
+        "hint": "Księżyc"
+      },
+      {
+        "word": "太阳",
+        "hint": "Słońce"
+      },
+      {
+        "word": "行星",
+        "hint": "Planeta"
+      },
+      {
+        "word": "星座",
+        "hint": "Gwiazdozbiór"
+      },
+      {
+        "word": "银河",
+        "hint": "Droga Mleczna"
+      },
+      {
+        "word": "彗星",
+        "hint": "Kometa"
+      },
+      {
+        "word": "黑洞",
+        "hint": "Czarna dziura"
+      },
+      {
+        "word": "卫星",
+        "hint": "Satelita"
+      },
+      {
+        "word": "望远镜",
+        "hint": "Teleskop"
+      },
+      {
+        "word": "宇航员",
+        "hint": "Astronauta"
+      },
+      {
+        "word": "轨道",
+        "hint": "Orbita"
+      },
+      {
+        "word": "星云",
+        "hint": "Mgławica"
+      },
+      {
+        "word": "流星",
+        "hint": "Meteor"
+      },
+      {
+        "word": "日食",
+        "hint": "Zaćmienie słońca"
+      }
+    ]
+  },
+  {
+    "key": "ocean_wb",
+    "name": "Ocean",
+    "description": "Słownictwo morskie i oceaniczne po chińsku",
+    "iconName": "water.waves",
+    "color": "#0284c7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "海洋",
+        "hint": "Ocean"
+      },
+      {
+        "word": "海浪",
+        "hint": "Fala"
+      },
+      {
+        "word": "潮汐",
+        "hint": "Przypływ"
+      },
+      {
+        "word": "珊瑚",
+        "hint": "Koral"
+      },
+      {
+        "word": "海豚",
+        "hint": "Delfin"
+      },
+      {
+        "word": "鲸鱼",
+        "hint": "Wieloryb"
+      },
+      {
+        "word": "海龟",
+        "hint": "Żółw morski"
+      },
+      {
+        "word": "海藻",
+        "hint": "Wodorosty"
+      },
+      {
+        "word": "灯塔",
+        "hint": "Latarnia morska"
+      },
+      {
+        "word": "船锚",
+        "hint": "Kotwica"
+      },
+      {
+        "word": "深海",
+        "hint": "Głębia"
+      },
+      {
+        "word": "海岸",
+        "hint": "Wybrzeże"
+      },
+      {
+        "word": "贝壳",
+        "hint": "Muszelka"
+      },
+      {
+        "word": "水母",
+        "hint": "Meduza"
+      },
+      {
+        "word": "海马",
+        "hint": "Konik morski"
+      }
+    ]
+  },
+  {
+    "key": "mountains_wb",
+    "name": "Góry",
+    "description": "Słownictwo górskie po chińsku",
+    "iconName": "mountain.2",
+    "color": "#78716c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "山峰",
+        "hint": "Szczyt"
+      },
+      {
+        "word": "山谷",
+        "hint": "Dolina"
+      },
+      {
+        "word": "悬崖",
+        "hint": "Klif"
+      },
+      {
+        "word": "攀岩",
+        "hint": "Wspinaczka"
+      },
+      {
+        "word": "远足",
+        "hint": "Wędrówka"
+      },
+      {
+        "word": "小径",
+        "hint": "Szlak"
+      },
+      {
+        "word": "背包",
+        "hint": "Plecak"
+      },
+      {
+        "word": "帐篷",
+        "hint": "Namiot"
+      },
+      {
+        "word": "高原",
+        "hint": "Płaskowyż"
+      },
+      {
+        "word": "雪崩",
+        "hint": "Lawina"
+      },
+      {
+        "word": "山脉",
+        "hint": "Łańcuch górski"
+      },
+      {
+        "word": "溪流",
+        "hint": "Strumień"
+      },
+      {
+        "word": "山洞",
+        "hint": "Jaskinia"
+      },
+      {
+        "word": "海拔",
+        "hint": "Wysokość n.p.m."
+      },
+      {
+        "word": "日出",
+        "hint": "Wschód słońca"
+      }
+    ]
+  },
+  {
+    "key": "camping_wb",
+    "name": "Kemping",
+    "description": "Słownictwo kempingowe po chińsku",
+    "iconName": "tent",
+    "color": "#65a30d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "营地",
+        "hint": "Obozowisko"
+      },
+      {
+        "word": "篝火",
+        "hint": "Ognisko"
+      },
+      {
+        "word": "睡袋",
+        "hint": "Śpiwór"
+      },
+      {
+        "word": "手电筒",
+        "hint": "Latarka"
+      },
+      {
+        "word": "指南针",
+        "hint": "Kompas"
+      },
+      {
+        "word": "地图",
+        "hint": "Mapa"
+      },
+      {
+        "word": "水壶",
+        "hint": "Bidon"
+      },
+      {
+        "word": "钓鱼",
+        "hint": "Wędkowanie"
+      },
+      {
+        "word": "柴火",
+        "hint": "Drewno na opał"
+      },
+      {
+        "word": "烧烤",
+        "hint": "Grill"
+      },
+      {
+        "word": "帐篷",
+        "hint": "Namiot"
+      },
+      {
+        "word": "登山杖",
+        "hint": "Kij trekkingowy"
+      },
+      {
+        "word": "野营",
+        "hint": "Biwakowanie"
+      },
+      {
+        "word": "瑞士刀",
+        "hint": "Scyzoryk"
+      },
+      {
+        "word": "防虫剂",
+        "hint": "Spray na owady"
+      }
+    ]
+  },
+  {
+    "key": "law_wb",
+    "name": "Prawo",
+    "description": "Słownictwo prawnicze po chińsku",
+    "iconName": "scale.3d",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "法律",
+        "hint": "Prawo"
+      },
+      {
+        "word": "法官",
+        "hint": "Sędzia"
+      },
+      {
+        "word": "律师",
+        "hint": "Prawnik"
+      },
+      {
+        "word": "法庭",
+        "hint": "Sąd"
+      },
+      {
+        "word": "证据",
+        "hint": "Dowód"
+      },
+      {
+        "word": "被告",
+        "hint": "Oskarżony"
+      },
+      {
+        "word": "原告",
+        "hint": "Powód (w sądzie)"
+      },
+      {
+        "word": "判决",
+        "hint": "Wyrok"
+      },
+      {
+        "word": "陪审团",
+        "hint": "Ława przysięgłych"
+      },
+      {
+        "word": "合同",
+        "hint": "Umowa"
+      },
+      {
+        "word": "罪行",
+        "hint": "Przestępstwo"
+      },
+      {
+        "word": "罚款",
+        "hint": "Grzywna"
+      },
+      {
+        "word": "监狱",
+        "hint": "Więzienie"
+      },
+      {
+        "word": "权利",
+        "hint": "Prawo (uprawnienie)"
+      },
+      {
+        "word": "宪法",
+        "hint": "Konstytucja"
+      }
+    ]
+  },
+  {
+    "key": "politics_wb",
+    "name": "Polityka",
+    "description": "Słownictwo polityczne po chińsku",
+    "iconName": "building.columns",
+    "color": "#dc2626",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "总统",
+        "hint": "Prezydent"
+      },
+      {
+        "word": "选举",
+        "hint": "Wybory"
+      },
+      {
+        "word": "政党",
+        "hint": "Partia polityczna"
+      },
+      {
+        "word": "议会",
+        "hint": "Parlament"
+      },
+      {
+        "word": "投票",
+        "hint": "Głosowanie"
+      },
+      {
+        "word": "民主",
+        "hint": "Demokracja"
+      },
+      {
+        "word": "政府",
+        "hint": "Rząd"
+      },
+      {
+        "word": "外交",
+        "hint": "Dyplomacja"
+      },
+      {
+        "word": "部长",
+        "hint": "Minister"
+      },
+      {
+        "word": "大使",
+        "hint": "Ambasador"
+      },
+      {
+        "word": "条约",
+        "hint": "Traktat"
+      },
+      {
+        "word": "改革",
+        "hint": "Reforma"
+      },
+      {
+        "word": "抗议",
+        "hint": "Protest"
+      },
+      {
+        "word": "候选人",
+        "hint": "Kandydat"
+      },
+      {
+        "word": "公民",
+        "hint": "Obywatel"
+      }
+    ]
+  },
+  {
+    "key": "economy_wb",
+    "name": "Ekonomia",
+    "description": "Słownictwo ekonomiczne po chińsku",
+    "iconName": "chart.line.uptrend.xyaxis",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "经济",
+        "hint": "Gospodarka"
+      },
+      {
+        "word": "通货膨胀",
+        "hint": "Inflacja"
+      },
+      {
+        "word": "股票",
+        "hint": "Akcje"
+      },
+      {
+        "word": "利润",
+        "hint": "Zysk"
+      },
+      {
+        "word": "税收",
+        "hint": "Podatek"
+      },
+      {
+        "word": "出口",
+        "hint": "Eksport"
+      },
+      {
+        "word": "进口",
+        "hint": "Import"
+      },
+      {
+        "word": "预算",
+        "hint": "Budżet"
+      },
+      {
+        "word": "债务",
+        "hint": "Dług"
+      },
+      {
+        "word": "投资",
+        "hint": "Inwestycja"
+      },
+      {
+        "word": "失业",
+        "hint": "Bezrobocie"
+      },
+      {
+        "word": "货币",
+        "hint": "Waluta"
+      },
+      {
+        "word": "竞争",
+        "hint": "Konkurencja"
+      },
+      {
+        "word": "市场",
+        "hint": "Rynek"
+      },
+      {
+        "word": "消费",
+        "hint": "Konsumpcja"
+      }
+    ]
+  },
+  {
+    "key": "banking_wb",
+    "name": "Bankowość",
+    "description": "Słownictwo bankowe po chińsku",
+    "iconName": "banknote",
+    "color": "#0d9488",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "银行",
+        "hint": "Bank"
+      },
+      {
+        "word": "账户",
+        "hint": "Konto"
+      },
+      {
+        "word": "存款",
+        "hint": "Depozyt"
+      },
+      {
+        "word": "取款",
+        "hint": "Wypłata"
+      },
+      {
+        "word": "利率",
+        "hint": "Oprocentowanie"
+      },
+      {
+        "word": "贷款",
+        "hint": "Kredyt"
+      },
+      {
+        "word": "抵押",
+        "hint": "Hipoteka"
+      },
+      {
+        "word": "转账",
+        "hint": "Przelew"
+      },
+      {
+        "word": "储蓄",
+        "hint": "Oszczędności"
+      },
+      {
+        "word": "支票",
+        "hint": "Czek"
+      },
+      {
+        "word": "汇率",
+        "hint": "Kurs wymiany"
+      },
+      {
+        "word": "自动取款机",
+        "hint": "Bankomat"
+      },
+      {
+        "word": "余额",
+        "hint": "Saldo"
+      },
+      {
+        "word": "分期",
+        "hint": "Rata"
+      },
+      {
+        "word": "保险箱",
+        "hint": "Sejf"
+      }
+    ]
+  },
+  {
+    "key": "insurance_wb",
+    "name": "Ubezpieczenia",
+    "description": "Słownictwo ubezpieczeniowe po chińsku",
+    "iconName": "shield",
+    "color": "#4f46e5",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "保险",
+        "hint": "Ubezpieczenie"
+      },
+      {
+        "word": "保费",
+        "hint": "Składka"
+      },
+      {
+        "word": "索赔",
+        "hint": "Roszczenie"
+      },
+      {
+        "word": "保单",
+        "hint": "Polisa"
+      },
+      {
+        "word": "赔偿",
+        "hint": "Odszkodowanie"
+      },
+      {
+        "word": "受益人",
+        "hint": "Beneficjent"
+      },
+      {
+        "word": "人寿保险",
+        "hint": "Ubezp. na życie"
+      },
+      {
+        "word": "车险",
+        "hint": "Ubezp. samochodu"
+      },
+      {
+        "word": "健康险",
+        "hint": "Ubezp. zdrowotne"
+      },
+      {
+        "word": "财产险",
+        "hint": "Ubezp. majątkowe"
+      },
+      {
+        "word": "风险",
+        "hint": "Ryzyko"
+      },
+      {
+        "word": "保障",
+        "hint": "Ochrona"
+      },
+      {
+        "word": "免赔额",
+        "hint": "Franszyza"
+      },
+      {
+        "word": "续保",
+        "hint": "Odnowienie polisy"
+      },
+      {
+        "word": "理赔",
+        "hint": "Likwidacja szkody"
+      }
+    ]
+  },
+  {
+    "key": "cooking_wb",
+    "name": "Gotowanie",
+    "description": "Techniki i czynności kulinarne po chińsku",
+    "iconName": "flame",
+    "color": "#ea580c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "炒菜",
+        "hint": "Smażyć na patelni"
+      },
+      {
+        "word": "煮汤",
+        "hint": "Gotować zupę"
+      },
+      {
+        "word": "蒸饭",
+        "hint": "Gotować ryż na parze"
+      },
+      {
+        "word": "切菜",
+        "hint": "Kroić warzywa"
+      },
+      {
+        "word": "搅拌",
+        "hint": "Mieszać"
+      },
+      {
+        "word": "腌制",
+        "hint": "Marynować"
+      },
+      {
+        "word": "烤肉",
+        "hint": "Piec mięso"
+      },
+      {
+        "word": "油炸",
+        "hint": "Smażyć w głębokim tłuszczu"
+      },
+      {
+        "word": "调味",
+        "hint": "Przyprawiać"
+      },
+      {
+        "word": "食谱",
+        "hint": "Przepis"
+      },
+      {
+        "word": "砧板",
+        "hint": "Deska do krojenia"
+      },
+      {
+        "word": "炖菜",
+        "hint": "Dusić"
+      },
+      {
+        "word": "配料",
+        "hint": "Składniki"
+      },
+      {
+        "word": "剥皮",
+        "hint": "Obierać"
+      },
+      {
+        "word": "焯水",
+        "hint": "Blanszować"
+      }
+    ]
+  },
+  {
+    "key": "baking_wb",
+    "name": "Pieczenie",
+    "description": "Słownictwo piekarnicze po chińsku",
+    "iconName": "birthday.cake",
+    "color": "#d97706",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "面包",
+        "hint": "Chleb"
+      },
+      {
+        "word": "蛋糕",
+        "hint": "Ciasto"
+      },
+      {
+        "word": "饼干",
+        "hint": "Ciastko"
+      },
+      {
+        "word": "面粉",
+        "hint": "Mąka"
+      },
+      {
+        "word": "酵母",
+        "hint": "Drożdże"
+      },
+      {
+        "word": "烤箱",
+        "hint": "Piekarnik"
+      },
+      {
+        "word": "面团",
+        "hint": "Ciasto (masa)"
+      },
+      {
+        "word": "糖霜",
+        "hint": "Lukier"
+      },
+      {
+        "word": "馅饼",
+        "hint": "Tarta"
+      },
+      {
+        "word": "发酵",
+        "hint": "Fermentacja"
+      },
+      {
+        "word": "擀面杖",
+        "hint": "Wałek do ciasta"
+      },
+      {
+        "word": "模具",
+        "hint": "Foremka"
+      },
+      {
+        "word": "泡打粉",
+        "hint": "Proszek do pieczenia"
+      },
+      {
+        "word": "奶油",
+        "hint": "Śmietana"
+      },
+      {
+        "word": "烘焙",
+        "hint": "Pieczenie"
+      }
+    ]
+  },
+  {
+    "key": "spices_wb",
+    "name": "Przyprawy",
+    "description": "Nazwy przypraw po chińsku",
+    "iconName": "leaf",
+    "color": "#b45309",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "胡椒",
+        "hint": "Pieprz"
+      },
+      {
+        "word": "肉桂",
+        "hint": "Cynamon"
+      },
+      {
+        "word": "姜黄",
+        "hint": "Kurkuma"
+      },
+      {
+        "word": "生姜",
+        "hint": "Imbir"
+      },
+      {
+        "word": "大蒜",
+        "hint": "Czosnek"
+      },
+      {
+        "word": "辣椒粉",
+        "hint": "Papryka w proszku"
+      },
+      {
+        "word": "孜然",
+        "hint": "Kmin"
+      },
+      {
+        "word": "香草",
+        "hint": "Wanilia"
+      },
+      {
+        "word": "迷迭香",
+        "hint": "Rozmaryn"
+      },
+      {
+        "word": "百里香",
+        "hint": "Tymianek"
+      },
+      {
+        "word": "薄荷",
+        "hint": "Mięta"
+      },
+      {
+        "word": "月桂叶",
+        "hint": "Liść laurowy"
+      },
+      {
+        "word": "芥末",
+        "hint": "Musztarda"
+      },
+      {
+        "word": "丁香",
+        "hint": "Goździk"
+      },
+      {
+        "word": "八角",
+        "hint": "Anyż gwiaździsty"
+      }
+    ]
+  },
+  {
+    "key": "dairy_wb",
+    "name": "Nabiał",
+    "description": "Produkty mleczne po chińsku",
+    "iconName": "cup.and.saucer",
+    "color": "#fbbf24",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "牛奶",
+        "hint": "Mleko"
+      },
+      {
+        "word": "黄油",
+        "hint": "Masło"
+      },
+      {
+        "word": "奶酪",
+        "hint": "Ser"
+      },
+      {
+        "word": "酸奶",
+        "hint": "Jogurt"
+      },
+      {
+        "word": "奶油",
+        "hint": "Śmietana"
+      },
+      {
+        "word": "冰淇淋",
+        "hint": "Lody"
+      },
+      {
+        "word": "奶粉",
+        "hint": "Mleko w proszku"
+      },
+      {
+        "word": "酸奶油",
+        "hint": "Śmietanka kwaśna"
+      },
+      {
+        "word": "奶昔",
+        "hint": "Koktajl mleczny"
+      },
+      {
+        "word": "豆奶",
+        "hint": "Mleko sojowe"
+      },
+      {
+        "word": "脱脂奶",
+        "hint": "Mleko odtłuszczone"
+      },
+      {
+        "word": "炼乳",
+        "hint": "Mleko skondensowane"
+      },
+      {
+        "word": "羊奶",
+        "hint": "Mleko kozie"
+      },
+      {
+        "word": "乳糖",
+        "hint": "Laktoza"
+      },
+      {
+        "word": "鲜奶油",
+        "hint": "Bita śmietana"
+      }
+    ]
+  },
+  {
+    "key": "meat_wb",
+    "name": "Mięso",
+    "description": "Rodzaje mięsa po chińsku",
+    "iconName": "fork.knife",
+    "color": "#b91c1c",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "猪肉",
+        "hint": "Wieprzowina"
+      },
+      {
+        "word": "牛肉",
+        "hint": "Wołowina"
+      },
+      {
+        "word": "鸡肉",
+        "hint": "Kurczak"
+      },
+      {
+        "word": "羊肉",
+        "hint": "Baranina"
+      },
+      {
+        "word": "鸭肉",
+        "hint": "Kaczka"
+      },
+      {
+        "word": "火腿",
+        "hint": "Szynka"
+      },
+      {
+        "word": "香肠",
+        "hint": "Kiełbasa"
+      },
+      {
+        "word": "培根",
+        "hint": "Boczek"
+      },
+      {
+        "word": "排骨",
+        "hint": "Żeberka"
+      },
+      {
+        "word": "肉丸",
+        "hint": "Klopsik"
+      },
+      {
+        "word": "鱼肉",
+        "hint": "Ryba (mięso)"
+      },
+      {
+        "word": "虾仁",
+        "hint": "Krewetka"
+      },
+      {
+        "word": "火鸡",
+        "hint": "Indyk"
+      },
+      {
+        "word": "兔肉",
+        "hint": "Królik"
+      },
+      {
+        "word": "肉片",
+        "hint": "Plaster mięsa"
+      }
+    ]
+  },
+  {
+    "key": "pets_wb",
+    "name": "Zwierzęta domowe",
+    "description": "Nazwy zwierząt domowych po chińsku",
+    "iconName": "pawprint",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "小狗",
+        "hint": "Piesek"
+      },
+      {
+        "word": "小猫",
+        "hint": "Kotek"
+      },
+      {
+        "word": "仓鼠",
+        "hint": "Chomik"
+      },
+      {
+        "word": "兔子",
+        "hint": "Królik"
+      },
+      {
+        "word": "金鱼",
+        "hint": "Złota rybka"
+      },
+      {
+        "word": "乌龟",
+        "hint": "Żółw"
+      },
+      {
+        "word": "鹦鹉",
+        "hint": "Papuga"
+      },
+      {
+        "word": "蜥蜴",
+        "hint": "Jaszczurka"
+      },
+      {
+        "word": "豚鼠",
+        "hint": "Świnka morska"
+      },
+      {
+        "word": "猫粮",
+        "hint": "Karma dla kota"
+      },
+      {
+        "word": "狗粮",
+        "hint": "Karma dla psa"
+      },
+      {
+        "word": "笼子",
+        "hint": "Klatka"
+      },
+      {
+        "word": "项圈",
+        "hint": "Obroża"
+      },
+      {
+        "word": "皮带",
+        "hint": "Smycz"
+      },
+      {
+        "word": "宠物店",
+        "hint": "Sklep zoologiczny"
+      }
+    ]
+  },
+  {
+    "key": "birds_wb",
+    "name": "Ptaki",
+    "description": "Nazwy ptaków po chińsku",
+    "iconName": "bird",
+    "color": "#06b6d4",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "麻雀",
+        "hint": "Wróbel"
+      },
+      {
+        "word": "老鹰",
+        "hint": "Orzeł"
+      },
+      {
+        "word": "企鹅",
+        "hint": "Pingwin"
+      },
+      {
+        "word": "猫头鹰",
+        "hint": "Sowa"
+      },
+      {
+        "word": "燕子",
+        "hint": "Jaskółka"
+      },
+      {
+        "word": "孔雀",
+        "hint": "Paw"
+      },
+      {
+        "word": "乌鸦",
+        "hint": "Wrona"
+      },
+      {
+        "word": "鸽子",
+        "hint": "Gołąb"
+      },
+      {
+        "word": "火烈鸟",
+        "hint": "Flaming"
+      },
+      {
+        "word": "天鹅",
+        "hint": "Łabędź"
+      },
+      {
+        "word": "鹦鹉",
+        "hint": "Papuga"
+      },
+      {
+        "word": "啄木鸟",
+        "hint": "Dzięcioł"
+      },
+      {
+        "word": "海鸥",
+        "hint": "Mewa"
+      },
+      {
+        "word": "鹳",
+        "hint": "Bocian"
+      },
+      {
+        "word": "翠鸟",
+        "hint": "Zimorodek"
+      }
+    ]
+  },
+  {
+    "key": "insects_wb",
+    "name": "Owady",
+    "description": "Nazwy owadów po chińsku",
+    "iconName": "ant",
+    "color": "#84cc16",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "蝴蝶",
+        "hint": "Motyl"
+      },
+      {
+        "word": "蚂蚁",
+        "hint": "Mrówka"
+      },
+      {
+        "word": "蜜蜂",
+        "hint": "Pszczoła"
+      },
+      {
+        "word": "蜘蛛",
+        "hint": "Pająk"
+      },
+      {
+        "word": "蚊子",
+        "hint": "Komar"
+      },
+      {
+        "word": "蟑螂",
+        "hint": "Karaluch"
+      },
+      {
+        "word": "蜻蜓",
+        "hint": "Ważka"
+      },
+      {
+        "word": "瓢虫",
+        "hint": "Biedronka"
+      },
+      {
+        "word": "蝈蝈",
+        "hint": "Świerszcz"
+      },
+      {
+        "word": "蜗牛",
+        "hint": "Ślimak"
+      },
+      {
+        "word": "苍蝇",
+        "hint": "Mucha"
+      },
+      {
+        "word": "蝎子",
+        "hint": "Skorpion"
+      },
+      {
+        "word": "萤火虫",
+        "hint": "Świetlik"
+      },
+      {
+        "word": "蚱蜢",
+        "hint": "Konik polny"
+      },
+      {
+        "word": "蚕",
+        "hint": "Jedwabnik"
+      }
+    ]
+  },
+  {
+    "key": "marine_life_wb",
+    "name": "Życie morskie",
+    "description": "Zwierzęta morskie po chińsku",
+    "iconName": "fish",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "鲨鱼",
+        "hint": "Rekin"
+      },
+      {
+        "word": "章鱼",
+        "hint": "Ośmiornica"
+      },
+      {
+        "word": "龙虾",
+        "hint": "Homar"
+      },
+      {
+        "word": "螃蟹",
+        "hint": "Krab"
+      },
+      {
+        "word": "海星",
+        "hint": "Rozgwiazda"
+      },
+      {
+        "word": "金枪鱼",
+        "hint": "Tuńczyk"
+      },
+      {
+        "word": "三文鱼",
+        "hint": "Łosoś"
+      },
+      {
+        "word": "海胆",
+        "hint": "Jeżowiec"
+      },
+      {
+        "word": "鳗鱼",
+        "hint": "Węgorz"
+      },
+      {
+        "word": "海狮",
+        "hint": "Lew morski"
+      },
+      {
+        "word": "海象",
+        "hint": "Mors"
+      },
+      {
+        "word": "比目鱼",
+        "hint": "Flądra"
+      },
+      {
+        "word": "蛤蜊",
+        "hint": "Małża"
+      },
+      {
+        "word": "海参",
+        "hint": "Strzykwa"
+      },
+      {
+        "word": "带鱼",
+        "hint": "Szpadel morski"
+      }
+    ]
+  },
+  {
+    "key": "farm_animals_wb",
+    "name": "Zwierzęta gospodarskie",
+    "description": "Zwierzęta z farmy po chińsku",
+    "iconName": "hare",
+    "color": "#a16207",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "母牛",
+        "hint": "Krowa"
+      },
+      {
+        "word": "公鸡",
+        "hint": "Kogut"
+      },
+      {
+        "word": "母鸡",
+        "hint": "Kura"
+      },
+      {
+        "word": "绵羊",
+        "hint": "Owca"
+      },
+      {
+        "word": "山羊",
+        "hint": "Koza"
+      },
+      {
+        "word": "猪",
+        "hint": "Świnia"
+      },
+      {
+        "word": "马",
+        "hint": "Koń"
+      },
+      {
+        "word": "驴子",
+        "hint": "Osioł"
+      },
+      {
+        "word": "鹅",
+        "hint": "Gęś"
+      },
+      {
+        "word": "火鸡",
+        "hint": "Indyk"
+      },
+      {
+        "word": "牛犊",
+        "hint": "Cielę"
+      },
+      {
+        "word": "小羊",
+        "hint": "Jagnię"
+      },
+      {
+        "word": "小猪",
+        "hint": "Prosię"
+      },
+      {
+        "word": "种马",
+        "hint": "Ogier"
+      },
+      {
+        "word": "小鸡",
+        "hint": "Kurczątko"
+      }
+    ]
+  },
+  {
+    "key": "feelings_wb",
+    "name": "Uczucia",
+    "description": "Nazwy uczuć i stanów emocjonalnych po chińsku",
+    "iconName": "heart",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "幸福",
+        "hint": "Szczęście"
+      },
+      {
+        "word": "悲伤",
+        "hint": "Smutek"
+      },
+      {
+        "word": "愤怒",
+        "hint": "Gniew"
+      },
+      {
+        "word": "恐惧",
+        "hint": "Strach"
+      },
+      {
+        "word": "惊讶",
+        "hint": "Zdziwienie"
+      },
+      {
+        "word": "嫉妒",
+        "hint": "Zazdrość"
+      },
+      {
+        "word": "骄傲",
+        "hint": "Duma"
+      },
+      {
+        "word": "孤独",
+        "hint": "Samotność"
+      },
+      {
+        "word": "感激",
+        "hint": "Wdzięczność"
+      },
+      {
+        "word": "希望",
+        "hint": "Nadzieja"
+      },
+      {
+        "word": "厌恶",
+        "hint": "Obrzydzenie"
+      },
+      {
+        "word": "焦虑",
+        "hint": "Niepokój"
+      },
+      {
+        "word": "兴奋",
+        "hint": "Podekscytowanie"
+      },
+      {
+        "word": "满足",
+        "hint": "Zadowolenie"
+      },
+      {
+        "word": "同情",
+        "hint": "Współczucie"
+      }
+    ]
+  },
+  {
+    "key": "personality_wb",
+    "name": "Osobowość",
+    "description": "Cechy osobowości po chińsku",
+    "iconName": "person.crop.circle",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "勇敢",
+        "hint": "Odważny"
+      },
+      {
+        "word": "善良",
+        "hint": "Dobry (życzliwy)"
+      },
+      {
+        "word": "诚实",
+        "hint": "Uczciwy"
+      },
+      {
+        "word": "耐心",
+        "hint": "Cierpliwy"
+      },
+      {
+        "word": "聪明",
+        "hint": "Mądry"
+      },
+      {
+        "word": "慷慨",
+        "hint": "Hojny"
+      },
+      {
+        "word": "害羞",
+        "hint": "Nieśmiały"
+      },
+      {
+        "word": "固执",
+        "hint": "Uparty"
+      },
+      {
+        "word": "乐观",
+        "hint": "Optymistyczny"
+      },
+      {
+        "word": "悲观",
+        "hint": "Pesymistyczny"
+      },
+      {
+        "word": "幽默",
+        "hint": "Humorystyczny"
+      },
+      {
+        "word": "谦虚",
+        "hint": "Skromny"
+      },
+      {
+        "word": "自信",
+        "hint": "Pewny siebie"
+      },
+      {
+        "word": "懒惰",
+        "hint": "Leniwy"
+      },
+      {
+        "word": "勤劳",
+        "hint": "Pracowity"
+      }
+    ]
+  },
+  {
+    "key": "relationships_wb",
+    "name": "Relacje",
+    "description": "Słownictwo relacyjne po chińsku",
+    "iconName": "person.2",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "朋友",
+        "hint": "Przyjaciel"
+      },
+      {
+        "word": "恋人",
+        "hint": "Kochanek / Partner"
+      },
+      {
+        "word": "邻居",
+        "hint": "Sąsiad"
+      },
+      {
+        "word": "同事",
+        "hint": "Współpracownik"
+      },
+      {
+        "word": "婚礼",
+        "hint": "Ślub"
+      },
+      {
+        "word": "离婚",
+        "hint": "Rozwód"
+      },
+      {
+        "word": "约会",
+        "hint": "Randka"
+      },
+      {
+        "word": "信任",
+        "hint": "Zaufanie"
+      },
+      {
+        "word": "尊重",
+        "hint": "Szacunek"
+      },
+      {
+        "word": "争吵",
+        "hint": "Kłótnia"
+      },
+      {
+        "word": "和解",
+        "hint": "Pojednanie"
+      },
+      {
+        "word": "陪伴",
+        "hint": "Towarzystwo"
+      },
+      {
+        "word": "忠诚",
+        "hint": "Lojalność"
+      },
+      {
+        "word": "分手",
+        "hint": "Rozstanie"
+      },
+      {
+        "word": "求婚",
+        "hint": "Oświadczyny"
+      }
+    ]
+  },
+  {
+    "key": "communication_wb",
+    "name": "Komunikacja",
+    "description": "Słownictwo komunikacyjne po chińsku",
+    "iconName": "bubble.left.and.bubble.right",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "对话",
+        "hint": "Dialog"
+      },
+      {
+        "word": "讨论",
+        "hint": "Dyskusja"
+      },
+      {
+        "word": "辩论",
+        "hint": "Debata"
+      },
+      {
+        "word": "演讲",
+        "hint": "Przemówienie"
+      },
+      {
+        "word": "翻译",
+        "hint": "Tłumaczenie"
+      },
+      {
+        "word": "解释",
+        "hint": "Wyjaśnienie"
+      },
+      {
+        "word": "建议",
+        "hint": "Rada"
+      },
+      {
+        "word": "邀请",
+        "hint": "Zaproszenie"
+      },
+      {
+        "word": "道歉",
+        "hint": "Przeprosiny"
+      },
+      {
+        "word": "赞美",
+        "hint": "Komplement"
+      },
+      {
+        "word": "批评",
+        "hint": "Krytyka"
+      },
+      {
+        "word": "提问",
+        "hint": "Pytanie"
+      },
+      {
+        "word": "回答",
+        "hint": "Odpowiedź"
+      },
+      {
+        "word": "谈判",
+        "hint": "Negocjacja"
+      },
+      {
+        "word": "说服",
+        "hint": "Przekonywanie"
+      }
+    ]
+  },
+  {
+    "key": "gestures_wb",
+    "name": "Gesty",
+    "description": "Gesty i mowa ciała po chińsku",
+    "iconName": "hand.wave",
+    "color": "#f59e0b",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "握手",
+        "hint": "Uścisk dłoni"
+      },
+      {
+        "word": "拥抱",
+        "hint": "Uścisk (obejmowanie)"
+      },
+      {
+        "word": "点头",
+        "hint": "Kiwanie głową"
+      },
+      {
+        "word": "摇头",
+        "hint": "Kręcenie głową"
+      },
+      {
+        "word": "挥手",
+        "hint": "Machanie ręką"
+      },
+      {
+        "word": "鞠躬",
+        "hint": "Ukłon"
+      },
+      {
+        "word": "微笑",
+        "hint": "Uśmiech"
+      },
+      {
+        "word": "皱眉",
+        "hint": "Marszczenie brwi"
+      },
+      {
+        "word": "耸肩",
+        "hint": "Wzruszenie ramionami"
+      },
+      {
+        "word": "鼓掌",
+        "hint": "Klaskanie"
+      },
+      {
+        "word": "竖拇指",
+        "hint": "Kciuk w górę"
+      },
+      {
+        "word": "眨眼",
+        "hint": "Mruganie"
+      },
+      {
+        "word": "叹气",
+        "hint": "Wzdychanie"
+      },
+      {
+        "word": "指向",
+        "hint": "Wskazywanie"
+      },
+      {
+        "word": "跺脚",
+        "hint": "Tupanie nogą"
+      }
+    ]
+  },
+  {
+    "key": "architecture_wb",
+    "name": "Architektura",
+    "description": "Słownictwo architektoniczne po chińsku",
+    "iconName": "building.2",
+    "color": "#475569",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "建筑",
+        "hint": "Budynek"
+      },
+      {
+        "word": "柱子",
+        "hint": "Kolumna"
+      },
+      {
+        "word": "拱门",
+        "hint": "Łuk"
+      },
+      {
+        "word": "穹顶",
+        "hint": "Kopuła"
+      },
+      {
+        "word": "阳台",
+        "hint": "Balkon"
+      },
+      {
+        "word": "走廊",
+        "hint": "Korytarz"
+      },
+      {
+        "word": "地基",
+        "hint": "Fundament"
+      },
+      {
+        "word": "屋顶",
+        "hint": "Dach"
+      },
+      {
+        "word": "楼梯",
+        "hint": "Schody"
+      },
+      {
+        "word": "天花板",
+        "hint": "Sufit"
+      },
+      {
+        "word": "外墙",
+        "hint": "Fasada"
+      },
+      {
+        "word": "塔楼",
+        "hint": "Wieża"
+      },
+      {
+        "word": "蓝图",
+        "hint": "Plan architektoniczny"
+      },
+      {
+        "word": "摩天楼",
+        "hint": "Wieżowiec"
+      },
+      {
+        "word": "桥梁",
+        "hint": "Most"
+      }
+    ]
+  },
+  {
+    "key": "construction_wb",
+    "name": "Budownictwo",
+    "description": "Słownictwo budowlane po chińsku",
+    "iconName": "hammer",
+    "color": "#92400e",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "水泥",
+        "hint": "Cement"
+      },
+      {
+        "word": "砖头",
+        "hint": "Cegła"
+      },
+      {
+        "word": "钢筋",
+        "hint": "Pręt stalowy"
+      },
+      {
+        "word": "脚手架",
+        "hint": "Rusztowanie"
+      },
+      {
+        "word": "起重机",
+        "hint": "Dźwig"
+      },
+      {
+        "word": "推土机",
+        "hint": "Buldożer"
+      },
+      {
+        "word": "混凝土",
+        "hint": "Beton"
+      },
+      {
+        "word": "工地",
+        "hint": "Plac budowy"
+      },
+      {
+        "word": "瓷砖",
+        "hint": "Kafelek"
+      },
+      {
+        "word": "灰泥",
+        "hint": "Tynk"
+      },
+      {
+        "word": "焊接",
+        "hint": "Spawanie"
+      },
+      {
+        "word": "挖掘机",
+        "hint": "Koparka"
+      },
+      {
+        "word": "安全帽",
+        "hint": "Kask ochronny"
+      },
+      {
+        "word": "沙子",
+        "hint": "Piasek"
+      },
+      {
+        "word": "木材",
+        "hint": "Drewno budowlane"
+      }
+    ]
+  },
+  {
+    "key": "electricity_wb",
+    "name": "Elektryczność",
+    "description": "Słownictwo elektryczne po chińsku",
+    "iconName": "bolt",
+    "color": "#eab308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "电线",
+        "hint": "Przewód elektryczny"
+      },
+      {
+        "word": "插座",
+        "hint": "Gniazdko"
+      },
+      {
+        "word": "开关",
+        "hint": "Wyłącznik"
+      },
+      {
+        "word": "电池",
+        "hint": "Bateria"
+      },
+      {
+        "word": "灯泡",
+        "hint": "Żarówka"
+      },
+      {
+        "word": "保险丝",
+        "hint": "Bezpiecznik"
+      },
+      {
+        "word": "电压",
+        "hint": "Napięcie"
+      },
+      {
+        "word": "电流",
+        "hint": "Prąd"
+      },
+      {
+        "word": "发电机",
+        "hint": "Generator"
+      },
+      {
+        "word": "变压器",
+        "hint": "Transformator"
+      },
+      {
+        "word": "接地",
+        "hint": "Uziemienie"
+      },
+      {
+        "word": "短路",
+        "hint": "Zwarcie"
+      },
+      {
+        "word": "电表",
+        "hint": "Licznik elektryczny"
+      },
+      {
+        "word": "太阳能",
+        "hint": "Energia słoneczna"
+      },
+      {
+        "word": "充电器",
+        "hint": "Ładowarka"
+      }
+    ]
+  },
+  {
+    "key": "plumbing_wb",
+    "name": "Hydraulika",
+    "description": "Słownictwo hydrauliczne po chińsku",
+    "iconName": "wrench",
+    "color": "#2563eb",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "水管",
+        "hint": "Rura wodna"
+      },
+      {
+        "word": "水龙头",
+        "hint": "Kran"
+      },
+      {
+        "word": "下水道",
+        "hint": "Kanalizacja"
+      },
+      {
+        "word": "马桶",
+        "hint": "Toaleta"
+      },
+      {
+        "word": "阀门",
+        "hint": "Zawór"
+      },
+      {
+        "word": "水泵",
+        "hint": "Pompa wodna"
+      },
+      {
+        "word": "漏水",
+        "hint": "Wyciek"
+      },
+      {
+        "word": "排水管",
+        "hint": "Rura odpływowa"
+      },
+      {
+        "word": "热水器",
+        "hint": "Podgrzewacz wody"
+      },
+      {
+        "word": "水箱",
+        "hint": "Zbiornik wodny"
+      },
+      {
+        "word": "扳手",
+        "hint": "Klucz hydrauliczny"
+      },
+      {
+        "word": "密封圈",
+        "hint": "Uszczelka"
+      },
+      {
+        "word": "通下水",
+        "hint": "Udrażnianie rur"
+      },
+      {
+        "word": "水压",
+        "hint": "Ciśnienie wody"
+      },
+      {
+        "word": "过滤器",
+        "hint": "Filtr"
+      }
+    ]
+  },
+  {
+    "key": "gardening_tools_wb",
+    "name": "Narzędzia ogrodnicze",
+    "description": "Narzędzia do ogrodu po chińsku",
+    "iconName": "leaf.arrow.circlepath",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "铲子",
+        "hint": "Łopatka"
+      },
+      {
+        "word": "耙子",
+        "hint": "Grabie"
+      },
+      {
+        "word": "剪刀",
+        "hint": "Sekator"
+      },
+      {
+        "word": "水桶",
+        "hint": "Wiadro"
+      },
+      {
+        "word": "喷壶",
+        "hint": "Konewka"
+      },
+      {
+        "word": "锄头",
+        "hint": "Motyka"
+      },
+      {
+        "word": "水管",
+        "hint": "Wąż ogrodowy"
+      },
+      {
+        "word": "手套",
+        "hint": "Rękawice"
+      },
+      {
+        "word": "推车",
+        "hint": "Taczka"
+      },
+      {
+        "word": "割草机",
+        "hint": "Kosiarka"
+      },
+      {
+        "word": "花剪",
+        "hint": "Nożyce do żywopłotu"
+      },
+      {
+        "word": "松土",
+        "hint": "Spulchnianie gleby"
+      },
+      {
+        "word": "施肥",
+        "hint": "Nawożenie"
+      },
+      {
+        "word": "播种机",
+        "hint": "Siewnik"
+      },
+      {
+        "word": "除草剂",
+        "hint": "Środek chwastobójczy"
+      }
+    ]
+  },
+  {
+    "key": "medicine_wb",
+    "name": "Medycyna",
+    "description": "Słownictwo medyczne po chińsku",
+    "iconName": "cross.case",
+    "color": "#dc2626",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "医生",
+        "hint": "Lekarz"
+      },
+      {
+        "word": "护士",
+        "hint": "Pielęgniarka"
+      },
+      {
+        "word": "手术",
+        "hint": "Operacja"
+      },
+      {
+        "word": "诊断",
+        "hint": "Diagnoza"
+      },
+      {
+        "word": "处方",
+        "hint": "Recepta"
+      },
+      {
+        "word": "注射",
+        "hint": "Zastrzyk"
+      },
+      {
+        "word": "血压",
+        "hint": "Ciśnienie krwi"
+      },
+      {
+        "word": "体温",
+        "hint": "Temperatura ciała"
+      },
+      {
+        "word": "听诊器",
+        "hint": "Stetoskop"
+      },
+      {
+        "word": "急诊",
+        "hint": "Pogotowie ratunkowe"
+      },
+      {
+        "word": "病历",
+        "hint": "Karta medyczna"
+      },
+      {
+        "word": "化验",
+        "hint": "Badanie laboratoryjne"
+      },
+      {
+        "word": "麻醉",
+        "hint": "Znieczulenie"
+      },
+      {
+        "word": "康复",
+        "hint": "Rehabilitacja"
+      },
+      {
+        "word": "疫苗",
+        "hint": "Szczepionka"
+      }
+    ]
+  },
+  {
+    "key": "pharmacy_wb",
+    "name": "Apteka",
+    "description": "Słownictwo farmaceutyczne po chińsku",
+    "iconName": "pills",
+    "color": "#059669",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "药片",
+        "hint": "Tabletka"
+      },
+      {
+        "word": "胶囊",
+        "hint": "Kapsułka"
+      },
+      {
+        "word": "糖浆",
+        "hint": "Syrop"
+      },
+      {
+        "word": "药膏",
+        "hint": "Maść"
+      },
+      {
+        "word": "绷带",
+        "hint": "Bandaż"
+      },
+      {
+        "word": "消毒剂",
+        "hint": "Środek dezynfekujący"
+      },
+      {
+        "word": "止痛药",
+        "hint": "Lek przeciwbólowy"
+      },
+      {
+        "word": "抗生素",
+        "hint": "Antybiotyk"
+      },
+      {
+        "word": "维生素",
+        "hint": "Witamina"
+      },
+      {
+        "word": "体温计",
+        "hint": "Termometr"
+      },
+      {
+        "word": "创可贴",
+        "hint": "Plaster"
+      },
+      {
+        "word": "眼药水",
+        "hint": "Krople do oczu"
+      },
+      {
+        "word": "咳嗽药",
+        "hint": "Lek na kaszel"
+      },
+      {
+        "word": "过敏药",
+        "hint": "Lek na alergię"
+      },
+      {
+        "word": "处方药",
+        "hint": "Lek na receptę"
+      }
+    ]
+  },
+  {
+    "key": "fitness_wb",
+    "name": "Fitness",
+    "description": "Słownictwo fitnessowe po chińsku",
+    "iconName": "figure.run",
+    "color": "#ea580c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "健身房",
+        "hint": "Siłownia"
+      },
+      {
+        "word": "跑步机",
+        "hint": "Bieżnia"
+      },
+      {
+        "word": "哑铃",
+        "hint": "Hantle"
+      },
+      {
+        "word": "仰卧起坐",
+        "hint": "Brzuszki"
+      },
+      {
+        "word": "俯卧撑",
+        "hint": "Pompki"
+      },
+      {
+        "word": "深蹲",
+        "hint": "Przysiady"
+      },
+      {
+        "word": "拉伸",
+        "hint": "Rozciąganie"
+      },
+      {
+        "word": "有氧运动",
+        "hint": "Ćwiczenia aerobowe"
+      },
+      {
+        "word": "肌肉",
+        "hint": "Mięsień"
+      },
+      {
+        "word": "热身",
+        "hint": "Rozgrzewka"
+      },
+      {
+        "word": "教练",
+        "hint": "Trener"
+      },
+      {
+        "word": "减肥",
+        "hint": "Odchudzanie"
+      },
+      {
+        "word": "心率",
+        "hint": "Tętno"
+      },
+      {
+        "word": "杠铃",
+        "hint": "Sztanga"
+      },
+      {
+        "word": "平板支撑",
+        "hint": "Plank"
+      }
+    ]
+  },
+  {
+    "key": "yoga_wb",
+    "name": "Joga",
+    "description": "Słownictwo jogowe po chińsku",
+    "iconName": "figure.yoga",
+    "color": "#8b5cf6",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "瑜伽",
+        "hint": "Joga"
+      },
+      {
+        "word": "冥想",
+        "hint": "Medytacja"
+      },
+      {
+        "word": "呼吸",
+        "hint": "Oddychanie"
+      },
+      {
+        "word": "姿势",
+        "hint": "Pozycja"
+      },
+      {
+        "word": "放松",
+        "hint": "Relaksacja"
+      },
+      {
+        "word": "灵活性",
+        "hint": "Elastyczność"
+      },
+      {
+        "word": "平衡",
+        "hint": "Równowaga"
+      },
+      {
+        "word": "瑜伽垫",
+        "hint": "Mata do jogi"
+      },
+      {
+        "word": "意识",
+        "hint": "Świadomość"
+      },
+      {
+        "word": "内心",
+        "hint": "Wnętrze duchowe"
+      },
+      {
+        "word": "静坐",
+        "hint": "Siedzenie w ciszy"
+      },
+      {
+        "word": "能量",
+        "hint": "Energia"
+      },
+      {
+        "word": "专注",
+        "hint": "Koncentracja"
+      },
+      {
+        "word": "和谐",
+        "hint": "Harmonia"
+      },
+      {
+        "word": "身心",
+        "hint": "Ciało i umysł"
+      }
+    ]
+  },
+  {
+    "key": "mental_health_wb",
+    "name": "Zdrowie psychiczne",
+    "description": "Słownictwo zdrowia psychicznego po chińsku",
+    "iconName": "brain",
+    "color": "#6366f1",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "压力",
+        "hint": "Stres"
+      },
+      {
+        "word": "抑郁",
+        "hint": "Depresja"
+      },
+      {
+        "word": "焦虑症",
+        "hint": "Zaburzenia lękowe"
+      },
+      {
+        "word": "心理",
+        "hint": "Psychologia"
+      },
+      {
+        "word": "治疗",
+        "hint": "Terapia"
+      },
+      {
+        "word": "情绪",
+        "hint": "Nastrój"
+      },
+      {
+        "word": "自尊",
+        "hint": "Samoocena"
+      },
+      {
+        "word": "创伤",
+        "hint": "Trauma"
+      },
+      {
+        "word": "康复",
+        "hint": "Zdrowienie"
+      },
+      {
+        "word": "倦怠",
+        "hint": "Wypalenie"
+      },
+      {
+        "word": "失眠",
+        "hint": "Bezsenność"
+      },
+      {
+        "word": "正念",
+        "hint": "Uważność"
+      },
+      {
+        "word": "韧性",
+        "hint": "Odporność psychiczna"
+      },
+      {
+        "word": "咨询",
+        "hint": "Konsultacja"
+      },
+      {
+        "word": "支持",
+        "hint": "Wsparcie"
+      }
+    ]
+  },
+  {
+    "key": "vehicles_wb",
+    "name": "Pojazdy",
+    "description": "Rodzaje pojazdów po chińsku",
+    "iconName": "car",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "汽车",
+        "hint": "Samochód"
+      },
+      {
+        "word": "卡车",
+        "hint": "Ciężarówka"
+      },
+      {
+        "word": "摩托车",
+        "hint": "Motocykl"
+      },
+      {
+        "word": "公共汽车",
+        "hint": "Autobus"
+      },
+      {
+        "word": "出租车",
+        "hint": "Taksówka"
+      },
+      {
+        "word": "救护车",
+        "hint": "Karetka"
+      },
+      {
+        "word": "消防车",
+        "hint": "Wóz strażacki"
+      },
+      {
+        "word": "警车",
+        "hint": "Radiowóz"
+      },
+      {
+        "word": "面包车",
+        "hint": "Van"
+      },
+      {
+        "word": "房车",
+        "hint": "Kamper"
+      },
+      {
+        "word": "拖拉机",
+        "hint": "Traktor"
+      },
+      {
+        "word": "滑板车",
+        "hint": "Hulajnoga"
+      },
+      {
+        "word": "三轮车",
+        "hint": "Trójkołowiec"
+      },
+      {
+        "word": "越野车",
+        "hint": "Samochód terenowy"
+      },
+      {
+        "word": "电动车",
+        "hint": "Samochód elektryczny"
+      }
+    ]
+  },
+  {
+    "key": "aviation_wb",
+    "name": "Lotnictwo",
+    "description": "Słownictwo lotnicze po chińsku",
+    "iconName": "airplane",
+    "color": "#0284c7",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "飞机",
+        "hint": "Samolot"
+      },
+      {
+        "word": "机场",
+        "hint": "Lotnisko"
+      },
+      {
+        "word": "跑道",
+        "hint": "Pas startowy"
+      },
+      {
+        "word": "飞行员",
+        "hint": "Pilot"
+      },
+      {
+        "word": "空姐",
+        "hint": "Stewardessa"
+      },
+      {
+        "word": "登机",
+        "hint": "Boarding"
+      },
+      {
+        "word": "起飞",
+        "hint": "Start"
+      },
+      {
+        "word": "降落",
+        "hint": "Lądowanie"
+      },
+      {
+        "word": "机翼",
+        "hint": "Skrzydło"
+      },
+      {
+        "word": "头等舱",
+        "hint": "Pierwsza klasa"
+      },
+      {
+        "word": "安全带",
+        "hint": "Pas bezpieczeństwa"
+      },
+      {
+        "word": "护照",
+        "hint": "Paszport"
+      },
+      {
+        "word": "行李",
+        "hint": "Bagaż"
+      },
+      {
+        "word": "直升机",
+        "hint": "Helikopter"
+      },
+      {
+        "word": "航班",
+        "hint": "Lot (numer lotu)"
+      }
+    ]
+  },
+  {
+    "key": "shipping_wb",
+    "name": "Żegluga",
+    "description": "Słownictwo żeglugowe po chińsku",
+    "iconName": "ferry",
+    "color": "#1d4ed8",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "船",
+        "hint": "Statek"
+      },
+      {
+        "word": "港口",
+        "hint": "Port"
+      },
+      {
+        "word": "帆船",
+        "hint": "Żaglówka"
+      },
+      {
+        "word": "渡轮",
+        "hint": "Prom"
+      },
+      {
+        "word": "船长",
+        "hint": "Kapitan"
+      },
+      {
+        "word": "水手",
+        "hint": "Marynarz"
+      },
+      {
+        "word": "船舱",
+        "hint": "Kabina"
+      },
+      {
+        "word": "甲板",
+        "hint": "Pokład"
+      },
+      {
+        "word": "船锚",
+        "hint": "Kotwica"
+      },
+      {
+        "word": "救生衣",
+        "hint": "Kamizelka ratunkowa"
+      },
+      {
+        "word": "游艇",
+        "hint": "Jacht"
+      },
+      {
+        "word": "潜水艇",
+        "hint": "Łódź podwodna"
+      },
+      {
+        "word": "独木舟",
+        "hint": "Kajak"
+      },
+      {
+        "word": "码头",
+        "hint": "Przystań"
+      },
+      {
+        "word": "航线",
+        "hint": "Trasa morska"
+      }
+    ]
+  },
+  {
+    "key": "cycling_wb",
+    "name": "Kolarstwo",
+    "description": "Słownictwo rowerowe po chińsku",
+    "iconName": "bicycle",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "自行车",
+        "hint": "Rower"
+      },
+      {
+        "word": "车轮",
+        "hint": "Koło"
+      },
+      {
+        "word": "车把",
+        "hint": "Kierownica"
+      },
+      {
+        "word": "踏板",
+        "hint": "Pedał"
+      },
+      {
+        "word": "链条",
+        "hint": "Łańcuch"
+      },
+      {
+        "word": "刹车",
+        "hint": "Hamulec"
+      },
+      {
+        "word": "车座",
+        "hint": "Siodełko"
+      },
+      {
+        "word": "轮胎",
+        "hint": "Opona"
+      },
+      {
+        "word": "气筒",
+        "hint": "Pompka"
+      },
+      {
+        "word": "头盔",
+        "hint": "Kask"
+      },
+      {
+        "word": "变速器",
+        "hint": "Przerzutka"
+      },
+      {
+        "word": "车灯",
+        "hint": "Światło rowerowe"
+      },
+      {
+        "word": "车铃",
+        "hint": "Dzwonek"
+      },
+      {
+        "word": "车锁",
+        "hint": "Blokada rowerowa"
+      },
+      {
+        "word": "山地车",
+        "hint": "Rower górski"
+      }
+    ]
+  },
+  {
+    "key": "trains_wb",
+    "name": "Kolej",
+    "description": "Słownictwo kolejowe po chińsku",
+    "iconName": "tram",
+    "color": "#64748b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "火车",
+        "hint": "Pociąg"
+      },
+      {
+        "word": "车站",
+        "hint": "Dworzec"
+      },
+      {
+        "word": "站台",
+        "hint": "Peron"
+      },
+      {
+        "word": "车票",
+        "hint": "Bilet"
+      },
+      {
+        "word": "铁轨",
+        "hint": "Szyny"
+      },
+      {
+        "word": "车厢",
+        "hint": "Wagon"
+      },
+      {
+        "word": "地铁",
+        "hint": "Metro"
+      },
+      {
+        "word": "高铁",
+        "hint": "Pociąg szybki"
+      },
+      {
+        "word": "列车员",
+        "hint": "Konduktor"
+      },
+      {
+        "word": "时刻表",
+        "hint": "Rozkład jazdy"
+      },
+      {
+        "word": "卧铺",
+        "hint": "Kuszetka"
+      },
+      {
+        "word": "轨道",
+        "hint": "Tor"
+      },
+      {
+        "word": "单程票",
+        "hint": "Bilet w jedną stronę"
+      },
+      {
+        "word": "往返票",
+        "hint": "Bilet powrotny"
+      },
+      {
+        "word": "转乘",
+        "hint": "Przesiadka"
+      }
+    ]
+  },
+  {
+    "key": "mathematics_wb",
+    "name": "Matematyka",
+    "description": "Słownictwo matematyczne po chińsku",
+    "iconName": "function",
+    "color": "#6366f1",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "加法",
+        "hint": "Dodawanie"
+      },
+      {
+        "word": "减法",
+        "hint": "Odejmowanie"
+      },
+      {
+        "word": "乘法",
+        "hint": "Mnożenie"
+      },
+      {
+        "word": "除法",
+        "hint": "Dzielenie"
+      },
+      {
+        "word": "分数",
+        "hint": "Ułamek"
+      },
+      {
+        "word": "百分比",
+        "hint": "Procent"
+      },
+      {
+        "word": "方程",
+        "hint": "Równanie"
+      },
+      {
+        "word": "三角形",
+        "hint": "Trójkąt"
+      },
+      {
+        "word": "圆形",
+        "hint": "Koło"
+      },
+      {
+        "word": "面积",
+        "hint": "Pole powierzchni"
+      },
+      {
+        "word": "角度",
+        "hint": "Kąt"
+      },
+      {
+        "word": "平均数",
+        "hint": "Średnia"
+      },
+      {
+        "word": "几何",
+        "hint": "Geometria"
+      },
+      {
+        "word": "代数",
+        "hint": "Algebra"
+      },
+      {
+        "word": "概率",
+        "hint": "Prawdopodobieństwo"
+      }
+    ]
+  },
+  {
+    "key": "physics_wb",
+    "name": "Fizyka",
+    "description": "Słownictwo fizyczne po chińsku",
+    "iconName": "atom",
+    "color": "#0891b2",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "重力",
+        "hint": "Grawitacja"
+      },
+      {
+        "word": "速度",
+        "hint": "Prędkość"
+      },
+      {
+        "word": "质量",
+        "hint": "Masa"
+      },
+      {
+        "word": "能量",
+        "hint": "Energia"
+      },
+      {
+        "word": "磁铁",
+        "hint": "Magnes"
+      },
+      {
+        "word": "摩擦",
+        "hint": "Tarcie"
+      },
+      {
+        "word": "波长",
+        "hint": "Długość fali"
+      },
+      {
+        "word": "原子",
+        "hint": "Atom"
+      },
+      {
+        "word": "电子",
+        "hint": "Elektron"
+      },
+      {
+        "word": "光速",
+        "hint": "Prędkość światła"
+      },
+      {
+        "word": "温度",
+        "hint": "Temperatura"
+      },
+      {
+        "word": "频率",
+        "hint": "Częstotliwość"
+      },
+      {
+        "word": "压强",
+        "hint": "Ciśnienie"
+      },
+      {
+        "word": "密度",
+        "hint": "Gęstość"
+      },
+      {
+        "word": "加速度",
+        "hint": "Przyspieszenie"
+      }
+    ]
+  },
+  {
+    "key": "chemistry_wb",
+    "name": "Chemia",
+    "description": "Słownictwo chemiczne po chińsku",
+    "iconName": "flask",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "元素",
+        "hint": "Pierwiastek"
+      },
+      {
+        "word": "分子",
+        "hint": "Cząsteczka"
+      },
+      {
+        "word": "化合物",
+        "hint": "Związek chemiczny"
+      },
+      {
+        "word": "酸",
+        "hint": "Kwas"
+      },
+      {
+        "word": "碱",
+        "hint": "Zasada"
+      },
+      {
+        "word": "溶液",
+        "hint": "Roztwór"
+      },
+      {
+        "word": "催化剂",
+        "hint": "Katalizator"
+      },
+      {
+        "word": "氧气",
+        "hint": "Tlen"
+      },
+      {
+        "word": "氢气",
+        "hint": "Wodór"
+      },
+      {
+        "word": "反应",
+        "hint": "Reakcja"
+      },
+      {
+        "word": "实验",
+        "hint": "Eksperyment"
+      },
+      {
+        "word": "试管",
+        "hint": "Probówka"
+      },
+      {
+        "word": "烧杯",
+        "hint": "Zlewka"
+      },
+      {
+        "word": "蒸馏",
+        "hint": "Destylacja"
+      },
+      {
+        "word": "晶体",
+        "hint": "Kryształ"
+      }
+    ]
+  },
+  {
+    "key": "biology_wb",
+    "name": "Biologia",
+    "description": "Słownictwo biologiczne po chińsku",
+    "iconName": "leaf",
+    "color": "#16a34a",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "细胞",
+        "hint": "Komórka"
+      },
+      {
+        "word": "基因",
+        "hint": "Gen"
+      },
+      {
+        "word": "进化",
+        "hint": "Ewolucja"
+      },
+      {
+        "word": "生态",
+        "hint": "Ekologia"
+      },
+      {
+        "word": "光合作用",
+        "hint": "Fotosynteza"
+      },
+      {
+        "word": "蛋白质",
+        "hint": "Białko"
+      },
+      {
+        "word": "细菌",
+        "hint": "Bakterie"
+      },
+      {
+        "word": "病毒",
+        "hint": "Wirus"
+      },
+      {
+        "word": "显微镜",
+        "hint": "Mikroskop"
+      },
+      {
+        "word": "染色体",
+        "hint": "Chromosom"
+      },
+      {
+        "word": "神经",
+        "hint": "Nerw"
+      },
+      {
+        "word": "器官",
+        "hint": "Narząd"
+      },
+      {
+        "word": "组织",
+        "hint": "Tkanka"
+      },
+      {
+        "word": "新陈代谢",
+        "hint": "Metabolizm"
+      },
+      {
+        "word": "遗传",
+        "hint": "Dziedziczność"
+      }
+    ]
+  },
+  {
+    "key": "science_wb",
+    "name": "Nauka ogólna",
+    "description": "Ogólne słownictwo naukowe po chińsku",
+    "iconName": "magnifyingglass",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "科学",
+        "hint": "Nauka"
+      },
+      {
+        "word": "研究",
+        "hint": "Badanie"
+      },
+      {
+        "word": "假设",
+        "hint": "Hipoteza"
+      },
+      {
+        "word": "理论",
+        "hint": "Teoria"
+      },
+      {
+        "word": "数据",
+        "hint": "Dane"
+      },
+      {
+        "word": "发现",
+        "hint": "Odkrycie"
+      },
+      {
+        "word": "发明",
+        "hint": "Wynalazek"
+      },
+      {
+        "word": "科学家",
+        "hint": "Naukowiec"
+      },
+      {
+        "word": "实验室",
+        "hint": "Laboratorium"
+      },
+      {
+        "word": "观察",
+        "hint": "Obserwacja"
+      },
+      {
+        "word": "公式",
+        "hint": "Wzór (formuła)"
+      },
+      {
+        "word": "证明",
+        "hint": "Dowód naukowy"
+      },
+      {
+        "word": "分析",
+        "hint": "Analiza"
+      },
+      {
+        "word": "结论",
+        "hint": "Wniosek"
+      },
+      {
+        "word": "方法",
+        "hint": "Metoda"
+      }
+    ]
+  },
+  {
+    "key": "festivals_wb",
+    "name": "Festiwale",
+    "icon": "🎪",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "节日",
+        "hint": "Święto"
+      },
+      {
+        "word": "庆祝",
+        "hint": "Świętowanie"
+      },
+      {
+        "word": "灯笼",
+        "hint": "Lampion"
+      },
+      {
+        "word": "烟花",
+        "hint": "Fajerwerki"
+      },
+      {
+        "word": "游行",
+        "hint": "Parada"
+      },
+      {
+        "word": "面具",
+        "hint": "Maska"
+      },
+      {
+        "word": "舞台",
+        "hint": "Scena"
+      },
+      {
+        "word": "音乐节",
+        "hint": "Festiwal muzyczny"
+      },
+      {
+        "word": "嘉年华",
+        "hint": "Karnawał"
+      },
+      {
+        "word": "表演",
+        "hint": "Występ"
+      },
+      {
+        "word": "观众",
+        "hint": "Widownia"
+      },
+      {
+        "word": "彩车",
+        "hint": "Platforma festiwalowa"
+      },
+      {
+        "word": "鞭炮",
+        "hint": "Petardy"
+      },
+      {
+        "word": "气球",
+        "hint": "Balon"
+      },
+      {
+        "word": "横幅",
+        "hint": "Transparent"
+      }
+    ]
+  },
+  {
+    "key": "traditions_wb",
+    "name": "Tradycje",
+    "icon": "🏮",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "传统",
+        "hint": "Tradycja"
+      },
+      {
+        "word": "习俗",
+        "hint": "Zwyczaj"
+      },
+      {
+        "word": "仪式",
+        "hint": "Ceremonia"
+      },
+      {
+        "word": "祖先",
+        "hint": "Przodek"
+      },
+      {
+        "word": "遗产",
+        "hint": "Dziedzictwo"
+      },
+      {
+        "word": "文化",
+        "hint": "Kultura"
+      },
+      {
+        "word": "民俗",
+        "hint": "Folklor"
+      },
+      {
+        "word": "祭祀",
+        "hint": "Ofiara rytualna"
+      },
+      {
+        "word": "家谱",
+        "hint": "Drzewo genealogiczne"
+      },
+      {
+        "word": "风俗",
+        "hint": "Obyczaj"
+      },
+      {
+        "word": "礼节",
+        "hint": "Etykieta"
+      },
+      {
+        "word": "长辈",
+        "hint": "Starsi"
+      },
+      {
+        "word": "传承",
+        "hint": "Przekazywanie tradycji"
+      },
+      {
+        "word": "图腾",
+        "hint": "Totem"
+      },
+      {
+        "word": "禁忌",
+        "hint": "Tabu"
+      }
+    ]
+  },
+  {
+    "key": "weddings_wb",
+    "name": "Śluby",
+    "icon": "💒",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "婚礼",
+        "hint": "Ślub"
+      },
+      {
+        "word": "新娘",
+        "hint": "Panna młoda"
+      },
+      {
+        "word": "新郎",
+        "hint": "Pan młody"
+      },
+      {
+        "word": "戒指",
+        "hint": "Obrączka"
+      },
+      {
+        "word": "婚纱",
+        "hint": "Suknia ślubna"
+      },
+      {
+        "word": "蜜月",
+        "hint": "Miesiąc miodowy"
+      },
+      {
+        "word": "花束",
+        "hint": "Bukiet"
+      },
+      {
+        "word": "宾客",
+        "hint": "Gość weselny"
+      },
+      {
+        "word": "誓言",
+        "hint": "Przysięga"
+      },
+      {
+        "word": "教堂",
+        "hint": "Kościół"
+      },
+      {
+        "word": "请柬",
+        "hint": "Zaproszenie"
+      },
+      {
+        "word": "伴娘",
+        "hint": "Druhna"
+      },
+      {
+        "word": "伴郎",
+        "hint": "Drużba"
+      },
+      {
+        "word": "婚宴",
+        "hint": "Wesele (przyjęcie)"
+      },
+      {
+        "word": "蛋糕",
+        "hint": "Tort"
+      }
+    ]
+  },
+  {
+    "key": "holidays_wb",
+    "name": "Święta",
+    "icon": "🎄",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "假期",
+        "hint": "Urlop"
+      },
+      {
+        "word": "春节",
+        "hint": "Chiński Nowy Rok"
+      },
+      {
+        "word": "中秋",
+        "hint": "Święto Środka Jesieni"
+      },
+      {
+        "word": "端午",
+        "hint": "Święto Smoczych Łodzi"
+      },
+      {
+        "word": "圣诞",
+        "hint": "Boże Narodzenie"
+      },
+      {
+        "word": "元旦",
+        "hint": "Nowy Rok"
+      },
+      {
+        "word": "清明",
+        "hint": "Święto Czystości"
+      },
+      {
+        "word": "国庆",
+        "hint": "Święto Narodowe"
+      },
+      {
+        "word": "劳动节",
+        "hint": "Dzień Pracy"
+      },
+      {
+        "word": "感恩节",
+        "hint": "Dziękczynienie"
+      },
+      {
+        "word": "复活节",
+        "hint": "Wielkanoc"
+      },
+      {
+        "word": "情人节",
+        "hint": "Walentynki"
+      },
+      {
+        "word": "万圣节",
+        "hint": "Halloween"
+      },
+      {
+        "word": "除夕",
+        "hint": "Sylwester"
+      },
+      {
+        "word": "灯节",
+        "hint": "Święto Latarni"
+      }
+    ]
+  },
+  {
+    "key": "celebrations_wb",
+    "name": "Uroczystości",
+    "icon": "🎉",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "生日",
+        "hint": "Urodziny"
+      },
+      {
+        "word": "聚会",
+        "hint": "Impreza"
+      },
+      {
+        "word": "礼物",
+        "hint": "Prezent"
+      },
+      {
+        "word": "蜡烛",
+        "hint": "Świeczka"
+      },
+      {
+        "word": "祝福",
+        "hint": "Życzenia"
+      },
+      {
+        "word": "惊喜",
+        "hint": "Niespodzianka"
+      },
+      {
+        "word": "干杯",
+        "hint": "Toast"
+      },
+      {
+        "word": "纪念日",
+        "hint": "Rocznica"
+      },
+      {
+        "word": "毕业",
+        "hint": "Ukończenie szkoły"
+      },
+      {
+        "word": "派对",
+        "hint": "Przyjęcie"
+      },
+      {
+        "word": "装饰",
+        "hint": "Dekoracja"
+      },
+      {
+        "word": "彩带",
+        "hint": "Serpentyna"
+      },
+      {
+        "word": "音乐",
+        "hint": "Muzyka"
+      },
+      {
+        "word": "舞蹈",
+        "hint": "Taniec"
+      },
+      {
+        "word": "喜悦",
+        "hint": "Radość"
+      }
+    ]
+  },
+  {
+    "key": "fashion_wb",
+    "name": "Moda",
+    "icon": "👗",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "时尚",
+        "hint": "Moda"
+      },
+      {
+        "word": "设计师",
+        "hint": "Projektant"
+      },
+      {
+        "word": "模特",
+        "hint": "Modelka"
+      },
+      {
+        "word": "潮流",
+        "hint": "Trend"
+      },
+      {
+        "word": "品牌",
+        "hint": "Marka"
+      },
+      {
+        "word": "风格",
+        "hint": "Styl"
+      },
+      {
+        "word": "搭配",
+        "hint": "Dopasowanie"
+      },
+      {
+        "word": "优雅",
+        "hint": "Elegancja"
+      },
+      {
+        "word": "休闲",
+        "hint": "Casualowy"
+      },
+      {
+        "word": "复古",
+        "hint": "Retro"
+      },
+      {
+        "word": "走秀",
+        "hint": "Pokaz mody"
+      },
+      {
+        "word": "剪裁",
+        "hint": "Krój"
+      },
+      {
+        "word": "季节",
+        "hint": "Sezon"
+      },
+      {
+        "word": "配饰",
+        "hint": "Akcesoria"
+      },
+      {
+        "word": "衣橱",
+        "hint": "Garderoba"
+      }
+    ]
+  },
+  {
+    "key": "textiles_wb",
+    "name": "Tekstylia",
+    "icon": "🧵",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "棉花",
+        "hint": "Bawełna"
+      },
+      {
+        "word": "丝绸",
+        "hint": "Jedwab"
+      },
+      {
+        "word": "羊毛",
+        "hint": "Wełna"
+      },
+      {
+        "word": "亚麻",
+        "hint": "Len"
+      },
+      {
+        "word": "皮革",
+        "hint": "Skóra"
+      },
+      {
+        "word": "尼龙",
+        "hint": "Nylon"
+      },
+      {
+        "word": "织物",
+        "hint": "Tkanina"
+      },
+      {
+        "word": "纤维",
+        "hint": "Włókno"
+      },
+      {
+        "word": "刺绣",
+        "hint": "Haft"
+      },
+      {
+        "word": "编织",
+        "hint": "Dzianina"
+      },
+      {
+        "word": "染色",
+        "hint": "Barwienie"
+      },
+      {
+        "word": "缝纫",
+        "hint": "Szycie"
+      },
+      {
+        "word": "纺织",
+        "hint": "Tkactwo"
+      },
+      {
+        "word": "天鹅绒",
+        "hint": "Aksamit"
+      },
+      {
+        "word": "蕾丝",
+        "hint": "Koronka"
+      }
+    ]
+  },
+  {
+    "key": "jewelry_wb",
+    "name": "Biżuteria",
+    "icon": "💎",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "项链",
+        "hint": "Naszyjnik"
+      },
+      {
+        "word": "手镯",
+        "hint": "Bransoletka"
+      },
+      {
+        "word": "耳环",
+        "hint": "Kolczyk"
+      },
+      {
+        "word": "钻石",
+        "hint": "Diament"
+      },
+      {
+        "word": "珍珠",
+        "hint": "Perła"
+      },
+      {
+        "word": "黄金",
+        "hint": "Złoto"
+      },
+      {
+        "word": "白银",
+        "hint": "Srebro"
+      },
+      {
+        "word": "宝石",
+        "hint": "Kamień szlachetny"
+      },
+      {
+        "word": "胸针",
+        "hint": "Broszka"
+      },
+      {
+        "word": "吊坠",
+        "hint": "Wisiorek"
+      },
+      {
+        "word": "翡翠",
+        "hint": "Jadeit"
+      },
+      {
+        "word": "琥珀",
+        "hint": "Bursztyn"
+      },
+      {
+        "word": "铂金",
+        "hint": "Platyna"
+      },
+      {
+        "word": "珊瑚",
+        "hint": "Koral"
+      },
+      {
+        "word": "手表",
+        "hint": "Zegarek"
+      }
+    ]
+  },
+  {
+    "key": "cosmetics_wb",
+    "name": "Kosmetyki",
+    "icon": "💄",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "口红",
+        "hint": "Szminka"
+      },
+      {
+        "word": "粉底",
+        "hint": "Podkład"
+      },
+      {
+        "word": "眼影",
+        "hint": "Cień do powiek"
+      },
+      {
+        "word": "睫毛膏",
+        "hint": "Tusz do rzęs"
+      },
+      {
+        "word": "腮红",
+        "hint": "Róż"
+      },
+      {
+        "word": "香水",
+        "hint": "Perfumy"
+      },
+      {
+        "word": "护肤",
+        "hint": "Pielęgnacja skóry"
+      },
+      {
+        "word": "面膜",
+        "hint": "Maseczka"
+      },
+      {
+        "word": "防晒霜",
+        "hint": "Krem z filtrem"
+      },
+      {
+        "word": "卸妆",
+        "hint": "Demakijaż"
+      },
+      {
+        "word": "洗面奶",
+        "hint": "Żel do mycia twarzy"
+      },
+      {
+        "word": "眉笔",
+        "hint": "Kredka do brwi"
+      },
+      {
+        "word": "指甲油",
+        "hint": "Lakier do paznokci"
+      },
+      {
+        "word": "乳液",
+        "hint": "Balsam"
+      },
+      {
+        "word": "精华",
+        "hint": "Serum"
+      }
+    ]
+  },
+  {
+    "key": "hairstyles_wb",
+    "name": "Fryzury",
+    "icon": "💇",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "发型",
+        "hint": "Fryzura"
+      },
+      {
+        "word": "剪发",
+        "hint": "Strzyżenie"
+      },
+      {
+        "word": "染发",
+        "hint": "Farbowanie włosów"
+      },
+      {
+        "word": "卷发",
+        "hint": "Loki"
+      },
+      {
+        "word": "直发",
+        "hint": "Włosy proste"
+      },
+      {
+        "word": "刘海",
+        "hint": "Grzywka"
+      },
+      {
+        "word": "马尾",
+        "hint": "Kucyk"
+      },
+      {
+        "word": "辫子",
+        "hint": "Warkocz"
+      },
+      {
+        "word": "发夹",
+        "hint": "Spinka do włosów"
+      },
+      {
+        "word": "吹风机",
+        "hint": "Suszarka"
+      },
+      {
+        "word": "梳子",
+        "hint": "Grzebień"
+      },
+      {
+        "word": "假发",
+        "hint": "Peruka"
+      },
+      {
+        "word": "光头",
+        "hint": "Łysy"
+      },
+      {
+        "word": "挑染",
+        "hint": "Pasemka"
+      },
+      {
+        "word": "洗发水",
+        "hint": "Szampon"
+      }
+    ]
+  },
+  {
+    "key": "environment_wb",
+    "name": "Środowisko",
+    "icon": "🌍",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "环境",
+        "hint": "Środowisko"
+      },
+      {
+        "word": "污染",
+        "hint": "Zanieczyszczenie"
+      },
+      {
+        "word": "生态",
+        "hint": "Ekologia"
+      },
+      {
+        "word": "保护",
+        "hint": "Ochrona"
+      },
+      {
+        "word": "森林",
+        "hint": "Las"
+      },
+      {
+        "word": "湿地",
+        "hint": "Mokradła"
+      },
+      {
+        "word": "物种",
+        "hint": "Gatunek"
+      },
+      {
+        "word": "灭绝",
+        "hint": "Wyginięcie"
+      },
+      {
+        "word": "臭氧层",
+        "hint": "Warstwa ozonowa"
+      },
+      {
+        "word": "温室",
+        "hint": "Cieplarnia"
+      },
+      {
+        "word": "排放",
+        "hint": "Emisja"
+      },
+      {
+        "word": "荒漠化",
+        "hint": "Pustynnienie"
+      },
+      {
+        "word": "野生",
+        "hint": "Dziki"
+      },
+      {
+        "word": "栖息地",
+        "hint": "Siedlisko"
+      },
+      {
+        "word": "生物",
+        "hint": "Organizm"
+      }
+    ]
+  },
+  {
+    "key": "recycling_wb",
+    "name": "Recykling",
+    "icon": "♻️",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "回收",
+        "hint": "Recykling"
+      },
+      {
+        "word": "垃圾",
+        "hint": "Śmieci"
+      },
+      {
+        "word": "分类",
+        "hint": "Segregacja"
+      },
+      {
+        "word": "塑料",
+        "hint": "Plastik"
+      },
+      {
+        "word": "纸板",
+        "hint": "Karton"
+      },
+      {
+        "word": "玻璃",
+        "hint": "Szkło"
+      },
+      {
+        "word": "金属",
+        "hint": "Metal"
+      },
+      {
+        "word": "堆肥",
+        "hint": "Kompost"
+      },
+      {
+        "word": "废物",
+        "hint": "Odpady"
+      },
+      {
+        "word": "容器",
+        "hint": "Pojemnik"
+      },
+      {
+        "word": "减少",
+        "hint": "Redukcja"
+      },
+      {
+        "word": "重复",
+        "hint": "Ponowne użycie"
+      },
+      {
+        "word": "填埋",
+        "hint": "Składowisko"
+      },
+      {
+        "word": "有机",
+        "hint": "Organiczny"
+      },
+      {
+        "word": "降解",
+        "hint": "Rozkład"
+      }
+    ]
+  },
+  {
+    "key": "energy_wb",
+    "name": "Energia",
+    "icon": "⚡",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "能源",
+        "hint": "Energia"
+      },
+      {
+        "word": "太阳能",
+        "hint": "Energia słoneczna"
+      },
+      {
+        "word": "风能",
+        "hint": "Energia wiatrowa"
+      },
+      {
+        "word": "核能",
+        "hint": "Energia jądrowa"
+      },
+      {
+        "word": "水力",
+        "hint": "Energia wodna"
+      },
+      {
+        "word": "电池",
+        "hint": "Bateria"
+      },
+      {
+        "word": "发电",
+        "hint": "Wytwarzanie prądu"
+      },
+      {
+        "word": "涡轮",
+        "hint": "Turbina"
+      },
+      {
+        "word": "燃料",
+        "hint": "Paliwo"
+      },
+      {
+        "word": "煤炭",
+        "hint": "Węgiel"
+      },
+      {
+        "word": "石油",
+        "hint": "Ropa naftowa"
+      },
+      {
+        "word": "天然气",
+        "hint": "Gaz ziemny"
+      },
+      {
+        "word": "电网",
+        "hint": "Sieć elektryczna"
+      },
+      {
+        "word": "节能",
+        "hint": "Oszczędność energii"
+      },
+      {
+        "word": "输电",
+        "hint": "Przesył energii"
+      }
+    ]
+  },
+  {
+    "key": "climate_wb",
+    "name": "Klimat",
+    "icon": "🌡️",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "气候",
+        "hint": "Klimat"
+      },
+      {
+        "word": "变暖",
+        "hint": "Ocieplenie"
+      },
+      {
+        "word": "冰川",
+        "hint": "Lodowiec"
+      },
+      {
+        "word": "干旱",
+        "hint": "Susza"
+      },
+      {
+        "word": "洪水",
+        "hint": "Powódź"
+      },
+      {
+        "word": "台风",
+        "hint": "Tajfun"
+      },
+      {
+        "word": "碳排放",
+        "hint": "Emisja dwutlenku węgla"
+      },
+      {
+        "word": "海平面",
+        "hint": "Poziom morza"
+      },
+      {
+        "word": "极端",
+        "hint": "Ekstremalny"
+      },
+      {
+        "word": "季风",
+        "hint": "Monsun"
+      },
+      {
+        "word": "温度",
+        "hint": "Temperatura"
+      },
+      {
+        "word": "降水",
+        "hint": "Opady"
+      },
+      {
+        "word": "热浪",
+        "hint": "Fala upałów"
+      },
+      {
+        "word": "冰盖",
+        "hint": "Czapa lodowa"
+      },
+      {
+        "word": "厄尔尼诺",
+        "hint": "El Niño"
+      }
+    ]
+  },
+  {
+    "key": "sustainability_wb",
+    "name": "Zrównoważony rozwój",
+    "icon": "🌱",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "可持续",
+        "hint": "Zrównoważony"
+      },
+      {
+        "word": "绿色",
+        "hint": "Zielony"
+      },
+      {
+        "word": "环保",
+        "hint": "Ekologiczny"
+      },
+      {
+        "word": "再生",
+        "hint": "Odnawialne"
+      },
+      {
+        "word": "碳足迹",
+        "hint": "Ślad węglowy"
+      },
+      {
+        "word": "有机",
+        "hint": "Organiczny"
+      },
+      {
+        "word": "公平",
+        "hint": "Sprawiedliwy"
+      },
+      {
+        "word": "资源",
+        "hint": "Zasoby"
+      },
+      {
+        "word": "保育",
+        "hint": "Ochrona przyrody"
+      },
+      {
+        "word": "低碳",
+        "hint": "Niskoemisyjny"
+      },
+      {
+        "word": "节约",
+        "hint": "Oszczędność"
+      },
+      {
+        "word": "生态圈",
+        "hint": "Ekosfera"
+      },
+      {
+        "word": "植树",
+        "hint": "Sadzenie drzew"
+      },
+      {
+        "word": "净化",
+        "hint": "Oczyszczanie"
+      },
+      {
+        "word": "循环",
+        "hint": "Gospodarka obiegu"
+      }
+    ]
   }
 ]

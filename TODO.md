@@ -1075,7 +1075,8 @@ Create wordbuilder content for all 25 language pairs with **30+ categories × 15
 - Each pair needs ~6 batch scripts (30 categories ÷ 5 = 6 batches)
 - Consider script complexity: non-Latin scripts (Arabic, Chinese, Japanese, Ukrainian) need special attention for letter scrambling
 
-## Phase 1: Expand english_spanish (Reference Pair) — ✅ COMPLETE (31 categories, 465 items)
+## Phase 1: Expand english_spanish (Reference Pair) — ✅ COMPLETE (100/100 categories, 1500 items)
+Hint language: English | Word language: Spanish
 
 | Batch | Categories | Status |
 |-------|-----------|--------|
@@ -1085,6 +1086,20 @@ Create wordbuilder content for all 25 language pairs with **30+ categories × 15
 | 3 | kitchen_utensils, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
 | 4 | technology_wb, office_wb, health_medical, travel_wb, hobbies_wb | ✅ |
 | 5 | drinks_beverages, desserts_sweets, furniture_wb, tools_wb, materials_wb | ✅ |
+| 7 | daily_routine_wb, shopping_wb, restaurant_wb, garden_wb, bathroom_wb | ✅ |
+| 8 | cinema_wb, art_wb, dance_wb, photography_wb, crafts_wb | ✅ |
+| 9 | geography_wb, astronomy_wb, ocean_wb, mountains_wb, camping_wb | ✅ |
+| 10 | law_wb, politics_wb, economy_wb, banking_wb, insurance_wb | ✅ |
+| 11 | cooking_wb, baking_wb, spices_wb, dairy_wb, meat_wb | ✅ |
+| 12 | pets_wb, birds_wb, insects_wb, marine_life_wb, farm_animals_wb | ✅ |
+| 13 | feelings_wb, personality_wb, relationships_wb, communication_wb, gestures_wb | ✅ |
+| 14 | architecture_wb, construction_wb, electricity_wb, plumbing_wb, gardening_tools_wb | ✅ |
+| 15 | medicine_wb, pharmacy_wb, fitness_wb, yoga_wb, mental_health_wb | ✅ |
+| 16 | vehicles_wb, aviation_wb, shipping_wb, cycling_wb, trains_wb | ✅ |
+| 17 | mathematics_wb, physics_wb, chemistry_wb, biology_wb, science_wb | ✅ |
+| 18 | festivals_wb, traditions_wb, weddings_wb, holidays_wb, celebrations_wb | ✅ |
+| 19 | fashion_wb, textiles_wb, jewelry_wb, cosmetics_wb, hairstyles_wb | ✅ |
+| 20 | environment_wb, recycling_wb, energy_wb, climate_wb | ✅ |
 
 ## Phase 2: Create All Missing Language Pairs
 
@@ -1092,14 +1107,40 @@ Create wordbuilder content for all 25 language pairs with **30+ categories × 15
 
 | # | Pair | Hint Lang | Word Lang | Cats | Items | Target Cats | Target Items | Status |
 |---|------|----------|----------|------|-------|------------|-------------|--------|
-| 1 | german_english | German | English | 30 | 450 | 30 | 450 | ✅ |
-| 2 | german_spanish | German | Spanish | 30 | 450 | 30 | 450 | ✅ |
-| 3 | polish_english | Polish | English | 30 | 450 | 30 | 450 | ✅ |
-| 4 | polish_german | Polish | German | 30 | 450 | 30 | 450 | ✅ |
-| 5 | polish_spanish | Polish | Spanish | 30 | 450 | 30 | 450 | ✅ |
-| 6 | spanish_english | Spanish | English | 30 | 450 | 30 | 450 | ✅ |
+| 1 | german_english | German | English | 100 | 1500 | 100 | 1500 | ✅ |
+| 2 | german_spanish | German | Spanish | 100 | 1500 | 100 | 1500 | ✅ |
+| 3 | polish_english | Polish | English | 100 | 1500 | 100 | 1500 | ✅ |
+| 4 | polish_german | Polish | German | 100 | 1500 | 100 | 1500 | ✅ |
+| 5 | polish_spanish | Polish | Spanish | 100 | 1500 | 100 | 1500 | ✅ |
+| 6 | spanish_english | Spanish | English | 100 | 1500 | 100 | 1500 | ✅ |
 
-### polish_german — ✅ COMPLETE (30/30 categories, 450 items)
+### polish_english — ✅ COMPLETE (100/100 categories, 1500 items)
+Hint language: Polish | Word language: English
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 1 | fruits, vegetables, colors_wb, family_wb, animals | ✅ |
+| 2 | body_parts, numbers_wb, greetings, food_wb, clothing_wb | ✅ |
+| 3 | house_rooms, weather_wb, professions_wb, transport_wb, school_wb | ✅ |
+| 4 | kitchen_utensils, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
+| 5 | technology_wb, office_wb, health_medical, travel_wb, hobbies_wb | ✅ |
+| 6 | drinks_beverages, desserts_sweets, furniture_wb, tools_wb, materials_wb | ✅ |
+| 7 | daily_routine_wb, shopping_wb, restaurant_wb, garden_wb, bathroom_wb | ✅ |
+| 8 | cinema_wb, art_wb, dance_wb, photography_wb, crafts_wb | ✅ |
+| 9 | geography_wb, astronomy_wb, ocean_wb, mountains_wb, camping_wb | ✅ |
+| 10 | law_wb, politics_wb, economy_wb, banking_wb, insurance_wb | ✅ |
+| 11 | cooking_wb, baking_wb, spices_wb, dairy_wb, meat_wb | ✅ |
+| 12 | pets_wb, birds_wb, insects_wb, marine_life_wb, farm_animals_wb | ✅ |
+| 13 | feelings_wb, personality_wb, relationships_wb, communication_wb, gestures_wb | ✅ |
+| 14 | architecture_wb, construction_wb, electricity_wb, plumbing_wb, gardening_tools_wb | ✅ |
+| 15 | medicine_wb, pharmacy_wb, fitness_wb, yoga_wb, mental_health_wb | ✅ |
+| 16 | vehicles_wb, aviation_wb, shipping_wb, cycling_wb, trains_wb | ✅ |
+| 17 | mathematics_wb, physics_wb, chemistry_wb, biology_wb, science_wb | ✅ |
+| 18 | festivals_wb, traditions_wb, weddings_wb, holidays_wb, celebrations_wb | ✅ |
+| 19 | fashion_wb, textiles_wb, jewelry_wb, cosmetics_wb, hairstyles_wb | ✅ |
+| 20 | environment_wb, recycling_wb, energy_wb, climate_wb, sustainability_wb | ✅ |
+
+### polish_german — ✅ COMPLETE (100/100 categories, 1500 items)
 Hint language: Polish | Word language: German
 
 | Batch | Categories | Status |
@@ -1110,8 +1151,22 @@ Hint language: Polish | Word language: German
 | 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
 | 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
 | 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+| 7 | daily_routine_wb, shopping_wb, restaurant_wb, garden_wb, bathroom_wb | ✅ |
+| 8 | cinema_wb, art_wb, dance_wb, photography_wb, crafts_wb | ✅ |
+| 9 | geography_wb, astronomy_wb, ocean_wb, mountains_wb, camping_wb | ✅ |
+| 10 | law_wb, politics_wb, economy_wb, banking_wb, insurance_wb | ✅ |
+| 11 | cooking_wb, baking_wb, spices_wb, dairy_wb, meat_wb | ✅ |
+| 12 | pets_wb, birds_wb, insects_wb, marine_life_wb, farm_animals_wb | ✅ |
+| 13 | feelings_wb, personality_wb, relationships_wb, communication_wb, gestures_wb | ✅ |
+| 14 | architecture_wb, construction_wb, electricity_wb, plumbing_wb, gardening_tools_wb | ✅ |
+| 15 | medicine_wb, pharmacy_wb, fitness_wb, yoga_wb, mental_health_wb | ✅ |
+| 16 | vehicles_wb, aviation_wb, shipping_wb, cycling_wb, trains_wb | ✅ |
+| 17 | mathematics_wb, physics_wb, chemistry_wb, biology_wb, science_wb | ✅ |
+| 18 | festivals_wb, traditions_wb, weddings_wb, holidays_wb, celebrations_wb | ✅ |
+| 19 | fashion_wb, textiles_wb, jewelry_wb, cosmetics_wb, hairstyles_wb | ✅ |
+| 20 | environment_wb, recycling_wb, energy_wb, climate_wb, sustainability_wb | ✅ |
 
-### polish_spanish — ✅ COMPLETE (30/30 categories, 450 items)
+### polish_spanish — ✅ COMPLETE (100/100 categories, 1500 items)
 Hint language: Polish | Word language: Spanish
 
 | Batch | Categories | Status |
@@ -1122,8 +1177,48 @@ Hint language: Polish | Word language: Spanish
 | 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
 | 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
 | 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+| 7 | daily_routine_wb, shopping_wb, restaurant_wb, garden_wb, bathroom_wb | ✅ |
+| 8 | cinema_wb, art_wb, dance_wb, photography_wb, crafts_wb | ✅ |
+| 9 | geography_wb, astronomy_wb, ocean_wb, mountains_wb, camping_wb | ✅ |
+| 10 | law_wb, politics_wb, economy_wb, banking_wb, insurance_wb | ✅ |
+| 11 | cooking_wb, baking_wb, spices_wb, dairy_wb, meat_wb | ✅ |
+| 12 | pets_wb, birds_wb, insects_wb, marine_life_wb, farm_animals_wb | ✅ |
+| 13 | feelings_wb, personality_wb, relationships_wb, communication_wb, gestures_wb | ✅ |
+| 14 | architecture_wb, construction_wb, electricity_wb, plumbing_wb, gardening_tools_wb | ✅ |
+| 15 | medicine_wb, pharmacy_wb, fitness_wb, yoga_wb, mental_health_wb | ✅ |
+| 16 | vehicles_wb, aviation_wb, shipping_wb, cycling_wb, trains_wb | ✅ |
+| 17 | mathematics_wb, physics_wb, chemistry_wb, biology_wb, science_wb | ✅ |
+| 18 | festivals_wb, traditions_wb, weddings_wb, holidays_wb, celebrations_wb | ✅ |
+| 19 | fashion_wb, textiles_wb, jewelry_wb, cosmetics_wb, hairstyles_wb | ✅ |
+| 20 | environment_wb, recycling_wb, energy_wb, climate_wb, sustainability_wb | ✅ |
 
-### german_english — ✅ COMPLETE (30/30 categories, 450 items)
+### german_spanish — ✅ COMPLETE (100/100 categories, 1500 items)
+Hint language: German | Word language: Spanish
+
+| Batch | Categories | Status |
+|-------|-----------|--------|
+| 1 | fruits_wb, vegetables_wb, colors_wb, family_wb, animals_wb | ✅ |
+| 2 | body_parts_wb, numbers_wb, greetings_wb, food_wb, clothing_wb | ✅ |
+| 3 | house_rooms_wb, weather_wb, professions_wb, transport_wb, school_wb | ✅ |
+| 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
+| 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
+| 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+| 7 | daily_routine_wb, shopping_wb, restaurant_wb, garden_wb, bathroom_wb | ✅ |
+| 8 | cinema_wb, art_wb, dance_wb, photography_wb, crafts_wb | ✅ |
+| 9 | geography_wb, astronomy_wb, ocean_wb, mountains_wb, camping_wb | ✅ |
+| 10 | law_wb, politics_wb, economy_wb, banking_wb, insurance_wb | ✅ |
+| 11 | cooking_wb, baking_wb, spices_wb, dairy_wb, meat_wb | ✅ |
+| 12 | pets_wb, birds_wb, insects_wb, marine_life_wb, farm_animals_wb | ✅ |
+| 13 | feelings_wb, personality_wb, relationships_wb, communication_wb, gestures_wb | ✅ |
+| 14 | architecture_wb, construction_wb, electricity_wb, plumbing_wb, gardening_tools_wb | ✅ |
+| 15 | medicine_wb, pharmacy_wb, fitness_wb, yoga_wb, mental_health_wb | ✅ |
+| 16 | vehicles_wb, aviation_wb, shipping_wb, cycling_wb, trains_wb | ✅ |
+| 17 | mathematics_wb, physics_wb, chemistry_wb, biology_wb, science_wb | ✅ |
+| 18 | festivals_wb, traditions_wb, weddings_wb, holidays_wb, celebrations_wb | ✅ |
+| 19 | fashion_wb, textiles_wb, jewelry_wb, cosmetics_wb, hairstyles_wb | ✅ |
+| 20 | environment_wb, recycling_wb, energy_wb, climate_wb, sustainability_wb | ✅ |
+
+### german_english — ✅ COMPLETE (100/100 categories, 1500 items)
 Hint language: German | Word language: English
 
 | Batch | Categories | Status |
@@ -1134,8 +1229,22 @@ Hint language: German | Word language: English
 | 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
 | 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
 | 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+| 7 | daily_routine_wb, shopping_wb, restaurant_wb, garden_wb, bathroom_wb | ✅ |
+| 8 | cinema_wb, art_wb, dance_wb, photography_wb, crafts_wb | ✅ |
+| 9 | geography_wb, astronomy_wb, ocean_wb, mountains_wb, camping_wb | ✅ |
+| 10 | law_wb, politics_wb, economy_wb, banking_wb, insurance_wb | ✅ |
+| 11 | cooking_wb, baking_wb, spices_wb, dairy_wb, meat_wb | ✅ |
+| 12 | pets_wb, birds_wb, insects_wb, marine_life_wb, farm_animals_wb | ✅ |
+| 13 | feelings_wb, personality_wb, relationships_wb, communication_wb, gestures_wb | ✅ |
+| 14 | architecture_wb, construction_wb, electricity_wb, plumbing_wb, gardening_tools_wb | ✅ |
+| 15 | medicine_wb, pharmacy_wb, fitness_wb, yoga_wb, mental_health_wb | ✅ |
+| 16 | vehicles_wb, aviation_wb, shipping_wb, cycling_wb, trains_wb | ✅ |
+| 17 | mathematics_wb, physics_wb, chemistry_wb, biology_wb, science_wb | ✅ |
+| 18 | festivals_wb, traditions_wb, weddings_wb, holidays_wb, celebrations_wb | ✅ |
+| 19 | fashion_wb, textiles_wb, jewelry_wb, cosmetics_wb, hairstyles_wb | ✅ |
+| 20 | environment_wb, recycling_wb, energy_wb, climate_wb, sustainability_wb | ✅ |
 
-### spanish_english — ✅ COMPLETE (30/30 categories, 450 items)
+### spanish_english — ✅ COMPLETE (100/100 categories, 1500 items)
 Hint language: Spanish | Word language: English
 
 | Batch | Categories | Status |
@@ -1146,31 +1255,45 @@ Hint language: Spanish | Word language: English
 | 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
 | 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
 | 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+| 7 | daily_routine_wb, shopping_wb, restaurant_wb, garden_wb, bathroom_wb | ✅ |
+| 8 | cinema_wb, art_wb, dance_wb, photography_wb, crafts_wb | ✅ |
+| 9 | geography_wb, astronomy_wb, ocean_wb, mountains_wb, camping_wb | ✅ |
+| 10 | law_wb, politics_wb, economy_wb, banking_wb, insurance_wb | ✅ |
+| 11 | cooking_wb, baking_wb, spices_wb, dairy_wb, meat_wb | ✅ |
+| 12 | pets_wb, birds_wb, insects_wb, marine_life_wb, farm_animals_wb | ✅ |
+| 13 | feelings_wb, personality_wb, relationships_wb, communication_wb, gestures_wb | ✅ |
+| 14 | architecture_wb, construction_wb, electricity_wb, plumbing_wb, gardening_tools_wb | ✅ |
+| 15 | medicine_wb, pharmacy_wb, fitness_wb, yoga_wb, mental_health_wb | ✅ |
+| 16 | vehicles_wb, aviation_wb, shipping_wb, cycling_wb, trains_wb | ✅ |
+| 17 | mathematics_wb, physics_wb, chemistry_wb, biology_wb, science_wb | ✅ |
+| 18 | festivals_wb, traditions_wb, weddings_wb, holidays_wb, celebrations_wb | ✅ |
+| 19 | fashion_wb, textiles_wb, jewelry_wb, cosmetics_wb, hairstyles_wb | ✅ |
+| 20 | environment_wb, recycling_wb, energy_wb, climate_wb, sustainability_wb | ✅ |
 
 ### Beta Pairs (18 missing — no wordbuilder file)
 
 | # | Pair | Hint Lang | Word Lang | Cats | Items | Target Cats | Target Items | Status |
 |---|------|----------|----------|------|-------|------------|-------------|--------|
-| 1 | arabic_english | Arabic | English | 30 | 450 | 30 | 450 | ✅ |
-| 2 | chinese_english | Chinese | English | 30 | 450 | 30 | 450 | ✅ |
-| 3 | english_arabic | English | Arabic | 30 | 450 | 30 | 450 | ✅ |
-| 4 | english_chinese | English | Chinese | 30 | 450 | 30 | 450 | ✅ |
-| 5 | english_french | English | French | 30 | 450 | 30 | 450 | ✅ |
-| 6 | english_german | English | German | 30 | 450 | 30 | 450 | ✅ |
-| 7 | english_japanese | English | Japanese | 30 | 450 | 30 | 450 | ✅ |
-| 8 | english_polish | English | Polish | 30 | 450 | 30 | 450 | ✅ |
-| 9 | french_english | French | English | 30 | 450 | 30 | 450 | ✅ |
-| 10 | german_polish | German | Polish | 30 | 450 | 30 | 450 | ✅ |
-| 11 | japanese_english | Japanese | English | 30 | 450 | 30 | 450 | ✅ |
-| 12 | polish_arabic | Polish | Arabic | 30 | 450 | 30 | 450 | ✅ |
-| 13 | polish_chinese | Polish | Chinese | 30 | 450 | 30 | 450 | ✅ |
-| 14 | polish_french | Polish | French | 30 | 450 | 30 | 450 | ✅ |
-| 15 | polish_japanese | Polish | Japanese | 30 | 450 | 30 | 450 | ✅ |
-| 16 | polish_ukrainian | Polish | Ukrainian | 30 | 450 | 30 | 450 | ✅ |
-| 17 | ukrainian_english | Ukrainian | English | 30 | 450 | 30 | 450 | ✅ |
-| 18 | ukrainian_polish | Ukrainian | Polish | 30 | 450 | 30 | 450 | ✅ |
+| 1 | arabic_english | Arabic | English | 100 | 1500 | 100 | 1500 | ✅ |
+| 2 | chinese_english | Chinese | English | 100 | 1500 | 100 | 1500 | ✅ |
+| 3 | english_arabic | English | Arabic | 100 | 1500 | 100 | 1500 | ✅ |
+| 4 | english_chinese | English | Chinese | 100 | 1500 | 100 | 1500 | ✅ |
+| 5 | english_french | English | French | 100 | 1500 | 100 | 1500 | ✅ |
+| 6 | english_german | English | German | 100 | 1500 | 100 | 1500 | ✅ |
+| 7 | english_japanese | English | Japanese | 100 | 1500 | 100 | 1500 | ✅ |
+| 8 | english_polish | English | Polish | 100 | 1500 | 100 | 1500 | ✅ |
+| 9 | french_english | French | English | 100 | 1500 | 100 | 1500 | ✅ |
+| 10 | german_polish | German | Polish | 100 | 1500 | 100 | 1500 | ✅ |
+| 11 | japanese_english | Japanese | English | 100 | 1500 | 100 | 1500 | ✅ |
+| 12 | polish_arabic | Polish | Arabic | 100 | 1500 | 100 | 1500 | ✅ |
+| 13 | polish_chinese | Polish | Chinese | 100 | 1500 | 100 | 1500 | ✅ |
+| 14 | polish_french | Polish | French | 100 | 1500 | 100 | 1500 | ✅ |
+| 15 | polish_japanese | Polish | Japanese | 100 | 1500 | 100 | 1500 | ✅ |
+| 16 | polish_ukrainian | Polish | Ukrainian | 100 | 1500 | 100 | 1500 | ✅ |
+| 17 | ukrainian_english | Ukrainian | English | 100 | 1500 | 100 | 1500 | ✅ |
+| 18 | ukrainian_polish | Ukrainian | Polish | 100 | 1500 | 100 | 1500 | ✅ |
 
-### arabic_english — ✅ COMPLETE (30/30 categories, 450 items)
+### arabic_english — ✅ COMPLETE (100/100 categories, 1500 items)
 Hint language: Arabic | Word language: English
 
 | Batch | Categories | Status |
@@ -1181,8 +1304,22 @@ Hint language: Arabic | Word language: English
 | 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
 | 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
 | 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+| 7 | daily_routine_wb, shopping_wb, restaurant_wb, garden_wb, bathroom_wb | ✅ |
+| 8 | cinema_wb, art_wb, dance_wb, photography_wb, crafts_wb | ✅ |
+| 9 | geography_wb, astronomy_wb, ocean_wb, mountains_wb, camping_wb | ✅ |
+| 10 | law_wb, politics_wb, economy_wb, banking_wb, insurance_wb | ✅ |
+| 11 | cooking_wb, baking_wb, spices_wb, dairy_wb, meat_wb | ✅ |
+| 12 | pets_wb, birds_wb, insects_wb, marine_life_wb, farm_animals_wb | ✅ |
+| 13 | feelings_wb, personality_wb, relationships_wb, communication_wb, gestures_wb | ✅ |
+| 14 | architecture_wb, construction_wb, electricity_wb, plumbing_wb, gardening_tools_wb | ✅ |
+| 15 | medicine_wb, pharmacy_wb, fitness_wb, yoga_wb, mental_health_wb | ✅ |
+| 16 | vehicles_wb, aviation_wb, shipping_wb, cycling_wb, trains_wb | ✅ |
+| 17 | mathematics_wb, physics_wb, chemistry_wb, biology_wb, science_wb | ✅ |
+| 18 | festivals_wb, traditions_wb, weddings_wb, holidays_wb, celebrations_wb | ✅ |
+| 19 | fashion_wb, textiles_wb, jewelry_wb, cosmetics_wb, hairstyles_wb | ✅ |
+| 20 | environment_wb, recycling_wb, energy_wb, climate_wb, sustainability_wb | ✅ |
 
-### chinese_english — ✅ COMPLETE (30/30 categories, 450 items)
+### chinese_english — ✅ COMPLETE (100/100 categories, 1500 items)
 Hint language: Chinese | Word language: English
 
 | Batch | Categories | Status |
@@ -1193,8 +1330,22 @@ Hint language: Chinese | Word language: English
 | 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
 | 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
 | 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+| 7 | daily_routine_wb, shopping_wb, restaurant_wb, garden_wb, bathroom_wb | ✅ |
+| 8 | cinema_wb, art_wb, dance_wb, photography_wb, crafts_wb | ✅ |
+| 9 | geography_wb, astronomy_wb, ocean_wb, mountains_wb, camping_wb | ✅ |
+| 10 | law_wb, politics_wb, economy_wb, banking_wb, insurance_wb | ✅ |
+| 11 | cooking_wb, baking_wb, spices_wb, dairy_wb, meat_wb | ✅ |
+| 12 | pets_wb, birds_wb, insects_wb, marine_life_wb, farm_animals_wb | ✅ |
+| 13 | feelings_wb, personality_wb, relationships_wb, communication_wb, gestures_wb | ✅ |
+| 14 | architecture_wb, construction_wb, electricity_wb, plumbing_wb, gardening_tools_wb | ✅ |
+| 15 | medicine_wb, pharmacy_wb, fitness_wb, yoga_wb, mental_health_wb | ✅ |
+| 16 | vehicles_wb, aviation_wb, shipping_wb, cycling_wb, trains_wb | ✅ |
+| 17 | mathematics_wb, physics_wb, chemistry_wb, biology_wb, science_wb | ✅ |
+| 18 | festivals_wb, traditions_wb, weddings_wb, holidays_wb, celebrations_wb | ✅ |
+| 19 | fashion_wb, textiles_wb, jewelry_wb, cosmetics_wb, hairstyles_wb | ✅ |
+| 20 | environment_wb, recycling_wb, energy_wb, climate_wb, sustainability_wb | ✅ |
 
-### english_german — ✅ COMPLETE (30/30 categories, 450 items)
+### english_german — ✅ COMPLETE (100/100 categories, 1500 items)
 Hint language: English | Word language: German
 
 | Batch | Categories | Status |
@@ -1205,8 +1356,22 @@ Hint language: English | Word language: German
 | 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
 | 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
 | 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+| 7 | daily_routine_wb, shopping_wb, restaurant_wb, garden_wb, bathroom_wb | ✅ |
+| 8 | cinema_wb, art_wb, dance_wb, photography_wb, crafts_wb | ✅ |
+| 9 | geography_wb, astronomy_wb, ocean_wb, mountains_wb, camping_wb | ✅ |
+| 10 | law_wb, politics_wb, economy_wb, banking_wb, insurance_wb | ✅ |
+| 11 | cooking_wb, baking_wb, spices_wb, dairy_wb, meat_wb | ✅ |
+| 12 | pets_wb, birds_wb, insects_wb, marine_life_wb, farm_animals_wb | ✅ |
+| 13 | feelings_wb, personality_wb, relationships_wb, communication_wb, gestures_wb | ✅ |
+| 14 | architecture_wb, construction_wb, electricity_wb, plumbing_wb, gardening_tools_wb | ✅ |
+| 15 | medicine_wb, pharmacy_wb, fitness_wb, yoga_wb, mental_health_wb | ✅ |
+| 16 | vehicles_wb, aviation_wb, shipping_wb, cycling_wb, trains_wb | ✅ |
+| 17 | mathematics_wb, physics_wb, chemistry_wb, biology_wb, science_wb | ✅ |
+| 18 | festivals_wb, traditions_wb, weddings_wb, holidays_wb, celebrations_wb | ✅ |
+| 19 | fashion_wb, textiles_wb, jewelry_wb, cosmetics_wb, hairstyles_wb | ✅ |
+| 20 | environment_wb, recycling_wb, energy_wb, climate_wb, sustainability_wb | ✅ |
 
-### english_polish — ✅ COMPLETE (30/30 categories, 450 items)
+### english_polish — ✅ COMPLETE (100/100 categories, 1500 items)
 Hint language: English | Word language: Polish
 
 | Batch | Categories | Status |
@@ -1217,8 +1382,22 @@ Hint language: English | Word language: Polish
 | 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
 | 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
 | 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+| 7 | daily_routine_wb, shopping_wb, restaurant_wb, garden_wb, bathroom_wb | ✅ |
+| 8 | cinema_wb, art_wb, dance_wb, photography_wb, crafts_wb | ✅ |
+| 9 | geography_wb, astronomy_wb, ocean_wb, mountains_wb, camping_wb | ✅ |
+| 10 | law_wb, politics_wb, economy_wb, banking_wb, insurance_wb | ✅ |
+| 11 | cooking_wb, baking_wb, spices_wb, dairy_wb, meat_wb | ✅ |
+| 12 | pets_wb, birds_wb, insects_wb, marine_life_wb, farm_animals_wb | ✅ |
+| 13 | feelings_wb, personality_wb, relationships_wb, communication_wb, gestures_wb | ✅ |
+| 14 | architecture_wb, construction_wb, electricity_wb, plumbing_wb, gardening_tools_wb | ✅ |
+| 15 | medicine_wb, pharmacy_wb, fitness_wb, yoga_wb, mental_health_wb | ✅ |
+| 16 | vehicles_wb, aviation_wb, shipping_wb, cycling_wb, trains_wb | ✅ |
+| 17 | mathematics_wb, physics_wb, chemistry_wb, biology_wb, science_wb | ✅ |
+| 18 | festivals_wb, traditions_wb, weddings_wb, holidays_wb, celebrations_wb | ✅ |
+| 19 | fashion_wb, textiles_wb, jewelry_wb, cosmetics_wb, hairstyles_wb | ✅ |
+| 20 | environment_wb, recycling_wb, energy_wb, climate_wb, sustainability_wb | ✅ |
 
-### english_french — ✅ COMPLETE (30/30 categories, 450 items)
+### english_french — ✅ COMPLETE (100/100 categories, 1500 items)
 Hint language: English | Word language: French
 
 | Batch | Categories | Status |
@@ -1229,8 +1408,22 @@ Hint language: English | Word language: French
 | 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
 | 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
 | 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+| 7 | daily_routine_wb, shopping_wb, restaurant_wb, garden_wb, bathroom_wb | ✅ |
+| 8 | cinema_wb, art_wb, dance_wb, photography_wb, crafts_wb | ✅ |
+| 9 | geography_wb, astronomy_wb, ocean_wb, mountains_wb, camping_wb | ✅ |
+| 10 | law_wb, politics_wb, economy_wb, banking_wb, insurance_wb | ✅ |
+| 11 | cooking_wb, baking_wb, spices_wb, dairy_wb, meat_wb | ✅ |
+| 12 | pets_wb, birds_wb, insects_wb, marine_life_wb, farm_animals_wb | ✅ |
+| 13 | feelings_wb, personality_wb, relationships_wb, communication_wb, gestures_wb | ✅ |
+| 14 | architecture_wb, construction_wb, electricity_wb, plumbing_wb, gardening_tools_wb | ✅ |
+| 15 | medicine_wb, pharmacy_wb, fitness_wb, yoga_wb, mental_health_wb | ✅ |
+| 16 | vehicles_wb, aviation_wb, shipping_wb, cycling_wb, trains_wb | ✅ |
+| 17 | mathematics_wb, physics_wb, chemistry_wb, biology_wb, science_wb | ✅ |
+| 18 | festivals_wb, traditions_wb, weddings_wb, holidays_wb, celebrations_wb | ✅ |
+| 19 | fashion_wb, textiles_wb, jewelry_wb, cosmetics_wb, hairstyles_wb | ✅ |
+| 20 | environment_wb, recycling_wb, energy_wb, climate_wb, sustainability_wb | ✅ |
 
-### english_chinese — ✅ COMPLETE (30/30 categories, 450 items)
+### english_chinese — ✅ COMPLETE (100/100 categories, 1500 items)
 Hint language: English | Word language: Chinese
 
 | Batch | Categories | Status |
@@ -1241,8 +1434,22 @@ Hint language: English | Word language: Chinese
 | 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
 | 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
 | 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+| 7 | daily_routine_wb, shopping_wb, restaurant_wb, garden_wb, bathroom_wb | ✅ |
+| 8 | cinema_wb, art_wb, dance_wb, photography_wb, crafts_wb | ✅ |
+| 9 | geography_wb, astronomy_wb, ocean_wb, mountains_wb, camping_wb | ✅ |
+| 10 | law_wb, politics_wb, economy_wb, banking_wb, insurance_wb | ✅ |
+| 11 | cooking_wb, baking_wb, spices_wb, dairy_wb, meat_wb | ✅ |
+| 12 | pets_wb, birds_wb, insects_wb, marine_life_wb, farm_animals_wb | ✅ |
+| 13 | feelings_wb, personality_wb, relationships_wb, communication_wb, gestures_wb | ✅ |
+| 14 | architecture_wb, construction_wb, electricity_wb, plumbing_wb, gardening_tools_wb | ✅ |
+| 15 | medicine_wb, pharmacy_wb, fitness_wb, yoga_wb, mental_health_wb | ✅ |
+| 16 | vehicles_wb, aviation_wb, shipping_wb, cycling_wb, trains_wb | ✅ |
+| 17 | mathematics_wb, physics_wb, chemistry_wb, biology_wb, science_wb | ✅ |
+| 18 | festivals_wb, traditions_wb, weddings_wb, holidays_wb, celebrations_wb | ✅ |
+| 19 | fashion_wb, textiles_wb, jewelry_wb, cosmetics_wb, hairstyles_wb | ✅ |
+| 20 | environment_wb, recycling_wb, energy_wb, climate_wb, sustainability_wb | ✅ |
 
-### english_japanese — ✅ COMPLETE (30/30 categories, 450 items)
+### english_japanese — ✅ COMPLETE (100/100 categories, 1500 items)
 Hint language: English | Word language: Japanese (hiragana/katakana)
 
 | Batch | Categories | Status |
@@ -1253,8 +1460,22 @@ Hint language: English | Word language: Japanese (hiragana/katakana)
 | 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
 | 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
 | 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+| 7 | daily_routine_wb, shopping_wb, restaurant_wb, garden_wb, bathroom_wb | ✅ |
+| 8 | cinema_wb, art_wb, dance_wb, photography_wb, crafts_wb | ✅ |
+| 9 | geography_wb, astronomy_wb, ocean_wb, mountains_wb, camping_wb | ✅ |
+| 10 | law_wb, politics_wb, economy_wb, banking_wb, insurance_wb | ✅ |
+| 11 | cooking_wb, baking_wb, spices_wb, dairy_wb, meat_wb | ✅ |
+| 12 | pets_wb, birds_wb, insects_wb, marine_life_wb, farm_animals_wb | ✅ |
+| 13 | feelings_wb, personality_wb, relationships_wb, communication_wb, gestures_wb | ✅ |
+| 14 | architecture_wb, construction_wb, electricity_wb, plumbing_wb, gardening_tools_wb | ✅ |
+| 15 | medicine_wb, pharmacy_wb, fitness_wb, yoga_wb, mental_health_wb | ✅ |
+| 16 | vehicles_wb, aviation_wb, shipping_wb, cycling_wb, trains_wb | ✅ |
+| 17 | mathematics_wb, physics_wb, chemistry_wb, biology_wb, science_wb | ✅ |
+| 18 | festivals_wb, traditions_wb, weddings_wb, holidays_wb, celebrations_wb | ✅ |
+| 19 | fashion_wb, textiles_wb, jewelry_wb, cosmetics_wb, hairstyles_wb | ✅ |
+| 20 | environment_wb, recycling_wb, energy_wb, climate_wb, sustainability_wb | ✅ |
 
-### french_english — ✅ COMPLETE (30/30 categories, 450 items)
+### french_english — ✅ COMPLETE (100/100 categories, 1500 items)
 Hint language: French | Word language: English
 
 | Batch | Categories | Status |
@@ -1265,8 +1486,22 @@ Hint language: French | Word language: English
 | 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
 | 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
 | 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+| 7 | daily_routine_wb, shopping_wb, restaurant_wb, garden_wb, bathroom_wb | ✅ |
+| 8 | cinema_wb, art_wb, dance_wb, photography_wb, crafts_wb | ✅ |
+| 9 | geography_wb, astronomy_wb, ocean_wb, mountains_wb, camping_wb | ✅ |
+| 10 | law_wb, politics_wb, economy_wb, banking_wb, insurance_wb | ✅ |
+| 11 | cooking_wb, baking_wb, spices_wb, dairy_wb, meat_wb | ✅ |
+| 12 | pets_wb, birds_wb, insects_wb, marine_life_wb, farm_animals_wb | ✅ |
+| 13 | feelings_wb, personality_wb, relationships_wb, communication_wb, gestures_wb | ✅ |
+| 14 | architecture_wb, construction_wb, electricity_wb, plumbing_wb, gardening_tools_wb | ✅ |
+| 15 | medicine_wb, pharmacy_wb, fitness_wb, yoga_wb, mental_health_wb | ✅ |
+| 16 | vehicles_wb, aviation_wb, shipping_wb, cycling_wb, trains_wb | ✅ |
+| 17 | mathematics_wb, physics_wb, chemistry_wb, biology_wb, science_wb | ✅ |
+| 18 | festivals_wb, traditions_wb, weddings_wb, holidays_wb, celebrations_wb | ✅ |
+| 19 | fashion_wb, textiles_wb, jewelry_wb, cosmetics_wb, hairstyles_wb | ✅ |
+| 20 | environment_wb, recycling_wb, energy_wb, climate_wb, sustainability_wb | ✅ |
 
-### english_arabic — ✅ COMPLETE (30/30 categories, 450 items)
+### english_arabic — ✅ COMPLETE (100/100 categories, 1500 items)
 Hint language: English | Word language: Arabic
 
 | Batch | Categories | Status |
@@ -1277,8 +1512,22 @@ Hint language: English | Word language: Arabic
 | 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
 | 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
 | 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+| 7 | daily_routine_wb, shopping_wb, restaurant_wb, garden_wb, bathroom_wb | ✅ |
+| 8 | cinema_wb, art_wb, dance_wb, photography_wb, crafts_wb | ✅ |
+| 9 | geography_wb, astronomy_wb, ocean_wb, mountains_wb, camping_wb | ✅ |
+| 10 | law_wb, politics_wb, economy_wb, banking_wb, insurance_wb | ✅ |
+| 11 | cooking_wb, baking_wb, spices_wb, dairy_wb, meat_wb | ✅ |
+| 12 | pets_wb, birds_wb, insects_wb, marine_life_wb, farm_animals_wb | ✅ |
+| 13 | feelings_wb, personality_wb, relationships_wb, communication_wb, gestures_wb | ✅ |
+| 14 | architecture_wb, construction_wb, electricity_wb, plumbing_wb, gardening_tools_wb | ✅ |
+| 15 | medicine_wb, pharmacy_wb, fitness_wb, yoga_wb, mental_health_wb | ✅ |
+| 16 | vehicles_wb, aviation_wb, shipping_wb, cycling_wb, trains_wb | ✅ |
+| 17 | mathematics_wb, physics_wb, chemistry_wb, biology_wb, science_wb | ✅ |
+| 18 | festivals_wb, traditions_wb, weddings_wb, holidays_wb, celebrations_wb | ✅ |
+| 19 | fashion_wb, textiles_wb, jewelry_wb, cosmetics_wb, hairstyles_wb | ✅ |
+| 20 | environment_wb, recycling_wb, energy_wb, climate_wb, sustainability_wb | ✅ |
 
-### german_polish — ✅ COMPLETE (30/30 categories, 450 items)
+### german_polish — ✅ COMPLETE (100/100 categories, 1500 items)
 Hint language: German | Word language: Polish
 
 | Batch | Categories | Status |
@@ -1289,8 +1538,22 @@ Hint language: German | Word language: Polish
 | 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
 | 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
 | 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+| 7 | daily_routine_wb, shopping_wb, restaurant_wb, garden_wb, bathroom_wb | ✅ |
+| 8 | cinema_wb, art_wb, dance_wb, photography_wb, crafts_wb | ✅ |
+| 9 | geography_wb, astronomy_wb, ocean_wb, mountains_wb, camping_wb | ✅ |
+| 10 | law_wb, politics_wb, economy_wb, banking_wb, insurance_wb | ✅ |
+| 11 | cooking_wb, baking_wb, spices_wb, dairy_wb, meat_wb | ✅ |
+| 12 | pets_wb, birds_wb, insects_wb, marine_life_wb, farm_animals_wb | ✅ |
+| 13 | feelings_wb, personality_wb, relationships_wb, communication_wb, gestures_wb | ✅ |
+| 14 | architecture_wb, construction_wb, electricity_wb, plumbing_wb, gardening_tools_wb | ✅ |
+| 15 | medicine_wb, pharmacy_wb, fitness_wb, yoga_wb, mental_health_wb | ✅ |
+| 16 | vehicles_wb, aviation_wb, shipping_wb, cycling_wb, trains_wb | ✅ |
+| 17 | mathematics_wb, physics_wb, chemistry_wb, biology_wb, science_wb | ✅ |
+| 18 | festivals_wb, traditions_wb, weddings_wb, holidays_wb, celebrations_wb | ✅ |
+| 19 | fashion_wb, textiles_wb, jewelry_wb, cosmetics_wb, hairstyles_wb | ✅ |
+| 20 | environment_wb, recycling_wb, energy_wb, climate_wb, sustainability_wb | ✅ |
 
-### polish_arabic — ✅ COMPLETE (30/30 categories, 450 items)
+### polish_arabic — ✅ COMPLETE (100/100 categories, 1500 items)
 Hint language: Polish | Word language: Arabic
 
 | Batch | Categories | Status |
@@ -1301,8 +1564,22 @@ Hint language: Polish | Word language: Arabic
 | 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
 | 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
 | 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+| 7 | daily_routine_wb, shopping_wb, restaurant_wb, garden_wb, bathroom_wb | ✅ |
+| 8 | cinema_wb, art_wb, dance_wb, photography_wb, crafts_wb | ✅ |
+| 9 | geography_wb, astronomy_wb, ocean_wb, mountains_wb, camping_wb | ✅ |
+| 10 | law_wb, politics_wb, economy_wb, banking_wb, insurance_wb | ✅ |
+| 11 | cooking_wb, baking_wb, spices_wb, dairy_wb, meat_wb | ✅ |
+| 12 | pets_wb, birds_wb, insects_wb, marine_life_wb, farm_animals_wb | ✅ |
+| 13 | feelings_wb, personality_wb, relationships_wb, communication_wb, gestures_wb | ✅ |
+| 14 | architecture_wb, construction_wb, electricity_wb, plumbing_wb, gardening_tools_wb | ✅ |
+| 15 | medicine_wb, pharmacy_wb, fitness_wb, yoga_wb, mental_health_wb | ✅ |
+| 16 | vehicles_wb, aviation_wb, shipping_wb, cycling_wb, trains_wb | ✅ |
+| 17 | mathematics_wb, physics_wb, chemistry_wb, biology_wb, science_wb | ✅ |
+| 18 | festivals_wb, traditions_wb, weddings_wb, holidays_wb, celebrations_wb | ✅ |
+| 19 | fashion_wb, textiles_wb, jewelry_wb, cosmetics_wb, hairstyles_wb | ✅ |
+| 20 | environment_wb, recycling_wb, energy_wb, climate_wb, sustainability_wb | ✅ |
 
-### polish_chinese — ✅ COMPLETE (30/30 categories, 450 items)
+### polish_chinese — ✅ COMPLETE (100/100 categories, 1500 items)
 Hint language: Polish | Word language: Chinese
 
 | Batch | Categories | Status |
@@ -1313,8 +1590,22 @@ Hint language: Polish | Word language: Chinese
 | 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
 | 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
 | 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+| 7 | daily_routine_wb, shopping_wb, restaurant_wb, garden_wb, bathroom_wb | ✅ |
+| 8 | cinema_wb, art_wb, dance_wb, photography_wb, crafts_wb | ✅ |
+| 9 | geography_wb, astronomy_wb, ocean_wb, mountains_wb, camping_wb | ✅ |
+| 10 | law_wb, politics_wb, economy_wb, banking_wb, insurance_wb | ✅ |
+| 11 | cooking_wb, baking_wb, spices_wb, dairy_wb, meat_wb | ✅ |
+| 12 | pets_wb, birds_wb, insects_wb, marine_life_wb, farm_animals_wb | ✅ |
+| 13 | feelings_wb, personality_wb, relationships_wb, communication_wb, gestures_wb | ✅ |
+| 14 | architecture_wb, construction_wb, electricity_wb, plumbing_wb, gardening_tools_wb | ✅ |
+| 15 | medicine_wb, pharmacy_wb, fitness_wb, yoga_wb, mental_health_wb | ✅ |
+| 16 | vehicles_wb, aviation_wb, shipping_wb, cycling_wb, trains_wb | ✅ |
+| 17 | mathematics_wb, physics_wb, chemistry_wb, biology_wb, science_wb | ✅ |
+| 18 | festivals_wb, traditions_wb, weddings_wb, holidays_wb, celebrations_wb | ✅ |
+| 19 | fashion_wb, textiles_wb, jewelry_wb, cosmetics_wb, hairstyles_wb | ✅ |
+| 20 | environment_wb, recycling_wb, energy_wb, climate_wb, sustainability_wb | ✅ |
 
-### polish_french — ✅ COMPLETE (30/30 categories, 450 items)
+### polish_french — ✅ COMPLETE (100/100 categories, 1500 items)
 Hint language: Polish | Word language: French
 
 | Batch | Categories | Status |
@@ -1325,8 +1616,22 @@ Hint language: Polish | Word language: French
 | 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
 | 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
 | 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+| 7 | daily_routine_wb, shopping_wb, restaurant_wb, garden_wb, bathroom_wb | ✅ |
+| 8 | cinema_wb, art_wb, dance_wb, photography_wb, crafts_wb | ✅ |
+| 9 | geography_wb, astronomy_wb, ocean_wb, mountains_wb, camping_wb | ✅ |
+| 10 | law_wb, politics_wb, economy_wb, banking_wb, insurance_wb | ✅ |
+| 11 | cooking_wb, baking_wb, spices_wb, dairy_wb, meat_wb | ✅ |
+| 12 | pets_wb, birds_wb, insects_wb, marine_life_wb, farm_animals_wb | ✅ |
+| 13 | feelings_wb, personality_wb, relationships_wb, communication_wb, gestures_wb | ✅ |
+| 14 | architecture_wb, construction_wb, electricity_wb, plumbing_wb, gardening_tools_wb | ✅ |
+| 15 | medicine_wb, pharmacy_wb, fitness_wb, yoga_wb, mental_health_wb | ✅ |
+| 16 | vehicles_wb, aviation_wb, shipping_wb, cycling_wb, trains_wb | ✅ |
+| 17 | mathematics_wb, physics_wb, chemistry_wb, biology_wb, science_wb | ✅ |
+| 18 | festivals_wb, traditions_wb, weddings_wb, holidays_wb, celebrations_wb | ✅ |
+| 19 | fashion_wb, textiles_wb, jewelry_wb, cosmetics_wb, hairstyles_wb | ✅ |
+| 20 | environment_wb, recycling_wb, energy_wb, climate_wb, sustainability_wb | ✅ |
 
-### japanese_english — ✅ COMPLETE (30/30 categories, 450 items)
+### japanese_english — ✅ COMPLETE (100/100 categories, 1500 items)
 Hint language: Japanese | Word language: English
 
 | Batch | Categories | Status |
@@ -1337,8 +1642,22 @@ Hint language: Japanese | Word language: English
 | 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
 | 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
 | 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+| 7 | daily_routine_wb, shopping_wb, restaurant_wb, garden_wb, bathroom_wb | ✅ |
+| 8 | cinema_wb, art_wb, dance_wb, photography_wb, crafts_wb | ✅ |
+| 9 | geography_wb, astronomy_wb, ocean_wb, mountains_wb, camping_wb | ✅ |
+| 10 | law_wb, politics_wb, economy_wb, banking_wb, insurance_wb | ✅ |
+| 11 | cooking_wb, baking_wb, spices_wb, dairy_wb, meat_wb | ✅ |
+| 12 | pets_wb, birds_wb, insects_wb, marine_life_wb, farm_animals_wb | ✅ |
+| 13 | feelings_wb, personality_wb, relationships_wb, communication_wb, gestures_wb | ✅ |
+| 14 | architecture_wb, construction_wb, electricity_wb, plumbing_wb, gardening_tools_wb | ✅ |
+| 15 | medicine_wb, pharmacy_wb, fitness_wb, yoga_wb, mental_health_wb | ✅ |
+| 16 | vehicles_wb, aviation_wb, shipping_wb, cycling_wb, trains_wb | ✅ |
+| 17 | mathematics_wb, physics_wb, chemistry_wb, biology_wb, science_wb | ✅ |
+| 18 | festivals_wb, traditions_wb, weddings_wb, holidays_wb, celebrations_wb | ✅ |
+| 19 | fashion_wb, textiles_wb, jewelry_wb, cosmetics_wb, hairstyles_wb | ✅ |
+| 20 | environment_wb, recycling_wb, energy_wb, climate_wb, sustainability_wb | ✅ |
 
-### polish_japanese — ✅ COMPLETE (30/30 categories, 450 items)
+### polish_japanese — ✅ COMPLETE (100/100 categories, 1500 items)
 Hint language: Polish | Word language: Japanese (hiragana/katakana)
 
 | Batch | Categories | Status |
@@ -1349,8 +1668,22 @@ Hint language: Polish | Word language: Japanese (hiragana/katakana)
 | 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
 | 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
 | 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+| 7 | daily_routine_wb, shopping_wb, restaurant_wb, garden_wb, bathroom_wb | ✅ |
+| 8 | cinema_wb, art_wb, dance_wb, photography_wb, crafts_wb | ✅ |
+| 9 | geography_wb, astronomy_wb, ocean_wb, mountains_wb, camping_wb | ✅ |
+| 10 | law_wb, politics_wb, economy_wb, banking_wb, insurance_wb | ✅ |
+| 11 | cooking_wb, baking_wb, spices_wb, dairy_wb, meat_wb | ✅ |
+| 12 | pets_wb, birds_wb, insects_wb, marine_life_wb, farm_animals_wb | ✅ |
+| 13 | feelings_wb, personality_wb, relationships_wb, communication_wb, gestures_wb | ✅ |
+| 14 | architecture_wb, construction_wb, electricity_wb, plumbing_wb, gardening_tools_wb | ✅ |
+| 15 | medicine_wb, pharmacy_wb, fitness_wb, yoga_wb, mental_health_wb | ✅ |
+| 16 | vehicles_wb, aviation_wb, shipping_wb, cycling_wb, trains_wb | ✅ |
+| 17 | mathematics_wb, physics_wb, chemistry_wb, biology_wb, science_wb | ✅ |
+| 18 | festivals_wb, traditions_wb, weddings_wb, holidays_wb, celebrations_wb | ✅ |
+| 19 | fashion_wb, textiles_wb, jewelry_wb, cosmetics_wb, hairstyles_wb | ✅ |
+| 20 | environment_wb, recycling_wb, energy_wb, climate_wb, sustainability_wb | ✅ |
 
-### polish_ukrainian — ✅ COMPLETE (30/30 categories, 450 items)
+### polish_ukrainian — ✅ COMPLETE (100/100 categories, 1500 items)
 Hint language: Polish | Word language: Ukrainian (Cyrillic)
 
 | Batch | Categories | Status |
@@ -1361,8 +1694,22 @@ Hint language: Polish | Word language: Ukrainian (Cyrillic)
 | 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
 | 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
 | 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+| 7 | daily_routine_wb, shopping_wb, restaurant_wb, garden_wb, bathroom_wb | ✅ |
+| 8 | cinema_wb, art_wb, dance_wb, photography_wb, crafts_wb | ✅ |
+| 9 | geography_wb, astronomy_wb, ocean_wb, mountains_wb, camping_wb | ✅ |
+| 10 | law_wb, politics_wb, economy_wb, banking_wb, insurance_wb | ✅ |
+| 11 | cooking_wb, baking_wb, spices_wb, dairy_wb, meat_wb | ✅ |
+| 12 | pets_wb, birds_wb, insects_wb, marine_life_wb, farm_animals_wb | ✅ |
+| 13 | feelings_wb, personality_wb, relationships_wb, communication_wb, gestures_wb | ✅ |
+| 14 | architecture_wb, construction_wb, electricity_wb, plumbing_wb, gardening_tools_wb | ✅ |
+| 15 | medicine_wb, pharmacy_wb, fitness_wb, yoga_wb, mental_health_wb | ✅ |
+| 16 | vehicles_wb, aviation_wb, shipping_wb, cycling_wb, trains_wb | ✅ |
+| 17 | mathematics_wb, physics_wb, chemistry_wb, biology_wb, science_wb | ✅ |
+| 18 | festivals_wb, traditions_wb, weddings_wb, holidays_wb, celebrations_wb | ✅ |
+| 19 | fashion_wb, textiles_wb, jewelry_wb, cosmetics_wb, hairstyles_wb | ✅ |
+| 20 | environment_wb, recycling_wb, energy_wb, climate_wb, sustainability_wb | ✅ |
 
-### ukrainian_english — ✅ COMPLETE (30/30 categories, 450 items)
+### ukrainian_english — ✅ COMPLETE (100/100 categories, 1500 items)
 Hint language: Ukrainian | Word language: English
 
 | Batch | Categories | Status |
@@ -1373,8 +1720,22 @@ Hint language: Ukrainian | Word language: English
 | 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
 | 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
 | 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+| 7 | daily_routine_wb, shopping_wb, restaurant_wb, garden_wb, bathroom_wb | ✅ |
+| 8 | cinema_wb, art_wb, dance_wb, photography_wb, crafts_wb | ✅ |
+| 9 | geography_wb, astronomy_wb, ocean_wb, mountains_wb, camping_wb | ✅ |
+| 10 | law_wb, politics_wb, economy_wb, banking_wb, insurance_wb | ✅ |
+| 11 | cooking_wb, baking_wb, spices_wb, dairy_wb, meat_wb | ✅ |
+| 12 | pets_wb, birds_wb, insects_wb, marine_life_wb, farm_animals_wb | ✅ |
+| 13 | feelings_wb, personality_wb, relationships_wb, communication_wb, gestures_wb | ✅ |
+| 14 | architecture_wb, construction_wb, electricity_wb, plumbing_wb, gardening_tools_wb | ✅ |
+| 15 | medicine_wb, pharmacy_wb, fitness_wb, yoga_wb, mental_health_wb | ✅ |
+| 16 | vehicles_wb, aviation_wb, shipping_wb, cycling_wb, trains_wb | ✅ |
+| 17 | mathematics_wb, physics_wb, chemistry_wb, biology_wb, science_wb | ✅ |
+| 18 | festivals_wb, traditions_wb, weddings_wb, holidays_wb, celebrations_wb | ✅ |
+| 19 | fashion_wb, textiles_wb, jewelry_wb, cosmetics_wb, hairstyles_wb | ✅ |
+| 20 | environment_wb, recycling_wb, energy_wb, climate_wb, sustainability_wb | ✅ |
 
-### ukrainian_polish — ✅ COMPLETE (30/30 categories, 450 items)
+### ukrainian_polish — ✅ COMPLETE (100/100 categories, 1500 items)
 Hint language: Ukrainian | Word language: Polish
 
 | Batch | Categories | Status |
@@ -1385,6 +1746,20 @@ Hint language: Ukrainian | Word language: Polish
 | 4 | kitchen_utensils_wb, sports_wb, music_instruments_wb, nature_wb, emotions_wb | ✅ |
 | 5 | technology_wb, office_wb, health_medical_wb, travel_wb, hobbies_wb | ✅ |
 | 6 | drinks_beverages_wb, desserts_sweets_wb, furniture_wb, tools_wb, materials_wb | ✅ |
+| 7 | daily_routine_wb, shopping_wb, restaurant_wb, garden_wb, bathroom_wb | ✅ |
+| 8 | cinema_wb, art_wb, dance_wb, photography_wb, crafts_wb | ✅ |
+| 9 | geography_wb, astronomy_wb, ocean_wb, mountains_wb, camping_wb | ✅ |
+| 10 | law_wb, politics_wb, economy_wb, banking_wb, insurance_wb | ✅ |
+| 11 | cooking_wb, baking_wb, spices_wb, dairy_wb, meat_wb | ✅ |
+| 12 | pets_wb, birds_wb, insects_wb, marine_life_wb, farm_animals_wb | ✅ |
+| 13 | feelings_wb, personality_wb, relationships_wb, communication_wb, gestures_wb | ✅ |
+| 14 | architecture_wb, construction_wb, electricity_wb, plumbing_wb, gardening_tools_wb | ✅ |
+| 15 | medicine_wb, pharmacy_wb, fitness_wb, yoga_wb, mental_health_wb | ✅ |
+| 16 | vehicles_wb, aviation_wb, shipping_wb, cycling_wb, trains_wb | ✅ |
+| 17 | mathematics_wb, physics_wb, chemistry_wb, biology_wb, science_wb | ✅ |
+| 18 | festivals_wb, traditions_wb, weddings_wb, holidays_wb, celebrations_wb | ✅ |
+| 19 | fashion_wb, textiles_wb, jewelry_wb, cosmetics_wb, hairstyles_wb | ✅ |
+| 20 | environment_wb, recycling_wb, energy_wb, climate_wb, sustainability_wb | ✅ |
 
 ## Special Considerations for Non-Latin Script Pairs
 

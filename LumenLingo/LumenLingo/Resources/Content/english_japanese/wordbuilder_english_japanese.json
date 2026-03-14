@@ -2098,5 +2098,4905 @@
         "hint": "Aluminum"
       }
     ]
+  },
+  {
+    "key": "daily_routine_wb",
+    "name": "Daily Routine",
+    "description": "Japanese words for everyday routine activities",
+    "iconName": "sunrise",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "あさごはん",
+        "hint": "Breakfast"
+      },
+      {
+        "word": "ひるごはん",
+        "hint": "Lunch"
+      },
+      {
+        "word": "ばんごはん",
+        "hint": "Dinner"
+      },
+      {
+        "word": "シャワー",
+        "hint": "Shower"
+      },
+      {
+        "word": "さんぽ",
+        "hint": "A walk / stroll"
+      },
+      {
+        "word": "しごと",
+        "hint": "Work / job"
+      },
+      {
+        "word": "べんきょう",
+        "hint": "Study"
+      },
+      {
+        "word": "すいみん",
+        "hint": "Sleep"
+      },
+      {
+        "word": "そうじ",
+        "hint": "Cleaning"
+      },
+      {
+        "word": "せんたく",
+        "hint": "Laundry"
+      },
+      {
+        "word": "おふろ",
+        "hint": "Bath"
+      },
+      {
+        "word": "はみがき",
+        "hint": "Brushing teeth"
+      },
+      {
+        "word": "かいもの",
+        "hint": "Shopping"
+      },
+      {
+        "word": "りょうり",
+        "hint": "Cooking"
+      },
+      {
+        "word": "おきる",
+        "hint": "To wake up"
+      }
+    ]
+  },
+  {
+    "key": "shopping_wb",
+    "name": "Shopping",
+    "description": "Japanese words for shopping and stores",
+    "iconName": "cart",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "みせ",
+        "hint": "Shop / store"
+      },
+      {
+        "word": "ねだん",
+        "hint": "Price"
+      },
+      {
+        "word": "レジ",
+        "hint": "Cash register"
+      },
+      {
+        "word": "おつり",
+        "hint": "Change (money back)"
+      },
+      {
+        "word": "セール",
+        "hint": "Sale"
+      },
+      {
+        "word": "レシート",
+        "hint": "Receipt"
+      },
+      {
+        "word": "ふくろ",
+        "hint": "Bag"
+      },
+      {
+        "word": "サイズ",
+        "hint": "Size"
+      },
+      {
+        "word": "いろ",
+        "hint": "Color"
+      },
+      {
+        "word": "やすい",
+        "hint": "Cheap / inexpensive"
+      },
+      {
+        "word": "たかい",
+        "hint": "Expensive"
+      },
+      {
+        "word": "かいけい",
+        "hint": "Bill / payment"
+      },
+      {
+        "word": "しなもの",
+        "hint": "Goods / merchandise"
+      },
+      {
+        "word": "にんき",
+        "hint": "Popular / popularity"
+      },
+      {
+        "word": "プレゼント",
+        "hint": "Present / gift"
+      }
+    ]
+  },
+  {
+    "key": "restaurant_wb",
+    "name": "Restaurant",
+    "description": "Japanese words used when dining out",
+    "iconName": "fork.knife",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "メニュー",
+        "hint": "Menu"
+      },
+      {
+        "word": "ちゅうもん",
+        "hint": "Order"
+      },
+      {
+        "word": "のみもの",
+        "hint": "Beverage / drink"
+      },
+      {
+        "word": "デザート",
+        "hint": "Dessert"
+      },
+      {
+        "word": "おかんじょう",
+        "hint": "The bill / check"
+      },
+      {
+        "word": "てんいん",
+        "hint": "Shop clerk / waiter"
+      },
+      {
+        "word": "おすすめ",
+        "hint": "Recommendation"
+      },
+      {
+        "word": "テーブル",
+        "hint": "Table"
+      },
+      {
+        "word": "おはし",
+        "hint": "Chopsticks"
+      },
+      {
+        "word": "おさら",
+        "hint": "Plate / dish"
+      },
+      {
+        "word": "コップ",
+        "hint": "Cup / glass"
+      },
+      {
+        "word": "スプーン",
+        "hint": "Spoon"
+      },
+      {
+        "word": "フォーク",
+        "hint": "Fork"
+      },
+      {
+        "word": "ナイフ",
+        "hint": "Knife"
+      },
+      {
+        "word": "おしぼり",
+        "hint": "Wet towel (at restaurants)"
+      }
+    ]
+  },
+  {
+    "key": "garden_wb",
+    "name": "Garden",
+    "description": "Japanese words related to gardens and gardening",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "にわ",
+        "hint": "Garden / yard"
+      },
+      {
+        "word": "はな",
+        "hint": "Flower"
+      },
+      {
+        "word": "たね",
+        "hint": "Seed"
+      },
+      {
+        "word": "つち",
+        "hint": "Soil / dirt"
+      },
+      {
+        "word": "みず",
+        "hint": "Water"
+      },
+      {
+        "word": "うえき",
+        "hint": "Potted plant"
+      },
+      {
+        "word": "しばふ",
+        "hint": "Lawn / grass"
+      },
+      {
+        "word": "きり",
+        "hint": "Pruning / clipping"
+      },
+      {
+        "word": "ひりょう",
+        "hint": "Fertilizer"
+      },
+      {
+        "word": "はち",
+        "hint": "Flower pot"
+      },
+      {
+        "word": "ホース",
+        "hint": "Hose"
+      },
+      {
+        "word": "さくら",
+        "hint": "Cherry blossom"
+      },
+      {
+        "word": "つぼみ",
+        "hint": "Bud (flower)"
+      },
+      {
+        "word": "えだ",
+        "hint": "Branch"
+      },
+      {
+        "word": "はっぱ",
+        "hint": "Leaf"
+      }
+    ]
+  },
+  {
+    "key": "bathroom_wb",
+    "name": "Bathroom",
+    "description": "Japanese words for bathroom items and fixtures",
+    "iconName": "drop",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "タオル",
+        "hint": "Towel"
+      },
+      {
+        "word": "せっけん",
+        "hint": "Soap"
+      },
+      {
+        "word": "かがみ",
+        "hint": "Mirror"
+      },
+      {
+        "word": "トイレ",
+        "hint": "Toilet"
+      },
+      {
+        "word": "シャンプー",
+        "hint": "Shampoo"
+      },
+      {
+        "word": "ドライヤー",
+        "hint": "Hair dryer"
+      },
+      {
+        "word": "はぶらし",
+        "hint": "Toothbrush"
+      },
+      {
+        "word": "はみがきこ",
+        "hint": "Toothpaste"
+      },
+      {
+        "word": "おゆ",
+        "hint": "Hot water"
+      },
+      {
+        "word": "じゃぐち",
+        "hint": "Faucet / tap"
+      },
+      {
+        "word": "バスタブ",
+        "hint": "Bathtub"
+      },
+      {
+        "word": "くし",
+        "hint": "Comb"
+      },
+      {
+        "word": "リンス",
+        "hint": "Conditioner"
+      },
+      {
+        "word": "カミソリ",
+        "hint": "Razor"
+      },
+      {
+        "word": "バスマット",
+        "hint": "Bath mat"
+      }
+    ]
+  },
+  {
+    "key": "cinema_wb",
+    "name": "Cinema & Movies",
+    "description": "Japanese words related to cinema and films",
+    "iconName": "film",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "えいが",
+        "hint": "Movie / film"
+      },
+      {
+        "word": "えいがかん",
+        "hint": "Movie theater"
+      },
+      {
+        "word": "チケット",
+        "hint": "Ticket"
+      },
+      {
+        "word": "スクリーン",
+        "hint": "Screen"
+      },
+      {
+        "word": "かんとく",
+        "hint": "Director"
+      },
+      {
+        "word": "はいゆう",
+        "hint": "Actor / actress"
+      },
+      {
+        "word": "アニメ",
+        "hint": "Animation / anime"
+      },
+      {
+        "word": "ポップコーン",
+        "hint": "Popcorn"
+      },
+      {
+        "word": "じまく",
+        "hint": "Subtitles"
+      },
+      {
+        "word": "シーン",
+        "hint": "Scene"
+      },
+      {
+        "word": "ドラマ",
+        "hint": "Drama"
+      },
+      {
+        "word": "コメディ",
+        "hint": "Comedy"
+      },
+      {
+        "word": "ホラー",
+        "hint": "Horror"
+      },
+      {
+        "word": "しゅやく",
+        "hint": "Main character / lead role"
+      },
+      {
+        "word": "えんぎ",
+        "hint": "Acting / performance"
+      }
+    ]
+  },
+  {
+    "key": "art_wb",
+    "name": "Art",
+    "description": "Japanese words for art and creative expression",
+    "iconName": "paintbrush",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "びじゅつ",
+        "hint": "Fine arts"
+      },
+      {
+        "word": "えのぐ",
+        "hint": "Paint / colors"
+      },
+      {
+        "word": "ふで",
+        "hint": "Brush (for painting)"
+      },
+      {
+        "word": "スケッチ",
+        "hint": "Sketch"
+      },
+      {
+        "word": "ちょうこく",
+        "hint": "Sculpture"
+      },
+      {
+        "word": "てんらんかい",
+        "hint": "Exhibition"
+      },
+      {
+        "word": "キャンバス",
+        "hint": "Canvas"
+      },
+      {
+        "word": "デザイン",
+        "hint": "Design"
+      },
+      {
+        "word": "げいじゅつ",
+        "hint": "Art / artistic expression"
+      },
+      {
+        "word": "びじゅつかん",
+        "hint": "Art museum"
+      },
+      {
+        "word": "すみ",
+        "hint": "Ink (Japanese calligraphy)"
+      },
+      {
+        "word": "しょどう",
+        "hint": "Calligraphy"
+      },
+      {
+        "word": "いけばな",
+        "hint": "Flower arrangement"
+      },
+      {
+        "word": "がか",
+        "hint": "Painter / artist"
+      },
+      {
+        "word": "さくひん",
+        "hint": "Artwork / work (of art)"
+      }
+    ]
+  },
+  {
+    "key": "dance_wb",
+    "name": "Dance",
+    "description": "Japanese words related to dance and movement",
+    "iconName": "figure.dance",
+    "color": "#d946ef",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "おどり",
+        "hint": "Dance (traditional)"
+      },
+      {
+        "word": "ダンス",
+        "hint": "Dance (modern)"
+      },
+      {
+        "word": "バレエ",
+        "hint": "Ballet"
+      },
+      {
+        "word": "ステージ",
+        "hint": "Stage"
+      },
+      {
+        "word": "リズム",
+        "hint": "Rhythm"
+      },
+      {
+        "word": "おんがく",
+        "hint": "Music"
+      },
+      {
+        "word": "ぶよう",
+        "hint": "Dance (performing art)"
+      },
+      {
+        "word": "こうえん",
+        "hint": "Performance / show"
+      },
+      {
+        "word": "いしょう",
+        "hint": "Costume"
+      },
+      {
+        "word": "ステップ",
+        "hint": "Step (dance move)"
+      },
+      {
+        "word": "パートナー",
+        "hint": "Partner"
+      },
+      {
+        "word": "きもの",
+        "hint": "Kimono (traditional dress)"
+      },
+      {
+        "word": "ぼんおどり",
+        "hint": "Bon dance (festival dance)"
+      },
+      {
+        "word": "ワルツ",
+        "hint": "Waltz"
+      },
+      {
+        "word": "うごき",
+        "hint": "Movement"
+      }
+    ]
+  },
+  {
+    "key": "photography_wb",
+    "name": "Photography",
+    "description": "Japanese words for photography and cameras",
+    "iconName": "camera",
+    "color": "#64748b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "カメラ",
+        "hint": "Camera"
+      },
+      {
+        "word": "しゃしん",
+        "hint": "Photo / photograph"
+      },
+      {
+        "word": "レンズ",
+        "hint": "Lens"
+      },
+      {
+        "word": "フラッシュ",
+        "hint": "Flash"
+      },
+      {
+        "word": "がぞう",
+        "hint": "Image / picture"
+      },
+      {
+        "word": "ズーム",
+        "hint": "Zoom"
+      },
+      {
+        "word": "けしき",
+        "hint": "Scenery / landscape"
+      },
+      {
+        "word": "フィルム",
+        "hint": "Film"
+      },
+      {
+        "word": "さつえい",
+        "hint": "Shooting / photographing"
+      },
+      {
+        "word": "しぼり",
+        "hint": "Aperture"
+      },
+      {
+        "word": "アルバム",
+        "hint": "Album"
+      },
+      {
+        "word": "プリント",
+        "hint": "Print"
+      },
+      {
+        "word": "セルフィー",
+        "hint": "Selfie"
+      },
+      {
+        "word": "ぶれ",
+        "hint": "Blur / camera shake"
+      },
+      {
+        "word": "こうず",
+        "hint": "Composition (photo)"
+      }
+    ]
+  },
+  {
+    "key": "crafts_wb",
+    "name": "Crafts",
+    "description": "Japanese words for crafts and handmade activities",
+    "iconName": "scissors",
+    "color": "#f97316",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "おりがみ",
+        "hint": "Paper folding art"
+      },
+      {
+        "word": "あみもの",
+        "hint": "Knitting"
+      },
+      {
+        "word": "ぬいもの",
+        "hint": "Sewing"
+      },
+      {
+        "word": "はさみ",
+        "hint": "Scissors"
+      },
+      {
+        "word": "ぬの",
+        "hint": "Cloth / fabric"
+      },
+      {
+        "word": "いと",
+        "hint": "Thread"
+      },
+      {
+        "word": "はり",
+        "hint": "Needle"
+      },
+      {
+        "word": "ボタン",
+        "hint": "Button"
+      },
+      {
+        "word": "かみ",
+        "hint": "Paper"
+      },
+      {
+        "word": "のり",
+        "hint": "Glue"
+      },
+      {
+        "word": "テープ",
+        "hint": "Tape"
+      },
+      {
+        "word": "ビーズ",
+        "hint": "Beads"
+      },
+      {
+        "word": "やきもの",
+        "hint": "Pottery / ceramics"
+      },
+      {
+        "word": "ししゅう",
+        "hint": "Embroidery"
+      },
+      {
+        "word": "てづくり",
+        "hint": "Handmade"
+      }
+    ]
+  },
+  {
+    "key": "geography_wb",
+    "name": "Geography",
+    "description": "Japanese words for geographic features and terms",
+    "iconName": "globe.asia.australia",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ちず",
+        "hint": "Map"
+      },
+      {
+        "word": "たいりく",
+        "hint": "Continent"
+      },
+      {
+        "word": "しま",
+        "hint": "Island"
+      },
+      {
+        "word": "かわ",
+        "hint": "River"
+      },
+      {
+        "word": "みずうみ",
+        "hint": "Lake"
+      },
+      {
+        "word": "さばく",
+        "hint": "Desert"
+      },
+      {
+        "word": "へいや",
+        "hint": "Plain / flatland"
+      },
+      {
+        "word": "はんとう",
+        "hint": "Peninsula"
+      },
+      {
+        "word": "かいきょう",
+        "hint": "Strait / channel"
+      },
+      {
+        "word": "きこう",
+        "hint": "Climate"
+      },
+      {
+        "word": "こくきょう",
+        "hint": "National border"
+      },
+      {
+        "word": "みなと",
+        "hint": "Harbor / port"
+      },
+      {
+        "word": "みさき",
+        "hint": "Cape / headland"
+      },
+      {
+        "word": "たに",
+        "hint": "Valley"
+      },
+      {
+        "word": "こうげん",
+        "hint": "Plateau / highlands"
+      }
+    ]
+  },
+  {
+    "key": "astronomy_wb",
+    "name": "Astronomy",
+    "description": "Japanese words for space and celestial objects",
+    "iconName": "star",
+    "color": "#1e3a5f",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ほし",
+        "hint": "Star"
+      },
+      {
+        "word": "つき",
+        "hint": "Moon"
+      },
+      {
+        "word": "たいよう",
+        "hint": "Sun"
+      },
+      {
+        "word": "うちゅう",
+        "hint": "Universe / space"
+      },
+      {
+        "word": "わくせい",
+        "hint": "Planet"
+      },
+      {
+        "word": "ぎんが",
+        "hint": "Galaxy"
+      },
+      {
+        "word": "てんもんだい",
+        "hint": "Observatory"
+      },
+      {
+        "word": "すいせい",
+        "hint": "Comet"
+      },
+      {
+        "word": "いんせき",
+        "hint": "Meteorite"
+      },
+      {
+        "word": "ブラックホール",
+        "hint": "Black hole"
+      },
+      {
+        "word": "かせい",
+        "hint": "Mars"
+      },
+      {
+        "word": "もくせい",
+        "hint": "Jupiter"
+      },
+      {
+        "word": "きんせい",
+        "hint": "Venus"
+      },
+      {
+        "word": "りゅうせい",
+        "hint": "Shooting star / meteor"
+      },
+      {
+        "word": "ぼうえんきょう",
+        "hint": "Telescope"
+      }
+    ]
+  },
+  {
+    "key": "ocean_wb",
+    "name": "Ocean & Sea",
+    "description": "Japanese words related to ocean and marine topics",
+    "iconName": "water.waves",
+    "color": "#0284c7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "うみ",
+        "hint": "Sea / ocean"
+      },
+      {
+        "word": "なみ",
+        "hint": "Wave"
+      },
+      {
+        "word": "しお",
+        "hint": "Tide / salt"
+      },
+      {
+        "word": "すなはま",
+        "hint": "Sandy beach"
+      },
+      {
+        "word": "さかな",
+        "hint": "Fish"
+      },
+      {
+        "word": "かい",
+        "hint": "Shellfish / shell"
+      },
+      {
+        "word": "さんご",
+        "hint": "Coral"
+      },
+      {
+        "word": "ふね",
+        "hint": "Ship / boat"
+      },
+      {
+        "word": "くじら",
+        "hint": "Whale"
+      },
+      {
+        "word": "イルカ",
+        "hint": "Dolphin"
+      },
+      {
+        "word": "たこ",
+        "hint": "Octopus"
+      },
+      {
+        "word": "いか",
+        "hint": "Squid"
+      },
+      {
+        "word": "かいりゅう",
+        "hint": "Ocean current"
+      },
+      {
+        "word": "しんかい",
+        "hint": "Deep sea"
+      },
+      {
+        "word": "とうだい",
+        "hint": "Lighthouse"
+      }
+    ]
+  },
+  {
+    "key": "mountains_wb",
+    "name": "Mountains",
+    "description": "Japanese words related to mountains and hiking",
+    "iconName": "mountain.2",
+    "color": "#78716c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "やま",
+        "hint": "Mountain"
+      },
+      {
+        "word": "さんちょう",
+        "hint": "Mountain top / summit"
+      },
+      {
+        "word": "とざん",
+        "hint": "Mountain climbing"
+      },
+      {
+        "word": "こうよう",
+        "hint": "Autumn leaves"
+      },
+      {
+        "word": "ハイキング",
+        "hint": "Hiking"
+      },
+      {
+        "word": "がけ",
+        "hint": "Cliff"
+      },
+      {
+        "word": "いわ",
+        "hint": "Rock / boulder"
+      },
+      {
+        "word": "たき",
+        "hint": "Waterfall"
+      },
+      {
+        "word": "もり",
+        "hint": "Forest"
+      },
+      {
+        "word": "おんせん",
+        "hint": "Hot spring"
+      },
+      {
+        "word": "こやま",
+        "hint": "Hill"
+      },
+      {
+        "word": "かざん",
+        "hint": "Volcano"
+      },
+      {
+        "word": "ゆき",
+        "hint": "Snow"
+      },
+      {
+        "word": "つりばし",
+        "hint": "Suspension bridge"
+      },
+      {
+        "word": "さんろ",
+        "hint": "Mountain trail / path"
+      }
+    ]
+  },
+  {
+    "key": "camping_wb",
+    "name": "Camping",
+    "description": "Japanese words for camping and outdoor activities",
+    "iconName": "tent",
+    "color": "#65a30d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "テント",
+        "hint": "Tent"
+      },
+      {
+        "word": "キャンプ",
+        "hint": "Camp / camping"
+      },
+      {
+        "word": "たきび",
+        "hint": "Campfire / bonfire"
+      },
+      {
+        "word": "ねぶくろ",
+        "hint": "Sleeping bag"
+      },
+      {
+        "word": "ランタン",
+        "hint": "Lantern"
+      },
+      {
+        "word": "にもつ",
+        "hint": "Luggage / baggage"
+      },
+      {
+        "word": "リュック",
+        "hint": "Backpack"
+      },
+      {
+        "word": "ナイフ",
+        "hint": "Knife"
+      },
+      {
+        "word": "すいとう",
+        "hint": "Water bottle / canteen"
+      },
+      {
+        "word": "むし",
+        "hint": "Insect / bug"
+      },
+      {
+        "word": "つり",
+        "hint": "Fishing"
+      },
+      {
+        "word": "カヌー",
+        "hint": "Canoe"
+      },
+      {
+        "word": "バーベキュー",
+        "hint": "Barbecue"
+      },
+      {
+        "word": "コンパス",
+        "hint": "Compass"
+      },
+      {
+        "word": "まき",
+        "hint": "Firewood"
+      }
+    ]
+  },
+  {
+    "key": "law_wb",
+    "name": "Law & Justice",
+    "description": "Japanese words related to law and the legal system",
+    "iconName": "building.columns",
+    "color": "#6366f1",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ほうりつ",
+        "hint": "Law / legislation"
+      },
+      {
+        "word": "さいばん",
+        "hint": "Trial / court case"
+      },
+      {
+        "word": "べんごし",
+        "hint": "Lawyer / attorney"
+      },
+      {
+        "word": "けいさつ",
+        "hint": "Police"
+      },
+      {
+        "word": "はんざい",
+        "hint": "Crime"
+      },
+      {
+        "word": "しょうこ",
+        "hint": "Evidence / proof"
+      },
+      {
+        "word": "さいばんしょ",
+        "hint": "Court (of law)"
+      },
+      {
+        "word": "けいむしょ",
+        "hint": "Prison"
+      },
+      {
+        "word": "けんぽう",
+        "hint": "Constitution"
+      },
+      {
+        "word": "けんり",
+        "hint": "Right / privilege"
+      },
+      {
+        "word": "ぎむ",
+        "hint": "Duty / obligation"
+      },
+      {
+        "word": "ばっきん",
+        "hint": "Fine / penalty"
+      },
+      {
+        "word": "じょうやく",
+        "hint": "Treaty / pact"
+      },
+      {
+        "word": "ひこくにん",
+        "hint": "Defendant / accused"
+      },
+      {
+        "word": "はんけつ",
+        "hint": "Verdict / judgment"
+      }
+    ]
+  },
+  {
+    "key": "politics_wb",
+    "name": "Politics",
+    "description": "Japanese words related to politics and government",
+    "iconName": "person.3",
+    "color": "#dc2626",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "せいじ",
+        "hint": "Politics"
+      },
+      {
+        "word": "せんきょ",
+        "hint": "Election"
+      },
+      {
+        "word": "こっかい",
+        "hint": "National Diet (parliament)"
+      },
+      {
+        "word": "しゅしょう",
+        "hint": "Prime Minister"
+      },
+      {
+        "word": "だいとうりょう",
+        "hint": "President"
+      },
+      {
+        "word": "せいとう",
+        "hint": "Political party"
+      },
+      {
+        "word": "とうひょう",
+        "hint": "Voting"
+      },
+      {
+        "word": "みんしゅ",
+        "hint": "Democracy"
+      },
+      {
+        "word": "がいこう",
+        "hint": "Diplomacy"
+      },
+      {
+        "word": "せいさく",
+        "hint": "Policy"
+      },
+      {
+        "word": "ないかく",
+        "hint": "Cabinet (government)"
+      },
+      {
+        "word": "ぜいきん",
+        "hint": "Tax"
+      },
+      {
+        "word": "よさん",
+        "hint": "Budget"
+      },
+      {
+        "word": "こくみん",
+        "hint": "Citizens / nationals"
+      },
+      {
+        "word": "ぎいん",
+        "hint": "Legislator / parliament member"
+      }
+    ]
+  },
+  {
+    "key": "economy_wb",
+    "name": "Economy",
+    "description": "Japanese words for economics and business",
+    "iconName": "chart.line.uptrend.xyaxis",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "けいざい",
+        "hint": "Economy / economics"
+      },
+      {
+        "word": "かぶしき",
+        "hint": "Stocks / shares"
+      },
+      {
+        "word": "ぶっか",
+        "hint": "Prices / cost of living"
+      },
+      {
+        "word": "しじょう",
+        "hint": "Market"
+      },
+      {
+        "word": "ぼうえき",
+        "hint": "Trade / commerce"
+      },
+      {
+        "word": "ゆにゅう",
+        "hint": "Import"
+      },
+      {
+        "word": "ゆしゅつ",
+        "hint": "Export"
+      },
+      {
+        "word": "インフレ",
+        "hint": "Inflation"
+      },
+      {
+        "word": "けいき",
+        "hint": "Economic conditions"
+      },
+      {
+        "word": "とうし",
+        "hint": "Investment"
+      },
+      {
+        "word": "しほん",
+        "hint": "Capital / funds"
+      },
+      {
+        "word": "きぎょう",
+        "hint": "Company / enterprise"
+      },
+      {
+        "word": "しゅうにゅう",
+        "hint": "Income / revenue"
+      },
+      {
+        "word": "ししゅつ",
+        "hint": "Expenditure"
+      },
+      {
+        "word": "ふきょう",
+        "hint": "Recession / depression"
+      }
+    ]
+  },
+  {
+    "key": "banking_wb",
+    "name": "Banking",
+    "description": "Japanese words for banking and financial services",
+    "iconName": "banknote",
+    "color": "#16a34a",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ぎんこう",
+        "hint": "Bank"
+      },
+      {
+        "word": "よきん",
+        "hint": "Deposit / savings"
+      },
+      {
+        "word": "こうざ",
+        "hint": "Account (bank)"
+      },
+      {
+        "word": "ふりこみ",
+        "hint": "Bank transfer"
+      },
+      {
+        "word": "りし",
+        "hint": "Interest (financial)"
+      },
+      {
+        "word": "ローン",
+        "hint": "Loan"
+      },
+      {
+        "word": "クレジットカード",
+        "hint": "Credit card"
+      },
+      {
+        "word": "げんきん",
+        "hint": "Cash"
+      },
+      {
+        "word": "つうちょう",
+        "hint": "Bankbook / passbook"
+      },
+      {
+        "word": "エーティーエム",
+        "hint": "ATM"
+      },
+      {
+        "word": "かわせ",
+        "hint": "Exchange (currency)"
+      },
+      {
+        "word": "しはらい",
+        "hint": "Payment"
+      },
+      {
+        "word": "ひきだし",
+        "hint": "Withdrawal"
+      },
+      {
+        "word": "てすうりょう",
+        "hint": "Service charge / fee"
+      },
+      {
+        "word": "ざんだか",
+        "hint": "Account balance"
+      }
+    ]
+  },
+  {
+    "key": "insurance_wb",
+    "name": "Insurance",
+    "description": "Japanese words for insurance and coverage",
+    "iconName": "shield",
+    "color": "#2563eb",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ほけん",
+        "hint": "Insurance"
+      },
+      {
+        "word": "せいめいほけん",
+        "hint": "Life insurance"
+      },
+      {
+        "word": "じどうしゃほけん",
+        "hint": "Car insurance"
+      },
+      {
+        "word": "けんこうほけん",
+        "hint": "Health insurance"
+      },
+      {
+        "word": "ほしょう",
+        "hint": "Guarantee / warranty"
+      },
+      {
+        "word": "けいやく",
+        "hint": "Contract"
+      },
+      {
+        "word": "ほけんりょう",
+        "hint": "Insurance premium"
+      },
+      {
+        "word": "じこ",
+        "hint": "Accident"
+      },
+      {
+        "word": "さいがい",
+        "hint": "Disaster"
+      },
+      {
+        "word": "ひがい",
+        "hint": "Damage / harm"
+      },
+      {
+        "word": "ほけんしょう",
+        "hint": "Insurance card"
+      },
+      {
+        "word": "ばいしょう",
+        "hint": "Compensation / indemnity"
+      },
+      {
+        "word": "にゅういん",
+        "hint": "Hospitalization"
+      },
+      {
+        "word": "しんせい",
+        "hint": "Application / filing"
+      },
+      {
+        "word": "てつづき",
+        "hint": "Procedure / formalities"
+      }
+    ]
+  },
+  {
+    "key": "cooking_wb",
+    "name": "Cooking",
+    "description": "Japanese words for cooking methods and kitchen actions",
+    "iconName": "flame",
+    "color": "#ea580c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "やく",
+        "hint": "To grill / bake / fry"
+      },
+      {
+        "word": "にる",
+        "hint": "To boil / simmer"
+      },
+      {
+        "word": "いためる",
+        "hint": "To stir-fry / sauté"
+      },
+      {
+        "word": "むす",
+        "hint": "To steam"
+      },
+      {
+        "word": "あげる",
+        "hint": "To deep-fry"
+      },
+      {
+        "word": "きる",
+        "hint": "To cut / slice"
+      },
+      {
+        "word": "まぜる",
+        "hint": "To mix / stir"
+      },
+      {
+        "word": "あじつけ",
+        "hint": "Seasoning / flavoring"
+      },
+      {
+        "word": "したごしらえ",
+        "hint": "Preparation (cooking)"
+      },
+      {
+        "word": "レシピ",
+        "hint": "Recipe"
+      },
+      {
+        "word": "フライパン",
+        "hint": "Frying pan"
+      },
+      {
+        "word": "なべ",
+        "hint": "Pot / saucepan"
+      },
+      {
+        "word": "まないた",
+        "hint": "Cutting board"
+      },
+      {
+        "word": "ほうちょう",
+        "hint": "Kitchen knife"
+      },
+      {
+        "word": "かんづめ",
+        "hint": "Canned food"
+      }
+    ]
+  },
+  {
+    "key": "baking_wb",
+    "name": "Baking",
+    "description": "Japanese words for baking and pastry making",
+    "iconName": "oven.fill",
+    "color": "#d97706",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "パン",
+        "hint": "Bread"
+      },
+      {
+        "word": "ケーキ",
+        "hint": "Cake"
+      },
+      {
+        "word": "クッキー",
+        "hint": "Cookie"
+      },
+      {
+        "word": "オーブン",
+        "hint": "Oven"
+      },
+      {
+        "word": "こむぎこ",
+        "hint": "Wheat flour"
+      },
+      {
+        "word": "さとう",
+        "hint": "Sugar"
+      },
+      {
+        "word": "バター",
+        "hint": "Butter"
+      },
+      {
+        "word": "たまご",
+        "hint": "Egg"
+      },
+      {
+        "word": "イースト",
+        "hint": "Yeast"
+      },
+      {
+        "word": "こねる",
+        "hint": "To knead (dough)"
+      },
+      {
+        "word": "かたち",
+        "hint": "Shape / form"
+      },
+      {
+        "word": "やきあがり",
+        "hint": "Freshly baked"
+      },
+      {
+        "word": "パイ",
+        "hint": "Pie"
+      },
+      {
+        "word": "マフィン",
+        "hint": "Muffin"
+      },
+      {
+        "word": "ドーナツ",
+        "hint": "Donut"
+      }
+    ]
+  },
+  {
+    "key": "spices_wb",
+    "name": "Spices & Seasonings",
+    "description": "Japanese words for spices and flavor enhancers",
+    "iconName": "leaf",
+    "color": "#b45309",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "しお",
+        "hint": "Salt"
+      },
+      {
+        "word": "こしょう",
+        "hint": "Pepper"
+      },
+      {
+        "word": "しょうゆ",
+        "hint": "Soy sauce"
+      },
+      {
+        "word": "みそ",
+        "hint": "Miso (fermented soybean paste)"
+      },
+      {
+        "word": "わさび",
+        "hint": "Japanese horseradish"
+      },
+      {
+        "word": "しょうが",
+        "hint": "Ginger"
+      },
+      {
+        "word": "にんにく",
+        "hint": "Garlic"
+      },
+      {
+        "word": "とうがらし",
+        "hint": "Chili pepper"
+      },
+      {
+        "word": "カレー",
+        "hint": "Curry"
+      },
+      {
+        "word": "ごま",
+        "hint": "Sesame"
+      },
+      {
+        "word": "す",
+        "hint": "Vinegar"
+      },
+      {
+        "word": "みりん",
+        "hint": "Sweet rice wine (for cooking)"
+      },
+      {
+        "word": "さけ",
+        "hint": "Sake (rice wine)"
+      },
+      {
+        "word": "だし",
+        "hint": "Japanese soup stock"
+      },
+      {
+        "word": "マヨネーズ",
+        "hint": "Mayonnaise"
+      }
+    ]
+  },
+  {
+    "key": "dairy_wb",
+    "name": "Dairy Products",
+    "description": "Japanese words for dairy and milk-based foods",
+    "iconName": "cup.and.saucer",
+    "color": "#fbbf24",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "ぎゅうにゅう",
+        "hint": "Milk (cow's milk)"
+      },
+      {
+        "word": "チーズ",
+        "hint": "Cheese"
+      },
+      {
+        "word": "ヨーグルト",
+        "hint": "Yogurt"
+      },
+      {
+        "word": "バター",
+        "hint": "Butter"
+      },
+      {
+        "word": "クリーム",
+        "hint": "Cream"
+      },
+      {
+        "word": "アイスクリーム",
+        "hint": "Ice cream"
+      },
+      {
+        "word": "とうにゅう",
+        "hint": "Soy milk"
+      },
+      {
+        "word": "れんにゅう",
+        "hint": "Condensed milk"
+      },
+      {
+        "word": "こなミルク",
+        "hint": "Powdered milk"
+      },
+      {
+        "word": "スキムミルク",
+        "hint": "Skim milk"
+      },
+      {
+        "word": "プリン",
+        "hint": "Pudding / custard"
+      },
+      {
+        "word": "ホイップ",
+        "hint": "Whipped (cream)"
+      },
+      {
+        "word": "マーガリン",
+        "hint": "Margarine"
+      },
+      {
+        "word": "カルシウム",
+        "hint": "Calcium"
+      },
+      {
+        "word": "にゅうせいひん",
+        "hint": "Dairy products"
+      }
+    ]
+  },
+  {
+    "key": "meat_wb",
+    "name": "Meat & Protein",
+    "description": "Japanese words for different types of meat",
+    "iconName": "fork.knife",
+    "color": "#b91c1c",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "にく",
+        "hint": "Meat"
+      },
+      {
+        "word": "ぎゅうにく",
+        "hint": "Beef"
+      },
+      {
+        "word": "ぶたにく",
+        "hint": "Pork"
+      },
+      {
+        "word": "とりにく",
+        "hint": "Chicken meat"
+      },
+      {
+        "word": "ひつじにく",
+        "hint": "Lamb / mutton"
+      },
+      {
+        "word": "ソーセージ",
+        "hint": "Sausage"
+      },
+      {
+        "word": "ハム",
+        "hint": "Ham"
+      },
+      {
+        "word": "ベーコン",
+        "hint": "Bacon"
+      },
+      {
+        "word": "ステーキ",
+        "hint": "Steak"
+      },
+      {
+        "word": "ハンバーグ",
+        "hint": "Hamburger patty"
+      },
+      {
+        "word": "やきとり",
+        "hint": "Grilled chicken skewer"
+      },
+      {
+        "word": "しゃぶしゃぶ",
+        "hint": "Shabu-shabu (hot pot)"
+      },
+      {
+        "word": "すきやき",
+        "hint": "Sukiyaki (beef hot pot)"
+      },
+      {
+        "word": "さしみ",
+        "hint": "Sashimi (raw fish)"
+      },
+      {
+        "word": "エビフライ",
+        "hint": "Fried shrimp"
+      }
+    ]
+  },
+  {
+    "key": "pets_wb",
+    "name": "Pets",
+    "description": "Japanese words for common pets and pet care",
+    "iconName": "pawprint",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "いぬ",
+        "hint": "Dog"
+      },
+      {
+        "word": "ねこ",
+        "hint": "Cat"
+      },
+      {
+        "word": "ハムスター",
+        "hint": "Hamster"
+      },
+      {
+        "word": "うさぎ",
+        "hint": "Rabbit"
+      },
+      {
+        "word": "きんぎょ",
+        "hint": "Goldfish"
+      },
+      {
+        "word": "カメ",
+        "hint": "Turtle / tortoise"
+      },
+      {
+        "word": "インコ",
+        "hint": "Parakeet / budgie"
+      },
+      {
+        "word": "えさ",
+        "hint": "Pet food / feed"
+      },
+      {
+        "word": "さんぽ",
+        "hint": "Walk (taking pet)"
+      },
+      {
+        "word": "じゅうい",
+        "hint": "Veterinarian"
+      },
+      {
+        "word": "くび",
+        "hint": "Collar area / neck"
+      },
+      {
+        "word": "しっぽ",
+        "hint": "Tail"
+      },
+      {
+        "word": "なく",
+        "hint": "To cry / bark / meow"
+      },
+      {
+        "word": "かう",
+        "hint": "To keep (a pet)"
+      },
+      {
+        "word": "なつく",
+        "hint": "To become attached / tame"
+      }
+    ]
+  },
+  {
+    "key": "birds_wb",
+    "name": "Birds",
+    "description": "Japanese words for different bird species",
+    "iconName": "bird",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "とり",
+        "hint": "Bird"
+      },
+      {
+        "word": "すずめ",
+        "hint": "Sparrow"
+      },
+      {
+        "word": "カラス",
+        "hint": "Crow"
+      },
+      {
+        "word": "はと",
+        "hint": "Pigeon / dove"
+      },
+      {
+        "word": "たか",
+        "hint": "Hawk"
+      },
+      {
+        "word": "わし",
+        "hint": "Eagle"
+      },
+      {
+        "word": "フクロウ",
+        "hint": "Owl"
+      },
+      {
+        "word": "つばめ",
+        "hint": "Swallow"
+      },
+      {
+        "word": "つる",
+        "hint": "Crane (bird)"
+      },
+      {
+        "word": "ペンギン",
+        "hint": "Penguin"
+      },
+      {
+        "word": "オウム",
+        "hint": "Parrot"
+      },
+      {
+        "word": "にわとり",
+        "hint": "Chicken / rooster"
+      },
+      {
+        "word": "くじゃく",
+        "hint": "Peacock"
+      },
+      {
+        "word": "はね",
+        "hint": "Wing / feather"
+      },
+      {
+        "word": "す",
+        "hint": "Nest"
+      }
+    ]
+  },
+  {
+    "key": "insects_wb",
+    "name": "Insects",
+    "description": "Japanese words for insects and small creatures",
+    "iconName": "ant",
+    "color": "#65a30d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "むし",
+        "hint": "Insect / bug"
+      },
+      {
+        "word": "ちょう",
+        "hint": "Butterfly"
+      },
+      {
+        "word": "あり",
+        "hint": "Ant"
+      },
+      {
+        "word": "はち",
+        "hint": "Bee / wasp"
+      },
+      {
+        "word": "トンボ",
+        "hint": "Dragonfly"
+      },
+      {
+        "word": "セミ",
+        "hint": "Cicada"
+      },
+      {
+        "word": "ホタル",
+        "hint": "Firefly"
+      },
+      {
+        "word": "テントウムシ",
+        "hint": "Ladybug"
+      },
+      {
+        "word": "カブトムシ",
+        "hint": "Rhinoceros beetle"
+      },
+      {
+        "word": "クワガタ",
+        "hint": "Stag beetle"
+      },
+      {
+        "word": "バッタ",
+        "hint": "Grasshopper"
+      },
+      {
+        "word": "クモ",
+        "hint": "Spider"
+      },
+      {
+        "word": "か",
+        "hint": "Mosquito"
+      },
+      {
+        "word": "ハエ",
+        "hint": "Fly (insect)"
+      },
+      {
+        "word": "コオロギ",
+        "hint": "Cricket"
+      }
+    ]
+  },
+  {
+    "key": "marine_life_wb",
+    "name": "Marine Life",
+    "description": "Japanese words for sea creatures and marine animals",
+    "iconName": "fish",
+    "color": "#0284c7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "サメ",
+        "hint": "Shark"
+      },
+      {
+        "word": "エビ",
+        "hint": "Shrimp / prawn"
+      },
+      {
+        "word": "カニ",
+        "hint": "Crab"
+      },
+      {
+        "word": "クラゲ",
+        "hint": "Jellyfish"
+      },
+      {
+        "word": "ヒトデ",
+        "hint": "Starfish"
+      },
+      {
+        "word": "ウニ",
+        "hint": "Sea urchin"
+      },
+      {
+        "word": "アザラシ",
+        "hint": "Seal"
+      },
+      {
+        "word": "ラッコ",
+        "hint": "Sea otter"
+      },
+      {
+        "word": "マグロ",
+        "hint": "Tuna"
+      },
+      {
+        "word": "サケ",
+        "hint": "Salmon"
+      },
+      {
+        "word": "タイ",
+        "hint": "Sea bream"
+      },
+      {
+        "word": "フグ",
+        "hint": "Pufferfish"
+      },
+      {
+        "word": "カキ",
+        "hint": "Oyster"
+      },
+      {
+        "word": "ワカメ",
+        "hint": "Seaweed (wakame)"
+      },
+      {
+        "word": "のり",
+        "hint": "Seaweed (nori)"
+      }
+    ]
+  },
+  {
+    "key": "farm_animals_wb",
+    "name": "Farm Animals",
+    "description": "Japanese words for farm and barnyard animals",
+    "iconName": "hare",
+    "color": "#92400e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "うし",
+        "hint": "Cow"
+      },
+      {
+        "word": "ぶた",
+        "hint": "Pig"
+      },
+      {
+        "word": "ひつじ",
+        "hint": "Sheep"
+      },
+      {
+        "word": "やぎ",
+        "hint": "Goat"
+      },
+      {
+        "word": "うま",
+        "hint": "Horse"
+      },
+      {
+        "word": "ロバ",
+        "hint": "Donkey"
+      },
+      {
+        "word": "アヒル",
+        "hint": "Duck"
+      },
+      {
+        "word": "ガチョウ",
+        "hint": "Goose"
+      },
+      {
+        "word": "のうじょう",
+        "hint": "Farm"
+      },
+      {
+        "word": "ぼくじょう",
+        "hint": "Ranch / pasture"
+      },
+      {
+        "word": "たまご",
+        "hint": "Egg"
+      },
+      {
+        "word": "けづくろい",
+        "hint": "Grooming"
+      },
+      {
+        "word": "まぐさ",
+        "hint": "Hay / fodder"
+      },
+      {
+        "word": "こうし",
+        "hint": "Calf (young cow)"
+      },
+      {
+        "word": "こぶた",
+        "hint": "Piglet"
+      }
+    ]
+  },
+  {
+    "key": "feelings_wb",
+    "name": "Feelings",
+    "description": "Japanese words for deep feelings and emotional states",
+    "iconName": "heart",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "よろこび",
+        "hint": "Joy / delight"
+      },
+      {
+        "word": "かなしみ",
+        "hint": "Sadness / sorrow"
+      },
+      {
+        "word": "いかり",
+        "hint": "Anger / rage"
+      },
+      {
+        "word": "おどろき",
+        "hint": "Surprise / amazement"
+      },
+      {
+        "word": "ふあん",
+        "hint": "Anxiety / unease"
+      },
+      {
+        "word": "きぼう",
+        "hint": "Hope"
+      },
+      {
+        "word": "ざんねん",
+        "hint": "Disappointing / regrettable"
+      },
+      {
+        "word": "こうふん",
+        "hint": "Excitement"
+      },
+      {
+        "word": "さびしい",
+        "hint": "Lonely"
+      },
+      {
+        "word": "なつかしい",
+        "hint": "Nostalgic"
+      },
+      {
+        "word": "くやしい",
+        "hint": "Frustrating / vexing"
+      },
+      {
+        "word": "はずかしい",
+        "hint": "Embarrassed / shy"
+      },
+      {
+        "word": "うれしい",
+        "hint": "Happy / glad"
+      },
+      {
+        "word": "こわい",
+        "hint": "Scary / afraid"
+      },
+      {
+        "word": "あんしん",
+        "hint": "Relief / peace of mind"
+      }
+    ]
+  },
+  {
+    "key": "personality_wb",
+    "name": "Personality",
+    "description": "Japanese words for personality traits and character",
+    "iconName": "person",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "やさしい",
+        "hint": "Kind / gentle"
+      },
+      {
+        "word": "まじめ",
+        "hint": "Serious / diligent"
+      },
+      {
+        "word": "あかるい",
+        "hint": "Cheerful / bright"
+      },
+      {
+        "word": "しずか",
+        "hint": "Quiet / calm"
+      },
+      {
+        "word": "つよい",
+        "hint": "Strong"
+      },
+      {
+        "word": "よわい",
+        "hint": "Weak"
+      },
+      {
+        "word": "おとなしい",
+        "hint": "Gentle / docile"
+      },
+      {
+        "word": "げんき",
+        "hint": "Energetic / lively"
+      },
+      {
+        "word": "しんせつ",
+        "hint": "Kindness / helpful"
+      },
+      {
+        "word": "ゆうかん",
+        "hint": "Brave / courageous"
+      },
+      {
+        "word": "がんこ",
+        "hint": "Stubborn"
+      },
+      {
+        "word": "すなお",
+        "hint": "Honest / obedient"
+      },
+      {
+        "word": "のんき",
+        "hint": "Easygoing / carefree"
+      },
+      {
+        "word": "きちょうめん",
+        "hint": "Meticulous / precise"
+      },
+      {
+        "word": "おおらか",
+        "hint": "Generous / magnanimous"
+      }
+    ]
+  },
+  {
+    "key": "relationships_wb",
+    "name": "Relationships",
+    "description": "Japanese words for human relationships and bonds",
+    "iconName": "heart.circle",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ともだち",
+        "hint": "Friend"
+      },
+      {
+        "word": "こいびと",
+        "hint": "Lover / boyfriend / girlfriend"
+      },
+      {
+        "word": "けっこん",
+        "hint": "Marriage"
+      },
+      {
+        "word": "りこん",
+        "hint": "Divorce"
+      },
+      {
+        "word": "やくそく",
+        "hint": "Promise / appointment"
+      },
+      {
+        "word": "しんらい",
+        "hint": "Trust"
+      },
+      {
+        "word": "あいじょう",
+        "hint": "Affection / love"
+      },
+      {
+        "word": "きずな",
+        "hint": "Bond / ties"
+      },
+      {
+        "word": "なかま",
+        "hint": "Companion / comrade"
+      },
+      {
+        "word": "となり",
+        "hint": "Neighbor / next to"
+      },
+      {
+        "word": "せんぱい",
+        "hint": "Senior / elder (social)"
+      },
+      {
+        "word": "こうはい",
+        "hint": "Junior (social)"
+      },
+      {
+        "word": "おんなじ",
+        "hint": "Same / identical"
+      },
+      {
+        "word": "わかれ",
+        "hint": "Parting / separation"
+      },
+      {
+        "word": "であい",
+        "hint": "Encounter / meeting"
+      }
+    ]
+  },
+  {
+    "key": "communication_wb",
+    "name": "Communication",
+    "description": "Japanese words for communication and conversation",
+    "iconName": "bubble.left.and.bubble.right",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "かいわ",
+        "hint": "Conversation"
+      },
+      {
+        "word": "でんわ",
+        "hint": "Telephone"
+      },
+      {
+        "word": "メール",
+        "hint": "Email"
+      },
+      {
+        "word": "メッセージ",
+        "hint": "Message"
+      },
+      {
+        "word": "はなす",
+        "hint": "To speak / talk"
+      },
+      {
+        "word": "きく",
+        "hint": "To listen / ask"
+      },
+      {
+        "word": "こたえる",
+        "hint": "To answer"
+      },
+      {
+        "word": "しつもん",
+        "hint": "Question"
+      },
+      {
+        "word": "せつめい",
+        "hint": "Explanation"
+      },
+      {
+        "word": "いけん",
+        "hint": "Opinion"
+      },
+      {
+        "word": "さんせい",
+        "hint": "Agreement / approval"
+      },
+      {
+        "word": "はんたい",
+        "hint": "Opposition / opposite"
+      },
+      {
+        "word": "そうだん",
+        "hint": "Consultation / advice"
+      },
+      {
+        "word": "うわさ",
+        "hint": "Rumor / gossip"
+      },
+      {
+        "word": "ほんね",
+        "hint": "True feelings / real intention"
+      }
+    ]
+  },
+  {
+    "key": "gestures_wb",
+    "name": "Gestures & Body Language",
+    "description": "Japanese words for gestures and body language",
+    "iconName": "hand.raised",
+    "color": "#f97316",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "おじぎ",
+        "hint": "Bow (greeting gesture)"
+      },
+      {
+        "word": "あくしゅ",
+        "hint": "Handshake"
+      },
+      {
+        "word": "うなずく",
+        "hint": "To nod"
+      },
+      {
+        "word": "てをふる",
+        "hint": "To wave (hand)"
+      },
+      {
+        "word": "ゆびさし",
+        "hint": "Pointing (with finger)"
+      },
+      {
+        "word": "ほほえみ",
+        "hint": "Smile"
+      },
+      {
+        "word": "まばたき",
+        "hint": "Blink / wink"
+      },
+      {
+        "word": "かたをすくめる",
+        "hint": "To shrug shoulders"
+      },
+      {
+        "word": "はくしゅ",
+        "hint": "Applause / clapping"
+      },
+      {
+        "word": "しぐさ",
+        "hint": "Gesture / mannerism"
+      },
+      {
+        "word": "あいさつ",
+        "hint": "Greeting"
+      },
+      {
+        "word": "ためいき",
+        "hint": "Sigh"
+      },
+      {
+        "word": "なみだ",
+        "hint": "Tears"
+      },
+      {
+        "word": "えがお",
+        "hint": "Smiling face"
+      },
+      {
+        "word": "めくばせ",
+        "hint": "Meaningful glance / eye signal"
+      }
+    ]
+  },
+  {
+    "key": "architecture_wb",
+    "name": "Architecture",
+    "description": "Japanese words for architecture and buildings",
+    "iconName": "building.2",
+    "color": "#64748b",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "けんちく",
+        "hint": "Architecture / building"
+      },
+      {
+        "word": "せっけい",
+        "hint": "Design / plan"
+      },
+      {
+        "word": "たてもの",
+        "hint": "Building / structure"
+      },
+      {
+        "word": "はしら",
+        "hint": "Pillar / column"
+      },
+      {
+        "word": "やね",
+        "hint": "Roof"
+      },
+      {
+        "word": "かべ",
+        "hint": "Wall"
+      },
+      {
+        "word": "ゆか",
+        "hint": "Floor"
+      },
+      {
+        "word": "てんじょう",
+        "hint": "Ceiling"
+      },
+      {
+        "word": "かいだん",
+        "hint": "Stairs / staircase"
+      },
+      {
+        "word": "まど",
+        "hint": "Window"
+      },
+      {
+        "word": "げんかん",
+        "hint": "Entrance / entryway"
+      },
+      {
+        "word": "にわ",
+        "hint": "Garden / courtyard"
+      },
+      {
+        "word": "しろ",
+        "hint": "Castle"
+      },
+      {
+        "word": "じんじゃ",
+        "hint": "Shinto shrine"
+      },
+      {
+        "word": "おてら",
+        "hint": "Buddhist temple"
+      }
+    ]
+  },
+  {
+    "key": "construction_wb",
+    "name": "Construction",
+    "description": "Japanese words for construction and building work",
+    "iconName": "hammer",
+    "color": "#78716c",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "こうじ",
+        "hint": "Construction work"
+      },
+      {
+        "word": "どぼく",
+        "hint": "Civil engineering"
+      },
+      {
+        "word": "ざいりょう",
+        "hint": "Materials"
+      },
+      {
+        "word": "コンクリート",
+        "hint": "Concrete"
+      },
+      {
+        "word": "レンガ",
+        "hint": "Brick"
+      },
+      {
+        "word": "セメント",
+        "hint": "Cement"
+      },
+      {
+        "word": "てつ",
+        "hint": "Iron / steel"
+      },
+      {
+        "word": "もくざい",
+        "hint": "Lumber / wood material"
+      },
+      {
+        "word": "くぎ",
+        "hint": "Nail"
+      },
+      {
+        "word": "ネジ",
+        "hint": "Screw"
+      },
+      {
+        "word": "かなづち",
+        "hint": "Hammer"
+      },
+      {
+        "word": "ドリル",
+        "hint": "Drill"
+      },
+      {
+        "word": "クレーン",
+        "hint": "Crane (machine)"
+      },
+      {
+        "word": "あんぜん",
+        "hint": "Safety"
+      },
+      {
+        "word": "ヘルメット",
+        "hint": "Helmet"
+      }
+    ]
+  },
+  {
+    "key": "electricity_wb",
+    "name": "Electricity",
+    "description": "Japanese words for electricity and electrical systems",
+    "iconName": "bolt",
+    "color": "#eab308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "でんき",
+        "hint": "Electricity / electric light"
+      },
+      {
+        "word": "でんち",
+        "hint": "Battery"
+      },
+      {
+        "word": "コンセント",
+        "hint": "Electrical outlet / socket"
+      },
+      {
+        "word": "スイッチ",
+        "hint": "Switch"
+      },
+      {
+        "word": "でんせん",
+        "hint": "Electric wire / cable"
+      },
+      {
+        "word": "でんきゅう",
+        "hint": "Light bulb"
+      },
+      {
+        "word": "ブレーカー",
+        "hint": "Circuit breaker"
+      },
+      {
+        "word": "でんあつ",
+        "hint": "Voltage"
+      },
+      {
+        "word": "でんりゅう",
+        "hint": "Electric current"
+      },
+      {
+        "word": "はつでん",
+        "hint": "Power generation"
+      },
+      {
+        "word": "そうでん",
+        "hint": "Power transmission"
+      },
+      {
+        "word": "ていでん",
+        "hint": "Power outage / blackout"
+      },
+      {
+        "word": "しょうめい",
+        "hint": "Lighting / illumination"
+      },
+      {
+        "word": "アダプター",
+        "hint": "Adapter"
+      },
+      {
+        "word": "じゅうでん",
+        "hint": "Charging (battery)"
+      }
+    ]
+  },
+  {
+    "key": "plumbing_wb",
+    "name": "Plumbing",
+    "description": "Japanese words for plumbing and water systems",
+    "iconName": "wrench",
+    "color": "#2563eb",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "すいどう",
+        "hint": "Water supply / plumbing"
+      },
+      {
+        "word": "はいすい",
+        "hint": "Drainage / waste water"
+      },
+      {
+        "word": "パイプ",
+        "hint": "Pipe"
+      },
+      {
+        "word": "じゃぐち",
+        "hint": "Faucet / tap"
+      },
+      {
+        "word": "ポンプ",
+        "hint": "Pump"
+      },
+      {
+        "word": "タンク",
+        "hint": "Tank"
+      },
+      {
+        "word": "バルブ",
+        "hint": "Valve"
+      },
+      {
+        "word": "みずもれ",
+        "hint": "Water leak"
+      },
+      {
+        "word": "つまり",
+        "hint": "Clog / blockage"
+      },
+      {
+        "word": "しゅうり",
+        "hint": "Repair / fix"
+      },
+      {
+        "word": "きゅうとう",
+        "hint": "Water heater / boiler"
+      },
+      {
+        "word": "おんすい",
+        "hint": "Warm water"
+      },
+      {
+        "word": "れいすい",
+        "hint": "Cold water"
+      },
+      {
+        "word": "かんきせん",
+        "hint": "Ventilation fan"
+      },
+      {
+        "word": "げすい",
+        "hint": "Sewage / sewer"
+      }
+    ]
+  },
+  {
+    "key": "gardening_tools_wb",
+    "name": "Gardening Tools",
+    "description": "Japanese words for gardening tools and equipment",
+    "iconName": "leaf",
+    "color": "#15803d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "スコップ",
+        "hint": "Shovel / scoop"
+      },
+      {
+        "word": "くわ",
+        "hint": "Hoe"
+      },
+      {
+        "word": "かま",
+        "hint": "Sickle"
+      },
+      {
+        "word": "じょうろ",
+        "hint": "Watering can"
+      },
+      {
+        "word": "てぶくろ",
+        "hint": "Gloves"
+      },
+      {
+        "word": "レーキ",
+        "hint": "Rake"
+      },
+      {
+        "word": "はさみ",
+        "hint": "Pruning shears / scissors"
+      },
+      {
+        "word": "うえきばち",
+        "hint": "Plant pot / planter"
+      },
+      {
+        "word": "ひりょう",
+        "hint": "Fertilizer"
+      },
+      {
+        "word": "さっちゅうざい",
+        "hint": "Insecticide / pesticide"
+      },
+      {
+        "word": "いちりんしゃ",
+        "hint": "Wheelbarrow"
+      },
+      {
+        "word": "ホース",
+        "hint": "Garden hose"
+      },
+      {
+        "word": "にわいし",
+        "hint": "Garden stone"
+      },
+      {
+        "word": "さく",
+        "hint": "Fence"
+      },
+      {
+        "word": "しばかりき",
+        "hint": "Lawn mower"
+      }
+    ]
+  },
+  {
+    "key": "medicine_wb",
+    "name": "Medicine",
+    "description": "Japanese words for medical terminology and healthcare",
+    "iconName": "cross.case",
+    "color": "#dc2626",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "いしゃ",
+        "hint": "Doctor / physician"
+      },
+      {
+        "word": "かんごし",
+        "hint": "Nurse"
+      },
+      {
+        "word": "びょういん",
+        "hint": "Hospital"
+      },
+      {
+        "word": "しんさつ",
+        "hint": "Medical examination"
+      },
+      {
+        "word": "しゅじゅつ",
+        "hint": "Surgery / operation"
+      },
+      {
+        "word": "ちゅうしゃ",
+        "hint": "Injection / shot"
+      },
+      {
+        "word": "けんさ",
+        "hint": "Examination / test"
+      },
+      {
+        "word": "しんだん",
+        "hint": "Diagnosis"
+      },
+      {
+        "word": "にゅういん",
+        "hint": "Hospitalization"
+      },
+      {
+        "word": "たいいん",
+        "hint": "Discharge (from hospital)"
+      },
+      {
+        "word": "レントゲン",
+        "hint": "X-ray"
+      },
+      {
+        "word": "けつあつ",
+        "hint": "Blood pressure"
+      },
+      {
+        "word": "たいおん",
+        "hint": "Body temperature"
+      },
+      {
+        "word": "びょうき",
+        "hint": "Illness / disease"
+      },
+      {
+        "word": "かいふく",
+        "hint": "Recovery / recuperation"
+      }
+    ]
+  },
+  {
+    "key": "pharmacy_wb",
+    "name": "Pharmacy",
+    "description": "Japanese words for pharmacy and medications",
+    "iconName": "pills",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "やっきょく",
+        "hint": "Pharmacy / drugstore"
+      },
+      {
+        "word": "くすり",
+        "hint": "Medicine / drug"
+      },
+      {
+        "word": "じょうざい",
+        "hint": "Tablet / pill"
+      },
+      {
+        "word": "カプセル",
+        "hint": "Capsule"
+      },
+      {
+        "word": "ぬりぐすり",
+        "hint": "Ointment / salve"
+      },
+      {
+        "word": "めぐすり",
+        "hint": "Eye drops"
+      },
+      {
+        "word": "しょほうせん",
+        "hint": "Prescription"
+      },
+      {
+        "word": "ふくさよう",
+        "hint": "Side effects"
+      },
+      {
+        "word": "ようほう",
+        "hint": "Dosage / directions"
+      },
+      {
+        "word": "いたみどめ",
+        "hint": "Painkiller"
+      },
+      {
+        "word": "かぜぐすり",
+        "hint": "Cold medicine"
+      },
+      {
+        "word": "こうせいぶっしつ",
+        "hint": "Antibiotics"
+      },
+      {
+        "word": "ビタミン",
+        "hint": "Vitamin"
+      },
+      {
+        "word": "アレルギー",
+        "hint": "Allergy"
+      },
+      {
+        "word": "ばんそうこう",
+        "hint": "Band-aid / adhesive bandage"
+      }
+    ]
+  },
+  {
+    "key": "fitness_wb",
+    "name": "Fitness",
+    "description": "Japanese words for fitness and exercise",
+    "iconName": "figure.run",
+    "color": "#ea580c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "うんどう",
+        "hint": "Exercise / sports"
+      },
+      {
+        "word": "きんトレ",
+        "hint": "Muscle training / workout"
+      },
+      {
+        "word": "ジム",
+        "hint": "Gym"
+      },
+      {
+        "word": "ジョギング",
+        "hint": "Jogging"
+      },
+      {
+        "word": "ストレッチ",
+        "hint": "Stretching"
+      },
+      {
+        "word": "きんにく",
+        "hint": "Muscle"
+      },
+      {
+        "word": "タイマー",
+        "hint": "Timer"
+      },
+      {
+        "word": "ダンベル",
+        "hint": "Dumbbell"
+      },
+      {
+        "word": "マラソン",
+        "hint": "Marathon"
+      },
+      {
+        "word": "すいえい",
+        "hint": "Swimming"
+      },
+      {
+        "word": "たいりょく",
+        "hint": "Physical strength / stamina"
+      },
+      {
+        "word": "プール",
+        "hint": "Pool"
+      },
+      {
+        "word": "ランニング",
+        "hint": "Running"
+      },
+      {
+        "word": "ウォーキング",
+        "hint": "Walking (exercise)"
+      },
+      {
+        "word": "しんぱくすう",
+        "hint": "Heart rate"
+      }
+    ]
+  },
+  {
+    "key": "yoga_wb",
+    "name": "Yoga & Meditation",
+    "description": "Japanese words for yoga and mindfulness practices",
+    "iconName": "figure.mind.and.body",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ヨガ",
+        "hint": "Yoga"
+      },
+      {
+        "word": "めいそう",
+        "hint": "Meditation"
+      },
+      {
+        "word": "こきゅう",
+        "hint": "Breathing"
+      },
+      {
+        "word": "ポーズ",
+        "hint": "Pose / position"
+      },
+      {
+        "word": "リラックス",
+        "hint": "Relaxation"
+      },
+      {
+        "word": "バランス",
+        "hint": "Balance"
+      },
+      {
+        "word": "じゅうなん",
+        "hint": "Flexibility"
+      },
+      {
+        "word": "しせい",
+        "hint": "Posture"
+      },
+      {
+        "word": "こころ",
+        "hint": "Heart / mind / spirit"
+      },
+      {
+        "word": "やすらぎ",
+        "hint": "Peace / tranquility"
+      },
+      {
+        "word": "マット",
+        "hint": "Mat"
+      },
+      {
+        "word": "ざぜん",
+        "hint": "Zen meditation (seated)"
+      },
+      {
+        "word": "けんこう",
+        "hint": "Health / wellness"
+      },
+      {
+        "word": "ちから",
+        "hint": "Power / strength"
+      },
+      {
+        "word": "しゅうちゅう",
+        "hint": "Concentration / focus"
+      }
+    ]
+  },
+  {
+    "key": "mental_health_wb",
+    "name": "Mental Health",
+    "description": "Japanese words for mental health and wellbeing",
+    "iconName": "brain",
+    "color": "#8b5cf6",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ストレス",
+        "hint": "Stress"
+      },
+      {
+        "word": "うつ",
+        "hint": "Depression"
+      },
+      {
+        "word": "カウンセリング",
+        "hint": "Counseling"
+      },
+      {
+        "word": "りんしょう",
+        "hint": "Clinical"
+      },
+      {
+        "word": "しんりがく",
+        "hint": "Psychology"
+      },
+      {
+        "word": "セラピー",
+        "hint": "Therapy"
+      },
+      {
+        "word": "ふみん",
+        "hint": "Insomnia / sleeplessness"
+      },
+      {
+        "word": "きぶん",
+        "hint": "Mood / feeling"
+      },
+      {
+        "word": "いやし",
+        "hint": "Healing / comfort"
+      },
+      {
+        "word": "じりつ",
+        "hint": "Independence / self-reliance"
+      },
+      {
+        "word": "じしん",
+        "hint": "Self-confidence"
+      },
+      {
+        "word": "かんじょう",
+        "hint": "Emotion / feeling"
+      },
+      {
+        "word": "きょうかんりょく",
+        "hint": "Empathy"
+      },
+      {
+        "word": "もくひょう",
+        "hint": "Goal / objective"
+      },
+      {
+        "word": "かんきょう",
+        "hint": "Environment / surroundings"
+      }
+    ]
+  },
+  {
+    "key": "vehicles_wb",
+    "name": "Vehicles",
+    "description": "Japanese words for different types of vehicles",
+    "iconName": "car",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "くるま",
+        "hint": "Car"
+      },
+      {
+        "word": "バス",
+        "hint": "Bus"
+      },
+      {
+        "word": "タクシー",
+        "hint": "Taxi"
+      },
+      {
+        "word": "トラック",
+        "hint": "Truck"
+      },
+      {
+        "word": "オートバイ",
+        "hint": "Motorcycle"
+      },
+      {
+        "word": "きゅうきゅうしゃ",
+        "hint": "Ambulance"
+      },
+      {
+        "word": "しょうぼうしゃ",
+        "hint": "Fire truck"
+      },
+      {
+        "word": "パトカー",
+        "hint": "Police car"
+      },
+      {
+        "word": "バン",
+        "hint": "Van"
+      },
+      {
+        "word": "ジープ",
+        "hint": "Jeep"
+      },
+      {
+        "word": "スクーター",
+        "hint": "Scooter"
+      },
+      {
+        "word": "リムジン",
+        "hint": "Limousine"
+      },
+      {
+        "word": "キャンピングカー",
+        "hint": "Camper van / RV"
+      },
+      {
+        "word": "うんてん",
+        "hint": "Driving"
+      },
+      {
+        "word": "めんきょ",
+        "hint": "License / permit"
+      }
+    ]
+  },
+  {
+    "key": "aviation_wb",
+    "name": "Aviation",
+    "description": "Japanese words for aviation and air travel",
+    "iconName": "airplane",
+    "color": "#0284c7",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ひこうき",
+        "hint": "Airplane"
+      },
+      {
+        "word": "くうこう",
+        "hint": "Airport"
+      },
+      {
+        "word": "パイロット",
+        "hint": "Pilot"
+      },
+      {
+        "word": "フライト",
+        "hint": "Flight"
+      },
+      {
+        "word": "りりく",
+        "hint": "Takeoff"
+      },
+      {
+        "word": "ちゃくりく",
+        "hint": "Landing"
+      },
+      {
+        "word": "パスポート",
+        "hint": "Passport"
+      },
+      {
+        "word": "にもつ",
+        "hint": "Luggage / baggage"
+      },
+      {
+        "word": "じさ",
+        "hint": "Time difference / jet lag"
+      },
+      {
+        "word": "きない",
+        "hint": "Inside the aircraft / cabin"
+      },
+      {
+        "word": "とうじょうけん",
+        "hint": "Boarding pass"
+      },
+      {
+        "word": "シートベルト",
+        "hint": "Seatbelt"
+      },
+      {
+        "word": "ヘリコプター",
+        "hint": "Helicopter"
+      },
+      {
+        "word": "スチュワーデス",
+        "hint": "Flight attendant (female)"
+      },
+      {
+        "word": "かんせいとう",
+        "hint": "Control tower"
+      }
+    ]
+  },
+  {
+    "key": "shipping_wb",
+    "name": "Shipping & Boats",
+    "description": "Japanese words for ships and maritime transport",
+    "iconName": "ferry",
+    "color": "#0e7490",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ふね",
+        "hint": "Ship / boat"
+      },
+      {
+        "word": "フェリー",
+        "hint": "Ferry"
+      },
+      {
+        "word": "ヨット",
+        "hint": "Yacht"
+      },
+      {
+        "word": "はたけ",
+        "hint": "Pier / wharf"
+      },
+      {
+        "word": "せんちょう",
+        "hint": "Captain (of a ship)"
+      },
+      {
+        "word": "こうかい",
+        "hint": "Navigation / sailing"
+      },
+      {
+        "word": "にもつ",
+        "hint": "Cargo / freight"
+      },
+      {
+        "word": "いかり",
+        "hint": "Anchor"
+      },
+      {
+        "word": "かんぱん",
+        "hint": "Deck (of a ship)"
+      },
+      {
+        "word": "きゃくしつ",
+        "hint": "Cabin / passenger room"
+      },
+      {
+        "word": "すいへいせん",
+        "hint": "Horizon"
+      },
+      {
+        "word": "タグボート",
+        "hint": "Tugboat"
+      },
+      {
+        "word": "ぎょせん",
+        "hint": "Fishing boat"
+      },
+      {
+        "word": "カヤック",
+        "hint": "Kayak"
+      },
+      {
+        "word": "きゅうめいどうい",
+        "hint": "Life jacket"
+      }
+    ]
+  },
+  {
+    "key": "cycling_wb",
+    "name": "Cycling",
+    "description": "Japanese words for cycling and bicycles",
+    "iconName": "bicycle",
+    "color": "#65a30d",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "じてんしゃ",
+        "hint": "Bicycle"
+      },
+      {
+        "word": "サイクリング",
+        "hint": "Cycling"
+      },
+      {
+        "word": "ペダル",
+        "hint": "Pedal"
+      },
+      {
+        "word": "ハンドル",
+        "hint": "Handlebars"
+      },
+      {
+        "word": "タイヤ",
+        "hint": "Tire"
+      },
+      {
+        "word": "ブレーキ",
+        "hint": "Brake"
+      },
+      {
+        "word": "チェーン",
+        "hint": "Chain"
+      },
+      {
+        "word": "ギア",
+        "hint": "Gear"
+      },
+      {
+        "word": "サドル",
+        "hint": "Saddle / seat"
+      },
+      {
+        "word": "ベル",
+        "hint": "Bell"
+      },
+      {
+        "word": "ヘルメット",
+        "hint": "Helmet"
+      },
+      {
+        "word": "パンク",
+        "hint": "Flat tire / puncture"
+      },
+      {
+        "word": "でんどう",
+        "hint": "Electric (e-bike)"
+      },
+      {
+        "word": "じてんしゃおきば",
+        "hint": "Bicycle parking"
+      },
+      {
+        "word": "かぎ",
+        "hint": "Lock / key"
+      }
+    ]
+  },
+  {
+    "key": "trains_wb",
+    "name": "Trains",
+    "description": "Japanese words for trains and railway travel",
+    "iconName": "tram",
+    "color": "#dc2626",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "でんしゃ",
+        "hint": "Train (electric)"
+      },
+      {
+        "word": "えき",
+        "hint": "Station"
+      },
+      {
+        "word": "しんかんせん",
+        "hint": "Bullet train"
+      },
+      {
+        "word": "ホーム",
+        "hint": "Platform"
+      },
+      {
+        "word": "きっぷ",
+        "hint": "Ticket"
+      },
+      {
+        "word": "ていきけん",
+        "hint": "Commuter pass"
+      },
+      {
+        "word": "じこくひょう",
+        "hint": "Timetable / schedule"
+      },
+      {
+        "word": "のりかえ",
+        "hint": "Transfer (trains)"
+      },
+      {
+        "word": "かいさつ",
+        "hint": "Ticket gate"
+      },
+      {
+        "word": "しゃりょう",
+        "hint": "Train car / carriage"
+      },
+      {
+        "word": "ちかてつ",
+        "hint": "Subway / metro"
+      },
+      {
+        "word": "かくえき",
+        "hint": "Local (stops at all stations)"
+      },
+      {
+        "word": "きゅうこう",
+        "hint": "Express train"
+      },
+      {
+        "word": "グリーンしゃ",
+        "hint": "First class car (Green car)"
+      },
+      {
+        "word": "ろせんず",
+        "hint": "Route map"
+      }
+    ]
+  },
+  {
+    "key": "mathematics_wb",
+    "name": "Mathematics",
+    "description": "Japanese words for mathematical concepts and terms",
+    "iconName": "x.squareroot",
+    "color": "#2563eb",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "すうがく",
+        "hint": "Mathematics"
+      },
+      {
+        "word": "たしざん",
+        "hint": "Addition"
+      },
+      {
+        "word": "ひきざん",
+        "hint": "Subtraction"
+      },
+      {
+        "word": "かけざん",
+        "hint": "Multiplication"
+      },
+      {
+        "word": "わりざん",
+        "hint": "Division"
+      },
+      {
+        "word": "ぶんすう",
+        "hint": "Fraction"
+      },
+      {
+        "word": "しょうすう",
+        "hint": "Decimal"
+      },
+      {
+        "word": "パーセント",
+        "hint": "Percent"
+      },
+      {
+        "word": "さんかく",
+        "hint": "Triangle"
+      },
+      {
+        "word": "しかく",
+        "hint": "Square / rectangle"
+      },
+      {
+        "word": "えん",
+        "hint": "Circle"
+      },
+      {
+        "word": "こうしき",
+        "hint": "Formula"
+      },
+      {
+        "word": "グラフ",
+        "hint": "Graph"
+      },
+      {
+        "word": "へいきん",
+        "hint": "Average / mean"
+      },
+      {
+        "word": "けいさん",
+        "hint": "Calculation"
+      }
+    ]
+  },
+  {
+    "key": "physics_wb",
+    "name": "Physics",
+    "description": "Japanese words for physics concepts",
+    "iconName": "atom",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ぶつりがく",
+        "hint": "Physics"
+      },
+      {
+        "word": "ちから",
+        "hint": "Force / power"
+      },
+      {
+        "word": "エネルギー",
+        "hint": "Energy"
+      },
+      {
+        "word": "じゅうりょく",
+        "hint": "Gravity"
+      },
+      {
+        "word": "そくど",
+        "hint": "Speed / velocity"
+      },
+      {
+        "word": "おんど",
+        "hint": "Temperature"
+      },
+      {
+        "word": "あつりょく",
+        "hint": "Pressure"
+      },
+      {
+        "word": "でんじは",
+        "hint": "Electromagnetic wave"
+      },
+      {
+        "word": "ひかり",
+        "hint": "Light"
+      },
+      {
+        "word": "おと",
+        "hint": "Sound"
+      },
+      {
+        "word": "ねつ",
+        "hint": "Heat"
+      },
+      {
+        "word": "まさつ",
+        "hint": "Friction"
+      },
+      {
+        "word": "じしゃく",
+        "hint": "Magnet"
+      },
+      {
+        "word": "げんし",
+        "hint": "Atom"
+      },
+      {
+        "word": "じっけん",
+        "hint": "Experiment"
+      }
+    ]
+  },
+  {
+    "key": "chemistry_wb",
+    "name": "Chemistry",
+    "description": "Japanese words for chemistry and chemical elements",
+    "iconName": "flask",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "かがく",
+        "hint": "Chemistry"
+      },
+      {
+        "word": "げんそ",
+        "hint": "Chemical element"
+      },
+      {
+        "word": "ぶんし",
+        "hint": "Molecule"
+      },
+      {
+        "word": "さんそ",
+        "hint": "Oxygen"
+      },
+      {
+        "word": "すいそ",
+        "hint": "Hydrogen"
+      },
+      {
+        "word": "たんそ",
+        "hint": "Carbon"
+      },
+      {
+        "word": "ちっそ",
+        "hint": "Nitrogen"
+      },
+      {
+        "word": "さん",
+        "hint": "Acid"
+      },
+      {
+        "word": "アルカリ",
+        "hint": "Alkali / base"
+      },
+      {
+        "word": "えきたい",
+        "hint": "Liquid"
+      },
+      {
+        "word": "きたい",
+        "hint": "Gas"
+      },
+      {
+        "word": "こたい",
+        "hint": "Solid"
+      },
+      {
+        "word": "はんのう",
+        "hint": "Reaction"
+      },
+      {
+        "word": "しけんかん",
+        "hint": "Test tube"
+      },
+      {
+        "word": "フラスコ",
+        "hint": "Flask"
+      }
+    ]
+  },
+  {
+    "key": "biology_wb",
+    "name": "Biology",
+    "description": "Japanese words for biology and life sciences",
+    "iconName": "leaf",
+    "color": "#16a34a",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "せいぶつがく",
+        "hint": "Biology"
+      },
+      {
+        "word": "さいぼう",
+        "hint": "Cell"
+      },
+      {
+        "word": "いでんし",
+        "hint": "Gene"
+      },
+      {
+        "word": "しんか",
+        "hint": "Evolution"
+      },
+      {
+        "word": "せいたいけい",
+        "hint": "Ecosystem"
+      },
+      {
+        "word": "こうごうせい",
+        "hint": "Photosynthesis"
+      },
+      {
+        "word": "たいしゃ",
+        "hint": "Metabolism"
+      },
+      {
+        "word": "ウイルス",
+        "hint": "Virus"
+      },
+      {
+        "word": "さいきん",
+        "hint": "Bacteria"
+      },
+      {
+        "word": "けんびきょう",
+        "hint": "Microscope"
+      },
+      {
+        "word": "しゅ",
+        "hint": "Species"
+      },
+      {
+        "word": "いでん",
+        "hint": "Heredity / genetics"
+      },
+      {
+        "word": "ホルモン",
+        "hint": "Hormone"
+      },
+      {
+        "word": "こきゅう",
+        "hint": "Respiration"
+      },
+      {
+        "word": "しょくぶつ",
+        "hint": "Plant"
+      }
+    ]
+  },
+  {
+    "key": "science_wb",
+    "name": "General Science",
+    "description": "Japanese words for general science concepts",
+    "iconName": "lightbulb",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "かがくしゃ",
+        "hint": "Scientist"
+      },
+      {
+        "word": "けんきゅう",
+        "hint": "Research"
+      },
+      {
+        "word": "はつめい",
+        "hint": "Invention"
+      },
+      {
+        "word": "はっけん",
+        "hint": "Discovery"
+      },
+      {
+        "word": "りろん",
+        "hint": "Theory"
+      },
+      {
+        "word": "かせつ",
+        "hint": "Hypothesis"
+      },
+      {
+        "word": "データ",
+        "hint": "Data"
+      },
+      {
+        "word": "ぶんせき",
+        "hint": "Analysis"
+      },
+      {
+        "word": "けんきゅうしつ",
+        "hint": "Laboratory"
+      },
+      {
+        "word": "ロボット",
+        "hint": "Robot"
+      },
+      {
+        "word": "じんこうちのう",
+        "hint": "Artificial intelligence"
+      },
+      {
+        "word": "ぎじゅつ",
+        "hint": "Technology / technique"
+      },
+      {
+        "word": "しぜん",
+        "hint": "Nature"
+      },
+      {
+        "word": "かんさつ",
+        "hint": "Observation"
+      },
+      {
+        "word": "ほうそく",
+        "hint": "Law / rule (scientific)"
+      }
+    ]
+  },
+  {
+    "key": "festivals_wb",
+    "name": "Festivals",
+    "description": "Japanese words for festivals and matsuri events",
+    "iconName": "sparkles",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "まつり",
+        "hint": "Festival"
+      },
+      {
+        "word": "おみこし",
+        "hint": "Portable shrine"
+      },
+      {
+        "word": "はなび",
+        "hint": "Fireworks"
+      },
+      {
+        "word": "やたい",
+        "hint": "Festival food stall"
+      },
+      {
+        "word": "ゆかた",
+        "hint": "Light summer kimono"
+      },
+      {
+        "word": "たいこ",
+        "hint": "Japanese drum"
+      },
+      {
+        "word": "おまもり",
+        "hint": "Lucky charm / amulet"
+      },
+      {
+        "word": "おみくじ",
+        "hint": "Fortune slip / fortune telling"
+      },
+      {
+        "word": "きんぎょすくい",
+        "hint": "Goldfish scooping (game)"
+      },
+      {
+        "word": "わたあめ",
+        "hint": "Cotton candy"
+      },
+      {
+        "word": "やきそば",
+        "hint": "Fried noodles"
+      },
+      {
+        "word": "たこやき",
+        "hint": "Octopus balls (snack)"
+      },
+      {
+        "word": "かきごおり",
+        "hint": "Shaved ice"
+      },
+      {
+        "word": "ちょうちん",
+        "hint": "Paper lantern"
+      },
+      {
+        "word": "おはやし",
+        "hint": "Festival music"
+      }
+    ]
+  },
+  {
+    "key": "traditions_wb",
+    "name": "Traditions",
+    "description": "Japanese words for cultural traditions and customs",
+    "iconName": "building.columns",
+    "color": "#b91c1c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "でんとう",
+        "hint": "Tradition"
+      },
+      {
+        "word": "ぶんか",
+        "hint": "Culture"
+      },
+      {
+        "word": "さどう",
+        "hint": "Tea ceremony"
+      },
+      {
+        "word": "かどう",
+        "hint": "Flower arranging (ikebana)"
+      },
+      {
+        "word": "おせち",
+        "hint": "New Year's feast dishes"
+      },
+      {
+        "word": "もち",
+        "hint": "Rice cake"
+      },
+      {
+        "word": "おとしだま",
+        "hint": "New Year's money gift"
+      },
+      {
+        "word": "おぼん",
+        "hint": "Obon (ancestor festival)"
+      },
+      {
+        "word": "しちごさん",
+        "hint": "7-5-3 children's festival"
+      },
+      {
+        "word": "はつもうで",
+        "hint": "New Year shrine visit"
+      },
+      {
+        "word": "ひなまつり",
+        "hint": "Doll's Day / Girls' Festival"
+      },
+      {
+        "word": "こどものひ",
+        "hint": "Children's Day"
+      },
+      {
+        "word": "せつぶん",
+        "hint": "Bean throwing festival"
+      },
+      {
+        "word": "たなばた",
+        "hint": "Star Festival"
+      },
+      {
+        "word": "おしょうがつ",
+        "hint": "New Year"
+      }
+    ]
+  },
+  {
+    "key": "weddings_wb",
+    "name": "Weddings",
+    "description": "Japanese words for weddings and marriage ceremonies",
+    "iconName": "heart.circle",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "けっこんしき",
+        "hint": "Wedding ceremony"
+      },
+      {
+        "word": "はなよめ",
+        "hint": "Bride"
+      },
+      {
+        "word": "はなむこ",
+        "hint": "Groom"
+      },
+      {
+        "word": "ゆびわ",
+        "hint": "Ring"
+      },
+      {
+        "word": "ウエディング",
+        "hint": "Wedding (Western-style)"
+      },
+      {
+        "word": "ドレス",
+        "hint": "Dress"
+      },
+      {
+        "word": "ブーケ",
+        "hint": "Bouquet"
+      },
+      {
+        "word": "ひろうえん",
+        "hint": "Wedding reception"
+      },
+      {
+        "word": "しゅくじ",
+        "hint": "Celebratory speech"
+      },
+      {
+        "word": "よいえん",
+        "hint": "Engagement"
+      },
+      {
+        "word": "しんろう",
+        "hint": "Bridegroom"
+      },
+      {
+        "word": "チャペル",
+        "hint": "Chapel"
+      },
+      {
+        "word": "しょうたいじょう",
+        "hint": "Invitation"
+      },
+      {
+        "word": "しゅくふく",
+        "hint": "Blessings / congratulations"
+      },
+      {
+        "word": "しんこんりょこう",
+        "hint": "Honeymoon"
+      }
+    ]
+  },
+  {
+    "key": "holidays_wb",
+    "name": "Holidays",
+    "description": "Japanese words for holidays and special days",
+    "iconName": "calendar",
+    "color": "#dc2626",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "やすみ",
+        "hint": "Holiday / day off"
+      },
+      {
+        "word": "きゅうじつ",
+        "hint": "National holiday"
+      },
+      {
+        "word": "なつやすみ",
+        "hint": "Summer vacation"
+      },
+      {
+        "word": "ふゆやすみ",
+        "hint": "Winter vacation"
+      },
+      {
+        "word": "ゴールデンウィーク",
+        "hint": "Golden Week holidays"
+      },
+      {
+        "word": "クリスマス",
+        "hint": "Christmas"
+      },
+      {
+        "word": "バレンタインデー",
+        "hint": "Valentine's Day"
+      },
+      {
+        "word": "ホワイトデー",
+        "hint": "White Day (March 14)"
+      },
+      {
+        "word": "たいいくのひ",
+        "hint": "Sports Day"
+      },
+      {
+        "word": "けんぽうきねんび",
+        "hint": "Constitution Day"
+      },
+      {
+        "word": "みどりのひ",
+        "hint": "Greenery Day"
+      },
+      {
+        "word": "ハロウィン",
+        "hint": "Halloween"
+      },
+      {
+        "word": "たんじょうび",
+        "hint": "Birthday"
+      },
+      {
+        "word": "きねんび",
+        "hint": "Anniversary"
+      },
+      {
+        "word": "にちようび",
+        "hint": "Sunday"
+      }
+    ]
+  },
+  {
+    "key": "celebrations_wb",
+    "name": "Celebrations",
+    "description": "Japanese words for celebrations and parties",
+    "iconName": "party.popper",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "パーティー",
+        "hint": "Party"
+      },
+      {
+        "word": "おいわい",
+        "hint": "Celebration / congratulations"
+      },
+      {
+        "word": "プレゼント",
+        "hint": "Present / gift"
+      },
+      {
+        "word": "ケーキ",
+        "hint": "Cake"
+      },
+      {
+        "word": "かんぱい",
+        "hint": "Cheers / toast"
+      },
+      {
+        "word": "おめでとう",
+        "hint": "Congratulations"
+      },
+      {
+        "word": "そつぎょう",
+        "hint": "Graduation"
+      },
+      {
+        "word": "にゅうがく",
+        "hint": "Enrollment / starting school"
+      },
+      {
+        "word": "しょうしん",
+        "hint": "Promotion (at work)"
+      },
+      {
+        "word": "かんげいかい",
+        "hint": "Welcome party"
+      },
+      {
+        "word": "そうべつかい",
+        "hint": "Farewell party"
+      },
+      {
+        "word": "はなたば",
+        "hint": "Bouquet of flowers"
+      },
+      {
+        "word": "カード",
+        "hint": "Card (greeting)"
+      },
+      {
+        "word": "しゅっさん",
+        "hint": "Childbirth"
+      },
+      {
+        "word": "かんしゃ",
+        "hint": "Gratitude / thanks"
+      }
+    ]
+  },
+  {
+    "key": "fashion_wb",
+    "name": "Fashion",
+    "description": "Japanese words for fashion and style",
+    "iconName": "tshirt",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ファッション",
+        "hint": "Fashion"
+      },
+      {
+        "word": "スタイル",
+        "hint": "Style"
+      },
+      {
+        "word": "トレンド",
+        "hint": "Trend"
+      },
+      {
+        "word": "ブランド",
+        "hint": "Brand"
+      },
+      {
+        "word": "コーディネート",
+        "hint": "Outfit coordination"
+      },
+      {
+        "word": "おしゃれ",
+        "hint": "Fashionable / stylish"
+      },
+      {
+        "word": "デザイナー",
+        "hint": "Designer"
+      },
+      {
+        "word": "モデル",
+        "hint": "Model"
+      },
+      {
+        "word": "コレクション",
+        "hint": "Collection"
+      },
+      {
+        "word": "ワンピース",
+        "hint": "One-piece dress"
+      },
+      {
+        "word": "スーツ",
+        "hint": "Suit"
+      },
+      {
+        "word": "ジーンズ",
+        "hint": "Jeans"
+      },
+      {
+        "word": "スカート",
+        "hint": "Skirt"
+      },
+      {
+        "word": "コート",
+        "hint": "Coat"
+      },
+      {
+        "word": "アクセサリー",
+        "hint": "Accessory"
+      }
+    ]
+  },
+  {
+    "key": "textiles_wb",
+    "name": "Textiles & Fabrics",
+    "description": "Japanese words for fabrics and textile materials",
+    "iconName": "square.stack.3d.up",
+    "color": "#a855f7",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "きぬ",
+        "hint": "Silk"
+      },
+      {
+        "word": "めん",
+        "hint": "Cotton"
+      },
+      {
+        "word": "ウール",
+        "hint": "Wool"
+      },
+      {
+        "word": "ナイロン",
+        "hint": "Nylon"
+      },
+      {
+        "word": "ポリエステル",
+        "hint": "Polyester"
+      },
+      {
+        "word": "リネン",
+        "hint": "Linen"
+      },
+      {
+        "word": "レース",
+        "hint": "Lace"
+      },
+      {
+        "word": "デニム",
+        "hint": "Denim"
+      },
+      {
+        "word": "レザー",
+        "hint": "Leather"
+      },
+      {
+        "word": "ベルベット",
+        "hint": "Velvet"
+      },
+      {
+        "word": "がら",
+        "hint": "Pattern / design"
+      },
+      {
+        "word": "しましま",
+        "hint": "Stripes"
+      },
+      {
+        "word": "みずたま",
+        "hint": "Polka dots"
+      },
+      {
+        "word": "そめもの",
+        "hint": "Dyeing / dye work"
+      },
+      {
+        "word": "おりもの",
+        "hint": "Woven fabric"
+      }
+    ]
+  },
+  {
+    "key": "jewelry_wb",
+    "name": "Jewelry",
+    "description": "Japanese words for jewelry and precious items",
+    "iconName": "sparkle",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ほうせき",
+        "hint": "Jewel / gem"
+      },
+      {
+        "word": "ゆびわ",
+        "hint": "Ring"
+      },
+      {
+        "word": "ネックレス",
+        "hint": "Necklace"
+      },
+      {
+        "word": "ブレスレット",
+        "hint": "Bracelet"
+      },
+      {
+        "word": "イヤリング",
+        "hint": "Earring"
+      },
+      {
+        "word": "ピアス",
+        "hint": "Pierced earring"
+      },
+      {
+        "word": "きん",
+        "hint": "Gold"
+      },
+      {
+        "word": "ぎん",
+        "hint": "Silver"
+      },
+      {
+        "word": "ダイヤモンド",
+        "hint": "Diamond"
+      },
+      {
+        "word": "しんじゅ",
+        "hint": "Pearl"
+      },
+      {
+        "word": "サファイア",
+        "hint": "Sapphire"
+      },
+      {
+        "word": "ルビー",
+        "hint": "Ruby"
+      },
+      {
+        "word": "エメラルド",
+        "hint": "Emerald"
+      },
+      {
+        "word": "ブローチ",
+        "hint": "Brooch"
+      },
+      {
+        "word": "うでどけい",
+        "hint": "Wristwatch"
+      }
+    ]
+  },
+  {
+    "key": "cosmetics_wb",
+    "name": "Cosmetics",
+    "description": "Japanese words for cosmetics and beauty products",
+    "iconName": "paintbrush.pointed",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "けしょう",
+        "hint": "Makeup / cosmetics"
+      },
+      {
+        "word": "くちべに",
+        "hint": "Lipstick"
+      },
+      {
+        "word": "ファンデーション",
+        "hint": "Foundation (makeup)"
+      },
+      {
+        "word": "マスカラ",
+        "hint": "Mascara"
+      },
+      {
+        "word": "アイシャドウ",
+        "hint": "Eye shadow"
+      },
+      {
+        "word": "チーク",
+        "hint": "Blush / cheek color"
+      },
+      {
+        "word": "マニキュア",
+        "hint": "Nail polish / manicure"
+      },
+      {
+        "word": "こうすい",
+        "hint": "Perfume"
+      },
+      {
+        "word": "けしょうすい",
+        "hint": "Toner / facial lotion"
+      },
+      {
+        "word": "にゅうえき",
+        "hint": "Moisturizing lotion"
+      },
+      {
+        "word": "ひやけどめ",
+        "hint": "Sunscreen"
+      },
+      {
+        "word": "クレンジング",
+        "hint": "Cleansing"
+      },
+      {
+        "word": "パック",
+        "hint": "Face mask / pack"
+      },
+      {
+        "word": "びよう",
+        "hint": "Beauty / aesthetics"
+      },
+      {
+        "word": "スキンケア",
+        "hint": "Skincare"
+      }
+    ]
+  },
+  {
+    "key": "hairstyles_wb",
+    "name": "Hairstyles",
+    "description": "Japanese words for hairstyles and hair care",
+    "iconName": "scissors",
+    "color": "#d946ef",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "かみがた",
+        "hint": "Hairstyle"
+      },
+      {
+        "word": "びようし",
+        "hint": "Hairdresser / stylist"
+      },
+      {
+        "word": "びよういん",
+        "hint": "Hair salon"
+      },
+      {
+        "word": "カット",
+        "hint": "Haircut"
+      },
+      {
+        "word": "パーマ",
+        "hint": "Perm"
+      },
+      {
+        "word": "カラー",
+        "hint": "Hair color / dye"
+      },
+      {
+        "word": "ストレート",
+        "hint": "Straight (hair)"
+      },
+      {
+        "word": "まえがみ",
+        "hint": "Bangs / fringe"
+      },
+      {
+        "word": "ポニーテール",
+        "hint": "Ponytail"
+      },
+      {
+        "word": "おだんご",
+        "hint": "Bun (hair style)"
+      },
+      {
+        "word": "ショート",
+        "hint": "Short (hair)"
+      },
+      {
+        "word": "ロング",
+        "hint": "Long (hair)"
+      },
+      {
+        "word": "ブラシ",
+        "hint": "Brush"
+      },
+      {
+        "word": "ヘアスプレー",
+        "hint": "Hair spray"
+      },
+      {
+        "word": "トリートメント",
+        "hint": "Hair treatment"
+      }
+    ]
+  },
+  {
+    "key": "environment_wb",
+    "name": "Environment",
+    "description": "Japanese words for the environment and nature conservation",
+    "iconName": "globe.americas",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "かんきょう",
+        "hint": "Environment"
+      },
+      {
+        "word": "しぜん",
+        "hint": "Nature"
+      },
+      {
+        "word": "おせん",
+        "hint": "Pollution"
+      },
+      {
+        "word": "ちきゅう",
+        "hint": "Earth / globe"
+      },
+      {
+        "word": "もり",
+        "hint": "Forest"
+      },
+      {
+        "word": "たいき",
+        "hint": "Atmosphere"
+      },
+      {
+        "word": "せいたいけい",
+        "hint": "Ecosystem"
+      },
+      {
+        "word": "ぜつめつ",
+        "hint": "Extinction"
+      },
+      {
+        "word": "ほご",
+        "hint": "Protection / conservation"
+      },
+      {
+        "word": "やせい",
+        "hint": "Wild / wildlife"
+      },
+      {
+        "word": "さんりん",
+        "hint": "Mountain forest"
+      },
+      {
+        "word": "しつち",
+        "hint": "Wetland"
+      },
+      {
+        "word": "どじょう",
+        "hint": "Soil"
+      },
+      {
+        "word": "オゾンそう",
+        "hint": "Ozone layer"
+      },
+      {
+        "word": "ちきゅうおんだんか",
+        "hint": "Global warming"
+      }
+    ]
+  },
+  {
+    "key": "recycling_wb",
+    "name": "Recycling",
+    "description": "Japanese words for recycling and waste management",
+    "iconName": "arrow.3.trianglepath",
+    "color": "#059669",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "リサイクル",
+        "hint": "Recycling"
+      },
+      {
+        "word": "ごみ",
+        "hint": "Garbage / trash"
+      },
+      {
+        "word": "ぶんべつ",
+        "hint": "Sorting (waste)"
+      },
+      {
+        "word": "もえるごみ",
+        "hint": "Burnable garbage"
+      },
+      {
+        "word": "もえないごみ",
+        "hint": "Non-burnable garbage"
+      },
+      {
+        "word": "かん",
+        "hint": "Can (aluminum)"
+      },
+      {
+        "word": "びん",
+        "hint": "Bottle (glass)"
+      },
+      {
+        "word": "ペットボトル",
+        "hint": "PET bottle (plastic)"
+      },
+      {
+        "word": "だんボール",
+        "hint": "Cardboard"
+      },
+      {
+        "word": "しんぶんし",
+        "hint": "Newspaper"
+      },
+      {
+        "word": "エコバッグ",
+        "hint": "Eco bag / reusable bag"
+      },
+      {
+        "word": "さいりよう",
+        "hint": "Reuse"
+      },
+      {
+        "word": "しげん",
+        "hint": "Resources"
+      },
+      {
+        "word": "はいき",
+        "hint": "Disposal / waste"
+      },
+      {
+        "word": "せいそう",
+        "hint": "Cleaning / sanitation"
+      }
+    ]
+  },
+  {
+    "key": "energy_wb",
+    "name": "Energy",
+    "description": "Japanese words for different types of energy",
+    "iconName": "bolt.fill",
+    "color": "#eab308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "エネルギー",
+        "hint": "Energy"
+      },
+      {
+        "word": "でんりょく",
+        "hint": "Electric power"
+      },
+      {
+        "word": "たいようこう",
+        "hint": "Solar power"
+      },
+      {
+        "word": "ふうりょく",
+        "hint": "Wind power"
+      },
+      {
+        "word": "げんしりょく",
+        "hint": "Nuclear power"
+      },
+      {
+        "word": "すいりょく",
+        "hint": "Hydropower"
+      },
+      {
+        "word": "ちねつ",
+        "hint": "Geothermal"
+      },
+      {
+        "word": "しょうエネ",
+        "hint": "Energy saving"
+      },
+      {
+        "word": "はつでんしょ",
+        "hint": "Power plant"
+      },
+      {
+        "word": "ソーラーパネル",
+        "hint": "Solar panel"
+      },
+      {
+        "word": "かせきねんりょう",
+        "hint": "Fossil fuel"
+      },
+      {
+        "word": "せきゆ",
+        "hint": "Petroleum / oil"
+      },
+      {
+        "word": "てんねんガス",
+        "hint": "Natural gas"
+      },
+      {
+        "word": "せきたん",
+        "hint": "Coal"
+      },
+      {
+        "word": "バイオマス",
+        "hint": "Biomass"
+      }
+    ]
+  },
+  {
+    "key": "climate_wb",
+    "name": "Climate",
+    "description": "Japanese words for climate and weather patterns",
+    "iconName": "thermometer",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "きこう",
+        "hint": "Climate"
+      },
+      {
+        "word": "きおん",
+        "hint": "Air temperature"
+      },
+      {
+        "word": "しつど",
+        "hint": "Humidity"
+      },
+      {
+        "word": "こうすいりょう",
+        "hint": "Rainfall / precipitation"
+      },
+      {
+        "word": "たいふう",
+        "hint": "Typhoon"
+      },
+      {
+        "word": "じしん",
+        "hint": "Earthquake"
+      },
+      {
+        "word": "つなみ",
+        "hint": "Tsunami"
+      },
+      {
+        "word": "こうずい",
+        "hint": "Flood"
+      },
+      {
+        "word": "かんばつ",
+        "hint": "Drought"
+      },
+      {
+        "word": "きしょう",
+        "hint": "Meteorology / weather"
+      },
+      {
+        "word": "てんきよほう",
+        "hint": "Weather forecast"
+      },
+      {
+        "word": "きせつ",
+        "hint": "Season"
+      },
+      {
+        "word": "つゆ",
+        "hint": "Rainy season"
+      },
+      {
+        "word": "ねったい",
+        "hint": "Tropical"
+      },
+      {
+        "word": "かんたい",
+        "hint": "Cold / frigid zone"
+      }
+    ]
+  },
+  {
+    "key": "sustainability_wb",
+    "name": "Sustainability",
+    "description": "Japanese words for sustainable development and eco-living",
+    "iconName": "leaf.arrow.circlepath",
+    "color": "#15803d",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "じぞくかのう",
+        "hint": "Sustainable"
+      },
+      {
+        "word": "エコ",
+        "hint": "Eco / ecological"
+      },
+      {
+        "word": "しぜんエネルギー",
+        "hint": "Natural energy"
+      },
+      {
+        "word": "さいせいかのう",
+        "hint": "Renewable"
+      },
+      {
+        "word": "にさんかたんそ",
+        "hint": "Carbon dioxide (CO2)"
+      },
+      {
+        "word": "はいしゅつ",
+        "hint": "Emission"
+      },
+      {
+        "word": "さくげん",
+        "hint": "Reduction"
+      },
+      {
+        "word": "ゆうき",
+        "hint": "Organic"
+      },
+      {
+        "word": "せいぶつたようせい",
+        "hint": "Biodiversity"
+      },
+      {
+        "word": "もったいない",
+        "hint": "Wasteful (anti-waste concept)"
+      },
+      {
+        "word": "しょくりょう",
+        "hint": "Food supply"
+      },
+      {
+        "word": "ちさんちしょう",
+        "hint": "Local production, local consumption"
+      },
+      {
+        "word": "でんきじどうしゃ",
+        "hint": "Electric car"
+      },
+      {
+        "word": "フェアトレード",
+        "hint": "Fair trade"
+      },
+      {
+        "word": "かんきょうもんだい",
+        "hint": "Environmental issues"
+      }
+    ]
   }
 ]

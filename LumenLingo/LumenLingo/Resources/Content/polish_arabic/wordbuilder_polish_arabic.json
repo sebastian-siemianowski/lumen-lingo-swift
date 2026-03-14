@@ -2098,5 +2098,4905 @@
         "hint": "Glina"
       }
     ]
+  },
+  {
+    "key": "daily_routine_wb",
+    "name": "Codzienna rutyna",
+    "description": "Codzienne czynności po arabsku",
+    "iconName": "sunrise",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "استيقاظ",
+        "hint": "Budzenie się"
+      },
+      {
+        "word": "إفطار",
+        "hint": "Śniadanie"
+      },
+      {
+        "word": "استحمام",
+        "hint": "Kąpiel"
+      },
+      {
+        "word": "ملابس",
+        "hint": "Ubrania"
+      },
+      {
+        "word": "عمل",
+        "hint": "Praca"
+      },
+      {
+        "word": "غداء",
+        "hint": "Obiad"
+      },
+      {
+        "word": "راحة",
+        "hint": "Odpoczynek"
+      },
+      {
+        "word": "عشاء",
+        "hint": "Kolacja"
+      },
+      {
+        "word": "نوم",
+        "hint": "Sen"
+      },
+      {
+        "word": "تنظيف",
+        "hint": "Sprzątanie"
+      },
+      {
+        "word": "طبخ",
+        "hint": "Gotowanie"
+      },
+      {
+        "word": "قراءة",
+        "hint": "Czytanie"
+      },
+      {
+        "word": "رياضة",
+        "hint": "Ćwiczenia"
+      },
+      {
+        "word": "تسوق",
+        "hint": "Zakupy"
+      },
+      {
+        "word": "مشي",
+        "hint": "Spacer"
+      }
+    ]
+  },
+  {
+    "key": "shopping_wb",
+    "name": "Zakupy",
+    "description": "Słownictwo zakupowe po arabsku",
+    "iconName": "cart",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "متجر",
+        "hint": "Sklep"
+      },
+      {
+        "word": "سعر",
+        "hint": "Cena"
+      },
+      {
+        "word": "خصم",
+        "hint": "Zniżka"
+      },
+      {
+        "word": "نقود",
+        "hint": "Pieniądze"
+      },
+      {
+        "word": "بطاقة",
+        "hint": "Karta"
+      },
+      {
+        "word": "كيس",
+        "hint": "Torba"
+      },
+      {
+        "word": "سوق",
+        "hint": "Rynek"
+      },
+      {
+        "word": "فاتورة",
+        "hint": "Rachunek"
+      },
+      {
+        "word": "منتج",
+        "hint": "Produkt"
+      },
+      {
+        "word": "عرض",
+        "hint": "Oferta"
+      },
+      {
+        "word": "دفع",
+        "hint": "Płatność"
+      },
+      {
+        "word": "شراء",
+        "hint": "Kupno"
+      },
+      {
+        "word": "بيع",
+        "hint": "Sprzedaż"
+      },
+      {
+        "word": "زبون",
+        "hint": "Klient"
+      },
+      {
+        "word": "إيصال",
+        "hint": "Paragon"
+      }
+    ]
+  },
+  {
+    "key": "restaurant_wb",
+    "name": "Restauracja",
+    "description": "Słownictwo restauracyjne po arabsku",
+    "iconName": "fork.knife",
+    "color": "#ef4444",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "مطعم",
+        "hint": "Restauracja"
+      },
+      {
+        "word": "قائمة",
+        "hint": "Menu"
+      },
+      {
+        "word": "طاولة",
+        "hint": "Stół"
+      },
+      {
+        "word": "نادل",
+        "hint": "Kelner"
+      },
+      {
+        "word": "طبق",
+        "hint": "Danie"
+      },
+      {
+        "word": "حساب",
+        "hint": "Rachunek"
+      },
+      {
+        "word": "حجز",
+        "hint": "Rezerwacja"
+      },
+      {
+        "word": "مقبلات",
+        "hint": "Przystawki"
+      },
+      {
+        "word": "حلوى",
+        "hint": "Deser"
+      },
+      {
+        "word": "مشروب",
+        "hint": "Napój"
+      },
+      {
+        "word": "شوكة",
+        "hint": "Widelec"
+      },
+      {
+        "word": "سكين",
+        "hint": "Nóż"
+      },
+      {
+        "word": "ملعقة",
+        "hint": "Łyżka"
+      },
+      {
+        "word": "صحن",
+        "hint": "Talerz"
+      },
+      {
+        "word": "كأس",
+        "hint": "Kieliszek"
+      }
+    ]
+  },
+  {
+    "key": "garden_wb",
+    "name": "Ogród",
+    "description": "Słownictwo ogrodnicze po arabsku",
+    "iconName": "leaf.fill",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "حديقة",
+        "hint": "Ogród"
+      },
+      {
+        "word": "زهرة",
+        "hint": "Kwiat"
+      },
+      {
+        "word": "شجرة",
+        "hint": "Drzewo"
+      },
+      {
+        "word": "عشب",
+        "hint": "Trawa"
+      },
+      {
+        "word": "تربة",
+        "hint": "Gleba"
+      },
+      {
+        "word": "بذور",
+        "hint": "Nasiona"
+      },
+      {
+        "word": "سياج",
+        "hint": "Płot"
+      },
+      {
+        "word": "مجرفة",
+        "hint": "Łopata"
+      },
+      {
+        "word": "خرطوم",
+        "hint": "Wąż ogrodowy"
+      },
+      {
+        "word": "سماد",
+        "hint": "Nawóz"
+      },
+      {
+        "word": "ورقة",
+        "hint": "Liść"
+      },
+      {
+        "word": "جذر",
+        "hint": "Korzeń"
+      },
+      {
+        "word": "فرع",
+        "hint": "Gałąź"
+      },
+      {
+        "word": "مقص",
+        "hint": "Sekator"
+      },
+      {
+        "word": "ظل",
+        "hint": "Cień"
+      }
+    ]
+  },
+  {
+    "key": "bathroom_wb",
+    "name": "Łazienka",
+    "description": "Wyposażenie łazienki po arabsku",
+    "iconName": "drop",
+    "color": "#06b6d4",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "حمام",
+        "hint": "Łazienka"
+      },
+      {
+        "word": "مرآة",
+        "hint": "Lustro"
+      },
+      {
+        "word": "صابون",
+        "hint": "Mydło"
+      },
+      {
+        "word": "منشفة",
+        "hint": "Ręcznik"
+      },
+      {
+        "word": "دش",
+        "hint": "Prysznic"
+      },
+      {
+        "word": "حوض",
+        "hint": "Umywalka"
+      },
+      {
+        "word": "مرحاض",
+        "hint": "Toaleta"
+      },
+      {
+        "word": "فرشاة",
+        "hint": "Szczoteczka"
+      },
+      {
+        "word": "شامبو",
+        "hint": "Szampon"
+      },
+      {
+        "word": "مجفف",
+        "hint": "Suszarka"
+      },
+      {
+        "word": "بلاط",
+        "hint": "Kafelki"
+      },
+      {
+        "word": "صنبور",
+        "hint": "Kran"
+      },
+      {
+        "word": "ستارة",
+        "hint": "Zasłona"
+      },
+      {
+        "word": "رف",
+        "hint": "Półka"
+      },
+      {
+        "word": "سلة",
+        "hint": "Kosz"
+      }
+    ]
+  },
+  {
+    "key": "cinema_wb",
+    "name": "Kino",
+    "description": "Słownictwo filmowe po arabsku",
+    "iconName": "film",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "فيلم",
+        "hint": "Film"
+      },
+      {
+        "word": "ممثل",
+        "hint": "Aktor"
+      },
+      {
+        "word": "مخرج",
+        "hint": "Reżyser"
+      },
+      {
+        "word": "شاشة",
+        "hint": "Ekran"
+      },
+      {
+        "word": "تذكرة",
+        "hint": "Bilet"
+      },
+      {
+        "word": "مشهد",
+        "hint": "Scena"
+      },
+      {
+        "word": "كاميرا",
+        "hint": "Kamera"
+      },
+      {
+        "word": "صوت",
+        "hint": "Dźwięk"
+      },
+      {
+        "word": "سيناريو",
+        "hint": "Scenariusz"
+      },
+      {
+        "word": "جمهور",
+        "hint": "Widownia"
+      },
+      {
+        "word": "عرض",
+        "hint": "Seans"
+      },
+      {
+        "word": "رعب",
+        "hint": "Horror"
+      },
+      {
+        "word": "كوميديا",
+        "hint": "Komedia"
+      },
+      {
+        "word": "دراما",
+        "hint": "Dramat"
+      },
+      {
+        "word": "ترجمة",
+        "hint": "Napisy"
+      }
+    ]
+  },
+  {
+    "key": "art_wb",
+    "name": "Sztuka",
+    "description": "Słownictwo artystyczne po arabsku",
+    "iconName": "paintbrush",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "لوحة",
+        "hint": "Obraz"
+      },
+      {
+        "word": "رسم",
+        "hint": "Rysunek"
+      },
+      {
+        "word": "نحت",
+        "hint": "Rzeźba"
+      },
+      {
+        "word": "فرشاة",
+        "hint": "Pędzel"
+      },
+      {
+        "word": "ألوان",
+        "hint": "Farby"
+      },
+      {
+        "word": "معرض",
+        "hint": "Galeria"
+      },
+      {
+        "word": "فنان",
+        "hint": "Artysta"
+      },
+      {
+        "word": "إبداع",
+        "hint": "Twórczość"
+      },
+      {
+        "word": "تصميم",
+        "hint": "Design"
+      },
+      {
+        "word": "خزف",
+        "hint": "Ceramika"
+      },
+      {
+        "word": "قماش",
+        "hint": "Płótno"
+      },
+      {
+        "word": "إطار",
+        "hint": "Rama"
+      },
+      {
+        "word": "ألوان مائية",
+        "hint": "Akwarele"
+      },
+      {
+        "word": "تمثال",
+        "hint": "Posąg"
+      },
+      {
+        "word": "فسيفساء",
+        "hint": "Mozaika"
+      }
+    ]
+  },
+  {
+    "key": "dance_wb",
+    "name": "Taniec",
+    "description": "Słownictwo taneczne po arabsku",
+    "iconName": "figure.dance",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "رقص",
+        "hint": "Taniec"
+      },
+      {
+        "word": "إيقاع",
+        "hint": "Rytm"
+      },
+      {
+        "word": "موسيقى",
+        "hint": "Muzyka"
+      },
+      {
+        "word": "حركة",
+        "hint": "Ruch"
+      },
+      {
+        "word": "مسرح",
+        "hint": "Scena"
+      },
+      {
+        "word": "باليه",
+        "hint": "Balet"
+      },
+      {
+        "word": "دبكة",
+        "hint": "Dabka (taniec arabski)"
+      },
+      {
+        "word": "خطوة",
+        "hint": "Krok"
+      },
+      {
+        "word": "شريك",
+        "hint": "Partner"
+      },
+      {
+        "word": "تدريب",
+        "hint": "Trening"
+      },
+      {
+        "word": "عرض",
+        "hint": "Występ"
+      },
+      {
+        "word": "راقصة",
+        "hint": "Tancerka"
+      },
+      {
+        "word": "لحن",
+        "hint": "Melodia"
+      },
+      {
+        "word": "فستان",
+        "hint": "Suknia"
+      },
+      {
+        "word": "حفلة",
+        "hint": "Przyjęcie"
+      }
+    ]
+  },
+  {
+    "key": "photography_wb",
+    "name": "Fotografia",
+    "description": "Słownictwo fotograficzne po arabsku",
+    "iconName": "camera",
+    "color": "#0ea5e9",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "تصوير",
+        "hint": "Fotografia"
+      },
+      {
+        "word": "عدسة",
+        "hint": "Obiektyw"
+      },
+      {
+        "word": "إضاءة",
+        "hint": "Oświetlenie"
+      },
+      {
+        "word": "بورتريه",
+        "hint": "Portret"
+      },
+      {
+        "word": "منظر",
+        "hint": "Krajobraz"
+      },
+      {
+        "word": "تعريض",
+        "hint": "Ekspozycja"
+      },
+      {
+        "word": "تركيز",
+        "hint": "Ostrość"
+      },
+      {
+        "word": "لقطة",
+        "hint": "Ujęcie"
+      },
+      {
+        "word": "تحرير",
+        "hint": "Edycja"
+      },
+      {
+        "word": "استوديو",
+        "hint": "Studio"
+      },
+      {
+        "word": "فلاش",
+        "hint": "Lampa błyskowa"
+      },
+      {
+        "word": "حامل",
+        "hint": "Statyw"
+      },
+      {
+        "word": "خلفية",
+        "hint": "Tło"
+      },
+      {
+        "word": "طباعة",
+        "hint": "Druk"
+      },
+      {
+        "word": "رقمي",
+        "hint": "Cyfrowy"
+      }
+    ]
+  },
+  {
+    "key": "crafts_wb",
+    "name": "Rękodzieło",
+    "description": "Słownictwo rękodzielnicze po arabsku",
+    "iconName": "scissors",
+    "color": "#d97706",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "حرفة",
+        "hint": "Rzemiosło"
+      },
+      {
+        "word": "خياطة",
+        "hint": "Szycie"
+      },
+      {
+        "word": "حياكة",
+        "hint": "Dzierganie"
+      },
+      {
+        "word": "تطريز",
+        "hint": "Haft"
+      },
+      {
+        "word": "نسيج",
+        "hint": "Tkanie"
+      },
+      {
+        "word": "خرز",
+        "hint": "Koraliki"
+      },
+      {
+        "word": "صمغ",
+        "hint": "Klej"
+      },
+      {
+        "word": "مقص",
+        "hint": "Nożyczki"
+      },
+      {
+        "word": "ورق",
+        "hint": "Papier"
+      },
+      {
+        "word": "خيط",
+        "hint": "Nici"
+      },
+      {
+        "word": "إبرة",
+        "hint": "Igła"
+      },
+      {
+        "word": "نموذج",
+        "hint": "Wzór"
+      },
+      {
+        "word": "زخرفة",
+        "hint": "Dekoracja"
+      },
+      {
+        "word": "جلد",
+        "hint": "Skóra"
+      },
+      {
+        "word": "خشب",
+        "hint": "Drewno"
+      }
+    ]
+  },
+  {
+    "key": "geography_wb",
+    "name": "Geografia",
+    "description": "Terminy geograficzne po arabsku",
+    "iconName": "globe",
+    "color": "#14b8a6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "قارة",
+        "hint": "Kontynent"
+      },
+      {
+        "word": "محيط",
+        "hint": "Ocean"
+      },
+      {
+        "word": "صحراء",
+        "hint": "Pustynia"
+      },
+      {
+        "word": "نهر",
+        "hint": "Rzeka"
+      },
+      {
+        "word": "جزيرة",
+        "hint": "Wyspa"
+      },
+      {
+        "word": "بحيرة",
+        "hint": "Jezioro"
+      },
+      {
+        "word": "وادي",
+        "hint": "Dolina"
+      },
+      {
+        "word": "هضبة",
+        "hint": "Płaskowyż"
+      },
+      {
+        "word": "بركان",
+        "hint": "Wulkan"
+      },
+      {
+        "word": "شلال",
+        "hint": "Wodospad"
+      },
+      {
+        "word": "خليج",
+        "hint": "Zatoka"
+      },
+      {
+        "word": "سهل",
+        "hint": "Równina"
+      },
+      {
+        "word": "حدود",
+        "hint": "Granica"
+      },
+      {
+        "word": "مناخ",
+        "hint": "Klimat"
+      },
+      {
+        "word": "خريطة",
+        "hint": "Mapa"
+      }
+    ]
+  },
+  {
+    "key": "astronomy_wb",
+    "name": "Astronomia",
+    "description": "Terminy astronomiczne po arabsku",
+    "iconName": "star",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "كوكب",
+        "hint": "Planeta"
+      },
+      {
+        "word": "نجم",
+        "hint": "Gwiazda"
+      },
+      {
+        "word": "قمر",
+        "hint": "Księżyc"
+      },
+      {
+        "word": "شمس",
+        "hint": "Słońce"
+      },
+      {
+        "word": "مجرة",
+        "hint": "Galaktyka"
+      },
+      {
+        "word": "كويكب",
+        "hint": "Asteroida"
+      },
+      {
+        "word": "مذنب",
+        "hint": "Kometa"
+      },
+      {
+        "word": "سديم",
+        "hint": "Mgławica"
+      },
+      {
+        "word": "مدار",
+        "hint": "Orbita"
+      },
+      {
+        "word": "تلسكوب",
+        "hint": "Teleskop"
+      },
+      {
+        "word": "كسوف",
+        "hint": "Zaćmienie"
+      },
+      {
+        "word": "فضاء",
+        "hint": "Przestrzeń kosmiczna"
+      },
+      {
+        "word": "رائد",
+        "hint": "Astronauta"
+      },
+      {
+        "word": "صاروخ",
+        "hint": "Rakieta"
+      },
+      {
+        "word": "نيزك",
+        "hint": "Meteor"
+      }
+    ]
+  },
+  {
+    "key": "ocean_wb",
+    "name": "Ocean",
+    "description": "Słownictwo morskie po arabsku",
+    "iconName": "water.waves",
+    "color": "#0284c7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "بحر",
+        "hint": "Morze"
+      },
+      {
+        "word": "موجة",
+        "hint": "Fala"
+      },
+      {
+        "word": "شاطئ",
+        "hint": "Plaża"
+      },
+      {
+        "word": "مرجان",
+        "hint": "Koral"
+      },
+      {
+        "word": "سمكة",
+        "hint": "Ryba"
+      },
+      {
+        "word": "حوت",
+        "hint": "Wieloryb"
+      },
+      {
+        "word": "دلفين",
+        "hint": "Delfin"
+      },
+      {
+        "word": "سلحفاة",
+        "hint": "Żółw morski"
+      },
+      {
+        "word": "غوص",
+        "hint": "Nurkowanie"
+      },
+      {
+        "word": "ملح",
+        "hint": "Sól"
+      },
+      {
+        "word": "رمل",
+        "hint": "Piasek"
+      },
+      {
+        "word": "صدفة",
+        "hint": "Muszla"
+      },
+      {
+        "word": "مرساة",
+        "hint": "Kotwica"
+      },
+      {
+        "word": "سفينة",
+        "hint": "Statek"
+      },
+      {
+        "word": "مد",
+        "hint": "Przypływ"
+      }
+    ]
+  },
+  {
+    "key": "mountains_wb",
+    "name": "Góry",
+    "description": "Słownictwo górskie po arabsku",
+    "iconName": "mountain.2",
+    "color": "#78716c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "جبل",
+        "hint": "Góra"
+      },
+      {
+        "word": "قمة",
+        "hint": "Szczyt"
+      },
+      {
+        "word": "منحدر",
+        "hint": "Zbocze"
+      },
+      {
+        "word": "وادي",
+        "hint": "Wąwóz"
+      },
+      {
+        "word": "صخرة",
+        "hint": "Skała"
+      },
+      {
+        "word": "كهف",
+        "hint": "Jaskinia"
+      },
+      {
+        "word": "ثلج",
+        "hint": "Śnieg"
+      },
+      {
+        "word": "تسلق",
+        "hint": "Wspinaczka"
+      },
+      {
+        "word": "ممر",
+        "hint": "Przełęcz"
+      },
+      {
+        "word": "غابة",
+        "hint": "Las"
+      },
+      {
+        "word": "نبع",
+        "hint": "Źródło"
+      },
+      {
+        "word": "جليد",
+        "hint": "Lodowiec"
+      },
+      {
+        "word": "تلة",
+        "hint": "Wzgórze"
+      },
+      {
+        "word": "مسار",
+        "hint": "Szlak"
+      },
+      {
+        "word": "ارتفاع",
+        "hint": "Wysokość"
+      }
+    ]
+  },
+  {
+    "key": "camping_wb",
+    "name": "Kemping",
+    "description": "Słownictwo kempingowe po arabsku",
+    "iconName": "tent",
+    "color": "#65a30d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "خيمة",
+        "hint": "Namiot"
+      },
+      {
+        "word": "نار",
+        "hint": "Ognisko"
+      },
+      {
+        "word": "حقيبة",
+        "hint": "Plecak"
+      },
+      {
+        "word": "مصباح",
+        "hint": "Latarka"
+      },
+      {
+        "word": "بوصلة",
+        "hint": "Kompas"
+      },
+      {
+        "word": "حبل",
+        "hint": "Lina"
+      },
+      {
+        "word": "كشافة",
+        "hint": "Harcerstwo"
+      },
+      {
+        "word": "طبيعة",
+        "hint": "Natura"
+      },
+      {
+        "word": "نجوم",
+        "hint": "Gwiazdy"
+      },
+      {
+        "word": "حشرات",
+        "hint": "Owady"
+      },
+      {
+        "word": "جدول",
+        "hint": "Strumień"
+      },
+      {
+        "word": "صيد",
+        "hint": "Wędkowanie"
+      },
+      {
+        "word": "أرجوحة",
+        "hint": "Hamak"
+      },
+      {
+        "word": "موقد",
+        "hint": "Kuchenka"
+      },
+      {
+        "word": "مغامرة",
+        "hint": "Przygoda"
+      }
+    ]
+  },
+  {
+    "key": "law_wb",
+    "name": "Prawo",
+    "description": "Terminy prawnicze po arabsku",
+    "iconName": "building.columns",
+    "color": "#64748b",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "قانون",
+        "hint": "Prawo"
+      },
+      {
+        "word": "محكمة",
+        "hint": "Sąd"
+      },
+      {
+        "word": "قاضي",
+        "hint": "Sędzia"
+      },
+      {
+        "word": "محامي",
+        "hint": "Adwokat"
+      },
+      {
+        "word": "عدالة",
+        "hint": "Sprawiedliwość"
+      },
+      {
+        "word": "جريمة",
+        "hint": "Przestępstwo"
+      },
+      {
+        "word": "شاهد",
+        "hint": "Świadek"
+      },
+      {
+        "word": "دليل",
+        "hint": "Dowód"
+      },
+      {
+        "word": "عقوبة",
+        "hint": "Kara"
+      },
+      {
+        "word": "حقوق",
+        "hint": "Prawa"
+      },
+      {
+        "word": "دستور",
+        "hint": "Konstytucja"
+      },
+      {
+        "word": "تهمة",
+        "hint": "Zarzut"
+      },
+      {
+        "word": "براءة",
+        "hint": "Uniewinnienie"
+      },
+      {
+        "word": "سجن",
+        "hint": "Więzienie"
+      },
+      {
+        "word": "عقد",
+        "hint": "Umowa"
+      }
+    ]
+  },
+  {
+    "key": "politics_wb",
+    "name": "Polityka",
+    "description": "Terminy polityczne po arabsku",
+    "iconName": "person.3",
+    "color": "#dc2626",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "حكومة",
+        "hint": "Rząd"
+      },
+      {
+        "word": "رئيس",
+        "hint": "Prezydent"
+      },
+      {
+        "word": "برلمان",
+        "hint": "Parlament"
+      },
+      {
+        "word": "انتخاب",
+        "hint": "Wybory"
+      },
+      {
+        "word": "حزب",
+        "hint": "Partia"
+      },
+      {
+        "word": "سياسة",
+        "hint": "Polityka"
+      },
+      {
+        "word": "ديمقراطية",
+        "hint": "Demokracja"
+      },
+      {
+        "word": "وزير",
+        "hint": "Minister"
+      },
+      {
+        "word": "سفارة",
+        "hint": "Ambasada"
+      },
+      {
+        "word": "دبلوماسي",
+        "hint": "Dyplomata"
+      },
+      {
+        "word": "تصويت",
+        "hint": "Głosowanie"
+      },
+      {
+        "word": "مواطن",
+        "hint": "Obywatel"
+      },
+      {
+        "word": "حرية",
+        "hint": "Wolność"
+      },
+      {
+        "word": "معارضة",
+        "hint": "Opozycja"
+      },
+      {
+        "word": "إصلاح",
+        "hint": "Reforma"
+      }
+    ]
+  },
+  {
+    "key": "economy_wb",
+    "name": "Ekonomia",
+    "description": "Terminy ekonomiczne po arabsku",
+    "iconName": "chart.line.uptrend.xyaxis",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "اقتصاد",
+        "hint": "Ekonomia"
+      },
+      {
+        "word": "تجارة",
+        "hint": "Handel"
+      },
+      {
+        "word": "استثمار",
+        "hint": "Inwestycja"
+      },
+      {
+        "word": "تضخم",
+        "hint": "Inflacja"
+      },
+      {
+        "word": "ميزانية",
+        "hint": "Budżet"
+      },
+      {
+        "word": "ضريبة",
+        "hint": "Podatek"
+      },
+      {
+        "word": "صادرات",
+        "hint": "Eksport"
+      },
+      {
+        "word": "واردات",
+        "hint": "Import"
+      },
+      {
+        "word": "بورصة",
+        "hint": "Giełda"
+      },
+      {
+        "word": "شركة",
+        "hint": "Firma"
+      },
+      {
+        "word": "أرباح",
+        "hint": "Zyski"
+      },
+      {
+        "word": "خسارة",
+        "hint": "Strata"
+      },
+      {
+        "word": "سوق",
+        "hint": "Rynek"
+      },
+      {
+        "word": "عملة",
+        "hint": "Waluta"
+      },
+      {
+        "word": "دين",
+        "hint": "Dług"
+      }
+    ]
+  },
+  {
+    "key": "banking_wb",
+    "name": "Bankowość",
+    "description": "Terminy bankowe po arabsku",
+    "iconName": "banknote",
+    "color": "#0d9488",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "بنك",
+        "hint": "Bank"
+      },
+      {
+        "word": "حساب",
+        "hint": "Konto"
+      },
+      {
+        "word": "قرض",
+        "hint": "Kredyt"
+      },
+      {
+        "word": "فائدة",
+        "hint": "Odsetki"
+      },
+      {
+        "word": "إيداع",
+        "hint": "Wpłata"
+      },
+      {
+        "word": "سحب",
+        "hint": "Wypłata"
+      },
+      {
+        "word": "تحويل",
+        "hint": "Przelew"
+      },
+      {
+        "word": "رصيد",
+        "hint": "Saldo"
+      },
+      {
+        "word": "صراف",
+        "hint": "Bankomat"
+      },
+      {
+        "word": "رهن",
+        "hint": "Hipoteka"
+      },
+      {
+        "word": "ادخار",
+        "hint": "Oszczędności"
+      },
+      {
+        "word": "شيك",
+        "hint": "Czek"
+      },
+      {
+        "word": "فرع",
+        "hint": "Oddział"
+      },
+      {
+        "word": "أقساط",
+        "hint": "Raty"
+      },
+      {
+        "word": "ضمان",
+        "hint": "Gwarancja"
+      }
+    ]
+  },
+  {
+    "key": "insurance_wb",
+    "name": "Ubezpieczenia",
+    "description": "Terminy ubezpieczeniowe po arabsku",
+    "iconName": "shield",
+    "color": "#2563eb",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "تأمين",
+        "hint": "Ubezpieczenie"
+      },
+      {
+        "word": "بوليصة",
+        "hint": "Polisa"
+      },
+      {
+        "word": "قسط",
+        "hint": "Składka"
+      },
+      {
+        "word": "تعويض",
+        "hint": "Odszkodowanie"
+      },
+      {
+        "word": "مطالبة",
+        "hint": "Roszczenie"
+      },
+      {
+        "word": "تغطية",
+        "hint": "Pokrycie"
+      },
+      {
+        "word": "حادث",
+        "hint": "Wypadek"
+      },
+      {
+        "word": "صحي",
+        "hint": "Zdrowotne"
+      },
+      {
+        "word": "سيارة",
+        "hint": "Samochodowe"
+      },
+      {
+        "word": "حياة",
+        "hint": "Na życie"
+      },
+      {
+        "word": "ممتلكات",
+        "hint": "Majątkowe"
+      },
+      {
+        "word": "مستفيد",
+        "hint": "Beneficjent"
+      },
+      {
+        "word": "خطر",
+        "hint": "Ryzyko"
+      },
+      {
+        "word": "وكيل",
+        "hint": "Agent"
+      },
+      {
+        "word": "شروط",
+        "hint": "Warunki"
+      }
+    ]
+  },
+  {
+    "key": "cooking_wb",
+    "name": "Gotowanie",
+    "description": "Metody gotowania po arabsku",
+    "iconName": "flame",
+    "color": "#ea580c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "قلي",
+        "hint": "Smażenie"
+      },
+      {
+        "word": "شواء",
+        "hint": "Grillowanie"
+      },
+      {
+        "word": "سلق",
+        "hint": "Gotowanie w wodzie"
+      },
+      {
+        "word": "خبز",
+        "hint": "Pieczenie"
+      },
+      {
+        "word": "تقطيع",
+        "hint": "Krojenie"
+      },
+      {
+        "word": "تتبيل",
+        "hint": "Marynowanie"
+      },
+      {
+        "word": "خلط",
+        "hint": "Mieszanie"
+      },
+      {
+        "word": "تبخير",
+        "hint": "Gotowanie na parze"
+      },
+      {
+        "word": "وصفة",
+        "hint": "Przepis"
+      },
+      {
+        "word": "مكونات",
+        "hint": "Składniki"
+      },
+      {
+        "word": "مقلاة",
+        "hint": "Patelnia"
+      },
+      {
+        "word": "قدر",
+        "hint": "Garnek"
+      },
+      {
+        "word": "فرن",
+        "hint": "Piekarnik"
+      },
+      {
+        "word": "تقديم",
+        "hint": "Podawanie"
+      },
+      {
+        "word": "نكهة",
+        "hint": "Smak"
+      }
+    ]
+  },
+  {
+    "key": "baking_wb",
+    "name": "Pieczenie",
+    "description": "Słownictwo piekarnicze po arabsku",
+    "iconName": "birthday.cake",
+    "color": "#b45309",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "كعكة",
+        "hint": "Ciasto"
+      },
+      {
+        "word": "عجين",
+        "hint": "Ciasto (surowe)"
+      },
+      {
+        "word": "خميرة",
+        "hint": "Drożdże"
+      },
+      {
+        "word": "طحين",
+        "hint": "Mąka"
+      },
+      {
+        "word": "سكر",
+        "hint": "Cukier"
+      },
+      {
+        "word": "زبدة",
+        "hint": "Masło"
+      },
+      {
+        "word": "بيض",
+        "hint": "Jajka"
+      },
+      {
+        "word": "شوكولاتة",
+        "hint": "Czekolada"
+      },
+      {
+        "word": "فانيليا",
+        "hint": "Wanilia"
+      },
+      {
+        "word": "كريمة",
+        "hint": "Krem"
+      },
+      {
+        "word": "بسكويت",
+        "hint": "Ciasteczka"
+      },
+      {
+        "word": "معجنات",
+        "hint": "Wypieki"
+      },
+      {
+        "word": "صينية",
+        "hint": "Blacha"
+      },
+      {
+        "word": "تزيين",
+        "hint": "Dekorowanie"
+      },
+      {
+        "word": "خبز",
+        "hint": "Chleb"
+      }
+    ]
+  },
+  {
+    "key": "spices_wb",
+    "name": "Przyprawy",
+    "description": "Przyprawy i zioła po arabsku",
+    "iconName": "leaf.arrow.circlepath",
+    "color": "#b91c1c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "فلفل",
+        "hint": "Pieprz"
+      },
+      {
+        "word": "ملح",
+        "hint": "Sól"
+      },
+      {
+        "word": "كمون",
+        "hint": "Kmin"
+      },
+      {
+        "word": "كركم",
+        "hint": "Kurkuma"
+      },
+      {
+        "word": "قرفة",
+        "hint": "Cynamon"
+      },
+      {
+        "word": "زنجبيل",
+        "hint": "Imbir"
+      },
+      {
+        "word": "ثوم",
+        "hint": "Czosnek"
+      },
+      {
+        "word": "نعناع",
+        "hint": "Mięta"
+      },
+      {
+        "word": "زعفران",
+        "hint": "Szafran"
+      },
+      {
+        "word": "ريحان",
+        "hint": "Bazylia"
+      },
+      {
+        "word": "بهارات",
+        "hint": "Przyprawy mieszane"
+      },
+      {
+        "word": "هيل",
+        "hint": "Kardamon"
+      },
+      {
+        "word": "قرنفل",
+        "hint": "Goździki"
+      },
+      {
+        "word": "زعتر",
+        "hint": "Tymianek"
+      },
+      {
+        "word": "حبق",
+        "hint": "Oregano"
+      }
+    ]
+  },
+  {
+    "key": "dairy_wb",
+    "name": "Nabiał",
+    "description": "Produkty mleczne po arabsku",
+    "iconName": "cup.and.saucer",
+    "color": "#fbbf24",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "حليب",
+        "hint": "Mleko"
+      },
+      {
+        "word": "جبن",
+        "hint": "Ser"
+      },
+      {
+        "word": "زبادي",
+        "hint": "Jogurt"
+      },
+      {
+        "word": "زبدة",
+        "hint": "Masło"
+      },
+      {
+        "word": "قشدة",
+        "hint": "Śmietana"
+      },
+      {
+        "word": "آيس كريم",
+        "hint": "Lody"
+      },
+      {
+        "word": "لبنة",
+        "hint": "Serek arabski"
+      },
+      {
+        "word": "حلوم",
+        "hint": "Ser halloumi"
+      },
+      {
+        "word": "كفير",
+        "hint": "Kefir"
+      },
+      {
+        "word": "جبنة بيضاء",
+        "hint": "Ser biały"
+      },
+      {
+        "word": "رائب",
+        "hint": "Maślanka"
+      },
+      {
+        "word": "موزاريلا",
+        "hint": "Mozzarella"
+      },
+      {
+        "word": "جبنة صفراء",
+        "hint": "Ser żółty"
+      },
+      {
+        "word": "بودينغ",
+        "hint": "Budyń"
+      },
+      {
+        "word": "حليب مكثف",
+        "hint": "Mleko skondensowane"
+      }
+    ]
+  },
+  {
+    "key": "meat_wb",
+    "name": "Mięso",
+    "description": "Rodzaje mięsa po arabsku",
+    "iconName": "fork.knife",
+    "color": "#991b1b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "لحم",
+        "hint": "Mięso"
+      },
+      {
+        "word": "دجاج",
+        "hint": "Kurczak"
+      },
+      {
+        "word": "لحم بقر",
+        "hint": "Wołowina"
+      },
+      {
+        "word": "لحم خروف",
+        "hint": "Baranina"
+      },
+      {
+        "word": "سمك",
+        "hint": "Ryba"
+      },
+      {
+        "word": "ديك رومي",
+        "hint": "Indyk"
+      },
+      {
+        "word": "نقانق",
+        "hint": "Kiełbasa"
+      },
+      {
+        "word": "كبد",
+        "hint": "Wątroba"
+      },
+      {
+        "word": "لحم عجل",
+        "hint": "Cielęcina"
+      },
+      {
+        "word": "جمبري",
+        "hint": "Krewetki"
+      },
+      {
+        "word": "لحم مفروم",
+        "hint": "Mięso mielone"
+      },
+      {
+        "word": "شريحة",
+        "hint": "Stek"
+      },
+      {
+        "word": "صدر",
+        "hint": "Pierś"
+      },
+      {
+        "word": "جناح",
+        "hint": "Skrzydełko"
+      },
+      {
+        "word": "فخذ",
+        "hint": "Udko"
+      }
+    ]
+  },
+  {
+    "key": "pets_wb",
+    "name": "Zwierzęta domowe",
+    "description": "Zwierzęta domowe po arabsku",
+    "iconName": "pawprint",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "قطة",
+        "hint": "Kot"
+      },
+      {
+        "word": "كلب",
+        "hint": "Pies"
+      },
+      {
+        "word": "أرنب",
+        "hint": "Królik"
+      },
+      {
+        "word": "هامستر",
+        "hint": "Chomik"
+      },
+      {
+        "word": "سلحفاة",
+        "hint": "Żółw"
+      },
+      {
+        "word": "ببغاء",
+        "hint": "Papuga"
+      },
+      {
+        "word": "سمكة زينة",
+        "hint": "Rybka akwariowa"
+      },
+      {
+        "word": "خنزير غينيا",
+        "hint": "Świnka morska"
+      },
+      {
+        "word": "قفص",
+        "hint": "Klatka"
+      },
+      {
+        "word": "طعام",
+        "hint": "Karma"
+      },
+      {
+        "word": "حوض",
+        "hint": "Akwarium"
+      },
+      {
+        "word": "مخلب",
+        "hint": "Pazur"
+      },
+      {
+        "word": "ذيل",
+        "hint": "Ogon"
+      },
+      {
+        "word": "فرو",
+        "hint": "Futro"
+      },
+      {
+        "word": "طبيب بيطري",
+        "hint": "Weterynarz"
+      }
+    ]
+  },
+  {
+    "key": "birds_wb",
+    "name": "Ptaki",
+    "description": "Rodzaje ptaków po arabsku",
+    "iconName": "bird",
+    "color": "#06b6d4",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "عصفور",
+        "hint": "Wróbel"
+      },
+      {
+        "word": "نسر",
+        "hint": "Orzeł"
+      },
+      {
+        "word": "بومة",
+        "hint": "Sowa"
+      },
+      {
+        "word": "حمامة",
+        "hint": "Gołąb"
+      },
+      {
+        "word": "صقر",
+        "hint": "Sokół"
+      },
+      {
+        "word": "طاووس",
+        "hint": "Paw"
+      },
+      {
+        "word": "فلامنغو",
+        "hint": "Flaming"
+      },
+      {
+        "word": "بطريق",
+        "hint": "Pingwin"
+      },
+      {
+        "word": "غراب",
+        "hint": "Kruk"
+      },
+      {
+        "word": "بلبل",
+        "hint": "Słowik"
+      },
+      {
+        "word": "لقلق",
+        "hint": "Bocian"
+      },
+      {
+        "word": "بجعة",
+        "hint": "Łabędź"
+      },
+      {
+        "word": "ريشة",
+        "hint": "Pióro"
+      },
+      {
+        "word": "عش",
+        "hint": "Gniazdo"
+      },
+      {
+        "word": "منقار",
+        "hint": "Dziób"
+      }
+    ]
+  },
+  {
+    "key": "insects_wb",
+    "name": "Owady",
+    "description": "Rodzaje owadów po arabsku",
+    "iconName": "ladybug",
+    "color": "#84cc16",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "نحلة",
+        "hint": "Pszczoła"
+      },
+      {
+        "word": "فراشة",
+        "hint": "Motyl"
+      },
+      {
+        "word": "نملة",
+        "hint": "Mrówka"
+      },
+      {
+        "word": "عنكبوت",
+        "hint": "Pająk"
+      },
+      {
+        "word": "بعوضة",
+        "hint": "Komar"
+      },
+      {
+        "word": "ذبابة",
+        "hint": "Mucha"
+      },
+      {
+        "word": "خنفساء",
+        "hint": "Chrząszcz"
+      },
+      {
+        "word": "دودة",
+        "hint": "Robak"
+      },
+      {
+        "word": "جندب",
+        "hint": "Konik polny"
+      },
+      {
+        "word": "دعسوقة",
+        "hint": "Biedronka"
+      },
+      {
+        "word": "يعسوب",
+        "hint": "Ważka"
+      },
+      {
+        "word": "صرصور",
+        "hint": "Karaluch"
+      },
+      {
+        "word": "عقرب",
+        "hint": "Skorpion"
+      },
+      {
+        "word": "يرقة",
+        "hint": "Gąsienica"
+      },
+      {
+        "word": "حشرة",
+        "hint": "Owad"
+      }
+    ]
+  },
+  {
+    "key": "marine_life_wb",
+    "name": "Życie morskie",
+    "description": "Organizmy morskie po arabsku",
+    "iconName": "fish",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "أخطبوط",
+        "hint": "Ośmiornica"
+      },
+      {
+        "word": "قرش",
+        "hint": "Rekin"
+      },
+      {
+        "word": "فقمة",
+        "hint": "Foka"
+      },
+      {
+        "word": "حصان بحر",
+        "hint": "Konik morski"
+      },
+      {
+        "word": "نجمة بحر",
+        "hint": "Rozgwiazda"
+      },
+      {
+        "word": "قنديل",
+        "hint": "Meduza"
+      },
+      {
+        "word": "سرطان",
+        "hint": "Krab"
+      },
+      {
+        "word": "محار",
+        "hint": "Ostryga"
+      },
+      {
+        "word": "حبار",
+        "hint": "Kałamarnica"
+      },
+      {
+        "word": "سلمون",
+        "hint": "Łosoś"
+      },
+      {
+        "word": "تونة",
+        "hint": "Tuńczyk"
+      },
+      {
+        "word": "شعاب",
+        "hint": "Rafa"
+      },
+      {
+        "word": "طحالب",
+        "hint": "Wodorosty"
+      },
+      {
+        "word": "فرس النهر",
+        "hint": "Hipopotam"
+      },
+      {
+        "word": "تمساح",
+        "hint": "Krokodyl"
+      }
+    ]
+  },
+  {
+    "key": "farm_animals_wb",
+    "name": "Zwierzęta gospodarcze",
+    "description": "Zwierzęta wiejskie po arabsku",
+    "iconName": "hare",
+    "color": "#a16207",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "بقرة",
+        "hint": "Krowa"
+      },
+      {
+        "word": "حصان",
+        "hint": "Koń"
+      },
+      {
+        "word": "خروف",
+        "hint": "Owca"
+      },
+      {
+        "word": "ماعز",
+        "hint": "Koza"
+      },
+      {
+        "word": "دجاجة",
+        "hint": "Kura"
+      },
+      {
+        "word": "ديك",
+        "hint": "Kogut"
+      },
+      {
+        "word": "بطة",
+        "hint": "Kaczka"
+      },
+      {
+        "word": "إوزة",
+        "hint": "Gęś"
+      },
+      {
+        "word": "حمار",
+        "hint": "Osioł"
+      },
+      {
+        "word": "ثور",
+        "hint": "Byk"
+      },
+      {
+        "word": "أرنب",
+        "hint": "Królik"
+      },
+      {
+        "word": "خنزير",
+        "hint": "Świnia"
+      },
+      {
+        "word": "حظيرة",
+        "hint": "Stodoła"
+      },
+      {
+        "word": "مزرعة",
+        "hint": "Farma"
+      },
+      {
+        "word": "علف",
+        "hint": "Pasza"
+      }
+    ]
+  },
+  {
+    "key": "feelings_wb",
+    "name": "Uczucia",
+    "description": "Uczucia i emocje po arabsku",
+    "iconName": "heart",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "حب",
+        "hint": "Miłość"
+      },
+      {
+        "word": "كراهية",
+        "hint": "Nienawiść"
+      },
+      {
+        "word": "خوف",
+        "hint": "Strach"
+      },
+      {
+        "word": "أمل",
+        "hint": "Nadzieja"
+      },
+      {
+        "word": "غضب",
+        "hint": "Złość"
+      },
+      {
+        "word": "فخر",
+        "hint": "Duma"
+      },
+      {
+        "word": "خجل",
+        "hint": "Wstyd"
+      },
+      {
+        "word": "غيرة",
+        "hint": "Zazdrość"
+      },
+      {
+        "word": "شوق",
+        "hint": "Tęsknota"
+      },
+      {
+        "word": "ندم",
+        "hint": "Żal"
+      },
+      {
+        "word": "قلق",
+        "hint": "Niepokój"
+      },
+      {
+        "word": "سعادة",
+        "hint": "Szczęście"
+      },
+      {
+        "word": "حزن",
+        "hint": "Smutek"
+      },
+      {
+        "word": "دهشة",
+        "hint": "Zaskoczenie"
+      },
+      {
+        "word": "رضا",
+        "hint": "Zadowolenie"
+      }
+    ]
+  },
+  {
+    "key": "personality_wb",
+    "name": "Osobowość",
+    "description": "Cechy osobowości po arabsku",
+    "iconName": "person.fill",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "شجاع",
+        "hint": "Odważny"
+      },
+      {
+        "word": "كريم",
+        "hint": "Hojny"
+      },
+      {
+        "word": "صبور",
+        "hint": "Cierpliwy"
+      },
+      {
+        "word": "ذكي",
+        "hint": "Inteligentny"
+      },
+      {
+        "word": "لطيف",
+        "hint": "Miły"
+      },
+      {
+        "word": "صادق",
+        "hint": "Uczciwy"
+      },
+      {
+        "word": "كسول",
+        "hint": "Leniwy"
+      },
+      {
+        "word": "متواضع",
+        "hint": "Skromny"
+      },
+      {
+        "word": "عنيد",
+        "hint": "Uparty"
+      },
+      {
+        "word": "مرح",
+        "hint": "Wesoły"
+      },
+      {
+        "word": "خجول",
+        "hint": "Nieśmiały"
+      },
+      {
+        "word": "متفائل",
+        "hint": "Optymistyczny"
+      },
+      {
+        "word": "أناني",
+        "hint": "Egoistyczny"
+      },
+      {
+        "word": "وفي",
+        "hint": "Lojalny"
+      },
+      {
+        "word": "مسؤول",
+        "hint": "Odpowiedzialny"
+      }
+    ]
+  },
+  {
+    "key": "relationships_wb",
+    "name": "Relacje",
+    "description": "Słownictwo relacji po arabsku",
+    "iconName": "heart.fill",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "صداقة",
+        "hint": "Przyjaźń"
+      },
+      {
+        "word": "زواج",
+        "hint": "Małżeństwo"
+      },
+      {
+        "word": "طلاق",
+        "hint": "Rozwód"
+      },
+      {
+        "word": "خطوبة",
+        "hint": "Zaręczyny"
+      },
+      {
+        "word": "حبيب",
+        "hint": "Ukochany"
+      },
+      {
+        "word": "جار",
+        "hint": "Sąsiad"
+      },
+      {
+        "word": "زميل",
+        "hint": "Kolega"
+      },
+      {
+        "word": "شريك",
+        "hint": "Partner"
+      },
+      {
+        "word": "عائلة",
+        "hint": "Rodzina"
+      },
+      {
+        "word": "ثقة",
+        "hint": "Zaufanie"
+      },
+      {
+        "word": "احترام",
+        "hint": "Szacunek"
+      },
+      {
+        "word": "وفاء",
+        "hint": "Wierność"
+      },
+      {
+        "word": "خلاف",
+        "hint": "Spór"
+      },
+      {
+        "word": "مصالحة",
+        "hint": "Pojednanie"
+      },
+      {
+        "word": "تعاون",
+        "hint": "Współpraca"
+      }
+    ]
+  },
+  {
+    "key": "communication_wb",
+    "name": "Komunikacja",
+    "description": "Słownictwo komunikacyjne po arabsku",
+    "iconName": "bubble.left.and.bubble.right",
+    "color": "#3b82f6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "محادثة",
+        "hint": "Rozmowa"
+      },
+      {
+        "word": "رسالة",
+        "hint": "Wiadomość"
+      },
+      {
+        "word": "مكالمة",
+        "hint": "Telefon"
+      },
+      {
+        "word": "بريد",
+        "hint": "Poczta"
+      },
+      {
+        "word": "إشارة",
+        "hint": "Sygnał"
+      },
+      {
+        "word": "لغة",
+        "hint": "Język"
+      },
+      {
+        "word": "ترجمة",
+        "hint": "Tłumaczenie"
+      },
+      {
+        "word": "خطاب",
+        "hint": "Przemówienie"
+      },
+      {
+        "word": "نقاش",
+        "hint": "Dyskusja"
+      },
+      {
+        "word": "إعلان",
+        "hint": "Ogłoszenie"
+      },
+      {
+        "word": "صحافة",
+        "hint": "Dziennikarstwo"
+      },
+      {
+        "word": "إذاعة",
+        "hint": "Radio"
+      },
+      {
+        "word": "تلفزيون",
+        "hint": "Telewizja"
+      },
+      {
+        "word": "مقابلة",
+        "hint": "Wywiad"
+      },
+      {
+        "word": "تعبير",
+        "hint": "Wyrażenie"
+      }
+    ]
+  },
+  {
+    "key": "gestures_wb",
+    "name": "Gesty",
+    "description": "Gesty i mowa ciała po arabsku",
+    "iconName": "hand.raised",
+    "color": "#a855f7",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "مصافحة",
+        "hint": "Uścisk dłoni"
+      },
+      {
+        "word": "عناق",
+        "hint": "Uścisk"
+      },
+      {
+        "word": "إيماءة",
+        "hint": "Skinienie"
+      },
+      {
+        "word": "تلويح",
+        "hint": "Machanie"
+      },
+      {
+        "word": "إشارة",
+        "hint": "Gest"
+      },
+      {
+        "word": "ابتسامة",
+        "hint": "Uśmiech"
+      },
+      {
+        "word": "تصفيق",
+        "hint": "Oklaski"
+      },
+      {
+        "word": "انحناء",
+        "hint": "Ukłon"
+      },
+      {
+        "word": "غمزة",
+        "hint": "Mrugnięcie"
+      },
+      {
+        "word": "تأشير",
+        "hint": "Wskazywanie"
+      },
+      {
+        "word": "هز رأس",
+        "hint": "Kiwanie głową"
+      },
+      {
+        "word": "عبوس",
+        "hint": "Marszczenie brwi"
+      },
+      {
+        "word": "تحية",
+        "hint": "Pozdrowienie"
+      },
+      {
+        "word": "رفع يد",
+        "hint": "Podniesienie ręki"
+      },
+      {
+        "word": "صمت",
+        "hint": "Cisza"
+      }
+    ]
+  },
+  {
+    "key": "architecture_wb",
+    "name": "Architektura",
+    "description": "Terminy architektoniczne po arabsku",
+    "iconName": "building.2",
+    "color": "#78716c",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "مبنى",
+        "hint": "Budynek"
+      },
+      {
+        "word": "عمود",
+        "hint": "Kolumna"
+      },
+      {
+        "word": "قبة",
+        "hint": "Kopuła"
+      },
+      {
+        "word": "قوس",
+        "hint": "Łuk"
+      },
+      {
+        "word": "واجهة",
+        "hint": "Fasada"
+      },
+      {
+        "word": "شرفة",
+        "hint": "Balkon"
+      },
+      {
+        "word": "سقف",
+        "hint": "Dach"
+      },
+      {
+        "word": "أساس",
+        "hint": "Fundament"
+      },
+      {
+        "word": "درج",
+        "hint": "Schody"
+      },
+      {
+        "word": "مئذنة",
+        "hint": "Minaret"
+      },
+      {
+        "word": "نافذة",
+        "hint": "Okno"
+      },
+      {
+        "word": "باب",
+        "hint": "Drzwi"
+      },
+      {
+        "word": "جدار",
+        "hint": "Ściana"
+      },
+      {
+        "word": "ممر",
+        "hint": "Korytarz"
+      },
+      {
+        "word": "فناء",
+        "hint": "Dziedziniec"
+      }
+    ]
+  },
+  {
+    "key": "construction_wb",
+    "name": "Budownictwo",
+    "description": "Terminy budowlane po arabsku",
+    "iconName": "hammer",
+    "color": "#d97706",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "بناء",
+        "hint": "Budowa"
+      },
+      {
+        "word": "إسمنت",
+        "hint": "Cement"
+      },
+      {
+        "word": "طوب",
+        "hint": "Cegła"
+      },
+      {
+        "word": "حديد",
+        "hint": "Stal"
+      },
+      {
+        "word": "رافعة",
+        "hint": "Dźwig"
+      },
+      {
+        "word": "خوذة",
+        "hint": "Kask"
+      },
+      {
+        "word": "مهندس",
+        "hint": "Inżynier"
+      },
+      {
+        "word": "تصميم",
+        "hint": "Projekt"
+      },
+      {
+        "word": "حفر",
+        "hint": "Kopanie"
+      },
+      {
+        "word": "دهان",
+        "hint": "Farba"
+      },
+      {
+        "word": "مسمار",
+        "hint": "Gwóźdź"
+      },
+      {
+        "word": "مطرقة",
+        "hint": "Młotek"
+      },
+      {
+        "word": "منشار",
+        "hint": "Piła"
+      },
+      {
+        "word": "سقالة",
+        "hint": "Rusztowanie"
+      },
+      {
+        "word": "أنبوب",
+        "hint": "Rura"
+      }
+    ]
+  },
+  {
+    "key": "electricity_wb",
+    "name": "Elektryczność",
+    "description": "Terminy elektryczne po arabsku",
+    "iconName": "bolt",
+    "color": "#eab308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "كهرباء",
+        "hint": "Elektryczność"
+      },
+      {
+        "word": "مفتاح",
+        "hint": "Włącznik"
+      },
+      {
+        "word": "مقبس",
+        "hint": "Gniazdko"
+      },
+      {
+        "word": "سلك",
+        "hint": "Kabel"
+      },
+      {
+        "word": "مصباح",
+        "hint": "Żarówka"
+      },
+      {
+        "word": "بطارية",
+        "hint": "Bateria"
+      },
+      {
+        "word": "فولت",
+        "hint": "Wolt"
+      },
+      {
+        "word": "أمبير",
+        "hint": "Amper"
+      },
+      {
+        "word": "مولد",
+        "hint": "Generator"
+      },
+      {
+        "word": "محول",
+        "hint": "Transformator"
+      },
+      {
+        "word": "فيوز",
+        "hint": "Bezpiecznik"
+      },
+      {
+        "word": "تيار",
+        "hint": "Prąd"
+      },
+      {
+        "word": "مقاومة",
+        "hint": "Opornik"
+      },
+      {
+        "word": "دائرة",
+        "hint": "Obwód"
+      },
+      {
+        "word": "شحن",
+        "hint": "Ładowanie"
+      }
+    ]
+  },
+  {
+    "key": "plumbing_wb",
+    "name": "Hydraulika",
+    "description": "Terminy hydrauliczne po arabsku",
+    "iconName": "wrench",
+    "color": "#0369a1",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "سباكة",
+        "hint": "Hydraulika"
+      },
+      {
+        "word": "أنبوب",
+        "hint": "Rura"
+      },
+      {
+        "word": "صنبور",
+        "hint": "Kran"
+      },
+      {
+        "word": "مضخة",
+        "hint": "Pompa"
+      },
+      {
+        "word": "صرف",
+        "hint": "Odpływ"
+      },
+      {
+        "word": "تسرب",
+        "hint": "Wyciek"
+      },
+      {
+        "word": "خزان",
+        "hint": "Zbiornik"
+      },
+      {
+        "word": "سخان",
+        "hint": "Bojler"
+      },
+      {
+        "word": "فلتر",
+        "hint": "Filtr"
+      },
+      {
+        "word": "ضغط",
+        "hint": "Ciśnienie"
+      },
+      {
+        "word": "صمام",
+        "hint": "Zawór"
+      },
+      {
+        "word": "مفتاح ربط",
+        "hint": "Klucz"
+      },
+      {
+        "word": "حشية",
+        "hint": "Uszczelka"
+      },
+      {
+        "word": "مجاري",
+        "hint": "Kanalizacja"
+      },
+      {
+        "word": "تركيب",
+        "hint": "Instalacja"
+      }
+    ]
+  },
+  {
+    "key": "gardening_tools_wb",
+    "name": "Narzędzia ogrodnicze",
+    "description": "Narzędzia ogrodnicze po arabsku",
+    "iconName": "leaf.circle",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "مجرفة",
+        "hint": "Łopatka"
+      },
+      {
+        "word": "مشط",
+        "hint": "Grabie"
+      },
+      {
+        "word": "مقص تقليم",
+        "hint": "Sekator"
+      },
+      {
+        "word": "عربة",
+        "hint": "Taczka"
+      },
+      {
+        "word": "رشاش",
+        "hint": "Konewka"
+      },
+      {
+        "word": "قفازات",
+        "hint": "Rękawice"
+      },
+      {
+        "word": "معزقة",
+        "hint": "Motyka"
+      },
+      {
+        "word": "خرطوم",
+        "hint": "Wąż ogrodowy"
+      },
+      {
+        "word": "سور",
+        "hint": "Ogrodzenie"
+      },
+      {
+        "word": "أصيص",
+        "hint": "Doniczka"
+      },
+      {
+        "word": "سماد",
+        "hint": "Kompost"
+      },
+      {
+        "word": "جزاز",
+        "hint": "Kosiarka"
+      },
+      {
+        "word": "منشار",
+        "hint": "Piła ogrodowa"
+      },
+      {
+        "word": "دلو",
+        "hint": "Wiadro"
+      },
+      {
+        "word": "مبيد",
+        "hint": "Środek owadobójczy"
+      }
+    ]
+  },
+  {
+    "key": "medicine_wb",
+    "name": "Medycyna",
+    "description": "Terminy medyczne po arabsku",
+    "iconName": "stethoscope",
+    "color": "#dc2626",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "طبيب",
+        "hint": "Lekarz"
+      },
+      {
+        "word": "مستشفى",
+        "hint": "Szpital"
+      },
+      {
+        "word": "عملية",
+        "hint": "Operacja"
+      },
+      {
+        "word": "تشخيص",
+        "hint": "Diagnoza"
+      },
+      {
+        "word": "أشعة",
+        "hint": "Prześwietlenie"
+      },
+      {
+        "word": "حقنة",
+        "hint": "Zastrzyk"
+      },
+      {
+        "word": "ضمادة",
+        "hint": "Bandaż"
+      },
+      {
+        "word": "حمى",
+        "hint": "Gorączka"
+      },
+      {
+        "word": "عدوى",
+        "hint": "Infekcja"
+      },
+      {
+        "word": "علاج",
+        "hint": "Leczenie"
+      },
+      {
+        "word": "ممرضة",
+        "hint": "Pielęgniarka"
+      },
+      {
+        "word": "وصفة",
+        "hint": "Recepta"
+      },
+      {
+        "word": "فحص",
+        "hint": "Badanie"
+      },
+      {
+        "word": "تخدير",
+        "hint": "Znieczulenie"
+      },
+      {
+        "word": "شفاء",
+        "hint": "Wyzdrowienie"
+      }
+    ]
+  },
+  {
+    "key": "pharmacy_wb",
+    "name": "Apteka",
+    "description": "Słownictwo farmaceutyczne po arabsku",
+    "iconName": "cross.case",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "صيدلية",
+        "hint": "Apteka"
+      },
+      {
+        "word": "دواء",
+        "hint": "Lekarstwo"
+      },
+      {
+        "word": "حبوب",
+        "hint": "Tabletki"
+      },
+      {
+        "word": "شراب",
+        "hint": "Syrop"
+      },
+      {
+        "word": "مرهم",
+        "hint": "Maść"
+      },
+      {
+        "word": "فيتامين",
+        "hint": "Witamina"
+      },
+      {
+        "word": "مضاد حيوي",
+        "hint": "Antybiotyk"
+      },
+      {
+        "word": "مسكن",
+        "hint": "Środek przeciwbólowy"
+      },
+      {
+        "word": "قطرة",
+        "hint": "Krople"
+      },
+      {
+        "word": "حساسية",
+        "hint": "Alergia"
+      },
+      {
+        "word": "جرعة",
+        "hint": "Dawka"
+      },
+      {
+        "word": "صيدلاني",
+        "hint": "Farmaceuta"
+      },
+      {
+        "word": "لقاح",
+        "hint": "Szczepionka"
+      },
+      {
+        "word": "أعراض",
+        "hint": "Objawy"
+      },
+      {
+        "word": "تأثير جانبي",
+        "hint": "Efekt uboczny"
+      }
+    ]
+  },
+  {
+    "key": "fitness_wb",
+    "name": "Fitness",
+    "description": "Słownictwo fitness po arabsku",
+    "iconName": "figure.run",
+    "color": "#f97316",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "تمرين",
+        "hint": "Ćwiczenie"
+      },
+      {
+        "word": "عضلات",
+        "hint": "Mięśnie"
+      },
+      {
+        "word": "إحماء",
+        "hint": "Rozgrzewka"
+      },
+      {
+        "word": "تمدد",
+        "hint": "Rozciąganie"
+      },
+      {
+        "word": "أوزان",
+        "hint": "Ciężary"
+      },
+      {
+        "word": "جري",
+        "hint": "Bieganie"
+      },
+      {
+        "word": "سباحة",
+        "hint": "Pływanie"
+      },
+      {
+        "word": "دراجة",
+        "hint": "Rower"
+      },
+      {
+        "word": "تحمل",
+        "hint": "Wytrzymałość"
+      },
+      {
+        "word": "نبض",
+        "hint": "Puls"
+      },
+      {
+        "word": "سعرات",
+        "hint": "Kalorie"
+      },
+      {
+        "word": "تدريب",
+        "hint": "Trening"
+      },
+      {
+        "word": "مدرب",
+        "hint": "Trener"
+      },
+      {
+        "word": "صالة",
+        "hint": "Siłownia"
+      },
+      {
+        "word": "مرونة",
+        "hint": "Elastyczność"
+      }
+    ]
+  },
+  {
+    "key": "yoga_wb",
+    "name": "Joga",
+    "description": "Słownictwo jogi po arabsku",
+    "iconName": "figure.yoga",
+    "color": "#a855f7",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "يوغا",
+        "hint": "Joga"
+      },
+      {
+        "word": "تأمل",
+        "hint": "Medytacja"
+      },
+      {
+        "word": "تنفس",
+        "hint": "Oddychanie"
+      },
+      {
+        "word": "وضعية",
+        "hint": "Pozycja"
+      },
+      {
+        "word": "توازن",
+        "hint": "Równowaga"
+      },
+      {
+        "word": "مرونة",
+        "hint": "Elastyczność"
+      },
+      {
+        "word": "استرخاء",
+        "hint": "Relaksacja"
+      },
+      {
+        "word": "حصيرة",
+        "hint": "Mata"
+      },
+      {
+        "word": "هدوء",
+        "hint": "Spokój"
+      },
+      {
+        "word": "طاقة",
+        "hint": "Energia"
+      },
+      {
+        "word": "تركيز",
+        "hint": "Koncentracja"
+      },
+      {
+        "word": "جلسة",
+        "hint": "Sesja"
+      },
+      {
+        "word": "وعي",
+        "hint": "Świadomość"
+      },
+      {
+        "word": "جسم",
+        "hint": "Ciało"
+      },
+      {
+        "word": "روح",
+        "hint": "Duch"
+      }
+    ]
+  },
+  {
+    "key": "mental_health_wb",
+    "name": "Zdrowie psychiczne",
+    "description": "Zdrowie psychiczne po arabsku",
+    "iconName": "brain",
+    "color": "#6366f1",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "نفسي",
+        "hint": "Psychiczny"
+      },
+      {
+        "word": "اكتئاب",
+        "hint": "Depresja"
+      },
+      {
+        "word": "توتر",
+        "hint": "Stres"
+      },
+      {
+        "word": "علاج نفسي",
+        "hint": "Psychoterapia"
+      },
+      {
+        "word": "وسواس",
+        "hint": "Obsesja"
+      },
+      {
+        "word": "رهاب",
+        "hint": "Fobia"
+      },
+      {
+        "word": "ذاكرة",
+        "hint": "Pamięć"
+      },
+      {
+        "word": "ثقة بالنفس",
+        "hint": "Pewność siebie"
+      },
+      {
+        "word": "عاطفة",
+        "hint": "Emocja"
+      },
+      {
+        "word": "سلوك",
+        "hint": "Zachowanie"
+      },
+      {
+        "word": "شخصية",
+        "hint": "Osobowość"
+      },
+      {
+        "word": "إدمان",
+        "hint": "Uzależnienie"
+      },
+      {
+        "word": "دعم",
+        "hint": "Wsparcie"
+      },
+      {
+        "word": "تعافي",
+        "hint": "Rehabilitacja"
+      },
+      {
+        "word": "معالج",
+        "hint": "Terapeuta"
+      }
+    ]
+  },
+  {
+    "key": "vehicles_wb",
+    "name": "Pojazdy",
+    "description": "Rodzaje pojazdów po arabsku",
+    "iconName": "car",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "سيارة",
+        "hint": "Samochód"
+      },
+      {
+        "word": "شاحنة",
+        "hint": "Ciężarówka"
+      },
+      {
+        "word": "حافلة",
+        "hint": "Autobus"
+      },
+      {
+        "word": "دراجة نارية",
+        "hint": "Motocykl"
+      },
+      {
+        "word": "سكوتر",
+        "hint": "Skuter"
+      },
+      {
+        "word": "سيارة إسعاف",
+        "hint": "Karetka"
+      },
+      {
+        "word": "سيارة إطفاء",
+        "hint": "Wóz strażacki"
+      },
+      {
+        "word": "تاكسي",
+        "hint": "Taksówka"
+      },
+      {
+        "word": "جرار",
+        "hint": "Traktor"
+      },
+      {
+        "word": "شاحنة صغيرة",
+        "hint": "Van"
+      },
+      {
+        "word": "ليموزين",
+        "hint": "Limuzyna"
+      },
+      {
+        "word": "عجلة",
+        "hint": "Koło"
+      },
+      {
+        "word": "محرك",
+        "hint": "Silnik"
+      },
+      {
+        "word": "وقود",
+        "hint": "Paliwo"
+      },
+      {
+        "word": "مكابح",
+        "hint": "Hamulce"
+      }
+    ]
+  },
+  {
+    "key": "aviation_wb",
+    "name": "Lotnictwo",
+    "description": "Terminy lotnicze po arabsku",
+    "iconName": "airplane",
+    "color": "#0ea5e9",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "طائرة",
+        "hint": "Samolot"
+      },
+      {
+        "word": "مطار",
+        "hint": "Lotnisko"
+      },
+      {
+        "word": "طيار",
+        "hint": "Pilot"
+      },
+      {
+        "word": "إقلاع",
+        "hint": "Start"
+      },
+      {
+        "word": "هبوط",
+        "hint": "Lądowanie"
+      },
+      {
+        "word": "جناح",
+        "hint": "Skrzydło"
+      },
+      {
+        "word": "مدرج",
+        "hint": "Pas startowy"
+      },
+      {
+        "word": "ركاب",
+        "hint": "Pasażerowie"
+      },
+      {
+        "word": "مقعد",
+        "hint": "Fotel"
+      },
+      {
+        "word": "أمتعة",
+        "hint": "Bagaż"
+      },
+      {
+        "word": "جواز سفر",
+        "hint": "Paszport"
+      },
+      {
+        "word": "رحلة",
+        "hint": "Lot"
+      },
+      {
+        "word": "حزام أمان",
+        "hint": "Pas bezpieczeństwa"
+      },
+      {
+        "word": "مضيفة",
+        "hint": "Stewardessa"
+      },
+      {
+        "word": "ارتفاع",
+        "hint": "Wysokość"
+      }
+    ]
+  },
+  {
+    "key": "shipping_wb",
+    "name": "Żegluga",
+    "description": "Terminy żeglarskie po arabsku",
+    "iconName": "ferry",
+    "color": "#0284c7",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "سفينة",
+        "hint": "Statek"
+      },
+      {
+        "word": "ميناء",
+        "hint": "Port"
+      },
+      {
+        "word": "بحار",
+        "hint": "Marynarz"
+      },
+      {
+        "word": "قبطان",
+        "hint": "Kapitan"
+      },
+      {
+        "word": "شراع",
+        "hint": "Żagiel"
+      },
+      {
+        "word": "مرساة",
+        "hint": "Kotwica"
+      },
+      {
+        "word": "رصيف",
+        "hint": "Nabrzeże"
+      },
+      {
+        "word": "حاوية",
+        "hint": "Kontener"
+      },
+      {
+        "word": "بضائع",
+        "hint": "Ładunek"
+      },
+      {
+        "word": "زورق",
+        "hint": "Łódź"
+      },
+      {
+        "word": "عبارة",
+        "hint": "Prom"
+      },
+      {
+        "word": "غواصة",
+        "hint": "Łódź podwodna"
+      },
+      {
+        "word": "يخت",
+        "hint": "Jacht"
+      },
+      {
+        "word": "مجداف",
+        "hint": "Wiosło"
+      },
+      {
+        "word": "منارة",
+        "hint": "Latarnia morska"
+      }
+    ]
+  },
+  {
+    "key": "cycling_wb",
+    "name": "Kolarstwo",
+    "description": "Słownictwo rowerowe po arabsku",
+    "iconName": "bicycle",
+    "color": "#65a30d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "دراجة",
+        "hint": "Rower"
+      },
+      {
+        "word": "سلسلة",
+        "hint": "Łańcuch"
+      },
+      {
+        "word": "دواسة",
+        "hint": "Pedał"
+      },
+      {
+        "word": "خوذة",
+        "hint": "Kask"
+      },
+      {
+        "word": "إطار",
+        "hint": "Opona"
+      },
+      {
+        "word": "مقود",
+        "hint": "Kierownica"
+      },
+      {
+        "word": "فرامل",
+        "hint": "Hamulce"
+      },
+      {
+        "word": "جرس",
+        "hint": "Dzwonek"
+      },
+      {
+        "word": "مسار",
+        "hint": "Ścieżka"
+      },
+      {
+        "word": "سرعة",
+        "hint": "Prędkość"
+      },
+      {
+        "word": "سباق",
+        "hint": "Wyścig"
+      },
+      {
+        "word": "مضخة",
+        "hint": "Pompka"
+      },
+      {
+        "word": "سرج",
+        "hint": "Siodełko"
+      },
+      {
+        "word": "ضوء",
+        "hint": "Światło"
+      },
+      {
+        "word": "قفل",
+        "hint": "Zamek"
+      }
+    ]
+  },
+  {
+    "key": "trains_wb",
+    "name": "Pociągi",
+    "description": "Słownictwo kolejowe po arabsku",
+    "iconName": "tram",
+    "color": "#dc2626",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "قطار",
+        "hint": "Pociąg"
+      },
+      {
+        "word": "محطة",
+        "hint": "Stacja"
+      },
+      {
+        "word": "سكة حديد",
+        "hint": "Kolej"
+      },
+      {
+        "word": "رصيف",
+        "hint": "Peron"
+      },
+      {
+        "word": "تذكرة",
+        "hint": "Bilet"
+      },
+      {
+        "word": "مقصورة",
+        "hint": "Przedział"
+      },
+      {
+        "word": "قاطرة",
+        "hint": "Lokomotywa"
+      },
+      {
+        "word": "عربة",
+        "hint": "Wagon"
+      },
+      {
+        "word": "جدول",
+        "hint": "Rozkład jazdy"
+      },
+      {
+        "word": "تأخير",
+        "hint": "Opóźnienie"
+      },
+      {
+        "word": "مترو",
+        "hint": "Metro"
+      },
+      {
+        "word": "ترام",
+        "hint": "Tramwaj"
+      },
+      {
+        "word": "نفق",
+        "hint": "Tunel"
+      },
+      {
+        "word": "معبر",
+        "hint": "Przejazd"
+      },
+      {
+        "word": "راكب",
+        "hint": "Pasażer"
+      }
+    ]
+  },
+  {
+    "key": "mathematics_wb",
+    "name": "Matematyka",
+    "description": "Terminy matematyczne po arabsku",
+    "iconName": "function",
+    "color": "#2563eb",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "جمع",
+        "hint": "Dodawanie"
+      },
+      {
+        "word": "طرح",
+        "hint": "Odejmowanie"
+      },
+      {
+        "word": "ضرب",
+        "hint": "Mnożenie"
+      },
+      {
+        "word": "قسمة",
+        "hint": "Dzielenie"
+      },
+      {
+        "word": "كسر",
+        "hint": "Ułamek"
+      },
+      {
+        "word": "نسبة",
+        "hint": "Procent"
+      },
+      {
+        "word": "معادلة",
+        "hint": "Równanie"
+      },
+      {
+        "word": "هندسة",
+        "hint": "Geometria"
+      },
+      {
+        "word": "مثلث",
+        "hint": "Trójkąt"
+      },
+      {
+        "word": "دائرة",
+        "hint": "Koło"
+      },
+      {
+        "word": "مربع",
+        "hint": "Kwadrat"
+      },
+      {
+        "word": "زاوية",
+        "hint": "Kąt"
+      },
+      {
+        "word": "متوسط",
+        "hint": "Średnia"
+      },
+      {
+        "word": "جذر",
+        "hint": "Pierwiastek"
+      },
+      {
+        "word": "أس",
+        "hint": "Potęga"
+      }
+    ]
+  },
+  {
+    "key": "physics_wb",
+    "name": "Fizyka",
+    "description": "Terminy fizyczne po arabsku",
+    "iconName": "atom",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "طاقة",
+        "hint": "Energia"
+      },
+      {
+        "word": "قوة",
+        "hint": "Siła"
+      },
+      {
+        "word": "سرعة",
+        "hint": "Prędkość"
+      },
+      {
+        "word": "كتلة",
+        "hint": "Masa"
+      },
+      {
+        "word": "جاذبية",
+        "hint": "Grawitacja"
+      },
+      {
+        "word": "ذرة",
+        "hint": "Atom"
+      },
+      {
+        "word": "إلكترون",
+        "hint": "Elektron"
+      },
+      {
+        "word": "موجة",
+        "hint": "Fala"
+      },
+      {
+        "word": "حرارة",
+        "hint": "Ciepło"
+      },
+      {
+        "word": "ضغط",
+        "hint": "Ciśnienie"
+      },
+      {
+        "word": "مغناطيس",
+        "hint": "Magnes"
+      },
+      {
+        "word": "تسارع",
+        "hint": "Przyspieszenie"
+      },
+      {
+        "word": "احتكاك",
+        "hint": "Tarcie"
+      },
+      {
+        "word": "كثافة",
+        "hint": "Gęstość"
+      },
+      {
+        "word": "تجربة",
+        "hint": "Eksperyment"
+      }
+    ]
+  },
+  {
+    "key": "chemistry_wb",
+    "name": "Chemia",
+    "description": "Terminy chemiczne po arabsku",
+    "iconName": "flask",
+    "color": "#0d9488",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "عنصر",
+        "hint": "Pierwiastek"
+      },
+      {
+        "word": "مركب",
+        "hint": "Związek chemiczny"
+      },
+      {
+        "word": "تفاعل",
+        "hint": "Reakcja"
+      },
+      {
+        "word": "محلول",
+        "hint": "Roztwór"
+      },
+      {
+        "word": "حمض",
+        "hint": "Kwas"
+      },
+      {
+        "word": "قاعدة",
+        "hint": "Zasada"
+      },
+      {
+        "word": "جزيء",
+        "hint": "Cząsteczka"
+      },
+      {
+        "word": "أكسجين",
+        "hint": "Tlen"
+      },
+      {
+        "word": "هيدروجين",
+        "hint": "Wodór"
+      },
+      {
+        "word": "كربون",
+        "hint": "Węgiel"
+      },
+      {
+        "word": "مختبر",
+        "hint": "Laboratorium"
+      },
+      {
+        "word": "أنبوب اختبار",
+        "hint": "Probówka"
+      },
+      {
+        "word": "تقطير",
+        "hint": "Destylacja"
+      },
+      {
+        "word": "ذوبان",
+        "hint": "Rozpuszczanie"
+      },
+      {
+        "word": "بلورة",
+        "hint": "Kryształ"
+      }
+    ]
+  },
+  {
+    "key": "biology_wb",
+    "name": "Biologia",
+    "description": "Terminy biologiczne po arabsku",
+    "iconName": "leaf.fill",
+    "color": "#16a34a",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "خلية",
+        "hint": "Komórka"
+      },
+      {
+        "word": "جين",
+        "hint": "Gen"
+      },
+      {
+        "word": "تطور",
+        "hint": "Ewolucja"
+      },
+      {
+        "word": "بكتيريا",
+        "hint": "Bakteria"
+      },
+      {
+        "word": "فيروس",
+        "hint": "Wirus"
+      },
+      {
+        "word": "نبات",
+        "hint": "Roślina"
+      },
+      {
+        "word": "حيوان",
+        "hint": "Zwierzę"
+      },
+      {
+        "word": "بيئة",
+        "hint": "Ekosystem"
+      },
+      {
+        "word": "وراثة",
+        "hint": "Dziedziczność"
+      },
+      {
+        "word": "تكاثر",
+        "hint": "Rozmnażanie"
+      },
+      {
+        "word": "تمثيل ضوئي",
+        "hint": "Fotosynteza"
+      },
+      {
+        "word": "نواة",
+        "hint": "Jądro komórkowe"
+      },
+      {
+        "word": "بروتين",
+        "hint": "Białko"
+      },
+      {
+        "word": "أعضاء",
+        "hint": "Organy"
+      },
+      {
+        "word": "مجهر",
+        "hint": "Mikroskop"
+      }
+    ]
+  },
+  {
+    "key": "science_wb",
+    "name": "Nauka",
+    "description": "Terminy naukowe po arabsku",
+    "iconName": "magnifyingglass",
+    "color": "#4f46e5",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "علم",
+        "hint": "Nauka"
+      },
+      {
+        "word": "بحث",
+        "hint": "Badanie"
+      },
+      {
+        "word": "نظرية",
+        "hint": "Teoria"
+      },
+      {
+        "word": "فرضية",
+        "hint": "Hipoteza"
+      },
+      {
+        "word": "تجربة",
+        "hint": "Doświadczenie"
+      },
+      {
+        "word": "اكتشاف",
+        "hint": "Odkrycie"
+      },
+      {
+        "word": "اختراع",
+        "hint": "Wynalazek"
+      },
+      {
+        "word": "عالم",
+        "hint": "Naukowiec"
+      },
+      {
+        "word": "بيانات",
+        "hint": "Dane"
+      },
+      {
+        "word": "تحليل",
+        "hint": "Analiza"
+      },
+      {
+        "word": "نتيجة",
+        "hint": "Wynik"
+      },
+      {
+        "word": "مقال",
+        "hint": "Artykuł"
+      },
+      {
+        "word": "دراسة",
+        "hint": "Studium"
+      },
+      {
+        "word": "مرصد",
+        "hint": "Obserwatorium"
+      },
+      {
+        "word": "تقنية",
+        "hint": "Technologia"
+      }
+    ]
+  },
+  {
+    "key": "festivals_wb",
+    "name": "Festiwale",
+    "description": "Slownictwo festiwalowe po arabsku",
+    "iconName": "star.fill",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "مهرجان",
+        "hint": "Festiwal"
+      },
+      {
+        "word": "كرنفال",
+        "hint": "Karnawał"
+      },
+      {
+        "word": "موكب",
+        "hint": "Parada"
+      },
+      {
+        "word": "حفلة",
+        "hint": "Impreza"
+      },
+      {
+        "word": "عرض",
+        "hint": "Pokaz"
+      },
+      {
+        "word": "مسرح",
+        "hint": "Teatr"
+      },
+      {
+        "word": "موسيقى",
+        "hint": "Muzyka"
+      },
+      {
+        "word": "رقص",
+        "hint": "Taniec"
+      },
+      {
+        "word": "زينة",
+        "hint": "Dekoracja"
+      },
+      {
+        "word": "ألعاب",
+        "hint": "Gry"
+      },
+      {
+        "word": "جمهور",
+        "hint": "Publiczność"
+      },
+      {
+        "word": "منصة",
+        "hint": "Scena"
+      },
+      {
+        "word": "فعالية",
+        "hint": "Wydarzenie"
+      },
+      {
+        "word": "تذكرة",
+        "hint": "Bilet"
+      },
+      {
+        "word": "احتفال",
+        "hint": "Uroczystość"
+      }
+    ]
+  },
+  {
+    "key": "traditions_wb",
+    "name": "Tradycje",
+    "description": "Slownictwo tradycji po arabsku",
+    "iconName": "book.fill",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "تقليد",
+        "hint": "Tradycja"
+      },
+      {
+        "word": "عادة",
+        "hint": "Zwyczaj"
+      },
+      {
+        "word": "تراث",
+        "hint": "Dziedzictwo"
+      },
+      {
+        "word": "ثقافة",
+        "hint": "Kultura"
+      },
+      {
+        "word": "فلكلور",
+        "hint": "Folklor"
+      },
+      {
+        "word": "أسطورة",
+        "hint": "Legenda"
+      },
+      {
+        "word": "حكاية",
+        "hint": "Opowieść"
+      },
+      {
+        "word": "طقوس",
+        "hint": "Rytuał"
+      },
+      {
+        "word": "أجداد",
+        "hint": "Przodkowie"
+      },
+      {
+        "word": "إرث",
+        "hint": "Spuścizna"
+      },
+      {
+        "word": "حرفة",
+        "hint": "Rzemiosło"
+      },
+      {
+        "word": "لباس",
+        "hint": "Strój"
+      },
+      {
+        "word": "مأكولات",
+        "hint": "Kuchnia"
+      },
+      {
+        "word": "أغنية",
+        "hint": "Pieśń"
+      },
+      {
+        "word": "رمز",
+        "hint": "Symbol"
+      }
+    ]
+  },
+  {
+    "key": "weddings_wb",
+    "name": "Wesela",
+    "description": "Slownictwo weselne po arabsku",
+    "iconName": "heart.fill",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "زفاف",
+        "hint": "Ślub"
+      },
+      {
+        "word": "عروس",
+        "hint": "Panna młoda"
+      },
+      {
+        "word": "عريس",
+        "hint": "Pan młody"
+      },
+      {
+        "word": "خاتم",
+        "hint": "Pierścionek"
+      },
+      {
+        "word": "دعوة",
+        "hint": "Zaproszenie"
+      },
+      {
+        "word": "مهر",
+        "hint": "Posag"
+      },
+      {
+        "word": "حفل",
+        "hint": "Przyjęcie"
+      },
+      {
+        "word": "كعكة",
+        "hint": "Tort"
+      },
+      {
+        "word": "باقة",
+        "hint": "Bukiet"
+      },
+      {
+        "word": "فستان",
+        "hint": "Suknia"
+      },
+      {
+        "word": "شاهد",
+        "hint": "Świadek"
+      },
+      {
+        "word": "وليمة",
+        "hint": "Uczta"
+      },
+      {
+        "word": "قاعة",
+        "hint": "Sala"
+      },
+      {
+        "word": "حناء",
+        "hint": "Henna"
+      },
+      {
+        "word": "عقد",
+        "hint": "Umowa"
+      }
+    ]
+  },
+  {
+    "key": "holidays_wb",
+    "name": "Święta",
+    "description": "Slownictwo swiateczne po arabsku",
+    "iconName": "gift.fill",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "عيد",
+        "hint": "Święto"
+      },
+      {
+        "word": "إجازة",
+        "hint": "Urlop"
+      },
+      {
+        "word": "هدية",
+        "hint": "Prezent"
+      },
+      {
+        "word": "عطلة",
+        "hint": "Wakacje"
+      },
+      {
+        "word": "رمضان",
+        "hint": "Ramadan"
+      },
+      {
+        "word": "إفطار",
+        "hint": "Iftar"
+      },
+      {
+        "word": "أضحى",
+        "hint": "Ofiara"
+      },
+      {
+        "word": "صيام",
+        "hint": "Post"
+      },
+      {
+        "word": "صلاة",
+        "hint": "Modlitwa"
+      },
+      {
+        "word": "زكاة",
+        "hint": "Jałmużna"
+      },
+      {
+        "word": "فرح",
+        "hint": "Radość"
+      },
+      {
+        "word": "عائلة",
+        "hint": "Rodzina"
+      },
+      {
+        "word": "طعام",
+        "hint": "Jedzenie"
+      },
+      {
+        "word": "ضيف",
+        "hint": "Gość"
+      },
+      {
+        "word": "سحور",
+        "hint": "Sahur"
+      }
+    ]
+  },
+  {
+    "key": "celebrations_wb",
+    "name": "Uroczystości",
+    "description": "Slownictwo uroczystosci po arabsku",
+    "iconName": "sparkles",
+    "color": "#f97316",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "احتفال",
+        "hint": "Celebracja"
+      },
+      {
+        "word": "ذكرى",
+        "hint": "Rocznica"
+      },
+      {
+        "word": "ميلاد",
+        "hint": "Urodziny"
+      },
+      {
+        "word": "تخرج",
+        "hint": "Ukończenie studiów"
+      },
+      {
+        "word": "نجاح",
+        "hint": "Sukces"
+      },
+      {
+        "word": "ترقية",
+        "hint": "Awans"
+      },
+      {
+        "word": "تهنئة",
+        "hint": "Gratulacje"
+      },
+      {
+        "word": "بالون",
+        "hint": "Balon"
+      },
+      {
+        "word": "شموع",
+        "hint": "Świece"
+      },
+      {
+        "word": "حلوى",
+        "hint": "Słodycze"
+      },
+      {
+        "word": "مفاجأة",
+        "hint": "Niespodzianka"
+      },
+      {
+        "word": "ضحك",
+        "hint": "Śmiech"
+      },
+      {
+        "word": "صديق",
+        "hint": "Przyjaciel"
+      },
+      {
+        "word": "ذهبي",
+        "hint": "Złoty"
+      },
+      {
+        "word": "خطاب",
+        "hint": "Przemówienie"
+      }
+    ]
+  },
+  {
+    "key": "fashion_wb",
+    "name": "Moda",
+    "description": "Słownictwo modowe po arabsku",
+    "iconName": "tshirt.fill",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "موضة",
+        "hint": "Moda"
+      },
+      {
+        "word": "تصميم",
+        "hint": "Projekt"
+      },
+      {
+        "word": "مصمم",
+        "hint": "Projektant"
+      },
+      {
+        "word": "عرض",
+        "hint": "Pokaz"
+      },
+      {
+        "word": "أناقة",
+        "hint": "Elegancja"
+      },
+      {
+        "word": "أسلوب",
+        "hint": "Styl"
+      },
+      {
+        "word": "خياطة",
+        "hint": "Szycie"
+      },
+      {
+        "word": "منصة",
+        "hint": "Wybieg"
+      },
+      {
+        "word": "مقاس",
+        "hint": "Rozmiar"
+      },
+      {
+        "word": "ملابس",
+        "hint": "Ubrania"
+      },
+      {
+        "word": "قميص",
+        "hint": "Koszula"
+      },
+      {
+        "word": "حذاء",
+        "hint": "Buty"
+      },
+      {
+        "word": "جيب",
+        "hint": "Kieszeń"
+      },
+      {
+        "word": "أزرار",
+        "hint": "Guziki"
+      },
+      {
+        "word": "معطف",
+        "hint": "Płaszcz"
+      }
+    ]
+  },
+  {
+    "key": "textiles_wb",
+    "name": "Tekstylia",
+    "description": "Słownictwo tekstylne po arabsku",
+    "iconName": "rectangle.grid.2x2.fill",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "قماش",
+        "hint": "Tkanina"
+      },
+      {
+        "word": "حرير",
+        "hint": "Jedwab"
+      },
+      {
+        "word": "قطن",
+        "hint": "Bawełna"
+      },
+      {
+        "word": "صوف",
+        "hint": "Wełna"
+      },
+      {
+        "word": "كتان",
+        "hint": "Len"
+      },
+      {
+        "word": "نسيج",
+        "hint": "Tkanie"
+      },
+      {
+        "word": "خيط",
+        "hint": "Nić"
+      },
+      {
+        "word": "إبرة",
+        "hint": "Igła"
+      },
+      {
+        "word": "نمط",
+        "hint": "Wzór"
+      },
+      {
+        "word": "صبغة",
+        "hint": "Barwnik"
+      },
+      {
+        "word": "تطريز",
+        "hint": "Haft"
+      },
+      {
+        "word": "جلد",
+        "hint": "Skóra"
+      },
+      {
+        "word": "ليف",
+        "hint": "Włókno"
+      },
+      {
+        "word": "مخمل",
+        "hint": "Aksamit"
+      },
+      {
+        "word": "دانتيل",
+        "hint": "Koronka"
+      }
+    ]
+  },
+  {
+    "key": "jewelry_wb",
+    "name": "Biżuteria",
+    "description": "Słownictwo jubilerskie po arabsku",
+    "iconName": "sparkle",
+    "color": "#d97706",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "مجوهرات",
+        "hint": "Biżuteria"
+      },
+      {
+        "word": "ذهب",
+        "hint": "Złoto"
+      },
+      {
+        "word": "فضة",
+        "hint": "Srebro"
+      },
+      {
+        "word": "ماس",
+        "hint": "Diament"
+      },
+      {
+        "word": "ياقوت",
+        "hint": "Rubin"
+      },
+      {
+        "word": "زمرد",
+        "hint": "Szmaragd"
+      },
+      {
+        "word": "لؤلؤ",
+        "hint": "Perła"
+      },
+      {
+        "word": "سوار",
+        "hint": "Bransoletka"
+      },
+      {
+        "word": "عقد",
+        "hint": "Naszyjnik"
+      },
+      {
+        "word": "قرط",
+        "hint": "Kolczyk"
+      },
+      {
+        "word": "بروش",
+        "hint": "Broszka"
+      },
+      {
+        "word": "خاتم",
+        "hint": "Pierścień"
+      },
+      {
+        "word": "تاج",
+        "hint": "Korona"
+      },
+      {
+        "word": "عقيق",
+        "hint": "Agat"
+      },
+      {
+        "word": "فيروز",
+        "hint": "Turkus"
+      }
+    ]
+  },
+  {
+    "key": "cosmetics_wb",
+    "name": "Kosmetyki",
+    "description": "Słownictwo kosmetyczne po arabsku",
+    "iconName": "paintbrush.fill",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "مكياج",
+        "hint": "Makijaż"
+      },
+      {
+        "word": "أحمر",
+        "hint": "Szminka"
+      },
+      {
+        "word": "ماسكارا",
+        "hint": "Maskara"
+      },
+      {
+        "word": "عطر",
+        "hint": "Perfumy"
+      },
+      {
+        "word": "كريم",
+        "hint": "Krem"
+      },
+      {
+        "word": "بشرة",
+        "hint": "Cera"
+      },
+      {
+        "word": "مرآة",
+        "hint": "Lustro"
+      },
+      {
+        "word": "فرشاة",
+        "hint": "Pędzel"
+      },
+      {
+        "word": "ظلال",
+        "hint": "Cień"
+      },
+      {
+        "word": "أظافر",
+        "hint": "Paznokcie"
+      },
+      {
+        "word": "بودرة",
+        "hint": "Puder"
+      },
+      {
+        "word": "بلسم",
+        "hint": "Balsam"
+      },
+      {
+        "word": "واقي",
+        "hint": "Filtr"
+      },
+      {
+        "word": "مقشر",
+        "hint": "Peeling"
+      },
+      {
+        "word": "مرطب",
+        "hint": "Nawilżacz"
+      }
+    ]
+  },
+  {
+    "key": "hairstyles_wb",
+    "name": "Fryzury",
+    "description": "Słownictwo fryzjerskie po arabsku",
+    "iconName": "scissors",
+    "color": "#a855f7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "شعر",
+        "hint": "Włosy"
+      },
+      {
+        "word": "تسريحة",
+        "hint": "Fryzura"
+      },
+      {
+        "word": "مقص",
+        "hint": "Nożyczki"
+      },
+      {
+        "word": "مجفف",
+        "hint": "Suszarka"
+      },
+      {
+        "word": "فرشاة",
+        "hint": "Szczotka"
+      },
+      {
+        "word": "مشط",
+        "hint": "Grzebień"
+      },
+      {
+        "word": "صبغة",
+        "hint": "Farba"
+      },
+      {
+        "word": "جل",
+        "hint": "Żel"
+      },
+      {
+        "word": "ضفيرة",
+        "hint": "Warkocz"
+      },
+      {
+        "word": "غرة",
+        "hint": "Grzywka"
+      },
+      {
+        "word": "لحية",
+        "hint": "Broda"
+      },
+      {
+        "word": "حلاق",
+        "hint": "Fryzjer"
+      },
+      {
+        "word": "تجعيد",
+        "hint": "Loki"
+      },
+      {
+        "word": "مثبت",
+        "hint": "Lakier"
+      },
+      {
+        "word": "بلسم",
+        "hint": "Odżywka"
+      }
+    ]
+  },
+  {
+    "key": "environment_wb",
+    "name": "Środowisko",
+    "description": "Słownictwo środowiskowe po arabsku",
+    "iconName": "leaf.fill",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "بيئة",
+        "hint": "Środowisko"
+      },
+      {
+        "word": "طبيعة",
+        "hint": "Natura"
+      },
+      {
+        "word": "تلوث",
+        "hint": "Zanieczyszczenie"
+      },
+      {
+        "word": "غابة",
+        "hint": "Las"
+      },
+      {
+        "word": "أكسجين",
+        "hint": "Tlen"
+      },
+      {
+        "word": "مياه",
+        "hint": "Wody"
+      },
+      {
+        "word": "هواء",
+        "hint": "Powietrze"
+      },
+      {
+        "word": "تربة",
+        "hint": "Gleba"
+      },
+      {
+        "word": "محمية",
+        "hint": "Rezerwat"
+      },
+      {
+        "word": "انقراض",
+        "hint": "Wyginięcie"
+      },
+      {
+        "word": "نظافة",
+        "hint": "Czystość"
+      },
+      {
+        "word": "حماية",
+        "hint": "Ochrona"
+      },
+      {
+        "word": "نفايات",
+        "hint": "Odpady"
+      },
+      {
+        "word": "أوزون",
+        "hint": "Ozon"
+      },
+      {
+        "word": "تصحر",
+        "hint": "Pustynnienie"
+      }
+    ]
+  },
+  {
+    "key": "recycling_wb",
+    "name": "Recykling",
+    "description": "Słownictwo recyklingowe po arabsku",
+    "iconName": "arrow.3.trianglepath",
+    "color": "#22c55e",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "إعادة",
+        "hint": "Recykling"
+      },
+      {
+        "word": "فرز",
+        "hint": "Sortowanie"
+      },
+      {
+        "word": "بلاستيك",
+        "hint": "Plastik"
+      },
+      {
+        "word": "ورق",
+        "hint": "Papier"
+      },
+      {
+        "word": "زجاج",
+        "hint": "Szkło"
+      },
+      {
+        "word": "معدن",
+        "hint": "Metal"
+      },
+      {
+        "word": "حاوية",
+        "hint": "Pojemnik"
+      },
+      {
+        "word": "قمامة",
+        "hint": "Śmietnik"
+      },
+      {
+        "word": "تدوير",
+        "hint": "Przetwórstwo"
+      },
+      {
+        "word": "مخلفات",
+        "hint": "Resztki"
+      },
+      {
+        "word": "عضوي",
+        "hint": "Organiczny"
+      },
+      {
+        "word": "سماد",
+        "hint": "Kompost"
+      },
+      {
+        "word": "تعبئة",
+        "hint": "Opakowanie"
+      },
+      {
+        "word": "تقليل",
+        "hint": "Redukcja"
+      },
+      {
+        "word": "مستدام",
+        "hint": "Zrównoważony"
+      }
+    ]
+  },
+  {
+    "key": "energy_wb",
+    "name": "Energia",
+    "description": "Słownictwo energetyczne po arabsku",
+    "iconName": "bolt.fill",
+    "color": "#eab308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "طاقة",
+        "hint": "Energia"
+      },
+      {
+        "word": "كهرباء",
+        "hint": "Elektryczność"
+      },
+      {
+        "word": "شمسية",
+        "hint": "Słoneczna"
+      },
+      {
+        "word": "رياح",
+        "hint": "Wiatrowa"
+      },
+      {
+        "word": "نووية",
+        "hint": "Jądrowa"
+      },
+      {
+        "word": "نفط",
+        "hint": "Ropa"
+      },
+      {
+        "word": "غاز",
+        "hint": "Gaz"
+      },
+      {
+        "word": "فحم",
+        "hint": "Węgiel"
+      },
+      {
+        "word": "بطارية",
+        "hint": "Bateria"
+      },
+      {
+        "word": "مولد",
+        "hint": "Generator"
+      },
+      {
+        "word": "محطة",
+        "hint": "Elektrownia"
+      },
+      {
+        "word": "وقود",
+        "hint": "Paliwo"
+      },
+      {
+        "word": "تيار",
+        "hint": "Prąd"
+      },
+      {
+        "word": "تخزين",
+        "hint": "Magazynowanie"
+      },
+      {
+        "word": "استهلاك",
+        "hint": "Zużycie"
+      }
+    ]
+  },
+  {
+    "key": "climate_wb",
+    "name": "Klimat",
+    "description": "Słownictwo klimatyczne po arabsku",
+    "iconName": "thermometer.sun.fill",
+    "color": "#0ea5e9",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "مناخ",
+        "hint": "Klimat"
+      },
+      {
+        "word": "احترار",
+        "hint": "Ocieplenie"
+      },
+      {
+        "word": "جفاف",
+        "hint": "Susza"
+      },
+      {
+        "word": "فيضان",
+        "hint": "Powódź"
+      },
+      {
+        "word": "عاصفة",
+        "hint": "Burza"
+      },
+      {
+        "word": "جليد",
+        "hint": "Lód"
+      },
+      {
+        "word": "انبعاث",
+        "hint": "Emisja"
+      },
+      {
+        "word": "كربون",
+        "hint": "Węgiel"
+      },
+      {
+        "word": "دفيئة",
+        "hint": "Cieplarniany"
+      },
+      {
+        "word": "قطب",
+        "hint": "Biegun"
+      },
+      {
+        "word": "حرارة",
+        "hint": "Temperatura"
+      },
+      {
+        "word": "رطوبة",
+        "hint": "Wilgotność"
+      },
+      {
+        "word": "موسم",
+        "hint": "Pora roku"
+      },
+      {
+        "word": "أعاصير",
+        "hint": "Huragany"
+      },
+      {
+        "word": "ذوبان",
+        "hint": "Topnienie"
+      }
+    ]
+  },
+  {
+    "key": "sustainability_wb",
+    "name": "Zrównoważony rozwój",
+    "description": "Słownictwo zrównoważonego rozwoju po arabsku",
+    "iconName": "globe.americas.fill",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "استدامة",
+        "hint": "Zrównoważoność"
+      },
+      {
+        "word": "تنمية",
+        "hint": "Rozwój"
+      },
+      {
+        "word": "متجدد",
+        "hint": "Odnawialny"
+      },
+      {
+        "word": "عضوي",
+        "hint": "Ekologiczny"
+      },
+      {
+        "word": "توازن",
+        "hint": "Równowaga"
+      },
+      {
+        "word": "حفظ",
+        "hint": "Zachowanie"
+      },
+      {
+        "word": "موارد",
+        "hint": "Zasoby"
+      },
+      {
+        "word": "كفاءة",
+        "hint": "Wydajność"
+      },
+      {
+        "word": "أخلاق",
+        "hint": "Etyka"
+      },
+      {
+        "word": "ابتكار",
+        "hint": "Innowacja"
+      },
+      {
+        "word": "مجتمع",
+        "hint": "Społeczeństwo"
+      },
+      {
+        "word": "زراعة",
+        "hint": "Rolnictwo"
+      },
+      {
+        "word": "تخطيط",
+        "hint": "Planowanie"
+      },
+      {
+        "word": "وعي",
+        "hint": "Świadomość"
+      },
+      {
+        "word": "تعاون",
+        "hint": "Współpraca"
+      }
+    ]
   }
 ]

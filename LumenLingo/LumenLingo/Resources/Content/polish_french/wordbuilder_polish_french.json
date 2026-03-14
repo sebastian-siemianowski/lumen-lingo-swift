@@ -2098,5 +2098,4710 @@
         "hint": "Marmur"
       }
     ]
+  },
+  {
+    "key": "daily_routine_wb",
+    "name": "Codzienna rutyna",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "réveil",
+        "hint": "Budzik"
+      },
+      {
+        "word": "douche",
+        "hint": "Prysznic"
+      },
+      {
+        "word": "petit",
+        "hint": "Mały (śniadanie = petit déjeuner)"
+      },
+      {
+        "word": "brosser",
+        "hint": "Szczotkować"
+      },
+      {
+        "word": "habiller",
+        "hint": "Ubierać się"
+      },
+      {
+        "word": "travail",
+        "hint": "Praca"
+      },
+      {
+        "word": "dormir",
+        "hint": "Spać"
+      },
+      {
+        "word": "manger",
+        "hint": "Jeść"
+      },
+      {
+        "word": "rentrer",
+        "hint": "Wracać do domu"
+      },
+      {
+        "word": "lever",
+        "hint": "Wstawać"
+      },
+      {
+        "word": "coucher",
+        "hint": "Kłaść się spać"
+      },
+      {
+        "word": "repas",
+        "hint": "Posiłek"
+      },
+      {
+        "word": "pause",
+        "hint": "Przerwa"
+      },
+      {
+        "word": "marcher",
+        "hint": "Chodzić / spacerować"
+      },
+      {
+        "word": "routine",
+        "hint": "Rutyna"
+      }
+    ]
+  },
+  {
+    "key": "shopping_wb",
+    "name": "Zakupy",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "magasin",
+        "hint": "Sklep"
+      },
+      {
+        "word": "acheter",
+        "hint": "Kupować"
+      },
+      {
+        "word": "vendre",
+        "hint": "Sprzedawać"
+      },
+      {
+        "word": "caisse",
+        "hint": "Kasa (w sklepie)"
+      },
+      {
+        "word": "panier",
+        "hint": "Koszyk"
+      },
+      {
+        "word": "soldes",
+        "hint": "Wyprzedaż"
+      },
+      {
+        "word": "rabais",
+        "hint": "Zniżka"
+      },
+      {
+        "word": "facture",
+        "hint": "Faktura / rachunek"
+      },
+      {
+        "word": "monnaie",
+        "hint": "Drobne / reszta"
+      },
+      {
+        "word": "client",
+        "hint": "Klient"
+      },
+      {
+        "word": "marque",
+        "hint": "Marka"
+      },
+      {
+        "word": "taille",
+        "hint": "Rozmiar"
+      },
+      {
+        "word": "essayer",
+        "hint": "Przymierzać"
+      },
+      {
+        "word": "chariot",
+        "hint": "Wózek sklepowy"
+      },
+      {
+        "word": "ticket",
+        "hint": "Paragon"
+      }
+    ]
+  },
+  {
+    "key": "restaurant_wb",
+    "name": "Restauracja",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "serveur",
+        "hint": "Kelner"
+      },
+      {
+        "word": "carte",
+        "hint": "Menu / karta dań"
+      },
+      {
+        "word": "plat",
+        "hint": "Danie"
+      },
+      {
+        "word": "dessert",
+        "hint": "Deser"
+      },
+      {
+        "word": "boisson",
+        "hint": "Napój"
+      },
+      {
+        "word": "addition",
+        "hint": "Rachunek (w restauracji)"
+      },
+      {
+        "word": "cuisine",
+        "hint": "Kuchnia"
+      },
+      {
+        "word": "table",
+        "hint": "Stół / stolik"
+      },
+      {
+        "word": "entree",
+        "hint": "Przystawka"
+      },
+      {
+        "word": "pourboire",
+        "hint": "Napiwek"
+      },
+      {
+        "word": "terrasse",
+        "hint": "Taras (restauracji)"
+      },
+      {
+        "word": "commande",
+        "hint": "Zamówienie"
+      },
+      {
+        "word": "recette",
+        "hint": "Przepis kulinarny"
+      },
+      {
+        "word": "assiette",
+        "hint": "Talerz"
+      },
+      {
+        "word": "couvert",
+        "hint": "Nakrycie / sztućce"
+      }
+    ]
+  },
+  {
+    "key": "garden_wb",
+    "name": "Ogród",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "jardin",
+        "hint": "Ogród"
+      },
+      {
+        "word": "fleur",
+        "hint": "Kwiat"
+      },
+      {
+        "word": "arbre",
+        "hint": "Drzewo"
+      },
+      {
+        "word": "herbe",
+        "hint": "Trawa"
+      },
+      {
+        "word": "planter",
+        "hint": "Sadzić"
+      },
+      {
+        "word": "arroser",
+        "hint": "Podlewać"
+      },
+      {
+        "word": "graine",
+        "hint": "Nasiono / ziarno"
+      },
+      {
+        "word": "terre",
+        "hint": "Ziemia"
+      },
+      {
+        "word": "haie",
+        "hint": "Żywopłot"
+      },
+      {
+        "word": "pelouse",
+        "hint": "Trawnik"
+      },
+      {
+        "word": "potager",
+        "hint": "Ogródek warzywny"
+      },
+      {
+        "word": "rosier",
+        "hint": "Krzak różany"
+      },
+      {
+        "word": "tondeuse",
+        "hint": "Kosiarka"
+      },
+      {
+        "word": "compost",
+        "hint": "Kompost"
+      },
+      {
+        "word": "semis",
+        "hint": "Siew / wysiew"
+      }
+    ]
+  },
+  {
+    "key": "bathroom_wb",
+    "name": "Łazienka",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "miroir",
+        "hint": "Lustro"
+      },
+      {
+        "word": "savon",
+        "hint": "Mydło"
+      },
+      {
+        "word": "brosse",
+        "hint": "Szczotka"
+      },
+      {
+        "word": "baignoire",
+        "hint": "Wanna"
+      },
+      {
+        "word": "lavabo",
+        "hint": "Umywalka"
+      },
+      {
+        "word": "robinet",
+        "hint": "Kran"
+      },
+      {
+        "word": "serviette",
+        "hint": "Ręcznik"
+      },
+      {
+        "word": "shampooing",
+        "hint": "Szampon"
+      },
+      {
+        "word": "dentifrice",
+        "hint": "Pasta do zębów"
+      },
+      {
+        "word": "peigne",
+        "hint": "Grzebień"
+      },
+      {
+        "word": "rasoir",
+        "hint": "Maszynka do golenia"
+      },
+      {
+        "word": "carrelage",
+        "hint": "Kafelki / płytki"
+      },
+      {
+        "word": "douche",
+        "hint": "Prysznic (kabina)"
+      },
+      {
+        "word": "mousse",
+        "hint": "Pianka (do golenia)"
+      },
+      {
+        "word": "toilettes",
+        "hint": "Toaleta"
+      }
+    ]
+  },
+  {
+    "key": "cinema_wb",
+    "name": "Kino",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "acteur",
+        "hint": "Aktor"
+      },
+      {
+        "word": "actrice",
+        "hint": "Aktorka"
+      },
+      {
+        "word": "film",
+        "hint": "Film"
+      },
+      {
+        "word": "scénario",
+        "hint": "Scenariusz"
+      },
+      {
+        "word": "écran",
+        "hint": "Ekran"
+      },
+      {
+        "word": "séance",
+        "hint": "Seans filmowy"
+      },
+      {
+        "word": "billet",
+        "hint": "Bilet"
+      },
+      {
+        "word": "tournage",
+        "hint": "Kręcenie filmu"
+      },
+      {
+        "word": "doublage",
+        "hint": "Dubbing"
+      },
+      {
+        "word": "critique",
+        "hint": "Krytyk / recenzja"
+      },
+      {
+        "word": "affiche",
+        "hint": "Plakat filmowy"
+      },
+      {
+        "word": "vedette",
+        "hint": "Gwiazda filmowa"
+      },
+      {
+        "word": "suspense",
+        "hint": "Napięcie / suspens"
+      },
+      {
+        "word": "drame",
+        "hint": "Dramat"
+      },
+      {
+        "word": "comédie",
+        "hint": "Komedia"
+      }
+    ]
+  },
+  {
+    "key": "art_wb",
+    "name": "Sztuka",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "peinture",
+        "hint": "Malarstwo / obraz"
+      },
+      {
+        "word": "sculpture",
+        "hint": "Rzeźba"
+      },
+      {
+        "word": "dessin",
+        "hint": "Rysunek"
+      },
+      {
+        "word": "toile",
+        "hint": "Płótno"
+      },
+      {
+        "word": "pinceau",
+        "hint": "Pędzel"
+      },
+      {
+        "word": "palette",
+        "hint": "Paleta malarska"
+      },
+      {
+        "word": "galerie",
+        "hint": "Galeria"
+      },
+      {
+        "word": "artiste",
+        "hint": "Artysta"
+      },
+      {
+        "word": "atelier",
+        "hint": "Pracownia artystyczna"
+      },
+      {
+        "word": "cadre",
+        "hint": "Rama (obrazu)"
+      },
+      {
+        "word": "portrait",
+        "hint": "Portret"
+      },
+      {
+        "word": "crayon",
+        "hint": "Ołówek / kredka"
+      },
+      {
+        "word": "aquarelle",
+        "hint": "Akwarela"
+      },
+      {
+        "word": "gravure",
+        "hint": "Grafika / rycina"
+      },
+      {
+        "word": "mosaïque",
+        "hint": "Mozaika"
+      }
+    ]
+  },
+  {
+    "key": "dance_wb",
+    "name": "Taniec",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "danse",
+        "hint": "Taniec"
+      },
+      {
+        "word": "danseur",
+        "hint": "Tancerz"
+      },
+      {
+        "word": "danseuse",
+        "hint": "Tancerka"
+      },
+      {
+        "word": "ballet",
+        "hint": "Balet"
+      },
+      {
+        "word": "valse",
+        "hint": "Walc"
+      },
+      {
+        "word": "tango",
+        "hint": "Tango"
+      },
+      {
+        "word": "rythme",
+        "hint": "Rytm"
+      },
+      {
+        "word": "mouvement",
+        "hint": "Ruch"
+      },
+      {
+        "word": "chorégraphie",
+        "hint": "Choreografia"
+      },
+      {
+        "word": "scène",
+        "hint": "Scena"
+      },
+      {
+        "word": "spectacle",
+        "hint": "Spektakl / przedstawienie"
+      },
+      {
+        "word": "costume",
+        "hint": "Kostium"
+      },
+      {
+        "word": "orchestre",
+        "hint": "Orkiestra"
+      },
+      {
+        "word": "souplesse",
+        "hint": "Elastyczność / giętkość"
+      },
+      {
+        "word": "partenaire",
+        "hint": "Partner (do tańca)"
+      }
+    ]
+  },
+  {
+    "key": "photography_wb",
+    "name": "Fotografia",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "appareil",
+        "hint": "Aparat (fotograficzny)"
+      },
+      {
+        "word": "objectif",
+        "hint": "Obiektyw"
+      },
+      {
+        "word": "cliché",
+        "hint": "Zdjęcie / klisza"
+      },
+      {
+        "word": "flash",
+        "hint": "Flesz / lampa błyskowa"
+      },
+      {
+        "word": "cadrage",
+        "hint": "Kadrowanie"
+      },
+      {
+        "word": "netteté",
+        "hint": "Ostrość (zdjęcia)"
+      },
+      {
+        "word": "portrait",
+        "hint": "Portret fotograficzny"
+      },
+      {
+        "word": "paysage",
+        "hint": "Krajobraz (zdjęcie)"
+      },
+      {
+        "word": "retouche",
+        "hint": "Retusz"
+      },
+      {
+        "word": "tirage",
+        "hint": "Odbitka / wydruk"
+      },
+      {
+        "word": "focale",
+        "hint": "Ogniskowa"
+      },
+      {
+        "word": "filtre",
+        "hint": "Filtr"
+      },
+      {
+        "word": "négatif",
+        "hint": "Negatyw"
+      },
+      {
+        "word": "pose",
+        "hint": "Pozowanie / ujęcie"
+      },
+      {
+        "word": "trépied",
+        "hint": "Statyw"
+      }
+    ]
+  },
+  {
+    "key": "crafts_wb",
+    "name": "Rękodzieło",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "couture",
+        "hint": "Szycie / krawiectwo"
+      },
+      {
+        "word": "tricot",
+        "hint": "Dzierganie / robótki na drutach"
+      },
+      {
+        "word": "broderie",
+        "hint": "Haft"
+      },
+      {
+        "word": "crochet",
+        "hint": "Szydełkowanie"
+      },
+      {
+        "word": "poterie",
+        "hint": "Garncarstwo"
+      },
+      {
+        "word": "tissage",
+        "hint": "Tkactwo"
+      },
+      {
+        "word": "céramique",
+        "hint": "Ceramika"
+      },
+      {
+        "word": "aiguille",
+        "hint": "Igła"
+      },
+      {
+        "word": "patron",
+        "hint": "Wykrój / szablon"
+      },
+      {
+        "word": "bouton",
+        "hint": "Guzik"
+      },
+      {
+        "word": "perles",
+        "hint": "Koraliki / paciorki"
+      },
+      {
+        "word": "macramé",
+        "hint": "Makrama"
+      },
+      {
+        "word": "origami",
+        "hint": "Origami"
+      },
+      {
+        "word": "pochoir",
+        "hint": "Szablon / wzornik"
+      },
+      {
+        "word": "vitrail",
+        "hint": "Witraż"
+      }
+    ]
+  },
+  {
+    "key": "geography_wb",
+    "name": "Geografia",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "continent",
+        "hint": "Kontynent"
+      },
+      {
+        "word": "capitale",
+        "hint": "Stolica"
+      },
+      {
+        "word": "frontière",
+        "hint": "Granica"
+      },
+      {
+        "word": "désert",
+        "hint": "Pustynia"
+      },
+      {
+        "word": "fleuve",
+        "hint": "Rzeka (duża, wpada do morza)"
+      },
+      {
+        "word": "volcan",
+        "hint": "Wulkan"
+      },
+      {
+        "word": "colline",
+        "hint": "Wzgórze"
+      },
+      {
+        "word": "plateau",
+        "hint": "Płaskowyż"
+      },
+      {
+        "word": "péninsule",
+        "hint": "Półwysep"
+      },
+      {
+        "word": "archipel",
+        "hint": "Archipelag"
+      },
+      {
+        "word": "latitude",
+        "hint": "Szerokość geograficzna"
+      },
+      {
+        "word": "longitude",
+        "hint": "Długość geograficzna"
+      },
+      {
+        "word": "hémisphère",
+        "hint": "Półkula"
+      },
+      {
+        "word": "glacier",
+        "hint": "Lodowiec"
+      },
+      {
+        "word": "vallée",
+        "hint": "Dolina"
+      }
+    ]
+  },
+  {
+    "key": "astronomy_wb",
+    "name": "Astronomia",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "étoile",
+        "hint": "Gwiazda"
+      },
+      {
+        "word": "planète",
+        "hint": "Planeta"
+      },
+      {
+        "word": "galaxie",
+        "hint": "Galaktyka"
+      },
+      {
+        "word": "comète",
+        "hint": "Kometa"
+      },
+      {
+        "word": "orbite",
+        "hint": "Orbita"
+      },
+      {
+        "word": "satellite",
+        "hint": "Satelita"
+      },
+      {
+        "word": "nébuleuse",
+        "hint": "Mgławica"
+      },
+      {
+        "word": "soleil",
+        "hint": "Słońce"
+      },
+      {
+        "word": "lunaire",
+        "hint": "Księżycowy"
+      },
+      {
+        "word": "télescope",
+        "hint": "Teleskop"
+      },
+      {
+        "word": "astéroïde",
+        "hint": "Asteroida"
+      },
+      {
+        "word": "cosmos",
+        "hint": "Kosmos"
+      },
+      {
+        "word": "éclipse",
+        "hint": "Zaćmienie"
+      },
+      {
+        "word": "gravité",
+        "hint": "Grawitacja"
+      },
+      {
+        "word": "météore",
+        "hint": "Meteor"
+      }
+    ]
+  },
+  {
+    "key": "ocean_wb",
+    "name": "Ocean",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "marée",
+        "hint": "Przypływ / odpływ"
+      },
+      {
+        "word": "vague",
+        "hint": "Fala"
+      },
+      {
+        "word": "plage",
+        "hint": "Plaża"
+      },
+      {
+        "word": "corail",
+        "hint": "Koral"
+      },
+      {
+        "word": "baleine",
+        "hint": "Wieloryb"
+      },
+      {
+        "word": "dauphin",
+        "hint": "Delfin"
+      },
+      {
+        "word": "requin",
+        "hint": "Rekin"
+      },
+      {
+        "word": "algue",
+        "hint": "Alga / wodorost"
+      },
+      {
+        "word": "ancre",
+        "hint": "Kotwica"
+      },
+      {
+        "word": "courant",
+        "hint": "Prąd (morski)"
+      },
+      {
+        "word": "profondeur",
+        "hint": "Głębokość"
+      },
+      {
+        "word": "récif",
+        "hint": "Rafa"
+      },
+      {
+        "word": "phare",
+        "hint": "Latarnia morska"
+      },
+      {
+        "word": "coquillage",
+        "hint": "Muszla"
+      },
+      {
+        "word": "tempête",
+        "hint": "Burza / sztorm"
+      }
+    ]
+  },
+  {
+    "key": "mountains_wb",
+    "name": "Góry",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "sommet",
+        "hint": "Szczyt"
+      },
+      {
+        "word": "sentier",
+        "hint": "Szlak / ścieżka"
+      },
+      {
+        "word": "altitude",
+        "hint": "Wysokość (n.p.m.)"
+      },
+      {
+        "word": "escalade",
+        "hint": "Wspinaczka"
+      },
+      {
+        "word": "refuge",
+        "hint": "Schronisko górskie"
+      },
+      {
+        "word": "cascade",
+        "hint": "Wodospad"
+      },
+      {
+        "word": "falaise",
+        "hint": "Klif / urwisko"
+      },
+      {
+        "word": "ravin",
+        "hint": "Wąwóz"
+      },
+      {
+        "word": "versant",
+        "hint": "Zbocze"
+      },
+      {
+        "word": "avalanche",
+        "hint": "Lawina"
+      },
+      {
+        "word": "rocher",
+        "hint": "Skała"
+      },
+      {
+        "word": "grotte",
+        "hint": "Jaskinia / grota"
+      },
+      {
+        "word": "torrent",
+        "hint": "Potok górski"
+      },
+      {
+        "word": "crête",
+        "hint": "Grań / grzbiet"
+      },
+      {
+        "word": "neige",
+        "hint": "Śnieg"
+      }
+    ]
+  },
+  {
+    "key": "camping_wb",
+    "name": "Biwakowanie",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "tente",
+        "hint": "Namiot"
+      },
+      {
+        "word": "feu",
+        "hint": "Ognisko / ogień"
+      },
+      {
+        "word": "lampe",
+        "hint": "Latarka / lampa"
+      },
+      {
+        "word": "bivouac",
+        "hint": "Biwak"
+      },
+      {
+        "word": "hamac",
+        "hint": "Hamak"
+      },
+      {
+        "word": "boussole",
+        "hint": "Kompas"
+      },
+      {
+        "word": "gourde",
+        "hint": "Manierka / bidon"
+      },
+      {
+        "word": "piquets",
+        "hint": "Śledzie (do namiotu)"
+      },
+      {
+        "word": "couchage",
+        "hint": "Śpiwór / nocleg"
+      },
+      {
+        "word": "randonner",
+        "hint": "Wędrować"
+      },
+      {
+        "word": "thermos",
+        "hint": "Termos"
+      },
+      {
+        "word": "briquet",
+        "hint": "Zapalniczka"
+      },
+      {
+        "word": "canif",
+        "hint": "Scyzoryk"
+      },
+      {
+        "word": "insecte",
+        "hint": "Owad (plaga na biwaku)"
+      },
+      {
+        "word": "étoiles",
+        "hint": "Gwiazdy (na nocnym niebie)"
+      }
+    ]
+  },
+  {
+    "key": "law_wb",
+    "name": "Prawo",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "avocat",
+        "hint": "Adwokat"
+      },
+      {
+        "word": "tribunal",
+        "hint": "Trybunał / sąd"
+      },
+      {
+        "word": "procès",
+        "hint": "Proces sądowy"
+      },
+      {
+        "word": "verdict",
+        "hint": "Wyrok / werdykt"
+      },
+      {
+        "word": "accusé",
+        "hint": "Oskarżony"
+      },
+      {
+        "word": "témoin",
+        "hint": "Świadek"
+      },
+      {
+        "word": "preuve",
+        "hint": "Dowód"
+      },
+      {
+        "word": "contrat",
+        "hint": "Umowa / kontrakt"
+      },
+      {
+        "word": "amende",
+        "hint": "Grzywna / kara"
+      },
+      {
+        "word": "acquitter",
+        "hint": "Uniewinnić"
+      },
+      {
+        "word": "plainte",
+        "hint": "Skarga / pozew"
+      },
+      {
+        "word": "délit",
+        "hint": "Wykroczenie / przestępstwo"
+      },
+      {
+        "word": "magistrat",
+        "hint": "Sędzia / urzędnik sądowy"
+      },
+      {
+        "word": "défense",
+        "hint": "Obrona (sądowa)"
+      },
+      {
+        "word": "juriste",
+        "hint": "Prawnik"
+      }
+    ]
+  },
+  {
+    "key": "politics_wb",
+    "name": "Polityka",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "élection",
+        "hint": "Wybory"
+      },
+      {
+        "word": "président",
+        "hint": "Prezydent"
+      },
+      {
+        "word": "parlement",
+        "hint": "Parlament"
+      },
+      {
+        "word": "ministre",
+        "hint": "Minister"
+      },
+      {
+        "word": "citoyen",
+        "hint": "Obywatel"
+      },
+      {
+        "word": "voter",
+        "hint": "Głosować"
+      },
+      {
+        "word": "candidat",
+        "hint": "Kandydat"
+      },
+      {
+        "word": "discours",
+        "hint": "Przemówienie"
+      },
+      {
+        "word": "réforme",
+        "hint": "Reforma"
+      },
+      {
+        "word": "campagne",
+        "hint": "Kampania (wyborcza)"
+      },
+      {
+        "word": "débat",
+        "hint": "Debata"
+      },
+      {
+        "word": "majorité",
+        "hint": "Większość"
+      },
+      {
+        "word": "opposition",
+        "hint": "Opozycja"
+      },
+      {
+        "word": "sénat",
+        "hint": "Senat"
+      },
+      {
+        "word": "scrutin",
+        "hint": "Głosowanie / wybory"
+      }
+    ]
+  },
+  {
+    "key": "economy_wb",
+    "name": "Ekonomia",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "marché",
+        "hint": "Rynek"
+      },
+      {
+        "word": "inflation",
+        "hint": "Inflacja"
+      },
+      {
+        "word": "croissance",
+        "hint": "Wzrost (gospodarczy)"
+      },
+      {
+        "word": "commerce",
+        "hint": "Handel"
+      },
+      {
+        "word": "exportation",
+        "hint": "Eksport"
+      },
+      {
+        "word": "importation",
+        "hint": "Import"
+      },
+      {
+        "word": "devise",
+        "hint": "Waluta"
+      },
+      {
+        "word": "bourse",
+        "hint": "Giełda"
+      },
+      {
+        "word": "récession",
+        "hint": "Recesja"
+      },
+      {
+        "word": "impôt",
+        "hint": "Podatek"
+      },
+      {
+        "word": "chômage",
+        "hint": "Bezrobocie"
+      },
+      {
+        "word": "salaire",
+        "hint": "Wynagrodzenie / pensja"
+      },
+      {
+        "word": "budget",
+        "hint": "Budżet"
+      },
+      {
+        "word": "dette",
+        "hint": "Dług"
+      },
+      {
+        "word": "investir",
+        "hint": "Inwestować"
+      }
+    ]
+  },
+  {
+    "key": "banking_wb",
+    "name": "Bankowość",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "banque",
+        "hint": "Bank"
+      },
+      {
+        "word": "compte",
+        "hint": "Konto (bankowe)"
+      },
+      {
+        "word": "épargne",
+        "hint": "Oszczędności"
+      },
+      {
+        "word": "virement",
+        "hint": "Przelew"
+      },
+      {
+        "word": "retrait",
+        "hint": "Wypłata"
+      },
+      {
+        "word": "intérêt",
+        "hint": "Odsetki / procent"
+      },
+      {
+        "word": "prêt",
+        "hint": "Pożyczka / kredyt"
+      },
+      {
+        "word": "guichet",
+        "hint": "Okienko / kasa"
+      },
+      {
+        "word": "espèces",
+        "hint": "Gotówka"
+      },
+      {
+        "word": "relevé",
+        "hint": "Wyciąg (bankowy)"
+      },
+      {
+        "word": "solde",
+        "hint": "Saldo"
+      },
+      {
+        "word": "chèque",
+        "hint": "Czek"
+      },
+      {
+        "word": "coffre",
+        "hint": "Sejf / skrytka"
+      },
+      {
+        "word": "agence",
+        "hint": "Oddział (banku)"
+      },
+      {
+        "word": "emprunt",
+        "hint": "Kredyt / pożyczka"
+      }
+    ]
+  },
+  {
+    "key": "insurance_wb",
+    "name": "Ubezpieczenia",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "assurance",
+        "hint": "Ubezpieczenie"
+      },
+      {
+        "word": "police",
+        "hint": "Polisa"
+      },
+      {
+        "word": "cotisation",
+        "hint": "Składka"
+      },
+      {
+        "word": "sinistre",
+        "hint": "Szkoda / wypadek"
+      },
+      {
+        "word": "garantie",
+        "hint": "Gwarancja"
+      },
+      {
+        "word": "franchise",
+        "hint": "Udział własny / franszyza"
+      },
+      {
+        "word": "couverture",
+        "hint": "Pokrycie ubezpieczeniowe"
+      },
+      {
+        "word": "bénéficiaire",
+        "hint": "Beneficjent"
+      },
+      {
+        "word": "déclaration",
+        "hint": "Zgłoszenie (szkody)"
+      },
+      {
+        "word": "risque",
+        "hint": "Ryzyko"
+      },
+      {
+        "word": "dommage",
+        "hint": "Uszkodzenie / strata"
+      },
+      {
+        "word": "expert",
+        "hint": "Rzeczoznawca"
+      },
+      {
+        "word": "clause",
+        "hint": "Klauzula"
+      },
+      {
+        "word": "prime",
+        "hint": "Premia / składka"
+      },
+      {
+        "word": "contrat",
+        "hint": "Kontrakt ubezpieczeniowy"
+      }
+    ]
+  },
+  {
+    "key": "cooking_wb",
+    "name": "Gotowanie",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "casserole",
+        "hint": "Rondel / garnek"
+      },
+      {
+        "word": "poêle",
+        "hint": "Patelnia"
+      },
+      {
+        "word": "bouillir",
+        "hint": "Gotować (w wodzie)"
+      },
+      {
+        "word": "griller",
+        "hint": "Grillować"
+      },
+      {
+        "word": "couper",
+        "hint": "Kroić"
+      },
+      {
+        "word": "mélanger",
+        "hint": "Mieszać"
+      },
+      {
+        "word": "assaisonner",
+        "hint": "Przyprawiać"
+      },
+      {
+        "word": "mijoter",
+        "hint": "Dusić na wolnym ogniu"
+      },
+      {
+        "word": "fouet",
+        "hint": "Trzepaczka"
+      },
+      {
+        "word": "râper",
+        "hint": "Trzeć (na tarce)"
+      },
+      {
+        "word": "éplucher",
+        "hint": "Obierać"
+      },
+      {
+        "word": "cuisson",
+        "hint": "Pieczenie / gotowanie"
+      },
+      {
+        "word": "recette",
+        "hint": "Przepis"
+      },
+      {
+        "word": "vapeur",
+        "hint": "Para (gotowanie na parze)"
+      },
+      {
+        "word": "mariner",
+        "hint": "Marynować"
+      }
+    ]
+  },
+  {
+    "key": "baking_wb",
+    "name": "Pieczenie",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "farine",
+        "hint": "Mąka"
+      },
+      {
+        "word": "levure",
+        "hint": "Drożdże"
+      },
+      {
+        "word": "pétrir",
+        "hint": "Wyrabiać (ciasto)"
+      },
+      {
+        "word": "moule",
+        "hint": "Foremka do pieczenia"
+      },
+      {
+        "word": "glaçage",
+        "hint": "Lukier / polewa"
+      },
+      {
+        "word": "croûte",
+        "hint": "Skórka (chleba)"
+      },
+      {
+        "word": "boulanger",
+        "hint": "Piekarz"
+      },
+      {
+        "word": "rouler",
+        "hint": "Rozwałkowywać"
+      },
+      {
+        "word": "pâtisserie",
+        "hint": "Cukiernictwo / ciastkarnia"
+      },
+      {
+        "word": "brioche",
+        "hint": "Brioszka"
+      },
+      {
+        "word": "croissant",
+        "hint": "Rogalik (croissant)"
+      },
+      {
+        "word": "baguette",
+        "hint": "Bagietka"
+      },
+      {
+        "word": "fouetter",
+        "hint": "Ubijać (jajka)"
+      },
+      {
+        "word": "enfourner",
+        "hint": "Wstawiać do piekarnika"
+      },
+      {
+        "word": "refroidir",
+        "hint": "Studzić / schładzać"
+      }
+    ]
+  },
+  {
+    "key": "spices_wb",
+    "name": "Przyprawy",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "poivre",
+        "hint": "Pieprz"
+      },
+      {
+        "word": "cannelle",
+        "hint": "Cynamon"
+      },
+      {
+        "word": "gingembre",
+        "hint": "Imbir"
+      },
+      {
+        "word": "curcuma",
+        "hint": "Kurkuma"
+      },
+      {
+        "word": "paprika",
+        "hint": "Papryka (przyprawa)"
+      },
+      {
+        "word": "muscade",
+        "hint": "Gałka muszkatołowa"
+      },
+      {
+        "word": "thym",
+        "hint": "Tymianek"
+      },
+      {
+        "word": "romarin",
+        "hint": "Rozmaryn"
+      },
+      {
+        "word": "basilic",
+        "hint": "Bazylia"
+      },
+      {
+        "word": "persil",
+        "hint": "Pietruszka"
+      },
+      {
+        "word": "safran",
+        "hint": "Szafran"
+      },
+      {
+        "word": "clou",
+        "hint": "Goździk (przyprawa)"
+      },
+      {
+        "word": "coriandre",
+        "hint": "Kolendra"
+      },
+      {
+        "word": "cumin",
+        "hint": "Kmin"
+      },
+      {
+        "word": "vanille",
+        "hint": "Wanilia"
+      }
+    ]
+  },
+  {
+    "key": "dairy_wb",
+    "name": "Nabiał",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "lait",
+        "hint": "Mleko"
+      },
+      {
+        "word": "fromage",
+        "hint": "Ser"
+      },
+      {
+        "word": "beurre",
+        "hint": "Masło"
+      },
+      {
+        "word": "crème",
+        "hint": "Śmietana"
+      },
+      {
+        "word": "yaourt",
+        "hint": "Jogurt"
+      },
+      {
+        "word": "mozzarella",
+        "hint": "Mozzarella"
+      },
+      {
+        "word": "camembert",
+        "hint": "Camembert (ser)"
+      },
+      {
+        "word": "gruyère",
+        "hint": "Gruyère (ser szwajcarski)"
+      },
+      {
+        "word": "chèvre",
+        "hint": "Ser kozi"
+      },
+      {
+        "word": "roquefort",
+        "hint": "Roquefort (ser pleśniowy)"
+      },
+      {
+        "word": "lactose",
+        "hint": "Laktoza"
+      },
+      {
+        "word": "caillé",
+        "hint": "Ser twarogowy / twarożek"
+      },
+      {
+        "word": "fouetté",
+        "hint": "Ubity (bita śmietana)"
+      },
+      {
+        "word": "écrémé",
+        "hint": "Odtłuszczony"
+      },
+      {
+        "word": "laitier",
+        "hint": "Mleczarz / mleczny"
+      }
+    ]
+  },
+  {
+    "key": "meat_wb",
+    "name": "Mięso",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "poulet",
+        "hint": "Kurczak"
+      },
+      {
+        "word": "boeuf",
+        "hint": "Wołowina"
+      },
+      {
+        "word": "porc",
+        "hint": "Wieprzowina"
+      },
+      {
+        "word": "agneau",
+        "hint": "Jagnięcina / baranina"
+      },
+      {
+        "word": "dinde",
+        "hint": "Indyk"
+      },
+      {
+        "word": "canard",
+        "hint": "Kaczka"
+      },
+      {
+        "word": "saucisse",
+        "hint": "Kiełbasa"
+      },
+      {
+        "word": "jambon",
+        "hint": "Szynka"
+      },
+      {
+        "word": "steak",
+        "hint": "Stek"
+      },
+      {
+        "word": "côtelette",
+        "hint": "Kotlet"
+      },
+      {
+        "word": "rôti",
+        "hint": "Pieczeń"
+      },
+      {
+        "word": "viande",
+        "hint": "Mięso (ogólnie)"
+      },
+      {
+        "word": "filet",
+        "hint": "Filet"
+      },
+      {
+        "word": "boucher",
+        "hint": "Rzeźnik"
+      },
+      {
+        "word": "grillades",
+        "hint": "Grillowane mięsa"
+      }
+    ]
+  },
+  {
+    "key": "pets_wb",
+    "name": "Zwierzęta domowe",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "chien",
+        "hint": "Pies"
+      },
+      {
+        "word": "chat",
+        "hint": "Kot"
+      },
+      {
+        "word": "hamster",
+        "hint": "Chomik"
+      },
+      {
+        "word": "lapin",
+        "hint": "Królik"
+      },
+      {
+        "word": "perroquet",
+        "hint": "Papuga"
+      },
+      {
+        "word": "tortue",
+        "hint": "Żółw"
+      },
+      {
+        "word": "poisson",
+        "hint": "Ryba (akwariowa)"
+      },
+      {
+        "word": "canari",
+        "hint": "Kanarek"
+      },
+      {
+        "word": "cochon",
+        "hint": "Świnka morska (cochon d'Inde)"
+      },
+      {
+        "word": "furet",
+        "hint": "Fretka"
+      },
+      {
+        "word": "collier",
+        "hint": "Obroża"
+      },
+      {
+        "word": "gamelle",
+        "hint": "Miska (dla zwierzęcia)"
+      },
+      {
+        "word": "caresser",
+        "hint": "Głaskać"
+      },
+      {
+        "word": "nourrir",
+        "hint": "Karmić"
+      },
+      {
+        "word": "promener",
+        "hint": "Wyprowadzać (na spacer)"
+      }
+    ]
+  },
+  {
+    "key": "birds_wb",
+    "name": "Ptaki",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "aigle",
+        "hint": "Orzeł"
+      },
+      {
+        "word": "faucon",
+        "hint": "Sokół"
+      },
+      {
+        "word": "hibou",
+        "hint": "Sowa"
+      },
+      {
+        "word": "moineau",
+        "hint": "Wróbel"
+      },
+      {
+        "word": "mouette",
+        "hint": "Mewa"
+      },
+      {
+        "word": "cygne",
+        "hint": "Łabędź"
+      },
+      {
+        "word": "cigogne",
+        "hint": "Bocian"
+      },
+      {
+        "word": "pigeon",
+        "hint": "Gołąb"
+      },
+      {
+        "word": "rossignol",
+        "hint": "Słowik"
+      },
+      {
+        "word": "colibri",
+        "hint": "Koliber"
+      },
+      {
+        "word": "pingouin",
+        "hint": "Pingwin"
+      },
+      {
+        "word": "héron",
+        "hint": "Czapla"
+      },
+      {
+        "word": "flamant",
+        "hint": "Flaming"
+      },
+      {
+        "word": "merle",
+        "hint": "Kos"
+      },
+      {
+        "word": "plume",
+        "hint": "Pióro (ptaka)"
+      }
+    ]
+  },
+  {
+    "key": "insects_wb",
+    "name": "Owady",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "abeille",
+        "hint": "Pszczoła"
+      },
+      {
+        "word": "papillon",
+        "hint": "Motyl"
+      },
+      {
+        "word": "fourmi",
+        "hint": "Mrówka"
+      },
+      {
+        "word": "mouche",
+        "hint": "Mucha"
+      },
+      {
+        "word": "moustique",
+        "hint": "Komar"
+      },
+      {
+        "word": "coccinelle",
+        "hint": "Biedronka"
+      },
+      {
+        "word": "libellule",
+        "hint": "Ważka"
+      },
+      {
+        "word": "scarabée",
+        "hint": "Chrząszcz / żuk"
+      },
+      {
+        "word": "guêpe",
+        "hint": "Osa"
+      },
+      {
+        "word": "cigale",
+        "hint": "Cykada"
+      },
+      {
+        "word": "chenille",
+        "hint": "Gąsienica"
+      },
+      {
+        "word": "criquet",
+        "hint": "Konik polny / pasikonik"
+      },
+      {
+        "word": "araignée",
+        "hint": "Pająk"
+      },
+      {
+        "word": "puce",
+        "hint": "Pchła"
+      },
+      {
+        "word": "sauterelle",
+        "hint": "Szarańcza / konik polny"
+      }
+    ]
+  },
+  {
+    "key": "marine_life_wb",
+    "name": "Życie morskie",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pieuvre",
+        "hint": "Ośmiornica"
+      },
+      {
+        "word": "crabe",
+        "hint": "Krab"
+      },
+      {
+        "word": "crevette",
+        "hint": "Krewetka"
+      },
+      {
+        "word": "méduse",
+        "hint": "Meduza"
+      },
+      {
+        "word": "homard",
+        "hint": "Homar"
+      },
+      {
+        "word": "hippocampe",
+        "hint": "Konik morski"
+      },
+      {
+        "word": "étoile",
+        "hint": "Rozgwiazda (étoile de mer)"
+      },
+      {
+        "word": "oursin",
+        "hint": "Jeżowiec"
+      },
+      {
+        "word": "phoque",
+        "hint": "Foka"
+      },
+      {
+        "word": "morse",
+        "hint": "Mors"
+      },
+      {
+        "word": "huître",
+        "hint": "Ostryga"
+      },
+      {
+        "word": "moule",
+        "hint": "Małż / omułek"
+      },
+      {
+        "word": "raie",
+        "hint": "Płaszczka"
+      },
+      {
+        "word": "sardine",
+        "hint": "Sardynka"
+      },
+      {
+        "word": "saumon",
+        "hint": "Łosoś"
+      }
+    ]
+  },
+  {
+    "key": "farm_animals_wb",
+    "name": "Zwierzęta gospodarskie",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "vache",
+        "hint": "Krowa"
+      },
+      {
+        "word": "cheval",
+        "hint": "Koń"
+      },
+      {
+        "word": "mouton",
+        "hint": "Owca"
+      },
+      {
+        "word": "chèvre",
+        "hint": "Koza"
+      },
+      {
+        "word": "cochon",
+        "hint": "Świnia"
+      },
+      {
+        "word": "poule",
+        "hint": "Kura"
+      },
+      {
+        "word": "canard",
+        "hint": "Kaczka (domowa)"
+      },
+      {
+        "word": "oie",
+        "hint": "Gęś"
+      },
+      {
+        "word": "taureau",
+        "hint": "Byk"
+      },
+      {
+        "word": "poulain",
+        "hint": "Źrebię"
+      },
+      {
+        "word": "grange",
+        "hint": "Stodoła"
+      },
+      {
+        "word": "étable",
+        "hint": "Obora"
+      },
+      {
+        "word": "clôture",
+        "hint": "Ogrodzenie (pastwisko)"
+      },
+      {
+        "word": "tracteur",
+        "hint": "Traktor"
+      },
+      {
+        "word": "fermier",
+        "hint": "Rolnik / farmer"
+      }
+    ]
+  },
+  {
+    "key": "feelings_wb",
+    "name": "Uczucia",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "bonheur",
+        "hint": "Szczęście"
+      },
+      {
+        "word": "tristesse",
+        "hint": "Smutek"
+      },
+      {
+        "word": "colère",
+        "hint": "Złość / gniew"
+      },
+      {
+        "word": "surprise",
+        "hint": "Zaskoczenie / niespodzianka"
+      },
+      {
+        "word": "dégoût",
+        "hint": "Obrzydzenie / wstręt"
+      },
+      {
+        "word": "fierté",
+        "hint": "Duma"
+      },
+      {
+        "word": "honte",
+        "hint": "Wstyd"
+      },
+      {
+        "word": "jalousie",
+        "hint": "Zazdrość"
+      },
+      {
+        "word": "inquiétude",
+        "hint": "Niepokój / obawa"
+      },
+      {
+        "word": "gratitude",
+        "hint": "Wdzięczność"
+      },
+      {
+        "word": "solitude",
+        "hint": "Samotność"
+      },
+      {
+        "word": "tendresse",
+        "hint": "Czułość"
+      },
+      {
+        "word": "nostalgie",
+        "hint": "Nostalgia / tęsknota"
+      },
+      {
+        "word": "enthousiasme",
+        "hint": "Entuzjazm"
+      },
+      {
+        "word": "mélancolie",
+        "hint": "Melancholia"
+      }
+    ]
+  },
+  {
+    "key": "personality_wb",
+    "name": "Osobowość",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "généreux",
+        "hint": "Hojny"
+      },
+      {
+        "word": "timide",
+        "hint": "Nieśmiały"
+      },
+      {
+        "word": "courageux",
+        "hint": "Odważny"
+      },
+      {
+        "word": "prudent",
+        "hint": "Ostrożny"
+      },
+      {
+        "word": "curieux",
+        "hint": "Ciekawy / dociekliwy"
+      },
+      {
+        "word": "sincère",
+        "hint": "Szczery"
+      },
+      {
+        "word": "loyal",
+        "hint": "Lojalny"
+      },
+      {
+        "word": "modeste",
+        "hint": "Skromny"
+      },
+      {
+        "word": "ambitieux",
+        "hint": "Ambitny"
+      },
+      {
+        "word": "patient",
+        "hint": "Cierpliwy"
+      },
+      {
+        "word": "créatif",
+        "hint": "Kreatywny"
+      },
+      {
+        "word": "optimiste",
+        "hint": "Optymistyczny"
+      },
+      {
+        "word": "têtu",
+        "hint": "Uparty"
+      },
+      {
+        "word": "sensible",
+        "hint": "Wrażliwy"
+      },
+      {
+        "word": "sociable",
+        "hint": "Towarzyski"
+      }
+    ]
+  },
+  {
+    "key": "relationships_wb",
+    "name": "Relacje",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "amitié",
+        "hint": "Przyjaźń"
+      },
+      {
+        "word": "couple",
+        "hint": "Para / związek"
+      },
+      {
+        "word": "mariage",
+        "hint": "Małżeństwo"
+      },
+      {
+        "word": "fiancé",
+        "hint": "Narzeczony"
+      },
+      {
+        "word": "voisin",
+        "hint": "Sąsiad"
+      },
+      {
+        "word": "collègue",
+        "hint": "Kolega z pracy"
+      },
+      {
+        "word": "confiance",
+        "hint": "Zaufanie"
+      },
+      {
+        "word": "dispute",
+        "hint": "Kłótnia / spór"
+      },
+      {
+        "word": "pardonner",
+        "hint": "Przebaczać"
+      },
+      {
+        "word": "séparation",
+        "hint": "Rozstanie"
+      },
+      {
+        "word": "rencontre",
+        "hint": "Spotkanie / poznanie się"
+      },
+      {
+        "word": "complicité",
+        "hint": "Zażyłość / porozumienie"
+      },
+      {
+        "word": "respect",
+        "hint": "Szacunek"
+      },
+      {
+        "word": "soutien",
+        "hint": "Wsparcie"
+      },
+      {
+        "word": "écouter",
+        "hint": "Słuchać (kogoś)"
+      }
+    ]
+  },
+  {
+    "key": "communication_wb",
+    "name": "Komunikacja",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "parler",
+        "hint": "Mówić / rozmawiać"
+      },
+      {
+        "word": "écrire",
+        "hint": "Pisać"
+      },
+      {
+        "word": "message",
+        "hint": "Wiadomość"
+      },
+      {
+        "word": "répondre",
+        "hint": "Odpowiadać"
+      },
+      {
+        "word": "expliquer",
+        "hint": "Wyjaśniać"
+      },
+      {
+        "word": "traduire",
+        "hint": "Tłumaczyć"
+      },
+      {
+        "word": "négocier",
+        "hint": "Negocjować"
+      },
+      {
+        "word": "convaincre",
+        "hint": "Przekonywać"
+      },
+      {
+        "word": "discuter",
+        "hint": "Dyskutować"
+      },
+      {
+        "word": "annoncer",
+        "hint": "Ogłaszać / informować"
+      },
+      {
+        "word": "opinion",
+        "hint": "Opinia / zdanie"
+      },
+      {
+        "word": "argument",
+        "hint": "Argument"
+      },
+      {
+        "word": "dialogue",
+        "hint": "Dialog / rozmowa"
+      },
+      {
+        "word": "malentendu",
+        "hint": "Nieporozumienie"
+      },
+      {
+        "word": "courrier",
+        "hint": "Poczta / korespondencja"
+      }
+    ]
+  },
+  {
+    "key": "gestures_wb",
+    "name": "Gesty",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "sourire",
+        "hint": "Uśmiech"
+      },
+      {
+        "word": "poignée",
+        "hint": "Uścisk dłoni"
+      },
+      {
+        "word": "applaudir",
+        "hint": "Klaskać / bić brawo"
+      },
+      {
+        "word": "hochement",
+        "hint": "Skinięcie (głową)"
+      },
+      {
+        "word": "embrasser",
+        "hint": "Całować / przytulać"
+      },
+      {
+        "word": "saluer",
+        "hint": "Pozdrawiać / witać"
+      },
+      {
+        "word": "signe",
+        "hint": "Znak / gest"
+      },
+      {
+        "word": "pointer",
+        "hint": "Wskazywać (palcem)"
+      },
+      {
+        "word": "croiser",
+        "hint": "Krzyżować (ramiona)"
+      },
+      {
+        "word": "hausser",
+        "hint": "Wzruszać (ramionami)"
+      },
+      {
+        "word": "froncer",
+        "hint": "Marszczyć (brwi)"
+      },
+      {
+        "word": "cligner",
+        "hint": "Mrugać"
+      },
+      {
+        "word": "acquiescer",
+        "hint": "Przytakiwać"
+      },
+      {
+        "word": "câlin",
+        "hint": "Przytulanie / czułość"
+      },
+      {
+        "word": "révérence",
+        "hint": "Ukłon / dygnięcie"
+      }
+    ]
+  },
+  {
+    "key": "architecture_wb",
+    "name": "Architektura",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "façade",
+        "hint": "Fasada"
+      },
+      {
+        "word": "pilier",
+        "hint": "Filar / słup"
+      },
+      {
+        "word": "voûte",
+        "hint": "Sklepienie"
+      },
+      {
+        "word": "arche",
+        "hint": "Łuk / arkada"
+      },
+      {
+        "word": "dôme",
+        "hint": "Kopuła"
+      },
+      {
+        "word": "balcon",
+        "hint": "Balkon"
+      },
+      {
+        "word": "escalier",
+        "hint": "Schody"
+      },
+      {
+        "word": "fondation",
+        "hint": "Fundament"
+      },
+      {
+        "word": "toiture",
+        "hint": "Dach / pokrycie dachu"
+      },
+      {
+        "word": "charpente",
+        "hint": "Więźba dachowa / konstrukcja"
+      },
+      {
+        "word": "terrasse",
+        "hint": "Taras"
+      },
+      {
+        "word": "clocher",
+        "hint": "Dzwonnica / wieża"
+      },
+      {
+        "word": "cathédrale",
+        "hint": "Katedra"
+      },
+      {
+        "word": "fenêtre",
+        "hint": "Okno"
+      },
+      {
+        "word": "colonne",
+        "hint": "Kolumna"
+      }
+    ]
+  },
+  {
+    "key": "construction_wb",
+    "name": "Budownictwo",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "chantier",
+        "hint": "Plac budowy"
+      },
+      {
+        "word": "béton",
+        "hint": "Beton"
+      },
+      {
+        "word": "brique",
+        "hint": "Cegła"
+      },
+      {
+        "word": "ciment",
+        "hint": "Cement"
+      },
+      {
+        "word": "échafaudage",
+        "hint": "Rusztowanie"
+      },
+      {
+        "word": "grue",
+        "hint": "Dźwig / żuraw"
+      },
+      {
+        "word": "plâtre",
+        "hint": "Tynk / gips"
+      },
+      {
+        "word": "isolation",
+        "hint": "Izolacja"
+      },
+      {
+        "word": "poutre",
+        "hint": "Belka"
+      },
+      {
+        "word": "tuile",
+        "hint": "Dachówka"
+      },
+      {
+        "word": "maçon",
+        "hint": "Murarz"
+      },
+      {
+        "word": "fondation",
+        "hint": "Fundament budynku"
+      },
+      {
+        "word": "parpaing",
+        "hint": "Pustak / bloczek"
+      },
+      {
+        "word": "crépi",
+        "hint": "Tynk zewnętrzny"
+      },
+      {
+        "word": "menuisier",
+        "hint": "Stolarz"
+      }
+    ]
+  },
+  {
+    "key": "electricity_wb",
+    "name": "Elektryczność",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "courant",
+        "hint": "Prąd (elektryczny)"
+      },
+      {
+        "word": "prise",
+        "hint": "Gniazdko / wtyczka"
+      },
+      {
+        "word": "câble",
+        "hint": "Kabel"
+      },
+      {
+        "word": "fusible",
+        "hint": "Bezpiecznik"
+      },
+      {
+        "word": "compteur",
+        "hint": "Licznik (prądu)"
+      },
+      {
+        "word": "ampoule",
+        "hint": "Żarówka"
+      },
+      {
+        "word": "interrupteur",
+        "hint": "Włącznik / wyłącznik"
+      },
+      {
+        "word": "tension",
+        "hint": "Napięcie"
+      },
+      {
+        "word": "disjoncteur",
+        "hint": "Wyłącznik automatyczny"
+      },
+      {
+        "word": "résistance",
+        "hint": "Opornik / rezystor"
+      },
+      {
+        "word": "batterie",
+        "hint": "Akumulator / bateria"
+      },
+      {
+        "word": "génératrice",
+        "hint": "Generator / prądnica"
+      },
+      {
+        "word": "rallonge",
+        "hint": "Przedłużacz"
+      },
+      {
+        "word": "circuit",
+        "hint": "Obwód (elektryczny)"
+      },
+      {
+        "word": "voltmètre",
+        "hint": "Woltomierz"
+      }
+    ]
+  },
+  {
+    "key": "plumbing_wb",
+    "name": "Hydraulika",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "tuyau",
+        "hint": "Rura"
+      },
+      {
+        "word": "robinet",
+        "hint": "Kran / zawór"
+      },
+      {
+        "word": "fuite",
+        "hint": "Wyciek / przeciek"
+      },
+      {
+        "word": "plombier",
+        "hint": "Hydraulik"
+      },
+      {
+        "word": "siphon",
+        "hint": "Syfon"
+      },
+      {
+        "word": "canalisation",
+        "hint": "Kanalizacja"
+      },
+      {
+        "word": "chaudière",
+        "hint": "Kocioł / bojler"
+      },
+      {
+        "word": "vidange",
+        "hint": "Spust / opróżnianie"
+      },
+      {
+        "word": "détartrer",
+        "hint": "Odkamieniać"
+      },
+      {
+        "word": "vanne",
+        "hint": "Zasuwa / zawór"
+      },
+      {
+        "word": "raccord",
+        "hint": "Złączka"
+      },
+      {
+        "word": "pression",
+        "hint": "Ciśnienie (wody)"
+      },
+      {
+        "word": "égout",
+        "hint": "Ściek / kanał"
+      },
+      {
+        "word": "ballon",
+        "hint": "Podgrzewacz wody"
+      },
+      {
+        "word": "joint",
+        "hint": "Uszczelka"
+      }
+    ]
+  },
+  {
+    "key": "gardening_tools_wb",
+    "name": "Narzędzia ogrodnicze",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "bêche",
+        "hint": "Szpadel"
+      },
+      {
+        "word": "râteau",
+        "hint": "Grabie"
+      },
+      {
+        "word": "sécateur",
+        "hint": "Sekator"
+      },
+      {
+        "word": "arrosoir",
+        "hint": "Konewka"
+      },
+      {
+        "word": "brouette",
+        "hint": "Taczka"
+      },
+      {
+        "word": "cisailles",
+        "hint": "Nożyce ogrodowe"
+      },
+      {
+        "word": "tuteur",
+        "hint": "Podpórka (dla roślin)"
+      },
+      {
+        "word": "sarcloir",
+        "hint": "Motyczka / pielnik"
+      },
+      {
+        "word": "tuyau",
+        "hint": "Wąż ogrodowy"
+      },
+      {
+        "word": "terreau",
+        "hint": "Ziemia ogrodnicza"
+      },
+      {
+        "word": "semoir",
+        "hint": "Siewnik"
+      },
+      {
+        "word": "fourche",
+        "hint": "Widły"
+      },
+      {
+        "word": "gants",
+        "hint": "Rękawice (ogrodowe)"
+      },
+      {
+        "word": "griffe",
+        "hint": "Pazurki ogrodnicze"
+      },
+      {
+        "word": "plantoir",
+        "hint": "Sadzak / kolec do sadzenia"
+      }
+    ]
+  },
+  {
+    "key": "medicine_wb",
+    "name": "Medycyna",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "médecin",
+        "hint": "Lekarz"
+      },
+      {
+        "word": "hôpital",
+        "hint": "Szpital"
+      },
+      {
+        "word": "diagnostic",
+        "hint": "Diagnoza"
+      },
+      {
+        "word": "chirurgie",
+        "hint": "Chirurgia / operacja"
+      },
+      {
+        "word": "ordonnance",
+        "hint": "Recepta"
+      },
+      {
+        "word": "symptôme",
+        "hint": "Objaw / symptom"
+      },
+      {
+        "word": "urgences",
+        "hint": "Pogotowie / izba przyjęć"
+      },
+      {
+        "word": "infirmière",
+        "hint": "Pielęgniarka"
+      },
+      {
+        "word": "vaccin",
+        "hint": "Szczepionka"
+      },
+      {
+        "word": "tension",
+        "hint": "Ciśnienie (krwi)"
+      },
+      {
+        "word": "radiographie",
+        "hint": "Prześwietlenie / RTG"
+      },
+      {
+        "word": "allergie",
+        "hint": "Alergia"
+      },
+      {
+        "word": "anesthésie",
+        "hint": "Znieczulenie"
+      },
+      {
+        "word": "convalescence",
+        "hint": "Rekonwalescencja"
+      },
+      {
+        "word": "ambulance",
+        "hint": "Karetka pogotowia"
+      }
+    ]
+  },
+  {
+    "key": "pharmacy_wb",
+    "name": "Apteka",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pharmacie",
+        "hint": "Apteka"
+      },
+      {
+        "word": "comprimé",
+        "hint": "Tabletka"
+      },
+      {
+        "word": "sirop",
+        "hint": "Syrop (na kaszel)"
+      },
+      {
+        "word": "pommade",
+        "hint": "Maść"
+      },
+      {
+        "word": "gélule",
+        "hint": "Kapsułka"
+      },
+      {
+        "word": "posologie",
+        "hint": "Dawkowanie"
+      },
+      {
+        "word": "pilule",
+        "hint": "Pigułka"
+      },
+      {
+        "word": "pastille",
+        "hint": "Pastylka do ssania"
+      },
+      {
+        "word": "pansement",
+        "hint": "Plaster / opatrunek"
+      },
+      {
+        "word": "antiseptique",
+        "hint": "Środek antyseptyczny"
+      },
+      {
+        "word": "gouttes",
+        "hint": "Krople"
+      },
+      {
+        "word": "vitamine",
+        "hint": "Witamina"
+      },
+      {
+        "word": "thermomètre",
+        "hint": "Termometr"
+      },
+      {
+        "word": "sparadrap",
+        "hint": "Przylepiec / plaster"
+      },
+      {
+        "word": "pharmacien",
+        "hint": "Farmaceuta / aptekarz"
+      }
+    ]
+  },
+  {
+    "key": "fitness_wb",
+    "name": "Fitness",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "musculation",
+        "hint": "Kulturystyka / siłownia"
+      },
+      {
+        "word": "haltère",
+        "hint": "Hantel / ciężarek"
+      },
+      {
+        "word": "tapis",
+        "hint": "Bieżnia / mata"
+      },
+      {
+        "word": "abdominaux",
+        "hint": "Brzuszki / mięśnie brzucha"
+      },
+      {
+        "word": "étirement",
+        "hint": "Rozciąganie"
+      },
+      {
+        "word": "endurance",
+        "hint": "Wytrzymałość"
+      },
+      {
+        "word": "squat",
+        "hint": "Przysiad"
+      },
+      {
+        "word": "pompe",
+        "hint": "Pompka (ćwiczenie)"
+      },
+      {
+        "word": "cardio",
+        "hint": "Ćwiczenia kardio"
+      },
+      {
+        "word": "souplesse",
+        "hint": "Elastyczność / gibkość"
+      },
+      {
+        "word": "échauffement",
+        "hint": "Rozgrzewka"
+      },
+      {
+        "word": "récupération",
+        "hint": "Regeneracja"
+      },
+      {
+        "word": "corde",
+        "hint": "Skakanka (corde à sauter)"
+      },
+      {
+        "word": "entraîneur",
+        "hint": "Trener"
+      },
+      {
+        "word": "répétition",
+        "hint": "Powtórzenie (ćwiczenia)"
+      }
+    ]
+  },
+  {
+    "key": "yoga_wb",
+    "name": "Joga",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "posture",
+        "hint": "Pozycja / postawa"
+      },
+      {
+        "word": "respiration",
+        "hint": "Oddychanie"
+      },
+      {
+        "word": "méditation",
+        "hint": "Medytacja"
+      },
+      {
+        "word": "souplesse",
+        "hint": "Elastyczność / giętkość"
+      },
+      {
+        "word": "relaxation",
+        "hint": "Relaksacja"
+      },
+      {
+        "word": "équilibre",
+        "hint": "Równowaga"
+      },
+      {
+        "word": "harmonie",
+        "hint": "Harmonia"
+      },
+      {
+        "word": "concentration",
+        "hint": "Koncentracja / skupienie"
+      },
+      {
+        "word": "flexibilité",
+        "hint": "Elastyczność"
+      },
+      {
+        "word": "conscience",
+        "hint": "Świadomość"
+      },
+      {
+        "word": "alignement",
+        "hint": "Ustawienie / wyrównanie"
+      },
+      {
+        "word": "sérénité",
+        "hint": "Spokój / pogoda ducha"
+      },
+      {
+        "word": "mantras",
+        "hint": "Mantry"
+      },
+      {
+        "word": "étirement",
+        "hint": "Rozciąganie"
+      },
+      {
+        "word": "chakra",
+        "hint": "Czakra"
+      }
+    ]
+  },
+  {
+    "key": "mental_health_wb",
+    "name": "Zdrowie psychiczne",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "anxiété",
+        "hint": "Lęk / niepokój"
+      },
+      {
+        "word": "thérapie",
+        "hint": "Terapia"
+      },
+      {
+        "word": "stress",
+        "hint": "Stres"
+      },
+      {
+        "word": "résilience",
+        "hint": "Odporność psychiczna"
+      },
+      {
+        "word": "dépression",
+        "hint": "Depresja"
+      },
+      {
+        "word": "estime",
+        "hint": "Poczucie własnej wartości"
+      },
+      {
+        "word": "bienveillance",
+        "hint": "Życzliwość"
+      },
+      {
+        "word": "sommeil",
+        "hint": "Sen"
+      },
+      {
+        "word": "épuisement",
+        "hint": "Wyczerpanie / wypalenie"
+      },
+      {
+        "word": "soutien",
+        "hint": "Wsparcie"
+      },
+      {
+        "word": "confiance",
+        "hint": "Pewność siebie / zaufanie"
+      },
+      {
+        "word": "émotion",
+        "hint": "Emocja"
+      },
+      {
+        "word": "psychologue",
+        "hint": "Psycholog"
+      },
+      {
+        "word": "conscience",
+        "hint": "Samoświadomość"
+      },
+      {
+        "word": "détente",
+        "hint": "Wyciszenie / odpoczynek"
+      }
+    ]
+  },
+  {
+    "key": "vehicles_wb",
+    "name": "Pojazdy",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "voiture",
+        "hint": "Samochód"
+      },
+      {
+        "word": "camion",
+        "hint": "Ciężarówka"
+      },
+      {
+        "word": "moto",
+        "hint": "Motocykl"
+      },
+      {
+        "word": "scooter",
+        "hint": "Skuter"
+      },
+      {
+        "word": "fourgon",
+        "hint": "Furgonetka"
+      },
+      {
+        "word": "caravane",
+        "hint": "Przyczepa kempingowa"
+      },
+      {
+        "word": "remorque",
+        "hint": "Przyczepa"
+      },
+      {
+        "word": "ambulance",
+        "hint": "Karetka"
+      },
+      {
+        "word": "pompier",
+        "hint": "Wóz strażacki"
+      },
+      {
+        "word": "autobus",
+        "hint": "Autobus"
+      },
+      {
+        "word": "limousine",
+        "hint": "Limuzyna"
+      },
+      {
+        "word": "décapotable",
+        "hint": "Kabriolet"
+      },
+      {
+        "word": "volant",
+        "hint": "Kierownica"
+      },
+      {
+        "word": "phare",
+        "hint": "Reflektor / światło"
+      },
+      {
+        "word": "capot",
+        "hint": "Maska (samochodu)"
+      }
+    ]
+  },
+  {
+    "key": "aviation_wb",
+    "name": "Lotnictwo",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "avion",
+        "hint": "Samolot"
+      },
+      {
+        "word": "pilote",
+        "hint": "Pilot"
+      },
+      {
+        "word": "décollage",
+        "hint": "Start (samolotu)"
+      },
+      {
+        "word": "atterrissage",
+        "hint": "Lądowanie"
+      },
+      {
+        "word": "turbulence",
+        "hint": "Turbulencje"
+      },
+      {
+        "word": "hôtesse",
+        "hint": "Stewardessa"
+      },
+      {
+        "word": "altitude",
+        "hint": "Wysokość lotu"
+      },
+      {
+        "word": "cabine",
+        "hint": "Kabina"
+      },
+      {
+        "word": "cockpit",
+        "hint": "Kokpit"
+      },
+      {
+        "word": "hélicoptère",
+        "hint": "Helikopter"
+      },
+      {
+        "word": "piste",
+        "hint": "Pas startowy"
+      },
+      {
+        "word": "contrôle",
+        "hint": "Kontrola (lotów)"
+      },
+      {
+        "word": "embarquer",
+        "hint": "Wsiadać / wchodzić na pokład"
+      },
+      {
+        "word": "ceinture",
+        "hint": "Pas (bezpieczeństwa)"
+      },
+      {
+        "word": "escale",
+        "hint": "Międzylądowanie / przesiadka"
+      }
+    ]
+  },
+  {
+    "key": "shipping_wb",
+    "name": "Żegluga",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "bateau",
+        "hint": "Statek / łódź"
+      },
+      {
+        "word": "voile",
+        "hint": "Żagiel"
+      },
+      {
+        "word": "ancre",
+        "hint": "Kotwica"
+      },
+      {
+        "word": "capitaine",
+        "hint": "Kapitan"
+      },
+      {
+        "word": "équipage",
+        "hint": "Załoga"
+      },
+      {
+        "word": "cargaison",
+        "hint": "Ładunek"
+      },
+      {
+        "word": "quai",
+        "hint": "Nabrzeże / molo"
+      },
+      {
+        "word": "navigation",
+        "hint": "Nawigacja / żegluga"
+      },
+      {
+        "word": "tribord",
+        "hint": "Sterburta (prawa strona)"
+      },
+      {
+        "word": "bâbord",
+        "hint": "Bakburta (lewa strona)"
+      },
+      {
+        "word": "gouvernail",
+        "hint": "Ster"
+      },
+      {
+        "word": "coque",
+        "hint": "Kadłub"
+      },
+      {
+        "word": "croisière",
+        "hint": "Rejs / wycieczka morska"
+      },
+      {
+        "word": "phare",
+        "hint": "Latarnia morska"
+      },
+      {
+        "word": "marée",
+        "hint": "Przypływ / odpływ"
+      }
+    ]
+  },
+  {
+    "key": "cycling_wb",
+    "name": "Kolarstwo",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "vélo",
+        "hint": "Rower"
+      },
+      {
+        "word": "pédale",
+        "hint": "Pedał"
+      },
+      {
+        "word": "guidon",
+        "hint": "Kierownica (roweru)"
+      },
+      {
+        "word": "selle",
+        "hint": "Siodełko"
+      },
+      {
+        "word": "chaîne",
+        "hint": "Łańcuch (roweru)"
+      },
+      {
+        "word": "frein",
+        "hint": "Hamulec"
+      },
+      {
+        "word": "roue",
+        "hint": "Koło"
+      },
+      {
+        "word": "pneu",
+        "hint": "Opona"
+      },
+      {
+        "word": "casque",
+        "hint": "Kask"
+      },
+      {
+        "word": "dérailleur",
+        "hint": "Przerzutka"
+      },
+      {
+        "word": "cycliste",
+        "hint": "Kolarz / rowerzysta"
+      },
+      {
+        "word": "vitesse",
+        "hint": "Bieg / prędkość"
+      },
+      {
+        "word": "sonnette",
+        "hint": "Dzwonek (roweru)"
+      },
+      {
+        "word": "pompe",
+        "hint": "Pompka (do opon)"
+      },
+      {
+        "word": "crevaison",
+        "hint": "Przebicie opony"
+      }
+    ]
+  },
+  {
+    "key": "trains_wb",
+    "name": "Kolej",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "gare",
+        "hint": "Dworzec"
+      },
+      {
+        "word": "quai",
+        "hint": "Peron"
+      },
+      {
+        "word": "billet",
+        "hint": "Bilet"
+      },
+      {
+        "word": "contrôleur",
+        "hint": "Konduktor"
+      },
+      {
+        "word": "wagon",
+        "hint": "Wagon"
+      },
+      {
+        "word": "locomotive",
+        "hint": "Lokomotywa"
+      },
+      {
+        "word": "correspondance",
+        "hint": "Przesiadka"
+      },
+      {
+        "word": "horaire",
+        "hint": "Rozkład jazdy"
+      },
+      {
+        "word": "trajet",
+        "hint": "Trasa / przejazd"
+      },
+      {
+        "word": "voie",
+        "hint": "Tor (kolejowy)"
+      },
+      {
+        "word": "compartiment",
+        "hint": "Przedział"
+      },
+      {
+        "word": "couchette",
+        "hint": "Kuszetka"
+      },
+      {
+        "word": "retard",
+        "hint": "Opóźnienie"
+      },
+      {
+        "word": "express",
+        "hint": "Ekspres / pociąg pospieszny"
+      },
+      {
+        "word": "terminus",
+        "hint": "Stacja końcowa"
+      }
+    ]
+  },
+  {
+    "key": "mathematics_wb",
+    "name": "Matematyka",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "addition",
+        "hint": "Dodawanie"
+      },
+      {
+        "word": "soustraction",
+        "hint": "Odejmowanie"
+      },
+      {
+        "word": "fraction",
+        "hint": "Ułamek"
+      },
+      {
+        "word": "équation",
+        "hint": "Równanie"
+      },
+      {
+        "word": "triangle",
+        "hint": "Trójkąt"
+      },
+      {
+        "word": "cercle",
+        "hint": "Okrąg / koło"
+      },
+      {
+        "word": "diamètre",
+        "hint": "Średnica"
+      },
+      {
+        "word": "calcul",
+        "hint": "Obliczenie / rachunek"
+      },
+      {
+        "word": "algèbre",
+        "hint": "Algebra"
+      },
+      {
+        "word": "géométrie",
+        "hint": "Geometria"
+      },
+      {
+        "word": "pourcentage",
+        "hint": "Procent"
+      },
+      {
+        "word": "moyenne",
+        "hint": "Średnia"
+      },
+      {
+        "word": "probabilité",
+        "hint": "Prawdopodobieństwo"
+      },
+      {
+        "word": "théorème",
+        "hint": "Twierdzenie"
+      },
+      {
+        "word": "racine",
+        "hint": "Pierwiastek (mat.)"
+      }
+    ]
+  },
+  {
+    "key": "physics_wb",
+    "name": "Fizyka",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "force",
+        "hint": "Siła"
+      },
+      {
+        "word": "énergie",
+        "hint": "Energia"
+      },
+      {
+        "word": "vitesse",
+        "hint": "Prędkość"
+      },
+      {
+        "word": "gravité",
+        "hint": "Grawitacja"
+      },
+      {
+        "word": "masse",
+        "hint": "Masa"
+      },
+      {
+        "word": "lumière",
+        "hint": "Światło"
+      },
+      {
+        "word": "ondes",
+        "hint": "Fale"
+      },
+      {
+        "word": "chaleur",
+        "hint": "Ciepło"
+      },
+      {
+        "word": "pression",
+        "hint": "Ciśnienie"
+      },
+      {
+        "word": "atome",
+        "hint": "Atom"
+      },
+      {
+        "word": "électron",
+        "hint": "Elektron"
+      },
+      {
+        "word": "friction",
+        "hint": "Tarcie"
+      },
+      {
+        "word": "magnétisme",
+        "hint": "Magnetyzm"
+      },
+      {
+        "word": "inertie",
+        "hint": "Bezwładność"
+      },
+      {
+        "word": "densité",
+        "hint": "Gęstość"
+      }
+    ]
+  },
+  {
+    "key": "chemistry_wb",
+    "name": "Chemia",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "molécule",
+        "hint": "Cząsteczka"
+      },
+      {
+        "word": "réaction",
+        "hint": "Reakcja (chemiczna)"
+      },
+      {
+        "word": "acide",
+        "hint": "Kwas"
+      },
+      {
+        "word": "base",
+        "hint": "Zasada / baza"
+      },
+      {
+        "word": "solution",
+        "hint": "Roztwór"
+      },
+      {
+        "word": "élément",
+        "hint": "Pierwiastek"
+      },
+      {
+        "word": "composé",
+        "hint": "Związek (chemiczny)"
+      },
+      {
+        "word": "catalyseur",
+        "hint": "Katalizator"
+      },
+      {
+        "word": "oxygène",
+        "hint": "Tlen"
+      },
+      {
+        "word": "hydrogène",
+        "hint": "Wodór"
+      },
+      {
+        "word": "carbone",
+        "hint": "Węgiel"
+      },
+      {
+        "word": "cristal",
+        "hint": "Kryształ"
+      },
+      {
+        "word": "distillation",
+        "hint": "Destylacja"
+      },
+      {
+        "word": "formule",
+        "hint": "Wzór (chemiczny)"
+      },
+      {
+        "word": "isotope",
+        "hint": "Izotop"
+      }
+    ]
+  },
+  {
+    "key": "biology_wb",
+    "name": "Biologia",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "cellule",
+        "hint": "Komórka"
+      },
+      {
+        "word": "gène",
+        "hint": "Gen"
+      },
+      {
+        "word": "espèce",
+        "hint": "Gatunek"
+      },
+      {
+        "word": "évolution",
+        "hint": "Ewolucja"
+      },
+      {
+        "word": "protéine",
+        "hint": "Białko"
+      },
+      {
+        "word": "bactérie",
+        "hint": "Bakteria"
+      },
+      {
+        "word": "organisme",
+        "hint": "Organizm"
+      },
+      {
+        "word": "tissu",
+        "hint": "Tkanka"
+      },
+      {
+        "word": "membrane",
+        "hint": "Błona"
+      },
+      {
+        "word": "chromosome",
+        "hint": "Chromosom"
+      },
+      {
+        "word": "photosynthèse",
+        "hint": "Fotosynteza"
+      },
+      {
+        "word": "écosystème",
+        "hint": "Ekosystem"
+      },
+      {
+        "word": "mutation",
+        "hint": "Mutacja"
+      },
+      {
+        "word": "noyau",
+        "hint": "Jądro (komórkowe)"
+      },
+      {
+        "word": "enzyme",
+        "hint": "Enzym"
+      }
+    ]
+  },
+  {
+    "key": "science_wb",
+    "name": "Nauka",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "hypothèse",
+        "hint": "Hipoteza"
+      },
+      {
+        "word": "expérience",
+        "hint": "Doświadczenie / eksperyment"
+      },
+      {
+        "word": "théorie",
+        "hint": "Teoria"
+      },
+      {
+        "word": "recherche",
+        "hint": "Badania"
+      },
+      {
+        "word": "découverte",
+        "hint": "Odkrycie"
+      },
+      {
+        "word": "invention",
+        "hint": "Wynalazek"
+      },
+      {
+        "word": "laboratoire",
+        "hint": "Laboratorium"
+      },
+      {
+        "word": "microscope",
+        "hint": "Mikroskop"
+      },
+      {
+        "word": "données",
+        "hint": "Dane"
+      },
+      {
+        "word": "résultat",
+        "hint": "Wynik"
+      },
+      {
+        "word": "analyse",
+        "hint": "Analiza"
+      },
+      {
+        "word": "méthode",
+        "hint": "Metoda"
+      },
+      {
+        "word": "observation",
+        "hint": "Obserwacja"
+      },
+      {
+        "word": "conclusion",
+        "hint": "Wniosek / konkluzja"
+      },
+      {
+        "word": "preuve",
+        "hint": "Dowód (naukowy)"
+      }
+    ]
+  },
+  {
+    "key": "festivals_wb",
+    "name": "Festiwale",
+    "icon": "🎪",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "carnaval",
+        "hint": "Karnawał"
+      },
+      {
+        "word": "festival",
+        "hint": "Festiwal"
+      },
+      {
+        "word": "parade",
+        "hint": "Parada"
+      },
+      {
+        "word": "concert",
+        "hint": "Koncert"
+      },
+      {
+        "word": "spectacle",
+        "hint": "Widowisko"
+      },
+      {
+        "word": "orchestre",
+        "hint": "Orkiestra"
+      },
+      {
+        "word": "costume",
+        "hint": "Kostium"
+      },
+      {
+        "word": "masque",
+        "hint": "Maska"
+      },
+      {
+        "word": "musique",
+        "hint": "Muzyka"
+      },
+      {
+        "word": "danse",
+        "hint": "Taniec"
+      },
+      {
+        "word": "foire",
+        "hint": "Jarmark"
+      },
+      {
+        "word": "fanfare",
+        "hint": "Fanfara"
+      },
+      {
+        "word": "folklore",
+        "hint": "Folklor"
+      },
+      {
+        "word": "chapiteau",
+        "hint": "Namiot cyrkowy"
+      },
+      {
+        "word": "artifice",
+        "hint": "Fajerwerki"
+      }
+    ]
+  },
+  {
+    "key": "traditions_wb",
+    "name": "Tradycje",
+    "icon": "🏛️",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "coutume",
+        "hint": "Zwyczaj"
+      },
+      {
+        "word": "heritage",
+        "hint": "Dziedzictwo"
+      },
+      {
+        "word": "rituel",
+        "hint": "Rytuał"
+      },
+      {
+        "word": "legende",
+        "hint": "Legenda"
+      },
+      {
+        "word": "ancetre",
+        "hint": "Przodek"
+      },
+      {
+        "word": "symbole",
+        "hint": "Symbol"
+      },
+      {
+        "word": "proverbe",
+        "hint": "Przysłowie"
+      },
+      {
+        "word": "artisanat",
+        "hint": "Rzemiosło"
+      },
+      {
+        "word": "ceremonie",
+        "hint": "Ceremonia"
+      },
+      {
+        "word": "croyance",
+        "hint": "Wierzenie"
+      },
+      {
+        "word": "hommage",
+        "hint": "Hołd"
+      },
+      {
+        "word": "culture",
+        "hint": "Kultura"
+      },
+      {
+        "word": "recette",
+        "hint": "Przepis (tradycyjny)"
+      },
+      {
+        "word": "identite",
+        "hint": "Tożsamość"
+      },
+      {
+        "word": "patrie",
+        "hint": "Ojczyzna"
+      }
+    ]
+  },
+  {
+    "key": "weddings_wb",
+    "name": "Śluby",
+    "icon": "💒",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "mariage",
+        "hint": "Ślub / Małżeństwo"
+      },
+      {
+        "word": "alliance",
+        "hint": "Obrączka"
+      },
+      {
+        "word": "mariee",
+        "hint": "Panna młoda"
+      },
+      {
+        "word": "bouquet",
+        "hint": "Bukiet"
+      },
+      {
+        "word": "voile",
+        "hint": "Welon"
+      },
+      {
+        "word": "invite",
+        "hint": "Gość (zaproszony)"
+      },
+      {
+        "word": "banquet",
+        "hint": "Bankiet"
+      },
+      {
+        "word": "discours",
+        "hint": "Przemowa"
+      },
+      {
+        "word": "demoiselle",
+        "hint": "Druhna"
+      },
+      {
+        "word": "temoin",
+        "hint": "Świadek"
+      },
+      {
+        "word": "eglise",
+        "hint": "Kościół"
+      },
+      {
+        "word": "reception",
+        "hint": "Przyjęcie"
+      },
+      {
+        "word": "cadeau",
+        "hint": "Prezent ślubny"
+      },
+      {
+        "word": "fiancee",
+        "hint": "Narzeczona"
+      },
+      {
+        "word": "gateau",
+        "hint": "Tort weselny"
+      }
+    ]
+  },
+  {
+    "key": "holidays_wb",
+    "name": "Święta",
+    "icon": "🎄",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "vacances",
+        "hint": "Wakacje / Urlop"
+      },
+      {
+        "word": "sapin",
+        "hint": "Choinka"
+      },
+      {
+        "word": "bougie",
+        "hint": "Świeczka"
+      },
+      {
+        "word": "creche",
+        "hint": "Szopka bożonarodzeniowa"
+      },
+      {
+        "word": "cloche",
+        "hint": "Dzwonek"
+      },
+      {
+        "word": "etoile",
+        "hint": "Gwiazda"
+      },
+      {
+        "word": "festin",
+        "hint": "Uczta"
+      },
+      {
+        "word": "guirlande",
+        "hint": "Girlanda"
+      },
+      {
+        "word": "reveillon",
+        "hint": "Wigilia / Sylwester"
+      },
+      {
+        "word": "tradition",
+        "hint": "Tradycja"
+      },
+      {
+        "word": "famille",
+        "hint": "Rodzina"
+      },
+      {
+        "word": "surprise",
+        "hint": "Niespodzianka"
+      },
+      {
+        "word": "bonheur",
+        "hint": "Szczęście"
+      },
+      {
+        "word": "voeux",
+        "hint": "Życzenia"
+      },
+      {
+        "word": "clocher",
+        "hint": "Dzwonnica"
+      }
+    ]
+  },
+  {
+    "key": "celebrations_wb",
+    "name": "Uroczystości",
+    "icon": "🎉",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "anniversaire",
+        "hint": "Urodziny / Rocznica"
+      },
+      {
+        "word": "bapteme",
+        "hint": "Chrzest"
+      },
+      {
+        "word": "communion",
+        "hint": "Komunia"
+      },
+      {
+        "word": "diplome",
+        "hint": "Dyplom"
+      },
+      {
+        "word": "retraite",
+        "hint": "Emerytura"
+      },
+      {
+        "word": "victoire",
+        "hint": "Zwycięstwo"
+      },
+      {
+        "word": "jubile",
+        "hint": "Jubileusz"
+      },
+      {
+        "word": "toast",
+        "hint": "Toast"
+      },
+      {
+        "word": "ovation",
+        "hint": "Owacja"
+      },
+      {
+        "word": "confetti",
+        "hint": "Konfetti"
+      },
+      {
+        "word": "champagne",
+        "hint": "Szampan"
+      },
+      {
+        "word": "medaille",
+        "hint": "Medal"
+      },
+      {
+        "word": "trophee",
+        "hint": "Trofeum"
+      },
+      {
+        "word": "recompense",
+        "hint": "Nagroda"
+      },
+      {
+        "word": "couronne",
+        "hint": "Korona / Wieniec"
+      }
+    ]
+  },
+  {
+    "key": "fashion_wb",
+    "name": "Moda",
+    "icon": "👗",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "robe",
+        "hint": "Sukienka"
+      },
+      {
+        "word": "jupe",
+        "hint": "Spódnica"
+      },
+      {
+        "word": "pantalon",
+        "hint": "Spodnie"
+      },
+      {
+        "word": "chemise",
+        "hint": "Koszula"
+      },
+      {
+        "word": "veste",
+        "hint": "Marynarka"
+      },
+      {
+        "word": "manteau",
+        "hint": "Płaszcz"
+      },
+      {
+        "word": "echarpe",
+        "hint": "Szalik"
+      },
+      {
+        "word": "cravate",
+        "hint": "Krawat"
+      },
+      {
+        "word": "ceinture",
+        "hint": "Pasek"
+      },
+      {
+        "word": "talons",
+        "hint": "Obcasy"
+      },
+      {
+        "word": "styliste",
+        "hint": "Projektant mody"
+      },
+      {
+        "word": "tendance",
+        "hint": "Trend"
+      },
+      {
+        "word": "elegance",
+        "hint": "Elegancja"
+      },
+      {
+        "word": "vitrine",
+        "hint": "Witryna"
+      },
+      {
+        "word": "boutique",
+        "hint": "Butik"
+      }
+    ]
+  },
+  {
+    "key": "textiles_wb",
+    "name": "Tekstylia",
+    "icon": "🧵",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "coton",
+        "hint": "Bawełna"
+      },
+      {
+        "word": "soie",
+        "hint": "Jedwab"
+      },
+      {
+        "word": "laine",
+        "hint": "Wełna"
+      },
+      {
+        "word": "cuir",
+        "hint": "Skóra"
+      },
+      {
+        "word": "velours",
+        "hint": "Aksamit"
+      },
+      {
+        "word": "dentelle",
+        "hint": "Koronka"
+      },
+      {
+        "word": "tissu",
+        "hint": "Tkanina"
+      },
+      {
+        "word": "broderie",
+        "hint": "Haft"
+      },
+      {
+        "word": "couture",
+        "hint": "Szycie"
+      },
+      {
+        "word": "bobine",
+        "hint": "Szpulka"
+      },
+      {
+        "word": "aiguille",
+        "hint": "Igła"
+      },
+      {
+        "word": "patron",
+        "hint": "Wykrój"
+      },
+      {
+        "word": "teinture",
+        "hint": "Barwnik"
+      },
+      {
+        "word": "fibre",
+        "hint": "Włókno"
+      },
+      {
+        "word": "tricot",
+        "hint": "Dzianina"
+      }
+    ]
+  },
+  {
+    "key": "jewelry_wb",
+    "name": "Biżuteria",
+    "icon": "💍",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "bague",
+        "hint": "Pierścionek"
+      },
+      {
+        "word": "collier",
+        "hint": "Naszyjnik"
+      },
+      {
+        "word": "bracelet",
+        "hint": "Bransoletka"
+      },
+      {
+        "word": "boucle",
+        "hint": "Kolczyk"
+      },
+      {
+        "word": "diamant",
+        "hint": "Diament"
+      },
+      {
+        "word": "perle",
+        "hint": "Perła"
+      },
+      {
+        "word": "rubis",
+        "hint": "Rubin"
+      },
+      {
+        "word": "saphir",
+        "hint": "Szafir"
+      },
+      {
+        "word": "emeraude",
+        "hint": "Szmaragd"
+      },
+      {
+        "word": "argent",
+        "hint": "Srebro"
+      },
+      {
+        "word": "pendentif",
+        "hint": "Wisiorek"
+      },
+      {
+        "word": "broche",
+        "hint": "Broszka"
+      },
+      {
+        "word": "bijoutier",
+        "hint": "Jubiler"
+      },
+      {
+        "word": "ecrin",
+        "hint": "Szkatułka"
+      },
+      {
+        "word": "montre",
+        "hint": "Zegarek"
+      }
+    ]
+  },
+  {
+    "key": "cosmetics_wb",
+    "name": "Kosmetyki",
+    "icon": "💄",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "rouge",
+        "hint": "Szminka"
+      },
+      {
+        "word": "mascara",
+        "hint": "Tusz do rzęs"
+      },
+      {
+        "word": "parfum",
+        "hint": "Perfumy"
+      },
+      {
+        "word": "creme",
+        "hint": "Krem"
+      },
+      {
+        "word": "poudre",
+        "hint": "Puder"
+      },
+      {
+        "word": "vernis",
+        "hint": "Lakier do paznokci"
+      },
+      {
+        "word": "shampoing",
+        "hint": "Szampon"
+      },
+      {
+        "word": "savon",
+        "hint": "Mydło"
+      },
+      {
+        "word": "miroir",
+        "hint": "Lustro"
+      },
+      {
+        "word": "pinceau",
+        "hint": "Pędzel"
+      },
+      {
+        "word": "maquillage",
+        "hint": "Makijaż"
+      },
+      {
+        "word": "lotion",
+        "hint": "Balsam"
+      },
+      {
+        "word": "serum",
+        "hint": "Serum"
+      },
+      {
+        "word": "palette",
+        "hint": "Paleta (kosmetyczna)"
+      },
+      {
+        "word": "gommage",
+        "hint": "Peeling"
+      }
+    ]
+  },
+  {
+    "key": "hairstyles_wb",
+    "name": "Fryzury",
+    "icon": "💇",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "coiffure",
+        "hint": "Fryzura"
+      },
+      {
+        "word": "coiffeur",
+        "hint": "Fryzjer"
+      },
+      {
+        "word": "frange",
+        "hint": "Grzywka"
+      },
+      {
+        "word": "tresse",
+        "hint": "Warkocz"
+      },
+      {
+        "word": "chignon",
+        "hint": "Kok"
+      },
+      {
+        "word": "boucles",
+        "hint": "Loki"
+      },
+      {
+        "word": "meche",
+        "hint": "Kosmyk / Pasemko"
+      },
+      {
+        "word": "coloration",
+        "hint": "Koloryzacja"
+      },
+      {
+        "word": "permanente",
+        "hint": "Trwała ondulacja"
+      },
+      {
+        "word": "tondeuse",
+        "hint": "Maszynka do strzyżenia"
+      },
+      {
+        "word": "peigne",
+        "hint": "Grzebień"
+      },
+      {
+        "word": "seche",
+        "hint": "Suszarka"
+      },
+      {
+        "word": "lisseur",
+        "hint": "Prostownica"
+      },
+      {
+        "word": "cheveux",
+        "hint": "Włosy"
+      },
+      {
+        "word": "shampoing",
+        "hint": "Szampon"
+      }
+    ]
+  },
+  {
+    "key": "environment_wb",
+    "name": "Środowisko",
+    "icon": "🌍",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "nature",
+        "hint": "Natura / Przyroda"
+      },
+      {
+        "word": "pollution",
+        "hint": "Zanieczyszczenie"
+      },
+      {
+        "word": "foret",
+        "hint": "Las"
+      },
+      {
+        "word": "riviere",
+        "hint": "Rzeka"
+      },
+      {
+        "word": "montagne",
+        "hint": "Góra"
+      },
+      {
+        "word": "ocean",
+        "hint": "Ocean"
+      },
+      {
+        "word": "atmosphere",
+        "hint": "Atmosfera"
+      },
+      {
+        "word": "ecosysteme",
+        "hint": "Ekosystem"
+      },
+      {
+        "word": "biodiversite",
+        "hint": "Bioróżnorodność"
+      },
+      {
+        "word": "espece",
+        "hint": "Gatunek"
+      },
+      {
+        "word": "habitat",
+        "hint": "Siedlisko"
+      },
+      {
+        "word": "sauvage",
+        "hint": "Dziki"
+      },
+      {
+        "word": "reserve",
+        "hint": "Rezerwat"
+      },
+      {
+        "word": "planete",
+        "hint": "Planeta"
+      },
+      {
+        "word": "ressource",
+        "hint": "Zasób"
+      }
+    ]
+  },
+  {
+    "key": "recycling_wb",
+    "name": "Recykling",
+    "icon": "♻️",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "recyclage",
+        "hint": "Recykling"
+      },
+      {
+        "word": "poubelle",
+        "hint": "Kosz na śmieci"
+      },
+      {
+        "word": "dechet",
+        "hint": "Odpad"
+      },
+      {
+        "word": "plastique",
+        "hint": "Plastik"
+      },
+      {
+        "word": "carton",
+        "hint": "Karton"
+      },
+      {
+        "word": "verre",
+        "hint": "Szkło"
+      },
+      {
+        "word": "compost",
+        "hint": "Kompost"
+      },
+      {
+        "word": "triage",
+        "hint": "Sortowanie"
+      },
+      {
+        "word": "conteneur",
+        "hint": "Kontener"
+      },
+      {
+        "word": "emballage",
+        "hint": "Opakowanie"
+      },
+      {
+        "word": "bouteille",
+        "hint": "Butelka"
+      },
+      {
+        "word": "papier",
+        "hint": "Papier"
+      },
+      {
+        "word": "collecte",
+        "hint": "Zbiórka"
+      },
+      {
+        "word": "dechetterie",
+        "hint": "Punkt zbiórki odpadów"
+      },
+      {
+        "word": "reutiliser",
+        "hint": "Ponownie wykorzystać"
+      }
+    ]
+  },
+  {
+    "key": "energy_wb",
+    "name": "Energia",
+    "icon": "⚡",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "energie",
+        "hint": "Energia"
+      },
+      {
+        "word": "solaire",
+        "hint": "Słoneczny"
+      },
+      {
+        "word": "eolienne",
+        "hint": "Wiatrak / Turbina wiatrowa"
+      },
+      {
+        "word": "nucleaire",
+        "hint": "Jądrowy"
+      },
+      {
+        "word": "barrage",
+        "hint": "Zapora / Tama"
+      },
+      {
+        "word": "panneau",
+        "hint": "Panel (słoneczny)"
+      },
+      {
+        "word": "batterie",
+        "hint": "Bateria / Akumulator"
+      },
+      {
+        "word": "centrale",
+        "hint": "Elektrownia"
+      },
+      {
+        "word": "charbon",
+        "hint": "Węgiel"
+      },
+      {
+        "word": "petrole",
+        "hint": "Ropa naftowa"
+      },
+      {
+        "word": "gaz",
+        "hint": "Gaz"
+      },
+      {
+        "word": "turbine",
+        "hint": "Turbina"
+      },
+      {
+        "word": "courant",
+        "hint": "Prąd"
+      },
+      {
+        "word": "tension",
+        "hint": "Napięcie"
+      },
+      {
+        "word": "watt",
+        "hint": "Wat"
+      }
+    ]
+  },
+  {
+    "key": "climate_wb",
+    "name": "Klimat",
+    "icon": "🌡️",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "climat",
+        "hint": "Klimat"
+      },
+      {
+        "word": "rechauffement",
+        "hint": "Ocieplenie"
+      },
+      {
+        "word": "secheresse",
+        "hint": "Susza"
+      },
+      {
+        "word": "inondation",
+        "hint": "Powódź"
+      },
+      {
+        "word": "tempete",
+        "hint": "Burza"
+      },
+      {
+        "word": "ouragan",
+        "hint": "Huragan"
+      },
+      {
+        "word": "glacier",
+        "hint": "Lodowiec"
+      },
+      {
+        "word": "emission",
+        "hint": "Emisja"
+      },
+      {
+        "word": "carbone",
+        "hint": "Węgiel (pierwiastek)"
+      },
+      {
+        "word": "effet",
+        "hint": "Efekt (cieplarniany)"
+      },
+      {
+        "word": "canicule",
+        "hint": "Upał"
+      },
+      {
+        "word": "mousson",
+        "hint": "Monsun"
+      },
+      {
+        "word": "fonte",
+        "hint": "Topnienie"
+      },
+      {
+        "word": "aride",
+        "hint": "Jałowy / Suchy"
+      },
+      {
+        "word": "cyclone",
+        "hint": "Cyklon"
+      }
+    ]
+  },
+  {
+    "key": "sustainability_wb",
+    "name": "Zrównoważony rozwój",
+    "icon": "🌱",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "durable",
+        "hint": "Zrównoważony / Trwały"
+      },
+      {
+        "word": "biologique",
+        "hint": "Ekologiczny / Organiczny"
+      },
+      {
+        "word": "empreinte",
+        "hint": "Ślad (ekologiczny)"
+      },
+      {
+        "word": "commerce",
+        "hint": "Handel (sprawiedliwy)"
+      },
+      {
+        "word": "ethique",
+        "hint": "Etyka"
+      },
+      {
+        "word": "isolation",
+        "hint": "Izolacja (termiczna)"
+      },
+      {
+        "word": "transport",
+        "hint": "Transport"
+      },
+      {
+        "word": "zero",
+        "hint": "Zero (odpadów)"
+      },
+      {
+        "word": "vegetal",
+        "hint": "Roślinny"
+      },
+      {
+        "word": "alternatif",
+        "hint": "Alternatywny"
+      },
+      {
+        "word": "sobriete",
+        "hint": "Umiar / Oszczędność"
+      },
+      {
+        "word": "potager",
+        "hint": "Ogród warzywny"
+      },
+      {
+        "word": "local",
+        "hint": "Lokalny"
+      },
+      {
+        "word": "ecologie",
+        "hint": "Ekologia"
+      },
+      {
+        "word": "renouveler",
+        "hint": "Odnawiać"
+      }
+    ]
   }
 ]

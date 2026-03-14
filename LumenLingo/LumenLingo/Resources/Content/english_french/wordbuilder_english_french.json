@@ -2098,5 +2098,4905 @@
         "hint": "Silk"
       }
     ]
+  },
+  {
+    "key": "daily_routine_wb",
+    "name": "Daily Routine",
+    "description": "Everyday activities and routines in French",
+    "iconName": "sunrise",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "matin",
+        "hint": "Morning"
+      },
+      {
+        "word": "réveil",
+        "hint": "Alarm clock"
+      },
+      {
+        "word": "douche",
+        "hint": "Shower"
+      },
+      {
+        "word": "repas",
+        "hint": "Meal"
+      },
+      {
+        "word": "travail",
+        "hint": "Work"
+      },
+      {
+        "word": "sommeil",
+        "hint": "Sleep"
+      },
+      {
+        "word": "brosse",
+        "hint": "Brush"
+      },
+      {
+        "word": "miroir",
+        "hint": "Mirror"
+      },
+      {
+        "word": "savon",
+        "hint": "Soap"
+      },
+      {
+        "word": "habiller",
+        "hint": "To dress"
+      },
+      {
+        "word": "coucher",
+        "hint": "To go to bed"
+      },
+      {
+        "word": "lever",
+        "hint": "To get up"
+      },
+      {
+        "word": "dîner",
+        "hint": "Dinner"
+      },
+      {
+        "word": "marcher",
+        "hint": "To walk"
+      },
+      {
+        "word": "dormir",
+        "hint": "To sleep"
+      }
+    ]
+  },
+  {
+    "key": "shopping_wb",
+    "name": "Shopping",
+    "description": "Shopping vocabulary in French",
+    "iconName": "cart",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "magasin",
+        "hint": "Store"
+      },
+      {
+        "word": "acheter",
+        "hint": "To buy"
+      },
+      {
+        "word": "vendre",
+        "hint": "To sell"
+      },
+      {
+        "word": "caisse",
+        "hint": "Cash register"
+      },
+      {
+        "word": "panier",
+        "hint": "Basket"
+      },
+      {
+        "word": "soldes",
+        "hint": "Sales"
+      },
+      {
+        "word": "remise",
+        "hint": "Discount"
+      },
+      {
+        "word": "rayon",
+        "hint": "Aisle / Department"
+      },
+      {
+        "word": "monnaie",
+        "hint": "Change (coins)"
+      },
+      {
+        "word": "facture",
+        "hint": "Invoice"
+      },
+      {
+        "word": "client",
+        "hint": "Customer"
+      },
+      {
+        "word": "ticket",
+        "hint": "Receipt"
+      },
+      {
+        "word": "taille",
+        "hint": "Size"
+      },
+      {
+        "word": "vitrine",
+        "hint": "Shop window"
+      },
+      {
+        "word": "marché",
+        "hint": "Market"
+      }
+    ]
+  },
+  {
+    "key": "restaurant_wb",
+    "name": "Restaurant",
+    "description": "Restaurant and dining vocabulary in French",
+    "iconName": "fork.knife",
+    "color": "#ef4444",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "serveur",
+        "hint": "Waiter"
+      },
+      {
+        "word": "carte",
+        "hint": "Menu"
+      },
+      {
+        "word": "entrée",
+        "hint": "Starter"
+      },
+      {
+        "word": "plat",
+        "hint": "Main course"
+      },
+      {
+        "word": "dessert",
+        "hint": "Dessert"
+      },
+      {
+        "word": "addition",
+        "hint": "Bill / Check"
+      },
+      {
+        "word": "réserver",
+        "hint": "To reserve"
+      },
+      {
+        "word": "pourboire",
+        "hint": "Tip"
+      },
+      {
+        "word": "cuisine",
+        "hint": "Kitchen / Cooking"
+      },
+      {
+        "word": "boisson",
+        "hint": "Drink"
+      },
+      {
+        "word": "commande",
+        "hint": "Order"
+      },
+      {
+        "word": "assiette",
+        "hint": "Plate"
+      },
+      {
+        "word": "couvert",
+        "hint": "Place setting"
+      },
+      {
+        "word": "nappe",
+        "hint": "Tablecloth"
+      },
+      {
+        "word": "goûter",
+        "hint": "To taste"
+      }
+    ]
+  },
+  {
+    "key": "garden_wb",
+    "name": "Garden",
+    "description": "Garden and plants vocabulary in French",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "jardin",
+        "hint": "Garden"
+      },
+      {
+        "word": "fleur",
+        "hint": "Flower"
+      },
+      {
+        "word": "arbre",
+        "hint": "Tree"
+      },
+      {
+        "word": "herbe",
+        "hint": "Grass"
+      },
+      {
+        "word": "terre",
+        "hint": "Soil / Earth"
+      },
+      {
+        "word": "graine",
+        "hint": "Seed"
+      },
+      {
+        "word": "rosier",
+        "hint": "Rose bush"
+      },
+      {
+        "word": "arroser",
+        "hint": "To water"
+      },
+      {
+        "word": "tondre",
+        "hint": "To mow"
+      },
+      {
+        "word": "planter",
+        "hint": "To plant"
+      },
+      {
+        "word": "racine",
+        "hint": "Root"
+      },
+      {
+        "word": "feuille",
+        "hint": "Leaf"
+      },
+      {
+        "word": "branche",
+        "hint": "Branch"
+      },
+      {
+        "word": "pelouse",
+        "hint": "Lawn"
+      },
+      {
+        "word": "haie",
+        "hint": "Hedge"
+      }
+    ]
+  },
+  {
+    "key": "bathroom_wb",
+    "name": "Bathroom",
+    "description": "Bathroom items and vocabulary in French",
+    "iconName": "drop",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "serviette",
+        "hint": "Towel"
+      },
+      {
+        "word": "baignoire",
+        "hint": "Bathtub"
+      },
+      {
+        "word": "lavabo",
+        "hint": "Sink"
+      },
+      {
+        "word": "robinet",
+        "hint": "Faucet / Tap"
+      },
+      {
+        "word": "shampooing",
+        "hint": "Shampoo"
+      },
+      {
+        "word": "rasoir",
+        "hint": "Razor"
+      },
+      {
+        "word": "dentifrice",
+        "hint": "Toothpaste"
+      },
+      {
+        "word": "éponge",
+        "hint": "Sponge"
+      },
+      {
+        "word": "rideau",
+        "hint": "Curtain"
+      },
+      {
+        "word": "carrelage",
+        "hint": "Tiles"
+      },
+      {
+        "word": "brosser",
+        "hint": "To brush"
+      },
+      {
+        "word": "rincer",
+        "hint": "To rinse"
+      },
+      {
+        "word": "sécher",
+        "hint": "To dry"
+      },
+      {
+        "word": "peigne",
+        "hint": "Comb"
+      },
+      {
+        "word": "mousse",
+        "hint": "Foam / Lather"
+      }
+    ]
+  },
+  {
+    "key": "cinema_wb",
+    "name": "Cinema",
+    "description": "Cinema and film vocabulary in French",
+    "iconName": "film",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "écran",
+        "hint": "Screen"
+      },
+      {
+        "word": "acteur",
+        "hint": "Actor"
+      },
+      {
+        "word": "actrice",
+        "hint": "Actress"
+      },
+      {
+        "word": "scénario",
+        "hint": "Screenplay"
+      },
+      {
+        "word": "tournage",
+        "hint": "Filming / Shooting"
+      },
+      {
+        "word": "séance",
+        "hint": "Showing / Session"
+      },
+      {
+        "word": "billet",
+        "hint": "Ticket"
+      },
+      {
+        "word": "caméra",
+        "hint": "Camera"
+      },
+      {
+        "word": "décor",
+        "hint": "Set / Scenery"
+      },
+      {
+        "word": "réalisateur",
+        "hint": "Director"
+      },
+      {
+        "word": "intrigue",
+        "hint": "Plot"
+      },
+      {
+        "word": "doublage",
+        "hint": "Dubbing"
+      },
+      {
+        "word": "affiche",
+        "hint": "Poster"
+      },
+      {
+        "word": "bande",
+        "hint": "Trailer (short for bande-annonce)"
+      },
+      {
+        "word": "comédie",
+        "hint": "Comedy"
+      }
+    ]
+  },
+  {
+    "key": "art_wb",
+    "name": "Art",
+    "description": "Art and creative expression in French",
+    "iconName": "paintbrush",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "peinture",
+        "hint": "Painting"
+      },
+      {
+        "word": "dessin",
+        "hint": "Drawing"
+      },
+      {
+        "word": "toile",
+        "hint": "Canvas"
+      },
+      {
+        "word": "pinceau",
+        "hint": "Paintbrush"
+      },
+      {
+        "word": "palette",
+        "hint": "Palette"
+      },
+      {
+        "word": "galerie",
+        "hint": "Gallery"
+      },
+      {
+        "word": "exposition",
+        "hint": "Exhibition"
+      },
+      {
+        "word": "sculpture",
+        "hint": "Sculpture"
+      },
+      {
+        "word": "cadre",
+        "hint": "Frame"
+      },
+      {
+        "word": "tableau",
+        "hint": "Picture / Painting"
+      },
+      {
+        "word": "aquarelle",
+        "hint": "Watercolor"
+      },
+      {
+        "word": "croquis",
+        "hint": "Sketch"
+      },
+      {
+        "word": "modèle",
+        "hint": "Model"
+      },
+      {
+        "word": "atelier",
+        "hint": "Studio / Workshop"
+      },
+      {
+        "word": "vernissage",
+        "hint": "Opening night (art)"
+      }
+    ]
+  },
+  {
+    "key": "dance_wb",
+    "name": "Dance",
+    "description": "Dance styles and vocabulary in French",
+    "iconName": "figure.dance",
+    "color": "#d946ef",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "danse",
+        "hint": "Dance"
+      },
+      {
+        "word": "ballet",
+        "hint": "Ballet"
+      },
+      {
+        "word": "rythme",
+        "hint": "Rhythm"
+      },
+      {
+        "word": "chorégraphie",
+        "hint": "Choreography"
+      },
+      {
+        "word": "mouvement",
+        "hint": "Movement"
+      },
+      {
+        "word": "tempo",
+        "hint": "Tempo"
+      },
+      {
+        "word": "valse",
+        "hint": "Waltz"
+      },
+      {
+        "word": "danseur",
+        "hint": "Dancer (male)"
+      },
+      {
+        "word": "danseuse",
+        "hint": "Dancer (female)"
+      },
+      {
+        "word": "scène",
+        "hint": "Stage"
+      },
+      {
+        "word": "costume",
+        "hint": "Costume"
+      },
+      {
+        "word": "tourner",
+        "hint": "To spin / Turn"
+      },
+      {
+        "word": "salsa",
+        "hint": "Salsa"
+      },
+      {
+        "word": "tango",
+        "hint": "Tango"
+      },
+      {
+        "word": "spectacle",
+        "hint": "Show / Performance"
+      }
+    ]
+  },
+  {
+    "key": "photography_wb",
+    "name": "Photography",
+    "description": "Photography vocabulary in French",
+    "iconName": "camera",
+    "color": "#64748b",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "objectif",
+        "hint": "Lens"
+      },
+      {
+        "word": "cliché",
+        "hint": "Snapshot"
+      },
+      {
+        "word": "portrait",
+        "hint": "Portrait"
+      },
+      {
+        "word": "paysage",
+        "hint": "Landscape"
+      },
+      {
+        "word": "lumière",
+        "hint": "Light"
+      },
+      {
+        "word": "ombre",
+        "hint": "Shadow"
+      },
+      {
+        "word": "retouche",
+        "hint": "Retouching"
+      },
+      {
+        "word": "exposition",
+        "hint": "Exposure"
+      },
+      {
+        "word": "tirage",
+        "hint": "Print"
+      },
+      {
+        "word": "cadrage",
+        "hint": "Framing"
+      },
+      {
+        "word": "flou",
+        "hint": "Blur"
+      },
+      {
+        "word": "netteté",
+        "hint": "Sharpness"
+      },
+      {
+        "word": "capteur",
+        "hint": "Sensor"
+      },
+      {
+        "word": "trépied",
+        "hint": "Tripod"
+      },
+      {
+        "word": "pellicule",
+        "hint": "Film (roll)"
+      }
+    ]
+  },
+  {
+    "key": "crafts_wb",
+    "name": "Crafts",
+    "description": "Handicrafts and DIY vocabulary in French",
+    "iconName": "scissors",
+    "color": "#f97316",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "couture",
+        "hint": "Sewing"
+      },
+      {
+        "word": "tricot",
+        "hint": "Knitting"
+      },
+      {
+        "word": "broderie",
+        "hint": "Embroidery"
+      },
+      {
+        "word": "ciseaux",
+        "hint": "Scissors"
+      },
+      {
+        "word": "aiguille",
+        "hint": "Needle"
+      },
+      {
+        "word": "tissu",
+        "hint": "Fabric"
+      },
+      {
+        "word": "patron",
+        "hint": "Pattern (sewing)"
+      },
+      {
+        "word": "colle",
+        "hint": "Glue"
+      },
+      {
+        "word": "perle",
+        "hint": "Bead"
+      },
+      {
+        "word": "crochet",
+        "hint": "Crochet hook"
+      },
+      {
+        "word": "bouton",
+        "hint": "Button"
+      },
+      {
+        "word": "ruban",
+        "hint": "Ribbon"
+      },
+      {
+        "word": "poterie",
+        "hint": "Pottery"
+      },
+      {
+        "word": "céramique",
+        "hint": "Ceramics"
+      },
+      {
+        "word": "mosaïque",
+        "hint": "Mosaic"
+      }
+    ]
+  },
+  {
+    "key": "geography_wb",
+    "name": "Geography",
+    "description": "Geography terms in French",
+    "iconName": "globe.europe.africa",
+    "color": "#2563eb",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "continent",
+        "hint": "Continent"
+      },
+      {
+        "word": "frontière",
+        "hint": "Border"
+      },
+      {
+        "word": "capitale",
+        "hint": "Capital city"
+      },
+      {
+        "word": "désert",
+        "hint": "Desert"
+      },
+      {
+        "word": "volcan",
+        "hint": "Volcano"
+      },
+      {
+        "word": "fleuve",
+        "hint": "River (flowing to sea)"
+      },
+      {
+        "word": "colline",
+        "hint": "Hill"
+      },
+      {
+        "word": "vallée",
+        "hint": "Valley"
+      },
+      {
+        "word": "plateau",
+        "hint": "Plateau"
+      },
+      {
+        "word": "glacier",
+        "hint": "Glacier"
+      },
+      {
+        "word": "falaise",
+        "hint": "Cliff"
+      },
+      {
+        "word": "plaine",
+        "hint": "Plain"
+      },
+      {
+        "word": "latitude",
+        "hint": "Latitude"
+      },
+      {
+        "word": "tropique",
+        "hint": "Tropic"
+      },
+      {
+        "word": "archipel",
+        "hint": "Archipelago"
+      }
+    ]
+  },
+  {
+    "key": "astronomy_wb",
+    "name": "Astronomy",
+    "description": "Space and astronomy vocabulary in French",
+    "iconName": "sparkles",
+    "color": "#1e1b4b",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "étoile",
+        "hint": "Star"
+      },
+      {
+        "word": "planète",
+        "hint": "Planet"
+      },
+      {
+        "word": "galaxie",
+        "hint": "Galaxy"
+      },
+      {
+        "word": "comète",
+        "hint": "Comet"
+      },
+      {
+        "word": "orbite",
+        "hint": "Orbit"
+      },
+      {
+        "word": "satellite",
+        "hint": "Satellite"
+      },
+      {
+        "word": "télescope",
+        "hint": "Telescope"
+      },
+      {
+        "word": "fusée",
+        "hint": "Rocket"
+      },
+      {
+        "word": "météore",
+        "hint": "Meteor"
+      },
+      {
+        "word": "solaire",
+        "hint": "Solar"
+      },
+      {
+        "word": "lunaire",
+        "hint": "Lunar"
+      },
+      {
+        "word": "nébuleuse",
+        "hint": "Nebula"
+      },
+      {
+        "word": "astéroïde",
+        "hint": "Asteroid"
+      },
+      {
+        "word": "éclipse",
+        "hint": "Eclipse"
+      },
+      {
+        "word": "gravité",
+        "hint": "Gravity"
+      }
+    ]
+  },
+  {
+    "key": "ocean_wb",
+    "name": "Ocean",
+    "description": "Ocean and sea vocabulary in French",
+    "iconName": "water.waves",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "marée",
+        "hint": "Tide"
+      },
+      {
+        "word": "vague",
+        "hint": "Wave"
+      },
+      {
+        "word": "courant",
+        "hint": "Current"
+      },
+      {
+        "word": "récif",
+        "hint": "Reef"
+      },
+      {
+        "word": "corail",
+        "hint": "Coral"
+      },
+      {
+        "word": "plongée",
+        "hint": "Diving"
+      },
+      {
+        "word": "phare",
+        "hint": "Lighthouse"
+      },
+      {
+        "word": "ancre",
+        "hint": "Anchor"
+      },
+      {
+        "word": "bateau",
+        "hint": "Boat"
+      },
+      {
+        "word": "naviguer",
+        "hint": "To navigate / Sail"
+      },
+      {
+        "word": "baleine",
+        "hint": "Whale"
+      },
+      {
+        "word": "dauphin",
+        "hint": "Dolphin"
+      },
+      {
+        "word": "algue",
+        "hint": "Seaweed"
+      },
+      {
+        "word": "coquille",
+        "hint": "Shell"
+      },
+      {
+        "word": "profondeur",
+        "hint": "Depth"
+      }
+    ]
+  },
+  {
+    "key": "mountains_wb",
+    "name": "Mountains",
+    "description": "Mountain and hiking vocabulary in French",
+    "iconName": "mountain.2",
+    "color": "#78716c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "sommet",
+        "hint": "Summit / Peak"
+      },
+      {
+        "word": "sentier",
+        "hint": "Trail / Path"
+      },
+      {
+        "word": "altitude",
+        "hint": "Altitude"
+      },
+      {
+        "word": "escalade",
+        "hint": "Rock climbing"
+      },
+      {
+        "word": "refuge",
+        "hint": "Mountain shelter"
+      },
+      {
+        "word": "avalanche",
+        "hint": "Avalanche"
+      },
+      {
+        "word": "rocher",
+        "hint": "Rock"
+      },
+      {
+        "word": "cascade",
+        "hint": "Waterfall"
+      },
+      {
+        "word": "pente",
+        "hint": "Slope"
+      },
+      {
+        "word": "grotte",
+        "hint": "Cave"
+      },
+      {
+        "word": "descente",
+        "hint": "Descent"
+      },
+      {
+        "word": "corde",
+        "hint": "Rope"
+      },
+      {
+        "word": "randonner",
+        "hint": "To hike"
+      },
+      {
+        "word": "boussole",
+        "hint": "Compass"
+      },
+      {
+        "word": "panorama",
+        "hint": "Panoramic view"
+      }
+    ]
+  },
+  {
+    "key": "camping_wb",
+    "name": "Camping",
+    "description": "Camping and outdoor vocabulary in French",
+    "iconName": "tent",
+    "color": "#65a30d",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "tente",
+        "hint": "Tent"
+      },
+      {
+        "word": "feu",
+        "hint": "Fire"
+      },
+      {
+        "word": "lampe",
+        "hint": "Lamp"
+      },
+      {
+        "word": "forêt",
+        "hint": "Forest"
+      },
+      {
+        "word": "bivouac",
+        "hint": "Bivouac / Camp"
+      },
+      {
+        "word": "sac",
+        "hint": "Bag / Backpack"
+      },
+      {
+        "word": "étoile",
+        "hint": "Star"
+      },
+      {
+        "word": "rivière",
+        "hint": "River"
+      },
+      {
+        "word": "pêche",
+        "hint": "Fishing"
+      },
+      {
+        "word": "bûche",
+        "hint": "Log"
+      },
+      {
+        "word": "hamac",
+        "hint": "Hammock"
+      },
+      {
+        "word": "gourde",
+        "hint": "Water bottle"
+      },
+      {
+        "word": "canif",
+        "hint": "Pocket knife"
+      },
+      {
+        "word": "insecte",
+        "hint": "Insect"
+      },
+      {
+        "word": "étoilé",
+        "hint": "Starry"
+      }
+    ]
+  },
+  {
+    "key": "law_wb",
+    "name": "Law",
+    "description": "Legal vocabulary in French",
+    "iconName": "building.columns",
+    "color": "#6366f1",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "avocat",
+        "hint": "Lawyer"
+      },
+      {
+        "word": "tribunal",
+        "hint": "Court"
+      },
+      {
+        "word": "procès",
+        "hint": "Trial"
+      },
+      {
+        "word": "verdict",
+        "hint": "Verdict"
+      },
+      {
+        "word": "témoin",
+        "hint": "Witness"
+      },
+      {
+        "word": "plainte",
+        "hint": "Complaint"
+      },
+      {
+        "word": "contrat",
+        "hint": "Contract"
+      },
+      {
+        "word": "amende",
+        "hint": "Fine (penalty)"
+      },
+      {
+        "word": "jugement",
+        "hint": "Judgment"
+      },
+      {
+        "word": "preuve",
+        "hint": "Evidence / Proof"
+      },
+      {
+        "word": "défense",
+        "hint": "Defense"
+      },
+      {
+        "word": "coupable",
+        "hint": "Guilty"
+      },
+      {
+        "word": "innocent",
+        "hint": "Innocent"
+      },
+      {
+        "word": "appel",
+        "hint": "Appeal"
+      },
+      {
+        "word": "justice",
+        "hint": "Justice"
+      }
+    ]
+  },
+  {
+    "key": "politics_wb",
+    "name": "Politics",
+    "description": "Political vocabulary in French",
+    "iconName": "person.3",
+    "color": "#dc2626",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "élection",
+        "hint": "Election"
+      },
+      {
+        "word": "président",
+        "hint": "President"
+      },
+      {
+        "word": "député",
+        "hint": "Member of parliament"
+      },
+      {
+        "word": "sénat",
+        "hint": "Senate"
+      },
+      {
+        "word": "citoyen",
+        "hint": "Citizen"
+      },
+      {
+        "word": "discours",
+        "hint": "Speech"
+      },
+      {
+        "word": "réforme",
+        "hint": "Reform"
+      },
+      {
+        "word": "campagne",
+        "hint": "Campaign"
+      },
+      {
+        "word": "scrutin",
+        "hint": "Ballot / Poll"
+      },
+      {
+        "word": "ministre",
+        "hint": "Minister"
+      },
+      {
+        "word": "gouverner",
+        "hint": "To govern"
+      },
+      {
+        "word": "débat",
+        "hint": "Debate"
+      },
+      {
+        "word": "majorité",
+        "hint": "Majority"
+      },
+      {
+        "word": "liberté",
+        "hint": "Freedom / Liberty"
+      },
+      {
+        "word": "mandat",
+        "hint": "Term of office"
+      }
+    ]
+  },
+  {
+    "key": "economy_wb",
+    "name": "Economy",
+    "description": "Economic vocabulary in French",
+    "iconName": "chart.line.uptrend.xyaxis",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "marché",
+        "hint": "Market"
+      },
+      {
+        "word": "croissance",
+        "hint": "Growth"
+      },
+      {
+        "word": "inflation",
+        "hint": "Inflation"
+      },
+      {
+        "word": "chômage",
+        "hint": "Unemployment"
+      },
+      {
+        "word": "bourse",
+        "hint": "Stock exchange"
+      },
+      {
+        "word": "exportation",
+        "hint": "Export"
+      },
+      {
+        "word": "importation",
+        "hint": "Import"
+      },
+      {
+        "word": "investir",
+        "hint": "To invest"
+      },
+      {
+        "word": "commerce",
+        "hint": "Trade / Commerce"
+      },
+      {
+        "word": "récession",
+        "hint": "Recession"
+      },
+      {
+        "word": "devise",
+        "hint": "Currency"
+      },
+      {
+        "word": "bénéfice",
+        "hint": "Profit"
+      },
+      {
+        "word": "déficit",
+        "hint": "Deficit"
+      },
+      {
+        "word": "fiscalité",
+        "hint": "Taxation"
+      },
+      {
+        "word": "budget",
+        "hint": "Budget"
+      }
+    ]
+  },
+  {
+    "key": "banking_wb",
+    "name": "Banking",
+    "description": "Banking and finance vocabulary in French",
+    "iconName": "banknote",
+    "color": "#16a34a",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "banque",
+        "hint": "Bank"
+      },
+      {
+        "word": "compte",
+        "hint": "Account"
+      },
+      {
+        "word": "épargne",
+        "hint": "Savings"
+      },
+      {
+        "word": "emprunt",
+        "hint": "Loan"
+      },
+      {
+        "word": "intérêt",
+        "hint": "Interest"
+      },
+      {
+        "word": "virement",
+        "hint": "Wire transfer"
+      },
+      {
+        "word": "retrait",
+        "hint": "Withdrawal"
+      },
+      {
+        "word": "solde",
+        "hint": "Balance"
+      },
+      {
+        "word": "chèque",
+        "hint": "Check / Cheque"
+      },
+      {
+        "word": "crédit",
+        "hint": "Credit"
+      },
+      {
+        "word": "débit",
+        "hint": "Debit"
+      },
+      {
+        "word": "guichet",
+        "hint": "Counter / ATM"
+      },
+      {
+        "word": "relevé",
+        "hint": "Bank statement"
+      },
+      {
+        "word": "hypothèque",
+        "hint": "Mortgage"
+      },
+      {
+        "word": "cotisation",
+        "hint": "Contribution / Dues"
+      }
+    ]
+  },
+  {
+    "key": "insurance_wb",
+    "name": "Insurance",
+    "description": "Insurance vocabulary in French",
+    "iconName": "shield",
+    "color": "#0284c7",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "assurance",
+        "hint": "Insurance"
+      },
+      {
+        "word": "garantie",
+        "hint": "Guarantee / Warranty"
+      },
+      {
+        "word": "sinistre",
+        "hint": "Claim / Incident"
+      },
+      {
+        "word": "franchise",
+        "hint": "Deductible"
+      },
+      {
+        "word": "police",
+        "hint": "Policy (insurance)"
+      },
+      {
+        "word": "prime",
+        "hint": "Premium"
+      },
+      {
+        "word": "risque",
+        "hint": "Risk"
+      },
+      {
+        "word": "couverture",
+        "hint": "Coverage"
+      },
+      {
+        "word": "déclaration",
+        "hint": "Declaration"
+      },
+      {
+        "word": "contrat",
+        "hint": "Contract"
+      },
+      {
+        "word": "dommage",
+        "hint": "Damage"
+      },
+      {
+        "word": "indemnité",
+        "hint": "Compensation"
+      },
+      {
+        "word": "bénéficiaire",
+        "hint": "Beneficiary"
+      },
+      {
+        "word": "résiliation",
+        "hint": "Cancellation"
+      },
+      {
+        "word": "courtier",
+        "hint": "Broker"
+      }
+    ]
+  },
+  {
+    "key": "cooking_wb",
+    "name": "Cooking",
+    "description": "Cooking methods and vocabulary in French",
+    "iconName": "flame",
+    "color": "#ea580c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "cuisson",
+        "hint": "Cooking (process)"
+      },
+      {
+        "word": "griller",
+        "hint": "To grill"
+      },
+      {
+        "word": "bouillir",
+        "hint": "To boil"
+      },
+      {
+        "word": "rôtir",
+        "hint": "To roast"
+      },
+      {
+        "word": "frire",
+        "hint": "To fry"
+      },
+      {
+        "word": "mélanger",
+        "hint": "To mix"
+      },
+      {
+        "word": "couper",
+        "hint": "To cut"
+      },
+      {
+        "word": "éplucher",
+        "hint": "To peel"
+      },
+      {
+        "word": "mijoter",
+        "hint": "To simmer"
+      },
+      {
+        "word": "fouetter",
+        "hint": "To whisk"
+      },
+      {
+        "word": "réchauffer",
+        "hint": "To reheat"
+      },
+      {
+        "word": "assaisonner",
+        "hint": "To season"
+      },
+      {
+        "word": "poêle",
+        "hint": "Frying pan"
+      },
+      {
+        "word": "casserole",
+        "hint": "Saucepan"
+      },
+      {
+        "word": "recette",
+        "hint": "Recipe"
+      }
+    ]
+  },
+  {
+    "key": "baking_wb",
+    "name": "Baking",
+    "description": "Baking and pastry vocabulary in French",
+    "iconName": "birthday.cake",
+    "color": "#d97706",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pâtisserie",
+        "hint": "Pastry / Bakery"
+      },
+      {
+        "word": "farine",
+        "hint": "Flour"
+      },
+      {
+        "word": "levure",
+        "hint": "Yeast"
+      },
+      {
+        "word": "pétrir",
+        "hint": "To knead"
+      },
+      {
+        "word": "enfourner",
+        "hint": "To put in oven"
+      },
+      {
+        "word": "beurre",
+        "hint": "Butter"
+      },
+      {
+        "word": "glaçage",
+        "hint": "Icing / Frosting"
+      },
+      {
+        "word": "moule",
+        "hint": "Mold / Baking pan"
+      },
+      {
+        "word": "croûte",
+        "hint": "Crust"
+      },
+      {
+        "word": "spatule",
+        "hint": "Spatula"
+      },
+      {
+        "word": "fouet",
+        "hint": "Whisk"
+      },
+      {
+        "word": "brioche",
+        "hint": "Brioche"
+      },
+      {
+        "word": "tarte",
+        "hint": "Tart / Pie"
+      },
+      {
+        "word": "crêpe",
+        "hint": "Crêpe / Pancake"
+      },
+      {
+        "word": "macaron",
+        "hint": "Macaron"
+      }
+    ]
+  },
+  {
+    "key": "spices_wb",
+    "name": "Spices",
+    "description": "Herbs and spices vocabulary in French",
+    "iconName": "leaf",
+    "color": "#b45309",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "cannelle",
+        "hint": "Cinnamon"
+      },
+      {
+        "word": "poivre",
+        "hint": "Pepper"
+      },
+      {
+        "word": "paprika",
+        "hint": "Paprika"
+      },
+      {
+        "word": "cumin",
+        "hint": "Cumin"
+      },
+      {
+        "word": "thym",
+        "hint": "Thyme"
+      },
+      {
+        "word": "basilic",
+        "hint": "Basil"
+      },
+      {
+        "word": "persil",
+        "hint": "Parsley"
+      },
+      {
+        "word": "romarin",
+        "hint": "Rosemary"
+      },
+      {
+        "word": "safran",
+        "hint": "Saffron"
+      },
+      {
+        "word": "muscade",
+        "hint": "Nutmeg"
+      },
+      {
+        "word": "gingembre",
+        "hint": "Ginger"
+      },
+      {
+        "word": "vanille",
+        "hint": "Vanilla"
+      },
+      {
+        "word": "coriandre",
+        "hint": "Coriander / Cilantro"
+      },
+      {
+        "word": "laurier",
+        "hint": "Bay leaf"
+      },
+      {
+        "word": "menthe",
+        "hint": "Mint"
+      }
+    ]
+  },
+  {
+    "key": "dairy_wb",
+    "name": "Dairy",
+    "description": "Dairy products vocabulary in French",
+    "iconName": "cup.and.saucer",
+    "color": "#fbbf24",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "fromage",
+        "hint": "Cheese"
+      },
+      {
+        "word": "yaourt",
+        "hint": "Yogurt"
+      },
+      {
+        "word": "crème",
+        "hint": "Cream"
+      },
+      {
+        "word": "beurre",
+        "hint": "Butter"
+      },
+      {
+        "word": "lait",
+        "hint": "Milk"
+      },
+      {
+        "word": "glace",
+        "hint": "Ice cream"
+      },
+      {
+        "word": "fondue",
+        "hint": "Fondue"
+      },
+      {
+        "word": "gruyère",
+        "hint": "Gruyère (cheese)"
+      },
+      {
+        "word": "camembert",
+        "hint": "Camembert (cheese)"
+      },
+      {
+        "word": "chèvre",
+        "hint": "Goat cheese"
+      },
+      {
+        "word": "mozzarella",
+        "hint": "Mozzarella"
+      },
+      {
+        "word": "crémeux",
+        "hint": "Creamy"
+      },
+      {
+        "word": "pasteurisé",
+        "hint": "Pasteurized"
+      },
+      {
+        "word": "écrémé",
+        "hint": "Skimmed"
+      },
+      {
+        "word": "affiné",
+        "hint": "Aged / Matured"
+      }
+    ]
+  },
+  {
+    "key": "meat_wb",
+    "name": "Meat",
+    "description": "Meat and poultry vocabulary in French",
+    "iconName": "fork.knife",
+    "color": "#b91c1c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "viande",
+        "hint": "Meat"
+      },
+      {
+        "word": "poulet",
+        "hint": "Chicken"
+      },
+      {
+        "word": "boeuf",
+        "hint": "Beef"
+      },
+      {
+        "word": "porc",
+        "hint": "Pork"
+      },
+      {
+        "word": "agneau",
+        "hint": "Lamb"
+      },
+      {
+        "word": "canard",
+        "hint": "Duck"
+      },
+      {
+        "word": "dinde",
+        "hint": "Turkey"
+      },
+      {
+        "word": "jambon",
+        "hint": "Ham"
+      },
+      {
+        "word": "saucisse",
+        "hint": "Sausage"
+      },
+      {
+        "word": "steak",
+        "hint": "Steak"
+      },
+      {
+        "word": "côtelette",
+        "hint": "Chop / Cutlet"
+      },
+      {
+        "word": "rôti",
+        "hint": "Roast"
+      },
+      {
+        "word": "boucher",
+        "hint": "Butcher"
+      },
+      {
+        "word": "grillé",
+        "hint": "Grilled"
+      },
+      {
+        "word": "saignant",
+        "hint": "Rare (meat)"
+      }
+    ]
+  },
+  {
+    "key": "pets_wb",
+    "name": "Pets",
+    "description": "Domestic pets vocabulary in French",
+    "iconName": "pawprint",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "chien",
+        "hint": "Dog"
+      },
+      {
+        "word": "chat",
+        "hint": "Cat"
+      },
+      {
+        "word": "lapin",
+        "hint": "Rabbit"
+      },
+      {
+        "word": "hamster",
+        "hint": "Hamster"
+      },
+      {
+        "word": "perroquet",
+        "hint": "Parrot"
+      },
+      {
+        "word": "tortue",
+        "hint": "Turtle / Tortoise"
+      },
+      {
+        "word": "poisson",
+        "hint": "Fish"
+      },
+      {
+        "word": "chaton",
+        "hint": "Kitten"
+      },
+      {
+        "word": "chiot",
+        "hint": "Puppy"
+      },
+      {
+        "word": "collier",
+        "hint": "Collar"
+      },
+      {
+        "word": "laisse",
+        "hint": "Leash"
+      },
+      {
+        "word": "niche",
+        "hint": "Doghouse"
+      },
+      {
+        "word": "gamelle",
+        "hint": "Food bowl"
+      },
+      {
+        "word": "caresser",
+        "hint": "To pet / Stroke"
+      },
+      {
+        "word": "nourrir",
+        "hint": "To feed"
+      }
+    ]
+  },
+  {
+    "key": "birds_wb",
+    "name": "Birds",
+    "description": "Birds vocabulary in French",
+    "iconName": "bird",
+    "color": "#14b8a6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "oiseau",
+        "hint": "Bird"
+      },
+      {
+        "word": "aigle",
+        "hint": "Eagle"
+      },
+      {
+        "word": "moineau",
+        "hint": "Sparrow"
+      },
+      {
+        "word": "pigeon",
+        "hint": "Pigeon"
+      },
+      {
+        "word": "cigogne",
+        "hint": "Stork"
+      },
+      {
+        "word": "hirondelle",
+        "hint": "Swallow"
+      },
+      {
+        "word": "mouette",
+        "hint": "Seagull"
+      },
+      {
+        "word": "chouette",
+        "hint": "Owl"
+      },
+      {
+        "word": "perruche",
+        "hint": "Parakeet"
+      },
+      {
+        "word": "canari",
+        "hint": "Canary"
+      },
+      {
+        "word": "plume",
+        "hint": "Feather"
+      },
+      {
+        "word": "nid",
+        "hint": "Nest"
+      },
+      {
+        "word": "bec",
+        "hint": "Beak"
+      },
+      {
+        "word": "aile",
+        "hint": "Wing"
+      },
+      {
+        "word": "migrer",
+        "hint": "To migrate"
+      }
+    ]
+  },
+  {
+    "key": "insects_wb",
+    "name": "Insects",
+    "description": "Insects and bugs vocabulary in French",
+    "iconName": "ladybug",
+    "color": "#84cc16",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "abeille",
+        "hint": "Bee"
+      },
+      {
+        "word": "papillon",
+        "hint": "Butterfly"
+      },
+      {
+        "word": "fourmi",
+        "hint": "Ant"
+      },
+      {
+        "word": "mouche",
+        "hint": "Fly"
+      },
+      {
+        "word": "moustique",
+        "hint": "Mosquito"
+      },
+      {
+        "word": "araignée",
+        "hint": "Spider"
+      },
+      {
+        "word": "coccinelle",
+        "hint": "Ladybug"
+      },
+      {
+        "word": "libellule",
+        "hint": "Dragonfly"
+      },
+      {
+        "word": "guêpe",
+        "hint": "Wasp"
+      },
+      {
+        "word": "chenille",
+        "hint": "Caterpillar"
+      },
+      {
+        "word": "scarabée",
+        "hint": "Beetle"
+      },
+      {
+        "word": "criquet",
+        "hint": "Cricket"
+      },
+      {
+        "word": "cigale",
+        "hint": "Cicada"
+      },
+      {
+        "word": "piqûre",
+        "hint": "Sting / Bite"
+      },
+      {
+        "word": "essaim",
+        "hint": "Swarm"
+      }
+    ]
+  },
+  {
+    "key": "marine_life_wb",
+    "name": "Marine Life",
+    "description": "Sea creatures and marine life in French",
+    "iconName": "fish",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "requin",
+        "hint": "Shark"
+      },
+      {
+        "word": "méduse",
+        "hint": "Jellyfish"
+      },
+      {
+        "word": "pieuvre",
+        "hint": "Octopus"
+      },
+      {
+        "word": "crabe",
+        "hint": "Crab"
+      },
+      {
+        "word": "crevette",
+        "hint": "Shrimp"
+      },
+      {
+        "word": "homard",
+        "hint": "Lobster"
+      },
+      {
+        "word": "étoile",
+        "hint": "Starfish"
+      },
+      {
+        "word": "hippocampe",
+        "hint": "Seahorse"
+      },
+      {
+        "word": "sardine",
+        "hint": "Sardine"
+      },
+      {
+        "word": "moule",
+        "hint": "Mussel"
+      },
+      {
+        "word": "huître",
+        "hint": "Oyster"
+      },
+      {
+        "word": "saumon",
+        "hint": "Salmon"
+      },
+      {
+        "word": "thon",
+        "hint": "Tuna"
+      },
+      {
+        "word": "raie",
+        "hint": "Stingray"
+      },
+      {
+        "word": "phoque",
+        "hint": "Seal"
+      }
+    ]
+  },
+  {
+    "key": "farm_animals_wb",
+    "name": "Farm Animals",
+    "description": "Farm animals vocabulary in French",
+    "iconName": "hare",
+    "color": "#a16207",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "vache",
+        "hint": "Cow"
+      },
+      {
+        "word": "cochon",
+        "hint": "Pig"
+      },
+      {
+        "word": "cheval",
+        "hint": "Horse"
+      },
+      {
+        "word": "mouton",
+        "hint": "Sheep"
+      },
+      {
+        "word": "poule",
+        "hint": "Hen"
+      },
+      {
+        "word": "coq",
+        "hint": "Rooster"
+      },
+      {
+        "word": "canard",
+        "hint": "Duck"
+      },
+      {
+        "word": "chèvre",
+        "hint": "Goat"
+      },
+      {
+        "word": "âne",
+        "hint": "Donkey"
+      },
+      {
+        "word": "taureau",
+        "hint": "Bull"
+      },
+      {
+        "word": "poussin",
+        "hint": "Chick"
+      },
+      {
+        "word": "oie",
+        "hint": "Goose"
+      },
+      {
+        "word": "étable",
+        "hint": "Stable / Barn"
+      },
+      {
+        "word": "ferme",
+        "hint": "Farm"
+      },
+      {
+        "word": "pâturage",
+        "hint": "Pasture"
+      }
+    ]
+  },
+  {
+    "key": "feelings_wb",
+    "name": "Feelings",
+    "description": "Feelings and emotions vocabulary in French",
+    "iconName": "heart",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "bonheur",
+        "hint": "Happiness"
+      },
+      {
+        "word": "tristesse",
+        "hint": "Sadness"
+      },
+      {
+        "word": "colère",
+        "hint": "Anger"
+      },
+      {
+        "word": "surprise",
+        "hint": "Surprise"
+      },
+      {
+        "word": "fierté",
+        "hint": "Pride"
+      },
+      {
+        "word": "honte",
+        "hint": "Shame"
+      },
+      {
+        "word": "jalousie",
+        "hint": "Jealousy"
+      },
+      {
+        "word": "gratitude",
+        "hint": "Gratitude"
+      },
+      {
+        "word": "angoisse",
+        "hint": "Anxiety / Anguish"
+      },
+      {
+        "word": "soulagement",
+        "hint": "Relief"
+      },
+      {
+        "word": "nostalgie",
+        "hint": "Nostalgia"
+      },
+      {
+        "word": "tendresse",
+        "hint": "Tenderness"
+      },
+      {
+        "word": "mélancolie",
+        "hint": "Melancholy"
+      },
+      {
+        "word": "espoir",
+        "hint": "Hope"
+      },
+      {
+        "word": "dégoût",
+        "hint": "Disgust"
+      }
+    ]
+  },
+  {
+    "key": "personality_wb",
+    "name": "Personality",
+    "description": "Personality traits vocabulary in French",
+    "iconName": "person",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "gentil",
+        "hint": "Kind / Nice"
+      },
+      {
+        "word": "courageux",
+        "hint": "Brave / Courageous"
+      },
+      {
+        "word": "timide",
+        "hint": "Shy / Timid"
+      },
+      {
+        "word": "curieux",
+        "hint": "Curious"
+      },
+      {
+        "word": "généreux",
+        "hint": "Generous"
+      },
+      {
+        "word": "patient",
+        "hint": "Patient"
+      },
+      {
+        "word": "honnête",
+        "hint": "Honest"
+      },
+      {
+        "word": "modeste",
+        "hint": "Modest"
+      },
+      {
+        "word": "bavard",
+        "hint": "Talkative"
+      },
+      {
+        "word": "créatif",
+        "hint": "Creative"
+      },
+      {
+        "word": "prudent",
+        "hint": "Cautious"
+      },
+      {
+        "word": "têtu",
+        "hint": "Stubborn"
+      },
+      {
+        "word": "sociable",
+        "hint": "Sociable"
+      },
+      {
+        "word": "ambitieux",
+        "hint": "Ambitious"
+      },
+      {
+        "word": "sensible",
+        "hint": "Sensitive"
+      }
+    ]
+  },
+  {
+    "key": "relationships_wb",
+    "name": "Relationships",
+    "description": "Relationships and social bonds in French",
+    "iconName": "heart.circle",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "amitié",
+        "hint": "Friendship"
+      },
+      {
+        "word": "mariage",
+        "hint": "Marriage"
+      },
+      {
+        "word": "fiancé",
+        "hint": "Fiancé / Engaged"
+      },
+      {
+        "word": "divorce",
+        "hint": "Divorce"
+      },
+      {
+        "word": "voisin",
+        "hint": "Neighbor"
+      },
+      {
+        "word": "collègue",
+        "hint": "Colleague"
+      },
+      {
+        "word": "partenaire",
+        "hint": "Partner"
+      },
+      {
+        "word": "confiance",
+        "hint": "Trust"
+      },
+      {
+        "word": "respect",
+        "hint": "Respect"
+      },
+      {
+        "word": "dispute",
+        "hint": "Argument / Quarrel"
+      },
+      {
+        "word": "réconcilier",
+        "hint": "To reconcile"
+      },
+      {
+        "word": "embrasser",
+        "hint": "To kiss / Hug"
+      },
+      {
+        "word": "soutenir",
+        "hint": "To support"
+      },
+      {
+        "word": "partager",
+        "hint": "To share"
+      },
+      {
+        "word": "complicité",
+        "hint": "Complicity / Bond"
+      }
+    ]
+  },
+  {
+    "key": "communication_wb",
+    "name": "Communication",
+    "description": "Communication and language vocabulary in French",
+    "iconName": "bubble.left.and.bubble.right",
+    "color": "#3b82f6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "parler",
+        "hint": "To speak"
+      },
+      {
+        "word": "écouter",
+        "hint": "To listen"
+      },
+      {
+        "word": "répondre",
+        "hint": "To answer"
+      },
+      {
+        "word": "expliquer",
+        "hint": "To explain"
+      },
+      {
+        "word": "demander",
+        "hint": "To ask"
+      },
+      {
+        "word": "message",
+        "hint": "Message"
+      },
+      {
+        "word": "dialogue",
+        "hint": "Dialogue"
+      },
+      {
+        "word": "discuter",
+        "hint": "To discuss"
+      },
+      {
+        "word": "annoncer",
+        "hint": "To announce"
+      },
+      {
+        "word": "murmurer",
+        "hint": "To whisper"
+      },
+      {
+        "word": "traduire",
+        "hint": "To translate"
+      },
+      {
+        "word": "convaincre",
+        "hint": "To convince"
+      },
+      {
+        "word": "prononcer",
+        "hint": "To pronounce"
+      },
+      {
+        "word": "interpréter",
+        "hint": "To interpret"
+      },
+      {
+        "word": "résumer",
+        "hint": "To summarize"
+      }
+    ]
+  },
+  {
+    "key": "gestures_wb",
+    "name": "Gestures",
+    "description": "Body language and gestures in French",
+    "iconName": "hand.raised",
+    "color": "#f59e0b",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "sourire",
+        "hint": "Smile"
+      },
+      {
+        "word": "saluer",
+        "hint": "To greet / Wave"
+      },
+      {
+        "word": "applaudir",
+        "hint": "To clap / Applaud"
+      },
+      {
+        "word": "serrer",
+        "hint": "To shake (hands)"
+      },
+      {
+        "word": "hocher",
+        "hint": "To nod"
+      },
+      {
+        "word": "hausser",
+        "hint": "To shrug"
+      },
+      {
+        "word": "pointer",
+        "hint": "To point"
+      },
+      {
+        "word": "croiser",
+        "hint": "To cross (arms)"
+      },
+      {
+        "word": "froncer",
+        "hint": "To frown"
+      },
+      {
+        "word": "cligner",
+        "hint": "To blink / Wink"
+      },
+      {
+        "word": "soupirer",
+        "hint": "To sigh"
+      },
+      {
+        "word": "bâiller",
+        "hint": "To yawn"
+      },
+      {
+        "word": "grimacer",
+        "hint": "To grimace"
+      },
+      {
+        "word": "acquiescer",
+        "hint": "To agree / Nod yes"
+      },
+      {
+        "word": "gesticuler",
+        "hint": "To gesticulate"
+      }
+    ]
+  },
+  {
+    "key": "architecture_wb",
+    "name": "Architecture",
+    "description": "Architecture vocabulary in French",
+    "iconName": "building.2",
+    "color": "#475569",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "bâtiment",
+        "hint": "Building"
+      },
+      {
+        "word": "façade",
+        "hint": "Facade"
+      },
+      {
+        "word": "pilier",
+        "hint": "Pillar"
+      },
+      {
+        "word": "voûte",
+        "hint": "Vault / Arch"
+      },
+      {
+        "word": "balcon",
+        "hint": "Balcony"
+      },
+      {
+        "word": "escalier",
+        "hint": "Staircase"
+      },
+      {
+        "word": "fondation",
+        "hint": "Foundation"
+      },
+      {
+        "word": "dôme",
+        "hint": "Dome"
+      },
+      {
+        "word": "clocher",
+        "hint": "Bell tower"
+      },
+      {
+        "word": "cathédrale",
+        "hint": "Cathedral"
+      },
+      {
+        "word": "colonne",
+        "hint": "Column"
+      },
+      {
+        "word": "terrasse",
+        "hint": "Terrace"
+      },
+      {
+        "word": "charpente",
+        "hint": "Framework / Timber frame"
+      },
+      {
+        "word": "vitrail",
+        "hint": "Stained glass"
+      },
+      {
+        "word": "moulure",
+        "hint": "Molding"
+      }
+    ]
+  },
+  {
+    "key": "construction_wb",
+    "name": "Construction",
+    "description": "Construction and building vocabulary in French",
+    "iconName": "hammer",
+    "color": "#78716c",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "chantier",
+        "hint": "Construction site"
+      },
+      {
+        "word": "brique",
+        "hint": "Brick"
+      },
+      {
+        "word": "ciment",
+        "hint": "Cement"
+      },
+      {
+        "word": "béton",
+        "hint": "Concrete"
+      },
+      {
+        "word": "grue",
+        "hint": "Crane"
+      },
+      {
+        "word": "échafaudage",
+        "hint": "Scaffolding"
+      },
+      {
+        "word": "maçon",
+        "hint": "Mason / Bricklayer"
+      },
+      {
+        "word": "plâtre",
+        "hint": "Plaster"
+      },
+      {
+        "word": "poutre",
+        "hint": "Beam"
+      },
+      {
+        "word": "tuile",
+        "hint": "Roof tile"
+      },
+      {
+        "word": "enduit",
+        "hint": "Coating / Render"
+      },
+      {
+        "word": "isoler",
+        "hint": "To insulate"
+      },
+      {
+        "word": "démolir",
+        "hint": "To demolish"
+      },
+      {
+        "word": "terrassement",
+        "hint": "Earthwork"
+      },
+      {
+        "word": "permis",
+        "hint": "Permit"
+      }
+    ]
+  },
+  {
+    "key": "electricity_wb",
+    "name": "Electricity",
+    "description": "Electrical vocabulary in French",
+    "iconName": "bolt",
+    "color": "#eab308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "courant",
+        "hint": "Current"
+      },
+      {
+        "word": "tension",
+        "hint": "Voltage"
+      },
+      {
+        "word": "prise",
+        "hint": "Outlet / Plug"
+      },
+      {
+        "word": "câble",
+        "hint": "Cable"
+      },
+      {
+        "word": "fusible",
+        "hint": "Fuse"
+      },
+      {
+        "word": "disjoncteur",
+        "hint": "Circuit breaker"
+      },
+      {
+        "word": "ampoule",
+        "hint": "Light bulb"
+      },
+      {
+        "word": "interrupteur",
+        "hint": "Switch"
+      },
+      {
+        "word": "compteur",
+        "hint": "Meter"
+      },
+      {
+        "word": "résistance",
+        "hint": "Resistance"
+      },
+      {
+        "word": "batterie",
+        "hint": "Battery"
+      },
+      {
+        "word": "brancher",
+        "hint": "To plug in"
+      },
+      {
+        "word": "souder",
+        "hint": "To solder"
+      },
+      {
+        "word": "isolant",
+        "hint": "Insulating"
+      },
+      {
+        "word": "watt",
+        "hint": "Watt"
+      }
+    ]
+  },
+  {
+    "key": "plumbing_wb",
+    "name": "Plumbing",
+    "description": "Plumbing vocabulary in French",
+    "iconName": "wrench",
+    "color": "#0369a1",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "tuyau",
+        "hint": "Pipe"
+      },
+      {
+        "word": "robinet",
+        "hint": "Faucet / Tap"
+      },
+      {
+        "word": "évier",
+        "hint": "Kitchen sink"
+      },
+      {
+        "word": "fuite",
+        "hint": "Leak"
+      },
+      {
+        "word": "plombier",
+        "hint": "Plumber"
+      },
+      {
+        "word": "soudure",
+        "hint": "Soldering"
+      },
+      {
+        "word": "joint",
+        "hint": "Seal / Gasket"
+      },
+      {
+        "word": "égout",
+        "hint": "Sewer"
+      },
+      {
+        "word": "vanne",
+        "hint": "Valve"
+      },
+      {
+        "word": "chauffe",
+        "hint": "Water heater"
+      },
+      {
+        "word": "vidange",
+        "hint": "Drain / Flush"
+      },
+      {
+        "word": "déboucher",
+        "hint": "To unclog"
+      },
+      {
+        "word": "pression",
+        "hint": "Pressure"
+      },
+      {
+        "word": "raccord",
+        "hint": "Fitting / Connector"
+      },
+      {
+        "word": "citerne",
+        "hint": "Tank / Cistern"
+      }
+    ]
+  },
+  {
+    "key": "gardening_tools_wb",
+    "name": "Gardening Tools",
+    "description": "Gardening tools vocabulary in French",
+    "iconName": "leaf",
+    "color": "#15803d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "bêche",
+        "hint": "Spade"
+      },
+      {
+        "word": "râteau",
+        "hint": "Rake"
+      },
+      {
+        "word": "arrosoir",
+        "hint": "Watering can"
+      },
+      {
+        "word": "sécateur",
+        "hint": "Pruning shears"
+      },
+      {
+        "word": "tondeuse",
+        "hint": "Lawn mower"
+      },
+      {
+        "word": "brouette",
+        "hint": "Wheelbarrow"
+      },
+      {
+        "word": "binette",
+        "hint": "Hoe"
+      },
+      {
+        "word": "tuteur",
+        "hint": "Plant stake"
+      },
+      {
+        "word": "tuyau",
+        "hint": "Hose"
+      },
+      {
+        "word": "compost",
+        "hint": "Compost"
+      },
+      {
+        "word": "engrais",
+        "hint": "Fertilizer"
+      },
+      {
+        "word": "terreau",
+        "hint": "Potting soil"
+      },
+      {
+        "word": "semoir",
+        "hint": "Seed drill / Planter"
+      },
+      {
+        "word": "cisaille",
+        "hint": "Hedge shears"
+      },
+      {
+        "word": "transplantoir",
+        "hint": "Transplanter / Trowel"
+      }
+    ]
+  },
+  {
+    "key": "medicine_wb",
+    "name": "Medicine",
+    "description": "Medical vocabulary in French",
+    "iconName": "cross.case",
+    "color": "#dc2626",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "médecin",
+        "hint": "Doctor"
+      },
+      {
+        "word": "hôpital",
+        "hint": "Hospital"
+      },
+      {
+        "word": "chirurgie",
+        "hint": "Surgery"
+      },
+      {
+        "word": "diagnostic",
+        "hint": "Diagnosis"
+      },
+      {
+        "word": "ordonnance",
+        "hint": "Prescription"
+      },
+      {
+        "word": "symptôme",
+        "hint": "Symptom"
+      },
+      {
+        "word": "examen",
+        "hint": "Examination"
+      },
+      {
+        "word": "traitement",
+        "hint": "Treatment"
+      },
+      {
+        "word": "infirmier",
+        "hint": "Nurse"
+      },
+      {
+        "word": "urgence",
+        "hint": "Emergency"
+      },
+      {
+        "word": "opération",
+        "hint": "Operation"
+      },
+      {
+        "word": "guérison",
+        "hint": "Recovery / Cure"
+      },
+      {
+        "word": "contagieux",
+        "hint": "Contagious"
+      },
+      {
+        "word": "vaccin",
+        "hint": "Vaccine"
+      },
+      {
+        "word": "ambulance",
+        "hint": "Ambulance"
+      }
+    ]
+  },
+  {
+    "key": "pharmacy_wb",
+    "name": "Pharmacy",
+    "description": "Pharmacy and medication vocabulary in French",
+    "iconName": "pills",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "pharmacie",
+        "hint": "Pharmacy"
+      },
+      {
+        "word": "comprimé",
+        "hint": "Tablet / Pill"
+      },
+      {
+        "word": "sirop",
+        "hint": "Syrup"
+      },
+      {
+        "word": "pommade",
+        "hint": "Ointment"
+      },
+      {
+        "word": "gélule",
+        "hint": "Capsule"
+      },
+      {
+        "word": "posologie",
+        "hint": "Dosage"
+      },
+      {
+        "word": "pilule",
+        "hint": "Pill"
+      },
+      {
+        "word": "antidouleur",
+        "hint": "Painkiller"
+      },
+      {
+        "word": "allergie",
+        "hint": "Allergy"
+      },
+      {
+        "word": "pansement",
+        "hint": "Bandage"
+      },
+      {
+        "word": "vitamine",
+        "hint": "Vitamin"
+      },
+      {
+        "word": "crème",
+        "hint": "Cream"
+      },
+      {
+        "word": "gouttes",
+        "hint": "Drops"
+      },
+      {
+        "word": "antibiotique",
+        "hint": "Antibiotic"
+      },
+      {
+        "word": "remède",
+        "hint": "Remedy"
+      }
+    ]
+  },
+  {
+    "key": "fitness_wb",
+    "name": "Fitness",
+    "description": "Fitness and exercise vocabulary in French",
+    "iconName": "figure.run",
+    "color": "#f97316",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "musculation",
+        "hint": "Weightlifting"
+      },
+      {
+        "word": "étirement",
+        "hint": "Stretching"
+      },
+      {
+        "word": "haltère",
+        "hint": "Dumbbell"
+      },
+      {
+        "word": "cardio",
+        "hint": "Cardio"
+      },
+      {
+        "word": "abdominaux",
+        "hint": "Abs / Abdominals"
+      },
+      {
+        "word": "endurance",
+        "hint": "Endurance"
+      },
+      {
+        "word": "souplesse",
+        "hint": "Flexibility"
+      },
+      {
+        "word": "répétition",
+        "hint": "Repetition / Rep"
+      },
+      {
+        "word": "tapis",
+        "hint": "Mat / Treadmill"
+      },
+      {
+        "word": "entraîneur",
+        "hint": "Trainer / Coach"
+      },
+      {
+        "word": "échauffement",
+        "hint": "Warm-up"
+      },
+      {
+        "word": "récupération",
+        "hint": "Recovery"
+      },
+      {
+        "word": "transpirer",
+        "hint": "To sweat"
+      },
+      {
+        "word": "salle",
+        "hint": "Gym (room)"
+      },
+      {
+        "word": "performance",
+        "hint": "Performance"
+      }
+    ]
+  },
+  {
+    "key": "yoga_wb",
+    "name": "Yoga",
+    "description": "Yoga and wellness vocabulary in French",
+    "iconName": "figure.yoga",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "posture",
+        "hint": "Posture / Pose"
+      },
+      {
+        "word": "respiration",
+        "hint": "Breathing"
+      },
+      {
+        "word": "méditation",
+        "hint": "Meditation"
+      },
+      {
+        "word": "équilibre",
+        "hint": "Balance"
+      },
+      {
+        "word": "détente",
+        "hint": "Relaxation"
+      },
+      {
+        "word": "souplesse",
+        "hint": "Flexibility"
+      },
+      {
+        "word": "harmonie",
+        "hint": "Harmony"
+      },
+      {
+        "word": "énergie",
+        "hint": "Energy"
+      },
+      {
+        "word": "conscience",
+        "hint": "Awareness"
+      },
+      {
+        "word": "sérénité",
+        "hint": "Serenity"
+      },
+      {
+        "word": "concentration",
+        "hint": "Concentration"
+      },
+      {
+        "word": "alignement",
+        "hint": "Alignment"
+      },
+      {
+        "word": "étirer",
+        "hint": "To stretch"
+      },
+      {
+        "word": "inspirer",
+        "hint": "To inhale"
+      },
+      {
+        "word": "expirer",
+        "hint": "To exhale"
+      }
+    ]
+  },
+  {
+    "key": "mental_health_wb",
+    "name": "Mental Health",
+    "description": "Mental health vocabulary in French",
+    "iconName": "brain",
+    "color": "#6366f1",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "anxiété",
+        "hint": "Anxiety"
+      },
+      {
+        "word": "dépression",
+        "hint": "Depression"
+      },
+      {
+        "word": "thérapie",
+        "hint": "Therapy"
+      },
+      {
+        "word": "psychologue",
+        "hint": "Psychologist"
+      },
+      {
+        "word": "résilience",
+        "hint": "Resilience"
+      },
+      {
+        "word": "épuisement",
+        "hint": "Burnout / Exhaustion"
+      },
+      {
+        "word": "confiance",
+        "hint": "Confidence / Trust"
+      },
+      {
+        "word": "phobie",
+        "hint": "Phobia"
+      },
+      {
+        "word": "insomnie",
+        "hint": "Insomnia"
+      },
+      {
+        "word": "estime",
+        "hint": "Self-esteem"
+      },
+      {
+        "word": "traumatisme",
+        "hint": "Trauma"
+      },
+      {
+        "word": "guérir",
+        "hint": "To heal"
+      },
+      {
+        "word": "diagnostic",
+        "hint": "Diagnosis"
+      },
+      {
+        "word": "soutien",
+        "hint": "Support"
+      },
+      {
+        "word": "surmonter",
+        "hint": "To overcome"
+      }
+    ]
+  },
+  {
+    "key": "vehicles_wb",
+    "name": "Vehicles",
+    "description": "Vehicles and automobiles vocabulary in French",
+    "iconName": "car",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "voiture",
+        "hint": "Car"
+      },
+      {
+        "word": "camion",
+        "hint": "Truck"
+      },
+      {
+        "word": "moto",
+        "hint": "Motorcycle"
+      },
+      {
+        "word": "autobus",
+        "hint": "Bus"
+      },
+      {
+        "word": "moteur",
+        "hint": "Engine"
+      },
+      {
+        "word": "volant",
+        "hint": "Steering wheel"
+      },
+      {
+        "word": "freiner",
+        "hint": "To brake"
+      },
+      {
+        "word": "phare",
+        "hint": "Headlight"
+      },
+      {
+        "word": "essence",
+        "hint": "Gasoline / Fuel"
+      },
+      {
+        "word": "coffre",
+        "hint": "Trunk"
+      },
+      {
+        "word": "pneu",
+        "hint": "Tire"
+      },
+      {
+        "word": "permis",
+        "hint": "License"
+      },
+      {
+        "word": "ceinture",
+        "hint": "Seatbelt"
+      },
+      {
+        "word": "vitesse",
+        "hint": "Speed / Gear"
+      },
+      {
+        "word": "embrayage",
+        "hint": "Clutch"
+      }
+    ]
+  },
+  {
+    "key": "aviation_wb",
+    "name": "Aviation",
+    "description": "Aviation and flight vocabulary in French",
+    "iconName": "airplane",
+    "color": "#0284c7",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "avion",
+        "hint": "Airplane"
+      },
+      {
+        "word": "aéroport",
+        "hint": "Airport"
+      },
+      {
+        "word": "pilote",
+        "hint": "Pilot"
+      },
+      {
+        "word": "décollage",
+        "hint": "Takeoff"
+      },
+      {
+        "word": "atterrissage",
+        "hint": "Landing"
+      },
+      {
+        "word": "turbulence",
+        "hint": "Turbulence"
+      },
+      {
+        "word": "altitude",
+        "hint": "Altitude"
+      },
+      {
+        "word": "passager",
+        "hint": "Passenger"
+      },
+      {
+        "word": "embarquer",
+        "hint": "To board"
+      },
+      {
+        "word": "escale",
+        "hint": "Stopover"
+      },
+      {
+        "word": "hublot",
+        "hint": "Porthole / Window"
+      },
+      {
+        "word": "cabine",
+        "hint": "Cabin"
+      },
+      {
+        "word": "piste",
+        "hint": "Runway"
+      },
+      {
+        "word": "hélicoptère",
+        "hint": "Helicopter"
+      },
+      {
+        "word": "carlingue",
+        "hint": "Fuselage"
+      }
+    ]
+  },
+  {
+    "key": "shipping_wb",
+    "name": "Shipping",
+    "description": "Shipping and maritime transport in French",
+    "iconName": "ferry",
+    "color": "#0e7490",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "navire",
+        "hint": "Ship"
+      },
+      {
+        "word": "cargo",
+        "hint": "Cargo ship"
+      },
+      {
+        "word": "capitaine",
+        "hint": "Captain"
+      },
+      {
+        "word": "équipage",
+        "hint": "Crew"
+      },
+      {
+        "word": "cargaison",
+        "hint": "Cargo / Freight"
+      },
+      {
+        "word": "conteneur",
+        "hint": "Container"
+      },
+      {
+        "word": "quai",
+        "hint": "Dock / Wharf"
+      },
+      {
+        "word": "coque",
+        "hint": "Hull"
+      },
+      {
+        "word": "ancre",
+        "hint": "Anchor"
+      },
+      {
+        "word": "amarrer",
+        "hint": "To moor"
+      },
+      {
+        "word": "voile",
+        "hint": "Sail"
+      },
+      {
+        "word": "traversée",
+        "hint": "Crossing"
+      },
+      {
+        "word": "matelot",
+        "hint": "Sailor"
+      },
+      {
+        "word": "boussole",
+        "hint": "Compass"
+      },
+      {
+        "word": "décharger",
+        "hint": "To unload"
+      }
+    ]
+  },
+  {
+    "key": "cycling_wb",
+    "name": "Cycling",
+    "description": "Cycling vocabulary in French",
+    "iconName": "bicycle",
+    "color": "#16a34a",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "vélo",
+        "hint": "Bicycle"
+      },
+      {
+        "word": "pédale",
+        "hint": "Pedal"
+      },
+      {
+        "word": "guidon",
+        "hint": "Handlebar"
+      },
+      {
+        "word": "selle",
+        "hint": "Saddle / Seat"
+      },
+      {
+        "word": "chaîne",
+        "hint": "Chain"
+      },
+      {
+        "word": "casque",
+        "hint": "Helmet"
+      },
+      {
+        "word": "roue",
+        "hint": "Wheel"
+      },
+      {
+        "word": "rayon",
+        "hint": "Spoke"
+      },
+      {
+        "word": "sonnette",
+        "hint": "Bell"
+      },
+      {
+        "word": "frein",
+        "hint": "Brake"
+      },
+      {
+        "word": "cycliste",
+        "hint": "Cyclist"
+      },
+      {
+        "word": "dérailleur",
+        "hint": "Derailleur"
+      },
+      {
+        "word": "pompe",
+        "hint": "Pump"
+      },
+      {
+        "word": "crevaison",
+        "hint": "Flat tire / Puncture"
+      },
+      {
+        "word": "peloton",
+        "hint": "Peloton / Pack"
+      }
+    ]
+  },
+  {
+    "key": "trains_wb",
+    "name": "Trains",
+    "description": "Train and railway vocabulary in French",
+    "iconName": "tram",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "gare",
+        "hint": "Train station"
+      },
+      {
+        "word": "wagon",
+        "hint": "Wagon / Car"
+      },
+      {
+        "word": "quai",
+        "hint": "Platform"
+      },
+      {
+        "word": "billet",
+        "hint": "Ticket"
+      },
+      {
+        "word": "correspondance",
+        "hint": "Connection / Transfer"
+      },
+      {
+        "word": "horaire",
+        "hint": "Schedule / Timetable"
+      },
+      {
+        "word": "locomotive",
+        "hint": "Locomotive"
+      },
+      {
+        "word": "voie",
+        "hint": "Track"
+      },
+      {
+        "word": "contrôleur",
+        "hint": "Ticket inspector"
+      },
+      {
+        "word": "compartiment",
+        "hint": "Compartment"
+      },
+      {
+        "word": "couchette",
+        "hint": "Berth / Sleeper"
+      },
+      {
+        "word": "retard",
+        "hint": "Delay"
+      },
+      {
+        "word": "terminus",
+        "hint": "Terminus / Last stop"
+      },
+      {
+        "word": "aller",
+        "hint": "One-way (ticket)"
+      },
+      {
+        "word": "express",
+        "hint": "Express (train)"
+      }
+    ]
+  },
+  {
+    "key": "mathematics_wb",
+    "name": "Mathematics",
+    "description": "Mathematics vocabulary in French",
+    "iconName": "function",
+    "color": "#2563eb",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "équation",
+        "hint": "Equation"
+      },
+      {
+        "word": "fraction",
+        "hint": "Fraction"
+      },
+      {
+        "word": "calcul",
+        "hint": "Calculation"
+      },
+      {
+        "word": "addition",
+        "hint": "Addition"
+      },
+      {
+        "word": "multiplication",
+        "hint": "Multiplication"
+      },
+      {
+        "word": "division",
+        "hint": "Division"
+      },
+      {
+        "word": "triangle",
+        "hint": "Triangle"
+      },
+      {
+        "word": "cercle",
+        "hint": "Circle"
+      },
+      {
+        "word": "moyenne",
+        "hint": "Average"
+      },
+      {
+        "word": "pourcentage",
+        "hint": "Percentage"
+      },
+      {
+        "word": "géométrie",
+        "hint": "Geometry"
+      },
+      {
+        "word": "algèbre",
+        "hint": "Algebra"
+      },
+      {
+        "word": "résoudre",
+        "hint": "To solve"
+      },
+      {
+        "word": "théorème",
+        "hint": "Theorem"
+      },
+      {
+        "word": "variable",
+        "hint": "Variable"
+      }
+    ]
+  },
+  {
+    "key": "physics_wb",
+    "name": "Physics",
+    "description": "Physics vocabulary in French",
+    "iconName": "atom",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "force",
+        "hint": "Force"
+      },
+      {
+        "word": "vitesse",
+        "hint": "Speed / Velocity"
+      },
+      {
+        "word": "masse",
+        "hint": "Mass"
+      },
+      {
+        "word": "énergie",
+        "hint": "Energy"
+      },
+      {
+        "word": "atome",
+        "hint": "Atom"
+      },
+      {
+        "word": "molécule",
+        "hint": "Molecule"
+      },
+      {
+        "word": "gravité",
+        "hint": "Gravity"
+      },
+      {
+        "word": "optique",
+        "hint": "Optics"
+      },
+      {
+        "word": "acoustique",
+        "hint": "Acoustics"
+      },
+      {
+        "word": "électron",
+        "hint": "Electron"
+      },
+      {
+        "word": "proton",
+        "hint": "Proton"
+      },
+      {
+        "word": "neutron",
+        "hint": "Neutron"
+      },
+      {
+        "word": "inertie",
+        "hint": "Inertia"
+      },
+      {
+        "word": "friction",
+        "hint": "Friction"
+      },
+      {
+        "word": "densité",
+        "hint": "Density"
+      }
+    ]
+  },
+  {
+    "key": "chemistry_wb",
+    "name": "Chemistry",
+    "description": "Chemistry vocabulary in French",
+    "iconName": "flask",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "chimie",
+        "hint": "Chemistry"
+      },
+      {
+        "word": "élément",
+        "hint": "Element"
+      },
+      {
+        "word": "réaction",
+        "hint": "Reaction"
+      },
+      {
+        "word": "solution",
+        "hint": "Solution"
+      },
+      {
+        "word": "acide",
+        "hint": "Acid"
+      },
+      {
+        "word": "base",
+        "hint": "Base (alkaline)"
+      },
+      {
+        "word": "oxygène",
+        "hint": "Oxygen"
+      },
+      {
+        "word": "hydrogène",
+        "hint": "Hydrogen"
+      },
+      {
+        "word": "carbone",
+        "hint": "Carbon"
+      },
+      {
+        "word": "composé",
+        "hint": "Compound"
+      },
+      {
+        "word": "mélange",
+        "hint": "Mixture"
+      },
+      {
+        "word": "catalyseur",
+        "hint": "Catalyst"
+      },
+      {
+        "word": "formule",
+        "hint": "Formula"
+      },
+      {
+        "word": "éprouvette",
+        "hint": "Test tube"
+      },
+      {
+        "word": "distillation",
+        "hint": "Distillation"
+      }
+    ]
+  },
+  {
+    "key": "biology_wb",
+    "name": "Biology",
+    "description": "Biology vocabulary in French",
+    "iconName": "leaf",
+    "color": "#16a34a",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "cellule",
+        "hint": "Cell"
+      },
+      {
+        "word": "gène",
+        "hint": "Gene"
+      },
+      {
+        "word": "protéine",
+        "hint": "Protein"
+      },
+      {
+        "word": "bactérie",
+        "hint": "Bacterium"
+      },
+      {
+        "word": "organisme",
+        "hint": "Organism"
+      },
+      {
+        "word": "évolution",
+        "hint": "Evolution"
+      },
+      {
+        "word": "espèce",
+        "hint": "Species"
+      },
+      {
+        "word": "écosystème",
+        "hint": "Ecosystem"
+      },
+      {
+        "word": "photosynthèse",
+        "hint": "Photosynthesis"
+      },
+      {
+        "word": "chromosome",
+        "hint": "Chromosome"
+      },
+      {
+        "word": "respiration",
+        "hint": "Respiration"
+      },
+      {
+        "word": "noyau",
+        "hint": "Nucleus"
+      },
+      {
+        "word": "membrane",
+        "hint": "Membrane"
+      },
+      {
+        "word": "tissu",
+        "hint": "Tissue"
+      },
+      {
+        "word": "organe",
+        "hint": "Organ"
+      }
+    ]
+  },
+  {
+    "key": "science_wb",
+    "name": "Science",
+    "description": "General science vocabulary in French",
+    "iconName": "magnifyingglass",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "recherche",
+        "hint": "Research"
+      },
+      {
+        "word": "expérience",
+        "hint": "Experiment"
+      },
+      {
+        "word": "hypothèse",
+        "hint": "Hypothesis"
+      },
+      {
+        "word": "découverte",
+        "hint": "Discovery"
+      },
+      {
+        "word": "laboratoire",
+        "hint": "Laboratory"
+      },
+      {
+        "word": "microscope",
+        "hint": "Microscope"
+      },
+      {
+        "word": "observer",
+        "hint": "To observe"
+      },
+      {
+        "word": "analyser",
+        "hint": "To analyze"
+      },
+      {
+        "word": "résultat",
+        "hint": "Result"
+      },
+      {
+        "word": "théorie",
+        "hint": "Theory"
+      },
+      {
+        "word": "données",
+        "hint": "Data"
+      },
+      {
+        "word": "méthode",
+        "hint": "Method"
+      },
+      {
+        "word": "preuve",
+        "hint": "Proof / Evidence"
+      },
+      {
+        "word": "invention",
+        "hint": "Invention"
+      },
+      {
+        "word": "progrès",
+        "hint": "Progress"
+      }
+    ]
+  },
+  {
+    "key": "festivals_wb",
+    "name": "Festivals",
+    "description": "Festivals and events vocabulary in French",
+    "iconName": "star",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "festival",
+        "hint": "Festival"
+      },
+      {
+        "word": "concert",
+        "hint": "Concert"
+      },
+      {
+        "word": "carnaval",
+        "hint": "Carnival"
+      },
+      {
+        "word": "parade",
+        "hint": "Parade"
+      },
+      {
+        "word": "spectacle",
+        "hint": "Show / Performance"
+      },
+      {
+        "word": "foule",
+        "hint": "Crowd"
+      },
+      {
+        "word": "défilé",
+        "hint": "Procession / Parade"
+      },
+      {
+        "word": "fanfare",
+        "hint": "Brass band"
+      },
+      {
+        "word": "attraction",
+        "hint": "Attraction"
+      },
+      {
+        "word": "kermesse",
+        "hint": "Fair / Fête"
+      },
+      {
+        "word": "foire",
+        "hint": "Fair / Market"
+      },
+      {
+        "word": "édition",
+        "hint": "Edition"
+      },
+      {
+        "word": "estrade",
+        "hint": "Stage / Platform"
+      },
+      {
+        "word": "ambiance",
+        "hint": "Atmosphere"
+      },
+      {
+        "word": "animation",
+        "hint": "Entertainment"
+      }
+    ]
+  },
+  {
+    "key": "traditions_wb",
+    "name": "Traditions",
+    "description": "Cultural traditions in French",
+    "iconName": "book.closed",
+    "color": "#b45309",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "coutume",
+        "hint": "Custom"
+      },
+      {
+        "word": "héritage",
+        "hint": "Heritage"
+      },
+      {
+        "word": "folklore",
+        "hint": "Folklore"
+      },
+      {
+        "word": "rituel",
+        "hint": "Ritual"
+      },
+      {
+        "word": "légende",
+        "hint": "Legend"
+      },
+      {
+        "word": "cérémonie",
+        "hint": "Ceremony"
+      },
+      {
+        "word": "patrimoine",
+        "hint": "Cultural heritage"
+      },
+      {
+        "word": "ancêtre",
+        "hint": "Ancestor"
+      },
+      {
+        "word": "symbole",
+        "hint": "Symbol"
+      },
+      {
+        "word": "artisan",
+        "hint": "Craftsman / Artisan"
+      },
+      {
+        "word": "pèlerinage",
+        "hint": "Pilgrimage"
+      },
+      {
+        "word": "costume",
+        "hint": "Traditional costume"
+      },
+      {
+        "word": "savoir",
+        "hint": "Knowledge / Know-how"
+      },
+      {
+        "word": "transmission",
+        "hint": "Passing on / Transmission"
+      },
+      {
+        "word": "ethnique",
+        "hint": "Ethnic"
+      }
+    ]
+  },
+  {
+    "key": "weddings_wb",
+    "name": "Weddings",
+    "description": "Wedding vocabulary in French",
+    "iconName": "heart.fill",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "mariage",
+        "hint": "Wedding / Marriage"
+      },
+      {
+        "word": "mariée",
+        "hint": "Bride"
+      },
+      {
+        "word": "alliance",
+        "hint": "Wedding ring"
+      },
+      {
+        "word": "cérémonie",
+        "hint": "Ceremony"
+      },
+      {
+        "word": "réception",
+        "hint": "Reception"
+      },
+      {
+        "word": "bouquet",
+        "hint": "Bouquet"
+      },
+      {
+        "word": "invité",
+        "hint": "Guest"
+      },
+      {
+        "word": "demoiselle",
+        "hint": "Bridesmaid"
+      },
+      {
+        "word": "témoin",
+        "hint": "Best man / Witness"
+      },
+      {
+        "word": "voile",
+        "hint": "Veil"
+      },
+      {
+        "word": "gâteau",
+        "hint": "Cake"
+      },
+      {
+        "word": "discours",
+        "hint": "Speech / Toast"
+      },
+      {
+        "word": "fiançailles",
+        "hint": "Engagement"
+      },
+      {
+        "word": "lune",
+        "hint": "Honeymoon (lune de miel)"
+      },
+      {
+        "word": "félicitations",
+        "hint": "Congratulations"
+      }
+    ]
+  },
+  {
+    "key": "holidays_wb",
+    "name": "Holidays",
+    "description": "Holidays and vacations in French",
+    "iconName": "sun.max",
+    "color": "#eab308",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "vacances",
+        "hint": "Holidays / Vacation"
+      },
+      {
+        "word": "voyage",
+        "hint": "Trip / Journey"
+      },
+      {
+        "word": "plage",
+        "hint": "Beach"
+      },
+      {
+        "word": "valise",
+        "hint": "Suitcase"
+      },
+      {
+        "word": "séjour",
+        "hint": "Stay"
+      },
+      {
+        "word": "excursion",
+        "hint": "Excursion"
+      },
+      {
+        "word": "croisière",
+        "hint": "Cruise"
+      },
+      {
+        "word": "détente",
+        "hint": "Relaxation"
+      },
+      {
+        "word": "tourisme",
+        "hint": "Tourism"
+      },
+      {
+        "word": "guide",
+        "hint": "Guide"
+      },
+      {
+        "word": "souvenir",
+        "hint": "Souvenir / Memory"
+      },
+      {
+        "word": "carte",
+        "hint": "Postcard / Map"
+      },
+      {
+        "word": "bronzer",
+        "hint": "To sunbathe"
+      },
+      {
+        "word": "hébergement",
+        "hint": "Accommodation"
+      },
+      {
+        "word": "itinéraire",
+        "hint": "Itinerary"
+      }
+    ]
+  },
+  {
+    "key": "celebrations_wb",
+    "name": "Celebrations",
+    "description": "Celebrations and special occasions in French",
+    "iconName": "party.popper",
+    "color": "#d946ef",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "anniversaire",
+        "hint": "Birthday / Anniversary"
+      },
+      {
+        "word": "cadeau",
+        "hint": "Gift / Present"
+      },
+      {
+        "word": "fête",
+        "hint": "Party / Celebration"
+      },
+      {
+        "word": "bougie",
+        "hint": "Candle"
+      },
+      {
+        "word": "ballon",
+        "hint": "Balloon"
+      },
+      {
+        "word": "confetti",
+        "hint": "Confetti"
+      },
+      {
+        "word": "guirlande",
+        "hint": "Garland"
+      },
+      {
+        "word": "champagne",
+        "hint": "Champagne"
+      },
+      {
+        "word": "surprise",
+        "hint": "Surprise"
+      },
+      {
+        "word": "décoration",
+        "hint": "Decoration"
+      },
+      {
+        "word": "musique",
+        "hint": "Music"
+      },
+      {
+        "word": "inviter",
+        "hint": "To invite"
+      },
+      {
+        "word": "souffler",
+        "hint": "To blow (candles)"
+      },
+      {
+        "word": "trinquer",
+        "hint": "To toast / Cheers"
+      },
+      {
+        "word": "applaudir",
+        "hint": "To applaud"
+      }
+    ]
+  },
+  {
+    "key": "fashion_wb",
+    "name": "Fashion",
+    "description": "Fashion vocabulary in French",
+    "iconName": "tshirt",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "mode",
+        "hint": "Fashion"
+      },
+      {
+        "word": "tendance",
+        "hint": "Trend"
+      },
+      {
+        "word": "créateur",
+        "hint": "Designer"
+      },
+      {
+        "word": "défilé",
+        "hint": "Fashion show"
+      },
+      {
+        "word": "élégant",
+        "hint": "Elegant"
+      },
+      {
+        "word": "collection",
+        "hint": "Collection"
+      },
+      {
+        "word": "couturier",
+        "hint": "Fashion designer"
+      },
+      {
+        "word": "mannequin",
+        "hint": "Model"
+      },
+      {
+        "word": "marque",
+        "hint": "Brand"
+      },
+      {
+        "word": "accessoire",
+        "hint": "Accessory"
+      },
+      {
+        "word": "patron",
+        "hint": "Pattern"
+      },
+      {
+        "word": "vintage",
+        "hint": "Vintage"
+      },
+      {
+        "word": "prêt",
+        "hint": "Ready-to-wear"
+      },
+      {
+        "word": "chic",
+        "hint": "Chic / Stylish"
+      },
+      {
+        "word": "couture",
+        "hint": "Haute couture"
+      }
+    ]
+  },
+  {
+    "key": "textiles_wb",
+    "name": "Textiles",
+    "description": "Textiles and fabrics vocabulary in French",
+    "iconName": "rectangle.split.3x3",
+    "color": "#a855f7",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "coton",
+        "hint": "Cotton"
+      },
+      {
+        "word": "soie",
+        "hint": "Silk"
+      },
+      {
+        "word": "laine",
+        "hint": "Wool"
+      },
+      {
+        "word": "lin",
+        "hint": "Linen"
+      },
+      {
+        "word": "cuir",
+        "hint": "Leather"
+      },
+      {
+        "word": "velours",
+        "hint": "Velvet"
+      },
+      {
+        "word": "dentelle",
+        "hint": "Lace"
+      },
+      {
+        "word": "satin",
+        "hint": "Satin"
+      },
+      {
+        "word": "polyester",
+        "hint": "Polyester"
+      },
+      {
+        "word": "toile",
+        "hint": "Canvas / Fabric"
+      },
+      {
+        "word": "cachemire",
+        "hint": "Cashmere"
+      },
+      {
+        "word": "teinture",
+        "hint": "Dye"
+      },
+      {
+        "word": "tissage",
+        "hint": "Weaving"
+      },
+      {
+        "word": "fibre",
+        "hint": "Fiber"
+      },
+      {
+        "word": "maille",
+        "hint": "Knit / Mesh"
+      }
+    ]
+  },
+  {
+    "key": "jewelry_wb",
+    "name": "Jewelry",
+    "description": "Jewelry vocabulary in French",
+    "iconName": "sparkle",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "bijou",
+        "hint": "Jewel"
+      },
+      {
+        "word": "bague",
+        "hint": "Ring"
+      },
+      {
+        "word": "collier",
+        "hint": "Necklace"
+      },
+      {
+        "word": "bracelet",
+        "hint": "Bracelet"
+      },
+      {
+        "word": "boucle",
+        "hint": "Earring"
+      },
+      {
+        "word": "diamant",
+        "hint": "Diamond"
+      },
+      {
+        "word": "perle",
+        "hint": "Pearl"
+      },
+      {
+        "word": "rubis",
+        "hint": "Ruby"
+      },
+      {
+        "word": "émeraude",
+        "hint": "Emerald"
+      },
+      {
+        "word": "saphir",
+        "hint": "Sapphire"
+      },
+      {
+        "word": "pendentif",
+        "hint": "Pendant"
+      },
+      {
+        "word": "broche",
+        "hint": "Brooch"
+      },
+      {
+        "word": "bijoutier",
+        "hint": "Jeweler"
+      },
+      {
+        "word": "montre",
+        "hint": "Watch"
+      },
+      {
+        "word": "chaîne",
+        "hint": "Chain"
+      }
+    ]
+  },
+  {
+    "key": "cosmetics_wb",
+    "name": "Cosmetics",
+    "description": "Cosmetics and beauty vocabulary in French",
+    "iconName": "paintbrush.pointed",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "maquillage",
+        "hint": "Makeup"
+      },
+      {
+        "word": "parfum",
+        "hint": "Perfume"
+      },
+      {
+        "word": "rouge",
+        "hint": "Lipstick (rouge à lèvres)"
+      },
+      {
+        "word": "mascara",
+        "hint": "Mascara"
+      },
+      {
+        "word": "fond",
+        "hint": "Foundation (fond de teint)"
+      },
+      {
+        "word": "vernis",
+        "hint": "Nail polish"
+      },
+      {
+        "word": "crème",
+        "hint": "Cream / Lotion"
+      },
+      {
+        "word": "poudre",
+        "hint": "Powder"
+      },
+      {
+        "word": "démaquiller",
+        "hint": "To remove makeup"
+      },
+      {
+        "word": "soin",
+        "hint": "Care / Treatment"
+      },
+      {
+        "word": "contour",
+        "hint": "Contour / Outline"
+      },
+      {
+        "word": "teint",
+        "hint": "Complexion"
+      },
+      {
+        "word": "blush",
+        "hint": "Blush"
+      },
+      {
+        "word": "sérum",
+        "hint": "Serum"
+      },
+      {
+        "word": "hydratant",
+        "hint": "Moisturizer"
+      }
+    ]
+  },
+  {
+    "key": "hairstyles_wb",
+    "name": "Hairstyles",
+    "description": "Hair and hairstyle vocabulary in French",
+    "iconName": "comb",
+    "color": "#d946ef",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "coiffure",
+        "hint": "Hairstyle"
+      },
+      {
+        "word": "cheveux",
+        "hint": "Hair"
+      },
+      {
+        "word": "frange",
+        "hint": "Bangs / Fringe"
+      },
+      {
+        "word": "tresse",
+        "hint": "Braid"
+      },
+      {
+        "word": "chignon",
+        "hint": "Bun"
+      },
+      {
+        "word": "mèche",
+        "hint": "Strand / Highlight"
+      },
+      {
+        "word": "coloration",
+        "hint": "Hair color"
+      },
+      {
+        "word": "coiffeur",
+        "hint": "Hairdresser"
+      },
+      {
+        "word": "shampoing",
+        "hint": "Shampoo"
+      },
+      {
+        "word": "sèche",
+        "hint": "Blow dryer"
+      },
+      {
+        "word": "boucle",
+        "hint": "Curl"
+      },
+      {
+        "word": "lisser",
+        "hint": "To straighten"
+      },
+      {
+        "word": "couper",
+        "hint": "To cut"
+      },
+      {
+        "word": "perruque",
+        "hint": "Wig"
+      },
+      {
+        "word": "calvitie",
+        "hint": "Baldness"
+      }
+    ]
+  },
+  {
+    "key": "environment_wb",
+    "name": "Environment",
+    "description": "Environment and ecology vocabulary in French",
+    "iconName": "globe.americas",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "environnement",
+        "hint": "Environment"
+      },
+      {
+        "word": "pollution",
+        "hint": "Pollution"
+      },
+      {
+        "word": "écologie",
+        "hint": "Ecology"
+      },
+      {
+        "word": "biodiversité",
+        "hint": "Biodiversity"
+      },
+      {
+        "word": "déforestation",
+        "hint": "Deforestation"
+      },
+      {
+        "word": "déchet",
+        "hint": "Waste / Rubbish"
+      },
+      {
+        "word": "espèce",
+        "hint": "Species"
+      },
+      {
+        "word": "habitat",
+        "hint": "Habitat"
+      },
+      {
+        "word": "protéger",
+        "hint": "To protect"
+      },
+      {
+        "word": "réserve",
+        "hint": "Nature reserve"
+      },
+      {
+        "word": "menacé",
+        "hint": "Endangered / Threatened"
+      },
+      {
+        "word": "oxygène",
+        "hint": "Oxygen"
+      },
+      {
+        "word": "atmosphère",
+        "hint": "Atmosphere"
+      },
+      {
+        "word": "émission",
+        "hint": "Emission"
+      },
+      {
+        "word": "empreinte",
+        "hint": "Footprint (ecological)"
+      }
+    ]
+  },
+  {
+    "key": "recycling_wb",
+    "name": "Recycling",
+    "description": "Recycling and waste management in French",
+    "iconName": "arrow.3.trianglepath",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "recyclage",
+        "hint": "Recycling"
+      },
+      {
+        "word": "poubelle",
+        "hint": "Trash can / Bin"
+      },
+      {
+        "word": "trier",
+        "hint": "To sort"
+      },
+      {
+        "word": "plastique",
+        "hint": "Plastic"
+      },
+      {
+        "word": "carton",
+        "hint": "Cardboard"
+      },
+      {
+        "word": "verre",
+        "hint": "Glass"
+      },
+      {
+        "word": "compostage",
+        "hint": "Composting"
+      },
+      {
+        "word": "réutiliser",
+        "hint": "To reuse"
+      },
+      {
+        "word": "emballage",
+        "hint": "Packaging"
+      },
+      {
+        "word": "gaspillage",
+        "hint": "Waste / Wastage"
+      },
+      {
+        "word": "collecter",
+        "hint": "To collect"
+      },
+      {
+        "word": "déchetterie",
+        "hint": "Recycling center"
+      },
+      {
+        "word": "durable",
+        "hint": "Sustainable / Durable"
+      },
+      {
+        "word": "consigne",
+        "hint": "Deposit (bottle)"
+      },
+      {
+        "word": "biodégradable",
+        "hint": "Biodegradable"
+      }
+    ]
+  },
+  {
+    "key": "energy_wb",
+    "name": "Energy",
+    "description": "Energy sources and vocabulary in French",
+    "iconName": "bolt.fill",
+    "color": "#eab308",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "énergie",
+        "hint": "Energy"
+      },
+      {
+        "word": "solaire",
+        "hint": "Solar"
+      },
+      {
+        "word": "éolienne",
+        "hint": "Wind turbine"
+      },
+      {
+        "word": "nucléaire",
+        "hint": "Nuclear"
+      },
+      {
+        "word": "pétrole",
+        "hint": "Oil / Petroleum"
+      },
+      {
+        "word": "charbon",
+        "hint": "Coal"
+      },
+      {
+        "word": "renouvelable",
+        "hint": "Renewable"
+      },
+      {
+        "word": "barrage",
+        "hint": "Dam"
+      },
+      {
+        "word": "panneau",
+        "hint": "Panel (solar)"
+      },
+      {
+        "word": "centrale",
+        "hint": "Power plant"
+      },
+      {
+        "word": "batterie",
+        "hint": "Battery"
+      },
+      {
+        "word": "réseau",
+        "hint": "Grid / Network"
+      },
+      {
+        "word": "puissance",
+        "hint": "Power"
+      },
+      {
+        "word": "combustible",
+        "hint": "Fuel"
+      },
+      {
+        "word": "transformer",
+        "hint": "To transform / Convert"
+      }
+    ]
+  },
+  {
+    "key": "climate_wb",
+    "name": "Climate",
+    "description": "Climate and weather patterns in French",
+    "iconName": "thermometer",
+    "color": "#ef4444",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "climat",
+        "hint": "Climate"
+      },
+      {
+        "word": "réchauffement",
+        "hint": "Warming"
+      },
+      {
+        "word": "sécheresse",
+        "hint": "Drought"
+      },
+      {
+        "word": "inondation",
+        "hint": "Flood"
+      },
+      {
+        "word": "ouragan",
+        "hint": "Hurricane"
+      },
+      {
+        "word": "tempête",
+        "hint": "Storm"
+      },
+      {
+        "word": "glaciaire",
+        "hint": "Glacial"
+      },
+      {
+        "word": "canicule",
+        "hint": "Heatwave"
+      },
+      {
+        "word": "mousson",
+        "hint": "Monsoon"
+      },
+      {
+        "word": "précipitation",
+        "hint": "Precipitation"
+      },
+      {
+        "word": "fonte",
+        "hint": "Melting"
+      },
+      {
+        "word": "couche",
+        "hint": "Layer (ozone)"
+      },
+      {
+        "word": "effet",
+        "hint": "Effect (greenhouse)"
+      },
+      {
+        "word": "catastrophe",
+        "hint": "Catastrophe / Disaster"
+      },
+      {
+        "word": "prévision",
+        "hint": "Forecast"
+      }
+    ]
+  },
+  {
+    "key": "sustainability_wb",
+    "name": "Sustainability",
+    "description": "Sustainability vocabulary in French",
+    "iconName": "leaf.circle",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "durable",
+        "hint": "Sustainable"
+      },
+      {
+        "word": "biologique",
+        "hint": "Organic"
+      },
+      {
+        "word": "commerce",
+        "hint": "Fair trade (commerce équitable)"
+      },
+      {
+        "word": "responsable",
+        "hint": "Responsible"
+      },
+      {
+        "word": "éthique",
+        "hint": "Ethical"
+      },
+      {
+        "word": "transition",
+        "hint": "Transition"
+      },
+      {
+        "word": "circuit",
+        "hint": "Short supply chain"
+      },
+      {
+        "word": "empreinte",
+        "hint": "Footprint"
+      },
+      {
+        "word": "sobriété",
+        "hint": "Sobriety / Moderation"
+      },
+      {
+        "word": "autonomie",
+        "hint": "Self-sufficiency"
+      },
+      {
+        "word": "local",
+        "hint": "Local"
+      },
+      {
+        "word": "végétal",
+        "hint": "Plant-based"
+      },
+      {
+        "word": "réduire",
+        "hint": "To reduce"
+      },
+      {
+        "word": "covoiturage",
+        "hint": "Carpooling"
+      },
+      {
+        "word": "sensibiliser",
+        "hint": "To raise awareness"
+      }
+    ]
   }
 ]

@@ -2098,5 +2098,4835 @@
         "hint": "Porcelana"
       }
     ]
+  },
+  {
+    "key": "daily_routine_wb",
+    "name": "Codzienna rutyna",
+    "description": "Czynności dnia codziennego po ukraińsku",
+    "iconName": "sunrise",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "прокидатися",
+        "hint": "Budzić się"
+      },
+      {
+        "word": "снідати",
+        "hint": "Jeść śniadanie"
+      },
+      {
+        "word": "одягатися",
+        "hint": "Ubierać się"
+      },
+      {
+        "word": "чистити",
+        "hint": "Czyścić"
+      },
+      {
+        "word": "вмиватися",
+        "hint": "Myć się"
+      },
+      {
+        "word": "готувати",
+        "hint": "Gotować"
+      },
+      {
+        "word": "працювати",
+        "hint": "Pracować"
+      },
+      {
+        "word": "відпочивати",
+        "hint": "Odpoczywać"
+      },
+      {
+        "word": "гуляти",
+        "hint": "Spacerować"
+      },
+      {
+        "word": "вечеряти",
+        "hint": "Jeść kolację"
+      },
+      {
+        "word": "прибирати",
+        "hint": "Sprzątać"
+      },
+      {
+        "word": "прасувати",
+        "hint": "Prasować"
+      },
+      {
+        "word": "лягати",
+        "hint": "Kłaść się"
+      },
+      {
+        "word": "розклад",
+        "hint": "Rozkład dnia"
+      },
+      {
+        "word": "будильник",
+        "hint": "Budzik"
+      }
+    ]
+  },
+  {
+    "key": "shopping_wb",
+    "name": "Zakupy",
+    "description": "Słownictwo zakupowe po ukraińsku",
+    "iconName": "cart",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "магазин",
+        "hint": "Sklep"
+      },
+      {
+        "word": "ринок",
+        "hint": "Rynek/targ"
+      },
+      {
+        "word": "кошик",
+        "hint": "Koszyk"
+      },
+      {
+        "word": "каса",
+        "hint": "Kasa"
+      },
+      {
+        "word": "знижка",
+        "hint": "Zniżka"
+      },
+      {
+        "word": "чек",
+        "hint": "Paragon"
+      },
+      {
+        "word": "покупка",
+        "hint": "Zakup"
+      },
+      {
+        "word": "продавець",
+        "hint": "Sprzedawca"
+      },
+      {
+        "word": "вітрина",
+        "hint": "Witryna"
+      },
+      {
+        "word": "примірка",
+        "hint": "Przymierzalnia"
+      },
+      {
+        "word": "розмір",
+        "hint": "Rozmiar"
+      },
+      {
+        "word": "якість",
+        "hint": "Jakość"
+      },
+      {
+        "word": "товар",
+        "hint": "Towar"
+      },
+      {
+        "word": "гроші",
+        "hint": "Pieniądze"
+      },
+      {
+        "word": "пакет",
+        "hint": "Torba/reklamówka"
+      }
+    ]
+  },
+  {
+    "key": "restaurant_wb",
+    "name": "Restauracja",
+    "description": "Słownictwo restauracyjne po ukraińsku",
+    "iconName": "fork.knife",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "меню",
+        "hint": "Menu"
+      },
+      {
+        "word": "офіціант",
+        "hint": "Kelner"
+      },
+      {
+        "word": "замовлення",
+        "hint": "Zamówienie"
+      },
+      {
+        "word": "рахунок",
+        "hint": "Rachunek"
+      },
+      {
+        "word": "напій",
+        "hint": "Napój"
+      },
+      {
+        "word": "десерт",
+        "hint": "Deser"
+      },
+      {
+        "word": "закуска",
+        "hint": "Przystawka"
+      },
+      {
+        "word": "страва",
+        "hint": "Danie"
+      },
+      {
+        "word": "порція",
+        "hint": "Porcja"
+      },
+      {
+        "word": "столик",
+        "hint": "Stolik"
+      },
+      {
+        "word": "чайові",
+        "hint": "Napiwek"
+      },
+      {
+        "word": "кухар",
+        "hint": "Kucharz"
+      },
+      {
+        "word": "бронювання",
+        "hint": "Rezerwacja"
+      },
+      {
+        "word": "тераса",
+        "hint": "Taras"
+      },
+      {
+        "word": "салфетка",
+        "hint": "Serwetka"
+      }
+    ]
+  },
+  {
+    "key": "garden_wb",
+    "name": "Ogród",
+    "description": "Słownictwo ogrodowe po ukraińsku",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "город",
+        "hint": "Ogród warzywny"
+      },
+      {
+        "word": "клумба",
+        "hint": "Klomb/rabata"
+      },
+      {
+        "word": "газон",
+        "hint": "Trawnik"
+      },
+      {
+        "word": "грядка",
+        "hint": "Grządka"
+      },
+      {
+        "word": "лопата",
+        "hint": "Łopata"
+      },
+      {
+        "word": "граблі",
+        "hint": "Grabie"
+      },
+      {
+        "word": "лійка",
+        "hint": "Konewka"
+      },
+      {
+        "word": "насіння",
+        "hint": "Nasiona"
+      },
+      {
+        "word": "добриво",
+        "hint": "Nawóz"
+      },
+      {
+        "word": "теплиця",
+        "hint": "Szklarnia"
+      },
+      {
+        "word": "бур'ян",
+        "hint": "Chwast"
+      },
+      {
+        "word": "паркан",
+        "hint": "Płot"
+      },
+      {
+        "word": "стежка",
+        "hint": "Ścieżka"
+      },
+      {
+        "word": "полив",
+        "hint": "Podlewanie"
+      },
+      {
+        "word": "врожай",
+        "hint": "Plon/zbiory"
+      }
+    ]
+  },
+  {
+    "key": "bathroom_wb",
+    "name": "Łazienka",
+    "description": "Wyposażenie łazienki po ukraińsku",
+    "iconName": "drop",
+    "color": "#06b6d4",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ванна",
+        "hint": "Wanna"
+      },
+      {
+        "word": "душ",
+        "hint": "Prysznic"
+      },
+      {
+        "word": "рушник",
+        "hint": "Ręcznik"
+      },
+      {
+        "word": "мило",
+        "hint": "Mydło"
+      },
+      {
+        "word": "шампунь",
+        "hint": "Szampon"
+      },
+      {
+        "word": "дзеркало",
+        "hint": "Lustro"
+      },
+      {
+        "word": "зубна щітка",
+        "hint": "Szczoteczka do zębów"
+      },
+      {
+        "word": "раковина",
+        "hint": "Umywalka"
+      },
+      {
+        "word": "унітаз",
+        "hint": "Toaleta/sedes"
+      },
+      {
+        "word": "кран",
+        "hint": "Kran"
+      },
+      {
+        "word": "бритва",
+        "hint": "Maszynka do golenia"
+      },
+      {
+        "word": "фен",
+        "hint": "Suszarka do włosów"
+      },
+      {
+        "word": "халат",
+        "hint": "Szlafrok"
+      },
+      {
+        "word": "плитка",
+        "hint": "Płytka/kafelek"
+      },
+      {
+        "word": "пральна машина",
+        "hint": "Pralka"
+      }
+    ]
+  },
+  {
+    "key": "cinema_wb",
+    "name": "Kino",
+    "description": "Słownictwo filmowe po ukraińsku",
+    "iconName": "film",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "кінотеатр",
+        "hint": "Kino (budynek)"
+      },
+      {
+        "word": "фільм",
+        "hint": "Film"
+      },
+      {
+        "word": "екран",
+        "hint": "Ekran"
+      },
+      {
+        "word": "режисер",
+        "hint": "Reżyser"
+      },
+      {
+        "word": "актор",
+        "hint": "Aktor"
+      },
+      {
+        "word": "акторка",
+        "hint": "Aktorka"
+      },
+      {
+        "word": "квиток",
+        "hint": "Bilet"
+      },
+      {
+        "word": "сеанс",
+        "hint": "Seans"
+      },
+      {
+        "word": "комедія",
+        "hint": "Komedia"
+      },
+      {
+        "word": "трилер",
+        "hint": "Thriller"
+      },
+      {
+        "word": "мультфільм",
+        "hint": "Film animowany"
+      },
+      {
+        "word": "субтитри",
+        "hint": "Napisy"
+      },
+      {
+        "word": "сценарій",
+        "hint": "Scenariusz"
+      },
+      {
+        "word": "прем'єра",
+        "hint": "Premiera"
+      },
+      {
+        "word": "попкорн",
+        "hint": "Popcorn"
+      }
+    ]
+  },
+  {
+    "key": "art_wb",
+    "name": "Sztuka",
+    "description": "Słownictwo artystyczne po ukraińsku",
+    "iconName": "paintbrush",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "картина",
+        "hint": "Obraz"
+      },
+      {
+        "word": "художник",
+        "hint": "Malarz/artysta"
+      },
+      {
+        "word": "пензель",
+        "hint": "Pędzel"
+      },
+      {
+        "word": "фарба",
+        "hint": "Farba"
+      },
+      {
+        "word": "полотно",
+        "hint": "Płótno"
+      },
+      {
+        "word": "галерея",
+        "hint": "Galeria"
+      },
+      {
+        "word": "виставка",
+        "hint": "Wystawa"
+      },
+      {
+        "word": "скульптура",
+        "hint": "Rzeźba"
+      },
+      {
+        "word": "палітра",
+        "hint": "Paleta"
+      },
+      {
+        "word": "олівець",
+        "hint": "Ołówek"
+      },
+      {
+        "word": "графіка",
+        "hint": "Grafika"
+      },
+      {
+        "word": "портрет",
+        "hint": "Portret"
+      },
+      {
+        "word": "пейзаж",
+        "hint": "Pejzaż"
+      },
+      {
+        "word": "рамка",
+        "hint": "Ramka"
+      },
+      {
+        "word": "мольберт",
+        "hint": "Sztaluga"
+      }
+    ]
+  },
+  {
+    "key": "dance_wb",
+    "name": "Taniec",
+    "description": "Rodzaje tańca po ukraińsku",
+    "iconName": "figure.dance",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "танець",
+        "hint": "Taniec"
+      },
+      {
+        "word": "балет",
+        "hint": "Balet"
+      },
+      {
+        "word": "вальс",
+        "hint": "Walc"
+      },
+      {
+        "word": "танцюрист",
+        "hint": "Tancerz"
+      },
+      {
+        "word": "хореографія",
+        "hint": "Choreografia"
+      },
+      {
+        "word": "ритм",
+        "hint": "Rytm"
+      },
+      {
+        "word": "рух",
+        "hint": "Ruch"
+      },
+      {
+        "word": "сцена",
+        "hint": "Scena"
+      },
+      {
+        "word": "гопак",
+        "hint": "Hopak (taniec ukraiński)"
+      },
+      {
+        "word": "репетиція",
+        "hint": "Próba/rehearsal"
+      },
+      {
+        "word": "крок",
+        "hint": "Krok"
+      },
+      {
+        "word": "музика",
+        "hint": "Muzyka"
+      },
+      {
+        "word": "партнер",
+        "hint": "Partner"
+      },
+      {
+        "word": "виступ",
+        "hint": "Występ"
+      },
+      {
+        "word": "пуанти",
+        "hint": "Pointy (baletowe)"
+      }
+    ]
+  },
+  {
+    "key": "photography_wb",
+    "name": "Fotografia",
+    "description": "Słownictwo fotograficzne po ukraińsku",
+    "iconName": "camera",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "фотографія",
+        "hint": "Fotografia"
+      },
+      {
+        "word": "камера",
+        "hint": "Aparat"
+      },
+      {
+        "word": "об'єктив",
+        "hint": "Obiektyw"
+      },
+      {
+        "word": "спалах",
+        "hint": "Flesz/błysk"
+      },
+      {
+        "word": "знімок",
+        "hint": "Zdjęcie"
+      },
+      {
+        "word": "портрет",
+        "hint": "Portret"
+      },
+      {
+        "word": "пейзаж",
+        "hint": "Krajobraz"
+      },
+      {
+        "word": "витримка",
+        "hint": "Czas naświetlania"
+      },
+      {
+        "word": "штатив",
+        "hint": "Statyw"
+      },
+      {
+        "word": "фокус",
+        "hint": "Ostrość/fokus"
+      },
+      {
+        "word": "кадр",
+        "hint": "Kadr"
+      },
+      {
+        "word": "фотограф",
+        "hint": "Fotograf"
+      },
+      {
+        "word": "альбом",
+        "hint": "Album"
+      },
+      {
+        "word": "ретуш",
+        "hint": "Retusz"
+      },
+      {
+        "word": "студія",
+        "hint": "Studio"
+      }
+    ]
+  },
+  {
+    "key": "crafts_wb",
+    "name": "Rękodzieło",
+    "description": "Rękodzieło i rzemiosło po ukraińsku",
+    "iconName": "scissors",
+    "color": "#d97706",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "вишивка",
+        "hint": "Haft"
+      },
+      {
+        "word": "в'язання",
+        "hint": "Robienie na drutach"
+      },
+      {
+        "word": "шиття",
+        "hint": "Szycie"
+      },
+      {
+        "word": "гончарство",
+        "hint": "Garncarstwo"
+      },
+      {
+        "word": "плетіння",
+        "hint": "Plecenie"
+      },
+      {
+        "word": "нитка",
+        "hint": "Nić/nitka"
+      },
+      {
+        "word": "голка",
+        "hint": "Igła"
+      },
+      {
+        "word": "тканина",
+        "hint": "Tkanina"
+      },
+      {
+        "word": "ножиці",
+        "hint": "Nożyczki"
+      },
+      {
+        "word": "бісер",
+        "hint": "Koraliki"
+      },
+      {
+        "word": "гачок",
+        "hint": "Szydełko"
+      },
+      {
+        "word": "спиці",
+        "hint": "Druty (do robótek)"
+      },
+      {
+        "word": "орнамент",
+        "hint": "Ornament/wzór"
+      },
+      {
+        "word": "майстерність",
+        "hint": "Umiejętność/kunszt"
+      },
+      {
+        "word": "виріб",
+        "hint": "Wyrób/wytwór"
+      }
+    ]
+  },
+  {
+    "key": "geography_wb",
+    "name": "Geografia",
+    "description": "Pojęcia geograficzne po ukraińsku",
+    "iconName": "globe",
+    "color": "#059669",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "континент",
+        "hint": "Kontynent"
+      },
+      {
+        "word": "океан",
+        "hint": "Ocean"
+      },
+      {
+        "word": "пустеля",
+        "hint": "Pustynia"
+      },
+      {
+        "word": "рівнина",
+        "hint": "Równina"
+      },
+      {
+        "word": "острів",
+        "hint": "Wyspa"
+      },
+      {
+        "word": "півострів",
+        "hint": "Półwysep"
+      },
+      {
+        "word": "вулкан",
+        "hint": "Wulkan"
+      },
+      {
+        "word": "долина",
+        "hint": "Dolina"
+      },
+      {
+        "word": "річка",
+        "hint": "Rzeka"
+      },
+      {
+        "word": "кордон",
+        "hint": "Granica"
+      },
+      {
+        "word": "столиця",
+        "hint": "Stolica"
+      },
+      {
+        "word": "екватор",
+        "hint": "Równik"
+      },
+      {
+        "word": "клімат",
+        "hint": "Klimat"
+      },
+      {
+        "word": "узбережжя",
+        "hint": "Wybrzeże"
+      },
+      {
+        "word": "болото",
+        "hint": "Bagno"
+      }
+    ]
+  },
+  {
+    "key": "astronomy_wb",
+    "name": "Astronomia",
+    "description": "Słownictwo astronomiczne po ukraińsku",
+    "iconName": "star",
+    "color": "#1e3a5f",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "зірка",
+        "hint": "Gwiazda"
+      },
+      {
+        "word": "планета",
+        "hint": "Planeta"
+      },
+      {
+        "word": "сузір'я",
+        "hint": "Konstelacja/gwiazdozbiór"
+      },
+      {
+        "word": "галактика",
+        "hint": "Galaktyka"
+      },
+      {
+        "word": "комета",
+        "hint": "Kometa"
+      },
+      {
+        "word": "астероїд",
+        "hint": "Asteroida"
+      },
+      {
+        "word": "телескоп",
+        "hint": "Teleskop"
+      },
+      {
+        "word": "місяць",
+        "hint": "Księżyc"
+      },
+      {
+        "word": "сонце",
+        "hint": "Słońce"
+      },
+      {
+        "word": "затемнення",
+        "hint": "Zaćmienie"
+      },
+      {
+        "word": "космонавт",
+        "hint": "Kosmonauta"
+      },
+      {
+        "word": "орбіта",
+        "hint": "Orbita"
+      },
+      {
+        "word": "всесвіт",
+        "hint": "Wszechświat"
+      },
+      {
+        "word": "метеорит",
+        "hint": "Meteoryt"
+      },
+      {
+        "word": "туманність",
+        "hint": "Mgławica"
+      }
+    ]
+  },
+  {
+    "key": "ocean_wb",
+    "name": "Ocean i morze",
+    "description": "Słownictwo morskie po ukraińsku",
+    "iconName": "water.waves",
+    "color": "#0284c7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "хвиля",
+        "hint": "Fala"
+      },
+      {
+        "word": "прилив",
+        "hint": "Przypływ"
+      },
+      {
+        "word": "відлив",
+        "hint": "Odpływ"
+      },
+      {
+        "word": "корабель",
+        "hint": "Statek/okręt"
+      },
+      {
+        "word": "маяк",
+        "hint": "Latarnia morska"
+      },
+      {
+        "word": "глибина",
+        "hint": "Głębokość"
+      },
+      {
+        "word": "риф",
+        "hint": "Rafa"
+      },
+      {
+        "word": "якір",
+        "hint": "Kotwica"
+      },
+      {
+        "word": "медуза",
+        "hint": "Meduza"
+      },
+      {
+        "word": "водорості",
+        "hint": "Wodorosty"
+      },
+      {
+        "word": "акула",
+        "hint": "Rekin"
+      },
+      {
+        "word": "дельфін",
+        "hint": "Delfin"
+      },
+      {
+        "word": "черепаха",
+        "hint": "Żółw morski"
+      },
+      {
+        "word": "пляж",
+        "hint": "Plaża"
+      },
+      {
+        "word": "айсберг",
+        "hint": "Góra lodowa"
+      }
+    ]
+  },
+  {
+    "key": "mountains_wb",
+    "name": "Góry",
+    "description": "Słownictwo górskie po ukraińsku",
+    "iconName": "mountain.2",
+    "color": "#78716c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "вершина",
+        "hint": "Szczyt"
+      },
+      {
+        "word": "хребет",
+        "hint": "Grzbiet/pasmo"
+      },
+      {
+        "word": "ущелина",
+        "hint": "Wąwóz"
+      },
+      {
+        "word": "водоспад",
+        "hint": "Wodospad"
+      },
+      {
+        "word": "печера",
+        "hint": "Jaskinia"
+      },
+      {
+        "word": "стежка",
+        "hint": "Szlak/ścieżka"
+      },
+      {
+        "word": "скеля",
+        "hint": "Skała"
+      },
+      {
+        "word": "льодовик",
+        "hint": "Lodowiec"
+      },
+      {
+        "word": "лавина",
+        "hint": "Lawina"
+      },
+      {
+        "word": "перевал",
+        "hint": "Przełęcz"
+      },
+      {
+        "word": "полонина",
+        "hint": "Połonina/hala"
+      },
+      {
+        "word": "ялинка",
+        "hint": "Świerk/jodła"
+      },
+      {
+        "word": "потік",
+        "hint": "Potok"
+      },
+      {
+        "word": "схил",
+        "hint": "Zbocze/stok"
+      },
+      {
+        "word": "карпати",
+        "hint": "Karpaty"
+      }
+    ]
+  },
+  {
+    "key": "camping_wb",
+    "name": "Biwakowanie",
+    "description": "Słownictwo kempingowe po ukraińsku",
+    "iconName": "tent",
+    "color": "#65a30d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "намет",
+        "hint": "Namiot"
+      },
+      {
+        "word": "багаття",
+        "hint": "Ognisko"
+      },
+      {
+        "word": "спальник",
+        "hint": "Śpiwór"
+      },
+      {
+        "word": "рюкзак",
+        "hint": "Plecak"
+      },
+      {
+        "word": "компас",
+        "hint": "Kompas"
+      },
+      {
+        "word": "ліхтар",
+        "hint": "Latarka"
+      },
+      {
+        "word": "казанок",
+        "hint": "Kociołek"
+      },
+      {
+        "word": "сірники",
+        "hint": "Zapałki"
+      },
+      {
+        "word": "термос",
+        "hint": "Termos"
+      },
+      {
+        "word": "карта",
+        "hint": "Mapa"
+      },
+      {
+        "word": "похід",
+        "hint": "Wycieczka/wędrówka"
+      },
+      {
+        "word": "каремат",
+        "hint": "Karimata"
+      },
+      {
+        "word": "вудка",
+        "hint": "Wędka"
+      },
+      {
+        "word": "гамак",
+        "hint": "Hamak"
+      },
+      {
+        "word": "дрова",
+        "hint": "Drewno/opał"
+      }
+    ]
+  },
+  {
+    "key": "law_wb",
+    "name": "Prawo",
+    "description": "Słownictwo prawne po ukraińsku",
+    "iconName": "building.columns",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "закон",
+        "hint": "Prawo/ustawa"
+      },
+      {
+        "word": "суддя",
+        "hint": "Sędzia"
+      },
+      {
+        "word": "адвокат",
+        "hint": "Adwokat"
+      },
+      {
+        "word": "вирок",
+        "hint": "Wyrok"
+      },
+      {
+        "word": "свідок",
+        "hint": "Świadek"
+      },
+      {
+        "word": "злочин",
+        "hint": "Przestępstwo"
+      },
+      {
+        "word": "штраф",
+        "hint": "Kara/mandat"
+      },
+      {
+        "word": "позов",
+        "hint": "Pozew"
+      },
+      {
+        "word": "доказ",
+        "hint": "Dowód"
+      },
+      {
+        "word": "присяжний",
+        "hint": "Przysięgły"
+      },
+      {
+        "word": "прокурор",
+        "hint": "Prokurator"
+      },
+      {
+        "word": "договір",
+        "hint": "Umowa"
+      },
+      {
+        "word": "право",
+        "hint": "Prawo"
+      },
+      {
+        "word": "слухання",
+        "hint": "Rozprawa"
+      },
+      {
+        "word": "апеляція",
+        "hint": "Apelacja"
+      }
+    ]
+  },
+  {
+    "key": "politics_wb",
+    "name": "Polityka",
+    "description": "Słownictwo polityczne po ukraińsku",
+    "iconName": "person.3",
+    "color": "#dc2626",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "президент",
+        "hint": "Prezydent"
+      },
+      {
+        "word": "парламент",
+        "hint": "Parlament"
+      },
+      {
+        "word": "вибори",
+        "hint": "Wybory"
+      },
+      {
+        "word": "депутат",
+        "hint": "Poseł/deputowany"
+      },
+      {
+        "word": "демократія",
+        "hint": "Demokracja"
+      },
+      {
+        "word": "опозиція",
+        "hint": "Opozycja"
+      },
+      {
+        "word": "партія",
+        "hint": "Partia"
+      },
+      {
+        "word": "конституція",
+        "hint": "Konstytucja"
+      },
+      {
+        "word": "громадянин",
+        "hint": "Obywatel"
+      },
+      {
+        "word": "реформа",
+        "hint": "Reforma"
+      },
+      {
+        "word": "дипломатія",
+        "hint": "Dyplomacja"
+      },
+      {
+        "word": "референдум",
+        "hint": "Referendum"
+      },
+      {
+        "word": "санкції",
+        "hint": "Sankcje"
+      },
+      {
+        "word": "коаліція",
+        "hint": "Koalicja"
+      },
+      {
+        "word": "міністр",
+        "hint": "Minister"
+      }
+    ]
+  },
+  {
+    "key": "economy_wb",
+    "name": "Ekonomia",
+    "description": "Słownictwo ekonomiczne po ukraińsku",
+    "iconName": "chart.line.uptrend.xyaxis",
+    "color": "#0d9488",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "економіка",
+        "hint": "Ekonomia/gospodarka"
+      },
+      {
+        "word": "інфляція",
+        "hint": "Inflacja"
+      },
+      {
+        "word": "бюджет",
+        "hint": "Budżet"
+      },
+      {
+        "word": "податок",
+        "hint": "Podatek"
+      },
+      {
+        "word": "експорт",
+        "hint": "Eksport"
+      },
+      {
+        "word": "імпорт",
+        "hint": "Import"
+      },
+      {
+        "word": "валюта",
+        "hint": "Waluta"
+      },
+      {
+        "word": "інвестиція",
+        "hint": "Inwestycja"
+      },
+      {
+        "word": "прибуток",
+        "hint": "Zysk"
+      },
+      {
+        "word": "дефіцит",
+        "hint": "Deficyt"
+      },
+      {
+        "word": "конкуренція",
+        "hint": "Konkurencja"
+      },
+      {
+        "word": "монополія",
+        "hint": "Monopol"
+      },
+      {
+        "word": "акція",
+        "hint": "Akcja (giełdowa)"
+      },
+      {
+        "word": "субсидія",
+        "hint": "Dotacja/subwencja"
+      },
+      {
+        "word": "рецесія",
+        "hint": "Recesja"
+      }
+    ]
+  },
+  {
+    "key": "banking_wb",
+    "name": "Bankowość",
+    "description": "Słownictwo bankowe po ukraińsku",
+    "iconName": "banknote",
+    "color": "#16a34a",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "банк",
+        "hint": "Bank"
+      },
+      {
+        "word": "рахунок",
+        "hint": "Konto/rachunek"
+      },
+      {
+        "word": "кредит",
+        "hint": "Kredyt"
+      },
+      {
+        "word": "відсоток",
+        "hint": "Procent/odsetki"
+      },
+      {
+        "word": "депозит",
+        "hint": "Lokata/depozyt"
+      },
+      {
+        "word": "переказ",
+        "hint": "Przelew"
+      },
+      {
+        "word": "банкомат",
+        "hint": "Bankomat"
+      },
+      {
+        "word": "картка",
+        "hint": "Karta"
+      },
+      {
+        "word": "іпотека",
+        "hint": "Hipoteka"
+      },
+      {
+        "word": "борг",
+        "hint": "Dług"
+      },
+      {
+        "word": "заощадження",
+        "hint": "Oszczędności"
+      },
+      {
+        "word": "готівка",
+        "hint": "Gotówka"
+      },
+      {
+        "word": "позика",
+        "hint": "Pożyczka"
+      },
+      {
+        "word": "банкір",
+        "hint": "Bankier"
+      },
+      {
+        "word": "виписка",
+        "hint": "Wyciąg bankowy"
+      }
+    ]
+  },
+  {
+    "key": "insurance_wb",
+    "name": "Ubezpieczenia",
+    "description": "Słownictwo ubezpieczeniowe po ukraińsku",
+    "iconName": "shield",
+    "color": "#2563eb",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "страхування",
+        "hint": "Ubezpieczenie"
+      },
+      {
+        "word": "поліс",
+        "hint": "Polisa"
+      },
+      {
+        "word": "внесок",
+        "hint": "Składka"
+      },
+      {
+        "word": "виплата",
+        "hint": "Wypłata/odszkodowanie"
+      },
+      {
+        "word": "ризик",
+        "hint": "Ryzyko"
+      },
+      {
+        "word": "франшиза",
+        "hint": "Franczyza/udział własny"
+      },
+      {
+        "word": "компенсація",
+        "hint": "Odszkodowanie"
+      },
+      {
+        "word": "претензія",
+        "hint": "Roszczenie"
+      },
+      {
+        "word": "аварія",
+        "hint": "Wypadek"
+      },
+      {
+        "word": "покриття",
+        "hint": "Pokrycie/zakres"
+      },
+      {
+        "word": "пенсія",
+        "hint": "Emerytura"
+      },
+      {
+        "word": "агент",
+        "hint": "Agent ubezpieczeniowy"
+      },
+      {
+        "word": "договір",
+        "hint": "Umowa"
+      },
+      {
+        "word": "здоров'я",
+        "hint": "Zdrowie"
+      },
+      {
+        "word": "відшкодування",
+        "hint": "Zadośćuczynienie"
+      }
+    ]
+  },
+  {
+    "key": "cooking_wb",
+    "name": "Gotowanie",
+    "description": "Metody gotowania po ukraińsku",
+    "iconName": "flame",
+    "color": "#ea580c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "варити",
+        "hint": "Gotować (w wodzie)"
+      },
+      {
+        "word": "смажити",
+        "hint": "Smażyć"
+      },
+      {
+        "word": "пекти",
+        "hint": "Piec"
+      },
+      {
+        "word": "тушкувати",
+        "hint": "Dusić"
+      },
+      {
+        "word": "нарізати",
+        "hint": "Kroić"
+      },
+      {
+        "word": "перемішати",
+        "hint": "Mieszać"
+      },
+      {
+        "word": "каструля",
+        "hint": "Garnek"
+      },
+      {
+        "word": "сковорода",
+        "hint": "Patelnia"
+      },
+      {
+        "word": "духовка",
+        "hint": "Piekarnik"
+      },
+      {
+        "word": "рецепт",
+        "hint": "Przepis"
+      },
+      {
+        "word": "інгредієнт",
+        "hint": "Składnik"
+      },
+      {
+        "word": "приправа",
+        "hint": "Przyprawa"
+      },
+      {
+        "word": "бульйон",
+        "hint": "Bulion"
+      },
+      {
+        "word": "маринад",
+        "hint": "Marynata"
+      },
+      {
+        "word": "начинка",
+        "hint": "Nadzienie/farsz"
+      }
+    ]
+  },
+  {
+    "key": "baking_wb",
+    "name": "Pieczenie",
+    "description": "Słownictwo cukiernicze po ukraińsku",
+    "iconName": "birthday.cake",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "борошно",
+        "hint": "Mąka"
+      },
+      {
+        "word": "дріжджі",
+        "hint": "Drożdże"
+      },
+      {
+        "word": "тісто",
+        "hint": "Ciasto"
+      },
+      {
+        "word": "крем",
+        "hint": "Krem"
+      },
+      {
+        "word": "глазур",
+        "hint": "Lukier/glazura"
+      },
+      {
+        "word": "пиріг",
+        "hint": "Ciasto/placek"
+      },
+      {
+        "word": "булочка",
+        "hint": "Bułeczka"
+      },
+      {
+        "word": "хліб",
+        "hint": "Chleb"
+      },
+      {
+        "word": "круасан",
+        "hint": "Croissant/rogalik"
+      },
+      {
+        "word": "печиво",
+        "hint": "Ciastko"
+      },
+      {
+        "word": "бісквіт",
+        "hint": "Biszkopt"
+      },
+      {
+        "word": "форма",
+        "hint": "Forma do pieczenia"
+      },
+      {
+        "word": "качалка",
+        "hint": "Wałek"
+      },
+      {
+        "word": "розпушувач",
+        "hint": "Proszek do pieczenia"
+      },
+      {
+        "word": "ванілін",
+        "hint": "Wanilina"
+      }
+    ]
+  },
+  {
+    "key": "spices_wb",
+    "name": "Przyprawy",
+    "description": "Przyprawy i zioła po ukraińsku",
+    "iconName": "leaf",
+    "color": "#b45309",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "перець",
+        "hint": "Pieprz"
+      },
+      {
+        "word": "кориця",
+        "hint": "Cynamon"
+      },
+      {
+        "word": "кмин",
+        "hint": "Kmin"
+      },
+      {
+        "word": "імбир",
+        "hint": "Imbir"
+      },
+      {
+        "word": "часник",
+        "hint": "Czosnek"
+      },
+      {
+        "word": "базилік",
+        "hint": "Bazylia"
+      },
+      {
+        "word": "кріп",
+        "hint": "Koper"
+      },
+      {
+        "word": "петрушка",
+        "hint": "Pietruszka"
+      },
+      {
+        "word": "лавровий",
+        "hint": "Liść laurowy"
+      },
+      {
+        "word": "м'ята",
+        "hint": "Mięta"
+      },
+      {
+        "word": "гірчиця",
+        "hint": "Musztarda"
+      },
+      {
+        "word": "куркума",
+        "hint": "Kurkuma"
+      },
+      {
+        "word": "паприка",
+        "hint": "Papryka (przyprawa)"
+      },
+      {
+        "word": "розмарин",
+        "hint": "Rozmaryn"
+      },
+      {
+        "word": "орегано",
+        "hint": "Oregano"
+      }
+    ]
+  },
+  {
+    "key": "dairy_wb",
+    "name": "Nabiał",
+    "description": "Produkty mleczne po ukraińsku",
+    "iconName": "cup.and.saucer",
+    "color": "#fbbf24",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "молоко",
+        "hint": "Mleko"
+      },
+      {
+        "word": "масло",
+        "hint": "Masło"
+      },
+      {
+        "word": "сир",
+        "hint": "Ser"
+      },
+      {
+        "word": "сметана",
+        "hint": "Śmietana"
+      },
+      {
+        "word": "йогурт",
+        "hint": "Jogurt"
+      },
+      {
+        "word": "кефір",
+        "hint": "Kefir"
+      },
+      {
+        "word": "вершки",
+        "hint": "Śmietanka"
+      },
+      {
+        "word": "ряжанка",
+        "hint": "Rżenka (napój mleczny)"
+      },
+      {
+        "word": "творог",
+        "hint": "Twaróg/serek"
+      },
+      {
+        "word": "морозиво",
+        "hint": "Lody"
+      },
+      {
+        "word": "бринза",
+        "hint": "Bryndza"
+      },
+      {
+        "word": "згущене",
+        "hint": "Mleko skondensowane"
+      },
+      {
+        "word": "простокваша",
+        "hint": "Zsiadłe mleko"
+      },
+      {
+        "word": "пахта",
+        "hint": "Maślanka"
+      },
+      {
+        "word": "вершкове",
+        "hint": "Śmietankowe"
+      }
+    ]
+  },
+  {
+    "key": "meat_wb",
+    "name": "Mięso",
+    "description": "Rodzaje mięsa po ukraińsku",
+    "iconName": "fork.knife",
+    "color": "#b91c1c",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "яловичина",
+        "hint": "Wołowina"
+      },
+      {
+        "word": "свинина",
+        "hint": "Wieprzowina"
+      },
+      {
+        "word": "курятина",
+        "hint": "Kurczak (mięso)"
+      },
+      {
+        "word": "баранина",
+        "hint": "Baranina"
+      },
+      {
+        "word": "телятина",
+        "hint": "Cielęcina"
+      },
+      {
+        "word": "індичка",
+        "hint": "Indyk"
+      },
+      {
+        "word": "качка",
+        "hint": "Kaczka"
+      },
+      {
+        "word": "ковбаса",
+        "hint": "Kiełbasa"
+      },
+      {
+        "word": "шинка",
+        "hint": "Szynka"
+      },
+      {
+        "word": "бекон",
+        "hint": "Bekon"
+      },
+      {
+        "word": "фарш",
+        "hint": "Mięso mielone"
+      },
+      {
+        "word": "стейк",
+        "hint": "Stek"
+      },
+      {
+        "word": "відбивна",
+        "hint": "Kotlet schabowy"
+      },
+      {
+        "word": "сало",
+        "hint": "Słonina"
+      },
+      {
+        "word": "печінка",
+        "hint": "Wątróbka"
+      }
+    ]
+  },
+  {
+    "key": "pets_wb",
+    "name": "Zwierzęta domowe",
+    "description": "Zwierzęta domowe po ukraińsku",
+    "iconName": "pawprint",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "собака",
+        "hint": "Pies"
+      },
+      {
+        "word": "кішка",
+        "hint": "Kot"
+      },
+      {
+        "word": "хом'як",
+        "hint": "Chomik"
+      },
+      {
+        "word": "папуга",
+        "hint": "Papuga"
+      },
+      {
+        "word": "кролик",
+        "hint": "Królik"
+      },
+      {
+        "word": "черепаха",
+        "hint": "Żółw"
+      },
+      {
+        "word": "рибка",
+        "hint": "Rybka"
+      },
+      {
+        "word": "морська свинка",
+        "hint": "Świnka morska"
+      },
+      {
+        "word": "цуценя",
+        "hint": "Szczeniak"
+      },
+      {
+        "word": "кошеня",
+        "hint": "Kotek/kociak"
+      },
+      {
+        "word": "акваріум",
+        "hint": "Akwarium"
+      },
+      {
+        "word": "повідок",
+        "hint": "Smycz"
+      },
+      {
+        "word": "корм",
+        "hint": "Karma"
+      },
+      {
+        "word": "клітка",
+        "hint": "Klatka"
+      },
+      {
+        "word": "шиншила",
+        "hint": "Szynszyla"
+      }
+    ]
+  },
+  {
+    "key": "birds_wb",
+    "name": "Ptaki",
+    "description": "Rodzaje ptaków po ukraińsku",
+    "iconName": "bird",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "горобець",
+        "hint": "Wróbel"
+      },
+      {
+        "word": "голуб",
+        "hint": "Gołąb"
+      },
+      {
+        "word": "ворона",
+        "hint": "Wrona"
+      },
+      {
+        "word": "орел",
+        "hint": "Orzeł"
+      },
+      {
+        "word": "сова",
+        "hint": "Sowa"
+      },
+      {
+        "word": "лелека",
+        "hint": "Bocian"
+      },
+      {
+        "word": "ластівка",
+        "hint": "Jaskółka"
+      },
+      {
+        "word": "синиця",
+        "hint": "Sikorka"
+      },
+      {
+        "word": "дятел",
+        "hint": "Dzięcioł"
+      },
+      {
+        "word": "соловей",
+        "hint": "Słowik"
+      },
+      {
+        "word": "чайка",
+        "hint": "Mewa"
+      },
+      {
+        "word": "пелікан",
+        "hint": "Pelikan"
+      },
+      {
+        "word": "фламінго",
+        "hint": "Flaming"
+      },
+      {
+        "word": "журавель",
+        "hint": "Żuraw"
+      },
+      {
+        "word": "снігур",
+        "hint": "Gil"
+      }
+    ]
+  },
+  {
+    "key": "insects_wb",
+    "name": "Owady",
+    "description": "Rodzaje owadów po ukraińsku",
+    "iconName": "ladybug",
+    "color": "#84cc16",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "метелик",
+        "hint": "Motyl"
+      },
+      {
+        "word": "бджола",
+        "hint": "Pszczoła"
+      },
+      {
+        "word": "мураха",
+        "hint": "Mrówka"
+      },
+      {
+        "word": "комар",
+        "hint": "Komar"
+      },
+      {
+        "word": "муха",
+        "hint": "Mucha"
+      },
+      {
+        "word": "павук",
+        "hint": "Pająk"
+      },
+      {
+        "word": "жук",
+        "hint": "Żuk/chrząszcz"
+      },
+      {
+        "word": "сонечко",
+        "hint": "Biedronka"
+      },
+      {
+        "word": "коник",
+        "hint": "Konik polny"
+      },
+      {
+        "word": "оса",
+        "hint": "Osa"
+      },
+      {
+        "word": "бабка",
+        "hint": "Ważka"
+      },
+      {
+        "word": "цвіркун",
+        "hint": "Świerszcz"
+      },
+      {
+        "word": "гусениця",
+        "hint": "Gąsienica"
+      },
+      {
+        "word": "міль",
+        "hint": "Mól/ćma"
+      },
+      {
+        "word": "равлик",
+        "hint": "Ślimak"
+      }
+    ]
+  },
+  {
+    "key": "marine_life_wb",
+    "name": "Życie morskie",
+    "description": "Organizmy morskie po ukraińsku",
+    "iconName": "fish",
+    "color": "#0077b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "кит",
+        "hint": "Wieloryb"
+      },
+      {
+        "word": "дельфін",
+        "hint": "Delfin"
+      },
+      {
+        "word": "акула",
+        "hint": "Rekin"
+      },
+      {
+        "word": "восьминіг",
+        "hint": "Ośmiornica"
+      },
+      {
+        "word": "краб",
+        "hint": "Krab"
+      },
+      {
+        "word": "креветка",
+        "hint": "Krewetka"
+      },
+      {
+        "word": "устриця",
+        "hint": "Ostryga"
+      },
+      {
+        "word": "морський коник",
+        "hint": "Konik morski"
+      },
+      {
+        "word": "мідія",
+        "hint": "Małż/omułek"
+      },
+      {
+        "word": "скат",
+        "hint": "Płaszczka"
+      },
+      {
+        "word": "лобстер",
+        "hint": "Homar"
+      },
+      {
+        "word": "тюлень",
+        "hint": "Foka"
+      },
+      {
+        "word": "морж",
+        "hint": "Mors"
+      },
+      {
+        "word": "корал",
+        "hint": "Koral"
+      },
+      {
+        "word": "планктон",
+        "hint": "Plankton"
+      }
+    ]
+  },
+  {
+    "key": "farm_animals_wb",
+    "name": "Zwierzęta gospodarskie",
+    "description": "Zwierzęta wiejskie po ukraińsku",
+    "iconName": "hare",
+    "color": "#92400e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "корова",
+        "hint": "Krowa"
+      },
+      {
+        "word": "свиня",
+        "hint": "Świnia"
+      },
+      {
+        "word": "кінь",
+        "hint": "Koń"
+      },
+      {
+        "word": "вівця",
+        "hint": "Owca"
+      },
+      {
+        "word": "коза",
+        "hint": "Koza"
+      },
+      {
+        "word": "курка",
+        "hint": "Kura"
+      },
+      {
+        "word": "качка",
+        "hint": "Kaczka"
+      },
+      {
+        "word": "гуска",
+        "hint": "Gęś"
+      },
+      {
+        "word": "індик",
+        "hint": "Indyk"
+      },
+      {
+        "word": "осел",
+        "hint": "Osioł"
+      },
+      {
+        "word": "бик",
+        "hint": "Byk"
+      },
+      {
+        "word": "теля",
+        "hint": "Cielak"
+      },
+      {
+        "word": "порося",
+        "hint": "Prosiak"
+      },
+      {
+        "word": "лоша",
+        "hint": "Źrebak"
+      },
+      {
+        "word": "півень",
+        "hint": "Kogut"
+      }
+    ]
+  },
+  {
+    "key": "feelings_wb",
+    "name": "Uczucia",
+    "description": "Uczucia i stany emocjonalne po ukraińsku",
+    "iconName": "heart",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "радість",
+        "hint": "Radość"
+      },
+      {
+        "word": "сум",
+        "hint": "Smutek"
+      },
+      {
+        "word": "гнів",
+        "hint": "Gniew"
+      },
+      {
+        "word": "страх",
+        "hint": "Strach"
+      },
+      {
+        "word": "здивування",
+        "hint": "Zdziwienie"
+      },
+      {
+        "word": "ревнощі",
+        "hint": "Zazdrość"
+      },
+      {
+        "word": "вдячність",
+        "hint": "Wdzięczność"
+      },
+      {
+        "word": "сором",
+        "hint": "Wstyd"
+      },
+      {
+        "word": "надія",
+        "hint": "Nadzieja"
+      },
+      {
+        "word": "відчай",
+        "hint": "Rozpacz"
+      },
+      {
+        "word": "ніжність",
+        "hint": "Czułość"
+      },
+      {
+        "word": "тривога",
+        "hint": "Niepokój"
+      },
+      {
+        "word": "захоплення",
+        "hint": "Zachwyt"
+      },
+      {
+        "word": "розчарування",
+        "hint": "Rozczarowanie"
+      },
+      {
+        "word": "спокій",
+        "hint": "Spokój"
+      }
+    ]
+  },
+  {
+    "key": "personality_wb",
+    "name": "Osobowość",
+    "description": "Cechy charakteru po ukraińsku",
+    "iconName": "person",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "чесний",
+        "hint": "Uczciwy"
+      },
+      {
+        "word": "відповідальний",
+        "hint": "Odpowiedzialny"
+      },
+      {
+        "word": "сміливий",
+        "hint": "Odważny"
+      },
+      {
+        "word": "щедрий",
+        "hint": "Hojny"
+      },
+      {
+        "word": "скромний",
+        "hint": "Skromny"
+      },
+      {
+        "word": "впертий",
+        "hint": "Uparty"
+      },
+      {
+        "word": "терплячий",
+        "hint": "Cierpliwy"
+      },
+      {
+        "word": "лінивий",
+        "hint": "Leniwy"
+      },
+      {
+        "word": "товариський",
+        "hint": "Towarzyski"
+      },
+      {
+        "word": "амбітний",
+        "hint": "Ambitny"
+      },
+      {
+        "word": "надійний",
+        "hint": "Niezawodny"
+      },
+      {
+        "word": "жадібний",
+        "hint": "Chciwy"
+      },
+      {
+        "word": "допитливий",
+        "hint": "Ciekawski/dociekliwy"
+      },
+      {
+        "word": "привітний",
+        "hint": "Uprzejmy"
+      },
+      {
+        "word": "наполегливий",
+        "hint": "Wytrwały"
+      }
+    ]
+  },
+  {
+    "key": "relationships_wb",
+    "name": "Relacje",
+    "description": "Słownictwo relacyjne po ukraińsku",
+    "iconName": "person.2",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "кохання",
+        "hint": "Miłość"
+      },
+      {
+        "word": "дружба",
+        "hint": "Przyjaźń"
+      },
+      {
+        "word": "побачення",
+        "hint": "Randka"
+      },
+      {
+        "word": "шлюб",
+        "hint": "Małżeństwo"
+      },
+      {
+        "word": "розлучення",
+        "hint": "Rozwód"
+      },
+      {
+        "word": "наречений",
+        "hint": "Narzeczony"
+      },
+      {
+        "word": "наречена",
+        "hint": "Narzeczona"
+      },
+      {
+        "word": "партнер",
+        "hint": "Partner"
+      },
+      {
+        "word": "довіра",
+        "hint": "Zaufanie"
+      },
+      {
+        "word": "вірність",
+        "hint": "Wierność"
+      },
+      {
+        "word": "компроміс",
+        "hint": "Kompromis"
+      },
+      {
+        "word": "сусід",
+        "hint": "Sąsiad"
+      },
+      {
+        "word": "колега",
+        "hint": "Kolega z pracy"
+      },
+      {
+        "word": "знайомий",
+        "hint": "Znajomy"
+      },
+      {
+        "word": "обійми",
+        "hint": "Uścisk/objęcie"
+      }
+    ]
+  },
+  {
+    "key": "communication_wb",
+    "name": "Komunikacja",
+    "description": "Słownictwo komunikacyjne po ukraińsku",
+    "iconName": "bubble.left.and.bubble.right",
+    "color": "#3b82f6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "розмова",
+        "hint": "Rozmowa"
+      },
+      {
+        "word": "повідомлення",
+        "hint": "Wiadomość"
+      },
+      {
+        "word": "запитання",
+        "hint": "Pytanie"
+      },
+      {
+        "word": "відповідь",
+        "hint": "Odpowiedź"
+      },
+      {
+        "word": "пояснення",
+        "hint": "Wyjaśnienie"
+      },
+      {
+        "word": "суперечка",
+        "hint": "Kłótnia/spór"
+      },
+      {
+        "word": "переконання",
+        "hint": "Przekonywanie"
+      },
+      {
+        "word": "пропозиція",
+        "hint": "Propozycja"
+      },
+      {
+        "word": "вибачення",
+        "hint": "Przeprosiny"
+      },
+      {
+        "word": "подяка",
+        "hint": "Podziękowanie"
+      },
+      {
+        "word": "скарга",
+        "hint": "Skarga"
+      },
+      {
+        "word": "порада",
+        "hint": "Rada"
+      },
+      {
+        "word": "жарт",
+        "hint": "Żart"
+      },
+      {
+        "word": "промова",
+        "hint": "Przemówienie"
+      },
+      {
+        "word": "переклад",
+        "hint": "Tłumaczenie"
+      }
+    ]
+  },
+  {
+    "key": "gestures_wb",
+    "name": "Gesty i mowa ciała",
+    "description": "Gesty i ekspresja po ukraińsku",
+    "iconName": "hand.raised",
+    "color": "#d97706",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "кивок",
+        "hint": "Kiwnięcie głową"
+      },
+      {
+        "word": "усмішка",
+        "hint": "Uśmiech"
+      },
+      {
+        "word": "рукостискання",
+        "hint": "Uścisk dłoni"
+      },
+      {
+        "word": "поклон",
+        "hint": "Ukłon"
+      },
+      {
+        "word": "жест",
+        "hint": "Gest"
+      },
+      {
+        "word": "міміка",
+        "hint": "Mimika"
+      },
+      {
+        "word": "погляд",
+        "hint": "Spojrzenie"
+      },
+      {
+        "word": "підморгування",
+        "hint": "Mrugnięcie"
+      },
+      {
+        "word": "аплодисменти",
+        "hint": "Oklaski"
+      },
+      {
+        "word": "обійми",
+        "hint": "Objęcie"
+      },
+      {
+        "word": "поцілунок",
+        "hint": "Pocałunek"
+      },
+      {
+        "word": "помах",
+        "hint": "Machnięcie ręką"
+      },
+      {
+        "word": "потиск",
+        "hint": "Ściśnięcie"
+      },
+      {
+        "word": "знизування",
+        "hint": "Wzruszenie ramionami"
+      },
+      {
+        "word": "вказівка",
+        "hint": "Wskazanie"
+      }
+    ]
+  },
+  {
+    "key": "architecture_wb",
+    "name": "Architektura",
+    "icon": "building.columns",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "будівля",
+        "hint": "Budynek"
+      },
+      {
+        "word": "фасад",
+        "hint": "Fasada"
+      },
+      {
+        "word": "фундамент",
+        "hint": "Fundament"
+      },
+      {
+        "word": "колона",
+        "hint": "Kolumna"
+      },
+      {
+        "word": "балкон",
+        "hint": "Balkon"
+      },
+      {
+        "word": "арка",
+        "hint": "Arka"
+      },
+      {
+        "word": "купол",
+        "hint": "Kopuła"
+      },
+      {
+        "word": "вежа",
+        "hint": "Wieża"
+      },
+      {
+        "word": "тераса",
+        "hint": "Taras"
+      },
+      {
+        "word": "дах",
+        "hint": "Dach"
+      },
+      {
+        "word": "сходи",
+        "hint": "Schody"
+      },
+      {
+        "word": "поверх",
+        "hint": "Piętro"
+      },
+      {
+        "word": "стіна",
+        "hint": "Ściana"
+      },
+      {
+        "word": "підвал",
+        "hint": "Piwnica"
+      },
+      {
+        "word": "бетон",
+        "hint": "Beton"
+      }
+    ]
+  },
+  {
+    "key": "construction_wb",
+    "name": "Budowa",
+    "icon": "hammer",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "цегла",
+        "hint": "Cegła"
+      },
+      {
+        "word": "цемент",
+        "hint": "Cement"
+      },
+      {
+        "word": "кран",
+        "hint": "Dźwig budowlany"
+      },
+      {
+        "word": "риштування",
+        "hint": "Rusztowanie"
+      },
+      {
+        "word": "каска",
+        "hint": "Kask"
+      },
+      {
+        "word": "лопата",
+        "hint": "Łopata"
+      },
+      {
+        "word": "рівень",
+        "hint": "Poziomica"
+      },
+      {
+        "word": "плитка",
+        "hint": "Płytka"
+      },
+      {
+        "word": "дошка",
+        "hint": "Deska"
+      },
+      {
+        "word": "цвях",
+        "hint": "Gwóźddź"
+      },
+      {
+        "word": "гвинт",
+        "hint": "Śruba"
+      },
+      {
+        "word": "фарба",
+        "hint": "Farba"
+      },
+      {
+        "word": "пісок",
+        "hint": "Piasek"
+      },
+      {
+        "word": "щебінь",
+        "hint": "Żwir"
+      },
+      {
+        "word": "зварювання",
+        "hint": "Spawanie"
+      }
+    ]
+  },
+  {
+    "key": "electricity_wb",
+    "name": "Elektryczność",
+    "icon": "bolt",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "провід",
+        "hint": "Przewód"
+      },
+      {
+        "word": "розетка",
+        "hint": "Gniazdko"
+      },
+      {
+        "word": "вимикач",
+        "hint": "Wyłącznik"
+      },
+      {
+        "word": "лампа",
+        "hint": "Żarówka"
+      },
+      {
+        "word": "напруга",
+        "hint": "Napięcie"
+      },
+      {
+        "word": "струм",
+        "hint": "Prąd"
+      },
+      {
+        "word": "запобіжник",
+        "hint": "Bezpiecznik"
+      },
+      {
+        "word": "генератор",
+        "hint": "Generator"
+      },
+      {
+        "word": "акумулятор",
+        "hint": "Akumulator"
+      },
+      {
+        "word": "подовжувач",
+        "hint": "Przedłużacz"
+      },
+      {
+        "word": "ізоляція",
+        "hint": "Izolacja"
+      },
+      {
+        "word": "заземлення",
+        "hint": "Uziemienie"
+      },
+      {
+        "word": "щиток",
+        "hint": "Tablica rozdzielcza"
+      },
+      {
+        "word": "діод",
+        "hint": "Dioda"
+      },
+      {
+        "word": "котушка",
+        "hint": "Cewka"
+      }
+    ]
+  },
+  {
+    "key": "plumbing_wb",
+    "name": "Hydraulika",
+    "icon": "drop",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "труба",
+        "hint": "Rura"
+      },
+      {
+        "word": "кран",
+        "hint": "Kran"
+      },
+      {
+        "word": "злив",
+        "hint": "Odpływ"
+      },
+      {
+        "word": "унітаз",
+        "hint": "Sedes"
+      },
+      {
+        "word": "раковина",
+        "hint": "Umywalka"
+      },
+      {
+        "word": "душ",
+        "hint": "Prysznic"
+      },
+      {
+        "word": "бойлер",
+        "hint": "Bojler"
+      },
+      {
+        "word": "насос",
+        "hint": "Pompa"
+      },
+      {
+        "word": "фільтр",
+        "hint": "Filtr"
+      },
+      {
+        "word": "лійка",
+        "hint": "Lejek"
+      },
+      {
+        "word": "вентиль",
+        "hint": "Zawór"
+      },
+      {
+        "word": "прокладка",
+        "hint": "Uszczelka"
+      },
+      {
+        "word": "сифон",
+        "hint": "Syfon"
+      },
+      {
+        "word": "колектор",
+        "hint": "Kolektor"
+      },
+      {
+        "word": "муфта",
+        "hint": "Złączka"
+      }
+    ]
+  },
+  {
+    "key": "gardening_tools_wb",
+    "name": "Narzędzia ogrodnicze",
+    "icon": "leaf",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "граблі",
+        "hint": "Grabie"
+      },
+      {
+        "word": "секатор",
+        "hint": "Sekator"
+      },
+      {
+        "word": "шланг",
+        "hint": "Wąż ogrodowy"
+      },
+      {
+        "word": "лопата",
+        "hint": "Łopata"
+      },
+      {
+        "word": "відро",
+        "hint": "Wiadro"
+      },
+      {
+        "word": "тачка",
+        "hint": "Taczka"
+      },
+      {
+        "word": "мотика",
+        "hint": "Motyka"
+      },
+      {
+        "word": "косарка",
+        "hint": "Kosiarka"
+      },
+      {
+        "word": "пила",
+        "hint": "Piła"
+      },
+      {
+        "word": "ножиці",
+        "hint": "Nożyce"
+      },
+      {
+        "word": "лійка",
+        "hint": "Konewka"
+      },
+      {
+        "word": "вила",
+        "hint": "Widły"
+      },
+      {
+        "word": "сапка",
+        "hint": "Gracka"
+      },
+      {
+        "word": "рукавиці",
+        "hint": "Rękawice"
+      },
+      {
+        "word": "добриво",
+        "hint": "Nawóz"
+      }
+    ]
+  },
+  {
+    "key": "medicine_wb",
+    "name": "Medycyna",
+    "icon": "cross.case",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "лікар",
+        "hint": "Lekarz"
+      },
+      {
+        "word": "пацієнт",
+        "hint": "Pacjent"
+      },
+      {
+        "word": "діагноз",
+        "hint": "Diagnoza"
+      },
+      {
+        "word": "рецепт",
+        "hint": "Recepta"
+      },
+      {
+        "word": "операція",
+        "hint": "Operacja"
+      },
+      {
+        "word": "шприц",
+        "hint": "Strzykawka"
+      },
+      {
+        "word": "бинт",
+        "hint": "Bandaż"
+      },
+      {
+        "word": "аналіз",
+        "hint": "Analiza / Badanie"
+      },
+      {
+        "word": "хірург",
+        "hint": "Chirurg"
+      },
+      {
+        "word": "терапія",
+        "hint": "Terapia"
+      },
+      {
+        "word": "симптом",
+        "hint": "Objaw / Symptom"
+      },
+      {
+        "word": "вакцина",
+        "hint": "Szczepionka"
+      },
+      {
+        "word": "алергія",
+        "hint": "Alergia"
+      },
+      {
+        "word": "інфекція",
+        "hint": "Infekcja / Zakażenie"
+      },
+      {
+        "word": "клініка",
+        "hint": "Klinika"
+      }
+    ]
+  },
+  {
+    "key": "pharmacy_wb",
+    "name": "Apteka",
+    "icon": "pills",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "таблетка",
+        "hint": "Tabletka"
+      },
+      {
+        "word": "сироп",
+        "hint": "Syrop"
+      },
+      {
+        "word": "мазь",
+        "hint": "Maść"
+      },
+      {
+        "word": "краплі",
+        "hint": "Krople"
+      },
+      {
+        "word": "пластир",
+        "hint": "Plaster"
+      },
+      {
+        "word": "вітаміни",
+        "hint": "Witaminy"
+      },
+      {
+        "word": "антибіотик",
+        "hint": "Antybiotyk"
+      },
+      {
+        "word": "аспірин",
+        "hint": "Aspiryna"
+      },
+      {
+        "word": "термометр",
+        "hint": "Termometr"
+      },
+      {
+        "word": "дозування",
+        "hint": "Dawkowanie"
+      },
+      {
+        "word": "рецепт",
+        "hint": "Recepta"
+      },
+      {
+        "word": "аптекар",
+        "hint": "Aptekarz / Farmaceuta"
+      },
+      {
+        "word": "капсула",
+        "hint": "Kapsułka"
+      },
+      {
+        "word": "настоянка",
+        "hint": "Nalewka"
+      },
+      {
+        "word": "знеболювальне",
+        "hint": "Lek przeciwbólowy"
+      }
+    ]
+  },
+  {
+    "key": "fitness_wb",
+    "name": "Fitness",
+    "icon": "figure.run",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "тренування",
+        "hint": "Trening"
+      },
+      {
+        "word": "гантелі",
+        "hint": "Hantle"
+      },
+      {
+        "word": "бігова",
+        "hint": "Bieżnia"
+      },
+      {
+        "word": "присідання",
+        "hint": "Przysiady"
+      },
+      {
+        "word": "віджимання",
+        "hint": "Pompki"
+      },
+      {
+        "word": "розминка",
+        "hint": "Rozgrzewka"
+      },
+      {
+        "word": "м'яз",
+        "hint": "Mięsień"
+      },
+      {
+        "word": "витривалість",
+        "hint": "Wytrzymałość"
+      },
+      {
+        "word": "тренер",
+        "hint": "Trener"
+      },
+      {
+        "word": "штанга",
+        "hint": "Sztanga"
+      },
+      {
+        "word": "кардіо",
+        "hint": "Kardio"
+      },
+      {
+        "word": "розтяжка",
+        "hint": "Rozciąganie"
+      },
+      {
+        "word": "силовий",
+        "hint": "Siłowy"
+      },
+      {
+        "word": "повторення",
+        "hint": "Powtórzenie"
+      },
+      {
+        "word": "схуднення",
+        "hint": "Odchudzanie"
+      }
+    ]
+  },
+  {
+    "key": "yoga_wb",
+    "name": "Joga",
+    "icon": "figure.yoga",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "поза",
+        "hint": "Poza / Pozycja"
+      },
+      {
+        "word": "дихання",
+        "hint": "Oddychanie"
+      },
+      {
+        "word": "медитація",
+        "hint": "Medytacja"
+      },
+      {
+        "word": "гнучкість",
+        "hint": "Elastyczność"
+      },
+      {
+        "word": "рівновага",
+        "hint": "Równowaga"
+      },
+      {
+        "word": "килимок",
+        "hint": "Mata (do jogi)"
+      },
+      {
+        "word": "релаксація",
+        "hint": "Relaksacja"
+      },
+      {
+        "word": "мантра",
+        "hint": "Mantra"
+      },
+      {
+        "word": "чакра",
+        "hint": "Czakra"
+      },
+      {
+        "word": "асана",
+        "hint": "Asana"
+      },
+      {
+        "word": "гармонія",
+        "hint": "Harmonia"
+      },
+      {
+        "word": "свідомість",
+        "hint": "Świadomość"
+      },
+      {
+        "word": "спокій",
+        "hint": "Spokój"
+      },
+      {
+        "word": "енергія",
+        "hint": "Energia"
+      },
+      {
+        "word": "баланс",
+        "hint": "Balans / Równowaga"
+      }
+    ]
+  },
+  {
+    "key": "mental_health_wb",
+    "name": "Zdrowie psychiczne",
+    "icon": "brain.head.profile",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "стрес",
+        "hint": "Stres"
+      },
+      {
+        "word": "тривога",
+        "hint": "Lęk / Niepokój"
+      },
+      {
+        "word": "депресія",
+        "hint": "Depresja"
+      },
+      {
+        "word": "терапія",
+        "hint": "Terapia"
+      },
+      {
+        "word": "психолог",
+        "hint": "Psycholog"
+      },
+      {
+        "word": "емоції",
+        "hint": "Emocje"
+      },
+      {
+        "word": "самооцінка",
+        "hint": "Samoocena"
+      },
+      {
+        "word": "вигорання",
+        "hint": "Wypalenie"
+      },
+      {
+        "word": "фобія",
+        "hint": "Fobia"
+      },
+      {
+        "word": "паніка",
+        "hint": "Panika"
+      },
+      {
+        "word": "травма",
+        "hint": "Trauma / Uraz"
+      },
+      {
+        "word": "залежність",
+        "hint": "Uzależnienie"
+      },
+      {
+        "word": "підтримка",
+        "hint": "Wsparcie"
+      },
+      {
+        "word": "одужання",
+        "hint": "Wyzdrowienie"
+      },
+      {
+        "word": "усвідомлення",
+        "hint": "Uważność"
+      }
+    ]
+  },
+  {
+    "key": "vehicles_wb",
+    "name": "Pojazdy",
+    "icon": "car",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "автомобіль",
+        "hint": "Samochód"
+      },
+      {
+        "word": "вантажівка",
+        "hint": "Ciężarówka"
+      },
+      {
+        "word": "автобус",
+        "hint": "Autobus"
+      },
+      {
+        "word": "мотоцикл",
+        "hint": "Motocykl"
+      },
+      {
+        "word": "трактор",
+        "hint": "Traktor"
+      },
+      {
+        "word": "фургон",
+        "hint": "Furgonetka"
+      },
+      {
+        "word": "причіп",
+        "hint": "Przyczepa"
+      },
+      {
+        "word": "скутер",
+        "hint": "Skuter"
+      },
+      {
+        "word": "таксі",
+        "hint": "Taksówka"
+      },
+      {
+        "word": "каретка",
+        "hint": "Karetka"
+      },
+      {
+        "word": "кермо",
+        "hint": "Kierownica"
+      },
+      {
+        "word": "двигун",
+        "hint": "Silnik"
+      },
+      {
+        "word": "гальма",
+        "hint": "Hamulce"
+      },
+      {
+        "word": "бампер",
+        "hint": "Zderzak"
+      },
+      {
+        "word": "багажник",
+        "hint": "Bagażnik"
+      }
+    ]
+  },
+  {
+    "key": "aviation_wb",
+    "name": "Lotnictwo",
+    "icon": "airplane",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "літак",
+        "hint": "Samolot"
+      },
+      {
+        "word": "гелікоптер",
+        "hint": "Helikopter"
+      },
+      {
+        "word": "пілот",
+        "hint": "Pilot"
+      },
+      {
+        "word": "злітна",
+        "hint": "Pas startowy"
+      },
+      {
+        "word": "турбіна",
+        "hint": "Turbina"
+      },
+      {
+        "word": "крило",
+        "hint": "Skrzydło"
+      },
+      {
+        "word": "шасі",
+        "hint": "Podwozie"
+      },
+      {
+        "word": "штурвал",
+        "hint": "Ster"
+      },
+      {
+        "word": "кабіна",
+        "hint": "Kabina"
+      },
+      {
+        "word": "посадка",
+        "hint": "Lądowanie"
+      },
+      {
+        "word": "зліт",
+        "hint": "Start"
+      },
+      {
+        "word": "висота",
+        "hint": "Wysokość"
+      },
+      {
+        "word": "аеропорт",
+        "hint": "Lotnisko"
+      },
+      {
+        "word": "стюардеса",
+        "hint": "Stewardessa"
+      },
+      {
+        "word": "пасажир",
+        "hint": "Pasażer"
+      }
+    ]
+  },
+  {
+    "key": "shipping_wb",
+    "name": "Żegluga",
+    "icon": "ferry",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "корабель",
+        "hint": "Statek"
+      },
+      {
+        "word": "вітрильник",
+        "hint": "Żaglówka"
+      },
+      {
+        "word": "катер",
+        "hint": "Motorówka"
+      },
+      {
+        "word": "якір",
+        "hint": "Kotwica"
+      },
+      {
+        "word": "порт",
+        "hint": "Port"
+      },
+      {
+        "word": "причал",
+        "hint": "Nabrzeże / Przystań"
+      },
+      {
+        "word": "палуба",
+        "hint": "Pokład"
+      },
+      {
+        "word": "капітан",
+        "hint": "Kapitan"
+      },
+      {
+        "word": "матрос",
+        "hint": "Marynarz"
+      },
+      {
+        "word": "вантаж",
+        "hint": "Ładunek"
+      },
+      {
+        "word": "маяк",
+        "hint": "Latarnia morska"
+      },
+      {
+        "word": "навігація",
+        "hint": "Nawigacja"
+      },
+      {
+        "word": "штурман",
+        "hint": "Nawigator / Sztyrman"
+      },
+      {
+        "word": "рятувальний",
+        "hint": "Ratunkowy"
+      },
+      {
+        "word": "контейнер",
+        "hint": "Kontener"
+      }
+    ]
+  },
+  {
+    "key": "cycling_wb",
+    "name": "Kolarstwo",
+    "icon": "bicycle",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "велосипед",
+        "hint": "Rower"
+      },
+      {
+        "word": "педаль",
+        "hint": "Pedał"
+      },
+      {
+        "word": "ланцюг",
+        "hint": "Łańcuch"
+      },
+      {
+        "word": "сідло",
+        "hint": "Siodełko"
+      },
+      {
+        "word": "кермо",
+        "hint": "Kierownica"
+      },
+      {
+        "word": "колесо",
+        "hint": "Koło"
+      },
+      {
+        "word": "шина",
+        "hint": "Opona"
+      },
+      {
+        "word": "насос",
+        "hint": "Pompka"
+      },
+      {
+        "word": "шолом",
+        "hint": "Kask"
+      },
+      {
+        "word": "дзвінок",
+        "hint": "Dzwonek"
+      },
+      {
+        "word": "гальма",
+        "hint": "Hamulce"
+      },
+      {
+        "word": "спиці",
+        "hint": "Szprychy"
+      },
+      {
+        "word": "фара",
+        "hint": "Światło / Lampa"
+      },
+      {
+        "word": "багажник",
+        "hint": "Bagażnik"
+      },
+      {
+        "word": "стежка",
+        "hint": "Ścieżka rowerowa"
+      }
+    ]
+  },
+  {
+    "key": "trains_wb",
+    "name": "Pociągi",
+    "icon": "tram",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "потяг",
+        "hint": "Pociąg"
+      },
+      {
+        "word": "вагон",
+        "hint": "Wagon"
+      },
+      {
+        "word": "локомотив",
+        "hint": "Lokomotywa"
+      },
+      {
+        "word": "перон",
+        "hint": "Peron"
+      },
+      {
+        "word": "квиток",
+        "hint": "Bilet"
+      },
+      {
+        "word": "рейка",
+        "hint": "Szyna"
+      },
+      {
+        "word": "вокзал",
+        "hint": "Dworzec"
+      },
+      {
+        "word": "розклад",
+        "hint": "Rozkład jazdy"
+      },
+      {
+        "word": "купе",
+        "hint": "Przedział"
+      },
+      {
+        "word": "провідник",
+        "hint": "Konduktor"
+      },
+      {
+        "word": "зупинка",
+        "hint": "Przystanek"
+      },
+      {
+        "word": "пересадка",
+        "hint": "Przesiadka"
+      },
+      {
+        "word": "платформа",
+        "hint": "Platforma"
+      },
+      {
+        "word": "тунель",
+        "hint": "Tunel"
+      },
+      {
+        "word": "метро",
+        "hint": "Metro"
+      }
+    ]
+  },
+  {
+    "key": "mathematics_wb",
+    "name": "Matematyka",
+    "icon": "x.squareroot",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "додавання",
+        "hint": "Dodawanie"
+      },
+      {
+        "word": "віднімання",
+        "hint": "Odejmowanie"
+      },
+      {
+        "word": "множення",
+        "hint": "Mnożenie"
+      },
+      {
+        "word": "ділення",
+        "hint": "Dzielenie"
+      },
+      {
+        "word": "рівняння",
+        "hint": "Równanie"
+      },
+      {
+        "word": "дріб",
+        "hint": "Ułamek"
+      },
+      {
+        "word": "відсоток",
+        "hint": "Procent"
+      },
+      {
+        "word": "трикутник",
+        "hint": "Trójkąt"
+      },
+      {
+        "word": "квадрат",
+        "hint": "Kwadrat"
+      },
+      {
+        "word": "формула",
+        "hint": "Formuła / Wzór"
+      },
+      {
+        "word": "графік",
+        "hint": "Wykres"
+      },
+      {
+        "word": "діаметр",
+        "hint": "Średnica"
+      },
+      {
+        "word": "вектор",
+        "hint": "Wektor"
+      },
+      {
+        "word": "площа",
+        "hint": "Pole / Powierzchnia"
+      },
+      {
+        "word": "об'єм",
+        "hint": "Objętość"
+      }
+    ]
+  },
+  {
+    "key": "physics_wb",
+    "name": "Fizyka",
+    "icon": "atom",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "гравітація",
+        "hint": "Grawitacja"
+      },
+      {
+        "word": "швидкість",
+        "hint": "Prędkość"
+      },
+      {
+        "word": "прискорення",
+        "hint": "Przyspieszenie"
+      },
+      {
+        "word": "енергія",
+        "hint": "Energia"
+      },
+      {
+        "word": "тертя",
+        "hint": "Tarcie"
+      },
+      {
+        "word": "магніт",
+        "hint": "Magnes"
+      },
+      {
+        "word": "хвиля",
+        "hint": "Fala"
+      },
+      {
+        "word": "частота",
+        "hint": "Częstotliwość"
+      },
+      {
+        "word": "тиск",
+        "hint": "Ciśnienie"
+      },
+      {
+        "word": "електрон",
+        "hint": "Elektron"
+      },
+      {
+        "word": "протон",
+        "hint": "Proton"
+      },
+      {
+        "word": "нейтрон",
+        "hint": "Neutron"
+      },
+      {
+        "word": "маса",
+        "hint": "Masa"
+      },
+      {
+        "word": "вага",
+        "hint": "Waga / Ciężar"
+      },
+      {
+        "word": "оптика",
+        "hint": "Optyka"
+      }
+    ]
+  },
+  {
+    "key": "chemistry_wb",
+    "name": "Chemia",
+    "icon": "flask",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "молекула",
+        "hint": "Cząsteczka"
+      },
+      {
+        "word": "реакція",
+        "hint": "Reakcja"
+      },
+      {
+        "word": "елемент",
+        "hint": "Pierwiastek"
+      },
+      {
+        "word": "кислота",
+        "hint": "Kwas"
+      },
+      {
+        "word": "луг",
+        "hint": "Zasada / Ług"
+      },
+      {
+        "word": "сполука",
+        "hint": "Związek chemiczny"
+      },
+      {
+        "word": "розчин",
+        "hint": "Roztwór"
+      },
+      {
+        "word": "каталізатор",
+        "hint": "Katalizator"
+      },
+      {
+        "word": "формула",
+        "hint": "Wzór chemiczny"
+      },
+      {
+        "word": "водень",
+        "hint": "Wodór"
+      },
+      {
+        "word": "кисень",
+        "hint": "Tlen"
+      },
+      {
+        "word": "азот",
+        "hint": "Azot"
+      },
+      {
+        "word": "вуглець",
+        "hint": "Węgiel (pierwiastek)"
+      },
+      {
+        "word": "пробірка",
+        "hint": "Probówka"
+      },
+      {
+        "word": "суміш",
+        "hint": "Mieszanina"
+      }
+    ]
+  },
+  {
+    "key": "biology_wb",
+    "name": "Biologia",
+    "icon": "leaf.arrow.triangle.circlepath",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "клітина",
+        "hint": "Komórka"
+      },
+      {
+        "word": "ген",
+        "hint": "Gen"
+      },
+      {
+        "word": "білок",
+        "hint": "Białko"
+      },
+      {
+        "word": "мітоз",
+        "hint": "Mitoza"
+      },
+      {
+        "word": "бактерія",
+        "hint": "Bakteria"
+      },
+      {
+        "word": "вірус",
+        "hint": "Wirus"
+      },
+      {
+        "word": "еволюція",
+        "hint": "Ewolucja"
+      },
+      {
+        "word": "екосистема",
+        "hint": "Ekosystem"
+      },
+      {
+        "word": "фотосинтез",
+        "hint": "Fotosynteza"
+      },
+      {
+        "word": "організм",
+        "hint": "Organizm"
+      },
+      {
+        "word": "тканина",
+        "hint": "Tkanka"
+      },
+      {
+        "word": "орган",
+        "hint": "Narząd / Organ"
+      },
+      {
+        "word": "мутація",
+        "hint": "Mutacja"
+      },
+      {
+        "word": "хромосома",
+        "hint": "Chromosom"
+      },
+      {
+        "word": "метаболізм",
+        "hint": "Metabolizm"
+      }
+    ]
+  },
+  {
+    "key": "science_wb",
+    "name": "Nauka",
+    "icon": "graduationcap",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "гіпотеза",
+        "hint": "Hipoteza"
+      },
+      {
+        "word": "теорія",
+        "hint": "Teoria"
+      },
+      {
+        "word": "дослід",
+        "hint": "Doświadczenie / Eksperyment"
+      },
+      {
+        "word": "відкриття",
+        "hint": "Odkrycie"
+      },
+      {
+        "word": "вчений",
+        "hint": "Naukowiec"
+      },
+      {
+        "word": "лабораторія",
+        "hint": "Laboratorium"
+      },
+      {
+        "word": "мікроскоп",
+        "hint": "Mikroskop"
+      },
+      {
+        "word": "телескоп",
+        "hint": "Teleskop"
+      },
+      {
+        "word": "дослідження",
+        "hint": "Badanie / Badania"
+      },
+      {
+        "word": "формула",
+        "hint": "Formuła"
+      },
+      {
+        "word": "аналіз",
+        "hint": "Analiza"
+      },
+      {
+        "word": "метод",
+        "hint": "Metoda"
+      },
+      {
+        "word": "результат",
+        "hint": "Wynik / Rezultat"
+      },
+      {
+        "word": "доказ",
+        "hint": "Dowód"
+      },
+      {
+        "word": "публікація",
+        "hint": "Publikacja"
+      }
+    ]
+  },
+  {
+    "key": "festivals_wb",
+    "name": "Festiwale",
+    "icon": "theatermasks",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "фестиваль",
+        "hint": "Festiwal"
+      },
+      {
+        "word": "концерт",
+        "hint": "Koncert"
+      },
+      {
+        "word": "сцена",
+        "hint": "Scena"
+      },
+      {
+        "word": "артист",
+        "hint": "Artysta"
+      },
+      {
+        "word": "глядач",
+        "hint": "Widz"
+      },
+      {
+        "word": "квиток",
+        "hint": "Bilet"
+      },
+      {
+        "word": "програма",
+        "hint": "Program"
+      },
+      {
+        "word": "виставка",
+        "hint": "Wystawa"
+      },
+      {
+        "word": "карнавал",
+        "hint": "Karnawał"
+      },
+      {
+        "word": "ярмарок",
+        "hint": "Jarmark"
+      },
+      {
+        "word": "парад",
+        "hint": "Parada"
+      },
+      {
+        "word": "фейєрверк",
+        "hint": "Fajerwerki"
+      },
+      {
+        "word": "оркестр",
+        "hint": "Orkiestra"
+      },
+      {
+        "word": "аплодисменти",
+        "hint": "Oklaski / Brawa"
+      },
+      {
+        "word": "прем'єра",
+        "hint": "Premiera"
+      }
+    ]
+  },
+  {
+    "key": "traditions_wb",
+    "name": "Tradycje",
+    "icon": "star.circle",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "традиція",
+        "hint": "Tradycja"
+      },
+      {
+        "word": "звичай",
+        "hint": "Zwyczaj / Obyczaj"
+      },
+      {
+        "word": "обряд",
+        "hint": "Obrzęd"
+      },
+      {
+        "word": "спадщина",
+        "hint": "Dziedzictwo"
+      },
+      {
+        "word": "фольклор",
+        "hint": "Folklor"
+      },
+      {
+        "word": "вишиванка",
+        "hint": "Wyszywanka"
+      },
+      {
+        "word": "колядка",
+        "hint": "Kolęda"
+      },
+      {
+        "word": "писанка",
+        "hint": "Pisanka"
+      },
+      {
+        "word": "вінок",
+        "hint": "Wieniec"
+      },
+      {
+        "word": "коровай",
+        "hint": "Korowaj"
+      },
+      {
+        "word": "хрещення",
+        "hint": "Chrzciny"
+      },
+      {
+        "word": "різдво",
+        "hint": "Boże Narodzenie"
+      },
+      {
+        "word": "великдень",
+        "hint": "Wielkanoc"
+      },
+      {
+        "word": "святвечір",
+        "hint": "Wigilia"
+      },
+      {
+        "word": "кутя",
+        "hint": "Kutia"
+      }
+    ]
+  },
+  {
+    "key": "weddings_wb",
+    "name": "Wesela",
+    "icon": "heart.circle",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "весілля",
+        "hint": "Wesele"
+      },
+      {
+        "word": "наречена",
+        "hint": "Panna młoda"
+      },
+      {
+        "word": "наречений",
+        "hint": "Pan młody"
+      },
+      {
+        "word": "обручка",
+        "hint": "Obrączka"
+      },
+      {
+        "word": "букет",
+        "hint": "Bukiet"
+      },
+      {
+        "word": "вінчання",
+        "hint": "Ślub (kościelny)"
+      },
+      {
+        "word": "тост",
+        "hint": "Toast"
+      },
+      {
+        "word": "свідок",
+        "hint": "Świadek"
+      },
+      {
+        "word": "гості",
+        "hint": "Goście"
+      },
+      {
+        "word": "танець",
+        "hint": "Taniec"
+      },
+      {
+        "word": "сукня",
+        "hint": "Suknia"
+      },
+      {
+        "word": "вуаль",
+        "hint": "Welon"
+      },
+      {
+        "word": "запрошення",
+        "hint": "Zaproszenie"
+      },
+      {
+        "word": "медовий",
+        "hint": "Miodowy (miesiąc)"
+      },
+      {
+        "word": "каблучка",
+        "hint": "Pierścionek"
+      }
+    ]
+  },
+  {
+    "key": "holidays_wb",
+    "name": "Święta",
+    "icon": "gift",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "свято",
+        "hint": "Święto"
+      },
+      {
+        "word": "канікули",
+        "hint": "Wakacje / Ferie"
+      },
+      {
+        "word": "відпустка",
+        "hint": "Urlop"
+      },
+      {
+        "word": "вихідний",
+        "hint": "Dzień wolny"
+      },
+      {
+        "word": "подарунок",
+        "hint": "Prezent"
+      },
+      {
+        "word": "ялинка",
+        "hint": "Choinka"
+      },
+      {
+        "word": "святковий",
+        "hint": "Świąteczny"
+      },
+      {
+        "word": "новий рік",
+        "hint": "Nowy Rok"
+      },
+      {
+        "word": "листівка",
+        "hint": "Pocztówka / Kartka"
+      },
+      {
+        "word": "святкування",
+        "hint": "Świętowanie"
+      },
+      {
+        "word": "прикраси",
+        "hint": "Ozdoby / Dekoracje"
+      },
+      {
+        "word": "торт",
+        "hint": "Tort"
+      },
+      {
+        "word": "гірлянда",
+        "hint": "Girlanda"
+      },
+      {
+        "word": "зірка",
+        "hint": "Gwiazda / Gwiazdka"
+      },
+      {
+        "word": "свічка",
+        "hint": "Świeca"
+      }
+    ]
+  },
+  {
+    "key": "celebrations_wb",
+    "name": "Uroczystości",
+    "icon": "sparkles",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ювілей",
+        "hint": "Jubileusz"
+      },
+      {
+        "word": "річниця",
+        "hint": "Rocznica"
+      },
+      {
+        "word": "випускний",
+        "hint": "Bal maturalny"
+      },
+      {
+        "word": "хрестини",
+        "hint": "Chrzciny"
+      },
+      {
+        "word": "іменини",
+        "hint": "Imieniny"
+      },
+      {
+        "word": "народження",
+        "hint": "Urodziny"
+      },
+      {
+        "word": "бенкет",
+        "hint": "Bankiet"
+      },
+      {
+        "word": "церемонія",
+        "hint": "Ceremonia"
+      },
+      {
+        "word": "промова",
+        "hint": "Przemówienie"
+      },
+      {
+        "word": "нагорода",
+        "hint": "Nagroda"
+      },
+      {
+        "word": "привітання",
+        "hint": "Gratulacje"
+      },
+      {
+        "word": "повітряна куля",
+        "hint": "Balon"
+      },
+      {
+        "word": "серпантин",
+        "hint": "Serpentyna"
+      },
+      {
+        "word": "конфеті",
+        "hint": "Konfetti"
+      },
+      {
+        "word": "шампанське",
+        "hint": "Szampan"
+      }
+    ]
+  },
+  {
+    "key": "fashion_wb",
+    "name": "Moda",
+    "icon": "tshirt",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "мода",
+        "hint": "Moda"
+      },
+      {
+        "word": "стиль",
+        "hint": "Styl"
+      },
+      {
+        "word": "дизайнер",
+        "hint": "Projektant"
+      },
+      {
+        "word": "колекція",
+        "hint": "Kolekcja"
+      },
+      {
+        "word": "подіум",
+        "hint": "Wybieg"
+      },
+      {
+        "word": "модель",
+        "hint": "Model / Modelka"
+      },
+      {
+        "word": "тренд",
+        "hint": "Trend"
+      },
+      {
+        "word": "елегантний",
+        "hint": "Elegancki"
+      },
+      {
+        "word": "гардероб",
+        "hint": "Garderoba"
+      },
+      {
+        "word": "аксесуар",
+        "hint": "Dodatek / Akcesoria"
+      },
+      {
+        "word": "бренд",
+        "hint": "Marka"
+      },
+      {
+        "word": "розмір",
+        "hint": "Rozmiar"
+      },
+      {
+        "word": "сезон",
+        "hint": "Sezon"
+      },
+      {
+        "word": "вінтажний",
+        "hint": "Vintage"
+      },
+      {
+        "word": "бутік",
+        "hint": "Butik"
+      }
+    ]
+  },
+  {
+    "key": "textiles_wb",
+    "name": "Tekstylia",
+    "icon": "square.stack.3d.up",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "бавовна",
+        "hint": "Bawełna"
+      },
+      {
+        "word": "шовк",
+        "hint": "Jedwab"
+      },
+      {
+        "word": "вовна",
+        "hint": "Wełna"
+      },
+      {
+        "word": "льон",
+        "hint": "Len"
+      },
+      {
+        "word": "полотно",
+        "hint": "Płótno"
+      },
+      {
+        "word": "нитка",
+        "hint": "Nić / Nitka"
+      },
+      {
+        "word": "тканина",
+        "hint": "Tkanina / Materiał"
+      },
+      {
+        "word": "шкіра",
+        "hint": "Skóra"
+      },
+      {
+        "word": "замша",
+        "hint": "Zamsz"
+      },
+      {
+        "word": "мереживо",
+        "hint": "Koronka"
+      },
+      {
+        "word": "оксамит",
+        "hint": "Aksamit"
+      },
+      {
+        "word": "атлас",
+        "hint": "Atłas / Satyna"
+      },
+      {
+        "word": "джинс",
+        "hint": "Dżins / Jeans"
+      },
+      {
+        "word": "трикотаж",
+        "hint": "Dzianina"
+      },
+      {
+        "word": "плетіння",
+        "hint": "Dziewiarstwo"
+      }
+    ]
+  },
+  {
+    "key": "jewelry_wb",
+    "name": "Biżuteria",
+    "icon": "sparkle",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "каблучка",
+        "hint": "Pierścionek"
+      },
+      {
+        "word": "намисто",
+        "hint": "Naszyjnik"
+      },
+      {
+        "word": "браслет",
+        "hint": "Bransoletka"
+      },
+      {
+        "word": "сережки",
+        "hint": "Kolczyki"
+      },
+      {
+        "word": "кулон",
+        "hint": "Wisiorek"
+      },
+      {
+        "word": "діамант",
+        "hint": "Diament"
+      },
+      {
+        "word": "золото",
+        "hint": "Złoto"
+      },
+      {
+        "word": "срібло",
+        "hint": "Srebro"
+      },
+      {
+        "word": "перлина",
+        "hint": "Perła"
+      },
+      {
+        "word": "рубін",
+        "hint": "Rubin"
+      },
+      {
+        "word": "сапфір",
+        "hint": "Szafir"
+      },
+      {
+        "word": "смарагд",
+        "hint": "Szmaragd"
+      },
+      {
+        "word": "брошка",
+        "hint": "Broszka"
+      },
+      {
+        "word": "запонки",
+        "hint": "Spinki do mankietów"
+      },
+      {
+        "word": "ланцюжок",
+        "hint": "Łańcuszek"
+      }
+    ]
+  },
+  {
+    "key": "cosmetics_wb",
+    "name": "Kosmetyki",
+    "icon": "eyebrow",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "помада",
+        "hint": "Szminka / Pomadka"
+      },
+      {
+        "word": "туш",
+        "hint": "Tusz do rzęs"
+      },
+      {
+        "word": "пудра",
+        "hint": "Puder"
+      },
+      {
+        "word": "крем",
+        "hint": "Krem"
+      },
+      {
+        "word": "парфуми",
+        "hint": "Perfumy"
+      },
+      {
+        "word": "тіні",
+        "hint": "Cienie do powiek"
+      },
+      {
+        "word": "рум'яна",
+        "hint": "Róż"
+      },
+      {
+        "word": "лак",
+        "hint": "Lakier do paznokci"
+      },
+      {
+        "word": "шампунь",
+        "hint": "Szampon"
+      },
+      {
+        "word": "бальзам",
+        "hint": "Balsam / Odżywka"
+      },
+      {
+        "word": "маска",
+        "hint": "Maseczka"
+      },
+      {
+        "word": "пілінг",
+        "hint": "Peeling"
+      },
+      {
+        "word": "тонік",
+        "hint": "Tonik"
+      },
+      {
+        "word": "сироватка",
+        "hint": "Serum"
+      },
+      {
+        "word": "пензлик",
+        "hint": "Pędzelek"
+      }
+    ]
+  },
+  {
+    "key": "hairstyles_wb",
+    "name": "Fryzury",
+    "icon": "scissors",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "зачіска",
+        "hint": "Fryzura"
+      },
+      {
+        "word": "перукар",
+        "hint": "Fryzjer"
+      },
+      {
+        "word": "стрижка",
+        "hint": "Strzyżenie"
+      },
+      {
+        "word": "фарбування",
+        "hint": "Farbowanie"
+      },
+      {
+        "word": "завивка",
+        "hint": "Trwała / Loki"
+      },
+      {
+        "word": "гребінець",
+        "hint": "Grzebień"
+      },
+      {
+        "word": "щітка",
+        "hint": "Szczotka"
+      },
+      {
+        "word": "фен",
+        "hint": "Suszarka"
+      },
+      {
+        "word": "коса",
+        "hint": "Warkocz"
+      },
+      {
+        "word": "хвостик",
+        "hint": "Kucyk"
+      },
+      {
+        "word": "чубчик",
+        "hint": "Grzywka"
+      },
+      {
+        "word": "кучері",
+        "hint": "Loki / Kędziory"
+      },
+      {
+        "word": "шпилька",
+        "hint": "Wsuwka / Spinka"
+      },
+      {
+        "word": "лак",
+        "hint": "Lakier do włosów"
+      },
+      {
+        "word": "волосся",
+        "hint": "Włosy"
+      }
+    ]
+  },
+  {
+    "key": "environment_wb",
+    "name": "Środowisko",
+    "icon": "globe.europe.africa",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "довкілля",
+        "hint": "Środowisko"
+      },
+      {
+        "word": "забруднення",
+        "hint": "Zanieczyszczenie"
+      },
+      {
+        "word": "екологія",
+        "hint": "Ekologia"
+      },
+      {
+        "word": "природа",
+        "hint": "Przyroda / Natura"
+      },
+      {
+        "word": "атмосфера",
+        "hint": "Atmosfera"
+      },
+      {
+        "word": "озон",
+        "hint": "Ozon"
+      },
+      {
+        "word": "вимирання",
+        "hint": "Wymieranie"
+      },
+      {
+        "word": "заповідник",
+        "hint": "Rezerwat"
+      },
+      {
+        "word": "біорізноманіття",
+        "hint": "Bioróżnorodność"
+      },
+      {
+        "word": "відходи",
+        "hint": "Odpady"
+      },
+      {
+        "word": "виробництво",
+        "hint": "Produkcja"
+      },
+      {
+        "word": "вуглекислий",
+        "hint": "Dwutlenek węgla"
+      },
+      {
+        "word": "парниковий",
+        "hint": "Cieplarniany"
+      },
+      {
+        "word": "катастрофа",
+        "hint": "Katastrofa"
+      },
+      {
+        "word": "охорона",
+        "hint": "Ochrona"
+      }
+    ]
+  },
+  {
+    "key": "recycling_wb",
+    "name": "Recykling",
+    "icon": "arrow.3.trianglepath",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "переробка",
+        "hint": "Przetwarzanie / Recykling"
+      },
+      {
+        "word": "сортування",
+        "hint": "Sortowanie"
+      },
+      {
+        "word": "контейнер",
+        "hint": "Kontener / Pojemnik"
+      },
+      {
+        "word": "пластик",
+        "hint": "Plastik"
+      },
+      {
+        "word": "скло",
+        "hint": "Szkło"
+      },
+      {
+        "word": "папір",
+        "hint": "Papier"
+      },
+      {
+        "word": "метал",
+        "hint": "Metal"
+      },
+      {
+        "word": "сміття",
+        "hint": "Śmieci"
+      },
+      {
+        "word": "компост",
+        "hint": "Kompost"
+      },
+      {
+        "word": "утилізація",
+        "hint": "Utylizacja"
+      },
+      {
+        "word": "відходи",
+        "hint": "Odpady"
+      },
+      {
+        "word": "звалище",
+        "hint": "Wysypisko"
+      },
+      {
+        "word": "батарейка",
+        "hint": "Bateria"
+      },
+      {
+        "word": "пакування",
+        "hint": "Opakowanie"
+      },
+      {
+        "word": "повторне",
+        "hint": "Ponowne użycie"
+      }
+    ]
+  },
+  {
+    "key": "energy_wb",
+    "name": "Energia",
+    "icon": "bolt.fill",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "енергія",
+        "hint": "Energia"
+      },
+      {
+        "word": "електрика",
+        "hint": "Elektryczność"
+      },
+      {
+        "word": "сонячна",
+        "hint": "Słoneczna (energia)"
+      },
+      {
+        "word": "вітрова",
+        "hint": "Wiatrowa (energia)"
+      },
+      {
+        "word": "атомна",
+        "hint": "Atomowa / Jądrowa"
+      },
+      {
+        "word": "турбіна",
+        "hint": "Turbina"
+      },
+      {
+        "word": "панель",
+        "hint": "Panel (słoneczny)"
+      },
+      {
+        "word": "батарея",
+        "hint": "Akumulator / Bateria"
+      },
+      {
+        "word": "генератор",
+        "hint": "Generator"
+      },
+      {
+        "word": "паливо",
+        "hint": "Paliwo"
+      },
+      {
+        "word": "вугілля",
+        "hint": "Węgiel"
+      },
+      {
+        "word": "газ",
+        "hint": "Gaz"
+      },
+      {
+        "word": "нафта",
+        "hint": "Ropa naftowa"
+      },
+      {
+        "word": "електростанція",
+        "hint": "Elektrownia"
+      },
+      {
+        "word": "споживання",
+        "hint": "Zużycie"
+      }
+    ]
+  },
+  {
+    "key": "climate_wb",
+    "name": "Klimat",
+    "icon": "thermometer.sun",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "клімат",
+        "hint": "Klimat"
+      },
+      {
+        "word": "потепління",
+        "hint": "Ocieplenie"
+      },
+      {
+        "word": "посуха",
+        "hint": "Susza"
+      },
+      {
+        "word": "повінь",
+        "hint": "Powódź"
+      },
+      {
+        "word": "ураган",
+        "hint": "Huragan"
+      },
+      {
+        "word": "торнадо",
+        "hint": "Tornado"
+      },
+      {
+        "word": "танення",
+        "hint": "Topnienie"
+      },
+      {
+        "word": "льодовик",
+        "hint": "Lodowiec"
+      },
+      {
+        "word": "опади",
+        "hint": "Opady"
+      },
+      {
+        "word": "температура",
+        "hint": "Temperatura"
+      },
+      {
+        "word": "вологість",
+        "hint": "Wilgotność"
+      },
+      {
+        "word": "циклон",
+        "hint": "Cyklon"
+      },
+      {
+        "word": "прогноз",
+        "hint": "Prognoza"
+      },
+      {
+        "word": "тропічний",
+        "hint": "Tropikalny"
+      },
+      {
+        "word": "полярний",
+        "hint": "Polarny"
+      }
+    ]
+  },
+  {
+    "key": "sustainability_wb",
+    "name": "Zrównoważony rozwój",
+    "icon": "leaf.circle",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "сталість",
+        "hint": "Zrównoważoność"
+      },
+      {
+        "word": "відновлюваний",
+        "hint": "Odnawialny"
+      },
+      {
+        "word": "органічний",
+        "hint": "Organiczny / Ekologiczny"
+      },
+      {
+        "word": "переробка",
+        "hint": "Recykling"
+      },
+      {
+        "word": "збереження",
+        "hint": "Zachowanie / Ochrona"
+      },
+      {
+        "word": "ресурси",
+        "hint": "Zasoby"
+      },
+      {
+        "word": "вуглецевий",
+        "hint": "Węglowy (ślad)"
+      },
+      {
+        "word": "інновація",
+        "hint": "Innowacja"
+      },
+      {
+        "word": "ефективність",
+        "hint": "Efektywność"
+      },
+      {
+        "word": "виробник",
+        "hint": "Producent"
+      },
+      {
+        "word": "споживач",
+        "hint": "Konsument"
+      },
+      {
+        "word": "біопаливо",
+        "hint": "Biopaliwo"
+      },
+      {
+        "word": "екологічний",
+        "hint": "Ekologiczny"
+      },
+      {
+        "word": "вторинний",
+        "hint": "Wtórny / Powtórny"
+      },
+      {
+        "word": "розвиток",
+        "hint": "Rozwój"
+      }
+    ]
   }
 ]

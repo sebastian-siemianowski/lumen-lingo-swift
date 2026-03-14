@@ -2098,5 +2098,4905 @@
         "hint": "Aksamit"
       }
     ]
+  },
+  {
+    "key": "daily_routine_wb",
+    "name": "Codzienna rutyna",
+    "description": "Słówka związane z codziennymi czynnościami",
+    "iconName": "sunrise.fill",
+    "color": "#F59E0B",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "breakfast",
+        "hint": "Śniadanie"
+      },
+      {
+        "word": "shower",
+        "hint": "Prysznic"
+      },
+      {
+        "word": "morning",
+        "hint": "Poranek"
+      },
+      {
+        "word": "evening",
+        "hint": "Wieczór"
+      },
+      {
+        "word": "brush",
+        "hint": "Szczotkować"
+      },
+      {
+        "word": "alarm",
+        "hint": "Budzik"
+      },
+      {
+        "word": "routine",
+        "hint": "Rutyna"
+      },
+      {
+        "word": "commute",
+        "hint": "Dojazd do pracy"
+      },
+      {
+        "word": "chores",
+        "hint": "Obowiązki domowe"
+      },
+      {
+        "word": "laundry",
+        "hint": "Pranie"
+      },
+      {
+        "word": "dinner",
+        "hint": "Kolacja/obiad"
+      },
+      {
+        "word": "wake",
+        "hint": "Budzić się"
+      },
+      {
+        "word": "sleep",
+        "hint": "Spać"
+      },
+      {
+        "word": "dress",
+        "hint": "Ubierać się"
+      },
+      {
+        "word": "schedule",
+        "hint": "Harmonogram"
+      }
+    ]
+  },
+  {
+    "key": "shopping_wb",
+    "name": "Zakupy",
+    "description": "Słówka związane z zakupami",
+    "iconName": "cart.fill",
+    "color": "#8B5CF6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "basket",
+        "hint": "Koszyk"
+      },
+      {
+        "word": "receipt",
+        "hint": "Paragon"
+      },
+      {
+        "word": "cashier",
+        "hint": "Kasjer"
+      },
+      {
+        "word": "store",
+        "hint": "Sklep"
+      },
+      {
+        "word": "price",
+        "hint": "Cena"
+      },
+      {
+        "word": "sale",
+        "hint": "Wyprzedaż"
+      },
+      {
+        "word": "shelf",
+        "hint": "Półka"
+      },
+      {
+        "word": "trolley",
+        "hint": "Wózek sklepowy"
+      },
+      {
+        "word": "queue",
+        "hint": "Kolejka"
+      },
+      {
+        "word": "brand",
+        "hint": "Marka"
+      },
+      {
+        "word": "aisle",
+        "hint": "Alejka w sklepie"
+      },
+      {
+        "word": "change",
+        "hint": "Reszta (pieniądze)"
+      },
+      {
+        "word": "wallet",
+        "hint": "Portfel"
+      },
+      {
+        "word": "bargain",
+        "hint": "Okazja cenowa"
+      },
+      {
+        "word": "refund",
+        "hint": "Zwrot pieniędzy"
+      }
+    ]
+  },
+  {
+    "key": "restaurant_wb",
+    "name": "Restauracja",
+    "description": "Słówka związane z restauracją",
+    "iconName": "fork.knife",
+    "color": "#EF4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "waiter",
+        "hint": "Kelner"
+      },
+      {
+        "word": "menu",
+        "hint": "Menu"
+      },
+      {
+        "word": "order",
+        "hint": "Zamówienie"
+      },
+      {
+        "word": "table",
+        "hint": "Stół/stolik"
+      },
+      {
+        "word": "course",
+        "hint": "Danie (np. pierwsze)"
+      },
+      {
+        "word": "dessert",
+        "hint": "Deser"
+      },
+      {
+        "word": "bill",
+        "hint": "Rachunek"
+      },
+      {
+        "word": "starter",
+        "hint": "Przystawka"
+      },
+      {
+        "word": "napkin",
+        "hint": "Serwetka"
+      },
+      {
+        "word": "cutlery",
+        "hint": "Sztućce"
+      },
+      {
+        "word": "portion",
+        "hint": "Porcja"
+      },
+      {
+        "word": "reserve",
+        "hint": "Rezerwować"
+      },
+      {
+        "word": "cuisine",
+        "hint": "Kuchnia (rodzaj)"
+      },
+      {
+        "word": "chef",
+        "hint": "Szef kuchni"
+      },
+      {
+        "word": "sauce",
+        "hint": "Sos"
+      }
+    ]
+  },
+  {
+    "key": "garden_wb",
+    "name": "Ogród",
+    "description": "Słówka związane z ogrodem",
+    "iconName": "leaf.fill",
+    "color": "#10B981",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "flower",
+        "hint": "Kwiat"
+      },
+      {
+        "word": "grass",
+        "hint": "Trawa"
+      },
+      {
+        "word": "fence",
+        "hint": "Płot"
+      },
+      {
+        "word": "plant",
+        "hint": "Roślina"
+      },
+      {
+        "word": "soil",
+        "hint": "Gleba/ziemia"
+      },
+      {
+        "word": "seed",
+        "hint": "Nasiono"
+      },
+      {
+        "word": "hedge",
+        "hint": "Żywopłot"
+      },
+      {
+        "word": "branch",
+        "hint": "Gałąź"
+      },
+      {
+        "word": "compost",
+        "hint": "Kompost"
+      },
+      {
+        "word": "lawn",
+        "hint": "Trawnik"
+      },
+      {
+        "word": "petal",
+        "hint": "Płatek (kwiatu)"
+      },
+      {
+        "word": "shrub",
+        "hint": "Krzew"
+      },
+      {
+        "word": "prune",
+        "hint": "Przycinać"
+      },
+      {
+        "word": "harvest",
+        "hint": "Żniwa/zbierać plony"
+      },
+      {
+        "word": "trellis",
+        "hint": "Kratka ogrodowa"
+      }
+    ]
+  },
+  {
+    "key": "bathroom_wb",
+    "name": "Łazienka",
+    "description": "Słówka związane z łazienką",
+    "iconName": "drop.fill",
+    "color": "#06B6D4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "mirror",
+        "hint": "Lustro"
+      },
+      {
+        "word": "towel",
+        "hint": "Ręcznik"
+      },
+      {
+        "word": "faucet",
+        "hint": "Kran"
+      },
+      {
+        "word": "toilet",
+        "hint": "Toaleta"
+      },
+      {
+        "word": "bathtub",
+        "hint": "Wanna"
+      },
+      {
+        "word": "sponge",
+        "hint": "Gąbka"
+      },
+      {
+        "word": "drain",
+        "hint": "Odpływ"
+      },
+      {
+        "word": "cabinet",
+        "hint": "Szafka"
+      },
+      {
+        "word": "tile",
+        "hint": "Kafelek/płytka"
+      },
+      {
+        "word": "razor",
+        "hint": "Maszynka do golenia"
+      },
+      {
+        "word": "curtain",
+        "hint": "Zasłona (prysznicowa)"
+      },
+      {
+        "word": "plunger",
+        "hint": "Przepychacz"
+      },
+      {
+        "word": "shelf",
+        "hint": "Półka"
+      },
+      {
+        "word": "soap",
+        "hint": "Mydło"
+      },
+      {
+        "word": "shampoo",
+        "hint": "Szampon"
+      }
+    ]
+  },
+  {
+    "key": "cinema_wb",
+    "name": "Kino i filmy",
+    "description": "Słówka związane z kinem i filmami",
+    "iconName": "film.fill",
+    "color": "#6366F1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "screen",
+        "hint": "Ekran"
+      },
+      {
+        "word": "ticket",
+        "hint": "Bilet"
+      },
+      {
+        "word": "trailer",
+        "hint": "Zwiastun"
+      },
+      {
+        "word": "actress",
+        "hint": "Aktorka"
+      },
+      {
+        "word": "scene",
+        "hint": "Scena"
+      },
+      {
+        "word": "comedy",
+        "hint": "Komedia"
+      },
+      {
+        "word": "horror",
+        "hint": "Horror"
+      },
+      {
+        "word": "plot",
+        "hint": "Fabuła"
+      },
+      {
+        "word": "sequel",
+        "hint": "Kontynuacja filmu"
+      },
+      {
+        "word": "subtitle",
+        "hint": "Napisy"
+      },
+      {
+        "word": "director",
+        "hint": "Reżyser"
+      },
+      {
+        "word": "premiere",
+        "hint": "Premiera"
+      },
+      {
+        "word": "popcorn",
+        "hint": "Popcorn"
+      },
+      {
+        "word": "script",
+        "hint": "Scenariusz"
+      },
+      {
+        "word": "camera",
+        "hint": "Kamera"
+      }
+    ]
+  },
+  {
+    "key": "art_wb",
+    "name": "Sztuka",
+    "description": "Słówka związane ze sztuką i tworzeniem",
+    "iconName": "paintpalette.fill",
+    "color": "#EC4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "canvas",
+        "hint": "Płótno"
+      },
+      {
+        "word": "brush",
+        "hint": "Pędzel"
+      },
+      {
+        "word": "sketch",
+        "hint": "Szkic"
+      },
+      {
+        "word": "gallery",
+        "hint": "Galeria"
+      },
+      {
+        "word": "portrait",
+        "hint": "Portret"
+      },
+      {
+        "word": "sculpture",
+        "hint": "Rzeźba"
+      },
+      {
+        "word": "palette",
+        "hint": "Paleta"
+      },
+      {
+        "word": "frame",
+        "hint": "Rama (obrazu)"
+      },
+      {
+        "word": "exhibit",
+        "hint": "Wystawa"
+      },
+      {
+        "word": "mural",
+        "hint": "Mural"
+      },
+      {
+        "word": "mosaic",
+        "hint": "Mozaika"
+      },
+      {
+        "word": "pastel",
+        "hint": "Pastel"
+      },
+      {
+        "word": "easel",
+        "hint": "Sztaluga"
+      },
+      {
+        "word": "charcoal",
+        "hint": "Węgiel (do rysowania)"
+      },
+      {
+        "word": "pigment",
+        "hint": "Pigment"
+      }
+    ]
+  },
+  {
+    "key": "dance_wb",
+    "name": "Taniec",
+    "description": "Słówka związane z tańcem",
+    "iconName": "figure.dance",
+    "color": "#F43F5E",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ballet",
+        "hint": "Balet"
+      },
+      {
+        "word": "rhythm",
+        "hint": "Rytm"
+      },
+      {
+        "word": "partner",
+        "hint": "Partner (taneczny)"
+      },
+      {
+        "word": "stage",
+        "hint": "Scena"
+      },
+      {
+        "word": "waltz",
+        "hint": "Walc"
+      },
+      {
+        "word": "tango",
+        "hint": "Tango"
+      },
+      {
+        "word": "posture",
+        "hint": "Postawa/pozycja"
+      },
+      {
+        "word": "routine",
+        "hint": "Układ taneczny"
+      },
+      {
+        "word": "costume",
+        "hint": "Kostium"
+      },
+      {
+        "word": "pirouette",
+        "hint": "Piruet"
+      },
+      {
+        "word": "tempo",
+        "hint": "Tempo"
+      },
+      {
+        "word": "salsa",
+        "hint": "Salsa"
+      },
+      {
+        "word": "perform",
+        "hint": "Występować"
+      },
+      {
+        "word": "graceful",
+        "hint": "Pełen gracji"
+      },
+      {
+        "word": "rehearse",
+        "hint": "Próbować (ćwiczyć)"
+      }
+    ]
+  },
+  {
+    "key": "photography_wb",
+    "name": "Fotografia",
+    "description": "Słówka związane z fotografią",
+    "iconName": "camera.fill",
+    "color": "#0EA5E9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "lens",
+        "hint": "Obiektyw"
+      },
+      {
+        "word": "focus",
+        "hint": "Ostrość"
+      },
+      {
+        "word": "flash",
+        "hint": "Flesz/lampa błyskowa"
+      },
+      {
+        "word": "tripod",
+        "hint": "Statyw"
+      },
+      {
+        "word": "shutter",
+        "hint": "Migawka"
+      },
+      {
+        "word": "filter",
+        "hint": "Filtr"
+      },
+      {
+        "word": "zoom",
+        "hint": "Zbliżenie/zoom"
+      },
+      {
+        "word": "exposure",
+        "hint": "Ekspozycja/naświetlenie"
+      },
+      {
+        "word": "portrait",
+        "hint": "Portret"
+      },
+      {
+        "word": "capture",
+        "hint": "Uchwycić (zdjęcie)"
+      },
+      {
+        "word": "contrast",
+        "hint": "Kontrast"
+      },
+      {
+        "word": "aperture",
+        "hint": "Przysłona"
+      },
+      {
+        "word": "panorama",
+        "hint": "Panorama"
+      },
+      {
+        "word": "digital",
+        "hint": "Cyfrowy"
+      },
+      {
+        "word": "snapshot",
+        "hint": "Migawkowe zdjęcie"
+      }
+    ]
+  },
+  {
+    "key": "crafts_wb",
+    "name": "Rękodzieło",
+    "description": "Słówka związane z rękodzielnictwem",
+    "iconName": "scissors",
+    "color": "#D97706",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "needle",
+        "hint": "Igła"
+      },
+      {
+        "word": "thread",
+        "hint": "Nić/nitka"
+      },
+      {
+        "word": "fabric",
+        "hint": "Tkanina/materiał"
+      },
+      {
+        "word": "pattern",
+        "hint": "Wzór/szablon"
+      },
+      {
+        "word": "stitch",
+        "hint": "Ścieg"
+      },
+      {
+        "word": "ribbon",
+        "hint": "Wstążka"
+      },
+      {
+        "word": "button",
+        "hint": "Guzik"
+      },
+      {
+        "word": "crochet",
+        "hint": "Szydełkowanie"
+      },
+      {
+        "word": "knitting",
+        "hint": "Dzierganie/robienie na drutach"
+      },
+      {
+        "word": "origami",
+        "hint": "Origami"
+      },
+      {
+        "word": "pottery",
+        "hint": "Ceramika/garncarstwo"
+      },
+      {
+        "word": "weaving",
+        "hint": "Tkanie"
+      },
+      {
+        "word": "glue",
+        "hint": "Klej"
+      },
+      {
+        "word": "bead",
+        "hint": "Koralik"
+      },
+      {
+        "word": "scissors",
+        "hint": "Nożyczki"
+      }
+    ]
+  },
+  {
+    "key": "geography_wb",
+    "name": "Geografia",
+    "description": "Słówka związane z geografią",
+    "iconName": "globe.europe.africa.fill",
+    "color": "#059669",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "island",
+        "hint": "Wyspa"
+      },
+      {
+        "word": "desert",
+        "hint": "Pustynia"
+      },
+      {
+        "word": "valley",
+        "hint": "Dolina"
+      },
+      {
+        "word": "border",
+        "hint": "Granica"
+      },
+      {
+        "word": "cliff",
+        "hint": "Klif/urwisko"
+      },
+      {
+        "word": "glacier",
+        "hint": "Lodowiec"
+      },
+      {
+        "word": "volcano",
+        "hint": "Wulkan"
+      },
+      {
+        "word": "canyon",
+        "hint": "Kanion"
+      },
+      {
+        "word": "plateau",
+        "hint": "Płaskowyż"
+      },
+      {
+        "word": "peninsula",
+        "hint": "Półwysep"
+      },
+      {
+        "word": "continent",
+        "hint": "Kontynent"
+      },
+      {
+        "word": "waterfall",
+        "hint": "Wodospad"
+      },
+      {
+        "word": "jungle",
+        "hint": "Dżungla"
+      },
+      {
+        "word": "swamp",
+        "hint": "Bagno/mokradło"
+      },
+      {
+        "word": "tundra",
+        "hint": "Tundra"
+      }
+    ]
+  },
+  {
+    "key": "astronomy_wb",
+    "name": "Astronomia",
+    "description": "Słówka związane z kosmosem i astronomią",
+    "iconName": "sparkles",
+    "color": "#312E81",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "planet",
+        "hint": "Planeta"
+      },
+      {
+        "word": "orbit",
+        "hint": "Orbita"
+      },
+      {
+        "word": "comet",
+        "hint": "Kometa"
+      },
+      {
+        "word": "galaxy",
+        "hint": "Galaktyka"
+      },
+      {
+        "word": "eclipse",
+        "hint": "Zaćmienie"
+      },
+      {
+        "word": "asteroid",
+        "hint": "Asteroida"
+      },
+      {
+        "word": "nebula",
+        "hint": "Mgławica"
+      },
+      {
+        "word": "gravity",
+        "hint": "Grawitacja"
+      },
+      {
+        "word": "meteor",
+        "hint": "Meteor"
+      },
+      {
+        "word": "satellite",
+        "hint": "Satelita"
+      },
+      {
+        "word": "telescope",
+        "hint": "Teleskop"
+      },
+      {
+        "word": "cosmos",
+        "hint": "Kosmos"
+      },
+      {
+        "word": "lunar",
+        "hint": "Księżycowy"
+      },
+      {
+        "word": "solar",
+        "hint": "Słoneczny"
+      },
+      {
+        "word": "stellar",
+        "hint": "Gwiezdny"
+      }
+    ]
+  },
+  {
+    "key": "ocean_wb",
+    "name": "Ocean i morze",
+    "description": "Słówka związane z oceanem i morzem",
+    "iconName": "water.waves",
+    "color": "#0284C7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "wave",
+        "hint": "Fala"
+      },
+      {
+        "word": "coral",
+        "hint": "Koral"
+      },
+      {
+        "word": "anchor",
+        "hint": "Kotwica"
+      },
+      {
+        "word": "current",
+        "hint": "Prąd (morski)"
+      },
+      {
+        "word": "dolphin",
+        "hint": "Delfin"
+      },
+      {
+        "word": "whale",
+        "hint": "Wieloryb"
+      },
+      {
+        "word": "trench",
+        "hint": "Rów (oceaniczny)"
+      },
+      {
+        "word": "tide",
+        "hint": "Przypływ/odpływ"
+      },
+      {
+        "word": "plankton",
+        "hint": "Plankton"
+      },
+      {
+        "word": "seaweed",
+        "hint": "Wodorosty"
+      },
+      {
+        "word": "iceberg",
+        "hint": "Góra lodowa"
+      },
+      {
+        "word": "shell",
+        "hint": "Muszla"
+      },
+      {
+        "word": "harbor",
+        "hint": "Port/przystań"
+      },
+      {
+        "word": "reef",
+        "hint": "Rafa"
+      },
+      {
+        "word": "voyage",
+        "hint": "Podróż morska"
+      }
+    ]
+  },
+  {
+    "key": "mountains_wb",
+    "name": "Góry",
+    "description": "Słówka związane z górami i wspinaczką",
+    "iconName": "mountain.2.fill",
+    "color": "#78716C",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "summit",
+        "hint": "Szczyt"
+      },
+      {
+        "word": "trail",
+        "hint": "Szlak"
+      },
+      {
+        "word": "boulder",
+        "hint": "Głaz"
+      },
+      {
+        "word": "ridge",
+        "hint": "Grzbiet (górski)"
+      },
+      {
+        "word": "altitude",
+        "hint": "Wysokość n.p.m."
+      },
+      {
+        "word": "slope",
+        "hint": "Stok/zbocze"
+      },
+      {
+        "word": "peak",
+        "hint": "Szczyt (górski)"
+      },
+      {
+        "word": "ravine",
+        "hint": "Wąwóz"
+      },
+      {
+        "word": "climbing",
+        "hint": "Wspinaczka"
+      },
+      {
+        "word": "avalanche",
+        "hint": "Lawina"
+      },
+      {
+        "word": "cabin",
+        "hint": "Schronisko/chatka"
+      },
+      {
+        "word": "hiking",
+        "hint": "Wędrówka górska"
+      },
+      {
+        "word": "backpack",
+        "hint": "Plecak"
+      },
+      {
+        "word": "compass",
+        "hint": "Kompas"
+      },
+      {
+        "word": "terrain",
+        "hint": "Teren"
+      }
+    ]
+  },
+  {
+    "key": "camping_wb",
+    "name": "Kemping",
+    "description": "Słówka związane z kempingiem i biwakowaniem",
+    "iconName": "tent.fill",
+    "color": "#65A30D",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "tent",
+        "hint": "Namiot"
+      },
+      {
+        "word": "bonfire",
+        "hint": "Ognisko"
+      },
+      {
+        "word": "lantern",
+        "hint": "Latarnia/lampion"
+      },
+      {
+        "word": "sleeping",
+        "hint": "Spanie (np. śpiwór)"
+      },
+      {
+        "word": "firewood",
+        "hint": "Drewno na opał"
+      },
+      {
+        "word": "canteen",
+        "hint": "Manierka"
+      },
+      {
+        "word": "campsite",
+        "hint": "Pole namiotowe"
+      },
+      {
+        "word": "hammock",
+        "hint": "Hamak"
+      },
+      {
+        "word": "fishing",
+        "hint": "Wędkowanie"
+      },
+      {
+        "word": "matches",
+        "hint": "Zapałki"
+      },
+      {
+        "word": "torch",
+        "hint": "Latarka"
+      },
+      {
+        "word": "wildlife",
+        "hint": "Dzika przyroda"
+      },
+      {
+        "word": "stream",
+        "hint": "Strumień"
+      },
+      {
+        "word": "campfire",
+        "hint": "Ognisko obozowe"
+      },
+      {
+        "word": "shelter",
+        "hint": "Schronienie"
+      }
+    ]
+  },
+  {
+    "key": "law_wb",
+    "name": "Prawo",
+    "description": "Słówka związane z prawem i sądownictwem",
+    "iconName": "building.columns.fill",
+    "color": "#7C3AED",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "lawyer",
+        "hint": "Prawnik/adwokat"
+      },
+      {
+        "word": "court",
+        "hint": "Sąd"
+      },
+      {
+        "word": "judge",
+        "hint": "Sędzia"
+      },
+      {
+        "word": "trial",
+        "hint": "Proces (sądowy)"
+      },
+      {
+        "word": "verdict",
+        "hint": "Werdykt"
+      },
+      {
+        "word": "witness",
+        "hint": "Świadek"
+      },
+      {
+        "word": "penalty",
+        "hint": "Kara"
+      },
+      {
+        "word": "guilty",
+        "hint": "Winny"
+      },
+      {
+        "word": "justice",
+        "hint": "Sprawiedliwość"
+      },
+      {
+        "word": "appeal",
+        "hint": "Apelacja/odwołanie"
+      },
+      {
+        "word": "contract",
+        "hint": "Umowa/kontrakt"
+      },
+      {
+        "word": "evidence",
+        "hint": "Dowód"
+      },
+      {
+        "word": "sentence",
+        "hint": "Wyrok"
+      },
+      {
+        "word": "lawsuit",
+        "hint": "Pozew"
+      },
+      {
+        "word": "statute",
+        "hint": "Ustawa"
+      }
+    ]
+  },
+  {
+    "key": "politics_wb",
+    "name": "Polityka",
+    "description": "Słówka związane z polityką",
+    "iconName": "person.3.fill",
+    "color": "#DC2626",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "election",
+        "hint": "Wybory"
+      },
+      {
+        "word": "debate",
+        "hint": "Debata"
+      },
+      {
+        "word": "campaign",
+        "hint": "Kampania"
+      },
+      {
+        "word": "cabinet",
+        "hint": "Gabinet (rząd)"
+      },
+      {
+        "word": "senate",
+        "hint": "Senat"
+      },
+      {
+        "word": "diplomat",
+        "hint": "Dyplomata"
+      },
+      {
+        "word": "reform",
+        "hint": "Reforma"
+      },
+      {
+        "word": "citizen",
+        "hint": "Obywatel"
+      },
+      {
+        "word": "ballot",
+        "hint": "Karta do głosowania"
+      },
+      {
+        "word": "minister",
+        "hint": "Minister"
+      },
+      {
+        "word": "republic",
+        "hint": "Republika"
+      },
+      {
+        "word": "treaty",
+        "hint": "Traktat"
+      },
+      {
+        "word": "democracy",
+        "hint": "Demokracja"
+      },
+      {
+        "word": "embassy",
+        "hint": "Ambasada"
+      },
+      {
+        "word": "summit",
+        "hint": "Szczyt (polityczny)"
+      }
+    ]
+  },
+  {
+    "key": "economy_wb",
+    "name": "Ekonomia",
+    "description": "Słówka związane z gospodarką",
+    "iconName": "chart.line.uptrend.xyaxis",
+    "color": "#0D9488",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "market",
+        "hint": "Rynek"
+      },
+      {
+        "word": "profit",
+        "hint": "Zysk"
+      },
+      {
+        "word": "budget",
+        "hint": "Budżet"
+      },
+      {
+        "word": "demand",
+        "hint": "Popyt"
+      },
+      {
+        "word": "supply",
+        "hint": "Podaż"
+      },
+      {
+        "word": "export",
+        "hint": "Eksport"
+      },
+      {
+        "word": "import",
+        "hint": "Import"
+      },
+      {
+        "word": "revenue",
+        "hint": "Przychód"
+      },
+      {
+        "word": "deficit",
+        "hint": "Deficyt"
+      },
+      {
+        "word": "surplus",
+        "hint": "Nadwyżka"
+      },
+      {
+        "word": "subsidy",
+        "hint": "Dotacja/subsydium"
+      },
+      {
+        "word": "tariff",
+        "hint": "Taryfa/cło"
+      },
+      {
+        "word": "growth",
+        "hint": "Wzrost (gospodarczy)"
+      },
+      {
+        "word": "currency",
+        "hint": "Waluta"
+      },
+      {
+        "word": "quarter",
+        "hint": "Kwartał"
+      }
+    ]
+  },
+  {
+    "key": "banking_wb",
+    "name": "Bankowość",
+    "description": "Słówka związane z bankowością i finansami",
+    "iconName": "banknote.fill",
+    "color": "#16A34A",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "account",
+        "hint": "Konto"
+      },
+      {
+        "word": "deposit",
+        "hint": "Wpłata/depozyt"
+      },
+      {
+        "word": "savings",
+        "hint": "Oszczędności"
+      },
+      {
+        "word": "transfer",
+        "hint": "Przelew"
+      },
+      {
+        "word": "mortgage",
+        "hint": "Kredyt hipoteczny"
+      },
+      {
+        "word": "interest",
+        "hint": "Odsetki"
+      },
+      {
+        "word": "balance",
+        "hint": "Saldo"
+      },
+      {
+        "word": "withdraw",
+        "hint": "Wypłacać"
+      },
+      {
+        "word": "credit",
+        "hint": "Kredyt"
+      },
+      {
+        "word": "receipt",
+        "hint": "Potwierdzenie"
+      },
+      {
+        "word": "cashier",
+        "hint": "Kasjer"
+      },
+      {
+        "word": "exchange",
+        "hint": "Wymiana (walut)"
+      },
+      {
+        "word": "payment",
+        "hint": "Płatność"
+      },
+      {
+        "word": "overdraft",
+        "hint": "Debet"
+      },
+      {
+        "word": "invoice",
+        "hint": "Faktura"
+      }
+    ]
+  },
+  {
+    "key": "insurance_wb",
+    "name": "Ubezpieczenia",
+    "description": "Słówka związane z ubezpieczeniami",
+    "iconName": "shield.checkered",
+    "color": "#2563EB",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "policy",
+        "hint": "Polisa"
+      },
+      {
+        "word": "premium",
+        "hint": "Składka"
+      },
+      {
+        "word": "coverage",
+        "hint": "Ochrona ubezpieczeniowa"
+      },
+      {
+        "word": "claim",
+        "hint": "Roszczenie"
+      },
+      {
+        "word": "accident",
+        "hint": "Wypadek"
+      },
+      {
+        "word": "damage",
+        "hint": "Szkoda/uszkodzenie"
+      },
+      {
+        "word": "benefit",
+        "hint": "Świadczenie"
+      },
+      {
+        "word": "liability",
+        "hint": "Odpowiedzialność"
+      },
+      {
+        "word": "broker",
+        "hint": "Pośrednik/broker"
+      },
+      {
+        "word": "deductible",
+        "hint": "Franszyza"
+      },
+      {
+        "word": "renewal",
+        "hint": "Odnowienie"
+      },
+      {
+        "word": "payout",
+        "hint": "Wypłata odszkodowania"
+      },
+      {
+        "word": "hazard",
+        "hint": "Zagrożenie/ryzyko"
+      },
+      {
+        "word": "annuity",
+        "hint": "Renta/roczna opłata"
+      },
+      {
+        "word": "pension",
+        "hint": "Emerytura"
+      }
+    ]
+  },
+  {
+    "key": "cooking_wb",
+    "name": "Gotowanie",
+    "description": "Słówka związane z gotowaniem",
+    "iconName": "frying.pan.fill",
+    "color": "#EA580C",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "recipe",
+        "hint": "Przepis"
+      },
+      {
+        "word": "boiling",
+        "hint": "Gotowanie (we wrzątku)"
+      },
+      {
+        "word": "frying",
+        "hint": "Smażenie"
+      },
+      {
+        "word": "roast",
+        "hint": "Pieczeń/piec"
+      },
+      {
+        "word": "simmer",
+        "hint": "Gotować na wolnym ogniu"
+      },
+      {
+        "word": "garnish",
+        "hint": "Przybranie/dekoracja dania"
+      },
+      {
+        "word": "marinate",
+        "hint": "Marynować"
+      },
+      {
+        "word": "grill",
+        "hint": "Grill/grillować"
+      },
+      {
+        "word": "blend",
+        "hint": "Miksować/mieszać"
+      },
+      {
+        "word": "chop",
+        "hint": "Siekać/kroić"
+      },
+      {
+        "word": "stew",
+        "hint": "Gulasz/dusić"
+      },
+      {
+        "word": "broth",
+        "hint": "Bulion/wywar"
+      },
+      {
+        "word": "season",
+        "hint": "Doprawić/przyprawić"
+      },
+      {
+        "word": "sauté",
+        "hint": "Podsmażyć"
+      },
+      {
+        "word": "steam",
+        "hint": "Gotować na parze"
+      }
+    ]
+  },
+  {
+    "key": "baking_wb",
+    "name": "Pieczenie",
+    "description": "Słówka związane z pieczeniem ciast i chleba",
+    "iconName": "birthday.cake.fill",
+    "color": "#B45309",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "dough",
+        "hint": "Ciasto (surowe)"
+      },
+      {
+        "word": "flour",
+        "hint": "Mąka"
+      },
+      {
+        "word": "yeast",
+        "hint": "Drożdże"
+      },
+      {
+        "word": "oven",
+        "hint": "Piekarnik"
+      },
+      {
+        "word": "pastry",
+        "hint": "Ciasto/wypieki"
+      },
+      {
+        "word": "frosting",
+        "hint": "Lukier/polewa"
+      },
+      {
+        "word": "muffin",
+        "hint": "Muffinka"
+      },
+      {
+        "word": "batter",
+        "hint": "Ciasto (płynne)"
+      },
+      {
+        "word": "crust",
+        "hint": "Skórka (chleba/ciasta)"
+      },
+      {
+        "word": "whisk",
+        "hint": "Trzepaczka/ubijać"
+      },
+      {
+        "word": "knead",
+        "hint": "Wyrabiać (ciasto)"
+      },
+      {
+        "word": "glaze",
+        "hint": "Polewa/glazura"
+      },
+      {
+        "word": "rolling",
+        "hint": "Wałkowanie"
+      },
+      {
+        "word": "preheat",
+        "hint": "Nagrzać (piekarnik)"
+      },
+      {
+        "word": "sprinkle",
+        "hint": "Posypać"
+      }
+    ]
+  },
+  {
+    "key": "spices_wb",
+    "name": "Przyprawy",
+    "description": "Słówka związane z przyprawami i ziołami",
+    "iconName": "leaf.arrow.circlepath",
+    "color": "#92400E",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pepper",
+        "hint": "Pieprz"
+      },
+      {
+        "word": "cinnamon",
+        "hint": "Cynamon"
+      },
+      {
+        "word": "vanilla",
+        "hint": "Wanilia"
+      },
+      {
+        "word": "ginger",
+        "hint": "Imbir"
+      },
+      {
+        "word": "nutmeg",
+        "hint": "Gałka muszkatołowa"
+      },
+      {
+        "word": "oregano",
+        "hint": "Oregano"
+      },
+      {
+        "word": "parsley",
+        "hint": "Pietruszka"
+      },
+      {
+        "word": "thyme",
+        "hint": "Tymianek"
+      },
+      {
+        "word": "paprika",
+        "hint": "Papryka (przyprawa)"
+      },
+      {
+        "word": "saffron",
+        "hint": "Szafran"
+      },
+      {
+        "word": "cumin",
+        "hint": "Kminek/kumin"
+      },
+      {
+        "word": "turmeric",
+        "hint": "Kurkuma"
+      },
+      {
+        "word": "cloves",
+        "hint": "Goździki (przyprawa)"
+      },
+      {
+        "word": "basil",
+        "hint": "Bazylia"
+      },
+      {
+        "word": "mustard",
+        "hint": "Musztarda/gorczyca"
+      }
+    ]
+  },
+  {
+    "key": "dairy_wb",
+    "name": "Nabiał",
+    "description": "Słówka związane z produktami mlecznymi",
+    "iconName": "cup.and.saucer.fill",
+    "color": "#FBBF24",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "cheese",
+        "hint": "Ser"
+      },
+      {
+        "word": "butter",
+        "hint": "Masło"
+      },
+      {
+        "word": "cream",
+        "hint": "Śmietana/krem"
+      },
+      {
+        "word": "yogurt",
+        "hint": "Jogurt"
+      },
+      {
+        "word": "cottage",
+        "hint": "Twaróg (cottage cheese)"
+      },
+      {
+        "word": "whey",
+        "hint": "Serwatka"
+      },
+      {
+        "word": "cheddar",
+        "hint": "Cheddar (ser)"
+      },
+      {
+        "word": "gouda",
+        "hint": "Gouda (ser)"
+      },
+      {
+        "word": "ricotta",
+        "hint": "Ricotta (ser)"
+      },
+      {
+        "word": "milkshake",
+        "hint": "Koktajl mleczny"
+      },
+      {
+        "word": "custard",
+        "hint": "Budyń/krem jajeczny"
+      },
+      {
+        "word": "calcium",
+        "hint": "Wapń"
+      },
+      {
+        "word": "skim",
+        "hint": "Odtłuszczone (mleko)"
+      },
+      {
+        "word": "lactose",
+        "hint": "Laktoza"
+      },
+      {
+        "word": "kefir",
+        "hint": "Kefir"
+      }
+    ]
+  },
+  {
+    "key": "meat_wb",
+    "name": "Mięso",
+    "description": "Słówka związane z mięsem i wędlinami",
+    "iconName": "flame.fill",
+    "color": "#B91C1C",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "chicken",
+        "hint": "Kurczak"
+      },
+      {
+        "word": "beef",
+        "hint": "Wołowina"
+      },
+      {
+        "word": "pork",
+        "hint": "Wieprzowina"
+      },
+      {
+        "word": "lamb",
+        "hint": "Jagnięcina/baranina"
+      },
+      {
+        "word": "turkey",
+        "hint": "Indyk"
+      },
+      {
+        "word": "sausage",
+        "hint": "Kiełbasa"
+      },
+      {
+        "word": "steak",
+        "hint": "Stek"
+      },
+      {
+        "word": "bacon",
+        "hint": "Boczek/bekon"
+      },
+      {
+        "word": "thigh",
+        "hint": "Udo (np. kurczaka)"
+      },
+      {
+        "word": "ribs",
+        "hint": "Żeberka"
+      },
+      {
+        "word": "fillet",
+        "hint": "Filet"
+      },
+      {
+        "word": "mince",
+        "hint": "Mięso mielone"
+      },
+      {
+        "word": "venison",
+        "hint": "Dziczyzna"
+      },
+      {
+        "word": "cutlet",
+        "hint": "Kotlet"
+      },
+      {
+        "word": "jerky",
+        "hint": "Suszone mięso"
+      }
+    ]
+  },
+  {
+    "key": "pets_wb",
+    "name": "Zwierzęta domowe",
+    "description": "Słówka związane ze zwierzętami domowymi",
+    "iconName": "pawprint.fill",
+    "color": "#F97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "puppy",
+        "hint": "Szczeniak"
+      },
+      {
+        "word": "kitten",
+        "hint": "Kotek/kociak"
+      },
+      {
+        "word": "hamster",
+        "hint": "Chomik"
+      },
+      {
+        "word": "rabbit",
+        "hint": "Królik"
+      },
+      {
+        "word": "parrot",
+        "hint": "Papuga"
+      },
+      {
+        "word": "turtle",
+        "hint": "Żółw"
+      },
+      {
+        "word": "goldfish",
+        "hint": "Złota rybka"
+      },
+      {
+        "word": "collar",
+        "hint": "Obroża"
+      },
+      {
+        "word": "leash",
+        "hint": "Smycz"
+      },
+      {
+        "word": "kennel",
+        "hint": "Buda (dla psa)"
+      },
+      {
+        "word": "aquarium",
+        "hint": "Akwarium"
+      },
+      {
+        "word": "feeder",
+        "hint": "Karmnik/miska"
+      },
+      {
+        "word": "grooming",
+        "hint": "Pielęgnacja (zwierzęcia)"
+      },
+      {
+        "word": "vaccine",
+        "hint": "Szczepionka"
+      },
+      {
+        "word": "trainer",
+        "hint": "Treser/szkoleniowiec"
+      }
+    ]
+  },
+  {
+    "key": "birds_wb",
+    "name": "Ptaki",
+    "description": "Słówka związane z ptakami",
+    "iconName": "bird.fill",
+    "color": "#0EA5E9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "eagle",
+        "hint": "Orzeł"
+      },
+      {
+        "word": "sparrow",
+        "hint": "Wróbel"
+      },
+      {
+        "word": "pigeon",
+        "hint": "Gołąb"
+      },
+      {
+        "word": "penguin",
+        "hint": "Pingwin"
+      },
+      {
+        "word": "falcon",
+        "hint": "Sokół"
+      },
+      {
+        "word": "owl",
+        "hint": "Sowa"
+      },
+      {
+        "word": "peacock",
+        "hint": "Paw"
+      },
+      {
+        "word": "stork",
+        "hint": "Bocian"
+      },
+      {
+        "word": "swallow",
+        "hint": "Jaskółka"
+      },
+      {
+        "word": "feather",
+        "hint": "Pióro"
+      },
+      {
+        "word": "beak",
+        "hint": "Dziób"
+      },
+      {
+        "word": "nest",
+        "hint": "Gniazdo"
+      },
+      {
+        "word": "robin",
+        "hint": "Rudzik"
+      },
+      {
+        "word": "heron",
+        "hint": "Czapla"
+      },
+      {
+        "word": "crane",
+        "hint": "Żuraw"
+      }
+    ]
+  },
+  {
+    "key": "insects_wb",
+    "name": "Owady",
+    "description": "Słówka związane z owadami i robakami",
+    "iconName": "ant.fill",
+    "color": "#84CC16",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "butterfly",
+        "hint": "Motyl"
+      },
+      {
+        "word": "beetle",
+        "hint": "Chrząszcz/żuk"
+      },
+      {
+        "word": "mosquito",
+        "hint": "Komar"
+      },
+      {
+        "word": "dragonfly",
+        "hint": "Ważka"
+      },
+      {
+        "word": "ladybug",
+        "hint": "Biedronka"
+      },
+      {
+        "word": "cricket",
+        "hint": "Świerszcz"
+      },
+      {
+        "word": "firefly",
+        "hint": "Świetlik"
+      },
+      {
+        "word": "caterpillar",
+        "hint": "Gąsienica"
+      },
+      {
+        "word": "wasp",
+        "hint": "Osa"
+      },
+      {
+        "word": "spider",
+        "hint": "Pająk"
+      },
+      {
+        "word": "cockroach",
+        "hint": "Karaluch"
+      },
+      {
+        "word": "moth",
+        "hint": "Ćma"
+      },
+      {
+        "word": "flea",
+        "hint": "Pchła"
+      },
+      {
+        "word": "larva",
+        "hint": "Larwa"
+      },
+      {
+        "word": "antenna",
+        "hint": "Czułek (owada)"
+      }
+    ]
+  },
+  {
+    "key": "marine_life_wb",
+    "name": "Życie morskie",
+    "description": "Słówka związane z morskimi stworzeniami",
+    "iconName": "fish.fill",
+    "color": "#0369A1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "octopus",
+        "hint": "Ośmiornica"
+      },
+      {
+        "word": "lobster",
+        "hint": "Homar"
+      },
+      {
+        "word": "jellyfish",
+        "hint": "Meduza"
+      },
+      {
+        "word": "starfish",
+        "hint": "Rozgwiazda"
+      },
+      {
+        "word": "shrimp",
+        "hint": "Krewetka"
+      },
+      {
+        "word": "seahorse",
+        "hint": "Konik morski"
+      },
+      {
+        "word": "oyster",
+        "hint": "Ostryga"
+      },
+      {
+        "word": "salmon",
+        "hint": "Łosoś"
+      },
+      {
+        "word": "urchin",
+        "hint": "Jeżowiec"
+      },
+      {
+        "word": "crab",
+        "hint": "Krab"
+      },
+      {
+        "word": "mussel",
+        "hint": "Małż/omułek"
+      },
+      {
+        "word": "clam",
+        "hint": "Małż (muszla)"
+      },
+      {
+        "word": "sardine",
+        "hint": "Sardynka"
+      },
+      {
+        "word": "squid",
+        "hint": "Kałamarnica"
+      },
+      {
+        "word": "tuna",
+        "hint": "Tuńczyk"
+      }
+    ]
+  },
+  {
+    "key": "farm_animals_wb",
+    "name": "Zwierzęta gospodarskie",
+    "description": "Słówka związane ze zwierzętami na farmie",
+    "iconName": "hare.fill",
+    "color": "#A16207",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "rooster",
+        "hint": "Kogut"
+      },
+      {
+        "word": "donkey",
+        "hint": "Osioł"
+      },
+      {
+        "word": "goat",
+        "hint": "Koza"
+      },
+      {
+        "word": "cattle",
+        "hint": "Bydło"
+      },
+      {
+        "word": "stallion",
+        "hint": "Ogier"
+      },
+      {
+        "word": "piglet",
+        "hint": "Prosiak"
+      },
+      {
+        "word": "calf",
+        "hint": "Cielak"
+      },
+      {
+        "word": "foal",
+        "hint": "Źrebak"
+      },
+      {
+        "word": "shepherd",
+        "hint": "Pasterz/owczarek"
+      },
+      {
+        "word": "trough",
+        "hint": "Koryto (dla zwierząt)"
+      },
+      {
+        "word": "barn",
+        "hint": "Stodoła"
+      },
+      {
+        "word": "stable",
+        "hint": "Stajnia"
+      },
+      {
+        "word": "pasture",
+        "hint": "Pastwisko"
+      },
+      {
+        "word": "hen",
+        "hint": "Kura"
+      },
+      {
+        "word": "herd",
+        "hint": "Stado"
+      }
+    ]
+  },
+  {
+    "key": "feelings_wb",
+    "name": "Uczucia",
+    "description": "Słówka opisujące uczucia i stany emocjonalne",
+    "iconName": "heart.fill",
+    "color": "#E11D48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "anxious",
+        "hint": "Niespokojny/zaniepokojony"
+      },
+      {
+        "word": "grateful",
+        "hint": "Wdzięczny"
+      },
+      {
+        "word": "curious",
+        "hint": "Ciekawski/ciekawy"
+      },
+      {
+        "word": "jealous",
+        "hint": "Zazdrosny"
+      },
+      {
+        "word": "relieved",
+        "hint": "Odczuwający ulgę"
+      },
+      {
+        "word": "ashamed",
+        "hint": "Zawstydzony"
+      },
+      {
+        "word": "thrilled",
+        "hint": "Podekscytowany"
+      },
+      {
+        "word": "nostalgic",
+        "hint": "Nostalgiczny"
+      },
+      {
+        "word": "furious",
+        "hint": "Wściekły"
+      },
+      {
+        "word": "confident",
+        "hint": "Pewny siebie"
+      },
+      {
+        "word": "lonely",
+        "hint": "Samotny"
+      },
+      {
+        "word": "hopeful",
+        "hint": "Pełen nadziei"
+      },
+      {
+        "word": "overwhelmed",
+        "hint": "Przytłoczony"
+      },
+      {
+        "word": "content",
+        "hint": "Zadowolony/usatysfakcjonowany"
+      },
+      {
+        "word": "puzzled",
+        "hint": "Zdezorientowany/zdziwiony"
+      }
+    ]
+  },
+  {
+    "key": "personality_wb",
+    "name": "Osobowość",
+    "description": "Słówka opisujące cechy osobowości",
+    "iconName": "person.fill.questionmark",
+    "color": "#7C3AED",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "stubborn",
+        "hint": "Uparty"
+      },
+      {
+        "word": "generous",
+        "hint": "Hojny/szczodry"
+      },
+      {
+        "word": "modest",
+        "hint": "Skromny"
+      },
+      {
+        "word": "patient",
+        "hint": "Cierpliwy"
+      },
+      {
+        "word": "honest",
+        "hint": "Uczciwy"
+      },
+      {
+        "word": "selfish",
+        "hint": "Samolubny"
+      },
+      {
+        "word": "cheerful",
+        "hint": "Pogodny/radosny"
+      },
+      {
+        "word": "reliable",
+        "hint": "Niezawodny/godny zaufania"
+      },
+      {
+        "word": "ambitious",
+        "hint": "Ambitny"
+      },
+      {
+        "word": "grumpy",
+        "hint": "Zrzędliwy"
+      },
+      {
+        "word": "creative",
+        "hint": "Kreatywny"
+      },
+      {
+        "word": "polite",
+        "hint": "Uprzejmy/grzeczny"
+      },
+      {
+        "word": "arrogant",
+        "hint": "Arogancki"
+      },
+      {
+        "word": "devoted",
+        "hint": "Oddany/poświęcony"
+      },
+      {
+        "word": "witty",
+        "hint": "Dowcipny"
+      }
+    ]
+  },
+  {
+    "key": "relationships_wb",
+    "name": "Relacje",
+    "description": "Słówka związane z relacjami międzyludzkimi",
+    "iconName": "person.2.fill",
+    "color": "#DB2777",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "fiancée",
+        "hint": "Narzeczona"
+      },
+      {
+        "word": "spouse",
+        "hint": "Małżonek/małżonka"
+      },
+      {
+        "word": "colleague",
+        "hint": "Kolega z pracy"
+      },
+      {
+        "word": "neighbor",
+        "hint": "Sąsiad"
+      },
+      {
+        "word": "acquaintance",
+        "hint": "Znajomy"
+      },
+      {
+        "word": "sibling",
+        "hint": "Rodzeństwo"
+      },
+      {
+        "word": "couple",
+        "hint": "Para"
+      },
+      {
+        "word": "divorce",
+        "hint": "Rozwód"
+      },
+      {
+        "word": "engaged",
+        "hint": "Zaręczony"
+      },
+      {
+        "word": "trust",
+        "hint": "Zaufanie"
+      },
+      {
+        "word": "conflict",
+        "hint": "Konflikt"
+      },
+      {
+        "word": "affection",
+        "hint": "Uczucie/czułość"
+      },
+      {
+        "word": "bond",
+        "hint": "Więź"
+      },
+      {
+        "word": "loyalty",
+        "hint": "Lojalność"
+      },
+      {
+        "word": "companion",
+        "hint": "Towarzysz/kompan"
+      }
+    ]
+  },
+  {
+    "key": "communication_wb",
+    "name": "Komunikacja",
+    "description": "Słówka związane z komunikacją i rozmową",
+    "iconName": "bubble.left.and.bubble.right.fill",
+    "color": "#0891B2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "explain",
+        "hint": "Wyjaśniać"
+      },
+      {
+        "word": "persuade",
+        "hint": "Przekonywać"
+      },
+      {
+        "word": "argue",
+        "hint": "Kłócić się/dyskutować"
+      },
+      {
+        "word": "whisper",
+        "hint": "Szeptać"
+      },
+      {
+        "word": "announce",
+        "hint": "Ogłaszać"
+      },
+      {
+        "word": "complain",
+        "hint": "Narzekać/skarżyć się"
+      },
+      {
+        "word": "suggest",
+        "hint": "Sugerować"
+      },
+      {
+        "word": "confirm",
+        "hint": "Potwierdzać"
+      },
+      {
+        "word": "interrupt",
+        "hint": "Przerywać (komuś)"
+      },
+      {
+        "word": "greet",
+        "hint": "Pozdrawiać/witać"
+      },
+      {
+        "word": "respond",
+        "hint": "Odpowiadać"
+      },
+      {
+        "word": "negotiate",
+        "hint": "Negocjować"
+      },
+      {
+        "word": "gossip",
+        "hint": "Plotkować"
+      },
+      {
+        "word": "lecture",
+        "hint": "Wykład/pouczać"
+      },
+      {
+        "word": "praise",
+        "hint": "Chwalić/pochwalić"
+      }
+    ]
+  },
+  {
+    "key": "gestures_wb",
+    "name": "Gesty i mowa ciała",
+    "description": "Słówka związane z gestami i mową ciała",
+    "iconName": "hand.wave.fill",
+    "color": "#F59E0B",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "nod",
+        "hint": "Kiwać głową"
+      },
+      {
+        "word": "shrug",
+        "hint": "Wzruszać ramionami"
+      },
+      {
+        "word": "clap",
+        "hint": "Klaskać"
+      },
+      {
+        "word": "frown",
+        "hint": "Marszczyć brwi"
+      },
+      {
+        "word": "wink",
+        "hint": "Mrugać (okiem)"
+      },
+      {
+        "word": "point",
+        "hint": "Wskazywać"
+      },
+      {
+        "word": "bow",
+        "hint": "Kłaniać się"
+      },
+      {
+        "word": "squeeze",
+        "hint": "Ściskać"
+      },
+      {
+        "word": "yawn",
+        "hint": "Ziewać"
+      },
+      {
+        "word": "stretch",
+        "hint": "Rozciągać się"
+      },
+      {
+        "word": "stumble",
+        "hint": "Potknąć się"
+      },
+      {
+        "word": "embrace",
+        "hint": "Obejmować"
+      },
+      {
+        "word": "tremble",
+        "hint": "Drżeć"
+      },
+      {
+        "word": "glance",
+        "hint": "Zerknąć"
+      },
+      {
+        "word": "sigh",
+        "hint": "Wzdychać"
+      }
+    ]
+  },
+  {
+    "key": "architecture_wb",
+    "name": "Architektura",
+    "description": "Słówka związane z architekturą i budynkami",
+    "iconName": "building.2.fill",
+    "color": "#6D28D9",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "column",
+        "hint": "Kolumna"
+      },
+      {
+        "word": "facade",
+        "hint": "Fasada"
+      },
+      {
+        "word": "balcony",
+        "hint": "Balkon"
+      },
+      {
+        "word": "ceiling",
+        "hint": "Sufit"
+      },
+      {
+        "word": "corridor",
+        "hint": "Korytarz"
+      },
+      {
+        "word": "terrace",
+        "hint": "Taras"
+      },
+      {
+        "word": "chimney",
+        "hint": "Komin"
+      },
+      {
+        "word": "dome",
+        "hint": "Kopuła"
+      },
+      {
+        "word": "pillar",
+        "hint": "Filar"
+      },
+      {
+        "word": "staircase",
+        "hint": "Klatka schodowa"
+      },
+      {
+        "word": "attic",
+        "hint": "Strych/poddasze"
+      },
+      {
+        "word": "basement",
+        "hint": "Piwnica"
+      },
+      {
+        "word": "vault",
+        "hint": "Sklepienie"
+      },
+      {
+        "word": "blueprint",
+        "hint": "Plan architektoniczny"
+      },
+      {
+        "word": "foundation",
+        "hint": "Fundament"
+      }
+    ]
+  },
+  {
+    "key": "construction_wb",
+    "name": "Budownictwo",
+    "description": "Słówka związane z budową i remontami",
+    "iconName": "hammer.fill",
+    "color": "#B45309",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "scaffold",
+        "hint": "Rusztowanie"
+      },
+      {
+        "word": "concrete",
+        "hint": "Beton"
+      },
+      {
+        "word": "plaster",
+        "hint": "Tynk/gips"
+      },
+      {
+        "word": "insulate",
+        "hint": "Izolować"
+      },
+      {
+        "word": "crane",
+        "hint": "Dźwig (budowlany)"
+      },
+      {
+        "word": "beam",
+        "hint": "Belka"
+      },
+      {
+        "word": "mortar",
+        "hint": "Zaprawa (murarska)"
+      },
+      {
+        "word": "excavate",
+        "hint": "Wykopywać"
+      },
+      {
+        "word": "foreman",
+        "hint": "Brygadzista/majster"
+      },
+      {
+        "word": "gravel",
+        "hint": "Żwir"
+      },
+      {
+        "word": "cement",
+        "hint": "Cement"
+      },
+      {
+        "word": "demolish",
+        "hint": "Burzyć/rozbierać"
+      },
+      {
+        "word": "rebar",
+        "hint": "Zbrojenie/pręt stalowy"
+      },
+      {
+        "word": "surveyor",
+        "hint": "Geodeta"
+      },
+      {
+        "word": "hardhat",
+        "hint": "Kask ochronny"
+      }
+    ]
+  },
+  {
+    "key": "electricity_wb",
+    "name": "Elektryczność",
+    "description": "Słówka związane z elektrycznością i instalacjami",
+    "iconName": "bolt.fill",
+    "color": "#EAB308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "socket",
+        "hint": "Gniazdko (elektryczne)"
+      },
+      {
+        "word": "voltage",
+        "hint": "Napięcie (elektryczne)"
+      },
+      {
+        "word": "circuit",
+        "hint": "Obwód (elektryczny)"
+      },
+      {
+        "word": "wiring",
+        "hint": "Okablowanie"
+      },
+      {
+        "word": "fuse",
+        "hint": "Bezpiecznik"
+      },
+      {
+        "word": "switch",
+        "hint": "Włącznik/przełącznik"
+      },
+      {
+        "word": "outlet",
+        "hint": "Gniazdo zasilania"
+      },
+      {
+        "word": "current",
+        "hint": "Prąd (elektryczny)"
+      },
+      {
+        "word": "adapter",
+        "hint": "Adapter/przejściówka"
+      },
+      {
+        "word": "battery",
+        "hint": "Bateria/akumulator"
+      },
+      {
+        "word": "charger",
+        "hint": "Ładowarka"
+      },
+      {
+        "word": "generator",
+        "hint": "Generator"
+      },
+      {
+        "word": "surge",
+        "hint": "Przepięcie"
+      },
+      {
+        "word": "meter",
+        "hint": "Licznik (elektryczny)"
+      },
+      {
+        "word": "insulator",
+        "hint": "Izolator"
+      }
+    ]
+  },
+  {
+    "key": "plumbing_wb",
+    "name": "Hydraulika",
+    "description": "Słówka związane z hydrauliką i instalacjami wodnymi",
+    "iconName": "wrench.and.screwdriver.fill",
+    "color": "#475569",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "pipe",
+        "hint": "Rura"
+      },
+      {
+        "word": "valve",
+        "hint": "Zawór"
+      },
+      {
+        "word": "wrench",
+        "hint": "Klucz (narzędzie)"
+      },
+      {
+        "word": "gasket",
+        "hint": "Uszczelka"
+      },
+      {
+        "word": "sealant",
+        "hint": "Uszczelniacz"
+      },
+      {
+        "word": "fixture",
+        "hint": "Armatura"
+      },
+      {
+        "word": "cistern",
+        "hint": "Spłuczka/zbiornik"
+      },
+      {
+        "word": "boiler",
+        "hint": "Bojler/kocioł"
+      },
+      {
+        "word": "overflow",
+        "hint": "Przelew"
+      },
+      {
+        "word": "drainage",
+        "hint": "Drenaż/kanalizacja"
+      },
+      {
+        "word": "solder",
+        "hint": "Lutować"
+      },
+      {
+        "word": "coupling",
+        "hint": "Złączka"
+      },
+      {
+        "word": "elbow",
+        "hint": "Kolanko (rury)"
+      },
+      {
+        "word": "radiator",
+        "hint": "Kaloryfer/grzejnik"
+      },
+      {
+        "word": "spanner",
+        "hint": "Klucz płaski"
+      }
+    ]
+  },
+  {
+    "key": "gardening_tools_wb",
+    "name": "Narzędzia ogrodowe",
+    "description": "Słówka związane z narzędziami ogrodowymi",
+    "iconName": "leaf.circle.fill",
+    "color": "#15803D",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "shovel",
+        "hint": "Łopata"
+      },
+      {
+        "word": "rake",
+        "hint": "Grabie"
+      },
+      {
+        "word": "hose",
+        "hint": "Wąż (ogrodowy)"
+      },
+      {
+        "word": "wheelbarrow",
+        "hint": "Taczka"
+      },
+      {
+        "word": "pruner",
+        "hint": "Sekator"
+      },
+      {
+        "word": "mower",
+        "hint": "Kosiarka"
+      },
+      {
+        "word": "trowel",
+        "hint": "Łopatka (ogrodowa)"
+      },
+      {
+        "word": "edger",
+        "hint": "Nożyce do krawędzi"
+      },
+      {
+        "word": "sprinkler",
+        "hint": "Zraszacz"
+      },
+      {
+        "word": "gloves",
+        "hint": "Rękawice"
+      },
+      {
+        "word": "watering",
+        "hint": "Podlewanie"
+      },
+      {
+        "word": "trimmer",
+        "hint": "Podkaszarka"
+      },
+      {
+        "word": "mulch",
+        "hint": "Ściółka"
+      },
+      {
+        "word": "spade",
+        "hint": "Szpadel"
+      },
+      {
+        "word": "clippers",
+        "hint": "Nożyce ogrodowe"
+      }
+    ]
+  },
+  {
+    "key": "medicine_wb",
+    "name": "Medycyna",
+    "description": "Słówka związane z medycyną i leczeniem",
+    "iconName": "stethoscope",
+    "color": "#DC2626",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "symptom",
+        "hint": "Objaw"
+      },
+      {
+        "word": "surgeon",
+        "hint": "Chirurg"
+      },
+      {
+        "word": "therapy",
+        "hint": "Terapia"
+      },
+      {
+        "word": "diagnosis",
+        "hint": "Diagnoza"
+      },
+      {
+        "word": "antibody",
+        "hint": "Przeciwciało"
+      },
+      {
+        "word": "allergy",
+        "hint": "Alergia"
+      },
+      {
+        "word": "bandage",
+        "hint": "Bandaż/opatrunek"
+      },
+      {
+        "word": "chronic",
+        "hint": "Przewlekły"
+      },
+      {
+        "word": "fracture",
+        "hint": "Złamanie (kości)"
+      },
+      {
+        "word": "infection",
+        "hint": "Infekcja/zakażenie"
+      },
+      {
+        "word": "injection",
+        "hint": "Zastrzyk"
+      },
+      {
+        "word": "transplant",
+        "hint": "Przeszczep"
+      },
+      {
+        "word": "scalpel",
+        "hint": "Skalpel"
+      },
+      {
+        "word": "recovery",
+        "hint": "Rekonwalescencja"
+      },
+      {
+        "word": "checkup",
+        "hint": "Badanie kontrolne"
+      }
+    ]
+  },
+  {
+    "key": "pharmacy_wb",
+    "name": "Apteka",
+    "description": "Słówka związane z apteką i lekami",
+    "iconName": "pills.fill",
+    "color": "#059669",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "tablet",
+        "hint": "Tabletka"
+      },
+      {
+        "word": "capsule",
+        "hint": "Kapsułka"
+      },
+      {
+        "word": "syrup",
+        "hint": "Syrop"
+      },
+      {
+        "word": "ointment",
+        "hint": "Maść"
+      },
+      {
+        "word": "dosage",
+        "hint": "Dawkowanie"
+      },
+      {
+        "word": "aspirin",
+        "hint": "Aspiryna"
+      },
+      {
+        "word": "vitamin",
+        "hint": "Witamina"
+      },
+      {
+        "word": "painkiller",
+        "hint": "Środek przeciwbólowy"
+      },
+      {
+        "word": "antibiotic",
+        "hint": "Antybiotyk"
+      },
+      {
+        "word": "cough",
+        "hint": "Kaszel"
+      },
+      {
+        "word": "inhaler",
+        "hint": "Inhalator"
+      },
+      {
+        "word": "drops",
+        "hint": "Krople"
+      },
+      {
+        "word": "plaster",
+        "hint": "Plaster (opatrunkowy)"
+      },
+      {
+        "word": "cream",
+        "hint": "Krem (leczniczy)"
+      },
+      {
+        "word": "lotion",
+        "hint": "Balsam/płyn"
+      }
+    ]
+  },
+  {
+    "key": "fitness_wb",
+    "name": "Fitness",
+    "description": "Słówka związane z ćwiczeniami i siłownią",
+    "iconName": "dumbbell.fill",
+    "color": "#EA580C",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "treadmill",
+        "hint": "Bieżnia"
+      },
+      {
+        "word": "squat",
+        "hint": "Przysiad"
+      },
+      {
+        "word": "pushup",
+        "hint": "Pompka (ćwiczenie)"
+      },
+      {
+        "word": "warmup",
+        "hint": "Rozgrzewka"
+      },
+      {
+        "word": "plank",
+        "hint": "Deska (ćwiczenie)"
+      },
+      {
+        "word": "cardio",
+        "hint": "Kardio/ćwiczenia aerobowe"
+      },
+      {
+        "word": "dumbbell",
+        "hint": "Hantel"
+      },
+      {
+        "word": "barbell",
+        "hint": "Sztanga"
+      },
+      {
+        "word": "endurance",
+        "hint": "Wytrzymałość"
+      },
+      {
+        "word": "muscle",
+        "hint": "Mięsień"
+      },
+      {
+        "word": "stamina",
+        "hint": "Kondycja/wytrzymałość"
+      },
+      {
+        "word": "routine",
+        "hint": "Plan treningowy"
+      },
+      {
+        "word": "stretch",
+        "hint": "Rozciąganie"
+      },
+      {
+        "word": "lunge",
+        "hint": "Wykrok"
+      },
+      {
+        "word": "crunch",
+        "hint": "Brzuszek (ćwiczenie)"
+      }
+    ]
+  },
+  {
+    "key": "yoga_wb",
+    "name": "Joga",
+    "description": "Słówka związane z jogą i medytacją",
+    "iconName": "figure.mind.and.body",
+    "color": "#8B5CF6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "posture",
+        "hint": "Postawa/pozycja"
+      },
+      {
+        "word": "balance",
+        "hint": "Równowaga"
+      },
+      {
+        "word": "breathe",
+        "hint": "Oddychać"
+      },
+      {
+        "word": "flexible",
+        "hint": "Elastyczny/giętki"
+      },
+      {
+        "word": "mindful",
+        "hint": "Uważny/świadomy"
+      },
+      {
+        "word": "mantra",
+        "hint": "Mantra"
+      },
+      {
+        "word": "chakra",
+        "hint": "Czakra"
+      },
+      {
+        "word": "harmony",
+        "hint": "Harmonia"
+      },
+      {
+        "word": "serenity",
+        "hint": "Spokój/pogoda ducha"
+      },
+      {
+        "word": "inhale",
+        "hint": "Wdech"
+      },
+      {
+        "word": "exhale",
+        "hint": "Wydech"
+      },
+      {
+        "word": "lotus",
+        "hint": "Lotos (pozycja)"
+      },
+      {
+        "word": "healing",
+        "hint": "Uzdrawianie"
+      },
+      {
+        "word": "wellness",
+        "hint": "Dobre samopoczucie"
+      },
+      {
+        "word": "retreat",
+        "hint": "Rekolekcje/wyjazd"
+      }
+    ]
+  },
+  {
+    "key": "mental_health_wb",
+    "name": "Zdrowie psychiczne",
+    "description": "Słówka związane ze zdrowiem psychicznym",
+    "iconName": "brain.head.profile",
+    "color": "#4F46E5",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "therapy",
+        "hint": "Terapia"
+      },
+      {
+        "word": "anxiety",
+        "hint": "Lęk/niepokój"
+      },
+      {
+        "word": "burnout",
+        "hint": "Wypalenie (zawodowe)"
+      },
+      {
+        "word": "mindset",
+        "hint": "Nastawienie/mentalność"
+      },
+      {
+        "word": "trauma",
+        "hint": "Trauma"
+      },
+      {
+        "word": "coping",
+        "hint": "Radzenie sobie"
+      },
+      {
+        "word": "empathy",
+        "hint": "Empatia"
+      },
+      {
+        "word": "insight",
+        "hint": "Wgląd/zrozumienie"
+      },
+      {
+        "word": "relapse",
+        "hint": "Nawrót (choroby)"
+      },
+      {
+        "word": "support",
+        "hint": "Wsparcie"
+      },
+      {
+        "word": "trigger",
+        "hint": "Wyzwalacz/bodziec"
+      },
+      {
+        "word": "journal",
+        "hint": "Dziennik (terapeutyczny)"
+      },
+      {
+        "word": "healing",
+        "hint": "Leczenie/uzdrawianie"
+      },
+      {
+        "word": "boundary",
+        "hint": "Granica (osobista)"
+      },
+      {
+        "word": "resilient",
+        "hint": "Odporny psychicznie"
+      }
+    ]
+  },
+  {
+    "key": "vehicles_wb",
+    "name": "Pojazdy",
+    "description": "Słówka związane z pojazdami i motoryzacją",
+    "iconName": "car.fill",
+    "color": "#3B82F6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "engine",
+        "hint": "Silnik"
+      },
+      {
+        "word": "steering",
+        "hint": "Kierownica/kierowanie"
+      },
+      {
+        "word": "exhaust",
+        "hint": "Wydech/rura wydechowa"
+      },
+      {
+        "word": "bumper",
+        "hint": "Zderzak"
+      },
+      {
+        "word": "windshield",
+        "hint": "Szyba przednia"
+      },
+      {
+        "word": "trunk",
+        "hint": "Bagażnik"
+      },
+      {
+        "word": "dashboard",
+        "hint": "Deska rozdzielcza"
+      },
+      {
+        "word": "headlight",
+        "hint": "Reflektor/światło przednie"
+      },
+      {
+        "word": "mileage",
+        "hint": "Przebieg (kilometrów)"
+      },
+      {
+        "word": "seatbelt",
+        "hint": "Pas bezpieczeństwa"
+      },
+      {
+        "word": "brake",
+        "hint": "Hamulec"
+      },
+      {
+        "word": "clutch",
+        "hint": "Sprzęgło"
+      },
+      {
+        "word": "ignition",
+        "hint": "Zapłon"
+      },
+      {
+        "word": "throttle",
+        "hint": "Przepustnica/gaz"
+      },
+      {
+        "word": "ambulance",
+        "hint": "Karetka pogotowia"
+      }
+    ]
+  },
+  {
+    "key": "aviation_wb",
+    "name": "Lotnictwo",
+    "description": "Słówka związane z lotnictwem i lataniem",
+    "iconName": "airplane",
+    "color": "#0284C7",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "runway",
+        "hint": "Pas startowy"
+      },
+      {
+        "word": "cockpit",
+        "hint": "Kokpit"
+      },
+      {
+        "word": "turbine",
+        "hint": "Turbina"
+      },
+      {
+        "word": "altitude",
+        "hint": "Wysokość (lotu)"
+      },
+      {
+        "word": "landing",
+        "hint": "Lądowanie"
+      },
+      {
+        "word": "takeoff",
+        "hint": "Start (samolotu)"
+      },
+      {
+        "word": "fuselage",
+        "hint": "Kadłub (samolotu)"
+      },
+      {
+        "word": "propeller",
+        "hint": "Śmigło"
+      },
+      {
+        "word": "terminal",
+        "hint": "Terminal (lotniskowy)"
+      },
+      {
+        "word": "boarding",
+        "hint": "Wejście na pokład"
+      },
+      {
+        "word": "hangar",
+        "hint": "Hangar"
+      },
+      {
+        "word": "captain",
+        "hint": "Kapitan (pilot)"
+      },
+      {
+        "word": "steward",
+        "hint": "Steward/stewardessa"
+      },
+      {
+        "word": "cruising",
+        "hint": "Lot na wysokości przelotowej"
+      },
+      {
+        "word": "charter",
+        "hint": "Czarter"
+      }
+    ]
+  },
+  {
+    "key": "shipping_wb",
+    "name": "Żegluga",
+    "description": "Słówka związane z żeglugą i statkami",
+    "iconName": "ferry.fill",
+    "color": "#1D4ED8",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "cargo",
+        "hint": "Ładunek"
+      },
+      {
+        "word": "harbor",
+        "hint": "Port"
+      },
+      {
+        "word": "anchor",
+        "hint": "Kotwica"
+      },
+      {
+        "word": "vessel",
+        "hint": "Statek/jednostka"
+      },
+      {
+        "word": "rudder",
+        "hint": "Ster"
+      },
+      {
+        "word": "freight",
+        "hint": "Fracht/towar"
+      },
+      {
+        "word": "tanker",
+        "hint": "Tankowiec"
+      },
+      {
+        "word": "buoy",
+        "hint": "Boja"
+      },
+      {
+        "word": "lifeboat",
+        "hint": "Szalupa ratunkowa"
+      },
+      {
+        "word": "stern",
+        "hint": "Rufa"
+      },
+      {
+        "word": "compass",
+        "hint": "Kompas"
+      },
+      {
+        "word": "maritime",
+        "hint": "Morski"
+      },
+      {
+        "word": "dock",
+        "hint": "Dok/nabrzeże"
+      },
+      {
+        "word": "navigator",
+        "hint": "Nawigator"
+      },
+      {
+        "word": "tugboat",
+        "hint": "Holownik"
+      }
+    ]
+  },
+  {
+    "key": "cycling_wb",
+    "name": "Kolarstwo",
+    "description": "Słówka związane z jazdą na rowerze",
+    "iconName": "bicycle",
+    "color": "#65A30D",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "pedal",
+        "hint": "Pedał"
+      },
+      {
+        "word": "helmet",
+        "hint": "Kask"
+      },
+      {
+        "word": "wheel",
+        "hint": "Koło"
+      },
+      {
+        "word": "saddle",
+        "hint": "Siodełko"
+      },
+      {
+        "word": "chain",
+        "hint": "Łańcuch (rowerowy)"
+      },
+      {
+        "word": "spoke",
+        "hint": "Szprycha"
+      },
+      {
+        "word": "handlebars",
+        "hint": "Kierownica (roweru)"
+      },
+      {
+        "word": "gear",
+        "hint": "Bieg/przerzutka"
+      },
+      {
+        "word": "tire",
+        "hint": "Opona"
+      },
+      {
+        "word": "trail",
+        "hint": "Ścieżka/szlak"
+      },
+      {
+        "word": "pump",
+        "hint": "Pompka"
+      },
+      {
+        "word": "fender",
+        "hint": "Błotnik"
+      },
+      {
+        "word": "sprint",
+        "hint": "Sprint"
+      },
+      {
+        "word": "downhill",
+        "hint": "Zjazd/w dół"
+      },
+      {
+        "word": "marathon",
+        "hint": "Maraton"
+      }
+    ]
+  },
+  {
+    "key": "trains_wb",
+    "name": "Kolej",
+    "description": "Słówka związane z koleją i podróżami pociągiem",
+    "iconName": "tram.fill",
+    "color": "#DC2626",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "platform",
+        "hint": "Peron"
+      },
+      {
+        "word": "station",
+        "hint": "Stacja/dworzec"
+      },
+      {
+        "word": "carriage",
+        "hint": "Wagon"
+      },
+      {
+        "word": "express",
+        "hint": "Ekspres (pociąg)"
+      },
+      {
+        "word": "schedule",
+        "hint": "Rozkład jazdy"
+      },
+      {
+        "word": "railway",
+        "hint": "Kolej/szyny"
+      },
+      {
+        "word": "ticket",
+        "hint": "Bilet"
+      },
+      {
+        "word": "conductor",
+        "hint": "Konduktor"
+      },
+      {
+        "word": "sleeper",
+        "hint": "Wagon sypialny"
+      },
+      {
+        "word": "tunnel",
+        "hint": "Tunel"
+      },
+      {
+        "word": "crossing",
+        "hint": "Przejazd (kolejowy)"
+      },
+      {
+        "word": "commuter",
+        "hint": "Osoba dojeżdżająca"
+      },
+      {
+        "word": "freight",
+        "hint": "Pociąg towarowy"
+      },
+      {
+        "word": "junction",
+        "hint": "Węzeł kolejowy"
+      },
+      {
+        "word": "departure",
+        "hint": "Odjazd"
+      }
+    ]
+  },
+  {
+    "key": "mathematics_wb",
+    "name": "Matematyka",
+    "description": "Słówka związane z matematyką",
+    "iconName": "function",
+    "color": "#2563EB",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "equation",
+        "hint": "Równanie"
+      },
+      {
+        "word": "fraction",
+        "hint": "Ułamek"
+      },
+      {
+        "word": "decimal",
+        "hint": "Dziesiętny"
+      },
+      {
+        "word": "algebra",
+        "hint": "Algebra"
+      },
+      {
+        "word": "theorem",
+        "hint": "Twierdzenie"
+      },
+      {
+        "word": "formula",
+        "hint": "Formuła/wzór"
+      },
+      {
+        "word": "integer",
+        "hint": "Liczba całkowita"
+      },
+      {
+        "word": "diagonal",
+        "hint": "Przekątna"
+      },
+      {
+        "word": "radius",
+        "hint": "Promień"
+      },
+      {
+        "word": "average",
+        "hint": "Średnia"
+      },
+      {
+        "word": "subtract",
+        "hint": "Odejmować"
+      },
+      {
+        "word": "multiply",
+        "hint": "Mnożyć"
+      },
+      {
+        "word": "exponent",
+        "hint": "Wykładnik/potęga"
+      },
+      {
+        "word": "parallel",
+        "hint": "Równoległy"
+      },
+      {
+        "word": "symmetry",
+        "hint": "Symetria"
+      }
+    ]
+  },
+  {
+    "key": "physics_wb",
+    "name": "Fizyka",
+    "description": "Słówka związane z fizyką",
+    "iconName": "atom",
+    "color": "#7C3AED",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "velocity",
+        "hint": "Prędkość"
+      },
+      {
+        "word": "friction",
+        "hint": "Tarcie"
+      },
+      {
+        "word": "momentum",
+        "hint": "Pęd"
+      },
+      {
+        "word": "photon",
+        "hint": "Foton"
+      },
+      {
+        "word": "proton",
+        "hint": "Proton"
+      },
+      {
+        "word": "neutron",
+        "hint": "Neutron"
+      },
+      {
+        "word": "magnet",
+        "hint": "Magnes"
+      },
+      {
+        "word": "inertia",
+        "hint": "Bezwładność"
+      },
+      {
+        "word": "spectrum",
+        "hint": "Widmo/spektrum"
+      },
+      {
+        "word": "density",
+        "hint": "Gęstość"
+      },
+      {
+        "word": "thermal",
+        "hint": "Cieplny/termiczny"
+      },
+      {
+        "word": "pressure",
+        "hint": "Ciśnienie"
+      },
+      {
+        "word": "particle",
+        "hint": "Cząstka"
+      },
+      {
+        "word": "quantum",
+        "hint": "Kwant/kwantowy"
+      },
+      {
+        "word": "prism",
+        "hint": "Pryzmat"
+      }
+    ]
+  },
+  {
+    "key": "chemistry_wb",
+    "name": "Chemia",
+    "description": "Słówka związane z chemią",
+    "iconName": "flask.fill",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "molecule",
+        "hint": "Cząsteczka"
+      },
+      {
+        "word": "compound",
+        "hint": "Związek (chemiczny)"
+      },
+      {
+        "word": "element",
+        "hint": "Pierwiastek"
+      },
+      {
+        "word": "catalyst",
+        "hint": "Katalizator"
+      },
+      {
+        "word": "solvent",
+        "hint": "Rozpuszczalnik"
+      },
+      {
+        "word": "crystal",
+        "hint": "Kryształ"
+      },
+      {
+        "word": "reagent",
+        "hint": "Odczynnik"
+      },
+      {
+        "word": "isotope",
+        "hint": "Izotop"
+      },
+      {
+        "word": "enzyme",
+        "hint": "Enzym"
+      },
+      {
+        "word": "polymer",
+        "hint": "Polimer"
+      },
+      {
+        "word": "solution",
+        "hint": "Roztwór"
+      },
+      {
+        "word": "oxidize",
+        "hint": "Utleniać"
+      },
+      {
+        "word": "formula",
+        "hint": "Wzór (chemiczny)"
+      },
+      {
+        "word": "electron",
+        "hint": "Elektron"
+      },
+      {
+        "word": "titration",
+        "hint": "Miareczkowanie"
+      }
+    ]
+  },
+  {
+    "key": "biology_wb",
+    "name": "Biologia",
+    "description": "Słówka związane z biologią i przyrodą",
+    "iconName": "leaf.fill",
+    "color": "#16A34A",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "nucleus",
+        "hint": "Jądro (komórkowe)"
+      },
+      {
+        "word": "habitat",
+        "hint": "Siedlisko"
+      },
+      {
+        "word": "species",
+        "hint": "Gatunek"
+      },
+      {
+        "word": "organism",
+        "hint": "Organizm"
+      },
+      {
+        "word": "membrane",
+        "hint": "Błona (komórkowa)"
+      },
+      {
+        "word": "mutation",
+        "hint": "Mutacja"
+      },
+      {
+        "word": "protein",
+        "hint": "Białko/proteina"
+      },
+      {
+        "word": "bacteria",
+        "hint": "Bakterie"
+      },
+      {
+        "word": "microbe",
+        "hint": "Drobnoustrój"
+      },
+      {
+        "word": "parasite",
+        "hint": "Pasożyt"
+      },
+      {
+        "word": "predator",
+        "hint": "Drapieżnik"
+      },
+      {
+        "word": "heredity",
+        "hint": "Dziedziczność"
+      },
+      {
+        "word": "cellular",
+        "hint": "Komórkowy"
+      },
+      {
+        "word": "toxin",
+        "hint": "Toksyna"
+      },
+      {
+        "word": "fossil",
+        "hint": "Skamielina/skamieniałość"
+      }
+    ]
+  },
+  {
+    "key": "science_wb",
+    "name": "Nauka ogólna",
+    "description": "Ogólne słówka naukowe i badawcze",
+    "iconName": "lightbulb.fill",
+    "color": "#D97706",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "research",
+        "hint": "Badania/badanie"
+      },
+      {
+        "word": "experiment",
+        "hint": "Eksperyment"
+      },
+      {
+        "word": "data",
+        "hint": "Dane"
+      },
+      {
+        "word": "theory",
+        "hint": "Teoria"
+      },
+      {
+        "word": "method",
+        "hint": "Metoda"
+      },
+      {
+        "word": "observe",
+        "hint": "Obserwować"
+      },
+      {
+        "word": "analyze",
+        "hint": "Analizować"
+      },
+      {
+        "word": "evidence",
+        "hint": "Dowód"
+      },
+      {
+        "word": "discovery",
+        "hint": "Odkrycie"
+      },
+      {
+        "word": "sample",
+        "hint": "Próbka"
+      },
+      {
+        "word": "conclude",
+        "hint": "Wnioskować/konkludować"
+      },
+      {
+        "word": "predict",
+        "hint": "Przewidywać"
+      },
+      {
+        "word": "variable",
+        "hint": "Zmienna"
+      },
+      {
+        "word": "measure",
+        "hint": "Mierzyć"
+      },
+      {
+        "word": "classify",
+        "hint": "Klasyfikować"
+      }
+    ]
+  },
+  {
+    "key": "festivals_wb",
+    "name": "Festiwale",
+    "description": "Słówka związane z festiwalami i imprezami masowymi",
+    "iconName": "party.popper.fill",
+    "color": "#E11D48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "concert",
+        "hint": "Koncert"
+      },
+      {
+        "word": "crowd",
+        "hint": "Tłum"
+      },
+      {
+        "word": "performer",
+        "hint": "Wykonawca/artysta"
+      },
+      {
+        "word": "parade",
+        "hint": "Parada/pochód"
+      },
+      {
+        "word": "carnival",
+        "hint": "Karnawał"
+      },
+      {
+        "word": "fireworks",
+        "hint": "Fajerwerki/sztuczne ognie"
+      },
+      {
+        "word": "costume",
+        "hint": "Kostium/przebranie"
+      },
+      {
+        "word": "tent",
+        "hint": "Namiot (festiwalowy)"
+      },
+      {
+        "word": "lineup",
+        "hint": "Program (występów)"
+      },
+      {
+        "word": "vendor",
+        "hint": "Sprzedawca/stoisko"
+      },
+      {
+        "word": "marquee",
+        "hint": "Wielki namiot/markiza"
+      },
+      {
+        "word": "confetti",
+        "hint": "Konfetti"
+      },
+      {
+        "word": "lantern",
+        "hint": "Lampion"
+      },
+      {
+        "word": "outdoor",
+        "hint": "Na wolnym powietrzu"
+      },
+      {
+        "word": "souvenir",
+        "hint": "Pamiątka"
+      }
+    ]
+  },
+  {
+    "key": "traditions_wb",
+    "name": "Tradycje",
+    "description": "Słówka związane z tradycjami i zwyczajami",
+    "iconName": "book.closed.fill",
+    "color": "#92400E",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "custom",
+        "hint": "Zwyczaj"
+      },
+      {
+        "word": "heritage",
+        "hint": "Dziedzictwo"
+      },
+      {
+        "word": "ritual",
+        "hint": "Rytuał"
+      },
+      {
+        "word": "folklore",
+        "hint": "Folklor"
+      },
+      {
+        "word": "ancestor",
+        "hint": "Przodek"
+      },
+      {
+        "word": "ceremony",
+        "hint": "Ceremonia"
+      },
+      {
+        "word": "legend",
+        "hint": "Legenda"
+      },
+      {
+        "word": "blessing",
+        "hint": "Błogosławieństwo"
+      },
+      {
+        "word": "feast",
+        "hint": "Uczta"
+      },
+      {
+        "word": "craft",
+        "hint": "Rzemiosło"
+      },
+      {
+        "word": "anthem",
+        "hint": "Hymn"
+      },
+      {
+        "word": "proverb",
+        "hint": "Przysłowie"
+      },
+      {
+        "word": "symbol",
+        "hint": "Symbol"
+      },
+      {
+        "word": "costume",
+        "hint": "Strój ludowy"
+      },
+      {
+        "word": "memorial",
+        "hint": "Pomnik/upamiętnienie"
+      }
+    ]
+  },
+  {
+    "key": "weddings_wb",
+    "name": "Wesela",
+    "description": "Słówka związane z weselami i ślubami",
+    "iconName": "heart.circle.fill",
+    "color": "#BE185D",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ceremony",
+        "hint": "Ceremonia (ślubna)"
+      },
+      {
+        "word": "bouquet",
+        "hint": "Bukiet"
+      },
+      {
+        "word": "groom",
+        "hint": "Pan młody"
+      },
+      {
+        "word": "bride",
+        "hint": "Panna młoda"
+      },
+      {
+        "word": "veil",
+        "hint": "Welon"
+      },
+      {
+        "word": "toast",
+        "hint": "Toast (wznoszenie)"
+      },
+      {
+        "word": "reception",
+        "hint": "Przyjęcie weselne"
+      },
+      {
+        "word": "honeymoon",
+        "hint": "Miesiąc miodowy"
+      },
+      {
+        "word": "bridesmaid",
+        "hint": "Druhna"
+      },
+      {
+        "word": "tuxedo",
+        "hint": "Smoking"
+      },
+      {
+        "word": "vows",
+        "hint": "Przysięga (ślubna)"
+      },
+      {
+        "word": "chapel",
+        "hint": "Kaplica"
+      },
+      {
+        "word": "registry",
+        "hint": "Rejestr/księga (ślubów)"
+      },
+      {
+        "word": "garland",
+        "hint": "Girlanda"
+      },
+      {
+        "word": "invitation",
+        "hint": "Zaproszenie"
+      }
+    ]
+  },
+  {
+    "key": "holidays_wb",
+    "name": "Święta",
+    "description": "Słówka związane ze świętami i dniami wolnymi",
+    "iconName": "gift.fill",
+    "color": "#DC2626",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "present",
+        "hint": "Prezent"
+      },
+      {
+        "word": "candle",
+        "hint": "Świeczka"
+      },
+      {
+        "word": "ornament",
+        "hint": "Ozdoba"
+      },
+      {
+        "word": "wreath",
+        "hint": "Wieniec"
+      },
+      {
+        "word": "stocking",
+        "hint": "Skarpeta (na prezenty)"
+      },
+      {
+        "word": "chimney",
+        "hint": "Komin"
+      },
+      {
+        "word": "carol",
+        "hint": "Kolęda"
+      },
+      {
+        "word": "reindeer",
+        "hint": "Renifer"
+      },
+      {
+        "word": "mistletoe",
+        "hint": "Jemioła"
+      },
+      {
+        "word": "sleigh",
+        "hint": "Sanie"
+      },
+      {
+        "word": "tinsel",
+        "hint": "Łańcuch (bożonarodzeniowy)"
+      },
+      {
+        "word": "festive",
+        "hint": "Świąteczny"
+      },
+      {
+        "word": "gingerbread",
+        "hint": "Piernik"
+      },
+      {
+        "word": "eggnog",
+        "hint": "Ajerkoniak"
+      },
+      {
+        "word": "nutcracker",
+        "hint": "Dziadek do orzechów"
+      }
+    ]
+  },
+  {
+    "key": "celebrations_wb",
+    "name": "Uroczystości",
+    "description": "Słówka związane z przyjęciami i świętowaniem",
+    "iconName": "sparkles",
+    "color": "#F59E0B",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "birthday",
+        "hint": "Urodziny"
+      },
+      {
+        "word": "balloon",
+        "hint": "Balon"
+      },
+      {
+        "word": "surprise",
+        "hint": "Niespodzianka"
+      },
+      {
+        "word": "candles",
+        "hint": "Świeczki (na torcie)"
+      },
+      {
+        "word": "ribbon",
+        "hint": "Wstążka"
+      },
+      {
+        "word": "cheers",
+        "hint": "Na zdrowie!/okrzyki"
+      },
+      {
+        "word": "greeting",
+        "hint": "Pozdrowienie/życzenia"
+      },
+      {
+        "word": "anniversary",
+        "hint": "Rocznica"
+      },
+      {
+        "word": "confetti",
+        "hint": "Konfetti"
+      },
+      {
+        "word": "streamer",
+        "hint": "Serpentyna"
+      },
+      {
+        "word": "banner",
+        "hint": "Baner/transparent"
+      },
+      {
+        "word": "toast",
+        "hint": "Toast"
+      },
+      {
+        "word": "reunion",
+        "hint": "Zjazd/spotkanie"
+      },
+      {
+        "word": "applause",
+        "hint": "Brawa/aplauz"
+      },
+      {
+        "word": "milestone",
+        "hint": "Kamień milowy/ważne wydarzenie"
+      }
+    ]
+  },
+  {
+    "key": "fashion_wb",
+    "name": "Moda",
+    "description": "Słówka związane z modą i stylem",
+    "iconName": "tshirt.fill",
+    "color": "#EC4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "designer",
+        "hint": "Projektant"
+      },
+      {
+        "word": "runway",
+        "hint": "Wybieg (moda)"
+      },
+      {
+        "word": "trend",
+        "hint": "Trend/moda"
+      },
+      {
+        "word": "vintage",
+        "hint": "Vintage/retro"
+      },
+      {
+        "word": "elegant",
+        "hint": "Elegancki"
+      },
+      {
+        "word": "outfit",
+        "hint": "Strój/zestaw ubrań"
+      },
+      {
+        "word": "wardrobe",
+        "hint": "Garderoba"
+      },
+      {
+        "word": "tailored",
+        "hint": "Szyty na miarę"
+      },
+      {
+        "word": "boutique",
+        "hint": "Butik"
+      },
+      {
+        "word": "accessory",
+        "hint": "Dodatek/akcesorium"
+      },
+      {
+        "word": "casual",
+        "hint": "Swobodny/codzienny"
+      },
+      {
+        "word": "formal",
+        "hint": "Formalny/elegancki"
+      },
+      {
+        "word": "haute",
+        "hint": "Wysoka (moda)"
+      },
+      {
+        "word": "couture",
+        "hint": "Krawiectwo (haute couture)"
+      },
+      {
+        "word": "seasonal",
+        "hint": "Sezonowy"
+      }
+    ]
+  },
+  {
+    "key": "textiles_wb",
+    "name": "Tkaniny",
+    "description": "Słówka związane z tkaninami i materiałami",
+    "iconName": "square.stack.fill",
+    "color": "#A16207",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "cotton",
+        "hint": "Bawełna"
+      },
+      {
+        "word": "silk",
+        "hint": "Jedwab"
+      },
+      {
+        "word": "wool",
+        "hint": "Wełna"
+      },
+      {
+        "word": "linen",
+        "hint": "Len"
+      },
+      {
+        "word": "velvet",
+        "hint": "Aksamit"
+      },
+      {
+        "word": "denim",
+        "hint": "Dżins/denim"
+      },
+      {
+        "word": "leather",
+        "hint": "Skóra (materiał)"
+      },
+      {
+        "word": "suede",
+        "hint": "Zamsz"
+      },
+      {
+        "word": "satin",
+        "hint": "Satyna"
+      },
+      {
+        "word": "chiffon",
+        "hint": "Szyfon"
+      },
+      {
+        "word": "flannel",
+        "hint": "Flanela"
+      },
+      {
+        "word": "tweed",
+        "hint": "Tweed"
+      },
+      {
+        "word": "polyester",
+        "hint": "Poliester"
+      },
+      {
+        "word": "cashmere",
+        "hint": "Kaszmir"
+      },
+      {
+        "word": "corduroy",
+        "hint": "Sztruks"
+      }
+    ]
+  },
+  {
+    "key": "jewelry_wb",
+    "name": "Biżuteria",
+    "description": "Słówka związane z biżuterią i klejnotami",
+    "iconName": "diamond.fill",
+    "color": "#6366F1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "necklace",
+        "hint": "Naszyjnik"
+      },
+      {
+        "word": "bracelet",
+        "hint": "Bransoletka"
+      },
+      {
+        "word": "earring",
+        "hint": "Kolczyk"
+      },
+      {
+        "word": "pendant",
+        "hint": "Wisiorek"
+      },
+      {
+        "word": "diamond",
+        "hint": "Diament"
+      },
+      {
+        "word": "emerald",
+        "hint": "Szmaragd"
+      },
+      {
+        "word": "sapphire",
+        "hint": "Szafir"
+      },
+      {
+        "word": "ruby",
+        "hint": "Rubin"
+      },
+      {
+        "word": "pearl",
+        "hint": "Perła"
+      },
+      {
+        "word": "brooch",
+        "hint": "Broszka"
+      },
+      {
+        "word": "clasp",
+        "hint": "Zapięcie"
+      },
+      {
+        "word": "carat",
+        "hint": "Karat"
+      },
+      {
+        "word": "platinum",
+        "hint": "Platyna"
+      },
+      {
+        "word": "gemstone",
+        "hint": "Kamień szlachetny"
+      },
+      {
+        "word": "engrave",
+        "hint": "Grawerować"
+      }
+    ]
+  },
+  {
+    "key": "cosmetics_wb",
+    "name": "Kosmetyki",
+    "description": "Słówka związane z kosmetykami i pielęgnacją",
+    "iconName": "paintbrush.fill",
+    "color": "#F43F5E",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "lipstick",
+        "hint": "Szminka"
+      },
+      {
+        "word": "mascara",
+        "hint": "Tusz do rzęs"
+      },
+      {
+        "word": "blush",
+        "hint": "Róż (do policzków)"
+      },
+      {
+        "word": "concealer",
+        "hint": "Korektor"
+      },
+      {
+        "word": "eye shadow",
+        "hint": "Cień do powiek"
+      },
+      {
+        "word": "primer",
+        "hint": "Baza (pod makijaż)"
+      },
+      {
+        "word": "bronzer",
+        "hint": "Bronzer"
+      },
+      {
+        "word": "moisturizer",
+        "hint": "Nawilżacz/krem nawilżający"
+      },
+      {
+        "word": "cleanser",
+        "hint": "Płyn oczyszczający"
+      },
+      {
+        "word": "toner",
+        "hint": "Tonik (do twarzy)"
+      },
+      {
+        "word": "serum",
+        "hint": "Serum"
+      },
+      {
+        "word": "exfoliate",
+        "hint": "Złuszczać/peeling"
+      },
+      {
+        "word": "sunscreen",
+        "hint": "Krem z filtrem"
+      },
+      {
+        "word": "fragrance",
+        "hint": "Zapach/perfumy"
+      },
+      {
+        "word": "compact",
+        "hint": "Puderniczka"
+      }
+    ]
+  },
+  {
+    "key": "hairstyles_wb",
+    "name": "Fryzury",
+    "description": "Słówka związane z fryzurami i włosami",
+    "iconName": "scissors",
+    "color": "#D946EF",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "ponytail",
+        "hint": "Kucyk (fryzura)"
+      },
+      {
+        "word": "braid",
+        "hint": "Warkocz"
+      },
+      {
+        "word": "bangs",
+        "hint": "Grzywka"
+      },
+      {
+        "word": "curls",
+        "hint": "Loki"
+      },
+      {
+        "word": "highlights",
+        "hint": "Pasemka (włosy)"
+      },
+      {
+        "word": "layers",
+        "hint": "Cieniowanie (włosów)"
+      },
+      {
+        "word": "blowdry",
+        "hint": "Suszenie (włosów)"
+      },
+      {
+        "word": "trim",
+        "hint": "Podcinanie (końcówek)"
+      },
+      {
+        "word": "fringe",
+        "hint": "Grzywka"
+      },
+      {
+        "word": "updo",
+        "hint": "Upięcie"
+      },
+      {
+        "word": "dye",
+        "hint": "Farbować"
+      },
+      {
+        "word": "roots",
+        "hint": "Odrosty"
+      },
+      {
+        "word": "conditioner",
+        "hint": "Odżywka (do włosów)"
+      },
+      {
+        "word": "stylist",
+        "hint": "Stylistka/fryzjer"
+      },
+      {
+        "word": "parting",
+        "hint": "Przedziałek"
+      }
+    ]
+  },
+  {
+    "key": "environment_wb",
+    "name": "Środowisko",
+    "description": "Słówka związane ze środowiskiem naturalnym",
+    "iconName": "globe.americas.fill",
+    "color": "#059669",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ecosystem",
+        "hint": "Ekosystem"
+      },
+      {
+        "word": "pollution",
+        "hint": "Zanieczyszczenie"
+      },
+      {
+        "word": "wildlife",
+        "hint": "Dzika przyroda"
+      },
+      {
+        "word": "rainforest",
+        "hint": "Las deszczowy"
+      },
+      {
+        "word": "wetland",
+        "hint": "Mokradło/teren podmokły"
+      },
+      {
+        "word": "biodiversity",
+        "hint": "Bioróżnorodność"
+      },
+      {
+        "word": "drought",
+        "hint": "Susza"
+      },
+      {
+        "word": "erosion",
+        "hint": "Erozja"
+      },
+      {
+        "word": "habitat",
+        "hint": "Siedlisko/biotop"
+      },
+      {
+        "word": "ozone",
+        "hint": "Ozon"
+      },
+      {
+        "word": "emission",
+        "hint": "Emisja"
+      },
+      {
+        "word": "deforestation",
+        "hint": "Wylesianie"
+      },
+      {
+        "word": "extinct",
+        "hint": "Wymarły"
+      },
+      {
+        "word": "conservation",
+        "hint": "Ochrona (przyrody)"
+      },
+      {
+        "word": "compost",
+        "hint": "Kompost"
+      }
+    ]
+  },
+  {
+    "key": "recycling_wb",
+    "name": "Recykling",
+    "description": "Słówka związane z recyklingiem i odpadami",
+    "iconName": "arrow.3.trianglepath",
+    "color": "#16A34A",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "recycle",
+        "hint": "Recyklingować/przetwarzać"
+      },
+      {
+        "word": "landfill",
+        "hint": "Wysypisko śmieci"
+      },
+      {
+        "word": "sorting",
+        "hint": "Segregowanie"
+      },
+      {
+        "word": "plastic",
+        "hint": "Plastik"
+      },
+      {
+        "word": "cardboard",
+        "hint": "Karton/tektura"
+      },
+      {
+        "word": "container",
+        "hint": "Pojemnik"
+      },
+      {
+        "word": "compost",
+        "hint": "Kompost"
+      },
+      {
+        "word": "waste",
+        "hint": "Odpady/śmieci"
+      },
+      {
+        "word": "reusable",
+        "hint": "Wielorazowy"
+      },
+      {
+        "word": "organic",
+        "hint": "Organiczny"
+      },
+      {
+        "word": "disposal",
+        "hint": "Utylizacja/usuwanie"
+      },
+      {
+        "word": "aluminum",
+        "hint": "Aluminium"
+      },
+      {
+        "word": "scrap",
+        "hint": "Złom"
+      },
+      {
+        "word": "textile",
+        "hint": "Tekstylia (odpady)"
+      },
+      {
+        "word": "refill",
+        "hint": "Ponowne napełnienie"
+      }
+    ]
+  },
+  {
+    "key": "energy_wb",
+    "name": "Energia",
+    "description": "Słówka związane z energią i zasilaniem",
+    "iconName": "bolt.circle.fill",
+    "color": "#EAB308",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "solar",
+        "hint": "Słoneczny (panel)"
+      },
+      {
+        "word": "nuclear",
+        "hint": "Nuklearny/jądrowy"
+      },
+      {
+        "word": "turbine",
+        "hint": "Turbina"
+      },
+      {
+        "word": "fossil",
+        "hint": "Kopalny (paliwo)"
+      },
+      {
+        "word": "windmill",
+        "hint": "Wiatrak"
+      },
+      {
+        "word": "biomass",
+        "hint": "Biomasa"
+      },
+      {
+        "word": "thermal",
+        "hint": "Cieplny"
+      },
+      {
+        "word": "voltage",
+        "hint": "Napięcie"
+      },
+      {
+        "word": "kilowatt",
+        "hint": "Kilowat"
+      },
+      {
+        "word": "reactor",
+        "hint": "Reaktor"
+      },
+      {
+        "word": "substation",
+        "hint": "Podstacja"
+      },
+      {
+        "word": "geothermal",
+        "hint": "Geotermalny"
+      },
+      {
+        "word": "renewable",
+        "hint": "Odnawialny"
+      },
+      {
+        "word": "blackout",
+        "hint": "Zaciemnienie/przerwa w prądzie"
+      },
+      {
+        "word": "hydrogen",
+        "hint": "Wodór"
+      }
+    ]
+  },
+  {
+    "key": "climate_wb",
+    "name": "Klimat",
+    "description": "Słówka związane z klimatem i zmianami klimatycznymi",
+    "iconName": "thermometer.sun.fill",
+    "color": "#F97316",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "warming",
+        "hint": "Ocieplanie"
+      },
+      {
+        "word": "carbon",
+        "hint": "Węgiel/dwutlenek węgla"
+      },
+      {
+        "word": "greenhouse",
+        "hint": "Cieplarnia/efekt cieplarniany"
+      },
+      {
+        "word": "icecap",
+        "hint": "Czapa lodowa"
+      },
+      {
+        "word": "methane",
+        "hint": "Metan"
+      },
+      {
+        "word": "flooding",
+        "hint": "Powódź/zalanie"
+      },
+      {
+        "word": "monsoon",
+        "hint": "Monsun"
+      },
+      {
+        "word": "tropical",
+        "hint": "Tropikalny"
+      },
+      {
+        "word": "arctic",
+        "hint": "Arktyczny"
+      },
+      {
+        "word": "humidity",
+        "hint": "Wilgotność"
+      },
+      {
+        "word": "forecast",
+        "hint": "Prognoza (pogody)"
+      },
+      {
+        "word": "cyclone",
+        "hint": "Cyklon"
+      },
+      {
+        "word": "heatwave",
+        "hint": "Fala upałów"
+      },
+      {
+        "word": "migration",
+        "hint": "Migracja (klimatyczna)"
+      },
+      {
+        "word": "adaptation",
+        "hint": "Adaptacja/przystosowanie"
+      }
+    ]
+  },
+  {
+    "key": "sustainability_wb",
+    "name": "Zrównoważony rozwój",
+    "description": "Słówka związane ze zrównoważonym rozwojem",
+    "iconName": "leaf.arrow.circlepath",
+    "color": "#15803D",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ethical",
+        "hint": "Etyczny"
+      },
+      {
+        "word": "footprint",
+        "hint": "Ślad (ekologiczny)"
+      },
+      {
+        "word": "impact",
+        "hint": "Wpływ"
+      },
+      {
+        "word": "offset",
+        "hint": "Kompensacja (emisji)"
+      },
+      {
+        "word": "organic",
+        "hint": "Ekologiczny/organiczny"
+      },
+      {
+        "word": "local",
+        "hint": "Lokalny"
+      },
+      {
+        "word": "vegan",
+        "hint": "Wegański"
+      },
+      {
+        "word": "ecofriendly",
+        "hint": "Przyjazny środowisku"
+      },
+      {
+        "word": "upcycle",
+        "hint": "Przerabiać na coś lepszego"
+      },
+      {
+        "word": "biomass",
+        "hint": "Biomasa"
+      },
+      {
+        "word": "fairtrade",
+        "hint": "Sprawiedliwy handel"
+      },
+      {
+        "word": "reforest",
+        "hint": "Ponowne zalesianie"
+      },
+      {
+        "word": "threshold",
+        "hint": "Próg/granica"
+      },
+      {
+        "word": "stewardship",
+        "hint": "Zarządzanie/opieka"
+      },
+      {
+        "word": "mindful",
+        "hint": "Świadomy/uważny"
+      }
+    ]
   }
 ]

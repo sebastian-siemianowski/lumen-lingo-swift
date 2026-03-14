@@ -2098,5 +2098,4905 @@
         "hint": "アルミニウム"
       }
     ]
+  },
+  {
+    "key": "daily_routine_wb",
+    "name": "日課",
+    "description": "毎日の習慣に関する英語を覚えよう",
+    "iconName": "sunrise",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "breakfast",
+        "hint": "朝食"
+      },
+      {
+        "word": "shower",
+        "hint": "シャワー"
+      },
+      {
+        "word": "alarm",
+        "hint": "目覚まし"
+      },
+      {
+        "word": "brush",
+        "hint": "歯を磨く"
+      },
+      {
+        "word": "morning",
+        "hint": "朝"
+      },
+      {
+        "word": "lunch",
+        "hint": "昼食"
+      },
+      {
+        "word": "dinner",
+        "hint": "夕食"
+      },
+      {
+        "word": "sleep",
+        "hint": "眠る"
+      },
+      {
+        "word": "wake",
+        "hint": "起きる"
+      },
+      {
+        "word": "dress",
+        "hint": "着替える"
+      },
+      {
+        "word": "commute",
+        "hint": "通勤する"
+      },
+      {
+        "word": "exercise",
+        "hint": "運動"
+      },
+      {
+        "word": "stretch",
+        "hint": "ストレッチ"
+      },
+      {
+        "word": "snack",
+        "hint": "おやつ"
+      },
+      {
+        "word": "relax",
+        "hint": "リラックスする"
+      }
+    ]
+  },
+  {
+    "key": "shopping_wb",
+    "name": "買い物",
+    "description": "ショッピングに関する英語を覚えよう",
+    "iconName": "cart",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "price",
+        "hint": "値段"
+      },
+      {
+        "word": "receipt",
+        "hint": "レシート"
+      },
+      {
+        "word": "cashier",
+        "hint": "レジ係"
+      },
+      {
+        "word": "basket",
+        "hint": "かご"
+      },
+      {
+        "word": "coupon",
+        "hint": "クーポン"
+      },
+      {
+        "word": "discount",
+        "hint": "割引"
+      },
+      {
+        "word": "refund",
+        "hint": "返金"
+      },
+      {
+        "word": "wallet",
+        "hint": "財布"
+      },
+      {
+        "word": "change",
+        "hint": "おつり"
+      },
+      {
+        "word": "bargain",
+        "hint": "お買い得"
+      },
+      {
+        "word": "store",
+        "hint": "お店"
+      },
+      {
+        "word": "aisle",
+        "hint": "通路"
+      },
+      {
+        "word": "shelf",
+        "hint": "棚"
+      },
+      {
+        "word": "brand",
+        "hint": "ブランド"
+      },
+      {
+        "word": "purchase",
+        "hint": "購入する"
+      }
+    ]
+  },
+  {
+    "key": "restaurant_wb",
+    "name": "レストラン",
+    "description": "レストランで使う英語を覚えよう",
+    "iconName": "fork.knife",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "waiter",
+        "hint": "ウェイター"
+      },
+      {
+        "word": "menu",
+        "hint": "メニュー"
+      },
+      {
+        "word": "order",
+        "hint": "注文する"
+      },
+      {
+        "word": "table",
+        "hint": "テーブル"
+      },
+      {
+        "word": "chef",
+        "hint": "シェフ"
+      },
+      {
+        "word": "tip",
+        "hint": "チップ"
+      },
+      {
+        "word": "appetizer",
+        "hint": "前菜"
+      },
+      {
+        "word": "dessert",
+        "hint": "デザート"
+      },
+      {
+        "word": "beverage",
+        "hint": "飲み物"
+      },
+      {
+        "word": "napkin",
+        "hint": "ナプキン"
+      },
+      {
+        "word": "reserve",
+        "hint": "予約する"
+      },
+      {
+        "word": "bill",
+        "hint": "会計"
+      },
+      {
+        "word": "portion",
+        "hint": "一人前"
+      },
+      {
+        "word": "special",
+        "hint": "本日のおすすめ"
+      },
+      {
+        "word": "course",
+        "hint": "コース料理"
+      }
+    ]
+  },
+  {
+    "key": "garden_wb",
+    "name": "庭",
+    "description": "庭や園芸に関する英語を覚えよう",
+    "iconName": "leaf.fill",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "flower",
+        "hint": "花"
+      },
+      {
+        "word": "soil",
+        "hint": "土"
+      },
+      {
+        "word": "seed",
+        "hint": "種"
+      },
+      {
+        "word": "water",
+        "hint": "水やりする"
+      },
+      {
+        "word": "fence",
+        "hint": "柵"
+      },
+      {
+        "word": "lawn",
+        "hint": "芝生"
+      },
+      {
+        "word": "prune",
+        "hint": "剪定する"
+      },
+      {
+        "word": "bloom",
+        "hint": "咲く"
+      },
+      {
+        "word": "harvest",
+        "hint": "収穫する"
+      },
+      {
+        "word": "compost",
+        "hint": "堆肥"
+      },
+      {
+        "word": "weed",
+        "hint": "雑草"
+      },
+      {
+        "word": "shovel",
+        "hint": "シャベル"
+      },
+      {
+        "word": "mulch",
+        "hint": "マルチング"
+      },
+      {
+        "word": "sprout",
+        "hint": "芽"
+      },
+      {
+        "word": "trellis",
+        "hint": "格子棚"
+      }
+    ]
+  },
+  {
+    "key": "bathroom_wb",
+    "name": "バスルーム",
+    "description": "バスルームに関する英語を覚えよう",
+    "iconName": "drop",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "mirror",
+        "hint": "鏡"
+      },
+      {
+        "word": "towel",
+        "hint": "タオル"
+      },
+      {
+        "word": "faucet",
+        "hint": "蛇口"
+      },
+      {
+        "word": "bathtub",
+        "hint": "浴槽"
+      },
+      {
+        "word": "sink",
+        "hint": "洗面台"
+      },
+      {
+        "word": "toilet",
+        "hint": "トイレ"
+      },
+      {
+        "word": "soap",
+        "hint": "石鹸"
+      },
+      {
+        "word": "shampoo",
+        "hint": "シャンプー"
+      },
+      {
+        "word": "razor",
+        "hint": "かみそり"
+      },
+      {
+        "word": "drain",
+        "hint": "排水口"
+      },
+      {
+        "word": "sponge",
+        "hint": "スポンジ"
+      },
+      {
+        "word": "cabinet",
+        "hint": "戸棚"
+      },
+      {
+        "word": "tile",
+        "hint": "タイル"
+      },
+      {
+        "word": "curtain",
+        "hint": "カーテン"
+      },
+      {
+        "word": "plunger",
+        "hint": "ラバーカップ"
+      }
+    ]
+  },
+  {
+    "key": "cinema_wb",
+    "name": "映画",
+    "description": "映画に関する英語を覚えよう",
+    "iconName": "film",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "screen",
+        "hint": "スクリーン"
+      },
+      {
+        "word": "ticket",
+        "hint": "チケット"
+      },
+      {
+        "word": "actor",
+        "hint": "俳優"
+      },
+      {
+        "word": "actress",
+        "hint": "女優"
+      },
+      {
+        "word": "director",
+        "hint": "監督"
+      },
+      {
+        "word": "scene",
+        "hint": "場面"
+      },
+      {
+        "word": "trailer",
+        "hint": "予告編"
+      },
+      {
+        "word": "sequel",
+        "hint": "続編"
+      },
+      {
+        "word": "subtitle",
+        "hint": "字幕"
+      },
+      {
+        "word": "popcorn",
+        "hint": "ポップコーン"
+      },
+      {
+        "word": "genre",
+        "hint": "ジャンル"
+      },
+      {
+        "word": "plot",
+        "hint": "あらすじ"
+      },
+      {
+        "word": "premiere",
+        "hint": "初公開"
+      },
+      {
+        "word": "script",
+        "hint": "脚本"
+      },
+      {
+        "word": "costume",
+        "hint": "衣装"
+      }
+    ]
+  },
+  {
+    "key": "art_wb",
+    "name": "芸術",
+    "description": "芸術に関する英語を覚えよう",
+    "iconName": "paintbrush",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "canvas",
+        "hint": "キャンバス"
+      },
+      {
+        "word": "sketch",
+        "hint": "スケッチ"
+      },
+      {
+        "word": "palette",
+        "hint": "パレット"
+      },
+      {
+        "word": "gallery",
+        "hint": "画廊"
+      },
+      {
+        "word": "portrait",
+        "hint": "肖像画"
+      },
+      {
+        "word": "brush",
+        "hint": "筆"
+      },
+      {
+        "word": "museum",
+        "hint": "美術館"
+      },
+      {
+        "word": "sculpt",
+        "hint": "彫刻する"
+      },
+      {
+        "word": "mural",
+        "hint": "壁画"
+      },
+      {
+        "word": "exhibit",
+        "hint": "展示"
+      },
+      {
+        "word": "easel",
+        "hint": "イーゼル"
+      },
+      {
+        "word": "frame",
+        "hint": "額縁"
+      },
+      {
+        "word": "pastel",
+        "hint": "パステル"
+      },
+      {
+        "word": "charcoal",
+        "hint": "木炭"
+      },
+      {
+        "word": "texture",
+        "hint": "質感"
+      }
+    ]
+  },
+  {
+    "key": "dance_wb",
+    "name": "ダンス",
+    "description": "ダンスに関する英語を覚えよう",
+    "iconName": "figure.dance",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ballet",
+        "hint": "バレエ"
+      },
+      {
+        "word": "rhythm",
+        "hint": "リズム"
+      },
+      {
+        "word": "waltz",
+        "hint": "ワルツ"
+      },
+      {
+        "word": "partner",
+        "hint": "パートナー"
+      },
+      {
+        "word": "stage",
+        "hint": "ステージ"
+      },
+      {
+        "word": "tempo",
+        "hint": "テンポ"
+      },
+      {
+        "word": "spin",
+        "hint": "回転する"
+      },
+      {
+        "word": "salsa",
+        "hint": "サルサ"
+      },
+      {
+        "word": "tango",
+        "hint": "タンゴ"
+      },
+      {
+        "word": "posture",
+        "hint": "姿勢"
+      },
+      {
+        "word": "routine",
+        "hint": "振り付け"
+      },
+      {
+        "word": "leap",
+        "hint": "跳ぶ"
+      },
+      {
+        "word": "stretch",
+        "hint": "柔軟体操"
+      },
+      {
+        "word": "sway",
+        "hint": "揺れる"
+      },
+      {
+        "word": "grace",
+        "hint": "優雅さ"
+      }
+    ]
+  },
+  {
+    "key": "photography_wb",
+    "name": "写真",
+    "description": "写真に関する英語を覚えよう",
+    "iconName": "camera",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "camera",
+        "hint": "カメラ"
+      },
+      {
+        "word": "lens",
+        "hint": "レンズ"
+      },
+      {
+        "word": "flash",
+        "hint": "フラッシュ"
+      },
+      {
+        "word": "focus",
+        "hint": "ピント"
+      },
+      {
+        "word": "shutter",
+        "hint": "シャッター"
+      },
+      {
+        "word": "tripod",
+        "hint": "三脚"
+      },
+      {
+        "word": "filter",
+        "hint": "フィルター"
+      },
+      {
+        "word": "zoom",
+        "hint": "ズーム"
+      },
+      {
+        "word": "exposure",
+        "hint": "露出"
+      },
+      {
+        "word": "angle",
+        "hint": "角度"
+      },
+      {
+        "word": "portrait",
+        "hint": "ポートレート"
+      },
+      {
+        "word": "capture",
+        "hint": "撮影する"
+      },
+      {
+        "word": "album",
+        "hint": "アルバム"
+      },
+      {
+        "word": "pixel",
+        "hint": "ピクセル"
+      },
+      {
+        "word": "frame",
+        "hint": "構図"
+      }
+    ]
+  },
+  {
+    "key": "crafts_wb",
+    "name": "工芸",
+    "description": "工芸やハンドメイドに関する英語を覚えよう",
+    "iconName": "scissors",
+    "color": "#d946ef",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "knitting",
+        "hint": "編み物"
+      },
+      {
+        "word": "sewing",
+        "hint": "裁縫"
+      },
+      {
+        "word": "pottery",
+        "hint": "陶芸"
+      },
+      {
+        "word": "thread",
+        "hint": "糸"
+      },
+      {
+        "word": "needle",
+        "hint": "針"
+      },
+      {
+        "word": "fabric",
+        "hint": "布"
+      },
+      {
+        "word": "pattern",
+        "hint": "型紙"
+      },
+      {
+        "word": "weaving",
+        "hint": "織物"
+      },
+      {
+        "word": "ribbon",
+        "hint": "リボン"
+      },
+      {
+        "word": "stitch",
+        "hint": "縫い目"
+      },
+      {
+        "word": "bead",
+        "hint": "ビーズ"
+      },
+      {
+        "word": "origami",
+        "hint": "折り紙"
+      },
+      {
+        "word": "glue",
+        "hint": "接着剤"
+      },
+      {
+        "word": "embroid",
+        "hint": "刺繍"
+      },
+      {
+        "word": "carving",
+        "hint": "彫り物"
+      }
+    ]
+  },
+  {
+    "key": "geography_wb",
+    "name": "地理",
+    "description": "地理に関する英語を覚えよう",
+    "iconName": "globe",
+    "color": "#2563eb",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "island",
+        "hint": "島"
+      },
+      {
+        "word": "desert",
+        "hint": "砂漠"
+      },
+      {
+        "word": "volcano",
+        "hint": "火山"
+      },
+      {
+        "word": "river",
+        "hint": "川"
+      },
+      {
+        "word": "valley",
+        "hint": "谷"
+      },
+      {
+        "word": "plateau",
+        "hint": "高原"
+      },
+      {
+        "word": "glacier",
+        "hint": "氷河"
+      },
+      {
+        "word": "canyon",
+        "hint": "渓谷"
+      },
+      {
+        "word": "cliff",
+        "hint": "崖"
+      },
+      {
+        "word": "peninsula",
+        "hint": "半島"
+      },
+      {
+        "word": "border",
+        "hint": "国境"
+      },
+      {
+        "word": "equator",
+        "hint": "赤道"
+      },
+      {
+        "word": "terrain",
+        "hint": "地形"
+      },
+      {
+        "word": "wetland",
+        "hint": "湿地"
+      },
+      {
+        "word": "basin",
+        "hint": "盆地"
+      }
+    ]
+  },
+  {
+    "key": "astronomy_wb",
+    "name": "天文学",
+    "description": "宇宙や天文に関する英語を覚えよう",
+    "iconName": "star",
+    "color": "#1e40af",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "planet",
+        "hint": "惑星"
+      },
+      {
+        "word": "orbit",
+        "hint": "軌道"
+      },
+      {
+        "word": "comet",
+        "hint": "彗星"
+      },
+      {
+        "word": "galaxy",
+        "hint": "銀河"
+      },
+      {
+        "word": "nebula",
+        "hint": "星雲"
+      },
+      {
+        "word": "eclipse",
+        "hint": "日食・月食"
+      },
+      {
+        "word": "meteor",
+        "hint": "流星"
+      },
+      {
+        "word": "crater",
+        "hint": "クレーター"
+      },
+      {
+        "word": "lunar",
+        "hint": "月の"
+      },
+      {
+        "word": "solar",
+        "hint": "太陽の"
+      },
+      {
+        "word": "stellar",
+        "hint": "恒星の"
+      },
+      {
+        "word": "gravity",
+        "hint": "重力"
+      },
+      {
+        "word": "asteroid",
+        "hint": "小惑星"
+      },
+      {
+        "word": "cosmos",
+        "hint": "宇宙"
+      },
+      {
+        "word": "quasar",
+        "hint": "クエーサー"
+      }
+    ]
+  },
+  {
+    "key": "ocean_wb",
+    "name": "海",
+    "description": "海に関する英語を覚えよう",
+    "iconName": "water.waves",
+    "color": "#0284c7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "wave",
+        "hint": "波"
+      },
+      {
+        "word": "tide",
+        "hint": "潮"
+      },
+      {
+        "word": "coral",
+        "hint": "サンゴ"
+      },
+      {
+        "word": "shore",
+        "hint": "海岸"
+      },
+      {
+        "word": "anchor",
+        "hint": "いかり"
+      },
+      {
+        "word": "harbor",
+        "hint": "港"
+      },
+      {
+        "word": "current",
+        "hint": "海流"
+      },
+      {
+        "word": "whale",
+        "hint": "クジラ"
+      },
+      {
+        "word": "dolphin",
+        "hint": "イルカ"
+      },
+      {
+        "word": "reef",
+        "hint": "岩礁"
+      },
+      {
+        "word": "seaweed",
+        "hint": "海藻"
+      },
+      {
+        "word": "trench",
+        "hint": "海溝"
+      },
+      {
+        "word": "oyster",
+        "hint": "カキ"
+      },
+      {
+        "word": "pearl",
+        "hint": "真珠"
+      },
+      {
+        "word": "voyage",
+        "hint": "航海"
+      }
+    ]
+  },
+  {
+    "key": "mountains_wb",
+    "name": "山",
+    "description": "山に関する英語を覚えよう",
+    "iconName": "mountain.2",
+    "color": "#65a30d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "summit",
+        "hint": "山頂"
+      },
+      {
+        "word": "ridge",
+        "hint": "尾根"
+      },
+      {
+        "word": "trail",
+        "hint": "登山道"
+      },
+      {
+        "word": "cliff",
+        "hint": "断崖"
+      },
+      {
+        "word": "boulder",
+        "hint": "大きな岩"
+      },
+      {
+        "word": "altitude",
+        "hint": "標高"
+      },
+      {
+        "word": "slope",
+        "hint": "斜面"
+      },
+      {
+        "word": "peak",
+        "hint": "頂上"
+      },
+      {
+        "word": "cabin",
+        "hint": "山小屋"
+      },
+      {
+        "word": "hike",
+        "hint": "ハイキング"
+      },
+      {
+        "word": "ledge",
+        "hint": "岩棚"
+      },
+      {
+        "word": "gorge",
+        "hint": "峡谷"
+      },
+      {
+        "word": "avalanche",
+        "hint": "雪崩"
+      },
+      {
+        "word": "ascend",
+        "hint": "登る"
+      },
+      {
+        "word": "ravine",
+        "hint": "谷間"
+      }
+    ]
+  },
+  {
+    "key": "camping_wb",
+    "name": "キャンプ",
+    "description": "キャンプに関する英語を覚えよう",
+    "iconName": "tent",
+    "color": "#84cc16",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "tent",
+        "hint": "テント"
+      },
+      {
+        "word": "campfire",
+        "hint": "焚き火"
+      },
+      {
+        "word": "lantern",
+        "hint": "ランタン"
+      },
+      {
+        "word": "backpack",
+        "hint": "リュック"
+      },
+      {
+        "word": "compass",
+        "hint": "コンパス"
+      },
+      {
+        "word": "canteen",
+        "hint": "水筒"
+      },
+      {
+        "word": "hammock",
+        "hint": "ハンモック"
+      },
+      {
+        "word": "firewood",
+        "hint": "薪"
+      },
+      {
+        "word": "marshmallow",
+        "hint": "マシュマロ"
+      },
+      {
+        "word": "sleeping",
+        "hint": "寝袋（〜bag）"
+      },
+      {
+        "word": "flashlight",
+        "hint": "懐中電灯"
+      },
+      {
+        "word": "wildlife",
+        "hint": "野生動物"
+      },
+      {
+        "word": "cooler",
+        "hint": "クーラーボックス"
+      },
+      {
+        "word": "kindling",
+        "hint": "焚き付け"
+      },
+      {
+        "word": "shelter",
+        "hint": "避難所"
+      }
+    ]
+  },
+  {
+    "key": "law_wb",
+    "name": "法律",
+    "description": "法律に関する英語を覚えよう",
+    "iconName": "building.columns",
+    "color": "#78716c",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "judge",
+        "hint": "裁判官"
+      },
+      {
+        "word": "lawyer",
+        "hint": "弁護士"
+      },
+      {
+        "word": "trial",
+        "hint": "裁判"
+      },
+      {
+        "word": "verdict",
+        "hint": "判決"
+      },
+      {
+        "word": "witness",
+        "hint": "証人"
+      },
+      {
+        "word": "jury",
+        "hint": "陪審員"
+      },
+      {
+        "word": "appeal",
+        "hint": "控訴"
+      },
+      {
+        "word": "statute",
+        "hint": "法令"
+      },
+      {
+        "word": "custody",
+        "hint": "監護権"
+      },
+      {
+        "word": "parole",
+        "hint": "仮釈放"
+      },
+      {
+        "word": "lawsuit",
+        "hint": "訴訟"
+      },
+      {
+        "word": "penalty",
+        "hint": "罰則"
+      },
+      {
+        "word": "plaintiff",
+        "hint": "原告"
+      },
+      {
+        "word": "felony",
+        "hint": "重罪"
+      },
+      {
+        "word": "bail",
+        "hint": "保釈金"
+      }
+    ]
+  },
+  {
+    "key": "politics_wb",
+    "name": "政治",
+    "description": "政治に関する英語を覚えよう",
+    "iconName": "person.3",
+    "color": "#b91c1c",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "election",
+        "hint": "選挙"
+      },
+      {
+        "word": "congress",
+        "hint": "議会"
+      },
+      {
+        "word": "cabinet",
+        "hint": "内閣"
+      },
+      {
+        "word": "treaty",
+        "hint": "条約"
+      },
+      {
+        "word": "ballot",
+        "hint": "投票"
+      },
+      {
+        "word": "reform",
+        "hint": "改革"
+      },
+      {
+        "word": "senate",
+        "hint": "上院"
+      },
+      {
+        "word": "policy",
+        "hint": "政策"
+      },
+      {
+        "word": "campaign",
+        "hint": "選挙運動"
+      },
+      {
+        "word": "diplomat",
+        "hint": "外交官"
+      },
+      {
+        "word": "republic",
+        "hint": "共和国"
+      },
+      {
+        "word": "veto",
+        "hint": "拒否権"
+      },
+      {
+        "word": "mandate",
+        "hint": "委任"
+      },
+      {
+        "word": "sanction",
+        "hint": "制裁"
+      },
+      {
+        "word": "summit",
+        "hint": "首脳会談"
+      }
+    ]
+  },
+  {
+    "key": "economy_wb",
+    "name": "経済",
+    "description": "経済に関する英語を覚えよう",
+    "iconName": "chart.line.uptrend.xyaxis",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "market",
+        "hint": "市場"
+      },
+      {
+        "word": "profit",
+        "hint": "利益"
+      },
+      {
+        "word": "export",
+        "hint": "輸出"
+      },
+      {
+        "word": "import",
+        "hint": "輸入"
+      },
+      {
+        "word": "tariff",
+        "hint": "関税"
+      },
+      {
+        "word": "subsidy",
+        "hint": "補助金"
+      },
+      {
+        "word": "surplus",
+        "hint": "黒字"
+      },
+      {
+        "word": "deficit",
+        "hint": "赤字"
+      },
+      {
+        "word": "revenue",
+        "hint": "歳入"
+      },
+      {
+        "word": "budget",
+        "hint": "予算"
+      },
+      {
+        "word": "stock",
+        "hint": "株式"
+      },
+      {
+        "word": "bond",
+        "hint": "債券"
+      },
+      {
+        "word": "venture",
+        "hint": "事業"
+      },
+      {
+        "word": "capital",
+        "hint": "資本"
+      },
+      {
+        "word": "dividend",
+        "hint": "配当金"
+      }
+    ]
+  },
+  {
+    "key": "banking_wb",
+    "name": "銀行",
+    "description": "銀行や金融に関する英語を覚えよう",
+    "iconName": "banknote",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "account",
+        "hint": "口座"
+      },
+      {
+        "word": "deposit",
+        "hint": "預金"
+      },
+      {
+        "word": "withdraw",
+        "hint": "引き出す"
+      },
+      {
+        "word": "balance",
+        "hint": "残高"
+      },
+      {
+        "word": "interest",
+        "hint": "利息"
+      },
+      {
+        "word": "mortgage",
+        "hint": "住宅ローン"
+      },
+      {
+        "word": "savings",
+        "hint": "貯金"
+      },
+      {
+        "word": "transfer",
+        "hint": "振込"
+      },
+      {
+        "word": "credit",
+        "hint": "クレジット"
+      },
+      {
+        "word": "currency",
+        "hint": "通貨"
+      },
+      {
+        "word": "exchange",
+        "hint": "両替"
+      },
+      {
+        "word": "loan",
+        "hint": "ローン"
+      },
+      {
+        "word": "invoice",
+        "hint": "請求書"
+      },
+      {
+        "word": "payment",
+        "hint": "支払い"
+      },
+      {
+        "word": "auditor",
+        "hint": "監査人"
+      }
+    ]
+  },
+  {
+    "key": "insurance_wb",
+    "name": "保険",
+    "description": "保険に関する英語を覚えよう",
+    "iconName": "shield",
+    "color": "#0891b2",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "premium",
+        "hint": "保険料"
+      },
+      {
+        "word": "coverage",
+        "hint": "補償範囲"
+      },
+      {
+        "word": "policy",
+        "hint": "保険証券"
+      },
+      {
+        "word": "claim",
+        "hint": "保険請求"
+      },
+      {
+        "word": "benefit",
+        "hint": "給付金"
+      },
+      {
+        "word": "deductible",
+        "hint": "免責額"
+      },
+      {
+        "word": "liability",
+        "hint": "賠償責任"
+      },
+      {
+        "word": "annuity",
+        "hint": "年金"
+      },
+      {
+        "word": "broker",
+        "hint": "仲介人"
+      },
+      {
+        "word": "renewal",
+        "hint": "更新"
+      },
+      {
+        "word": "pension",
+        "hint": "年金"
+      },
+      {
+        "word": "warranty",
+        "hint": "保証"
+      },
+      {
+        "word": "exempt",
+        "hint": "免除"
+      },
+      {
+        "word": "surplus",
+        "hint": "剰余金"
+      },
+      {
+        "word": "underwrite",
+        "hint": "引き受ける"
+      }
+    ]
+  },
+  {
+    "key": "cooking_wb",
+    "name": "料理",
+    "description": "料理に関する英語を覚えよう",
+    "iconName": "flame",
+    "color": "#ea580c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "recipe",
+        "hint": "レシピ"
+      },
+      {
+        "word": "simmer",
+        "hint": "とろ火で煮る"
+      },
+      {
+        "word": "saute",
+        "hint": "炒める"
+      },
+      {
+        "word": "boil",
+        "hint": "沸騰させる"
+      },
+      {
+        "word": "grill",
+        "hint": "グリルする"
+      },
+      {
+        "word": "chop",
+        "hint": "刻む"
+      },
+      {
+        "word": "stir",
+        "hint": "かき混ぜる"
+      },
+      {
+        "word": "season",
+        "hint": "味付けする"
+      },
+      {
+        "word": "roast",
+        "hint": "ローストする"
+      },
+      {
+        "word": "steam",
+        "hint": "蒸す"
+      },
+      {
+        "word": "fry",
+        "hint": "揚げる"
+      },
+      {
+        "word": "marinate",
+        "hint": "漬け込む"
+      },
+      {
+        "word": "garnish",
+        "hint": "飾り付ける"
+      },
+      {
+        "word": "blend",
+        "hint": "混ぜ合わせる"
+      },
+      {
+        "word": "dice",
+        "hint": "角切りにする"
+      }
+    ]
+  },
+  {
+    "key": "baking_wb",
+    "name": "製パン・製菓",
+    "description": "パンやお菓子作りに関する英語を覚えよう",
+    "iconName": "birthday.cake",
+    "color": "#d97706",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "dough",
+        "hint": "生地"
+      },
+      {
+        "word": "yeast",
+        "hint": "イースト"
+      },
+      {
+        "word": "flour",
+        "hint": "小麦粉"
+      },
+      {
+        "word": "knead",
+        "hint": "こねる"
+      },
+      {
+        "word": "oven",
+        "hint": "オーブン"
+      },
+      {
+        "word": "batter",
+        "hint": "衣・生地"
+      },
+      {
+        "word": "whisk",
+        "hint": "泡立て器"
+      },
+      {
+        "word": "frosting",
+        "hint": "アイシング"
+      },
+      {
+        "word": "crust",
+        "hint": "パンの耳"
+      },
+      {
+        "word": "muffin",
+        "hint": "マフィン"
+      },
+      {
+        "word": "pastry",
+        "hint": "ペストリー"
+      },
+      {
+        "word": "glaze",
+        "hint": "つや出し"
+      },
+      {
+        "word": "sift",
+        "hint": "ふるいにかける"
+      },
+      {
+        "word": "rolling",
+        "hint": "めん棒（〜pin）"
+      },
+      {
+        "word": "preheat",
+        "hint": "予熱する"
+      }
+    ]
+  },
+  {
+    "key": "spices_wb",
+    "name": "スパイス",
+    "description": "香辛料に関する英語を覚えよう",
+    "iconName": "leaf.arrow.circlepath",
+    "color": "#b45309",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pepper",
+        "hint": "こしょう"
+      },
+      {
+        "word": "cinnamon",
+        "hint": "シナモン"
+      },
+      {
+        "word": "ginger",
+        "hint": "しょうが"
+      },
+      {
+        "word": "garlic",
+        "hint": "にんにく"
+      },
+      {
+        "word": "basil",
+        "hint": "バジル"
+      },
+      {
+        "word": "oregano",
+        "hint": "オレガノ"
+      },
+      {
+        "word": "cumin",
+        "hint": "クミン"
+      },
+      {
+        "word": "thyme",
+        "hint": "タイム"
+      },
+      {
+        "word": "paprika",
+        "hint": "パプリカ"
+      },
+      {
+        "word": "vanilla",
+        "hint": "バニラ"
+      },
+      {
+        "word": "nutmeg",
+        "hint": "ナツメグ"
+      },
+      {
+        "word": "saffron",
+        "hint": "サフラン"
+      },
+      {
+        "word": "parsley",
+        "hint": "パセリ"
+      },
+      {
+        "word": "clove",
+        "hint": "クローブ"
+      },
+      {
+        "word": "turmeric",
+        "hint": "ターメリック"
+      }
+    ]
+  },
+  {
+    "key": "dairy_wb",
+    "name": "乳製品",
+    "description": "乳製品に関する英語を覚えよう",
+    "iconName": "cup.and.saucer",
+    "color": "#fbbf24",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "cheese",
+        "hint": "チーズ"
+      },
+      {
+        "word": "butter",
+        "hint": "バター"
+      },
+      {
+        "word": "yogurt",
+        "hint": "ヨーグルト"
+      },
+      {
+        "word": "cream",
+        "hint": "クリーム"
+      },
+      {
+        "word": "milkshake",
+        "hint": "ミルクシェイク"
+      },
+      {
+        "word": "cottage",
+        "hint": "カッテージ（〜cheese）"
+      },
+      {
+        "word": "custard",
+        "hint": "カスタード"
+      },
+      {
+        "word": "whey",
+        "hint": "乳清"
+      },
+      {
+        "word": "skim",
+        "hint": "脱脂（〜milk）"
+      },
+      {
+        "word": "gelato",
+        "hint": "ジェラート"
+      },
+      {
+        "word": "mousse",
+        "hint": "ムース"
+      },
+      {
+        "word": "ricotta",
+        "hint": "リコッタ"
+      },
+      {
+        "word": "cheddar",
+        "hint": "チェダー"
+      },
+      {
+        "word": "sorbet",
+        "hint": "シャーベット"
+      },
+      {
+        "word": "fondue",
+        "hint": "フォンデュ"
+      }
+    ]
+  },
+  {
+    "key": "meat_wb",
+    "name": "肉類",
+    "description": "肉に関する英語を覚えよう",
+    "iconName": "fork.knife",
+    "color": "#dc2626",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "steak",
+        "hint": "ステーキ"
+      },
+      {
+        "word": "chicken",
+        "hint": "鶏肉"
+      },
+      {
+        "word": "pork",
+        "hint": "豚肉"
+      },
+      {
+        "word": "beef",
+        "hint": "牛肉"
+      },
+      {
+        "word": "lamb",
+        "hint": "子羊肉"
+      },
+      {
+        "word": "sausage",
+        "hint": "ソーセージ"
+      },
+      {
+        "word": "bacon",
+        "hint": "ベーコン"
+      },
+      {
+        "word": "turkey",
+        "hint": "七面鳥"
+      },
+      {
+        "word": "venison",
+        "hint": "鹿肉"
+      },
+      {
+        "word": "veal",
+        "hint": "子牛肉"
+      },
+      {
+        "word": "ribs",
+        "hint": "リブ"
+      },
+      {
+        "word": "cutlet",
+        "hint": "カツレツ"
+      },
+      {
+        "word": "tenderloin",
+        "hint": "ヒレ肉"
+      },
+      {
+        "word": "brisket",
+        "hint": "胸肉"
+      },
+      {
+        "word": "jerky",
+        "hint": "ジャーキー"
+      }
+    ]
+  },
+  {
+    "key": "pets_wb",
+    "name": "ペット",
+    "description": "ペットに関する英語を覚えよう",
+    "iconName": "pawprint",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "puppy",
+        "hint": "子犬"
+      },
+      {
+        "word": "kitten",
+        "hint": "子猫"
+      },
+      {
+        "word": "hamster",
+        "hint": "ハムスター"
+      },
+      {
+        "word": "rabbit",
+        "hint": "うさぎ"
+      },
+      {
+        "word": "parrot",
+        "hint": "オウム"
+      },
+      {
+        "word": "leash",
+        "hint": "リード"
+      },
+      {
+        "word": "collar",
+        "hint": "首輪"
+      },
+      {
+        "word": "kennel",
+        "hint": "犬小屋"
+      },
+      {
+        "word": "goldfish",
+        "hint": "金魚"
+      },
+      {
+        "word": "turtle",
+        "hint": "カメ"
+      },
+      {
+        "word": "grooming",
+        "hint": "手入れ"
+      },
+      {
+        "word": "treat",
+        "hint": "おやつ"
+      },
+      {
+        "word": "feeder",
+        "hint": "えさ入れ"
+      },
+      {
+        "word": "aquarium",
+        "hint": "水槽"
+      },
+      {
+        "word": "shelter",
+        "hint": "保護施設"
+      }
+    ]
+  },
+  {
+    "key": "birds_wb",
+    "name": "鳥",
+    "description": "鳥に関する英語を覚えよう",
+    "iconName": "bird",
+    "color": "#f97316",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "eagle",
+        "hint": "ワシ"
+      },
+      {
+        "word": "sparrow",
+        "hint": "スズメ"
+      },
+      {
+        "word": "penguin",
+        "hint": "ペンギン"
+      },
+      {
+        "word": "owl",
+        "hint": "フクロウ"
+      },
+      {
+        "word": "robin",
+        "hint": "コマドリ"
+      },
+      {
+        "word": "falcon",
+        "hint": "ハヤブサ"
+      },
+      {
+        "word": "crane",
+        "hint": "ツル"
+      },
+      {
+        "word": "pigeon",
+        "hint": "ハト"
+      },
+      {
+        "word": "swallow",
+        "hint": "ツバメ"
+      },
+      {
+        "word": "peacock",
+        "hint": "クジャク"
+      },
+      {
+        "word": "stork",
+        "hint": "コウノトリ"
+      },
+      {
+        "word": "feather",
+        "hint": "羽毛"
+      },
+      {
+        "word": "nest",
+        "hint": "巣"
+      },
+      {
+        "word": "beak",
+        "hint": "くちばし"
+      },
+      {
+        "word": "migrate",
+        "hint": "渡りをする"
+      }
+    ]
+  },
+  {
+    "key": "insects_wb",
+    "name": "昆虫",
+    "description": "昆虫に関する英語を覚えよう",
+    "iconName": "ant",
+    "color": "#65a30d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "butterfly",
+        "hint": "チョウ"
+      },
+      {
+        "word": "beetle",
+        "hint": "カブトムシ"
+      },
+      {
+        "word": "cricket",
+        "hint": "コオロギ"
+      },
+      {
+        "word": "firefly",
+        "hint": "ホタル"
+      },
+      {
+        "word": "ladybug",
+        "hint": "テントウムシ"
+      },
+      {
+        "word": "mosquito",
+        "hint": "蚊"
+      },
+      {
+        "word": "dragonfly",
+        "hint": "トンボ"
+      },
+      {
+        "word": "caterpillar",
+        "hint": "イモムシ"
+      },
+      {
+        "word": "cicada",
+        "hint": "セミ"
+      },
+      {
+        "word": "mantis",
+        "hint": "カマキリ"
+      },
+      {
+        "word": "wasp",
+        "hint": "スズメバチ"
+      },
+      {
+        "word": "ant",
+        "hint": "アリ"
+      },
+      {
+        "word": "moth",
+        "hint": "ガ"
+      },
+      {
+        "word": "cocoon",
+        "hint": "繭"
+      },
+      {
+        "word": "larva",
+        "hint": "幼虫"
+      }
+    ]
+  },
+  {
+    "key": "marine_life_wb",
+    "name": "海の生き物",
+    "description": "海の生き物に関する英語を覚えよう",
+    "iconName": "fish",
+    "color": "#0e7490",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "shark",
+        "hint": "サメ"
+      },
+      {
+        "word": "octopus",
+        "hint": "タコ"
+      },
+      {
+        "word": "squid",
+        "hint": "イカ"
+      },
+      {
+        "word": "shrimp",
+        "hint": "エビ"
+      },
+      {
+        "word": "lobster",
+        "hint": "ロブスター"
+      },
+      {
+        "word": "starfish",
+        "hint": "ヒトデ"
+      },
+      {
+        "word": "jellyfish",
+        "hint": "クラゲ"
+      },
+      {
+        "word": "seahorse",
+        "hint": "タツノオトシゴ"
+      },
+      {
+        "word": "salmon",
+        "hint": "サケ"
+      },
+      {
+        "word": "tuna",
+        "hint": "マグロ"
+      },
+      {
+        "word": "crab",
+        "hint": "カニ"
+      },
+      {
+        "word": "clam",
+        "hint": "ハマグリ"
+      },
+      {
+        "word": "urchin",
+        "hint": "ウニ"
+      },
+      {
+        "word": "eel",
+        "hint": "ウナギ"
+      },
+      {
+        "word": "walrus",
+        "hint": "セイウチ"
+      }
+    ]
+  },
+  {
+    "key": "farm_animals_wb",
+    "name": "農場の動物",
+    "description": "農場の動物に関する英語を覚えよう",
+    "iconName": "hare",
+    "color": "#92400e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "rooster",
+        "hint": "おんどり"
+      },
+      {
+        "word": "donkey",
+        "hint": "ロバ"
+      },
+      {
+        "word": "goose",
+        "hint": "ガチョウ"
+      },
+      {
+        "word": "sheep",
+        "hint": "ヒツジ"
+      },
+      {
+        "word": "goat",
+        "hint": "ヤギ"
+      },
+      {
+        "word": "piglet",
+        "hint": "子ブタ"
+      },
+      {
+        "word": "barn",
+        "hint": "納屋"
+      },
+      {
+        "word": "stable",
+        "hint": "馬小屋"
+      },
+      {
+        "word": "pasture",
+        "hint": "牧草地"
+      },
+      {
+        "word": "tractor",
+        "hint": "トラクター"
+      },
+      {
+        "word": "harvest",
+        "hint": "収穫"
+      },
+      {
+        "word": "haystack",
+        "hint": "干し草の山"
+      },
+      {
+        "word": "silo",
+        "hint": "サイロ"
+      },
+      {
+        "word": "plow",
+        "hint": "鋤"
+      },
+      {
+        "word": "corral",
+        "hint": "囲い"
+      }
+    ]
+  },
+  {
+    "key": "feelings_wb",
+    "name": "気持ち",
+    "description": "気持ちや感情に関する英語を覚えよう",
+    "iconName": "heart",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "anxious",
+        "hint": "不安な"
+      },
+      {
+        "word": "grateful",
+        "hint": "感謝している"
+      },
+      {
+        "word": "lonely",
+        "hint": "孤独な"
+      },
+      {
+        "word": "jealous",
+        "hint": "嫉妬する"
+      },
+      {
+        "word": "proud",
+        "hint": "誇りに思う"
+      },
+      {
+        "word": "ashamed",
+        "hint": "恥ずかしい"
+      },
+      {
+        "word": "content",
+        "hint": "満足している"
+      },
+      {
+        "word": "furious",
+        "hint": "激怒した"
+      },
+      {
+        "word": "hopeful",
+        "hint": "希望に満ちた"
+      },
+      {
+        "word": "nauseous",
+        "hint": "吐き気がする"
+      },
+      {
+        "word": "relieved",
+        "hint": "安心した"
+      },
+      {
+        "word": "confused",
+        "hint": "困惑した"
+      },
+      {
+        "word": "cheerful",
+        "hint": "陽気な"
+      },
+      {
+        "word": "gloomy",
+        "hint": "暗い気分の"
+      },
+      {
+        "word": "thrilled",
+        "hint": "わくわくした"
+      }
+    ]
+  },
+  {
+    "key": "personality_wb",
+    "name": "性格",
+    "description": "性格を表す英語を覚えよう",
+    "iconName": "person.circle",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "generous",
+        "hint": "寛大な"
+      },
+      {
+        "word": "stubborn",
+        "hint": "頑固な"
+      },
+      {
+        "word": "patient",
+        "hint": "忍耐強い"
+      },
+      {
+        "word": "curious",
+        "hint": "好奇心旺盛な"
+      },
+      {
+        "word": "humble",
+        "hint": "謙虚な"
+      },
+      {
+        "word": "selfish",
+        "hint": "自己中心的な"
+      },
+      {
+        "word": "outgoing",
+        "hint": "社交的な"
+      },
+      {
+        "word": "reliable",
+        "hint": "頼りになる"
+      },
+      {
+        "word": "creative",
+        "hint": "創造的な"
+      },
+      {
+        "word": "diligent",
+        "hint": "勤勉な"
+      },
+      {
+        "word": "honest",
+        "hint": "正直な"
+      },
+      {
+        "word": "ambitious",
+        "hint": "野心的な"
+      },
+      {
+        "word": "cheerful",
+        "hint": "明るい"
+      },
+      {
+        "word": "cautious",
+        "hint": "慎重な"
+      },
+      {
+        "word": "sincere",
+        "hint": "誠実な"
+      }
+    ]
+  },
+  {
+    "key": "relationships_wb",
+    "name": "人間関係",
+    "description": "人間関係に関する英語を覚えよう",
+    "iconName": "person.2",
+    "color": "#db2777",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "colleague",
+        "hint": "同僚"
+      },
+      {
+        "word": "neighbor",
+        "hint": "隣人"
+      },
+      {
+        "word": "fiancee",
+        "hint": "婚約者"
+      },
+      {
+        "word": "spouse",
+        "hint": "配偶者"
+      },
+      {
+        "word": "sibling",
+        "hint": "兄弟姉妹"
+      },
+      {
+        "word": "companion",
+        "hint": "仲間"
+      },
+      {
+        "word": "mentor",
+        "hint": "指導者"
+      },
+      {
+        "word": "rival",
+        "hint": "ライバル"
+      },
+      {
+        "word": "nephew",
+        "hint": "甥"
+      },
+      {
+        "word": "niece",
+        "hint": "姪"
+      },
+      {
+        "word": "relative",
+        "hint": "親戚"
+      },
+      {
+        "word": "guardian",
+        "hint": "保護者"
+      },
+      {
+        "word": "classmate",
+        "hint": "クラスメート"
+      },
+      {
+        "word": "roommate",
+        "hint": "ルームメイト"
+      },
+      {
+        "word": "ancestor",
+        "hint": "先祖"
+      }
+    ]
+  },
+  {
+    "key": "communication_wb",
+    "name": "コミュニケーション",
+    "description": "コミュニケーションに関する英語を覚えよう",
+    "iconName": "bubble.left.and.bubble.right",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "discuss",
+        "hint": "話し合う"
+      },
+      {
+        "word": "explain",
+        "hint": "説明する"
+      },
+      {
+        "word": "persuade",
+        "hint": "説得する"
+      },
+      {
+        "word": "whisper",
+        "hint": "ささやく"
+      },
+      {
+        "word": "argue",
+        "hint": "議論する"
+      },
+      {
+        "word": "apologize",
+        "hint": "謝る"
+      },
+      {
+        "word": "compliment",
+        "hint": "褒める"
+      },
+      {
+        "word": "gossip",
+        "hint": "うわさ話"
+      },
+      {
+        "word": "lecture",
+        "hint": "講義する"
+      },
+      {
+        "word": "negotiate",
+        "hint": "交渉する"
+      },
+      {
+        "word": "announce",
+        "hint": "発表する"
+      },
+      {
+        "word": "interrupt",
+        "hint": "割り込む"
+      },
+      {
+        "word": "translate",
+        "hint": "翻訳する"
+      },
+      {
+        "word": "complain",
+        "hint": "文句を言う"
+      },
+      {
+        "word": "greet",
+        "hint": "挨拶する"
+      }
+    ]
+  },
+  {
+    "key": "gestures_wb",
+    "name": "身振り",
+    "description": "身振りや動作に関する英語を覚えよう",
+    "iconName": "hand.wave",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "wave",
+        "hint": "手を振る"
+      },
+      {
+        "word": "nod",
+        "hint": "うなずく"
+      },
+      {
+        "word": "shrug",
+        "hint": "肩をすくめる"
+      },
+      {
+        "word": "clap",
+        "hint": "拍手する"
+      },
+      {
+        "word": "bow",
+        "hint": "お辞儀する"
+      },
+      {
+        "word": "point",
+        "hint": "指さす"
+      },
+      {
+        "word": "wink",
+        "hint": "ウインクする"
+      },
+      {
+        "word": "frown",
+        "hint": "眉をひそめる"
+      },
+      {
+        "word": "yawn",
+        "hint": "あくびする"
+      },
+      {
+        "word": "stretch",
+        "hint": "伸びをする"
+      },
+      {
+        "word": "squeeze",
+        "hint": "握る"
+      },
+      {
+        "word": "shake",
+        "hint": "握手する"
+      },
+      {
+        "word": "salute",
+        "hint": "敬礼する"
+      },
+      {
+        "word": "beckon",
+        "hint": "手招きする"
+      },
+      {
+        "word": "embrace",
+        "hint": "抱きしめる"
+      }
+    ]
+  },
+  {
+    "key": "architecture_wb",
+    "name": "建築",
+    "description": "建築に関する英語を覚えよう",
+    "iconName": "building.2",
+    "color": "#64748b",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "column",
+        "hint": "柱"
+      },
+      {
+        "word": "facade",
+        "hint": "正面"
+      },
+      {
+        "word": "dome",
+        "hint": "ドーム"
+      },
+      {
+        "word": "balcony",
+        "hint": "バルコニー"
+      },
+      {
+        "word": "terrace",
+        "hint": "テラス"
+      },
+      {
+        "word": "atrium",
+        "hint": "吹き抜け"
+      },
+      {
+        "word": "staircase",
+        "hint": "階段"
+      },
+      {
+        "word": "archway",
+        "hint": "アーチ"
+      },
+      {
+        "word": "pillar",
+        "hint": "柱"
+      },
+      {
+        "word": "blueprint",
+        "hint": "設計図"
+      },
+      {
+        "word": "corridor",
+        "hint": "廊下"
+      },
+      {
+        "word": "canopy",
+        "hint": "天蓋"
+      },
+      {
+        "word": "lantern",
+        "hint": "灯籠"
+      },
+      {
+        "word": "skylight",
+        "hint": "天窓"
+      },
+      {
+        "word": "pavilion",
+        "hint": "東屋"
+      }
+    ]
+  },
+  {
+    "key": "construction_wb",
+    "name": "建設",
+    "description": "建設に関する英語を覚えよう",
+    "iconName": "hammer",
+    "color": "#78716c",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "cement",
+        "hint": "セメント"
+      },
+      {
+        "word": "scaffold",
+        "hint": "足場"
+      },
+      {
+        "word": "crane",
+        "hint": "クレーン"
+      },
+      {
+        "word": "girder",
+        "hint": "梁"
+      },
+      {
+        "word": "beam",
+        "hint": "大梁"
+      },
+      {
+        "word": "rebar",
+        "hint": "鉄筋"
+      },
+      {
+        "word": "gravel",
+        "hint": "砂利"
+      },
+      {
+        "word": "mortar",
+        "hint": "モルタル"
+      },
+      {
+        "word": "plywood",
+        "hint": "合板"
+      },
+      {
+        "word": "bulldozer",
+        "hint": "ブルドーザー"
+      },
+      {
+        "word": "excavate",
+        "hint": "掘削する"
+      },
+      {
+        "word": "insulate",
+        "hint": "断熱する"
+      },
+      {
+        "word": "weld",
+        "hint": "溶接する"
+      },
+      {
+        "word": "concrete",
+        "hint": "コンクリート"
+      },
+      {
+        "word": "drywall",
+        "hint": "石膏ボード"
+      }
+    ]
+  },
+  {
+    "key": "electricity_wb",
+    "name": "電気",
+    "description": "電気に関する英語を覚えよう",
+    "iconName": "bolt",
+    "color": "#eab308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "voltage",
+        "hint": "電圧"
+      },
+      {
+        "word": "current",
+        "hint": "電流"
+      },
+      {
+        "word": "circuit",
+        "hint": "回路"
+      },
+      {
+        "word": "outlet",
+        "hint": "コンセント"
+      },
+      {
+        "word": "switch",
+        "hint": "スイッチ"
+      },
+      {
+        "word": "fuse",
+        "hint": "ヒューズ"
+      },
+      {
+        "word": "wiring",
+        "hint": "配線"
+      },
+      {
+        "word": "battery",
+        "hint": "バッテリー"
+      },
+      {
+        "word": "socket",
+        "hint": "ソケット"
+      },
+      {
+        "word": "conduit",
+        "hint": "電線管"
+      },
+      {
+        "word": "adapter",
+        "hint": "アダプター"
+      },
+      {
+        "word": "breaker",
+        "hint": "ブレーカー"
+      },
+      {
+        "word": "resistor",
+        "hint": "抵抗器"
+      },
+      {
+        "word": "panel",
+        "hint": "配電盤"
+      },
+      {
+        "word": "ground",
+        "hint": "アース"
+      }
+    ]
+  },
+  {
+    "key": "plumbing_wb",
+    "name": "配管",
+    "description": "配管に関する英語を覚えよう",
+    "iconName": "wrench.and.screwdriver",
+    "color": "#0d9488",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "pipe",
+        "hint": "パイプ"
+      },
+      {
+        "word": "valve",
+        "hint": "バルブ"
+      },
+      {
+        "word": "wrench",
+        "hint": "レンチ"
+      },
+      {
+        "word": "gasket",
+        "hint": "ガスケット"
+      },
+      {
+        "word": "drain",
+        "hint": "排水管"
+      },
+      {
+        "word": "sewer",
+        "hint": "下水道"
+      },
+      {
+        "word": "faucet",
+        "hint": "蛇口"
+      },
+      {
+        "word": "boiler",
+        "hint": "ボイラー"
+      },
+      {
+        "word": "heater",
+        "hint": "給湯器"
+      },
+      {
+        "word": "copper",
+        "hint": "銅管"
+      },
+      {
+        "word": "septic",
+        "hint": "浄化槽"
+      },
+      {
+        "word": "elbow",
+        "hint": "エルボ管"
+      },
+      {
+        "word": "cistern",
+        "hint": "水槽"
+      },
+      {
+        "word": "solder",
+        "hint": "はんだ付け"
+      },
+      {
+        "word": "nozzle",
+        "hint": "ノズル"
+      }
+    ]
+  },
+  {
+    "key": "gardening_tools_wb",
+    "name": "園芸道具",
+    "description": "園芸道具に関する英語を覚えよう",
+    "iconName": "leaf.circle",
+    "color": "#15803d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "rake",
+        "hint": "熊手"
+      },
+      {
+        "word": "hose",
+        "hint": "ホース"
+      },
+      {
+        "word": "trowel",
+        "hint": "移植ごて"
+      },
+      {
+        "word": "pruner",
+        "hint": "剪定ばさみ"
+      },
+      {
+        "word": "spade",
+        "hint": "スペード"
+      },
+      {
+        "word": "wheelbarrow",
+        "hint": "手押し車"
+      },
+      {
+        "word": "sprinkler",
+        "hint": "スプリンクラー"
+      },
+      {
+        "word": "mower",
+        "hint": "芝刈り機"
+      },
+      {
+        "word": "shears",
+        "hint": "刈り込みばさみ"
+      },
+      {
+        "word": "planter",
+        "hint": "プランター"
+      },
+      {
+        "word": "edger",
+        "hint": "縁切り器"
+      },
+      {
+        "word": "gloves",
+        "hint": "手袋"
+      },
+      {
+        "word": "bucket",
+        "hint": "バケツ"
+      },
+      {
+        "word": "twine",
+        "hint": "麻ひも"
+      },
+      {
+        "word": "cultivator",
+        "hint": "耕運機"
+      }
+    ]
+  },
+  {
+    "key": "medicine_wb",
+    "name": "医学",
+    "description": "医学用語の英語を覚えよう",
+    "iconName": "stethoscope",
+    "color": "#dc2626",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "symptom",
+        "hint": "症状"
+      },
+      {
+        "word": "diagnose",
+        "hint": "診断する"
+      },
+      {
+        "word": "surgery",
+        "hint": "手術"
+      },
+      {
+        "word": "vaccine",
+        "hint": "ワクチン"
+      },
+      {
+        "word": "therapy",
+        "hint": "治療法"
+      },
+      {
+        "word": "fracture",
+        "hint": "骨折"
+      },
+      {
+        "word": "chronic",
+        "hint": "慢性の"
+      },
+      {
+        "word": "allergy",
+        "hint": "アレルギー"
+      },
+      {
+        "word": "infection",
+        "hint": "感染症"
+      },
+      {
+        "word": "bandage",
+        "hint": "包帯"
+      },
+      {
+        "word": "syringe",
+        "hint": "注射器"
+      },
+      {
+        "word": "dosage",
+        "hint": "投与量"
+      },
+      {
+        "word": "clinic",
+        "hint": "診療所"
+      },
+      {
+        "word": "prognosis",
+        "hint": "予後"
+      },
+      {
+        "word": "specimen",
+        "hint": "検体"
+      }
+    ]
+  },
+  {
+    "key": "pharmacy_wb",
+    "name": "薬局",
+    "description": "薬局に関する英語を覚えよう",
+    "iconName": "pills",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "capsule",
+        "hint": "カプセル"
+      },
+      {
+        "word": "tablet",
+        "hint": "錠剤"
+      },
+      {
+        "word": "ointment",
+        "hint": "軟膏"
+      },
+      {
+        "word": "syrup",
+        "hint": "シロップ"
+      },
+      {
+        "word": "inhaler",
+        "hint": "吸入器"
+      },
+      {
+        "word": "generic",
+        "hint": "ジェネリック"
+      },
+      {
+        "word": "refill",
+        "hint": "処方の再発行"
+      },
+      {
+        "word": "dosage",
+        "hint": "用量"
+      },
+      {
+        "word": "dropper",
+        "hint": "スポイト"
+      },
+      {
+        "word": "analgesic",
+        "hint": "鎮痛剤"
+      },
+      {
+        "word": "antacid",
+        "hint": "制酸剤"
+      },
+      {
+        "word": "lozenge",
+        "hint": "トローチ"
+      },
+      {
+        "word": "patch",
+        "hint": "湿布"
+      },
+      {
+        "word": "tonic",
+        "hint": "強壮剤"
+      },
+      {
+        "word": "gauze",
+        "hint": "ガーゼ"
+      }
+    ]
+  },
+  {
+    "key": "fitness_wb",
+    "name": "フィットネス",
+    "description": "フィットネスに関する英語を覚えよう",
+    "iconName": "figure.run",
+    "color": "#ea580c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "treadmill",
+        "hint": "ランニングマシン"
+      },
+      {
+        "word": "dumbbell",
+        "hint": "ダンベル"
+      },
+      {
+        "word": "squat",
+        "hint": "スクワット"
+      },
+      {
+        "word": "pushup",
+        "hint": "腕立て伏せ"
+      },
+      {
+        "word": "cardio",
+        "hint": "有酸素運動"
+      },
+      {
+        "word": "plank",
+        "hint": "プランク"
+      },
+      {
+        "word": "lunge",
+        "hint": "ランジ"
+      },
+      {
+        "word": "bench",
+        "hint": "ベンチ"
+      },
+      {
+        "word": "bicep",
+        "hint": "上腕二頭筋"
+      },
+      {
+        "word": "tricep",
+        "hint": "上腕三頭筋"
+      },
+      {
+        "word": "stamina",
+        "hint": "スタミナ"
+      },
+      {
+        "word": "warmup",
+        "hint": "ウォーミングアップ"
+      },
+      {
+        "word": "cooldown",
+        "hint": "クールダウン"
+      },
+      {
+        "word": "protein",
+        "hint": "プロテイン"
+      },
+      {
+        "word": "barbell",
+        "hint": "バーベル"
+      }
+    ]
+  },
+  {
+    "key": "yoga_wb",
+    "name": "ヨガ",
+    "description": "ヨガに関する英語を覚えよう",
+    "iconName": "figure.yoga",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "posture",
+        "hint": "姿勢"
+      },
+      {
+        "word": "balance",
+        "hint": "バランス"
+      },
+      {
+        "word": "breathe",
+        "hint": "深呼吸する"
+      },
+      {
+        "word": "stretch",
+        "hint": "ストレッチ"
+      },
+      {
+        "word": "meditate",
+        "hint": "瞑想する"
+      },
+      {
+        "word": "chakra",
+        "hint": "チャクラ"
+      },
+      {
+        "word": "mantra",
+        "hint": "マントラ"
+      },
+      {
+        "word": "warrior",
+        "hint": "戦士のポーズ"
+      },
+      {
+        "word": "lotus",
+        "hint": "蓮のポーズ"
+      },
+      {
+        "word": "exhale",
+        "hint": "息を吐く"
+      },
+      {
+        "word": "inhale",
+        "hint": "息を吸う"
+      },
+      {
+        "word": "mindful",
+        "hint": "マインドフル"
+      },
+      {
+        "word": "restore",
+        "hint": "回復する"
+      },
+      {
+        "word": "gentle",
+        "hint": "優しい"
+      },
+      {
+        "word": "align",
+        "hint": "整える"
+      }
+    ]
+  },
+  {
+    "key": "mental_health_wb",
+    "name": "メンタルヘルス",
+    "description": "メンタルヘルスに関する英語を覚えよう",
+    "iconName": "brain.head.profile",
+    "color": "#6366f1",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "therapy",
+        "hint": "セラピー"
+      },
+      {
+        "word": "stress",
+        "hint": "ストレス"
+      },
+      {
+        "word": "mindset",
+        "hint": "考え方"
+      },
+      {
+        "word": "burnout",
+        "hint": "燃え尽き"
+      },
+      {
+        "word": "trauma",
+        "hint": "トラウマ"
+      },
+      {
+        "word": "coping",
+        "hint": "対処法"
+      },
+      {
+        "word": "anxiety",
+        "hint": "不安障害"
+      },
+      {
+        "word": "resilience",
+        "hint": "回復力"
+      },
+      {
+        "word": "stigma",
+        "hint": "偏見"
+      },
+      {
+        "word": "wellness",
+        "hint": "ウェルネス"
+      },
+      {
+        "word": "empathy",
+        "hint": "共感"
+      },
+      {
+        "word": "journal",
+        "hint": "日記"
+      },
+      {
+        "word": "boundary",
+        "hint": "境界線"
+      },
+      {
+        "word": "trigger",
+        "hint": "きっかけ"
+      },
+      {
+        "word": "counsel",
+        "hint": "カウンセリング"
+      }
+    ]
+  },
+  {
+    "key": "vehicles_wb",
+    "name": "乗り物（応用）",
+    "description": "いろいろな乗り物に関する英語を覚えよう",
+    "iconName": "car",
+    "color": "#3b82f6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "engine",
+        "hint": "エンジン"
+      },
+      {
+        "word": "steering",
+        "hint": "ハンドル"
+      },
+      {
+        "word": "bumper",
+        "hint": "バンパー"
+      },
+      {
+        "word": "windshield",
+        "hint": "フロントガラス"
+      },
+      {
+        "word": "dashboard",
+        "hint": "ダッシュボード"
+      },
+      {
+        "word": "headlight",
+        "hint": "ヘッドライト"
+      },
+      {
+        "word": "exhaust",
+        "hint": "排気"
+      },
+      {
+        "word": "trunk",
+        "hint": "トランク"
+      },
+      {
+        "word": "sedan",
+        "hint": "セダン"
+      },
+      {
+        "word": "convertible",
+        "hint": "オープンカー"
+      },
+      {
+        "word": "ignition",
+        "hint": "点火装置"
+      },
+      {
+        "word": "clutch",
+        "hint": "クラッチ"
+      },
+      {
+        "word": "mileage",
+        "hint": "走行距離"
+      },
+      {
+        "word": "airbag",
+        "hint": "エアバッグ"
+      },
+      {
+        "word": "throttle",
+        "hint": "アクセル"
+      }
+    ]
+  },
+  {
+    "key": "aviation_wb",
+    "name": "航空",
+    "description": "航空に関する英語を覚えよう",
+    "iconName": "airplane",
+    "color": "#0284c7",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "runway",
+        "hint": "滑走路"
+      },
+      {
+        "word": "cockpit",
+        "hint": "操縦席"
+      },
+      {
+        "word": "turbine",
+        "hint": "タービン"
+      },
+      {
+        "word": "altitude",
+        "hint": "高度"
+      },
+      {
+        "word": "hangar",
+        "hint": "格納庫"
+      },
+      {
+        "word": "fuselage",
+        "hint": "胴体"
+      },
+      {
+        "word": "takeoff",
+        "hint": "離陸"
+      },
+      {
+        "word": "landing",
+        "hint": "着陸"
+      },
+      {
+        "word": "boarding",
+        "hint": "搭乗"
+      },
+      {
+        "word": "terminal",
+        "hint": "ターミナル"
+      },
+      {
+        "word": "charter",
+        "hint": "チャーター"
+      },
+      {
+        "word": "propeller",
+        "hint": "プロペラ"
+      },
+      {
+        "word": "navigate",
+        "hint": "航行する"
+      },
+      {
+        "word": "airspace",
+        "hint": "空域"
+      },
+      {
+        "word": "descent",
+        "hint": "降下"
+      }
+    ]
+  },
+  {
+    "key": "shipping_wb",
+    "name": "海運",
+    "description": "海運や船に関する英語を覚えよう",
+    "iconName": "ferry",
+    "color": "#1d4ed8",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "cargo",
+        "hint": "貨物"
+      },
+      {
+        "word": "freight",
+        "hint": "輸送"
+      },
+      {
+        "word": "harbor",
+        "hint": "港"
+      },
+      {
+        "word": "vessel",
+        "hint": "船舶"
+      },
+      {
+        "word": "captain",
+        "hint": "船長"
+      },
+      {
+        "word": "stern",
+        "hint": "船尾"
+      },
+      {
+        "word": "hull",
+        "hint": "船体"
+      },
+      {
+        "word": "anchor",
+        "hint": "いかり"
+      },
+      {
+        "word": "buoy",
+        "hint": "ブイ"
+      },
+      {
+        "word": "dock",
+        "hint": "埠頭"
+      },
+      {
+        "word": "compass",
+        "hint": "羅針盤"
+      },
+      {
+        "word": "porthole",
+        "hint": "舷窓"
+      },
+      {
+        "word": "mariner",
+        "hint": "船乗り"
+      },
+      {
+        "word": "tugboat",
+        "hint": "タグボート"
+      },
+      {
+        "word": "ballast",
+        "hint": "バラスト"
+      }
+    ]
+  },
+  {
+    "key": "cycling_wb",
+    "name": "サイクリング",
+    "description": "自転車に関する英語を覚えよう",
+    "iconName": "bicycle",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pedal",
+        "hint": "ペダル"
+      },
+      {
+        "word": "chain",
+        "hint": "チェーン"
+      },
+      {
+        "word": "helmet",
+        "hint": "ヘルメット"
+      },
+      {
+        "word": "gear",
+        "hint": "ギア"
+      },
+      {
+        "word": "spoke",
+        "hint": "スポーク"
+      },
+      {
+        "word": "brake",
+        "hint": "ブレーキ"
+      },
+      {
+        "word": "saddle",
+        "hint": "サドル"
+      },
+      {
+        "word": "handlebar",
+        "hint": "ハンドルバー"
+      },
+      {
+        "word": "tire",
+        "hint": "タイヤ"
+      },
+      {
+        "word": "fender",
+        "hint": "泥よけ"
+      },
+      {
+        "word": "pump",
+        "hint": "空気入れ"
+      },
+      {
+        "word": "reflector",
+        "hint": "反射板"
+      },
+      {
+        "word": "kickstand",
+        "hint": "スタンド"
+      },
+      {
+        "word": "derailleur",
+        "hint": "変速機"
+      },
+      {
+        "word": "trail",
+        "hint": "サイクリングロード"
+      }
+    ]
+  },
+  {
+    "key": "trains_wb",
+    "name": "鉄道",
+    "description": "鉄道に関する英語を覚えよう",
+    "iconName": "tram",
+    "color": "#dc2626",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "platform",
+        "hint": "ホーム"
+      },
+      {
+        "word": "station",
+        "hint": "駅"
+      },
+      {
+        "word": "commuter",
+        "hint": "通勤者"
+      },
+      {
+        "word": "express",
+        "hint": "急行"
+      },
+      {
+        "word": "conductor",
+        "hint": "車掌"
+      },
+      {
+        "word": "carriage",
+        "hint": "車両"
+      },
+      {
+        "word": "railway",
+        "hint": "鉄道"
+      },
+      {
+        "word": "schedule",
+        "hint": "時刻表"
+      },
+      {
+        "word": "transfer",
+        "hint": "乗り換え"
+      },
+      {
+        "word": "sleeper",
+        "hint": "寝台車"
+      },
+      {
+        "word": "freight",
+        "hint": "貨物列車"
+      },
+      {
+        "word": "signal",
+        "hint": "信号"
+      },
+      {
+        "word": "tunnel",
+        "hint": "トンネル"
+      },
+      {
+        "word": "crossing",
+        "hint": "踏切"
+      },
+      {
+        "word": "monorail",
+        "hint": "モノレール"
+      }
+    ]
+  },
+  {
+    "key": "mathematics_wb",
+    "name": "数学",
+    "description": "数学に関する英語を覚えよう",
+    "iconName": "function",
+    "color": "#2563eb",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "fraction",
+        "hint": "分数"
+      },
+      {
+        "word": "equation",
+        "hint": "方程式"
+      },
+      {
+        "word": "decimal",
+        "hint": "小数"
+      },
+      {
+        "word": "algebra",
+        "hint": "代数"
+      },
+      {
+        "word": "geometry",
+        "hint": "幾何学"
+      },
+      {
+        "word": "theorem",
+        "hint": "定理"
+      },
+      {
+        "word": "integer",
+        "hint": "整数"
+      },
+      {
+        "word": "formula",
+        "hint": "公式"
+      },
+      {
+        "word": "variable",
+        "hint": "変数"
+      },
+      {
+        "word": "calculus",
+        "hint": "微積分"
+      },
+      {
+        "word": "symmetry",
+        "hint": "対称"
+      },
+      {
+        "word": "polygon",
+        "hint": "多角形"
+      },
+      {
+        "word": "radius",
+        "hint": "半径"
+      },
+      {
+        "word": "diagonal",
+        "hint": "対角線"
+      },
+      {
+        "word": "exponent",
+        "hint": "指数"
+      }
+    ]
+  },
+  {
+    "key": "physics_wb",
+    "name": "物理",
+    "description": "物理に関する英語を覚えよう",
+    "iconName": "atom",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "velocity",
+        "hint": "速度"
+      },
+      {
+        "word": "friction",
+        "hint": "摩擦"
+      },
+      {
+        "word": "momentum",
+        "hint": "運動量"
+      },
+      {
+        "word": "inertia",
+        "hint": "慣性"
+      },
+      {
+        "word": "quantum",
+        "hint": "量子"
+      },
+      {
+        "word": "neutron",
+        "hint": "中性子"
+      },
+      {
+        "word": "proton",
+        "hint": "陽子"
+      },
+      {
+        "word": "electron",
+        "hint": "電子"
+      },
+      {
+        "word": "magnet",
+        "hint": "磁石"
+      },
+      {
+        "word": "spectrum",
+        "hint": "スペクトル"
+      },
+      {
+        "word": "entropy",
+        "hint": "エントロピー"
+      },
+      {
+        "word": "photon",
+        "hint": "光子"
+      },
+      {
+        "word": "torque",
+        "hint": "トルク"
+      },
+      {
+        "word": "density",
+        "hint": "密度"
+      },
+      {
+        "word": "nucleus",
+        "hint": "原子核"
+      }
+    ]
+  },
+  {
+    "key": "chemistry_wb",
+    "name": "化学",
+    "description": "化学に関する英語を覚えよう",
+    "iconName": "flask",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "element",
+        "hint": "元素"
+      },
+      {
+        "word": "molecule",
+        "hint": "分子"
+      },
+      {
+        "word": "compound",
+        "hint": "化合物"
+      },
+      {
+        "word": "catalyst",
+        "hint": "触媒"
+      },
+      {
+        "word": "solvent",
+        "hint": "溶媒"
+      },
+      {
+        "word": "reagent",
+        "hint": "試薬"
+      },
+      {
+        "word": "isotope",
+        "hint": "同位体"
+      },
+      {
+        "word": "beaker",
+        "hint": "ビーカー"
+      },
+      {
+        "word": "pipette",
+        "hint": "ピペット"
+      },
+      {
+        "word": "oxidize",
+        "hint": "酸化する"
+      },
+      {
+        "word": "crystal",
+        "hint": "結晶"
+      },
+      {
+        "word": "polymer",
+        "hint": "ポリマー"
+      },
+      {
+        "word": "acid",
+        "hint": "酸"
+      },
+      {
+        "word": "alkali",
+        "hint": "アルカリ"
+      },
+      {
+        "word": "titrate",
+        "hint": "滴定する"
+      }
+    ]
+  },
+  {
+    "key": "biology_wb",
+    "name": "生物学",
+    "description": "生物学に関する英語を覚えよう",
+    "iconName": "leaf",
+    "color": "#16a34a",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "cell",
+        "hint": "細胞"
+      },
+      {
+        "word": "genome",
+        "hint": "ゲノム"
+      },
+      {
+        "word": "protein",
+        "hint": "タンパク質"
+      },
+      {
+        "word": "enzyme",
+        "hint": "酵素"
+      },
+      {
+        "word": "species",
+        "hint": "種"
+      },
+      {
+        "word": "habitat",
+        "hint": "生息地"
+      },
+      {
+        "word": "nucleus",
+        "hint": "細胞核"
+      },
+      {
+        "word": "membrane",
+        "hint": "細胞膜"
+      },
+      {
+        "word": "microbe",
+        "hint": "微生物"
+      },
+      {
+        "word": "organism",
+        "hint": "有機体"
+      },
+      {
+        "word": "evolve",
+        "hint": "進化する"
+      },
+      {
+        "word": "tissue",
+        "hint": "組織"
+      },
+      {
+        "word": "fossil",
+        "hint": "化石"
+      },
+      {
+        "word": "chlorophyll",
+        "hint": "葉緑素"
+      },
+      {
+        "word": "bacteria",
+        "hint": "バクテリア"
+      }
+    ]
+  },
+  {
+    "key": "science_wb",
+    "name": "科学全般",
+    "description": "科学全般に関する英語を覚えよう",
+    "iconName": "magnifyingglass",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "hypothesis",
+        "hint": "仮説"
+      },
+      {
+        "word": "experiment",
+        "hint": "実験"
+      },
+      {
+        "word": "research",
+        "hint": "研究"
+      },
+      {
+        "word": "sample",
+        "hint": "サンプル"
+      },
+      {
+        "word": "observe",
+        "hint": "観察する"
+      },
+      {
+        "word": "analyze",
+        "hint": "分析する"
+      },
+      {
+        "word": "theory",
+        "hint": "理論"
+      },
+      {
+        "word": "method",
+        "hint": "方法"
+      },
+      {
+        "word": "data",
+        "hint": "データ"
+      },
+      {
+        "word": "evidence",
+        "hint": "証拠"
+      },
+      {
+        "word": "molecule",
+        "hint": "分子"
+      },
+      {
+        "word": "discover",
+        "hint": "発見する"
+      },
+      {
+        "word": "conclude",
+        "hint": "結論づける"
+      },
+      {
+        "word": "measure",
+        "hint": "測定する"
+      },
+      {
+        "word": "variable",
+        "hint": "変数"
+      }
+    ]
+  },
+  {
+    "key": "festivals_wb",
+    "name": "祭り",
+    "description": "祭りやフェスティバルに関する英語を覚えよう",
+    "iconName": "sparkles",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "parade",
+        "hint": "パレード"
+      },
+      {
+        "word": "carnival",
+        "hint": "カーニバル"
+      },
+      {
+        "word": "firework",
+        "hint": "花火"
+      },
+      {
+        "word": "lantern",
+        "hint": "提灯"
+      },
+      {
+        "word": "costume",
+        "hint": "仮装"
+      },
+      {
+        "word": "banner",
+        "hint": "旗"
+      },
+      {
+        "word": "vendor",
+        "hint": "露店商"
+      },
+      {
+        "word": "pageant",
+        "hint": "野外劇"
+      },
+      {
+        "word": "bonfire",
+        "hint": "かがり火"
+      },
+      {
+        "word": "confetti",
+        "hint": "紙吹雪"
+      },
+      {
+        "word": "stall",
+        "hint": "屋台"
+      },
+      {
+        "word": "garland",
+        "hint": "花飾り"
+      },
+      {
+        "word": "mascot",
+        "hint": "マスコット"
+      },
+      {
+        "word": "spectacle",
+        "hint": "見世物"
+      },
+      {
+        "word": "jubilee",
+        "hint": "祝典"
+      }
+    ]
+  },
+  {
+    "key": "traditions_wb",
+    "name": "伝統",
+    "description": "伝統や文化に関する英語を覚えよう",
+    "iconName": "book.closed",
+    "color": "#92400e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ceremony",
+        "hint": "式典"
+      },
+      {
+        "word": "heritage",
+        "hint": "遺産"
+      },
+      {
+        "word": "custom",
+        "hint": "慣習"
+      },
+      {
+        "word": "folklore",
+        "hint": "民話"
+      },
+      {
+        "word": "ancestor",
+        "hint": "祖先"
+      },
+      {
+        "word": "ritual",
+        "hint": "儀式"
+      },
+      {
+        "word": "legacy",
+        "hint": "遺産"
+      },
+      {
+        "word": "shrine",
+        "hint": "神社"
+      },
+      {
+        "word": "temple",
+        "hint": "寺"
+      },
+      {
+        "word": "relic",
+        "hint": "遺物"
+      },
+      {
+        "word": "proverb",
+        "hint": "ことわざ"
+      },
+      {
+        "word": "dynasty",
+        "hint": "王朝"
+      },
+      {
+        "word": "legend",
+        "hint": "伝説"
+      },
+      {
+        "word": "artifact",
+        "hint": "工芸品"
+      },
+      {
+        "word": "heirloom",
+        "hint": "家宝"
+      }
+    ]
+  },
+  {
+    "key": "weddings_wb",
+    "name": "結婚式",
+    "description": "結婚式に関する英語を覚えよう",
+    "iconName": "heart.circle",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "bride",
+        "hint": "花嫁"
+      },
+      {
+        "word": "groom",
+        "hint": "花婿"
+      },
+      {
+        "word": "bouquet",
+        "hint": "ブーケ"
+      },
+      {
+        "word": "vow",
+        "hint": "誓い"
+      },
+      {
+        "word": "chapel",
+        "hint": "チャペル"
+      },
+      {
+        "word": "reception",
+        "hint": "披露宴"
+      },
+      {
+        "word": "aisle",
+        "hint": "バージンロード"
+      },
+      {
+        "word": "ring",
+        "hint": "指輪"
+      },
+      {
+        "word": "bridesmaid",
+        "hint": "ブライズメイド"
+      },
+      {
+        "word": "toast",
+        "hint": "乾杯"
+      },
+      {
+        "word": "honeymoon",
+        "hint": "新婚旅行"
+      },
+      {
+        "word": "veil",
+        "hint": "ベール"
+      },
+      {
+        "word": "tuxedo",
+        "hint": "タキシード"
+      },
+      {
+        "word": "registry",
+        "hint": "婚姻届"
+      },
+      {
+        "word": "corsage",
+        "hint": "コサージュ"
+      }
+    ]
+  },
+  {
+    "key": "holidays_wb",
+    "name": "祝日",
+    "description": "祝日や休日に関する英語を覚えよう",
+    "iconName": "calendar",
+    "color": "#dc2626",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "vacation",
+        "hint": "休暇"
+      },
+      {
+        "word": "birthday",
+        "hint": "誕生日"
+      },
+      {
+        "word": "present",
+        "hint": "プレゼント"
+      },
+      {
+        "word": "greeting",
+        "hint": "挨拶"
+      },
+      {
+        "word": "ornament",
+        "hint": "飾り"
+      },
+      {
+        "word": "candle",
+        "hint": "ろうそく"
+      },
+      {
+        "word": "wreath",
+        "hint": "リース"
+      },
+      {
+        "word": "stocking",
+        "hint": "靴下"
+      },
+      {
+        "word": "reunion",
+        "hint": "同窓会"
+      },
+      {
+        "word": "festive",
+        "hint": "お祝いの"
+      },
+      {
+        "word": "souvenir",
+        "hint": "お土産"
+      },
+      {
+        "word": "picnic",
+        "hint": "ピクニック"
+      },
+      {
+        "word": "barbecue",
+        "hint": "バーベキュー"
+      },
+      {
+        "word": "memorial",
+        "hint": "記念の"
+      },
+      {
+        "word": "seasonal",
+        "hint": "季節の"
+      }
+    ]
+  },
+  {
+    "key": "celebrations_wb",
+    "name": "お祝い",
+    "description": "お祝い事に関する英語を覚えよう",
+    "iconName": "gift",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "balloon",
+        "hint": "風船"
+      },
+      {
+        "word": "streamer",
+        "hint": "飾りテープ"
+      },
+      {
+        "word": "cupcake",
+        "hint": "カップケーキ"
+      },
+      {
+        "word": "sparkler",
+        "hint": "線香花火"
+      },
+      {
+        "word": "trophy",
+        "hint": "トロフィー"
+      },
+      {
+        "word": "ribbon",
+        "hint": "リボン"
+      },
+      {
+        "word": "applause",
+        "hint": "拍手"
+      },
+      {
+        "word": "surprise",
+        "hint": "サプライズ"
+      },
+      {
+        "word": "toast",
+        "hint": "乾杯"
+      },
+      {
+        "word": "diploma",
+        "hint": "卒業証書"
+      },
+      {
+        "word": "festoon",
+        "hint": "花綵"
+      },
+      {
+        "word": "gala",
+        "hint": "祝賀会"
+      },
+      {
+        "word": "ticker",
+        "hint": "テープ（紙吹雪）"
+      },
+      {
+        "word": "anthem",
+        "hint": "賛歌"
+      },
+      {
+        "word": "cheers",
+        "hint": "乾杯！"
+      }
+    ]
+  },
+  {
+    "key": "fashion_wb",
+    "name": "ファッション",
+    "description": "ファッションに関する英語を覚えよう",
+    "iconName": "tshirt",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "blouse",
+        "hint": "ブラウス"
+      },
+      {
+        "word": "cardigan",
+        "hint": "カーディガン"
+      },
+      {
+        "word": "sneakers",
+        "hint": "スニーカー"
+      },
+      {
+        "word": "wardrobe",
+        "hint": "衣装だんす"
+      },
+      {
+        "word": "outfit",
+        "hint": "服装"
+      },
+      {
+        "word": "pattern",
+        "hint": "柄・模様"
+      },
+      {
+        "word": "elegant",
+        "hint": "上品な"
+      },
+      {
+        "word": "boutique",
+        "hint": "ブティック"
+      },
+      {
+        "word": "designer",
+        "hint": "デザイナー"
+      },
+      {
+        "word": "fashion",
+        "hint": "流行"
+      },
+      {
+        "word": "sandals",
+        "hint": "サンダル"
+      },
+      {
+        "word": "collar",
+        "hint": "襟"
+      },
+      {
+        "word": "sleeve",
+        "hint": "袖"
+      },
+      {
+        "word": "vintage",
+        "hint": "年代物の"
+      },
+      {
+        "word": "zipper",
+        "hint": "ファスナー"
+      }
+    ]
+  },
+  {
+    "key": "textiles_wb",
+    "name": "繊維・生地",
+    "description": "布地や素材に関する英語を覚えよう",
+    "iconName": "scroll",
+    "color": "#a3a3a3",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "cotton",
+        "hint": "綿"
+      },
+      {
+        "word": "fabric",
+        "hint": "布地"
+      },
+      {
+        "word": "velvet",
+        "hint": "ベルベット"
+      },
+      {
+        "word": "thread",
+        "hint": "糸"
+      },
+      {
+        "word": "stitch",
+        "hint": "縫い目"
+      },
+      {
+        "word": "linen",
+        "hint": "リネン・麻"
+      },
+      {
+        "word": "weave",
+        "hint": "織る"
+      },
+      {
+        "word": "denim",
+        "hint": "デニム"
+      },
+      {
+        "word": "satin",
+        "hint": "サテン"
+      },
+      {
+        "word": "nylon",
+        "hint": "ナイロン"
+      },
+      {
+        "word": "fleece",
+        "hint": "フリース"
+      },
+      {
+        "word": "pattern",
+        "hint": "型紙"
+      },
+      {
+        "word": "tailor",
+        "hint": "仕立て屋"
+      },
+      {
+        "word": "fiber",
+        "hint": "繊維"
+      },
+      {
+        "word": "canvas",
+        "hint": "帆布・キャンバス"
+      }
+    ]
+  },
+  {
+    "key": "jewelry_wb",
+    "name": "宝石・装飾品",
+    "description": "宝石やアクセサリーに関する英語を覚えよう",
+    "iconName": "sparkles",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "diamond",
+        "hint": "ダイヤモンド"
+      },
+      {
+        "word": "emerald",
+        "hint": "エメラルド"
+      },
+      {
+        "word": "pendant",
+        "hint": "ペンダント"
+      },
+      {
+        "word": "bracelet",
+        "hint": "ブレスレット"
+      },
+      {
+        "word": "earring",
+        "hint": "イヤリング"
+      },
+      {
+        "word": "necklace",
+        "hint": "ネックレス"
+      },
+      {
+        "word": "sapphire",
+        "hint": "サファイア"
+      },
+      {
+        "word": "crystal",
+        "hint": "水晶"
+      },
+      {
+        "word": "brooch",
+        "hint": "ブローチ"
+      },
+      {
+        "word": "charm",
+        "hint": "チャーム・お守り"
+      },
+      {
+        "word": "sterling",
+        "hint": "純銀の"
+      },
+      {
+        "word": "topaz",
+        "hint": "トパーズ"
+      },
+      {
+        "word": "garnet",
+        "hint": "ガーネット"
+      },
+      {
+        "word": "locket",
+        "hint": "ロケット"
+      },
+      {
+        "word": "clasp",
+        "hint": "留め金"
+      }
+    ]
+  },
+  {
+    "key": "cosmetics_wb",
+    "name": "化粧品",
+    "description": "化粧品や美容に関する英語を覚えよう",
+    "iconName": "paintbrush",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "lipstick",
+        "hint": "口紅"
+      },
+      {
+        "word": "mascara",
+        "hint": "マスカラ"
+      },
+      {
+        "word": "perfume",
+        "hint": "香水"
+      },
+      {
+        "word": "powder",
+        "hint": "パウダー・粉"
+      },
+      {
+        "word": "skincare",
+        "hint": "スキンケア"
+      },
+      {
+        "word": "eyeliner",
+        "hint": "アイライナー"
+      },
+      {
+        "word": "concealer",
+        "hint": "コンシーラー"
+      },
+      {
+        "word": "blush",
+        "hint": "チーク・頬紅"
+      },
+      {
+        "word": "serum",
+        "hint": "美容液"
+      },
+      {
+        "word": "primer",
+        "hint": "化粧下地"
+      },
+      {
+        "word": "lotion",
+        "hint": "化粧水"
+      },
+      {
+        "word": "cleanser",
+        "hint": "洗顔料"
+      },
+      {
+        "word": "bronzer",
+        "hint": "ブロンザー"
+      },
+      {
+        "word": "palette",
+        "hint": "パレット"
+      },
+      {
+        "word": "contour",
+        "hint": "輪郭・コントゥア"
+      }
+    ]
+  },
+  {
+    "key": "hairstyles_wb",
+    "name": "ヘアスタイル",
+    "description": "髪型やヘアケアに関する英語を覚えよう",
+    "iconName": "scissors",
+    "color": "#84cc16",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "braids",
+        "hint": "三つ編み"
+      },
+      {
+        "word": "fringe",
+        "hint": "前髪"
+      },
+      {
+        "word": "curly",
+        "hint": "巻き髪の"
+      },
+      {
+        "word": "ponytail",
+        "hint": "ポニーテール"
+      },
+      {
+        "word": "shampoo",
+        "hint": "シャンプー"
+      },
+      {
+        "word": "conditioner",
+        "hint": "コンディショナー"
+      },
+      {
+        "word": "hairpin",
+        "hint": "ヘアピン"
+      },
+      {
+        "word": "parting",
+        "hint": "髪の分け目"
+      },
+      {
+        "word": "highlights",
+        "hint": "ハイライト"
+      },
+      {
+        "word": "trimming",
+        "hint": "毛先を整えること"
+      },
+      {
+        "word": "layers",
+        "hint": "レイヤーカット"
+      },
+      {
+        "word": "updo",
+        "hint": "アップヘア"
+      },
+      {
+        "word": "blowdry",
+        "hint": "ブロー乾燥"
+      },
+      {
+        "word": "barber",
+        "hint": "理容師"
+      },
+      {
+        "word": "styling",
+        "hint": "スタイリング"
+      }
+    ]
+  },
+  {
+    "key": "environment_wb",
+    "name": "環境",
+    "description": "環境問題に関する英語を覚えよう",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "habitat",
+        "hint": "生息地"
+      },
+      {
+        "word": "ecology",
+        "hint": "生態学"
+      },
+      {
+        "word": "wildlife",
+        "hint": "野生動物"
+      },
+      {
+        "word": "pollution",
+        "hint": "汚染"
+      },
+      {
+        "word": "emission",
+        "hint": "排出"
+      },
+      {
+        "word": "erosion",
+        "hint": "浸食"
+      },
+      {
+        "word": "compost",
+        "hint": "堆肥"
+      },
+      {
+        "word": "organic",
+        "hint": "有機の"
+      },
+      {
+        "word": "species",
+        "hint": "種"
+      },
+      {
+        "word": "wetland",
+        "hint": "湿地"
+      },
+      {
+        "word": "glacier",
+        "hint": "氷河"
+      },
+      {
+        "word": "preserve",
+        "hint": "保護する"
+      },
+      {
+        "word": "meadow",
+        "hint": "草原"
+      },
+      {
+        "word": "ozone",
+        "hint": "オゾン"
+      },
+      {
+        "word": "biome",
+        "hint": "生物群系"
+      }
+    ]
+  },
+  {
+    "key": "recycling_wb",
+    "name": "リサイクル",
+    "description": "リサイクルや廃棄物処理に関する英語を覚えよう",
+    "iconName": "arrow.3.trianglepath",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "recycle",
+        "hint": "再利用する"
+      },
+      {
+        "word": "landfill",
+        "hint": "埋立地"
+      },
+      {
+        "word": "sorting",
+        "hint": "分別"
+      },
+      {
+        "word": "reusable",
+        "hint": "再利用可能な"
+      },
+      {
+        "word": "carton",
+        "hint": "紙パック"
+      },
+      {
+        "word": "disposal",
+        "hint": "処分"
+      },
+      {
+        "word": "compost",
+        "hint": "たい肥にする"
+      },
+      {
+        "word": "plastic",
+        "hint": "プラスチック"
+      },
+      {
+        "word": "aluminum",
+        "hint": "アルミニウム"
+      },
+      {
+        "word": "container",
+        "hint": "容器"
+      },
+      {
+        "word": "salvage",
+        "hint": "回収する"
+      },
+      {
+        "word": "upcycle",
+        "hint": "アップサイクル"
+      },
+      {
+        "word": "shredder",
+        "hint": "シュレッダー"
+      },
+      {
+        "word": "refill",
+        "hint": "詰め替え"
+      },
+      {
+        "word": "textile",
+        "hint": "繊維製品"
+      }
+    ]
+  },
+  {
+    "key": "energy_wb",
+    "name": "エネルギー",
+    "description": "エネルギーや発電に関する英語を覚えよう",
+    "iconName": "bolt",
+    "color": "#eab308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "nuclear",
+        "hint": "原子力の"
+      },
+      {
+        "word": "turbine",
+        "hint": "タービン"
+      },
+      {
+        "word": "voltage",
+        "hint": "電圧"
+      },
+      {
+        "word": "thermal",
+        "hint": "熱の"
+      },
+      {
+        "word": "reactor",
+        "hint": "原子炉"
+      },
+      {
+        "word": "wattage",
+        "hint": "ワット数"
+      },
+      {
+        "word": "dynamo",
+        "hint": "発電機"
+      },
+      {
+        "word": "circuit",
+        "hint": "回路"
+      },
+      {
+        "word": "battery",
+        "hint": "電池"
+      },
+      {
+        "word": "current",
+        "hint": "電流"
+      },
+      {
+        "word": "biomass",
+        "hint": "バイオマス"
+      },
+      {
+        "word": "propane",
+        "hint": "プロパン"
+      },
+      {
+        "word": "fusion",
+        "hint": "核融合"
+      },
+      {
+        "word": "ethanol",
+        "hint": "エタノール"
+      },
+      {
+        "word": "kilowatt",
+        "hint": "キロワット"
+      }
+    ]
+  },
+  {
+    "key": "climate_wb",
+    "name": "気候",
+    "description": "気候変動に関する英語を覚えよう",
+    "iconName": "thermometer",
+    "color": "#ef4444",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "drought",
+        "hint": "干ばつ"
+      },
+      {
+        "word": "monsoon",
+        "hint": "モンスーン"
+      },
+      {
+        "word": "iceberg",
+        "hint": "氷山"
+      },
+      {
+        "word": "tropical",
+        "hint": "熱帯の"
+      },
+      {
+        "word": "humidity",
+        "hint": "湿度"
+      },
+      {
+        "word": "forecast",
+        "hint": "予報"
+      },
+      {
+        "word": "blizzard",
+        "hint": "吹雪"
+      },
+      {
+        "word": "cyclone",
+        "hint": "サイクロン"
+      },
+      {
+        "word": "heatwave",
+        "hint": "熱波"
+      },
+      {
+        "word": "rainfall",
+        "hint": "降雨量"
+      },
+      {
+        "word": "altitude",
+        "hint": "標高"
+      },
+      {
+        "word": "tornado",
+        "hint": "竜巻"
+      },
+      {
+        "word": "celsius",
+        "hint": "摂氏"
+      },
+      {
+        "word": "arid",
+        "hint": "乾燥した"
+      },
+      {
+        "word": "tundra",
+        "hint": "ツンドラ"
+      }
+    ]
+  },
+  {
+    "key": "sustainability_wb",
+    "name": "持続可能性",
+    "description": "サステナビリティに関する英語を覚えよう",
+    "iconName": "globe.americas",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "footprint",
+        "hint": "フットプリント"
+      },
+      {
+        "word": "renewable",
+        "hint": "再生可能な"
+      },
+      {
+        "word": "biodiesel",
+        "hint": "バイオディーゼル"
+      },
+      {
+        "word": "offset",
+        "hint": "相殺する"
+      },
+      {
+        "word": "ethical",
+        "hint": "倫理的な"
+      },
+      {
+        "word": "conserve",
+        "hint": "節約する"
+      },
+      {
+        "word": "neutral",
+        "hint": "中立の"
+      },
+      {
+        "word": "ecosystem",
+        "hint": "生態系"
+      },
+      {
+        "word": "harvest",
+        "hint": "収穫"
+      },
+      {
+        "word": "insulate",
+        "hint": "断熱する"
+      },
+      {
+        "word": "windmill",
+        "hint": "風車"
+      },
+      {
+        "word": "aquifer",
+        "hint": "帯水層"
+      },
+      {
+        "word": "retrofit",
+        "hint": "改修する"
+      },
+      {
+        "word": "carbon",
+        "hint": "炭素"
+      },
+      {
+        "word": "hybrid",
+        "hint": "ハイブリッド"
+      }
+    ]
   }
 ]
