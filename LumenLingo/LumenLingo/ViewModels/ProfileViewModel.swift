@@ -37,17 +37,38 @@ final class ProfileViewModel {
 
     var breathingOrbsEnabled: Bool {
         get { userProfile?.breathingOrbsEnabled ?? true }
-        set { userProfile?.breathingOrbsEnabled = newValue; save() }
+        set {
+            userProfile?.breathingOrbsEnabled = newValue
+            if newValue {
+                userProfile?.quantumFlowEnabled = false
+                userProfile?.nebulaDriftEnabled = false
+            }
+            save()
+        }
     }
 
     var quantumFlowEnabled: Bool {
         get { userProfile?.quantumFlowEnabled ?? true }
-        set { userProfile?.quantumFlowEnabled = newValue; save() }
+        set {
+            userProfile?.quantumFlowEnabled = newValue
+            if newValue {
+                userProfile?.breathingOrbsEnabled = false
+                userProfile?.nebulaDriftEnabled = false
+            }
+            save()
+        }
     }
 
     var nebulaDriftEnabled: Bool {
         get { userProfile?.nebulaDriftEnabled ?? true }
-        set { userProfile?.nebulaDriftEnabled = newValue; save() }
+        set {
+            userProfile?.nebulaDriftEnabled = newValue
+            if newValue {
+                userProfile?.breathingOrbsEnabled = false
+                userProfile?.quantumFlowEnabled = false
+            }
+            save()
+        }
     }
 
     var animationIntensity: Double {

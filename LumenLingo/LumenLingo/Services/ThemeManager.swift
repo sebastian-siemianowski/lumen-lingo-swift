@@ -24,6 +24,10 @@ final class ThemeManager {
             isDarkMode.toggle()
         }
         profile?.darkMode = isDarkMode
+        // Nebula is dark-mode only — disable when switching to light
+        if !isDarkMode {
+            profile?.nebulaDriftEnabled = false
+        }
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.75) { [weak self] in
             self?.isTransitioning = false
         }

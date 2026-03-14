@@ -77,7 +77,13 @@ struct BreathingOrbsSettingsView: View {
             PremiumToggle(
                 isOn: profile?.breathingOrbsEnabled ?? true,
                 onToggle: {
-                    withAnimation { profile?.breathingOrbsEnabled.toggle() }
+                    withAnimation {
+                        profile?.breathingOrbsEnabled.toggle()
+                        if profile?.breathingOrbsEnabled == true {
+                            profile?.quantumFlowEnabled = false
+                            profile?.nebulaDriftEnabled = false
+                        }
+                    }
                 }
             )
         }

@@ -76,7 +76,13 @@ struct QuantumFlowSettingsView: View {
             PremiumToggle(
                 isOn: profile?.quantumFlowEnabled ?? true,
                 onToggle: {
-                    withAnimation { profile?.quantumFlowEnabled.toggle() }
+                    withAnimation {
+                        profile?.quantumFlowEnabled.toggle()
+                        if profile?.quantumFlowEnabled == true {
+                            profile?.breathingOrbsEnabled = false
+                            profile?.nebulaDriftEnabled = false
+                        }
+                    }
                 }
             )
         }
